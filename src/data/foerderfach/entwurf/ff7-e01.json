@@ -38,45 +38,39 @@
       ],
       "de": {
         "titel": "Willkommen im Fach – unser Rahmen",
-        "kurz": "Die Klasse lernt das neue Fach und seine Rituale kennen, stellt gemeinsam ihre Klassenvereinbarung auf und probiert den ersten Skill aus.",
+        "kurz": "Die Klasse lernt das Fach kennen, stellt ihre Klassenvereinbarung auf und probiert den ersten Skill aus: 5-4-3-2-1.",
         "ziele": [
-          "nennen die festen Teile einer Stunde und wissen, wo es im Lycée Hilfe gibt",
+          "nennen die vier Teile einer Stunde und wissen, wo es im Lycée Hilfe gibt",
           "stellen eine Klassenvereinbarung auf und unterschreiben sie",
-          "benennen mit dem Gefühlsrad, wie es ihnen gerade geht",
-          "probieren den Skill 5-4-3-2-1 aus und wählen einen Moment, um ihn zu üben"
+          "probieren den Skill 5-4-3-2-1 aus und wählen einen Moment dafür"
         ],
         "material": [
-          "Schülerheft für jede Person",
-          "A5-Blätter, dicke Stifte",
-          "Moderationskarten, 2 Farben, 40 Stück",
-          "Klebepunkte: drei je Person",
-          "Zwei leere Plakate (A2), Klebeband",
-          "Plakate: Jahresweg (Teil B), Gefühlsrad",
-          "Stempel oder Sticker für den Skills-Pass",
+          "Schülerheft für jede Person, A5-Blätter, dicke Stifte",
+          "Moderationskarten in 2 Farben (40), Klebepunkte (4 je Person)",
+          "Plakate: Gefühlsrad, Jahresweg (Teil B), zwei leere A2-Plakate",
+          "Klebeband, Stempel oder Sticker für den Skills-Pass",
           "Elternbrief für jede Person"
         ],
         "vorbereitung": [
-          "Fünf Gruppentische, nummeriert 1–5",
-          "Plakate aufhängen, Ablauf an die Tafel",
-          "Beim SePAS klären: Ansprechperson und Schutzkonzept der Schule",
-          "Elternbrief (Handbuch Teil A) kopieren, in der Sprache der Familie",
-          "Vertraulichkeitssatz (Heft) laut lesen"
+          "Fünf Gruppentische (1–5), Plakate aufhängen, Ablauf an die Tafel.",
+          "Beim SePAS klären: Ansprechperson und Schutzkonzept der Schule.",
+          "Elternbrief (Teil A) in der Sprache der Familie kopieren; den Vertraulichkeitssatz im Heft vorher laut lesen."
         ],
         "ablauf": [
           {
             "min": "0–10",
             "phase": "ankommen",
-            "titel": "Aufstellen ohne Worte"
+            "titel": "Check-in: Aufstellen ohne Worte"
           },
           {
-            "min": "10–25",
-            "phase": "input",
-            "titel": "Was sind Skills? Das Fach und der Jahresweg"
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Willkommen: das Fach in fünf Minuten"
           },
           {
-            "min": "25–45",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Klassenvereinbarung 1: sammeln und gewichten"
+            "titel": "Was sind Skills? Unsere Regeln sammeln"
           },
           {
             "min": "45–50",
@@ -84,399 +78,317 @@
             "titel": "Bewegungspause: Alle, die …"
           },
           {
-            "min": "50–65",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Klassenvereinbarung 2: formulieren und unterschreiben"
+            "titel": "Klassenvereinbarung: formulieren und unterschreiben"
           },
           {
-            "min": "65–80",
-            "phase": "uebung",
-            "titel": "Das Gefühlsrad und der erste Check-in"
-          },
-          {
-            "min": "80–90",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: 5-4-3-2-1"
-          },
-          {
-            "min": "90–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass und Blitzlicht"
           }
         ],
         "schritte": [
           {
-            "titel": "Aufstellen ohne Worte",
+            "titel": "Check-in: Aufstellen ohne Worte",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Begrüßen, sich kurz vorstellen und auf den Ablauf an der Tafel zeigen (1 Min.). Hefte austeilen; jede Person schreibt ihren Namen aufs Heft und faltet aus einem A5-Blatt ein Namensschild mit ihrem Vornamen (2 Min.). Dann stellt sich die Klasse ohne ein Wort im Bogen an den Wänden nach Geburtstag auf, vom 1. Januar an der Tür bis zum 31. Dezember am Fenster; nur Gesten sind erlaubt (3 Min.). Zur Kontrolle sagt jede Person Vornamen und Geburtstag – nur Tag und Monat (2 Min.). Aus der Reihe entstehen die Tischgruppen: Die ersten vier setzen sich an Tisch 1, die nächsten vier an Tisch 2 und so weiter (2 Min.).",
+            "text": "Die Lehrkraft begrüßt die Klasse. Beim Hereinkommen nimmt jede Person ein Heft, faltet ein Namensschild und klebt einen Punkt auf das Gefühlsrad. Dann stellt sich die Klasse ohne Worte nach Geburtstag auf (1. Januar an der Tür, 31. Dezember am Fenster); aus der Reihe entstehen die Tischgruppen.",
             "sagen": [
-              "Ihr stellt euch nach Geburtstag auf – ohne ein einziges Wort. Hände und Finger sind erlaubt.",
-              "Sagt euren Vornamen und euren Geburtstag, nur Tag und Monat. Wer mag, sagt noch dazu, wie er oder sie genannt werden möchte."
+              "Stellt euch nach Geburtstag auf – ohne ein Wort. Gesten sind erlaubt."
             ],
-            "tipp": "Die stumme Aufgabe senkt die Hemmschwelle: Alle haben etwas zu tun, niemand steht allein im Mittelpunkt, und wer wenig Deutsch spricht, macht voll mit – dafür an die Tafel: Januar – Tür, Dezember – Fenster. Nebenbei entstehen gemischte Tischgruppen.",
-            "wennEsKippt": "Wird geredet oder gealbert, freundlich stoppen und neu starten: Wir probieren es noch einmal, ganz still – ich stoppe zwei Minuten. Mit Zeitlimit wird es meist sofort ruhiger. Wer nicht aufstehen möchte, zeigt vom Tisch aus, wo er oder sie in der Reihe stehen würde; wer den Geburtstag nicht nennen mag, sagt nur den Monat."
+            "punkte": [
+              "Namensschild aus einem A5-Blatt falten, Vornamen groß aufschreiben; Punkt aufs Gefühlsrad kleben, wer mag, kreist die Wörter auch im Heft ein (2 Min.).",
+              "Stumm aufstellen, nur Gesten sind erlaubt (3 Min.).",
+              "Reihum Vorname und Geburtstag nennen – Tag und Monat, oder nur der Monat (2 Min.).",
+              "Die ersten vier setzen sich an Tisch 1, die nächsten vier an Tisch 2 und so weiter (2 Min.)."
+            ],
+            "wennEsKippt": "Wird geredet oder gealbert, freundlich neu starten: ganz still, ich stoppe zwei Minuten. Wer nicht aufstehen mag, zeigt vom Platz aus, wo er in der Reihe stünde.",
+            "blatt": "ff-gefuehlsrad"
           },
           {
-            "titel": "Was sind Skills? Das Fach und der Jahresweg",
-            "dauer": 15,
-            "phase": "input",
-            "text": "Zuerst das Ruhezeichen einführen, das ab heute gilt, und einmal üben (1 Min.). Dann die Frage an die Tafel: Was macht ihr, wenn ihr richtig wütend oder nervös seid – und was hilft euch hinterher wirklich? Zwei Minuten zu zweit, dann die Antworten auf dem Plakat „Was sind Skills?“ in zwei Spalten sammeln: hilft kurz – hilft wirklich (6 Min., Beispiel in der Tabelle). Erklären: Skills sind Fertigkeiten, mit denen man besser durch schwierige Momente kommt – mit Gefühlen, mit Stress, mit anderen. Man lernt sie wie einen Sport: durch Üben, nicht durch Zuhören (2 Min.). Das Fach mit der ersten Seite im Heft vorstellen: keine Noten, vier feste Teile jeder Stunde, der Kasten „Hilfe im Lycée“ und die Nummern darunter (3 Min.). Zum Schluss der Jahresweg am Plakat: vom Ich über das Wir zur Welt; zwei, drei Stimmen: Auf welches Kapitel seid ihr neugierig? (3 Min.)",
+            "titel": "Willkommen: das Fach in fünf Minuten",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Einen Rückblick gibt es noch nicht – Klasse und Fach sind neu. Zuerst das Ruhezeichen einführen und einmal üben, dann die erste Seite im Heft anschauen: So läuft eine Stunde, das gilt hier, hier gibt es Hilfe.",
             "sagen": [
-              "Wenn ich die Hand hebe, hebt ihr sie auch und werdet still. Das gilt das ganze Jahr.",
-              "Hier gibt es keine Noten. Es zählt, dass ihr ausprobiert und ehrlich sagt, was bei euch wirkt.",
-              "Ihr habt alle schon Skills. Hier lernt ihr neue dazu – und wann welcher passt."
+              "Wenn ich die Hand hebe, hebt ihr sie auch und werdet still. Hier gibt es keine Noten – es zählt, dass ihr ausprobiert."
             ],
-            "tabelle": {
-              "spalten": [
-                "hilft kurz",
-                "hilft wirklich"
-              ],
-              "zeilen": [
-                [
-                  "Tür knallen",
-                  "an die frische Luft gehen"
-                ],
-                [
-                  "jemanden anschreien",
-                  "mit jemandem reden, dem ich vertraue"
-                ],
-                [
-                  "zocken, bis man nicht mehr dran denkt",
-                  "Musik hören, sich bewegen"
-                ]
-              ]
-            },
-            "tipp": "Auch Scherzantworten wie „zocken“ oder „schlafen“ aufschreiben: Ablenkung und Ruhe sind echte Skills – nur helfen sie nicht in jeder Lage. Das Plakat aufheben: Es kommt in Einheit 13 und am Ende des Jahres wieder.",
-            "wennEsKippt": "Sagt niemand etwas, selbst zwei Beispiele aus der Tabelle geben und fragen, was davon die Klasse kennt. Kommt eine Provokation wie „jemanden schlagen“, sie ruhig unter „hilft kurz“ schreiben und fragen: Und was passiert danach? Meist sagt die Klasse selbst, dass es neuen Ärger bringt. Wird das Ruhezeichen ignoriert, nicht lauter werden: Hand oben lassen und warten.",
+            "punkte": [
+              "Ruhezeichen: Hand heben – alle heben die Hand und werden still.",
+              "Keine Noten: Es zählt, dass alle ausprobieren.",
+              "Vier feste Teile: Check-in mit Gefühlsrad (innen Grundgefühle, außen genauere Wörter), Thema, Skill, Skills-Pass.",
+              "Hilfe im Lycée: der SePAS; die Nummern stehen im Heft unter dem Kasten.",
+              "Jahresweg-Plakat zeigen: vom Ich über das Wir zur Welt."
+            ],
+            "wennEsKippt": "Wird das Ruhezeichen ignoriert, nicht lauter werden: Hand oben lassen und warten.",
             "blatt": "ff-das-fach"
           },
           {
-            "titel": "Klassenvereinbarung 1: sammeln und gewichten",
-            "dauer": 20,
+            "titel": "Was sind Skills? Unsere Regeln sammeln",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Zuerst allein (3 Min.): Aufgabe 1 auf dem Blatt „Unsere Klassenvereinbarung“ – was brauche ich, um hier ehrlich sein zu können, und was soll auf keinen Fall passieren? Vorher zwei Beispiele nennen: dass niemand lacht, wenn ich etwas Falsches sage; dass nichts weitererzählt wird. Stichworte reichen, in jeder Sprache. Dann in den Tischgruppen (7 Min.): die Gedanken auf Moderationskarten übertragen – eine Farbe für „brauchen“, eine für „nicht passieren“, ein Gedanke pro Karte, groß geschrieben. Die Gruppen hängen ihre Karten an die Tafel; die Lehrkraft liest sie vor, die Klasse sagt, was zusammengehört (6 Min.). Zum Schluss klebt jede Person drei Punkte auf die Kartengruppen, die ihr am wichtigsten sind – tischgruppenweise, damit es kein Gedränge gibt (4 Min.).",
+            "text": "Ein Plakat zeigt, was Skills sind: Fertigkeiten für schwierige Momente, die man übt wie einen Sport. Dann sammelt die Klasse, was sie braucht, um hier ehrlich sein zu können – erst allein, dann in den Tischgruppen, dann an der Tafel.",
             "sagen": [
-              "Was braucht ihr, damit ihr hier ehrlich sein könnt – auch mit zwanzig Leuten im Raum?",
-              "Was soll in dieser Stunde auf keinen Fall passieren?"
+              "Skills sind Fertigkeiten für schwierige Momente – man lernt sie wie einen Sport, durch Üben.",
+              "Was braucht ihr, damit ihr hier ehrlich sein könnt?"
             ],
-            "tipp": "Beim Zusammenhängen die Karten laut vorlesen und die Klasse entscheiden lassen, was zusammengehört. So bleiben es die Regeln der Klasse – und wer nicht gut liest, bekommt trotzdem alles mit.",
-            "wennEsKippt": "Kommen nur Scherzkarten („jede Woche Pizza“), mit Humor aufnehmen und nachfragen, was dahintersteckt: Soll es sich hier nicht wie normaler Unterricht anfühlen? Daraus wird oft eine echte Regel. Beleidigende Karten wortlos abnehmen und später unter vier Augen ansprechen. Klingt eine Karte nach eigener Erfahrung („dass ich nicht wieder fertiggemacht werde“), sie ernst nehmen und aufhängen, ohne zu fragen, wer sie geschrieben hat: Genau dafür ist die Vereinbarung da.",
+            "punkte": [
+              "Plakat „Was sind Skills?“ (6 Min.): zu zweit überlegen, was man bei Wut oder Nervosität tut; in zwei Spalten sammeln: „hilft kurz“ – „hilft wirklich“. Plakat aufheben (Einheit 13 und 35).",
+              "Allein (3 Min.): Aufgabe 1 im Heft – Was brauche ich, um ehrlich zu sein? Was soll nicht passieren?",
+              "Tischgruppen (7 Min.): Ideen auf Karten schreiben, eine Farbe für „brauchen“, eine für „nicht passieren“, ein Gedanke pro Karte.",
+              "Klasse (9 Min.): Karten aufhängen und vorlesen; die Klasse legt zusammen, was zusammengehört.",
+              "Punkte (5 Min.): Jede Person klebt drei Punkte auf die wichtigsten Gruppen, tischgruppenweise."
+            ],
+            "wennEsKippt": "Kommt eine Provokation wie „jemanden schlagen“, ruhig unter „hilft kurz“ schreiben und fragen: Und was passiert danach? Beleidigende Karten wortlos abnehmen und später unter vier Augen ansprechen.",
             "blatt": "ff-klassenvereinbarung"
           },
           {
             "titel": "Bewegungspause: Alle, die …",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen hinter ihrem Stuhl. Sätze vorlesen; wer sich angesprochen fühlt, setzt sich kurz und steht wieder auf. Mit harmlosen Sätzen beginnen und mit einem Satz zur Klasse enden. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Alle stehen hinter ihrem Stuhl. Wer sich bei einem Satz angesprochen fühlt, setzt sich kurz und steht wieder auf. Mit harmlosen Sätzen beginnen, mit einem Satz zur Klasse enden.",
+            "sagen": [
+              "Wer sich angesprochen fühlt, setzt sich kurz hin und steht wieder auf."
+            ],
             "punkte": [
               "Alle, die heute mit dem Bus gekommen sind.",
               "Alle, die mehr als zwei Sprachen sprechen.",
               "Alle, die ein Haustier haben.",
-              "Alle, die heute Morgen gern länger geschlafen hätten.",
               "Alle, die am ersten Schultag hier ein bisschen nervös waren.",
               "Alle, die sich auf etwas in diesem Jahr freuen."
             ],
-            "tipp": "Selbst mitmachen: Wer beim Satz über die Nervosität als Lehrkraft auch kurz sitzt, zeigt allen, dass das normal ist."
+            "tipp": "Selbst mitmachen: Wer beim Satz über die Nervosität auch kurz sitzt, zeigt, dass das normal ist. Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung."
           },
           {
-            "titel": "Klassenvereinbarung 2: formulieren und unterschreiben",
-            "dauer": 15,
+            "titel": "Klassenvereinbarung: formulieren und unterschreiben",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Die fünf Kartengruppen mit den meisten Punkten werden zu Regeln: gemeinsam positiv formulieren, in der Sprache der Klasse, und aufs Plakat schreiben (5 Min.). Fehlt eine der Kernregeln, ergänzen und begründen. Bei zwei Regeln fragen: Woran merkt man, dass sie gilt? Dann klären, was passiert, wenn jemand eine Regel bricht – Vorschlag: erst ein Zeichen (auf das Plakat zeigen), dann ein kurzes Gespräch nach der Stunde, später der Klassenrat (3 Min.). Den Satz zur Vertraulichkeit vorlesen und erklären, wo sie endet (2 Min.). Unterschreiben (5 Min.): Die Tischgruppen gehen nacheinander ans Plakat; die anderen übertragen die Regeln in Stichworten ins Heft und unterschreiben dort. Auch die Lehrkraft unterschreibt; das Plakat hängt ab jetzt in jeder Stunde.",
+            "text": "Aus den Karten mit den meisten Punkten entstehen fünf Regeln, positiv und in den Worten der Klasse. Dann wird die Vertraulichkeit geklärt, und alle unterschreiben. Das Plakat hängt ab jetzt in jeder Stunde.",
             "sagen": [
-              "Was andere hier Persönliches erzählen, bleibt in der Klasse. Eure eigenen Sachen dürft ihr natürlich erzählen, wem ihr wollt – auch zu Hause.",
-              "Eine Ausnahme gibt es: Wenn ich erfahre, dass jemand in Gefahr ist – weil ihm jemand wehtut oder weil er sich selbst wehtun will –, muss ich Hilfe holen. Das mache ich nicht heimlich: Ich sage der Person vorher, was ich tue.",
-              "Ich kann nicht versprechen, dass alle zwanzig immer dichthalten. Erzählt hier deshalb nur, was die ganze Klasse wissen darf – für alles andere bin ich nach der Stunde da, oder der SePAS. ‚Weiter‘ ist immer erlaubt."
+              "Was hier jemand Persönliches erzählt, bleibt in der Klasse – außer jemand ist in Gefahr: Dann hole ich Hilfe und sage vorher, was ich tue.",
+              "Erzählt nur, was alle wissen dürfen – für alles andere bin ich nach der Stunde da, oder der SePAS."
             ],
             "punkte": [
-              "Was andere hier Persönliches erzählen, bleibt in der Klasse.",
-              "Niemand muss etwas Persönliches erzählen – „weiter“ ist immer erlaubt.",
-              "Wir lachen miteinander, nicht übereinander.",
-              "Wer spricht, wird nicht unterbrochen.",
-              "Handys bleiben in der Tasche, außer eine Übung braucht sie."
+              "Regeln formulieren (10 Min.): die fünf Kartengruppen mit den meisten Punkten, positiv und kurz aufs Plakat; die Lehrkraft ergänzt nur, was fehlt.",
+              "Regelbruch (5 Min.): Vorschlag – erst ein Zeichen (auf das Plakat zeigen), dann ein Gespräch nach der Stunde, später der Klassenrat.",
+              "Vertraulichkeit (6 Min.): den Satz im Kasten „Ich halte mich daran“ vorlesen und die Grenze offen nennen.",
+              "Heft (6 Min.): die Regeln in Stichworten abschreiben (Aufgabe 2) und die Frage zum Regelbruch beantworten.",
+              "Unterschreiben (8 Min.): Die Tischgruppen gehen nacheinander ans Plakat und unterschreiben, dann im Heft; die Lehrkraft unterschreibt auch."
             ],
-            "tipp": "Die Grenzen der Vertraulichkeit offen zu nennen, schafft eher Vertrauen als Misstrauen. Den Satz nicht improvisieren, sondern vorlesen: Er steht im Heft im Kasten „Ich halte mich daran“.",
-            "wennEsKippt": "Schlägt die Klasse harte Strafen vor (Strafarbeit, rausschicken, sich vor allen entschuldigen), freundlich ablehnen: Hier soll niemand bloßgestellt werden. Will jemand nicht unterschreiben, nicht drängen: Unterschreiben heißt „Ich halte mich daran“, nicht „Ich finde alles gut“. Anbieten, später zu unterschreiben, und nach der Stunde kurz fragen, was fehlt.",
+            "wennEsKippt": "Schlägt die Klasse harte Strafen vor, freundlich ablehnen: Hier soll niemand bloßgestellt werden. Will jemand nicht unterschreiben, nicht drängen – Unterschreiben heißt „Ich halte mich daran“, nicht „Ich finde alles gut“.",
             "blatt": "ff-klassenvereinbarung"
           },
           {
-            "titel": "Das Gefühlsrad und der erste Check-in",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Das Gefühlsrad am Plakat erklären: Innen stehen sechs Grundgefühle, außen genauere Wörter. Zwei Paare vergleichen lassen: genervt und gekränkt, nervös und überfordert – wo ist der Unterschied? Dann kreist jede Person im Heft ein bis drei Wörter ein, die gerade passen; wer mag, schreibt das Wort in der eigenen Sprache dazu (3 Min.). Check-in in den Tischgruppen: Reihum zeigt jede Person auf ein Wort, ein Satz dazu ist freiwillig, „weiter“ ist erlaubt. Zum Schluss nennen drei oder vier Freiwillige ihr Wort vor der Klasse; die Lehrkraft beginnt. Ankündigen: Ab nächster Woche klebt jede Person beim Hereinkommen einen Punkt auf das Plakat.",
-            "sagen": [
-              "Ich fühle mich gerade …, weil … – das ‚weil‘ ist freiwillig.",
-              "Es gibt hier keine falschen Gefühle. Müde zählt auch."
-            ],
-            "tipp": "Mit einem ehrlichen, aber unverfänglichen Beispiel vorangehen, etwa: Ich bin ein bisschen aufgeregt, weil das Fach neu ist. Mit dem Klebepunkt beim Hereinkommen dauert der Check-in in den nächsten Stunden auch mit zwanzig Personen nur drei Minuten.",
-            "wennEsKippt": "Sagt jemand „egal“ oder „nichts“, das gelten lassen: Auch das ist eine Auskunft. Zeigt jemand auf ein sehr belastetes Wort wie hilflos oder einsam, nicht vor der Klasse nachfragen, sondern nach der Stunde unauffällig ansprechen, etwa beim Aufräumen: Mir ist aufgefallen, dass … Magst du sagen, wie es dir geht? Ohne Druck – und den SePAS nennen.",
-            "blatt": "ff-gefuehlsrad"
-          },
-          {
             "titel": "Skill: 5-4-3-2-1",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Ankündigen: Jetzt kommt der erste Skill – für Momente, in denen der Kopf voll ist (1 Min.). Alle sitzen bequem, die Augen offen und auf einen Punkt am Tisch gerichtet; wer mag, schließt sie – beides ist gleich gut. Langsam anleiten; alle zählen still im Kopf, zwischen den Schritten Zeit lassen. Wer nicht mitmachen möchte, bleibt einfach still sitzen und schaut aus dem Fenster (3 Min.). Danach zwei, drei Rückmeldungen: Wie war das? Wann könnte das helfen? Erklären: Der Skill holt die Aufmerksamkeit ins Hier und Jetzt zurück (4 Min.). Zum Schluss die Skill-Karte hinten im Heft zeigen: ausschneiden, mitnehmen. Wann jede Person den Skill diese Woche ausprobiert, legt sie gleich beim Abschluss fest – das ist ihre erste Wochen-Mission (2 Min.).",
-            "punkte": [
-              "5 Dinge, die du siehst",
-              "4 Dinge, die du hörst",
-              "3 Dinge, die du spürst – Stuhl, Füße, Kleidung",
-              "2 Dinge, die du riechst",
-              "1 Sache, die du schmeckst"
-            ],
-            "tipp": "Kichern ist beim ersten Mal normal. Nach drei oder vier Stunden gehört die Übung dazu. Drei Minuten Anleitung reichen – länger wird es für manche unangenehm. Ausgeschnitten passt die Skill-Karte ins Portemonnaie oder in die Handyhülle.",
-            "wennEsKippt": "Wird es unruhig, auf 3-2-1 kürzen und in der nächsten Stunde wiederholen. Niemand muss die Augen schließen, niemand muss mitmachen – wer aussteigt, bleibt still und wird nicht kommentiert. Findet jemand die Übung kindisch, das ernst nehmen: Es ist ein Werkzeug für Stressmomente, kein Spiel – es wirkt, wenn man es übt."
-          },
-          {
-            "titel": "Skills-Pass und Blitzlicht",
-            "dauer": 10,
-            "phase": "abschluss",
-            "text": "Den Skills-Pass im Heft zeigen: Am Ende jeder Stunde kommt ein Satz hinein – Was nehme ich heute mit? Erster Eintrag jetzt, Stichworte reichen (3 Min.). Dabei herumgehen und stempeln; die Einträge werden nicht bewertet und nur gelesen, wenn jemand es anbietet. Dann das Blitzlicht: Reihum sagt jede Person ein Wort zu heute, schnell und ohne Kommentar; „weiter“ ist erlaubt (2 Min.). Wochen-Mission und Moment wählen (2 Min.): Die Seite „Meine Wochen-Missionen“ im Heft zeigen und die erste Mission in einem Satz ansagen – wenn dein Moment kommt, dann 5-4-3-2-1. Auf „drei“ zeigen alle einen Finger für den Bus, zwei für vor einem Test, drei für abends im Bett, die Faust für einen eigenen Moment; dann schreibt jede Person ihren Moment in die Spalte „Mein Moment: Wenn …“ neben der Mission, ein Stichwort reicht. Zum Schluss den Elternbrief austeilen – der Abschnitt kommt bis zum genannten Datum zurück – und den Ausblick auf die nächste Stunde geben (3 Min.).",
+            "text": "Der erste Skill für Momente, in denen der Kopf voll ist: still 5 Dinge sehen, 4 hören, 3 spüren, 2 riechen, 1 schmecken. Danach der Abschluss: ein Satz in den Skills-Pass, die Mission ansagen und den Moment wählen.",
             "sagen": [
-              "Ein Wort zu heute. Nur ein Wort, ohne Erklärung.",
-              "Wann kommt euer Moment diese Woche? Bus – ein Finger, Test – zwei, Bett – drei, ein eigener Moment – die Faust. Schreibt ihn ins Heft: Wenn ich …, dann 5-4-3-2-1."
+              "Zählt still mit: 5 Dinge, die ihr seht – 4, die ihr hört …",
+              "Wann kommt euer Moment diese Woche – Bus, Test oder Bett?"
             ],
-            "tipp": "Mit zwanzig Personen dauert das Blitzlicht etwa zwei Minuten, wenn die Lehrkraft selbst beginnt und das Tempo vorgibt. Der Moment ist der eigentliche Plan: Ein Skill mit festem Auslöser wird eher ausprobiert als ein guter Vorsatz – nächste Woche fragt die Brücke danach, ohne Kontrolle. Heute festlegen, wo die Hefte bleiben – in der Tasche oder in einer Kiste im Raum – und dabei bleiben.",
-            "wennEsKippt": "Nennt jemand einen Scherz-Moment („auf dem Klo“), gelten lassen, wenn er ernst gemeint ist: Jeder echte Moment zählt. Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Wer die Sprache noch lernt oder nicht schreiben mag, malt ein kleines Zeichen für seinen Moment: Bus, Blatt, Bett.",
-            "blatt": "ff-skills-pass"
+            "punkte": [
+              "Skill (5 Min.): Augen offen auf einen Punkt oder geschlossen – beides gilt; langsam anleiten, alle zählen still, wer nicht mitmacht, bleibt still sitzen.",
+              "Rückmeldung (2 Min.): Wann könnte das helfen? Die Skill-Karte hinten im Heft zeigen: ausschneiden und mitnehmen.",
+              "Skills-Pass (3 Min.): erster Satz – Was nehme ich heute mit? Stichworte reichen; die Lehrkraft stempelt, nichts wird bewertet.",
+              "Mission und Moment (2 Min.): Mission ansagen; auf „drei“ zeigen alle: ein Finger Bus, zwei vor einem Test, drei abends im Bett, Faust eigener Moment; ein Stichwort in die Spalte „Mein Moment: Wenn …“.",
+              "Elternbrief austeilen (der Abschnitt kommt bis zum genannten Datum zurück), Ausblick geben (3 Min.)."
+            ],
+            "wennEsKippt": "Wird es unruhig, auf 3-2-1 kürzen; wer aussteigt, bleibt still und wird nicht kommentiert. Findet jemand die Übung kindisch, ernst nehmen: Es ist ein Werkzeug für Stressmomente und wirkt, wenn man es übt."
           }
         ],
-        "bruecke": "Nächste Woche geht es um den Start am Lycée: Was ist neu, was ist schwierig – und wer hilft euch hier?",
-        "mission": "Wenn dein Moment kommt – im Bus, vor einem Test oder abends im Bett –, dann mach einmal 5-4-3-2-1. Was war danach anders?",
-        "hintergrund": "Eine Klasse braucht am Anfang Sicherheit und klare Regeln, bevor persönliche Themen Platz haben. Programme zur Förderung sozial-emotionaler Kompetenzen wirken, wenn sie aufbauen, aktiv üben, auf bestimmte Fertigkeiten zielen und offen benennen, was gelernt wird – die SAFE-Merkmale (Durlak et al., 2011). Jugendliche ab etwa zwölf lehnen belehrende Programme ab und machen mit, wenn sie ernst genommen werden und mitbestimmen (Yeager, 2017). Deshalb entsteht die Klassenvereinbarung aus der Klasse; die Lehrkraft ergänzt nur, was fehlt, und sagt offen, wo die Vertraulichkeit endet. Das Skillstraining für Jugendliche arbeitet ebenso mit festen Abläufen und einem kurzen Skill je Sitzung (Rathus & Miller, 2015): Check-in, Skill, Skills-Pass und Blitzlicht geben jeder Stunde Halt. Die Wochen-Mission bindet den ersten Skill an einen selbst gewählten Moment – ein kleiner Wenn-dann-Plan (Einheit 2).",
+        "bruecke": "Nächste Woche geht es um den Start am Lycée: was neu ist, was schwerfällt – und wer euch hilft.",
+        "mission": "Mach einmal 5-4-3-2-1. Was ist danach anders?",
+        "hintergrund": "Eine neue Klasse braucht erst Sicherheit und Regeln. Programme für sozial-emotionales Lernen wirken, wenn sie aufbauen, aktiv üben, ein Ziel haben und offen sagen, was geübt wird (Durlak et al., 2011). Jugendliche lehnen Belehrung ab und machen mit, wenn sie mitbestimmen (Yeager, 2017): Darum entsteht die Klassenvereinbarung aus der Klasse. Feste Abläufe und ein kurzer Skill je Stunde tragen das Skillstraining (Rathus & Miller, 2015); der gewählte Moment macht die Mission zum Wenn-dann-Plan.",
         "quellen": [
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
           "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
         ],
-        "achtung": "Vertraulichkeit hat Grenzen: das offen sagen, nie Geheimhaltung versprechen. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken: ruhig bleiben, danken, nicht vor der Klasse vertiefen, nach der Stunde unter vier Augen sprechen, noch am selben Tag den SePAS informieren, nach dem Schutzkonzept handeln; bei akuter Gefahr nicht allein lassen, 112. Wirkt jemand im ersten Check-in sehr belastet, nach der Stunde unauffällig ansprechen. Die Lehrkraft muss das nicht allein klären.",
+        "achtung": "Vertraulichkeit hat Grenzen: das offen sagen, nie Geheimhaltung versprechen. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken: ruhig bleiben, danken, nicht vor der Klasse vertiefen, nach der Stunde unter vier Augen sprechen, noch am selben Tag den SePAS informieren; bei akuter Gefahr nicht allein lassen, 112. Wirkt jemand im ersten Check-in sehr belastet, nach der Stunde unauffällig ansprechen.",
         "differenzierung": {
-          "leichter": "Für Jugendliche, die mühsam schreiben oder die Sprache noch lernen: Notizen in Stichworten und in jeder Sprache; Regeln mündlich sammeln, die Lehrkraft schreibt; ins Heft kommen die Regeln in Stichworten. Beim Gefühlsrad die sechs Grundgefühle in der Mitte nutzen. Für den Moment der Mission reicht ein Wort in der Spalte „Mein Moment“ – Bus, Test, Bett.",
-          "schwerer": "Die Tischgruppen formulieren zu jeder Regel ein Beispiel, woran man merkt, dass sie eingehalten wird, und schlagen vor, wie die Klasse Regelverstöße im Klassenrat bespricht."
+          "leichter": "Notizen in Stichworten und in jeder Sprache; die Regeln werden mündlich gesammelt, die Lehrkraft schreibt. Für den Moment der Mission reicht ein Wort: Bus, Test, Bett.",
+          "schwerer": "Die Tischgruppen schreiben zu jeder Regel ein Beispiel, woran man merkt, dass sie gilt. Sie schlagen vor, wie die Klasse Regelverstöße im Klassenrat bespricht."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Aufstellen ohne Worte und Ruhezeichen (5 Min.), Klassenvereinbarung sammeln, gewichten und unterschreiben (30 Min.), 5-4-3-2-1 (5 Min.), Skills-Pass, Blitzlicht, Mission mit Moment wählen und Elternbrief (10 Min.). Das Plakat „Was sind Skills?“, den Jahresweg und das Gefühlsrad in der nächsten Stunde nachholen."
+        "kurzfassung": "Bleibt nur eine Stunde: Aufstellen und Ruhezeichen (5 Min.), Klassenvereinbarung sammeln, formulieren und unterschreiben (30 Min.), 5-4-3-2-1 (5 Min.), Skills-Pass, Mission mit Moment und Elternbrief (10 Min.). Das Plakat „Was sind Skills?“ und den Jahresweg in der nächsten Stunde nachholen."
       },
       "fr": {
         "titel": "Bienvenue – notre cadre",
-        "kurz": "La classe découvre la nouvelle matière et ses rituels, établit ensemble sa charte de classe et essaie un premier skill.",
+        "kurz": "La classe découvre la matière, établit sa charte de classe et essaie le premier skill : le 5-4-3-2-1.",
         "ziele": [
-          "nomment les temps forts d’une séance et savent où trouver de l’aide au lycée",
+          "nomment les quatre temps d’une séance et savent où trouver de l’aide au lycée",
           "établissent une charte de classe et la signent",
-          "disent avec la roue des émotions comment ils se sentent",
           "essaient le skill 5-4-3-2-1 et choisissent un moment pour s’y entraîner"
         ],
         "material": [
-          "Un cahier de l’élève par jeune",
-          "Feuilles A5, gros feutres",
-          "Cartes, 2 couleurs, 40 en tout",
-          "Gommettes : trois par jeune",
-          "Deux affiches (A2), ruban adhésif",
-          "Affiches : chemin de l’année (partie B), roue des émotions",
-          "Tampon ou autocollants (Skills-Pass)",
+          "Un cahier de l’élève par jeune, feuilles A5, gros feutres",
+          "Cartes de 2 couleurs (40), gommettes (4 par jeune)",
+          "Affiches : roue des émotions, chemin de l’année (partie B), deux affiches A2 vierges",
+          "Ruban adhésif, tampon ou autocollants pour le Skills-Pass",
           "Une lettre aux parents par jeune"
         ],
         "vorbereitung": [
-          "Cinq îlots de quatre, numérotés 1–5",
-          "Accrocher les affiches, déroulement au tableau",
-          "Voir avec le SePAS : interlocuteur et protocole de protection",
-          "Copier la lettre aux parents (guide, partie A) dans la langue de la famille",
-          "Lire à voix haute la phrase de confidentialité"
+          "Cinq tables de groupe (1–5), accrocher les affiches, déroulement au tableau.",
+          "Voir avec le SePAS : interlocuteur et protocole de protection de l’école.",
+          "Copier la lettre aux parents (partie A) dans la langue de la famille ; lire d’abord à voix haute la phrase de confidentialité du cahier."
         ],
         "ablauf": [
           {
             "min": "0–10",
             "phase": "ankommen",
-            "titel": "En ligne sans un mot"
+            "titel": "Tour d’humeur : en ligne sans un mot"
           },
           {
-            "min": "10–25",
-            "phase": "input",
-            "titel": "C’est quoi, un skill ? La matière et l’année"
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Bienvenue : la matière en cinq minutes"
           },
           {
-            "min": "25–45",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Charte 1 : rassembler et choisir"
+            "titel": "C’est quoi, un skill ? Rassembler nos règles"
           },
           {
             "min": "45–50",
             "phase": "aktiv",
-            "titel": "Pause active : debout, assis"
+            "titel": "Pause active : tous ceux qui…"
           },
           {
-            "min": "50–65",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Charte 2 : formuler et signer"
+            "titel": "Charte de classe : formuler et signer"
           },
           {
-            "min": "65–80",
-            "phase": "uebung",
-            "titel": "La roue des émotions et le premier tour d’humeur"
-          },
-          {
-            "min": "80–90",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : 5-4-3-2-1"
-          },
-          {
-            "min": "90–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass et tour éclair"
           }
         ],
         "schritte": [
           {
-            "titel": "En ligne sans un mot",
+            "titel": "Tour d’humeur : en ligne sans un mot",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Accueillir la classe, se présenter brièvement et montrer le déroulement au tableau (1 min). Distribuer les cahiers ; chaque jeune écrit son nom sur la couverture et plie une feuille A5 en chevalet avec son prénom (2 min). Puis la classe se met en ligne le long des murs par date d’anniversaire, du 1er janvier près de la porte au 31 décembre près de la fenêtre, sans dire un mot ; seuls les gestes sont permis (3 min). Pour vérifier, chacun dit son prénom et sa date d’anniversaire – seulement le jour et le mois (2 min). La ligne donne les îlots : les quatre premiers s’assoient à la table 1, les quatre suivants à la table 2, et ainsi de suite (2 min).",
+            "text": "L’enseignant·e accueille la classe. En entrant, chaque jeune prend un cahier, plie un chevalet avec son prénom et colle une gommette sur la roue des émotions. Puis la classe se met en ligne sans un mot, par date d’anniversaire (le 1er janvier près de la porte, le 31 décembre près de la fenêtre) ; la ligne donne les îlots.",
             "sagen": [
-              "Mettez-vous en ligne par date d’anniversaire – sans un seul mot. Les mains et les doigts sont permis.",
-              "Dites votre prénom et votre date d’anniversaire, juste le jour et le mois. Si vous voulez, dites aussi comment vous aimez qu’on vous appelle."
+              "Mettez-vous en ligne par date d’anniversaire – sans un mot. Les gestes sont permis."
             ],
-            "tipp": "La consigne muette met à l’aise : tout le monde a quelque chose à faire, personne n’est seul au centre, et même un jeune qui parle encore peu le français participe pleinement – pour cela, noter au tableau : janvier – porte, décembre – fenêtre. Au passage, on obtient des îlots mélangés.",
-            "wennEsKippt": "Si la classe parle ou chahute, arrêter calmement et recommencer : on réessaie, en silence complet – je chronomètre deux minutes. Avec une limite de temps, le calme revient souvent tout de suite. Un jeune qui ne veut pas se lever montre depuis sa table où il se placerait ; qui ne veut pas donner sa date dit seulement le mois."
+            "punkte": [
+              "Chevalet : plier une feuille A5 et écrire son prénom en grand ; coller la gommette sur la roue, qui le souhaite entoure aussi les mots dans le cahier (2 min).",
+              "Se placer en silence, seuls les gestes sont permis (3 min).",
+              "À tour de rôle : prénom et date d’anniversaire – le jour et le mois, ou seulement le mois (2 min).",
+              "Les quatre premiers s’assoient à la table 1, les quatre suivants à la table 2, et ainsi de suite (2 min)."
+            ],
+            "wennEsKippt": "Si la classe parle ou chahute, recommencer calmement : en silence complet, je chronomètre deux minutes. Qui ne veut pas se lever montre depuis sa place où il se mettrait dans la ligne.",
+            "blatt": "ff-gefuehlsrad"
           },
           {
-            "titel": "C’est quoi, un skill ? La matière et l’année",
-            "dauer": 15,
-            "phase": "input",
-            "text": "D’abord, introduire le signal de calme valable dès aujourd’hui et l’essayer une fois (1 min). Puis écrire la question au tableau : que faites-vous quand vous êtes vraiment en colère ou stressés – et qu’est-ce qui vous aide vraiment ensuite ? Deux minutes d’échange à deux, puis rassembler les réponses sur l’affiche « C’est quoi, un skill ? » en deux colonnes : aide un moment – aide vraiment (6 min, exemple ci-dessous). Expliquer ensuite : les skills sont des savoir-faire qui aident à mieux traverser les moments difficiles – avec ses émotions, avec le stress, avec les autres. On les apprend comme un sport : en s’entraînant, pas en écoutant (2 min). Présenter la matière avec la première page du cahier : pas de notes, quatre temps forts à chaque séance, l’encadré « De l’aide au lycée » et les numéros en dessous (3 min). Pour finir, le chemin de l’année sur l’affiche : du moi au nous, puis au monde ; deux ou trois voix : quel chapitre vous rend curieux ? (3 min)",
+            "titel": "Bienvenue : la matière en cinq minutes",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Pas encore de retour sur la dernière séance : la classe et la matière sont nouvelles. Introduire d’abord le signal de calme et l’essayer une fois, puis regarder la première page du cahier : le déroulement d’une séance, ce qui vaut ici, et où trouver de l’aide.",
             "sagen": [
-              "Quand je lève la main, vous levez la main aussi et vous faites silence. Ça vaut pour toute l’année.",
-              "Ici, il n’y a pas de notes. Ce qui compte, c’est d’essayer et de dire honnêtement ce qui marche pour vous.",
-              "Vous avez tous déjà des skills. Ici, vous en apprenez de nouveaux – et vous découvrez lequel convient à quel moment."
+              "Quand je lève la main, vous levez la main aussi et vous faites silence. Ici, pas de notes – ce qui compte, c’est d’essayer."
             ],
-            "tabelle": {
-              "spalten": [
-                "aide un moment",
-                "aide vraiment"
-              ],
-              "zeilen": [
-                [
-                  "claquer la porte",
-                  "prendre l’air"
-                ],
-                [
-                  "crier sur quelqu’un",
-                  "parler à quelqu’un de confiance"
-                ],
-                [
-                  "jouer à la console jusqu’à ne plus y penser",
-                  "écouter de la musique, bouger"
-                ]
-              ]
-            },
-            "tipp": "Noter aussi les réponses pour rire, comme « jouer à la console » ou « dormir » : se distraire et se reposer sont de vrais skills – ils n’aident simplement pas dans toutes les situations. Garder l’affiche : elle revient à la séance 13 et en fin d’année.",
-            "wennEsKippt": "Si personne ne parle, donner soi-même deux exemples ci-dessous et demander lesquels la classe connaît. Si quelqu’un provoque, par exemple avec « frapper quelqu’un », l’écrire calmement sous « aide un moment » et demander : et après, qu’est-ce qui se passe ? En général, la classe dit elle-même que ça crée de nouveaux problèmes. Si le signal de calme est ignoré, ne pas hausser la voix : garder la main levée et attendre.",
+            "punkte": [
+              "Signal de calme : on lève la main, tout le monde lève la main et se tait.",
+              "Pas de notes : ce qui compte, c’est que chacun essaie.",
+              "Quatre temps fixes : tour d’humeur avec la roue des émotions (au centre les émotions de base, autour des mots plus précis), thème, skill, Skills-Pass.",
+              "Aide au lycée : le SePAS ; les numéros figurent dans le cahier, sous l’encadré.",
+              "Montrer l’affiche du chemin de l’année : du moi au nous, puis au monde."
+            ],
+            "wennEsKippt": "Si le signal est ignoré, ne pas hausser la voix : garder la main levée et attendre.",
             "blatt": "ff-das-fach"
           },
           {
-            "titel": "Charte 1 : rassembler et choisir",
-            "dauer": 20,
+            "titel": "C’est quoi, un skill ? Rassembler nos règles",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "D’abord seul (3 min) : exercice 1 de la fiche « Notre charte de classe » – de quoi ai-je besoin pour oser être honnête ici, et qu’est-ce qui ne doit surtout pas arriver ? Donner avant deux exemples : que personne ne rie quand je me trompe ; que rien ne soit répété ailleurs. Des mots-clés suffisent, dans n’importe quelle langue. Puis en îlots (7 min) : reporter les idées sur des cartes – une couleur pour « besoin », une pour « à éviter », une idée par carte, écrite en grand. Les groupes affichent leurs cartes au tableau ; les lire à voix haute, la classe dit ce qui va ensemble (6 min). Pour finir, chaque jeune colle trois gommettes sur les groupes de cartes qui comptent le plus pour lui – îlot par îlot, pour éviter la bousculade (4 min).",
+            "text": "Une affiche montre ce que sont les skills : des savoir-faire pour les moments difficiles, qu’on s’entraîne à faire comme un sport. Puis la classe rassemble ce dont elle a besoin pour oser être honnête ici – d’abord seul, puis en îlots, puis au tableau.",
             "sagen": [
-              "De quoi avez-vous besoin pour oser être honnêtes ici – même à vingt dans la salle ?",
-              "Qu’est-ce qui ne doit surtout pas arriver pendant ce cours ?"
+              "Les skills sont des savoir-faire pour les moments difficiles – on les apprend comme un sport, en s’entraînant.",
+              "De quoi avez-vous besoin pour oser être honnêtes ici ?"
             ],
-            "tipp": "En regroupant, lire les cartes à voix haute et laisser la classe décider de ce qui va ensemble. Ainsi, les règles restent celles de la classe – et ceux qui lisent difficilement suivent quand même tout.",
-            "wennEsKippt": "Si les cartes sont surtout pour rire (« pizza chaque semaine »), les accueillir avec humour et demander ce qu’il y a derrière : vous voulez que ce cours ne ressemble pas à un cours comme les autres ? On en tire souvent une vraie règle. Retirer sans commentaire une carte blessante et en parler plus tard en tête-à-tête. Si une carte semble venir d’un vécu (« qu’on ne me harcèle plus »), la prendre au sérieux et l’afficher sans demander qui l’a écrite : la charte est faite pour ça.",
+            "punkte": [
+              "Affiche « C’est quoi, un skill ? » (6 min) : à deux, chercher ce qu’on fait quand on est en colère ou stressé ; classer en deux colonnes : « aide un moment » – « aide vraiment ». Garder l’affiche (séances 13 et 35).",
+              "Seul (3 min) : exercice 1 du cahier – de quoi ai-je besoin pour oser être honnête ? Qu’est-ce qui ne doit pas arriver ?",
+              "En îlots (7 min) : écrire les idées sur des cartes, une couleur pour « besoin », une pour « à éviter », une idée par carte.",
+              "En classe (9 min) : afficher et lire les cartes ; la classe regroupe ce qui va ensemble.",
+              "Gommettes (5 min) : chacun colle trois gommettes sur les groupes les plus importants, îlot par îlot."
+            ],
+            "wennEsKippt": "Si quelqu’un provoque, par exemple avec « frapper quelqu’un », l’écrire calmement sous « aide un moment » et demander : et après, qu’est-ce qui se passe ? Retirer sans commentaire les cartes blessantes et en parler plus tard en tête-à-tête.",
             "blatt": "ff-klassenvereinbarung"
           },
           {
-            "titel": "Pause active : debout, assis",
+            "titel": "Pause active : tous ceux qui…",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se lève derrière sa chaise. Lire des phrases ; qui se sent concerné s’assoit un instant, puis se relève. Commencer par des phrases anodines et finir par une phrase sur la classe. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Tout le monde se lève derrière sa chaise. Qui se sent concerné par une phrase s’assoit un instant, puis se relève. Commencer par des phrases anodines et finir par une phrase sur la classe.",
+            "sagen": [
+              "Qui se sent concerné s’assoit un instant, puis se relève."
+            ],
             "punkte": [
               "Tous ceux qui sont venus en bus aujourd’hui.",
               "Tous ceux qui parlent plus de deux langues.",
               "Tous ceux qui ont un animal de compagnie.",
-              "Tous ceux qui auraient aimé dormir plus longtemps ce matin.",
               "Tous ceux qui étaient un peu nerveux le jour de la rentrée.",
               "Tous ceux qui se réjouissent de quelque chose cette année."
             ],
-            "tipp": "Participer soi-même : en s’asseyant aussi à la phrase sur la rentrée, l’adulte montre que c’est normal."
+            "tipp": "Participer soi-même : en s’asseyant aussi à la phrase sur le trac, l’adulte montre que c’est normal. Si la grande récréation tombe entre les deux heures, supprimer l’exercice."
           },
           {
-            "titel": "Charte 2 : formuler et signer",
-            "dauer": 15,
+            "titel": "Charte de classe : formuler et signer",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Les cinq groupes de cartes avec le plus de gommettes deviennent des règles : les formuler ensemble de façon positive, avec les mots de la classe, et les écrire sur l’affiche (5 min). Si une règle de base manque, la compléter et l’expliquer. Pour deux règles, demander : à quoi voit-on qu’elle est respectée ? Clarifier ensuite ce qui se passe si quelqu’un ne respecte pas une règle – proposition : d’abord un signe (montrer l’affiche), puis un court échange après le cours, plus tard le conseil de coopération (3 min). Lire la phrase sur la confidentialité et expliquer où elle s’arrête (2 min). Signature (5 min) : les îlots passent l’un après l’autre à l’affiche ; les autres recopient les règles en mots-clés dans le cahier et y signent. L’enseignant·e signe aussi ; l’affiche reste désormais au mur à chaque séance.",
+            "text": "Les cartes qui ont le plus de gommettes deviennent cinq règles, formulées de façon positive avec les mots de la classe. Puis on clarifie la confidentialité, et tout le monde signe. L’affiche reste ensuite au mur à chaque séance.",
             "sagen": [
-              "Ce que les autres racontent de personnel ici reste dans la classe. Vos propres histoires, vous pouvez bien sûr les raconter à qui vous voulez – à la maison aussi.",
-              "Il y a une exception : si j’apprends que quelqu’un est en danger – parce que quelqu’un lui fait du mal ou parce qu’il veut se faire du mal –, je dois aller chercher de l’aide. Je ne le fais pas en cachette : je dis d’abord à la personne ce que je vais faire.",
-              "Je ne peux pas garantir que les vingt personnes ici garderont toujours tout pour elles. Alors, ne racontez ici que ce que toute la classe peut savoir – pour le reste, je suis là après le cours, ou le SePAS. On peut toujours dire “je passe”."
+              "Ce que les autres racontent de personnel ici reste dans la classe – sauf si quelqu’un est en danger : alors je vais chercher de l’aide et je dis d’abord ce que je vais faire.",
+              "Ne racontez ici que ce que toute la classe peut savoir – pour le reste, je suis là après le cours, ou le SePAS."
             ],
             "punkte": [
-              "Ce que les autres racontent de personnel ici reste dans la classe.",
-              "Personne n’est obligé de raconter quelque chose de personnel – on peut toujours dire « je passe ».",
-              "On rit ensemble, pas les uns des autres.",
-              "Quand quelqu’un parle, on ne l’interrompt pas.",
-              "Les portables restent dans le sac, sauf si un exercice en a besoin."
+              "Formuler les règles (10 min) : les cinq groupes de cartes les plus choisis, en phrases positives et courtes sur l’affiche ; l’enseignant·e ne complète que ce qui manque.",
+              "Si une règle n’est pas respectée (5 min) : proposition – d’abord un signe (montrer l’affiche), puis un échange après le cours, plus tard le conseil de coopération.",
+              "Confidentialité (6 min) : lire la phrase de l’encadré « Je la respecte » du cahier et dire ouvertement où elle s’arrête.",
+              "Cahier (6 min) : recopier les règles en mots-clés (exercice 2) et répondre à la question sur le non-respect d’une règle.",
+              "Signatures (8 min) : les îlots passent un à un à l’affiche et signent, puis dans le cahier ; l’enseignant·e signe aussi."
             ],
-            "tipp": "Dire ouvertement où s’arrête la confidentialité crée plutôt de la confiance que de la méfiance. Ne pas improviser la phrase, mais la lire : elle figure dans le cahier, dans l’encadré « Je la respecte ».",
-            "wennEsKippt": "Si la classe propose des sanctions dures (punition écrite, exclusion du cours, s’excuser devant tout le monde), refuser aimablement : ici, personne ne doit être humilié. Si un jeune ne veut pas signer, ne pas insister : signer veut dire « je la respecte », pas « je suis d’accord avec tout ». Proposer de signer plus tard et demander après le cours ce qui manque.",
+            "wennEsKippt": "Si la classe propose des sanctions dures, refuser aimablement : ici, personne ne doit être humilié. Si un jeune ne veut pas signer, ne pas insister – signer veut dire « je la respecte », pas « je suis d’accord avec tout ».",
             "blatt": "ff-klassenvereinbarung"
           },
           {
-            "titel": "La roue des émotions et le premier tour d’humeur",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Présenter la roue sur l’affiche : au centre, six émotions de base ; à l’extérieur, des mots plus précis. Faire comparer deux paires : agacé et blessé, nerveux et débordé – quelle différence ? Puis chaque jeune entoure dans son cahier un à trois mots qui correspondent à son état du moment ; qui le souhaite écrit à côté le mot dans sa langue (3 min). Tour d’humeur en îlots : chacun montre un mot à son tour, une phrase en plus est facultative, « je passe » est permis. Pour finir, trois ou quatre volontaires disent leur mot devant la classe ; l’enseignant·e commence. Annoncer : dès la semaine prochaine, chacun colle une gommette sur l’affiche en entrant.",
-            "sagen": [
-              "En ce moment, je me sens…, parce que… – le “parce que” est facultatif.",
-              "Il n’y a pas de mauvaises émotions ici. Être fatigué, ça compte aussi."
-            ],
-            "tipp": "Montrer l’exemple avec une réponse honnête mais sans risque, par exemple : j’ai un peu le trac, parce que la matière est nouvelle. Avec la gommette à l’entrée, le tour d’humeur ne prend ensuite que trois minutes, même à vingt.",
-            "wennEsKippt": "Si quelqu’un dit « bof » ou « rien », l’accepter : c’est aussi une information. Si un jeune montre un mot très lourd comme impuissant ou seul, ne pas poser de questions devant la classe, mais lui parler discrètement après le cours, par exemple en rangeant : j’ai remarqué que… Tu veux me dire comment tu vas ? Sans insister – et lui indiquer le SePAS.",
-            "blatt": "ff-gefuehlsrad"
-          },
-          {
             "titel": "Skill : 5-4-3-2-1",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Annoncer : voici le premier skill – pour les moments où la tête est pleine (1 min). Tout le monde s’assoit confortablement, les yeux ouverts, le regard posé sur un point de la table ; qui le souhaite les ferme – les deux se valent. Guider lentement ; chacun compte en silence dans sa tête, laisser du temps entre les étapes. Qui ne veut pas participer reste simplement assis en silence et regarde par la fenêtre (3 min). Ensuite, deux ou trois retours : comment c’était ? Quand est-ce que ça pourrait aider ? Expliquer : ce skill ramène l’attention ici et maintenant (4 min). Pour finir, montrer la carte skill à la fin du cahier : à découper, à garder sur soi. Le moment où chacun essaiera le skill cette semaine se choisit tout de suite après, à la clôture – c’est la première mission de la semaine (2 min).",
-            "punkte": [
-              "5 choses que tu vois",
-              "4 choses que tu entends",
-              "3 choses que tu sens sur ta peau – la chaise, tes pieds sur le sol, tes vêtements",
-              "2 odeurs autour de toi",
-              "1 goût dans ta bouche"
-            ],
-            "tipp": "Les rires sont normaux la première fois. Après trois ou quatre séances, l’exercice fait partie du cours. Trois minutes de guidage suffisent – plus long, cela devient désagréable pour certains. Découpée, la carte skill tient dans un porte-monnaie ou une coque de téléphone.",
-            "wennEsKippt": "Si la classe s’agite, raccourcir à 3-2-1 et refaire l’exercice à la séance suivante. Personne n’est obligé de fermer les yeux ni de participer – qui arrête reste en silence et n’est pas commenté. Si quelqu’un trouve l’exercice puéril, le prendre au sérieux : c’est un outil pour les moments de stress, pas un jeu – il marche quand on s’entraîne."
-          },
-          {
-            "titel": "Skills-Pass et tour éclair",
-            "dauer": 10,
-            "phase": "abschluss",
-            "text": "Montrer le Skills-Pass dans le cahier : à la fin de chaque séance, on y écrit une phrase – qu’est-ce que j’emporte aujourd’hui ? Première phrase maintenant, des mots-clés suffisent (3 min). Passer entre les îlots et tamponner ; les phrases ne sont pas évaluées et ne sont lues que si le jeune le propose. Puis le tour éclair : à tour de rôle, chacun dit un mot sur la séance, vite et sans commentaire ; on peut dire « je passe » (2 min). Mission de la semaine et choix du moment (2 min) : montrer la page « Mes missions de la semaine » dans le cahier et annoncer la première mission en une phrase – quand ton moment arrive, tu fais le 5-4-3-2-1. À « trois », tout le monde montre un doigt pour le bus, deux pour avant un devoir en classe, trois pour le soir au lit, le poing pour un moment à soi ; puis chacun écrit son moment dans la colonne « Mon moment : quand … » à côté de la mission, un mot-clé suffit. Pour finir, distribuer la lettre aux parents – le coupon revient avant la date indiquée – et annoncer la prochaine séance (3 min).",
+            "text": "Le premier skill, pour les moments où la tête est pleine : en silence, 5 choses qu’on voit, 4 qu’on entend, 3 qu’on sent sur la peau, 2 odeurs, 1 goût. Puis la clôture : une phrase dans le Skills-Pass, annoncer la mission et choisir son moment.",
             "sagen": [
-              "Un mot sur aujourd’hui. Juste un mot, sans explication.",
-              "Quand arrive votre moment cette semaine ? Bus – un doigt, devoir en classe – deux, lit – trois, un autre moment – le poing. Écrivez-le dans le cahier : quand je…, alors 5-4-3-2-1."
+              "Comptez en silence : 5 choses que vous voyez – 4 que vous entendez…",
+              "Quand arrive votre moment cette semaine – bus, devoir en classe ou lit ?"
             ],
-            "tipp": "À vingt, le tour éclair dure environ deux minutes si l’enseignant·e commence et donne le rythme. Le moment, c’est le vrai plan : un skill lié à un déclencheur précis a plus de chances d’être essayé qu’une bonne résolution – la semaine prochaine, le lien y revient, sans contrôle. Décider dès aujourd’hui où restent les cahiers – dans le sac ou dans une caisse en classe – et s’y tenir.",
-            "wennEsKippt": "Si quelqu’un propose un moment pour rire (« aux toilettes »), l’accepter s’il est sérieux : tout vrai moment compte. Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne le lui demandera. Qui apprend encore la langue ou n’aime pas écrire dessine un petit signe pour son moment : bus, feuille, lit.",
-            "blatt": "ff-skills-pass"
+            "punkte": [
+              "Skill (5 min) : yeux ouverts sur un point ou fermés – les deux valent ; guider lentement, chacun compte en silence ; qui ne veut pas participer reste assis en silence.",
+              "Retour (2 min) : quand cela pourrait-il aider ? Montrer la carte skill à la fin du cahier : à découper et à garder sur soi.",
+              "Skills-Pass (3 min) : première phrase – qu’est-ce que j’emporte aujourd’hui ? Des mots-clés suffisent ; l’enseignant·e tamponne, rien n’est évalué.",
+              "Mission et moment (2 min) : annoncer la mission ; à « trois », un doigt pour le bus, deux pour un devoir en classe, trois pour le lit, le poing pour un autre moment ; un mot-clé dans « Mon moment : quand … ».",
+              "Distribuer la lettre aux parents (le coupon revient avant la date indiquée), puis annoncer la prochaine séance (3 min)."
+            ],
+            "wennEsKippt": "Si la classe s’agite, raccourcir à 3-2-1 ; qui arrête reste en silence et n’est pas commenté. Si quelqu’un trouve l’exercice puéril, le prendre au sérieux : c’est un outil pour les moments de stress, il marche quand on s’entraîne."
           }
         ],
-        "bruecke": "La semaine prochaine, on parle des débuts au lycée : qu’est-ce qui est nouveau, qu’est-ce qui est difficile – et qui peut vous aider ici ?",
-        "mission": "Quand ton moment arrive – dans le bus, avant un devoir en classe ou le soir au lit –, fais une fois le 5-4-3-2-1. Qu’est-ce qui a changé après ?",
-        "hintergrund": "Au début, une classe a besoin de sécurité et de règles claires avant les sujets personnels. Les programmes socio-émotionnels sont efficaces quand ils progressent pas à pas, font pratiquer, visent des compétences précises et nomment ce qui est appris – les critères SAFE (Durlak et al., 2011). Dès douze ans, les jeunes rejettent les programmes qui font la morale et s’engagent quand ils sont pris au sérieux et peuvent décider (Yeager, 2017). D’où une charte qui naît de la classe ; l’enseignant·e ne complète que ce qui manque et dit où s’arrête la confidentialité. L’entraînement aux skills pour adolescents repose aussi sur des rituels fixes et un court skill par séance (Rathus & Miller, 2015) : tour d’humeur, skill, Skills-Pass et tour éclair donnent au cours un cadre solide. La mission de la semaine lie le premier skill à un moment choisi par chacun – un petit plan « si… alors » (séance 2).",
+        "bruecke": "La semaine prochaine, on parle des débuts au lycée : ce qui est nouveau, ce qui est difficile – et qui vous aide.",
+        "mission": "Fais une fois le 5-4-3-2-1. Qu’est-ce qui est différent après ?",
+        "hintergrund": "Une nouvelle classe a besoin de sécurité et de règles claires. Un programme socio-émotionnel marche quand il progresse, fait pratiquer, vise un but précis et dit ce qu’on s’entraîne à faire (Durlak et al., 2011). Les jeunes refusent la morale et s’engagent quand ils décident (Yeager, 2017) : la charte naît donc de la classe. Des routines fixes et un court skill par séance soutiennent l’entraînement aux skills (Rathus & Miller, 2015) ; le moment choisi fait de la mission un plan « si… alors ».",
         "quellen": [
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
           "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94.",
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
         ],
-        "achtung": "La confidentialité a des limites : le dire, ne jamais promettre le secret. Si un jeune parle de violence, d’abus, d’automutilation ou d’idées suicidaires : rester calme, le remercier, ne pas approfondir devant la classe, lui parler seul à seul après le cours, informer le SePAS le jour même, suivre le protocole de protection ; en cas de danger immédiat, ne pas le laisser seul, 112. Si un jeune semble très éprouvé au premier tour d’humeur, lui parler discrètement après le cours. L’enseignant·e n’a pas à régler cela sans aide.",
+        "achtung": "La confidentialité a des limites : le dire, ne jamais promettre le secret. Si un jeune parle de violence, d’abus, d’automutilation ou d’idées suicidaires : rester calme, le remercier, ne pas approfondir devant la classe, lui parler seul à seul après le cours, informer le SePAS le jour même ; en cas de danger immédiat, ne pas le laisser seul, 112. Si un jeune semble très éprouvé au premier tour d’humeur, lui parler discrètement après le cours.",
         "differenzierung": {
-          "leichter": "Pour les jeunes qui ont du mal à écrire ou qui apprennent encore la langue : des mots-clés, dans n’importe quelle langue ; rassembler les règles à l’oral, l’enseignant·e écrit ; dans le cahier, les règles en mots-clés suffisent. Pour la roue des émotions, utiliser les six émotions de base du centre. Pour le moment de la mission, un mot dans la colonne « Mon moment » suffit – bus, devoir, lit.",
-          "schwerer": "Les îlots formulent pour chaque règle un exemple qui montre qu’elle est respectée et proposent comment la classe discute des écarts au conseil de coopération."
+          "leichter": "Des mots-clés dans n’importe quelle langue ; rassembler les règles à l’oral, l’enseignant·e écrit. Pour le moment de la mission, un mot suffit : bus, devoir, lit.",
+          "schwerer": "Les îlots écrivent pour chaque règle un exemple qui montre qu’elle est respectée. Ils proposent comment la classe discute des écarts au conseil de coopération."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : en ligne sans un mot et signal de calme (5 min), rassembler, choisir et signer la charte (30 min), 5-4-3-2-1 (5 min), Skills-Pass, tour éclair, mission avec choix du moment et lettre aux parents (10 min). Rattraper l’affiche « C’est quoi, un skill ? », le chemin de l’année et la roue des émotions à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : en ligne sans un mot et signal de calme (5 min), charte de classe rassemblée, formulée et signée (30 min), 5-4-3-2-1 (5 min), Skills-Pass, mission avec choix du moment et lettre aux parents (10 min). Rattraper l’affiche « C’est quoi, un skill ? » et le chemin de l’année à la séance suivante."
       }
     }
   ],

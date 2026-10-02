@@ -31,26 +31,21 @@
       ],
       "de": {
         "titel": "Wo spüre ich Gefühle?",
-        "kurz": "Die Jugendlichen zeichnen ihre Gefühls-Landkarte, finden ihr erstes Warnsignal für Wut und Angst und erleben, wie Bewegung und Musik die Stimmung verändern.",
+        "kurz": "Die Jugendlichen zeichnen ihre Gefühls-Landkarte, finden ihr erstes Warnsignal für Wut und Angst und üben, den Körper früh abzufragen.",
         "ziele": [
           "zeichnen ihre Gefühls-Landkarte des Körpers",
           "benennen ihr erstes Warnsignal für Wut und für Angst",
-          "erleben, wie Bewegung und Musik die Stimmung verändern",
           "probieren den Körper-Check als Skill aus und wählen einen Moment, in dem sie auf ihr Warnsignal achten"
         ],
         "material": [
           "Gefühlsrad-Plakat, Körperumriss (Packpapier)",
-          "40 Klebepunkte, nicht rot oder lila",
-          "Je 20 rote und lila Klebepunkte",
+          "Klebepunkte: 40 in anderen Farben, je 20 rote und lila",
           "Buntstifte (5 Farben) für alle",
-          "Lautsprecher, vier Musikstücke",
           "Schülerheft, Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
           "Großen Körperumriss auf Packpapier zeichnen und neben die Tür hängen; einen kleinen an die Tafel.",
-          "Vier Musikstücke von je etwa anderthalb Minuten bereitlegen (Schritt 7) und die Lautstärke testen.",
-          "Für Schritt 7 einen Rundweg um die Tischgruppen planen: Taschen weg, Stühle an die Tische.",
-          "Klären, ob Einheit 12 stattfindet (Wahleinheit); wenn nicht, endet heute das Trimester – Skills-Pass und Hilfe-Nummern im Abschluss (Schritt 9)."
+          "Klären, ob Stunde 12 stattfindet (Wahleinheit): Wenn nicht, endet heute das Trimester – Skills-Pass und Hilfe-Nummern im Abschluss (Schritt 6)."
         ],
         "ablauf": [
           {
@@ -61,15 +56,10 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Rückblick: vom Steuerpult zum Körper"
+            "titel": "Rückblick, Mission und Thema"
           },
           {
-            "min": "15–25",
-            "phase": "input",
-            "titel": "Zeigt auf drei: Wo sitzt das Gefühl?"
-          },
-          {
-            "min": "25–45",
+            "min": "15–45",
             "phase": "uebung",
             "titel": "Meine Gefühls-Landkarte"
           },
@@ -79,24 +69,14 @@
             "titel": "Bewegungspause: Hampelmann und Herzschlag"
           },
           {
-            "min": "50–65",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Erste Warnsignale für Wut und Angst"
+            "titel": "Mein erstes Warnsignal"
           },
           {
-            "min": "65–80",
-            "phase": "aktiv",
-            "titel": "Musik und Bewegung"
-          },
-          {
-            "min": "80–90",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: Körper-Check"
-          },
-          {
-            "min": "90–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, Mission und Trimester-Check"
           }
         ],
         "schritte": [
@@ -104,189 +84,123 @@
             "titel": "Check-in: Gefühl und Ort im Körper",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person zwei Punkte: einen wie immer auf das Gefühlsrad und einen auf den großen Körperumriss neben der Tür – dorthin, wo das Gefühl gerade sitzt. Wer es nirgends spürt, klebt den zweiten Punkt neben den Umriss (4 Min.). Die Lehrkraft beginnt und zeigt dabei auf die Stelle am eigenen Körper; dann nennen drei Freiwillige ihr Wort und zeigen, wo sie es spüren – nicht nachfragen, nicht deuten (4 Min.). Zum Schluss gemeinsam auf den Umriss schauen: Wo sind die meisten Punkte? (2 Min.)",
+            "text": "Beim Hereinkommen klebt jede Person zwei Punkte: einen wie immer auf das Gefühlsrad und einen auf den großen Körperumriss neben der Tür – dorthin, wo das Gefühl gerade sitzt; wer es nirgends spürt, klebt neben den Umriss. Die Lehrkraft beginnt und zeigt dabei auf die Stelle am eigenen Körper, drei Freiwillige folgen – nicht nachfragen, nicht deuten. Zum Schluss gemeinsam auf den Umriss schauen: Wo sind die meisten Punkte?",
             "sagen": [
-              "Ich bin gerade ‚angespannt‘. Das sitzt bei mir im Nacken – der ist ganz fest.",
-              "Wo spürt ihr euer Gefühl gerade? ‚Nirgends‘ ist auch eine Antwort."
+              "Ich bin gerade ‚angespannt‘ – das sitzt bei mir im Nacken, der ist ganz fest.",
+              "Wo spürt ihr euer Gefühl gerade – ‚nirgends‘ ist auch eine Antwort."
             ],
-            "tipp": "Wer nichts spürt, macht nichts falsch – Spüren lässt sich üben. Oft hilft die Frage, wo es sich gerade warm, kalt, eng oder weit anfühlt.",
-            "wennEsKippt": "Kleben einige ihren Punkt an alberne Stellen, kurz mitlachen und neutral bleiben: Auch das ist eine Stelle im Körper; eindeutig anzügliche Punkte wortlos abnehmen. Drängeln sich alle an Rad und Umriss, tischgruppenweise kleben lassen; wer keinen Punkt kleben will, lässt es."
+            "wennEsKippt": "Kleben einige ihren Punkt an alberne Stellen, kurz mitlachen und neutral bleiben; eindeutig anzügliche Punkte wortlos abnehmen. Wer nichts spürt, macht nichts falsch – Spüren lässt sich üben, und oft hilft die Frage: Wo ist es warm, kalt, eng oder weit?"
           },
           {
-            "titel": "Rückblick: vom Steuerpult zum Körper",
+            "titel": "Rückblick, Mission und Thema",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Zur Wochen-Mission fragen: Kam dein Moment – und hast du still benannt, wer am Pult stand? Daumen hoch, Mitte, runter; eine Stimme erzählt; niemand muss den Moment erlebt haben. Dann auf das Plakat mit der Hauptbotschaft von Janas Geschichte zeigen und fragen, woran man merkt, dass ein Gefühl das Steuer übernimmt – noch bevor man es denkt. Das Thema nennen: Gefühle passieren im ganzen Körper, und oft meldet sich der Körper zuerst.",
+            "text": "Zur Wochen-Mission fragen: Kam dein Moment – und hast du still benannt, wer am Pult stand? Daumen hoch, Mitte oder runter, eine Stimme erzählt; niemand muss den Moment erlebt haben. Dann auf das Plakat mit der Hauptbotschaft von Janas Geschichte zeigen und das Thema nennen: Gefühle passieren im ganzen Körper, und oft meldet sich der Körper zuerst.",
             "sagen": [
-              "Jana merkt in der Geschichte oft erst spät, wer in ihrem Kopf am Pult steht. Woran merkt ihr es bei euch?",
+              "Jana merkt in der Geschichte oft erst spät, wer am Pult steht – woran merkt ihr es bei euch?",
               "Heute sucht ihr, wo eure Gefühle im Körper wohnen – und welches Signal als Erstes kommt."
             ],
-            "tipp": "Zwei, drei Antworten reichen; meist kommen schon Signale wie Herzklopfen oder ein heißes Gesicht. Sie an die Tafel neben den kleinen Umriss schreiben."
-          },
-          {
-            "titel": "Zeigt auf drei: Wo sitzt das Gefühl?",
-            "dauer": 10,
-            "phase": "input",
-            "text": "Alle stehen hinter ihrem Stuhl. Die Lehrkraft liest eine Situation vor; auf „drei“ zeigen alle gleichzeitig auf die Stelle am eigenen Körper, wo sie in dieser Situation etwas spüren würden – Kopf, Hals, Brust, Bauch, Hände, Beine. Nach jeder Situation zwei, drei Personen fragen, was dort genau passiert: Klopft es, zieht es, wird es heiß, kribbelt es? Die Lehrkraft schreibt die Antworten an den kleinen Umriss an der Tafel (sechs Situationen, 8 Min.). Zum Schluss auf das Tafelbild schauen: Bei Wut und bei Angst klopft oft das Herz – woran merkt man den Unterschied? (2 Min.)",
-            "sagen": [
-              "Zeigt auf drei, wo ihr es spüren würdet. Eins, zwei, drei.",
-              "Was passiert dort genau – klopft es, zieht es, wird es heiß?"
-            ],
-            "punkte": [
-              "Du stehst vor der Klasse und sollst gleich etwas vortragen.",
-              "In der Pause nimmt dir jemand das Handy weg und lacht.",
-              "Eine Nachricht: Morgen fällt die erste Stunde aus.",
-              "Du wartest auf das Ergebnis eines wichtigen Tests.",
-              "Deine beste Freundin erzählt dir, dass sie wegzieht.",
-              "Nach dem Training sitzt du mit Freunden zusammen und lachst."
-            ],
-            "tipp": "Gleichzeitiges Zeigen schützt: Niemand steht allein im Blick. Die Situationen mit einer Geste begleiten, dann machen auch Neue mit wenig Deutsch mit. Die Wörter an der Tafel – Herzklopfen, Kloß im Hals, Kribbeln im Bauch – bleiben für die Landkarte stehen.",
-            "wennEsKippt": "Zeigen einige aus Spaß auf alberne Stellen, kurz lachen lassen und sachlich weitermachen: Und jetzt im Ernst – wo wäre es? Wer nicht aufstehen will, zeigt im Sitzen."
+            "tipp": "Zwei, drei Antworten reichen, meist kommen schon Signale wie Herzklopfen oder ein heißes Gesicht – sie an die Tafel neben den kleinen Umriss schreiben."
           },
           {
             "titel": "Meine Gefühls-Landkarte",
-            "dauer": 20,
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Allein (8 Min.): Aufgabe 1 auf dem Blatt – in den Farben des Gefühlsrads einzeichnen, wo Wut (rot), Angst (lila), Freude (gelb) und Traurigkeit (blau) sitzen; wer mag, ergänzt Ruhe (grün). Punkte, Kreuze oder Schraffuren reichen. Dabei an einen Moment denken, der nicht zu schwer war – ein kleiner Ärger, eine kleine Angst, ein guter Tag. Leise Musik im Hintergrund hilft. Tischgruppen (5 Min.): Wer mag, legt sein Blatt in die Mitte oder zeigt am eigenen Körper; die Gruppe sucht eine Gemeinsamkeit und einen Unterschied. Klasse (7 Min.): Jede Gruppe nennt beides. Dann kurz von einer Studie mit über 700 Menschen erzählen: Wut sitzt bei vielen in Kopf, Brust und Armen, Traurigkeit macht Arme und Beine schwer, Freude füllt den ganzen Körper. Festhalten: ähnlich, aber nicht gleich – jede Landkarte ist ein bisschen anders.",
+            "text": "Erst zeigen alle auf drei, wo sie in einer Situation etwas spüren würden. Dann zeichnet jede Person allein ihre Landkarte (Aufgabe 1), vergleicht in der Tischgruppe und hört, was Studien zeigen. Zum Schluss kreuzen alle an, woran sie Wut und Angst merken (Aufgabe 2).",
             "sagen": [
-              "Denkt an einen Moment, der nicht zu schwer war: einen kleinen Streit, einen richtig guten Tag. Wo war es im Körper?",
-              "Wo sind wir uns ähnlich – und wo ist jede Landkarte anders?"
+              "Zeigt auf drei, wo ihr es spüren würdet – eins, zwei, drei.",
+              "Denkt an einen Moment, der nicht zu schwer war: einen kleinen Streit, einen richtig guten Tag – wo war es im Körper?"
             ],
-            "tipp": "Die Blätter bleiben im Heft: Die Warnsignale für Wut und Angst werden im nächsten Kapitel für die Anspannungsskala und später für den Ampelplan gebraucht.",
-            "wennEsKippt": "Findet jemand das Ausmalen kindisch, eine sachliche Variante anbieten: Kreuze statt Flächen oder Stichworte neben dem Umriss. Wer kein eigenes Beispiel nehmen will, zeichnet die Landkarte von Jana aus der Geschichte. Kommentiert jemand den Körper anderer, sofort freundlich stoppen.",
+            "punkte": [
+              "Zeigt auf drei (6 Min.): alle stehen hinter dem Stuhl; Situation vorlesen, auf drei zeigen alle die Stelle am Körper; zwei, drei sagen, was dort passiert – klopft es, zieht es, wird es heiß?",
+              "Situationen: Du sollst gleich vor der Klasse vortragen · In der Pause nimmt dir jemand das Handy weg und lacht · Du wartest auf das Ergebnis eines wichtigen Tests · Deine beste Freundin erzählt, dass sie wegzieht · Nach dem Training lachst du mit Freunden.",
+              "Aufgabe 1 (9 Min.): allein, mit den Farben des Gefühlsrads – Wut rot, Angst lila, Freude gelb, Traurigkeit blau, Ruhe grün; Punkte, Kreuze oder Schraffuren reichen.",
+              "Vergleichen (7 Min.): in der Tischgruppe, wer mag, zeigt am eigenen Körper; eine Gemeinsamkeit und einen Unterschied nennen; dann sagen: Bei sehr vielen Menschen sitzt Wut in Kopf, Brust und Armen – ähnlich, aber nicht gleich.",
+              "Aufgabe 2 (8 Min.): die Lehrkraft liest die Sätze für Wut und Angst langsam vor, alle kreuzen still für sich an."
+            ],
+            "wennEsKippt": "Zeigen einige aus Spaß auf alberne Stellen, kurz lachen lassen und sachlich weitermachen: Und jetzt im Ernst – wo wäre es? Findet jemand das Ausmalen kindisch, Kreuze oder Stichworte neben dem Umriss anbieten; wer kein eigenes Beispiel nehmen will, zeichnet die Landkarte von Jana.",
             "blatt": "ff7-gefuehls-landkarte"
           },
           {
             "titel": "Bewegungspause: Hampelmann und Herzschlag",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Fenster auf. Eine Minute Hampelmann oder auf der Stelle laufen – die Lehrkraft macht mit. Dann eine Minute still sitzen, eine Hand auf die Brust oder an den Hals: Wie schnell schlägt das Herz, wie geht der Atem, wo ist es warm? Kurz fragen: Kennt ihr das auch ohne Sport – vor einem Test, bei einem Streit, vor einem Spiel? Festhalten: Herzklopfen gibt es bei Sport, Angst, Wut und Vorfreude; das Signal allein verrät das Gefühl noch nicht, die Situation hilft beim Deuten. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Fenster auf. Eine Minute Hampelmann oder auf der Stelle laufen, die Lehrkraft macht mit. Dann eine Minute still sitzen, eine Hand auf die Brust: Wie schnell schlägt das Herz, wie geht der Atem, wo ist es warm?",
             "sagen": [
-              "Eine Hand auf die Brust. Spürt ihr, wie das Herz jetzt schlägt?"
+              "Eine Hand auf die Brust – spürt ihr, wie das Herz jetzt schlägt?"
             ],
-            "tipp": "Wer nicht springen kann oder mag, läuft auf der Stelle oder macht schnelle Armkreise. Wem das Spüren des Herzschlags unangenehm ist, zählt stattdessen still die Atemzüge.",
-            "wennEsKippt": "Wird beim Hampelmann gerempelt oder gealbert, Abstand nehmen lassen: Jede Person braucht eine Armlänge Platz. Kommen danach nicht alle zur Ruhe, die stille Minute mit der Uhr stoppen und die letzten zehn Sekunden laut herunterzählen."
+            "tipp": "Herzklopfen gibt es bei Sport, Angst, Wut und Vorfreude: Das Signal allein verrät das Gefühl noch nicht, die Situation hilft beim Deuten. Wer nicht springen mag, läuft auf der Stelle; liegt die große Pause dazwischen, entfällt die Übung."
           },
           {
-            "titel": "Erste Warnsignale für Wut und Angst",
-            "dauer": 15,
+            "titel": "Mein erstes Warnsignal",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Aufgaben 2 und 3 auf dem Blatt (6 Min.): Die Lehrkraft liest die Sätze langsam vor; alle kreuzen still für sich an, woran sie Wut und Angst bemerken, noch bevor sie etwas sagen oder tun. Dann Aufgabe 4: Was kommt bei dir zuerst? Das ist dein Warnsignal (2 Min.). Klassen-Landkarte (5 Min.): Tischgruppenweise klebt jede Person einen roten Punkt auf den großen Umriss, dorthin, wo ihr erstes Wut-Signal sitzt, und einen lila Punkt für das erste Angst-Signal – ohne Namen. Gemeinsam schauen (2 Min.): Wo liegen die meisten roten, wo die meisten lila Punkte? Erklären: Das erste Signal ist wie eine Frühwarnanlage – wer es bemerkt, hat noch Zeit zu entscheiden, was er tut.",
+            "text": "Erst schreibt jede Person auf, was bei ihr zuerst kommt (Aufgabe 3), und klebt rote und lila Punkte auf die Klassen-Landkarte. Dann zeigen die Tischgruppen in Signal-Standbildern, was der Körper einer erfundenen Person als Erstes meldet, und die Klasse rät: Wut oder Angst? Zum Schluss erklären, warum das erste Signal wie eine Frühwarnanlage ist.",
             "sagen": [
               "Was merkt ihr zuerst – noch bevor ihr wisst, dass ihr wütend seid?",
-              "Ein roter und ein lila Punkt pro Person. Niemand muss sagen, welche seine sind."
+              "Ein roter und ein lila Punkt pro Person – niemand muss sagen, welche seine sind."
             ],
-            "tipp": "Viele finden ihr erstes Angst-Signal im Bauch und ihr erstes Wut-Signal in Kiefer, Händen oder Gesicht – aber nicht alle. Das Plakat aufheben: Im nächsten Kapitel hängt es neben der Anspannungsskala.",
-            "wennEsKippt": "Findet jemand kein Signal, fragen, was andere an ihm sehen, wenn er wütend wird – oder was Jana in den Szenen zuerst macht. Kleben einige Punkte an alberne Stellen, nicht ermahnen, sondern neutral kommentieren: Interessant, wo Wut überall sitzen kann.",
+            "punkte": [
+              "Aufgabe 3 (5 Min.): Bei Wut merke ich zuerst … Bei Angst merke ich zuerst …; wer kein Signal findet, fragt sich: Was sehen andere bei mir, wenn ich wütend werde?",
+              "Klassen-Landkarte (10 Min.): tischgruppenweise je einen roten Punkt auf den großen Umriss, wo das erste Wut-Signal sitzt, und einen lila für Angst, ohne Namen; gemeinsam schauen: Wo liegen die meisten roten, wo die meisten lila Punkte?",
+              "Signal-Standbilder (15 Min.): jede Tischgruppe zieht eine Situation, bespricht sie zwei Minuten und zeigt fünf Sekunden als Statue, was der Körper zuerst meldet; die Klasse rät: Wut oder Angst – und woran erkennt ihr es?",
+              "Situationen: Jemand drängelt sich in der Kantine schon wieder vor · Du hörst abends auf dem Heimweg Schritte hinter dir · Dein Bruder zerreißt dein Poster · Die Lehrerin ruft dich auf, und du weißt die Antwort nicht · Jemand benutzt ungefragt dein Handy.",
+              "Frühwarnanlage (5 Min.): Das erste Signal kommt vor dem Gedanken „Ich bin wütend“ – wer es bemerkt, hat noch Zeit zu entscheiden, was er tut; die Mission nutzt genau das."
+            ],
+            "wennEsKippt": "Findet jemand kein Signal, fragen, was andere bei ihm sehen, wenn er wütend wird. Kleben einige Punkte an alberne Stellen, nicht ermahnen, sondern sachlich kommentieren: Interessant, wo Wut überall sitzen kann; wer kein Standbild zeigen mag, ist bei den Ratenden oder führt Regie.",
             "blatt": "ff7-gefuehls-landkarte"
           },
           {
-            "titel": "Musik und Bewegung",
-            "dauer": 15,
-            "phase": "aktiv",
-            "text": "Alle stehen auf; Taschen weg, Stühle an die Tische. Gegangen wird auf einem Rundweg um die Tischgruppen, alle in dieselbe Richtung. Vorher zeigen alle mit dem Daumen, wie es ihnen gerade geht (1 Min.). Dann vier kurze Musikstücke nacheinander abspielen, je etwa anderthalb Minuten (Tabelle); alle bewegen sich so, wie sich die Musik anfühlt – gehen, schlendern, stampfen, schweben, ohne Berührung. Stoppt die Musik, bleiben alle als Statue stehen; zwei Stimmen: Welches Gefühl hat die Musik ausgelöst, und wo im Körper? (vier Stücke, 10 Min.) Zum Schluss im Sitzen noch einmal den Daumen zeigen und fragen: Hat sich etwas verändert? Kann Musik ein Gefühl verändern? Welches Lied hört ihr, wenn ihr runterkommen wollt? Die Titel auf einem Zettel sammeln (4 Min.).",
-            "sagen": [
-              "Bewegt euch so, wie die Musik klingt. Niemand schaut zu – alle sind beschäftigt.",
-              "Musik stopp – Statue. Welches Gefühl? Wo im Körper?",
-              "Welches Lied hört ihr, wenn ihr runterkommen wollt?"
-            ],
-            "tabelle": {
-              "spalten": [
-                "Stimmung",
-                "Vorschlag (ohne Text)"
-              ],
-              "zeilen": [
-                [
-                  "fröhlich",
-                  "Vivaldi, „Der Frühling“ aus den „Vier Jahreszeiten“, 1. Satz"
-                ],
-                [
-                  "traurig",
-                  "Barber, „Adagio für Streicher“"
-                ],
-                [
-                  "wütend, aufgewühlt",
-                  "Grieg, „In der Halle des Bergkönigs“ – wird immer schneller und lauter"
-                ],
-                [
-                  "ruhig",
-                  "Satie, „Gymnopédie Nr. 1“"
-                ]
-              ]
-            },
-            "tipp": "Nicht von Tanzen sprechen, sondern vom Gehen im Tempo der Musik – und selbst mitgehen; das nimmt die Peinlichkeit. Bei sehr wenig Platz bleiben alle hinter ihrem Stuhl und gehen nur mit Armen, Schultern und Füßen mit. Die Runterkomm-Lieder aufheben: In Einheit 15 entsteht daraus eine Playlist; Vorschläge vorher auf die Texte prüfen.",
-            "wennEsKippt": "Will jemand nicht tanzen, gibt es Alternativen: im Tempo der Musik gehen, am Tisch zur Musik malen oder die Musik bedienen – die Pause-Taste macht die Statuen. Wird es beim wütenden Stück zu wild, leiser drehen und gleich zum ruhigen Stück wechseln. Berührungen sind tabu; wer rempelt, setzt ein Stück aus und darf das nächste starten."
-          },
-          {
             "titel": "Skill: Körper-Check",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Ankündigen: ein Skill, mit dem man Warnsignale früher bemerkt – kurz, höchstens drei Minuten, und jede Person darf jederzeit aussteigen (1 Min.). Alle sitzen aufrecht, beide Füße auf dem Boden, der Blick ruht auf einem Punkt am Tisch; wer mag, schließt die Augen – beides ist gleich gut. Wer lieber etwas tut, drückt dabei die Füße in den Boden oder hält einen Stift fest. Den Körper-Check langsam vorlesen, zwischen den Sätzen zwei, drei Sekunden Pause (Liste, 3 Min.); selbst sitzen bleiben und mitmachen. Danach nur eine Frage: Hat sich im Körper etwas verändert? Zwei, drei Stimmen (2 Min.). Dann die Kurzform für unterwegs einmal im Stehen üben: Schultern hoch und fallen lassen, Kiefer lockern, Füße in den Boden drücken und lösen, einmal lang ausatmen – zwanzig Sekunden, die im Bus oder vor einem Test niemand bemerkt (2 Min.). Zum Schluss erklären: Wer seinen Körper regelmäßig abfragt, merkt Warnsignale früher – und hat mehr Zeit, bevor ein Gefühl das Steuer übernimmt (2 Min.). Auf dem Blatt steht der Skill im Kasten „Der Körper-Check – dein Skill“.",
+            "text": "Der Skill hilft, Warnsignale früher zu bemerken: höchstens drei Minuten, und wer aussteigen möchte, drückt stattdessen die Füße in den Boden. Alle sitzen aufrecht, die Augen offen auf einen Punkt oder zu; die Lehrkraft liest den Körper-Check langsam vor und macht mit. Danach der Abschluss: ein Satz in den Skills-Pass, Mission ansagen, Moment wählen.",
             "sagen": [
-              "Ihr müsst nichts Besonderes spüren. Alles, was da ist, ist in Ordnung – auch Langeweile.",
-              "Augen auf oder zu – beides ist richtig. Und wer aussteigen will, drückt einfach die Füße in den Boden und wartet."
+              "Ihr müsst nichts Besonderes spüren – alles, was da ist, ist in Ordnung, auch Langeweile.",
+              "Augen auf oder zu, beides ist richtig; wer aussteigen will, drückt einfach die Füße in den Boden und wartet."
             ],
             "punkte": [
-              "Setz dich aufrecht hin, beide Füße auf dem Boden. Atme einmal tief ein und langsam aus.",
-              "Geh mit deiner Aufmerksamkeit zur Stirn, zu den Augen, zum Kiefer. Lass die Zähne ein wenig auseinander.",
-              "Spür deinen Nacken und deine Schultern. Dürfen sie ein Stück sinken?",
-              "Wandere zu Brust und Bauch. Spür, wie sie sich beim Atmen bewegen. Vielleicht ist hier ein Gefühl von heute – schau es nur an.",
-              "Spür deine Hände und deine Füße: warm oder kalt, ruhig oder kribbelig?",
-              "Spür den ganzen Körper auf einmal. Streck dich, wenn du so weit bist."
+              "Aufrecht sitzen, Füße auf den Boden, Augen offen oder zu; einmal lang ausatmen.",
+              "Mit der Aufmerksamkeit von der Stirn bis zu den Füßen gehen – nur bemerken, zwei, drei Sekunden Pause zwischen den Sätzen.",
+              "Kurzform für unterwegs: Schultern fallen lassen, Füße in den Boden drücken, einmal lang ausatmen.",
+              "Skills-Pass (3 Min.): ein Satz zur Frage „Welches Warnsignal will ich mir merken – für Wut oder für Angst?“, Stempel.",
+              "Mission und Moment (3 Min.): ansagen; auf drei zeigen alle ihren Moment (ein Finger vor einem Test, zwei Geschwister nerven, drei vor dem Training, Faust ein eigener) und schreiben ihn in „Mein Moment: Wenn …“; Ausblick (1 Min.)."
             ],
-            "tipp": "Sitzen bleiben und lesen, statt herumzugehen – das gibt Sicherheit. Drei Minuten reichen; länger wird es für manche unangenehm, und Stille ist nie ein Mittel gegen Unruhe. Der Körper-Check hat keinen religiösen Inhalt, er übt nur Aufmerksamkeit; die Kurzform steht im Heft, auch zum Nachlesen für Eltern.",
-            "wennEsKippt": "Wird jemand beim Spüren unruhig, traurig oder angespannt, die Übung für diese Person freundlich beenden: Augen auf, Füße fest auf den Boden, fünf Dinge im Raum benennen; später in Ruhe nachfragen. Wer nicht still sitzen kann, macht die Kurzform im Stehen hinter dem Stuhl. Wird gekichert, ruhig weiterlesen; steigt die halbe Klasse aus, nach dem nächsten Satz abbrechen und direkt zur Kurzform im Stehen wechseln – sie trägt den Skill genauso."
-          },
-          {
-            "titel": "Skills-Pass, Mission und Trimester-Check",
-            "dauer": 10,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Welches Warnsignal will ich mir merken, für Wut oder für Angst? Danach gibt es den Stempel. Mission und Moment wählen (2 Min.): Die Wochen-Mission ansagen – auf das erste Warnsignal achten, wenn Wut oder Angst kommt. Auf drei zeigen alle, in welchem Moment das bei ihnen am ehesten passiert: ein Finger für ‚vor einem Test‘, zwei für ‚wenn mich meine Geschwister nerven‘, drei für ‚vor dem Training oder Spiel‘, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ bei den Wochen-Missionen im Heft; Aufgabe 5 auf dem Blatt ist der Platz für das, was dann passiert. Daumen-Blitzlicht (1 Min.): Wie gut kennt ihr jetzt eure Warnsignale? Auf drei zeigen alle gleichzeitig. Trimester-Check (5 Min.): Findet Einheit 12 statt, die Skills des Trimesters an der Tafel sammeln – 5-4-3-2-1, Fingeratmung, Anspannen und Loslassen, achtsames Hören, Farbsuche, Gefühl benennen, Körper-Check – und per Finger zeigen lassen, wie viele davon jede Person schon einmal außerhalb der Stunde benutzt hat; zwei Stimmen sagen, welchen. Fällt Einheit 12 aus (Wahleinheit), ist heute die letzte Stunde des Trimesters: dann stattdessen im Skills-Pass den wichtigsten Skill eintragen und die fünf Sätze ankreuzen – die Lehrkraft liest sie langsam vor, nichts wird eingesammelt – und die Hilfe-Nummern vorn im Heft zeigen; sie gelten auch in den Ferien.",
-            "sagen": [
-              "Wie gut kennt ihr jetzt eure Warnsignale – Daumen hoch, waagrecht oder runter? Auf drei.",
-              "Welche Skills kennt ihr seit September? Ruft sie mir zu – und zeigt dann mit den Fingern, wie viele ihr schon außerhalb der Stunde benutzt habt."
-            ],
-            "tipp": "Vorher klären, ob Einheit 12 stattfindet (Wahleinheit, sie entfällt zuerst): Die fünf Sätze im Skills-Pass sind der Startwert, mit dem die Klasse in Einheit 24 und 35 vergleicht – er darf nicht fehlen. Die Einschätzung ist keine Note; wer überall „oft“ ankreuzt, darf das.",
-            "wennEsKippt": "Ruft jemand beim Sammeln „Fortnite“ oder „Schlafen“, nicht abwinken, sondern auf das Plakat aus Stunde 1 zeigen: Hilft es kurz oder hilft es wirklich? Kreuzt jemand überall „noch nicht“ an oder schreibt „nichts gelernt“, nicht diskutieren, sondern nach der Stunde kurz fragen, wie das Trimester war."
+            "tipp": "Fällt Stunde 12 aus, ist dies die letzte Stunde des Trimesters: im Skills-Pass die fünf Sätze ankreuzen (die Lehrkraft liest langsam vor, nichts wird eingesammelt) und die Hilfe-Nummern vorn im Heft zeigen (116 111, 8002 1234, Notruf 112); sie gelten auch in den Ferien."
           }
         ],
         "bruecke": "Im echten Leben kommt selten nur ein Gefühl allein: Nächste Woche geht es um gemischte Gefühle – und darum, wie stark ein Gefühl sein kann, von 0 bis 10.",
-        "mission": "In deinem Moment – vor einem Test, wenn Geschwister nerven, vor dem Spiel – achte auf dein erstes Warnsignal für Wut oder Angst: Wo spürst du es, und was machst du dann?",
-        "hintergrund": "Grundlage sind die Körperkarten der Gefühle: Nummenmaa und Kollegen (2014) ließen über 700 Menschen einzeichnen, wo sie bei verschiedenen Gefühlen etwas spüren. Die Karten unterschieden sich je nach Gefühl und ähnelten sich in Europa und Ostasien – Wut in Kopf, Brust und Armen, Traurigkeit als schwere Arme und Beine. Das Spüren von Herzschlag, Atmung und Muskelspannung – Interozeption (Craig, 2002) – lässt sich üben; Herzklopfen allein gehört zu mehreren Gefühlen, erst Muster und Situation machen es eindeutig. Die ersten Signale sind der wichtigste Hebel: Sie kommen oft vor dem Gedanken „Ich bin wütend“, und je früher man eingreift, desto leichter gelingt es (Gross, 1998). Der Körper-Check bleibt kurz, Augen offen erlaubt, freiwillig: Lange Stille für ganze Klassen brachte im größten Schulversuch nichts (Kuyken et al., 2022); drei Minuten mit Ausstieg und aktiver Kurzform reichen.",
+        "mission": "Achte auf dein erstes Warnsignal für Wut oder Angst. Wo spürst du es?",
+        "hintergrund": "Nummenmaa et al. (2014) ließen über 700 Menschen einzeichnen, wo sie Gefühle spüren: Die Karten unterschieden sich je nach Gefühl und ähnelten sich in Europa und Ostasien. Herzschlag, Atmung und Muskelspannung zu spüren – Interozeption (Craig, 2002) – lässt sich üben; Herzklopfen allein gehört zu mehreren Gefühlen. Die ersten Signale sind der wichtigste Hebel: Sie kommen vor dem Gedanken „Ich bin wütend“, und je früher man eingreift, desto leichter gelingt es (Gross, 1998).",
         "quellen": [
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
           "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666.",
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
         ],
-        "achtung": "Körperübungen können bei Jugendlichen mit belastenden Erfahrungen Unruhe auslösen. Vorher das Stopp-Recht nennen: Augen offen, Aussetzen und Zuschauen sind jederzeit erlaubt; keine Übung mit Berührung. Der Körper-Check dauert höchstens drei Minuten und ist nie ein Mittel gegen Unruhe. Für die Landkarte an einen leichten Moment denken lassen. Niemand muss seine Landkarte zeigen oder erklären, zur Musik gibt es immer eine Alternative, Kommentare über den Körper anderer sofort stoppen. Bei Hinweisen auf Verletzungen, Gewalt oder Selbstverletzung nach der Stunde unter vier Augen ansprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept handeln.",
+        "achtung": "Körperübungen können bei Jugendlichen mit belastenden Erfahrungen Unruhe auslösen: vorher das Stopp-Recht nennen (Augen offen, aussteigen, zuschauen), keine Übung mit Berührung, der Körper-Check höchstens drei Minuten und nie ein Mittel gegen Unruhe. Wird jemand unruhig oder traurig, die Übung für diese Person beenden (Augen auf, Füße in den Boden, fünf Dinge im Raum benennen); niemand muss seine Landkarte zeigen, Kommentare über den Körper anderer sofort stoppen. Bei Hinweisen auf Verletzungen, Gewalt oder Selbstverletzung nach der Stunde unter vier Augen ansprechen und noch am selben Tag den SePAS informieren (Schutzkonzept der Schule).",
         "differenzierung": {
-          "leichter": "An der Tafel stehen die Körperteile am Umriss (Kopf, Hals, Brust, Bauch, Hände, Beine); wer die Wörter nicht kennt, zeigt. Auf der Landkarte reichen Wut und Freude; bei den Warnsignalen ankreuzen statt schreiben, das erste Signal darf eingekreist werden.",
+          "leichter": "An der Tafel stehen die Körperteile am Umriss (Kopf, Hals, Brust, Bauch, Hände, Beine); wer die Wörter nicht kennt, zeigt. Auf der Landkarte reichen Wut und Freude, bei den Warnsignalen wird angekreuzt statt geschrieben und das erste Signal eingekreist.",
           "schwerer": "Eine fünfte Farbe für Ruhe ergänzen: Wo spürst du, dass es dir gut geht? Oder notieren, woran andere bei dir Wut oder Angst bemerken könnten, bevor du es selbst merkst."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Körperpunkt (5 Min.), Zeigt auf drei (5 Min.), Gefühls-Landkarte (12 Min.), erste Warnsignale mit der Klassen-Landkarte (10 Min.), Körper-Check (8 Min.), Skills-Pass, Mission mit Moment und Trimester-Check (10 Min.). Musik und Bewegung entfallen oder werden zur Bewegungspause der nächsten Stunde; fällt zusätzlich Einheit 12 aus, haben die fünf Sätze im Skills-Pass und die Hilfe-Nummern Vorrang."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Körperpunkt (5 Min.), Zeigt auf drei (5 Min.), Gefühls-Landkarte (12 Min.), erstes Warnsignal mit der Klassen-Landkarte (10 Min.), Körper-Check (8 Min.), Skills-Pass, Mission mit Moment (10 Min.). Signal-Standbilder und Bewegungspause entfallen; fällt zusätzlich Stunde 12 aus, haben die fünf Sätze im Skills-Pass und die Hilfe-Nummern Vorrang."
       },
       "fr": {
         "titel": "Où est-ce que je ressens mes émotions ?",
-        "kurz": "Les jeunes dessinent leur carte corporelle des émotions, trouvent leur premier signal d’alerte de la colère et de la peur et vivent comment le mouvement et la musique changent l’humeur.",
+        "kurz": "Les jeunes dessinent leur carte corporelle des émotions, trouvent leur premier signal d’alerte de la colère et de la peur et s’exercent à interroger tôt leur corps.",
         "ziele": [
           "dessinent leur carte corporelle des émotions",
-          "nomment leur premier signal de colère et de peur",
-          "vivent comment musique et mouvement changent l’humeur",
+          "nomment leur premier signal d’alerte de colère et de peur",
           "essaient le tour du corps comme skill et choisissent un moment pour guetter leur signal"
         ],
         "material": [
           "Roue des émotions, silhouette (papier kraft)",
-          "40 gommettes, ni rouges ni violettes",
-          "20 gommettes rouges, 20 violettes",
+          "Gommettes : 40 d’autres couleurs, 20 rouges et 20 violettes",
           "Crayons de couleur (5 couleurs) pour tous",
-          "Haut-parleur, quatre morceaux",
           "Cahier de l’élève, tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
           "Dessiner à main levée une grande silhouette sur papier kraft et l’accrocher près de la porte ; une petite au tableau.",
-          "Préparer quatre morceaux d’environ une minute et demie (étape 7) et tester le volume.",
-          "Pour l’étape 7, prévoir un parcours autour des îlots : sacs rangés, chaises sous les tables.",
-          "Vérifier avant si la séance 12 a lieu (séance au choix) : sinon, le trimestre se termine aujourd’hui – bilan du Skills-Pass et numéros d’aide en clôture (étape 9)."
+          "Vérifier avant si la séance 12 a lieu (séance au choix) : sinon, le trimestre se termine aujourd’hui – Skills-Pass et numéros d’aide en clôture (étape 6)."
         ],
         "ablauf": [
           {
@@ -297,15 +211,10 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Retour : de la console au corps"
+            "titel": "Retour, mission et thème"
           },
           {
-            "min": "15–25",
-            "phase": "input",
-            "titel": "À trois, montrez où se loge l’émotion"
-          },
-          {
-            "min": "25–45",
+            "min": "15–45",
             "phase": "uebung",
             "titel": "Ma carte corporelle des émotions"
           },
@@ -315,24 +224,14 @@
             "titel": "Pause active : sauts et battements de cœur"
           },
           {
-            "min": "50–65",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Premiers signaux de colère et de peur"
+            "titel": "Mon premier signal d’alerte"
           },
           {
-            "min": "65–80",
-            "phase": "aktiv",
-            "titel": "Musique et mouvement"
-          },
-          {
-            "min": "80–90",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : le tour du corps"
-          },
-          {
-            "min": "90–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, mission et bilan du trimestre"
           }
         ],
         "schritte": [
@@ -340,166 +239,105 @@
             "titel": "Tour d’humeur : où se loge l’émotion ?",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle deux gommettes : l’une, comme d’habitude, sur la roue des émotions, l’autre sur la grande silhouette près de la porte – là où se loge son émotion en ce moment. Qui ne la sent nulle part colle la deuxième gommette à côté de la silhouette (4 min). L’enseignant·e commence en montrant l’endroit sur son propre corps ; puis trois volontaires disent leur mot et montrent où ils le ressentent – sans poser de questions ni interpréter (4 min). Pour finir, regarder ensemble la silhouette : où se trouvent le plus de gommettes ? (2 min)",
+            "text": "En entrant, chaque jeune colle deux gommettes : l’une, comme d’habitude, sur la roue des émotions, l’autre sur la grande silhouette près de la porte – là où se loge son émotion en ce moment ; qui ne la sent nulle part colle à côté de la silhouette. L’enseignant·e commence en montrant l’endroit sur son propre corps, trois volontaires suivent – sans questions ni interprétation. Pour finir, regarder ensemble la silhouette : où se trouvent le plus de gommettes ?",
             "sagen": [
-              "En ce moment, je sens de la tension. Chez moi, elle se loge dans la nuque – elle est toute raide.",
-              "Où est-ce que vous sentez votre émotion en ce moment ? “Nulle part”, c’est aussi une réponse."
+              "En ce moment, je suis “tendu” : chez moi, ça se loge dans la nuque, elle est toute raide.",
+              "Où sentez-vous votre émotion en ce moment – “nulle part”, c’est aussi une réponse."
             ],
-            "tipp": "Ne rien sentir, ce n’est pas une erreur – ça s’apprend. Souvent, une question aide : où est-ce que c’est chaud, froid, serré ou large en ce moment ?",
-            "wennEsKippt": "Si certains collent leur gommette à des endroits farfelus, sourire et rester neutre : c’est aussi un endroit du corps ; retirer sans commentaire une gommette clairement déplacée. Si tout le monde se bouscule devant la roue et la silhouette, faire passer îlot par îlot ; qui ne veut pas coller de gommette s’abstient."
+            "wennEsKippt": "Si certains collent leur gommette à des endroits farfelus, sourire et rester neutre ; retirer sans commentaire une gommette clairement déplacée. Qui ne sent rien ne fait pas d’erreur – ça s’apprend, et une question aide : où est-ce chaud, froid, serré ou large ?"
           },
           {
-            "titel": "Retour : de la console au corps",
+            "titel": "Retour, mission et thème",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass. Pour la mission de la semaine, demander : ton moment est-il venu – et as-tu nommé en silence qui était aux commandes ? Pouce en haut, au milieu, en bas ; une voix raconte ; personne n’est obligé d’avoir vécu son moment. Puis montrer l’affiche avec le message principal de l’histoire de Jana et demander à quoi on remarque qu’une émotion prend les commandes – avant même d’y penser. Annoncer le thème : les émotions se passent dans tout le corps, et c’est souvent le corps qui se manifeste en premier.",
+            "text": "Pour la mission de la semaine, demander : ton moment est-il venu – et as-tu nommé en silence qui était aux commandes ? Pouce en haut, au milieu ou en bas, une voix raconte ; personne n’est obligé d’avoir vécu son moment. Puis montrer l’affiche avec le message principal de l’histoire de Jana et annoncer le thème : les émotions se passent dans tout le corps, et c’est souvent le corps qui se manifeste en premier.",
             "sagen": [
-              "Dans l’histoire, Jana remarque souvent trop tard qui est aux commandes dans sa tête. Et vous, à quoi le remarquez-vous ?",
-              "Aujourd’hui, vous cherchez où vos émotions habitent dans votre corps – et quel signal arrive en premier."
+              "Dans l’histoire, Jana remarque souvent trop tard qui est aux commandes – et vous, à quoi le remarquez-vous ?",
+              "Aujourd’hui, vous cherchez où vos émotions habitent dans le corps – et quel signal arrive en premier."
             ],
-            "tipp": "Deux ou trois réponses suffisent ; souvent, des signaux comme le cœur qui bat ou le visage qui chauffe arrivent déjà. Les écrire au tableau à côté de la petite silhouette."
-          },
-          {
-            "titel": "À trois, montrez où se loge l’émotion",
-            "dauer": 10,
-            "phase": "input",
-            "text": "Tout le monde se lève derrière sa chaise. Lire une situation ; à « trois », tout le monde montre en même temps l’endroit de son corps où il ressentirait quelque chose dans cette situation – tête, gorge, poitrine, ventre, mains, jambes. Après chaque situation, demander à deux ou trois jeunes ce qui se passe exactement à cet endroit : ça bat, ça tire, ça chauffe, ça picote ? Noter les réponses autour de la petite silhouette au tableau (six situations, 8 min). Pour finir, regarder le tableau : avec la colère comme avec la peur, le cœur bat souvent fort – à quoi voit-on la différence ? (2 min)",
-            "sagen": [
-              "À trois, montrez où vous le ressentiriez. Un, deux, trois.",
-              "Qu’est-ce qui se passe exactement à cet endroit – ça bat, ça tire, ça chauffe ?"
-            ],
-            "punkte": [
-              "Tu es devant la classe et tu dois présenter quelque chose.",
-              "À la récré, quelqu’un te prend ton portable et rigole.",
-              "Un message : demain, le premier cours est annulé.",
-              "Tu attends le résultat d’un devoir en classe important.",
-              "Ta meilleure amie te dit qu’elle déménage.",
-              "Après l’entraînement, tu es avec des amis et tu ris."
-            ],
-            "tipp": "Montrer tous en même temps protège : personne n’est seul sous les regards. Accompagner les situations d’un geste, ainsi les nouveaux qui parlent peu français participent aussi. Les mots au tableau – cœur qui bat, gorge serrée, papillons dans le ventre – restent pour la carte corporelle.",
-            "wennEsKippt": "Si certains montrent pour rire des endroits farfelus, laisser rire un instant et continuer sobrement : et sérieusement, où serait-ce ? Qui ne veut pas se lever montre assis."
+            "tipp": "Deux ou trois réponses suffisent, souvent des signaux comme le cœur qui bat ou le visage qui chauffe arrivent déjà – les écrire au tableau à côté de la petite silhouette."
           },
           {
             "titel": "Ma carte corporelle des émotions",
-            "dauer": 20,
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Seul (8 min) : exercice 1 de la fiche – marquer, avec les couleurs de la roue des émotions, où se logent la colère (rouge), la peur (violet), la joie (jaune) et la tristesse (bleu) ; qui le souhaite ajoute le calme (vert). Des points, des croix ou des hachures suffisent. Penser pour cela à un moment pas trop lourd – une petite colère, une petite peur, une bonne journée. Une musique douce en fond aide. En îlots (5 min) : qui le souhaite pose sa fiche au milieu ou montre sur son propre corps ; le groupe cherche un point commun et une différence. En classe entière (7 min) : chaque groupe donne les deux. Puis parler brièvement d’une étude menée avec plus de 700 personnes : chez beaucoup, la colère se loge dans la tête, la poitrine et les bras, la tristesse rend les bras et les jambes lourds, la joie remplit tout le corps. Retenir : semblable, mais pas pareil – chaque carte est un peu différente.",
+            "text": "D’abord, tout le monde montre à trois où il ressentirait quelque chose dans une situation. Puis chacun dessine seul sa carte (exercice 1), compare dans l’îlot et apprend ce que montrent des études. Pour finir, chacun coche à quoi il remarque la colère et la peur (exercice 2).",
             "sagen": [
-              "Pensez à un moment pas trop lourd : une petite dispute, une très bonne journée. Où était-ce dans le corps ?",
-              "Où est-ce qu’on se ressemble – et où chaque carte est-elle différente ?"
+              "À trois, montrez où vous le ressentiriez – un, deux, trois.",
+              "Pensez à un moment pas trop lourd : une petite dispute, une très bonne journée – où était-ce dans le corps ?"
             ],
-            "tipp": "Les fiches restent dans le cahier : les signaux d’alerte de la colère et de la peur resserviront au chapitre suivant pour l’échelle de tension, puis pour le plan feu tricolore.",
-            "wennEsKippt": "Si quelqu’un trouve le coloriage puéril, proposer une variante sobre : des croix plutôt que des surfaces, ou des mots-clés à côté de la silhouette. Qui ne veut pas prendre d’exemple personnel dessine la carte de Jana, de l’histoire. Si quelqu’un commente le corps des autres, l’arrêter tout de suite, avec bienveillance.",
+            "punkte": [
+              "À trois, montrez (6 min) : tout le monde debout derrière sa chaise ; lire une situation, à « trois » chacun montre l’endroit du corps ; deux ou trois disent ce qui s’y passe – ça bat, ça tire, ça chauffe ?",
+              "Situations : tu dois bientôt présenter devant la classe · à la récré, quelqu’un te prend ton portable et rigole · tu attends le résultat d’un devoir important · ta meilleure amie te dit qu’elle déménage · après l’entraînement, tu ris avec des amis.",
+              "Exercice 1 (9 min) : seul, avec les couleurs de la roue : colère rouge, peur violet, joie jaune, tristesse bleu, calme vert ; des points, des croix ou des hachures suffisent.",
+              "Comparer (7 min) : dans l’îlot, qui le souhaite montre sur son propre corps ; trouver un point commun et une différence ; dire : chez beaucoup, la colère se loge dans la tête, la poitrine et les bras – semblable, mais pas pareil.",
+              "Exercice 2 (8 min) : lire lentement les phrases de la colère et de la peur, chacun coche en silence pour soi."
+            ],
+            "wennEsKippt": "Si certains montrent pour rire des endroits farfelus, laisser rire un instant et continuer sobrement : et sérieusement, où serait-ce ? Si quelqu’un trouve le coloriage puéril, proposer des croix ou des mots-clés à côté de la silhouette ; qui ne veut pas prendre d’exemple personnel dessine la carte de Jana.",
             "blatt": "ff7-gefuehls-landkarte"
           },
           {
             "titel": "Pause active : sauts et battements de cœur",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Ouvrir la fenêtre. Une minute de sauts écartés ou de course sur place – l’enseignant·e participe. Puis une minute assis en silence, une main sur la poitrine ou sur le cou : à quelle vitesse bat le cœur, comment va la respiration, où fait-il chaud ? Demander brièvement : est-ce que vous connaissez ça sans sport – avant un devoir en classe, pendant une dispute, avant un match ? Retenir : le cœur bat fort avec le sport, la peur, la colère ou quand on a hâte ; le signal seul ne dit pas encore quelle émotion c’est, la situation aide à le comprendre. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Ouvrir la fenêtre. Une minute de sauts écartés ou de course sur place, l’enseignant·e participe. Puis une minute assis en silence, une main sur la poitrine : à quelle vitesse bat le cœur, comment va la respiration, où fait-il chaud ?",
             "sagen": [
-              "Une main sur la poitrine. Vous sentez comment le cœur bat maintenant ?"
+              "Une main sur la poitrine – vous sentez comment le cœur bat maintenant ?"
             ],
-            "tipp": "Qui ne peut ou ne veut pas sauter court sur place ou fait de grands cercles avec les bras. Qui trouve désagréable de sentir son cœur compte plutôt ses respirations en silence.",
-            "wennEsKippt": "Si on se bouscule ou si on fait les fous pendant les sauts, faire prendre de la distance : chacun a besoin d’une longueur de bras. Si tout le monde ne se calme pas ensuite, chronométrer la minute de silence et compter à voix haute les dix dernières secondes."
+            "tipp": "Le cœur bat fort avec le sport, la peur, la colère ou quand on a hâte : le signal seul ne dit pas quelle émotion c’est, la situation aide à comprendre. Qui ne veut pas sauter court sur place ; si la grande récréation tombe entre les deux heures, supprimer l’exercice."
           },
           {
-            "titel": "Premiers signaux de colère et de peur",
-            "dauer": 15,
+            "titel": "Mon premier signal d’alerte",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Exercices 2 et 3 de la fiche (6 min) : lire lentement les phrases ; chacun coche en silence, pour soi, à quoi il remarque la colère et la peur, avant même de dire ou de faire quelque chose. Puis exercice 4 : qu’est-ce qui vient en premier chez toi ? C’est ton signal d’alerte (2 min). Carte de la classe (5 min) : îlot par îlot, chacun colle sur la grande silhouette une gommette rouge là où se trouve son premier signal de colère, et une violette pour son premier signal de peur – sans nom. Regarder ensemble (2 min) : où se trouvent le plus de rouges, le plus de violettes ? Expliquer : le premier signal, c’est comme un système d’alerte précoce – qui le remarque a encore le temps de décider ce qu’il fait.",
+            "text": "D’abord chacun écrit ce qui vient en premier chez lui (exercice 3) et colle des gommettes rouges et violettes sur la carte de la classe. Puis les îlots montrent en images figées ce que le corps d’un personnage inventé signale en premier, et la classe devine : colère ou peur ? Pour finir, expliquer pourquoi le premier signal est comme un système d’alerte précoce.",
             "sagen": [
               "Qu’est-ce que vous remarquez en premier – avant même de savoir que vous êtes en colère ?",
-              "Une gommette rouge et une violette par personne. Personne n’est obligé de dire lesquelles sont les siennes."
+              "Une gommette rouge et une violette par personne – personne n’est obligé de dire lesquelles sont les siennes."
             ],
-            "tipp": "Beaucoup trouvent leur premier signal de peur dans le ventre et celui de la colère dans la mâchoire, les mains ou le visage – mais pas tous. Garder l’affiche : au chapitre suivant, elle sera accrochée à côté de l’échelle de tension.",
-            "wennEsKippt": "Si quelqu’un ne trouve aucun signal, lui demander ce que les autres voient chez lui quand il se met en colère – ou ce que Jana fait d’abord dans les scènes. Si certains collent des gommettes à des endroits farfelus, ne pas gronder, mais commenter sobrement : intéressant, tous les endroits où la colère peut se loger.",
+            "punkte": [
+              "Exercice 3 (5 min) : Avec la colère, je remarque d’abord… Avec la peur, je remarque d’abord… ; qui ne trouve pas de signal se demande ce que les autres voient chez lui quand il se met en colère.",
+              "Carte de la classe (10 min) : îlot par îlot, une gommette rouge sur la grande silhouette là où se trouve le premier signal de colère, une violette pour la peur, sans nom ; regarder ensemble : où sont le plus de rouges, le plus de violettes ?",
+              "Images figées (15 min) : chaque îlot tire une situation, se prépare deux minutes et montre cinq secondes en statue ce que le corps signale d’abord ; la classe devine : colère ou peur – et à quoi le voit-on ?",
+              "Situations : quelqu’un passe encore devant toi à la cantine · tu entends des pas derrière toi sur le chemin du retour, le soir · ton frère déchire ton poster · le prof t’interroge et tu ne connais pas la réponse · quelqu’un utilise ton portable sans demander.",
+              "Système d’alerte (5 min) : le premier signal arrive avant la pensée « je suis en colère » – qui le remarque a encore le temps de décider ce qu’il fait ; la mission s’appuie là-dessus."
+            ],
+            "wennEsKippt": "Si quelqu’un ne trouve aucun signal, lui demander ce que les autres voient chez lui quand il se met en colère. Si certains collent des gommettes à des endroits farfelus, ne pas gronder mais commenter sobrement : intéressant, tous les endroits où la colère peut se loger ; qui ne veut pas jouer un signal devine ou fait la mise en scène.",
             "blatt": "ff7-gefuehls-landkarte"
           },
           {
-            "titel": "Musique et mouvement",
-            "dauer": 15,
-            "phase": "aktiv",
-            "text": "Tout le monde se lève ; sacs rangés, chaises sous les tables. On marche sur un parcours autour des îlots, tous dans le même sens. Avant, chacun montre avec le pouce comment il va (1 min). Puis passer quatre courts morceaux l’un après l’autre, d’environ une minute et demie chacun (tableau) ; chacun se déplace comme la musique le lui fait ressentir – marcher, flâner, taper des pieds, flotter, sans se toucher. Quand la musique s’arrête, tout le monde se fige en statue ; deux voix : quelle émotion la musique a-t-elle déclenchée, et où dans le corps ? (quatre morceaux, 10 min) Pour finir, assis, montrer de nouveau le pouce et demander : est-ce que quelque chose a changé ? La musique peut-elle changer une émotion ? Quelle chanson écoutez-vous quand vous voulez redescendre ? Noter les titres sur une feuille (4 min).",
-            "sagen": [
-              "Bougez comme la musique vous le fait sentir. Personne ne regarde – tout le monde est occupé.",
-              "Musique stop – statue. Quelle émotion ? Où dans le corps ?",
-              "Quelle chanson écoutez-vous quand vous voulez redescendre ?"
-            ],
-            "tabelle": {
-              "spalten": [
-                "Ambiance",
-                "Proposition (sans paroles)"
-              ],
-              "zeilen": [
-                [
-                  "joyeuse",
-                  "Vivaldi, « Le Printemps », extrait des « Quatre Saisons », 1er mouvement"
-                ],
-                [
-                  "triste",
-                  "Barber, « Adagio pour cordes »"
-                ],
-                [
-                  "en colère, agitée",
-                  "Grieg, « Dans l’antre du roi de la montagne » – de plus en plus vite et fort"
-                ],
-                [
-                  "calme",
-                  "Satie, « Gymnopédie n° 1 »"
-                ]
-              ]
-            },
-            "tipp": "Ne pas parler de danser, mais de marcher au rythme de la musique – et marcher soi-même avec la classe ; cela enlève la gêne. S’il y a très peu de place, chacun reste derrière sa chaise et bouge seulement les bras, les épaules et les pieds. Garder les chansons pour redescendre : à la séance 15, elles serviront à créer une playlist ; vérifier les paroles à l’avance.",
-            "wennEsKippt": "Si quelqu’un ne veut pas danser, il y a des alternatives : marcher au rythme de la musique, dessiner à sa table en musique ou s’occuper de la musique – la touche pause déclenche les statues. Si ça devient trop agité sur le morceau en colère, baisser le volume et passer tout de suite au morceau calme. On ne se touche pas ; qui bouscule s’assoit un morceau et lance le suivant."
-          },
-          {
             "titel": "Skill : le tour du corps",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Annoncer : voici un skill qui aide à remarquer plus tôt les signaux d’alerte – court, trois minutes au plus, et chacun peut s’arrêter à tout moment (1 min). Tout le monde s’assoit bien droit, les deux pieds au sol, le regard posé sur un point de la table ; qui le souhaite ferme les yeux – les deux se valent. Qui préfère faire quelque chose appuie en même temps les pieds dans le sol ou serre un stylo. Lire lentement le tour du corps, avec deux ou trois secondes de pause entre les phrases (liste, 3 min) ; rester assis et le faire soi-même. Ensuite, une seule question : est-ce que quelque chose a changé dans le corps ? Deux ou trois voix (2 min). Puis exercer une fois, debout, la version courte pour la route : monter les épaules et les laisser tomber, desserrer la mâchoire, appuyer les pieds dans le sol et relâcher, expirer une fois longuement – vingt secondes que personne ne remarque dans le bus ou avant un devoir en classe (2 min). Pour finir, expliquer : qui interroge régulièrement son corps remarque plus tôt les signaux d’alerte – et a plus de temps avant qu’une émotion prenne les commandes (2 min). Sur la fiche, le skill figure dans l’encadré « Le tour du corps – ton skill ».",
+            "text": "Ce skill aide à remarquer plus tôt les signaux d’alerte : trois minutes au plus, et qui veut s’arrêter appuie à la place les pieds dans le sol. Tout le monde s’assoit droit, les yeux ouverts sur un point ou fermés ; l’enseignant·e lit lentement le tour du corps et le fait aussi. Ensuite la clôture : une phrase dans le Skills-Pass, annoncer la mission, choisir son moment.",
             "sagen": [
-              "Vous n’avez rien de spécial à ressentir. Tout ce qui est là est bien – même l’ennui.",
-              "Yeux ouverts ou fermés – les deux sont justes. Et qui veut arrêter appuie simplement les pieds dans le sol et attend."
+              "Vous n’avez rien de spécial à ressentir – tout ce qui est là est bien, même l’ennui.",
+              "Yeux ouverts ou fermés, les deux sont justes ; qui veut arrêter appuie simplement les pieds dans le sol et attend."
             ],
             "punkte": [
-              "Assieds-toi bien droit, les deux pieds au sol. Inspire une fois profondément et expire lentement.",
-              "Va avec ton attention vers le front, les yeux, la mâchoire. Laisse les dents un peu desserrées.",
-              "Sens ta nuque et tes épaules. Peuvent-elles descendre un peu ?",
-              "Descends vers la poitrine et le ventre. Sens comme ils bougent quand tu respires. Peut-être qu’une émotion d’aujourd’hui est là – regarde-la, simplement.",
-              "Sens tes mains et tes pieds : chauds ou froids, calmes ou qui fourmillent ?",
-              "Sens tout ton corps d’un coup. Étire-toi quand tu es prêt·e."
+              "S’asseoir droit, les pieds au sol, les yeux ouverts ou fermés ; expirer une fois longuement.",
+              "Aller avec son attention du front jusqu’aux pieds – seulement remarquer, deux ou trois secondes de pause entre les phrases.",
+              "Version courte pour la route : laisser tomber les épaules, appuyer les pieds dans le sol, expirer une fois longuement.",
+              "Skills-Pass (3 min) : une phrase pour la question « Quel signal d’alerte est-ce que je veux retenir, pour la colère ou pour la peur ? » ; tampon.",
+              "Mission et moment (3 min) : l’annoncer ; à « trois », chacun montre son moment (un doigt avant un devoir, deux quand frère ou sœur énerve, trois avant l’entraînement, le poing un moment à soi) et l’écrit dans « Mon moment : quand … » ; annoncer la prochaine séance (1 min)."
             ],
-            "tipp": "Rester assis et lire, plutôt que circuler dans la salle : cela rassure. Trois minutes suffisent ; plus long, cela devient désagréable pour certains, et le silence n’est jamais un moyen contre l’agitation. Le tour du corps n’a aucun contenu religieux, il entraîne seulement l’attention ; la version courte figure dans le cahier, que les parents peuvent aussi lire.",
-            "wennEsKippt": "Si un jeune devient agité, triste ou tendu en se concentrant sur son corps, arrêter l’exercice pour lui avec bienveillance : yeux ouverts, pieds bien au sol, nommer cinq choses dans la salle ; en reparler plus tard, calmement. Qui ne tient pas en place fait la version courte debout, derrière sa chaise. Si des rires fusent, continuer à lire calmement ; si la moitié de la classe décroche, arrêter après la phrase suivante et passer directement à la version courte debout – elle porte le skill tout autant."
-          },
-          {
-            "titel": "Skills-Pass, mission et bilan du trimestre",
-            "dauer": 10,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 min) : écrire la question clé au tableau – quel signal d’alerte est-ce que je veux retenir, pour la colère ou pour la peur ? Ensuite, le tampon. Mission et choix du moment (2 min) : annoncer la mission de la semaine – guetter son premier signal d’alerte quand la colère ou la peur arrive. À trois, tout le monde montre dans quel moment cela arrive le plus souvent : un doigt pour “avant un devoir en classe”, deux pour “quand mon frère ou ma sœur m’énerve”, trois pour “avant l’entraînement ou le match”, le poing pour un moment à soi – et le note dans la colonne « Mon moment : quand … » des missions de la semaine, dans le cahier ; l’exercice 5 de la fiche sert à noter ce qui s’est passé ensuite. Tour éclair du pouce (1 min) : connaissez-vous mieux vos signaux d’alerte maintenant ? À trois, tout le monde montre en même temps. Bilan du trimestre (5 min) : si la séance 12 a lieu, rassembler au tableau les skills du trimestre – 5-4-3-2-1, respiration des doigts, contracter et relâcher, écoute attentive, chasse aux couleurs, nommer l’émotion, tour du corps – et faire montrer avec les doigts combien chacun en a déjà utilisé en dehors du cours ; deux voix disent lequel. Si la séance 12 saute (séance au choix), aujourd’hui est le dernier cours du trimestre : à la place, noter dans le Skills-Pass son skill le plus important et cocher les cinq phrases – les lire lentement à voix haute, rien n’est ramassé – et montrer les numéros d’aide au début du cahier ; ils restent valables pendant les vacances.",
-            "sagen": [
-              "Est-ce que vous connaissez mieux vos signaux d’alerte maintenant – pouce en haut, à l’horizontale ou en bas ? À trois.",
-              "Quels skills connaissez-vous depuis septembre ? Dites-les-moi – puis montrez avec les doigts combien vous en avez déjà utilisés en dehors du cours."
-            ],
-            "tipp": "Vérifier avant si la séance 12 a lieu (séance au choix, c’est elle qui saute en premier) : les cinq phrases du Skills-Pass sont la valeur de départ avec laquelle la classe compare aux séances 24 et 35 – elles ne doivent pas manquer. Le bilan n’est pas une note ; qui coche « souvent » partout en a le droit.",
-            "wennEsKippt": "Si quelqu’un lance « Fortnite » ou « dormir » pendant la collecte, ne pas balayer, mais montrer l’affiche de la séance 1 : ça aide un moment, ou ça aide vraiment ? Si un jeune coche partout « pas encore » ou écrit « rien appris », ne pas discuter, mais lui demander brièvement après le cours comment s’est passé son trimestre."
+            "tipp": "Si la séance 12 saute, c’est le dernier cours du trimestre : cocher les cinq phrases du Skills-Pass (l’enseignant·e les lit lentement, rien n’est ramassé) et montrer les numéros d’aide au début du cahier (116 111, 8002 1234, urgences 112) ; ils restent valables pendant les vacances."
           }
         ],
         "bruecke": "Dans la vraie vie, une émotion arrive rarement seule : la semaine prochaine, on parle des émotions mélangées – et de la force qu’une émotion peut avoir, de 0 à 10.",
-        "mission": "Dans ton moment – avant un devoir en classe, quand frère ou sœur t’énerve, avant un match –, guette ton premier signal de colère ou de peur : où le sens-tu, que fais-tu ensuite ?",
-        "hintergrund": "Base de la séance : les cartes corporelles des émotions. Nummenmaa et al. (2014) ont fait dessiner à plus de 700 personnes où elles ressentaient différentes émotions. Les cartes différaient selon l’émotion et se ressemblaient en Europe et en Asie : colère dans la tête, la poitrine et les bras, tristesse dans des bras et jambes lourds. Sentir son cœur, sa respiration et ses muscles – l’intéroception (Craig, 2002) – s’entraîne ; le cœur qui bat appartient à plusieurs émotions, l’ensemble et la situation le rendent clair. Les premiers signaux sont le levier principal : ils arrivent avant la pensée « je suis en colère », et plus on intervient tôt, plus c’est facile (Gross, 1998). Le tour du corps reste court, yeux ouverts permis, facultatif : un long silence imposé à des classes entières n’a rien apporté (Kuyken et al., 2022) ; trois minutes avec sortie et version courte suffisent.",
+        "mission": "Guette ton premier signal de colère ou de peur. Où le sens-tu ?",
+        "hintergrund": "Nummenmaa et al. (2014) ont fait dessiner à plus de 700 personnes où elles ressentent des émotions : les cartes différaient selon l’émotion et se ressemblaient en Europe et en Asie de l’Est. Sentir son cœur, sa respiration et ses muscles – l’intéroception (Craig, 2002) – s’entraîne ; le cœur qui bat appartient à plusieurs émotions. Les premiers signaux sont le levier principal : ils arrivent avant la pensée « je suis en colère », et plus on intervient tôt, plus c’est facile (Gross, 1998).",
         "quellen": [
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
           "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666.",
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
         ],
-        "achtung": "Les exercices corporels peuvent agiter des jeunes qui ont vécu des choses difficiles. Dire avant que chacun peut s’arrêter : garder les yeux ouverts, faire une pause ou regarder est toujours permis ; aucun exercice avec contact. Le tour du corps dure trois minutes au plus et n’est jamais un moyen contre l’agitation. Pour la carte, penser à un moment léger. Personne n’est obligé de montrer sa carte, il y a toujours une alternative à la musique, et les commentaires sur le corps des autres sont arrêtés tout de suite. En cas de signes de blessures, de violence ou d’automutilation, en parler en tête-à-tête après le cours, informer le SePAS le jour même et suivre le protocole de protection.",
+        "achtung": "Les exercices corporels peuvent agiter des jeunes qui ont vécu des choses difficiles : dire avant que chacun peut s’arrêter (yeux ouverts, pause, regarder), aucun exercice avec contact, le tour du corps dure trois minutes au plus et n’est jamais un moyen contre l’agitation. Si un jeune devient agité ou triste, arrêter l’exercice pour lui (yeux ouverts, pieds au sol, nommer cinq choses dans la salle) ; personne n’est obligé de montrer sa carte, et les commentaires sur le corps des autres sont arrêtés tout de suite. En cas de signes de blessures, de violence ou d’automutilation, en parler en tête-à-tête après le cours et informer le SePAS le jour même (protocole de protection de l’école).",
         "differenzierung": {
-          "leichter": "Au tableau, les parties du corps sont notées autour de la silhouette (tête, gorge, poitrine, ventre, mains, jambes) ; qui ne connaît pas les mots montre. Sur la carte, la colère et la joie suffisent ; pour les signaux d’alerte, cocher plutôt qu’écrire, le premier signal peut être entouré.",
+          "leichter": "Au tableau, les parties du corps sont notées autour de la silhouette (tête, gorge, poitrine, ventre, mains, jambes) ; qui ne connaît pas les mots montre. Sur la carte, la colère et la joie suffisent ; pour les signaux d’alerte, cocher plutôt qu’écrire et entourer le premier signal.",
           "schwerer": "Ajouter une cinquième couleur pour le calme : où sens-tu que tu vas bien ? Ou noter à quoi les autres pourraient remarquer ta colère ou ta peur avant toi."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec la gommette sur la silhouette (5 min), « à trois, montrez » (5 min), carte corporelle des émotions (12 min), premiers signaux d’alerte avec la carte de la classe (10 min), tour du corps (8 min), Skills-Pass, mission avec le moment et bilan du trimestre (10 min). Musique et mouvement sont supprimés ou deviennent la pause active de la séance suivante ; si la séance 12 saute aussi, les cinq phrases du Skills-Pass et les numéros d’aide ont la priorité."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec la gommette sur la silhouette (5 min), « à trois, montrez » (5 min), carte corporelle des émotions (12 min), premier signal d’alerte avec la carte de la classe (10 min), tour du corps (8 min), Skills-Pass, mission avec le moment (10 min). Les images figées et la pause active sont supprimées ; si la séance 12 saute aussi, les cinq phrases du Skills-Pass et les numéros d’aide ont la priorité."
       }
     }
   ],
@@ -530,16 +368,18 @@
       ],
       "de": {
         "titel": "Meine Gefühls-Landkarte",
-        "untertitel": "Wo spüre ich Wut, Angst, Freude und Traurigkeit – und was merke ich zuerst?",
+        "untertitel": "Wo sitzt das Gefühl? Was merkst du zuerst?",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Gefühle passieren nicht nur im Kopf. Oft merkt der Körper zuerst, dass etwas los ist: Das Herz klopft, der Bauch wird eng, das Gesicht wird heiß."
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Gefühle sitzen im ganzen Körper. Oft meldet sich der Körper zuerst. Wer das erste Signal merkt, hat mehr Zeit."
           },
           {
             "art": "aufgabe",
-            "text": "Wo spürst du Wut, Angst, Freude und Traurigkeit? Markiere die Stellen in der passenden Farbe.",
-            "hinweis": "Denk an einen Moment, der nicht zu schwer war. Punkte, Kreuze oder Flächen – alles geht. Es sind die Farben des Gefühlsrads.",
+            "text": "Markiere in der passenden Farbe, wo du jedes Gefühl spürst.",
+            "hinweis": "Denk an einen Moment, der nicht zu schwer war. Du musst nichts zeigen.",
             "symbole": [
               "malen"
             ]
@@ -571,51 +411,44 @@
           },
           {
             "art": "aufgabe",
-            "text": "Woran merkst du, dass du wütend wirst – noch bevor du etwas sagst oder tust? Kreuze an.",
+            "text": "Kreuze an, woran du Wut und Angst merkst.",
             "symbole": [
               "ankreuzen"
             ]
           },
           {
-            "art": "ankreuzen",
-            "spalten": 2,
-            "frei": 1,
-            "items": [
-              "Mein Herz klopft schneller.",
-              "Mein Gesicht wird heiß.",
-              "Ich balle die Fäuste.",
-              "Mein Kiefer wird fest.",
-              "Ich atme schnell und flach.",
-              "Mein Bauch zieht sich zusammen.",
-              "Meine Stimme wird lauter.",
-              "Ich kann nicht mehr still sitzen."
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "ankreuzen",
+                "titel": "Wut",
+                "items": [
+                  "Mein Herz klopft schneller.",
+                  "Mein Gesicht wird heiß.",
+                  "Ich balle die Fäuste.",
+                  "Mein Kiefer wird fest.",
+                  "Ich kann nicht still sitzen."
+                ]
+              }
+            ],
+            "rechts": [
+              {
+                "art": "ankreuzen",
+                "titel": "Angst",
+                "items": [
+                  "Mein Herz rast.",
+                  "Mein Mund wird trocken.",
+                  "Mein Bauch kribbelt oder tut weh.",
+                  "Meine Knie werden weich.",
+                  "Ich will nur noch weg."
+                ]
+              }
             ]
           },
           {
             "art": "aufgabe",
-            "text": "Woran merkst du, dass du Angst bekommst? Kreuze an.",
-            "symbole": [
-              "ankreuzen"
-            ]
-          },
-          {
-            "art": "ankreuzen",
-            "spalten": 2,
-            "frei": 1,
-            "items": [
-              "Mein Herz rast.",
-              "Mein Mund wird trocken.",
-              "Mir wird kalt, oder ich schwitze.",
-              "Meine Knie werden weich.",
-              "Mein Bauch kribbelt oder tut weh.",
-              "Ich halte die Luft an.",
-              "Meine Hände zittern.",
-              "Ich will nur noch weg."
-            ]
-          },
-          {
-            "art": "aufgabe",
-            "text": "Was kommt bei dir zuerst? Das ist dein Warnsignal.",
+            "text": "Schreib auf, was bei dir zuerst kommt: dein Warnsignal.",
             "symbole": [
               "schreiben"
             ]
@@ -627,67 +460,14 @@
               "Bei Angst merke ich zuerst …"
             ],
             "linien": 1
-          },
-          {
-            "art": "info",
-            "symbol": "merke",
-            "titel": "Deine Frühwarnanlage",
-            "text": "Wer das erste Signal bemerkt, hat mehr Zeit zu entscheiden, was er tut. Im nächsten Kapitel lernst du Skills, die genau dann helfen."
-          },
-          {
-            "art": "aufgabe",
-            "text": "Deine Wochen-Mission: dein Warnsignal in deinem Moment. Wo hast du es gespürt – und was hast du dann gemacht? Eine Zeile reicht.",
-            "hinweis": "Deinen Moment hast du in der Stunde gewählt – er steht bei den Wochen-Missionen. Keine Namen, nur Stichworte.",
-            "symbole": [
-              "schreiben"
-            ]
-          },
-          {
-            "art": "tabelle",
-            "spalten": [
-              "Tag",
-              "Wut oder Angst?",
-              "Mein erstes Signal",
-              "Was habe ich dann gemacht?"
-            ],
-            "breiten": [
-              0.6,
-              1.2,
-              1.6,
-              2.2
-            ],
-            "zeilen": 2,
-            "beispiel": [
-              "Di",
-              "Angst",
-              "Bauch eng",
-              "einmal lang ausgeatmet, dann doch gefragt"
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "tipp",
-            "titel": "Der Körper-Check – dein Skill",
-            "punkte": [
-              "Setz dich aufrecht hin, beide Füße auf dem Boden. Augen offen oder zu – wie du magst.",
-              "Wandere mit der Aufmerksamkeit von der Stirn bis zu den Füßen. Nur bemerken – höchstens drei Minuten.",
-              "Kurzform für unterwegs: Schultern fallen lassen, Füße in den Boden drücken, einmal lang ausatmen."
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Du entscheidest, was du teilst.",
-            "text": "Deine Landkarte und deine Notizen musst du niemandem zeigen."
           }
         ],
         "lehrer": {
           "ziel": "Die Jugendlichen nehmen wahr, wo sie Wut, Angst, Freude und Traurigkeit im Körper spüren, und benennen ihr erstes Warnsignal für Wut und Angst – die Grundlage für die Anspannungsskala im nächsten Kapitel.",
           "ablauf": [
-            "Einheit 11, Schritt 4: Aufgabe 1 allein (8 Min.), Farben wie im Gefühlsrad; danach freiwillig in den Tischgruppen vergleichen.",
-            "Schritt 6: Die Lehrkraft liest die Sätze von Aufgabe 2 und 3 vor, alle kreuzen für sich an; dann Aufgabe 4 (8 Min.), danach rote und lila Punkte auf den großen Umriss der Klasse.",
-            "Das Blatt bleibt im Heft und wird weder eingesammelt noch gezeigt.",
-            "Aufgabe 5 begleitet die Wochen-Mission mit dem in der Stunde gewählten Moment; die Brücke von Einheit 12 fragt kurz danach. Der Kasten „Aus der Forschung“ fasst Nummenmaa et al. (2014) zusammen."
+            "Einheit 11, Schritt 3: Aufgabe 1 allein (9 Min.), Farben wie im Gefühlsrad; danach freiwillig in den Tischgruppen vergleichen; Aufgabe 2: die Lehrkraft liest die Sätze für Wut und Angst vor, alle kreuzen für sich an.",
+            "Schritt 5: Aufgabe 3 – das erste Warnsignal aufschreiben, danach rote und lila Punkte auf den großen Umriss der Klasse.",
+            "Das Blatt bleibt im Heft und wird weder eingesammelt noch gezeigt. Der Skill „Körper-Check“ steht im Handbuch (Schritt 6) und auf der Skill-Karte."
           ],
           "hintergrund": "Gefühle zeigen sich im ganzen Körper; in den Körperkarten von Nummenmaa et al. (2014) unterschieden sie sich je nach Gefühl deutlich – Wut etwa in Kopf, Brust und Armen. Solche Signale kommen oft vor dem Gedanken „Ich bin wütend“, und je früher man eingreift, desto leichter gelingt die Regulation (Gross, 1998).",
           "quellen": [
@@ -699,16 +479,18 @@
       },
       "fr": {
         "titel": "Ma carte corporelle des émotions",
-        "untertitel": "Où est-ce que je ressens la colère, la peur, la joie et la tristesse – et qu’est-ce que je remarque en premier ?",
+        "untertitel": "Où sens-tu l’émotion ? Que remarques-tu d’abord ?",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Les émotions ne se passent pas seulement dans la tête. Souvent, c’est le corps qui remarque le premier que quelque chose se passe : le cœur bat fort, le ventre se serre, le visage chauffe."
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Bon à savoir",
+            "text": "Les émotions se logent dans tout le corps. Souvent, le corps réagit en premier. Qui remarque le premier signal a plus de temps."
           },
           {
             "art": "aufgabe",
-            "text": "Où ressens-tu la colère, la peur, la joie et la tristesse ? Marque les endroits avec la bonne couleur.",
-            "hinweis": "Pense à un moment pas trop lourd. Points, croix ou surfaces – tout va. Ce sont les couleurs de la roue des émotions.",
+            "text": "Marque dans la bonne couleur où tu ressens chaque émotion.",
+            "hinweis": "Pense à un moment pas trop lourd. Tu n’as rien à montrer.",
             "symbole": [
               "malen"
             ]
@@ -740,51 +522,44 @@
           },
           {
             "art": "aufgabe",
-            "text": "À quoi remarques-tu que tu te mets en colère – avant même de dire ou de faire quelque chose ? Coche.",
+            "text": "Coche à quoi tu remarques la colère et la peur.",
             "symbole": [
               "ankreuzen"
             ]
           },
           {
-            "art": "ankreuzen",
-            "spalten": 2,
-            "frei": 1,
-            "items": [
-              "Mon cœur bat plus vite.",
-              "Mon visage chauffe.",
-              "Je serre les poings.",
-              "Ma mâchoire se crispe.",
-              "Je respire vite et court.",
-              "Mon ventre se noue.",
-              "Ma voix monte.",
-              "Je ne tiens plus en place."
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "ankreuzen",
+                "titel": "Colère",
+                "items": [
+                  "Mon cœur bat plus vite.",
+                  "Mon visage chauffe.",
+                  "Je serre les poings.",
+                  "Ma mâchoire se crispe.",
+                  "Je ne tiens plus en place."
+                ]
+              }
+            ],
+            "rechts": [
+              {
+                "art": "ankreuzen",
+                "titel": "Peur",
+                "items": [
+                  "Mon cœur s’emballe.",
+                  "J’ai la bouche sèche.",
+                  "J’ai mal ou des papillons au ventre.",
+                  "J’ai les jambes en coton.",
+                  "Je veux juste partir."
+                ]
+              }
             ]
           },
           {
             "art": "aufgabe",
-            "text": "À quoi remarques-tu que tu as peur ? Coche.",
-            "symbole": [
-              "ankreuzen"
-            ]
-          },
-          {
-            "art": "ankreuzen",
-            "spalten": 2,
-            "frei": 1,
-            "items": [
-              "Mon cœur s’emballe.",
-              "J’ai la bouche sèche.",
-              "J’ai froid ou je transpire.",
-              "J’ai les jambes en coton.",
-              "J’ai des papillons ou mal au ventre.",
-              "Je retiens mon souffle.",
-              "Mes mains tremblent.",
-              "Je veux juste partir."
-            ]
-          },
-          {
-            "art": "aufgabe",
-            "text": "Qu’est-ce qui vient en premier chez toi ? C’est ton signal d’alerte.",
+            "text": "Écris ce qui vient en premier : ton signal d’alerte.",
             "symbole": [
               "schreiben"
             ]
@@ -796,67 +571,14 @@
               "Avec la peur, je remarque d’abord…"
             ],
             "linien": 1
-          },
-          {
-            "art": "info",
-            "symbol": "merke",
-            "titel": "Ton système d’alerte précoce",
-            "text": "Qui remarque le premier signal a plus de temps pour décider de ce qu’il fait. Au chapitre suivant, tu apprendras des skills qui aident justement à ce moment-là."
-          },
-          {
-            "art": "aufgabe",
-            "text": "Ta mission de la semaine : ton signal d’alerte dans ton moment. Où l’as-tu senti – et qu’as-tu fait ensuite ? Une ligne suffit.",
-            "hinweis": "Tu as choisi ton moment pendant le cours – il est noté avec les missions de la semaine. Pas de noms, juste des mots-clés.",
-            "symbole": [
-              "schreiben"
-            ]
-          },
-          {
-            "art": "tabelle",
-            "spalten": [
-              "Jour",
-              "Colère ou peur ?",
-              "Mon premier signal",
-              "Ce que j’ai fait ensuite"
-            ],
-            "breiten": [
-              0.6,
-              1.2,
-              1.6,
-              2.2
-            ],
-            "zeilen": 2,
-            "beispiel": [
-              "mar.",
-              "peur",
-              "ventre serré",
-              "expiré longuement, puis j’ai quand même demandé"
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "tipp",
-            "titel": "Le tour du corps – ton skill",
-            "punkte": [
-              "Assieds-toi bien droit, les deux pieds au sol. Yeux ouverts ou fermés – comme tu veux.",
-              "Promène ton attention du front jusqu’aux pieds. Remarque, simplement – trois minutes au plus.",
-              "Version courte pour la route : laisse tomber les épaules, appuie les pieds dans le sol, expire longuement."
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Tu décides de ce que tu partages.",
-            "text": "Tu n’es obligé·e de montrer ta carte et tes notes à personne."
           }
         ],
         "lehrer": {
           "ziel": "Les jeunes repèrent où ils ressentent la colère, la peur, la joie et la tristesse dans leur corps et nomment leur premier signal d’alerte de la colère et de la peur – la base de l’échelle de tension du chapitre suivant.",
           "ablauf": [
-            "Séance 11, étape 4 : exercice 1 seul (8 min), avec les couleurs de la roue ; ensuite, comparer en îlots si on le souhaite.",
-            "Étape 6 : lire à voix haute les phrases des exercices 2 et 3, chacun coche pour soi ; puis exercice 4 (8 min), ensuite gommettes rouges et violettes sur la grande silhouette de la classe.",
-            "La fiche reste dans le cahier ; elle n’est ni ramassée ni montrée.",
-            "L’exercice 5 accompagne la mission de la semaine avec le moment choisi pendant le cours ; le lien de la séance 12 y revient brièvement. L’encadré « Ce que dit la recherche » résume Nummenmaa et al. (2014)."
+            "Séance 11, étape 3 : exercice 1 seul (9 min), avec les couleurs de la roue ; ensuite, comparer en îlots si on le souhaite ; exercice 2 : l’enseignant·e lit les phrases de la colère et de la peur, chacun coche pour soi.",
+            "Étape 5 : exercice 3 – noter son premier signal d’alerte, puis gommettes rouges et violettes sur la grande silhouette de la classe.",
+            "La fiche reste dans le cahier ; elle n’est ni ramassée ni montrée. Le skill « tour du corps » figure dans le manuel (étape 6) et sur la carte de skill."
           ],
           "hintergrund": "Les émotions se manifestent dans tout le corps ; dans les cartes corporelles de Nummenmaa et al. (2014), elles différaient nettement selon l’émotion – la colère, par exemple, dans la tête, la poitrine et les bras. Ces signaux arrivent souvent avant la pensée « je suis en colère », et plus on intervient tôt, plus la régulation est facile (Gross, 1998).",
           "quellen": [

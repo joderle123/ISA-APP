@@ -38,23 +38,20 @@
         "ziele": [
           "ordnen Gefühlswörter den sechs Grundgefühlen des Gefühlsrads zu",
           "erklären die Botschaft jedes Gefühls, auch der unangenehmen",
-          "erkennen Gefühle an Gesicht und Haltung und stellen sie ohne Worte dar",
-          "probieren die Farbsuche als Skill aus und wählen einen Moment, um sie zu üben"
+          "erkennen Gefühle an Gesicht und Haltung und stellen sie ohne Worte dar"
         ],
         "material": [
           "Gefühlsrad-Plakat, 20 Klebepunkte",
           "Fünf Sortierbögen (A3), dicke Stifte",
-          "Gefühlskarten: fünf Sätze (Vorlage)",
+          "Gefühlskarten (Vorlage), fünf Sätze",
           "Plakat (A1) für die Botschaften",
-          "Kreide oder Marker in sechs Farben",
           "Briefkasten, Rollenkarten, Klassenrat-Heft",
           "Schülerheft, Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
           "Fünf A3-Bögen in sechs Felder teilen und die Grundgefühle des Gefühlsrads hineinschreiben: fröhlich, stark, wütend, ängstlich, traurig, ruhig.",
-          "Gefühlskarten (Seite 1 und 2) fünfmal auf festes Papier kopieren und mit der Schneidemaschine schneiden; ein Satz je Tischgruppe im Umschlag.",
-          "Botschaften-Plakat vorbereiten: zwei Spalten wie in Schritt 4, links die sieben Gefühle.",
-          "Namen der Figuren prüfen und, falls nötig, tauschen; ein Anliegen aus dem Briefkasten für Schritt 8 auswählen."
+          "Gefühlskarten (Seite 1 und 2) fünfmal auf festes Papier kopieren und schneiden: ein Satz je Tischgruppe im Umschlag. Botschaften-Plakat mit zwei Spalten vorbereiten.",
+          "Namen der Figuren prüfen, bei Bedarf tauschen; ein Anliegen aus dem Briefkasten für den Klassenrat auswählen."
         ],
         "ablauf": [
           {
@@ -65,17 +62,12 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Rückblick und Start ins Kapitel Gefühle"
+            "titel": "Rückblick, Mission und neues Kapitel"
           },
           {
-            "min": "15–30",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Gefühlswörter sammeln und sortieren"
-          },
-          {
-            "min": "30–45",
-            "phase": "uebung",
-            "titel": "Ein Tag ohne Angst, Wut, Traurigkeit …"
+            "titel": "Gefühlswörter und ihre Botschaften"
           },
           {
             "min": "45–50",
@@ -83,29 +75,14 @@
             "titel": "Bewegungspause: Stein, Papier, Schere mit Fanclub"
           },
           {
-            "min": "50–60",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Botschaften auf dem Blatt"
+            "titel": "Gefühls-Detektive und Klassenrat"
           },
           {
-            "min": "60–75",
-            "phase": "aktiv",
-            "titel": "Pantomime und Gefühls-Detektive"
-          },
-          {
-            "min": "75–85",
-            "phase": "uebung",
-            "titel": "Klassenrat: Rückblick und ein Anliegen"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: Farbsuche"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, Blitzlicht und Moment wählen"
           }
         ],
         "schritte": [
@@ -113,225 +90,161 @@
             "titel": "Check-in: das genauere Wort",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt heute nicht in die Mitte des Gefühlsrads, sondern außen auf ein genaueres Wort – gereizt statt wütend, nervös statt ängstlich (3 Min.). Wer kein passendes Wort findet, nimmt eines aus der Mitte. Wenn alle sitzen, beginnt die Lehrkraft mit einem Satz zu ihrem Wort; dann sagen drei, vier Freiwillige ihr Wort und, wenn sie mögen, einen Satz dazu. Zum Schluss fragen: Was verrät ein genaues Wort, das „gut“ oder „schlecht“ nicht verrät? (3 Min.)",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt heute nicht in die Mitte des Gefühlsrads, sondern außen auf ein genaueres Wort – gereizt statt wütend, nervös statt ängstlich. Die Lehrkraft beginnt mit einem Satz zu ihrem Wort, drei, vier Freiwillige folgen. Wer kein Wort findet, nimmt eines aus der Mitte.",
             "sagen": [
-              "Heute bitte nicht nur ‚fröhlich‘ oder ‚traurig‘ – sucht euch außen ein Wort, das es genauer trifft.",
+              "Heute nicht nur ‚fröhlich‘ oder ‚traurig‘ – sucht außen ein Wort, das es genauer trifft.",
               "Ich habe ‚gereizt‘ genommen: Der Bus stand zehn Minuten im Stau, und ich bin in Gedanken noch dort."
             ],
-            "tipp": "Ein genaues Wort ist schon der erste Schritt, mit einem Gefühl umzugehen: Wer „gereizt“ sagt statt „schlecht“, weiß eher, was ihm fehlt. Wer die Wörter außen noch nicht lesen kann, klebt den Punkt in das Farbfeld der Mitte, das passt; die Lehrkraft liest auf Wunsch die vier Wörter daneben vor.",
-            "wennEsKippt": "Drängeln sich alle am Plakat, tischgruppenweise kleben lassen; wer keinen Punkt kleben will, lässt es – der Punkt ist ein Angebot. Sagt jemand „keine Ahnung“, fragen, welches Wort auf keinen Fall passt; über das Ausschließen fällt die Wahl leichter. Kleben Punkte bei sehr belasteten Wörtern wie hilflos oder einsam, nicht vor der Klasse nachfragen – die Punkte sind anonym –, sondern allen ein Gespräch anbieten: Wer heute einen schweren Tag hat – ich bin nach der Stunde noch kurz da."
+            "wennEsKippt": "Drängeln sich alle am Plakat, tischgruppenweise kleben lassen; wer keinen Punkt kleben will, lässt es. Kleben Punkte auf sehr belasteten Wörtern wie hilflos oder einsam, nicht vor der Klasse nachfragen – die Punkte sind anonym –, sondern allen ein Gespräch nach der Stunde anbieten."
           },
           {
-            "titel": "Rückblick und Start ins Kapitel Gefühle",
+            "titel": "Rückblick, Mission und neues Kapitel",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission fragen: Kam dein Moment – und hast du deine Stärke eingesetzt? Daumen hoch, Mitte, runter; eine Stimme erzählt, was passiert ist; niemand muss den Moment erlebt haben. Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was fühle ich – und wozu? Die Brücke zum Glas der Bedürfnisse schlagen: Ist ein Tank leer, meldet sich oft ein Gefühl. Zum Schluss die vier Stunden des Kapitels nennen: heute Gefühle und ihre Botschaften, dann Gefühle am Steuer, Gefühle im Körper und gemischte Gefühle.",
+            "text": "Zur Wochen-Mission fragen: Kam dein Moment – und hast du deine Stärke eingesetzt? Daumen hoch, Mitte oder runter, eine Stimme erzählt; niemand muss den Moment erlebt haben. Dann das neue Kapitel „Gefühle“ öffnen und die Leitfrage an die Tafel schreiben: Was fühle ich – und wozu?",
             "sagen": [
-              "Wer zu wenig geschlafen hat, ist schneller gereizt. Wer sich ausgeschlossen fühlt, wird traurig oder wütend. Das Gefühl zeigt: Hier ist ein Tank leer.",
-              "In den nächsten vier Wochen geht es darum, Gefühle zu verstehen – nicht darum, sie loszuwerden."
+              "Ist ein Tank leer, meldet sich oft ein Gefühl – in den nächsten Wochen geht es darum, Gefühle zu verstehen, nicht sie loszuwerden."
             ],
-            "tipp": "Das Glas der Bedürfnisse und den Baum der Stärke sichtbar stehen lassen: Sie zeigen, dass das neue Kapitel an das letzte anschließt."
+            "tipp": "Glas der Bedürfnisse und Baum der Stärke sichtbar stehen lassen: Sie zeigen, dass das neue Kapitel an das letzte anschließt."
           },
           {
-            "titel": "Gefühlswörter sammeln und sortieren",
-            "dauer": 15,
+            "titel": "Gefühlswörter und ihre Botschaften",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Jede Tischgruppe bekommt einen Sortierbogen mit den sechs Grundgefühlen und einen dicken Stift; eine Person schreibt, die anderen sagen leise Wörter an. In vier Minuten schreiben die Gruppen so viele Gefühlswörter wie möglich gleich in das passende Feld – auch Wörter aus der Jugendsprache und aus allen Sprachen der Klasse. Was zu zwei Feldern passt, kommt auf die Linie dazwischen, was nirgends passt, an den Rand (4 Min.). Dann zählt jede Gruppe, welches Feld bei ihr am vollsten ist, und nennt ihr Lieblingswort und ein Wort vom Rand; Wörter aus anderen Sprachen erklärt sie kurz. Die Lehrkraft schreibt die Wörter in der Farbe des Feldes an die Tafel (6 Min.). Kurz über die Wörter am Rand sprechen: Wohin gehören Ekel, Überraschung, Scham? (2 Min.) Zum Schluss schreibt jede Person in Aufgabe 1 zu jedem Grundgefühl ein Wort, das sie selbst benutzt – aus dem Bogen ihrer Gruppe oder aus ihrer Sprache (3 Min.).",
+            "text": "Erst sammeln die Tischgruppen Gefühlswörter auf Sortierbögen und ordnen sie den sechs Grundgefühlen zu (8 Min.). Dann bekommt jede Tischgruppe eine Situation „Ein Tag ohne …“: Was geht schief, und was hätte das Gefühl gesagt? Die Lehrkraft trägt die Botschaften auf dem Plakat ein und ergänzt Ruhe und Ekel (14 Min.); zum Schluss Aufgabe 1 und 2 auf dem Blatt (8 Min.).",
             "sagen": [
-              "Alles zählt: Wörter aus der Jugendsprache und aus euren anderen Sprachen auch.",
-              "Zu welchem Grundgefühl gehört ‚genervt‘? Und wohin kommt ‚erleichtert‘?"
-            ],
-            "tipp": "Meist sind die Felder wütend und traurig am vollsten: Für unangenehme Gefühle haben die meisten Sprachen mehr Wörter. Rollen helfen: Wem Stillsitzen schwerfällt, schreibt; wer wenig Deutsch spricht, steuert Wörter aus seiner Sprache bei, und die Gruppe sucht gemeinsam das Feld.",
-            "wennEsKippt": "Kommen alberne oder beleidigende Wörter, ruhig fragen, welches Gefühl dahintersteckt: Hinter „cringe“ steckt oft Peinlichkeit, hinter einem Schimpfwort oft Wut. Schimpfwörter kommen nicht an die Tafel – auch nicht in anderen Sprachen. Fällt einer Gruppe nichts mehr ein, bekommt sie die Gefühlskarten aus dem Umschlag als Ideenkiste.",
-            "blatt": "ff7-gefuehle-botschaften"
-          },
-          {
-            "titel": "Ein Tag ohne Angst, Wut, Traurigkeit …",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Zuerst die Klasse fragen: Wärt ihr ohne Gefühle besser dran? Zwei, drei Meinungen hören, nicht auflösen (2 Min.). Dann die ersten fünf Situationen nacheinander vorlesen und jede gleich einer Tischgruppe geben: Eine Person hat ab heute Morgen ein Gefühl verloren. Name und Gefühl sofort an die Tafel schreiben (Gruppe 1: Noah ohne Angst …), damit niemand seine Situation vergisst (2 Min.). Die Gruppe überlegt (3 Min.): Was geht schief? Was hätte das Gefühl gesagt, wenn es da gewesen wäre? Je Gruppe nennt eine Person die Antwort in zwei Sätzen; die Lehrkraft trägt die Botschaft auf dem Plakat ein und ergänzt mit der Klasse, was das Gefühl uns tun lässt (6 Min.). Zum Schluss die Situation mit Ekel vorlesen; die Klasse füllt die letzten Zeilen gemeinsam aus, auch die zur Ruhe (2 Min.).",
-            "sagen": [
-              "Stellt euch vor, ihr hättet nie wieder Angst. Klingt gut – oder?",
-              "Was hätte das Gefühl der Person sagen wollen? Ein Satz reicht.",
-              "Es gibt angenehme und unangenehme Gefühle. Falsche Gefühle gibt es nicht."
+              "Alles zählt, auch Wörter aus der Jugendsprache und aus euren anderen Sprachen.",
+              "Eine Person hat heute Morgen ein Gefühl verloren – was geht schief, und was hätte es gesagt?"
             ],
             "punkte": [
-              "Ein Tag ohne Angst: Noah hat ab heute Morgen keine Angst mehr. Er fährt freihändig bei Rot über die Kreuzung, klettert auf das Dach der Turnhalle und lernt nicht für den Test morgen.",
-              "Ein Tag ohne Wut: In der Kantine drängelt sich jeden Tag jemand vor Mila, und ihr Ladekabel wird ohne Fragen benutzt. Mila spürt keine Wut – und sagt nie etwas.",
-              "Ein Tag ohne Traurigkeit: Tiagos bester Freund wechselt die Schule und zieht in eine andere Stadt. Tiago spürt nichts. Niemand merkt, dass ihm etwas fehlt – und er selbst schreibt seinem Freund nie.",
-              "Ein Tag ohne Freude: Amira schießt im Training ihr erstes Tor. Sie spürt nichts. Am nächsten Tag hat sie keine Lust mehr hinzugehen.",
-              "Ein Tag ohne Stolz: Lena hält ein gutes Referat, die Klasse klatscht. Lena spürt nichts. Beim nächsten Mal meldet sie sich gar nicht erst.",
-              "Für alle zum Schluss – ein Tag ohne Ekel: Ben findet in seiner Tasche ein Sandwich von letzter Woche. Es riecht komisch, aber er ekelt sich nicht und beißt hinein."
+              "Ohne Angst: Noah fährt freihändig bei Rot über die Kreuzung, klettert aufs Hallendach und lernt nicht für den Test.",
+              "Ohne Wut: In der Kantine drängelt sich jeden Tag jemand vor Mila, ihr Ladekabel wird ungefragt benutzt – sie sagt nie etwas.",
+              "Ohne Traurigkeit: Tiagos bester Freund wechselt die Schule. Tiago spürt nichts, und niemand merkt, dass ihm etwas fehlt.",
+              "Ohne Freude: Amira schießt im Training ihr erstes Tor und spürt nichts – am nächsten Tag hat sie keine Lust mehr hinzugehen.",
+              "Ohne Stolz: Lena hält ein gutes Referat, die Klasse klatscht. Lena spürt nichts – beim nächsten Mal meldet sie sich gar nicht erst."
             ],
             "tabelle": {
               "spalten": [
-                "Gefühl und seine Botschaft",
-                "Was es uns tun lässt"
+                "Gefühl",
+                "Seine Botschaft"
               ],
               "zeilen": [
                 [
-                  "Angst: Achtung, Gefahr. Pass auf dich auf.",
-                  "vorsichtig sein, ausweichen, sich vorbereiten, Hilfe holen"
+                  "Angst",
+                  "Achtung, Gefahr. Pass auf dich auf."
                 ],
                 [
-                  "Wut: Das ist unfair. Hier ist eine Grenze.",
-                  "sich wehren, Stopp sagen, etwas ändern"
+                  "Wut",
+                  "Das ist unfair. Hier ist eine Grenze."
                 ],
                 [
-                  "Traurigkeit: Mir fehlt etwas. Ich brauche Trost.",
-                  "langsamer werden, Nähe und Trost suchen"
+                  "Traurigkeit",
+                  "Mir fehlt etwas. Ich brauche Trost."
                 ],
                 [
-                  "Freude: Das tut mir gut. Davon will ich mehr.",
-                  "weitermachen, teilen, Neues ausprobieren"
+                  "Freude",
+                  "Das tut mir gut. Davon will ich mehr."
                 ],
                 [
-                  "Stolz, sich stark fühlen: Das kann ich. Trau dich.",
-                  "dranbleiben, sich zeigen, für sich einstehen"
+                  "Stolz",
+                  "Das kann ich. Trau dich."
                 ],
                 [
-                  "Ruhe: Gerade ist alles in Ordnung. Du bist sicher.",
-                  "ausruhen, auftanken, genießen"
+                  "Ruhe",
+                  "Gerade ist alles in Ordnung. Du bist sicher."
                 ],
                 [
-                  "Ekel: Das ist schlecht für mich. Abstand.",
-                  "wegschieben, sich abwenden"
+                  "Ekel",
+                  "Das ist schlecht für mich. Abstand."
                 ]
               ]
             },
-            "tipp": "Die Situationen dürfen lustig werden – Ben, der ohne Ekel das Sandwich von letzter Woche isst, bleibt im Gedächtnis. Sagt jemand „Bei uns zeigt man keine Angst“, das achten: Wie man Gefühle zeigt, ist in jeder Familie anders – fühlen tun alle. Das Plakat bleibt hängen; es wird in den nächsten drei Stunden gebraucht.",
-            "wennEsKippt": "Findet jemand, Angst oder Traurigkeit seien „nur was für Schwache“, nicht dagegenhalten, sondern fragen: Wann hat Angst dich schon einmal vor etwas bewahrt? Fast allen fällt etwas ein – auf dem Rad, im Schwimmbad, im Dunkeln. Erzählt jemand von einem eigenen Verlust, nicht vor der Klasse vertiefen; nach der Stunde kurz nachfragen. Sagt jemand bei der Situation ohne Freude „So geht es mir schon lange“, das ernst nehmen: unter vier Augen nachfragen und noch am selben Tag den SePAS einbeziehen."
+            "wennEsKippt": "Kommen alberne oder beleidigende Wörter, nachfragen, welches Gefühl dahintersteckt; Schimpfwörter kommen nicht an die Tafel, in keiner Sprache. Sagt jemand „So geht es mir schon lange“, ernst nehmen: unter vier Augen nachfragen und noch am selben Tag den SePAS einbeziehen.",
+            "blatt": "ff7-gefuehle-botschaften"
           },
           {
             "titel": "Bewegungspause: Stein, Papier, Schere mit Fanclub",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen auf. Zu zweit Stein, Papier, Schere spielen; wer verliert, wird Fan der anderen Person, stellt sich hinter sie und feuert sie beim nächsten Spiel mit ihrem Namen an. Die Fanclubs wachsen, bis im Finale zwei Hälften der Klasse ihre beiden Letzten anfeuern (3 Min.). Danach kurz fragen: Welche Gefühle waren gerade im Raum? Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Alle stehen auf. Zu zweit Stein, Papier, Schere spielen; wer verliert, wird Fan der anderen Person, stellt sich hinter sie und feuert sie beim nächsten Spiel mit ihrem Namen an. Die Fanclubs wachsen bis zum Finale, danach kurz fragen: Welche Gefühle waren gerade im Raum?",
             "sagen": [
               "Welche Gefühle waren in den letzten drei Minuten im Raum – beim Gewinnen, beim Verlieren, als Fan?"
             ],
-            "tipp": "Die Antworten kommen schnell: Freude, Enttäuschung, Ärger, Stolz, Begeisterung. Sie zeigen nebenbei, wie schnell Gefühle kommen und wieder gehen.",
-            "wennEsKippt": "Lacht jemand Ausgeschiedene aus oder wird es zu wild, kurz anhalten: Fans feuern ihre Person an, niemand buht die anderen aus. Wer nicht spielen möchte, ist von Anfang an Fan oder zählt die Runden."
+            "tipp": "Die Antworten kommen schnell – Freude, Enttäuschung, Ärger, Stolz – und zeigen nebenbei, wie schnell Gefühle kommen und gehen. Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung."
           },
           {
-            "titel": "Botschaften auf dem Blatt",
-            "dauer": 10,
+            "titel": "Gefühls-Detektive und Klassenrat",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Nach dem Spiel mit dem Ruhezeichen beginnen: Hand heben, bis alle still sind; dann das Botschaften-Plakat umdrehen. Die Lehrkraft liest die sechs Botschaften auf dem Blatt einmal langsam vor. Allein (3 Min.): Aufgabe 2 – jedes Gefühl mit seiner Botschaft verbinden; danach mit der Person daneben vergleichen, das Plakat wieder umdrehen und gemeinsam prüfen (2 Min.). Dann allein und still (4 Min.): Aufgabe 3 – Welches Gefühl magst du am wenigsten, und wofür ist es trotzdem gut? Stichworte reichen. Die Lehrkraft geht herum und hilft mit Fragen, ohne zu lesen, was jemand schreibt. Wer mag, liest seinen zweiten Satz vor; zwei Stimmen reichen (1 Min.).",
-            "sagen": [
-              "Welches Gefühl wärt ihr am liebsten los – und was würde euch dann fehlen?",
-              "Ihr schreibt nur für euch. Vorgelesen wird nur, wenn ihr das wollt."
-            ],
-            "tipp": "Den Merksatz vom Blatt vorlesen und an die Tafel schreiben: Kein Gefühl ist falsch – was ich dann tue, entscheide ich.",
-            "wennEsKippt": "Schreibt jemand gar nichts, fragen, welches Gefühl im Unterricht am meisten nervt – oft kommt dann Langeweile oder Wut, und die Botschaft liegt nah: Mir fehlt etwas Neues, hier stimmt etwas nicht. Wer nichts über sich schreiben will, schreibt über eine Figur aus einer Serie.",
-            "blatt": "ff7-gefuehle-botschaften"
-          },
-          {
-            "titel": "Pantomime und Gefühls-Detektive",
-            "dauer": 15,
-            "phase": "aktiv",
-            "text": "Pantomime (8 Min.): Jede Tischgruppe bekommt ihren Umschlag; die Karten von Seite 1 liegen verdeckt als Stapel. Reihum zieht eine Person eine Karte und zeigt das Gefühl ohne Worte – zuerst zehn Sekunden als Statue, dann kurz in Bewegung; die anderen raten und sagen, woran sie es erkannt haben. Nach fünf Minuten kommen die Karten von Seite 2 dazu. Gefühls-Detektive (7 Min.): Die Karten liegen offen auf dem Tisch. Die Lehrkraft liest eine Situation vor, die Gruppe einigt sich flüsternd in 20 Sekunden; auf drei hält eine Person die passende Karte hoch, eine andere nennt die Botschaft des Gefühls und was die Person jetzt bräuchte (vier Situationen). Zum Schluss die Kette an die Tafel schreiben – Gefühl, Botschaft, Was brauche ich? – und auf das Glas der Bedürfnisse zeigen: Oft ist ein Tank leer.",
+            "text": "Erst Pantomime in den Tischgruppen: Gefühlskarten ohne Worte zeigen und raten (8 Min.). Dann die Gefühls-Detektive: zu einer Situation die passende Karte, die Botschaft und das finden, was die Person braucht; zwei Fälle schreibt jede Person in Aufgabe 3 auf (17 Min.). Zum Schluss tagt der Klassenrat zehn Minuten nach dem Ablauf aus Stunde 5.",
             "sagen": [
               "Erst als Statue, dann in Bewegung – und kein einziges Wort.",
-              "Woran habt ihr es erkannt: am Gesicht, an den Schultern, an den Händen?",
               "Was sagt das Gefühl – und was bräuchte die Person jetzt?"
             ],
             "punkte": [
-              "Elias hat letzte Nacht nur vier Stunden geschlafen. In der ersten Stunde regt ihn jede Kleinigkeit auf.",
-              "Zoés beste Freundin hat seit zwei Wochen nur noch Zeit für ihre neue Clique.",
-              "Liam hat für seine Präsentation lange geübt. Am Ende klatscht die ganze Klasse.",
-              "In Jangs Gruppe entscheiden immer die anderen, was gemacht wird. Er darf nie mitreden."
+              "Pantomime (8 Min.): ein Kartensatz je Tischgruppe, Seite 1 verdeckt; reihum eine Karte ziehen, zehn Sekunden als Statue, dann in Bewegung; die anderen raten und sagen, woran sie es erkannt haben; nach fünf Minuten kommt Seite 2 dazu.",
+              "Detektive (10 Min.): Karten offen; eine Situation vorlesen, die Tischgruppe einigt sich flüsternd in 20 Sekunden, auf drei hebt eine Person die Karte hoch, eine andere nennt Botschaft und Bedürfnis.",
+              "Situationen: Elias hat nur vier Stunden geschlafen, alles nervt ihn · Zoés beste Freundin hat nur noch Zeit für ihre neue Clique · Liam hat lange geübt, am Ende klatscht die Klasse · In Jangs Gruppe entscheiden immer die anderen.",
+              "Aufgabe 3 (7 Min.): zwei Fälle aufschreiben – Situation, Gefühl mit Botschaft, was die Person braucht; an der Tafel die Kette: Gefühl – Botschaft – Was brauche ich?",
+              "Klassenrat (10 Min.): die Rollen aus Stunde 5 nehmen ihre Karten; Eröffnung, Lob und Danke, Rückblick auf den letzten Beschluss (3 Min.); ein Anliegen aus dem Briefkasten, Vorschläge, Abstimmung mit geschlossenen Augen (5 Min.); Beschluss vorlesen, Rollen für die nächste Sitzung verteilen (2 Min.)."
             ],
-            "tipp": "Die erste Karte selbst spielen und ruhig übertreiben; das senkt die Hemmschwelle. Wer nicht allein spielen möchte, spielt zu zweit; eine Karte darf man zurücklegen. Gehen die Karten bei einer Situation weit auseinander, ist das ein Gewinn: Dieselbe Situation löst verschiedene Gefühle aus – darauf kommt Einheit 12 zurück.",
-            "wennEsKippt": "Lacht jemand über eine Darstellung, kurz anhalten: Wir lachen miteinander, nicht übereinander. Wer nicht spielen will, übernimmt die Spielleitung – Karten mischen, Zeit nehmen. Rufen bei den Detektiven alle durcheinander, streng beim Ablauf bleiben: flüstern, warten, auf drei zeigen. Fällt ein Name aus der Klasse, sofort stoppen: Wir reden über erfundene Leute; erkennt sich jemand wieder, nach der Stunde kurz nachfragen.",
-            "blatt": "ff7-gefuehlskarten"
-          },
-          {
-            "titel": "Klassenrat: Rückblick und ein Anliegen",
-            "dauer": 10,
-            "phase": "uebung",
-            "text": "Von Jang überleiten: Im Klassenrat redet jede Person mit. Die vier Rollen aus Stunde 5 nehmen ihre Karten, die Lehrkraft setzt sich neben den Vorsitz; die Sitzung folgt dem Ablauf aus Stunde 5 (Liste). Eröffnung, Lob und Danke mit drei Stimmen, dann der Rückblick: Das Protokoll liest den letzten Beschluss vor, die Klasse zeigt mit dem Daumen, ob er funktioniert hat (3 Min.). Danach liest der Vorsitz ein Anliegen aus dem Briefkasten vor, das die Lehrkraft vorher ausgewählt hat; die Tischgruppen beraten eine Minute, Vorschläge kommen an die Tafel, abgestimmt wird mit geschlossenen Augen (5 Min.). Zum Schluss liest das Protokoll den Beschluss vor, und die Rollen für die nächste Sitzung in Stunde 19 werden verteilt (2 Min.).",
-            "sagen": [
-              "Der Klassenrat hat heute zehn Minuten. Wer den Vorsitz hat, liest einfach von der Karte ab."
-            ],
-            "punkte": [
-              "Eröffnung: Der Vorsitz begrüßt und nennt die Rollen.",
-              "Lob und Danke: Wer mag, sagt, was gut lief – drei Stimmen.",
-              "Rückblick: Was ist aus dem letzten Beschluss geworden?",
-              "Ein Anliegen: vorlesen, Vorschläge sammeln, abstimmen, festhalten.",
-              "Abschluss: Das Protokoll liest den Beschluss vor; die Rollen für das nächste Mal werden verteilt."
-            ],
-            "tipp": "Ein Anliegen reicht für zehn Minuten; weitere Zettel warten auf die nächste Sitzung. Was nach einer bestimmten Person klingt oder Sorge macht, kommt nicht in die Sitzung, sondern wird unter vier Augen und mit dem SePAS geklärt (Einheit 5).",
-            "wennEsKippt": "Wird das Anliegen zum Streit über eine Person, sofort stoppen: Der Klassenrat entscheidet nicht über Personen – das klären wir nach der Stunde. Reicht die Zeit nicht, wird nicht abgestimmt; das Anliegen kommt als Erstes in die nächste Sitzung. Liegt kein Anliegen im Briefkasten, stimmt die Klasse über eine der vorbereiteten Fragen aus Stunde 5 ab."
+            "wennEsKippt": "Lacht jemand über eine Darstellung, kurz anhalten: Wir lachen miteinander, nicht übereinander. Wird das Anliegen im Klassenrat zum Streit über eine Person, sofort stoppen: Der Klassenrat entscheidet nicht über Personen, das klären wir nach der Stunde.",
+            "blatt": "ff7-gefuehle-botschaften"
           },
           {
             "titel": "Skill: Farbsuche",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Ankündigen: ein Skill für Momente, in denen ein Gefühl sehr laut ist und der Kopf eine kurze Pause braucht, bevor man etwas tut. Alle sitzen bequem, die Handys bleiben weg. Langsam anleiten und selbst mitmachen: eine Farbe eine Minute lang still suchen und zählen, dann eine zweite Farbe, zum Schluss ausatmen (Liste). Danach zwei, drei Rückmeldungen: Wie viele Dinge habt ihr gefunden? Was war in der Zeit mit euren Gedanken? Wann könnte das helfen – im Bus, vor einem Test, wenn jemand nervt? Zum Schluss erklären: Wer bewusst hinschaut, holt die Aufmerksamkeit ins Hier und Jetzt; das Gefühl wird oft leiser, und man hat Zeit, seine Botschaft zu lesen. Auf dem Blatt steht der Skill im Kasten „Die Farbsuche“.",
+            "text": "Der Skill hilft, wenn ein Gefühl sehr laut ist und der Kopf eine kurze Pause braucht – im Bus, vor einem Test, wenn jemand nervt. Eine Farbe eine Minute lang still suchen und zählen, dann eine zweite, zum Schluss ausatmen (höchstens 5 Minuten). Danach der Abschluss: ein Satz in den Skills-Pass, Mission ansagen, Moment wählen.",
             "sagen": [
-              "Ihr müsst nichts sagen und nichts zeigen. Zählt nur still für euch."
+              "Ihr müsst nichts sagen und nichts zeigen – zählt nur still für euch.",
+              "Wann kommt euer Moment für die Farbsuche – wenn jemand nervt, vor einem Test oder abends im Bett?"
             ],
             "punkte": [
-              "Setz dich bequem hin, beide Füße auf dem Boden.",
-              "Wähl eine Farbe – heute zuerst Rot.",
-              "Such still alles im Raum, was rot ist. Zähl mit, ohne zu zeigen.",
-              "Nach einer Minute: neue Farbe, Blau. Wieder suchen und zählen.",
-              "Atme einmal langsam aus. Was hat sich verändert?"
+              "Eine Farbe wählen – heute zuerst Rot.",
+              "Eine Minute lang still alles suchen, was rot ist, und mitzählen, ohne zu zeigen.",
+              "Dann eine zweite Farbe, Blau; zum Schluss einmal langsam ausatmen: Was hat sich verändert?",
+              "Skills-Pass (4 Min.): ein Satz zur Frage „Welches Gefühl verstehe ich heute besser?“, Stempel.",
+              "Mission und Moment (4 Min.): ansagen; auf drei zeigen alle ihren Moment (ein Finger jemand nervt, zwei Test, drei abends im Bett, Faust ein eigener) und schreiben ihn in „Mein Moment: Wenn …“; Ausblick (1 Min.)."
             ],
-            "tipp": "Die Farbe zeigen, nicht nur nennen – so machen auch Neue in der Klasse sofort mit. Die Farbsuche geht überall unauffällig: im Bus, im Gang, im Wartezimmer; jede Farbe funktioniert.",
-            "wennEsKippt": "Rufen einige ihre Zahlen in den Raum, gelassen die nächste Farbe ansagen: Diesmal zählt jede Person nur für sich. Wird es zu unruhig, nach einer Farbe aufhören und den Skill in der nächsten Stunde wiederholen."
-          },
-          {
-            "titel": "Skills-Pass, Blitzlicht und Moment wählen",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Welches Gefühl verstehe ich heute besser, und was will es mir sagen? Wer mag, schreibt stattdessen seinen Satz aus Aufgabe 3 hinein; danach gibt es den Stempel. Blitzlicht (1 Min.): Jede Person nennt ein Wort zu heute, schnell reihum und ohne Kommentar; „weiter“ ist erlaubt. Mission und Moment wählen (2 Min.): Die Wochen-Mission ansagen – die Farbsuche, wenn ein Gefühl laut wird. Dann wählt jede Person ihren Moment: Auf drei zeigen alle einen Finger für ‚wenn mich jemand nervt‘, zwei für ‚vor einem Test‘, drei für ‚abends im Bett‘, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ bei den Wochen-Missionen im Heft. Aufgabe 4 auf dem Blatt ist der Platz für das, was danach passiert. Mit dem Ausblick auf die nächste Stunde schließen.",
-            "sagen": [
-              "Ein Wort zu heute. Nur ein Wort, ohne Erklärung.",
-              "Wann kommt dein Moment für die Farbsuche? Ein Finger: jemand nervt mich. Zwei: vor einem Test. Drei: abends im Bett. Faust: ein eigener Moment."
-            ],
-            "tipp": "Sortierbögen und Botschaften-Plakat aufheben: In den nächsten drei Stunden hängen sie neben dem Gefühlsrad, und in Einheit 12 schaut die Klasse auf sie zurück. Beim Moment zählt, dass er im Heft steht – wer unschlüssig ist, nimmt den der Nachbarin."
+            "wennEsKippt": "Rufen einige ihre Zahlen laut, gelassen die nächste Farbe ansagen: Diesmal zählt jede Person nur für sich. Wird es zu unruhig, nach einer Farbe aufhören und den Skill in der nächsten Stunde wiederholen."
           }
         ],
-        "bruecke": "Nächste Woche schaut ihr in den Kopf von Jana, die gerade umgezogen ist: Freude, Kummer, Angst, Wut und Ekel streiten sich dort um das Steuer – und ihr findet heraus, warum auch Kummer gebraucht wird.",
-        "mission": "Mach die Farbsuche einmal in deinem Moment – wenn dich jemand nervt, vor einem Test oder abends im Bett. Frag dich danach: Was wollte mir das Gefühl sagen?",
-        "hintergrund": "Grundlage sind die Grundgefühle und das Gefühlsrad: Ekman (1992) beschreibt Grundgefühle, deren Gesichtsausdruck in vielen Kulturen erkannt wird – darunter Ekel und Überraschung, die im Gefühlsrad (nach Willcox, 1982) fehlen. Jedes Grundgefühl hat eine Aufgabe (Plutchik, 2001): Angst schützt, Wut räumt Hindernisse weg, Traurigkeit sucht Nähe; die Botschaften sind Faustregeln, keine Befehle. Zwei Befunde tragen die Stunde: Benannten Erwachsene das Gefühl auf einem Gesicht, reagierte die Amygdala, ein Alarmzentrum des Gehirns, schwächer (Lieberman et al., 2007). Und Klassen der 5. und 6. Schulstufe, die ein Jahr lang mit Gefühlswörtern arbeiteten, hatten am Jahresende bessere Noten und galten ihren Lehrkräften als sozial-emotional kompetenter (Brackett et al., 2012). Wer sein Gefühl benennen kann, kann innehalten, bevor er dem ersten Impuls folgt – darauf bauen die nächsten Kapitel auf.",
+        "bruecke": "Nächste Woche schaut ihr in den Kopf von Jana, die gerade umgezogen ist: Fünf Gefühle streiten um das Steuer – und ihr findet heraus, warum auch Kummer gebraucht wird.",
+        "mission": "Mach einmal die Farbsuche. Was wollte dir das Gefühl sagen?",
+        "hintergrund": "Ekman (1992) beschreibt Grundgefühle, deren Gesichtsausdruck in vielen Kulturen erkannt wird; jedes hat eine Aufgabe – Angst schützt, Wut räumt Hindernisse weg, Traurigkeit sucht Nähe. Wenn Erwachsene ein Gefühl benannten, reagierte der Alarmteil des Gehirns schwächer (Lieberman et al., 2007). Klassen, die ein Jahr mit Gefühlswörtern arbeiteten, hatten bessere Noten und mehr soziale Kompetenz (Brackett et al., 2012). Wer sein Gefühl benennt, kann innehalten, bevor er dem ersten Impuls folgt.",
         "quellen": [
           "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
           "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428.",
           "Brackett, M. A., Rivers, S. E., Reyes, M. R. & Salovey, P. (2012). Enhancing academic performance and social and emotional competence with the RULER feeling words curriculum. Learning and Individual Differences, 22(2), 218–224."
         ],
-        "achtung": "Gefühle sind ein persönliches Thema: Niemand muss erzählen, wann er ein Gefühl zuletzt hatte; Aufgabe 3 und 4 bleiben privat, „weiter“ ist immer erlaubt. Die Situationen ohne Traurigkeit oder Freude können an Verluste oder eine lange traurige Zeit erinnern. Wird ein Beitrag zu persönlich, freundlich stoppen, danken und ein Gespräch nach der Stunde anbieten. Sagt jemand, er spüre seit Langem keine Freude mehr, oder wählt oft Wörter wie hilflos oder einsam, unter vier Augen nachfragen und den SePAS einbeziehen. Bei Hinweisen auf Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken noch am selben Tag den SePAS informieren und nach dem Schutzkonzept handeln.",
+        "achtung": "Gefühle sind ein persönliches Thema: Niemand muss erzählen, wann er ein Gefühl zuletzt hatte, „weiter“ ist immer erlaubt, und gespielt werden nur erfundene Personen. Die Situationen ohne Traurigkeit oder Freude können an einen Verlust erinnern; wird ein Beitrag zu persönlich, freundlich stoppen, danken und ein Gespräch nach der Stunde anbieten. Sagt jemand, er spüre seit Langem keine Freude, oder wählt oft Wörter wie hilflos oder einsam, unter vier Augen nachfragen, den SePAS einbeziehen und bei Hinweisen auf Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken noch am selben Tag nach dem Schutzkonzept handeln.",
         "differenzierung": {
-          "leichter": "Für Jugendliche, die mühsam lesen oder die Sprache noch lernen: Wörter in der eigenen Sprache erlauben und mit einer Gefühlskarte zeigen lassen; die sechs Botschaften vorab übersetzen (etwa mit einer Übersetzungs-App) und neben das Blatt legen; Aufgabe 2 mit den Karten legen; in Aufgabe 3 reicht ein Stichwort. Botschaften-Plakat und Wortspeicher bleiben sichtbar; ein Tandem mit einer Person derselben Sprache hilft.",
+          "leichter": "Für Jugendliche, die mühsam lesen oder die Sprache noch lernen: Wörter in der eigenen Sprache erlauben und mit einer Gefühlskarte zeigen lassen; die sechs Botschaften vorab übersetzen und neben das Blatt legen. In Aufgabe 2 reicht ein Stichwort, und ein Tandem mit einer Person derselben Sprache hilft.",
           "schwerer": "Überlegen, wann ein Gefühl übers Ziel hinausschießt – etwa große Angst vor einem harmlosen Referat – und was dann hilft. Oder für die Wörter vom Rand (Neid, Scham, Überraschung) eine eigene Botschaft formulieren und auf dem Plakat ergänzen."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit dem genaueren Wort (5 Min.), Gefühlswörter sammeln und sortieren (10 Min.), Ein Tag ohne … mit dem Botschaften-Plakat (15 Min.), Aufgaben 2 und 3 auf dem Blatt (8 Min.), Farbsuche (5 Min.), Skills-Pass, Blitzlicht und Mission mit Moment (7 Min.). Pantomime, Gefühls-Detektive und Klassenrat entfallen; die Pantomime passt als Bewegungspause in die nächste Stunde, die Sitzung wird nachgeholt, wo es passt."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit dem genaueren Wort (5 Min.), Gefühlswörter sammeln (10 Min.), Ein Tag ohne … mit dem Botschaften-Plakat und Aufgabe 1 (15 Min.), Farbsuche (5 Min.), Skills-Pass, Mission und Moment (7 Min.), Aufgabe 2 still (8 Min.). Pantomime, Detektive und Klassenrat entfallen; der Klassenrat wird nachgeholt, wo es passt."
       },
       "fr": {
         "titel": "Les émotions – à quoi servent-elles ?",
         "kurz": "La classe rassemble des mots pour les émotions, les range sous les six émotions de base de la roue et découvre le message de chacune – y compris des émotions désagréables.",
         "ziele": [
-          "classent des mots d’émotions sous les six émotions de base de la roue",
+          "rangent des mots d’émotions sous les six émotions de base de la roue",
           "expliquent le message de chaque émotion, même désagréable",
-          "reconnaissent des émotions au visage et à la posture et les miment",
-          "essaient la chasse aux couleurs comme skill et choisissent un moment pour l’exercer"
+          "reconnaissent des émotions au visage et à la posture et les miment"
         ],
         "material": [
           "Roue des émotions, 20 gommettes",
-          "Cinq feuilles de tri (A3), feutres",
-          "Cartes des émotions, cinq jeux",
+          "Cinq feuilles de tri (A3), gros feutres",
+          "Cartes des émotions (modèle), cinq jeux",
           "Affiche (A1) pour les messages",
-          "Craies ou feutres de six couleurs",
-          "Boîte, cartes de rôle, cahier du conseil",
+          "Boîte aux lettres, cartes de rôle, cahier du conseil",
           "Cahier de l’élève, tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
           "Partager cinq feuilles A3 en six cases, une par émotion de base de la roue : joyeux, fort, en colère, anxieux, triste, calme.",
-          "Cartes des émotions (pages 1 et 2) : cinq copies sur papier épais, coupées au massicot, un jeu par îlot.",
-          "Préparer l’affiche des messages : deux colonnes comme à l’étape 4, à gauche les sept émotions.",
-          "Vérifier les prénoms des personnages et les changer si besoin ; choisir dans la boîte aux lettres un sujet pour l’étape 8."
+          "Photocopier les cartes des émotions (pages 1 et 2) cinq fois sur papier épais et les découper : un jeu par îlot, dans une enveloppe. Préparer l’affiche des messages en deux colonnes.",
+          "Vérifier les prénoms des personnages et les changer si besoin ; choisir dans la boîte aux lettres un sujet pour le conseil."
         ],
         "ablauf": [
           {
@@ -342,17 +255,12 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Retour sur la séance et ouverture du chapitre"
+            "titel": "Retour, mission et nouveau chapitre"
           },
           {
-            "min": "15–30",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Rassembler et ranger les mots des émotions"
-          },
-          {
-            "min": "30–45",
-            "phase": "uebung",
-            "titel": "Une journée sans peur, sans colère, sans tristesse…"
+            "titel": "Mots d’émotions et leurs messages"
           },
           {
             "min": "45–50",
@@ -360,29 +268,14 @@
             "titel": "Pause active : pierre-feuille-ciseaux avec fan-club"
           },
           {
-            "min": "50–60",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Les messages sur la fiche"
+            "titel": "Détectives des émotions et conseil"
           },
           {
-            "min": "60–75",
-            "phase": "aktiv",
-            "titel": "Mime et détectives des émotions"
-          },
-          {
-            "min": "75–85",
-            "phase": "uebung",
-            "titel": "Conseil de coopération : retour et un sujet"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : la chasse aux couleurs"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, tour éclair et choix du moment"
           }
         ],
         "schritte": [
@@ -390,201 +283,140 @@
             "titel": "Tour d’humeur : le mot plus précis",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle aujourd’hui sa gommette non pas au centre de la roue, mais à l’extérieur, sur un mot plus précis – irrité plutôt qu’en colère, nerveux plutôt qu’anxieux (3 min). Qui ne trouve pas de mot qui convient en prend un au centre. Une fois tout le monde assis, l’enseignant·e commence par une phrase sur son propre mot ; puis trois ou quatre volontaires disent leur mot et, s’ils le souhaitent, une phrase. Pour finir, demander : qu’est-ce qu’un mot précis dit de plus que « bien » ou « mal » ? (3 min)",
+            "text": "En entrant, chaque jeune colle aujourd’hui sa gommette non pas au centre de la roue, mais à l’extérieur, sur un mot plus précis – irrité plutôt qu’en colère, nerveux plutôt qu’anxieux. L’enseignant·e commence par une phrase sur son propre mot, trois ou quatre volontaires suivent. Qui ne trouve pas de mot en prend un au centre.",
             "sagen": [
               "Aujourd’hui, pas seulement “joyeux” ou “triste” : cherchez à l’extérieur un mot qui dit les choses plus précisément.",
-              "Moi, j’ai pris “irrité” : le bus est resté dix minutes dans les bouchons, et j’ai encore la tête là-bas."
+              "J’ai pris “irrité” : le bus est resté dix minutes dans les bouchons, et j’ai encore la tête là-bas."
             ],
-            "tipp": "Un mot précis, c’est déjà un premier pas pour s’occuper d’une émotion : qui dit « irrité » plutôt que « mal » sait mieux ce qui lui manque. Qui ne sait pas encore lire les mots extérieurs colle sa gommette dans la case du centre qui convient ; sur demande, l’enseignant·e lit les quatre mots voisins.",
-            "wennEsKippt": "Si tout le monde se bouscule devant l’affiche, faire passer îlot par îlot ; qui ne veut pas coller de gommette s’abstient – c’est une proposition. Si quelqu’un dit « aucune idée », demander quel mot ne convient surtout pas ; en éliminant, on choisit plus facilement. Si des gommettes se trouvent sur des mots très lourds comme impuissant ou seul, ne pas poser de questions devant la classe – les gommettes sont anonymes –, mais proposer à tous un moment d’échange : si vous avez une journée difficile, je reste encore un peu après le cours."
+            "wennEsKippt": "Si tout le monde se bouscule devant l’affiche, faire coller îlot par îlot ; qui ne veut pas coller de gommette s’abstient. Si des gommettes se trouvent sur des mots très lourds comme impuissant ou seul, ne pas poser de questions devant la classe – elles sont anonymes –, mais proposer à tous un échange après le cours."
           },
           {
-            "titel": "Retour sur la séance et ouverture du chapitre",
+            "titel": "Retour, mission et nouveau chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission de la semaine, demander : ton moment est-il venu – et as-tu utilisé ta force ? Pouce en haut, au milieu, en bas ; une voix raconte ce qui s’est passé ; personne n’est obligé d’avoir vécu son moment. Puis ouvrir le nouveau chapitre et écrire la question clé au tableau : qu’est-ce que je ressens – et à quoi ça sert ? Faire le lien avec le bocal des besoins : quand un réservoir est vide, une émotion se manifeste souvent. Pour finir, annoncer les quatre séances du chapitre : aujourd’hui les émotions et leurs messages, puis les émotions aux commandes, les émotions dans le corps et les émotions mélangées.",
+            "text": "Pour la mission de la semaine, demander : ton moment est-il venu – et as-tu utilisé ta force ? Pouce en haut, au milieu ou en bas, une voix raconte ; personne n’est obligé d’avoir vécu son moment. Puis ouvrir le nouveau chapitre et écrire la question clé au tableau : qu’est-ce que je ressens – et à quoi ça sert ?",
             "sagen": [
-              "Quand on a trop peu dormi, on s’énerve plus vite. Quand on se sent mis à l’écart, on devient triste ou en colère. L’émotion montre : ici, un réservoir est vide.",
-              "Ces quatre prochaines semaines, il s’agit de comprendre les émotions – pas de s’en débarrasser."
+              "Quand un réservoir est vide, une émotion se manifeste souvent – ces prochaines semaines, il s’agit de comprendre les émotions, pas de s’en débarrasser."
             ],
             "tipp": "Laisser le bocal des besoins et l’arbre des forces bien en vue : ils montrent que le nouveau chapitre fait suite au précédent."
           },
           {
-            "titel": "Rassembler et ranger les mots des émotions",
-            "dauer": 15,
+            "titel": "Mots d’émotions et leurs messages",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Chaque îlot reçoit une feuille de tri avec les six émotions de base et un gros feutre ; une personne écrit, les autres soufflent des mots à voix basse. En quatre minutes, les groupes écrivent le plus de mots d’émotions possible directement dans la bonne case – aussi des mots du langage des jeunes et de toutes les langues de la classe. Ce qui va dans deux cases se met sur le trait entre les deux, ce qui ne va nulle part, dans la marge (4 min). Puis chaque groupe compte quelle case est la plus remplie chez lui et donne son mot préféré ainsi qu’un mot de la marge ; il explique brièvement les mots d’une autre langue. L’enseignant·e écrit les mots au tableau dans la couleur de la case (6 min). Parler brièvement des mots de la marge : où vont le dégoût, la surprise, la honte ? (2 min) Pour finir, chacun écrit dans l’exercice 1, pour chaque émotion de base, un mot qu’il utilise lui-même – tiré de la feuille de son groupe ou de sa langue (3 min).",
+            "text": "D’abord, les îlots rassemblent des mots d’émotions sur des feuilles de tri et les rangent sous les six émotions de base (8 min). Puis chaque îlot reçoit une situation « Une journée sans… » : qu’est-ce qui tourne mal, et qu’aurait dit l’émotion ? L’enseignant·e note les messages sur l’affiche et ajoute le calme et le dégoût (14 min) ; pour finir, exercices 1 et 2 sur la fiche (8 min).",
             "sagen": [
               "Tout compte : les mots des jeunes et ceux de vos autres langues aussi.",
-              "Sous quelle émotion de base va “agacé” ? Et où met-on “soulagé” ?"
-            ],
-            "tipp": "En général, les cases « en colère » et « triste » sont les plus remplies : la plupart des langues ont plus de mots pour les émotions désagréables. Les rôles aident : qui a du mal à rester assis écrit ; qui parle peu français apporte des mots de sa langue, et le groupe cherche ensemble la bonne case.",
-            "wennEsKippt": "Si des mots pour rire ou blessants arrivent, demander calmement quelle émotion se cache derrière : derrière « cringe », il y a souvent la gêne, derrière une insulte, souvent la colère. Les insultes ne vont pas au tableau – dans aucune langue. Si un groupe ne trouve plus rien, il reçoit les cartes des émotions de l’enveloppe comme boîte à idées.",
-            "blatt": "ff7-gefuehle-botschaften"
-          },
-          {
-            "titel": "Une journée sans peur, sans colère, sans tristesse…",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "D’abord, demander à la classe : est-ce qu’on serait mieux sans émotions ? Écouter deux ou trois avis, sans trancher (2 min). Puis lire les cinq premières situations l’une après l’autre et attribuer chacune tout de suite à un îlot : depuis ce matin, une personne a perdu une émotion. Écrire aussitôt au tableau le prénom et l’émotion de chaque groupe (groupe 1 : Noah sans peur…), pour que personne n’oublie sa situation (2 min). Le groupe réfléchit (3 min) : qu’est-ce qui tourne mal ? Qu’est-ce que l’émotion aurait dit si elle avait été là ? Dans chaque groupe, un jeune donne la réponse en deux phrases ; l’enseignant·e note le message sur l’affiche et complète avec la classe ce que l’émotion nous pousse à faire (6 min). Pour finir, lire la situation sur le dégoût ; la classe remplit ensemble les dernières lignes, celle du calme aussi (2 min).",
-            "sagen": [
-              "Imaginez que vous n’ayez plus jamais peur. Ça a l’air bien – non ?",
-              "Qu’est-ce que l’émotion aurait voulu dire à la personne ? Une phrase suffit.",
-              "Il y a des émotions agréables et désagréables. Il n’y a pas de fausses émotions."
+              "Une personne a perdu une émotion ce matin – qu’est-ce qui tourne mal, et qu’aurait dit cette émotion ?"
             ],
             "punkte": [
-              "Une journée sans peur : depuis ce matin, Noah n’a plus peur de rien. Il grille le feu rouge à vélo, sans les mains, grimpe sur le toit du gymnase et ne révise pas pour le devoir en classe de demain.",
-              "Une journée sans colère : à la cantine, quelqu’un passe tous les jours devant Mila, et on utilise son chargeur sans lui demander. Mila ne ressent aucune colère – et ne dit jamais rien.",
-              "Une journée sans tristesse : le meilleur ami de Tiago change d’école et déménage dans une autre ville. Tiago ne ressent rien. Personne ne remarque qu’il lui manque quelque chose – et lui-même n’écrit jamais à son ami.",
-              "Une journée sans joie : Amira marque son premier but à l’entraînement. Elle ne ressent rien. Le lendemain, elle n’a plus envie d’y aller.",
-              "Une journée sans fierté : Lena fait un bon exposé, la classe applaudit. Lena ne ressent rien. La fois suivante, elle ne lève même plus la main.",
-              "Pour tout le monde à la fin – une journée sans dégoût : Ben trouve dans son sac un sandwich de la semaine dernière. Il a une drôle d’odeur, mais Ben n’est pas dégoûté et croque dedans."
+              "Sans peur : Noah grille le feu rouge à vélo, grimpe sur le toit du gymnase et ne révise pas pour le devoir de demain.",
+              "Sans colère : à la cantine, quelqu’un passe tous les jours devant Mila, on utilise son chargeur sans demander – elle ne dit jamais rien.",
+              "Sans tristesse : le meilleur ami de Tiago change d’école. Tiago ne ressent rien, et personne ne remarque qu’il lui manque quelque chose.",
+              "Sans joie : Amira marque son premier but à l’entraînement et ne ressent rien – le lendemain, elle n’a plus envie d’y aller.",
+              "Sans fierté : Lena fait un bon exposé, la classe applaudit. Lena ne ressent rien – la fois suivante, elle ne lève même plus la main."
             ],
             "tabelle": {
               "spalten": [
-                "L’émotion et son message",
-                "Ce qu’elle nous pousse à faire"
+                "Émotion",
+                "Son message"
               ],
               "zeilen": [
                 [
-                  "La peur : attention, danger. Fais attention à toi.",
-                  "être prudent, éviter, se préparer, chercher de l’aide"
+                  "La peur",
+                  "Attention, danger. Fais attention à toi."
                 ],
                 [
-                  "La colère : ce n’est pas juste. Ici, il y a une limite.",
-                  "se défendre, dire stop, changer quelque chose"
+                  "La colère",
+                  "Ce n’est pas juste. Ici, il y a une limite."
                 ],
                 [
-                  "La tristesse : quelque chose me manque. J’ai besoin de réconfort.",
-                  "ralentir, chercher de la proximité et du réconfort"
+                  "La tristesse",
+                  "Quelque chose me manque. J’ai besoin de réconfort."
                 ],
                 [
-                  "La joie : ça me fait du bien. J’en veux encore.",
-                  "continuer, partager, essayer du nouveau"
+                  "La joie",
+                  "Ça me fait du bien. J’en veux encore."
                 ],
                 [
-                  "La fierté, se sentir fort : j’en suis capable. Lance-toi.",
-                  "persévérer, se montrer, défendre sa place"
+                  "La fierté",
+                  "J’en suis capable. Lance-toi."
                 ],
                 [
-                  "Le calme : tout va bien en ce moment. Tu es en sécurité.",
-                  "se reposer, recharger ses batteries, profiter"
+                  "Le calme",
+                  "Tout va bien en ce moment. Je suis en sécurité."
                 ],
                 [
-                  "Le dégoût : c’est mauvais pour moi. Distance.",
-                  "repousser, se détourner"
+                  "Le dégoût",
+                  "C’est mauvais pour moi. Distance."
                 ]
               ]
             },
-            "tipp": "Les situations ont le droit d’être drôles – Ben qui mange sans dégoût le sandwich de la semaine dernière, ça reste en mémoire. Si quelqu’un dit « Chez nous, on ne montre pas sa peur », le respecter : la façon de montrer ses émotions varie d’une famille à l’autre – mais tout le monde en ressent. L’affiche reste accrochée ; elle resservira pendant les trois prochaines séances.",
-            "wennEsKippt": "Si quelqu’un trouve que la peur ou la tristesse, « c’est pour les faibles », ne pas le contredire, mais demander : quand est-ce que la peur t’a déjà protégé de quelque chose ? Presque tout le monde trouve un exemple – à vélo, à la piscine, dans le noir. Si un jeune parle d’une perte personnelle, ne pas approfondir devant la classe ; lui demander brièvement après le cours. Si un jeune dit, pour la journée sans joie, « C’est comme ça pour moi depuis longtemps », le prendre au sérieux : lui en parler en tête-à-tête et impliquer le SePAS le jour même."
+            "wennEsKippt": "Si des mots pour rire ou blessants arrivent, demander quelle émotion se cache derrière ; les insultes ne vont pas au tableau, dans aucune langue. Si un jeune dit « C’est comme ça pour moi depuis longtemps », le prendre au sérieux : lui en parler en tête-à-tête et impliquer le SePAS le jour même.",
+            "blatt": "ff7-gefuehle-botschaften"
           },
           {
             "titel": "Pause active : pierre-feuille-ciseaux avec fan-club",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se lève. On joue à deux à pierre-feuille-ciseaux ; qui perd devient fan de l’autre, se place derrière lui et l’encourage au match suivant en scandant son prénom. Les fan-clubs grossissent jusqu’à la finale, où deux moitiés de classe encouragent leurs deux derniers joueurs (3 min). Ensuite, demander brièvement : quelles émotions étaient dans la salle ? Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Tout le monde se lève. À deux, on joue à pierre-feuille-ciseaux ; qui perd devient fan de l’autre, se place derrière lui et l’encourage au match suivant en scandant son prénom. Les fan-clubs grossissent jusqu’à la finale, puis on demande brièvement : quelles émotions étaient dans la salle ?",
             "sagen": [
               "Quelles émotions étaient dans la salle ces trois dernières minutes – en gagnant, en perdant, en tant que fan ?"
             ],
-            "tipp": "Les réponses fusent : joie, déception, agacement, fierté, enthousiasme. Elles montrent au passage à quelle vitesse les émotions arrivent et repartent.",
-            "wennEsKippt": "Si quelqu’un se moque des perdants ou si ça devient trop agité, arrêter un instant : les fans encouragent leur joueur, personne ne hue les autres. Qui ne veut pas jouer est fan dès le début ou compte les manches."
+            "tipp": "Les réponses fusent – joie, déception, agacement, fierté – et montrent au passage à quelle vitesse les émotions arrivent et repartent. Si la grande récréation tombe entre les deux heures, supprimer l’exercice."
           },
           {
-            "titel": "Les messages sur la fiche",
-            "dauer": 10,
+            "titel": "Détectives des émotions et conseil",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Après le jeu, commencer par le signal de calme : lever la main jusqu’à ce que tout le monde se taise ; puis retourner l’affiche des messages. Lire une fois lentement les six messages de la fiche. Seul (3 min) : exercice 2 – relier chaque émotion à son message ; puis comparer avec son voisin, retourner de nouveau l’affiche et vérifier ensemble (2 min). Ensuite, seul et en silence (4 min) : exercice 3 – quelle émotion est-ce que j’aime le moins, et à quoi sert-elle quand même ? Des mots-clés suffisent. Circuler entre les îlots et aider par des questions, sans lire ce que les jeunes écrivent. Qui le souhaite lit sa deuxième phrase ; deux voix suffisent (1 min).",
-            "sagen": [
-              "De quelle émotion aimeriez-vous le plus vous débarrasser – et qu’est-ce qui vous manquerait alors ?",
-              "Vous écrivez seulement pour vous. On ne lit à voix haute que si on le veut."
-            ],
-            "tipp": "Lire la phrase à retenir de la fiche et l’écrire au tableau : aucune émotion n’est fausse – ce que j’en fais, c’est moi qui le décide.",
-            "wennEsKippt": "Si un jeune n’écrit rien, lui demander quelle émotion l’énerve le plus en cours – souvent l’ennui ou la colère, et le message n’est pas loin : il me faut du nouveau, quelque chose ne va pas ici. Qui ne veut rien écrire sur soi écrit sur un personnage de série.",
-            "blatt": "ff7-gefuehle-botschaften"
-          },
-          {
-            "titel": "Mime et détectives des émotions",
-            "dauer": 15,
-            "phase": "aktiv",
-            "text": "Mime (8 min) : chaque îlot reçoit son enveloppe ; les cartes de la page 1 forment une pile, face cachée. À tour de rôle, un jeune tire une carte et montre l’émotion sans un mot – d’abord dix secondes en statue, puis brièvement en mouvement ; les autres devinent et disent à quoi ils l’ont reconnue. Au bout de cinq minutes, on ajoute les cartes de la page 2. Détectives des émotions (7 min) : les cartes sont posées face visible. Lire une situation ; l’îlot se met d’accord à voix basse en 20 secondes. À « trois », un jeune lève la carte qui convient, et un autre dit le message de l’émotion et ce dont la personne aurait besoin maintenant (quatre situations). Pour finir, écrire la chaîne au tableau – émotion, message, de quoi ai-je besoin ? – et montrer le bocal des besoins : souvent, un réservoir est vide.",
+            "text": "D’abord le mime dans les îlots : montrer sans un mot des cartes d’émotions et deviner (8 min). Puis les détectives des émotions : trouver pour une situation la carte, le message et ce dont la personne a besoin, et noter deux cas à l’exercice 3 (17 min). Pour finir, le conseil de coopération se réunit dix minutes, selon le déroulement de la séance 5.",
             "sagen": [
               "D’abord en statue, puis en mouvement – et pas un seul mot.",
-              "À quoi l’avez-vous reconnue : au visage, aux épaules, aux mains ?",
               "Que dit l’émotion – et de quoi la personne aurait-elle besoin maintenant ?"
             ],
             "punkte": [
-              "Elias n’a dormi que quatre heures la nuit dernière. Dès la première heure, la moindre broutille l’énerve.",
-              "Depuis deux semaines, la meilleure amie de Zoé n’a plus de temps que pour sa nouvelle bande.",
-              "Liam s’est longtemps entraîné pour sa présentation. À la fin, toute la classe applaudit.",
-              "Dans le groupe de Jang, ce sont toujours les autres qui décident. Lui n’a jamais son mot à dire."
+              "Mime (8 min) : un jeu de cartes par îlot, page 1 face cachée ; à tour de rôle, tirer une carte, dix secondes en statue, puis en mouvement ; les autres devinent et disent à quoi ils l’ont reconnue ; après cinq minutes, ajouter la page 2.",
+              "Détectives (10 min) : cartes face visible ; lire une situation, l’îlot se met d’accord à voix basse en 20 secondes, à « trois » un jeune lève la carte, un autre dit le message et le besoin.",
+              "Situations : Elias n’a dormi que quatre heures, tout l’énerve · la meilleure amie de Zoé n’a plus de temps que pour sa nouvelle bande · Liam s’est longtemps entraîné, à la fin la classe applaudit · dans le groupe de Jang, ce sont toujours les autres qui décident.",
+              "Exercice 3 (7 min) : noter deux cas – situation, émotion avec son message, ce dont la personne a besoin ; chaîne au tableau : émotion – message – de quoi ai-je besoin ?",
+              "Conseil (10 min) : les rôles de la séance 5 prennent leurs cartes ; ouverture, félicitations et mercis, retour sur la dernière décision (3 min) ; lire un sujet de la boîte, propositions, vote les yeux fermés (5 min) ; lire la décision, répartir les rôles (2 min)."
             ],
-            "tipp": "Jouer soi-même la première carte, en exagérant sans complexe : ça met tout le monde à l’aise. Qui ne veut pas jouer seul joue à deux ; on peut remettre une carte dans la pile. Si les cartes levées divergent beaucoup pour une situation, tant mieux : la même situation provoque des émotions différentes – la séance 12 y revient.",
-            "wennEsKippt": "Si quelqu’un se moque d’un mime, arrêter un instant : on rit ensemble, pas les uns des autres. Qui ne veut pas jouer devient meneur de jeu – il mélange les cartes, prend le temps. Si, chez les détectives, tout le monde crie en même temps, s’en tenir strictement au déroulement : chuchoter, attendre, montrer à trois. Si un prénom de la classe tombe, arrêter tout de suite : on parle de personnages inventés ; si un jeune se reconnaît, lui demander brièvement après le cours.",
-            "blatt": "ff7-gefuehlskarten"
-          },
-          {
-            "titel": "Conseil de coopération : retour et un sujet",
-            "dauer": 10,
-            "phase": "uebung",
-            "text": "Partir de Jang : au conseil, chacun a son mot à dire. Les quatre rôles répartis à la séance 5 prennent leurs cartes ; l’enseignant·e s’assoit à côté de la présidence, et la réunion suit le déroulement de la séance 5 (liste). Ouverture, félicitations et mercis avec trois voix, puis le retour : le secrétaire lit la dernière décision, la classe montre avec le pouce si elle a fonctionné (3 min). Ensuite, la présidence lit un sujet de la boîte aux lettres, choisi avant le cours ; les îlots se concertent une minute, les propositions vont au tableau, on vote les yeux fermés (5 min). Pour finir, le secrétaire lit la décision, et on répartit les rôles de la prochaine réunion, à la séance 19 (2 min).",
-            "sagen": [
-              "Le conseil a dix minutes aujourd’hui. Qui a la présidence lit simplement sa carte."
-            ],
-            "punkte": [
-              "Ouverture : la présidence accueille et présente les rôles.",
-              "Félicitations et mercis : qui veut dit ce qui s’est bien passé – trois voix.",
-              "Retour : qu’est devenue la dernière décision ?",
-              "Un sujet : lire, recueillir des propositions, voter, noter.",
-              "Clôture : le secrétaire lit la décision ; on répartit les rôles de la prochaine fois."
-            ],
-            "tipp": "Un sujet suffit pour dix minutes ; les autres billets attendent la réunion suivante. Ce qui vise une personne précise ou inquiète n’entre pas en réunion : on le règle en tête-à-tête et avec le SePAS (séance 5).",
-            "wennEsKippt": "Si le sujet tourne à la dispute sur une personne, arrêter tout de suite : le conseil ne décide pas des personnes – on en parle après le cours. Si le temps manque, on ne vote pas ; le sujet passe en premier à la réunion suivante. Si la boîte est vide, la classe vote sur l’une des questions préparées à la séance 5."
+            "wennEsKippt": "Si quelqu’un se moque d’un mime, arrêter un instant : on rit ensemble, pas les uns des autres. Si le sujet du conseil tourne à la dispute sur une personne, arrêter tout de suite : le conseil ne décide pas des personnes, on en parle après le cours.",
+            "blatt": "ff7-gefuehle-botschaften"
           },
           {
             "titel": "Skill : la chasse aux couleurs",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Annoncer : voici un skill pour les moments où une émotion est très forte et où la tête a besoin d’une courte pause avant d’agir. Tout le monde s’assoit confortablement, les portables restent rangés. Guider lentement et participer soi-même : chercher une couleur pendant une minute en comptant en silence, puis une deuxième couleur, et pour finir expirer (liste). Ensuite, recueillir deux ou trois retours : combien de choses avez-vous trouvées ? Qu’est-ce qui s’est passé dans vos pensées pendant ce temps ? Quand est-ce que ça pourrait aider – dans le bus, avant un devoir en classe, quand quelqu’un vous énerve ? Pour finir, expliquer : regarder volontairement ramène l’attention ici et maintenant ; l’émotion baisse souvent d’un cran, et on a le temps de lire son message. Sur la fiche, le skill figure dans l’encadré « La chasse aux couleurs ».",
+            "text": "Ce skill aide quand une émotion est très forte et que la tête a besoin d’une courte pause – dans le bus, avant un devoir en classe, quand quelqu’un énerve. Chercher une couleur une minute en silence en comptant, puis une deuxième, et expirer pour finir (cinq minutes au plus). Ensuite la clôture : une phrase dans le Skills-Pass, annoncer la mission, choisir son moment.",
             "sagen": [
-              "Vous n’avez rien à dire ni à montrer. Comptez juste en silence, pour vous."
+              "Vous n’avez rien à dire ni à montrer – comptez juste en silence, pour vous.",
+              "Quand arrive votre moment pour la chasse aux couleurs – quand quelqu’un énerve, avant un devoir en classe ou le soir au lit ?"
             ],
             "punkte": [
-              "Assieds-toi confortablement, les deux pieds au sol.",
-              "Choisis une couleur – aujourd’hui d’abord le rouge.",
-              "Cherche en silence tout ce qui est rouge dans la salle. Compte sans montrer du doigt.",
-              "Au bout d’une minute : nouvelle couleur, le bleu. Cherche et compte de nouveau.",
-              "Expire une fois lentement. Qu’est-ce qui a changé ?"
+              "Choisir une couleur – aujourd’hui d’abord le rouge.",
+              "Chercher en silence pendant une minute tout ce qui est rouge, et compter sans montrer du doigt.",
+              "Puis une deuxième couleur, le bleu ; pour finir, expirer lentement : qu’est-ce qui a changé ?",
+              "Skills-Pass (4 min) : une phrase pour la question « Quelle émotion est-ce que je comprends mieux aujourd’hui ? » ; tampon.",
+              "Mission et moment (4 min) : l’annoncer ; à « trois », chacun montre son moment (un doigt quelqu’un m’énerve, deux un devoir en classe, trois le soir au lit, le poing un moment à soi) et l’écrit dans « Mon moment : quand … » ; annoncer la prochaine séance (1 min)."
             ],
-            "tipp": "Montrer la couleur, pas seulement la nommer – ainsi, les nouveaux de la classe participent tout de suite. La chasse aux couleurs se fait partout, discrètement : dans le bus, dans le couloir, dans une salle d’attente ; toutes les couleurs marchent.",
             "wennEsKippt": "Si certains lancent leur chiffre à voix haute, annoncer calmement la couleur suivante : cette fois, chacun compte seulement pour soi. Si la classe s’agite trop, arrêter après une couleur et refaire le skill à la séance suivante."
-          },
-          {
-            "titel": "Skills-Pass, tour éclair et choix du moment",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 min) : écrire la question clé au tableau – quelle émotion est-ce que je comprends mieux aujourd’hui, et que veut-elle me dire ? Qui le souhaite peut y écrire à la place sa phrase de l’exercice 3 ; ensuite, le tampon. Tour éclair (1 min) : chacun dit un mot sur la séance, vite, à la suite et sans commentaire ; on peut dire « je passe ». Mission et choix du moment (2 min) : annoncer la mission de la semaine – la chasse aux couleurs quand une émotion devient forte. Puis chacun choisit son moment : à trois, tout le monde montre un doigt pour “quand quelqu’un m’énerve”, deux pour “avant un devoir en classe”, trois pour “le soir au lit”, le poing pour un moment à soi – et le note dans la colonne « Mon moment : quand … » des missions de la semaine, dans le cahier. L’exercice 4 de la fiche sert à noter ce qui s’est passé ensuite. Terminer par l’annonce de la prochaine séance.",
-            "sagen": [
-              "Un mot sur aujourd’hui. Juste un mot, sans explication.",
-              "Quand arrive ton moment pour la chasse aux couleurs ? Un doigt : quelqu’un m’énerve. Deux : avant un devoir en classe. Trois : le soir au lit. Le poing : un moment à moi."
-            ],
-            "tipp": "Garder les feuilles de tri et l’affiche des messages : elles restent accrochées à côté de la roue pendant les trois prochaines séances, et la classe y revient à la séance 12. Pour le moment, l’essentiel est qu’il soit écrit dans le cahier – qui hésite prend celui de son voisin."
           }
         ],
-        "bruecke": "La semaine prochaine, vous allez regarder dans la tête de Jana, qui vient de déménager : Joie, Tristesse, Peur, Colère et Dégoût s’y disputent les commandes – et vous découvrirez pourquoi on a aussi besoin de Tristesse.",
-        "mission": "Fais une fois la chasse aux couleurs dans ton moment – quand quelqu’un t’énerve, avant un devoir en classe ou le soir au lit. Demande-toi ensuite : que voulait me dire l’émotion ?",
-        "hintergrund": "Base de la séance : les émotions de base et la roue. Ekman (1992) décrit des émotions de base dont le visage est reconnu dans beaucoup de cultures – dont le dégoût et la surprise, absents de la roue (d’après Willcox, 1982). Chaque émotion de base a une fonction (Plutchik, 2001) : la peur protège, la colère écarte les obstacles, la tristesse cherche la proximité ; les messages sont des repères, pas des ordres. Deux résultats portent la séance : quand des adultes nommaient l’émotion d’un visage, l’amygdale, centre d’alarme du cerveau, réagissait moins fort (Lieberman et al., 2007). Et des classes de 5e et 6e année qui ont travaillé un an avec des mots d’émotions ont eu de meilleures notes et ont été jugées plus compétentes socialement par leurs enseignants (Brackett et al., 2012). Qui sait nommer son émotion peut faire une pause avant de suivre sa première impulsion – la suite part de là.",
+        "bruecke": "La semaine prochaine, vous regardez dans la tête de Jana, qui vient de déménager : cinq émotions s’y disputent les commandes – et vous découvrirez pourquoi on a aussi besoin de Tristesse.",
+        "mission": "Fais une fois la chasse aux couleurs. Que voulait te dire l’émotion ?",
+        "hintergrund": "Ekman (1992) décrit des émotions de base reconnues dans beaucoup de cultures ; chacune a une fonction – la peur protège, la tristesse cherche la proximité. Quand des adultes nommaient une émotion, l’alarme du cerveau réagissait moins fort (Lieberman et al., 2007). Des classes qui ont travaillé un an avec des mots d’émotions avaient de meilleures notes et plus de compétences sociales (Brackett et al., 2012). Qui nomme son émotion peut faire une pause avant de suivre sa première impulsion.",
         "quellen": [
           "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
           "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428.",
           "Brackett, M. A., Rivers, S. E., Reyes, M. R. & Salovey, P. (2012). Enhancing academic performance and social and emotional competence with the RULER feeling words curriculum. Learning and Individual Differences, 22(2), 218–224."
         ],
-        "achtung": "Les émotions sont un sujet personnel : personne n’est obligé de dire quand il a ressenti une émotion ; les exercices 3 et 4 restent privés, on peut toujours dire « je passe ». Les situations sans tristesse ou sans joie peuvent rappeler une perte ou une longue période triste. Si une intervention devient trop personnelle, l’arrêter gentiment, remercier et proposer d’en parler après le cours. Si un jeune dit ne plus ressentir de joie depuis longtemps ou choisit souvent impuissant ou seul, lui parler en tête-à-tête et impliquer le SePAS. En cas de signes de violence, d’abus, d’automutilation ou d’idées suicidaires, informer le SePAS le jour même et suivre le protocole de protection de l’école.",
+        "achtung": "Les émotions sont un sujet personnel : personne n’est obligé de dire quand il a ressenti une émotion, « je passe » est toujours permis, et on ne joue que des personnages inventés. Les situations sans tristesse ou sans joie peuvent rappeler une perte ; si une intervention devient trop personnelle, l’arrêter gentiment, remercier et proposer d’en parler après le cours. Si un jeune dit ne plus ressentir de joie depuis longtemps ou choisit souvent impuissant ou seul, lui parler en tête-à-tête, impliquer le SePAS et, en cas de signes de violence, d’abus, d’automutilation ou d’idées suicidaires, agir le jour même selon le protocole de protection de l’école.",
         "differenzierung": {
-          "leichter": "Pour les jeunes qui lisent difficilement ou apprennent encore la langue : accepter des mots dans leur langue et les faire montrer avec une carte des émotions ; traduire à l’avance les six messages (par exemple avec une application de traduction) et les poser à côté de la fiche ; faire l’exercice 2 avec les cartes ; dans l’exercice 3, un mot-clé suffit. L’affiche des messages et les mots clés restent visibles ; un binôme avec un camarade de la même langue aide.",
+          "leichter": "Pour les jeunes qui lisent difficilement ou apprennent encore la langue : accepter des mots dans leur langue et les faire montrer avec une carte des émotions ; traduire à l’avance les six messages et les poser à côté de la fiche. À l’exercice 2, un mot-clé suffit, et un binôme avec un camarade de la même langue aide.",
           "schwerer": "Réfléchir à quand une émotion dépasse son but – par exemple une grande peur avant un exposé sans enjeu – et à ce qui aide alors. Ou formuler un message pour les mots de la marge (envie, honte, surprise) et le compléter sur l’affiche."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le mot plus précis (5 min), rassembler et ranger les mots (10 min), une journée sans… avec l’affiche des messages (15 min), exercices 2 et 3 de la fiche (8 min), chasse aux couleurs (5 min), Skills-Pass, tour éclair et mission avec le moment (7 min). Le mime, les détectives des émotions et le conseil sont supprimés ; le mime peut servir de pause active à la séance suivante, et la réunion est rattrapée dès que possible."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le mot plus précis (5 min), rassembler des mots (10 min), une journée sans… avec l’affiche des messages et l’exercice 1 (15 min), chasse aux couleurs (5 min), Skills-Pass, mission et moment (7 min), exercice 2 en silence (8 min). Le mime, les détectives et le conseil sont supprimés ; le conseil est rattrapé dès que possible."
       }
     }
   ],
@@ -615,61 +447,17 @@
       ],
       "de": {
         "titel": "Wozu sind Gefühle gut?",
-        "untertitel": "Jedes Gefühl hat eine Botschaft – auch die unangenehmen.",
+        "untertitel": "Jedes Gefühl hat eine Botschaft.",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Gefühle melden sich, wenn etwas passiert, das dir wichtig ist – wie eine Nachricht auf dem Handy. Du musst nicht jeder Nachricht sofort folgen. Aber es lohnt sich, sie zu lesen."
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Ein Gefühl ist wie eine Nachricht auf dem Handy. Es gibt angenehme und unangenehme Gefühle, aber keine falschen. Was du dann tust, entscheidest du."
           },
           {
             "art": "aufgabe",
-            "text": "Welche Wörter benutzt du selbst? Schreib zu jedem Grundgefühl ein Wort aus der Sammlung deiner Gruppe.",
-            "hinweis": "Wörter aus deinen anderen Sprachen sind erlaubt.",
-            "symbole": [
-              "schreiben"
-            ]
-          },
-          {
-            "art": "tabelle",
-            "spalten": [
-              "Grundgefühl",
-              "Mein Wort dafür"
-            ],
-            "breiten": [
-              1.3,
-              3.7
-            ],
-            "zeilen": 0,
-            "werte": [
-              [
-                "fröhlich",
-                ""
-              ],
-              [
-                "stark",
-                ""
-              ],
-              [
-                "wütend",
-                ""
-              ],
-              [
-                "ängstlich",
-                ""
-              ],
-              [
-                "traurig",
-                ""
-              ],
-              [
-                "ruhig",
-                ""
-              ]
-            ]
-          },
-          {
-            "art": "aufgabe",
-            "text": "Welche Botschaft gehört zu welchem Gefühl? Verbinde.",
+            "text": "Verbinde jedes Gefühl mit seiner Botschaft.",
             "symbole": [
               "verbinden"
             ]
@@ -698,17 +486,9 @@
             ]
           },
           {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Zwei Gefühle, die nicht im Gefühlsrad stehen",
-            "punkte": [
-              "Ekel sagt: Das ist schlecht für mich. Abstand.",
-              "Überraschung sagt: Moment – was ist da los?"
-            ]
-          },
-          {
             "art": "aufgabe",
-            "text": "Welches Gefühl magst du am wenigsten – und wofür ist es trotzdem gut?",
+            "text": "Welches Gefühl magst du am wenigsten – und wozu ist es gut?",
+            "hinweis": "Du schreibst nur für dich.",
             "symbole": [
               "nachdenken",
               "schreiben"
@@ -723,15 +503,8 @@
             "linien": 2
           },
           {
-            "art": "info",
-            "symbol": "merke",
-            "titel": "Keine falschen Gefühle",
-            "text": "Es gibt angenehme und unangenehme Gefühle – aber keine falschen. Was du dann tust, entscheidest du: Wut darf sein. Ob du zuschlägst oder klar „Stopp“ sagst, macht den Unterschied."
-          },
-          {
             "art": "aufgabe",
-            "text": "Deine Wochen-Mission: Farbsuche in deinem Moment. Welches Gefühl war da – und was wollte es dir sagen? Eine Zeile reicht.",
-            "hinweis": "Deinen Moment hast du in der Stunde gewählt – er steht bei den Wochen-Missionen. Keine Namen, nur Stichworte.",
+            "text": "Löse zwei Fälle: Welches Gefühl, welche Botschaft, was braucht die Person?",
             "symbole": [
               "schreiben"
             ]
@@ -739,47 +512,29 @@
           {
             "art": "tabelle",
             "spalten": [
-              "Tag",
-              "Gefühl",
-              "Was wollte es mir sagen?"
+              "Situation",
+              "Gefühl und Botschaft",
+              "Was braucht sie?"
             ],
             "breiten": [
-              0.7,
-              1.4,
-              3.5
+              1.7,
+              1.5,
+              1.3
             ],
             "zeilen": 2,
             "beispiel": [
-              "Mi",
-              "gereizt",
-              "Mein Akku ist leer – ich brauche Schlaf."
+              "Mila lernt viel und bekommt trotzdem eine schlechte Note.",
+              "Wut: Das ist unfair.",
+              "ein Gespräch"
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "tipp",
-            "titel": "Die Farbsuche – dein Skill",
-            "punkte": [
-              "Wähl eine Farbe.",
-              "Such still alles, was diese Farbe hat. Zähl mit.",
-              "Nach einer Minute: neue Farbe – dann einmal lang ausatmen."
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Du entscheidest, was du teilst.",
-            "text": "Aufgabe 3 und 4 gehören dir. Du zeigst sie nur, wenn du willst."
           }
         ],
         "lehrer": {
-          "ziel": "Die Jugendlichen ordnen Gefühlswörter den sechs Grundgefühlen des Gefühlsrads zu, verbinden jedes Gefühl mit seiner Botschaft und überlegen, wozu auch ein unangenehmes Gefühl gut ist.",
+          "ziel": "Die Jugendlichen verbinden jedes Gefühl mit seiner Botschaft, überlegen, wozu auch ein unangenehmes Gefühl gut ist, und lösen Fälle mit Gefühl, Botschaft und Bedürfnis.",
           "ablauf": [
-            "Einheit 9, Schritt 3: nach dem Sortieren in den Tischgruppen Aufgabe 1 ausfüllen – je Grundgefühl ein eigenes Wort (3 Min.).",
-            "Schritt 6: Aufgabe 2 allein, vergleichen und am Botschaften-Plakat prüfen (5 Min.), dann Aufgabe 3 still (4 Min.).",
-            "Aufgabe 3 und 4 werden weder eingesammelt noch vorgelesen, außer jemand möchte es.",
-            "Aufgabe 4 begleitet die Wochen-Mission mit dem in der Stunde gewählten Moment; die Brücke von Einheit 10 fragt kurz danach.",
-            "Der Kasten „Aus der Forschung“ fasst den Befund von Brackett et al. (2012) zusammen; der Beleg steht im Hintergrund der Einheit."
+            "Einheit 9, Schritt 3: nach den Situationen „Ein Tag ohne …“ Aufgabe 1 – Gefühl und Botschaft verbinden und am Botschaften-Plakat prüfen; danach Aufgabe 2 still (je 4 Min.).",
+            "Schritt 5: nach den Gefühls-Detektiven Aufgabe 3 – zwei Fälle mit Gefühl, Botschaft und Bedürfnis aufschreiben (7 Min.).",
+            "Aufgabe 2 wird weder eingesammelt noch vorgelesen, außer jemand möchte es."
           ],
           "hintergrund": "Ekman (1992) beschreibt Grundgefühle, deren Ausdruck in vielen Kulturen erkannt wird; Plutchik (2001) ordnet jedem eine Aufgabe zu – Angst schützt, Wut räumt Hindernisse aus dem Weg, Traurigkeit sucht verlorene Nähe. Klassen, die ein Jahr lang mit Gefühlswörtern arbeiteten, hatten bessere Noten und mehr soziale Kompetenz (Brackett et al., 2012).",
           "quellen": [
@@ -792,61 +547,17 @@
       },
       "fr": {
         "titel": "À quoi servent les émotions ?",
-        "untertitel": "Chaque émotion a un message – même les désagréables.",
+        "untertitel": "Chaque émotion a un message.",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Une émotion se manifeste quand il se passe quelque chose d’important pour toi – comme un message sur ton portable. Tu n’es pas obligé·e d’y répondre tout de suite. Mais ça vaut la peine de le lire."
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Bon à savoir",
+            "text": "Une émotion est comme un message sur ton portable. Il y a des émotions agréables et désagréables, mais pas de fausses. Ce que tu en fais, c’est toi qui décides."
           },
           {
             "art": "aufgabe",
-            "text": "Quels mots utilises-tu toi-même ? Note pour chaque émotion de base un mot trouvé par ton groupe.",
-            "hinweis": "Les mots de tes autres langues sont permis.",
-            "symbole": [
-              "schreiben"
-            ]
-          },
-          {
-            "art": "tabelle",
-            "spalten": [
-              "Émotion de base",
-              "Mon mot pour elle"
-            ],
-            "breiten": [
-              1.3,
-              3.7
-            ],
-            "zeilen": 0,
-            "werte": [
-              [
-                "joyeux",
-                ""
-              ],
-              [
-                "fort",
-                ""
-              ],
-              [
-                "en colère",
-                ""
-              ],
-              [
-                "anxieux",
-                ""
-              ],
-              [
-                "triste",
-                ""
-              ],
-              [
-                "calme",
-                ""
-              ]
-            ]
-          },
-          {
-            "art": "aufgabe",
-            "text": "Quel message va avec quelle émotion ? Relie.",
+            "text": "Relie chaque émotion à son message.",
             "symbole": [
               "verbinden"
             ]
@@ -875,17 +586,9 @@
             ]
           },
           {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Deux émotions qui ne sont pas sur la roue",
-            "punkte": [
-              "Le dégoût dit : c’est mauvais pour moi. Distance.",
-              "La surprise dit : une seconde – qu’est-ce qui se passe ?"
-            ]
-          },
-          {
             "art": "aufgabe",
-            "text": "Quelle émotion est-ce que tu aimes le moins – et à quoi sert-elle quand même ?",
+            "text": "Quelle émotion aimes-tu le moins – et à quoi sert-elle ?",
+            "hinweis": "Tu écris seulement pour toi.",
             "symbole": [
               "nachdenken",
               "schreiben"
@@ -894,21 +597,14 @@
           {
             "art": "satzanfaenge",
             "items": [
-              "L’émotion que j’aime le moins, c’est…, parce que…",
+              "L’émotion que j’aime le moins, c’est… parce que…",
               "Elle sert quand même, parce que…"
             ],
             "linien": 2
           },
           {
-            "art": "info",
-            "symbol": "merke",
-            "titel": "Pas de fausses émotions",
-            "text": "Il y a des émotions agréables et désagréables – mais pas de fausses. Ce que tu en fais, c’est toi qui décides : la colère a le droit d’exister. Frapper ou dire clairement « stop », c’est là que se fait la différence."
-          },
-          {
             "art": "aufgabe",
-            "text": "Ta mission de la semaine : la chasse aux couleurs dans ton moment. Quelle émotion était là – et que voulait-elle te dire ? Une ligne suffit.",
-            "hinweis": "Tu as choisi ton moment pendant le cours – il est noté avec les missions de la semaine. Pas de noms, juste des mots-clés.",
+            "text": "Résous deux cas : quelle émotion, quel message, quel besoin ?",
             "symbole": [
               "schreiben"
             ]
@@ -916,47 +612,29 @@
           {
             "art": "tabelle",
             "spalten": [
-              "Jour",
-              "Émotion",
-              "Ce qu’elle voulait me dire"
+              "Situation",
+              "Émotion et message",
+              "De quoi a-t-elle besoin ?"
             ],
             "breiten": [
-              0.7,
-              1.4,
-              3.5
+              1.7,
+              1.5,
+              1.3
             ],
             "zeilen": 2,
             "beispiel": [
-              "mer.",
-              "irrité",
-              "Ma batterie est vide – j’ai besoin de dormir."
+              "Mila étudie beaucoup, mais a une mauvaise note.",
+              "Colère : ce n’est pas juste.",
+              "une discussion"
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "tipp",
-            "titel": "La chasse aux couleurs – ton skill",
-            "punkte": [
-              "Choisis une couleur.",
-              "Cherche en silence tout ce qui a cette couleur. Compte.",
-              "Au bout d’une minute : nouvelle couleur – puis expire une fois, longuement."
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Tu décides de ce que tu partages.",
-            "text": "Les exercices 3 et 4 t’appartiennent. Tu ne les montres que si tu le veux."
           }
         ],
         "lehrer": {
-          "ziel": "Les jeunes rangent des mots d’émotions sous les six émotions de base de la roue, relient chaque émotion à son message et réfléchissent à quoi sert aussi une émotion désagréable.",
+          "ziel": "Les jeunes relient chaque émotion à son message, réfléchissent à l’utilité d’une émotion désagréable et résolvent des cas avec émotion, message et besoin.",
           "ablauf": [
-            "Séance 9, étape 3 : après le tri en îlots, remplir l’exercice 1 – un mot à soi par émotion de base (3 min).",
-            "Étape 6 : exercice 2 seul, comparer et vérifier sur l’affiche des messages (5 min), puis exercice 3 en silence (4 min).",
-            "Les exercices 3 et 4 ne sont ni ramassés ni lus à voix haute, sauf si un jeune le souhaite.",
-            "L’exercice 4 accompagne la mission de la semaine avec le moment choisi pendant le cours ; le lien de la séance 10 y revient brièvement.",
-            "L’encadré « Ce que dit la recherche » résume le résultat de Brackett et al. (2012) ; la référence figure dans le fond de la séance."
+            "Séance 9, étape 3 : après les situations « Une journée sans… », exercice 1 – relier émotion et message et vérifier sur l’affiche des messages ; puis exercice 2 en silence (4 min chacun).",
+            "Étape 5 : après les détectives des émotions, exercice 3 – noter deux cas avec émotion, message et besoin (7 min).",
+            "L’exercice 2 n’est ni ramassé ni lu à voix haute, sauf si quelqu’un le souhaite."
           ],
           "hintergrund": "Ekman (1992) décrit des émotions de base dont l’expression est reconnue dans de nombreuses cultures ; Plutchik (2001) attribue à chacune une fonction – la peur protège, la colère écarte les obstacles, la tristesse cherche la proximité perdue. Des classes qui ont travaillé un an avec des mots d’émotions ont eu de meilleures notes et plus de compétences sociales (Brackett et al., 2012).",
           "quellen": [
@@ -1129,8 +807,8 @@
           "ziel": "Ein Kartensatz für die Tischgruppen: Gefühle an Gesicht und Haltung erkennen, ohne Worte darstellen, ihre Botschaft finden und später zu gemischten Gefühlen kombinieren.",
           "ablauf": [
             "Seite 1 und 2 fünfmal auf festes Papier kopieren, ausschneiden, je Tischgruppe einen Umschlag füllen.",
-            "Einheit 9, Schritt 7: Pantomime, zuerst nur Seite 1, danach Gefühls-Detektive mit offen liegenden Karten.",
-            "Einheit 12, Schritt 6: Gefühls-Mix – eine Karte von Seite 1 und eine von Seite 2 ziehen."
+            "Einheit 9, Schritt 5: Pantomime, zuerst nur Seite 1, danach Gefühls-Detektive mit offen liegenden Karten.",
+            "Einheit 12, Schritt 5: Gefühls-Mix – eine Karte von Seite 1 und eine von Seite 2 ziehen."
           ],
           "hintergrund": "Ekman (1992) beschreibt Grundgefühle, deren Gesichtsausdruck in vielen Kulturen verstanden wird. Wer Gefühle selbst darstellt und bei anderen erkennt, erweitert seinen Gefühlswortschatz – und ein genauer Wortschatz hilft, passender zu reagieren (Brackett, 2019).",
           "quellen": [
@@ -1277,8 +955,8 @@
           "ziel": "Un jeu de cartes pour les îlots : reconnaître les émotions au visage et à la posture, les exprimer sans paroles, trouver leur message et, plus tard, les combiner en émotions mélangées.",
           "ablauf": [
             "Photocopier cinq fois les pages 1 et 2 sur papier épais, découper, remplir une enveloppe par îlot.",
-            "Séance 9, étape 7 : mime, d’abord seulement la page 1, puis détectives des émotions, cartes face visible.",
-            "Séance 12, étape 6 : émotions mélangées – tirer une carte de la page 1 et une de la page 2."
+            "Séance 9, étape 5 : mime, d’abord seulement la page 1, puis détectives des émotions, cartes face visible.",
+            "Séance 12, étape 5 : émotions mélangées – tirer une carte de la page 1 et une de la page 2."
           ],
           "hintergrund": "Ekman (1992) décrit des émotions de base dont l’expression du visage est comprise dans de nombreuses cultures. Exprimer soi-même des émotions et les reconnaître chez les autres enrichit le vocabulaire émotionnel – et un vocabulaire précis aide à réagir de façon plus adaptée (Brackett, 2019).",
           "quellen": [

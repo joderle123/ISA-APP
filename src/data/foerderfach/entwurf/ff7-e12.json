@@ -35,25 +35,21 @@
       ],
       "de": {
         "titel": "Gemischte Gefühle",
-        "kurz": "Mehrere Gefühle können gleichzeitig da sein: Die Klasse untersucht gemischte Gefühle, schätzt ihre Stärke von 0 bis 10 ein und schaut auf das erste Trimester zurück.",
+        "kurz": "Mehrere Gefühle können gleichzeitig da sein: Die Klasse untersucht Mischungen, schätzt ihre Stärke von 0 bis 10 ein und blickt aufs Trimester zurück.",
         "ziele": [
-          "erkennen, dass mehrere Gefühle gleichzeitig da sein können",
+          "erkennen, dass mehrere Gefühle gleichzeitig da sein können – und jede Person anders fühlt",
           "schätzen die Stärke eines Gefühls von 0 bis 10 ein",
-          "sehen, dass eine Situation verschiedene Gefühle auslöst",
           "schätzen sich im Skills-Pass für das Trimester selbst ein"
         ],
         "material": [
           "Gefühlsrad-Plakat, 40 Klebepunkte",
           "Malerkrepp, Zettel mit 0 bis 10",
-          "Gefühlskarten aus Einheit 9",
-          "Plakate aus den Einheiten 9 bis 11",
-          "Schülerheft mit Skills-Pass",
-          "Stempel für den Skills-Pass"
+          "Gefühlskarten aus Einheit 9 (Vorlage)",
+          "Schülerheft: Blatt und Skills-Pass, Stempel"
         ],
         "vorbereitung": [
-          "Entlang der längsten Wand eine Linie aus Malerkrepp kleben und die Zettel 0 bis 10 danebenlegen.",
-          "Die Gefühlskarten aus Einheit 9 bereitlegen: je Tischgruppe ein Umschlag mit Seite 1 und 2.",
-          "Die Plakate aus den Einheiten 9 bis 11 aufhängen: Botschaften, Steuerpult, Klassen-Landkarte.",
+          "Entlang der längsten Wand eine Linie aus Malerkrepp kleben, daneben die Zettel 0 bis 10 legen.",
+          "Gefühlskarten aus Einheit 9 bereitlegen: je Tischgruppe ein Umschlag mit Seite 1 und 2.",
           "Die Skills des Trimesters an die Tafel schreiben (Skills-Pass, Skill-Karten) – für die Trimester-Einschätzung."
         ],
         "ablauf": [
@@ -65,42 +61,27 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Rückblick: Warnsignale aus der Woche"
+            "titel": "Rückblick, Mission und Thema"
           },
           {
-            "min": "15–35",
+            "min": "15–45",
             "phase": "uebung",
             "titel": "Gemischte Gefühle untersuchen"
           },
           {
-            "min": "35–45",
-            "phase": "aktiv",
-            "titel": "Die Linie von 0 bis 10"
-          },
-          {
             "min": "45–50",
             "phase": "aktiv",
-            "titel": "Bewegungspause: Zip Zap Boing"
+            "titel": "Bewegungspause: Die Linie von 0 bis 10"
           },
           {
-            "min": "50–70",
+            "min": "50–85",
             "phase": "uebung",
             "titel": "Gefühls-Mix mit Karten"
           },
           {
-            "min": "70–85",
-            "phase": "uebung",
-            "titel": "Mein Mix und Rückblick aufs Kapitel"
-          },
-          {
-            "min": "85–90",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: Bauchatmung"
-          },
-          {
-            "min": "90–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, Trimester-Einschätzung und Moment"
           }
         ],
         "schritte": [
@@ -108,163 +89,128 @@
             "titel": "Check-in: zwei Gefühle gleichzeitig",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Ab heute gibt es eine neue Variante: Beim Hereinkommen klebt jede Person zwei Punkte auf das Gefühlsrad – für zwei Gefühle, die gerade gleichzeitig da sind. Wem nur eines einfällt, der klebt einen (4 Min.). Die Lehrkraft beginnt mit einem ehrlichen, alltäglichen Beispiel und sagt, welches Gefühl lauter ist; dann drei, vier Freiwillige (4 Min.). Zum Schluss gemeinsam auf das Plakat schauen: Wie viele haben zwei Punkte geklebt? (2 Min.)",
+            "text": "Beim Hereinkommen klebt jede Person zwei Punkte auf das Gefühlsrad – für zwei Gefühle, die gerade gleichzeitig da sind (wem nur eines einfällt, klebt einen). Die Lehrkraft beginnt und sagt, welches Gefühl lauter ist; dann nennen drei, vier Freiwillige ihre zwei. Zum Schluss schauen alle aufs Plakat: Wie viele haben zwei Punkte geklebt?",
             "sagen": [
-              "Bei mir ist gerade ‚zufrieden‘ da, weil das Trimester fast geschafft ist, und ein bisschen ‚gestresst‘, weil noch viel zu korrigieren ist. Das Zufriedene ist lauter.",
-              "Welche zwei Gefühle sind bei euch gerade gleichzeitig da – und welches ist lauter?"
+              "Bei mir sind gerade ‚zufrieden‘ und ein bisschen ‚gestresst‘ da – das Zufriedene ist lauter.",
+              "Welche zwei Gefühle sind bei euch gerade gleichzeitig da, und welches ist lauter?"
             ],
-            "tipp": "Oft kommt das zweite Gefühl mit der Frage: Und was ist noch ein kleines bisschen da? Ab jetzt ist der Check-in mit zwei Gefühlen eine feste Variante.",
-            "wennEsKippt": "Kleben einige aus Spaß zwei Punkte auf völlig widersprüchliche Wörter, nachfragen statt ermahnen: Geht das zusammen? Oft wird daraus ein echtes Beispiel. Drängeln sich alle am Plakat, tischgruppenweise kleben lassen."
+            "tipp": "Fällt nur ein Gefühl ein, hilft die Frage: Und was ist noch ein kleines bisschen da?"
           },
           {
-            "titel": "Rückblick: Warnsignale aus der Woche",
+            "titel": "Rückblick, Mission und Thema",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Zur Wochen-Mission fragen: Kam dein Moment – und hast du dein Warnsignal bemerkt? Daumen hoch, Mitte, runter; zwei Stimmen erzählen, wo es war und was sie dann gemacht haben; niemand muss den Moment erlebt haben. Dann auf den Check-in zurückkommen: Viele haben zwei Gefühle gefunden – geht das überhaupt, zwei auf einmal? Das Thema an die Tafel schreiben: Gemischte Gefühle.",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – und hast du dein Warnsignal bemerkt? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz, wo es war. Dann das Thema nennen und an die Tafel schreiben: Gemischte Gefühle.",
             "sagen": [
-              "Kam dein Moment – und hast du dein Warnsignal bemerkt? Wo war es, und was hast du dann gemacht?",
-              "Gerade haben viele von euch zwei Gefühle gefunden. Kann das eigentlich sein, zwei auf einmal?"
+              "Kam euer Moment – und habt ihr euer Warnsignal bemerkt?",
+              "Vorhin haben viele zwei Gefühle geklebt – geht das überhaupt, zwei auf einmal?"
             ],
-            "tipp": "Die Klassen-Landkarte aus Einheit 11 hängt neben dem Gefühlsrad: Wer sein Signal bemerkt hat, kann darauf zeigen, statt viel zu erzählen."
+            "tipp": "„Der Moment kam nicht“ ist eine gute Antwort – niemand muss etwas geschafft haben."
           },
           {
             "titel": "Gemischte Gefühle untersuchen",
-            "dauer": 20,
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Einstieg an der Tafel (3 Min.): Stellt euch vor, ihr seid zu einer Geburtstagsfeier eingeladen – und habt euch am selben Tag mit eurem besten Freund gestritten. Welche Gefühle sind da? Die Antworten sammeln; meist kommen Vorfreude, Wut und Traurigkeit gleichzeitig. Dann Aufgabe 1 (7 Min.): Situation 1 an der Tafel vormachen – alle passenden Gefühle ankreuzen, das stärkste Kreuz einkreisen. Danach liest die Lehrkraft jede Situation einmal vor, und alle kreuzen still für sich an. Auswertung (8 Min.): für drei Situationen per Handzeichen zählen, wer welches Gefühl angekreuzt hat, und die Zahlen an die Tafel schreiben. Zum Schluss das Wort „bittersüß“ an die Tafel schreiben (2 Min.).",
+            "text": "Erst ein Tafelbild: Geburtstagsfeier und Streit mit dem besten Freund am selben Tag – welche Gefühle sind da? Dann Aufgabe 1: Die Lehrkraft macht die erste Situation vor, alle kreuzen die anderen still an, danach wird ausgezählt. Zum Schluss Aufgabe 2 allein: ein eigener Moment mit zwei Gefühlen und je einer Zahl.",
             "sagen": [
               "Kann man sich gleichzeitig freuen und traurig sein?",
-              "Schaut auf die Zahlen: gleiche Situation, und trotzdem hat fast jede Person etwas anderes angekreuzt. Was sagt uns das?"
+              "Gleiche Situation, und fast jede Person hat etwas anderes angekreuzt – was sagt uns das?"
             ],
-            "tipp": "Das Wort „bittersüß“ kennen viele aus Liedern oder vom Abschied nach einem Ferienlager – es ist ein Name für eine Mischung. Unterschiede an der Tafel nicht bewerten: Jede Antwort stimmt für die Person, die sie gibt.",
-            "wennEsKippt": "Streiten zwei darüber, welches Gefühl „richtig“ ist, die Frage zurückgeben: Beide haben recht – für sich. Genau das zeigt die Übung. Berührt eine Situation jemanden sichtlich, nicht vertiefen, sondern nach der Stunde ein Gespräch anbieten.",
+            "punkte": [
+              "Tafelbild (4 Min.): Gefühle sammeln – meist Vorfreude, Wut und Traurigkeit zugleich – und als zwei sich überlappende Kreise zeichnen. Gefühle mischen sich wie Farben, oft ist eines lauter.",
+              "Aufgabe 1 (12 Min.): Situation 1 gemeinsam vormachen: alle passenden Gefühle ankreuzen, das stärkste einkreisen. Situation 2 und 3 liest die Lehrkraft vor, alle kreuzen still an.",
+              "Auswertung (5 Min.): Pro Situation per Handzeichen zählen, wer welches Gefühl angekreuzt hat, Zahlen an die Tafel. Nichts bewerten: Jede Antwort stimmt für die Person.",
+              "Gut zu wissen (2 Min.): „bittersüß“ an die Tafel schreiben (froh und traurig zugleich), den Kasten gemeinsam lesen.",
+              "Aufgabe 2 (7 Min.): allein und still – ein Moment mit zwei Gefühlen, für jedes eine Zahl von 0 bis 10. Ein Moment aus einem Film zählt auch; nichts wird vorgelesen."
+            ],
+            "wennEsKippt": "Streiten zwei darüber, welches Gefühl „richtig“ ist: Beide haben recht – für sich. Berührt eine Situation jemanden sichtlich, nicht vertiefen, sondern nach der Stunde ein Gespräch anbieten.",
             "blatt": "ff7-gemischte-gefuehle"
           },
           {
-            "titel": "Die Linie von 0 bis 10",
-            "dauer": 10,
+            "titel": "Bewegungspause: Die Linie von 0 bis 10",
+            "dauer": 5,
             "phase": "aktiv",
-            "text": "Entlang der Wand liegt die Linie aus Malerkrepp, an einem Ende die 0, am anderen die 10. Die Lehrkraft nennt eine Situation und ein Gefühl; alle stellen sich an die Stelle, die für sie passt. Nach jeder Situation zwei Personen an verschiedenen Stellen fragen, was ihre Zahl bestimmt – freiwillig und ohne zu bewerten (fünf Situationen, 8 Min.). Zum Schluss ankündigen: Im nächsten Kapitel wird aus der Linie von 0 bis 10 die Anspannungsskala von 0 bis 100 (2 Min.).",
+            "text": "Alle stehen auf; an der Wand liegt die Linie aus Malerkrepp, links die 0, rechts die 10. Die Lehrkraft nennt eine Situation und ein Gefühl, alle stellen sich dorthin, wo es für sie passt, und zwei Personen an verschiedenen Stellen sagen, was ihre Zahl bestimmt. Zum Schluss ankündigen: Im nächsten Kapitel wird aus der Linie eine Skala von 0 bis 100.",
             "sagen": [
-              "Stellt euch dahin, wo es für euch passt. Es gibt keine richtige Zahl.",
-              "Du stehst bei 2 und du bei 9 – was macht den Unterschied?"
+              "Stellt euch dahin, wo es für euch passt – es gibt keine richtige Zahl.",
+              "Du stehst bei 2, du bei 9 – was macht den Unterschied?"
             ],
             "punkte": [
               "Der Bus fährt dir vor der Nase weg. – Wie genervt?",
               "In der Kantine gibt es dein Lieblingsessen. – Wie froh?",
-              "Dein Akku ist bei 2 Prozent, und du wartest auf eine wichtige Nachricht. – Wie nervös?",
-              "Morgen hältst du ein Referat vor der Klasse. – Wie aufgeregt?",
-              "Die Lehrerin bittet dich, nach der Stunde zu bleiben, und sagt nicht, warum. – Wie besorgt?"
+              "Morgen hältst du ein Referat vor der Klasse. – Wie aufgeregt?"
             ],
-            "tipp": "Die Situationen mit einer Geste begleiten, dann verstehen auch Neue mit wenig Deutsch, worum es geht. Ist es zu eng, stellt sich die eine Hälfte der Klasse auf, die andere zeigt die Zahl mit den Fingern; dann wird gewechselt. Die Zahlenzettel für Einheit 13 aufheben.",
-            "wennEsKippt": "Stellen sich alle aus Spaß an dieselbe Stelle, die nächste Situation mit geschlossenen Augen hören lassen; erst auf ein Zeichen gehen alle los. Wer nicht aufstehen will, zeigt die Zahl mit den Fingern."
-          },
-          {
-            "titel": "Bewegungspause: Zip Zap Boing",
-            "dauer": 5,
-            "phase": "aktiv",
-            "text": "Zwei Kreise zu zehn; reicht der Platz nicht, ein großer Kreis um die Tischgruppen. Ein Klatschimpuls wandert: Mit „Zip“ und einer Handbewegung geht er zur Nachbarin, mit „Zap“ quer durch den Kreis zu einer Person, die man anschaut, mit „Boing“ und erhobenen Händen prallt er zurück. Wer zögert oder sich vertut, macht einfach weiter – niemand scheidet aus. Nach zwei Minuten wird schneller gespielt. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
-            "sagen": [
-              "Zip geht zur Seite, Zap quer durch den Kreis, Boing schickt zurück. Wer sich vertut, lacht und macht weiter."
-            ],
-            "tipp": "Die Lehrkraft spielt im einen Kreis mit, eine sichere Person aus der Klasse leitet den anderen. Wer nicht mitspielen mag, gibt das Tempo vor oder zählt die Zips.",
-            "wennEsKippt": "Zielt der Impuls immer auf dieselbe Person oder wird jemand ausgelacht, kurz anhalten: Jeder Impuls geht an jemanden, der noch nicht dran war."
+            "tipp": "Die Zettel mit den Zahlen für Einheit 13 aufheben. Wer nicht aufstehen will, zeigt seine Zahl mit den Fingern."
           },
           {
             "titel": "Gefühls-Mix mit Karten",
-            "dauer": 20,
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Jede Tischgruppe zieht verdeckt eine Karte von Seite 1 und eine von Seite 2 der Gefühlskarten und verteilt die Rollen: zwei, drei spielen, eine Person spricht für die Gruppe. Die Gruppe erfindet eine Situation aus dem Alltag, in der beide Gefühle gleichzeitig da sind, und gibt jedem Gefühl eine Zahl von 0 bis 10 (5 Min.). Dann zeigt sie die Situation als Standbild oder spielt sie 30 Sekunden ohne Worte vor. Die anderen Gruppen legen ihre Karten offen aus, beraten flüsternd und zeigen auf drei die zwei Karten, die sie vermuten; danach nennt die Sprecherin oder der Sprecher die Situation in einem Satz und die Zahlen (fünf Gruppen, 12 Min.). Zum Schluss fragen: Welche Mischung war am schwierigsten? Kennt ihr Wörter für Mischungen – bittersüß, Vorfreude, Lampenfieber? (3 Min.)",
+            "text": "Jede Tischgruppe zieht verdeckt eine Karte von Seite 1 und eine von Seite 2 der Gefühlskarten und erfindet eine Alltagsszene, in der beide Gefühle gleichzeitig da sind – mit einer Zahl von 0 bis 10 für jedes (Aufgabe 3). Dann zeigt sie die Szene als Standbild oder spielt sie 30 Sekunden ohne Worte, und die anderen raten die zwei Karten. Zum Schluss sammelt die Klasse Wörter für Mischungen.",
             "sagen": [
-              "Zieht zwei Karten. Wann könnte jemand beide Gefühle gleichzeitig haben – im Bus, in der Pause, zu Hause, beim Sport?",
+              "Zieht zwei Karten: Wann könnte jemand beide Gefühle gleichzeitig haben – im Bus, in der Pause, beim Sport?",
               "Welches Gefühl ist in eurer Szene lauter – und mit welcher Zahl?"
             ],
-            "tipp": "Passen zwei Karten scheinbar gar nicht zusammen, etwa Ekel und Vorfreude, ist das die beste Aufgabe: Fast immer findet die Gruppe eine Szene – das Lieblingsessen, das gerade auf den Boden gefallen ist.",
-            "wennEsKippt": "Baut eine Gruppe eine Szene über jemanden aus der Klasse oder lacht über eine Person, stoppen: Wir spielen erfundene Leute. Rutscht eine Szene in Gewalt oder Verletzungen ab, zurück in den Alltag lenken: Bus, Pause, Sport, zu Hause. Will eine Gruppe nicht vorspielen, sagt sie ihre Situation in einem Satz, und die Klasse rät trotzdem.",
-            "blatt": "ff7-gefuehlskarten"
-          },
-          {
-            "titel": "Mein Mix und Rückblick aufs Kapitel",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Allein und still (5 Min.): Aufgabe 2 auf dem Blatt – ein Moment mit gemischten Gefühlen und eine Zahl für jedes Gefühl; ein Moment aus einem Film oder einer Serie zählt auch. Nichts wird vorgelesen. Dann Rückblick auf das Kapitel (10 Min.): Die Plakate der letzten Wochen – Botschaften, Steuerpult, Klassen-Landkarte – hängen vorne; die Lehrkraft zeigt kurz auf jedes. Jede Tischgruppe einigt sich am Platz auf einen Satz: Was wissen wir jetzt über Gefühle, das wir vor vier Wochen noch nicht wussten? Jede Gruppe sagt ihren Satz, die Lehrkraft schreibt ihn an die Tafel.",
-            "sagen": [
-              "Ihr schreibt nur für euch. Ein Moment aus einem Film zählt genauso.",
-              "Was wisst ihr jetzt über Gefühle, das ihr vor vier Wochen noch nicht wusstet?"
+            "punkte": [
+              "Vorbereiten (10 Min.): Rollen verteilen – zwei, drei spielen, eine Person spricht für die Gruppe –, Szene erfinden, beide Zahlen auf das Blatt schreiben (Aufgabe 3).",
+              "Vorspielen (20 Min.): je Gruppe 30 Sekunden Standbild oder Spiel ohne Worte; die anderen legen ihre Karten offen aus, beraten flüsternd und zeigen auf drei die zwei Karten, die sie vermuten. Die Sprecherin oder der Sprecher löst auf: Situation in einem Satz, dazu die zwei Zahlen.",
+              "Auswertung (5 Min.): Welche Mischung war am schwierigsten? Wörter für Mischungen sammeln: bittersüß, Vorfreude, Lampenfieber."
             ],
-            "tipp": "Die Sätze der Gruppen fotografieren: Sie sind ein guter Einstieg ins nächste Kapitel und für den Rückblick am Ende des Jahres.",
-            "wennEsKippt": "Fällt einer Gruppe nichts ein, auf ein Plakat zeigen und fragen: Was steht hier, das euch überrascht hat? Reden alle durcheinander, eine Person zur Schreiberin oder zum Schreiber machen, die den Satz notiert.",
+            "wennEsKippt": "Baut eine Gruppe eine Szene über jemanden aus der Klasse oder rutscht sie in Gewalt ab, stoppen: Wir spielen erfundene Leute im Alltag – Bus, Pause, Sport, zu Hause. Will eine Gruppe nicht vorspielen, sagt sie ihre Situation in einem Satz, und die Klasse rät trotzdem.",
             "blatt": "ff7-gemischte-gefuehle"
           },
           {
             "titel": "Skill: Bauchatmung",
-            "dauer": 5,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Alle sitzen, eine Hand auf dem Bauch. Zuerst still schätzen: Wie unruhig bin ich gerade, von 0 bis 10? Dann fünf Atemzüge: durch die Nase einatmen, der Bauch hebt die Hand wie ein Ballon; langsam durch den Mund ausatmen, länger als ein. Die Lehrkraft zählt leise mit und macht mit. Danach die Zahl neu schätzen; wer mag, sagt, ob sie sich verändert hat – nach oben, nach unten oder gar nicht; alles ist eine gute Beobachtung. Erklären: Das lange Ausatmen bremst den Körper; im nächsten Kapitel testet ihr Skills genau so – Zahl vorher, Skill, Zahl nachher. Auf dem Blatt steht der Skill im Kasten „Die Bauchatmung“.",
+            "text": "Zuerst die Bauchatmung: Hand auf den Bauch, still die Unruhe von 0 bis 10 schätzen, fünf lange Atemzüge, die Zahl neu schätzen. Dann der Abschluss: ein Satz in den Skills-Pass, die Trimester-Einschätzung mit den fünf Kreuzen, Mission ansagen, Moment wählen und die Hilfe-Nummern zeigen.",
             "sagen": [
-              "Nur ihr kennt eure Zahl. Ihr müsst sie niemandem sagen."
+              "Nur ihr kennt eure Zahl – ihr müsst sie niemandem sagen.",
+              "Hier gibt es kein Richtig oder Falsch – ihr schaut nur, wo ihr gerade steht."
             ],
             "punkte": [
-              "Setz dich bequem hin und leg eine Hand auf den Bauch.",
-              "Schätz still: Wie unruhig bist du gerade, von 0 bis 10?",
-              "Atme durch die Nase ein und zähl bis vier – der Bauch hebt deine Hand.",
-              "Atme langsam durch den Mund aus und zähl bis sechs. Fünfmal.",
-              "Schätz deine Zahl noch einmal. Was hat sich verändert?"
+              "Skill (5 Min.): Hand auf den Bauch, Unruhe still von 0 bis 10 schätzen. Durch die Nase einatmen bis vier, durch den Mund ausatmen bis sechs, fünfmal. Zahl neu schätzen: Was hat sich verändert?",
+              "Skills-Pass (2 Min.): ein Satz – Welche zwei Gefühle waren heute gleichzeitig da?",
+              "Trimester-Einschätzung (4 Min.): wichtigsten Skill auf der Seite eintragen, die fünf Sätze ankreuzen (noch nicht, manchmal, oft), während die Lehrkraft sie langsam vorliest. Keine Note, nichts wird eingesammelt; die Lehrkraft stempelt.",
+              "Mission und Moment (2 Min.): die Wochen-Mission vorlesen; auf drei zeigen alle, wann ihr Moment kommt – ein Finger Abschied, zwei Wiedersehen, drei erster Ferientag – und schreiben ihn ins Heft.",
+              "Hilfe-Nummern (2 Min.): die Seite „So funktioniert das Fach“ aufschlagen – die Nummern gelten auch in den Ferien. Dann Ausblick."
             ],
-            "tipp": "Wer „Luftballon“ kindisch findet, sagt einfach Bauchatmung. Entscheidend ist das lange Ausatmen.",
-            "wennEsKippt": "Wird gekichert, ruhig weiterzählen und selbst mitmachen. Wem schwindlig wird, atmet normal weiter und schaut nur zu."
-          },
-          {
-            "titel": "Skills-Pass, Trimester-Einschätzung und Moment",
-            "dauer": 10,
-            "phase": "abschluss",
-            "text": "Skills-Pass aufschlagen. Zuerst wie immer der Satz der Stunde mit der Leitfrage: Welche zwei Gefühle waren heute bei mir gleichzeitig da? (2 Min.) Dann die Trimester-Einschätzung (5 Min.): Die Skills des Trimesters stehen an der Tafel; jede Person schreibt ihren wichtigsten Skill in die Zeile und kreuzt bei den fünf Sätzen unten auf der Seite an: noch nicht, manchmal oder oft. Die Lehrkraft liest die Sätze langsam vor. Es ist eine Selbsteinschätzung, keine Note; eingesammelt wird nichts. Wer mag, sagt, was sich seit September verändert hat – zwei Stimmen. Mission und Moment wählen (2 Min.): Die Wochen-Mission ansagen – beim Gefühls-Mix kurz anhalten und beide Gefühle benennen. Auf drei zeigen alle, wann ihr Moment am ehesten kommt: ein Finger für ‚beim Abschied vor den Ferien‘, zwei für ‚bei einem Wiedersehen‘, drei für ‚am ersten Ferientag‘, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ im Heft; Aufgabe 3 auf dem Blatt ist der Platz für das, was dann war. Zum Schluss Stempel und Ausblick; dazu kurz die Hilfe-Nummern auf der Seite „So funktioniert das Fach“ zeigen – sie gelten auch in den Ferien (1 Min.).",
-            "sagen": [
-              "Hier gibt es kein Richtig oder Falsch. Ihr schaut nur, wo ihr gerade steht – am Ende des Jahres schaut ihr noch einmal.",
-              "Was hat sich seit September verändert – bei euch oder in der Klasse?",
-              "Wann kommt dein Gefühls-Mix am ehesten? Ein Finger: beim Abschied vor den Ferien. Zwei: bei einem Wiedersehen. Drei: am ersten Ferientag. Faust: ein eigener Moment."
-            ],
-            "tipp": "Wenn es stockt, ein eigenes Beispiel geben, etwa: Bei „Ich kann sagen, wie ich mich fühle“ würde ich jetzt öfter „manchmal“ ankreuzen als im September. Die Wochen-Mission gilt bis zur nächsten Stunde, auch über Ferien hinweg – deshalb den Moment heute ins Heft schreiben.",
-            "wennEsKippt": "Kreuzen einige überall „oft“ an, um schnell fertig zu sein, das stehen lassen – die Einschätzung gehört ihnen. Kreuzt jemand überall „noch nicht“ an oder schreibt „nichts gelernt“, nicht diskutieren, sondern nach der Stunde kurz fragen, wie das Trimester für ihn war.",
+            "wennEsKippt": "Kreuzen einige überall „oft“ an, um schnell fertig zu sein, das stehen lassen – die Einschätzung gehört ihnen. Kreuzt jemand überall „noch nicht“ an oder schreibt „nichts gelernt“, nicht diskutieren, sondern nach der Stunde kurz fragen, wie das Trimester war.",
             "blatt": "ff-skills-pass"
           }
         ],
-        "bruecke": "Nächstes Mal beginnt ein neues Kapitel: Aus der Linie von 0 bis 10 wird die Anspannungsskala von 0 bis 100 – und ihr findet heraus, welcher Skill bei welcher Zahl noch hilft.",
-        "mission": "Wenn dein Moment kommt – ein Abschied, ein Wiedersehen oder der erste Ferientag –, halt kurz an: Welche zwei Gefühle sind gleichzeitig da, und wie stark von 0 bis 10?",
-        "hintergrund": "Gefühle treten selten einzeln auf – das ist die Grundlage der Stunde. Der wichtigste Beleg: Larsen, McGraw und Cacioppo (2001) zeigten, dass Menschen in bittersüßen Momenten wie einem Abschied tatsächlich gleichzeitig Freude und Traurigkeit empfinden – nicht nur im schnellen Wechsel. Plutchik (2001) beschreibt Gefühle wie Farben, die sich zu neuen Mischungen verbinden, und ordnet sie nach Dimensionen wie ihrer Stärke. Wer gemischte Gefühle als normal erkennt, versteht widersprüchliche Reaktionen bei sich und anderen besser. Die Stärke eines Gefühls einzuschätzen, bereitet das nächste Kapitel vor: Das Skillstraining für Jugendliche arbeitet mit einer Anspannungsskala von 0 bis 100, weil je nach Stärke andere Skills helfen (Fleischhaker et al., 2011). Die Trimester-Einschätzung im Skills-Pass ist eine Selbsteinschätzung, keine Bewertung: Sie macht sichtbar, was gewachsen ist.",
+        "bruecke": "Nach den Ferien beginnt ein neues Kapitel: Aus der Linie von 0 bis 10 wird die Anspannungsskala von 0 bis 100 – und ihr findet heraus, welcher Skill bei welcher Zahl noch hilft.",
+        "mission": "Halt einmal an: Welche zwei Gefühle sind da – und wie stark, von 0 bis 10?",
+        "hintergrund": "Gefühle treten selten einzeln auf: In bittersüßen Momenten wie einem Abschied empfinden Menschen tatsächlich gleichzeitig Freude und Traurigkeit (Larsen, McGraw & Cacioppo, 2001). Plutchik (2001) beschreibt Gefühle wie Farben, die sich mischen und nach Stärke ordnen lassen. Die Stärke einzuschätzen bereitet die Anspannungsskala von 0 bis 100 vor, mit der das Skillstraining für Jugendliche arbeitet (Fleischhaker, Sixt & Schulz, 2011).",
         "quellen": [
           "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696.",
           "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
           "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer."
         ],
-        "achtung": "Beim Gefühls-Mix und bei Aufgabe 2 können eigene Erlebnisse hochkommen – eine Trennung der Eltern, ein Umzug, ein Abschied. Niemand muss von sich erzählen; Filme und Serien zählen genauso, „weiter“ ist immer erlaubt. Persönliches nicht vor der Klasse vertiefen, sondern ein Gespräch nach der Stunde anbieten. Vor den Ferien fällt manchen der Abschied schwer, wenn zu Hause wenig Halt ist: auf Rückzug achten, die Hilfe-Nummern im Heft zeigen und bei Sorge Régent und SePAS ansprechen. Die Trimester-Einschätzung wird weder eingesammelt noch benotet. Bei Hinweisen auf Gewalt, Selbstverletzung oder Suizidgedanken noch am selben Tag den SePAS informieren und nach dem Schutzkonzept handeln.",
+        "achtung": "Bei Aufgabe 2 und im Gefühls-Mix können eigene Erlebnisse hochkommen – eine Trennung der Eltern, ein Umzug, ein Abschied: Niemand muss von sich erzählen, Filme und Serien zählen genauso, „weiter“ ist immer erlaubt. Vor den Ferien fällt manchen der Abschied schwer, wenn zu Hause wenig Halt ist: auf Rückzug achten, die Hilfe-Nummern im Heft zeigen, bei Sorge Régent und SePAS ansprechen, Persönliches aber nicht vor der Klasse vertiefen. Bei Hinweisen auf Gewalt, Selbstverletzung oder Suizidgedanken noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
         "differenzierung": {
-          "leichter": "Aufgabe 1 nur mit den Situationen 1 bis 4; die sechs Gefühle als Gesichter an der Tafel. An der Linie zeigen alle zusätzlich die Zahl mit den Fingern. Beim Gefühls-Mix Karten von Seite 1 mit Gesichtern nehmen. In der Trimester-Einschätzung liest die Lehrkraft die fünf Sätze langsam vor; ein Tandem hilft beim Verstehen.",
-          "schwerer": "Zu einer Situation notieren, was jedes der beiden Gefühle tun möchte – und welches am Ende gewinnt. Oder Wörter für Mischungen sammeln, etwa bittersüß oder Lampenfieber, und erklären, welche Gefühle darin stecken."
+          "leichter": "Die Gefühle als Gesichter an die Tafel zeichnen und beim Gefühls-Mix zwei Karten von Seite 1 (mit Gesichtern) ziehen. Die fünf Sätze der Trimester-Einschätzung langsam vorlesen; ein Tandem hilft beim Verstehen.",
+          "schwerer": "Zu einer Szene notieren, was jedes der beiden Gefühle tun möchte – und welches am Ende gewinnt. Oder weitere Wörter für Mischungen sammeln und erklären, welche Gefühle darin stecken."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit zwei Gefühlen (5 Min.), Aufgabe 1 mit Auswertung (15 Min.), Linie von 0 bis 10 (8 Min.), Bauchatmung (5 Min.), Skills-Pass mit Trimester-Einschätzung (10 Min.), Mission mit Moment, Hilfe-Nummern und Ausblick (7 Min.). Gefühls-Mix und Rückblick auf das Kapitel entfallen; die Trimester-Einschätzung hat Vorrang."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit zwei Gefühlen (5 Min.), Tafelbild und Aufgabe 1 mit Auswertung (18 Min.), Linie von 0 bis 10 (5 Min.), Bauchatmung (5 Min.), Skills-Pass mit Trimester-Einschätzung (10 Min.), Mission mit Moment, Hilfe-Nummern und Ausblick (7 Min.). Der Gefühls-Mix entfällt; die Trimester-Einschätzung hat Vorrang."
       },
       "fr": {
         "titel": "Émotions mélangées",
-        "kurz": "Plusieurs émotions peuvent être là en même temps : la classe explore les émotions mélangées, évalue leur intensité de 0 à 10 et fait le bilan du premier trimestre.",
+        "kurz": "Plusieurs émotions peuvent être là en même temps : la classe explore les mélanges, évalue leur intensité de 0 à 10 et fait le point sur le trimestre.",
         "ziele": [
-          "reconnaissent que plusieurs émotions peuvent coexister",
+          "reconnaissent que plusieurs émotions peuvent être là en même temps – et que chacun ressent à sa façon",
           "évaluent l’intensité d’une émotion de 0 à 10",
-          "voient qu’une situation déclenche des émotions différentes",
           "font le bilan du trimestre dans leur Skills-Pass"
         ],
         "material": [
           "Roue des émotions, 40 gommettes",
           "Ruban de masquage, feuilles de 0 à 10",
-          "Cartes des émotions (séance 9)",
-          "Affiches des séances 9 à 11",
-          "Cahier de l’élève avec Skills-Pass",
-          "Tampon pour le Skills-Pass"
+          "Cartes des émotions de la séance 9 (modèle)",
+          "Cahier : fiche et Skills-Pass, tampon"
         ],
         "vorbereitung": [
-          "Coller une ligne de ruban de masquage le long du plus grand mur et poser à côté les feuilles numérotées de 0 à 10.",
+          "Coller une ligne de ruban de masquage le long du plus grand mur et poser à côté les feuilles de 0 à 10.",
           "Préparer les cartes des émotions de la séance 9 : une enveloppe par îlot, pages 1 et 2.",
-          "Accrocher les affiches des séances 9 à 11 : messages, console, carte de la classe.",
           "Écrire au tableau les skills du trimestre (Skills-Pass, cartes skills) pour le bilan du trimestre."
         ],
         "ablauf": [
@@ -276,42 +222,27 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Retour : les signaux d’alerte de la semaine"
+            "titel": "Retour, mission et thème"
           },
           {
-            "min": "15–35",
+            "min": "15–45",
             "phase": "uebung",
             "titel": "Explorer les émotions mélangées"
           },
           {
-            "min": "35–45",
-            "phase": "aktiv",
-            "titel": "La ligne de 0 à 10"
-          },
-          {
             "min": "45–50",
             "phase": "aktiv",
-            "titel": "Pause active : Zip Zap Boing"
+            "titel": "Pause active : la ligne de 0 à 10"
           },
           {
-            "min": "50–70",
+            "min": "50–85",
             "phase": "uebung",
             "titel": "Mélange d’émotions avec les cartes"
           },
           {
-            "min": "70–85",
-            "phase": "uebung",
-            "titel": "Mon mélange et retour sur le chapitre"
-          },
-          {
-            "min": "85–90",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : la respiration par le ventre"
-          },
-          {
-            "min": "90–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, bilan du trimestre et moment"
           }
         ],
         "schritte": [
@@ -319,141 +250,110 @@
             "titel": "Tour d’humeur : deux émotions en même temps",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "À partir d’aujourd’hui, il y a une nouvelle variante : en entrant, chaque jeune colle deux gommettes sur la roue des émotions – pour deux émotions qui sont là en même temps. Qui n’en trouve qu’une en colle une (4 min). L’enseignant·e commence par un exemple sincère du quotidien et dit quelle émotion parle le plus fort ; puis trois ou quatre volontaires (4 min). Pour finir, regarder ensemble l’affiche : combien de jeunes ont collé deux gommettes ? (2 min)",
+            "text": "En entrant, chaque jeune colle deux gommettes sur la roue des émotions – pour deux émotions qui sont là en même temps (qui n’en trouve qu’une en colle une). L’enseignant·e commence et dit laquelle est la plus forte ; puis trois ou quatre volontaires donnent leurs deux émotions. Pour finir, regarder l’affiche : combien de jeunes ont collé deux gommettes ?",
             "sagen": [
-              "Chez moi, il y a “content” en ce moment, parce que le trimestre est presque fini, et un peu “stressé”, parce que j’ai encore beaucoup de copies à corriger. Le contentement parle plus fort.",
-              "Quelles deux émotions sont là chez vous en même temps – et laquelle parle le plus fort ?"
+              "Chez moi, il y a en ce moment “content” et un peu “stressé” – le plus fort, c’est “content”.",
+              "Quelles deux émotions sont là chez vous en même temps, et laquelle est la plus forte ?"
             ],
-            "tipp": "Souvent, la deuxième émotion arrive avec la question : et qu’est-ce qui est encore un tout petit peu là ? Désormais, le tour d’humeur à deux émotions est une variante fixe.",
-            "wennEsKippt": "Si certains collent pour rire deux gommettes sur des mots complètement opposés, poser une question au lieu de reprendre : est-ce que ça va ensemble ? Il en sort souvent un vrai exemple. Si tout le monde se bouscule devant l’affiche, faire passer îlot par îlot."
+            "tipp": "Si une seule émotion vient, la question aide : et qu’est-ce qui est encore un tout petit peu là ?"
           },
           {
-            "titel": "Retour : les signaux d’alerte de la semaine",
+            "titel": "Retour, mission et thème",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass. Pour la mission de la semaine, demander : ton moment est-il venu – et as-tu remarqué ton signal d’alerte ? Pouce en haut, au milieu, en bas ; deux voix racontent où c’était et ce qu’elles ont fait ensuite ; personne n’est obligé d’avoir vécu son moment. Puis revenir au tour d’humeur : beaucoup ont trouvé deux émotions – est-ce même possible, deux à la fois ? Écrire le thème au tableau : les émotions mélangées.",
+            "text": "Revenir sur la mission de la semaine : ton moment est-il venu – et as-tu remarqué ton signal d’alerte ? Pouce en haut, au milieu ou en bas ; une voix raconte en une phrase où c’était. Puis annoncer le thème et l’écrire au tableau : les émotions mélangées.",
             "sagen": [
-              "Ton moment est-il venu – et as-tu remarqué ton signal d’alerte ? Où était-ce, et qu’as-tu fait ensuite ?",
-              "Beaucoup d’entre vous viennent de trouver deux émotions. Est-ce que c’est possible, deux à la fois ?"
+              "Votre moment est-il venu – et avez-vous remarqué votre signal d’alerte ?",
+              "Tout à l’heure, beaucoup d’entre vous ont collé deux gommettes – est-ce possible, deux émotions à la fois ?"
             ],
-            "tipp": "La carte de la classe de la séance 11 est affichée à côté de la roue : qui a remarqué son signal peut le montrer dessus au lieu de raconter longuement."
+            "tipp": "« Le moment n’est pas venu » est une bonne réponse – personne n’a besoin d’avoir réussi quelque chose."
           },
           {
             "titel": "Explorer les émotions mélangées",
-            "dauer": 20,
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Entrée en matière au tableau (3 min) : imaginez que vous êtes invités à une fête d’anniversaire – et que le même jour, vous vous êtes disputés avec votre meilleur ami. Quelles émotions sont là ? Rassembler les réponses ; en général, l’envie d’y aller, la colère et la tristesse arrivent en même temps. Puis l’exercice 1 (7 min) : montrer au tableau la situation 1 – cocher toutes les émotions qui conviennent, entourer la croix de la plus forte. Ensuite, lire chaque situation une fois à voix haute ; chacun coche en silence, pour soi. Mise en commun (8 min) : pour trois situations, compter à main levée qui a coché quelle émotion et écrire les chiffres au tableau. Pour finir, écrire le mot « doux-amer » au tableau (2 min).",
+            "text": "D’abord un schéma au tableau : une fête d’anniversaire et, le même jour, une dispute avec le meilleur ami – quelles émotions sont là ? Puis l’exercice 1 : l’enseignant·e fait la première situation en exemple, chacun coche les autres en silence, puis on compte. Pour finir, l’exercice 2 seul : un moment à soi avec deux émotions et un chiffre pour chacune.",
             "sagen": [
               "Est-ce qu’on peut être content et triste en même temps ?",
-              "Regardez les chiffres : même situation, et pourtant presque chacun a coché autre chose. Qu’est-ce que ça nous dit ?"
+              "Même situation, et presque chacun a coché autre chose – qu’est-ce que ça nous dit ?"
             ],
-            "tipp": "Beaucoup connaissent « doux-amer » par des chansons ou par la fin d’une colonie de vacances – c’est un nom pour un mélange. Ne pas juger les différences au tableau : chaque réponse est juste pour celui qui la donne.",
-            "wennEsKippt": "Si deux jeunes se disputent pour savoir quelle émotion est « la bonne », leur renvoyer la question : vous avez raison tous les deux – chacun pour soi. C’est exactement ce que montre l’exercice. Si une situation touche visiblement un jeune, ne pas approfondir, mais proposer un entretien après le cours.",
+            "punkte": [
+              "Schéma (4 min) : rassembler les émotions – souvent l’envie d’y aller, la colère et la tristesse en même temps – et les dessiner en deux cercles qui se chevauchent. Les émotions se mélangent comme des couleurs, souvent l’une est plus forte.",
+              "Exercice 1 (12 min) : faire la situation 1 ensemble : cocher toutes les émotions qui conviennent, entourer la plus forte. L’enseignant·e lit les situations 2 et 3, chacun coche en silence.",
+              "Mise en commun (5 min) : pour chaque situation, compter à main levée qui a coché quelle émotion, écrire les chiffres au tableau. Ne rien juger : chaque réponse est juste pour la personne.",
+              "Bon à savoir (2 min) : écrire « doux-amer » au tableau (content et triste à la fois), lire l’encadré ensemble.",
+              "Exercice 2 (7 min) : seul et en silence – un moment avec deux émotions, un chiffre de 0 à 10 pour chacune. Un moment d’un film compte aussi ; rien n’est lu à voix haute."
+            ],
+            "wennEsKippt": "Si deux jeunes se disputent pour savoir quelle émotion est « la bonne » : vous avez raison tous les deux – chacun pour soi. Si une situation touche visiblement un jeune, ne pas approfondir, mais proposer un entretien après le cours.",
             "blatt": "ff7-gemischte-gefuehle"
           },
           {
-            "titel": "La ligne de 0 à 10",
-            "dauer": 10,
+            "titel": "Pause active : la ligne de 0 à 10",
+            "dauer": 5,
             "phase": "aktiv",
-            "text": "Le long du mur se trouve la ligne en ruban de masquage, avec 0 à un bout et 10 à l’autre. Annoncer une situation et une émotion ; chacun se place à l’endroit qui lui correspond. Après chaque situation, demander à deux jeunes placés à des endroits différents ce qui détermine leur chiffre – c’est facultatif et sans jugement (cinq situations, 8 min). Pour finir, annoncer : au prochain chapitre, la ligne de 0 à 10 deviendra l’échelle de tension de 0 à 100 (2 min).",
+            "text": "Tout le monde se lève ; le long du mur, la ligne en ruban de masquage, 0 à gauche, 10 à droite. L’enseignant·e annonce une situation et une émotion, chacun se place à l’endroit qui lui correspond, et deux jeunes placés à des endroits différents disent ce qui détermine leur chiffre. Pour finir, annoncer : au prochain chapitre, la ligne deviendra une échelle de 0 à 100.",
             "sagen": [
-              "Placez-vous là où ça vous correspond. Il n’y a pas de bon chiffre.",
+              "Placez-vous là où ça vous correspond – il n’y a pas de bon chiffre.",
               "Toi, tu es à 2 et toi à 9 – qu’est-ce qui fait la différence ?"
             ],
             "punkte": [
               "Le bus te passe sous le nez. – À quel point es-tu agacé·e ?",
               "À la cantine, il y a ton plat préféré. – À quel point es-tu content·e ?",
-              "Ta batterie est à 2 %, et tu attends un message important. – À quel point es-tu nerveux·se ?",
-              "Demain, tu fais un exposé devant la classe. – À quel point as-tu le trac ?",
-              "La prof te demande de rester après le cours, sans dire pourquoi. – À quel point es-tu inquiet·ète ?"
+              "Demain, tu fais un exposé devant la classe. – À quel point as-tu le trac ?"
             ],
-            "tipp": "Accompagner les situations d’un geste, ainsi les nouveaux qui parlent peu français comprennent de quoi il s’agit. S’il y a trop peu de place, une moitié de la classe se place et l’autre montre le chiffre avec les doigts ; puis on échange. Garder les feuilles numérotées pour la séance 13.",
-            "wennEsKippt": "Si tout le monde se place au même endroit pour rire, faire écouter la situation suivante les yeux fermés ; on ne part qu’au signal. Qui ne veut pas se lever montre le chiffre avec les doigts."
-          },
-          {
-            "titel": "Pause active : Zip Zap Boing",
-            "dauer": 5,
-            "phase": "aktiv",
-            "text": "Deux cercles de dix ; s’il n’y a pas assez de place, un grand cercle autour des îlots. Une impulsion circule en frappant dans les mains : avec « Zip » et un geste, elle passe au voisin ; avec « Zap », elle traverse le cercle vers quelqu’un qu’on regarde ; avec « Boing », mains levées, elle rebondit. Qui hésite ou se trompe continue simplement – personne n’est éliminé. Au bout de deux minutes, on accélère. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
-            "sagen": [
-              "Zip va sur le côté, Zap traverse le cercle, Boing renvoie. Qui se trompe rit et continue."
-            ],
-            "tipp": "Jouer dans un des cercles ; un jeune sûr de lui anime l’autre. Qui ne veut pas jouer donne le rythme ou compte les Zip.",
-            "wennEsKippt": "Si l’impulsion vise toujours la même personne ou si quelqu’un se fait moquer, arrêter un instant : chaque impulsion va à quelqu’un qui ne l’a pas encore eue."
+            "tipp": "Garder les feuilles numérotées pour la séance 13. Qui ne veut pas se lever montre son chiffre avec les doigts."
           },
           {
             "titel": "Mélange d’émotions avec les cartes",
-            "dauer": 20,
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Chaque îlot tire, faces cachées, une carte de la page 1 et une de la page 2 des cartes des émotions, puis répartit les rôles : deux ou trois jouent, un jeune parle pour le groupe. Le groupe invente une situation du quotidien où les deux émotions sont là en même temps et donne à chacune un chiffre de 0 à 10 (5 min). Puis il montre la situation en image figée ou la joue trente secondes sans paroles. Les autres îlots étalent leurs cartes face visible, se concertent à voix basse et montrent à trois les deux cartes qu’ils devinent ; ensuite, le porte-parole dit la situation en une phrase et donne les chiffres (cinq groupes, 12 min). Pour finir, demander : quel mélange était le plus difficile ? Connaissez-vous des mots pour des mélanges – doux-amer, avoir hâte, le trac ? (3 min)",
+            "text": "Chaque îlot tire, faces cachées, une carte de la page 1 et une de la page 2 des cartes des émotions et invente une scène du quotidien où les deux émotions sont là en même temps – avec un chiffre de 0 à 10 pour chacune (exercice 3). Puis il montre la scène en image figée ou la joue trente secondes sans paroles, et les autres devinent les deux cartes. Pour finir, la classe rassemble des mots pour les mélanges.",
             "sagen": [
-              "Tirez deux cartes. Quand est-ce que quelqu’un pourrait ressentir les deux en même temps – dans le bus, à la récré, à la maison, au sport ?",
-              "Quelle émotion parle le plus fort dans votre scène – et avec quel chiffre ?"
+              "Tirez deux cartes : quand est-ce que quelqu’un pourrait ressentir les deux en même temps – dans le bus, à la récré, au sport ?",
+              "Quelle émotion est la plus forte dans votre scène – et avec quel chiffre ?"
             ],
-            "tipp": "Si deux cartes semblent ne pas aller du tout ensemble, comme Dégoût et Avoir hâte, c’est la meilleure consigne : presque toujours, le groupe trouve une scène – le plat préféré qui vient de tomber par terre.",
-            "wennEsKippt": "Si un groupe construit une scène sur un jeune de la classe ou se moque de quelqu’un, arrêter : on joue des personnages inventés. Si une scène glisse vers la violence ou les blessures, la ramener au quotidien : le bus, la récré, le sport, la maison. Si un groupe ne veut pas jouer, il dit sa situation en une phrase, et la classe devine quand même.",
-            "blatt": "ff7-gefuehlskarten"
-          },
-          {
-            "titel": "Mon mélange et retour sur le chapitre",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Seul et en silence (5 min) : exercice 2 de la fiche – un moment d’émotions mélangées et un chiffre pour chaque émotion ; un moment d’un film ou d’une série compte aussi. Rien n’est lu à voix haute. Puis retour sur le chapitre (10 min) : les affiches des dernières semaines – messages, console, carte de la classe – sont accrochées devant ; les montrer brièvement l’une après l’autre. Chaque îlot se met d’accord, à sa place, sur une phrase : que savons-nous maintenant des émotions que nous ne savions pas il y a quatre semaines ? Chaque groupe dit sa phrase, l’enseignant·e l’écrit au tableau.",
-            "sagen": [
-              "Vous écrivez seulement pour vous. Un moment d’un film compte tout autant.",
-              "Que savez-vous maintenant des émotions que vous ne saviez pas il y a quatre semaines ?"
+            "punkte": [
+              "Préparer (10 min) : répartir les rôles – deux ou trois jouent, un jeune parle pour le groupe –, inventer la scène, noter les deux chiffres sur la fiche (exercice 3).",
+              "Jouer (20 min) : par groupe, trente secondes d’image figée ou de jeu sans paroles ; les autres étalent leurs cartes, se concertent à voix basse et montrent à trois les deux cartes qu’ils devinent. Le porte-parole conclut : la situation en une phrase, avec les deux chiffres.",
+              "Mise en commun (5 min) : quel mélange était le plus difficile ? Rassembler des mots pour les mélanges : doux-amer, avoir hâte, le trac."
             ],
-            "tipp": "Photographier les phrases des groupes : c’est une bonne entrée dans le chapitre suivant et pour le bilan de fin d’année.",
-            "wennEsKippt": "Si un groupe ne trouve rien, montrer une affiche et demander : qu’est-ce qui vous a surpris ici ? Si tout le monde parle en même temps, désigner une personne qui note la phrase.",
+            "wennEsKippt": "Si un groupe construit une scène sur un jeune de la classe ou glisse vers la violence, arrêter : on joue des personnages inventés du quotidien – le bus, la récré, le sport, la maison. Si un groupe ne veut pas jouer, il dit sa situation en une phrase, et la classe devine quand même.",
             "blatt": "ff7-gemischte-gefuehle"
           },
           {
             "titel": "Skill : la respiration par le ventre",
-            "dauer": 5,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Tout le monde est assis, une main sur le ventre. D’abord, estimer en silence : à quel point suis-je agité·e en ce moment, de 0 à 10 ? Puis cinq respirations : inspirer par le nez, le ventre soulève la main comme un ballon ; expirer lentement par la bouche, plus longtemps qu’à l’inspiration. Compter à voix basse et faire l’exercice avec la classe. Ensuite, estimer de nouveau son chiffre ; qui le souhaite dit s’il a changé – vers le haut, vers le bas ou pas du tout ; tout est une bonne observation. Expliquer : la longue expiration freine le corps ; au prochain chapitre, vous testerez les skills exactement comme ça – chiffre avant, skill, chiffre après. Sur la fiche, le skill figure dans l’encadré « La respiration par le ventre ».",
+            "text": "D’abord la respiration par le ventre : une main sur le ventre, estimer en silence son agitation de 0 à 10, cinq longues respirations, estimer de nouveau son chiffre. Puis la clôture : une phrase dans le Skills-Pass, le bilan du trimestre avec les cinq croix, annoncer la mission, choisir son moment et montrer les numéros d’aide.",
             "sagen": [
-              "Vous seuls connaissez votre chiffre. Vous n’avez à le dire à personne."
+              "Vous seuls connaissez votre chiffre – vous n’avez à le dire à personne.",
+              "Il n’y a pas de bonne ou de mauvaise réponse – vous regardez seulement où vous en êtes."
             ],
             "punkte": [
-              "Assieds-toi confortablement et pose une main sur ton ventre.",
-              "Estime en silence : à quel point es-tu agité·e en ce moment, de 0 à 10 ?",
-              "Inspire par le nez en comptant jusqu’à quatre – ton ventre soulève ta main.",
-              "Expire lentement par la bouche en comptant jusqu’à six. Cinq fois.",
-              "Estime ton chiffre encore une fois. Qu’est-ce qui a changé ?"
+              "Skill (5 min) : une main sur le ventre, estimer en silence son agitation de 0 à 10. Inspirer par le nez jusqu’à quatre, expirer par la bouche jusqu’à six, cinq fois. Estimer de nouveau : qu’est-ce qui a changé ?",
+              "Skills-Pass (2 min) : une phrase – quelles deux émotions étaient là en même temps aujourd’hui ?",
+              "Bilan du trimestre (4 min) : noter son skill le plus important sur la page, cocher les cinq phrases (pas encore, parfois, souvent) pendant que l’enseignant·e les lit lentement. Pas de note, rien n’est ramassé ; l’enseignant·e tamponne.",
+              "Mission et moment (2 min) : lire la mission de la semaine ; à trois, chacun montre quand son moment arrivera – un doigt l’au revoir, deux des retrouvailles, trois le premier jour de vacances – et l’écrit dans le cahier.",
+              "Numéros d’aide (2 min) : ouvrir la page « Comment fonctionne la matière » – les numéros valent aussi pendant les vacances. Puis annoncer la suite."
             ],
-            "tipp": "Qui trouve « le ballon » puéril dit simplement respiration par le ventre. L’essentiel, c’est la longue expiration.",
-            "wennEsKippt": "Si des rires fusent, continuer à compter calmement et faire l’exercice soi-même. Qui a la tête qui tourne respire normalement et regarde."
-          },
-          {
-            "titel": "Skills-Pass, bilan du trimestre et moment",
-            "dauer": 10,
-            "phase": "abschluss",
-            "text": "Ouvrir le Skills-Pass. D’abord, comme d’habitude, la phrase de la séance avec la question clé : quelles deux émotions étaient là en même temps chez moi aujourd’hui ? (2 min) Puis le bilan du trimestre (5 min) : les skills du trimestre sont au tableau ; chacun écrit son skill le plus important sur la ligne et coche, pour les cinq phrases en bas de la page : pas encore, parfois ou souvent. Lire lentement les phrases à voix haute. C’est une auto-évaluation, pas une note ; rien n’est ramassé. Qui le souhaite dit ce qui a changé depuis septembre – deux voix. Mission et choix du moment (2 min) : annoncer la mission de la semaine – s’arrêter un instant lors d’un mélange d’émotions et nommer les deux. À trois, tout le monde montre quand son moment arrivera le plus probablement : un doigt pour “l’au revoir avant les vacances”, deux pour “des retrouvailles”, trois pour “le premier jour de vacances”, le poing pour un moment à soi – et le note dans la colonne « Mon moment : quand … » du cahier ; l’exercice 3 de la fiche sert à noter ce qui s’est passé. Pour finir, tampon et prochaine séance ; montrer aussi les numéros d’aide de la page « Comment fonctionne la matière » – ils restent valables pendant les vacances (1 min).",
-            "sagen": [
-              "Il n’y a pas de bonne ou de mauvaise réponse. Vous regardez seulement où vous en êtes – à la fin de l’année, vous regarderez encore une fois.",
-              "Qu’est-ce qui a changé depuis septembre – chez vous ou dans la classe ?",
-              "Quand ton mélange d’émotions arrivera-t-il le plus probablement ? Un doigt : l’au revoir avant les vacances. Deux : des retrouvailles. Trois : le premier jour de vacances. Le poing : un moment à moi."
-            ],
-            "tipp": "Si ça bloque, donner un exemple personnel, par exemple : pour « Je sais dire comment je me sens », je cocherais maintenant plus souvent « parfois » qu’en septembre. La mission de la semaine vaut jusqu’à la prochaine séance, même par-dessus des vacances – d’où l’importance d’écrire le moment aujourd’hui dans le cahier.",
             "wennEsKippt": "Si certains cochent partout « souvent » pour finir vite, l’accepter – l’évaluation leur appartient. Si un jeune coche partout « pas encore » ou écrit « rien appris », ne pas discuter, mais lui demander brièvement après le cours comment s’est passé son trimestre.",
             "blatt": "ff-skills-pass"
           }
         ],
-        "bruecke": "La prochaine fois commence un nouveau chapitre : la ligne de 0 à 10 devient l’échelle de tension de 0 à 100 – et vous découvrirez quel skill aide encore à quel chiffre.",
-        "mission": "Quand ton moment arrive – un au revoir, des retrouvailles, le premier jour de vacances –, arrête-toi : quelles deux émotions sont là en même temps, et à quelle force de 0 à 10 ?",
-        "hintergrund": "Les émotions arrivent rarement seules – la base de la séance. Résultat clé : Larsen, McGraw et Cacioppo (2001) ont montré que, dans des moments doux-amers comme un au revoir, on ressent de la joie et de la tristesse en même temps – pas seulement en alternance rapide. Plutchik (2001) décrit les émotions comme des couleurs qui se combinent en de nouveaux mélanges et les classe par dimensions, dont l’intensité. Qui reconnaît les émotions mélangées comme normales comprend mieux les réactions contradictoires, chez soi et chez les autres. Évaluer l’intensité d’une émotion prépare le chapitre suivant : l’entraînement aux skills pour adolescents utilise une échelle de tension de 0 à 100, car selon l’intensité, ce ne sont pas les mêmes skills qui aident (Fleischhaker et al., 2011). Le bilan du trimestre dans le Skills-Pass est une auto-évaluation, pas une note : il rend visible ce qui a grandi.",
+        "bruecke": "Après les vacances commence un nouveau chapitre : la ligne de 0 à 10 devient l’échelle de tension de 0 à 100 – et vous découvrirez quel skill aide encore à quel chiffre.",
+        "mission": "Arrête-toi un instant : quelles deux émotions, et quelle force de 0 à 10 ?",
+        "hintergrund": "Les émotions arrivent rarement seules : dans des moments doux-amers comme un au revoir, on ressent réellement de la joie et de la tristesse en même temps (Larsen, McGraw & Cacioppo, 2001). Plutchik (2001) décrit les émotions comme des couleurs qui se mélangent et se classent par intensité. Évaluer l’intensité prépare l’échelle de tension de 0 à 100 de l’entraînement aux skills pour adolescents (Fleischhaker, Sixt & Schulz, 2011).",
         "quellen": [
           "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696.",
           "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
           "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer."
         ],
-        "achtung": "Le mélange d’émotions et l’exercice 2 peuvent réveiller des souvenirs personnels – une séparation, un déménagement, un au revoir. Personne n’est obligé de parler de soi ; les films et les séries comptent autant, on peut toujours dire « je passe ». Ne pas approfondir devant la classe ; proposer d’en parler après le cours. Avant les vacances, partir pèse à certains quand la maison offre peu de soutien : être attentif au repli, montrer les numéros d’aide du cahier et, en cas d’inquiétude, en parler au régent et au SePAS. Le bilan n’est ni ramassé ni noté. En cas de signes de violence, d’automutilation ou d’idées suicidaires, informer le SePAS le jour même et suivre le protocole de protection.",
+        "achtung": "L’exercice 2 et le mélange d’émotions peuvent réveiller des souvenirs personnels – une séparation, un déménagement, un au revoir : personne n’est obligé de parler de soi, les films et les séries comptent autant, on peut toujours dire « je passe ». Avant les vacances, partir pèse à certains quand la maison offre peu de soutien : être attentif au repli, montrer les numéros d’aide du cahier, en parler en cas d’inquiétude au régent et au SePAS, sans approfondir devant la classe. En cas de signes de violence, d’automutilation ou d’idées suicidaires, informer le SePAS le jour même et suivre le protocole de protection de l’école.",
         "differenzierung": {
-          "leichter": "Exercice 1 seulement avec les situations 1 à 4 ; les six émotions en visages au tableau. Sur la ligne, tout le monde montre aussi le chiffre avec les doigts. Pour le mélange d’émotions, prendre des cartes de la page 1, avec visages. Pour le bilan du trimestre, lire lentement les cinq phrases à voix haute ; un binôme aide à comprendre.",
-          "schwerer": "Pour une situation, noter ce que chacune des deux émotions voudrait faire – et laquelle gagne à la fin. Ou rassembler des mots pour des mélanges, comme doux-amer ou le trac, et expliquer quelles émotions s’y cachent."
+          "leichter": "Dessiner les émotions en visages au tableau et, pour le mélange d’émotions, tirer deux cartes de la page 1 (avec visages). Lire lentement les cinq phrases du bilan du trimestre ; un binôme aide à comprendre.",
+          "schwerer": "Pour une scène, noter ce que chacune des deux émotions voudrait faire – et laquelle gagne à la fin. Ou rassembler d’autres mots pour les mélanges et expliquer quelles émotions s’y cachent."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur à deux émotions (5 min), exercice 1 avec mise en commun (15 min), ligne de 0 à 10 (8 min), respiration par le ventre (5 min), Skills-Pass et bilan du trimestre (10 min), mission avec le moment, numéros d’aide et prochaine séance (7 min). Le mélange d’émotions et le retour sur le chapitre sont supprimés ; le bilan du trimestre est prioritaire."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur à deux émotions (5 min), schéma et exercice 1 avec mise en commun (18 min), ligne de 0 à 10 (5 min), respiration par le ventre (5 min), Skills-Pass avec bilan du trimestre (10 min), mission avec le moment, numéros d’aide et suite (7 min). Le mélange d’émotions est supprimé ; le bilan du trimestre est prioritaire."
       }
     }
   ],
@@ -484,15 +384,17 @@
       ],
       "de": {
         "titel": "Gemischte Gefühle",
-        "untertitel": "Selten fühlt man nur eine Sache – und das ist normal.",
+        "untertitel": "Zwei Gefühle auf einmal sind normal.",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Du freust dich auf die Geburtstagsfeier und bist gleichzeitig sauer auf deinen besten Freund. Das ist kein Widerspruch: Gefühle mischen sich wie Farben – und oft ist eines lauter als das andere."
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Bei einem Abschied bist du oft froh und traurig zugleich. Beide Gefühle dürfen da sein, meist ist eines lauter. Wer beide benennt, versteht sich besser."
           },
           {
             "art": "aufgabe",
-            "text": "Welche Gefühle hättest du? Kreuze alle an, die passen. Kreise das stärkste ein.",
+            "text": "Kreuze an, was du fühlen würdest, und kreise das stärkste ein.",
             "symbole": [
               "ankreuzen",
               "einkreisen"
@@ -501,12 +403,9 @@
           {
             "art": "einschaetzung",
             "items": [
-              "1. Du hast viel gelernt und trotzdem eine schlechte Note. Dein Sitznachbar hat eine sehr gute.",
-              "2. Du bist zu einer Geburtstagsfeier eingeladen – und hast dich am selben Tag mit deinem besten Freund gestritten.",
-              "3. Du wirst vor der ganzen Klasse gelobt, und alle schauen dich an.",
-              "4. Du wirst Kapitän deiner Mannschaft, fühlst dich aber noch nicht bereit.",
-              "5. Die Ferien beginnen – aber deine beste Freundin oder dein bester Freund ist die ganzen Ferien weg.",
-              "6. Morgen fährst du mit der Klasse drei Tage weg – zum ersten Mal ohne deine Familie."
+              "1. Du hast viel gelernt und trotzdem eine schlechte Note. Dein Nachbar hat eine sehr gute.",
+              "2. Die Ferien fangen an – aber dein bester Freund ist weg.",
+              "3. Du wirst vor der Klasse gelobt. Alle schauen dich an."
             ],
             "optionen": [
               "Freude",
@@ -519,10 +418,9 @@
           },
           {
             "art": "aufgabe",
-            "text": "Und bei dir? Denk an einen Moment mit gemischten Gefühlen. Schreib die Gefühle auf und gib jedem eine Zahl von 0 bis 10.",
-            "hinweis": "0 heißt: gar nicht. 10 heißt: so stark wie nie. Ein Moment aus einem Film oder einer Serie zählt auch.",
+            "text": "Schreib einen Moment mit zwei Gefühlen auf.",
+            "hinweis": "Gib jedem Gefühl eine Zahl von 0 bis 10. Das gehört dir – du musst nichts vorlesen.",
             "symbole": [
-              "nachdenken",
               "schreiben"
             ]
           },
@@ -530,86 +428,53 @@
             "art": "tabelle",
             "spalten": [
               "Der Moment",
-              "Meine Gefühle und wie stark (0–10)"
+              "Meine zwei Gefühle (0–10)"
             ],
             "breiten": [
               2.2,
               2.8
             ],
-            "zeilen": 2,
+            "zeilen": 3,
             "beispiel": [
               "Mein Cousin zieht zurück nach Portugal.",
-              "traurig 8 · froh für ihn 5 · ein bisschen neidisch 2"
+              "traurig 8 · froh für ihn 5"
             ]
           },
           {
-            "art": "info",
-            "symbol": "merke",
-            "titel": "Zwei Gefühle auf einmal sind normal",
-            "text": "Beide dürfen da sein, und oft ist eines lauter. Wer beide benennt, versteht sich selbst – und andere – besser."
-          },
-          {
             "art": "aufgabe",
-            "text": "Deine Wochen-Mission: der Gefühls-Mix in deinem Moment. Welche zwei Gefühle waren da, und wie stark?",
-            "hinweis": "Deinen Moment hast du in der Stunde gewählt – er steht bei den Wochen-Missionen. Ein paar Stichworte reichen.",
+            "text": "Erfinde mit deiner Gruppe eine Szene mit zwei Gefühlskarten.",
             "symbole": [
-              "schreiben"
+              "gruppe"
             ]
           },
           {
             "art": "tabelle",
             "spalten": [
-              "Wann?",
               "Gefühl 1 und Zahl",
-              "Gefühl 2 und Zahl"
+              "Gefühl 2 und Zahl",
+              "Unsere Szene"
             ],
             "breiten": [
-              2,
               1.5,
-              1.5
+              1.5,
+              3
             ],
             "zeilen": 2,
             "beispiel": [
-              "Abschied von meiner Tante am Bahnhof",
-              "traurig 7",
-              "erleichtert 3"
+              "Vorfreude 7",
+              "Wut 4",
+              "Geburtstag, aber Streit"
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Wörter für Mischungen",
-            "punkte": [
-              "bittersüß: froh und traurig zugleich – etwa am letzten Ferientag",
-              "Lampenfieber: Angst und Vorfreude vor einem Auftritt",
-              "Heimweh: Traurigkeit und Liebe zu einem Ort, der weit weg ist"
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "tipp",
-            "titel": "Die Bauchatmung – dein Skill",
-            "punkte": [
-              "Leg eine Hand auf den Bauch.",
-              "Atme durch die Nase ein, bis vier – der Bauch wird rund.",
-              "Atme langsam durch den Mund aus, bis sechs. Fünfmal."
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Du entscheidest, was du teilst.",
-            "text": "Aufgabe 2 und 3 gehören dir. Du erzählst nur davon, wenn du willst."
           }
         ],
         "lehrer": {
           "ziel": "Die Jugendlichen erkennen, dass mehrere, auch widersprüchliche Gefühle gleichzeitig da sein können und dass dieselbe Situation bei verschiedenen Menschen Verschiedenes auslöst. Sie schätzen die Stärke von Gefühlen von 0 bis 10 ein.",
           "ablauf": [
-            "Einheit 12, Schritt 3: Aufgabe 1 – die Lehrkraft liest jede Situation vor, alle kreuzen allein an (7 Min.); dann für drei Situationen per Handzeichen auszählen.",
-            "Schritt 7: Aufgabe 2 allein und still (5 Min.); nichts wird vorgelesen.",
-            "Aufgabe 3 begleitet die Wochen-Mission mit dem in der Stunde gewählten Moment; die Brücke von Einheit 13 fragt kurz danach. Der Kasten „Aus der Forschung“ fasst Larsen et al. (2001) zusammen."
+            "Einheit 12, Schritt 3: Aufgabe 1 – die Lehrkraft macht die erste Situation vor, alle kreuzen die anderen allein an; dann per Handzeichen auszählen. Danach Aufgabe 2 allein und still; nichts wird vorgelesen.",
+            "Schritt 5: Aufgabe 3 – jede Tischgruppe trägt ihre zwei Karten, die Zahlen und die Szene ein, bevor sie vorspielt.",
+            "Auf den Satz „Das gehört dir“ hinweisen: Niemand muss vorlesen, was er geschrieben hat. Der Kasten „Gut zu wissen“ wird in Schritt 3 gemeinsam gelesen."
           ],
-          "hintergrund": "Menschen empfinden in bittersüßen Momenten tatsächlich gleichzeitig Freude und Traurigkeit (Larsen et al., 2001); Plutchik (2001) beschreibt Gefühle wie Farben, die sich mischen. Wer die Stärke eines Gefühls einschätzt, bereitet die Anspannungsskala von 0 bis 100 vor.",
+          "hintergrund": "Menschen empfinden in bittersüßen Momenten tatsächlich gleichzeitig Freude und Traurigkeit (Larsen et al., 2001); Plutchik (2001) beschreibt Gefühle wie Farben, die sich mischen und nach ihrer Stärke ordnen lassen. Wer die Stärke eines Gefühls einschätzt, bereitet die Anspannungsskala von 0 bis 100 vor.",
           "quellen": [
             "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696.",
             "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350."
@@ -619,15 +484,17 @@
       },
       "fr": {
         "titel": "Émotions mélangées",
-        "untertitel": "On ressent rarement une seule chose – et c’est normal.",
+        "untertitel": "Deux émotions à la fois, c’est normal.",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Tu te réjouis d’aller à la fête d’anniversaire et, en même temps, tu en veux à ton meilleur ami. Ce n’est pas une contradiction : les émotions se mélangent comme des couleurs – et souvent, l’une parle plus fort que l’autre."
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Bon à savoir",
+            "text": "Un au revoir rend souvent content et triste à la fois. Les deux émotions ont leur place ; en général, l’une est plus forte. Les nommer aide à mieux se comprendre."
           },
           {
             "art": "aufgabe",
-            "text": "Quelles émotions aurais-tu ? Coche toutes celles qui conviennent. Entoure la plus forte.",
+            "text": "Coche ce que tu ressentirais et entoure l’émotion la plus forte.",
             "symbole": [
               "ankreuzen",
               "einkreisen"
@@ -636,12 +503,9 @@
           {
             "art": "einschaetzung",
             "items": [
-              "1. Tu as beaucoup révisé et tu as quand même une mauvaise note. Ton voisin a une très bonne note.",
-              "2. Tu es invité·e à une fête d’anniversaire – et le même jour, tu t’es disputé·e avec ton meilleur ami.",
-              "3. Tu es félicité·e devant toute la classe, et tout le monde te regarde.",
-              "4. Tu deviens capitaine de ton équipe, mais tu ne te sens pas encore prêt·e.",
-              "5. Les vacances commencent – mais ta meilleure amie ou ton meilleur ami part pendant toutes les vacances.",
-              "6. Demain, tu pars trois jours avec la classe – pour la première fois sans ta famille."
+              "1. Tu as beaucoup révisé, mais tu as une mauvaise note. Ton voisin a une très bonne note.",
+              "2. Les vacances commencent – mais ton meilleur ami est parti.",
+              "3. Tu es félicité·e devant la classe. Tout le monde te regarde."
             ],
             "optionen": [
               "Joie",
@@ -654,10 +518,9 @@
           },
           {
             "art": "aufgabe",
-            "text": "Et toi ? Pense à un moment où tes émotions étaient mélangées. Écris-les et donne à chacune un chiffre de 0 à 10.",
-            "hinweis": "0 veut dire : pas du tout. 10 veut dire : plus fort que jamais. Un moment d’un film ou d’une série compte aussi.",
+            "text": "Écris un moment avec deux émotions.",
+            "hinweis": "Donne à chacune un chiffre de 0 à 10. Ça t’appartient – tu n’as pas à le lire à voix haute.",
             "symbole": [
-              "nachdenken",
               "schreiben"
             ]
           },
@@ -665,86 +528,53 @@
             "art": "tabelle",
             "spalten": [
               "Le moment",
-              "Mes émotions et leur force (0–10)"
+              "Mes deux émotions (0–10)"
             ],
             "breiten": [
               2.2,
               2.8
             ],
-            "zeilen": 2,
+            "zeilen": 3,
             "beispiel": [
               "Mon cousin repart vivre au Portugal.",
-              "triste 8 · content pour lui 5 · un peu jaloux 2"
+              "triste 8 · content pour lui 5"
             ]
           },
           {
-            "art": "info",
-            "symbol": "merke",
-            "titel": "Deux émotions à la fois, c’est normal",
-            "text": "Les deux ont le droit d’exister, et souvent, l’une parle plus fort. Qui nomme les deux se comprend mieux – et comprend mieux les autres."
-          },
-          {
             "art": "aufgabe",
-            "text": "Ta mission de la semaine : le mélange d’émotions dans ton moment. Quelles deux émotions étaient là, et avec quelle force ?",
-            "hinweis": "Tu as choisi ton moment pendant le cours – il est noté avec les missions de la semaine. Quelques mots-clés suffisent.",
+            "text": "Invente avec ton groupe une scène avec deux cartes d’émotions.",
             "symbole": [
-              "schreiben"
+              "gruppe"
             ]
           },
           {
             "art": "tabelle",
             "spalten": [
-              "Quand ?",
               "Émotion 1 et chiffre",
-              "Émotion 2 et chiffre"
+              "Émotion 2 et chiffre",
+              "Notre scène"
             ],
             "breiten": [
-              2,
               1.5,
-              1.5
+              1.5,
+              3
             ],
             "zeilen": 2,
             "beispiel": [
-              "Au revoir à ma tante à la gare",
-              "triste 7",
-              "soulagé·e 3"
+              "Avoir hâte 7",
+              "Colère 4",
+              "Anniversaire, mais dispute"
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Des mots pour les mélanges",
-            "punkte": [
-              "doux-amer : content et triste à la fois – par exemple le dernier jour des vacances",
-              "le trac : la peur et l’envie de se lancer, avant de passer devant les autres",
-              "le mal du pays : la tristesse et l’attachement à un lieu qui est loin"
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "tipp",
-            "titel": "La respiration par le ventre – ton skill",
-            "punkte": [
-              "Pose une main sur ton ventre.",
-              "Inspire par le nez en comptant jusqu’à quatre – le ventre s’arrondit.",
-              "Expire lentement par la bouche jusqu’à six. Cinq fois."
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Tu décides de ce que tu partages.",
-            "text": "Les exercices 2 et 3 t’appartiennent. Tu n’en parles que si tu le veux."
           }
         ],
         "lehrer": {
           "ziel": "Les jeunes reconnaissent que plusieurs émotions, même contradictoires, peuvent être là en même temps et qu’une même situation déclenche des émotions différentes selon les personnes. Ils évaluent l’intensité des émotions de 0 à 10.",
           "ablauf": [
-            "Séance 12, étape 3 : exercice 1 – lire chaque situation à voix haute, chacun coche seul (7 min) ; puis décompte à main levée pour trois situations.",
-            "Étape 7 : exercice 2 seul et en silence (5 min) ; rien n’est lu à voix haute.",
-            "L’exercice 3 accompagne la mission de la semaine avec le moment choisi pendant le cours ; le lien de la séance 13 y revient brièvement. L’encadré « Ce que dit la recherche » résume Larsen et al. (2001)."
+            "Séance 12, étape 3 : exercice 1 – l’enseignant·e fait la première situation en exemple, chacun coche les autres seul ; puis décompte à main levée. Ensuite exercice 2, seul et en silence ; rien n’est lu à voix haute.",
+            "Étape 5 : exercice 3 – chaque îlot note ses deux cartes, les chiffres et la scène avant de jouer.",
+            "Insister sur la phrase « Ça t’appartient » : personne n’a à lire ce qu’il a écrit. L’encadré « Bon à savoir » se lit ensemble à l’étape 3."
           ],
-          "hintergrund": "Dans des moments doux-amers, on ressent réellement de la joie et de la tristesse en même temps (Larsen et al., 2001) ; Plutchik (2001) décrit les émotions comme des couleurs qui se mélangent. Évaluer l’intensité d’une émotion prépare l’échelle de tension de 0 à 100.",
+          "hintergrund": "Dans des moments doux-amers, on ressent réellement de la joie et de la tristesse en même temps (Larsen et al., 2001) ; Plutchik (2001) décrit les émotions comme des couleurs qui se mélangent et se classent par intensité. Évaluer l’intensité d’une émotion prépare l’échelle de tension de 0 à 100.",
           "quellen": [
             "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696.",
             "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350."

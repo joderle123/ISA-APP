@@ -38,27 +38,24 @@
       ],
       "de": {
         "titel": "Zwischen laut und leise",
-        "kurz": "Zwischen Gegensätzen wie laut und leise findet jede Person ihren Platz, vergleicht ihn mit dem freundlichen Blick der anderen und erlebt, dass eine Klasse beide Seiten braucht.",
+        "kurz": "Jede Person ordnet sich zwischen Gegensätzen wie laut und leise ein, vergleicht das mit dem freundlichen Blick der anderen und erlebt, dass eine Klasse beide Seiten braucht.",
         "ziele": [
           "ordnen sich zwischen Gegensätzen ein und merken, dass sie je nach Situation anders sind",
-          "vergleichen ihr Selbstbild mit dem Blick einer Person, die sie selbst wählen",
-          "beschreiben, was laute und leise Seiten können und warum ein Team beide braucht",
-          "probieren achtsames Hören als Skill aus"
+          "vergleichen ihr Selbstbild mit dem freundlichen Blick einer Person, die sie selbst wählen",
+          "beschreiben, was laute und leise Seiten können und warum ein Team beide braucht"
         ],
         "material": [
-          "Schülerheft, Stempel für den Skills-Pass",
           "Gefühlsrad-Plakat, Klebepunkte",
           "Malerkrepp für eine Linie am Boden",
-          "Projektkarten (Kopiervorlage)",
+          "Projektkarten (Vorlage), Schere",
           "Fünf A3-Blätter, dicke Filzstifte",
-          "Klangschale oder Glas mit Löffel"
+          "Klangschale oder Glas mit Löffel",
+          "Schülerheft, Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
-          "Vorne im Raum eine Linie aus Malerkrepp kleben, von der Tür- zur Fensterseite; Platz für 20 lassen.",
-          "Tafelbild „Eher leise – eher laut“ vorbereiten und abdecken (Schritt 4).",
-          "Projektkarten kopieren und schneiden: eine je Tischgruppe, die sechste für eine schnelle Gruppe (Schritt 7).",
-          "Eigenes Blatt ausfüllen und zwei Linien wählen, die die Klasse erraten darf (Schritt 6).",
-          "Klären, ob jemand gerade ausgegrenzt wird; dann die Paare in Schritt 6 selbst einteilen."
+          "Linie aus Malerkrepp von der Tür- zur Fensterseite kleben (Platz für 20) und an der Tafel zwei Spalten „Eher leise“ und „Eher laut“ vorbereiten (Schritt 3).",
+          "Projektkarten kopieren und schneiden: eine je Tischgruppe, die sechste für eine schnelle Gruppe (Schritt 5). Eigenes Blatt ausfüllen: eine Zeile, die die Klasse erraten darf.",
+          "Klären, ob jemand gerade ausgegrenzt wird; dann die Paare in Schritt 3 selbst einteilen."
         ],
         "ablauf": [
           {
@@ -69,17 +66,12 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Rückblick: Glas, Mission und Thema"
+            "titel": "Rückblick, Mission und Thema"
           },
           {
-            "min": "15–30",
-            "phase": "aktiv",
-            "titel": "Aufstellung: zwischen zwei Polen"
-          },
-          {
-            "min": "30–45",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Leise ist nicht schüchtern: mein Platz auf den Linien"
+            "titel": "Wo stehe ich – und wie sehen mich die anderen?"
           },
           {
             "min": "45–50",
@@ -87,24 +79,14 @@
             "titel": "Bewegungspause: Gewitter im Klassenraum"
           },
           {
-            "min": "50–65",
-            "phase": "uebung",
-            "titel": "Rate mal: der Blick der anderen"
-          },
-          {
-            "min": "65–85",
+            "min": "50–85",
             "phase": "uebung",
             "titel": "Ein Team braucht beide Seiten"
           },
           {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: Achtsames Hören"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, Mission und Moment wählen"
           }
         ],
         "schritte": [
@@ -112,199 +94,126 @@
             "titel": "Check-in: Wie laut bist du heute?",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Wenn alle sitzen, sagt die Lehrkraft einen Satz zu ihrem Wort, zwei, drei Freiwillige folgen (4 Min.). Dann die Zusatzfrage: Wie laut seid ihr heute drauf? Auf ‚drei‘ zeigen alle gleichzeitig mit der flachen Hand – auf dem Tisch heißt flüsterleise, über dem Kopf heißt Lautsprecher, dazwischen ist alles erlaubt; die Lehrkraft zeigt zuerst (2 Min.). Die Höhen nicht deuten, nur laut spiegeln: Heute ist von allem etwas dabei. Zum Schluss fragen, ob das bei allen jeden Tag gleich ist; zwei Antworten reichen (3 Min.).",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad; die Lehrkraft beginnt. Heute dazu die Frage: Wie laut seid ihr heute drauf? Auf drei zeigen alle gleichzeitig mit der flachen Hand – auf dem Tisch heißt flüsterleise, über dem Kopf Lautsprecher, dazwischen ist alles erlaubt.",
             "sagen": [
-              "Zeigt mit der Hand, wie laut ihr heute drauf seid. Tisch heißt flüsterleise, über dem Kopf heißt Lautsprecher.",
-              "Seid ihr jeden Tag gleich laut? Und überall?"
+              "Zeigt mit der Hand, wie laut ihr heute drauf seid – Tisch heißt flüsterleise, über dem Kopf Lautsprecher.",
+              "Seid ihr jeden Tag gleich laut – und überall?"
             ],
-            "tipp": "Beiläufig sagen, dass leise nicht schlecht gelaunt heißt und laut nicht frech – bevor es jemand so deutet. Die Hand-Höhe ist schon der Einstieg ins Thema.",
-            "wennEsKippt": "Steigt jemand auf den Stuhl, um ‚noch lauter‘ zu zeigen, ihn freundlich herunterbitten und die Grenze nennen: Über dem Kopf ist das Maximum. Kommentiert jemand die Hand eines anderen („Du und leise?“), sofort freundlich stoppen: Hier zeigt jede Person nur für sich."
+            "wennEsKippt": "Kommentiert jemand die Hand eines anderen („Du und leise?“), sofort freundlich stoppen: Hier zeigt jede Person nur für sich. Steigt jemand auf den Stuhl, um „noch lauter“ zu zeigen, ihn freundlich herunterbitten: Über dem Kopf ist das Maximum."
           },
           {
-            "titel": "Rückblick: Glas, Mission und Thema",
+            "titel": "Rückblick, Mission und Thema",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission fragen: Kam euer Moment – und habt ihr euren kleinen Schritt gemacht oder die 4-7-8-Atmung? Daumen hoch, Mitte oder runter – eine Stimme erzählt, niemand muss den Moment erlebt haben. Das Glas der Bedürfnisse auf das Pult stellen und auf das Foto der Striche zeigen: Diese Tanks sind vielen von uns wichtig. Dann das Thema an die Tafel schreiben: Zwischen laut und leise – Wie bin ich? Und wie sehen mich die anderen?",
+            "text": "Zur Wochen-Mission fragen: Kam dein Moment – und hast du deinen kleinen Schritt oder die 4-7-8-Atmung gemacht? Daumen hoch, Mitte oder runter, eine Stimme erzählt; niemand muss den Moment erlebt haben. Dann das Thema nennen: Wie bin ich – und wie sehen mich die anderen?",
             "sagen": [
-              "Letzte Woche ging es darum, was ihr braucht. Heute geht es darum, wie ihr seid – und keine Art ist besser als die andere."
+              "Letzte Woche ging es darum, was ihr braucht – heute geht es darum, wie ihr seid, und keine Art ist besser als die andere."
             ],
-            "tipp": "Kam bei vielen der Moment nicht oder ging der Schritt unter, das gelassen nehmen: Neue Gewohnheiten brauchen mehrere Anläufe. Wer mag, nimmt sich denselben Plan noch einmal vor – mit demselben Moment."
+            "tipp": "Kam bei vielen der Moment nicht oder ging der Schritt unter, das gelassen nehmen: Neue Gewohnheiten brauchen mehrere Anläufe. Wer mag, nimmt sich denselben Plan noch einmal vor."
           },
           {
-            "titel": "Aufstellung: zwischen zwei Polen",
-            "dauer": 15,
-            "phase": "aktiv",
-            "text": "An der Linie aus Malerkrepp nennt die Lehrkraft zu jedem Satz die beiden Pole und zeigt, welches Ende wofür steht; alle stellen sich schweigend dorthin, wo sie sich meistens sehen. Zum Warmwerden Sommer oder Winter (1 Min.), dann die fünf Gegensätze in der Reihenfolge des Blatts (Liste, je etwa 90 Sekunden). Nach dem ersten, dritten und fünften Gegensatz je eine Person von beiden Enden fragen, wenn sie mag: Was ist gut an eurer Seite? Dazu nur ein Stichwort an die Tafel, in zwei Spalten. Beim letzten Gegensatz zweimal aufstellen: erst für die Klasse, dann für die Zeit mit Leuten, die man gut kennt – meist wandern viele. Zum Schluss setzen sich alle, und zwei, drei sagen, was ihnen aufgefallen ist (3 Min.).",
+            "titel": "Wo stehe ich – und wie sehen mich die anderen?",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Erst die Tafelspalten „Eher leise“ und „Eher laut“ erklären: Die meisten liegen dazwischen, und leise heißt nicht schüchtern. Dann stellen sich alle an der Linie zwischen zwei Polen auf, kreuzen auf dem Blatt ihre Situationen an (Aufgabe 1) und lassen sich zu zweit raten (Aufgabe 2).",
             "sagen": [
-              "Hier entscheidet jede Person selbst, wo sie steht. Die Mitte ist immer erlaubt.",
-              "Schaut euch um: Fast niemand steht ganz am Ende. Und bei jedem Satz stehen andere zusammen."
+              "Denkt daran, wie ihr meistens seid – nicht, wie ihr sein solltet; die Mitte ist immer erlaubt.",
+              "Ihr ratet nur Freundliches, das ihr selbst gesehen habt, und wer geraten wird, entscheidet, was stimmt."
             ],
             "punkte": [
-              "Zum Warmwerden: Sommer – Winter.",
-              "Nach der Schule: lieber mit Leuten – lieber für mich.",
-              "Bei einem neuen Spiel: gleich ausprobieren – erst zuschauen.",
-              "Vor einer Entscheidung: schnell entscheiden – lange überlegen.",
-              "Am Wochenende: spontan schauen, was kommt – lieber vorher planen.",
-              "In einer Gruppe: eher reden – eher zuhören. Erst in der Klasse, dann mit Leuten, die du gut kennst."
+              "Erklären (4 Min.): eher leise – tankt in Ruhe auf, hört gut zu · eher laut – tankt unter Leuten auf, geht auf andere zu; die meisten liegen dazwischen; leise ist nicht schüchtern, laut ist nicht frech.",
+              "Aufstellung (10 Min.): zu jedem Gegensatz beide Pole nennen, alle gehen schweigend dorthin, wo sie meistens stehen – die Mitte ist erlaubt.",
+              "Gegensätze: lieber mit Leuten – lieber für mich · gleich ausprobieren – erst zuschauen · eher reden – eher zuhören (zweimal: erst in der Klasse, dann mit Leuten, die du gut kennst).",
+              "Aufgabe 1 (5 Min.): ankreuzen, wie laut oder leise du in drei Situationen bist; per Handzeichen: Wer hat nicht überall dasselbe angekreuzt?",
+              "Rate mal (11 Min.): zuerst bei der Lehrkraft; dann zu zweit – A nennt eine Situation, B rät und sagt, woran er es merkt, A sagt nur Danke; tauschen; Aufgabe 2."
             ],
-            "tipp": "Die Pole immer so formulieren, dass beide Enden etwas Gutes haben – nie „laut und nervig“ gegen „leise und brav“. Wer an einem Ende steht, wird nicht aufgerufen, sondern darf sich melden.",
-            "wennEsKippt": "Kommentiert jemand, wo ein anderer steht („Du und zuhören?“), sofort freundlich stoppen: Hier entscheidet jede Person selbst. Läuft eine Clique einem Anführer hinterher, beim nächsten Satz erst mit geschlossenen Augen mit dem Finger zeigen lassen, dann losgehen. Wer nicht aufstehen möchte, zeigt vom Platz aus mit dem Arm auf die Linie."
-          },
-          {
-            "titel": "Leise ist nicht schüchtern: mein Platz auf den Linien",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Das Tafelbild aufdecken und die Stichworte aus der Aufstellung dazunehmen (Tabelle und Erklärung, 5 Min.). Erklären: Manche tanken in Ruhe auf, andere unter Leuten; die meisten liegen dazwischen, und keine Seite ist besser. Leise heißt nicht schüchtern – schüchtern ist, wer Angst hat, bewertet zu werden. Laut heißt nicht frech – oft steckt viel Energie dahinter. Dann arbeitet jede Person allein auf dem Blatt: In Aufgabe 1 die fünf Linien aus der Aufstellung übertragen und drei neue ankreuzen (4 Min.), danach Aufgabe 2: Bin ich überall gleich (4 Min.)? Zum Schluss per Handzeichen: Wer hat in Aufgabe 2 nicht überall dasselbe angekreuzt? Meist gehen fast alle Hände hoch (2 Min.).",
-            "sagen": [
-              "Denkt daran, wie ihr meistens seid – nicht, wie ihr sein solltet.",
-              "Leise heißt nicht schüchtern. Und laut heißt nicht frech."
-            ],
-            "tabelle": {
-              "spalten": [
-                "Eher leise",
-                "Eher laut"
-              ],
-              "zeilen": [
-                [
-                  "tankt auf durch Ruhe, Zeit für sich, ein Gespräch zu zweit",
-                  "tankt auf durch Leute, Bewegung, viel los"
-                ],
-                [
-                  "kann oft gut zuhören, beobachten, lange dranbleiben",
-                  "kann oft gut auf andere zugehen, etwas anstoßen, mitreißen"
-                ],
-                [
-                  "braucht von anderen Zeit zum Nachdenken und keinen Druck, sofort zu reden",
-                  "braucht von anderen Bewegung und Raum zum Mitreden"
-                ],
-                [
-                  "wird leicht übersehen",
-                  "wird leicht ermahnt"
-                ]
-              ]
-            },
-            "tipp": "Ein eigenes Beispiel erzählen: In der Klasse rede ich viel, nach der Schule brauche ich eine Stunde für mich. Nichts deuten: In vielen Familien gilt Zurückhaltung gegenüber Erwachsenen als höflich – wer hier still ist, ist deshalb nicht schüchtern.",
-            "wennEsKippt": "Setzt jemand jedes Kreuz in die Mitte, nicht korrigieren, sondern fragen: Gibt es eine Linie, bei der du dir sicher bist? Wer das Blatt albern findet, füllt es zuerst für eine Figur aus einer Serie aus und dann für sich – oft wird es danach ernst. Wer die Wörter nicht versteht, arbeitet mit einer Tischnachbarin, die vorliest und mit der Hand zeigt.",
+            "wennEsKippt": "Kommentiert jemand, wo ein anderer steht („Du und zuhören?“), sofort freundlich stoppen: Hier entscheidet jede Person für sich. Rät jemand mit einer Spitze, den Satz mit einem Beispiel neu sagen lassen; wer nicht geraten werden möchte, schätzt allein oder lässt bei der Lehrkraft raten.",
             "blatt": "ff7-laut-und-leise"
           },
           {
             "titel": "Bewegungspause: Gewitter im Klassenraum",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen hinter ihren Stühlen. Die Lehrkraft dirigiert: Was sie vormacht, übernimmt jede Tischgruppe, sobald sie hinschaut – Hände reiben (Wind), mit den Fingern schnipsen (erste Tropfen), auf die Oberschenkel klatschen (Regen), mit den Füßen trampeln (Gewitter), nur kurz, denn nebenan ist Unterricht. Dann alles rückwärts, bis es ganz still ist; die Stille zehn Sekunden halten (2 Min.). Zweite Runde mit einer freiwilligen Person als Dirigentin oder Dirigent (2 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Alle stehen hinter ihren Stühlen. Die Lehrkraft dirigiert, jede Tischgruppe macht nach, sobald sie hinschaut: Hände reiben (Wind), schnipsen (erste Tropfen), auf die Oberschenkel klatschen (Regen), mit den Füßen trampeln (Gewitter). Dann alles rückwärts bis zur Stille, die zehn Sekunden gehalten wird; in der zweiten Runde dirigiert eine freiwillige Person.",
             "sagen": [
-              "Ohne Stille gibt es kein Gewitter. Ein Orchester braucht beides – das Laute und das Leise."
+              "Ohne Stille gibt es kein Gewitter – ein Orchester braucht das Laute und das Leise."
             ],
-            "tipp": "Wer sonst eher laut ist, darf in der zweiten Runde dirigieren: Die Aufgabe braucht viel Energie und endet mit Stille."
-          },
-          {
-            "titel": "Rate mal: der Blick der anderen",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Zuerst rät die Klasse bei der Lehrkraft: Sie nennt zwei Linien ihres eigenen Blatts, die Tischgruppen zeigen auf ‚drei‘ mit einem bis fünf Fingern, wo das Kreuz steht; dann deckt sie auf und sagt, was sie überrascht (3 Min.). Die Regeln an die Tafel schreiben (Liste, 1 Min.). Dann zu zweit mit dem Nachbarn aus der Tischgruppe: A wählt zwei Linien und nennt sie, B rät und sagt, woran er es merkt; A zeigt das Kreuz und sagt nur Danke. Dann tauschen (6 Min.). Jede Person trägt die beiden Linien in die Tabelle von Aufgabe 3 ein (2 Min.). Zum Schluss zwei, drei Stimmen: Wo lag die Vermutung nah dran, wo weit weg – ohne zu sagen, bei wem? Dazu den Kasten „Der Blick der anderen“ vorlesen (3 Min.).",
-            "sagen": [
-              "Andere sehen manchmal etwas, das man selbst nicht bemerkt. Das zeigt, wie ihr hier wirkt – nicht, wie ihr seid.",
-              "Was hat euch überrascht? Ihr müsst nicht sagen, bei wem."
-            ],
-            "punkte": [
-              "Du wählst selbst, welche zwei Linien geraten werden. ‚Heute nicht‘ ist erlaubt.",
-              "Raten mit Beispiel: Ich glaube, du bist eher …, weil ich gesehen habe, dass du …",
-              "Nur Freundliches und nur, was du selbst gesehen hast. ‚Weiß ich noch nicht‘ ist auch eine Antwort.",
-              "Wer geraten wird, sagt Danke und entscheidet selbst, was stimmt.",
-              "Kein Kommentar zu den Kreuzen der anderen – auch nicht hinterher."
-            ],
-            "tipp": "Die Runde bei der Lehrkraft nimmt die Angst: Ein Fehlschuss ist nicht schlimm, eher lustig. Sie zeigt auch, wie eine freundliche Begründung klingt – etwa: Ich hätte dich für spontaner gehalten, weil du heute als Erste aufgestanden bist. Genau so schreibt die Klasse nächste Woche die Stärken-Post.",
-            "wennEsKippt": "Rät jemand mit einer Spitze („Du bist doch eine Schlaftablette“), sofort stoppen, die Regel vorlesen und den Satz mit einem Beispiel neu sagen lassen. Wirkt jemand danach gekränkt, kurz dazugehen: Das ist nur ein Blick von außen – du entscheidest, was stimmt; nach der Stunde nachfragen. Wer nicht geraten werden möchte, schätzt allein: Wo würde mich eine Person sehen, die mich gut kennt? Ist ein Paar zerstritten oder bleibt jemand übrig, wird daraus ein Dreier mit der Lehrkraft.",
-            "blatt": "ff7-laut-und-leise"
+            "tipp": "Wer sonst eher laut ist, darf dirigieren: Die Aufgabe braucht viel Energie und endet mit Stille. Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung."
           },
           {
             "titel": "Ein Team braucht beide Seiten",
-            "dauer": 20,
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Jede Tischgruppe zieht eine Projektkarte und teilt ein A3-Blatt in drei Spalten: Hier helfen leise Seiten – beides – hier helfen laute Seiten. Die Gruppe schreibt die sechs Aufgaben der Karte in die passende Spalte und ergänzt eine eigene; dann wählt jede Person eine Aufgabe und schreibt ihren Namen dazu – wer mag, bewusst eine von der anderen Seite; niemand teilt andere ein (8 Min.). Jede Gruppe stellt ihr Projekt in einer Minute vor – wer spricht, entscheidet die Gruppe – und beantwortet: Was würde schiefgehen, wenn im Team nur Laute oder nur Leise wären (6 Min.)? Die Lehrkraft fasst zusammen: Eine Klasse braucht beide Seiten, und die meisten Aufgaben brauchen beides (3 Min.). Zum Schluss Aufgabe 4 auf dem Blatt, allein (3 Min.).",
+            "text": "Jede Tischgruppe zieht eine Projektkarte und sortiert die sechs Aufgaben auf einem A3-Blatt in drei Spalten: hier helfen leise Seiten – beides – hier helfen laute Seiten. Dann wählt jede Person eine Aufgabe für sich, wer mag eine von der anderen Seite. Zum Schluss stellt jede Gruppe ihr Projekt vor, und alle ergänzen in Aufgabe 3 zwei Sätze zu ihrer Art.",
             "sagen": [
-              "Was würde schiefgehen, wenn in eurem Team nur Laute wären? Und wenn nur Leise da wären?",
-              "Jede Person sucht sich ihre Aufgabe selbst aus. Wer mag, probiert bewusst die andere Seite."
+              "Was würde schiefgehen, wenn in eurem Team nur Laute wären – und was, wenn nur Leise da wären?",
+              "Jede Person sucht sich ihre Aufgabe selbst aus; wer mag, probiert bewusst die andere Seite."
             ],
             "punkte": [
-              "Ihr verkauft in der großen Pause Waffeln für die Klassenkasse.",
-              "Ihr dreht ein kurzes Video, das der nächsten 7e das Lycée zeigt.",
-              "Ihr organisiert ein Fußballturnier in der Mittagspause.",
-              "Ihr plant einen Ausflug der Klasse – mit Programm, Kosten und Regeln.",
-              "Ihr bereitet den nächsten Klassenrat vor und leitet ihn."
+              "Sortieren (10 Min.): die sechs Aufgaben der Karte in die drei Spalten schreiben, eine eigene Aufgabe ergänzen.",
+              "Wählen (5 Min.): jede Person schreibt ihren Namen zu einer Aufgabe, niemand teilt andere ein; die Lehrkraft notiert beim Herumgehen Stärken für die Stärken-Post nächste Woche.",
+              "Vorstellen (10 Min.): eine Minute je Gruppe, wer spricht, entscheidet die Gruppe; Frage: Was ginge schief, wenn im Team nur Laute oder nur Leise wären?",
+              "Zusammenfassen (3 Min.): Eine Klasse braucht beide Seiten, und die meisten Aufgaben brauchen beides.",
+              "Aufgabe 3 (7 Min.): allein zwei Sätze ergänzen: An meiner Art mag ich … – Das kann ich gut, weil ich so bin: …"
             ],
-            "tipp": "Oft landen viele Aufgaben bei „beides“, etwa die Kasse: freundlich ansprechen und genau zählen. Das ist die eigentliche Botschaft – die meisten Menschen können mehr als eine Seite. Beim Herumgehen Stärken notieren: Sie helfen nächste Woche bei den Karten der Lehrkraft für die Stärken-Post.",
-            "wennEsKippt": "Sagt jemand „Inês muss die Leute anlocken, die ist doch laut“, freundlich stoppen: Jede Person wählt selbst. Wollen zwei dieselbe Aufgabe, dürfen beide sie übernehmen – im echten Projekt gäbe es zwei Kassen. Albert eine Gruppe nur herum, sich dazusetzen und mit einer Frage starten: Was muss als Erstes passieren, damit euer Projekt klappt?",
-            "blatt": "ff7-projektkarten"
+            "wennEsKippt": "Sagt jemand „Inês muss die Leute anlocken, die ist doch laut“, freundlich stoppen: Jede Person wählt selbst. Wollen zwei dieselbe Aufgabe, dürfen beide – im echten Projekt gäbe es zwei Kassen.",
+            "blatt": "ff7-laut-und-leise"
           },
           {
             "titel": "Skill: Achtsames Hören",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Ankündigen: Jetzt kommt ein Skill für Momente, in denen es außen oder innen zu laut wird – in der Kantine, im Bus, wenn der Kopf nicht aufhört. Das Fenster einen Spalt öffnen; alle sitzen bequem, die Füße auf dem Boden, Augen zu oder offen auf einen Punkt – beides ist gleich gut. Erste Runde (1 Min.): mit der Klangschale beginnen, alle zählen still an den Fingern, wie viele verschiedene Geräusche sie hören; kurz vergleichen – wer hat mehr als fünf? Zweite Runde (2 Min.): die drei Schritte langsam anleiten (Liste), das leiseste Geräusch suchen, mit der Klangschale enden; länger als diese drei Minuten wird nicht angeleitet. Danach zwei, drei Rückmeldungen: Was war das leiseste? Wann könnte das helfen? Zum Schluss erklären: Wer bewusst hinhört, holt die Aufmerksamkeit aus dem Gedankenkarussell ins Hier und Jetzt.",
+            "text": "Der Skill hilft, wenn es außen oder im Kopf zu laut wird – in der Kantine, im Bus, wenn die Gedanken kreisen. Mit der Klangschale beginnen, die drei Schritte langsam anleiten und mit der Klangschale enden – höchstens 3 Minuten still, Augen offen oder zu. Danach der Abschluss: ein Satz in den Skills-Pass, Mission ansagen, Moment wählen.",
             "sagen": [
-              "Ihr müsst nichts verändern. Nur hören, was da ist – auch das Ticken der Uhr oder euren eigenen Atem."
+              "Ihr müsst nichts verändern – hört nur, was da ist, auch das Ticken der Uhr oder euren eigenen Atem.",
+              "Wann kommt euer Moment – Pause, Esstisch, Bus – und was wollt ihr dort tun: auf eure Lautstärke achten oder hinhören?"
             ],
             "punkte": [
               "Still werden: Füße auf den Boden, Augen zu oder auf einen Punkt am Tisch.",
-              "Hören: zuerst das lauteste Geräusch, dann ein leiseres, dann das leiseste, das du finden kannst – mit den Fingern mitzählen.",
-              "Zurückkommen: den eigenen Atem hören, die Füße spüren, die Augen öffnen."
+              "Hören: zuerst das lauteste Geräusch, dann ein leiseres, dann das leiseste – mit den Fingern mitzählen.",
+              "Zurückkommen: den eigenen Atem hören, die Füße spüren, die Augen öffnen.",
+              "Skills-Pass (4 Min.): ein Satz zur Frage „Was habe ich heute über mich gemerkt?“, Stempel.",
+              "Mission und Moment (4 Min.): ansagen; auf drei zeigen alle ihren Moment (ein Finger Pause, zwei Esstisch, drei Bus, Faust ein eigener) und schreiben ihn in „Mein Moment: Wenn …“; Ausblick (1 Min.)."
             ],
-            "tipp": "Laute und leise Jugendliche erleben die Übung oft verschieden: Die einen finden die Stille anstrengend, die anderen genießen sie. Beides ist eine wertvolle Beobachtung und passt zum Thema der Stunde.",
-            "wennEsKippt": "Macht jemand absichtlich Geräusche, das ruhig in die Übung nehmen: Auch das ist ein Geräusch – und jetzt sucht das leiseste. Wird es zu unruhig, nach der ersten Runde enden und nächste Woche wiederholen. Niemand muss die Augen schließen, und aussteigen ist erlaubt: Wer mag, drückt nur die Füße in den Boden und wartet auf die Klangschale."
-          },
-          {
-            "titel": "Skills-Pass, Mission und Moment wählen",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Was habe ich heute über mich gemerkt? Jede Person schreibt einen Satz und bekommt den Stempel; zwei Freiwillige lesen vor. Mission und Moment wählen (2 Min.): die Wochen-Mission im Heft zeigen und ansagen – in einem festen Moment darauf achten, ob man dort eher laut oder eher leise ist, oder in diesem Moment achtsames Hören ausprobieren. Auf ‚drei‘ zeigen alle ihren Moment: ein Finger für die Pause, zwei für den Esstisch zu Hause, drei für den Bus, Faust für einen eigenen – und schreiben ihn in die Spalte „Mein Moment: Wenn …“ bei den Wochen-Missionen. Ausblick (1 Min.): die nächste Stunde ankündigen.",
-            "sagen": [
-              "Ein Satz für den Pass: Was habt ihr heute über euch gemerkt – über eure Art oder beim achtsamen Hören?",
-              "Wann kommt euer Moment? Pause – ein Finger, Esstisch – zwei, Bus – drei, ein eigener – die Faust. Schreibt ihn ins Heft: Wenn ich …, dann achte ich darauf, wie laut ich bin – oder dann höre ich hin."
-            ],
-            "tipp": "Die A3-Blätter der Teams bis nächste Woche hängen lassen: Beim Baum der Stärke helfen sie, Stärken zu finden, an die sonst niemand denkt. Auch eine Beobachtung braucht einen Auslöser: Wer sich die Pause vorgenommen hat, denkt in der Pause daran.",
-            "wennEsKippt": "Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Wer die Sprache noch lernt, malt ein kleines Zeichen für seinen Moment: Pausenhof, Teller, Bus."
+            "wennEsKippt": "Macht jemand absichtlich Geräusche, ruhig einbeziehen: Auch das ist ein Geräusch – sucht jetzt das leiseste. Niemand muss die Augen schließen, und aussteigen ist erlaubt: Wer mag, drückt nur die Füße in den Boden und wartet auf die Klangschale."
           }
         ],
-        "bruecke": "Nächste Woche geht es um eure Stärken: Jede und jeder gestaltet einen eigenen Baum – und bekommt von der Klasse Stärken zurück.",
-        "mission": "Wenn dein Moment kommt – Pause, Esstisch, Bus –, dann achte einmal darauf: Bist du dort eher laut oder eher leise? Oder mach in deinem Moment einmal achtsames Hören.",
-        "hintergrund": "Introversion und Extraversion beschreiben, woher Menschen Energie beziehen: aus Ruhe oder aus Kontakt; die meisten liegen dazwischen. Cain (2012) grenzt Introversion von Schüchternheit ab, der Angst vor Bewertung, und zeigt, dass Schulen oft das Laute belohnen, obwohl leise Menschen eigene Stärken wie Zuhören mitbringen. Im Jugendalter wird das Selbstbild vielschichtiger: Jugendliche erleben sich je nach Umfeld anders (Harter, 2012). Das Johari-Fenster (Luft & Ingham, 1955) erklärt, warum ein Blick von außen überraschen kann: Andere sehen manches zuerst. Über die Wirkung entscheidet die Form: Jugendliche nehmen an, was ihren Status achtet und ihnen die Entscheidung lässt, und lehnen ab, was sie bloßstellt (Yeager, Dahl & Dweck, 2018). Deshalb entscheidet hier jede Person selbst, wo sie steht und was geraten wird, und jede Vermutung braucht ein freundliches, beobachtetes Beispiel.",
+        "bruecke": "Nächste Woche geht es um eure Stärken: Jede und jeder gestaltet einen eigenen Baum und bekommt von der Klasse Stärken zurück.",
+        "mission": "Achte einmal darauf, wie laut du bist – oder probiere achtsames Hören aus.",
+        "hintergrund": "Introversion ist nicht Schüchternheit, die Angst vor Bewertung: Leise Menschen tanken in Ruhe auf und bringen eigene Stärken wie Zuhören mit (Cain, 2012). Jugendliche erleben sich je nach Umfeld anders (Harter, 2012). Das Johari-Fenster erklärt, warum ein Blick von außen überraschen kann: Andere sehen manches zuerst (Luft & Ingham, 1955). Jugendliche nehmen an, was ihre Entscheidung achtet und sie nicht bloßstellt (Yeager, Dahl & Dweck, 2018) – deshalb wählt hier jede Person selbst.",
         "quellen": [
           "Cain, S. (2012). Quiet: The Power of Introverts in a World That Can’t Stop Talking. New York: Crown.",
           "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
           "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
           "Yeager, D. S., Dahl, R. E. & Dweck, C. S. (2018). Why interventions to influence adolescent behavior often fail but could succeed. Perspectives on Psychological Science, 13(1), 101–122."
         ],
-        "achtung": "Fremdbilder können kränken, auch wenn beide Seiten jeder Linie freundlich formuliert sind. Niemand wird von anderen eingeordnet: Bei der Aufstellung steht jede Person, wo sie will, beim Raten wählt sie die Linien selbst, und ‚heute nicht‘ ist erlaubt. Kommentare wie „Du doch nicht“ sofort stoppen. Nicht nach ‚besten Freunden‘ fragen – nicht alle haben gerade welche. Wird jemand ausgegrenzt, die Paare selbst einteilen oder nur bei der Lehrkraft raten lassen; bei Hinweisen auf Mobbing mit Régent und SePAS nach dem Vorgehen der Schule handeln. Wer nach dem Raten still wird, bekommt nach der Stunde ein kurzes Gespräch.",
+        "achtung": "Der Blick der anderen kann kränken, auch wenn beide Pole freundlich formuliert sind. Niemand wird von anderen eingeordnet: Bei der Aufstellung steht jede Person, wo sie will, beim Raten wählt sie die Zeile selbst, „heute nicht“ ist erlaubt, und Kommentare wie „Du doch nicht“ werden sofort gestoppt. Nicht nach „besten Freunden“ fragen; wird jemand ausgegrenzt, die Paare selbst einteilen, und bei Hinweisen auf Mobbing mit Régent und SePAS nach dem Vorgehen der Schule handeln.",
         "differenzierung": {
-          "leichter": "Für Jugendliche, die mühsam lesen oder die Sprache noch lernen: Die Pole der Aufstellung zusätzlich mit einer Geste zeigen; auf dem Blatt nur die fünf Linien aus der Aufstellung übertragen, eine Tischnachbarin liest vor. Beim Raten reicht der Satzanfang an der Tafel mit einem Stichwort. Für die Spalte „Mein Moment“ reicht ein Wort: Pause, Bus.",
-          "schwerer": "Eine Linie wählen, bei der Kreuz und Vermutung weit auseinanderlagen, und aufschreiben: In welchen Situationen zeige ich die Seite, die die anderen sehen? In der Teamaufgabe die Moderation übernehmen und darauf achten, dass auch die Leisen zu Wort kommen – oder auf der sechsten Karte ein eigenes Projekt erfinden."
+          "leichter": "Für Jugendliche, die mühsam lesen oder die Sprache noch lernen: Die Pole der Aufstellung mit einer Geste zeigen; auf dem Blatt reicht Aufgabe 1 mit Kreuzen, eine Tischnachbarin liest vor. Beim Raten genügt ein Stichwort statt eines Satzes, für „Mein Moment“ ein Wort wie Pause oder Bus.",
+          "schwerer": "Eine Situation wählen, in der Kreuz und Vermutung weit auseinanderlagen, und aufschreiben: Wann zeige ich die Seite, die die anderen sehen? In der Teamaufgabe die Moderation übernehmen und darauf achten, dass auch die Leisen zu Wort kommen."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt und Hand-Höhe (5 Min.), Aufstellung mit drei Gegensätzen (10 Min.), Tafelbild und Aufgabe 1 (10 Min.), Rate mal – erst bei der Lehrkraft, dann zu zweit (13 Min.), achtsames Hören (7 Min.), Skills-Pass, Mission und Moment wählen (5 Min.). Die Teamaufgabe entfällt; den Satz „Eine Klasse braucht beide Seiten“ sagt die Lehrkraft beim Tafelbild."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Aufstellung und Aufgabe 1 (15 Min.), Rate mal bei der Lehrkraft und zu zweit (10 Min.), achtsames Hören mit Skills-Pass, Mission und Moment (15 Min.), ein kurzes Gespräch, welche Aufgaben eines Teams leise und welche laute Seiten brauchen (5 Min.). Gewitter und Projektkarten entfallen; den Satz „Eine Klasse braucht beide Seiten“ sagt die Lehrkraft bei der Erklärung an der Tafel."
       },
       "fr": {
         "titel": "Entre expansif et réservé",
-        "kurz": "Entre des contraires comme expansif et réservé, chaque jeune trouve sa place, la compare au regard bienveillant des autres et constate qu’une classe a besoin des deux côtés.",
+        "kurz": "Chaque jeune se situe entre des contraires comme expansif et réservé, compare avec le regard bienveillant des autres et constate qu’une classe a besoin des deux côtés.",
         "ziele": [
           "se situent entre des contraires et remarquent qu’ils changent selon la situation",
-          "comparent l’image qu’ils ont d’eux-mêmes au regard d’une personne qu’ils choisissent",
-          "décrivent les forces des côtés expansif et réservé, et pourquoi une équipe a besoin des deux",
-          "essaient l’écoute attentive comme skill"
+          "comparent l’image qu’ils ont d’eux-mêmes au regard bienveillant d’une personne qu’ils choisissent",
+          "décrivent ce que savent faire les côtés expansif et réservé et pourquoi une équipe a besoin des deux"
         ],
         "material": [
-          "Cahier de l’élève, tampon pour le Skills-Pass",
           "Roue des émotions, gommettes",
-          "Scotch de peintre pour la ligne",
-          "Cartes projet (modèle à photocopier)",
+          "Scotch de peintre pour une ligne au sol",
+          "Cartes projet (modèle), ciseaux",
           "Cinq feuilles A3, gros feutres",
-          "Bol chantant ou verre et cuillère"
+          "Bol chantant ou verre et cuillère",
+          "Cahier de l’élève, tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
-          "Coller au sol, devant, une ligne de scotch du côté porte au côté fenêtre ; laisser de la place pour 20.",
-          "Préparer et cacher le tableau « Plutôt réservé – plutôt expansif » (étape 4).",
-          "Photocopier et découper les cartes projet : une par îlot, la sixième pour un groupe rapide (étape 7).",
-          "Remplir sa propre fiche et choisir deux lignes que la classe devinera (étape 6).",
-          "Vérifier si quelqu’un est mis à l’écart ; former alors soi-même les paires de l’étape 6."
+          "Coller au sol une ligne de scotch du côté porte au côté fenêtre (place pour 20) et préparer au tableau deux colonnes « Plutôt réservé » et « Plutôt expansif » (étape 3).",
+          "Photocopier et découper les cartes projet : une par îlot, la sixième pour un groupe rapide (étape 5). Remplir sa propre fiche : une ligne que la classe pourra deviner.",
+          "Vérifier si quelqu’un est mis à l’écart ; former alors soi-même les paires de l’étape 3."
         ],
         "ablauf": [
           {
@@ -315,17 +224,12 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Retour : le bocal, la mission et le thème"
+            "titel": "Retour, mission et thème"
           },
           {
-            "min": "15–30",
-            "phase": "aktiv",
-            "titel": "Se placer : entre deux pôles"
-          },
-          {
-            "min": "30–45",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Réservé n’est pas timide : ma place sur les lignes"
+            "titel": "Ma place et le regard des autres"
           },
           {
             "min": "45–50",
@@ -333,24 +237,14 @@
             "titel": "Pause active : l’orage dans la classe"
           },
           {
-            "min": "50–65",
-            "phase": "uebung",
-            "titel": "Devine : le regard des autres"
-          },
-          {
-            "min": "65–85",
+            "min": "50–85",
             "phase": "uebung",
             "titel": "Une équipe a besoin des deux côtés"
           },
           {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : l’écoute attentive"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, mission et choix du moment"
           }
         ],
         "schritte": [
@@ -358,175 +252,105 @@
             "titel": "Tour d’humeur : quel volume aujourd’hui ?",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Une fois tout le monde assis, dire une phrase sur son propre mot ; deux ou trois volontaires suivent (4 min). Puis la question en plus : à quel volume êtes-vous aujourd’hui ? À « trois », tout le monde montre en même temps avec la main à plat – sur la table, c’est tout bas ; au-dessus de la tête, c’est le haut-parleur ; tout l’entre-deux est permis ; l’enseignant·e montre en premier (2 min). Ne pas interpréter les hauteurs, seulement les refléter : aujourd’hui, il y a un peu de tout. Pour finir, demander si c’est pareil chaque jour pour tout le monde ; deux réponses suffisent (3 min).",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions ; l’enseignant·e commence. Aujourd’hui, en plus, la question : à quel volume êtes-vous aujourd’hui ? À « trois », tout le monde montre en même temps avec la main à plat – sur la table, c’est tout bas ; au-dessus de la tête, c’est le haut-parleur ; tout l’entre-deux est permis.",
             "sagen": [
-              "Montrez avec la main à quel volume vous êtes aujourd’hui. La table, c’est tout bas ; au-dessus de la tête, c’est le haut-parleur.",
-              "Est-ce que vous avez le même volume tous les jours ? Et partout ?"
+              "Montrez avec la main à quel volume vous êtes aujourd’hui – la table, c’est tout bas ; au-dessus de la tête, le haut-parleur.",
+              "Avez-vous le même volume tous les jours – et partout ?"
             ],
-            "tipp": "Dire en passant que discret ne veut pas dire de mauvaise humeur, ni expansif insolent – avant que quelqu’un l’interprète ainsi. La hauteur de la main est déjà l’entrée dans le thème.",
-            "wennEsKippt": "Si quelqu’un monte sur sa chaise pour montrer « encore plus fort », lui demander gentiment de descendre et poser la limite : au-dessus de la tête, c’est le maximum. Si quelqu’un commente la main d’un autre (« Toi ? Discret ? »), l’arrêter tout de suite, avec gentillesse : ici, chacun montre seulement pour soi."
+            "wennEsKippt": "Si quelqu’un commente la main d’un autre (« Toi ? Discret ? »), l’arrêter tout de suite avec gentillesse : ici, chacun montre seulement pour soi. Si quelqu’un monte sur sa chaise pour montrer « encore plus fort », lui demander de descendre : au-dessus de la tête, c’est le maximum."
           },
           {
-            "titel": "Retour : le bocal, la mission et le thème",
+            "titel": "Retour, mission et thème",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission de la semaine, demander : votre moment est-il arrivé – et avez-vous fait votre petit pas ou la respiration 4-7-8 ? Pouce en haut, au milieu ou en bas – une voix raconte, personne n’est obligé d’avoir vécu son moment. Poser le bocal des besoins sur le bureau et montrer la photo des bâtons : ces réservoirs comptent pour beaucoup d’entre nous. Puis écrire le thème au tableau : Entre expansif et réservé – comment suis-je ? Et comment les autres me voient-ils ?",
+            "text": "Pour la mission de la semaine, demander : ton moment est-il arrivé – et as-tu fait ton petit pas ou la respiration 4-7-8 ? Pouce en haut, au milieu ou en bas, une voix raconte ; personne n’est obligé d’avoir vécu son moment. Puis annoncer le thème : comment suis-je – et comment les autres me voient-ils ?",
             "sagen": [
-              "La semaine dernière, on a parlé de ce dont vous avez besoin. Aujourd’hui, on parle de comment vous êtes – et aucune manière d’être n’est meilleure que l’autre."
+              "La semaine dernière, on a parlé de ce dont vous avez besoin – aujourd’hui, de comment vous êtes, et aucune manière d’être n’est meilleure que l’autre."
             ],
-            "tipp": "Si, pour beaucoup, le moment n’est pas venu ou le pas a été oublié, le prendre avec calme : une nouvelle habitude demande plusieurs essais. Qui le souhaite reprend le même plan – avec le même moment."
+            "tipp": "Si, pour beaucoup, le moment n’est pas venu ou le pas a été oublié, le prendre avec calme : une nouvelle habitude demande plusieurs essais. Qui le souhaite reprend le même plan, avec le même moment."
           },
           {
-            "titel": "Se placer : entre deux pôles",
-            "dauer": 15,
-            "phase": "aktiv",
-            "text": "Le long de la ligne au sol, annoncer pour chaque phrase les deux pôles et montrer quel bout correspond à quoi ; chacun se place en silence là où il se voit le plus souvent. Pour s’échauffer, été ou hiver (1 min), puis les cinq contraires dans l’ordre de la fiche (liste, environ 90 secondes chacun). Après le premier, le troisième et le cinquième contraire, demander à une personne de chaque bout, si elle le veut : qu’est-ce qui est bien de votre côté ? Noter seulement un mot-clé au tableau, en deux colonnes. Pour le dernier contraire, se placer deux fois : d’abord pour la classe, puis pour les moments avec des gens qu’on connaît bien – souvent, beaucoup se déplacent. Pour finir, tout le monde se rassoit et deux ou trois jeunes disent ce qu’ils ont remarqué (3 min).",
+            "titel": "Ma place et le regard des autres",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "D’abord expliquer les colonnes « Plutôt réservé » et « Plutôt expansif » : la plupart sont entre les deux, et réservé ne veut pas dire timide. Puis tout le monde se place le long de la ligne entre deux pôles, coche ses situations sur la fiche (exercice 1) et se fait deviner à deux (exercice 2).",
             "sagen": [
-              "Ici, chacun décide lui-même où il se place. Le milieu est toujours permis.",
-              "Regardez autour de vous : presque personne n’est tout au bout. Et à chaque phrase, ce ne sont pas les mêmes qui se retrouvent ensemble."
+              "Pensez à comment vous êtes la plupart du temps – pas à comment vous devriez être ; le milieu est toujours permis.",
+              "Vous ne devinez que des choses gentilles que vous avez vues vous-mêmes, et celui qu’on devine décide de ce qui est vrai."
             ],
             "punkte": [
-              "Pour s’échauffer : l’été – l’hiver.",
-              "Après les cours : plutôt avec du monde – plutôt seul.",
-              "Devant un nouveau jeu : essayer tout de suite – d’abord regarder.",
-              "Avant une décision : décider vite – réfléchir longtemps.",
-              "Le week-end : improviser – tout prévoir à l’avance.",
-              "En groupe : plutôt parler – plutôt écouter. D’abord en classe, puis avec des gens que tu connais bien."
+              "Expliquer (4 min) : plutôt réservé – fait le plein au calme, sait écouter · plutôt expansif – fait le plein avec du monde, va vers les autres ; la plupart sont entre les deux ; réservé ne veut pas dire timide, expansif ne veut pas dire insolent.",
+              "Se placer (10 min) : annoncer les deux pôles de chaque contraire ; chacun va en silence là où il se situe le plus souvent – le milieu est permis.",
+              "Contraires : plutôt avec du monde – plutôt seul · essayer tout de suite – d’abord regarder · plutôt parler – plutôt écouter (deux fois : d’abord en classe, puis avec des gens que tu connais bien).",
+              "Exercice 1 (5 min) : cocher à quel point on est réservé ou expansif dans trois situations ; à main levée : qui n’a pas coché la même chose partout ?",
+              "Devine (11 min) : d’abord chez l’enseignant·e ; puis à deux – A nomme une situation, B devine et dit à quoi il le voit, A dit seulement merci ; échanger ; exercice 2."
             ],
-            "tipp": "Toujours formuler les pôles pour que les deux bouts aient du bon – jamais « bruyant et pénible » contre « calme et sage ». Qui est au bout n’est pas interrogé, il peut lever la main.",
-            "wennEsKippt": "Si quelqu’un commente la place d’un autre (« Toi, écouter ? »), l’arrêter tout de suite avec gentillesse : ici, chacun décide pour soi. Si toute une bande suit un meneur, faire d’abord montrer du doigt les yeux fermés à la phrase suivante, puis se déplacer. Qui ne veut pas se lever montre la ligne avec le bras depuis sa place."
-          },
-          {
-            "titel": "Réservé n’est pas timide : ma place sur les lignes",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Découvrir le tableau et y ajouter les mots-clés de l’exercice sur la ligne (tableau et explication, 5 min). Expliquer : certains font le plein au calme, d’autres avec du monde ; la plupart sont entre les deux, et aucun côté n’est meilleur. Réservé ne veut pas dire timide – être timide, c’est avoir peur d’être jugé. Expansif ne veut pas dire insolent – souvent, il y a beaucoup d’énergie derrière. Puis chaque jeune travaille seul sur la fiche : à l’exercice 1, reporter ses cinq positions sur la ligne et cocher les trois nouvelles lignes (4 min), ensuite l’exercice 2 : suis-je pareil partout (4 min) ? Pour finir, à main levée : qui n’a pas coché la même chose partout à l’exercice 2 ? En général, presque toutes les mains se lèvent (2 min).",
-            "sagen": [
-              "Pensez à comment vous êtes la plupart du temps – pas à comment vous devriez être.",
-              "Réservé ne veut pas dire timide. Et expansif ne veut pas dire insolent."
-            ],
-            "tabelle": {
-              "spalten": [
-                "Plutôt réservé",
-                "Plutôt expansif"
-              ],
-              "zeilen": [
-                [
-                  "fait le plein au calme, seul, en tête-à-tête",
-                  "fait le plein avec du monde, en bougeant, quand il y a de l’animation"
-                ],
-                [
-                  "sait souvent bien écouter, observer, persévérer",
-                  "sait souvent bien aller vers les autres, lancer quelque chose, entraîner le groupe"
-                ],
-                [
-                  "a besoin de temps pour réfléchir, sans qu’on le presse de parler",
-                  "a besoin de bouger et de place pour participer"
-                ],
-                [
-                  "passe facilement inaperçu",
-                  "se fait facilement reprendre"
-                ]
-              ]
-            },
-            "tipp": "Raconter un exemple personnel : en classe, je parle beaucoup ; après le travail, j’ai besoin d’une heure pour moi. Ne rien interpréter : dans beaucoup de familles, la retenue devant les adultes est une marque de politesse – un jeune silencieux ici n’est pas timide pour autant.",
-            "wennEsKippt": "Si un jeune met toutes ses croix au milieu, ne pas corriger, mais demander : y a-t-il une ligne où tu es sûr de toi ? Qui trouve la fiche ridicule la remplit d’abord pour un personnage de série, puis pour lui – souvent, ça devient sérieux ensuite. Qui ne comprend pas les mots travaille avec une voisine qui lit à voix haute et montre de la main.",
+            "wennEsKippt": "Si quelqu’un commente la place d’un autre (« Toi, écouter ? »), l’arrêter tout de suite avec gentillesse : ici, chacun décide pour soi. Si quelqu’un devine avec une pique, lui faire redire sa phrase avec un exemple ; qui ne veut pas être deviné estime seul ou se fait deviner par l’enseignant·e.",
             "blatt": "ff7-laut-und-leise"
           },
           {
             "titel": "Pause active : l’orage dans la classe",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se tient derrière sa chaise. Diriger l’orchestre : ce que l’on montre, chaque îlot le reprend dès qu’on le regarde – se frotter les mains (le vent), claquer des doigts (les premières gouttes), taper sur les cuisses (la pluie), taper des pieds (l’orage), brièvement, car à côté il y a cours. Puis tout à l’envers jusqu’au silence complet ; tenir le silence dix secondes (2 min). Deuxième tour avec un ou une volontaire comme chef d’orchestre (2 min). Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Tout le monde se tient derrière sa chaise. L’enseignant·e dirige, chaque îlot refait dès qu’on le regarde : se frotter les mains (le vent), claquer des doigts (les premières gouttes), taper sur les cuisses (la pluie), taper des pieds (l’orage). Puis tout à l’envers jusqu’au silence, tenu dix secondes ; au deuxième tour, un ou une volontaire dirige.",
             "sagen": [
-              "Sans silence, pas d’orage. Un orchestre a besoin des deux – du fort et du doux."
+              "Sans silence, pas d’orage – un orchestre a besoin du fort et du doux."
             ],
-            "tipp": "Un jeune plutôt expansif peut diriger le deuxième tour : ce rôle demande beaucoup d’énergie et se termine par le silence."
-          },
-          {
-            "titel": "Devine : le regard des autres",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "D’abord, la classe devine chez l’enseignant·e : annoncer deux lignes de sa propre fiche ; à « trois », les îlots montrent avec un à cinq doigts où se trouve la croix, puis la montrer et dire ce qui surprend (3 min). Écrire les règles au tableau (liste, 1 min). Puis à deux, avec son voisin d’îlot : A choisit deux lignes et les nomme, B devine et dit à quoi il le remarque ; A montre sa croix et dit seulement merci. Ensuite, on échange (6 min). Chacun note les deux lignes dans le tableau de l’exercice 3 (2 min). Pour finir, deux ou trois voix : où la supposition était-elle proche, où était-elle loin – sans dire chez qui ? Lire alors l’encadré « Le regard des autres » (3 min).",
-            "sagen": [
-              "Les autres voient parfois en nous quelque chose qu’on ne remarque pas soi-même. Ça montre l’effet que vous produisez ici – pas qui vous êtes.",
-              "Qu’est-ce qui vous a surpris ? Vous n’êtes pas obligés de dire chez qui."
-            ],
-            "punkte": [
-              "Tu choisis toi-même les deux lignes à deviner. « Pas aujourd’hui » est permis.",
-              "Deviner avec un exemple : je crois que tu es plutôt…, parce que j’ai vu que tu…",
-              "Seulement des choses gentilles et que tu as vues toi-même. « Je ne sais pas encore » est aussi une réponse.",
-              "Qui est deviné dit merci et décide lui-même de ce qui est vrai.",
-              "Aucun commentaire sur les croix des autres – même après."
-            ],
-            "tipp": "Le tour chez l’enseignant·e enlève la peur : une erreur n’est pas grave, plutôt drôle. Il montre aussi à quoi ressemble une raison bienveillante – par exemple : je t’aurais cru plus spontané, parce que tu t’es levé le premier aujourd’hui. C’est exactement ainsi que la classe écrira la semaine prochaine le courrier des forces.",
-            "wennEsKippt": "Si quelqu’un devine avec une pique (« T’es un vrai somnifère »), arrêter tout de suite, relire la règle et lui faire redire sa phrase avec un exemple. Si un jeune semble vexé ensuite, aller le voir brièvement : ce n’est qu’un regard de l’extérieur – c’est toi qui décides de ce qui est vrai ; lui en reparler après le cours. Qui ne veut pas être deviné estime seul : où me placerait une personne qui me connaît bien ? Si une paire est en conflit ou si quelqu’un reste seul, former un trio avec l’enseignant·e.",
-            "blatt": "ff7-laut-und-leise"
+            "tipp": "Un jeune plutôt expansif peut diriger : ce rôle demande beaucoup d’énergie et se termine par le silence. Si la grande récréation tombe entre les deux heures, supprimer l’exercice."
           },
           {
             "titel": "Une équipe a besoin des deux côtés",
-            "dauer": 20,
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Chaque îlot tire une carte projet et partage une feuille A3 en trois colonnes : ici, les côtés réservés aident – les deux – ici, les côtés expansifs aident. Le groupe écrit les six tâches de la carte dans la bonne colonne et en ajoute une ; puis chacun choisit une tâche et y écrit son prénom – qui le souhaite, exprès une de l’autre côté ; personne ne répartit les autres (8 min). Chaque îlot présente son projet en une minute – le groupe décide qui parle – et répond : qu’est-ce qui raterait si l’équipe n’avait que des expansifs ou que des réservés (6 min) ? Résumer : une classe a besoin des deux côtés, et la plupart des tâches demandent les deux (3 min). Pour finir, exercice 4 de la fiche, seul (3 min).",
+            "text": "Chaque îlot tire une carte projet et range les six tâches sur une feuille A3 en trois colonnes : ici, les côtés réservés aident – les deux – ici, les côtés expansifs aident. Ensuite, chacun choisit une tâche – qui le souhaite, une de l’autre côté. Pour finir, chaque îlot présente son projet et chacun complète deux phrases sur sa manière d’être (exercice 3).",
             "sagen": [
-              "Qu’est-ce qui raterait si votre équipe n’avait que des expansifs ? Et que des réservés ?",
-              "Chacun choisit lui-même sa tâche. Qui le souhaite essaie exprès l’autre côté."
+              "Qu’est-ce qui raterait si votre équipe n’avait que des expansifs – et que des réservés ?",
+              "Chacun choisit lui-même sa tâche ; qui le souhaite essaie exprès l’autre côté."
             ],
             "punkte": [
-              "Vous vendez des gaufres à la grande récré pour la caisse de la classe.",
-              "Vous tournez une courte vidéo qui présente le lycée à la prochaine 7e.",
-              "Vous organisez un tournoi de foot pendant la pause de midi.",
-              "Vous préparez une sortie de classe – avec programme, budget et règles.",
-              "Vous préparez le prochain conseil de coopération et vous l’animez."
+              "Ranger (10 min) : écrire les six tâches de la carte dans les trois colonnes, en ajouter une.",
+              "Choisir (5 min) : chacun écrit son prénom sur une tâche, personne ne répartit les autres ; en circulant, l’enseignant·e note des forces pour le courrier des forces de la semaine prochaine.",
+              "Présenter (10 min) : une minute par îlot, le groupe décide qui parle ; question : qu’est-ce qui raterait si l’équipe n’avait que des expansifs ou que des réservés ?",
+              "Résumer (3 min) : une classe a besoin des deux côtés, et la plupart des tâches demandent les deux.",
+              "Exercice 3 (7 min) : seul, compléter deux phrases : Ce que j’aime dans ma manière d’être… – Ce que je fais bien, parce que je suis comme ça…"
             ],
-            "tipp": "Souvent, beaucoup de tâches atterrissent dans « les deux », par exemple la caisse : aborder les gens avec le sourire et compter avec soin. C’est le vrai message – la plupart des gens ont plus d’un côté. En circulant, noter des forces : elles aideront la semaine prochaine à écrire ses propres cartes du courrier des forces.",
-            "wennEsKippt": "Si quelqu’un dit « Inês doit attirer les clients, elle est bruyante », l’arrêter avec gentillesse : chacun choisit pour soi. Si deux jeunes veulent la même tâche, ils peuvent la prendre tous les deux – dans un vrai projet, il y aurait deux caisses. Si un îlot ne fait que chahuter, s’asseoir avec lui et lancer une question : qu’est-ce qui doit se passer en premier pour que votre projet marche ?",
-            "blatt": "ff7-projektkarten"
+            "wennEsKippt": "Si quelqu’un dit « Inês doit attirer les clients, elle est bruyante », l’arrêter avec gentillesse : chacun choisit pour soi. Si deux jeunes veulent la même tâche, ils peuvent la prendre tous les deux – dans un vrai projet, il y aurait deux caisses.",
+            "blatt": "ff7-laut-und-leise"
           },
           {
             "titel": "Skill : l’écoute attentive",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Annoncer : voici un skill pour les moments où c’est trop bruyant, dehors ou dans la tête – à la cantine, dans le bus, quand les pensées tournent en boucle. Entrouvrir la fenêtre ; tout le monde s’assoit confortablement, les pieds au sol, les yeux fermés ou ouverts sur un point – les deux se valent. Premier tour (1 min) : commencer avec le bol chantant ; chacun compte en silence sur ses doigts combien de sons différents il entend ; comparer brièvement – qui en a plus de cinq ? Deuxième tour (2 min) : guider lentement les trois étapes (liste), chercher le son le plus faible, finir avec le bol ; on ne guide pas plus longtemps que ces trois minutes. Recueillir ensuite deux ou trois retours : quel était le son le plus faible ? Quand est-ce que ça pourrait aider ? Pour finir, expliquer : écouter attentivement ramène l’attention ici et maintenant, loin du manège des pensées.",
+            "text": "Ce skill aide quand c’est trop bruyant, dehors ou dans la tête – à la cantine, dans le bus, quand les pensées tournent en boucle. Commencer avec le bol chantant, guider lentement les trois étapes et finir avec le bol – trois minutes de silence au plus, yeux ouverts ou fermés. Ensuite la clôture : une phrase dans le Skills-Pass, annoncer la mission, choisir son moment.",
             "sagen": [
-              "Vous n’avez rien à changer. Écoutez seulement ce qui est là – même le tic-tac de l’horloge ou votre propre respiration."
+              "Vous n’avez rien à changer – écoutez seulement ce qui est là, même le tic-tac de l’horloge ou votre respiration.",
+              "Quand arrive votre moment – récré, table du dîner, bus – et que voulez-vous y faire : observer votre volume ou écouter ?"
             ],
             "punkte": [
               "Se poser : les pieds au sol, les yeux fermés ou fixés sur un point de la table.",
-              "Écouter : d’abord le son le plus fort, puis un plus faible, puis le plus faible que tu puisses trouver – compter sur tes doigts.",
-              "Revenir : écouter ta respiration, sentir tes pieds, ouvrir les yeux."
+              "Écouter : d’abord le son le plus fort, puis un plus faible, puis le plus faible – compter sur les doigts.",
+              "Revenir : écouter sa respiration, sentir ses pieds, ouvrir les yeux.",
+              "Skills-Pass (4 min) : une phrase pour la question « Qu’est-ce que j’ai remarqué sur moi aujourd’hui ? » ; tampon.",
+              "Mission et moment (4 min) : l’annoncer ; à « trois », chacun montre son moment (un doigt la récré, deux la table du dîner, trois le bus, le poing un moment à soi) et l’écrit dans « Mon moment : quand … » ; annoncer la prochaine séance (1 min)."
             ],
-            "tipp": "Les jeunes expansifs et réservés vivent souvent l’exercice différemment : les uns trouvent le silence pénible, les autres l’apprécient. Les deux sont des observations précieuses, en plein dans le thème de la séance.",
-            "wennEsKippt": "Si quelqu’un fait exprès du bruit, l’intégrer calmement : c’est aussi un son – et maintenant, cherchez le plus faible. Si la classe s’agite trop, terminer après le premier tour et recommencer la semaine prochaine. Personne n’est obligé de fermer les yeux, et on peut sortir de l’exercice : qui le souhaite appuie seulement ses pieds dans le sol et attend le bol chantant."
-          },
-          {
-            "titel": "Skills-Pass, mission et choix du moment",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 min) : écrire la question au tableau – qu’est-ce que j’ai remarqué sur moi aujourd’hui ? Chaque jeune écrit une phrase et reçoit le tampon ; deux volontaires lisent la leur. Mission et choix du moment (2 min) : montrer la mission de la semaine dans le cahier et l’annoncer – à un moment précis, observer si l’on y est plutôt expansif ou plutôt réservé, ou y essayer l’écoute attentive. À « trois », tout le monde montre son moment : un doigt pour la récré, deux pour la table du dîner, trois pour le bus, le poing pour un moment à soi – et l’écrit dans la colonne « Mon moment : quand … » des missions de la semaine. Pour finir (1 min) : annoncer la prochaine séance.",
-            "sagen": [
-              "Une phrase pour le Skills-Pass : qu’avez-vous remarqué sur vous aujourd’hui – sur votre manière d’être ou pendant l’écoute attentive ?",
-              "Quand arrive votre moment ? Récré – un doigt, table du dîner – deux, bus – trois, un moment à vous – le poing. Écrivez-le dans le cahier : quand je…, alors j’observe mon volume – ou alors j’écoute."
-            ],
-            "tipp": "Laisser les feuilles A3 des équipes au mur jusqu’à la semaine prochaine : pour l’arbre des forces, elles aident à trouver des forces auxquelles personne ne pense. Une observation aussi a besoin d’un déclencheur : qui a choisi la récré y pense à la récré.",
-            "wennEsKippt": "Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne lui posera la question. Qui apprend encore la langue dessine un petit signe pour son moment : cour, assiette, bus."
+            "wennEsKippt": "Si quelqu’un fait exprès du bruit, l’intégrer calmement : c’est aussi un son – cherchez maintenant le plus faible. Personne n’est obligé de fermer les yeux, et on peut sortir de l’exercice : qui le souhaite appuie seulement ses pieds dans le sol et attend le bol chantant."
           }
         ],
-        "bruecke": "La semaine prochaine, on parle de vos forces : chacun dessine son propre arbre – et reçoit de la classe les forces qu’elle voit en lui.",
-        "mission": "Quand ton moment arrive – récré, table du dîner, bus –, observe une fois : es-tu plutôt expansif ou plutôt réservé ? Ou fais à ce moment-là une fois l’écoute attentive.",
-        "hintergrund": "L’introversion et l’extraversion décrivent où l’on puise son énergie : dans le calme ou le contact ; la plupart sont entre les deux. Cain (2012) distingue l’introversion de la timidité, la peur d’être jugé, et montre que l’école récompense souvent le bruit, alors que les discrets ont leurs propres forces, comme l’écoute. À l’adolescence, l’image de soi se complexifie : les jeunes se vivent différemment selon le contexte (Harter, 2012). La fenêtre de Johari (Luft & Ingham, 1955) explique pourquoi un regard extérieur peut surprendre : les autres voient certaines choses avant nous. La forme décide de l’effet : les jeunes acceptent ce qui respecte leur statut et leur laisse la décision, et rejettent ce qui les expose (Yeager, Dahl & Dweck, 2018). D’où la règle : chacun décide où il se place et ce qui peut être deviné, et chaque supposition s’appuie sur un exemple observé et bienveillant.",
+        "bruecke": "La semaine prochaine, on parle de vos forces : chacun dessine son propre arbre et reçoit de la classe les forces qu’elle voit en lui.",
+        "mission": "Observe une fois ton volume – ou essaie l’écoute attentive.",
+        "hintergrund": "L’introversion n’est pas la timidité, la peur d’être jugé : les personnes réservées font le plein au calme et ont leurs propres forces, comme l’écoute (Cain, 2012). Les jeunes se vivent différemment selon le contexte (Harter, 2012). La fenêtre de Johari explique pourquoi un regard extérieur peut surprendre : les autres voient certaines choses en premier (Luft & Ingham, 1955). Les jeunes acceptent ce qui respecte leur décision (Yeager, Dahl & Dweck, 2018) – ici, chacun choisit lui-même.",
         "quellen": [
           "Cain, S. (2012). Quiet: The Power of Introverts in a World That Can’t Stop Talking. New York: Crown.",
           "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
           "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
           "Yeager, D. S., Dahl, R. E. & Dweck, C. S. (2018). Why interventions to influence adolescent behavior often fail but could succeed. Perspectives on Psychological Science, 13(1), 101–122."
         ],
-        "achtung": "Le regard des autres peut blesser, même si les deux côtés de chaque ligne sont formulés de façon positive. Personne n’est classé par les autres : pour se placer, chacun va où il veut ; pour deviner, chacun choisit ses lignes, et « pas aujourd’hui » est permis. Arrêter tout de suite les commentaires comme « Toi ? Jamais ». Ne pas parler de « meilleurs amis » – tout le monde n’en a pas en ce moment. Si un jeune est mis à l’écart, former soi-même les paires ou ne deviner que chez l’enseignant·e ; en cas de signes de harcèlement, agir avec le régent et le SePAS selon la procédure de l’école. Qui devient silencieux après l’exercice a droit à un court entretien après le cours.",
+        "achtung": "Le regard des autres peut blesser, même quand les deux pôles sont formulés avec bienveillance. Personne n’est classé par les autres : pour se placer, chacun va où il veut ; pour deviner, chacun choisit sa ligne, « pas aujourd’hui » est permis, et les commentaires comme « Toi ? Jamais » sont arrêtés tout de suite. Ne pas parler de « meilleurs amis » ; si un jeune est mis à l’écart, former soi-même les paires, et en cas de signes de harcèlement agir avec le régent et le SePAS selon la procédure de l’école.",
         "differenzierung": {
-          "leichter": "Pour les jeunes qui ont du mal à lire ou qui apprennent encore la langue : montrer aussi les pôles par un geste ; sur la fiche, reporter seulement les cinq lignes de l’exercice au sol, une voisine lit à voix haute. Pour deviner, le début de phrase au tableau et un mot-clé suffisent. Pour la colonne « Mon moment », un mot suffit : récré, bus.",
-          "schwerer": "Choisir une ligne où la croix et la supposition étaient très éloignées et noter : dans quelles situations est-ce que je montre le côté que les autres voient ? Pendant le travail d’équipe, animer le groupe et veiller à ce que les plus réservés aient aussi la parole – ou inventer un projet sur la sixième carte."
+          "leichter": "Pour les jeunes qui ont du mal à lire ou qui apprennent encore la langue : montrer aussi les pôles par un geste ; sur la fiche, l’exercice 1 se fait en cochant, une voisine lit à voix haute. Pour deviner, un mot-clé suffit au lieu d’une phrase ; pour « Mon moment », un mot comme récré ou bus.",
+          "schwerer": "Choisir une situation où la croix et la supposition étaient très éloignées et noter : quand est-ce que je montre le côté que les autres voient ? Pendant le travail d’équipe, animer le groupe et veiller à ce que les plus réservés aient aussi la parole."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et hauteur de la main (5 min), se placer sur trois contraires (10 min), tableau et exercice 1 (10 min), devine – d’abord chez l’enseignant·e, puis à deux (13 min), écoute attentive (7 min), Skills-Pass, mission et choix du moment (5 min). Le travail d’équipe est supprimé ; la phrase « une classe a besoin des deux côtés » est dite au moment du tableau."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), se placer et exercice 1 (15 min), devine chez l’enseignant·e puis à deux (10 min), écoute attentive avec Skills-Pass, mission et moment (15 min), un court échange sur les tâches d’une équipe qui demandent des côtés réservés ou expansifs (5 min). L’orage et les cartes projet sont supprimés ; la phrase « une classe a besoin des deux côtés » est dite pendant l’explication au tableau."
       }
     }
   ],
@@ -559,142 +383,61 @@
       ],
       "de": {
         "titel": "Zwischen laut und leise",
-        "untertitel": "Wo stehst du – und wie sehen dich die anderen? Keine Seite ist besser.",
+        "untertitel": "Wo stehst du – und wie sehen dich andere?",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Die meisten Menschen sind nicht nur laut oder nur leise, sondern irgendwo dazwischen – und je nach Situation mal so, mal so. Leise heißt nicht schüchtern, laut heißt nicht frech. Jede Seite kann etwas, das die andere nicht so gut kann."
-          },
-          {
-            "art": "aufgabe",
-            "text": "Wo siehst du dich meistens? Mach auf jeder Linie ein Kreuz.",
-            "hinweis": "Die Linien 1 bis 5 kennst du aus der Aufstellung. Es gibt kein Richtig oder Falsch – denk daran, wie du meistens bist.",
-            "symbole": [
-              "ankreuzen"
-            ]
-          },
-          {
-            "art": "skala",
-            "von": "tanke unter Leuten auf",
-            "bis": "tanke für mich auf",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "probiere gleich aus",
-            "bis": "schaue erst zu",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "entscheide schnell",
-            "bis": "überlege lange",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "mache gern spontan",
-            "bis": "plane gern",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "rede gern viel",
-            "bis": "höre gern zu",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "zeige meine Gefühle",
-            "bis": "behalte Gefühle für mich",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "bin gern vorne dabei",
-            "bis": "bin gern im Hintergrund",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "mag es lebhaft",
-            "bis": "mag es ruhig",
-            "stufen": 5
-          },
-          {
             "art": "info",
-            "symbol": "merke",
-            "titel": "Beide Seiten können etwas",
-            "punkte": [
-              "Eher leise: zuhören, beobachten, lange dranbleiben, gründlich nachdenken",
-              "Eher laut: auf andere zugehen, etwas anstoßen, andere mitreißen",
-              "Fast alle: mal so, mal so – je nach Situation"
-            ]
-          },
-          {
-            "art": "seitenumbruch"
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Leise heißt nicht schüchtern, laut heißt nicht frech. Die meisten sind mal laut, mal leise – je nach Situation. Andere sehen manches zuerst an dir. Ihr Blick ist ein Hinweis, keine Wahrheit."
           },
           {
             "art": "aufgabe",
-            "text": "Bist du überall gleich? Kreuz an, wie laut oder leise du dort bist.",
+            "text": "Kreuze an: Wie laut oder leise bist du dort?",
+            "hinweis": "Denk daran, wie du meistens bist.",
             "symbole": [
               "ankreuzen"
             ]
           },
           {
-            "art": "spalten",
-            "verhaeltnis": "2:1",
-            "links": [
-              {
-                "art": "comic",
-                "spalten": 2,
-                "felder": [
-                  {
-                    "figuren": [
-                      "figur:jana:ruhig"
-                    ],
-                    "blase": "denken",
-                    "text": "Ich hör erst mal zu …",
-                    "untertitel": "In der Klasse"
-                  },
-                  {
-                    "figuren": [
-                      "figur:jana:froh:jubeln"
-                    ],
-                    "text": "Noch eine Runde!",
-                    "untertitel": "Mit Freunden"
-                  }
-                ]
-              }
+            "art": "tabelle",
+            "spalten": [
+              "Situation",
+              "eher leise",
+              "mal so, mal so",
+              "eher laut"
             ],
-            "rechts": [
-              {
-                "art": "skala",
-                "von": "laut",
-                "bis": "leise",
-                "stufen": 5,
-                "frage": "In der Klasse"
-              },
-              {
-                "art": "skala",
-                "von": "laut",
-                "bis": "leise",
-                "stufen": 5,
-                "frage": "Mit Leuten, die ich gut kenne"
-              },
-              {
-                "art": "skala",
-                "von": "laut",
-                "bis": "leise",
-                "stufen": 5,
-                "frage": "In einer neuen Gruppe"
-              }
+            "breiten": [
+              2.4,
+              1,
+              1.2,
+              1
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "In der Klasse",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Mit Leuten, die ich gut kenne",
+                "",
+                "",
+                ""
+              ],
+              [
+                "In einer neuen Gruppe",
+                "",
+                "",
+                ""
+              ]
             ]
           },
           {
             "art": "aufgabe",
-            "text": "Rate mal zu zweit: Wähl zwei Linien. Die andere Person rät, wo dein Kreuz steht, und sagt, woran sie das merkt.",
-            "hinweis": "Du wählst die Linien aus, ‚heute nicht‘ ist erlaubt. Die andere Person sagt nur Freundliches, das sie selbst gesehen hat.",
+            "text": "Lass dich raten: Eine andere Person sagt, wo dein Kreuz steht.",
             "symbole": [
               "partner",
               "sprechen"
@@ -703,30 +446,21 @@
           {
             "art": "tabelle",
             "spalten": [
-              "Linie",
-              "Mein Kreuz",
+              "Situation",
               "Geraten",
               "Woran man es merkt"
             ],
             "breiten": [
-              1.3,
+              1.4,
               1,
-              1,
-              2.2
+              2.4
             ],
             "zeilen": 2,
             "beispiel": [
-              "spontan – planen",
-              "eher spontan",
-              "eher planen",
-              "Du hast heute als Erste einen Zeitplan gemacht."
+              "In der Klasse",
+              "eher leise",
+              "Du hörst erst zu."
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Der Blick der anderen",
-            "text": "Manches über dich wissen du und die anderen. Manches weißt nur du. Und manches sehen andere, bevor du es selbst bemerkst. Ein Blick von außen ist keine Wahrheit – aber ein Hinweis, wie du wirkst."
           },
           {
             "art": "aufgabe",
@@ -739,23 +473,24 @@
             "art": "satzanfaenge",
             "items": [
               "An meiner Art mag ich …",
-              "Das kann ich gut, gerade weil ich so bin: …"
+              "Das kann ich gut, weil ich so bin: …"
             ],
-            "linien": 1
+            "linien": 2
           },
           {
             "art": "info",
             "symbol": "hilfe",
             "titel": "Du entscheidest, was du teilst.",
-            "text": "Dein Blatt gehört dir. Beim Raten wählst du selbst, welche Linien die andere Person sehen darf."
+            "text": "Dein Blatt gehört dir. Du wählst, was geraten wird."
           }
         ],
         "lehrer": {
-          "ziel": "Die Jugendlichen schätzen sich auf acht Gegensatzpaaren ein, merken, dass sie je nach Situation anders sind, und vergleichen ihr Selbstbild mit dem freundlichen Blick einer Person, die sie selbst wählen.",
+          "ziel": "Die Jugendlichen merken, dass sie je nach Situation mal lauter, mal leiser sind, und vergleichen ihr Selbstbild mit dem freundlichen Blick einer Person, die sie selbst wählen.",
           "ablauf": [
-            "Stunde 7, Schritt 4: Aufgabe 1 – die fünf Linien aus der Aufstellung übertragen, drei neue ankreuzen (4 Min.), danach Aufgabe 2 (4 Min.).",
-            "Schritt 6: Rate mal zu zweit nach den Regeln an der Tafel; die Linien wählt jede Person selbst. Dann Aufgabe 3 (2 Min.).",
-            "Schritt 7: nach der Teamaufgabe Aufgabe 4 allein (3 Min.); vorgelesen wird nur freiwillig."
+            "Stunde 7, Schritt 3: nach der Aufstellung Aufgabe 1 – drei Situationen ankreuzen; per Handzeichen: Wer hat nicht überall dasselbe angekreuzt?",
+            "Schritt 3: Rate mal zu zweit nach den Regeln der Lehrkraft; die Situation wählt jede Person selbst; dann Aufgabe 2 ausfüllen.",
+            "Schritt 5: nach der Teamaufgabe Aufgabe 3 allein; vorgelesen wird nur freiwillig.",
+            "Das Blatt bleibt im Heft."
           ],
           "hintergrund": "Introversion und Extraversion beschreiben, woher Menschen Energie beziehen; Introversion ist nicht dasselbe wie Schüchternheit, die Angst vor Bewertung (Cain, 2012). Jugendliche erleben sich je nach Umfeld anders (Harter, 2012). Das Johari-Fenster erklärt, warum ein Blick von außen überraschen kann (Luft & Ingham, 1955). Deshalb sind alle Pole freundlich formuliert, und jede Person wählt selbst, was geraten wird.",
           "quellen": [
@@ -768,142 +503,61 @@
       },
       "fr": {
         "titel": "Entre expansif et réservé",
-        "untertitel": "Où te situes-tu – et comment les autres te voient-ils ? Aucun côté n’est meilleur.",
+        "untertitel": "Où te situes-tu ? Que voient les autres ?",
         "bausteine": [
           {
-            "art": "text",
-            "text": "La plupart des gens ne sont pas seulement expansifs (ils parlent et bougent beaucoup) ou seulement réservés (ils préfèrent le calme) : ils sont quelque part entre les deux – et ça change selon la situation. Réservé ne veut pas dire timide, expansif ne veut pas dire insolent. Chaque côté sait faire quelque chose que l’autre fait moins bien."
-          },
-          {
-            "art": "aufgabe",
-            "text": "Où te vois-tu la plupart du temps ? Fais une croix sur chaque ligne.",
-            "hinweis": "Les lignes 1 à 5 sont celles de la ligne au sol. Il n’y a pas de bonne ou de mauvaise réponse – pense à comment tu es la plupart du temps.",
-            "symbole": [
-              "ankreuzen"
-            ]
-          },
-          {
-            "art": "skala",
-            "von": "je fais le plein avec du monde",
-            "bis": "je fais le plein seul",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "j’essaie tout de suite",
-            "bis": "je regarde d’abord",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "je décide vite",
-            "bis": "je réfléchis longtemps",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "j’aime l’imprévu",
-            "bis": "j’aime prévoir",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "je parle beaucoup",
-            "bis": "j’écoute volontiers",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "je montre mes émotions",
-            "bis": "je garde mes émotions pour moi",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "j’aime être devant",
-            "bis": "j’aime rester en retrait",
-            "stufen": 5
-          },
-          {
-            "art": "skala",
-            "von": "j’aime quand ça bouge",
-            "bis": "j’aime le calme",
-            "stufen": 5
-          },
-          {
             "art": "info",
-            "symbol": "merke",
-            "titel": "Chaque côté a ses forces",
-            "punkte": [
-              "Plutôt réservé : écouter, observer, persévérer, réfléchir à fond",
-              "Plutôt expansif : aller vers les autres, lancer quelque chose, entraîner le groupe",
-              "Presque tout le monde : un peu des deux – selon la situation"
-            ]
-          },
-          {
-            "art": "seitenumbruch"
+            "symbol": "wissen",
+            "titel": "Bon à savoir",
+            "text": "Réservé ne veut pas dire timide, expansif ne veut pas dire insolent. La plupart sont tantôt l’un, tantôt l’autre – selon la situation. Les autres voient parfois ce que tu ne vois pas. Leur regard est un indice, pas la vérité."
           },
           {
             "art": "aufgabe",
-            "text": "Es-tu pareil partout ? Coche où tu te situes dans chaque situation.",
+            "text": "Coche : à quel point es-tu expansif ou réservé ?",
+            "hinweis": "Pense à comment tu es la plupart du temps.",
             "symbole": [
               "ankreuzen"
             ]
           },
           {
-            "art": "spalten",
-            "verhaeltnis": "2:1",
-            "links": [
-              {
-                "art": "comic",
-                "spalten": 2,
-                "felder": [
-                  {
-                    "figuren": [
-                      "figur:jana:ruhig"
-                    ],
-                    "blase": "denken",
-                    "text": "J’écoute d’abord…",
-                    "untertitel": "En classe"
-                  },
-                  {
-                    "figuren": [
-                      "figur:jana:froh:jubeln"
-                    ],
-                    "text": "Encore une partie !",
-                    "untertitel": "Avec mes amis"
-                  }
-                ]
-              }
+            "art": "tabelle",
+            "spalten": [
+              "Situation",
+              "plutôt réservé",
+              "un peu des deux",
+              "plutôt expansif"
             ],
-            "rechts": [
-              {
-                "art": "skala",
-                "von": "expansif",
-                "bis": "réservé",
-                "stufen": 5,
-                "frage": "En classe"
-              },
-              {
-                "art": "skala",
-                "von": "expansif",
-                "bis": "réservé",
-                "stufen": 5,
-                "frage": "Avec des gens que je connais bien"
-              },
-              {
-                "art": "skala",
-                "von": "expansif",
-                "bis": "réservé",
-                "stufen": 5,
-                "frage": "Dans un nouveau groupe"
-              }
+            "breiten": [
+              2.4,
+              1,
+              1.2,
+              1
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "En classe",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Avec des gens que je connais bien",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Dans un nouveau groupe",
+                "",
+                "",
+                ""
+              ]
             ]
           },
           {
             "art": "aufgabe",
-            "text": "Devine à deux : choisis deux lignes. L’autre devine où est ta croix et dit à quoi il le remarque.",
-            "hinweis": "C’est toi qui choisis les lignes, « pas aujourd’hui » est permis. L’autre ne dit que des choses gentilles, qu’il a vues lui-même.",
+            "text": "Fais-toi deviner : une autre personne dit où est ta croix.",
             "symbole": [
               "partner",
               "sprechen"
@@ -912,30 +566,21 @@
           {
             "art": "tabelle",
             "spalten": [
-              "Ligne",
-              "Ma croix",
+              "Situation",
               "Deviné",
               "À quoi on le voit"
             ],
             "breiten": [
-              1.3,
+              1.4,
               1,
-              1,
-              2.2
+              2.4
             ],
             "zeilen": 2,
             "beispiel": [
-              "imprévu – prévoir",
-              "plutôt l’imprévu",
-              "plutôt prévoir",
-              "Aujourd’hui, tu as été la première à faire un planning."
+              "En classe",
+              "plutôt réservé",
+              "Tu écoutes d’abord."
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Le regard des autres",
-            "text": "Il y a des choses que toi et les autres savez sur toi. D’autres que toi seul connais. Et d’autres encore que les autres voient avant toi. Un regard extérieur n’est pas la vérité – mais il te montre l’effet que tu produis."
           },
           {
             "art": "aufgabe",
@@ -950,21 +595,22 @@
               "Ce que j’aime dans ma manière d’être, c’est…",
               "Ce que je fais bien, justement parce que je suis comme ça : …"
             ],
-            "linien": 1
+            "linien": 2
           },
           {
             "art": "info",
             "symbol": "hilfe",
             "titel": "Tu décides de ce que tu partages.",
-            "text": "Ta fiche t’appartient. Pour deviner, c’est toi qui choisis les lignes que l’autre peut voir."
+            "text": "Ta fiche t’appartient. Tu choisis ce que les autres devinent."
           }
         ],
         "lehrer": {
-          "ziel": "Les jeunes se situent sur huit paires de contraires, remarquent qu’ils changent selon la situation et comparent l’image qu’ils ont d’eux-mêmes au regard bienveillant d’une personne qu’ils choisissent.",
+          "ziel": "Les jeunes remarquent qu’ils sont tantôt plus expansifs, tantôt plus réservés selon la situation, et comparent l’image qu’ils ont d’eux-mêmes au regard bienveillant d’une personne qu’ils choisissent.",
           "ablauf": [
-            "Séance 7, étape 4 : exercice 1 – reporter les cinq lignes de l’exercice au sol, cocher les trois nouvelles (4 min), puis exercice 2 (4 min).",
-            "Étape 6 : devine à deux, selon les règles au tableau ; chacun choisit ses lignes. Puis exercice 3 (2 min).",
-            "Étape 7 : après le travail d’équipe, exercice 4 seul (3 min) ; on ne lit à voix haute que si on le souhaite."
+            "Séance 7, étape 3 : après le placement, exercice 1 – cocher trois situations ; à main levée : qui n’a pas coché la même chose partout ?",
+            "Étape 3 : devine à deux selon les règles de l’enseignant·e ; chacun choisit lui-même la situation ; puis exercice 2.",
+            "Étape 5 : après le travail d’équipe, exercice 3 seul ; on ne lit à voix haute que si on le souhaite.",
+            "La fiche reste dans le cahier."
           ],
           "hintergrund": "L’introversion et l’extraversion décrivent où l’on puise son énergie ; l’introversion n’est pas la timidité, qui est la peur d’être jugé (Cain, 2012). Les jeunes se vivent différemment selon le contexte (Harter, 2012). La fenêtre de Johari explique pourquoi un regard extérieur peut surprendre (Luft & Ingham, 1955). C’est pourquoi tous les pôles sont formulés positivement et chacun choisit ce qui peut être deviné.",
           "quellen": [
@@ -1045,7 +691,7 @@
           "ziel": "Die Tischgruppen erleben an einem Projekt, dass ein Team leise und laute Seiten braucht und dass die meisten Aufgaben beides verlangen.",
           "ablauf": [
             "Einmal kopieren und schneiden; jede Tischgruppe zieht eine Karte.",
-            "Einheit 7, Schritt 7: die sechs Aufgaben in drei Spalten sortieren (leise – beides – laut) und eine eigene ergänzen.",
+            "Einheit 7, Schritt 5: die sechs Aufgaben in drei Spalten sortieren (leise – beides – laut) und eine eigene ergänzen.",
             "Jede Person wählt eine Aufgabe für sich; wer mag, bewusst eine von der anderen Seite. Niemand teilt andere ein.",
             "Die sechste Karte bekommt eine Gruppe, die früh fertig ist: ein eigenes Projekt erfinden."
           ],
@@ -1101,7 +747,7 @@
           "ziel": "Les îlots constatent, à partir d’un projet, qu’une équipe a besoin de côtés réservés et expansifs et que la plupart des tâches demandent les deux.",
           "ablauf": [
             "Photocopier une fois et découper ; chaque îlot tire une carte.",
-            "Séance 7, étape 7 : ranger les six tâches en trois colonnes (réservé – les deux – expansif) et en ajouter une.",
+            "Séance 7, étape 5 : ranger les six tâches en trois colonnes (réservé – les deux – expansif) et en ajouter une.",
             "Chacun choisit une tâche pour soi ; qui le souhaite en prend exprès une de l’autre côté. Personne ne répartit les autres.",
             "La sixième carte va à un groupe qui a fini tôt : inventer son propre projet."
           ],

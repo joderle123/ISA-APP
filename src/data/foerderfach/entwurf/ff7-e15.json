@@ -39,27 +39,24 @@
       ],
       "de": {
         "titel": "Skills über die Sinne",
-        "kurz": "An fünf Stationen testet die Klasse Sinnes-Skills, prüft mit Hörproben, was Musik mit ihr macht, schreibt ihre Playlist auf Papier und übt 3-3-3 für unterwegs.",
+        "kurz": "An vier Stationen testet die Klasse Sinnes-Skills, prüft mit Hörproben, was Musik mit ihr macht, schreibt ihre Playlist zum Runterkommen und übt 3-3-3 für unterwegs.",
         "ziele": [
-          "testen an fünf Stationen Sinnes-Skills mit Zahl vorher und nachher und vergleichen, was beruhigt und was wach macht",
+          "testen an Stationen Sinnes-Skills mit Zahl vorher und nachher und vergleichen, was beruhigt und was wach macht",
           "erklären, warum ein starker oder angenehmer Reiz die Aufmerksamkeit aus dem Gedankenkarussell holt",
-          "testen Musik an drei Hörproben, schreiben eine Playlist zum Runterkommen und erkennen, dass Musik auch hochziehen kann",
-          "üben den Skill 3-3-3 für Bus, Test und Pause"
+          "prüfen Musik an drei Hörproben, schreiben eine Playlist zum Runterkommen und üben 3-3-3 für Bus, Test und Pause"
         ],
         "material": [
-          "Schülerheft, Stempel für den Skills-Pass",
           "Gefühlsrad-Plakat, 20 Klebepunkte",
-          "Stationskarten (Vorlage), fünf Kisten",
-          "Fühlbeutel mit sechs Dingen, Klangschale",
-          "2 Kühlakkus, Kühlbox, Tücher",
-          "Drei Schraubgläser mit Düften, Igelball",
-          "Lautsprecher, drei Hörproben"
+          "Stationskarten (Vorlage), vier Kisten",
+          "Fühlbeutel, Klangschale, Igelball, Tücher",
+          "2 Kühlakkus in der Kühlbox",
+          "Drei Duft-Gläser (nur nach Rückfrage)",
+          "Lautsprecher, drei Hörproben; Schülerheft"
         ],
         "vorbereitung": [
-          "Eine Woche vorher klären, wer Asthma, Allergien oder Probleme mit Düften oder Kälte hat (Régent, Eltern, Jugendliche).",
-          "Kühlakkus über Nacht einfrieren und in der Kühlbox mitbringen.",
-          "Je Station eine Kiste packen: Karte, Material, Tuch; Düfte (Orangenschale, Minze, Kaffee) in Gläsern.",
-          "Drei Hörproben von je 40 Sekunden bereitlegen: Meeresrauschen, ruhiges Instrumentalstück, schneller Beat."
+          "Eine Woche vorher klären, wer Asthma, Allergien oder Probleme mit Düften oder Kälte hat; ohne Rückfrage kein Duft.",
+          "Kühlakkus über Nacht einfrieren; je Station eine Kiste packen: Karte, Material, Tuch, Duft-Gläser (Orange, Minze, Kaffee).",
+          "Drei Hörproben zu je 40 Sekunden bereitlegen (Meeresrauschen, ruhiges Instrumentalstück, schneller Beat); Lautstärke testen."
         ],
         "ablauf": [
           {
@@ -70,17 +67,12 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Rückblick: der Lieblings-Skill im Alltag"
+            "titel": "Rückblick: Mission und Thema"
           },
           {
-            "min": "15–25",
-            "phase": "input",
-            "titel": "Warum die Sinne helfen: der Aufmerksamkeits-Test"
-          },
-          {
-            "min": "25–45",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Hör-Test und meine Playlist"
+            "titel": "Aufmerksamkeits-Test, Hör-Test und Playlist"
           },
           {
             "min": "45–50",
@@ -88,24 +80,14 @@
             "titel": "Bewegungspause: Sinnes-Seiten"
           },
           {
-            "min": "50–78",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Sinnes-Stationen: fünf Tests"
+            "titel": "Sinnes-Stationen: vier Tests"
           },
           {
-            "min": "78–85",
-            "phase": "uebung",
-            "titel": "Was wirkt bei wem? Mein Plan"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: 3-3-3"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, Mission, Moment und Ausblick"
           }
         ],
         "schritte": [
@@ -113,411 +95,273 @@
             "titel": "Check-in: Gefühl, Zahl und ein Sinneseindruck",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad (2 Min.); wenn alle sitzen, zeigen alle auf drei ihre Zahl mit den Fingern (1 Min.). Dann die Frage: Was habt ihr auf dem Weg hierher gesehen, gehört oder gerochen? Die Lehrkraft beginnt mit einem eigenen Beispiel; vier, fünf Freiwillige nennen ihre Zahl und einen Sinneseindruck (5 Min.). Wem nichts einfällt, schaut kurz aus dem Fenster und nennt etwas, das er jetzt sieht oder hört (2 Min.). So öffnet sich das Thema, ohne dass jemand etwas Persönliches erzählen muss.",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad, dann zeigen alle auf drei ihre Zahl mit den Fingern. Heute dazu eine Frage: Was hast du auf dem Weg hierher gesehen, gehört oder gerochen? Die Lehrkraft beginnt mit einem eigenen Beispiel, dann nennen vier, fünf Freiwillige ihre Zahl und einen Sinneseindruck; wem nichts einfällt, schaut aus dem Fenster und nennt etwas, das er jetzt sieht oder hört.",
             "sagen": [
               "Eure Zahl – und eine Sache, die ihr heute auf dem Weg hierher gesehen, gehört oder gerochen habt.",
               "Bei mir: 30, und im Bus hat es nach nassen Jacken gerochen."
             ],
-            "tipp": "Kleine Alltagseindrücke reichen völlig: das Quietschen der Bustür, Kaffeeduft im Lehrerzimmer, Regen auf dem Schulhof. Wer genau hinschaut, ist schon mitten im Thema.",
-            "wennEsKippt": "Kommen Witze über den Geruch von Mitschülern, freundlich stoppen: Eindrücke vom Weg, nicht von Personen hier im Raum. Sagt niemand etwas, selbst zwei Beispiele geben und dann eine halbe Minute still lauschen lassen: Was hört ihr gerade?"
+            "wennEsKippt": "Kommen Witze über den Geruch von Mitschülern, freundlich stoppen: Eindrücke vom Weg, nicht von Personen hier im Raum. Sagt niemand etwas, selbst zwei Beispiele geben und eine halbe Minute still lauschen lassen: Was hört ihr gerade?"
           },
           {
-            "titel": "Rückblick: der Lieblings-Skill im Alltag",
+            "titel": "Rückblick: Mission und Thema",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Kurz nach der Wochen-Mission fragen: Kam dein Moment – und welchen Skill habt ihr gemacht? Daumen hoch, Mitte oder runter; eine Stimme nennt Zahl vorher und nachher, niemand muss den Moment erlebt haben; wer mag, trägt den Test im Skills-Tester unter „Test im Alltag“ ein. Dann das Thema nennen: Körper-Skills verbrauchen den Alarm oder treten auf die Bremse; Sinnes-Skills lenken die Aufmerksamkeit mit starken oder angenehmen Reizen um – Kälte, ein Klang, etwas in der Hand, ein Song.",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – und welchen Skill hast du gemacht? Daumen hoch, Mitte oder runter; eine Stimme nennt Zahl vorher und nachher. Dann das Thema nennen: Körper-Skills verbrauchen den Alarm oder bremsen ihn, Sinnes-Skills lenken die Aufmerksamkeit um – mit Kälte, einem Klang, etwas in der Hand, einem Song.",
             "sagen": [
-              "Kam euer Moment – und was habt ihr gemacht? Zahl vorher, Zahl nachher – mehr will ich gar nicht wissen.",
+              "Kam euer Moment – und was habt ihr gemacht, Zahl vorher, Zahl nachher?",
               "Heute geht es um Skills, die über Hände, Ohren, Augen und Nase funktionieren."
             ],
-            "tipp": "Kam bei vielen der Moment nicht, nicht belehren, sondern fragen, was es schwer gemacht hat – vergessen, keine Gelegenheit. Oft hilft ein Moment, der sicher kommt: jeden Abend vor dem Schlafen, jeden Morgen im Bus; heute wählt jede Person wieder einen."
+            "tipp": "Kam bei vielen der Moment nicht, nicht belehren, sondern fragen, was es schwer gemacht hat; oft hilft ein Moment, der sicher kommt, etwa jeden Abend vor dem Schlafen oder jeden Morgen im Bus."
           },
           {
-            "titel": "Warum die Sinne helfen: der Aufmerksamkeits-Test",
-            "dauer": 10,
-            "phase": "input",
-            "text": "Ein kleiner Versuch: Alle schauen auf den Tisch und denken an alles, was sie heute noch erledigen müssen. Vorher ankündigen, dass irgendwann in den nächsten 20 Sekunden die Klangschale klingt; sie deutlich, aber nicht laut anschlagen. Dann fragen (3 Min.): Wo war eure Aufmerksamkeit gerade – bei euren Aufgaben oder beim Klang? Daraus ableiten: Ein deutlicher Sinnesreiz holt die Aufmerksamkeit ins Hier und Jetzt; wer genau hinhört oder etwas Kaltes spürt, kann nicht gleichzeitig grübeln. Das Tafelbild gemeinsam lesen: Starke Reize helfen eher bei Rot, angenehme eher bei Gelb (4 Min.). Zum Schluss macht jede Person im Skills-Tester einen Stern an die Station, die ihr wohl am meisten hilft; nach den Stationen wird geprüft (3 Min.).",
-            "sagen": [
-              "Denkt zwanzig Sekunden lang an alles, was ihr heute noch erledigen müsst. Irgendwann klingt die Schale.",
-              "Wo war eure Aufmerksamkeit gerade – bei euren Aufgaben oder beim Klang?",
-              "Wer genau hinhört oder etwas Kaltes in der Hand spürt, hat keinen Platz mehr zum Grübeln."
-            ],
-            "tabelle": {
-              "spalten": [
-                "Sinn",
-                "Skill-Beispiele"
-              ],
-              "zeilen": [
-                [
-                  "Tasten",
-                  "einen Knetball kneten, einen glatten Stein in der Hosentasche drehen"
-                ],
-                [
-                  "Kälte",
-                  "Kühlakku im Tuch, kaltes Wasser über die Handgelenke – stark, gut bei Rot"
-                ],
-                [
-                  "Hören",
-                  "einem Klang nachhören, bis er weg ist; ein Song zum Runterkommen"
-                ],
-                [
-                  "Sehen",
-                  "im Raum alles in einer Farbe suchen, dem Sand in einer Sanduhr zuschauen"
-                ],
-                [
-                  "Riechen",
-                  "an Orangenschale, Minze oder Kaffee riechen – beruhigt oder macht wach"
-                ]
-              ]
-            },
-            "tipp": "Die Schale ankündigen und deutlich, aber nicht laut anschlagen: Ein Schreck soll es nicht sein, die Aufmerksamkeit springt trotzdem. Den Stern macht jede Person still für sich; verglichen wird erst nach den Stationen.",
-            "wennEsKippt": "Erschrickt jemand doch, kurz beruhigen und erklären: Genau das macht ein starker Reiz – er holt dich sofort ins Jetzt. Wird nur gealbert, den Versuch einmal wiederholen, diesmal mit dem Blick auf die eigenen Hände."
-          },
-          {
-            "titel": "Hör-Test und meine Playlist",
-            "dauer": 20,
+            "titel": "Aufmerksamkeits-Test, Hör-Test und Playlist",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Hör-Test (6 Min.): Die Lehrkraft spielt drei Hörproben von je 40 Sekunden – Meeresrauschen, ein ruhiges Instrumentalstück, ein schneller Beat; alle hören still zu und kreuzen nach jeder Probe in Aufgabe 1 an, was sie mit ihnen macht. Per Handzeichen vergleichen: Fast nie reagieren alle gleich. Dann schreibt jede Person in Aufgabe 2 Songs zum Runterkommen und zum Aufladen; Geräusche, Stimmen oder Orte zählen auch, ein Handy braucht niemand (5 Min.). Song-Tausch in der Tischgruppe: Reihum nennt jede Person einen Eintrag zum Runterkommen und sagt, warum er wirkt – Rhythmus, Stimme, Text oder eine Erinnerung; „weiter“ ist erlaubt (5 Min.). Zum Schluss in der Klasse: Welche Musik würde eine 70 eher zur 90 machen? Dann beantwortet jede Person Aufgabe 3 für sich (4 Min.).",
+            "text": "Erst ein kleiner Versuch: Alle denken an alles, was sie heute noch erledigen müssen, und irgendwann klingt die Schale – wo war die Aufmerksamkeit? Dann der Hör-Test mit drei Hörproben (Aufgabe 1) und die eigene Playlist zum Runterkommen (Aufgabe 2), zum Schluss der Song-Tausch in der Tischgruppe.",
             "sagen": [
-              "Ein Song zum Runterkommen muss nicht langsam sein. Er muss euch runterbringen.",
-              "Musik kann auch hochziehen. Bei Rot lieber nicht den Song, der die Wut noch lauter macht."
+              "Denkt zwanzig Sekunden lang an alles, was ihr heute noch erledigen müsst – irgendwann klingt die Schale.",
+              "Ein Song zum Runterkommen muss nicht langsam sein, er muss euch runterbringen – und Musik kann auch hochziehen."
             ],
-            "tipp": "Gespielt werden nur die drei vorbereiteten Hörproben, keine Songs aus der Klasse: So muss sich niemand für seinen Geschmack rechtfertigen, und es gibt keinen Streit über Texte. Die Proben vorher einmal im Raum abspielen und die Lautstärke einstellen. Wer zu Hause kaum Musik hört, schreibt Geräusche, Stimmen oder Orte auf, die ihn beruhigen.",
-            "wennEsKippt": "Werden Songs ausgelacht, auf die Klassenvereinbarung zeigen: Geschmack wird hier nicht bewertet. Werden Songs mit Gewalt oder Beleidigungen genannt, nicht über Texte streiten, sondern zurückfragen: Bringt dich der Song runter – oder hält er die Wut am Kochen? Wirkt jemand bei einer Hörprobe aufgewühlt, die Probe ausblenden, nicht vor der Klasse nachfragen und nach der Stunde kurz ansprechen. Wem nichts einfällt, übernimmt eine Hörprobe, die ihm gutgetan hat.",
+            "punkte": [
+              "Aufmerksamkeits-Test (6 Min.): Die Schale deutlich, aber nicht laut anschlagen. Wo war eure Aufmerksamkeit – bei euren Aufgaben oder beim Klang? Ein deutlicher Reiz holt ins Hier und Jetzt: Wer genau hinhört oder etwas Kaltes spürt, kann nicht zugleich grübeln. Starke Reize helfen eher bei Rot, angenehme eher bei Gelb.",
+              "Hör-Test (7 Min.): drei Hörproben zu je 40 Sekunden – Meeresrauschen, ruhiges Instrumentalstück, schneller Beat; alle hören still zu und kreuzen nach jeder Probe in Aufgabe 1 an, was sie mit ihnen macht. Per Handzeichen vergleichen: Fast nie reagieren alle gleich.",
+              "Playlist (9 Min.): Aufgabe 2 allein – Songs, Geräusche, Stimmen oder Orte zum Runterkommen und zum Aufladen; ein Handy braucht niemand.",
+              "Song-Tausch (8 Min.): In der Tischgruppe nennt reihum jede Person einen Eintrag zum Runterkommen und sagt, warum er wirkt; „weiter“ ist erlaubt. In der Klasse: Welche Musik macht aus einer 70 eher eine 90?"
+            ],
+            "wennEsKippt": "Werden Songs ausgelacht, auf die Klassenvereinbarung zeigen: Geschmack wird hier nicht bewertet; bei Songs mit Gewalt oder Beleidigungen nicht über Texte streiten, sondern zurückfragen: Bringt dich der Song runter – oder hält er die Wut am Kochen? Wirkt jemand bei einer Hörprobe aufgewühlt, die Probe ausblenden und nach der Stunde kurz ansprechen.",
             "blatt": "ff7-sinnes-skills"
           },
           {
             "titel": "Bewegungspause: Sinnes-Seiten",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen auf. Fensterseite und Türseite stehen je für eine Antwort; die Lehrkraft liest ein Entweder-oder vor, und alle gehen ohne Kommentar auf ihre Seite. Nach jeder Runde kurz schauen: Wie verteilt sich die Klasse? Wer nicht laufen mag, zeigt mit dem Arm. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Alle stehen auf; Fensterseite und Türseite stehen je für eine Antwort. Die Lehrkraft liest ein Entweder-oder vor, und alle gehen ohne Kommentar auf ihre Seite (wer nicht laufen mag, zeigt mit dem Arm). Nach jeder Runde kurz schauen, wie sich die Klasse verteilt.",
+            "sagen": [
+              "Geht auf die Seite, die für euch passt – es gibt keine richtige."
+            ],
             "punkte": [
               "Fenster: Meeresrauschen – Tür: Regen auf dem Dach.",
               "Fenster: kaltes Wasser im Gesicht – Tür: warme Dusche.",
               "Fenster: Musik beim Lernen – Tür: Stille beim Lernen.",
-              "Fenster: Duft von frischem Brot – Tür: Duft von Orangen.",
-              "Fenster: barfuß im Gras – Tür: barfuß im Sand.",
               "Fenster: Kopfhörer im Bus – Tür: aus dem Fenster schauen."
             ],
-            "tipp": "Die Verteilung zeigt nebenbei die Botschaft der Stunde: Was die einen beruhigt, ist für die anderen nichts. Darum wird gleich getestet."
+            "tipp": "Die Verteilung zeigt nebenbei die Botschaft der Stunde: Was die einen beruhigt, ist für die anderen nichts – darum wird gleich getestet. Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung."
           },
           {
-            "titel": "Sinnes-Stationen: fünf Tests",
-            "dauer": 28,
+            "titel": "Sinnes-Stationen: vier Tests",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Start (3 Min.): Jede Tischgruppe holt eine Kiste an ihren Tisch – Kälte und Duft an die Tische nah am Pult, Klang in die ruhigste Ecke –, verteilt die Rollen Vorlesen, Zeit, Material und Aufräumen und liest die Regeln an der Tafel. Dann fünf Runden zu je fünf Minuten (25 Min.): Karte vorlesen, Zahl vorher, Skill etwa drei Minuten, Zahl nachher im Skills-Tester eintragen, Station aufräumen. Auf das Zeichen – Hand heben, dann „Wechsel“ – geht jede Gruppe im Uhrzeigersinn an den nächsten Tisch; die Kisten bleiben liegen. An allen Stationen wird geflüstert, damit man an der Klang-Station etwas hört. Die Lehrkraft bleibt bei Kälte und Duft, gibt jeder Gruppe ein frisches Tuch und achtet darauf, dass die Gläser nur kurz offen sind.",
+            "text": "Jede Tischgruppe holt eine Kiste an ihren Tisch und wechselt auf das Zeichen im Uhrzeigersinn: Karte vorlesen, Zahl vorher, Skill etwa drei Minuten, Zahl nachher im Skills-Tester eintragen, aufräumen. Vor dem Start tippen alle, welche Station ihnen am meisten helfen wird. Zum Schluss wird verglichen: Wo ist die Zahl am meisten gesunken?",
             "sagen": [
               "Ihr testet nicht, ob ihr etwas mögt, sondern was es mit eurer Zahl macht.",
-              "Hand hoch heißt: Satz zu Ende, Zahl eintragen, aufräumen. Dann Wechsel."
+              "Hand hoch heißt: Satz zu Ende, Zahl eintragen, aufräumen – dann Wechsel."
             ],
             "punkte": [
-              "Wir flüstern und wechseln erst auf das Zeichen.",
-              "Kühlakku nur im Tuch, nur an Händen oder Handgelenken – nie ins Gesicht oder in den Nacken anderer.",
-              "Gläser nur kurz öffnen, mit Abstand riechen, Deckel wieder zu; niemandem etwas unter die Nase halten.",
-              "Nichts in den Mund, nichts werfen; jede Person entscheidet selbst, ob sie mitmacht.",
-              "Die Station so verlassen, wie wir sie gefunden haben."
+              "Start (3 Min.): Kisten an die Tische – Kälte und Duft nah am Pult, Klang in die ruhigste Ecke; Rollen Vorlesen, Zeit, Material, Aufräumen. Auf drei zeigen alle, welche Station ihnen vermutlich am meisten hilft.",
+              "Vier Runden zu je sechs Minuten (24 Min.): Tasten, Kälte, Klang, Duft oder Hände. Wechsel im Uhrzeigersinn auf Handzeichen; an allen Stationen wird geflüstert.",
+              "Regeln an der Tafel: Kühlakku nur im Tuch, nur an Händen oder Handgelenken. Gläser nur kurz öffnen, mit Abstand riechen. Nichts in den Mund, nichts werfen; jede Person entscheidet selbst, ob sie mitmacht.",
+              "Auswertung und Plan (8 Min.): Hand heben bei der Station, bei der die Zahl am meisten gesunken ist, Strichliste an der Tafel – was hat beruhigt, was wach gemacht? Dann Aufgabe 3 auf dem Blatt: Welchen Sinnes-Skill nehme ich diese Woche mit – und wann?"
             ],
-            "tipp": "Mit Kisten muss in der Stunde nichts aufgebaut werden: Die Tische sind die Stationen. Wer die Unterrichtssprache noch lernt, orientiert sich an den Bildern und kurzen Schritten auf den Karten und macht einfach mit; wer nicht lesen mag, übernimmt Zeit oder Material.",
-            "wennEsKippt": "Wird an einer Station herumgealbert – Kühlakku in den Nacken, Fühlbeutel als Wurfgeschoss –, die Gruppe eine Runde lang bei der Lehrkraft zuschauen lassen. Klagt jemand über Kopfschmerzen, Übelkeit oder Atemnot, das Glas schließen, das Fenster öffnen und die Person ans offene Fenster setzen; bei Atemnot das Krankenzimmer rufen. Wer gar nicht mitmachen will, begleitet seine Gruppe als Zeitwächter.",
-            "blatt": "ff7-sinnes-stationen"
-          },
-          {
-            "titel": "Was wirkt bei wem? Mein Plan",
-            "dauer": 7,
-            "phase": "uebung",
-            "text": "Zurück an den Plätzen: Die Lehrkraft nennt die Stationen nacheinander, alle heben die Hand bei der Station, bei der ihre Zahl am meisten gesunken ist, und an der Tafel entsteht eine Strichliste (2 Min.). Kurz auswerten (2 Min.): Was hat beruhigt, was hat wach gemacht? Stimmt euer Stern im Skills-Tester? Dann füllt jede Person auf dem Blatt Aufgabe 4 aus (3 Min.): Welchen Sinnes-Skill nehme ich diese Woche mit – und wann?",
-            "sagen": [
-              "Hebt die Hand bei der Station, bei der eure Zahl am meisten gesunken ist.",
-              "Kälte und Pfefferminze machen viele wach. Das kann vor einem Test genau richtig sein."
-            ],
-            "tipp": "Die Strichliste ist meist breit verteilt – die beste Antwort auf die Frage, warum jede Person ihren eigenen Skills-Koffer braucht.",
-            "blatt": "ff7-sinnes-skills"
-          },
-          {
-            "titel": "Skill: 3-3-3",
-            "dauer": 10,
-            "phase": "skill",
-            "text": "Ankündigen: 5-4-3-2-1 kennt ihr seit September; für unterwegs gibt es eine Kurzform, die in einer halben Minute geht. Zahl vorher in der Zeile „3-3-3“ eintragen. Dann langsam anleiten, selbst mitmachen und zwischen den Schritten Zeit lassen: erste Runde mit Ansage (2 Min.), zweite Runde mit anderen Dingen (2 Min.), dritte Runde allein, ganz still und so unauffällig wie im Bus (2 Min.). Zum Schluss einmal lang ausatmen, Zahl nachher eintragen und zwei, drei Rückmeldungen einholen (2 Min.): Wo könnte das helfen – vor dem Test, im vollen Bus, bevor man im Chat antwortet?",
-            "sagen": [
-              "Drei Dinge, die ihr seht. Lasst euch Zeit – auch kleine Dinge zählen: ein Kratzer auf dem Tisch, ein Schnürsenkel.",
-              "Die dritte Runde macht ihr allein und so, dass es niemand merkt."
-            ],
-            "punkte": [
-              "Schau dich um: Nenn still drei Dinge, die du siehst.",
-              "Hör hin: Nenn still drei Geräusche, die du hörst.",
-              "Spür nach: drei Dinge, die du gerade spürst – Füße auf dem Boden, Stuhl, Ärmel."
-            ],
-            "tipp": "Nach den Stationen ist die Klasse oft aufgedreht. Die dritte Runde in völliger Stille macht den Unterschied; die Lehrkraft macht sichtbar mit und schaut dabei nicht in die Klasse.",
-            "wennEsKippt": "Ruft jemand seine Dinge laut in den Raum, an die stille Variante erinnern: Im Bus würdest du das auch nicht laut sagen. Wird es unruhig, nur die stille Runde machen und am Ende den doppelten Seufzer anhängen.",
+            "wennEsKippt": "Wird an einer Station herumgealbert – Kühlakku in den Nacken, Fühlbeutel als Wurfgeschoss –, die Gruppe eine Runde lang bei der Lehrkraft zuschauen lassen. Klagt jemand über Kopfschmerzen, Übelkeit oder Atemnot, das Glas schließen, das Fenster öffnen und die Person ans offene Fenster setzen; bei Atemnot das Krankenzimmer rufen.",
             "blatt": "ff7-skills-tester"
           },
           {
-            "titel": "Skills-Pass, Mission, Moment und Ausblick",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Leitfrage für den Skills-Pass an die Tafel: Welcher Sinn hilft mir am meisten – und wann setze ich ihn ein? Satz schreiben, Stempel (2 Min.). Mission und Moment wählen (2 Min.): Die Wochen-Mission ansagen – wenn dein Moment kommt, dann 3-3-3 oder ein Song von der Liste. Den Moment hat jede Person in Aufgabe 4 auf dem Blatt schon gewählt – er gilt für 3-3-3 genauso wie für den Song; sie überträgt ihn als Stichwort in die Spalte ‚Mein Moment: Wenn …‘ im Heft. Wer in Aufgabe 4 nichts stehen hat, zeigt auf drei: ein Finger für den Bus, zwei für die Pause, drei für ‚wenn meine Zahl steigt‘, die Faust für einen eigenen Moment – und schreibt das Stichwort ebenso ins Heft. Zum Schluss der Ausblick (1 Min.). Zwei Freiwillige bringen die Kisten nach vorn; nach der Stunde kommen die Kühlakkus zurück ins Gefrierfach, die Tücher in die Wäsche und die Gläser verschlossen in den Schrank.",
+            "titel": "Skill: 3-3-3",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Zuerst 3-3-3 (5 Min.): Zahl vorher, drei Runden – Sehen, Hören, Spüren –, die letzte ganz still, dann Zahl nachher. Dann der Abschluss: ein Satz in den Skills-Pass, Mission ansagen, Moment wählen, Ausblick.",
             "sagen": [
-              "Ein Satz für den Skills-Pass: Welcher Sinn hilft euch am meisten – und wann?",
-              "Euer Moment steht schon auf dem Blatt bei Aufgabe 4. Schreibt ihn ins Heft: Wenn …, dann 3-3-3 oder mein Song."
+              "Drei Dinge, die ihr seht – lasst euch Zeit, auch kleine Dinge zählen: ein Kratzer auf dem Tisch, ein Schnürsenkel.",
+              "Die dritte Runde macht ihr allein und so, dass es niemand merkt."
             ],
-            "tipp": "Hat die Schule genug Knetbälle oder glatte Steine, darf mitnehmen, wer einen besonders mochte: Ein Skill in der Hosentasche wird eher benutzt als einer, der nur auf dem Blatt steht. Mit einem Moment, der sicher kommt, wird aus der Mission ein Plan; nächste Woche fragt die Brücke danach, ohne Kontrolle."
+            "punkte": [
+              "3-3-3 (5 Min.): Zahl vorher in die nächste freie Zeile des Testers eintragen. Schau dich um: drei Dinge, die du siehst. Hör hin: drei Geräusche. Spür nach: drei Dinge – Füße, Stuhl, Ärmel. Runde 1 mit Ansage, Runde 2 mit anderen Dingen, Runde 3 allein und still; dann einmal lang ausatmen, Zahl nachher eintragen.",
+              "Rückmeldungen (2 Min.): Wo könnte das helfen – vor dem Test, im vollen Bus, bevor man im Chat antwortet?",
+              "Skills-Pass (3 Min.): ein Satz – Welcher Sinn hilft mir am meisten, und wann setze ich ihn ein? Die Lehrkraft stempelt.",
+              "Mission und Moment (3 Min.): die Wochen-Mission ansagen; auf drei zeigen alle, wann ihr Moment kommt – ein Finger Bus, zwei Pause, drei „wenn meine Zahl steigt“ – und schreiben ihn ins Heft; wer in Aufgabe 3 schon einen Moment hat, überträgt ihn.",
+              "Ausblick und Aufräumen (2 Min.): Zwei Freiwillige bringen die Kisten nach vorn; Kühlakkus ins Gefrierfach, Tücher in die Wäsche, Gläser verschlossen in den Schrank."
+            ],
+            "wennEsKippt": "Ruft jemand seine Dinge laut in den Raum, an die stille Variante erinnern: Im Bus würdest du das auch nicht laut sagen. Ist die Klasse nach den Stationen aufgedreht, nur die stille Runde machen und am Ende den doppelten Seufzer anhängen.",
+            "blatt": "ff7-skills-tester"
           }
         ],
         "bruecke": "Nächste Woche wird es ruhig im Kopf: Ihr lernt, Gedanken vorbeiziehen zu lassen, testet Kopf-Skills für einen vollen Kopf und sucht euch einen sicheren Ort in Gedanken.",
-        "mission": "Wenn dein Moment kommt – im Bus, in der Pause oder wenn deine Zahl steigt –, dann mach 3-3-3 oder hör einen Song von deiner Liste bis zum Ende. Was war danach anders?",
-        "hintergrund": "Grundlage sind die Sinnes-Skills des DBT-Skillstrainings: Starke, angenehme oder überraschende Reize lösen die Aufmerksamkeit aus kreisenden Gedanken. Linehan (2015) zählt sie zu den Fertigkeiten, mit denen sich Krisen überstehen lassen, ohne die Lage zu verschlimmern: sich mit allen fünf Sinnen beruhigen, bei sehr hoher Anspannung einen intensiven Reiz wie Kälte nutzen. Warum das wirkt, erklärt die Interozeption: Temperatur und Schmerz laufen über dieselben Bahnen, mit denen der Körper seinen Zustand ans Gehirn meldet (Craig, 2002); ein deutlicher Kältereiz holt die Aufmerksamkeit deshalb sofort in den Körper. Musik wirkt auf mehreren Wegen – über Rhythmus und Tempo, Erinnerungen und die Stimmung, die sie ausdrückt (Juslin & Västfjäll, 2008); darum beruhigt derselbe Song die eine und wühlt den anderen auf. Welche Reize helfen, ist persönlich; deshalb wird getestet, nicht verordnet.",
+        "mission": "Mach 3-3-3 oder hör einen Song von deiner Liste. Was war danach anders?",
+        "hintergrund": "Starke, angenehme oder überraschende Reize lösen die Aufmerksamkeit aus kreisenden Gedanken; Linehan (2015) zählt Sinnes-Skills zu den Wegen, Krisen zu überstehen, bei sehr hoher Anspannung mit einem intensiven Reiz wie Kälte. Temperatur und Schmerz laufen über dieselben Bahnen, mit denen der Körper seinen Zustand meldet (Craig, 2002). Musik wirkt über Rhythmus, Erinnerung und Stimmung (Juslin & Västfjäll, 2008): Derselbe Song beruhigt die eine und wühlt den anderen auf – darum wird getestet.",
         "quellen": [
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
           "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666.",
           "Juslin, P. N. & Västfjäll, D. (2008). Emotional responses to music: The need to consider underlying mechanisms. Behavioral and Brain Sciences, 31(5), 559–575."
         ],
-        "achtung": "Düfte nur nach Rückfrage: eine Woche vorher klären, wer Asthma, eine Allergie oder eine Duftempfindlichkeit hat; dann bleibt Station 5 ohne Duft. Keine ätherischen Öle. Bei Kopfschmerzen, Übelkeit oder Atemnot: Glas zu, Fenster auf, die Person ans Fenster setzen, bei Atemnot das Krankenzimmer rufen, im Notfall 112. Kälte nur im Tuch, kurz und freiwillig, nicht bei Durchblutungsproblemen. Düfte und Musik können belastende Erinnerungen wecken: nicht danach fragen, Aussetzen ist immer erlaubt. Wer aufgewühlt wirkt, nach der Stunde ansprechen; bei Hinweisen auf Gefährdung noch am selben Tag den SePAS informieren.",
+        "achtung": "Düfte nur nach Rückfrage: eine Woche vorher klären, wer Asthma, eine Allergie oder eine Duftempfindlichkeit hat – dann bleibt die Duft-Station ohne Duft. Kälte nur im Tuch, kurz und freiwillig; bei Kopfschmerzen, Übelkeit oder Atemnot Glas zu, Fenster auf, bei Atemnot das Krankenzimmer, im Notfall 112. Düfte und Musik können belastende Erinnerungen wecken: nicht danach fragen, Aussetzen ist erlaubt, bei Hinweisen auf Gefährdung noch am selben Tag den SePAS informieren.",
         "differenzierung": {
-          "leichter": "Die Stationskarten haben Bilder und kurze Schritte; in jeder Gruppe liest eine Person vor, die gut liest. Im Skills-Tester reichen die Zahlen, beim Hör-Test Kreuze. Auf der Playlist dürfen auch ein Geräusch oder ein Ort stehen, gern in der eigenen Sprache; für den Plan Satzanfänge an die Tafel: Wenn ich …, dann …; für die Spalte „Mein Moment“ reicht ein Wort: Bus, Pause.",
+          "leichter": "Die Stationskarten haben Bilder und kurze Schritte; in jeder Gruppe liest eine Person vor, die gut liest. Auf der Playlist dürfen auch ein Geräusch oder ein Ort stehen, gern in der eigenen Sprache; für den Plan helfen Satzanfänge an der Tafel: Wenn ich …, dann …",
           "schwerer": "An einer Station die Gruppe anleiten und durch den Skill führen. Zu jeder Station notieren, ob sie eher beruhigt oder wach macht, und eine Situation finden, in der genau das gebraucht wird."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Sinneseindruck (5 Min.), der Aufmerksamkeits-Test (5 Min.), die Stationen in drei Runden – jede Gruppe testet drei der fünf (20 Min.), Playlist allein auf dem Blatt (5 Min.), Skill: 3-3-3 (10 Min.), Skills-Pass, Mission und Moment (5 Min.). Hör-Test, Song-Tausch und Plan werden in der nächsten Stunde nachgeholt."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Sinneseindruck (5 Min.), Aufmerksamkeits-Test (5 Min.), die Stationen in drei Runden – jede Gruppe testet drei der vier (20 Min.), Playlist allein auf dem Blatt (5 Min.), Skill: 3-3-3 mit Skills-Pass und Mission (15 Min.). Hör-Test, Song-Tausch und Plan werden in der nächsten Stunde nachgeholt."
       },
       "fr": {
         "titel": "Des skills par les sens",
-        "kurz": "En cinq ateliers, la classe teste des skills par les sens, vérifie avec des extraits sonores ce que la musique lui fait, écrit sa playlist sur papier et s’entraîne au 3-3-3 pour les trajets.",
+        "kurz": "En ateliers, la classe teste des skills sensoriels, vérifie par des extraits sonores ce que lui fait la musique, écrit sa playlist pour redescendre et s’entraîne au 3-3-3 pour la route.",
         "ziele": [
-          "testent en cinq ateliers des skills par les sens avec un chiffre avant et après et comparent ce qui calme et ce qui réveille",
-          "expliquent pourquoi une sensation forte ou agréable sort l’attention du manège des pensées",
-          "testent la musique avec trois extraits, écrivent une playlist pour redescendre et voient que la musique peut aussi faire monter la tension",
-          "s’entraînent au 3-3-3 pour le bus, les devoirs en classe et la récré"
+          "testent en ateliers des skills sensoriels avec un chiffre avant et après et comparent ce qui calme et ce qui réveille",
+          "expliquent pourquoi une stimulation forte ou agréable sort l’attention de la rumination",
+          "vérifient la musique avec trois extraits sonores, écrivent une playlist pour redescendre et s’entraînent au 3-3-3 pour le bus, le devoir en classe et la récré"
         ],
         "material": [
-          "Cahier de l’élève, tampon pour le Skills-Pass",
           "Roue des émotions, 20 gommettes",
-          "Cartes d’ateliers (modèle), cinq caisses",
-          "Sac à toucher (six objets), bol chantant",
-          "2 poches de froid, glacière, torchons",
-          "Trois bocaux à odeurs, balle à picots",
-          "Enceinte, trois extraits sonores"
+          "Cartes d’atelier (modèle), quatre caisses",
+          "Sac à toucher, bol chantant, balle à picots",
+          "2 poches de froid dans la glacière",
+          "Trois bocaux d’odeurs (si accord)",
+          "Enceinte, trois extraits ; cahier"
         ],
         "vorbereitung": [
-          "Une semaine avant, vérifier asthme, allergies, soucis avec les odeurs ou le froid (régent, parents, jeunes).",
-          "Congeler les poches de froid la veille ; les apporter dans la glacière.",
-          "Une caisse par atelier : carte, matériel, torchon ; odeurs (écorce d’orange, menthe, café) en bocaux.",
-          "Trois extraits sonores de 40 secondes : vagues, morceau instrumental calme, rythme rapide."
+          "Une semaine avant, voir qui a de l’asthme, des allergies ou un problème avec les odeurs ou le froid ; sans accord, pas d’odeur.",
+          "Congeler les poches de froid la veille ; une caisse par atelier : carte, matériel, torchon, bocaux d’odeurs (orange, menthe, café).",
+          "Préparer trois extraits sonores de 40 secondes (vagues, morceau calme, rythme rapide) ; régler le volume."
         ],
         "ablauf": [
           {
             "min": "0–10",
             "phase": "ankommen",
-            "titel": "Tour d’humeur : émotion, chiffre et une sensation"
+            "titel": "Tour d’humeur : émotion, chiffre et impression des sens"
           },
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Retour : le skill préféré au quotidien"
+            "titel": "Retour : mission et thème"
           },
           {
-            "min": "15–25",
-            "phase": "input",
-            "titel": "Pourquoi les sens aident : le test de l’attention"
-          },
-          {
-            "min": "25–45",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Test d’écoute et ma playlist"
+            "titel": "Test d’attention, test d’écoute et ma playlist"
           },
           {
             "min": "45–50",
             "phase": "aktiv",
-            "titel": "Pause active : côté fenêtre, côté porte"
+            "titel": "Pause active : les côtés des sens"
           },
           {
-            "min": "50–78",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Ateliers des sens : cinq tests"
+            "titel": "Ateliers des sens : quatre tests"
           },
           {
-            "min": "78–85",
-            "phase": "uebung",
-            "titel": "Qu’est-ce qui marche pour qui ? Mon plan"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : 3-3-3"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, mission, moment et suite"
           }
         ],
         "schritte": [
           {
-            "titel": "Tour d’humeur : émotion, chiffre et une sensation",
+            "titel": "Tour d’humeur : émotion, chiffre et impression des sens",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions (2 min) ; une fois tout le monde assis, à trois, chacun montre son chiffre avec les doigts (1 min). Puis la question : qu’avez-vous vu, entendu ou senti sur le chemin jusqu’ici ? L’enseignant·e commence avec son propre exemple ; quatre ou cinq volontaires donnent leur chiffre et une sensation (5 min). Qui ne trouve rien regarde un instant par la fenêtre et nomme ce qu’il voit ou entend maintenant (2 min). Le thème s’ouvre ainsi sans que personne ait à raconter quelque chose de personnel.",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions, puis tout le monde montre à trois son chiffre avec les doigts. Aujourd’hui en plus, une question : qu’as-tu vu, entendu ou senti en venant ici ? L’enseignant·e commence avec son propre exemple, puis quatre ou cinq volontaires donnent leur chiffre et une impression des sens ; qui ne trouve rien regarde par la fenêtre et nomme ce qu’il voit ou entend maintenant.",
             "sagen": [
-              "Votre chiffre – et une chose que vous avez vue, entendue ou sentie aujourd’hui en venant ici.",
-              "Moi : 30, et dans le bus, ça sentait les vestes mouillées."
+              "Votre chiffre – et une chose que vous avez vue, entendue ou sentie en venant ici aujourd’hui.",
+              "Chez moi : 30, et dans le bus, ça sentait la veste mouillée."
             ],
-            "tipp": "De petites impressions du quotidien suffisent largement : le grincement de la porte du bus, l’odeur du café en salle des profs, la pluie dans la cour. Qui observe bien est déjà au cœur du sujet.",
-            "wennEsKippt": "Si des blagues fusent sur l’odeur de camarades, arrêter gentiment : des impressions du trajet, pas des personnes présentes dans la salle. Si personne ne dit rien, donner soi-même deux exemples, puis faire écouter en silence pendant une demi-minute : qu’entendez-vous en ce moment ?"
+            "wennEsKippt": "Si des blagues fusent sur l’odeur de camarades, arrêter gentiment : des impressions du trajet, pas de personnes présentes dans la salle. Si personne ne dit rien, donner soi-même deux exemples et laisser écouter une demi-minute en silence : qu’entendez-vous en ce moment ?"
           },
           {
-            "titel": "Retour : le skill préféré au quotidien",
+            "titel": "Retour : mission et thème",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un ou une jeune lit sa phrase du Skills-Pass de la dernière séance. Demander brièvement où en est la mission de la semaine : ton moment est-il venu – et quel skill avez-vous fait ? Pouce en haut, au milieu ou en bas ; une voix donne son chiffre avant et après, personne n’est obligé d’avoir vécu son moment ; qui veut note l’essai dans le testeur de skills, sous « Essai au quotidien ». Puis annoncer le thème : les skills corporels brûlent l’alarme ou appuient sur le frein ; les skills par les sens détournent l’attention grâce à des sensations fortes ou agréables – le froid, un son, quelque chose dans la main, une chanson.",
+            "text": "Revenir sur la mission de la semaine : ton moment est-il venu – et quel skill as-tu fait ? Pouce en haut, au milieu ou en bas ; une voix donne son chiffre avant et après. Puis annoncer le thème : les skills du corps épuisent l’alarme ou la freinent, les skills des sens détournent l’attention – avec le froid, un son, quelque chose dans la main, une chanson.",
             "sagen": [
-              "Votre moment est-il venu – et qu’avez-vous fait ? Chiffre avant, chiffre après – je n’ai pas besoin d’en savoir plus.",
-              "Aujourd’hui, on travaille avec des skills qui passent par les mains, les oreilles, les yeux et le nez."
+              "Votre moment est-il venu – et qu’avez-vous fait, chiffre avant, chiffre après ?",
+              "Aujourd’hui, il s’agit de skills qui passent par les mains, les oreilles, les yeux et le nez."
             ],
-            "tipp": "Si le moment n’est pas venu pour beaucoup, ne pas faire la morale, mais demander ce qui a été difficile – oublié, pas d’occasion. Un moment qui arrive à coup sûr aide souvent : chaque soir avant de dormir, chaque matin dans le bus ; aujourd’hui, chacun en choisit à nouveau un."
+            "tipp": "Si le moment n’est pas venu pour beaucoup, ne pas faire la morale mais demander ce qui a rendu la chose difficile ; un moment qui arrive à coup sûr aide, par exemple chaque soir avant de dormir ou chaque matin dans le bus."
           },
           {
-            "titel": "Pourquoi les sens aident : le test de l’attention",
-            "dauer": 10,
-            "phase": "input",
-            "text": "Une petite expérience : tout le monde regarde sa table et pense à tout ce qu’il lui reste à faire aujourd’hui. Annoncer avant que le bol chantant sonnera à un moment pendant les 20 secondes ; le faire sonner nettement, mais pas fort. Puis demander (3 min) : où était votre attention à l’instant – sur vos tâches ou sur le son ? En tirer la leçon : une sensation nette ramène l’attention ici et maintenant ; qui écoute vraiment ou sent du froid ne peut pas ruminer en même temps. Lire ensemble le tableau : les sensations fortes aident plutôt dans le rouge, les agréables plutôt dans l’orange (4 min). Pour finir, chacun met dans le testeur de skills une étoile à l’atelier qui l’aidera le plus, à son avis ; on vérifiera après les ateliers (3 min).",
-            "sagen": [
-              "Pensez pendant vingt secondes à tout ce qu’il vous reste à faire aujourd’hui. À un moment, le bol va sonner.",
-              "Où était votre attention à l’instant – sur vos tâches ou sur le son ?",
-              "Qui écoute vraiment, ou sent quelque chose de froid dans sa main, n’a plus de place pour ruminer."
-            ],
-            "tabelle": {
-              "spalten": [
-                "Sens",
-                "Exemples de skills"
-              ],
-              "zeilen": [
-                [
-                  "Toucher",
-                  "malaxer une balle anti-stress, faire tourner une pierre lisse dans sa poche"
-                ],
-                [
-                  "Froid",
-                  "poche de froid dans un torchon, eau froide sur les poignets – fort, bien pour le rouge"
-                ],
-                [
-                  "Ouïe",
-                  "écouter un son jusqu’à ce qu’il disparaisse ; une chanson pour redescendre"
-                ],
-                [
-                  "Vue",
-                  "chercher dans la salle tout ce qui a une couleur, regarder le sable couler dans un sablier"
-                ],
-                [
-                  "Odorat",
-                  "sentir de l’écorce d’orange, de la menthe ou du café – ça calme ou ça réveille"
-                ]
-              ]
-            },
-            "tipp": "Annoncer le bol et le faire sonner nettement, mais pas fort : il ne s’agit pas de faire peur, l’attention bascule quand même. Chacun met son étoile en silence ; on compare seulement après les ateliers.",
-            "wennEsKippt": "Si quelqu’un sursaute quand même, le rassurer et expliquer : c’est exactement ce que fait une sensation forte – elle te ramène tout de suite à maintenant. Si on ne fait que chahuter, refaire l’expérience une fois, le regard sur ses mains."
-          },
-          {
-            "titel": "Test d’écoute et ma playlist",
-            "dauer": 20,
+            "titel": "Test d’attention, test d’écoute et ma playlist",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Test d’écoute (6 min) : faire écouter trois extraits de 40 secondes – le bruit des vagues, un morceau instrumental calme, un rythme rapide ; tout le monde écoute en silence et coche dans l’exercice 1, après chaque extrait, l’effet qu’il lui fait. Comparer à main levée : presque jamais tout le monde ne réagit de la même façon. Puis chacun écrit dans l’exercice 2 des chansons pour redescendre et pour recharger ses batteries ; des bruits, des voix ou des lieux comptent aussi, et personne n’a besoin de son portable (5 min). Échange en îlot : à tour de rôle, chacun cite quelque chose pour redescendre et dit pourquoi ça marche – le rythme, la voix, les paroles ou un souvenir ; on peut dire « je passe » (5 min). Pour finir, en classe entière : quelle musique transformerait plutôt un 70 en 90 ? Puis chacun répond seul à l’exercice 3 (4 min).",
+            "text": "D’abord une petite expérience : tout le monde pense à tout ce qu’il doit encore faire aujourd’hui, et à un moment le bol sonne – où était l’attention ? Puis le test d’écoute avec trois extraits (exercice 1) et sa propre playlist pour redescendre (exercice 2), pour finir l’échange de chansons en îlot.",
             "sagen": [
-              "Une chanson pour redescendre n’a pas besoin d’être lente. Elle doit vous faire redescendre.",
-              "La musique peut aussi faire monter. Dans le rouge, mieux vaut éviter la chanson qui fait encore monter la colère."
+              "Pensez pendant vingt secondes à tout ce que vous devez encore faire aujourd’hui – à un moment, le bol sonne.",
+              "Une chanson pour redescendre n’a pas besoin d’être lente, elle doit vous faire redescendre – et la musique peut aussi faire monter."
             ],
-            "tipp": "On ne fait écouter que les trois extraits préparés, pas de chansons de la classe : personne n’a à justifier ses goûts, et on évite les débats sur les paroles. Passer les extraits une fois avant le cours dans la salle et régler le volume. Qui écoute peu de musique chez soi note des bruits, des voix ou des lieux qui l’apaisent.",
-            "wennEsKippt": "Si des chansons sont moquées, montrer la charte de classe : ici, on ne juge pas les goûts. Si des chansons violentes ou insultantes sont citées, ne pas débattre des paroles, mais demander : est-ce que cette chanson te fait redescendre – ou est-ce qu’elle entretient la colère ? Si un jeune semble remué par un extrait, l’arrêter sans commentaire, ne pas l’interroger devant la classe et lui parler après le cours. Qui ne trouve rien reprend un extrait qui lui a fait du bien.",
+            "punkte": [
+              "Test d’attention (6 min) : faire sonner le bol nettement, sans excès. Où était votre attention – sur vos tâches ou sur le son ? Une stimulation nette ramène ici et maintenant : qui écoute vraiment ou sent du froid ne peut pas ruminer en même temps. Les stimulations fortes aident plutôt au rouge, les agréables plutôt à l’orange.",
+              "Test d’écoute (7 min) : trois extraits de 40 secondes – bruit des vagues, morceau instrumental calme, rythme rapide ; tous écoutent en silence et cochent après chaque extrait, dans l’exercice 1, l’effet qu’il leur fait. Comparer à main levée : presque jamais tout le monde ne réagit pareil.",
+              "Playlist (9 min) : exercice 2 seul – chansons, bruits, voix ou lieux pour redescendre et pour recharger ; personne n’a besoin de portable.",
+              "Échange de chansons (8 min) : en îlot, chacun cite à tour de rôle une entrée pour redescendre et dit pourquoi elle marche ; « je passe » est permis. En classe : quelle musique ferait passer un 70 à un 90 ?"
+            ],
+            "wennEsKippt": "Si on se moque de chansons, montrer la charte de classe : le goût n’est pas jugé ici ; pour des chansons de violence ou d’insultes, ne pas débattre des paroles mais demander : cette chanson te fait-elle redescendre – ou garde-t-elle la colère en ébullition ? Si quelqu’un semble remué par un extrait, couper l’extrait et lui parler brièvement après le cours.",
             "blatt": "ff7-sinnes-skills"
           },
           {
-            "titel": "Pause active : côté fenêtre, côté porte",
+            "titel": "Pause active : les côtés des sens",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se lève. Le côté fenêtre et le côté porte correspondent chacun à une réponse ; lire un « ou bien… ou bien », et chacun va de son côté sans commentaire. Après chaque tour, regarder un instant comment la classe se répartit. Qui ne veut pas bouger montre avec le bras. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
-            "punkte": [
-              "Fenêtre : le bruit des vagues – porte : la pluie sur le toit.",
-              "Fenêtre : de l’eau froide sur le visage – porte : une douche chaude.",
-              "Fenêtre : de la musique pour réviser – porte : le silence pour réviser.",
-              "Fenêtre : l’odeur du pain frais – porte : l’odeur des oranges.",
-              "Fenêtre : pieds nus dans l’herbe – porte : pieds nus dans le sable.",
-              "Fenêtre : des écouteurs dans le bus – porte : regarder par la fenêtre."
+            "text": "Tout le monde se lève ; le côté fenêtre et le côté porte valent chacun pour une réponse. L’enseignant·e lit un choix, et chacun va de son côté sans commentaire (qui ne veut pas marcher le montre du bras). Après chaque tour, regarder brièvement comment la classe se répartit.",
+            "sagen": [
+              "Allez du côté qui vous convient – il n’y a pas de bonne réponse."
             ],
-            "tipp": "La répartition montre au passage le message de la séance : ce qui calme les uns ne fait rien aux autres. C’est pour ça qu’on va tester."
+            "punkte": [
+              "Fenêtre : bruit des vagues – porte : pluie sur le toit.",
+              "Fenêtre : eau froide sur le visage – porte : douche chaude.",
+              "Fenêtre : musique pour réviser – porte : silence pour réviser.",
+              "Fenêtre : écouteurs dans le bus – porte : regarder par la fenêtre."
+            ],
+            "tipp": "La répartition montre au passage le message de la séance : ce qui calme les uns ne fait rien aux autres – c’est pourquoi on teste tout de suite. Si la grande récréation tombe entre les deux heures, supprimer l’exercice."
           },
           {
-            "titel": "Ateliers des sens : cinq tests",
-            "dauer": 28,
+            "titel": "Ateliers des sens : quatre tests",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Départ (3 min) : chaque îlot va chercher une caisse et l’installe sur sa table – le froid et les odeurs sur les tables proches du bureau, le son dans le coin le plus calme –, se répartit les rôles (lire, temps, matériel, rangement) et lit les règles au tableau. Puis cinq tours de cinq minutes (25 min) : lire la carte, chiffre avant, le skill pendant environ trois minutes, chiffre après dans le testeur de skills, ranger l’atelier. Au signal – main levée, puis « On change » –, chaque îlot passe à la table suivante dans le sens des aiguilles d’une montre ; les caisses restent sur place. À tous les ateliers, on chuchote, pour qu’on entende quelque chose à l’atelier du son. L’enseignant·e reste près du froid et des odeurs, donne à chaque îlot un torchon propre et veille à ce que les bocaux ne restent ouverts qu’un instant.",
+            "text": "Chaque îlot installe une caisse sur sa table et change au signal dans le sens des aiguilles d’une montre : lire la carte, chiffre avant, skill environ trois minutes, chiffre après dans le testeur de skills, ranger. Avant le départ, chacun mise sur l’atelier qui l’aidera le plus. Pour finir, on compare : où le chiffre a-t-il le plus baissé ?",
             "sagen": [
               "Vous ne testez pas si vous aimez quelque chose, mais ce que ça fait à votre chiffre.",
-              "Main levée, ça veut dire : on finit sa phrase, on note son chiffre, on range. Puis on change."
+              "Main levée veut dire : finir la phrase, noter le chiffre, ranger – puis on change."
             ],
             "punkte": [
-              "On chuchote et on change seulement au signal.",
-              "La poche de froid seulement dans le torchon, seulement sur les mains ou les poignets – jamais sur le visage ou dans le cou des autres.",
-              "On ouvre les bocaux un instant seulement, on sent à distance, on referme ; on ne met rien sous le nez des autres.",
-              "Rien dans la bouche, rien ne se lance ; chacun décide s’il participe.",
-              "On laisse l’atelier comme on l’a trouvé."
+              "Départ (3 min) : caisses sur les tables – froid et odeur près du bureau, son dans le coin le plus calme ; rôles : lire, temps, matériel, rangement. À trois, chacun montre l’atelier qui l’aidera sans doute le plus.",
+              "Quatre tours de six minutes (24 min) : toucher, froid, son, odeur ou mains. On change dans le sens des aiguilles d’une montre au signal ; à tous les ateliers, on chuchote.",
+              "Règles au tableau : poche de froid seulement dans un torchon, seulement sur les mains ou les poignets. Bocaux ouverts un instant, sentir à distance. Rien dans la bouche, rien lancé ; chacun décide s’il participe.",
+              "Bilan et plan (8 min) : lever la main à l’atelier où le chiffre a le plus baissé, tableau de traits – qu’est-ce qui a calmé, qu’est-ce qui a réveillé ? Puis exercice 3 sur la fiche : quel skill des sens j’emporte cette semaine – et quand ?"
             ],
-            "tipp": "Avec les caisses, rien à installer pendant le cours : les tables sont les ateliers. Un jeune qui apprend encore la langue du cours s’aide des pictogrammes et des étapes courtes des cartes et fait comme les autres ; qui n’aime pas lire prend le temps ou le matériel.",
-            "wennEsKippt": "Si un atelier tourne au chahut – poche de froid dans le cou, sac à toucher qu’on se lance –, faire observer l’îlot un tour à côté de l’enseignant·e. Si quelqu’un se plaint de maux de tête, de nausée ou de difficultés à respirer, refermer le bocal, ouvrir la fenêtre et installer la personne près de la fenêtre ouverte ; en cas de difficultés à respirer, appeler l’infirmerie. Qui ne veut pas du tout participer accompagne son îlot comme gardien du temps.",
-            "blatt": "ff7-sinnes-stationen"
-          },
-          {
-            "titel": "Qu’est-ce qui marche pour qui ? Mon plan",
-            "dauer": 7,
-            "phase": "uebung",
-            "text": "De retour à sa place : l’enseignant·e cite les ateliers l’un après l’autre, chacun lève la main pour l’atelier où son chiffre a le plus baissé, et des bâtons apparaissent au tableau (2 min). Faire le point (2 min) : qu’est-ce qui a calmé, qu’est-ce qui a réveillé ? L’étoile dans le testeur était-elle au bon endroit ? Puis chacun remplit l’exercice 4 de la fiche (3 min) : quel skill des sens est-ce que j’emporte cette semaine – et pour quel moment ?",
-            "sagen": [
-              "Levez la main pour l’atelier où votre chiffre a le plus baissé.",
-              "Le froid et la menthe réveillent beaucoup de monde. Avant un devoir en classe, ça peut être exactement ce qu’il faut."
-            ],
-            "tipp": "Les bâtons sont en général très répartis – la meilleure réponse à la question de savoir pourquoi chacun a besoin de sa propre valise à skills.",
-            "blatt": "ff7-sinnes-skills"
-          },
-          {
-            "titel": "Skill : 3-3-3",
-            "dauer": 10,
-            "phase": "skill",
-            "text": "Annoncer : le 5-4-3-2-1, vous le connaissez depuis septembre ; pour les trajets, il existe une version courte qui prend une demi-minute. Noter le chiffre avant à la ligne « 3-3-3 ». Puis guider lentement, faire l’exercice soi-même et laisser du temps entre les étapes : premier tour guidé (2 min), deuxième tour avec d’autres choses (2 min), troisième tour seul, en silence complet et aussi discrètement que dans le bus (2 min). Pour finir, expirer une fois longuement, noter le chiffre après et recueillir deux ou trois retours (2 min) : où est-ce que ça pourrait aider – avant un devoir en classe, dans un bus bondé, avant de répondre dans un chat ?",
-            "sagen": [
-              "Trois choses que vous voyez. Prenez votre temps – les petites choses comptent aussi : une rayure sur la table, un lacet.",
-              "Le troisième tour, vous le faites seuls, et de façon que personne ne le remarque."
-            ],
-            "punkte": [
-              "Regarde autour de toi : nomme en silence trois choses que tu vois.",
-              "Écoute : nomme en silence trois bruits que tu entends.",
-              "Sens : trois choses que tu sens en ce moment – tes pieds sur le sol, la chaise, ta manche."
-            ],
-            "tipp": "Après les ateliers, la classe est souvent agitée. Le troisième tour en silence complet fait la différence ; l’enseignant·e le fait visiblement et sans regarder la classe.",
-            "wennEsKippt": "Si quelqu’un annonce ses choses à voix haute, rappeler la version silencieuse : dans le bus, tu ne le dirais pas tout haut non plus. Si la classe s’agite, ne faire que le tour silencieux et ajouter à la fin le double soupir.",
+            "wennEsKippt": "Si on chahute à un atelier – poche de froid dans la nuque, sac à toucher en projectile –, laisser le groupe regarder un tour auprès de l’enseignant·e. Si quelqu’un se plaint de maux de tête, de nausée ou d’une gêne respiratoire, fermer le bocal, ouvrir la fenêtre et installer la personne près de la fenêtre ; en cas de gêne respiratoire, appeler l’infirmerie.",
             "blatt": "ff7-skills-tester"
           },
           {
-            "titel": "Skills-Pass, mission, moment et suite",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Question pour le Skills-Pass au tableau : quel sens m’aide le plus – et quand est-ce que je l’utilise ? Écrire la phrase, tampon (2 min). Mission et choix du moment (2 min) : annoncer la mission de la semaine – quand ton moment arrive, le 3-3-3 ou une chanson de la liste. Chacun a déjà choisi son moment dans l’exercice 4 de la fiche – il vaut pour le 3-3-3 comme pour la chanson ; il le recopie en mot-clé dans la colonne « Mon moment : quand … » du cahier. Qui n’a rien noté à l’exercice 4 montre à trois : un doigt pour le bus, deux pour la récré, trois pour “quand mon chiffre monte”, le poing pour un moment à soi – et note aussi le mot-clé dans le cahier. Pour finir, la prochaine séance (1 min). Deux volontaires rapportent les caisses au bureau ; après le cours, les poches de froid retournent au congélateur, les torchons au lavage et les bocaux, bien fermés, dans l’armoire.",
+            "titel": "Skill : 3-3-3",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "D’abord le 3-3-3 (5 min) : chiffre avant, trois tours – voir, entendre, sentir –, le dernier en silence, puis chiffre après. Puis la clôture : une phrase dans le Skills-Pass, annoncer la mission, choisir son moment, annoncer la suite.",
             "sagen": [
-              "Une phrase pour le Skills-Pass : quel sens vous aide le plus – et à quel moment ?",
-              "Votre moment est déjà sur la fiche, à l’exercice 4. Notez-le dans le cahier : quand…, alors le 3-3-3 ou ma chanson."
+              "Trois choses que vous voyez – prenez votre temps, les petites choses comptent : une éraflure sur la table, un lacet.",
+              "Le troisième tour, vous le faites seul et de façon à ce que personne ne le remarque."
             ],
-            "tipp": "Si l’école a assez de balles anti-stress ou de pierres lisses, qui en a particulièrement aimé une peut l’emporter : un skill dans la poche s’utilise plus qu’un skill qui reste sur la fiche. Avec un moment qui arrive à coup sûr, la mission devient un plan ; la semaine prochaine, le lien y revient, sans contrôle."
+            "punkte": [
+              "3-3-3 (5 min) : noter le chiffre avant dans la prochaine ligne libre du testeur. Regarde autour de toi : trois choses que tu vois. Écoute : trois bruits. Sens : trois choses – pieds, chaise, manche. Tour 1 avec consignes, tour 2 avec d’autres choses, tour 3 seul et en silence ; puis une longue expiration et le chiffre après.",
+              "Retours (2 min) : où est-ce que ça pourrait aider – avant un devoir en classe, dans un bus plein, avant de répondre dans le chat ?",
+              "Skills-Pass (3 min) : une phrase – quel sens m’aide le plus, et quand l’utiliser ? L’enseignant·e tamponne.",
+              "Mission et moment (3 min) : annoncer la mission de la semaine ; à trois, chacun montre quand son moment arrivera – un doigt le bus, deux la récré, trois « quand mon chiffre monte » – et l’écrit dans le cahier ; qui a déjà un moment dans l’exercice 3 le reprend.",
+              "Suite et rangement (2 min) : deux volontaires rapportent les caisses ; poches de froid au congélateur, torchons au lavage, bocaux fermés dans l’armoire."
+            ],
+            "wennEsKippt": "Si quelqu’un lance ses choses à voix haute dans la salle, rappeler la variante silencieuse : dans le bus, tu ne le dirais pas non plus à voix haute. Si la classe est survoltée après les ateliers, ne faire que le tour silencieux et ajouter le double soupir à la fin.",
+            "blatt": "ff7-skills-tester"
           }
         ],
         "bruecke": "La semaine prochaine, place au calme dans la tête : vous apprendrez à laisser passer vos pensées, vous testerez des skills mentaux pour une tête trop pleine et vous chercherez un lieu sûr dans votre imagination.",
-        "mission": "Quand ton moment arrive – dans le bus, à la récré ou quand ton chiffre monte –, fais le 3-3-3 ou écoute une chanson de ta liste jusqu’au bout. Qu’est-ce qui a changé après ?",
-        "hintergrund": "La base, ce sont les skills sensoriels de la TCD : des stimulations fortes, agréables ou surprenantes décrochent l’attention des pensées qui tournent en rond. Linehan (2015) les compte parmi les savoir-faire qui permettent de traverser une crise sans l’aggraver : se calmer avec ses cinq sens et, quand la tension est très forte, utiliser une stimulation intense comme le froid. L’intéroception explique pourquoi ça marche : la température et la douleur passent par les mêmes voies qui renseignent le cerveau sur l’état du corps (Craig, 2002) ; une sensation nette de froid ramène donc aussitôt l’attention dans le corps. La musique agit par plusieurs voies – le rythme et le tempo, les souvenirs, l’humeur qu’elle exprime (Juslin & Västfjäll, 2008) ; la même chanson peut donc calmer l’une et agiter l’autre. Ce qui aide est personnel : on teste au lieu de prescrire.",
+        "mission": "Fais le 3-3-3 ou écoute une chanson de ta liste. Qu’est-ce qui a changé ?",
+        "hintergrund": "Des stimulations fortes, agréables ou surprenantes détournent l’attention des pensées qui tournent ; Linehan (2015) y voit des moyens de traverser une crise, avec un stimulus intense comme le froid si la tension est très haute. La température et la douleur passent par les mêmes voies que celles par lesquelles le corps signale son état (Craig, 2002). La musique agit par le rythme, les souvenirs et l’humeur (Juslin & Västfjäll, 2008) : une même chanson calme l’un et excite l’autre – donc on teste.",
         "quellen": [
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
           "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666.",
           "Juslin, P. N. & Västfjäll, D. (2008). Emotional responses to music: The need to consider underlying mechanisms. Behavioral and Brain Sciences, 31(5), 559–575."
         ],
-        "achtung": "Les odeurs seulement après vérification : une semaine avant, savoir qui a de l’asthme, une allergie ou une sensibilité aux odeurs ; dans ce cas, l’atelier 5 reste sans odeur. Pas d’huiles essentielles. Maux de tête, nausée ou gêne respiratoire : bocal fermé, fenêtre ouverte, la personne près de la fenêtre, l’infirmerie si elle respire mal, le 112 en cas d’urgence. Le froid seulement dans un torchon, brièvement, pas en cas de problèmes de circulation. Odeurs et musique peuvent réveiller des souvenirs pénibles : ne pas les faire raconter ; se retirer est toujours permis. Qui semble remué : lui reparler après le cours ; en cas de danger, informer le SePAS le jour même.",
+        "achtung": "Les odeurs seulement après vérification : une semaine avant, savoir qui a de l’asthme, une allergie ou une sensibilité aux odeurs – dans ce cas, l’atelier des odeurs reste sans odeur. Le froid seulement dans un torchon, brièvement et librement ; maux de tête, nausée ou gêne respiratoire : bocal fermé, fenêtre ouverte, infirmerie si la respiration est gênée, 112 en cas d’urgence. Odeurs et musique peuvent réveiller des souvenirs pénibles : ne pas les faire raconter, se retirer est permis, et en cas de signe de danger, informer le SePAS le jour même.",
         "differenzierung": {
-          "leichter": "Les cartes des ateliers ont des pictogrammes et des étapes courtes ; dans chaque îlot, quelqu’un qui lit bien lit à voix haute. Dans le testeur, les chiffres suffisent ; au test d’écoute, des croix. Dans la playlist, on peut aussi noter un bruit ou un lieu, volontiers dans sa langue ; pour le plan, des débuts de phrase au tableau : Si je…, alors… ; pour la colonne « Mon moment », un mot suffit : bus, récré.",
-          "schwerer": "Prendre la direction d’un atelier et guider le groupe dans le skill. Pour chaque atelier, noter s’il calme ou s’il réveille, et trouver une situation où c’est exactement ce dont on a besoin."
+          "leichter": "Les cartes d’atelier ont des images et des étapes courtes ; dans chaque groupe, un jeune qui lit bien lit à voix haute. Sur la playlist, un bruit ou un lieu peut figurer, volontiers dans sa propre langue ; pour le plan, des débuts de phrase au tableau : si je…, alors…",
+          "schwerer": "Guider le groupe à un atelier et le conduire à travers le skill. Pour chaque atelier, noter s’il calme plutôt ou réveille, et trouver une situation où c’est justement ce qu’il faut."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec une sensation (5 min), le test de l’attention (5 min), les ateliers en trois tours – chaque îlot en teste trois sur cinq (20 min), la playlist seul sur la fiche (5 min), skill « 3-3-3 » (10 min), Skills-Pass, mission et moment (5 min). Le test d’écoute, l’échange de chansons et le plan sont rattrapés à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec impression des sens (5 min), test d’attention (5 min), les ateliers en trois tours – chaque groupe en teste trois sur quatre (20 min), playlist seul sur la fiche (5 min), skill : 3-3-3 avec Skills-Pass et mission (15 min). Le test d’écoute, l’échange de chansons et le plan sont rattrapés à la séance suivante."
       }
     }
   ],
@@ -549,11 +393,17 @@
       ],
       "de": {
         "titel": "Meine Sinne, meine Playlist",
-        "untertitel": "Ein Klang, ein Song, etwas Kaltes oder etwas in der Hand: Die Sinne holen dich ins Hier und Jetzt zurück.",
+        "untertitel": "Die Sinne holen dich ins Hier und Jetzt.",
         "bausteine": [
           {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Ein starker oder schöner Reiz holt deine Aufmerksamkeit ins Jetzt. Musik kann beruhigen, aber auch hochziehen. Was bei dir wirkt, findest du nur durch Testen heraus."
+          },
+          {
             "art": "aufgabe",
-            "text": "Hör-Test: Was macht die Hörprobe mit dir? Kreuz nach jeder Probe an.",
+            "text": "Kreuze nach jeder Hörprobe an, was sie mit dir macht.",
             "symbole": [
               "ankreuzen"
             ]
@@ -573,8 +423,8 @@
           },
           {
             "art": "aufgabe",
-            "text": "Deine Playlist: Schreib Songs auf – zum Runterkommen und zum Aufladen.",
-            "hinweis": "Ein Song zum Runterkommen muss nicht langsam sein. Statt Songs gehen auch Geräusche, Stimmen oder Orte.",
+            "text": "Schreib deine Playlist zum Runterkommen auf.",
+            "hinweis": "Songs, Geräusche, Stimmen oder Orte – alles geht. Das gehört dir.",
             "symbole": [
               "schreiben"
             ]
@@ -595,26 +445,13 @@
             "nummern": 1,
             "beispiel": [
               "z. B.",
-              "Regen auf dem Dach oder ein Song zum Mitsingen",
-              "der Song, der beim Training läuft"
+              "Regen auf dem Dach",
+              "der Song vom Training"
             ]
           },
           {
             "art": "aufgabe",
-            "text": "Musik kann auch hochziehen. Was hörst du bei Rot lieber nicht – und was stattdessen?"
-          },
-          {
-            "art": "satzanfaenge",
-            "items": [
-              "Bei Rot lieber nicht: …",
-              "Dann höre ich lieber: …"
-            ],
-            "linien": 1
-          },
-          {
-            "art": "aufgabe",
-            "text": "Dein Plan für diese Woche: Welchen Sinnes-Skill probierst du aus – und wann?",
-            "hinweis": "Was du dabeihast, benutzt du auch: ein glatter Stein, ein Knetball, eine kühle Wasserflasche. Dein „Wenn“ ist dein Moment für die Wochen-Mission.",
+            "text": "Plane einen Sinnes-Skill für diese Woche.",
             "symbole": [
               "schreiben"
             ]
@@ -625,22 +462,16 @@
             "beispiele": [
               {
                 "wenn": "Wenn ich vor dem Test merke, dass meine Zahl steigt,",
-                "dann": "nehme ich meine kühle Wasserflasche in beide Hände und atme dreimal lang aus."
+                "dann": "nehme ich meine kühle Flasche in beide Hände und atme lang aus."
               }
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Du entscheidest, was du teilst.",
-            "text": "Deine Playlist und dein Plan gehören dir. Du zeigst sie nur, wenn du willst."
           }
         ],
         "lehrer": {
           "ziel": "Die Jugendlichen prüfen an drei Hörproben, was Musik mit ihnen macht, halten Songs zum Runterkommen und Aufladen fest, erkennen, dass Musik eine hohe Zahl auch steigern kann, und planen einen Sinnes-Skill für die Woche.",
           "ablauf": [
-            "Einheit 15, Schritt 4: Hör-Test mit drei Proben, Aufgabe 1 (6 Min.); Aufgabe 2 allein (5 Min.); Song-Tausch in der Tischgruppe; Aufgabe 3 nach dem Gespräch in der Klasse.",
-            "Schritt 7: Aufgabe 4, der Plan für die Woche (3 Min.); der Wenn-Moment kommt im Abschluss in die Spalte „Mein Moment“ bei den Wochen-Missionen.",
+            "Einheit 15, Schritt 3: Hör-Test mit drei Proben, Aufgabe 1 (7 Min.); Aufgabe 2 allein (9 Min.); danach Song-Tausch in der Tischgruppe.",
+            "Schritt 5: Aufgabe 3, der Plan für die Woche (nach den Stationen); der Wenn-Moment kommt im Abschluss in die Spalte „Mein Moment“ bei den Wochen-Missionen.",
             "Gespielt werden nur die drei vorbereiteten Hörproben; die Playlist steht nur auf Papier, ein Handy braucht niemand."
           ],
           "hintergrund": "Musik verändert Gefühle über mehrere Wege – über Rhythmus und Tempo, über Erinnerungen an ein Lied und über die Stimmung, die es ausdrückt (Juslin & Västfjäll, 2008). Deshalb wirkt derselbe Song bei verschiedenen Menschen verschieden. Sinnesreize lenken die Aufmerksamkeit aus dem Grübeln ins Jetzt (Gross, 1998).",
@@ -653,11 +484,17 @@
       },
       "fr": {
         "titel": "Mes sens, ma playlist",
-        "untertitel": "Un son, une chanson, quelque chose de froid ou dans la main : les sens te ramènent ici et maintenant.",
+        "untertitel": "Les sens te ramènent ici et maintenant.",
         "bausteine": [
           {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Bon à savoir",
+            "text": "Un stimulus fort ou agréable ramène ton attention ici et maintenant. La musique peut calmer, mais aussi faire monter. Ce qui marche pour toi, tu ne le trouves qu’en testant."
+          },
+          {
             "art": "aufgabe",
-            "text": "Test d’écoute : quel effet te fait l’extrait ? Coche après chaque extrait.",
+            "text": "Coche après chaque extrait l’effet qu’il a sur toi.",
             "symbole": [
               "ankreuzen"
             ]
@@ -677,8 +514,8 @@
           },
           {
             "art": "aufgabe",
-            "text": "Ta playlist : écris des chansons pour redescendre et pour recharger tes batteries.",
-            "hinweis": "Une chanson pour redescendre n’a pas besoin d’être lente. À la place des chansons, tu peux aussi noter des bruits, des voix ou des lieux.",
+            "text": "Écris ta playlist pour redescendre.",
+            "hinweis": "Chansons, bruits, voix ou lieux : tout est permis. Ça t’appartient.",
             "symbole": [
               "schreiben"
             ]
@@ -699,26 +536,13 @@
             "nummern": 1,
             "beispiel": [
               "ex.",
-              "la pluie sur le toit ou une chanson à chanter",
-              "la chanson qui passe à l’entraînement"
+              "la pluie sur le toit",
+              "la chanson de l’entraînement"
             ]
           },
           {
             "art": "aufgabe",
-            "text": "La musique peut aussi faire monter. Qu’est-ce que tu évites d’écouter dans le rouge – et qu’écoutes-tu à la place ?"
-          },
-          {
-            "art": "satzanfaenge",
-            "items": [
-              "Dans le rouge, plutôt pas : …",
-              "J’écoute plutôt : …"
-            ],
-            "linien": 1
-          },
-          {
-            "art": "aufgabe",
-            "text": "Ton plan pour cette semaine : quel skill des sens vas-tu essayer – et quand ?",
-            "hinweis": "Ce que tu as sur toi, tu l’utilises : une pierre lisse, une balle anti-stress, une bouteille d’eau fraîche. Ton « si », c’est ton moment pour la mission de la semaine.",
+            "text": "Planifie un skill des sens pour cette semaine.",
             "symbole": [
               "schreiben"
             ]
@@ -731,22 +555,16 @@
             "beispiele": [
               {
                 "wenn": "Si, avant un devoir en classe, je sens mon chiffre monter,",
-                "dann": "je prends ma bouteille d’eau fraîche à deux mains et j’expire longuement trois fois."
+                "dann": "je prends ma bouteille fraîche à deux mains et j’expire longuement."
               }
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Tu décides de ce que tu partages.",
-            "text": "Ta playlist et ton plan t’appartiennent. Tu ne les montres que si tu le veux."
           }
         ],
         "lehrer": {
           "ziel": "Les jeunes vérifient avec trois extraits sonores ce que la musique leur fait, notent des chansons pour redescendre et pour recharger, constatent que la musique peut aussi faire monter un chiffre déjà haut et planifient un skill des sens pour la semaine.",
           "ablauf": [
-            "Séance 15, étape 4 : test d’écoute avec trois extraits, exercice 1 (6 min) ; exercice 2 seul (5 min) ; échange de chansons en îlot ; exercice 3 après la discussion en classe entière.",
-            "Étape 7 : exercice 4, le plan pour la semaine (3 min) ; à la fin de la séance, le moment du « si » est recopié dans la colonne « Mon moment » des missions de la semaine.",
+            "Séance 15, étape 3 : test d’écoute avec trois extraits, exercice 1 (7 min) ; exercice 2 seul (9 min) ; ensuite échange de chansons en îlot.",
+            "Étape 5 : exercice 3, le plan pour la semaine (après les ateliers) ; à la fin de la séance, le moment du « si » est recopié dans la colonne « Mon moment » des missions de la semaine.",
             "On ne fait écouter que les trois extraits préparés ; la playlist existe seulement sur papier, personne n’a besoin de portable."
           ],
           "hintergrund": "La musique agit sur les émotions par plusieurs voies – le rythme et le tempo, les souvenirs liés à une chanson, l’humeur qu’elle exprime (Juslin & Västfjäll, 2008). C’est pourquoi la même chanson agit différemment selon les personnes. Les stimulations des sens détournent l’attention de la rumination vers le moment présent (Gross, 1998).",
@@ -822,7 +640,7 @@
               },
               {
                 "titel": "So läuft jede Station",
-                "text": "Karte vorlesen. Zahl vorher schätzen und im Skills-Tester eintragen. Den Skill etwa drei Minuten lang machen. Zahl nachher eintragen und einkreisen, wie gut er geholfen hat. Aufräumen, auf das Zeichen weitergehen.",
+                "text": "Karte vorlesen. Zahl vorher schätzen und im Skills-Tester eintragen. Den Skill etwa drei Minuten lang machen. Zahl nachher eintragen. Aufräumen, auf das Zeichen weitergehen.",
                 "bild": "icon:list-check"
               }
             ]
@@ -833,14 +651,14 @@
           "ablauf": [
             "Einmal kopieren, ausschneiden und am besten laminieren; jede Karte mit ihrem Material in eine Kiste, die Ablauf-Karte an die Tafel.",
             "Station 5 nur mit Duft, wenn niemand in der Klasse Asthma oder eine Duftallergie hat; nur natürliche Düfte, keine ätherischen Öle.",
-            "Einheit 15, Schritt 6: Jede Tischgruppe holt eine Kiste an ihren Tisch; fünf Runden zu je fünf Minuten, die Gruppen wechseln im Uhrzeigersinn, die Kisten bleiben liegen."
+            "Einheit 15, Schritt 5: Jede Tischgruppe holt eine Kiste an ihren Tisch; vier Runden zu je sechs Minuten (Tasten, Kälte, Klang, Duft oder Hände – die Karte „Sehen“ bleibt in Reserve), die Gruppen wechseln im Uhrzeigersinn, die Kisten bleiben liegen."
           ],
           "hintergrund": "Sinnesreize lenken die Aufmerksamkeit aus dem Grübeln ins Hier und Jetzt (Gross, 1998). Kälte zählt zu den stärksten Reizen bei sehr hoher Anspannung; angenehme Reize beruhigen eher bei mittlerer (Linehan, 2015). Weil Reize sehr verschieden wirken, testet jede Person selbst.",
           "quellen": [
             "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
             "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
           ],
-          "material": "Fünf Kisten, Stoffbeutel mit sechs Fühl-Dingen, Kühlakkus, Kühlbox, Tücher, Klangschale, Schraubgläser, Igelball"
+          "material": "Vier Kisten (eine fünfte für die Reserve-Karte „Sehen“), Stoffbeutel mit sechs Fühl-Dingen, Kühlakkus, Kühlbox, Tücher, Klangschale, Schraubgläser, Igelball"
         }
       },
       "fr": {
@@ -884,7 +702,7 @@
               },
               {
                 "titel": "Déroulement à chaque atelier",
-                "text": "Lire la carte. Estimer son chiffre avant et le noter dans le testeur de skills. Faire le skill pendant environ trois minutes. Noter le chiffre après et entourer à quel point il a aidé. Ranger, changer au signal.",
+                "text": "Lire la carte. Estimer son chiffre avant et le noter dans le testeur de skills. Faire le skill pendant environ trois minutes. Noter le chiffre après. Ranger, changer au signal.",
                 "bild": "icon:list-check"
               }
             ]
@@ -895,14 +713,14 @@
           "ablauf": [
             "Photocopier une fois, découper et si possible plastifier ; chaque carte avec son matériel dans une caisse, la carte de déroulement au tableau.",
             "L’atelier 5 avec odeurs seulement si personne dans la classe n’a d’asthme ni d’allergie aux odeurs ; seulement des odeurs naturelles, pas d’huiles essentielles.",
-            "Séance 15, étape 6 : chaque îlot installe une caisse sur sa table ; cinq tours de cinq minutes, les îlots tournent dans le sens des aiguilles d’une montre, les caisses restent sur place."
+            "Séance 15, étape 5 : chaque îlot installe une caisse sur sa table ; quatre tours de six minutes (toucher, froid, son, odeur ou mains – la carte « Regarder » reste en réserve), les îlots tournent dans le sens des aiguilles d’une montre, les caisses restent sur place."
           ],
           "hintergrund": "Les stimulations des sens détournent l’attention de la rumination vers l’ici et maintenant (Gross, 1998). Le froid compte parmi les stimulations les plus fortes quand la tension est très haute ; les sensations agréables apaisent plutôt à un niveau moyen (Linehan, 2015). Comme leur effet varie beaucoup, chacun teste lui-même.",
           "quellen": [
             "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
             "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
           ],
-          "material": "Cinq caisses, sac en tissu avec six objets, poches de froid, glacière, torchons, bol chantant, bocaux, balle à picots"
+          "material": "Quatre caisses (une cinquième pour la carte de réserve « Regarder »), sac en tissu avec six objets, poches de froid, glacière, torchons, bol chantant, bocaux, balle à picots"
         }
       }
     }

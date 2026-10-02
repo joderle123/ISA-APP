@@ -42,23 +42,20 @@
         "ziele": [
           "halten in einem eigenen Baum fest, was sie hält, was sie können und worauf sie stolz sind",
           "beschreiben Stärken anderer an einem beobachteten Beispiel",
-          "nehmen Stärken an, die ihnen die Klasse zurückmeldet, und wählen eine für einen festen Moment in der Woche",
-          "probieren den Skill ‚Wie ein Baum stehen‘ aus"
+          "nehmen Stärken an, die ihnen die Klasse zurückmeldet, und wählen eine für einen festen Moment"
         ],
         "material": [
-          "Schülerheft, Bunt- und Filzstifte",
           "Gefühlsrad-Plakat, Klebepunkte",
-          "Stärken-Karten, 80 Stück",
+          "Stärken-Karten (Vorlage), 80 Stück, Schere",
           "20 Briefumschläge mit Namen",
-          "Eigener Baum als Beispiel (A3)",
+          "Eigener Baum auf A3 als Beispiel",
+          "Schülerheft, Bunt- und Filzstifte",
           "Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
-          "Für jede Person eine Karte mit einer echten Beobachtung schreiben und in ihren Umschlag stecken (Beispiel in Schritt 6).",
-          "Stärken-Karten siebenmal kopieren und schneiden: drei je Person, 20 für sich.",
-          "Tischgruppen prüfen: Wer gerade Streit hat, sitzt heute nicht zusammen.",
-          "Den eigenen Baum auf A3 zeichnen – ehrlich, aber im Rahmen (Schritt 3).",
-          "Beim Régent nach Verlust oder Ausgrenzung fragen; wer betroffen ist, wird vorher angesprochen."
+          "Für jede Person eine Karte mit einer echten Beobachtung schreiben (auch aus Stunde 7) und in ihren Umschlag stecken; Stärken-Karten siebenmal kopieren und schneiden.",
+          "Eigenen Baum auf A3 zeichnen – ehrlich, aber im Rahmen (Schritt 3); Stärken-Wörter an die Tafel schreiben (hilfsbereit, ehrlich, geduldig, kann gut zuhören …).",
+          "Tischgruppen prüfen: Wer gerade Streit hat, sitzt heute nicht zusammen. Beim Régent nach Verlust oder Ausgrenzung fragen; wer betroffen ist, wird vorher angesprochen."
         ],
         "ablauf": [
           {
@@ -69,15 +66,10 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Rückblick: laut, leise – und stark"
+            "titel": "Rückblick, Mission und Thema"
           },
           {
-            "min": "15–25",
-            "phase": "input",
-            "titel": "Was hält einen Baum im Sturm?"
-          },
-          {
-            "min": "25–45",
+            "min": "15–45",
             "phase": "uebung",
             "titel": "Mein Baum der Stärke"
           },
@@ -87,24 +79,14 @@
             "titel": "Bewegungspause: Alle, die …"
           },
           {
-            "min": "50–65",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Stärken-Post in der Tischgruppe"
+            "titel": "Stärken-Post schreiben und lesen"
           },
           {
-            "min": "65–85",
-            "phase": "uebung",
-            "titel": "Stärken-Post lesen und annehmen"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: Wie ein Baum stehen"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, Mission und Moment wählen"
           }
         ],
         "schritte": [
@@ -112,193 +94,132 @@
             "titel": "Check-in: Was hat diese Woche geklappt?",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Die Lehrkraft beginnt mit einem Satz zu ihrem Wort und einem kleinen Erfolg der Woche, zwei, drei Freiwillige sagen ihr Wort (3 Min.). Dann in den Tischgruppen: Jede Person nennt eine Sache, die diese Woche geklappt hat – klein reicht: den Bus erwischt, eine Aufgabe fertig, einen Streit vermieden; ‚weiter‘ ist erlaubt (3 Min.). Zwei, drei Gruppen nennen ein Beispiel für die Klasse (2 Min.). Ankündigen: Diese kleinen Erfolge werden gleich zu Früchten.",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad; die Lehrkraft beginnt mit einem kleinen Erfolg der Woche. In den Tischgruppen nennt jede Person eine Sache, die diese Woche geklappt hat – klein reicht, „weiter“ ist erlaubt. Diese Erfolge werden gleich zu Früchten am Baum.",
             "sagen": [
-              "Was hat diese Woche geklappt? Es muss nichts Großes sein – rechtzeitig aufgestanden zählt auch.",
+              "Was hat diese Woche geklappt – es muss nichts Großes sein, rechtzeitig aufgestanden zählt auch?",
               "Bei mir: Ich habe endlich die Schranktür repariert, die seit Wochen klemmt."
             ],
-            "tipp": "Kleine Erfolge sind das Material für die Früchte des Baums. Wer sie jetzt ausspricht, findet sie beim Zeichnen leichter wieder.",
-            "wennEsKippt": "Sagt jemand „Nichts hat geklappt“, das nicht widerlegen, sondern kurz anerkennen und fragen: Was ist trotzdem gegangen? Heute hierherzukommen zählt. Drängeln sich alle am Plakat, tischgruppenweise kleben lassen."
+            "wennEsKippt": "Sagt jemand „Nichts hat geklappt“, nicht widerlegen, sondern fragen: Was ist trotzdem gegangen – heute hierherzukommen zählt. Drängeln sich alle am Plakat, tischgruppenweise kleben lassen."
           },
           {
-            "titel": "Rückblick: laut, leise – und stark",
+            "titel": "Rückblick, Mission und Thema",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission fragen: Kam euer Moment – und wart ihr dort eher laut oder eher leise? Oder habt ihr achtsames Hören ausprobiert? Daumen hoch, Mitte oder runter; eine Stimme erzählt, niemand muss den Moment erlebt haben. Auf die Team-Plakate der letzten Stunde zeigen: Ob laut oder leise – jede Seite hat ihre Stärken. Dann das Thema nennen: Heute geht es darum, was euch hält und was ihr könnt.",
+            "text": "Zur Wochen-Mission fragen: Kam dein Moment – und warst du dort eher laut oder eher leise, oder hast du achtsames Hören ausprobiert? Daumen hoch, Mitte oder runter, eine Stimme erzählt; niemand muss den Moment erlebt haben. Dann das Thema nennen: Heute geht es darum, was euch hält und was ihr könnt.",
             "sagen": [
-              "Letzte Woche ging es darum, wie ihr seid. Heute geht es darum, was ihr könnt – und was euch hält, wenn es stürmt."
+              "Letzte Woche ging es darum, wie ihr seid – heute darum, was ihr könnt und was euch hält, wenn es stürmt."
             ],
-            "tipp": "Die Team-Plakate aus Stunde 7 sind eine Fundgrube: Wer zuhören, organisieren oder andere mitreißen kann, hat schon eine Stärke für den Stamm."
-          },
-          {
-            "titel": "Was hält einen Baum im Sturm?",
-            "dauer": 10,
-            "phase": "input",
-            "text": "Einen einfachen Baum an die Tafel zeichnen – Wurzeln, Stamm, Äste, Krone – und fragen: Was hält einen Baum im Sturm? Die Antwort, die Wurzeln, führt zur Frage: Und was hält euch, wenn es stürmt (2 Min.)? Dann die fünf Teile des Baums mit dem Tafelbild erklären (Tabelle, 3 Min.). Die Lehrkraft zeigt ihren eigenen Baum auf A3 und erzählt zu jedem Teil ein Beispiel (3 Min.). Zum Schluss zeigen, wie man in 30 Sekunden einen Baum zeichnet, der genügt: zwei Striche als Stamm, ein paar Wurzeln, eine Wolke als Krone (2 Min.).",
-            "sagen": [
-              "Was hält einen Baum im Sturm? Und was hält euch, wenn es bei euch stürmt?",
-              "Wurzeln können Menschen sein, aber auch ein Ort, ein Tier, ein Lied, eine Sprache, ein Glaube oder eine Erinnerung."
-            ],
-            "tabelle": {
-              "spalten": [
-                "Teil des Baums",
-                "Frage an dich"
-              ],
-              "zeilen": [
-                [
-                  "Wurzeln",
-                  "Was hält mich? Menschen, Orte, Tiere, Musik, Glaube, Erinnerungen"
-                ],
-                [
-                  "Stamm",
-                  "Was kann ich? Was macht mich aus?"
-                ],
-                [
-                  "Äste",
-                  "Was lerne ich gerade? Was darf noch wachsen?"
-                ],
-                [
-                  "Früchte",
-                  "Worauf bin ich stolz? Große und kleine Erfolge"
-                ],
-                [
-                  "Blätter",
-                  "Was sehen die anderen in mir? Kommt heute von der Klasse"
-                ]
-              ]
-            },
-            "tipp": "Der eigene Baum der Lehrkraft ist das stärkste Beispiel: ehrlich, aber im Rahmen – ein Hobby, ein Ort, ein Mensch, ein kleiner Erfolg. Wer persönliche Wurzeln nicht zeigen möchte, nimmt Musik, einen Ort oder ein Haustier.",
-            "wennEsKippt": "Kommen Witze über den Baum („Mein Baum ist ein Kaktus“), mitlachen und aufnehmen: Ein Kaktus übersteht die Wüste – welche Stärke steckt darin? Fragt jemand, ob er Wurzeln haben muss, die er nicht hat, klarstellen: Jede Wurzel zählt, auch ein Lieblingsort.",
-            "blatt": "ff7-baum-der-staerke"
+            "tipp": "Die Team-Plakate aus Stunde 7 sind eine Fundgrube: Wer zuhören, organisieren oder mitreißen kann, hat schon eine Stärke für den Stamm."
           },
           {
             "titel": "Mein Baum der Stärke",
-            "dauer": 20,
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Jede Person zeichnet auf dem Blatt in den Rahmen ihren Baum und füllt die vier Teile Wurzeln, Stamm, Äste und Früchte; die Blätter bleiben für nachher frei (15 Min.). Die Stärken-Wörter auf dem Blatt und die Erfolge vom Check-in helfen, wenn jemandem nichts einfällt. Am Stamm und in der Krone Platz lassen – der Baum wächst in Stunde 30 und 35 weiter. Fremde Bäume werden nicht kommentiert. Die Lehrkraft geht herum und hilft mit Fragen, nicht mit Vorschlägen; leise Musik im Hintergrund hilft vielen. Zum Schluss nennen drei, vier Freiwillige eine Stärke aus ihrem Stamm, die Wurzeln bleiben privat (3 Min.).",
+            "text": "Erst einen einfachen Baum an die Tafel zeichnen und fragen: Was hält einen Baum im Sturm – und was hält euch? Dann zeichnet jede Person auf dem Blatt ihren Baum und füllt Wurzeln, Stamm, Äste und Früchte (Aufgabe 1); die Blätter bleiben für nachher frei. Zum Schluss schreibt sie auf, welche Stärke die anderen wohl bei ihr sehen (Aufgabe 2).",
             "sagen": [
-              "Woran würde jemand, der dich gut kennt, merken, dass du das kannst?",
-              "Lasst am Stamm und oben in der Krone Platz. Euer Baum wächst in diesem Jahr noch."
+              "Was hält einen Baum im Sturm – und was hält euch, wenn es bei euch stürmt?",
+              "Wurzeln können Menschen sein, aber auch ein Ort, ein Tier, ein Lied, eine Sprache, ein Glaube oder eine Erinnerung."
             ],
-            "tipp": "Wer nicht gern zeichnet, nimmt den einfachen Umriss von der Tafel – es geht um den Inhalt, nicht um Kunst. Wer früh fertig ist, malt den Baum farbig aus oder schreibt zu einer Stärke im Stamm eine Situation, in der sie sichtbar wurde.",
-            "wennEsKippt": "Bleibt der Stamm leer, die Frage umdrehen: Was würden deine Freunde sagen, was du gut kannst? Was hast du hier in den letzten Wochen gezeigt? Wer seine Wurzeln nicht aufschreiben möchte, nutzt Zeichen, die nur er versteht. Bleiben die Wurzeln leer oder steht dort ‚niemand‘, das nicht vor der Klasse ansprechen, sondern nach der Stunde ein kurzes Gespräch anbieten.",
+            "punkte": [
+              "Tafelbild (4 Min.): Baum mit Wurzeln (was mich hält), Stamm (was ich kann), Ästen (was noch wächst) und Früchten (worauf ich stolz bin); die Blätter kommen später von den anderen.",
+              "Baum der Lehrkraft (3 Min.): zu jedem Teil ein ehrliches, aber unverfängliches Beispiel; ein Baum in 30 Sekunden: zwei Striche, ein paar Wurzeln, eine Wolke.",
+              "Baum zeichnen (15 Min.): in den Rahmen auf dem Blatt; Stärken-Wörter und Erfolge vom Check-in helfen; Platz am Stamm und in der Krone lassen – der Baum wächst in Stunde 30 und 35 weiter; wer nicht gern zeichnet, nimmt den Umriss von der Tafel.",
+              "Aufgabe 2 (3 Min.): Ich glaube, die anderen sehen bei mir … – ein Satz.",
+              "Zum Schluss (5 Min.): drei, vier Freiwillige nennen eine Stärke aus ihrem Stamm; die Wurzeln bleiben privat, fremde Bäume werden nicht kommentiert."
+            ],
+            "wennEsKippt": "Bleibt der Stamm leer, die Frage umdrehen: Was würden deine Freunde sagen, was du gut kannst? Bleiben die Wurzeln leer oder steht dort „niemand“, nicht vor der Klasse ansprechen, sondern nach der Stunde ein Gespräch anbieten.",
             "blatt": "ff7-baum-der-staerke"
           },
           {
             "titel": "Bewegungspause: Alle, die …",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen hinter ihrem Stuhl. Die Lehrkraft liest Sätze vor; wer sich angesprochen fühlt, setzt sich kurz und steht wieder auf – die Lehrkraft macht mit. Die Sätze zeigen Stärken, an die beim eigenen Baum oft niemand denkt. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Alle stehen hinter ihrem Stuhl. Die Lehrkraft liest Sätze vor; wer sich angesprochen fühlt, setzt sich kurz und steht wieder auf – die Lehrkraft macht mit. Die Sätze zeigen Stärken, an die beim eigenen Baum oft niemand denkt.",
+            "sagen": [
+              "Setzt euch kurz hin, wenn der Satz zu euch passt – und steht gleich wieder auf."
+            ],
             "punkte": [
               "Alle, die schon einmal jemandem etwas erklärt haben.",
               "Alle, die mehr als zwei Sprachen sprechen.",
-              "Alle, die sich um ein Tier oder um jüngere Geschwister kümmern.",
-              "Alle, die schon einmal etwas repariert oder selbst gebaut haben.",
-              "Alle, die jemanden zum Lachen gebracht haben, dem es nicht gut ging.",
+              "Alle, die sich um ein Tier oder jüngere Geschwister kümmern.",
+              "Alle, die etwas repariert oder selbst gebaut haben.",
               "Alle, die weitergemacht haben, obwohl es schwer war."
             ],
-            "tipp": "Nach der Runde kurz sagen: Jedes Hinsetzen war eine Stärke. Wer mag, schreibt eine davon noch an seinen Stamm."
+            "tipp": "Nach der Runde kurz sagen: Jedes Hinsetzen war eine Stärke – wer mag, schreibt eine davon noch an seinen Stamm. Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung."
           },
           {
-            "titel": "Stärken-Post in der Tischgruppe",
-            "dauer": 15,
+            "titel": "Stärken-Post schreiben und lesen",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Die Regeln der Stärken-Post an die Tafel schreiben und an einem Beispiel zeigen (Liste, 3 Min.). Jede Person bekommt drei Stärken-Karten und schreibt in der Tischgruppe für jede der drei anderen eine: für wen, welche Stärke, ein Beispiel, woran man sie gesehen hat, und den eigenen Namen (8 Min.). Die Lehrkraft geht herum, liest mit und hilft beim Formulieren. Fertige Karten liegen verdeckt in der Tischmitte; wer fertig ist, schreibt auf dem Blatt den ersten Satz von Aufgabe 2. Zum Schluss liest die Lehrkraft die Karten jeder Tischgruppe und legt sie verdeckt vor die Person, für die sie sind (4 Min.).",
+            "text": "Jede Person schreibt für die drei anderen in ihrer Tischgruppe je eine Stärken-Karte mit Stärke und beobachtetem Beispiel; die Lehrkraft liest jede Karte, bevor sie ankommt. Dann liest jede Person die vier Karten aus ihrem Umschlag still, schreibt die Stärken als Blätter in den Baum und wählt in Aufgabe 3 ihre Stärke für die Woche.",
             "sagen": [
               "Schreibt eine Stärke und woran ihr sie gemerkt habt: geduldig – du hast mir in Mathe alles zweimal erklärt.",
-              "Es geht darum, was jemand tut, nicht wie jemand aussieht."
+              "Lest eure Karten in Ruhe; Lob annehmen ist nicht leicht, ein Danke reicht."
             ],
             "punkte": [
-              "Eine Stärke und ein Beispiel: Du kannst gut …, zum Beispiel als du …",
-              "Nur, was du selbst gesehen hast – in der Klasse, in der Pause, im Verein.",
-              "Nichts über Aussehen, Kleidung oder Noten.",
-              "Kein Spaß auf Kosten anderer. Die Lehrkraft liest jede Karte, bevor sie ankommt.",
-              "Fällt dir nichts ein: die Stärken-Wörter auf dem Blatt lesen und an die letzten Wochen denken."
+              "Regeln (3 Min.): eine Stärke und ein Beispiel – Du kannst gut …, zum Beispiel als du …; nur, was du selbst gesehen hast; nichts über Aussehen, Kleidung oder Noten; kein Spaß auf Kosten anderer.",
+              "Schreiben (12 Min.): drei Karten je Person, die Lehrkraft liest mit und hilft beim Formulieren; fertige Karten liegen verdeckt in der Tischmitte und gehen dann verdeckt an die Person, für die sie sind.",
+              "Lesen (8 Min.): Umschläge austeilen, in jedem liegt schon die Karte der Lehrkraft; die drei Karten dazulegen, still lesen; wer mag, sagt in der Gruppe Danke – ohne Kleinreden.",
+              "Aufgabe 3 (8 Min.): Stärken als Blätter in den Baum schreiben, „Gefreut hat mich …“ ergänzen, eine Stärke für diese Woche wählen und den Moment aufschreiben.",
+              "Zum Schluss (4 Min.): drei, vier Freiwillige sagen, welche Stärke sie gefreut hat; die Karten kommen in den Umschlag."
             ],
-            "tipp": "Konkrete Beispiele wirken stärker als ‚nett‘ oder ‚cool‘; wer nur ein Wort schreibt, bekommt die Frage: Woran hast du das gemerkt? Die eigenen Karten nach demselben Muster schreiben, nur mit Beobachtungen aus der Schule: Du bleibst ruhig, wenn es laut wird – zum Beispiel bei der Teamaufgabe in Stunde 7.",
-            "wennEsKippt": "Will jemand für eine Person aus der Gruppe nichts schreiben, nicht drängen, sondern leise helfen: Was hat sie in der Aufstellung oder bei der Teamaufgabe gemacht? Weigert sich jemand ganz, schreibt die Lehrkraft die fehlende Karte, damit niemand weniger bekommt. Taucht ein ironischer Satz auf („Weltmeister im Schlafen“), die Karte freundlich zurückgeben: Schreib sie so, dass sie sich darüber freuen kann.",
-            "blatt": "ff7-staerken-karten"
-          },
-          {
-            "titel": "Stärken-Post lesen und annehmen",
-            "dauer": 20,
-            "phase": "uebung",
-            "text": "Die Lehrkraft verteilt die Umschläge; in jedem liegt schon ihre Karte (2 Min.). Jede Person legt die drei Karten aus der Tischgruppe dazu und liest still alle vier (3 Min.). Wer mag, sagt den anderen in der Gruppe einfach Danke – ohne Kleinreden (1 Min.). Dann schreibt jede Person die Stärken als Blätter in ihren Baum und ergänzt in Aufgabe 2 den Satz „Gefreut hat mich …“ (6 Min.). Für die Wochen-Mission wählt jede Person eine Stärke und schreibt die letzten beiden Sätze: welche Stärke – und in welchem Moment sie sie diese Woche einmal anders als sonst einsetzt, etwa beim Abendessen zu Hause, im Training oder in der Pause. Den Kasten „Aus der Forschung“ vorlesen und zwei, drei Beispiele hören (4 Min.). Zum Schluss sagen drei, vier Freiwillige, welche Stärke sie gefreut hat; die Karten kommen in den Umschlag (4 Min.).",
-            "sagen": [
-              "Lest eure Karten in Ruhe. Ihr müsst niemandem zeigen, was darauf steht.",
-              "Lob annehmen ist nicht leicht. Ein Danke reicht – kleinreden müsst ihr nichts."
-            ],
-            "tipp": "Die Karte der Lehrkraft ist das Sicherheitsnetz: In jedem Umschlag liegt mindestens eine genaue, warme Beobachtung – gerade für Stille und für Neue. Wer mag, klebt den Umschlag hinten ins Heft.",
-            "wennEsKippt": "Rutscht doch eine verletzende Karte durch, sie still einsammeln, der Person bis zur nächsten Stunde eine zweite Karte der Lehrkraft versprechen und mit dem Schreiber nach der Stunde unter vier Augen sprechen. Dreht jemand seine Karten verlegen um oder sagt „Stimmt doch nicht“, das zulassen: Du kannst sie später in Ruhe lesen. Fehlt jemand, schreibt die Gruppe trotzdem für ihn; die Karten warten in seinem Umschlag, und die Lehrkraft ergänzt die Karte, die seiner Gruppe fehlt. Zweifelt jemand am Kasten „Aus der Forschung“ („Das bringt doch nichts“), das als Einladung nehmen: Die Klasse testet es selbst – nächste Woche fragt die Brücke nach, was passiert ist.",
+            "wennEsKippt": "Rutscht doch eine verletzende Karte durch, sie still einsammeln, der Person eine zweite Karte der Lehrkraft versprechen und mit dem Schreiber unter vier Augen sprechen. Will jemand für eine Person aus der Gruppe nichts schreiben oder weigert sich ganz, schreibt die Lehrkraft die fehlende Karte, damit niemand weniger bekommt.",
             "blatt": "ff7-baum-der-staerke"
           },
           {
             "titel": "Skill: Wie ein Baum stehen",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Ankündigen: Jetzt kommt ein Skill für Momente, in denen man wackelt – vor einem Vortrag, bei einem Streit, wenn die Knie zittern. Erste Runde im Stehen: Alle stehen hinter ihren Stühlen, mit etwas Abstand, Augen offen auf einen Punkt; die Lehrkraft leitet die drei Schritte langsam an und macht mit (Liste, 3 Min.). Zweite Runde im Sitzen, die Kurzform für den Alltag: Füße fest auf den Boden, aufrichten, dreimal langsam ausatmen – so unauffällig, dass es im Test niemand merkt (2 Min.). Danach zwei, drei Rückmeldungen: Welche Form passt besser zu euch? Wann könnte das helfen (3 Min.)? Zum Schluss erklären: Wer die Füße spürt und langsam ausatmet, holt sich aus dem Sturm im Kopf zurück in den Körper – das gibt Halt.",
+            "text": "Der Skill hilft, wenn man wackelt – vor einem Vortrag, bei einem Streit, wenn die Knie zittern. Erst im Stehen hinter dem Stuhl, dann die Kurzform im Sitzen (zusammen höchstens 5 Minuten), danach der Abschluss: ein Satz in den Skills-Pass, Mission ansagen, Moment wählen.",
             "sagen": [
-              "Ein Baum bewegt sich im Sturm oben – unten bleibt er stehen. Spürt eure Wurzeln."
+              "Ein Baum bewegt sich oben im Sturm, unten bleibt er stehen – spürt eure Wurzeln.",
+              "Wann kommt euer Moment für eure Stärke – zu Hause, im Verein oder in der Pause – und was tut ihr dann?"
             ],
             "punkte": [
-              "Wurzeln: Füße hüftbreit auf den Boden, das Gewicht spüren – stell dir vor, aus deinen Fußsohlen wachsen Wurzeln.",
-              "Stamm: Richte dich auf, lass die Schultern sinken und atme dreimal langsam aus.",
-              "Krone: Heb den Blick, wieg dich leicht wie ein Baum im Wind – dann steh ganz still und spür, wie fest du stehst."
+              "Wurzeln: Füße hüftbreit auf den Boden, das Gewicht spüren – aus den Fußsohlen wachsen Wurzeln.",
+              "Stamm: aufrichten, die Schultern sinken lassen, dreimal langsam ausatmen.",
+              "Krone: den Blick heben, sich leicht wie im Wind wiegen – dann ganz still stehen. Kurzform im Sitzen: Füße fest auf den Boden, aufrichten, dreimal ausatmen.",
+              "Skills-Pass (4 Min.): ein Satz zur Frage „Was gibt mir Halt, wenn ich wackle?“, Stempel.",
+              "Mission und Moment (4 Min.): ansagen; auf drei zeigen alle ihren Moment (ein Finger zu Hause, zwei Verein, drei Pause, Faust ein eigener) und schreiben ihn in „Mein Moment: Wenn …“. Ausblick (1 Min.): Der Baum wächst in Stunde 30 und 35 weiter – das Heft gut aufbewahren."
             ],
-            "tipp": "Die Übung ist ein Gegenstück zur Unruhe: Sie braucht Bewegung und endet in Stille. Wer die Kurzform ein paarmal geübt hat, kann sie später unauffällig unter dem Tisch nutzen.",
-            "wennEsKippt": "Wird aus dem Wiegen ein Sturm mit Schubsen, sofort anhalten: Bäume berühren sich nicht – jeder steht für sich. Wer kichert, schaut auf einen Punkt am Boden. Wer nicht aufstehen möchte, macht beide Runden im Sitzen; wer gar nicht mitmachen möchte, steht einfach still dabei."
-          },
-          {
-            "titel": "Skills-Pass, Mission und Moment wählen",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Was gibt mir Halt, wenn ich wackle? Jede Person schreibt einen Satz und bekommt den Stempel. Mission und Moment wählen (2 Min.): die Wochen-Mission im Heft zeigen und ansagen – die Stärke aus Aufgabe 2 in dem gewählten Moment einmal bewusst einsetzen, gern auf neue Art. Auf ‚drei‘ zeigen alle ihren Moment: ein Finger für zu Hause, zwei für Verein oder Training, drei für die Pause, Faust für einen eigenen – und schreiben ihn aus der Zeile „Mein Moment“ auf dem Blatt in die Spalte „Mein Moment: Wenn …“ bei den Wochen-Missionen. Ausblick (1 Min.): ankündigen, dass der Baum in Stunde 30 und 35 weiterwächst – das Heft gut aufbewahren –, und das neue Kapitel nennen.",
-            "sagen": [
-              "Für den Pass: Was gibt euch Halt, wenn ihr wackelt – eine Stärke, eine Wurzel oder der Stand wie ein Baum?",
-              "Wann kommt euer Moment für eure Stärke? Zu Hause – ein Finger, Verein – zwei, Pause – drei, ein eigener – die Faust. Schreibt ihn ins Heft: Wenn …, dann meine Stärke."
-            ],
-            "tipp": "Die Bäume nicht einsammeln: Sie gehören den Jugendlichen. Wer mag, zeigt seinen Baum zu Hause – viele Eltern erfahren so zum ersten Mal, was ihr Kind in diesem Fach macht. Der Moment macht aus der Stärke einen Plan: Nächste Woche fragt die Brücke danach, ohne Kontrolle.",
-            "wennEsKippt": "Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Hat jemand noch keine Stärke gewählt, nimmt er eine aus seinem Stamm. Wer die Sprache noch lernt, malt ein kleines Zeichen für seinen Moment: Haus, Ball, Pausenhof."
+            "wennEsKippt": "Wird aus dem Wiegen ein Sturm mit Schubsen, sofort anhalten: Bäume berühren sich nicht, jeder steht für sich. Wer nicht aufstehen mag, macht beide Runden im Sitzen; wer gar nicht mitmachen möchte, steht still dabei."
           }
         ],
-        "bruecke": "Ihr kennt jetzt eure Bedürfnisse, eure Art und eure Stärken. Ab nächster Woche geht es um Gefühle: was sie uns sagen wollen – und wozu jedes Gefühl gut ist.",
-        "mission": "Wenn dein Moment kommt – zu Hause, im Verein oder in der Pause –, dann setz die Stärke, die du ausgesucht hast, einmal bewusst ein, gern auf eine neue Art. Was ist passiert?",
-        "hintergrund": "Die Einheit fragt nicht, was fehlt, sondern was trägt. Grundlage ist die Resilienzforschung: Jugendliche bewältigen Belastungen besser, wenn verlässliche Beziehungen, eigene Fähigkeiten und Erfahrungen von Wirksamkeit sie tragen – meist alltägliche Schutzfaktoren (Masten, 2014). Das Baum-Bild ist an den „Tree of Life“ der narrativen Arbeit angelehnt: Belastete Jugendliche erzählen über Wurzeln, Stamm, Äste und Früchte von sich, ohne zuerst über Probleme sprechen zu müssen (Ncube, 2006). Wirkungsbeleg: In einer kontrollierten Studie mit Erwachsenen steigerte es das Wohlbefinden über Monate, eigene Stärken eine Woche lang auf neue Weise einzusetzen (Seligman et al., 2005). Darauf beruhen Wochen-Mission und Forschungskasten; der gewählte Moment macht aus dem Vorsatz eine Handlung. Rückmeldungen wirken, wenn sie an beobachtetem Verhalten hängen und alle gleich viele bekommen.",
+        "bruecke": "Ihr kennt jetzt eure Bedürfnisse, eure Art und eure Stärken – ab nächster Woche geht es um Gefühle: was sie uns sagen wollen und wozu jedes gut ist.",
+        "mission": "Setze deine gewählte Stärke einmal auf neue Art ein. Was passiert?",
+        "hintergrund": "Die Einheit fragt nicht, was fehlt, sondern was trägt: Jugendliche bewältigen Belastungen besser, wenn verlässliche Beziehungen, eigene Fähigkeiten und Erfolge sie stützen – meist ganz alltägliche Schutzfaktoren (Masten, 2014). Das Baum-Bild stammt aus dem „Tree of Life“: Man erzählt von sich, ohne zuerst über Probleme zu sprechen (Ncube, 2006). Wer eine Stärke eine Woche lang auf neue Art einsetzte, fühlte sich über Monate besser (Seligman et al., 2005).",
         "quellen": [
           "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
           "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children. International Journal of Narrative Therapy and Community Work, 1, 3–16.",
           "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
         ],
-        "achtung": "Die Frage nach den Wurzeln kann schmerzen, wenn wichtige Menschen fehlen, gestorben sind oder Beziehungen belastet sind. Deshalb ausdrücklich Orte, Tiere, Musik, Glauben und Erinnerungen zulassen; die Wurzeln bleiben privat. Wer gerade einen Verlust erlebt, wird vorher angesprochen und entscheidet selbst. Bleiben die Wurzeln leer oder steht dort ‚niemand‘, nach der Stunde ein Gespräch anbieten. Jede Karte der Stärken-Post wird gelesen, bevor sie ankommt; alle bekommen gleich viele. Erzählt jemand von Gewalt oder Verlust, nicht vor der Klasse vertiefen und noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule.",
+        "achtung": "Die Frage nach den Wurzeln kann schmerzen, wenn wichtige Menschen fehlen oder gestorben sind: Orte, Tiere, Musik, Glauben und Erinnerungen ausdrücklich zulassen, die Wurzeln bleiben privat, und wer gerade einen Verlust erlebt, wird vorher angesprochen. Bleiben die Wurzeln leer oder steht dort „niemand“, nach der Stunde ein Gespräch anbieten; jede Karte der Stärken-Post wird gelesen, bevor sie ankommt, und alle bekommen gleich viele. Erzählt jemand von Gewalt oder Verlust, nicht vor der Klasse vertiefen und noch am selben Tag den SePAS informieren (Schutzkonzept der Schule).",
         "differenzierung": {
-          "leichter": "Für Jugendliche, die mühsam schreiben oder die Sprache noch lernen: Im Baum reicht je Teil ein Stichwort, ein Zeichen oder ein Wort in der eigenen Sprache; die Stärken-Wörter dürfen abgeschrieben werden. Auf den Karten genügt ein Stärken-Wort vom Blatt mit einem Stichwort zum Beispiel; die Lehrkraft hilft beim Formulieren. Für die Spalte „Mein Moment“ reicht ein Wort: Pause, Training.",
-          "schwerer": "Zu jeder Stärke im Stamm eine Situation notieren, in der sie sichtbar wurde, und überlegen, in welcher neuen Situation sie diese Woche helfen könnte. Bei der Stärken-Post besonders genaue Beispiele suchen – auch für Personen, die man noch wenig kennt."
+          "leichter": "Für Jugendliche, die mühsam schreiben oder die Sprache noch lernen: Im Baum reicht je Teil ein Stichwort, ein Zeichen oder ein Wort in der eigenen Sprache; die Stärken-Wörter von der Tafel dürfen abgeschrieben werden. Auf den Karten genügt ein Stärken-Wort mit einem Stichwort zum Beispiel, und für „Mein Moment“ ein Wort wie Pause oder Training.",
+          "schwerer": "Zu jeder Stärke im Stamm eine Situation notieren, in der sie sichtbar wurde, und überlegen, wo sie diese Woche helfen könnte. Bei der Stärken-Post besonders genaue Beispiele suchen – auch für Personen, die man noch wenig kennt."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), Was hält einen Baum im Sturm? (5 Min.), mein Baum der Stärke (15 Min.), Stärken-Post in der Tischgruppe mit der Karte der Lehrkraft, lesen und als Blätter eintragen (17 Min.), Skills-Pass, Mission und Moment wählen (5 Min.), Wie ein Baum stehen in der Kurzform (3 Min.). Die Bewegungspause und die Langform des Skills entfallen."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Baum im Sturm und mein Baum der Stärke (20 Min.), Stärken-Post in der Tischgruppe, lesen und als Blätter eintragen (17 Min.), Skills-Pass, Mission und Moment (8 Min.). Bewegungspause und Skill entfallen; den Skill in der nächsten Stunde nachholen."
       },
       "fr": {
         "titel": "Mon arbre des forces",
-        "kurz": "Chaque jeune dessine son arbre – ce qui le porte, ce qu’il sait faire, ses fiertés – et reçoit de la classe, par le courrier des forces, autant de forces que tous les autres.",
+        "kurz": "Chaque jeune crée son arbre avec ce qui le porte, ce qu’il sait faire et ce dont il est fier, et reçoit de la classe, par le courrier des forces, autant de forces que les autres.",
         "ziele": [
           "dessinent un arbre qui montre ce qui les porte, ce qu’ils savent faire et leurs fiertés",
           "décrivent les forces des autres à partir d’un exemple observé",
-          "accueillent les forces que la classe leur renvoie et en choisissent une pour un moment précis de la semaine",
-          "essaient le skill « tenir comme un arbre »"
+          "accueillent les forces que la classe leur renvoie et en choisissent une pour un moment précis"
         ],
         "material": [
-          "Cahier, crayons de couleur, feutres",
           "Roue des émotions, gommettes",
-          "Cartes du courrier, 80 cartes",
+          "Cartes du courrier des forces (modèle), 80 cartes, ciseaux",
           "20 enveloppes avec les prénoms",
-          "Son propre arbre en exemple (A3)",
+          "Arbre de l’enseignant·e en exemple (A3)",
+          "Cahier, crayons de couleur et feutres",
           "Tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
-          "Écrire pour chaque jeune une carte avec une vraie observation et la glisser dans son enveloppe (exemple à l’étape 6).",
-          "Photocopier sept fois et découper les cartes : trois par jeune, 20 pour soi.",
-          "Vérifier les îlots : deux jeunes en conflit ne s’assoient pas ensemble aujourd’hui.",
-          "Dessiner son propre arbre sur A3 – honnête, sans trop se dévoiler (étape 3).",
-          "Demander au régent si quelqu’un vit une perte ou est mis à l’écart ; en parler avant avec ce jeune."
+          "Écrire pour chaque jeune une carte avec une vraie observation (aussi de la séance 7) et la glisser dans son enveloppe ; photocopier sept fois et découper les cartes.",
+          "Dessiner son propre arbre sur A3 – honnête, sans trop se dévoiler (étape 3) ; écrire des mots de forces au tableau (serviable, honnête, patient, sait écouter…).",
+          "Vérifier les îlots : deux jeunes en conflit ne s’assoient pas ensemble. Demander au régent si quelqu’un vit une perte ou est mis à l’écart ; en parler avant avec ce jeune."
         ],
         "ablauf": [
           {
@@ -309,15 +230,10 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Retour : expansif, réservé – et vos forces"
+            "titel": "Retour, mission et thème"
           },
           {
-            "min": "15–25",
-            "phase": "input",
-            "titel": "Qu’est-ce qui fait tenir un arbre dans la tempête ?"
-          },
-          {
-            "min": "25–45",
+            "min": "15–45",
             "phase": "uebung",
             "titel": "Mon arbre des forces"
           },
@@ -327,24 +243,14 @@
             "titel": "Pause active : tous ceux qui…"
           },
           {
-            "min": "50–65",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Courrier des forces dans l’îlot"
+            "titel": "Écrire et lire le courrier des forces"
           },
           {
-            "min": "65–85",
-            "phase": "uebung",
-            "titel": "Lire et accueillir le courrier des forces"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : tenir comme un arbre"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, mission et choix du moment"
           }
         ],
         "schritte": [
@@ -352,169 +258,111 @@
             "titel": "Tour d’humeur : qu’est-ce qui a marché cette semaine ?",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Commencer par une phrase sur son propre mot et une petite réussite de la semaine ; deux ou trois volontaires disent leur mot (3 min). Puis en îlots : chacun cite une chose qui a marché cette semaine – une petite suffit : avoir attrapé son bus, fini un exercice, évité une dispute ; on peut dire « je passe » (3 min). Deux ou trois îlots donnent un exemple à la classe (2 min). Annoncer : ces petites réussites vont bientôt devenir des fruits.",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions ; l’enseignant·e commence avec une petite réussite de la semaine. En îlots, chacun cite une chose qui a marché cette semaine – une petite suffit, on peut dire « je passe ». Ces réussites vont bientôt devenir des fruits de l’arbre.",
             "sagen": [
-              "Qu’est-ce qui a marché cette semaine ? Pas besoin que ce soit grand – s’être levé à l’heure, ça compte aussi.",
+              "Qu’est-ce qui a marché cette semaine – pas besoin que ce soit grand, s’être levé à l’heure, ça compte aussi ?",
               "Pour moi : j’ai enfin réparé la porte d’armoire qui coinçait depuis des semaines."
             ],
-            "tipp": "Les petites réussites sont la matière des fruits de l’arbre. Qui les dit maintenant les retrouve plus facilement en dessinant.",
-            "wennEsKippt": "Si quelqu’un dit « rien n’a marché », ne pas le contredire, mais le reconnaître brièvement et demander : qu’est-ce qui a quand même fonctionné ? Être venu aujourd’hui, ça compte. Si tout le monde se bouscule devant l’affiche, faire passer îlot par îlot."
+            "wennEsKippt": "Si quelqu’un dit « Rien n’a marché », ne pas le contredire, mais demander : qu’est-ce qui a quand même fonctionné – venir ici aujourd’hui compte. Si tout le monde se bouscule devant l’affiche, faire coller îlot par îlot."
           },
           {
-            "titel": "Retour : expansif, réservé – et vos forces",
+            "titel": "Retour, mission et thème",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission de la semaine, demander : votre moment est-il arrivé – et y étiez-vous plutôt expansif ou plutôt réservé ? Ou avez-vous essayé l’écoute attentive ? Pouce en haut, au milieu ou en bas ; une voix raconte, personne n’est obligé d’avoir vécu son moment. Montrer les affiches des équipes de la semaine dernière : expansif ou réservé, chaque côté a ses forces. Puis annoncer le thème : aujourd’hui, on parle de ce qui vous porte et de ce que vous savez faire.",
+            "text": "Pour la mission de la semaine, demander : ton moment est-il arrivé – et étais-tu plutôt expansif ou plutôt réservé, ou as-tu essayé l’écoute attentive ? Pouce en haut, au milieu ou en bas, une voix raconte ; personne n’est obligé d’avoir vécu son moment. Puis annoncer le thème : aujourd’hui, ce qui vous porte et ce que vous savez faire.",
             "sagen": [
-              "La semaine dernière, on a parlé de comment vous êtes. Aujourd’hui, on parle de ce que vous savez faire – et de ce qui vous tient debout quand il y a de la tempête."
+              "La semaine dernière, on a parlé de comment vous êtes – aujourd’hui, de ce que vous savez faire et de ce qui vous tient debout quand il y a de la tempête."
             ],
-            "tipp": "Les affiches de la séance 7 sont une mine : qui sait écouter, organiser ou entraîner les autres a déjà une force pour son tronc."
-          },
-          {
-            "titel": "Qu’est-ce qui fait tenir un arbre dans la tempête ?",
-            "dauer": 10,
-            "phase": "input",
-            "text": "Dessiner un arbre simple au tableau – racines, tronc, branches, couronne – et demander : qu’est-ce qui fait tenir un arbre dans la tempête ? La réponse, les racines, mène à la question : et vous, qu’est-ce qui vous fait tenir quand c’est la tempête pour vous (2 min) ? Expliquer ensuite les cinq parties de l’arbre avec le tableau (tableau, 3 min). Montrer son propre arbre sur A3 et donner un exemple pour chaque partie (3 min). Pour finir, montrer comment dessiner en 30 secondes un arbre qui suffit : deux traits pour le tronc, quelques racines, un nuage pour la couronne (2 min).",
-            "sagen": [
-              "Qu’est-ce qui fait tenir un arbre dans la tempête ? Et vous, qu’est-ce qui vous fait tenir quand c’est la tempête pour vous ?",
-              "Les racines peuvent être des personnes, mais aussi un lieu, un animal, une chanson, une langue, une foi ou un souvenir."
-            ],
-            "tabelle": {
-              "spalten": [
-                "Partie de l’arbre",
-                "Question pour toi"
-              ],
-              "zeilen": [
-                [
-                  "Racines",
-                  "Qu’est-ce qui me porte ? Des personnes, des lieux, des animaux, de la musique, la foi, des souvenirs"
-                ],
-                [
-                  "Tronc",
-                  "Qu’est-ce que je sais faire ? Qu’est-ce qui me caractérise ?"
-                ],
-                [
-                  "Branches",
-                  "Qu’est-ce que j’apprends en ce moment ? Qu’est-ce qui peut encore grandir ?"
-                ],
-                [
-                  "Fruits",
-                  "De quoi suis-je fier ou fière ? Des réussites, petites et grandes"
-                ],
-                [
-                  "Feuilles",
-                  "Que voient les autres en moi ? Ça vient aujourd’hui de la classe"
-                ]
-              ]
-            },
-            "tipp": "L’arbre de l’enseignant·e est l’exemple le plus fort : honnête, mais sans risque – un loisir, un lieu, une personne, une petite réussite. Qui ne veut pas montrer ses racines personnelles prend la musique, un lieu ou un animal.",
-            "wennEsKippt": "S’il y a des blagues sur l’arbre (« Mon arbre, c’est un cactus »), en rire et les reprendre : un cactus survit au désert – quelle force y a-t-il là-dedans ? Si quelqu’un demande s’il doit avoir des racines qu’il n’a pas, préciser : chaque racine compte, même un endroit préféré.",
-            "blatt": "ff7-baum-der-staerke"
+            "tipp": "Les affiches des équipes de la séance 7 sont une mine d’idées : qui sait écouter, organiser ou entraîner les autres a déjà une force pour le tronc."
           },
           {
             "titel": "Mon arbre des forces",
-            "dauer": 20,
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Chaque jeune dessine son arbre dans le cadre de la fiche et remplit les quatre parties racines, tronc, branches et fruits ; les feuilles restent libres pour plus tard (15 min). Les mots de forces de la fiche et les réussites du tour d’humeur aident ceux qui ne trouvent rien. Laisser de la place sur le tronc et dans la couronne – l’arbre grandira encore aux séances 30 et 35. On ne commente pas l’arbre des autres. Circuler et aider par des questions, pas par des propositions ; une musique douce en fond aide beaucoup de jeunes. Pour finir, trois ou quatre volontaires disent une force de leur tronc ; les racines restent privées (3 min).",
+            "text": "D’abord, dessiner un arbre simple au tableau et demander : qu’est-ce qui fait tenir un arbre dans la tempête – et qu’est-ce qui vous fait tenir ? Puis chacun dessine son arbre sur la fiche et remplit racines, tronc, branches et fruits (exercice 1) ; les feuilles restent libres pour plus tard. Pour finir, il écrit quelle force les autres voient sans doute en lui (exercice 2).",
             "sagen": [
-              "À quoi quelqu’un qui te connaît bien verrait-il que tu sais faire ça ?",
-              "Laissez de la place sur le tronc et en haut dans la couronne. Votre arbre va encore grandir cette année."
+              "Qu’est-ce qui fait tenir un arbre dans la tempête – et qu’est-ce qui vous fait tenir quand c’est la tempête pour vous ?",
+              "Les racines peuvent être des personnes, mais aussi un lieu, un animal, une chanson, une langue, une foi ou un souvenir."
             ],
-            "tipp": "Qui n’aime pas dessiner reprend le contour simple du tableau – ce qui compte, c’est le contenu, pas l’art. Qui a fini tôt colorie son arbre ou note, pour une force du tronc, une situation où elle s’est vue.",
-            "wennEsKippt": "Si le tronc reste vide, retourner la question : qu’est-ce que tes amis diraient que tu sais bien faire ? Qu’as-tu montré ici ces dernières semaines ? Qui ne veut pas écrire ses racines utilise des signes que lui seul comprend. Si les racines restent vides ou portent « personne », ne pas en parler devant la classe, mais proposer un court entretien après le cours.",
+            "punkte": [
+              "Schéma au tableau (4 min) : un arbre avec racines (ce qui me porte), tronc (ce que je sais faire), branches (ce qui grandit) et fruits (ce dont je suis fier) ; les feuilles viendront des autres.",
+              "Arbre de l’enseignant·e (3 min) : pour chaque partie, un exemple honnête mais sans risque ; un arbre en 30 secondes : deux traits, quelques racines, un nuage.",
+              "Dessiner l’arbre (15 min) : dans le cadre de la fiche ; les mots de forces et les réussites du tour d’humeur aident ; laisser de la place sur le tronc et dans la couronne – l’arbre grandira aux séances 30 et 35 ; qui n’aime pas dessiner prend le contour du tableau.",
+              "Exercice 2 (3 min) : Je crois que les autres voient chez moi… – une phrase.",
+              "Pour finir (5 min) : trois ou quatre volontaires disent une force de leur tronc ; les racines restent privées, on ne commente pas l’arbre des autres."
+            ],
+            "wennEsKippt": "Si le tronc reste vide, retourner la question : qu’est-ce que tes amis diraient que tu sais bien faire ? Si les racines restent vides ou portent « personne », ne pas en parler devant la classe, mais proposer un entretien après le cours.",
             "blatt": "ff7-baum-der-staerke"
           },
           {
             "titel": "Pause active : tous ceux qui…",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se tient derrière sa chaise. Lire des phrases ; qui se sent concerné s’assoit un instant et se relève – l’enseignant·e participe. Les phrases montrent des forces auxquelles on pense rarement pour son propre arbre. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Tout le monde se tient derrière sa chaise. L’enseignant·e lit des phrases ; qui se sent concerné s’assoit un instant et se relève – l’enseignant·e participe. Les phrases montrent des forces auxquelles on pense rarement pour son propre arbre.",
+            "sagen": [
+              "Asseyez-vous un instant quand la phrase vous concerne – et relevez-vous aussitôt."
+            ],
             "punkte": [
               "Tous ceux qui ont déjà expliqué quelque chose à quelqu’un.",
               "Tous ceux qui parlent plus de deux langues.",
               "Tous ceux qui s’occupent d’un animal ou de frères et sœurs plus jeunes.",
-              "Tous ceux qui ont déjà réparé ou construit quelque chose eux-mêmes.",
-              "Tous ceux qui ont fait rire quelqu’un qui n’allait pas bien.",
+              "Tous ceux qui ont réparé ou construit quelque chose eux-mêmes.",
               "Tous ceux qui ont continué alors que c’était difficile."
             ],
-            "tipp": "Après le tour, dire brièvement : chaque fois que vous vous êtes assis, c’était une force. Qui le souhaite en ajoute une sur son tronc."
+            "tipp": "Après le tour, dire : chaque fois que vous vous êtes assis, c’était une force – qui le souhaite en ajoute une à son tronc. Si la grande récréation tombe entre les deux heures, supprimer l’exercice."
           },
           {
-            "titel": "Courrier des forces dans l’îlot",
-            "dauer": 15,
+            "titel": "Écrire et lire le courrier des forces",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Écrire les règles du courrier des forces au tableau et les montrer sur un exemple (liste, 3 min). Chaque jeune reçoit trois cartes et écrit, dans l’îlot, une carte pour chacun des trois autres : pour qui, quelle force, un exemple où on l’a vue, et son propre prénom (8 min). Circuler, lire par-dessus les épaules et aider à formuler. Les cartes terminées sont posées face cachée au milieu de la table ; qui a fini écrit sur la fiche la première phrase de l’exercice 2. Pour finir, lire les cartes de chaque îlot et les poser, face cachée, devant leur destinataire (4 min).",
+            "text": "Chaque jeune écrit pour les trois autres de son îlot une carte avec une force et un exemple observé ; l’enseignant·e lit chaque carte avant qu’elle arrive. Puis chacun lit en silence les quatre cartes de son enveloppe, écrit les forces comme feuilles dans l’arbre et choisit sa force de la semaine (exercice 3).",
             "sagen": [
               "Écrivez une force et à quoi vous l’avez remarquée : patient – tu m’as tout expliqué deux fois en maths.",
-              "On parle de ce que quelqu’un fait, pas de son apparence."
+              "Lisez vos cartes au calme ; accepter un compliment n’est pas facile, un merci suffit."
             ],
             "punkte": [
-              "Une force et un exemple : tu sais bien…, par exemple quand tu…",
-              "Seulement ce que tu as vu toi-même – en classe, à la récré, au club.",
-              "Rien sur l’apparence, les vêtements ou les notes.",
-              "Pas de blague sur le dos des autres. L’enseignant·e lit chaque carte avant qu’elle arrive.",
-              "Si rien ne te vient : lis les mots de forces sur la fiche et pense aux dernières semaines."
+              "Règles (3 min) : une force et un exemple – tu sais bien…, par exemple quand tu… ; seulement ce que tu as vu toi-même ; rien sur l’apparence, les vêtements ou les notes ; pas de blague sur le dos des autres.",
+              "Écrire (12 min) : trois cartes par jeune, l’enseignant·e lit par-dessus l’épaule et aide à formuler ; les cartes finies attendent face cachée au milieu, puis vont, face cachée, à leur destinataire.",
+              "Lire (8 min) : distribuer les enveloppes, la carte de l’enseignant·e y est déjà ; ajouter les trois cartes, lire en silence ; qui le souhaite dit merci dans l’îlot – sans minimiser.",
+              "Exercice 3 (8 min) : écrire les forces comme feuilles dans l’arbre, compléter « Ce qui m’a fait plaisir, c’est… », choisir une force pour la semaine et écrire son moment.",
+              "Pour finir (4 min) : trois ou quatre volontaires disent quelle force leur a fait plaisir ; les cartes retournent dans l’enveloppe."
             ],
-            "tipp": "Les exemples concrets touchent plus que « sympa » ou « cool » ; qui n’écrit qu’un mot reçoit la question : à quoi l’as-tu remarqué ? Écrire ses propres cartes sur le même modèle, seulement avec des observations faites à l’école : tu restes calme quand ça devient bruyant – par exemple pendant le travail d’équipe de la séance 7.",
-            "wennEsKippt": "Si quelqu’un ne veut rien écrire pour une personne de l’îlot, ne pas insister, mais aider discrètement : qu’a-t-elle fait sur la ligne au sol ou pendant le travail d’équipe ? Si un jeune refuse complètement, l’enseignant·e écrit la carte manquante pour que personne n’en reçoive moins. Si une phrase ironique apparaît (« champion de la sieste »), rendre gentiment la carte : écris-la pour qu’elle puisse lui faire plaisir.",
-            "blatt": "ff7-staerken-karten"
-          },
-          {
-            "titel": "Lire et accueillir le courrier des forces",
-            "dauer": 20,
-            "phase": "uebung",
-            "text": "Distribuer les enveloppes ; chacune contient déjà la carte de l’enseignant·e (2 min). Chaque jeune y ajoute les trois cartes de son îlot et lit les quatre en silence (3 min). Qui le souhaite dit simplement merci aux autres de l’îlot – sans minimiser (1 min). Puis chacun écrit les forces comme feuilles dans son arbre et complète, à l’exercice 2, la phrase « Ce qui m’a fait plaisir, c’est… » (6 min). Pour la mission de la semaine, chacun choisit une force et écrit les deux dernières phrases : quelle force – et à quel moment il l’utilisera cette semaine autrement que d’habitude, par exemple au dîner à la maison, à l’entraînement ou à la récré. Lire l’encadré « Ce que dit la recherche » et écouter deux ou trois exemples (4 min). Pour finir, trois ou quatre volontaires disent quelle force leur a fait plaisir ; les cartes retournent dans l’enveloppe (4 min).",
-            "sagen": [
-              "Lisez vos cartes au calme. Vous n’êtes obligés de montrer à personne ce qui est écrit.",
-              "Accepter un compliment, ce n’est pas facile. Un merci suffit – pas besoin de minimiser."
-            ],
-            "tipp": "La carte de l’enseignant·e est le filet de sécurité : chaque enveloppe contient au moins une observation précise et chaleureuse – surtout pour les jeunes discrets et les nouveaux. Qui le souhaite colle l’enveloppe à la fin de son cahier.",
-            "wennEsKippt": "Si, malgré tout, une carte blessante passe, la récupérer discrètement, promettre au jeune une deuxième carte de l’enseignant·e pour la séance suivante et parler avec son auteur après le cours, en tête-à-tête. Si un jeune retourne ses cartes, gêné, ou dit « c’est pas vrai », le laisser faire : tu peux les lire plus tard, au calme. Si quelqu’un est absent, l’îlot écrit quand même pour lui ; les cartes attendent dans son enveloppe, et l’enseignant·e ajoute la carte qui manque à son îlot. Si quelqu’un doute de l’encadré « Ce que dit la recherche » (« Ça sert à rien »), en faire une invitation : la classe teste elle-même – la semaine prochaine, le lien demande ce qui s’est passé.",
+            "wennEsKippt": "Si une carte blessante passe quand même, la reprendre discrètement, promettre à la personne une deuxième carte de l’enseignant·e et en parler avec l’auteur en tête-à-tête. Si quelqu’un ne veut rien écrire pour une personne de l’îlot ou refuse complètement, l’enseignant·e écrit la carte manquante pour que personne n’en reçoive moins.",
             "blatt": "ff7-baum-der-staerke"
           },
           {
             "titel": "Skill : tenir comme un arbre",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Annoncer : voici un skill pour les moments où l’on vacille – avant un exposé, pendant une dispute, quand les genoux tremblent. Premier tour debout : tout le monde se lève derrière sa chaise, avec un peu d’espace, les yeux ouverts sur un point ; guider lentement les trois étapes et faire l’exercice avec la classe (liste, 3 min). Deuxième tour assis, la version courte pour le quotidien : les pieds bien à plat, se redresser, expirer lentement trois fois – si discrètement que personne ne le remarque pendant un devoir en classe (2 min). Recueillir ensuite deux ou trois retours : quelle version vous convient le mieux ? Quand est-ce que ça pourrait aider (3 min) ? Pour finir, expliquer : sentir ses pieds et expirer lentement fait revenir de la tempête dans la tête vers le corps – ça donne de l’appui.",
+            "text": "Ce skill aide quand on vacille – avant un exposé, pendant une dispute, quand les genoux tremblent. D’abord debout derrière sa chaise, puis la version courte assis (cinq minutes au plus), ensuite la clôture : une phrase dans le Skills-Pass, annoncer la mission, choisir son moment.",
             "sagen": [
-              "Dans la tempête, un arbre bouge en haut – en bas, il tient bon. Sentez vos racines."
+              "Dans la tempête, un arbre bouge en haut et tient bon en bas – sentez vos racines.",
+              "Quand arrive votre moment pour votre force – maison, club ou récré – et que faites-vous alors ?"
             ],
             "punkte": [
-              "Racines : les pieds écartés de la largeur des hanches, sentir son poids – imagine que des racines poussent sous tes pieds.",
-              "Tronc : redresse-toi, laisse tomber les épaules et expire lentement trois fois.",
-              "Couronne : lève les yeux, balance-toi doucement comme un arbre dans le vent – puis reste immobile et sens comme tu tiens bien debout."
+              "Racines : les pieds écartés de la largeur des hanches, sentir son poids – des racines poussent sous les pieds.",
+              "Tronc : se redresser, laisser tomber les épaules et expirer lentement trois fois.",
+              "Couronne : lever les yeux, se balancer doucement comme dans le vent – puis rester immobile. Version courte assis : pieds à plat, se redresser, expirer trois fois.",
+              "Skills-Pass (4 min) : une phrase pour la question « Qu’est-ce qui me donne de l’appui quand je vacille ? » ; tampon.",
+              "Mission et moment (4 min) : l’annoncer ; à « trois », chacun montre son moment (un doigt la maison, deux le club, trois la récré, le poing un moment à soi) et l’écrit dans « Mon moment : quand … ». Annoncer (1 min) : l’arbre grandira aux séances 30 et 35 – bien garder le cahier."
             ],
-            "tipp": "L’exercice est le contraire de l’agitation : il demande du mouvement et finit dans le calme. Qui a pratiqué plusieurs fois la version courte peut ensuite l’utiliser discrètement, sous la table.",
-            "wennEsKippt": "Si le balancement tourne à la tempête et qu’on se bouscule, arrêter tout de suite : les arbres ne se touchent pas – chacun tient pour soi. Qui pouffe fixe un point au sol. Qui ne veut pas se lever fait les deux tours assis ; qui ne veut pas participer du tout reste simplement debout, immobile."
-          },
-          {
-            "titel": "Skills-Pass, mission et choix du moment",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 min) : écrire la question au tableau – qu’est-ce qui me donne de l’appui quand je vacille ? Chaque jeune écrit une phrase et reçoit le tampon. Mission et choix du moment (2 min) : montrer la mission de la semaine dans le cahier et l’annoncer – utiliser exprès, au moment choisi, la force de l’exercice 2, si possible d’une nouvelle façon. À « trois », tout le monde montre son moment : un doigt pour la maison, deux pour le club ou l’entraînement, trois pour la récré, le poing pour un moment à soi – et le recopie de la ligne « Mon moment » de la fiche dans la colonne « Mon moment : quand … » des missions de la semaine. Pour finir (1 min) : annoncer que l’arbre grandira encore aux séances 30 et 35 – bien garder son cahier – et nommer le nouveau chapitre.",
-            "sagen": [
-              "Pour le Skills-Pass : qu’est-ce qui vous donne de l’appui quand vous vacillez – une force, une racine ou la posture de l’arbre ?",
-              "Quand arrive votre moment pour votre force ? Maison – un doigt, club – deux, récré – trois, un moment à vous – le poing. Écrivez-le dans le cahier : quand…, alors ma force."
-            ],
-            "tipp": "Ne pas ramasser les arbres : ils appartiennent aux jeunes. Qui le souhaite montre le sien à la maison – beaucoup de parents découvrent ainsi pour la première fois ce que leur enfant fait dans cette matière. Le moment fait de la force un plan : la semaine prochaine, le lien y revient, sans contrôle.",
-            "wennEsKippt": "Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne lui posera la question. Si un jeune n’a pas encore choisi de force, il en prend une de son tronc. Qui apprend encore la langue dessine un petit signe pour son moment : maison, ballon, cour."
+            "wennEsKippt": "Si le balancement tourne à la tempête avec bousculade, arrêter tout de suite : les arbres ne se touchent pas, chacun tient pour soi. Qui ne veut pas se lever fait les deux tours assis ; qui ne veut pas participer reste debout en silence."
           }
         ],
-        "bruecke": "Vous connaissez maintenant vos besoins, votre manière d’être et vos forces. Dès la semaine prochaine, on parle des émotions : ce qu’elles veulent nous dire – et à quoi sert chacune d’elles.",
-        "mission": "Quand ton moment arrive – à la maison, au club ou à la récré –, utilise exprès une fois la force que tu as choisie, si possible d’une nouvelle façon. Que s’est-il passé ?",
-        "hintergrund": "La séance ne demande pas ce qui manque, mais ce qui porte. La base est la recherche sur la résilience : les jeunes font face aux difficultés quand des relations fiables, leurs capacités et des expériences de réussite les portent – des facteurs de protection ordinaires (Masten, 2014). L’arbre s’inspire du « Tree of Life » du travail narratif : des jeunes en difficulté parlent d’eux par les racines, le tronc, les branches et les fruits, sans devoir d’abord parler de problèmes (Ncube, 2006). Preuve d’effet : dans une étude contrôlée avec des adultes, utiliser ses forces d’une nouvelle manière pendant une semaine a amélioré le bien-être pendant des mois (Seligman et al., 2005). La mission et l’encadré de la fiche s’appuient là-dessus ; le moment choisi fait de l’intention un acte. Les retours touchent quand ils reposent sur un comportement observé et que chacun en reçoit autant.",
+        "bruecke": "Vous connaissez maintenant vos besoins, votre manière d’être et vos forces – dès la semaine prochaine, on parle des émotions : ce qu’elles veulent nous dire et à quoi sert chacune.",
+        "mission": "Utilise ta force choisie une fois d’une nouvelle façon. Que se passe-t-il ?",
+        "hintergrund": "La séance ne demande pas ce qui manque, mais ce qui porte : les jeunes font mieux face aux difficultés quand des relations fiables, leurs capacités et des réussites les soutiennent – des facteurs de protection ordinaires (Masten, 2014). L’arbre vient du « Tree of Life » : on parle de soi sans d’abord parler des problèmes (Ncube, 2006). Qui a utilisé une force d’une nouvelle façon pendant une semaine s’est senti mieux pendant des mois (Seligman et al., 2005).",
         "quellen": [
           "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
           "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children. International Journal of Narrative Therapy and Community Work, 1, 3–16.",
           "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
         ],
-        "achtung": "La question des racines peut faire mal quand des personnes importantes manquent, sont décédées ou que les relations sont difficiles. Accepter donc aussi les lieux, les animaux, la musique, la foi et les souvenirs ; les racines restent privées. Un jeune qui vit une perte en ce moment est prévenu avant et décide lui-même. Si les racines restent vides ou portent « personne », proposer un entretien après le cours. Chaque carte du courrier est lue avant d’arriver ; tout le monde en reçoit autant. Si quelqu’un parle de violence ou de deuil, ne pas approfondir devant la classe et informer le SePAS le jour même, selon le protocole de protection de l’école.",
+        "achtung": "La question des racines peut faire mal quand des personnes importantes manquent ou sont décédées : accepter aussi les lieux, les animaux, la musique, la foi et les souvenirs, garder les racines privées, et prévenir avant un jeune qui vit une perte. Si les racines restent vides ou portent « personne », proposer un entretien après le cours ; chaque carte du courrier est lue avant d’arriver, et tout le monde en reçoit autant. Si quelqu’un parle de violence ou de deuil, ne pas approfondir devant la classe et informer le SePAS le jour même (protocole de protection de l’école).",
         "differenzierung": {
-          "leichter": "Pour les jeunes qui ont du mal à écrire ou qui apprennent encore la langue : dans l’arbre, un mot-clé, un signe ou un mot dans leur langue suffit par partie ; ils peuvent recopier les mots de forces. Sur les cartes, un mot de force recopié de la fiche et un mot-clé pour l’exemple suffisent ; l’enseignant·e aide à formuler. Pour la colonne « Mon moment », un mot suffit : récré, entraînement.",
-          "schwerer": "Pour chaque force du tronc, noter une situation où elle s’est vue et réfléchir à une nouvelle situation où elle pourrait aider cette semaine. Pour le courrier des forces, chercher des exemples particulièrement précis – aussi pour des personnes qu’on connaît encore peu."
+          "leichter": "Pour les jeunes qui ont du mal à écrire ou qui apprennent encore la langue : dans l’arbre, un mot-clé, un signe ou un mot dans leur langue suffit par partie ; les mots de forces du tableau peuvent être recopiés. Sur les cartes, un mot de force avec un mot-clé pour l’exemple suffit, et pour « Mon moment », un mot comme récré ou entraînement.",
+          "schwerer": "Pour chaque force du tronc, noter une situation où elle s’est vue et réfléchir où elle pourrait aider cette semaine. Pour le courrier des forces, chercher des exemples très précis – aussi pour des personnes qu’on connaît peu."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), qu’est-ce qui fait tenir un arbre dans la tempête ? (5 min), mon arbre des forces (15 min), courrier des forces dans l’îlot avec la carte de l’enseignant·e, lecture et feuilles dans l’arbre (17 min), Skills-Pass, mission et choix du moment (5 min), tenir comme un arbre, version courte (3 min). La pause active et la version longue du skill sont supprimées."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), l’arbre dans la tempête et mon arbre des forces (20 min), courrier des forces dans l’îlot, lecture et feuilles dans l’arbre (17 min), Skills-Pass, mission et moment (8 min). La pause active et le skill sont supprimés ; le skill peut être rattrapé à la séance suivante."
       }
     }
   ],
@@ -549,16 +397,18 @@
       ],
       "de": {
         "titel": "Mein Baum der Stärke",
-        "untertitel": "Was mich hält, was ich kann, was in mir wächst – und was die anderen in mir sehen.",
+        "untertitel": "Was dich hält und was du kannst",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Ein Baum übersteht einen Sturm, weil seine Wurzeln ihn halten. Dein Baum zeigt, was dich hält, was du kannst und worauf du stolz bist – und er wächst das ganze Jahr weiter."
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Im Sturm hält ein Baum, weil seine Wurzeln tief sind. Bei dir sind es vielleicht Menschen, Orte oder etwas, das du kannst. Wer eine Stärke neu einsetzt, fühlt sich danach oft besser."
           },
           {
             "art": "aufgabe",
-            "text": "Zeichne deinen Baum in den Rahmen. Schreib in jeden Teil mindestens eine Sache.",
-            "hinweis": "Lass am Stamm und in der Krone Platz: In Stunde 30 und 35 kommt noch etwas dazu. Die Blätter füllst du erst nach der Stärken-Post.",
+            "text": "Zeichne deinen Baum und schreib in jeden Teil etwas.",
+            "hinweis": "Lass am Stamm und in der Krone Platz. In Stunde 30 und 35 wächst dein Baum weiter.",
             "symbole": [
               "malen",
               "schreiben"
@@ -572,7 +422,7 @@
                 "art": "feld",
                 "label": "Mein Baum",
                 "zeichnen": true,
-                "hoehe": 17
+                "hoehe": 14
               }
             ],
             "rechts": [
@@ -582,65 +432,41 @@
                 "items": [
                   {
                     "titel": "Wurzeln – was mich hält",
-                    "text": "Menschen, Orte, Tiere, Musik, Glaube, Erinnerungen. Zum Beispiel: meine Oma, der Fußballplatz."
+                    "text": "Menschen, Orte, Musik, Erinnerungen"
                   },
                   {
-                    "titel": "Stamm – was ich kann",
-                    "text": "Deine Stärken. Zum Beispiel: gebe nicht auf, kann gut zuhören."
+                    "titel": "Stamm – was ich kann"
                   },
                   {
-                    "titel": "Äste – was noch wächst",
-                    "text": "Was du gerade lernst. Zum Beispiel: ruhig bleiben, wenn mich jemand ärgert."
+                    "titel": "Äste – was noch wächst"
                   },
                   {
-                    "titel": "Früchte – worauf ich stolz bin",
-                    "text": "Große und kleine Erfolge. Zum Beispiel: jemandem geholfen."
+                    "titel": "Früchte – worauf ich stolz bin"
                   },
                   {
-                    "titel": "Blätter – was andere sehen",
-                    "text": "Stärken von deinen Karten aus der Stärken-Post."
+                    "titel": "Blätter – was andere sehen"
                   }
                 ]
               }
             ]
           },
           {
-            "art": "wortspeicher",
-            "titel": "Stärken-Wörter – wenn dir nichts einfällt",
-            "items": [
-              "hilfsbereit",
-              "ehrlich",
-              "mutig",
-              "kreativ",
-              "sportlich",
-              "geduldig",
-              "kann gut zuhören",
-              "zuverlässig",
-              "fair",
-              "geschickt mit den Händen",
-              "musikalisch",
-              "ruhig",
-              "neugierig",
-              "kann gut erklären",
-              "tierlieb",
-              "gibt nicht auf",
-              "bringt andere zum Lachen",
-              "hält zu Freunden",
-              "hat gute Ideen",
-              "kann trösten",
-              "organisiert gern",
-              "spricht mehrere Sprachen",
-              "technisch fit",
-              "hilft Jüngeren"
+            "art": "aufgabe",
+            "text": "Schreib auf, was die anderen wohl an dir sehen.",
+            "symbole": [
+              "schreiben"
             ]
           },
           {
-            "art": "seitenumbruch"
+            "art": "satzanfaenge",
+            "items": [
+              "Ich glaube, die anderen sehen bei mir …"
+            ],
+            "linien": 1
           },
           {
             "art": "aufgabe",
-            "text": "Stärken-Post: Schreib zuerst auf, welche Stärke die anderen wohl bei dir sehen. Lies dann deine Karten und ergänze die Sätze.",
-            "hinweis": "Schreib die Stärken von deinen Karten als Blätter in deinen Baum.",
+            "text": "Schreib die Stärken von deinen Karten als Blätter in den Baum.",
             "symbole": [
               "lesen",
               "schreiben"
@@ -649,65 +475,25 @@
           {
             "art": "satzanfaenge",
             "items": [
-              "Ich glaube, die anderen sehen bei mir: …",
               "Gefreut hat mich …",
               "Meine Stärke für diese Woche: …",
-              "Mein Moment – ich setze sie ein, wenn …"
+              "Mein Moment: Wenn …"
             ],
             "linien": 1
-          },
-          {
-            "art": "aufgabe",
-            "text": "Stunde 30: Welcher neue, hilfreiche Satz passt zu deinem Stamm? Schreib ihn an deinen Baum – und hier auf."
-          },
-          {
-            "art": "feld",
-            "label": "Mein neuer Satz für den Stamm",
-            "hoehe": 3,
-            "beispiel": "Ich habe schon Schwierigeres geschafft."
-          },
-          {
-            "art": "aufgabe",
-            "text": "Stunde 35: Was hast du in diesem Jahr geschafft? Häng neue Früchte an deinen Baum."
-          },
-          {
-            "art": "tabelle",
-            "spalten": [
-              "Neue Frucht",
-              "Das hat mir dabei geholfen"
-            ],
-            "breiten": [
-              1.6,
-              2
-            ],
-            "zeilen": 4,
-            "beispiel": [
-              "Ich habe mich im Klassenrat zu Wort gemeldet.",
-              "mein Mut – und die Atemübung vorher"
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "tipp",
-            "titel": "So wächst dein Baum",
-            "punkte": [
-              "Nimm für jede Ergänzung eine neue Farbe und schreib das Datum dazu.",
-              "Bewahre deine Karten im Umschlag auf – du kannst ihn hinten ins Heft kleben. An schweren Tagen lohnt es sich, sie wieder zu lesen."
-            ]
           },
           {
             "art": "info",
             "symbol": "hilfe",
             "titel": "Du entscheidest, was auf deinen Baum kommt.",
-            "text": "Die Wurzeln darfst du auch mit Zeichen festhalten, die nur du verstehst. Niemand muss seinen Baum zeigen."
+            "text": "Wurzeln darfst du mit Zeichen festhalten, die nur du verstehst."
           }
         ],
         "lehrer": {
           "ziel": "Die Jugendlichen halten in einem Baum fest, was sie hält, was sie können, was noch wächst und worauf sie stolz sind, und tragen Stärken ein, die ihnen die Klasse zurückmeldet. In Stunde 30 und 35 wächst der Baum weiter.",
           "ablauf": [
-            "Stunde 8, Schritt 4 (15 Min.): Baum in den Rahmen zeichnen, vier Teile füllen; Platz am Stamm und in der Krone lassen.",
-            "Schritt 6 und 7: Vermutung aufschreiben, Karten lesen, Stärken als Blätter eintragen, in Aufgabe 2 eine Stärke und den Moment für die Woche planen; der Kasten „Aus der Forschung“ fasst Seligman et al. (2005) zusammen.",
-            "Stunde 30: neuer hilfreicher Satz für den Stamm (Aufgabe 3); Stunde 35: neue Früchte (Aufgabe 4).",
+            "Stunde 8, Schritt 3: Aufgabe 1 – Baum in den Rahmen zeichnen, vier Teile füllen (15 Min.), Platz am Stamm und in der Krone lassen; Aufgabe 2: die Vermutung aufschreiben.",
+            "Schritt 5: Karten lesen, Stärken als Blätter eintragen; Aufgabe 3: Gefreut hat mich …, Stärke und Moment für die Woche.",
+            "Stunde 30: neuen hilfreichen Satz in neuer Farbe mit Datum an den Stamm schreiben; Stunde 35: neue Früchte in neuer Farbe mit Datum an den Baum hängen.",
             "Der Baum bleibt im Heft; niemand muss ihn zeigen."
           ],
           "hintergrund": "Das Bild ist an den „Tree of Life“ angelehnt: In der narrativen Arbeit erzählen belastete Kinder und Jugendliche über Wurzeln, Stamm, Äste und Früchte von sich, ohne zuerst über Probleme sprechen zu müssen (Ncube, 2006). Meist tragen alltägliche Schutzfaktoren: verlässliche Beziehungen, eigene Fähigkeiten, Erfahrungen von Wirksamkeit (Masten, 2014). Eigene Stärken auf neue Weise einzusetzen, steigerte in einer kontrollierten Studie das Wohlbefinden über Monate (Seligman et al., 2005).",
@@ -721,16 +507,18 @@
       },
       "fr": {
         "titel": "Mon arbre des forces",
-        "untertitel": "Ce qui me porte, ce que je sais faire, ce qui grandit – et ce que les autres voient.",
+        "untertitel": "Ce qui te porte et tes forces",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Un arbre résiste à la tempête parce que ses racines le tiennent. Ton arbre montre ce qui te porte, ce que tu sais faire et ce dont tu es fier ou fière – et il continue de grandir toute l’année."
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Bon à savoir",
+            "text": "Dans la tempête, un arbre tient grâce à ses racines profondes. Chez toi, ce sont peut-être des personnes, des lieux, un savoir-faire. Utiliser une force d’une autre façon fait souvent du bien."
           },
           {
             "art": "aufgabe",
-            "text": "Dessine ton arbre dans le cadre. Écris au moins une chose dans chaque partie.",
-            "hinweis": "Laisse de la place sur le tronc et dans la couronne : aux séances 30 et 35, tu ajouteras encore quelque chose. Les feuilles, tu les remplis après le courrier des forces.",
+            "text": "Dessine ton arbre et écris quelque chose dans chaque partie.",
+            "hinweis": "Laisse de la place sur le tronc et dans la couronne. Aux séances 30 et 35, ton arbre grandit encore.",
             "symbole": [
               "malen",
               "schreiben"
@@ -744,7 +532,7 @@
                 "art": "feld",
                 "label": "Mon arbre",
                 "zeichnen": true,
-                "hoehe": 17
+                "hoehe": 14
               }
             ],
             "rechts": [
@@ -754,65 +542,41 @@
                 "items": [
                   {
                     "titel": "Racines – ce qui me porte",
-                    "text": "Des personnes, des lieux, des animaux, la musique, la foi, des souvenirs. Par exemple : ma grand-mère, le terrain de foot."
+                    "text": "Personnes, lieux, musique, souvenirs"
                   },
                   {
-                    "titel": "Tronc – ce que je sais faire",
-                    "text": "Tes forces. Par exemple : je n’abandonne pas, je sais écouter."
+                    "titel": "Tronc – ce que je sais faire"
                   },
                   {
-                    "titel": "Branches – ce qui grandit",
-                    "text": "Ce que tu apprends en ce moment. Par exemple : rester calme quand on m’embête."
+                    "titel": "Branches – ce qui grandit"
                   },
                   {
-                    "titel": "Fruits – mes fiertés",
-                    "text": "Des réussites, petites et grandes. Par exemple : j’ai aidé quelqu’un."
+                    "titel": "Fruits – mes fiertés"
                   },
                   {
-                    "titel": "Feuilles – ce que voient les autres",
-                    "text": "Les forces de tes cartes du courrier des forces."
+                    "titel": "Feuilles – ce que voient les autres"
                   }
                 ]
               }
             ]
           },
           {
-            "art": "wortspeicher",
-            "titel": "Mots de forces – si rien ne te vient",
-            "items": [
-              "serviable",
-              "honnête",
-              "a du courage",
-              "a de l’imagination",
-              "fait du sport",
-              "a de la patience",
-              "sait écouter",
-              "fiable",
-              "fair-play",
-              "habile de ses mains",
-              "aime la musique",
-              "calme",
-              "aime découvrir",
-              "explique bien",
-              "aime les animaux",
-              "n’abandonne pas",
-              "fait rire les autres",
-              "fidèle",
-              "a de bonnes idées",
-              "sait consoler",
-              "aime organiser",
-              "parle plusieurs langues",
-              "s’y connaît en technique",
-              "aide les petits"
+            "art": "aufgabe",
+            "text": "Écris ce que les autres voient sans doute en toi.",
+            "symbole": [
+              "schreiben"
             ]
           },
           {
-            "art": "seitenumbruch"
+            "art": "satzanfaenge",
+            "items": [
+              "Je crois que les autres voient chez moi : …"
+            ],
+            "linien": 1
           },
           {
             "art": "aufgabe",
-            "text": "Courrier des forces : écris d’abord quelle force les autres voient sans doute en toi. Lis ensuite tes cartes et complète les phrases.",
-            "hinweis": "Écris les forces de tes cartes comme feuilles dans ton arbre.",
+            "text": "Écris les forces de tes cartes comme feuilles dans ton arbre.",
             "symbole": [
               "lesen",
               "schreiben"
@@ -821,65 +585,25 @@
           {
             "art": "satzanfaenge",
             "items": [
-              "Je crois que les autres voient chez moi : …",
               "Ce qui m’a fait plaisir, c’est…",
               "Ma force pour cette semaine : …",
-              "Mon moment – je l’utilise quand…"
+              "Mon moment : quand …"
             ],
             "linien": 1
-          },
-          {
-            "art": "aufgabe",
-            "text": "Séance 30 : quelle nouvelle phrase qui t’aide va avec ton tronc ? Écris-la sur ton arbre – et ici."
-          },
-          {
-            "art": "feld",
-            "label": "Ma nouvelle phrase pour le tronc",
-            "hoehe": 3,
-            "beispiel": "J’ai déjà réussi des choses plus difficiles."
-          },
-          {
-            "art": "aufgabe",
-            "text": "Séance 35 : qu’as-tu réussi cette année ? Accroche de nouveaux fruits à ton arbre."
-          },
-          {
-            "art": "tabelle",
-            "spalten": [
-              "Nouveau fruit",
-              "Ce qui m’a aidé"
-            ],
-            "breiten": [
-              1.6,
-              2
-            ],
-            "zeilen": 4,
-            "beispiel": [
-              "J’ai pris la parole au conseil de coopération.",
-              "mon courage – et la respiration juste avant"
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "tipp",
-            "titel": "Pour que ton arbre grandisse",
-            "punkte": [
-              "Prends une nouvelle couleur pour chaque ajout et note la date.",
-              "Garde tes cartes dans l’enveloppe – tu peux la coller à la fin de ton cahier. Les jours difficiles, ça vaut la peine de les relire."
-            ]
           },
           {
             "art": "info",
             "symbol": "hilfe",
             "titel": "Tu décides de ce qui va sur ton arbre.",
-            "text": "Tu peux noter tes racines avec des signes que toi seul comprends. Personne n’est obligé de montrer son arbre."
+            "text": "Tu peux noter tes racines avec des signes que toi seul comprends."
           }
         ],
         "lehrer": {
-          "ziel": "Les jeunes notent dans un arbre ce qui les porte, ce qu’ils savent faire, ce qui grandit encore et leurs fiertés, et y ajoutent les forces que la classe leur renvoie. Aux séances 30 et 35, l’arbre continue de grandir.",
+          "ziel": "Les jeunes notent dans un arbre ce qui les porte, ce qu’ils savent faire, ce qui grandit et ce dont ils sont fiers, et y ajoutent les forces que la classe leur renvoie. Aux séances 30 et 35, l’arbre continue de grandir.",
           "ablauf": [
-            "Séance 8, étape 4 (15 min) : dessiner l’arbre dans le cadre, remplir quatre parties ; laisser de la place sur le tronc et dans la couronne.",
-            "Étapes 6 et 7 : noter sa supposition, lire les cartes, écrire les forces comme feuilles, prévoir à l’exercice 2 une force et son moment pour la semaine ; l’encadré « Ce que dit la recherche » résume Seligman et al. (2005).",
-            "Séance 30 : nouvelle phrase qui aide, pour le tronc (exercice 3) ; séance 35 : nouveaux fruits (exercice 4).",
+            "Séance 8, étape 3 : exercice 1 – dessiner l’arbre dans le cadre, remplir quatre parties (15 min), laisser de la place sur le tronc et dans la couronne ; exercice 2 : écrire la supposition.",
+            "Étape 5 : lire les cartes, écrire les forces comme feuilles ; exercice 3 : « Ce qui m’a fait plaisir… », force et moment de la semaine.",
+            "Séance 30 : une nouvelle phrase utile pour le tronc, dans une nouvelle couleur avec la date ; séance 35 : de nouveaux fruits dans une nouvelle couleur avec la date.",
             "L’arbre reste dans le cahier ; personne n’est obligé de le montrer."
           ],
           "hintergrund": "L’image s’inspire du « Tree of Life » : dans le travail narratif, des enfants et des jeunes en difficulté parlent d’eux à travers les racines, le tronc, les branches et les fruits, sans devoir d’abord parler de problèmes (Ncube, 2006). Ce sont surtout des facteurs de protection ordinaires qui portent : des relations fiables, ses propres capacités, des expériences de réussite (Masten, 2014). Utiliser ses forces d’une nouvelle manière a amélioré le bien-être pendant des mois dans une étude contrôlée (Seligman et al., 2005).",
@@ -986,7 +710,7 @@
           "ablauf": [
             "Siebenmal kopieren und schneiden, am schnellsten mit der Schneidemaschine: drei Karten je Person, 20 für die Lehrkraft.",
             "Vor der Stunde für jede Person eine Karte mit einer Beobachtung aus der Schule schreiben und in ihren Umschlag stecken.",
-            "Einheit 8, Schritt 6: drei Karten für die Tischgruppe; die Lehrkraft liest jede Karte, bevor sie ankommt.",
+            "Einheit 8, Schritt 5: drei Karten für die Tischgruppe; die Lehrkraft liest jede Karte, bevor sie ankommt.",
             "Ironische oder verletzende Karten nicht weitergeben, sondern durch eine eigene ersetzen."
           ],
           "hintergrund": "Rückmeldungen zu Stärken wirken, wenn sie an beobachtetem Verhalten festgemacht sind und nicht an Aussehen oder Noten. Die feste Verteilung sorgt dafür, dass niemand leer ausgeht – gerade Jugendliche, die in der Klasse wenig gesehen werden. Die eigenen Stärken zu kennen und neu einzusetzen, stärkt das Wohlbefinden (Seligman et al., 2005).",
@@ -1066,7 +790,7 @@
           "ablauf": [
             "Photocopier sept fois et découper, le plus vite avec un massicot : trois cartes par jeune, 20 pour l’enseignant·e.",
             "Avant la séance, écrire pour chaque jeune une carte avec une observation faite à l’école et la glisser dans son enveloppe.",
-            "Séance 8, étape 6 : trois cartes pour l’îlot ; l’enseignant·e lit chaque carte avant qu’elle arrive.",
+            "Séance 8, étape 5 : trois cartes pour l’îlot ; l’enseignant·e lit chaque carte avant qu’elle arrive.",
             "Ne pas transmettre une carte ironique ou blessante, mais la remplacer par une carte de l’enseignant·e."
           ],
           "hintergrund": "Les retours sur les forces touchent quand ils reposent sur un comportement observé, pas sur l’apparence ou les notes. La répartition fixe garantit que personne ne reste les mains vides – surtout les jeunes qu’on remarque peu dans la classe. Connaître ses forces et les utiliser autrement renforce le bien-être (Seligman et al., 2005).",

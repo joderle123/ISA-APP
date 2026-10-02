@@ -38,8 +38,7 @@
         "ziele": [
           "erkennen in Standbildern, welches Gefühl am Steuer ist",
           "erklären, wozu auch Kummer gut ist",
-          "zeigen, welches Gefühl im Alltag bei ihnen am Steuer wäre",
-          "probieren den Skill „Gefühl benennen“ aus und wählen einen Moment, um ihn zu üben"
+          "zeigen, welches Gefühl im Alltag bei ihnen am Steuer wäre"
         ],
         "material": [
           "Schilder und Szenenkarten (Vorlage)",
@@ -50,8 +49,8 @@
           "Schülerheft, Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
-          "Schilder (Seite 1) auf festes Papier kopieren und ausschneiden; Szenenkarten (Seite 2) einmal kopieren und vorher laut lesen.",
-          "Fünf Gefühle groß auf A4 an fünf Stellen im Raum aufhängen (Schritt 7); vorn einen Tisch als Steuerpult freiräumen.",
+          "Schilder (Seite 1) auf festes Papier kopieren und schneiden; Szenenkarten (Seite 2) einmal kopieren und die Szenen 1, 2 und 4 vorher laut lesen – Szene 3 bleibt heute liegen.",
+          "Vorn einen Tisch als Steuerpult freiräumen; die fünf Gefühle groß auf A4 an fünf Stellen im Raum aufhängen (Schritt 5).",
           "Namen der Figuren prüfen, bei Bedarf tauschen; mit dem Régent klären, wen Umzug oder Streit zu Hause belasten könnte, und die Person vorher ansprechen."
         ],
         "ablauf": [
@@ -63,17 +62,12 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Rückblick und Blick in Janas Kopf"
+            "titel": "Rückblick, Mission und Janas Kopf"
           },
           {
-            "min": "15–30",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Szenen 1 und 2: Wer steht am Pult?"
-          },
-          {
-            "min": "30–45",
-            "phase": "uebung",
-            "titel": "Szene 3: Wut übernimmt das Steuer"
+            "titel": "Janas Geschichte in Standbildern"
           },
           {
             "min": "45–50",
@@ -81,24 +75,14 @@
             "titel": "Bewegungspause: Gesichter spiegeln"
           },
           {
-            "min": "50–65",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Szene 4: Warum Kummer hilft"
+            "titel": "Warum Kummer hilft – und bei euch?"
           },
           {
-            "min": "65–85",
-            "phase": "aktiv",
-            "titel": "Wer stünde bei euch am Steuer?"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: Gefühl benennen"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, Moment wählen und Blitzlicht"
           }
         ],
         "schritte": [
@@ -106,197 +90,126 @@
             "titel": "Check-in: Welches Gefühl war zuerst wach?",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt wie gewohnt auf das Gefühlsrad – für jetzt (3 Min.). Dazu kommt heute eine Frage: Welches Gefühl war heute Morgen als Erstes wach – beim Aufwachen, im Bad, im Bus? Die Lehrkraft beginnt; dann nennen drei, vier Freiwillige ihr Gefühl vom Morgen und, wenn sie mögen, das Wort von jetzt (5 Min.). Zum Schluss fragen, ob sich das Gefühl seit dem Morgen verändert hat und was es verändert hat – der Bus, ein Freund, ein Test? (2 Min.)",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt wie gewohnt auf das Gefühlsrad – für jetzt. Heute dazu die Frage: Welches Gefühl war heute Morgen als Erstes wach – beim Aufwachen, im Bad, im Bus? Die Lehrkraft beginnt, drei, vier Freiwillige nennen ihr Gefühl vom Morgen und, wenn sie mögen, das Wort von jetzt.",
             "sagen": [
-              "Welches Gefühl war heute als Erstes wach? Bei mir war es ‚müde‘ und dann kurz ‚gestresst‘, weil ich meinen Schlüssel gesucht habe.",
+              "Welches Gefühl war heute als Erstes wach – bei mir war es ‚müde‘ und dann kurz ‚gestresst‘, weil ich meinen Schlüssel gesucht habe.",
               "Gleich schaut ihr in einen Kopf hinein, in dem fünf Gefühle um das Steuer streiten."
             ],
-            "tipp": "Die Frage nach dem ersten Gefühl führt direkt in die Geschichte: Auch bei Jana ist am Morgen des Umzugs zuerst Freude wach – und kurz darauf meldet sich die Angst.",
-            "wennEsKippt": "Sagen viele „müde“, das gelten lassen und nachfragen, ob Müdigkeit ein Gefühl ist oder eher ein Zustand des Körpers – eine gute Brücke zu Einheit 11. Drängeln sich alle am Plakat, tischgruppenweise kleben lassen."
+            "wennEsKippt": "Sagen viele „müde“, das gelten lassen und nachfragen, ob Müdigkeit ein Gefühl ist oder eher ein Zustand des Körpers – eine gute Brücke zur nächsten Stunde. Drängeln sich alle am Plakat, tischgruppenweise kleben lassen."
           },
           {
-            "titel": "Rückblick und Blick in Janas Kopf",
+            "titel": "Rückblick, Mission und Janas Kopf",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Zur Wochen-Mission fragen: Kam dein Moment – und hast du die Farbsuche gemacht? Daumen hoch, Mitte, runter; eine Stimme erzählt, was das Gefühl sagen wollte; niemand muss den Moment erlebt haben. Auf das Botschaften-Plakat zeigen und die Botschaften von Angst und Wut wiederholen lassen. Dann die Geschichte in drei Sätzen vorstellen: Jana ist zwölf und zieht mit ihrer Familie in eine andere Stadt – neues Lycée, neue Klasse. In ihrem Kopf gibt es eine Steuerzentrale mit einem Steuerpult; dort arbeiten Freude, Kummer, Angst, Wut und Ekel. Wer am Pult steht, bestimmt mit, was Jana sagt und tut. Die Schilder zeigen, den Tisch vorn zum Steuerpult erklären, das Blatt austeilen und Aufgabe 1 erklären: Nach jedem Standbild wird nur angekreuzt.",
+            "text": "Zur Wochen-Mission fragen: Kam dein Moment – und hast du die Farbsuche gemacht? Daumen hoch, Mitte oder runter, eine Stimme erzählt, was das Gefühl sagen wollte; niemand muss den Moment erlebt haben. Dann die Geschichte „Jana zieht um“ in drei Sätzen vorstellen: Jana ist zwölf, in ihrem Kopf arbeiten fünf Gefühle am Steuerpult, und wer am Pult steht, bestimmt mit, was Jana sagt und tut.",
             "sagen": [
-              "Letzte Woche habt ihr herausgefunden, welche Botschaft jedes Gefühl hat. Wer weiß noch die von Angst? Und die von Wut?",
-              "Heute baut ihr Janas Geschichte selbst – und entscheidet jedes Mal, wer ans Pult muss. Kummer ist in der Geschichte der Name für die Traurigkeit."
+              "Letzte Woche habt ihr die Botschaften der Gefühle gefunden – wer weiß noch die von Angst und von Wut?",
+              "Heute baut ihr Janas Geschichte selbst – und entscheidet jedes Mal, wer ans Pult muss."
             ],
-            "tipp": "Die Geschichte ist erfunden und läuft vollständig über die Szenenkarten und Standbilder; die Klasse erzählt sie mit. Die Szenenkarten vorher einmal laut lesen – dann sitzen die Stopps.",
-            "wennEsKippt": "Ruft jemand „Das ist wie im Film“, kurz bestätigen – das Bild vom Steuerpult kennen viele – und zurückführen: Heute ist es Janas Geschichte, und ihr entscheidet, wer ans Pult muss. Sagt jemand, Umzug kenne er nur zu gut, nicht vor der Klasse nachfragen, sondern nach der Stunde ein kurzes Wort."
+            "tipp": "Die Geschichte ist erfunden und läuft über Szenenkarten und Standbilder, die Klasse erzählt mit. Die fünf Figuren heißen Freude, Kummer, Angst, Wut und Ekel."
           },
           {
-            "titel": "Szenen 1 und 2: Wer steht am Pult?",
-            "dauer": 15,
+            "titel": "Janas Geschichte in Standbildern",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Szene 1, Der Umzugstag (7 Min.): Die Szenenkarte bis zum ersten Stopp vorlesen. Die Klasse entscheidet, wer ans Pult muss; sechs Freiwillige nehmen die Schilder – fünf Gefühle und Jana – und bauen um den Tisch Standbild A (Liste). Weiterlesen bis zum zweiten Stopp, Standbild B bauen, dann die Auflösung vorlesen. Danach die Frage aus der Tabelle stellen; zwei, drei Antworten, dann kreuzen alle in Aufgabe 1 an. Szene 2, Der erste Tag im Lycée, genauso mit neuen Freiwilligen (7 Min.). Zum Schluss vergleichen (1 Min.): Welche Gefühle aus unserem Rad fehlen am Pult – und welches Gefühl am Pult fehlt im Rad?",
+            "text": "Zuerst das Steuerpult erklären: Der Tisch vorn ist das Pult, die Schilder zeigen die fünf Gefühle und Jana. Dann Szene 1 und 2 vorlesen: Bei jedem „Stopp“ entscheidet die Klasse, wer ans Pult muss, Freiwillige bauen das Standbild, und alle kreuzen auf dem Blatt an (Aufgabe 1). Zum Schluss Aufgabe 2 zu zweit.",
             "sagen": [
-              "Stopp. Wer muss jetzt ans Pult – und was macht Jana deshalb?",
-              "Welche Gefühle aus unserem Rad fehlen am Pult? Und wer vom Pult fehlt in unserem Rad?"
+              "Stopp – wer muss jetzt ans Pult, und was macht Jana deshalb?",
+              "Was passiert, wenn man ein Gefühl wegsperren will – und wozu sind Angst, Ekel und Wut für Jana gut?"
             ],
             "punkte": [
-              "Die Szenenkarte bis zum Stopp vorlesen; die Klasse sagt, wer ans Pult muss.",
-              "Hinter dem Tisch stehen die Gefühle mit ihren Schildern, davor steht Jana mit dem Gesicht zur Klasse.",
-              "Wer am Steuer ist, legt die Hände auf den Tisch; die anderen stehen dahinter.",
-              "Auf „Standbild!“ frieren alle fünf Sekunden ein – ohne Worte, ohne Berührung.",
-              "Danach legen alle ihr Schild ab und sagen ihren eigenen Namen."
+              "Pult (3 Min.): Die Gefühle stehen mit Schild hinter dem Tisch, Jana davor mit Blick zur Klasse; wer am Steuer ist, legt die Hände auf den Tisch.",
+              "Standbild: Karte bis zum Stopp vorlesen, die Klasse sagt, wer ans Pult muss; sechs Freiwillige bauen das Bild; auf „Standbild!“ fünf Sekunden einfrieren, ohne Worte und ohne Berührung; danach Schild ablegen und den eigenen Namen sagen.",
+              "Szene 1, Der Umzugstag (8 Min.): Freude am Morgen, dann Angst (Fahrrad auf dem Umzugswagen) und Wut (der Bruder zerreißt das Poster); Frage: Wozu braucht Jana Angst, Ekel und Wut?",
+              "Szene 2, Der erste Tag im Lycée (8 Min.): Freude schickt Kummer in die Ecke, in der Pause übernimmt Kummer; Frage: Was passiert, wenn man ein Gefühl wegsperren will?",
+              "Aufgabe 1 und 2 (11 Min.): nach jedem Standbild ankreuzen; zu zweit zwei unangenehme Gefühle aus den Szenen: Was machen sie, wozu sind sie für Jana gut?"
             ],
-            "tabelle": {
-              "spalten": [
-                "Szene",
-                "Was passiert – Frage danach"
-              ],
-              "zeilen": [
-                [
-                  "1 · Der Umzugstag",
-                  "Freude ist am Morgen zuerst wach; dann meldet sich Angst (das Fahrrad auf dem Umzugswagen) und Wut (der kleine Bruder und das Poster). Frage: Wozu braucht Jana Angst, Ekel und Wut?"
-                ],
-                [
-                  "2 · Der erste Tag im Lycée",
-                  "Freude schickt Kummer in die Ecke, Jana lächelt beim Vorstellen; in der Pause kommt die Nachricht von Léa, und Kummer übernimmt. Frage: Was passiert, wenn man ein Gefühl wegsperren will?"
-                ],
-                [
-                  "3 · Der Abend",
-                  "Das WLAN fehlt, die Mutter sagt: erst die Kartons; Wut übernimmt das Pult – bei Jana und dann bei der Mutter. Frage: Wer steht am Pult – bei Jana und bei ihrer Mutter?"
-                ],
-                [
-                  "4 · Auf der Bank",
-                  "Mathis will Jana mit Witzen aufheitern, Sofia setzt sich zu ihr und hört zu; danach geht es Jana besser. Frage: Warum hilft Kummer hier mehr als Freude?"
-                ]
-              ]
-            },
-            "tipp": "Für jede Szene neue Freiwillige nehmen – so kommen viele dran, und niemand muss. Wer nicht spielen will, führt Regie oder ruft „Standbild!“. Die Frage nach den fehlenden Gefühlen lohnt sich: Stark und ruhig stehen in unserem Rad, nicht am Pult; Ekel steht am Pult, nicht im Rad – es gibt mehr als eine Art, Gefühle zu ordnen. Die Stunde braucht keinen Film; wer ergänzend eine Szene aus „Alles steht Kopf“ (2015) zeigen möchte, klärt die Vorführrechte vorher mit der Direktion (Schullizenz).",
-            "wennEsKippt": "Will niemand spielen, selbst mit zwei Schildern beginnen und die Klasse von den Plätzen aus entscheiden lassen; nach dem ersten Standbild kommen meist Freiwillige. Wird während des Vorlesens laut kommentiert, sich ruhig neben die Person stellen; Kommentare haben nach dem Standbild Platz. Findet jemand die Geschichte „für Kinder“, eine Expertenrolle anbieten: Du achtest darauf, was an Janas Gefühlen echt ist – und was bei dir anders wäre.",
-            "blatt": "ff7-steuerpult-karten"
-          },
-          {
-            "titel": "Szene 3: Wut übernimmt das Steuer",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Die Szenenkarte bis zum Stopp vorlesen und ein Standbild bauen – mit dem Gefühl, das die Klasse ans Pult schickt; eine weitere Person spielt die Mutter, ohne Schild (4 Min.). Danach fragen: Wer stand am Pult, und was hat Jana deshalb gesagt? Zwei, drei Antworten (2 Min.). Dann zurückspulen: Drei Freiwillige bauen das Standbild neu, mit einem anderen Gefühl am Pult, und Jana sagt einen neuen Satz zu ihrer Mutter (3 Min.). Danach Aufgabe 2 zu zweit: zwei unangenehme Gefühle aus den Szenen – was machen sie, und wozu sind sie für Jana gut? (5 Min.) Zum Schluss lesen zwei Paare ihre Antwort vor (1 Min.).",
-            "sagen": [
-              "Wut ist nicht das Problem – sie meldet: Das ist unfair. Schwierig wird, was Jana dann sagt.",
-              "Spulen wir zurück: Wer könnte statt Wut ans Pult – und was sagt Jana dann zu ihrer Mutter?"
-            ],
-            "tipp": "Über Jana sprechen, nicht über die eigene Familie – die Frage „Kennt ihr das?“ hier nicht stellen. Der Blick in den Kopf der Mutter hilft: Auch bei Eltern steht manchmal Wut am Pult – Eltern haben Gefühle wie alle. Läuft die Zeit davon, nur mündlich zurückspulen.",
-            "wennEsKippt": "Fangen einige an, von Streit zu Hause zu erzählen, freundlich zur Figur zurückführen: Bleiben wir bei Jana; wer mehr erzählen möchte, kann nach der Stunde zu mir kommen. Wirkt jemand dabei betroffen, nach der Stunde kurz nachfragen, wie es geht.",
+            "wennEsKippt": "Will niemand spielen, selbst mit zwei Schildern beginnen und die Klasse von den Plätzen entscheiden lassen; nach dem ersten Standbild kommen meist Freiwillige. Wer nicht spielen will, führt Regie oder ruft „Standbild!“.",
             "blatt": "ff7-wer-sitzt-am-steuer"
           },
           {
             "titel": "Bewegungspause: Gesichter spiegeln",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen auf und stellen sich zu zweit gegenüber. Eine Person zeigt langsam, nur mit dem Gesicht, ein Gefühl vom Steuerpult, die andere spiegelt es wie ein Spiegel; nach drei Gefühlen wird gewechselt (3 Min.). Zum Schluss ruft die Lehrkraft schnell hintereinander Freude, Ekel, Angst, Wut, Kummer, und alle zeigen gleichzeitig das Gesicht (1 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Alle stehen auf und stellen sich zu zweit gegenüber. Eine Person zeigt langsam, nur mit dem Gesicht, ein Gefühl vom Steuerpult, die andere spiegelt es; nach drei Gefühlen wird gewechselt. Zum Schluss ruft die Lehrkraft schnell hintereinander Freude, Ekel, Angst, Wut, Kummer, und alle zeigen gleichzeitig das Gesicht.",
             "sagen": [
-              "Ganz langsam, wie in Zeitlupe. Wer spiegelt, macht genau dasselbe – ohne zu lachen, wenn ihr es schafft."
+              "Ganz langsam, wie in Zeitlupe – wer spiegelt, macht genau dasselbe, möglichst ohne zu lachen."
             ],
-            "tipp": "Bei einer ungeraden Zahl spiegelt die Lehrkraft mit. Wer niemandem gegenüberstehen mag, spiegelt die Lehrkraft vorn.",
-            "wennEsKippt": "Wird nur noch gelacht, das Lachen kurz zulassen und dann eine Regel setzen: Die nächste Runde ganz ohne Ton. Mit Zeitlupe wird es meist sofort ruhiger."
+            "tipp": "Bei ungerader Zahl spiegelt die Lehrkraft mit; wer niemandem gegenüberstehen mag, spiegelt die Lehrkraft vorn. Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung."
           },
           {
-            "titel": "Szene 4: Warum Kummer hilft",
-            "dauer": 15,
+            "titel": "Warum Kummer hilft – und bei euch?",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Die Szenenkarte bis zum Stopp vorlesen; drei Freiwillige spielen Jana, Mathis und Sofia, eine vierte Person hält das Schild Kummer am Pult. Sie bauen Standbild A und verwandeln es nach dem Weiterlesen in Standbild B (4 Min.). Danach fragen: Was hat Jana mehr geholfen – die Witze oder jemand, der sich dazusetzt und zuhört? Und was hat Kummer am Pult dafür getan? (3 Min.) Dann gemeinsam die Hauptbotschaft der Geschichte festhalten: Was will sie über Gefühle sagen? Die Antworten in der Sprache der Klasse auf ein Plakat schreiben; fehlt einer der drei Sätze, mit einer Frage darauf hinführen (6 Min.). Zum Schluss die letzte Zeile in Aufgabe 1 ankreuzen (2 Min.).",
+            "text": "Szene 4 vorlesen: Drei Freiwillige spielen Jana, Mathis und Sofia, eine Person hält das Schild Kummer am Pult. Danach fragen, was Jana mehr geholfen hat, und gemeinsam die Hauptbotschaft der Geschichte auf einem Plakat festhalten. Dann zeigen alle in einer Aufstellung, welches Gefühl bei ihnen am Steuer wäre, und schreiben in Aufgabe 3 ein, zwei Sätze dazu.",
             "sagen": [
-              "Mathis wollte Jana aufheitern. Sofia hat sich einfach neben sie gesetzt. Was hat mehr geholfen – und warum?",
-              "Kummer zeigt anderen: Ich brauche Trost. Ohne Kummer hätte niemand gemerkt, dass Jana jemanden braucht."
+              "Mathis wollte Jana aufheitern, Sofia hat sich einfach neben sie gesetzt – was hat mehr geholfen, und warum?",
+              "Kummer zeigt anderen: Ich brauche Trost – ohne Kummer hätte niemand gemerkt, dass Jana jemanden braucht."
             ],
             "punkte": [
-              "Jedes Gefühl hat eine Aufgabe – auch Kummer.",
-              "Wer am Steuer steht, bestimmt mit, was wir sagen und tun.",
-              "Gefühle lassen sich nicht wegsperren – sie melden sich trotzdem."
+              "Szene 4, Auf der Bank (10 Min.): Standbild A (Mathis macht Faxen, Jana bleibt traurig), weiterlesen, Standbild B (Sofia hört zu); Frage: Was hat Jana mehr geholfen – und was hat Kummer am Pult dafür getan?",
+              "Hauptbotschaft (6 Min.): drei Sätze auf das Plakat, in der Sprache der Klasse: Jedes Gefühl hat eine Aufgabe, auch Kummer · Wer am Steuer steht, bestimmt mit, was wir sagen und tun · Gefühle lassen sich nicht wegsperren.",
+              "Aufstellung (11 Min.): die fünf Gefühle als Schilder an fünf Stellen im Raum; eine Situation vorlesen, alle gehen zu dem Gefühl, das bei ihnen am Steuer stünde – zwischen zwei Schildern ist erlaubt; zwei Personen sagen freiwillig, warum.",
+              "Situationen: Ein Test wird angekündigt, von dem niemand wusste · Dein Freund sagt das Treffen zum dritten Mal kurz vorher ab · Du schießt in der letzten Minute das entscheidende Tor · Abends allein an der Haltestelle raschelt es hinter dir im Gebüsch.",
+              "Aufgabe 3 (8 Min.): allein, Stichworte reichen; wer nicht schreiben mag, zeichnet das Pult mit dem Gefühl; wer mag, liest einen Satz vor."
             ],
-            "tipp": "Das Plakat mit den drei Sätzen neben das Botschaften-Plakat hängen. Der zweite Satz ist die Brücke zum nächsten Kapitel: Dort geht es darum, wie man das Steuer zurückbekommt. Mathis nicht als „falsch“ hinstellen: Er meint es gut – nur kommt sein Angebot zu früh.",
-            "wennEsKippt": "Lacht jemand über Janas Tränen, nicht schimpfen, sondern nachfragen: Wie ist das, wenn einem alle Freunde auf einmal fehlen? Meist wird es dann ruhig. Sagt jemand „Ich würde einfach nicht weinen“, das achten: Wie man Kummer zeigt, ist bei jedem anders – fühlen tun ihn alle. Wird jemand still oder traurig, nicht vor der Klasse ansprechen, sondern nach der Stunde kurz nachfragen.",
-            "blatt": "ff7-steuerpult-karten"
-          },
-          {
-            "titel": "Wer stünde bei euch am Steuer?",
-            "dauer": 20,
-            "phase": "aktiv",
-            "text": "Die fünf Gefühle hängen groß an fünf Stellen im Raum. Die Lehrkraft liest eine Situation vor; alle gehen zu dem Gefühl, das bei ihnen wahrscheinlich am Steuer stünde – zwischen zwei Schildern zu stehen ist erlaubt. Nach jeder Situation zwei Personen an verschiedenen Stellen fragen, warum sie dort stehen; freiwillig und ohne zu bewerten (sechs Situationen, 12 Min.). Zum Schluss: Gleiche Situation, verschiedene Gefühle am Steuer – was heißt das? (1 Min.) Zurück an den Plätzen füllt jede Person Aufgabe 3 allein aus; Stichworte reichen, wer nicht schreiben mag, zeichnet das Pult mit dem Gefühl, das vorne steht (5 Min.). Wer mag, liest einen Satz vor (2 Min.).",
-            "sagen": [
-              "Geht zu dem Gefühl, das bei euch jetzt am Steuer stünde. Dazwischen ist erlaubt.",
-              "Gleiche Situation, drei verschiedene Gefühle am Steuer. Wer mag sagen, warum er hier steht?"
-            ],
-            "punkte": [
-              "Der Lehrer kündigt für morgen einen Test an, von dem niemand etwas wusste.",
-              "Im Bus setzt sich jemand neben dich, der stark nach Rauch riecht.",
-              "Dein bester Freund sagt euer Treffen zum dritten Mal kurz vorher ab.",
-              "Du schießt beim Turnier in der letzten Minute das entscheidende Tor.",
-              "Du wartest abends allein an der Bushaltestelle, und hinter dir raschelt es im Gebüsch.",
-              "Deine Lieblingsserie wird mitten in der Geschichte abgesetzt."
-            ],
-            "tipp": "Die Situationen mit einer Geste begleiten – so verstehen auch Neue mit wenig Deutsch, worum es geht. Wer sich nicht bewegen mag, zeigt vom Platz aus auf ein Schild; bei wenig Platz zeigen alle auf drei vom Platz aus.",
-            "wennEsKippt": "Rennen alle aus Spaß zum selben Schild, die nächste Situation mit geschlossenen Augen hören lassen; erst auf ein Zeichen gehen alle los. Bleibt jemand immer zwischen den Schildern stehen, das gelten lassen: Auch Unentschlossenheit ist eine Auskunft. Ruft jemand „Du stehst eh immer bei Wut“, kurz stoppen: Es geht um Situationen, nicht darum, wie jemand ist.",
+            "wennEsKippt": "Rennen alle aus Spaß zum selben Schild, die nächste Situation mit geschlossenen Augen hören lassen und erst auf ein Zeichen losgehen. Lacht jemand über Janas Tränen oder ruft „Du stehst eh immer bei Wut“, kurz stoppen: Wir sprechen über Situationen und Figuren, nicht darüber, wie jemand ist.",
             "blatt": "ff7-wer-sitzt-am-steuer"
           },
           {
             "titel": "Skill: Gefühl benennen",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Ankündigen: ein Skill, mit dem man das Steuer ein Stück zurückbekommt, wenn ein Gefühl zu laut wird – im Check-in benennt ihr jede Woche euer Gefühl, heute wird daraus ein Skill für den Moment selbst. Die drei Schritte an die Tafel schreiben und einmal vormachen (Liste, 2 Min.). Dann drei kurze Momente vorlesen: Im Gang rempelt dich jemand an, und dein Getränk läuft über die Jacke. – Morgen ist ein Test, und du hast noch nichts gelernt. – Im Bus setzt sich dein bester Freund oder deine beste Freundin plötzlich zu jemand anderem. Nach jedem Moment machen alle still die drei Schritte; wer mag, nennt danach das Wort, das am Pult stand (5 Min.). Zum Schluss erklären: Ein genaues Wort schafft Abstand – das Gefühl bleibt, aber es lenkt nicht mehr allein. Wann könnte das helfen (3 Min.)? Auf dem Blatt steht der Skill im Kasten „Gefühl benennen – dein Skill“.",
+            "text": "Der Skill hilft, das Steuer ein Stück zurückzubekommen, wenn ein Gefühl zu laut wird – im Check-in benennt ihr jede Woche euer Gefühl, heute wird daraus ein Skill für den Moment selbst. Die drei Schritte an die Tafel schreiben, einmal vormachen und an einem kurzen Moment üben (höchstens 5 Minuten). Danach der Abschluss: ein Satz in den Skills-Pass, Mission ansagen, Moment wählen.",
             "sagen": [
-              "Das Wort müsst ihr nicht laut sagen. Es reicht, wenn ihr es im Kopf sagt: Gerade steht … am Pult."
+              "Das Wort müsst ihr nicht laut sagen – es reicht, wenn ihr im Kopf sagt: Gerade steht … am Pult.",
+              "Übt es gleich: Im Gang rempelt euch jemand an, und das Getränk läuft über die Jacke – stopp, benennen, fragen."
             ],
             "punkte": [
               "Stopp: einmal lang ausatmen.",
               "Benennen: im Kopf sagen „Gerade steht … am Pult“ – mit einem genauen Wort vom Gefühlsrad, etwa genervt statt schlecht.",
-              "Fragen: Was will mir das Gefühl sagen – und was brauche ich jetzt?"
+              "Fragen: Was will mir das Gefühl sagen – und was brauche ich jetzt?",
+              "Skills-Pass (4 Min.): ein Satz zur Frage „Was nehme ich aus Janas Geschichte für mich mit?“, Stempel.",
+              "Mission und Moment (4 Min.): ansagen; auf drei zeigen alle ihren Moment (ein Finger jemand rempelt oder nervt, zwei Test angesagt, drei zu Hause nervt jemand, Faust ein eigener) und schreiben ihn in „Mein Moment: Wenn …“; Ausblick (1 Min.)."
             ],
-            "tipp": "Das Gefühlsrad hängt im Raum: Wer kein Wort findet, schaut darauf. Ein ehrliches „weiß nicht genau“ ist auch ein Anfang – manchmal stehen zwei Gefühle am Pult; darum geht es in Stunde 12.",
-            "wennEsKippt": "Rufen einige ihr Wort als Witz in die Klasse, freundlich bremsen: Heute bleibt das Wort im Kopf, nur wer mag, sagt es danach. Fällt jemandem kein Wort ein, zeigt er auf die Farbe im Gefühlsrad. Wirkt jemand bei einem Moment aufgewühlt, nicht vertiefen und nach der Stunde kurz nachfragen."
-          },
-          {
-            "titel": "Skills-Pass, Moment wählen und Blitzlicht",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Was nehme ich aus Janas Geschichte für mich mit? Danach gibt es den Stempel. Mission und Moment wählen (2 Min.): Die Wochen-Mission ansagen – still benennen, wer am Pult steht, wenn ein Gefühl das Steuer übernimmt. Dann wählt jede Person ihren Moment: Auf drei zeigen alle einen Finger für ‚wenn mich jemand anrempelt oder nervt‘, zwei für ‚wenn ein Test angesagt wird‘, drei für ‚wenn mich zu Hause jemand nervt‘, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ bei den Wochen-Missionen im Heft. Blitzlicht (1 Min.): Jede Person nennt in einem Wort, welches Gefühl heute bei ihr am meisten am Steuer saß; „weiter“ ist erlaubt. Mit dem Ausblick auf die nächste Stunde schließen.",
-            "sagen": [
-              "Wann kommt dein Moment? Ein Finger: jemand rempelt oder nervt. Zwei: ein Test wird angesagt. Drei: zu Hause nervt mich jemand. Faust: ein eigener Moment.",
-              "Ein Wort: Wer saß heute bei euch am Steuer?"
-            ],
-            "tipp": "Das Blitzlicht selbst mit einem ehrlichen Wort beginnen, etwa: Neugier. Ein Wort je Person, ohne Kommentar – mit zwanzig dauert das etwa eine Minute. Wer beim Moment unschlüssig ist, nimmt den der Nachbarin; Hauptsache, er steht im Heft."
+            "wennEsKippt": "Rufen einige ihr Wort als Witz in die Klasse, freundlich bremsen: Heute bleibt das Wort im Kopf, nur wer mag, sagt es danach. Fällt jemandem kein Wort ein, zeigt er auf die Farbe im Gefühlsrad."
           }
         ],
         "bruecke": "Gefühle passieren nicht nur im Kopf: Nächste Woche sucht ihr, wo sie im Körper sitzen – und welches Signal bei Wut und Angst als Erstes kommt.",
-        "mission": "Benenn in deinem Moment still, wer am Pult steht – wenn dich jemand anrempelt, ein Test angesagt wird oder dich zu Hause jemand nervt. Was hast du danach gesagt oder getan?",
-        "hintergrund": "Grundlage der Stunde ist das Bild vom Steuerpult: Gefühle stören das Denken nicht, sie steuern es – sie ordnen Aufmerksamkeit und Handeln und regeln das Zusammenleben. Kummer etwa zeigt anderen, dass jemand Trost braucht, und holt so Hilfe herbei (Keltner & Ekman, 2015). Die fünf Figuren entsprechen Grundgefühlen nach Ekman (1992); das Pult ist ein Bild, keine Karte des Gehirns. Im Prozessmodell der Emotionsregulation (Gross, 1998) ist das Benennen ein früher Eingriff: Wer weiß, wer am Pult steht, kann die Lage neu bewerten, bevor er reagiert. Wichtigster Beleg für den Skill: Benannten Erwachsene das Gefühl auf einem Gesicht, reagierte die Amygdala, ein Alarmzentrum des Gehirns, schwächer (Lieberman et al., 2007) – das Gefühl bleibt, lenkt aber weniger allein. Die erfundene Figur Jana schafft Abstand: Über ihre Gefühle zu sprechen, fällt leichter als über die eigenen.",
+        "mission": "Benenne still, wer am Pult steht. Was machst du danach?",
+        "hintergrund": "Das Bild vom Steuerpult: Gefühle stören das Denken nicht, sie steuern es; Kummer zeigt anderen, dass jemand Trost braucht (Keltner & Ekman, 2015). Das Benennen ist ein früher Eingriff: Wer weiß, wer am Pult steht, kann die Lage neu bewerten, bevor er reagiert (Gross, 1998). Benannten Erwachsene ein Gefühl, reagierte das Alarmzentrum des Gehirns schwächer (Lieberman et al., 2007). Über die erfundene Jana zu sprechen, fällt leichter als über sich selbst.",
         "quellen": [
           "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
           "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428."
         ],
-        "achtung": "Die Geschichte ist erfunden und läuft vollständig über Szenenkarten und Standbilder; ein Film wird nicht gebraucht – wer ergänzend einen zeigt, nur mit Vorführrechten der Schule. Umzug, Heimweh, Streit mit den Eltern und Abschied von Freunden können Jugendliche treffen, die geflüchtet sind, getrennt von ihrer Familie leben oder jemanden verloren haben: sie vorher ansprechen und wählen lassen, ob sie mitspielen. Niemand spielt eine echte Person, Standbilder ohne Berührung, Aufgabe 3 bleibt privat. Wer still wird oder weint, später unter vier Augen ansprechen. Bei Hinweisen auf Gewalt zu Hause noch am selben Tag den SePAS informieren und nach dem Schutzkonzept handeln.",
+        "achtung": "Die Geschichte ist erfunden und läuft über Szenenkarten und Standbilder, ohne Film; niemand spielt eine echte Person, Standbilder gibt es ohne Berührung, Aufgabe 3 bleibt privat. Umzug, Heimweh, Streit zu Hause und der Abschied von Freunden können Jugendliche treffen, die geflüchtet sind, getrennt von ihrer Familie leben oder jemanden verloren haben: sie vorher ansprechen und wählen lassen, ob sie mitspielen. Wer still wird oder weint, später unter vier Augen ansprechen; bei Hinweisen auf Gewalt zu Hause noch am selben Tag den SePAS informieren (Schutzkonzept der Schule).",
         "differenzierung": {
-          "leichter": "Für Jugendliche, die die Unterrichtssprache noch lernen: die Namen der fünf Gefühle mit Gesichtern in beiden Sprachen an die Tafel; die Szenenkarten langsam und mit Gesten vorlesen – die Standbilder zeigen, was passiert. Aufgabe 1 nur ankreuzen, Aufgabe 2 gemeinsam an der Tafel; bei den Standbildern eine Rolle ohne Text.",
-          "schwerer": "Eine Alltagsszene als Steuerpult-Szene beschreiben: Wer steht am Pult, wer will hin – und was würde passieren, wenn ein anderes Gefühl übernähme? Oder eine fünfte Szene für Jana schreiben, zwei Wochen später, und entscheiden, wer dort am Pult steht."
+          "leichter": "Für Jugendliche, die die Unterrichtssprache noch lernen: die fünf Gefühle mit Gesichtern in beiden Sprachen an die Tafel schreiben und die Szenenkarten langsam mit Gesten vorlesen – die Standbilder zeigen, was passiert. Aufgabe 1 nur ankreuzen, Aufgabe 2 gemeinsam an der Tafel, bei den Standbildern eine Rolle ohne Text.",
+          "schwerer": "Eine Alltagsszene als Steuerpult-Szene beschreiben: Wer steht am Pult, wer will hin – und was passiert, wenn ein anderes Gefühl übernimmt? Oder eine fünfte Szene für Jana schreiben, zwei Wochen später."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Szene 1 und 2 mit Fragen und Aufgabe 1 (15 Min.), Szene 4 mit der Bank und der Hauptbotschaft (15 Min.), Aufstellung mit drei Situationen (8 Min.), Skills-Pass, Mission mit Moment und Blitzlicht (7 Min.). Szene 3, die Aufgaben 2 und 3 und der Skill „Gefühl benennen“ entfallen; Aufgabe 3 lässt sich zu Beginn der nächsten Stunde nachholen."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Szene 1 mit Frage und Aufgabe 1 (10 Min.), Szene 4 mit der Hauptbotschaft (15 Min.), eine kurze Aufstellung mit drei Situationen (8 Min.), Skills-Pass, Mission mit Moment und Ausblick (7 Min.), Gefühl benennen (5 Min.). Szene 2, die Bewegungspause und die Aufgaben 2 und 3 entfallen; Aufgabe 3 lässt sich zu Beginn der nächsten Stunde nachholen."
       },
       "fr": {
         "titel": "Qui est aux commandes ?",
-        "kurz": "Jana déménage, et dans sa tête cinq émotions se disputent la console : des images figées montrent comment une émotion prend les commandes – et pourquoi la tristesse a aussi sa place.",
+        "kurz": "Jana déménage, cinq émotions se disputent la console dans sa tête : des images figées montrent comment l’une prend les commandes – et pourquoi la tristesse a sa place.",
         "ziele": [
           "reconnaissent dans des images figées l’émotion aux commandes",
           "expliquent à quoi sert aussi la tristesse",
-          "situent l’émotion qui serait aux commandes chez eux",
-          "essaient le skill « nommer l’émotion » et choisissent un moment pour l’exercer"
+          "montrent quelle émotion serait aux commandes chez eux au quotidien"
         ],
         "material": [
           "Pancartes et cartes scènes (modèle)",
-          "Une table devant, comme console ; cinq feuilles A4 avec les émotions",
+          "Table devant comme console, cinq A4 avec les émotions",
           "Affiche des messages (séance 9)",
           "Affiche vierge (A1), gros feutres",
           "Roue des émotions, 20 gommettes",
-          "Cahier de l’élève, tampon pour le Skills-Pass"
+          "Cahier, tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
-          "Photocopier les pancartes (page 1) sur papier épais et les découper ; photocopier une fois les cartes scènes (page 2) et les lire à voix haute avant.",
-          "Afficher les cinq émotions en grand sur des A4 à cinq endroits de la salle (étape 7) ; dégager devant une table qui servira de console.",
-          "Vérifier les prénoms des personnages, les changer si besoin ; voir avec le régent à qui déménagement ou disputes à la maison pourraient peser, et en parler avant avec ce jeune."
+          "Photocopier les pancartes (page 1) sur papier épais, les cartes scènes (page 2) une fois ; lire les scènes 1, 2 et 4 à voix haute avant – la scène 3 reste de côté.",
+          "Dégager une table devant comme console ; afficher les cinq émotions en grand sur des A4 à cinq endroits de la salle (étape 5).",
+          "Vérifier les prénoms ; voir avec le régent à qui déménagement ou disputes à la maison pourraient peser, et en parler avant avec ce jeune."
         ],
         "ablauf": [
           {
@@ -307,17 +220,12 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Retour et coup d’œil dans la tête de Jana"
+            "titel": "Retour, mission et la tête de Jana"
           },
           {
-            "min": "15–30",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Scènes 1 et 2 : qui est aux commandes ?"
-          },
-          {
-            "min": "30–45",
-            "phase": "uebung",
-            "titel": "Scène 3 : la colère prend les commandes"
+            "titel": "L’histoire de Jana en images figées"
           },
           {
             "min": "45–50",
@@ -325,24 +233,14 @@
             "titel": "Pause active : le miroir des visages"
           },
           {
-            "min": "50–65",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Scène 4 : pourquoi Tristesse aide"
+            "titel": "Pourquoi Tristesse aide – et chez vous ?"
           },
           {
-            "min": "65–85",
-            "phase": "aktiv",
-            "titel": "Et vous, qui serait aux commandes ?"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : nommer l’émotion"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, choix du moment et tour éclair"
           }
         ],
         "schritte": [
@@ -350,175 +248,105 @@
             "titel": "Tour d’humeur : la première émotion",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle comme d’habitude sa gommette sur la roue des émotions – pour maintenant (3 min). Aujourd’hui, une question en plus : quelle émotion s’est réveillée la première ce matin – au réveil, dans la salle de bain, dans le bus ? L’enseignant·e commence ; puis trois ou quatre volontaires disent leur émotion du matin et, s’ils le souhaitent, leur mot de maintenant (5 min). Pour finir, demander si l’émotion a changé depuis le matin et ce qui l’a changée – le bus, un copain, un devoir en classe ? (2 min)",
+            "text": "En entrant, chaque jeune colle comme d’habitude sa gommette sur la roue des émotions – pour maintenant. Aujourd’hui, une question en plus : quelle émotion s’est réveillée la première ce matin – au réveil, dans la salle de bain, dans le bus ? L’enseignant·e commence, trois ou quatre volontaires disent leur émotion du matin et, s’ils le souhaitent, leur mot de maintenant.",
             "sagen": [
-              "Quelle émotion s’est réveillée la première ce matin ? Chez moi, c’était “fatigué”, puis un instant “stressé”, parce que je cherchais mes clés.",
+              "Quelle émotion s’est réveillée la première ce matin – chez moi, c’était “fatigué”, puis un instant “stressé”, parce que je cherchais mes clés.",
               "Tout à l’heure, vous allez regarder à l’intérieur d’une tête où cinq émotions se disputent les commandes."
             ],
-            "tipp": "La question de la première émotion mène tout droit à l’histoire : chez Jana aussi, le matin du déménagement, Joie se réveille la première – et peu après, Peur se manifeste.",
-            "wennEsKippt": "Si beaucoup disent « fatigué », l’accepter et demander si la fatigue est une émotion ou plutôt un état du corps – un bon lien vers la séance 11. Si tout le monde se bouscule devant l’affiche, faire passer îlot par îlot."
+            "wennEsKippt": "Si beaucoup disent « fatigué », l’accepter et demander si la fatigue est une émotion ou plutôt un état du corps – un bon lien vers la séance suivante. Si tout le monde se bouscule devant l’affiche, faire coller îlot par îlot."
           },
           {
-            "titel": "Retour et coup d’œil dans la tête de Jana",
+            "titel": "Retour, mission et la tête de Jana",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass. Pour la mission de la semaine, demander : ton moment est-il venu – et as-tu fait la chasse aux couleurs ? Pouce en haut, au milieu, en bas ; une voix raconte ce que l’émotion voulait dire ; personne n’est obligé d’avoir vécu son moment. Montrer l’affiche des messages et faire répéter ceux de la peur et de la colère. Puis présenter l’histoire en trois phrases : Jana a douze ans et déménage avec sa famille dans une autre ville – nouveau lycée, nouvelle classe. Dans sa tête, il y a une salle de contrôle avec une console ; Joie, Tristesse, Peur, Colère et Dégoût y travaillent. Celle qui est aux commandes décide en partie de ce que Jana dit et fait. Montrer les pancartes, déclarer la table de devant « console », distribuer la fiche et expliquer l’exercice 1 : après chaque image figée, on coche seulement.",
+            "text": "Pour la mission de la semaine, demander : ton moment est-il venu – et as-tu fait la chasse aux couleurs ? Pouce en haut, au milieu ou en bas, une voix raconte ce que l’émotion voulait dire ; personne n’est obligé d’avoir vécu son moment. Puis présenter l’histoire « Jana déménage » en trois phrases : Jana a douze ans, dans sa tête cinq émotions travaillent à la console, et celle qui est aux commandes décide en partie de ce que Jana dit et fait.",
             "sagen": [
-              "La semaine dernière, vous avez trouvé le message de chaque émotion. Qui se souvient de celui de la peur ? Et de la colère ?",
+              "La semaine dernière, vous avez trouvé les messages des émotions – qui se souvient de celui de la peur et de celui de la colère ?",
               "Aujourd’hui, vous construisez vous-mêmes l’histoire de Jana – et vous décidez chaque fois qui doit aller aux commandes."
             ],
-            "tipp": "L’histoire est inventée et se joue entièrement avec les cartes scènes et les images figées ; la classe la raconte avec vous. Lire les cartes scènes une fois à voix haute avant le cours – les stops tombent alors juste.",
-            "wennEsKippt": "Si quelqu’un lance « C’est comme dans le film », confirmer brièvement – beaucoup connaissent l’image de la console – et ramener : aujourd’hui, c’est l’histoire de Jana, et c’est vous qui décidez qui va aux commandes. Si un jeune dit qu’il ne connaît que trop bien les déménagements, ne pas creuser devant la classe ; un mot bref après le cours."
+            "tipp": "L’histoire est inventée et se joue avec les cartes scènes et les images figées ; la classe la raconte avec vous. Les cinq personnages portent le nom d’une émotion : Joie, Tristesse, Peur, Colère, Dégoût."
           },
           {
-            "titel": "Scènes 1 et 2 : qui est aux commandes ?",
-            "dauer": 15,
+            "titel": "L’histoire de Jana en images figées",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Scène 1, Le jour du déménagement (7 min) : lire la carte scène jusqu’au premier stop. La classe décide qui doit aller aux commandes ; six volontaires prennent les pancartes – cinq émotions et Jana – et construisent autour de la table l’image figée A (liste). Lire la suite jusqu’au deuxième stop, construire l’image figée B, puis lire la solution. Ensuite, poser la question du tableau ; deux ou trois réponses, puis tout le monde coche l’exercice 1. Scène 2, Le premier jour au lycée, de la même façon avec de nouveaux volontaires (7 min). Pour finir, comparer (1 min) : quelles émotions de notre roue manquent à la console – et quelle émotion de la console manque sur la roue ?",
+            "text": "D’abord expliquer la console : la table devant est la console, les pancartes montrent les cinq émotions et Jana. Puis lire les scènes 1 et 2 : à chaque « stop », la classe décide qui doit aller aux commandes, des volontaires construisent l’image figée et tout le monde coche la fiche (exercice 1). Pour finir, l’exercice 2 à deux.",
             "sagen": [
-              "Stop. Qui doit aller aux commandes maintenant – et qu’est-ce que Jana fait à cause de ça ?",
-              "Quelles émotions de notre roue manquent à la console ? Et laquelle de la console manque sur notre roue ?"
+              "Stop – qui doit aller aux commandes maintenant, et qu’est-ce que Jana fait à cause de ça ?",
+              "Que se passe-t-il quand on veut enfermer une émotion – et à quoi servent Peur, Dégoût et Colère pour Jana ?"
             ],
             "punkte": [
-              "Lire la carte scène jusqu’au stop ; la classe dit qui doit aller aux commandes.",
-              "Derrière la table se tiennent les émotions avec leurs pancartes ; devant, Jana, face à la classe.",
-              "L’émotion aux commandes pose les mains sur la table ; les autres restent derrière.",
-              "À « Image figée ! », tout le monde s’immobilise cinq secondes – sans mots, sans se toucher.",
-              "Ensuite, chacun pose sa pancarte et dit son propre prénom."
+              "Console (3 min) : les émotions se tiennent derrière la table avec leur pancarte, Jana devant, face à la classe ; l’émotion aux commandes pose les mains sur la table.",
+              "Image figée : lire la carte jusqu’au stop, la classe dit qui doit aller aux commandes ; six volontaires construisent l’image ; à « Image figée ! », cinq secondes d’immobilité, sans mots ni contact ; ensuite, poser la pancarte et dire son prénom.",
+              "Scène 1, Le jour du déménagement (8 min) : Joie le matin, puis Peur (le vélo sur le camion) et Colère (le frère déchire le poster) ; question : à quoi servent Peur, Dégoût et Colère pour Jana ?",
+              "Scène 2, Le premier jour au lycée (8 min) : Joie envoie Tristesse dans le coin, à la récré Tristesse prend les commandes ; question : que se passe-t-il quand on veut enfermer une émotion ?",
+              "Exercices 1 et 2 (11 min) : cocher après chaque image figée ; à deux, choisir deux émotions désagréables des scènes : que font-elles, à quoi servent-elles pour Jana ?"
             ],
-            "tabelle": {
-              "spalten": [
-                "Scène",
-                "Ce qui se passe – question ensuite"
-              ],
-              "zeilen": [
-                [
-                  "1 · Le jour du déménagement",
-                  "Joie se réveille la première ; puis Peur se manifeste (le vélo sur le camion) et Colère (le petit frère et le poster). Question : à quoi servent Peur, Dégoût et Colère pour Jana ?"
-                ],
-                [
-                  "2 · Le premier jour au lycée",
-                  "Joie envoie Tristesse dans le coin, Jana sourit en se présentant ; à la récré arrive le message de Léa, et Tristesse prend les commandes. Question : que se passe-t-il quand on veut enfermer une émotion ?"
-                ],
-                [
-                  "3 · Le soir",
-                  "Pas de wifi, la mère dit : d’abord les cartons ; Colère prend les commandes – chez Jana, puis chez sa mère. Question : qui est aux commandes – chez Jana et chez sa mère ?"
-                ],
-                [
-                  "4 · Sur le banc",
-                  "Mathis veut faire rire Jana, Sofia s’assoit à côté d’elle et l’écoute ; ensuite, Jana va mieux. Question : pourquoi Tristesse aide-t-elle plus que Joie ici ?"
-                ]
-              ]
-            },
-            "tipp": "Prendre de nouveaux volontaires pour chaque scène – ainsi, beaucoup passent et personne n’y est obligé. Qui ne veut pas jouer fait la mise en scène ou annonce « Image figée ! ». La question des émotions qui manquent vaut la peine : fort et calme sont sur notre roue, pas à la console ; Dégoût est à la console, pas sur la roue – il y a plus d’une façon de ranger les émotions. La séance n’a pas besoin de film ; qui veut montrer en complément une scène de « Vice-versa » (2015) vérifie d’abord les droits de projection avec la direction (licence scolaire).",
-            "wennEsKippt": "Si personne ne veut jouer, commencer soi-même avec deux pancartes et laisser la classe décider depuis les places ; après la première image figée, des volontaires se présentent presque toujours. Si quelqu’un commente à voix haute pendant la lecture, se placer calmement à côté de lui ; les commentaires ont leur place après l’image figée. Si quelqu’un trouve l’histoire « pour les petits », lui proposer un rôle d’expert : tu observes ce qui est vrai dans les émotions de Jana – et ce qui serait différent chez toi.",
-            "blatt": "ff7-steuerpult-karten"
-          },
-          {
-            "titel": "Scène 3 : la colère prend les commandes",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Lire la carte scène jusqu’au stop et construire une seule image figée – avec l’émotion que la classe envoie aux commandes ; un autre jeune joue la mère, sans pancarte (4 min). Puis demander : qui était aux commandes, et qu’est-ce que Jana a dit à cause de ça ? Deux ou trois réponses (2 min). Ensuite, rembobiner : trois volontaires reconstruisent l’image figée avec une autre émotion aux commandes, et Jana dit une nouvelle phrase à sa mère (3 min). Puis l’exercice 2 à deux : deux émotions désagréables des scènes – que font-elles, et à quoi servent-elles pour Jana ? (5 min) Pour finir, deux binômes lisent leur réponse (1 min).",
-            "sagen": [
-              "La colère n’est pas le problème – elle signale : ce n’est pas juste. Ce qui pose problème, c’est ce que Jana dit ensuite.",
-              "On rembobine : quelle émotion pourrait aller aux commandes à la place de Colère – et que dit Jana alors à sa mère ?"
-            ],
-            "tipp": "On parle de Jana, pas de sa propre famille – ne pas poser ici la question « Vous connaissez ça ? ». Le regard dans la tête de la mère aide : chez les parents aussi, Colère est parfois aux commandes – les parents ont des émotions comme tout le monde. Si le temps manque, rembobiner seulement à l’oral.",
-            "wennEsKippt": "Si certains commencent à raconter des disputes à la maison, les ramener gentiment au personnage : restons avec Jana ; qui veut en dire plus peut venir me voir après le cours. Si un jeune paraît touché, lui demander brièvement après le cours comment il va.",
+            "wennEsKippt": "Si personne ne veut jouer, commencer soi-même avec deux pancartes et laisser la classe décider depuis les places ; après la première image figée, des volontaires se présentent presque toujours. Qui ne veut pas jouer fait la mise en scène ou annonce « Image figée ! ».",
             "blatt": "ff7-wer-sitzt-am-steuer"
           },
           {
             "titel": "Pause active : le miroir des visages",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se lève et se met face à face, à deux. L’un montre lentement, seulement avec le visage, une émotion de la console ; l’autre l’imite comme un miroir ; on échange après trois émotions (3 min). Pour finir, annoncer rapidement à la suite Joie, Dégoût, Peur, Colère, Tristesse – tout le monde montre le visage en même temps (1 min). Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Tout le monde se lève et se met face à face, à deux. L’un montre lentement, seulement avec le visage, une émotion de la console, l’autre l’imite comme un miroir ; on échange après trois émotions. Pour finir, annoncer vite à la suite Joie, Dégoût, Peur, Colère, Tristesse – tout le monde montre le visage en même temps.",
             "sagen": [
-              "Tout doucement, comme au ralenti. Le miroir fait exactement pareil – sans rire, si vous y arrivez."
+              "Tout doucement, comme au ralenti – qui fait le miroir fait exactement pareil, si possible sans rire."
             ],
-            "tipp": "Si le nombre est impair, faire soi-même le miroir avec un jeune. Qui ne veut faire face à personne imite l’enseignant·e devant la classe.",
-            "wennEsKippt": "Si tout le monde ne fait plus que rire, laisser rire un instant puis poser une règle : au prochain tour, pas un bruit. Avec le ralenti, le calme revient souvent tout de suite."
+            "tipp": "Si le nombre est impair, l’enseignant·e fait le miroir avec un jeune ; qui ne veut faire face à personne imite l’enseignant·e devant la classe. Si la grande récréation tombe entre les deux heures, supprimer l’exercice."
           },
           {
-            "titel": "Scène 4 : pourquoi Tristesse aide",
-            "dauer": 15,
+            "titel": "Pourquoi Tristesse aide – et chez vous ?",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Lire la carte scène jusqu’au stop ; trois volontaires jouent Jana, Mathis et Sofia, un quatrième tient la pancarte Tristesse à la console. Ils construisent l’image figée A et la transforment, après la suite, en image figée B (4 min). Ensuite, demander : qu’est-ce qui a le plus aidé Jana – les blagues, ou quelqu’un qui s’assoit à côté d’elle et l’écoute ? Et qu’a fait Tristesse, à la console, pour ça ? (3 min) Puis retenir ensemble le message principal de l’histoire : que veut-elle dire sur les émotions ? Écrire les réponses avec les mots de la classe sur une affiche ; si l’une des trois phrases manque, y amener par une question (6 min). Pour finir, cocher la dernière ligne de l’exercice 1 (2 min).",
+            "text": "Lire la scène 4 : trois volontaires jouent Jana, Mathis et Sofia, un quatrième tient la pancarte Tristesse à la console. Ensuite, demander ce qui a le plus aidé Jana et noter ensemble le message principal de l’histoire sur une affiche. Puis tout le monde se place dans la salle selon l’émotion qui serait aux commandes chez lui et écrit une ou deux phrases à l’exercice 3.",
             "sagen": [
-              "Mathis voulait remonter le moral de Jana. Sofia s’est simplement assise à côté d’elle. Qu’est-ce qui a le plus aidé – et pourquoi ?",
-              "Tristesse montre aux autres : j’ai besoin de réconfort. Sans Tristesse, personne n’aurait remarqué que Jana avait besoin de quelqu’un."
+              "Mathis voulait remonter le moral de Jana, Sofia s’est simplement assise à côté d’elle – qu’est-ce qui a le plus aidé, et pourquoi ?",
+              "Tristesse montre aux autres : j’ai besoin de réconfort – sans elle, personne n’aurait remarqué que Jana avait besoin de quelqu’un."
             ],
             "punkte": [
-              "Chaque émotion a un rôle – Tristesse aussi.",
-              "L’émotion aux commandes décide en partie de ce qu’on dit et de ce qu’on fait.",
-              "On ne peut pas enfermer une émotion – elle se manifeste quand même."
+              "Scène 4, Sur le banc (10 min) : image figée A (Mathis fait le pitre, Jana reste triste), lire la suite, image figée B (Sofia écoute) ; question : qu’est-ce qui a le plus aidé Jana – et qu’a fait Tristesse à la console ?",
+              "Message principal (6 min) : trois phrases sur l’affiche, avec les mots de la classe : chaque émotion a un rôle, Tristesse aussi · celle qui est aux commandes décide en partie de ce qu’on dit et fait · on ne peut pas enfermer une émotion.",
+              "Se placer (11 min) : cinq émotions sur des affiches A4 à cinq endroits de la salle ; lire une situation, chacun va vers l’émotion qui serait aux commandes chez lui – entre deux est permis ; deux jeunes disent librement pourquoi.",
+              "Situations : un devoir en classe est annoncé, personne n’était au courant · ton meilleur ami annule votre rendez-vous pour la troisième fois · tu marques le but décisif à la dernière minute · le soir, seul à l’arrêt de bus, quelque chose bouge derrière toi dans les buissons.",
+              "Exercice 3 (8 min) : seul, des mots-clés suffisent ; qui ne veut pas écrire dessine la console avec l’émotion qui est devant ; qui le souhaite lit une phrase."
             ],
-            "tipp": "Afficher les trois phrases à côté de l’affiche des messages. La deuxième phrase fait le lien avec le chapitre suivant : comment reprendre les commandes. Ne pas présenter Mathis comme « faux » : il pense bien faire – mais sa proposition arrive trop tôt.",
-            "wennEsKippt": "Si quelqu’un se moque des larmes de Jana, ne pas gronder, mais demander : qu’est-ce qu’on ressent quand tous ses amis manquent d’un coup ? En général, le calme revient. Si quelqu’un dit « Moi, je ne pleurerais pas », le respecter : la façon de montrer la tristesse varie d’une personne à l’autre – mais tout le monde la ressent. Si un jeune devient silencieux ou triste, ne pas lui en parler devant la classe, mais brièvement après le cours.",
-            "blatt": "ff7-steuerpult-karten"
-          },
-          {
-            "titel": "Et vous, qui serait aux commandes ?",
-            "dauer": 20,
-            "phase": "aktiv",
-            "text": "Les cinq émotions sont affichées en grand à cinq endroits de la salle. Lire une situation ; chacun va vers l’émotion qui serait sans doute aux commandes chez lui – on peut se placer entre deux affiches. Après chaque situation, demander à deux jeunes placés à des endroits différents pourquoi ils sont là ; c’est facultatif et sans jugement (six situations, 12 min). Pour finir : même situation, émotions différentes aux commandes – qu’est-ce que ça veut dire ? (1 min) De retour à sa place, chacun remplit seul l’exercice 3 ; des mots-clés suffisent, et qui ne veut pas écrire dessine la console avec l’émotion qui est devant (5 min). Qui le souhaite lit une phrase (2 min).",
-            "sagen": [
-              "Allez vers l’émotion qui serait aux commandes chez vous. Entre deux, c’est permis.",
-              "Même situation, trois émotions différentes aux commandes. Qui veut dire pourquoi il est là ?"
-            ],
-            "punkte": [
-              "Le prof annonce pour demain un devoir en classe dont personne n’était au courant.",
-              "Dans le bus, quelqu’un qui sent très fort la cigarette s’assoit à côté de toi.",
-              "Ton meilleur ami annule votre rendez-vous au dernier moment – pour la troisième fois.",
-              "Au tournoi, tu marques le but décisif à la dernière minute.",
-              "Le soir, tu attends seul·e à l’arrêt de bus, et derrière toi, quelque chose bouge dans les buissons.",
-              "Ta série préférée est arrêtée en plein milieu de l’histoire."
-            ],
-            "tipp": "Accompagner chaque situation d’un geste – ainsi, les nouveaux qui parlent peu français comprennent de quoi il s’agit. Qui ne veut pas se déplacer montre une affiche depuis sa place ; s’il y a peu de place, tout le monde montre à trois depuis sa place.",
-            "wennEsKippt": "Si tout le monde court vers la même affiche pour rire, faire écouter la situation suivante les yeux fermés ; on ne part qu’au signal. Si un jeune reste toujours entre deux affiches, l’accepter : l’hésitation aussi est une réponse. Si quelqu’un lance « Toi, tu es toujours à Colère », arrêter un instant : on parle de situations, pas de ce que quelqu’un est.",
+            "wennEsKippt": "Si tout le monde court vers la même affiche pour rire, faire écouter la situation suivante les yeux fermés et ne partir qu’au signal. Si quelqu’un se moque des larmes de Jana ou lance « Toi, tu es toujours à Colère », arrêter un instant : on parle de situations et de personnages, pas de ce que quelqu’un est.",
             "blatt": "ff7-wer-sitzt-am-steuer"
           },
           {
             "titel": "Skill : nommer l’émotion",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Annoncer : voici un skill qui permet de reprendre un peu les commandes quand une émotion devient trop forte – au tour d’humeur, vous nommez votre émotion chaque semaine ; aujourd’hui, cela devient un skill pour le moment même. Écrire les trois étapes au tableau et les montrer une fois (liste, 2 min). Puis lire trois courts moments : dans le couloir, quelqu’un te bouscule et ta boisson se renverse sur ta veste. – Demain, il y a un devoir en classe et tu n’as encore rien révisé. – Dans le bus, ton meilleur ami ou ta meilleure amie s’assoit tout à coup à côté de quelqu’un d’autre. Après chaque moment, tout le monde fait les trois étapes en silence ; qui veut dit ensuite le mot qui était aux commandes (5 min). Pour finir, expliquer : un mot précis crée de la distance – l’émotion reste, mais elle ne conduit plus toute seule. Quand est-ce que ça pourrait aider (3 min) ? Sur la fiche, le skill figure dans l’encadré « Nommer l’émotion – ton skill ».",
+            "text": "Ce skill permet de reprendre un peu les commandes quand une émotion devient trop forte – au tour d’humeur, vous nommez votre émotion chaque semaine, aujourd’hui cela devient un skill pour le moment même. Écrire les trois étapes au tableau, les montrer une fois et s’exercer sur un court moment (cinq minutes au plus). Ensuite la clôture : une phrase dans le Skills-Pass, annoncer la mission, choisir son moment.",
             "sagen": [
-              "Vous n’avez pas besoin de dire le mot à voix haute. Il suffit de le dire dans votre tête : en ce moment, c’est … qui est aux commandes."
+              "Vous n’avez pas besoin de dire le mot à voix haute – il suffit de le dire dans la tête : en ce moment, c’est … qui est aux commandes.",
+              "Essayez tout de suite : dans le couloir, quelqu’un vous bouscule et votre boisson se renverse sur la veste – stop, nommer, demander."
             ],
             "punkte": [
-              "Stop : expire une fois, longuement.",
-              "Nommer : dis-toi dans ta tête « En ce moment, c’est … qui est aux commandes » – avec un mot précis de la roue des émotions, par exemple agacé plutôt que mal.",
-              "Demander : qu’est-ce que cette émotion veut me dire – et de quoi ai-je besoin maintenant ?"
+              "Stop : expirer une fois, longuement.",
+              "Nommer : se dire dans la tête « En ce moment, c’est … qui est aux commandes » – avec un mot précis de la roue, par exemple agacé plutôt que mal.",
+              "Demander : qu’est-ce que cette émotion veut me dire – et de quoi ai-je besoin maintenant ?",
+              "Skills-Pass (4 min) : une phrase pour la question « Qu’est-ce que je retiens de l’histoire de Jana pour moi ? » ; tampon.",
+              "Mission et moment (4 min) : l’annoncer ; à « trois », chacun montre son moment (un doigt quelqu’un me bouscule ou m’énerve, deux un devoir est annoncé, trois quelqu’un m’énerve à la maison, le poing un moment à soi) et l’écrit dans « Mon moment : quand … » ; annoncer la prochaine séance (1 min)."
             ],
-            "tipp": "La roue des émotions est affichée dans la salle : qui ne trouve pas de mot la regarde. Un « je ne sais pas trop » honnête est aussi un début – parfois, deux émotions sont aux commandes ; c’est le sujet de la séance 12.",
-            "wennEsKippt": "Si certains lancent leur mot à la classe pour rire, freiner gentiment : aujourd’hui, le mot reste dans la tête ; seuls ceux qui le veulent le disent après. Si un jeune ne trouve aucun mot, il montre la couleur sur la roue des émotions. Si quelqu’un semble bouleversé par un moment, ne pas approfondir et lui demander brièvement après le cours comment il va."
-          },
-          {
-            "titel": "Skills-Pass, choix du moment et tour éclair",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 min) : écrire la question clé au tableau – qu’est-ce que je retiens de l’histoire de Jana pour moi ? Ensuite, le tampon. Mission et choix du moment (2 min) : annoncer la mission de la semaine – nommer en silence qui est aux commandes quand une émotion prend le dessus. Puis chacun choisit son moment : à trois, tout le monde montre un doigt pour “quand quelqu’un me bouscule ou m’énerve”, deux pour “quand un devoir en classe est annoncé”, trois pour “quand quelqu’un m’énerve à la maison”, le poing pour un moment à soi – et le note dans la colonne « Mon moment : quand … » des missions de la semaine, dans le cahier. Tour éclair (1 min) : chacun dit en un mot quelle émotion a été le plus souvent aux commandes chez lui aujourd’hui ; on peut dire « je passe ». Terminer par l’annonce de la prochaine séance.",
-            "sagen": [
-              "Quand arrive ton moment ? Un doigt : quelqu’un me bouscule ou m’énerve. Deux : un devoir en classe est annoncé. Trois : à la maison, quelqu’un m’énerve. Le poing : un moment à moi.",
-              "Un mot : qui était aux commandes chez vous aujourd’hui ?"
-            ],
-            "tipp": "Commencer soi-même le tour éclair avec un mot sincère, par exemple : curiosité. Un mot par personne, sans commentaire – à vingt, cela prend environ une minute. Qui hésite pour son moment prend celui de son voisin ; l’essentiel, c’est qu’il soit écrit dans le cahier."
+            "wennEsKippt": "Si certains lancent leur mot à la classe pour rire, freiner gentiment : aujourd’hui, le mot reste dans la tête ; seuls ceux qui le veulent le disent après. Si un jeune ne trouve aucun mot, il montre la couleur sur la roue des émotions."
           }
         ],
         "bruecke": "Les émotions ne se passent pas seulement dans la tête : la semaine prochaine, vous cherchez où elles se logent dans le corps – et quel signal arrive en premier avec la colère et la peur.",
-        "mission": "Dans ton moment, nomme en silence qui est aux commandes – quand on te bouscule, qu’un devoir en classe est annoncé ou qu’on t’énerve à la maison. Qu’as-tu dit ou fait ensuite ?",
-        "hintergrund": "La séance repose sur l’image de la console : les émotions ne perturbent pas la pensée, elles la pilotent – elles orientent l’attention et règlent la vie en commun. La tristesse montre aux autres qu’on a besoin de réconfort et fait venir de l’aide (Keltner & Ekman, 2015). Les cinq personnages correspondent à des émotions de base décrites par Ekman (1992) ; la console est une image, pas une carte du cerveau. Dans le modèle de Gross (1998), nommer est une intervention précoce : qui sait qui est aux commandes peut réévaluer la situation avant de réagir. Résultat clé pour le skill : quand des adultes nommaient l’émotion d’un visage, l’amygdale, un centre d’alarme du cerveau, réagissait moins fort (Lieberman et al., 2007) – l’émotion reste, mais conduit moins seule. Le personnage inventé de Jana crée de la distance : parler de ses émotions est plus facile que des siennes.",
+        "mission": "Nomme en silence qui est aux commandes. Que fais-tu ensuite ?",
+        "hintergrund": "L’image de la console : les émotions ne perturbent pas la pensée, elles la pilotent ; la tristesse, par exemple, montre aux autres qu’on a besoin de réconfort (Keltner & Ekman, 2015). Nommer est une intervention précoce : qui sait qui est aux commandes peut réévaluer la situation avant de réagir (Gross, 1998). Quand des adultes nommaient une émotion, l’alarme du cerveau réagissait moins fort (Lieberman et al., 2007). Parler de Jana, personnage inventé, est plus facile que parler de soi.",
         "quellen": [
           "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
           "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428."
         ],
-        "achtung": "L’histoire est inventée et se joue entièrement avec les cartes scènes et les images figées ; aucun film n’est nécessaire – en montrer un seulement avec les droits de projection de l’école. Déménagement, mal du pays, disputes avec les parents et amis laissés derrière soi peuvent toucher des jeunes qui ont fui leur pays, vivent loin de leur famille ou ont perdu quelqu’un : leur en parler avant et les laisser choisir s’ils jouent. Personne ne joue une vraie personne, images figées sans contact, l’exercice 3 reste privé. Si un jeune se tait ou pleure, lui en parler plus tard en tête-à-tête. En cas de signes de violence à la maison, informer le SePAS le jour même et suivre le protocole de protection.",
+        "achtung": "L’histoire est inventée et se joue sans film, avec les cartes scènes et les images figées ; personne ne joue une vraie personne, pas de contact, l’exercice 3 reste privé. Déménagement, mal du pays, disputes à la maison et adieux peuvent toucher des jeunes qui ont fui leur pays, vivent loin de leur famille ou ont perdu quelqu’un : leur en parler avant et les laisser choisir s’ils jouent. Si un jeune se tait ou pleure, lui parler plus tard en tête-à-tête ; en cas de signes de violence à la maison, informer le SePAS le jour même (protocole de protection de l’école).",
         "differenzierung": {
-          "leichter": "Pour les jeunes qui apprennent encore la langue : écrire au tableau les noms des cinq émotions dans les deux langues, avec les visages ; lire les cartes scènes lentement et avec des gestes – les images figées montrent ce qui se passe. Exercice 1 : seulement cocher ; exercice 2 ensemble au tableau ; pour les images figées, un rôle sans texte.",
-          "schwerer": "Décrire une scène du quotidien comme une scène de console : qui est aux commandes, qui veut y aller – et que se passerait-il si une autre émotion prenait le relais ? Ou écrire une cinquième scène pour Jana, deux semaines plus tard, et décider qui y est aux commandes."
+          "leichter": "Pour les jeunes qui apprennent encore la langue : écrire au tableau les noms des cinq émotions dans les deux langues, avec les visages, et lire les cartes scènes lentement avec des gestes – les images figées montrent ce qui se passe. Exercice 1 : seulement cocher ; exercice 2 ensemble au tableau ; pour les images figées, un rôle sans texte.",
+          "schwerer": "Décrire une scène du quotidien comme une scène de console : qui est aux commandes, qui veut y aller – et que se passe-t-il si une autre émotion prend le relais ? Ou écrire une cinquième scène pour Jana, deux semaines plus tard."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), scènes 1 et 2 avec questions et exercice 1 (15 min), scène 4 avec le banc et le message principal (15 min), placement avec trois situations (8 min), Skills-Pass, mission avec le moment et tour éclair (7 min). La scène 3, les exercices 2 et 3 et le skill « nommer l’émotion » sont supprimés ; l’exercice 3 peut être rattrapé au début de la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), scène 1 avec question et exercice 1 (10 min), scène 4 avec le message principal (15 min), un court placement avec trois situations (8 min), Skills-Pass, mission avec moment et annonce (7 min), nommer l’émotion (5 min). La scène 2, la pause active et les exercices 2 et 3 sont supprimés ; l’exercice 3 peut être rattrapé au début de la séance suivante."
       }
     }
   ],
@@ -549,16 +377,18 @@
       ],
       "de": {
         "titel": "Wer sitzt am Steuer?",
-        "untertitel": "Fünf Gefühle, ein Steuerpult – und wer gerade dran ist, bestimmt mit, was du tust.",
+        "untertitel": "Fünf Gefühle, ein Steuerpult.",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Stell dir vor, in deinem Kopf gibt es eine Steuerzentrale mit einem Steuerpult. Dort arbeiten Freude, Kummer, Angst, Wut und Ekel. Wer gerade am Pult steht, bestimmt mit, was du sagst und tust. Bei Jana, die gerade umgezogen ist, kannst du zuschauen."
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Jedes Gefühl hat eine Aufgabe, auch Kummer. Kummer zeigt anderen: Ich brauche Trost. Wegsperren geht nicht – er meldet sich trotzdem."
           },
           {
             "art": "aufgabe",
             "text": "Wer steht am Pult? Kreuze nach jedem Standbild an.",
-            "hinweis": "Mehr als ein Kreuz pro Szene ist erlaubt.",
+            "hinweis": "Mehr als ein Kreuz ist erlaubt.",
             "symbole": [
               "ankreuzen"
             ]
@@ -568,7 +398,6 @@
             "items": [
               "Szene 1 · Der Umzugstag",
               "Szene 2 · Der erste Tag im Lycée",
-              "Szene 3 · Der Abend",
               "Szene 4 · Auf der Bank"
             ],
             "optionen": [
@@ -581,7 +410,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Wähle zwei unangenehme Gefühle aus den Szenen. Was machen sie – und wozu sind sie für Jana gut?",
+            "text": "Wähle ein unangenehmes Gefühl: Was macht es – und wozu ist es gut?",
             "symbole": [
               "partner",
               "schreiben"
@@ -591,31 +420,25 @@
             "art": "tabelle",
             "spalten": [
               "Gefühl",
-              "Was macht es in der Szene?",
+              "Was macht es?",
               "Wozu ist es gut?"
             ],
             "breiten": [
               1,
-              2.4,
-              2.2
+              2.2,
+              2
             ],
             "zeilen": 2,
             "beispiel": [
               "Angst",
-              "Sie lässt Jana rufen, bevor das Fahrrad vom Umzugswagen fällt.",
-              "Sie schützt vor Gefahren."
+              "Jana ruft, bevor das Fahrrad fällt.",
+              "Sie schützt vor Gefahr."
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "merke",
-            "titel": "Kummer hat seinen Platz",
-            "text": "Kummer zeigt anderen: Ich brauche Trost. Wer Kummer wegsperren will, wird ihn nicht los – er meldet sich trotzdem, oft im falschen Moment."
           },
           {
             "art": "aufgabe",
             "text": "Und bei dir? Ergänze die Sätze.",
-            "hinweis": "Stichworte reichen. Du entscheidest, was du davon erzählst.",
+            "hinweis": "Stichworte reichen. Du entscheidest, was du erzählst.",
             "symbole": [
               "nachdenken",
               "schreiben"
@@ -628,31 +451,14 @@
               "Am meisten erkenne ich mich in …, weil …"
             ],
             "linien": 2
-          },
-          {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Du entscheidest, was du teilst.",
-            "text": "Aufgabe 3 gehört dir. Du liest nur vor, wenn du willst."
-          },
-          {
-            "art": "info",
-            "symbol": "tipp",
-            "titel": "Gefühl benennen – dein Skill",
-            "punkte": [
-              "Stopp: einmal lang ausatmen.",
-              "Sag im Kopf: Gerade steht … am Pult – mit einem genauen Wort vom Gefühlsrad.",
-              "Frag dich: Was will mir das Gefühl sagen – und was brauche ich jetzt?"
-            ]
           }
         ],
         "lehrer": {
           "ziel": "Die Jugendlichen erkennen in Standbildern, welches Gefühl am Steuer ist, begründen, wozu auch unangenehme Gefühle gut sind, und übertragen das Bild vom Steuerpult auf sich.",
           "ablauf": [
-            "Einheit 10, Schritte 3, 4 und 6: nach jedem Standbild in Aufgabe 1 ankreuzen.",
-            "Schritt 4: nach dem Zurückspulen Aufgabe 2 zu zweit (5 Min.).",
-            "Schritt 7: nach der Aufstellung Aufgabe 3 allein (5 Min.); Stichworte oder eine Zeichnung reichen, vorgelesen wird nur freiwillig.",
-            "Schritt 8: der Skill „Gefühl benennen“ steht im Kasten; der Kasten „Aus der Forschung“ fasst den Befund von Lieberman et al. (2007) zusammen."
+            "Einheit 10, Schritt 3: nach jedem Standbild in Aufgabe 1 ankreuzen; nach den Szenen 1 und 2 Aufgabe 2 zu zweit.",
+            "Schritt 5: nach Szene 4 die letzte Zeile in Aufgabe 1 ankreuzen; nach der Aufstellung Aufgabe 3 allein (8 Min.); Stichworte oder eine Zeichnung reichen, vorgelesen wird nur freiwillig.",
+            "Der Skill „Gefühl benennen“ steht im Handbuch (Schritt 6); der Kasten „Gut zu wissen“ fasst die Hauptbotschaft zusammen."
           ],
           "hintergrund": "Gefühle ordnen das Denken und regeln das Zusammenleben; Kummer zeigt anderen, dass jemand Trost braucht (Keltner & Ekman, 2015). Die fünf Figuren entsprechen Grundgefühlen nach Ekman (1992). Benannten Erwachsene ein Gefühl, reagierte die Amygdala schwächer (Lieberman et al., 2007). Über Janas Gefühle zu sprechen, fällt leichter als über die eigenen.",
           "quellen": [
@@ -665,16 +471,18 @@
       },
       "fr": {
         "titel": "Qui est aux commandes ?",
-        "untertitel": "Cinq émotions, une console – et celle qui est aux commandes décide en partie de ce que tu fais.",
+        "untertitel": "Cinq émotions, une console.",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Imagine que dans ta tête, il y a une salle de contrôle avec une console. Joie, Tristesse, Peur, Colère et Dégoût y travaillent. Celle qui est aux commandes décide en partie de ce que tu dis et de ce que tu fais. Chez Jana, qui vient de déménager, tu peux regarder ce qui se passe."
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Bon à savoir",
+            "text": "Chaque émotion a un rôle, Tristesse aussi. Tristesse montre aux autres : j’ai besoin de réconfort. On ne peut pas l’enfermer – elle revient quand même."
           },
           {
             "art": "aufgabe",
             "text": "Qui est aux commandes ? Coche après chaque image figée.",
-            "hinweis": "Tu peux faire plus d’une croix par scène.",
+            "hinweis": "Tu peux faire plusieurs croix.",
             "symbole": [
               "ankreuzen"
             ]
@@ -684,7 +492,6 @@
             "items": [
               "Scène 1 · Le jour du déménagement",
               "Scène 2 · Le premier jour au lycée",
-              "Scène 3 · Le soir",
               "Scène 4 · Sur le banc"
             ],
             "optionen": [
@@ -697,7 +504,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Choisis deux émotions désagréables des scènes. Que font-elles – et à quoi servent-elles pour Jana ?",
+            "text": "Choisis une émotion désagréable : que fait-elle – et à quoi sert-elle ?",
             "symbole": [
               "partner",
               "schreiben"
@@ -707,31 +514,25 @@
             "art": "tabelle",
             "spalten": [
               "Émotion",
-              "Ce qu’elle fait dans la scène",
+              "Ce qu’elle fait",
               "À quoi elle sert"
             ],
             "breiten": [
               1,
-              2.4,
-              2.2
+              2.2,
+              2
             ],
             "zeilen": 2,
             "beispiel": [
               "Peur",
-              "Elle fait crier Jana avant que le vélo tombe du camion.",
-              "Elle protège des dangers."
+              "Jana crie avant que le vélo tombe.",
+              "Elle protège du danger."
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "merke",
-            "titel": "Tristesse a sa place",
-            "text": "Tristesse montre aux autres : j’ai besoin de réconfort. Qui veut l’enfermer ne s’en débarrasse pas – elle revient quand même, souvent au mauvais moment."
           },
           {
             "art": "aufgabe",
             "text": "Et toi ? Complète les phrases.",
-            "hinweis": "Des mots-clés suffisent. Tu décides de ce que tu en racontes.",
+            "hinweis": "Des mots-clés suffisent. Tu décides de ce que tu racontes.",
             "symbole": [
               "nachdenken",
               "schreiben"
@@ -744,31 +545,14 @@
               "Je me reconnais le plus dans …, parce que…"
             ],
             "linien": 2
-          },
-          {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Tu décides de ce que tu partages.",
-            "text": "L’exercice 3 t’appartient. Tu ne le lis à voix haute que si tu le veux."
-          },
-          {
-            "art": "info",
-            "symbol": "tipp",
-            "titel": "Nommer l’émotion – ton skill",
-            "punkte": [
-              "Stop : expire une fois, longuement.",
-              "Dis-toi dans ta tête : en ce moment, c’est … qui est aux commandes – avec un mot précis de la roue.",
-              "Demande-toi : que veut me dire cette émotion – et de quoi ai-je besoin maintenant ?"
-            ]
           }
         ],
         "lehrer": {
           "ziel": "Les jeunes reconnaissent dans des images figées l’émotion aux commandes, expliquent à quoi servent aussi les émotions désagréables et appliquent l’image de la console à eux-mêmes.",
           "ablauf": [
-            "Séance 10, étapes 3, 4 et 6 : cocher l’exercice 1 après chaque image figée.",
-            "Étape 4 : après le retour en arrière, exercice 2 à deux (5 min).",
-            "Étape 7 : après le placement, exercice 3 seul (5 min) ; des mots-clés ou un dessin suffisent, lecture à voix haute seulement si on le souhaite.",
-            "Étape 8 : le skill « nommer l’émotion » figure dans l’encadré ; l’encadré « Ce que dit la recherche » résume le résultat de Lieberman et al. (2007)."
+            "Séance 10, étape 3 : cocher l’exercice 1 après chaque image figée ; après les scènes 1 et 2, exercice 2 à deux.",
+            "Étape 5 : après la scène 4, cocher la dernière ligne de l’exercice 1 ; après le placement, exercice 3 seul (8 min) ; des mots-clés ou un dessin suffisent, lecture à voix haute seulement si on le souhaite.",
+            "Le skill « nommer l’émotion » figure dans le manuel (étape 6) ; l’encadré « Bon à savoir » résume le message principal."
           ],
           "hintergrund": "Les émotions organisent la pensée et règlent la vie en commun ; la tristesse montre aux autres qu’on a besoin de réconfort (Keltner & Ekman, 2015). Les cinq personnages correspondent à des émotions de base selon Ekman (1992). Quand des adultes nommaient une émotion, l’amygdale réagissait moins fort (Lieberman et al., 2007). Parler des émotions de Jana est plus facile que parler des siennes.",
           "quellen": [
@@ -882,7 +666,7 @@
           "ziel": "Mit Schildern und Szenenkarten erzählt die Klasse Janas Geschichte selbst: Sie baut die Steuerzentrale in Standbildern nach und erkennt, welches Gefühl am Steuer ist – ohne Film, ohne Technik.",
           "ablauf": [
             "Schilder auf festes Papier kopieren und ausschneiden, Szenenkarten einmal kopieren.",
-            "Einheit 10, Schritte 3, 4 und 6: Szenenkarte bis zum Stopp vorlesen; die Klasse entscheidet, wer ans Pult muss; Standbild bauen, weiterlesen, dann die Frage aus Schritt 3.",
+            "Einheit 10, Schritte 3 und 5 (Szenen 1, 2 und 4): Szenenkarte bis zum Stopp vorlesen; die Klasse entscheidet, wer ans Pult muss; Standbild bauen, weiterlesen, dann die Frage dazu stellen. Szene 3 bleibt in dieser Stunde liegen.",
             "Die Mutter (Szene 3), Mathis und Sofia (Szene 4) spielen Freiwillige ohne Schild."
           ],
           "hintergrund": "Standbilder schaffen Abstand: Die Jugendlichen zeigen Gefühle einer erfundenen Figur, nicht ihre eigenen. Die fünf Figuren entsprechen Grundgefühlen nach Ekman (1992); dass Kummer anderen zeigt, dass jemand Trost braucht, betonen Keltner & Ekman (2015).",
@@ -971,7 +755,7 @@
           "ziel": "Avec les pancartes et les cartes scènes, la classe raconte elle-même l’histoire de Jana : elle reconstruit la salle de contrôle en images figées et reconnaît l’émotion aux commandes – sans film, sans technique.",
           "ablauf": [
             "Photocopier les pancartes sur papier épais et les découper, photocopier une fois les cartes scènes.",
-            "Séance 10, étapes 3, 4 et 6 : lire la carte scène jusqu’au stop ; la classe décide qui va aux commandes ; construire l’image figée, lire la suite, puis poser la question de l’étape 3.",
+            "Séance 10, étapes 3 et 5 (scènes 1, 2 et 4) : lire la carte scène jusqu’au stop ; la classe décide qui va aux commandes ; construire l’image figée, lire la suite, puis poser la question correspondante. La scène 3 reste de côté pendant cette séance.",
             "La mère (scène 3), Mathis et Sofia (scène 4) sont joués par des volontaires sans pancarte."
           ],
           "hintergrund": "Les images figées créent de la distance : les jeunes montrent les émotions d’un personnage inventé, pas les leurs. Les cinq personnages correspondent à des émotions de base selon Ekman (1992) ; Keltner & Ekman (2015) soulignent que la tristesse montre aux autres qu’on a besoin de réconfort.",

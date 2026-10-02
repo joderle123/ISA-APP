@@ -38,24 +38,19 @@
         "ziele": [
           "lösen in Tischgruppen Aufgaben, bei denen jede Person gebraucht wird",
           "übernehmen eine feste Rolle im Team und füllen sie aus",
-          "benennen, was ihrem Team geholfen und was gestört hat",
-          "ergänzen die Klassenvereinbarung um ein oder zwei Team-Regeln"
+          "benennen, was dem Team hilft und was stört, und halten eine Team-Regel fest"
         ],
         "material": [
-          "Gefühlsrad-Plakat, 20 Klebepunkte",
-          "Team-Karten: fünf Umschläge",
-          "Altpapier, 20 Blatt je Tischgruppe",
-          "Zollstock oder Maßband",
-          "Timer, für alle sichtbar",
-          "Plakat der Klassenvereinbarung",
-          "Plakat „Das haben wir gemeinsam“",
+          "Gefühlsrad-Plakat, Klebepunkte (1 je Person)",
+          "Team-Karten in fünf Umschlägen",
+          "Altpapier (20 Blatt je Tischgruppe), Zollstock, Timer",
+          "Plakate: Klassenvereinbarung, „Das haben wir gemeinsam“",
           "Schülerheft für jede Person",
           "Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
           "Team-Karten fünfmal kopieren und schneiden: je Tischgruppe ein Umschlag mit vier Rollen- und vier Hinweiskarten.",
-          "Für jede Tischgruppe 20 Blatt Altpapier bereitlegen (Fehldrucke aus dem Kopierraum); einen Timer an der Tafel oder am Beamer bereithalten.",
-          "Die Tafel teilen: „Hat geholfen“ – „Hat gestört“ (Schritt 7); die Klassenvereinbarung aufhängen.",
+          "Altpapier (20 Blatt je Tischgruppe) und Timer bereitlegen; an die Tafel vier Wetter-Symbole (Sonne, Wolke, Regen, Gewitter) und die Spalten „Hat geholfen“ – „Hat gestört“.",
           "Prüfen, ob eine Tischgruppe getrennt werden muss (Streit, Ausschluss); dann offen selbst einteilen."
         ],
         "ablauf": [
@@ -67,47 +62,27 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Rückblick und Thema: Was schaffen wir nur gemeinsam?"
+            "titel": "Rückblick, Mission und Thema der Stunde"
           },
           {
-            "min": "15–30",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Rollen und Runde 1: das Bank-Rätsel"
-          },
-          {
-            "min": "30–45",
-            "phase": "aktiv",
-            "titel": "Runde 2: der Papierturm"
+            "titel": "Rollen, Bank-Rätsel und Papierturm"
           },
           {
             "min": "45–50",
             "phase": "aktiv",
-            "titel": "Bewegungspause: Klatschwelle mit Rekord"
+            "titel": "Bewegungspause: Zählen bis 20"
           },
           {
-            "min": "50–60",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Runde 3: Die ganze Klasse zählt bis 20"
+            "titel": "Was hat geholfen? Team-Regeln für die Klasse"
           },
           {
-            "min": "60–75",
-            "phase": "uebung",
-            "titel": "Was hat geholfen, was hat gestört?"
-          },
-          {
-            "min": "75–85",
-            "phase": "uebung",
-            "titel": "Das braucht unsere Klasse"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: Im Takt atmen"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, Daumen und Mission"
           }
         ],
         "schritte": [
@@ -115,204 +90,126 @@
             "titel": "Check-in: Das Wetter unserer Klasse",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person einen Punkt auf das Gefühlsrad-Plakat; der Punkt der Lehrkraft klebt schon. Wenn alle sitzen, sagt die Lehrkraft einen Satz zu ihrem Punkt. Dann schaut die Klasse auf das ganze Plakat: Wenn die Punkte das Wetter unserer Klasse wären – welches Wetter haben wir heute? Zwei, drei Freiwillige beschreiben das Klassenwetter, etwa: überwiegend sonnig, bei müde ein paar Wolken (4 Min.). Zum Schluss an das Ruhezeichen erinnern und ankündigen: Heute arbeitet ihr in euren Tischgruppen als Team.",
+            "text": "Beim Hereinkommen klebt jede Person einen Punkt auf das Gefühlsrad; die Lehrkraft beginnt mit einem Satz zu ihrem Punkt. Dann schaut die Klasse auf das ganze Plakat: Wenn die Punkte das Wetter unserer Klasse wären – welches Wetter haben wir heute? Zwei, drei Freiwillige beschreiben es, zum Beispiel: überwiegend sonnig, bei müde ein paar Wolken.",
             "sagen": [
               "Schaut auf alle Punkte zusammen: Welches Wetter hat unsere Klasse heute?",
-              "Niemand muss sagen, welcher Punkt seiner ist. Es geht um das Wetter der ganzen Klasse."
+              "Niemand muss sagen, welcher Punkt seiner ist."
             ],
-            "tipp": "Das Klassenwetter nimmt Druck: Niemand spricht über sich, und trotzdem sieht die Klasse, wie es ihr geht. Vier Wetter-Symbole an der Tafel (Sonne, Wolke, Regen, Gewitter) helfen allen, die die Sprache noch lernen. Ist das Wetter eher trüb, das ernst nehmen – Teamaufgaben gelingen dann langsamer.",
-            "wennEsKippt": "Wird ein Punkt kommentiert („Wer hat denn wütend geklebt?“), freundlich stoppen: Die Punkte sind anonym, wir raten nicht, wem sie gehören. Kleben auffällig viele Punkte bei wütend oder traurig, kurz würdigen und nicht vertiefen: Das nehme ich mit – heute achten wir gut aufeinander."
+            "wennEsKippt": "Wird ein Punkt kommentiert („Wer hat denn wütend geklebt?“), freundlich stoppen: Die Punkte sind anonym. Kleben auffällig viele bei wütend oder traurig, kurz würdigen, nicht vertiefen und heute gut aufeinander achten."
           },
           {
-            "titel": "Rückblick und Thema: Was schaffen wir nur gemeinsam?",
+            "titel": "Rückblick, Mission und Thema der Stunde",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann kurz nach der Wochen-Mission fragen: Kam euer Moment – Bus, Pause, Kantine –, und habt ihr jemandem eine Frage gestellt und nachgefragt? Daumen hoch, Mitte oder runter; eine Stimme erzählt, wie es war – nicht, was die andere Person erzählt hat. Auf das Plakat „Das haben wir gemeinsam“ zeigen und die Leitfrage für heute an die Tafel schreiben: Was schaffen wir nur gemeinsam?",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – und was hast du gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Auf das Plakat „Das haben wir gemeinsam“ zeigen und die Leitfrage für heute an die Tafel schreiben: Was schaffen wir nur gemeinsam?",
             "sagen": [
-              "Letzte Woche habt ihr entdeckt, was ihr gemeinsam habt. Heute geht es darum, was ihr nur gemeinsam schafft."
+              "Kam euer Moment, und habt ihr jemanden gefragt und nachgefragt – Daumen hoch, Mitte oder runter?",
+              "Letzte Woche habt ihr entdeckt, was ihr gemeinsam habt – heute geht es darum, was ihr nur gemeinsam schafft."
             ],
-            "tipp": "Die Mission nur kurz anfragen; wer eine Frage gestellt hat, bekommt ein Lächeln, keine Bewertung. Eine Geschichte reicht. Kam der Moment nicht, ist das keine Niederlage – die nächste Mission bekommt einen neuen."
+            "tipp": "Wer eine Frage gestellt hat, bekommt ein Lächeln, keine Bewertung. Kam der Moment nicht, ist das keine Niederlage – die nächste Mission bekommt einen neuen."
           },
           {
-            "titel": "Rollen und Runde 1: das Bank-Rätsel",
-            "dauer": 15,
+            "titel": "Rollen, Bank-Rätsel und Papierturm",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Rollen (3 Min.): Jede Tischgruppe bekommt ihren Umschlag und verteilt die vier Rollenkarten: Wer am nächsten an der Tafel sitzt, übernimmt die Moderation, die anderen Rollen folgen im Uhrzeigersinn. Jede Person liest ihre Rolle laut vor. Bank-Rätsel (9 Min.): Die Aufgabe vorlesen (Aufgabe 1 im Heft, mit den vier Bildern), dann nimmt jede Person eine Hinweiskarte. Regel: Jede Person liest ihre Hinweise selbst vor; Karten werden nicht gezeigt und nicht getauscht. Alle tragen die Lösung in ihr Raster ein. Wer fertig ist, sagt die Lösung leise der Lehrkraft und macht schon den Team-Check. Team-Check (3 Min.): Jede Person füllt in Aufgabe 2 die Spalte Runde 1 aus.",
+            "text": "Jede Tischgruppe bekommt einen Umschlag mit vier Rollenkarten, die nach jeder Runde eine Person weiterwandern. In Runde 1 löst sie das Bank-Rätsel: Jede Person hat Hinweise, und nur wenn alle ihre Hinweise vorlesen, ist es lösbar. In Runde 2 baut sie einen Papierturm, bei dem jede Person nur ihre eigenen fünf Blätter anfasst.",
             "sagen": [
-              "Ihr habt vier Hinweiskarten, und keine reicht allein. Ihr schafft es nur, wenn jede Person ihre Hinweise vorliest.",
-              "Die Karten bleiben bei euch. Lesen ja, zeigen nein."
+              "Ihr habt vier Hinweiskarten, und keine reicht allein – lesen ja, zeigen nein.",
+              "Jede Person fasst nur ihre eigenen fünf Blätter an; wer Hilfe braucht, sagt es."
             ],
             "punkte": [
-              "Moderation: achtet darauf, dass jede Person zu Wort kommt, und fragt: Wer hat noch eine Idee?",
-              "Zeit: schaut auf den Timer an der Tafel, sagt die Halbzeit und die letzte Minute an.",
-              "Material und Notizen: holt das Material, schreibt auf, was die Gruppe herausfindet, räumt auf.",
-              "Beobachtung: macht mit und achtet darauf, was dem Team hilft und was stört; berichtet später ohne Namen."
+              "Gut zu wissen (3 Min.): den Kasten im Heft lesen – jede Person hat etwas, das den anderen fehlt.",
+              "Rollen (3 Min.): Moderation, Zeit, Material und Notizen, Beobachtung; wer am nächsten an der Tafel sitzt, ist Moderation, die anderen Rollen folgen im Uhrzeigersinn.",
+              "Bank-Rätsel (9 Min.): Aufgabe 1 im Heft; jede Person nimmt eine Hinweiskarte und liest vor; alle tragen die Lösung ein. Lösung: Platz 1 Aylin zeichnet, Platz 2 Tiago spielt am Handy, Platz 3 Mila liest, Platz 4 Noah hört Musik.",
+              "Rollenwechsel (3 Min.): Die Rollen wandern weiter; die Beobachtung merkt sich einen Satz zu dem, was geholfen oder gestört hat.",
+              "Papierturm (12 Min.): 2 Min. nur planen, 7 Min. bauen (falten, rollen, reißen; kein Kleber), 3 Min. messen; der Turm muss zehn Sekunden allein stehen."
             ],
-            "tipp": "Lösung: Platz 1 Aylin zeichnet, Platz 2 Tiago spielt am Handy, Platz 3 Mila liest, Platz 4 Noah hört Musik. Gruppen, die feststecken, nicht die Lösung verraten, sondern fragen: Welcher Hinweis ist ganz sicher? Rollen dürfen einmal getauscht werden, wenn beide einverstanden sind; wer sich gern bewegt, ist bei Material gut aufgehoben, wer noch wenig Deutsch spricht, bei der Zeit.",
-            "wennEsKippt": "Greift jemand nach den Karten der anderen, kurz stoppen und auf die Regel zeigen: Lesen ja, zeigen nein – sonst ist es kein Teamspiel. Liest jemand ungern vor, darf die Moderation fragen, ob sie die Karte leise vorlesen darf; die Person nickt oder schüttelt den Kopf. Gibt eine Gruppe nach fünf Minuten auf, eine Bank mit vier Plätzen an die Tafel zeichnen und mit einem sicheren Hinweis beginnen.",
+            "wennEsKippt": "Greift jemand nach Karten oder Blättern der anderen oder wirft den Turm aus Frust um, kurz stoppen: Lesen ja, zeigen nein – und Frust ist normal, was braucht ihr jetzt? Gibt eine Gruppe beim Rätsel nach fünf Minuten auf, eine Bank mit vier Plätzen an die Tafel zeichnen und mit einem sicheren Hinweis beginnen.",
             "blatt": "ff7-team-karten"
           },
           {
-            "titel": "Runde 2: der Papierturm",
-            "dauer": 15,
-            "phase": "aktiv",
-            "text": "Die Rollen wandern eine Person weiter im Uhrzeigersinn. Jede Tischgruppe bekommt 20 Blatt Altpapier; die Rolle Material hält sie, bis die Planung vorbei ist. Planen (2 Min.): nur reden, nichts anfassen. Dann nimmt jede Person fünf Blätter und darf nur ihre eigenen anfassen. Falten, Rollen und Reißen sind erlaubt, Kleber und Klebeband nicht. Bauen (7 Min.): Der Turm muss am Ende zehn Sekunden allein stehen. Messen (2 Min.): Die Lehrkraft geht mit dem Zollstock herum, die Höhen kommen an die Tafel. Team-Check (3 Min.): In Aufgabe 2 die Spalte Runde 2 ausfüllen; die Beobachtung merkt sich einen Satz für später, die Rolle Material räumt das Papier weg.",
-            "sagen": [
-              "Jede Person fasst nur ihre eigenen fünf Blätter an. Wer Hilfe braucht, sagt es – die anderen bauen dann mit ihren Blättern mit.",
-              "Zwei Minuten nur reden. Moderation, achtet darauf, dass jede Idee gehört wird."
-            ],
-            "tipp": "Die Höhe ist Nebensache. Wichtiger ist, wie die Gruppe zu ihrem Turm gekommen ist: Wer hatte die Idee, wer hat gebaut, wer wurde überhört? Genau das wertet die Klasse nach der Pause aus.",
-            "wennEsKippt": "Greift jemand nach den Blättern anderer oder wirft den Turm aus Frust um, kurz anhalten: Frust ist normal – was braucht ihr jetzt? Wer nicht bauen will, gibt seine Blätter an die Gruppe ab und beobachtet. Steht eine Gruppe nach drei Minuten ohne Plan da, die Moderation fragen: Was ist eure erste Idee?",
-            "blatt": "ff7-wir-als-team"
-          },
-          {
-            "titel": "Bewegungspause: Klatschwelle mit Rekord",
+            "titel": "Bewegungspause: Zählen bis 20",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen auf und schütteln Arme und Beine aus. Dann wandert ein Klatscher in fester Reihenfolge durch die Klasse: Die Lehrkraft beginnt, dann geht es Tisch für Tisch im Uhrzeigersinn, bis der Klatscher zurück ist; die Lehrkraft stoppt die Zeit. Die Klasse hat 30 Sekunden, um zu überlegen, wie sie schneller wird, dann folgen der zweite und der dritte Versuch. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Alle stehen hinter ihrem Stuhl und schütteln Arme und Schultern aus. Dann zählt die Klasse gemeinsam bis 20: Jede Person darf jederzeit die nächste Zahl sagen, aber niemand zwei hintereinander; sprechen zwei gleichzeitig, geht es bei 1 wieder los.",
             "sagen": [
-              "Die Welle ist nur so schnell wie ihre langsamste Stelle. Wie werdet ihr schneller?"
+              "Das klappt nur zusammen – und nur, wenn alle auf alle achten."
             ],
-            "tipp": "Beim dritten Versuch schafft die Klasse oft die Hälfte der ersten Zeit – ein schneller Erfolg, der zeigt: Absprachen helfen. Die Zeiten an die Tafel schreiben.",
-            "wennEsKippt": "Klatscht jemand absichtlich zu spät oder doppelt, nicht schimpfen, sondern neu starten: Die Zeit läuft von vorn. Wird daraus ein Wettbewerb einzelner Tische, daran erinnern: Gewertet wird nur die ganze Klasse."
+            "tipp": "Das Spiel klappt selten beim ersten Versuch, und genau darum geht es: Zum Schluss fragen, was geholfen hat – das kommt unter „Hat geholfen“ an die Tafel. Liegt die große Pause dazwischen, entfällt die Übung."
           },
           {
-            "titel": "Runde 3: Die ganze Klasse zählt bis 20",
-            "dauer": 10,
+            "titel": "Was hat geholfen? Team-Regeln für die Klasse",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Alle sitzen still, die Augen offen oder geschlossen. Die Klasse zählt bis zur Zahl der Mitspielenden, meist bis 20: Jede Person sagt höchstens eine Zahl, eine Reihenfolge wird nicht abgesprochen. Sagen zwei gleichzeitig eine Zahl, beginnt die Klasse wieder bei 1 (3 Min.). Nach einigen Fehlversuchen anhalten: Was könnte helfen, ohne eine Reihenfolge festzulegen? Zwei, drei Ideen sammeln, etwa: nach jeder Zahl kurz warten, nicht vorpreschen, auf die anderen hören (2 Min.). Dann weitere Versuche (3 Min.). Zum Schluss kurz fragen: Was hat geholfen? Die Antworten kommen an die Tafel unter „Hat geholfen“ (2 Min.).",
-            "sagen": [
-              "Jede Person sagt höchstens eine Zahl, und niemand legt eine Reihenfolge fest. Sprechen zwei gleichzeitig, fangen wir bei 1 an.",
-              "Was hat beim letzten Versuch geholfen?"
-            ],
-            "tipp": "Die Übung gelingt selten beim ersten Mal, und genau darum geht es: Sie klappt erst, wenn alle aufeinander achten, statt vorzupreschen. Auch wer sonst wenig sagt, ist hier unverzichtbar – eine einzige Zahl reicht. Ist die Zeit knapp, die Runde auf fünf Minuten kürzen.",
-            "wennEsKippt": "Ruft jemand absichtlich dazwischen, gelassen neu beginnen; beim dritten Mal wird diese Person Schiedsrichterin oder Schiedsrichter: Sie hört zu und meldet, wenn zwei gleichzeitig sprechen. Diese Rolle kann auch übernehmen, wer nicht mitzählen möchte. Kommt die Klasse nicht über 10, das als Rekord feiern und mit geschlossenen Augen weiterversuchen."
-          },
-          {
-            "titel": "Was hat geholfen, was hat gestört?",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Tischgruppe (4 Min.): Die Gruppe vergleicht ihren Team-Check aus Runde 1 und 2: Was lief in Runde 2 besser oder schlechter – und warum? Jede Person kreuzt in Aufgabe 3 an, was am meisten geholfen hat; die Beobachtung einigt sich mit der Gruppe auf eine Sache, die geholfen, und eine, die gestört hat. Klasse (8 Min.): Die Beobachtung jeder Tischgruppe nennt beides – ohne Namen. Die Lehrkraft schreibt mit (Tafelbild), die Klasse ergänzt. Dann fragen: Was davon gilt auch für die ganze Klasse, nicht nur für die Tischgruppe? Zwei, drei Punkte unterstreichen (3 Min.).",
+            "text": "Zuerst vergleicht jede Tischgruppe, was in Runde 1 und 2 geholfen und was gestört hat; die Beobachtung berichtet ohne Namen. Dann überlegt die Klasse, was davon auch für sie als Ganzes gilt, und formuliert ein oder zwei Team-Regeln für die Klassenvereinbarung.",
             "sagen": [
               "Kritisiert den Plan, nicht die Person: nicht ‚Du hast alles kaputt gemacht‘, sondern ‚Wir hatten nicht abgesprochen, wer was baut‘.",
               "Was davon brauchen wir auch als ganze Klasse?"
             ],
-            "tabelle": {
-              "spalten": [
-                "Hat geholfen",
-                "Hat gestört"
-              ],
-              "zeilen": [
-                [
-                  "Alle haben ihre Hinweise vorgelesen.",
-                  "Zwei haben gleichzeitig geredet."
-                ],
-                [
-                  "Wir haben erst geplant, dann gebaut.",
-                  "Eine Person hat alles allein gemacht."
-                ],
-                [
-                  "Die Moderation hat alle gefragt.",
-                  "Ideen wurden überhört."
-                ],
-                [
-                  "Die Zeit wurde angesagt.",
-                  "Jemand wurde ausgelacht."
-                ]
-              ]
-            },
-            "tipp": "Die Beobachtungsrolle zahlt sich hier aus: Wer beobachtet hat, findet oft die genaueren Sätze. Kommt etwas in mehreren Gruppen vor, das unterstreichen – daraus entstehen gleich die Team-Regeln.",
-            "wennEsKippt": "Fallen Namen oder Schuldzuweisungen („Wegen ihm …“), sofort umlenken: Was hat im Team gefehlt? Die Sache, nicht die Person. Kommt nur „War gut“, konkreter fragen: Wer hat heute etwas getan, das dem Team geholfen hat? Über Hilfreiches zu sprechen, fällt oft leichter.",
-            "blatt": "ff7-wir-als-team"
-          },
-          {
-            "titel": "Das braucht unsere Klasse",
-            "dauer": 10,
-            "phase": "uebung",
-            "text": "Die Klassenvereinbarung aus Einheit 1 vorlesen und fragen: Welche Regel hat uns heute geholfen? Jede Regel, die geholfen hat, bekommt einen Haken (3 Min.). Dann: Was fehlt noch, damit wir als Klasse gut zusammenarbeiten? Aus den unterstrichenen Punkten an der Tafel formuliert die Klasse ein oder zwei Team-Regeln, positiv und in ihren eigenen Worten (4 Min.). Abstimmung mit dem Daumen: Kann jede und jeder damit leben? Die Regeln kommen unten auf das Plakat der Klassenvereinbarung und in Aufgabe 4 ins Heft (3 Min.).",
-            "sagen": [
-              "Welche unserer Regeln hat euch heute geholfen?",
-              "Was soll ab jetzt gelten, wenn wir in Gruppen arbeiten?"
-            ],
             "punkte": [
-              "Jede Person kommt zu Wort, bevor wir entscheiden.",
-              "Erst planen, dann loslegen.",
-              "Wir kritisieren den Plan, nicht die Person.",
-              "Wer fertig ist, hilft den anderen."
+              "Tischgruppe (6 Min.): Was lief in Runde 2 besser oder schlechter – und warum? Jede Person kreuzt in Aufgabe 2 an, was am meisten geholfen hat.",
+              "Beobachtung (8 Min.): Jede Tischgruppe nennt eine Sache, die geholfen, und eine, die gestört hat – ohne Namen; die Lehrkraft schreibt mit („Hat geholfen“ – „Hat gestört“).",
+              "Klasse (6 Min.): Was davon gilt auch für die ganze Klasse? Zwei, drei Punkte unterstreichen.",
+              "Klassenvereinbarung prüfen (5 Min.): vorlesen; jede Regel, die heute geholfen hat, bekommt einen Haken.",
+              "Team-Regeln (10 Min.): Die Klasse formuliert eine oder zwei Regeln positiv in eigenen Worten (Beispiele nur, wenn nichts kommt: Jede Person kommt zu Wort. Erst planen, dann loslegen); Daumen: Kann jede und jeder damit leben? Aufs Plakat und in Aufgabe 3 ins Heft."
             ],
-            "tipp": "Nur ergänzen, was die Klasse selbst vorschlägt; die Beispiele helfen nur, wenn nichts kommt. Ein Daumen zur Seite heißt: Ich kann damit leben – das reicht.",
-            "wennEsKippt": "Zeigt jemand den Daumen nach unten, fragen, was fehlt, und die Regel gemeinsam umformulieren, statt einfach die Mehrheit entscheiden zu lassen. Kommen nur Scherzregeln, eine mit Humor aufnehmen und nach dem Kern fragen: Was soll damit besser werden?",
+            "wennEsKippt": "Fallen Namen oder Schuldzuweisungen („Wegen ihm …“), sofort umlenken: Was hat im Team gefehlt? Kommen nur Scherzregeln, eine mit Humor aufnehmen und nach dem Kern fragen: Was soll damit besser werden?",
             "blatt": "ff7-wir-als-team"
           },
           {
             "titel": "Skill: Im Takt atmen",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Ankündigen: Zum Schluss atmet die ganze Klasse im selben Takt – ein Skill, den man auch allein nutzen kann, wenn es laut, hektisch oder zu viel wird (1 Min.). Alle sitzen, beide Füße auf dem Boden, eine Hand auf dem Bauch oder auf dem Tisch; die Augen bleiben offen, wer mag, schließt sie. Die Lehrkraft zählt leise vor: ein – zwei – drei – vier, aus – zwei – drei – vier (1 Min.). Dann übernimmt eine freiwillige Person das Zählen (1 Min.); zum Schluss atmet jede Person eine Minute still im eigenen Takt – wer aussteigen möchte, drückt stattdessen die Füße in den Boden und zählt bis zehn (1 Min.). Danach drei, vier Rückmeldungen: Wie war es, im selben Takt zu atmen? Wann könnte das allein helfen? (3 Min.) Erklären: Langsames, gleichmäßiges Atmen beruhigt den Körper; gemeinsam wirkt es wie ein Anker für die ganze Gruppe – als Angebot, nie als Strafe oder Mittel gegen Unruhe (3 Min.).",
+            "text": "Ein Skill, den man auch allein nutzen kann, wenn es laut, hektisch oder zu viel wird: Die Klasse atmet im selben Takt. Danach der Abschluss: ein Satz in den Skills-Pass, die Mission ansagen, den Moment wählen.",
             "sagen": [
-              "Ein – zwei – drei – vier. Aus – zwei – drei – vier.",
+              "Ein – zwei – drei – vier, aus – zwei – drei – vier.",
               "Wo könntet ihr das allein brauchen – in der Pause, vor einem Test, abends im Bett?"
             ],
             "punkte": [
-              "Füße auf den Boden, eine Hand auf den Bauch.",
-              "Vier Zählzeiten einatmen, vier Zählzeiten ausatmen.",
-              "Zehn Atemzüge im Takt – dann spüren, was anders ist."
+              "Füße auf den Boden, eine Hand auf den Bauch oder den Tisch; Augen offen oder geschlossen.",
+              "Vier Zählzeiten einatmen, vier ausatmen – langsames Atmen beruhigt den Körper; erst zählt die Lehrkraft, dann eine freiwillige Person (3 Min.).",
+              "Eine Minute still im eigenen Takt atmen; wer aussteigen möchte, drückt die Füße in den Boden und zählt bis zehn.",
+              "Skills-Pass (3 Min.): Leitfrage Was tue ich bei der nächsten Gruppenarbeit, damit es klappt? Stempel.",
+              "Mission und Moment (2 Min.): Mission ansagen; jede Person wählt ihren Moment – nächste Gruppenarbeit, Training, Spiel in der Pause – und schreibt ihn in die Spalte „Mein Moment: Wenn …“; Ausblick geben."
             ],
-            "tipp": "Vier Zählzeiten sind ein Richtwert: Wem das zu lang ist, atmet kürzer, aber gleichmäßig. Das Zählen an Freiwillige abzugeben, macht aus der Übung etwas, das der Klasse gehört. Drei Minuten Atmen reichen – länger wird die Stille für manche unangenehm.",
-            "wennEsKippt": "Kichern ist beim ersten Mal normal: nicht ermahnen, ruhig weiterzählen – nach drei, vier Atemzügen wird es meist still. Wer die Hand nicht auf den Bauch legen mag, legt sie auf den Tisch; niemand muss die Augen schließen. Wer ganz aussteigen will, bleibt still sitzen – das ist in Ordnung und wird nicht kommentiert."
-          },
-          {
-            "titel": "Skills-Pass, Daumen und Mission",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Was tue ich bei der nächsten Gruppenarbeit, damit es klappt? Danach gibt es den Stempel. Daumen (1 Min.): Wie gut waren wir heute als Klasse? Auf drei zeigen alle gleichzeitig. Wochen-Mission und Moment wählen (1 Min.): Die Mission ansagen (steht im Heft) – eine Sache tun, die dem Team hilft. Jede Person wählt ihren Moment, etwa die nächste Gruppenarbeit, das Training oder ein Spiel in der Pause, und schreibt ihn in die Spalte „Mein Moment: Wenn …“. Ausblick (1 Min.): Nächste Woche gründet ihr euren Klassenrat.",
-            "sagen": [
-              "Wie gut waren wir heute als Klasse – Daumen hoch, Mitte oder runter? Auf drei.",
-              "Wo seid ihr diese Woche in einem Team – Gruppenarbeit, Training, Spiel in der Pause? Schreibt diesen Moment ins Heft: Wenn …, dann tue ich eine Sache, die dem Team hilft."
-            ],
-            "tipp": "Die Turmhöhen und die Zeiten der Klatschwelle an der Tafel stehen lassen oder fotografieren: Nächste Woche im Klassenrat erinnern sie daran, was die Klasse gemeinsam schafft."
+            "wennEsKippt": "Kichern ist beim ersten Mal normal: ruhig weiterzählen, nach drei, vier Atemzügen wird es meist still. Wer die Hand nicht auf den Bauch legen mag, legt sie auf den Tisch; wer ganz aussteigen will, bleibt still sitzen und wird nicht kommentiert."
           }
         ],
-        "bruecke": "Nächste Woche gründet ihr euren Klassenrat: Ihr lernt seine Rollen und seinen Ablauf kennen und trefft eure erste echte Entscheidung als Klasse.",
-        "mission": "Wenn dein Moment kommt – die nächste Gruppenarbeit, das Training, ein Spiel in der Pause –, dann tu eine Sache, die deinem Team hilft: etwa jemanden nach seiner Idee fragen.",
-        "hintergrund": "Zusammenhalt entsteht, wenn eine Gruppe Aufgaben löst, bei denen jede Person gebraucht wird. Im Robbers-Cave-Experiment bauten erst solche gemeinsamen Ziele die Feindseligkeit zwischen zwei Gruppen ab – Begegnungen allein reichten nicht (Sherif et al., 1961). In der Schule bestätigt das eine Meta-Analyse: Bei jungen Jugendlichen fördern kooperative Ziele Leistung und Beziehungen, mehr als Wettbewerb oder Einzelarbeit (Roseth, Johnson & Johnson, 2008). Nach Tuckman (1965) bilden Gruppen ihre Normen erst, nachdem sie gemeinsam gehandelt und sich auch aneinander gerieben haben; die Auswertung macht diesen Schritt sichtbar, und die Team-Regeln kommen in die Klassenvereinbarung. Feste Rollen verhindern, dass zwei Lautstarke alles übernehmen und Stille übersehen werden. Das Atmen im Takt schließt die bewegte Stunde ruhig ab – kurz, Augen offen, Aussteigen erlaubt.",
+        "bruecke": "Nächste Woche gründet ihr euren Klassenrat und trefft eure erste echte Entscheidung als Klasse.",
+        "mission": "Hilf deinem Team einmal: Frag jemanden nach seiner Idee.",
+        "hintergrund": "Zusammenhalt entsteht, wenn eine Gruppe Aufgaben löst, bei denen jede Person gebraucht wird: Im Robbers-Cave-Experiment bauten erst gemeinsame Ziele die Feindseligkeit zwischen zwei Gruppen ab (Sherif et al., 1961). Bei jungen Jugendlichen fördern kooperative Ziele Leistung und Beziehungen mehr als Wettbewerb (Roseth, Johnson & Johnson, 2008). Gruppen bilden Normen, wenn sie gemeinsam handeln und sich aneinander reiben (Tuckman, 1965); feste Rollen verhindern, dass Lautstarke alles übernehmen.",
         "quellen": [
           "Sherif, M., Harvey, O. J., White, B. J., Hood, W. R. & Sherif, C. W. (1961). Intergroup Conflict and Cooperation: The Robbers Cave Experiment. Norman, OK: University Book Exchange.",
           "Roseth, C. J., Johnson, D. W. & Johnson, R. T. (2008). Promoting early adolescents’ achievement and peer relationships: The effects of cooperative, competitive, and individualistic goal structures. Psychological Bulletin, 134(2), 223–246.",
           "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399."
         ],
-        "achtung": "Teamaufgaben machen Rangordnungen sichtbar: Wer wird überhört, wer übernimmt alles, wer bleibt außen vor? Das nicht vor der Klasse kommentieren, sondern über die Rollen steuern und Gruppen bei Bedarf offen neu einteilen. Frust gehört dazu; wird jemand ausgelacht oder als Schuldiger hingestellt, sofort stoppen: Kritisiert wird der Plan, nie die Person. Kein Körperkontakt bei den Aufgaben. Wer sich zurückzieht, bekommt die Rolle Beobachtung. Fällt auf, dass jemand dauerhaft ausgeschlossen wird, nach der Stunde mit Régent und SePAS sprechen.",
+        "achtung": "Teamaufgaben machen Rangordnungen sichtbar: Wer wird überhört, wer übernimmt alles, wer bleibt außen vor? Das nicht vor der Klasse kommentieren, sondern über die Rollen steuern und Gruppen bei Bedarf offen neu einteilen. Wird jemand ausgelacht oder als Schuldiger hingestellt, sofort stoppen: Kritisiert wird der Plan, nie die Person; kein Körperkontakt bei den Aufgaben, und wer dauerhaft ausgeschlossen wird, wird nach der Stunde mit Régent und SePAS besprochen.",
         "differenzierung": {
-          "leichter": "Eine Hinweiskarte darf eine Person vorlesen, die gut liest, wenn die Besitzerin oder der Besitzer zustimmt; die Bank wird an die Tafel gezeichnet, die vier Bilder auf dem Blatt helfen. Wer noch wenig Deutsch spricht, übernimmt zuerst die Rolle Zeit. Die Team-Regeln dürfen von der Tafel abgeschrieben werden; für die Spalte „Mein Moment“ reicht ein Wort wie Sport.",
-          "schwerer": "Schnelle Gruppen erfinden ein eigenes Bank-Rätsel mit vier Hinweiskarten für eine andere Gruppe. Oder die Beobachtung übernehmen und für die Klasse zusammenfassen, was in allen Gruppen geholfen hat."
+          "leichter": "Eine Hinweiskarte darf eine Person vorlesen, die gut liest, wenn die Besitzerin oder der Besitzer zustimmt; die Bank wird an die Tafel gezeichnet. Wer noch wenig Deutsch spricht, übernimmt zuerst die Rolle Zeit; die Team-Regeln dürfen von der Tafel abgeschrieben werden, und für „Mein Moment“ reicht ein Wort.",
+          "schwerer": "Schnelle Gruppen erfinden ein eigenes Bank-Rätsel mit vier Hinweiskarten für eine andere Gruppe. Oder sie übernehmen die Beobachtung und fassen für die Klasse zusammen, was in allen Gruppen geholfen hat."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), Rollen und Bank-Rätsel (15 Min.), Zählen bis 20 als Bewegungspause der ganzen Klasse (5 Min.), Was hat geholfen, was hat gestört? (12 Min.), eine Team-Regel für die Klassenvereinbarung (8 Min.), Skills-Pass, Mission und Moment wählen (5 Min.). Papierturm und Klatschwelle entfallen; der Turm eignet sich als Einstieg in eine spätere Stunde."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), Rollen und Bank-Rätsel (15 Min.), Zählen bis 20 als Bewegungspause (5 Min.), Was hat geholfen? mit einer Team-Regel für die Klassenvereinbarung (15 Min.), Skills-Pass, Mission und Moment (10 Min.). Papierturm und Skill entfallen; der Turm eignet sich als Einstieg in eine spätere Stunde."
       },
       "fr": {
         "titel": "Nous, la classe",
-        "kurz": "En îlots et avec des rôles précis, la classe relève des défis qu’on ne réussit qu’ensemble, puis note ce dont elle a besoin.",
+        "kurz": "En îlots, avec des rôles fixes, la classe relève des défis qu’on ne réussit qu’ensemble et note ce dont elle a besoin en équipe.",
         "ziele": [
-          "relèvent en îlots des défis où chacun est indispensable",
-          "prennent un rôle précis dans l’équipe et le tiennent",
-          "nomment ce qui a aidé leur équipe et ce qui l’a gênée",
-          "complètent la charte de classe par une ou deux règles d’équipe"
+          "résolvent en îlots des défis où chacun est indispensable",
+          "tiennent un rôle fixe dans l’équipe et le remplissent",
+          "disent ce qui aide l’équipe et ce qui la gêne, et retiennent une règle d’équipe"
         ],
         "material": [
-          "Roue des émotions, 20 gommettes",
-          "Cartes d’équipe : cinq enveloppes",
-          "Feuilles de brouillon, 20 par îlot",
-          "Mètre pliant ou mètre ruban",
-          "Minuteur visible par tous",
-          "Affiche de la charte de classe",
-          "Affiche des points communs",
-          "Un cahier de l’élève par jeune",
+          "Affiche de la roue des émotions, gommettes (1 par jeune)",
+          "Cartes d’équipe dans cinq enveloppes",
+          "Papier de brouillon (20 feuilles par îlot), mètre, minuteur",
+          "Affiches : charte de classe, « Ce que nous avons en commun »",
+          "Cahier de l’élève pour chaque jeune",
           "Tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
-          "Photocopier et découper cinq fois les cartes d’équipe : une enveloppe par îlot (quatre rôles, quatre indices).",
-          "Préparer 20 feuilles de brouillon par îlot (copies ratées) ; prévoir un minuteur visible au tableau ou au projecteur.",
-          "Partager le tableau : « Ça a aidé » – « Ça a gêné » (étape 7) ; afficher la charte de classe.",
-          "Vérifier si un îlot doit être séparé (conflit, exclusion) ; si oui, former les groupes soi-même, ouvertement."
+          "Photocopier cinq fois les cartes d’équipe et les découper : une enveloppe par îlot avec quatre cartes de rôle et quatre cartes d’indices.",
+          "Préparer le brouillon (20 feuilles par îlot) et un minuteur ; au tableau, quatre symboles météo et les colonnes « Ça a aidé » – « Ça a gêné ».",
+          "Vérifier si un îlot doit être séparé (dispute, exclusion) ; alors refaire les groupes ouvertement soi-même."
         ],
         "ablauf": [
           {
@@ -323,47 +220,27 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Retour et thème : qu’est-ce qu’on ne réussit qu’ensemble ?"
+            "titel": "Retour, mission et thème du jour"
           },
           {
-            "min": "15–30",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Rôles et manche 1 : l’énigme du banc"
-          },
-          {
-            "min": "30–45",
-            "phase": "aktiv",
-            "titel": "Manche 2 : la tour en papier"
+            "titel": "Rôles, énigme du banc et tour en papier"
           },
           {
             "min": "45–50",
             "phase": "aktiv",
-            "titel": "Pause active : le clap en relais"
+            "titel": "Pause active : compter jusqu’à 20"
           },
           {
-            "min": "50–60",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Manche 3 : toute la classe compte jusqu’à 20"
+            "titel": "Ce qui a aidé – règles d’équipe de la classe"
           },
           {
-            "min": "60–75",
-            "phase": "uebung",
-            "titel": "Qu’est-ce qui a aidé, qu’est-ce qui a gêné ?"
-          },
-          {
-            "min": "75–85",
-            "phase": "uebung",
-            "titel": "Ce dont notre classe a besoin"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : respirer en rythme"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, pouce et mission"
           }
         ],
         "schritte": [
@@ -371,178 +248,105 @@
             "titel": "Tour d’humeur : la météo de notre classe",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle une gommette sur la roue des émotions ; celle de l’enseignant·e est déjà collée. Une fois tout le monde assis, dire une phrase sur sa propre gommette. Puis la classe regarde l’affiche dans son ensemble : si les gommettes étaient la météo de notre classe, quel temps ferait-il aujourd’hui ? Deux ou trois volontaires décrivent la météo de la classe, par exemple : plutôt ensoleillé, quelques nuages du côté de la fatigue (4 min). Pour finir, rappeler le signal de calme et annoncer : aujourd’hui, vous allez travailler en équipe dans vos îlots.",
+            "text": "En entrant, chaque jeune colle une gommette sur la roue des émotions ; l’enseignant·e commence par une phrase sur la sienne. Puis la classe regarde l’affiche entière : si les gommettes étaient la météo de notre classe, quel temps ferait-il aujourd’hui ? Deux ou trois volontaires le décrivent, par exemple : plutôt ensoleillé, quelques nuages du côté de la fatigue.",
             "sagen": [
               "Regardez toutes les gommettes ensemble : quel temps fait-il aujourd’hui dans notre classe ?",
-              "Personne n’est obligé de dire quelle gommette est la sienne. On parle de la météo de toute la classe."
+              "Personne n’est obligé de dire quelle gommette est la sienne."
             ],
-            "tipp": "La météo de la classe enlève la pression : personne ne parle de soi, et pourtant la classe voit comment elle va. Quatre symboles météo au tableau (soleil, nuage, pluie, orage) aident ceux qui apprennent encore la langue. Si le temps est plutôt gris, le prendre au sérieux – les défis avanceront plus lentement.",
-            "wennEsKippt": "Si quelqu’un commente une gommette (« Qui a collé sur en colère ? »), arrêter gentiment : les gommettes sont anonymes, on ne devine pas à qui elles appartiennent. Si beaucoup de gommettes sont sur en colère ou triste, le reconnaître brièvement sans approfondir : je le note – aujourd’hui, on fait bien attention les uns aux autres."
+            "wennEsKippt": "Si l’on commente une gommette (« Qui a collé en colère ? »), arrêter gentiment : les gommettes sont anonymes. Si beaucoup sont sur en colère ou triste, le reconnaître brièvement, ne pas approfondir et veiller aujourd’hui les uns aux autres."
           },
           {
-            "titel": "Retour et thème : qu’est-ce qu’on ne réussit qu’ensemble ?",
+            "titel": "Retour, mission et thème du jour",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière fois. Puis demander brièvement où en est la mission de la semaine : votre moment est-il arrivé – bus, récré, cantine –, et avez-vous posé une question à quelqu’un, puis demandé une précision ? Pouce en haut, au milieu ou en bas ; une voix raconte comment ça s’est passé – pas ce que l’autre a raconté. Montrer l’affiche « Ce que nous avons en commun » et écrire la question du jour au tableau : qu’est-ce qu’on ne réussit qu’ensemble ?",
+            "text": "Demander où en est la mission de la semaine : ton moment est-il venu – et qu’as-tu fait ? Pouce en haut, au milieu ou en bas ; une voix raconte en une phrase. Montrer l’affiche « Ce que nous avons en commun » et écrire la question du jour au tableau : qu’est-ce qu’on ne réussit qu’ensemble ?",
             "sagen": [
-              "La semaine dernière, vous avez découvert ce que vous avez en commun. Aujourd’hui, on regarde ce que vous ne réussissez qu’ensemble."
+              "Votre moment est-il venu, et avez-vous posé une question puis demandé une précision – pouce en haut, au milieu ou en bas ?",
+              "La semaine dernière, vous avez découvert ce que vous avez en commun – aujourd’hui, on regarde ce que vous ne réussissez qu’ensemble."
             ],
-            "tipp": "Ne poser la question de la mission que brièvement ; qui a posé une question reçoit un sourire, pas une évaluation. Une seule histoire suffit. Si le moment n’est pas venu, ce n’est pas un échec – la prochaine mission en reçoit un nouveau."
+            "tipp": "Qui a posé une question reçoit un sourire, pas une note. Si le moment n’est pas venu, ce n’est pas un échec – la prochaine mission aura un nouveau moment."
           },
           {
-            "titel": "Rôles et manche 1 : l’énigme du banc",
-            "dauer": 15,
+            "titel": "Rôles, énigme du banc et tour en papier",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Les rôles (3 min) : chaque îlot reçoit son enveloppe et se répartit les quatre cartes de rôle : la personne assise le plus près du tableau prend l’animation, les autres rôles suivent dans le sens des aiguilles d’une montre. Chacun lit son rôle à voix haute. L’énigme du banc (9 min) : lire la consigne (exercice 1 du cahier, avec les quatre images), puis chaque jeune prend une carte d’indices. Règle : chacun lit lui-même ses indices ; on ne montre pas les cartes et on ne les échange pas. Chacun note la solution dans sa grille. Un groupe qui a fini donne sa solution à voix basse à l’enseignant·e et remplit déjà le bilan. Bilan d’équipe (3 min) : chacun remplit la colonne manche 1 de l’exercice 2.",
+            "text": "Chaque îlot reçoit une enveloppe avec quatre cartes de rôle, qui avancent d’une personne après chaque manche. À la manche 1, il résout l’énigme du banc : chacun a des indices, et l’énigme ne se résout que si tous lisent les leurs. À la manche 2, il construit une tour en papier : chacun ne touche qu’à ses cinq feuilles.",
             "sagen": [
-              "Vous avez quatre cartes d’indices, et aucune ne suffit seule. Vous n’y arriverez que si chacun lit ses indices.",
-              "Les cartes restent chez vous. Lire oui, montrer non."
+              "Vous avez quatre cartes d’indices, et aucune ne suffit seule – lire oui, montrer non.",
+              "Chacun ne touche que ses cinq feuilles ; qui a besoin d’aide le dit."
             ],
             "punkte": [
-              "Animation : veille à ce que chacun ait la parole et demande : qui a encore une idée ?",
-              "Temps : surveille le minuteur au tableau, annonce la mi-temps et la dernière minute.",
-              "Matériel et notes : va chercher le matériel, note ce que le groupe trouve, range.",
-              "Observation : participe et observe ce qui aide l’équipe et ce qui la gêne ; en parle ensuite sans nommer personne."
+              "Bon à savoir (3 min) : lire l’encadré du cahier – chacun a quelque chose qui manque aux autres.",
+              "Rôles (3 min) : animation, temps, matériel et notes, observation ; la personne assise le plus près du tableau est l’animation, les autres rôles suivent dans le sens des aiguilles d’une montre.",
+              "Énigme du banc (9 min) : exercice 1 du cahier ; chacun prend une carte d’indices et la lit ; chacun note la solution. Solution : place 1 Aylin dessine, place 2 Tiago joue sur son portable, place 3 Mila lit, place 4 Noah écoute de la musique.",
+              "Changement de rôles (3 min) : les rôles avancent ; l’observation retient une phrase sur ce qui a aidé ou gêné.",
+              "Tour en papier (12 min) : 2 min pour parler seulement, 7 min pour construire (plier, rouler, déchirer ; ni colle ni ruban), 3 min pour mesurer ; la tour doit tenir seule dix secondes."
             ],
-            "tipp": "Solution : place 1 Aylin dessine, place 2 Tiago joue sur son portable, place 3 Mila lit, place 4 Noah écoute de la musique. Ne pas donner la solution à un groupe bloqué, mais demander : quel indice est absolument sûr ? On peut échanger son rôle une fois si les deux sont d’accord ; qui aime bouger est bien placé au matériel, qui parle encore peu le français, au temps.",
-            "wennEsKippt": "Si quelqu’un s’empare des cartes des autres, arrêter brièvement et rappeler la règle : lire oui, montrer non – sinon, ce n’est plus un jeu d’équipe. Si un jeune n’aime pas lire à voix haute, la personne chargée de l’animation peut proposer de lire sa carte à voix basse ; il ou elle répond d’un signe de tête. Si un groupe abandonne au bout de cinq minutes, dessiner au tableau un banc à quatre places et partir d’un indice sûr.",
+            "wennEsKippt": "Si quelqu’un prend les cartes ou les feuilles des autres, ou fait tomber la tour de frustration, arrêter un instant : lire oui, montrer non – et la frustration est normale, de quoi avez-vous besoin maintenant ? Si un groupe renonce à l’énigme après cinq minutes, dessiner au tableau un banc à quatre places et commencer par un indice sûr.",
             "blatt": "ff7-team-karten"
           },
           {
-            "titel": "Manche 2 : la tour en papier",
-            "dauer": 15,
-            "phase": "aktiv",
-            "text": "Les rôles tournent d’une place dans le sens des aiguilles d’une montre. Chaque îlot reçoit 20 feuilles de brouillon ; la personne chargée du matériel les garde jusqu’à la fin de la préparation. Préparer (2 min) : on parle, on ne touche à rien. Ensuite, chacun prend cinq feuilles et ne touche que les siennes. On peut plier, rouler et déchirer, mais pas utiliser de colle ni de ruban adhésif. Construire (7 min) : à la fin, la tour doit tenir seule dix secondes. Mesurer (2 min) : passer avec le mètre ; les hauteurs vont au tableau. Bilan d’équipe (3 min) : remplir la colonne manche 2 de l’exercice 2 ; la personne chargée de l’observation retient une phrase pour plus tard, celle du matériel range le papier.",
-            "sagen": [
-              "Chacun ne touche que ses cinq feuilles. Qui a besoin d’aide le dit – les autres construisent alors avec leurs propres feuilles.",
-              "Deux minutes où l’on ne fait que parler. Animation, veillez à ce que chaque idée soit entendue."
-            ],
-            "tipp": "La hauteur compte peu. Ce qui compte, c’est comment le groupe est arrivé à sa tour : qui a eu l’idée, qui a construit, qui n’a pas été écouté ? C’est exactement ce que la classe analyse après la pause.",
-            "wennEsKippt": "Si quelqu’un s’empare des feuilles des autres ou renverse la tour par frustration, arrêter un instant : la frustration, c’est normal – de quoi avez-vous besoin maintenant ? Qui ne veut pas construire donne ses feuilles au groupe et observe. Si un groupe n’a toujours pas de plan au bout de trois minutes, demander à l’animation : quelle est votre première idée ?",
-            "blatt": "ff7-wir-als-team"
-          },
-          {
-            "titel": "Pause active : le clap en relais",
+            "titel": "Pause active : compter jusqu’à 20",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se lève et secoue les bras et les jambes. Puis un claquement de mains passe de l’un à l’autre dans un ordre fixe : l’enseignant·e commence, puis îlot après îlot dans le sens des aiguilles d’une montre, jusqu’à ce qu’il revienne au point de départ ; chronométrer. La classe a 30 secondes pour réfléchir à la manière d’aller plus vite, puis viennent le deuxième et le troisième essai. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Tout le monde est debout derrière sa chaise et secoue les bras et les épaules. Puis la classe compte ensemble jusqu’à 20 : chacun peut dire le nombre suivant à tout moment, mais personne deux nombres de suite ; si deux parlent en même temps, on recommence à 1.",
             "sagen": [
-              "Le relais ne va pas plus vite que son maillon le plus lent. Comment allez-vous accélérer ?"
+              "Ça ne marche qu’ensemble – et seulement si tout le monde fait attention à tout le monde."
             ],
-            "tipp": "Au troisième essai, la classe divise souvent son temps par deux – un succès rapide qui montre que se mettre d’accord aide. Noter les temps au tableau.",
-            "wennEsKippt": "Si quelqu’un tape exprès trop tard ou deux fois, ne pas gronder, mais recommencer : le chrono repart de zéro. Si les îlots se mettent en compétition, rappeler : seul le temps de toute la classe compte."
+            "tipp": "Le jeu marche rarement du premier coup, et c’est justement l’idée : demander à la fin ce qui a aidé – cela va au tableau sous « Ça a aidé ». Si la grande récréation tombe entre les deux heures, supprimer l’exercice."
           },
           {
-            "titel": "Manche 3 : toute la classe compte jusqu’à 20",
-            "dauer": 10,
+            "titel": "Ce qui a aidé – règles d’équipe de la classe",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Tout le monde est assis en silence, les yeux ouverts ou fermés. La classe compte jusqu’au nombre de participants, en général 20 : chacun dit au plus un nombre, et on ne décide d’aucun ordre. Si deux personnes parlent en même temps, on recommence à 1 (3 min). Après quelques échecs, s’arrêter : qu’est-ce qui pourrait aider sans fixer d’ordre ? Recueillir deux ou trois idées, par exemple : attendre un peu après chaque nombre, ne pas se précipiter, écouter les autres (2 min). Puis nouveaux essais (3 min). Pour finir, demander brièvement : qu’est-ce qui a aidé ? Les réponses vont au tableau sous « Ça a aidé » (2 min).",
-            "sagen": [
-              "Chacun dit au plus un nombre, et personne ne fixe d’ordre. Si deux personnes parlent en même temps, on recommence à 1.",
-              "Qu’est-ce qui a aidé au dernier essai ?"
-            ],
-            "tipp": "L’exercice réussit rarement du premier coup, et c’est justement là l’intérêt : il ne marche que lorsque chacun fait attention aux autres au lieu de foncer. Même qui parle peu d’habitude est indispensable ici – un seul nombre suffit. Si le temps manque, réduire cette manche à cinq minutes.",
-            "wennEsKippt": "Si quelqu’un crie exprès un nombre, rester calme et recommencer ; à la troisième fois, lui confier le rôle d’arbitre : il écoute et signale quand deux personnes parlent en même temps. Ce rôle convient aussi à qui ne veut pas compter. Si la classe ne dépasse pas 10, fêter ce record et continuer les yeux fermés."
-          },
-          {
-            "titel": "Qu’est-ce qui a aidé, qu’est-ce qui a gêné ?",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "En îlot (4 min) : le groupe compare son bilan des manches 1 et 2 : qu’est-ce qui a mieux ou moins bien marché à la manche 2 – et pourquoi ? Chacun coche dans l’exercice 3 ce qui a le plus aidé ; la personne chargée de l’observation se met d’accord avec le groupe sur une chose qui a aidé et une chose qui a gêné. En classe entière (8 min) : dans chaque îlot, cette personne cite les deux – sans nommer personne. Noter au tableau (voir ci-dessous) ; la classe complète. Puis demander : qu’est-ce qui vaut aussi pour toute la classe, pas seulement pour l’îlot ? Souligner deux ou trois points (3 min).",
+            "text": "D’abord, chaque îlot compare ce qui a aidé et ce qui a gêné aux manches 1 et 2 ; la personne chargée de l’observation fait le compte rendu sans nommer personne. Puis la classe regarde ce qui vaut aussi pour elle tout entière et formule une ou deux règles d’équipe pour la charte de classe.",
             "sagen": [
               "Critiquez le plan, pas la personne : pas “tu as tout cassé”, mais “on n’avait pas décidé qui construit quoi”.",
               "Qu’est-ce qui nous servirait aussi en classe entière ?"
             ],
-            "tabelle": {
-              "spalten": [
-                "Ça a aidé",
-                "Ça a gêné"
-              ],
-              "zeilen": [
-                [
-                  "Chacun a lu ses indices.",
-                  "Deux personnes parlaient en même temps."
-                ],
-                [
-                  "On a fait un plan avant de construire.",
-                  "Une personne a tout fait seule."
-                ],
-                [
-                  "L’animation a demandé l’avis de tous.",
-                  "Des idées n’ont pas été écoutées."
-                ],
-                [
-                  "Le temps a été annoncé.",
-                  "Quelqu’un s’est fait moquer."
-                ]
-              ]
-            },
-            "tipp": "Le rôle d’observation porte ses fruits ici : qui a observé trouve souvent les phrases les plus précises. Si un point revient dans plusieurs îlots, le souligner – c’est de là que naîtront les règles d’équipe.",
-            "wennEsKippt": "Si des noms ou des accusations tombent (« À cause de lui… »), réorienter tout de suite : qu’est-ce qui a manqué à l’équipe ? La chose, pas la personne. Si l’on n’entend que « c’était bien », préciser la question : qui a fait aujourd’hui quelque chose qui a aidé l’équipe ? Parler de ce qui aide est souvent plus facile.",
-            "blatt": "ff7-wir-als-team"
-          },
-          {
-            "titel": "Ce dont notre classe a besoin",
-            "dauer": 10,
-            "phase": "uebung",
-            "text": "Lire la charte de classe de la séance 1 et demander : quelle règle nous a aidés aujourd’hui ? Chaque règle qui a aidé reçoit une coche (3 min). Puis : que manque-t-il pour bien travailler ensemble en tant que classe ? À partir des points soulignés au tableau, la classe formule une ou deux règles d’équipe, de façon positive et avec ses propres mots (4 min). Vote avec le pouce : tout le monde peut-il accepter ces règles ? Les règles s’ajoutent en bas de l’affiche de la charte et dans l’exercice 4 du cahier (3 min).",
-            "sagen": [
-              "Quelle règle de notre charte vous a aidés aujourd’hui ?",
-              "Qu’est-ce qui doit valoir désormais quand on travaille en groupe ?"
-            ],
             "punkte": [
-              "Chacun a la parole avant qu’on décide.",
-              "D’abord un plan, ensuite on se lance.",
-              "On critique le plan, pas la personne.",
-              "Qui a fini aide les autres."
+              "En îlot (6 min) : qu’est-ce qui a mieux ou moins bien marché à la manche 2 – et pourquoi ? Chacun coche dans l’exercice 2 ce qui a le plus aidé.",
+              "Observation (8 min) : chaque îlot cite une chose qui a aidé et une qui a gêné, sans noms ; l’enseignant·e note au tableau (« Ça a aidé » – « Ça a gêné »).",
+              "En classe (6 min) : qu’est-ce qui vaut aussi pour toute la classe ? Souligner deux ou trois points.",
+              "Revoir la charte (5 min) : la lire ; chaque règle qui a aidé aujourd’hui reçoit une coche.",
+              "Règles d’équipe (10 min) : la classe en formule une ou deux, de façon positive et avec ses mots (exemples seulement si rien ne vient : chacun a la parole ; d’abord planifier, puis se lancer) ; pouce : tout le monde peut-il l’accepter ? Sur l’affiche et dans l’exercice 3."
             ],
-            "tipp": "N’ajouter que ce que la classe propose elle-même ; les exemples ne servent que si rien ne vient. Un pouce à l’horizontale veut dire : je peux faire avec – cela suffit.",
-            "wennEsKippt": "Si quelqu’un met le pouce en bas, lui demander ce qui manque et reformuler la règle ensemble, plutôt que de laisser simplement la majorité l’emporter. S’il n’y a que des règles pour rire, en accueillir une avec humour et demander ce qu’il y a derrière : qu’est-ce qui devrait s’améliorer ?",
+            "wennEsKippt": "Si des prénoms ou des reproches fusent (« À cause de lui… »), recentrer tout de suite : qu’est-ce qui a manqué à l’équipe ? Si seules des règles pour rire arrivent, en accueillir une avec humour et demander ce qui doit s’améliorer.",
             "blatt": "ff7-wir-als-team"
           },
           {
             "titel": "Skill : respirer en rythme",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Annoncer : pour finir, toute la classe respire au même rythme – un skill qu’on peut aussi utiliser seul quand c’est bruyant, agité ou trop (1 min). Tout le monde est assis, les deux pieds au sol, une main sur le ventre ou sur la table ; les yeux restent ouverts, qui le souhaite les ferme. Compter doucement : inspire – deux – trois – quatre, expire – deux – trois – quatre (1 min). Puis un volontaire prend le relais pour compter (1 min) ; pour finir, chacun respire une minute en silence, à son propre rythme – qui veut arrêter appuie plutôt les pieds dans le sol et compte jusqu’à dix (1 min). Ensuite, trois ou quatre retours : comment c’était de respirer au même rythme ? À quel moment pourrait-on l’utiliser seul (3 min) ? Expliquer : respirer lentement et régulièrement calme le corps ; ensemble, c’est comme une ancre pour tout le groupe – une offre, jamais une punition ni un moyen contre l’agitation (3 min).",
+            "text": "Un skill qu’on peut aussi utiliser seul quand c’est bruyant, agité ou trop : la classe respire au même rythme. Puis la clôture : une phrase dans le Skills-Pass, annoncer la mission, choisir son moment.",
             "sagen": [
-              "Inspire – deux – trois – quatre. Expire – deux – trois – quatre.",
+              "Inspire – deux – trois – quatre, expire – deux – trois – quatre.",
               "Où pourriez-vous l’utiliser chacun pour soi – à la récré, avant un devoir en classe, le soir au lit ?"
             ],
             "punkte": [
-              "Les pieds au sol, une main sur le ventre.",
-              "Inspirer sur quatre temps, expirer sur quatre temps.",
-              "Dix respirations en rythme – puis sentir ce qui a changé."
+              "Pieds au sol, une main sur le ventre ou sur la table ; yeux ouverts ou fermés.",
+              "Quatre temps pour inspirer, quatre pour expirer – respirer lentement calme le corps ; d’abord l’enseignant·e compte, puis un volontaire (3 min).",
+              "Une minute en silence, chacun à son rythme ; qui veut arrêter appuie ses pieds dans le sol et compte jusqu’à dix.",
+              "Skills-Pass (3 min) : question – que vais-je faire au prochain travail de groupe pour que ça marche ? Tampon.",
+              "Mission et moment (2 min) : annoncer la mission ; chacun choisit son moment – prochain travail de groupe, entraînement, jeu à la récré – et l’écrit dans « Mon moment : quand … » ; annoncer la suite."
             ],
-            "tipp": "Quatre temps, c’est un repère : qui trouve ça trop long respire plus court, mais régulièrement. Confier le comptage à des volontaires fait de l’exercice quelque chose qui appartient à la classe. Trois minutes de respiration suffisent – plus long, le silence devient désagréable pour certains.",
-            "wennEsKippt": "Les rires sont normaux la première fois : ne pas faire de remarque, continuer à compter calmement – après trois ou quatre respirations, le calme revient en général. Qui ne veut pas poser la main sur le ventre la pose sur la table ; personne n’est obligé de fermer les yeux. Qui veut arrêter tout à fait reste assis en silence – c’est permis et on ne le commente pas."
-          },
-          {
-            "titel": "Skills-Pass, pouce et mission",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 min) : écrire la question au tableau – que vais-je faire au prochain travail de groupe pour que ça marche ? Ensuite, le tampon. Le pouce (1 min) : avons-nous bien fonctionné aujourd’hui en tant que classe ? À trois, tout le monde montre en même temps. Mission de la semaine et choix du moment (1 min) : annoncer la mission (elle figure dans le cahier) – faire une chose qui aide l’équipe. Chacun choisit son moment, par exemple le prochain travail de groupe, l’entraînement ou un jeu à la récré, et l’écrit dans la colonne « Mon moment : quand … ». La suite (1 min) : la semaine prochaine, vous fondez votre conseil de coopération.",
-            "sagen": [
-              "Avons-nous bien fonctionné aujourd’hui en tant que classe – pouce en haut, au milieu ou en bas ? À trois.",
-              "Où serez-vous en équipe cette semaine – travail de groupe, entraînement, jeu à la récré ? Écrivez ce moment dans le cahier : quand…, alors je fais une chose qui aide l’équipe."
-            ],
-            "tipp": "Laisser au tableau ou photographier les hauteurs des tours et les temps du clap en relais : au conseil de coopération, la semaine prochaine, ils rappellent ce que la classe réussit ensemble."
+            "wennEsKippt": "Les rires sont normaux la première fois : continuer à compter calmement, après trois ou quatre respirations, le calme revient souvent. Qui ne veut pas poser la main sur le ventre la pose sur la table ; qui veut arrêter reste en silence et n’est pas commenté."
           }
         ],
-        "bruecke": "La semaine prochaine, vous fondez votre conseil de coopération : vous découvrez ses rôles et son déroulement et vous prenez votre première vraie décision en tant que classe.",
-        "mission": "Quand ton moment arrive – le prochain travail de groupe, l’entraînement ou un jeu à la récré –, fais une chose qui aide ton équipe : par exemple demander son idée à quelqu’un.",
-        "hintergrund": "La cohésion naît quand un groupe relève des défis où chacun est indispensable. Lors de l’expérience de Robbers Cave, seuls des objectifs communs ont fait baisser l’hostilité entre deux groupes – les simples rencontres n’y suffisaient pas (Sherif et al., 1961). À l’école, une méta-analyse le confirme : chez les jeunes adolescents, les objectifs coopératifs favorisent résultats et relations, plus que la compétition ou le travail seul (Roseth, Johnson & Johnson, 2008). Selon Tuckman (1965), un groupe ne construit ses normes qu’après avoir agi ensemble et connu aussi des frictions ; l’analyse de la séance rend cette étape visible, et les règles d’équipe rejoignent la charte. Des rôles fixes évitent que deux voix fortes prennent tout en charge et que les discrets passent inaperçus. Respirer en rythme clôt calmement une séance très active – court, yeux ouverts, arrêt permis.",
+        "bruecke": "La semaine prochaine, vous fondez votre conseil de coopération et prenez votre première vraie décision en tant que classe.",
+        "mission": "Aide ton équipe une fois : demande son idée à quelqu’un.",
+        "hintergrund": "La cohésion naît quand un groupe résout des tâches où chacun est indispensable : à Robbers Cave, seuls des buts communs ont fait baisser l’hostilité entre deux groupes (Sherif et al., 1961). Chez les jeunes adolescents, des buts coopératifs favorisent résultats et relations plus que la compétition (Roseth, Johnson & Johnson, 2008). Un groupe forme ses normes en agissant ensemble et en connaissant des frictions (Tuckman, 1965) ; des rôles fixes évitent que les plus bruyants prennent tout.",
         "quellen": [
           "Sherif, M., Harvey, O. J., White, B. J., Hood, W. R. & Sherif, C. W. (1961). Intergroup Conflict and Cooperation: The Robbers Cave Experiment. Norman, OK: University Book Exchange.",
           "Roseth, C. J., Johnson, D. W. & Johnson, R. T. (2008). Promoting early adolescents’ achievement and peer relationships: The effects of cooperative, competitive, and individualistic goal structures. Psychological Bulletin, 134(2), 223–246.",
           "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399."
         ],
-        "achtung": "Les défis d’équipe rendent visibles les hiérarchies : qui n’est pas écouté, qui prend tout en main, qui reste à l’écart ? Ne pas le commenter devant la classe, mais agir par les rôles et, si besoin, recomposer ouvertement les groupes. La frustration fait partie du jeu ; si quelqu’un est moqué ou désigné comme coupable, arrêter tout de suite : on critique le plan, jamais la personne. Pas de contact physique pendant les défis. Qui se met en retrait prend le rôle d’observation. Si un jeune semble exclu durablement, en parler après le cours avec le régent et le SePAS.",
+        "achtung": "Les tâches d’équipe rendent les hiérarchies visibles : qui est interrompu, qui prend tout en main, qui reste à l’écart ? Ne pas le commenter devant la classe, mais agir par les rôles et refaire les groupes ouvertement si nécessaire. Si l’on se moque de quelqu’un ou si on le désigne comme coupable, arrêter aussitôt : on critique le plan, jamais la personne ; pas de contact physique pendant les tâches, et si quelqu’un est exclu durablement, en parler après le cours avec le régent et le SePAS.",
         "differenzierung": {
-          "leichter": "Une carte d’indices peut être lue par quelqu’un qui lit bien, si sa propriétaire ou son propriétaire est d’accord ; le banc est dessiné au tableau, et les quatre images de la fiche aident. Qui parle encore peu le français prend d’abord le rôle du temps. Les règles d’équipe peuvent être recopiées du tableau ; pour la colonne « Mon moment », un mot comme sport suffit.",
-          "schwerer": "Les groupes rapides inventent leur propre énigme du banc, avec quatre cartes d’indices, pour un autre îlot. Ou prendre le rôle d’observation et résumer pour la classe ce qui a aidé dans tous les groupes."
+          "leichter": "Une carte d’indices peut être lue par un jeune qui lit bien, si son propriétaire est d’accord ; le banc est dessiné au tableau. Qui parle encore peu le français prend d’abord le rôle temps ; les règles d’équipe peuvent être recopiées du tableau, et pour « Mon moment », un mot suffit.",
+          "schwerer": "Les groupes rapides inventent leur propre énigme du banc avec quatre cartes d’indices pour un autre groupe. Ou ils prennent l’observation et résument pour la classe ce qui a aidé dans tous les groupes."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), rôles et énigme du banc (15 min), compter jusqu’à 20 en classe entière comme pause active (5 min), qu’est-ce qui a aidé, qu’est-ce qui a gêné ? (12 min), une règle d’équipe pour la charte (8 min), Skills-Pass, mission et choix du moment (5 min). La tour en papier et le clap en relais sont supprimés ; la tour peut ouvrir une séance ultérieure."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), rôles et énigme du banc (15 min), compter jusqu’à 20 en pause active (5 min), « Ce qui a aidé » avec une règle d’équipe pour la charte (15 min), Skills-Pass, mission et choix du moment (10 min). La tour en papier et le skill sont supprimés ; la tour peut servir d’entrée en matière à une séance ultérieure."
       }
     }
   ],
@@ -559,7 +363,7 @@
         "einzeln",
         "gruppe"
       ],
-      "dauer": "50 Min.",
+      "dauer": "30 Min.",
       "eldib": [],
       "schlagworte": [
         "Teamarbeit",
@@ -574,50 +378,22 @@
       ],
       "de": {
         "titel": "Wir als Team",
-        "untertitel": "Aufgaben, die nur gemeinsam gelingen – und was unsere Klasse dafür braucht",
+        "untertitel": "Aufgaben, die nur gemeinsam gelingen",
         "bausteine": [
           {
             "art": "info",
-            "symbol": "merke",
-            "titel": "Vier Rollen in jeder Tischgruppe – sie wechseln jede Runde",
-            "punkte": [
-              "Moderation: Jede Person kommt zu Wort.",
-              "Zeit: Halbzeit und letzte Minute ansagen.",
-              "Material und Notizen: holen, aufschreiben, aufräumen.",
-              "Beobachtung: Was hilft dem Team, was stört?"
-            ]
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "In einem Team hat jede Person etwas, das den anderen fehlt. Wer sein Wissen teilt, bringt alle weiter. Frust gehört dazu – er zeigt, was dem Team fehlt."
           },
           {
             "art": "text",
-            "text": "Mila, Tiago, Aylin und Noah sitzen nebeneinander auf einer Bank. Jede Person macht etwas anderes:"
-          },
-          {
-            "art": "bilder",
-            "klein": true,
-            "spalten": 4,
-            "bilder": [
-              {
-                "bild": "icon:headphones",
-                "text": "Musik hören"
-              },
-              {
-                "bild": "icon:palette",
-                "text": "zeichnen"
-              },
-              {
-                "bild": "icon:book",
-                "text": "lesen"
-              },
-              {
-                "bild": "icon:device-mobile",
-                "text": "am Handy spielen"
-              }
-            ]
+            "text": "Mila, Tiago, Aylin und Noah sitzen auf einer Bank. Jede Person macht etwas anderes: Musik hören, zeichnen, lesen, am Handy spielen."
           },
           {
             "art": "aufgabe",
-            "text": "Runde 1 – das Bank-Rätsel: Wer sitzt wo, und wer macht was? Tragt eure Lösung ein.",
-            "hinweis": "Jede Person liest ihre Hinweise selbst vor. Lesen ja, zeigen nein. Platz 1 ist ganz links.",
+            "text": "Löse mit deiner Gruppe das Bank-Rätsel: Wer sitzt wo, wer macht was?",
+            "hinweis": "Platz 1 ist ganz links. Lesen ja, zeigen nein.",
             "symbole": [
               "gruppe",
               "zuhoeren"
@@ -659,51 +435,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Team-Check: Wie hat es geklappt? Schreib nach jeder Runde ja, teils oder nein.",
-            "symbole": [
-              "schreiben"
-            ]
-          },
-          {
-            "art": "tabelle",
-            "spalten": [
-              "Team-Check",
-              "Runde 1",
-              "Runde 2"
-            ],
-            "breiten": [
-              3.4,
-              0.9,
-              0.9
-            ],
-            "zeilen": 0,
-            "werte": [
-              [
-                "Jede Person ist zu Wort gekommen.",
-                "",
-                ""
-              ],
-              [
-                "Wir haben erst geplant und dann losgelegt.",
-                "",
-                ""
-              ],
-              [
-                "Ich habe meine Rolle ausgefüllt.",
-                "",
-                ""
-              ],
-              [
-                "Bei Frust wurde niemand beschuldigt.",
-                "",
-                ""
-              ]
-            ]
-          },
-          {
-            "art": "aufgabe",
-            "text": "Was hat eurem Team am meisten geholfen? Kreuz zwei Sachen an.",
-            "hinweis": "Was gestört hat, besprecht ihr in der Gruppe – ohne Namen.",
+            "text": "Kreuze zwei Dinge an, die deinem Team am meisten geholfen haben.",
             "symbole": [
               "ankreuzen"
             ]
@@ -712,17 +444,15 @@
             "art": "ankreuzen",
             "spalten": 2,
             "items": [
-              "Jede Person hat ihre Hinweise vorgelesen.",
+              "Alle haben ihre Hinweise vorgelesen.",
               "Wir haben erst geplant, dann gebaut.",
               "Die Moderation hat alle gefragt.",
-              "Die Zeit wurde angesagt.",
-              "Wir haben einander zugehört.",
-              "Wer Hilfe brauchte, hat es gesagt."
+              "Wir haben einander zugehört."
             ]
           },
           {
             "art": "aufgabe",
-            "text": "Unsere Team-Regeln: Schreib die Regeln ab, auf die sich die Klasse geeinigt hat.",
+            "text": "Schreib die Team-Regeln auf, auf die sich die Klasse geeinigt hat.",
             "symbole": [
               "schreiben"
             ]
@@ -733,16 +463,15 @@
               "1.",
               "2."
             ],
-            "linien": 1
+            "linien": 2
           }
         ],
         "lehrer": {
-          "ziel": "Die Jugendlichen lösen in Tischgruppen mit festen Rollen zwei Aufgaben, die nur gemeinsam gelingen, prüfen nach jeder Runde ihre Zusammenarbeit und halten fest, welche Team-Regeln die Klasse braucht.",
+          "ziel": "Die Jugendlichen lösen in Tischgruppen mit festen Rollen zwei Aufgaben, die nur gemeinsam gelingen, halten fest, was dem Team geholfen hat, und schreiben die Team-Regeln der Klasse auf.",
           "ablauf": [
-            "Einheit 4, Schritt 3 (15 Min.): Rollen verteilen, Bank-Rätsel mit den Hinweiskarten (Kopiervorlage), Aufgabe 1; dann Aufgabe 2, Spalte Runde 1.",
-            "Schritt 4 (15 Min.): Papierturm, danach Aufgabe 2, Spalte Runde 2.",
-            "Schritt 7 (15 Min.): Team-Check vergleichen, Aufgabe 3 ankreuzen, dann Auswertung an der Tafel.",
-            "Schritt 8 (10 Min.): Team-Regeln für die Klassenvereinbarung, Aufgabe 4."
+            "Einheit 4, Schritt 3: den Kasten „Gut zu wissen“ lesen, Rollen verteilen, Bank-Rätsel mit den Hinweiskarten (Kopiervorlage), Aufgabe 1; danach der Papierturm.",
+            "Schritt 5: Aufgabe 2 ankreuzen, dann Auswertung an der Tafel.",
+            "Schritt 5, zum Schluss: Aufgabe 3 – die Team-Regeln für die Klassenvereinbarung ins Heft schreiben."
           ],
           "hintergrund": "Aufgaben, bei denen jede Person gebraucht wird, stärken den Zusammenhalt; gemeinsame Ziele bauten schon im Robbers-Cave-Experiment Feindseligkeit zwischen Gruppen ab (Sherif et al., 1961). Nach Tuckman (1965) bilden Gruppen ihre Normen, wenn sie gemeinsam handeln und dabei auch Reibung erleben – deshalb die Frage, was geholfen und was gestört hat.",
           "quellen": [
@@ -754,50 +483,22 @@
       },
       "fr": {
         "titel": "Faire équipe",
-        "untertitel": "Des défis qu’on ne réussit qu’ensemble – et ce dont notre classe a besoin pour cela",
+        "untertitel": "Des défis qu’on ne réussit qu’ensemble",
         "bausteine": [
           {
             "art": "info",
-            "symbol": "merke",
-            "titel": "Quatre rôles par îlot – ils tournent à chaque manche",
-            "punkte": [
-              "Animation : chacun a la parole.",
-              "Temps : annoncer la mi-temps et la dernière minute.",
-              "Matériel et notes : chercher, noter, ranger.",
-              "Observation : qu’est-ce qui aide l’équipe, qu’est-ce qui la gêne ?"
-            ]
+            "symbol": "wissen",
+            "titel": "Bon à savoir",
+            "text": "Dans une équipe, chacun a quelque chose qui manque aux autres. Qui partage ce qu’il sait fait avancer tout le monde. La frustration est normale : elle montre ce qui manque."
           },
           {
             "art": "text",
-            "text": "Mila, Tiago, Aylin et Noah sont assis côte à côte sur un banc. Chacun fait autre chose :"
-          },
-          {
-            "art": "bilder",
-            "klein": true,
-            "spalten": 4,
-            "bilder": [
-              {
-                "bild": "icon:headphones",
-                "text": "écouter de la musique"
-              },
-              {
-                "bild": "icon:palette",
-                "text": "dessiner"
-              },
-              {
-                "bild": "icon:book",
-                "text": "lire"
-              },
-              {
-                "bild": "icon:device-mobile",
-                "text": "jouer sur son portable"
-              }
-            ]
+            "text": "Mila, Tiago, Aylin et Noah sont assis sur un banc. Chacun fait autre chose : écouter de la musique, dessiner, lire, jouer."
           },
           {
             "art": "aufgabe",
-            "text": "Manche 1 – l’énigme du banc : qui est assis où, et qui fait quoi ? Notez votre solution.",
-            "hinweis": "Chacun lit lui-même ses indices à voix haute. Lire oui, montrer non. La place 1 est tout à gauche.",
+            "text": "Résous l’énigme du banc en groupe : qui est où, qui fait quoi ?",
+            "hinweis": "La place 1 est tout à gauche. Lire oui, montrer non.",
             "symbole": [
               "gruppe",
               "zuhoeren"
@@ -839,51 +540,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Bilan d’équipe : comment ça s’est passé ? Après chaque manche, écris oui, moyen ou non.",
-            "symbole": [
-              "schreiben"
-            ]
-          },
-          {
-            "art": "tabelle",
-            "spalten": [
-              "Bilan d’équipe",
-              "Manche 1",
-              "Manche 2"
-            ],
-            "breiten": [
-              3.4,
-              0.9,
-              0.9
-            ],
-            "zeilen": 0,
-            "werte": [
-              [
-                "Chacun a pu prendre la parole.",
-                "",
-                ""
-              ],
-              [
-                "Nous avons fait un plan avant de nous lancer.",
-                "",
-                ""
-              ],
-              [
-                "J’ai tenu mon rôle.",
-                "",
-                ""
-              ],
-              [
-                "Quand ça coinçait, personne n’a été accusé.",
-                "",
-                ""
-              ]
-            ]
-          },
-          {
-            "art": "aufgabe",
-            "text": "Qu’est-ce qui a le plus aidé votre équipe ? Coche deux choses.",
-            "hinweis": "Ce qui a gêné, vous en parlez en îlot – sans nommer personne.",
+            "text": "Coche deux choses qui ont le plus aidé ton équipe.",
             "symbole": [
               "ankreuzen"
             ]
@@ -895,14 +552,12 @@
               "Chacun a lu ses indices.",
               "On a fait un plan avant de construire.",
               "L’animation a demandé l’avis de chacun.",
-              "Le temps a été annoncé.",
-              "On s’est écoutés.",
-              "Qui avait besoin d’aide l’a dit."
+              "On s’est écoutés."
             ]
           },
           {
             "art": "aufgabe",
-            "text": "Nos règles d’équipe : recopie les règles sur lesquelles la classe s’est mise d’accord.",
+            "text": "Écris les règles d’équipe choisies par la classe.",
             "symbole": [
               "schreiben"
             ]
@@ -913,16 +568,15 @@
               "1.",
               "2."
             ],
-            "linien": 1
+            "linien": 2
           }
         ],
         "lehrer": {
-          "ziel": "Les jeunes relèvent en îlots, avec des rôles fixes, deux défis qu’on ne réussit qu’ensemble, font le bilan de leur coopération après chaque tour et notent les règles d’équipe dont la classe a besoin.",
+          "ziel": "Les jeunes relèvent en îlots, avec des rôles fixes, deux défis qu’on ne réussit qu’ensemble, notent ce qui a aidé l’équipe et écrivent les règles d’équipe de la classe.",
           "ablauf": [
-            "Séance 4, étape 3 (15 min) : répartir les rôles, énigme du banc avec les cartes d’indices (modèle à photocopier), exercice 1 ; puis exercice 2, colonne manche 1.",
-            "Étape 4 (15 min) : tour en papier, puis exercice 2, colonne manche 2.",
-            "Étape 7 (15 min) : comparer les bilans, cocher dans l’exercice 3, puis analyse au tableau.",
-            "Étape 8 (10 min) : règles d’équipe pour la charte, exercice 4."
+            "Séance 4, étape 3 : lire l’encadré « Bon à savoir », répartir les rôles, énigme du banc avec les cartes d’indices (modèle à photocopier), exercice 1 ; puis la tour en papier.",
+            "Étape 5 : exercice 2 à cocher, puis analyse au tableau.",
+            "Étape 5, pour finir : exercice 3 – noter dans le cahier les règles d’équipe pour la charte de classe."
           ],
           "hintergrund": "Les défis où chacun est indispensable renforcent la cohésion ; dans l’expérience de Robbers Cave, des objectifs communs ont fait baisser l’hostilité entre deux groupes (Sherif et al., 1961). Selon Tuckman (1965), un groupe construit ses normes quand il agit ensemble et connaît aussi des frictions – d’où la question de ce qui a aidé et de ce qui a gêné.",
           "quellen": [

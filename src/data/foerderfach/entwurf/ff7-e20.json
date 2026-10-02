@@ -34,26 +34,23 @@
       ],
       "de": {
         "titel": "Grenzen erkennen",
-        "kurz": "Die Klasse sortiert Grenz-Situationen, spürt beim Stopp-Abstand die eigene Wohlfühl-Distanz und lernt, die Grenzen anderer an kleinen Zeichen zu lesen.",
+        "kurz": "Die Klasse spürt beim Stopp-Abstand die eigene Wohlfühl-Distanz und lernt, die Grenzen anderer an kleinen Zeichen zu lesen.",
         "ziele": [
-          "ordnen Alltagssituationen körperlichen, emotionalen und digitalen Grenzen zu",
           "erleben beim Stopp-Abstand, dass jede Person eine andere Wohlfühl-Distanz hat",
           "benennen Körpersignale, an denen sie merken, dass eine Grenze erreicht ist",
-          "erkennen, wenn es jemand anderem zu nah wird, und nennen, was dann hilft"
+          "erkennen, wenn es jemand anderem zu nah wird, und hören auf oder fragen nach"
         ],
         "material": [
-          "Schülerheft, Stempel für den Skills-Pass",
           "Gefühlsrad-Plakat, 20 Klebepunkte",
-          "Grenz-Karten, ein Satz je Gruppe",
+          "Grenz-Karten, eine Kopie (Vorlage)",
           "Malerkrepp oder Taschen als Markierung",
-          "Fünf Karten zum Notieren, Stifte"
+          "Zettel und Stifte zum Notieren",
+          "Schülerheft: Blatt und Skills-Pass, Stempel"
         ],
         "vorbereitung": [
-          "Grenz-Karten kopieren, schneiden, je Tischgruppe ein Umschlag.",
           "Fünf Bahnen von drei Metern einplanen (vorn, hinten, Seitengang); Start und Ziel mit Krepp oder einer Tasche markieren.",
-          "Tafelbilder und die drei Fragen (Schritt 3, 6, 7) vorbereiten und abdecken.",
-          "Mit Régent oder SePAS klären, ob es gerade einen Vorfall in der Klasse gibt; Karten dann anpassen.",
-          "Heißt jemand in der Klasse wie eine Figur aus den Szenen (Schritt 7), beim Vorlesen den Namen ändern."
+          "Tafelbild mit den drei Arten von Grenzen vorbereiten und abdecken; Grenz-Karten einmal kopieren, fünf Situationen zum Vorlesen wählen.",
+          "Mit Régent oder SePAS klären, ob es gerade einen Vorfall in der Klasse gibt; Karten und Szenen dann anpassen."
         ],
         "ablauf": [
           {
@@ -64,42 +61,27 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Rückblick: Ich-Botschaften im Alltag"
+            "titel": "Rückblick, Mission und Thema"
           },
           {
-            "min": "15–27",
-            "phase": "input",
-            "titel": "Was sind Grenzen?"
-          },
-          {
-            "min": "27–45",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Grenz-Karten sortieren"
+            "titel": "Was sind Grenzen? Der Stopp-Abstand"
           },
           {
             "min": "45–50",
             "phase": "aktiv",
-            "titel": "Bewegungspause: Ja-Nein-Seiten zur Nähe"
+            "titel": "Bewegungspause: klar eine Grenze – kommt drauf an"
           },
           {
-            "min": "50–68",
-            "phase": "aktiv",
-            "titel": "Stopp-Abstand: meine Wohlfühl-Distanz"
-          },
-          {
-            "min": "68–85",
+            "min": "50–85",
             "phase": "uebung",
             "titel": "Grenzen anderer lesen"
           },
           {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: Körper-Check"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, Moment wählen, Ausblick"
           }
         ],
         "schritte": [
@@ -107,249 +89,132 @@
             "titel": "Check-in: Gefühl, Zahl – und wo im Körper?",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100). Dann die Ampel-Frage: Wer bei Gelb oder Rot ist, nimmt sich still einen Skill aus dem Ampelplan – alle atmen dazu dreimal lang aus, so muss sich niemand melden. Heute nennen drei, vier Freiwillige zu Wort und Zahl auch die Stelle im Körper, an der sie das Gefühl spüren, etwa: müde, in den Augen, 20. Die Lehrkraft beginnt und schreibt die genannten Körperstellen an den Tafelrand – Bauch, Brust, Schultern, Kopf –, ohne Namen. Wer keine Stelle findet, sagt das; auch das ist eine Auskunft.",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad, dann zeigen alle auf drei ihre Anspannung mit den Fingern (0–100). Heute nennen drei, vier Freiwillige zu Wort und Zahl auch die Stelle im Körper, an der sie das Gefühl spüren, etwa „müde, in den Augen, 20“. Die Lehrkraft beginnt und schreibt die Stellen ohne Namen an den Tafelrand – sie werden in dieser Stunde noch gebraucht.",
             "sagen": [
-              "Wo sitzt euer Gefühl gerade – im Bauch, in der Brust, in den Schultern, im Kopf? Heute ist das wichtig, ihr werdet gleich sehen, warum."
+              "Wo sitzt euer Gefühl gerade – im Bauch, in der Brust, in den Schultern, im Kopf?",
+              "Wer keine Stelle findet, sagt das – auch das ist eine Auskunft."
             ],
-            "tipp": "Die Körperstellen bleiben an der Tafel stehen. Sie werden in Schritt 7 wieder gebraucht: Dort geht es darum, wie der Körper meldet, dass etwas zu viel wird.",
-            "wennEsKippt": "Kommen alberne Körperstellen („im kleinen Zeh“), sie gelassen aufschreiben – oft ist ein Körnchen Wahrheit dabei. Zeigt jemand acht Finger oder mehr, nicht vor der Klasse nachfragen, sondern später leise fragen, ob er oder sie heute etwas braucht."
+            "wennEsKippt": "Kommen alberne Körperstellen („im kleinen Zeh“), sie gelassen aufschreiben – oft ist ein Körnchen Wahrheit dabei. Zeigt jemand acht Finger oder mehr, nicht vor der Klasse nachfragen, sondern später leise fragen, ob er oder sie etwas braucht."
           },
           {
-            "titel": "Rückblick: Ich-Botschaften im Alltag",
+            "titel": "Rückblick, Mission und Thema",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann die Wochen-Mission nachfragen – im gewählten Moment eine Ich-Botschaft sagen oder zwei Minuten nur zuhören: Kam dein Moment, und was hast du gemacht? Daumen hoch: Der Moment kam, ich habe es probiert; Mitte: Der Moment kam, ich habe etwas anderes gemacht; runter: Der Moment kam nicht. Eine Stimme erzählt, wie die andere Person reagiert hat; auch „hat nicht geklappt“ zählt, niemand muss. Dann überleiten: Viele Ich-Botschaften drehen sich darum, dass einem etwas zu nah oder zu viel wird – also um Grenzen.",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment für die Ich-Botschaft oder das Zuhören – und was hast du gemacht? Daumen hoch: ja, ich habe es probiert; Mitte: ich habe etwas anderes gemacht; runter: der Moment kam nicht. Eine Stimme erzählt, wie die andere Person reagiert hat; dann überleiten: Viele Ich-Botschaften drehen sich darum, dass etwas zu nah oder zu viel wird – also um Grenzen.",
             "sagen": [
-              "Kam euer Moment für die Ich-Botschaft – und was habt ihr gemacht? Daumen hoch, Mitte oder runter. Auch ‚hat nicht geklappt‘ zählt – dann schauen wir, woran es lag.",
-              "Heute geht es um Grenzen: Wo fangen eure an, und woran merkt ihr, dass jemand anderes an seiner Grenze ist?"
+              "Kam euer Moment für die Ich-Botschaft oder das Zuhören – und was habt ihr gemacht?",
+              "Heute geht es um Grenzen: Wo fangen eure an, und woran merkt ihr, dass jemand anderes an seiner ist?"
             ],
-            "wennEsKippt": "Zeigen fast alle Daumen runter, nicht tadeln: Mancher Moment kommt in einer Woche nicht. Stattdessen fragen, in welcher Situation der Woche eine Ich-Botschaft gepasst hätte, und sie gemeinsam in einem Satz formulieren."
+            "wennEsKippt": "Zeigen fast alle Daumen runter, nicht tadeln: Mancher Moment kommt in einer Woche nicht. Stattdessen fragen, in welcher Situation eine Ich-Botschaft gepasst hätte, und sie gemeinsam in einem Satz formulieren."
           },
           {
-            "titel": "Was sind Grenzen?",
-            "dauer": 12,
-            "phase": "input",
-            "text": "Einstieg über Landesgrenzen: Luxemburg hat drei Nachbarländer, und viele merken die Grenze kaum – bis Schilder, Sprache oder Preise wechseln. Menschen haben auch Grenzen, nur sind sie unsichtbar. Das Tafelbild aufdecken und zu jeder Art zwei, drei Beispiele aus der Klasse sammeln; die Lehrkraft ergänzt, was fehlt (6 Min.). Dann die drei Merksätze aus der Liste vorlesen und kurz besprechen, besonders den zweiten: Grenzen sind bei jedem Menschen anders, und keine Familie, keine Kultur macht es „richtig“ (4 Min.). Zum Schluss fragen, woran man bei einer Landesgrenze merkt, dass man drüben ist – und woran bei einem Menschen (2 Min.).",
-            "sagen": [
-              "Woran merkt ihr, dass ihr über eine Landesgrenze gefahren seid? Und woran merkt man bei einem Menschen, dass man zu weit gegangen ist?",
-              "In manchen Familien begrüßt man sich mit Küsschen, in anderen mit Handschlag oder einem Nicken. Keins davon ist falsch."
-            ],
-            "punkte": [
-              "Grenzen sind unsichtbar – deshalb muss man sie zeigen und lesen.",
-              "Jeder Mensch hat andere Grenzen. Sie hängen ab von der Person, vom Tag, von der Stimmung, von Familie und Kultur.",
-              "Grenzen gelten in beide Richtungen: meine und die der anderen – online wie offline."
-            ],
-            "tabelle": {
-              "spalten": [
-                "Grenze",
-                "Das gehört dazu"
-              ],
-              "zeilen": [
-                [
-                  "körperlich",
-                  "mein Körper, mein Platz, meine Sachen"
-                ],
-                [
-                  "emotional",
-                  "meine Gefühle, meine Meinung, mein Privates"
-                ],
-                [
-                  "digital",
-                  "meine Fotos, Nachrichten und Passwörter, mein Standort"
-                ]
-              ]
-            },
-            "tipp": "Die Unterschiede zwischen Familien und Kulturen ausdrücklich würdigen: Wer zu Hause viel Nähe gewohnt ist, ist nicht aufdringlich, und wer Abstand braucht, ist nicht unhöflich. Heikel wird es erst, wenn jemand die Grenze eines anderen kennt und trotzdem drübergeht."
-          },
-          {
-            "titel": "Grenz-Karten sortieren",
-            "dauer": 18,
+            "titel": "Was sind Grenzen? Der Stopp-Abstand",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Jede Tischgruppe bekommt einen Umschlag mit den drei Überschriften und fünfzehn Grenz-Karten. Runde 1 (6 Min.): die Karten den Überschriften zuordnen; manche passen zu zwei, dann entscheidet die Gruppe und merkt sich, warum. Runde 2 (3 Min.): unter jeder Überschrift zwei Stapel bilden – „klar eine Grenze“ und „kommt drauf an“. In der Klasse (4 Min.): Jede Gruppe nennt eine Karte, die bei „kommt drauf an“ liegt; gemeinsam sammeln, wovon es abhängt – wer es ist, wie gefragt wird, wann es passiert. Daumen-Runde zu drei harmlosen Karten, Augen zu oder Blick auf den Tisch (2 Min.): Die Lehrkraft nennt nur die Verteilung. Zum Schluss Aufgabe 1 auf dem Blatt allein (3 Min.).",
+            "text": "Zuerst das Tafelbild mit den drei Arten von Grenzen. Dann der Stopp-Abstand: Eine Person geht langsam auf eine andere zu und bleibt bei „Stopp“ stehen, gemessen wird in Fußlängen. Zum Schluss Aufgabe 1 und 2 auf dem Blatt.",
             "sagen": [
-              "Welche Grenze wird hier überschritten – körperlich, emotional oder digital? Manchmal ist es mehr als eine.",
-              "Augen zu. Daumen hoch: für mich klar eine Grenze. Daumen zur Seite: kommt drauf an. Ich sage nur, wie es verteilt ist."
-            ],
-            "tipp": "Für die Daumen-Runde nur harmlose Karten nehmen, etwa die Umarmung, das Hobby oder die Tür. Wenn die Lehrkraft nur sagt „sieben so, zwölf so“, sehen alle, dass Grenzen verschieden sind, ohne dass sich jemand zeigen muss.",
-            "wennEsKippt": "Wird eine Karte verharmlost („ist doch nur Spaß“), die Frage umdrehen: Wie wäre es, wenn das mit deinem Foto oder deinem Handy passiert? Reagiert jemand bei einer Karte sichtbar betroffen, nicht nachfragen, sondern ruhig weitermachen und nach der Stunde ein Gespräch anbieten. Liest eine Gruppe nur vor sich hin, die Karte „Der Screenshot“ als Beispiel gemeinsam sortieren.",
-            "blatt": "ff7-grenz-karten"
-          },
-          {
-            "titel": "Bewegungspause: Ja-Nein-Seiten zur Nähe",
-            "dauer": 5,
-            "phase": "aktiv",
-            "text": "Alle stehen auf. Die Fensterseite heißt ja, die Türseite nein, die Mitte kommt drauf an. Die Lehrkraft liest einen Satz, alle gehen ohne Kommentar auf ihre Seite, dann kommt der nächste. Nach zwei, drei Sätzen fragen, was auffällt: Bei fast jedem Satz stehen Leute auf beiden Seiten. Wer nicht laufen mag, zeigt mit dem Daumen. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
-            "punkte": [
-              "Umarmungen zur Begrüßung finde ich gut.",
-              "Im Bus sitze ich am liebsten allein.",
-              "Wenn ich traurig bin, will ich lieber in Ruhe gelassen werden.",
-              "Ich teile gern mein Essen.",
-              "Es stört mich, wenn jemand auf mein Handy schaut.",
-              "Freunde begrüße ich lieber mit Handschlag als mit Umarmung."
-            ],
-            "tipp": "Die Sätze sind bewusst harmlos und zeigen trotzdem, worum es geht: Was für die eine Person schön ist, ist für die andere zu viel – und beides ist in Ordnung."
-          },
-          {
-            "titel": "Stopp-Abstand: meine Wohlfühl-Distanz",
-            "dauer": 18,
-            "phase": "aktiv",
-            "text": "Je Tischgruppe eine Bahn mit Start und Ziel. Vorführen (3 Min.): Eine ruhige freiwillige Person geht langsam und schweigend auf die Lehrkraft zu und bleibt auf „Stopp“ stehen; den Abstand in Fußlängen messen. Dann die Variante zeigen: allein auf das leere Ziel zugehen und sich dort eine Person vorstellen. Runde 1 (5 Min.): Wer einverstanden ist, stellt sich ans Ziel und bestimmt selbst, wer auf sie oder ihn zugeht; zwei messen und notieren ohne Namen, dann wechseln. Wer nicht angesteuert werden möchte, geht auf das leere Ziel zu. Runde 2 (4 Min.): Alle gehen zweimal auf das leere Ziel zu; die Lehrkraft sagt an, wer in Gedanken dort steht – eine fremde Person im Bus, dann der beste Freund oder die beste Freundin. Auswertung (4 Min.), dann Aufgabe 2 auf dem Blatt (2 Min.). Ist der Raum zu eng, üben erst drei, dann zwei Tischgruppen; die anderen schätzen die Abstände mit.",
-            "sagen": [
-              "Wer Stopp hört, bleibt sofort stehen. Ohne Diskussion. Das ist heute die wichtigste Regel.",
-              "Spätestens eine Fußlänge vor der Person ist Schluss – auch wenn niemand Stopp sagt.",
-              "War der Abstand bei allen gleich? Und bei der fremden Person im Bus genauso wie bei eurer besten Freundin?"
+              "Woran merkt ihr, dass ihr über eine Landesgrenze gefahren seid – und woran bei einem Menschen, dass man zu weit gegangen ist?",
+              "Wer Stopp hört, bleibt sofort stehen – ohne Diskussion."
             ],
             "punkte": [
-              "Wer geht, geht langsam, schweigend und mit Blick auf die Füße der anderen Person.",
-              "Wer steht, sagt „Stopp“ oder hebt die Hand, sobald es zu nah wird.",
-              "Wer Stopp hört, bleibt sofort stehen. Niemand berührt jemanden.",
-              "Spätestens eine Fußlänge vorher ist Schluss.",
-              "Das leere Ziel ist immer eine gleichwertige Wahl."
+              "Tafelbild (5 Min.): Eine Landesgrenze sieht man an Schildern, Sprache und Preisen – Grenzen von Menschen sind unsichtbar. Drei Arten aufdecken: körperlich (mein Körper, mein Platz, meine Sachen), emotional (meine Gefühle, meine Meinung, mein Privates), digital (meine Fotos, Nachrichten, mein Standort); jede Person hat andere Grenzen, je nach Tag, Familie und Kultur.",
+              "Vorführen (3 Min.): Eine ruhige freiwillige Person geht langsam und schweigend auf die Lehrkraft zu und bleibt bei „Stopp“ stehen; der Abstand wird in Fußlängen gemessen. Regeln: spätestens eine Fußlänge vorher ist Schluss, niemand wird berührt.",
+              "Runde 1 (7 Min.): Je Tischgruppe eine Bahn mit Start und Ziel; wer einverstanden ist, stellt sich ans Ziel und bestimmt, wer auf sie oder ihn zugeht; zwei messen und notieren ohne Namen, dann wechseln. Wer nicht angesteuert werden möchte, geht auf das leere Ziel zu.",
+              "Runde 2 und Auswertung (9 Min.): Alle gehen zweimal auf das leere Ziel zu; in Gedanken steht dort erst eine fremde Person im Bus, dann die beste Freundin oder der beste Freund. War der Abstand überall gleich? Die Abstände ohne Namen an die Tafel schreiben.",
+              "Aufgabe 1 und 2 (6 Min.): allein den eigenen Stopp-Abstand notieren und aufschreiben, woran man merkt, dass die eigene Grenze erreicht ist; die Körperstellen vom Check-in helfen."
             ],
-            "tabelle": {
-              "spalten": [
-                "Zone nach Hall (Richtwerte aus den USA)",
-                "etwa"
-              ],
-              "zeilen": [
-                [
-                  "ganz nah: Familie, beste Freunde",
-                  "bis 45 cm"
-                ],
-                [
-                  "persönlich: Freunde, Gespräch",
-                  "45 cm bis 1,2 m"
-                ],
-                [
-                  "sozial: Schule, Laden, Bus",
-                  "1,2 bis 3,6 m"
-                ],
-                [
-                  "öffentlich: Vortrag, Bühne",
-                  "mehr als 3,6 m"
-                ]
-              ]
-            },
-            "tipp": "Eine Fußlänge sind etwa 25 Zentimeter; wer mag, rechnet die Abstände in Zentimeter um und vergleicht mit dem Tafelbild. Die Abstände ohne Namen an die Tafel schreiben – die Spannweite von zwei bis acht Fußlängen zeigt, dass es keinen richtigen Abstand gibt.",
-            "wennEsKippt": "Rennt jemand los, bleibt nicht stehen oder macht Faxen, sofort abbrechen, die Regel wiederholen und die Person in der nächsten Runde messen lassen. Wird gekichert oder gestichelt, wer auf wen zugeht, die Paarbildung stoppen und alle auf das leere Ziel zugehen lassen. Erstarrt jemand oder will raus, die Übung für diese Person beenden, einen ruhigen Platz in Sichtweite anbieten und später nachfragen.",
+            "wennEsKippt": "Rennt jemand los oder macht Faxen, sofort abbrechen, die Regel wiederholen und die Person in der nächsten Runde messen lassen; wird gekichert, wer auf wen zugeht, alle auf das leere Ziel zugehen lassen. Erstarrt jemand oder will raus, die Übung für diese Person beenden, einen ruhigen Platz in Sichtweite anbieten und später nachfragen.",
             "blatt": "ff7-meine-grenzen"
           },
           {
-            "titel": "Grenzen anderer lesen",
-            "dauer": 17,
-            "phase": "uebung",
-            "text": "Die Lehrkraft liest die sechs Szenen nacheinander vor; die Tischgruppen beraten je 40 Sekunden zu den drei Fragen an der Tafel: Woran sieht man, dass eine Grenze erreicht ist? Welche Grenze ist es? Was kann die erste Person jetzt tun? Reihum antwortet eine Gruppe, die anderen ergänzen; dabei das Tafelbild füllen (8 Min.). Festhalten: Körpersprache ist ein Hinweis, kein Beweis – im Zweifel aufhören oder fragen: Ist das okay für dich? Genau das üben die Tischnachbarn (3 Min.): A fragt B neugierig nach der Note im letzten Test oder will aufs Handy schauen; B zeigt ohne Worte ein Zeichen aus dem Tafelbild; A bemerkt es und hört auf oder fragt nach. Dann wechseln. Zum Schluss allein Aufgabe 3 und 4 auf dem Blatt (6 Min.); die Körperstellen vom Check-in helfen. Die Ampel bleibt privat.",
+            "titel": "Bewegungspause: klar eine Grenze – kommt drauf an",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen auf: Die Fensterseite heißt „klar eine Grenze“, die Türseite „kein Problem“, die Mitte „kommt drauf an“. Die Lehrkraft liest fünf Situationen von den Grenz-Karten vor, alle gehen ohne Kommentar auf ihre Seite; wer nicht laufen mag, zeigt mit dem Daumen.",
             "sagen": [
-              "Ana lacht mit. Heißt das, dass es für sie okay ist?",
-              "Wer merkt, dass er einer Grenze zu nahe gekommen ist, hat nichts verloren, wenn er aufhört. Im Gegenteil."
+              "Welche Seite passt für euch – ohne Kommentar, einfach hingehen.",
+              "Schaut euch um: Bei fast jeder Situation stehen Leute auf mehreren Seiten."
             ],
             "punkte": [
-              "Ben zeigt Inês auf seinem Handy ein Video und rückt immer näher. Inês lehnt sich zurück und lacht kurz.",
-              "Tiago fragt Mila in der Pause vor allen nach ihrer Note im Mathe-Test. Mila schaut weg: „Keine Ahnung.“",
-              "Yusuf fotografiert Léa beim Essen und will das Foto posten. Léa hält die Hand vors Gesicht.",
-              "Noah will Zoé zur Begrüßung umarmen. Zoé streckt ihm die Hand hin.",
-              "Chiara liest über Arbens Schulter mit, was er schreibt. Arben dreht das Handy weg.",
-              "Ana hat für das Klassenplakat gezeichnet. Elias macht Witze über ihre Zeichnung. Alle lachen, Ana lacht mit – und sagt danach nichts mehr."
+              "Die Umarmung: Bei der Begrüßung umarmt dich jemand, den du kaum kennst.",
+              "Zu dicht: Im Bus steht jemand ganz dicht bei dir, obwohl Platz ist.",
+              "Das Handy: Jemand nimmt dir das Handy aus der Hand, ohne zu fragen.",
+              "Die Tür: Jemand kommt ins Zimmer, ohne anzuklopfen.",
+              "Das Hobby: Jemand macht sich über dein Hobby lustig."
             ],
-            "tabelle": {
-              "spalten": [
-                "So kann eine Grenze aussehen",
-                "Was dann hilft"
-              ],
-              "zeilen": [
-                [
-                  "zurückweichen, sich wegdrehen",
-                  "Abstand geben"
-                ],
-                [
-                  "wegschauen, nur noch kurze Antworten",
-                  "nicht nachbohren, Thema wechseln"
-                ],
-                [
-                  "Hand vors Gesicht, Handy wegdrehen",
-                  "sofort aufhören, nichts posten"
-                ],
-                [
-                  "gequältes Lächeln, „haha, lass mal“",
-                  "nachfragen: „Ist das okay für dich?“"
-                ],
-                [
-                  "plötzlich still",
-                  "aufhören – und später unter vier Augen fragen"
-                ]
-              ]
-            },
-            "tipp": "Die Szene mit Ana ist die wichtigste: Mitlachen heißt nicht einverstanden sein. Viele Jugendliche lachen mit, um nicht aufzufallen – wer das weiß, achtet auf das, was danach kommt.",
+            "tipp": "Die Situationen sind bewusst harmlos und zeigen trotzdem, worum es geht: Was für die eine Person schön ist, ist für die andere zu viel – und beides ist in Ordnung. Liegt die große Pause dazwischen, entfällt die Übung.",
+            "blatt": "ff7-grenz-karten"
+          },
+          {
+            "titel": "Grenzen anderer lesen",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Die Lehrkraft liest vier Szenen vor, die Tischgruppen beraten jedes Mal: Woran sieht man die Grenze, welche Grenze ist es, was kann die erste Person tun? Danach üben die Paare, ein Zeichen zu zeigen und zu lesen, und alle füllen Aufgabe 3 aus.",
+            "sagen": [
+              "Ana lacht mit – heißt das, dass es für sie okay ist?",
+              "Wer merkt, dass er einer Grenze zu nahe kommt, verliert nichts, wenn er aufhört – im Gegenteil."
+            ],
+            "punkte": [
+              "Szene 1 (4 Min.): Ben zeigt Inês ein Video auf seinem Handy und rückt immer näher. Inês lehnt sich zurück und lacht kurz.",
+              "Szene 2 (4 Min.): Tiago fragt Mila in der Pause vor allen nach ihrer Note im Mathe-Test. Mila schaut weg: „Keine Ahnung.“",
+              "Szene 3 (4 Min.): Yusuf fotografiert Léa beim Essen und will das Foto posten. Léa hält die Hand vors Gesicht.",
+              "Szene 4 (6 Min.): Ana hat für das Klassenplakat gezeichnet, Elias macht Witze über ihre Zeichnung. Alle lachen, Ana lacht mit – und sagt danach nichts mehr. Mitlachen heißt nicht einverstanden sein. Die Zeichen an der Tafel sammeln – zurückweichen, wegschauen, Hand vors Gesicht, gequältes Lächeln, plötzlich still – und was dann hilft: aufhören oder fragen.",
+              "Zu zweit und Aufgabe 3 (17 Min.): A fragt B neugierig nach der Note im letzten Test oder will aufs Handy schauen, B zeigt ohne Worte ein Zeichen von der Tafel, A bemerkt es, hört auf oder fragt: „Ist das okay für dich?“ Dann wechseln, danach allein Aufgabe 3."
+            ],
             "wennEsKippt": "Erkennt die Klasse in einer Szene eine echte Person aus der Klasse wieder, sofort zurück zu den erfundenen Figuren: Heute reden wir nur über Ben, Mila und die anderen. Kommen Sprüche über jemanden aus der Klasse, freundlich, aber klar stoppen und auf die Klassenvereinbarung zeigen.",
             "blatt": "ff7-meine-grenzen"
           },
           {
             "titel": "Skill: Körper-Check",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Ankündigen: Den Körper-Check kennt ihr aus Stunde 11 – heute mit einer neuen Frage. Der Körper meldet oft zuerst, dass etwas zu nah oder zu viel ist, noch bevor man es denkt. Alle sitzen bequem, die Füße am Boden, die Augen offen oder geschlossen – beides ist gleich gut. Die drei Schritte langsam anleiten (Liste) und selbst mitmachen; insgesamt höchstens drei Minuten. Wer nicht mitmachen will, drückt nur still die Füße in den Boden und wartet; das wird nicht kommentiert. Danach zwei, drei Rückmeldungen: Wo habt ihr etwas gespürt? Zum Schluss fragen, wann der Körper-Check helfen könnte – im Bus, vor einem Gespräch, wenn jemand näherkommt – und erklären: Wer seine Signale früh bemerkt, hat mehr Zeit zu reagieren.",
+            "text": "Den Körper-Check kennt ihr aus Stunde 11 – heute mit einer neuen Frage: Wo meldet mein Körper, dass etwas zu nah oder zu viel ist? Alle sitzen bequem, die Füße am Boden, die Augen offen oder geschlossen; die Lehrkraft leitet die drei Schritte langsam an und macht mit (höchstens 3 Min.). Dann der Abschluss: Skills-Pass, Mission und Moment.",
             "sagen": [
-              "Ihr müsst nichts ändern. Nur bemerken, was da ist.",
-              "Wo war es eng, wo war es locker? Wer mag, sagt eine Stelle."
+              "Ihr müsst nichts ändern – nur bemerken, was da ist.",
+              "Wo war es eng, wo war es locker – wer mag, sagt eine Stelle."
             ],
             "punkte": [
-              "Stell beide Füße auf den Boden, Augen offen oder zu, und atme einmal langsam aus.",
-              "Wandere mit der Aufmerksamkeit vom Kopf über Schultern und Brust bis zum Bauch: Wo ist es eng, warm oder fest – wo locker?",
-              "Leg eine Hand dorthin, wo es eng ist, atme zweimal langsam aus und schätz deine Zahl."
+              "Skill (5 Min.): Füße auf den Boden, einmal lang ausatmen; mit der Aufmerksamkeit von der Stirn über Schultern und Brust bis zum Bauch wandern – eng, warm, fest oder locker? Eine Hand dorthin legen, wo es eng ist, zweimal lang ausatmen und die Zahl schätzen; danach zwei, drei Rückmeldungen.",
+              "Skills-Pass (4 Min.): ein Satz zur Frage an der Tafel – Woran merke ich, dass mir etwas zu nah ist, und woran bei anderen? Danach der Stempel.",
+              "Mission und Moment (5 Min.): die Mission vorlesen, eine Beobachtung; auf drei zeigen alle, wo ihr Moment am ehesten kommt – ein Finger: der volle Bus, zwei: die Schlange in der Kantine, drei: jemand will mein Handy sehen, Faust: ein eigener Moment –, und schreiben ihn in die Spalte „Mein Moment: Wenn …“. Dann der Ausblick."
             ],
-            "tipp": "Den Körper-Check mit dem Ampelplan aus dem Skills-Koffer verbinden: Wer bei Gelb seine Signale bemerkt, kann noch reden, weggehen oder Hilfe holen.",
-            "wennEsKippt": "Wirkt jemand bei der Übung aufgewühlt, leise anbieten, die Augen zu öffnen und die Füße fest auf den Boden zu stellen; nach der Stunde kurz nachfragen. Wird gekichert, ruhig weitersprechen – niemand muss die Augen schließen. Die Übung nie verlängern, um Ruhe zu erzwingen: Kurz und freiwillig wirkt sie, erzwungen nicht."
-          },
-          {
-            "titel": "Skills-Pass, Moment wählen, Ausblick",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.) mit der Leitfrage an der Tafel: Woran merke ich, dass mir etwas zu nah ist – und woran bei anderen? Danach gibt es den Stempel; wer mag, liest seinen Satz vor, eine Stimme reicht. Wochen-Mission und Moment wählen (2 Min.): Die Mission im Heft ansagen – eine Beobachtung: Wenn dein Moment kommt, dann achte darauf, was dein Körper meldet. Dann wählt jede Person ihren Moment: Auf drei zeigen alle einen Finger für den vollen Bus, zwei für die Schlange in der Kantine, drei für den Augenblick, in dem jemand das Handy sehen will, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ neben der Mission, ein Stichwort reicht. Zum Schluss der Ausblick auf die nächste Stunde (1 Min.).",
-            "sagen": [
-              "Ein Satz für den Skills-Pass: Woran merkt ihr, dass euch etwas zu nah ist – oder dass es jemand anderem zu nah ist?",
-              "Wann kommt euer Moment? Ein Finger: der volle Bus. Zwei: die Schlange in der Kantine. Drei: Jemand will mein Handy sehen. Faust: ein eigener Moment. Schreibt ihn ins Heft: Wenn …, dann achte ich auf meinen Körper."
-            ],
-            "tipp": "Auch eine Beobachtung braucht einen Auslöser: Wer weiß, wann er hinspürt, spürt eher hin – und hat nächste Woche etwas zu berichten, ohne dass jemand kontrolliert. Die Markierungen nach der Stunde entfernen und notieren, wo die Bahnen lagen – nächste Woche wird dort das Stopp geübt.",
-            "wennEsKippt": "Nennt jemand einen Scherz-Moment, gelten lassen, wenn er ernst gemeint ist. Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Wer die Sprache noch lernt oder nicht schreiben mag, malt ein Zeichen: Bus, Teller, Handy."
+            "wennEsKippt": "Wirkt jemand bei der Übung aufgewühlt, leise anbieten, die Augen zu öffnen und die Füße fest auf den Boden zu stellen, und nach der Stunde kurz nachfragen. Kichern ruhig überhören – niemand muss die Augen schließen, und die Übung wird nie verlängert, um Ruhe zu erzwingen."
           }
         ],
         "bruecke": "Nächste Woche übt ihr, eine Grenze so zu zeigen, dass sie ankommt: mit einem klaren Stopp – mit Worten, mit dem Körper oder indem ihr weggeht und Hilfe holt.",
-        "mission": "Wenn dein Moment kommt – im vollen Bus, in der Schlange in der Kantine oder wenn jemand dein Handy sehen will –, achte darauf, was dein Körper meldet: zu nah, zu viel oder passt.",
-        "hintergrund": "Grenzen schützen, was zu einer Person gehört: Körper und Raum, Gefühle und Privates, Fotos und Nachrichten. Grundlage ist das Modell der Distanzzonen von Hall (1966): Menschen halten je nach Beziehung Abstände ein – intim bis etwa 45 cm, persönlich bis etwa 1,2 m, sozial bis etwa 3,6 m, dahinter öffentlich. Die Werte schwanken mit Kultur und Stimmung; es gibt keinen richtigen Abstand, nur einen, der passt. Eine erreichte Grenze meldet oft zuerst der Körper – der wichtigste Beleg sind die Körperkarten von Nummenmaa et al. (2014): Gefühle gehen mit typischen Körperempfindungen einher, die Menschen in verschiedenen Ländern ähnlich verorten. Den Sinn für solche Signale nennt Craig (2002) Interozeption; der Körper-Check lenkt die Aufmerksamkeit darauf. Wer die eigenen Signale kennt, kann früher reagieren – wer die Zeichen anderer liest, hört auf oder fragt nach, bevor es Streit gibt.",
+        "mission": "Achte einmal darauf, was dein Körper meldet: zu nah, zu viel oder passt?",
+        "hintergrund": "Nach Hall (1966) halten Menschen je nach Beziehung unterschiedliche Abstände ein; es gibt keinen richtigen Abstand, nur einen, der passt – er schwankt mit Kultur und Stimmung. Eine erreichte Grenze meldet oft zuerst der Körper: Gefühle gehen mit typischen Körperempfindungen einher (Nummenmaa et al., 2014). Den Sinn für solche Signale nennt Craig (2002) Interozeption; der Körper-Check lenkt die Aufmerksamkeit darauf.",
         "quellen": [
           "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday.",
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
           "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666."
         ],
-        "achtung": "Grenzen berühren Erfahrungen, die manche nicht teilen möchten. Es gilt das Stopp-Recht: Wer nicht mitmachen will, misst, notiert oder geht auf das leere Ziel zu; niemand wird berührt, und wer Stopp hört, bleibt sofort stehen. Nähe und Begrüßung sind in jeder Familie und Kultur anders – keine Form ist die richtige. Erzählt jemand von Übergriffen, Gewalt oder verbreiteten Bildern: ruhig zuhören, nicht vor der Klasse nachfragen, nichts versprechen, nach der Stunde sprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "achtung": "Grenzen berühren Erfahrungen, die manche nicht teilen möchten: Es gilt das Stopp-Recht – wer nicht mitmachen will, misst, notiert oder geht auf das leere Ziel zu, niemand wird berührt, und wer Stopp hört, bleibt sofort stehen. Nähe und Begrüßung sind in jeder Familie und Kultur anders, keine Form ist die richtige. Erzählt jemand von Übergriffen, Gewalt oder verbreiteten Bildern: ruhig zuhören, nicht vor der Klasse nachfragen, nichts versprechen, nach der Stunde sprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
         "differenzierung": {
-          "leichter": "Die Grenz-Karten liest eine Person vor, die gut liest; die drei Überschriften haben ein Bild. Beim Stopp-Abstand übernehmen Jugendliche, die die Unterrichtssprache noch lernen, gern das Messen – Fußlängen zählen geht in jeder Sprache. Auf dem Blatt reichen Stichworte: Aufgabe 3 wird nur angekreuzt, bei Aufgabe 4 reicht ein Wort je Farbe. Für die Spalte „Mein Moment“ reicht ein Wort: Bus, Kantine, Handy.",
-          "schwerer": "Zu drei Karten aus „kommt drauf an“ aufschreiben, wovon es abhängt: wer, wie, wann – oder eine eigene Situation auf eine leere Karte schreiben. In Schritt 7 eine eigene Szene erfinden, in der jemand eine Grenze ohne Worte zeigt, und sie von einer anderen Gruppe lesen lassen."
+          "leichter": "Die Karten liest eine Person vor, die gut liest; beim Stopp-Abstand übernehmen Jugendliche, die die Unterrichtssprache noch lernen, gern das Messen – Fußlängen zählen geht in jeder Sprache. Auf dem Blatt reichen Stichworte oder Kreuze; für „Mein Moment“ ein Wort.",
+          "schwerer": "Zu drei Karten aufschreiben, wovon es abhängt – wer, wie, wann –, oder die Karten in Tischgruppen nach körperlich, emotional und digital sortieren. Eine eigene Szene erfinden, in der jemand eine Grenze ohne Worte zeigt, und von einer anderen Gruppe lesen lassen."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Körperstelle (5 Min.), Was sind Grenzen? mit Tafelbild (7 Min.), Grenz-Karten sortieren mit Daumen-Runde (13 Min.), Stopp-Abstand vorn an einer Bahn mit vier, fünf Freiwilligen und dem leeren Ziel (12 Min.), Grenzen anderer lesen mit drei Szenen (8 Min.), Skills-Pass, Mission und Moment wählen (5 Min.). Der Körper-Check und die Aufgaben 3 und 4 auf dem Blatt kommen in die nächste Stunde."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Körperstelle (5 Min.), Tafelbild und Stopp-Abstand vorn mit vier, fünf Freiwilligen und dem leeren Ziel (18 Min.), Grenzen anderer lesen mit zwei Szenen (15 Min.), Körper-Check, Skills-Pass und Mission (12 Min.). Die Bewegungspause entfällt; Aufgabe 2 und 3 auf dem Blatt kommen in die nächste Stunde."
       },
       "fr": {
         "titel": "Reconnaître les limites",
-        "kurz": "La classe trie des situations, sent sa distance de confort avec la distance « stop » et apprend à reconnaître les limites des autres à de petits signes.",
+        "kurz": "La classe sent sa distance de confort avec la distance « stop » et apprend à reconnaître les limites des autres à de petits signes.",
         "ziele": [
-          "classent des situations du quotidien selon les limites physiques, émotionnelles et numériques",
           "découvrent avec la distance « stop » que chacun a sa propre distance de confort",
           "nomment les signaux du corps qui leur montrent qu’une limite est atteinte",
-          "repèrent quand c’est trop près pour quelqu’un d’autre et disent ce qui aide alors"
+          "repèrent quand c’est trop près pour quelqu’un d’autre et s’arrêtent ou demandent"
         ],
         "material": [
-          "Cahier de l’élève, tampon pour le Skills-Pass",
           "Roue des émotions, 20 gommettes",
-          "Cartes limites, un jeu par îlot",
+          "Cartes limites, une copie (modèle)",
           "Ruban de masquage ou sacs pour marquer",
-          "Cinq cartes pour noter, stylos"
+          "Papiers et stylos pour noter",
+          "Cahier : fiche et Skills-Pass, tampon"
         ],
         "vorbereitung": [
-          "Cartes limites : photocopier, découper, une enveloppe par îlot.",
           "Prévoir cinq pistes de trois mètres (à l’avant, au fond, dans l’allée) ; marquer le départ et l’arrivée avec du ruban ou un sac.",
-          "Préparer et cacher les tableaux et les trois questions des étapes 3, 6 et 7.",
-          "Vérifier avec le régent ou le SePAS s’il y a un incident récent dans la classe ; adapter alors les cartes.",
-          "Si un jeune de la classe porte le prénom d’un personnage des scènes (étape 7), changer le prénom en lisant."
+          "Préparer et cacher le tableau des trois types de limites ; photocopier les cartes limites une fois et choisir cinq situations à lire.",
+          "Vérifier avec le régent ou le SePAS s’il y a un incident récent dans la classe ; adapter alors les cartes et les scènes."
         ],
         "ablauf": [
           {
@@ -360,42 +225,27 @@
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Retour : les messages en « je » au quotidien"
+            "titel": "Retour, mission et thème"
           },
           {
-            "min": "15–27",
-            "phase": "input",
-            "titel": "C’est quoi, une limite ?"
-          },
-          {
-            "min": "27–45",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Trier les cartes limites"
+            "titel": "C’est quoi, une limite ? La distance « stop »"
           },
           {
             "min": "45–50",
             "phase": "aktiv",
-            "titel": "Pause active : oui, non ou ça dépend ?"
+            "titel": "Pause active : clairement une limite – ça dépend"
           },
           {
-            "min": "50–68",
-            "phase": "aktiv",
-            "titel": "La distance « stop » : ma distance de confort"
-          },
-          {
-            "min": "68–85",
+            "min": "50–85",
             "phase": "uebung",
             "titel": "Lire les limites des autres"
           },
           {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : le tour du corps"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, choix du moment, prochaine séance"
           }
         ],
         "schritte": [
@@ -403,226 +253,112 @@
             "titel": "Tour d’humeur : émotion, chiffre – et où dans le corps ?",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Une fois tout le monde assis, chacun montre sa tension avec les doigts, à « trois » (0 à 10 doigts pour 0 à 100). Puis la question du feu : qui est dans l’orange ou dans le rouge prend en silence un skill de son plan feu tricolore – tout le monde expire trois fois longuement, ainsi personne n’a à se signaler. Aujourd’hui, trois ou quatre volontaires disent, en plus du mot et du chiffre, l’endroit du corps où ils sentent l’émotion, par exemple : fatigué, dans les yeux, 20. Commencer soi-même et noter en marge du tableau les endroits nommés – ventre, poitrine, épaules, tête –, sans prénom. Qui ne trouve pas d’endroit le dit ; c’est aussi une information.",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions, puis tout le monde montre sa tension avec les doigts, à « trois » (0 à 100). Aujourd’hui, trois ou quatre volontaires disent, en plus du mot et du chiffre, l’endroit du corps où ils sentent l’émotion, par exemple : « fatigué, dans les yeux, 20 ». L’enseignant·e commence et note en marge du tableau les endroits nommés, sans prénom – on en aura encore besoin dans la séance.",
             "sagen": [
-              "Où se trouve votre émotion en ce moment – dans le ventre, la poitrine, les épaules, la tête ? Aujourd’hui, c’est important, vous allez vite comprendre pourquoi."
+              "Où se trouve votre émotion en ce moment – dans le ventre, la poitrine, les épaules, la tête ?",
+              "Qui ne trouve pas d’endroit le dit – c’est aussi une information."
             ],
-            "tipp": "Les endroits du corps restent au tableau. On en aura besoin à l’étape 7 : il s’agira de voir comment le corps signale que quelque chose devient trop.",
-            "wennEsKippt": "Si des endroits pour rire arrivent (« dans le petit orteil »), les noter tranquillement – il y a souvent un fond de vérité. Si un jeune montre huit doigts ou plus, ne pas poser de questions devant la classe, mais lui demander plus tard, discrètement, s’il a besoin de quelque chose aujourd’hui."
+            "wennEsKippt": "Si des endroits pour rire arrivent (« dans le petit orteil »), les noter tranquillement – il y a souvent un fond de vérité. Si un jeune montre huit doigts ou plus, ne pas poser de questions devant la classe, mais lui demander plus tard, discrètement, s’il a besoin de quelque chose."
           },
           {
-            "titel": "Retour : les messages en « je » au quotidien",
+            "titel": "Retour, mission et thème",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Puis revenir sur la mission de la semaine – au moment choisi, dire un message en « je » ou écouter deux minutes sans rien dire d’autre : ton moment est-il venu, et qu’as-tu fait ? Pouce en haut : le moment est venu, j’ai essayé ; au milieu : le moment est venu, j’ai fait autre chose ; en bas : le moment n’est pas venu. Une voix raconte comment l’autre a réagi ; « ça n’a pas marché » compte aussi, personne n’est obligé. Faire ensuite la transition : beaucoup de messages en « je » parlent de quelque chose qui est trop près ou de trop – autrement dit, de limites.",
+            "text": "Revenir sur la mission de la semaine : ton moment pour le message en « je » ou pour l’écoute est-il venu – et qu’as-tu fait ? Pouce en haut : oui, j’ai essayé ; au milieu : j’ai fait autre chose ; en bas : le moment n’est pas venu. Une voix raconte comment l’autre a réagi ; puis faire la transition : beaucoup de messages en « je » parlent de quelque chose de trop près ou de trop – autrement dit, de limites.",
             "sagen": [
-              "Votre moment pour le message en « je » est-il venu – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas. “Ça n’a pas marché”, ça compte aussi – on regarde alors pourquoi.",
+              "Votre moment pour le message en « je » ou pour l’écoute est-il venu – et qu’avez-vous fait ?",
               "Aujourd’hui, on parle des limites : où commencent les vôtres, et à quoi voyez-vous que quelqu’un d’autre est à sa limite ?"
             ],
-            "wennEsKippt": "Si presque tous les pouces sont en bas, ne pas faire de reproche : certains moments ne viennent pas dans la semaine. Demander plutôt dans quelle situation de la semaine un message en « je » aurait convenu, et le formuler ensemble en une phrase."
+            "wennEsKippt": "Si presque tous les pouces sont en bas, ne pas faire de reproche : certains moments ne viennent pas dans la semaine. Demander plutôt dans quelle situation un message en « je » aurait convenu, et le formuler ensemble en une phrase."
           },
           {
-            "titel": "C’est quoi, une limite ?",
-            "dauer": 12,
-            "phase": "input",
-            "text": "Commencer par les frontières entre pays : le Luxembourg a trois pays voisins, et beaucoup remarquent à peine la frontière – jusqu’à ce que les panneaux, la langue ou les prix changent. Les gens aussi ont des limites, mais elles sont invisibles. Découvrir le tableau et rassembler, pour chaque type, deux ou trois exemples de la classe ; compléter ce qui manque (6 min). Puis lire les trois phrases à retenir de la liste et en parler brièvement, surtout de la deuxième : chacun a ses limites, et aucune famille, aucune culture n’a « la bonne » façon de faire (4 min). Pour finir, demander à quoi on remarque qu’on a passé une frontière – et à quoi chez une personne (2 min).",
-            "sagen": [
-              "À quoi remarquez-vous que vous avez passé une frontière ? Et à quoi remarque-t-on, chez une personne, qu’on est allé trop loin ?",
-              "Dans certaines familles, on se dit bonjour avec des bises, dans d’autres avec une poignée de main ou un signe de tête. Aucune de ces façons n’est fausse."
-            ],
-            "punkte": [
-              "Les limites sont invisibles – c’est pourquoi il faut les montrer et les lire.",
-              "Chacun a des limites différentes. Elles dépendent de la personne, du jour, de l’humeur, de la famille et de la culture.",
-              "Les limites valent dans les deux sens : les miennes et celles des autres – en ligne comme dans la vraie vie."
-            ],
-            "tabelle": {
-              "spalten": [
-                "Limite",
-                "Ce qui en fait partie"
-              ],
-              "zeilen": [
-                [
-                  "physique",
-                  "mon corps, ma place, mes affaires"
-                ],
-                [
-                  "émotionnelle",
-                  "mes émotions, mon avis, ma vie privée"
-                ],
-                [
-                  "numérique",
-                  "mes photos, mes messages et mes mots de passe, ma localisation"
-                ]
-              ]
-            },
-            "tipp": "Valoriser expressément les différences entre familles et cultures : qui est habitué à beaucoup de proximité à la maison n’est pas envahissant, et qui a besoin de distance n’est pas impoli. Cela ne devient délicat que si quelqu’un connaît la limite d’un autre et la franchit quand même."
-          },
-          {
-            "titel": "Trier les cartes limites",
-            "dauer": 18,
+            "titel": "C’est quoi, une limite ? La distance « stop »",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Chaque îlot reçoit une enveloppe avec les trois titres et quinze cartes limites. Tour 1 (6 min) : classer les cartes sous les titres ; certaines vont sous deux titres, l’îlot décide alors et retient pourquoi. Tour 2 (3 min) : sous chaque titre, faire deux piles – « clairement une limite » et « ça dépend ». En classe entière (4 min) : chaque îlot cite une carte de la pile « ça dépend » ; rassembler ensemble ce dont ça dépend – de qui c’est, de la façon de demander, du moment. Tour du pouce sur trois cartes anodines, les yeux fermés ou le regard sur la table (2 min) : l’enseignant·e ne donne que la répartition. Pour finir, exercice 1 de la fiche, seul (3 min).",
+            "text": "D’abord le tableau des trois types de limites. Ensuite la distance « stop » : une personne avance lentement vers une autre et s’arrête au « stop », on mesure en pieds. Pour finir, les exercices 1 et 2 de la fiche.",
             "sagen": [
-              "Quelle limite est franchie ici – physique, émotionnelle ou numérique ? Parfois, il y en a plus d’une.",
-              "Les yeux fermés. Pouce en haut : pour moi, clairement une limite. Pouce sur le côté : ça dépend. Je dis seulement comment c’est réparti."
-            ],
-            "tipp": "Pour le tour du pouce, ne prendre que des cartes anodines, comme le câlin, le hobby ou la porte. Quand l’enseignant·e dit seulement « sept comme ça, douze comme ça », tout le monde voit que les limites sont différentes, sans que personne ait à se montrer.",
-            "wennEsKippt": "Si une carte est minimisée (« c’est juste pour rire »), retourner la question : et si ça arrivait avec ta photo ou ton portable ? Si un jeune paraît visiblement touché par une carte, ne pas poser de questions, continuer calmement et proposer un entretien après le cours. Si un îlot lit sans avancer, trier ensemble la carte « La capture d’écran » comme exemple.",
-            "blatt": "ff7-grenz-karten"
-          },
-          {
-            "titel": "Pause active : oui, non ou ça dépend ?",
-            "dauer": 5,
-            "phase": "aktiv",
-            "text": "Tout le monde se lève. Le côté fenêtre veut dire oui, le côté porte non, le milieu ça dépend. Lire une phrase ; chacun va de son côté sans commentaire, puis vient la phrase suivante. Après deux ou trois phrases, demander ce qu’on remarque : à presque chaque phrase, il y a des gens des deux côtés. Qui ne veut pas bouger montre sa réponse avec le pouce. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
-            "punkte": [
-              "J’aime bien qu’on se fasse un câlin pour se dire bonjour.",
-              "Dans le bus, je préfère être assis seul.",
-              "Quand je suis triste, je préfère qu’on me laisse tranquille.",
-              "J’aime partager ce que je mange.",
-              "Ça me dérange quand quelqu’un regarde mon portable.",
-              "Je préfère dire bonjour à mes amis avec la main plutôt qu’avec un câlin."
-            ],
-            "tipp": "Les phrases sont volontairement anodines et montrent pourtant l’essentiel : ce qui est agréable pour l’un est de trop pour l’autre – et les deux sont normaux."
-          },
-          {
-            "titel": "La distance « stop » : ma distance de confort",
-            "dauer": 18,
-            "phase": "aktiv",
-            "text": "Une piste par îlot, avec un départ et une arrivée. Démonstration (3 min) : un volontaire calme avance lentement et en silence vers l’enseignant·e et s’arrête au « stop » ; mesurer la distance en pieds. Montrer ensuite la variante : avancer seul vers l’arrivée vide en imaginant une personne qui s’y trouve. Tour 1 (5 min) : qui est d’accord se place à l’arrivée et choisit lui-même qui avance vers lui ; deux jeunes mesurent et notent sans prénom, puis on change. Qui ne veut pas qu’on avance vers lui avance vers l’arrivée vide. Tour 2 (4 min) : chacun avance deux fois vers l’arrivée vide ; l’enseignant·e annonce qui s’y trouve en pensée – un inconnu dans le bus, puis le meilleur ami ou la meilleure amie. Bilan (4 min), puis exercice 2 de la fiche (2 min). Si la salle est trop petite, trois îlots commencent, puis les deux autres ; ceux qui attendent estiment les distances.",
-            "sagen": [
-              "Qui entend “stop” s’arrête immédiatement. Sans discuter. C’est la règle la plus importante aujourd’hui.",
-              "Au plus tard à un pied de la personne, on s’arrête – même si personne ne dit stop.",
-              "La distance était-elle la même pour tout le monde ? Et pour l’inconnu dans le bus, la même que pour votre meilleure amie ?"
+              "À quoi remarquez-vous que vous avez passé une frontière – et, chez une personne, qu’on est allé trop loin ?",
+              "Qui entend « stop » s’arrête tout de suite – sans discuter."
             ],
             "punkte": [
-              "Qui avance marche lentement, en silence, en regardant les pieds de l’autre.",
-              "Qui est debout dit « stop » ou lève la main dès que c’est trop près.",
-              "Qui entend « stop » s’arrête immédiatement. Personne ne touche personne.",
-              "Au plus tard à un pied, on s’arrête.",
-              "L’arrivée vide est toujours un choix qui vaut autant que l’autre."
+              "Tableau (5 min) : une frontière se voit aux panneaux, à la langue, aux prix – les limites des gens sont invisibles. Découvrir trois types : physique (mon corps, ma place, mes affaires), émotionnelle (mes émotions, mon avis, ma vie privée), numérique (mes photos, mes messages, ma localisation) ; chacun a ses limites, selon le jour, la famille et la culture.",
+              "Démonstration (3 min) : un volontaire calme avance lentement et en silence vers l’enseignant·e et s’arrête au « stop » ; on mesure la distance en pieds. Règles : au plus tard à un pied, on s’arrête, personne ne touche personne.",
+              "Tour 1 (7 min) : une piste par îlot, avec départ et arrivée ; qui est d’accord se place à l’arrivée et choisit qui avance vers lui ; deux jeunes mesurent et notent sans prénom, puis on change. Qui ne veut pas qu’on avance vers lui avance vers l’arrivée vide.",
+              "Tour 2 et bilan (9 min) : chacun avance deux fois vers l’arrivée vide ; en pensée, il y a d’abord un inconnu dans le bus, puis la meilleure amie ou le meilleur ami. La distance était-elle la même partout ? Écrire les distances au tableau, sans prénom.",
+              "Exercices 1 et 2 (6 min) : seul, noter sa distance « stop » et écrire à quoi on remarque que sa limite est atteinte ; les endroits du corps du tour d’humeur aident."
             ],
-            "tabelle": {
-              "spalten": [
-                "Zone selon Hall (repères américains)",
-                "environ"
-              ],
-              "zeilen": [
-                [
-                  "très proche : famille, meilleurs amis",
-                  "jusqu’à 45 cm"
-                ],
-                [
-                  "personnelle : amis, conversation",
-                  "de 45 cm à 1,2 m"
-                ],
-                [
-                  "sociale : école, magasin, bus",
-                  "de 1,2 à 3,6 m"
-                ],
-                [
-                  "publique : exposé, scène",
-                  "plus de 3,6 m"
-                ]
-              ]
-            },
-            "tipp": "Un pied mesure environ 25 centimètres ; qui veut convertit les distances en centimètres et compare avec le tableau. Noter les distances au tableau sans prénom – l’écart de deux à huit pieds montre qu’il n’y a pas de bonne distance.",
-            "wennEsKippt": "Si quelqu’un fonce, ne s’arrête pas ou fait le clown, arrêter tout de suite, répéter la règle et lui confier la mesure au tour suivant. Si on se met à ricaner ou à faire des allusions sur qui avance vers qui, arrêter les paires et faire avancer tout le monde vers l’arrivée vide. Si un jeune se fige ou veut sortir, arrêter l’exercice pour lui, lui proposer une place au calme à portée de vue et lui parler plus tard.",
+            "wennEsKippt": "Si quelqu’un fonce ou fait le clown, arrêter tout de suite, répéter la règle et lui confier la mesure au tour suivant ; si on ricane sur qui avance vers qui, faire avancer tout le monde vers l’arrivée vide. Si un jeune se fige ou veut sortir, arrêter l’exercice pour lui, lui proposer une place au calme à portée de vue et lui parler plus tard.",
             "blatt": "ff7-meine-grenzen"
           },
           {
-            "titel": "Lire les limites des autres",
-            "dauer": 17,
-            "phase": "uebung",
-            "text": "Lire les six scènes l’une après l’autre ; les îlots discutent 40 secondes chaque fois des trois questions au tableau : à quoi voit-on qu’une limite est atteinte ? De quelle limite s’agit-il ? Que peut faire la première personne maintenant ? À tour de rôle, un îlot répond, les autres complètent ; remplir en même temps le tableau (8 min). À retenir : le langage du corps est un indice, pas une preuve – en cas de doute, arrêter ou demander : ça va pour toi ? C’est exactement ce que les voisins de table s’entraînent à faire (3 min) : A demande avec curiosité à B sa note au dernier devoir en classe ou veut regarder son portable ; B montre sans un mot un signe du tableau ; A le remarque et s’arrête ou pose la question. Puis on échange. Pour finir, seul, exercices 3 et 4 de la fiche (6 min) ; les endroits du corps du tour d’humeur aident. Le feu tricolore reste privé.",
+            "titel": "Pause active : clairement une limite – ça dépend",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève : le côté fenêtre veut dire « clairement une limite », le côté porte « pas de problème », le milieu « ça dépend ». L’enseignant·e lit cinq situations des cartes limites, chacun va de son côté sans commentaire ; qui ne veut pas bouger montre sa réponse avec le pouce.",
             "sagen": [
-              "Ana rit avec les autres. Est-ce que ça veut dire que ça lui va ?",
-              "Qui remarque qu’il s’est approché trop près d’une limite ne perd rien en s’arrêtant. Au contraire."
+              "Quel côté vous convient – sans commentaire, allez-y simplement.",
+              "Regardez autour de vous : à presque chaque situation, il y a des gens de plusieurs côtés."
             ],
             "punkte": [
-              "Ben montre une vidéo à Inês sur son portable et se rapproche de plus en plus. Inês recule et rit un peu.",
-              "À la récré, devant tout le monde, Tiago demande à Mila sa note au devoir de maths. Mila détourne le regard : « Aucune idée. »",
-              "Yusuf prend Léa en photo pendant qu’elle mange et veut la poster. Léa met la main devant son visage.",
-              "Noah veut faire un câlin à Zoé pour lui dire bonjour. Zoé lui tend la main.",
-              "Chiara lit par-dessus l’épaule d’Arben ce qu’il écrit. Arben tourne son portable.",
-              "Ana a dessiné pour l’affiche de la classe. Elias fait des blagues sur son dessin. Tout le monde rit, Ana aussi – et ensuite, elle ne dit plus rien."
+              "Le câlin : pour te dire bonjour, quelqu’un que tu connais à peine te prend dans ses bras.",
+              "Trop près : dans le bus, quelqu’un se colle à toi alors qu’il y a de la place.",
+              "Le portable : quelqu’un te prend ton portable des mains sans demander.",
+              "La porte : quelqu’un entre dans la chambre sans frapper.",
+              "Le hobby : quelqu’un se moque de ton hobby."
             ],
-            "tabelle": {
-              "spalten": [
-                "À quoi une limite peut ressembler",
-                "Ce qui aide alors"
-              ],
-              "zeilen": [
-                [
-                  "reculer, se détourner",
-                  "laisser de la distance"
-                ],
-                [
-                  "détourner le regard, ne répondre que brièvement",
-                  "ne pas insister, changer de sujet"
-                ],
-                [
-                  "main devant le visage, portable qu’on tourne",
-                  "arrêter tout de suite, ne rien poster"
-                ],
-                [
-                  "sourire forcé, « haha, laisse tomber »",
-                  "demander : « Ça va pour toi ? »"
-                ],
-                [
-                  "silence soudain",
-                  "arrêter – et demander plus tard, en tête-à-tête"
-                ]
-              ]
-            },
-            "tipp": "La scène avec Ana est la plus importante : rire avec les autres ne veut pas dire être d’accord. Beaucoup de jeunes rient avec les autres pour ne pas se faire remarquer – qui le sait fait attention à ce qui vient après.",
+            "tipp": "Les situations sont volontairement anodines et montrent pourtant l’essentiel : ce qui est agréable pour l’un est de trop pour l’autre – et les deux sont normaux. Si la grande récréation tombe entre les deux heures, supprimer l’exercice.",
+            "blatt": "ff7-grenz-karten"
+          },
+          {
+            "titel": "Lire les limites des autres",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Lire quatre scènes ; les îlots discutent chaque fois : à quoi voit-on la limite, de quelle limite s’agit-il, que peut faire la première personne ? Ensuite, les binômes s’entraînent à montrer un signe et à le lire, et tout le monde fait l’exercice 3.",
+            "sagen": [
+              "Ana rit avec les autres – est-ce que ça veut dire que ça lui va ?",
+              "Qui remarque qu’il s’approche trop d’une limite ne perd rien en s’arrêtant – au contraire."
+            ],
+            "punkte": [
+              "Scène 1 (4 min) : Ben montre une vidéo à Inês sur son portable et se rapproche de plus en plus. Inês recule et rit un peu.",
+              "Scène 2 (4 min) : à la récré, devant tout le monde, Tiago demande à Mila sa note au devoir de maths. Mila détourne le regard : « Aucune idée. »",
+              "Scène 3 (4 min) : Yusuf prend Léa en photo pendant qu’elle mange et veut la poster. Léa met la main devant son visage.",
+              "Scène 4 (6 min) : Ana a dessiné pour l’affiche de la classe, Elias fait des blagues sur son dessin. Tout le monde rit, Ana aussi – et ensuite, elle ne dit plus rien. Rire avec les autres ne veut pas dire être d’accord. Rassembler les signes au tableau – reculer, détourner le regard, main devant le visage, sourire forcé, silence soudain – et ce qui aide : arrêter ou demander.",
+              "À deux et exercice 3 (17 min) : A demande avec curiosité à B sa note au dernier devoir ou veut regarder son portable, B montre sans un mot un signe du tableau, A le remarque, s’arrête ou demande : « Ça va pour toi ? » Puis on échange, ensuite l’exercice 3, seul."
+            ],
             "wennEsKippt": "Si la classe reconnaît dans une scène une vraie personne de la classe, revenir tout de suite aux personnages inventés : aujourd’hui, on ne parle que de Ben, de Mila et des autres. Si des remarques fusent sur quelqu’un de la classe, les arrêter gentiment mais fermement et montrer la charte de classe.",
             "blatt": "ff7-meine-grenzen"
           },
           {
             "titel": "Skill : le tour du corps",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Annoncer : vous connaissez le tour du corps depuis la séance 11 – aujourd’hui, avec une nouvelle question. Le corps signale souvent en premier que quelque chose est trop près ou de trop, avant même qu’on y pense. Tout le monde s’assoit confortablement, les pieds au sol, les yeux ouverts ou fermés – les deux se valent. Guider lentement les trois étapes (liste) et faire l’exercice soi-même ; en tout, trois minutes au maximum. Qui ne veut pas participer appuie seulement les pieds dans le sol, en silence, et attend ; on ne fait pas de commentaire. Ensuite, deux ou trois retours : où avez-vous senti quelque chose ? Pour finir, demander quand le tour du corps pourrait aider – dans le bus, avant une discussion, quand quelqu’un s’approche – et expliquer : qui remarque tôt ses signaux a plus de temps pour réagir.",
+            "text": "Vous connaissez le tour du corps depuis la séance 11 – aujourd’hui, avec une nouvelle question : où mon corps me signale-t-il que c’est trop près ou de trop ? Tout le monde s’assoit confortablement, les pieds au sol, les yeux ouverts ou fermés ; l’enseignant·e guide lentement les trois étapes et les fait aussi (trois minutes au plus). Puis la clôture : Skills-Pass, mission et moment.",
             "sagen": [
-              "Vous n’avez rien à changer. Seulement remarquer ce qui est là.",
-              "Où c’était serré, où c’était détendu ? Qui veut dit un endroit."
+              "Vous n’avez rien à changer – seulement remarquer ce qui est là.",
+              "Où c’était serré, où c’était détendu – qui veut, dit un endroit."
             ],
             "punkte": [
-              "Pose les deux pieds au sol, les yeux ouverts ou fermés, et expire une fois lentement.",
-              "Promène ton attention de la tête aux épaules, à la poitrine et jusqu’au ventre : où est-ce serré, chaud ou dur – où est-ce détendu ?",
-              "Pose une main là où c’est serré, expire deux fois lentement et estime ton chiffre."
+              "Skill (5 min) : pieds au sol, expirer longuement une fois ; promener son attention du front aux épaules, à la poitrine, jusqu’au ventre – serré, chaud, dur ou détendu ? Poser une main là où c’est serré, expirer deux fois lentement et estimer son chiffre ; ensuite deux ou trois retours.",
+              "Skills-Pass (4 min) : une phrase sur la question au tableau – à quoi je remarque que quelque chose est trop près pour moi, et pour les autres ? Puis le tampon.",
+              "Mission et moment (5 min) : lire la mission, une observation ; à « trois », chacun montre où son moment a le plus de chances d’arriver – un doigt : le bus bondé, deux : la file à la cantine, trois : quelqu’un veut voir mon portable, le poing : un moment à soi –, et l’écrit dans la colonne « Mon moment : si… ». Puis annoncer la suite."
             ],
-            "tipp": "Relier le tour du corps au plan feu tricolore de la valise à skills : qui remarque ses signaux à l’orange peut encore parler, partir ou aller chercher de l’aide.",
-            "wennEsKippt": "Si un jeune semble bouleversé pendant l’exercice, lui proposer discrètement d’ouvrir les yeux et de bien poser les pieds au sol ; lui parler brièvement après le cours. Si des rires fusent, continuer calmement – personne n’est obligé de fermer les yeux. Ne jamais prolonger l’exercice pour imposer le calme : court et facultatif, il fonctionne ; imposé, non."
-          },
-          {
-            "titel": "Skills-Pass, choix du moment, prochaine séance",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 min) avec la question au tableau : à quoi je remarque que quelque chose est trop près pour moi – et pour les autres ? Ensuite, le tampon ; qui veut lit sa phrase, une voix suffit. Mission de la semaine et choix du moment (2 min) : annoncer la mission dans le cahier – une observation : quand ton moment arrive, tu remarques ce que ton corps te dit. Puis chacun choisit son moment : à « trois », tout le monde montre un doigt pour le bus bondé, deux pour la file à la cantine, trois pour l’instant où quelqu’un veut voir le portable, le poing pour un moment à soi – et l’écrit dans la colonne « Mon moment : si… » à côté de la mission, un mot-clé suffit. Pour finir, annoncer la prochaine séance (1 min).",
-            "sagen": [
-              "Une phrase pour le Skills-Pass : à quoi remarquez-vous que quelque chose est trop près pour vous – ou pour quelqu’un d’autre ?",
-              "Quand arrive votre moment ? Un doigt : le bus bondé. Deux : la file à la cantine. Trois : quelqu’un veut voir mon portable. Le poing : un moment à vous. Écrivez-le dans le cahier : si…, alors je fais attention à mon corps."
-            ],
-            "tipp": "Même une observation a besoin d’un déclencheur : qui sait quand écouter son corps l’écoute plus souvent – et aura quelque chose à raconter la semaine prochaine, sans que personne ne contrôle. Après la séance, enlever les repères et noter où étaient les pistes – la semaine prochaine, on s’y entraînera à dire stop.",
-            "wennEsKippt": "Si quelqu’un donne un moment pour rire, le laisser passer s’il est sérieux au fond. Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne lui demandera rien. Qui apprend encore la langue ou n’aime pas écrire dessine un signe : bus, assiette, portable."
+            "wennEsKippt": "Si un jeune semble bouleversé pendant l’exercice, lui proposer discrètement d’ouvrir les yeux et de bien poser les pieds au sol, puis lui parler brièvement après le cours. Ignorer calmement les rires – personne n’est obligé de fermer les yeux, et on ne prolonge jamais l’exercice pour imposer le calme."
           }
         ],
         "bruecke": "La semaine prochaine, vous vous entraînerez à montrer une limite pour qu’elle soit comprise : avec un stop clair – avec les mots, avec le corps, ou en partant pour aller chercher de l’aide.",
-        "mission": "Quand ton moment arrive – dans le bus bondé, dans la file à la cantine ou quand quelqu’un veut voir ton portable –, remarque ce que ton corps te dit : trop près, trop, ou ça va.",
-        "hintergrund": "Les limites protègent ce qui appartient à une personne : son corps et son espace, ses émotions et sa vie privée, photos et messages. La base est le modèle des zones de distance de Hall (1966) : selon la relation, on garde une distance intime jusqu’à environ 45 cm, personnelle jusqu’à 1,2 m, sociale jusqu’à 3,6 m, publique au-delà. Ces valeurs varient selon la culture et l’humeur ; il n’y a pas de bonne distance, seulement celle qui convient. Le corps signale souvent en premier qu’une limite est atteinte – le meilleur appui est la carte du corps de Nummenmaa et al. (2014) : les émotions vont avec des sensations corporelles typiques, situées au même endroit d’un pays à l’autre. Craig (2002) appelle intéroception ce sens des signaux internes ; le tour du corps y dirige l’attention. Qui connaît ses signaux réagit plus tôt – qui lit les signes des autres s’arrête ou demande avant le conflit.",
+        "mission": "Remarque une fois ce que ton corps te dit : trop près, trop, ou ça va ?",
+        "hintergrund": "Selon Hall (1966), on garde des distances différentes selon la relation ; il n’y a pas de bonne distance, seulement celle qui convient – elle varie avec la culture et l’humeur. Le corps signale souvent en premier qu’une limite est atteinte : les émotions vont avec des sensations corporelles typiques (Nummenmaa et al., 2014). Craig (2002) appelle ce sens des signaux internes l’intéroception ; le tour du corps y dirige l’attention.",
         "quellen": [
           "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday.",
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
           "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666."
         ],
-        "achtung": "Les limites touchent à des expériences que certains ne veulent pas partager. Le droit de dire stop s’applique : qui ne veut pas participer mesure, note ou avance vers l’arrivée vide ; personne n’est touché, et qui entend « stop » s’arrête aussitôt. La proximité et les salutations varient selon les familles et les cultures – aucune n’est la bonne. Si un jeune parle d’agressions, de violence ou d’images diffusées : écouter calmement, ne pas questionner devant la classe, ne rien promettre, lui parler après le cours, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
+        "achtung": "Les limites touchent à des expériences que certains ne veulent pas partager : le droit de dire stop s’applique – qui ne veut pas participer mesure, note ou avance vers l’arrivée vide, personne n’est touché, et qui entend « stop » s’arrête aussitôt. La proximité et les salutations varient selon les familles et les cultures, aucune n’est la bonne. Si un jeune parle d’agressions, de violence ou d’images diffusées : écouter calmement, ne pas questionner devant la classe, ne rien promettre, lui parler après le cours, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
         "differenzierung": {
-          "leichter": "Un jeune qui lit bien lit les cartes limites à son îlot ; les trois titres ont une image. Pour la distance « stop », les jeunes qui apprennent encore la langue de la classe prennent volontiers la mesure – compter des pieds marche dans toutes les langues. Sur la fiche, des mots-clés suffisent : à l’exercice 3, on coche seulement ; à l’exercice 4, un mot par couleur suffit. Pour la colonne « Mon moment », un mot suffit : bus, cantine, portable.",
-          "schwerer": "Pour trois cartes de la pile « ça dépend », écrire de quoi ça dépend : de qui, de quelle façon, de quand – ou écrire une situation sur une carte vierge. À l’étape 7, inventer une scène où quelqu’un montre une limite sans mots, et la faire lire par un autre îlot."
+          "leichter": "Un jeune qui lit bien lit les cartes ; pour la distance « stop », les jeunes qui apprennent encore la langue de la classe prennent volontiers la mesure – compter des pieds marche dans toutes les langues. Sur la fiche, des mots-clés ou des croix suffisent ; pour « Mon moment », un mot.",
+          "schwerer": "Pour trois cartes, écrire de quoi ça dépend – de qui, de quelle façon, de quand –, ou trier les cartes en îlots selon les types physique, émotionnel et numérique. Inventer une scène où quelqu’un montre une limite sans mots, et la faire lire par un autre îlot."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec l’endroit du corps (5 min), c’est quoi, une limite ? avec le tableau (7 min), trier les cartes limites avec le tour du pouce (13 min), distance « stop » devant la classe sur une piste, avec quatre ou cinq volontaires et l’arrivée vide (12 min), lire les limites des autres avec trois scènes (8 min), Skills-Pass, mission et choix du moment (5 min). Le tour du corps et les exercices 3 et 4 de la fiche passent à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec l’endroit du corps (5 min), tableau et distance « stop » devant la classe avec quatre ou cinq volontaires et l’arrivée vide (18 min), lire les limites des autres avec deux scènes (15 min), tour du corps, Skills-Pass et mission (12 min). La pause active est supprimée ; les exercices 2 et 3 de la fiche passent à la séance suivante."
       }
     }
   ],
@@ -638,7 +374,7 @@
       "sozialform": [
         "einzeln"
       ],
-      "dauer": "12 Min.",
+      "dauer": "15 Min.",
       "eldib": [],
       "schlagworte": [
         "Grenzen",
@@ -652,37 +388,12 @@
       ],
       "de": {
         "titel": "Meine Grenzen",
-        "untertitel": "Wo meine Grenzen liegen, woran ich sie spüre – und woran ich die Grenzen anderer erkenne",
+        "untertitel": "Wo deine Grenze liegt – und die der anderen",
         "bausteine": [
           {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Du entscheidest, was du teilst.",
-            "text": "Dieses Blatt gehört dir. Niemand muss es lesen."
-          },
-          {
             "art": "aufgabe",
-            "text": "Was ist für dich eine Grenze? Schreib für jede Art ein Beispiel auf.",
-            "hinweis": "Du kannst auch Beispiele von den Grenz-Karten nehmen."
-          },
-          {
-            "art": "tabelle",
-            "spalten": [
-              "Körperlich",
-              "Emotional",
-              "Digital"
-            ],
-            "zeilen": 2,
-            "beispiel": [
-              "Jemand setzt sich im Bus auf meinen Rucksack.",
-              "Jemand lacht, wenn ich von meinem Hund erzähle.",
-              "Jemand postet ein Foto von mir, ohne zu fragen."
-            ]
-          },
-          {
-            "art": "aufgabe",
-            "text": "Mein Stopp-Abstand: Wie viel Abstand brauchst du? Schreib es nach der Übung auf.",
-            "hinweis": "Eine Fußlänge sind etwa 25 Zentimeter."
+            "text": "Schreib deinen Stopp-Abstand auf.",
+            "hinweis": "Eine Fußlänge sind etwa 25 cm. Du entscheidest, was du teilst."
           },
           {
             "art": "satzanfaenge",
@@ -694,75 +405,70 @@
             ]
           },
           {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Kein Abstand ist der richtige",
-            "text": "Der Forscher Edward T. Hall hat in den USA beobachtet, wie nah sich Menschen kommen: Familie und beste Freunde oft bis 45 cm, Freunde im Gespräch bis etwa 1,2 m, Fremde in Schule und Bus noch weiter weg. In anderen Ländern, Familien und Kulturen ist das anders – und es ändert sich mit dem Tag und der Stimmung."
+            "art": "aufgabe",
+            "text": "Schreib auf, woran du merkst, dass deine Grenze erreicht ist.",
+            "hinweis": "Stichworte reichen."
+          },
+          {
+            "art": "satzanfaenge",
+            "linien": 1,
+            "items": [
+              "Ich spüre …",
+              "Ich denke …",
+              "Ich tue …"
+            ]
           },
           {
             "art": "aufgabe",
-            "text": "Woran merkst du, dass es jemand anderem zu nah ist? Kreuze an."
+            "text": "Kreuze an, woran du merkst, dass es jemand anderem zu nah ist."
           },
           {
             "art": "ankreuzen",
             "spalten": 2,
-            "frei": 1,
             "items": [
               "geht einen Schritt zurück",
               "dreht sich weg",
               "schaut weg",
               "antwortet nur noch kurz",
               "lächelt gequält",
-              "sagt „haha, lass mal“",
-              "verschränkt die Arme",
               "wird plötzlich still"
             ]
           },
           {
-            "art": "info",
-            "symbol": "merke",
-            "titel": "Im Zweifel: aufhören oder fragen.",
-            "text": "Körpersprache ist ein Hinweis, kein Beweis. Frag nach: „Ist das okay für dich?“ Und wer Stopp hört, hört auf – online wie offline."
-          },
-          {
-            "art": "aufgabe",
-            "text": "Woran merkst du, dass deine Grenze erreicht ist? Schreib auf, was du spürst, denkst oder tust.",
-            "hinweis": "Denk an den Check-in: Wo im Körper meldet sich ein Gefühl zuerst?"
-          },
-          {
-            "art": "ampel",
-            "linien": 1,
-            "stufen": [
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
               {
-                "titel": "Stopp – Grenze überschritten",
-                "text": "zum Beispiel: Herz rast, ich will nur weg oder werde laut"
-              },
+                "art": "info",
+                "symbol": "wissen",
+                "titel": "Gut zu wissen",
+                "text": "Jeder Mensch hat eine Wohlfühl-Distanz. Sie ist bei jedem anders – und ändert sich mit Tag und Stimmung. Dein Körper meldet oft zuerst, wenn es zu nah wird."
+              }
+            ],
+            "rechts": [
               {
-                "titel": "Achtung – es wird mir zu viel",
-                "text": "zum Beispiel: Bauch zieht sich zusammen, ich lächle gequält"
-              },
-              {
-                "titel": "Passt – ich fühle mich wohl",
-                "text": "zum Beispiel: Schultern locker, ich lache und bleibe gern"
+                "art": "info",
+                "symbol": "merke",
+                "titel": "Im Zweifel",
+                "punkte": [
+                  "Aufhören oder fragen: „Ist das okay für dich?“",
+                  "Wer Stopp hört, hört auf."
+                ]
               }
             ]
           },
           {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Du musst das nicht allein lösen.",
-            "text": "Überschreitet jemand deine Grenzen immer wieder oder ist dir etwas passiert, das sich falsch anfühlt: Das ist nicht deine Schuld. Sprich mit einer Person, der du vertraust, zum Beispiel beim SePAS. Anonym und kostenlos: Kanner- a Jugendtelefon 116 111."
-          },
-          {
-            "art": "notfall"
+            "art": "notfall",
+            "text": "Wird deine Grenze überschritten? Nicht deine Schuld. Hilfe: 116 111 · 8002 1234",
+            "eintraege": []
           }
         ],
         "lehrer": {
-          "ziel": "Die Jugendlichen halten eigene körperliche, emotionale und digitale Grenzen fest, notieren ihren Stopp-Abstand, beschreiben ihre Körpersignale in drei Stufen und erkennen Zeichen, an denen es anderen zu nah wird.",
+          "ziel": "Die Jugendlichen notieren ihren Stopp-Abstand, beschreiben, woran sie merken, dass die eigene Grenze erreicht ist, und erkennen Zeichen, an denen es anderen zu nah wird.",
           "ablauf": [
-            "Einheit 20, Schritt 4: Aufgabe 1 allein nach dem Sortieren der Grenz-Karten (3 Min.).",
-            "Schritt 6: Aufgabe 2 nach dem Stopp-Abstand (2 Min.).",
-            "Schritt 7: Aufgabe 3 und 4 allein nach den Szenen und der Übung zu zweit (6 Min.); die Ampel bleibt privat, das Blatt wird nicht eingesammelt."
+            "Einheit 20, Schritt 3: Aufgabe 1 und 2 allein nach dem Stopp-Abstand (6 Min.); die Körperstellen vom Check-in helfen. Das Blatt wird nicht eingesammelt.",
+            "Schritt 5: Aufgabe 3 allein nach den Szenen und der Übung zu zweit.",
+            "Auf die Zeile „Das ist nicht deine Schuld“ hinweisen; die Hilfe-Nummern stehen unten auf dem Blatt."
           ],
           "hintergrund": "Wie nah jemand kommen darf, hängt von Beziehung, Situation und Kultur ab (Hall, 1966). Dass eine Grenze erreicht ist, meldet oft zuerst der Körper; Gefühle gehen mit typischen Körperempfindungen einher (Nummenmaa et al., 2014).",
           "quellen": [
@@ -775,37 +481,12 @@
       },
       "fr": {
         "titel": "Mes limites",
-        "untertitel": "Où sont mes limites, comment je les sens – et à quoi je reconnais celles des autres",
+        "untertitel": "Où est ta limite – et celle des autres",
         "bausteine": [
           {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Tu décides de ce que tu partages.",
-            "text": "Cette fiche t’appartient. Personne n’est obligé de la lire."
-          },
-          {
             "art": "aufgabe",
-            "text": "Qu’est-ce qui est une limite pour toi ? Écris un exemple pour chaque type.",
-            "hinweis": "Tu peux aussi prendre des exemples des cartes limites."
-          },
-          {
-            "art": "tabelle",
-            "spalten": [
-              "Physique",
-              "Émotionnelle",
-              "Numérique"
-            ],
-            "zeilen": 2,
-            "beispiel": [
-              "Quelqu’un s’assoit sur mon sac dans le bus.",
-              "Quelqu’un rit quand je parle de mon chien.",
-              "Quelqu’un poste une photo de moi sans me demander."
-            ]
-          },
-          {
-            "art": "aufgabe",
-            "text": "Ma distance « stop » : de quelle distance as-tu besoin ? Écris-le après l’exercice.",
-            "hinweis": "Un pied mesure environ 25 centimètres."
+            "text": "Écris ta distance « stop ».",
+            "hinweis": "Un pied mesure environ 25 cm. Tu décides de ce que tu partages."
           },
           {
             "art": "satzanfaenge",
@@ -817,75 +498,70 @@
             ]
           },
           {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Il n’y a pas de bonne distance",
-            "text": "Le chercheur Edward T. Hall a observé aux États-Unis à quelle distance les gens se tiennent : la famille et les meilleurs amis souvent jusqu’à 45 cm, les amis qui discutent jusqu’à environ 1,2 m, les inconnus à l’école et dans le bus encore plus loin. Dans d’autres pays, familles et cultures, c’est différent – et ça change avec le jour et l’humeur."
+            "art": "aufgabe",
+            "text": "Écris à quoi tu remarques que ta limite est atteinte.",
+            "hinweis": "Quelques mots suffisent."
+          },
+          {
+            "art": "satzanfaenge",
+            "linien": 1,
+            "items": [
+              "Je sens…",
+              "Je pense…",
+              "Je fais…"
+            ]
           },
           {
             "art": "aufgabe",
-            "text": "À quoi remarques-tu que c’est trop près pour quelqu’un d’autre ? Coche."
+            "text": "Coche à quoi tu remarques que c’est trop près pour quelqu’un d’autre."
           },
           {
             "art": "ankreuzen",
             "spalten": 2,
-            "frei": 1,
             "items": [
               "fait un pas en arrière",
               "se détourne",
               "détourne le regard",
               "ne répond plus que brièvement",
               "sourit de façon forcée",
-              "dit « haha, laisse tomber »",
-              "croise les bras",
               "devient soudain silencieux"
             ]
           },
           {
-            "art": "info",
-            "symbol": "merke",
-            "titel": "En cas de doute : arrêter ou demander.",
-            "text": "Le langage du corps est un indice, pas une preuve. Demande : « Ça va pour toi ? » Et qui entend « stop » arrête – en ligne comme dans la vraie vie."
-          },
-          {
-            "art": "aufgabe",
-            "text": "À quoi remarques-tu que ta limite est atteinte ? Écris ce que tu sens, ce que tu penses ou ce que tu fais.",
-            "hinweis": "Pense au tour d’humeur : où dans ton corps une émotion se manifeste-t-elle en premier ?"
-          },
-          {
-            "art": "ampel",
-            "linien": 1,
-            "stufen": [
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
               {
-                "titel": "Stop – limite franchie",
-                "text": "par exemple : le cœur s’emballe, je veux juste partir ou je hausse le ton"
-              },
+                "art": "info",
+                "symbol": "wissen",
+                "titel": "Bon à savoir",
+                "text": "Chacun a sa propre distance de confort. Elle change selon la personne, le jour et l’humeur. Ton corps le signale souvent en premier."
+              }
+            ],
+            "rechts": [
               {
-                "titel": "Attention – ça devient trop",
-                "text": "par exemple : le ventre se serre, je souris de façon forcée"
-              },
-              {
-                "titel": "Ça va – je me sens bien",
-                "text": "par exemple : les épaules détendues, je ris et je reste volontiers"
+                "art": "info",
+                "symbol": "merke",
+                "titel": "En cas de doute",
+                "punkte": [
+                  "Arrêter ou demander : « Ça va pour toi ? »",
+                  "Qui entend « stop » arrête."
+                ]
               }
             ]
           },
           {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Tu n’as pas à régler ça tout seul.",
-            "text": "Si quelqu’un franchit tes limites encore et encore, ou s’il t’est arrivé quelque chose qui te met mal à l’aise : ce n’est pas ta faute. Parles-en à une personne de confiance, par exemple au SePAS. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
-          },
-          {
-            "art": "notfall"
+            "art": "notfall",
+            "text": "Ta limite est dépassée ? Ce n’est pas ta faute. Aide : 116 111 · 8002 1234",
+            "eintraege": []
           }
         ],
         "lehrer": {
-          "ziel": "Les jeunes notent leurs propres limites physiques, émotionnelles et numériques, inscrivent leur distance « stop », décrivent les signaux de leur corps en trois niveaux et repèrent les signes qui montrent que c’est trop près pour les autres.",
+          "ziel": "Les jeunes notent leur distance « stop », décrivent à quoi ils remarquent que leur propre limite est atteinte et repèrent les signes qui montrent que c’est trop près pour les autres.",
           "ablauf": [
-            "Séance 20, étape 4 : exercice 1 seul après le tri des cartes limites (3 min).",
-            "Étape 6 : exercice 2 après la distance « stop » (2 min).",
-            "Étape 7 : exercices 3 et 4 seuls après les scènes et l’exercice à deux (6 min) ; le feu tricolore reste privé, la fiche n’est pas ramassée."
+            "Séance 20, étape 3 : exercices 1 et 2 seuls après la distance « stop » (6 min) ; les endroits du corps du tour d’humeur aident. La fiche n’est pas ramassée.",
+            "Étape 5 : exercice 3 seul après les scènes et l’exercice à deux.",
+            "Montrer la phrase « Ce n’est pas ta faute » ; les numéros d’aide figurent en bas de la fiche."
           ],
           "hintergrund": "La distance qu’on laisse dépend de la relation, de la situation et de la culture (Hall, 1966). Souvent, c’est le corps qui signale en premier qu’une limite est atteinte ; les émotions s’accompagnent de sensations corporelles typiques (Nummenmaa et al., 2014).",
           "quellen": [
@@ -922,11 +598,11 @@
       ],
       "de": {
         "titel": "Grenz-Karten",
-        "untertitel": "Kopiervorlage: einmal je Tischgruppe – drei Überschriften, fünfzehn Situationen, drei leere Karten",
+        "untertitel": "Kopiervorlage: eine Kopie zum Vorlesen, fünf zum Sortieren – drei Überschriften, fünfzehn Situationen, drei leere Karten",
         "bausteine": [
           {
             "art": "text",
-            "text": "Beide Seiten einmal je Tischgruppe kopieren, ausschneiden und in einen Umschlag stecken. Die Gruppe legt die drei Überschriften aus und sortiert: Welche Grenze wird überschritten? Danach unter jeder Überschrift zwei Stapel: „klar eine Grenze“ und „kommt drauf an“. Auf die leeren Karten schreiben Gruppen, die schneller sind, eigene Situationen – ohne Namen.",
+            "text": "Beide Seiten kopieren und ausschneiden. Für Schritt 4 liest die Lehrkraft fünf Situationen vor, die Klasse geht auf die Seite „klar eine Grenze“, „kommt drauf an“ oder „kein Problem“. Zum Sortieren in Tischgruppen: je Gruppe einen Satz in einen Umschlag stecken, die Karten den drei Überschriften zuordnen und unter jeder Überschrift zwei Stapel bilden – „klar eine Grenze“ und „kommt drauf an“. Schnelle Gruppen schreiben auf die leeren Karten eigene Situationen, ohne Namen.",
             "klein": true
           },
           {
@@ -1044,9 +720,9 @@
         "lehrer": {
           "ziel": "Die Tischgruppen ordnen Alltagssituationen körperlichen, emotionalen und digitalen Grenzen zu und unterscheiden, was klar eine Grenze ist und wo es auf Person, Art und Moment ankommt.",
           "ablauf": [
-            "Beide Seiten einmal je Tischgruppe auf festes Papier kopieren, ausschneiden, in fünf Umschläge stecken.",
-            "Einheit 20, Schritt 4: zuerst nach den drei Überschriften sortieren, dann in „klar eine Grenze“ und „kommt drauf an“.",
-            "Daumen-Runde nur mit harmlosen Karten (Umarmung, Hobby, Tür); bei einem aktuellen Vorfall in der Klasse ähnliche Karten herausnehmen."
+            "Beide Seiten auf festes Papier kopieren und ausschneiden: einmal zum Vorlesen, fünfmal zum Sortieren in Tischgruppen.",
+            "Einheit 20, Schritt 4: Die Lehrkraft liest fünf harmlose Situationen vor, die Klasse stellt sich auf die Seiten. Zum Sortieren: erst nach den drei Überschriften, dann in „klar eine Grenze“ und „kommt drauf an“.",
+            "Zum Vorlesen nur harmlose Karten wählen (Umarmung, Hobby, Tür); bei einem aktuellen Vorfall in der Klasse ähnliche Karten herausnehmen."
           ],
           "hintergrund": "Wie nah jemand kommen darf, hängt von Beziehung, Situation und Kultur ab (Hall, 1966); deshalb gibt es bei vielen Karten kein eindeutiges Richtig. Eindeutig ist die Regel im Digitalen: Fotos und private Nachrichten anderer werden nur mit deren Einverständnis weitergegeben.",
           "quellen": [
@@ -1057,11 +733,11 @@
       },
       "fr": {
         "titel": "Cartes limites",
-        "untertitel": "Modèle à photocopier : un jeu par îlot – trois titres, quinze situations, trois cartes vierges",
+        "untertitel": "Modèle à photocopier : une copie pour lire, cinq pour trier – trois titres, quinze situations, trois cartes vierges",
         "bausteine": [
           {
             "art": "text",
-            "text": "Photocopier les deux pages une fois par îlot, découper et mettre dans une enveloppe. L’îlot pose les trois titres et trie : quelle limite est franchie ? Ensuite, sous chaque titre, deux piles : « clairement une limite » et « ça dépend ». Sur les cartes vierges, les îlots plus rapides écrivent leurs propres situations – sans prénom.",
+            "text": "Photocopier et découper les deux pages. À l’étape 4, l’enseignant·e lit cinq situations, la classe va du côté « clairement une limite », « ça dépend » ou « pas de problème ». Pour trier en îlots : un jeu par îlot dans une enveloppe, classer les cartes sous les trois titres et faire sous chaque titre deux piles – « clairement une limite » et « ça dépend ». Les îlots rapides écrivent leurs propres situations sur les cartes vierges, sans prénom.",
             "klein": true
           },
           {
@@ -1179,9 +855,9 @@
         "lehrer": {
           "ziel": "Les îlots classent des situations du quotidien selon les limites physiques, émotionnelles et numériques et distinguent ce qui est clairement une limite de ce qui dépend de la personne, de la façon et du moment.",
           "ablauf": [
-            "Photocopier les deux pages une fois par îlot sur du papier épais, découper, mettre dans cinq enveloppes.",
-            "Séance 20, étape 4 : trier d’abord selon les trois titres, puis en « clairement une limite » et « ça dépend ».",
-            "Tour du pouce seulement avec des cartes anodines (câlin, hobby, porte) ; en cas d’incident récent dans la classe, retirer les cartes semblables."
+            "Photocopier les deux pages sur du papier épais et découper : une fois pour lire, cinq fois pour trier en îlots.",
+            "Séance 20, étape 4 : l’enseignant·e lit cinq situations anodines, la classe se place des deux côtés. Pour trier : d’abord selon les trois titres, puis en « clairement une limite » et « ça dépend ».",
+            "Pour la lecture, ne choisir que des cartes anodines (câlin, hobby, porte) ; en cas d’incident récent dans la classe, retirer les cartes semblables."
           ],
           "hintergrund": "La distance qu’on laisse dépend de la relation, de la situation et de la culture (Hall, 1966) ; c’est pourquoi beaucoup de cartes n’ont pas de réponse unique. La règle est claire dans le numérique : les photos et les messages privés des autres ne se transfèrent qu’avec leur accord.",
           "quellen": [
