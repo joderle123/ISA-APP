@@ -39,7 +39,7 @@
           "erkennen in Szenen, welches Gefühl am Steuer ist",
           "erklären, wozu auch Kummer gut ist",
           "zeigen, welches Gefühl im Alltag bei ihnen am Steuer wäre",
-          "probieren achtsames Hören als Skill aus"
+          "probieren den Skill „Gefühl benennen“ aus"
         ],
         "material": [
           "Film „Alles steht Kopf“ (2015)",
@@ -96,7 +96,7 @@
           {
             "min": "85–95",
             "phase": "skill",
-            "titel": "Skill: Achtsames Hören"
+            "titel": "Skill: Gefühl benennen"
           },
           {
             "min": "95–100",
@@ -237,20 +237,20 @@
             "blatt": "ff7-wer-sitzt-am-steuer"
           },
           {
-            "titel": "Skill: Achtsames Hören",
+            "titel": "Skill: Gefühl benennen",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: ein Skill, mit dem man das Steuer ein Stück zurückbekommt, wenn ein Gefühl zu laut wird. Alle sitzen bequem, Augen zu oder Blick auf einen Punkt am Tisch. Langsam drei Fragen stellen und nach jeder etwa eine Minute Stille lassen (Liste); selbst mitmachen. Danach drei, vier Stimmen: Welche Geräusche sind euch aufgefallen? Welches war das leiseste? Zum Schluss erklären: Wer ein paar Atemzüge lang nur hört, holt die Aufmerksamkeit ins Jetzt – und das Gefühl am Pult wird oft leiser. Wann könnte das helfen – im Bus, vor dem Einschlafen, nach einem Streit?",
+            "text": "Ankündigen: ein Skill, mit dem man das Steuer ein Stück zurückbekommt, wenn ein Gefühl zu laut wird – im Check-in benennt ihr jede Woche euer Gefühl, heute wird daraus ein Skill für den Moment selbst. Die drei Schritte an die Tafel schreiben und einmal vormachen (Liste, 2 Min.). Dann drei kurze Momente vorlesen: Im Gang rempelt dich jemand an, und dein Getränk läuft über die Jacke. – Morgen ist ein Test, und du hast noch nichts gelernt. – Im Bus setzt sich dein bester Freund oder deine beste Freundin plötzlich zu jemand anderem. Nach jedem Moment machen alle still die drei Schritte; wer mag, nennt danach das Wort, das am Pult stand (5 Min.). Zum Schluss erklären: Ein genaues Wort schafft Abstand – das Gefühl bleibt, aber es lenkt nicht mehr allein. Wann könnte das helfen (3 Min.)?",
             "sagen": [
-              "Ihr müsst nichts tun, nur hören. Die Augen dürfen offen bleiben."
+              "Das Wort müsst ihr nicht laut sagen. Es reicht, wenn ihr es im Kopf sagt: Gerade steht … am Pult."
             ],
             "punkte": [
-              "Welche Geräusche hörst du ganz nah – im Raum, an deinem Stuhl, bei dir selbst?",
-              "Welche Geräusche kommen von weiter weg – aus dem Flur, von draußen?",
-              "Welches ist das leiseste Geräusch, das du gerade hören kannst?"
+              "Stopp: einmal lang ausatmen.",
+              "Benennen: im Kopf sagen „Gerade steht … am Pult“ – mit einem genauen Wort vom Gefühlsrad, etwa genervt statt schlecht.",
+              "Fragen: Was will mir das Gefühl sagen – und was brauche ich jetzt?"
             ],
-            "tipp": "Kichern ist auch ein Geräusch – nicht ermahnen, ruhig weitersprechen; nach der ersten Minute wird es meist still. Eine Klangschale oder ein Glas mit Löffel hilft: einmal anschlagen und zuhören, bis der Ton weg ist.",
-            "wennEsKippt": "Fällt jemandem das Stillsitzen schwer, darf er mit offenen Augen hören und dabei etwas in der Hand drehen – einen Radiergummi, einen Knetball. Wird es zu unruhig, die Stille auf 30 Sekunden kürzen und nächste Woche wiederholen."
+            "tipp": "Das Gefühlsrad hängt im Raum: Wer kein Wort findet, schaut darauf. Ein ehrliches „weiß nicht genau“ ist auch ein Anfang – manchmal stehen zwei Gefühle am Pult; darum geht es in Stunde 12.",
+            "wennEsKippt": "Rufen einige ihr Wort als Witz in die Klasse, freundlich bremsen: Heute bleibt das Wort im Kopf, nur wer mag, sagt es danach. Fällt jemandem kein Wort ein, zeigt er auf die Farbe im Gefühlsrad. Wirkt jemand bei einem Moment aufgewühlt, nicht vertiefen und nach der Stunde kurz nachfragen."
           },
           {
             "titel": "Skills-Pass und Blitzlicht",
@@ -264,19 +264,19 @@
           }
         ],
         "bruecke": "Gefühle passieren nicht nur im Kopf: Nächste Woche sucht ihr, wo sie im Körper sitzen – und welches Signal bei Wut und Angst als Erstes kommt.",
-        "mission": "Ertapp dich diese Woche einmal: Welches Gefühl stand gerade bei dir am Steuer – und was hast du deshalb gesagt oder getan?",
-        "hintergrund": "Für „Alles steht Kopf“ ließ sich Pixar von den Emotionsforschern Dacher Keltner und Paul Ekman beraten. Sie heben zwei Einsichten hervor, die der Film anschaulich macht: Gefühle stören das Denken nicht, sondern ordnen es, und sie regeln das Zusammenleben – Kummer zeigt anderen, dass jemand Trost braucht, und holt so Hilfe herbei (Keltner & Ekman, 2015). Die fünf Figuren entsprechen fünf der Grundgefühle, die Ekman (1992) beschreibt. Das Steuerpult ist ein Bild, keine Karte des Gehirns, passt aber zur Emotionsregulation: Gefühle lassen sich nicht abschalten, doch man kann beeinflussen, wie stark und wie lange sie das Handeln bestimmen (Gross, 1998). Szenen schaffen Abstand – über Rileys Gefühle zu sprechen, fällt leichter als über die eigenen. Standbilder erhalten diesen Abstand, wenn der Film nicht gezeigt werden kann, und die Klasse entscheidet selbst, wer ans Pult muss.",
+        "mission": "Wenn diese Woche ein Gefühl das Steuer übernimmt, benenn es einmal still: Gerade steht … am Pult. Was hast du danach gesagt oder getan?",
+        "hintergrund": "Für „Alles steht Kopf“ ließ sich Pixar von den Emotionsforschern Dacher Keltner und Paul Ekman beraten. Sie heben zwei Einsichten hervor, die der Film anschaulich macht: Gefühle stören das Denken nicht, sondern ordnen es, und sie regeln das Zusammenleben – Kummer zeigt anderen, dass jemand Trost braucht, und holt so Hilfe herbei (Keltner & Ekman, 2015). Die fünf Figuren entsprechen fünf der Grundgefühle, die Ekman (1992) beschreibt. Das Steuerpult ist ein Bild, keine Karte des Gehirns. Zum Skill der Stunde passt ein Befund: Benannten Erwachsene das Gefühl auf einem Gesicht, reagierte die Amygdala, eine Art Alarmzentrum im Gehirn, schwächer (Lieberman et al., 2007) – das Gefühl bleibt, lenkt aber weniger allein. Szenen schaffen Abstand – über Rileys Gefühle zu sprechen, fällt leichter als über die eigenen. Standbilder erhalten diesen Abstand, wenn der Film nicht gezeigt werden kann, und die Klasse entscheidet selbst, wer ans Pult muss.",
         "quellen": [
           "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
           "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
-          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428."
         ],
         "achtung": "Den Film nur mit geklärten Vorführrechten zeigen (Direktion, Schullizenz), nicht über ein privates Konto oder eine private DVD; ohne Rechte läuft die Stunde vollständig über Szenenkarten und Standbilder. Umzug, Heimweh, Streit mit den Eltern und Verlust können Jugendliche treffen, die geflüchtet sind, getrennt von ihrer Familie leben oder jemanden verloren haben: sie vorher ansprechen und wählen lassen, ob sie mitspielen. Wer still wird oder weint, später unter vier Augen ansprechen. Bei Hinweisen auf Gewalt zu Hause noch am selben Tag den SePAS informieren und nach dem Schutzkonzept handeln.",
         "differenzierung": {
           "leichter": "Für Jugendliche, die die Unterrichtssprache noch lernen: die Fassung zeigen, die die meisten verstehen, mit Untertiteln; die Namen der fünf Gefühle mit Gesichtern in beiden Sprachen an die Tafel. Aufgabe 1 nur ankreuzen, Aufgabe 2 gemeinsam an der Tafel; bei den Standbildern eine Rolle ohne Text.",
           "schwerer": "Eine Alltagsszene als Steuerpult-Szene beschreiben: Wer steht am Pult, wer will hin – und was würde passieren, wenn ein anderes Gefühl übernähme? Oder als Filmexperte nach jeder Szene ergänzen, was davor passiert ist."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Szene 1 und 2 mit Fragen und Aufgabe 1 (15 Min.), Szene 4 mit Bing Bong und der Hauptbotschaft (15 Min.), Aufstellung mit drei Situationen (8 Min.), Skills-Pass und Blitzlicht (7 Min.). Szene 3, die Aufgaben 2 und 3 und das achtsame Hören entfallen; Aufgabe 3 lässt sich zu Beginn der nächsten Stunde nachholen. Ohne Film gilt dieselbe Einteilung mit Szenenkarten und Standbildern."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Szene 1 und 2 mit Fragen und Aufgabe 1 (15 Min.), Szene 4 mit Bing Bong und der Hauptbotschaft (15 Min.), Aufstellung mit drei Situationen (8 Min.), Skills-Pass und Blitzlicht (7 Min.). Szene 3, die Aufgaben 2 und 3 und der Skill „Gefühl benennen“ entfallen; Aufgabe 3 lässt sich zu Beginn der nächsten Stunde nachholen. Ohne Film gilt dieselbe Einteilung mit Szenenkarten und Standbildern."
       },
       "fr": {
         "titel": "Vice-versa",
@@ -285,7 +285,7 @@
           "reconnaissent dans des scènes l’émotion aux commandes",
           "expliquent à quoi sert aussi la tristesse",
           "situent l’émotion qui serait aux commandes chez eux",
-          "essaient l’écoute attentive comme skill"
+          "essaient le skill « nommer l’émotion »"
         ],
         "material": [
           "Film « Vice-versa » (2015)",
@@ -294,7 +294,7 @@
           "Affiche des messages (séance 9)",
           "Affiche vierge (A1), gros feutres",
           "Roue des émotions, 20 gommettes",
-          "Cahier de l’élève, tampon du Skills-Pass"
+          "Cahier de l’élève, tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
           "Vérifier les droits (licence scolaire) avec la direction ; sinon, cartes scènes.",
@@ -342,7 +342,7 @@
           {
             "min": "85–95",
             "phase": "skill",
-            "titel": "Skill : l’écoute attentive"
+            "titel": "Skill : nommer l’émotion"
           },
           {
             "min": "95–100",
@@ -483,20 +483,20 @@
             "blatt": "ff7-wer-sitzt-am-steuer"
           },
           {
-            "titel": "Skill : l’écoute attentive",
+            "titel": "Skill : nommer l’émotion",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : voici un skill qui permet de reprendre un peu les commandes quand une émotion devient trop forte. Tout le monde s’assoit confortablement, les yeux fermés ou le regard posé sur un point de la table. Poser lentement trois questions et laisser environ une minute de silence après chacune (liste) ; participer soi-même. Ensuite, trois ou quatre voix : quels bruits avez-vous remarqués ? Lequel était le plus discret ? Pour finir, expliquer : écouter pendant quelques respirations ramène l’attention dans le moment présent – et l’émotion aux commandes baisse souvent d’un cran. Quand est-ce que ça pourrait aider – dans le bus, avant de s’endormir, après une dispute ?",
+            "text": "Annoncer : voici un skill qui permet de reprendre un peu les commandes quand une émotion devient trop forte – au tour d’humeur, vous nommez votre émotion chaque semaine ; aujourd’hui, cela devient un skill pour le moment même. Écrire les trois étapes au tableau et les montrer une fois (liste, 2 min). Puis lire trois courts moments : dans le couloir, quelqu’un te bouscule et ta boisson se renverse sur ta veste. – Demain, il y a un devoir en classe et tu n’as encore rien révisé. – Dans le bus, ton meilleur ami ou ta meilleure amie s’assoit tout à coup à côté de quelqu’un d’autre. Après chaque moment, tout le monde fait les trois étapes en silence ; qui veut dit ensuite le mot qui était aux commandes (5 min). Pour finir, expliquer : un mot précis crée de la distance – l’émotion reste, mais elle ne conduit plus toute seule. Quand est-ce que ça pourrait aider (3 min) ?",
             "sagen": [
-              "Vous n’avez rien à faire, juste écouter. Vous pouvez garder les yeux ouverts."
+              "Vous n’avez pas besoin de dire le mot à voix haute. Il suffit de le dire dans votre tête : en ce moment, c’est … qui est aux commandes."
             ],
             "punkte": [
-              "Quels bruits entends-tu tout près – dans la salle, sur ta chaise, en toi ?",
-              "Quels bruits viennent de plus loin – du couloir, de dehors ?",
-              "Quel est le bruit le plus discret que tu entends en ce moment ?"
+              "Stop : expire une fois, longuement.",
+              "Nommer : dis-toi dans ta tête « En ce moment, c’est … qui est aux commandes » – avec un mot précis de la roue des émotions, par exemple agacé plutôt que mal.",
+              "Demander : qu’est-ce que cette émotion veut me dire – et de quoi ai-je besoin maintenant ?"
             ],
-            "tipp": "Les rires aussi sont un bruit – ne pas gronder, continuer calmement ; après la première minute, le silence s’installe en général. Un bol chantant ou un verre et une cuillère aident : frapper une fois et écouter jusqu’à ce que le son disparaisse.",
-            "wennEsKippt": "Si un jeune a du mal à rester immobile, il peut écouter les yeux ouverts en tournant quelque chose dans sa main – une gomme, une balle à malaxer. Si la classe s’agite trop, réduire le silence à trente secondes et refaire l’exercice la semaine prochaine."
+            "tipp": "La roue des émotions est affichée dans la salle : qui ne trouve pas de mot la regarde. Un « je ne sais pas trop » honnête est aussi un début – parfois, deux émotions sont aux commandes ; c’est le sujet de la séance 12.",
+            "wennEsKippt": "Si certains lancent leur mot à la classe pour rire, freiner gentiment : aujourd’hui, le mot reste dans la tête ; seuls ceux qui le veulent le disent après. Si un jeune ne trouve aucun mot, il montre la couleur sur la roue des émotions. Si quelqu’un semble bouleversé par un moment, ne pas approfondir et lui demander brièvement après le cours comment il va."
           },
           {
             "titel": "Skills-Pass et tour éclair",
@@ -510,19 +510,19 @@
           }
         ],
         "bruecke": "Les émotions ne se passent pas seulement dans la tête : la semaine prochaine, vous cherchez où elles se logent dans le corps – et quel signal arrive en premier avec la colère et la peur.",
-        "mission": "Cette semaine, surprends-toi une fois : quelle émotion était aux commandes chez toi – et qu’as-tu dit ou fait à cause d’elle ?",
-        "hintergrund": "Pour « Vice-versa », Pixar s’est fait conseiller par les chercheurs en émotions Dacher Keltner et Paul Ekman. Ils soulignent deux idées que le film rend visibles : les émotions ne perturbent pas la pensée, elles l’organisent, et elles règlent la vie en commun – la tristesse montre aux autres qu’on a besoin de réconfort et fait venir de l’aide (Keltner & Ekman, 2015). Les cinq personnages correspondent à cinq émotions de base décrites par Ekman (1992). La console est une image, pas une carte du cerveau, mais elle rejoint la régulation des émotions : on ne peut pas les éteindre, mais on peut influencer leur intensité et leur durée (Gross, 1998). Les scènes créent de la distance – parler des émotions de Riley est plus facile que parler des siennes. Les images figées gardent cette distance quand le film ne peut pas être projeté, et la classe décide elle-même qui va aux commandes.",
+        "mission": "Quand une émotion prend les commandes cette semaine, nomme-la une fois en silence : en ce moment, c’est … qui est aux commandes. Qu’as-tu dit ou fait ensuite ?",
+        "hintergrund": "Pour « Vice-versa », Pixar s’est fait conseiller par les chercheurs en émotions Dacher Keltner et Paul Ekman. Ils soulignent deux idées que le film rend visibles : les émotions ne perturbent pas la pensée, elles l’organisent, et elles règlent la vie en commun – la tristesse montre aux autres qu’on a besoin de réconfort et fait venir de l’aide (Keltner & Ekman, 2015). Les cinq personnages correspondent à cinq émotions de base décrites par Ekman (1992). La console est une image, pas une carte du cerveau. Le skill du jour repose sur un résultat : quand des adultes nommaient l’émotion d’un visage, l’amygdale, centre d’alarme du cerveau, réagissait moins fort (Lieberman et al., 2007) – l’émotion reste, mais conduit moins seule. Les scènes créent de la distance – parler des émotions de Riley est plus facile que parler des siennes. Sans film, les images figées gardent cette distance, et la classe décide elle-même qui va aux commandes.",
         "quellen": [
           "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
           "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
-          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428."
         ],
         "achtung": "Ne projeter le film qu’avec des droits vérifiés (direction, licence scolaire), pas avec un compte privé ou un DVD personnel ; sans droits, la séance se fait entièrement avec les cartes scènes et les images figées. Déménagement, mal du pays, disputes avec les parents et perte peuvent toucher des jeunes qui ont fui leur pays, vivent loin de leur famille ou ont perdu quelqu’un : leur en parler avant et les laisser choisir s’ils jouent. Si un jeune se tait ou pleure, lui en parler plus tard en tête-à-tête. En cas de signes de violence à la maison, informer le SePAS le jour même et suivre le protocole de protection.",
         "differenzierung": {
           "leichter": "Pour les jeunes qui apprennent encore la langue : montrer la version que la plupart comprennent, avec sous-titres ; écrire au tableau les noms des cinq émotions dans les deux langues, avec les visages. Exercice 1 : seulement cocher ; exercice 2 ensemble au tableau ; pour les images figées, un rôle sans texte.",
           "schwerer": "Décrire une scène du quotidien comme une scène de console : qui est aux commandes, qui veut y aller – et que se passerait-il si une autre émotion prenait le relais ? Ou, en tant qu’expert du film, compléter après chaque scène ce qui s’est passé avant."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), scènes 1 et 2 avec questions et exercice 1 (15 min), scène 4 avec Bing Bong et le message principal (15 min), placement avec trois situations (8 min), Skills-Pass et tour éclair (7 min). La scène 3, les exercices 2 et 3 et l’écoute attentive sont supprimés ; l’exercice 3 peut être rattrapé au début de la séance suivante. Sans film, même découpage avec les cartes scènes et les images figées."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), scènes 1 et 2 avec questions et exercice 1 (15 min), scène 4 avec Bing Bong et le message principal (15 min), placement avec trois situations (8 min), Skills-Pass et tour éclair (7 min). La scène 3, les exercices 2 et 3 et le skill « nommer l’émotion » sont supprimés ; l’exercice 3 peut être rattrapé au début de la séance suivante. Sans film, même découpage avec les cartes scènes et les images figées."
       }
     }
   ],

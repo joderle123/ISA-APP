@@ -42,16 +42,16 @@
           "übersetzen Emojis in ganze Sätze und nennen eine Regel gegen Missverständnisse im Chat"
         ],
         "material": [
-          "Schülerheft, Stempel für den Pass",
+          "Schülerheft, Stempel für den Skills-Pass",
           "Gefühlsrad-Plakat, 20 Klebepunkte",
-          "Gefühlskarten, ein Satz je Gruppe",
+          "Körpersprache-Karten, ein Satz je Gruppe",
           "Bildvorlagen (Seite 2), zehnmal",
           "Papier und Bleistift für jedes Paar",
           "Fünf Emojis, groß ausgedruckt",
           "Karten, dicke Stifte, Magnete"
         ],
         "vorbereitung": [
-          "Gefühlskarten: fünfmal kopieren, schneiden, je Gruppe ein Umschlag.",
+          "Körpersprache-Karten: fünfmal kopieren, schneiden, je Gruppe ein Umschlag.",
           "Bildvorlagen: zehnmal kopieren, vierteln.",
           "Emojis drucken oder am Beamer zeigen.",
           "Tafel: Kapitel (Schritt 2), Tafelbilder (3, 7), Formen-Wörter (6).",
@@ -109,7 +109,7 @@
             "titel": "Check-in: erst das Gesicht, dann das Wort",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person wie gewohnt ihren Punkt auf das Gefühlsrad. Wenn alle sitzen, zeigt die Lehrkraft ihr eigenes Gefühl zuerst drei Sekunden lang ohne Worte, nur mit Gesicht und Haltung; die Klasse rät, dann nennt sie Wort und Zahl. Danach zeigen in den Tischgruppen alle gleichzeitig auf drei ihr Gefühl ohne Worte und schauen sich dabei am Tisch um; jede Person rät still für sich (2 Min.). Dann zeigen alle ihre Anspannung mit den Fingern (0–10 Finger für 0–100), und zwei, drei Freiwillige nennen Wort und Zahl – und ob man es ihnen angesehen hätte. Festhalten: Manches sieht man sofort, anderes gar nicht.",
+            "text": "Beim Hereinkommen klebt jede Person wie gewohnt ihren Punkt auf das Gefühlsrad. Wenn alle sitzen, zeigt die Lehrkraft ihr eigenes Gefühl zuerst drei Sekunden lang ohne Worte, nur mit Gesicht und Haltung; die Klasse rät, dann nennt sie Wort und Zahl. Danach zeigen in den Tischgruppen alle gleichzeitig auf drei ihr Gefühl ohne Worte und schauen sich dabei am Tisch um; jede Person rät still für sich (2 Min.). Dann zeigen alle ihre Anspannung mit den Fingern (0–10 Finger für 0–100), und zwei, drei Freiwillige nennen Wort und Zahl – und ob man es ihnen angesehen hätte. Festhalten: Manches sieht man sofort, anderes gar nicht. Zum Schluss die Ampel-Frage: Wer bei Gelb oder Rot ist, nimmt sich still einen Skill aus dem Ampelplan – alle atmen dazu dreimal lang aus, so muss sich niemand melden.",
             "sagen": [
               "Heute zeigt ihr euer Gefühl zuerst ohne ein Wort – alle gleichzeitig, nur für eure Tischgruppe. Wer nicht mag, schaut einfach auf seinen Punkt.",
               "Hättet ihr es erkannt? Nicht laut raten, nur für euch."
@@ -174,7 +174,7 @@
             "titel": "Gefühle ohne Worte: Körpersprache lesen",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Jede Tischgruppe bekommt einen Umschlag mit zwölf Gefühlskarten. Reihum zieht eine Person eine Karte und zeigt das Gefühl zehn Sekunden lang nur mit Gesicht und Körper, im Sitzen oder Stehen; die anderen raten, die Situation auf der Karte darf als Hilfe vorgelesen werden. Wer nicht spielen mag, sagt „weiter“ und gibt die Karte der nächsten Person; eine Person je Gruppe – gern jemand, der lieber nicht spielt – notiert auf dem Umschlag, was leicht und was schwer zu erraten war (7 Min.). In der Klasse sammeln: Welche Gefühle waren leicht, welche schwer – und woran habt ihr sie erkannt (4 Min.)? Festhalten: Körpersprache ist ein Hinweis, kein Beweis. Zum Schluss Aufgabe 1 auf dem Blatt „Mehr als Worte“ allein (4 Min.).",
+            "text": "Jede Tischgruppe bekommt einen Umschlag mit zwölf Körpersprache-Karten. Reihum zieht eine Person eine Karte und zeigt das Gefühl zehn Sekunden lang nur mit Gesicht und Körper, im Sitzen oder Stehen; die anderen raten, die Situation auf der Karte darf als Hilfe vorgelesen werden. Wer nicht spielen mag, sagt „weiter“ und gibt die Karte der nächsten Person; eine Person je Gruppe – gern jemand, der lieber nicht spielt – notiert auf dem Umschlag, was leicht und was schwer zu erraten war (7 Min.). In der Klasse sammeln: Welche Gefühle waren leicht, welche schwer – und woran habt ihr sie erkannt (4 Min.)? Festhalten: Körpersprache ist ein Hinweis, kein Beweis. Zum Schluss Aufgabe 1 auf dem Blatt „Mehr als Worte“ allein (4 Min.).",
             "sagen": [
               "Nur Gesicht und Körper – keine Laute, kein Zeigen auf Dinge im Raum.",
               "Woran habt ihr es erkannt: am Blick, am Mund, an den Händen, an den Schultern, an den Füßen?",
@@ -264,7 +264,7 @@
             "titel": "Skill: Achtsames Hören",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: Zuhören ist ein Skill, den man trainieren kann – nächste Woche geht es genau darum. Alle sitzen bequem, die Augen geschlossen oder auf einen Punkt am Boden gerichtet. Die drei Schritte langsam anleiten, je etwa eine Minute, und selbst mitmachen (Liste). Danach nennen drei, vier Freiwillige ihr leisestes Geräusch. Zum Schluss fragen, wann das helfen könnte – im Bus, abends im Bett, wenn der Kopf voll ist – und erklären: Wer auf Geräusche achtet, holt die Aufmerksamkeit aus dem Gedankenkarussell ins Hier und Jetzt.",
+            "text": "Ankündigen: Achtsames Hören kennt ihr aus Stunde 7 – heute ist es das Training fürs Zuhören, um das es nächste Woche geht. Alle sitzen bequem, die Augen geschlossen oder auf einen Punkt am Boden gerichtet. Die drei Schritte langsam anleiten, je etwa eine Minute, und selbst mitmachen (Liste). Danach nennen drei, vier Freiwillige ihr leisestes Geräusch. Zum Schluss fragen, wann das helfen könnte – im Bus, abends im Bett, wenn der Kopf voll ist – und erklären: Wer auf Geräusche achtet, holt die Aufmerksamkeit aus dem Gedankenkarussell ins Hier und Jetzt.",
             "sagen": [
               "Ihr müsst nichts tun außer hören. Wenn Gedanken kommen, geht einfach zurück zu den Geräuschen.",
               "Was war das leiseste Geräusch, das ihr gehört habt?"
@@ -299,7 +299,7 @@
         ],
         "achtung": "Die Körpersprache einzelner Jugendlicher nie vor der Klasse deuten oder bewerten: Blickkontakt, Abstand und Gesten sind in jeder Familie und Kultur anders. Die Pantomime ist freiwillig, und über Sprachen und Akzente wird nicht gelacht. Kommen ein Chat-Streit, verletzende Nachrichten oder Cybermobbing zur Sprache: nicht in der Klasse auswerten, keine echten Chats zeigen lassen, nach der Stunde ein Gespräch anbieten, auf die BEE SECURE Helpline (8002 1234) hinweisen, bei Mobbing Régent und SePAS einbeziehen. Bei Drohungen, Gewalt oder Selbstverletzung noch am selben Tag den SePAS informieren.",
         "differenzierung": {
-          "leichter": "Die Gefühlskarten zeigen zu jedem Wort ein Gesicht; so spielen auch Jugendliche mit, die das Wort noch nicht kennen. „Ja, klar.“ und den Rätselsatz darf man in jeder Sprache sagen; bei Rücken an Rücken helfen die Formen-Wörter an der Tafel, und Paare mit einer gemeinsamen Sprache arbeiten in dieser oder nehmen Vorlage A. Wer mühsam schreibt, übersetzt die Emojis mündlich oder mit einem Wort aus dem Wortspeicher.",
+          "leichter": "Die Körpersprache-Karten zeigen zu jedem Wort ein Gesicht; so spielen auch Jugendliche mit, die das Wort noch nicht kennen. „Ja, klar.“ und den Rätselsatz darf man in jeder Sprache sagen; bei Rücken an Rücken helfen die Formen-Wörter an der Tafel, und Paare mit einer gemeinsamen Sprache arbeiten in dieser oder nehmen Vorlage A. Wer mühsam schreibt, übersetzt die Emojis mündlich oder mit einem Wort aus dem Wortspeicher.",
           "schwerer": "Eine eigene missverständliche Nachricht erfinden und von einer anderen Gruppe deuten lassen: Stimmt die Deutung mit der Absicht überein? Bei Rücken an Rücken die schwierigste Vorlage D nehmen oder als dritte Person notieren, welche Wörter geholfen haben."
         },
         "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gesicht und Zahl (5 Min.), die vier Sätze und das Tafelbild Worte, Stimme, Körper (10 Min.), Gefühle ohne Worte in den Tischgruppen (10 Min.), Emojis in Sätze übersetzen und Chat-Regeln (15 Min.), achtsames Hören (5 Min.), Skills-Pass und Wochen-Mission (5 Min.). Rücken an Rücken entfällt; die Übung passt in eine spätere Stunde, wenn Zeit übrig bleibt."
@@ -314,16 +314,16 @@
           "traduisent des émojis en phrases complètes et nomment une règle contre les malentendus dans les messages"
         ],
         "material": [
-          "Cahiers, tampon pour le Skills-Pass",
+          "Cahier de l’élève, tampon pour le Skills-Pass",
           "Roue des émotions, 20 gommettes",
-          "Cartes émotions, un jeu par îlot",
+          "Cartes langage du corps, un jeu par îlot",
           "Modèles de dessins (page 2), 10 copies",
           "Papier et crayon pour chaque binôme",
           "Cinq émojis imprimés en grand",
           "Cartons, gros feutres, aimants"
         ],
         "vorbereitung": [
-          "Cartes émotions : 5 copies, découper, une enveloppe par îlot.",
+          "Cartes langage du corps : 5 copies, découper, une enveloppe par îlot.",
           "Modèles de dessins : 10 copies, couper en quatre.",
           "Émojis imprimés en grand ou projetés.",
           "Tableau : chapitre (étape 2), tableaux (3, 7), mots des formes (6).",
@@ -381,7 +381,7 @@
             "titel": "Tour d’humeur : d’abord le visage, ensuite le mot",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle comme d’habitude sa gommette sur la roue des émotions. Une fois tout le monde assis, montrer d’abord sa propre émotion pendant trois secondes, sans un mot, seulement avec le visage et la posture ; la classe devine, puis donner le mot et le chiffre. Ensuite, dans les îlots, tout le monde montre son émotion en même temps et sans un mot, à « trois », en regardant les autres autour de la table ; chacun devine en silence, pour soi (2 min). Puis chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100), et deux ou trois volontaires disent leur mot et leur chiffre – et disent si, à leur avis, ça se voyait. À retenir : certaines choses se voient tout de suite, d’autres pas du tout.",
+            "text": "En entrant, chaque jeune colle comme d’habitude sa gommette sur la roue des émotions. Une fois tout le monde assis, montrer d’abord sa propre émotion pendant trois secondes, sans un mot, seulement avec le visage et la posture ; la classe devine, puis donner le mot et le chiffre. Ensuite, dans les îlots, tout le monde montre son émotion en même temps et sans un mot, à « trois », en regardant les autres autour de la table ; chacun devine en silence, pour soi (2 min). Puis chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100), et deux ou trois volontaires disent leur mot et leur chiffre – et disent si, à leur avis, ça se voyait. À retenir : certaines choses se voient tout de suite, d’autres pas du tout. Pour finir, la question du feu : qui est dans l’orange ou dans le rouge prend en silence un skill de son plan feu tricolore – tout le monde expire trois fois longuement, ainsi personne n’a à se signaler.",
             "sagen": [
               "Aujourd’hui, vous montrez d’abord votre émotion sans un mot – tous en même temps, seulement pour votre îlot. Si vous ne voulez pas, regardez simplement votre gommette.",
               "Vous l’auriez deviné ? Ne le dites pas, gardez-le pour vous."
@@ -446,7 +446,7 @@
             "titel": "Des émotions sans mots : lire le langage du corps",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Chaque îlot reçoit une enveloppe avec douze cartes émotions. À tour de rôle, un jeune tire une carte et montre l’émotion pendant dix secondes, uniquement avec le visage et le corps, assis ou debout ; les autres devinent, et on peut lire la situation de la carte pour aider. Qui ne veut pas jouer dit « je passe » et donne la carte à son voisin ; dans chaque îlot, une personne – de préférence quelqu’un qui n’a pas envie de jouer – note sur l’enveloppe ce qui était facile ou difficile à deviner (7 min). En classe entière : quelles émotions étaient faciles, lesquelles difficiles – et à quoi les avez-vous reconnues (4 min) ? À retenir : le langage du corps est un indice, pas une preuve. Pour finir, exercice 1 de la fiche « Plus que des mots », seul (4 min).",
+            "text": "Chaque îlot reçoit une enveloppe avec douze cartes langage du corps. À tour de rôle, un jeune tire une carte et montre l’émotion pendant dix secondes, uniquement avec le visage et le corps, assis ou debout ; les autres devinent, et on peut lire la situation de la carte pour aider. Qui ne veut pas jouer dit « je passe » et donne la carte à son voisin ; dans chaque îlot, une personne – de préférence quelqu’un qui n’a pas envie de jouer – note sur l’enveloppe ce qui était facile ou difficile à deviner (7 min). En classe entière : quelles émotions étaient faciles, lesquelles difficiles – et à quoi les avez-vous reconnues (4 min) ? À retenir : le langage du corps est un indice, pas une preuve. Pour finir, exercice 1 de la fiche « Plus que des mots », seul (4 min).",
             "sagen": [
               "Seulement le visage et le corps – pas de sons, et on ne montre pas d’objets dans la salle.",
               "À quoi l’avez-vous reconnue : au regard, à la bouche, aux mains, aux épaules, aux pieds ?",
@@ -536,7 +536,7 @@
             "titel": "Skill : l’écoute attentive",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : écouter, c’est un skill qui s’entraîne – c’est justement le sujet de la semaine prochaine. Tout le monde s’assoit confortablement, les yeux fermés ou posés sur un point au sol. Guider lentement les trois étapes, environ une minute chacune, et faire l’exercice soi-même (liste). Ensuite, trois ou quatre volontaires disent le bruit le plus faible qu’ils ont entendu. Pour finir, demander quand cela pourrait aider – dans le bus, le soir au lit, quand la tête est pleine – et expliquer : écouter les bruits sort l’attention du tourbillon des pensées et la ramène ici et maintenant.",
+            "text": "Annoncer : vous connaissez l’écoute attentive depuis la séance 7 – aujourd’hui, elle sert d’entraînement à l’écoute, le sujet de la semaine prochaine. Tout le monde s’assoit confortablement, les yeux fermés ou posés sur un point au sol. Guider lentement les trois étapes, environ une minute chacune, et faire l’exercice soi-même (liste). Ensuite, trois ou quatre volontaires disent le bruit le plus faible qu’ils ont entendu. Pour finir, demander quand cela pourrait aider – dans le bus, le soir au lit, quand la tête est pleine – et expliquer : écouter les bruits sort l’attention du tourbillon des pensées et la ramène ici et maintenant.",
             "sagen": [
               "Vous n’avez rien à faire, à part écouter. Si des pensées arrivent, revenez simplement aux bruits.",
               "Quel est le bruit le plus faible que vous avez entendu ?"
@@ -571,7 +571,7 @@
         ],
         "achtung": "Ne jamais interpréter ni juger devant la classe le langage du corps d’un jeune : le contact visuel, la distance et les gestes varient selon les familles et les cultures. Le mime est facultatif, et on ne rit ni des langues ni des accents. Si une dispute en ligne, des messages blessants ou du cyberharcèlement sont évoqués : ne pas en parler en classe, ne pas faire montrer de vraies conversations, proposer un entretien après le cours, indiquer la BEE SECURE Helpline (8002 1234), en cas de harcèlement impliquer le régent et le SePAS. En cas de menaces, de violence ou d’automutilation, informer le SePAS le jour même.",
         "differenzierung": {
-          "leichter": "Les cartes émotions montrent un visage pour chaque mot ; ainsi, même les jeunes qui ne connaissent pas encore le mot peuvent jouer. On peut dire « Oui, bien sûr. » et la phrase mystère dans n’importe quelle langue ; pour l’exercice dos à dos, les mots des formes au tableau aident, et les binômes qui partagent une langue l’utilisent ou prennent le modèle A. Qui a du mal à écrire traduit les émojis à l’oral ou avec un des mots clés du tableau.",
+          "leichter": "Les cartes langage du corps montrent un visage pour chaque mot ; ainsi, même les jeunes qui ne connaissent pas encore le mot peuvent jouer. On peut dire « Oui, bien sûr. » et la phrase mystère dans n’importe quelle langue ; pour l’exercice dos à dos, les mots des formes au tableau aident, et les binômes qui partagent une langue l’utilisent ou prennent le modèle A. Qui a du mal à écrire traduit les émojis à l’oral ou avec un des mots clés du tableau.",
           "schwerer": "Inventer un message ambigu et le faire interpréter par un autre îlot : l’interprétation correspond-elle à l’intention ? Pour l’exercice dos à dos, prendre le modèle D, le plus difficile, ou, dans un groupe de trois, noter comme observateur les mots qui ont aidé."
         },
         "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le visage et le chiffre (5 min), les quatre phrases et le tableau mots, voix, corps (10 min), des émotions sans mots en îlots (10 min), traduire des émojis et règles pour les messages (15 min), écoute attentive (5 min), Skills-Pass et mission de la semaine (5 min). L’exercice dos à dos est supprimé ; il trouve sa place dans une séance ultérieure, s’il reste du temps."
@@ -772,7 +772,7 @@
         "lehrer": {
           "ziel": "Die Jugendlichen erkennen, wenn Worte und Körper sich widersprechen, übersetzen Emoji-Gesichter in ganze Sätze und überlegen, wie eine Nachricht ohne Stimme ankommt.",
           "ablauf": [
-            "Einheit 18, Schritt 4 (4 Min.): Aufgabe 1 allein nach den Gefühlskarten, dann kurz vergleichen.",
+            "Einheit 18, Schritt 4 (4 Min.): Aufgabe 1 allein nach den Körpersprache-Karten, dann kurz vergleichen.",
             "Schritt 6: Nach Rücken an Rücken kreuzt jede Person in Aufgabe 2 an, was ihr geholfen hat.",
             "Schritt 7 (5 Min.): Aufgabe 3 und 4 zu zweit, nachdem die Tischgruppen die Emojis übersetzt haben; die Tipps im Kasten mit den Chat-Regeln an der Tafel vergleichen."
           ],
@@ -952,7 +952,7 @@
         "lehrer": {
           "ziel": "Les jeunes repèrent quand les mots et le corps se contredisent, traduisent des visages-émojis en phrases complètes et réfléchissent à la façon dont un message est reçu sans la voix.",
           "ablauf": [
-            "Séance 18, étape 4 (4 min) : exercice 1 seul après les cartes émotions, puis comparer brièvement.",
+            "Séance 18, étape 4 (4 min) : exercice 1 seul après les cartes langage du corps, puis comparer brièvement.",
             "Étape 6 : après l’exercice dos à dos, chacun coche dans l’exercice 2 ce qui l’a aidé.",
             "Étape 7 (5 min) : exercices 3 et 4 à deux, après la traduction des émojis en îlots ; comparer les conseils de l’encadré aux règles pour les messages au tableau."
           ],
@@ -979,7 +979,7 @@
       "dauer": "15 Min. und 18 Min.",
       "eldib": [],
       "schlagworte": [
-        "Gefühlskarten",
+        "Körpersprache-Karten",
         "Pantomime",
         "Rücken an Rücken",
         "Bildvorlagen",
@@ -990,12 +990,12 @@
         "ff7-e18"
       ],
       "de": {
-        "titel": "Gefühlskarten und Bildvorlagen",
+        "titel": "Körpersprache-Karten und Bildvorlagen",
         "untertitel": "Kopiervorlage: Seite 1 fünfmal (ein Satz je Tischgruppe), Seite 2 zehnmal, vierteln",
         "bausteine": [
           {
             "art": "text",
-            "text": "Gefühlskarten für Schritt 4: ausschneiden und je Tischgruppe in einen Umschlag stecken. Wer eine Karte zieht, zeigt nur das Gefühl; die Situation hilft beim Spielen und darf zum Raten vorgelesen werden.",
+            "text": "Körpersprache-Karten für Schritt 4: ausschneiden und je Tischgruppe in einen Umschlag stecken. Wer eine Karte zieht, zeigt nur das Gefühl; die Situation hilft beim Spielen und darf zum Raten vorgelesen werden.",
             "klein": true
           },
           {
@@ -2046,13 +2046,13 @@
           }
         ],
         "lehrer": {
-          "ziel": "Karten und Vorlagen für die Übungen ohne Worte: Mit den Gefühlskarten lesen die Tischgruppen Körpersprache, mit den Bildvorlagen erleben die Paare, was Worte allein leisten und wie viel Rückfragen helfen.",
+          "ziel": "Karten und Vorlagen für die Übungen ohne Worte: Mit den Körpersprache-Karten lesen die Tischgruppen Körpersprache, mit den Bildvorlagen erleben die Paare, was Worte allein leisten und wie viel Rückfragen helfen.",
           "ablauf": [
             "Seite 1 fünfmal kopieren, ausschneiden, je Tischgruppe in einen Umschlag.",
             "Seite 2 zehnmal kopieren und vierteln; jedes Paar bekommt verdeckt Vorlage B und C, A und D liegen als leichtere und schwerere Reserve bereit.",
-            "Einheit 18: die Gefühlskarten in Schritt 4, die Bildvorlagen in Schritt 6."
+            "Einheit 18: die Körpersprache-Karten in Schritt 4, die Bildvorlagen in Schritt 6."
           ],
-          "hintergrund": "Beschreibt eine Person geometrische Figuren und darf die andere nachfragen, werden die Zeichnungen deutlich genauer – es dauert nur länger (Leavitt & Mueller, 1951). Das Gesicht auf den Gefühlskarten hilft auch Jugendlichen, die das Wort noch nicht kennen.",
+          "hintergrund": "Beschreibt eine Person geometrische Figuren und darf die andere nachfragen, werden die Zeichnungen deutlich genauer – es dauert nur länger (Leavitt & Mueller, 1951). Das Gesicht auf den Körpersprache-Karten hilft auch Jugendlichen, die das Wort noch nicht kennen.",
           "quellen": [
             "Leavitt, H. J. & Mueller, R. A. H. (1951). Some effects of feedback on communication. Human Relations, 4(4), 401–410."
           ],
@@ -2060,12 +2060,12 @@
         }
       },
       "fr": {
-        "titel": "Cartes émotions et dessins",
+        "titel": "Cartes langage du corps et dessins",
         "untertitel": "Modèle à photocopier : page 1 cinq fois (un jeu par îlot), page 2 dix fois, à couper en quatre",
         "bausteine": [
           {
             "art": "text",
-            "text": "Cartes émotions pour l’étape 4 : découper et mettre un jeu par îlot dans une enveloppe. Qui tire une carte montre seulement l’émotion ; la situation aide à jouer et peut être lue pour aider à deviner.",
+            "text": "Cartes langage du corps pour l’étape 4 : découper et mettre un jeu par îlot dans une enveloppe. Qui tire une carte montre seulement l’émotion ; la situation aide à jouer et peut être lue pour aider à deviner.",
             "klein": true
           },
           {
@@ -3116,13 +3116,13 @@
           }
         ],
         "lehrer": {
-          "ziel": "Cartes et modèles pour les exercices sans mots : avec les cartes émotions, les îlots lisent le langage du corps ; avec les modèles de dessins, les binômes découvrent ce que permettent les mots seuls et combien les questions aident.",
+          "ziel": "Cartes et modèles pour les exercices sans mots : avec les cartes langage du corps, les îlots lisent le langage du corps ; avec les modèles de dessins, les binômes découvrent ce que permettent les mots seuls et combien les questions aident.",
           "ablauf": [
             "Photocopier cinq fois la page 1, découper, une enveloppe par îlot.",
             "Photocopier dix fois la page 2 et couper en quatre ; chaque binôme reçoit les modèles B et C, face cachée ; A et D servent de réserve, plus facile et plus difficile.",
-            "Séance 18 : les cartes émotions à l’étape 4, les modèles de dessins à l’étape 6."
+            "Séance 18 : les cartes langage du corps à l’étape 4, les modèles de dessins à l’étape 6."
           ],
-          "hintergrund": "Quand une personne décrit des figures géométriques et que l’autre peut poser des questions, les dessins deviennent nettement plus justes – cela prend seulement plus de temps (Leavitt & Mueller, 1951). Le visage sur les cartes émotions aide aussi les jeunes qui ne connaissent pas encore le mot.",
+          "hintergrund": "Quand une personne décrit des figures géométriques et que l’autre peut poser des questions, les dessins deviennent nettement plus justes – cela prend seulement plus de temps (Leavitt & Mueller, 1951). Le visage sur les cartes langage du corps aide aussi les jeunes qui ne connaissent pas encore le mot.",
           "quellen": [
             "Leavitt, H. J. & Mueller, R. A. H. (1951). Some effects of feedback on communication. Human Relations, 4(4), 401–410."
           ],

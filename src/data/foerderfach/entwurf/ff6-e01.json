@@ -1,0 +1,1039 @@
+{
+  "einheiten": [
+    {
+      "id": "ff6-e01",
+      "klasse": "6e",
+      "dauer": 100,
+      "blaetter": [
+        "ff-das-fach",
+        "ff-klassenvereinbarung",
+        "ff6-mein-jahr"
+      ],
+      "vorlagen": [
+        "ff6-jahresweg-karten"
+      ],
+      "woerter": [
+        {
+          "de": "die Klassenvereinbarung",
+          "fr": "la charte de classe"
+        },
+        {
+          "de": "der Skills-Kompass",
+          "fr": "la boussole des skills"
+        },
+        {
+          "de": "die Gemeinsamkeit",
+          "fr": "le point commun"
+        },
+        {
+          "de": "der Neustart",
+          "fr": "le nouveau départ"
+        },
+        {
+          "de": "vertraulich",
+          "fr": "confidentiel"
+        },
+        {
+          "de": "die Anspannung",
+          "fr": "la tension"
+        }
+      ],
+      "de": {
+        "titel": "Neustart als Klasse",
+        "kurz": "Nach dem Sommer findet sich die Klasse neu: Alte und Neue lernen sich kennen, prüfen die Klassenvereinbarung per Daumen und testen 5-4-3-2-1 mit Zahl vorher und nachher.",
+        "ziele": [
+          "kommen als Klasse wieder an und lernen Neue kennen, ohne dass jemand Persönliches preisgeben muss",
+          "erklären einander die Rituale – Gefühlsrad, Zahl von 0 bis 100, Skills-Pass – und prüfen und erneuern die Klassenvereinbarung",
+          "kennen die elf Kapitel des Jahres und testen 5-4-3-2-1 mit Zahl vorher und nachher"
+        ],
+        "material": [
+          "Schülerheft 6e für jede Person",
+          "Plakate Gefühlsrad und Skala, Punkte",
+          "Kreppband und dicker Stift für Namen",
+          "Klassenvereinbarung der 7e (Plakat)",
+          "Plakat (A2), Stifte, Klebeband",
+          "Jahresweg-Karten (Vorlage)",
+          "Stempel, Elternbrief für alle"
+        ],
+        "vorbereitung": [
+          "Mit dem Régent klären: Wer ist neu, wer fehlt, was wird darüber gesagt?",
+          "Sitzplan: höchstens zwei Neue je Tisch, neben einer verlässlichen Person aus der 7e",
+          "Plakate und alte Vereinbarung aufhängen; Jahresweg-Karten verteilen, vorn Platz freiräumen",
+          "SePAS-Zeiten erfragen; Elternbrief (Handbuch Teil A) in der Sprache der Familie kopieren"
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Namen, Klebepunkt, Zahl und etwas Neues"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Ein Jahr später: was bleibt, was neu ist"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "Doppelreihe: wiedersehen und kennenlernen"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Die Klassenvereinbarung auf dem Prüfstand"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Atome"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Vereinbarung erneuern und unterschreiben"
+          },
+          {
+            "min": "65–75",
+            "phase": "input",
+            "titel": "So läuft das Fach: die Profis erklären"
+          },
+          {
+            "min": "75–85",
+            "phase": "aktiv",
+            "titel": "Der Jahresweg: elf Kapitel im Raum"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: 5-4-3-2-1 als Test"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, ein Wort je Tisch und Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Namen, Klebepunkt, Zahl und etwas Neues",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "An der Tür bekommt jede Person einen Klebepunkt und ein Stück Kreppband für den Vornamen – alle, nicht nur die Neuen; die Hefte liegen mit Namenskarten auf den Plätzen. Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat (3 Min.). Dann kurz begrüßen und auf den Ablauf an der Tafel zeigen. Zwei Freiwillige, die das Fach aus der 7e kennen, erklären der Klasse in eigenen Worten, wie der Check-in geht: Punkt am Rad, dazu die Anspannung als Zahl von 0 bis 100 (2 Min.). Die Lehrkraft beginnt mit Gefühl, Zahl und einer Kleinigkeit, die seit dem Sommer neu ist; auf drei zeigen alle ihre Zahl mit den Fingern (0–10 Finger für 0–100); wer seine Zahl heute nicht zeigen möchte, legt die Hand flach auf den Tisch. Vier, fünf Freiwillige nennen Wort, Zahl und etwas Neues – eine Frisur, ein Bus, ein Hobby (5 Min.).",
+            "sagen": [
+              "Wer das Fach aus der 7e kennt und den anderen erklärt, wie unser Check-in geht? Heute seid ihr die Profis.",
+              "0 heißt tiefenentspannt, kurz vorm Einschlafen. 100 heißt so aufgewühlt, wie es nur geht. Eure Zahl ist eure Zahl – niemand kommentiert sie.",
+              "Wort, Zahl – und wenn ihr mögt: Was ist bei euch seit dem Sommer neu? Es darf etwas ganz Kleines sein."
+            ],
+            "tipp": "Namensschilder für alle nehmen den Neuen die Sonderrolle – und helfen einer Lehrkraft, die die Klasse selbst erst kennenlernt. Mehr Theorie zur Skala braucht es heute nicht; sie kommt nächste Woche bei der Olympiade ausführlich zurück.",
+            "wennEsKippt": "Reden die Alten nur untereinander oder machen Insider-Witze, freundlich unterbrechen: Das versteht gerade nicht jeder hier – erklärst du es kurz? Fragt jemand die Neuen, warum sie in dieser Klasse sind, sofort stoppen: Das fragt hier niemand, und niemand muss es erzählen. Nennt jemand als Neuigkeit etwas Schweres – eine Trennung, einen Todesfall –, kurz würdigen (Danke, dass du das sagst), nicht nachfragen und die Person nach der Stunde ansprechen. Zeigt jemand ernsthaft acht Finger oder mehr, nicht vor der Klasse nachfragen, sondern in der nächsten Arbeitsphase leise: Brauchst du gerade etwas?"
+          },
+          {
+            "titel": "Ein Jahr später: was bleibt, was neu ist",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Ohne Vortrag kurz zurück- und vorausschauen, mit dem Tafelbild: Was bleibt – Check-in, Bewegungspause, Skill, Skills-Pass, Wochen-Mission – und was neu ist: der Skills-Kompass und die Themen eines Jahres, in dem alle älter geworden sind: Schule, Wut, Freundschaft und Liebe, Familie, Netz, Alkohol, Gesundheit. Drei Stimmen aus der 7e: Was ist euch aus dem Fach hängen geblieben? Ein Wort reicht. Dann den Rahmen klären: Niemand wird gefragt, warum er oder sie neu in der Klasse ist; über Jugendliche, die nicht mehr da sind, wird nur gesagt, was vorher abgesprochen wurde. Den Plan für heute nennen: kennenlernen, Regeln prüfen, das Jahr anschauen.",
+            "sagen": [
+              "Ihr seid ein Jahr älter, und das merkt man an den Themen: Schule, Wut, Freundschaft und Liebe, Familie, Netz, Alkohol, Gesundheit.",
+              "Wer letztes Jahr dabei war: Was ist euch aus dem Fach hängen geblieben? Ein Wort reicht."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Das bleibt",
+                "Das ist neu"
+              ],
+              "zeilen": [
+                [
+                  "Check-in mit Gefühlsrad und Zahl",
+                  "Skills-Kompass: zu jedem Kapitel ein Skill"
+                ],
+                [
+                  "Bewegungspause, Skill, Skills-Pass",
+                  "Elf Kapitel, die zum Älterwerden passen"
+                ],
+                [
+                  "Wochen-Mission, „weiter“ ist erlaubt",
+                  "Neue Gesichter – und eine neue Vereinbarung"
+                ]
+              ]
+            },
+            "tipp": "Fehlt jemand aus dem letzten Jahr, nur das sagen, was mit dem Régent abgesprochen ist, und Nachfragen ruhig beantworten: Mehr kann ich dazu nicht sagen. Das schützt die Person, die gegangen ist – und zeigt der Klasse, dass hier vertraulich bleibt, was vertraulich ist."
+          },
+          {
+            "titel": "Doppelreihe: wiedersehen und kennenlernen",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Zwei Reihen zu zehn stellen sich vorn gegenüber, etwa einen Meter Abstand, sodass sich immer zwei ansehen; bei ungerader Zahl macht die Lehrkraft mit. Die Tandems aus Alt und Neu stehen in verschiedenen Reihen. Die Lehrkraft liest eine Frage vor, beide antworten je 30 Sekunden, dann rückt eine Reihe einen Platz nach rechts, die letzte Person läuft an den Anfang (2 Min. Aufstellen, 9 Min. für sechs Fragen). Wer bei einer Frage nicht antworten mag, sagt „weiter“ und stellt eine eigene Frage. Bei der letzten Frage sucht jedes Paar eine Gemeinsamkeit; reihum sagt jedes Paar sie in einem Satz (2 Min.). Zurück am Platz schreibt jede Person in Aufgabe 1 des Blatts „Mein Jahr in der 6e“ zwei Namen und eine Gemeinsamkeit auf (2 Min.).",
+            "sagen": [
+              "Dreißig Sekunden pro Person. Wer nicht antworten mag, sagt „weiter“ und stellt dem Gegenüber eine eigene Frage.",
+              "Letzte Frage: Findet in einer Minute eine Sache, die ihr beide mögt – und eine, die ihr beide nicht mögt."
+            ],
+            "punkte": [
+              "Was hast du im Sommer zum ersten Mal gemacht – oder zum ersten Mal seit Langem? Ein neues Rezept zählt auch.",
+              "Welches Lied, welche Serie oder welches Essen gehört für dich zu diesem Sommer?",
+              "Was ist in diesem Schuljahr anders als im letzten: Weg, Bus, Stundenplan, Hobby?",
+              "Worauf freust du dich in diesem Schuljahr – und worauf eher nicht?",
+              "Was könntest du den anderen hier beibringen: einen Trick, ein Spiel, ein Rezept, ein Wort in einer anderen Sprache?",
+              "Findet eine Sache, die ihr beide mögt – und eine, die ihr beide nicht mögt."
+            ],
+            "tipp": "Die Fragen sind so gewählt, dass „nichts Besonderes“ eine gute Antwort ist: Niemand muss von Reisen oder von der Familie erzählen. Die Fragen stehen in Stichworten an der Tafel, dann kommen auch die mit, die die Sprache noch lernen. Ist vorn kein Platz, im Flur vor dem Raum aufstellen.",
+            "wennEsKippt": "Kommen nur Ein-Wort-Antworten, eine Nachfrage vorgeben: Und wie war das? Kichern zwei Alte die ganze Zeit miteinander, die Reihe einmal um drei Plätze weiterrücken lassen. Wird es laut, das Ruhezeichen zeigen und erst weiterlesen, wenn es still ist – mit Zeitlimit wird es meist sofort ruhiger. Nennt ein Paar als Gemeinsamkeit eine Person („Wir finden Luca nervig“), freundlich zurückgeben: eine Sache, kein Mensch – zweiter Versuch. Wer nicht stehen mag, sitzt am Ende der Reihe auf einem Stuhl; die Reihe läuft an ihm vorbei.",
+            "blatt": "ff6-mein-jahr"
+          },
+          {
+            "titel": "Die Klassenvereinbarung auf dem Prüfstand",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Zuerst allein (3 Min.): Aufgabe 1 auf dem Blatt „Unsere Klassenvereinbarung“ – was brauche ich in diesem Jahr, um hier ehrlich sein zu können, und was soll auf keinen Fall passieren? Stichworte reichen, in jeder Sprache. Dann liest eine Person aus der 7e die alte Vereinbarung vom Plakat vor; vorher sagen, welche drei Regeln nicht zur Abstimmung stehen, weil sie alle schützen (2 Min.). Zu jeder anderen Regel zeigen alle auf drei gleichzeitig den Daumen – hoch: bleibt so, zur Seite: anders formulieren, runter: brauchen wir nicht mehr. Nur über Seite und Runter wird kurz gesprochen: Was stört, was würde es besser machen? (6 Min.) Zum Schluss vergleichen die Tischgruppen ihre Stichworte aus Aufgabe 1 und schlagen höchstens eine Regel vor, die fehlt; die Vorschläge kommen an die Tafel (4 Min.).",
+            "sagen": [
+              "Drei Regeln sind nicht verhandelbar, weil sie euch schützen. Über alles andere entscheidet ihr – auch die, die neu sind.",
+              "Welche Regel hat letztes Jahr wirklich funktioniert – und welche stand nur auf dem Papier?",
+              "Was braucht ihr jetzt, wo ihr älter seid und neue Leute dabei sind?"
+            ],
+            "punkte": [
+              "Geschützt: Was hier jemand Persönliches erzählt, bleibt in der Klasse – außer jemand ist in Gefahr. Dann holt die Lehrkraft Hilfe und sagt vorher, was sie tut.",
+              "Geschützt: „Weiter“ ist immer erlaubt, ohne Begründung.",
+              "Geschützt: Wir lachen miteinander, nicht übereinander.",
+              "Oft fehlt: Keine Fotos, Videos oder Screenshots aus der Stunde.",
+              "Oft fehlt: Wir reden nicht über Leute, die nicht da sind.",
+              "Oft fehlt: Bei Themen wie Liebe, Alkohol oder Krisen erzählt niemand Eigenes – wir reden über erfundene Figuren."
+            ],
+            "tipp": "Gibt es keine alte Vereinbarung mehr – neue Zusammensetzung, neue Lehrkraft –, die sechs Regelkarten der Vorlage an die Tafel hängen und genauso mit dem Daumen abstimmen: Was nehmen wir, was formulieren wir um, was fehlt? Die drei geschützten Regeln kommen in jedem Fall hinein. Die Daumen zählen und das Ergebnis ansagen darf jemand, dem Stillsitzen schwerfällt.",
+            "wennEsKippt": "Zeigt jemand bei allem den Daumen nach unten, nachfragen statt diskutieren: Welche Regel stört dich am meisten – und was würde sie besser machen? Kommen nur Scherzregeln („jede Woche Pizza“), eine mit Humor aufnehmen und die ernste Frage dahinter stellen: Soll es sich hier nicht wie normaler Unterricht anfühlen? Klingt ein Vorschlag nach eigener Erfahrung („dass ich nicht wieder fertiggemacht werde“), ihn ernst nehmen und anschreiben, ohne zu fragen, wer ihn hatte.",
+            "blatt": "ff-klassenvereinbarung"
+          },
+          {
+            "titel": "Bewegungspause: Atome",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen auf und gehen kreuz und quer durch den Raum, im Gang zwischen den Tischen oder vorn; wer mag, im Takt eines Klatschens. Auf einen Zuruf bilden sich sofort Gruppen in der genannten Größe – Atome zu zweit, zu fünft, zu dritt. Wer übrig bleibt, schließt sich einer Gruppe an; Sechsergruppen sind erlaubt. Jede Runde gilt eine kleine Bedingung, etwa: mindestens eine Person, mit der du heute noch nicht gesprochen hast. Zum Schluss Atome zu viert, dann zurück an die Plätze. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "punkte": [
+              "Zu zweit – mit jemandem, der die gleiche Schuhfarbe hat.",
+              "Zu fünft – mindestens eine Person, mit der du heute noch nicht gesprochen hast.",
+              "Zu dritt – alle drei sprechen zusammen mindestens drei Sprachen.",
+              "Zu viert – dann zurück an die Plätze."
+            ],
+            "tipp": "Die Bedingungen mischen Alt und Neu, ohne dass jemand jemanden auswählen muss. Niemand bleibt stehen: Die Regel „Übrige schließen sich an“ vorher laut sagen.",
+            "wennEsKippt": "Wird gerannt oder geschubst, einmal anhalten: Gehen, nicht rennen – sonst endet die Pause. Bleibt jemand sichtbar allein, selbst mit ihm ein Atom bilden und eine Gruppe dazuholen. Wer nicht mitgehen mag, bleibt am Platz und ruft die Zahlen aus – so ist auch die Person dabei, die heute nichts spielen will."
+          },
+          {
+            "titel": "Vereinbarung erneuern und unterschreiben",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Aus dem Ergebnis des Prüfstands wird die neue Vereinbarung: Was grün war, bleibt; was gelb war, formuliert die Klasse gemeinsam neu, positiv und in ihren Worten; aus den Vorschlägen an der Tafel kommen ein, zwei neue Regeln dazu – höchstens fünf Regeln insgesamt (5 Min.). Dann klären, was passiert, wenn jemand eine Regel bricht – Vorschlag: erst ein Zeichen (auf das Plakat zeigen), dann ein kurzes Gespräch nach der Stunde, bei Wiederholung der Klassenrat oder der Régent (2 Min.). Den Satz zur Vertraulichkeit aus dem Heft vorlesen und erklären, wo sie endet; die Klasse legt das Datum fest, an dem sie die Regeln wieder prüft, etwa nach den Weihnachtsferien (3 Min.). Unterschreiben (5 Min.): Die Tischgruppen gehen nacheinander ans neue Plakat; die anderen übertragen die Regeln mit Begründung in die Tabelle im Heft und unterschreiben dort. Auch die Lehrkraft unterschreibt; das Plakat hängt ab jetzt in jeder Stunde.",
+            "sagen": [
+              "Was andere hier Persönliches erzählen, bleibt in der Klasse. Eure eigenen Sachen dürft ihr erzählen, wem ihr wollt.",
+              "Eine Ausnahme gibt es: Wenn ich erfahre, dass jemand in Gefahr ist, muss ich Hilfe holen. Das mache ich nicht heimlich – ich sage der Person vorher, was ich tue.",
+              "Unterschreiben heißt: Ich halte mich daran. Nicht: Ich finde alles toll."
+            ],
+            "tipp": "Die Grenzen der Vertraulichkeit offen zu nennen, schafft eher Vertrauen als Misstrauen. Den Satz nicht improvisieren, sondern aus dem Kasten „Ich halte mich daran“ vorlesen – auch die aus der 7e hören ihn heute zum ersten Mal in diesem Jahr.",
+            "wennEsKippt": "Schlägt die Klasse harte Strafen vor (Strafarbeit, rausschicken, sich vor allen entschuldigen), freundlich ablehnen: Hier soll niemand bloßgestellt werden. Will jemand nicht unterschreiben, nicht drängen – später unterschreiben ist erlaubt, und nach der Stunde kurz fragen, was fehlt. Dauert das Formulieren zu lang, die Sätze selbst anbieten und die Klasse nur mit dem Daumen entscheiden lassen.",
+            "blatt": "ff-klassenvereinbarung"
+          },
+          {
+            "titel": "So läuft das Fach: die Profis erklären",
+            "dauer": 10,
+            "phase": "input",
+            "text": "Alle schlagen die Seite „So funktioniert das Fach“ auf. In jeder Tischgruppe erklären die, die das Fach kennen, den Neuen – oder einander – die vier Teile einer Stunde und die Regel „weiter“; wer neu ist, darf alles fragen (3 Min.). Dann in der Klasse ergänzen, was in diesem Jahr dazukommt oder bleibt: keine Noten, die Bewegungspause, die Wochen-Mission mit den Kästchen im Heft, der Skills-Pass mit neuen Seiten für die 6e, und neu der Skills-Kompass, der nächste Woche sein erstes Feld bekommt (3 Min.). Zum Schluss der Kasten „Hilfe im Lycée“: Raum und Sprechzeiten des SePAS nennen und ins Heft schreiben lassen; die Nummern darunter kurz zeigen (2 Min.). Daumen-Check: Ist für alle klar, wie eine Stunde läuft? Offene Fragen beantworten (2 Min.).",
+            "sagen": [
+              "Erklärt an eurem Tisch, wie eine Stunde bei uns läuft – so, dass jemand, der neu ist, es morgen selbst erklären könnte.",
+              "Hier gibt es keine Noten. Es zählt, dass ihr ausprobiert und ehrlich sagt, was bei euch wirkt – das gilt im zweiten Jahr genauso."
+            ],
+            "tipp": "Der SePAS gehört in jedes Heft, auch bei denen, die ihn aus der 7e kennen: Raum, Namen, Zeiten. Wer das einmal aufgeschrieben hat, findet es, wenn es darauf ankommt.",
+            "wennEsKippt": "Winkt eine Tischgruppe ab („kennen wir schon“), die Rollen tauschen: Dann erklärt ihr es der Klasse in 20 Sekunden – was ist das Wichtigste? Sitzt an einem Tisch keine neue Person, erklärt die Gruppe sich die Regeln gegenseitig und sucht eine, die sie letztes Jahr vergessen hat.",
+            "blatt": "ff-das-fach"
+          },
+          {
+            "titel": "Der Jahresweg: elf Kapitel im Raum",
+            "dauer": 10,
+            "phase": "aktiv",
+            "text": "Die elf Jahresweg-Karten hängen an den Wänden, Kapitel 1 an der Tür, Kapitel 11 am Fenster. Alle gehen zwei Minuten still herum und lesen; wer lieber sitzt, liest die Kapitel in Aufgabe 2 des Blatts „Mein Jahr in der 6e“ (2 Min.). Dann kreuzt jede Person auf dem Blatt für jedes Kapitel an: neugierig, mal sehen oder eher nicht (2 Min.). Zwei Aufstellungen (4 Min.): Auf die erste Frage stellen sich alle zu der Karte, die für sie passt; zwei, drei Stimmen sagen, warum – niemand muss. Dann die zweite Frage, wieder zwei Stimmen. Zurück am Platz den Skills-Kompass im Heft aufschlagen: Es sind dieselben elf Felder. Erklären, wie er funktioniert – am Ende jedes Kapitels kommt der Skill hinein, der in diesem Bereich hilft – und ankündigen, dass das erste Feld nächste Woche nach der Olympiade gefüllt wird (2 Min.).",
+            "sagen": [
+              "Stellt euch dahin, wo ihr wirklich steht – nicht dahin, wo eure Freunde stehen.",
+              "Das hier ist euer Jahr. In jedem Bereich braucht man etwas anderes – deshalb heißt das Ganze Kompass."
+            ],
+            "punkte": [
+              "Auf welches Kapitel bist du am meisten neugierig?",
+              "In welchem Bereich hast du schon einen Skill, der dir hilft – aus der 7e oder von woanders?"
+            ],
+            "tipp": "Nach der Stunde notieren, wo sich die Klasse gesammelt hat, ohne Namen: Das zeigt früh, welche Kapitel Zeit brauchen. Die Karten bleiben das ganze Jahr hängen; bei jedem Kapitelwechsel zeigt die Brücke darauf.",
+            "wennEsKippt": "Rennen alle geschlossen zur selben Karte, ist das Gruppendruck in Reinform – mit einem Augenzwinkern benennen und die zweite Frage mit geschlossenen Augen stellen: Alle zeigen mit dem Arm in die Richtung ihrer Karte, dann Augen auf. Wird es albern, die Aufstellung auf eine Frage kürzen und die zweite still auf dem Blatt beantworten lassen.",
+            "blatt": "ff6-mein-jahr"
+          },
+          {
+            "titel": "Skill: 5-4-3-2-1 als Test",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: Mit diesem Skill hat das Fach in der 7e begonnen – heute ist er gleichzeitig ein Test. Alle sitzen, beide Füße am Boden, und schätzen still ihre Zahl (1 Min.). Eine freiwillige Person, die den Skill kennt, leitet ihn langsam an, die Lehrkraft hilft nur, wenn es stockt; die Augen bleiben offen, der Blick ruht auf einem Punkt am Tisch (4 Min.). Danach die Zahl noch einmal schätzen und auf drei mit den Fingern zeigen, ohne Kommentar (1 Min.). Zwei, drei Rückmeldungen: Was ist anders – gesunken, gleich, gestiegen? Alles ist ein Ergebnis. Erklären: So prüft die Klasse das ganze Jahr, ob ein Skill wirkt – Zahl vorher, Skill, Zahl nachher (2 Min.). Zum Schluss Aufgabe 3 auf dem Blatt: ein Skill, den ich schon habe, und etwas, das ich dieses Jahr besser können will (2 Min.).",
+            "sagen": [
+              "Eure Zahl jetzt – nur für euch, im Kopf.",
+              "Und nach vier Minuten? Wenn sie gleich geblieben ist, ist das auch ein Ergebnis.",
+              "Wer den Skill aus der 7e kennt und ihn heute anleitet? Ich helfe, wenn du hängst."
+            ],
+            "punkte": [
+              "5 Dinge, die du siehst",
+              "4 Dinge, die du hörst",
+              "3 Dinge, die du spürst – Stuhl, Füße, Kleidung",
+              "2 Dinge, die du riechst",
+              "1 Sache, die du schmeckst"
+            ],
+            "tipp": "Wer die Übung anleitet, zeigt den Neuen nebenbei, dass Skills hier allen gehören. Kichern ist beim ersten Mal im neuen Jahr normal – ruhig weitermachen. Die Skill-Karte hinten im Heft fasst den Test in drei Schritten zusammen.",
+            "wennEsKippt": "Bleibt die Freiwillige stecken, die nächste Zahl zuflüstern, nicht übernehmen. Macht die anleitende Person Witze, einmal mitlächeln und dann selbst ruhig weiterführen, ohne Vorwurf. Wird es unruhig, auf 3-2-1 kürzen. Findet jemand die Übung kindisch, das ernst nehmen: Es ist ein Werkzeug für Stressmomente, kein Spiel – und der Test zeigt, ob es bei dir wirkt.",
+            "blatt": "ff6-mein-jahr"
+          },
+          {
+            "titel": "Skills-Pass, ein Wort je Tisch und Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Den Skills-Pass im Heft zeigen: neue Seiten für die 6e, ein Satz pro Stunde, dazu der Stempel. Die Leitfrage an die Tafel schreiben: Woran habe ich heute gemerkt, dass diese Klasse funktionieren kann – oder was brauche ich noch? Jede Person schreibt ihren Satz, Stichworte reichen; beim Herumgehen stempeln (2 Min.). Dann sagt jede Tischgruppe ein Wort für den Neustart, abgesprochen in 20 Sekunden (1 Min.). Zum Schluss die Wochen-Mission im Heft zeigen und in einem Satz ansagen, den Elternbrief austeilen und den Ausblick auf die Olympiade geben (2 Min.). Die Hefte bleiben, wo es heute festgelegt wird – in der Tasche oder in einer Kiste im Raum.",
+            "sagen": [
+              "Ein Wort pro Tisch: Wie fühlt sich der Neustart an?",
+              "Eure erste Mission steht im Heft: Stellt diese Woche einer Person aus der Klasse, mit der ihr sonst kaum redet, eine Frage. Nächste Woche frage ich kurz nach – mit dem Daumen, ohne Kontrolle."
+            ],
+            "tipp": "Die Wochen-Mission beim Ansagen nicht erklären, sondern vorlesen: Der Satz im Heft ist so kurz, dass er sich merken lässt. Die Namensschilder einsammeln und für nächste Woche aufheben."
+          }
+        ],
+        "bruecke": "Nächste Woche frischt ihr bei der Skills-Olympiade in fünf Disziplinen die Skills aus der 7e auf – Atem, Sinne, Kopf, Stopp und Ich-Botschaft. Wer sie kennt, erklärt sie; wer neu ist, probiert sie aus. Am Ende füllt ihr das erste Feld im Skills-Kompass.",
+        "mission": "Stell diese Woche einer Person aus der Klasse, mit der du sonst kaum redest, eine Frage – in der Pause, im Bus oder im Chat. Wie war das?",
+        "hintergrund": "Nach den Sommerferien und mit neuen Gesichtern beginnt eine Klasse ein Stück weit von vorn: Sie klärt wieder, wer dazugehört und welche Regeln gelten. Tuckman (1965) beschreibt die Entwicklung von Gruppen in Phasen, die mit Orientierung beginnen; jede Veränderung der Zusammensetzung wirft eine Gruppe in diese Phase zurück. Deshalb bekommen Alte und Neue früh etwas gemeinsam zu tun – in der Doppelreihe und in den Tischgruppen –, bevor es um Regeln geht. Regeln, die die Klasse selbst prüft und neu formuliert, nehmen das Bedürfnis nach Selbstbestimmung und Zugehörigkeit ernst (Deci & Ryan, 2000) und werden eher eingehalten als vorgegebene. Der Jahresweg zeigt von Anfang an, worum es geht; offen benannte Ziele und ein fester Ablauf gehören zu den Merkmalen wirksamer Programme für sozial-emotionales Lernen (Durlak et al., 2011). Der Test mit Zahl vorher und nachher legt den Grund für den Skills-Kompass: Ein Skill zählt, wenn er bei dieser Person wirkt.",
+        "quellen": [
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "achtung": "Nach den Ferien kann viel passiert sein – Trennung, Umzug, Todesfall, Schulwechsel. „Weiter“ ist in Check-in und Doppelreihe immer erlaubt; „nichts Besonderes“ ist eine gute Antwort. Niemand fragt die Neuen nach dem Grund für den Wechsel; über Abgänge nur Abgesprochenes sagen. Bei Hinweisen auf Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken: nicht vor der Klasse vertiefen, nichts versprechen, noch am selben Tag den SePAS informieren, nach dem Schutzkonzept handeln; bei akuter Gefahr nicht allein lassen, 112.",
+        "differenzierung": {
+          "leichter": "Wer die Unterrichtssprache noch kaum versteht, zeigt beim Check-in auf eines der sechs Grundgefühle in der Mitte des Rads und sagt das Wort in der eigenen Sprache. Die Fragen der Doppelreihe stehen in Stichworten an der Tafel; antworten darf man in jeder Sprache. Die elf Kapitel liest das Tandem zu zweit; auf dem Blatt reichen Kreuze und Stichworte. Die Regeln dürfen vom Plakat abgeschrieben werden.",
+          "schwerer": "Eine Person zählt beim Prüfstand die Daumen und sagt das Ergebnis an; die Tischgruppen formulieren zu einer Regel, woran man im Alltag merkt, dass sie gilt. Wer 5-4-3-2-1 anleitet, erklärt danach in drei Sätzen, wann der Skill hilft und wann nicht."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Namensschildern, Punkt und Zahl (7 Min.), Doppelreihe mit drei Fragen (10 Min.), Klassenvereinbarung prüfen, erneuern und unterschreiben (18 Min.), 5-4-3-2-1 als Test (7 Min.), Skills-Pass, Mission und Elternbrief (8 Min.). Das Fach, der Jahresweg und das Blatt „Mein Jahr in der 6e“ werden zu Beginn der nächsten Stunde nachgeholt, vor der Olympiade."
+      },
+      "fr": {
+        "titel": "Un nouveau départ pour la classe",
+        "kurz": "Après l’été, la classe se reforme : anciens et nouveaux font connaissance en double rangée, revoient la charte de classe au pouce et testent le 5-4-3-2-1 avec un chiffre avant et après.",
+        "ziele": [
+          "reviennent en classe après les vacances et font connaissance avec les nouveaux, sans que personne ait à se dévoiler",
+          "s’expliquent les rituels – roue des émotions, chiffre de 0 à 100, Skills-Pass – et renouvellent la charte de classe",
+          "connaissent les onze chapitres de l’année et testent le 5-4-3-2-1 avec un chiffre avant et après"
+        ],
+        "material": [
+          "Un cahier de l’élève 6e par jeune",
+          "Affiches roue et échelle, gommettes",
+          "Ruban de masquage et gros feutre",
+          "Charte de classe de la 7e (affiche)",
+          "Affiche (A2), feutres, adhésif",
+          "Cartes du chemin de l’année (modèle)",
+          "Tampon, lettre aux parents pour tous"
+        ],
+        "vorbereitung": [
+          "Voir avec le régent : qui est nouveau, qui est parti, qu’en dit-on ?",
+          "Plan de classe : deux nouveaux au plus par îlot, près d’un ancien fiable",
+          "Afficher l’ancienne charte ; répartir les cartes du chemin de l’année, libérer la place devant",
+          "Horaires du SePAS ; lettre aux parents (guide, partie A) dans la langue de la famille"
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : prénoms, gommette et chiffre"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Un an plus tard : ce qui reste, ce qui change"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "Double rangée : faire connaissance"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "La charte de classe à l’épreuve"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : les atomes"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Renouveler et signer la charte"
+          },
+          {
+            "min": "65–75",
+            "phase": "input",
+            "titel": "La matière : les pros expliquent"
+          },
+          {
+            "min": "75–85",
+            "phase": "aktiv",
+            "titel": "Le chemin de l’année : onze chapitres"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : 5-4-3-2-1 en mode test"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, un mot par îlot et mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : prénoms, gommette et chiffre",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "À la porte, chaque jeune reçoit une gommette et un bout de ruban de masquage pour son prénom – tout le monde, pas seulement les nouveaux ; les cahiers attendent sur les places, avec les cartes de prénom. En entrant, chacun colle sa gommette sur l’affiche de la roue des émotions (3 min). Accueillir brièvement la classe et montrer le déroulement au tableau. Deux volontaires qui connaissent la matière depuis la 7e expliquent avec leurs mots comment se passe le tour d’humeur : la gommette sur la roue, puis la tension en chiffre de 0 à 100 (2 min). Commencer soi-même avec une émotion, un chiffre et une petite nouveauté depuis l’été ; à trois, tout le monde montre son chiffre avec les doigts (0 à 10 doigts pour 0 à 100) ; qui ne veut pas montrer son chiffre aujourd’hui pose la main à plat sur la table. Quatre ou cinq volontaires disent leur mot, leur chiffre et une nouveauté – une coupe de cheveux, un bus, un hobby (5 min).",
+            "sagen": [
+              "Qui connaît la matière depuis la 7e et explique aux autres comment marche notre tour d’humeur ? Aujourd’hui, c’est vous les pros.",
+              "0, c’est complètement détendu, juste avant de s’endormir. 100, c’est aussi agité qu’on puisse l’être. Votre chiffre, c’est le vôtre – personne ne le commente.",
+              "Le mot, le chiffre – et si vous voulez : qu’est-ce qui est nouveau chez vous depuis l’été ? Ça peut être tout petit."
+            ],
+            "tipp": "Des étiquettes de prénom pour tout le monde évitent aux nouveaux d’être les seuls à en porter – et elles aident un·e enseignant·e qui découvre la classe. Pas besoin de plus de théorie sur l’échelle aujourd’hui ; elle revient en détail la semaine prochaine, aux olympiades.",
+            "wennEsKippt": "Si les anciens ne parlent qu’entre eux ou font des blagues d’initiés, interrompre gentiment : tout le monde ne peut pas comprendre, là – tu expliques en deux mots ? Si quelqu’un demande aux nouveaux pourquoi ils sont dans cette classe, arrêter tout de suite : personne ne pose cette question ici, et personne n’a à y répondre. Si un jeune cite comme nouveauté quelque chose de lourd – une séparation, un décès –, le reconnaître brièvement (merci de le dire), ne pas poser de questions et lui parler après le cours. Si un jeune montre sérieusement huit doigts ou plus, ne pas l’interroger devant la classe, mais lui demander discrètement pendant la phase de travail suivante : tu as besoin de quelque chose ?"
+          },
+          {
+            "titel": "Un an plus tard : ce qui reste, ce qui change",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Sans discours, regarder brièvement en arrière et en avant, avec le tableau : ce qui reste – tour d’humeur, pause active, skill, Skills-Pass, mission de la semaine – et ce qui est nouveau : la boussole des skills et les thèmes d’une année où tout le monde a grandi : école, colère, amitié et amour, famille, Internet, alcool, santé. Trois voix de la 7e : qu’est-ce qui vous est resté de la matière ? Un mot suffit. Poser ensuite le cadre : personne ne demande à quelqu’un pourquoi il ou elle est nouveau dans la classe ; sur les jeunes qui ne sont plus là, on dit seulement ce qui a été convenu. Annoncer le programme du jour : faire connaissance, revoir les règles, regarder l’année.",
+            "sagen": [
+              "Vous avez un an de plus, et ça se voit aux thèmes : l’école, la colère, l’amitié et l’amour, la famille, Internet, l’alcool, la santé.",
+              "Ceux qui étaient là l’an dernier : qu’est-ce qui vous est resté de la matière ? Un mot suffit."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Ce qui reste",
+                "Ce qui change"
+              ],
+              "zeilen": [
+                [
+                  "Tour d’humeur avec la roue et le chiffre",
+                  "La boussole des skills : un skill par chapitre"
+                ],
+                [
+                  "Pause active, skill, Skills-Pass",
+                  "Onze chapitres qui vont avec le fait de grandir"
+                ],
+                [
+                  "Mission de la semaine, « je passe » permis",
+                  "De nouveaux visages – et une nouvelle charte"
+                ]
+              ]
+            },
+            "tipp": "Si quelqu’un de l’an dernier manque, dire seulement ce qui a été convenu avec le régent et répondre calmement aux questions : je ne peux pas en dire plus. Cela protège la personne partie – et montre à la classe que ce qui est confidentiel le reste."
+          },
+          {
+            "titel": "Double rangée : faire connaissance",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Deux rangées de dix se placent face à face devant la classe, à un mètre environ, de façon que deux personnes se regardent toujours ; si le nombre est impair, l’enseignant·e participe. Les tandems ancien-nouveau sont dans des rangées différentes. Lire une question, chacun répond 30 secondes, puis une rangée se décale d’une place vers la droite et la dernière personne rejoint le début (2 min pour se placer, 9 min pour six questions). Qui ne veut pas répondre à une question dit « je passe » et en pose une autre. À la dernière question, chaque paire cherche un point commun ; à tour de rôle, chaque paire le dit en une phrase (2 min). De retour à sa place, chacun note dans l’exercice 1 de la fiche « Mon année de 6e » deux prénoms et un point commun (2 min).",
+            "sagen": [
+              "Trente secondes par personne. Qui ne veut pas répondre dit « je passe » et pose une autre question à son vis-à-vis.",
+              "Dernière question : trouvez en une minute une chose que vous aimez tous les deux – et une chose que vous détestez tous les deux."
+            ],
+            "punkte": [
+              "Qu’est-ce que tu as fait pour la première fois cet été – ou pour la première fois depuis longtemps ? Une nouvelle recette, ça compte aussi.",
+              "Quelle chanson, quelle série ou quel plat te fait penser à cet été ?",
+              "Qu’est-ce qui change cette année par rapport à l’an dernier : le trajet, le bus, l’horaire, un hobby ?",
+              "Qu’est-ce qui te réjouit cette année – et qu’est-ce qui te réjouit moins ?",
+              "Qu’est-ce que tu pourrais apprendre aux autres ici : un truc, un jeu, une recette, un mot dans une autre langue ?",
+              "Trouvez une chose que vous aimez tous les deux – et une que vous détestez tous les deux."
+            ],
+            "tipp": "Les questions sont choisies pour que « rien de spécial » soit une bonne réponse : personne n’a à parler de vacances ou de famille. Noter les questions en mots-clés au tableau, pour que ceux qui apprennent encore la langue suivent aussi. S’il n’y a pas de place devant, se placer dans le couloir devant la salle.",
+            "wennEsKippt": "Si les réponses se limitent à un mot, imposer une relance : et c’était comment ? Si deux anciens rigolent ensemble tout le temps, faire avancer la rangée de trois places d’un coup. Si ça devient bruyant, montrer le signal de calme et ne reprendre la lecture que dans le silence – avec une limite de temps, le calme revient souvent tout de suite. Si une paire donne une personne comme point commun (« On trouve Luca pénible »), renvoyer gentiment : une chose, pas une personne – deuxième essai. Qui ne veut pas rester debout s’assied sur une chaise au bout de la rangée ; la rangée défile devant lui.",
+            "blatt": "ff6-mein-jahr"
+          },
+          {
+            "titel": "La charte de classe à l’épreuve",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "D’abord seul (3 min) : exercice 1 de la fiche « Notre charte de classe » – de quoi ai-je besoin cette année pour oser être sincère ici, et qu’est-ce qui ne doit surtout pas arriver ? Des mots-clés suffisent, dans n’importe quelle langue. Puis un jeune de la 7e lit l’ancienne charte sur l’affiche ; dire avant quelles trois règles ne sont pas soumises au vote, parce qu’elles protègent tout le monde (2 min). Pour chaque autre règle, tout le monde montre son pouce à trois, en même temps – en haut : elle reste ; à l’horizontale : à reformuler ; en bas : on n’en a plus besoin. On ne discute brièvement que des pouces à l’horizontale et en bas : qu’est-ce qui gêne, qu’est-ce qui l’améliorerait ? (6 min) Pour finir, les îlots comparent leurs mots-clés de l’exercice 1 et proposent au plus une règle qui manque ; les propositions vont au tableau (4 min).",
+            "sagen": [
+              "Trois règles ne se négocient pas, parce qu’elles vous protègent. Pour tout le reste, c’est vous qui décidez – les nouveaux aussi.",
+              "Quelle règle a vraiment fonctionné l’an dernier – et laquelle est restée sur le papier ?",
+              "De quoi avez-vous besoin maintenant que vous avez grandi et qu’il y a de nouvelles personnes ?"
+            ],
+            "punkte": [
+              "Protégée : ce que quelqu’un raconte de personnel ici reste dans la classe – sauf si quelqu’un est en danger. L’enseignant·e va alors chercher de l’aide et dit avant ce qu’il ou elle fait.",
+              "Protégée : « je passe » est toujours permis, sans se justifier.",
+              "Protégée : on rit ensemble, pas les uns des autres.",
+              "Manque souvent : pas de photos, de vidéos ni de captures d’écran pendant le cours.",
+              "Manque souvent : on ne parle pas des gens qui ne sont pas là.",
+              "Manque souvent : sur des thèmes comme l’amour, l’alcool ou les crises, personne ne raconte du vécu – on parle de personnages inventés."
+            ],
+            "tipp": "S’il n’y a plus d’ancienne charte – nouvelle composition, nouvel·le enseignant·e –, accrocher au tableau les six cartes de règles du modèle et voter de la même façon avec le pouce : qu’est-ce qu’on garde, qu’est-ce qu’on reformule, qu’est-ce qui manque ? Les trois règles protégées y entrent dans tous les cas. Compter les pouces et annoncer le résultat peut être confié à un jeune qui a du mal à rester assis.",
+            "wennEsKippt": "Si quelqu’un met le pouce en bas pour tout, demander plutôt que discuter : quelle règle te gêne le plus – et qu’est-ce qui l’améliorerait ? S’il n’y a que des règles pour rire (« pizza chaque semaine »), en accueillir une avec humour et poser la vraie question derrière : vous voulez que ce cours ne ressemble pas à un cours comme les autres ? Si une proposition semble venir d’un vécu (« qu’on ne me harcèle plus »), la prendre au sérieux et l’écrire sans demander qui l’a faite.",
+            "blatt": "ff-klassenvereinbarung"
+          },
+          {
+            "titel": "Pause active : les atomes",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève et circule dans la salle, dans les allées entre les tables ou devant ; qui veut marche au rythme d’un claquement de mains. À l’annonce d’un nombre, des groupes de cette taille se forment aussitôt – des atomes à deux, à cinq, à trois. Qui reste seul rejoint un groupe ; les groupes de six sont permis. À chaque manche, une petite condition, par exemple : au moins une personne à qui tu n’as pas encore parlé aujourd’hui. Pour finir, des atomes à quatre, puis retour aux places. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "punkte": [
+              "À deux – avec quelqu’un qui a des chaussures de la même couleur.",
+              "À cinq – avec au moins une personne à qui tu n’as pas encore parlé aujourd’hui.",
+              "À trois – à vous trois, vous parlez au moins trois langues.",
+              "À quatre – puis retour aux places."
+            ],
+            "tipp": "Les conditions mélangent anciens et nouveaux sans que personne ait à choisir quelqu’un. Personne ne reste planté là : dire à voix haute, avant de commencer, la règle « qui reste seul rejoint un groupe ».",
+            "wennEsKippt": "Si ça court ou si ça bouscule, arrêter une fois : on marche, on ne court pas – sinon la pause s’arrête. Si un jeune reste visiblement seul, former soi-même un atome avec lui et y rattacher un groupe. Qui ne veut pas circuler reste à sa place et annonce les nombres – ainsi, même la personne qui ne veut rien jouer aujourd’hui fait partie du jeu."
+          },
+          {
+            "titel": "Renouveler et signer la charte",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Le résultat de l’épreuve devient la nouvelle charte : ce qui était vert reste ; ce qui était orange, la classe le reformule ensemble, de façon positive et avec ses mots ; parmi les propositions au tableau, une ou deux nouvelles règles s’ajoutent – cinq règles au plus en tout (5 min). Clarifier ensuite ce qui se passe si quelqu’un ne respecte pas une règle – proposition : d’abord un signe (montrer l’affiche), puis un court échange après le cours, en cas de répétition le conseil de coopération ou le régent (2 min). Lire la phrase sur la confidentialité dans le cahier et expliquer où elle s’arrête ; la classe fixe la date à laquelle elle revérifiera les règles, par exemple après les vacances de Noël (3 min). Signature (5 min) : les îlots passent l’un après l’autre à la nouvelle affiche ; les autres recopient les règles et leur raison dans le tableau du cahier et y signent. L’enseignant·e signe aussi ; l’affiche reste désormais au mur à chaque séance.",
+            "sagen": [
+              "Ce que les autres racontent de personnel ici reste dans la classe. Vos propres histoires, vous pouvez les raconter à qui vous voulez.",
+              "Il y a une exception : si j’apprends que quelqu’un est en danger, je dois aller chercher de l’aide. Je ne le fais pas en cachette – je dis d’abord à la personne ce que je vais faire.",
+              "Signer veut dire : je la respecte. Pas : je trouve tout génial."
+            ],
+            "tipp": "Dire ouvertement où s’arrête la confidentialité crée plutôt de la confiance que de la méfiance. Ne pas improviser la phrase, mais la lire dans l’encadré « Je la respecte » – même ceux de la 7e l’entendent aujourd’hui pour la première fois cette année.",
+            "wennEsKippt": "Si la classe propose des sanctions dures (punition écrite, exclusion du cours, s’excuser devant tout le monde), refuser aimablement : ici, personne ne doit être humilié. Si un jeune ne veut pas signer, ne pas insister – signer plus tard est permis, et demander après le cours ce qui manque. Si la formulation traîne, proposer soi-même les phrases et laisser la classe trancher seulement avec le pouce.",
+            "blatt": "ff-klassenvereinbarung"
+          },
+          {
+            "titel": "La matière : les pros expliquent",
+            "dauer": 10,
+            "phase": "input",
+            "text": "Tout le monde ouvre la page « Comment fonctionne la matière ». Dans chaque îlot, ceux qui connaissent la matière expliquent aux nouveaux – ou les uns aux autres – les quatre temps d’une séance et la règle « je passe » ; qui est nouveau peut tout demander (3 min). Compléter ensuite en classe entière ce qui s’ajoute ou reste cette année : pas de notes, la pause active, la mission de la semaine avec ses cases à cocher dans le cahier, le Skills-Pass avec de nouvelles pages pour la 6e, et la nouveauté, la boussole des skills, qui reçoit sa première entrée la semaine prochaine (3 min). Pour finir, l’encadré « De l’aide au lycée » : donner la salle et les horaires du SePAS et les faire noter dans le cahier ; montrer brièvement les numéros en dessous (2 min). Vérification au pouce : tout le monde voit comment se passe une séance ? Répondre aux questions ouvertes (2 min).",
+            "sagen": [
+              "Expliquez à votre îlot comment se passe un cours chez nous – de façon que quelqu’un de nouveau puisse l’expliquer lui-même demain.",
+              "Ici, il n’y a pas de notes. Ce qui compte, c’est d’essayer et de dire honnêtement ce qui marche pour vous – la deuxième année aussi."
+            ],
+            "tipp": "Le SePAS a sa place dans chaque cahier, même chez ceux qui le connaissent depuis la 7e : la salle, les noms, les horaires. Qui l’a noté une fois le retrouve le jour où ça compte.",
+            "wennEsKippt": "Si un îlot balaie l’exercice (« on connaît déjà »), inverser les rôles : alors expliquez-le à la classe en 20 secondes – qu’est-ce qui compte le plus ? S’il n’y a pas de nouveau à une table, le groupe s’explique les règles mutuellement et cherche celle qu’il a oubliée l’an dernier.",
+            "blatt": "ff-das-fach"
+          },
+          {
+            "titel": "Le chemin de l’année : onze chapitres",
+            "dauer": 10,
+            "phase": "aktiv",
+            "text": "Les onze cartes du chemin de l’année sont accrochées aux murs, le chapitre 1 près de la porte, le chapitre 11 près de la fenêtre. Tout le monde circule deux minutes en silence et lit ; qui préfère rester assis lit les chapitres dans l’exercice 2 de la fiche « Mon année de 6e » (2 min). Puis chacun coche sur la fiche, pour chaque chapitre : curieux, on verra ou plutôt pas (2 min). Deux positionnements (4 min) : à la première question, tout le monde se place près de la carte qui lui correspond ; deux ou trois voix disent pourquoi – personne n’y est obligé. Puis la deuxième question, de nouveau deux voix. De retour à sa place, ouvrir la boussole des skills dans le cahier : ce sont les mêmes onze cases. Expliquer comment elle fonctionne – à la fin de chaque chapitre, on y note le skill qui aide dans ce domaine – et annoncer que la première case sera remplie la semaine prochaine, après les olympiades (2 min).",
+            "sagen": [
+              "Placez-vous là où vous en êtes vraiment – pas là où sont vos amis.",
+              "C’est votre année. Dans chaque domaine, il faut autre chose – c’est pour ça que ça s’appelle une boussole."
+            ],
+            "punkte": [
+              "Quel chapitre te rend le plus curieux ?",
+              "Dans quel domaine as-tu déjà un skill qui t’aide – de la 7e ou d’ailleurs ?"
+            ],
+            "tipp": "Après la séance, noter où la classe s’est rassemblée, sans noms : cela montre tôt quels chapitres demanderont du temps. Les cartes restent au mur toute l’année ; à chaque changement de chapitre, le lien montre la carte suivante.",
+            "wennEsKippt": "Si tout le monde file vers la même carte, c’est la pression du groupe à l’état pur – le nommer avec un clin d’œil et poser la deuxième question les yeux fermés : chacun tend le bras vers sa carte, puis ouvre les yeux. Si ça tourne à la rigolade, réduire à une seule question et faire répondre à la deuxième en silence sur la fiche.",
+            "blatt": "ff6-mein-jahr"
+          },
+          {
+            "titel": "Skill : 5-4-3-2-1 en mode test",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : c’est avec ce skill que la matière a commencé en 7e – aujourd’hui, il sert en même temps de test. Tout le monde est assis, les deux pieds au sol, et estime en silence son chiffre (1 min). Un volontaire qui connaît le skill le guide lentement ; n’aider que si ça bloque ; les yeux restent ouverts, le regard posé sur un point de la table (4 min). Ensuite, estimer de nouveau son chiffre et le montrer à trois avec les doigts, sans commentaire (1 min). Deux ou trois retours : qu’est-ce qui a changé – descendu, pareil, monté ? Tout est un résultat. Expliquer : c’est ainsi que la classe vérifie toute l’année si un skill agit – chiffre avant, skill, chiffre après (2 min). Pour finir, l’exercice 3 de la fiche : un skill que j’ai déjà, et quelque chose que je veux mieux savoir faire cette année (2 min).",
+            "sagen": [
+              "Votre chiffre maintenant – pour vous seulement, dans votre tête.",
+              "Et après quatre minutes ? S’il n’a pas bougé, c’est aussi un résultat.",
+              "Qui connaît le skill depuis la 7e et le guide aujourd’hui ? J’aide si tu bloques."
+            ],
+            "punkte": [
+              "5 choses que tu vois",
+              "4 choses que tu entends",
+              "3 choses que tu sens sur ta peau – la chaise, tes pieds, tes vêtements",
+              "2 odeurs autour de toi",
+              "1 goût dans ta bouche"
+            ],
+            "tipp": "Qui guide l’exercice montre au passage aux nouveaux que les skills appartiennent à tout le monde ici. Les rires sont normaux la première fois de l’année – continuer calmement. La carte skill à la fin du cahier résume le test en trois étapes.",
+            "wennEsKippt": "Si le volontaire bloque, lui souffler le chiffre suivant, sans reprendre la main. Si la personne qui guide fait le clown, sourire une fois, puis reprendre soi-même calmement, sans reproche. Si la classe s’agite, raccourcir à 3-2-1. Si quelqu’un trouve l’exercice puéril, le prendre au sérieux : c’est un outil pour les moments de stress, pas un jeu – et le test montre s’il marche chez toi.",
+            "blatt": "ff6-mein-jahr"
+          },
+          {
+            "titel": "Skills-Pass, un mot par îlot et mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Montrer le Skills-Pass dans le cahier : de nouvelles pages pour la 6e, une phrase par séance, avec le tampon. Écrire la question au tableau : à quoi ai-je vu aujourd’hui que cette classe peut fonctionner – ou de quoi ai-je encore besoin ? Chacun écrit sa phrase, des mots-clés suffisent ; tamponner en passant dans les rangs (2 min). Puis chaque îlot dit un mot pour ce nouveau départ, décidé en 20 secondes (1 min). Pour finir, montrer la mission de la semaine dans le cahier et l’annoncer en une phrase, distribuer la lettre aux parents et annoncer les olympiades (2 min). Les cahiers restent là où on le décide aujourd’hui – dans le sac ou dans une caisse en classe.",
+            "sagen": [
+              "Un mot par îlot : comment vous sentez-vous dans ce nouveau départ ?",
+              "Votre première mission est dans le cahier : cette semaine, posez une question à quelqu’un de la classe à qui vous ne parlez presque jamais. La semaine prochaine, je demande juste avec le pouce – sans contrôle."
+            ],
+            "tipp": "Ne pas expliquer la mission de la semaine, la lire : la phrase du cahier est assez courte pour être retenue. Ramasser les étiquettes de prénom et les garder pour la semaine prochaine."
+          }
+        ],
+        "bruecke": "La semaine prochaine, aux olympiades des skills, vous rafraîchissez en cinq épreuves les skills de la 7e – souffle, sens, tête, stop et message en « je ». Qui les connaît les explique ; qui est nouveau les essaie. À la fin, vous remplissez la première case de la boussole des skills.",
+        "mission": "Cette semaine, pose une question à quelqu’un de la classe à qui tu ne parles presque jamais – à la récré, dans le bus ou dans le chat. C’était comment ?",
+        "hintergrund": "Après l’été et avec de nouveaux visages, une classe repart en partie de zéro : elle doit à nouveau savoir qui en fait partie et quelles règles s’appliquent. Tuckman (1965) décrit le développement des groupes en phases qui commencent par l’orientation ; chaque changement de composition ramène un groupe à cette phase. C’est pourquoi anciens et nouveaux ont tôt quelque chose à faire ensemble – en double rangée, en îlots – avant qu’il soit question de règles. Des règles que la classe examine et reformule elle-même prennent au sérieux le besoin d’autonomie et d’appartenance (Deci & Ryan, 2000) et sont mieux respectées que des règles imposées. Le chemin de l’année montre dès le départ de quoi il s’agira ; des objectifs nommés ouvertement et un déroulement fixe caractérisent les programmes efficaces d’apprentissage socio-émotionnel (Durlak et al., 2011). Le test avec un chiffre avant et après pose les bases de la boussole des skills : un skill compte s’il agit chez cette personne-là.",
+        "quellen": [
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "achtung": "Après les vacances, il a pu se passer beaucoup de choses – séparation, déménagement, décès, changement d’école. « Je passe » est toujours permis au tour d’humeur et en double rangée ; « rien de spécial » est une bonne réponse. Personne ne demande aux nouveaux la raison de leur arrivée ; sur les départs, on ne dit que ce qui a été convenu. En cas de signes de violence, d’abus, d’automutilation ou d’idées suicidaires : ne pas approfondir devant la classe, ne rien promettre, informer le SePAS le jour même, suivre le protocole de protection ; en cas de danger immédiat, ne pas laisser la personne seule, 112.",
+        "differenzierung": {
+          "leichter": "Qui comprend encore à peine la langue du cours montre, au tour d’humeur, l’une des six émotions de base au centre de la roue et dit le mot dans sa langue. Les questions de la double rangée sont au tableau en mots-clés ; on peut répondre dans n’importe quelle langue. Les onze chapitres se lisent à deux, en tandem ; sur la fiche, des croix et des mots-clés suffisent. Les règles peuvent être recopiées de l’affiche.",
+          "schwerer": "Un jeune compte les pouces pendant l’épreuve de la charte et annonce le résultat ; les îlots formulent, pour une règle, à quoi on voit au quotidien qu’elle est respectée. Qui guide le 5-4-3-2-1 explique ensuite en trois phrases quand le skill aide et quand il n’aide pas."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec étiquettes, gommette et chiffre (7 min), double rangée avec trois questions (10 min), revoir, renouveler et signer la charte (18 min), 5-4-3-2-1 en mode test (7 min), Skills-Pass, mission et lettre aux parents (8 min). La matière, le chemin de l’année et la fiche « Mon année de 6e » sont rattrapés au début de la séance suivante, avant les olympiades."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff6-mein-jahr",
+      "bereich": "skills",
+      "thema": "ankommen",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "10 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Neustart",
+        "Jahresweg",
+        "Kennenlernen",
+        "Förderfach"
+      ],
+      "bild": "icon:route",
+      "kurs": [
+        "ff6-e01"
+      ],
+      "de": {
+        "titel": "Mein Jahr in der 6e",
+        "untertitel": "Elf Kapitel, ein Weg: Wo stehst du am Start?",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Mit wem hast du heute in der Doppelreihe gesprochen? Schreib zwei Namen auf und eine Gemeinsamkeit."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Name",
+              "Das haben wir gemeinsam"
+            ],
+            "breiten": [
+              1,
+              2.6
+            ],
+            "zeilen": 2,
+            "beispiel": [
+              "Inês",
+              "Wir hassen beide frühes Aufstehen."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Elf Kapitel in diesem Jahr. Kreuze an: Worauf bist du neugierig – und wo denkst du eher: mal sehen?",
+            "hinweis": "Es gibt kein Richtig oder Falsch. Am Ende des Jahres schaust du noch einmal darauf."
+          },
+          {
+            "art": "einschaetzung",
+            "items": [
+              "1 · Wieder ankommen",
+              "2 · Selbstwert und Körper",
+              "3 · Stress und Schule",
+              "4 · Wut und Impulse",
+              "5 · Freundschaft, Liebe und Zugehörigkeit",
+              "6 · Familie und Zuhause",
+              "7 · Vielfalt und Respekt",
+              "8 · Sicher im Netz",
+              "9 · Riskant oder okay? Alkohol, Vapes, Cannabis",
+              "10 · Gesund an Körper und Seele",
+              "11 · Abschluss: Was hat sich verändert?"
+            ],
+            "optionen": [
+              "neugierig",
+              "mal sehen",
+              "eher nicht"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Skills hast du schon – aus der 7e oder von woanders. Ergänze die Sätze."
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ein Skill, den ich schon habe: …",
+              "Das möchte ich in diesem Jahr besser können: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Das Blatt bleibt bei dir. In der Runde reicht es, ein Kapitel zu nennen, auf das du neugierig bist."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen halten fest, mit wem sie gesprochen haben, schätzen die elf Kapitel des Jahres ein und nennen einen Skill, den sie schon haben – ein Startpunkt, auf den sie am Ende des Jahres zurückschauen.",
+          "ablauf": [
+            "Einheit 1, Schritt 3 (2 Min.): Aufgabe 1 nach der Doppelreihe – zwei Namen, eine Gemeinsamkeit.",
+            "Schritt 8 (4 Min.): Aufgabe 2 – die elf Kapitel lesen (Tandem für langsame Leserinnen und Leser) und ankreuzen; danach die Aufstellungen im Raum.",
+            "Schritt 9 (2 Min.): Aufgabe 3 nach dem Skill-Test.",
+            "Einheit 34 oder 35: zurückblättern – was war wirklich schwierig, was nicht?"
+          ],
+          "hintergrund": "Offen benannte Ziele und ein sichtbarer Jahresweg gehören zu den Merkmalen wirksamer Programme für sozial-emotionales Lernen (Durlak et al., 2011). Wer zu Beginn festhält, worauf er neugierig ist und was er schon kann, erlebt sich als jemand, der mitgestaltet – nicht als Empfänger eines Programms.",
+          "quellen": [
+            "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+          ],
+          "material": "Jahresweg-Karten an den Wänden"
+        }
+      },
+      "fr": {
+        "titel": "Mon année de 6e",
+        "untertitel": "Onze chapitres, un chemin : où en es-tu au départ ?",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Avec qui as-tu parlé aujourd’hui en double rangée ? Note deux prénoms et un point commun."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Prénom",
+              "Ce que nous avons en commun"
+            ],
+            "breiten": [
+              1,
+              2.6
+            ],
+            "zeilen": 2,
+            "beispiel": [
+              "Inês",
+              "On déteste tous les deux se lever tôt."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Onze chapitres cette année. Coche : qu’est-ce qui te rend curieux – et où tu te dis plutôt : on verra ?",
+            "hinweis": "Il n’y a pas de bonne ou de mauvaise réponse. À la fin de l’année, tu reliras cette fiche."
+          },
+          {
+            "art": "einschaetzung",
+            "items": [
+              "1 · Se retrouver",
+              "2 · Estime de soi et corps",
+              "3 · Stress et école",
+              "4 · Colère et impulsions",
+              "5 · Amitié, amour et appartenance",
+              "6 · Famille et foyer",
+              "7 · Diversité et respect",
+              "8 · En sécurité en ligne",
+              "9 · Risqué ou pas ? Alcool, vapoteuse, cannabis",
+              "10 · Bien dans son corps et dans sa tête",
+              "11 · Bilan : qu’est-ce qui a changé ?"
+            ],
+            "optionen": [
+              "curieux",
+              "on verra",
+              "plutôt pas"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Des skills, tu en as déjà – de la 7e ou d’ailleurs. Complète les phrases."
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Un skill que j’ai déjà : …",
+              "Ce que je veux mieux savoir faire cette année : …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "La fiche reste chez toi. Au tour de table, il suffit de nommer un chapitre qui te rend curieux."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes notent avec qui ils ont parlé, se positionnent par rapport aux onze chapitres de l’année et nomment un skill qu’ils ont déjà – un point de départ sur lequel ils reviendront en fin d’année.",
+          "ablauf": [
+            "Séance 1, étape 3 (2 min) : exercice 1 après la double rangée – deux prénoms, un point commun.",
+            "Étape 8 (4 min) : exercice 2 – lire les onze chapitres (en tandem pour les lecteurs lents) et cocher ; ensuite les positionnements dans la salle.",
+            "Étape 9 (2 min) : exercice 3 après le test du skill.",
+            "Séance 34 ou 35 : revenir sur la fiche – qu’est-ce qui a vraiment été difficile, et qu’est-ce qui ne l’a pas été ?"
+          ],
+          "hintergrund": "Des objectifs nommés ouvertement et un chemin de l’année visible font partie des caractéristiques des programmes efficaces d’apprentissage socio-émotionnel (Durlak et al., 2011). Qui note au départ ce qui le rend curieux et ce qu’il sait déjà faire se vit comme quelqu’un qui participe – pas comme le destinataire d’un programme.",
+          "quellen": [
+            "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+          ],
+          "material": "Cartes du chemin de l’année sur les murs"
+        }
+      }
+    },
+    {
+      "id": "ff6-jahresweg-karten",
+      "bereich": "skills",
+      "thema": "ankommen",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "klasse"
+      ],
+      "dauer": "10 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Jahresweg",
+        "Kapitel",
+        "Aufstellung",
+        "Regelkarten",
+        "Förderfach"
+      ],
+      "bild": "icon:map",
+      "kurs": [
+        "ff6-e01"
+      ],
+      "de": {
+        "titel": "Jahresweg-Karten",
+        "untertitel": "Kopiervorlage zum Ausschneiden – elf Kapitel für die Wände des Klassenraums, sechs Regelkarten für die Klassenvereinbarung",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So werden die Karten gebraucht",
+            "punkte": [
+              "Die Kapitelkarten einmal auf festes Papier kopieren – gern auf A3 vergrößert –, ausschneiden und an den Wänden verteilen: Kapitel 1 an der Tür, Kapitel 11 am Fenster. Sie bleiben das ganze Jahr hängen.",
+              "Einheit 1, Schritt 8: Galerie und zwei Aufstellungen. Bei jedem Kapitelwechsel zeigt die Brücke auf die nächste Karte.",
+              "Die Regelkarten auf der zweiten Seite nur, wenn es keine Vereinbarung aus der 7e mehr gibt – oder als Vorschläge für das, was fehlt."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 66,
+            "karten": [
+              {
+                "titel": "1 · Wieder ankommen",
+                "text": "Wer sind wir in diesem Jahr?"
+              },
+              {
+                "titel": "2 · Selbstwert und Körper",
+                "text": "Was macht mich wertvoll – auch wenn ich mich vergleiche?"
+              },
+              {
+                "titel": "3 · Stress und Schule",
+                "text": "Wie komme ich gut durch Schule, Lernen und Tests?"
+              },
+              {
+                "titel": "4 · Wut und Impulse",
+                "text": "Was steckt hinter meiner Wut – und wie bremse ich rechtzeitig?"
+              },
+              {
+                "titel": "5 · Freundschaft, Liebe und Zugehörigkeit",
+                "text": "Was macht Freundschaft und Liebe aus – und was, wenn es schwierig wird?"
+              },
+              {
+                "titel": "6 · Familie und Zuhause",
+                "text": "Wie gehen wir zu Hause miteinander um?"
+              },
+              {
+                "titel": "7 · Vielfalt und Respekt",
+                "text": "Wie gehen wir mit Unterschieden um?"
+              },
+              {
+                "titel": "8 · Sicher im Netz",
+                "text": "Wie schütze ich mich und andere online?"
+              },
+              {
+                "titel": "9 · Riskant oder okay?",
+                "text": "Alkohol, Vapes, Cannabis: Was muss ich wissen – und wie entscheide ich?"
+              },
+              {
+                "titel": "10 · Gesund an Körper und Seele",
+                "text": "Was tut mir gut – und was tun, wenn es jemandem richtig schlecht geht?"
+              },
+              {
+                "titel": "11 · Abschluss",
+                "text": "Was hat sich in diesem Jahr verändert?"
+              },
+              {
+                "titel": "Wochen-Mission",
+                "text": "Ein kleiner Auftrag bis zur nächsten Stunde – ohne Kontrolle, ohne Note. Ausprobieren reicht."
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 72,
+            "karten": [
+              {
+                "titel": "Vertraulich",
+                "text": "Was hier jemand Persönliches erzählt, bleibt in der Klasse – außer jemand ist in Gefahr. Dann holt die Lehrkraft Hilfe und sagt vorher, was sie tut."
+              },
+              {
+                "titel": "Weiter",
+                "text": "„Weiter“ ist immer erlaubt, ohne Begründung. Niemand muss etwas Persönliches erzählen."
+              },
+              {
+                "titel": "Lachen",
+                "text": "Wir lachen miteinander, nicht übereinander."
+              },
+              {
+                "titel": "Keine Fotos",
+                "text": "Keine Fotos, Videos oder Screenshots aus der Stunde. Handys bleiben in der Tasche, außer eine Übung braucht sie."
+              },
+              {
+                "titel": "Abwesende",
+                "text": "Wir reden nicht über Leute, die nicht da sind."
+              },
+              {
+                "titel": "Erfundene Figuren",
+                "text": "Bei Themen wie Liebe, Alkohol oder Krisen erzählt niemand Eigenes – wir reden über erfundene Figuren."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Elf Kapitelkarten für den Jahresweg im Klassenraum, dazu eine Karte für die Wochen-Mission und sechs Regelkarten für die Klassenvereinbarung, falls es keine aus der 7e mehr gibt.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; die Kapitelkarten vor der ersten Stunde aufhängen.",
+            "Einheit 1, Schritt 4: Regelkarten an die Tafel, wenn keine alte Vereinbarung da ist; Abstimmung mit dem Daumen.",
+            "Schritt 8: Galerie, zwei Aufstellungen; danach bleiben die Karten das ganze Jahr hängen."
+          ],
+          "hintergrund": "Ein sichtbarer Jahresweg macht Ziele und Reihenfolge transparent – ein Merkmal wirksamer Programme für sozial-emotionales Lernen (Durlak et al., 2011). Regeln, die die Klasse selbst prüft, werden eher eingehalten als vorgegebene (Deci & Ryan, 2000).",
+          "quellen": [
+            "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          ],
+          "material": "Festes Papier, Schere, Klebeband"
+        }
+      },
+      "fr": {
+        "titel": "Cartes du chemin de l’année",
+        "untertitel": "Modèle à photocopier et à découper – onze chapitres pour les murs de la salle, six cartes de règles pour la charte de classe",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Comment utiliser les cartes",
+            "punkte": [
+              "Photocopier une fois les cartes de chapitre sur papier épais – de préférence agrandies en A3 –, les découper et les répartir sur les murs : chapitre 1 près de la porte, chapitre 11 près de la fenêtre. Elles restent au mur toute l’année.",
+              "Séance 1, étape 8 : galerie et deux positionnements. À chaque changement de chapitre, le lien montre la carte suivante.",
+              "Les cartes de règles de la deuxième page servent seulement s’il n’y a plus de charte de la 7e – ou comme propositions pour ce qui manque."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 66,
+            "karten": [
+              {
+                "titel": "1 · Se retrouver",
+                "text": "Qui sommes-nous cette année ?"
+              },
+              {
+                "titel": "2 · Estime de soi et corps",
+                "text": "Qu’est-ce qui fait ma valeur – même quand je me compare ?"
+              },
+              {
+                "titel": "3 · Stress et école",
+                "text": "Comment bien traverser l’école, les révisions et les devoirs en classe ?"
+              },
+              {
+                "titel": "4 · Colère et impulsions",
+                "text": "Que cache ma colère – et comment freiner à temps ?"
+              },
+              {
+                "titel": "5 · Amitié, amour et appartenance",
+                "text": "Qu’est-ce qui fait une amitié, un amour – et que faire quand c’est difficile ?"
+              },
+              {
+                "titel": "6 · Famille et foyer",
+                "text": "Comment vivons-nous ensemble à la maison ?"
+              },
+              {
+                "titel": "7 · Diversité et respect",
+                "text": "Comment vivre avec nos différences ?"
+              },
+              {
+                "titel": "8 · En sécurité en ligne",
+                "text": "Comment me protéger et protéger les autres en ligne ?"
+              },
+              {
+                "titel": "9 · Risqué ou pas ?",
+                "text": "Alcool, vapoteuse, cannabis : que faut-il savoir – et comment décider ?"
+              },
+              {
+                "titel": "10 · Bien dans son corps et dans sa tête",
+                "text": "Qu’est-ce qui me fait du bien – et que faire quand quelqu’un va vraiment mal ?"
+              },
+              {
+                "titel": "11 · Bilan",
+                "text": "Qu’est-ce qui a changé cette année ?"
+              },
+              {
+                "titel": "Mission de la semaine",
+                "text": "Un petit défi à réaliser d’ici la prochaine séance – sans contrôle, sans note. Essayer suffit."
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 72,
+            "karten": [
+              {
+                "titel": "Confidentiel",
+                "text": "Ce que quelqu’un raconte de personnel ici reste dans la classe – sauf si quelqu’un est en danger. L’enseignant·e va alors chercher de l’aide et dit avant ce qu’il ou elle fait."
+              },
+              {
+                "titel": "Je passe",
+                "text": "« Je passe » est toujours permis, sans se justifier. Personne n’est obligé de raconter quelque chose de personnel."
+              },
+              {
+                "titel": "Rire",
+                "text": "On rit ensemble, pas les uns des autres."
+              },
+              {
+                "titel": "Pas de photos",
+                "text": "Pas de photos, de vidéos ni de captures d’écran pendant le cours. Les portables restent dans le sac, sauf si un exercice en a besoin."
+              },
+              {
+                "titel": "Les absents",
+                "text": "On ne parle pas des gens qui ne sont pas là."
+              },
+              {
+                "titel": "Personnages inventés",
+                "text": "Sur des thèmes comme l’amour, l’alcool ou les crises, personne ne raconte du vécu – on parle de personnages inventés."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Onze cartes de chapitre pour le chemin de l’année dans la salle de classe, une carte pour la mission de la semaine et six cartes de règles pour la charte de classe, s’il n’y en a plus de la 7e.",
+          "ablauf": [
+            "Photocopier une fois sur papier épais et découper ; accrocher les cartes de chapitre avant la première séance.",
+            "Séance 1, étape 4 : cartes de règles au tableau s’il n’y a plus d’ancienne charte ; vote avec le pouce.",
+            "Étape 8 : galerie, deux positionnements ; ensuite, les cartes restent au mur toute l’année."
+          ],
+          "hintergrund": "Un chemin de l’année visible rend les objectifs et leur ordre transparents – une caractéristique des programmes efficaces d’apprentissage socio-émotionnel (Durlak et al., 2011). Des règles que la classe examine elle-même sont mieux respectées que des règles imposées (Deci & Ryan, 2000).",
+          "quellen": [
+            "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          ],
+          "material": "Papier épais, ciseaux, adhésif"
+        }
+      }
+    }
+  ]
+}

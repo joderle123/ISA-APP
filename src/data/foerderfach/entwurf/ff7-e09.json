@@ -47,13 +47,14 @@
           "Gefühlskarten: fünf Sätze (Vorlage)",
           "Plakat (A1) für die Botschaften",
           "Kreide oder Marker in sechs Farben",
+          "Briefkasten, Rollenkarten, Klassenrat-Heft",
           "Schülerheft, Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
           "Fünf A3-Bögen in sechs Felder teilen und die Grundgefühle des Gefühlsrads hineinschreiben: fröhlich, stark, wütend, ängstlich, traurig, ruhig.",
           "Gefühlskarten (Seite 1 und 2) fünfmal auf festes Papier kopieren und mit der Schneidemaschine schneiden; ein Satz je Tischgruppe im Umschlag.",
           "Botschaften-Plakat vorbereiten: zwei Spalten wie in Schritt 4, links die sieben Gefühle.",
-          "Namen der Figuren prüfen: Heißt jemand in der Klasse so, den Namen tauschen."
+          "Namen der Figuren prüfen und, falls nötig, tauschen; ein Anliegen aus dem Briefkasten für Schritt 8 auswählen."
         ],
         "ablauf": [
           {
@@ -89,12 +90,12 @@
           {
             "min": "60–75",
             "phase": "aktiv",
-            "titel": "Gefühle-Pantomime in Tischgruppen"
+            "titel": "Pantomime und Gefühls-Detektive"
           },
           {
             "min": "75–85",
             "phase": "uebung",
-            "titel": "Gefühls-Detektive: Was braucht die Person?"
+            "titel": "Klassenrat: Rückblick und ein Anliegen"
           },
           {
             "min": "85–95",
@@ -226,39 +227,42 @@
             "blatt": "ff7-gefuehle-botschaften"
           },
           {
-            "titel": "Gefühle-Pantomime in Tischgruppen",
+            "titel": "Pantomime und Gefühls-Detektive",
             "dauer": 15,
             "phase": "aktiv",
-            "text": "Jede Tischgruppe bekommt ihren Umschlag; die Karten von Seite 1 liegen verdeckt als Stapel. Reihum zieht eine Person eine Karte und zeigt das Gefühl ohne Worte – zuerst zehn Sekunden als Statue, dann kurz in Bewegung. Die anderen raten und sagen, woran sie es erkannt haben: Gesicht, Schultern, Hände, Tempo (7 Min.). Dann kommen die Karten von Seite 2 dazu; die Erklärung auf der Karte hilft beim Spielen (4 Min.). Zum Schluss die Profistufe vor der Klasse: Zwei, drei Freiwillige zeigen eine Karte von Seite 2, alle raten (4 Min.).",
+            "text": "Pantomime (8 Min.): Jede Tischgruppe bekommt ihren Umschlag; die Karten von Seite 1 liegen verdeckt als Stapel. Reihum zieht eine Person eine Karte und zeigt das Gefühl ohne Worte – zuerst zehn Sekunden als Statue, dann kurz in Bewegung; die anderen raten und sagen, woran sie es erkannt haben. Nach fünf Minuten kommen die Karten von Seite 2 dazu. Gefühls-Detektive (7 Min.): Die Karten liegen offen auf dem Tisch. Die Lehrkraft liest eine Situation vor, die Gruppe einigt sich flüsternd in 20 Sekunden; auf drei hält eine Person die passende Karte hoch, eine andere nennt die Botschaft des Gefühls und was die Person jetzt bräuchte (vier Situationen). Zum Schluss die Kette an die Tafel schreiben – Gefühl, Botschaft, Was brauche ich? – und auf das Glas der Bedürfnisse zeigen: Oft ist ein Tank leer.",
             "sagen": [
               "Erst als Statue, dann in Bewegung – und kein einziges Wort.",
               "Woran habt ihr es erkannt: am Gesicht, an den Schultern, an den Händen?",
-              "Neid ohne Worte – das ist die Profistufe. Wer traut sich?"
-            ],
-            "tipp": "Die erste Karte selbst spielen und ruhig übertreiben; das senkt die Hemmschwelle. Wer nicht allein spielen möchte, spielt zu zweit; eine Karte darf man zurücklegen und eine neue ziehen. Für Jugendliche, die die Sprache noch lernen, ist die Pantomime eine Stärke: Hier zählt der Körper, nicht das Wort.",
-            "wennEsKippt": "Lacht jemand über eine Darstellung, kurz anhalten und an die Klassenvereinbarung erinnern: Wir lachen miteinander, nicht übereinander. Kippt eine Gruppe ins Alberne, ihr leise Gefühle zuteilen – Erleichterung, Zufriedenheit, Hoffnung. Wer nicht spielen will, übernimmt die Spielleitung: Karten mischen, die Zeit nehmen, die Profistufe ansagen.",
-            "blatt": "ff7-gefuehlskarten"
-          },
-          {
-            "titel": "Gefühls-Detektive: Was braucht die Person?",
-            "dauer": 10,
-            "phase": "uebung",
-            "text": "Die Gefühlskarten liegen offen auf den Tischen. Die Lehrkraft liest eine Situation vor, die Tischgruppe einigt sich flüsternd in 20 Sekunden. Auf „drei“ hält eine Person die passende Karte hoch, und eine andere nennt die Botschaft des Gefühls und das, was die Person jetzt bräuchte (sechs Situationen, 8 Min.). Mehr als eine Antwort ist erlaubt, wenn die Gruppe sie begründet. Zum Schluss den Zusammenhang als Kette an die Tafel schreiben – Gefühl, Botschaft, Was brauche ich? – und auf das Glas der Bedürfnisse zeigen: Oft ist ein Tank leer (2 Min.).",
-            "sagen": [
-              "20 Sekunden flüstern, auf drei hoch mit der Karte. Wer vorher ruft, zählt nicht.",
               "Was sagt das Gefühl – und was bräuchte die Person jetzt?"
             ],
             "punkte": [
               "Elias hat letzte Nacht nur vier Stunden geschlafen. In der ersten Stunde regt ihn jede Kleinigkeit auf.",
               "Zoés beste Freundin hat seit zwei Wochen nur noch Zeit für ihre neue Clique.",
               "Liam hat für seine Präsentation lange geübt. Am Ende klatscht die ganze Klasse.",
-              "Sofia fährt morgen zum ersten Mal allein mit dem Bus in die Stadt zum Training.",
-              "In Jangs Gruppe entscheiden immer die anderen, was gemacht wird. Er darf nie mitreden.",
-              "Nach zwei Wochen Ferien sieht Inês ihre Freundinnen endlich wieder."
+              "In Jangs Gruppe entscheiden immer die anderen, was gemacht wird. Er darf nie mitreden."
             ],
-            "tipp": "Gehen die Karten bei einer Situation weit auseinander, ist das ein Gewinn: Dieselbe Situation löst bei verschiedenen Menschen verschiedene Gefühle aus. Darauf kommt Einheit 12 zurück.",
-            "wennEsKippt": "Rufen alle durcheinander, streng beim Ablauf bleiben: flüstern, warten, auf drei zeigen. Schauen bei einer Situation alle zu einer Person aus der Klasse oder fällt ein Name, sofort stoppen: Wir reden über erfundene Leute. Erkennt sich jemand wieder, nach der Stunde kurz nachfragen.",
+            "tipp": "Die erste Karte selbst spielen und ruhig übertreiben; das senkt die Hemmschwelle. Wer nicht allein spielen möchte, spielt zu zweit; eine Karte darf man zurücklegen. Gehen die Karten bei einer Situation weit auseinander, ist das ein Gewinn: Dieselbe Situation löst verschiedene Gefühle aus – darauf kommt Einheit 12 zurück.",
+            "wennEsKippt": "Lacht jemand über eine Darstellung, kurz anhalten: Wir lachen miteinander, nicht übereinander. Wer nicht spielen will, übernimmt die Spielleitung – Karten mischen, Zeit nehmen. Rufen bei den Detektiven alle durcheinander, streng beim Ablauf bleiben: flüstern, warten, auf drei zeigen. Fällt ein Name aus der Klasse, sofort stoppen: Wir reden über erfundene Leute; erkennt sich jemand wieder, nach der Stunde kurz nachfragen.",
             "blatt": "ff7-gefuehlskarten"
+          },
+          {
+            "titel": "Klassenrat: Rückblick und ein Anliegen",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Von Jang überleiten: Im Klassenrat redet jede Person mit. Die vier Rollen aus Stunde 5 nehmen ihre Karten, die Lehrkraft setzt sich neben den Vorsitz; die Sitzung folgt dem Ablauf aus Stunde 5 (Liste). Eröffnung, Lob und Danke mit drei Stimmen, dann der Rückblick: Das Protokoll liest den letzten Beschluss vor, die Klasse zeigt mit dem Daumen, ob er funktioniert hat (3 Min.). Danach liest der Vorsitz ein Anliegen aus dem Briefkasten vor, das die Lehrkraft vorher ausgewählt hat; die Tischgruppen beraten eine Minute, Vorschläge kommen an die Tafel, abgestimmt wird mit geschlossenen Augen (5 Min.). Zum Schluss liest das Protokoll den Beschluss vor, und die Rollen für die nächste Sitzung in Stunde 19 werden verteilt (2 Min.).",
+            "sagen": [
+              "Der Klassenrat hat heute zehn Minuten. Wer den Vorsitz hat, liest einfach von der Karte ab."
+            ],
+            "punkte": [
+              "Eröffnung: Der Vorsitz begrüßt und nennt die Rollen.",
+              "Lob und Danke: Wer mag, sagt, was gut lief – drei Stimmen.",
+              "Rückblick: Was ist aus dem letzten Beschluss geworden?",
+              "Ein Anliegen: vorlesen, Vorschläge sammeln, abstimmen, festhalten.",
+              "Abschluss: Das Protokoll liest den Beschluss vor; die Rollen für das nächste Mal werden verteilt."
+            ],
+            "tipp": "Ein Anliegen reicht für zehn Minuten; weitere Zettel warten auf die nächste Sitzung. Was nach einer bestimmten Person klingt oder Sorge macht, kommt nicht in die Sitzung, sondern wird unter vier Augen und mit dem SePAS geklärt (Einheit 5).",
+            "wennEsKippt": "Wird das Anliegen zum Streit über eine Person, sofort stoppen: Der Klassenrat entscheidet nicht über Personen – das klären wir nach der Stunde. Reicht die Zeit nicht, wird nicht abgestimmt; das Anliegen kommt als Erstes in die nächste Sitzung. Liegt kein Anliegen im Briefkasten, stimmt die Klasse über eine der vorbereiteten Fragen aus Stunde 5 ab."
           },
           {
             "titel": "Skill: Farbsuche",
@@ -302,7 +306,7 @@
           "leichter": "Für Jugendliche, die mühsam lesen oder die Sprache noch lernen: Wörter in der eigenen Sprache erlauben und mit einer Gefühlskarte zeigen lassen; die sechs Botschaften vorab übersetzen (etwa mit einer Übersetzungs-App) und neben das Blatt legen; Aufgabe 2 mit den Karten legen; in Aufgabe 3 reicht ein Stichwort. Botschaften-Plakat und Wortspeicher bleiben sichtbar; ein Tandem mit einer Person derselben Sprache hilft.",
           "schwerer": "Überlegen, wann ein Gefühl übers Ziel hinausschießt – etwa große Angst vor einem harmlosen Referat – und was dann hilft. Oder für die Wörter vom Rand (Neid, Scham, Überraschung) eine eigene Botschaft formulieren und auf dem Plakat ergänzen."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit dem genaueren Wort (5 Min.), Gefühlswörter sammeln und sortieren (10 Min.), Ein Tag ohne … mit dem Botschaften-Plakat (15 Min.), Aufgaben 2 und 3 auf dem Blatt (8 Min.), Farbsuche (5 Min.), Skills-Pass und Blitzlicht (7 Min.). Pantomime und Gefühls-Detektive entfallen; die Pantomime passt als Bewegungspause in die nächste Stunde."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit dem genaueren Wort (5 Min.), Gefühlswörter sammeln und sortieren (10 Min.), Ein Tag ohne … mit dem Botschaften-Plakat (15 Min.), Aufgaben 2 und 3 auf dem Blatt (8 Min.), Farbsuche (5 Min.), Skills-Pass und Blitzlicht (7 Min.). Pantomime, Gefühls-Detektive und Klassenrat entfallen; die Pantomime passt als Bewegungspause in die nächste Stunde, die Sitzung wird nachgeholt, wo es passt."
       },
       "fr": {
         "titel": "Les émotions – à quoi servent-elles ?",
@@ -319,13 +323,14 @@
           "Cartes des émotions, cinq jeux",
           "Affiche (A1) pour les messages",
           "Craies ou feutres de six couleurs",
-          "Cahier de l’élève, tampon du Skills-Pass"
+          "Boîte, cartes de rôle, cahier du conseil",
+          "Cahier de l’élève, tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
-          "Partager cinq feuilles A3 en six cases et y écrire les émotions de base de la roue : joyeux, fort, en colère, anxieux, triste, calme.",
-          "Photocopier cinq fois les cartes des émotions (pages 1 et 2) sur papier épais et les couper au massicot ; un jeu par îlot dans une enveloppe.",
+          "Partager cinq feuilles A3 en six cases, une par émotion de base de la roue : joyeux, fort, en colère, anxieux, triste, calme.",
+          "Cartes des émotions (pages 1 et 2) : cinq copies sur papier épais, coupées au massicot, un jeu par îlot.",
           "Préparer l’affiche des messages : deux colonnes comme à l’étape 4, à gauche les sept émotions.",
-          "Vérifier les prénoms des personnages : si un jeune de la classe porte le même, le changer."
+          "Vérifier les prénoms des personnages et les changer si besoin ; choisir dans la boîte aux lettres un sujet pour l’étape 8."
         ],
         "ablauf": [
           {
@@ -361,12 +366,12 @@
           {
             "min": "60–75",
             "phase": "aktiv",
-            "titel": "Mime des émotions en îlots"
+            "titel": "Mime et détectives des émotions"
           },
           {
             "min": "75–85",
             "phase": "uebung",
-            "titel": "Détectives des émotions"
+            "titel": "Conseil de coopération : retour et un sujet"
           },
           {
             "min": "85–95",
@@ -498,39 +503,42 @@
             "blatt": "ff7-gefuehle-botschaften"
           },
           {
-            "titel": "Mime des émotions en îlots",
+            "titel": "Mime et détectives des émotions",
             "dauer": 15,
             "phase": "aktiv",
-            "text": "Chaque îlot reçoit son enveloppe ; les cartes de la page 1 forment une pile, face cachée. À tour de rôle, un jeune tire une carte et montre l’émotion sans un mot – d’abord dix secondes en statue, puis brièvement en mouvement. Les autres devinent et disent à quoi ils l’ont reconnue : le visage, les épaules, les mains, le rythme (7 min). Puis on ajoute les cartes de la page 2 ; l’explication sur la carte aide à jouer (4 min). Pour finir, niveau expert devant la classe : deux ou trois volontaires montrent une carte de la page 2, tout le monde devine (4 min).",
+            "text": "Mime (8 min) : chaque îlot reçoit son enveloppe ; les cartes de la page 1 forment une pile, face cachée. À tour de rôle, un jeune tire une carte et montre l’émotion sans un mot – d’abord dix secondes en statue, puis brièvement en mouvement ; les autres devinent et disent à quoi ils l’ont reconnue. Au bout de cinq minutes, on ajoute les cartes de la page 2. Détectives des émotions (7 min) : les cartes sont posées face visible. Lire une situation ; l’îlot se met d’accord à voix basse en 20 secondes. À « trois », un jeune lève la carte qui convient, et un autre dit le message de l’émotion et ce dont la personne aurait besoin maintenant (quatre situations). Pour finir, écrire la chaîne au tableau – émotion, message, de quoi ai-je besoin ? – et montrer le bocal des besoins : souvent, un réservoir est vide.",
             "sagen": [
               "D’abord en statue, puis en mouvement – et pas un seul mot.",
               "À quoi l’avez-vous reconnue : au visage, aux épaules, aux mains ?",
-              "L’envie sans un mot – c’est le niveau expert. Qui se lance ?"
-            ],
-            "tipp": "Jouer soi-même la première carte, en exagérant sans complexe : ça met tout le monde à l’aise. Qui ne veut pas jouer seul joue à deux ; on peut remettre une carte dans la pile et en tirer une autre. Pour les jeunes qui apprennent encore la langue, le mime est un atout : ici, c’est le corps qui parle, pas les mots.",
-            "wennEsKippt": "Si quelqu’un se moque d’un mime, arrêter un instant et rappeler la charte de classe : on rit ensemble, pas les uns des autres. Si un îlot part dans le n’importe quoi, lui donner des émotions calmes – soulagement, contentement, espoir. Qui ne veut pas jouer devient meneur de jeu : il mélange les cartes, prend le temps, annonce le niveau expert.",
-            "blatt": "ff7-gefuehlskarten"
-          },
-          {
-            "titel": "Détectives des émotions",
-            "dauer": 10,
-            "phase": "uebung",
-            "text": "Les cartes des émotions sont posées face visible sur les tables. Lire une situation ; l’îlot se met d’accord à voix basse en 20 secondes. À « trois », un jeune lève la carte qui convient, et un autre dit le message de l’émotion et ce dont la personne aurait besoin maintenant (six situations, 8 min). Plusieurs réponses sont possibles si le groupe les justifie. Pour finir, écrire le lien au tableau comme une chaîne – émotion, message, de quoi ai-je besoin ? – et montrer le bocal des besoins : souvent, un réservoir est vide (2 min).",
-            "sagen": [
-              "20 secondes à voix basse, à trois on lève la carte. Qui crie avant ne compte pas.",
               "Que dit l’émotion – et de quoi la personne aurait-elle besoin maintenant ?"
             ],
             "punkte": [
               "Elias n’a dormi que quatre heures la nuit dernière. Dès la première heure, la moindre broutille l’énerve.",
               "Depuis deux semaines, la meilleure amie de Zoé n’a plus de temps que pour sa nouvelle bande.",
               "Liam s’est longtemps entraîné pour sa présentation. À la fin, toute la classe applaudit.",
-              "Demain, Sofia prend pour la première fois le bus seule pour aller à son entraînement en ville.",
-              "Dans le groupe de Jang, ce sont toujours les autres qui décident. Lui n’a jamais son mot à dire.",
-              "Après deux semaines de vacances, Inês revoit enfin ses copines."
+              "Dans le groupe de Jang, ce sont toujours les autres qui décident. Lui n’a jamais son mot à dire."
             ],
-            "tipp": "Si les cartes levées divergent beaucoup pour une situation, tant mieux : la même situation provoque des émotions différentes selon les personnes. La séance 12 y revient.",
-            "wennEsKippt": "Si tout le monde crie en même temps, s’en tenir strictement au déroulement : chuchoter, attendre, montrer à trois. Si, pour une situation, tous les regards se tournent vers un jeune de la classe ou si un prénom tombe, arrêter tout de suite : on parle de personnages inventés. Si un jeune se reconnaît, lui demander brièvement après le cours.",
+            "tipp": "Jouer soi-même la première carte, en exagérant sans complexe : ça met tout le monde à l’aise. Qui ne veut pas jouer seul joue à deux ; on peut remettre une carte dans la pile. Si les cartes levées divergent beaucoup pour une situation, tant mieux : la même situation provoque des émotions différentes – la séance 12 y revient.",
+            "wennEsKippt": "Si quelqu’un se moque d’un mime, arrêter un instant : on rit ensemble, pas les uns des autres. Qui ne veut pas jouer devient meneur de jeu – il mélange les cartes, prend le temps. Si, chez les détectives, tout le monde crie en même temps, s’en tenir strictement au déroulement : chuchoter, attendre, montrer à trois. Si un prénom de la classe tombe, arrêter tout de suite : on parle de personnages inventés ; si un jeune se reconnaît, lui demander brièvement après le cours.",
             "blatt": "ff7-gefuehlskarten"
+          },
+          {
+            "titel": "Conseil de coopération : retour et un sujet",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Partir de Jang : au conseil, chacun a son mot à dire. Les quatre rôles répartis à la séance 5 prennent leurs cartes ; l’enseignant·e s’assoit à côté de la présidence, et la réunion suit le déroulement de la séance 5 (liste). Ouverture, félicitations et mercis avec trois voix, puis le retour : le secrétaire lit la dernière décision, la classe montre avec le pouce si elle a fonctionné (3 min). Ensuite, la présidence lit un sujet de la boîte aux lettres, choisi avant le cours ; les îlots se concertent une minute, les propositions vont au tableau, on vote les yeux fermés (5 min). Pour finir, le secrétaire lit la décision, et on répartit les rôles de la prochaine réunion, à la séance 19 (2 min).",
+            "sagen": [
+              "Le conseil a dix minutes aujourd’hui. Qui a la présidence lit simplement sa carte."
+            ],
+            "punkte": [
+              "Ouverture : la présidence accueille et présente les rôles.",
+              "Félicitations et mercis : qui veut dit ce qui s’est bien passé – trois voix.",
+              "Retour : qu’est devenue la dernière décision ?",
+              "Un sujet : lire, recueillir des propositions, voter, noter.",
+              "Clôture : le secrétaire lit la décision ; on répartit les rôles de la prochaine fois."
+            ],
+            "tipp": "Un sujet suffit pour dix minutes ; les autres billets attendent la réunion suivante. Ce qui vise une personne précise ou inquiète n’entre pas en réunion : on le règle en tête-à-tête et avec le SePAS (séance 5).",
+            "wennEsKippt": "Si le sujet tourne à la dispute sur une personne, arrêter tout de suite : le conseil ne décide pas des personnes – on en parle après le cours. Si le temps manque, on ne vote pas ; le sujet passe en premier à la réunion suivante. Si la boîte est vide, la classe vote sur l’une des questions préparées à la séance 5."
           },
           {
             "titel": "Skill : la chasse aux couleurs",
@@ -574,7 +582,7 @@
           "leichter": "Pour les jeunes qui lisent difficilement ou apprennent encore la langue : accepter des mots dans leur langue et les faire montrer avec une carte des émotions ; traduire à l’avance les six messages (par exemple avec une application de traduction) et les poser à côté de la fiche ; faire l’exercice 2 avec les cartes ; dans l’exercice 3, un mot-clé suffit. L’affiche des messages et les mots clés restent visibles ; un binôme avec un camarade de la même langue aide.",
           "schwerer": "Réfléchir à quand une émotion dépasse son but – par exemple une grande peur avant un exposé sans enjeu – et à ce qui aide alors. Ou formuler un message pour les mots de la marge (envie, honte, surprise) et le compléter sur l’affiche."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le mot plus précis (5 min), rassembler et ranger les mots (10 min), une journée sans… avec l’affiche des messages (15 min), exercices 2 et 3 de la fiche (8 min), chasse aux couleurs (5 min), Skills-Pass et tour éclair (7 min). Le mime et les détectives des émotions sont supprimés ; le mime peut servir de pause active à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le mot plus précis (5 min), rassembler et ranger les mots (10 min), une journée sans… avec l’affiche des messages (15 min), exercices 2 et 3 de la fiche (8 min), chasse aux couleurs (5 min), Skills-Pass et tour éclair (7 min). Le mime, les détectives des émotions et le conseil sont supprimés ; le mime peut servir de pause active à la séance suivante, et la réunion est rattrapée dès que possible."
       }
     }
   ],
@@ -1117,7 +1125,7 @@
           "ziel": "Ein Kartensatz für die Tischgruppen: Gefühle an Gesicht und Haltung erkennen, ohne Worte darstellen, ihre Botschaft finden und später zu gemischten Gefühlen kombinieren.",
           "ablauf": [
             "Seite 1 und 2 fünfmal auf festes Papier kopieren, ausschneiden, je Tischgruppe einen Umschlag füllen.",
-            "Einheit 9, Schritt 7: Pantomime, zuerst nur Seite 1; Schritt 8: Gefühls-Detektive mit offen liegenden Karten.",
+            "Einheit 9, Schritt 7: Pantomime, zuerst nur Seite 1, danach Gefühls-Detektive mit offen liegenden Karten.",
             "Einheit 12, Schritt 6: Gefühls-Mix – eine Karte von Seite 1 und eine von Seite 2 ziehen."
           ],
           "hintergrund": "Ekman (1992) beschreibt Grundgefühle, deren Gesichtsausdruck in vielen Kulturen verstanden wird. Wer Gefühle selbst darstellt und bei anderen erkennt, erweitert seinen Gefühlswortschatz – und ein genauer Wortschatz hilft, passender zu reagieren (Brackett, 2019).",
@@ -1265,7 +1273,7 @@
           "ziel": "Un jeu de cartes pour les îlots : reconnaître les émotions au visage et à la posture, les exprimer sans paroles, trouver leur message et, plus tard, les combiner en émotions mélangées.",
           "ablauf": [
             "Photocopier cinq fois les pages 1 et 2 sur papier épais, découper, remplir une enveloppe par îlot.",
-            "Séance 9, étape 7 : mime, d’abord seulement la page 1 ; étape 8 : détectives des émotions, cartes face visible.",
+            "Séance 9, étape 7 : mime, d’abord seulement la page 1, puis détectives des émotions, cartes face visible.",
             "Séance 12, étape 6 : émotions mélangées – tirer une carte de la page 1 et une de la page 2."
           ],
           "hintergrund": "Ekman (1992) décrit des émotions de base dont l’expression du visage est comprise dans de nombreuses cultures. Exprimer soi-même des émotions et les reconnaître chez les autres enrichit le vocabulaire émotionnel – et un vocabulaire précis aide à réagir de façon plus adaptée (Brackett, 2019).",

@@ -47,7 +47,7 @@
         ],
         "material": [
           "Gefühlsrad-Plakat, 20 Klebepunkte",
-          "Schülerheft, Stempel für den Pass",
+          "Schülerheft, Stempel für den Skills-Pass",
           "Themen- und Aufgabenkarten (Vorlage)",
           "Klebezettel, fünf Tüten (A–E)",
           "Kiste mit Tüchern und Mützen",
@@ -112,7 +112,7 @@
             "titel": "Check-in: Gefühl, Zahl und Lust auf Bühne",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige nennen ihr Wort (4 Min.). Dann eine zweite Frage, diesmal mit geschlossenen Augen oder dem Kopf auf dem Arm, damit niemand die Zahlen der anderen sieht: Wie viel Lust habt ihr heute auf Bühne, von 0 bis 10 Fingern? Die Zahlen nicht kommentieren, aber merken, wer wenig Lust zeigt – diesen Jugendlichen nachher zuerst Aufgaben hinter der Bühne anbieten (2 Min.). Zum Schluss sagen, dass eine Null genauso willkommen ist wie eine Zehn: Ein Stück braucht beides.",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige nennen ihr Wort (4 Min.). Danach die Ampel-Frage: Wer bei Gelb oder Rot ist, nimmt sich still einen Skill aus dem Ampelplan – alle atmen dazu dreimal lang aus, so muss sich niemand melden. Dann eine zweite Frage, diesmal mit geschlossenen Augen oder dem Kopf auf dem Arm, damit niemand die Zahlen der anderen sieht: Wie viel Lust habt ihr heute auf Bühne, von 0 bis 10 Fingern? Die Zahlen nicht kommentieren, aber merken, wer wenig Lust zeigt – diesen Jugendlichen nachher zuerst Aufgaben hinter der Bühne anbieten (2 Min.). Zum Schluss sagen, dass eine Null genauso willkommen ist wie eine Zehn: Ein Stück braucht beides.",
             "sagen": [
               "Gefühl und Zahl wie immer. Und jetzt mit geschlossenen Augen: Wie viel Lust habt ihr heute auf Bühne – null bis zehn Finger, auf drei.",
               "Eine Null ist völlig in Ordnung. Ein Stück braucht auch Leute für Regie, Geräusche und Technik."
@@ -124,7 +124,7 @@
             "titel": "Rückblick und Start ins letzte Kapitel",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Per Daumen nach der Wochen-Mission aus der Testphase fragen – hoch, Mitte, runter –, eine Stimme erzählt. Dann auf den Jahresweg zeigen: Die Klasse ist im letzten Kapitel angekommen, „Abschluss – Was nehme ich mit?“. Das Projekt in drei Sätzen erklären (Liste) und an die Tafel schreiben: heute Idee und Szenen, nächste Woche proben und zeigen.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Per Daumen nach der Wochen-Mission aus der Testphase fragen: Wer hat den ersten Termin aus dem Lernplan eingehalten oder Füße, Atem, Stift ausprobiert – hoch, Mitte, runter? Eine Stimme erzählt. Dann auf den Jahresweg zeigen: Die Klasse ist im letzten Kapitel angekommen, „Abschluss – Was nehme ich mit?“. Das Projekt in drei Sätzen erklären (Liste) und an die Tafel schreiben: heute Idee und Szenen, nächste Woche proben und zeigen.",
             "sagen": [
               "Ihr habt dieses Jahr eine Menge gelernt. In den nächsten zwei Stunden zeigt ihr es – nicht in einem Test, sondern auf der Bühne."
             ],
@@ -297,7 +297,7 @@
         ],
         "material": [
           "Roue des émotions, 20 gommettes",
-          "Cahier de l’élève, tampon",
+          "Cahier de l’élève, tampon pour le Skills-Pass",
           "Cartes thèmes et rôles (modèle)",
           "Post-it, cinq sacs (A à E)",
           "Caisse avec foulards et bonnets",
@@ -362,7 +362,7 @@
             "titel": "Tour d’humeur : émotion, chiffre et envie de scène",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires disent leur mot (4 min). Puis une deuxième question, cette fois les yeux fermés ou la tête posée sur les bras, pour que personne ne voie les chiffres des autres : quelle envie avez-vous de monter sur scène aujourd’hui, de 0 à 10 doigts ? Ne pas commenter les chiffres, mais retenir qui en montre peu – ces jeunes se verront proposer en premier un rôle en coulisses (2 min). Pour finir, dire qu’un zéro est aussi bienvenu qu’un dix : une pièce a besoin des deux.",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires disent leur mot (4 min). Ensuite, la question du feu : qui est dans l’orange ou dans le rouge prend en silence un skill de son plan feu tricolore – tout le monde expire trois fois longuement, ainsi personne n’a à se signaler. Puis une deuxième question, cette fois les yeux fermés ou la tête posée sur les bras, pour que personne ne voie les chiffres des autres : quelle envie avez-vous de monter sur scène aujourd’hui, de 0 à 10 doigts ? Ne pas commenter les chiffres, mais retenir qui en montre peu – ces jeunes se verront proposer en premier un rôle en coulisses (2 min). Pour finir, dire qu’un zéro est aussi bienvenu qu’un dix : une pièce a besoin des deux.",
             "sagen": [
               "L’émotion et le chiffre, comme d’habitude. Et maintenant, les yeux fermés : quelle envie avez-vous de monter sur scène aujourd’hui – de zéro à dix doigts, à trois.",
               "Un zéro, c’est tout à fait d’accord. Une pièce a aussi besoin de monde pour la mise en scène, les bruitages et la technique."
@@ -374,7 +374,7 @@
             "titel": "Retour sur la séance et dernier chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Demander avec le pouce où en est la mission de la semaine sur les devoirs en classe – en haut, au milieu, en bas –, une voix raconte. Puis montrer le chemin de l’année : la classe est arrivée au dernier chapitre, « Bilan – qu’est-ce que j’emporte ? ». Expliquer le projet en trois phrases (liste) et l’écrire au tableau : aujourd’hui, l’idée et les scènes ; la semaine prochaine, répéter et présenter.",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission sur les devoirs en classe, vote du pouce : qui a tenu la première séance de son plan de révision ou essayé pieds, souffle, stylo – en haut, au milieu, en bas ? Une voix raconte. Puis montrer le chemin de l’année : la classe est arrivée au dernier chapitre, « Bilan – qu’est-ce que j’emporte ? ». Expliquer le projet en trois phrases (liste) et l’écrire au tableau : aujourd’hui, l’idée et les scènes ; la semaine prochaine, répéter et présenter.",
             "sagen": [
               "Vous avez appris beaucoup de choses cette année. Pendant les deux prochaines séances, vous allez le montrer – pas dans un devoir en classe, mais sur scène."
             ],

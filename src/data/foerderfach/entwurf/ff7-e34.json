@@ -43,7 +43,7 @@
         ],
         "material": [
           "Gefühlsrad-Plakat, 20 Klebepunkte",
-          "Schülerheft, Stempel für den Pass",
+          "Schülerheft, Stempel für den Skills-Pass",
           "Tüten der Gruppen mit ihren Karten",
           "Kiste mit Tüchern und Mützen",
           "Tablet der Schule (Video-Gruppe)",
@@ -109,7 +109,7 @@
             "titel": "Check-in: Gefühl und Lampenfieber-Zahl",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Dann zeigen alle auf drei ihre Anspannung mit den Fingern, heute mit der Frage: Wie hoch ist eure Zahl, wenn ihr an das Zeigen nachher denkt? Die Lehrkraft beginnt ehrlich mit ihrer eigenen Lampenfieber-Zahl, zwei, drei Freiwillige nennen Gefühl und Zahl (4 Min.). Erklären: Etwas Aufregung macht wach und hilft beim Spielen; der Satz „Mein Körper macht sich bereit“ steht schon an der Tafel. Zum Schluss klärt jede Tischgruppe: Wer fehlt heute, wer springt ein (3 Min.)?",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Dann zeigen alle auf drei ihre Anspannung mit den Fingern, heute mit der Frage: Wie hoch ist eure Zahl, wenn ihr an das Zeigen nachher denkt? Die Lehrkraft beginnt ehrlich mit ihrer eigenen Lampenfieber-Zahl, zwei, drei Freiwillige nennen Gefühl und Zahl (4 Min.). Erklären: Etwas Aufregung macht wach und hilft beim Spielen; der Satz „Mein Körper macht sich bereit“ steht schon an der Tafel. Dann die Ampel-Frage: Wer bei Gelb oder Rot ist, sagt sich still diesen Satz – alle atmen dazu dreimal lang aus, so muss sich niemand melden. Zum Schluss klärt jede Tischgruppe: Wer fehlt heute, wer springt ein (3 Min.)?",
             "sagen": [
               "Wenn ihr an das Zeigen nachher denkt – wie hoch ist eure Zahl? Auf drei.",
               "Aufregung heißt nicht, dass es schiefgeht. Sie ist Energie – die nutzen wir gleich."
@@ -270,7 +270,7 @@
         ],
         "material": [
           "Roue des émotions, 20 gommettes",
-          "Cahier de l’élève, tampon",
+          "Cahier de l’élève, tampon pour le Skills-Pass",
           "Sacs des îlots avec leurs cartes",
           "Caisse avec foulards et bonnets",
           "Tablette de l’école (îlot vidéo)",
@@ -336,7 +336,7 @@
             "titel": "Tour d’humeur : émotion et chiffre du trac",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Puis, à trois, tout le monde montre sa tension avec les doigts, avec aujourd’hui cette question : quel est votre chiffre quand vous pensez à la présentation de tout à l’heure ? L’enseignant·e commence honnêtement avec son propre chiffre du trac, deux ou trois volontaires disent leur émotion et leur chiffre (4 min). Expliquer : un peu de trac réveille et aide à jouer ; la phrase « Mon corps se prépare » est déjà au tableau. Pour finir, chaque îlot vérifie : qui manque aujourd’hui, qui le remplace (3 min) ?",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Puis, à trois, tout le monde montre sa tension avec les doigts, avec aujourd’hui cette question : quel est votre chiffre quand vous pensez à la présentation de tout à l’heure ? L’enseignant·e commence honnêtement avec son propre chiffre du trac, deux ou trois volontaires disent leur émotion et leur chiffre (4 min). Expliquer : un peu de trac réveille et aide à jouer ; la phrase « Mon corps se prépare » est déjà au tableau. Puis la question du feu : qui est dans l’orange ou dans le rouge se dit en silence cette phrase – tout le monde expire trois fois longuement, ainsi personne n’a à se signaler. Pour finir, chaque îlot vérifie : qui manque aujourd’hui, qui le remplace (3 min) ?",
             "sagen": [
               "Quand vous pensez à la présentation de tout à l’heure – quel est votre chiffre ? À trois.",
               "Le trac ne veut pas dire que ça va rater. C’est de l’énergie – on va s’en servir."

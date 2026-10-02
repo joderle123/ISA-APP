@@ -43,7 +43,7 @@
           "wählen einen sicheren Ort, einen Gegenstand oder ein Bild und rufen ihn mit einem Stichwort auf"
         ],
         "material": [
-          "Gefühlsrad, Skala 0–100, 40 Klebepunkte",
+          "Gefühlsrad, Anspannungsskala, 40 Klebepunkte",
           "Klangschale oder anderes Ruhesignal",
           "Schülerheft mit Skills-Tester",
           "Kiste: glatte Steine, Knetbälle, Postkarten",
@@ -109,7 +109,7 @@
             "titel": "Check-in: erst still spüren, dann zeigen",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person wie gewohnt ihre zwei Punkte auf Gefühlsrad und Anspannungsskala (2 Min.); der Punkt auf der Skala ist heute die Zahl vorher. Wenn alle sitzen, eine halbe Minute Stille: Die Lehrkraft macht die Haltung vor – beide Füße auf dem Boden, Blick auf den Tisch oder Augen zu, nur bemerken, welches Gefühl und welche Zahl gerade da sind; ein Ton der Klangschale beendet die Stille (1 Min.). Dann zeigen alle auf drei ihre Zahl jetzt mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige nennen ihr Wort (5 Min.). Zum Schluss per Daumen: Ist eure Zahl jetzt anders als euer Punkt auf der Skala (2 Min.)? Die halbe Minute war schon die erste Übung der Stunde.",
+            "text": "Beim Hereinkommen klebt jede Person heute zwei Punkte – wie gewohnt einen auf das Gefühlsrad, dazu einen auf das Plakat der Anspannungsskala (2 Min.); dieser zweite Punkt ist die Zahl vorher. Wenn alle sitzen, eine halbe Minute Stille: Die Lehrkraft macht die Haltung vor – beide Füße auf dem Boden, Blick auf den Tisch oder Augen zu, nur bemerken, welches Gefühl und welche Zahl gerade da sind; ein Ton der Klangschale beendet die Stille (1 Min.). Dann zeigen alle auf drei ihre Zahl jetzt mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige nennen ihr Wort (5 Min.). Zum Schluss per Daumen: Ist eure Zahl jetzt anders als euer Punkt auf der Skala (2 Min.)? Die halbe Minute war schon die erste Übung der Stunde.",
             "sagen": [
               "Eine halbe Minute nur bemerken: Welches Gefühl ist da, welche Zahl? Ihr müsst nichts ändern.",
               "Auf drei zeigt ihr eure Zahl. Ich fange an: ruhig, ein bisschen müde – 30."
@@ -121,7 +121,7 @@
             "titel": "Rückblick, Wochen-Mission und Thema",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission per Daumen fragen: Wer hat 3-3-3 oder einen Song von seiner Liste ausprobiert, als die Zahl über 50 stieg? Eine Stimme erzählt Zahl vorher und nachher. Dann auf die Anspannungsskala zeigen: Körper- und Sinnes-Skills wirken auch bei Rot. Heute kommt der Kopf dazu – Gedanken bemerken, ohne ihnen zu folgen, und Kopf-Skills für Gelb. Das Thema an die Tafel schreiben und den Skills-Tester bei „Stunde 16“ aufschlagen lassen; die Kurznamen der heutigen Skills stehen an der Tafel: Schiffchen, Zählen, Fünferliste, Freund, Ort.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission per Daumen fragen: Wer hat 3-3-3 oder einen Song von seiner Liste ausprobiert? Eine Stimme erzählt Zahl vorher und nachher. Dann auf die Anspannungsskala zeigen: Körper- und Sinnes-Skills wirken auch bei Rot. Heute kommt der Kopf dazu – Gedanken bemerken, ohne ihnen zu folgen, und Kopf-Skills für Gelb. Das Thema an die Tafel schreiben und den Skills-Tester bei „Stunde 16“ aufschlagen lassen; die Kurznamen der heutigen Skills stehen an der Tafel: Schiffchen, Zählen, Fünferliste, Freund, Ort.",
             "sagen": [
               "Körper und Sinne sind eure Notbremse. Heute trainiert ihr den Kopf – für Momente, in denen er noch mitspielt."
             ],
@@ -281,7 +281,7 @@
           "choisissent un lieu sûr, un objet ou une image et le retrouvent grâce à un mot-clé"
         ],
         "material": [
-          "Roue, échelle 0–100, 40 gommettes",
+          "Roue, échelle de tension, 40 gommettes",
           "Bol chantant ou autre signal calme",
           "Cahier de l’élève, testeur de skills",
           "Boîte : galets, balles, cartes postales",
@@ -347,7 +347,7 @@
             "titel": "Tour d’humeur : d’abord sentir, puis montrer",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle comme d’habitude ses deux gommettes sur la roue des émotions et sur l’échelle de tension (2 min) ; la gommette sur l’échelle est aujourd’hui le chiffre avant. Une fois tout le monde assis, une demi-minute de silence : l’enseignant·e montre la posture – les deux pieds au sol, le regard sur la table ou les yeux fermés, juste remarquer quelle émotion et quel chiffre sont là ; un son du bol chantant termine le silence (1 min). Puis, à trois, tout le monde montre son chiffre actuel avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires disent leur mot (5 min). Pour finir, vote du pouce : votre chiffre est-il différent de votre gommette sur l’échelle (2 min) ? Cette demi-minute était déjà le premier exercice de la séance.",
+            "text": "En entrant, chaque jeune colle aujourd’hui deux gommettes – comme d’habitude une sur la roue des émotions, et une sur l’affiche de l’échelle de tension (2 min) ; cette seconde gommette est le chiffre avant. Une fois tout le monde assis, une demi-minute de silence : l’enseignant·e montre la posture – les deux pieds au sol, le regard sur la table ou les yeux fermés, juste remarquer quelle émotion et quel chiffre sont là ; un son du bol chantant termine le silence (1 min). Puis, à trois, tout le monde montre son chiffre actuel avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires disent leur mot (5 min). Pour finir, vote du pouce : votre chiffre est-il différent de votre gommette sur l’échelle (2 min) ? Cette demi-minute était déjà le premier exercice de la séance.",
             "sagen": [
               "Une demi-minute juste pour remarquer : quelle émotion est là, quel chiffre ? Vous n’avez rien à changer.",
               "À trois, vous montrez votre chiffre. Je commence : plutôt calme, un peu de fatigue – 30."
@@ -359,7 +359,7 @@
             "titel": "Retour, mission de la semaine et thème",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Pour la mission de la semaine, vote du pouce : qui a essayé le 3-3-3 ou une chanson de sa liste quand son chiffre dépassait 50 ? Une voix raconte son chiffre avant et après. Puis montrer l’échelle de tension : les skills du corps et des sens agissent même dans le rouge. Aujourd’hui, on ajoute la tête – remarquer ses pensées sans les suivre, et des skills mentaux pour l’orange. Écrire le thème au tableau et faire ouvrir le testeur de skills à « séance 16 » ; les noms courts des skills du jour sont au tableau : bateau, compter, liste de cinq, ami, lieu.",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Pour la mission de la semaine, vote du pouce : qui a essayé le 3-3-3 ou une chanson de sa liste ? Une voix raconte son chiffre avant et après. Puis montrer l’échelle de tension : les skills du corps et des sens agissent même dans le rouge. Aujourd’hui, on ajoute la tête – remarquer ses pensées sans les suivre, et des skills mentaux pour l’orange. Écrire le thème au tableau et faire ouvrir le testeur de skills à « séance 16 » ; les noms courts des skills du jour sont au tableau : bateau, compter, liste de cinq, ami, lieu.",
             "sagen": [
               "Le corps et les sens, c’est votre frein d’urgence. Aujourd’hui, vous entraînez la tête – pour les moments où elle suit encore."
             ],

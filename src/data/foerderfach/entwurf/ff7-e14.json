@@ -43,7 +43,7 @@
           "wählen einen Lieblings-Skill und legen fest, bis zu welcher Zahl er hilft"
         ],
         "material": [
-          "Schülerheft, Stempel für den Pass",
+          "Schülerheft, Stempel für den Skills-Pass",
           "Gefühlsrad-Plakat, 20 Klebepunkte",
           "Plakat Anspannungsskala",
           "Eine Feder je Person, ein Becher",
@@ -287,7 +287,7 @@
           "choisissent leur skill préféré et précisent jusqu’à quel chiffre il aide"
         ],
         "material": [
-          "Cahier de l’élève, tampon",
+          "Cahier de l’élève, tampon pour le Skills-Pass",
           "Roue des émotions, 20 gommettes",
           "Affiche de l’échelle de tension",
           "Une plume par jeune, un gobelet",
@@ -305,7 +305,7 @@
           {
             "min": "0–10",
             "phase": "ankommen",
-            "titel": "Tour d’humeur : émotion, chiffre et scan du corps"
+            "titel": "Tour d’humeur : émotion, chiffre et tour du corps"
           },
           {
             "min": "10–15",
@@ -350,16 +350,16 @@
         ],
         "schritte": [
           {
-            "titel": "Tour d’humeur : émotion, chiffre et scan du corps",
+            "titel": "Tour d’humeur : émotion, chiffre et tour du corps",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions (2 min). Une fois tout le monde assis, à trois, chacun montre son chiffre avec les doigts ; qui ne veut pas le montrer pose la main à plat sur la table (1 min). Puis un scan du corps, assis, les yeux ouverts ou posés sur la table : sentir pendant 30 secondes de haut en bas. Ensuite, nommer l’une après l’autre ces zones – front, mâchoire, nuque et épaules, ventre, mains, jambes – en les montrant sur soi ; qui sent son chiffre à cet endroit lève brièvement la main (4 min). Pour finir, deux ou trois volontaires disent un mot, par exemple serré, chaud ou ça picote (3 min).",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions (2 min). Une fois tout le monde assis, à trois, chacun montre son chiffre avec les doigts ; qui ne veut pas le montrer pose la main à plat sur la table (1 min). Puis un tour du corps, assis, les yeux ouverts ou posés sur la table : sentir pendant 30 secondes de haut en bas. Ensuite, nommer l’une après l’autre ces zones – front, mâchoire, nuque et épaules, ventre, mains, jambes – en les montrant sur soi ; qui sent son chiffre à cet endroit lève brièvement la main (4 min). Pour finir, deux ou trois volontaires disent un mot, par exemple serré, chaud ou ça picote (3 min).",
             "sagen": [
               "L’émotion, le chiffre – et où se trouve ce chiffre dans votre corps, là ? Levez la main quand je nomme l’endroit.",
               "Moi, je suis à 35, et je le sens dans la nuque."
             ],
             "tipp": "Sentir son propre corps est difficile pour beaucoup, et c’est justement ce qu’on travaille aujourd’hui. « Nulle part » ou « je ne sais pas » est donc une bonne réponse, pas un refus.",
-            "wennEsKippt": "Si des blagues fusent sur des parties du corps, rester détendu, ne pas relever et passer à la zone suivante – c’est justement pour ça que l’enseignant·e nomme les zones. Si la classe est agitée, réduire le scan à trois zones : la tête, le ventre, les mains."
+            "wennEsKippt": "Si des blagues fusent sur des parties du corps, rester détendu, ne pas relever et passer à la zone suivante – c’est justement pour ça que l’enseignant·e nomme les zones. Si la classe est agitée, réduire le tour du corps à trois zones : la tête, le ventre, les mains."
           },
           {
             "titel": "Retour : la mission et « d’abord redescendre »",

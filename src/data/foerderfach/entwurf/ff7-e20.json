@@ -42,7 +42,7 @@
           "erkennen, wenn es jemand anderem zu nah wird, und nennen, was dann hilft"
         ],
         "material": [
-          "Schülerheft, Stempel für den Pass",
+          "Schülerheft, Stempel für den Skills-Pass",
           "Gefühlsrad-Plakat, 20 Klebepunkte",
           "Grenz-Karten, ein Satz je Gruppe",
           "Malerkrepp oder Taschen als Markierung",
@@ -107,7 +107,7 @@
             "titel": "Check-in: Gefühl, Zahl – und wo im Körper?",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100). Heute nennen drei, vier Freiwillige zu Wort und Zahl auch die Stelle im Körper, an der sie das Gefühl spüren, etwa: müde, in den Augen, 20. Die Lehrkraft beginnt und schreibt die genannten Körperstellen an den Tafelrand – Bauch, Brust, Schultern, Kopf –, ohne Namen. Wer keine Stelle findet, sagt das; auch das ist eine Auskunft.",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100). Dann die Ampel-Frage: Wer bei Gelb oder Rot ist, nimmt sich still einen Skill aus dem Ampelplan – alle atmen dazu dreimal lang aus, so muss sich niemand melden. Heute nennen drei, vier Freiwillige zu Wort und Zahl auch die Stelle im Körper, an der sie das Gefühl spüren, etwa: müde, in den Augen, 20. Die Lehrkraft beginnt und schreibt die genannten Körperstellen an den Tafelrand – Bauch, Brust, Schultern, Kopf –, ohne Namen. Wer keine Stelle findet, sagt das; auch das ist eine Auskunft.",
             "sagen": [
               "Wo sitzt euer Gefühl gerade – im Bauch, in der Brust, in den Schultern, im Kopf? Heute ist das wichtig, ihr werdet gleich sehen, warum."
             ],
@@ -287,7 +287,7 @@
             "titel": "Skill: Körper-Check",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: Der Körper meldet oft zuerst, dass etwas zu nah oder zu viel ist – noch bevor man es denkt. Alle sitzen bequem, die Füße am Boden, die Augen offen oder geschlossen. Die drei Schritte langsam anleiten (Liste) und selbst mitmachen; insgesamt etwa drei Minuten. Danach zwei, drei Rückmeldungen: Wo habt ihr etwas gespürt? Zum Schluss fragen, wann der Körper-Check helfen könnte – im Bus, vor einem Gespräch, wenn jemand näherkommt – und erklären: Wer seine Signale früh bemerkt, hat mehr Zeit zu reagieren.",
+            "text": "Ankündigen: Den Körper-Check kennt ihr aus Stunde 11 – heute mit einer neuen Frage. Der Körper meldet oft zuerst, dass etwas zu nah oder zu viel ist, noch bevor man es denkt. Alle sitzen bequem, die Füße am Boden, die Augen offen oder geschlossen. Die drei Schritte langsam anleiten (Liste) und selbst mitmachen; insgesamt etwa drei Minuten. Danach zwei, drei Rückmeldungen: Wo habt ihr etwas gespürt? Zum Schluss fragen, wann der Körper-Check helfen könnte – im Bus, vor einem Gespräch, wenn jemand näherkommt – und erklären: Wer seine Signale früh bemerkt, hat mehr Zeit zu reagieren.",
             "sagen": [
               "Ihr müsst nichts ändern. Nur bemerken, was da ist.",
               "Wo war es eng, wo war es locker? Wer mag, sagt eine Stelle."
@@ -336,7 +336,7 @@
           "repèrent quand c’est trop près pour quelqu’un d’autre et disent ce qui aide alors"
         ],
         "material": [
-          "Cahiers, tampon pour le Skills-Pass",
+          "Cahier de l’élève, tampon pour le Skills-Pass",
           "Roue des émotions, 20 gommettes",
           "Cartes limites, un jeu par îlot",
           "Ruban de masquage ou sacs pour marquer",
@@ -388,7 +388,7 @@
           {
             "min": "85–95",
             "phase": "skill",
-            "titel": "Skill : le scan du corps"
+            "titel": "Skill : le tour du corps"
           },
           {
             "min": "95–100",
@@ -401,7 +401,7 @@
             "titel": "Tour d’humeur : émotion, chiffre – et où dans le corps ?",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Une fois tout le monde assis, chacun montre sa tension avec les doigts, à « trois » (0 à 10 doigts pour 0 à 100). Aujourd’hui, trois ou quatre volontaires disent, en plus du mot et du chiffre, l’endroit du corps où ils sentent l’émotion, par exemple : fatigué, dans les yeux, 20. Commencer soi-même et noter en marge du tableau les endroits nommés – ventre, poitrine, épaules, tête –, sans prénom. Qui ne trouve pas d’endroit le dit ; c’est aussi une information.",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Une fois tout le monde assis, chacun montre sa tension avec les doigts, à « trois » (0 à 10 doigts pour 0 à 100). Puis la question du feu : qui est dans l’orange ou dans le rouge prend en silence un skill de son plan feu tricolore – tout le monde expire trois fois longuement, ainsi personne n’a à se signaler. Aujourd’hui, trois ou quatre volontaires disent, en plus du mot et du chiffre, l’endroit du corps où ils sentent l’émotion, par exemple : fatigué, dans les yeux, 20. Commencer soi-même et noter en marge du tableau les endroits nommés – ventre, poitrine, épaules, tête –, sans prénom. Qui ne trouve pas d’endroit le dit ; c’est aussi une information.",
             "sagen": [
               "Où se trouve votre émotion en ce moment – dans le ventre, la poitrine, les épaules, la tête ? Aujourd’hui, c’est important, vous allez vite comprendre pourquoi."
             ],
@@ -578,10 +578,10 @@
             "blatt": "ff7-meine-grenzen"
           },
           {
-            "titel": "Skill : le scan du corps",
+            "titel": "Skill : le tour du corps",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : le corps signale souvent en premier que quelque chose est trop près ou de trop – avant même qu’on y pense. Tout le monde s’assoit confortablement, les pieds au sol, les yeux ouverts ou fermés. Guider lentement les trois étapes (liste) et faire l’exercice soi-même ; en tout, environ trois minutes. Ensuite, deux ou trois retours : où avez-vous senti quelque chose ? Pour finir, demander quand le scan du corps pourrait aider – dans le bus, avant une discussion, quand quelqu’un s’approche – et expliquer : qui remarque tôt ses signaux a plus de temps pour réagir.",
+            "text": "Annoncer : vous connaissez le tour du corps depuis la séance 11 – aujourd’hui, avec une nouvelle question. Le corps signale souvent en premier que quelque chose est trop près ou de trop, avant même qu’on y pense. Tout le monde s’assoit confortablement, les pieds au sol, les yeux ouverts ou fermés. Guider lentement les trois étapes (liste) et faire l’exercice soi-même ; en tout, environ trois minutes. Ensuite, deux ou trois retours : où avez-vous senti quelque chose ? Pour finir, demander quand le tour du corps pourrait aider – dans le bus, avant une discussion, quand quelqu’un s’approche – et expliquer : qui remarque tôt ses signaux a plus de temps pour réagir.",
             "sagen": [
               "Vous n’avez rien à changer. Seulement remarquer ce qui est là.",
               "Où c’était serré, où c’était détendu ? Qui veut dit un endroit."
@@ -591,7 +591,7 @@
               "Promène ton attention de la tête aux épaules, à la poitrine et jusqu’au ventre : où est-ce serré, chaud ou dur – où est-ce détendu ?",
               "Pose une main là où c’est serré, expire deux fois lentement et estime ton chiffre."
             ],
-            "tipp": "Relier le scan du corps au plan feu tricolore de la valise à skills : qui remarque ses signaux à l’orange peut encore parler, partir ou aller chercher de l’aide.",
+            "tipp": "Relier le tour du corps au plan feu tricolore de la valise à skills : qui remarque ses signaux à l’orange peut encore parler, partir ou aller chercher de l’aide.",
             "wennEsKippt": "Si un jeune semble bouleversé pendant l’exercice, lui proposer discrètement d’ouvrir les yeux et de bien poser les pieds au sol ; lui parler brièvement après le cours. Si des rires fusent, continuer calmement – personne n’est obligé de fermer les yeux."
           },
           {
@@ -607,7 +607,7 @@
         ],
         "bruecke": "La semaine prochaine, vous vous entraînerez à montrer une limite pour qu’elle soit comprise : avec un stop clair – avec les mots, avec le corps, ou en partant pour aller chercher de l’aide.",
         "mission": "Cette semaine, remarque une fois quand ton corps te dit « trop près » ou « trop » – dans le bus, à la récré ou en ligne. Tu observes, c’est tout.",
-        "hintergrund": "Les limites protègent ce qui appartient à une personne : son corps et son espace, ses émotions et sa vie privée – et de plus en plus ses photos, ses messages et ses données. Hall (1966) a observé aux États-Unis des zones de distance que les gens respectent selon la relation : intime jusqu’à environ 45 cm, personnelle jusqu’à environ 1,2 m, sociale jusqu’à environ 3,6 m, publique au-delà. Ces valeurs varient selon la culture, la situation et l’humeur ; il n’y a pas de bonne distance, seulement celle qui convient à la personne. Souvent, c’est le corps qui signale en premier qu’une limite est atteinte : les émotions s’accompagnent de sensations corporelles typiques (Nummenmaa et al., 2014). Craig (2002) appelle intéroception ce sens des signaux internes ; le scan du corps y dirige l’attention. Qui connaît ses signaux peut réagir plus tôt – et qui lit les signes des autres peut s’arrêter ou demander avant qu’un conflit n’éclate.",
+        "hintergrund": "Les limites protègent ce qui appartient à une personne : son corps et son espace, ses émotions et sa vie privée – et de plus en plus ses photos, ses messages et ses données. Hall (1966) a observé aux États-Unis des zones de distance que les gens respectent selon la relation : intime jusqu’à environ 45 cm, personnelle jusqu’à environ 1,2 m, sociale jusqu’à environ 3,6 m, publique au-delà. Ces valeurs varient selon la culture, la situation et l’humeur ; il n’y a pas de bonne distance, seulement celle qui convient à la personne. Souvent, c’est le corps qui signale en premier qu’une limite est atteinte : les émotions s’accompagnent de sensations corporelles typiques (Nummenmaa et al., 2014). Craig (2002) appelle intéroception ce sens des signaux internes ; le tour du corps y dirige l’attention. Qui connaît ses signaux peut réagir plus tôt – et qui lit les signes des autres peut s’arrêter ou demander avant qu’un conflit n’éclate.",
         "quellen": [
           "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday.",
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
@@ -618,7 +618,7 @@
           "leichter": "Un jeune qui lit bien lit les cartes limites à son îlot ; les trois titres ont une image. Pour la distance « stop », les jeunes qui apprennent encore la langue de la classe prennent volontiers la mesure – compter des pieds marche dans toutes les langues. Sur la fiche, des mots-clés suffisent : à l’exercice 3, on coche seulement ; à l’exercice 4, un mot par couleur suffit.",
           "schwerer": "Pour trois cartes de la pile « ça dépend », écrire de quoi ça dépend : de qui, de quelle façon, de quand – ou écrire une situation sur une carte vierge. À l’étape 7, inventer une scène où quelqu’un montre une limite sans mots, et la faire lire par un autre îlot."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec l’endroit du corps (5 min), c’est quoi, une limite ? avec le tableau (7 min), trier les cartes limites avec le tour du pouce (13 min), distance « stop » devant la classe sur une piste, avec quatre ou cinq volontaires et l’arrivée vide (12 min), lire les limites des autres avec trois scènes (8 min), Skills-Pass et mission de la semaine (5 min). Le scan du corps et les exercices 3 et 4 de la fiche passent à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec l’endroit du corps (5 min), c’est quoi, une limite ? avec le tableau (7 min), trier les cartes limites avec le tour du pouce (13 min), distance « stop » devant la classe sur une piste, avec quatre ou cinq volontaires et l’arrivée vide (12 min), lire les limites des autres avec trois scènes (8 min), Skills-Pass et mission de la semaine (5 min). Le tour du corps et les exercices 3 et 4 de la fiche passent à la séance suivante."
       }
     }
   ],

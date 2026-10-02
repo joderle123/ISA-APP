@@ -1,0 +1,946 @@
+{
+  "einheiten": [
+    {
+      "id": "ff6-e02",
+      "klasse": "6e",
+      "dauer": 100,
+      "blaetter": [
+        "ff6-olympia-pass",
+        "ff-skills-kompass"
+      ],
+      "vorlagen": [
+        "ff6-olympiade-stationen"
+      ],
+      "woerter": [
+        {
+          "de": "die Anspannungsskala",
+          "fr": "l’échelle de tension (f.)"
+        },
+        {
+          "de": "die Disziplin",
+          "fr": "l’épreuve (f.)"
+        },
+        {
+          "de": "die Station",
+          "fr": "l’atelier (m.)"
+        },
+        {
+          "de": "auffrischen",
+          "fr": "rafraîchir"
+        },
+        {
+          "de": "erklären",
+          "fr": "expliquer"
+        },
+        {
+          "de": "die Medaille",
+          "fr": "la médaille"
+        }
+      ],
+      "de": {
+        "titel": "Die Skills-Olympiade",
+        "kurz": "Fünf Stationen mit Skills aus der 7e – Atem, Sinne, Kopf, Stopp, Ich-Botschaft –, Medaillen für sich statt Punkte gegen andere, und das erste Feld im Skills-Kompass.",
+        "ziele": [
+          "schätzen ihre Anspannung an der Linie ein und erklären, welche Art von Skill bei Grün, Gelb und Rot noch hilft",
+          "frischen fünf Skills aus der 7e an Stationen auf und erklären einen davon so, dass eine neue Person ihn vormachen kann",
+          "wählen ihren Joker-Skill, testen ihn mit Zahl vorher und nachher und tragen ihn als ersten Eintrag in den Skills-Kompass ein"
+        ],
+        "material": [
+          "Schülerheft, Stempel",
+          "Plakate Gefühlsrad und Skala, Punkte",
+          "Kreppband-Linie, Karten 0/30/70/100",
+          "Stationskarten (Vorlage), 5 Schilder",
+          "20 Papierstreifen, 2 × 15 cm",
+          "Stoffbeutel mit 5 Tastgegenständen",
+          "Timer, Klassen-Urkunde (A4)"
+        ],
+        "vorbereitung": [
+          "Fünf Stationen mit Schild und Karte aufbauen; Stopp-Station mit viel Platz",
+          "Linie 0–100 kleben (Tür = 0, Fenster = 100), Karten 0, 30, 70, 100 daran",
+          "Papierstreifen schneiden, Tastbeutel füllen; nach Asthma fragen",
+          "Klassen-Urkunde vorbereiten; Stationskarten einmal selbst durchspielen"
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in an der Linie: Punkt und Zahl"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick, Mission und Fair Play"
+          },
+          {
+            "min": "15–25",
+            "phase": "input",
+            "titel": "Die Anspannungsskala auffrischen"
+          },
+          {
+            "min": "25–45",
+            "phase": "aktiv",
+            "titel": "Eröffnung und Runde 1: zwei Stationen"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Von 0 auf 100 und zurück"
+          },
+          {
+            "min": "50–72",
+            "phase": "aktiv",
+            "titel": "Runde 2: drei Stationen"
+          },
+          {
+            "min": "72–80",
+            "phase": "uebung",
+            "titel": "Olympia-Pass und Klassenmedaille"
+          },
+          {
+            "min": "80–90",
+            "phase": "skill",
+            "titel": "Skill: Mein Joker-Skill"
+          },
+          {
+            "min": "90–100",
+            "phase": "abschluss",
+            "titel": "Skills-Kompass, Skills-Pass und Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in an der Linie: Punkt und Zahl",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad (3 Min.). Dann stellen sich alle an die Linie auf dem Boden: Tür ist 0, Fenster ist 100, die Karten 30 und 70 markieren die Zonen. Jede Person stellt sich zu ihrer Zahl, nebeneinander oder hintereinander; die Lehrkraft steht ehrlich mit, etwa bei 35. Wer nicht an die Linie mag, zeigt die Zahl vom Platz aus mit den Fingern (2 Min.). Einmal die Linie anschauen: Wo steht die Klasse heute? Zwei, drei Freiwillige sagen Wort und Zahl, niemand kommentiert (3 Min.). Zurück am Platz trägt jede Person ihre Zahl in den Olympia-Pass ein, Zeile „Check-in“ (2 Min.).",
+            "sagen": [
+              "Punkt ans Rad, dann an die Linie: Tür ist 0, Fenster ist 100. Stellt euch dahin, wo ihr gerade seid – nicht dahin, wo eure Freunde stehen.",
+              "Die Zahl bleibt eure. Niemand kommentiert, niemand vergleicht."
+            ],
+            "tipp": "Die Linie nicht abkleben: Sie wird gleich für die Zonen und nach den Stationen noch einmal gebraucht. Eine Klasse, die sich zwischen 20 und 50 verteilt, ist ein normaler Dienstagmorgen.",
+            "wennEsKippt": "Drängeln sich alle auf der 0, weil es lässig aussieht, das stehen lassen – nach den Stationen stellen sich alle noch einmal an dieselbe Linie, dann wird ehrlich verglichen. Stellt sich jemand zum Spaß auf die 100 und spielt Theater, mit Humor zurückfragen: Wie sähe eine echte 100 aus – und woran merken wir, dass das keine ist? Steht jemand ernsthaft bei 80 oder höher, nicht vor der Klasse nachfragen, sondern in der ersten Stationsrunde leise: Brauchst du etwas? Wird an der Linie gerempelt, einmal anhalten: alle einen Schritt zurück, neu aufstellen.",
+            "blatt": "ff6-olympia-pass"
+          },
+          {
+            "titel": "Rückblick, Mission und Fair Play",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann per Daumen nach der Wochen-Mission fragen – hoch, Mitte, runter – und eine Stimme erzählt, wie die Frage an eine Person aus der Klasse gelaufen ist; niemand muss sie geschafft haben. Auf die neue Klassenvereinbarung zeigen und die Regel vorlesen lassen, die heute doppelt zählt: Wir lachen miteinander, nicht übereinander. Den Tag ankündigen: fünf Disziplinen, fünf Skills aus der 7e, Medaillen für sich selbst statt Punkte gegen andere. Für die Neuen gilt: Niemand muss die Skills können – wer sie kennt, erklärt sie, und genau dafür gibt es Gold.",
+            "sagen": [
+              "Daumen hoch, Mitte oder runter: Hat die Mission geklappt – eine Frage an jemanden, mit dem ihr sonst kaum redet? Wer erzählt in einem Satz, wie es war?",
+              "Heute zählt diese Regel doppelt – auch wenn der Papierstreifen nach zwei Sekunden wegfliegt.",
+              "Wer neu ist, muss nichts können. Die anderen müssen es euch erklären können – das ist heute die Königsdisziplin."
+            ],
+            "tipp": "Die Mission nur kurz abfragen: ein Daumen, eine Geschichte, ein Lächeln. Wer sie nicht gemacht hat, bekommt keine Nachfrage – die nächste Mission ist eine neue Chance."
+          },
+          {
+            "titel": "Die Anspannungsskala auffrischen",
+            "dauer": 10,
+            "phase": "input",
+            "text": "Das Plakat mit der leeren Skala neben das Gefühlsrad hängen und die drei Zonen von der Klasse füllen lassen: Was passiert bei Grün, Gelb und Rot im Kopf und im Körper – und was hilft dort noch? Zwei, drei Stichwörter je Zone, die Lehrkraft ergänzt nur, was fehlt (4 Min.). Eine Person aus der 7e zeigt das Handmodell: Faust mit dem Daumen innen, die Finger sind der Teil, der nachdenkt und bremst – bei Rot klappen sie hoch (1 Min.). Dann stellen sich alle einmal an die Linie und bleiben dort: Drei Situationen vorlesen, nach jeder wechseln alle nur den Platz zu ihrer Zahl, eine Stimme je Situation sagt, warum (4 Min.). Zum Schluss die fünf Disziplinen des Tages den Zonen zuordnen: Atem, Sinne und Stopp gehen auch bei Rot; Kopf und Ich-Botschaft brauchen Gelb oder Grün. Auf dem Olympia-Pass stehen die Zonen zum Nachlesen (1 Min.).",
+            "sagen": [
+              "Wer erklärt den Neuen das Handmodell? Faust, Daumen innen – was passiert bei 90?",
+              "Erst runter, dann reden: Das gilt für euch, für eure Freunde und übrigens auch für Erwachsene.",
+              "Dieselbe Situation ist für die eine eine 20 und für den anderen eine 80. Keiner liegt falsch."
+            ],
+            "punkte": [
+              "Du bekommst den Mathe-Test zurück: 22 von 60.",
+              "Im Klassenchat taucht ein Foto von dir auf, das du nicht kennst.",
+              "Dein Akku ist bei 2 Prozent, und du weißt nicht, wann der letzte Bus fährt.",
+              "Reserve: Im Praktikum sollst du zum ersten Mal allein ans Telefon gehen."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Zone",
+                "Was passiert – und was hilft noch"
+              ],
+              "zeilen": [
+                [
+                  "Grün 0–30",
+                  "Klarer Kopf: reden, zuhören, Probleme lösen – und Skills üben"
+                ],
+                [
+                  "Gelb 30–70",
+                  "Es wird eng: gereizt, unruhig oder ganz still – umschalten mit Kopf, Sinnen, Musik, Bewegung"
+                ],
+                [
+                  "Rot 70–100",
+                  "Der Körper übernimmt: Herzrasen, Hitze, Tunnelblick – nur noch Körper und Sinne, raus, Hilfe holen"
+                ]
+              ]
+            },
+            "tipp": "Wer aus der 7e kommt, erklärt heute die Zonen – das festigt sie mehr als jede Wiederholung durch die Lehrkraft. Für die Neuen reicht die Farbe: grün, gelb, rot; die Zahlen kommen mit der Zeit. Erinnert eine Situation an einen echten Vorfall in der Klasse, die Reserve nehmen.",
+            "wennEsKippt": "Wird es zu theoretisch, sofort an die Linie: Wie sieht eine 20 im Bus aus, eine 60 vor dem Test, eine 95 auf dem Fußballplatz? Wer mag, spielt eine Zahl kurz vor, die anderen raten. Beschreibt jemand Rot mit „dann hau ich zu“, das ohne Kommentar als Zeichen notieren – genau dafür gibt es die Skills für Rot.",
+            "blatt": "ff6-olympia-pass"
+          },
+          {
+            "titel": "Eröffnung und Runde 1: zwei Stationen",
+            "dauer": 20,
+            "phase": "aktiv",
+            "text": "Eröffnung (6 Min.): Die Teams sind die Tischgruppen; jedes gibt sich in einer Minute einen Namen. Dann den Olympia-Pass erklären: An jeder Station kreuzt jede Person für sich an – Bronze: ausprobiert, Silber: klappt bei mir, Gold: kann ich erklären. Die Karte „So läuft jede Station“ vorlesen und die Fair-Play-Regeln an der Tafel durchgehen. Rotation festlegen: Team 1 beginnt an Station 1, Team 2 an Station 2 und so weiter; auf das Signal geht es eine Station weiter. Runde 1 (14 Min.): zwei Stationen zu je 7 Minuten; die Lehrkraft ist Schiedsrichterin, geht herum und beginnt bei der Stopp-Station, dann bei der Kopf-Station, wo es am lautesten wird. Eine Minute vor dem Signal ansagen: Medaillen ankreuzen, aufräumen.",
+            "sagen": [
+              "Keine Punkte gegen andere – Medaillen für euch selbst. Gold heißt nicht „am besten“, Gold heißt: Ich kann es jemandem erklären.",
+              "Wer den Skill aus der 7e kennt, erklärt ihn in 30 Sekunden. Dann probieren alle – auch die, die ihn erklärt haben.",
+              "Stopp gilt sofort, überall. Und wer heute nichts spielen mag, ist Coach: liest vor, stoppt die Zeit, hakt ab."
+            ],
+            "punkte": [
+              "So läuft jede Station: Karte vorlesen – wer den Skill kennt, erklärt ihn – alle probieren – Medaille ankreuzen – auf das Signal aufräumen und weiter.",
+              "Fair Play: Stopp gilt sofort. Wir lachen miteinander, nicht übereinander – wer über jemanden lacht, erklärt den Skill als Nächstes.",
+              "Wer nicht mitmachen mag, ist Coach: liest vor, stoppt die Zeit, hakt die Medaillen ab.",
+              "Bei Streit entscheidet die Lehrkraft, ohne Diskussion.",
+              "Niemand wird vorgeführt: Die Medaille gibt sich jede Person selbst, niemand kontrolliert."
+            ],
+            "tipp": "Fünf Teams, fünf Stationen, alle gleichzeitig unterwegs – deshalb müssen die Stationskarten für sich sprechen. Die Rotation an die Tafel schreiben (Team 1: Station 1, 2, 3, 4, 5; Team 2: Station 2, 3, 4, 5, 1 …), dann fragt niemand, wohin es geht.",
+            "wennEsKippt": "Kippt der Ehrgeiz in Auslachen oder Beleidigungen, das Spiel eine Minute anhalten, auf die Fair-Play-Regeln zeigen und erst dann weitergehen. Schafft ein Team die Station in drei Minuten, ist meist das Erklären zu kurz gekommen: nachfragen, wer dort Gold hat, und ihn den Skill der Lehrkraft erklären lassen. Streiten sich zwei um eine Rolle, entscheidet die Lehrkraft sofort – so steht es in den Regeln.",
+            "blatt": "ff6-olympiade-stationen"
+          },
+          {
+            "titel": "Bewegungspause: Von 0 auf 100 und zurück",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen hinter ihrem Stuhl. Die Lehrkraft führt den Arm langsam von unten nach oben und nennt dabei Zahlen; alle zeigen die Zahl mit dem ganzen Körper: Bei 0 hängen alle wie ein nasser Sack, bei 50 stehen alle aufrecht, bei 100 ist jede Person eine Statue mit Fäusten und hochgezogenen Schultern – ohne Worte, ohne Berührung, am eigenen Platz. Dann langsam wieder zurück auf 0 (2 Min.). Zum Schluss Vollgas: 30 Sekunden Hampelmann, dann 30 Sekunden ganz still mit geschlossenen Augen oder Blick auf den Tisch, nachspüren (2 Min.). Fenster auf, Wasser trinken (1 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "punkte": [
+              "0: alles hängt – Arme, Schultern, Kopf.",
+              "50: aufrecht, locker, bereit.",
+              "100: Statue – Fäuste, Schultern hoch, Zähne zusammen, drei Sekunden halten.",
+              "Zurück auf 0 – dann Hampelmann, dann Stille."
+            ],
+            "tipp": "Die Welle macht sichtbar, was gleich beim Joker-Skill zählt: Der Körper kann die Zahl in beide Richtungen bewegen. Wer nicht mitmachen mag, zeigt die Zahl nur mit den Händen.",
+            "wennEsKippt": "Wird bei 100 geschrien oder geschubst, abbrechen und ohne Kommentar bei 0 neu beginnen: Die 100 ist eine Statue, kein Ausbruch. Bleibt es nach dem Hampelmann unruhig, die Stille auf eine Minute verlängern und selbst sichtbar mitmachen."
+          },
+          {
+            "titel": "Runde 2: drei Stationen",
+            "dauer": 22,
+            "phase": "aktiv",
+            "text": "Die Teams gehen zu ihrer dritten Station; drei Stationen zu je 7 Minuten, dazwischen eine Minute Wechsel. Der Ablauf bleibt derselbe: Karte vorlesen, erklären, probieren, Medaille ankreuzen. Die Lehrkraft bleibt Schiedsrichterin, hält sich in der Nähe der Stopp-Station auf und schaut bei der Kopf-Station nach dem Lärmpegel. Wird die Zeit knapp, entfällt an der letzten Station der zweite Durchgang: Jede Person probiert einmal, und nur eine Person erklärt. Die Disziplinen im Überblick:",
+            "sagen": [
+              "Dreißig Sekunden Erklärung, die Uhr läuft. Wer neu ist, darf dreimal nachfragen.",
+              "Beim ABC zählt jede Sprache – Lëtzebuergesch, Portugiesisch, Französisch, alles.",
+              "Beim Stopp gibt es keine Medaille fürs Lautsein, sondern fürs Klarsein."
+            ],
+            "punkte": [
+              "Atem – der ruhige Streifen: drei Runden Kastenatmung (Quadrat auf den Tisch malen: 4 ein, 4 halten, 4 aus, 4 halten), dann hält jede Person den Papierstreifen vor den Mund und atmet 10 Sekunden so langsam aus, dass er nur zittert.",
+              "Sinne – Beutel und 3-3-3: Jede Person greift in den Beutel, ohne hinzuschauen, und nennt den Gegenstand. Dann das Blitz-3-3-3 reihum: drei Dinge sehen, drei hören, drei spüren.",
+              "Kopf – ABC mit Störsender: Eine Person nennt 30 Sekunden lang zu jedem Buchstaben ein Tier, zwei Teammitglieder stören in Zimmerlautstärke, eines zählt. Danach reihum von 50 in Dreierschritten rückwärts.",
+              "Stopp – die Stopp-Statue: Jede Person zeigt dem Team einmal ihr Stopp – Hand hoch, Blick, feste Stimme, kein Lächeln –, das Team macht den Stopp-Check. Dann alle zusammen: Stopp, zurück, ausatmen.",
+              "Ich-Botschaft – das Übersetzungsbüro: Jede Person übersetzt eine Du-Botschaft von der Karte in eine Ich-Botschaft (Gefühl, wenn, weil, Wunsch) und schreibt sie in den Olympia-Pass; das Team prüft die vier Teile."
+            ],
+            "tipp": "Die Stationskarten sind so geschrieben, dass eine Vierergruppe sie ohne Lehrkraft schafft; trotzdem lohnt es sich, in jeder Runde einmal bei jedem Team zu stehen und zu fragen: Wer erklärt mir den Skill in drei Schritten? Das ist die beste Vorbereitung auf die Erklär-Runde.",
+            "wennEsKippt": "Reagiert jemand bei der Stopp-Statue erschrocken oder wird dort gegrinst, die Station für diese Person beenden – sie ist Coach – und später unter vier Augen fragen, wie es ihr geht. Wird die Kopf-Station zum Geschrei, die Störsender auf einen reduzieren; im Zweifel stören nur mit Fragen, nicht mit Lärm. Hat jemand Asthma oder wird beim Streifen schwindelig, sofort normal atmen – Bronze gilt trotzdem.",
+            "blatt": "ff6-olympiade-stationen"
+          },
+          {
+            "titel": "Olympia-Pass und Klassenmedaille",
+            "dauer": 8,
+            "phase": "uebung",
+            "text": "Zurück an den Plätzen zählt jede Person still ihre Medaillen auf dem Olympia-Pass. Dann die Tischgruppen fragen: Hat an eurem Tisch jede Person in allen fünf Disziplinen mindestens Bronze? Daumen hoch je Tisch; sind es fünf Daumen, bekommt die Klasse die Klassenmedaille: die Urkunde unterschreiben und neben die Klassenvereinbarung hängen (3 Min.). Erklär-Runde: Drei Freiwillige mit Gold – gern auch Neue – erklären der Klasse je einen Skill in drei Schritten, ohne Vormachen; die Klasse hört zu und ergänzt höchstens einen Satz (4 Min.). Zum Schluss zeigen alle auf drei ihre Zahl jetzt mit den Fingern und tragen sie in den Olympia-Pass ein, Zeile „Nach den Stationen“ (1 Min.).",
+            "sagen": [
+              "Hat jede Person an eurem Tisch überall Bronze? Dann habt ihr es als Klasse geschafft – nicht als Team gegen Team.",
+              "Drei Schritte, kein Vormachen: so, dass jemand, der heute gefehlt hat, den Skill morgen allein machen könnte.",
+              "Eure Zahl jetzt – auf drei. Bei vielen ist sie höher als beim Check-in. Das ist normal: Wettkampf treibt die Zahl hoch, auch ohne Gegner."
+            ],
+            "tipp": "Fehlt an einem Tisch eine Bronze – weil jemand eine Station ausgelassen hat –, zählt das trotzdem: Coach sein ist mitmachen. Die Klassenmedaille gibt es nicht für Leistung, sondern dafür, dass alle alles einmal ausprobiert haben.",
+            "wennEsKippt": "Vergleicht jemand laut Medaillen („Ich hab fünf Gold, du nur zwei“), freundlich stoppen: Die Medaillen vergibt sich jede Person selbst, sie sind kein Wettkampf. Wird eine Erklärung zur Witznummer, nicht ermahnen, sondern die Klasse fragen: Welche drei Schritte davon stimmen? Will niemand erklären, erklärt die Lehrkraft einen Skill absichtlich in sechs umständlichen Schritten und lässt die Klasse auf drei kürzen.",
+            "blatt": "ff6-olympia-pass"
+          },
+          {
+            "titel": "Skill: Mein Joker-Skill",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: Nach einem Wettkampf ist die Zahl oft höher als vorher – jetzt holt sich jede Person mit ihrem Joker-Skill wieder runter. Jede Person wählt den Skill von heute, der am besten geklappt hat, und schreibt ihn auf den Olympia-Pass (1 Min.). Dann drei Minuten für sich, ohne Reden: Kastenatmung, der Streifen, 3-3-3, rückwärts zählen oder Stopp, zurück, ausatmen; die Lehrkraft macht sichtbar mit (3 Min.). Danach die Zahl noch einmal schätzen, auf drei mit den Fingern zeigen und in den Pass eintragen, Zeile „Nach meinem Joker-Skill“ (1 Min.). Auswertung mit drei, vier Stimmen: Was hat die Zahl hochgetrieben, was hat sie gesenkt? Wann wäre der Joker im Alltag dran – neue Klasse, neuer Verein, erster Tag im Praktikum (3 Min.)? Zum Schluss Aufgabe 4 auf dem Pass: Mein Joker-Skill und wann er passt (2 Min.).",
+            "sagen": [
+              "Wettkampf treibt die Zahl hoch, auch wenn es Spaß macht. Welcher Skill holt euch wieder runter? Drei Minuten, jede Person für sich.",
+              "Ein Joker ist ein Skill, den ihr überall ziehen könnt – im Bus, vor dem Test, am ersten Tag irgendwo, wo ihr neu seid.",
+              "Wenn die Zahl gleich geblieben ist: auch ein Ergebnis. Dann ist vielleicht ein anderer Skill euer Joker."
+            ],
+            "punkte": [
+              "Schätz deine Zahl von 0 bis 100.",
+              "Mach den Skill, der heute am besten geklappt hat, drei Minuten lang – ohne Reden.",
+              "Schätz die Zahl neu. Gesunken, gleich, gestiegen? Das ist dein Joker – oder du probierst beim nächsten Mal einen anderen."
+            ],
+            "tipp": "Der Joker-Skill ist der erste Eintrag im Skills-Kompass, deshalb bekommt er hier Zeit. Die Neuen wählen oft 5-4-3-2-1 oder die Kastenatmung – beides ist richtig; die Skill-Karte hinten im Heft fasst den Joker in drei Schritten zusammen.",
+            "wennEsKippt": "Reden zwei während der drei Minuten, nicht ermahnen, sondern selbst hörbar langsam ausatmen – meist wird es still. Will jemand keinen Skill machen, sitzt er drei Minuten still und schätzt trotzdem seine Zahl: Auch Nichtstun ist ein Test. Wirkt jemand nach dem Wettkampf aufgewühlt, leise anbieten, am offenen Fenster weiterzuatmen.",
+            "blatt": "ff6-olympia-pass"
+          },
+          {
+            "titel": "Skills-Kompass, Skills-Pass und Mission",
+            "dauer": 10,
+            "phase": "abschluss",
+            "text": "Den Skills-Kompass im Heft aufschlagen und in zwei Sätzen erklären: Der Skills-Koffer der 7e sortiert Skills nach der Anspannung; der Kompass sortiert sie nach den Bereichen des Alltags – ein Feld je Kapitel. Den Wortspeicher mit den Skills der 7e zeigen und den Beispiel-Eintrag vorlesen (2 Min.). Dann füllt jede Person das Feld „1 · Wieder ankommen“: ihren Joker-Skill für neue Situationen und wann sie ihn einsetzt; „noch offen“ ist erlaubt (3 Min.). Skills-Pass: Die Leitfrage an die Tafel schreiben – Welchen Skill aus der 7e habe ich heute wiedergefunden? Satz schreiben, Stempel beim Herumgehen (3 Min.). Zum Schluss die Wochen-Mission im Heft zeigen und in einem Satz ansagen, dann der Ausblick auf das nächste Kapitel (2 Min.).",
+            "sagen": [
+              "Der Koffer fragt: Wie hoch ist die Zahl? Der Kompass fragt: Wo bin ich gerade – Schule, Streit, Familie, Handy?",
+              "Erstes Feld: Welcher Skill ist euer Joker, wenn ihr irgendwo neu seid und die Zahl hochgeht?",
+              "Eure Mission bis nächste Woche: Zieht den Joker einmal, wenn die Zahl über 50 geht. Zahl vorher, Skill, Zahl nachher."
+            ],
+            "tipp": "Den Kompass immer gemeinsam in der letzten Stunde eines Kapitels ergänzen, nie als Hausaufgabe – so bleibt er ein Ritual und kein Arbeitsblatt. Die Urkunde bleibt neben der Klassenvereinbarung hängen.",
+            "wennEsKippt": "Sagt jemand, er brauche keine Skills, das stehen lassen und neugierig bleiben: Dann bin ich gespannt, was du dir in den Kompass schreibst – „noch offen“ ist auch ein Eintrag. Wirken die Neuen bei den vielen Namen verloren, auf den Olympia-Pass zeigen: Dort stehen die fünf von heute, einer davon reicht.",
+            "blatt": "ff-skills-kompass"
+          }
+        ],
+        "bruecke": "Nächste Woche beginnt das erste große Thema des Jahres: Was macht einen Menschen wertvoll – und was hat das mit Noten, Likes und Aussehen zu tun? Ihr versteigert, was man nicht kaufen kann.",
+        "mission": "Zieh deinen Joker-Skill diese Woche einmal, wenn deine Zahl über 50 geht – im Bus, vor einem Test oder im Streit. Zahl vorher, Skill, Zahl nachher: Was hat sich bewegt?",
+        "hintergrund": "Nach den Sommerferien sind die Skills der 7e nicht verschwunden, aber schwerer abrufbar. Wer Gelerntes aktiv abruft und anwendet, behält es besser als durch bloßes Wiederholen (Roediger & Karpicke, 2006) – die Stationen lassen jede Person jeden Skill noch einmal tun und erklären. Die Anspannungsskala von 0 bis 100 gehört zu den Grundwerkzeugen des Skillstrainings für Jugendliche (Rathus & Miller, 2015): Bei hoher Erregung helfen Skills über Körper und Sinne, bei mittlerer auch Kopf-Skills; deshalb ordnet die Klasse die fünf Disziplinen den Zonen zu. Wer einen Skill anderen erklärt und vormacht, erlebt sich als kompetent; Erfolgserfahrungen und das Lernen am Modell Gleichaltriger stärken die Selbstwirksamkeit (Bandura, 1977). Darum gibt es Gold fürs Erklären und eine Medaille für die ganze Klasse statt einer Siegerehrung – Neue lernen von den anderen, ohne als die vorgeführt zu werden, die nichts können.",
+        "quellen": [
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "achtung": "Wettkämpfe kippen leicht: Wer verliert oder ausgelacht wird, erlebt alte Kränkungen – darum Medaillen für sich selbst statt Punkte gegen andere, und Neue werden nie als die vorgeführt, die nichts können. Die Stopp-Statue zeigt jede Person nur dem eigenen Team, niemand geht auf jemanden zu; wer erschrickt oder erstarrt, wird Coach und später unter vier Augen gefragt. Vor der Kastenatmung nach Asthma fragen. Hinweise auf Gewalt, Selbstverletzung oder Suizidgedanken: nicht vor der Klasse vertiefen, noch am selben Tag den SePAS informieren, nach dem Schutzkonzept handeln.",
+        "differenzierung": {
+          "leichter": "Statt der Zahl reicht die Farbe: grün, gelb, rot. An jeder Station liest eine Person vor, die gut liest; wer die Unterrichtssprache noch lernt, bekommt den Skill vom Tandem vorgemacht – Vormachen zählt als Erklären. Die Ich-Botschaft darf mündlich bleiben, mit den Satzanfängen von der Karte; im Kompass genügt der Name des Skills.",
+          "schwerer": "Erklär-Profi an einer Station sein: den Skill in höchstens drei Schritten erklären, ohne vorzumachen. Eine sechste Disziplin für die nächste Olympiade erfinden und auf eine Karte schreiben. Im Kompass zusätzlich notieren, bei welcher Zahl der Joker-Skill nicht mehr reicht – und was dann hilft."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Zahl per Finger (5 Min.), Anspannungsskala an der Linie mit zwei Situationen (8 Min.), drei Disziplinen nacheinander mit der ganzen Klasse am Platz – Atem, Sinne, Stopp –, erklärt von Freiwilligen (22 Min.), Joker-Skill mit Zahl vorher und nachher (7 Min.), Skills-Kompass und Skills-Pass (8 Min.). Kopf und Ich-Botschaft werden in den nächsten Stunden als Bewegungspause nachgeholt."
+      },
+      "fr": {
+        "titel": "Les olympiades des skills",
+        "kurz": "Cinq ateliers avec des skills de la 7e – souffle, sens, tête, stop, message en « je » –, des médailles pour soi plutôt que des points contre les autres, et la première case de la boussole des skills.",
+        "ziele": [
+          "estiment leur tension sur la ligne et expliquent quel type de skill aide encore en vert, en orange et en rouge",
+          "rafraîchissent cinq skills de la 7e en ateliers et en expliquent un de façon qu’un nouveau puisse le refaire",
+          "choisissent leur skill joker, le testent avec un chiffre avant et après et le notent comme première entrée de la boussole des skills"
+        ],
+        "material": [
+          "Cahier de l’élève, tampon",
+          "Affiches roue et échelle, gommettes",
+          "Ligne en ruban, cartes 0/30/70/100",
+          "Cartes d’atelier, 5 panneaux",
+          "20 bandelettes de papier, 2 × 15 cm",
+          "Sac en tissu avec 5 objets à toucher",
+          "Minuteur, diplôme de classe (A4)"
+        ],
+        "vorbereitung": [
+          "Installer cinq ateliers avec panneau et carte ; beaucoup de place pour le stop",
+          "Coller la ligne 0–100 (porte = 0, fenêtre = 100), cartes 0, 30, 70, 100",
+          "Couper les bandelettes, remplir le sac ; demander qui a de l’asthme",
+          "Préparer le diplôme de classe ; tester soi-même les cartes d’atelier"
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur sur la ligne"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour, mission et fair-play"
+          },
+          {
+            "min": "15–25",
+            "phase": "input",
+            "titel": "Rafraîchir l’échelle de tension"
+          },
+          {
+            "min": "25–45",
+            "phase": "aktiv",
+            "titel": "Ouverture et manche 1 : deux ateliers"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : de 0 à 100 et retour"
+          },
+          {
+            "min": "50–72",
+            "phase": "aktiv",
+            "titel": "Manche 2 : trois ateliers"
+          },
+          {
+            "min": "72–80",
+            "phase": "uebung",
+            "titel": "Pass olympique et médaille de classe"
+          },
+          {
+            "min": "80–90",
+            "phase": "skill",
+            "titel": "Skill : mon skill joker"
+          },
+          {
+            "min": "90–100",
+            "phase": "abschluss",
+            "titel": "Boussole, Skills-Pass et mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur sur la ligne",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions (3 min). Puis tout le monde rejoint la ligne au sol : la porte, c’est 0, la fenêtre, c’est 100, les cartes 30 et 70 marquent les zones. Chacun se place à son chiffre, côte à côte ou l’un derrière l’autre ; l’enseignant·e se place honnêtement aussi, vers 35 par exemple. Qui ne veut pas aller sur la ligne montre son chiffre avec les doigts depuis sa place (2 min). Regarder une fois la ligne : où en est la classe aujourd’hui ? Deux ou trois volontaires disent leur mot et leur chiffre, personne ne commente (3 min). De retour à sa place, chacun note son chiffre dans le pass olympique, ligne « Tour d’humeur » (2 min).",
+            "sagen": [
+              "Gommette sur la roue, puis sur la ligne : la porte, c’est 0, la fenêtre, c’est 100. Placez-vous là où vous en êtes – pas là où sont vos amis.",
+              "Le chiffre reste le vôtre. Personne ne commente, personne ne compare."
+            ],
+            "tipp": "Ne pas décoller la ligne : elle resservira tout à l’heure pour les zones et après les ateliers. Une classe répartie entre 20 et 50, c’est un mardi matin normal.",
+            "wennEsKippt": "Si tout le monde s’entasse sur le 0 parce que ça fait cool, laisser faire – après les ateliers, tout le monde revient sur la même ligne, et là, on compare honnêtement. Si quelqu’un se met sur le 100 pour rire et fait son cinéma, renvoyer avec humour : à quoi ressemblerait un vrai 100 – et à quoi voit-on que ce n’en est pas un ? Si quelqu’un se place sérieusement à 80 ou plus, ne pas l’interroger devant la classe, mais lui demander discrètement pendant la première manche : tu as besoin de quelque chose ? Si ça bouscule sur la ligne, arrêter une fois : tout le monde recule d’un pas, on se replace.",
+            "blatt": "ff6-olympia-pass"
+          },
+          {
+            "titel": "Retour, mission et fair-play",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Puis demander avec le pouce où en est la mission de la semaine – en haut, au milieu, en bas – et une voix raconte comment s’est passée la question posée à quelqu’un de la classe ; personne n’est obligé de l’avoir réussie. Montrer la nouvelle charte de classe et faire lire la règle qui compte double aujourd’hui : on rit ensemble, pas les uns des autres. Annoncer la journée : cinq épreuves, cinq skills de la 7e, des médailles pour soi-même plutôt que des points contre les autres. Pour les nouveaux : personne n’a besoin de connaître les skills – qui les connaît les explique, et c’est justement pour ça qu’il y a l’or.",
+            "sagen": [
+              "Pouce en haut, au milieu ou en bas : la mission a-t-elle marché – une question à quelqu’un à qui vous ne parlez presque jamais ? Qui raconte en une phrase comment c’était ?",
+              "Aujourd’hui, cette règle compte double – même si la bandelette s’envole au bout de deux secondes.",
+              "Qui est nouveau n’a rien à savoir faire. Les autres doivent savoir vous l’expliquer – c’est l’épreuve reine du jour."
+            ],
+            "tipp": "Ne demander la mission que brièvement : un pouce, une histoire, un sourire. Qui ne l’a pas faite n’a pas de question à subir – la prochaine mission est une nouvelle chance."
+          },
+          {
+            "titel": "Rafraîchir l’échelle de tension",
+            "dauer": 10,
+            "phase": "input",
+            "text": "Accrocher l’affiche de l’échelle vide à côté de la roue des émotions et faire remplir les trois zones par la classe : que se passe-t-il en vert, en orange et en rouge dans la tête et dans le corps – et qu’est-ce qui aide encore ? Deux ou trois mots-clés par zone, l’enseignant·e ne complète que ce qui manque (4 min). Un jeune de la 7e montre le modèle de la main : le poing avec le pouce à l’intérieur, les doigts sont la partie qui réfléchit et qui freine – dans le rouge, ils se relèvent (1 min). Puis tout le monde se place une fois sur la ligne et y reste : lire trois situations ; après chacune, chacun change seulement de place pour rejoindre son chiffre, une voix par situation explique pourquoi (4 min). Pour finir, ranger les cinq épreuves du jour dans les zones : souffle, sens et stop marchent même dans le rouge ; tête et message en « je » demandent l’orange ou le vert. Les zones figurent sur le pass olympique, pour relire (1 min).",
+            "sagen": [
+              "Qui explique aux nouveaux le modèle de la main ? Le poing, le pouce à l’intérieur – qu’est-ce qui se passe à 90 ?",
+              "D’abord redescendre, ensuite parler : ça vaut pour vous, pour vos amis et, au passage, pour les adultes aussi.",
+              "La même situation vaut 20 pour l’une et 80 pour l’autre. Personne n’a tort."
+            ],
+            "punkte": [
+              "Tu reçois ton devoir de maths : 22 sur 60.",
+              "Dans le groupe de la classe apparaît une photo de toi que tu ne connais pas.",
+              "Ta batterie est à 2 pour cent, et tu ne sais pas à quelle heure passe le dernier bus.",
+              "Réserve : en stage, tu dois répondre au téléphone seul pour la première fois."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Zone",
+                "Ce qui se passe – et ce qui aide encore"
+              ],
+              "zeilen": [
+                [
+                  "Vert 0–30",
+                  "Tête claire : parler, écouter, résoudre des problèmes – et s’entraîner aux skills"
+                ],
+                [
+                  "Orange 30–70",
+                  "Ça devient serré : irritable, agité ou tout silencieux – changer de canal avec la tête, les sens, la musique, le mouvement"
+                ],
+                [
+                  "Rouge 70–100",
+                  "Le corps prend le dessus : cœur qui s’emballe, chaleur, vision en tunnel – seulement le corps et les sens, sortir, chercher de l’aide"
+                ]
+              ]
+            },
+            "tipp": "Ceux de la 7e expliquent les zones aujourd’hui – ça les ancre mieux que n’importe quelle répétition par l’enseignant·e. Pour les nouveaux, la couleur suffit : vert, orange, rouge ; les chiffres viendront avec le temps. Si une situation rappelle un incident réel dans la classe, prendre la réserve.",
+            "wennEsKippt": "Si ça devient trop théorique, filer sur la ligne : à quoi ressemble un 20 dans le bus, un 60 avant le devoir, un 95 sur le terrain de foot ? Qui veut mime un chiffre, les autres devinent. Si un jeune décrit le rouge par « là, je frappe », le noter sans commentaire comme un signal – c’est justement pour ça qu’il existe des skills pour le rouge.",
+            "blatt": "ff6-olympia-pass"
+          },
+          {
+            "titel": "Ouverture et manche 1 : deux ateliers",
+            "dauer": 20,
+            "phase": "aktiv",
+            "text": "Ouverture (6 min) : les équipes sont les îlots ; chacune se donne un nom en une minute. Expliquer ensuite le pass olympique : à chaque atelier, chacun coche pour lui-même – bronze : essayé, argent : ça marche chez moi, or : je sais l’expliquer. Lire la carte « Le déroulement de chaque atelier » et passer en revue les règles de fair-play au tableau. Fixer la rotation : l’équipe 1 commence à l’atelier 1, l’équipe 2 à l’atelier 2, et ainsi de suite ; au signal, on avance d’un atelier. Manche 1 (14 min) : deux ateliers de 7 minutes ; l’enseignant·e arbitre, circule et commence par l’atelier stop, puis par l’atelier tête, là où ça fait le plus de bruit. Une minute avant le signal, annoncer : cocher les médailles, ranger.",
+            "sagen": [
+              "Pas de points contre les autres – des médailles pour vous-mêmes. L’or ne veut pas dire « le meilleur », l’or veut dire : je sais l’expliquer à quelqu’un.",
+              "Qui connaît le skill depuis la 7e l’explique en 30 secondes. Ensuite, tout le monde essaie – même ceux qui l’ont expliqué.",
+              "Stop vaut tout de suite, partout. Et qui ne veut rien jouer aujourd’hui est coach : il lit, chronomètre, coche."
+            ],
+            "punkte": [
+              "Le déroulement de chaque atelier : lire la carte – qui connaît le skill l’explique – tout le monde essaie – cocher sa médaille – au signal, ranger et passer à l’atelier suivant.",
+              "Fair-play : stop vaut tout de suite. On rit ensemble, pas les uns des autres – qui se moque de quelqu’un explique le skill suivant.",
+              "Qui ne veut pas participer est coach : il lit, chronomètre et coche les médailles.",
+              "En cas de dispute, l’enseignant·e tranche, sans discussion.",
+              "Personne n’est exposé : la médaille, chacun se la donne lui-même, personne ne contrôle."
+            ],
+            "tipp": "Cinq équipes, cinq ateliers, tout le monde en mouvement en même temps – les cartes d’atelier doivent donc se suffire à elles-mêmes. Écrire la rotation au tableau (équipe 1 : ateliers 1, 2, 3, 4, 5 ; équipe 2 : ateliers 2, 3, 4, 5, 1…), et plus personne ne demande où aller.",
+            "wennEsKippt": "Si l’ambition tourne à la moquerie ou aux insultes, arrêter le jeu une minute, montrer les règles de fair-play et seulement ensuite continuer. Si une équipe boucle l’atelier en trois minutes, c’est souvent l’explication qui a été bâclée : demander qui a l’or et lui faire expliquer le skill à l’enseignant·e. Si deux jeunes se disputent un rôle, trancher tout de suite – c’est écrit dans les règles.",
+            "blatt": "ff6-olympiade-stationen"
+          },
+          {
+            "titel": "Pause active : de 0 à 100 et retour",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève derrière sa chaise. Lever lentement le bras de bas en haut en annonçant des chiffres ; chacun montre le chiffre avec tout son corps : à 0, tout le monde pend comme un sac mouillé, à 50, tout le monde est droit, à 100, chacun est une statue aux poings serrés et aux épaules remontées – sans paroles, sans contact, à sa place. Puis redescendre lentement jusqu’à 0 (2 min). Pour finir, à fond : 30 secondes de jumping jacks, puis 30 secondes de silence complet, les yeux fermés ou le regard sur la table, pour ressentir (2 min). Fenêtre ouverte, boire de l’eau (1 min). Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "punkte": [
+              "0 : tout pend – les bras, les épaules, la tête.",
+              "50 : droit, détendu, prêt.",
+              "100 : statue – poings serrés, épaules remontées, dents serrées, tenir trois secondes.",
+              "Retour à 0 – puis jumping jacks, puis silence."
+            ],
+            "tipp": "La vague rend visible ce qui compte tout à l’heure pour le skill joker : le corps peut faire bouger le chiffre dans les deux sens. Qui ne veut pas participer montre le chiffre seulement avec les mains.",
+            "wennEsKippt": "Si ça crie ou ça bouscule à 100, interrompre et recommencer à 0 sans commentaire : le 100 est une statue, pas une explosion. Si l’agitation persiste après les jumping jacks, prolonger le silence à une minute et le faire soi-même, visiblement."
+          },
+          {
+            "titel": "Manche 2 : trois ateliers",
+            "dauer": 22,
+            "phase": "aktiv",
+            "text": "Les équipes rejoignent leur troisième atelier ; trois ateliers de 7 minutes, avec une minute de passage entre deux. Le déroulement reste le même : lire la carte, expliquer, essayer, cocher sa médaille. L’enseignant·e reste arbitre, se tient près de l’atelier stop et surveille le niveau sonore de l’atelier tête. Si le temps manque, le deuxième passage saute au dernier atelier : chacun essaie une fois, et une seule personne explique. Les épreuves en un coup d’œil :",
+            "sagen": [
+              "Trente secondes d’explication, le chrono tourne. Qui est nouveau a droit à trois questions.",
+              "À l’ABC, toutes les langues comptent – luxembourgeois, portugais, français, tout.",
+              "Au stop, la médaille ne récompense pas le volume, mais la clarté."
+            ],
+            "punkte": [
+              "Souffle – la bandelette calme : trois tours de respiration carrée (dessiner un carré sur la table : 4 pour inspirer, 4 pour retenir, 4 pour expirer, 4 pour retenir), puis chacun tient sa bandelette de papier devant la bouche et expire 10 secondes si lentement qu’elle ne fait que trembler.",
+              "Sens – le sac et le 3-3-3 : chacun plonge la main dans le sac sans regarder et nomme l’objet. Puis le 3-3-3 éclair à tour de rôle : trois choses que je vois, trois que j’entends, trois que je sens sur ma peau.",
+              "Tête – ABC avec brouilleurs : une personne nomme pendant 30 secondes un animal par lettre, deux coéquipiers brouillent à volume normal, un compte. Ensuite, à tour de rôle, compter à rebours de 50 en sautant de trois en trois.",
+              "Stop – la statue stop : chacun montre une fois son stop à l’équipe – main levée, regard, voix ferme, pas de sourire –, l’équipe fait le check du stop. Puis tous ensemble : Stop, recule, souffle.",
+              "Message en « je » – le bureau de traduction : chacun traduit un message en « tu » de la carte en message en « je » (émotion, quand, parce que, souhait) et l’écrit dans le pass olympique ; l’équipe vérifie les quatre parties."
+            ],
+            "tipp": "Les cartes d’atelier sont écrites pour qu’un groupe de quatre s’en sorte sans adulte ; il vaut quand même la peine de passer une fois par équipe à chaque manche et de demander : qui m’explique le skill en trois étapes ? C’est la meilleure préparation au tour des explications.",
+            "wennEsKippt": "Si quelqu’un réagit avec effroi à la statue stop ou si l’on ricane, terminer l’atelier pour cette personne – elle devient coach – et lui demander plus tard, en tête-à-tête, comment elle va. Si l’atelier tête tourne au vacarme, réduire à un seul brouilleur ; dans le doute, on brouille avec des questions, pas avec du bruit. Si un jeune a de l’asthme ou a la tête qui tourne avec la bandelette, respirer normalement tout de suite – le bronze compte quand même.",
+            "blatt": "ff6-olympiade-stationen"
+          },
+          {
+            "titel": "Pass olympique et médaille de classe",
+            "dauer": 8,
+            "phase": "uebung",
+            "text": "De retour aux places, chacun compte en silence ses médailles sur le pass olympique. Demander ensuite aux îlots : à votre table, est-ce que chaque personne a au moins le bronze dans les cinq épreuves ? Pouce levé par table ; s’il y a cinq pouces, la classe reçoit la médaille de classe : signer le diplôme et l’accrocher à côté de la charte (3 min). Tour des explications : trois volontaires avec de l’or – des nouveaux aussi, volontiers – expliquent chacun un skill à la classe en trois étapes, sans le montrer ; la classe écoute et complète au plus une phrase (4 min). Pour finir, à trois, tout le monde montre son chiffre actuel avec les doigts et le note dans le pass, ligne « Après les ateliers » (1 min).",
+            "sagen": [
+              "Chaque personne de votre table a le bronze partout ? Alors vous avez réussi en tant que classe – pas équipe contre équipe.",
+              "Trois étapes, sans montrer : de façon que quelqu’un qui était absent aujourd’hui puisse faire le skill seul demain.",
+              "Votre chiffre maintenant – à trois. Chez beaucoup, il est plus haut qu’au tour d’humeur. C’est normal : la compétition fait monter le chiffre, même sans adversaire."
+            ],
+            "tipp": "S’il manque un bronze à une table – parce que quelqu’un a sauté un atelier –, ça compte quand même : être coach, c’est participer. La médaille de classe ne récompense pas la performance, mais le fait que tout le monde a tout essayé une fois.",
+            "wennEsKippt": "Si quelqu’un compare les médailles à voix haute (« J’ai cinq or, toi deux »), arrêter gentiment : les médailles, chacun se les donne, ce n’est pas une compétition. Si une explication tourne au numéro comique, ne pas gronder, mais demander à la classe : quelles sont les trois étapes qui sont justes là-dedans ? Si personne ne veut expliquer, expliquer soi-même un skill exprès en six étapes compliquées et laisser la classe le réduire à trois.",
+            "blatt": "ff6-olympia-pass"
+          },
+          {
+            "titel": "Skill : mon skill joker",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : après une compétition, le chiffre est souvent plus haut qu’avant – maintenant, chacun redescend avec son skill joker. Chacun choisit le skill du jour qui a le mieux marché et l’écrit sur le pass olympique (1 min). Puis trois minutes pour soi, sans parler : respiration carrée, la bandelette, le 3-3-3, compter à rebours ou Stop, recule, souffle ; l’enseignant·e fait l’exercice de façon visible (3 min). Ensuite, estimer de nouveau son chiffre, le montrer à trois avec les doigts et le noter dans le pass, ligne « Après mon skill joker » (1 min). Bilan avec trois ou quatre voix : qu’est-ce qui a fait monter le chiffre, qu’est-ce qui l’a fait baisser ? Quand le joker servirait-il au quotidien – nouvelle classe, nouveau club, premier jour de stage (3 min) ? Pour finir, l’exercice 4 du pass : mon skill joker et quand il convient (2 min).",
+            "sagen": [
+              "La compétition fait monter le chiffre, même quand c’est drôle. Quel skill vous fait redescendre ? Trois minutes, chacun pour soi.",
+              "Un joker, c’est un skill que vous pouvez sortir partout – dans le bus, avant un devoir, le premier jour quelque part où vous êtes nouveau.",
+              "Si le chiffre n’a pas bougé : c’est aussi un résultat. Alors votre joker est peut-être un autre skill."
+            ],
+            "punkte": [
+              "Estime ton chiffre de 0 à 100.",
+              "Fais pendant trois minutes le skill qui a le mieux marché aujourd’hui – sans parler.",
+              "Estime de nouveau ton chiffre. Descendu, pareil, monté ? C’est ton joker – ou tu en essaies un autre la prochaine fois."
+            ],
+            "tipp": "Le skill joker est la première entrée de la boussole des skills, c’est pourquoi il a du temps ici. Les nouveaux choisissent souvent le 5-4-3-2-1 ou la respiration carrée – les deux sont justes ; la carte skill à la fin du cahier résume le joker en trois étapes.",
+            "wennEsKippt": "Si deux jeunes parlent pendant les trois minutes, ne pas gronder, mais expirer soi-même lentement et de façon audible – en général, le silence revient. Si quelqu’un ne veut faire aucun skill, il reste assis trois minutes en silence et estime quand même son chiffre : ne rien faire est aussi un test. Si un jeune semble remué après la compétition, lui proposer discrètement de continuer à respirer près de la fenêtre ouverte.",
+            "blatt": "ff6-olympia-pass"
+          },
+          {
+            "titel": "Boussole, Skills-Pass et mission",
+            "dauer": 10,
+            "phase": "abschluss",
+            "text": "Ouvrir la boussole des skills dans le cahier et l’expliquer en deux phrases : la valise à skills de la 7e range les skills selon la tension ; la boussole les range selon les domaines de la vie – une case par chapitre. Montrer la liste des skills de la 7e et lire l’exemple d’entrée (2 min). Puis chacun remplit la case « 1 · Se retrouver » : son skill joker pour les situations nouvelles et quand il l’utilise ; « encore ouvert » est permis (3 min). Skills-Pass : écrire la question au tableau – quel skill de la 7e ai-je retrouvé aujourd’hui ? Écrire la phrase, tampon en passant dans les rangs (3 min). Pour finir, montrer la mission de la semaine dans le cahier et l’annoncer en une phrase, puis annoncer le prochain chapitre (2 min).",
+            "sagen": [
+              "La valise demande : le chiffre est à combien ? La boussole demande : où est-ce que je suis – à l’école, en pleine dispute, en famille, sur le portable ?",
+              "Première case : quel skill est votre joker quand vous êtes nouveau quelque part et que le chiffre monte ?",
+              "Votre mission d’ici la semaine prochaine : sortez le joker une fois quand le chiffre dépasse 50. Chiffre avant, skill, chiffre après."
+            ],
+            "tipp": "Compléter la boussole toujours ensemble, à la dernière séance d’un chapitre, jamais en devoir à la maison – elle reste ainsi un rituel et non une fiche de travail. Le diplôme reste accroché à côté de la charte de classe.",
+            "wennEsKippt": "Si quelqu’un dit qu’il n’a pas besoin de skills, le laisser dire et rester curieux : alors je suis curieux de voir ce que tu écriras dans la boussole – « encore ouvert » est aussi une entrée. Si les nouveaux semblent perdus parmi tous ces noms, montrer le pass olympique : les cinq du jour y figurent, un seul suffit.",
+            "blatt": "ff-skills-kompass"
+          }
+        ],
+        "bruecke": "La semaine prochaine commence le premier grand thème de l’année : qu’est-ce qui donne de la valeur à une personne – et quel rapport avec les notes, les likes et l’apparence ? Vous mettrez aux enchères ce qui ne s’achète pas.",
+        "mission": "Sors ton skill joker une fois cette semaine quand ton chiffre dépasse 50 – dans le bus ou avant un devoir en classe. Chiffre avant, skill, chiffre après : qu’est-ce qui a bougé ?",
+        "hintergrund": "Après l’été, les skills de la 7e n’ont pas disparu, mais ils sont plus difficiles à retrouver. Qui rappelle et applique activement ce qu’il a appris le retient mieux qu’en le relisant (Roediger & Karpicke, 2006) – les ateliers font refaire et expliquer chaque skill par chaque jeune. L’échelle de tension de 0 à 100 fait partie des outils de base de l’entraînement aux skills pour adolescents (Rathus & Miller, 2015) : quand l’excitation est forte, les skills par le corps et les sens aident ; à un niveau moyen, les skills mentaux aussi ; la classe range donc les cinq épreuves dans les zones. Qui explique et montre un skill aux autres se vit comme compétent ; les réussites et l’apprentissage par l’exemple de pairs renforcent le sentiment d’efficacité personnelle (Bandura, 1977). D’où l’or pour l’explication et une médaille pour toute la classe plutôt qu’un podium – les nouveaux apprennent des autres sans être exposés.",
+        "quellen": [
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "achtung": "Les compétitions dérapent facilement : qui perd ou se fait moquer revit de vieilles blessures – d’où des médailles pour soi plutôt que des points contre les autres, et des nouveaux jamais exposés comme ceux qui ne savent rien. La statue stop se montre seulement à sa propre équipe, personne ne s’approche de personne ; qui sursaute ou se fige devient coach et sera vu plus tard en tête-à-tête. Demander avant la respiration carrée qui a de l’asthme. Signes de violence, d’automutilation ou d’idées suicidaires : ne pas approfondir devant la classe, informer le SePAS le jour même, suivre le protocole de protection.",
+        "differenzierung": {
+          "leichter": "La couleur suffit à la place du chiffre : vert, orange, rouge. À chaque atelier, quelqu’un qui lit bien lit la carte ; qui apprend encore la langue du cours se fait montrer le skill par son tandem – montrer compte comme expliquer. Le message en « je » peut rester oral, avec les débuts de phrase de la carte ; dans la boussole, le nom du skill suffit.",
+          "schwerer": "Être le pro de l’explication à un atelier : expliquer le skill en trois étapes au plus, sans le montrer. Inventer une sixième épreuve pour les prochaines olympiades et l’écrire sur une carte. Noter en plus dans la boussole à partir de quel chiffre le skill joker ne suffit plus – et ce qui aide alors."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le chiffre aux doigts (5 min), échelle de tension sur la ligne avec deux situations (8 min), trois épreuves l’une après l’autre avec toute la classe à sa place – souffle, sens, stop –, expliquées par des volontaires (22 min), skill joker avec chiffre avant et après (7 min), boussole des skills et Skills-Pass (8 min). Tête et message en « je » sont rattrapés lors des prochaines séances, en pause active."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff6-olympia-pass",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "60 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Skills-Olympiade",
+        "Anspannung 0–100",
+        "Skills auffrischen",
+        "Joker-Skill",
+        "Förderfach"
+      ],
+      "bild": "icon:medal",
+      "kurs": [
+        "ff6-e02"
+      ],
+      "de": {
+        "titel": "Mein Olympia-Pass",
+        "untertitel": "Fünf Disziplinen, fünf Skills aus der 7e – Medaillen für dich, nicht gegen andere",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Die drei Zonen",
+            "punkte": [
+              "Grün (0–30): klarer Kopf – reden, zuhören, Skills üben.",
+              "Gelb (30–70): es wird eng – umschalten mit Kopf, Sinnen, Musik, Bewegung.",
+              "Rot (70–100): der Körper übernimmt – nur noch Körper und Sinne, raus, Hilfe holen."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Deine Zahl von 0 bis 100 – dreimal heute."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Wann",
+              "Zahl"
+            ],
+            "breiten": [
+              3,
+              1
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "Check-in",
+                ""
+              ],
+              [
+                "Nach den Stationen",
+                ""
+              ],
+              [
+                "Nach meinem Joker-Skill",
+                ""
+              ]
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Nach jeder Station: Bronze – ausprobiert, Silber – klappt bei mir, Gold – kann ich erklären."
+          },
+          {
+            "art": "einschaetzung",
+            "items": [
+              "Atem – Kastenatmung und der ruhige Streifen",
+              "Sinne – Beutel und 3-3-3",
+              "Kopf – ABC mit Störsender, rückwärts zählen",
+              "Stopp – Stopp-Statue und Stopp, zurück, ausatmen",
+              "Ich-Botschaft – das Übersetzungsbüro"
+            ],
+            "optionen": [
+              "Bronze",
+              "Silber",
+              "Gold"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Übersetzungsbüro: Mach aus einer Du-Botschaft von der Stationskarte eine Ich-Botschaft."
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ich bin …, wenn …, weil …",
+              "Ich wünsche mir …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein Joker-Skill: Welcher Skill hat dich heute am besten runtergebracht?"
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein Joker-Skill: …",
+              "Ich ziehe ihn, wenn …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Deine Zahlen und Medaillen gehören dir. In der Runde reicht der Name deines Joker-Skills."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen halten ihre Anspannung an drei Punkten der Stunde fest, schätzen sich an fünf Stationen selbst ein (Bronze, Silber, Gold) und wählen ihren Joker-Skill für neue Situationen.",
+          "ablauf": [
+            "Einheit 2, Schritt 1 (2 Min.): Zahl vom Check-in eintragen; Schritt 3: die Zonen im Kasten nachlesen.",
+            "Schritte 4 und 6: an jeder Station die Medaille ankreuzen, an der Ich-Botschaft-Station Aufgabe 3 schreiben.",
+            "Schritte 7 und 8: Zahlen nach den Stationen und nach dem Joker-Skill eintragen, Aufgabe 4 ausfüllen.",
+            "Schritt 9: Der Joker-Skill wird zum ersten Eintrag im Skills-Kompass."
+          ],
+          "hintergrund": "Selbst vergebene Medaillen statt Rangliste: Die Einschätzung bleibt bei der Person und erzeugt keinen Vergleich. Zahl vorher und nachher ist das Grundprinzip des Skills-Tests (Rathus & Miller, 2015); Erfolgserlebnisse und das Erklären für andere stärken die Selbstwirksamkeit (Bandura, 1977).",
+          "quellen": [
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+          ],
+          "achtung": "Das Blatt wird nicht eingesammelt. Zahlen über 80 an allen drei Punkten sind ein Grund, nach der Stunde nachzufragen.",
+          "material": "Stationskarten (Kopiervorlage)"
+        }
+      },
+      "fr": {
+        "titel": "Mon pass olympique",
+        "untertitel": "Cinq épreuves, cinq skills de la 7e – des médailles pour toi, pas contre les autres",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Les trois zones",
+            "punkte": [
+              "Vert (0–30) : tête claire – parler, écouter, s’entraîner aux skills.",
+              "Orange (30–70) : ça se tend – changer de canal : tête, sens, musique, mouvement.",
+              "Rouge (70–100) : le corps prend le dessus – corps et sens, sortir, chercher de l’aide."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ton chiffre de 0 à 100 – trois fois aujourd’hui."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Quand",
+              "Chiffre"
+            ],
+            "breiten": [
+              3,
+              1
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "Tour d’humeur",
+                ""
+              ],
+              [
+                "Après les ateliers",
+                ""
+              ],
+              [
+                "Après mon skill joker",
+                ""
+              ]
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Après chaque atelier : bronze – essayé, argent – ça marche chez moi, or – je sais l’expliquer."
+          },
+          {
+            "art": "einschaetzung",
+            "items": [
+              "Souffle – respiration carrée et la bandelette calme",
+              "Sens – le sac et le 3-3-3",
+              "Tête – ABC avec brouilleurs, compter à rebours",
+              "Stop – la statue stop et Stop, recule, souffle",
+              "Message en « je » – le bureau de traduction"
+            ],
+            "optionen": [
+              "Bronze",
+              "Argent",
+              "Or"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Bureau de traduction : transforme un message en « tu » de la carte d’atelier en message en « je »."
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Je me sens …, quand …, parce que …",
+              "J’aimerais …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ton skill joker : quel skill t’a le mieux fait redescendre aujourd’hui ?"
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mon skill joker : …",
+              "Je le sors quand …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "Tes chiffres et tes médailles t’appartiennent. Au tour de table, le nom de ton skill joker suffit."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes notent leur tension à trois moments de la séance, s’auto-évaluent à cinq ateliers (bronze, argent, or) et choisissent leur skill joker pour les situations nouvelles.",
+          "ablauf": [
+            "Séance 2, étape 1 (2 min) : noter le chiffre du tour d’humeur ; étape 3 : relire les zones dans l’encadré.",
+            "Étapes 4 et 6 : cocher sa médaille à chaque atelier, écrire l’exercice 3 à l’atelier du message en « je ».",
+            "Étapes 7 et 8 : noter les chiffres après les ateliers et après le skill joker, remplir l’exercice 4.",
+            "Étape 9 : le skill joker devient la première entrée de la boussole des skills."
+          ],
+          "hintergrund": "Des médailles que l’on se donne soi-même plutôt qu’un classement : l’évaluation reste chez la personne et ne crée pas de comparaison. Le chiffre avant et après est le principe de base du test des skills (Rathus & Miller, 2015) ; les réussites et le fait d’expliquer aux autres renforcent le sentiment d’efficacité personnelle (Bandura, 1977).",
+          "quellen": [
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+          ],
+          "achtung": "La fiche n’est pas ramassée. Des chiffres au-dessus de 80 aux trois moments sont une raison de parler au jeune après le cours.",
+          "material": "Cartes d’atelier (modèle à photocopier)"
+        }
+      }
+    },
+    {
+      "id": "ff6-olympiade-stationen",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "40 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Skills-Olympiade",
+        "Stationen",
+        "Skills auffrischen",
+        "Förderfach"
+      ],
+      "bild": "icon:trophy",
+      "kurs": [
+        "ff6-e02"
+      ],
+      "de": {
+        "titel": "Stationskarten der Skills-Olympiade",
+        "untertitel": "Kopiervorlage – fünf Stationen und die Ablaufkarte, einmal auf festes Papier kopieren und ausschneiden",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So werden die Karten gebraucht",
+            "punkte": [
+              "Jede Station bekommt ihre Karte und ein Schild mit der Nummer; die Karte „So läuft jede Station“ für jedes Team kopieren oder an die Tafel hängen.",
+              "Die Teams rotieren auf das Signal; die Lehrkraft ist Schiedsrichterin und bleibt in der Nähe der Stopp-Station.",
+              "Keine Berührung, nichts in den Mund, nichts werfen. Wer nicht mitmachen mag, ist Coach."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 150,
+            "karten": [
+              {
+                "titel": "1 · Atem: der ruhige Streifen",
+                "text": "Kastenatmung, drei Runden: Mit dem Finger ein Quadrat auf den Tisch malen – 4 Sekunden ein, 4 halten, 4 aus, 4 halten (Asthma: ohne Halten). Dann hält jede Person ihren Papierstreifen eine Handbreit vor den Mund und atmet 10 Sekunden so langsam aus, dass er nur zittert. Zwei Versuche. Gold: Erklär der Gruppe die Kastenatmung in drei Schritten."
+              },
+              {
+                "titel": "2 · Sinne: Beutel und 3-3-3",
+                "text": "Jede Person greift in den Beutel, ohne hinzuschauen, tastet 10 Sekunden und nennt den Gegenstand. Dann das Blitz-3-3-3 reihum: Jede Person nennt drei Dinge, die sie sieht, dann drei, die sie hört, dann drei, die sie spürt – Stuhl, Füße, Ärmel. Gold: Erklär, wann Sinnes-Skills helfen – auch bei Rot."
+              },
+              {
+                "titel": "3 · Kopf: ABC mit Störsender",
+                "text": "Eine Person nennt 30 Sekunden lang zu jedem Buchstaben ein Tier, in jeder Sprache – kein Tier, nächster Buchstabe. Zwei stören in Zimmerlautstärke mit Fragen und Geschichten, nicht mit Lärm, nichts Persönliches; eine Person zählt. Jede Person ist einmal dran. Danach reihum von 50 in Dreierschritten rückwärts. Gold: Erklär, warum Kopf-Skills bei Gelb helfen und bei Rot nicht."
+              },
+              {
+                "titel": "4 · Stopp: die Stopp-Statue",
+                "text": "Jede Person zeigt dem Team einmal ihr Stopp, vom Platz aus – niemand geht auf jemanden zu: Hand hoch, Blick zur Person, feste Stimme, ein kurzer Satz. Das Team macht den Stopp-Check: Hand? Blick? Stimme? Kein Lächeln? Keine Entschuldigung? Wer sein Stopp nicht zeigen mag, macht nur den Check. Dann alle zusammen: Stopp, zurück, ausatmen – nichts sagen, einen Schritt zurück, fünfmal lang aus. Gold: Erklär die drei Schritte."
+              },
+              {
+                "titel": "5 · Ich-Botschaft: das Übersetzungsbüro",
+                "text": "Jede Person nimmt eine Du-Botschaft und übersetzt sie: Ich bin … (Gefühl), wenn … (was passiert), weil … (was mir wichtig ist), ich wünsche mir … Ohne „immer“ und „nie“. Schreib sie in den Olympia-Pass und sag sie dem Team; das Team prüft die vier Teile. Du-Botschaften: „Immer nimmst du mein Ladekabel.“ – „Du hörst mir nie zu.“ – „Du hast mich im Chat schon wieder ignoriert.“ – „Nie klopfst du, bevor du in mein Zimmer kommst.“"
+              },
+              {
+                "titel": "So läuft jede Station",
+                "text": "1. Eine Person liest die Karte vor. 2. Wer den Skill aus der 7e kennt, erklärt ihn in 30 Sekunden – sonst nach der Karte. 3. Alle probieren. 4. Jede Person kreuzt ihre Medaille im Olympia-Pass an: Bronze – ausprobiert, Silber – klappt bei mir, Gold – kann ich erklären. 5. Auf das Signal: aufräumen, eine Station weiter. Wer nicht mitmachen mag, ist Coach: liest vor, stoppt die Zeit, hakt ab. Stopp gilt sofort."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Fünf Stationskarten, mit denen eine Vierergruppe die Disziplinen ohne Lehrkraft durchläuft, dazu die Ablaufkarte für jedes Team.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; die Ablaufkarte fünfmal.",
+            "Einheit 2, Schritt 4: Karten an die Stationen legen, Ablaufkarte vorlesen; Schritte 4 und 6: zwei und drei Stationen zu je 7 Minuten.",
+            "Nach der Stunde einsammeln; laminiert halten die Karten mehrere Jahre."
+          ],
+          "hintergrund": "Aktives Abrufen und Erklären festigt Gelerntes besser als Wiederholen durch die Lehrkraft (Roediger & Karpicke, 2006). Die Karten tragen deshalb die Erklär-Aufgabe („Gold“) in jeder Disziplin.",
+          "quellen": [
+            "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255."
+          ],
+          "material": "Festes Papier, Schere; je Station ein Schild; Papierstreifen, Tastbeutel"
+        }
+      },
+      "fr": {
+        "titel": "Cartes d’atelier des olympiades des skills",
+        "untertitel": "Modèle à photocopier – cinq ateliers et la carte de déroulement, à copier une fois sur papier épais et à découper",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Comment utiliser les cartes",
+            "punkte": [
+              "Chaque atelier reçoit sa carte et un panneau avec son numéro ; la carte « Le déroulement de chaque atelier » est copiée pour chaque équipe ou affichée au tableau.",
+              "Les équipes tournent au signal ; l’enseignant·e arbitre et reste près de l’atelier stop.",
+              "On ne se touche pas, rien dans la bouche, rien à lancer. Qui ne veut pas participer est coach."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 150,
+            "karten": [
+              {
+                "titel": "1 · Souffle : la bandelette calme",
+                "text": "Respiration carrée, trois tours : dessiner un carré sur la table avec le doigt – 4 secondes pour inspirer, 4 pour retenir, 4 pour expirer, 4 pour retenir (asthme : sans retenir). Puis chacun tient sa bandelette de papier à une main de la bouche et expire 10 secondes si lentement qu’elle ne fait que trembler. Deux essais. Or : explique au groupe la respiration carrée en trois étapes."
+              },
+              {
+                "titel": "2 · Sens : le sac et le 3-3-3",
+                "text": "Chacun plonge la main dans le sac sans regarder, touche 10 secondes et nomme l’objet. Puis le 3-3-3 éclair à tour de rôle : chacun nomme trois choses qu’il voit, puis trois qu’il entend, puis trois qu’il sent sur sa peau – la chaise, les pieds, la manche. Or : explique quand les skills par les sens aident – même dans le rouge."
+              },
+              {
+                "titel": "3 · Tête : ABC avec brouilleurs",
+                "text": "Une personne nomme pendant 30 secondes un animal par lettre, dans n’importe quelle langue – pas d’animal, lettre suivante. Deux brouillent à volume normal avec des questions et des histoires, pas avec du bruit, rien de personnel ; une personne compte. Chacun passe une fois. Ensuite, à tour de rôle, compter à rebours de 50 en sautant de trois en trois. Or : explique pourquoi les skills mentaux aident en orange et pas en rouge."
+              },
+              {
+                "titel": "4 · Stop : la statue stop",
+                "text": "Chacun montre une fois son stop à l’équipe, depuis sa place – personne ne s’approche de personne : main levée, regard vers la personne, voix ferme, une phrase courte. L’équipe fait le check du stop : la main ? le regard ? la voix ? pas de sourire ? pas d’excuse ? Qui ne veut pas montrer son stop fait seulement le check. Puis tous ensemble : Stop, recule, souffle – ne rien dire, un pas en arrière, cinq longues expirations. Or : explique les trois étapes."
+              },
+              {
+                "titel": "5 · Message en « je » : le bureau de traduction",
+                "text": "Chacun prend un message en « tu » et le traduit : je me sens … (émotion), quand … (ce qui se passe), parce que … (ce qui compte pour moi), j’aimerais … Sans « toujours » ni « jamais ». Écris-le dans le pass olympique et dis-le à l’équipe ; l’équipe vérifie les quatre parties. Messages en « tu » : « Tu prends toujours mon câble de recharge. » – « Tu ne m’écoutes jamais. » – « Tu m’as encore ignoré dans le chat. » – « Tu ne frappes jamais avant d’entrer dans ma chambre. »"
+              },
+              {
+                "titel": "Le déroulement de chaque atelier",
+                "text": "1. Une personne lit la carte. 2. Qui connaît le skill depuis la 7e l’explique en 30 secondes – sinon, on suit la carte. 3. Tout le monde essaie. 4. Chacun coche sa médaille dans le pass olympique : bronze – essayé, argent – ça marche chez moi, or – je sais l’expliquer. 5. Au signal : ranger, atelier suivant. Qui ne veut pas participer est coach : il lit, chronomètre, coche. Stop vaut tout de suite."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Cinq cartes d’atelier avec lesquelles un groupe de quatre parcourt les épreuves sans adulte, plus la carte de déroulement pour chaque équipe.",
+          "ablauf": [
+            "Photocopier une fois sur papier épais et découper ; la carte de déroulement cinq fois.",
+            "Séance 2, étape 4 : poser les cartes aux ateliers, lire la carte de déroulement ; étapes 4 et 6 : deux puis trois ateliers de 7 minutes.",
+            "Ramasser après la séance ; plastifiées, les cartes servent plusieurs années."
+          ],
+          "hintergrund": "Rappeler et expliquer activement ancre mieux ce qui a été appris qu’une répétition par l’enseignant·e (Roediger & Karpicke, 2006). Les cartes portent donc la consigne d’explication (« or ») dans chaque épreuve.",
+          "quellen": [
+            "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255."
+          ],
+          "material": "Papier épais, ciseaux ; un panneau par atelier ; bandelettes, sac à toucher"
+        }
+      }
+    }
+  ]
+}

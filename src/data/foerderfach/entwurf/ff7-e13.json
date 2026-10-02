@@ -43,7 +43,7 @@
           "üben den Skill „Stopp, zurück, ausatmen“ zweimal und schätzen ihre Zahl vorher und nachher"
         ],
         "material": [
-          "Schülerheft, Stempel für den Pass",
+          "Schülerheft, Stempel für den Skills-Pass",
           "Gefühlsrad-Plakat, 20 Klebepunkte",
           "Plakat „Was sind Skills?“ (Einheit 1)",
           "Anspannungsskala als Plakat (A3)",
@@ -122,7 +122,7 @@
             "titel": "Rückblick und Start ins Kapitel",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren letzten Satz aus dem Skills-Pass vor. Zur Wochen-Mission aus der Stunde vor den Ferien per Daumen fragen – hoch, Mitte oder runter; eine Stimme erzählt, wie es war. Dann an die letzte Stunde anknüpfen: Bei den gemischten Gefühlen ging es um die Stärke eines Gefühls von 0 bis 10; die neue Skala misst die Anspannung insgesamt und zeigt, was dann noch hilft. Das neue Kapitel mit seiner Leitfrage an die Tafel schreiben: Gefühle regulieren – Was hilft mir, wenn es zu viel wird? Kurz ankündigen: fünf Stunden, am Ende packt jede Person ihren eigenen Skills-Koffer.",
+            "text": "Eine Person liest ihren letzten Satz aus dem Skills-Pass vor. Zur Wochen-Mission aus der Stunde vor den Ferien per Daumen fragen: Wer hat sich bei einem Gefühls-Mix ertappt – hoch, Mitte oder runter? Eine Stimme erzählt, welche zwei Gefühle es waren. Dann an die letzte Stunde anknüpfen: Bei den gemischten Gefühlen ging es um die Stärke eines Gefühls von 0 bis 10; die neue Skala misst die Anspannung insgesamt und zeigt, was dann noch hilft. Das neue Kapitel mit seiner Leitfrage an die Tafel schreiben: Gefühle regulieren – Was hilft mir, wenn es zu viel wird? Kurz ankündigen: fünf Stunden, am Ende packt jede Person ihren eigenen Skills-Koffer.",
             "sagen": [
               "Letztes Mal ging es darum, wie stark ein Gefühl ist. Ab heute geht es darum, was man macht, wenn es zu stark wird.",
               "Die nächsten fünf Wochen sind so etwas wie ein Trainingslager. Am Ende hat jede und jeder einen Koffer mit Skills, die wirklich passen."
@@ -306,7 +306,7 @@
           "s’entraînent deux fois au skill « Stop, recule, souffle » et estiment leur chiffre avant et après"
         ],
         "material": [
-          "Cahier de l’élève, tampon",
+          "Cahier de l’élève, tampon pour le Skills-Pass",
           "Roue des émotions, 20 gommettes",
           "Affiche « C’est quoi, un skill ? »",
           "Échelle de tension en affiche (A3)",
@@ -385,7 +385,7 @@
             "titel": "Retour sur la séance et ouverture du chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un ou une jeune lit sa dernière phrase du Skills-Pass. Pour la mission de la semaine d’avant les vacances, demander où chacun en est – pouce en haut, au milieu ou en bas ; une voix raconte. Puis faire le lien avec la dernière séance : avec les émotions mélangées, on a évalué la force d’une émotion de 0 à 10 ; la nouvelle échelle mesure la tension dans son ensemble et montre ce qui aide encore. Écrire au tableau le nouveau chapitre et sa question clé : Réguler ses émotions – qu’est-ce qui m’aide quand c’est trop ? Annoncer brièvement : cinq séances, et à la fin, chacun remplit sa propre valise à skills.",
+            "text": "Un ou une jeune lit sa dernière phrase du Skills-Pass. Pour la mission d’avant les vacances, vote du pouce : qui a repéré un mélange d’émotions – en haut, au milieu ou en bas ? Une voix raconte quelles deux émotions c’étaient. Puis faire le lien avec la dernière séance : avec les émotions mélangées, on a évalué la force d’une émotion de 0 à 10 ; la nouvelle échelle mesure la tension dans son ensemble et montre ce qui aide encore. Écrire au tableau le nouveau chapitre et sa question clé : Réguler ses émotions – qu’est-ce qui m’aide quand c’est trop ? Annoncer brièvement : cinq séances, et à la fin, chacun remplit sa propre valise à skills.",
             "sagen": [
               "La dernière fois, on a regardé à quel point une émotion est forte. À partir d’aujourd’hui, on se demande quoi faire quand elle devient trop forte.",
               "Les cinq prochaines semaines, c’est un peu un camp d’entraînement. À la fin, chacun aura une valise remplie de skills qui lui conviennent vraiment."

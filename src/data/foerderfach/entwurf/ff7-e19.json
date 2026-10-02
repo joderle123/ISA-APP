@@ -42,17 +42,18 @@
           "probieren den Skill „Erst atmen, dann reden“ aus"
         ],
         "material": [
-          "Schülerheft, Stempel für den Pass",
+          "Schülerheft, Stempel für den Skills-Pass",
           "Gefühlsrad-Plakat, 20 Klebepunkte",
           "Vorwurf-Karten, ein Satz je Gruppe",
-          "Uhr oder Handy-Timer mit Signal"
+          "Uhr oder Handy-Timer mit Signal",
+          "Briefkasten, Rollenkarten, Klassenrat-Heft"
         ],
         "vorbereitung": [
           "Vorwurf-Karten kopieren, schneiden, je Tischgruppe ein Satz.",
           "Die Formel (Schritt 3) an die Tafel schreiben und abdecken.",
           "Vorher zwei Freiwillige fragen: eine Person unterbricht in Schritt 3, eine erzählt in Schritt 6.",
           "Erzählthemen (Schritt 7) an die Tafel schreiben.",
-          "Für Schritt 8 Platz zum Gehen schaffen: Taschen weg."
+          "Für Schritt 8 die Zettel aus dem Briefkasten lesen und ein Anliegen auswählen, das die ganze Klasse betrifft."
         ],
         "ablauf": [
           {
@@ -92,8 +93,8 @@
           },
           {
             "min": "75–85",
-            "phase": "aktiv",
-            "titel": "Begegnungen: Ich-Botschaft und Zusammenfassen"
+            "phase": "uebung",
+            "titel": "Klassenrat: ein Anliegen als Ich-Botschaft"
           },
           {
             "min": "85–95",
@@ -111,7 +112,7 @@
             "titel": "Check-in: Ich fühle mich …, weil …",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100). Die Lehrkraft beginnt mit einem ganzen Satz: Ich fühle mich …, weil … – zum Beispiel: Ich bin ein bisschen gestresst, weil mein Zug Verspätung hatte. Dann sagen drei, vier Freiwillige ihren Satz in derselben Form; das „weil“ bleibt freiwillig und darf etwas Kleines sein – Bus, Wetter, Test (5 Min.). Zum Schluss darauf hinweisen: Ihr habt gerade den ersten Teil einer Ich-Botschaft gesagt – heute kommt der Rest.",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100). Dann die Ampel-Frage: Wer bei Gelb oder Rot ist, nimmt sich still einen Skill aus dem Ampelplan – alle atmen dazu dreimal lang aus, so muss sich niemand melden. Die Lehrkraft beginnt mit einem ganzen Satz: Ich fühle mich …, weil … – zum Beispiel: Ich bin ein bisschen gestresst, weil mein Zug Verspätung hatte. Dann sagen drei, vier Freiwillige ihren Satz in derselben Form; das „weil“ bleibt freiwillig und darf etwas Kleines sein – Bus, Wetter, Test (5 Min.). Zum Schluss darauf hinweisen: Ihr habt gerade den ersten Teil einer Ich-Botschaft gesagt – heute kommt der Rest.",
             "sagen": [
               "Gefühl und Zahl – und wer mag, sagt den ganzen Satz: Ich fühle mich …, weil …",
               "Das ‚weil‘ ist freiwillig. ‚Müde, 30‘ reicht auch."
@@ -234,17 +235,16 @@
             "blatt": "ff7-ich-botschaften"
           },
           {
-            "titel": "Begegnungen: Ich-Botschaft und Zusammenfassen",
+            "titel": "Klassenrat: ein Anliegen als Ich-Botschaft",
             "dauer": 10,
-            "phase": "aktiv",
-            "text": "Alle stehen auf und gehen langsam durch den Raum, zwischen den Tischen hindurch. Beim Ruhezeichen (Hand hoch) bleibt jede Person vor der nächsten stehen, und die Lehrkraft liest eine Situation von einer Vorwurf-Karte vor. Wer näher am Fenster steht, sagt eine Ich-Botschaft; die andere Person fasst sie in einem Satz zusammen: Du bist …, weil … Du wünschst dir … Dann weitergehen; vier Runden, mit wechselnden Rollen (8 Min.). Zum Schluss fragen: Was war schwerer – die Ich-Botschaft oder das Zusammenfassen (2 Min.)?",
+            "phase": "uebung",
+            "text": "Heute tagt der Klassenrat – mit dem, was die Stunde geübt hat. Die Rollen aus Stunde 9 nehmen ihre Karten; Eröffnung, Lob und Danke und der Rückblick auf den letzten Beschluss gehen schnell (3 Min.). Dann liest der Vorsitz ein Anliegen aus dem Briefkasten vor. Klingt es nach Vorwurf, macht die Klasse zuerst gemeinsam eine Ich-Botschaft daraus: Mich stört, dass … Ich wünsche mir … Für die Vorschläge gilt heute eine Zusatzregel: Wer etwas sagt, fasst zuerst in einem Satz zusammen, was die Person davor gesagt hat. Abgestimmt wird mit geschlossenen Augen (5 Min.). Zum Schluss liest das Protokoll den Beschluss vor, und die Rollen für die Sitzung in Stunde 25 werden verteilt (2 Min.).",
             "sagen": [
-              "Hand hoch – stehen bleiben. Die Person vor euch ist euer Gegenüber.",
+              "Bevor ihr euren Vorschlag sagt: Fasst in einem Satz zusammen, was die Person vor euch gesagt hat.",
               "Ihr sagt nicht, ob ihr zustimmt. Ihr sagt nur, was ihr verstanden habt."
             ],
-            "tipp": "Das Zusammenfassen bremst Streit, weil sich die andere Person verstanden fühlt, bevor überhaupt jemand widerspricht. Wer nicht herumgehen möchte, übt am Platz mit der Nachbarin oder dem Nachbarn.",
-            "wennEsKippt": "Werden die Ich-Botschaften zu Beleidigungen oder wird gerempelt, anhalten, eine Situation gemeinsam durchspielen und dann im Sitzen weitermachen. Bleibt jemand ohne Gegenüber, stellt sich die Lehrkraft dazu.",
-            "blatt": "ff7-vorwurf-karten"
+            "tipp": "Das Zusammenfassen bremst Streit, weil sich die andere Person verstanden fühlt, bevor jemand widerspricht – im Klassenrat genauso wie zu zweit. Ein Anliegen reicht; was nach einer bestimmten Person klingt, kommt nicht in die Sitzung, sondern wird unter vier Augen geklärt.",
+            "wennEsKippt": "Wird aus dem Anliegen ein Vorwurf an eine Person, anhalten: Der Klassenrat spricht über Sachen, nicht über Personen – genau dabei hilft die Ich-Botschaft. Reicht die Zeit nicht, wird nicht abgestimmt; das Anliegen kommt als Erstes in die nächste Sitzung. Liegt nichts im Briefkasten, übt die Klasse an einer Vorwurf-Karte, wie ein Anliegen als Ich-Botschaft klingt."
           },
           {
             "titel": "Skill: Erst atmen, dann reden",
@@ -288,7 +288,7 @@
           "leichter": "Nur zwei Teile verlangen: Gefühl und Wunsch („Ich bin genervt. Frag bitte vorher.“); die Formel und die Gefühlswörter vom Gefühlsrad bleiben an der Tafel. Für Aufgabe 1 und 2 Paare so bilden, dass eine Person gut liest; die Vorwurf-Karte liest in der Gruppe jemand vor, der gut liest. Beim Zuhören darf das Zusammenfassen mit „Du meinst also …“ beginnen und in jeder Sprache stattfinden, die beide sprechen.",
           "schwerer": "Aufschreiben, was die andere Person auf die Ich-Botschaft antworten könnte, und eine ruhige zweite Antwort darauf formulieren. Beim Zuhören zu dritt die Beobachtung übernehmen und mit dem Zuhör-Check Rückmeldung geben."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Ich-Satz (5 Min.), Du-Botschaft oder Ich-Botschaft mit Szene und Formel (10 Min.), Aufgabe 1 und 2 und der Vorwurf-Check (15 Min.), Zuhören mit den Zuhör-Bremsen und einer Runde zu zweit (12 Min.), erst atmen, dann reden (3 Min.), Skills-Pass und Wochen-Mission (5 Min.). Die Begegnungen im Raum und der Zuhör-Check entfallen; das Zuhören zu zweit lässt sich in der nächsten Stunde ausbauen."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Ich-Satz (5 Min.), Du-Botschaft oder Ich-Botschaft mit Szene und Formel (10 Min.), Aufgabe 1 und 2 und der Vorwurf-Check (15 Min.), Zuhören mit den Zuhör-Bremsen und einer Runde zu zweit (12 Min.), erst atmen, dann reden (3 Min.), Skills-Pass und Wochen-Mission (5 Min.). Der Klassenrat und der Zuhör-Check entfallen; die Sitzung wird nachgeholt, wo es passt, und das Zuhören zu zweit lässt sich in der nächsten Stunde ausbauen."
       },
       "fr": {
         "titel": "Messages en « je » et écoute",
@@ -300,17 +300,18 @@
           "essaient le skill « Respirer avant de parler »"
         ],
         "material": [
-          "Cahiers, tampon pour le Skills-Pass",
+          "Cahier de l’élève, tampon pour le Skills-Pass",
           "Roue des émotions, 20 gommettes",
           "Cartes reproches, un jeu par îlot",
-          "Montre ou minuteur avec sonnerie"
+          "Montre ou minuteur avec sonnerie",
+          "Boîte, cartes de rôle, cahier du conseil"
         ],
         "vorbereitung": [
           "Cartes reproches : photocopier, découper, un jeu par îlot.",
           "Écrire la formule (étape 3) au tableau et la cacher.",
           "Demander à l’avance à deux jeunes : l’un coupe la parole à l’étape 3, l’autre raconte à l’étape 6.",
           "Écrire au tableau les sujets de l’étape 7.",
-          "Pour l’étape 8, dégager le passage : sacs rangés."
+          "Pour l’étape 8, lire les billets de la boîte aux lettres et choisir un sujet qui concerne toute la classe."
         ],
         "ablauf": [
           {
@@ -350,8 +351,8 @@
           },
           {
             "min": "75–85",
-            "phase": "aktiv",
-            "titel": "Rencontres : message en « je » et résumé"
+            "phase": "uebung",
+            "titel": "Conseil de coopération : un sujet dit en « je »"
           },
           {
             "min": "85–95",
@@ -369,7 +370,7 @@
             "titel": "Tour d’humeur : je me sens…, parce que…",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Une fois tout le monde assis, chacun montre sa tension avec les doigts, à « trois » (0 à 10 doigts pour 0 à 100). Commencer soi-même par une phrase complète : je me sens…, parce que… – par exemple : je suis un peu stressé, parce que mon train avait du retard. Ensuite, trois ou quatre volontaires disent leur phrase sur le même modèle ; le « parce que » reste facultatif et peut être une petite chose – le bus, la météo, un devoir en classe (5 min). Pour finir, faire remarquer : vous venez de dire la première partie d’un message en « je » – aujourd’hui, on voit la suite.",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Une fois tout le monde assis, chacun montre sa tension avec les doigts, à « trois » (0 à 10 doigts pour 0 à 100). Puis la question du feu : qui est dans l’orange ou dans le rouge prend en silence un skill de son plan feu tricolore – tout le monde expire trois fois longuement, ainsi personne n’a à se signaler. Commencer soi-même par une phrase complète : je me sens…, parce que… – par exemple : je suis un peu stressé, parce que mon train avait du retard. Ensuite, trois ou quatre volontaires disent leur phrase sur le même modèle ; le « parce que » reste facultatif et peut être une petite chose – le bus, la météo, un devoir en classe (5 min). Pour finir, faire remarquer : vous venez de dire la première partie d’un message en « je » – aujourd’hui, on voit la suite.",
             "sagen": [
               "Une émotion et un chiffre – et qui veut dit la phrase entière : je me sens…, parce que…",
               "Le “parce que” est facultatif. “Fatigué, 30”, ça suffit aussi."
@@ -492,17 +493,16 @@
             "blatt": "ff7-ich-botschaften"
           },
           {
-            "titel": "Rencontres : message en « je » et résumé",
+            "titel": "Conseil de coopération : un sujet dit en « je »",
             "dauer": 10,
-            "phase": "aktiv",
-            "text": "Tout le monde se lève et marche lentement dans la salle, entre les tables. Au signal du silence (main levée), chacun s’arrête face à la personne la plus proche, et l’enseignant·e lit une situation d’une carte reproche. Celui ou celle qui est le plus près de la fenêtre dit un message en « je » ; l’autre le résume en une phrase : tu es…, parce que… Tu aimerais… Puis on repart ; quatre tours, en changeant de rôle (8 min). Pour finir, demander : qu’est-ce qui était le plus difficile – le message en « je » ou le résumé (2 min) ?",
+            "phase": "uebung",
+            "text": "Aujourd’hui, le conseil se réunit – avec ce que la séance a entraîné. Les rôles répartis à la séance 9 prennent leurs cartes ; ouverture, félicitations et mercis, retour sur la dernière décision vont vite (3 min). Puis la présidence lit un sujet de la boîte aux lettres. S’il sonne comme un reproche, la classe en fait d’abord ensemble un message en « je » : ça me dérange que… je souhaite que… Pour les propositions, une règle de plus aujourd’hui : qui prend la parole résume d’abord en une phrase ce que la personne précédente a dit. On vote les yeux fermés (5 min). Pour finir, le secrétaire lit la décision, et on répartit les rôles de la réunion de la séance 25 (2 min).",
             "sagen": [
-              "Main levée – on s’arrête. La personne en face de vous est votre partenaire.",
+              "Avant de donner votre proposition : résumez en une phrase ce que la personne avant vous a dit.",
               "Vous ne dites pas si vous êtes d’accord. Vous dites seulement ce que vous avez compris."
             ],
-            "tipp": "Résumer freine la dispute, parce que l’autre se sent compris avant même que quelqu’un ne le contredise. Qui ne veut pas se déplacer s’entraîne à sa place avec son voisin ou sa voisine.",
-            "wennEsKippt": "Si les messages en « je » tournent à l’insulte ou si on se bouscule, arrêter, jouer une situation ensemble, puis continuer assis. Si quelqu’un se retrouve sans partenaire, l’enseignant·e se met en face de lui.",
-            "blatt": "ff7-vorwurf-karten"
+            "tipp": "Résumer freine les disputes, parce que l’autre se sent compris avant que quelqu’un ne le contredise – au conseil comme à deux. Un sujet suffit ; ce qui vise une personne précise n’entre pas en réunion, mais se règle en tête-à-tête.",
+            "wennEsKippt": "Si le sujet devient un reproche contre une personne, s’arrêter : le conseil parle de choses, pas de personnes – et le message en « je » aide justement à ça. Si le temps manque, on ne vote pas ; le sujet passe en premier à la réunion suivante. Si la boîte est vide, la classe s’exerce avec une carte reproche : à quoi ressemble un sujet dit en « je » ?"
           },
           {
             "titel": "Skill : respirer avant de parler",
@@ -546,7 +546,7 @@
           "leichter": "N’exiger que deux parties : l’émotion et le souhait (« Je suis agacé. Demande avant, s’il te plaît. ») ; la formule et les mots de la roue des émotions restent au tableau. Pour les exercices 1 et 2, former les binômes de sorte que l’un des deux lise bien ; dans l’îlot, un jeune qui lit bien lit la carte reproche. Pour l’écoute, le résumé peut commencer par « Tu veux dire que… » et se faire dans n’importe quelle langue que les deux parlent.",
           "schwerer": "Écrire ce que l’autre pourrait répondre au message en « je », puis formuler une deuxième réponse calme. Pour l’écoute, travailler à trois et prendre le rôle d’observateur, avec un retour à partir de la grille d’écoute."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec une phrase en « je » (5 min), message en « tu » ou en « je » avec la scène et la formule (10 min), exercices 1 et 2 et test du reproche (15 min), écoute avec les freins à l’écoute et un tour à deux (12 min), respirer avant de parler (3 min), Skills-Pass et mission de la semaine (5 min). Les rencontres dans la salle et la grille d’écoute sont supprimées ; l’écoute à deux peut être approfondie à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec une phrase en « je » (5 min), message en « tu » ou en « je » avec la scène et la formule (10 min), exercices 1 et 2 et test du reproche (15 min), écoute avec les freins à l’écoute et un tour à deux (12 min), respirer avant de parler (3 min), Skills-Pass et mission de la semaine (5 min). Le conseil et la grille d’écoute sont supprimés ; la réunion est rattrapée dès que possible, et l’écoute à deux peut être approfondie à la séance suivante."
       }
     }
   ],
@@ -947,11 +947,11 @@
       ],
       "de": {
         "titel": "Vorwurf-Karten",
-        "untertitel": "Kopiervorlage: einmal je Tischgruppe – für die Schritte 4 und 8",
+        "untertitel": "Kopiervorlage: einmal je Tischgruppe – für Schritt 4, als Reserve für Schritt 8",
         "bausteine": [
           {
             "art": "text",
-            "text": "Ausschneiden und je Tischgruppe einen Satz in einen Umschlag stecken. Die Gruppe zieht zwei Karten und macht aus dem Vorwurf eine Ich-Botschaft. In Schritt 8 liest die Lehrkraft die Situationen vor. Heißt jemand in der Klasse so wie eine Figur, den Namen ändern.",
+            "text": "Ausschneiden und je Tischgruppe einen Satz in einen Umschlag stecken. Die Gruppe zieht zwei Karten und macht aus dem Vorwurf eine Ich-Botschaft. Heißt jemand in der Klasse so wie eine Figur, den Namen ändern.",
             "klein": true
           },
           {
@@ -1015,7 +1015,7 @@
           "ablauf": [
             "Einmal je Tischgruppe kopieren, ausschneiden, in Umschläge stecken; Namen tauschen, falls jemand in der Klasse so heißt.",
             "Einheit 19, Schritt 4: Jede Gruppe zieht zwei Karten und formuliert zu jeder eine Ich-Botschaft.",
-            "Schritt 8: Die Lehrkraft liest bei jeder Begegnung eine Situation vor."
+            "Schritt 8: Reserve für den Klassenrat, falls kein Anliegen im Briefkasten liegt."
           ],
           "hintergrund": "Du-Botschaften enthalten Urteile und lösen Verteidigung aus; Ich-Botschaften beschreiben Situation, Gefühl und Wunsch (Gordon, 1972). Erfundene Situationen schaffen Abstand: Geübt wird an Figuren, nicht an echten Konflikten in der Klasse.",
           "quellen": [
@@ -1026,11 +1026,11 @@
       },
       "fr": {
         "titel": "Cartes reproches",
-        "untertitel": "Modèle à photocopier : un jeu par îlot – pour les étapes 4 et 8",
+        "untertitel": "Modèle à photocopier : un jeu par îlot – pour l’étape 4, en réserve pour l’étape 8",
         "bausteine": [
           {
             "art": "text",
-            "text": "Découper et mettre un jeu par îlot dans une enveloppe. L’îlot tire deux cartes et transforme le reproche en message en « je ». À l’étape 8, l’enseignant·e lit les situations à voix haute. Si un jeune de la classe porte le prénom d’un personnage, le changer.",
+            "text": "Découper et mettre un jeu par îlot dans une enveloppe. L’îlot tire deux cartes et transforme le reproche en message en « je ». Si un jeune de la classe porte le prénom d’un personnage, le changer.",
             "klein": true
           },
           {
@@ -1094,7 +1094,7 @@
           "ablauf": [
             "Photocopier une fois par îlot, découper, mettre dans des enveloppes ; changer les prénoms si un jeune de la classe s’appelle ainsi.",
             "Séance 19, étape 4 : chaque îlot tire deux cartes et formule un message en « je » pour chacune.",
-            "Étape 8 : à chaque rencontre, l’enseignant·e lit une situation à voix haute."
+            "Étape 8 : réserve pour le conseil, si la boîte aux lettres est vide."
           ],
           "hintergrund": "Les messages en « tu » contiennent des jugements et provoquent une défense ; les messages en « je » décrivent la situation, l’émotion et le souhait (Gordon, 1972). Les situations inventées créent de la distance : on s’entraîne avec des personnages, pas avec de vrais conflits de la classe.",
           "quellen": [

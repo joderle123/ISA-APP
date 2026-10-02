@@ -22,8 +22,8 @@
           "fr": "grandir"
         },
         {
-          "de": "stolz sein",
-          "fr": "être fier, fière"
+          "de": "stolz sein auf",
+          "fr": "être fier, fière de"
         },
         {
           "de": "die Stärke",
@@ -115,7 +115,7 @@
             "titel": "Check-in: Wenn ich an dieses Jahr denke …",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "An der Tafel steht: Wenn ich an dieses Jahr denke, fühle ich mich … Beim Hereinkommen klebt jede Person bis zu zwei Punkte auf das Gefühlsrad-Plakat; zwei sind heute ausdrücklich erlaubt, denn Abschiede machen oft gemischte Gefühle. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern. Die Lehrkraft beginnt mit zwei Wörtern und einer Zahl, etwa: stolz und ein bisschen wehmütig, 30 – weil heute unsere letzte Stunde ist. Drei, vier Freiwillige nennen ihre Wörter (4 Min.). Zum Schluss gemeinsam auf das Plakat schauen: Wo liegen die Punkte heute (2 Min.)?",
+            "text": "An der Tafel steht: Wenn ich an dieses Jahr denke, fühle ich mich … Beim Hereinkommen klebt jede Person bis zu zwei Punkte auf das Gefühlsrad-Plakat; zwei sind heute ausdrücklich erlaubt, denn Abschiede machen oft gemischte Gefühle. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern. Die Lehrkraft beginnt mit zwei Wörtern und einer Zahl, etwa: stolz und ein bisschen wehmütig, 30 – weil heute unsere letzte Stunde ist. Drei, vier Freiwillige nennen ihre Wörter (4 Min.). Dann ein letztes Mal die Ampel-Frage: Wer bei Gelb oder Rot ist, nimmt sich still einen Skill aus dem Ampelplan – alle atmen dazu dreimal lang aus, so muss sich niemand melden. Zum Schluss gemeinsam auf das Plakat schauen: Wo liegen die Punkte heute (2 Min.)?",
             "sagen": [
               "Wenn ihr an dieses Jahr denkt – welches Wort passt? Heute dürfen es zwei sein.",
               "Letzte Stunden machen manche nervös, andere merken gar nichts. Beides ist in Ordnung."
@@ -127,7 +127,7 @@
             "titel": "Mission und der letzte Punkt am Jahresweg",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Per Daumen nach der Wochen-Mission der letzten Stunde fragen – hoch, Mitte, runter –, eine Stimme erzählt. Hat die Klasse in den letzten Wochen Stücke gezeigt, kurz fragen: Welche Szene ist euch geblieben? Dann setzt eine freiwillige Person den letzten Punkt auf den Jahresweg, bei Kapitel 10: Die Klasse ist oben angekommen. Den Ablauf der Stunde an die Tafel schreiben (Liste) und sagen, dass heute alle Hefte mit nach Hause gehen.",
+            "text": "Per Daumen nach der Wochen-Mission der letzten Stunde fragen (nach Stunde 34: Abschütteln und ankommen) – hoch, Mitte, runter –, eine Stimme erzählt. Hat die Klasse in den letzten Wochen Stücke gezeigt, kurz fragen: Welche Szene ist euch geblieben? Dann setzt eine freiwillige Person den letzten Punkt auf den Jahresweg, bei Kapitel 10: Die Klasse ist oben angekommen. Den Ablauf der Stunde an die Tafel schreiben (Liste) und sagen, dass heute alle Hefte mit nach Hause gehen.",
             "sagen": [
               "Heute ist unsere letzte Stunde in diesem Jahr. Wir schauen zurück, ihr schreibt euch selbst einen Brief, und wir verabschieden uns richtig."
             ],
@@ -335,7 +335,7 @@
             "titel": "Tour d’humeur : quand je pense à cette année…",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Au tableau : quand je pense à cette année, je me sens… En entrant, chaque jeune colle jusqu’à deux gommettes sur la roue des émotions ; deux sont expressément permises aujourd’hui, car les au revoir mélangent souvent les émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts. L’enseignant·e commence avec deux mots et un chiffre, par exemple : fier et un peu nostalgique, 30 – parce que c’est notre dernière séance. Trois ou quatre volontaires disent leurs mots (4 min). Pour finir, regarder ensemble l’affiche : où sont les gommettes aujourd’hui (2 min) ?",
+            "text": "Au tableau : quand je pense à cette année, je me sens… En entrant, chaque jeune colle jusqu’à deux gommettes sur la roue des émotions ; deux sont expressément permises aujourd’hui, car les au revoir mélangent souvent les émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts. L’enseignant·e commence avec deux mots et un chiffre, par exemple : fier et un peu nostalgique, 30 – parce que c’est notre dernière séance. Trois ou quatre volontaires disent leurs mots (4 min). Puis, une dernière fois, la question du feu : qui est dans l’orange ou dans le rouge prend en silence un skill de son plan feu tricolore – tout le monde expire trois fois longuement, ainsi personne n’a à se signaler. Pour finir, regarder ensemble l’affiche : où sont les gommettes aujourd’hui (2 min) ?",
             "sagen": [
               "Quand vous pensez à cette année – quel mot vous correspond ? Aujourd’hui, vous pouvez en prendre deux.",
               "Les dernières séances rendent certains nerveux, d’autres ne sentent rien. Les deux, c’est normal."
@@ -347,7 +347,7 @@
             "titel": "Mission et dernier point sur le chemin de l’année",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Demander avec le pouce où en est la mission de la dernière séance – en haut, au milieu, en bas –, une voix raconte. Si la classe a présenté des pièces ces dernières semaines, demander brièvement : quelle scène vous est restée ? Puis un ou une volontaire colle le dernier point sur le chemin de l’année, au chapitre 10 : la classe est arrivée en haut. Écrire le programme de la séance au tableau (liste) et dire qu’aujourd’hui, tous les cahiers partent à la maison.",
+            "text": "Demander avec le pouce où en est la mission de la dernière séance (après la séance 34 : se secouer et revenir à soi) – en haut, au milieu, en bas –, une voix raconte. Si la classe a présenté des pièces ces dernières semaines, demander brièvement : quelle scène vous est restée ? Puis un ou une volontaire colle le dernier point sur le chemin de l’année, au chapitre 10 : la classe est arrivée en haut. Écrire le programme de la séance au tableau (liste) et dire qu’aujourd’hui, tous les cahiers partent à la maison.",
             "sagen": [
               "Aujourd’hui, c’est notre dernière séance de l’année. On regarde en arrière, vous vous écrivez une lettre, et on se dit vraiment au revoir."
             ],

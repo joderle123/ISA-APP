@@ -38,7 +38,7 @@
       ],
       "de": {
         "titel": "Echt oder fake?",
-        "kurz": "Im Kartenspiel merkt die Klasse, wie leicht man sich täuscht, prüft Beiträge mit einer Checkliste und zieht in einer Aufstellung Grenzen für KI – alles mit erfundenen Beispielen.",
+        "kurz": "Im Kartenspiel merkt die Klasse, wie leicht man sich täuscht, prüft Beiträge mit einer Checkliste und zieht per Handzeichen Grenzen für KI – alles mit erfundenen Beispielen.",
         "ziele": [
           "sortieren erfundene Beiträge nach echt, fake und erst prüfen und begründen ihre Wahl mit einem Hinweis",
           "prüfen Beiträge mit einer Checkliste, fragen zuerst nach der Quelle und nennen, wo sie nachprüfen können",
@@ -55,7 +55,7 @@
         ],
         "vorbereitung": [
           "Fünf Kartensätze kopieren, schneiden, in Umschläge stecken. Namen auf Karten und in Schritt 6 tauschen, wenn sie in der Klasse vorkommen.",
-          "Drei Zonen: grünes Blatt am Fenster, gelbes in der Mitte, rotes an der Tür.",
+          "Die drei Farbblätter nebeneinander an die Tafel hängen: grün 1, gelb 2, rot 3 (Abstimmung in Schritt 6).",
           "Die KI-Regeln des Lycée kennen; gibt es keine, beim Régent nachfragen.",
           "Für die Bewegungspause zweimal drei Sätze über sich vorbereiten, je einer erfunden.",
           "Tafelbild aus Schritt 7 auf den Plakatbogen schreiben und umgedreht aufhängen."
@@ -112,7 +112,7 @@
             "titel": "Check-in: Gefühlsrad, Zahl und ein Netz-Gefühl",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl (3 Min.). Dann eine Zusatzfrage per Handzeichen: Wer hat sich diese Woche über etwas im Netz geärgert oder gewundert – oder ist erschrocken? Zwei, drei Freiwillige nennen nur das Gefühlswort vom Rad, nicht den Inhalt (4 Min.). Die Wörter an den Rand der Tafel schreiben und festhalten: Ein starkes Gefühl beim Lesen ist ein Signal – heute erfahrt ihr, warum (3 Min.).",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl (3 Min.). Danach die Ampel-Frage: Wer bei Gelb oder Rot ist, nimmt sich still einen Skill aus dem Ampelplan – alle atmen dazu dreimal lang aus, so muss sich niemand melden. Dann eine Zusatzfrage per Handzeichen: Wer hat sich diese Woche über etwas im Netz geärgert oder gewundert – oder ist erschrocken? Zwei, drei Freiwillige nennen nur das Gefühlswort vom Rad, nicht den Inhalt (4 Min.). Die Wörter an den Rand der Tafel schreiben und festhalten: Ein starkes Gefühl beim Lesen ist ein Signal – heute erfahrt ihr, warum (3 Min.).",
             "sagen": [
               "Gefühl und Zahl auf drei. Ich fange an: ruhig, 20 – heute geht es um Fakes, und nachher versuche ich, euch reinzulegen.",
               "Nur das Gefühl, nicht worum es ging: Was hat euch diese Woche im Netz geärgert, gewundert oder erschreckt?"
@@ -183,7 +183,7 @@
             "titel": "KI: hilfreich, Vorsicht oder Grenze?",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Klasse (3 Min.): Per Handzeichen fragen, wer schon einmal eine KI benutzt hat – zum Chatten, Übersetzen, für Bilder. Kurz erklären: Eine KI ist ein Programm, das aus sehr vielen Daten gelernt hat und Texte, Bilder, Stimmen und Videos erzeugt. Sie klingt sicher, auch wenn sie sich irrt. Ein Deepfake ist ein gefälschtes Video, Bild oder eine gefälschte Stimme einer echten Person. Aufstellung (13 Min.): Sechs Situationen vorlesen (Liste); alle gehen still in die Zone, die passt – grün: hilft, gelb: Vorsicht, rot: Grenze überschritten. Je zwei Personen aus verschiedenen Zonen begründen, dann in einem Satz ergänzen (Klammer). Bei Situation 5 bleiben alle stehen, wo sie sind; gefragt wird nur: Was würdet ihr Yusuf raten? Klasse (4 Min.): zurück an die Plätze, das Plakat mit dem Tafelbild umdrehen (Schritt 7) und mit den Beispielen der Klasse ergänzen.",
+            "text": "Klasse (3 Min.): Per Handzeichen fragen, wer schon einmal eine KI benutzt hat – zum Chatten, Übersetzen, für Bilder. Kurz erklären: Eine KI ist ein Programm, das aus sehr vielen Daten gelernt hat und Texte, Bilder, Stimmen und Videos erzeugt. Sie klingt sicher, auch wenn sie sich irrt. Ein Deepfake ist ein gefälschtes Video, Bild oder eine gefälschte Stimme einer echten Person. Abstimmung am Platz (13 Min.): Sechs Situationen vorlesen (Liste); die Tischgruppen flüstern zehn Sekunden, dann zeigen alle auf drei mit den Fingern – 1 grün: hilft, 2 gelb: Vorsicht, 3 rot: Grenze überschritten. Je zwei Personen mit verschiedenen Zahlen begründen, dann in einem Satz ergänzen (Klammer). Bei Situation 5 zeigt niemand eine Zahl; gefragt wird nur: Was würdet ihr Yusuf raten? Klasse (4 Min.): das Plakat mit dem Tafelbild umdrehen (Schritt 7) und mit den Beispielen der Klasse ergänzen.",
             "sagen": [
               "Grün heißt: Da hilft KI. Gelb: Vorsicht, erst nachdenken. Rot: Da ist eine Grenze überschritten.",
               "Wo genau liegt für euch die Grenze – und warum?"
@@ -193,11 +193,11 @@
               "Mila lässt eine KI ihren Aufsatz für Deutsch schreiben und gibt ihn als ihren eigenen ab. (rot – das ist nicht ehrlich, sie lernt nichts, und die Schule hat dazu Regeln. Gelb wäre: sich Ideen holen und selbst schreiben.)",
               "Noah macht mit einer App aus einem Klassenfoto ein Bild, auf dem Ben als Clown zu sehen ist, und schickt es in die Gruppe. (rot – ein Bild von jemandem ohne Erlaubnis zu verändern und zu teilen, kann Mobbing sein und strafbar.)",
               "Amira lädt ein Foto ihrer Freundin in eine KI-App, um zu sehen, wie sie mit 80 aussähe – ohne zu fragen. (gelb bis rot – ein fremdes Foto ohne Erlaubnis; die App behält es vielleicht.)",
-              "Yusuf fühlt sich einsam und erzählt jeden Abend einem Chatbot, wie es ihm geht. (Keine Zone, sondern: Was würdet ihr Yusuf raten? Ein Chatbot kann kurz entlasten, aber er kann Falsches raten und ersetzt keinen Menschen. Wem es schlecht geht, redet mit jemandem: Freunde, Familie, SePAS, 116 111.)",
+              "Yusuf fühlt sich einsam und erzählt jeden Abend einem Chatbot, wie es ihm geht. (Keine Zahl, sondern: Was würdet ihr Yusuf raten? Ein Chatbot kann kurz entlasten, aber er kann Falsches raten und ersetzt keinen Menschen. Wem es schlecht geht, redet mit jemandem: Freunde, Familie, SePAS, 116 111.)",
               "Léa fragt eine KI, wann ihr nächster Test ist, und bekommt sofort ein Datum. (gelb – die KI kann das nicht wissen, klingt aber sicher. Im Hausaufgabenheft nachsehen oder nachfragen.)"
             ],
-            "tipp": "Die Regeln der Schule zu KI erst am Ende nennen: Hat die Klasse vorher eigene Grenzen gezogen, werden die Regeln eher verstanden als nur hingenommen. Bei Situation 5 bewusst nicht aufstellen: So muss niemand zeigen, ob er selbst so mit einem Chatbot spricht.",
-            "wennEsKippt": "Läuft die Aufstellung aus dem Ruder, Tempo herausnehmen: erst still bis drei zählen, dann gehen; wer nicht laufen mag, zeigt vom Platz aus mit den Fingern (1 grün, 2 gelb, 3 rot). Lacht die Klasse bei Situation 3 über eine anwesende Person, sofort stoppen: Genau das ist die Grenze. Sagt jemand bei Situation 5, das mache er oder sie auch, das ohne Bewertung stehen lassen und nach der Stunde nachfragen. Fragt jemand nach gefälschten Nacktbildern, kurz und sachlich antworten: Das ist eine klare Grenze und kann strafbar sein; wer so etwas bekommt, leitet nichts weiter und holt sofort eine erwachsene Person. Nicht vertiefen."
+            "tipp": "Die Regeln der Schule zu KI erst am Ende nennen: Hat die Klasse vorher eigene Grenzen gezogen, werden die Regeln eher verstanden als nur hingenommen. Bei Situation 5 bewusst nicht abstimmen: So muss niemand zeigen, ob er selbst so mit einem Chatbot spricht.",
+            "wennEsKippt": "Rufen alle durcheinander oder schauen auf die Finger der Freunde, Tempo herausnehmen: erst still bis drei zählen, dann zeigen alle gleichzeitig und halten die Hand oben, bis die Lehrkraft geschaut hat. Lacht die Klasse bei Situation 3 über eine anwesende Person, sofort stoppen: Genau das ist die Grenze. Sagt jemand bei Situation 5, das mache er oder sie auch, das ohne Bewertung stehen lassen und nach der Stunde nachfragen. Fragt jemand nach gefälschten Nacktbildern, kurz und sachlich antworten: Das ist eine klare Grenze und kann strafbar sein; wer so etwas bekommt, leitet nichts weiter und holt sofort eine erwachsene Person. Nicht vertiefen."
           },
           {
             "titel": "Meine KI-Ampel und was tun bei Fakes",
@@ -238,7 +238,7 @@
               ]
             },
             "tipp": "Hier knüpft die Stunde an Mobbing und Zivilcourage an: Zuschauen ist im Netz nicht neutral, weil jedes Weiterleiten das Bild größer macht. Die Nachricht übt Stufe 2 der Zivilcourage-Leiter – der Person zeigen, dass man auf ihrer Seite ist.",
-            "wennEsKippt": "Will jemand von einem echten Fall erzählen, nicht vertiefen: Danke, dass du das ansprichst – wir reden gleich nach der Stunde. Dann noch am selben Tag den SePAS informieren. Werden die Nachrichten albern, eine gute vorlesen lassen und fragen: Wie ginge es der Person, wenn sie das liest? Bleibt eine Ampel leer, mit einer Situation aus der Aufstellung beginnen lassen.",
+            "wennEsKippt": "Will jemand von einem echten Fall erzählen, nicht vertiefen: Danke, dass du das ansprichst – wir reden gleich nach der Stunde. Dann noch am selben Tag den SePAS informieren. Werden die Nachrichten albern, eine gute vorlesen lassen und fragen: Wie ginge es der Person, wenn sie das liest? Bleibt eine Ampel leer, mit einer Situation aus der Abstimmung beginnen lassen.",
             "blatt": "ff7-echt-oder-fake"
           },
           {
@@ -280,14 +280,14 @@
         ],
         "achtung": "Keine Fälschungen echter Personen erstellen oder zeigen, auch nicht zur Demonstration; alle Beispiele sind erfunden, Namen aus der Klasse vorher tauschen. Erzählt jemand von gefälschten, peinlichen oder intimen Bildern einer realen Person: sich die Bilder nicht zeigen oder schicken lassen, auch nicht zum Prüfen, nichts weiterleiten lassen und nicht vor der Klasse vertiefen; um Beweise kümmert sich der SePAS. Nach der Stunde unter vier Augen sprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Bei Erpressung mit Bildern sofort Hilfe holen. Beratung: BEE SECURE Helpline 8002 1234.",
         "differenzierung": {
-          "leichter": "Beim Kartenspiel darf weitergeben, wer nicht vorlesen mag; die anderen entscheiden mit. Die Checkliste zu zweit laut durchgehen; in der KI-Ampel reicht ein Stichwort je Farbe. Wer die Unterrichtssprache noch lernt, arbeitet mit den Kopfkarten und den farbigen Zonen – zeigen geht vor sprechen – und darf die Nachricht in Aufgabe 3 in der eigenen Sprache schreiben.",
-          "schwerer": "Eine harmlose, erfundene Falschmeldung zu einem Schulthema bauen, ohne echte Personen und mit mindestens drei Tricks aus der Checkliste, und von einer anderen Gruppe prüfen lassen. Oder bei der Aufstellung moderieren und nachfragen, wo genau die Grenze liegt."
+          "leichter": "Beim Kartenspiel darf weitergeben, wer nicht vorlesen mag; die anderen entscheiden mit. Die Checkliste zu zweit laut durchgehen; in der KI-Ampel reicht ein Stichwort je Farbe. Wer die Unterrichtssprache noch lernt, arbeitet mit den Kopfkarten und den Farbblättern an der Tafel – zeigen geht vor sprechen – und darf die Nachricht in Aufgabe 3 in der eigenen Sprache schreiben.",
+          "schwerer": "Eine harmlose, erfundene Falschmeldung zu einem Schulthema bauen, ohne echte Personen und mit mindestens drei Tricks aus der Checkliste, und von einer anderen Gruppe prüfen lassen. Oder bei der Abstimmung moderieren und nachfragen, wo genau die Grenze liegt."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt und Zahl (5 Min.), Kartenspiel mit vier Karten je Gruppe und kurzer Auflösung (15 Min.), Checkliste am Beitrag aus dem Klassenchat (10 Min.), KI-Aufstellung mit vier Situationen (10 Min.), Teilen-Bremse (5 Min.), Skills-Pass und Mission (5 Min.). KI-Ampel und Nachricht (Aufgaben 2 und 3) werden in der nächsten Stunde nachgeholt."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt und Zahl (5 Min.), Kartenspiel mit vier Karten je Gruppe und kurzer Auflösung (15 Min.), Checkliste am Beitrag aus dem Klassenchat (10 Min.), KI-Abstimmung mit vier Situationen (10 Min.), Teilen-Bremse (5 Min.), Skills-Pass und Mission (5 Min.). KI-Ampel und Nachricht (Aufgaben 2 und 3) werden in der nächsten Stunde nachgeholt."
       },
       "fr": {
         "titel": "Vrai ou faux ?",
-        "kurz": "Avec un jeu de cartes, la classe découvre à quel point on se trompe vite, vérifie des publications avec une liste et trace des limites pour l’IA en se déplaçant – avec des exemples inventés.",
+        "kurz": "Avec un jeu de cartes, la classe découvre à quel point on se trompe vite, vérifie des publications avec une liste et trace des limites pour l’IA en votant avec les doigts – avec des exemples inventés.",
         "ziele": [
           "classent des publications inventées en vrai, faux et à vérifier et justifient leur choix par un indice",
           "vérifient une publication avec une liste en partant de la source et disent où ils pourraient vérifier",
@@ -304,7 +304,7 @@
         ],
         "vorbereitung": [
           "Photocopier cinq jeux de cartes, les découper, les mettre sous enveloppe. Changer les prénoms portés par des jeunes de la classe (cartes, étape 6).",
-          "Trois zones : feuille verte côté fenêtre, orange au milieu, rouge côté porte.",
+          "Accrocher les trois feuilles côte à côte au tableau : vert 1, orange 2, rouge 3 (vote de l’étape 6).",
           "Connaître les règles du lycée sur l’IA ; s’il n’y en a pas, demander au régent.",
           "Pour la pause active, préparer deux fois trois phrases sur soi, dont une inventée.",
           "Écrire le tableau de l’étape 7 sur la grande feuille et l’accrocher retournée."
@@ -361,7 +361,7 @@
             "titel": "Tour d’humeur : roue, chiffre et émotion en ligne",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre (3 min). Puis une question en plus, à main levée : qui a été agacé, surpris ou effrayé cette semaine par quelque chose en ligne ? Deux ou trois volontaires disent seulement le mot de la roue, pas le contenu (4 min). Noter les mots en marge du tableau et retenir : une émotion forte en lisant, c’est un signal – aujourd’hui, vous allez voir pourquoi (3 min).",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre (3 min). Ensuite, la question du feu : qui est dans l’orange ou dans le rouge prend en silence un skill de son plan feu tricolore – tout le monde expire trois fois longuement, ainsi personne n’a à se signaler. Puis une question en plus, à main levée : qui a été agacé, surpris ou effrayé cette semaine par quelque chose en ligne ? Deux ou trois volontaires disent seulement le mot de la roue, pas le contenu (4 min). Noter les mots en marge du tableau et retenir : une émotion forte en lisant, c’est un signal – aujourd’hui, vous allez voir pourquoi (3 min).",
             "sagen": [
               "Émotion et chiffre, à trois. Je commence : calme, 20 – aujourd’hui, on parle de fakes, et tout à l’heure, je vais essayer de vous piéger.",
               "Juste l’émotion, pas le sujet : qu’est-ce qui vous a agacés, surpris ou effrayés en ligne cette semaine ?"
@@ -432,7 +432,7 @@
             "titel": "L’IA : utile, prudence ou limite ?",
             "dauer": 20,
             "phase": "uebung",
-            "text": "En classe entière (3 min) : demander à main levée qui a déjà utilisé une IA – pour discuter, traduire, créer des images. Expliquer brièvement : une IA est un programme qui a appris à partir d’énormément de données et qui produit des textes, des images, des voix et des vidéos. Elle a l’air sûre d’elle, même quand elle se trompe. Un deepfake est une vidéo, une image ou une voix truquée d’une personne réelle. Dans la salle (13 min) : lire six situations (liste) ; chacun va en silence dans la zone qui convient – vert : ça aide, orange : prudence, rouge : limite franchie. Deux jeunes de zones différentes justifient leur choix, puis compléter en une phrase (parenthèse). À la situation 5, tout le monde reste où il est ; on demande seulement : que conseilleriez-vous à Yusuf ? En classe entière (4 min) : retour aux places, retourner l’affiche du tableau (étape 7) et la compléter avec les exemples de la classe.",
+            "text": "En classe entière (3 min) : demander à main levée qui a déjà utilisé une IA – pour discuter, traduire, créer des images. Expliquer brièvement : une IA est un programme qui a appris à partir d’énormément de données et qui produit des textes, des images, des voix et des vidéos. Elle a l’air sûre d’elle, même quand elle se trompe. Un deepfake est une vidéo, une image ou une voix truquée d’une personne réelle. Vote à sa place (13 min) : lire six situations (liste) ; les îlots chuchotent dix secondes, puis, à trois, chacun montre avec les doigts – 1 vert : ça aide, 2 orange : prudence, 3 rouge : limite franchie. Deux jeunes qui montrent des chiffres différents justifient leur choix, puis compléter en une phrase (parenthèse). À la situation 5, personne ne montre de chiffre ; on demande seulement : que conseilleriez-vous à Yusuf ? En classe entière (4 min) : retourner l’affiche du tableau (étape 7) et la compléter avec les exemples de la classe.",
             "sagen": [
               "Vert : là, l’IA aide. Orange : prudence, d’abord réfléchir. Rouge : là, une limite est franchie.",
               "Où passe exactement la limite pour vous – et pourquoi ?"
@@ -442,11 +442,11 @@
               "Mila fait écrire sa rédaction de français par une IA et la rend comme si c’était la sienne. (rouge – ce n’est pas honnête, elle n’apprend rien, et l’école a des règles là-dessus. Orange, ce serait : chercher des idées et écrire soi-même.)",
               "Avec une appli, Noah transforme une photo de classe pour que Ben y apparaisse en clown, puis l’envoie dans le groupe. (rouge – modifier et partager l’image de quelqu’un sans son accord peut être du harcèlement et puni par la loi.)",
               "Amira charge une photo de son amie dans une appli d’IA pour voir à quoi elle ressemblerait à 80 ans – sans lui demander. (orange à rouge – la photo de quelqu’un d’autre sans son accord ; l’appli la garde peut-être.)",
-              "Yusuf se sent seul et raconte chaque soir à un chatbot comment il va. (Pas de zone, mais : que conseilleriez-vous à Yusuf ? Un chatbot peut soulager un moment, mais il peut donner de mauvais conseils et ne remplace pas une personne. Quand ça va mal, on en parle à quelqu’un : amis, famille, SePAS, 116 111.)",
+              "Yusuf se sent seul et raconte chaque soir à un chatbot comment il va. (Pas de chiffre, mais : que conseilleriez-vous à Yusuf ? Un chatbot peut soulager un moment, mais il peut donner de mauvais conseils et ne remplace pas une personne. Quand ça va mal, on en parle à quelqu’un : amis, famille, SePAS, 116 111.)",
               "Léa demande à une IA la date de son prochain devoir en classe et obtient tout de suite une date. (orange – l’IA ne peut pas le savoir, mais elle a l’air sûre d’elle. Regarder dans son agenda ou demander.)"
             ],
-            "tipp": "Ne donner les règles de l’école sur l’IA qu’à la fin : si la classe a d’abord tracé ses propres limites, les règles sont mieux comprises que simplement subies. À la situation 5, on ne choisit pas de zone, et c’est voulu : ainsi, personne n’a à montrer qu’il se confie lui aussi à un chatbot.",
-            "wennEsKippt": "Si les déplacements dégénèrent, ralentir : compter d’abord en silence jusqu’à trois, puis bouger ; qui ne veut pas se déplacer montre depuis sa place avec les doigts (1 vert, 2 orange, 3 rouge). Si la classe rit d’un élève présent à la situation 3, arrêter tout de suite : c’est exactement ça, la limite. Si un jeune dit à la situation 5 qu’il fait pareil, l’accueillir sans jugement et lui en reparler après le cours. Si quelqu’un pose une question sur les fausses photos dénudées fabriquées par IA, répondre brièvement et calmement : c’est une limite claire, qui peut être punie par la loi ; qui reçoit ce genre d’image ne transfère rien et va tout de suite voir un adulte. Ne pas approfondir."
+            "tipp": "Ne donner les règles de l’école sur l’IA qu’à la fin : si la classe a d’abord tracé ses propres limites, les règles sont mieux comprises que simplement subies. À la situation 5, on ne vote pas, et c’est voulu : ainsi, personne n’a à montrer qu’il se confie lui aussi à un chatbot.",
+            "wennEsKippt": "Si tout le monde crie ou copie les doigts des copains, ralentir : compter d’abord en silence jusqu’à trois, puis tout le monde montre en même temps et garde la main levée jusqu’à ce que l’enseignant·e ait regardé. Si la classe rit d’un élève présent à la situation 3, arrêter tout de suite : c’est exactement ça, la limite. Si un jeune dit à la situation 5 qu’il fait pareil, l’accueillir sans jugement et lui en reparler après le cours. Si quelqu’un pose une question sur les fausses photos dénudées fabriquées par IA, répondre brièvement et calmement : c’est une limite claire, qui peut être punie par la loi ; qui reçoit ce genre d’image ne transfère rien et va tout de suite voir un adulte. Ne pas approfondir."
           },
           {
             "titel": "Mon feu tricolore de l’IA et que faire face à un fake",
@@ -487,7 +487,7 @@
               ]
             },
             "tipp": "Ici, la séance rejoint le thème du harcèlement et du courage civique : en ligne, regarder sans rien faire n’est pas neutre, parce que chaque transfert rend l’image plus grande. Le message entraîne la marche 2 de l’échelle du courage civique : montrer à la personne qu’on est de son côté.",
-            "wennEsKippt": "Si un jeune veut raconter un cas réel, ne pas approfondir : merci d’en parler – on en discute juste après le cours. Puis informer le SePAS le jour même. Si les messages tournent à la blague, en faire lire un bon et demander : comment se sentirait la personne en le lisant ? Si un feu tricolore reste vide, faire commencer par une situation de l’exercice dans la salle.",
+            "wennEsKippt": "Si un jeune veut raconter un cas réel, ne pas approfondir : merci d’en parler – on en discute juste après le cours. Puis informer le SePAS le jour même. Si les messages tournent à la blague, en faire lire un bon et demander : comment se sentirait la personne en le lisant ? Si un feu tricolore reste vide, faire commencer par une situation du vote.",
             "blatt": "ff7-echt-oder-fake"
           },
           {
@@ -529,10 +529,10 @@
         ],
         "achtung": "Ne créer ni ne montrer aucun trucage de personnes réelles, même pour une démonstration ; tous les exemples sont inventés, changer avant le cours les prénoms portés par des jeunes de la classe. Si un jeune parle d’images truquées, gênantes ou intimes d’une personne réelle : ne pas se les faire montrer ni envoyer, même pour vérifier, ne rien laisser transférer et ne pas approfondir devant la classe ; les preuves, c’est l’affaire du SePAS. Lui parler seul à seul après le cours, informer le SePAS le jour même et suivre le protocole de protection de l’école. En cas de chantage avec des images, chercher de l’aide tout de suite. Conseil : BEE SECURE Helpline 8002 1234.",
         "differenzierung": {
-          "leichter": "Pour le jeu de cartes, qui ne veut pas lire passe son tour ; les autres décident avec lui. Parcourir la liste à deux, à voix haute ; dans le feu tricolore, un mot-clé par couleur suffit. Un jeune qui apprend encore la langue du cours s’appuie sur les cartes titre et les zones de couleur – montrer passe avant parler – et peut écrire le message de l’exercice 3 dans sa langue.",
-          "schwerer": "Fabriquer une fausse information inoffensive et inventée sur un sujet scolaire, sans personnes réelles et avec au moins trois astuces de la liste, puis la faire vérifier par un autre îlot. Ou animer l’exercice dans la salle et demander où se trouve exactement la limite."
+          "leichter": "Pour le jeu de cartes, qui ne veut pas lire passe son tour ; les autres décident avec lui. Parcourir la liste à deux, à voix haute ; dans le feu tricolore, un mot-clé par couleur suffit. Un jeune qui apprend encore la langue du cours s’appuie sur les cartes titre et les feuilles de couleur au tableau – montrer passe avant parler – et peut écrire le message de l’exercice 3 dans sa langue.",
+          "schwerer": "Fabriquer une fausse information inoffensive et inventée sur un sujet scolaire, sans personnes réelles et avec au moins trois astuces de la liste, puis la faire vérifier par un autre îlot. Ou animer le vote et demander où se trouve exactement la limite."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et chiffre (5 min), jeu de cartes avec quatre cartes par îlot et une courte correction (15 min), liste de vérification avec la publication du groupe de classe (10 min), exercice dans la salle sur l’IA avec quatre situations (10 min), frein à partage (5 min), Skills-Pass et mission (5 min). Le feu tricolore de l’IA et le message (exercices 2 et 3) sont rattrapés à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et chiffre (5 min), jeu de cartes avec quatre cartes par îlot et une courte correction (15 min), liste de vérification avec la publication du groupe de classe (10 min), vote sur l’IA avec quatre situations (10 min), frein à partage (5 min), Skills-Pass et mission (5 min). Le feu tricolore de l’IA et le message (exercices 2 et 3) sont rattrapés à la séance suivante."
       }
     }
   ],
@@ -632,7 +632,7 @@
           {
             "art": "aufgabe",
             "text": "Meine KI-Ampel: Schreib zu jeder Farbe ein Beispiel oder eine Regel.",
-            "hinweis": "Das Plakat und die Situationen aus der Aufstellung helfen dir. Ein Stichwort reicht."
+            "hinweis": "Das Plakat und die Situationen aus der Abstimmung helfen dir. Ein Stichwort reicht."
           },
           {
             "art": "ampel",
@@ -686,7 +686,7 @@
           "ziel": "Die Jugendlichen prüfen einen Beitrag mit einer Checkliste, nennen, wo sie nachprüfen können, ziehen mit der KI-Ampel eigene Grenzen und üben, einer betroffenen Person beizustehen.",
           "ablauf": [
             "Einheit 26, Schritt 4 (7 Min.): Aufgabe 1 zu zweit am Beitrag aus dem Klassenchat, mit Urteil und Ort zum Nachprüfen; danach: Wo würdet ihr nachsehen?",
-            "Schritt 7 (5 Min.): Aufgabe 2 allein, nach der KI-Aufstellung; ein Stichwort je Farbe reicht.",
+            "Schritt 7 (5 Min.): Aufgabe 2 allein, nach der KI-Abstimmung; ein Stichwort je Farbe reicht.",
             "Schritt 7 (4 Min.): den Kasten „Klare Grenze“ lesen, dann Aufgabe 3 zu zweit; zum Schluss auf den Hilfe-Kasten zeigen."
           ],
           "hintergrund": "Professionelle Faktenprüfer verlassen eine unbekannte Seite schnell und prüfen woanders, wer dahintersteht (Wineburg & McGrew, 2019); deshalb fragt das Blatt nach der Quelle und danach, wo man nachprüfen kann. Wer die Tricks von Falschmeldungen kennt, fällt seltener darauf herein (Roozenbeek & van der Linden, 2019). Sprachmodelle erzeugen Inhalte, die plausibel klingen, aber nicht stimmen (Ji et al., 2023).",
@@ -769,7 +769,7 @@
           {
             "art": "aufgabe",
             "text": "Mon feu tricolore de l’IA : écris un exemple ou une règle pour chaque couleur.",
-            "hinweis": "L’affiche et les situations de l’exercice dans la salle t’aident. Un mot-clé suffit."
+            "hinweis": "L’affiche et les situations du vote t’aident. Un mot-clé suffit."
           },
           {
             "art": "ampel",
@@ -823,7 +823,7 @@
           "ziel": "Les jeunes vérifient une publication avec une liste, disent où ils pourraient vérifier, tracent leurs propres limites avec le feu tricolore de l’IA et s’entraînent à soutenir une personne visée.",
           "ablauf": [
             "Séance 26, étape 4 (7 min) : exercice 1 à deux avec la publication du groupe de classe, avec son avis et l’endroit où vérifier ; ensuite : où iriez-vous vérifier ?",
-            "Étape 7 (5 min) : exercice 2 seul, après l’exercice dans la salle ; un mot-clé par couleur suffit.",
+            "Étape 7 (5 min) : exercice 2 seul, après le vote sur l’IA ; un mot-clé par couleur suffit.",
             "Étape 7 (4 min) : lire l’encadré « Limite claire », puis exercice 3 à deux ; pour finir, montrer l’encadré d’aide."
           ],
           "hintergrund": "Des vérificateurs professionnels quittent vite un site inconnu et vont voir ailleurs qui se cache derrière (Wineburg & McGrew, 2019) ; la fiche demande donc la source, puis où l’on pourrait vérifier. Qui connaît les ficelles des fausses informations s’y laisse moins prendre (Roozenbeek & van der Linden, 2019). Les modèles de langage produisent des contenus plausibles mais faux (Ji et al., 2023).",

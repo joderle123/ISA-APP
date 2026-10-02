@@ -50,7 +50,7 @@
           "Rollenkarten: fünf Sätze",
           "Anliegen-Zettel, zwei je Person",
           "Schuhkarton mit Deckel und Schlitz",
-          "Ein Heft für das Protokoll",
+          "Klassenrat-Heft für das Protokoll",
           "Stoppuhr",
           "Schülerheft für jede Person",
           "Stempel für den Skills-Pass"
@@ -59,7 +59,7 @@
           "Frage, Rahmen und drei, vier Antworten für die erste Entscheidung festlegen (Schritt 7), bei Bedarf mit dem Régent.",
           "Klassenrat-Karten fünfmal kopieren und schneiden; den Schuhkarton zukleben, einen Schlitz hineinschneiden.",
           "Einen verschließbaren Platz für den Briefkasten klären (Schrank, Lehrerzimmer).",
-          "Termin der nächsten Sitzung festlegen (in drei, vier Wochen); Tafelbild aus Schritt 3 vorbereiten."
+          "Die nächste Sitzung ist in Stunde 9: den Termin ins Klassenrat-Heft schreiben; Tafelbild aus Schritt 3 vorbereiten."
         ],
         "ablauf": [
           {
@@ -235,14 +235,14 @@
               "Wer überstimmt wurde, hat nicht verloren: Beim nächsten Mal prüfen wir, ob der Beschluss funktioniert."
             ],
             "punkte": [
-              "Welches Spiel machen wir in den Bewegungspausen der nächsten drei Stunden?",
+              "Welches Spiel machen wir in der Bewegungspause der nächsten Stunde?",
               "Welches Spiel spielen wir, wenn am Ende einer Stunde Zeit übrig bleibt?",
               "Wie gestalten wir unseren Briefkasten, und wie heißt er?",
               "Wo hängen Gefühlsrad, Klassenvereinbarung und Plakate im Raum?",
               "Welchen Skill machen wir gemeinsam, wenn die Klasse sehr unruhig ist?",
               "Wie begrüßen wir jemanden, der neu in die Klasse kommt?"
             ],
-            "tipp": "Die erste Entscheidung muss echt sein und schnell sichtbar werden – dafür eignet sich die erste Frage am besten: Das gewählte Spiel ersetzt ab nächster Woche die Bewegungspause der Einheit. Wird die Zeit knapp, die vorbereiteten Antworten zur Wahl stellen. Ab jetzt tagt der Klassenrat alle drei, vier Wochen in den letzten zehn Minuten einer Stunde; Beschlüsse gelten bis zur nächsten Sitzung auf Probe.",
+            "tipp": "Die erste Entscheidung muss echt sein und schnell sichtbar werden – dafür eignet sich die erste Frage am besten: Das gewählte Spiel ersetzt nächste Woche die Bewegungspause der Einheit. Wird die Zeit knapp, die vorbereiteten Antworten zur Wahl stellen. Die nächsten Sitzungen sind fest eingeplant – in den Stunden 9, 19 und 25, je zehn Minuten am Ende einer Stunde; Beschlüsse gelten bis zur nächsten Sitzung auf Probe.",
             "wennEsKippt": "Meldet sich niemand für den Vorsitz, übernimmt ihn die Lehrkraft diesmal selbst und zeigt, wie es geht. Gibt es nach der Abstimmung Ärger („Das ist unfair!“), ernst nehmen und fragen, was die Gruppe bräuchte, um damit leben zu können; oft hilft ein Zusatz wie ein Wechsel nach drei Wochen. Stockt der Vorsitz, flüstert die Lehrkraft den nächsten Satz vor. Werden Freunde bedrängt, so oder so abzustimmen, die Abstimmung wiederholen: Jede Person stimmt für sich.",
             "blatt": "ff7-klassenrat"
           },
@@ -303,7 +303,7 @@
           "Cartes de rôle : cinq jeux",
           "Billets pour la boîte, deux par jeune",
           "Boîte à chaussures fermée, avec une fente",
-          "Un cahier pour le compte rendu",
+          "Cahier du conseil pour le compte rendu",
           "Chronomètre",
           "Un cahier de l’élève par jeune",
           "Tampon pour le Skills-Pass"
@@ -312,7 +312,7 @@
           "Fixer la question, le cadre et trois ou quatre réponses pour la première décision (étape 7), si besoin avec le régent.",
           "Photocopier cinq fois les cartes du conseil et découper ; fermer la boîte à chaussures, y découper une fente.",
           "Prévoir un endroit fermé à clé pour la boîte (armoire, salle des professeurs).",
-          "Fixer la date de la prochaine séance (dans trois ou quatre semaines) ; préparer le tableau de l’étape 3."
+          "Le conseil se réunit de nouveau à la séance 9 : noter la date dans le cahier du conseil ; préparer le tableau de l’étape 3."
         ],
         "ablauf": [
           {
@@ -488,14 +488,14 @@
               "Qui a été mis en minorité n’a pas perdu : la prochaine fois, on vérifie si la décision fonctionne."
             ],
             "punkte": [
-              "Quel jeu fait-on pendant les pauses actives des trois prochaines séances ?",
+              "Quel jeu fait-on pendant la pause active de la prochaine séance ?",
               "À quel jeu joue-t-on quand il reste du temps à la fin d’un cours ?",
               "Comment décore-t-on notre boîte aux lettres, et quel nom lui donne-t-on ?",
               "Où accroche-t-on la roue des émotions, la charte et les affiches dans la salle ?",
               "Quel skill fait-on ensemble quand la classe est très agitée ?",
               "Comment accueille-t-on quelqu’un qui arrive dans la classe ?"
             ],
-            "tipp": "La première décision doit être réelle et vite visible – la première question s’y prête le mieux : dès la semaine prochaine, le jeu choisi remplace la pause active prévue dans la séance. Si le temps manque, proposer au vote les réponses préparées. Désormais, le conseil se réunit toutes les trois ou quatre semaines, pendant les dix dernières minutes d’un cours ; les décisions valent à l’essai jusqu’à la séance suivante.",
+            "tipp": "La première décision doit être réelle et vite visible – la première question s’y prête le mieux : la semaine prochaine, le jeu choisi remplace la pause active prévue dans la séance. Si le temps manque, proposer au vote les réponses préparées. Les prochaines réunions sont prévues aux séances 9, 19 et 25, chaque fois dix minutes à la fin d’un cours ; les décisions valent à l’essai jusqu’à la réunion suivante.",
             "wennEsKippt": "Si personne ne se porte volontaire pour la présidence, l’enseignant·e la prend cette fois et montre comment faire. Si la colère éclate après le vote (« C’est injuste ! »), la prendre au sérieux et demander ce dont le groupe aurait besoin pour pouvoir l’accepter ; souvent, un ajout aide, comme un changement au bout de trois semaines. Si la présidence bloque, lui souffler la phrase suivante. Si des amis sont mis sous pression pour voter d’une certaine façon, refaire le vote : chacun vote pour soi.",
             "blatt": "ff7-klassenrat"
           },

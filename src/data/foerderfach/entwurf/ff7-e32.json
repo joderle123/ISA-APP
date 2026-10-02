@@ -115,7 +115,7 @@
             "titel": "Check-in: Gefühl, Anspannung und die Test-Zahl",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt, zwei Freiwillige nennen Gefühl und Zahl (3 Min.). Dann eine zweite Zahl, verdeckt: Wie hoch wäre eure Anspannung, wenn morgen ein Test wäre? Jede Person schreibt nur die Zahl auf einen Zettel, faltet ihn und wirft ihn in die Schachtel (2 Min.). Die Lehrkraft liest die Zahlen vor, ihre eigene dazu; eine freiwillige Person macht für jede ein Kreuz an der Linie von 0 bis 100 an der Tafel (3 Min.). Dann schaut die Klasse auf die Linie: Wo liegen die meisten Kreuze? Zwei Stimmen sagen, was ihnen auffällt (2 Min.).",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt, zwei Freiwillige nennen Gefühl und Zahl (3 Min.). Danach die Ampel-Frage: Wer bei Gelb oder Rot ist, nimmt sich still einen Skill aus dem Ampelplan – alle atmen dazu dreimal lang aus, so muss sich niemand melden. Dann eine zweite Zahl, verdeckt: Wie hoch wäre eure Anspannung, wenn morgen ein Test wäre? Jede Person schreibt nur die Zahl auf einen Zettel, faltet ihn und wirft ihn in die Schachtel (2 Min.). Die Lehrkraft liest die Zahlen vor, ihre eigene dazu; eine freiwillige Person macht für jede ein Kreuz an der Linie von 0 bis 100 an der Tafel (3 Min.). Dann schaut die Klasse auf die Linie: Wo liegen die meisten Kreuze? Zwei Stimmen sagen, was ihnen auffällt (2 Min.).",
             "sagen": [
               "Schreibt nur eine Zahl, keinen Namen. Niemand erfährt, welcher Zettel eurer ist.",
               "Schaut auf die Linie: Mit eurer Aufregung seid ihr nicht allein – und manche sind ganz entspannt. Beides ist in Ordnung."
@@ -364,7 +364,7 @@
           "s’entraînent à un plan en cas de trou de mémoire et au skill pieds, souffle, stylo"
         ],
         "material": [
-          "Cahier de l’élève, tampon du Skills-Pass",
+          "Cahier de l’élève, tampon pour le Skills-Pass",
           "Roue des émotions, 20 gommettes",
           "20 petits papiers, une boîte",
           "Post-it jaunes et verts",
@@ -436,7 +436,7 @@
             "titel": "Tour d’humeur : émotion, tension et chiffre caché",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence, deux volontaires donnent leur émotion et leur chiffre (3 min). Puis un second chiffre, caché : à combien serait votre tension s’il y avait un devoir en classe demain ? Chacun écrit seulement le chiffre sur un papier, le plie et le met dans la boîte (2 min). L’enseignant·e lit les chiffres à voix haute, y compris le sien ; un volontaire fait une croix pour chacun sur la ligne de 0 à 100 au tableau (3 min). Puis la classe regarde la ligne : où se trouvent la plupart des croix ? Deux voix disent ce qu’elles remarquent (2 min).",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence, deux volontaires donnent leur émotion et leur chiffre (3 min). Ensuite, la question du feu : qui est dans l’orange ou dans le rouge prend en silence un skill de son plan feu tricolore – tout le monde expire trois fois longuement, ainsi personne n’a à se signaler. Puis un second chiffre, caché : à combien serait votre tension s’il y avait un devoir en classe demain ? Chacun écrit seulement le chiffre sur un papier, le plie et le met dans la boîte (2 min). L’enseignant·e lit les chiffres à voix haute, y compris le sien ; un volontaire fait une croix pour chacun sur la ligne de 0 à 100 au tableau (3 min). Puis la classe regarde la ligne : où se trouvent la plupart des croix ? Deux voix disent ce qu’elles remarquent (2 min).",
             "sagen": [
               "Écrivez seulement un chiffre, pas de nom. Personne ne saura quel papier est le vôtre.",
               "Regardez la ligne : vous n’êtes pas seuls avec votre trac – et certains sont très détendus. Les deux sont normaux."

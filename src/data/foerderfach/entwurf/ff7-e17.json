@@ -48,7 +48,7 @@
           "gestalten eine Notfallkarte, üben einen Satz, um Hilfe zu holen, und den Ampel-Check"
         ],
         "material": [
-          "Gefühlsrad, Skala 0–100, 40 Klebepunkte",
+          "Gefühlsrad, Anspannungsskala, 40 Klebepunkte",
           "Glas der Bedürfnisse aus Stunde 6",
           "Heft mit Skills-Tester und Glas-Blatt",
           "Grüne Buntstifte",
@@ -115,7 +115,7 @@
             "titel": "Check-in: Gefühl, Zahl und Ampelfarbe",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihre zwei Punkte auf Gefühlsrad und Anspannungsskala (2 Min.). Die Lehrkraft beginnt mit Gefühl, Zahl und der Farbe, in der ihr Punkt auf der Skala klebt – Grün bis 30, Gelb bis 70, Rot darüber; zwei, drei Freiwillige nennen ebenso Gefühl, Zahl und Farbe (3 Min.). Gemeinsam auf die Skala schauen: Wo kleben heute die meisten Punkte (2 Min.)? Dann die neue Frage: Wer bei Gelb ist – braucht ihr jetzt einen Skill? Statt Einzelne zu fragen, macht die ganze Klasse eine Runde Fingeratmung; so muss sich niemand zu erkennen geben (3 Min.). Ab heute gehört diese Frage zu jedem Check-in.",
+            "text": "Beim Hereinkommen klebt jede Person ihre zwei Punkte auf Gefühlsrad und Anspannungsskala (2 Min.). Die Lehrkraft beginnt mit Gefühl, Zahl und der Farbe, in der ihr Punkt auf der Skala klebt – Grün bis 30, Gelb bis 70, Rot darüber; zwei, drei Freiwillige nennen ebenso Gefühl, Zahl und Farbe (3 Min.). Gemeinsam auf die Skala schauen: Wo kleben heute die meisten Punkte (2 Min.)? Dann die neue Ampel-Frage: Wer bei Gelb ist – braucht ihr jetzt einen Skill? Statt Einzelne zu fragen, macht die ganze Klasse eine Runde Fingeratmung; so muss sich niemand zu erkennen geben (3 Min.). Ab heute gehört die Ampel-Frage zu jedem Check-in, in den nächsten Stunden in der Kurzform: Wer bei Gelb oder Rot ist, nimmt still einen Skill aus dem Ampelplan, und alle atmen dazu dreimal lang aus.",
             "sagen": [
               "Gefühl, Zahl und Farbe: Wo steht eure Ampel heute?",
               "Wer bei Gelb ist, kennt jetzt Skills dafür. Wir machen einen zusammen – alle, egal welche Farbe."
@@ -264,7 +264,7 @@
                 ]
               ]
             },
-            "tipp": "Den Ampel-Check ab jetzt in den Check-in einbauen: Wer bei Gelb ist, nimmt einen Skill aus dem Koffer, und die Klasse macht mit.",
+            "tipp": "Den Ampel-Check ab jetzt in den Check-in einbauen: Wer bei Gelb oder Rot ist, nimmt einen Skill aus dem Koffer, und die Klasse macht mit.",
             "wennEsKippt": "Sagt jemand: „Bei mir wäre das 100, dann hau ich zu“, nicht moralisieren, sondern ernst nehmen: Was hilft dir bei 100, bevor du zuschlägst? Wählt jemand einen Skill, der nicht am Platz geht, etwa Treppe laufen, macht er ihn hier im Kleinen: Fäuste ballen und loslassen. Läuft die Zeit davon, die dritte Situation weglassen."
           },
           {
@@ -303,7 +303,7 @@
           "fabriquent une carte d’urgence, s’entraînent à demander de l’aide et au réflexe feu tricolore"
         ],
         "material": [
-          "Roue, échelle 0–100, 40 gommettes",
+          "Roue, échelle de tension, 40 gommettes",
           "Bocal des besoins (séance 6)",
           "Cahier : testeur de skills, fiche du bocal",
           "Crayons de couleur verts",
@@ -370,7 +370,7 @@
             "titel": "Tour d’humeur : émotion, chiffre et couleur",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle ses deux gommettes sur la roue des émotions et sur l’échelle de tension (2 min). L’enseignant·e commence avec son émotion, son chiffre et la couleur de la zone où se trouve sa gommette – vert jusqu’à 30, orange jusqu’à 70, rouge au-delà ; deux ou trois volontaires donnent à leur tour émotion, chiffre et couleur (3 min). Regarder ensemble l’échelle : où se trouvent la plupart des gommettes aujourd’hui (2 min) ? Puis la nouvelle question : ceux qui sont dans l’orange, avez-vous besoin d’un skill maintenant ? Au lieu d’interroger quelqu’un, toute la classe fait un tour de respiration des doigts ; ainsi, personne n’a à se dévoiler (3 min). À partir d’aujourd’hui, cette question fait partie de chaque tour d’humeur.",
+            "text": "En entrant, chaque jeune colle ses deux gommettes sur la roue des émotions et sur l’échelle de tension (2 min). L’enseignant·e commence avec son émotion, son chiffre et la couleur de la zone où se trouve sa gommette – vert jusqu’à 30, orange jusqu’à 70, rouge au-delà ; deux ou trois volontaires donnent à leur tour émotion, chiffre et couleur (3 min). Regarder ensemble l’échelle : où se trouvent la plupart des gommettes aujourd’hui (2 min) ? Puis la nouvelle question du feu : ceux qui sont dans l’orange, avez-vous besoin d’un skill maintenant ? Au lieu d’interroger quelqu’un, toute la classe fait un tour de respiration des doigts ; ainsi, personne n’a à se dévoiler (3 min). À partir d’aujourd’hui, la question du feu fait partie de chaque tour d’humeur ; les prochaines fois, en version courte : qui est dans l’orange ou dans le rouge prend en silence un skill de son plan, et tout le monde expire trois fois longuement.",
             "sagen": [
               "Émotion, chiffre et couleur : où en est votre feu aujourd’hui ?",
               "Qui est dans l’orange connaît maintenant des skills pour ça. On en fait un ensemble – tout le monde, quelle que soit sa couleur."
@@ -519,7 +519,7 @@
                 ]
               ]
             },
-            "tipp": "Intégrer désormais le réflexe feu tricolore au tour d’humeur : qui est dans l’orange prend un skill dans sa valise, et la classe le fait avec lui.",
+            "tipp": "Intégrer désormais le réflexe feu tricolore au tour d’humeur : qui est dans l’orange ou dans le rouge prend un skill dans sa valise, et la classe le fait avec lui.",
             "wennEsKippt": "Si un jeune dit : « Moi, là, je serais à 100, je cogne », ne pas faire la morale, mais le prendre au sérieux : qu’est-ce qui t’aide à 100, avant de frapper ? Si quelqu’un choisit un skill qui ne se fait pas à sa place, comme monter les escaliers, il le fait ici en petit : serrer les poings, puis relâcher. Si le temps manque, laisser tomber la troisième situation."
           },
           {

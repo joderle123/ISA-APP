@@ -14,7 +14,7 @@
         },
         {
           "de": "der Wunsch",
-          "fr": "l’envie (f.)"
+          "fr": "le souhait"
         },
         {
           "de": "der Tank",
@@ -122,7 +122,7 @@
             "titel": "Rückblick und Start ins Kapitel „Wer bin ich?“",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Kurz nach der Wochen-Mission fragen: Daumen hoch, Mitte oder runter – eine Stimme erzählt, niemand muss sie geschafft haben. Dann das neue Kapitel an die Seitentafel schreiben: Wer bin ich? – Was brauche ich, was kann ich? Die drei Stunden ankündigen: heute, was ihr braucht; nächste Woche, wie ihr seid; danach, was ihr könnt. Zum Schluss auf die Klassenvereinbarung zeigen: Was ihr heute über euch herausfindet, bleibt anonym oder in eurem Heft.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Kurz nach der Wochen-Mission fragen: Wer hat darauf geachtet, was in der Klasse gut läuft, und einen Zettel für den Briefkasten geschrieben? Daumen hoch, Mitte oder runter – eine Stimme erzählt ohne Namen, niemand muss sie geschafft haben; der Klassenrat tagt wieder in Stunde 9. Dann das neue Kapitel an die Seitentafel schreiben: Wer bin ich? – Was brauche ich, was kann ich? Die drei Stunden ankündigen: heute, was ihr braucht; nächste Woche, wie ihr seid; danach, was ihr könnt. Zum Schluss auf die Klassenvereinbarung zeigen: Was ihr heute über euch herausfindet, bleibt anonym oder in eurem Heft.",
             "sagen": [
               "Bisher ging es um uns als Klasse. Ab heute schaut jede und jeder auf sich selbst.",
               "Die Frage für heute: Was braucht ihr, damit es euch gut geht?"
@@ -200,7 +200,7 @@
             "titel": "Bewegungspause: Vier Ecken",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "In den Raumecken hängen die Schilder Ruhe, Bewegung, Leute, Essen und Schlaf. Alle stehen auf; die Lehrkraft liest einen Satz vor, und alle gehen ohne Kommentar in die Ecke, die für sie passt. Nach dem ersten und dem letzten Satz sagt in jeder Ecke eine Person, wenn sie mag, in einem Satz, warum. Gefragt wird nach Vorlieben, nicht nach Mängeln: Es gibt keine falsche Ecke. Wer nicht laufen mag, zeigt vom Platz aus. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "In den Raumecken hängen die Schilder Ruhe, Bewegung, Leute, Essen und Schlaf. Alle stehen auf; die Lehrkraft liest einen Satz vor, und alle gehen ohne Kommentar in die Ecke, die für sie passt. Nach dem ersten und dem letzten Satz sagt in jeder Ecke eine Person, wenn sie mag, in einem Satz, warum. Gefragt wird nach Vorlieben, nicht nach Mängeln: Es gibt keine falsche Ecke. Wer nicht laufen mag, zeigt vom Platz aus. Hat der Klassenrat in Stunde 5 ein Spiel für diese Bewegungspause gewählt, wird heute dieses gespielt; die Vier Ecken entfallen dann. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
             "punkte": [
               "Nach einem langen Schultag tankst du am besten auf mit …",
               "Am Wochenende tut dir am meisten gut: …",
@@ -281,7 +281,7 @@
         "titel": "Le bocal des besoins",
         "kurz": "Les besoins sont comme des réservoirs intérieurs : la classe remplit anonymement son bocal des besoins, chaque jeune repère son réservoir le plus vide et prévoit un petit pas pour faire le plein.",
         "ziele": [
-          "distinguent besoins et envies et les rangent dans six réservoirs",
+          "distinguent besoins et souhaits et les rangent dans six réservoirs",
           "remplissent anonymement le bocal de la classe et voient quels besoins beaucoup partagent",
           "évaluent le niveau de leurs propres réservoirs et repèrent le plus vide",
           "prévoient un petit pas qui remplit un peu un réservoir cette semaine"
@@ -366,7 +366,7 @@
             "titel": "Retour et début du chapitre « Qui suis-je ? »",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Demander brièvement des nouvelles de la mission de la semaine : pouce en haut, au milieu ou en bas – une personne raconte, personne n’est obligé de l’avoir réussie. Écrire ensuite le nouveau chapitre sur le tableau latéral : Qui suis-je ? – De quoi ai-je besoin, qu’est-ce que je sais faire ? Annoncer les trois séances : aujourd’hui, ce dont vous avez besoin ; la semaine prochaine, comment vous êtes ; ensuite, ce que vous savez faire. Pour finir, montrer la charte de classe : ce que vous découvrez aujourd’hui sur vous reste anonyme ou dans votre cahier.",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission de la semaine, vote du pouce : qui a observé ce qui va bien dans la classe et écrit un billet pour la boîte aux lettres – en haut, au milieu ou en bas ? Une personne raconte, sans nommer personne ; personne n’est obligé de l’avoir réussie, et le conseil se réunit de nouveau à la séance 9. Écrire ensuite le nouveau chapitre sur le tableau latéral : Qui suis-je ? – De quoi ai-je besoin, qu’est-ce que je sais faire ? Annoncer les trois séances : aujourd’hui, ce dont vous avez besoin ; la semaine prochaine, comment vous êtes ; ensuite, ce que vous savez faire. Pour finir, montrer la charte de classe : ce que vous découvrez aujourd’hui sur vous reste anonyme ou dans votre cahier.",
             "sagen": [
               "Jusqu’ici, on a parlé de nous en tant que classe. À partir d’aujourd’hui, chacun se regarde soi-même.",
               "La question du jour : de quoi avez-vous besoin pour aller bien ?"
@@ -377,7 +377,7 @@
             "titel": "Six réservoirs : de quoi a-t-on besoin ?",
             "dauer": 15,
             "phase": "input",
-            "text": "Expliquer l’image : chaque besoin est comme un réservoir ; quand l’un d’eux est presque vide, une émotion s’allume – souvent avant qu’on en connaisse la raison. Présenter les six réservoirs au tableau (tableau) et y ranger ensemble les réponses du tour d’humeur (5 min). Lire ensuite l’histoire « Le voyant » de la fiche : quel réservoir est vide chez Noah, et quel est le voyant (3 min) ? Pour finir, le jeu « Quel réservoir se cache derrière ? » (7 min) : lire une envie ; les îlots se mettent d’accord à voix basse en dix secondes et, à « trois », une personne montre le numéro avec les doigts. Pour la première envie, demander d’autres chemins et retenir : derrière une envie se cache souvent un besoin – et il existe plus d’un chemin pour y répondre.",
+            "text": "Expliquer l’image : chaque besoin est comme un réservoir ; quand l’un d’eux est presque vide, une émotion s’allume – souvent avant qu’on en connaisse la raison. Présenter les six réservoirs au tableau (tableau) et y ranger ensemble les réponses du tour d’humeur (5 min). Lire ensuite l’histoire « Le voyant » de la fiche : quel réservoir est vide chez Noah, et quel est le voyant (3 min) ? Pour finir, le jeu « Quel réservoir se cache derrière ? » (7 min) : lire un souhait ; les îlots se mettent d’accord à voix basse en dix secondes et, à « trois », une personne montre le numéro avec les doigts. Pour le premier souhait, demander d’autres chemins et retenir : derrière un souhait se cache souvent un besoin – et il existe plus d’un chemin pour y répondre.",
             "sagen": [
               "Imaginez qu’il y a en vous six réservoirs. Que se passe-t-il quand le réservoir du sommeil est vide ?",
               "Derrière “je veux les nouvelles baskets”, il y a souvent : je veux avoir ma place dans le groupe. Est-ce qu’il existe d’autres chemins pour ça ?",
@@ -423,8 +423,8 @@
                 ]
               ]
             },
-            "tipp": "Si quelqu’un cite le portable ou le wifi comme besoin, demander à quoi il sert : écrire à ses amis (3), décompresser (1), pouvoir suivre les conversations (4). La différence entre envie et besoin devient concrète, sans faire la leçon.",
-            "wennEsKippt": "Si tout le monde crie en même temps, s’en tenir au déroulement : dix secondes à voix basse, puis tout le monde montre à trois – qui crie avant ne compte pas. Si des îlots se disputent sur le bon numéro, trancher : souvent, deux sont justes ; tout dépend de ce dont la personne a vraiment besoin. Si un jeune ne comprend pas les mots, les petits dessins à côté des réservoirs et une voisine qui traduit l’aident. Si le temps manque, ne jouer que quatre envies.",
+            "tipp": "Si quelqu’un cite le portable ou le wifi comme besoin, demander à quoi il sert : écrire à ses amis (3), décompresser (1), pouvoir suivre les conversations (4). La différence entre souhait et besoin devient concrète, sans faire la leçon.",
+            "wennEsKippt": "Si tout le monde crie en même temps, s’en tenir au déroulement : dix secondes à voix basse, puis tout le monde montre à trois – qui crie avant ne compte pas. Si des îlots se disputent sur le bon numéro, trancher : souvent, deux sont justes ; tout dépend de ce dont la personne a vraiment besoin. Si un jeune ne comprend pas les mots, les petits dessins à côté des réservoirs et une voisine qui traduit l’aident. Si le temps manque, ne jouer que quatre souhaits.",
             "blatt": "ff7-glas-der-beduerfnisse"
           },
           {
@@ -444,7 +444,7 @@
             "titel": "Pause active : les quatre coins",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Dans les coins de la salle sont affichés les panneaux Calme, Bouger, Être avec d’autres, Manger et dormir. Tout le monde se lève ; lire une phrase, et chacun va sans commentaire dans le coin qui lui correspond. Après la première et la dernière phrase, un jeune par coin dit, s’il le veut, pourquoi en une phrase. On parle de préférences, pas de manques : il n’y a pas de mauvais coin. Qui ne veut pas bouger montre depuis sa place. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Dans les coins de la salle sont affichés les panneaux Calme, Bouger, Être avec d’autres, Manger et dormir. Tout le monde se lève ; lire une phrase, et chacun va sans commentaire dans le coin qui lui correspond. Après la première et la dernière phrase, un jeune par coin dit, s’il le veut, pourquoi en une phrase. On parle de préférences, pas de manques : il n’y a pas de mauvais coin. Qui ne veut pas bouger montre depuis sa place. Si le conseil de coopération a choisi un jeu pour cette pause active à la séance 5, c’est ce jeu qu’on fait aujourd’hui, à la place des quatre coins. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
             "punkte": [
               "Après une longue journée de cours, pour refaire le plein, tu as surtout besoin de…",
               "Le week-end, ce qui te fait le plus de bien, c’est…",
@@ -508,7 +508,7 @@
         ],
         "bruecke": "La semaine prochaine, on regarde comment vous êtes : plutôt expansifs ou plutôt réservés, plutôt spontanés ou plutôt organisés – et pourquoi une classe a besoin des deux.",
         "mission": "Cette semaine, essaie une fois ton petit pas – ou la respiration 4-7-8 le soir au lit. Ton réservoir te semble-t-il un peu plus plein après ?",
-        "hintergrund": "Derrière beaucoup d’émotions et de comportements se cachent des besoins. Maslow (1943) a décrit des domaines allant du corps à l’accomplissement de soi, en passant par la sécurité, l’appartenance et la reconnaissance ; son ordre strict par étages est dépassé, pas les domaines. Selon la théorie de l’autodétermination, on va mieux et on apprend avec plus d’envie quand trois besoins de base sont satisfaits : autonomie, compétence et lien aux autres (Deci & Ryan, 2000). Les six réservoirs résument ces modèles et rendent les émotions lisibles : qui est irritable a peut-être juste le réservoir du corps vide. La communication non violente distingue les besoins des stratégies pour les satisfaire (Rosenberg, 2001) : derrière l’envie de nouvelles baskets peut se cacher le besoin de faire partie du groupe, et il existe plus d’un chemin pour y arriver. Le bocal anonyme montre à la classe ce qu’elle partage, sans que personne se dévoile.",
+        "hintergrund": "Derrière beaucoup d’émotions et de comportements se cachent des besoins. Maslow (1943) a décrit des domaines allant du corps à l’accomplissement de soi, en passant par la sécurité, l’appartenance et la reconnaissance ; son ordre strict par étages est dépassé, pas les domaines. Selon la théorie de l’autodétermination, on va mieux et on apprend avec plus d’envie quand trois besoins de base sont satisfaits : autonomie, compétence et lien aux autres (Deci & Ryan, 2000). Les six réservoirs résument ces modèles et rendent les émotions lisibles : qui est irritable a peut-être juste le réservoir du corps vide. La communication non violente distingue les besoins des stratégies pour les satisfaire (Rosenberg, 2001) : derrière le souhait d’avoir de nouvelles baskets peut se cacher le besoin de faire partie du groupe, et il existe plus d’un chemin pour y arriver. Le bocal anonyme montre à la classe ce qu’elle partage, sans que personne se dévoile.",
         "quellen": [
           "Maslow, A. H. (1943). A theory of human motivation. Psychological Review, 50(4), 370–396.",
           "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
@@ -517,7 +517,7 @@
         "achtung": "Le thème peut révéler des manques : pas de sécurité à la maison, pas assez à manger ou de sommeil, personne sur qui compter. Rien de tout cela n’est approfondi devant la classe. Lire d’abord les papiers en silence et ne lire à voix haute que ce qui reste général ; ne jamais lire un signe de danger, ne pas chercher qui l’a écrit et en parler au SePAS le jour même, selon le protocole de protection de l’école. Le bocal reste fermé dans l’armoire, les niveaux dans le cahier sont privés. Si un jeune dessine presque tous ses réservoirs vides, lui parler brièvement après le cours. Retenir son souffle reste facultatif.",
         "differenzierung": {
           "leichter": "Pour les jeunes qui ont du mal à écrire ou qui apprennent encore la langue : sur un papier, un seul mot recopié au tableau ou un petit dessin suffit – pas de mot dans leur langue, il les trahirait. Dans le cahier, en revanche, tout peut être écrit dans leur langue ; pour le plan, une idée cochée sur une affiche suffit.",
-          "schwerer": "Pour une envie du jeu, trouver deux autres chemins qui remplissent le même réservoir. Pendant le carrousel des idées, animer un îlot et présenter à la fin les trois meilleures idées d’une affiche."
+          "schwerer": "Pour un souhait du jeu, trouver deux autres chemins qui remplissent le même réservoir. Pendant le carrousel des idées, animer un îlot et présenter à la fin les trois meilleures idées d’une affiche."
         },
         "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), les six réservoirs et le jeu « Quel réservoir se cache derrière ? » (10 min), remplir le bocal de la classe et lire dix papiers (15 min), dessiner ses réservoirs et prévoir un petit pas (12 min), respiration 4-7-8 (3 min), Skills-Pass et mission de la semaine (5 min). Les quatre coins et le carrousel sont supprimés ; les affiches d’idées peuvent être rattrapées lors d’une séance ultérieure."
       }
