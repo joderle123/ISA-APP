@@ -88,12 +88,12 @@ kürzer, Gespräche kleiner (zu zweit, Tischgruppe), Ergebnisse sichtbar (Tafel,
 | Min. | `phase` | Was passiert |
 |---|---|---|
 | 0–10 | `ankommen` | Check-in: Klebepunkt am Gefühlsrad-Plakat beim Hereinkommen (oder eine Variante, Abschnitt 2.3), dazu zwei, drei Stimmen; die Lehrkraft beginnt |
-| 10–15 | `bruecke` | Rückblick auf die letzte Stunde (am besten sagt eine Person ihren Satz aus dem Skills-Pass), Thema von heute nennen |
+| 10–15 | `bruecke` | Rückblick auf die letzte Stunde (am besten sagt eine Person ihren Satz aus dem Skills-Pass), kurz nach der Wochen-Mission fragen (Daumen, eine Stimme), Thema von heute nennen |
 | 15–45 | `input` / `uebung` / `aktiv` | Hauptteil 1: Input und erste Übung, oft mit Schülerblatt; ein oder zwei Schritte |
 | 45–50 | `aktiv` | Bewegungspause (5 Min.) im Raum oder auf dem Schulhof; entfällt, wenn die große Pause dazwischen liegt |
 | 50–85 | `uebung` / `aktiv` | Hauptteil 2: Rollenspiel, Spiel, Stationen, Gruppenarbeit; ein oder zwei Schritte |
 | 85–95 | `skill` | Ein Skill oder eine Achtsamkeitsübung, angeleitet, mit kurzer Auswertung |
-| 95–100 | `abschluss` | Skills-Pass (ein Satz mit einer Leitfrage zum Thema), Blitzlicht oder Variante, Ausblick |
+| 95–100 | `abschluss` | Skills-Pass (ein Satz mit einer Leitfrage zum Thema), Blitzlicht oder Variante, Wochen-Mission ansagen, Ausblick |
 
 - Abweichungen sind erlaubt, wenn der Inhalt es verlangt (Film, Stationen, Präsentationen,
   Kapitelende mit Skills-Kompass oder Skills-Buch). Fest bleiben: 0–10 Check-in, 10–15 Brücke,
@@ -151,7 +151,7 @@ deshalb meist Klebepunkt, Handzeichen, Aufstellen oder zwei, drei Freiwillige.
   Die Lehrkraft leitet langsam an, macht mit, fragt danach: Wann könnte das helfen?
 - **Abschluss:** Skills-Pass mit einer Leitfrage zum Thema („Welchen Satz nehme ich mit?“) ·
   Blitzlicht (ein Wort) · Daumen hoch, Mitte, runter · Koffer und Papierkorb · eine Tischgruppe
-  sagt einen Satz für alle · Ausblick (`bruecke`).
+  sagt einen Satz für alle · Wochen-Mission ansagen (`mission`, steht im Heft) · Ausblick (`bruecke`).
 
 ---
 
@@ -207,6 +207,20 @@ deshalb meist Klebepunkt, Handzeichen, Aufstellen oder zwei, drei Freiwillige.
   - Jede Kernübung hat `tipp` **und** `wennEsKippt`; die meisten anderen Schritte eines von beiden.
 - `bruecke`: ein wörtlicher Satz für das Ende, der zur **nächsten Einheit im Plan** passt
   („Nächste Woche …“ / « La semaine prochaine… »). In der letzten Einheit des Jahres ein Abschiedssatz.
+- `mission`: die **Wochen-Mission** – ein kleiner Auftrag für den Alltag bis zur nächsten Stunde, an die
+  Jugendlichen gerichtet („du“ / « tu »), 60–180 Zeichen. Sie steht im Schülerheft auf den Seiten „Meine
+  Wochen-Missionen“ (mit Kästchen zum Abhaken) und im Handbuch unter dem Ausblick. Der letzte Schritt
+  (Abschluss) sagt sie in einem Satz an; die Brücke der **nächsten** Stunde fragt kurz nach (Daumen hoch, Mitte,
+  runter; eine Stimme erzählt – niemand muss sie geschafft haben). Das Prüfskript sucht in beiden Schritten
+  das Wort „Mission“.
+  - In wenigen Minuten machbar, ohne Material, Geld oder Handy; etwas tun, ausprobieren oder beobachten –
+    höchstens einen Satz schreiben. Passt zum Skill oder zum Kern der Stunde.
+  - Nichts, was andere bloßstellt oder Persönliches von anderen verlangt; keine Mutprobe; nichts, wofür man
+    Erwachsene ausfragen muss. Bei sensiblen Themen sanft und mit Wahl („… oder …“).
+  - Keine Hausaufgabe: keine Kontrolle, keine Note, kein Tadel, wenn sie nicht geklappt hat.
+  - Beispiel: „Probiere 5-4-3-2-1 diese Woche einmal aus – im Bus, vor einem Test oder abends im Bett. Was war
+    danach anders?“ / « Essaie le 5-4-3-2-1 une fois cette semaine – dans le bus, avant un devoir en classe ou le
+    soir au lit. Qu’est-ce qui a changé après ? »
 - `hintergrund`: 450–950 Zeichen für die Lehrkraft: warum die Einheit wirkt, fachlich sauber,
   verständlich ohne Fachstudium, mit Quelle im Text („(Gross, 1998)“, „(Durlak et al., 2011)“).
 - `quellen`: 1–3 Einträge, wörtlich aus `src/blatt/quellen.ts` (Abschnitt 8), in beiden Sprachen gleich.
@@ -293,6 +307,7 @@ Tipps und „Wenn es kippt“.
 | der Ampelplan | le plan feu tricolore |
 | die Notfallkarte | la carte d’urgence |
 | das Blitzlicht | le tour éclair |
+| die Wochen-Mission | la mission de la semaine |
 | die Bewegungspause | la pause active |
 | die Brücke (Phase) | le lien |
 | die Klassenvereinbarung | la charte de classe |

@@ -254,7 +254,7 @@
             "titel": "Skills-Pass und Blitzlicht",
             "dauer": 10,
             "phase": "abschluss",
-            "text": "Den Skills-Pass im Heft zeigen: Am Ende jeder Stunde kommt ein Satz hinein – Was nehme ich heute mit? Erster Eintrag jetzt (3 Min.), danach gibt es einen Stempel. Die Einträge werden nicht bewertet und nur gelesen, wenn jemand es anbietet. Dann das Blitzlicht: Reihum sagt jede Person ein Wort zu heute, schnell und ohne Kommentar; „weiter“ ist erlaubt. Zum Schluss den Ausblick auf die nächste Stunde geben.",
+            "text": "Den Skills-Pass im Heft zeigen: Am Ende jeder Stunde kommt ein Satz hinein – Was nehme ich heute mit? Erster Eintrag jetzt (3 Min.), danach gibt es einen Stempel. Die Einträge werden nicht bewertet und nur gelesen, wenn jemand es anbietet. Dann das Blitzlicht: Reihum sagt jede Person ein Wort zu heute, schnell und ohne Kommentar; „weiter“ ist erlaubt. Dann die Wochen-Mission im Heft zeigen und in einem Satz ansagen; zum Schluss den Ausblick auf die nächste Stunde geben.",
             "sagen": [
               "Ein Wort zu heute. Nur ein Wort, ohne Erklärung."
             ],
@@ -263,6 +263,7 @@
           }
         ],
         "bruecke": "Nächste Woche geht es um den Start am Lycée: Was ist neu, was ist schwierig – und wer hilft euch hier?",
+        "mission": "Probiere 5-4-3-2-1 diese Woche einmal aus – im Bus, vor einem Test oder abends im Bett. Was war danach anders?",
         "hintergrund": "Eine Klasse braucht am Anfang Sicherheit und klare Regeln, bevor persönliche Themen Platz haben. Programme zur Förderung sozial-emotionaler Kompetenzen wirken besonders, wenn sie Schritt für Schritt aufbauen, aktiv üben und offen benennen, was gelernt wird (Durlak et al., 2011). Bei Jugendlichen ab etwa zwölf Jahren kommt etwas hinzu: Sie lehnen Programme ab, die belehrend wirken, und machen mit, wenn sie ernst genommen werden und mitbestimmen können (Yeager, 2017). Deshalb entsteht die Klassenvereinbarung aus der Klasse selbst; die Lehrkraft ergänzt nur, was fehlt. Die Rituale – Check-in, Skills-Pass, Blitzlicht – geben jeder Stunde einen festen Rahmen, der Sicherheit schafft.",
         "quellen": [
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
@@ -494,7 +495,7 @@
             "titel": "Skills-Pass et tour éclair",
             "dauer": 10,
             "phase": "abschluss",
-            "text": "Montrer le Skills-Pass dans le cahier : à la fin de chaque séance, on y écrit une phrase – qu’est-ce que j’emporte aujourd’hui ? Première phrase maintenant (3 min), puis un tampon. Les phrases ne sont pas évaluées et ne sont lues que si le jeune le propose. Puis le tour éclair : à tour de rôle, chacun dit un mot sur la séance, vite et sans commentaire ; on peut dire « je passe ». Pour finir, annoncer la prochaine séance.",
+            "text": "Montrer le Skills-Pass dans le cahier : à la fin de chaque séance, on y écrit une phrase – qu’est-ce que j’emporte aujourd’hui ? Première phrase maintenant (3 min), puis un tampon. Les phrases ne sont pas évaluées et ne sont lues que si le jeune le propose. Puis le tour éclair : à tour de rôle, chacun dit un mot sur la séance, vite et sans commentaire ; on peut dire « je passe ». Montrer ensuite la mission de la semaine dans le cahier et l’annoncer en une phrase ; pour finir, annoncer la prochaine séance.",
             "sagen": [
               "Un mot sur aujourd’hui. Juste un mot, sans explication."
             ],
@@ -503,6 +504,7 @@
           }
         ],
         "bruecke": "La semaine prochaine, on parle des débuts au lycée : qu’est-ce qui est nouveau, qu’est-ce qui est difficile – et qui peut vous aider ici ?",
+        "mission": "Essaie le 5-4-3-2-1 une fois cette semaine – dans le bus, avant un devoir en classe ou le soir au lit. Qu’est-ce qui a changé après ?",
         "hintergrund": "Au début, une classe a besoin de sécurité et de règles claires avant que des sujets personnels puissent trouver leur place. Les programmes qui développent les compétences socio-émotionnelles sont particulièrement efficaces lorsqu’ils progressent pas à pas, font pratiquer activement et nomment clairement ce qui est appris (Durlak et al., 2011). Chez les jeunes à partir de douze ans environ, un autre élément compte : ils rejettent les programmes qui font la morale et s’engagent lorsqu’ils sont pris au sérieux et peuvent participer aux décisions (Yeager, 2017). C’est pourquoi la charte naît de la classe elle-même ; l’enseignant·e ne complète que ce qui manque. Les rituels – tour d’humeur, Skills-Pass, tour éclair – donnent à chaque séance un cadre fixe qui rassure.",
         "quellen": [
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",

@@ -304,13 +304,25 @@ function pruefeEinheit(e: Einheit, wo: string) {
     if (!x.quellen?.length) melde('F', sw, 'keine Quelle')
     if (!x.achtung) melde('F', sw, '„achtung“ fehlt')
     if (!x.bruecke) melde('F', sw, '„bruecke“ (Ausblick) fehlt')
+    // Wochen-Mission: an die Jugendlichen, kurz; angesagt im Abschluss, nachgefragt in der Brücke der nächsten Stunde
+    if (!x.mission?.trim()) melde('F', sw, 'Wochen-Mission („mission“) fehlt')
+    else {
+      if (x.mission.length < 50 || x.mission.length > 200) melde('H', sw, `Wochen-Mission ${x.mission.length} Zeichen (60–180)`)
+      // an eine Person: „du“ oder Imperativ, nicht „ihr“ / « vous »
+      const mehrzahl = s === 'de' ? /\b(ihr|euch|eure?[mnrs]?)\b/i : /(^|[^\p{L}])(vous|votre|vos)(?![\p{L}])/iu
+      if (mehrzahl.test(x.mission)) melde('H', sw, 'Wochen-Mission an eine Person richten („du“ / « tu »), nicht an die Klasse')
+    }
+    const brueckeSchritt = (x.schritte ?? []).find((st) => st.phase === 'bruecke')
+    if ((pe?.nr ?? 0) > 1 && brueckeSchritt && !/mission/i.test(brueckeSchritt.text)) melde('H', sw, 'Brücke: kurz nach der Wochen-Mission der letzten Stunde fragen')
+    const letzterSchritt = (x.schritte ?? []).at(-1)
+    if (letzterSchritt && !/mission/i.test(letzterSchritt.text)) melde('H', sw, 'Abschluss: die Wochen-Mission ansagen')
     if (!x.differenzierung?.leichter?.trim() || !x.differenzierung?.schwerer?.trim()) melde('F', sw, 'Differenzierung (leichter, schwerer) fehlt')
     if (!x.kurzfassung?.trim()) melde('F', sw, 'Kurzfassung fehlt')
     else {
       const minuten = [...x.kurzfassung.matchAll(/(\d+)\s*(?:Min\.|min\b)/g)].reduce((a, m) => a + Number(m[1]), 0)
       if (minuten !== 50) melde('F', sw, `Kurzfassung ergibt ${minuten} Min. statt 50`)
     }
-    for (const y of [x.titel, x.kurz, ...(x.ziele ?? []), ...(x.material ?? []), ...(x.vorbereitung ?? []), x.bruecke, x.hintergrund, x.achtung, x.differenzierung?.leichter, x.differenzierung?.schwerer, x.kurzfassung]) stil(sw, y, s)
+    for (const y of [x.titel, x.kurz, ...(x.ziele ?? []), ...(x.material ?? []), ...(x.vorbereitung ?? []), x.bruecke, x.mission, x.hintergrund, x.achtung, x.differenzierung?.leichter, x.differenzierung?.schwerer, x.kurzfassung]) stil(sw, y, s)
   }
   // Beide Sprachen gleich gebaut
   const [a, b] = [e.de, e.fr]

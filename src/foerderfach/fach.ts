@@ -119,6 +119,9 @@ export const TX = {
     schwerer: 'Anspruchsvoller',
     kurzfassung: 'Wenn nur eine Stunde bleibt',
     heftKurz: (s: number) => `Heft S. ${s}`,
+    mission: 'Wochen-Mission',
+    /** Hinweis neben der Wochen-Mission im Handbuch */
+    missionVerweis: (s?: number) => `${s ? `Heft S. ${s}` : 'im Schülerheft'} · in der nächsten Brücke kurz nachfragen`,
     seiteKurz: (s: number) => `S. ${s}`,
     imKapitel: 'In diesem Kapitel',
     fuerLehrkraft: 'Kopiervorlage für die Lehrkraft',
@@ -188,6 +191,8 @@ export const TX = {
     schwerer: 'Plus exigeant',
     kurzfassung: 'S’il ne reste qu’une heure',
     heftKurz: (s: number) => `Cahier p. ${s}`,
+    mission: 'Mission de la semaine',
+    missionVerweis: (s?: number) => `${s ? `cahier p. ${s}` : 'dans le cahier'} · à reprendre au début de la séance suivante`,
     seiteKurz: (s: number) => `p. ${s}`,
     imKapitel: 'Dans ce chapitre',
     fuerLehrkraft: 'Modèle pour l’enseignant·e',

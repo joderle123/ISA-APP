@@ -125,7 +125,7 @@
             "titel": "Rückblick und Rahmen für das Kapitel",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor – dort ging es um Fehler und das Wort „noch“. Dann das neue Kapitel nennen und an die Tafel schreiben: „Schwere Gefühle – Was tun mit Trauer, Scham und Einsamkeit?“ Vier Stunden: Trauer, Scham und Schuld, Einsamkeit und zum Schluss, was man tut, wenn es einem richtig schlecht geht. Das Rahmen-Plakat vorlesen und jeden Punkt in einem Satz begründen (Liste); es hängt in allen vier Stunden des Kapitels. Den Ruheplatz zeigen und die Fragenbox neben der Tür: Fragen ohne Namen werden in der nächsten Stunde beantwortet, nachdem die Lehrkraft sie mit dem SePAS angeschaut hat.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor – dort ging es um Fehler und das Wort „noch“; per Daumen nach der Wochen-Mission fragen. Dann das neue Kapitel nennen und an die Tafel schreiben: „Schwere Gefühle – Was tun mit Trauer, Scham und Einsamkeit?“ Vier Stunden: Trauer, Scham und Schuld, Einsamkeit und zum Schluss, was man tut, wenn es einem richtig schlecht geht. Das Rahmen-Plakat vorlesen und jeden Punkt in einem Satz begründen (Liste); es hängt in allen vier Stunden des Kapitels. Den Ruheplatz zeigen und die Fragenbox neben der Tür: Fragen ohne Namen werden in der nächsten Stunde beantwortet, nachdem die Lehrkraft sie mit dem SePAS angeschaut hat.",
             "sagen": [
               "In den nächsten vier Wochen geht es um Gefühle, über die man selten spricht. Ihr müsst dabei nichts von euch erzählen – wir arbeiten mit ausgedachten Personen.",
               "Trotzdem kann euch etwas nahegehen. Dann dürft ihr jederzeit an den Ruheplatz, ohne etwas zu erklären."
@@ -357,7 +357,7 @@
             "titel": "Skills-Pass, Anspannung und Ausblick",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Eintrag in den Skills-Pass mit der Leitfrage: Was würde ich jemandem sagen oder schreiben, der gerade etwas verloren hat? (2 Min.), danach der Stempel. Dann zeigen alle auf drei noch einmal ihre Anspannung mit den Fingern; die Lehrkraft vergleicht still mit dem Anfang. Den Ausblick auf die nächste Stunde geben, auf das Hilfe-Plakat zeigen und sagen, wann die Lehrkraft nach der Stunde ansprechbar ist.",
+            "text": "Eintrag in den Skills-Pass mit der Leitfrage: Was würde ich jemandem sagen oder schreiben, der gerade etwas verloren hat? (2 Min.), danach der Stempel. Dann zeigen alle auf drei noch einmal ihre Anspannung mit den Fingern; die Lehrkraft vergleicht still mit dem Anfang. Die Wochen-Mission ansagen (steht im Heft, eine Wahl zwischen zwei Möglichkeiten), den Ausblick auf die nächste Stunde geben, auf das Hilfe-Plakat zeigen und sagen, wann die Lehrkraft nach der Stunde ansprechbar ist.",
             "sagen": [
               "Für den Skills-Pass: Was würdet ihr jemandem sagen oder schreiben, der gerade etwas verloren hat? Ein Satz reicht.",
               "Wer nach dieser Stunde reden möchte: Ich bin gleich danach noch ein paar Minuten hier. Und der SePAS ist für euch da – der Raum steht auf dem Plakat."
@@ -366,6 +366,7 @@
           }
         ],
         "bruecke": "Nächste Woche geht es um zwei Gefühle, die man am liebsten versteckt: Scham und Schuld – und darum, wie man aus der Scham-Spirale wieder herauskommt.",
+        "mission": "Wenn diese Woche ein schweres Gefühl kommt: Probiere einmal, die Welle kommen und gehen zu lassen – oder schreib dir einen Satz auf, der dir dann guttut.",
         "hintergrund": "Trauer ist die normale Antwort auf einen Verlust – nicht nur auf einen Todesfall, auch auf eine Trennung, einen Umzug oder das Ende einer Freundschaft. Nach dem dualen Prozessmodell (Stroebe & Schut, 1999) pendeln Trauernde zwischen zwei Seiten: dem Verlust (vermissen, erinnern, weinen) und dem Alltag (Schule, Freunde, Neues, Pausen vom Trauern). Das Hin und Her gilt als gesund; schwierig wird es, wenn jemand lange auf einer Seite festsitzt. Worden (2009) beschreibt Trauer nicht als feste Folge von Phasen, sondern als Aufgaben – bis hin zu einer bleibenden inneren Verbindung, die neben dem weiteren Leben Platz hat. Trauer zeigt sich auch als Gereiztheit, Müdigkeit oder Rückzug. Für Jugendliche sind Freundinnen und Freunde eine wichtige Stütze (Bagwell & Schmidt, 2011); deshalb übt die Stunde, was Gleichaltrige konkret tun können – und wann sie Erwachsene dazuholen.",
         "quellen": [
           "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
@@ -472,7 +473,7 @@
             "titel": "Retour et cadre du chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance – il y était question des erreurs et du mot « pas encore ». Puis annoncer le nouveau chapitre et l’écrire au tableau : « Émotions difficiles – Que faire de la tristesse, de la honte et de la solitude ? » Quatre séances : le deuil, la honte et la culpabilité, la solitude et, pour finir, que faire quand on va vraiment mal. Lire l’affiche du cadre et justifier chaque point en une phrase (liste) ; elle reste au mur pendant les quatre séances du chapitre. Montrer le coin calme et la boîte à questions près de la porte : les questions sans nom reçoivent une réponse à la séance suivante, après avoir été lues avec le SePAS.",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance – il y était question des erreurs et du mot « pas encore » ; demander avec le pouce où en est la mission de la semaine. Puis annoncer le nouveau chapitre et l’écrire au tableau : « Émotions difficiles – Que faire de la tristesse, de la honte et de la solitude ? » Quatre séances : le deuil, la honte et la culpabilité, la solitude et, pour finir, que faire quand on va vraiment mal. Lire l’affiche du cadre et justifier chaque point en une phrase (liste) ; elle reste au mur pendant les quatre séances du chapitre. Montrer le coin calme et la boîte à questions près de la porte : les questions sans nom reçoivent une réponse à la séance suivante, après avoir été lues avec le SePAS.",
             "sagen": [
               "Pendant les quatre prochaines semaines, on va aborder des émotions dont on parle rarement. Vous n’avez rien à raconter sur vous – on travaille avec des personnages inventés.",
               "Quelque chose peut quand même vous toucher. Dans ce cas, vous pouvez aller au coin calme à tout moment, sans rien expliquer."
@@ -704,7 +705,7 @@
             "titel": "Skills-Pass, tension et suite",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire dans le Skills-Pass avec la question : qu’est-ce que je dirais ou écrirais à quelqu’un qui vient de perdre quelque chose ? (2 min), puis le tampon. Ensuite, à trois, tout le monde montre encore une fois sa tension avec les doigts ; comparer en silence avec le début. Annoncer la prochaine séance, montrer l’affiche d’aide et dire quand on est disponible après le cours.",
+            "text": "Écrire dans le Skills-Pass avec la question : qu’est-ce que je dirais ou écrirais à quelqu’un qui vient de perdre quelque chose ? (2 min), puis le tampon. Ensuite, à trois, tout le monde montre encore une fois sa tension avec les doigts ; comparer en silence avec le début. Annoncer la mission de la semaine (dans le cahier, avec deux possibilités au choix), la prochaine séance, montrer l’affiche d’aide et dire quand on est disponible après le cours.",
             "sagen": [
               "Pour le Skills-Pass : qu’est-ce que vous diriez ou écririez à quelqu’un qui vient de perdre quelque chose ? Une phrase suffit.",
               "Si vous voulez parler après ce cours : je reste encore quelques minutes. Et le SePAS est là pour vous – la salle est indiquée sur l’affiche."
@@ -713,6 +714,7 @@
           }
         ],
         "bruecke": "La semaine prochaine, on parle de deux émotions qu’on préfère cacher : la honte et la culpabilité – et de la façon de sortir de la spirale de la honte.",
+        "mission": "Si une émotion lourde arrive cette semaine, essaie une fois de laisser la vague venir et repartir – ou écris-toi une phrase qui te fait du bien à ce moment-là.",
         "hintergrund": "Le deuil est la réaction normale à une perte – pas seulement à un décès, mais aussi à une séparation, un déménagement ou la fin d’une amitié. Selon le modèle du double processus (Stroebe & Schut, 1999), les personnes en deuil font des allers-retours entre deux pôles : la perte (le manque, les souvenirs, les larmes) et le quotidien (l’école, les amis, la nouveauté, des pauses dans le chagrin). Ce va-et-vient est considéré comme sain ; cela devient difficile quand quelqu’un reste longtemps bloqué d’un côté. Worden (2009) décrit le deuil non comme une suite fixe d’étapes, mais comme des tâches – jusqu’à un lien intérieur durable qui trouve sa place dans la vie qui continue. Le deuil se manifeste aussi par de l’irritabilité, de la fatigue ou du repli. Pour les adolescents, les amis sont un soutien important (Bagwell & Schmidt, 2011) ; la séance entraîne donc ce que les jeunes peuvent faire concrètement – et quand faire appel à un adulte.",
         "quellen": [
           "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",

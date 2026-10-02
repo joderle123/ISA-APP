@@ -1037,7 +1037,7 @@ function Wortspeicher({ woerter, sprache, p, t }: { woerter: Einheit['woerter'];
 }
 
 /** `fliessend`: die Schritte beginnen direkt nach der Übersicht statt auf einer neuen Seite (wenn die Übersicht nicht auf eine Seite passt) */
-function EinheitSeiten({ e, plan, sprache, blaetter, seiten, marken, heft, fliessend }: { e: Einheit; plan: Jahresplan; sprache: Sprache; blaetter: Map<string, Blatt>; seiten?: Marken; marken?: Marken; heft?: Marken; fliessend?: boolean }) {
+export function EinheitSeiten({ e, plan, sprache, blaetter, seiten, marken, heft, fliessend }: { e: Einheit; plan: Jahresplan; sprache: Sprache; blaetter: Map<string, Blatt>; seiten?: Marken; marken?: Marken; heft?: Marken; fliessend?: boolean }) {
   const t = TX[sprache]
   const x = e[sprache]
   const pe = plan.einheiten.find((u) => u.id === e.id)!
@@ -1177,6 +1177,20 @@ function EinheitSeiten({ e, plan, sprache, blaetter, seiten, marken, heft, flies
               {t.ausblick}
             </Kleinlabel>
             <Absatz groesse={9.4}>{ty(`${t.anf[0]}${sprache === 'fr' ? ' ' : ''}${x.bruecke}${sprache === 'fr' ? ' ' : ''}${t.anf[1]}`, sprache)}</Absatz>
+          </View>
+        </View>
+      ) : null}
+      {x.mission ? (
+        <View wrap={false} style={{ marginTop: 8, borderWidth: 0.9, borderColor: WARM, borderRadius: 9, padding: 10, flexDirection: 'row' }}>
+          <View style={{ width: 3, borderRadius: 2, backgroundColor: WARM, marginRight: 9 }} />
+          <View style={{ flex: 1 }}>
+            <View style={{ flexDirection: 'row', alignItems: 'flex-end', marginBottom: 2 }}>
+              <Kleinlabel farbe={NEUTRAL.tinte} style={{ flex: 1 }}>
+                {t.mission}
+              </Kleinlabel>
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, color: NEUTRAL.leise }}>{t.missionVerweis(heft?.get(`m${kap.trimester}`))}</Text>
+            </View>
+            <Absatz groesse={9.4}>{ty(x.mission, sprache)}</Absatz>
           </View>
         </View>
       ) : null}

@@ -127,7 +127,7 @@
             "titel": "Rückblick und Start ins Kapitel Wut",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor; kurz nachfragen, welcher Skill im Skills-Kompass unter „3 · Stress und Schule“ steht (zwei Stimmen reichen). Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was steckt hinter meiner Wut – und wie bremse ich rechtzeitig? Die drei Stunden des Kapitels ankündigen: heute verstehen, nächste Woche bremsen, danach wiedergutmachen. Den Rahmen klären: Niemand erzählt von eigenen Ausbrüchen, gearbeitet wird mit erfundenen Figuren.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor; kurz nachfragen, welcher Skill im Skills-Kompass unter „3 · Stress und Schule“ steht (zwei Stimmen reichen) und per Daumen nach der Wochen-Mission fragen. Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was steckt hinter meiner Wut – und wie bremse ich rechtzeitig? Die drei Stunden des Kapitels ankündigen: heute verstehen, nächste Woche bremsen, danach wiedergutmachen. Den Rahmen klären: Niemand erzählt von eigenen Ausbrüchen, gearbeitet wird mit erfundenen Figuren.",
             "sagen": [
               "Wut hat einen schlechten Ruf. Dabei meldet sie oft nur, dass etwas nicht stimmt – schwierig wird meistens erst, was wir dann tun.",
               "Ihr müsst heute nichts von euch erzählen. Was ihr über eure eigene Wut herausfindet, bleibt auf eurem Blatt."
@@ -287,7 +287,7 @@
             "titel": "Skills-Pass und Wut-Protokoll",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Woran merke ich meine Wut, bevor sie platzt? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel; wer mag, liest vor, zwei Stimmen reichen. Dann den Wochenauftrag geben: bis zur nächsten Stunde einmal im Wut-Protokoll festhalten, was passiert ist, was darunter lag und welches Zeichen zuerst kam – ohne Namen und Einzelheiten. Zum Schluss der Ausblick auf die nächste Stunde.",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Woran merke ich meine Wut, bevor sie platzt? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel; wer mag, liest vor, zwei Stimmen reichen. Dann die Wochen-Mission ansagen (steht im Heft): bis zur nächsten Stunde einmal im Wut-Protokoll festhalten, was passiert ist, was darunter lag und welches Zeichen zuerst kam – ohne Namen und Einzelheiten. Zum Schluss der Ausblick auf die nächste Stunde.",
             "sagen": [
               "Ein Satz für den Skills-Pass: Woran merkt ihr eure Wut, bevor sie platzt?",
               "Bis nächste Woche beobachtet ihr euch selbst: einmal hinschauen, eine Zeile ausfüllen, fertig."
@@ -296,6 +296,7 @@
           }
         ],
         "bruecke": "Nächste Woche geht es um die Sekunden zwischen dem ersten Warnzeichen und dem Ausbruch: Ihr lernt die Stopp-Ampel kennen und probiert sie in Szenen aus dem Alltag aus – bis dahin schaut ihr, welches Zeichen bei euch zuerst kommt.",
+        "mission": "Halte bis zur nächsten Stunde einmal im Wut-Protokoll fest: Was ist passiert, was lag darunter, welches Zeichen kam zuerst? Ohne Namen.",
         "hintergrund": "Unter sichtbarer Wut liegen oft verletzlichere Gefühle: Kränkung, Angst, Enttäuschung oder Scham. Besonders gut untersucht ist der Weg von Scham zu Ärger: Wer sich als ganze Person bloßgestellt fühlt, wehrt das häufig mit Wut und Schuldzuweisung nach außen ab (Tangney & Dearing, 2002). Der Eisberg macht diese Schicht besprechbar, ohne dass jemand Eigenes erzählen muss, und zeigt auch Erwachsenen, was hilft: Scham braucht ein Gespräch unter vier Augen, keine Ansage vor der Klasse. Wut ist zugleich ein Körperzustand: In den Körperkarten von Nummenmaa et al. (2014) zeigte sie sich vor allem in Kopf, Brust, Armen und Händen. Viele bemerken diese Signale, bevor sie denken: Ich bin wütend. Je früher man in den Ablauf eines Gefühls eingreift, desto leichter gelingt die Regulation (Gross, 1998) – deshalb sucht die Stunde das allererste Warnzeichen, an dem nächste Woche die Stopp-Ampel ansetzt.",
         "quellen": [
           "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford.",
@@ -399,7 +400,7 @@
             "titel": "Retour sur la séance et ouverture du chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance ; demander brièvement quel skill figure dans la boussole des skills sous « 3 · Stress et école » (deux voix suffisent). Puis ouvrir le nouveau chapitre et écrire au tableau la question clé : que cache ma colère – et comment freiner à temps ? Annoncer les trois séances du chapitre : aujourd’hui comprendre, la semaine prochaine freiner, ensuite réparer. Poser le cadre : personne ne raconte ses propres crises de colère, on travaille avec des personnages inventés.",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance ; demander brièvement quel skill figure dans la boussole des skills sous « 3 · Stress et école » (deux voix suffisent) et demander avec le pouce où en est la mission de la semaine. Puis ouvrir le nouveau chapitre et écrire au tableau la question clé : que cache ma colère – et comment freiner à temps ? Annoncer les trois séances du chapitre : aujourd’hui comprendre, la semaine prochaine freiner, ensuite réparer. Poser le cadre : personne ne raconte ses propres crises de colère, on travaille avec des personnages inventés.",
             "sagen": [
               "La colère a mauvaise réputation. Pourtant, souvent, elle signale juste que quelque chose ne va pas – le problème, c’est plutôt ce qu’on fait ensuite.",
               "Aujourd’hui, vous n’avez rien à raconter sur vous. Ce que vous découvrez sur votre propre colère reste sur votre fiche."
@@ -568,6 +569,7 @@
           }
         ],
         "bruecke": "La semaine prochaine, on s’intéresse aux secondes entre le premier signal d’alerte et l’explosion : vous découvrez le feu stop et vous l’essayez dans des scènes du quotidien – d’ici là, observez quel signal arrive en premier chez vous.",
+        "mission": "D’ici la prochaine séance, note une fois dans le journal de la colère : ce qui s’est passé, ce qu’il y avait dessous, quel signal est venu en premier. Sans noms.",
         "hintergrund": "Sous la colère visible se cachent souvent des émotions plus vulnérables : vexation, peur, déception ou honte. Le passage de la honte à la colère est particulièrement bien étudié : qui se sent exposé dans toute sa personne s’en défend souvent par la colère et en rejetant la faute sur les autres (Tangney & Dearing, 2002). L’iceberg permet d’en parler sans que personne raconte sa propre histoire, et montre aussi aux adultes ce qui aide : la honte appelle un entretien en tête-à-tête, pas une remarque devant la classe. La colère est aussi un état du corps : dans les cartes corporelles de Nummenmaa et al. (2014), elle apparaissait surtout dans la tête, la poitrine, les bras et les mains. Beaucoup sentent ces signaux avant de se dire : je suis en colère. Plus on intervient tôt dans le déroulement d’une émotion, plus la régulation est facile (Gross, 1998) : la séance cherche donc le tout premier signal, sur lequel s’appuiera le feu stop.",
         "quellen": [
           "Tangney, J. P. & Dearing, R. L. (2002). Shame and Guilt. New York: Guilford.",

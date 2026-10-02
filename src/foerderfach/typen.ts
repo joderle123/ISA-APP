@@ -83,6 +83,12 @@ export interface EinheitText {
   schritte: Schritt[]
   /** Ausblick auf die nächste Einheit (ein Satz, wörtlich) */
   bruecke?: string
+  /**
+   * Wochen-Mission: ein kleiner Auftrag für den Alltag bis zur nächsten Stunde, an die Jugendlichen
+   * gerichtet („du“ / « tu »), 60–180 Zeichen. Steht im Schülerheft („Meine Wochen-Missionen“) und im
+   * Handbuch unter dem Ausblick; die Brücke der nächsten Stunde fragt kurz nach.
+   */
+  mission?: string
   /** Fachlicher Hintergrund (300–900 Zeichen, Quellen im Text) */
   hintergrund?: string
   /** Nur Texte aus src/blatt/quellen.ts */

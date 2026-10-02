@@ -121,7 +121,7 @@
             "titel": "Rückblick und Thema der Stunde",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Zwei Freiwillige lesen ihren Satz aus dem Skills-Pass vom letzten Mal vor. Per Handzeichen fragen: Wer hat 5-4-3-2-1 seit letzter Woche einmal ausprobiert – im Bus, vor einem Test, abends im Bett? Kurz auf die Klassenvereinbarung zeigen: Sie gilt heute auch unterwegs im Haus. Dann das Thema an die Tafel schreiben: Neu am Lycée – was ist neu, was ist schwer, wer hilft?",
+            "text": "Zwei Freiwillige lesen ihren Satz aus dem Skills-Pass vom letzten Mal vor. Zur Wochen-Mission per Handzeichen fragen: Wer hat 5-4-3-2-1 seit letzter Woche einmal ausprobiert – im Bus, vor einem Test, abends im Bett? Kurz auf die Klassenvereinbarung zeigen: Sie gilt heute auch unterwegs im Haus. Dann das Thema an die Tafel schreiben: Neu am Lycée – was ist neu, was ist schwer, wer hilft?",
             "sagen": [
               "Ihr seid seit ein paar Wochen hier. Heute geht es darum, was neu ist, was noch schwer ist – und wer euch in diesem Haus hilft."
             ],
@@ -272,7 +272,7 @@
             "titel": "Skills-Pass und Daumen-Blitzlicht",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (3 Min.): die Leitfrage an die Tafel schreiben – Welche Anlaufstelle merke ich mir, und wofür? Wer mag, schreibt stattdessen seinen Wenn-dann-Plan hinein; danach gibt es den Stempel. Blitzlicht mit dem Daumen (1 Min.): Wie gut kennt ihr euch jetzt im Lycée aus? Auf „drei“ zeigen alle gleichzeitig; mit der Bewegungspause vergleichen. Zum Schluss der Ausblick auf die nächste Stunde (1 Min.).",
+            "text": "Skills-Pass (3 Min.): die Leitfrage an die Tafel schreiben – Welche Anlaufstelle merke ich mir, und wofür? Wer mag, schreibt stattdessen seinen Wenn-dann-Plan hinein; danach gibt es den Stempel. Blitzlicht mit dem Daumen (1 Min.): Wie gut kennt ihr euch jetzt im Lycée aus? Auf „drei“ zeigen alle gleichzeitig; mit der Bewegungspause vergleichen. Zum Schluss die Wochen-Mission im Heft ansagen und den Ausblick auf die nächste Stunde geben (1 Min.).",
             "sagen": [
               "Wie gut kennt ihr euch jetzt hier aus – Daumen hoch, waagrecht oder runter? Auf drei."
             ],
@@ -280,6 +280,7 @@
           }
         ],
         "bruecke": "Nächste Woche lernt ihr euch als Klasse besser kennen – in Bewegung, mit Aufstellungen und Ratespielen, und niemand muss dabei etwas Persönliches erzählen.",
+        "mission": "Probiere deinen Wenn-dann-Plan diese Woche einmal aus – oder die Fingeratmung, wenn dir im Lycée alles zu viel wird.",
         "hintergrund": "Der Wechsel ins Lycée fällt bei den meisten mit dem Beginn der Pubertät zusammen. Die neue Schule ist größer und unübersichtlicher, statt einer Lehrperson gibt es viele, die Klasse ist neu. Passt die Umgebung schlecht zu dem, was Jugendliche in diesem Alter brauchen – verlässliche Erwachsene, Zugehörigkeit, Mitsprache –, sinken bei vielen Motivation und Wohlbefinden (Eccles & Roeser, 2011). Die Stunde setzt an zwei Stellen an: Die Jugendlichen sehen, dass andere dasselbe schwer finden, und sie lernen die Anlaufstellen mit Ort und Gesicht kennen. Hilfe holen sich Jugendliche eher bei Menschen, die sie schon kennen und denen sie vertrauen (Rickwood et al., 2005). Der Wenn-dann-Plan zum Schluss verbindet eine konkrete Situation mit einer Handlung; solche Vorsätze werden deutlich häufiger umgesetzt als allgemeine Absichten (Gollwitzer, 1999).",
         "quellen": [
           "Eccles, J. S. & Roeser, R. W. (2011). Schools as developmental contexts during adolescence. Journal of Research on Adolescence, 21(1), 225–241.",
@@ -382,7 +383,7 @@
             "titel": "Retour sur la séance et thème du jour",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Deux volontaires lisent la phrase de leur Skills-Pass de la dernière fois. Demander à main levée : qui a essayé 5-4-3-2-1 depuis la semaine dernière – dans le bus, avant un devoir en classe, le soir au lit ? Montrer brièvement la charte de classe : elle vaut aussi aujourd’hui dans les couloirs. Puis écrire le thème au tableau : Premiers pas au lycée – qu’est-ce qui est nouveau, qu’est-ce qui est difficile, qui aide ?",
+            "text": "Deux volontaires lisent la phrase de leur Skills-Pass de la dernière fois. Pour la mission de la semaine, demander à main levée : qui a essayé 5-4-3-2-1 depuis la semaine dernière – dans le bus, avant un devoir en classe, le soir au lit ? Montrer brièvement la charte de classe : elle vaut aussi aujourd’hui dans les couloirs. Puis écrire le thème au tableau : Premiers pas au lycée – qu’est-ce qui est nouveau, qu’est-ce qui est difficile, qui aide ?",
             "sagen": [
               "Vous êtes ici depuis quelques semaines. Aujourd’hui, on regarde ce qui est nouveau, ce qui est encore difficile – et qui peut vous aider dans ce bâtiment."
             ],
@@ -533,7 +534,7 @@
             "titel": "Skills-Pass et tour éclair avec le pouce",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (3 min) : écrire la question au tableau – quel point de contact est-ce que je retiens, et pour quoi ? Qui le souhaite peut y écrire son plan « si… alors » à la place ; ensuite, le tampon. Tour éclair avec le pouce (1 min) : est-ce que vous vous repérez mieux au lycée maintenant ? À « trois », tout le monde montre en même temps ; comparer avec la pause active. Pour finir, annoncer la prochaine séance (1 min).",
+            "text": "Skills-Pass (3 min) : écrire la question au tableau – quel point de contact est-ce que je retiens, et pour quoi ? Qui le souhaite peut y écrire son plan « si… alors » à la place ; ensuite, le tampon. Tour éclair avec le pouce (1 min) : est-ce que vous vous repérez mieux au lycée maintenant ? À « trois », tout le monde montre en même temps ; comparer avec la pause active. Pour finir, annoncer la mission de la semaine dans le cahier et la prochaine séance (1 min).",
             "sagen": [
               "Est-ce que vous vous repérez mieux ici maintenant – pouce en haut, à l’horizontale ou en bas ? À trois."
             ],
@@ -541,6 +542,7 @@
           }
         ],
         "bruecke": "La semaine prochaine, vous allez mieux vous connaître en tant que classe – en bougeant, en vous plaçant dans la salle et en devinant, sans que personne ait à raconter quelque chose de personnel.",
+        "mission": "Cette semaine, essaie une fois ton plan « si… alors » – ou la respiration des doigts quand tout devient trop au lycée.",
         "hintergrund": "Pour la plupart des jeunes, le passage au lycée coïncide avec le début de la puberté. La nouvelle école est plus grande et moins lisible, il y a beaucoup d’enseignants au lieu d’un seul, et la classe est nouvelle. Quand l’environnement répond mal à ce dont les jeunes ont besoin à cet âge – des adultes fiables, un sentiment d’appartenance, leur mot à dire –, la motivation et le bien-être baissent chez beaucoup d’entre eux (Eccles & Roeser, 2011). La séance agit à deux niveaux : les jeunes voient que d’autres trouvent les mêmes choses difficiles, et ils découvrent les points de contact avec un lieu et un visage. Les jeunes demandent plus facilement de l’aide à des personnes qu’ils connaissent déjà et en qui ils ont confiance (Rickwood et al., 2005). Le plan « si… alors » de la fin relie une situation précise à une action ; ce type d’intention est nettement plus souvent mis en œuvre qu’une résolution générale (Gollwitzer, 1999).",
         "quellen": [
           "Eccles, J. S. & Roeser, R. W. (2011). Schools as developmental contexts during adolescence. Journal of Research on Adolescence, 21(1), 225–241.",
