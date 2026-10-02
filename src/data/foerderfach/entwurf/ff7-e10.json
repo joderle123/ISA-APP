@@ -644,12 +644,6 @@
               "Sag im Kopf: Gerade steht … am Pult – mit einem genauen Wort vom Gefühlsrad.",
               "Frag dich: Was will mir das Gefühl sagen – und was brauche ich jetzt?"
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Ein Gefühl beim Namen zu nennen, macht es im Gehirn messbar leiser. Das Gefühl bleibt – aber es lenkt nicht mehr allein."
           }
         ],
         "lehrer": {
@@ -766,12 +760,6 @@
               "Dis-toi dans ta tête : en ce moment, c’est … qui est aux commandes – avec un mot précis de la roue.",
               "Demande-toi : que veut me dire cette émotion – et de quoi ai-je besoin maintenant ?"
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Nommer une émotion la rend mesurablement plus calme dans le cerveau. L’émotion reste – mais elle ne conduit plus toute seule."
           }
         ],
         "lehrer": {

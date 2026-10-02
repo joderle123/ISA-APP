@@ -847,12 +847,6 @@
           },
           {
             "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Wer sich vor einem Test sagt „Ich bin aufgeregt – mein Körper macht sich bereit“, schneidet besser ab als jemand, der sich beruhigen will. Herzklopfen ist Energie, keine Gefahr."
-          },
-          {
-            "art": "info",
             "symbol": "merke",
             "titel": "Füße, Atem, Stift – dein Skill, den niemand sieht",
             "punkte": [
@@ -1039,12 +1033,6 @@
                 "dann": "j’expire longuement deux fois, je me dis « mon corps se prépare », je marque la question et je passe à la suivante."
               }
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Qui se dit avant un devoir « Je suis stressé – mon corps se prépare » réussit mieux que celui qui essaie de se calmer. Le cœur qui bat, c’est de l’énergie, pas un danger."
           },
           {
             "art": "info",

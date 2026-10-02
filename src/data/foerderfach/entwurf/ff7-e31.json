@@ -680,12 +680,6 @@
             "text": "Dein Skills-Koffer hilft, wenn es akut wird. Schlaf, Bewegung, Essen, Pausen und Menschen, die dir guttun, sorgen dafür, dass es seltener so weit kommt. Trag deinen Schritt deshalb auch in die grüne Zone deines Ampelplans ein."
           },
           {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "In der Pubertät verschiebt sich die innere Uhr nach hinten – spät müde zu werden ist normal, kein Charakterfehler. Darum hilft ein fester kleiner Schritt am Abend mehr als der Vorsatz, einfach früher zu schlafen."
-          },
-          {
             "art": "text",
             "text": "Nach zwei Wochen: Schau auf deine Kreuze.",
             "klein": true
@@ -840,12 +834,6 @@
             "symbol": "merke",
             "titel": "Valise à skills et zone verte",
             "text": "Ta valise à skills t’aide quand ça devient aigu. Le sommeil, le mouvement, l’alimentation, les pauses et les gens qui te font du bien font en sorte que ça arrive moins souvent. Inscris donc aussi ton petit pas dans la zone verte de ton plan feu tricolore."
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "À la puberté, l’horloge interne se décale vers le soir – avoir sommeil tard est normal, pas un défaut. C’est pourquoi un petit pas fixe le soir aide plus que la résolution de se coucher plus tôt."
           },
           {
             "art": "text",

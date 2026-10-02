@@ -635,12 +635,6 @@
             "text": "Wer das erste Signal bemerkt, hat mehr Zeit zu entscheiden, was er tut. Im nächsten Kapitel lernst du Skills, die genau dann helfen."
           },
           {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Wo Menschen Wut, Angst oder Freude im Körper spüren, ist auf der ganzen Welt ähnlich. Deine Landkarte ist trotzdem deine eigene."
-          },
-          {
             "art": "aufgabe",
             "text": "Deine Wochen-Mission: dein Warnsignal in deinem Moment. Wo hast du es gespürt – und was hast du dann gemacht? Eine Zeile reicht.",
             "hinweis": "Deinen Moment hast du in der Stunde gewählt – er steht bei den Wochen-Missionen. Keine Namen, nur Stichworte.",
@@ -808,12 +802,6 @@
             "symbol": "merke",
             "titel": "Ton système d’alerte précoce",
             "text": "Qui remarque le premier signal a plus de temps pour décider de ce qu’il fait. Au chapitre suivant, tu apprendras des skills qui aident justement à ce moment-là."
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Là où les gens ressentent la colère, la peur ou la joie dans leur corps se ressemble dans le monde entier. Ta carte reste quand même la tienne."
           },
           {
             "art": "aufgabe",

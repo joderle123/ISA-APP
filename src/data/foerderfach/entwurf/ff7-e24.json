@@ -17,10 +17,6 @@
           "fr": "le harcèlement"
         },
         {
-          "de": "der Spaß",
-          "fr": "la blague"
-        },
-        {
           "de": "die Zuschauenden",
           "fr": "les témoins"
         },
@@ -39,28 +35,24 @@
       ],
       "de": {
         "titel": "Mobbing und Zivilcourage",
-        "kurz": "Wann ist ein Spaß kein Spaß mehr? Die Klasse unterscheidet Spaß, Konflikt und Mobbing, macht ihre echte Mehrheit sichtbar, übt Hilfe holen und beschließt einen Satz gegen Mobbing.",
+        "kurz": "Mobbing braucht Publikum: Die Klasse macht ihre echte Mehrheit sichtbar, übt Hilfe holen – auch bei „Jetzt nicht“ – und beschließt einen Satz gegen Mobbing.",
         "ziele": [
-          "unterscheiden Spaß, Konflikt und Mobbing",
-          "sehen in der Abstimmung, dass die meisten Mobbing ablehnen, und erkennen die Macht der Zuschauenden",
+          "erkennen die Rollen im Mobbing und sehen, dass die meisten in der Klasse Mobbing ablehnen",
           "üben, Hilfe zu holen – auch wenn die erwachsene Person gerade keine Zeit hat",
-          "beschließen einen Klassen-Satz und schätzen sich für das Trimester ein"
+          "beschließen einen Klassen-Satz gegen Mobbing"
         ],
         "material": [
           "Gefühlsrad-Plakat, 20 Klebepunkte",
           "Klebezettel, ein leeres Plakat",
-          "Eckschilder: Spaß, Konflikt, Mobbing",
-          "Sechs Stühle, Rollenkarten (Vorlage)",
-          "Sechs A4-Blätter: Stufen der Leiter",
+          "Fünf Stühle, Rollenkarten (Vorlage)",
+          "Situationskarten (Vorlage), je Paar eine",
           "Plakat Anlaufstellen, dicker Stift",
-          "Schülerheft: Blatt und Skills-Pass",
-          "Stempel für den Skills-Pass"
+          "Schülerheft: Blatt und Skills-Pass, Stempel"
         ],
         "vorbereitung": [
           "Mit Régent und SePAS klären, ob es Hinweise auf Mobbing in der Klasse gibt; wenn ja, die Stunde mit ihnen abstimmen.",
-          "Karten durchsehen: Namen tauschen; weglassen, was auf jemanden in der Klasse passt (neu, Kleidung, Aussehen).",
-          "Ecken beschriften; Rollenkarten auf A4 vergrößern; sechs Stühle und die sechs Leiter-Blätter bereitlegen.",
-          "Anlaufstellen-Plakat (Schritt 7); Tafel, verdeckt: Merkmale, Skills Kapitel 4–6, Beispielsätze."
+          "Karten kopieren und durchsehen: Namen tauschen; weglassen, was auf jemanden in der Klasse passt (neu, Kleidung, Aussehen).",
+          "Tafel, verdeckt: die Rollen im Mobbing, die vier Hilfe-holen-Sätze, drei Beispiele für den Klassen-Satz. Plakat Anlaufstellen: SePAS, Régent, 116 111, 8002 1234."
         ],
         "ablauf": [
           {
@@ -74,13 +66,8 @@
             "titel": "Rückblick, Mission und Rahmen"
           },
           {
-            "min": "15–27",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Spaß, Konflikt oder Mobbing?"
-          },
-          {
-            "min": "27–45",
-            "phase": "input",
             "titel": "Die Rollen im Mobbing – und die Abstimmung"
           },
           {
@@ -89,24 +76,14 @@
             "titel": "Bewegungspause: Zählen bis 20"
           },
           {
-            "min": "50–68",
-            "phase": "aktiv",
-            "titel": "Die Zivilcourage-Leiter"
-          },
-          {
-            "min": "68–83",
+            "min": "50–85",
             "phase": "uebung",
             "titel": "Hilfe holen üben – auch bei „Jetzt nicht“"
           },
           {
-            "min": "83–90",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: Innehalten, schauen, handeln"
-          },
-          {
-            "min": "90–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, Klassen-Satz und Mission"
           }
         ],
         "schritte": [
@@ -114,228 +91,134 @@
             "titel": "Check-in: Wo gehörst du dazu?",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad. Am Platz liegen Klebezettel: Jede Person schreibt ohne Namen ein Wort zur Frage an der Tafel – Wo oder mit wem gehörst du so richtig dazu? Ein Ort, ein Verein, ein Hobby, ein Spiel, eine Sprache, eine Person ohne Nachnamen. Die Lehrkraft sammelt die Zettel umgedreht ein (3 Min.). Dann zeigen alle auf drei ihre Anspannung mit den Fingern; die Lehrkraft beginnt mit Gefühl und Zahl (2 Min.). Danach die Ampel-Frage: Wer bei Gelb oder Rot ist, nimmt sich still einen Skill aus dem Ampelplan – alle atmen dazu dreimal lang aus, so muss sich niemand melden. Zum Schluss liest die Lehrkraft fünf, sechs Zettel vor, ohne sie zu kommentieren, und klebt alle passenden auf das Plakat „Hier gehöre ich dazu“ (2 Min.). Das Plakat bleibt die ganze Stunde hängen.",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad, dann zeigen alle auf drei ihre Anspannung mit den Fingern (0–100); die Lehrkraft beginnt. Heute dazu ein Klebezettel ohne Namen: Wo gehörst du so richtig dazu – ein Ort, ein Verein, ein Spiel, eine Person? Die Lehrkraft liest fünf Zettel vor, ohne Kommentar, und klebt sie auf das Plakat „Hier gehöre ich dazu“.",
             "sagen": [
-              "Ein Wort auf den Zettel: Wo gehört ihr so richtig dazu? Ohne Namen – ich sammle die Zettel umgedreht ein, und ein leerer Zettel ist auch in Ordnung.",
-              "Mobbing nimmt Menschen genau das weg: das Dazugehören. Deshalb fangen wir heute damit an."
+              "Ein Wort auf den Zettel, ohne Namen: Wo gehört ihr so richtig dazu?",
+              "Mobbing nimmt Menschen genau das weg: das Dazugehören – deshalb fangen wir heute damit an."
             ],
-            "tipp": "Die Frage nach dem Dazugehören ist bewusst stärkend: Sie gibt Halt, bevor es um ein schweres Thema geht. Die Lehrkraft schreibt selbst einen Zettel, etwa für den Chor oder die Laufgruppe.",
-            "wennEsKippt": "Steht auf einem Zettel „nirgends“ oder „niemand“, ihn weder vorlesen noch aufhängen, sondern zur Seite legen – es ist eine ehrliche Antwort. Nach der Stunde aufmerksam bleiben, wer allein wirkt, und bei Sorge mit Régent und SePAS sprechen. Scherz-Zettel wie „im Bett“ ruhig mit vorlesen; beleidigende Zettel weder vorlesen noch aufhängen."
+            "wennEsKippt": "Steht auf einem Zettel „nirgends“ oder „niemand“, ihn weder vorlesen noch aufhängen, sondern zur Seite legen – und nach der Stunde aufmerksam bleiben, wer allein wirkt; bei Sorge mit Régent und SePAS sprechen. Beleidigende Zettel weder vorlesen noch aufhängen."
           },
           {
             "titel": "Rückblick, Mission und Rahmen",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Kurz an das zweite Nein erinnern: Fast jede Szene ist gekippt, sobald eine zweite Person Nein gesagt hat. Dann die Wochen-Mission nachfragen – Anker und Nein-Satz, wenn der Druck-Moment kommt: Kam dein Moment, und was hast du gemacht? Daumen hoch: Der Moment kam, ich habe Anker und Nein-Satz probiert; Mitte: Der Moment kam, ich habe etwas anderes gemacht; runter: Der Moment kam nicht, ich habe nur beobachtet. Eine Stimme erzählt in einem Satz, ohne Namen. Dann das Thema nennen und den Rahmen ausdrücklich klären (Liste), jeden Punkt mit einem Satz begründen. Auf das Angebot hinweisen, nach der Stunde unter vier Augen zu sprechen, und ankündigen, dass die Stunde mit dem Rückblick auf das Trimester und einem Satz für die Klassenvereinbarung endet.",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Druck-Moment – und was hast du gemacht? Daumen hoch: Der Moment kam, ich habe Anker und Nein-Satz probiert; Mitte: Der Moment kam, ich habe etwas anderes gemacht; runter: Der Moment kam nicht. Eine Stimme erzählt in einem Satz, ohne Namen; dann das Thema nennen und den Rahmen klären (Liste).",
             "sagen": [
-              "Kam euer Druck-Moment – und was habt ihr gemacht? Daumen hoch, Mitte oder runter. Wer erzählt, bitte ohne Namen.",
-              "Heute geht es um Mobbing. Ihr müsst nichts von euch erzählen – wir arbeiten nur mit erfundenen Geschichten.",
-              "Wenn euch etwas nahegeht: Nach der Stunde habe ich Zeit, und der SePAS ist auch für euch da."
+              "Kam euer Druck-Moment, und was habt ihr gemacht – Daumen hoch, Mitte oder runter?",
+              "Heute geht es um Mobbing – ihr müsst nichts von euch erzählen, wir arbeiten nur mit erfundenen Geschichten."
             ],
             "punkte": [
               "Wir sprechen über erfundene Personen – nie über jemanden aus dieser Klasse.",
-              "Niemand muss erzählen, was er selbst erlebt hat. „Weiter“ ist immer erlaubt.",
-              "Wer eine Pause braucht, steigt kurz aus der Übung aus und bleibt im Raum.",
-              "Nach der Stunde bin ich da, wenn jemand reden möchte. Ist jemand in Gefahr, hole ich Hilfe – und sage vorher, was ich tue."
+              "Niemand muss erzählen, was er selbst erlebt hat; „Weiter“ ist immer erlaubt.",
+              "Wer eine Pause braucht, steigt kurz aus und bleibt im Raum.",
+              "Nach der Stunde bin ich da, und der SePAS ist auch für euch da. Ist jemand in Gefahr, hole ich Hilfe – und sage vorher, was ich tue.",
+              "Handys bleiben in der Tasche – niemand fotografiert die Zettel, das Plakat oder die Abstimmung."
             ],
-            "tipp": "Den Rahmen nicht herunterlesen, sondern begründen: Jugendliche nehmen Regeln ernster, wenn sie merken, dass die Regeln sie schützen.",
-            "wennEsKippt": "Fällt sofort ein Name aus der Klasse („Das ist doch wie bei …“), freundlich, aber klar stoppen: Heute gibt es keine Namen. Nach der Stunde mit dem Régent klären, ob etwas los ist. Kommt ein Spruch wie „Mobbing ist doch nur Spaß“, nicht diskutieren: Genau das klären wir gleich in den Ecken."
-          },
-          {
-            "titel": "Spaß, Konflikt oder Mobbing?",
-            "dauer": 12,
-            "phase": "uebung",
-            "text": "Die drei Ecken zeigen: Spaß, Konflikt, Mobbing (1 Min.). Die vier Situationen nacheinander vorlesen (Tabelle); alle stellen sich in die passende Ecke, wer unsicher ist, zwischen zwei Ecken. Die ersten drei zügig (zusammen 5 Min.), für den Grenzfall mehr Zeit (3 Min.). Nach jeder Situation zwei Stimmen aus verschiedenen Ecken fragen, woran sie es festmachen, und das passende Merkmal von Mobbing an der Tafel aufdecken (Liste). Den Unterschied zur Konflikt-Treppe benennen: Die Treppe setzt zwei ungefähr Gleichstarke voraus – bei Mobbing braucht es Schutz und Hilfe von außen. Zum Schluss am Platz den Kasten mit den vier Merkmalen auf dem Blatt lesen und gemeinsam prüfen, welche beim Grenzfall von Samuel zutreffen (3 Min.).",
-            "sagen": [
-              "Woran habt ihr das festgemacht?",
-              "Ein Spaß ist nur dann ein Spaß, wenn alle lachen können – auch die Person, um die es geht."
-            ],
-            "punkte": [
-              "Es passiert immer wieder und über längere Zeit.",
-              "Es gibt ein Ungleichgewicht: Eine Seite ist stärker – mehr Leute, älter, beliebter.",
-              "Es ist absichtlich.",
-              "Die betroffene Person kann sich allein nicht wehren."
-            ],
-            "tabelle": {
-              "spalten": [
-                "Situation",
-                "Eher … – woran man es erkennt"
-              ],
-              "zeilen": [
-                [
-                  "Zwei Freunde ziehen sich mit Spitznamen auf, beide lachen.",
-                  "Spaß – beide machen mit, beide können aufhören."
-                ],
-                [
-                  "Nach einem Foul beschimpfen sich zwei Spieler; am nächsten Tag ist es vorbei.",
-                  "Konflikt – einmalig, beide wehren sich."
-                ],
-                [
-                  "Seit Wochen machen einige Geräusche, sobald Elias im Unterricht etwas sagt.",
-                  "Mobbing – wiederholt, mehrere gegen einen."
-                ],
-                [
-                  "Über Samuels Schuhe gibt es jeden Tag einen Witz. Er lacht mit, geht aber inzwischen allein in die Pause.",
-                  "Grenzfall, eher Mobbing – ein Spaß hört auf, wenn eine Seite nicht mehr lacht."
-                ]
-              ]
-            },
-            "tipp": "Für den Grenzfall am Ende Zeit lassen: An ihm lernt die Klasse mehr als an den eindeutigen Beispielen; die ersten drei dürfen dafür zügig laufen. Ist wenig Platz, zeigen alle vom Platz aus mit einem, zwei oder drei Fingern; wer nicht aufstehen möchte, zeigt immer so. Fragt jemand nach Kommentaren im Netz: Es gelten dieselben vier Merkmale; online sehen es nur schneller viele.",
-            "wennEsKippt": "Nennt jemand eine Situation aus der eigenen Klasse oder zeigt auf eine Person, freundlich stoppen: Heute bleiben wir bei den erfundenen Beispielen; danach im Blick behalten, wie es der genannten Person geht, und nach der Stunde mit ihr und dem Régent sprechen. Wird beim Witz über Samuels Schuhe gelacht, fragen: Wer lacht hier eigentlich – und wer nicht? Fällt ein Spruch über Herkunft, Religion, Aussehen oder sexuelle Orientierung („schwul“ als Schimpfwort), ruhig und klar sagen: Hier wird niemand für das beleidigt, was er ist – dann weitermachen.",
-            "blatt": "ff7-zivilcourage"
+            "wennEsKippt": "Fällt sofort ein Name aus der Klasse („Das ist doch wie bei …“), freundlich, aber klar stoppen: Heute gibt es keine Namen – und nach der Stunde mit dem Régent klären, ob etwas los ist. Kommt „Mobbing ist doch nur Spaß“, nicht diskutieren: Genau das schauen wir uns gleich an."
           },
           {
             "titel": "Die Rollen im Mobbing – und die Abstimmung",
-            "dauer": 18,
-            "phase": "input",
-            "text": "Sechs Stühle im Halbkreis vorn aufstellen und je eine Rollenkarte darauflegen (Liste); der Stuhl der betroffenen Person steht etwas abseits. Niemand setzt sich auf die Stühle. Die Geschichte „Die Sprachnachricht“ vom Blatt vorlesen und gemeinsam klären, wer zu welchem Stuhl gehört; danach Aufgabe 1 zu zweit (zusammen 8 Min.). Dann die Leitfrage stellen: Wer hat die meiste Macht, das zu stoppen? Die Stühle der Verstärker und der Außenstehenden nacheinander zum leeren Stuhl drehen und fragen, was sich für den Täter ändert. Jede Person schreibt ihre Antwort als Aufgabe 2 auf das Blatt (5 Min.). Dann die anonyme Abstimmung (3 Min.): Alle schließen die Augen oder schauen auf den Tisch; niemand schaut sich um, die Lehrkraft verrät keine Hand. Die zwei Fragen stellen (Impulse); nach jeder heben alle, die Ja meinen, kurz die Hand, die Lehrkraft zählt und schreibt beide Zahlen an die Tafel. Augen auf, das Ergebnis vorlesen und den Kasten „Aus der Forschung“ auf dem Blatt lesen (2 Min.). Die Zahlen bleiben die ganze Stunde stehen.",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Zuerst kurz erklären, was Mobbing ist und wer dabei welche Rolle hat (Tafel). Dann die Geschichte vom Blatt vorlesen und mit fünf Stühlen zeigen, wer wo sitzt – der Stuhl der betroffenen Person bleibt leer, niemand spielt sie. Zum Schluss die anonyme Abstimmung; beide Zahlen bleiben die ganze Stunde an der Tafel.",
             "sagen": [
-              "Wer von diesen Personen könnte das Ganze am leichtesten stoppen? Mobbing braucht Publikum – wenn das Publikum die Seite wechselt, fällt die Bühne weg.",
-              "Augen zu oder Blick auf den Tisch, keiner schaut – ich verrate auch nichts. Hand hoch, wer es nicht okay findet, wenn jemand immer wieder ausgelacht wird. Danke, Hände runter. Und jetzt: Hand hoch, wer sich wünschen würde, dass jemand eingreift, wenn es ihn selbst trifft.",
-              "… von 20 hier finden es nicht okay. Die meisten in dieser Klasse sind auf deiner Seite – sie wissen es nur nicht voneinander. Ab heute wisst ihr es."
+              "Mobbing braucht Publikum – wenn das Publikum die Seite wechselt, fällt die Bühne weg.",
+              "… von 20 finden es nicht okay: Die meisten hier sind auf deiner Seite – sie wissen es nur nicht voneinander."
             ],
             "punkte": [
-              "Täter: fängt an und bestimmt, was passiert.",
-              "Helfer: macht mit, sobald es losgeht.",
-              "Verstärker: lacht, feuert an, liked.",
-              "Außenstehende: schauen weg oder lesen nur mit.",
-              "Verteidiger: halten zur betroffenen Person oder holen Hilfe.",
-              "Betroffene Person: wird immer wieder angegriffen und kann sich allein nicht wehren."
+              "Erklären (5 Min.): Mobbing heißt immer wieder, mit Absicht, und die Person kann sich allein nicht wehren – ein Spaß ist nur ein Spaß, wenn alle lachen können. Die Rollen an der Tafel: Täter, Verstärker (lachen, liken), Außenstehende (schauen weg), Verteidiger, betroffene Person.",
+              "Geschichte vorlesen (10 Min.): fünf Stühle im Halbkreis, auf jedem eine Rollenkarte, der Stuhl von Nora leer und abseits; gemeinsam klären, wer wohin gehört, dann Aufgabe 1 zu zweit.",
+              "Leitfrage (5 Min.): Wer hat die meiste Macht, das zu stoppen? Die Stühle der Lacher und der Mitleser zum leeren Stuhl drehen – was ändert sich für Mathis?",
+              "Abstimmung (5 Min.): Augen zu, niemand schaut. Hand hoch, wer es nicht okay findet, wenn jemand immer wieder ausgelacht wird; Hand hoch, wer will, dass jemand eingreift, wenn es ihn selbst trifft. Zählen, beide Zahlen an die Tafel.",
+              "Aufgabe 2 (5 Min.): Alle schreiben beide Zahlen auf das Blatt und lesen den Kasten „Gut zu wissen“."
             ],
-            "tipp": "Hier die Klassenvereinbarung zeigen: „Wir lachen miteinander, nicht übereinander.“ Die Regel bekommt jetzt ein Gesicht. Der leere Stuhl ist wichtig: So muss niemand die betroffene Person spielen. Die Abstimmung kommt nach dem leeren Stuhl, nicht davor: Erst sehen alle, dass das Publikum die Macht hat – dann, dass das Publikum in dieser Klasse auf der Seite der betroffenen Person steht. Rollen beschreiben, was jemand tut, nicht, wer jemand ist; man kann die Rolle jeden Tag wechseln.",
-            "wennEsKippt": "Setzt sich jemand aus Spaß auf den Stuhl der betroffenen Person oder zeigt auf jemanden in der Klasse, ruhig eingreifen: Dieser Stuhl bleibt leer, Namen aus der Klasse gibt es heute nicht. Sagt jemand, das passiere ihm gerade selbst, ruhig danken, nicht nachfragen und nach der Stunde allein sprechen; noch am selben Tag Régent und SePAS informieren. Schauen einige bei der Abstimmung doch, die Runde mit Zetteln wiederholen: Ja oder Nein, umgedreht einsammeln, zählen. Fällt die erste Zahl knapp aus, die zweite in den Mittelpunkt stellen – fast alle wünschen sich, dass jemand eingreift, wenn es sie trifft. Niemand wird gefragt, wie er abgestimmt hat. Wird es still und bedrückt, eine Minute Pause anbieten (Fenster auf, Wasser trinken) und mit der Frage weitermachen, was Zuschauende tun können.",
+            "wennEsKippt": "Sagt jemand, das passiere ihm gerade selbst: ruhig danken, nicht nachfragen, nach der Stunde allein sprechen, am selben Tag Régent und SePAS informieren. Schauen einige doch, die Abstimmung mit Zetteln wiederholen.",
             "blatt": "ff7-zivilcourage"
           },
           {
             "titel": "Bewegungspause: Zählen bis 20",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Fenster auf, alle stehen hinter ihrem Stuhl und schütteln zuerst Hände, Arme und Schultern aus (30 Sek.). Dann zählt die Klasse gemeinsam bis 20: Jede Person darf jederzeit die nächste Zahl sagen, aber niemand zwei Zahlen hintereinander – ohne Absprache und ohne Zeichen. Sprechen zwei gleichzeitig, beginnt die Klasse wieder bei 1. Zum Schluss fragen, was geholfen hat; meist sind es genau die Dinge, die auch gegen Mobbing helfen: aufeinander achten, niemanden übergehen. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Fenster auf, alle stehen hinter ihrem Stuhl und schütteln Arme und Schultern aus. Dann zählt die Klasse gemeinsam bis 20: Jede Person darf jederzeit die nächste Zahl sagen, aber niemand zwei hintereinander – sprechen zwei gleichzeitig, geht es wieder bei 1 los.",
             "sagen": [
-              "Wir schaffen das nur zusammen – und nur, wenn alle auf alle achten."
+              "Das klappt nur zusammen – und nur, wenn alle auf alle achten."
             ],
-            "tipp": "Das Spiel klappt selten beim ersten Versuch, und das ist der Witz daran. Gelingt es nach drei Versuchen nicht, schließt, wer mag, die Augen – dann hören alle besser hin."
-          },
-          {
-            "titel": "Die Zivilcourage-Leiter",
-            "dauer": 18,
-            "phase": "aktiv",
-            "text": "Die sechs Leiter-Blätter als Sprossen in den Mittelgang oder an einer Wand entlang auf den Boden legen, Stufe 1 vorn, mit etwa einem Meter Abstand. Die Stufen gemeinsam durchgehen: vom Einfachen zum Mutigen, und immer so, dass man sich selbst nicht gefährdet (Liste, 4 Min.). Dann eine Situationskarte vorlesen; alle stellen sich neben die Stufe, die sie sich in dieser Lage zutrauen. Zwei, drei Personen sagen wörtlich, was sie tun oder sagen würden, und die Klasse hilft, den Satz kurz und sicher zu machen (drei Karten, 10 Min.). Die Frage nach dem Petzen aufgreifen, sobald sie kommt. Zum Schluss am Platz auf dem Blatt die Stufe einkreisen, die man sich schon zutraut, und einen Stern an die Stufe setzen, die man üben will (Aufgabe 3, 2 Min.) – zwei Minuten reichen, weil die Stufen gerade erst gegangen wurden.",
-            "sagen": [
-              "Jede Stufe zählt. Wer auf Stufe 1 steht, hat schon aufgehört, Publikum zu sein.",
-              "Was ist der Unterschied zwischen Petzen und Hilfe holen?",
-              "Was genau sagst oder schreibst du? Ein kurzer Satz reicht, zum Beispiel: Komm, wir gehen."
-            ],
-            "punkte": [
-              "1 Nicht mitlachen, nichts weiterleiten.",
-              "2 Der betroffenen Person zeigen: Ich bin auf deiner Seite – auch später oder per Nachricht.",
-              "3 Andere dazuholen: Zu zweit oder zu dritt ist es leichter.",
-              "4 Einer erwachsenen Person Bescheid sagen. Das ist Hilfe holen, kein Petzen.",
-              "5 Online: Beweise sichern, melden, nicht liken und nicht teilen.",
-              "6 Direkt „Stopp“ sagen – nur, wenn es für dich sicher ist."
-            ],
-            "tipp": "Eine klare Antwort auf die Petzen-Frage hilft: Petzen will jemandem schaden, Hilfe holen will jemanden schützen. Auf die Zahlen von der Abstimmung zeigen: Wer auf Stufe 2 oder 3 geht, hat in dieser Klasse die Mehrheit hinter sich. Bei wenig Platz liegt die Leiter auf dem Pult, und alle zeigen mit den Fingern ihre Stufe.",
-            "wennEsKippt": "Sagt jemand „Ich würde den einfach verhauen“, klar antworten: Gewalt ist keine Stufe der Leiter – sie macht alles gefährlicher, auch für dich. Behauptet jemand, er würde sich sofort dazwischenwerfen, einordnen: Stufe 6 ist nur richtig, wenn sie sicher ist – Hilfe holen ist oft die mutigere Wahl. Stellen sich alle aus Spaß auf Stufe 6, die nächste Karte im Sitzen, Blick auf den Tisch, mit den Fingern zeigen lassen.",
-            "blatt": "ff7-mobbing-karten"
+            "tipp": "Das Spiel klappt selten beim ersten Versuch, und genau das ist der Witz daran – zum Schluss fragen, was geholfen hat: aufeinander achten, wie gegen Mobbing. Liegt die große Pause dazwischen, entfällt die Übung."
           },
           {
             "titel": "Hilfe holen üben – auch bei „Jetzt nicht“",
-            "dauer": 15,
+            "dauer": 35,
             "phase": "uebung",
-            "text": "An die Tafel schreiben, was eine erwachsene Person wissen muss, um helfen zu können (Liste, Punkte 1 bis 4). Einmal vorspielen (3 Min.): Die Lehrkraft spielt den Régent, eine freiwillige Person spielt Inês aus der Geschichte und liest die vier Sätze von der Tafel ab; die Lehrkraft zeigt dabei, wie eine erwachsene Person reagiert: danken, ruhig nachfragen, sagen, was als Nächstes passiert. Dann üben Paare mit je einer Situationskarte. Runde 1 (4 Min.): A erzählt, B spielt die erwachsene Person und fragt freundlich nach; danach tauschen – jede Person war einmal die, die Bescheid sagt. Runde 2 (4 Min.), wie bei der Notfallkarte in Einheit 17: dieselben Paare, aber die erwachsene Person hat keine Zeit (Punkte 5 und 6). Die Person bleibt dran oder geht zur nächsten erwachsenen Person – A und B tauschen wieder. Zum Schluss fragen, was es leichter macht, Bescheid zu sagen – zu zweit hingehen, eine Nachricht schreiben, den SePAS ansprechen –, und jede Person trägt im Notfallkasten auf dem Blatt eine Vertrauensperson ein; wem niemand einfällt, schreibt den SePAS hinein (4 Min.).",
+            "text": "Erst die Leiter auf dem Blatt lesen: vier Stufen, vom Einfachen zum Mutigen – jede Stufe zählt. Dann Hilfe holen üben: einmal vorgespielt, dann in Paaren mit Situationskarten; in Runde 2 hat die erwachsene Person keine Zeit. Zum Schluss Aufgabe 3 und die Vertrauensperson.",
             "sagen": [
-              "Bescheid sagen heißt nicht, jemanden reinzureiten. Es heißt: Ich will, dass es aufhört.",
-              "Runde 2: Die erwachsene Person hat gerade keine Zeit. Was macht ihr dann? Dranbleiben – oder zur nächsten Person gehen. Aufgeben ist keine Stufe.",
-              "Ihr dürft auch zu zweit hingehen oder eine Nachricht schreiben. Hauptsache, eine erwachsene Person weiß es."
+              "Bescheid sagen heißt nicht, jemanden reinzureiten – es heißt: Ich will, dass es aufhört.",
+              "Hat die erwachsene Person keine Zeit, bleibt ihr dran oder geht zur nächsten – aufgeben ist keine Stufe."
             ],
             "punkte": [
-              "Was passiert? „Eine Person aus unserer Klasse wird immer wieder …“",
-              "Wo und seit wann? „Vor allem im Klassenchat, seit zwei Wochen.“",
-              "Wem? Den Namen sagst du nur der erwachsenen Person, nicht vor allen.",
-              "Was ich mir wünsche: „Ich will, dass es aufhört.“",
-              "Runde 2 – die erwachsene Person: „Jetzt nicht, ich habe gleich Unterricht.“",
-              "Dranbleiben: „Es ist wichtig. Wann haben Sie Zeit?“ – oder zur nächsten erwachsenen Person gehen."
+              "Leiter (5 Min.): die vier Stufen vorlesen. Stufe 3 ist Hilfe holen, kein Petzen – Petzen will schaden, Hilfe holen will schützen; Stufe 4 nur, wenn es sicher ist.",
+              "Vorspiel (5 Min.): Die Lehrkraft spielt den Régent, eine freiwillige Person spielt Inês und liest die vier Sätze von der Tafel: Was passiert? Wo und seit wann? Wem – den Namen nur der erwachsenen Person. Ich will, dass es aufhört. Die Lehrkraft dankt, fragt ruhig nach und sagt, was als Nächstes passiert.",
+              "Runde 1 (8 Min.): Paare, je eine Situationskarte; A sagt Bescheid, B spielt die erwachsene Person und fragt freundlich nach – dann tauschen.",
+              "Runde 2 (8 Min.): dieselben Paare, aber die erwachsene Person sagt: „Jetzt nicht, ich habe gleich Unterricht.“ A bleibt dran („Wann haben Sie Zeit?“) oder geht zur nächsten Person – dann tauschen.",
+              "Aufgabe 3 (9 Min.): Stufe einkreisen; Vertrauensperson in den Hilfe-Kasten schreiben – wem niemand einfällt, schreibt den SePAS. Plakat Anlaufstellen zeigen: Wer weiß, wohin, traut sich eher."
             ],
-            "tipp": "Auf dem Plakat stehen SePAS (Raum, Zeiten), Régent, Kanner- a Jugendtelefon 116 111 und BEE SECURE Helpline 8002 1234. Viele trauen sich eher, wenn sie wissen, wohin genau sie gehen und dass sie jemanden mitbringen dürfen. Die größte Sorge ist oft, dass es danach schlimmer wird – deshalb im Vorspiel zeigen, dass die erwachsene Person vorsichtig vorgeht und vorher sagt, was sie tut. Runde 2 ist der wichtigste Teil: Im echten Leben hat die erste erwachsene Person oft gerade keine Zeit, und genau da geben viele auf.",
-            "wennEsKippt": "Fragt jemand im Übungsgespräch nach, weil er sich um eine echte Person sorgt, nicht vor der Klasse vertiefen: Das ist eine wichtige Frage – ich spreche gleich nach der Stunde mit dir. Danach das Gespräch führen und noch am selben Tag Régent und SePAS einbeziehen. Albert ein Paar, setzt sich die Lehrkraft dazu und übernimmt die erwachsene Person. Wird das „Jetzt nicht“ zu hart gespielt oder lacht jemand die bittende Person aus, stoppen: Die erwachsene Person ist beschäftigt, nicht gemein. Wer nicht laut üben mag, schreibt den Satz als Nachricht auf – auch das ist ein Weg.",
+            "wennEsKippt": "Fragt jemand nach, weil er sich um eine echte Person sorgt, nicht vor der Klasse vertiefen: Das ist wichtig – ich spreche gleich nach der Stunde mit dir; danach am selben Tag Régent und SePAS einbeziehen. Wird das „Jetzt nicht“ zu hart gespielt oder lacht jemand die bittende Person aus, stoppen: Die erwachsene Person ist beschäftigt, nicht gemein.",
             "blatt": "ff7-zivilcourage"
           },
           {
             "titel": "Skill: Innehalten, schauen, handeln",
-            "dauer": 7,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Ankündigen: ein Skill für den Moment, in dem ihr etwas mitbekommt und nicht wisst, was tun. Die drei Schritte vorlesen (Liste) und an zwei kurzen Szenen üben: Im Klassenchat taucht ein peinliches Foto einer Mitschülerin auf, die ersten Lach-Smileys kommen. In der Pause drängen drei Ältere einen Jüngeren in eine Ecke und nehmen ihm das Handy weg. Nach jeder Szene legen alle die Hände flach auf den Tisch, atmen einmal lang aus, überlegen still, was hier gerade passiert, und zeigen auf drei mit den Fingern die Stufe der Leiter, die sie wählen würden (je 2 Min.). Zum Schluss zwei Stimmen: Wo hilft das noch – beim Streit, beim Gruppendruck?",
+            "text": "Der Skill für den Moment, in dem ihr etwas mitbekommt und nicht wisst, was tun: Hände flach auf den Tisch, einmal lang ausatmen, hinschauen – und dann eine Stufe der Leiter wählen. Einmal an einer Szene üben (5 Min.), dann der Abschluss: Skills-Pass mit Trimester-Rückblick, Klassen-Satz, Mission.",
             "sagen": [
-              "Hände flach auf den Tisch. Einmal lang ausatmen. Und jetzt schaut hin: Was passiert hier?",
-              "Zwei Sekunden Innehalten reichen oft, damit ihr nicht einfach mitlacht."
+              "Hände flach auf den Tisch, einmal lang ausatmen – und jetzt schaut hin: Was passiert hier?",
+              "Welcher Satz soll ab heute auf unserer Vereinbarung stehen – ihr entscheidet, nicht ich."
             ],
             "punkte": [
-              "Innehalten: nicht mitlachen, nichts tippen – Hände still, einmal lang ausatmen.",
-              "Schauen: Was passiert? Wie geht es der Person? Bin ich sicher, wer kann helfen?",
-              "Handeln: eine Stufe der Leiter wählen, die für dich sicher ist – Hilfe holen geht immer."
+              "Skill (5 Min.): Szene vorlesen – im Klassenchat taucht ein peinliches Foto einer Mitschülerin auf, die ersten Lach-Smileys kommen. Hände auf den Tisch, lang ausatmen, eine Minute still: Was passiert hier? Auf drei zeigen alle mit den Fingern ihre Stufe; zwei Stimmen sagen, was sie tun würden.",
+              "Skills-Pass (4 Min.): ein Satz – Welche Stufe traue ich mir ab morgen zu? Dann der Trimester-Rückblick auf derselben Seite: wichtigster Skill eintragen und die fünf Sätze ankreuzen, während die Lehrkraft sie langsam vorliest; die Lehrkraft stempelt.",
+              "Klassen-Satz (4 Min.): drei Beispiele an der Tafel aufdecken; jede Tischgruppe wählt einen oder schlägt einen eigenen vor, die Klasse stimmt mit dem Daumen ab – der Satz kommt sofort auf die Klassenvereinbarung.",
+              "Beispiele: „Bei uns lacht niemand allein.“ · „Wer Hilfe holt, petzt nicht.“ · „Wer Stopp sagt, bekommt Rückendeckung.“",
+              "Mission und Moment (2 Min.): die Wochen-Mission vorlesen; auf drei zeigen alle, wo ihr Moment am ehesten kommt – ein Finger Chat, zwei Pause oder Bus, drei Unterricht –, und schreiben ihn ins Heft. Die Hilfe-Nummern im Heft zeigen (sie gelten auch in den Ferien), Gesprächsangebot, Ausblick."
             ],
-            "tipp": "Bei der zweiten Szene ist die Antwort klar: sofort eine erwachsene Person holen, etwa die Éducateurs. Der Skill ist an den Stopp-Skill aus dem DBT-Skillstraining angelehnt und verbindet das Kapitel: Runterkommen, Anker, Leiter.",
-            "wennEsKippt": "Wird beim Innehalten gekichert, ruhig weitersprechen und selbst mitmachen. Wirkt jemand bei der Szene bedrückt, nicht nachfragen, sondern nach der Stunde kurz ansprechen."
-          },
-          {
-            "titel": "Skills-Pass, Klassen-Satz und Mission",
-            "dauer": 10,
-            "phase": "abschluss",
-            "text": "Erst der Satz der Stunde in den Skills-Pass (2 Min.): Welche Stufe der Leiter traue ich mir ab morgen zu? Dann der Trimester-Rückblick auf derselben Seite, kurz (3 Min.): Die Skills der Kapitel 4 bis 6 stehen an der Tafel; jede Person trägt ihren wichtigsten Skill ein und kreuzt die fünf Sätze unten auf der Seite an, während die Lehrkraft sie langsam vorliest – eine Selbsteinschätzung, keine Note; die Lehrkraft geht dabei mit dem Stempel herum. Die Erzählrunde entfällt heute. Dann der Klassen-Satz (3 Min.): Die drei Beispiele an der Tafel aufdecken (Liste). Jede Tischgruppe wählt eines oder schlägt in einer Minute einen eigenen Satz vor; je Gruppe liest eine Person vor, die Klasse stimmt per Daumen ab, und der Satz mit den meisten Daumen kommt sofort auf die Klassenvereinbarung – eine Person aus der Gruppe schreibt ihn. Dann den Moment wählen (1 Min.): Die Wochen-Mission im Heft vorlesen – einmal kein Publikum sein. Auf drei zeigen alle, wo das bei ihnen am ehesten kommt: ein Finger für den Klassenchat, zwei für Pause oder Bus, drei für Unterricht oder Sport; jede Person schreibt ihren Moment in Stichworten in die Spalte „Mein Moment: Wenn …“. Zum Schluss die Mission in einem Satz ansagen, die Hilfe-Nummern auf der Seite „So funktioniert das Fach“ zeigen – sie gelten auch in den Ferien –, das Gesprächsangebot wiederholen und den Ausblick geben (1 Min.).",
-            "sagen": [
-              "Schaut auf eure fünf Sätze vom ersten Trimester und vergleicht: Was ist gewachsen? Hier gibt es keine Noten – nur eure eigene Einschätzung.",
-              "Welcher Satz soll ab heute auf unserer Vereinbarung stehen? Einer von der Tafel oder euer eigener – ihr entscheidet, nicht ich.",
-              "Wo seid ihr am ehesten Publikum – im Chat, in der Pause oder im Unterricht? Ein, zwei oder drei Finger. Das ist euer Moment für die Mission."
-            ],
-            "punkte": [
-              "„Bei uns lacht niemand allein.“",
-              "„Wer Hilfe holt, petzt nicht.“",
-              "„Wer Stopp sagt, bekommt Rückendeckung.“"
-            ],
-            "tipp": "Die Einschätzungen nicht einsammeln und nicht kommentieren. Wer bei allen Sätzen „noch nicht“ ankreuzt, bekommt nach der Stunde ein ermutigendes Wort, keine Diskussion. Der Klassen-Satz wird heute geschrieben, nicht nächste Woche: Ein Beschluss, der sofort am Plakat steht, trägt. Die Erzählrunde zum Trimester und die Regeln für den Klassenchat passen in den Klassenrat nach den Ferien.",
-            "wennEsKippt": "Ist die Klasse nach dem schweren Thema unruhig, die Einschätzung im Stillen machen lassen. Fehlt Zeit, den wichtigsten Skill heute eintragen und die fünf Sätze in der ersten Stunde nach den Ferien nachholen – der Klassen-Satz entfällt nicht. Schlägt eine Gruppe einen Satz vor, der jemanden trifft oder droht („Wer petzt, fliegt raus“), nicht zur Abstimmung stellen, sondern freundlich sagen: Der Satz muss alle schützen – auch die, die Hilfe holen.",
+            "wennEsKippt": "Schlägt eine Gruppe einen Satz vor, der jemanden trifft oder droht („Wer petzt, fliegt raus“), nicht abstimmen lassen, sondern freundlich sagen: Der Satz muss alle schützen – auch die, die Hilfe holen. Wirkt jemand bei der Szene bedrückt, nicht nachfragen, sondern nach der Stunde kurz ansprechen.",
             "blatt": "ff-skills-pass"
           }
         ],
-        "bruecke": "Nach den Ferien geht es um euer Handy: wie viel Zeit ihr wirklich am Bildschirm verbringt, was hinter perfekten Bildern steckt – und wie ein guter Handy-Plan aussieht.",
-        "mission": "Wenn über jemanden gelacht wird – im Chat, in der Pause, im Bus –, sei einmal kein Publikum: nicht mitlachen, nichts weiterleiten. Oder zeig der Person: Ich bin auf deiner Seite.",
-        "hintergrund": "Olweus (1993) beschreibt Mobbing über drei Merkmale – wiederholt, absichtlich verletzend, mit einem Ungleichgewicht der Kräfte; dass sich die betroffene Person kaum wehren kann, ist auf dem Blatt das vierte. Mobbing ist ein Gruppenprozess: Salmivalli et al. (1996) konnten den meisten Jugendlichen einer Klasse eine Rolle zuordnen – Täter, Helfer, Verstärker, Außenstehende, Verteidiger, Betroffene. Wer lacht oder schweigt, sichert dem Täter das Publikum. Deshalb setzt die Stunde bei den Zuschauenden an: Programme, die sie stärken, erhöhen das Eingreifen messbar (Polanin, Espelage & Pigott, 2012; KiVa: Kärnä et al., 2011). Die anonyme Abstimmung nutzt den zweiten Hebel: Jugendliche überschätzen, wie sehr andere Mobbing billigen; wird ihnen die echte Mehrheit zurückgemeldet, sinkt es (Perkins, Craig & Perkins, 2011). Der Klassen-Satz ist eine Regel, die die Klasse selbst beschließt – solche Regeln tragen mehr als vorgegebene (Deci & Ryan, 2000).",
+        "bruecke": "Nach den Ferien geht es um euer Handy: wie viel Zeit ihr wirklich am Bildschirm verbringt – und wie ein guter Handy-Plan aussieht.",
+        "mission": "Sei einmal kein Publikum: nicht mitlachen – oder zeig: Ich bin auf deiner Seite.",
+        "hintergrund": "Mobbing ist ein Gruppenprozess: Fast jede Person in der Klasse hat eine Rolle – Täter, Verstärker, Außenstehende, Verteidiger, Betroffene (Salmivalli et al., 1996). Wer lacht oder schweigt, gibt dem Täter das Publikum; wer die Zuschauenden stärkt, erhöht das Eingreifen (Polanin, Espelage & Pigott, 2012). Jugendliche überschätzen, wie sehr andere Mobbing billigen – wird die echte Mehrheit sichtbar, sinkt es (Perkins, Craig & Perkins, 2011). Selbst beschlossene Regeln tragen mehr als vorgegebene.",
         "quellen": [
           "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
           "Polanin, J. R., Espelage, D. L. & Pigott, T. D. (2012). A meta-analysis of school-based bullying prevention programs’ effects on bystander intervention behavior. School Psychology Review, 41(1), 47–65.",
           "Perkins, H. W., Craig, D. W. & Perkins, J. M. (2011). Using social norms to reduce bullying: A research intervention among adolescents in five middle schools. Group Processes & Intergroup Relations, 14(5), 703–722."
         ],
-        "achtung": "Mobbing kann in der Klasse selbst vorkommen: niemanden nach eigenen Erfahrungen fragen, keine Rollen mit Jugendlichen besetzen, keine Namen sammeln. Hinweise auf laufendes Mobbing nicht in der Stunde klären, niemanden vor der Klasse ansprechen: nach der Stunde allein mit der betroffenen Person sprechen, nichts versprechen, Beobachtungen mit Datum notieren, am selben Tag Régent und SePAS informieren (Vorgehen der Schule). Bei Gewalt, Drohungen, Nacktbildern oder Suizidgedanken sofort: nicht allein lassen, SePAS oder Direktion holen, bei Gefahr 112.",
+        "achtung": "Mobbing kann in der Klasse selbst vorkommen: niemanden nach eigenen Erfahrungen fragen, keine Rollen mit Jugendlichen besetzen, keine Namen sammeln. Hinweise auf laufendes Mobbing nicht in der Stunde klären: nach der Stunde allein mit der betroffenen Person sprechen, nichts versprechen, Beobachtungen mit Datum notieren, am selben Tag Régent und SePAS informieren. Bei Gewalt, Drohungen, Nacktbildern oder Suizidgedanken sofort SePAS oder Direktion holen, niemanden allein lassen, bei Gefahr 112.",
         "differenzierung": {
-          "leichter": "Die Eckschilder bekommen ein Symbol: ein lachendes Gesicht, zwei Pfeile gegeneinander, viele gegen einen. Die Geschichte liest eine Person der Tischgruppe vor, die gut liest; in Aufgabe 2 reichen Stichworte. Der Hilfe-holen-Satz steht an der Tafel; wer die Unterrichtssprache noch lernt, übt ihn mit einem Tandem und darf ihn ablesen. Beim Klassen-Satz darf die Tischgruppe einen Satz von der Tafel wählen.",
-          "schwerer": "Die Geschichte weiterschreiben: Was passiert, wenn die Mitlesenden nicht mehr schweigen? Oder einen eigenen Klassen-Satz formulieren, der auch im Klassenchat gilt, und erklären, woran man merkt, dass er eingehalten wird."
+          "leichter": "Die Geschichte liest eine Person vor, die gut liest; die vier Hilfe-holen-Sätze stehen an der Tafel und dürfen abgelesen werden. Beim Klassen-Satz wählt die Tischgruppe einen Satz von der Tafel.",
+          "schwerer": "Die Geschichte weiterschreiben: Was passiert, wenn die Mitlesenden nicht mehr schweigen? Oder einen Klassen-Satz formulieren, der auch im Klassenchat gilt."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Spaß, Konflikt oder Mobbing? mit drei Situationen in den Ecken (8 Min.), die Rollen im Mobbing am Stuhlkreis mit der Geschichte und der anonymen Abstimmung (12 Min.), die Zivilcourage-Leiter mit zwei Situationen, Stufe 4 als Hilfe holen (10 Min.), Hilfe holen: Vorspiel der Lehrkraft mit „Jetzt nicht“ (5 Min.), Trimester-Rückblick im Skills-Pass, Klassen-Satz, Moment und Mission (10 Min.). Bewegungspause, Paarübung und Skill entfallen; den Skill in der nächsten Stunde nachholen."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), die Rollen im Mobbing mit der Geschichte und der anonymen Abstimmung (20 Min.), Hilfe holen: Vorspiel mit „Jetzt nicht“ und eine Paar-Runde (15 Min.), Skills-Pass, Klassen-Satz und Mission (10 Min.). Bewegungspause und Skill entfallen; den Skill in der nächsten Stunde nachholen."
       },
       "fr": {
         "titel": "Harcèlement et courage civique",
-        "kurz": "Quand une blague n’en est-elle plus une ? La classe distingue blague, conflit et harcèlement, voit sa vraie majorité, s’entraîne à chercher de l’aide et adopte une phrase de classe.",
+        "kurz": "Le harcèlement a besoin d’un public : la classe rend visible sa vraie majorité, s’entraîne à chercher de l’aide – même face à un « Pas maintenant » – et adopte une phrase contre le harcèlement.",
         "ziele": [
-          "distinguent blague, conflit et harcèlement",
-          "voient par le vote que la plupart rejettent le harcèlement et reconnaissent le pouvoir des témoins",
-          "s’entraînent à chercher de l’aide – même si l’adulte n’a pas le temps",
-          "adoptent une phrase de classe et font le bilan du trimestre"
+          "reconnaissent les rôles dans le harcèlement et voient que la plupart de la classe le rejette",
+          "s’entraînent à chercher de l’aide – même si l’adulte n’a pas le temps à ce moment-là",
+          "adoptent une phrase de classe contre le harcèlement"
         ],
         "material": [
           "Roue des émotions, 20 gommettes",
           "Post-it, une affiche vierge",
-          "Panneaux pour les trois coins",
-          "Six chaises, cartes rôles (modèle)",
-          "Six A4 pour les marches de l’échelle",
+          "Cinq chaises, cartes rôles (modèle)",
+          "Cartes situations (modèle), une par binôme",
           "Affiche des contacts, gros feutre",
-          "Cahier : fiche et Skills-Pass",
-          "Tampon pour le Skills-Pass"
+          "Cahier : fiche et Skills-Pass, tampon"
         ],
         "vorbereitung": [
           "Voir avec le régent et le SePAS s’il y a des signes de harcèlement dans la classe ; si oui, préparer la séance avec eux.",
-          "Relire les cartes : changer les prénoms ; écarter ce qui vise un jeune de la classe (nouveau, vêtements, apparence).",
-          "Indiquer les coins ; agrandir les cartes rôles en A4 ; préparer six chaises et les six feuilles de l’échelle.",
-          "Affiche des contacts (étape 7) ; tableau, caché : critères, skills 4 à 6, exemples de phrase de classe."
+          "Photocopier et relire les cartes : changer les prénoms ; écarter ce qui vise un jeune de la classe (nouveau, vêtements, apparence).",
+          "Tableau, caché : les rôles dans le harcèlement, les quatre phrases pour prévenir, trois exemples de phrase de classe. Affiche des contacts : SePAS, régent, 116 111, 8002 1234."
         ],
         "ablauf": [
           {
@@ -349,14 +232,9 @@
             "titel": "Retour, mission et cadre"
           },
           {
-            "min": "15–27",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Blague, conflit ou harcèlement ?"
-          },
-          {
-            "min": "27–45",
-            "phase": "input",
-            "titel": "Les rôles dans le harcèlement et le vote"
+            "titel": "Les rôles dans le harcèlement – et le vote"
           },
           {
             "min": "45–50",
@@ -364,24 +242,14 @@
             "titel": "Pause active : compter jusqu’à 20"
           },
           {
-            "min": "50–68",
-            "phase": "aktiv",
-            "titel": "L’échelle du courage civique"
-          },
-          {
-            "min": "68–83",
+            "min": "50–85",
             "phase": "uebung",
             "titel": "Chercher de l’aide – même « Pas maintenant »"
           },
           {
-            "min": "83–90",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : s’arrêter, regarder, agir"
-          },
-          {
-            "min": "90–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, phrase de classe et mission"
           }
         ],
         "schritte": [
@@ -389,203 +257,113 @@
             "titel": "Tour d’humeur : où est ta place ?",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Des post-it attendent sur les tables : chacun écrit un mot, sans son nom, pour répondre à la question au tableau – où, ou avec qui, est-ce que tu te sens vraiment à ta place ? Un lieu, un club, un loisir, un jeu, une langue, une personne sans nom de famille. Ramasser soi-même les post-it, face cachée (3 min). Puis, à trois, chacun montre sa tension avec les doigts ; l’enseignant·e commence avec son émotion et son chiffre (2 min). Ensuite, la question du feu : qui est dans l’orange ou dans le rouge prend en silence un skill de son plan feu tricolore – tout le monde expire trois fois longuement, ainsi personne n’a à se signaler. Pour finir, lire cinq ou six post-it sans les commenter et coller tous ceux qui conviennent sur l’affiche « Ici, j’ai ma place » (2 min). L’affiche reste accrochée pendant toute la séance.",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions, puis tout le monde montre à trois sa tension avec les doigts (0–100) ; l’enseignant·e commence. Aujourd’hui en plus, un post-it sans nom : où est-ce que tu te sens vraiment à ta place – un lieu, un club, un jeu, une personne ? Lire cinq post-it sans les commenter et les coller sur l’affiche « Ici, j’ai ma place ».",
             "sagen": [
-              "Un mot sur le post-it : où est-ce que vous vous sentez vraiment à votre place ? Sans nom – je ramasse les post-it face cachée, et un post-it vide, c’est aussi d’accord.",
-              "Le harcèlement enlève justement ça aux gens : le sentiment d’avoir sa place. C’est pour ça qu’on commence par là aujourd’hui."
+              "Un mot sur le post-it, sans nom : où est-ce que vous vous sentez vraiment à votre place ?",
+              "Le harcèlement enlève justement ça aux gens : le sentiment d’avoir sa place – c’est pour ça qu’on commence par là."
             ],
-            "tipp": "La question sur l’appartenance est volontairement positive : elle donne un appui avant un sujet lourd. L’enseignant·e écrit aussi un post-it, par exemple pour sa chorale ou son groupe de course.",
-            "wennEsKippt": "Si un post-it dit « nulle part » ou « personne », ne pas le lire ni l’accrocher, mais le mettre de côté – c’est une réponse sincère. Après le cours, rester attentif à qui semble seul et, en cas d’inquiétude, en parler au régent et au SePAS. Lire tranquillement les post-it pour rire, comme « dans mon lit » ; ne pas lire ni accrocher les post-it blessants."
+            "wennEsKippt": "Si un post-it dit « nulle part » ou « personne », ne pas le lire ni l’accrocher, mais le mettre de côté – et, après le cours, rester attentif à qui semble seul ; en cas d’inquiétude, en parler au régent et au SePAS. Ne pas lire ni accrocher les post-it blessants."
           },
           {
             "titel": "Retour, mission et cadre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Rappeler le deuxième non : presque chaque scène a basculé dès qu’une deuxième personne a dit non. Puis revenir sur la mission de la semaine – l’ancre et la phrase pour dire non quand le moment de pression arrive : ton moment est-il venu, et qu’as-tu fait ? Pouce en haut : le moment est venu, j’ai essayé l’ancre et ma phrase ; au milieu : le moment est venu, j’ai fait autre chose ; en bas : le moment n’est pas venu, j’ai seulement observé. Une voix raconte en une phrase, sans prénom. Puis annoncer le thème et poser clairement le cadre (liste), en justifiant chaque point en une phrase. Rappeler qu’on peut parler en tête-à-tête après le cours et annoncer que la séance se termine par le bilan du trimestre et une phrase pour la charte de classe.",
+            "text": "Revenir sur la mission de la semaine : ton moment de pression est-il venu – et qu’as-tu fait ? Pouce en haut : le moment est venu, j’ai essayé l’ancre et ma phrase ; au milieu : le moment est venu, j’ai fait autre chose ; en bas : le moment n’est pas venu. Une voix raconte en une phrase, sans prénom ; puis annoncer le thème et poser le cadre (liste).",
             "sagen": [
-              "Votre moment de pression est-il venu – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas. Si vous racontez, sans prénoms, s’il vous plaît.",
-              "Aujourd’hui, on parle du harcèlement. Vous n’avez rien à raconter sur vous – on travaille seulement avec des histoires inventées.",
-              "Si quelque chose vous touche : j’ai du temps après le cours, et le SePAS est là pour vous aussi."
+              "Votre moment de pression est-il venu, et qu’avez-vous fait – pouce en haut, au milieu ou en bas ?",
+              "Aujourd’hui, on parle du harcèlement – vous n’avez rien à raconter sur vous, on travaille seulement avec des histoires inventées."
             ],
             "punkte": [
               "On parle de personnes inventées – jamais de quelqu’un de cette classe.",
-              "Personne n’a à raconter ce qu’il a vécu. On peut toujours dire « je passe ».",
+              "Personne n’a à raconter ce qu’il a vécu ; on peut toujours dire « je passe ».",
               "Qui a besoin d’une pause sort un moment de l’exercice et reste dans la salle.",
-              "Après le cours, je suis là pour qui veut parler. Si quelqu’un est en danger, je vais chercher de l’aide – et je dis avant ce que je vais faire."
+              "Après le cours, je suis là, et le SePAS est là pour vous aussi. Si quelqu’un est en danger, je vais chercher de l’aide – et je dis avant ce que je vais faire.",
+              "Les portables restent dans le sac – personne ne photographie les post-it, l’affiche ou le vote."
             ],
-            "tipp": "Ne pas réciter le cadre, mais l’expliquer : les jeunes prennent les règles plus au sérieux quand ils voient qu’elles les protègent.",
-            "wennEsKippt": "Si un prénom de la classe tombe tout de suite (« C’est comme avec… »), arrêter gentiment mais clairement : aujourd’hui, pas de prénoms. Après le cours, vérifier avec le régent s’il se passe quelque chose. Si quelqu’un lance : « Le harcèlement, c’est juste pour rire », ne pas débattre : c’est justement ce qu’on va voir dans les coins."
+            "wennEsKippt": "Si un prénom de la classe tombe tout de suite (« C’est comme avec… »), arrêter gentiment mais clairement : aujourd’hui, pas de prénoms – et vérifier après le cours avec le régent s’il se passe quelque chose. Si quelqu’un lance « Le harcèlement, c’est juste pour rire », ne pas débattre : c’est justement ce qu’on va regarder."
           },
           {
-            "titel": "Blague, conflit ou harcèlement ?",
-            "dauer": 12,
+            "titel": "Les rôles dans le harcèlement – et le vote",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Montrer les trois coins : blague, conflit, harcèlement (1 min). Lire les quatre situations l’une après l’autre (tableau) ; chacun va dans le coin qui convient, qui hésite se place entre deux coins. Les trois premières rapidement (5 min en tout), plus de temps pour le cas limite (3 min). Après chaque situation, demander à deux personnes de coins différents sur quoi elles s’appuient, et découvrir au tableau le critère du harcèlement qui correspond (liste). Nommer la différence avec l’escalier du conflit : l’escalier suppose deux personnes à peu près aussi fortes – face au harcèlement, il faut une protection et de l’aide extérieure. Pour finir, à sa place, lire l’encadré des quatre critères sur la fiche et vérifier ensemble lesquels s’appliquent au cas limite de Samuel (3 min).",
+            "text": "D’abord expliquer en bref ce qu’est le harcèlement et qui y joue quel rôle (tableau). Puis lire l’histoire de la fiche et montrer avec cinq chaises qui est assis où – la chaise de la personne visée reste vide, personne ne la joue. Pour finir, le vote anonyme ; les deux chiffres restent au tableau toute la séance.",
             "sagen": [
-              "Sur quoi est-ce que vous vous êtes basés ?",
-              "Une blague n’est une blague que si tout le monde peut en rire – y compris la personne visée."
+              "Le harcèlement a besoin d’un public – si le public change de camp, la scène disparaît.",
+              "… sur 20 trouvent que ce n’est pas OK : la plupart ici sont de ton côté – ils ne le savent juste pas les uns des autres."
             ],
             "punkte": [
-              "Ça se répète, et pendant longtemps.",
-              "Il y a un déséquilibre : un côté est plus fort – plus nombreux, plus âgé, plus populaire.",
-              "C’est fait exprès.",
-              "La personne visée ne peut pas se défendre seule."
+              "Expliquer (5 min) : harcèlement veut dire encore et encore, exprès, et la personne ne peut pas se défendre seule – une blague n’est une blague que si tout le monde peut en rire. Les rôles au tableau : meneur, supporters (rient, likent), témoins passifs (détournent le regard), défenseur, personne visée.",
+              "Lire l’histoire (10 min) : cinq chaises en demi-cercle, une carte rôle sur chacune, la chaise de Nora vide et à l’écart ; chercher ensemble qui va où, puis exercice 1 à deux.",
+              "Question clé (5 min) : qui a le plus de pouvoir pour arrêter ça ? Tourner les chaises de ceux qui rient et de ceux qui lisent vers la chaise vide – qu’est-ce que ça change pour Mathis ?",
+              "Vote (5 min) : yeux fermés, personne ne regarde. La main en l’air, qui trouve que ce n’est pas OK si on se moque de quelqu’un encore et encore ; la main en l’air, qui veut que quelqu’un intervienne si ça lui arrive. Compter, les deux chiffres au tableau.",
+              "Exercice 2 (5 min) : tout le monde note les deux chiffres sur la fiche et lit l’encadré « Bon à savoir »."
             ],
-            "tabelle": {
-              "spalten": [
-                "Situation",
-                "Plutôt… – à quoi on le voit"
-              ],
-              "zeilen": [
-                [
-                  "Deux amis se charrient avec des surnoms, les deux rient.",
-                  "Blague – les deux participent, les deux peuvent arrêter."
-                ],
-                [
-                  "Après une faute, deux joueurs s’insultent ; le lendemain, c’est fini.",
-                  "Conflit – une seule fois, les deux se défendent."
-                ],
-                [
-                  "Depuis des semaines, certains font des bruits dès qu’Elias parle en cours.",
-                  "Harcèlement – ça se répète, plusieurs contre un."
-                ],
-                [
-                  "Chaque jour, il y a une blague sur les chaussures de Samuel. Il rit avec les autres, mais va désormais seul en récré.",
-                  "Cas limite, plutôt harcèlement – une blague s’arrête quand l’un des deux ne rit plus."
-                ]
-              ]
-            },
-            "tipp": "Prendre du temps pour le cas limite à la fin : la classe en apprend plus qu’avec les exemples évidents ; les trois premiers peuvent aller vite. S’il y a peu de place, chacun montre depuis sa place avec un, deux ou trois doigts ; qui ne veut pas se lever montre toujours ainsi. Si quelqu’un demande ce qu’il en est des commentaires en ligne : les mêmes quatre critères s’appliquent ; en ligne, beaucoup de gens le voient simplement plus vite.",
-            "wennEsKippt": "Si quelqu’un cite une situation de la classe ou montre une personne du doigt, arrêter gentiment : aujourd’hui, on reste sur les exemples inventés ; ensuite, garder un œil sur la personne citée et lui parler après le cours, ainsi qu’au régent. Si l’on rit à la blague sur les chaussures de Samuel, demander : qui rit, ici – et qui ne rit pas ? Si une remarque vise l’origine, la religion, l’apparence ou l’orientation sexuelle (par exemple « gay » utilisé comme insulte), dire calmement et clairement : ici, personne n’est insulté pour ce qu’il est – puis continuer.",
-            "blatt": "ff7-zivilcourage"
-          },
-          {
-            "titel": "Les rôles dans le harcèlement et le vote",
-            "dauer": 18,
-            "phase": "input",
-            "text": "Placer six chaises en demi-cercle devant la classe et poser une carte rôle sur chacune (liste) ; la chaise de la personne visée est un peu à l’écart. Personne ne s’assoit sur les chaises. Lire l’histoire « Le message vocal » de la fiche et chercher ensemble qui va avec quelle chaise ; puis exercice 1 à deux (8 min en tout). Poser ensuite la question clé : qui a le plus de pouvoir pour arrêter ça ? Tourner l’une après l’autre les chaises des supporters et des témoins passifs vers la chaise vide et demander ce que cela change pour le meneur. Chacun écrit sa réponse dans l’exercice 2 de la fiche (5 min). Puis le vote anonyme (3 min) : tout le monde ferme les yeux ou regarde la table ; personne ne regarde autour de soi, l’enseignant·e ne dévoile aucune main. Poser les deux questions (impulsions) ; après chacune, ceux qui pensent oui lèvent brièvement la main, l’enseignant·e compte et écrit les deux chiffres au tableau. Yeux ouverts, lire le résultat et l’encadré « Ce que dit la recherche » sur la fiche (2 min). Les chiffres restent au tableau toute la séance.",
-            "sagen": [
-              "Laquelle de ces personnes pourrait arrêter tout ça le plus facilement ? Le harcèlement a besoin d’un public – si le public change de camp, la scène disparaît.",
-              "Yeux fermés ou regard sur la table, personne ne regarde – moi non plus, je ne dirai rien. La main en l’air, qui trouve que ce n’est pas OK quand quelqu’un se fait rire au nez encore et encore. Merci, mains baissées. Et maintenant : la main en l’air, qui aimerait que quelqu’un intervienne si ça lui arrivait à lui.",
-              "… sur 20 ici trouvent que ce n’est pas OK. La plupart de cette classe sont de ton côté – ils ne le savent simplement pas les uns des autres. À partir d’aujourd’hui, vous le savez."
-            ],
-            "punkte": [
-              "Meneur : commence et décide de ce qui se passe.",
-              "Suiveur : participe dès que ça commence.",
-              "Supporter : rit, encourage, like.",
-              "Témoins passifs : détournent le regard ou lisent sans rien dire.",
-              "Défenseur : soutient la personne visée ou va chercher de l’aide.",
-              "Personne visée : est attaquée encore et encore et ne peut pas se défendre seule."
-            ],
-            "tipp": "Montrer ici la charte de classe : « On rit ensemble, pas les uns des autres. » La règle prend un visage. La chaise vide compte : ainsi, personne n’a à jouer la personne visée. Le vote vient après la chaise vide, pas avant : tout le monde voit d’abord que le public a le pouvoir – puis que, dans cette classe, le public est du côté de la personne visée. Les rôles décrivent ce que quelqu’un fait, pas qui il est ; on peut changer de rôle chaque jour.",
-            "wennEsKippt": "Si quelqu’un s’assoit pour rire sur la chaise de la personne visée ou montre quelqu’un de la classe, intervenir calmement : cette chaise reste vide, et aujourd’hui, pas de prénoms de la classe. Si un jeune dit que cela lui arrive en ce moment, le remercier calmement, ne pas poser de questions et lui parler seul après le cours ; informer le régent et le SePAS le jour même. Si certains regardent pendant le vote, recommencer avec des papiers : oui ou non, ramasser face cachée, compter. Si le premier chiffre est serré, mettre le deuxième en avant – presque tout le monde aimerait que quelqu’un intervienne si ça lui arrivait. Personne n’est interrogé sur son vote. Si la classe devient silencieuse et abattue, proposer une minute de pause (fenêtre ouverte, un verre d’eau) et reprendre avec ce que les témoins peuvent faire.",
+            "wennEsKippt": "Si un jeune dit que cela lui arrive en ce moment : le remercier calmement, ne pas poser de questions, lui parler seul après le cours, informer le régent et le SePAS le jour même. Si certains regardent, refaire le vote avec des papiers.",
             "blatt": "ff7-zivilcourage"
           },
           {
             "titel": "Pause active : compter jusqu’à 20",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Ouvrir la fenêtre, tout le monde se tient derrière sa chaise et secoue d’abord les mains, les bras et les épaules (30 s). Puis la classe compte ensemble jusqu’à 20 : chacun peut dire le nombre suivant à tout moment, mais personne ne dit deux nombres d’affilée – sans se concerter ni faire de signe. Si deux personnes parlent en même temps, la classe recommence à 1. Pour finir, demander ce qui a aidé ; ce sont souvent les mêmes choses qui aident contre le harcèlement : faire attention les uns aux autres, n’oublier personne. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Fenêtre ouverte, tout le monde debout derrière sa chaise, on secoue les bras et les épaules. Puis la classe compte ensemble jusqu’à 20 : chacun peut dire le nombre suivant à tout moment, mais personne deux nombres d’affilée – si deux parlent en même temps, on recommence à 1.",
             "sagen": [
-              "On n’y arrive qu’ensemble – et seulement si tout le monde fait attention à tout le monde."
+              "Ça ne marche qu’ensemble – et seulement si tout le monde fait attention à tout le monde."
             ],
-            "tipp": "Le jeu marche rarement du premier coup, et c’est tout l’intérêt. Si ça ne marche pas après trois essais, qui le veut ferme les yeux : on écoute alors mieux."
-          },
-          {
-            "titel": "L’échelle du courage civique",
-            "dauer": 18,
-            "phase": "aktiv",
-            "text": "Poser au sol les six feuilles de l’échelle comme des barreaux, dans l’allée centrale ou le long d’un mur, la marche 1 devant, à environ un mètre d’écart. Parcourir les marches ensemble : du plus simple au plus courageux, et toujours sans se mettre en danger (liste, 4 min). Puis lire une carte situation ; chacun se place à côté de la marche qu’il se sent capable de faire dans cette situation. Deux ou trois personnes disent mot pour mot ce qu’elles feraient ou diraient, et la classe aide à rendre la phrase courte et sûre (trois cartes, 10 min). Reprendre la question du « cafter » dès qu’elle arrive. Pour finir, à sa place, entourer sur la fiche la marche qu’on se sent déjà capable de faire et mettre une étoile à celle qu’on veut travailler (exercice 3, 2 min) – deux minutes suffisent, puisqu’on vient de parcourir les marches.",
-            "sagen": [
-              "Chaque marche compte. Qui est sur la marche 1 a déjà cessé d’être le public.",
-              "Quelle est la différence entre cafter et aller chercher de l’aide ?",
-              "Qu’est-ce que tu dis ou écris exactement ? Une phrase courte suffit, par exemple : Viens, on y va."
-            ],
-            "punkte": [
-              "1 Ne pas rire avec les autres, ne rien transférer.",
-              "2 Montrer à la personne visée : je suis de ton côté – même plus tard ou par message.",
-              "3 Rallier d’autres personnes : à deux ou à trois, c’est plus facile.",
-              "4 Prévenir un adulte. C’est chercher de l’aide, pas cafter.",
-              "5 En ligne : garder des preuves, signaler, ne pas liker ni partager.",
-              "6 Dire « Stop » directement – seulement si c’est sans danger pour toi."
-            ],
-            "tipp": "Une réponse claire à la question du « cafter » aide : cafter, c’est vouloir nuire à quelqu’un ; chercher de l’aide, c’est vouloir protéger quelqu’un. Montrer les chiffres du vote : qui va sur la marche 2 ou 3 a, dans cette classe, la majorité derrière lui. S’il y a peu de place, poser l’échelle sur le bureau, et chacun montre sa marche avec les doigts.",
-            "wennEsKippt": "Si quelqu’un dit « Moi, je le frappe », répondre clairement : la violence n’est pas une marche de l’échelle – elle rend tout plus dangereux, toi compris. Si quelqu’un affirme qu’il s’interposerait tout de suite, nuancer : la marche 6 n’est juste que si elle est sans danger – chercher de l’aide est souvent le choix le plus courageux. Si tout le monde se place sur la marche 6 pour rire, faire la carte suivante assis, les yeux sur la table, en montrant avec les doigts.",
-            "blatt": "ff7-mobbing-karten"
+            "tipp": "Le jeu marche rarement du premier coup, et c’est justement tout l’intérêt – demander à la fin ce qui a aidé : faire attention les uns aux autres, comme contre le harcèlement. Si la grande récréation tombe entre les deux heures, supprimer l’exercice."
           },
           {
             "titel": "Chercher de l’aide – même « Pas maintenant »",
-            "dauer": 15,
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Écrire au tableau ce qu’un adulte doit savoir pour pouvoir aider (liste, points 1 à 4). Jouer la scène une fois (3 min) : l’enseignant·e joue le régent, un volontaire joue Inês, de l’histoire, et lit les quatre phrases au tableau ; montrer au passage comment un adulte réagit : remercier, poser calmement des questions, dire ce qui va se passer ensuite. Puis chaque binôme s’entraîne avec une carte situation. Manche 1 (4 min) : A raconte, B joue l’adulte et pose gentiment des questions ; ensuite on échange – chacun a été une fois celui qui prévient. Manche 2 (4 min), comme pour la carte d’urgence de la séance 17 : mêmes binômes, mais l’adulte n’a pas le temps (points 5 et 6). La personne insiste ou va voir l’adulte suivant – A et B échangent de nouveau. Pour finir, demander ce qui rend plus facile le fait de prévenir – y aller à deux, écrire un message, s’adresser au SePAS –, et chacun note une personne de confiance dans l’encadré d’urgence de la fiche ; qui ne trouve personne écrit le SePAS (4 min).",
+            "text": "D’abord lire l’échelle sur la fiche : quatre marches, du plus simple au plus courageux – chaque marche compte. Puis s’entraîner à chercher de l’aide : une fois en démonstration, puis en binômes avec des cartes situations ; à la manche 2, l’adulte n’a pas le temps. Pour finir, l’exercice 3 et la personne de confiance.",
             "sagen": [
-              "Prévenir un adulte, ce n’est pas balancer quelqu’un. C’est dire : je veux que ça s’arrête.",
-              "Manche 2 : l’adulte n’a pas le temps à ce moment-là. Qu’est-ce que vous faites ? Vous insistez – ou vous allez voir la personne suivante. Abandonner n’est pas une marche.",
-              "Vous pouvez aussi y aller à deux ou écrire un message. L’essentiel, c’est qu’un adulte soit au courant."
+              "Prévenir, ce n’est pas balancer quelqu’un – c’est dire : je veux que ça s’arrête.",
+              "Si l’adulte n’a pas le temps, vous insistez ou vous allez voir la personne suivante – abandonner n’est pas une marche."
             ],
             "punkte": [
-              "Qu’est-ce qui se passe ? « Quelqu’un de notre classe se fait sans arrêt… »",
-              "Où et depuis quand ? « Surtout dans le groupe de la classe, depuis deux semaines. »",
-              "Qui ? Le prénom, tu le dis seulement à l’adulte, pas devant tout le monde.",
-              "Ce que je souhaite : « Je veux que ça s’arrête. »",
-              "Manche 2 – l’adulte : « Pas maintenant, j’ai cours dans deux minutes. »",
-              "Insister : « C’est important. Quand est-ce que vous avez le temps ? » – ou aller voir l’adulte suivant."
+              "Échelle (5 min) : lire les quatre marches. La marche 3, c’est chercher de l’aide, pas cafter – cafter veut nuire, chercher de l’aide veut protéger ; la marche 4 seulement si c’est sans danger.",
+              "Démonstration (5 min) : l’enseignant·e joue le régent, un volontaire joue Inês et lit les quatre phrases au tableau : Qu’est-ce qui se passe ? Où et depuis quand ? Qui – le prénom seulement à l’adulte. Je veux que ça s’arrête. L’enseignant·e remercie, pose calmement des questions et dit ce qui se passe ensuite.",
+              "Manche 1 (8 min) : binômes, une carte situation chacun ; A prévient, B joue l’adulte et pose gentiment des questions – puis on échange.",
+              "Manche 2 (8 min) : mêmes binômes, mais l’adulte dit : « Pas maintenant, j’ai cours dans deux minutes. » A insiste (« Quand est-ce que vous avez le temps ? ») ou va voir l’adulte suivant – puis on échange.",
+              "Exercice 3 (9 min) : entourer sa marche ; noter une personne de confiance dans l’encadré d’aide – qui ne trouve personne écrit le SePAS. Montrer l’affiche des contacts : qui sait où aller ose plus facilement."
             ],
-            "tipp": "Sur l’affiche figurent le SePAS (salle, horaires), le régent, le Kanner- a Jugendtelefon 116 111 et la BEE SECURE Helpline 8002 1234. Beaucoup osent plus facilement quand ils savent exactement où aller et qu’ils peuvent venir accompagnés. La plus grande peur est souvent que ce soit pire ensuite – d’où l’importance de montrer, dans la scène, que l’adulte agit avec prudence et dit avant ce qu’il va faire. La manche 2 est la partie la plus importante : dans la vraie vie, le premier adulte n’a souvent pas le temps à ce moment-là, et c’est justement là que beaucoup abandonnent.",
-            "wennEsKippt": "Si un jeune pose une question parce qu’il s’inquiète pour une personne réelle, ne pas approfondir devant la classe : c’est une question importante – on en parle juste après le cours. Mener ensuite l’entretien et informer le régent et le SePAS le jour même. Si un binôme chahute, s’asseoir avec lui et jouer soi-même l’adulte. Si le « Pas maintenant » est joué trop durement ou si quelqu’un se moque de celui qui demande, arrêter : l’adulte est occupé, pas méchant. Qui ne veut pas s’entraîner à voix haute écrit la phrase comme un message – c’est aussi un moyen.",
+            "wennEsKippt": "Si un jeune pose une question parce qu’il s’inquiète pour une personne réelle, ne pas approfondir devant la classe : c’est important – on en parle juste après le cours ; informer ensuite le régent et le SePAS le jour même. Si le « Pas maintenant » est joué trop durement ou si quelqu’un se moque de celui qui demande, arrêter : l’adulte est occupé, pas méchant.",
             "blatt": "ff7-zivilcourage"
           },
           {
             "titel": "Skill : s’arrêter, regarder, agir",
-            "dauer": 7,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Annoncer : un skill pour le moment où vous voyez quelque chose et ne savez pas quoi faire. Lire les trois étapes (liste) et s’entraîner sur deux courtes scènes : dans le groupe de la classe, une photo humiliante d’une élève apparaît, les premiers émojis morts de rire arrivent. À la récré, trois plus grands coincent un plus jeune dans un coin et lui prennent son portable. Après chaque scène, tout le monde pose les mains à plat sur la table, expire une fois longuement, réfléchit en silence à ce qui se passe et montre à trois avec les doigts la marche de l’échelle qu’il choisirait (2 min chaque fois). Pour finir, deux voix : où est-ce que ça aide encore – dans une dispute, face à la pression du groupe ?",
+            "text": "Le skill pour le moment où vous voyez quelque chose et ne savez pas quoi faire : les mains à plat sur la table, expirer une fois longuement, regarder – puis choisir une marche de l’échelle. S’entraîner une fois sur une scène (5 min), puis la clôture : Skills-Pass avec le bilan du trimestre, phrase de classe, mission.",
             "sagen": [
-              "Les mains à plat sur la table. Expirez une fois, longuement. Et maintenant, regardez : qu’est-ce qui se passe ?",
-              "Deux secondes d’arrêt suffisent souvent pour ne pas rire avec les autres."
+              "Les mains à plat sur la table, expirez une fois longuement – et maintenant, regardez : qu’est-ce qui se passe ?",
+              "Quelle phrase doit figurer dès aujourd’hui sur notre charte – c’est vous qui décidez, pas moi."
             ],
             "punkte": [
-              "S’arrêter : ne pas rire, ne rien écrire – les mains immobiles, expirer une fois longuement.",
-              "Regarder : que se passe-t-il ? Comment va la personne ? Suis-je en sécurité, qui peut aider ?",
-              "Agir : choisir une marche de l’échelle sans danger pour toi – chercher de l’aide, c’est toujours possible."
+              "Skill (5 min) : lire la scène – dans le groupe de la classe, une photo humiliante d’une élève apparaît, les premiers émojis morts de rire arrivent. Les mains sur la table, expirer longuement, une minute en silence : qu’est-ce qui se passe ? À trois, chacun montre sa marche avec les doigts ; deux voix disent ce qu’elles feraient.",
+              "Skills-Pass (4 min) : une phrase – quelle marche est-ce que je me sens capable de faire dès demain ? Puis le bilan du trimestre sur la même page : noter son skill le plus important et cocher les cinq phrases pendant que l’enseignant·e les lit lentement ; l’enseignant·e tamponne.",
+              "Phrase de classe (4 min) : découvrir les trois exemples au tableau ; chaque îlot en choisit un ou propose le sien, la classe vote avec le pouce – la phrase va tout de suite sur la charte de classe.",
+              "Exemples : « Chez nous, personne ne rit tout seul. » · « Chercher de l’aide, ce n’est pas cafter. » · « Qui dit stop a la classe derrière lui. »",
+              "Mission et moment (2 min) : lire la mission de la semaine ; à trois, chacun montre où son moment a le plus de chances d’arriver – un doigt le groupe, deux la récré ou le bus, trois le cours – et l’écrit dans le cahier. Montrer les numéros d’aide du cahier (valables aussi pendant les vacances), rappeler qu’on est disponible, annoncer la suite."
             ],
-            "tipp": "Pour la deuxième scène, la réponse est claire : aller tout de suite chercher un adulte, par exemple les éducateurs. Ce skill s’inspire du skill STOP de l’entraînement aux skills de la DBT et relie le chapitre : redescendre, l’ancre, l’échelle.",
-            "wennEsKippt": "Si des rires fusent pendant l’arrêt, continuer calmement et faire l’exercice soi-même. Si un jeune semble touché par la scène, ne pas poser de questions, mais lui parler brièvement après le cours."
-          },
-          {
-            "titel": "Skills-Pass, phrase de classe et mission",
-            "dauer": 10,
-            "phase": "abschluss",
-            "text": "D’abord la phrase de la séance dans le Skills-Pass (2 min) : quelle marche de l’échelle est-ce que je me sens capable de faire dès demain ? Puis le bilan du trimestre, sur la même page, en bref (3 min) : les skills des chapitres 4 à 6 sont au tableau ; chacun note son skill le plus important et coche les cinq phrases en bas de page pendant que l’enseignant·e les lit lentement – une auto-évaluation, pas une note ; passer avec le tampon pendant ce temps. Le tour de parole est supprimé aujourd’hui. Puis la phrase de classe (3 min) : découvrir les trois exemples au tableau (liste). Chaque îlot en choisit un ou propose sa propre phrase en une minute ; dans chaque groupe, une personne la lit, la classe vote avec le pouce, et la phrase qui a le plus de pouces va tout de suite sur la charte de classe – une personne du groupe l’écrit. Puis choisir son moment (1 min) : lire la mission de la semaine dans le cahier – refuser une fois d’être le public. À trois, chacun montre où cela a le plus de chances d’arriver chez lui : un doigt pour le groupe de la classe, deux pour la récré ou le bus, trois pour le cours ou le sport ; chacun écrit son moment en mots-clés dans la colonne « Mon moment : si… ». Pour finir, annoncer la mission en une phrase, montrer les numéros d’aide de la page « Comment fonctionne la matière » – ils restent valables pendant les vacances –, redire qu’on est disponible après le cours et annoncer la suite (1 min).",
-            "sagen": [
-              "Regardez vos cinq phrases du premier trimestre et comparez : qu’est-ce qui a grandi ? Ici, pas de notes – seulement votre propre avis.",
-              "Quelle phrase doit figurer dès aujourd’hui sur notre charte ? Une du tableau ou la vôtre – c’est vous qui décidez, pas moi.",
-              "Où êtes-vous le plus souvent le public – dans le groupe, à la récré ou en cours ? Un, deux ou trois doigts. C’est votre moment pour la mission."
-            ],
-            "punkte": [
-              "« Chez nous, personne ne rit tout seul. »",
-              "« Chercher de l’aide, ce n’est pas cafter. »",
-              "« Qui dit stop a la classe derrière lui. »"
-            ],
-            "tipp": "Ne pas ramasser les évaluations ni les commenter. Qui coche « pas encore » partout reçoit après le cours un mot d’encouragement, pas une discussion. La phrase de classe s’écrit aujourd’hui, pas la semaine prochaine : une décision affichée tout de suite tient. Le tour de parole sur le trimestre et les règles du groupe de la classe trouvent leur place au conseil de coopération après les vacances.",
-            "wennEsKippt": "Si la classe est agitée après ce sujet lourd, faire l’évaluation en silence. Si le temps manque, noter aujourd’hui le skill le plus important et rattraper les cinq phrases à la première séance après les vacances – la phrase de classe, elle, ne saute pas. Si un groupe propose une phrase qui vise ou menace quelqu’un (« Qui cafte dégage »), ne pas la soumettre au vote, mais dire gentiment : la phrase doit protéger tout le monde – aussi ceux qui cherchent de l’aide.",
+            "wennEsKippt": "Si un groupe propose une phrase qui vise ou menace quelqu’un (« Qui cafte dégage »), ne pas la soumettre au vote, mais dire gentiment : la phrase doit protéger tout le monde – aussi ceux qui cherchent de l’aide. Si un jeune semble touché par la scène, ne pas poser de questions, mais lui parler brièvement après le cours.",
             "blatt": "ff-skills-pass"
           }
         ],
-        "bruecke": "Après les vacances, on parle de votre portable : combien de temps vous passez vraiment sur l’écran, ce qui se cache derrière les images parfaites – et à quoi ressemble un bon plan portable.",
-        "mission": "Si on rit de quelqu’un – groupe, récré, bus –, refuse une fois d’être le public : ne ris pas, ne transfère rien. Ou montre à la personne que tu es de son côté.",
-        "hintergrund": "Olweus (1993) décrit le harcèlement par trois critères – répété, intentionnel, avec un déséquilibre des forces ; que la personne visée ne puisse guère se défendre est le quatrième critère de la fiche. Le harcèlement est un processus de groupe : Salmivalli et al. (1996) ont pu attribuer un rôle à la plupart des jeunes d’une classe – meneur, suiveur, supporter, témoin passif, défenseur, personne visée. Qui rit ou se tait offre un public au meneur. La séance s’adresse donc aux témoins : les programmes qui les renforcent augmentent de façon mesurable les interventions (Polanin, Espelage & Pigott, 2012 ; KiVa : Kärnä et al., 2011). Le vote anonyme utilise le deuxième levier : les jeunes surestiment à quel point les autres approuvent le harcèlement ; quand on leur renvoie la vraie majorité, il diminue (Perkins, Craig & Perkins, 2011). La phrase de classe est une règle que la classe décide elle-même – de telles règles tiennent mieux que celles qu’on impose (Deci & Ryan, 2000).",
+        "bruecke": "Après les vacances, on parle de votre portable : combien de temps vous passez vraiment sur l’écran – et à quoi ressemble un bon plan portable.",
+        "mission": "Une fois, ne sois pas le public : ne ris pas – ou montre : je suis de ton côté.",
+        "hintergrund": "Le harcèlement est un processus de groupe : presque chacun dans la classe y a un rôle – meneur, supporter, témoin passif, défenseur, personne visée (Salmivalli et al., 1996). Qui rit ou se tait offre un public au meneur ; renforcer les témoins augmente les interventions (Polanin, Espelage & Pigott, 2012). Les jeunes surestiment combien les autres approuvent le harcèlement – quand la vraie majorité se voit, il diminue (Perkins, Craig & Perkins, 2011). Une règle choisie par la classe tient mieux.",
         "quellen": [
           "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
           "Polanin, J. R., Espelage, D. L. & Pigott, T. D. (2012). A meta-analysis of school-based bullying prevention programs’ effects on bystander intervention behavior. School Psychology Review, 41(1), 47–65.",
           "Perkins, H. W., Craig, D. W. & Perkins, J. M. (2011). Using social norms to reduce bullying: A research intervention among adolescents in five middle schools. Group Processes & Intergroup Relations, 14(5), 703–722."
         ],
-        "achtung": "Le harcèlement peut exister dans la classe elle-même : n’interroger personne sur son vécu, ne faire jouer aucun rôle par des jeunes, ne recueillir aucun nom. Des signes de harcèlement ne se règlent pas en cours, et personne n’est interpellé devant les autres : parler ensuite seul à seul avec la personne visée, ne rien promettre, noter les faits avec la date, informer le régent et le SePAS le jour même (procédure de l’école). En cas de violence, de menaces, de photos dénudées ou d’idées suicidaires, tout de suite : ne pas laisser seul, faire venir le SePAS ou la direction, danger immédiat : 112.",
+        "achtung": "Le harcèlement peut exister dans la classe elle-même : n’interroger personne sur son vécu, ne faire jouer aucun rôle par des jeunes, ne recueillir aucun nom. Des signes de harcèlement ne se règlent pas en cours : parler ensuite seul à seul avec la personne visée, ne rien promettre, noter les faits avec la date, informer le régent et le SePAS le jour même. En cas de violence, de menaces, de photos dénudées ou d’idées suicidaires, faire venir tout de suite le SePAS ou la direction, ne laisser personne seul, danger immédiat : 112.",
         "differenzierung": {
-          "leichter": "Les panneaux des coins reçoivent un symbole : un visage qui rit, deux flèches face à face, plusieurs contre un. Dans l’îlot, un jeune qui lit bien lit l’histoire ; pour l’exercice 2, des mots-clés suffisent. La phrase pour chercher de l’aide est au tableau ; qui apprend encore la langue du cours s’entraîne avec un binôme et peut la lire. Pour la phrase de classe, l’îlot peut choisir une phrase du tableau.",
-          "schwerer": "Continuer l’histoire : que se passe-t-il quand ceux qui lisent sans rien dire ne se taisent plus ? Ou formuler sa propre phrase de classe, valable aussi dans le groupe de la classe, et expliquer à quoi on verra qu’elle est respectée."
+          "leichter": "Un jeune qui lit bien lit l’histoire ; les quatre phrases pour prévenir sont au tableau et peuvent être lues. Pour la phrase de classe, l’îlot choisit une phrase du tableau.",
+          "schwerer": "Continuer l’histoire : que se passe-t-il quand ceux qui lisent sans rien dire ne se taisent plus ? Ou formuler une phrase de classe valable aussi dans le groupe de la classe."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), blague, conflit ou harcèlement ? avec trois situations dans les coins (8 min), les rôles dans le harcèlement avec les chaises, l’histoire et le vote anonyme (12 min), l’échelle du courage civique avec deux situations, la marche 4 comme recherche d’aide (10 min), chercher de l’aide : scène jouée par l’enseignant·e avec « Pas maintenant » (5 min), bilan du trimestre dans le Skills-Pass, phrase de classe, moment et mission (10 min). La pause active, l’entraînement en binômes et le skill sont supprimés ; rattraper le skill à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), les rôles dans le harcèlement avec l’histoire et le vote anonyme (20 min), chercher de l’aide : démonstration avec « Pas maintenant » et une manche en binômes (15 min), Skills-Pass, phrase de classe et mission (10 min). La pause active et le skill sont supprimés ; rattraper le skill à la séance suivante."
       }
     }
   ],
@@ -602,7 +380,7 @@
         "einzeln",
         "gruppe"
       ],
-      "dauer": "25 Min.",
+      "dauer": "20 Min.",
       "eldib": [],
       "schlagworte": [
         "Mobbing",
@@ -616,156 +394,106 @@
         "ff7-e24"
       ],
       "de": {
-        "titel": "Mobbing erkennen – Zivilcourage zeigen",
-        "untertitel": "Nicht jeder Streit ist Mobbing – und nicht jeder Witz ist harmlos.",
+        "titel": "Mobbing und Zivilcourage",
+        "untertitel": "Wer nicht mitlacht, ist kein Publikum mehr.",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Ein Spaß ist nur ein Spaß, wenn alle lachen können – auch die Person, um die es geht. Ein Streit ist vorbei, wenn er geklärt ist. Mobbing ist etwas anderes:"
-          },
-          {
-            "art": "info",
-            "symbol": "merke",
-            "titel": "Vier Merkmale von Mobbing",
-            "punkte": [
-              "Es passiert immer wieder und über längere Zeit.",
-              "Eine Seite ist stärker – mehr Leute, älter, beliebter.",
-              "Es ist absichtlich.",
-              "Die betroffene Person kann sich allein nicht wehren."
-            ]
-          },
-          {
             "art": "geschichte",
-            "titel": "Die Sprachnachricht",
+            "titel": "Im Klassenchat",
             "bild": "figur:jana:traurig",
-            "text": "Nora hat im Klassenchat eine Sprachnachricht geschickt, ihre Stimme zittert ein bisschen. Mathis macht daraus einen Clip mit Quietschgeräuschen und postet ihn. Rafael leitet ihn in eine andere Gruppe weiter. Zehn Leute reagieren mit Lach-Smileys, die meisten anderen lesen nur mit. Inês schreibt Nora privat: „Das war echt fies. Ich bin auf deiner Seite.“ Seitdem wird jede Nachricht von Nora mit dem Clip beantwortet."
+            "text": "Seit Wochen macht Mathis im Klassenchat Clips aus Noras Sprachnachrichten. Zehn lachen jedes Mal, die meisten lesen nur mit. Nur Inês schreibt Nora: Ich bin auf deiner Seite."
           },
           {
             "art": "aufgabe",
-            "text": "Wer spielt welche Rolle? Verbinde.",
+            "text": "Verbinde: Wer hat welche Rolle?",
             "symbole": [
               "verbinden"
             ]
           },
           {
             "art": "zuordnen",
-            "titel": [
-              "In der Geschichte",
-              "Rolle im Mobbing"
-            ],
             "links": [
               "Mathis",
-              "Rafael",
-              "die zehn mit Lach-Smileys",
+              "die zehn, die lachen",
               "die, die nur mitlesen",
-              "Inês",
-              "Nora"
+              "Inês"
             ],
             "rechts": [
-              "Verstärker",
-              "Betroffene",
+              "Außenstehende",
               "Täter",
               "Verteidigerin",
-              "Helfer",
-              "Außenstehende"
+              "Verstärker"
             ]
           },
           {
             "art": "aufgabe",
-            "text": "Wer hätte die meiste Macht, das zu stoppen – und warum?"
+            "text": "Schreib das Ergebnis der Abstimmung auf."
           },
           {
             "art": "spalten",
             "verhaeltnis": "1:1",
             "links": [
               {
-                "art": "linien",
-                "anzahl": 3
+                "art": "tabelle",
+                "spalten": [
+                  "Unsere Abstimmung",
+                  "Ja – von 20"
+                ],
+                "breiten": [
+                  3,
+                  1
+                ],
+                "zeilen": 0,
+                "werte": [
+                  [
+                    "Nicht okay: immer wieder auslachen.",
+                    ""
+                  ],
+                  [
+                    "Trifft es mich, soll jemand eingreifen.",
+                    ""
+                  ]
+                ]
               }
             ],
             "rechts": [
               {
                 "art": "info",
                 "symbol": "wissen",
-                "titel": "Aus der Forschung",
-                "text": "Die meisten Jugendlichen finden Mobbing nicht okay. Sie glauben nur, die anderen fänden es okay."
+                "titel": "Gut zu wissen",
+                "text": "Mobbing braucht Publikum. Wer nicht mitlacht, nimmt ihm die Bühne."
               }
             ]
           },
           {
-            "art": "seitenumbruch"
-          },
-          {
-            "art": "text",
-            "text": "Zivilcourage heißt nicht, den Helden zu spielen. Schon wer nicht mitlacht, hört auf, Publikum zu sein. Jede Stufe zählt."
-          },
-          {
             "art": "aufgabe",
-            "text": "Lies die Leiter von unten nach oben. Kreise die Stufe ein, die du dir schon zutraust. Mach einen Stern an die Stufe, die du üben willst.",
+            "text": "Kreise die Stufe ein, die du dir zutraust.",
             "symbole": [
               "einkreisen"
             ]
           },
           {
             "art": "leiter",
-            "stufen": 6,
-            "unten": "geht fast immer",
-            "oben": "braucht Mut – nur, wenn es für dich sicher ist",
+            "stufen": 4,
             "beispiele": [
-              "Nicht mitlachen, nichts weiterleiten.",
-              "Der betroffenen Person zeigen: Ich bin auf deiner Seite – auch später oder per Nachricht.",
-              "Andere dazuholen. Zu zweit oder zu dritt ist es leichter.",
-              "Einer erwachsenen Person Bescheid sagen. Das ist Hilfe holen, kein Petzen.",
-              "Online: Beweise sichern, melden, nicht liken und nicht teilen.",
-              "Direkt „Stopp“ sagen."
-            ]
-          },
-          {
-            "art": "spalten",
-            "verhaeltnis": "1:1",
-            "links": [
-              {
-                "art": "info",
-                "symbol": "merke",
-                "titel": "Petzen oder Hilfe holen?",
-                "text": "Petzen will jemandem schaden. Hilfe holen will jemanden schützen – und das ist immer in Ordnung."
-              }
-            ],
-            "rechts": [
-              {
-                "art": "info",
-                "symbol": "tipp",
-                "titel": "So holst du Hilfe",
-                "punkte": [
-                  "Was passiert – wo und seit wann?",
-                  "Namen nur der erwachsenen Person sagen.",
-                  "„Ich will, dass es aufhört.“"
-                ]
-              }
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "tipp",
-            "titel": "Online helfen",
-            "punkte": [
-              "Nicht liken, nicht teilen, nicht mitkommentieren.",
-              "Screenshot mit Name, Datum und Uhrzeit sichern und den Beitrag in der App melden.",
-              "Nacktbilder nie speichern oder weiterleiten – auch nicht als Beweis. Sofort einer erwachsenen Person Bescheid sagen."
+              "Nicht mitlachen, nichts liken, nichts weiterleiten.",
+              "Der Person zeigen: Ich bin auf deiner Seite.",
+              "Einer erwachsenen Person Bescheid sagen – kein Petzen.",
+              "„Stopp“ sagen – nur, wenn es für dich sicher ist."
             ]
           },
           {
             "art": "notfall",
-            "text": "Wirst du selbst gemobbt? Du bist nicht schuld. Hier gibt es Hilfe – auch anonym."
+            "text": "Wirst du gemobbt? Du bist nicht schuld. Hilfe: 116 111 · 8002 1234",
+            "eintraege": []
           }
         ],
         "lehrer": {
-          "ziel": "Die Jugendlichen unterscheiden Spaß, Konflikt und Mobbing, ordnen die Rollen im Mobbing zu, erkennen die Macht der Zuschauenden und wählen eine sichere Stufe der Zivilcourage.",
+          "ziel": "Die Jugendlichen erkennen die Rollen im Mobbing und die Macht der Zuschauenden, halten die echte Mehrheit ihrer Klasse fest und wählen eine sichere Stufe der Zivilcourage.",
           "ablauf": [
-            "Einheit 24, Schritt 3: nach den Ecken den Kasten mit den vier Merkmalen gemeinsam lesen.",
-            "Schritt 4: Geschichte vorlesen, Aufgabe 1 zu zweit, Aufgabe 2 allein; nach der anonymen Abstimmung den Kasten „Aus der Forschung“ vorlesen.",
-            "Schritt 6: nach der Leiter am Boden Aufgabe 3 allein (2 Min.).",
-            "Schritt 7: Hilfe-Kasten besprechen, im Notfallkasten eine Vertrauensperson eintragen; auf die Zeile „Du bist nicht schuld“ hinweisen."
+            "Einheit 24, Schritt 3: Geschichte vorlesen, Rollen am Stuhlkreis, Aufgabe 1 zu zweit; nach der anonymen Abstimmung Aufgabe 2 und den Kasten „Gut zu wissen“ lesen.",
+            "Schritt 5: die Leiter gemeinsam lesen, dann Hilfe holen üben; am Ende Aufgabe 3 allein und eine Vertrauensperson in den Hilfe-Kasten eintragen.",
+            "Auf die Zeile „Du bist nicht schuld“ hinweisen; die vollständigen Hilfe-Nummern stehen im Heft auf der Seite „So funktioniert das Fach“."
           ],
           "hintergrund": "Nach Olweus (1993) liegt Mobbing vor, wenn eine Person wiederholt und absichtlich verletzt wird und sich wegen ungleicher Kräfte kaum wehren kann. Mobbing ist ein Gruppenprozess mit den Rollen Täter, Helfer, Verstärker, Außenstehende, Verteidiger und Betroffene (Salmivalli et al., 1996). Wer lacht, liked oder weiterleitet, verstärkt; deshalb setzt die Leiter bei den Zuschauenden an. Jugendliche überschätzen, wie sehr andere Mobbing billigen; wird die echte Mehrheit der Klasse sichtbar, sinkt es (Perkins, Craig & Perkins, 2011).",
           "quellen": [
@@ -774,160 +502,110 @@
             "Perkins, H. W., Craig, D. W. & Perkins, J. M. (2011). Using social norms to reduce bullying: A research intervention among adolescents in five middle schools. Group Processes & Intergroup Relations, 14(5), 703–722."
           ],
           "achtung": "Mobbing kann in der Klasse selbst vorkommen: niemanden nach Erfahrungen fragen, keine Namen sammeln. Bei Hinweisen nicht in der Stunde klären, sondern mit Régent und SePAS nach dem Vorgehen der Schule.",
-          "material": "Eckschilder, sechs Stühle, Rollen- und Situationskarten, sechs A4-Blätter für die Leiter"
+          "material": "Fünf Stühle, Rollen- und Situationskarten (Vorlage), Plakat Anlaufstellen"
         }
       },
       "fr": {
-        "titel": "Repérer le harcèlement, oser agir",
-        "untertitel": "Toute dispute n’est pas du harcèlement – et toute blague n’est pas innocente.",
+        "titel": "Harcèlement et courage civique",
+        "untertitel": "Qui ne rit pas n’est plus le public.",
         "bausteine": [
           {
-            "art": "text",
-            "text": "Une blague n’est une blague que si tout le monde peut en rire – y compris la personne visée. Une dispute est finie quand elle est réglée. Le harcèlement, c’est autre chose :"
-          },
-          {
-            "art": "info",
-            "symbol": "merke",
-            "titel": "Quatre critères du harcèlement",
-            "punkte": [
-              "Ça se répète, et pendant longtemps.",
-              "Un côté est plus fort – plus nombreux, plus âgé, plus populaire.",
-              "C’est fait exprès.",
-              "La personne visée ne peut pas se défendre seule."
-            ]
-          },
-          {
             "art": "geschichte",
-            "titel": "Le message vocal",
+            "titel": "Dans le groupe de la classe",
             "bild": "figur:jana:traurig",
-            "text": "Nora a envoyé un message vocal dans le groupe de la classe ; sa voix tremble un peu. Mathis en fait un montage avec des couinements et le publie. Rafael le transfère dans un autre groupe. Dix personnes réagissent avec des émojis morts de rire, la plupart des autres lisent sans rien dire. Inês écrit à Nora en privé : « C’était vraiment méchant. Je suis de ton côté. » Depuis, chaque message de Nora reçoit le montage en réponse."
+            "text": "Depuis des semaines, Mathis fait des montages avec les vocaux de Nora. Dix rient à chaque fois, la plupart lisent sans rien dire. Seule Inês écrit à Nora : je suis de ton côté."
           },
           {
             "art": "aufgabe",
-            "text": "Qui joue quel rôle ? Relie.",
+            "text": "Relie : qui a quel rôle ?",
             "symbole": [
               "verbinden"
             ]
           },
           {
             "art": "zuordnen",
-            "titel": [
-              "Dans l’histoire",
-              "Rôle dans le harcèlement"
-            ],
             "links": [
               "Mathis",
-              "Rafael",
-              "les dix avec les émojis",
+              "les dix qui rient",
               "ceux qui lisent sans rien dire",
-              "Inês",
-              "Nora"
+              "Inês"
             ],
             "rechts": [
-              "Supporters",
-              "Personne visée",
+              "Témoins passifs",
               "Meneur",
               "Défenseuse",
-              "Suiveur",
-              "Témoins passifs"
+              "Supporters"
             ]
           },
           {
             "art": "aufgabe",
-            "text": "Qui aurait le plus de pouvoir pour arrêter ça – et pourquoi ?"
+            "text": "Note le résultat du vote."
           },
           {
             "art": "spalten",
             "verhaeltnis": "1:1",
             "links": [
               {
-                "art": "linien",
-                "anzahl": 3
+                "art": "tabelle",
+                "spalten": [
+                  "Notre vote",
+                  "Oui – sur 20"
+                ],
+                "breiten": [
+                  3,
+                  1
+                ],
+                "zeilen": 0,
+                "werte": [
+                  [
+                    "Pas OK : se moquer encore et encore.",
+                    ""
+                  ],
+                  [
+                    "Si ça m’arrive, que quelqu’un intervienne.",
+                    ""
+                  ]
+                ]
               }
             ],
             "rechts": [
               {
                 "art": "info",
                 "symbol": "wissen",
-                "titel": "Ce que dit la recherche",
-                "text": "La plupart des jeunes trouvent que le harcèlement n’est pas OK. Ils croient seulement que les autres le trouvent OK."
+                "titel": "Bon à savoir",
+                "text": "Le harcèlement a besoin d’un public. Qui ne rit pas lui enlève la scène."
               }
             ]
           },
           {
-            "art": "seitenumbruch"
-          },
-          {
-            "art": "text",
-            "text": "Le courage civique, ce n’est pas jouer les héros. Rien qu’en ne riant pas avec les autres, on cesse d’être le public. Chaque marche compte."
-          },
-          {
             "art": "aufgabe",
-            "text": "Lis l’échelle de bas en haut. Entoure la marche que tu te sens déjà capable de faire. Mets une étoile à celle que tu veux travailler.",
+            "text": "Entoure la marche que tu te sens capable de faire.",
             "symbole": [
               "einkreisen"
             ]
           },
           {
             "art": "leiter",
-            "stufen": 6,
-            "unten": "possible presque toujours",
-            "oben": "demande du courage – seulement si c’est sans danger pour toi",
+            "stufen": 4,
             "beispiele": [
-              "Ne pas rire avec les autres, ne rien transférer.",
-              "Montrer à la personne visée : je suis de ton côté – même plus tard ou par message.",
-              "Rallier d’autres personnes. À deux ou à trois, c’est plus facile.",
-              "Prévenir un adulte. C’est chercher de l’aide, pas cafter.",
-              "En ligne : garder des preuves, signaler, ne pas liker ni partager.",
-              "Dire « Stop » directement."
-            ]
-          },
-          {
-            "art": "spalten",
-            "verhaeltnis": "1:1",
-            "links": [
-              {
-                "art": "info",
-                "symbol": "merke",
-                "titel": "Cafter ou chercher de l’aide ?",
-                "text": "Cafter, c’est vouloir nuire à quelqu’un. Chercher de l’aide, c’est vouloir protéger quelqu’un – et c’est toujours permis."
-              }
-            ],
-            "rechts": [
-              {
-                "art": "info",
-                "symbol": "tipp",
-                "titel": "Pour chercher de l’aide",
-                "punkte": [
-                  "Qu’est-ce qui se passe – où et depuis quand ?",
-                  "Les prénoms, seulement à l’adulte.",
-                  "« Je veux que ça s’arrête. »"
-                ]
-              }
-            ]
-          },
-          {
-            "art": "info",
-            "symbol": "tipp",
-            "titel": "Aider en ligne",
-            "punkte": [
-              "Ne pas liker, ne pas partager, ne pas commenter.",
-              "Faire une capture d’écran avec le nom, la date et l’heure, et signaler la publication dans l’appli.",
-              "Ne jamais enregistrer ni transférer des photos dénudées – même comme preuve. Prévenir tout de suite un adulte."
+              "Ne pas rire, ne pas liker, ne rien transférer.",
+              "Montrer à la personne : je suis de ton côté.",
+              "Prévenir un adulte – ce n’est pas cafter.",
+              "Dire « Stop » – seulement si c’est sans danger pour toi."
             ]
           },
           {
             "art": "notfall",
-            "text": "Tu es harcelé·e ? Ce n’est pas ta faute. Voici de l’aide, même anonyme."
+            "text": "Tu es harcelé·e ? Ce n’est pas ta faute. Aide : 116 111 · 8002 1234",
+            "eintraege": []
           }
         ],
         "lehrer": {
-          "ziel": "Les jeunes distinguent blague, conflit et harcèlement, attribuent les rôles dans le harcèlement, reconnaissent le pouvoir des témoins et choisissent une marche du courage civique sans danger.",
+          "ziel": "Les jeunes reconnaissent les rôles dans le harcèlement et le pouvoir des témoins, notent la vraie majorité de leur classe et choisissent une marche du courage civique sans danger.",
           "ablauf": [
-            "Séance 24, étape 3 : après les coins, lire ensemble l’encadré des quatre critères.",
-            "Étape 4 : lire l’histoire, exercice 1 à deux, exercice 2 seul ; après le vote anonyme, lire l’encadré « Ce que dit la recherche ».",
-            "Étape 6 : après l’échelle au sol, exercice 3 seul (2 min).",
-            "Étape 7 : parler de l’encadré d’aide, noter une personne de confiance dans l’encadré d’urgence ; montrer la phrase « Ce n’est pas ta faute »."
+            "Séance 24, étape 3 : lire l’histoire, les rôles avec les chaises, exercice 1 à deux ; après le vote anonyme, exercice 2 et lecture de l’encadré « Bon à savoir ».",
+            "Étape 5 : lire l’échelle ensemble, puis s’entraîner à chercher de l’aide ; à la fin, exercice 3 seul et noter une personne de confiance dans l’encadré d’aide.",
+            "Montrer la phrase « Ce n’est pas ta faute » ; tous les numéros d’aide figurent dans le cahier, page « Comment fonctionne la matière »."
           ],
           "hintergrund": "Selon Olweus (1993), il y a harcèlement quand une personne est blessée de façon répétée et intentionnelle et ne peut guère se défendre à cause d’un déséquilibre des forces. Le harcèlement est un processus de groupe avec les rôles de meneur, suiveur, supporter, témoin passif, défenseur et personne visée (Salmivalli et al., 1996). Qui rit, like ou transfère renforce ; c’est pourquoi l’échelle s’adresse aux témoins. Les jeunes surestiment à quel point les autres approuvent le harcèlement ; quand la vraie majorité de la classe devient visible, il diminue (Perkins, Craig & Perkins, 2011).",
           "quellen": [
@@ -936,7 +614,7 @@
             "Perkins, H. W., Craig, D. W. & Perkins, J. M. (2011). Using social norms to reduce bullying: A research intervention among adolescents in five middle schools. Group Processes & Intergroup Relations, 14(5), 703–722."
           ],
           "achtung": "Le harcèlement peut exister dans la classe : n’interroger personne sur son vécu, ne pas recueillir de noms. En cas de signes, ne pas régler cela en cours, mais avec le régent et le SePAS selon la procédure de l’école.",
-          "material": "Panneaux des coins, six chaises, cartes rôles et situations, six feuilles A4 pour l’échelle"
+          "material": "Cinq chaises, cartes rôles et situations (modèle), affiche des contacts"
         }
       }
     },
@@ -967,15 +645,15 @@
       ],
       "de": {
         "titel": "Rollen- und Situationskarten",
-        "untertitel": "Kopiervorlage zum Ausschneiden – für den Stuhlkreis, die Leiter und das Hilfe-holen-Gespräch",
+        "untertitel": "Kopiervorlage zum Ausschneiden – für den Stuhlkreis und das Hilfe-holen-Gespräch",
         "bausteine": [
           {
             "art": "info",
             "symbol": "merke",
             "titel": "So werden die Karten gebraucht",
             "punkte": [
-              "Rollenkarten (Schritt 4): je eine auf einen Stuhl im Halbkreis legen. Der Stuhl der betroffenen Person steht abseits. Niemand setzt sich.",
-              "Situationskarten (Schritt 6 und 7): Die Lehrkraft liest drei für die Leiter vor; danach übt jedes Paar mit einer Karte, Hilfe zu holen – dafür die Seite zweimal kopieren."
+              "Rollenkarten (Schritt 3): je eine auf einen Stuhl im Halbkreis legen. Der Stuhl der betroffenen Person steht abseits. Niemand setzt sich.",
+              "Situationskarten (Schritt 5): Jedes Paar übt mit einer Karte, Hilfe zu holen – dafür die Seite zweimal kopieren."
             ]
           },
           {
@@ -1042,11 +720,11 @@
           }
         ],
         "lehrer": {
-          "ziel": "Rollenkarten für den Stuhlkreis und erfundene Mobbing-Situationen für die Zivilcourage-Leiter und das Üben, Hilfe zu holen.",
+          "ziel": "Rollenkarten für den Stuhlkreis und erfundene Mobbing-Situationen für das Üben, Hilfe zu holen.",
           "ablauf": [
             "Zweimal auf festes Papier kopieren, damit jedes Paar eine Situationskarte hat; die Rollenkarten auf A4 vergrößern. Karten weglassen, die auf jemanden in der Klasse passen könnten.",
-            "Einheit 24, Schritt 4: Rollenkarten auf sechs Stühle legen, der Stuhl der betroffenen Person bleibt leer und abseits.",
-            "Schritt 6: drei Situationskarten vorlesen; Schritt 7: je Paar eine Karte für das Hilfe-holen-Gespräch."
+            "Einheit 24, Schritt 3: Rollenkarten auf fünf Stühle legen (die Karte „Helfer“ bleibt übrig), der Stuhl der betroffenen Person bleibt leer und abseits.",
+            "Schritt 5: je Paar eine Situationskarte für das Hilfe-holen-Gespräch."
           ],
           "hintergrund": "Mobbing ist ein Gruppenprozess; die meisten Jugendlichen einer Klasse nehmen eine Rolle ein, auch ohne es zu merken (Salmivalli et al., 1996). Geübt wird nur das Handeln der Zuschauenden – die betroffene Person wird nie gespielt, ihr Stuhl bleibt leer.",
           "quellen": [
@@ -1057,15 +735,15 @@
       },
       "fr": {
         "titel": "Cartes rôles et situations",
-        "untertitel": "Modèle à photocopier et à découper – pour les chaises, l’échelle et l’entraînement à chercher de l’aide",
+        "untertitel": "Modèle à photocopier et à découper – pour les chaises et l’entraînement à chercher de l’aide",
         "bausteine": [
           {
             "art": "info",
             "symbol": "merke",
             "titel": "Comment utiliser les cartes",
             "punkte": [
-              "Cartes rôles (étape 4) : en poser une sur chaque chaise du demi-cercle. La chaise de la personne visée est à l’écart. Personne ne s’assoit.",
-              "Cartes situations (étapes 6 et 7) : l’enseignant·e en lit trois pour l’échelle ; ensuite, chaque binôme s’entraîne avec une carte à chercher de l’aide – photocopier la page deux fois."
+              "Cartes rôles (étape 3) : en poser une sur chaque chaise du demi-cercle. La chaise de la personne visée est à l’écart. Personne ne s’assoit.",
+              "Cartes situations (étape 5) : chaque binôme s’entraîne avec une carte à chercher de l’aide – photocopier la page deux fois."
             ]
           },
           {
@@ -1132,11 +810,11 @@
           }
         ],
         "lehrer": {
-          "ziel": "Des cartes rôles pour les chaises et des situations de harcèlement inventées pour l’échelle du courage civique et l’entraînement à chercher de l’aide.",
+          "ziel": "Des cartes rôles pour les chaises et des situations de harcèlement inventées pour l’entraînement à chercher de l’aide.",
           "ablauf": [
             "Photocopier deux fois sur papier épais pour que chaque binôme ait une carte situation ; agrandir les cartes rôles en A4. Écarter les cartes qui pourraient viser quelqu’un de la classe.",
-            "Séance 24, étape 4 : poser les cartes rôles sur six chaises ; la chaise de la personne visée reste vide et à l’écart.",
-            "Étape 6 : lire trois cartes situations ; étape 7 : une carte par binôme pour l’entraînement."
+            "Séance 24, étape 3 : poser les cartes rôles sur cinq chaises (la carte « Suiveur » reste de côté) ; la chaise de la personne visée reste vide et à l’écart.",
+            "Étape 5 : une carte situation par binôme pour l’entraînement."
           ],
           "hintergrund": "Le harcèlement est un processus de groupe ; la plupart des jeunes d’une classe y tiennent un rôle, souvent sans s’en rendre compte (Salmivalli et al., 1996). On ne travaille que l’action des témoins – la personne visée n’est jamais jouée, sa chaise reste vide.",
           "quellen": [

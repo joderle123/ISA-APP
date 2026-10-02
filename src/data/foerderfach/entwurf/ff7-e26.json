@@ -616,12 +616,6 @@
           },
           {
             "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Profis bleiben nicht im Beitrag: Sie schauen woanders nach, wer dahintersteckt – und liegen damit öfter richtig als Leute, die nur das Bild genau anschauen. Wer die Tricks der Fälscher kennt, fällt messbar seltener darauf herein."
-          },
-          {
-            "art": "info",
             "symbol": "merke",
             "titel": "Dein Skill: die Teilen-Bremse",
             "punkte": [
@@ -751,12 +745,6 @@
               "Ce que je fais de cette publication : …"
             ],
             "linien": 1
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Les pros ne restent pas dans la publication : ils vont voir ailleurs qui se cache derrière – et ils ont plus souvent raison que ceux qui examinent seulement l’image. Qui connaît les ficelles des faussaires s’y laisse nettement moins prendre."
           },
           {
             "art": "info",

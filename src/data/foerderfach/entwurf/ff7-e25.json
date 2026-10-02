@@ -684,12 +684,6 @@
           },
           {
             "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Der endlose Feed, rote Punkte und Flammen: gebaut von Leuten, die an jeder Minute verdienen, die du hängen bleibst. Jugendliche, die das erfuhren, wählten am nächsten Tag von sich aus das Gesündere – aus Trotz. Was du mit den Tricks machst, entscheidest du."
-          },
-          {
-            "art": "info",
             "symbol": "merke",
             "titel": "Dein Skill: Drei Atemzüge vor dem Handy",
             "punkte": [
@@ -819,12 +813,6 @@
               "stressé·e",
               "moins bien qu’avant"
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Le fil sans fin, les pastilles rouges et les flammes : construits par des gens qui gagnent de l’argent à chaque minute où tu restes accroché·e. Des jeunes qui l’ont appris ont choisi dès le lendemain, d’eux-mêmes, l’option la plus saine – par esprit de contradiction. Ce que tu fais des astuces, c’est toi qui le décides."
           },
           {
             "art": "info",

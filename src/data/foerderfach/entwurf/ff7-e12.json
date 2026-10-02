@@ -597,12 +597,6 @@
           },
           {
             "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Man kann glücklich und traurig zugleich sein – das wurde bei Menschen nach einem Abschied gemessen."
-          },
-          {
-            "art": "info",
             "symbol": "hilfe",
             "titel": "Du entscheidest, was du teilst.",
             "text": "Aufgabe 2 und 3 gehören dir. Du erzählst nur davon, wenn du willst."
@@ -735,12 +729,6 @@
               "Inspire par le nez en comptant jusqu’à quatre – le ventre s’arrondit.",
               "Expire lentement par la bouche jusqu’à six. Cinq fois."
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "On peut être heureux et triste en même temps – on l’a mesuré chez des personnes après un au revoir."
           },
           {
             "art": "info",

@@ -584,12 +584,6 @@
             ]
           },
           {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Wer einen Gedanken wegdrücken will, denkt ihn danach öfter – der Eisbär-Effekt."
-          },
-          {
             "art": "aufgabe",
             "text": "Störsender-Experiment: Wie viele Tiere hast du in 30 Sekunden geschafft? Trag deine Zahlen ein.",
             "hinweis": "Warst du nicht Profi, trägst du die Zahlen deiner Gruppe ein."
@@ -754,12 +748,6 @@
               "C’était inhabituel.",
               "J’ai envie de réessayer."
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Qui veut chasser une pensée y pense ensuite plus souvent – l’effet ours blanc."
           },
           {
             "art": "aufgabe",

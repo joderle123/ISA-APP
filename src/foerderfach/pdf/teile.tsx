@@ -117,8 +117,9 @@ export function Kleinlabel({ children, farbe, style }: { children: string; farbe
 }
 
 export function Punktliste({ punkte, p, groesse = 9.4, sprache }: { punkte: string[]; p: Palette; groesse?: number; sprache: Sprache }) {
+  // Ohne umschließende View: Passt der erste Punkt nicht mehr auf die Seite, druckte react-pdf die Punkte sonst übereinander
   return (
-    <View>
+    <>
       {punkte.map((x, i) => (
         <View key={i} wrap={false} style={{ flexDirection: 'row', marginTop: i ? 2.5 : 0 }}>
           <View style={{ width: 4.5, height: 4.5, borderRadius: 2.25, backgroundColor: p.tief, marginTop: groesse * 0.55, marginRight: 7 }} />
@@ -127,7 +128,7 @@ export function Punktliste({ punkte, p, groesse = 9.4, sprache }: { punkte: stri
           </View>
         </View>
       ))}
-    </View>
+    </>
   )
 }
 

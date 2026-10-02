@@ -622,12 +622,6 @@
             "linien": 1
           },
           {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Ein einziger Mensch, der auch Nein sagt, lässt den Druck der Gruppe deutlich schrumpfen. Diese zweite Person kannst du sein."
-          },
-          {
             "art": "seitenumbruch"
           },
           {
@@ -805,12 +799,6 @@
             "art": "frage",
             "text": "Notre vote : combien d’entre nous trouvent OK que quelqu’un dise non alors que tous les autres disent oui ?",
             "linien": 1
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Une seule personne qui dit non elle aussi fait nettement baisser la pression du groupe. Cette deuxième personne, ça peut être toi."
           },
           {
             "art": "seitenumbruch"

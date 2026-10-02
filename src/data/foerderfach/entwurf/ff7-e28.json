@@ -546,12 +546,6 @@
             "frage": "Stimmt er heute noch? So sehr glaube ich ihn:"
           },
           {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Über ein Problem so nachzudenken, als ginge es um eine Freundin, macht klüger und weniger aufgewühlt."
-          },
-          {
             "art": "seitenumbruch"
           },
           {
@@ -689,12 +683,6 @@
             "bis": "10 – complètement",
             "stufen": 11,
             "frage": "Est-elle encore vraie ? J’y crois à ce point :"
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Réfléchir à un problème comme s’il concernait une amie rend plus lucide et moins bouleversé·e."
           },
           {
             "art": "seitenumbruch"

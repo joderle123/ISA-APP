@@ -766,12 +766,6 @@
           },
           {
             "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Wer eine Nachricht schreibt, ist fast immer sicher, dass die Ironie ankommt. Die Leser erkannten sie viel seltener – sie hören deine Stimme nicht."
-          },
-          {
-            "art": "info",
             "symbol": "tipp",
             "titel": "So vermeidest du Missverständnisse",
             "punkte": [
@@ -949,12 +943,6 @@
                 ""
               ]
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Celui qui écrit un message est presque toujours sûr que son ironie passe. Les lecteurs la reconnaissaient bien moins souvent – ils n’entendent pas ta voix."
           },
           {
             "art": "info",

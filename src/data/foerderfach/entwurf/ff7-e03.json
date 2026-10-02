@@ -614,12 +614,6 @@
             "symbole": [
               "einkreisen"
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Klassen, in denen sich alle sicher fühlen, lernen besser – das zeigen Studien mit über 500.000 Schülerinnen und Schülern."
           }
         ],
         "lehrer": {
@@ -750,12 +744,6 @@
             "symbole": [
               "einkreisen"
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Les classes où tout le monde se sent en sécurité apprennent mieux – des études portant sur plus de 500 000 élèves le montrent."
           }
         ],
         "lehrer": {

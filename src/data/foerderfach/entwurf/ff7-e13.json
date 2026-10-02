@@ -625,12 +625,6 @@
           },
           {
             "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Bei starken Gefühlen wirkt Ablenken besser als Nachdenken – bei Rot hilft der Körper."
-          },
-          {
-            "art": "info",
             "symbol": "tipp",
             "titel": "Skill für Rot: Stopp, zurück, ausatmen",
             "punkte": [
@@ -729,12 +723,6 @@
                 "text": "Ce qui marche encore chez moi à 90 – sans réfléchir :"
               }
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Émotion très forte ? Se distraire marche mieux que réfléchir – dans le rouge, le corps aide."
           },
           {
             "art": "info",

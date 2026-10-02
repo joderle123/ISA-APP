@@ -802,12 +802,6 @@
               "70",
               "im Bus, vor dem Test"
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Langsam ausatmen bremst den Herzschlag – das ist die eingebaute Bremse des Körpers."
           }
         ],
         "lehrer": {
@@ -1073,12 +1067,6 @@
               "70",
               "dans le bus, avant un devoir en classe"
             ]
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Expirer lentement freine le cœur – c’est le frein intégré du corps."
           }
         ],
         "lehrer": {

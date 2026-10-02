@@ -773,12 +773,6 @@
             "symbol": "merke",
             "titel": "Gedanken sind Vermutungen, keine Tatsachen",
             "text": "Manche Vermutungen stimmen, manche nicht. Welcher Gedanke dir zuerst kommt, hängt oft von einem Glaubenssatz ab: einem Satz über dich, den du schon lange für wahr hältst. Manche Glaubenssätze helfen, manche bremsen."
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Ein Gedanke ist kein Beweis: Wer ein hartes Wort über sich 30 Sekunden lang schnell wiederholt, glaubt ihm danach weniger."
           }
         ],
         "lehrer": {
@@ -998,12 +992,6 @@
             "symbol": "merke",
             "titel": "Les pensées sont des suppositions, pas des faits",
             "text": "Certaines suppositions sont justes, d’autres non. La pensée qui te vient en premier dépend souvent d’une croyance : une phrase sur toi que tu tiens pour vraie depuis longtemps. Certaines croyances aident, d’autres freinent."
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Une pensée n’est pas une preuve : qui répète vite, pendant 30 secondes, un mot dur sur lui-même y croit moins ensuite."
           }
         ],
         "lehrer": {

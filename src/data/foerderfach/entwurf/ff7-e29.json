@@ -752,12 +752,6 @@
             "beispiel": "„Ich bin dumm“ wird zu „Mathe fällt mir schwer, aber wenn ich übe und nachfrage, werde ich besser.“"
           },
           {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Jugendliche, die lernten, dass das Gehirn durch Üben wächst, verbesserten ihre Noten – am meisten die, die schlecht standen."
-          },
-          {
             "art": "aufgabe",
             "text": "Wenn du magst: Was würdest du tun, wenn du den neuen Satz glaubst? Plane eine Situation.",
             "symbole": [
@@ -900,12 +894,6 @@
             "label": "Ma nouvelle phrase",
             "hoehe": 3,
             "beispiel": "« Je suis nul » devient « Les maths, c’est difficile pour moi, mais si je m’entraîne et que je pose des questions, je progresse. »"
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Des jeunes qui ont appris que le cerveau grandit en s’entraînant ont amélioré leurs notes – surtout ceux qui étaient en difficulté."
           },
           {
             "art": "aufgabe",

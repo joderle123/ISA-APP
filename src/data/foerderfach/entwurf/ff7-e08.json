@@ -657,12 +657,6 @@
             "linien": 1
           },
           {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Wer eine eigene Stärke eine Woche lang auf neue Art einsetzt, fühlt sich noch Monate später besser. Genau das probierst du mit deiner Wochen-Mission aus."
-          },
-          {
             "art": "aufgabe",
             "text": "Stunde 30: Welcher neue, hilfreiche Satz passt zu deinem Stamm? Schreib ihn an deinen Baum – und hier auf."
           },
@@ -833,12 +827,6 @@
               "Mon moment – je l’utilise quand…"
             ],
             "linien": 1
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Qui utilise une de ses forces d’une nouvelle façon pendant une semaine se sent encore mieux des mois plus tard. C’est exactement ce que tu essaies avec ta mission de la semaine."
           },
           {
             "art": "aufgabe",

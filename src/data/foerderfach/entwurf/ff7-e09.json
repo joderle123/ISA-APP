@@ -729,12 +729,6 @@
             "text": "Es gibt angenehme und unangenehme Gefühle – aber keine falschen. Was du dann tust, entscheidest du: Wut darf sein. Ob du zuschlägst oder klar „Stopp“ sagst, macht den Unterschied."
           },
           {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Aus der Forschung",
-            "text": "Schulklassen, die ein Jahr lang Gefühlswörter übten, hatten am Ende bessere Noten – und gingen besser mit sich und anderen um."
-          },
-          {
             "art": "aufgabe",
             "text": "Deine Wochen-Mission: Farbsuche in deinem Moment. Welches Gefühl war da – und was wollte es dir sagen? Eine Zeile reicht.",
             "hinweis": "Deinen Moment hast du in der Stunde gewählt – er steht bei den Wochen-Missionen. Keine Namen, nur Stichworte.",
@@ -910,12 +904,6 @@
             "symbol": "merke",
             "titel": "Pas de fausses émotions",
             "text": "Il y a des émotions agréables et désagréables – mais pas de fausses. Ce que tu en fais, c’est toi qui décides : la colère a le droit d’exister. Frapper ou dire clairement « stop », c’est là que se fait la différence."
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Ce que dit la recherche",
-            "text": "Des classes qui ont travaillé un an avec des mots d’émotions ont eu de meilleures notes à la fin – et se débrouillaient mieux avec elles-mêmes et avec les autres."
           },
           {
             "art": "aufgabe",
