@@ -285,12 +285,14 @@ function pruefeEinheit(e: Einheit, wo: string) {
         if (x.ablauf[i].phase !== st.phase) melde('F', sw, `Schritt ${i + 1}: Phase „${st.phase}“, in der Ablauf-Zeile „${x.ablauf[i].phase}“`)
       })
     if (x.ablauf?.[0]?.phase !== 'ankommen') melde('H', sw, 'erste Phase ist nicht der Check-in (ankommen)')
-    if (x.ablauf?.at(-1)?.phase !== 'abschluss') melde('H', sw, 'letzte Phase ist nicht der Abschluss')
+    // Bauplan „einfach“: sechs feste Schritte; der Abschluss steckt im letzten Schritt (Skill und Abschluss)
+    if (!['abschluss', 'skill'].includes(x.ablauf?.at(-1)?.phase ?? '')) melde('H', sw, 'letzte Phase ist weder Skill noch Abschluss')
+    if (x.schritte?.length !== 6) melde('H', sw, `${x.schritte?.length} Schritte (Bauplan „einfach“: 6)`)
     if (!x.ablauf?.some((z) => z.phase === 'skill')) melde('H', sw, 'kein Skill (Phase skill)')
     ;(x.schritte ?? []).forEach((st, i) => {
       const stw = `${sw} Schritt ${i + 1}`
       if (st.blatt && !eigene.includes(st.blatt)) melde('F', stw, `Blatt „${st.blatt}“ fehlt in „blaetter“ oder „vorlagen“`)
-      if (st.text.length < 120) melde('H', stw, 'Anleitung sehr knapp')
+      if (st.text.length < 60) melde('H', stw, 'Anleitung sehr knapp')
       for (const y of st.sagen ?? []) if (/^[„“"«]|[“"»]$/.test(y.trim())) melde('H', stw, '„sagen“ ohne Anführungszeichen schreiben')
       if (!PHASEN_LISTE.includes(st.phase)) melde('F', stw, `Phase „${st.phase}“ gibt es nicht`)
       for (const y of [st.titel, st.text, ...(st.sagen ?? []), ...(st.punkte ?? []), st.tipp, st.wennEsKippt, ...(st.tabelle?.spalten ?? []), ...(st.tabelle?.zeilen.flat() ?? [])]) stil(stw, y, s)
@@ -300,14 +302,15 @@ function pruefeEinheit(e: Einheit, wo: string) {
       else if (x.hintergrund && (!x.hintergrund.includes(erstautor(q)) || !x.hintergrund.includes(jahr(q)))) melde('H', sw, `Quelle im Hintergrund nicht zitiert (${erstautor(q)}, ${jahr(q)})`)
     }
     if (!x.hintergrund) melde('F', sw, 'Hintergrund fehlt')
-    else if (x.hintergrund.length < 400 || x.hintergrund.length > 1000) melde('H', sw, `Hintergrund ${x.hintergrund.length} Zeichen (450–950)`)
+    else if (x.hintergrund.length < 250 || x.hintergrund.length > 700) melde('H', sw, `Hintergrund ${x.hintergrund.length} Zeichen (300–600)`)
     if (!x.quellen?.length) melde('F', sw, 'keine Quelle')
     if (!x.achtung) melde('F', sw, '„achtung“ fehlt')
     if (!x.bruecke) melde('F', sw, '„bruecke“ (Ausblick) fehlt')
     // Wochen-Mission: an die Jugendlichen, kurz; angesagt im Abschluss, nachgefragt in der Brücke der nächsten Stunde
     if (!x.mission?.trim()) melde('F', sw, 'Wochen-Mission („mission“) fehlt')
     else {
-      if (x.mission.length < 50 || x.mission.length > 200) melde('H', sw, `Wochen-Mission ${x.mission.length} Zeichen (60–180)`)
+      // nur die Handlung – den Moment schreiben die Jugendlichen in die Spalte „Mein Moment: Wenn …“
+      if (x.mission.length < 20 || x.mission.length > 90) melde('H', sw, `Wochen-Mission ${x.mission.length} Zeichen (höchstens 80)`)
       // an eine Person: „du“ oder Imperativ, nicht „ihr“ / « vous »
       const mehrzahl = s === 'de' ? /\b(ihr|euch|eure?[mnrs]?)\b/i : /(^|[^\p{L}])(vous|votre|vos)(?![\p{L}])/iu
       if (mehrzahl.test(x.mission)) melde('H', sw, 'Wochen-Mission an eine Person richten („du“ / « tu »), nicht an die Klasse')

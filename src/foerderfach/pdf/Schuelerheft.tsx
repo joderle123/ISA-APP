@@ -121,11 +121,6 @@ function InhaltHeft({
           <Text style={{ width: 22, textAlign: 'right', fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text }}>{seite('k')}</Text>
         </View>
       ) : null}
-      <View wrap={false} style={{ marginTop: karten ? 4 : 12, flexDirection: 'row', alignItems: 'flex-end' }}>
-        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: p.tief }}>{ty(text.heft.woerter, sprache)}</Text>
-        <View style={{ flex: 1, marginHorizontal: 6, marginBottom: 3, borderBottomWidth: 1, borderBottomColor: NEUTRAL.rahmen, borderStyle: 'dotted' }} />
-        <Text style={{ width: 22, textAlign: 'right', fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text }}>{seite('w')}</Text>
-      </View>
       <Fuss links={FACH.name} titel={text.heft.inhalt} sprache={sprache} />
     </Page>
   )
@@ -410,7 +405,7 @@ export function SchuelerheftDokument({
       ))}
       {inhalt.filter((x) => x.gruppe !== 'vorn').map(seitenVon)}
       {karten.length ? <SkillKartenSeiten plan={plan} karten={karten} text={text} sprache={sprache} marken={marken} luecke={kartenLuecke} /> : null}
-      {einheiten.some((e) => e.woerter?.length) ? <WoerterSeiten plan={plan} einheiten={einheiten} text={text} sprache={sprache} marken={marken} /> : null}
+      {/* Die Wörterliste steht nur noch im Lehrerhandbuch (Glossar) – das Heft bleibt schlank */}
       {Array.from({ length: notizen }, (_, i) => (
         <NotizSeite key={i} plan={plan} text={text} sprache={sprache} />
       ))}
