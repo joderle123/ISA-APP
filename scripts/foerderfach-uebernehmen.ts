@@ -1,8 +1,9 @@
 // Übernimmt Entwürfe (src/data/foerderfach/entwurf/<id>.json) in die Daten des Förderfachs:
 // Einheiten nach einheiten-<klasse>.json, ihre Blätter nach blaetter-<klasse>.json – vorhandene mit
 // gleicher Id werden ersetzt, alles in der Reihenfolge des Jahresplans.
-//   npx tsx --tsconfig tsconfig.scripts.json scripts/foerderfach-uebernehmen.ts [--loeschen]
-// Vorher prüfen: npm run foerderfach:pruefen. Mit --loeschen werden die übernommenen Entwürfe entfernt.
+//   npx tsx --tsconfig tsconfig.scripts.json scripts/foerderfach-uebernehmen.ts [--nur=7e] [--loeschen]
+// Vorher prüfen: npm run foerderfach:pruefen. --nur=7e: nur die Entwürfe dieser Klassenstufe (ff7-…).
+// Mit --loeschen werden die übernommenen Entwürfe entfernt.
 import { existsSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -15,10 +16,15 @@ const ENTWURF = join(DATEN, 'entwurf')
 const KLASSEN: Klasse[] = ['7e', '6e', '5e']
 const KLASSE: Record<string, Klasse> = { ff7: '7e', ff6: '6e', ff5: '5e' }
 
-const lies = <T,>(datei: string): T => JSON.parse(readFileSync(datei, 'utf8')) as T
+const lies = <T>(datei: string): T => JSON.parse(readFileSync(datei, 'utf8')) as T
 const schreib = (datei: string, x: unknown) => writeFileSync(datei, JSON.stringify(x, null, 2) + '\n')
 
-const dateien = existsSync(ENTWURF) ? readdirSync(ENTWURF).filter((d) => d.endsWith('.json')).sort() : []
+const nur = process.argv.find((a) => a.startsWith('--nur='))?.slice(6) as Klasse | undefined
+const dateien = existsSync(ENTWURF)
+  ? readdirSync(ENTWURF)
+      .filter((d) => d.endsWith('.json') && (!nur || KLASSE[d.slice(0, 3)] === nur))
+      .sort()
+  : []
 if (!dateien.length) {
   console.log('Keine Entwürfe.')
   process.exit(0)
@@ -31,7 +37,7 @@ for (const d of dateien) {
   neueBlaetter.push(...(x.blaetter ?? []))
 }
 
-for (const klasse of KLASSEN) {
+for (const klasse of KLASSEN.filter((k) => !nur || k === nur)) {
   const plan = lies<Jahresplan>(join(DATEN, `plan-${klasse}.json`))
   const reihe = new Map(plan.einheiten.map((e, i) => [e.id, i]))
   // Einheiten

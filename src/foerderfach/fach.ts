@@ -121,6 +121,7 @@ export const TX = {
     heftKurz: (s: number) => `Heft S. ${s}`,
     mission: 'Wochen-Mission',
     wann: 'Wann?',
+    karteHeft: (s?: number) => (s ? `Skill-Karte · Heft S. ${s}` : 'Skill-Karte im Heft'),
     skill: 'Skill',
     /** Hinweis neben der Wochen-Mission im Handbuch */
     missionVerweis: (s?: number) => `${s ? `Heft S. ${s}` : 'im Schülerheft'} · in der nächsten Brücke kurz nachfragen`,
@@ -195,6 +196,7 @@ export const TX = {
     heftKurz: (s: number) => `Cahier p. ${s}`,
     mission: 'Mission de la semaine',
     wann: 'Quand ?',
+    karteHeft: (s?: number) => (s ? `Carte skill · cahier p. ${s}` : 'Carte skill dans le cahier'),
     skill: 'Skill',
     missionVerweis: (s?: number) => `${s ? `cahier p. ${s}` : 'dans le cahier'} · à reprendre au début de la séance suivante`,
     seiteKurz: (s: number) => `p. ${s}`,

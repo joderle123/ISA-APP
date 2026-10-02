@@ -220,6 +220,7 @@ function SkillKartenSeiten({ plan, karten, text, sprache, marken, luecke }: { pl
               const x = k[sprache]
               return (
                 <View key={k.id} style={{ ...kartenRahmen, ...kartenOrt(i, false), paddingHorizontal: 10, paddingTop: 9 }}>
+                  <Marke id={`k-${k.id}`} marken={marken} />
                   <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                     <Plakette name={k.bild} d={26} farbe={p.tief} grund={p.zart} />
                     <View style={{ flex: 1, marginLeft: 7 }}>

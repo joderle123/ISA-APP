@@ -20,7 +20,7 @@ import { SCHRIFT } from '../../blatt/pdf/stil'
 import { QUELLEN } from '../../blatt/quellen'
 import { URHEBER_NAME } from '../../lib/urheber'
 import { FACH, KOMPETENZEN, PHASEN, STUFE_FARBEN, TX, trimesterName, type FachTx } from '../fach'
-import type { ElternBrief, Einheit, HandbuchText, Jahresplan, Kapitel, Klasse, Kompetenz, PlanEinheit, Schritt, Sprache } from '../typen'
+import type { ElternBrief, Einheit, HandbuchText, Jahresplan, Kapitel, Klasse, Kompetenz, PlanEinheit, Schritt, SkillKarte, Sprache } from '../typen'
 import {
   Absatz,
   BREITE,
@@ -55,6 +55,8 @@ export interface HandbuchDaten {
   blaetter: Map<string, Blatt>
   /** Werkzeug-Blätter je Klassenstufe (Teil D) */
   werkzeuge: Record<Klasse, string[]>
+  /** Skill-Karten je Klassenstufe (im Schülerheft): Der Skill-Schritt der Einheit verweist auf ihre Seite */
+  karten?: Record<Klasse, SkillKarte[]>
 }
 
 /** Platzhalter für Seitenzahlen im ersten Durchlauf – so breit wie die echten, damit sich nichts verschiebt */
@@ -1064,7 +1066,7 @@ function Wortspeicher({ woerter, sprache, p, t }: { woerter: Einheit['woerter'];
 }
 
 /** `fliessend`: die Schritte beginnen direkt nach der Übersicht statt auf einer neuen Seite (wenn die Übersicht nicht auf eine Seite passt) */
-export function EinheitSeiten({ e, plan, sprache, blaetter, seiten, marken, heft, fliessend }: { e: Einheit; plan: Jahresplan; sprache: Sprache; blaetter: Map<string, Blatt>; seiten?: Marken; marken?: Marken; heft?: Marken; fliessend?: boolean }) {
+export function EinheitSeiten({ e, plan, sprache, blaetter, seiten, marken, heft, fliessend, karte }: { e: Einheit; plan: Jahresplan; sprache: Sprache; blaetter: Map<string, Blatt>; seiten?: Marken; marken?: Marken; heft?: Marken; fliessend?: boolean; karte?: SkillKarte }) {
   const t = TX[sprache]
   const x = e[sprache]
   const pe = plan.einheiten.find((u) => u.id === e.id)!
@@ -1193,7 +1195,7 @@ export function EinheitSeiten({ e, plan, sprache, blaetter, seiten, marken, heft
       </View>
       <Marke id={`s-${e.id}`} marken={marken} fliess />
       {x.schritte.map((s, i) => (
-        <SchrittBlock key={i} s={s} nr={i + 1} sprache={sprache} p={p} t={t} verweis={verweis(s.blatt)} />
+        <SchrittBlock key={i} s={s} nr={i + 1} sprache={sprache} p={p} t={t} verweis={verweis(s.blatt) ?? (karte && s.phase === 'skill' ? t.karteHeft(heft?.get(`k-${karte.id}`)) : undefined)} />
       ))}
 
       {x.bruecke ? (
@@ -1485,7 +1487,7 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
               ...imKapitel.map((e) => {
                 const nr = plan.einheiten.find((u) => u.id === e.id)!.nr
                 return [
-                  <EinheitSeiten key={e.id} e={e} plan={plan} sprache={sprache} blaetter={daten.blaetter} seiten={seiten} marken={marken} heft={heft} fliessend={fliessen?.has(e.id)} />,
+                  <EinheitSeiten key={e.id} e={e} plan={plan} sprache={sprache} blaetter={daten.blaetter} seiten={seiten} marken={marken} heft={heft} fliessend={fliessen?.has(e.id)} karte={daten.karten?.[klasse]?.find((k) => k.einheit === e.id)} />,
                   <VorlagenSeiten
                     key={`${e.id}-v`}
                     liste={(jeEinheit.get(e.id) ?? []).map((id) => ({

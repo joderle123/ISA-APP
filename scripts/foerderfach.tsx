@@ -74,7 +74,7 @@ function vergleiche(datei: string, a: Map<string, number>, b: Map<string, number
 const stand = (sprache: Sprache) => new Intl.DateTimeFormat(sprache === 'fr' ? 'fr-LU' : 'de-LU', { month: 'long', year: 'numeric' }).format(new Date())
 const auffuellen = (n: number) => (4 - (n % 4)) % 4
 
-const daten: HandbuchDaten = { plaene: PLAENE, einheiten, text: HANDBUCH, blaetter, werkzeuge: WERKZEUGE }
+const daten: HandbuchDaten = { plaene: PLAENE, einheiten, text: HANDBUCH, blaetter, werkzeuge: WERKZEUGE, karten: SKILLKARTEN }
 
 for (const klasse of KLASSEN.filter((k) => !nur || k === nur)) {
   const plan = planVon(klasse)
