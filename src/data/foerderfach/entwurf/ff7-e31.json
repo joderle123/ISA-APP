@@ -105,7 +105,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, Mission und Ausblick"
+            "titel": "Skills-Pass, Moment wählen und Mission"
           }
         ],
         "schritte": [
@@ -125,8 +125,9 @@
             "titel": "Rückblick und Start ins Kapitel „Gesund und stark“",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann per Daumen nach der Wochen-Mission fragen: Wer hat einen Beweis in seine Beweis-Challenge eingetragen (fiel Stunde 30 aus: wer hat sein Kärtchen gelesen) – hoch, Mitte, runter? Eine Stimme erzählt, wie es mit dem neuen Satz gelaufen ist; niemand muss die Mission geschafft haben. Das neue Kapitel an die Tafel schreiben: Gesund und stark – Wie sorge ich für mich? Zwei Stunden: heute Schlaf, Bewegung, Essen und Stress, nächste Woche ruhig durch die Testphase. Darunter in großer Schrift den Rahmen: Hier wird kein Körper, kein Teller und keine Schlafenszeit bewertet.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann zur Wochen-Mission – den neuen Satz in der geplanten Situation ausprobieren und einen Beweis in die Beweis-Challenge eintragen: Kam euer Moment, die Situation, die ihr geplant hattet – und was habt ihr gemacht? Daumen hoch, Mitte, runter; eine Stimme erzählt, wie es mit dem neuen Satz gelaufen ist. Niemand muss die Mission geschafft haben; auch ein Moment, der nicht kam, ist eine Auskunft. Das neue Kapitel an die Tafel schreiben: Gesund und stark – Wie sorge ich für mich? Zwei Stunden: heute Schlaf, Bewegung, Essen und Stress, nächste Woche ruhig durch die Testphase. Darunter in großer Schrift den Rahmen: Hier wird kein Körper, kein Teller und keine Schlafenszeit bewertet.",
             "sagen": [
+              "Letzte Woche: der neue Satz in eurer geplanten Situation. Kam euer Moment – und was habt ihr gemacht? Daumen, dann eine Stimme.",
               "Heute geht es um Schlaf, Bewegung, Essen und Stress – und darum, wie das zusammenhängt. Niemand muss erzählen, was er isst oder wann er schlafen geht.",
               "Gesund heißt hier nicht perfekt. Am Ende sucht sich jede und jeder einen kleinen Schritt aus, der in den eigenen Alltag passt."
             ],
@@ -242,47 +243,49 @@
             "titel": "Skill: Bodyscan",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: ein Skill für abends im Bett, wenn der Kopf nicht abschaltet – wie bei Noah um 21:30 Uhr. Er ist die lange Form des Körper-Checks aus Stunde 11: Jede Stelle wird gespürt und dann lockergelassen. Alle sitzen bequem, die Füße auf dem Boden, Augen zu oder Blick auf einen Punkt am Boden. Langsam anleiten, bei jedem Satz die Körperstelle mit der eigenen Hand zeigen und Pausen lassen (Liste, 4 Min.). Danach zwei, drei Rückmeldungen: Wann könnte das helfen? (2 Min.) Zum Schluss schlagen alle ihren Skills-Koffer auf (ohne Heft: Kopie der Seite): Der kleine Schritt kommt in die grüne Zone des Ampelplans, und wer den Bodyscan mochte, trägt ihn ins freie Fach des Koffers ein (4 Min.). Der Skill in drei Schritten: ankommen und ausatmen – von Kopf bis Fuß jede Stelle spüren und lockerlassen – zurückkommen.",
+            "text": "Ankündigen: ein Skill für abends im Bett, wenn der Kopf nicht abschaltet – wie bei Noah um 21:30 Uhr. Er ist die lange Form des Körper-Checks aus Stunde 11: Jede Stelle wird gespürt und dann lockergelassen. Alle sitzen bequem, die Füße auf dem Boden; Augen zu oder offen auf einen Punkt am Boden – beides ist gleich gut. Wer aussteigen will, drückt still die Füße in den Boden oder hält einen Knetball. Langsam anleiten, höchstens drei Minuten, bei jedem Satz die Körperstelle mit der eigenen Hand zeigen und kurze Pausen lassen (Liste, 3 Min.). Danach zwei, drei Rückmeldungen: Wann könnte das helfen? Dazu den Skill in drei Schritten an die Tafel: ankommen und ausatmen – von Kopf bis Fuß jede Stelle spüren und lockerlassen – zurückkommen (3 Min.). Zum Schluss schlagen alle ihren Skills-Koffer auf (ohne Heft: Kopie der Seite): Der kleine Schritt kommt in die grüne Zone des Ampelplans, und wer den Bodyscan mochte, trägt ihn ins freie Fach des Koffers ein (4 Min.).",
             "sagen": [
               "Niemand muss die Augen schließen. Ist eine Stelle unangenehm, geht einfach weiter – oder bleibt bei den Füßen.",
               "Der Skills-Koffer hilft, wenn es brennt. Die grüne Zone sorgt dafür, dass es seltener brennt – dort gehört euer kleiner Schritt hin."
             ],
             "punkte": [
-              "Setz dich bequem hin, die Füße auf dem Boden. Schließ die Augen, wenn es für dich passt. Atme einmal tief ein … und langsam aus.",
+              "Setz dich bequem hin, die Füße auf dem Boden. Augen zu oder offen auf einen Punkt – beides ist gut. Atme einmal tief ein … und langsam aus.",
               "Geh mit der Aufmerksamkeit zur Stirn, zu den Augen, zum Kiefer. Lass die Zähne locker auseinander. Spür Nacken und Schultern – vielleicht sinken sie ein Stück.",
               "Spür deine Arme bis in die Fingerspitzen und deinen Rücken an der Lehne. Alles, was du spürst, ist in Ordnung – auch wenn du gerade nichts spürst.",
               "Geh weiter zu den Beinen und Füßen: Oberschenkel auf dem Stuhl, Fersen, Sohlen, Zehen. Lass sie schwer werden.",
               "Spür noch einmal den ganzen Körper. Beweg Finger und Zehen, streck dich und öffne langsam die Augen."
             ],
-            "tipp": "Kichern beim ersten Mal ist normal. Wer nicht still sitzen kann, darf einen Knetball halten oder die Füße leicht bewegen. Den Bodyscan als Abendskill empfehlen: im Bett, Licht aus, dieselben Sätze leise im Kopf.",
+            "tipp": "Kichern beim ersten Mal ist normal. Wer nicht still sitzen kann, darf einen Knetball halten oder die Füße leicht bewegen. Die drei Minuten nicht verlängern, auch wenn es gut läuft, und die Übung nie als Mittel gegen Unruhe einsetzen: Kurz und freiwillig wirkt – lange Stille für alle bringt wenig und ist für manche eher unangenehm. Den Bodyscan als Abendskill empfehlen: im Bett, Licht aus, dieselben Sätze leise im Kopf.",
             "wennEsKippt": "Wird es unruhig, nicht schimpfen, sondern leiser weitersprechen und kürzen: nur Kopf, Schultern, Füße. Wer nicht mitmachen will, sitzt still und schaut aus dem Fenster – das ist erlaubt, Stören nicht. Ist jemandem das Spüren des eigenen Körpers unangenehm, darf er die Augen offen lassen, die Füße in den Boden drücken und still fünf blaue Dinge im Raum suchen; wirkt jemand sehr angespannt, nach der Stunde kurz nachfragen.",
             "blatt": "ff7-skills-koffer"
           },
           {
-            "titel": "Skills-Pass, Mission und Ausblick",
+            "titel": "Skills-Pass, Moment wählen und Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Was ist mein kleiner Schritt – und wann fange ich damit an? Alle schreiben einen Satz (2 Min.) und bekommen den Stempel. Blitzlicht mit dem Daumen: Wer weiß schon, wann es losgeht? Welchen Bereich jemand gewählt hat, bleibt privat. Dann die Wochen-Mission ansagen (steht im Heft): den kleinen Schritt an drei Tagen ausprobieren – oder einmal abends den Bodyscan. Zum Schluss der Ausblick auf die nächste Stunde.",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Was ist mein kleiner Schritt – und wann fange ich damit an? Alle schreiben einen Satz (2 Min.) und bekommen den Stempel. Moment wählen (1 Min.): Die Wochen-Mission im Heft vorlesen – wenn der Moment aus dem Wenn-dann-Satz kommt, dann der kleine Schritt; oder: wenn abends im Bett der Kopf nicht abschaltet, dann der Bodyscan. Auf drei zeigen alle, wann ihr Moment liegt: ein Finger für morgens, zwei für nach der Schule, drei für abends. Dann schreibt jede Person den Wenn-Teil ihres Satzes in die Spalte „Mein Moment: Wenn …“ neben die Mission; welcher Bereich es ist, bleibt privat. Daumen-Blitzlicht und Ausblick (2 Min.): Wer weiß schon, wann es losgeht? Zum Schluss der Ausblick auf die nächste Stunde – die Abhakliste wird nicht kontrolliert, die Brücke fragt nur nach dem Moment.",
             "sagen": [
+              "Eure Mission: Wenn euer Moment kommt, dann macht ihr euren kleinen Schritt – an drei Tagen. Oder: Wenn abends der Kopf nicht abschaltet, dann der Bodyscan. Schreibt euren Moment ins Heft.",
               "Daumen hoch, wer schon weiß, wann er anfängt – heute Abend, morgen früh? Welcher Schritt es ist, bleibt bei euch."
             ],
-            "tipp": "Die Abhakliste in der nächsten Stunde nicht kontrollieren. Ein Daumen reicht – und ein verpasster Tag ist kein Scheitern."
+            "tipp": "Die Abhakliste in der nächsten Stunde nicht kontrollieren. Ein Daumen reicht – und ein verpasster Tag ist kein Scheitern. Ein Moment, der jeden Tag sicher kommt (der Wecker, das Abendessen, das Licht aus), trägt den Schritt besser als „wenn ich Zeit habe“."
           }
         ],
         "bruecke": "Nächste Woche geht es um die Testphase: woher der Stress vor einem Test kommt, wie ihr das Lernen vom Testtag rückwärts plant – und welche Skills im Test niemand bemerkt.",
-        "mission": "Probiere deinen kleinen Schritt diese Woche an drei Tagen aus und hake ihn ab – oder mach einmal abends im Bett den Bodyscan. Was war danach anders?",
-        "hintergrund": "Schlaf, Bewegung und Essen sind kein Extrathema neben den Gefühlen: Wer übermüdet oder hungrig ist oder sich lange kaum bewegt hat, reagiert schneller gereizt und kommt schwerer wieder herunter. Im Skillstraining für Jugendliche gilt die Sorge für Schlaf, Essen und Bewegung deshalb als eigener Baustein, der die Anfälligkeit für starke Gefühle senkt (Rathus & Miller, 2015). Beim Schlaf kommt in diesem Alter etwas hinzu: In der Pubertät verschiebt sich die innere Uhr nach hinten, die Schule beginnt aber früh, und Bildschirme am Abend verstärken das (Carskadon, 2011). Früher schlafen ist darum selten nur eine Frage des Willens – die Stunde sucht kleine Stellschrauben statt Schuldige. Dass der Schritt klein ist und als Wenn-dann-Satz feststeht, hat einen Grund: Vorsätze, die festlegen, wann, wo und was man tut, werden deutlich häufiger umgesetzt als gute Absichten (Gollwitzer, 1999).",
+        "mission": "Wenn dein Moment kommt – um 22 Uhr, nach der Schule, in der Pause –, dann machst du deinen kleinen Schritt und hakst ihn ab. Oder: Schaltet abends der Kopf nicht ab, dann Bodyscan.",
+        "hintergrund": "Schlaf, Bewegung und Essen sind kein Extrathema: Wer übermüdet oder hungrig ist, reagiert schneller gereizt. Grundlage ist das Skillstraining für Jugendliche: Dort ist die Sorge für Schlaf, Essen und Bewegung ein eigener Baustein, der die Anfälligkeit für starke Gefühle senkt (Rathus & Miller, 2015). In der Pubertät verschiebt sich die innere Uhr nach hinten, und Bildschirme am Abend verstärken das (Carskadon, 2011); früher schlafen ist darum selten nur eine Frage des Willens – die Stunde sucht Stellschrauben statt Schuldige. Der Schritt ist klein, an einen selbst gewählten Moment gebunden und wird zwei Wochen abgehakt, weil Wenn-dann-Pläne deutlich häufiger umgesetzt werden als gute Absichten (Gollwitzer, 1999) und eine Gewohnheit durch Wiederholung im selben Zusammenhang entsteht – im Mittel dauert das gut zwei Monate, ein ausgelassener Tag schadet nicht (Lally et al., 2010).",
         "quellen": [
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
           "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
-          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W. & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology, 40(6), 998–1009."
         ],
         "achtung": "Gesundheit berührt schnell Privates. Keine Zahlen zu Gewicht oder Kalorien, keine Kommentare zu Körpern, keine guten oder schlechten Lebensmittel; Ziele wie „abnehmen“ behutsam umlenken. Nie nach dem Essen zu Hause fragen. Schläft jemand seit Wochen kaum oder wirkt sehr erschöpft: nach der Stunde ansprechen, mit dem SePAS weitersehen. Hinweise auf Hunger, Essstörungen, Selbstverletzung oder Vernachlässigung nicht vor der Klasse vertiefen: noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln.",
         "differenzierung": {
           "leichter": "Wer die Unterrichtssprache noch lernt, stellt sich bei der Aufstellung neben eine Person, die übersetzt, und darf den eigenen Plan in der eigenen Sprache schreiben; die Akkus auf dem Plakat verstehen alle ohne Worte. Die Kettenkarten liest eine Person vor, die gut liest; Uhrzeiten und Bilder helfen beim Ordnen, auf den Klebezetteln reichen Stichworte. Für den Plan einen Schritt von der Tafel übernehmen und den Satzanfang ergänzen: Wenn es … Uhr ist, dann …",
           "schwerer": "Eine Gegenkette für Noah legen: Wie sähe der Dienstag aus, wenn er am Montag um 22 Uhr das Handy weglegt? Oder im eigenen Plan zwei Hindernisse vorausdenken und für beide einen Wenn-dann-Satz schreiben."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gefühlsrad und Akku-Punkt (5 Min.), Position beziehen mit vier Fragen (10 Min.), Noahs Kette legen und an zwei Stellen unterbrechen (15 Min.), Mein kleiner Schritt mit den Aufgaben 2 und 3 (10 Min.), Bodyscan (5 Min.), Skills-Pass und Mission (5 Min.). Aufgabe 1 und der Eintrag in den Skills-Koffer werden in der nächsten Stunde nachgeholt."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gefühlsrad und Akku-Punkt (5 Min.), Position beziehen mit vier Fragen (10 Min.), Noahs Kette legen und an zwei Stellen unterbrechen (15 Min.), Mein kleiner Schritt mit den Aufgaben 2 und 3 (10 Min.), Bodyscan (5 Min.), Skills-Pass, Moment wählen und Mission (5 Min.). Aufgabe 1 und der Eintrag in den Skills-Koffer werden in der nächsten Stunde nachgeholt."
       },
       "fr": {
         "titel": "Ce qui me fait du bien",
@@ -352,7 +355,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, mission et suite"
+            "titel": "Skills-Pass, choisir son moment et mission"
           }
         ],
         "schritte": [
@@ -372,8 +375,9 @@
             "titel": "Retour et début du chapitre « Prendre soin de soi »",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Puis, pour la mission de la semaine, vote du pouce : qui a noté une preuve dans son défi des preuves (si la séance 30 a sauté : qui a lu sa petite carte) – en haut, au milieu, en bas ? Une voix raconte comment ça s’est passé avec la nouvelle phrase ; personne n’est obligé d’avoir réussi la mission. Écrire le nouveau chapitre au tableau : Prendre soin de soi – Comment prendre soin de moi ? Deux séances : aujourd’hui le sommeil, le mouvement, l’alimentation et le stress ; la semaine prochaine, comment rester calme pendant les devoirs en classe. En dessous, en grand, le cadre : ici, on ne juge ni les corps, ni les assiettes, ni les heures de coucher.",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Puis la mission de la semaine – essayer la nouvelle phrase dans la situation prévue et noter une preuve dans le défi des preuves : votre moment est-il venu, la situation que vous aviez prévue – et qu’avez-vous fait ? Pouce en haut, au milieu, en bas ; une voix raconte comment ça s’est passé avec la nouvelle phrase. Personne n’est obligé d’avoir réussi la mission ; un moment qui n’est pas venu est aussi une réponse. Écrire le nouveau chapitre au tableau : Prendre soin de soi – Comment prendre soin de moi ? Deux séances : aujourd’hui le sommeil, le mouvement, l’alimentation et le stress ; la semaine prochaine, comment rester calme pendant les devoirs en classe. En dessous, en grand, le cadre : ici, on ne juge ni les corps, ni les assiettes, ni les heures de coucher.",
             "sagen": [
+              "La semaine dernière : la nouvelle phrase dans la situation que vous aviez prévue. Votre moment est-il venu – et qu’avez-vous fait ? Pouce, puis une voix.",
               "Aujourd’hui, on parle de sommeil, de mouvement, d’alimentation et de stress – et de la façon dont tout ça est lié. Personne n’est obligé de dire ce qu’il mange ou à quelle heure il se couche.",
               "Ici, prendre soin de soi ne veut pas dire être parfait. À la fin, chacun choisit un petit pas qui va avec son quotidien."
             ],
@@ -489,47 +493,49 @@
             "titel": "Skill : le scan corporel",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : un skill pour le soir au lit, quand la tête ne veut pas s’arrêter – comme chez Noah à 21 h 30. C’est la forme longue du tour du corps de la séance 11 : chaque partie est sentie, puis relâchée. Chacun s’assoit confortablement, les pieds au sol, les yeux fermés ou le regard posé au sol. Guider lentement, montrer à chaque phrase la partie du corps avec sa propre main et laisser des pauses (liste, 4 min). Ensuite, deux ou trois retours : quand est-ce que ça pourrait aider ? (2 min) Pour finir, chacun ouvre sa valise à skills (sans cahier : une copie de la page) : le petit pas va dans la zone verte du plan feu tricolore, et qui a aimé le scan corporel l’inscrit dans le compartiment libre de la valise (4 min). Le skill en trois étapes : arriver et expirer – sentir chaque partie de la tête aux pieds et la relâcher – revenir.",
+            "text": "Annoncer : un skill pour le soir au lit, quand la tête ne veut pas s’arrêter – comme chez Noah à 21 h 30. C’est la forme longue du tour du corps de la séance 11 : chaque partie est sentie, puis relâchée. Chacun s’assoit confortablement, les pieds au sol ; yeux fermés ou ouverts sur un point au sol – les deux se valent. Qui veut arrêter appuie en silence ses pieds dans le sol ou tient une balle anti-stress. Guider lentement, trois minutes au maximum, montrer à chaque phrase la partie du corps avec sa propre main et laisser de courtes pauses (liste, 3 min). Ensuite, deux ou trois retours : quand est-ce que ça pourrait aider ? Noter le skill en trois étapes au tableau : arriver et expirer – sentir chaque partie de la tête aux pieds et la relâcher – revenir (3 min). Pour finir, chacun ouvre sa valise à skills (sans cahier : une copie de la page) : le petit pas va dans la zone verte du plan feu tricolore, et qui a aimé le scan corporel l’inscrit dans le compartiment libre de la valise (4 min).",
             "sagen": [
               "Personne n’est obligé de fermer les yeux. Si un endroit du corps est désagréable, passez simplement à la suite – ou restez sur vos pieds.",
               "La valise à skills aide quand ça brûle. La zone verte fait en sorte que ça brûle moins souvent – c’est là que votre petit pas a sa place."
             ],
             "punkte": [
-              "Assieds-toi confortablement, les pieds au sol. Ferme les yeux si ça te va. Inspire une fois profondément… et expire lentement.",
+              "Assieds-toi confortablement, les pieds au sol. Yeux fermés ou ouverts sur un point – les deux sont bien. Inspire une fois profondément… et expire lentement.",
               "Porte ton attention sur ton front, tes yeux, ta mâchoire. Laisse tes dents se desserrer. Sens ta nuque et tes épaules – elles descendent peut-être un peu.",
               "Sens tes bras jusqu’au bout des doigts, et ton dos contre le dossier. Tout ce que tu ressens est normal – même si tu ne ressens rien pour l’instant.",
               "Descends vers tes jambes et tes pieds : les cuisses sur la chaise, les talons, la plante des pieds, les orteils. Laisse-les devenir lourds.",
               "Sens encore une fois tout ton corps. Bouge les doigts et les orteils, étire-toi et ouvre lentement les yeux."
             ],
-            "tipp": "Les rires sont normaux la première fois. Qui n’arrive pas à rester immobile peut tenir une balle anti-stress ou bouger un peu les pieds. Recommander le scan corporel pour le soir : au lit, lumière éteinte, les mêmes phrases dans la tête.",
+            "tipp": "Les rires sont normaux la première fois. Qui n’arrive pas à rester immobile peut tenir une balle anti-stress ou bouger un peu les pieds. Ne pas prolonger les trois minutes, même si ça se passe bien, et ne jamais utiliser l’exercice contre l’agitation : court et volontaire, ça marche – un long silence imposé à tous apporte peu et met certains mal à l’aise. Recommander le scan corporel pour le soir : au lit, lumière éteinte, les mêmes phrases dans la tête.",
             "wennEsKippt": "Si la classe s’agite, ne pas gronder, mais parler plus doucement et raccourcir : seulement la tête, les épaules, les pieds. Qui ne veut pas participer reste assis en silence et regarde par la fenêtre – c’est permis, déranger ne l’est pas. Si un jeune se sent mal à l’aise en sentant son propre corps, il peut garder les yeux ouverts, appuyer ses pieds dans le sol et chercher en silence cinq choses bleues dans la salle ; si quelqu’un semble très tendu, lui en parler brièvement après le cours.",
             "blatt": "ff7-skills-koffer"
           },
           {
-            "titel": "Skills-Pass, mission et suite",
+            "titel": "Skills-Pass, choisir son moment et mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire au tableau la question du Skills-Pass : quel est mon petit pas – et quand est-ce que je commence ? Chacun écrit une phrase (2 min) et reçoit le tampon. Tour éclair avec le pouce : qui sait déjà quand il commence ? Le domaine choisi reste privé. Puis annoncer la mission de la semaine (dans le cahier) : essayer son petit pas trois jours – ou une fois le scan corporel le soir. Pour finir, annoncer la prochaine séance.",
+            "text": "Écrire au tableau la question du Skills-Pass : quel est mon petit pas – et quand est-ce que je commence ? Chacun écrit une phrase (2 min) et reçoit le tampon. Choisir son moment (1 min) : lire la mission de la semaine dans le cahier – quand le moment de mon plan « si… alors » arrive, je fais mon petit pas ; ou : quand, le soir au lit, la tête ne s’arrête pas, je fais le scan corporel. À trois, tout le monde montre où se situe son moment : un doigt pour le matin, deux pour après l’école, trois pour le soir. Puis chacun écrit la partie « si » de sa phrase dans la colonne « Mon moment : quand … » à côté de la mission ; le domaine choisi reste privé. Tour éclair avec le pouce et suite (2 min) : qui sait déjà quand il commence ? Pour finir, annoncer la prochaine séance – la grille n’est pas contrôlée, le lien demande seulement le moment.",
             "sagen": [
+              "Votre mission : quand votre moment arrive, vous faites votre petit pas – trois jours. Ou : quand la tête ne s’arrête pas le soir, le scan corporel. Écrivez votre moment dans le cahier.",
               "Pouce levé si vous savez déjà quand vous commencez – ce soir, demain matin ? Quel pas, vous le gardez pour vous."
             ],
-            "tipp": "Ne pas contrôler la grille à la prochaine séance. Un pouce suffit – et un jour raté n’est pas un échec."
+            "tipp": "Ne pas contrôler la grille à la prochaine séance. Un pouce suffit – et un jour raté n’est pas un échec. Un moment qui revient chaque jour à coup sûr (le réveil, le dîner, la lumière qu’on éteint) porte mieux le pas que « quand j’aurai le temps »."
           }
         ],
         "bruecke": "La semaine prochaine, on parle de la période des devoirs en classe : d’où vient le stress avant un devoir, comment planifier ses révisions à rebours à partir du jour J – et quels skills personne ne remarque pendant l’épreuve.",
-        "mission": "Essaie ton petit pas trois jours cette semaine et coche-le – ou fais une fois le scan corporel le soir au lit. Qu’est-ce qui a changé après ?",
-        "hintergrund": "Sommeil, mouvement et alimentation ne sont pas un sujet à part : qui est épuisé, a faim ou n’a presque pas bougé s’irrite plus vite et redescend plus difficilement. Dans l’entraînement aux skills pour adolescents, prendre soin de son sommeil, de son alimentation et de son corps est donc un module à part entière, qui réduit la vulnérabilité aux émotions fortes (Rathus & Miller, 2015). Pour le sommeil, un élément s’ajoute à cet âge : à la puberté, l’horloge interne se décale vers le soir, alors que l’école commence tôt, et les écrans du soir aggravent cela (Carskadon, 2011). Se coucher plus tôt est donc rarement une simple question de volonté ; la séance cherche de petits leviers, pas des coupables. Si le pas est petit et fixé dans un plan « si… alors », c’est voulu : les intentions qui précisent quand, où et quoi faire sont nettement plus souvent mises en œuvre que les bonnes résolutions (Gollwitzer, 1999).",
+        "mission": "Quand ton moment arrive – à 22 h, après l’école, à la récré –, tu fais ton petit pas et tu le coches. Ou : si la tête ne s’arrête pas le soir, le scan corporel.",
+        "hintergrund": "Sommeil, mouvement et alimentation ne sont pas un sujet à part : qui est épuisé ou a faim s’irrite plus vite. La base est l’entraînement aux skills pour adolescents, où le soin du sommeil, de l’alimentation et du corps est un module à part entière, qui réduit la vulnérabilité aux émotions fortes (Rathus & Miller, 2015). À la puberté, l’horloge interne se décale vers le soir, et les écrans du soir aggravent cela (Carskadon, 2011) ; se coucher plus tôt est donc rarement une simple question de volonté – la séance cherche des leviers, pas des coupables. Si le pas est petit, lié à un moment choisi soi-même et coché pendant deux semaines, c’est voulu : les plans « si… alors » sont nettement plus souvent mis en œuvre que les bonnes intentions (Gollwitzer, 1999), et une habitude naît de la répétition dans le même contexte – cela prend en moyenne un peu plus de deux mois, et un jour manqué ne nuit pas (Lally et al., 2010).",
         "quellen": [
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
           "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
-          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W. & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology, 40(6), 998–1009."
         ],
         "achtung": "La santé touche vite à la vie privée. Pas de chiffres sur le poids ou les calories, pas de remarques sur les corps, pas d’aliments bons ou mauvais ; réorienter avec tact des objectifs comme « maigrir ». Ne jamais demander ce qu’on mange à la maison. Si un jeune dort à peine depuis des semaines ou semble épuisé : en parler après le cours, voir la suite avec le SePAS. Signes de faim, de troubles alimentaires, d’automutilation ou de négligence : ne pas approfondir en classe, informer le SePAS le jour même, suivre le protocole de protection de l’école.",
         "differenzierung": {
           "leichter": "Qui apprend encore la langue d’enseignement se place pendant la prise de position à côté de quelqu’un qui traduit, et peut écrire son plan dans sa propre langue ; les batteries de l’affiche se comprennent sans mots. Les cartes sont lues par un jeune qui lit bien ; les heures et les images aident à les remettre en ordre, et des mots-clés suffisent sur les post-it. Pour son plan, reprendre un pas du tableau et compléter le début de phrase : S’il est … heures, alors …",
           "schwerer": "Construire une contre-chaîne pour Noah : à quoi ressemblerait son mardi s’il posait son portable lundi à 22 h ? Ou, dans son propre plan, anticiper deux obstacles et écrire un plan « si… alors » pour chacun."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec la roue et la gommette batterie (5 min), prendre position avec quatre questions (10 min), reconstituer la chaîne de Noah et la briser à deux endroits (15 min), mon petit pas avec les exercices 2 et 3 (10 min), scan corporel (5 min), Skills-Pass et mission (5 min). L’exercice 1 et l’ajout dans la valise à skills sont rattrapés à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec la roue et la gommette batterie (5 min), prendre position avec quatre questions (10 min), reconstituer la chaîne de Noah et la briser à deux endroits (15 min), mon petit pas avec les exercices 2 et 3 (10 min), scan corporel (5 min), Skills-Pass, choisir son moment et mission (5 min). L’exercice 1 et l’ajout dans la valise à skills sont rattrapés à la séance suivante."
       }
     }
   ],
@@ -674,6 +680,12 @@
             "text": "Dein Skills-Koffer hilft, wenn es akut wird. Schlaf, Bewegung, Essen, Pausen und Menschen, die dir guttun, sorgen dafür, dass es seltener so weit kommt. Trag deinen Schritt deshalb auch in die grüne Zone deines Ampelplans ein."
           },
           {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Aus der Forschung",
+            "text": "In der Pubertät verschiebt sich die innere Uhr nach hinten – spät müde zu werden ist normal, kein Charakterfehler. Darum hilft ein fester kleiner Schritt am Abend mehr als der Vorsatz, einfach früher zu schlafen."
+          },
+          {
             "art": "text",
             "text": "Nach zwei Wochen: Schau auf deine Kreuze.",
             "klein": true
@@ -702,8 +714,9 @@
             "Aufgabe 3: unter 7 den Schritt verkleinern, dann den Moment im Kopf durchspielen. Aufgabe 4 ohne Kontrolle, nachgefragt wird mit dem Daumen.",
             "Im Skill-Schritt: den Schritt in die grüne Zone des Ampelplans übertragen (Skills-Koffer, Einheit 17)."
           ],
-          "hintergrund": "Vorsätze scheitern selten am Wissen, sondern an der Umsetzung. Wenn-dann-Pläne, die festlegen, wann, wo und wie gehandelt wird, werden deutlich häufiger umgesetzt als allgemeine Absichten (Gollwitzer, 1999). Die Zuversichtsskala aus der motivierenden Gesprächsführung hilft, den Schritt so zu bemessen, dass er gelingt (Miller & Rollnick, 2013). Ziele rund um Gewicht werden bewusst nicht bestärkt: Diäten im Jugendalter gehen eher mit späteren Essproblemen einher (Neumark-Sztainer et al., 2006).",
+          "hintergrund": "Vorsätze scheitern selten am Wissen, sondern an der Umsetzung. Wenn-dann-Pläne, die festlegen, wann, wo und wie gehandelt wird, werden deutlich häufiger umgesetzt als allgemeine Absichten (Gollwitzer, 1999). Die Zuversichtsskala aus der motivierenden Gesprächsführung hilft, den Schritt so zu bemessen, dass er gelingt (Miller & Rollnick, 2013). Der Kasten „Aus der Forschung“ nimmt dem Thema Schlaf die Moral: In der Pubertät verschiebt sich die innere Uhr nach hinten (Carskadon, 2011). Ziele rund um Gewicht werden bewusst nicht bestärkt: Diäten im Jugendalter gehen eher mit späteren Essproblemen einher (Neumark-Sztainer et al., 2006).",
           "quellen": [
+            "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
             "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
             "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford.",
             "Neumark-Sztainer, D., Wall, M., Guo, J., Story, M., Haines, J. & Eisenberg, M. (2006). Obesity, disordered eating, and eating disorders in a longitudinal study of adolescents: How do dieters fare 5 years later? Journal of the American Dietetic Association, 106(4), 559–568."
@@ -829,6 +842,12 @@
             "text": "Ta valise à skills t’aide quand ça devient aigu. Le sommeil, le mouvement, l’alimentation, les pauses et les gens qui te font du bien font en sorte que ça arrive moins souvent. Inscris donc aussi ton petit pas dans la zone verte de ton plan feu tricolore."
           },
           {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce que dit la recherche",
+            "text": "À la puberté, l’horloge interne se décale vers le soir – avoir sommeil tard est normal, pas un défaut. C’est pourquoi un petit pas fixe le soir aide plus que la résolution de se coucher plus tôt."
+          },
+          {
             "art": "text",
             "text": "Au bout de deux semaines : regarde tes croix.",
             "klein": true
@@ -857,8 +876,9 @@
             "Exercice 3 : en dessous de 7, rendre le pas plus petit, puis se représenter le moment. Exercice 4 sans contrôle ; on demande avec le pouce.",
             "À l’étape du skill : reporter le pas dans la zone verte du plan feu tricolore (valise à skills, séance 17)."
           ],
-          "hintergrund": "Les bonnes résolutions échouent rarement par manque de savoir, mais au moment de passer à l’acte. Les plans « si… alors », qui fixent quand, où et comment agir, sont nettement plus souvent mis en œuvre que les intentions générales (Gollwitzer, 1999). L’échelle de confiance, issue de l’entretien motivationnel, aide à doser le pas pour qu’il réussisse (Miller & Rollnick, 2013). Les objectifs liés au poids ne sont volontairement pas encouragés : à l’adolescence, les régimes vont plutôt de pair avec des problèmes alimentaires ultérieurs (Neumark-Sztainer et al., 2006).",
+          "hintergrund": "Les bonnes résolutions échouent rarement par manque de savoir, mais au moment de passer à l’acte. Les plans « si… alors », qui fixent quand, où et comment agir, sont nettement plus souvent mis en œuvre que les intentions générales (Gollwitzer, 1999). L’échelle de confiance, issue de l’entretien motivationnel, aide à doser le pas pour qu’il réussisse (Miller & Rollnick, 2013). L’encadré « Ce que dit la recherche » enlève toute morale au sujet du sommeil : à la puberté, l’horloge interne se décale vers le soir (Carskadon, 2011). Les objectifs liés au poids ne sont volontairement pas encouragés : à l’adolescence, les régimes vont plutôt de pair avec des problèmes alimentaires ultérieurs (Neumark-Sztainer et al., 2006).",
           "quellen": [
+            "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
             "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
             "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford.",
             "Neumark-Sztainer, D., Wall, M., Guo, J., Story, M., Haines, J. & Eisenberg, M. (2006). Obesity, disordered eating, and eating disorders in a longitudinal study of adolescents: How do dieters fare 5 years later? Journal of the American Dietetic Association, 106(4), 559–568."

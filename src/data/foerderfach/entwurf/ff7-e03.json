@@ -123,11 +123,11 @@
             "titel": "Rückblick und Regeln für heute",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann kurz nach der Wochen-Mission fragen: Wer hat seinen Wenn-dann-Plan oder die Fingeratmung ausprobiert? Auf drei zeigen alle Daumen hoch, Mitte oder runter; eine Stimme erzählt, wo es war. Auf die Klassenvereinbarung zeigen und zwei Regeln hervorheben, die heute besonders zählen: „Weiter“ ist immer erlaubt, und wir lachen miteinander, nicht übereinander. Dann das Thema nennen: sich als Klasse besser kennenlernen – in Bewegung, mit Raten und Nachfragen.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann kurz nach der Wochen-Mission fragen: Kam die Situation aus eurem Plan oder euer Moment für die Fingeratmung – und was habt ihr gemacht? Auf drei zeigen alle Daumen hoch (Moment kam, Plan gemacht), Mitte (Moment kam, aber vergessen oder nicht geschafft) oder runter (Moment kam nicht); eine Stimme erzählt, was sie gemacht hat. Auf die Klassenvereinbarung zeigen und zwei Regeln hervorheben, die heute besonders zählen: „Weiter“ ist immer erlaubt, und wir lachen miteinander, nicht übereinander. Dann das Thema nennen: sich als Klasse besser kennenlernen – in Bewegung, mit Raten und Nachfragen.",
             "sagen": [
               "Heute bewegt ihr euch, ratet und fragt nach. Was ihr von euch zeigt, entscheidet ihr selbst – stehenbleiben oder ‚weiter‘ sagen ist immer in Ordnung."
             ],
-            "tipp": "Zeigen bei der Mission kaum Daumen nach oben, das gelassen nehmen: Diese Woche gibt es eine neue Mission. Wer etwas ausprobiert hat, erzählt in einem Satz – das überzeugt mehr als jede Erklärung."
+            "tipp": "Zeigen bei der Mission kaum Daumen nach oben, das gelassen nehmen: Diese Woche gibt es eine neue Mission mit neuem Moment. Wer etwas ausprobiert hat, erzählt in einem Satz – das überzeugt mehr als jede Erklärung."
           },
           {
             "titel": "Aufstellen: Ecken und Linie",
@@ -230,27 +230,28 @@
             "titel": "Skills-Pass, Blitzlicht und Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Welche Nachfrage hat heute gut funktioniert? Danach gibt es den Stempel; wer mag, klebt seinen Kompliment-Zettel daneben. Blitzlicht (2 Min.): Jede Person sagt ein Wort zu heute, die Lehrkraft beginnt und gibt das Tempo vor. Zum Schluss die Wochen-Mission ansagen (steht im Heft) und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Welche Nachfrage hat heute gut funktioniert? Danach gibt es den Stempel; wer mag, klebt seinen Kompliment-Zettel daneben. Blitzlicht (1 Min.): Jede Person sagt ein Wort zu heute; die Lehrkraft beginnt und gibt ein schnelles Tempo vor – ein Wort, kein Kommentar. Wochen-Mission und Moment wählen (1 Min.): Die Mission ansagen (steht im Heft) – eine Frage, eine Nachfrage. Auf „drei“ zeigt jede Person ihren Moment: ein Finger für den Bus, zwei für die Pause, drei für die Kantine, die Faust für einen eigenen; dann schreibt sie ihn in die Spalte „Mein Moment: Wenn …“. Zum Schluss der Ausblick auf die nächste Stunde (1 Min.).",
             "sagen": [
-              "Ein Wort zu heute – schnell und ohne Erklärung. ‚Weiter‘ ist erlaubt."
+              "Ein Wort zu heute – schnell und ohne Erklärung. ‚Weiter‘ ist erlaubt.",
+              "Wann kommt euer Moment – Bus, Pause oder Kantine? Zeigt ihn mit den Fingern und schreibt ihn ins Heft: Wenn ich …, dann frage ich jemanden etwas und frage einmal nach."
             ],
-            "tipp": "Die Mission setzt die Stunde fort: eine Frage, eine Nachfrage. Wer nächste Woche davon erzählt, berichtet, wie es war – nicht, was die andere Person erzählt hat."
+            "tipp": "Die Mission setzt die Stunde fort: eine Frage, eine Nachfrage. Der feste Moment macht sie wahrscheinlicher: Wer sich den Bus vorgenommen hat, denkt im Bus daran. Wer nächste Woche davon erzählt, berichtet, wie es war – nicht, was die andere Person erzählt hat."
           }
         ],
         "bruecke": "Nächste Woche arbeitet ihr in euren Tischgruppen an Aufgaben, die nur gemeinsam gelingen – und schaut danach, was eurer Klasse dabei hilft.",
-        "mission": "Stell diese Woche jemandem aus der Klasse, mit dem du noch wenig geredet hast, eine Frage und frag einmal nach – im Bus, in der Pause oder in der Kantine.",
-        "hintergrund": "Zu Beginn prüfen die Mitglieder einer Gruppe vor allem, ob sie dazugehören und wie sicher der Rahmen ist; Tuckman (1965) beschreibt diese erste Phase als Orientierung. Übungen mit wenig Risiko, viel Bewegung und klaren Regeln helfen, weil sie Kontakt ermöglichen, ohne Offenheit zu erzwingen: Wer in eine Ecke geht, zeigt eine Vorliebe, keine Geschichte. Wer sieht, dass andere Ähnliches erleben, fühlt sich weniger allein – Yalom und Leszcz (2005) zählen diese Erfahrung zu den Wirkfaktoren von Gruppen. Verbundenheit gehört neben Autonomie und Kompetenz zu den psychologischen Grundbedürfnissen (Deci & Ryan, 2000) und ist die Voraussetzung dafür, dass später auch Schwieriges Platz hat. Die Nachfrage-Regel übt nebenbei Interesse und Zuhören. Ein Kompliment anzunehmen, ohne es abzuwehren, fällt vielen Jugendlichen schwer; es wird hier als erster sozialer Skill geübt.",
+        "mission": "Wenn dein Moment kommt – im Bus, in der Pause oder in der Kantine –, dann stell jemandem aus der Klasse, mit dem du noch wenig geredet hast, eine Frage und frag einmal nach.",
+        "hintergrund": "Zu Beginn prüfen die Mitglieder einer Gruppe vor allem, ob sie dazugehören und wie sicher der Rahmen ist; Tuckman (1965) beschreibt diese erste Phase als Orientierung. Übungen mit wenig Risiko, viel Bewegung und klaren Regeln helfen, weil sie Kontakt ermöglichen, ohne Offenheit zu erzwingen: Wer in eine Ecke geht, zeigt eine Vorliebe, keine Geschichte. Verbundenheit gehört neben Autonomie und Kompetenz zu den Grundbedürfnissen (Deci & Ryan, 2000) – die Voraussetzung, dass später auch Schwieriges Platz hat. Programme, die soziale und emotionale Fertigkeiten in einem sicheren Klassenklima aufbauen, verbessern Verhalten, Wohlbefinden und Lernen; das zeigt eine Meta-Analyse mit über 500.000 Schülerinnen und Schülern (Cipriano et al., 2023). Die Nachfrage-Regel übt nebenbei Interesse und Zuhören; ein Kompliment anzunehmen, ohne es abzuwehren, ist der erste soziale Skill des Jahres.",
         "quellen": [
           "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
-          "Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books.",
-          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Cipriano, C., Strambler, M. J., Naples, L. H., Ha, C., Kirk, M., Wood, M. et al. (2023). The state of evidence for social and emotional learning: A contemporary meta-analysis of universal school-based SEL interventions. Child Development, 94(5), 1181–1204."
         ],
         "achtung": "Kennenlernspiele zeigen, wer dazugehört: wer allein in einer Ecke steht, wen beim Bingo niemand fragt, über wessen Namen gelacht wird. Das nicht vor der Klasse kommentieren, sondern unauffällig ausgleichen (Tandem, Station) und später nachfragen. Keine Fragen nach Familie, Herkunft, Religion, Geld, Körper oder Noten; „weiter“ ist immer erlaubt. Schreibt jemand etwas Ernstes, nicht vertiefen, sondern unter vier Augen ansprechen; bei Hinweisen auf Gewalt oder Selbstverletzung noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
         "differenzierung": {
-          "leichter": "Die Antworten der Eckenfragen und die Stichworte für die drei Sätze stehen an der Tafel, wenn möglich mit kleinen Zeichnungen; die drei Sätze dürfen gezeichnet oder nur gesagt werden. Beim Bingo im Tandem mit einer Person gehen, die gut liest; als Nachfrage reicht „Was denn?“ oder „Welche?“, als Stichwort ein Wort oder eine kleine Zeichnung.",
+          "leichter": "Die Antworten der Eckenfragen und die Stichworte für die drei Sätze stehen an der Tafel, wenn möglich mit kleinen Zeichnungen; die drei Sätze dürfen gezeichnet oder nur gesagt werden. Beim Bingo im Tandem mit einer Person gehen, die gut liest; als Nachfrage reicht „Was denn?“ oder „Welche?“, als Stichwort ein Wort oder eine kleine Zeichnung. Für die Spalte „Mein Moment“ reicht ein Wort: Bus, Pause, Kantine.",
           "schwerer": "Beim Bingo zu jedem Feld eine zweite Nachfrage stellen und beim Auflösen eine Gemeinsamkeit suchen, die fast die ganze Klasse teilt. Oder eine weitere Eckenfrage erfinden, die niemanden bloßstellt, und sie der Klasse stellen."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), Ecken mit drei Fragen (8 Min.), „Finde jemanden, der …“ mit Nachfrage und kurzem Auflösen (22 Min.), Kompliment annehmen in der Tischgruppe (8 Min.), Skills-Pass und Mission (7 Min.). Linie, „Zwei Wahrheiten, eine Lüge“ und das Plakat entfallen; das Raten eignet sich als Einstieg in die nächste Stunde."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), Ecken mit drei Fragen (8 Min.), „Finde jemanden, der …“ mit Nachfrage und kurzem Auflösen (22 Min.), Kompliment annehmen in der Tischgruppe (8 Min.), Skills-Pass, Mission und Moment wählen (7 Min.). Linie, „Zwei Wahrheiten, eine Lüge“ und das Plakat entfallen; das Raten eignet sich als Einstieg in die nächste Stunde."
       },
       "fr": {
         "titel": "Faire connaissance en bougeant",
@@ -342,11 +343,11 @@
             "titel": "Retour sur la séance et règles du jour",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière fois. Puis demander brièvement où en est la mission de la semaine : qui a essayé son plan « si… alors » ou la respiration des doigts ? À trois, tout le monde montre pouce en haut, au milieu ou en bas ; une voix raconte où c’était. Montrer la charte de classe et souligner deux règles qui comptent particulièrement aujourd’hui : on peut toujours dire « je passe », et on rit ensemble, pas les uns des autres. Puis annoncer le thème : mieux se connaître en tant que classe – en bougeant, en devinant et en posant des questions.",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière fois. Puis demander brièvement où en est la mission de la semaine : la situation de votre plan, ou votre moment pour la respiration des doigts, est-elle arrivée – et qu’avez-vous fait ? À trois, tout le monde montre pouce en haut (le moment est venu, plan fait), au milieu (le moment est venu, mais oublié ou pas réussi) ou en bas (le moment n’est pas venu) ; une voix raconte ce qu’elle a fait. Montrer la charte de classe et souligner deux règles qui comptent particulièrement aujourd’hui : on peut toujours dire « je passe », et on rit ensemble, pas les uns des autres. Puis annoncer le thème : mieux se connaître en tant que classe – en bougeant, en devinant et en posant des questions.",
             "sagen": [
               "Aujourd’hui, vous allez bouger, deviner et poser des questions. Ce que vous montrez de vous, c’est vous qui le décidez – rester à sa place ou dire “je passe”, c’est toujours permis."
             ],
-            "tipp": "Si peu de pouces sont en haut pour la mission, le prendre avec calme : cette semaine, il y a une nouvelle mission. Qui a essayé quelque chose le raconte en une phrase – cela convainc plus que n’importe quelle explication."
+            "tipp": "Si peu de pouces sont en haut pour la mission, le prendre avec calme : cette semaine, il y a une nouvelle mission, avec un nouveau moment. Qui a essayé quelque chose le raconte en une phrase – cela convainc plus que n’importe quelle explication."
           },
           {
             "titel": "Se placer : les coins et la ligne",
@@ -449,27 +450,28 @@
             "titel": "Skills-Pass, tour éclair et mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (2 min) : écrire la question au tableau – quelle relance a bien marché aujourd’hui ? Ensuite, le tampon ; qui le souhaite colle son post-it à côté. Tour éclair (2 min) : chacun dit un mot sur la séance ; l’enseignant·e commence et donne le rythme. Pour finir, annoncer la mission de la semaine (elle figure dans le cahier) et la prochaine séance (1 min).",
+            "text": "Skills-Pass (2 min) : écrire la question au tableau – quelle relance a bien marché aujourd’hui ? Ensuite, le tampon ; qui le souhaite colle son post-it à côté. Tour éclair (1 min) : chacun dit un mot sur la séance ; l’enseignant·e commence et donne un rythme rapide – un mot, pas de commentaire. Mission de la semaine et choix du moment (1 min) : annoncer la mission (elle figure dans le cahier) – une question, une précision. À « trois », chacun montre son moment : un doigt pour le bus, deux pour la récré, trois pour la cantine, le poing pour un moment à soi ; puis il l’écrit dans la colonne « Mon moment : quand … ». Pour finir, annoncer la prochaine séance (1 min).",
             "sagen": [
-              "Un mot sur aujourd’hui – vite et sans explication. On peut dire “je passe”."
+              "Un mot sur aujourd’hui – vite et sans explication. On peut dire “je passe”.",
+              "Quand arrive votre moment – bus, récré ou cantine ? Montrez-le avec les doigts et écrivez-le dans le cahier : quand je…, alors je pose une question à quelqu’un et je demande une précision."
             ],
-            "tipp": "La mission prolonge la séance : une question, une précision. La semaine prochaine, on raconte comment ça s’est passé – pas ce que l’autre a raconté."
+            "tipp": "La mission prolonge la séance : une question, une précision. Le moment fixé la rend plus probable : qui a choisi le bus y pense dans le bus. La semaine prochaine, on raconte comment ça s’est passé – pas ce que l’autre a raconté."
           }
         ],
         "bruecke": "La semaine prochaine, vous allez travailler en îlots sur des défis qu’on ne réussit qu’ensemble – puis regarder ce qui aide votre classe.",
-        "mission": "Cette semaine, pose une question à quelqu’un de ta classe à qui tu as encore peu parlé, puis demande une précision – dans le bus, à la récré ou à la cantine.",
-        "hintergrund": "Au début, les membres d’un groupe vérifient surtout s’ils en font partie et si le cadre est sûr ; Tuckman (1965) appelle cette première phase l’orientation. Des exercices peu risqués, avec beaucoup de mouvement et des règles claires, aident parce qu’ils permettent le contact sans forcer les confidences : qui va dans un coin montre une préférence, pas une histoire. Qui voit que d’autres vivent des choses semblables se sent moins seul – Yalom et Leszcz (2005) comptent cette expérience parmi les facteurs d’efficacité des groupes. Le sentiment d’appartenance fait partie, avec l’autonomie et la compétence, des besoins psychologiques fondamentaux (Deci & Ryan, 2000) ; c’est la condition pour aborder plus tard des sujets difficiles. La règle de la relance exerce au passage l’intérêt pour l’autre et l’écoute. Accepter un compliment sans le repousser est difficile pour beaucoup de jeunes ; on l’exerce ici comme premier skill relationnel.",
+        "mission": "Quand ton moment arrive – dans le bus, à la récré ou à la cantine –, pose une question à quelqu’un de ta classe à qui tu as encore peu parlé, puis demande une précision.",
+        "hintergrund": "Au début, les membres d’un groupe vérifient surtout s’ils en font partie et si le cadre est sûr ; Tuckman (1965) appelle cette première phase l’orientation. Des exercices peu risqués, en mouvement et avec des règles claires aident : ils permettent le contact sans forcer les confidences – qui va dans un coin montre une préférence, pas une histoire. Le sentiment d’appartenance fait partie, avec l’autonomie et la compétence, des besoins fondamentaux (Deci & Ryan, 2000) ; c’est la condition pour aborder plus tard le difficile. Les programmes qui développent ces compétences dans un climat sûr améliorent comportement, bien-être et apprentissages ; le montre une méta-analyse sur plus de 500 000 élèves (Cipriano et al., 2023). La règle de la relance exerce l’intérêt pour l’autre et l’écoute ; accepter un compliment sans le repousser est le premier skill relationnel de l’année.",
         "quellen": [
           "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
-          "Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books.",
-          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Cipriano, C., Strambler, M. J., Naples, L. H., Ha, C., Kirk, M., Wood, M. et al. (2023). The state of evidence for social and emotional learning: A contemporary meta-analysis of universal school-based SEL interventions. Child Development, 94(5), 1181–1204."
         ],
         "achtung": "Les jeux pour faire connaissance montrent qui fait partie du groupe : qui est seul dans un coin, que personne n’interroge au bingo, de quel prénom on se moque. Ne pas le commenter devant la classe, mais compenser discrètement (binôme, poste fixe) et prendre des nouvelles ensuite. Pas de questions sur la famille, l’origine, la religion, l’argent, le corps ou les notes ; on peut toujours dire « je passe ». Si un jeune écrit quelque chose de grave, ne pas approfondir, mais lui parler en tête-à-tête ; en cas de signes de violence ou d’automutilation, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
         "differenzierung": {
-          "leichter": "Les réponses des questions des coins et les mots-clés pour les trois phrases sont au tableau, si possible avec de petits dessins ; les trois phrases peuvent être dessinées ou seulement dites. Au bingo, circuler en binôme avec quelqu’un qui lit bien ; comme précision, « Lequel ? » ou « Quoi ? » suffit, comme mot-clé un mot ou un petit dessin.",
+          "leichter": "Les réponses des questions des coins et les mots-clés pour les trois phrases sont au tableau, si possible avec de petits dessins ; les trois phrases peuvent être dessinées ou seulement dites. Au bingo, circuler en binôme avec quelqu’un qui lit bien ; comme précision, « Lequel ? » ou « Quoi ? » suffit, comme mot-clé un mot ou un petit dessin. Pour la colonne « Mon moment », un mot suffit : bus, récré, cantine.",
           "schwerer": "Au bingo, poser une deuxième question pour chaque case et chercher, lors de la mise en commun, un point commun que presque toute la classe partage. Ou inventer une autre question pour les coins, qui ne met personne mal à l’aise, et la poser à la classe."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), coins avec trois questions (8 min), « Trouve quelqu’un qui… » avec précisions et courte mise en commun (22 min), accepter un compliment en îlot (8 min), Skills-Pass et mission (7 min). La ligne, « deux vérités, un mensonge » et l’affiche sont supprimées ; le jeu de devinettes peut ouvrir la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), coins avec trois questions (8 min), « Trouve quelqu’un qui… » avec précisions et courte mise en commun (22 min), accepter un compliment en îlot (8 min), Skills-Pass, mission et choix du moment (7 min). La ligne, « deux vérités, un mensonge » et l’affiche sont supprimées ; le jeu de devinettes peut ouvrir la séance suivante."
       }
     }
   ],
@@ -612,6 +614,12 @@
             "symbole": [
               "einkreisen"
             ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Aus der Forschung",
+            "text": "Klassen, in denen sich alle sicher fühlen, lernen besser – das zeigen Studien mit über 500.000 Schülerinnen und Schülern."
           }
         ],
         "lehrer": {
@@ -621,10 +629,11 @@
             "Schritt 6 (25 Min.): Nachfragen vormachen, Regeln lesen, Runde mit Aufgabe 2; danach Aufgabe 3: zwei Felder einkreisen.",
             "Schritt 7 (10 Min.): die eingekreisten Felder in der Tischgruppe nennen, Gemeinsamkeiten für das Klassenplakat sammeln."
           ],
-          "hintergrund": "Zu Beginn prüfen die Mitglieder einer Gruppe vor allem, ob sie dazugehören und wie sicher der Rahmen ist (Tuckman, 1965). Kleine, ungefährliche Fragen in Bewegung senken die Hemmschwelle, weil niemand vor allen sprechen muss. Gemeinsamkeiten zu entdecken, stärkt die Verbundenheit, eines der psychologischen Grundbedürfnisse (Deci & Ryan, 2000). Die Nachfrage-Regel macht aus dem Unterschriftensammeln ein Gespräch.",
+          "hintergrund": "Zu Beginn prüfen die Mitglieder einer Gruppe vor allem, ob sie dazugehören und wie sicher der Rahmen ist (Tuckman, 1965). Kleine, ungefährliche Fragen in Bewegung senken die Hemmschwelle, weil niemand vor allen sprechen muss. Gemeinsamkeiten zu entdecken, stärkt die Verbundenheit, eines der psychologischen Grundbedürfnisse (Deci & Ryan, 2000); ein sicheres Klassenklima verbessert auch das Lernen (Cipriano et al., 2023). Die Nachfrage-Regel macht aus dem Unterschriftensammeln ein Gespräch.",
           "quellen": [
             "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
-            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+            "Cipriano, C., Strambler, M. J., Naples, L. H., Ha, C., Kirk, M., Wood, M. et al. (2023). The state of evidence for social and emotional learning: A contemporary meta-analysis of universal school-based SEL interventions. Child Development, 94(5), 1181–1204."
           ],
           "material": "Schülerheft, Stifte"
         }
@@ -741,6 +750,12 @@
             "symbole": [
               "einkreisen"
             ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce que dit la recherche",
+            "text": "Les classes où tout le monde se sent en sécurité apprennent mieux – des études portant sur plus de 500 000 élèves le montrent."
           }
         ],
         "lehrer": {
@@ -750,10 +765,11 @@
             "Étape 6 (25 min) : montrer la relance, lire les règles, tour avec l’exercice 2 ; puis exercice 3 : entourer deux cases.",
             "Étape 7 (10 min) : citer les cases entourées en îlot, rassembler les points communs pour l’affiche de la classe."
           ],
-          "hintergrund": "Au début, les membres d’un groupe vérifient surtout s’ils en font partie et si le cadre est sûr (Tuckman, 1965). De petites questions sans risque, posées en bougeant, abaissent le seuil, car personne ne doit parler devant tout le monde. Découvrir des points communs renforce le sentiment d’appartenance, l’un des besoins psychologiques fondamentaux (Deci & Ryan, 2000). La règle de la relance transforme la collecte de signatures en conversation.",
+          "hintergrund": "Au début, les membres d’un groupe vérifient surtout s’ils en font partie et si le cadre est sûr (Tuckman, 1965). De petites questions sans risque, posées en bougeant, abaissent le seuil, car personne ne doit parler devant tout le monde. Découvrir des points communs renforce le sentiment d’appartenance, l’un des besoins psychologiques fondamentaux (Deci & Ryan, 2000) ; un climat de classe sûr améliore aussi les apprentissages (Cipriano et al., 2023). La règle de la relance transforme la collecte de signatures en conversation.",
           "quellen": [
             "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
-            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+            "Cipriano, C., Strambler, M. J., Naples, L. H., Ha, C., Kirk, M., Wood, M. et al. (2023). The state of evidence for social and emotional learning: A contemporary meta-analysis of universal school-based SEL interventions. Child Development, 94(5), 1181–1204."
           ],
           "material": "Cahier de l’élève, stylos"
         }

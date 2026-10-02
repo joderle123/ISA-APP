@@ -104,7 +104,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, Mission und Ausblick"
+            "titel": "Skills-Pass, Moment wählen und Mission"
           }
         ],
         "schritte": [
@@ -124,12 +124,12 @@
             "titel": "Mission: vom perfekten zum falschen Bild",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Dann zur Wochen-Mission: Wer hat seine kleine Änderung aus dem Handy-Plan oder die drei Atemzüge ausprobiert? Daumen hoch, Mitte oder runter; eine Stimme erzählt, was dabei auffiel – geschafft haben muss es niemand. Dann die Überleitung: Letzte Woche war das perfekte Bild echt, nur inszeniert. Heute geht es um Bilder und Nachrichten, die es so nie gegeben hat. Das Thema an die Tafel: Echt oder fake – woran erkenne ich das?",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Dann zur Wochen-Mission – die kleine Änderung aus dem Handy-Plan oder drei Atemzüge vor dem Handy: Kam euer Moment – abends im Bett, bei den Hausaufgaben, im Bus – und was habt ihr gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt, was dabei auffiel. Geschafft haben muss es niemand, und „mein Moment kam, ich habe trotzdem gescrollt“ ist eine ehrliche Antwort. Dann die Überleitung: Letzte Woche war das perfekte Bild echt, nur inszeniert. Heute geht es um Bilder und Nachrichten, die es so nie gegeben hat. Das Thema an die Tafel: Echt oder fake – woran erkenne ich das?",
             "sagen": [
-              "Hat jemand seine kleine Änderung ausprobiert? Mich interessiert vor allem, was schwierig war.",
+              "Kam euer Moment – und was habt ihr gemacht? Mich interessiert vor allem, was schwierig war.",
               "Letzte Woche war das Foto echt, nur geschönt. Heute geht es um Bilder, die es nie gegeben hat."
             ],
-            "tipp": "Erzählt jemand, dass der Plan nicht geklappt hat, das ausdrücklich würdigen und kurz fragen: Was wäre eine kleinere Stufe? So bleibt der Plan lebendig, ohne dass er kontrolliert wird."
+            "tipp": "Erzählt jemand, dass der Plan nicht geklappt hat, das ausdrücklich würdigen und kurz fragen: Was wäre eine kleinere Stufe – oder ein anderer Moment? So bleibt der Plan lebendig, ohne dass er kontrolliert wird."
           },
           {
             "titel": "Echt oder fake? Das Kartenspiel",
@@ -138,7 +138,8 @@
             "text": "Jede Tischgruppe bekommt einen Umschlag mit acht Beitragskarten und drei Kopfkarten: echt, fake, erst prüfen. Tischgruppen (8 Min.): Die Karten werden reihum vorgelesen, jede Person zwei; wer nicht vorlesen mag, gibt weiter. Die Gruppe legt jede Karte unter eine Kopfkarte und einigt sich auf einen Grund. Klasse (8 Min.): Karte für Karte aufrufen; auf drei hält je Gruppe eine Person die Kopfkarte hoch, unter der die Karte liegt. Eine Gruppe nennt ihren Grund, dann kommt die Auflösung (Liste). Die Hinweise, die geholfen haben, links an die Tafel schreiben, die Tricks der Fälscher rechts; bei Karte 4 und 5 fragen: Wo könnte man nachprüfen? Klasse (2 Min.): Wo wart ihr euch sicher und lagt daneben?",
             "sagen": [
               "Ihr müsst nicht alles wissen. Wenn ihr es nicht sicher sagen könnt, ist ‚erst prüfen‘ eine gute Antwort.",
-              "Bei welcher Karte wart ihr euch ganz sicher – und lagt trotzdem daneben?"
+              "Bei welcher Karte wart ihr euch ganz sicher – und lagt trotzdem daneben?",
+              "Die meisten Fakes bauen Leute, die mit euren Klicks, Daten oder eurer Wut Geld verdienen. Ob das bei euch klappt, entscheidet ihr."
             ],
             "punkte": [
               "Karte 1 · Der Hai im Bahnhof: fake – neues Konto, niemand sonst berichtet, „Teilt das“. Solche Bilder sind zusammengesetzt oder mit KI gemacht. Trick: Staunen und Zeitdruck.",
@@ -260,22 +261,23 @@
             "wennEsKippt": "Glauben einige die Schlagzeile und regen sich laut auf, ist das kein Fehler, sondern der Beweis: So schnell geht es. Sofort auflösen und genau damit weiterarbeiten. Wird über die Übung gelacht, die zweite Runde still und jede Person für sich machen lassen; niemand muss die Augen schließen."
           },
           {
-            "titel": "Skills-Pass, Mission und Ausblick",
+            "titel": "Skills-Pass, Moment wählen und Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (3 Min.): die Leitfrage an die Tafel schreiben – Welche Frage stelle ich, bevor ich etwas glaube oder teile? Danach gibt es den Stempel. Daumen-Blitzlicht (30 Sek.): Wie sicher fühlt ihr euch jetzt beim Prüfen? Zum Schluss die Wochen-Mission im Heft ansagen und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Welche Frage stelle ich, bevor ich etwas glaube oder teile? Danach gibt es den Stempel. Moment wählen (1 Min.): Die Wochen-Mission im Heft vorlesen – wenn mir jemand etwas Krasses erzählt oder weiterleitet, dann frage ich zuerst: Wer sagt das – und woher kann die Person das wissen? Jede Person wählt, wo ihr Moment am ehesten kommt: Auf drei zeigen alle einen Finger für den Klassenchat, zwei für Pause und Schulhof, drei für zu Hause – Familie, Fernseher, Feed. Den Moment in die Spalte „Mein Moment: Wenn …“ schreiben. Daumen-Blitzlicht und Ausblick (2 Min.): Wie sicher fühlt ihr euch jetzt beim Prüfen? Zum Schluss der Ausblick auf die nächste Stunde.",
             "sagen": [
-              "Diese Woche prüft ihr eine Nachricht oder ein Gerücht, bevor ihr es glaubt oder weitersagt – im Netz oder auf dem Schulhof. Fragt euch: Woher kann die Person das wissen?"
+              "Eure Mission: Wenn euch jemand etwas Krasses erzählt oder weiterleitet – im Chat, auf dem Schulhof, zu Hause –, dann fragt ihr zuerst: Wer sagt das, und woher kann die Person das wissen? Wählt jetzt euren Moment."
             ],
-            "tipp": "Gerüchte auf dem Schulhof funktionieren wie Fakes im Netz: Wer fragt, woher jemand etwas weiß, bremst beides. Deshalb geht die Mission auch ohne Handy."
+            "tipp": "Gerüchte auf dem Schulhof funktionieren wie Fakes im Netz: Wer fragt, woher jemand etwas weiß, bremst beides. Deshalb geht die Mission auch ohne Handy – und der Moment darf einer sein, der sicher kommt, etwa der Klassenchat am Abend."
           }
         ],
         "bruecke": "Heute habt ihr Beiträge geprüft: Stimmt das? Nächste Woche prüft ihr etwas, das noch näher ist – die Sätze, die ihr euch selbst im Kopf sagt.",
-        "mission": "Prüf diese Woche eine Nachricht oder ein Gerücht, bevor du es glaubst oder weitersagst. Frag dich: Wer sagt das – und woher kann die Person das wissen?",
-        "hintergrund": "Bildgeneratoren machen typische Fehler wie verformte Hände immer seltener; verlässlicher als der Blick auf Details ist die Frage nach der Quelle. Professionelle Faktenprüfer verlassen eine unbekannte Seite schnell und sehen woanders nach, wer dahintersteht; so urteilten sie schneller und häufiger richtig als Historiker und Studierende, die die Seite selbst genau lasen (Wineburg & McGrew, 2019). Deshalb steht die Quelle in der Checkliste oben, und das Blatt fragt, wo man nachprüfen kann. Wer die Tricks von Falschmeldungen kennt – Empörung, falsche Experten, Zeitdruck –, fällt seltener darauf herein: Ein Spiel, in dem man selbst Falschmeldungen baut, verringerte die Anfälligkeit messbar (Roozenbeek & van der Linden, 2019). Sprachmodelle erzeugen zudem Inhalte, die plausibel klingen, aber nicht stimmen (Ji et al., 2023). Weil viele Fälschungen auf Wut setzen, verbindet die Stunde das Prüfen mit einem Skill: erst bremsen, dann prüfen.",
+        "mission": "Wenn dir jemand etwas Krasses erzählt oder weiterleitet – im Klassenchat, auf dem Schulhof oder zu Hause –, dann frag zuerst: Wer sagt das – und woher kann die Person das wissen?",
+        "hintergrund": "Verlässlicher als der Blick auf Details ist die Frage nach der Quelle: Profis verlassen eine unbekannte Seite schnell und sehen woanders nach, wer dahintersteht – und urteilten so schneller und öfter richtig als Leute, die die Seite genau lasen (Wineburg & McGrew, 2019). Kartenspiel und Tricks-Tafel folgen dem Impfen gegen Falschmeldungen: Wer die Tricks – Empörung, falsche Experten, Zeitdruck – vorher in kleiner Dosis kennenlernt, fällt seltener darauf herein. Ein Spiel, in dem man selbst Fakes baut, senkte die Anfälligkeit messbar (Roozenbeek & van der Linden, 2019); fünf kurze Videos über solche Tricks machten Menschen auch auf YouTube messbar besser im Erkennen von Falschmeldungen (Roozenbeek et al., 2022). Sprachmodelle erzeugen zudem Inhalte, die plausibel klingen, aber nicht stimmen (Ji et al., 2023). Weil viele Fakes auf Wut setzen, kommt vor dem Prüfen die Teilen-Bremse.",
         "quellen": [
           "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
           "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+          "Roozenbeek, J., van der Linden, S., Goldberg, B., Rathje, S. & Lewandowsky, S. (2022). Psychological inoculation improves resilience against misinformation on social media. Science Advances, 8(34), eabo6254.",
           "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38."
         ],
         "achtung": "Keine Fälschungen echter Personen erstellen oder zeigen, auch nicht zur Demonstration; alle Beispiele sind erfunden, Namen aus der Klasse vorher tauschen. Erzählt jemand von gefälschten, peinlichen oder intimen Bildern einer realen Person: sich die Bilder nicht zeigen oder schicken lassen, auch nicht zum Prüfen, nichts weiterleiten lassen und nicht vor der Klasse vertiefen; um Beweise kümmert sich der SePAS. Nach der Stunde unter vier Augen sprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Bei Erpressung mit Bildern sofort Hilfe holen. Beratung: BEE SECURE Helpline 8002 1234.",
@@ -283,7 +285,7 @@
           "leichter": "Beim Kartenspiel darf weitergeben, wer nicht vorlesen mag; die anderen entscheiden mit. Die Checkliste zu zweit laut durchgehen; in der KI-Ampel reicht ein Stichwort je Farbe. Wer die Unterrichtssprache noch lernt, arbeitet mit den Kopfkarten und den Farbblättern an der Tafel – zeigen geht vor sprechen – und darf die Nachricht in Aufgabe 3 in der eigenen Sprache schreiben.",
           "schwerer": "Eine harmlose, erfundene Falschmeldung zu einem Schulthema bauen, ohne echte Personen und mit mindestens drei Tricks aus der Checkliste, und von einer anderen Gruppe prüfen lassen. Oder bei der Abstimmung moderieren und nachfragen, wo genau die Grenze liegt."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt und Zahl (5 Min.), Kartenspiel mit vier Karten je Gruppe und kurzer Auflösung (15 Min.), Checkliste am Beitrag aus dem Klassenchat (10 Min.), KI-Abstimmung mit vier Situationen (10 Min.), Teilen-Bremse (5 Min.), Skills-Pass und Mission (5 Min.). KI-Ampel und Nachricht (Aufgaben 2 und 3) werden in der nächsten Stunde nachgeholt."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt und Zahl (5 Min.), Kartenspiel mit vier Karten je Gruppe und kurzer Auflösung (15 Min.), Checkliste am Beitrag aus dem Klassenchat (10 Min.), KI-Abstimmung mit vier Situationen (10 Min.), Teilen-Bremse (5 Min.), Skills-Pass, Moment wählen und Mission (5 Min.). KI-Ampel und Nachricht (Aufgaben 2 und 3) werden in der nächsten Stunde nachgeholt."
       },
       "fr": {
         "titel": "Vrai ou faux ?",
@@ -353,7 +355,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, mission et suite"
+            "titel": "Skills-Pass, choisir son moment et mission"
           }
         ],
         "schritte": [
@@ -373,12 +375,12 @@
             "titel": "Mission : de l’image parfaite à l’image fausse",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass. Puis la mission de la semaine : qui a essayé le petit changement de son plan portable ou les trois respirations ? Pouce en haut, au milieu ou en bas ; une voix raconte ce qu’elle a remarqué – personne n’est obligé de l’avoir réussie. Ensuite, faire le lien : la semaine dernière, l’image parfaite était vraie, juste mise en scène. Aujourd’hui, on parle d’images et de messages qui n’ont jamais existé. Écrire le thème au tableau : vrai ou faux – comment je le reconnais ?",
+            "text": "Un jeune lit la phrase de son Skills-Pass. Puis la mission de la semaine – le petit changement du plan portable ou trois respirations avant le portable : votre moment est-il venu – le soir au lit, pendant les devoirs, dans le bus – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas ; une voix raconte ce qu’elle a remarqué. Personne n’est obligé d’avoir réussi, et « mon moment est venu, j’ai quand même scrollé » est une réponse honnête. Ensuite, faire le lien : la semaine dernière, l’image parfaite était vraie, juste mise en scène. Aujourd’hui, on parle d’images et de messages qui n’ont jamais existé. Écrire le thème au tableau : vrai ou faux – comment je le reconnais ?",
             "sagen": [
-              "Quelqu’un a essayé son petit changement ? Ce qui m’intéresse surtout, c’est ce qui a été difficile.",
+              "Votre moment est-il venu – et qu’avez-vous fait ? Ce qui m’intéresse surtout, c’est ce qui a été difficile.",
               "La semaine dernière, la photo était vraie, juste embellie. Aujourd’hui, on parle d’images qui n’ont jamais existé."
             ],
-            "tipp": "Si un jeune raconte que son plan n’a pas marché, saluer clairement sa franchise et demander brièvement : quelle serait une marche plus petite ? Le plan reste ainsi vivant, sans être contrôlé."
+            "tipp": "Si un jeune raconte que son plan n’a pas marché, saluer clairement sa franchise et demander brièvement : quelle serait une marche plus petite – ou un autre moment ? Le plan reste ainsi vivant, sans être contrôlé."
           },
           {
             "titel": "Vrai ou faux ? Le jeu de cartes",
@@ -387,7 +389,8 @@
             "text": "Chaque îlot reçoit une enveloppe avec huit cartes publication et trois cartes titre : vrai, faux, à vérifier. En îlots (8 min) : les cartes sont lues à voix haute à tour de rôle, deux par jeune ; qui ne veut pas lire passe son tour. Le groupe pose chaque carte sous une carte titre et se met d’accord sur une raison. En classe entière (8 min) : appeler les cartes une à une ; à trois, dans chaque îlot, quelqu’un lève la carte titre sous laquelle se trouve la carte. Un îlot donne sa raison, puis vient la solution (liste). Noter à gauche du tableau les indices qui ont aidé, à droite les ficelles des faussaires ; pour les cartes 4 et 5, demander : où pourrait-on vérifier ? En classe entière (2 min) : où étiez-vous sûrs de vous tout en vous trompant ?",
             "sagen": [
               "Vous n’êtes pas obligés de tout savoir. Si vous ne pouvez pas le dire avec certitude, “à vérifier” est une bonne réponse.",
-              "Sur quelle carte étiez-vous complètement sûrs de vous – et vous vous êtes quand même trompés ?"
+              "Sur quelle carte étiez-vous complètement sûrs de vous – et vous vous êtes quand même trompés ?",
+              "La plupart des fakes sont fabriqués par des gens qui gagnent de l’argent avec vos clics, vos données ou votre colère. Si ça marche sur vous, c’est vous qui décidez."
             ],
             "punkte": [
               "Carte 1 · Le requin dans la gare : faux – compte récent, personne d’autre n’en parle, « Partagez ». Ce genre d’images est un montage ou une création d’IA. Ficelle : l’étonnement et l’urgence.",
@@ -509,22 +512,23 @@
             "wennEsKippt": "Si certains croient au titre et s’énervent bruyamment, ce n’est pas une erreur, c’est la preuve : ça va aussi vite que ça. Donner tout de suite la réponse et travailler justement avec ça. Si la classe rit de l’exercice, faire le deuxième tour en silence, chacun pour soi ; personne n’est obligé de fermer les yeux."
           },
           {
-            "titel": "Skills-Pass, mission et suite",
+            "titel": "Skills-Pass, choisir son moment et mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (3 min) : écrire la question au tableau – quelle question est-ce que je me pose avant de croire ou de partager quelque chose ? Ensuite, le tampon. Tour éclair avec le pouce (30 secondes) : vous sentez-vous maintenant plus à l’aise pour vérifier ? Pour finir, annoncer la mission de la semaine dans le cahier et la prochaine séance (1 min).",
+            "text": "Skills-Pass (2 min) : écrire la question au tableau – quelle question est-ce que je me pose avant de croire ou de partager quelque chose ? Ensuite, le tampon. Choisir son moment (1 min) : lire la mission de la semaine dans le cahier – quand quelqu’un me raconte ou me transfère un truc énorme, je demande d’abord : qui dit ça – et comment cette personne peut-elle le savoir ? Chaque jeune choisit où son moment a le plus de chances d’arriver : à trois, un doigt pour le groupe de classe, deux pour la récré et la cour, trois pour la maison – famille, télé, fil d’actualité. Écrire le moment dans la colonne « Mon moment : quand … ». Tour éclair avec le pouce et suite (2 min) : vous sentez-vous maintenant plus à l’aise pour vérifier ? Pour finir, annoncer la prochaine séance.",
             "sagen": [
-              "Cette semaine, vous vérifiez une info ou une rumeur avant de la croire ou de la répéter – en ligne ou dans la cour. Demandez-vous : comment cette personne peut-elle le savoir ?"
+              "Votre mission : quand quelqu’un vous raconte ou vous transfère un truc énorme – dans le groupe, dans la cour, à la maison –, vous demandez d’abord : qui dit ça, et comment cette personne peut-elle le savoir ? Choisissez votre moment maintenant."
             ],
-            "tipp": "Les rumeurs dans la cour fonctionnent comme les fakes en ligne : demander d’où quelqu’un tient une info freine les deux. C’est pour ça que la mission marche aussi sans portable."
+            "tipp": "Les rumeurs dans la cour fonctionnent comme les fakes en ligne : demander d’où quelqu’un tient une info freine les deux. C’est pour ça que la mission marche aussi sans portable – et le moment peut être un moment sûr, par exemple le groupe de classe le soir."
           }
         ],
         "bruecke": "Aujourd’hui, vous avez vérifié des publications : est-ce que c’est vrai ? La semaine prochaine, vous vérifiez quelque chose de plus proche encore – les phrases que vous vous dites dans votre tête.",
-        "mission": "Cette semaine, vérifie une info ou une rumeur avant de la croire ou de la répéter. Demande-toi : qui dit ça – et comment cette personne peut-elle le savoir ?",
-        "hintergrund": "Les générateurs d’images font de moins en moins d’erreurs typiques comme les mains déformées ; vérifier la source est plus fiable qu’examiner les détails. Des vérificateurs professionnels quittent vite un site inconnu et vont voir ailleurs qui se cache derrière ; ils jugeaient ainsi plus vite et plus souvent juste que des historiens et des étudiants qui lisaient le site en détail (Wineburg & McGrew, 2019). La liste commence donc par la source, et la fiche demande où l’on pourrait vérifier. Qui connaît les ficelles des fausses informations – indignation, faux experts, urgence – s’y laisse moins prendre : un jeu où l’on fabrique soi-même de fausses informations a réduit cette vulnérabilité (Roozenbeek & van der Linden, 2019). Les modèles de langage produisent en outre des contenus plausibles mais faux (Ji et al., 2023). Comme beaucoup de trucages misent sur la colère, la séance relie la vérification à un skill : freiner, puis vérifier.",
+        "mission": "Quand quelqu’un te raconte ou te transfère un truc énorme – dans le groupe de classe, dans la cour ou à la maison –, demande d’abord : qui dit ça – et comment peut-il le savoir ?",
+        "hintergrund": "Plus fiable que les détails, la source : les vérificateurs professionnels quittent vite un site inconnu et vont voir ailleurs qui se cache derrière – ils jugeaient ainsi plus vite et plus souvent juste que ceux qui lisaient le site en détail (Wineburg & McGrew, 2019). Le jeu de cartes et le tableau des ficelles suivent l’inoculation contre les fausses informations : qui apprend d’abord les ficelles – indignation, faux experts, urgence – à petite dose s’y laisse moins prendre. Un jeu où l’on fabrique soi-même des fakes a réduit cette vulnérabilité (Roozenbeek & van der Linden, 2019) ; cinq courtes vidéos sur ces ficelles ont nettement amélioré, y compris sur YouTube, la détection des fausses informations (Roozenbeek et al., 2022). Les modèles de langage produisent en outre des contenus plausibles mais faux (Ji et al., 2023). Comme beaucoup de fakes misent sur la colère, le frein à partage précède la vérification.",
         "quellen": [
           "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
           "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+          "Roozenbeek, J., van der Linden, S., Goldberg, B., Rathje, S. & Lewandowsky, S. (2022). Psychological inoculation improves resilience against misinformation on social media. Science Advances, 8(34), eabo6254.",
           "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38."
         ],
         "achtung": "Ne créer ni ne montrer aucun trucage de personnes réelles, même pour une démonstration ; tous les exemples sont inventés, changer avant le cours les prénoms portés par des jeunes de la classe. Si un jeune parle d’images truquées, gênantes ou intimes d’une personne réelle : ne pas se les faire montrer ni envoyer, même pour vérifier, ne rien laisser transférer et ne pas approfondir devant la classe ; les preuves, c’est l’affaire du SePAS. Lui parler seul à seul après le cours, informer le SePAS le jour même et suivre le protocole de protection de l’école. En cas de chantage avec des images, chercher de l’aide tout de suite. Conseil : BEE SECURE Helpline 8002 1234.",
@@ -532,7 +536,7 @@
           "leichter": "Pour le jeu de cartes, qui ne veut pas lire passe son tour ; les autres décident avec lui. Parcourir la liste à deux, à voix haute ; dans le feu tricolore, un mot-clé par couleur suffit. Un jeune qui apprend encore la langue du cours s’appuie sur les cartes titre et les feuilles de couleur au tableau – montrer passe avant parler – et peut écrire le message de l’exercice 3 dans sa langue.",
           "schwerer": "Fabriquer une fausse information inoffensive et inventée sur un sujet scolaire, sans personnes réelles et avec au moins trois astuces de la liste, puis la faire vérifier par un autre îlot. Ou animer le vote et demander où se trouve exactement la limite."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et chiffre (5 min), jeu de cartes avec quatre cartes par îlot et une courte correction (15 min), liste de vérification avec la publication du groupe de classe (10 min), vote sur l’IA avec quatre situations (10 min), frein à partage (5 min), Skills-Pass et mission (5 min). Le feu tricolore de l’IA et le message (exercices 2 et 3) sont rattrapés à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et chiffre (5 min), jeu de cartes avec quatre cartes par îlot et une courte correction (15 min), liste de vérification avec la publication du groupe de classe (10 min), vote sur l’IA avec quatre situations (10 min), frein à partage (5 min), Skills-Pass, choisir son moment et mission (5 min). Le feu tricolore de l’IA et le message (exercices 2 et 3) sont rattrapés à la séance suivante."
       }
     }
   ],
@@ -612,9 +616,9 @@
           },
           {
             "art": "info",
-            "symbol": "tipp",
-            "titel": "Prüfen wie die Profis",
-            "text": "Profis bleiben nicht im Beitrag. Sie schauen woanders nach: Wer steckt dahinter? Berichten bekannte Seiten auch darüber? Seltsame Hände verraten KI-Bilder immer seltener – die Frage nach der Quelle bleibt."
+            "symbol": "wissen",
+            "titel": "Aus der Forschung",
+            "text": "Profis bleiben nicht im Beitrag: Sie schauen woanders nach, wer dahintersteckt – und liegen damit öfter richtig als Leute, die nur das Bild genau anschauen. Wer die Tricks der Fälscher kennt, fällt messbar seltener darauf herein."
           },
           {
             "art": "info",
@@ -689,10 +693,11 @@
             "Schritt 7 (5 Min.): Aufgabe 2 allein, nach der KI-Abstimmung; ein Stichwort je Farbe reicht.",
             "Schritt 7 (4 Min.): den Kasten „Klare Grenze“ lesen, dann Aufgabe 3 zu zweit; zum Schluss auf den Hilfe-Kasten zeigen."
           ],
-          "hintergrund": "Professionelle Faktenprüfer verlassen eine unbekannte Seite schnell und prüfen woanders, wer dahintersteht (Wineburg & McGrew, 2019); deshalb fragt das Blatt nach der Quelle und danach, wo man nachprüfen kann. Wer die Tricks von Falschmeldungen kennt, fällt seltener darauf herein (Roozenbeek & van der Linden, 2019). Sprachmodelle erzeugen Inhalte, die plausibel klingen, aber nicht stimmen (Ji et al., 2023).",
+          "hintergrund": "Professionelle Faktenprüfer verlassen eine unbekannte Seite schnell und prüfen woanders, wer dahintersteht (Wineburg & McGrew, 2019); deshalb fragt das Blatt nach der Quelle und danach, wo man nachprüfen kann. Wer die Tricks von Falschmeldungen kennt, fällt seltener darauf herein (Roozenbeek & van der Linden, 2019); fünf kurze Videos über solche Tricks verbesserten das Erkennen von Falschmeldungen messbar (Roozenbeek et al., 2022) – daher der Kasten „Aus der Forschung“. Sprachmodelle erzeugen Inhalte, die plausibel klingen, aber nicht stimmen (Ji et al., 2023).",
           "quellen": [
             "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
             "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+            "Roozenbeek, J., van der Linden, S., Goldberg, B., Rathje, S. & Lewandowsky, S. (2022). Psychological inoculation improves resilience against misinformation on social media. Science Advances, 8(34), eabo6254.",
             "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38."
           ],
           "achtung": "Berichtet jemand von gefälschten oder intimen Bildern einer realen Person: sich nichts zeigen oder schicken lassen, nichts weiterleiten lassen, nach der Stunde sprechen, noch am selben Tag den SePAS informieren.",
@@ -749,9 +754,9 @@
           },
           {
             "art": "info",
-            "symbol": "tipp",
-            "titel": "Vérifier comme les pros",
-            "text": "Les pros ne restent pas dans la publication. Ils vont voir ailleurs : qui se cache derrière ? Des sites connus en parlent-ils aussi ? Les mains bizarres trahissent de moins en moins les images d’IA – la question de la source reste."
+            "symbol": "wissen",
+            "titel": "Ce que dit la recherche",
+            "text": "Les pros ne restent pas dans la publication : ils vont voir ailleurs qui se cache derrière – et ils ont plus souvent raison que ceux qui examinent seulement l’image. Qui connaît les ficelles des faussaires s’y laisse nettement moins prendre."
           },
           {
             "art": "info",
@@ -826,10 +831,11 @@
             "Étape 7 (5 min) : exercice 2 seul, après le vote sur l’IA ; un mot-clé par couleur suffit.",
             "Étape 7 (4 min) : lire l’encadré « Limite claire », puis exercice 3 à deux ; pour finir, montrer l’encadré d’aide."
           ],
-          "hintergrund": "Des vérificateurs professionnels quittent vite un site inconnu et vont voir ailleurs qui se cache derrière (Wineburg & McGrew, 2019) ; la fiche demande donc la source, puis où l’on pourrait vérifier. Qui connaît les ficelles des fausses informations s’y laisse moins prendre (Roozenbeek & van der Linden, 2019). Les modèles de langage produisent des contenus plausibles mais faux (Ji et al., 2023).",
+          "hintergrund": "Des vérificateurs professionnels quittent vite un site inconnu et vont voir ailleurs qui se cache derrière (Wineburg & McGrew, 2019) ; la fiche demande donc la source, puis où l’on pourrait vérifier. Qui connaît les ficelles des fausses informations s’y laisse moins prendre (Roozenbeek & van der Linden, 2019) ; cinq courtes vidéos sur ces ficelles ont nettement amélioré la détection des fausses informations (Roozenbeek et al., 2022) – d’où l’encadré « Ce que dit la recherche ». Les modèles de langage produisent des contenus plausibles mais faux (Ji et al., 2023).",
           "quellen": [
             "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
             "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+            "Roozenbeek, J., van der Linden, S., Goldberg, B., Rathje, S. & Lewandowsky, S. (2022). Psychological inoculation improves resilience against misinformation on social media. Science Advances, 8(34), eabo6254.",
             "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38."
           ],
           "achtung": "Si un jeune parle d’images truquées ou intimes d’une personne réelle : ne rien se faire montrer ni envoyer, ne rien laisser transférer, lui parler après le cours, informer le SePAS le jour même.",

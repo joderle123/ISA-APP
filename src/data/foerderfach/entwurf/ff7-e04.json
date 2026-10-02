@@ -127,11 +127,11 @@
             "titel": "Rückblick und Thema: Was schaffen wir nur gemeinsam?",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann kurz nach der Wochen-Mission fragen: Wer hat jemandem aus der Klasse eine Frage gestellt und nachgefragt? Daumen hoch, Mitte oder runter; eine Stimme erzählt, wie es war – nicht, was die andere Person erzählt hat. Auf das Plakat „Das haben wir gemeinsam“ zeigen und die Leitfrage für heute an die Tafel schreiben: Was schaffen wir nur gemeinsam?",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann kurz nach der Wochen-Mission fragen: Kam euer Moment – Bus, Pause, Kantine –, und habt ihr jemandem eine Frage gestellt und nachgefragt? Daumen hoch, Mitte oder runter; eine Stimme erzählt, wie es war – nicht, was die andere Person erzählt hat. Auf das Plakat „Das haben wir gemeinsam“ zeigen und die Leitfrage für heute an die Tafel schreiben: Was schaffen wir nur gemeinsam?",
             "sagen": [
               "Letzte Woche habt ihr entdeckt, was ihr gemeinsam habt. Heute geht es darum, was ihr nur gemeinsam schafft."
             ],
-            "tipp": "Die Mission nur kurz anfragen; wer eine Frage gestellt hat, bekommt ein Lächeln, keine Bewertung. Eine Geschichte reicht."
+            "tipp": "Die Mission nur kurz anfragen; wer eine Frage gestellt hat, bekommt ein Lächeln, keine Bewertung. Eine Geschichte reicht. Kam der Moment nicht, ist das keine Niederlage – die nächste Mission bekommt einen neuen."
           },
           {
             "titel": "Rollen und Runde 1: das Bank-Rätsel",
@@ -248,7 +248,7 @@
             "titel": "Skill: Im Takt atmen",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: Zum Schluss atmet die ganze Klasse im selben Takt – ein Skill, den man auch allein nutzen kann, wenn es laut, hektisch oder zu viel wird. Alle sitzen, beide Füße auf dem Boden, eine Hand auf dem Bauch. Die Lehrkraft zählt leise vor: ein – zwei – drei – vier, aus – zwei – drei – vier (2 Min.). Dann übernimmt eine freiwillige Person das Zählen, danach eine zweite (3 Min.). Zum Schluss atmet jede Person eine Minute still im eigenen Takt. Zwei, drei Rückmeldungen: Wie war es, im selben Takt zu atmen? Wann könnte das allein helfen? (2 Min.) Erklären: Langsames, gleichmäßiges Atmen beruhigt den Körper; gemeinsam wirkt es wie ein Anker für die ganze Gruppe.",
+            "text": "Ankündigen: Zum Schluss atmet die ganze Klasse im selben Takt – ein Skill, den man auch allein nutzen kann, wenn es laut, hektisch oder zu viel wird (1 Min.). Alle sitzen, beide Füße auf dem Boden, eine Hand auf dem Bauch oder auf dem Tisch; die Augen bleiben offen, wer mag, schließt sie. Die Lehrkraft zählt leise vor: ein – zwei – drei – vier, aus – zwei – drei – vier (1 Min.). Dann übernimmt eine freiwillige Person das Zählen (1 Min.); zum Schluss atmet jede Person eine Minute still im eigenen Takt – wer aussteigen möchte, drückt stattdessen die Füße in den Boden und zählt bis zehn (1 Min.). Danach drei, vier Rückmeldungen: Wie war es, im selben Takt zu atmen? Wann könnte das allein helfen? (3 Min.) Erklären: Langsames, gleichmäßiges Atmen beruhigt den Körper; gemeinsam wirkt es wie ein Anker für die ganze Gruppe – als Angebot, nie als Strafe oder Mittel gegen Unruhe (3 Min.).",
             "sagen": [
               "Ein – zwei – drei – vier. Aus – zwei – drei – vier.",
               "Wo könntet ihr das allein brauchen – in der Pause, vor einem Test, abends im Bett?"
@@ -258,34 +258,35 @@
               "Vier Zählzeiten einatmen, vier Zählzeiten ausatmen.",
               "Zehn Atemzüge im Takt – dann spüren, was anders ist."
             ],
-            "tipp": "Vier Zählzeiten sind ein Richtwert: Wem das zu lang ist, atmet kürzer, aber gleichmäßig. Das Zählen an Freiwillige abzugeben, macht aus der Übung etwas, das der Klasse gehört.",
-            "wennEsKippt": "Kichern ist beim ersten Mal normal: nicht ermahnen, ruhig weiterzählen – nach drei, vier Atemzügen wird es meist still. Wer die Hand nicht auf den Bauch legen mag, legt sie auf den Tisch; niemand muss die Augen schließen."
+            "tipp": "Vier Zählzeiten sind ein Richtwert: Wem das zu lang ist, atmet kürzer, aber gleichmäßig. Das Zählen an Freiwillige abzugeben, macht aus der Übung etwas, das der Klasse gehört. Drei Minuten Atmen reichen – länger wird die Stille für manche unangenehm.",
+            "wennEsKippt": "Kichern ist beim ersten Mal normal: nicht ermahnen, ruhig weiterzählen – nach drei, vier Atemzügen wird es meist still. Wer die Hand nicht auf den Bauch legen mag, legt sie auf den Tisch; niemand muss die Augen schließen. Wer ganz aussteigen will, bleibt still sitzen – das ist in Ordnung und wird nicht kommentiert."
           },
           {
             "titel": "Skills-Pass, Daumen und Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Was tue ich bei der nächsten Gruppenarbeit, damit es klappt? Danach gibt es den Stempel. Daumen (1 Min.): Wie gut waren wir heute als Klasse? Auf drei zeigen alle gleichzeitig. Zum Schluss die Wochen-Mission ansagen (steht im Heft) und den Ausblick geben: Nächste Woche gründet ihr euren Klassenrat (2 Min.).",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Was tue ich bei der nächsten Gruppenarbeit, damit es klappt? Danach gibt es den Stempel. Daumen (1 Min.): Wie gut waren wir heute als Klasse? Auf drei zeigen alle gleichzeitig. Wochen-Mission und Moment wählen (1 Min.): Die Mission ansagen (steht im Heft) – eine Sache tun, die dem Team hilft. Jede Person wählt ihren Moment, etwa die nächste Gruppenarbeit, das Training oder ein Spiel in der Pause, und schreibt ihn in die Spalte „Mein Moment: Wenn …“. Ausblick (1 Min.): Nächste Woche gründet ihr euren Klassenrat.",
             "sagen": [
-              "Wie gut waren wir heute als Klasse – Daumen hoch, Mitte oder runter? Auf drei."
+              "Wie gut waren wir heute als Klasse – Daumen hoch, Mitte oder runter? Auf drei.",
+              "Wo seid ihr diese Woche in einem Team – Gruppenarbeit, Training, Spiel in der Pause? Schreibt diesen Moment ins Heft: Wenn …, dann tue ich eine Sache, die dem Team hilft."
             ],
             "tipp": "Die Turmhöhen und die Zeiten der Klatschwelle an der Tafel stehen lassen oder fotografieren: Nächste Woche im Klassenrat erinnern sie daran, was die Klasse gemeinsam schafft."
           }
         ],
         "bruecke": "Nächste Woche gründet ihr euren Klassenrat: Ihr lernt seine Rollen und seinen Ablauf kennen und trefft eure erste echte Entscheidung als Klasse.",
-        "mission": "Tu diese Woche bei einer Gruppenarbeit oder beim Sport eine Sache, die deinem Team hilft – zum Beispiel jemanden nach seiner Idee fragen.",
-        "hintergrund": "Zusammenhalt entsteht, wenn eine Gruppe Aufgaben löst, bei denen jede Person gebraucht wird. Im Ferienlager-Experiment von Robbers Cave bauten erst solche gemeinsamen Ziele die Feindseligkeit zwischen zwei Gruppen ab – bloße Begegnungen reichten nicht (Sherif et al., 1961). Nach Tuckman (1965) bilden Gruppen ihre Normen erst, nachdem sie gemeinsam gehandelt und sich auch aneinander gerieben haben; die Auswertung macht diesen Schritt sichtbar, und die neuen Team-Regeln fließen in die Klassenvereinbarung. Feste Rollen verhindern, dass zwei Lautstarke alles übernehmen und Stille übersehen werden: Jede Person hat eine sichtbare Aufgabe. Langsames, gleichmäßiges Atmen geht mit mehr Ruhe und weniger Erregung einher (Zaccaro et al., 2018); gemeinsam geübt, schließt es eine bewegte Stunde ruhig ab.",
+        "mission": "Wenn dein Moment kommt – die nächste Gruppenarbeit, das Training, ein Spiel in der Pause –, dann tu eine Sache, die deinem Team hilft: etwa jemanden nach seiner Idee fragen.",
+        "hintergrund": "Zusammenhalt entsteht, wenn eine Gruppe Aufgaben löst, bei denen jede Person gebraucht wird. Im Robbers-Cave-Experiment bauten erst solche gemeinsamen Ziele die Feindseligkeit zwischen zwei Gruppen ab – Begegnungen allein reichten nicht (Sherif et al., 1961). In der Schule bestätigt das eine Meta-Analyse: Bei jungen Jugendlichen fördern kooperative Ziele Leistung und Beziehungen, mehr als Wettbewerb oder Einzelarbeit (Roseth, Johnson & Johnson, 2008). Nach Tuckman (1965) bilden Gruppen ihre Normen erst, nachdem sie gemeinsam gehandelt und sich auch aneinander gerieben haben; die Auswertung macht diesen Schritt sichtbar, und die Team-Regeln kommen in die Klassenvereinbarung. Feste Rollen verhindern, dass zwei Lautstarke alles übernehmen und Stille übersehen werden. Das Atmen im Takt schließt die bewegte Stunde ruhig ab – kurz, Augen offen, Aussteigen erlaubt.",
         "quellen": [
           "Sherif, M., Harvey, O. J., White, B. J., Hood, W. R. & Sherif, C. W. (1961). Intergroup Conflict and Cooperation: The Robbers Cave Experiment. Norman, OK: University Book Exchange.",
-          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
-          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
+          "Roseth, C. J., Johnson, D. W. & Johnson, R. T. (2008). Promoting early adolescents’ achievement and peer relationships: The effects of cooperative, competitive, and individualistic goal structures. Psychological Bulletin, 134(2), 223–246.",
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399."
         ],
         "achtung": "Teamaufgaben machen Rangordnungen sichtbar: Wer wird überhört, wer übernimmt alles, wer bleibt außen vor? Das nicht vor der Klasse kommentieren, sondern über die Rollen steuern und Gruppen bei Bedarf offen neu einteilen. Frust gehört dazu; wird jemand ausgelacht oder als Schuldiger hingestellt, sofort stoppen: Kritisiert wird der Plan, nie die Person. Kein Körperkontakt bei den Aufgaben. Wer sich zurückzieht, bekommt die Rolle Beobachtung. Fällt auf, dass jemand dauerhaft ausgeschlossen wird, nach der Stunde mit Régent und SePAS sprechen.",
         "differenzierung": {
-          "leichter": "Eine Hinweiskarte darf eine Person vorlesen, die gut liest, wenn die Besitzerin oder der Besitzer zustimmt; die Bank wird an die Tafel gezeichnet, die vier Bilder auf dem Blatt helfen. Wer noch wenig Deutsch spricht, übernimmt zuerst die Rolle Zeit. Die Team-Regeln dürfen von der Tafel abgeschrieben werden.",
+          "leichter": "Eine Hinweiskarte darf eine Person vorlesen, die gut liest, wenn die Besitzerin oder der Besitzer zustimmt; die Bank wird an die Tafel gezeichnet, die vier Bilder auf dem Blatt helfen. Wer noch wenig Deutsch spricht, übernimmt zuerst die Rolle Zeit. Die Team-Regeln dürfen von der Tafel abgeschrieben werden; für die Spalte „Mein Moment“ reicht ein Wort wie Sport.",
           "schwerer": "Schnelle Gruppen erfinden ein eigenes Bank-Rätsel mit vier Hinweiskarten für eine andere Gruppe. Oder die Beobachtung übernehmen und für die Klasse zusammenfassen, was in allen Gruppen geholfen hat."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), Rollen und Bank-Rätsel (15 Min.), Zählen bis 20 als Bewegungspause der ganzen Klasse (5 Min.), Was hat geholfen, was hat gestört? (12 Min.), eine Team-Regel für die Klassenvereinbarung (8 Min.), Skills-Pass und Mission (5 Min.). Papierturm und Klatschwelle entfallen; der Turm eignet sich als Einstieg in eine spätere Stunde."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), Rollen und Bank-Rätsel (15 Min.), Zählen bis 20 als Bewegungspause der ganzen Klasse (5 Min.), Was hat geholfen, was hat gestört? (12 Min.), eine Team-Regel für die Klassenvereinbarung (8 Min.), Skills-Pass, Mission und Moment wählen (5 Min.). Papierturm und Klatschwelle entfallen; der Turm eignet sich als Einstieg in eine spätere Stunde."
       },
       "fr": {
         "titel": "Nous, la classe",
@@ -382,11 +383,11 @@
             "titel": "Retour et thème : qu’est-ce qu’on ne réussit qu’ensemble ?",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière fois. Puis demander brièvement où en est la mission de la semaine : qui a posé une question à quelqu’un de la classe et demandé une précision ? Pouce en haut, au milieu ou en bas ; une voix raconte comment ça s’est passé – pas ce que l’autre a raconté. Montrer l’affiche « Ce que nous avons en commun » et écrire la question du jour au tableau : qu’est-ce qu’on ne réussit qu’ensemble ?",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière fois. Puis demander brièvement où en est la mission de la semaine : votre moment est-il arrivé – bus, récré, cantine –, et avez-vous posé une question à quelqu’un, puis demandé une précision ? Pouce en haut, au milieu ou en bas ; une voix raconte comment ça s’est passé – pas ce que l’autre a raconté. Montrer l’affiche « Ce que nous avons en commun » et écrire la question du jour au tableau : qu’est-ce qu’on ne réussit qu’ensemble ?",
             "sagen": [
               "La semaine dernière, vous avez découvert ce que vous avez en commun. Aujourd’hui, on regarde ce que vous ne réussissez qu’ensemble."
             ],
-            "tipp": "Ne poser la question de la mission que brièvement ; qui a posé une question reçoit un sourire, pas une évaluation. Une seule histoire suffit."
+            "tipp": "Ne poser la question de la mission que brièvement ; qui a posé une question reçoit un sourire, pas une évaluation. Une seule histoire suffit. Si le moment n’est pas venu, ce n’est pas un échec – la prochaine mission en reçoit un nouveau."
           },
           {
             "titel": "Rôles et manche 1 : l’énigme du banc",
@@ -503,7 +504,7 @@
             "titel": "Skill : respirer en rythme",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : pour finir, toute la classe respire au même rythme – un skill qu’on peut aussi utiliser seul quand c’est bruyant, agité ou trop. Tout le monde est assis, les deux pieds au sol, une main sur le ventre. Compter doucement : inspire – deux – trois – quatre, expire – deux – trois – quatre (2 min). Puis un volontaire prend le relais pour compter, ensuite un deuxième (3 min). Pour finir, chacun respire une minute en silence, à son propre rythme. Deux ou trois retours : comment c’était de respirer au même rythme ? À quel moment pourrait-on l’utiliser seul (2 min) ? Expliquer : respirer lentement et régulièrement calme le corps ; ensemble, c’est comme une ancre pour tout le groupe.",
+            "text": "Annoncer : pour finir, toute la classe respire au même rythme – un skill qu’on peut aussi utiliser seul quand c’est bruyant, agité ou trop (1 min). Tout le monde est assis, les deux pieds au sol, une main sur le ventre ou sur la table ; les yeux restent ouverts, qui le souhaite les ferme. Compter doucement : inspire – deux – trois – quatre, expire – deux – trois – quatre (1 min). Puis un volontaire prend le relais pour compter (1 min) ; pour finir, chacun respire une minute en silence, à son propre rythme – qui veut arrêter appuie plutôt les pieds dans le sol et compte jusqu’à dix (1 min). Ensuite, trois ou quatre retours : comment c’était de respirer au même rythme ? À quel moment pourrait-on l’utiliser seul (3 min) ? Expliquer : respirer lentement et régulièrement calme le corps ; ensemble, c’est comme une ancre pour tout le groupe – une offre, jamais une punition ni un moyen contre l’agitation (3 min).",
             "sagen": [
               "Inspire – deux – trois – quatre. Expire – deux – trois – quatre.",
               "Où pourriez-vous l’utiliser chacun pour soi – à la récré, avant un devoir en classe, le soir au lit ?"
@@ -513,34 +514,35 @@
               "Inspirer sur quatre temps, expirer sur quatre temps.",
               "Dix respirations en rythme – puis sentir ce qui a changé."
             ],
-            "tipp": "Quatre temps, c’est un repère : qui trouve ça trop long respire plus court, mais régulièrement. Confier le comptage à des volontaires fait de l’exercice quelque chose qui appartient à la classe.",
-            "wennEsKippt": "Les rires sont normaux la première fois : ne pas faire de remarque, continuer à compter calmement – après trois ou quatre respirations, le calme revient en général. Qui ne veut pas poser la main sur le ventre la pose sur la table ; personne n’est obligé de fermer les yeux."
+            "tipp": "Quatre temps, c’est un repère : qui trouve ça trop long respire plus court, mais régulièrement. Confier le comptage à des volontaires fait de l’exercice quelque chose qui appartient à la classe. Trois minutes de respiration suffisent – plus long, le silence devient désagréable pour certains.",
+            "wennEsKippt": "Les rires sont normaux la première fois : ne pas faire de remarque, continuer à compter calmement – après trois ou quatre respirations, le calme revient en général. Qui ne veut pas poser la main sur le ventre la pose sur la table ; personne n’est obligé de fermer les yeux. Qui veut arrêter tout à fait reste assis en silence – c’est permis et on ne le commente pas."
           },
           {
             "titel": "Skills-Pass, pouce et mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (2 min) : écrire la question au tableau – que vais-je faire au prochain travail de groupe pour que ça marche ? Ensuite, le tampon. Le pouce (1 min) : avons-nous bien fonctionné aujourd’hui en tant que classe ? À trois, tout le monde montre en même temps. Pour finir, annoncer la mission de la semaine (elle figure dans le cahier) et la suite : la semaine prochaine, vous fondez votre conseil de coopération (2 min).",
+            "text": "Skills-Pass (2 min) : écrire la question au tableau – que vais-je faire au prochain travail de groupe pour que ça marche ? Ensuite, le tampon. Le pouce (1 min) : avons-nous bien fonctionné aujourd’hui en tant que classe ? À trois, tout le monde montre en même temps. Mission de la semaine et choix du moment (1 min) : annoncer la mission (elle figure dans le cahier) – faire une chose qui aide l’équipe. Chacun choisit son moment, par exemple le prochain travail de groupe, l’entraînement ou un jeu à la récré, et l’écrit dans la colonne « Mon moment : quand … ». La suite (1 min) : la semaine prochaine, vous fondez votre conseil de coopération.",
             "sagen": [
-              "Avons-nous bien fonctionné aujourd’hui en tant que classe – pouce en haut, au milieu ou en bas ? À trois."
+              "Avons-nous bien fonctionné aujourd’hui en tant que classe – pouce en haut, au milieu ou en bas ? À trois.",
+              "Où serez-vous en équipe cette semaine – travail de groupe, entraînement, jeu à la récré ? Écrivez ce moment dans le cahier : quand…, alors je fais une chose qui aide l’équipe."
             ],
             "tipp": "Laisser au tableau ou photographier les hauteurs des tours et les temps du clap en relais : au conseil de coopération, la semaine prochaine, ils rappellent ce que la classe réussit ensemble."
           }
         ],
         "bruecke": "La semaine prochaine, vous fondez votre conseil de coopération : vous découvrez ses rôles et son déroulement et vous prenez votre première vraie décision en tant que classe.",
-        "mission": "Cette semaine, lors d’un travail de groupe ou au sport, fais une chose qui aide ton équipe – par exemple demander son idée à quelqu’un.",
-        "hintergrund": "La cohésion naît quand un groupe relève des défis où chacun est indispensable. Lors de l’expérience de la colonie de vacances de Robbers Cave, seuls de tels objectifs communs ont fait baisser l’hostilité entre deux groupes – les simples rencontres n’y suffisaient pas (Sherif et al., 1961). Selon Tuckman (1965), un groupe ne construit ses normes qu’après avoir agi ensemble et connu aussi des frictions ; l’analyse de la séance rend cette étape visible, et les nouvelles règles d’équipe rejoignent la charte de classe. Des rôles fixes évitent que deux voix fortes prennent tout en charge pendant que les plus discrets passent inaperçus : chacun a une tâche visible. Une respiration lente et régulière va de pair avec plus de calme et moins d’agitation (Zaccaro et al., 2018) ; pratiquée ensemble, elle clôt sereinement une séance très active.",
+        "mission": "Quand ton moment arrive – le prochain travail de groupe, l’entraînement ou un jeu à la récré –, fais une chose qui aide ton équipe : par exemple demander son idée à quelqu’un.",
+        "hintergrund": "La cohésion naît quand un groupe relève des défis où chacun est indispensable. Lors de l’expérience de Robbers Cave, seuls des objectifs communs ont fait baisser l’hostilité entre deux groupes – les simples rencontres n’y suffisaient pas (Sherif et al., 1961). À l’école, une méta-analyse le confirme : chez les jeunes adolescents, les objectifs coopératifs favorisent résultats et relations, plus que la compétition ou le travail seul (Roseth, Johnson & Johnson, 2008). Selon Tuckman (1965), un groupe ne construit ses normes qu’après avoir agi ensemble et connu aussi des frictions ; l’analyse de la séance rend cette étape visible, et les règles d’équipe rejoignent la charte. Des rôles fixes évitent que deux voix fortes prennent tout en charge et que les discrets passent inaperçus. Respirer en rythme clôt calmement une séance très active – court, yeux ouverts, arrêt permis.",
         "quellen": [
           "Sherif, M., Harvey, O. J., White, B. J., Hood, W. R. & Sherif, C. W. (1961). Intergroup Conflict and Cooperation: The Robbers Cave Experiment. Norman, OK: University Book Exchange.",
-          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
-          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
+          "Roseth, C. J., Johnson, D. W. & Johnson, R. T. (2008). Promoting early adolescents’ achievement and peer relationships: The effects of cooperative, competitive, and individualistic goal structures. Psychological Bulletin, 134(2), 223–246.",
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399."
         ],
         "achtung": "Les défis d’équipe rendent visibles les hiérarchies : qui n’est pas écouté, qui prend tout en main, qui reste à l’écart ? Ne pas le commenter devant la classe, mais agir par les rôles et, si besoin, recomposer ouvertement les groupes. La frustration fait partie du jeu ; si quelqu’un est moqué ou désigné comme coupable, arrêter tout de suite : on critique le plan, jamais la personne. Pas de contact physique pendant les défis. Qui se met en retrait prend le rôle d’observation. Si un jeune semble exclu durablement, en parler après le cours avec le régent et le SePAS.",
         "differenzierung": {
-          "leichter": "Une carte d’indices peut être lue par quelqu’un qui lit bien, si sa propriétaire ou son propriétaire est d’accord ; le banc est dessiné au tableau, et les quatre images de la fiche aident. Qui parle encore peu le français prend d’abord le rôle du temps. Les règles d’équipe peuvent être recopiées du tableau.",
+          "leichter": "Une carte d’indices peut être lue par quelqu’un qui lit bien, si sa propriétaire ou son propriétaire est d’accord ; le banc est dessiné au tableau, et les quatre images de la fiche aident. Qui parle encore peu le français prend d’abord le rôle du temps. Les règles d’équipe peuvent être recopiées du tableau ; pour la colonne « Mon moment », un mot comme sport suffit.",
           "schwerer": "Les groupes rapides inventent leur propre énigme du banc, avec quatre cartes d’indices, pour un autre îlot. Ou prendre le rôle d’observation et résumer pour la classe ce qui a aidé dans tous les groupes."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), rôles et énigme du banc (15 min), compter jusqu’à 20 en classe entière comme pause active (5 min), qu’est-ce qui a aidé, qu’est-ce qui a gêné ? (12 min), une règle d’équipe pour la charte (8 min), Skills-Pass et mission (5 min). La tour en papier et le clap en relais sont supprimés ; la tour peut ouvrir une séance ultérieure."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), rôles et énigme du banc (15 min), compter jusqu’à 20 en classe entière comme pause active (5 min), qu’est-ce qui a aidé, qu’est-ce qui a gêné ? (12 min), une règle d’équipe pour la charte (8 min), Skills-Pass, mission et choix du moment (5 min). La tour en papier et le clap en relais sont supprimés ; la tour peut ouvrir une séance ultérieure."
       }
     }
   ],

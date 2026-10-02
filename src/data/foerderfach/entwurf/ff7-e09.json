@@ -39,7 +39,7 @@
           "ordnen Gefühlswörter den sechs Grundgefühlen des Gefühlsrads zu",
           "erklären die Botschaft jedes Gefühls, auch der unangenehmen",
           "erkennen Gefühle an Gesicht und Haltung und stellen sie ohne Worte dar",
-          "probieren die Farbsuche als Skill aus"
+          "probieren die Farbsuche als Skill aus und wählen einen Moment, um sie zu üben"
         ],
         "material": [
           "Gefühlsrad-Plakat, 20 Klebepunkte",
@@ -105,7 +105,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass und Blitzlicht"
+            "titel": "Skills-Pass, Blitzlicht und Moment wählen"
           }
         ],
         "schritte": [
@@ -125,7 +125,7 @@
             "titel": "Rückblick und Start ins Kapitel Gefühle",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission per Daumen fragen: Wer hat eine Stärke bewusst eingesetzt? Hoch, Mitte, runter; eine Stimme erzählt, niemand muss sie geschafft haben. Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was fühle ich – und wozu? Die Brücke zum Glas der Bedürfnisse schlagen: Ist ein Tank leer, meldet sich oft ein Gefühl. Zum Schluss die vier Stunden des Kapitels nennen: heute Gefühle und ihre Botschaften, dann Gefühle am Steuer, Gefühle im Körper und gemischte Gefühle.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission fragen: Kam dein Moment – und hast du deine Stärke eingesetzt? Daumen hoch, Mitte, runter; eine Stimme erzählt, was passiert ist; niemand muss den Moment erlebt haben. Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was fühle ich – und wozu? Die Brücke zum Glas der Bedürfnisse schlagen: Ist ein Tank leer, meldet sich oft ein Gefühl. Zum Schluss die vier Stunden des Kapitels nennen: heute Gefühle und ihre Botschaften, dann Gefühle am Steuer, Gefühle im Körper und gemischte Gefühle.",
             "sagen": [
               "Wer zu wenig geschlafen hat, ist schneller gereizt. Wer sich ausgeschlossen fühlt, wird traurig oder wütend. Das Gefühl zeigt: Hier ist ein Tank leer.",
               "In den nächsten vier Wochen geht es darum, Gefühle zu verstehen – nicht darum, sie loszuwerden."
@@ -283,30 +283,31 @@
             "wennEsKippt": "Rufen einige ihre Zahlen in den Raum, gelassen die nächste Farbe ansagen: Diesmal zählt jede Person nur für sich. Wird es zu unruhig, nach einer Farbe aufhören und den Skill in der nächsten Stunde wiederholen."
           },
           {
-            "titel": "Skills-Pass und Blitzlicht",
+            "titel": "Skills-Pass, Blitzlicht und Moment wählen",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Welches Gefühl verstehe ich heute besser, und was will es mir sagen? Wer mag, schreibt stattdessen seinen Satz aus Aufgabe 3 hinein; danach gibt es den Stempel. Blitzlicht (2 Min.): Jede Person nennt ein Wort zu heute, schnell und ohne Kommentar; „weiter“ ist erlaubt. Zum Schluss die Wochen-Mission ansagen – Aufgabe 4 auf dem Blatt ist Platz für eine Zeile – und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Welches Gefühl verstehe ich heute besser, und was will es mir sagen? Wer mag, schreibt stattdessen seinen Satz aus Aufgabe 3 hinein; danach gibt es den Stempel. Blitzlicht (1 Min.): Jede Person nennt ein Wort zu heute, schnell reihum und ohne Kommentar; „weiter“ ist erlaubt. Mission und Moment wählen (2 Min.): Die Wochen-Mission ansagen – die Farbsuche, wenn ein Gefühl laut wird. Dann wählt jede Person ihren Moment: Auf drei zeigen alle einen Finger für ‚wenn mich jemand nervt‘, zwei für ‚vor einem Test‘, drei für ‚abends im Bett‘, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ bei den Wochen-Missionen im Heft. Aufgabe 4 auf dem Blatt ist der Platz für das, was danach passiert. Mit dem Ausblick auf die nächste Stunde schließen.",
             "sagen": [
-              "Ein Wort zu heute. Nur ein Wort, ohne Erklärung."
+              "Ein Wort zu heute. Nur ein Wort, ohne Erklärung.",
+              "Wann kommt dein Moment für die Farbsuche? Ein Finger: jemand nervt mich. Zwei: vor einem Test. Drei: abends im Bett. Faust: ein eigener Moment."
             ],
-            "tipp": "Sortierbögen und Botschaften-Plakat aufheben: In den nächsten drei Stunden hängen sie neben dem Gefühlsrad, und in Einheit 12 schaut die Klasse auf sie zurück."
+            "tipp": "Sortierbögen und Botschaften-Plakat aufheben: In den nächsten drei Stunden hängen sie neben dem Gefühlsrad, und in Einheit 12 schaut die Klasse auf sie zurück. Beim Moment zählt, dass er im Heft steht – wer unschlüssig ist, nimmt den der Nachbarin."
           }
         ],
-        "bruecke": "Nächste Woche schaut ihr in einen Kopf hinein: Freude, Kummer, Angst, Wut und Ekel streiten sich um das Steuer – und ihr findet heraus, warum auch Kummer gebraucht wird.",
-        "mission": "Wenn diese Woche ein Gefühl laut wird, probiere einmal die Farbsuche. Frag dich danach: Was wollte mir das Gefühl sagen?",
-        "hintergrund": "Gefühle sind kurze, organisierte Reaktionen auf Ereignisse, die für uns bedeutsam sind: Sie lenken die Aufmerksamkeit, bereiten den Körper auf eine Handlung vor und zeigen anderen, was in uns vorgeht. Ekman (1992) beschreibt Grundgefühle, deren Gesichtsausdruck in vielen Kulturen erkannt wird – darunter Ekel und Überraschung, die im Gefühlsrad der Klasse fehlen. Plutchik (2001) ordnet jedem Grundgefühl eine Aufgabe zu: Angst schützt, Wut räumt Hindernisse aus dem Weg, Traurigkeit sucht verlorene Nähe. Auch angenehme Gefühle haben eine Aufgabe: Sie erweitern Denken und Handeln und bauen Kraftquellen auf (Fredrickson, 2001). Die Botschaften sind Faustregeln, keine Befehle: Ein Gefühl kann Fehlalarm geben, etwa große Angst vor einem harmlosen Referat. Wer die Botschaft kennt, kann innehalten und prüfen, bevor er dem ersten Impuls folgt – darauf bauen die nächsten Kapitel auf.",
+        "bruecke": "Nächste Woche schaut ihr in den Kopf von Jana, die gerade umgezogen ist: Freude, Kummer, Angst, Wut und Ekel streiten sich dort um das Steuer – und ihr findet heraus, warum auch Kummer gebraucht wird.",
+        "mission": "Mach die Farbsuche einmal in deinem Moment – wenn dich jemand nervt, vor einem Test oder abends im Bett. Frag dich danach: Was wollte mir das Gefühl sagen?",
+        "hintergrund": "Grundlage sind die Grundgefühle und das Gefühlsrad: Ekman (1992) beschreibt Grundgefühle, deren Gesichtsausdruck in vielen Kulturen erkannt wird – darunter Ekel und Überraschung, die im Gefühlsrad (nach Willcox, 1982) fehlen. Jedes Grundgefühl hat eine Aufgabe (Plutchik, 2001): Angst schützt, Wut räumt Hindernisse weg, Traurigkeit sucht Nähe; die Botschaften sind Faustregeln, keine Befehle. Zwei Befunde tragen die Stunde: Benannten Erwachsene das Gefühl auf einem Gesicht, reagierte die Amygdala, ein Alarmzentrum des Gehirns, schwächer (Lieberman et al., 2007). Und Klassen der 5. und 6. Schulstufe, die ein Jahr lang mit Gefühlswörtern arbeiteten, hatten am Jahresende bessere Noten und galten ihren Lehrkräften als sozial-emotional kompetenter (Brackett et al., 2012). Wer sein Gefühl benennen kann, kann innehalten, bevor er dem ersten Impuls folgt – darauf bauen die nächsten Kapitel auf.",
         "quellen": [
           "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
-          "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
-          "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226."
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428.",
+          "Brackett, M. A., Rivers, S. E., Reyes, M. R. & Salovey, P. (2012). Enhancing academic performance and social and emotional competence with the RULER feeling words curriculum. Learning and Individual Differences, 22(2), 218–224."
         ],
         "achtung": "Gefühle sind ein persönliches Thema: Niemand muss erzählen, wann er ein Gefühl zuletzt hatte; Aufgabe 3 und 4 bleiben privat, „weiter“ ist immer erlaubt. Die Situationen ohne Traurigkeit oder Freude können an Verluste oder eine lange traurige Zeit erinnern. Wird ein Beitrag zu persönlich, freundlich stoppen, danken und ein Gespräch nach der Stunde anbieten. Sagt jemand, er spüre seit Langem keine Freude mehr, oder wählt oft Wörter wie hilflos oder einsam, unter vier Augen nachfragen und den SePAS einbeziehen. Bei Hinweisen auf Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken noch am selben Tag den SePAS informieren und nach dem Schutzkonzept handeln.",
         "differenzierung": {
           "leichter": "Für Jugendliche, die mühsam lesen oder die Sprache noch lernen: Wörter in der eigenen Sprache erlauben und mit einer Gefühlskarte zeigen lassen; die sechs Botschaften vorab übersetzen (etwa mit einer Übersetzungs-App) und neben das Blatt legen; Aufgabe 2 mit den Karten legen; in Aufgabe 3 reicht ein Stichwort. Botschaften-Plakat und Wortspeicher bleiben sichtbar; ein Tandem mit einer Person derselben Sprache hilft.",
           "schwerer": "Überlegen, wann ein Gefühl übers Ziel hinausschießt – etwa große Angst vor einem harmlosen Referat – und was dann hilft. Oder für die Wörter vom Rand (Neid, Scham, Überraschung) eine eigene Botschaft formulieren und auf dem Plakat ergänzen."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit dem genaueren Wort (5 Min.), Gefühlswörter sammeln und sortieren (10 Min.), Ein Tag ohne … mit dem Botschaften-Plakat (15 Min.), Aufgaben 2 und 3 auf dem Blatt (8 Min.), Farbsuche (5 Min.), Skills-Pass und Blitzlicht (7 Min.). Pantomime, Gefühls-Detektive und Klassenrat entfallen; die Pantomime passt als Bewegungspause in die nächste Stunde, die Sitzung wird nachgeholt, wo es passt."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit dem genaueren Wort (5 Min.), Gefühlswörter sammeln und sortieren (10 Min.), Ein Tag ohne … mit dem Botschaften-Plakat (15 Min.), Aufgaben 2 und 3 auf dem Blatt (8 Min.), Farbsuche (5 Min.), Skills-Pass, Blitzlicht und Mission mit Moment (7 Min.). Pantomime, Gefühls-Detektive und Klassenrat entfallen; die Pantomime passt als Bewegungspause in die nächste Stunde, die Sitzung wird nachgeholt, wo es passt."
       },
       "fr": {
         "titel": "Les émotions – à quoi servent-elles ?",
@@ -315,7 +316,7 @@
           "classent des mots d’émotions sous les six émotions de base de la roue",
           "expliquent le message de chaque émotion, même désagréable",
           "reconnaissent des émotions au visage et à la posture et les miment",
-          "essaient la chasse aux couleurs comme skill"
+          "essaient la chasse aux couleurs comme skill et choisissent un moment pour l’exercer"
         ],
         "material": [
           "Roue des émotions, 20 gommettes",
@@ -381,7 +382,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass et tour éclair"
+            "titel": "Skills-Pass, tour éclair et choix du moment"
           }
         ],
         "schritte": [
@@ -401,7 +402,7 @@
             "titel": "Retour sur la séance et ouverture du chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission de la semaine, demander avec le pouce : qui a utilisé exprès une de ses forces ? En haut, au milieu, en bas ; une voix raconte, personne n’est obligé de l’avoir réussie. Puis ouvrir le nouveau chapitre et écrire la question clé au tableau : qu’est-ce que je ressens – et à quoi ça sert ? Faire le lien avec le bocal des besoins : quand un réservoir est vide, une émotion se manifeste souvent. Pour finir, annoncer les quatre séances du chapitre : aujourd’hui les émotions et leurs messages, puis les émotions aux commandes, les émotions dans le corps et les émotions mélangées.",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission de la semaine, demander : ton moment est-il venu – et as-tu utilisé ta force ? Pouce en haut, au milieu, en bas ; une voix raconte ce qui s’est passé ; personne n’est obligé d’avoir vécu son moment. Puis ouvrir le nouveau chapitre et écrire la question clé au tableau : qu’est-ce que je ressens – et à quoi ça sert ? Faire le lien avec le bocal des besoins : quand un réservoir est vide, une émotion se manifeste souvent. Pour finir, annoncer les quatre séances du chapitre : aujourd’hui les émotions et leurs messages, puis les émotions aux commandes, les émotions dans le corps et les émotions mélangées.",
             "sagen": [
               "Quand on a trop peu dormi, on s’énerve plus vite. Quand on se sent mis à l’écart, on devient triste ou en colère. L’émotion montre : ici, un réservoir est vide.",
               "Ces quatre prochaines semaines, il s’agit de comprendre les émotions – pas de s’en débarrasser."
@@ -559,30 +560,31 @@
             "wennEsKippt": "Si certains lancent leur chiffre à voix haute, annoncer calmement la couleur suivante : cette fois, chacun compte seulement pour soi. Si la classe s’agite trop, arrêter après une couleur et refaire le skill à la séance suivante."
           },
           {
-            "titel": "Skills-Pass et tour éclair",
+            "titel": "Skills-Pass, tour éclair et choix du moment",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (2 min) : écrire la question clé au tableau – quelle émotion est-ce que je comprends mieux aujourd’hui, et que veut-elle me dire ? Qui le souhaite peut y écrire à la place sa phrase de l’exercice 3 ; ensuite, le tampon. Tour éclair (2 min) : chacun dit un mot sur la séance, vite et sans commentaire ; on peut dire « je passe ». Pour finir, annoncer la mission de la semaine – l’exercice 4 de la fiche offre une ligne pour la noter – et la prochaine séance (1 min).",
+            "text": "Skills-Pass (2 min) : écrire la question clé au tableau – quelle émotion est-ce que je comprends mieux aujourd’hui, et que veut-elle me dire ? Qui le souhaite peut y écrire à la place sa phrase de l’exercice 3 ; ensuite, le tampon. Tour éclair (1 min) : chacun dit un mot sur la séance, vite, à la suite et sans commentaire ; on peut dire « je passe ». Mission et choix du moment (2 min) : annoncer la mission de la semaine – la chasse aux couleurs quand une émotion devient forte. Puis chacun choisit son moment : à trois, tout le monde montre un doigt pour “quand quelqu’un m’énerve”, deux pour “avant un devoir en classe”, trois pour “le soir au lit”, le poing pour un moment à soi – et le note dans la colonne « Mon moment : quand … » des missions de la semaine, dans le cahier. L’exercice 4 de la fiche sert à noter ce qui s’est passé ensuite. Terminer par l’annonce de la prochaine séance.",
             "sagen": [
-              "Un mot sur aujourd’hui. Juste un mot, sans explication."
+              "Un mot sur aujourd’hui. Juste un mot, sans explication.",
+              "Quand arrive ton moment pour la chasse aux couleurs ? Un doigt : quelqu’un m’énerve. Deux : avant un devoir en classe. Trois : le soir au lit. Le poing : un moment à moi."
             ],
-            "tipp": "Garder les feuilles de tri et l’affiche des messages : elles restent accrochées à côté de la roue pendant les trois prochaines séances, et la classe y revient à la séance 12."
+            "tipp": "Garder les feuilles de tri et l’affiche des messages : elles restent accrochées à côté de la roue pendant les trois prochaines séances, et la classe y revient à la séance 12. Pour le moment, l’essentiel est qu’il soit écrit dans le cahier – qui hésite prend celui de son voisin."
           }
         ],
-        "bruecke": "La semaine prochaine, vous allez regarder à l’intérieur d’une tête : Joie, Tristesse, Peur, Colère et Dégoût s’y disputent les commandes – et vous découvrirez pourquoi on a aussi besoin de Tristesse.",
-        "mission": "Quand une émotion devient forte cette semaine, essaie une fois la chasse aux couleurs. Demande-toi ensuite : qu’est-ce que cette émotion voulait me dire ?",
-        "hintergrund": "Les émotions sont des réactions brèves et organisées à des événements qui comptent pour nous : elles orientent l’attention, préparent le corps à agir et montrent aux autres ce qui se passe en nous. Ekman (1992) décrit des émotions de base dont l’expression du visage est reconnue dans de nombreuses cultures – parmi elles le dégoût et la surprise, absents de la roue de la classe. Plutchik (2001) attribue une fonction à chaque émotion de base : la peur protège, la colère écarte les obstacles, la tristesse cherche la proximité perdue. Les émotions agréables ont aussi un rôle : elles élargissent la pensée et l’action et construisent des ressources (Fredrickson, 2001). Les messages sont des repères, pas des ordres : une émotion peut donner une fausse alerte, comme une grande peur avant un exposé sans enjeu. Qui connaît le message peut marquer une pause et vérifier avant de suivre sa première impulsion – les chapitres suivants partent de là.",
+        "bruecke": "La semaine prochaine, vous allez regarder dans la tête de Jana, qui vient de déménager : Joie, Tristesse, Peur, Colère et Dégoût s’y disputent les commandes – et vous découvrirez pourquoi on a aussi besoin de Tristesse.",
+        "mission": "Fais une fois la chasse aux couleurs dans ton moment – quand quelqu’un t’énerve, avant un devoir en classe ou le soir au lit. Demande-toi ensuite : que voulait me dire l’émotion ?",
+        "hintergrund": "Base de la séance : les émotions de base et la roue. Ekman (1992) décrit des émotions de base dont le visage est reconnu dans beaucoup de cultures – dont le dégoût et la surprise, absents de la roue (d’après Willcox, 1982). Chaque émotion de base a une fonction (Plutchik, 2001) : la peur protège, la colère écarte les obstacles, la tristesse cherche la proximité ; les messages sont des repères, pas des ordres. Deux résultats portent la séance : quand des adultes nommaient l’émotion d’un visage, l’amygdale, centre d’alarme du cerveau, réagissait moins fort (Lieberman et al., 2007). Et des classes de 5e et 6e année qui ont travaillé un an avec des mots d’émotions ont eu de meilleures notes et ont été jugées plus compétentes socialement par leurs enseignants (Brackett et al., 2012). Qui sait nommer son émotion peut faire une pause avant de suivre sa première impulsion – la suite part de là.",
         "quellen": [
           "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
-          "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
-          "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226."
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428.",
+          "Brackett, M. A., Rivers, S. E., Reyes, M. R. & Salovey, P. (2012). Enhancing academic performance and social and emotional competence with the RULER feeling words curriculum. Learning and Individual Differences, 22(2), 218–224."
         ],
         "achtung": "Les émotions sont un sujet personnel : personne n’est obligé de dire quand il a ressenti une émotion ; les exercices 3 et 4 restent privés, on peut toujours dire « je passe ». Les situations sans tristesse ou sans joie peuvent rappeler une perte ou une longue période triste. Si une intervention devient trop personnelle, l’arrêter gentiment, remercier et proposer d’en parler après le cours. Si un jeune dit ne plus ressentir de joie depuis longtemps ou choisit souvent impuissant ou seul, lui parler en tête-à-tête et impliquer le SePAS. En cas de signes de violence, d’abus, d’automutilation ou d’idées suicidaires, informer le SePAS le jour même et suivre le protocole de protection de l’école.",
         "differenzierung": {
           "leichter": "Pour les jeunes qui lisent difficilement ou apprennent encore la langue : accepter des mots dans leur langue et les faire montrer avec une carte des émotions ; traduire à l’avance les six messages (par exemple avec une application de traduction) et les poser à côté de la fiche ; faire l’exercice 2 avec les cartes ; dans l’exercice 3, un mot-clé suffit. L’affiche des messages et les mots clés restent visibles ; un binôme avec un camarade de la même langue aide.",
           "schwerer": "Réfléchir à quand une émotion dépasse son but – par exemple une grande peur avant un exposé sans enjeu – et à ce qui aide alors. Ou formuler un message pour les mots de la marge (envie, honte, surprise) et le compléter sur l’affiche."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le mot plus précis (5 min), rassembler et ranger les mots (10 min), une journée sans… avec l’affiche des messages (15 min), exercices 2 et 3 de la fiche (8 min), chasse aux couleurs (5 min), Skills-Pass et tour éclair (7 min). Le mime, les détectives des émotions et le conseil sont supprimés ; le mime peut servir de pause active à la séance suivante, et la réunion est rattrapée dès que possible."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le mot plus précis (5 min), rassembler et ranger les mots (10 min), une journée sans… avec l’affiche des messages (15 min), exercices 2 et 3 de la fiche (8 min), chasse aux couleurs (5 min), Skills-Pass, tour éclair et mission avec le moment (7 min). Le mime, les détectives des émotions et le conseil sont supprimés ; le mime peut servir de pause active à la séance suivante, et la réunion est rattrapée dès que possible."
       }
     }
   ],
@@ -727,9 +729,15 @@
             "text": "Es gibt angenehme und unangenehme Gefühle – aber keine falschen. Was du dann tust, entscheidest du: Wut darf sein. Ob du zuschlägst oder klar „Stopp“ sagst, macht den Unterschied."
           },
           {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Aus der Forschung",
+            "text": "Schulklassen, die ein Jahr lang Gefühlswörter übten, hatten am Ende bessere Noten – und gingen besser mit sich und anderen um."
+          },
+          {
             "art": "aufgabe",
-            "text": "Deine Wochen-Mission: Wenn ein Gefühl laut wird – was wollte es dir sagen? Eine Zeile reicht.",
-            "hinweis": "Zum Beispiel nach der Farbsuche. Keine Namen, nur Stichworte.",
+            "text": "Deine Wochen-Mission: Farbsuche in deinem Moment. Welches Gefühl war da – und was wollte es dir sagen? Eine Zeile reicht.",
+            "hinweis": "Deinen Moment hast du in der Stunde gewählt – er steht bei den Wochen-Missionen. Keine Namen, nur Stichworte.",
             "symbole": [
               "schreiben"
             ]
@@ -776,13 +784,14 @@
             "Einheit 9, Schritt 3: nach dem Sortieren in den Tischgruppen Aufgabe 1 ausfüllen – je Grundgefühl ein eigenes Wort (3 Min.).",
             "Schritt 6: Aufgabe 2 allein, vergleichen und am Botschaften-Plakat prüfen (5 Min.), dann Aufgabe 3 still (4 Min.).",
             "Aufgabe 3 und 4 werden weder eingesammelt noch vorgelesen, außer jemand möchte es.",
-            "Aufgabe 4 begleitet die Wochen-Mission; die Brücke von Einheit 10 fragt kurz danach."
+            "Aufgabe 4 begleitet die Wochen-Mission mit dem in der Stunde gewählten Moment; die Brücke von Einheit 10 fragt kurz danach.",
+            "Der Kasten „Aus der Forschung“ fasst den Befund von Brackett et al. (2012) zusammen; der Beleg steht im Hintergrund der Einheit."
           ],
-          "hintergrund": "Ekman (1992) beschreibt Grundgefühle, deren Ausdruck in vielen Kulturen erkannt wird; Plutchik (2001) ordnet jedem eine Aufgabe zu – Angst schützt, Wut räumt Hindernisse aus dem Weg, Traurigkeit sucht verlorene Nähe. Angenehme Gefühle erweitern Denken und Handeln (Fredrickson, 2001).",
+          "hintergrund": "Ekman (1992) beschreibt Grundgefühle, deren Ausdruck in vielen Kulturen erkannt wird; Plutchik (2001) ordnet jedem eine Aufgabe zu – Angst schützt, Wut räumt Hindernisse aus dem Weg, Traurigkeit sucht verlorene Nähe. Klassen, die ein Jahr lang mit Gefühlswörtern arbeiteten, hatten bessere Noten und mehr soziale Kompetenz (Brackett et al., 2012).",
           "quellen": [
             "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
             "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
-            "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226."
+            "Brackett, M. A., Rivers, S. E., Reyes, M. R. & Salovey, P. (2012). Enhancing academic performance and social and emotional competence with the RULER feeling words curriculum. Learning and Individual Differences, 22(2), 218–224."
           ],
           "material": "Sortierbögen der Tischgruppen, Botschaften-Plakat"
         }
@@ -903,9 +912,15 @@
             "text": "Il y a des émotions agréables et désagréables – mais pas de fausses. Ce que tu en fais, c’est toi qui décides : la colère a le droit d’exister. Frapper ou dire clairement « stop », c’est là que se fait la différence."
           },
           {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce que dit la recherche",
+            "text": "Des classes qui ont travaillé un an avec des mots d’émotions ont eu de meilleures notes à la fin – et se débrouillaient mieux avec elles-mêmes et avec les autres."
+          },
+          {
             "art": "aufgabe",
-            "text": "Ta mission de la semaine : quand une émotion devient forte, qu’est-ce qu’elle voulait te dire ? Une ligne suffit.",
-            "hinweis": "Par exemple après la chasse aux couleurs. Pas de noms, juste des mots-clés.",
+            "text": "Ta mission de la semaine : la chasse aux couleurs dans ton moment. Quelle émotion était là – et que voulait-elle te dire ? Une ligne suffit.",
+            "hinweis": "Tu as choisi ton moment pendant le cours – il est noté avec les missions de la semaine. Pas de noms, juste des mots-clés.",
             "symbole": [
               "schreiben"
             ]
@@ -952,13 +967,14 @@
             "Séance 9, étape 3 : après le tri en îlots, remplir l’exercice 1 – un mot à soi par émotion de base (3 min).",
             "Étape 6 : exercice 2 seul, comparer et vérifier sur l’affiche des messages (5 min), puis exercice 3 en silence (4 min).",
             "Les exercices 3 et 4 ne sont ni ramassés ni lus à voix haute, sauf si un jeune le souhaite.",
-            "L’exercice 4 accompagne la mission de la semaine ; le lien de la séance 10 y revient brièvement."
+            "L’exercice 4 accompagne la mission de la semaine avec le moment choisi pendant le cours ; le lien de la séance 10 y revient brièvement.",
+            "L’encadré « Ce que dit la recherche » résume le résultat de Brackett et al. (2012) ; la référence figure dans le fond de la séance."
           ],
-          "hintergrund": "Ekman (1992) décrit des émotions de base dont l’expression est reconnue dans de nombreuses cultures ; Plutchik (2001) attribue à chacune une fonction – la peur protège, la colère écarte les obstacles, la tristesse cherche la proximité perdue. Les émotions agréables élargissent la pensée et l’action (Fredrickson, 2001).",
+          "hintergrund": "Ekman (1992) décrit des émotions de base dont l’expression est reconnue dans de nombreuses cultures ; Plutchik (2001) attribue à chacune une fonction – la peur protège, la colère écarte les obstacles, la tristesse cherche la proximité perdue. Des classes qui ont travaillé un an avec des mots d’émotions ont eu de meilleures notes et plus de compétences sociales (Brackett et al., 2012).",
           "quellen": [
             "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
             "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
-            "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226."
+            "Brackett, M. A., Rivers, S. E., Reyes, M. R. & Salovey, P. (2012). Enhancing academic performance and social and emotional competence with the RULER feeling words curriculum. Learning and Individual Differences, 22(2), 218–224."
           ],
           "material": "Feuilles de tri des îlots, affiche des messages"
         }

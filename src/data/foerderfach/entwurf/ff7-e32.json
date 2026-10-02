@@ -40,7 +40,7 @@
           "erklären mit der Test-Waage, woher Prüfungsstress kommt und was ihn kleiner macht",
           "planen das Lernen für einen Test rückwärts, mit Selbsttests",
           "prüfen Test-Gedanken und finden Sätze, die wirklich helfen",
-          "üben einen Blackout-Plan und den Skill Füße, Atem, Stift"
+          "üben einen Blackout-Plan mit dem Satz „Mein Körper macht sich bereit“ und den Skill Füße, Atem, Stift"
         ],
         "material": [
           "Schülerheft, Stempel für den Skills-Pass",
@@ -107,7 +107,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, Mission und Ausblick"
+            "titel": "Skills-Pass, Moment wählen und Mission"
           }
         ],
         "schritte": [
@@ -127,8 +127,9 @@
             "titel": "Rückblick: Welcher Test kommt als Nächstes?",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Per Daumen nach der Wochen-Mission fragen – hoch, Mitte, runter: Wer hat seinen kleinen Schritt ausprobiert? Eine Stimme erzählt, wie es lief; auch „zweimal geklappt“ zählt. Dann auf die Testtermine an der Tafel zeigen: Jede Person wählt einen Test, der sie wirklich beschäftigt, und trägt Fach und Datum oben auf dem Blatt ein. Wer gerade keinen hat, nimmt den letzten, der schwierig war. Das Thema der Stunde nennen: Ruhig durch die Testphase.",
+            "text": "Per Daumen nach der Wochen-Mission fragen – der kleine Schritt aus der letzten Stunde: Kam euer Moment, und was habt ihr gemacht? Hoch, Mitte, runter; eine Stimme erzählt, wie es lief – auch „zweimal geklappt“ zählt, und ein Moment, der nicht kam, ist eine Auskunft. Dann auf die Testtermine an der Tafel zeigen: Jede Person wählt einen Test, der sie wirklich beschäftigt, und trägt Fach und Datum oben auf dem Blatt ein. Wer gerade keinen hat, nimmt den letzten, der schwierig war. Das Thema der Stunde nennen: Ruhig durch die Testphase.",
             "sagen": [
+              "Kam euer Moment für den kleinen Schritt – und was habt ihr gemacht? Daumen, dann eine Stimme.",
               "Nehmt einen Test, der euch wirklich beschäftigt – nicht den leichtesten.",
               "Heute geht es nicht um Noten, sondern um das, was ihr selbst in der Hand habt."
             ],
@@ -277,12 +278,13 @@
             "titel": "Mein Countdown für den Testtag",
             "dauer": 10,
             "phase": "uebung",
-            "text": "Kurze Szene zum Einstieg (3 Min.): vor der Tür des Testraums. Die Lehrkraft oder eine freiwillige Person spielt den aufgeregten Mitschüler, der alle mit Fragen überschüttet („Hast du Kapitel 4 gelernt? Das kommt sicher dran.“); zwei Freiwillige probieren nacheinander, wie man sich davor schützt – kurz zur Seite gehen, sagen „Ich will jetzt nicht über den Stoff reden“, Fingeratmung. Dann allein (5 Min.): Aufgabe 3 auf dem Blatt – in jedem Feld des Countdowns unterstreichen, was man übernimmt, und höchstens zwei eigene Ideen ergänzen. Zum Schluss nennen zwei, drei Freiwillige ihren besten Punkt (2 Min.).",
+            "text": "Kurze Szene zum Einstieg (2 Min.): vor der Tür des Testraums. Die Lehrkraft oder eine freiwillige Person spielt den aufgeregten Mitschüler, der alle mit Fragen überschüttet („Hast du Kapitel 4 gelernt? Das kommt sicher dran.“); zwei Freiwillige probieren nacheinander, wie man sich davor schützt – kurz zur Seite gehen, sagen „Ich will jetzt nicht über den Stoff reden“, Fingeratmung. Dann die Umdeutung (1 Min.), die ab heute zum Countdown gehört: Vor der Tür klopft das Herz – das ist keine Gefahr, sondern Bereitschaft. Der Körper schickt Blut und Energie in den Kopf, genau das braucht man gleich. Der Satz dazu: Mein Körper macht sich bereit. Dann allein (5 Min.): Aufgabe 3 auf dem Blatt – in jedem Feld des Countdowns unterstreichen, was man übernimmt, und höchstens zwei eigene Ideen ergänzen. Zum Schluss nennen zwei, drei Freiwillige ihren besten Punkt (2 Min.).",
             "sagen": [
               "Was tut ihr am Abend davor – und was lasst ihr lieber?",
-              "Vor der Tür reden alle über den Stoff. Was macht ihr, wenn euch das nervös macht?"
+              "Vor der Tür reden alle über den Stoff. Was macht ihr, wenn euch das nervös macht?",
+              "Herzklopfen vor der Tür heißt nicht: Gefahr. Es heißt: Mein Körper macht sich bereit. Wer sich das sagt, schneidet in Prüfungen besser ab als jemand, der sich beruhigen will."
             ],
-            "tipp": "Die Rolle des aufgeregten Mitschülers am besten jemandem geben, der gern übertreibt: Hier ist das erwünscht, und alle sehen, wie ansteckend Panik vor der Tür ist. Wer in der letzten Stunde einen Schritt beim Schlaf gewählt hat, trägt ihn beim Abend davor ein.",
+            "tipp": "Die Rolle des aufgeregten Mitschülers am besten jemandem geben, der gern übertreibt: Hier ist das erwünscht, und alle sehen, wie ansteckend Panik vor der Tür ist. Die Umdeutung ist gut belegt: Wer Aufregung als Bereitschaft deutet, bringt bessere Leistung – wer sie wegdrücken will, verbraucht Kraft damit. Deshalb nicht „ruhig werden“ fordern, sondern „bereit sein“ anbieten. Wer in der letzten Stunde einen Schritt beim Schlaf gewählt hat, trägt ihn beim Abend davor ein.",
             "wennEsKippt": "Kommt „Ich lerne in der Nacht davor durch“, nicht verbieten, sondern fragen, wie es am nächsten Morgen um acht aussieht und was davon im Kopf bleibt. Erzählt jemand, dass er vor Tests nie schlafen kann oder Bauchweh hat, das als häufig würdigen und nach der Stunde fragen, ob es oft so ist; bei Bedarf gemeinsam mit dem SePAS weitersehen.",
             "blatt": "ff7-test-countdown"
           },
@@ -290,7 +292,7 @@
             "titel": "Blackout-Probe mit Mini-Quiz",
             "dauer": 10,
             "phase": "uebung",
-            "text": "Zuerst den Blackout-Plan an die Tafel schreiben und kurz besprechen (3 Min.): merken, dass nichts mehr geht – zweimal lang ausatmen – die Aufgabe markieren – zur nächsten – später zurück. Dann die Probe: Alle räumen den Tisch bis auf einen Stift und einen Zettel leer. Ankündigen: zehn leichte Fragen, zwei Minuten Zeit, eine Frage ist mit Absicht nicht lösbar; wer nicht mitschreiben möchte, stoppt die Zeit oder schaut zu. Das Quiz aufdecken und die Zeit stoppen (2 Min.). Danach auflösen (5 Min.): Wer ist bei Frage 6 hängen geblieben? Wer hat weitergemacht – und wie? Es gibt keine Punkte, die Zettel werden nicht eingesammelt. Der Skill gleich danach hilft genau in diesem Moment.",
+            "text": "Zuerst den Blackout-Plan an die Tafel schreiben und kurz besprechen (3 Min.): merken, dass nichts mehr geht – zweimal lang ausatmen – sich sagen: Mein Körper ist bereit – die Aufgabe markieren – zur nächsten – später zurück. Dann die Probe: Alle räumen den Tisch bis auf einen Stift und einen Zettel leer. Ankündigen: zehn leichte Fragen, zwei Minuten Zeit, eine Frage ist mit Absicht nicht lösbar; wer nicht mitschreiben möchte, stoppt die Zeit oder schaut zu. Das Quiz aufdecken und die Zeit stoppen (2 Min.). Danach auflösen (5 Min.): Wer ist bei Frage 6 hängen geblieben? Wer hat weitergemacht – und wie? Es gibt keine Punkte, die Zettel werden nicht eingesammelt. Der Skill gleich danach hilft genau in diesem Moment.",
             "sagen": [
               "Eine Frage ist mit Absicht nicht lösbar. Eure Aufgabe ist nicht, alles zu wissen, sondern weiterzumachen.",
               "Wie hat es sich angefühlt, eine Frage einfach stehen zu lassen?"
@@ -314,7 +316,7 @@
             "titel": "Skill: Füße, Atem, Stift",
             "dauer": 10,
             "phase": "skill",
-            "text": "Alle sitzen wie im Test am Tisch, den Stift in der Hand, das Blatt vor sich. Ankündigen: ein Skill für den Moment, in dem im Test die Anspannung hochgeht – wie eben bei Frage 6 –, und niemand im Raum soll merken, dass ihr ihn macht. Die drei Schritte einzeln vormachen und gemeinsam üben (je 1 Min.), dann zweimal am Stück ohne Ansage, jede Person in ihrem Tempo (3 Min.). Danach zwei, drei Rückmeldungen: Hat jemand beim Nachbarn etwas bemerkt? Wann im Test würdet ihr das brauchen? Zum Schluss schreibt jede Person in Aufgabe 4 ihren Blackout-Plan als Wenn-dann-Satz und darunter ihren Skill (2 Min.).",
+            "text": "Alle sitzen wie im Test am Tisch, den Stift in der Hand, das Blatt vor sich. Ankündigen: ein Skill für den Moment, in dem im Test die Anspannung hochgeht – wie eben bei Frage 6 –, und niemand im Raum soll merken, dass ihr ihn macht. Die drei Schritte einzeln vormachen und gemeinsam üben (je 1 Min.), dann zweimal am Stück ohne Ansage, jede Person in ihrem Tempo (3 Min.). Danach zwei, drei Rückmeldungen: Hat jemand beim Nachbarn etwas bemerkt? Wann im Test würdet ihr das brauchen? Zum Schluss schreibt jede Person in Aufgabe 4 ihren Blackout-Plan als Wenn-dann-Satz – mit dem Satz „Mein Körper ist bereit“ – und darunter ihren Skill (2 Min.).",
             "sagen": [
               "Füße, Atem, Stift. Niemand sieht es, und es dauert etwa eine halbe Minute."
             ],
@@ -328,31 +330,35 @@
             "blatt": "ff7-test-countdown"
           },
           {
-            "titel": "Skills-Pass, Mission und Ausblick",
+            "titel": "Skills-Pass, Moment wählen und Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage an die Tafel: Welcher Skill oder welcher Satz kommt mit in meinen nächsten Test? Alle schreiben ihren Satz in den Skills-Pass (2 Min.) und bekommen den Stempel. Daumen-Blitzlicht: Wie fühlt ihr euch jetzt beim Gedanken an den nächsten Test – ruhiger, gleich oder unruhiger als am Anfang? Dann die Wochen-Mission ansagen (steht im Heft) und erklären, dass die Sätze unten auf dem Blatt erst nach dem Test ausgefüllt werden. Zum Schluss der Ausblick auf das letzte Kapitel.",
+            "text": "Die Leitfrage an die Tafel: Welcher Skill oder welcher Satz kommt mit in meinen nächsten Test? Alle schreiben ihren Satz in den Skills-Pass (2 Min.) und bekommen den Stempel. Moment wählen (1 Min.): Die Wochen-Mission im Heft vorlesen – wenn der erste Lerntermin aus dem Plan kommt, dann zehn Minuten lernen und sich abfragen; oder: wenn das Herz in der Schule klopft, dann Füße, Atem, Stift und „Mein Körper macht sich bereit“. Auf drei zeigen alle: ein Finger für den Lerntermin, zwei für den Moment, in dem das Herz klopft. Den Moment – Tag und Uhrzeit aus dem Lernplan oder die Situation – in die Spalte „Mein Moment: Wenn …“ schreiben. Daumen-Blitzlicht (1 Min.): Wie fühlt ihr euch jetzt beim Gedanken an den nächsten Test – ruhiger, gleich oder unruhiger als am Anfang? Zum Schluss erklären, dass die Sätze unten auf dem Blatt erst nach dem Test ausgefüllt werden, und der Ausblick auf das letzte Kapitel (1 Min.).",
             "sagen": [
-              "Nach den Tests frage ich, was geholfen hat – nicht nach der Note."
+              "Nach den Tests frage ich, was geholfen hat – nicht nach der Note.",
+              "Eure Mission: Wenn euer erster Lerntermin kommt, dann zehn Minuten – oder: Wenn euer Herz in der Schule klopft, dann Füße, Atem, Stift. Schreibt den Moment ins Heft: Tag und Uhrzeit oder die Situation."
             ],
-            "tipp": "Nicht nach Noten fragen, auch nicht im Scherz. In der nächsten Stunde reicht eine kurze Frage: Wer hat Füße, Atem, Stift im Test schon ausprobiert?",
+            "tipp": "Nicht nach Noten fragen, auch nicht im Scherz. In der nächsten Stunde reicht eine kurze Frage: Kam euer Moment – der Lerntermin oder das Herzklopfen – und was habt ihr gemacht?",
             "wennEsKippt": "Zeigen einige „unruhiger“, das ernst nehmen und nicht wegreden: Über Tests zu sprechen, macht manchen erst einmal Herzklopfen. Allen anbieten, nach der Stunde zu reden; bleibt die Angst bei jemandem über Wochen groß, gemeinsam mit dem SePAS weitersehen."
           }
         ],
         "bruecke": "Nächste Woche beginnt das letzte Kapitel: In Gruppen wählt ihr ein Thema aus diesem Jahr und plant dazu ein kurzes Stück oder Video. Auf die Bühne muss niemand – es gibt auch Aufgaben dahinter.",
-        "mission": "Halte den ersten Termin aus deinem Lernplan ein – oder probier Füße, Atem, Stift einmal aus, wenn du in der Schule nervös wirst. Was hat es gebracht?",
-        "hintergrund": "Prüfungsangst hat zwei Seiten: sorgenvolle Gedanken wie „Ich falle sowieso durch“ und körperliche Aufregung. Vor allem die Sorgen binden Aufmerksamkeit, die dann für die Aufgaben fehlt (Zeidner, 1998). Nach dem Stressmodell von Lazarus und Folkman (1984) entsteht Stress, wenn eine Anforderung größer wirkt als die eigenen Mittel. Die Test-Waage macht diese Bewertung sichtbar, und die Stunde setzt an beiden Seiten an: Die Aufgabe wird durch Planen kleiner, die Mittel werden durch Lernmethoden und Skills größer. Beim Lernen sind zwei Methoden besonders gut belegt: sich selbst abfragen und das Lernen auf mehrere Tage verteilen (Dunlosky et al., 2013). Gerade in der Voie de préparation haben viele schon schlechte Erfahrungen mit Tests gemacht; deshalb richtet die Stunde den Blick auf das, was man beeinflussen kann, und nicht auf die Note.",
+        "mission": "Wenn dein erster Lerntermin kommt, dann lernst du zehn Minuten und fragst dich ab. Oder: Wenn dein Herz in der Schule klopft, dann Füße, Atem, Stift – dein Körper macht sich bereit.",
+        "hintergrund": "Prüfungsangst hat zwei Seiten, Sorgen und körperliche Aufregung; vor allem die Sorgen binden Aufmerksamkeit, die für die Aufgaben fehlt (Zeidner, 1998). Nach Lazarus und Folkman (1984) entsteht Stress, wenn eine Anforderung größer wirkt als die eigenen Mittel; die Test-Waage zeigt beide Seiten: Planen macht die Aufgabe kleiner, Lernmethoden und Skills die Mittel größer. Beim Lernen sind Selbsttests und verteiltes Lernen am besten belegt (Dunlosky et al., 2013). Die Umdeutung im Countdown und im Blackout-Plan beruht auf der Neubewertung von Aufregung: Wer Herzklopfen als Bereitschaft statt als Gefahr deutet, schneidet in Prüfungen besser ab (Jamieson et al., 2010; Brooks, 2014); bei Jugendlichen schützte ein 30-Minuten-Modul mit der Botschaft „Stress kann helfen“ messbar vor Belastung (Yeager, Bryan et al., 2022). Die Stunde bietet darum Bereitschaft statt Ruhe an und schaut auf das, was man beeinflussen kann.",
         "quellen": [
           "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
           "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
-          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58."
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212.",
+          "Brooks, A. W. (2014). Get excited: Reappraising pre-performance anxiety as excitement. Journal of Experimental Psychology: General, 143(3), 1144–1158.",
+          "Yeager, D. S., Bryan, C. J., Gross, J. J., Murray, J. S., Krettek Cobb, D., Santos, P. H. F. et al. (2022). A synergistic mindsets intervention protects adolescents from stress. Nature, 607(7919), 512–520."
         ],
         "achtung": "Tests und Noten sind für viele ein wunder Punkt, gerade in der Voie de préparation. Nicht nach Noten, Bulletins oder Reaktionen der Eltern fragen; was jemand davon erzählt, nicht vor der Klasse vertiefen. Sätze wie „Ich bin eh zu dumm“ nicht wegreden („Ach was“), sondern nach der Stunde nachfragen. Hinter starker Prüfungsangst stecken manchmal Schlafprobleme, Druck zu Hause oder anhaltende Niedergeschlagenheit: Régent und SePAS einbeziehen. Sagt jemand, er halte den Druck nicht mehr aus, oder deutet an, nicht mehr leben zu wollen: noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112.",
         "differenzierung": {
           "leichter": "Den Lernplan nur für zwei Tage schreiben; ein Tandem mit einer Person, die gut plant, hilft beim Teilen der Brocken. Bei den Test-Gedanken darf die Gruppe einen Satz von der Tafel verbessern, statt neu zu schreiben. Wer die Unterrichtssprache noch lernt, schreibt den Plan in der eigenen Sprache und lernt Füße, Atem, Stift durch Vor- und Nachmachen.",
           "schwerer": "Für Bruna die Waage weiterdenken: Was kann sie bis Freitag rechts dazulegen? Oder einen zweiten Lernplan für einen weiteren Test schreiben. In der Gedanken-Runde die Moderation übernehmen und bei jedem Satz fragen: Ist das realistisch – und schaut es auf das, was man selbst beeinflussen kann?"
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit der verdeckten Test-Zahl (5 Min.), die Test-Waage mit Tafelbild (10 Min.), Mein Lernplan rückwärts (15 Min.), Blackout-Probe mit Mini-Quiz (10 Min.), Füße, Atem, Stift (5 Min.), Skills-Pass und Mission (5 Min.). Die Test-Gedanken und der Countdown entfallen oder werden in der nächsten Stunde nachgeholt."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit der verdeckten Test-Zahl (5 Min.), die Test-Waage mit Tafelbild (10 Min.), Mein Lernplan rückwärts (15 Min.), Blackout-Probe mit Mini-Quiz und dem Satz „Mein Körper ist bereit“ (10 Min.), Füße, Atem, Stift (5 Min.), Skills-Pass, Moment wählen und Mission (5 Min.). Die Test-Gedanken und der Countdown entfallen oder werden in der nächsten Stunde nachgeholt."
       },
       "fr": {
         "titel": "Rester calme pendant les devoirs en classe",
@@ -361,7 +367,7 @@
           "expliquent avec la balance d’où vient le stress des devoirs et ce qui l’allège",
           "planifient leurs révisions à rebours, en se testant eux-mêmes",
           "examinent des pensées d’avant le devoir et trouvent des phrases qui aident",
-          "s’entraînent à un plan en cas de trou de mémoire et au skill pieds, souffle, stylo"
+          "s’entraînent à un plan en cas de trou de mémoire avec la phrase « mon corps se prépare » et au skill pieds, souffle, stylo"
         ],
         "material": [
           "Cahier de l’élève, tampon pour le Skills-Pass",
@@ -428,7 +434,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, mission et suite"
+            "titel": "Skills-Pass, choisir son moment et mission"
           }
         ],
         "schritte": [
@@ -448,8 +454,9 @@
             "titel": "Retour : quel est le prochain devoir ?",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Demander avec le pouce où en est la mission de la semaine – en haut, au milieu, en bas : qui a essayé son petit pas ? Une voix raconte comment ça s’est passé ; « deux fois réussi », ça compte aussi. Puis montrer les dates des devoirs au tableau : chacun choisit un devoir en classe qui le préoccupe vraiment et note la matière et la date en haut de la fiche. Qui n’en a pas en ce moment prend le dernier qui a été difficile. Annoncer le thème du jour : rester calme pendant les devoirs en classe.",
+            "text": "Demander avec le pouce où en est la mission de la semaine – le petit pas de la dernière séance : votre moment est-il venu, et qu’avez-vous fait ? En haut, au milieu, en bas ; une voix raconte comment ça s’est passé – « deux fois réussi », ça compte aussi, et un moment qui n’est pas venu est une réponse. Puis montrer les dates des devoirs au tableau : chacun choisit un devoir en classe qui le préoccupe vraiment et note la matière et la date en haut de la fiche. Qui n’en a pas en ce moment prend le dernier qui a été difficile. Annoncer le thème du jour : rester calme pendant les devoirs en classe.",
             "sagen": [
+              "Votre moment pour le petit pas est-il venu – et qu’avez-vous fait ? Pouce, puis une voix.",
               "Prenez un devoir qui vous préoccupe vraiment – pas le plus facile.",
               "Aujourd’hui, on ne parle pas de notes, mais de ce que vous avez vous-mêmes entre les mains."
             ],
@@ -598,12 +605,13 @@
             "titel": "Mon compte à rebours pour le jour J",
             "dauer": 10,
             "phase": "uebung",
-            "text": "Une courte scène pour commencer (3 min) : devant la porte de la salle, juste avant le devoir. L’enseignant·e ou un volontaire joue le camarade paniqué qui assaille tout le monde de questions (« Tu as révisé le chapitre 4 ? Il va sûrement tomber. ») ; deux volontaires essaient l’un après l’autre de s’en protéger – s’écarter un moment, dire « Là, je ne veux pas parler de la matière », la respiration des doigts. Puis seul (5 min) : exercice 3 de la fiche – dans chaque case du compte à rebours, souligner ce qu’on reprend et ajouter au plus deux idées à soi. Pour finir, deux ou trois volontaires disent leur meilleure idée (2 min).",
+            "text": "Une courte scène pour commencer (2 min) : devant la porte de la salle, juste avant le devoir. L’enseignant·e ou un volontaire joue le camarade paniqué qui assaille tout le monde de questions (« Tu as révisé le chapitre 4 ? Il va sûrement tomber. ») ; deux volontaires essaient l’un après l’autre de s’en protéger – s’écarter un moment, dire « Là, je ne veux pas parler de la matière », la respiration des doigts. Puis le recadrage (1 min), qui fait désormais partie du compte à rebours : devant la porte, le cœur bat – ce n’est pas un danger, c’est de la préparation. Le corps envoie du sang et de l’énergie vers la tête, exactement ce qu’il faut dans un instant. La phrase qui va avec : mon corps se prépare. Puis seul (5 min) : exercice 3 de la fiche – dans chaque case du compte à rebours, souligner ce qu’on reprend et ajouter au plus deux idées à soi. Pour finir, deux ou trois volontaires disent leur meilleure idée (2 min).",
             "sagen": [
               "Qu’est-ce que vous faites la veille au soir – et qu’est-ce que vous évitez plutôt ?",
-              "Devant la porte, tout le monde parle de la matière. Que faites-vous quand ça vous rend nerveux ?"
+              "Devant la porte, tout le monde parle de la matière. Que faites-vous quand ça vous rend nerveux ?",
+              "Le cœur qui bat devant la porte, ce n’est pas un danger. Ça veut dire : mon corps se prépare. Qui se le dit réussit mieux ses épreuves que celui qui essaie de se calmer."
             ],
-            "tipp": "Confier le rôle du camarade paniqué à quelqu’un qui aime en faire trop : ici, c’est voulu, et tout le monde voit à quel point la panique devant la porte est contagieuse. Qui a choisi la semaine dernière un petit pas pour le sommeil l’inscrit dans la case de la veille au soir.",
+            "tipp": "Confier le rôle du camarade paniqué à quelqu’un qui aime en faire trop : ici, c’est voulu, et tout le monde voit à quel point la panique devant la porte est contagieuse. Le recadrage est bien étayé : qui interprète le trac comme de la préparation est plus performant – qui veut l’étouffer y perd des forces. Ne pas exiger du calme, mais proposer d’être prêt. Qui a choisi la semaine dernière un petit pas pour le sommeil l’inscrit dans la case de la veille au soir.",
             "wennEsKippt": "Si quelqu’un dit « Moi, je révise toute la nuit d’avant », ne pas l’interdire, mais demander à quoi ça ressemble le lendemain à huit heures – et ce qui reste dans la tête. Si un jeune raconte qu’il ne dort jamais avant un devoir ou qu’il a mal au ventre, reconnaître que c’est fréquent et lui demander après le cours si ça arrive souvent ; si besoin, voir la suite avec le SePAS.",
             "blatt": "ff7-test-countdown"
           },
@@ -611,7 +619,7 @@
             "titel": "Simulation de trou de mémoire avec un mini-quiz",
             "dauer": 10,
             "phase": "uebung",
-            "text": "D’abord, écrire au tableau le plan en cas de trou de mémoire et en parler brièvement (3 min) : remarquer que plus rien ne vient – expirer longuement deux fois – marquer la question – passer à la suivante – y revenir plus tard. Puis la simulation : chacun range sa table, sauf un stylo et une feuille. Annoncer : dix questions faciles, deux minutes, une question est volontairement impossible ; qui ne veut pas participer chronomètre ou regarde. Découvrir le quiz et chronométrer (2 min). Ensuite, faire le bilan (5 min) : qui est resté bloqué à la question 6 ? Qui a continué – et comment ? Il n’y a pas de points, les feuilles ne sont pas ramassées. Le skill qui suit aide justement à ce moment-là.",
+            "text": "D’abord, écrire au tableau le plan en cas de trou de mémoire et en parler brièvement (3 min) : remarquer que plus rien ne vient – expirer longuement deux fois – se dire : mon corps se prépare – marquer la question – passer à la suivante – y revenir plus tard. Puis la simulation : chacun range sa table, sauf un stylo et une feuille. Annoncer : dix questions faciles, deux minutes, une question est volontairement impossible ; qui ne veut pas participer chronomètre ou regarde. Découvrir le quiz et chronométrer (2 min). Ensuite, faire le bilan (5 min) : qui est resté bloqué à la question 6 ? Qui a continué – et comment ? Il n’y a pas de points, les feuilles ne sont pas ramassées. Le skill qui suit aide justement à ce moment-là.",
             "sagen": [
               "Une des questions n’a pas de solution, c’est voulu. Votre tâche n’est pas de tout savoir, mais de continuer.",
               "Qu’est-ce que ça fait de laisser simplement une question de côté ?"
@@ -635,7 +643,7 @@
             "titel": "Skill : pieds, souffle, stylo",
             "dauer": 10,
             "phase": "skill",
-            "text": "Tout le monde est assis comme pendant un devoir, le stylo à la main, la fiche devant soi. Annoncer : un skill pour le moment où la tension monte pendant le devoir – comme tout à l’heure à la question 6 –, et personne dans la salle ne doit remarquer que vous le faites. Montrer les trois étapes une par une et les pratiquer ensemble (1 min chacune), puis deux fois d’affilée sans consigne, chacun à son rythme (3 min). Ensuite, deux ou trois retours : quelqu’un a-t-il remarqué quelque chose chez son voisin ? À quel moment d’un devoir en auriez-vous besoin ? Pour finir, chacun écrit dans l’exercice 4 son plan en cas de trou de mémoire sous forme de plan « si… alors » et, en dessous, son skill (2 min).",
+            "text": "Tout le monde est assis comme pendant un devoir, le stylo à la main, la fiche devant soi. Annoncer : un skill pour le moment où la tension monte pendant le devoir – comme tout à l’heure à la question 6 –, et personne dans la salle ne doit remarquer que vous le faites. Montrer les trois étapes une par une et les pratiquer ensemble (1 min chacune), puis deux fois d’affilée sans consigne, chacun à son rythme (3 min). Ensuite, deux ou trois retours : quelqu’un a-t-il remarqué quelque chose chez son voisin ? À quel moment d’un devoir en auriez-vous besoin ? Pour finir, chacun écrit dans l’exercice 4 son plan en cas de trou de mémoire sous forme de plan « si… alors » – avec la phrase « mon corps se prépare » – et, en dessous, son skill (2 min).",
             "sagen": [
               "Pieds, souffle, stylo. Personne ne le voit, et ça prend environ trente secondes."
             ],
@@ -649,31 +657,35 @@
             "blatt": "ff7-test-countdown"
           },
           {
-            "titel": "Skills-Pass, mission et suite",
+            "titel": "Skills-Pass, choisir son moment et mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire la question au tableau : quel skill ou quelle phrase est-ce que j’emporte pour mon prochain devoir ? Chacun écrit sa phrase dans le Skills-Pass (2 min) et reçoit le tampon. Tour éclair avec le pouce : comment vous sentez-vous maintenant en pensant au prochain devoir – plus calme, pareil ou moins calme qu’au début ? Puis annoncer la mission de la semaine (dans le cahier) et expliquer que les phrases en bas de la fiche ne se remplissent qu’après le devoir. Pour finir, annoncer le dernier chapitre.",
+            "text": "Écrire la question au tableau : quel skill ou quelle phrase est-ce que j’emporte pour mon prochain devoir ? Chacun écrit sa phrase dans le Skills-Pass (2 min) et reçoit le tampon. Choisir son moment (1 min) : lire la mission de la semaine dans le cahier – quand la première séance de révision du plan arrive, je révise dix minutes et je me teste ; ou : quand mon cœur bat à l’école, pieds, souffle, stylo et « mon corps se prépare ». À trois, tout le monde montre : un doigt pour la séance de révision, deux pour le moment où le cœur bat. Écrire le moment – jour et heure du plan, ou la situation – dans la colonne « Mon moment : quand … ». Tour éclair avec le pouce (1 min) : comment vous sentez-vous maintenant en pensant au prochain devoir – plus calme, pareil ou moins calme qu’au début ? Pour finir, expliquer que les phrases en bas de la fiche ne se remplissent qu’après le devoir, et annoncer le dernier chapitre (1 min).",
             "sagen": [
-              "Après les devoirs, je vous demanderai ce qui vous a aidés – pas votre note."
+              "Après les devoirs, je vous demanderai ce qui vous a aidés – pas votre note.",
+              "Votre mission : quand votre première séance de révision arrive, dix minutes – ou : quand votre cœur bat à l’école, pieds, souffle, stylo. Écrivez le moment dans le cahier : jour et heure, ou la situation."
             ],
-            "tipp": "Ne pas demander les notes, même pour plaisanter. À la séance suivante, une question suffit : qui a déjà essayé pieds, souffle, stylo pendant un devoir ?",
+            "tipp": "Ne pas demander les notes, même pour plaisanter. À la séance suivante, une question suffit : votre moment est-il venu – la séance de révision ou le cœur qui bat – et qu’avez-vous fait ?",
             "wennEsKippt": "Si certains montrent « moins calme », le prendre au sérieux sans minimiser : parler des devoirs donne d’abord des palpitations à certains. Proposer à tous de parler après le cours ; si la peur reste forte pendant des semaines chez un jeune, voir la suite avec le SePAS."
           }
         ],
         "bruecke": "La semaine prochaine commence le dernier chapitre : en groupes, vous choisissez un thème de l’année et vous préparez une courte pièce ou une vidéo. Personne n’est obligé de monter sur scène – il y a aussi des rôles en coulisses.",
-        "mission": "Fais la première séance prévue dans ton plan de révision – ou essaie une fois pieds, souffle, stylo quand le stress monte à l’école. Qu’est-ce que ça t’a apporté ?",
-        "hintergrund": "La peur des épreuves a deux faces : des pensées inquiètes comme « De toute façon, je vais rater » et une agitation physique. Ce sont surtout les inquiétudes qui accaparent l’attention – une attention qui manque ensuite pour répondre aux questions (Zeidner, 1998). Selon le modèle du stress de Lazarus et Folkman (1984), le stress apparaît quand une exigence paraît plus grande que ses propres ressources. La balance du stress rend cette évaluation visible, et la séance agit des deux côtés : la tâche devient plus petite grâce au plan, les ressources plus grandes grâce aux méthodes de révision et aux skills. Pour réviser, deux méthodes sont particulièrement bien étayées : se tester soi-même et répartir les révisions sur plusieurs jours (Dunlosky et al., 2013). En voie de préparation, beaucoup de jeunes ont déjà vécu de mauvaises expériences avec les devoirs ; la séance tourne donc le regard vers ce qu’on peut influencer, pas vers la note.",
+        "mission": "Quand ta première séance de révision arrive, tu révises dix minutes et tu te testes. Ou : quand ton cœur bat à l’école, pieds, souffle, stylo – ton corps se prépare.",
+        "hintergrund": "La peur des épreuves a deux faces, inquiétudes et agitation physique ; les inquiétudes surtout accaparent l’attention nécessaire aux questions (Zeidner, 1998). Selon Lazarus et Folkman (1984), le stress apparaît quand une exigence paraît plus grande que ses ressources ; la balance en montre les deux côtés : planifier réduit la tâche, méthodes et skills augmentent les ressources. Se tester et répartir les révisions sont les méthodes les mieux étayées (Dunlosky et al., 2013). Le recadrage (compte à rebours, plan en cas de trou de mémoire) repose sur la réévaluation du trac : qui prend les palpitations pour de la préparation plutôt que pour un danger réussit mieux ses examens (Jamieson et al., 2010 ; Brooks, 2014) ; chez des adolescents, un module de 30 minutes « le stress peut aider » a protégé contre le stress (Yeager, Bryan et al., 2022). D’où le choix d’être prêt plutôt que calme.",
         "quellen": [
           "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
           "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
-          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58."
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212.",
+          "Brooks, A. W. (2014). Get excited: Reappraising pre-performance anxiety as excitement. Journal of Experimental Psychology: General, 143(3), 1144–1158.",
+          "Yeager, D. S., Bryan, C. J., Gross, J. J., Murray, J. S., Krettek Cobb, D., Santos, P. H. F. et al. (2022). A synergistic mindsets intervention protects adolescents from stress. Nature, 607(7919), 512–520."
         ],
         "achtung": "Les devoirs et les notes sont un point sensible pour beaucoup, surtout en voie de préparation. Ne pas demander les notes, les bulletins ou les réactions des parents, ni approfondir en classe ce qu’un jeune en dit. Ne pas balayer une phrase comme « De toute façon, je suis trop bête », mais en reparler après le cours. Une forte peur des épreuves cache parfois des problèmes de sommeil, une pression à la maison ou une tristesse durable : impliquer le régent et le SePAS. Si un jeune dit qu’il ne supporte plus la pression ou laisse entendre qu’il ne veut plus vivre : informer le SePAS le jour même, suivre le protocole de protection de l’école ; en cas de danger immédiat, le 112.",
         "differenzierung": {
           "leichter": "Écrire le plan de révision pour deux jours seulement ; un binôme avec quelqu’un qui planifie bien aide à découper les gros morceaux. Pour les pensées, le groupe peut améliorer une phrase du tableau au lieu d’en écrire une nouvelle. Qui apprend encore la langue d’enseignement écrit son plan dans sa langue et apprend pieds, souffle, stylo en imitant.",
           "schwerer": "Poursuivre la balance de Bruna : qu’est-ce qu’elle peut ajouter à droite d’ici vendredi ? Ou écrire un deuxième plan pour un autre devoir. Pendant les pensées passées au crible, animer et demander pour chaque phrase : est-ce réaliste – et est-ce que ça regarde ce qu’on peut influencer soi-même ?"
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le chiffre caché (5 min), la balance du stress avec le tableau (10 min), mon plan de révision à rebours (15 min), simulation de trou de mémoire avec le mini-quiz (10 min), pieds, souffle, stylo (5 min), Skills-Pass et mission (5 min). Les pensées passées au crible et le compte à rebours sont supprimés ou rattrapés à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le chiffre caché (5 min), la balance du stress avec le tableau (10 min), mon plan de révision à rebours (15 min), simulation de trou de mémoire avec le mini-quiz et la phrase « mon corps se prépare » (10 min), pieds, souffle, stylo (5 min), Skills-Pass, choisir son moment et mission (5 min). Les pensées passées au crible et le compte à rebours sont supprimés ou rattrapés à la séance suivante."
       }
     }
   ],
@@ -808,7 +820,7 @@
               },
               {
                 "titel": "Vor der Tür",
-                "text": "Nicht mitreden, wenn es dich nervös macht."
+                "text": "Herz klopft? Dein Körper macht sich bereit. Nicht mitreden, wenn es nervös macht."
               },
               {
                 "titel": "In den ersten Minuten",
@@ -829,9 +841,15 @@
             "beispiele": [
               {
                 "wenn": "Wenn mir bei einer Aufgabe nichts mehr einfällt,",
-                "dann": "atme ich zweimal lang aus, markiere die Aufgabe und mache mit der nächsten weiter."
+                "dann": "atme ich zweimal lang aus, sage mir „Mein Körper ist bereit“, markiere die Aufgabe und mache mit der nächsten weiter."
               }
             ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Aus der Forschung",
+            "text": "Wer sich vor einem Test sagt „Ich bin aufgeregt – mein Körper macht sich bereit“, schneidet besser ab als jemand, der sich beruhigen will. Herzklopfen ist Energie, keine Gefahr."
           },
           {
             "art": "info",
@@ -878,11 +896,12 @@
             "Schritt 9: nach Blackout-Probe und Füße, Atem, Stift den Blackout-Plan und den eigenen Skill eintragen (Aufgabe 4).",
             "Die Sätze unten erst nach dem Test ausfüllen; nachgefragt wird, was geholfen hat, nie die Note."
           ],
-          "hintergrund": "Prüfungsangst besteht aus Sorgengedanken und körperlicher Aufregung; vor allem die Sorgen binden Aufmerksamkeit, die für die Aufgaben fehlt (Zeidner, 1998). Deshalb verbindet das Blatt Lernplanung mit dem Prüfen von Gedanken und einem Körper-Skill. Für das Lernen sind Selbsttests und verteiltes Lernen am besten belegt (Dunlosky et al., 2013); Wenn-dann-Pläne werden im entscheidenden Moment leichter abgerufen als gute Vorsätze (Gollwitzer, 1999).",
+          "hintergrund": "Prüfungsangst besteht aus Sorgengedanken und körperlicher Aufregung; vor allem die Sorgen binden Aufmerksamkeit, die für die Aufgaben fehlt (Zeidner, 1998). Deshalb verbindet das Blatt Lernplanung mit dem Prüfen von Gedanken und einem Körper-Skill. Für das Lernen sind Selbsttests und verteiltes Lernen am besten belegt (Dunlosky et al., 2013); Wenn-dann-Pläne werden im entscheidenden Moment leichter abgerufen als gute Vorsätze (Gollwitzer, 1999). Der Kasten „Aus der Forschung“ und der Satz im Blackout-Plan beruhen auf der Umdeutung von Aufregung als Bereitschaft, die in Prüfungen die Leistung verbessert (Brooks, 2014).",
           "quellen": [
             "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
             "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
-            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+            "Brooks, A. W. (2014). Get excited: Reappraising pre-performance anxiety as excitement. Journal of Experimental Psychology: General, 143(3), 1144–1158."
           ],
           "achtung": "Nicht nach Noten oder Reaktionen der Eltern fragen. Wirkt die Angst über Wochen lähmend oder deutet jemand an, den Druck nicht mehr auszuhalten: Gespräch nach der Stunde, Régent und SePAS einbeziehen, nach dem Schutzkonzept der Schule handeln.",
           "material": "Testtermine der Klasse, Stifte"
@@ -994,7 +1013,7 @@
               },
               {
                 "titel": "Devant la porte",
-                "text": "Ne pas se mêler aux discussions qui stressent."
+                "text": "Le cœur bat ? Ton corps se prépare. Évite les discussions qui stressent."
               },
               {
                 "titel": "Les premières minutes",
@@ -1017,9 +1036,15 @@
             "beispiele": [
               {
                 "wenn": "Si plus rien ne me vient pour une question,",
-                "dann": "j’expire longuement deux fois, je marque la question et je passe à la suivante."
+                "dann": "j’expire longuement deux fois, je me dis « mon corps se prépare », je marque la question et je passe à la suivante."
               }
             ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce que dit la recherche",
+            "text": "Qui se dit avant un devoir « Je suis stressé – mon corps se prépare » réussit mieux que celui qui essaie de se calmer. Le cœur qui bat, c’est de l’énergie, pas un danger."
           },
           {
             "art": "info",
@@ -1066,11 +1091,12 @@
             "Étape 9 : après la simulation et pieds, souffle, stylo, noter le plan en cas de trou de mémoire et son skill (exercice 4).",
             "Les phrases du bas ne se remplissent qu’après le devoir ; on demande ce qui a aidé, jamais la note."
           ],
-          "hintergrund": "La peur des épreuves se compose de pensées inquiètes et d’agitation physique ; ce sont surtout les inquiétudes qui accaparent l’attention, et elle manque ensuite pour les questions (Zeidner, 1998). La fiche relie donc la planification des révisions à l’examen des pensées et à un skill corporel. Pour réviser, se tester soi-même et répartir les révisions sont les méthodes les mieux étayées (Dunlosky et al., 2013) ; les plans « si… alors » reviennent plus facilement au moment décisif que les bonnes résolutions (Gollwitzer, 1999).",
+          "hintergrund": "La peur des épreuves se compose de pensées inquiètes et d’agitation physique ; ce sont surtout les inquiétudes qui accaparent l’attention, et elle manque ensuite pour les questions (Zeidner, 1998). La fiche relie donc la planification des révisions à l’examen des pensées et à un skill corporel. Pour réviser, se tester soi-même et répartir les révisions sont les méthodes les mieux étayées (Dunlosky et al., 2013) ; les plans « si… alors » reviennent plus facilement au moment décisif que les bonnes résolutions (Gollwitzer, 1999). L’encadré « Ce que dit la recherche » et la phrase du plan en cas de trou de mémoire reposent sur la réévaluation du trac comme préparation, qui améliore la performance aux examens (Brooks, 2014).",
           "quellen": [
             "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
             "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
-            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+            "Brooks, A. W. (2014). Get excited: Reappraising pre-performance anxiety as excitement. Journal of Experimental Psychology: General, 143(3), 1144–1158."
           ],
           "achtung": "Ne pas demander les notes ni les réactions des parents. Si la peur paralyse pendant des semaines ou si un jeune laisse entendre qu’il ne supporte plus la pression : entretien après le cours, impliquer le régent et le SePAS, agir selon le protocole de protection de l’école.",
           "material": "Dates des devoirs de la classe, stylos"

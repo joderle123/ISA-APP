@@ -100,7 +100,7 @@
           {
             "min": "90–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass mit Trimester-Einschätzung"
+            "titel": "Skills-Pass, Trimester-Einschätzung und Moment"
           }
         ],
         "schritte": [
@@ -120,9 +120,9 @@
             "titel": "Rückblick: Warnsignale aus der Woche",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Zur Wochen-Mission per Daumen fragen: Wer hat sein Warnsignal einmal bemerkt? Zwei Stimmen erzählen, wo es war und was sie dann gemacht haben; niemand muss die Mission geschafft haben. Dann auf den Check-in zurückkommen: Viele haben zwei Gefühle gefunden – geht das überhaupt, zwei auf einmal? Das Thema an die Tafel schreiben: Gemischte Gefühle.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Zur Wochen-Mission fragen: Kam dein Moment – und hast du dein Warnsignal bemerkt? Daumen hoch, Mitte, runter; zwei Stimmen erzählen, wo es war und was sie dann gemacht haben; niemand muss den Moment erlebt haben. Dann auf den Check-in zurückkommen: Viele haben zwei Gefühle gefunden – geht das überhaupt, zwei auf einmal? Das Thema an die Tafel schreiben: Gemischte Gefühle.",
             "sagen": [
-              "Hat jemand sein Warnsignal bemerkt? Wo war es – und was hast du dann gemacht?",
+              "Kam dein Moment – und hast du dein Warnsignal bemerkt? Wo war es, und was hast du dann gemacht?",
               "Gerade haben viele von euch zwei Gefühle gefunden. Kann das eigentlich sein, zwei auf einmal?"
             ],
             "tipp": "Die Klassen-Landkarte aus Einheit 11 hängt neben dem Gefühlsrad: Wer sein Signal bemerkt hat, kann darauf zeigen, statt viel zu erzählen."
@@ -215,22 +215,23 @@
             "wennEsKippt": "Wird gekichert, ruhig weiterzählen und selbst mitmachen. Wem schwindlig wird, atmet normal weiter und schaut nur zu."
           },
           {
-            "titel": "Skills-Pass mit Trimester-Einschätzung",
+            "titel": "Skills-Pass, Trimester-Einschätzung und Moment",
             "dauer": 10,
             "phase": "abschluss",
-            "text": "Skills-Pass aufschlagen. Zuerst wie immer der Satz der Stunde mit der Leitfrage: Welche zwei Gefühle waren heute bei mir gleichzeitig da? (2 Min.) Dann die Trimester-Einschätzung (6 Min.): Die Skills des Trimesters stehen an der Tafel; jede Person schreibt ihren wichtigsten Skill in die Zeile und kreuzt bei den fünf Sätzen unten auf der Seite an: noch nicht, manchmal oder oft. Die Lehrkraft liest die Sätze langsam vor. Es ist eine Selbsteinschätzung, keine Note; eingesammelt wird nichts. Wer mag, sagt, was sich seit September verändert hat – zwei, drei Stimmen. Zum Schluss Stempel, Wochen-Mission und Ausblick; dazu kurz die Hilfe-Nummern auf der Seite „So funktioniert das Fach“ zeigen – sie gelten auch in den Ferien (2 Min.).",
+            "text": "Skills-Pass aufschlagen. Zuerst wie immer der Satz der Stunde mit der Leitfrage: Welche zwei Gefühle waren heute bei mir gleichzeitig da? (2 Min.) Dann die Trimester-Einschätzung (5 Min.): Die Skills des Trimesters stehen an der Tafel; jede Person schreibt ihren wichtigsten Skill in die Zeile und kreuzt bei den fünf Sätzen unten auf der Seite an: noch nicht, manchmal oder oft. Die Lehrkraft liest die Sätze langsam vor. Es ist eine Selbsteinschätzung, keine Note; eingesammelt wird nichts. Wer mag, sagt, was sich seit September verändert hat – zwei Stimmen. Mission und Moment wählen (2 Min.): Die Wochen-Mission ansagen – beim Gefühls-Mix kurz anhalten und beide Gefühle benennen. Auf drei zeigen alle, wann ihr Moment am ehesten kommt: ein Finger für ‚beim Abschied vor den Ferien‘, zwei für ‚bei einem Wiedersehen‘, drei für ‚am ersten Ferientag‘, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ im Heft; Aufgabe 3 auf dem Blatt ist der Platz für das, was dann war. Zum Schluss Stempel und Ausblick; dazu kurz die Hilfe-Nummern auf der Seite „So funktioniert das Fach“ zeigen – sie gelten auch in den Ferien (1 Min.).",
             "sagen": [
               "Hier gibt es kein Richtig oder Falsch. Ihr schaut nur, wo ihr gerade steht – am Ende des Jahres schaut ihr noch einmal.",
-              "Was hat sich seit September verändert – bei euch oder in der Klasse?"
+              "Was hat sich seit September verändert – bei euch oder in der Klasse?",
+              "Wann kommt dein Gefühls-Mix am ehesten? Ein Finger: beim Abschied vor den Ferien. Zwei: bei einem Wiedersehen. Drei: am ersten Ferientag. Faust: ein eigener Moment."
             ],
-            "tipp": "Wenn es stockt, ein eigenes Beispiel geben, etwa: Bei „Ich kann sagen, wie ich mich fühle“ würde ich jetzt öfter „manchmal“ ankreuzen als im September. Die Wochen-Mission gilt bis zur nächsten Stunde, auch über Ferien hinweg.",
+            "tipp": "Wenn es stockt, ein eigenes Beispiel geben, etwa: Bei „Ich kann sagen, wie ich mich fühle“ würde ich jetzt öfter „manchmal“ ankreuzen als im September. Die Wochen-Mission gilt bis zur nächsten Stunde, auch über Ferien hinweg – deshalb den Moment heute ins Heft schreiben.",
             "wennEsKippt": "Kreuzen einige überall „oft“ an, um schnell fertig zu sein, das stehen lassen – die Einschätzung gehört ihnen. Kreuzt jemand überall „noch nicht“ an oder schreibt „nichts gelernt“, nicht diskutieren, sondern nach der Stunde kurz fragen, wie das Trimester für ihn war.",
             "blatt": "ff-skills-pass"
           }
         ],
         "bruecke": "Nächstes Mal beginnt ein neues Kapitel: Aus der Linie von 0 bis 10 wird die Anspannungsskala von 0 bis 100 – und ihr findet heraus, welcher Skill bei welcher Zahl noch hilft.",
-        "mission": "Ertapp dich bis zur nächsten Stunde einmal bei einem Gefühls-Mix – etwa bei einem Abschied, einem Wiedersehen oder vor etwas Neuem. Welche zwei Gefühle waren da, und wie stark?",
-        "hintergrund": "Gefühle treten selten einzeln auf. Larsen, McGraw und Cacioppo (2001) zeigten, dass Menschen in bittersüßen Momenten wie einem Abschied tatsächlich gleichzeitig Freude und Traurigkeit empfinden – nicht nur im schnellen Wechsel. Plutchik (2001) beschreibt Gefühle wie Farben, die sich zu neuen Mischungen verbinden. Wer gemischte Gefühle als normal erkennt, muss sich nicht für eine Seite entscheiden und versteht widersprüchliche Reaktionen bei sich und anderen besser. Die Stärke eines Gefühls einzuschätzen, bereitet das nächste Kapitel vor: Das Skillstraining für Jugendliche arbeitet mit einer Anspannungsskala von 0 bis 100, weil je nach Stärke andere Skills helfen (Fleischhaker et al., 2011). Die Trimester-Einschätzung im Skills-Pass ist eine Selbsteinschätzung, keine Bewertung: Sie macht sichtbar, was gewachsen ist.",
+        "mission": "Wenn dein Moment kommt – ein Abschied, ein Wiedersehen oder der erste Ferientag –, halt kurz an: Welche zwei Gefühle sind gleichzeitig da, und wie stark von 0 bis 10?",
+        "hintergrund": "Gefühle treten selten einzeln auf – das ist die Grundlage der Stunde. Der wichtigste Beleg: Larsen, McGraw und Cacioppo (2001) zeigten, dass Menschen in bittersüßen Momenten wie einem Abschied tatsächlich gleichzeitig Freude und Traurigkeit empfinden – nicht nur im schnellen Wechsel. Plutchik (2001) beschreibt Gefühle wie Farben, die sich zu neuen Mischungen verbinden, und ordnet sie nach Dimensionen wie ihrer Stärke. Wer gemischte Gefühle als normal erkennt, versteht widersprüchliche Reaktionen bei sich und anderen besser. Die Stärke eines Gefühls einzuschätzen, bereitet das nächste Kapitel vor: Das Skillstraining für Jugendliche arbeitet mit einer Anspannungsskala von 0 bis 100, weil je nach Stärke andere Skills helfen (Fleischhaker et al., 2011). Die Trimester-Einschätzung im Skills-Pass ist eine Selbsteinschätzung, keine Bewertung: Sie macht sichtbar, was gewachsen ist.",
         "quellen": [
           "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696.",
           "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
@@ -241,7 +242,7 @@
           "leichter": "Aufgabe 1 nur mit den Situationen 1 bis 4; die sechs Gefühle als Gesichter an der Tafel. An der Linie zeigen alle zusätzlich die Zahl mit den Fingern. Beim Gefühls-Mix Karten von Seite 1 mit Gesichtern nehmen. In der Trimester-Einschätzung liest die Lehrkraft die fünf Sätze langsam vor; ein Tandem hilft beim Verstehen.",
           "schwerer": "Zu einer Situation notieren, was jedes der beiden Gefühle tun möchte – und welches am Ende gewinnt. Oder Wörter für Mischungen sammeln, etwa bittersüß oder Lampenfieber, und erklären, welche Gefühle darin stecken."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit zwei Gefühlen (5 Min.), Aufgabe 1 mit Auswertung (15 Min.), Linie von 0 bis 10 (8 Min.), Bauchatmung (5 Min.), Skills-Pass mit Trimester-Einschätzung (12 Min.), Mission und Ausblick (5 Min.). Gefühls-Mix und Rückblick auf das Kapitel entfallen; die Trimester-Einschätzung hat Vorrang."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit zwei Gefühlen (5 Min.), Aufgabe 1 mit Auswertung (15 Min.), Linie von 0 bis 10 (8 Min.), Bauchatmung (5 Min.), Skills-Pass mit Trimester-Einschätzung (10 Min.), Mission mit Moment, Hilfe-Nummern und Ausblick (7 Min.). Gefühls-Mix und Rückblick auf das Kapitel entfallen; die Trimester-Einschätzung hat Vorrang."
       },
       "fr": {
         "titel": "Émotions mélangées",
@@ -310,7 +311,7 @@
           {
             "min": "90–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass et bilan du trimestre"
+            "titel": "Skills-Pass, bilan du trimestre et moment"
           }
         ],
         "schritte": [
@@ -330,9 +331,9 @@
             "titel": "Retour : les signaux d’alerte de la semaine",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass. Pour la mission de la semaine, demander avec le pouce : qui a remarqué une fois son signal d’alerte ? Deux voix racontent où c’était et ce qu’elles ont fait ensuite ; personne n’est obligé d’avoir réussi la mission. Puis revenir au tour d’humeur : beaucoup ont trouvé deux émotions – est-ce même possible, deux à la fois ? Écrire le thème au tableau : les émotions mélangées.",
+            "text": "Un jeune lit la phrase de son Skills-Pass. Pour la mission de la semaine, demander : ton moment est-il venu – et as-tu remarqué ton signal d’alerte ? Pouce en haut, au milieu, en bas ; deux voix racontent où c’était et ce qu’elles ont fait ensuite ; personne n’est obligé d’avoir vécu son moment. Puis revenir au tour d’humeur : beaucoup ont trouvé deux émotions – est-ce même possible, deux à la fois ? Écrire le thème au tableau : les émotions mélangées.",
             "sagen": [
-              "Quelqu’un a-t-il remarqué son signal d’alerte ? Où était-ce – et qu’as-tu fait ensuite ?",
+              "Ton moment est-il venu – et as-tu remarqué ton signal d’alerte ? Où était-ce, et qu’as-tu fait ensuite ?",
               "Beaucoup d’entre vous viennent de trouver deux émotions. Est-ce que c’est possible, deux à la fois ?"
             ],
             "tipp": "La carte de la classe de la séance 11 est affichée à côté de la roue : qui a remarqué son signal peut le montrer dessus au lieu de raconter longuement."
@@ -425,22 +426,23 @@
             "wennEsKippt": "Si des rires fusent, continuer à compter calmement et faire l’exercice soi-même. Qui a la tête qui tourne respire normalement et regarde."
           },
           {
-            "titel": "Skills-Pass et bilan du trimestre",
+            "titel": "Skills-Pass, bilan du trimestre et moment",
             "dauer": 10,
             "phase": "abschluss",
-            "text": "Ouvrir le Skills-Pass. D’abord, comme d’habitude, la phrase de la séance avec la question clé : quelles deux émotions étaient là en même temps chez moi aujourd’hui ? (2 min) Puis le bilan du trimestre (6 min) : les skills du trimestre sont au tableau ; chacun écrit son skill le plus important sur la ligne et coche, pour les cinq phrases en bas de la page : pas encore, parfois ou souvent. Lire lentement les phrases à voix haute. C’est une auto-évaluation, pas une note ; rien n’est ramassé. Qui le souhaite dit ce qui a changé depuis septembre – deux ou trois voix. Pour finir, tampon, mission de la semaine et prochaine séance ; montrer aussi les numéros d’aide de la page « Comment fonctionne la matière » – ils restent valables pendant les vacances (2 min).",
+            "text": "Ouvrir le Skills-Pass. D’abord, comme d’habitude, la phrase de la séance avec la question clé : quelles deux émotions étaient là en même temps chez moi aujourd’hui ? (2 min) Puis le bilan du trimestre (5 min) : les skills du trimestre sont au tableau ; chacun écrit son skill le plus important sur la ligne et coche, pour les cinq phrases en bas de la page : pas encore, parfois ou souvent. Lire lentement les phrases à voix haute. C’est une auto-évaluation, pas une note ; rien n’est ramassé. Qui le souhaite dit ce qui a changé depuis septembre – deux voix. Mission et choix du moment (2 min) : annoncer la mission de la semaine – s’arrêter un instant lors d’un mélange d’émotions et nommer les deux. À trois, tout le monde montre quand son moment arrivera le plus probablement : un doigt pour “l’au revoir avant les vacances”, deux pour “des retrouvailles”, trois pour “le premier jour de vacances”, le poing pour un moment à soi – et le note dans la colonne « Mon moment : quand … » du cahier ; l’exercice 3 de la fiche sert à noter ce qui s’est passé. Pour finir, tampon et prochaine séance ; montrer aussi les numéros d’aide de la page « Comment fonctionne la matière » – ils restent valables pendant les vacances (1 min).",
             "sagen": [
               "Il n’y a pas de bonne ou de mauvaise réponse. Vous regardez seulement où vous en êtes – à la fin de l’année, vous regarderez encore une fois.",
-              "Qu’est-ce qui a changé depuis septembre – chez vous ou dans la classe ?"
+              "Qu’est-ce qui a changé depuis septembre – chez vous ou dans la classe ?",
+              "Quand ton mélange d’émotions arrivera-t-il le plus probablement ? Un doigt : l’au revoir avant les vacances. Deux : des retrouvailles. Trois : le premier jour de vacances. Le poing : un moment à moi."
             ],
-            "tipp": "Si ça bloque, donner un exemple personnel, par exemple : pour « Je sais dire comment je me sens », je cocherais maintenant plus souvent « parfois » qu’en septembre. La mission de la semaine vaut jusqu’à la prochaine séance, même par-dessus des vacances.",
+            "tipp": "Si ça bloque, donner un exemple personnel, par exemple : pour « Je sais dire comment je me sens », je cocherais maintenant plus souvent « parfois » qu’en septembre. La mission de la semaine vaut jusqu’à la prochaine séance, même par-dessus des vacances – d’où l’importance d’écrire le moment aujourd’hui dans le cahier.",
             "wennEsKippt": "Si certains cochent partout « souvent » pour finir vite, l’accepter – l’évaluation leur appartient. Si un jeune coche partout « pas encore » ou écrit « rien appris », ne pas discuter, mais lui demander brièvement après le cours comment s’est passé son trimestre.",
             "blatt": "ff-skills-pass"
           }
         ],
         "bruecke": "La prochaine fois commence un nouveau chapitre : la ligne de 0 à 10 devient l’échelle de tension de 0 à 100 – et vous découvrirez quel skill aide encore à quel chiffre.",
-        "mission": "D’ici la prochaine séance, repère un mélange d’émotions – lors d’un au revoir, de retrouvailles ou avant du nouveau. Quelles deux émotions, et avec quelle force ?",
-        "hintergrund": "Les émotions arrivent rarement seules. Larsen, McGraw et Cacioppo (2001) ont montré que, dans des moments doux-amers comme un au revoir, on ressent réellement de la joie et de la tristesse en même temps – pas seulement en alternance rapide. Plutchik (2001) décrit les émotions comme des couleurs qui se combinent en de nouveaux mélanges. Qui reconnaît les émotions mélangées comme normales n’a pas à choisir un camp et comprend mieux les réactions contradictoires, chez soi et chez les autres. Évaluer l’intensité d’une émotion prépare le chapitre suivant : l’entraînement aux skills pour adolescents utilise une échelle de tension de 0 à 100, parce que selon l’intensité, ce ne sont pas les mêmes skills qui aident (Fleischhaker et al., 2011). Le bilan du trimestre dans le Skills-Pass est une auto-évaluation, pas une note : il rend visible ce qui a grandi.",
+        "mission": "Quand ton moment arrive – un au revoir, des retrouvailles, le premier jour de vacances –, arrête-toi : quelles deux émotions sont là en même temps, et à quelle force de 0 à 10 ?",
+        "hintergrund": "Les émotions arrivent rarement seules – la base de la séance. Résultat clé : Larsen, McGraw et Cacioppo (2001) ont montré que, dans des moments doux-amers comme un au revoir, on ressent de la joie et de la tristesse en même temps – pas seulement en alternance rapide. Plutchik (2001) décrit les émotions comme des couleurs qui se combinent en de nouveaux mélanges et les classe par dimensions, dont l’intensité. Qui reconnaît les émotions mélangées comme normales comprend mieux les réactions contradictoires, chez soi et chez les autres. Évaluer l’intensité d’une émotion prépare le chapitre suivant : l’entraînement aux skills pour adolescents utilise une échelle de tension de 0 à 100, car selon l’intensité, ce ne sont pas les mêmes skills qui aident (Fleischhaker et al., 2011). Le bilan du trimestre dans le Skills-Pass est une auto-évaluation, pas une note : il rend visible ce qui a grandi.",
         "quellen": [
           "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696.",
           "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
@@ -451,7 +453,7 @@
           "leichter": "Exercice 1 seulement avec les situations 1 à 4 ; les six émotions en visages au tableau. Sur la ligne, tout le monde montre aussi le chiffre avec les doigts. Pour le mélange d’émotions, prendre des cartes de la page 1, avec visages. Pour le bilan du trimestre, lire lentement les cinq phrases à voix haute ; un binôme aide à comprendre.",
           "schwerer": "Pour une situation, noter ce que chacune des deux émotions voudrait faire – et laquelle gagne à la fin. Ou rassembler des mots pour des mélanges, comme doux-amer ou le trac, et expliquer quelles émotions s’y cachent."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur à deux émotions (5 min), exercice 1 avec mise en commun (15 min), ligne de 0 à 10 (8 min), respiration par le ventre (5 min), Skills-Pass et bilan du trimestre (12 min), mission et prochaine séance (5 min). Le mélange d’émotions et le retour sur le chapitre sont supprimés ; le bilan du trimestre est prioritaire."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur à deux émotions (5 min), exercice 1 avec mise en commun (15 min), ligne de 0 à 10 (8 min), respiration par le ventre (5 min), Skills-Pass et bilan du trimestre (10 min), mission avec le moment, numéros d’aide et prochaine séance (7 min). Le mélange d’émotions et le retour sur le chapitre sont supprimés ; le bilan du trimestre est prioritaire."
       }
     }
   ],
@@ -548,8 +550,8 @@
           },
           {
             "art": "aufgabe",
-            "text": "Deine Wochen-Mission: Ertapp dich bei einem Gefühls-Mix. Welche zwei Gefühle waren da, und wie stark?",
-            "hinweis": "Ein paar Stichworte reichen.",
+            "text": "Deine Wochen-Mission: der Gefühls-Mix in deinem Moment. Welche zwei Gefühle waren da, und wie stark?",
+            "hinweis": "Deinen Moment hast du in der Stunde gewählt – er steht bei den Wochen-Missionen. Ein paar Stichworte reichen.",
             "symbole": [
               "schreiben"
             ]
@@ -595,6 +597,12 @@
           },
           {
             "art": "info",
+            "symbol": "wissen",
+            "titel": "Aus der Forschung",
+            "text": "Man kann glücklich und traurig zugleich sein – das wurde bei Menschen nach einem Abschied gemessen."
+          },
+          {
+            "art": "info",
             "symbol": "hilfe",
             "titel": "Du entscheidest, was du teilst.",
             "text": "Aufgabe 2 und 3 gehören dir. Du erzählst nur davon, wenn du willst."
@@ -605,7 +613,7 @@
           "ablauf": [
             "Einheit 12, Schritt 3: Aufgabe 1 – die Lehrkraft liest jede Situation vor, alle kreuzen allein an (7 Min.); dann für drei Situationen per Handzeichen auszählen.",
             "Schritt 7: Aufgabe 2 allein und still (5 Min.); nichts wird vorgelesen.",
-            "Aufgabe 3 begleitet die Wochen-Mission; die Brücke von Einheit 13 fragt kurz danach."
+            "Aufgabe 3 begleitet die Wochen-Mission mit dem in der Stunde gewählten Moment; die Brücke von Einheit 13 fragt kurz danach. Der Kasten „Aus der Forschung“ fasst Larsen et al. (2001) zusammen."
           ],
           "hintergrund": "Menschen empfinden in bittersüßen Momenten tatsächlich gleichzeitig Freude und Traurigkeit (Larsen et al., 2001); Plutchik (2001) beschreibt Gefühle wie Farben, die sich mischen. Wer die Stärke eines Gefühls einschätzt, bereitet die Anspannungsskala von 0 bis 100 vor.",
           "quellen": [
@@ -683,8 +691,8 @@
           },
           {
             "art": "aufgabe",
-            "text": "Ta mission de la semaine : repère un mélange d’émotions. Quelles deux émotions étaient là, et avec quelle force ?",
-            "hinweis": "Quelques mots-clés suffisent.",
+            "text": "Ta mission de la semaine : le mélange d’émotions dans ton moment. Quelles deux émotions étaient là, et avec quelle force ?",
+            "hinweis": "Tu as choisi ton moment pendant le cours – il est noté avec les missions de la semaine. Quelques mots-clés suffisent.",
             "symbole": [
               "schreiben"
             ]
@@ -730,6 +738,12 @@
           },
           {
             "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce que dit la recherche",
+            "text": "On peut être heureux et triste en même temps – on l’a mesuré chez des personnes après un au revoir."
+          },
+          {
+            "art": "info",
             "symbol": "hilfe",
             "titel": "Tu décides de ce que tu partages.",
             "text": "Les exercices 2 et 3 t’appartiennent. Tu n’en parles que si tu le veux."
@@ -740,7 +754,7 @@
           "ablauf": [
             "Séance 12, étape 3 : exercice 1 – lire chaque situation à voix haute, chacun coche seul (7 min) ; puis décompte à main levée pour trois situations.",
             "Étape 7 : exercice 2 seul et en silence (5 min) ; rien n’est lu à voix haute.",
-            "L’exercice 3 accompagne la mission de la semaine ; le lien de la séance 13 y revient brièvement."
+            "L’exercice 3 accompagne la mission de la semaine avec le moment choisi pendant le cours ; le lien de la séance 13 y revient brièvement. L’encadré « Ce que dit la recherche » résume Larsen et al. (2001)."
           ],
           "hintergrund": "Dans des moments doux-amers, on ressent réellement de la joie et de la tristesse en même temps (Larsen et al., 2001) ; Plutchik (2001) décrit les émotions comme des couleurs qui se mélangent. Évaluer l’intensité d’une émotion prépare l’échelle de tension de 0 à 100.",
           "quellen": [

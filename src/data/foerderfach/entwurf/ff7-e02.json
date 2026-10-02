@@ -37,9 +37,9 @@
         "kurz": "Die Klasse sammelt, was am Lycée neu und schwer ist, findet bei einer Rallye in Tischgruppen heraus, wer im Haus wobei hilft, und jede Person macht einen kleinen Plan für die ersten Wochen.",
         "ziele": [
           "benennen, was am Lycée neu ist und was ihnen noch schwerfällt",
-          "finden die wichtigsten Anlaufstellen ihres Lycée und halten fest, wer wobei hilft",
+          "finden die Anlaufstellen im Haus und notieren, wer wobei hilft",
           "sprechen Erwachsene im Haus höflich an und stellen eine Frage",
-          "schreiben einen Wenn-dann-Plan für eine Sache, die noch schwer ist"
+          "schreiben einen Wenn-dann-Plan für etwas, das noch schwer ist"
         ],
         "material": [
           "Schülerheft für jede Person",
@@ -48,12 +48,13 @@
           "Tipp-Plakat, Klebeband, dicke Stifte",
           "Rallye-Karten, fünf Umschläge",
           "Fünf Uhren (oder Handy der Rolle Zeit)",
+          "Fragebögen (Teil A) und ein großer Umschlag",
           "Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
-          "Erlaubnis der Direktion holen; möglichst einen Éducateur für die Gänge gewinnen.",
-          "Stationen vorwarnen; den SePAS fragen, ob jemand die Gruppe begrüßt.",
+          "Rallye: Erlaubnis der Direktion, Stationen vorwarnen, möglichst ein Éducateur für die Gänge.",
           "Rallye-Karten ausfüllen, kopieren, ausschneiden, in fünf Umschläge.",
+          "Fragebogen (Teil A) je Person kopieren, in beiden Sprachen; Umschlag.",
           "Tafel: Anlaufstellen 1–7, leere Rallye-Tabelle (Station, Raum, Zeiten).",
           "Klären, wann und wo man den Régent außerhalb des Unterrichts erreicht."
         ],
@@ -69,7 +70,12 @@
             "titel": "Rückblick und Thema der Stunde"
           },
           {
-            "min": "15–30",
+            "min": "15–20",
+            "phase": "uebung",
+            "titel": "Anonymer Klassen-Fragebogen"
+          },
+          {
+            "min": "20–30",
             "phase": "uebung",
             "titel": "Was klappt schon, was ist noch schwer?"
           },
@@ -121,22 +127,39 @@
             "titel": "Rückblick und Thema der Stunde",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Zwei Freiwillige lesen ihren Satz aus dem Skills-Pass vom letzten Mal vor. Zur Wochen-Mission mit dem Daumen fragen: Habt ihr 5-4-3-2-1 ausprobiert? Hoch: ja, und es hat etwas gebracht; Mitte: ja, aber nicht sicher, ob es geholfen hat; runter: nicht dazu gekommen – auch in Ordnung. Eine Person erzählt kurz, wo. Auf die Klassenvereinbarung zeigen: Sie gilt heute auch unterwegs im Haus. Dann das Thema an die Tafel schreiben: Neu am Lycée – was ist neu, was ist schwer, wer hilft?",
+            "text": "Zwei Freiwillige lesen ihren Satz aus dem Skills-Pass vom letzten Mal vor. Zur Wochen-Mission mit dem Daumen fragen: Kam euer Moment – Bus, Test, Bett –, und habt ihr 5-4-3-2-1 gemacht? Hoch: Moment kam, Skill gemacht; Mitte: Moment kam, aber vergessen oder nicht sicher, ob es geholfen hat; runter: Der Moment kam nicht – auch in Ordnung. Eine Stimme erzählt kurz, was sie in ihrem Moment gemacht hat und was danach anders war. Auf die Klassenvereinbarung zeigen: Sie gilt heute auch unterwegs im Haus. Dann das Thema an die Tafel schreiben: Neu am Lycée – was ist neu, was ist schwer, wer hilft?",
             "sagen": [
               "Die ersten Tage hier habt ihr hinter euch. Heute geht es darum, was neu ist, was noch schwer ist – und wer euch in diesem Haus hilft."
             ],
-            "tipp": "Wer die Mission nicht geschafft hat, hört einfach zu – kein Nachfragen, kein Kommentar. So bleibt sie eine Einladung und wird keine Hausaufgabe."
+            "tipp": "Wer die Mission nicht geschafft hat, hört einfach zu – kein Nachfragen, kein Kommentar. So bleibt sie eine Einladung und wird keine Hausaufgabe. Kam der Moment bei vielen nicht, lag es meist am Moment, nicht am Willen: Heute wählt jede Person einen neuen."
+          },
+          {
+            "titel": "Anonymer Klassen-Fragebogen",
+            "dauer": 5,
+            "phase": "uebung",
+            "text": "Der Fragebogen steht als Kopiervorlage in Teil A des Handbuchs („Wirkt es? So prüfen Sie es“, Deutsch und Französisch). Er kommt heute zum ersten Mal und in Einheit 35 noch einmal – derselbe Bogen, dieselbe Person liest vor, an derselben Stelle der Stunde. Austeilen: Jede Person nimmt den Bogen in der Sprache, die ihr leichter fällt (1 Min.). Die Anleitung vorlesen, dann die zwölf Aussagen langsam einzeln vorlesen; alle kreuzen gleichzeitig an, ohne Namen. Die zwei offenen Fragen dürfen mit einem Wort beantwortet werden oder leer bleiben (3 Min.). Die Bögen kommen umgedreht in den Umschlag; eine Person aus der Klasse klebt ihn zu. Wer nicht mitmachen möchte, gibt den Bogen leer ab (1 Min.).",
+            "sagen": [
+              "Dieser Bogen bewertet nicht euch, sondern das Fach. Am Ende des Jahres füllt ihr denselben Bogen noch einmal aus – dann sehen wir, was das Fach der Klasse gebracht hat.",
+              "Kein Name, keine Note. Ihr dürft Fragen auslassen, und wer gar nicht will, gibt den Bogen leer ab – im Umschlag sieht das niemand."
+            ],
+            "tipp": "Nur vorlesen, nicht erklären: Was eine Aussage bedeutet, entscheidet jede Person für sich – sonst sind die beiden Durchgänge nicht vergleichbar. Den Umschlag bis zum Auszählen bei sich behalten, innerhalb einer Woche nach der Anleitung in Teil A auszählen, die Zahl der leeren Bögen notieren, danach die Bögen schreddern.",
+            "wennEsKippt": "Fragt jemand, wer das liest: ehrlich antworten – nur die Lehrkraft, und sie zählt Kreuze, keine Handschriften. Wird über eine Aussage gekichert, ruhig weiterlesen. Wer noch wenig Deutsch oder Französisch versteht, nimmt den Bogen in der näheren Sprache; die Nachbarin darf eine Aussage leise übersetzen, kreuzt aber nicht mit an. Steht in einer offenen Antwort ein Hinweis auf Gefahr, nicht vor der Klasse nachforschen, sondern noch am selben Tag mit dem SePAS besprechen, wie ein Gesprächsangebot alle erreicht."
           },
           {
             "titel": "Was klappt schon, was ist noch schwer?",
-            "dauer": 15,
+            "dauer": 10,
             "phase": "uebung",
-            "text": "Allein (3 Min.): Aufgabe 1 im Heft. Die acht Punkte langsam vorlesen, alle kreuzen gleichzeitig an: klappt schon, geht so oder noch schwer; wer fertig ist, ergänzt die zwei Sätze darunter. Daumen-Abfrage (4 Min.): die Punkte 1 bis 6 noch einmal vorlesen; auf „drei“ zeigen alle gleichzeitig – Daumen hoch für klappt schon, waagrecht für geht so, runter für noch schwer; wer nicht mitzeigen mag, lässt die Hand auf dem Tisch. Punkte mit vielen Daumen unten an der Tafel notieren und laut spiegeln, was zu sehen ist, ohne Namen. Die zwei letzten Punkte (Anschluss in der Klasse, Pausen und Kantine) nicht abfragen: Sie sind nur für die Jugendlichen selbst. Tischgruppen (6 Min.): Jede Gruppe bekommt einen der notierten Punkte und schreibt zwei, drei Tipps auf Moderationskarten: Was hilft? Was macht ihr schon? Klasse (2 Min.): Die Karten kommen auf das Tipp-Plakat; je Gruppe liest eine Person einen Tipp vor.",
+            "text": "Allein (2 Min.): Aufgabe 1 im Heft. Die acht Punkte langsam vorlesen, alle kreuzen gleichzeitig an: klappt schon, geht so oder noch schwer; die zwei Sätze darunter dürfen zu Hause fertig werden. Daumen-Abfrage (3 Min.): die Punkte 1 bis 6 noch einmal vorlesen; auf „drei“ zeigen alle gleichzeitig – Daumen hoch für klappt schon, waagrecht für geht so, runter für noch schwer; wer nicht mitzeigen mag, lässt die Hand auf dem Tisch. Punkte mit vielen Daumen unten an der Tafel notieren und ohne Namen spiegeln, was zu sehen ist; die zwei letzten Punkte (Anschluss in der Klasse, Pausen und Kantine) nicht abfragen – sie sind nur für die Jugendlichen selbst. Dann drei typische Sätze Älterer über ihren Anfang vorlesen (Liste; echte Sätze: siehe Tipp): Was heute schwer ist, war für fast alle schwer – und ging vorbei (1 Min.). Tischgruppen (3 Min.): Jede Gruppe bekommt einen der notierten Punkte und schreibt zwei Tipps auf Moderationskarten: Was hilft? Was macht ihr schon? Klasse (1 Min.): Die Karten kommen auf das Tipp-Plakat; je Gruppe liest eine Person einen Tipp vor.",
             "sagen": [
               "Hier gibt es kein Richtig oder Falsch. Das meiste auf der Liste ist für fast alle neu.",
               "Die ersten Tage habt ihr geschafft – damit seid ihr schon fast Profis. Was hilft euch?"
             ],
-            "tipp": "Tipps von Gleichaltrigen wirken stärker als Ratschläge von Erwachsenen: „Tasche am Abend packen“ oder „Stundenplan als Foto auf dem Handy“ klingt aus dem Mund einer Mitschülerin nach Alltag, nicht nach Ermahnung.",
+            "punkte": [
+              "„Im ersten Monat habe ich mich dreimal verlaufen. Im Oktober war das vorbei.“ – aus einer 6e",
+              "„Ich dachte, alle anderen kennen sich schon. Nach zwei Wochen hatte ich im Bus zwei Leute zum Reden.“ – aus einer 5e",
+              "„Den Stundenplan habe ich erst nach den Allerheiligenferien richtig kapiert. Heute erkläre ich ihn den Neuen.“ – aus einer 5e"
+            ],
+            "tipp": "Tipps von Gleichaltrigen wirken stärker als Ratschläge von Erwachsenen: „Tasche am Abend packen“ klingt aus dem Mund einer Mitschülerin nach Alltag, nicht nach Ermahnung. Dasselbe gilt für die Sätze Älterer – sie sagen: Es ist normal, und es geht vorbei. Noch stärker wirken echte Sätze: vor der Stunde eine Kollegin der 6e bitten, drei anonyme Sätze ihrer Klasse zum ersten Monat zu notieren.",
             "wennEsKippt": "Zeigen fast alle Daumen nach oben, die Frage drehen: Was hättet ihr am ersten Tag gern gewusst? Daraus werden Tipps für die nächste 7e. Sagt jemand vor der Klasse etwas Belastendes, etwa „Ich habe hier niemanden“, das ruhig würdigen, nicht vertiefen und nach der Stunde ein kurzes Gespräch anbieten.",
             "blatt": "ff7-neu-am-lycee"
           },
@@ -272,36 +295,37 @@
             "titel": "Skills-Pass und Daumen-Blitzlicht",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (3 Min.): die Leitfrage an die Tafel schreiben – Welche Anlaufstelle merke ich mir, und wofür? Wer mag, schreibt stattdessen seinen Wenn-dann-Plan hinein; danach gibt es den Stempel. Blitzlicht mit dem Daumen (1 Min.): Wie gut kennt ihr euch jetzt im Lycée aus? Auf „drei“ zeigen alle gleichzeitig; mit der Bewegungspause vergleichen. Zum Schluss die Wochen-Mission im Heft ansagen und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Welche Anlaufstelle merke ich mir, und wofür? Wer mag, schreibt stattdessen seinen Wenn-dann-Plan hinein; danach gibt es den Stempel. Blitzlicht mit dem Daumen (1 Min.): Wie gut kennt ihr euch jetzt im Lycée aus? Auf „drei“ zeigen alle gleichzeitig; mit der Bewegungspause vergleichen. Wochen-Mission und Moment wählen (1 Min.): Die Mission im Heft ansagen; jede Person schreibt in die Spalte „Mein Moment: Wenn …“ das Wenn aus ihrem Plan – oder einen Moment für die Fingeratmung, etwa vor dem nächsten Test oder im vollen Gang. Zum Schluss der Ausblick auf die nächste Stunde (1 Min.).",
             "sagen": [
-              "Wie gut kennt ihr euch jetzt hier aus – Daumen hoch, waagrecht oder runter? Auf drei."
+              "Wie gut kennt ihr euch jetzt hier aus – Daumen hoch, waagrecht oder runter? Auf drei.",
+              "Euer Moment steht schon in eurem Plan: das Wenn. Schreibt es in die Spalte neben der Mission – oder den Moment für die Fingeratmung."
             ],
             "tipp": "Das Tipp-Plakat aufheben: Im nächsten September ist es der beste Einstieg für die neue 7e – Tipps von Jugendlichen für Jugendliche. Wer mag, zeigt die Tabelle zu Hause: Dann wissen auch die Eltern, wen sie im Lycée fragen können."
           }
         ],
         "bruecke": "Nächste Woche lernt ihr euch als Klasse besser kennen – in Bewegung, mit Aufstellungen und Ratespielen, und niemand muss dabei etwas Persönliches erzählen.",
-        "mission": "Probiere diese Woche deinen Wenn-dann-Plan aus, sobald die Situation kommt – oder die Fingeratmung, etwa vor einem Test oder im vollen Gang.",
-        "hintergrund": "Der Wechsel ins Lycée fällt bei den meisten mit dem Beginn der Pubertät zusammen. Die neue Schule ist größer und unübersichtlicher, statt einer Lehrperson gibt es viele, die Klasse ist neu. Passt die Umgebung schlecht zu dem, was Jugendliche in diesem Alter brauchen – verlässliche Erwachsene, Zugehörigkeit, Mitsprache –, sinken bei vielen Motivation und Wohlbefinden (Eccles & Roeser, 2011). Die Stunde setzt an drei Stellen an: Die Jugendlichen sehen, dass andere dasselbe schwer finden. Sie lernen die Anlaufstellen mit Ort und Gesicht kennen – Hilfe holen sich Jugendliche eher bei Menschen, die sie schon kennen und denen sie vertrauen (Rickwood et al., 2005). Und der Wenn-dann-Plan verbindet eine konkrete Situation mit einer Handlung; solche Vorsätze werden deutlich häufiger umgesetzt als allgemeine Absichten (Gollwitzer, 1999).",
+        "mission": "Wenn die Situation aus deinem Plan kommt, dann mach, was du dir vorgenommen hast – oder die Fingeratmung in deinem Moment, etwa vor einem Test oder im vollen Gang.",
+        "hintergrund": "Der Wechsel ins Lycée fällt meist mit dem Beginn der Pubertät zusammen: größere Schule, viele Lehrkräfte statt einer, neue Klasse. Erstens hören die Jugendlichen von Älteren, dass Anfangsschwierigkeiten normal sind und vorbeigehen. Diese Botschaft, von Älteren an Neue weitergegeben, stärkte Zugehörigkeit, Gesundheit und Leistung noch Jahre später (Walton & Cohen, 2011). Zweitens sprechen sie in der Rallye selbst eine erwachsene Person an: Solche Bewältigungserfahrungen sind die stärkste Quelle für das Zutrauen, es wieder zu schaffen (Bandura, 1977). Drittens verbindet der Wenn-dann-Plan eine konkrete Situation mit einer Handlung; solche Vorsätze werden deutlich häufiger umgesetzt als gute Absichten (Gollwitzer, 1999) – deshalb wählt jede Person auch den Moment ihrer Mission selbst. Der anonyme Fragebogen misst die Klasse, nicht Einzelne, und kommt am Jahresende wieder.",
         "quellen": [
-          "Eccles, J. S. & Roeser, R. W. (2011). Schools as developmental contexts during adolescence. Journal of Research on Adolescence, 21(1), 225–241.",
-          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Walton, G. M. & Cohen, G. L. (2011). A brief social-belonging intervention improves academic and health outcomes of minority students. Science, 331(6023), 1447–1451.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
-        "achtung": "Der Start am Lycée ist nicht für alle leicht: Manche vermissen ihre alte Klasse, fühlen sich ausgeschlossen oder sind enttäuscht, in der Voie de préparation zu sein. Solche Beiträge würdigen, nicht vor der Klasse vertiefen und nach der Stunde ein Gespräch anbieten. Bei Hinweisen auf Mobbing, Gewalt oder Selbstverletzung noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Für die Rallye gilt die Aufsichtspflicht: nur mit Erlaubnis der Direktion; wer nicht ohne Erwachsene unterwegs sein sollte, geht unauffällig mit einer Begleitperson oder führt an der Basis die Liste.",
+        "achtung": "Der Start am Lycée ist nicht für alle leicht: Manche vermissen ihre alte Klasse, fühlen sich ausgeschlossen oder hadern mit der Voie de préparation. Nicht vertiefen, nach der Stunde ansprechen; bei Hinweisen auf Mobbing, Gewalt oder Selbstverletzung am selben Tag den SePAS informieren (Schutzkonzept). Der Fragebogen bleibt anonym, ohne Suche nach Handschriften; ein Hinweis auf Gefahr in einer offenen Antwort geht am selben Tag an den SePAS. Rallye nur mit Erlaubnis der Direktion; wer nicht allein gehen sollte, bleibt an der Basis.",
         "differenzierung": {
-          "leichter": "Aufgabe 1 liest die Lehrkraft vor; wer mag, arbeitet im Tandem. Bei der Rallye übernehmen Jugendliche, die mühsam schreiben oder wenig Deutsch sprechen, die Rolle Weg oder Zeit; in der Tabelle reicht die Raumnummer. Notizen dürfen in jeder Sprache sein. Für den Plan Satzanfänge an die Tafel: Wenn ich nicht weiß, …, dann frage ich …",
+          "leichter": "Aufgabe 1 liest die Lehrkraft vor; wer mag, arbeitet im Tandem. Beim Fragebogen zählt die Sprache, die näher ist; alles wird vorgelesen. Bei der Rallye übernehmen Jugendliche, die mühsam schreiben oder wenig Deutsch sprechen, die Rolle Weg oder Zeit; in der Tabelle reicht die Raumnummer. Notizen dürfen in jeder Sprache sein. Für den Plan Satzanfänge an die Tafel: Wenn ich nicht weiß, …, dann frage ich …; für die Spalte „Mein Moment“ reicht ein Wort.",
           "schwerer": "Schnelle schreiben drei Tipps für die nächste 7e auf eine Karte oder zeichnen einen einfachen Plan des Lycée mit allen Anlaufstellen für das Klassenplakat. Bei der Rallye übernehmen sie die Rolle Fragen und stellen eine eigene Zusatzfrage."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit zwei Klebepunkten (5 Min.), Aufgabe 1 mit Daumen-Abfrage und Tipps (10 Min.), Wer hilft wobei? – die Situationen raten, dabei nennt die Lehrkraft Räume und Zeiten ihrer Schule, und alle tragen sie in die Tabelle ein (15 Min.), Mein Plan für die ersten Wochen (10 Min.), Fingeratmung (5 Min.), Skills-Pass und Daumen-Blitzlicht (5 Min.). Die Rallye entfällt oder wird in der nächsten Stunde nachgeholt."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit zwei Klebepunkten (5 Min.), anonymer Fragebogen (5 Min.), Aufgabe 1 mit Daumen-Abfrage, Sätzen Älterer und Tipps (8 Min.), Wer hilft wobei? – die Situationen raten, dabei nennt die Lehrkraft Räume und Zeiten ihrer Schule, und alle tragen sie in die Tabelle ein (12 Min.), Mein Plan für die ersten Wochen (10 Min.), Fingeratmung (5 Min.), Skills-Pass, Mission und Moment wählen (5 Min.). Die Rallye entfällt oder wird in der nächsten Stunde nachgeholt."
       },
       "fr": {
         "titel": "Premiers pas au lycée",
         "kurz": "La classe fait le point sur ce qui est nouveau et difficile au lycée, découvre lors d’un rallye en îlots qui aide pour quoi, et chaque jeune se fait un petit plan pour les premières semaines.",
         "ziele": [
-          "nomment ce qui est nouveau au lycée et ce qui leur semble encore difficile",
-          "trouvent les principaux points de contact de leur lycée et notent qui aide pour quoi",
-          "abordent poliment un adulte de l’établissement et lui posent une question",
-          "écrivent un plan « si… alors » pour une chose encore difficile"
+          "nomment ce qui est nouveau au lycée et ce qui reste difficile",
+          "trouvent les points de contact du lycée et qui aide pour quoi",
+          "abordent poliment un adulte du lycée et lui posent une question",
+          "écrivent un plan « si… alors » pour une chose difficile"
         ],
         "material": [
           "Un cahier de l’élève par jeune",
@@ -310,14 +334,15 @@
           "Affiche, ruban adhésif, gros feutres",
           "Cartes du rallye, cinq enveloppes",
           "Cinq montres (ou un portable par îlot)",
+          "Questionnaires (partie A) et une grande enveloppe",
           "Tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
-          "Obtenir l’accord de la direction ; si possible, un éducateur dans les couloirs.",
-          "Prévenir les postes ; demander si quelqu’un du SePAS accueille le groupe.",
+          "Rallye : accord de la direction, prévenir les postes ; si possible un éducateur.",
           "Compléter les cartes du rallye, les copier, les découper, cinq enveloppes.",
+          "Copier le questionnaire (partie A) pour chacun, dans les deux langues ; enveloppe.",
           "Au tableau : points de contact 1 à 7, grille du rallye (poste, salle, horaires).",
-          "Savoir quand et où joindre le régent en dehors des cours."
+          "Savoir quand et où joindre le régent hors cours."
         ],
         "ablauf": [
           {
@@ -331,7 +356,12 @@
             "titel": "Retour sur la séance et thème du jour"
           },
           {
-            "min": "15–30",
+            "min": "15–20",
+            "phase": "uebung",
+            "titel": "Questionnaire anonyme de la classe"
+          },
+          {
+            "min": "20–30",
             "phase": "uebung",
             "titel": "Ce qui va déjà, ce qui est encore difficile"
           },
@@ -383,22 +413,39 @@
             "titel": "Retour sur la séance et thème du jour",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Deux volontaires lisent la phrase de leur Skills-Pass de la dernière fois. Pour la mission de la semaine, demander avec le pouce : avez-vous essayé le 5-4-3-2-1 ? En haut : oui, et ça a aidé ; au milieu : oui, mais pas sûr que ça ait aidé ; en bas : pas eu l’occasion – c’est permis aussi. Une personne raconte brièvement où. Montrer la charte de classe : elle vaut aussi aujourd’hui dans les couloirs. Puis écrire le thème au tableau : Premiers pas au lycée – qu’est-ce qui est nouveau, qu’est-ce qui est difficile, qui aide ?",
+            "text": "Deux volontaires lisent la phrase de leur Skills-Pass de la dernière fois. Pour la mission de la semaine, demander avec le pouce : votre moment est-il arrivé – bus, devoir en classe, lit –, et avez-vous fait le 5-4-3-2-1 ? En haut : le moment est venu, skill fait ; au milieu : le moment est venu, mais oublié, ou pas sûr que ça ait aidé ; en bas : le moment n’est pas venu – c’est permis aussi. Une voix raconte brièvement ce qu’elle a fait à son moment et ce qui a changé après. Montrer la charte de classe : elle vaut aussi aujourd’hui dans les couloirs. Puis écrire le thème au tableau : Premiers pas au lycée – qu’est-ce qui est nouveau, qu’est-ce qui est difficile, qui aide ?",
             "sagen": [
               "Vous avez passé vos premiers jours ici. Aujourd’hui, on regarde ce qui est nouveau, ce qui est encore difficile – et qui peut vous aider dans ce bâtiment."
             ],
-            "tipp": "Qui n’a pas fait la mission écoute simplement – pas de question, pas de commentaire. Elle reste ainsi une invitation et ne devient pas un devoir."
+            "tipp": "Qui n’a pas fait la mission écoute simplement – pas de question, pas de commentaire. Elle reste ainsi une invitation et ne devient pas un devoir. Si le moment n’est pas venu pour beaucoup, c’est souvent le moment qui était mal choisi, pas la volonté : aujourd’hui, chacun en choisit un nouveau."
+          },
+          {
+            "titel": "Questionnaire anonyme de la classe",
+            "dauer": 5,
+            "phase": "uebung",
+            "text": "Le questionnaire est un modèle à photocopier dans la partie A du guide (« Est-ce que ça marche ? Comment le vérifier », en allemand et en français). Il est rempli aujourd’hui pour la première fois et une seconde fois à la séance 35 – le même questionnaire, lu par la même personne, au même moment de la séance. Distribuer : chaque jeune prend la version dans la langue qui lui est la plus facile (1 min). Lire la consigne, puis lire lentement les douze affirmations une par une ; tout le monde coche en même temps, sans nom. Les deux questions ouvertes peuvent recevoir un mot ou rester vides (3 min). Les questionnaires vont, retournés, dans l’enveloppe ; un jeune de la classe la ferme. Qui ne veut pas participer rend son questionnaire vide (1 min).",
+            "sagen": [
+              "Ce questionnaire ne vous évalue pas, vous : il évalue la matière. En fin d’année, vous remplirez le même – on verra alors ce que la matière a apporté à la classe.",
+              "Pas de nom, pas de note. Vous pouvez sauter des questions, et qui ne veut vraiment pas rend la feuille vide – dans l’enveloppe, personne ne le voit."
+            ],
+            "tipp": "Lire seulement, sans expliquer : ce qu’une affirmation veut dire, chacun en décide pour lui – sinon les deux passages ne sont plus comparables. Garder l’enveloppe jusqu’au dépouillement, dépouiller dans la semaine selon la partie A, noter le nombre de feuilles vides, puis passer les questionnaires à la déchiqueteuse.",
+            "wennEsKippt": "Si quelqu’un demande qui va lire tout ça : répondre franchement – seulement l’enseignant·e, qui compte des croix, pas des écritures. Si l’on rit d’une affirmation, continuer calmement. Qui comprend encore peu l’allemand ou le français prend la version la plus proche ; le voisin peut traduire une affirmation à voix basse, mais ne coche pas à sa place. Si une réponse ouverte laisse entrevoir un danger, ne pas enquêter devant la classe, mais voir le jour même avec le SePAS comment une offre d’entretien peut atteindre tout le monde."
           },
           {
             "titel": "Ce qui va déjà, ce qui est encore difficile",
-            "dauer": 15,
+            "dauer": 10,
             "phase": "uebung",
-            "text": "Seul (3 min) : exercice 1 dans le cahier. Lire lentement les huit points à voix haute, tout le monde coche en même temps : ça va déjà, moyen ou encore difficile ; qui a fini complète les deux phrases en dessous. Vote du pouce (4 min) : relire les points 1 à 6 ; à « trois », tout le monde montre en même temps – pouce en haut pour ça va déjà, à l’horizontale pour moyen, en bas pour encore difficile ; qui ne veut pas montrer laisse sa main sur la table. Noter au tableau les points avec beaucoup de pouces en bas et dire à voix haute ce qu’on voit, sans nommer personne. Ne pas faire voter sur les deux derniers points (trouver sa place dans la classe, la récré et la cantine) : ils ne regardent que les jeunes eux-mêmes. En îlots (6 min) : chaque groupe reçoit un des points notés et écrit deux ou trois astuces sur des cartes : qu’est-ce qui aide ? Qu’est-ce que vous faites déjà ? En classe entière (2 min) : les cartes vont sur l’affiche des astuces ; dans chaque îlot, quelqu’un lit une astuce.",
+            "text": "Seul (2 min) : exercice 1 dans le cahier. Lire lentement les huit points à voix haute, tout le monde coche en même temps : ça va déjà, moyen ou encore difficile ; les deux phrases en dessous peuvent se finir à la maison. Vote du pouce (3 min) : relire les points 1 à 6 ; à « trois », tout le monde montre en même temps – pouce en haut pour ça va déjà, à l’horizontale pour moyen, en bas pour encore difficile ; qui ne veut pas montrer laisse sa main sur la table. Noter au tableau les points avec beaucoup de pouces en bas et dire ce qu’on voit, sans nommer personne ; ne pas faire voter sur les deux derniers points (trouver sa place dans la classe, la récré et la cantine) – ils ne regardent que les jeunes eux-mêmes. Lire ensuite trois phrases typiques de plus grands sur leurs débuts (liste ; pour de vraies phrases, voir l’astuce) : ce qui est difficile aujourd’hui l’a été pour presque tous – et c’est passé (1 min). En îlots (3 min) : chaque groupe reçoit un des points notés et écrit deux astuces sur des cartes : qu’est-ce qui aide ? Qu’est-ce que vous faites déjà ? En classe entière (1 min) : les cartes vont sur l’affiche des astuces ; dans chaque îlot, quelqu’un lit une astuce.",
             "sagen": [
               "Il n’y a pas de bonne ou de mauvaise réponse. Presque tout, sur cette liste, est nouveau pour presque tout le monde.",
               "Vous avez passé les premiers jours – vous êtes donc déjà presque des pros. Qu’est-ce qui vous aide ?"
             ],
-            "tipp": "Les astuces des jeunes portent plus que les conseils des adultes : « préparer son sac la veille » ou « avoir une photo de l’emploi du temps sur son portable », dans la bouche d’un camarade, sonne comme du vécu, pas comme un sermon.",
+            "punkte": [
+              "« Le premier mois, je me suis perdu trois fois. En octobre, c’était fini. » – d’une 6e",
+              "« Je croyais que tous les autres se connaissaient déjà. Au bout de deux semaines, j’avais deux personnes à qui parler dans le bus. » – d’une 5e",
+              "« L’emploi du temps, je ne l’ai vraiment compris qu’après les vacances de la Toussaint. Aujourd’hui, c’est moi qui l’explique aux nouveaux. » – d’une 5e"
+            ],
+            "tipp": "Les astuces des jeunes portent plus que les conseils des adultes : « préparer son sac la veille », dans la bouche d’un camarade, sonne comme du vécu, pas comme un sermon. Il en va de même des phrases des plus grands – elles disent : c’est normal, et ça passe. De vraies phrases agissent encore mieux : avant le cours, demander à un·e collègue de 6e trois phrases anonymes de sa classe sur le premier mois.",
             "wennEsKippt": "Si presque tous les pouces sont en haut, retourner la question : qu’est-ce que vous auriez aimé savoir le premier jour ? On en tire des astuces pour la prochaine 7e. Si un jeune dit devant la classe quelque chose de lourd, par exemple « Je n’ai personne ici », l’accueillir calmement, ne pas approfondir et proposer un court entretien après le cours.",
             "blatt": "ff7-neu-am-lycee"
           },
@@ -534,27 +581,28 @@
             "titel": "Skills-Pass et tour éclair avec le pouce",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (3 min) : écrire la question au tableau – quel point de contact est-ce que je retiens, et pour quoi ? Qui le souhaite peut y écrire son plan « si… alors » à la place ; ensuite, le tampon. Tour éclair avec le pouce (1 min) : est-ce que vous vous repérez mieux au lycée maintenant ? À « trois », tout le monde montre en même temps ; comparer avec la pause active. Pour finir, annoncer la mission de la semaine dans le cahier et la prochaine séance (1 min).",
+            "text": "Skills-Pass (2 min) : écrire la question au tableau – quel point de contact est-ce que je retiens, et pour quoi ? Qui le souhaite peut y écrire son plan « si… alors » à la place ; ensuite, le tampon. Tour éclair avec le pouce (1 min) : est-ce que vous vous repérez mieux au lycée maintenant ? À « trois », tout le monde montre en même temps ; comparer avec la pause active. Mission de la semaine et choix du moment (1 min) : annoncer la mission du cahier ; chacun écrit dans la colonne « Mon moment : quand … » le « si » de son plan – ou un moment pour la respiration des doigts, par exemple avant le prochain devoir en classe ou dans un couloir bondé. Pour finir, annoncer la prochaine séance (1 min).",
             "sagen": [
-              "Est-ce que vous vous repérez mieux ici maintenant – pouce en haut, à l’horizontale ou en bas ? À trois."
+              "Est-ce que vous vous repérez mieux ici maintenant – pouce en haut, à l’horizontale ou en bas ? À trois.",
+              "Votre moment est déjà dans votre plan : c’est le « si ». Écrivez-le dans la colonne à côté de la mission – ou le moment de votre respiration des doigts."
             ],
             "tipp": "Garder l’affiche des astuces : en septembre prochain, c’est la meilleure entrée en matière pour la nouvelle 7e – des astuces de jeunes pour des jeunes. Qui le souhaite montre la grille à la maison : les parents savent alors à qui s’adresser au lycée."
           }
         ],
         "bruecke": "La semaine prochaine, vous allez mieux vous connaître en tant que classe – en bougeant, en vous plaçant dans la salle et en devinant, sans que personne n’ait à raconter quelque chose de personnel.",
-        "mission": "Cette semaine, essaie ton plan « si… alors » dès que la situation se présente – ou la respiration des doigts, par exemple avant un devoir en classe ou dans un couloir bondé.",
-        "hintergrund": "Pour la plupart des jeunes, le passage au lycée coïncide avec le début de la puberté. La nouvelle école est plus grande et moins lisible, il y a beaucoup d’enseignants au lieu d’un seul, et la classe est nouvelle. Quand l’environnement répond mal aux besoins de cet âge – des adultes fiables, un sentiment d’appartenance, son mot à dire –, la motivation et le bien-être baissent chez beaucoup (Eccles & Roeser, 2011). La séance agit à trois niveaux : les jeunes voient que d’autres trouvent les mêmes choses difficiles. Ils découvrent les points de contact avec un lieu et un visage – les jeunes demandent plus facilement de l’aide à des personnes qu’ils connaissent et en qui ils ont confiance (Rickwood et al., 2005). Enfin, le plan « si… alors » relie une situation précise à une action ; ce type d’intention est nettement plus souvent mis en œuvre qu’une résolution générale (Gollwitzer, 1999).",
+        "mission": "Quand la situation de ton plan se présente, fais ce que tu as prévu – ou la respiration des doigts à ton moment, par exemple avant un devoir en classe ou dans un couloir bondé.",
+        "hintergrund": "Le passage au lycée coïncide souvent avec le début de la puberté : école plus grande, beaucoup d’enseignants au lieu d’un seul, nouvelle classe. D’abord, les jeunes entendent de plus grands que les difficultés du début sont normales et passent. Ce message, transmis par des aînés à des nouveaux, a renforcé l’appartenance, la santé et les résultats encore des années plus tard (Walton & Cohen, 2011). Ensuite, pendant le rallye, ils abordent eux-mêmes un adulte : ces expériences de réussite sont la source la plus forte de la confiance en ses capacités (Bandura, 1977). Enfin, le plan « si… alors » relie une situation précise à une action ; ce type d’intention est nettement plus souvent mis en œuvre qu’une bonne résolution (Gollwitzer, 1999) – d’où le moment que chacun choisit aussi pour sa mission. Le questionnaire anonyme mesure la classe, pas les individus, et revient en fin d’année.",
         "quellen": [
-          "Eccles, J. S. & Roeser, R. W. (2011). Schools as developmental contexts during adolescence. Journal of Research on Adolescence, 21(1), 225–241.",
-          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Walton, G. M. & Cohen, G. L. (2011). A brief social-belonging intervention improves academic and health outcomes of minority students. Science, 331(6023), 1447–1451.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
-        "achtung": "Le début au lycée n’est pas simple pour tous : certains regrettent leur ancienne classe, se sentent exclus ou vivent mal leur orientation en voie de préparation. Accueillir ces remarques sans les approfondir devant la classe et proposer un entretien après le cours. En cas de signes de harcèlement, de violence ou d’automutilation, informer le SePAS le jour même et agir selon le protocole de protection de l’école. Pour le rallye, le devoir de surveillance s’applique : seulement avec l’accord de la direction ; un jeune qui ne devrait pas circuler sans adulte fait discrètement le parcours avec un accompagnateur ou tient la liste à la base.",
+        "achtung": "Le début au lycée n’est pas simple pour tous : certains regrettent leur ancienne classe ou vivent mal la voie de préparation. Ne pas approfondir ; en reparler après le cours. En cas de signes de harcèlement, de violence ou d’automutilation, informer le SePAS le jour même (protocole de protection). Le questionnaire reste anonyme, sans recherche d’écritures ; un signe de danger dans une réponse ouverte va le jour même au SePAS. Rallye avec l’accord de la direction ; qui ne devrait pas circuler seul reste à la base.",
         "differenzierung": {
-          "leichter": "L’exercice 1 est lu à voix haute ; qui le souhaite travaille en binôme. Pendant le rallye, les jeunes qui ont du mal à écrire ou parlent encore peu le français prennent le rôle chemin ou temps ; dans la grille, le numéro de salle suffit. Les notes peuvent être dans n’importe quelle langue. Pour le plan, des débuts de phrase au tableau : Si je ne sais pas…, alors je demande à…",
+          "leichter": "L’exercice 1 est lu à voix haute ; qui le souhaite travaille en binôme. Pour le questionnaire, la langue la plus proche compte ; tout est lu à voix haute. Pendant le rallye, les jeunes qui ont du mal à écrire ou parlent encore peu le français prennent le rôle chemin ou temps ; dans la grille, le numéro de salle suffit. Les notes peuvent être dans n’importe quelle langue. Pour le plan, des débuts de phrase au tableau : Si je ne sais pas…, alors je demande à… ; pour la colonne « Mon moment », un mot suffit.",
           "schwerer": "Les plus rapides écrivent trois astuces pour la prochaine 7e sur une carte ou dessinent un plan simple du lycée avec tous les points de contact pour l’affiche de la classe. Pendant le rallye, ils prennent le rôle questions et posent une question en plus."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec deux gommettes (5 min), exercice 1 avec vote du pouce et astuces (10 min), qui aide pour quoi ? – deviner les situations ; l’enseignant·e donne les salles et les horaires de l’établissement, et chacun les note dans la grille du cahier (15 min), mon plan pour les premières semaines (10 min), respiration des doigts (5 min), Skills-Pass et tour éclair avec le pouce (5 min). Le rallye est supprimé ou rattrapé à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec deux gommettes (5 min), questionnaire anonyme (5 min), exercice 1 avec vote du pouce, phrases des plus grands et astuces (8 min), qui aide pour quoi ? – deviner les situations ; l’enseignant·e donne les salles et les horaires de l’établissement, et chacun les note dans la grille du cahier (12 min), mon plan pour les premières semaines (10 min), respiration des doigts (5 min), Skills-Pass, mission et choix du moment (5 min). Le rallye est supprimé ou rattrapé à la séance suivante."
       }
     }
   ],
@@ -641,10 +689,24 @@
             "linien": 2
           },
           {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Du entscheidest, was du teilst.",
-            "text": "Aufgabe 1 und dein Plan gehören dir. Du zeigst sie nur, wenn du willst."
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "info",
+                "symbol": "wissen",
+                "titel": "Aus der Forschung",
+                "text": "Neue, die erfuhren, dass der Anfang für fast alle schwer ist und vorbeigeht, fühlten sich noch Jahre später wohler."
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "hilfe",
+                "titel": "Du entscheidest, was du teilst.",
+                "text": "Aufgabe 1 und dein Plan gehören dir. Du zeigst sie nur, wenn du willst."
+              }
+            ]
           },
           {
             "art": "info",
@@ -765,10 +827,10 @@
             "Tabelle: Zeile 1 beim Raten der Anlaufstellen, die übrigen Zeilen während der Rallye und bei den Berichten.",
             "Aufgabe 3 allein (6 Min.); vorgelesen wird nur freiwillig."
           ],
-          "hintergrund": "Der Übergang ins Lycée fällt vielen schwer, vor allem wenn die neue Umgebung wenig Halt gibt (Eccles & Roeser, 2011). Hilfe holen sich Jugendliche eher bei Menschen, die sie kennen (Rickwood et al., 2005), und Wenn-dann-Pläne werden häufiger umgesetzt als allgemeine Vorsätze (Gollwitzer, 1999).",
+          "hintergrund": "Anfangsschwierigkeiten als normal und vorübergehend zu rahmen, stärkt Zugehörigkeit und Wohlbefinden nachhaltig (Walton & Cohen, 2011). Wer selbst eine erwachsene Person anspricht, macht eine Bewältigungserfahrung (Bandura, 1977), und Wenn-dann-Pläne werden häufiger umgesetzt als allgemeine Vorsätze (Gollwitzer, 1999).",
           "quellen": [
-            "Eccles, J. S. & Roeser, R. W. (2011). Schools as developmental contexts during adolescence. Journal of Research on Adolescence, 21(1), 225–241.",
-            "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+            "Walton, G. M. & Cohen, G. L. (2011). A brief social-belonging intervention improves academic and health outcomes of minority students. Science, 331(6023), 1447–1451.",
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
             "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
           ],
           "material": "Schülerheft"
@@ -831,10 +893,24 @@
             "linien": 2
           },
           {
-            "art": "info",
-            "symbol": "hilfe",
-            "titel": "Tu décides de ce que tu partages.",
-            "text": "L’exercice 1 et ton plan t’appartiennent. Tu ne les montres que si tu le veux."
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "info",
+                "symbol": "wissen",
+                "titel": "Ce que dit la recherche",
+                "text": "Les nouveaux qui ont appris que le début est difficile pour presque tout le monde – et que ça passe – se sentaient encore mieux des années plus tard."
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "hilfe",
+                "titel": "Tu décides de ce que tu partages.",
+                "text": "L’exercice 1 et ton plan t’appartiennent. Tu ne les montres que si tu le veux."
+              }
+            ]
           },
           {
             "art": "info",
@@ -957,10 +1033,10 @@
             "Tableau : la ligne 1 pendant le jeu des points de contact, les autres pendant le rallye et les comptes rendus.",
             "Exercice 3 seul (6 min) ; on ne lit à voix haute que si on le souhaite."
           ],
-          "hintergrund": "Le passage au lycée est difficile pour beaucoup, surtout quand le nouvel environnement offre peu de repères (Eccles & Roeser, 2011). Les jeunes demandent plus facilement de l’aide à des personnes qu’ils connaissent (Rickwood et al., 2005), et les plans « si… alors » sont plus souvent mis en œuvre que les résolutions générales (Gollwitzer, 1999).",
+          "hintergrund": "Présenter les difficultés du début comme normales et passagères renforce durablement l’appartenance et le bien-être (Walton & Cohen, 2011). Aborder soi-même un adulte est une expérience de réussite (Bandura, 1977), et les plans « si… alors » sont plus souvent mis en œuvre que les résolutions générales (Gollwitzer, 1999).",
           "quellen": [
-            "Eccles, J. S. & Roeser, R. W. (2011). Schools as developmental contexts during adolescence. Journal of Research on Adolescence, 21(1), 225–241.",
-            "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+            "Walton, G. M. & Cohen, G. L. (2011). A brief social-belonging intervention improves academic and health outcomes of minority students. Science, 331(6023), 1447–1451.",
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
             "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
           ],
           "material": "Cahier de l’élève"

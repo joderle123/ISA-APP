@@ -125,7 +125,7 @@
             "titel": "Rückblick und Thema: Wir gründen den Klassenrat",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann kurz nach der Wochen-Mission fragen: Wer hat bei einer Gruppenarbeit eine Sache getan, die dem Team geholfen hat? Daumen hoch, Mitte oder runter; eine Stimme erzählt. Auf die neuen Team-Regeln am Plakat der Klassenvereinbarung zeigen: Letzte Woche habt ihr schon gemeinsam entschieden. Dann das Thema an die Tafel schreiben: Unser Klassenrat – hier entscheidet die Klasse mit.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann kurz nach der Wochen-Mission fragen: Kam euer Moment – Gruppenarbeit, Training, Spiel –, und was habt ihr für euer Team getan? Daumen hoch, Mitte oder runter; eine Stimme erzählt. Auf die neuen Team-Regeln am Plakat der Klassenvereinbarung zeigen: Letzte Woche habt ihr schon gemeinsam entschieden. Dann das Thema an die Tafel schreiben: Unser Klassenrat – hier entscheidet die Klasse mit.",
             "sagen": [
               "Letzte Woche habt ihr schon eine Regel gemeinsam beschlossen. Heute bekommt das einen festen Platz: euren Klassenrat."
             ],
@@ -239,7 +239,7 @@
               "Welches Spiel spielen wir, wenn am Ende einer Stunde Zeit übrig bleibt?",
               "Wie gestalten wir unseren Briefkasten, und wie heißt er?",
               "Wo hängen Gefühlsrad, Klassenvereinbarung und Plakate im Raum?",
-              "Welchen Skill machen wir gemeinsam, wenn die Klasse sehr unruhig ist?",
+              "Welchen Skill machen wir gemeinsam, wenn wir nach der Pause oder vor einem Test runterkommen wollen?",
               "Wie begrüßen wir jemanden, der neu in die Klasse kommt?"
             ],
             "tipp": "Die erste Entscheidung muss echt sein und schnell sichtbar werden – dafür eignet sich die erste Frage am besten: Das gewählte Spiel ersetzt nächste Woche die Bewegungspause der Einheit. Wird die Zeit knapp, die vorbereiteten Antworten zur Wahl stellen. Die nächsten Sitzungen sind fest eingeplant – in den Stunden 9, 19 und 25, je zehn Minuten am Ende einer Stunde; Beschlüsse gelten bis zur nächsten Sitzung auf Probe.",
@@ -267,15 +267,16 @@
             "titel": "Skills-Pass, ein Satz je Gruppe und Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Worüber möchte ich im Klassenrat einmal mitentscheiden? Danach gibt es den Stempel. Ein Satz für alle (2 Min.): Jede Tischgruppe einigt sich auf einen Satz, der mit „Unser Klassenrat …“ beginnt, eine Person sagt ihn laut. Zum Schluss die Wochen-Mission ansagen (steht im Heft) und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Worüber möchte ich im Klassenrat einmal mitentscheiden? Danach gibt es den Stempel. Ein Satz für alle (1 Min.): Jede Tischgruppe einigt sich in 20 Sekunden auf einen Satz, der mit „Unser Klassenrat …“ beginnt, eine Person sagt ihn laut. Wochen-Mission und Moment wählen (1 Min.): Die Mission ansagen (steht im Heft) – hinschauen, was in der Klasse gut läuft oder besser laufen könnte, und eine Sache für den Briefkasten aufschreiben. Jede Person wählt den Moment, in dem sie hinschaut – in der Pause, nach einer Gruppenarbeit oder auf dem Heimweg –, und schreibt ihn in die Spalte „Mein Moment: Wenn …“. Zum Schluss der Ausblick auf die nächste Stunde (1 Min.).",
             "sagen": [
-              "Ein Satz pro Tischgruppe, der mit ‚Unser Klassenrat …‘ beginnt. Ihr habt eine Minute."
+              "Ein Satz pro Tischgruppe, der mit ‚Unser Klassenrat …‘ beginnt. Ihr habt 20 Sekunden.",
+              "Wann schaut ihr diese Woche hin – in der Pause, nach einer Gruppenarbeit, auf dem Heimweg? Schreibt euren Moment ins Heft; die Zettel liegen neben dem Briefkasten."
             ],
-            "tipp": "Kommen kritische Sätze („Unser Klassenrat ist sowieso unfair“), sie stehen lassen und als Thema für die nächste Sitzung aufheben. Den Beschluss in der nächsten Stunde sichtbar umsetzen – das überzeugt mehr als jedes Wort."
+            "tipp": "Kommen kritische Sätze („Unser Klassenrat ist sowieso unfair“), sie stehen lassen und als Thema für die nächste Sitzung aufheben. Den Beschluss in der nächsten Stunde sichtbar umsetzen – das überzeugt mehr als jedes Wort. Auch die Beobachtungs-Mission braucht einen Auslöser: Wer sich die Pause vorgenommen hat, denkt in der Pause daran."
           }
         ],
         "bruecke": "Nächste Woche beginnt ein neues Kapitel: Ihr schaut auf euch selbst – was braucht ihr, damit es euch gut geht? Dafür füllt die Klasse gemeinsam das Glas der Bedürfnisse.",
-        "mission": "Achte diese Woche darauf, was in deiner Klasse gut läuft und was besser laufen könnte. Schreib eine Sache ohne Namen auf einen Zettel – für den Briefkasten.",
+        "mission": "Wenn dein Moment kommt – Pause, Gruppenarbeit, Heimweg –, dann schau hin: Was läuft in der Klasse gut, was besser? Eine Sache ohne Namen auf einen Zettel für den Briefkasten.",
         "hintergrund": "Jugendliche wollen ernst genommen werden und mitbestimmen; Programme, die das berücksichtigen, erreichen sie besser als belehrende (Yeager, 2017). Der Klassenrat gibt dafür einen festen Ort: Die Klasse bespricht ihre Anliegen in einem verlässlichen Ablauf und entscheidet im vereinbarten Rahmen selbst. Hart (1992) beschreibt Beteiligung als Leiter: Unten stehen Schein-Beteiligung und Dekoration, oben echte Mitentscheidung. Deshalb muss die erste Entscheidung echt sein und umgesetzt werden – eine Abstimmung ohne Folgen entmutigt mehr, als sie nützt. Wer erlebt, dass die eigene Stimme zählt, erfährt Autonomie und Zugehörigkeit, zwei Grundbedürfnisse, die Motivation tragen (Deci & Ryan, 2000). Die klaren Grenzen – keine Entscheidungen über Personen, keine Strafen – verhindern, dass der Klassenrat zum Tribunal wird.",
         "quellen": [
           "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94.",
@@ -284,10 +285,10 @@
         ],
         "achtung": "Der Klassenrat ist kein Gericht: Über einzelne Personen, Strafen, Streit oder Mobbing wird hier nicht verhandelt – das klären Lehrkraft, Régent und SePAS nach dem Vorgehen der Schule. Den Briefkasten nach jeder Stunde selbst leeren, die Zettel noch am selben Tag lesen und ihn verschlossen aufbewahren. Zettel mit Namen oder erkennbaren Personen nicht vorlesen; Hinweise auf Mobbing, Gewalt oder Selbstverletzung noch am selben Tag mit dem SePAS besprechen und nach dem Schutzkonzept der Schule handeln. Nur zur Wahl stellen, was die Klasse wirklich entscheiden darf.",
         "differenzierung": {
-          "leichter": "Beim Sortieren der Situationen die drei Ampelfarben an die Tafel hängen und mit dem Finger zeigen lassen. Für Aufgabe 2 und den Anliegen-Zettel reichen die Satzanfänge; wer noch wenig schreibt, wirft ein Lob oder einen Vorschlag in drei Wörtern ein. Die Rolle Zeit braucht kaum Sprache und passt gut für Neue; die Vorsitzkarte darf im Tandem gelesen werden.",
+          "leichter": "Beim Sortieren der Situationen die drei Ampelfarben an die Tafel hängen und mit dem Finger zeigen lassen. Für Aufgabe 2 und den Anliegen-Zettel reichen die Satzanfänge; wer noch wenig schreibt, wirft ein Lob oder einen Vorschlag in drei Wörtern ein. Die Rolle Zeit braucht kaum Sprache und passt gut für Neue; die Vorsitzkarte darf im Tandem gelesen werden. Für die Spalte „Mein Moment“ reicht ein Wort: Pause.",
           "schwerer": "In der ersten Sitzung den Vorsitz oder das Protokoll übernehmen. Oder ein Anliegen so schreiben, dass es einen Vorschlag mit Begründung enthält: Ich schlage vor, dass …, weil …"
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), Was darf der Klassenrat entscheiden? mit vier Situationen (10 Min.), Rollen und Ablauf vorstellen (5 Min.), Briefkasten zeigen, jede Person wirft einen Zettel ein (5 Min.), erste Sitzung mit der vorbereiteten Frage (20 Min.), Skills-Pass und Mission (5 Min.). Probesitzung und Skill entfallen; die erste echte Sitzung ersetzt die Probe."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), Was darf der Klassenrat entscheiden? mit vier Situationen (10 Min.), Rollen und Ablauf vorstellen (5 Min.), Briefkasten zeigen, jede Person wirft einen Zettel ein (5 Min.), erste Sitzung mit der vorbereiteten Frage (20 Min.), Skills-Pass, Mission und Moment wählen (5 Min.). Probesitzung und Skill entfallen; die erste echte Sitzung ersetzt die Probe."
       },
       "fr": {
         "titel": "Notre conseil de coopération",
@@ -378,7 +379,7 @@
             "titel": "Retour et thème : nous fondons le conseil",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière fois. Puis demander brièvement où en est la mission de la semaine : qui a fait, lors d’un travail de groupe, quelque chose qui a aidé l’équipe ? Pouce en haut, au milieu ou en bas ; une voix raconte. Montrer les nouvelles règles d’équipe sur l’affiche de la charte : la semaine dernière, vous avez déjà décidé ensemble. Puis écrire le thème au tableau : notre conseil de coopération – ici, la classe participe aux décisions.",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière fois. Puis demander brièvement où en est la mission de la semaine : votre moment est-il arrivé – travail de groupe, entraînement, jeu –, et qu’avez-vous fait pour votre équipe ? Pouce en haut, au milieu ou en bas ; une voix raconte. Montrer les nouvelles règles d’équipe sur l’affiche de la charte : la semaine dernière, vous avez déjà décidé ensemble. Puis écrire le thème au tableau : notre conseil de coopération – ici, la classe participe aux décisions.",
             "sagen": [
               "La semaine dernière, vous avez déjà adopté une règle ensemble. Aujourd’hui, cela trouve une place fixe : votre conseil de coopération."
             ],
@@ -492,7 +493,7 @@
               "À quel jeu joue-t-on quand il reste du temps à la fin d’un cours ?",
               "Comment décore-t-on notre boîte aux lettres, et quel nom lui donne-t-on ?",
               "Où accroche-t-on la roue des émotions, la charte et les affiches dans la salle ?",
-              "Quel skill fait-on ensemble quand la classe est très agitée ?",
+              "Quel skill fait-on ensemble quand on veut redescendre après la récré ou avant un devoir en classe ?",
               "Comment accueille-t-on quelqu’un qui arrive dans la classe ?"
             ],
             "tipp": "La première décision doit être réelle et vite visible – la première question s’y prête le mieux : la semaine prochaine, le jeu choisi remplace la pause active prévue dans la séance. Si le temps manque, proposer au vote les réponses préparées. Les prochaines réunions sont prévues aux séances 9, 19 et 25, chaque fois dix minutes à la fin d’un cours ; les décisions valent à l’essai jusqu’à la réunion suivante.",
@@ -520,15 +521,16 @@
             "titel": "Skills-Pass, une phrase par îlot et mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (2 min) : écrire la question au tableau – sur quoi aimerais-je un jour décider au conseil ? Ensuite, le tampon. Une phrase pour tous (2 min) : chaque îlot se met d’accord sur une phrase qui commence par « Notre conseil… », et quelqu’un la dit à voix haute. Pour finir, annoncer la mission de la semaine (elle figure dans le cahier) et la prochaine séance (1 min).",
+            "text": "Skills-Pass (2 min) : écrire la question au tableau – sur quoi aimerais-je un jour décider au conseil ? Ensuite, le tampon. Une phrase pour tous (1 min) : chaque îlot se met d’accord en 20 secondes sur une phrase qui commence par « Notre conseil… », et quelqu’un la dit à voix haute. Mission de la semaine et choix du moment (1 min) : annoncer la mission (elle figure dans le cahier) – observer ce qui va bien dans la classe ou pourrait aller mieux, et noter une chose pour la boîte aux lettres. Chacun choisit le moment où il observe – à la récré, après un travail de groupe ou sur le chemin du retour – et l’écrit dans la colonne « Mon moment : quand … ». Pour finir, annoncer la prochaine séance (1 min).",
             "sagen": [
-              "Une phrase par îlot, qui commence par “Notre conseil…”. Vous avez une minute."
+              "Une phrase par îlot, qui commence par “Notre conseil…”. Vous avez 20 secondes.",
+              "Quand allez-vous observer cette semaine – à la récré, après un travail de groupe, sur le chemin du retour ? Écrivez votre moment dans le cahier ; les billets sont à côté de la boîte."
             ],
-            "tipp": "Si des phrases critiques tombent (« Notre conseil, de toute façon, c’est injuste »), les accueillir et les garder comme sujet pour la prochaine séance. Appliquer la décision de façon visible dès la séance suivante – cela convainc plus que tous les discours."
+            "tipp": "Si des phrases critiques tombent (« Notre conseil, de toute façon, c’est injuste »), les accueillir et les garder comme sujet pour la prochaine séance. Appliquer la décision de façon visible dès la séance suivante – cela convainc plus que tous les discours. La mission d’observation a besoin d’un déclencheur comme les autres : qui a choisi la récré y pense à la récré."
           }
         ],
         "bruecke": "La semaine prochaine, un nouveau chapitre commence : vous regardez vers vous-mêmes – de quoi avez-vous besoin pour aller bien ? Pour cela, la classe remplit ensemble le bocal des besoins.",
-        "mission": "Cette semaine, observe ce qui va bien dans ta classe et ce qui pourrait aller mieux. Écris une chose sur un billet, sans nommer personne – pour la boîte aux lettres.",
+        "mission": "Quand ton moment arrive – récré, travail de groupe, trajet du retour –, observe ce qui va bien dans la classe, et moins bien. Une chose, sans nom, sur un billet pour la boîte.",
         "hintergrund": "Les jeunes veulent être pris au sérieux et participer aux décisions ; les programmes qui en tiennent compte les touchent mieux que ceux qui font la morale (Yeager, 2017). Le conseil de coopération leur offre un lieu fixe : la classe discute de ce qui la préoccupe selon un déroulement fiable et décide elle-même dans le cadre convenu. Hart (1992) décrit la participation comme une échelle : en bas, la participation de façade et la décoration ; en haut, la vraie codécision. C’est pourquoi la première décision doit être réelle et mise en œuvre – un vote sans suite décourage plus qu’il n’aide. Qui constate que sa voix compte fait l’expérience de l’autonomie et de l’appartenance, deux besoins fondamentaux qui portent la motivation (Deci & Ryan, 2000). Les limites claires – pas de décisions sur des personnes, pas de punitions – empêchent le conseil de devenir un tribunal.",
         "quellen": [
           "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94.",
@@ -537,10 +539,10 @@
         ],
         "achtung": "Le conseil n’est pas un tribunal : on n’y traite ni de personnes précises, ni de punitions, ni de disputes, ni de harcèlement – l’enseignant·e, le régent et le SePAS s’en occupent selon la procédure de l’école. Vider soi-même la boîte après chaque cours, lire les billets le jour même et ranger la boîte sous clé. Ne pas lire à voix haute les billets qui nomment une personne ou la laissent deviner ; parler le jour même au SePAS de tout signe de harcèlement, de violence ou d’automutilation et agir selon le protocole de protection de l’école. Ne mettre au vote que ce que la classe peut vraiment décider.",
         "differenzierung": {
-          "leichter": "Pour trier les situations, accrocher les trois couleurs du feu au tableau et laisser les jeunes montrer du doigt. Pour l’exercice 2 et le billet, les débuts de phrase suffisent ; qui écrit encore peu glisse des félicitations ou une proposition en trois mots. Le rôle du temps demande très peu de langue et convient bien aux nouveaux ; la carte de la présidence peut se lire à deux.",
+          "leichter": "Pour trier les situations, accrocher les trois couleurs du feu au tableau et laisser les jeunes montrer du doigt. Pour l’exercice 2 et le billet, les débuts de phrase suffisent ; qui écrit encore peu glisse des félicitations ou une proposition en trois mots. Le rôle du temps demande très peu de langue et convient bien aux nouveaux ; la carte de la présidence peut se lire à deux. Pour la colonne « Mon moment », un mot suffit : récré.",
           "schwerer": "Prendre la présidence ou le secrétariat lors de la première séance. Ou rédiger un billet qui contient une proposition et sa raison : je propose que…, parce que…"
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), que peut décider le conseil ? avec quatre situations (10 min), présenter rôles et déroulement (5 min), montrer la boîte aux lettres, chacun y glisse un billet (5 min), première séance avec la question préparée (20 min), Skills-Pass et mission (5 min). La séance d’essai et le skill sont supprimés ; la première vraie séance sert d’essai."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), que peut décider le conseil ? avec quatre situations (10 min), présenter rôles et déroulement (5 min), montrer la boîte aux lettres, chacun y glisse un billet (5 min), première séance avec la question préparée (20 min), Skills-Pass, mission et choix du moment (5 min). La séance d’essai et le skill sont supprimés ; la première vraie séance sert d’essai."
       }
     }
   ],
