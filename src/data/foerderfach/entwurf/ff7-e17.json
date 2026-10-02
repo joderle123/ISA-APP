@@ -107,7 +107,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, Wochen-Mission und Ausblick"
+            "titel": "Skills-Pass, Mission mit Moment und Ausblick"
           }
         ],
         "schritte": [
@@ -127,12 +127,13 @@
             "titel": "Rückblick, Wochen-Mission und Thema",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission per Daumen fragen: Wer hat seinen sicheren Ort besucht oder einen Kopf-Skill ausprobiert? Eine Stimme erzählt, wann. Dann das Ziel der Stunde an die Tafel schreiben: Heute packt ihr aus allem, was ihr getestet habt, euren Skills-Koffer – und macht einen Plan für Grün, Gelb und Rot. Ankündigen, dass die Stunde das Kapitel „Gefühle regulieren“ abschließt, und die Skills-Tester aufschlagen lassen.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission fragen: Kam dein Moment – und was habt ihr gemacht, den Ort besucht oder dem Kopf einen Job gegeben? Daumen hoch, Mitte, runter; eine Stimme erzählt, niemand muss den Moment erlebt haben. Dann das Ziel der Stunde an die Tafel schreiben: Heute packt ihr aus allem, was ihr getestet habt, euren Skills-Koffer – und macht einen Plan für Grün, Gelb und Rot. Ankündigen, dass die Stunde das Kapitel „Gefühle regulieren“ abschließt, und die Skills-Tester aufschlagen lassen.",
             "sagen": [
-              "Ihr habt in den letzten Wochen eine ganze Menge Skills getestet. Heute sucht ihr die aus, die wirklich zu euch passen."
+              "Ihr habt in den letzten Wochen eine ganze Menge Skills getestet. Heute sucht ihr die aus, die wirklich zu euch passen.",
+              "Kam euer Moment – und was habt ihr gemacht: den Ort besucht oder dem Kopf einen Job gegeben?"
             ],
-            "tipp": "Skills-Tester, Skills-Pass und das Blatt zum sicheren Ort liegen ab jetzt offen auf dem Tisch – sie sind das Material für den Koffer.",
-            "wennEsKippt": "Hat kaum jemand die Mission gemacht, nicht tadeln: kurz fragen, was im Weg war – vergessen, keine Gelegenheit –, und die neue Mission heute an einen festen Moment knüpfen, etwa den Schulweg.",
+            "tipp": "Skills-Tester, Skills-Pass und das Blatt zum sicheren Ort liegen ab jetzt offen auf dem Tisch – sie sind das Material für den Koffer; die Favoriten-Tabelle vom Ende der letzten Stunde ist der Startpunkt.",
+            "wennEsKippt": "Kam bei vielen der Moment nicht oder wurde der Skill vergessen, nicht tadeln: kurz fragen, was im Weg war – vergessen, keine Gelegenheit –, und beim Moment wählen heute einen nehmen, der sicher kommt, etwa den Schulweg.",
             "blatt": "ff7-skills-tester"
           },
           {
@@ -153,7 +154,7 @@
             "titel": "Meinen Skills-Koffer packen",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Die Fächer des Koffers an der Tafel erklären (Liste) und den Satz vom kleinen Koffer auf dem Blatt vorlesen (2 Min.). Zuerst macht jede Person im Skills-Tester einen Stern neben die Skills, die bei ihr gut gewirkt haben (2 Min.). Dann packt sie allein ihren Koffer (9 Min.): je Fach ein, zwei Skills mit Stern oder aus dem Alltag, Stichworte reichen, das letzte Fach bleibt frei. Herumgehen und nachfragen: Hat der wirklich geholfen? Zu zweit (4 Min.): Das Gegenüber schaut nur auf Körper, Sinne und Kopf und fragt bei einem Skill: Wo und wann nimmst du den? Ideen übernehmen ist erlaubt. Klasse (3 Min.): Zwei, drei Freiwillige nennen einen Skill, den sie beim Gegenüber entdeckt haben und selbst ausprobieren wollen. Wer früher fertig ist, prüft seinen Koffer mit einer Frage: Welcher Skill geht auch im Bus, ohne dass es jemand merkt?",
+            "text": "Die Fächer des Koffers an der Tafel erklären (Liste) und den Satz vom kleinen Koffer auf dem Blatt vorlesen (2 Min.). Zuerst macht jede Person im Skills-Tester einen Stern neben die Skills, die bei ihr gut gewirkt haben – die drei Favoriten vom Ende der letzten Stunde zuerst (2 Min.). Dann packt sie allein ihren Koffer (9 Min.): je Fach ein, zwei Skills mit Stern oder aus dem Alltag, Stichworte reichen, das letzte Fach bleibt frei. Herumgehen und nachfragen: Hat der wirklich geholfen? Zu zweit (4 Min.): Das Gegenüber schaut nur auf Körper, Sinne und Kopf und fragt bei einem Skill: Wo und wann nimmst du den? Ideen übernehmen ist erlaubt. Klasse (3 Min.): Zwei, drei Freiwillige nennen einen Skill, den sie beim Gegenüber entdeckt haben und selbst ausprobieren wollen. Wer früher fertig ist, prüft seinen Koffer mit einer Frage: Welcher Skill geht auch im Bus, ohne dass es jemand merkt?",
             "sagen": [
               "Packt nur ein, was bei euch wirklich gewirkt hat – nicht das, was gut klingt.",
               "Was in eurem Koffer liegt, muss nicht im Koffer der anderen liegen. Jeder Koffer ist anders.",
@@ -167,7 +168,7 @@
               "Das tut mir gut: Sport, Musik, zeichnen, mit dem Hund raus",
               "Kommt dazu: frei für Skills, die im Lauf des Jahres dazukommen"
             ],
-            "tipp": "Wer sagt, nichts helfe, schaut mit der Lehrkraft in den Skills-Tester: Fast immer gibt es einen Skill, der wenigstens etwas geholfen hat. Ein Skill, der etwas hilft, ist ein guter Anfang. Wer mag, trägt die drei besten zusätzlich in die Tabelle „Meine drei Favoriten“ ein.",
+            "tipp": "Wer sagt, nichts helfe, schaut mit der Lehrkraft in den Skills-Tester: Fast immer gibt es einen Skill, der wenigstens etwas geholfen hat. Ein Skill, der etwas hilft, ist ein guter Anfang. Wer in Stunde 16 gefehlt hat, trägt zuerst drei Favoriten in die Tabelle am Ende des Skills-Testers ein.",
             "wennEsKippt": "Schreibt jemand „zocken“ oder „schlafen“ in jedes Fach, nicht streiten: Zwanzig Minuten Ablenkung oder Ruhe sind echte Skills für Gelb. Nachfragen, was im Bus oder im Test hilft, wenn kein Handy da ist. Wer nichts über sich schreiben will, packt den Koffer für eine erfundene Person, etwa einen Torwart vor dem Elfmeterschießen. Bleibt das Fach Menschen leer, nicht vor der Klasse nachfragen – ein Haustier oder die Trainerin zählen auch –, sich das aber für ein kurzes Gespräch merken. Wer gefehlt hat, arbeitet mit seinem Tandem.",
             "blatt": "ff7-skills-koffer"
           },
@@ -268,30 +269,32 @@
             "wennEsKippt": "Sagt jemand: „Bei mir wäre das 100, dann hau ich zu“, nicht moralisieren, sondern ernst nehmen: Was hilft dir bei 100, bevor du zuschlägst? Wählt jemand einen Skill, der nicht am Platz geht, etwa Treppe laufen, macht er ihn hier im Kleinen: Fäuste ballen und loslassen. Läuft die Zeit davon, die dritte Situation weglassen."
           },
           {
-            "titel": "Skills-Pass, Wochen-Mission und Ausblick",
+            "titel": "Skills-Pass, Mission mit Moment und Ausblick",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage des Kapitels für den Skills-Pass an die Tafel schreiben: Was hilft mir, wenn es zu viel wird? Jede Person schreibt den Skill, der in ihrem Koffer ganz oben liegt, und wann sie ihn nimmt (2 Min.), und bekommt den Stempel. Daumen-Blitzlicht zum Kapitel: Wie gut kennt ihr jetzt eure Skills (1 Min.)? Dann die Wochen-Mission ansagen (steht im Heft) und den Ausblick auf das neue Kapitel geben (2 Min.). Koffer, Plan und Karte werden nicht eingesammelt.",
+            "text": "Die Leitfrage des Kapitels für den Skills-Pass an die Tafel schreiben: Was hilft mir, wenn es zu viel wird? Jede Person schreibt den Skill, der in ihrem Koffer ganz oben liegt, und wann sie ihn nimmt (2 Min.), und bekommt den Stempel. Daumen-Blitzlicht zum Kapitel: Wie gut kennt ihr jetzt eure Skills (1 Min.)? Mission und Moment wählen (2 Min.): Die Wochen-Mission ansagen – Notfallkarte immer dabei, und wenn dein Moment kommt, dann der Ampel-Check. Auf drei zeigen alle, wann ihr Moment kommt: ein Finger für den Schulweg, zwei für vor einem Test, drei für nach einem Streit, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ im Heft. Dazu der Ausblick auf das neue Kapitel. Koffer, Plan und Karte werden nicht eingesammelt.",
             "sagen": [
-              "Ein Satz für den Skills-Pass: Welcher Skill liegt bei euch ganz oben im Koffer – und wann nehmt ihr ihn?"
+              "Ein Satz für den Skills-Pass: Welcher Skill liegt bei euch ganz oben im Koffer – und wann nehmt ihr ihn?",
+              "Wann macht ihr den Ampel-Check? Schulweg – ein Finger, Test – zwei, nach einem Streit – drei, eigener Moment – die Faust. Schreibt ihn ins Heft: Wenn …, dann Stopp, Farbe, Skill."
             ],
-            "tipp": "Den Koffer in den Stunden 22 und 31 wieder aufschlagen lassen: Dann kommen neue Skills ins freie Fach. Wer mag, zeigt Koffer und Karte zu Hause – viele Eltern wissen gern, was hilft."
+            "tipp": "Den Koffer in den Stunden 22 und 31 wieder aufschlagen lassen: Dann kommen neue Skills ins freie Fach. Wer mag, zeigt Koffer und Karte zu Hause – viele Eltern wissen gern, was hilft. Der Schulweg ist ein Moment, der sicher kommt – gut für alle, bei denen die Missionen bisher selten geklappt haben."
           }
         ],
         "bruecke": "Nächste Woche beginnt ein neues Kapitel: Ihr erlebt, wie viel ohne Worte ankommt, lest Körpersprache und übersetzt Emojis in Sätze.",
-        "mission": "Trag deine Notfallkarte diese Woche immer bei dir – und mach einmal den Ampel-Check: Stopp, Farbe, Skill. Welche Farbe hattest du?",
-        "hintergrund": "Der Skills-Koffer – in der Praxis oft Notfallkoffer genannt – bündelt, was die Klasse seit Stunde 13 getestet hat: eine kleine, persönliche Auswahl, die bei hoher Anspannung greifbar ist. Er folgt dem DBT-Skillstraining für Jugendliche, das erprobte Fertigkeiten für Krisen bereithält (Fleischhaker et al., 2011). Der Ampelplan knüpft die Skills an frühe Warnsignale, damit gehandelt wird, bevor Rot erreicht ist; als Wenn-dann-Satz formuliert, wird ein Vorsatz in der Situation deutlich häufiger umgesetzt als ein allgemeiner (Gollwitzer, 1999). Aus dem Sicherheitsplan, einem Werkzeug der Krisenhilfe, stammen die Reihenfolge – erst eigene Skills, dann Menschen, dann Hilfsnummern – und der Grundsatz, erreichbare Personen konkret zu nennen (Stanley & Brown, 2012). Ein vorher geübter erster Satz macht es leichter, Hilfe zu holen. Grün knüpft an das Glas der Bedürfnisse an: Wer ausgeschlafen ist und gegessen hat, startet ruhiger in den Tag.",
+        "mission": "Trag deine Notfallkarte immer bei dir. Wenn dein Moment kommt – Schulweg, vor einem Test, nach einem Streit –, dann mach den Ampel-Check: Stopp, Farbe, Skill. Welche Farbe war es?",
+        "hintergrund": "Grundlage des Skills-Koffers ist der Notfallkoffer des DBT-Skillstrainings für Jugendliche: eine kleine, persönliche Auswahl erprobter Fertigkeiten, die in der Krise greifbar ist (Fleischhaker et al., 2011). Der Ampelplan knüpft die Skills an frühe Warnsignale, damit gehandelt wird, bevor Rot erreicht ist; als Wenn-dann-Plan formuliert, wird ein Vorsatz in der Situation deutlich häufiger umgesetzt als eine allgemeine Absicht (Gollwitzer, 1999) – über 94 Studien hinweg eine mittlere bis große Wirkung (Gollwitzer & Sheeran, 2006). Darum wählt jede Person für die Wochen-Mission ihren Moment selbst. Aus dem Sicherheitsplan, einem Werkzeug der Krisenhilfe, stammen die Reihenfolge – erst eigene Skills, dann Menschen, dann Hilfsnummern – und der Grundsatz, erreichbare Personen konkret zu nennen (Stanley & Brown, 2012). Ein geübter erster Satz macht es leichter, Hilfe zu holen.",
         "quellen": [
           "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Gollwitzer, P. M. & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119.",
           "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
         ],
         "achtung": "Ampelplan und Notfallkarte berühren Krisen: nicht einsammeln, nicht bewerten, niemand liest vor – genannt werden nur freiwillig Skills für Gelb. Der Ampelplan übt den Umgang mit hoher Anspannung; einen Krisenplan erstellt bei Bedarf der SePAS. Stehen bei Rot Selbstverletzung, Gewalt, Weglaufen oder Drogen, findet jemand keine erreichbare Person oder deutet an, nicht mehr leben zu wollen: nicht vor der Klasse vertiefen, nach der Stunde unter vier Augen sprechen, nichts versprechen, noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112. Die Zettel im Glas bleiben anonym.",
         "differenzierung": {
-          "leichter": "Im Koffer reicht ein Skill je Fach, im Ampelplan reichen Rot und eine Person; Stichworte statt Sätze, in jeder Sprache. Die Namen der Skills stehen im Skills-Tester zum Abschreiben, wer mühsam schreibt, diktiert seinem Tandem. Die Situationen beim Ampel-Check mit Gesten vorspielen.",
+          "leichter": "Im Koffer reicht ein Skill je Fach, im Ampelplan reichen Rot und eine Person; Stichworte statt Sätze, in jeder Sprache. Die Namen der Skills stehen im Skills-Tester zum Abschreiben, wer mühsam schreibt, diktiert seinem Tandem. Die Situationen beim Ampel-Check mit Gesten vorspielen. Für die Spalte „Mein Moment“ reicht ein Wort: Schulweg.",
           "schwerer": "Einen zweiten Ampelplan für eine bestimmte Lage machen, etwa für den Test oder für Streit im Chat. Beim Üben des Hilfe-Satzes die erwachsene Person spielen, die erst keine Zeit hat."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Zahl und Farbe (5 Min.), Glas der Bedürfnisse mit den beiden Fragen (5 Min.), Skills-Koffer packen (15 Min.), Ampelplan (15 Min.), Ampel-Check mit einer Situation (5 Min.), Skills-Pass und Wochen-Mission (5 Min.). Die Notfallkarte und das Üben des Hilfe-Satzes folgen in der nächsten Stunde nach dem Check-in."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Zahl und Farbe (5 Min.), Glas der Bedürfnisse mit den beiden Fragen (5 Min.), Skills-Koffer packen (15 Min.), Ampelplan (15 Min.), Ampel-Check mit einer Situation (5 Min.), Skills-Pass, Wochen-Mission und Moment (5 Min.). Die Notfallkarte und das Üben des Hilfe-Satzes folgen in der nächsten Stunde nach dem Check-in."
       },
       "fr": {
         "titel": "Ma valise à skills et mon plan feu tricolore",
@@ -362,7 +365,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, mission et suite"
+            "titel": "Skills-Pass, mission avec moment et suite"
           }
         ],
         "schritte": [
@@ -382,12 +385,13 @@
             "titel": "Retour, mission de la semaine et thème",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Pour la mission de la semaine, vote du pouce : qui est allé dans son lieu sûr ou a essayé un skill mental ? Une voix raconte quand. Puis écrire au tableau le but de la séance : aujourd’hui, avec tout ce que vous avez testé, vous remplissez votre valise à skills – et vous faites un plan pour le vert, l’orange et le rouge. Annoncer que la séance clôt le chapitre « Réguler ses émotions » et faire ouvrir les testeurs de skills.",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Pour la mission de la semaine, demander : ton moment est-il venu – et qu’avez-vous fait, visité le lieu ou donné un job à la tête ? Pouce en haut, au milieu, en bas ; une voix raconte, personne n’est obligé d’avoir vécu son moment. Puis écrire au tableau le but de la séance : aujourd’hui, avec tout ce que vous avez testé, vous remplissez votre valise à skills – et vous faites un plan pour le vert, l’orange et le rouge. Annoncer que la séance clôt le chapitre « Réguler ses émotions » et faire ouvrir les testeurs de skills.",
             "sagen": [
-              "Ces dernières semaines, vous avez testé toute une série de skills. Aujourd’hui, vous choisissez ceux qui vous conviennent vraiment."
+              "Ces dernières semaines, vous avez testé toute une série de skills. Aujourd’hui, vous choisissez ceux qui vous conviennent vraiment.",
+              "Votre moment est-il venu – et qu’avez-vous fait : visité le lieu ou donné un job à la tête ?"
             ],
-            "tipp": "Le testeur de skills, le Skills-Pass et la fiche du lieu sûr restent désormais ouverts sur la table – c’est le matériel pour la valise.",
-            "wennEsKippt": "Si presque personne n’a fait la mission, ne pas faire de reproche : demander brièvement ce qui a bloqué – oubli, pas d’occasion – et rattacher la nouvelle mission à un moment fixe, par exemple le trajet de l’école.",
+            "tipp": "Le testeur de skills, le Skills-Pass et la fiche du lieu sûr restent désormais ouverts sur la table – c’est le matériel pour la valise ; le tableau des favoris rempli à la fin de la dernière séance est le point de départ.",
+            "wennEsKippt": "Si, pour beaucoup, le moment n’est pas venu ou si le skill a été oublié, ne pas faire de reproche : demander brièvement ce qui a bloqué – oubli, pas d’occasion – et choisir aujourd’hui un moment qui arrive à coup sûr, par exemple le trajet de l’école.",
             "blatt": "ff7-skills-tester"
           },
           {
@@ -408,7 +412,7 @@
             "titel": "Remplir ma valise à skills",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Expliquer au tableau les compartiments de la valise (liste) et lire la phrase de la petite valise (2 min). D’abord, chacun met une étoile dans son testeur à côté des skills qui ont bien marché pour lui (2 min). Puis il remplit seul sa valise (9 min) : un ou deux skills par compartiment, avec une étoile ou tirés du quotidien, des mots-clés suffisent ; le dernier compartiment reste libre. Passer entre les tables et demander : est-ce que celui-là t’a vraiment aidé ? À deux (4 min) : le ou la partenaire regarde seulement les compartiments corps, sens et tête et pose une question sur un skill : où et quand est-ce que tu l’utilises ? Reprendre les idées de l’autre est permis. En classe entière (3 min) : deux ou trois volontaires citent un skill découvert chez leur partenaire et qu’ils veulent essayer. Qui a fini plus tôt vérifie : quel skill marche aussi dans le bus, sans que personne ne le remarque ?",
+            "text": "Expliquer au tableau les compartiments de la valise (liste) et lire la phrase de la petite valise (2 min). D’abord, chacun met une étoile dans son testeur à côté des skills qui ont bien marché pour lui – en commençant par les trois favoris notés à la fin de la dernière séance (2 min). Puis il remplit seul sa valise (9 min) : un ou deux skills par compartiment, avec une étoile ou tirés du quotidien, des mots-clés suffisent ; le dernier compartiment reste libre. Passer entre les tables et demander : est-ce que celui-là t’a vraiment aidé ? À deux (4 min) : le ou la partenaire regarde seulement les compartiments corps, sens et tête et pose une question sur un skill : où et quand est-ce que tu l’utilises ? Reprendre les idées de l’autre est permis. En classe entière (3 min) : deux ou trois volontaires citent un skill découvert chez leur partenaire et qu’ils veulent essayer. Qui a fini plus tôt vérifie : quel skill marche aussi dans le bus, sans que personne ne le remarque ?",
             "sagen": [
               "Ne mettez dedans que ce qui a vraiment marché pour vous – pas ce qui sonne bien.",
               "Ce qu’il y a dans votre valise n’a pas besoin d’être dans celle des autres. Chaque valise est différente.",
@@ -422,7 +426,7 @@
               "Ce qui me fait du bien : le sport, la musique, dessiner, sortir le chien",
               "À ajouter : libre pour les skills qui viendront pendant l’année"
             ],
-            "tipp": "Qui dit que rien ne l’aide regarde son testeur de skills avec l’enseignant·e : il y a presque toujours un skill qui a au moins un peu aidé. Un skill qui aide un peu, c’est un bon début. Qui veut peut aussi noter ses trois meilleurs dans le tableau « Mes trois favoris ».",
+            "tipp": "Qui dit que rien ne l’aide regarde son testeur de skills avec l’enseignant·e : il y a presque toujours un skill qui a au moins un peu aidé. Un skill qui aide un peu, c’est un bon début. Qui était absent à la séance 16 note d’abord trois favoris dans le tableau à la fin du testeur.",
             "wennEsKippt": "Si « jouer à la console » ou « dormir » figure partout, ne pas se disputer : vingt minutes pour se distraire ou se reposer sont de vrais skills pour l’orange – et sans portable, dans le bus ? Qui ne veut rien écrire sur soi remplit la valise d’un personnage inventé, un gardien de but avant un penalty par exemple. Compartiment « personnes » vide : ne pas questionner devant la classe, mais le noter pour un court échange ; un animal ou l’entraîneuse comptent aussi. Les absents travaillent avec leur binôme.",
             "blatt": "ff7-skills-koffer"
           },
@@ -523,30 +527,32 @@
             "wennEsKippt": "Si un jeune dit : « Moi, là, je serais à 100, je cogne », ne pas faire la morale, mais le prendre au sérieux : qu’est-ce qui t’aide à 100, avant de frapper ? Si quelqu’un choisit un skill qui ne se fait pas à sa place, comme monter les escaliers, il le fait ici en petit : serrer les poings, puis relâcher. Si le temps manque, laisser tomber la troisième situation."
           },
           {
-            "titel": "Skills-Pass, mission et suite",
+            "titel": "Skills-Pass, mission avec moment et suite",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire au tableau la question clé du chapitre pour le Skills-Pass : qu’est-ce qui m’aide quand c’est trop ? Chacun écrit le skill qui est tout en haut de sa valise et quand il le prend (2 min), puis reçoit le tampon. Tour éclair avec le pouce sur le chapitre : est-ce que vous connaissez bien vos skills maintenant (1 min) ? Puis annoncer la mission de la semaine (elle est dans le cahier) et la suite, avec le nouveau chapitre (2 min). La valise, le plan et la carte ne sont pas ramassés.",
+            "text": "Écrire au tableau la question clé du chapitre pour le Skills-Pass : qu’est-ce qui m’aide quand c’est trop ? Chacun écrit le skill qui est tout en haut de sa valise et quand il le prend (2 min), puis reçoit le tampon. Tour éclair avec le pouce sur le chapitre : est-ce que vous connaissez bien vos skills maintenant (1 min) ? Mission et choix du moment (2 min) : annoncer la mission de la semaine – la carte d’urgence toujours sur soi, et quand ton moment arrive, le réflexe feu tricolore. À trois, tout le monde montre quand son moment arrivera : un doigt pour le trajet de l’école, deux pour avant un devoir en classe, trois pour après une dispute, le poing pour un moment à soi – et le note dans la colonne « Mon moment : quand … » du cahier. Puis la suite, avec le nouveau chapitre. La valise, le plan et la carte ne sont pas ramassés.",
             "sagen": [
-              "Une phrase pour le Skills-Pass : quel skill est tout en haut de votre valise – et quand le prenez-vous ?"
+              "Une phrase pour le Skills-Pass : quel skill est tout en haut de votre valise – et quand le prenez-vous ?",
+              "Quand ferez-vous le réflexe feu tricolore ? Le trajet – un doigt, le devoir en classe – deux, après une dispute – trois, un moment à moi – le poing. Notez-le dans le cahier : quand…, alors stop, couleur, skill."
             ],
-            "tipp": "Faire rouvrir la valise aux séances 22 et 31 : de nouveaux skills y rejoindront le compartiment libre. Qui veut montre sa valise et sa carte à la maison – beaucoup de parents aiment savoir ce qui aide."
+            "tipp": "Faire rouvrir la valise aux séances 22 et 31 : de nouveaux skills y rejoindront le compartiment libre. Qui veut montre sa valise et sa carte à la maison – beaucoup de parents aiment savoir ce qui aide. Le trajet de l’école est un moment qui arrive à coup sûr – bien pour ceux chez qui les missions ont rarement marché jusqu’ici."
           }
         ],
         "bruecke": "La semaine prochaine commence un nouveau chapitre : vous découvrez tout ce qui passe sans les mots, vous lisez le langage du corps et vous traduisez des émojis en phrases.",
-        "mission": "Cette semaine, garde ta carte d’urgence toujours sur toi – et fais une fois le réflexe feu tricolore : stop, couleur, skill. Quelle couleur avais-tu ?",
-        "hintergrund": "La valise à skills – souvent appelée trousse d’urgence – rassemble ce que la classe a testé depuis la séance 13 : une petite sélection personnelle, à portée de main quand la tension monte. Elle s’inspire de l’entraînement aux skills de la DBT pour adolescents, qui prépare des savoir-faire éprouvés pour les crises (Fleischhaker et al., 2011). Le plan feu tricolore relie les skills à des signaux d’alerte précoces, pour agir avant le rouge ; formulée en « si… alors », une résolution est nettement plus souvent appliquée dans la situation qu’une intention générale (Gollwitzer, 1999). Du plan de sécurité, un outil de crise, viennent l’ordre – d’abord ses propres skills, puis des personnes, puis les numéros d’aide – et le principe de nommer des personnes joignables (Stanley & Brown, 2012). Une phrase entraînée d’avance facilite la demande d’aide. Le vert rejoint le bocal des besoins : qui a dormi et mangé commence la journée plus calme.",
+        "mission": "Garde ta carte d’urgence sur toi. Quand ton moment arrive – trajet, devoir en classe, dispute –, fais le réflexe feu tricolore : stop, couleur, skill. Quelle couleur ?",
+        "hintergrund": "La base de la valise à skills est la trousse d’urgence de l’entraînement aux skills de la DBT pour adolescents : une petite sélection personnelle de savoir-faire éprouvés, à portée de main en cas de crise (Fleischhaker et al., 2011). Le plan feu tricolore relie les skills à des signaux d’alerte précoces, pour agir avant le rouge ; formulée en « si… alors », une résolution est nettement plus souvent appliquée qu’une intention générale (Gollwitzer, 1999) – sur 94 études, un effet moyen à grand (Gollwitzer & Sheeran, 2006). C’est pourquoi chacun choisit son moment pour la mission de la semaine. Du plan de sécurité, un outil de crise, viennent l’ordre – d’abord ses propres skills, puis des personnes, puis les numéros d’aide – et le principe de nommer des personnes joignables (Stanley & Brown, 2012). Une phrase entraînée d’avance facilite la demande d’aide.",
         "quellen": [
           "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Gollwitzer, P. M. & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119.",
           "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
         ],
         "achtung": "Le plan feu tricolore et la carte d’urgence touchent aux crises : ni ramassés, ni évalués, personne ne lit à voix haute – seuls des skills pour l’orange sont cités, volontairement. Le plan entraîne à gérer les fortes tensions ; un plan de crise, c’est le SePAS qui l’établit si besoin. Si l’automutilation, la violence, la fugue ou la drogue figurent au rouge, si un jeune ne trouve aucune personne joignable ou laisse entendre qu’il ne veut plus vivre : ne pas approfondir devant la classe, lui parler en tête-à-tête après le cours, ne rien promettre, informer le SePAS le jour même, suivre le protocole de protection de l’école ; en cas de danger immédiat, 112. Le bocal reste anonyme.",
         "differenzierung": {
-          "leichter": "Dans la valise, un skill par compartiment suffit ; dans le plan, le rouge et un adulte suffisent ; des mots-clés plutôt que des phrases, dans n’importe quelle langue. Les noms des skills sont dans le testeur, à recopier ; qui écrit difficilement dicte à son binôme. Mimer les situations du réflexe feu tricolore.",
+          "leichter": "Dans la valise, un skill par compartiment suffit ; dans le plan, le rouge et un adulte suffisent ; des mots-clés plutôt que des phrases, dans n’importe quelle langue. Les noms des skills sont dans le testeur, à recopier ; qui écrit difficilement dicte à son binôme. Mimer les situations du réflexe feu tricolore. Pour la colonne « Mon moment », un mot suffit : trajet.",
           "schwerer": "Faire un deuxième plan pour une situation précise, par exemple pour un devoir en classe ou une dispute dans le groupe de la classe. Pendant l’entraînement à demander de l’aide, jouer l’adulte qui n’a d’abord pas le temps."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec chiffre et couleur (5 min), bocal des besoins avec les deux questions (5 min), remplir la valise à skills (15 min), plan feu tricolore (15 min), réflexe feu tricolore avec une situation (5 min), Skills-Pass et mission de la semaine (5 min). La carte d’urgence et l’entraînement à demander de l’aide suivent à la séance suivante, après le tour d’humeur."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec chiffre et couleur (5 min), bocal des besoins avec les deux questions (5 min), remplir la valise à skills (15 min), plan feu tricolore (15 min), réflexe feu tricolore avec une situation (5 min), Skills-Pass, mission de la semaine et moment (5 min). La carte d’urgence et l’entraînement à demander de l’aide suivent à la séance suivante, après le tour d’humeur."
       }
     }
   ],

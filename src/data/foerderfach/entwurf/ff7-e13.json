@@ -101,7 +101,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, Zahl am Ende und Mission"
+            "titel": "Skills-Pass, Zahl am Ende, Mission und Moment"
           }
         ],
         "schritte": [
@@ -122,10 +122,11 @@
             "titel": "Rückblick und Start ins Kapitel",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren letzten Satz aus dem Skills-Pass vor. Zur Wochen-Mission aus der Stunde vor den Ferien per Daumen fragen: Wer hat sich bei einem Gefühls-Mix ertappt – hoch, Mitte oder runter? Eine Stimme erzählt, welche zwei Gefühle es waren. Dann an die letzte Stunde anknüpfen: Bei den gemischten Gefühlen ging es um die Stärke eines Gefühls von 0 bis 10; die neue Skala misst die Anspannung insgesamt und zeigt, was dann noch hilft. Das neue Kapitel mit seiner Leitfrage an die Tafel schreiben: Gefühle regulieren – Was hilft mir, wenn es zu viel wird? Kurz ankündigen: fünf Stunden, am Ende packt jede Person ihren eigenen Skills-Koffer.",
+            "text": "Eine Person liest ihren letzten Satz aus dem Skills-Pass vor. Zur Wochen-Mission aus der Stunde vor den Ferien fragen: Kam dein Moment – ein Abschied, ein Wiedersehen, der erste Ferientag – und welche zwei Gefühle waren gleichzeitig da? Daumen hoch, Mitte, runter; eine Stimme erzählt, niemand muss den Moment erlebt haben. Dann an die letzte Stunde anknüpfen: Bei den gemischten Gefühlen ging es um die Stärke eines Gefühls von 0 bis 10; die neue Skala misst die Anspannung insgesamt und zeigt, was dann noch hilft. Das neue Kapitel mit seiner Leitfrage an die Tafel schreiben: Gefühle regulieren – Was hilft mir, wenn es zu viel wird? Kurz ankündigen: fünf Stunden, am Ende packt jede Person ihren eigenen Skills-Koffer.",
             "sagen": [
               "Letztes Mal ging es darum, wie stark ein Gefühl ist. Ab heute geht es darum, was man macht, wenn es zu stark wird.",
-              "Die nächsten fünf Wochen sind so etwas wie ein Trainingslager. Am Ende hat jede und jeder einen Koffer mit Skills, die wirklich passen."
+              "Die nächsten fünf Wochen sind so etwas wie ein Trainingslager. Am Ende hat jede und jeder einen Koffer mit Skills, die wirklich passen.",
+              "Kam euer Moment in den Ferien – und welche zwei Gefühle waren da?"
             ],
             "tipp": "Ist die Stunde zu den gemischten Gefühlen ausgefallen, an die Gefühls-Landkarte aus Stunde 11 anknüpfen: Die Warnsignale im Körper zeigen, dass die Zahl steigt."
           },
@@ -270,31 +271,34 @@
             "blatt": "ff7-skills-nach-zahl"
           },
           {
-            "titel": "Skills-Pass, Zahl am Ende und Mission",
+            "titel": "Skills-Pass, Zahl am Ende, Mission und Moment",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Im Skills-Pass beginnt heute die Seite für das 2. Trimester. Die Leitfrage an die Tafel schreiben: Was hilft mir noch, wenn meine Zahl bei 90 ist? Jede Person schreibt ihren Satz (2 Min.); den Stempel gibt es beim Herumgehen. Dann zeigen alle auf drei ihre Zahl jetzt mit den Fingern; die Lehrkraft vergleicht laut mit dem Anfang, ohne Einzelne zu nennen. Zum Schluss die Wochen-Mission ansagen (steht im Heft) und den Ausblick geben. Ab jetzt gehört die Zahl zu jedem Check-in.",
+            "text": "Im Skills-Pass beginnt heute die Seite für das 2. Trimester. Die Leitfrage an die Tafel schreiben: Was hilft mir noch, wenn meine Zahl bei 90 ist? Jede Person schreibt ihren Satz (2 Min.); den Stempel gibt es beim Herumgehen. Dann zeigen alle auf drei ihre Zahl jetzt mit den Fingern; die Lehrkraft vergleicht laut mit dem Anfang, ohne Einzelne zu nennen (1 Min.). Mission und Moment wählen (2 Min.): Die Wochen-Mission ansagen – wenn dein Moment kommt, dann „Stopp, zurück, ausatmen“. Auf drei zeigen alle, wann ihr Moment am ehesten kommt: ein Finger für ‚jemand nervt mich‘, zwei für ‚eine blöde Nachricht‘, drei für ‚ich hänge im Test fest‘, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ im Heft; die leere Zeile in Aufgabe 2 auf dem Blatt ist der Platz für Zahl vorher und nachher. Zum Schluss der Ausblick. Ab jetzt gehört die Zahl zu jedem Check-in.",
             "sagen": [
               "Eure Zahl jetzt – auf drei. Im Vergleich zum Anfang hat sich bei vielen etwas bewegt.",
-              "Ab nächster Woche zeigt ihr nach dem Klebepunkt jedes Mal eure Zahl mit den Fingern."
+              "Ab nächster Woche zeigt ihr nach dem Klebepunkt jedes Mal eure Zahl mit den Fingern.",
+              "Wann kommt euer Moment am ehesten? Ein Finger: jemand nervt mich. Zwei: eine blöde Nachricht. Drei: ich hänge im Test fest. Faust: ein eigener Moment. Schreibt ihn ins Heft: Wenn …, dann Stopp, zurück, ausatmen."
             ],
-            "tipp": "Die Anspannungsskala bleibt ab heute neben dem Gefühlsrad hängen. Die Finger-Skala macht den Check-in kaum länger und zeigt auf einen Blick, wie angespannt die Klasse ankommt."
+            "tipp": "Die Anspannungsskala bleibt ab heute neben dem Gefühlsrad hängen. Die Finger-Skala macht den Check-in kaum länger und zeigt auf einen Blick, wie angespannt die Klasse ankommt. Der Moment ist der eigentliche Plan: Ein Skill mit festem Auslöser wird eher ausprobiert als ein guter Vorsatz – nächste Woche fragt die Brücke danach, ohne Kontrolle.",
+            "wennEsKippt": "Nennt jemand einen Scherz-Moment, gelten lassen, wenn er ernst gemeint ist: Jeder echte Moment zählt. Wer keinen Moment wählen will, lässt die Spalte leer – niemand fragt nach. Wer die Sprache noch lernt, schreibt ein Wort oder malt ein Zeichen: Bruder, Chat, Test."
           }
         ],
         "bruecke": "Nächste Woche werdet ihr zu Versuchspersonen: Ihr testet Skills über Körper und Atem – mit Zahl vorher und Zahl nachher. Zieht Kleidung an, in der ihr euch gut bewegen könnt.",
-        "mission": "Frag dich diese Woche abends beim Zähneputzen: Wie hoch war heute meine höchste Zahl? Und wenn sie einmal über 50 steigt: Probier „Stopp, zurück, ausatmen“.",
-        "hintergrund": "Die Anspannungsskala von 0 bis 100 gehört zu den Grundwerkzeugen des Skillstrainings für Jugendliche (Fleischhaker et al., 2011). Sie trennt die Stärke der Anspannung vom einzelnen Gefühl und macht greifbar, was Linehan (2015) beschreibt: Bei sehr hoher Erregung versagen Fertigkeiten, die Nachdenken voraussetzen; dann helfen Skills, die direkt am Körper und an den Sinnen ansetzen. Das Handmodell des Gehirns zeigt das jugendgerecht: Bei hoher Erregung „klappt der Deckel auf“, und der Teil, der nachdenkt und bremst, ist kaum erreichbar (Siegel & Bryson, 2011). „Stopp, zurück, ausatmen“ vereinfacht die STOP-Fertigkeit aus dem DBT-Skillstraining: anhalten, einen Schritt zurücktreten, wahrnehmen, dann überlegt handeln (Linehan, 2015). Die Grenzen bei 30 und 70 sind Orientierungswerte. Wer seine Zahl regelmäßig schätzt, bemerkt eigene Zustände früher und kann den passenden Skill wählen.",
+        "mission": "Wenn dein Moment kommt – jemand nervt dich, eine blöde Nachricht, du hängst im Test fest –, dann mach „Stopp, zurück, ausatmen“. Zahl vorher und nachher aufs Blatt.",
+        "hintergrund": "Grundlage ist die Skills-Logik der Dialektisch-Behavioralen Therapie für Jugendliche: Die Anspannungsskala von 0 bis 100 gehört zu ihren Grundwerkzeugen (Fleischhaker et al., 2011). Sie trennt die Stärke der Anspannung vom einzelnen Gefühl und macht greifbar, was Linehan (2015) beschreibt: Bei sehr hoher Erregung versagen Fertigkeiten, die Nachdenken voraussetzen; dann helfen Skills über Körper und Sinne – „Stopp, zurück, ausatmen“ vereinfacht ihre STOP-Fertigkeit. Die Faustregel „bei Rot keine Kopf-Skills“ ist auch experimentell gestützt: Bei schwachen Gefühlen wählen Menschen eher das Umdeuten, bei sehr starken die Ablenkung – und fahren damit besser (Sheppes et al., 2011). Das Handmodell des Gehirns zeigt das jugendgerecht: Bei hoher Erregung „klappt der Deckel auf“, der Teil, der nachdenkt und bremst, ist kaum erreichbar (Siegel & Bryson, 2011).",
         "quellen": [
           "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Sheppes, G., Scheibe, S., Suri, G. & Gross, J. J. (2011). Emotion-regulation choice. Psychological Science, 22(11), 1391–1396.",
           "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte."
         ],
         "achtung": "„Alle, die …“ und die eigenen Zahlen berühren Momente, in denen man die Kontrolle verliert. Sitzenbleiben und „weiter“ sind immer erlaubt; wer seine Zahl nicht zeigen will, legt die Hand flach auf den Tisch. Das Blatt bleibt privat. Nennt jemand Selbstverletzung, Drogen oder Gewalt als „Skill“: ruhig bleiben, nicht im Plenum vertiefen, nach der Stunde ansprechen, noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln. Zeigt jemand oft über 80 oder wirkt belastet, behutsam nachfragen und Régent und SePAS einbeziehen.",
         "differenzierung": {
-          "leichter": "Statt der Zahl reicht die Farbe: grün, gelb, rot. Die Skill-Karten haben Bilder; in der Tischgruppe liest eine Person vor, die gut liest. Auf dem Blatt Wörter von den Karten abschreiben lassen, auch in der eigenen Sprache; wer die Unterrichtssprache noch lernt, sitzt neben jemandem, der übersetzen kann. Wortspeicher und Faustregel bleiben an der Tafel.",
+          "leichter": "Statt der Zahl reicht die Farbe: grün, gelb, rot. Die Skill-Karten haben Bilder; in der Tischgruppe liest eine Person vor, die gut liest. Auf dem Blatt Wörter von den Karten abschreiben lassen, auch in der eigenen Sprache; wer die Unterrichtssprache noch lernt, sitzt neben jemandem, der übersetzen kann. Wortspeicher und Faustregel bleiben an der Tafel. Für die Spalte „Mein Moment“ reicht ein Wort: Bruder, Chat, Test.",
           "schwerer": "Zu zwei Situationen vom Blatt „Meine Anspannung von 0 bis 100“ notieren, welcher Gedanke die Zahl hochtreibt. In der Tischgruppe die Moderation übernehmen und bei Uneinigkeit nach Gründen fragen. Eine eigene Faustregel für die Klasse formulieren, etwa für Streit im Klassenchat."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit der ersten Zahl (5 Min.), die Anspannungsskala mit Handmodell und Aufgabe 1 (15 Min.), Skills sortieren mit den Karten und der Faustregel an der Tafel (15 Min.), Skill: Stopp, zurück, ausatmen (10 Min.), Skills-Pass und Mission (5 Min.). „Alle, die …“, die Situationen und die Zahlen-Statuen entfallen; das Blatt „Meine Skills von 0 bis 100“ wird in der nächsten Stunde ausgefüllt."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit der ersten Zahl (5 Min.), die Anspannungsskala mit Handmodell und Aufgabe 1 (15 Min.), Skills sortieren mit den Karten und der Faustregel an der Tafel (15 Min.), Skill: Stopp, zurück, ausatmen (10 Min.), Skills-Pass, Mission und Moment wählen (5 Min.). „Alle, die …“, die Situationen und die Zahlen-Statuen entfallen; das Blatt „Meine Skills von 0 bis 100“ wird in der nächsten Stunde ausgefüllt."
       },
       "fr": {
         "titel": "Les skills et l’échelle de tension",
@@ -364,7 +368,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, chiffre de fin et mission"
+            "titel": "Skills-Pass, chiffre de fin, mission et moment"
           }
         ],
         "schritte": [
@@ -385,10 +389,11 @@
             "titel": "Retour sur la séance et ouverture du chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un ou une jeune lit sa dernière phrase du Skills-Pass. Pour la mission d’avant les vacances, vote du pouce : qui a repéré un mélange d’émotions – en haut, au milieu ou en bas ? Une voix raconte quelles deux émotions c’étaient. Puis faire le lien avec la dernière séance : avec les émotions mélangées, on a évalué la force d’une émotion de 0 à 10 ; la nouvelle échelle mesure la tension dans son ensemble et montre ce qui aide encore. Écrire au tableau le nouveau chapitre et sa question clé : Réguler ses émotions – qu’est-ce qui m’aide quand c’est trop ? Annoncer brièvement : cinq séances, et à la fin, chacun remplit sa propre valise à skills.",
+            "text": "Un ou une jeune lit sa dernière phrase du Skills-Pass. Pour la mission d’avant les vacances, demander : ton moment est-il venu – un au revoir, des retrouvailles, le premier jour de vacances – et quelles deux émotions étaient là en même temps ? Pouce en haut, au milieu, en bas ; une voix raconte, personne n’est obligé d’avoir vécu son moment. Puis faire le lien avec la dernière séance : avec les émotions mélangées, on a évalué la force d’une émotion de 0 à 10 ; la nouvelle échelle mesure la tension dans son ensemble et montre ce qui aide encore. Écrire au tableau le nouveau chapitre et sa question clé : Réguler ses émotions – qu’est-ce qui m’aide quand c’est trop ? Annoncer brièvement : cinq séances, et à la fin, chacun remplit sa propre valise à skills.",
             "sagen": [
               "La dernière fois, on a regardé à quel point une émotion est forte. À partir d’aujourd’hui, on se demande quoi faire quand elle devient trop forte.",
-              "Les cinq prochaines semaines, c’est un peu un camp d’entraînement. À la fin, chacun aura une valise remplie de skills qui lui conviennent vraiment."
+              "Les cinq prochaines semaines, c’est un peu un camp d’entraînement. À la fin, chacun aura une valise remplie de skills qui lui conviennent vraiment.",
+              "Votre moment est-il venu pendant les vacances – et quelles deux émotions étaient là ?"
             ],
             "tipp": "Si la séance sur les émotions mélangées n’a pas eu lieu, s’appuyer sur la carte corporelle des émotions de la séance 11 : les signaux d’alerte du corps montrent que le chiffre monte."
           },
@@ -533,31 +538,34 @@
             "blatt": "ff7-skills-nach-zahl"
           },
           {
-            "titel": "Skills-Pass, chiffre de fin et mission",
+            "titel": "Skills-Pass, chiffre de fin, mission et moment",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Dans le Skills-Pass commence aujourd’hui la page du 2e trimestre. Écrire au tableau la question : qu’est-ce qui m’aide encore quand mon chiffre est à 90 ? Chacun écrit sa phrase (2 min) ; le tampon se donne en passant dans les rangs. Ensuite, à trois, tout le monde montre son chiffre actuel avec les doigts ; comparer à voix haute avec le début, sans nommer personne. Pour finir, annoncer la mission de la semaine (elle figure dans le cahier) et la prochaine séance. Désormais, le chiffre fait partie de chaque tour d’humeur.",
+            "text": "Dans le Skills-Pass commence aujourd’hui la page du 2e trimestre. Écrire au tableau la question : qu’est-ce qui m’aide encore quand mon chiffre est à 90 ? Chacun écrit sa phrase (2 min) ; le tampon se donne en passant dans les rangs. Ensuite, à trois, tout le monde montre son chiffre actuel avec les doigts ; comparer à voix haute avec le début, sans nommer personne (1 min). Mission et choix du moment (2 min) : annoncer la mission de la semaine – quand ton moment arrive, « Stop, recule, souffle ». À trois, tout le monde montre quand son moment arrivera le plus probablement : un doigt pour “quelqu’un m’énerve”, deux pour “un message qui pique”, trois pour “je bloque pendant un devoir en classe”, le poing pour un moment à soi – et le note dans la colonne « Mon moment : quand … » du cahier ; la ligne vide de l’exercice 2 sur la fiche sert à noter le chiffre avant et après. Pour finir, annoncer la prochaine séance. Désormais, le chiffre fait partie de chaque tour d’humeur.",
             "sagen": [
               "Votre chiffre maintenant – à trois. Par rapport au début, chez beaucoup, quelque chose a bougé.",
-              "À partir de la semaine prochaine, après la gommette, vous montrez à chaque fois votre chiffre avec les doigts."
+              "À partir de la semaine prochaine, après la gommette, vous montrez à chaque fois votre chiffre avec les doigts.",
+              "Quand votre moment arrivera-t-il le plus probablement ? Un doigt : quelqu’un m’énerve. Deux : un message qui pique. Trois : je bloque en devoir en classe. Le poing : un moment à moi. Notez-le dans le cahier : quand…, alors « Stop, recule, souffle »."
             ],
-            "tipp": "L’échelle de tension reste désormais affichée à côté de la roue des émotions. L’échelle des doigts ne rallonge presque pas le tour d’humeur et montre d’un coup d’œil dans quel état de tension la classe arrive."
+            "tipp": "L’échelle de tension reste désormais affichée à côté de la roue des émotions. L’échelle des doigts ne rallonge presque pas le tour d’humeur et montre d’un coup d’œil dans quel état de tension la classe arrive. Le moment, c’est le vrai plan : un skill avec un déclencheur fixe s’essaie plus souvent qu’une bonne intention – la semaine prochaine, le lien y revient, sans contrôle.",
+            "wennEsKippt": "Si un jeune cite un moment pour rire, l’accepter s’il est sincère : chaque vrai moment compte. Qui ne veut pas choisir de moment laisse la colonne vide – personne ne demandera. Qui apprend encore la langue écrit un mot ou dessine un signe : frère, chat, devoir."
           }
         ],
         "bruecke": "La semaine prochaine, vous serez les cobayes : vous testerez des skills par le corps et le souffle – avec un chiffre avant et un chiffre après. Mettez des vêtements dans lesquels vous pouvez bouger.",
-        "mission": "Cette semaine, le soir en te brossant les dents, demande-toi : quel a été mon chiffre le plus haut aujourd’hui ? Et s’il dépasse 50 un jour : essaie « Stop, recule, souffle ».",
-        "hintergrund": "L’échelle de tension de 0 à 100 fait partie des outils de base de l’entraînement aux skills pour adolescents (Fleischhaker et al., 2011). Elle distingue l’intensité de la tension de l’émotion elle-même et rend concret ce que décrit Linehan (2015) : quand l’excitation est très forte, les savoir-faire qui demandent de réfléchir ne fonctionnent plus ; ce qui aide alors passe directement par le corps et les sens. Le modèle de la main le montre avec des mots de jeunes : quand l’excitation monte, « le couvercle saute », et la partie qui réfléchit et freine devient presque injoignable (Siegel & Bryson, 2011). « Stop, recule, souffle » simplifie la compétence STOP de l’entraînement aux skills de la TCD : s’arrêter, prendre du recul, observer, puis agir en connaissance de cause (Linehan, 2015). Les limites de 30 et 70 sont des repères. Qui estime souvent son chiffre repère plus tôt son état et choisit mieux son skill.",
+        "mission": "Quand ton moment arrive – quelqu’un t’énerve, un message qui pique, un blocage en devoir en classe –, fais « Stop, recule, souffle ». Chiffre avant et après sur la fiche.",
+        "hintergrund": "La base est la logique des skills de la thérapie comportementale dialectique pour adolescents : l’échelle de tension de 0 à 100 en est un outil de base (Fleischhaker et al., 2011). Elle distingue l’intensité de la tension de l’émotion elle-même et illustre ce que décrit Linehan (2015) : quand l’excitation est très forte, réfléchir ne marche plus ; ce qui aide alors passe par le corps et les sens – « Stop, recule, souffle » simplifie sa compétence STOP. La règle « dans le rouge, pas de skills mentaux » a aussi un appui expérimental : face à une émotion faible, on choisit plutôt de réinterpréter, face à une émotion très forte, de se distraire – et on s’en porte mieux (Sheppes et al., 2011). Le modèle de la main le rend concret : quand l’excitation monte, « le couvercle saute » et la partie qui réfléchit et freine devient presque injoignable (Siegel & Bryson, 2011).",
         "quellen": [
           "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Sheppes, G., Scheibe, S., Suri, G. & Gross, J. J. (2011). Emotion-regulation choice. Psychological Science, 22(11), 1391–1396.",
           "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte."
         ],
         "achtung": "« Lève-toi si… » et les chiffres personnels touchent à des moments de perte de contrôle. Rester assis et « je passe » sont toujours permis ; qui ne veut pas montrer son chiffre pose la main à plat sur la table. La fiche reste privée. Si un jeune cite l’automutilation, la drogue ou la violence comme « skill » : rester calme, ne pas approfondir devant la classe, lui parler après le cours, informer le SePAS le jour même, agir selon le protocole de protection de l’école. Si un jeune montre souvent plus de 80 ou semble mal, lui en parler délicatement et impliquer le régent et le SePAS.",
         "differenzierung": {
-          "leichter": "La couleur suffit à la place du chiffre : vert, orange, rouge. Les cartes skills ont des pictogrammes ; dans l’îlot, quelqu’un qui lit bien lit à voix haute. Sur la fiche, on peut recopier des mots des cartes, aussi dans sa langue ; un jeune qui apprend encore la langue du cours s’assoit à côté de quelqu’un qui peut traduire. Les mots-clés et la règle de base restent au tableau.",
+          "leichter": "La couleur suffit à la place du chiffre : vert, orange, rouge. Les cartes skills ont des pictogrammes ; dans l’îlot, quelqu’un qui lit bien lit à voix haute. Sur la fiche, on peut recopier des mots des cartes, aussi dans sa langue ; un jeune qui apprend encore la langue du cours s’assoit à côté de quelqu’un qui peut traduire. Les mots-clés et la règle de base restent au tableau. Pour la colonne « Mon moment », un mot suffit : frère, chat, devoir.",
           "schwerer": "Pour deux situations de la fiche « Ma tension de 0 à 100 », noter quelle pensée fait monter le chiffre. Prendre le rôle de modérateur dans l’îlot et, en cas de désaccord, demander les raisons. Formuler une règle de base pour la classe, par exemple pour les disputes dans le groupe WhatsApp de la classe."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le premier chiffre (5 min), l’échelle de tension avec le modèle de la main et l’exercice 1 (15 min), ranger les skills avec les cartes et la règle de base au tableau (15 min), skill « Stop, recule, souffle » (10 min), Skills-Pass et mission (5 min). « Lève-toi si… », les situations et les statues chiffrées sont supprimés ; la fiche « Mes skills de 0 à 100 » est remplie à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le premier chiffre (5 min), l’échelle de tension avec le modèle de la main et l’exercice 1 (15 min), ranger les skills avec les cartes et la règle de base au tableau (15 min), skill « Stop, recule, souffle » (10 min), Skills-Pass, mission et choix du moment (5 min). « Lève-toi si… », les situations et les statues chiffrées sont supprimés ; la fiche « Mes skills de 0 à 100 » est remplie à la séance suivante."
       }
     }
   ],
@@ -592,7 +600,7 @@
           {
             "art": "aufgabe",
             "text": "Welche Skills helfen dir – und bis zu welcher Zahl? Schreib in jede Zone mindestens einen Skill.",
-            "hinweis": "Du darfst Wörter von den Skill-Karten, vom Plakat oder von anderen abschreiben. Stichwörter reichen. Für Rot geht auch „noch offen“.",
+            "hinweis": "Abschreiben von Karten, Plakat oder anderen ist erlaubt; Stichwörter reichen. Für Rot geht auch „noch offen“.",
             "symbole": [
               "schreiben"
             ]
@@ -617,18 +625,23 @@
           },
           {
             "art": "info",
+            "symbol": "wissen",
+            "titel": "Aus der Forschung",
+            "text": "Bei starken Gefühlen wirkt Ablenken besser als Nachdenken – bei Rot hilft der Körper."
+          },
+          {
+            "art": "info",
             "symbol": "tipp",
             "titel": "Skill für Rot: Stopp, zurück, ausatmen",
             "punkte": [
               "Stopp: nichts sagen, nichts tun, nichts abschicken.",
-              "Zurück: einen Schritt Abstand – Blick weg; in der Stunde mit dem vereinbarten Zeichen kurz raus.",
+              "Zurück: ein Schritt Abstand, Blick weg – in der Stunde mit dem Zeichen kurz raus.",
               "Ausatmen: fünfmal lang aus, länger aus als ein. Reden erst danach."
             ]
           },
           {
             "art": "aufgabe",
-            "text": "Teste den Skill: Schätz deine Zahl vorher und nachher – heute in der Stunde und einmal diese Woche.",
-            "hinweis": "So testest du ab jetzt jeden Skill: Zahl vorher, Skill, Zahl nachher.",
+            "text": "Teste den Skill: Zahl vorher, Zahl nachher – heute in der Stunde und einmal in deinem Moment.",
             "symbole": [
               "schreiben"
             ]
@@ -675,12 +688,13 @@
           "ablauf": [
             "Einheit 13, Schritt 7: Aufgabe 1 allein (6 Min.); Wörter von Karten, Plakat und Tafel abzuschreiben ist erlaubt. Danach Ideen in der Tischgruppe tauschen.",
             "Schritt 8: Aufgabe 2 – Zahl vorher, Skill „Stopp, zurück, ausatmen“, Zahl nachher.",
-            "Die leere Zeile von Aufgabe 2 gehört zur Wochen-Mission. Beim Skills-Koffer und Ampelplan (Einheit 17) liegt das Blatt daneben."
+            "Die leere Zeile von Aufgabe 2 gehört zur Wochen-Mission mit dem in der Stunde gewählten Moment. Beim Skills-Koffer und Ampelplan (Einheit 17) liegt das Blatt daneben."
           ],
-          "hintergrund": "Bei sehr hoher Erregung versagen Fertigkeiten, die Nachdenken voraussetzen; dann helfen Skills, die am Körper und an den Sinnen ansetzen (Linehan, 2015). Die Anspannungsskala von 0 bis 100 macht diese Unterscheidung für Jugendliche greifbar (Fleischhaker et al., 2011). Ein persönlicher „Papierkorb“ wird bewusst nicht abgefragt: Was kurz entlastet und danach schadet, bespricht die Klasse nur an den vorgegebenen Karten.",
+          "hintergrund": "Bei sehr hoher Erregung versagen Fertigkeiten, die Nachdenken voraussetzen; dann helfen Skills, die am Körper und an den Sinnen ansetzen (Linehan, 2015). Die Anspannungsskala von 0 bis 100 macht diese Unterscheidung für Jugendliche greifbar (Fleischhaker et al., 2011). Der Kasten „Aus der Forschung“ fasst Sheppes et al. (2011) zusammen: Bei starken Gefühlen wählen Menschen Ablenkung statt Umdeuten – zu Recht. Ein persönlicher „Papierkorb“ wird bewusst nicht abgefragt.",
           "quellen": [
             "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
-            "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer."
+            "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+            "Sheppes, G., Scheibe, S., Suri, G. & Gross, J. J. (2011). Emotion-regulation choice. Psychological Science, 22(11), 1391–1396."
           ],
           "achtung": "Das Blatt nicht einsammeln und Einträge nur lesen, wenn jemand es anbietet. Hinweise auf Selbstverletzung, Drogen oder Gewalt nach der Stunde aufgreifen und noch am selben Tag den SePAS einbeziehen.",
           "material": "Skill-Karten, Plakat „Was sind Skills?“"
@@ -688,12 +702,12 @@
       },
       "fr": {
         "titel": "Mes skills de 0 à 100",
-        "untertitel": "Tous les skills ne conviennent pas à tous les chiffres. Ici, tu notes ce qui t’aide en vert, en orange et en rouge.",
+        "untertitel": "Chaque skill a son chiffre. Ici, tu notes ce qui t’aide en vert, en orange et en rouge.",
         "bausteine": [
           {
             "art": "aufgabe",
             "text": "Quels skills t’aident – et jusqu’à quel chiffre ? Écris au moins un skill dans chaque zone.",
-            "hinweis": "Tu peux recopier des mots des cartes skills, de l’affiche ou des autres. Des mots-clés suffisent. Pour le rouge, tu peux aussi écrire « à trouver ».",
+            "hinweis": "Recopier des cartes, de l’affiche ou des autres est permis ; des mots-clés suffisent. Pour le rouge : « à trouver ».",
             "symbole": [
               "schreiben"
             ]
@@ -718,18 +732,23 @@
           },
           {
             "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce que dit la recherche",
+            "text": "Émotion très forte ? Se distraire marche mieux que réfléchir – dans le rouge, le corps aide."
+          },
+          {
+            "art": "info",
             "symbol": "tipp",
             "titel": "Skill pour le rouge : Stop, recule, souffle",
             "punkte": [
               "Stop : ne dis rien, ne fais rien, n’envoie rien.",
-              "Recule : prends de la distance – regarde ailleurs ; en cours, sors un instant avec le signe convenu.",
+              "Recule : un pas de distance, regarde ailleurs – en cours, sors un instant avec le signe convenu.",
               "Souffle : expire longuement cinq fois, plus longtemps que tu n’inspires. Parle seulement après."
             ]
           },
           {
             "art": "aufgabe",
-            "text": "Teste le skill : estime ton chiffre avant et après – aujourd’hui en cours et une fois cette semaine.",
-            "hinweis": "Désormais, tu testes chaque skill ainsi : chiffre avant, skill, chiffre après.",
+            "text": "Teste le skill : chiffre avant, chiffre après – aujourd’hui en cours et une fois dans ton moment.",
             "symbole": [
               "schreiben"
             ]
@@ -776,12 +795,13 @@
           "ablauf": [
             "Séance 13, étape 7 : exercice 1 seul (6 min) ; recopier des mots des cartes, de l’affiche et du tableau est permis. Ensuite, échanger des idées en îlot.",
             "Étape 8 : exercice 2 – chiffre avant, skill « Stop, recule, souffle », chiffre après.",
-            "La ligne vide de l’exercice 2 va avec la mission de la semaine. Pour la valise à skills et le plan feu tricolore (séance 17), la fiche reste à portée de main."
+            "La ligne vide de l’exercice 2 va avec la mission de la semaine et le moment choisi pendant le cours. Pour la valise à skills et le plan feu tricolore (séance 17), la fiche reste à portée de main."
           ],
-          "hintergrund": "Quand l’excitation est très forte, les savoir-faire qui demandent de réfléchir ne fonctionnent plus ; ce qui aide alors passe par le corps et les sens (Linehan, 2015). L’échelle de tension de 0 à 100 rend cette distinction concrète pour les jeunes (Fleischhaker et al., 2011). On ne demande volontairement pas de « corbeille » personnelle : ce qui soulage un moment et fait du tort ensuite, la classe en parle seulement à partir des cartes données.",
+          "hintergrund": "Quand l’excitation est très forte, les savoir-faire qui demandent de réfléchir ne fonctionnent plus ; ce qui aide alors passe par le corps et les sens (Linehan, 2015). L’échelle de tension de 0 à 100 rend cette distinction concrète pour les jeunes (Fleischhaker et al., 2011). L’encadré « Ce que dit la recherche » résume Sheppes et al. (2011) : face à une émotion forte, on choisit la distraction plutôt que la réinterprétation – à juste titre. On ne demande volontairement pas de « corbeille » personnelle.",
           "quellen": [
             "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
-            "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer."
+            "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+            "Sheppes, G., Scheibe, S., Suri, G. & Gross, J. J. (2011). Emotion-regulation choice. Psychological Science, 22(11), 1391–1396."
           ],
           "achtung": "Ne pas ramasser la fiche et ne lire les réponses que si le jeune le propose. Reprendre après le cours tout signe d’automutilation, de drogue ou de violence et impliquer le SePAS le jour même.",
           "material": "Cartes skills, affiche « C’est quoi, un skill ? »"

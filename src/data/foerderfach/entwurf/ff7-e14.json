@@ -101,7 +101,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Lieblings-Skill, Skills-Pass und Mission"
+            "titel": "Lieblings-Skill, Skills-Pass, Mission und Moment"
           }
         ],
         "schritte": [
@@ -121,12 +121,13 @@
             "titel": "Rückblick: Mission und „erst runter“",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann zur Wochen-Mission: Wer hat abends seine höchste Zahl geschätzt, wer hat „Stopp, zurück, ausatmen“ ausprobiert? Daumen hoch, Mitte oder runter – eine Stimme erzählt Zahl vorher und nachher. Auf die Faustregel zeigen: Was geht bei 90 noch? Im Kopf kaum noch etwas, im Körper aber vieles. Das Thema nennen und den Skills-Tester im Heft aufschlagen lassen: Heute wird jeder Skill wie in einem Experiment getestet.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann zur Wochen-Mission: Kam dein Moment – und habt ihr „Stopp, zurück, ausatmen“ gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt Zahl vorher und nachher, niemand muss den Moment erlebt haben. Auf die Faustregel zeigen: Was geht bei 90 noch? Im Kopf kaum noch etwas, im Körper aber vieles. Das Thema nennen und den Skills-Tester im Heft aufschlagen lassen: Heute wird jeder Skill wie in einem Experiment getestet.",
             "sagen": [
               "Letzte Woche hieß es: erst runter, dann reden. Heute geht es um das Runter.",
-              "Ihr seid heute Versuchspersonen und Forschende zugleich. Bewertet ehrlich – auch „hilft kaum“ ist ein Ergebnis."
+              "Ihr seid heute Versuchspersonen und Forschende zugleich. Bewertet ehrlich – auch „hilft kaum“ ist ein Ergebnis.",
+              "Kam euer Moment? Und was habt ihr gemacht – Zahl vorher, Zahl nachher?"
             ],
-            "tipp": "Wer die Mission nicht geschafft hat, bekommt keinen Kommentar. Fragen, was es schwer gemacht hat – vergessen, keine Gelegenheit, peinlich –, und eine kleine Erinnerungshilfe vorschlagen, etwa einen Punkt auf der Handyhülle."
+            "tipp": "Kam der Moment nicht oder wurde der Skill vergessen, gibt es keinen Kommentar. Fragen, was es schwer gemacht hat – vergessen, keine Gelegenheit, peinlich –, und eine kleine Erinnerungshilfe vorschlagen, etwa einen Punkt auf der Handyhülle; heute wählt jede Person wieder einen Moment."
           },
           {
             "titel": "Gaspedal und Bremse: So hilft der Körper",
@@ -251,31 +252,33 @@
             "blatt": "ff7-skills-tester"
           },
           {
-            "titel": "Lieblings-Skill, Skills-Pass und Mission",
+            "titel": "Lieblings-Skill, Skills-Pass, Mission und Moment",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Im Skills-Tester kreist jede Person ihren Lieblings-Skill von heute ein. Leitfrage für den Skills-Pass an die Tafel: Mein Lieblings-Körper-Skill – und bis zu welcher Zahl hilft er? Satz schreiben, Stempel (2 Min.). Dann die Wochen-Mission ansagen (steht im Heft) und den Ausblick geben. Für die Sinnes-Stationen nächste Woche nachfragen: Wer Asthma hat oder auf Düfte oder Kälte empfindlich reagiert, sagt es nach der Stunde unter vier Augen.",
+            "text": "Im Skills-Tester kreist jede Person ihren Lieblings-Skill von heute ein. Leitfrage für den Skills-Pass an die Tafel: Mein Lieblings-Körper-Skill – und bis zu welcher Zahl hilft er? Satz schreiben, Stempel (2 Min.). Mission und Moment wählen (2 Min.): Die Wochen-Mission ansagen – wenn dein Moment kommt, dann dein Lieblings-Skill, Zahl vorher und nachher merken. Auf drei zeigen alle, wann ihr Moment kommt: ein Finger für den Bus, zwei für vor einem Test, drei für abends im Bett, die Faust für einen eigenen Moment – und schreiben ihn in die Spalte ‚Mein Moment: Wenn …‘ im Heft; die Tabelle „Test im Alltag“ im Skills-Tester ist der Platz für die Zahlen. Zum Schluss der Ausblick (1 Min.); für die Sinnes-Stationen nächste Woche nachfragen: Wer Asthma hat oder auf Düfte oder Kälte empfindlich reagiert, sagt es nach der Stunde unter vier Augen.",
             "sagen": [
-              "Kreist euren Favoriten ein. Bei wem ist es die Feder, bei wem der Seufzer, bei wem Vollgas?"
+              "Kreist euren Favoriten ein. Bei wem ist es die Feder, bei wem der Seufzer, bei wem Vollgas?",
+              "Wann kommt euer Moment? Bus – ein Finger, Test – zwei, Bett – drei, eigener Moment – die Faust. Schreibt ihn ins Heft: Wenn …, dann mein Lieblings-Skill."
             ],
-            "tipp": "Eine schnelle Strichliste an der Tafel zeigt, wie verschieden die Favoriten sind – das entlastet: Es gibt nicht den einen richtigen Skill.",
+            "tipp": "Eine schnelle Strichliste an der Tafel zeigt, wie verschieden die Favoriten sind – das entlastet: Es gibt nicht den einen richtigen Skill. Der Moment macht aus dem Vorsatz einen Plan; nächste Woche fragt die Brücke danach, ohne Kontrolle.",
             "blatt": "ff7-skills-tester"
           }
         ],
         "bruecke": "Nächste Woche testet ihr Skills über die Sinne: An Stationen geht es um Kälte, Klänge und Dinge zum Anfassen – und ihr schreibt eure Playlist zum Runterkommen. Überlegt euch schon mal zwei Songs oder Geräusche, die euch guttun.",
-        "mission": "Teste deinen Lieblings-Skill von heute einmal im Alltag – im Bus, vor einem Test oder abends im Bett. Merk dir deine Zahl vorher und nachher.",
-        "hintergrund": "Körper-Skills setzen dort an, wo bei sehr hoher Anspannung noch etwas zu machen ist: am Körper selbst. Linehan (2015) beschreibt für Momente extremer Erregung schnelle Wege über den Körper: Kälte, intensive Bewegung, langsames Atmen mit langer Ausatmung und das Anspannen und Lösen der Muskeln; die Kälte folgt in der nächsten Stunde. Sie wirken über den Körper, nicht über das Nachdenken, und eignen sich deshalb für Gelb und Rot. Balban et al. (2023) ließen Erwachsene einen Monat lang täglich fünf Minuten verschiedene Atemübungen machen: Am stärksten hob das zyklische Seufzen – doppelt einatmen, lang ausatmen – die Stimmung. Das Anspannen und Lösen geht auf die progressive Relaxation zurück (Jacobson, 1929). Entscheidend ist das Üben in ruhigen Zeiten, denn nur ein vertrauter Skill ist bei Rot abrufbar. Im Labor sind die Zahlen meist niedrig; darum zählen auch das Gefühl danach und der Test im Alltag.",
+        "mission": "Wenn dein Moment kommt – im Bus, vor einem Test oder abends im Bett –, dann mach deinen Lieblings-Skill von heute. Merk dir deine Zahl vorher und nachher.",
+        "hintergrund": "Grundlage sind die Körper-Skills des DBT-Skillstrainings: Für Momente extremer Erregung beschreibt Linehan (2015) schnelle Wege über den Körper – Kälte, intensive Bewegung, langsames Atmen mit langer Ausatmung, Anspannen und Lösen der Muskeln. Sie wirken ohne Nachdenken und eignen sich deshalb für Gelb und Rot. Der Beleg für die „Bremse“: Langsames Atmen – unter zehn Atemzüge pro Minute – stärkt den beruhigenden Teil des Nervensystems; der Herzschlag wird ruhiger, Anspannung und Ärger sinken (Zaccaro et al., 2018). Balban et al. (2023) ließen Erwachsene einen Monat lang täglich fünf Minuten verschiedene Atemübungen machen: Am stärksten hob das zyklische Seufzen – doppelt einatmen, lang ausatmen – die Stimmung. Anspannen und Lösen geht auf die progressive Relaxation zurück (Jacobson, 1929). Geübt wird in ruhigen Zeiten, denn nur ein vertrauter Skill ist bei Rot abrufbar.",
         "quellen": [
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.",
           "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895.",
           "Jacobson, E. (1929). Progressive Relaxation. Chicago: University of Chicago Press."
         ],
         "achtung": "Körperübungen sind freiwillig; jede Person darf aussetzen oder in eigenem Tempo mitmachen. Bei Asthma, Herz- oder Kreislaufproblemen und Verletzungen die Bewegung anpassen und die Luft nicht anhalten lassen. Wird jemandem beim Atmen schwindelig: sofort aufhören, normal weiteratmen, hinsetzen. Manche erleben es als unangenehm, den eigenen Körper zu spüren oder die Augen zu schließen, etwa nach belastenden Erfahrungen: mit offenen Augen arbeiten lassen und nichts erzwingen. Wirkt jemand danach aufgewühlt, nach der Stunde nachfragen; bei Hinweisen auf eine Gefährdung noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
         "differenzierung": {
-          "leichter": "Die Skills vor allem vormachen und mitmachen lassen, wenig erklären; Pedal und Bremse an die Tafel zeichnen. Im Skills-Tester reichen die Zahlen, die Bewertung kann auch ein gemalter Daumen sein. Für die Szenen eine Rolle ohne Text anbieten; wer die Unterrichtssprache noch lernt, spielt die Umgebung oder die Person mit dem Skill.",
+          "leichter": "Die Skills vor allem vormachen und mitmachen lassen, wenig erklären; Pedal und Bremse an die Tafel zeichnen. Im Skills-Tester reichen die Zahlen, die Bewertung kann auch ein gemalter Daumen sein. Für die Szenen eine Rolle ohne Text anbieten; wer die Unterrichtssprache noch lernt, spielt die Umgebung oder die Person mit dem Skill. Für die Spalte „Mein Moment“ reicht ein Wort: Bus, Test, Bett.",
           "schwerer": "Im Atem-Labor vorher eine Vermutung aufschreiben: Welcher Skill senkt meine Zahl am stärksten? Am Ende prüfen. In Schritt 7 die Regie übernehmen und eine Variante erfinden, die selbst die Lehrkraft nicht bemerkt."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Finger-Zahl (5 Min.), Gaspedal und Bremse mit dem Skills-Tester (5 Min.), Atem-Labor mit Feder und Kastenatmung nach dem Laufen (15 Min.), Vollgas-Experiment (5 Min.), Anspannen und Loslassen (10 Min.), Skill: Doppelter Seufzer mit Lieblings-Skill und Mission (10 Min.). „Wer sieht es?“ und der Puls-Versuch entfallen; die unauffälligen Varianten werden in der nächsten Stunde gesammelt."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Finger-Zahl (5 Min.), Gaspedal und Bremse mit dem Skills-Tester (5 Min.), Atem-Labor mit Feder und Kastenatmung nach dem Laufen (15 Min.), Vollgas-Experiment (5 Min.), Anspannen und Loslassen (10 Min.), Skill: Doppelter Seufzer mit Lieblings-Skill, Mission und Moment (10 Min.). „Wer sieht es?“ und der Puls-Versuch entfallen; die unauffälligen Varianten werden in der nächsten Stunde gesammelt."
       },
       "fr": {
         "titel": "Des skills par le corps et le souffle",
@@ -345,7 +348,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skill préféré, Skills-Pass et mission"
+            "titel": "Skill préféré, Skills-Pass, mission et moment"
           }
         ],
         "schritte": [
@@ -365,12 +368,13 @@
             "titel": "Retour : la mission et « d’abord redescendre »",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un ou une jeune lit sa phrase du Skills-Pass de la dernière séance. Puis la mission de la semaine : qui a estimé le soir son chiffre le plus haut, qui a essayé « Stop, recule, souffle » ? Pouce en haut, au milieu ou en bas – une voix raconte son chiffre avant et après. Montrer la règle de base : qu’est-ce qui marche encore à 90 ? Presque plus rien dans la tête, mais beaucoup de choses dans le corps. Annoncer le thème et faire ouvrir le testeur de skills dans le cahier : aujourd’hui, chaque skill est testé comme dans une expérience.",
+            "text": "Un ou une jeune lit sa phrase du Skills-Pass de la dernière séance. Puis la mission de la semaine : ton moment est-il venu – et avez-vous fait « Stop, recule, souffle » ? Pouce en haut, au milieu ou en bas ; une voix raconte son chiffre avant et après, personne n’est obligé d’avoir vécu son moment. Montrer la règle de base : qu’est-ce qui marche encore à 90 ? Presque plus rien dans la tête, mais beaucoup de choses dans le corps. Annoncer le thème et faire ouvrir le testeur de skills dans le cahier : aujourd’hui, chaque skill est testé comme dans une expérience.",
             "sagen": [
               "La semaine dernière, on a dit : d’abord redescendre, ensuite parler. Aujourd’hui, on s’occupe du « redescendre ».",
-              "Aujourd’hui, vous êtes à la fois cobayes et chercheurs. Notez honnêtement – « ça aide à peine », c’est aussi un résultat."
+              "Aujourd’hui, vous êtes à la fois cobayes et chercheurs. Notez honnêtement – « ça aide à peine », c’est aussi un résultat.",
+              "Votre moment est-il venu ? Et qu’avez-vous fait – chiffre avant, chiffre après ?"
             ],
-            "tipp": "Qui n’a pas réussi la mission ne reçoit aucun commentaire. Demander ce qui a été difficile – oublié, pas d’occasion, gênant – et proposer un petit aide-mémoire, par exemple une gommette sur la coque du portable."
+            "tipp": "Si le moment n’est pas venu ou si le skill a été oublié, aucun commentaire. Demander ce qui a été difficile – oublié, pas d’occasion, gênant – et proposer un petit aide-mémoire, par exemple une gommette sur la coque du portable ; aujourd’hui, chacun choisit à nouveau un moment."
           },
           {
             "titel": "L’accélérateur et le frein : comment le corps aide",
@@ -495,31 +499,33 @@
             "blatt": "ff7-skills-tester"
           },
           {
-            "titel": "Skill préféré, Skills-Pass et mission",
+            "titel": "Skill préféré, Skills-Pass, mission et moment",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Dans le testeur, chacun entoure son skill préféré du jour. Question pour le Skills-Pass au tableau : mon skill corporel préféré – et jusqu’à quel chiffre il aide ? Écrire la phrase, tampon (2 min). Puis annoncer la mission de la semaine (elle figure dans le cahier) et la prochaine séance. Pour les ateliers des sens de la semaine prochaine, demander : qui a de l’asthme ou réagit fortement aux odeurs ou au froid le dit après le cours, en tête-à-tête.",
+            "text": "Dans le testeur, chacun entoure son skill préféré du jour. Question pour le Skills-Pass au tableau : mon skill corporel préféré – et jusqu’à quel chiffre il aide ? Écrire la phrase, tampon (2 min). Mission et choix du moment (2 min) : annoncer la mission de la semaine – quand ton moment arrive, ton skill préféré, chiffre avant et après à retenir. À trois, tout le monde montre quand son moment arrivera : un doigt pour le bus, deux pour avant un devoir en classe, trois pour le soir au lit, le poing pour un moment à soi – et le note dans la colonne « Mon moment : quand … » du cahier ; le tableau « Essai au quotidien » du testeur sert à noter les chiffres. Pour finir, la prochaine séance (1 min) ; pour les ateliers des sens, demander : qui a de l’asthme ou réagit fortement aux odeurs ou au froid le dit après le cours, en tête-à-tête.",
             "sagen": [
-              "Entourez votre favori. Chez qui c’est la plume, chez qui le soupir, chez qui bouger à fond ?"
+              "Entourez votre favori. Chez qui c’est la plume, chez qui le soupir, chez qui bouger à fond ?",
+              "Quand votre moment arrivera-t-il ? Le bus – un doigt, le devoir en classe – deux, le lit – trois, un moment à moi – le poing. Notez-le dans le cahier : quand…, alors mon skill préféré."
             ],
-            "tipp": "Quelques bâtons au tableau montrent à quel point les favoris sont différents – ça soulage : il n’existe pas un seul bon skill.",
+            "tipp": "Quelques bâtons au tableau montrent à quel point les favoris sont différents – ça soulage : il n’existe pas un seul bon skill. Le moment transforme l’intention en plan ; la semaine prochaine, le lien y revient, sans contrôle.",
             "blatt": "ff7-skills-tester"
           }
         ],
         "bruecke": "La semaine prochaine, vous testerez des skills par les sens : en ateliers, il y aura du froid, des sons et des choses à toucher – et vous écrirez votre playlist pour redescendre. Pensez déjà à deux chansons ou à deux bruits qui vous font du bien.",
-        "mission": "Teste ton skill préféré d’aujourd’hui une fois au quotidien – dans le bus, avant un devoir en classe ou le soir au lit. Retiens ton chiffre avant et après.",
-        "hintergrund": "Quand la tension est très forte, il reste une prise : le corps lui-même. Linehan (2015) décrit, pour les moments d’excitation extrême, des voies rapides qui passent par le corps : le froid, l’effort physique intense, la respiration lente avec une longue expiration, la contraction puis le relâchement des muscles ; le froid suit à la prochaine séance. Ces skills passent par le corps, pas par la réflexion, et conviennent donc à l’orange et au rouge. Balban et al. (2023) ont fait pratiquer à des adultes, pendant un mois, cinq minutes par jour, différents exercices de respiration : le soupir cyclique – inspirer deux fois, expirer longtemps – a le plus amélioré l’humeur. Contracter et relâcher remonte à la relaxation progressive (Jacobson, 1929). L’essentiel est de s’entraîner au calme : seul un skill familier est disponible dans le rouge. Au labo, les chiffres sont souvent bas ; le ressenti et l’essai au quotidien comptent donc aussi.",
+        "mission": "Quand ton moment arrive – dans le bus, avant un devoir en classe ou le soir au lit –, fais ton skill préféré d’aujourd’hui. Retiens ton chiffre avant et après.",
+        "hintergrund": "La base, ce sont les skills corporels de la TCD : pour les moments d’excitation extrême, Linehan (2015) décrit des voies rapides par le corps – froid, effort intense, respiration lente à longue expiration, contraction puis relâchement des muscles. Ils marchent sans réfléchir et conviennent donc à l’orange et au rouge. La preuve pour le « frein » : respirer lentement, moins de dix respirations par minute, renforce la partie apaisante du système nerveux : cœur plus calme, tension et colère en baisse (Zaccaro et al., 2018). Balban et al. (2023) ont fait pratiquer à des adultes, un mois durant, cinq minutes par jour, divers exercices de respiration : le soupir cyclique – inspirer deux fois, expirer longtemps – a le plus amélioré l’humeur. Contracter et relâcher remonte à la relaxation progressive (Jacobson, 1929). On s’entraîne au calme : seul un skill familier est disponible dans le rouge.",
         "quellen": [
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.",
           "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895.",
           "Jacobson, E. (1929). Progressive Relaxation. Chicago: University of Chicago Press."
         ],
         "achtung": "Les exercices corporels sont facultatifs ; chacun peut faire une pause ou suivre à son rythme. En cas d’asthme, de problèmes cardiaques ou circulatoires ou de blessure, adapter le mouvement et ne pas faire retenir la respiration. Si la tête tourne à quelqu’un : arrêter tout de suite, respirer normalement, s’asseoir. Certains trouvent désagréable de sentir leur corps ou de fermer les yeux, par exemple après des expériences pénibles : les laisser garder les yeux ouverts et ne rien forcer. Si un jeune semble remué ensuite, lui reparler après le cours ; en cas de signe de danger, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
         "differenzierung": {
-          "leichter": "Montrer les skills et les faire avec la classe plutôt que de les expliquer longuement ; dessiner l’accélérateur et le frein au tableau. Dans le testeur, les chiffres suffisent, l’évaluation peut aussi être un pouce dessiné. Pour les scènes, proposer un rôle sans texte ; un jeune qui apprend encore la langue du cours joue l’entourage ou la personne qui fait le skill.",
+          "leichter": "Montrer les skills et les faire avec la classe plutôt que de les expliquer longuement ; dessiner l’accélérateur et le frein au tableau. Dans le testeur, les chiffres suffisent, l’évaluation peut aussi être un pouce dessiné. Pour les scènes, proposer un rôle sans texte ; un jeune qui apprend encore la langue du cours joue l’entourage ou la personne qui fait le skill. Pour la colonne « Mon moment », un mot suffit : bus, devoir, lit.",
           "schwerer": "Au labo du souffle, écrire d’abord une hypothèse : quel skill fera le plus baisser mon chiffre ? La vérifier à la fin. À l’étape 7, prendre la mise en scène et inventer une variante que même l’enseignant·e ne remarque pas."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le chiffre aux doigts (5 min), l’accélérateur et le frein avec le testeur de skills (5 min), labo du souffle avec la plume et la respiration carrée après la course (15 min), expérience à fond (5 min), contracter et relâcher (10 min), skill « le double soupir » avec skill préféré et mission (10 min). « Qui l’a vu ? » et la prise de pouls sont supprimés ; les variantes discrètes sont rassemblées à la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le chiffre aux doigts (5 min), l’accélérateur et le frein avec le testeur de skills (5 min), labo du souffle avec la plume et la respiration carrée après la course (15 min), expérience à fond (5 min), contracter et relâcher (10 min), skill « le double soupir » avec skill préféré, mission et moment (10 min). « Qui l’a vu ? » et la prise de pouls sont supprimés ; les variantes discrètes sont rassemblées à la séance suivante."
       }
     }
   ],
@@ -796,6 +802,12 @@
               "70",
               "im Bus, vor dem Test"
             ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Aus der Forschung",
+            "text": "Langsam ausatmen bremst den Herzschlag – das ist die eingebaute Bremse des Körpers."
           }
         ],
         "lehrer": {
@@ -804,12 +816,13 @@
             "Stunde 14: Atem-Feder, Kastenatmung nach 30 Sekunden Laufen, Fingeratmung, Vollgas-Bewegung, Anspannen und Loslassen, doppelter Seufzer – nach jedem Skill eine Zeile.",
             "Stunde 15: vor den Stationen einen Stern an die vermutlich beste Station, dann eine Zeile je Sinnes-Station und für 3-3-3.",
             "Stunde 16: die Kopf-Skills der Stunde in die leeren Zeilen eintragen.",
-            "Zwischen den Stunden: Test im Alltag (Wochen-Mission). Stunde 16 oder 17: die drei Favoriten für den Skills-Koffer."
+            "Zwischen den Stunden: Test im Alltag (Wochen-Mission mit dem gewählten Moment). Stunde 16, Abschluss: die drei Favoriten für den Skills-Koffer; Stunde 17: Sterne setzen und packen."
           ],
-          "hintergrund": "Skills wirken individuell: Was die eine beruhigt, macht den anderen nervös. Das Skillstraining für Jugendliche setzt deshalb auf Ausprobieren und Protokollieren (Rathus & Miller, 2015). Körper-Skills senken die Erregung, Sinnes-Skills binden die Aufmerksamkeit mit starken Reizen, Kopf-Skills lenken ab und brauchen dafür freie Denkkapazität (Linehan, 2015). Im Klassenraum ist die Zahl meist niedrig; aussagekräftig ist vor allem der Test im Alltag.",
+          "hintergrund": "Skills wirken individuell: Was die eine beruhigt, macht den anderen nervös. Das Skillstraining für Jugendliche setzt deshalb auf Ausprobieren und Protokollieren (Rathus & Miller, 2015). Körper-Skills senken die Erregung, Sinnes-Skills binden die Aufmerksamkeit mit starken Reizen, Kopf-Skills lenken ab und brauchen dafür freie Denkkapazität (Linehan, 2015). Der Kasten „Aus der Forschung“ fasst Zaccaro et al. (2018) zusammen: Langsames Atmen beruhigt Herzschlag und Nervensystem. Im Klassenraum ist die Zahl meist niedrig; aussagekräftig ist vor allem der Test im Alltag.",
           "quellen": [
             "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
-            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+            "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
           ],
           "achtung": "Bei Schwindel aufhören und normal atmen; bei Asthma die Luft nicht anhalten. Kälte nur kurz und im Tuch, Düfte nur nach Rückfrage. Aussetzen ist immer erlaubt.",
           "material": "Federn, Timer, Lautsprecher; in Stunde 15 die Sinnes-Stationen"
@@ -1060,6 +1073,12 @@
               "70",
               "dans le bus, avant un devoir en classe"
             ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce que dit la recherche",
+            "text": "Expirer lentement freine le cœur – c’est le frein intégré du corps."
           }
         ],
         "lehrer": {
@@ -1068,12 +1087,13 @@
             "Séance 14 : la plume, la respiration carrée après 30 secondes de course, la respiration des doigts, bouger à fond, contracter et relâcher, le double soupir – une ligne après chaque skill.",
             "Séance 15 : avant les ateliers, une étoile à l’atelier qui aidera sans doute le plus, puis une ligne par atelier des sens et pour le 3-3-3.",
             "Séance 16 : noter les skills mentaux de la séance dans les lignes vides.",
-            "Entre les séances : essai au quotidien (mission de la semaine). Séance 16 ou 17 : les trois favoris pour la valise à skills."
+            "Entre les séances : essai au quotidien (mission de la semaine avec le moment choisi). Séance 16, à la fin : les trois favoris pour la valise à skills ; séance 17 : les étoiles, puis la valise."
           ],
-          "hintergrund": "Les skills agissent différemment selon les personnes : ce qui calme l’une rend l’autre nerveux. L’entraînement aux skills pour adolescents mise donc sur l’essai et la prise de notes (Rathus & Miller, 2015). Les skills corporels font baisser l’excitation, les skills sensoriels captent l’attention par des stimulations fortes, les skills mentaux distraient et ont besoin pour cela d’une tête encore disponible (Linehan, 2015). En classe, le chiffre est souvent bas ; c’est surtout l’essai au quotidien qui parle.",
+          "hintergrund": "Les skills agissent différemment selon les personnes : ce qui calme l’une rend l’autre nerveux. L’entraînement aux skills pour adolescents mise donc sur l’essai et la prise de notes (Rathus & Miller, 2015). Les skills corporels font baisser l’excitation, les skills sensoriels captent l’attention par des stimulations fortes, les skills mentaux distraient et ont besoin pour cela d’une tête encore disponible (Linehan, 2015). L’encadré « Ce que dit la recherche » résume Zaccaro et al. (2018) : respirer lentement calme le cœur et le système nerveux. En classe, le chiffre est souvent bas ; c’est surtout l’essai au quotidien qui parle.",
           "quellen": [
             "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
-            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+            "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
           ],
           "achtung": "En cas de vertige, arrêter et respirer normalement ; en cas d’asthme, ne pas retenir sa respiration. Le froid seulement brièvement et dans un linge, les odeurs seulement après vérification. On peut toujours faire une pause.",
           "material": "Plumes, minuteur, enceinte ; à la séance 15, les ateliers des sens"
