@@ -47,14 +47,13 @@
           "Gefühlskarten: fünf Sätze (Vorlage)",
           "Plakat (A1) für die Botschaften",
           "Kreide oder Marker in sechs Farben",
-          "Schülerheft für jede Person",
-          "Stempel für den Skills-Pass"
+          "Schülerheft, Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
           "Fünf A3-Bögen in sechs Felder teilen und die Grundgefühle des Gefühlsrads hineinschreiben: fröhlich, stark, wütend, ängstlich, traurig, ruhig.",
-          "Gefühlskarten (Seite 1 und 2) fünfmal auf festes Papier kopieren und mit der Schneidemaschine schneiden; je Tischgruppe ein Satz im Umschlag, auch für Einheit 12.",
-          "Das Botschaften-Plakat vorbereiten: zwei Spalten wie in Schritt 4, links untereinander die sieben Gefühle; die Botschaften entstehen erst in der Stunde.",
-          "Die Namen der Figuren prüfen: Heißt jemand in der Klasse so, den Namen der Figur tauschen."
+          "Gefühlskarten (Seite 1 und 2) fünfmal auf festes Papier kopieren und mit der Schneidemaschine schneiden; ein Satz je Tischgruppe im Umschlag.",
+          "Botschaften-Plakat vorbereiten: zwei Spalten wie in Schritt 4, links die sieben Gefühle.",
+          "Namen der Figuren prüfen: Heißt jemand in der Klasse so, den Namen tauschen."
         ],
         "ablauf": [
           {
@@ -136,7 +135,7 @@
             "titel": "Gefühlswörter sammeln und sortieren",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Jede Tischgruppe bekommt einen Sortierbogen mit den sechs Grundgefühlen und einen dicken Stift; eine Person schreibt, die anderen sagen leise Wörter an. In vier Minuten schreiben die Gruppen so viele Gefühlswörter wie möglich gleich in das passende Feld – auch Wörter aus der Jugendsprache und aus allen Sprachen der Klasse. Was zu zwei Feldern passt, kommt auf die Linie dazwischen, was nirgends passt, an den Rand (4 Min.). Dann zählt jede Gruppe, welches Feld bei ihr am vollsten ist, und nennt ihr Lieblingswort und ein Wort vom Rand, Wörter aus anderen Sprachen mit einer kurzen Erklärung; die Lehrkraft schreibt die Wörter in der Farbe des Feldes an die Tafel (6 Min.). Kurz über die Wörter am Rand sprechen: Wohin gehören Ekel, Überraschung, Scham? (2 Min.) Zum Schluss schreibt jede Person in Aufgabe 1 zu jedem Grundgefühl ein Wort, das sie selbst benutzt – aus dem Bogen ihrer Gruppe oder aus ihrer Sprache (3 Min.).",
+            "text": "Jede Tischgruppe bekommt einen Sortierbogen mit den sechs Grundgefühlen und einen dicken Stift; eine Person schreibt, die anderen sagen leise Wörter an. In vier Minuten schreiben die Gruppen so viele Gefühlswörter wie möglich gleich in das passende Feld – auch Wörter aus der Jugendsprache und aus allen Sprachen der Klasse. Was zu zwei Feldern passt, kommt auf die Linie dazwischen, was nirgends passt, an den Rand (4 Min.). Dann zählt jede Gruppe, welches Feld bei ihr am vollsten ist, und nennt ihr Lieblingswort und ein Wort vom Rand; Wörter aus anderen Sprachen erklärt sie kurz. Die Lehrkraft schreibt die Wörter in der Farbe des Feldes an die Tafel (6 Min.). Kurz über die Wörter am Rand sprechen: Wohin gehören Ekel, Überraschung, Scham? (2 Min.) Zum Schluss schreibt jede Person in Aufgabe 1 zu jedem Grundgefühl ein Wort, das sie selbst benutzt – aus dem Bogen ihrer Gruppe oder aus ihrer Sprache (3 Min.).",
             "sagen": [
               "Alles zählt: Wörter aus der Jugendsprache und aus euren anderen Sprachen auch.",
               "Zu welchem Grundgefühl gehört ‚genervt‘? Und wohin kommt ‚erleichtert‘?"
@@ -149,7 +148,7 @@
             "titel": "Ein Tag ohne Angst, Wut, Traurigkeit …",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Zuerst die Klasse fragen: Wärt ihr ohne Gefühle besser dran? Zwei, drei Meinungen hören, nicht auflösen (2 Min.). Dann die ersten fünf Situationen nacheinander vorlesen und jede gleich einer Tischgruppe geben: Eine Person hat ab heute Morgen ein Gefühl verloren. Name und Gefühl sofort an die Tafel schreiben (Gruppe 1: Noah ohne Angst …), damit niemand seine Situation vergisst (2 Min.). Die Gruppe überlegt (3 Min.): Was geht schief? Was hätte das Gefühl gesagt, wenn es da gewesen wäre? Je Gruppe nennt eine Person die Antwort in zwei Sätzen; die Lehrkraft trägt die Botschaft ins Plakat ein und ergänzt mit der Klasse, was das Gefühl uns tun lässt (6 Min.). Zum Schluss die Situation mit Ekel vorlesen; die Klasse füllt die letzten Zeilen gemeinsam aus, auch die zur Ruhe (2 Min.).",
+            "text": "Zuerst die Klasse fragen: Wärt ihr ohne Gefühle besser dran? Zwei, drei Meinungen hören, nicht auflösen (2 Min.). Dann die ersten fünf Situationen nacheinander vorlesen und jede gleich einer Tischgruppe geben: Eine Person hat ab heute Morgen ein Gefühl verloren. Name und Gefühl sofort an die Tafel schreiben (Gruppe 1: Noah ohne Angst …), damit niemand seine Situation vergisst (2 Min.). Die Gruppe überlegt (3 Min.): Was geht schief? Was hätte das Gefühl gesagt, wenn es da gewesen wäre? Je Gruppe nennt eine Person die Antwort in zwei Sätzen; die Lehrkraft trägt die Botschaft auf dem Plakat ein und ergänzt mit der Klasse, was das Gefühl uns tun lässt (6 Min.). Zum Schluss die Situation mit Ekel vorlesen; die Klasse füllt die letzten Zeilen gemeinsam aus, auch die zur Ruhe (2 Min.).",
             "sagen": [
               "Stellt euch vor, ihr hättet nie wieder Angst. Klingt gut – oder?",
               "Was hätte das Gefühl der Person sagen wollen? Ein Satz reicht.",
@@ -298,10 +297,10 @@
           "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
           "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226."
         ],
-        "achtung": "Gefühle sind ein persönliches Thema: Niemand muss erzählen, wann er ein Gefühl zuletzt hatte; Aufgabe 3 und 4 bleiben privat, „weiter“ ist immer erlaubt. Die Situationen ohne Traurigkeit oder Freude können an eigene Verluste oder an eine lange traurige Zeit erinnern. Wird ein Beitrag zu persönlich, freundlich stoppen, danken und ein Gespräch nach der Stunde anbieten. Sagt jemand, er spüre seit Langem keine Freude mehr, oder wählt oft Wörter wie hilflos oder einsam, unter vier Augen nachfragen und den SePAS einbeziehen. Bei Hinweisen auf Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "achtung": "Gefühle sind ein persönliches Thema: Niemand muss erzählen, wann er ein Gefühl zuletzt hatte; Aufgabe 3 und 4 bleiben privat, „weiter“ ist immer erlaubt. Die Situationen ohne Traurigkeit oder Freude können an Verluste oder eine lange traurige Zeit erinnern. Wird ein Beitrag zu persönlich, freundlich stoppen, danken und ein Gespräch nach der Stunde anbieten. Sagt jemand, er spüre seit Langem keine Freude mehr, oder wählt oft Wörter wie hilflos oder einsam, unter vier Augen nachfragen und den SePAS einbeziehen. Bei Hinweisen auf Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken noch am selben Tag den SePAS informieren und nach dem Schutzkonzept handeln.",
         "differenzierung": {
-          "leichter": "Für Jugendliche, die mühsam lesen oder die Sprache noch lernen: Wörter in der eigenen Sprache erlauben und mit einer Gefühlskarte zeigen lassen; die sechs Botschaften vorab übersetzen (etwa mit einer Übersetzungs-App) und neben das Blatt legen; Aufgabe 2 mit den Karten legen; in Aufgabe 3 reicht ein Stichwort. Tafelbild und Wortspeicher bleiben sichtbar; ein Tandem mit einer Person derselben Sprache hilft.",
-          "schwerer": "Überlegen, wann ein Gefühl übers Ziel hinausschießt – etwa große Angst vor einem harmlosen Referat – und was dann hilft. Oder für die Wörter vom Rand (Neid, Scham, Überraschung) eine eigene Botschaft formulieren und ins Tafelbild ergänzen."
+          "leichter": "Für Jugendliche, die mühsam lesen oder die Sprache noch lernen: Wörter in der eigenen Sprache erlauben und mit einer Gefühlskarte zeigen lassen; die sechs Botschaften vorab übersetzen (etwa mit einer Übersetzungs-App) und neben das Blatt legen; Aufgabe 2 mit den Karten legen; in Aufgabe 3 reicht ein Stichwort. Botschaften-Plakat und Wortspeicher bleiben sichtbar; ein Tandem mit einer Person derselben Sprache hilft.",
+          "schwerer": "Überlegen, wann ein Gefühl übers Ziel hinausschießt – etwa große Angst vor einem harmlosen Referat – und was dann hilft. Oder für die Wörter vom Rand (Neid, Scham, Überraschung) eine eigene Botschaft formulieren und auf dem Plakat ergänzen."
         },
         "kurzfassung": "Bleibt nur eine Stunde: Check-in mit dem genaueren Wort (5 Min.), Gefühlswörter sammeln und sortieren (10 Min.), Ein Tag ohne … mit dem Botschaften-Plakat (15 Min.), Aufgaben 2 und 3 auf dem Blatt (8 Min.), Farbsuche (5 Min.), Skills-Pass und Blitzlicht (7 Min.). Pantomime und Gefühls-Detektive entfallen; die Pantomime passt als Bewegungspause in die nächste Stunde."
       },
@@ -320,14 +319,13 @@
           "Cartes des émotions, cinq jeux",
           "Affiche (A1) pour les messages",
           "Craies ou feutres de six couleurs",
-          "Un cahier de l’élève par jeune",
-          "Tampon pour le Skills-Pass"
+          "Cahier de l’élève, tampon du Skills-Pass"
         ],
         "vorbereitung": [
           "Partager cinq feuilles A3 en six cases et y écrire les émotions de base de la roue : joyeux, fort, en colère, anxieux, triste, calme.",
-          "Photocopier cinq fois les cartes des émotions (pages 1 et 2) sur papier épais et les couper au massicot ; un jeu par îlot dans une enveloppe, à garder pour la séance 12.",
-          "Préparer l’affiche des messages : deux colonnes comme à l’étape 4, à gauche les sept émotions l’une sous l’autre ; les messages s’ajoutent pendant la séance.",
-          "Vérifier les prénoms des personnages : si un jeune de la classe porte le même, changer celui du personnage."
+          "Photocopier cinq fois les cartes des émotions (pages 1 et 2) sur papier épais et les couper au massicot ; un jeu par îlot dans une enveloppe.",
+          "Préparer l’affiche des messages : deux colonnes comme à l’étape 4, à gauche les sept émotions.",
+          "Vérifier les prénoms des personnages : si un jeune de la classe porte le même, le changer."
         ],
         "ablauf": [
           {
@@ -409,7 +407,7 @@
             "titel": "Rassembler et ranger les mots des émotions",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Chaque îlot reçoit une feuille de tri avec les six émotions de base et un gros feutre ; une personne écrit, les autres soufflent des mots à voix basse. En quatre minutes, les groupes écrivent le plus de mots d’émotions possible directement dans la bonne case – aussi des mots du langage des jeunes et de toutes les langues de la classe. Ce qui va dans deux cases se met sur le trait entre les deux, ce qui ne va nulle part, dans la marge (4 min). Puis chaque groupe compte quelle case est la plus remplie chez lui et donne son mot préféré ainsi qu’un mot de la marge, en expliquant brièvement les mots d’une autre langue ; l’enseignant·e écrit les mots au tableau dans la couleur de la case (6 min). Parler brièvement des mots de la marge : où vont le dégoût, la surprise, la honte ? (2 min) Pour finir, chacun écrit dans l’exercice 1, pour chaque émotion de base, un mot qu’il utilise lui-même – tiré de la feuille de son groupe ou de sa langue (3 min).",
+            "text": "Chaque îlot reçoit une feuille de tri avec les six émotions de base et un gros feutre ; une personne écrit, les autres soufflent des mots à voix basse. En quatre minutes, les groupes écrivent le plus de mots d’émotions possible directement dans la bonne case – aussi des mots du langage des jeunes et de toutes les langues de la classe. Ce qui va dans deux cases se met sur le trait entre les deux, ce qui ne va nulle part, dans la marge (4 min). Puis chaque groupe compte quelle case est la plus remplie chez lui et donne son mot préféré ainsi qu’un mot de la marge ; il explique brièvement les mots d’une autre langue. L’enseignant·e écrit les mots au tableau dans la couleur de la case (6 min). Parler brièvement des mots de la marge : où vont le dégoût, la surprise, la honte ? (2 min) Pour finir, chacun écrit dans l’exercice 1, pour chaque émotion de base, un mot qu’il utilise lui-même – tiré de la feuille de son groupe ou de sa langue (3 min).",
             "sagen": [
               "Tout compte : les mots des jeunes et ceux de vos autres langues aussi.",
               "Sous quelle émotion de base va “agacé” ? Et où met-on “soulagé” ?"
@@ -573,8 +571,8 @@
         ],
         "achtung": "Les émotions sont un sujet personnel : personne n’est obligé de dire quand il a ressenti une émotion ; les exercices 3 et 4 restent privés, on peut toujours dire « je passe ». Les situations sans tristesse ou sans joie peuvent rappeler une perte ou une longue période triste. Si une intervention devient trop personnelle, l’arrêter gentiment, remercier et proposer d’en parler après le cours. Si un jeune dit ne plus ressentir de joie depuis longtemps ou choisit souvent impuissant ou seul, lui parler en tête-à-tête et impliquer le SePAS. En cas de signes de violence, d’abus, d’automutilation ou d’idées suicidaires, informer le SePAS le jour même et suivre le protocole de protection de l’école.",
         "differenzierung": {
-          "leichter": "Pour les jeunes qui lisent difficilement ou apprennent encore la langue : accepter des mots dans leur langue et les faire montrer avec une carte des émotions ; traduire à l’avance les six messages (par exemple avec une application de traduction) et les poser à côté de la fiche ; faire l’exercice 2 avec les cartes ; dans l’exercice 3, un mot-clé suffit. La grille et les mots clés restent visibles ; un binôme avec un camarade de la même langue aide.",
-          "schwerer": "Réfléchir à quand une émotion dépasse son but – par exemple une grande peur avant un exposé sans enjeu – et à ce qui aide alors. Ou formuler un message pour les mots de la marge (envie, honte, surprise) et le compléter dans la grille."
+          "leichter": "Pour les jeunes qui lisent difficilement ou apprennent encore la langue : accepter des mots dans leur langue et les faire montrer avec une carte des émotions ; traduire à l’avance les six messages (par exemple avec une application de traduction) et les poser à côté de la fiche ; faire l’exercice 2 avec les cartes ; dans l’exercice 3, un mot-clé suffit. L’affiche des messages et les mots clés restent visibles ; un binôme avec un camarade de la même langue aide.",
+          "schwerer": "Réfléchir à quand une émotion dépasse son but – par exemple une grande peur avant un exposé sans enjeu – et à ce qui aide alors. Ou formuler un message pour les mots de la marge (envie, honte, surprise) et le compléter sur l’affiche."
         },
         "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le mot plus précis (5 min), rassembler et ranger les mots (10 min), une journée sans… avec l’affiche des messages (15 min), exercices 2 et 3 de la fiche (8 min), chasse aux couleurs (5 min), Skills-Pass et tour éclair (7 min). Le mime et les détectives des émotions sont supprimés ; le mime peut servir de pause active à la séance suivante."
       }

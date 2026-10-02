@@ -419,7 +419,7 @@
             "phase": "aktiv",
             "text": "Tout le monde se lève ; sacs rangés, chaises sous les tables. On marche sur un parcours autour des îlots, tous dans le même sens. Avant, chacun montre avec le pouce comment il va. Puis passer quatre courts morceaux l’un après l’autre, d’une à deux minutes chacun (tableau) ; chacun se déplace comme la musique le lui fait ressentir – marcher, flâner, taper des pieds, flotter, sans se toucher. Quand la musique s’arrête, tout le monde se fige en statue ; deux voix : quelle émotion la musique a-t-elle déclenchée, et où dans le corps ? (quatre morceaux, 14 min) Pour finir, assis, montrer de nouveau le pouce et demander : est-ce que quelque chose a changé ? La musique peut-elle changer une émotion ? Quelle chanson écoutez-vous quand vous voulez redescendre ? Noter les titres sur une feuille (6 min).",
             "sagen": [
-              "Bougez comme la musique sonne. Personne ne regarde – tout le monde est occupé.",
+              "Bougez comme la musique vous le fait sentir. Personne ne regarde – tout le monde est occupé.",
               "Musique stop – statue. Quelle émotion ? Où dans le corps ?",
               "Quelle chanson écoutez-vous quand vous voulez redescendre ?"
             ],
@@ -532,7 +532,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Wo spürst du Wut, Angst, Freude und Traurigkeit? Mal die Stellen in der passenden Farbe aus.",
+            "text": "Wo spürst du Wut, Angst, Freude und Traurigkeit? Markiere die Stellen in der passenden Farbe.",
             "hinweis": "Denk an einen Moment, der nicht zu schwer war. Punkte, Kreuze oder Flächen – alles geht. Es sind die Farben des Gefühlsrads.",
             "symbole": [
               "malen"
@@ -701,7 +701,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Où ressens-tu la colère, la peur, la joie et la tristesse ? Colorie les endroits avec la bonne couleur.",
+            "text": "Où ressens-tu la colère, la peur, la joie et la tristesse ? Marque les endroits avec la bonne couleur.",
             "hinweis": "Pense à un moment pas trop lourd. Points, croix ou surfaces – tout va. Ce sont les couleurs de la roue des émotions.",
             "symbole": [
               "malen"
