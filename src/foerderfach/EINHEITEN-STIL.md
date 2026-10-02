@@ -407,6 +407,17 @@ nicht da ist):
 
 ---
 
+### 7.1 Skill-Karten
+
+Am Ende des Schülerhefts stehen Skill-Karten zum Ausschneiden (Scheckkartengröße, acht je Seite, dahinter
+die Rückseiten). Sie stehen in `src/data/foerderfach/skillkarten.json` und werden **nach** den Einheiten
+einer Klassenstufe aus deren Skill-Schritten zusammengestellt – etwa 16 je Jahr, abwechslungsreich (Atem,
+Körper, Sinne, Kopf, Miteinander, Schule). Je Karte: `name` (wie im Schritt „Skill: …“), `wann` (höchstens
+70 Zeichen), genau drei `schritte` (je höchstens 80 Zeichen, an die Jugendlichen gerichtet), ein Piktogramm
+und die `einheit`, in der der Skill eingeführt wird. Der Skill-Schritt dieser Einheit verweist im Handbuch
+automatisch auf die Karte („Skill-Karte · Heft S. …“). Deshalb den Skill im Schritt so anleiten, dass er sich
+in drei Schritten zusammenfassen lässt.
+
 ## 8. Quellen
 
 - Nur Einträge aus `src/blatt/quellen.ts`, **Zeichen für Zeichen** kopiert (das Prüfskript
