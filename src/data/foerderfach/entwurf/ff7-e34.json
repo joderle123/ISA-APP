@@ -101,7 +101,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, Mission und Ausblick"
+            "titel": "Skills-Pass, Moment wählen und Mission"
           }
         ],
         "schritte": [
@@ -121,8 +121,9 @@
             "titel": "Mission, Plan für heute und Regeln für Rückmeldung",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Per Daumen nach der Wochen-Mission fragen: Wer hat einmal „Mein Körper macht sich bereit“ ausprobiert? Eine Stimme erzählt, wo. Dann auf den Plan für heute an der Tafel zeigen: proben – Generalprobe – zeigen – Nachgespräch, darunter die Frage fürs Publikum: Welcher Skill oder welcher Satz bringt die Wendung? Zum Schluss die vier Schritte für Rückmeldungen am Tafelbild vorlesen (sie stehen auch auf Seite 2 des Blatts) und die Paten zeigen: Jede Gruppe gibt genau einer anderen Gruppe Rückmeldung. Dazu eine Regel für heute: Private Handys bleiben in der Tasche, auch als Requisit; gefilmt wird nur mit dem Tablet der Schule.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Per Daumen nach der Wochen-Mission fragen: Kam euer Moment – das Herzklopfen vor dem Test, im Training, beim Vorlesen – und was habt ihr gemacht? Hoch, Mitte, runter; eine Stimme erzählt, wo der Satz „Mein Körper macht sich bereit“ geholfen hat. Heute kommt der Satz auf die Bühne. Dann auf den Plan für heute an der Tafel zeigen: proben – Generalprobe – zeigen – Nachgespräch, darunter die Frage fürs Publikum: Welcher Skill oder welcher Satz bringt die Wendung? Zum Schluss die vier Schritte für Rückmeldungen am Tafelbild vorlesen (sie stehen auch auf Seite 2 des Blatts) und die Paten zeigen: Jede Gruppe gibt genau einer anderen Gruppe Rückmeldung. Dazu eine Regel für heute: Private Handys bleiben in der Tasche, auch als Requisit; gefilmt wird nur mit dem Tablet der Schule.",
             "sagen": [
+              "Kam euer Moment – und was habt ihr gemacht? Daumen, dann eine Stimme.",
               "Rückmeldung gibt es zur Szene, nie zur Person. Über Aussehen, Stimme oder Aussprache sagen wir nichts."
             ],
             "tabelle": {
@@ -153,7 +154,7 @@
                 ]
               ]
             },
-            "tipp": "Das Tafelbild bleibt die ganze Stunde stehen. Wer Rückmeldung gibt, darf den Satzanfang ablesen – das macht es auch für Jugendliche leicht, die die Sprache noch lernen."
+            "tipp": "Das Tafelbild bleibt die ganze Stunde stehen. Wer Rückmeldung gibt, darf den Satzanfang ablesen – das macht es auch für Jugendliche leicht, die die Sprache noch lernen. Kam der Moment bei niemandem, die eigene Woche erzählen – heute vor der Bühne kommt er für alle."
           },
           {
             "titel": "Proben mit Regie-Stopps",
@@ -233,31 +234,33 @@
             "wennEsKippt": "Wird das Schütteln zum Wettbewerb, mit „Freeze!“ einfrieren lassen und den zweiten Schritt ganz leise anleiten – der Unterschied macht die Wirkung spürbar. Wer seinen Namen nicht sagen mag, denkt ihn nur."
           },
           {
-            "titel": "Skills-Pass, Mission und Ausblick",
+            "titel": "Skills-Pass, Moment wählen und Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Worauf bin ich heute stolz – bei mir oder bei unserer Gruppe? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel. Kurz nachfragen, ob das Video gelöscht ist. Dann die Wochen-Mission ansagen, die im Heft steht, und den Ausblick auf die letzte Stunde geben. Die Tüten mit den Karten einsammeln.",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Worauf bin ich heute stolz – bei mir oder bei unserer Gruppe? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel. Moment wählen (1 Min.): Die Wochen-Mission im Heft vorlesen – wenn dein Moment kommt, dann Abschütteln und ankommen. Auf drei zeigen alle, wann er diese Woche kommt: ein Finger für nach einem Streit, zwei für nach dem Training oder Spiel, drei für vor der Haustür, die Faust für einen eigenen Moment; dann schreibt jede Person ihn in die Spalte „Mein Moment: Wenn …“, ein Stichwort reicht. Zum Schluss (2 Min.): kurz nachfragen, ob das Video gelöscht ist, die Tüten mit den Karten einsammeln und den Ausblick auf die letzte Stunde geben.",
             "sagen": [
               "Für den Skills-Pass: Worauf seid ihr heute stolz?",
+              "Wann kommt euer Moment zum Abschütteln? Nach einem Streit – ein Finger, nach dem Training – zwei, vor der Haustür – drei, ein eigener – die Faust. Schreibt ihn ins Heft.",
               "Danke für euren Mut – auch an alle, die hinter der Bühne gearbeitet haben."
             ],
-            "tipp": "Ist eine Gruppe nicht drangekommen, mit dem Régent fünf Minuten in einer anderen Stunde finden, statt das Stück zu streichen: Wer geprobt hat, will auch zeigen."
+            "tipp": "Ist eine Gruppe nicht drangekommen, mit dem Régent fünf Minuten in einer anderen Stunde finden, statt das Stück zu streichen: Wer geprobt hat, will auch zeigen. Der Moment ist der Plan: Nächste Woche fragt die Brücke, ob er kam – ohne Kontrolle.",
+            "wennEsKippt": "Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Wer die Sprache noch lernt, malt ein kleines Zeichen für seinen Moment: Ball, Haus."
           }
         ],
-        "bruecke": "Nächste Woche ist unsere letzte Stunde: Ihr schaut mit Skills-Pass, Glas und Baum auf euer Jahr zurück und schreibt einen Brief an euch selbst, den ihr im neuen Schuljahr zurückbekommt.",
-        "mission": "Probiere diese Woche einmal „Abschütteln und ankommen“ – nach einem Streit, nach dem Training oder bevor du nach Hause kommst. Was ist danach anders?",
-        "hintergrund": "Rückmeldung wirkt, wenn sie zeigt, was schon gelingt und was der nächste Schritt sein könnte – bezogen auf die Aufgabe, nicht auf die Person. Lob oder Kritik, die die Person meint („Du bist so talentiert“, „Du kannst das nicht“), bringt dagegen wenig (Hattie & Timperley, 2007). Die festen Schritte der Stunde setzen das um: was angekommen ist, ein genaues Lob, ein Tipp zur Szene. Wer ein eigenes Stück vor Publikum zeigt und es schafft, macht eine Bewältigungserfahrung, die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977). Für Jugendliche zählt dabei besonders, vor Gleichaltrigen ernst genommen zu werden; Programme, die das berücksichtigen, statt zu belehren, erreichen sie eher (Yeager, 2017). Das bewusste Abschütteln der Rolle stammt aus der Theaterarbeit: Es hilft, eine gespielte Figur – gerade eine unangenehme – auf der Bühne zu lassen.",
+        "bruecke": "Nächste Woche ist unsere letzte Stunde: Ihr schaut mit Skills-Pass, Glas und Baum auf euer Jahr zurück, füllt noch einmal den Klassen-Fragebogen vom Anfang des Jahres aus und schreibt einen Brief an euch selbst, den ihr im neuen Schuljahr zurückbekommt.",
+        "mission": "Wenn dein Moment kommt – nach einem Streit, nach dem Training, vor der Haustür –, dann Abschütteln und ankommen: zehn Sekunden schütteln, zweimal lang ausatmen, leise dein Name.",
+        "hintergrund": "Rückmeldung wirkt, wenn sie zeigt, was schon gelingt und was der nächste Schritt sein könnte – bezogen auf die Aufgabe, nicht auf die Person. Lob oder Kritik, die die Person meint („Du bist so talentiert“), bringt dagegen wenig (Hattie & Timperley, 2007); die vier festen Schritte – Applaus, angekommen, ein genaues Lob, ein Tipp zur Szene – setzen das um, und die Generalprobe vor acht Leuten ist der geschützte Raum, um sie einzuüben. Wer ein eigenes Stück vor Publikum zeigt und es schafft, macht eine Bewältigungserfahrung, die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977). Das Abschütteln der Rolle stammt aus der Theaterarbeit und eröffnet zugleich den Abschied: Tuckman und Jensen (1977) beschreiben als letzte Phase einer Gruppe das Auflösen – Rollen werden abgelegt, Erreichtes wird gewürdigt. Diese Stunde beginnt die Phase, die nächste schließt sie ab.",
         "quellen": [
           "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
-          "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94."
+          "Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. Group & Organization Studies, 2(4), 419–427."
         ],
         "achtung": "Vor der Klasse zu spielen, ist für manche eine echte Hürde: Niemand wird auf die Bühne geschickt, ein Wechsel hinter die Bühne geht bis zur letzten Minute. Lacht jemand über eine Person statt über die Szene, sofort unterbrechen. Rückmeldungen nur nach den Regeln, nie zu Aussehen, Stimme oder Aussprache. Private Handys bleiben in der Tasche; das Video wird nur hier gezeigt und gleich danach gelöscht. Nimmt eine Szene jemanden im Publikum sichtbar mit, darf er wegschauen; nach der Stunde ansprechen. Wird deutlich, dass jemand Gewalt oder Mobbing erlebt: nicht vertiefen, nach der Stunde ansprechen, am selben Tag den SePAS informieren.",
         "differenzierung": {
-          "leichter": "Rückmeldung mit den Satzanfängen von der Tafel; wer die Sprache noch lernt oder nicht gern vor der Klasse spricht, übernimmt in der Paten-Gruppe das Lob und darf es ablesen oder mit einer Geste zeigen. Im Nachgespräch reicht ein Wort, auf dem Blatt ein Stichwort je Satz.",
+          "leichter": "Rückmeldung mit den Satzanfängen von der Tafel; wer die Sprache noch lernt oder nicht gern vor der Klasse spricht, übernimmt in der Paten-Gruppe das Lob und darf es ablesen oder mit einer Geste zeigen. Im Nachgespräch reicht ein Wort, auf dem Blatt ein Stichwort je Satz. Für die Spalte „Mein Moment“ reicht ein Wort: Streit, Training, Haustür.",
           "schwerer": "Nach dem Zeigen eine Szene als Stopp-Theater wiederholen: Das Publikum ruft „Stopp!“ und schlägt vor, was eine zuschauende Figur anders machen könnte; ersetzt werden nur Zuschauende und Freunde, nie die angegriffene Person. Oder das Nachgespräch moderieren."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Lampenfieber-Zahl (3 Min.), letzte Probe (7 Min.), Bühne frei mit Rückmeldungen (30 Min.), Abschütteln und ankommen (5 Min.), Skills-Pass und Mission (5 Min.). Generalprobe und Nachgespräch entfallen; die Regeln für Rückmeldungen werden vor dem ersten Stück vorgelesen."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Lampenfieber-Zahl (3 Min.), letzte Probe (7 Min.), Bühne frei mit Rückmeldungen (30 Min.), Abschütteln und ankommen (5 Min.), Skills-Pass, Moment wählen und Mission (5 Min.). Generalprobe und Nachgespräch entfallen; die Regeln für Rückmeldungen werden vor dem ersten Stück vorgelesen."
       },
       "fr": {
         "titel": "Notre pièce 2 : répéter et présenter",
@@ -328,7 +331,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, mission et suite"
+            "titel": "Skills-Pass, choisir son moment et mission"
           }
         ],
         "schritte": [
@@ -348,8 +351,9 @@
             "titel": "Mission, programme du jour et règles du retour",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass. Demander avec le pouce où en est la mission de la semaine : qui a essayé une fois « Mon corps se prépare » ? Une voix raconte où. Puis montrer au tableau le programme du jour : répéter – générale – présenter – échange final, et en dessous la question pour le public : quel skill ou quelle phrase amène le tournant ? Pour finir, lire les quatre étapes du retour sur le tableau (elles figurent aussi à la page 2 de la fiche) et montrer les parrainages : chaque îlot donne un retour à un seul autre îlot. Ajouter une règle pour aujourd’hui : les portables personnels restent dans le sac, même comme accessoire ; on ne filme qu’avec la tablette de l’école.",
+            "text": "Un jeune lit la phrase de son Skills-Pass. Demander avec le pouce où en est la mission de la semaine : votre moment est-il venu – le cœur qui bat avant un devoir, à l’entraînement, en lisant à voix haute – et qu’avez-vous fait ? En haut, au milieu, en bas ; une voix raconte où la phrase « Mon corps se prépare » a aidé. Aujourd’hui, la phrase monte sur scène. Puis montrer au tableau le programme du jour : répéter – générale – présenter – échange final, et en dessous la question pour le public : quel skill ou quelle phrase amène le tournant ? Pour finir, lire les quatre étapes du retour sur le tableau (elles figurent aussi à la page 2 de la fiche) et montrer les parrainages : chaque îlot donne un retour à un seul autre îlot. Ajouter une règle pour aujourd’hui : les portables personnels restent dans le sac, même comme accessoire ; on ne filme qu’avec la tablette de l’école.",
             "sagen": [
+              "Votre moment est-il venu – et qu’avez-vous fait ? Le pouce, puis une voix.",
               "Le retour porte sur la scène, jamais sur la personne. On ne dit rien sur l’apparence, la voix ou l’accent."
             ],
             "tabelle": {
@@ -380,7 +384,7 @@
                 ]
               ]
             },
-            "tipp": "Le tableau reste affiché toute la séance. Qui donne un retour peut lire le début de phrase – c’est plus facile aussi pour les jeunes qui apprennent encore la langue."
+            "tipp": "Le tableau reste affiché toute la séance. Qui donne un retour peut lire le début de phrase – c’est plus facile aussi pour les jeunes qui apprennent encore la langue. Si le moment n’est venu pour personne, raconter sa propre semaine – aujourd’hui, devant la scène, il vient pour tout le monde."
           },
           {
             "titel": "Répéter avec des arrêts de mise en scène",
@@ -460,31 +464,33 @@
             "wennEsKippt": "Si l’exercice tourne à la compétition, lancer « Statue ! » et guider la deuxième étape tout doucement – le contraste rend l’effet perceptible. Qui ne veut pas dire son prénom le pense seulement."
           },
           {
-            "titel": "Skills-Pass, mission et suite",
+            "titel": "Skills-Pass, choisir son moment et mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire au tableau la question du Skills-Pass : de quoi suis-je fier, fière aujourd’hui – chez moi ou dans notre îlot ? Chacun écrit sa phrase (2 min) et reçoit le tampon. Vérifier brièvement que la vidéo est effacée. Puis annoncer la mission de la semaine, qui figure dans le cahier, et la dernière séance. Ramasser les sacs avec les cartes.",
+            "text": "Écrire au tableau la question du Skills-Pass : de quoi suis-je fier, fière aujourd’hui – chez moi ou dans notre îlot ? Chacun écrit sa phrase (2 min) et reçoit le tampon. Choisir son moment (1 min) : lire la mission de la semaine dans le cahier – quand ton moment arrive, alors se secouer et revenir à soi. À trois, chacun montre quand il viendra cette semaine : un doigt pour après une dispute, deux pour après l’entraînement ou un match, trois pour devant la porte de chez soi, le poing pour un moment à soi ; puis chacun l’écrit dans la colonne « Mon moment : quand… », un mot-clé suffit. Pour finir (2 min) : vérifier brièvement que la vidéo est effacée, ramasser les sacs avec les cartes et annoncer la dernière séance.",
             "sagen": [
               "Pour le Skills-Pass : de quoi êtes-vous fiers aujourd’hui ?",
+              "Quand viendra votre moment pour vous secouer ? Après une dispute – un doigt, après l’entraînement – deux, devant la porte – trois, un moment à vous – le poing. Écrivez-le dans le cahier.",
               "Merci pour votre courage – aussi à tous ceux qui ont travaillé en coulisses."
             ],
-            "tipp": "Si un îlot n’a pas pu passer, trouver avec le régent cinq minutes dans un autre cours plutôt que de supprimer la pièce : qui a répété veut aussi présenter."
+            "tipp": "Si un îlot n’a pas pu passer, trouver avec le régent cinq minutes dans un autre cours plutôt que de supprimer la pièce : qui a répété veut aussi présenter. Le moment, c’est le plan : la semaine prochaine, le lien demande s’il est venu – sans contrôle.",
+            "wennEsKippt": "Qui ne veut pas choisir de moment laisse la colonne vide – personne ne demandera la semaine prochaine. Qui apprend encore la langue dessine un petit signe pour son moment : ballon, maison."
           }
         ],
-        "bruecke": "La semaine prochaine, c’est notre dernière séance : vous revenez sur votre année avec le Skills-Pass, le bocal et l’arbre, et vous vous écrivez une lettre que vous récupérerez l’année prochaine.",
-        "mission": "Essaie une fois cette semaine « se secouer et revenir à soi » – après une dispute, après l’entraînement ou avant de rentrer chez toi. Qu’est-ce qui change ?",
-        "hintergrund": "Un retour est utile quand il montre ce qui réussit déjà et quelle pourrait être la prochaine étape – sur la tâche, pas sur la personne. Les éloges ou critiques qui visent la personne (« Tu es tellement doué », « Tu n’y arrives pas ») apportent peu (Hattie & Timperley, 2007). Les étapes fixes de la séance le mettent en pratique : ce qu’on a compris, un compliment précis, un conseil sur la scène. Qui présente sa propre pièce devant un public et y arrive vit une expérience de réussite, la source la plus forte du sentiment d’efficacité personnelle (Bandura, 1977). À cet âge, être pris au sérieux par ses pairs compte particulièrement ; les programmes qui en tiennent compte au lieu de faire la morale touchent davantage les jeunes (Yeager, 2017). Se secouer pour sortir du rôle vient du théâtre : cela aide à laisser sur scène un personnage joué, surtout s’il était désagréable.",
+        "bruecke": "La semaine prochaine, c’est notre dernière séance : vous revenez sur votre année avec le Skills-Pass, le bocal et l’arbre, vous remplissez une dernière fois le questionnaire de la classe du début de l’année, et vous vous écrivez une lettre que vous récupérerez l’année prochaine.",
+        "mission": "Quand ton moment arrive – après une dispute, après l’entraînement, devant ta porte –, secoue-toi et reviens à toi : dix secondes à se secouer, deux expirations, ton prénom.",
+        "hintergrund": "Un retour est utile quand il montre ce qui réussit déjà et quelle pourrait être la prochaine étape – sur la tâche, pas sur la personne. Les éloges ou critiques qui visent la personne (« Tu es tellement doué ») apportent peu (Hattie & Timperley, 2007) ; les quatre étapes fixes – applaudir, ce qu’on a compris, un compliment précis, un conseil sur la scène – le mettent en pratique, et la générale devant huit personnes est l’espace protégé pour s’y exercer. Qui présente sa propre pièce devant un public et y arrive vit une expérience de réussite, la source la plus forte du sentiment d’efficacité personnelle (Bandura, 1977). Se secouer pour sortir du rôle vient du théâtre et ouvre en même temps l’au revoir : Tuckman et Jensen (1977) décrivent comme dernière phase d’un groupe la dissolution – on dépose les rôles, on reconnaît ce qui a été accompli. Cette séance ouvre la phase, la suivante la termine.",
         "quellen": [
           "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
-          "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94."
+          "Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. Group & Organization Studies, 2(4), 419–427."
         ],
         "achtung": "Jouer devant la classe est un vrai obstacle pour certains : personne n’est envoyé sur scène, et on peut passer en coulisses jusqu’à la dernière minute. Si quelqu’un rit d’une personne et non de la scène, interrompre aussitôt. Les retours suivent les règles, jamais de remarque sur l’apparence, la voix ou l’accent. Les portables personnels restent dans le sac ; la vidéo n’est montrée qu’ici et effacée juste après. Si une scène touche visiblement un jeune du public, il peut détourner le regard ; lui parler après le cours. Si un jeune semble subir de la violence ou du harcèlement : ne pas approfondir, lui parler après le cours, informer le SePAS le jour même.",
         "differenzierung": {
-          "leichter": "Donner les retours avec les débuts de phrase du tableau ; un jeune qui apprend encore la langue ou qui n’aime pas parler devant la classe prend le compliment dans l’îlot parrain et peut le lire ou l’accompagner d’un geste. Pendant l’échange final, un mot suffit, sur la fiche un mot-clé par phrase.",
+          "leichter": "Donner les retours avec les débuts de phrase du tableau ; un jeune qui apprend encore la langue ou qui n’aime pas parler devant la classe prend le compliment dans l’îlot parrain et peut le lire ou l’accompagner d’un geste. Pendant l’échange final, un mot suffit, sur la fiche un mot-clé par phrase. Pour la colonne « Mon moment », un mot suffit : dispute, entraînement, porte.",
           "schwerer": "Après la présentation, rejouer une scène en théâtre-forum : le public crie « Stop ! » et propose ce qu’un personnage témoin pourrait faire autrement ; on ne remplace que les témoins et les amis, jamais la personne attaquée. Ou animer l’échange final."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le chiffre du trac (3 min), dernière répétition (7 min), en scène avec les retours (30 min), se secouer et revenir à soi (5 min), Skills-Pass et mission (5 min). La générale et l’échange final sont supprimés ; les règles du retour sont lues avant la première pièce."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le chiffre du trac (3 min), dernière répétition (7 min), en scène avec les retours (30 min), se secouer et revenir à soi (5 min), Skills-Pass, choisir son moment et mission (5 min). La générale et l’échange final sont supprimés ; les règles du retour sont lues avant la première pièce."
       }
     }
   ],

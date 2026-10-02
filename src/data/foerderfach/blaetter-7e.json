@@ -81,10 +81,24 @@
           "linien": 2
         },
         {
-          "art": "info",
-          "symbol": "hilfe",
-          "titel": "Du entscheidest, was du teilst.",
-          "text": "Aufgabe 1 und dein Plan gehören dir. Du zeigst sie nur, wenn du willst."
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Aus der Forschung",
+              "text": "Neue, die erfuhren, dass der Anfang für fast alle schwer ist und vorbeigeht, fühlten sich noch Jahre später wohler."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "hilfe",
+              "titel": "Du entscheidest, was du teilst.",
+              "text": "Aufgabe 1 und dein Plan gehören dir. Du zeigst sie nur, wenn du willst."
+            }
+          ]
         },
         {
           "art": "info",
@@ -205,10 +219,10 @@
           "Tabelle: Zeile 1 beim Raten der Anlaufstellen, die übrigen Zeilen während der Rallye und bei den Berichten.",
           "Aufgabe 3 allein (6 Min.); vorgelesen wird nur freiwillig."
         ],
-        "hintergrund": "Der Übergang ins Lycée fällt vielen schwer, vor allem wenn die neue Umgebung wenig Halt gibt (Eccles & Roeser, 2011). Hilfe holen sich Jugendliche eher bei Menschen, die sie kennen (Rickwood et al., 2005), und Wenn-dann-Pläne werden häufiger umgesetzt als allgemeine Vorsätze (Gollwitzer, 1999).",
+        "hintergrund": "Anfangsschwierigkeiten als normal und vorübergehend zu rahmen, stärkt Zugehörigkeit und Wohlbefinden nachhaltig (Walton & Cohen, 2011). Wer selbst eine erwachsene Person anspricht, macht eine Bewältigungserfahrung (Bandura, 1977), und Wenn-dann-Pläne werden häufiger umgesetzt als allgemeine Vorsätze (Gollwitzer, 1999).",
         "quellen": [
-          "Eccles, J. S. & Roeser, R. W. (2011). Schools as developmental contexts during adolescence. Journal of Research on Adolescence, 21(1), 225–241.",
-          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Walton, G. M. & Cohen, G. L. (2011). A brief social-belonging intervention improves academic and health outcomes of minority students. Science, 331(6023), 1447–1451.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "material": "Schülerheft"
@@ -271,10 +285,24 @@
           "linien": 2
         },
         {
-          "art": "info",
-          "symbol": "hilfe",
-          "titel": "Tu décides de ce que tu partages.",
-          "text": "L’exercice 1 et ton plan t’appartiennent. Tu ne les montres que si tu le veux."
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Ce que dit la recherche",
+              "text": "Les nouveaux qui ont appris que le début est difficile pour presque tout le monde – et que ça passe – se sentaient encore mieux des années plus tard."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "hilfe",
+              "titel": "Tu décides de ce que tu partages.",
+              "text": "L’exercice 1 et ton plan t’appartiennent. Tu ne les montres que si tu le veux."
+            }
+          ]
         },
         {
           "art": "info",
@@ -397,10 +425,10 @@
           "Tableau : la ligne 1 pendant le jeu des points de contact, les autres pendant le rallye et les comptes rendus.",
           "Exercice 3 seul (6 min) ; on ne lit à voix haute que si on le souhaite."
         ],
-        "hintergrund": "Le passage au lycée est difficile pour beaucoup, surtout quand le nouvel environnement offre peu de repères (Eccles & Roeser, 2011). Les jeunes demandent plus facilement de l’aide à des personnes qu’ils connaissent (Rickwood et al., 2005), et les plans « si… alors » sont plus souvent mis en œuvre que les résolutions générales (Gollwitzer, 1999).",
+        "hintergrund": "Présenter les difficultés du début comme normales et passagères renforce durablement l’appartenance et le bien-être (Walton & Cohen, 2011). Aborder soi-même un adulte est une expérience de réussite (Bandura, 1977), et les plans « si… alors » sont plus souvent mis en œuvre que les résolutions générales (Gollwitzer, 1999).",
         "quellen": [
-          "Eccles, J. S. & Roeser, R. W. (2011). Schools as developmental contexts during adolescence. Journal of Research on Adolescence, 21(1), 225–241.",
-          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Walton, G. M. & Cohen, G. L. (2011). A brief social-belonging intervention improves academic and health outcomes of minority students. Science, 331(6023), 1447–1451.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "material": "Cahier de l’élève"
@@ -711,6 +739,12 @@
           "symbole": [
             "einkreisen"
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Klassen, in denen sich alle sicher fühlen, lernen besser – das zeigen Studien mit über 500.000 Schülerinnen und Schülern."
         }
       ],
       "lehrer": {
@@ -720,10 +754,11 @@
           "Schritt 6 (25 Min.): Nachfragen vormachen, Regeln lesen, Runde mit Aufgabe 2; danach Aufgabe 3: zwei Felder einkreisen.",
           "Schritt 7 (10 Min.): die eingekreisten Felder in der Tischgruppe nennen, Gemeinsamkeiten für das Klassenplakat sammeln."
         ],
-        "hintergrund": "Zu Beginn prüfen die Mitglieder einer Gruppe vor allem, ob sie dazugehören und wie sicher der Rahmen ist (Tuckman, 1965). Kleine, ungefährliche Fragen in Bewegung senken die Hemmschwelle, weil niemand vor allen sprechen muss. Gemeinsamkeiten zu entdecken, stärkt die Verbundenheit, eines der psychologischen Grundbedürfnisse (Deci & Ryan, 2000). Die Nachfrage-Regel macht aus dem Unterschriftensammeln ein Gespräch.",
+        "hintergrund": "Zu Beginn prüfen die Mitglieder einer Gruppe vor allem, ob sie dazugehören und wie sicher der Rahmen ist (Tuckman, 1965). Kleine, ungefährliche Fragen in Bewegung senken die Hemmschwelle, weil niemand vor allen sprechen muss. Gemeinsamkeiten zu entdecken, stärkt die Verbundenheit, eines der psychologischen Grundbedürfnisse (Deci & Ryan, 2000); ein sicheres Klassenklima verbessert auch das Lernen (Cipriano et al., 2023). Die Nachfrage-Regel macht aus dem Unterschriftensammeln ein Gespräch.",
         "quellen": [
           "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
-          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Cipriano, C., Strambler, M. J., Naples, L. H., Ha, C., Kirk, M., Wood, M. et al. (2023). The state of evidence for social and emotional learning: A contemporary meta-analysis of universal school-based SEL interventions. Child Development, 94(5), 1181–1204."
         ],
         "material": "Schülerheft, Stifte"
       }
@@ -840,6 +875,12 @@
           "symbole": [
             "einkreisen"
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Les classes où tout le monde se sent en sécurité apprennent mieux – des études portant sur plus de 500 000 élèves le montrent."
         }
       ],
       "lehrer": {
@@ -849,10 +890,11 @@
           "Étape 6 (25 min) : montrer la relance, lire les règles, tour avec l’exercice 2 ; puis exercice 3 : entourer deux cases.",
           "Étape 7 (10 min) : citer les cases entourées en îlot, rassembler les points communs pour l’affiche de la classe."
         ],
-        "hintergrund": "Au début, les membres d’un groupe vérifient surtout s’ils en font partie et si le cadre est sûr (Tuckman, 1965). De petites questions sans risque, posées en bougeant, abaissent le seuil, car personne ne doit parler devant tout le monde. Découvrir des points communs renforce le sentiment d’appartenance, l’un des besoins psychologiques fondamentaux (Deci & Ryan, 2000). La règle de la relance transforme la collecte de signatures en conversation.",
+        "hintergrund": "Au début, les membres d’un groupe vérifient surtout s’ils en font partie et si le cadre est sûr (Tuckman, 1965). De petites questions sans risque, posées en bougeant, abaissent le seuil, car personne ne doit parler devant tout le monde. Découvrir des points communs renforce le sentiment d’appartenance, l’un des besoins psychologiques fondamentaux (Deci & Ryan, 2000) ; un climat de classe sûr améliore aussi les apprentissages (Cipriano et al., 2023). La règle de la relance transforme la collecte de signatures en conversation.",
         "quellen": [
           "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
-          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Cipriano, C., Strambler, M. J., Naples, L. H., Ha, C., Kirk, M., Wood, M. et al. (2023). The state of evidence for social and emotional learning: A contemporary meta-analysis of universal school-based SEL interventions. Child Development, 94(5), 1181–1204."
         ],
         "material": "Cahier de l’élève, stylos"
       }
@@ -2052,7 +2094,7 @@
         {
           "art": "aufgabe",
           "text": "Plane einen kleinen Schritt, der einen Tank diese Woche etwas auffüllt. Schreib einen Wenn-dann-Plan.",
-          "hinweis": "Klein heißt: in zehn Minuten machbar, ohne Geld – und du kannst ihn selbst anfangen.",
+          "hinweis": "Klein heißt: in zehn Minuten machbar, ohne Geld – und du kannst ihn selbst anfangen. Die Wenn-Zeile ist dein Moment: Schreib sie auch ins Heft bei den Wochen-Missionen.",
           "symbole": [
             "schreiben"
           ]
@@ -2120,7 +2162,7 @@
         "ziel": "Die Jugendlichen schätzen ein, wie voll ihre sechs Tanks sind, finden den leersten und planen einen kleinen Schritt. In Stunde 17 und 35 kommen neue Striche dazu.",
         "ablauf": [
           "Stunde 6, Schritt 3: die Geschichte vorlesen und den Kasten „Sechs Tanks“ mit dem Tafelbild verbinden; die Nummern gelten auch im Spiel.",
-          "Stunde 6, Schritt 6 (9 Min.): blaue Striche, den leersten Tank einkreisen, zwei Sätze; Schritt 7: Wenn-dann-Plan.",
+          "Stunde 6, Schritt 6 (9 Min.): blaue Striche, den leersten Tank einkreisen, zwei Sätze; Schritt 7: Wenn-dann-Plan – die Wenn-Zeile ist der Moment für die Wochen-Mission.",
           "Stunde 17: nach dem Öffnen des Glases grüne Striche und Aufgabe 3; Stunde 35: rote Striche und Aufgabe 4.",
           "Das Blatt bleibt im Heft und wird weder eingesammelt noch vorgelesen."
         ],
@@ -2195,7 +2237,7 @@
         {
           "art": "aufgabe",
           "text": "Prévois un petit pas qui remplit un peu un réservoir cette semaine. Écris un plan « si… alors ».",
-          "hinweis": "Petit veut dire : faisable en dix minutes, sans argent – et tu peux le commencer toi-même.",
+          "hinweis": "Petit veut dire : faisable en dix minutes, sans argent – et tu peux le commencer toi-même. La ligne « si » est ton moment : recopie-la aussi dans le cahier, aux missions de la semaine.",
           "symbole": [
             "schreiben"
           ]
@@ -2265,7 +2307,7 @@
         "ziel": "Les jeunes évaluent le niveau de leurs six réservoirs, repèrent le plus vide et prévoient un petit pas. Aux séances 17 et 35, de nouveaux traits s’ajoutent.",
         "ablauf": [
           "Séance 6, étape 3 : lire l’histoire et relier l’encadré « Six réservoirs » au tableau ; les numéros servent aussi pour le jeu.",
-          "Séance 6, étape 6 (9 min) : traits bleus, entourer le réservoir le plus vide, deux phrases ; étape 7 : plan « si… alors ».",
+          "Séance 6, étape 6 (9 min) : traits bleus, entourer le réservoir le plus vide, deux phrases ; étape 7 : plan « si… alors » – la ligne « si » est le moment de la mission de la semaine.",
           "Séance 17 : après l’ouverture du bocal, traits verts et exercice 3 ; séance 35 : traits rouges et exercice 4.",
           "La fiche reste dans le cahier ; elle n’est ni ramassée ni lue à voix haute."
         ],
@@ -2994,9 +3036,15 @@
             "Ich glaube, die anderen sehen bei mir: …",
             "Gefreut hat mich …",
             "Meine Stärke für diese Woche: …",
-            "Ich setze sie ein, wenn …"
+            "Mein Moment – ich setze sie ein, wenn …"
           ],
           "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Wer eine eigene Stärke eine Woche lang auf neue Art einsetzt, fühlt sich noch Monate später besser. Genau das probierst du mit deiner Wochen-Mission aus."
         },
         {
           "art": "aufgabe",
@@ -3048,7 +3096,7 @@
         "ziel": "Die Jugendlichen halten in einem Baum fest, was sie hält, was sie können, was noch wächst und worauf sie stolz sind, und tragen Stärken ein, die ihnen die Klasse zurückmeldet. In Stunde 30 und 35 wächst der Baum weiter.",
         "ablauf": [
           "Stunde 8, Schritt 4 (15 Min.): Baum in den Rahmen zeichnen, vier Teile füllen; Platz am Stamm und in der Krone lassen.",
-          "Schritt 6 und 7: Vermutung aufschreiben, Karten lesen, Stärken als Blätter eintragen, in Aufgabe 2 eine Stärke für die Woche planen.",
+          "Schritt 6 und 7: Vermutung aufschreiben, Karten lesen, Stärken als Blätter eintragen, in Aufgabe 2 eine Stärke und den Moment für die Woche planen; der Kasten „Aus der Forschung“ fasst Seligman et al. (2005) zusammen.",
           "Stunde 30: neuer hilfreicher Satz für den Stamm (Aufgabe 3); Stunde 35: neue Früchte (Aufgabe 4).",
           "Der Baum bleibt im Heft; niemand muss ihn zeigen."
         ],
@@ -3166,9 +3214,15 @@
             "Je crois que les autres voient chez moi : …",
             "Ce qui m’a fait plaisir, c’est…",
             "Ma force pour cette semaine : …",
-            "Je l’utilise quand…"
+            "Mon moment – je l’utilise quand…"
           ],
           "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Qui utilise une de ses forces d’une nouvelle façon pendant une semaine se sent encore mieux des mois plus tard. C’est exactement ce que tu essaies avec ta mission de la semaine."
         },
         {
           "art": "aufgabe",
@@ -3220,7 +3274,7 @@
         "ziel": "Les jeunes notent dans un arbre ce qui les porte, ce qu’ils savent faire, ce qui grandit encore et leurs fiertés, et y ajoutent les forces que la classe leur renvoie. Aux séances 30 et 35, l’arbre continue de grandir.",
         "ablauf": [
           "Séance 8, étape 4 (15 min) : dessiner l’arbre dans le cadre, remplir quatre parties ; laisser de la place sur le tronc et dans la couronne.",
-          "Étapes 6 et 7 : noter sa supposition, lire les cartes, écrire les forces comme feuilles, prévoir à l’exercice 2 une force pour la semaine.",
+          "Étapes 6 et 7 : noter sa supposition, lire les cartes, écrire les forces comme feuilles, prévoir à l’exercice 2 une force et son moment pour la semaine ; l’encadré « Ce que dit la recherche » résume Seligman et al. (2005).",
           "Séance 30 : nouvelle phrase qui aide, pour le tronc (exercice 3) ; séance 35 : nouveaux fruits (exercice 4).",
           "L’arbre reste dans le cahier ; personne n’est obligé de le montrer."
         ],
@@ -3559,9 +3613,15 @@
           "text": "Es gibt angenehme und unangenehme Gefühle – aber keine falschen. Was du dann tust, entscheidest du: Wut darf sein. Ob du zuschlägst oder klar „Stopp“ sagst, macht den Unterschied."
         },
         {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Schulklassen, die ein Jahr lang Gefühlswörter übten, hatten am Ende bessere Noten – und gingen besser mit sich und anderen um."
+        },
+        {
           "art": "aufgabe",
-          "text": "Deine Wochen-Mission: Wenn ein Gefühl laut wird – was wollte es dir sagen? Eine Zeile reicht.",
-          "hinweis": "Zum Beispiel nach der Farbsuche. Keine Namen, nur Stichworte.",
+          "text": "Deine Wochen-Mission: Farbsuche in deinem Moment. Welches Gefühl war da – und was wollte es dir sagen? Eine Zeile reicht.",
+          "hinweis": "Deinen Moment hast du in der Stunde gewählt – er steht bei den Wochen-Missionen. Keine Namen, nur Stichworte.",
           "symbole": [
             "schreiben"
           ]
@@ -3608,13 +3668,14 @@
           "Einheit 9, Schritt 3: nach dem Sortieren in den Tischgruppen Aufgabe 1 ausfüllen – je Grundgefühl ein eigenes Wort (3 Min.).",
           "Schritt 6: Aufgabe 2 allein, vergleichen und am Botschaften-Plakat prüfen (5 Min.), dann Aufgabe 3 still (4 Min.).",
           "Aufgabe 3 und 4 werden weder eingesammelt noch vorgelesen, außer jemand möchte es.",
-          "Aufgabe 4 begleitet die Wochen-Mission; die Brücke von Einheit 10 fragt kurz danach."
+          "Aufgabe 4 begleitet die Wochen-Mission mit dem in der Stunde gewählten Moment; die Brücke von Einheit 10 fragt kurz danach.",
+          "Der Kasten „Aus der Forschung“ fasst den Befund von Brackett et al. (2012) zusammen; der Beleg steht im Hintergrund der Einheit."
         ],
-        "hintergrund": "Ekman (1992) beschreibt Grundgefühle, deren Ausdruck in vielen Kulturen erkannt wird; Plutchik (2001) ordnet jedem eine Aufgabe zu – Angst schützt, Wut räumt Hindernisse aus dem Weg, Traurigkeit sucht verlorene Nähe. Angenehme Gefühle erweitern Denken und Handeln (Fredrickson, 2001).",
+        "hintergrund": "Ekman (1992) beschreibt Grundgefühle, deren Ausdruck in vielen Kulturen erkannt wird; Plutchik (2001) ordnet jedem eine Aufgabe zu – Angst schützt, Wut räumt Hindernisse aus dem Weg, Traurigkeit sucht verlorene Nähe. Klassen, die ein Jahr lang mit Gefühlswörtern arbeiteten, hatten bessere Noten und mehr soziale Kompetenz (Brackett et al., 2012).",
         "quellen": [
           "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
           "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
-          "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226."
+          "Brackett, M. A., Rivers, S. E., Reyes, M. R. & Salovey, P. (2012). Enhancing academic performance and social and emotional competence with the RULER feeling words curriculum. Learning and Individual Differences, 22(2), 218–224."
         ],
         "material": "Sortierbögen der Tischgruppen, Botschaften-Plakat"
       }
@@ -3735,9 +3796,15 @@
           "text": "Il y a des émotions agréables et désagréables – mais pas de fausses. Ce que tu en fais, c’est toi qui décides : la colère a le droit d’exister. Frapper ou dire clairement « stop », c’est là que se fait la différence."
         },
         {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Des classes qui ont travaillé un an avec des mots d’émotions ont eu de meilleures notes à la fin – et se débrouillaient mieux avec elles-mêmes et avec les autres."
+        },
+        {
           "art": "aufgabe",
-          "text": "Ta mission de la semaine : quand une émotion devient forte, qu’est-ce qu’elle voulait te dire ? Une ligne suffit.",
-          "hinweis": "Par exemple après la chasse aux couleurs. Pas de noms, juste des mots-clés.",
+          "text": "Ta mission de la semaine : la chasse aux couleurs dans ton moment. Quelle émotion était là – et que voulait-elle te dire ? Une ligne suffit.",
+          "hinweis": "Tu as choisi ton moment pendant le cours – il est noté avec les missions de la semaine. Pas de noms, juste des mots-clés.",
           "symbole": [
             "schreiben"
           ]
@@ -3784,13 +3851,14 @@
           "Séance 9, étape 3 : après le tri en îlots, remplir l’exercice 1 – un mot à soi par émotion de base (3 min).",
           "Étape 6 : exercice 2 seul, comparer et vérifier sur l’affiche des messages (5 min), puis exercice 3 en silence (4 min).",
           "Les exercices 3 et 4 ne sont ni ramassés ni lus à voix haute, sauf si un jeune le souhaite.",
-          "L’exercice 4 accompagne la mission de la semaine ; le lien de la séance 10 y revient brièvement."
+          "L’exercice 4 accompagne la mission de la semaine avec le moment choisi pendant le cours ; le lien de la séance 10 y revient brièvement.",
+          "L’encadré « Ce que dit la recherche » résume le résultat de Brackett et al. (2012) ; la référence figure dans le fond de la séance."
         ],
-        "hintergrund": "Ekman (1992) décrit des émotions de base dont l’expression est reconnue dans de nombreuses cultures ; Plutchik (2001) attribue à chacune une fonction – la peur protège, la colère écarte les obstacles, la tristesse cherche la proximité perdue. Les émotions agréables élargissent la pensée et l’action (Fredrickson, 2001).",
+        "hintergrund": "Ekman (1992) décrit des émotions de base dont l’expression est reconnue dans de nombreuses cultures ; Plutchik (2001) attribue à chacune une fonction – la peur protège, la colère écarte les obstacles, la tristesse cherche la proximité perdue. Des classes qui ont travaillé un an avec des mots d’émotions ont eu de meilleures notes et plus de compétences sociales (Brackett et al., 2012).",
         "quellen": [
           "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
           "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
-          "Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: The broaden-and-build theory of positive emotions. American Psychologist, 56(3), 218–226."
+          "Brackett, M. A., Rivers, S. E., Reyes, M. R. & Salovey, P. (2012). Enhancing academic performance and social and emotional competence with the RULER feeling words curriculum. Learning and Individual Differences, 22(2), 218–224."
         ],
         "material": "Feuilles de tri des îlots, affiche des messages"
       }
@@ -4137,7 +4205,7 @@
       "Kummer",
       "Förderfach"
     ],
-    "bild": "icon:device-tv",
+    "bild": "icon:brain",
     "kurs": [
       "ff7-e10"
     ],
@@ -4147,11 +4215,11 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Stell dir vor, in deinem Kopf gibt es eine Zentrale mit einem Steuerpult. Dort arbeiten Freude, Kummer, Angst, Wut und Ekel. Wer gerade am Pult steht, bestimmt mit, was du sagst und tust."
+          "text": "Stell dir vor, in deinem Kopf gibt es eine Steuerzentrale mit einem Steuerpult. Dort arbeiten Freude, Kummer, Angst, Wut und Ekel. Wer gerade am Pult steht, bestimmt mit, was du sagst und tust. Bei Jana, die gerade umgezogen ist, kannst du zuschauen."
         },
         {
           "art": "aufgabe",
-          "text": "Wer steht am Pult? Kreuze nach jeder Szene an.",
+          "text": "Wer steht am Pult? Kreuze nach jedem Standbild an.",
           "hinweis": "Mehr als ein Kreuz pro Szene ist erlaubt.",
           "symbole": [
             "ankreuzen"
@@ -4160,10 +4228,10 @@
         {
           "art": "einschaetzung",
           "items": [
-            "Szene 1 · Die Zentrale",
-            "Szene 2 · Der erste Schultag",
-            "Szene 3 · Das Abendessen",
-            "Szene 4 · Bing Bong"
+            "Szene 1 · Der Umzugstag",
+            "Szene 2 · Der erste Tag im Lycée",
+            "Szene 3 · Der Abend",
+            "Szene 4 · Auf der Bank"
           ],
           "optionen": [
             "Freude",
@@ -4175,7 +4243,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Wähle zwei unangenehme Gefühle aus den Szenen. Was machen sie – und wozu sind sie für Riley gut?",
+          "text": "Wähle zwei unangenehme Gefühle aus den Szenen. Was machen sie – und wozu sind sie für Jana gut?",
           "symbole": [
             "partner",
             "schreiben"
@@ -4196,7 +4264,7 @@
           "zeilen": 2,
           "beispiel": [
             "Angst",
-            "Sie passt auf, dass Riley nicht über das Kabel stolpert.",
+            "Sie lässt Jana rufen, bevor das Fahrrad vom Umzugswagen fällt.",
             "Sie schützt vor Gefahren."
           ]
         },
@@ -4228,21 +4296,39 @@
           "symbol": "hilfe",
           "titel": "Du entscheidest, was du teilst.",
           "text": "Aufgabe 3 gehört dir. Du liest nur vor, wenn du willst."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Gefühl benennen – dein Skill",
+          "punkte": [
+            "Stopp: einmal lang ausatmen.",
+            "Sag im Kopf: Gerade steht … am Pult – mit einem genauen Wort vom Gefühlsrad.",
+            "Frag dich: Was will mir das Gefühl sagen – und was brauche ich jetzt?"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Ein Gefühl beim Namen zu nennen, macht es im Gehirn messbar leiser. Das Gefühl bleibt – aber es lenkt nicht mehr allein."
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen erkennen in Szenen oder Standbildern, welches Gefühl am Steuer ist, begründen, wozu auch unangenehme Gefühle gut sind, und übertragen das Bild vom Steuerpult auf sich.",
+        "ziel": "Die Jugendlichen erkennen in Standbildern, welches Gefühl am Steuer ist, begründen, wozu auch unangenehme Gefühle gut sind, und übertragen das Bild vom Steuerpult auf sich.",
         "ablauf": [
-          "Einheit 10, Schritte 3, 4 und 6: nach jeder Szene – oder jedem Standbild – in Aufgabe 1 ankreuzen.",
+          "Einheit 10, Schritte 3, 4 und 6: nach jedem Standbild in Aufgabe 1 ankreuzen.",
           "Schritt 4: nach dem Zurückspulen Aufgabe 2 zu zweit (5 Min.).",
-          "Schritt 7: nach der Aufstellung Aufgabe 3 allein (5 Min.); Stichworte oder eine Zeichnung reichen, vorgelesen wird nur freiwillig."
+          "Schritt 7: nach der Aufstellung Aufgabe 3 allein (5 Min.); Stichworte oder eine Zeichnung reichen, vorgelesen wird nur freiwillig.",
+          "Schritt 8: der Skill „Gefühl benennen“ steht im Kasten; der Kasten „Aus der Forschung“ fasst den Befund von Lieberman et al. (2007) zusammen."
         ],
-        "hintergrund": "Pixar ließ sich für den Film von den Emotionsforschern Keltner und Ekman beraten: Gefühle ordnen das Denken, und Kummer zeigt anderen, dass jemand Trost braucht (Keltner & Ekman, 2015). Die fünf Figuren entsprechen Grundgefühlen nach Ekman (1992). Über Rileys Gefühle zu sprechen, fällt leichter als über die eigenen.",
+        "hintergrund": "Gefühle ordnen das Denken und regeln das Zusammenleben; Kummer zeigt anderen, dass jemand Trost braucht (Keltner & Ekman, 2015). Die fünf Figuren entsprechen Grundgefühlen nach Ekman (1992). Benannten Erwachsene ein Gefühl, reagierte die Amygdala schwächer (Lieberman et al., 2007). Über Janas Gefühle zu sprechen, fällt leichter als über die eigenen.",
         "quellen": [
           "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
-          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200."
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428."
         ],
-        "material": "Filmausschnitte oder Szenenkarten, Gefühls-Schilder"
+        "material": "Szenenkarten und Schilder (Vorlage), ein Tisch als Steuerpult"
       }
     },
     "fr": {
@@ -4251,11 +4337,11 @@
       "bausteine": [
         {
           "art": "text",
-          "text": "Imagine que dans ta tête, il y a un quartier général avec une console. Joie, Tristesse, Peur, Colère et Dégoût y travaillent. Celle qui est aux commandes décide en partie de ce que tu dis et de ce que tu fais."
+          "text": "Imagine que dans ta tête, il y a une salle de contrôle avec une console. Joie, Tristesse, Peur, Colère et Dégoût y travaillent. Celle qui est aux commandes décide en partie de ce que tu dis et de ce que tu fais. Chez Jana, qui vient de déménager, tu peux regarder ce qui se passe."
         },
         {
           "art": "aufgabe",
-          "text": "Qui est aux commandes ? Coche après chaque scène.",
+          "text": "Qui est aux commandes ? Coche après chaque image figée.",
           "hinweis": "Tu peux faire plus d’une croix par scène.",
           "symbole": [
             "ankreuzen"
@@ -4264,10 +4350,10 @@
         {
           "art": "einschaetzung",
           "items": [
-            "Scène 1 · Le Quartier Général",
-            "Scène 2 · Le premier jour d’école",
-            "Scène 3 · Le dîner",
-            "Scène 4 · Bing Bong"
+            "Scène 1 · Le jour du déménagement",
+            "Scène 2 · Le premier jour au lycée",
+            "Scène 3 · Le soir",
+            "Scène 4 · Sur le banc"
           ],
           "optionen": [
             "Joie",
@@ -4279,7 +4365,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Choisis deux émotions désagréables des scènes. Que font-elles – et à quoi servent-elles pour Riley ?",
+          "text": "Choisis deux émotions désagréables des scènes. Que font-elles – et à quoi servent-elles pour Jana ?",
           "symbole": [
             "partner",
             "schreiben"
@@ -4300,7 +4386,7 @@
           "zeilen": 2,
           "beispiel": [
             "Peur",
-            "Elle veille à ce que Riley ne trébuche pas sur le câble.",
+            "Elle fait crier Jana avant que le vélo tombe du camion.",
             "Elle protège des dangers."
           ]
         },
@@ -4332,21 +4418,39 @@
           "symbol": "hilfe",
           "titel": "Tu décides de ce que tu partages.",
           "text": "L’exercice 3 t’appartient. Tu ne le lis à voix haute que si tu le veux."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Nommer l’émotion – ton skill",
+          "punkte": [
+            "Stop : expire une fois, longuement.",
+            "Dis-toi dans ta tête : en ce moment, c’est … qui est aux commandes – avec un mot précis de la roue.",
+            "Demande-toi : que veut me dire cette émotion – et de quoi ai-je besoin maintenant ?"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Nommer une émotion la rend mesurablement plus calme dans le cerveau. L’émotion reste – mais elle ne conduit plus toute seule."
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes reconnaissent dans des scènes ou des images figées l’émotion aux commandes, expliquent à quoi servent aussi les émotions désagréables et appliquent l’image de la console à eux-mêmes.",
+        "ziel": "Les jeunes reconnaissent dans des images figées l’émotion aux commandes, expliquent à quoi servent aussi les émotions désagréables et appliquent l’image de la console à eux-mêmes.",
         "ablauf": [
-          "Séance 10, étapes 3, 4 et 6 : cocher l’exercice 1 après chaque scène – ou chaque image figée.",
+          "Séance 10, étapes 3, 4 et 6 : cocher l’exercice 1 après chaque image figée.",
           "Étape 4 : après le retour en arrière, exercice 2 à deux (5 min).",
-          "Étape 7 : après le placement, exercice 3 seul (5 min) ; des mots-clés ou un dessin suffisent, lecture à voix haute seulement si on le souhaite."
+          "Étape 7 : après le placement, exercice 3 seul (5 min) ; des mots-clés ou un dessin suffisent, lecture à voix haute seulement si on le souhaite.",
+          "Étape 8 : le skill « nommer l’émotion » figure dans l’encadré ; l’encadré « Ce que dit la recherche » résume le résultat de Lieberman et al. (2007)."
         ],
-        "hintergrund": "Pour le film, Pixar s’est fait conseiller par les chercheurs en émotions Keltner et Ekman : les émotions organisent la pensée, et la tristesse montre aux autres qu’on a besoin de réconfort (Keltner & Ekman, 2015). Les cinq personnages correspondent à des émotions de base selon Ekman (1992). Parler des émotions de Riley est plus facile que parler des siennes.",
+        "hintergrund": "Les émotions organisent la pensée et règlent la vie en commun ; la tristesse montre aux autres qu’on a besoin de réconfort (Keltner & Ekman, 2015). Les cinq personnages correspondent à des émotions de base selon Ekman (1992). Quand des adultes nommaient une émotion, l’amygdale réagissait moins fort (Lieberman et al., 2007). Parler des émotions de Jana est plus facile que parler des siennes.",
         "quellen": [
           "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
-          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200."
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428."
         ],
-        "material": "Extraits du film ou cartes scènes, pancartes des émotions"
+        "material": "Cartes scènes et pancartes (modèle), une table comme console"
       }
     }
   },
@@ -4376,7 +4480,7 @@
     ],
     "de": {
       "titel": "Das Steuerpult: Schilder und Szenen",
-      "untertitel": "Kopiervorlage – Schilder für die Standbilder, Szenenkarten für die Stunde ohne Film",
+      "untertitel": "Kopiervorlage – Schilder für die Standbilder und die vier Szenenkarten von Janas Geschichte",
       "bausteine": [
         {
           "art": "info",
@@ -4384,7 +4488,7 @@
           "titel": "So werden die Karten gebraucht",
           "punkte": [
             "Die sechs Schilder auf festes Papier kopieren und ausschneiden; die Szenenkarten (Seite 2) einmal kopieren.",
-            "Ohne Film: die Szenenkarte bis zum Stopp vorlesen; die Klasse entscheidet, wer ans Pult muss, Freiwillige bauen das Standbild um einen Tisch. Dann weiterlesen.",
+            "Die Szenenkarte bis zum Stopp vorlesen; die Klasse entscheidet, wer ans Pult muss, Freiwillige bauen das Standbild um einen Tisch. Dann weiterlesen.",
             "Keine Berührung, keine echten Personen aus der Klasse. Nach dem Standbild Schild ablegen und den eigenen Namen sagen."
           ]
         },
@@ -4415,7 +4519,7 @@
             },
             {
               "bild": "figur:jana",
-              "titel": "Riley"
+              "titel": "Jana"
             }
           ]
         },
@@ -4424,38 +4528,38 @@
         },
         {
           "art": "text",
-          "text": "Seite 2: Szenenkarten zum Vorlesen. Bei „Stopp“ entscheidet die Klasse, wer ans Pult muss; was in Klammern steht, ist die Lösung aus dem Film und wird nicht vorgelesen.",
+          "text": "Szenenkarten zum Vorlesen. Bei „Stopp“ entscheidet die Klasse, wer ans Pult muss; die Klammer ist die Auflösung und wird erst nach dem Standbild vorgelesen.",
           "klein": true
         },
         {
           "art": "geschichte",
-          "titel": "Szene 1 · Die Zentrale",
-          "text": "Riley wird geboren. In ihrem Kopf steht ein Steuerpult. Als Erste ist Freude da – Riley lacht; kurz danach kommt Kummer – Riley weint. Bald arbeiten fünf Gefühle am Pult. Riley ist jetzt ein Kleinkind; vor ihr liegt ein Kabel auf dem Boden.\nStopp – wer muss ans Pult? Standbild A (im Film: Angst – Riley weicht dem Kabel aus).\nWeiter: Ekel sorgt dafür, dass Riley keinen Brokkoli isst. Dann sagt der Vater: Ohne Abendessen gibt es keinen Nachtisch.\nStopp – wer übernimmt jetzt? Standbild B (im Film: Wut – Riley tobt am Esstisch)."
+          "titel": "Szene 1 · Der Umzugstag",
+          "text": "Jana ist zwölf. In ihrem Kopf gibt es eine Steuerzentrale mit einem Steuerpult; dort arbeiten Freude, Kummer, Angst, Wut und Ekel. Heute zieht Jana mit ihrer Familie in eine andere Stadt. Morgens steht Freude am Pult: Das neue Zimmer hat ein Fenster zum Garten. Dann fährt der Umzugswagen los – und Jana sieht, dass ihr Fahrrad hinten nur lose angelehnt ist.\nStopp – wer muss ans Pult? Standbild A (Angst – Jana ruft und winkt, der Fahrer hält an und zurrt das Rad fest).\nWeiter: Ekel sorgt dafür, dass Jana den vergessenen Joghurt im neuen Kühlschrank nicht anrührt. Dann packt ihr kleiner Bruder ungefragt ihre Kiste aus und zerreißt ihr Poster.\nStopp – wer übernimmt jetzt? Standbild B (Wut – Jana sagt laut: Stopp, das ist meine Kiste)."
         },
         {
           "art": "geschichte",
-          "titel": "Szene 2 · Der erste Schultag",
-          "text": "Riley ist elf und mit ihren Eltern in eine neue Stadt gezogen. Am Morgen des ersten Schultags malt Freude einen Kreis auf den Boden der Zentrale: Kummer soll darin bleiben. In der neuen Klasse soll Riley sich vorstellen.\nStopp – wer ist am Pult, wer im Kreis? Standbild A (im Film: Freude am Pult, Kummer im Kreis – Riley lächelt).\nWeiter: Riley erzählt von ihrer alten Heimat und vom Eishockey. Da verlässt Kummer den Kreis und berührt eine schöne Erinnerung.\nStopp – was passiert jetzt mit Riley? Standbild B (im Film: Kummer am Pult – Riley weint vor der ganzen Klasse)."
+          "titel": "Szene 2 · Der erste Tag im Lycée",
+          "text": "Montag, erster Tag im neuen Lycée. In der Steuerzentrale sagt Freude: Heute wird gelacht – Kummer, du setzt dich in die hinterste Ecke. Die Régentin bittet Jana, sich kurz vorzustellen.\nStopp – wer ist am Pult, wer sitzt in der Ecke? Standbild A (Freude am Pult, Kummer in der Ecke – Jana lächelt und erzählt vom Handball).\nWeiter: In der Pause schreibt Léa, Janas beste Freundin aus der alten Stadt: Ohne dich ist es komisch hier. Da steht Kummer auf und geht zum Pult.\nStopp – was passiert jetzt mit Jana? Standbild B (Kummer am Pult – Jana sitzt allein auf der Bank im Schulhof, die Augen werden nass)."
         },
         {
           "art": "geschichte",
-          "titel": "Szene 3 · Das Abendessen",
-          "text": "Freude und Kummer sind aus Versehen aus der Zentrale geflogen und irren weit weg herum. Am Pult stehen nur noch Angst, Wut und Ekel. Beim Abendessen fragt die Mutter, wie der erste Schultag war. Riley verdreht die Augen und antwortet nur kurz. Der Vater wird streng.\nStopp – wer übernimmt jetzt? Ein Standbild (im Film: Wut – Riley schreit ihren Vater an).\nWeiter: Auch im Kopf des Vaters steht jetzt Wut am Pult. Er schickt Riley in ihr Zimmer."
+          "titel": "Szene 3 · Der Abend",
+          "text": "Abends will Jana Léa per Videoanruf ihr neues Zimmer zeigen. Aber das WLAN ist noch nicht angeschlossen, und das Datenvolumen ist aufgebraucht. Ihre Mutter sagt: Erst die Kartons auspacken, dann das Handy. In der Steuerzentrale drängt sich Wut nach vorn.\nStopp – wer übernimmt jetzt? Ein Standbild (Wut – Jana ruft: Ich hasse diese Wohnung, und knallt die Tür).\nWeiter: Auch im Kopf der Mutter steht jetzt Wut am Pult. Sie sagt: Dann bleibt das Handy heute ganz aus."
         },
         {
           "art": "geschichte",
-          "titel": "Szene 4 · Bing Bong",
-          "text": "Freude und Kummer suchen den Weg zurück. Unterwegs treffen sie Bing Bong, Rileys Fantasiefreund aus Kindertagen. Plötzlich ist seine Rakete weg, mit der er und Riley zum Mond fliegen wollten – für immer. Bing Bong setzt sich hin und weint. Freude will ihn mit Grimassen und Witzen aufheitern. Es hilft nicht.\nStopp – Standbild A: Freude hüpft vor Bing Bong herum, er bleibt traurig. Was könnte Kummer tun?\nWeiter: Kummer setzt sich neben ihn und sagt: Sie haben dir etwas weggenommen, das du geliebt hast. Bing Bong weint sich aus, dann steht er auf und geht weiter.\nStandbild B: Kummer sitzt neben ihm und hört zu; er hebt den Kopf."
+          "titel": "Szene 4 · Auf der Bank",
+          "text": "Am nächsten Morgen sitzt Jana vor der ersten Stunde wieder allein auf der Bank; Kummer steht am Pult, und man sieht es ihr an. Mathis aus ihrer Klasse kommt vorbei: Hey, nicht so ein Gesicht – hier ist es doch viel cooler als da, wo du herkommst. Er zeigt ihr ein Video und macht Witze. Jana lächelt kurz, aber es hilft nicht.\nStopp – Standbild A: Mathis macht Faxen, Jana bleibt traurig. Was könnte jemand anders machen?\nWeiter: Sofia setzt sich neben Jana und fragt: Fehlen dir deine Freunde? Jana nickt und erzählt von Léa; Sofia hört zu. Jana weint ein bisschen – und fühlt sich dann leichter. Beim Klingeln gehen die beiden zusammen rein.\nStandbild B: Sofia sitzt neben Jana und hört zu; Jana hebt den Kopf."
         }
       ],
       "lehrer": {
-        "ziel": "Mit Schildern und Szenenkarten lässt sich die Stunde vollständig ohne Film halten: Die Klasse baut die Zentrale in Standbildern nach und erkennt, welches Gefühl am Steuer ist.",
+        "ziel": "Mit Schildern und Szenenkarten erzählt die Klasse Janas Geschichte selbst: Sie baut die Steuerzentrale in Standbildern nach und erkennt, welches Gefühl am Steuer ist – ohne Film, ohne Technik.",
         "ablauf": [
           "Schilder auf festes Papier kopieren und ausschneiden, Szenenkarten einmal kopieren.",
           "Einheit 10, Schritte 3, 4 und 6: Szenenkarte bis zum Stopp vorlesen; die Klasse entscheidet, wer ans Pult muss; Standbild bauen, weiterlesen, dann die Frage aus Schritt 3.",
-          "Bing Bong spielt in Szene 4 eine freiwillige Person ohne Schild."
+          "Die Mutter (Szene 3), Mathis und Sofia (Szene 4) spielen Freiwillige ohne Schild."
         ],
-        "hintergrund": "Standbilder schaffen wie Filmszenen Abstand: Die Jugendlichen zeigen Gefühle einer erfundenen Figur, nicht ihre eigenen. Die fünf Figuren entsprechen Grundgefühlen nach Ekman (1992); dass Kummer anderen zeigt, dass jemand Trost braucht, betonen Keltner & Ekman (2015).",
+        "hintergrund": "Standbilder schaffen Abstand: Die Jugendlichen zeigen Gefühle einer erfundenen Figur, nicht ihre eigenen. Die fünf Figuren entsprechen Grundgefühlen nach Ekman (1992); dass Kummer anderen zeigt, dass jemand Trost braucht, betonen Keltner & Ekman (2015).",
         "quellen": [
           "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
           "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times."
@@ -4465,7 +4569,7 @@
     },
     "fr": {
       "titel": "La console : pancartes et scènes",
-      "untertitel": "Modèle à photocopier – pancartes pour les images figées, cartes scènes pour la séance sans film",
+      "untertitel": "Modèle à photocopier – pancartes pour les images figées et les quatre cartes scènes de l’histoire de Jana",
       "bausteine": [
         {
           "art": "info",
@@ -4473,7 +4577,7 @@
           "titel": "Comment utiliser les cartes",
           "punkte": [
             "Photocopier les six pancartes sur papier épais et les découper ; photocopier une fois les cartes scènes (page 2).",
-            "Sans film : lire la carte scène jusqu’au stop ; la classe décide qui va aux commandes, des volontaires construisent l’image figée autour d’une table. Puis lire la suite.",
+            "Lire la carte scène jusqu’au stop ; la classe décide qui va aux commandes, des volontaires construisent l’image figée autour d’une table. Puis lire la suite.",
             "On ne se touche pas, on ne joue pas de vraies personnes de la classe. Après l’image figée, poser la pancarte et dire son propre prénom."
           ]
         },
@@ -4504,7 +4608,7 @@
             },
             {
               "bild": "figur:jana",
-              "titel": "Riley"
+              "titel": "Jana"
             }
           ]
         },
@@ -4513,38 +4617,38 @@
         },
         {
           "art": "text",
-          "text": "Page 2 : cartes scènes à lire à voix haute. Au « stop », la classe décide qui va aux commandes ; ce qui est entre parenthèses est la solution du film et n’est pas lu.",
+          "text": "Cartes scènes à lire à voix haute. Au « stop », la classe décide qui va aux commandes ; la parenthèse est la suite de l’histoire et n’est lue qu’après l’image figée.",
           "klein": true
         },
         {
           "art": "geschichte",
-          "titel": "Scène 1 · Le Quartier Général",
-          "text": "Riley vient de naître. Dans sa tête, il y a une console. Joie est là la première – Riley rit ; juste après arrive Tristesse – Riley pleure. Bientôt, cinq émotions travaillent à la console. Riley est maintenant toute petite ; devant elle, un câble traîne par terre.\nStop – qui doit aller aux commandes ? Image figée A (dans le film : Peur – Riley évite le câble).\nSuite : Dégoût veille à ce que Riley ne mange pas de brocoli. Puis le père dit : si tu ne manges pas, pas de dessert.\nStop – qui prend les commandes ? Image figée B (dans le film : Colère – Riley se fâche à table)."
+          "titel": "Scène 1 · Le jour du déménagement",
+          "text": "Jana a douze ans. Dans sa tête, il y a une salle de contrôle avec une console ; Joie, Tristesse, Peur, Colère et Dégoût y travaillent. Aujourd’hui, Jana déménage avec sa famille dans une autre ville. Le matin, Joie est aux commandes : la nouvelle chambre a une fenêtre sur le jardin. Puis le camion de déménagement démarre – et Jana voit que son vélo, à l’arrière, n’est pas attaché.\nStop – qui doit aller aux commandes ? Image figée A (Peur – Jana crie et fait de grands signes, le chauffeur s’arrête et attache le vélo).\nSuite : Dégoût veille à ce que Jana ne touche pas au yaourt oublié dans le nouveau frigo. Puis son petit frère déballe son carton sans demander et déchire son poster.\nStop – qui prend les commandes ? Image figée B (Colère – Jana dit fort : stop, c’est mon carton)."
         },
         {
           "art": "geschichte",
-          "titel": "Scène 2 · Le premier jour d’école",
-          "text": "Riley a onze ans ; elle vient de déménager avec ses parents dans une nouvelle ville. Le matin du premier jour d’école, Joie trace un cercle par terre au Quartier Général : Tristesse doit rester dedans. Dans sa nouvelle classe, Riley doit se présenter.\nStop – qui est aux commandes, qui est dans le cercle ? Image figée A (dans le film : Joie aux commandes, Tristesse dans le cercle – Riley sourit).\nSuite : Riley parle de son ancienne ville et du hockey sur glace. Alors Tristesse sort du cercle et touche un beau souvenir.\nStop – que se passe-t-il pour Riley ? Image figée B (dans le film : Tristesse aux commandes – Riley pleure devant toute la classe)."
+          "titel": "Scène 2 · Le premier jour au lycée",
+          "text": "Lundi, premier jour au nouveau lycée. Dans la salle de contrôle, Joie dit : aujourd’hui, on rit – Tristesse, tu t’assois dans le coin, tout au fond. La régente demande à Jana de se présenter en quelques mots.\nStop – qui est aux commandes, qui est dans le coin ? Image figée A (Joie aux commandes, Tristesse dans le coin – Jana sourit et parle de son équipe de handball).\nSuite : à la récré, Léa, la meilleure amie de Jana dans l’ancienne ville, lui écrit : sans toi, c’est bizarre ici. Alors Tristesse se lève et va à la console.\nStop – que se passe-t-il pour Jana ? Image figée B (Tristesse aux commandes – Jana est assise seule sur le banc de la cour, les yeux humides)."
         },
         {
           "art": "geschichte",
-          "titel": "Scène 3 · Le dîner",
-          "text": "Joie et Tristesse ont été éjectées du Quartier Général par accident et errent très loin. À la console, il ne reste que Peur, Colère et Dégoût. Au dîner, la mère demande comment s’est passé le premier jour d’école. Riley lève les yeux au ciel et répond à peine. Le père devient sévère.\nStop – qui prend les commandes maintenant ? Une image figée (dans le film : Colère – Riley crie sur son père).\nSuite : dans la tête du père aussi, c’est maintenant Colère qui est aux commandes. Il envoie Riley dans sa chambre."
+          "titel": "Scène 3 · Le soir",
+          "text": "Le soir, Jana veut montrer sa nouvelle chambre à Léa en appel vidéo. Mais le wifi n’est pas encore branché, et son forfait est épuisé. Sa mère dit : d’abord les cartons, le portable après. Dans la salle de contrôle, Colère se pousse vers l’avant.\nStop – qui prend les commandes ? Une seule image figée (Colère – Jana crie : je déteste cet appartement, et claque la porte).\nSuite : dans la tête de la mère aussi, c’est maintenant Colère qui est aux commandes. Elle dit : alors le portable reste éteint toute la soirée."
         },
         {
           "art": "geschichte",
-          "titel": "Scène 4 · Bing Bong",
-          "text": "Joie et Tristesse cherchent le chemin du retour. En route, elles rencontrent Bing Bong, l’ami imaginaire de Riley quand elle était petite. Soudain, sa fusée a disparu, celle avec laquelle Riley et lui voulaient aller sur la Lune – pour toujours. Bing Bong s’assoit et pleure. Joie veut le faire rire avec des grimaces et des blagues. Rien n’y fait.\nStop – image figée A : Joie sautille devant Bing Bong, qui reste triste. Que pourrait faire Tristesse ?\nSuite : Tristesse s’assoit à côté de lui et lui dit qu’on lui a pris quelque chose qu’il aimait. Bing Bong pleure un bon coup, puis il se relève et repart.\nImage figée B : Tristesse est assise à côté de lui et l’écoute ; il relève la tête."
+          "titel": "Scène 4 · Sur le banc",
+          "text": "Le lendemain matin, avant le premier cours, Jana est de nouveau assise seule sur le banc ; Tristesse est aux commandes, et ça se voit. Mathis, de sa classe, passe par là : hé, fais pas cette tête – ici, c’est bien plus cool que là d’où tu viens. Il lui montre une vidéo et fait des blagues. Jana sourit un instant, mais ça n’aide pas.\nStop – image figée A : Mathis fait le clown, Jana reste triste. Que pourrait faire quelqu’un d’autre ?\nSuite : Sofia s’assoit à côté de Jana et demande : tes amis te manquent ? Jana fait oui de la tête et parle de Léa ; Sofia écoute. Jana pleure un peu – et se sent ensuite plus légère. À la sonnerie, elles rentrent ensemble.\nImage figée B : Sofia est assise à côté de Jana et l’écoute ; Jana relève la tête."
         }
       ],
       "lehrer": {
-        "ziel": "Avec les pancartes et les cartes scènes, la séance peut se faire entièrement sans film : la classe reconstruit le Quartier Général en images figées et reconnaît l’émotion aux commandes.",
+        "ziel": "Avec les pancartes et les cartes scènes, la classe raconte elle-même l’histoire de Jana : elle reconstruit la salle de contrôle en images figées et reconnaît l’émotion aux commandes – sans film, sans technique.",
         "ablauf": [
           "Photocopier les pancartes sur papier épais et les découper, photocopier une fois les cartes scènes.",
           "Séance 10, étapes 3, 4 et 6 : lire la carte scène jusqu’au stop ; la classe décide qui va aux commandes ; construire l’image figée, lire la suite, puis poser la question de l’étape 3.",
-          "Dans la scène 4, un volontaire joue Bing Bong, sans pancarte."
+          "La mère (scène 3), Mathis et Sofia (scène 4) sont joués par des volontaires sans pancarte."
         ],
-        "hintergrund": "Comme les scènes de film, les images figées créent de la distance : les jeunes montrent les émotions d’un personnage inventé, pas les leurs. Les cinq personnages correspondent à des émotions de base selon Ekman (1992) ; Keltner & Ekman (2015) soulignent que la tristesse montre aux autres qu’on a besoin de réconfort.",
+        "hintergrund": "Les images figées créent de la distance : les jeunes montrent les émotions d’un personnage inventé, pas les leurs. Les cinq personnages correspondent à des émotions de base selon Ekman (1992) ; Keltner & Ekman (2015) soulignent que la tristesse montre aux autres qu’on a besoin de réconfort.",
         "quellen": [
           "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
           "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times."
@@ -4684,9 +4788,15 @@
           "text": "Wer das erste Signal bemerkt, hat mehr Zeit zu entscheiden, was er tut. Im nächsten Kapitel lernst du Skills, die genau dann helfen."
         },
         {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Wo Menschen Wut, Angst oder Freude im Körper spüren, ist auf der ganzen Welt ähnlich. Deine Landkarte ist trotzdem deine eigene."
+        },
+        {
           "art": "aufgabe",
-          "text": "Deine Wochen-Mission: Wann hat sich dein Warnsignal gemeldet – und was hast du dann gemacht? Eine Zeile reicht.",
-          "hinweis": "Keine Namen, nur Stichworte.",
+          "text": "Deine Wochen-Mission: dein Warnsignal in deinem Moment. Wo hast du es gespürt – und was hast du dann gemacht? Eine Zeile reicht.",
+          "hinweis": "Deinen Moment hast du in der Stunde gewählt – er steht bei den Wochen-Missionen. Keine Namen, nur Stichworte.",
           "symbole": [
             "schreiben"
           ]
@@ -4718,9 +4828,9 @@
           "symbol": "tipp",
           "titel": "Der Körper-Check – dein Skill",
           "punkte": [
-            "Setz dich aufrecht hin, beide Füße auf dem Boden.",
-            "Wandere mit der Aufmerksamkeit von der Stirn bis zu den Füßen.",
-            "Wo ist es fest oder eng? Atme dorthin aus und lass locker."
+            "Setz dich aufrecht hin, beide Füße auf dem Boden. Augen offen oder zu – wie du magst.",
+            "Wandere mit der Aufmerksamkeit von der Stirn bis zu den Füßen. Nur bemerken – höchstens drei Minuten.",
+            "Kurzform für unterwegs: Schultern fallen lassen, Füße in den Boden drücken, einmal lang ausatmen."
           ]
         },
         {
@@ -4736,7 +4846,7 @@
           "Einheit 11, Schritt 4: Aufgabe 1 allein (8 Min.), Farben wie im Gefühlsrad; danach freiwillig in den Tischgruppen vergleichen.",
           "Schritt 6: Die Lehrkraft liest die Sätze von Aufgabe 2 und 3 vor, alle kreuzen für sich an; dann Aufgabe 4 (8 Min.), danach rote und lila Punkte auf den großen Umriss der Klasse.",
           "Das Blatt bleibt im Heft und wird weder eingesammelt noch gezeigt.",
-          "Aufgabe 5 begleitet die Wochen-Mission; die Brücke von Einheit 12 fragt kurz danach."
+          "Aufgabe 5 begleitet die Wochen-Mission mit dem in der Stunde gewählten Moment; die Brücke von Einheit 12 fragt kurz danach. Der Kasten „Aus der Forschung“ fasst Nummenmaa et al. (2014) zusammen."
         ],
         "hintergrund": "Gefühle zeigen sich im ganzen Körper; in den Körperkarten von Nummenmaa et al. (2014) unterschieden sie sich je nach Gefühl deutlich – Wut etwa in Kopf, Brust und Armen. Solche Signale kommen oft vor dem Gedanken „Ich bin wütend“, und je früher man eingreift, desto leichter gelingt die Regulation (Gross, 1998).",
         "quellen": [
@@ -4853,9 +4963,15 @@
           "text": "Qui remarque le premier signal a plus de temps pour décider de ce qu’il fait. Au chapitre suivant, tu apprendras des skills qui aident justement à ce moment-là."
         },
         {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Là où les gens ressentent la colère, la peur ou la joie dans leur corps se ressemble dans le monde entier. Ta carte reste quand même la tienne."
+        },
+        {
           "art": "aufgabe",
-          "text": "Ta mission de la semaine : quand ton signal d’alerte s’est-il manifesté – et qu’as-tu fait ensuite ? Une ligne suffit.",
-          "hinweis": "Pas de noms, juste des mots-clés.",
+          "text": "Ta mission de la semaine : ton signal d’alerte dans ton moment. Où l’as-tu senti – et qu’as-tu fait ensuite ? Une ligne suffit.",
+          "hinweis": "Tu as choisi ton moment pendant le cours – il est noté avec les missions de la semaine. Pas de noms, juste des mots-clés.",
           "symbole": [
             "schreiben"
           ]
@@ -4887,9 +5003,9 @@
           "symbol": "tipp",
           "titel": "Le tour du corps – ton skill",
           "punkte": [
-            "Assieds-toi bien droit, les deux pieds au sol.",
-            "Promène ton attention du front jusqu’aux pieds.",
-            "Où est-ce serré ou crispé ? Expire vers cet endroit et relâche."
+            "Assieds-toi bien droit, les deux pieds au sol. Yeux ouverts ou fermés – comme tu veux.",
+            "Promène ton attention du front jusqu’aux pieds. Remarque, simplement – trois minutes au plus.",
+            "Version courte pour la route : laisse tomber les épaules, appuie les pieds dans le sol, expire longuement."
           ]
         },
         {
@@ -4905,7 +5021,7 @@
           "Séance 11, étape 4 : exercice 1 seul (8 min), avec les couleurs de la roue ; ensuite, comparer en îlots si on le souhaite.",
           "Étape 6 : lire à voix haute les phrases des exercices 2 et 3, chacun coche pour soi ; puis exercice 4 (8 min), ensuite gommettes rouges et violettes sur la grande silhouette de la classe.",
           "La fiche reste dans le cahier ; elle n’est ni ramassée ni montrée.",
-          "L’exercice 5 accompagne la mission de la semaine ; le lien de la séance 12 y revient brièvement."
+          "L’exercice 5 accompagne la mission de la semaine avec le moment choisi pendant le cours ; le lien de la séance 12 y revient brièvement. L’encadré « Ce que dit la recherche » résume Nummenmaa et al. (2014)."
         ],
         "hintergrund": "Les émotions se manifestent dans tout le corps ; dans les cartes corporelles de Nummenmaa et al. (2014), elles différaient nettement selon l’émotion – la colère, par exemple, dans la tête, la poitrine et les bras. Ces signaux arrivent souvent avant la pensée « je suis en colère », et plus on intervient tôt, plus la régulation est facile (Gross, 1998).",
         "quellen": [
@@ -5008,8 +5124,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Deine Wochen-Mission: Ertapp dich bei einem Gefühls-Mix. Welche zwei Gefühle waren da, und wie stark?",
-          "hinweis": "Ein paar Stichworte reichen.",
+          "text": "Deine Wochen-Mission: der Gefühls-Mix in deinem Moment. Welche zwei Gefühle waren da, und wie stark?",
+          "hinweis": "Deinen Moment hast du in der Stunde gewählt – er steht bei den Wochen-Missionen. Ein paar Stichworte reichen.",
           "symbole": [
             "schreiben"
           ]
@@ -5055,6 +5171,12 @@
         },
         {
           "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Man kann glücklich und traurig zugleich sein – das wurde bei Menschen nach einem Abschied gemessen."
+        },
+        {
+          "art": "info",
           "symbol": "hilfe",
           "titel": "Du entscheidest, was du teilst.",
           "text": "Aufgabe 2 und 3 gehören dir. Du erzählst nur davon, wenn du willst."
@@ -5065,7 +5187,7 @@
         "ablauf": [
           "Einheit 12, Schritt 3: Aufgabe 1 – die Lehrkraft liest jede Situation vor, alle kreuzen allein an (7 Min.); dann für drei Situationen per Handzeichen auszählen.",
           "Schritt 7: Aufgabe 2 allein und still (5 Min.); nichts wird vorgelesen.",
-          "Aufgabe 3 begleitet die Wochen-Mission; die Brücke von Einheit 13 fragt kurz danach."
+          "Aufgabe 3 begleitet die Wochen-Mission mit dem in der Stunde gewählten Moment; die Brücke von Einheit 13 fragt kurz danach. Der Kasten „Aus der Forschung“ fasst Larsen et al. (2001) zusammen."
         ],
         "hintergrund": "Menschen empfinden in bittersüßen Momenten tatsächlich gleichzeitig Freude und Traurigkeit (Larsen et al., 2001); Plutchik (2001) beschreibt Gefühle wie Farben, die sich mischen. Wer die Stärke eines Gefühls einschätzt, bereitet die Anspannungsskala von 0 bis 100 vor.",
         "quellen": [
@@ -5143,8 +5265,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ta mission de la semaine : repère un mélange d’émotions. Quelles deux émotions étaient là, et avec quelle force ?",
-          "hinweis": "Quelques mots-clés suffisent.",
+          "text": "Ta mission de la semaine : le mélange d’émotions dans ton moment. Quelles deux émotions étaient là, et avec quelle force ?",
+          "hinweis": "Tu as choisi ton moment pendant le cours – il est noté avec les missions de la semaine. Quelques mots-clés suffisent.",
           "symbole": [
             "schreiben"
           ]
@@ -5190,6 +5312,12 @@
         },
         {
           "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "On peut être heureux et triste en même temps – on l’a mesuré chez des personnes après un au revoir."
+        },
+        {
+          "art": "info",
           "symbol": "hilfe",
           "titel": "Tu décides de ce que tu partages.",
           "text": "Les exercices 2 et 3 t’appartiennent. Tu n’en parles que si tu le veux."
@@ -5200,7 +5328,7 @@
         "ablauf": [
           "Séance 12, étape 3 : exercice 1 – lire chaque situation à voix haute, chacun coche seul (7 min) ; puis décompte à main levée pour trois situations.",
           "Étape 7 : exercice 2 seul et en silence (5 min) ; rien n’est lu à voix haute.",
-          "L’exercice 3 accompagne la mission de la semaine ; le lien de la séance 13 y revient brièvement."
+          "L’exercice 3 accompagne la mission de la semaine avec le moment choisi pendant le cours ; le lien de la séance 13 y revient brièvement. L’encadré « Ce que dit la recherche » résume Larsen et al. (2001)."
         ],
         "hintergrund": "Dans des moments doux-amers, on ressent réellement de la joie et de la tristesse en même temps (Larsen et al., 2001) ; Plutchik (2001) décrit les émotions comme des couleurs qui se mélangent. Évaluer l’intensité d’une émotion prépare l’échelle de tension de 0 à 100.",
         "quellen": [
@@ -5241,7 +5369,7 @@
         {
           "art": "aufgabe",
           "text": "Welche Skills helfen dir – und bis zu welcher Zahl? Schreib in jede Zone mindestens einen Skill.",
-          "hinweis": "Du darfst Wörter von den Skill-Karten, vom Plakat oder von anderen abschreiben. Stichwörter reichen. Für Rot geht auch „noch offen“.",
+          "hinweis": "Abschreiben von Karten, Plakat oder anderen ist erlaubt; Stichwörter reichen. Für Rot geht auch „noch offen“.",
           "symbole": [
             "schreiben"
           ]
@@ -5266,18 +5394,23 @@
         },
         {
           "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Bei starken Gefühlen wirkt Ablenken besser als Nachdenken – bei Rot hilft der Körper."
+        },
+        {
+          "art": "info",
           "symbol": "tipp",
           "titel": "Skill für Rot: Stopp, zurück, ausatmen",
           "punkte": [
             "Stopp: nichts sagen, nichts tun, nichts abschicken.",
-            "Zurück: einen Schritt Abstand – Blick weg; in der Stunde mit dem vereinbarten Zeichen kurz raus.",
+            "Zurück: ein Schritt Abstand, Blick weg – in der Stunde mit dem Zeichen kurz raus.",
             "Ausatmen: fünfmal lang aus, länger aus als ein. Reden erst danach."
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Teste den Skill: Schätz deine Zahl vorher und nachher – heute in der Stunde und einmal diese Woche.",
-          "hinweis": "So testest du ab jetzt jeden Skill: Zahl vorher, Skill, Zahl nachher.",
+          "text": "Teste den Skill: Zahl vorher, Zahl nachher – heute in der Stunde und einmal in deinem Moment.",
           "symbole": [
             "schreiben"
           ]
@@ -5324,12 +5457,13 @@
         "ablauf": [
           "Einheit 13, Schritt 7: Aufgabe 1 allein (6 Min.); Wörter von Karten, Plakat und Tafel abzuschreiben ist erlaubt. Danach Ideen in der Tischgruppe tauschen.",
           "Schritt 8: Aufgabe 2 – Zahl vorher, Skill „Stopp, zurück, ausatmen“, Zahl nachher.",
-          "Die leere Zeile von Aufgabe 2 gehört zur Wochen-Mission. Beim Skills-Koffer und Ampelplan (Einheit 17) liegt das Blatt daneben."
+          "Die leere Zeile von Aufgabe 2 gehört zur Wochen-Mission mit dem in der Stunde gewählten Moment. Beim Skills-Koffer und Ampelplan (Einheit 17) liegt das Blatt daneben."
         ],
-        "hintergrund": "Bei sehr hoher Erregung versagen Fertigkeiten, die Nachdenken voraussetzen; dann helfen Skills, die am Körper und an den Sinnen ansetzen (Linehan, 2015). Die Anspannungsskala von 0 bis 100 macht diese Unterscheidung für Jugendliche greifbar (Fleischhaker et al., 2011). Ein persönlicher „Papierkorb“ wird bewusst nicht abgefragt: Was kurz entlastet und danach schadet, bespricht die Klasse nur an den vorgegebenen Karten.",
+        "hintergrund": "Bei sehr hoher Erregung versagen Fertigkeiten, die Nachdenken voraussetzen; dann helfen Skills, die am Körper und an den Sinnen ansetzen (Linehan, 2015). Die Anspannungsskala von 0 bis 100 macht diese Unterscheidung für Jugendliche greifbar (Fleischhaker et al., 2011). Der Kasten „Aus der Forschung“ fasst Sheppes et al. (2011) zusammen: Bei starken Gefühlen wählen Menschen Ablenkung statt Umdeuten – zu Recht. Ein persönlicher „Papierkorb“ wird bewusst nicht abgefragt.",
         "quellen": [
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
-          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer."
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+          "Sheppes, G., Scheibe, S., Suri, G. & Gross, J. J. (2011). Emotion-regulation choice. Psychological Science, 22(11), 1391–1396."
         ],
         "achtung": "Das Blatt nicht einsammeln und Einträge nur lesen, wenn jemand es anbietet. Hinweise auf Selbstverletzung, Drogen oder Gewalt nach der Stunde aufgreifen und noch am selben Tag den SePAS einbeziehen.",
         "material": "Skill-Karten, Plakat „Was sind Skills?“"
@@ -5337,12 +5471,12 @@
     },
     "fr": {
       "titel": "Mes skills de 0 à 100",
-      "untertitel": "Tous les skills ne conviennent pas à tous les chiffres. Ici, tu notes ce qui t’aide en vert, en orange et en rouge.",
+      "untertitel": "Chaque skill a son chiffre. Ici, tu notes ce qui t’aide en vert, en orange et en rouge.",
       "bausteine": [
         {
           "art": "aufgabe",
           "text": "Quels skills t’aident – et jusqu’à quel chiffre ? Écris au moins un skill dans chaque zone.",
-          "hinweis": "Tu peux recopier des mots des cartes skills, de l’affiche ou des autres. Des mots-clés suffisent. Pour le rouge, tu peux aussi écrire « à trouver ».",
+          "hinweis": "Recopier des cartes, de l’affiche ou des autres est permis ; des mots-clés suffisent. Pour le rouge : « à trouver ».",
           "symbole": [
             "schreiben"
           ]
@@ -5367,18 +5501,23 @@
         },
         {
           "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Émotion très forte ? Se distraire marche mieux que réfléchir – dans le rouge, le corps aide."
+        },
+        {
+          "art": "info",
           "symbol": "tipp",
           "titel": "Skill pour le rouge : Stop, recule, souffle",
           "punkte": [
             "Stop : ne dis rien, ne fais rien, n’envoie rien.",
-            "Recule : prends de la distance – regarde ailleurs ; en cours, sors un instant avec le signe convenu.",
+            "Recule : un pas de distance, regarde ailleurs – en cours, sors un instant avec le signe convenu.",
             "Souffle : expire longuement cinq fois, plus longtemps que tu n’inspires. Parle seulement après."
           ]
         },
         {
           "art": "aufgabe",
-          "text": "Teste le skill : estime ton chiffre avant et après – aujourd’hui en cours et une fois cette semaine.",
-          "hinweis": "Désormais, tu testes chaque skill ainsi : chiffre avant, skill, chiffre après.",
+          "text": "Teste le skill : chiffre avant, chiffre après – aujourd’hui en cours et une fois dans ton moment.",
           "symbole": [
             "schreiben"
           ]
@@ -5425,12 +5564,13 @@
         "ablauf": [
           "Séance 13, étape 7 : exercice 1 seul (6 min) ; recopier des mots des cartes, de l’affiche et du tableau est permis. Ensuite, échanger des idées en îlot.",
           "Étape 8 : exercice 2 – chiffre avant, skill « Stop, recule, souffle », chiffre après.",
-          "La ligne vide de l’exercice 2 va avec la mission de la semaine. Pour la valise à skills et le plan feu tricolore (séance 17), la fiche reste à portée de main."
+          "La ligne vide de l’exercice 2 va avec la mission de la semaine et le moment choisi pendant le cours. Pour la valise à skills et le plan feu tricolore (séance 17), la fiche reste à portée de main."
         ],
-        "hintergrund": "Quand l’excitation est très forte, les savoir-faire qui demandent de réfléchir ne fonctionnent plus ; ce qui aide alors passe par le corps et les sens (Linehan, 2015). L’échelle de tension de 0 à 100 rend cette distinction concrète pour les jeunes (Fleischhaker et al., 2011). On ne demande volontairement pas de « corbeille » personnelle : ce qui soulage un moment et fait du tort ensuite, la classe en parle seulement à partir des cartes données.",
+        "hintergrund": "Quand l’excitation est très forte, les savoir-faire qui demandent de réfléchir ne fonctionnent plus ; ce qui aide alors passe par le corps et les sens (Linehan, 2015). L’échelle de tension de 0 à 100 rend cette distinction concrète pour les jeunes (Fleischhaker et al., 2011). L’encadré « Ce que dit la recherche » résume Sheppes et al. (2011) : face à une émotion forte, on choisit la distraction plutôt que la réinterprétation – à juste titre. On ne demande volontairement pas de « corbeille » personnelle.",
         "quellen": [
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
-          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer."
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+          "Sheppes, G., Scheibe, S., Suri, G. & Gross, J. J. (2011). Emotion-regulation choice. Psychological Science, 22(11), 1391–1396."
         ],
         "achtung": "Ne pas ramasser la fiche et ne lire les réponses que si le jeune le propose. Reprendre après le cours tout signe d’automutilation, de drogue ou de violence et impliquer le SePAS le jour même.",
         "material": "Cartes skills, affiche « C’est quoi, un skill ? »"
@@ -5985,6 +6125,12 @@
             "70",
             "im Bus, vor dem Test"
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Langsam ausatmen bremst den Herzschlag – das ist die eingebaute Bremse des Körpers."
         }
       ],
       "lehrer": {
@@ -5993,12 +6139,13 @@
           "Stunde 14: Atem-Feder, Kastenatmung nach 30 Sekunden Laufen, Fingeratmung, Vollgas-Bewegung, Anspannen und Loslassen, doppelter Seufzer – nach jedem Skill eine Zeile.",
           "Stunde 15: vor den Stationen einen Stern an die vermutlich beste Station, dann eine Zeile je Sinnes-Station und für 3-3-3.",
           "Stunde 16: die Kopf-Skills der Stunde in die leeren Zeilen eintragen.",
-          "Zwischen den Stunden: Test im Alltag (Wochen-Mission). Stunde 16 oder 17: die drei Favoriten für den Skills-Koffer."
+          "Zwischen den Stunden: Test im Alltag (Wochen-Mission mit dem gewählten Moment). Stunde 16, Abschluss: die drei Favoriten für den Skills-Koffer; Stunde 17: Sterne setzen und packen."
         ],
-        "hintergrund": "Skills wirken individuell: Was die eine beruhigt, macht den anderen nervös. Das Skillstraining für Jugendliche setzt deshalb auf Ausprobieren und Protokollieren (Rathus & Miller, 2015). Körper-Skills senken die Erregung, Sinnes-Skills binden die Aufmerksamkeit mit starken Reizen, Kopf-Skills lenken ab und brauchen dafür freie Denkkapazität (Linehan, 2015). Im Klassenraum ist die Zahl meist niedrig; aussagekräftig ist vor allem der Test im Alltag.",
+        "hintergrund": "Skills wirken individuell: Was die eine beruhigt, macht den anderen nervös. Das Skillstraining für Jugendliche setzt deshalb auf Ausprobieren und Protokollieren (Rathus & Miller, 2015). Körper-Skills senken die Erregung, Sinnes-Skills binden die Aufmerksamkeit mit starken Reizen, Kopf-Skills lenken ab und brauchen dafür freie Denkkapazität (Linehan, 2015). Der Kasten „Aus der Forschung“ fasst Zaccaro et al. (2018) zusammen: Langsames Atmen beruhigt Herzschlag und Nervensystem. Im Klassenraum ist die Zahl meist niedrig; aussagekräftig ist vor allem der Test im Alltag.",
         "quellen": [
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
-          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
         ],
         "achtung": "Bei Schwindel aufhören und normal atmen; bei Asthma die Luft nicht anhalten. Kälte nur kurz und im Tuch, Düfte nur nach Rückfrage. Aussetzen ist immer erlaubt.",
         "material": "Federn, Timer, Lautsprecher; in Stunde 15 die Sinnes-Stationen"
@@ -6249,6 +6396,12 @@
             "70",
             "dans le bus, avant un devoir en classe"
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Expirer lentement freine le cœur – c’est le frein intégré du corps."
         }
       ],
       "lehrer": {
@@ -6257,12 +6410,13 @@
           "Séance 14 : la plume, la respiration carrée après 30 secondes de course, la respiration des doigts, bouger à fond, contracter et relâcher, le double soupir – une ligne après chaque skill.",
           "Séance 15 : avant les ateliers, une étoile à l’atelier qui aidera sans doute le plus, puis une ligne par atelier des sens et pour le 3-3-3.",
           "Séance 16 : noter les skills mentaux de la séance dans les lignes vides.",
-          "Entre les séances : essai au quotidien (mission de la semaine). Séance 16 ou 17 : les trois favoris pour la valise à skills."
+          "Entre les séances : essai au quotidien (mission de la semaine avec le moment choisi). Séance 16, à la fin : les trois favoris pour la valise à skills ; séance 17 : les étoiles, puis la valise."
         ],
-        "hintergrund": "Les skills agissent différemment selon les personnes : ce qui calme l’une rend l’autre nerveux. L’entraînement aux skills pour adolescents mise donc sur l’essai et la prise de notes (Rathus & Miller, 2015). Les skills corporels font baisser l’excitation, les skills sensoriels captent l’attention par des stimulations fortes, les skills mentaux distraient et ont besoin pour cela d’une tête encore disponible (Linehan, 2015). En classe, le chiffre est souvent bas ; c’est surtout l’essai au quotidien qui parle.",
+        "hintergrund": "Les skills agissent différemment selon les personnes : ce qui calme l’une rend l’autre nerveux. L’entraînement aux skills pour adolescents mise donc sur l’essai et la prise de notes (Rathus & Miller, 2015). Les skills corporels font baisser l’excitation, les skills sensoriels captent l’attention par des stimulations fortes, les skills mentaux distraient et ont besoin pour cela d’une tête encore disponible (Linehan, 2015). L’encadré « Ce que dit la recherche » résume Zaccaro et al. (2018) : respirer lentement calme le cœur et le système nerveux. En classe, le chiffre est souvent bas ; c’est surtout l’essai au quotidien qui parle.",
         "quellen": [
           "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
-          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353."
         ],
         "achtung": "En cas de vertige, arrêter et respirer normalement ; en cas d’asthme, ne pas retenir sa respiration. Le froid seulement brièvement et dans un linge, les odeurs seulement après vérification. On peut toujours faire une pause.",
         "material": "Plumes, minuteur, enceinte ; à la séance 15, les ateliers des sens"
@@ -6361,7 +6515,7 @@
         {
           "art": "aufgabe",
           "text": "Dein Plan für diese Woche: Welchen Sinnes-Skill probierst du aus – und wann?",
-          "hinweis": "Was du dabeihast, benutzt du auch: ein glatter Stein, ein Knetball, eine kühle Wasserflasche.",
+          "hinweis": "Was du dabeihast, benutzt du auch: ein glatter Stein, ein Knetball, eine kühle Wasserflasche. Dein „Wenn“ ist dein Moment für die Wochen-Mission.",
           "symbole": [
             "schreiben"
           ]
@@ -6387,7 +6541,7 @@
         "ziel": "Die Jugendlichen prüfen an drei Hörproben, was Musik mit ihnen macht, halten Songs zum Runterkommen und Aufladen fest, erkennen, dass Musik eine hohe Zahl auch steigern kann, und planen einen Sinnes-Skill für die Woche.",
         "ablauf": [
           "Einheit 15, Schritt 4: Hör-Test mit drei Proben, Aufgabe 1 (6 Min.); Aufgabe 2 allein (5 Min.); Song-Tausch in der Tischgruppe; Aufgabe 3 nach dem Gespräch in der Klasse.",
-          "Schritt 7: Aufgabe 4, der Plan für die Woche (3 Min.).",
+          "Schritt 7: Aufgabe 4, der Plan für die Woche (3 Min.); der Wenn-Moment kommt im Abschluss in die Spalte „Mein Moment“ bei den Wochen-Missionen.",
           "Gespielt werden nur die drei vorbereiteten Hörproben; die Playlist steht nur auf Papier, ein Handy braucht niemand."
         ],
         "hintergrund": "Musik verändert Gefühle über mehrere Wege – über Rhythmus und Tempo, über Erinnerungen an ein Lied und über die Stimmung, die es ausdrückt (Juslin & Västfjäll, 2008). Deshalb wirkt derselbe Song bei verschiedenen Menschen verschieden. Sinnesreize lenken die Aufmerksamkeit aus dem Grübeln ins Jetzt (Gross, 1998).",
@@ -6465,7 +6619,7 @@
         {
           "art": "aufgabe",
           "text": "Ton plan pour cette semaine : quel skill des sens vas-tu essayer – et quand ?",
-          "hinweis": "Ce que tu as sur toi, tu l’utilises : une pierre lisse, une balle anti-stress, une bouteille d’eau fraîche.",
+          "hinweis": "Ce que tu as sur toi, tu l’utilises : une pierre lisse, une balle anti-stress, une bouteille d’eau fraîche. Ton « si », c’est ton moment pour la mission de la semaine.",
           "symbole": [
             "schreiben"
           ]
@@ -6493,7 +6647,7 @@
         "ziel": "Les jeunes vérifient avec trois extraits sonores ce que la musique leur fait, notent des chansons pour redescendre et pour recharger, constatent que la musique peut aussi faire monter un chiffre déjà haut et planifient un skill des sens pour la semaine.",
         "ablauf": [
           "Séance 15, étape 4 : test d’écoute avec trois extraits, exercice 1 (6 min) ; exercice 2 seul (5 min) ; échange de chansons en îlot ; exercice 3 après la discussion en classe entière.",
-          "Étape 7 : exercice 4, le plan pour la semaine (3 min).",
+          "Étape 7 : exercice 4, le plan pour la semaine (3 min) ; à la fin de la séance, le moment du « si » est recopié dans la colonne « Mon moment » des missions de la semaine.",
           "On ne fait écouter que les trois extraits préparés ; la playlist existe seulement sur papier, personne n’a besoin de portable."
         ],
         "hintergrund": "La musique agit sur les émotions par plusieurs voies – le rythme et le tempo, les souvenirs liés à une chanson, l’humeur qu’elle exprime (Juslin & Västfjäll, 2008). C’est pourquoi la même chanson agit différemment selon les personnes. Les stimulations des sens détournent l’attention de la rumination vers le moment présent (Gross, 1998).",
@@ -6683,10 +6837,6 @@
       "untertitel": "Gedanken vorbeiziehen lassen, dem Kopf einen Job geben – und einen Ort finden, an dem du ruhig wirst",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Dein Kopf macht ständig Gedanken – auch solche, die sich im Kreis drehen. Abschalten kann ihn niemand. Aber du kannst Gedanken vorbeiziehen lassen. Und du kannst deinem Kopf eine andere Aufgabe geben."
-        },
-        {
           "art": "info",
           "symbol": "wissen",
           "titel": "Das Gedankenschiffchen",
@@ -6712,6 +6862,12 @@
             "Es war ungewohnt.",
             "Ich will es noch einmal probieren."
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Wer einen Gedanken wegdrücken will, denkt ihn danach öfter – der Eisbär-Effekt."
         },
         {
           "art": "aufgabe",
@@ -6780,8 +6936,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Dein sicherer Ort – oder Ruheort: Wähl einen Ort in deinem Kopf, einen Gegenstand oder ein Bild. Mal oder beschreib ihn.",
-          "hinweis": "Der Ort kann echt oder erfunden sein. Du musst ihn niemandem zeigen."
+          "text": "Dein sicherer Ort – oder Ruheort: Wähl einen Ort in deinem Kopf, einen Gegenstand oder ein Bild. Beschreib ihn mit drei Sinnen.",
+          "hinweis": "Echt oder erfunden. Malen kannst du, wenn du fertig bist – oder zu Hause. Du musst ihn niemandem zeigen."
         },
         {
           "art": "ankreuzen",
@@ -6808,7 +6964,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Gib deinem Ort ein Stichwort. Wann besuchst du ihn diese Woche?"
+          "text": "Gib deinem Ort ein Stichwort. Wann besuchst du ihn diese Woche?",
+          "hinweis": "Dein „wenn“ ist dein Moment für die Wochen-Mission – er kommt auch in die Spalte „Mein Moment“."
         },
         {
           "art": "satzanfaenge",
@@ -6832,14 +6989,15 @@
       "lehrer": {
         "ziel": "Die Jugendlichen halten fest, wie das Gedankenschiffchen für sie war, protokollieren das Störsender-Experiment und gestalten einen sicheren Ort – oder wählen einen Gegenstand oder ein Bild – mit einem Stichwort.",
         "ablauf": [
-          "Einheit 16, Schritt 3: nach dem Gedankenschiffchen Aufgabe 1 ankreuzen (1 Min.).",
+          "Einheit 16, Schritt 3: nach dem Gedankenschiffchen (höchstens 3 Min.) Aufgabe 1 ankreuzen (1 Min.).",
           "Schritt 6: nach jeder Runde des Störsender-Experiments die Zahl eintragen, nach der Auswertung die zwei Sätze ergänzen.",
-          "Schritt 7: Aufgaben 3 und 4 (9 Min.) mit leiser Musik; in Schritt 8 wird der Ort zum Skill.",
+          "Schritt 7: Aufgaben 3 und 4 (5 Min.) mit leiser Musik, Zeichnen für Schnelle oder zu Hause; in Schritt 8 wird der Ort zum Skill.",
           "Das Blatt wird nicht eingesammelt; die Seite mit dem Ort zeigt nur, wer will."
         ],
-        "hintergrund": "Unterdrückte Gedanken kehren eher zurück (Wegner et al., 1987); das Gedankenschiffchen übt, sie zu bemerken und ziehen zu lassen. Kopf-Skills beschäftigen den Kopf oder schaffen Abstand und brauchen freie Denkkraft, deshalb helfen sie vor allem bei mittlerer Anspannung. Der sichere Ort ist eine Übung mit inneren Bildern zur Stabilisierung (Reddemann, 2001); Gegenstand und Bild sind gleichwertige Alternativen.",
+        "hintergrund": "Unterdrückte Gedanken kehren eher zurück (Wegner et al., 1987) – der Kasten „Aus der Forschung“ fasst das zusammen; das Gedankenschiffchen übt, sie zu bemerken und ziehen zu lassen, höchstens drei Minuten lang, denn längere Pflicht-Stille brachte im größten Schulversuch nichts (Kuyken et al., 2022). Kopf-Skills beschäftigen den Kopf oder schaffen Abstand und brauchen freie Denkkraft, deshalb helfen sie vor allem bei mittlerer Anspannung. Der sichere Ort ist eine Übung mit inneren Bildern zur Stabilisierung (Reddemann, 2001); Gegenstand und Bild sind gleichwertige Alternativen.",
         "quellen": [
           "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.",
+          "Kuyken, W., Ball, S., Crane, C., Ganguli, P., Jones, B., Montero-Marin, J. et al. (2022). Effectiveness and cost-effectiveness of universal school-based mindfulness training compared with normal school provision in reducing risk of mental health problems and promoting well-being in adolescence: The MYRIAD cluster randomised controlled trial. Evidence-Based Mental Health, 25(3), 99–109.",
           "Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta."
         ],
         "achtung": "Keinen Ort zu finden, ist häufig und meist harmlos. Sagt jemand, es gebe nirgends einen sicheren Ort, oder malt Bedrohliches: nichts deuten, nicht vor der Klasse nachfragen, nach der Stunde ansprechen und noch am selben Tag den SePAS informieren.",
@@ -6851,17 +7009,13 @@
       "untertitel": "Laisser passer ses pensées, donner un job à sa tête – et trouver un endroit où tu te calmes",
       "bausteine": [
         {
-          "art": "text",
-          "text": "Ta tête fabrique des pensées sans arrêt – même celles qui tournent en boucle. Personne ne peut l’éteindre. Mais tu peux laisser passer tes pensées. Et tu peux donner une autre tâche à ta tête."
-        },
-        {
           "art": "info",
           "symbol": "wissen",
           "titel": "Le petit bateau des pensées",
           "punkte": [
             "Une pensée arrive : pose-la sur un bateau.",
             "Regarde le bateau s’éloigner. Tu n’as rien à retenir, rien à repousser.",
-            "Un bateau t’a emporté ? Descends et reviens sur la rive. C’est justement ça, le skill : le remarquer."
+            "Emporté par un bateau ? Descends et reviens sur la rive. Le remarquer, c’est le skill."
           ]
         },
         {
@@ -6882,8 +7036,14 @@
           ]
         },
         {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Qui veut chasser une pensée y pense ensuite plus souvent – l’effet ours blanc."
+        },
+        {
           "art": "aufgabe",
-          "text": "L’expérience des perturbateurs : combien d’animaux as-tu trouvés en 30 secondes ? Note tes chiffres.",
+          "text": "Expérience des perturbateurs : combien d’animaux en 30 secondes ? Note tes chiffres.",
           "hinweis": "Si tu n’as pas été pro, note les chiffres de ton îlot."
         },
         {
@@ -6948,8 +7108,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ton lieu sûr – ou lieu calme : choisis un endroit dans ta tête, un objet ou une image. Dessine-le ou décris-le.",
-          "hinweis": "L’endroit peut être réel ou inventé. Tu n’as à le montrer à personne."
+          "text": "Ton lieu sûr – ou lieu calme : choisis un endroit dans ta tête, un objet ou une image. Décris-le avec trois sens.",
+          "hinweis": "Réel ou inventé. Tu peux le dessiner quand tu as fini – ou à la maison. Tu n’as à le montrer à personne."
         },
         {
           "art": "ankreuzen",
@@ -6976,7 +7136,8 @@
         },
         {
           "art": "aufgabe",
-          "text": "Donne un mot-clé à ton lieu. Quand est-ce que tu vas y aller cette semaine ?"
+          "text": "Donne un mot-clé à ton lieu. Quand est-ce que tu vas y aller cette semaine ?",
+          "hinweis": "Ton « quand », c’est ton moment pour la mission de la semaine – il va aussi dans la colonne « Mon moment »."
         },
         {
           "art": "satzanfaenge",
@@ -7000,14 +7161,15 @@
       "lehrer": {
         "ziel": "Les jeunes notent comment s’est passé le petit bateau des pensées, consignent l’expérience des perturbateurs et créent un lieu sûr – ou choisissent un objet ou une image – avec un mot-clé.",
         "ablauf": [
-          "Séance 16, étape 3 : après le petit bateau des pensées, cocher l’exercice 1 (1 min).",
+          "Séance 16, étape 3 : après le petit bateau des pensées (3 min au plus), cocher l’exercice 1 (1 min).",
           "Étape 6 : noter le chiffre après chaque manche de l’expérience des perturbateurs, compléter les deux phrases après le bilan.",
-          "Étape 7 : exercices 3 et 4 (9 min) avec une musique douce ; à l’étape 8, le lieu devient un skill.",
+          "Étape 7 : exercices 3 et 4 (5 min) avec une musique douce, dessiner pour les plus rapides ou à la maison ; à l’étape 8, le lieu devient un skill.",
           "La fiche n’est pas ramassée ; seul celui qui le veut montre la page de son lieu."
         ],
-        "hintergrund": "Les pensées réprimées reviennent plus facilement (Wegner et al., 1987) ; le petit bateau des pensées entraîne à les remarquer et à les laisser passer. Les skills mentaux occupent la tête ou créent de la distance et demandent une tête disponible, c’est pourquoi ils aident surtout quand la tension est moyenne. Le lieu sûr est un exercice de stabilisation par les images intérieures (Reddemann, 2001) ; l’objet et l’image sont des alternatives de même valeur.",
+        "hintergrund": "Les pensées réprimées reviennent plus facilement (Wegner et al., 1987) – l’encadré « Ce que dit la recherche » le résume ; le petit bateau des pensées entraîne à les remarquer et à les laisser passer, trois minutes au plus, car un silence obligatoire plus long n’a rien apporté dans le plus grand essai scolaire (Kuyken et al., 2022). Les skills mentaux occupent la tête ou créent de la distance et demandent une tête disponible, c’est pourquoi ils aident surtout quand la tension est moyenne. Le lieu sûr est un exercice de stabilisation par les images intérieures (Reddemann, 2001) ; l’objet et l’image sont des alternatives de même valeur.",
         "quellen": [
           "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.",
+          "Kuyken, W., Ball, S., Crane, C., Ganguli, P., Jones, B., Montero-Marin, J. et al. (2022). Effectiveness and cost-effectiveness of universal school-based mindfulness training compared with normal school provision in reducing risk of mental health problems and promoting well-being in adolescence: The MYRIAD cluster randomised controlled trial. Evidence-Based Mental Health, 25(3), 99–109.",
           "Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta."
         ],
         "achtung": "Ne trouver aucun lieu est fréquent et le plus souvent sans gravité. Si un jeune dit qu’il n’y a nulle part de lieu sûr ou dessine quelque chose de menaçant : ne rien interpréter, ne pas questionner devant la classe, lui parler après le cours et informer le SePAS le jour même.",
@@ -7691,6 +7853,12 @@
         },
         {
           "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Wer eine Nachricht schreibt, ist fast immer sicher, dass die Ironie ankommt. Die Leser erkannten sie viel seltener – sie hören deine Stimme nicht."
+        },
+        {
+          "art": "info",
           "symbol": "tipp",
           "titel": "So vermeidest du Missverständnisse",
           "punkte": [
@@ -7868,6 +8036,12 @@
               ""
             ]
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Celui qui écrit un message est presque toujours sûr que son ironie passe. Les lecteurs la reconnaissaient bien moins souvent – ils n’entendent pas ta voix."
         },
         {
           "art": "info",
@@ -12024,8 +12198,8 @@
         "ziel": "Erfundene, alltagsnahe Streits zwischen ungefähr Gleichstarken für das Rollenspiel mit der Konflikt-Treppe: Freunde, Geschwister, Pause, Klassenfeier.",
         "ablauf": [
           "Einmal kopieren, ausschneiden; Karten weglassen, die einem echten Streit in der Klasse ähneln, und Namen tauschen, falls jemand in der Klasse so heißt. Eine Karte bleibt als Reserve.",
-          "Einheit 22, Schritt 6: je Tischgruppe eine Karte, vier Rollen verteilen; die Lehrkraft zeigt Version 2 vor, dann 7 Min. proben.",
-          "Schritt 7: Version 1 bis zum Stopp der Treppenwache, dann Version 2 mit der Treppe."
+          "Einheit 22, Schritt 5: je Tischgruppe eine Karte, vier Rollen verteilen, Regeln lesen – noch vor der Bewegungspause. Schritt 7: Die Lehrkraft zeigt Version 2 vor, dann 5 Min. proben.",
+          "Schritt 8: Alle fünf Gruppen spielen vorn – Version 1 bis zum Stopp der Treppenwache, dann Version 2 mit der Treppe."
         ],
         "hintergrund": "Im Rollenspiel lässt sich eine neue Reaktion ohne echtes Risiko ausprobieren und im zweiten Durchgang verbessern. Programme zum sozial-emotionalen Lernen wirken besonders, wenn sie aktiv üben lassen und klar benennen, was geübt wird (Durlak et al., 2011). Erfundene Streits schützen: Niemand muss Eigenes zeigen.",
         "quellen": [
@@ -12084,8 +12258,8 @@
         "ziel": "Des disputes inventées et proches du quotidien, entre personnes à peu près aussi fortes, pour le jeu de rôle avec l’escalier du conflit : amis, frères et sœurs, récré, fête de classe.",
         "ablauf": [
           "Photocopier une fois, découper ; écarter les cartes qui ressemblent à une vraie dispute de la classe et changer les prénoms si un jeune s’appelle ainsi. Une carte reste en réserve.",
-          "Séance 22, étape 6 : une carte par îlot, répartir quatre rôles ; montrer la version 2, puis 7 min de répétition.",
-          "Étape 7 : version 1 jusqu’au stop du gardien de l’escalier, puis version 2 avec l’escalier."
+          "Séance 22, étape 5 : une carte par îlot, répartir quatre rôles, lire les règles – avant la pause active. Étape 7 : montrer la version 2, puis 5 min de répétition.",
+          "Étape 8 : les cinq groupes jouent devant la classe – version 1 jusqu’au stop du gardien de l’escalier, puis version 2 avec l’escalier."
         ],
         "hintergrund": "Le jeu de rôle permet d’essayer une nouvelle réaction sans vrai risque et de l’améliorer au deuxième passage. Les programmes d’apprentissage socio-émotionnel sont particulièrement efficaces quand ils font pratiquer activement et nomment clairement ce qui est travaillé (Durlak et al., 2011). Les disputes inventées protègent : personne n’a à montrer quelque chose de personnel.",
         "quellen": [
@@ -12205,10 +12379,15 @@
           "text": "Ein echter Freund akzeptiert ein Nein. Und ein Nein braucht keine lange Begründung."
         },
         {
+          "art": "frage",
+          "text": "Unsere Abstimmung: Wie viele von uns finden es okay, wenn jemand Nein sagt, obwohl alle anderen Ja sagen?",
+          "linien": 1
+        },
+        {
           "art": "info",
           "symbol": "wissen",
-          "titel": "Das zweite Nein",
-          "text": "Sagt eine zweite Person auch Nein, kippt fast jede Druck-Situation. Diese zweite Person kannst du sein."
+          "titel": "Aus der Forschung",
+          "text": "Ein einziger Mensch, der auch Nein sagt, lässt den Druck der Gruppe deutlich schrumpfen. Diese zweite Person kannst du sein."
         },
         {
           "art": "seitenumbruch"
@@ -12284,15 +12463,16 @@
         "ziel": "Die Jugendlichen erkunden ihre Komfort-, Lern- und Panikzone, lernen vier Arten, Nein zu sagen, schreiben einen eigenen Nein-Satz und einen Plan für einen Druck-Moment.",
         "ablauf": [
           "Einheit 23, Schritt 3: nach der Zonen-Linie Aufgabe 1 allein (4 Min.), Stichworte reichen; nicht vorlesen lassen.",
-          "Schritt 4: die vier Arten vorspielen, Aufgabe 2 allein (3 Min.), Aufgabe 3 zu zweit (4 Min.).",
+          "Schritt 4: nach der anonymen Abstimmung die Zahl eintragen (freiwillig); die vier Arten vorspielen, Aufgabe 2 allein (3 Min.), Aufgabe 3 zu zweit (4 Min.).",
           "Schritt 8: Aufgabe 4 allein (4 Min.); Pläne weder vorlesen noch einsammeln.",
           "Schritt 9: Der eigene Nein-Satz aus Aufgabe 2 ist der Satz für den Anker."
         ],
-        "hintergrund": "Im Jugendalter beeinflusst die Anwesenheit Gleichaltriger Entscheidungen stark (Gardner & Steinberg, 2005). Schon eine einzige weitere Person, die widerspricht, verringert den Anpassungsdruck deutlich (Asch, 1956). Kurze, vorbereitete Sätze erleichtern das Nein; die Endlosschleife, ruhig denselben Satz wiederholen, stammt aus dem Skillstraining der DBT für Jugendliche (Rathus & Miller, 2015).",
+        "hintergrund": "Im Jugendalter beeinflusst die Anwesenheit Gleichaltriger Entscheidungen stark (Gardner & Steinberg, 2005). Schon eine einzige weitere Person, die widerspricht, verringert den Anpassungsdruck deutlich (Asch, 1956). Jugendliche überschätzen, wie sehr andere Mitmachen billigen; wird die echte Mehrheit der Klasse sichtbar, verhalten sie sich eher danach (Perkins, Craig & Perkins, 2011). Kurze, vorbereitete Sätze erleichtern das Nein; die Endlosschleife stammt aus dem Skillstraining der DBT für Jugendliche (Rathus & Miller, 2015).",
         "quellen": [
           "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
           "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
-          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Perkins, H. W., Craig, D. W. & Perkins, J. M. (2011). Using social norms to reduce bullying: A research intervention among adolescents in five middle schools. Group Processes & Intergroup Relations, 14(5), 703–722."
         ],
         "achtung": "Eigene Erfahrungen mit E-Zigaretten, Diebstahl oder Mutproben nicht vertiefen und nicht bewerten; wer schon nachgegeben hat, wird nicht beschämt. Bei Erpressung oder Bedrohung, auch online, noch am selben Tag den SePAS informieren.",
         "material": "Malerkrepp, drei Schilder für die Zonen"
@@ -12384,10 +12564,15 @@
           "text": "Un vrai ami accepte un non. Et un non n’a pas besoin d’une longue explication."
         },
         {
+          "art": "frage",
+          "text": "Notre vote : combien d’entre nous trouvent OK que quelqu’un dise non alors que tous les autres disent oui ?",
+          "linien": 1
+        },
+        {
           "art": "info",
           "symbol": "wissen",
-          "titel": "Le deuxième non",
-          "text": "Quand une deuxième personne dit non elle aussi, presque toutes les situations de pression basculent. Cette deuxième personne, ça peut être toi."
+          "titel": "Ce que dit la recherche",
+          "text": "Une seule personne qui dit non elle aussi fait nettement baisser la pression du groupe. Cette deuxième personne, ça peut être toi."
         },
         {
           "art": "seitenumbruch"
@@ -12465,15 +12650,16 @@
         "ziel": "Les jeunes explorent leurs zones de confort, d’apprentissage et de panique, découvrent quatre façons de dire non, écrivent leur propre phrase et un plan pour un moment de pression.",
         "ablauf": [
           "Séance 23, étape 3 : après la ligne des zones, exercice 1 seul (4 min), des mots-clés suffisent ; pas de lecture à voix haute.",
-          "Étape 4 : jouer les quatre façons, exercice 2 seul (3 min), exercice 3 à deux (4 min).",
+          "Étape 4 : après le vote anonyme, noter le chiffre (facultatif) ; jouer les quatre façons, exercice 2 seul (3 min), exercice 3 à deux (4 min).",
           "Étape 8 : exercice 4 seul (4 min) ; les plans ne sont ni lus ni ramassés.",
           "Étape 9 : la phrase de l’exercice 2 sert pour l’ancre."
         ],
-        "hintergrund": "À l’adolescence, la présence de jeunes du même âge influence fortement les décisions (Gardner & Steinberg, 2005). Une seule personne de plus qui ose contredire suffit à réduire nettement la pression à se conformer (Asch, 1956). Des phrases courtes et préparées facilitent le non ; le disque rayé – répéter calmement la même phrase – vient de l’entraînement aux skills de la DBT pour adolescents (Rathus & Miller, 2015).",
+        "hintergrund": "À l’adolescence, la présence de jeunes du même âge influence fortement les décisions (Gardner & Steinberg, 2005). Une seule personne de plus qui ose contredire suffit à réduire nettement la pression à se conformer (Asch, 1956). Les jeunes surestiment à quel point les autres approuvent le fait de suivre le groupe ; quand la vraie majorité de la classe devient visible, ils s’y conforment davantage (Perkins, Craig & Perkins, 2011). Des phrases courtes et préparées facilitent le non ; le disque rayé vient de l’entraînement aux skills de la DBT pour adolescents (Rathus & Miller, 2015).",
         "quellen": [
           "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
           "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
-          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Perkins, H. W., Craig, D. W. & Perkins, J. M. (2011). Using social norms to reduce bullying: A research intervention among adolescents in five middle schools. Group Processes & Intergroup Relations, 14(5), 703–722."
         ],
         "achtung": "Ne pas approfondir ni juger les expériences personnelles avec la vapoteuse, le vol ou les défis ; personne n’est mis en honte pour avoir déjà cédé. En cas de chantage ou de menaces, en ligne aussi, informer le SePAS le jour même.",
         "material": "Ruban de masquage, trois panneaux pour les zones"
@@ -12712,8 +12898,22 @@
           "text": "Wer hätte die meiste Macht, das zu stoppen – und warum?"
         },
         {
-          "art": "linien",
-          "anzahl": 2
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "linien",
+              "anzahl": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Aus der Forschung",
+              "text": "Die meisten Jugendlichen finden Mobbing nicht okay. Sie glauben nur, die anderen fänden es okay."
+            }
+          ]
         },
         {
           "art": "seitenumbruch"
@@ -12786,14 +12986,15 @@
         "ziel": "Die Jugendlichen unterscheiden Spaß, Konflikt und Mobbing, ordnen die Rollen im Mobbing zu, erkennen die Macht der Zuschauenden und wählen eine sichere Stufe der Zivilcourage.",
         "ablauf": [
           "Einheit 24, Schritt 3: nach den Ecken den Kasten mit den vier Merkmalen gemeinsam lesen.",
-          "Schritt 4: Geschichte vorlesen, Aufgabe 1 zu zweit (4 Min.), Aufgabe 2 allein (3 Min.).",
-          "Schritt 6: nach der Leiter am Boden Aufgabe 3 allein (4 Min.).",
+          "Schritt 4: Geschichte vorlesen, Aufgabe 1 zu zweit, Aufgabe 2 allein; nach der anonymen Abstimmung den Kasten „Aus der Forschung“ vorlesen.",
+          "Schritt 6: nach der Leiter am Boden Aufgabe 3 allein (2 Min.).",
           "Schritt 7: Hilfe-Kasten besprechen, im Notfallkasten eine Vertrauensperson eintragen; auf die Zeile „Du bist nicht schuld“ hinweisen."
         ],
-        "hintergrund": "Nach Olweus (1993) liegt Mobbing vor, wenn eine Person wiederholt und absichtlich verletzt wird und sich wegen ungleicher Kräfte kaum wehren kann. Mobbing ist ein Gruppenprozess mit den Rollen Täter, Helfer, Verstärker, Außenstehende, Verteidiger und Betroffene (Salmivalli et al., 1996). Wer lacht, liked oder weiterleitet, verstärkt; deshalb setzt die Leiter bei den Zuschauenden an.",
+        "hintergrund": "Nach Olweus (1993) liegt Mobbing vor, wenn eine Person wiederholt und absichtlich verletzt wird und sich wegen ungleicher Kräfte kaum wehren kann. Mobbing ist ein Gruppenprozess mit den Rollen Täter, Helfer, Verstärker, Außenstehende, Verteidiger und Betroffene (Salmivalli et al., 1996). Wer lacht, liked oder weiterleitet, verstärkt; deshalb setzt die Leiter bei den Zuschauenden an. Jugendliche überschätzen, wie sehr andere Mobbing billigen; wird die echte Mehrheit der Klasse sichtbar, sinkt es (Perkins, Craig & Perkins, 2011).",
         "quellen": [
           "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
-          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "Perkins, H. W., Craig, D. W. & Perkins, J. M. (2011). Using social norms to reduce bullying: A research intervention among adolescents in five middle schools. Group Processes & Intergroup Relations, 14(5), 703–722."
         ],
         "achtung": "Mobbing kann in der Klasse selbst vorkommen: niemanden nach Erfahrungen fragen, keine Namen sammeln. Bei Hinweisen nicht in der Stunde klären, sondern mit Régent und SePAS nach dem Vorgehen der Schule.",
         "material": "Eckschilder, sechs Stühle, Rollen- und Situationskarten, sechs A4-Blätter für die Leiter"
@@ -12859,8 +13060,22 @@
           "text": "Qui aurait le plus de pouvoir pour arrêter ça – et pourquoi ?"
         },
         {
-          "art": "linien",
-          "anzahl": 2
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "linien",
+              "anzahl": 3
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "wissen",
+              "titel": "Ce que dit la recherche",
+              "text": "La plupart des jeunes trouvent que le harcèlement n’est pas OK. Ils croient seulement que les autres le trouvent OK."
+            }
+          ]
         },
         {
           "art": "seitenumbruch"
@@ -12933,14 +13148,15 @@
         "ziel": "Les jeunes distinguent blague, conflit et harcèlement, attribuent les rôles dans le harcèlement, reconnaissent le pouvoir des témoins et choisissent une marche du courage civique sans danger.",
         "ablauf": [
           "Séance 24, étape 3 : après les coins, lire ensemble l’encadré des quatre critères.",
-          "Étape 4 : lire l’histoire, exercice 1 à deux (4 min), exercice 2 seul (3 min).",
-          "Étape 6 : après l’échelle au sol, exercice 3 seul (4 min).",
+          "Étape 4 : lire l’histoire, exercice 1 à deux, exercice 2 seul ; après le vote anonyme, lire l’encadré « Ce que dit la recherche ».",
+          "Étape 6 : après l’échelle au sol, exercice 3 seul (2 min).",
           "Étape 7 : parler de l’encadré d’aide, noter une personne de confiance dans l’encadré d’urgence ; montrer la phrase « Ce n’est pas ta faute »."
         ],
-        "hintergrund": "Selon Olweus (1993), il y a harcèlement quand une personne est blessée de façon répétée et intentionnelle et ne peut guère se défendre à cause d’un déséquilibre des forces. Le harcèlement est un processus de groupe avec les rôles de meneur, suiveur, supporter, témoin passif, défenseur et personne visée (Salmivalli et al., 1996). Qui rit, like ou transfère renforce ; c’est pourquoi l’échelle s’adresse aux témoins.",
+        "hintergrund": "Selon Olweus (1993), il y a harcèlement quand une personne est blessée de façon répétée et intentionnelle et ne peut guère se défendre à cause d’un déséquilibre des forces. Le harcèlement est un processus de groupe avec les rôles de meneur, suiveur, supporter, témoin passif, défenseur et personne visée (Salmivalli et al., 1996). Qui rit, like ou transfère renforce ; c’est pourquoi l’échelle s’adresse aux témoins. Les jeunes surestiment à quel point les autres approuvent le harcèlement ; quand la vraie majorité de la classe devient visible, il diminue (Perkins, Craig & Perkins, 2011).",
         "quellen": [
           "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
-          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "Perkins, H. W., Craig, D. W. & Perkins, J. M. (2011). Using social norms to reduce bullying: A research intervention among adolescents in five middle schools. Group Processes & Intergroup Relations, 14(5), 703–722."
         ],
         "achtung": "Le harcèlement peut exister dans la classe : n’interroger personne sur son vécu, ne pas recueillir de noms. En cas de signes, ne pas régler cela en cours, mais avec le régent et le SePAS selon la procédure de l’école.",
         "material": "Panneaux des coins, six chaises, cartes rôles et situations, six feuilles A4 pour l’échelle"
@@ -13236,8 +13452,8 @@
         {
           "art": "info",
           "symbol": "wissen",
-          "titel": "So halten dich Apps fest",
-          "text": "Der Feed hört nie auf, Videos starten von selbst, rote Punkte und Flammen locken dich zurück. Der Algorithmus zeigt dir mehr von dem, wobei du hängen bleibst. Wer die Tricks kennt, entscheidet selbst."
+          "titel": "Aus der Forschung",
+          "text": "Der endlose Feed, rote Punkte und Flammen: gebaut von Leuten, die an jeder Minute verdienen, die du hängen bleibst. Jugendliche, die das erfuhren, wählten am nächsten Tag von sich aus das Gesündere – aus Trotz. Was du mit den Tricks machst, entscheidest du."
         },
         {
           "art": "info",
@@ -13298,17 +13514,18 @@
         }
       ],
       "lehrer": {
-        "ziel": "Die Jugendlichen vergleichen geschätzte und echte Bildschirmzeit, beobachten ihre Gefühle nach dem Scrollen, schauen hinter ein perfektes Bild und legen eine kleine, machbare Änderung fest.",
+        "ziel": "Die Jugendlichen vergleichen geschätzte und echte Bildschirmzeit, beobachten ihre Gefühle nach dem Scrollen, schauen hinter ein perfektes Bild und legen eine kleine, machbare Änderung mit eigenem Moment fest.",
         "ablauf": [
           "Einheit 25, Schritt 4 (13 Min.): Aufgabe 1 schätzen, dann nachsehen (drei Schritte an der Tafel) – nur, wenn die Regeln des Lycée es erlauben, sonst mit Mila; Aufgabe 2 mit dem Gefühlsrad.",
-          "Schritt 7 (5 Min.): Aufgabe 3 nach dem Rahmen-Experiment, zuerst Leas Beispiel lesen; Stichworte reichen.",
-          "Schritt 8 (6 Min.): Aufgabe 4 nach dem Tafelbild – eine Änderung, ein Wenn-dann-Plan.",
+          "Schritt 7 (4 Min.): Aufgabe 3 nach dem Rahmen-Experiment, zuerst Leas Beispiel lesen; Stichworte reichen.",
+          "Schritt 8 (5 Min.): Aufgabe 4 nach dem Tafelbild – eine Änderung, ein Wenn-dann-Plan; der Wenn-Teil wird im Abschluss zum Moment im Heft.",
           "Zahlen und Plan bleiben privat; vorgelesen wird nur freiwillig."
         ],
-        "hintergrund": "Die Nutzung digitaler Medien hängt im Durchschnitt nur sehr schwach mit dem Wohlbefinden Jugendlicher zusammen (Orben & Przybylski, 2019); aussagekräftiger ist, was genutzt wird und wie man sich danach fühlt. In einem Experiment drückten schon zehn Minuten in einem sozialen Netzwerk die Stimmung junger Frauen (Fardouly et al., 2015). Wenn-dann-Pläne erhöhen die Chance, dass ein Vorhaben umgesetzt wird (Gollwitzer, 1999).",
+        "hintergrund": "Die Nutzung digitaler Medien hängt im Durchschnitt nur sehr schwach mit dem Wohlbefinden Jugendlicher zusammen (Orben & Przybylski, 2019); aussagekräftiger ist, was genutzt wird und wie man sich danach fühlt. In einem Experiment drückten schon zehn Minuten in einem sozialen Netzwerk die Stimmung junger Frauen (Fardouly et al., 2015). Als 13-Jährige erfuhren, mit welchen Tricks Firmen sie steuern, wählten sie am nächsten Tag von sich aus gesünder (Bryan et al., 2016) – daher der Kasten „Aus der Forschung“. Wenn-dann-Pläne erhöhen die Chance, dass ein Vorhaben umgesetzt wird (Gollwitzer, 1999).",
         "quellen": [
           "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
           "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
+          "Bryan, C. J., Yeager, D. S., Hinojosa, C. P., Chabot, A., Bergen, H., Kawamura, M. & Steubing, F. (2016). Harnessing adolescent values to motivate healthier eating. Proceedings of the National Academy of Sciences, 113(39), 10830–10835.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "achtung": "Hinweise auf Cybermobbing, Erpressung mit Bildern, Kontakte zu Fremden oder Essprobleme nicht vor der Klasse vertiefen: nach der Stunde ansprechen, noch am selben Tag den SePAS informieren.",
@@ -13373,8 +13590,8 @@
         {
           "art": "info",
           "symbol": "wissen",
-          "titel": "Comment les applis te retiennent",
-          "text": "Le fil ne s’arrête jamais, les vidéos se lancent toutes seules, les pastilles rouges et les flammes te font revenir. L’algorithme te montre davantage de ce qui t’accroche. Quand on connaît les astuces, on décide soi-même."
+          "titel": "Ce que dit la recherche",
+          "text": "Le fil sans fin, les pastilles rouges et les flammes : construits par des gens qui gagnent de l’argent à chaque minute où tu restes accroché·e. Des jeunes qui l’ont appris ont choisi dès le lendemain, d’eux-mêmes, l’option la plus saine – par esprit de contradiction. Ce que tu fais des astuces, c’est toi qui le décides."
         },
         {
           "art": "info",
@@ -13437,17 +13654,18 @@
         }
       ],
       "lehrer": {
-        "ziel": "Les jeunes comparent leur temps d’écran estimé et réel, observent ce qu’ils ressentent après avoir scrollé, regardent derrière une image parfaite et fixent un petit changement réaliste.",
+        "ziel": "Les jeunes comparent leur temps d’écran estimé et réel, observent ce qu’ils ressentent après avoir scrollé, regardent derrière une image parfaite et fixent un petit changement réaliste avec un moment choisi par eux.",
         "ablauf": [
           "Séance 25, étape 4 (13 min) : exercice 1, estimer puis vérifier (trois étapes au tableau) – seulement si les règles du lycée le permettent, sinon avec Mila ; exercice 2 avec la roue des émotions.",
-          "Étape 7 (5 min) : exercice 3 après l’expérience du cadre, lire d’abord l’exemple de Lea ; des mots-clés suffisent.",
-          "Étape 8 (6 min) : exercice 4 après le tableau – un changement, un plan « si… alors ».",
+          "Étape 7 (4 min) : exercice 3 après l’expérience du cadre, lire d’abord l’exemple de Lea ; des mots-clés suffisent.",
+          "Étape 8 (5 min) : exercice 4 après le tableau – un changement, un plan « si… alors » ; la partie « si » devient le moment noté dans le cahier à la fin de la séance.",
           "Les chiffres et le plan restent privés ; on ne lit à voix haute que si on le souhaite."
         ],
-        "hintergrund": "En moyenne, l’usage des écrans n’est que très faiblement lié au bien-être des jeunes (Orben & Przybylski, 2019) ; ce qu’on utilise et comment on se sent après en dit davantage. Dans une expérience, dix minutes sur un réseau social ont suffi à faire baisser l’humeur de jeunes femmes (Fardouly et al., 2015). Les plans « si… alors » augmentent les chances qu’une intention soit mise en œuvre (Gollwitzer, 1999).",
+        "hintergrund": "En moyenne, l’usage des écrans n’est que très faiblement lié au bien-être des jeunes (Orben & Przybylski, 2019) ; ce qu’on utilise et comment on se sent après en dit davantage. Dans une expérience, dix minutes sur un réseau social ont suffi à faire baisser l’humeur de jeunes femmes (Fardouly et al., 2015). Quand des jeunes de 13 ans ont appris par quelles astuces des entreprises les manipulent, ils ont choisi dès le lendemain, d’eux-mêmes, l’option la plus saine (Bryan et al., 2016) – d’où l’encadré « Ce que dit la recherche ». Les plans « si… alors » augmentent les chances qu’une intention soit mise en œuvre (Gollwitzer, 1999).",
         "quellen": [
           "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
           "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
+          "Bryan, C. J., Yeager, D. S., Hinojosa, C. P., Chabot, A., Bergen, H., Kawamura, M. & Steubing, F. (2016). Harnessing adolescent values to motivate healthier eating. Proceedings of the National Academy of Sciences, 113(39), 10830–10835.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
         "achtung": "En cas de signes de cyberharcèlement, de chantage avec des images, de contacts avec des inconnus ou de problèmes alimentaires, ne pas approfondir devant la classe : en parler après le cours, informer le SePAS le jour même.",
@@ -13530,9 +13748,9 @@
         },
         {
           "art": "info",
-          "symbol": "tipp",
-          "titel": "Prüfen wie die Profis",
-          "text": "Profis bleiben nicht im Beitrag. Sie schauen woanders nach: Wer steckt dahinter? Berichten bekannte Seiten auch darüber? Seltsame Hände verraten KI-Bilder immer seltener – die Frage nach der Quelle bleibt."
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Profis bleiben nicht im Beitrag: Sie schauen woanders nach, wer dahintersteckt – und liegen damit öfter richtig als Leute, die nur das Bild genau anschauen. Wer die Tricks der Fälscher kennt, fällt messbar seltener darauf herein."
         },
         {
           "art": "info",
@@ -13607,10 +13825,11 @@
           "Schritt 7 (5 Min.): Aufgabe 2 allein, nach der KI-Abstimmung; ein Stichwort je Farbe reicht.",
           "Schritt 7 (4 Min.): den Kasten „Klare Grenze“ lesen, dann Aufgabe 3 zu zweit; zum Schluss auf den Hilfe-Kasten zeigen."
         ],
-        "hintergrund": "Professionelle Faktenprüfer verlassen eine unbekannte Seite schnell und prüfen woanders, wer dahintersteht (Wineburg & McGrew, 2019); deshalb fragt das Blatt nach der Quelle und danach, wo man nachprüfen kann. Wer die Tricks von Falschmeldungen kennt, fällt seltener darauf herein (Roozenbeek & van der Linden, 2019). Sprachmodelle erzeugen Inhalte, die plausibel klingen, aber nicht stimmen (Ji et al., 2023).",
+        "hintergrund": "Professionelle Faktenprüfer verlassen eine unbekannte Seite schnell und prüfen woanders, wer dahintersteht (Wineburg & McGrew, 2019); deshalb fragt das Blatt nach der Quelle und danach, wo man nachprüfen kann. Wer die Tricks von Falschmeldungen kennt, fällt seltener darauf herein (Roozenbeek & van der Linden, 2019); fünf kurze Videos über solche Tricks verbesserten das Erkennen von Falschmeldungen messbar (Roozenbeek et al., 2022) – daher der Kasten „Aus der Forschung“. Sprachmodelle erzeugen Inhalte, die plausibel klingen, aber nicht stimmen (Ji et al., 2023).",
         "quellen": [
           "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
           "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+          "Roozenbeek, J., van der Linden, S., Goldberg, B., Rathje, S. & Lewandowsky, S. (2022). Psychological inoculation improves resilience against misinformation on social media. Science Advances, 8(34), eabo6254.",
           "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38."
         ],
         "achtung": "Berichtet jemand von gefälschten oder intimen Bildern einer realen Person: sich nichts zeigen oder schicken lassen, nichts weiterleiten lassen, nach der Stunde sprechen, noch am selben Tag den SePAS informieren.",
@@ -13667,9 +13886,9 @@
         },
         {
           "art": "info",
-          "symbol": "tipp",
-          "titel": "Vérifier comme les pros",
-          "text": "Les pros ne restent pas dans la publication. Ils vont voir ailleurs : qui se cache derrière ? Des sites connus en parlent-ils aussi ? Les mains bizarres trahissent de moins en moins les images d’IA – la question de la source reste."
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Les pros ne restent pas dans la publication : ils vont voir ailleurs qui se cache derrière – et ils ont plus souvent raison que ceux qui examinent seulement l’image. Qui connaît les ficelles des faussaires s’y laisse nettement moins prendre."
         },
         {
           "art": "info",
@@ -13744,10 +13963,11 @@
           "Étape 7 (5 min) : exercice 2 seul, après le vote sur l’IA ; un mot-clé par couleur suffit.",
           "Étape 7 (4 min) : lire l’encadré « Limite claire », puis exercice 3 à deux ; pour finir, montrer l’encadré d’aide."
         ],
-        "hintergrund": "Des vérificateurs professionnels quittent vite un site inconnu et vont voir ailleurs qui se cache derrière (Wineburg & McGrew, 2019) ; la fiche demande donc la source, puis où l’on pourrait vérifier. Qui connaît les ficelles des fausses informations s’y laisse moins prendre (Roozenbeek & van der Linden, 2019). Les modèles de langage produisent des contenus plausibles mais faux (Ji et al., 2023).",
+        "hintergrund": "Des vérificateurs professionnels quittent vite un site inconnu et vont voir ailleurs qui se cache derrière (Wineburg & McGrew, 2019) ; la fiche demande donc la source, puis où l’on pourrait vérifier. Qui connaît les ficelles des fausses informations s’y laisse moins prendre (Roozenbeek & van der Linden, 2019) ; cinq courtes vidéos sur ces ficelles ont nettement amélioré la détection des fausses informations (Roozenbeek et al., 2022) – d’où l’encadré « Ce que dit la recherche ». Les modèles de langage produisent des contenus plausibles mais faux (Ji et al., 2023).",
         "quellen": [
           "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
           "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+          "Roozenbeek, J., van der Linden, S., Goldberg, B., Rathje, S. & Lewandowsky, S. (2022). Psychological inoculation improves resilience against misinformation on social media. Science Advances, 8(34), eabo6254.",
           "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38."
         ],
         "achtung": "Si un jeune parle d’images truquées ou intimes d’une personne réelle : ne rien se faire montrer ni envoyer, ne rien laisser transférer, lui parler après le cours, informer le SePAS le jour même.",
@@ -14179,6 +14399,12 @@
           "symbol": "merke",
           "titel": "Gedanken sind Vermutungen, keine Tatsachen",
           "text": "Manche Vermutungen stimmen, manche nicht. Welcher Gedanke dir zuerst kommt, hängt oft von einem Glaubenssatz ab: einem Satz über dich, den du schon lange für wahr hältst. Manche Glaubenssätze helfen, manche bremsen."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Ein Gedanke ist kein Beweis: Wer ein hartes Wort über sich 30 Sekunden lang schnell wiederholt, glaubt ihm danach weniger."
         }
       ],
       "lehrer": {
@@ -14186,13 +14412,15 @@
         "ablauf": [
           "Einheit 27, Schritt 3: Aufgabe 1 gemeinsam mit dem Tafelbild, nachdem die Lehrkraft Ben zweimal gespielt hat.",
           "Schritt 4: Aufgabe 2 zu zweit (4 Min.), Aufgabe 3 erst mündlich in der Tischgruppe, dann einen Gedanken aufschreiben (6 Min.), Aufgabe 4 allein (4 Min.).",
-          "Zum Schluss den Merkkasten lesen: Gedanken sind Vermutungen, keine Tatsachen."
+          "Zum Schluss den Merkkasten lesen: Gedanken sind Vermutungen, keine Tatsachen.",
+          "Der Kasten „Aus der Forschung“ fasst Masuda et al. (2004) zusammen; der Beleg steht im Hintergrund der Einheit."
         ],
         "hintergrund": "Das Blatt folgt dem kognitiven Modell: Nicht die Situation allein, sondern ihre Bewertung prägt Gefühl und Verhalten (Ellis, 1962; Beck, 2011). Grundüberzeugungen – hier Glaubenssätze – färben, welcher Gedanke zuerst kommt. Arbeitsbücher der kognitiven Verhaltenstherapie für Jugendliche führen das Modell an harmlosen Alltagssituationen ein, bevor eigene Themen folgen (Stallard, 2019).",
         "quellen": [
           "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
-          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
         ],
         "material": "Schülerheft, Tafelbild aus Schritt 3"
       }
@@ -14396,6 +14624,12 @@
           "symbol": "merke",
           "titel": "Les pensées sont des suppositions, pas des faits",
           "text": "Certaines suppositions sont justes, d’autres non. La pensée qui te vient en premier dépend souvent d’une croyance : une phrase sur toi que tu tiens pour vraie depuis longtemps. Certaines croyances aident, d’autres freinent."
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Une pensée n’est pas une preuve : qui répète vite, pendant 30 secondes, un mot dur sur lui-même y croit moins ensuite."
         }
       ],
       "lehrer": {
@@ -14403,13 +14637,15 @@
         "ablauf": [
           "Séance 27, étape 3 : exercice 1 ensemble avec le tableau, après que l’enseignant·e a joué Ben deux fois.",
           "Étape 4 : exercice 2 à deux (4 min), exercice 3 d’abord à l’oral en îlot, puis écrire une pensée (6 min), exercice 4 seul (4 min).",
-          "Pour finir, lire l’encadré : les pensées sont des suppositions, pas des faits."
+          "Pour finir, lire l’encadré : les pensées sont des suppositions, pas des faits.",
+          "L’encadré « Ce que dit la recherche » résume Masuda et al. (2004) ; la référence figure dans le fond de la séance."
         ],
         "hintergrund": "La fiche suit le modèle cognitif : ce n’est pas la situation seule, mais son évaluation qui façonne l’émotion et le comportement (Ellis, 1962 ; Beck, 2011). Les convictions profondes – ici les croyances – colorent la pensée qui vient en premier. Les cahiers de thérapie cognitive et comportementale pour les jeunes introduisent ce modèle avec des situations anodines du quotidien, avant les sujets personnels (Stallard, 2019).",
         "quellen": [
           "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
-          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
         ],
         "material": "Cahier de l’élève, tableau de l’étape 3"
       }
@@ -14659,6 +14895,12 @@
           "frage": "Stimmt er heute noch? So sehr glaube ich ihn:"
         },
         {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Über ein Problem so nachzudenken, als ginge es um eine Freundin, macht klüger und weniger aufgewühlt."
+        },
+        {
           "art": "seitenumbruch"
         },
         {
@@ -14727,6 +14969,7 @@
           "Vor dem Schreiben den Rahmen nennen: privat, nichts wird vorgelesen oder eingesammelt; die Grenze der Vertraulichkeit offen sagen.",
           "Einheit 28, Schritt 4 (10 Min.): Aufgabe 1 mit Kreuz auf der Skala, wer mag Aufgabe 2. Nur auf Nachfrage helfen, nicht mitlesen.",
           "Schritt 7 (13 Min.): Aufgaben 3 und 4, dann die Seite mit einer Büroklammer verschließen oder falten.",
+          "Der Kasten „Aus der Forschung“ fasst Kross & Ayduk (2017) zusammen; der Beleg steht im Hintergrund der Einheit.",
           "Einheit 29: Wer mag, prüft einen dieser Sätze als Detektiv; die anderen nehmen eine Karte."
         ],
         "hintergrund": "Glaubenssätze entsprechen den Grundüberzeugungen der kognitiven Verhaltenstherapie: früh gelernten, stark verallgemeinerten Annahmen über sich selbst (Beck, 2011). Herkunft und Zahl schaffen Abstand; die Frage nach dem Blick einer Freundin nutzt das Selbst-Distanzieren (Kross & Ayduk, 2017). Private Schreibaufgaben helfen, Belastendes zu ordnen, ohne es preiszugeben (Pennebaker, 1997).",
@@ -14797,6 +15040,12 @@
           "frage": "Est-elle encore vraie ? J’y crois à ce point :"
         },
         {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Réfléchir à un problème comme s’il concernait une amie rend plus lucide et moins bouleversé·e."
+        },
+        {
           "art": "seitenumbruch"
         },
         {
@@ -14865,6 +15114,7 @@
           "Avant d’écrire, poser le cadre : privé, rien n’est lu à voix haute ni ramassé ; dire ouvertement où s’arrête la confidentialité.",
           "Séance 28, étape 4 (10 min) : exercice 1 avec une croix sur l’échelle, et l’exercice 2 pour qui veut. N’aider que sur demande, ne pas lire par-dessus l’épaule.",
           "Étape 7 (13 min) : exercices 3 et 4, puis fermer la page avec un trombone ou la plier.",
+          "L’encadré « Ce que dit la recherche » résume Kross & Ayduk (2017) ; la référence figure dans le fond de la séance.",
           "Séance 29 : qui veut examine une de ces phrases en détective ; les autres prennent une carte."
         ],
         "hintergrund": "Les croyances correspondent aux convictions profondes de la thérapie cognitive et comportementale : des suppositions très générales sur soi, apprises tôt (Beck, 2011). L’origine et le chiffre créent de la distance ; la question du regard d’une amie utilise la mise à distance de soi (Kross & Ayduk, 2017). Écrire en privé aide à mettre de l’ordre dans ce qui pèse, sans le dévoiler (Pennebaker, 1997).",
@@ -15140,6 +15390,12 @@
           "beispiel": "„Ich bin dumm“ wird zu „Mathe fällt mir schwer, aber wenn ich übe und nachfrage, werde ich besser.“"
         },
         {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Jugendliche, die lernten, dass das Gehirn durch Üben wächst, verbesserten ihre Noten – am meisten die, die schlecht standen."
+        },
+        {
           "art": "aufgabe",
           "text": "Wenn du magst: Was würdest du tun, wenn du den neuen Satz glaubst? Plane eine Situation.",
           "symbole": [
@@ -15168,13 +15424,15 @@
         "ablauf": [
           "Einheit 29, Schritt 3: Aufgabe 2 an der Tafel mit dem Fall Mathis vormachen.",
           "Schritt 7 (17 Min.): Satz frei wählen – eigener Satz, Karte oder Figur; Aufgaben 1 bis 4.",
-          "Schritt 8: den neuen Satz auf ein Kärtchen übertragen und gestalten."
+          "Schritt 8: den neuen Satz auf ein Kärtchen übertragen und gestalten.",
+          "Der Kasten „Aus der Forschung“ fasst Yeager et al. (2019) zusammen; der Beleg steht im Hintergrund der Einheit."
         ],
         "hintergrund": "Das Blatt überträgt Techniken der kognitiven Verhaltenstherapie in eine jugendgerechte Form: Belege prüfen, sokratisch nachfragen und die Überzeugung vorher und nachher einschätzen (Beck, 2011). Die Frage nach der Freundin schafft Abstand (Kross & Ayduk, 2017). Im DBT-Skillstraining heißt der verwandte Skill „Fakten prüfen“ (Linehan, 2015).",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
           "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
-          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Yeager, D. S., Hanselman, P., Walton, G. M., Murray, J. S., Crosnoe, R., Muller, C. et al. (2019). A national experiment reveals where a growth mindset improves achievement. Nature, 573(7774), 364–369."
         ],
         "material": "Schülerheft, Karteikarten"
       }
@@ -15282,6 +15540,12 @@
           "beispiel": "« Je suis nul » devient « Les maths, c’est difficile pour moi, mais si je m’entraîne et que je pose des questions, je progresse. »"
         },
         {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Des jeunes qui ont appris que le cerveau grandit en s’entraînant ont amélioré leurs notes – surtout ceux qui étaient en difficulté."
+        },
+        {
           "art": "aufgabe",
           "text": "Si tu veux : que ferais-tu si tu croyais la nouvelle phrase ? Prévois une situation.",
           "symbole": [
@@ -15312,13 +15576,15 @@
         "ablauf": [
           "Séance 29, étape 3 : montrer l’exercice 2 au tableau avec le cas Mathis.",
           "Étape 7 (17 min) : choisir librement une phrase – la sienne, une carte ou un personnage ; exercices 1 à 4.",
-          "Étape 8 : recopier la nouvelle phrase sur une petite carte et la décorer."
+          "Étape 8 : recopier la nouvelle phrase sur une petite carte et la décorer.",
+          "L’encadré « Ce que dit la recherche » résume Yeager et al. (2019) ; la référence figure dans le fond de la séance."
         ],
         "hintergrund": "La fiche transpose sous une forme adaptée aux jeunes des techniques de la thérapie cognitive et comportementale : examiner les preuves, pratiquer le questionnement socratique, évaluer sa conviction avant et après (Beck, 2011). La question de l’amie crée de la distance (Kross & Ayduk, 2017). Dans l’entraînement aux skills de la DBT, le skill voisin s’appelle « vérifier les faits » (Linehan, 2015).",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
           "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
-          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Yeager, D. S., Hanselman, P., Walton, G. M., Murray, J. S., Crosnoe, R., Muller, C. et al. (2019). A national experiment reveals where a growth mindset improves achievement. Nature, 573(7774), 364–369."
         ],
         "material": "Cahier de l’élève, fiches bristol"
       }
@@ -15573,7 +15839,7 @@
       "lehrer": {
         "ziel": "Die Jugendlichen übertragen ihren neuen Satz in den Alltag: eine Situation planen, eine Woche lang Belege sammeln und bemerken, ob sich die Überzeugung verändert.",
         "ablauf": [
-          "Einheit 30, Schritt 8 (10 Min.): Satz abschreiben, Wenn-dann-Plan, Einschätzung für heute; zu zweit prüfen: Weiß man, wann und wo?",
+          "Einheit 30, Schritt 8 (10 Min.): Satz abschreiben, Wenn-dann-Plan, Einschätzung für heute; zu zweit prüfen: Weiß man, wann und wo? Im Abschluss kommt der Wenn-Teil als Moment in die Spalte „Mein Moment“ im Heft.",
           "Während der Woche: jeden Beweis, auch einen kleinen, in die Tabelle.",
           "Einheit 31, zu Beginn: Wer mag, erzählt einen Beweis. Gefragt wird nach Beobachtungen, nicht nach Erfolgen."
         ],
@@ -15681,7 +15947,7 @@
       "lehrer": {
         "ziel": "Les jeunes transfèrent leur nouvelle phrase dans le quotidien : prévoir une situation, rassembler des preuves pendant une semaine et remarquer si leur conviction change.",
         "ablauf": [
-          "Séance 30, étape 8 (10 min) : recopier la phrase, plan « si… alors », évaluation du jour ; à deux, vérifier : sait-on quand et où ?",
+          "Séance 30, étape 8 (10 min) : recopier la phrase, plan « si… alors », évaluation du jour ; à deux, vérifier : sait-on quand et où ? À la fin de la séance, la partie « si » devient le moment dans la colonne « Mon moment » du cahier.",
           "Pendant la semaine : chaque preuve, même petite, va dans le tableau.",
           "Séance 31, au début : qui veut raconte une preuve. On demande des observations, pas des réussites."
         ],
@@ -15970,6 +16236,12 @@
           "text": "Dein Skills-Koffer hilft, wenn es akut wird. Schlaf, Bewegung, Essen, Pausen und Menschen, die dir guttun, sorgen dafür, dass es seltener so weit kommt. Trag deinen Schritt deshalb auch in die grüne Zone deines Ampelplans ein."
         },
         {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "In der Pubertät verschiebt sich die innere Uhr nach hinten – spät müde zu werden ist normal, kein Charakterfehler. Darum hilft ein fester kleiner Schritt am Abend mehr als der Vorsatz, einfach früher zu schlafen."
+        },
+        {
           "art": "text",
           "text": "Nach zwei Wochen: Schau auf deine Kreuze.",
           "klein": true
@@ -15998,8 +16270,9 @@
           "Aufgabe 3: unter 7 den Schritt verkleinern, dann den Moment im Kopf durchspielen. Aufgabe 4 ohne Kontrolle, nachgefragt wird mit dem Daumen.",
           "Im Skill-Schritt: den Schritt in die grüne Zone des Ampelplans übertragen (Skills-Koffer, Einheit 17)."
         ],
-        "hintergrund": "Vorsätze scheitern selten am Wissen, sondern an der Umsetzung. Wenn-dann-Pläne, die festlegen, wann, wo und wie gehandelt wird, werden deutlich häufiger umgesetzt als allgemeine Absichten (Gollwitzer, 1999). Die Zuversichtsskala aus der motivierenden Gesprächsführung hilft, den Schritt so zu bemessen, dass er gelingt (Miller & Rollnick, 2013). Ziele rund um Gewicht werden bewusst nicht bestärkt: Diäten im Jugendalter gehen eher mit späteren Essproblemen einher (Neumark-Sztainer et al., 2006).",
+        "hintergrund": "Vorsätze scheitern selten am Wissen, sondern an der Umsetzung. Wenn-dann-Pläne, die festlegen, wann, wo und wie gehandelt wird, werden deutlich häufiger umgesetzt als allgemeine Absichten (Gollwitzer, 1999). Die Zuversichtsskala aus der motivierenden Gesprächsführung hilft, den Schritt so zu bemessen, dass er gelingt (Miller & Rollnick, 2013). Der Kasten „Aus der Forschung“ nimmt dem Thema Schlaf die Moral: In der Pubertät verschiebt sich die innere Uhr nach hinten (Carskadon, 2011). Ziele rund um Gewicht werden bewusst nicht bestärkt: Diäten im Jugendalter gehen eher mit späteren Essproblemen einher (Neumark-Sztainer et al., 2006).",
         "quellen": [
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
           "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford.",
           "Neumark-Sztainer, D., Wall, M., Guo, J., Story, M., Haines, J. & Eisenberg, M. (2006). Obesity, disordered eating, and eating disorders in a longitudinal study of adolescents: How do dieters fare 5 years later? Journal of the American Dietetic Association, 106(4), 559–568."
@@ -16125,6 +16398,12 @@
           "text": "Ta valise à skills t’aide quand ça devient aigu. Le sommeil, le mouvement, l’alimentation, les pauses et les gens qui te font du bien font en sorte que ça arrive moins souvent. Inscris donc aussi ton petit pas dans la zone verte de ton plan feu tricolore."
         },
         {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "À la puberté, l’horloge interne se décale vers le soir – avoir sommeil tard est normal, pas un défaut. C’est pourquoi un petit pas fixe le soir aide plus que la résolution de se coucher plus tôt."
+        },
+        {
           "art": "text",
           "text": "Au bout de deux semaines : regarde tes croix.",
           "klein": true
@@ -16153,8 +16432,9 @@
           "Exercice 3 : en dessous de 7, rendre le pas plus petit, puis se représenter le moment. Exercice 4 sans contrôle ; on demande avec le pouce.",
           "À l’étape du skill : reporter le pas dans la zone verte du plan feu tricolore (valise à skills, séance 17)."
         ],
-        "hintergrund": "Les bonnes résolutions échouent rarement par manque de savoir, mais au moment de passer à l’acte. Les plans « si… alors », qui fixent quand, où et comment agir, sont nettement plus souvent mis en œuvre que les intentions générales (Gollwitzer, 1999). L’échelle de confiance, issue de l’entretien motivationnel, aide à doser le pas pour qu’il réussisse (Miller & Rollnick, 2013). Les objectifs liés au poids ne sont volontairement pas encouragés : à l’adolescence, les régimes vont plutôt de pair avec des problèmes alimentaires ultérieurs (Neumark-Sztainer et al., 2006).",
+        "hintergrund": "Les bonnes résolutions échouent rarement par manque de savoir, mais au moment de passer à l’acte. Les plans « si… alors », qui fixent quand, où et comment agir, sont nettement plus souvent mis en œuvre que les intentions générales (Gollwitzer, 1999). L’échelle de confiance, issue de l’entretien motivationnel, aide à doser le pas pour qu’il réussisse (Miller & Rollnick, 2013). L’encadré « Ce que dit la recherche » enlève toute morale au sujet du sommeil : à la puberté, l’horloge interne se décale vers le soir (Carskadon, 2011). Les objectifs liés au poids ne sont volontairement pas encouragés : à l’adolescence, les régimes vont plutôt de pair avec des problèmes alimentaires ultérieurs (Neumark-Sztainer et al., 2006).",
         "quellen": [
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
           "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford.",
           "Neumark-Sztainer, D., Wall, M., Guo, J., Story, M., Haines, J. & Eisenberg, M. (2006). Obesity, disordered eating, and eating disorders in a longitudinal study of adolescents: How do dieters fare 5 years later? Journal of the American Dietetic Association, 106(4), 559–568."
@@ -16463,7 +16743,7 @@
             },
             {
               "titel": "Vor der Tür",
-              "text": "Nicht mitreden, wenn es dich nervös macht."
+              "text": "Herz klopft? Dein Körper macht sich bereit. Nicht mitreden, wenn es nervös macht."
             },
             {
               "titel": "In den ersten Minuten",
@@ -16484,9 +16764,15 @@
           "beispiele": [
             {
               "wenn": "Wenn mir bei einer Aufgabe nichts mehr einfällt,",
-              "dann": "atme ich zweimal lang aus, markiere die Aufgabe und mache mit der nächsten weiter."
+              "dann": "atme ich zweimal lang aus, sage mir „Mein Körper ist bereit“, markiere die Aufgabe und mache mit der nächsten weiter."
             }
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Wer sich vor einem Test sagt „Ich bin aufgeregt – mein Körper macht sich bereit“, schneidet besser ab als jemand, der sich beruhigen will. Herzklopfen ist Energie, keine Gefahr."
         },
         {
           "art": "info",
@@ -16533,11 +16819,12 @@
           "Schritt 9: nach Blackout-Probe und Füße, Atem, Stift den Blackout-Plan und den eigenen Skill eintragen (Aufgabe 4).",
           "Die Sätze unten erst nach dem Test ausfüllen; nachgefragt wird, was geholfen hat, nie die Note."
         ],
-        "hintergrund": "Prüfungsangst besteht aus Sorgengedanken und körperlicher Aufregung; vor allem die Sorgen binden Aufmerksamkeit, die für die Aufgaben fehlt (Zeidner, 1998). Deshalb verbindet das Blatt Lernplanung mit dem Prüfen von Gedanken und einem Körper-Skill. Für das Lernen sind Selbsttests und verteiltes Lernen am besten belegt (Dunlosky et al., 2013); Wenn-dann-Pläne werden im entscheidenden Moment leichter abgerufen als gute Vorsätze (Gollwitzer, 1999).",
+        "hintergrund": "Prüfungsangst besteht aus Sorgengedanken und körperlicher Aufregung; vor allem die Sorgen binden Aufmerksamkeit, die für die Aufgaben fehlt (Zeidner, 1998). Deshalb verbindet das Blatt Lernplanung mit dem Prüfen von Gedanken und einem Körper-Skill. Für das Lernen sind Selbsttests und verteiltes Lernen am besten belegt (Dunlosky et al., 2013); Wenn-dann-Pläne werden im entscheidenden Moment leichter abgerufen als gute Vorsätze (Gollwitzer, 1999). Der Kasten „Aus der Forschung“ und der Satz im Blackout-Plan beruhen auf der Umdeutung von Aufregung als Bereitschaft, die in Prüfungen die Leistung verbessert (Brooks, 2014).",
         "quellen": [
           "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
           "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
-          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Brooks, A. W. (2014). Get excited: Reappraising pre-performance anxiety as excitement. Journal of Experimental Psychology: General, 143(3), 1144–1158."
         ],
         "achtung": "Nicht nach Noten oder Reaktionen der Eltern fragen. Wirkt die Angst über Wochen lähmend oder deutet jemand an, den Druck nicht mehr auszuhalten: Gespräch nach der Stunde, Régent und SePAS einbeziehen, nach dem Schutzkonzept der Schule handeln.",
         "material": "Testtermine der Klasse, Stifte"
@@ -16649,7 +16936,7 @@
             },
             {
               "titel": "Devant la porte",
-              "text": "Ne pas se mêler aux discussions qui stressent."
+              "text": "Le cœur bat ? Ton corps se prépare. Évite les discussions qui stressent."
             },
             {
               "titel": "Les premières minutes",
@@ -16672,9 +16959,15 @@
           "beispiele": [
             {
               "wenn": "Si plus rien ne me vient pour une question,",
-              "dann": "j’expire longuement deux fois, je marque la question et je passe à la suivante."
+              "dann": "j’expire longuement deux fois, je me dis « mon corps se prépare », je marque la question et je passe à la suivante."
             }
           ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Qui se dit avant un devoir « Je suis stressé – mon corps se prépare » réussit mieux que celui qui essaie de se calmer. Le cœur qui bat, c’est de l’énergie, pas un danger."
         },
         {
           "art": "info",
@@ -16721,11 +17014,12 @@
           "Étape 9 : après la simulation et pieds, souffle, stylo, noter le plan en cas de trou de mémoire et son skill (exercice 4).",
           "Les phrases du bas ne se remplissent qu’après le devoir ; on demande ce qui a aidé, jamais la note."
         ],
-        "hintergrund": "La peur des épreuves se compose de pensées inquiètes et d’agitation physique ; ce sont surtout les inquiétudes qui accaparent l’attention, et elle manque ensuite pour les questions (Zeidner, 1998). La fiche relie donc la planification des révisions à l’examen des pensées et à un skill corporel. Pour réviser, se tester soi-même et répartir les révisions sont les méthodes les mieux étayées (Dunlosky et al., 2013) ; les plans « si… alors » reviennent plus facilement au moment décisif que les bonnes résolutions (Gollwitzer, 1999).",
+        "hintergrund": "La peur des épreuves se compose de pensées inquiètes et d’agitation physique ; ce sont surtout les inquiétudes qui accaparent l’attention, et elle manque ensuite pour les questions (Zeidner, 1998). La fiche relie donc la planification des révisions à l’examen des pensées et à un skill corporel. Pour réviser, se tester soi-même et répartir les révisions sont les méthodes les mieux étayées (Dunlosky et al., 2013) ; les plans « si… alors » reviennent plus facilement au moment décisif que les bonnes résolutions (Gollwitzer, 1999). L’encadré « Ce que dit la recherche » et la phrase du plan en cas de trou de mémoire reposent sur la réévaluation du trac comme préparation, qui améliore la performance aux examens (Brooks, 2014).",
         "quellen": [
           "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
           "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
-          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Brooks, A. W. (2014). Get excited: Reappraising pre-performance anxiety as excitement. Journal of Experimental Psychology: General, 143(3), 1144–1158."
         ],
         "achtung": "Ne pas demander les notes ni les réactions des parents. Si la peur paralyse pendant des semaines ou si un jeune laisse entendre qu’il ne supporte plus la pression : entretien après le cours, impliquer le régent et le SePAS, agir selon le protocole de protection de l’école.",
         "material": "Dates des devoirs de la classe, stylos"
@@ -17536,15 +17830,27 @@
         {
           "art": "satzanfaenge",
           "items": [
-            "Hallo …, heute ist der …",
+            "Hallo …, heute ist der …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
             "Gerade beschäftigt mich …",
             "Dieses Jahr habe ich gelernt, dass …",
             "Darauf bin ich stolz: …",
-            "Dieser Skill soll dich begleiten: …",
+            "Dieser Skill soll dich begleiten: …"
+          ],
+          "linien": 3
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
             "Wenn es mal schwer wird, denk daran: …",
             "Im neuen Schuljahr wünsche ich dir …"
           ],
-          "linien": 3
+          "linien": 2
         },
         {
           "art": "satzanfaenge",
@@ -17552,6 +17858,12 @@
             "Bis bald – dein Ich vom Ende der 7e:"
           ],
           "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Aus der Forschung",
+          "text": "Wer über Erlebtes schreibt, ordnet es im Kopf – in Studien waren die Schreibenden danach sogar gesünder. Und Jugendliche, die zwei Wochen lang aufschrieben, wofür sie dankbar sind, waren danach zufriedener mit der Schule."
         }
       ],
       "lehrer": {
@@ -17561,10 +17873,11 @@
           "Einheit 35 (15 Min.): Rahmen nennen (2 Min.), schreiben bei leiser Musik (10 Min.), verschließen und sichtbar in die Box legen (3 Min.).",
           "Rückgabe im neuen Schuljahr persönlich und ohne Druck, den Brief vor anderen zu öffnen."
         ],
-        "hintergrund": "Über eigene Erfahrungen zu schreiben, hilft, sie zu ordnen (Pennebaker, 1997). Die Sicht auf ein späteres Ich schafft Abstand; aus dieser Distanz fällt es leichter, klug und freundlich mit sich selbst zu sprechen (Kross & Ayduk, 2017).",
+        "hintergrund": "Über eigene Erfahrungen zu schreiben, hilft, sie zu ordnen (Pennebaker, 1997). Die Sicht auf ein späteres Ich schafft Abstand; aus dieser Distanz fällt es leichter, klug und freundlich mit sich selbst zu sprechen (Kross & Ayduk, 2017). Der Kasten „Aus der Forschung“ stützt sich auf Pennebaker (1997) und Froh, Sefick & Emmons (2008).",
         "quellen": [
           "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
-          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233."
         ],
         "material": "Briefbogen und Umschlag je Person, verschließbare Box, leise Musik"
       }
@@ -17589,15 +17902,27 @@
         {
           "art": "satzanfaenge",
           "items": [
-            "Salut…, aujourd’hui, nous sommes le…",
+            "Salut…, aujourd’hui, nous sommes le…"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
             "En ce moment, je pense souvent à…",
             "Cette année, j’ai appris que…",
             "Je suis fier, fière de…",
-            "Le skill à garder avec toi : …",
+            "Le skill à garder avec toi : …"
+          ],
+          "linien": 3
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
             "Quand ce sera difficile, pense à…",
             "Pour la nouvelle année scolaire, je te souhaite…"
           ],
-          "linien": 3
+          "linien": 2
         },
         {
           "art": "satzanfaenge",
@@ -17605,6 +17930,12 @@
             "À bientôt – moi, à la fin de la 7e :"
           ],
           "linien": 1
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce que dit la recherche",
+          "text": "Qui écrit sur ce qu’il a vécu met de l’ordre dans sa tête – dans des études, les personnes qui écrivaient étaient ensuite même en meilleure santé. Et des jeunes qui ont noté pendant deux semaines ce pour quoi ils étaient reconnaissants étaient ensuite plus satisfaits de l’école."
         }
       ],
       "lehrer": {
@@ -17614,10 +17945,11 @@
           "Séance 35 (15 min) : poser le cadre (2 min), écrire en musique douce (10 min), fermer et déposer bien en vue dans la boîte (3 min).",
           "Remise l’année suivante en main propre, sans pousser personne à ouvrir sa lettre devant les autres."
         ],
-        "hintergrund": "Écrire sur ses propres expériences aide à les mettre en ordre (Pennebaker, 1997). Se placer du point de vue de son moi futur crée de la distance ; avec ce recul, il est plus facile de se parler avec sagesse et bienveillance (Kross & Ayduk, 2017).",
+        "hintergrund": "Écrire sur ses propres expériences aide à les mettre en ordre (Pennebaker, 1997). Se placer du point de vue de son moi futur crée de la distance ; avec ce recul, il est plus facile de se parler avec sagesse et bienveillance (Kross & Ayduk, 2017). L’encadré « Ce que dit la recherche » s’appuie sur Pennebaker (1997) et Froh, Sefick & Emmons (2008).",
         "quellen": [
           "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
-          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233."
         ],
         "material": "Papier à lettre et enveloppe par jeune, boîte qui se ferme, musique douce"
       }

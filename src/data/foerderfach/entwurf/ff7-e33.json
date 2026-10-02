@@ -104,7 +104,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, Mission und Ausblick"
+            "titel": "Skills-Pass, Moment wählen und Mission"
           }
         ],
         "schritte": [
@@ -124,8 +124,9 @@
             "titel": "Rückblick und Start ins letzte Kapitel",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Per Daumen nach der Wochen-Mission aus der Testphase fragen: Wer hat den ersten Termin aus dem Lernplan eingehalten oder Füße, Atem, Stift ausprobiert – hoch, Mitte, runter? Eine Stimme erzählt. Dann auf den Jahresweg zeigen: Die Klasse ist im letzten Kapitel angekommen, „Abschluss – Was nehme ich mit?“. Das Projekt in drei Sätzen erklären (Liste) und an die Tafel schreiben: heute Idee und Szenen, nächste Woche proben und zeigen.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Per Daumen nach der Wochen-Mission aus der Testphase fragen: Kam euer Moment – der erste Lerntermin oder das Herzklopfen in der Schule – und was habt ihr gemacht: zehn Minuten gelernt, Füße, Atem, Stift? Hoch, Mitte, runter; eine Stimme erzählt, und ein Moment, der nicht kam, ist auch eine Auskunft. Dann auf den Jahresweg zeigen: Die Klasse ist im letzten Kapitel angekommen, „Abschluss – Was nehme ich mit?“. Das Projekt in drei Sätzen erklären (Liste) und an die Tafel schreiben: heute Idee und Szenen, nächste Woche proben und zeigen.",
             "sagen": [
+              "Kam euer Moment – der Lerntermin oder das Herzklopfen – und was habt ihr gemacht? Daumen, dann eine Stimme.",
               "Ihr habt dieses Jahr eine Menge gelernt. In den nächsten zwei Stunden zeigt ihr es – nicht in einem Test, sondern auf der Bühne."
             ],
             "punkte": [
@@ -246,7 +247,7 @@
             "titel": "Skill: Aufregung umdeuten",
             "dauer": 10,
             "phase": "skill",
-            "text": "Anknüpfen: Wer hatte eben vor dem Standbild Herzklopfen? Nächste Woche zeigt ihr das ganze Stück – Profis nennen das Gefühl Lampenfieber. Erklären: Herzklopfen, schneller Atem und kribbelnde Hände heißen nicht, dass etwas schiefgeht; der Körper stellt Energie bereit, wie vor einem Spiel. Damit man es spürt, laufen alle zwanzig Sekunden leise auf der Stelle (oder trommeln schnell auf die Oberschenkel). Dann die drei Schritte langsam anleiten, selbst mitmachen und zweimal üben (Liste). Zum Schluss zwei, drei Rückmeldungen: Was war anders? Wann hilft das – vor einem Test, einem Elfmeter, dem ersten Tag im Praktikum? Klarstellen: Der Skill gilt für Aufregung vor einem Auftritt; wer vor einer Person Angst hat, holt Hilfe.",
+            "text": "Anknüpfen: Wer hatte eben vor dem Standbild Herzklopfen? Nächste Woche zeigt ihr das ganze Stück – Profis nennen das Gefühl Lampenfieber. Den Satz dazu kennt die Klasse aus der Test-Stunde: Mein Körper macht sich bereit. Kurz erinnern, warum er stimmt: Herzklopfen, schneller Atem und kribbelnde Hände heißen nicht, dass etwas schiefgeht; der Körper stellt Energie bereit, wie vor einem Spiel – vor dem Test wie vor der Bühne. Damit man es spürt, laufen alle zwanzig Sekunden leise auf der Stelle (oder trommeln schnell auf die Oberschenkel). Dann die drei Schritte langsam anleiten, selbst mitmachen und zweimal üben (Liste). Zum Schluss zwei, drei Rückmeldungen: Was war anders? Wann hilft das – vor einem Test, einem Elfmeter, dem ersten Tag im Praktikum? Klarstellen: Der Skill gilt für Aufregung vor einem Auftritt; wer vor einer Person Angst hat, holt Hilfe.",
             "sagen": [
               "Euer Herz klopft. Das heißt nicht: Gleich geht es schief. Das heißt: Euer Körper macht sich bereit.",
               "Ihr müsst die Aufregung nicht wegmachen. Ihr könnt sie benutzen."
@@ -256,35 +257,37 @@
               "Umdeuten: Sag dir innerlich: Mein Körper macht sich bereit.",
               "Ausatmen: vier Zählzeiten ein, sechs aus, dreimal; dabei die Füße fest in den Boden drücken."
             ],
-            "tipp": "Den Satz „Mein Körper macht sich bereit“ an der Tafel stehen lassen und nächste Woche vor dem ersten Auftritt von allen gemeinsam sprechen lassen – leise, aber gleichzeitig.",
+            "tipp": "Den Satz „Mein Körper macht sich bereit“ an der Tafel stehen lassen und nächste Woche vor dem ersten Auftritt von allen gemeinsam sprechen lassen – leise, aber gleichzeitig. Test-Stunde, heute, Auftritt: Ein Satz, der dreimal in neuem Zusammenhang geübt wird, ist im Ernstfall abrufbar.",
             "wennEsKippt": "Wird das Laufen auf der Stelle zum Wettrennen, nach zehn Sekunden „Freeze!“ rufen und direkt mit dem ersten Schritt weitermachen – die Ruhe danach gehört zur Übung. Kichern beim Satz ist normal; wer ihn nicht sagen mag, denkt nur ein Wort: bereit."
           },
           {
-            "titel": "Skills-Pass, Mission und Ausblick",
+            "titel": "Skills-Pass, Moment wählen und Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Was ist die Botschaft unseres Stücks – und was trage ich dazu bei? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel. Dann die Wochen-Mission ansagen, die im Heft steht: einmal im Alltag die Aufregung umdeuten. Die Requisite-Person jeder Gruppe bringt die Sachen zurück in die Kiste; Themenseite und Karten kommen in die Tüte mit dem Gruppenbuchstaben, die Lehrkraft bewahrt die Tüten bis nächste Woche auf. Zum Schluss der Ausblick auf die nächste Stunde.",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Was ist die Botschaft unseres Stücks – und was trage ich dazu bei? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel. Moment wählen (1 Min.): Die Wochen-Mission im Heft vorlesen – wenn dein Herz schneller schlägt, dann: Mein Körper macht sich bereit, und lang ausatmen. Auf drei zeigen alle, wann ihr Moment diese Woche kommt: ein Finger für einen Test, zwei für Training oder Spiel, drei für Vorlesen oder Vortrag, die Faust für einen eigenen Moment; dann schreibt jede Person ihn in die Spalte „Mein Moment: Wenn …“, ein Stichwort reicht. Aufräumen und Ausblick (2 Min.): Die Requisite-Person jeder Gruppe bringt die Sachen zurück in die Kiste; Themenseite und Karten kommen in die Tüte mit dem Gruppenbuchstaben, die Lehrkraft bewahrt die Tüten bis nächste Woche auf. Zum Schluss der Ausblick auf die nächste Stunde.",
             "sagen": [
               "Für den Skills-Pass: Was ist eure Botschaft – und was ist euer Teil daran?",
-              "Wenn euer Herz diese Woche schneller schlägt, probiert den Satz aus: Mein Körper macht sich bereit."
+              "Wann klopft euer Herz diese Woche? Test – ein Finger, Training oder Spiel – zwei, Vorlesen – drei, ein eigener Moment – die Faust. Schreibt ihn ins Heft: Wenn …, dann: Mein Körper macht sich bereit."
             ],
-            "tipp": "Wer oft sein Heft vergisst, legt es heute mit in die Tüte seiner Gruppe – sonst fehlt nächste Woche der Plan."
+            "tipp": "Wer oft sein Heft vergisst, legt es heute mit in die Tüte seiner Gruppe – sonst fehlt nächste Woche der Plan. Der Moment ist der eigentliche Plan: Nächste Woche fragt die Brücke, ob er kam – ohne Kontrolle.",
+            "wennEsKippt": "Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Wer die Sprache noch lernt, malt ein kleines Zeichen für seinen Moment: Blatt, Ball, Buch."
           }
         ],
         "bruecke": "Nächste Woche probt ihr noch einmal und zeigt eure Stücke der Klasse – mit Rückmeldungen nach festen, freundlichen Regeln. Auf die Bühne muss niemand, aber jede Aufgabe zählt.",
         "mission": "Wenn dein Herz diese Woche schneller schlägt – vor einem Test, im Training oder beim Vorlesen –, sag dir: Mein Körper macht sich bereit. Atme dann lang aus.",
-        "hintergrund": "Am Ende eines Jahres wissen viele Jugendliche mehr, als sie in Worte fassen können; ein eigenes Stück macht das Gelernte sichtbar. Wer ein Verhalten nicht nur bespricht, sondern selbst spielt und damit vor anderen Erfolg hat, erlebt sich als wirksam: Nach Bandura (1977) sind eigene Erfolgserlebnisse die stärkste Quelle von Selbstwirksamkeit, und wer zuschaut, lernt am Modell mit. Programme zum sozial-emotionalen Lernen wirken besonders, wenn sie aktiv üben lassen und offen benennen, worum es geht (Durlak et al., 2011) – genau das leistet die Botschaft in einem Satz. Feste Aufgaben vor und hinter der Bühne beteiligen alle, ohne jemanden vorzuführen. Der Skill der Stunde setzt beim Lampenfieber an: Studierende, denen vor einem Test erklärt wurde, dass Aufregung die Leistung unterstützen kann, schnitten im Mathematikteil besser ab als eine Vergleichsgruppe ohne diesen Hinweis (Jamieson et al., 2010).",
+        "hintergrund": "Ein eigenes Stück zeigt, was die Klasse in einem Jahr gelernt hat. Grundlage ist das Forumtheater nach Boal (1979): Eine Szene zeigt, wie es schiefgeht, und das Publikum sucht die Wendung – genau das fragt die Vorschau: Welcher Skill könnte hier helfen? Wer ein Verhalten selbst spielt und damit vor anderen besteht, macht eine Bewältigungserfahrung, nach Bandura (1977) die stärkste Quelle von Selbstwirksamkeit; Aufgaben hinter der Bühne beteiligen alle, ohne jemanden vorzuführen. Der Skill deutet Lampenfieber um: Wer Herzklopfen als Bereitschaft statt als Gefahr versteht, schneidet in Prüfungen besser ab (Jamieson et al., 2010); wer sich vor einem Auftritt „Ich bin gespannt“ statt „Ich bin ruhig“ sagt, singt, redet und rechnet besser (Brooks, 2014). Die Stunde bietet darum Bereitschaft statt Ruhe an – mit dem Satz aus der Test-Stunde, hier zum zweiten, beim Auftritt zum dritten Mal.",
         "quellen": [
+          "Boal, A. (1979). Theatre of the Oppressed. London: Pluto Press.",
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
-          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
-          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212."
+          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212.",
+          "Brooks, A. W. (2014). Get excited: Reappraising pre-performance anxiety as excitement. Journal of Experimental Psychology: General, 143(3), 1144–1158."
         ],
         "achtung": "Keine echten Vorfälle, Namen oder Personen aus Klasse und Schule nachspielen, auch keine Lehrkräfte; keine Witze über Herkunft, Sprache, Religion oder Aussehen. Rollen, in denen jemand ausgelacht, ausgegrenzt oder bedroht wird, nur freiwillig vergeben – nie an jemanden, der Mobbing erlebt. Gewalt nur andeuten, Berührung nur nach Absprache. Gefilmt wird nur mit einem Tablet der Schule, mit dem nötigen Einverständnis und nur, wer selbst Ja sagt. Wird im Spiel oder bei der Themenwahl deutlich, dass jemand Gewalt oder Mobbing erlebt: nicht vor der Klasse vertiefen, nach der Stunde ansprechen, am selben Tag den SePAS informieren.",
         "differenzierung": {
-          "leichter": "Die Themen vorlesen und dabei auf die Bilder zeigen; im Szenenplan reichen Strichfiguren und ein Stichwort. Wer die Sprache noch lernt oder mühsam liest, bekommt eine Aufgabe mit wenig Text (Standbild, Geräusche, Technik), am besten im Tandem; eine Figur darf auch in ihrer eigenen Sprache sprechen.",
+          "leichter": "Die Themen vorlesen und dabei auf die Bilder zeigen; im Szenenplan reichen Strichfiguren und ein Stichwort. Wer die Sprache noch lernt oder mühsam liest, bekommt eine Aufgabe mit wenig Text (Standbild, Geräusche, Technik), am besten im Tandem; eine Figur darf auch in ihrer eigenen Sprache sprechen. Für die Spalte „Mein Moment“ reicht ein Wort: Test, Training.",
           "schwerer": "Die Wendung zweimal planen: einmal, wie es oft läuft, einmal mit einem Skill aus dem Jahr. Oder als Regie nach der Vorschau einen Probenplan für nächste Woche schreiben: Was proben wir zuerst, was muss lauter, was kürzer werden?"
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gefühl, Zahl und Lust auf Bühne (5 Min.), Thema wählen und Botschaft finden (10 Min.), drei Szenen planen und Aufgaben verteilen (15 Min.), erste Probe (10 Min.), Aufregung umdeuten (5 Min.), Skills-Pass und Mission (5 Min.). Die Standbild-Vorschau entfällt; die Abmachungen werden zu Beginn der nächsten Stunde gelesen."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gefühl, Zahl und Lust auf Bühne (5 Min.), Thema wählen und Botschaft finden (10 Min.), drei Szenen planen und Aufgaben verteilen (15 Min.), erste Probe (10 Min.), Aufregung umdeuten (5 Min.), Skills-Pass, Moment wählen und Mission (5 Min.). Die Standbild-Vorschau entfällt; die Abmachungen werden zu Beginn der nächsten Stunde gelesen."
       },
       "fr": {
         "titel": "Notre pièce 1 : idée et scènes",
@@ -354,7 +357,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass, mission et suite"
+            "titel": "Skills-Pass, choisir son moment et mission"
           }
         ],
         "schritte": [
@@ -374,8 +377,9 @@
             "titel": "Retour sur la séance et dernier chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission sur les devoirs en classe, vote du pouce : qui a tenu la première séance de son plan de révision ou essayé pieds, souffle, stylo – en haut, au milieu, en bas ? Une voix raconte. Puis montrer le chemin de l’année : la classe est arrivée au dernier chapitre, « Bilan – qu’est-ce que j’emporte ? ». Expliquer le projet en trois phrases (liste) et l’écrire au tableau : aujourd’hui, l’idée et les scènes ; la semaine prochaine, répéter et présenter.",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission de la semaine sur les devoirs en classe, vote du pouce : votre moment est-il venu – la première séance de révision ou le cœur qui bat à l’école – et qu’avez-vous fait : dix minutes de révision, pieds, souffle, stylo ? En haut, au milieu, en bas ; une voix raconte, et un moment qui n’est pas venu est aussi une information. Puis montrer le chemin de l’année : la classe est arrivée au dernier chapitre, « Bilan – qu’est-ce que j’emporte ? ». Expliquer le projet en trois phrases (liste) et l’écrire au tableau : aujourd’hui, l’idée et les scènes ; la semaine prochaine, répéter et présenter.",
             "sagen": [
+              "Votre moment est-il venu – la séance de révision ou le cœur qui bat – et qu’avez-vous fait ? Le pouce, puis une voix.",
               "Vous avez appris beaucoup de choses cette année. Pendant les deux prochaines séances, vous allez le montrer – pas dans un devoir en classe, mais sur scène."
             ],
             "punkte": [
@@ -496,7 +500,7 @@
             "titel": "Skill : voir le trac autrement",
             "dauer": 10,
             "phase": "skill",
-            "text": "Faire le lien : qui avait le cœur qui battait avant l’image figée ? La semaine prochaine, vous présentez la pièce entière – les comédiens appellent ça le trac. Expliquer : le cœur qui bat vite, la respiration rapide et les mains qui picotent ne veulent pas dire que ça va rater ; le corps libère de l’énergie, comme avant un match. Pour le sentir, tout le monde court sur place sans bruit pendant vingt secondes (ou tambourine vite sur ses cuisses). Puis guider lentement les trois étapes en les faisant soi-même, deux fois (liste). Pour finir, deux ou trois retours : qu’est-ce qui a changé ? Quand est-ce que ça aide – avant un devoir en classe, un penalty, le premier jour de stage ? Préciser : ce skill vaut pour le trac avant de se montrer ; qui a peur d’une personne va chercher de l’aide.",
+            "text": "Faire le lien : qui avait le cœur qui battait avant l’image figée ? La semaine prochaine, vous présentez la pièce entière – les comédiens appellent ça le trac. La classe connaît la phrase depuis la séance sur les devoirs en classe : mon corps se prépare. Rappeler brièvement pourquoi elle est vraie : le cœur qui bat vite, la respiration rapide et les mains qui picotent ne veulent pas dire que ça va rater ; le corps libère de l’énergie, comme avant un match – avant un devoir comme avant la scène. Pour le sentir, tout le monde court sur place sans bruit pendant vingt secondes (ou tambourine vite sur ses cuisses). Puis guider lentement les trois étapes en les faisant soi-même, deux fois (liste). Pour finir, deux ou trois retours : qu’est-ce qui a changé ? Quand est-ce que ça aide – avant un devoir en classe, un penalty, le premier jour de stage ? Préciser : ce skill vaut pour le trac avant de se montrer ; qui a peur d’une personne va chercher de l’aide.",
             "sagen": [
               "Votre cœur bat vite. Ça ne veut pas dire : ça va rater. Ça veut dire : votre corps se prépare.",
               "Vous n’avez pas besoin de faire disparaître le trac. Vous pouvez vous en servir."
@@ -506,35 +510,37 @@
               "Voir autrement : dis-toi intérieurement : mon corps se prépare.",
               "Expirer : inspire sur quatre temps, expire sur six, trois fois, en appuyant bien les pieds dans le sol."
             ],
-            "tipp": "Laisser au tableau la phrase « Mon corps se prépare » et, la semaine prochaine, la faire dire une fois par toute la classe avant la première prestation – doucement, mais ensemble.",
+            "tipp": "Laisser au tableau la phrase « Mon corps se prépare » et, la semaine prochaine, la faire dire une fois par toute la classe avant la première prestation – doucement, mais ensemble. Séance sur les devoirs, aujourd’hui, prestation : une phrase exercée trois fois dans un contexte nouveau reste disponible le jour où il le faut.",
             "wennEsKippt": "Si la course sur place tourne à la compétition, lancer « Statue ! » au bout de dix secondes et enchaîner directement avec la première étape – le calme qui suit fait partie de l’exercice. Les rires au moment de la phrase sont normaux ; qui ne veut pas la dire pense seulement un mot : prêt."
           },
           {
-            "titel": "Skills-Pass, mission et suite",
+            "titel": "Skills-Pass, choisir son moment et mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire au tableau la question du Skills-Pass : quel est le message de notre pièce – et qu’est-ce que j’y apporte ? Chacun écrit sa phrase (2 min) et reçoit le tampon. Puis annoncer la mission de la semaine, qui figure dans le cahier : une fois dans la semaine, voir le trac autrement. Dans chaque îlot, la personne chargée des accessoires les remet dans la caisse ; la page des thèmes et les cartes vont dans le sac marqué de la lettre de l’îlot, que l’enseignant·e garde jusqu’à la semaine prochaine. Pour finir, annoncer la prochaine séance.",
+            "text": "Écrire au tableau la question du Skills-Pass : quel est le message de notre pièce – et qu’est-ce que j’y apporte ? Chacun écrit sa phrase (2 min) et reçoit le tampon. Choisir son moment (1 min) : lire la mission de la semaine dans le cahier – quand ton cœur bat plus vite, alors : mon corps se prépare, et expirer longuement. À trois, chacun montre quand son moment viendra cette semaine : un doigt pour un devoir en classe, deux pour l’entraînement ou un match, trois pour une lecture à voix haute ou un exposé, le poing pour un moment à soi ; puis chacun l’écrit dans la colonne « Mon moment : quand… », un mot-clé suffit. Ranger et annoncer la suite (2 min) : dans chaque îlot, la personne chargée des accessoires les remet dans la caisse ; la page des thèmes et les cartes vont dans le sac marqué de la lettre de l’îlot, que l’enseignant·e garde jusqu’à la semaine prochaine. Pour finir, annoncer la prochaine séance.",
             "sagen": [
               "Pour le Skills-Pass : quel est votre message – et quelle est votre part ?",
-              "Si votre cœur bat plus vite cette semaine, essayez la phrase : mon corps se prépare."
+              "Quand votre cœur va-t-il battre cette semaine ? Devoir en classe – un doigt, entraînement ou match – deux, lecture à voix haute – trois, un moment à vous – le poing. Écrivez-le dans le cahier : quand…, alors : mon corps se prépare."
             ],
-            "tipp": "Qui oublie souvent son cahier le met aujourd’hui dans le sac de son îlot – sinon, le plan manquera la semaine prochaine."
+            "tipp": "Qui oublie souvent son cahier le met aujourd’hui dans le sac de son îlot – sinon, le plan manquera la semaine prochaine. Le moment, c’est le vrai plan : la semaine prochaine, le lien demande s’il est venu – sans contrôle.",
+            "wennEsKippt": "Qui ne veut pas choisir de moment laisse la colonne vide – personne ne demandera la semaine prochaine. Qui apprend encore la langue dessine un petit signe pour son moment : feuille, ballon, livre."
           }
         ],
         "bruecke": "La semaine prochaine, vous répétez une dernière fois et vous présentez vos pièces à la classe – avec des retours selon des règles fixes et bienveillantes. Personne n’est obligé de monter sur scène, mais chaque rôle compte.",
         "mission": "Quand ton cœur bat plus vite cette semaine – avant un devoir en classe, à l’entraînement ou en lisant à voix haute –, dis-toi : mon corps se prépare. Puis expire longuement.",
-        "hintergrund": "En fin d’année, beaucoup de jeunes en savent plus qu’ils ne peuvent le dire ; une pièce à eux rend visible ce qu’ils ont appris. Qui joue un comportement au lieu d’en parler, et réussit devant les autres, se découvre capable : selon Bandura (1977), les réussites personnelles sont la source la plus forte du sentiment d’efficacité personnelle, et ceux qui regardent apprennent par l’exemple. Les programmes d’apprentissage socio-émotionnel sont plus efficaces quand ils font pratiquer activement et disent clairement ce qui est visé (Durlak et al., 2011) – c’est le rôle du message en une phrase. Des rôles fixes, sur scène et en coulisses, font participer chacun sans exposer personne. Le skill de la séance vise le trac : des étudiants à qui l’on avait expliqué avant un examen que l’excitation peut aider ont mieux réussi la partie de mathématiques qu’un groupe sans cette information (Jamieson et al., 2010).",
+        "hintergrund": "Une pièce à eux rend visible ce que la classe a appris en un an. La base est le théâtre-forum de Boal (1979) : une scène montre comment ça tourne mal, et le public cherche le tournant – c’est la question de l’avant-première : quel skill pourrait aider ici ? Qui joue lui-même un comportement et tient devant les autres vit une expérience de réussite, selon Bandura (1977) la source la plus forte du sentiment d’efficacité personnelle ; les rôles en coulisses font participer chacun sans exposer personne. Le skill change le regard sur le trac : qui comprend le cœur qui bat comme une préparation et non comme un danger réussit mieux ses examens (Jamieson et al., 2010) ; qui se dit avant de se produire « j’ai hâte » plutôt que « je suis calme » chante, parle et calcule mieux (Brooks, 2014). La séance propose donc la préparation plutôt que le calme – avec la phrase de la séance sur les devoirs en classe, ici une deuxième fois, lors de la prestation une troisième.",
         "quellen": [
+          "Boal, A. (1979). Theatre of the Oppressed. London: Pluto Press.",
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
-          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
-          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212."
+          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212.",
+          "Brooks, A. W. (2014). Get excited: Reappraising pre-performance anxiety as excitement. Journal of Experimental Psychology: General, 143(3), 1144–1158."
         ],
         "achtung": "Ne jamais rejouer de vrais incidents, prénoms ou personnes de la classe ou de l’école, enseignants compris ; aucune blague sur l’origine, la langue, la religion ou l’apparence. Les rôles où quelqu’un est moqué, exclu ou menacé ne vont qu’à des volontaires – jamais à un jeune harcelé. La violence est seulement suggérée, les contacts physiques seulement après accord. On ne filme qu’avec une tablette de l’école, avec l’autorisation requise, et seulement ceux qui disent oui. Si le jeu ou le choix du thème révèle qu’un jeune subit de la violence ou du harcèlement : ne pas approfondir en classe, lui parler après le cours, informer le SePAS le jour même.",
         "differenzierung": {
-          "leichter": "Lire les thèmes à voix haute en montrant les images ; dans le plan des scènes, des bonshommes bâtons et un mot-clé suffisent. Les jeunes qui apprennent encore la langue ou qui lisent difficilement reçoivent un rôle avec peu de texte (image figée, bruitages, technique), de préférence en binôme ; un personnage peut aussi parler sa propre langue.",
+          "leichter": "Lire les thèmes à voix haute en montrant les images ; dans le plan des scènes, des bonshommes bâtons et un mot-clé suffisent. Les jeunes qui apprennent encore la langue ou qui lisent difficilement reçoivent un rôle avec peu de texte (image figée, bruitages, technique), de préférence en binôme ; un personnage peut aussi parler sa propre langue. Pour la colonne « Mon moment », un mot suffit : devoir, entraînement.",
           "schwerer": "Prévoir le tournant en deux versions : comme ça se passe souvent, puis avec un skill de l’année. Ou, à la mise en scène, écrire après l’avant-première un plan de répétition pour la semaine suivante : qu’est-ce qu’on répète d’abord, qu’est-ce qui doit être plus fort, plus court ?"
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec émotion, chiffre et envie de scène (5 min), choisir le thème et trouver le message (10 min), préparer trois scènes et répartir les rôles (15 min), première répétition (10 min), voir le trac autrement (5 min), Skills-Pass et mission (5 min). L’avant-première est supprimée ; les règles communes sont lues au début de la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec émotion, chiffre et envie de scène (5 min), choisir le thème et trouver le message (10 min), préparer trois scènes et répartir les rôles (15 min), première répétition (10 min), voir le trac autrement (5 min), Skills-Pass, choisir son moment et mission (5 min). L’avant-première est supprimée ; les règles communes sont lues au début de la séance suivante."
       }
     }
   ],
