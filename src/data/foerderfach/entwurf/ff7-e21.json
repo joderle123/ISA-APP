@@ -50,7 +50,7 @@
         "vorbereitung": [
           "Szenen-Karten kopieren, schneiden, je Tischgruppe ein Satz.",
           "Die drei Stopps (Schritt 3) einmal laut üben: Lächeln gegen ernstes Gesicht.",
-          "Tafelbild (Schritt 3) vorbereiten; Raum und Zeiten des SePAS dazuschreiben.",
+          "Tafelbild (Schritt 3) und zwei Nachhak-Sätze (Schritt 4) vorbereiten; Raum und Zeiten des SePAS dazuschreiben.",
           "Beim Régent nachfragen, ob es Konflikte oder Übergriffe in der Klasse gibt (Betroffene nie gegeneinander spielen lassen); klären, wo der SePAS heute erreichbar ist."
         ],
         "ablauf": [
@@ -162,7 +162,7 @@
             "titel": "Stopp üben: Wort und Körper",
             "dauer": 18,
             "phase": "uebung",
-            "text": "Zu zweit, mit einer Person eigener Wahl, an den Bahnen wie in der letzten Stunde oder im Raum. B geht langsam auf A zu, A stoppt; nach jeder Runde wechseln (6 Min.): erst nur mit der Hand, dann Hand und Wort, dann alles zusammen – fester Stand, Blick, feste Stimme, ein kurzer Satz. Wer sich schwertut, beginnt leise und wird von Runde zu Runde lauter. Dann allein Aufgabe 2 auf dem Blatt: Stopp-Sätze ankreuzen (3 Min.). Danach das Nachhaken üben (6 Min.): A sagt den eigenen Stopp-Satz, B hakt einmal nach – „Stell dich nicht so an“ –, A wiederholt ruhig denselben Satz. Kurz in der Klasse (3 Min.): Was war schwerer – der erste Satz oder der zweite?",
+            "text": "Zu zweit, mit einer Person eigener Wahl, an den Bahnen wie in der letzten Stunde oder im Raum. B geht langsam auf A zu, A stoppt; nach jeder Runde wechseln (6 Min.): erst nur mit der Hand, dann Hand und Wort, dann alles zusammen – fester Stand, Blick, feste Stimme, ein kurzer Satz. Wer sich schwertut, beginnt leise und wird von Runde zu Runde lauter. Dann allein Aufgabe 2 auf dem Blatt: Stopp-Sätze ankreuzen (3 Min.). Danach das Nachhaken üben (6 Min.): A sagt den eigenen Stopp-Satz, B hakt einmal nach, mit einem der Sätze von der Tafel – „Stell dich nicht so an“ oder „Ist doch nur Spaß“ –, A wiederholt ruhig denselben Satz. Kurz in der Klasse (3 Min.): Was war schwerer – der erste Satz oder der zweite?",
             "sagen": [
               "Probiert es so leise, wie es für euch geht – und dann eine Stufe lauter. Ihr bestimmt das Tempo.",
               "Beim Nachhaken müsst ihr nichts Neues erfinden. Derselbe Satz noch einmal, ruhig und fest – das reicht."
@@ -281,8 +281,8 @@
         "vorbereitung": [
           "Cartes scènes : photocopier, découper, un jeu par îlot.",
           "S’entraîner une fois aux trois stops (étape 3) : sourire contre visage sérieux.",
-          "Préparer le tableau de l’étape 3 ; y ajouter la salle et les horaires du SePAS.",
-          "Demander au régent s’il y a des conflits ou des agressions dans la classe (ne jamais faire jouer les jeunes concernés ensemble) ; savoir où joindre le SePAS aujourd’hui."
+          "Préparer le tableau de l’étape 3 et deux phrases pour insister (étape 4) ; y ajouter la salle et les horaires du SePAS.",
+          "Demander au régent s’il y a des conflits ou des agressions dans la classe (ne jamais faire jouer les jeunes concernés l’un contre l’autre) ; savoir où joindre le SePAS aujourd’hui."
         ],
         "ablauf": [
           {
@@ -393,7 +393,7 @@
             "titel": "S’entraîner à dire stop : les mots et le corps",
             "dauer": 18,
             "phase": "uebung",
-            "text": "À deux, avec un ou une partenaire de son choix, sur des pistes comme à la dernière séance ou dans la salle. B avance lentement vers A, A l’arrête ; on change après chaque tour (6 min) : d’abord seulement avec la main, puis la main et un mot, puis tout ensemble – bien ancré, le regard, la voix ferme, une phrase courte. Qui a du mal commence doucement et parle un peu plus fort à chaque tour. Puis, seul, exercice 2 de la fiche : cocher des phrases stop (3 min). Ensuite, s’entraîner quand l’autre insiste (6 min) : A dit sa phrase stop, B insiste une fois – « Fais pas ton cinéma » –, A répète calmement la même phrase. Bref retour en classe entière (3 min) : qu’est-ce qui était le plus difficile – la première phrase ou la deuxième ?",
+            "text": "À deux, avec un ou une partenaire de son choix, sur des pistes comme à la dernière séance ou dans la salle. B avance lentement vers A, A l’arrête ; on change après chaque tour (6 min) : d’abord seulement avec la main, puis la main et un mot, puis tout ensemble – bien ancré, le regard, la voix ferme, une phrase courte. Qui a du mal commence doucement et parle un peu plus fort à chaque tour. Puis, seul, exercice 2 de la fiche : cocher des phrases stop (3 min). Ensuite, s’entraîner quand l’autre insiste (6 min) : A dit sa phrase stop, B insiste une fois, avec une des phrases du tableau – « Fais pas ton cinéma » ou « C’est juste pour rire » –, A répète calmement la même phrase. Bref retour en classe entière (3 min) : qu’est-ce qui était le plus difficile – la première phrase ou la deuxième ?",
             "sagen": [
               "Essayez aussi doucement que vous le pouvez – puis un cran plus fort. C’est vous qui décidez du rythme.",
               "Quand l’autre insiste, vous n’avez rien à inventer de nouveau. La même phrase encore une fois, calme et ferme – ça suffit."

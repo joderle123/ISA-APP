@@ -39,18 +39,17 @@
           "probieren den Körper-Check als Skill aus"
         ],
         "material": [
-          "Gefühlsrad-Plakat, 20 Klebepunkte",
-          "Großer Körperumriss auf Packpapier",
-          "Klebepunkte rot und lila, je 20",
+          "Gefühlsrad-Plakat, Körperumriss (Packpapier)",
+          "40 Klebepunkte, nicht rot oder lila",
+          "Je 20 rote und lila Klebepunkte",
           "Buntstifte (5 Farben) für alle",
           "Lautsprecher, vier Musikstücke",
-          "Schülerheft für jede Person",
-          "Stempel für den Skills-Pass"
+          "Schülerheft, Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
           "Einen großen Körperumriss frei auf Packpapier zeichnen und neben die Tür hängen; an die Tafel einen kleinen Umriss.",
           "Vier Musikstücke von je ein bis zwei Minuten bereitlegen (Schritt 7) und die Lautstärke testen.",
-          "Für Musik und Bewegung einen freien Weg durch den Raum schaffen (Tische an die Seite).",
+          "Für Schritt 7 einen Rundweg um die Tischgruppen planen: Taschen weg, Stühle an die Tische – verschieben muss man nichts.",
           "Fällt Einheit 12 aus, endet hier das Trimester: die Trimester-Einschätzung im Skills-Pass einplanen (Tipp in Schritt 9)."
         ],
         "ablauf": [
@@ -148,9 +147,9 @@
             "titel": "Meine Gefühls-Landkarte",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Allein (8 Min.): Aufgabe 1 auf dem Blatt – in den Farben des Gefühlsrads einmalen, wo Wut (rot), Angst (lila), Freude (gelb) und Traurigkeit (blau) sitzen; wer mag, ergänzt Ruhe (grün). Dabei an einen echten Moment denken; Überschneidungen sind erlaubt. Leise Musik im Hintergrund hilft. Tischgruppen (5 Min.): Wer mag, legt sein Blatt in die Mitte; die Gruppe sucht eine Gemeinsamkeit und einen Unterschied. Klasse (7 Min.): Jede Gruppe nennt beides. Dann kurz von einer Studie mit über 700 Menschen erzählen: Wut sitzt bei vielen in Kopf, Brust und Armen, Traurigkeit macht Arme und Beine schwer, Freude füllt den ganzen Körper. Festhalten: ähnlich, aber nicht gleich – jede Landkarte ist ein bisschen anders.",
+            "text": "Allein (8 Min.): Aufgabe 1 auf dem Blatt – in den Farben des Gefühlsrads einzeichnen, wo Wut (rot), Angst (lila), Freude (gelb) und Traurigkeit (blau) sitzen; wer mag, ergänzt Ruhe (grün). Punkte, Kreuze oder Schraffuren reichen. Dabei an einen Moment denken, der nicht zu schwer war – ein kleiner Ärger, eine kleine Angst, ein guter Tag. Leise Musik im Hintergrund hilft. Tischgruppen (5 Min.): Wer mag, legt sein Blatt in die Mitte oder zeigt am eigenen Körper; die Gruppe sucht eine Gemeinsamkeit und einen Unterschied. Klasse (7 Min.): Jede Gruppe nennt beides. Dann kurz von einer Studie mit über 700 Menschen erzählen: Wut sitzt bei vielen in Kopf, Brust und Armen, Traurigkeit macht Arme und Beine schwer, Freude füllt den ganzen Körper. Festhalten: ähnlich, aber nicht gleich – jede Landkarte ist ein bisschen anders.",
             "sagen": [
-              "Denkt an einen echten Moment: den letzten Streit, den letzten richtig guten Tag. Wo war es im Körper?",
+              "Denkt an einen Moment, der nicht zu schwer war: einen kleinen Streit, einen richtig guten Tag. Wo war es im Körper?",
               "Wo sind wir uns ähnlich – und wo ist jede Landkarte anders?"
             ],
             "tipp": "Die Blätter bleiben im Heft: Die Warnsignale für Wut und Angst werden im nächsten Kapitel für die Anspannungsskala und später für den Ampelplan gebraucht.",
@@ -161,18 +160,18 @@
             "titel": "Bewegungspause: Hampelmann und Herzschlag",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Fenster auf. Eine Minute Hampelmann oder auf der Stelle laufen – die Lehrkraft macht mit. Dann eine Minute still sitzen, eine Hand auf die Brust oder an den Hals: Wie schnell schlägt das Herz, wie geht der Atem, wo ist es warm? Kurz fragen: Kennt ihr das auch ohne Sport – vor einem Test, bei einem Streit? Festhalten: Der Körper reagiert ähnlich, ob man rennt oder Angst hat; welches Gefühl dazugehört, verrät erst die Situation. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Fenster auf. Eine Minute Hampelmann oder auf der Stelle laufen – die Lehrkraft macht mit. Dann eine Minute still sitzen, eine Hand auf die Brust oder an den Hals: Wie schnell schlägt das Herz, wie geht der Atem, wo ist es warm? Kurz fragen: Kennt ihr das auch ohne Sport – vor einem Test, bei einem Streit, vor einem Spiel? Festhalten: Herzklopfen gibt es bei Sport, Angst, Wut und Vorfreude; das Signal allein verrät das Gefühl noch nicht, die Situation hilft beim Deuten. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
             "sagen": [
               "Eine Hand auf die Brust. Spürt ihr, wie das Herz jetzt schlägt?"
             ],
-            "tipp": "Wer nicht springen kann oder mag, läuft auf der Stelle oder macht schnelle Armkreise. Die Erfahrung ist wichtiger als die Übung.",
+            "tipp": "Wer nicht springen kann oder mag, läuft auf der Stelle oder macht schnelle Armkreise. Wem das Spüren des Herzschlags unangenehm ist, zählt stattdessen still die Atemzüge.",
             "wennEsKippt": "Wird beim Hampelmann gerempelt oder gealbert, Abstand nehmen lassen: Jede Person braucht eine Armlänge Platz. Kommen danach nicht alle zur Ruhe, die stille Minute mit der Uhr stoppen und die letzten zehn Sekunden laut herunterzählen."
           },
           {
             "titel": "Erste Warnsignale für Wut und Angst",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Allein (6 Min.): Aufgaben 2 und 3 auf dem Blatt – ankreuzen, woran man Wut und Angst bemerkt, noch bevor man etwas sagt oder tut. Dann Aufgabe 4: Was kommt bei dir zuerst? Das ist dein Warnsignal (2 Min.). Klassen-Landkarte (5 Min.): Tischgruppenweise klebt jede Person einen roten Punkt auf den großen Umriss, dorthin, wo ihr erstes Wut-Signal sitzt, und einen lila Punkt für das erste Angst-Signal – ohne Namen. Gemeinsam schauen (2 Min.): Wo liegen die meisten roten, wo die meisten lila Punkte? Erklären: Das erste Signal ist wie eine Frühwarnanlage – wer es bemerkt, hat noch Zeit zu entscheiden, was er tut.",
+            "text": "Aufgaben 2 und 3 auf dem Blatt (6 Min.): Die Lehrkraft liest die Sätze langsam vor; alle kreuzen still für sich an, woran sie Wut und Angst bemerken, noch bevor sie etwas sagen oder tun. Dann Aufgabe 4: Was kommt bei dir zuerst? Das ist dein Warnsignal (2 Min.). Klassen-Landkarte (5 Min.): Tischgruppenweise klebt jede Person einen roten Punkt auf den großen Umriss, dorthin, wo ihr erstes Wut-Signal sitzt, und einen lila Punkt für das erste Angst-Signal – ohne Namen. Gemeinsam schauen (2 Min.): Wo liegen die meisten roten, wo die meisten lila Punkte? Erklären: Das erste Signal ist wie eine Frühwarnanlage – wer es bemerkt, hat noch Zeit zu entscheiden, was er tut.",
             "sagen": [
               "Was merkt ihr zuerst – noch bevor ihr wisst, dass ihr wütend seid?",
               "Ein roter und ein lila Punkt pro Person. Niemand muss sagen, welche seine sind."
@@ -185,7 +184,7 @@
             "titel": "Musik und Bewegung",
             "dauer": 20,
             "phase": "aktiv",
-            "text": "Alle stehen auf, der Weg durch den Raum ist frei. Vier kurze Musikstücke nacheinander abspielen, je ein bis zwei Minuten (Tabelle). Alle bewegen sich so durch den Raum, wie sich die Musik anfühlt – gehen, schlendern, stampfen, schweben, ohne Berührung. Stoppt die Musik, bleiben alle als Statue stehen; zwei Stimmen: Welches Gefühl hat die Musik ausgelöst, und wo im Körper? (vier Stücke, 14 Min.) Zum Schluss im Sitzen fragen: Kann Musik ein Gefühl verändern? Welches Lied hört ihr, wenn ihr runterkommen wollt? Die Titel auf einem Zettel sammeln (6 Min.).",
+            "text": "Alle stehen auf; Taschen weg, Stühle an die Tische. Gegangen wird auf einem Rundweg um die Tischgruppen, alle in dieselbe Richtung. Vorher zeigen alle mit dem Daumen, wie es ihnen gerade geht. Dann vier kurze Musikstücke nacheinander abspielen, je ein bis zwei Minuten (Tabelle); alle bewegen sich so, wie sich die Musik anfühlt – gehen, schlendern, stampfen, schweben, ohne Berührung. Stoppt die Musik, bleiben alle als Statue stehen; zwei Stimmen: Welches Gefühl hat die Musik ausgelöst, und wo im Körper? (vier Stücke, 14 Min.) Zum Schluss im Sitzen noch einmal den Daumen zeigen und fragen: Hat sich etwas verändert? Kann Musik ein Gefühl verändern? Welches Lied hört ihr, wenn ihr runterkommen wollt? Die Titel auf einem Zettel sammeln (6 Min.).",
             "sagen": [
               "Bewegt euch so, wie die Musik klingt. Niemand schaut zu – alle sind beschäftigt.",
               "Musik stopp – Statue. Welches Gefühl? Wo im Körper?",
@@ -215,7 +214,7 @@
                 ]
               ]
             },
-            "tipp": "Nicht von Tanzen sprechen, sondern vom Gehen im Tempo der Musik – und selbst mitgehen; das nimmt die Peinlichkeit. Die Runterkomm-Lieder der Klasse aufheben: In Einheit 15 entsteht daraus eine Playlist; Vorschläge vorher auf die Texte prüfen.",
+            "tipp": "Nicht von Tanzen sprechen, sondern vom Gehen im Tempo der Musik – und selbst mitgehen; das nimmt die Peinlichkeit. Bei sehr wenig Platz bleiben alle hinter ihrem Stuhl und gehen nur mit Armen, Schultern und Füßen mit. Die Runterkomm-Lieder aufheben: In Einheit 15 entsteht daraus eine Playlist; Vorschläge vorher auf die Texte prüfen.",
             "wennEsKippt": "Will jemand nicht tanzen, gibt es Alternativen: im Tempo der Musik gehen, am Tisch zur Musik malen oder die Musik bedienen – die Pause-Taste macht die Statuen. Wird es beim wütenden Stück zu wild, leiser drehen und gleich zum ruhigen Stück wechseln. Berührungen sind tabu; wer rempelt, setzt ein Stück aus und darf das nächste starten."
           },
           {
@@ -234,7 +233,7 @@
               "Spür deine Hände und deine Füße: warm oder kalt, ruhig oder kribbelig?",
               "Spür den ganzen Körper auf einmal. Öffne die Augen, wenn du so weit bist."
             ],
-            "tipp": "Sitzen bleiben und lesen, statt herumzugehen – das gibt Sicherheit. Den Körper-Check kann man überall unauffällig machen: im Bus, vor einem Test, abends im Bett.",
+            "tipp": "Sitzen bleiben und lesen, statt herumzugehen – das gibt Sicherheit. Der Körper-Check hat keinen religiösen Inhalt, er übt nur Aufmerksamkeit; die Kurzform steht im Heft, auch zum Nachlesen für Eltern. Man kann ihn überall unauffällig machen: im Bus, vor einem Test, abends im Bett.",
             "wennEsKippt": "Wird jemand beim Spüren unruhig, traurig oder angespannt, die Übung für diese Person freundlich beenden: Augen auf, Füße fest auf den Boden, fünf Dinge im Raum benennen; später in Ruhe nachfragen. Wer nicht still sitzen kann, drückt die Füße in den Boden und hält etwas in der Hand. Wird gekichert, ruhig weiterlesen."
           },
           {
@@ -250,13 +249,13 @@
         ],
         "bruecke": "Im echten Leben kommt selten nur ein Gefühl allein: Nächste Woche geht es um gemischte Gefühle – und darum, wie stark ein Gefühl sein kann, von 0 bis 10.",
         "mission": "Achte diese Woche einmal auf dein erstes Warnsignal, wenn Wut oder Angst kommt: Wo hast du es gespürt – und was hast du dann gemacht?",
-        "hintergrund": "Gefühle sind Zustände des ganzen Körpers: Herzschlag, Atmung, Muskelspannung und Verdauung verändern sich mit. Nummenmaa und Kollegen (2014) ließen über 700 Menschen einzeichnen, wo sie bei verschiedenen Gefühlen etwas spüren. Die Körperkarten unterschieden sich je nach Gefühl deutlich und ähnelten sich in westeuropäischen und ostasiatischen Stichproben: Wut zeigte sich etwa in Kopf, Brust und Armen, Traurigkeit als verminderte Aktivität in Armen und Beinen. Für die Regulation sind diese Signale wertvoll, denn sie kommen oft früher als der Gedanke „Ich bin wütend“ – und je früher man eingreift, desto leichter gelingt es (Gross, 1998). Der Körper-Check stammt aus der achtsamkeitsbasierten Stressreduktion und übt, den Körper wahrzunehmen, ohne zu bewerten (Kabat-Zinn, 1990). Die ersten Warnsignale sind die Grundlage für die Anspannungsskala.",
+        "hintergrund": "Gefühle sind Zustände des ganzen Körpers: Herzschlag, Atmung, Muskelspannung und Verdauung verändern sich mit. Nummenmaa und Kollegen (2014) ließen über 700 Menschen einzeichnen, wo sie bei verschiedenen Gefühlen etwas spüren. Die Körperkarten unterschieden sich je nach Gefühl deutlich und ähnelten sich in westeuropäischen und ostasiatischen Stichproben: Wut zeigte sich etwa in Kopf, Brust und Armen, Traurigkeit als verminderte Aktivität in Armen und Beinen. Ein einzelnes Signal wie Herzklopfen gehört zu mehreren Gefühlen; erst Muster und Situation machen es eindeutig. Für die Regulation sind die ersten Signale wertvoll, denn sie kommen oft früher als der Gedanke „Ich bin wütend“ – und je früher man eingreift, desto leichter gelingt es (Gross, 1998). Der Körper-Check stammt aus der achtsamkeitsbasierten Stressreduktion und übt, den Körper wahrzunehmen, ohne zu bewerten (Kabat-Zinn, 1990).",
         "quellen": [
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
           "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte."
         ],
-        "achtung": "Körperübungen können bei Jugendlichen mit belastenden Erfahrungen Unruhe auslösen, ebenso der Blick auf den eigenen Körper. Vorher das Stopp-Recht nennen: Augen offen, Aussetzen und Zuschauen sind jederzeit erlaubt; keine Übung mit Berührung. Niemand muss seine Landkarte zeigen oder erklären, und beim Tanzen gibt es immer eine Alternative. Kommentare über den Körper anderer sofort stoppen. Zeigen sich Hinweise auf Verletzungen, Gewalt oder Selbstverletzung, nicht vor der Klasse nachfragen, sondern nach der Stunde unter vier Augen; noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "achtung": "Körperübungen und der Blick auf den eigenen Körper können bei Jugendlichen mit belastenden Erfahrungen Unruhe auslösen. Vorher das Stopp-Recht nennen: Augen offen, Aussetzen und Zuschauen sind jederzeit erlaubt; keine Übung mit Berührung. Für die Landkarte an einen Moment denken lassen, der nicht zu schwer war. Niemand muss seine Landkarte zeigen oder erklären, beim Tanzen gibt es immer eine Alternative, Kommentare über den Körper anderer sofort stoppen. Zeigen sich Hinweise auf Verletzungen, Gewalt oder Selbstverletzung, nach der Stunde unter vier Augen ansprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
         "differenzierung": {
           "leichter": "An der Tafel stehen die Körperteile am Umriss (Kopf, Hals, Brust, Bauch, Hände, Beine); wer die Wörter nicht kennt, zeigt. Auf der Landkarte reichen Wut und Freude; bei den Warnsignalen ankreuzen statt schreiben, das erste Signal darf eingekreist werden.",
           "schwerer": "Eine fünfte Farbe für Ruhe ergänzen: Wo spürst du, dass es dir gut geht? Oder notieren, woran andere bei dir Wut oder Angst bemerken könnten, bevor du es selbst merkst."
@@ -273,18 +272,17 @@
           "essaient le tour du corps comme skill"
         ],
         "material": [
-          "Roue des émotions, 20 gommettes",
-          "Grande silhouette sur papier kraft",
-          "Gommettes rouges et violettes (20)",
-          "Crayons (5 couleurs) pour tous",
+          "Roue des émotions, silhouette (papier kraft)",
+          "40 gommettes, ni rouges ni violettes",
+          "20 gommettes rouges, 20 violettes",
+          "Crayons de couleur (5 couleurs) pour tous",
           "Haut-parleur, quatre morceaux",
-          "Un cahier de l’élève par jeune",
-          "Tampon pour le Skills-Pass"
+          "Cahier de l’élève, tampon du Skills-Pass"
         ],
         "vorbereitung": [
           "Dessiner à main levée une grande silhouette sur papier kraft et l’accrocher près de la porte ; une petite au tableau.",
           "Préparer quatre morceaux d’une à deux minutes (étape 7) et tester le volume.",
-          "Pour l’étape 7, dégager un passage dans la salle (tables sur le côté).",
+          "Pour l’étape 7, prévoir un parcours autour des îlots : sacs rangés, chaises sous les tables – inutile de déplacer les tables.",
           "Si la séance 12 saute, le trimestre se termine ici : prévoir le bilan du trimestre dans le Skills-Pass (conseil de l’étape 9)."
         ],
         "ablauf": [
@@ -351,7 +349,7 @@
             "titel": "Retour : de la console au corps",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass. Pour la mission de la semaine, demander avec le pouce : qui s’est pris une fois sur le fait, quelle émotion était aux commandes ? Une voix raconte ; personne n’est obligé de l’avoir réussie. Puis montrer l’affiche avec le message principal du film et demander à quoi on remarque qu’une émotion prend les commandes – avant même d’y penser. Annoncer le thème : les émotions se passent dans tout le corps, et c’est souvent le corps qui se manifeste en premier.",
+            "text": "Un jeune lit la phrase de son Skills-Pass. Pour la mission de la semaine, demander avec le pouce : qui a repéré une fois quelle émotion était aux commandes ? Une voix raconte ; personne n’est obligé de l’avoir réussie. Puis montrer l’affiche avec le message principal du film et demander à quoi on remarque qu’une émotion prend les commandes – avant même d’y penser. Annoncer le thème : les émotions se passent dans tout le corps, et c’est souvent le corps qui se manifeste en premier.",
             "sagen": [
               "Dans le film, Riley ne remarque pas qui est aux commandes dans sa tête. Et vous, à quoi le remarquez-vous ?",
               "Aujourd’hui, vous cherchez où vos émotions habitent dans votre corps – et quel signal arrive en premier."
@@ -370,7 +368,7 @@
             "punkte": [
               "Tu es devant la classe et tu dois présenter quelque chose.",
               "À la récré, quelqu’un te prend ton portable et rigole.",
-              "Un message : demain, la première heure est supprimée.",
+              "Un message : demain, le premier cours est annulé.",
               "Tu attends le résultat d’un devoir en classe important.",
               "Ta meilleure amie te dit qu’elle déménage.",
               "Après l’entraînement, tu es avec des amis et tu ris."
@@ -382,9 +380,9 @@
             "titel": "Ma carte corporelle des émotions",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Seul (8 min) : exercice 1 de la fiche – colorier, avec les couleurs de la roue des émotions, où se logent la colère (rouge), la peur (violet), la joie (jaune) et la tristesse (bleu) ; qui le souhaite ajoute le calme (vert). Penser pour cela à un vrai moment ; les zones peuvent se chevaucher. Une musique douce en fond aide. En îlots (5 min) : qui le souhaite pose sa fiche au milieu ; le groupe cherche un point commun et une différence. En classe entière (7 min) : chaque groupe donne les deux. Puis parler brièvement d’une étude menée avec plus de 700 personnes : chez beaucoup, la colère se loge dans la tête, la poitrine et les bras, la tristesse rend les bras et les jambes lourds, la joie remplit tout le corps. Retenir : semblable, mais pas pareil – chaque carte est un peu différente.",
+            "text": "Seul (8 min) : exercice 1 de la fiche – marquer, avec les couleurs de la roue des émotions, où se logent la colère (rouge), la peur (violet), la joie (jaune) et la tristesse (bleu) ; qui le souhaite ajoute le calme (vert). Des points, des croix ou des hachures suffisent. Penser pour cela à un moment pas trop lourd – une petite colère, une petite peur, une bonne journée. Une musique douce en fond aide. En îlots (5 min) : qui le souhaite pose sa fiche au milieu ou montre sur son propre corps ; le groupe cherche un point commun et une différence. En classe entière (7 min) : chaque groupe donne les deux. Puis parler brièvement d’une étude menée avec plus de 700 personnes : chez beaucoup, la colère se loge dans la tête, la poitrine et les bras, la tristesse rend les bras et les jambes lourds, la joie remplit tout le corps. Retenir : semblable, mais pas pareil – chaque carte est un peu différente.",
             "sagen": [
-              "Pensez à un vrai moment : la dernière dispute, la dernière très bonne journée. Où était-ce dans le corps ?",
+              "Pensez à un moment pas trop lourd : une petite dispute, une très bonne journée. Où était-ce dans le corps ?",
               "Où est-ce qu’on se ressemble – et où chaque carte est-elle différente ?"
             ],
             "tipp": "Les fiches restent dans le cahier : les signaux d’alerte de la colère et de la peur resserviront au chapitre suivant pour l’échelle de tension, puis pour le plan feu tricolore.",
@@ -395,18 +393,18 @@
             "titel": "Pause active : sauts et battements de cœur",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Ouvrir la fenêtre. Une minute de sauts écartés ou de course sur place – l’enseignant·e participe. Puis une minute assis en silence, une main sur la poitrine ou sur le cou : à quelle vitesse bat le cœur, comment va la respiration, où fait-il chaud ? Demander brièvement : est-ce que vous connaissez ça sans sport – avant un devoir en classe, pendant une dispute ? Retenir : le corps réagit de façon semblable, qu’on coure ou qu’on ait peur ; c’est la situation qui dit de quelle émotion il s’agit. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Ouvrir la fenêtre. Une minute de sauts écartés ou de course sur place – l’enseignant·e participe. Puis une minute assis en silence, une main sur la poitrine ou sur le cou : à quelle vitesse bat le cœur, comment va la respiration, où fait-il chaud ? Demander brièvement : est-ce que vous connaissez ça sans sport – avant un devoir en classe, pendant une dispute, avant un match ? Retenir : le cœur bat fort avec le sport, la peur, la colère ou quand on a hâte ; le signal seul ne dit pas encore quelle émotion c’est, la situation aide à le comprendre. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
             "sagen": [
               "Une main sur la poitrine. Vous sentez comment le cœur bat maintenant ?"
             ],
-            "tipp": "Qui ne peut ou ne veut pas sauter court sur place ou fait de grands cercles avec les bras. L’expérience compte plus que l’exercice.",
+            "tipp": "Qui ne peut ou ne veut pas sauter court sur place ou fait de grands cercles avec les bras. Qui trouve désagréable de sentir son cœur compte plutôt ses respirations en silence.",
             "wennEsKippt": "Si on se bouscule ou si on fait les fous pendant les sauts, faire prendre de la distance : chacun a besoin d’une longueur de bras. Si tout le monde ne se calme pas ensuite, chronométrer la minute de silence et compter à voix haute les dix dernières secondes."
           },
           {
             "titel": "Premiers signaux de colère et de peur",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Seul (6 min) : exercices 2 et 3 de la fiche – cocher à quoi on remarque la colère et la peur, avant même de dire ou de faire quelque chose. Puis exercice 4 : qu’est-ce qui vient en premier chez toi ? C’est ton signal d’alerte (2 min). Carte de la classe (5 min) : îlot par îlot, chacun colle sur la grande silhouette une gommette rouge là où se trouve son premier signal de colère, et une violette pour son premier signal de peur – sans nom. Regarder ensemble (2 min) : où se trouvent le plus de rouges, le plus de violettes ? Expliquer : le premier signal, c’est comme un système d’alerte précoce – qui le remarque a encore le temps de décider ce qu’il fait.",
+            "text": "Exercices 2 et 3 de la fiche (6 min) : lire lentement les phrases ; chacun coche en silence, pour soi, à quoi il remarque la colère et la peur, avant même de dire ou de faire quelque chose. Puis exercice 4 : qu’est-ce qui vient en premier chez toi ? C’est ton signal d’alerte (2 min). Carte de la classe (5 min) : îlot par îlot, chacun colle sur la grande silhouette une gommette rouge là où se trouve son premier signal de colère, et une violette pour son premier signal de peur – sans nom. Regarder ensemble (2 min) : où se trouvent le plus de rouges, le plus de violettes ? Expliquer : le premier signal, c’est comme un système d’alerte précoce – qui le remarque a encore le temps de décider ce qu’il fait.",
             "sagen": [
               "Qu’est-ce que vous remarquez en premier – avant même de savoir que vous êtes en colère ?",
               "Une gommette rouge et une violette par personne. Personne n’est obligé de dire lesquelles sont les siennes."
@@ -419,7 +417,7 @@
             "titel": "Musique et mouvement",
             "dauer": 20,
             "phase": "aktiv",
-            "text": "Tout le monde se lève, le passage dans la salle est dégagé. Passer quatre courts morceaux l’un après l’autre, d’une à deux minutes chacun (tableau). Chacun se déplace dans la salle comme la musique le lui fait ressentir – marcher, flâner, taper des pieds, flotter, sans se toucher. Quand la musique s’arrête, tout le monde se fige en statue ; deux voix : quelle émotion la musique a-t-elle déclenchée, et où dans le corps ? (quatre morceaux, 14 min) Pour finir, assis, demander : la musique peut-elle changer une émotion ? Quelle chanson écoutez-vous quand vous voulez redescendre ? Noter les titres sur une feuille (6 min).",
+            "text": "Tout le monde se lève ; sacs rangés, chaises sous les tables. On marche sur un parcours autour des îlots, tous dans le même sens. Avant, chacun montre avec le pouce comment il va. Puis passer quatre courts morceaux l’un après l’autre, d’une à deux minutes chacun (tableau) ; chacun se déplace comme la musique le lui fait ressentir – marcher, flâner, taper des pieds, flotter, sans se toucher. Quand la musique s’arrête, tout le monde se fige en statue ; deux voix : quelle émotion la musique a-t-elle déclenchée, et où dans le corps ? (quatre morceaux, 14 min) Pour finir, assis, montrer de nouveau le pouce et demander : est-ce que quelque chose a changé ? La musique peut-elle changer une émotion ? Quelle chanson écoutez-vous quand vous voulez redescendre ? Noter les titres sur une feuille (6 min).",
             "sagen": [
               "Bougez comme la musique sonne. Personne ne regarde – tout le monde est occupé.",
               "Musique stop – statue. Quelle émotion ? Où dans le corps ?",
@@ -449,7 +447,7 @@
                 ]
               ]
             },
-            "tipp": "Ne pas parler de danser, mais de marcher au rythme de la musique – et marcher soi-même avec la classe ; cela enlève la gêne. Garder les chansons pour redescendre : à la séance 15, elles serviront à créer une playlist ; vérifier les paroles à l’avance.",
+            "tipp": "Ne pas parler de danser, mais de marcher au rythme de la musique – et marcher soi-même avec la classe ; cela enlève la gêne. S’il y a très peu de place, chacun reste derrière sa chaise et bouge seulement les bras, les épaules et les pieds. Garder les chansons pour redescendre : à la séance 15, elles serviront à créer une playlist ; vérifier les paroles à l’avance.",
             "wennEsKippt": "Si quelqu’un ne veut pas danser, il y a des alternatives : marcher au rythme de la musique, dessiner à sa table en musique ou s’occuper de la musique – la touche pause déclenche les statues. Si ça devient trop agité sur le morceau en colère, baisser le volume et passer tout de suite au morceau calme. On ne se touche pas ; qui bouscule s’assoit un morceau et lance le suivant."
           },
           {
@@ -468,7 +466,7 @@
               "Sens tes mains et tes pieds : chauds ou froids, calmes ou qui fourmillent ?",
               "Sens tout ton corps d’un coup. Ouvre les yeux quand tu es prêt·e."
             ],
-            "tipp": "Rester assis et lire, plutôt que circuler dans la salle : cela rassure. Le tour du corps se fait discrètement partout : dans le bus, avant un devoir en classe, le soir au lit.",
+            "tipp": "Rester assis et lire, plutôt que circuler dans la salle : cela rassure. Le tour du corps n’a aucun contenu religieux, il entraîne seulement l’attention ; la version courte figure dans le cahier, que les parents peuvent aussi lire. On peut le faire partout, discrètement : dans le bus, avant un devoir en classe, le soir au lit.",
             "wennEsKippt": "Si un jeune devient agité, triste ou tendu en se concentrant sur son corps, arrêter l’exercice pour lui avec bienveillance : yeux ouverts, pieds bien au sol, nommer cinq choses dans la salle ; en reparler plus tard, calmement. Qui ne tient pas en place appuie les pieds dans le sol et tient un objet dans la main. Si des rires fusent, continuer à lire calmement."
           },
           {
@@ -484,13 +482,13 @@
         ],
         "bruecke": "Dans la vraie vie, une émotion arrive rarement seule : la semaine prochaine, on parle des émotions mélangées – et de la force qu’une émotion peut avoir, de 0 à 10.",
         "mission": "Cette semaine, fais attention une fois à ton premier signal d’alerte quand la colère ou la peur arrive : où l’as-tu senti – et qu’as-tu fait ensuite ?",
-        "hintergrund": "Les émotions sont des états de tout le corps : le rythme cardiaque, la respiration, la tension musculaire et la digestion changent avec elles. Nummenmaa et ses collègues (2014) ont demandé à plus de 700 personnes de dessiner où elles ressentaient quelque chose lors de différentes émotions. Les cartes corporelles différaient nettement selon l’émotion et se ressemblaient en Europe de l’Ouest et en Asie de l’Est : la colère apparaissait par exemple dans la tête, la poitrine et les bras, la tristesse comme une activité réduite dans les bras et les jambes. Ces signaux sont précieux pour la régulation, car ils arrivent souvent avant la pensée « je suis en colère » – et plus on intervient tôt, plus c’est facile (Gross, 1998). Le tour du corps vient de la réduction du stress basée sur la pleine conscience et entraîne à percevoir son corps sans le juger (Kabat-Zinn, 1990). Les premiers signaux préparent l’échelle de tension.",
+        "hintergrund": "Les émotions sont des états de tout le corps : le rythme cardiaque, la respiration, la tension musculaire et la digestion changent avec elles. Nummenmaa et ses collègues (2014) ont fait dessiner à plus de 700 personnes où elles ressentaient différentes émotions. Les cartes différaient nettement selon l’émotion et se ressemblaient en Europe de l’Ouest et en Asie de l’Est : la colère apparaissait dans la tête, la poitrine et les bras, la tristesse comme une activité réduite dans les bras et les jambes. Un signal isolé comme le cœur qui bat appartient à plusieurs émotions ; l’ensemble et la situation le rendent clair. Les premiers signaux sont précieux pour la régulation, car ils arrivent souvent avant la pensée « je suis en colère » – et plus on intervient tôt, plus c’est facile (Gross, 1998). Le tour du corps vient de la réduction du stress basée sur la pleine conscience et entraîne à percevoir son corps sans le juger (Kabat-Zinn, 1990).",
         "quellen": [
           "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
           "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte."
         ],
-        "achtung": "Les exercices corporels peuvent agiter des jeunes qui ont vécu des choses difficiles, tout comme le regard sur son propre corps. Dire avant que chacun peut s’arrêter : garder les yeux ouverts, faire une pause ou regarder est toujours permis ; aucun exercice avec contact. Personne n’est obligé de montrer ou d’expliquer sa carte, et pour la danse, il y a toujours une alternative. Arrêter tout de suite les commentaires sur le corps des autres. En cas de signes de blessures, de violence ou d’automutilation, ne pas poser de questions devant la classe, mais en tête-à-tête après le cours ; informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
+        "achtung": "Les exercices corporels et le regard sur son propre corps peuvent agiter des jeunes qui ont vécu des choses difficiles. Dire avant que chacun peut s’arrêter : garder les yeux ouverts, faire une pause ou regarder est toujours permis ; aucun exercice avec contact. Pour la carte, faire penser à un moment pas trop lourd. Personne n’est obligé de montrer ou d’expliquer sa carte, il y a toujours une alternative à la danse, et les commentaires sur le corps des autres sont arrêtés tout de suite. En cas de signes de blessures, de violence ou d’automutilation, en parler en tête-à-tête après le cours, informer le SePAS le jour même et suivre le protocole de protection de l’école.",
         "differenzierung": {
           "leichter": "Au tableau, les parties du corps sont notées autour de la silhouette (tête, gorge, poitrine, ventre, mains, jambes) ; qui ne connaît pas les mots montre. Sur la carte, la colère et la joie suffisent ; pour les signaux d’alerte, cocher plutôt qu’écrire, le premier signal peut être entouré.",
           "schwerer": "Ajouter une cinquième couleur pour le calme : où sens-tu que tu vas bien ? Ou noter à quoi les autres pourraient remarquer ta colère ou ta peur avant toi."
@@ -535,7 +533,7 @@
           {
             "art": "aufgabe",
             "text": "Wo spürst du Wut, Angst, Freude und Traurigkeit? Mal die Stellen in der passenden Farbe aus.",
-            "hinweis": "Denk an einen echten Moment. Überschneidungen sind erlaubt. Die Farben sind die des Gefühlsrads.",
+            "hinweis": "Denk an einen Moment, der nicht zu schwer war. Punkte, Kreuze oder Flächen – alles geht. Es sind die Farben des Gefühlsrads.",
             "symbole": [
               "malen"
             ]
@@ -652,7 +650,7 @@
               1.6,
               2.2
             ],
-            "zeilen": 3,
+            "zeilen": 2,
             "beispiel": [
               "Di",
               "Angst",
@@ -681,7 +679,7 @@
           "ziel": "Die Jugendlichen nehmen wahr, wo sie Wut, Angst, Freude und Traurigkeit im Körper spüren, und benennen ihr erstes Warnsignal für Wut und Angst – die Grundlage für die Anspannungsskala im nächsten Kapitel.",
           "ablauf": [
             "Einheit 11, Schritt 4: Aufgabe 1 allein (8 Min.), Farben wie im Gefühlsrad; danach freiwillig in den Tischgruppen vergleichen.",
-            "Schritt 6: Aufgaben 2 bis 4 allein (8 Min.), dann rote und lila Punkte auf den großen Umriss der Klasse.",
+            "Schritt 6: Die Lehrkraft liest die Sätze von Aufgabe 2 und 3 vor, alle kreuzen für sich an; dann Aufgabe 4 (8 Min.), danach rote und lila Punkte auf den großen Umriss der Klasse.",
             "Das Blatt bleibt im Heft und wird weder eingesammelt noch gezeigt.",
             "Aufgabe 5 begleitet die Wochen-Mission; die Brücke von Einheit 12 fragt kurz danach."
           ],
@@ -704,7 +702,7 @@
           {
             "art": "aufgabe",
             "text": "Où ressens-tu la colère, la peur, la joie et la tristesse ? Colorie les endroits avec la bonne couleur.",
-            "hinweis": "Pense à un vrai moment. Les zones peuvent se chevaucher. Ce sont les couleurs de la roue des émotions.",
+            "hinweis": "Pense à un moment pas trop lourd. Points, croix ou surfaces – tout va. Ce sont les couleurs de la roue des émotions.",
             "symbole": [
               "malen"
             ]
@@ -821,7 +819,7 @@
               1.6,
               2.2
             ],
-            "zeilen": 3,
+            "zeilen": 2,
             "beispiel": [
               "mar.",
               "peur",
@@ -850,7 +848,7 @@
           "ziel": "Les jeunes repèrent où ils ressentent la colère, la peur, la joie et la tristesse dans leur corps et nomment leur premier signal d’alerte de la colère et de la peur – la base de l’échelle de tension du chapitre suivant.",
           "ablauf": [
             "Séance 11, étape 4 : exercice 1 seul (8 min), avec les couleurs de la roue ; ensuite, comparer en îlots si on le souhaite.",
-            "Étape 6 : exercices 2 à 4 seul (8 min), puis gommettes rouges et violettes sur la grande silhouette de la classe.",
+            "Étape 6 : lire à voix haute les phrases des exercices 2 et 3, chacun coche pour soi ; puis exercice 4 (8 min), ensuite gommettes rouges et violettes sur la grande silhouette de la classe.",
             "La fiche reste dans le cahier ; elle n’est ni ramassée ni montrée.",
             "L’exercice 5 accompagne la mission de la semaine ; le lien de la séance 12 y revient brièvement."
           ],
