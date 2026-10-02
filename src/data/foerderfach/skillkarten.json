@@ -1,0 +1,36 @@
+{
+  "7e": [
+    {
+      "id": "ff7-k-54321",
+      "bild": "icon:eye",
+      "einheit": "ff7-e01",
+      "de": {
+        "name": "5-4-3-2-1",
+        "wann": "Wenn der Kopf voll ist oder alles zu viel wird",
+        "schritte": ["Nenne still 5 Dinge, die du siehst, und 4, die du hörst.", "Dann 3 Dinge, die du spürst, 2, die du riechst, 1, das du schmeckst.", "Atme langsam aus. Merkst du einen Unterschied?"]
+      },
+      "fr": {
+        "name": "5-4-3-2-1",
+        "wann": "Quand la tête est pleine ou que tout devient trop",
+        "schritte": ["Nomme en silence 5 choses que tu vois et 4 que tu entends.", "Puis 3 choses que tu sens sur ta peau, 2 odeurs, 1 goût.", "Expire lentement. Tu sens une différence ?"]
+      }
+    },
+    {
+      "id": "ff7-k-fingeratmung",
+      "bild": "icon:hand-finger",
+      "einheit": "ff7-e02",
+      "de": {
+        "name": "Fingeratmung",
+        "wann": "Wenn alles neu ist oder du nervös wirst – niemand sieht es",
+        "schritte": ["Leg eine Hand offen auf den Tisch oder aufs Bein.", "Mit dem Zeigefinger am Finger hinauf: einatmen. Hinunter: langsam ausatmen.", "Fünf Finger, fünf Atemzüge – dann den Weg zurück."]
+      },
+      "fr": {
+        "name": "La respiration des doigts",
+        "wann": "Quand tout est nouveau ou que tu stresses – personne ne le voit",
+        "schritte": ["Pose une main à plat sur la table ou sur ta cuisse.", "L’index monte le long d’un doigt : inspire. Il redescend : expire lentement.", "Cinq doigts, cinq respirations – puis le chemin du retour."]
+      }
+    }
+  ],
+  "6e": [],
+  "5e": []
+}

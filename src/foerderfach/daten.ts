@@ -7,12 +7,13 @@ import einheiten7e from '../data/foerderfach/einheiten-7e.json'
 import einheiten6e from '../data/foerderfach/einheiten-6e.json'
 import einheiten5e from '../data/foerderfach/einheiten-5e.json'
 import handbuch from '../data/foerderfach/handbuch.json'
+import skillkarten from '../data/foerderfach/skillkarten.json'
 import werkzeugBlaetter from '../data/foerderfach/blaetter.json'
 import blaetter7e from '../data/foerderfach/blaetter-7e.json'
 import blaetter6e from '../data/foerderfach/blaetter-6e.json'
 import blaetter5e from '../data/foerderfach/blaetter-5e.json'
 import type { Blatt } from '../blatt/typen'
-import type { Einheit, EinheitenDatei, HandbuchDatei, Jahresplan, Klasse } from './typen'
+import type { Einheit, EinheitenDatei, HandbuchDatei, Jahresplan, Klasse, SkillKartenDatei } from './typen'
 
 export const PLAENE: Jahresplan[] = [plan7e as Jahresplan, plan6e as Jahresplan, plan5e as Jahresplan]
 export const planVon = (k: Klasse): Jahresplan => PLAENE.find((p) => p.klasse === k)!
@@ -21,6 +22,9 @@ export const planVon = (k: Klasse): Jahresplan => PLAENE.find((p) => p.klasse ==
 export const EINHEITEN: Einheit[] = [einheiten7e, einheiten6e, einheiten5e].flatMap((d) => (d as EinheitenDatei).einheiten)
 
 export const HANDBUCH = handbuch as HandbuchDatei
+
+/** Skill-Karten zum Ausschneiden, je Klassenstufe (am Ende des Schülerhefts) */
+export const SKILLKARTEN = skillkarten as SkillKartenDatei
 
 /** Werkzeug-Blätter (für jede Stunde) und die Blätter der Einheiten je Klassenstufe */
 export const BLAETTER: Blatt[] = [werkzeugBlaetter, blaetter7e, blaetter6e, blaetter5e].flatMap((d) => d as Blatt[])

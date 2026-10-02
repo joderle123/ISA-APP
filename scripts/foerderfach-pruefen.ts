@@ -11,7 +11,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 
 import { basename, dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { spawnSync } from 'node:child_process'
-import { EINHEITEN, HANDBUCH, PLAENE, BLAETTER, VORLAGEN } from '../src/foerderfach/daten'
+import { EINHEITEN, HANDBUCH, PLAENE, BLAETTER, SKILLKARTEN, VORLAGEN } from '../src/foerderfach/daten'
 import { KOMPETENZEN, PHASEN } from '../src/foerderfach/fach'
 import { QUELLEN_TEXTE } from '../src/blatt/quellen'
 import type { Blatt } from '../src/blatt/typen'
@@ -382,6 +382,35 @@ for (const e of gepruefteEinheiten)
     uebersetzung.set(w.de, m)
   }
 for (const [de, m] of uebersetzung) if (m.size > 1) melde('H', 'Wortspeicher', `„${de}“ verschieden übersetzt: ${[...m].map(([fr, id]) => `${fr} (${id})`).join(', ')}`)
+
+// --- Skill-Karten (am Ende des Schülerhefts) --------------------------------------------------------
+if (alles) {
+  const icons = new Set(Object.keys(JSON.parse(readFileSync(join(ROOT, 'src/blatt/bilder/icons.json'), 'utf8')) as Record<string, unknown>))
+  const kartenIds = new Set<string>()
+  for (const plan of PLAENE) {
+    const einheitIds = new Set(plan.einheiten.map((e) => e.id))
+    for (const k of SKILLKARTEN[plan.klasse] ?? []) {
+      const kw = `Skill-Karte ${k.id}`
+      if (kartenIds.has(k.id)) melde('F', kw, 'Id doppelt')
+      kartenIds.add(k.id)
+      if (!k.id.startsWith(`ff${plan.klasse[0]}-k-`)) melde('F', kw, `Id im Format ff${plan.klasse[0]}-k-name`)
+      if (!einheitIds.has(k.einheit)) melde('F', kw, `Einheit ${k.einheit} steht nicht im Plan der ${plan.klasse}`)
+      if (!k.bild?.startsWith('icon:') || !icons.has(k.bild.slice(5))) melde('F', kw, `Piktogramm „${k.bild}“ gibt es nicht (src/blatt/bilder/icons.json)`)
+      for (const s of SPRACHEN) {
+        const x = k[s]
+        if (!x?.name?.trim() || !x.wann?.trim()) {
+          melde('F', kw, `Name oder „wann“ (${s}) fehlt`)
+          continue
+        }
+        if (x.name.length > 28) melde('H', kw, `Name (${s}) über 28 Zeichen`)
+        if (x.wann.length > 70) melde('H', kw, `„wann“ (${s}) über 70 Zeichen – passt nicht auf die Karte`)
+        if (x.schritte?.length !== 3) melde('F', kw, `genau drei Schritte (${s})`)
+        for (const y of x.schritte ?? []) if (y.length > 80) melde('H', kw, `Schritt (${s}) über 80 Zeichen: „${y.slice(0, 40)}“`)
+        for (const y of [x.name, x.wann, ...(x.schritte ?? [])]) stil(kw, y, s)
+      }
+    }
+  }
+}
 
 // --- Handbuch (Teil A) -----------------------------------------------------------------------------
 /** Felder ohne Fließtext (Kennungen, Bilder, Farben) */

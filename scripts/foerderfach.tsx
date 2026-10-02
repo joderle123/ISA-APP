@@ -1,5 +1,6 @@
 // Förderfach „Skills fir d’Liewen“ als PDF, je Klassenstufe (7e, 6e, 5e) und Sprache (DE, FR):
-//  - das Schülerheft (Deckblatt, Inhalt, alle Blätter, Meine Wörter, Rückseite mit Hilfe)
+//  - das Schülerheft (Deckblatt, Inhalt, alle Blätter, Wochen-Missionen, Skill-Karten, Meine Wörter,
+//    Rückseite mit Hilfe)
 //  - das Lehrerhandbuch als Booklet (Teil A–D, Glossar, Rückseite)
 // Beide haben eine durch 4 teilbare Seitenzahl (Druck als Broschüre, A3 gefaltet zu A4).
 //   npx tsx --tsconfig tsconfig.scripts.json scripts/foerderfach.tsx [ausgabeordner] [--png] [--entwurf] [--nur=7e] [--sprache=de]
@@ -17,7 +18,7 @@ import { execFileSync } from 'node:child_process'
 import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { BookletDokument, type HandbuchDaten } from '../src/foerderfach/pdf/Handbuch'
 import { SchuelerheftDokument } from '../src/foerderfach/pdf/Schuelerheft'
-import { EINHEITEN, HANDBUCH, HEFT_VORN, PLAENE, WERKZEUGE, blattById, planVon } from '../src/foerderfach/daten'
+import { EINHEITEN, HANDBUCH, HEFT_VORN, PLAENE, SKILLKARTEN, WERKZEUGE, blattById, planVon } from '../src/foerderfach/daten'
 import { KLASSEN } from '../src/foerderfach/fach'
 import type { Blatt } from '../src/blatt/typen'
 import type { Einheit, EinheitenDatei, Sprache } from '../src/foerderfach/typen'
@@ -83,17 +84,53 @@ for (const klasse of KLASSEN.filter((k) => !nur || k === nur)) {
     // --- Schülerheft ---------------------------------------------------------------------------
     const heftDatei = join(ziel, `Skills-fir-d-Liewen_${klasse}_${NAME[sprache].heft}_${sprache.toUpperCase()}.pdf`)
     const h1 = new Map<string, number>()
-    await renderToFile(<SchuelerheftDokument plan={plan} einheiten={eigene} blaetter={blaetter} text={text} sprache={sprache} vorn={HEFT_VORN[klasse]} marken={h1} />, heftDatei)
+    const ersterDurchlauf = (kartenLuecke: boolean) =>
+      renderToFile(
+        <SchuelerheftDokument
+          plan={plan}
+          einheiten={eigene}
+          blaetter={blaetter}
+          text={text}
+          sprache={sprache}
+          vorn={HEFT_VORN[klasse]}
+          karten={SKILLKARTEN[klasse]}
+          kartenLuecke={kartenLuecke}
+          marken={h1}
+        />,
+        heftDatei,
+      )
+    await ersterDurchlauf(false)
+    // Die Skill-Karten beginnen auf einer Vorderseite (ungerade Seite): Ihre Rückseite wird beim Ausschneiden zerschnitten
+    const kartenLuecke = h1.has('k') && h1.get('k')! % 2 === 0
+    if (kartenLuecke) {
+      h1.clear()
+      await ersterDurchlauf(true)
+    }
     const heftNotizen = auffuellen(seitenzahl(heftDatei))
     const heft = new Map<string, number>()
-    await renderToFile(<SchuelerheftDokument plan={plan} einheiten={eigene} blaetter={blaetter} text={text} sprache={sprache} vorn={HEFT_VORN[klasse]} marken={heft} seiten={h1} notizen={heftNotizen} />, heftDatei)
+    await renderToFile(
+      <SchuelerheftDokument
+        plan={plan}
+        einheiten={eigene}
+        blaetter={blaetter}
+        text={text}
+        sprache={sprache}
+        vorn={HEFT_VORN[klasse]}
+        karten={SKILLKARTEN[klasse]}
+        kartenLuecke={kartenLuecke}
+        marken={heft}
+        seiten={h1}
+        notizen={heftNotizen}
+      />,
+      heftDatei,
+    )
     vergleiche(heftDatei, h1, heft)
     const nh = seitenzahl(heftDatei)
     if (nh % 4) {
       console.error(`✗ ${heftDatei}: ${nh} Seiten – kein Vielfaches von 4`)
       process.exitCode = 1
     }
-    console.log('✓', heftDatei, `(${nh} Seiten, ${heftNotizen} Notizseiten, ${[...heft.keys()].filter((k) => k !== 'w').length} Blätter)`)
+    console.log('✓', heftDatei, `(${nh} Seiten, ${heftNotizen} Notizseiten, ${[...heft.keys()].filter((k) => !/^(w|k|m\d?)$/.test(k)).length} Blätter)`)
     bilder(heftDatei)
 
     // --- Lehrerhandbuch ------------------------------------------------------------------------
@@ -118,7 +155,13 @@ for (const klasse of KLASSEN.filter((k) => !nur || k === nur)) {
       process.exitCode = 1
     }
     console.log('✓', datei, `(${n} Seiten, ${notizen} Notizseiten, ${eigene.length} Einheiten)`)
-    if (args.includes('--marken')) console.log([...m2].sort((a, b) => a[1] - b[1]).map(([id, s]) => `${s}:${id}`).join('  '))
+    if (args.includes('--marken'))
+      console.log(
+        [...m2]
+          .sort((a, b) => a[1] - b[1])
+          .map(([id, s]) => `${s}:${id}`)
+          .join('  '),
+      )
     bilder(datei)
   }
 }

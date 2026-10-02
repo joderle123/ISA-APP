@@ -4,6 +4,60 @@
       "titel": "So ist dieses Handbuch aufgebaut",
       "text": "Teil A erklärt das Fach: Aufbau der Doppelstunde, Rahmen und Sicherheit, Methoden, Zusammenarbeit mit Eltern und Kollegium. Teil B zeigt den Jahresplan der {klasse}. Teil C enthält alle Einheiten des Jahres, Kapitel für Kapitel – jede mit Zielen, Material, Ablauf, Anleitung mit Beispielsätzen, Hinweisen für schwierige Momente, einer Kurzfassung für eine einzelne Stunde und den Kopiervorlagen direkt dahinter. Teil D enthält die Blätter, die das ganze Jahr gebraucht werden. Bei jedem Blatt steht die Seite im Schülerheft."
     },
+    "start": {
+      "titel": "Bevor Sie starten",
+      "einleitung": "Die Fragen, die sich Lehrkräfte vor den ersten Stunden am häufigsten stellen – mit kurzen Antworten aus der Praxis. Ausführlich steht alles in Teil A und in jeder Einheit.",
+      "fragen": [
+        {
+          "titel": "Ich bin Lehrkraft, keine Psychologin. Kann ich das überhaupt?",
+          "text": "Ja. Das Fach verlangt keine Therapie, sondern guten Unterricht: Sie leiten Übungen an, schützen den Rahmen und holen Hilfe, wenn etwas zu groß wird. Jede Einheit beschreibt Schritt für Schritt, was Sie vorbereiten, tun und sagen können. Für alles, was darüber hinausgeht, ist der SePAS da."
+        },
+        {
+          "titel": "Was, wenn alle lachen oder niemand mitmacht?",
+          "text": "In den ersten Stunden ist das normal: Lachen ist oft Verlegenheit. Nicht persönlich nehmen, kurz benennen („Das ist ungewohnt“), selbst mitmachen und ruhig weitergehen. Mit kleinen Formen beginnen – zu zweit, Handzeichen, Aufstellen –, große Runden kommen später. Für solche Momente steht in jedem Schritt „Wenn es kippt“."
+        },
+        {
+          "titel": "Muss ich selbst Persönliches erzählen?",
+          "text": "Nein. Sie machen die Übungen mit und geben Beispiele, aber Sie entscheiden, wie viel Sie zeigen – genau wie die Jugendlichen. Ein kleines, echtes Beispiel („Vor Elterngesprächen bin ich nervös“) wirkt mehr als eine große Geschichte."
+        },
+        {
+          "titel": "Was, wenn jemand weint oder etwas Schweres erzählt?",
+          "text": "Ruhig bleiben, den Beitrag würdigen und nicht vor der Klasse vertiefen: „Danke, dass du das sagst. Wir reden nach der Stunde in Ruhe weiter.“ Wer Abstand braucht, geht an den Ruheplatz im Raum oder mit einer Begleitung zum SePAS, nie allein. Bei Hinweisen auf eine Gefährdung noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln (siehe „Rahmen und Sicherheit“)."
+        },
+        {
+          "titel": "Wie motiviere ich ohne Noten?",
+          "text": "Mit Abwechslung, Bewegung und Themen, die die Jugendlichen wirklich betreffen. Fortschritt wird sichtbar im Skills-Pass mit Stempel, auf den Plakaten der Klasse und bei den Wochen-Missionen. Loben Sie das Mitmachen, nicht „richtige“ Antworten: Für viele ist es das erste Fach, in dem sie nicht scheitern können."
+        },
+        {
+          "titel": "Was, wenn die Zeit nicht reicht?",
+          "text": "Die Minuten sind ein Plan, kein Zwang. Lieber eine Übung gründlich als drei hastig. Jede Einheit hat eine Kurzfassung für eine einzelne Stunde; Wahleinheiten entfallen zuerst, wenn Stunden ausfallen. Fest bleiben Check-in, Skill und Abschluss."
+        },
+        {
+          "titel": "Meine Klasse ist sehr unruhig. Geht das trotzdem?",
+          "text": "Gerade dann. Die festen Rituale (Check-in, Bewegungspause, Skill, Abschluss) geben Halt. Dazu ein klares Ruhezeichen (Hand hoch, Klangschale), kurze Arbeitsphasen mit Zeitangabe und feste Rollen in den Tischgruppen. Die Klassenvereinbarung hängt sichtbar und wird in der Stunde genutzt, nicht nur aufgehängt."
+        },
+        {
+          "titel": "Einige verstehen kaum Deutsch oder Französisch.",
+          "text": "Jede Einheit hat einen Wortspeicher für die Tafel und eine Differenzierung „Einfacher“: Bilder, Gesten, Satzanfänge, Tandems, mündlich statt schriftlich. Gefühlsrad und Anspannungsskala funktionieren auch mit wenigen Wörtern. Das Schülerheft gibt es auf Deutsch und auf Französisch."
+        },
+        {
+          "titel": "Was, wenn jemand nicht mitmachen will?",
+          "text": "Freiwillig ist alles Persönliche, nicht die Anwesenheit. Wer nicht sprechen will, sagt „weiter“; wer eine Übung nicht mitmachen möchte, übernimmt eine Rolle (Zeit, Beobachtung, Material). Nachfragen unter vier Augen, nicht vor der Klasse – oft steckt Unsicherheit dahinter."
+        },
+        {
+          "titel": "Was sage ich den Eltern?",
+          "text": "Ein Elternbrief liegt in Teil A bei, auf Deutsch und auf Französisch. Vor sensiblen Einheiten (zum Beispiel Liebe und Sexualität, Verlust, Krisen) informieren Sie die Eltern vorher – das steht in der Einheit unter „Vorbereitung“. Fragen von Eltern beantworten Sie gern gemeinsam mit dem Régent oder dem SePAS."
+        },
+        {
+          "titel": "Wie viel Vorbereitung brauche ich?",
+          "text": "Rund 20 Minuten zum Lesen der Einheit, dazu Kopien und Material. Die erste Seite jeder Einheit zeigt Material und Vorbereitung auf einen Blick. Vieles brauchen Sie das ganze Jahr: Gefühlsrad-Plakat, Klebepunkte, Klangschale, Moderationskarten."
+        },
+        {
+          "titel": "Und die Wochen-Mission?",
+          "text": "Am Ende jeder Stunde in einem Satz ansagen – sie steht im Schülerheft. In der Brücke der nächsten Stunde kurz nachfragen: Daumen hoch, Mitte, runter, eine Stimme erzählt. Keine Kontrolle, keine Note; wer sie nicht geschafft hat, hört einfach zu."
+        }
+      ]
+    },
     "ueberblick": {
       "titel": "Das Fach auf einen Blick",
       "einleitung": "Skills fir d’Liewen ist das Fach für sozio-emotionales Lernen in der Voie de préparation. In einer Doppelstunde pro Woche lernen die Jugendlichen, Gefühle zu verstehen, mit Stress und Wut umzugehen, gut miteinander zu reden, Grenzen zu setzen und verantwortlich zu entscheiden. Das Fach übt, statt zu predigen: Jede Stunde enthält Bewegung, Austausch und einen Skill zum Ausprobieren.",
@@ -563,6 +617,11 @@
     "heft": {
       "inhalt": "Inhalt",
       "jedeStunde": "Für jede Stunde",
+      "missionen": "Meine Wochen-Missionen",
+      "missionenText": "Nach jeder Stunde wartet eine kleine Mission auf dich. Probiere sie bis zur nächsten Stunde aus und kreuze an, wenn du sie geschafft hast. Es gibt keine Note – es zählt, dass du es versuchst.",
+      "geschafft": "geschafft",
+      "karten": "Meine Skill-Karten",
+      "kartenText": "Schneide die Karten aus. Sie passen ins Portemonnaie oder in die Handyhülle – für Momente, in denen du einen Skill brauchst.",
       "woerter": "Meine Wörter",
       "woerterText": "Die wichtigsten Wörter aus den Stunden – auf Deutsch und auf Französisch.",
       "hilfeTitel": "Hier bekommst du Hilfe",
@@ -579,6 +638,60 @@
     "vorwort": {
       "titel": "Comment ce guide est organisé",
       "text": "La partie A présente la matière : déroulement de la séance, cadre et sécurité, méthodes, collaboration avec les parents et les collègues. La partie B présente le plan annuel de la {klasse}. La partie C contient toutes les séances de l’année, chapitre par chapitre – chacune avec ses objectifs, le matériel, le déroulement, des consignes avec des exemples de phrases, des conseils pour les moments difficiles, une version courte pour une seule heure et, juste après, les modèles à photocopier. La partie D réunit les fiches utilisées toute l’année. Pour chaque fiche, la page du cahier de l’élève est indiquée."
+    },
+    "start": {
+      "titel": "Avant de commencer",
+      "einleitung": "Les questions que les enseignant·es se posent le plus souvent avant les premières séances – avec des réponses courtes, tirées de la pratique. Tout est développé dans la partie A et dans chaque séance.",
+      "fragen": [
+        {
+          "titel": "Je suis enseignant·e, pas psychologue. Est-ce que j’en suis capable ?",
+          "text": "Oui. La matière ne demande pas de faire une thérapie, mais un bon enseignement : guider des exercices, protéger le cadre et demander de l’aide quand quelque chose dépasse ce cadre. Chaque séance décrit pas à pas ce qu’il faut préparer, faire et dire. Pour tout ce qui va au-delà, le SePAS est là."
+        },
+        {
+          "titel": "Et si tout le monde rit ou que personne ne participe ?",
+          "text": "Pendant les premières séances, c’est normal : le rire cache souvent la gêne. Ne pas le prendre pour soi, le nommer brièvement (« c’est inhabituel »), faire l’exercice avec la classe et continuer calmement. Commencer par de petits formats – à deux, à main levée, en se plaçant dans la salle – et garder les grands tours pour plus tard. Chaque étape propose un « Si ça dérape » pour ces moments-là."
+        },
+        {
+          "titel": "Dois-je raconter des choses personnelles ?",
+          "text": "Non. Vous faites les exercices avec la classe et donnez des exemples, mais vous décidez de ce que vous montrez – exactement comme les jeunes. Un petit exemple vrai (« avant les réunions avec les parents, je suis nerveux·se ») porte plus qu’une longue histoire."
+        },
+        {
+          "titel": "Et si un jeune pleure ou raconte quelque chose de lourd ?",
+          "text": "Rester calme, remercier, ne pas approfondir devant la classe : « Merci de l’avoir dit. On en reparle tranquillement après le cours. » Qui a besoin de distance va au coin calme de la salle ou au SePAS accompagné, jamais seul. En cas de signe de danger, informer le SePAS le jour même et agir selon le protocole de protection de l’école (voir « Cadre et sécurité »)."
+        },
+        {
+          "titel": "Comment motiver sans notes ?",
+          "text": "Avec de la variété, du mouvement et des thèmes qui concernent vraiment les jeunes. Les progrès se voient dans le Skills-Pass avec ses tampons, sur les affiches de la classe et avec les missions de la semaine. Valorisez la participation plutôt que les « bonnes » réponses : pour beaucoup, c’est la première matière où l’on ne peut pas échouer."
+        },
+        {
+          "titel": "Et si le temps manque ?",
+          "text": "Les minutes sont un plan, pas une obligation. Mieux vaut un exercice bien fait que trois bâclés. Chaque séance propose une version courte pour une seule heure ; les séances au choix sautent en premier quand des heures tombent. Le tour d’humeur, le skill et la clôture restent."
+        },
+        {
+          "titel": "Ma classe est très agitée. Est-ce que ça peut marcher ?",
+          "text": "Justement. Les rituels fixes (tour d’humeur, pause active, skill, clôture) donnent des repères. Ajoutez un signal clair pour le silence (main levée, bol chantant), des temps de travail courts et annoncés, et des rôles fixes dans les îlots. La charte de classe est affichée et utilisée pendant la séance, pas seulement accrochée au mur."
+        },
+        {
+          "titel": "Certains comprennent à peine le français ou l’allemand.",
+          "text": "Chaque séance a des mots clés à écrire au tableau et une différenciation « Plus simple » : images, gestes, débuts de phrase, binômes, oral plutôt qu’écrit. La roue des émotions et l’échelle de tension fonctionnent aussi avec peu de mots. Le cahier de l’élève existe en français et en allemand."
+        },
+        {
+          "titel": "Et si un jeune refuse de participer ?",
+          "text": "Ce qui est personnel est volontaire, la présence ne l’est pas. Qui ne veut pas parler dit « je passe » ; qui ne veut pas faire un exercice prend un rôle (temps, observation, matériel). En parler en tête-à-tête, pas devant la classe – souvent, c’est de l’insécurité."
+        },
+        {
+          "titel": "Que dire aux parents ?",
+          "text": "Une lettre aux parents se trouve dans la partie A, en français et en allemand. Avant les séances sensibles (par exemple l’amour et la sexualité, le deuil, les crises), informez les parents à l’avance – c’est indiqué dans la séance, sous « Préparation ». Les questions des parents peuvent se traiter avec le régent ou la régente, ou avec le SePAS."
+        },
+        {
+          "titel": "Combien de préparation faut-il ?",
+          "text": "Environ 20 minutes pour lire la séance, plus les copies et le matériel. La première page de chaque séance montre le matériel et la préparation d’un coup d’œil. Une bonne partie sert toute l’année : l’affiche de la roue des émotions, les gommettes, le bol chantant, les cartes."
+        },
+        {
+          "titel": "Et la mission de la semaine ?",
+          "text": "L’annoncer en une phrase à la fin de chaque séance – elle figure dans le cahier de l’élève. Au moment du lien de la séance suivante, demander brièvement : pouce en haut, au milieu, en bas, une voix raconte. Pas de contrôle, pas de note ; qui ne l’a pas faite écoute simplement."
+        }
+      ]
     },
     "ueberblick": {
       "titel": "La matière en bref",
@@ -1139,6 +1252,11 @@
     "heft": {
       "inhalt": "Sommaire",
       "jedeStunde": "Pour chaque séance",
+      "missionen": "Mes missions de la semaine",
+      "missionenText": "Après chaque séance, une petite mission t’attend. Essaie-la avant la séance suivante et coche la case quand tu l’as réussie. Il n’y a pas de note : ce qui compte, c’est d’essayer.",
+      "geschafft": "réussi",
+      "karten": "Mes cartes skills",
+      "kartenText": "Découpe les cartes. Elles tiennent dans un porte-monnaie ou dans une coque de téléphone – pour les moments où tu as besoin d’un skill.",
       "woerter": "Mes mots",
       "woerterText": "Les mots les plus importants des séances – en français et en allemand.",
       "hilfeTitel": "Ici, tu trouves de l’aide",

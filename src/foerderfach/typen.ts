@@ -118,6 +118,29 @@ export interface Einheit {
   fr: EinheitText
 }
 
+/** Skill-Karte zum Ausschneiden (am Ende des Schülerhefts): ein Skill mit Symbol und drei Schritten. */
+export interface SkillKarteText {
+  /** Name des Skills wie im Titel des Skill-Schritts („Skill: …“), höchstens 28 Zeichen */
+  name: string
+  /** Wann hilft der Skill? Höchstens 70 Zeichen */
+  wann: string
+  /** Genau drei kurze Schritte (je höchstens 80 Zeichen), an die Jugendlichen gerichtet */
+  schritte: string[]
+}
+
+export interface SkillKarte {
+  /** z. B. 'ff7-k-54321' */
+  id: string
+  /** Piktogramm aus src/blatt/bilder/icons.json, z. B. 'icon:eye' */
+  bild: string
+  /** Einheit, in der der Skill eingeführt wird */
+  einheit: string
+  de: SkillKarteText
+  fr: SkillKarteText
+}
+
+export type SkillKartenDatei = Record<Klasse, SkillKarte[]>
+
 export interface EinheitenDatei {
   einheiten: Einheit[]
   /** Nur in Entwürfen (src/data/foerderfach/entwurf): die Schülerblätter dieser Einheiten */
@@ -155,6 +178,8 @@ export interface ElternBrief {
 export interface HandbuchText {
   /** Kurzer Hinweis auf der Inhaltsseite (Aufbau des Hefts); {klasse} wird ersetzt */
   vorwort: { titel: string; text: string }
+  /** „Bevor Sie starten“: die häufigsten Sorgen vor den ersten Stunden mit kurzen Antworten (Teil A, vorn) */
+  start: { titel: string; einleitung: string; fragen: TitelText[] }
   ueberblick: {
     titel: string
     einleitung: string
@@ -196,8 +221,23 @@ export interface HandbuchText {
   /** Plakat „Unser Weg durch die 7e“: Seitentitel im Heft, Hinweis; {klasse} wird ersetzt */
   jahresweg: { titel: string; text: string; plakat: string }
   glossar: { titel: string; text: string }
-  /** Schülerheft: Inhaltsseite, Wörterliste, Rückseite mit Hilfe */
-  heft: { inhalt: string; jedeStunde: string; woerter: string; woerterText: string; hilfeTitel: string; hilfeText: string; notizen: string }
+  /** Schülerheft: Inhaltsseite, Wochen-Missionen, Wörterliste, Rückseite mit Hilfe */
+  heft: {
+    inhalt: string
+    jedeStunde: string
+    missionen: string
+    missionenText: string
+    /** Skill-Karten zum Ausschneiden: Überschrift und Hinweis */
+    karten: string
+    kartenText: string
+    /** Beschriftung unter dem Kästchen zum Abhaken */
+    geschafft: string
+    woerter: string
+    woerterText: string
+    hilfeTitel: string
+    hilfeText: string
+    notizen: string
+  }
   /** Rückseite des Hefts */
   rueckseite: { titel: string; text: string; dieses: string }
 }

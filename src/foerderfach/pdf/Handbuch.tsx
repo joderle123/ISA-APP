@@ -169,6 +169,33 @@ function InhaltSeiten({ sprache, p, klasse, teile, text, seiten }: { sprache: Sp
 
 // --- Teil A: das Fach ---------------------------------------------------------------------------------------
 
+/** „Bevor Sie starten“: häufige Sorgen vor den ersten Stunden, je eine kurze Antwort */
+function StartSeite({ sprache, p, klasse, text, marken }: { sprache: Sprache; p: Palette; klasse: Klasse; text: HandbuchText; marken?: Marken }) {
+  const t = TX[sprache]
+  const s = text.start
+  return (
+    <Page size="A4" style={seitenStil}>
+      <Marke id="a0" marken={marken} />
+      <KopfA t={t} klasse={klasse} p={p} />
+      <SeitenTitel titel={s.titel} unter={s.einleitung} p={p} sprache={sprache} />
+      {s.fragen.map((f, i) => (
+        <View key={i} wrap={false} style={{ flexDirection: 'row', paddingVertical: 6.5, borderTopWidth: i ? 0.6 : 0, borderTopColor: NEUTRAL.haarlinie }}>
+          <View style={{ width: 18, height: 18, borderRadius: 9, backgroundColor: p.zart, alignItems: 'center', justifyContent: 'center', marginRight: 9, marginTop: 0.5 }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9, color: p.tief }}>?</Text>
+          </View>
+          <View style={{ flex: 1 }}>
+            <Fett groesse={9.8}>{ty(f.titel, sprache)}</Fett>
+            <Absatz groesse={9} style={{ marginTop: 2, lineHeight: 1.42 }}>
+              {ty(f.text, sprache)}
+            </Absatz>
+          </View>
+        </View>
+      ))}
+      <Fuss links={FACH.name} titel={ty(s.titel, sprache)} sprache={sprache} />
+    </Page>
+  )
+}
+
 function UeberblickSeite({ sprache, p, klasse, text, marken }: { sprache: Sprache; p: Palette; klasse: Klasse; text: HandbuchText; marken?: Marken }) {
   const t = TX[sprache]
   const u = text.ueberblick
@@ -1397,6 +1424,7 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
       titel: t.teilA,
       gruppen: [
         [
+          { id: 'a0', titel: text.start.titel },
           { id: 'a1', titel: text.ueberblick.titel },
           { id: 'a2', titel: text.kompetenzen.titel },
           { id: 'a3', titel: text.doppelstunde.titel },
@@ -1436,6 +1464,7 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
     <Document title={bookletTitel(klasse, sprache)} author={URHEBER_NAME} creator="CDSE" producer="CDSE" language={sprache}>
       <Deckblatt plan={plan} sprache={sprache} art="handbuch" />
       <InhaltSeiten sprache={sprache} p={p} klasse={klasse} teile={teile} text={text} seiten={seiten} />
+      <StartSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
       <UeberblickSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
       <KompetenzSeite sprache={sprache} p={p} klasse={klasse} text={text} plaene={daten.plaene} marken={marken} />
       <DoppelstundeSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />

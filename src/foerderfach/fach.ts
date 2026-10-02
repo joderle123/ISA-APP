@@ -120,6 +120,8 @@ export const TX = {
     kurzfassung: 'Wenn nur eine Stunde bleibt',
     heftKurz: (s: number) => `Heft S. ${s}`,
     mission: 'Wochen-Mission',
+    wann: 'Wann?',
+    skill: 'Skill',
     /** Hinweis neben der Wochen-Mission im Handbuch */
     missionVerweis: (s?: number) => `${s ? `Heft S. ${s}` : 'im Schülerheft'} · in der nächsten Brücke kurz nachfragen`,
     seiteKurz: (s: number) => `S. ${s}`,
@@ -192,6 +194,8 @@ export const TX = {
     kurzfassung: 'S’il ne reste qu’une heure',
     heftKurz: (s: number) => `Cahier p. ${s}`,
     mission: 'Mission de la semaine',
+    wann: 'Quand ?',
+    skill: 'Skill',
     missionVerweis: (s?: number) => `${s ? `cahier p. ${s}` : 'dans le cahier'} · à reprendre au début de la séance suivante`,
     seiteKurz: (s: number) => `p. ${s}`,
     imKapitel: 'Dans ce chapitre',

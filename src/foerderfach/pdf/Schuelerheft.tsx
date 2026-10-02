@@ -1,23 +1,25 @@
 // ---------------------------------------------------------------------------
 // Schülerheft des Förderfachs als PDF, je Klassenstufe: Deckblatt mit Namensfeldern,
 // Inhalt, dann die Blätter in fester Reihenfolge – vorn die Seiten für jede Stunde
-// (So funktioniert das Fach, Gefühlsrad, Skills-Pass …), danach die Blätter der
-// Einheiten –, „Meine Wörter“ (Wortspeicher Deutsch–Französisch), Notizseiten und
+// (So funktioniert das Fach, Gefühlsrad, Skills-Pass …) und „Meine Wochen-Missionen“
+// (eine Seite je Trimester), danach die Blätter der Einheiten –, die Skill-Karten zum
+// Ausschneiden, „Meine Wörter“ (Wortspeicher Deutsch–Französisch), Notizseiten und
 // eine Rückseite mit Hilfe. Die Blätter sind normale Toolbox-Blätter (BlattSeiten im
 // Heft-Modus) in der Farbe der Klassenstufe. Zwei Durchläufe wie beim Handbuch:
 // Der erste sammelt die Seitenzahlen, der zweite setzt sie ins Inhaltsverzeichnis.
 // ---------------------------------------------------------------------------
 
+import { Fragment } from 'react'
 import { Document, Page, View, Text, Image } from '@react-pdf/renderer'
 import type { Blatt } from '../../blatt/typen'
 import { BlattSeiten, blattInhalt } from '../../blatt/pdf/BlattDokument'
 import { NEUTRAL } from '../../blatt/zeichnung'
-import { SCHRIFT } from '../../blatt/pdf/stil'
+import { SCHRIFT, SEITE } from '../../blatt/pdf/stil'
 import { URHEBER, URHEBER_NAME } from '../../lib/urheber'
 import { CDSE_LOGO, CDSE_LOGO_SEITEN } from '../../lib/cdse-logo'
-import { FACH, STUFE_FARBEN, TX } from '../fach'
-import type { Einheit, HandbuchText, Jahresplan, Sprache } from '../typen'
-import { Absatz, Deckblatt, Fuss, Kopf, Marke, type Marken, SeitenTitel, WARM, seitenStil, stufenPalette, ty } from './teile'
+import { FACH, STUFE_FARBEN, TX, trimesterName } from '../fach'
+import type { Einheit, HandbuchText, Jahresplan, SkillKarte, Sprache } from '../typen'
+import { Absatz, BREITE, Deckblatt, Fuss, Kopf, Marke, type Marken, Plakette, SeitenTitel, WARM, seitenStil, stufenPalette, ty, versal } from './teile'
 
 const PLATZHALTER = 188
 
@@ -56,7 +58,25 @@ export function heftTitel(plan: Jahresplan, sprache: Sprache): string {
   return `${FACH.name} – ${TX[sprache].schuelerheft} ${plan.klasse}`
 }
 
-function InhaltHeft({ plan, eintraege, blaetter, text, sprache, seiten }: { plan: Jahresplan; eintraege: HeftEintrag[]; blaetter: Map<string, Blatt>; text: HandbuchText; sprache: Sprache; seiten?: Marken }) {
+function InhaltHeft({
+  plan,
+  eintraege,
+  blaetter,
+  text,
+  sprache,
+  seiten,
+  missionen,
+  karten,
+}: {
+  plan: Jahresplan
+  eintraege: HeftEintrag[]
+  blaetter: Map<string, Blatt>
+  text: HandbuchText
+  sprache: Sprache
+  seiten?: Marken
+  missionen: boolean
+  karten: boolean
+}) {
   const t = TX[sprache]
   const p = stufenPalette(plan.klasse)
   const gruppen: { titel: string; liste: HeftEintrag[] }[] = [{ titel: text.heft.jedeStunde, liste: eintraege.filter((x) => x.gruppe === 'vorn') }]
@@ -85,15 +105,160 @@ function InhaltHeft({ plan, eintraege, blaetter, text, sprache, seiten }: { plan
               </View>
             )
           })}
+          {gi === 0 && missionen ? (
+            <View style={{ flexDirection: 'row', alignItems: 'flex-end', marginTop: 3.5 }}>
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.4, color: NEUTRAL.text }}>{ty(text.heft.missionen, sprache)}</Text>
+              <View style={{ flex: 1, marginHorizontal: 6, marginBottom: 3, borderBottomWidth: 1, borderBottomColor: NEUTRAL.rahmen, borderStyle: 'dotted' }} />
+              <Text style={{ width: 22, textAlign: 'right', fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text }}>{seite('m')}</Text>
+            </View>
+          ) : null}
         </View>
       ))}
-      <View wrap={false} style={{ marginTop: 12, flexDirection: 'row', alignItems: 'flex-end' }}>
+      {karten ? (
+        <View wrap={false} style={{ marginTop: 12, flexDirection: 'row', alignItems: 'flex-end' }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: p.tief }}>{ty(text.heft.karten, sprache)}</Text>
+          <View style={{ flex: 1, marginHorizontal: 6, marginBottom: 3, borderBottomWidth: 1, borderBottomColor: NEUTRAL.rahmen, borderStyle: 'dotted' }} />
+          <Text style={{ width: 22, textAlign: 'right', fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text }}>{seite('k')}</Text>
+        </View>
+      ) : null}
+      <View wrap={false} style={{ marginTop: karten ? 4 : 12, flexDirection: 'row', alignItems: 'flex-end' }}>
         <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: p.tief }}>{ty(text.heft.woerter, sprache)}</Text>
         <View style={{ flex: 1, marginHorizontal: 6, marginBottom: 3, borderBottomWidth: 1, borderBottomColor: NEUTRAL.rahmen, borderStyle: 'dotted' }} />
         <Text style={{ width: 22, textAlign: 'right', fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text }}>{seite('w')}</Text>
       </View>
       <Fuss links={FACH.name} titel={text.heft.inhalt} sprache={sprache} />
     </Page>
+  )
+}
+
+/** Wochen-Missionen eines Trimesters: je Einheit die Mission mit einem Kästchen zum Abhaken. */
+function missionenVon(plan: Jahresplan, einheiten: Einheit[], sprache: Sprache, tr: 1 | 2 | 3) {
+  return plan.einheiten
+    .filter((pe) => plan.kapitel.find((k) => k.id === pe.kapitel)?.trimester === tr)
+    .map((pe) => ({ pe, mission: einheiten.find((x) => x.id === pe.id)?.[sprache]?.mission }))
+    .filter((x): x is { pe: (typeof x)['pe']; mission: string } => !!x.mission)
+}
+
+function MissionenSeite({
+  plan,
+  einheiten,
+  text,
+  sprache,
+  tr,
+  erste,
+  marken,
+}: {
+  plan: Jahresplan
+  einheiten: Einheit[]
+  text: HandbuchText
+  sprache: Sprache
+  tr: 1 | 2 | 3
+  erste: boolean
+  marken?: Marken
+}) {
+  const p = stufenPalette(plan.klasse)
+  const liste = missionenVon(plan, einheiten, sprache, tr)
+  return (
+    <Page size="A4" style={seitenStil}>
+      {erste ? <Marke id="m" marken={marken} /> : null}
+      <Marke id={`m${tr}`} marken={marken} />
+      <Kopf reiter={TX[sprache].jedeStunde} meta={`${FACH.name}  ·  ${plan.klasse}`} p={p} />
+      <SeitenTitel titel={`${text.heft.missionen} · ${trimesterName(tr, sprache)}`} unter={erste ? text.heft.missionenText : undefined} p={p} sprache={sprache} />
+      {liste.map(({ pe, mission }, i) => (
+        <View key={pe.id} wrap={false} style={{ flexDirection: 'row', alignItems: 'center', paddingVertical: 6.5, borderTopWidth: i ? 0.6 : 0, borderTopColor: NEUTRAL.rahmen }}>
+          <Text style={{ width: 24, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 11, color: p.tief }}>{String(pe.nr)}</Text>
+          <View style={{ flex: 1, paddingRight: 12 }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7.6, color: NEUTRAL.leise, letterSpacing: 0.2 }}>{ty(pe.titel[sprache], sprache)}</Text>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.8, lineHeight: 1.36, color: NEUTRAL.text, marginTop: 1.5 }}>{ty(mission, sprache)}</Text>
+          </View>
+          <View style={{ width: 44, alignItems: 'center' }}>
+            <View style={{ width: 15, height: 15, borderWidth: 1.2, borderColor: p.tief, borderRadius: 3.5, backgroundColor: '#FFFFFF' }} />
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6.6, color: NEUTRAL.leise, marginTop: 2 }}>{ty(text.heft.geschafft, sprache)}</Text>
+          </View>
+        </View>
+      ))}
+      <Fuss links={FACH.name} titel={`${text.heft.missionen} · ${TX[sprache].schuelerheft} ${plan.klasse}`} sprache={sprache} />
+    </Page>
+  )
+}
+
+/**
+ * Skill-Karten in Scheckkartengröße (85 × 54 mm), acht je Seite, mit gestrichelter Schnittlinie. Wer sie
+ * ausschneidet, zerschneidet auch die Rückseite – deshalb steht jede Kartenseite auf einer Vorderseite
+ * (ungerade Seitenzahl, `luecke` setzt sonst eine Notizseite davor) und dahinter die Rückseiten der Karten,
+ * spiegelbildlich angeordnet. Das Raster steht auf beiden Seiten an derselben Stelle.
+ */
+const KARTE_B = 241
+const KARTE_H = 153
+const KARTEN_JE_SEITE = 8
+const RASTER_OBEN = 148
+const RASTER_ABSTAND = 8
+
+function kartenOrt(i: number, spiegeln: boolean) {
+  const spalte = spiegeln ? 1 - (i % 2) : i % 2
+  return { left: SEITE.rand + spalte * (BREITE - KARTE_B), top: RASTER_OBEN + Math.floor(i / 2) * (KARTE_H + RASTER_ABSTAND) }
+}
+
+const kartenRahmen = { position: 'absolute' as const, width: KARTE_B, height: KARTE_H, borderWidth: 0.8, borderColor: NEUTRAL.linie, borderStyle: 'dashed' as const, borderRadius: 9 }
+
+function SkillKartenSeiten({ plan, karten, text, sprache, marken, luecke }: { plan: Jahresplan; karten: SkillKarte[]; text: HandbuchText; sprache: Sprache; marken?: Marken; luecke?: boolean }) {
+  const t = TX[sprache]
+  const p = stufenPalette(plan.klasse)
+  const seiten: SkillKarte[][] = []
+  for (let i = 0; i < karten.length; i += KARTEN_JE_SEITE) seiten.push(karten.slice(i, i + KARTEN_JE_SEITE))
+  const fuss = <Fuss links={FACH.name} titel={`${text.heft.karten} · ${t.schuelerheft} ${plan.klasse}`} sprache={sprache} />
+  return (
+    <>
+      {luecke ? <NotizSeite plan={plan} text={text} sprache={sprache} /> : null}
+      {seiten.map((liste, si) => (
+        <Fragment key={si}>
+          <Page size="A4" style={seitenStil}>
+            {si === 0 ? <Marke id="k" marken={marken} /> : null}
+            <Kopf reiter={text.heft.karten} meta={`${FACH.name}  ·  ${plan.klasse}`} p={p} />
+            <SeitenTitel titel={text.heft.karten} unter={si === 0 ? text.heft.kartenText : undefined} p={p} sprache={sprache} />
+            {liste.map((k, i) => {
+              const x = k[sprache]
+              return (
+                <View key={k.id} style={{ ...kartenRahmen, ...kartenOrt(i, false), paddingHorizontal: 10, paddingTop: 9 }}>
+                  <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                    <Plakette name={k.bild} d={26} farbe={p.tief} grund={p.zart} />
+                    <View style={{ flex: 1, marginLeft: 7 }}>
+                      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 6.2, letterSpacing: 0.9, color: p.tief }}>{versal(t.skill)}</Text>
+                      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 12, lineHeight: 1.1, color: NEUTRAL.text }}>{ty(x.name, sprache)}</Text>
+                    </View>
+                  </View>
+                  <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.8, lineHeight: 1.3, color: NEUTRAL.leise, marginTop: 5 }}>
+                    <Text style={{ fontWeight: 700, color: NEUTRAL.text }}>{`${t.wann} `}</Text>
+                    {ty(x.wann, sprache)}
+                  </Text>
+                  {x.schritte.map((schritt, j) => (
+                    <View key={j} style={{ flexDirection: 'row', alignItems: 'flex-start', marginTop: 3.5 }}>
+                      <View style={{ width: 11, height: 11, borderRadius: 5.5, backgroundColor: p.tief, alignItems: 'center', justifyContent: 'center', marginRight: 5, marginTop: 0.5 }}>
+                        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 6.6, color: '#FFFFFF' }}>{String(j + 1)}</Text>
+                      </View>
+                      <Text style={{ flex: 1, fontFamily: SCHRIFT.jugend, fontSize: 8.2, lineHeight: 1.3, color: NEUTRAL.text }}>{ty(schritt, sprache)}</Text>
+                    </View>
+                  ))}
+                </View>
+              )
+            })}
+            {fuss}
+          </Page>
+          {/* Rückseiten: gespiegelt, damit sie nach dem Ausschneiden hinter der richtigen Karte stehen */}
+          <Page size="A4" style={seitenStil}>
+            <Kopf reiter={text.heft.karten} meta={`${FACH.name}  ·  ${plan.klasse}`} p={p} />
+            {liste.map((k, i) => (
+              <View key={k.id} style={{ ...kartenRahmen, ...kartenOrt(i, true), backgroundColor: p.zart, alignItems: 'center', justifyContent: 'center' }}>
+                <Plakette name={k.bild} d={34} farbe={p.tief} grund="#FFFFFF" />
+                <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 11, color: p.tief, marginTop: 7 }}>{ty(k[sprache].name, sprache)}</Text>
+                <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6.6, letterSpacing: 0.4, color: NEUTRAL.leise, marginTop: 3 }}>{`${FACH.name} · ${plan.klasse}`}</Text>
+              </View>
+            ))}
+            {fuss}
+          </Page>
+        </Fragment>
+      ))}
+    </>
   )
 }
 
@@ -181,31 +346,63 @@ function HilfeRueckseite({ plan, text, sprache }: { plan: Jahresplan; text: Hand
  * `marken` sammelt die Seiten der Blätter (erster Durchlauf, auch für die Verweise im Handbuch),
  * `seiten` setzt sie ins Inhaltsverzeichnis (zweiter Durchlauf). `notizen` füllt auf ein Vielfaches von 4 auf.
  */
-export function SchuelerheftDokument({ plan, einheiten, blaetter, text, sprache, vorn, marken, seiten, notizen = 0 }: { plan: Jahresplan; einheiten: Einheit[]; blaetter: Map<string, Blatt>; text: HandbuchText; sprache: Sprache; vorn: string[]; marken?: Marken; seiten?: Marken; notizen?: number }) {
+export function SchuelerheftDokument({
+  plan,
+  einheiten,
+  blaetter,
+  text,
+  sprache,
+  vorn,
+  karten = [],
+  kartenLuecke,
+  marken,
+  seiten,
+  notizen = 0,
+}: {
+  plan: Jahresplan
+  einheiten: Einheit[]
+  blaetter: Map<string, Blatt>
+  text: HandbuchText
+  sprache: Sprache
+  vorn: string[]
+  karten?: SkillKarte[]
+  /** Notizseite vor den Skill-Karten, damit sie auf einer Vorderseite (ungerade Seite) beginnen */
+  kartenLuecke?: boolean
+  marken?: Marken
+  seiten?: Marken
+  notizen?: number
+}) {
   const inhalt = heftInhalt(plan, einheiten, sprache, vorn).filter((x) => blaetter.has(x.id))
+  const trimester = ([1, 2, 3] as const).filter((tr) => missionenVon(plan, einheiten, sprache, tr).length)
+  const seitenVon = (x: HeftEintrag) => (
+    <BlattSeiten
+      key={x.id}
+      blatt={blaetter.get(x.id)!}
+      opt={{
+        sprache,
+        schueler: true,
+        lehrer: false,
+        farben: STUFE_FARBEN[plan.klasse],
+        heft: { reiter: x.reiter, meta: x.meta, fuss: `${FACH.name} · ${plan.klasse}` },
+        seite: marken
+          ? (n) => {
+              const alt = marken.get(x.id)
+              if (alt === undefined || n < alt) marken.set(x.id, n)
+            }
+          : undefined,
+      }}
+    />
+  )
   return (
     <Document title={heftTitel(plan, sprache)} author={URHEBER_NAME} creator="CDSE" producer="CDSE" language={sprache}>
       <Deckblatt plan={plan} sprache={sprache} art="heft" felder />
-      <InhaltHeft plan={plan} eintraege={inhalt} blaetter={blaetter} text={text} sprache={sprache} seiten={seiten} />
-      {inhalt.map((x) => (
-        <BlattSeiten
-          key={x.id}
-          blatt={blaetter.get(x.id)!}
-          opt={{
-            sprache,
-            schueler: true,
-            lehrer: false,
-            farben: STUFE_FARBEN[plan.klasse],
-            heft: { reiter: x.reiter, meta: x.meta, fuss: `${FACH.name} · ${plan.klasse}` },
-            seite: marken
-              ? (n) => {
-                  const alt = marken.get(x.id)
-                  if (alt === undefined || n < alt) marken.set(x.id, n)
-                }
-              : undefined,
-          }}
-        />
+      <InhaltHeft plan={plan} eintraege={inhalt} blaetter={blaetter} text={text} sprache={sprache} seiten={seiten} missionen={trimester.length > 0} karten={karten.length > 0} />
+      {inhalt.filter((x) => x.gruppe === 'vorn').map(seitenVon)}
+      {trimester.map((tr, i) => (
+        <MissionenSeite key={tr} plan={plan} einheiten={einheiten} text={text} sprache={sprache} tr={tr} erste={i === 0} marken={marken} />
       ))}
+      {inhalt.filter((x) => x.gruppe !== 'vorn').map(seitenVon)}
+      {karten.length ? <SkillKartenSeiten plan={plan} karten={karten} text={text} sprache={sprache} marken={marken} luecke={kartenLuecke} /> : null}
       {einheiten.some((e) => e.woerter?.length) ? <WoerterSeiten plan={plan} einheiten={einheiten} text={text} sprache={sprache} marken={marken} /> : null}
       {Array.from({ length: notizen }, (_, i) => (
         <NotizSeite key={i} plan={plan} text={text} sprache={sprache} />
