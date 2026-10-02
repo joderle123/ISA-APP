@@ -45,17 +45,17 @@
           "Gefühlsrad-Plakat, 20 Klebepunkte",
           "Schülerheft, Stempel für den Pass",
           "Tüten der Gruppen mit ihren Karten",
-          "Kiste mit einfachen Requisiten",
-          "Tablets der Schule (für Videos)",
+          "Kiste mit Tüchern und Mützen",
+          "Tablet der Schule (Video-Gruppe)",
           "Beamer oder Bildschirm mit Kabel",
           "Karte „Noch 1 Minute“",
           "Stoppuhr oder Timer"
         ],
         "vorbereitung": [
           "Wer letzte Woche gefehlt hat, vorher einer Gruppe zuteilen, am besten mit einer Aufgabe hinter der Bühne.",
-          "Paten an die Tafel schreiben: B gibt A Rückmeldung, C gibt B, D gibt C, E gibt D, A gibt E; daneben das Tafelbild aus Schritt 2.",
-          "Vorn eine Bühne freiräumen, Stühle fürs Publikum im Halbkreis planen; Beamer und Tablets testen, falls Videos gezeigt werden.",
-          "Festlegen, wo Gruppen in Sichtweite proben oder filmen können (Flur bei offener Tür, Ecke des Raums)."
+          "An die Tafel: Plan, Reihenfolge A–E, Paten (B gibt A Rückmeldung … A gibt E), Tafelbild aus Schritt 2.",
+          "Bühne vorn freiräumen, Tüten auf die Gruppentische; Beamer und Tablet testen, wenn ein Video läuft.",
+          "Probenplätze in Sichtweite festlegen, für die Video-Gruppe einen ruhigen (Flur bei offener Tür, Ecke)."
         ],
         "ablauf": [
           {
@@ -121,7 +121,7 @@
             "titel": "Mission, Plan für heute und Regeln für Rückmeldung",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Per Daumen nach der Wochen-Mission fragen: Wer hat einmal „Mein Körper macht sich bereit“ ausprobiert? Eine Stimme erzählt, wo. Dann den Plan für heute an die Tafel schreiben: proben – Generalprobe – zeigen – Nachgespräch. Zum Schluss die vier Schritte für Rückmeldungen am Tafelbild vorlesen (sie stehen auch auf Seite 2 des Blatts) und die Paten zeigen: Jede Gruppe gibt genau einer anderen Gruppe Rückmeldung.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Per Daumen nach der Wochen-Mission fragen: Wer hat einmal „Mein Körper macht sich bereit“ ausprobiert? Eine Stimme erzählt, wo. Dann auf den Plan für heute an der Tafel zeigen: proben – Generalprobe – zeigen – Nachgespräch, darunter die Frage fürs Publikum: Welcher Skill oder welcher Satz bringt die Wendung? Zum Schluss die vier Schritte für Rückmeldungen am Tafelbild vorlesen (sie stehen auch auf Seite 2 des Blatts) und die Paten zeigen: Jede Gruppe gibt genau einer anderen Gruppe Rückmeldung. Dazu eine Regel für heute: Private Handys bleiben in der Tasche, auch als Requisit; gefilmt wird nur mit dem Tablet der Schule.",
             "sagen": [
               "Rückmeldung gibt es zur Szene, nie zur Person. Über Aussehen, Stimme oder Aussprache sagen wir nichts."
             ],
@@ -159,7 +159,7 @@
             "titel": "Proben mit Regie-Stopps",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Die Gruppen holen ihre Tüten und proben jede Szene zweimal. Die Regie darf „Stopp!“ rufen und gibt genau einen Hinweis – lauter, langsamer, zum Publikum drehen –, dann geht es weiter. Die Person mit der Aufgabe Zeit stoppt einen ganzen Durchlauf; mehr als drei Minuten heißt kürzen. Video-Gruppen filmen jetzt Szene für Szene in Sichtweite, nur mit dem Tablet der Schule und nur die Personen, die Ja gesagt haben. Die Lehrkraft geht reihum, etwa drei Minuten je Gruppe, und fragt: Sieht man in jeder Szene, worum es geht? Bei „Freeze!“ ist es sofort still.",
+            "text": "Die Gruppen packen ihre Tüten aus und proben jede Szene zweimal. Die Regie darf „Stopp!“ rufen und gibt genau einen Hinweis – lauter, langsamer, zum Publikum drehen –, dann geht es weiter. Die Person mit der Aufgabe Zeit stoppt einen ganzen Durchlauf; mehr als drei Minuten heißt kürzen. Die Video-Gruppe filmt jetzt Szene für Szene an ihrem ruhigen Platz in Sichtweite, nur mit dem Tablet der Schule und nur die Personen, die Ja gesagt haben. Die Lehrkraft geht reihum, etwa drei Minuten je Gruppe, und fragt: Sieht man in jeder Szene, worum es geht? Bei „Freeze!“ ist es sofort still.",
             "sagen": [
               "Ein Hinweis pro Stopp – mehr kann niemand auf einmal umsetzen.",
               "Sieht man in dieser Szene eure Botschaft?"
@@ -172,20 +172,20 @@
             "titel": "Generalprobe vor der Partnergruppe",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Je zwei Gruppen tun sich zusammen, A mit B und C mit D; Gruppe E spielt der Lehrkraft vor. Zuerst zeigt die eine Gruppe ihr ganzes Stück, die andere schaut zu und gibt danach Rückmeldung nach den vier Schritten an der Tafel (5 Min.). Dann wird getauscht (5 Min.). In den letzten fünf Minuten setzt jede Gruppe ihren Tipp um und spielt die betroffene Szene noch einmal. Video-Gruppen zeigen ihre Aufnahmen auf dem Tablet und drehen jetzt nach, was noch fehlt. Die Lehrkraft schaut zuerst Gruppe E zu, gibt ihr selbst die Rückmeldung und geht danach zu den Paaren.",
+            "text": "Je zwei Gruppen tun sich zusammen, A mit B und C mit D; Gruppe E spielt der Lehrkraft vor. Zuerst zeigt die eine Gruppe ihr ganzes Stück, die andere schaut zu und gibt danach Rückmeldung nach den vier Schritten an der Tafel (5 Min.). Dann wird getauscht (5 Min.). In den letzten fünf Minuten setzt jede Gruppe ihren Tipp um und spielt die betroffene Szene noch einmal. Die Video-Gruppe zeigt ihre Aufnahmen auf dem Tablet und dreht nach, was noch fehlt. Die Lehrkraft schaut zuerst Gruppe E zu, gibt ihr selbst die Rückmeldung und geht danach zu den Paaren.",
             "sagen": [
               "Ihr seid jetzt das erste Publikum. Was ist bei euch angekommen?",
               "Nur ein Tipp – der, der der Gruppe am meisten hilft."
             ],
             "tipp": "Die Generalprobe ist der geschützte Raum für die Regeln: Vor acht Leuten traut man sich mehr als vor zwanzig. Wer hier ein genaues Lob bekommt, geht nachher mutiger auf die Bühne.",
-            "wennEsKippt": "Rutscht ein Kommentar ins Persönliche („Du kannst gar nicht spielen“), sofort unterbrechen und auf das Tafelbild zeigen: Zur Szene, nicht zur Person – sag es noch einmal mit ‚Vielleicht könntet ihr …‘. Ist eine Gruppe noch nicht fertig, zeigt sie die fertigen Szenen und erzählt den Rest.",
+            "wennEsKippt": "Rutscht ein Kommentar ins Persönliche („Du kannst gar nicht spielen“), sofort unterbrechen und auf das Tafelbild zeigen: Zur Szene, nicht zur Person – sag es noch einmal mit „Vielleicht könntet ihr …“. Ist eine Gruppe noch nicht fertig, zeigt sie die fertigen Szenen und erzählt den Rest.",
             "blatt": "ff7-unser-stueck"
           },
           {
             "titel": "Bewegungspause: Stimme und Körper aufwärmen",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen. Schultern kreisen, das Gesicht zusammenknautschen und wieder loslassen, einmal herzhaft gähnen (1 Min.). Dann die Stimme: Alle sagen gleichzeitig „Mein Körper macht sich bereit“, erst flüsternd, dann normal, dann so laut, dass es die hintere Wand versteht; weil alle zugleich sprechen, hört niemand Einzelne heraus (2 Min.). Zum Schluss eine Klatschwelle: Ein Klatschen wandert von Person zu Person durch den Raum, so schnell es geht (2 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung; dann vor dem ersten Auftritt nur den Satz gemeinsam sprechen.",
+            "text": "Alle stehen. Schultern kreisen, das Gesicht zusammenknautschen und wieder loslassen, einmal herzhaft gähnen (1 Min.). Dann die Stimme: Alle sagen gleichzeitig „Mein Körper macht sich bereit“, erst flüsternd, dann normal, dann so laut, dass es die hintere Wand versteht; weil alle zugleich sprechen, hört niemand Einzelne heraus (2 Min.). Zum Schluss eine Klatschwelle: Ein Klatschen wandert Tisch für Tisch von Person zu Person durch den Raum, so schnell es geht (2 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung; dann vor dem ersten Auftritt nur den Satz gemeinsam sprechen.",
             "tipp": "Selbst mitmachen und beim Gähnen übertreiben: Das löst die Spannung vor dem Auftritt besser als jede Erklärung.",
             "wennEsKippt": "Wird beim lauten Sprechen gebrüllt, mit „Freeze!“ stoppen und wiederholen: Laut heißt klar, nicht schreien. Wer nicht laut sprechen mag, spricht leise mit oder gibt den Klatsch weiter."
           },
@@ -193,20 +193,20 @@
             "titel": "Bühne frei: die Stücke zeigen",
             "dauer": 30,
             "phase": "uebung",
-            "text": "Stühle im Halbkreis vor der Bühne. Vor dem ersten Auftritt stehen alle auf, legen eine Hand dorthin, wo die Aufregung sitzt, sagen leise gemeinsam „Mein Körper macht sich bereit“ und atmen dreimal lang aus (1 Min.). Dann zeigt eine Gruppe nach der anderen ihr Stück, höchstens drei Minuten; bei einer Minute Rest hebt die Lehrkraft die Karte „Noch 1 Minute“. Nach dem Applaus gibt die Paten-Gruppe Rückmeldung nach den vier Schritten, jede ihrer Personen einen Teil (2 Min.); die spielende Gruppe sagt Danke. Videos laufen über den Beamer, beim Hörstück schließt das Publikum die Augen. Gleich nach dem Zeigen löscht die Technik-Person das Video gemeinsam mit der Lehrkraft, auch aus dem Papierkorb des Tablets.",
+            "text": "Alle drehen ihre Stühle zur Bühne – kein Umbau zum Halbkreis. Vor dem ersten Auftritt stehen alle auf, legen eine Hand dorthin, wo die Aufregung sitzt, sagen leise gemeinsam „Mein Körper macht sich bereit“ und atmen dreimal lang aus (1 Min.). Dann zeigt eine Gruppe nach der anderen ihr Stück, höchstens drei Minuten; bei einer Minute Rest hebt die Lehrkraft die Karte „Noch 1 Minute“. Das Publikum achtet auf die Frage an der Tafel: Welcher Skill oder welcher Satz bringt die Wendung? Nach dem Applaus stecken die Paten kurz die Köpfe zusammen und geben Rückmeldung nach den vier Schritten, jede Person einen Teil (2 Min.); die spielende Gruppe sagt Danke. Das Video läuft über den Beamer; während die nächste Gruppe aufbaut, löscht die Technik-Person es mit der Lehrkraft, auch aus dem Papierkorb.",
             "sagen": [
               "Bühne frei für Gruppe A. Wie heißt euer Stück?",
               "Applaus – und jetzt die Paten: Was ist bei euch angekommen?",
               "Ihr sagt nur Danke. Erklären müsst ihr nichts."
             ],
-            "tipp": "Die nächste Gruppe wartet schon an der Seite, so geht zwischen den Stücken keine Zeit verloren. Lachen über eine witzige Szene ist erwünscht, auch mitten im Stück – das Publikum darf reagieren.",
-            "wennEsKippt": "Lacht jemand über eine Person statt über die Szene oder wird im Stück jemand aus der Klasse beleidigt, kurz anhalten: Wir lachen miteinander, nicht übereinander – dann an der letzten Stelle weiter. Bleibt jemand stecken, hilft die Souffleuse; wer nicht weiterkann, darf abgehen, und die Erzählstimme erzählt den Rest. Fällt die Technik aus, zeigt die Video-Gruppe ihre wichtigste Szene live oder als Standbild."
+            "tipp": "Die nächste Gruppe wartet schon an der Seite, so geht zwischen den Stücken keine Zeit verloren. Die Gruppen ansagen darf jemand, der gern vorn steht. Lachen über eine witzige Szene ist erwünscht – das Publikum darf reagieren.",
+            "wennEsKippt": "Lacht jemand über eine Person statt über die Szene oder wird im Stück jemand aus der Klasse beleidigt, kurz anhalten: Wir lachen miteinander, nicht übereinander – dann an der letzten Stelle weiter. Bleibt jemand stecken, hilft die Souffleuse; wer nicht weiterkann, darf abgehen, und die Erzählstimme erzählt den Rest. Will eine Gruppe nicht vor die Klasse, spielt sie ihr Stück als Hörstück, und das Publikum dreht sich um. Fällt die Technik aus, zeigt die Video-Gruppe ihre wichtigste Szene live oder als Standbild."
           },
           {
             "titel": "Nachgespräch: Was ist angekommen?",
             "dauer": 10,
             "phase": "uebung",
-            "text": "Zurück an den Tischgruppen besprechen alle zwei Fragen (4 Min.): Welche Szene oder welcher Satz bleibt euch im Kopf? Was habt ihr beim Spielen über euer Thema gemerkt, was man beim bloßen Reden nicht merkt? Dann sagt jede Gruppe einen Satz in die Klasse; die Lehrkraft schreibt mit und fragt zum Schluss: Welche Skills aus diesem Jahr kamen in den Stücken vor (3 Min.)? Danach füllt jede Person allein Aufgabe 5 auf Seite 2 des Blatts aus (3 Min.).",
+            "text": "Zurück an den Tischgruppen besprechen alle zwei Fragen (4 Min.): Welche Szene oder welcher Satz bleibt euch im Kopf? Was habt ihr beim Spielen über euer Thema gemerkt, was man beim bloßen Reden nicht merkt? Dann sagt jede Gruppe einen Satz in die Klasse; die Lehrkraft schreibt mit und greift zum Schluss die Frage an der Tafel auf: Welche Skills oder Sätze haben die Wendung gebracht (3 Min.)? Danach füllt jede Person allein Aufgabe 5 auf Seite 2 des Blatts aus (3 Min.).",
             "sagen": [
               "Was habt ihr beim Spielen gemerkt, das man beim Reden nicht merkt?",
               "Welche Skills aus diesem Jahr habt ihr in den Stücken gesehen?"
@@ -236,7 +236,7 @@
             "titel": "Skills-Pass, Mission und Ausblick",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Worauf bin ich heute stolz – bei mir oder bei unserer Gruppe? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel. Kurz nachfragen, ob alle Videos gelöscht sind. Dann die Wochen-Mission ansagen, die im Heft steht, und den Ausblick auf die letzte Stunde geben. Die Tüten mit den Karten einsammeln.",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Worauf bin ich heute stolz – bei mir oder bei unserer Gruppe? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel. Kurz nachfragen, ob das Video gelöscht ist. Dann die Wochen-Mission ansagen, die im Heft steht, und den Ausblick auf die letzte Stunde geben. Die Tüten mit den Karten einsammeln.",
             "sagen": [
               "Für den Skills-Pass: Worauf seid ihr heute stolz?",
               "Danke für euren Mut – auch an alle, die hinter der Bühne gearbeitet haben."
@@ -252,9 +252,9 @@
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
           "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94."
         ],
-        "achtung": "Vor der Klasse zu spielen, ist für manche eine echte Hürde: Niemand wird auf die Bühne geschickt, ein Wechsel hinter die Bühne geht bis zur letzten Minute. Lachen über eine witzige Szene ist erwünscht, Lachen über eine Person nicht – sofort unterbrechen. Rückmeldungen nur nach den Regeln, nie zu Aussehen, Stimme oder Aussprache. Videos werden nur hier gezeigt und gleich danach gelöscht. Wird im Spiel oder im Nachgespräch deutlich, dass jemand Gewalt oder Mobbing erlebt: nicht vertiefen, nach der Stunde ansprechen, am selben Tag den SePAS informieren.",
+        "achtung": "Vor der Klasse zu spielen, ist für manche eine echte Hürde: Niemand wird auf die Bühne geschickt, ein Wechsel hinter die Bühne geht bis zur letzten Minute. Lacht jemand über eine Person statt über die Szene, sofort unterbrechen. Rückmeldungen nur nach den Regeln, nie zu Aussehen, Stimme oder Aussprache. Private Handys bleiben in der Tasche; das Video wird nur hier gezeigt und gleich danach gelöscht. Nimmt eine Szene jemanden im Publikum sichtbar mit, darf er wegschauen; nach der Stunde ansprechen. Wird deutlich, dass jemand Gewalt oder Mobbing erlebt: nicht vertiefen, nach der Stunde ansprechen, am selben Tag den SePAS informieren.",
         "differenzierung": {
-          "leichter": "Rückmeldung mit den Satzanfängen von der Tafel; wer die Sprache noch lernt, übernimmt in der Paten-Gruppe das Lob und darf es mit einer Geste zeigen. Im Nachgespräch reicht ein Wort, auf dem Blatt ein Stichwort je Satz.",
+          "leichter": "Rückmeldung mit den Satzanfängen von der Tafel; wer die Sprache noch lernt oder nicht gern vor der Klasse spricht, übernimmt in der Paten-Gruppe das Lob und darf es ablesen oder mit einer Geste zeigen. Im Nachgespräch reicht ein Wort, auf dem Blatt ein Stichwort je Satz.",
           "schwerer": "Nach dem Zeigen eine Szene als Stopp-Theater wiederholen: Das Publikum ruft „Stopp!“ und schlägt vor, was eine zuschauende Figur anders machen könnte; ersetzt werden nur Zuschauende und Freunde, nie die angegriffene Person. Oder das Nachgespräch moderieren."
         },
         "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Lampenfieber-Zahl (3 Min.), letzte Probe (7 Min.), Bühne frei mit Rückmeldungen (30 Min.), Abschütteln und ankommen (5 Min.), Skills-Pass und Mission (5 Min.). Generalprobe und Nachgespräch entfallen; die Regeln für Rückmeldungen werden vor dem ersten Stück vorgelesen."
@@ -265,24 +265,24 @@
         "ziele": [
           "répètent leur pièce avec des arrêts de mise en scène et appliquent un conseil de l’îlot partenaire",
           "présentent leur pièce à la classe – sur scène ou avec un rôle en coulisses",
-          "donnent un retour selon des règles fixes : ce qui est passé, un compliment, un conseil",
+          "donnent un retour selon des règles fixes : ce qu’ils ont compris, un compliment, un conseil",
           "nomment ce qu’ils ont remarqué en jouant et sortent consciemment de leur rôle"
         ],
         "material": [
           "Roue des émotions, 20 gommettes",
           "Cahier de l’élève, tampon",
           "Sacs des îlots avec leurs cartes",
-          "Caisse d’accessoires simples",
-          "Tablettes de l’école (vidéos)",
+          "Caisse avec foulards et bonnets",
+          "Tablette de l’école (îlot vidéo)",
           "Projecteur ou écran avec câble",
           "Carte « Encore 1 minute »",
           "Chronomètre ou minuteur"
         ],
         "vorbereitung": [
           "Attribuer d’avance un îlot aux absents de la semaine dernière, de préférence avec une tâche en coulisses.",
-          "Noter les parrainages au tableau : B donne un retour à A, C à B, D à C, E à D, A à E ; à côté, le tableau de l’étape 2.",
-          "Libérer une scène devant, prévoir les chaises du public en demi-cercle ; tester projecteur et tablettes si des vidéos sont présentées.",
-          "Repérer où les îlots peuvent répéter ou filmer en restant en vue (couloir porte ouverte, coin de la salle)."
+          "Au tableau : programme, ordre A à E, parrainages (B donne un retour à A… A à E), tableau de l’étape 2.",
+          "Libérer une scène devant, poser les sacs sur les tables ; tester projecteur et tablette s’il y a une vidéo.",
+          "Prévoir des places de répétition en vue, dont une au calme pour l’îlot vidéo (couloir porte ouverte, coin)."
         ],
         "ablauf": [
           {
@@ -318,7 +318,7 @@
           {
             "min": "80–90",
             "phase": "uebung",
-            "titel": "Échange final : qu’est-ce qui est passé ?"
+            "titel": "Échange final : qu’est-ce qu’on retient ?"
           },
           {
             "min": "90–95",
@@ -342,13 +342,13 @@
               "Le trac ne veut pas dire que ça va rater. C’est de l’énergie – on va s’en servir."
             ],
             "tipp": "Qui montre sept doigts ou plus reçoit une courte visite pendant la répétition : de quoi as-tu besoin aujourd’hui – une tâche en coulisses, un rôle plus petit, quelqu’un à côté de toi ? Souvent, la question suffit.",
-            "wennEsKippt": "S’il manque deux personnes dans un îlot, ne pas le dissoudre : la voix off dit un rôle depuis les coulisses, ou l’enseignant·e prend un petit rôle. Qui était absent la semaine dernière rejoint le plus petit îlot et reçoit une tâche en coulisses."
+            "wennEsKippt": "S’il manque deux personnes dans un îlot, ne pas le dissoudre : le narrateur ou la narratrice dit un rôle depuis les coulisses, ou l’enseignant·e prend un petit rôle. Qui était absent la semaine dernière rejoint le plus petit îlot et reçoit une tâche en coulisses."
           },
           {
             "titel": "Mission, programme du jour et règles du retour",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass. Demander avec le pouce où en est la mission de la semaine : qui a essayé une fois « Mon corps se prépare » ? Une voix raconte où. Puis écrire au tableau le programme du jour : répéter – générale – présenter – échange final. Pour finir, lire les quatre étapes du retour sur le tableau (elles figurent aussi à la page 2 de la fiche) et montrer les parrainages : chaque îlot donne un retour à un seul autre îlot.",
+            "text": "Un jeune lit la phrase de son Skills-Pass. Demander avec le pouce où en est la mission de la semaine : qui a essayé une fois « Mon corps se prépare » ? Une voix raconte où. Puis montrer au tableau le programme du jour : répéter – générale – présenter – échange final, et en dessous la question pour le public : quel skill ou quelle phrase amène le tournant ? Pour finir, lire les quatre étapes du retour sur le tableau (elles figurent aussi à la page 2 de la fiche) et montrer les parrainages : chaque îlot donne un retour à un seul autre îlot. Ajouter une règle pour aujourd’hui : les portables personnels restent dans le sac, même comme accessoire ; on ne filme qu’avec la tablette de l’école.",
             "sagen": [
               "Le retour porte sur la scène, jamais sur la personne. On ne dit rien sur l’apparence, la voix ou l’accent."
             ],
@@ -363,8 +363,8 @@
                   "Tout le monde applaudit – même si quelque chose a raté."
                 ],
                 [
-                  "2 Ce qui est passé",
-                  "Ce qu’on a compris, c’est que…"
+                  "2 Ce qu’on a compris",
+                  "On a compris que…"
                 ],
                 [
                   "3 Compliment",
@@ -386,54 +386,54 @@
             "titel": "Répéter avec des arrêts de mise en scène",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Les îlots récupèrent leur sac et répètent chaque scène deux fois. Le metteur en scène peut crier « Coupez ! » et donne un seul conseil – plus fort, plus lentement, face au public –, puis on reprend. La personne chargée du temps chronomètre un filage complet ; plus de trois minutes, il faut couper. Les îlots vidéo filment maintenant scène après scène, en restant en vue, uniquement avec la tablette de l’école et seulement les personnes qui ont dit oui. Passer d’îlot en îlot, environ trois minutes chacun, en demandant : est-ce qu’on voit dans chaque scène de quoi il s’agit ? À « Statue ! », silence immédiat.",
+            "text": "Les îlots ouvrent leur sac et répètent chaque scène deux fois. Le metteur en scène peut crier « Coupez ! » et donne un seul conseil – plus fort, plus lentement, face au public –, puis on reprend. La personne chargée du temps chronomètre un filage complet ; plus de trois minutes, il faut couper. L’îlot vidéo filme maintenant scène après scène, au calme et en restant en vue, uniquement avec la tablette de l’école et seulement les personnes qui ont dit oui. Passer d’îlot en îlot, environ trois minutes chacun, en demandant : est-ce qu’on voit dans chaque scène de quoi il s’agit ? À « Statue ! », silence immédiat.",
             "sagen": [
               "Un seul conseil par arrêt – personne ne peut en appliquer plus d’un à la fois.",
               "Est-ce qu’on voit votre message dans cette scène ?"
             ],
             "tipp": "Un filage sans interruption à la fin de la répétition compte plus qu’une première scène parfaite. Un îlot trop long supprime plutôt une scène que de parler plus vite.",
-            "wennEsKippt": "Si un îlot se dispute sur un choix de mise en scène, faire jouer une fois les deux idées, puis voter – souvent, regarder suffit à trancher. Si quelqu’un ne veut plus jouer juste avant de passer, lui donner sans discuter une tâche en coulisses ; le souffleur ou la voix off lit son rôle dans le plan.",
+            "wennEsKippt": "Si un îlot se dispute sur un choix de mise en scène, faire jouer une fois les deux idées, puis voter – souvent, regarder suffit à trancher. Si quelqu’un ne veut plus jouer juste avant de passer, lui donner sans discuter une tâche en coulisses ; le souffleur ou le narrateur lit son rôle dans le plan.",
             "blatt": "ff7-unser-stueck"
           },
           {
             "titel": "Générale devant l’îlot partenaire",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Les îlots se mettent deux par deux, A avec B et C avec D ; l’îlot E joue devant l’enseignant·e. D’abord, un îlot joue sa pièce en entier, l’autre regarde puis donne un retour selon les quatre étapes du tableau (5 min). Puis on échange (5 min). Pendant les cinq dernières minutes, chaque îlot applique son conseil et rejoue la scène concernée. Les îlots vidéo montrent leurs prises sur la tablette et tournent maintenant ce qui manque encore. Regarder d’abord l’îlot E, lui donner soi-même le retour, puis passer voir les paires.",
+            "text": "Les îlots se mettent deux par deux, A avec B et C avec D ; l’îlot E joue devant l’enseignant·e. D’abord, un îlot joue sa pièce en entier, l’autre regarde puis donne un retour selon les quatre étapes du tableau (5 min). Puis on échange (5 min). Pendant les cinq dernières minutes, chaque îlot applique son conseil et rejoue la scène concernée. L’îlot vidéo montre ses prises sur la tablette et tourne ce qui manque encore. Regarder d’abord l’îlot E, lui donner soi-même le retour, puis passer voir les paires.",
             "sagen": [
               "Vous êtes maintenant le premier public. Qu’est-ce que vous avez compris ?",
               "Un seul conseil – celui qui aidera le plus l’îlot."
             ],
             "tipp": "La générale est l’espace protégé pour les règles : devant huit personnes, on ose plus que devant vingt. Qui reçoit ici un compliment précis monte ensuite sur scène avec plus de courage.",
-            "wennEsKippt": "Si un commentaire devient personnel (« Tu sais pas jouer »), interrompre tout de suite et montrer le tableau : sur la scène, pas sur la personne – redis-le avec “Vous pourriez peut-être…”. Si un îlot n’est pas prêt, il montre les scènes terminées et raconte le reste.",
+            "wennEsKippt": "Si un commentaire devient personnel (« Tu sais pas jouer »), interrompre tout de suite et montrer le tableau : sur la scène, pas sur la personne – redis-le avec « Vous pourriez peut-être… ». Si un îlot n’est pas prêt, il montre les scènes terminées et raconte le reste.",
             "blatt": "ff7-unser-stueck"
           },
           {
             "titel": "Pause active : réveiller la voix et le corps",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se lève. Rouler les épaules, froncer tout le visage puis le relâcher, bâiller un grand coup (1 min). Puis la voix : tout le monde dit en même temps « Mon corps se prépare », d’abord en chuchotant, puis normalement, puis assez fort pour que le mur du fond l’entende ; comme tout le monde parle ensemble, personne n’est entendu seul (2 min). Pour finir, une vague d’applaudissements : un clap passe de personne en personne dans la salle, le plus vite possible (2 min). Si la grande récréation tombe entre les deux heures, supprimer l’exercice ; dire alors seulement la phrase ensemble avant la première prestation.",
+            "text": "Tout le monde se lève. Rouler les épaules, plisser tout le visage puis le relâcher, bâiller un grand coup (1 min). Puis la voix : tout le monde dit en même temps « Mon corps se prépare », d’abord en chuchotant, puis normalement, puis assez fort pour que le mur du fond l’entende ; comme tout le monde parle ensemble, personne n’est entendu seul (2 min). Pour finir, une vague d’applaudissements : un claquement de mains passe d’îlot en îlot, de personne en personne, le plus vite possible (2 min). Si la grande récréation tombe entre les deux heures, supprimer l’exercice ; dire alors seulement la phrase ensemble avant la première prestation.",
             "tipp": "Participer soi-même et en faire trop en bâillant : cela détend plus avant de monter sur scène que n’importe quelle explication.",
-            "wennEsKippt": "Si ça tourne au hurlement, arrêter avec « Statue ! » et recommencer : fort veut dire clair, pas crier. Qui ne veut pas parler fort dit la phrase doucement ou fait passer le clap."
+            "wennEsKippt": "Si ça tourne au hurlement, arrêter avec « Statue ! » et recommencer : fort veut dire clair, pas crier. Qui ne veut pas parler fort dit la phrase doucement ou fait passer le claquement de mains."
           },
           {
             "titel": "En scène : présenter les pièces",
             "dauer": 30,
             "phase": "uebung",
-            "text": "Chaises en demi-cercle face à la scène. Avant la première prestation, tout le monde se lève, pose une main là où se loge le trac, dit doucement et ensemble « Mon corps se prépare » et expire longuement trois fois (1 min). Puis les îlots présentent leur pièce l’un après l’autre, trois minutes maximum ; quand il reste une minute, lever la carte « Encore 1 minute ». Après les applaudissements, l’îlot parrain donne son retour selon les quatre étapes, chacun de ses membres en prend une (2 min) ; l’îlot qui a joué dit merci. Les vidéos passent au projecteur ; pour la pièce à écouter, le public ferme les yeux. Juste après la présentation, la personne chargée de la technique efface la vidéo avec l’enseignant·e, corbeille de la tablette comprise.",
+            "text": "Chacun tourne sa chaise vers la scène – pas de demi-cercle à installer. Avant la première prestation, tout le monde se lève, pose une main là où se loge le trac, dit doucement et ensemble « Mon corps se prépare » et expire longuement trois fois (1 min). Puis les îlots présentent leur pièce l’un après l’autre, trois minutes maximum ; quand il reste une minute, lever la carte « Encore 1 minute ». Le public garde en tête la question au tableau : quel skill ou quelle phrase amène le tournant ? Après les applaudissements, l’îlot parrain se concerte un instant et donne son retour selon les quatre étapes, chacun en prend une (2 min) ; l’îlot qui a joué dit merci. La vidéo passe au projecteur ; pendant que l’îlot suivant s’installe, la personne chargée de la technique l’efface avec l’enseignant·e, corbeille comprise.",
             "sagen": [
               "La scène est à vous, îlot A. Comment s’appelle votre pièce ?",
               "On applaudit – et maintenant les parrains : qu’est-ce que vous avez compris ?",
               "Vous dites juste merci. Vous n’avez rien à expliquer."
             ],
-            "tipp": "L’îlot suivant attend déjà sur le côté : on ne perd pas de temps entre les pièces. Rire d’une scène drôle est bienvenu, même en pleine pièce – le public a le droit de réagir.",
-            "wennEsKippt": "Si quelqu’un rit d’une personne et non de la scène, ou si la pièce insulte quelqu’un de la classe, arrêter un instant : on rit ensemble, pas les uns des autres – puis reprendre au dernier passage. Si quelqu’un a un trou, le souffleur aide ; qui ne peut plus continuer peut sortir, et la voix off raconte la suite. Si la technique lâche, l’îlot vidéo montre sa scène la plus importante en direct ou en image figée."
+            "tipp": "L’îlot suivant attend déjà sur le côté : on ne perd pas de temps entre les pièces. Un jeune qui aime être devant peut annoncer les îlots. Rire d’une scène drôle est bienvenu – le public a le droit de réagir.",
+            "wennEsKippt": "Si quelqu’un rit d’une personne et non de la scène, ou si la pièce insulte quelqu’un de la classe, arrêter un instant : on rit ensemble, pas les uns des autres – puis reprendre au dernier passage. Si quelqu’un a un trou, le souffleur aide ; qui ne peut plus continuer peut sortir, et le narrateur raconte la suite. Si un îlot ne veut pas passer devant la classe, il joue sa pièce comme une pièce à écouter, et le public se retourne. Si la technique lâche, l’îlot vidéo montre sa scène la plus importante en direct ou en image figée."
           },
           {
-            "titel": "Échange final : qu’est-ce qui est passé ?",
+            "titel": "Échange final : qu’est-ce qu’on retient ?",
             "dauer": 10,
             "phase": "uebung",
-            "text": "De retour en îlots, chacun discute de deux questions (4 min) : quelle scène ou quelle phrase vous reste en tête ? Qu’avez-vous remarqué sur votre thème en jouant, que l’on ne remarque pas en se contentant d’en parler ? Puis chaque îlot dit une phrase à la classe ; noter au tableau et demander pour finir : quels skills de l’année sont apparus dans les pièces (3 min) ? Ensuite, chacun complète seul l’exercice 5, à la page 2 de la fiche (3 min).",
+            "text": "De retour en îlots, chacun discute de deux questions (4 min) : quelle scène ou quelle phrase vous reste en tête ? Qu’avez-vous remarqué sur votre thème en jouant, que l’on ne remarque pas en se contentant d’en parler ? Puis chaque îlot dit une phrase à la classe ; noter au tableau et reprendre pour finir la question du tableau : quels skills ou quelles phrases ont amené le tournant (3 min) ? Ensuite, chacun complète seul l’exercice 5, à la page 2 de la fiche (3 min).",
             "sagen": [
               "Qu’avez-vous remarqué en jouant, que l’on ne remarque pas en parlant ?",
               "Quels skills de cette année avez-vous vus dans les pièces ?"
@@ -463,7 +463,7 @@
             "titel": "Skills-Pass, mission et suite",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire au tableau la question du Skills-Pass : de quoi suis-je fier, fière aujourd’hui – chez moi ou dans notre îlot ? Chacun écrit sa phrase (2 min) et reçoit le tampon. Vérifier brièvement que toutes les vidéos sont effacées. Puis annoncer la mission de la semaine, qui figure dans le cahier, et la dernière séance. Ramasser les sacs avec les cartes.",
+            "text": "Écrire au tableau la question du Skills-Pass : de quoi suis-je fier, fière aujourd’hui – chez moi ou dans notre îlot ? Chacun écrit sa phrase (2 min) et reçoit le tampon. Vérifier brièvement que la vidéo est effacée. Puis annoncer la mission de la semaine, qui figure dans le cahier, et la dernière séance. Ramasser les sacs avec les cartes.",
             "sagen": [
               "Pour le Skills-Pass : de quoi êtes-vous fiers aujourd’hui ?",
               "Merci pour votre courage – aussi à tous ceux qui ont travaillé en coulisses."
@@ -473,15 +473,15 @@
         ],
         "bruecke": "La semaine prochaine, c’est notre dernière séance : vous revenez sur votre année avec le Skills-Pass, le bocal et l’arbre, et vous vous écrivez une lettre que vous récupérerez l’année prochaine.",
         "mission": "Essaie une fois cette semaine « se secouer et revenir à soi » – après une dispute, après l’entraînement ou avant de rentrer chez toi. Qu’est-ce qui change ?",
-        "hintergrund": "Un retour est utile quand il montre ce qui réussit déjà et quelle pourrait être la prochaine étape – sur la tâche, pas sur la personne. Les éloges ou critiques qui visent la personne (« Tu es tellement doué », « Tu n’y arrives pas ») apportent peu (Hattie & Timperley, 2007). Les étapes fixes de la séance le mettent en pratique : ce qui est passé, un compliment précis, un conseil sur la scène. Qui présente sa propre pièce devant un public et y arrive vit une expérience de réussite, la source la plus forte du sentiment d’efficacité personnelle (Bandura, 1977). À cet âge, être pris au sérieux par ses pairs compte particulièrement ; les programmes qui en tiennent compte au lieu de faire la morale touchent davantage les jeunes (Yeager, 2017). Se secouer pour sortir du rôle vient du théâtre : cela aide à laisser sur scène un personnage joué, surtout s’il était désagréable.",
+        "hintergrund": "Un retour est utile quand il montre ce qui réussit déjà et quelle pourrait être la prochaine étape – sur la tâche, pas sur la personne. Les éloges ou critiques qui visent la personne (« Tu es tellement doué », « Tu n’y arrives pas ») apportent peu (Hattie & Timperley, 2007). Les étapes fixes de la séance le mettent en pratique : ce qu’on a compris, un compliment précis, un conseil sur la scène. Qui présente sa propre pièce devant un public et y arrive vit une expérience de réussite, la source la plus forte du sentiment d’efficacité personnelle (Bandura, 1977). À cet âge, être pris au sérieux par ses pairs compte particulièrement ; les programmes qui en tiennent compte au lieu de faire la morale touchent davantage les jeunes (Yeager, 2017). Se secouer pour sortir du rôle vient du théâtre : cela aide à laisser sur scène un personnage joué, surtout s’il était désagréable.",
         "quellen": [
           "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112.",
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
           "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94."
         ],
-        "achtung": "Jouer devant la classe est un vrai obstacle pour certains : personne n’est envoyé sur scène, et on peut passer en coulisses jusqu’à la dernière minute. Rire d’une scène drôle est bienvenu, rire d’une personne non – interrompre aussitôt. Les retours suivent les règles, jamais de remarque sur l’apparence, la voix ou l’accent. Les vidéos ne sont montrées qu’ici et effacées juste après. Si le jeu ou l’échange révèle qu’un jeune subit de la violence ou du harcèlement : ne pas approfondir, lui parler après le cours, informer le SePAS le jour même.",
+        "achtung": "Jouer devant la classe est un vrai obstacle pour certains : personne n’est envoyé sur scène, et on peut passer en coulisses jusqu’à la dernière minute. Si quelqu’un rit d’une personne et non de la scène, interrompre aussitôt. Les retours suivent les règles, jamais de remarque sur l’apparence, la voix ou l’accent. Les portables personnels restent dans le sac ; la vidéo n’est montrée qu’ici et effacée juste après. Si une scène touche visiblement un jeune du public, il peut détourner le regard ; lui parler après le cours. Si un jeune semble subir de la violence ou du harcèlement : ne pas approfondir, lui parler après le cours, informer le SePAS le jour même.",
         "differenzierung": {
-          "leichter": "Donner les retours avec les débuts de phrase du tableau ; un jeune qui apprend encore la langue prend le compliment dans l’îlot parrain et peut l’accompagner d’un geste. Pendant l’échange final, un mot suffit, sur la fiche un mot-clé par phrase.",
+          "leichter": "Donner les retours avec les débuts de phrase du tableau ; un jeune qui apprend encore la langue ou qui n’aime pas parler devant la classe prend le compliment dans l’îlot parrain et peut le lire ou l’accompagner d’un geste. Pendant l’échange final, un mot suffit, sur la fiche un mot-clé par phrase.",
           "schwerer": "Après la présentation, rejouer une scène en théâtre-forum : le public crie « Stop ! » et propose ce qu’un personnage témoin pourrait faire autrement ; on ne remplace que les témoins et les amis, jamais la personne attaquée. Ou animer l’échange final."
         },
         "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le chiffre du trac (3 min), dernière répétition (7 min), en scène avec les retours (30 min), se secouer et revenir à soi (5 min), Skills-Pass et mission (5 min). La générale et l’échange final sont supprimés ; les règles du retour sont lues avant la première pièce."

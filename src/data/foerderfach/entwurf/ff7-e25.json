@@ -46,26 +46,25 @@
           "Schülerheft für jede Person",
           "Gefühlsrad-Plakat, 20 Klebepunkte",
           "Fünf Papierrahmen (A4 mit Fenster)",
-          "Handy oder Wecker der Lehrkraft",
+          "Handy der Lehrkraft mit Timer auf Vibration",
           "Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
-          "Hausordnung klären: Dürfen die Handys drei Minuten heraus, um die Bildschirmzeit nachzusehen? Wenn nicht, arbeiten alle mit Mila.",
+          "Die Handyregeln des Lycée klären: Dürfen die Handys drei Minuten heraus, um die Bildschirmzeit abzulesen? Wenn nicht, arbeiten alle mit Mila.",
           "Fünf Rahmen basteln: in ein A4-Blatt ein Fenster schneiden, etwa 9 auf 16 cm – so groß wie ein Handy-Bildschirm.",
-          "Die eigene Bildschirmzeit nachsehen – die Lehrkraft nennt ihre Zahl als Erste.",
-          "Für den Skill einen Handy-Wecker auf Vibration stellen oder einen Benachrichtigungston am Laptop bereithalten.",
-          "Tafel: Leitfrage, Platz für zwei Spalten (Schritt 7), fünf Motive (Schritt 6), Wortspeicher."
+          "Die eigene Bildschirmzeit nachsehen – die Lehrkraft nennt ihre Zahl als Erste. Für den Skill am Handy einen Timer mit Vibration bereithalten.",
+          "Tafel: Leitfrage, ein Akku-Symbol, die drei Schritte zum Nachsehen, fünf Motive (Schritt 6), Platz für zwei Spalten (Schritt 3 und 7), Wortspeicher."
         ],
         "ablauf": [
           {
             "min": "0–10",
             "phase": "ankommen",
-            "titel": "Check-in: Gefühlsrad, Zahl und Status-Emoji"
+            "titel": "Check-in: Gefühlsrad, Zahl und Akku"
           },
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Rückblick, Mission und neues Kapitel"
+            "titel": "Mission vor den Ferien und neues Kapitel"
           },
           {
             "min": "15–27",
@@ -105,33 +104,35 @@
         ],
         "schritte": [
           {
-            "titel": "Check-in: Gefühlsrad, Zahl und Status-Emoji",
+            "titel": "Check-in: Gefühlsrad, Zahl und Akku",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl (3 Min.). Dann die Frage zum Thema: Welches Emoji passt heute zu euch? Drei Freiwillige malen ihr Emoji groß an die Tafel, ohne etwas zu sagen. Die Klasse rät, welches Wort vom Gefühlsrad dahinterstecken könnte, und die Person sagt, ob es stimmt (5 Min.). Zum Schluss festhalten: Ein Emoji ist schnell geschickt – was gemeint ist, sagt oft erst das Wort dazu (2 Min.).",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl (3 Min.). Dann die Frage zum Thema, mit dem Akku an der Tafel: Wie voll ist euer Akku nach den Ferien? Auf drei zeigen alle mit dem Arm wie mit einer Ladeanzeige – Hand auf dem Tisch: fast leer, auf Brusthöhe: halb voll, Arm ganz oben: voll (2 Min.). Zwei, drei Freiwillige sagen, was ihren Akku geladen hat; die Lehrkraft schreibt Stichworte neben den Akku (3 Min.). Zum Schluss ankündigen: Heute geht es darum, wann das Handy euren Akku lädt – und wann es ihn leer zieht (2 Min.).",
             "sagen": [
-              "Punkt aufs Rad, auf drei eure Zahl mit den Fingern. Ich fange an: gut gelaunt, 30 – heute geht es um ein Thema, bei dem ihr die Profis seid.",
-              "Welches Emoji passt heute zu euch – wie ein Status im Chat? Malt es, sagt nichts – die anderen raten das Gefühl."
+              "Punkt aufs Rad, auf drei eure Zahl mit den Fingern. Ich fange an: gut gelaunt, 30 – und mein Akku ist nach den Ferien ziemlich voll.",
+              "Wie voll ist euer Akku? Zeigt es mit dem Arm, auf drei. Wer mag: Was hat ihn geladen?"
             ],
-            "tipp": "Das Raten zeigt nebenbei, was später wichtig wird: Online fehlen Stimme und Gesicht, deshalb wird dort so viel missverstanden. Drei Emojis reichen. Wer schwer stillsitzen kann, verteilt an der Tür die Klebepunkte.",
-            "wennEsKippt": "Malt jemand ein Scherz-Emoji, etwa einen Totenkopf, gelassen bleiben und es ernst nehmen: Welches Gefühl könnte dahinterstecken – genervt, gelangweilt, Galgenhumor? Oft trifft es sogar. Anstößige Zeichnungen wortlos wegwischen und später unter vier Augen ansprechen. Kleben Punkte bei sehr schweren Wörtern oder zeigt jemand acht Finger oder mehr, nicht vor der Klasse nachfragen, sondern leise während der Einzelarbeit."
+            "tipp": "Der Akku ist das Bild der Stunde: Später fragt die Klasse, was am Handy auflädt und was Energie zieht. Wer schwer stillsitzen kann, verteilt an der Tür die Klebepunkte.",
+            "wennEsKippt": "Ruft jemand „null Prozent“ oder macht aus dem Akku einen Witz, gelassen bleiben: Auch leer ist eine Auskunft. Erzählt jemand aus den Ferien mehr, als vor der Klasse guttut – Streit, Krankheit, ein Verlust –, freundlich stoppen und nach der Stunde nachfragen. Kleben Punkte bei sehr schweren Wörtern, zeigt jemand acht Finger oder mehr oder einen leeren Akku, nicht vor der Klasse nachfragen, sondern leise während der Einzelarbeit."
           },
           {
-            "titel": "Rückblick, Mission und neues Kapitel",
+            "titel": "Mission vor den Ferien und neues Kapitel",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann per Daumen nach der Wochen-Mission vor den Ferien fragen – einmal bewusst kein Publikum sein, nichts weiterleiten: hoch, Mitte oder runter; eine Stimme erzählt, niemand muss sie geschafft haben. Im Skills-Pass die Seite „3. Trimester“ aufschlagen: Heute kommt dort der erste Satz hinein. Das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was macht das Handy mit mir? Das Kapitel hat zwei Stunden: heute geht es um euch und euer Handy, nächste Woche um echt und fake. Zum Schluss sagen, ob und wann die Handys heute herausdürfen.",
+            "text": "Die letzte Wochen-Mission vor den Ferien im Heft aufschlagen und vorlesen – einmal bewusst kein Publikum sein: nicht mitlachen, nichts weiterleiten. Dann per Daumen fragen: hoch, Mitte oder runter. Erzählen ist freiwillig und geht nur ohne Namen; niemand muss die Mission geschafft haben. Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was macht das Handy mit mir? Ankündigen: Das Kapitel hat zwei Stunden – heute geht es um euch und euer Handy, nächste Woche um echt und fake.",
             "sagen": [
+              "Vor den Ferien war eure Mission: einmal bewusst kein Publikum sein. Daumen – hat es geklappt? Wer erzählen mag, bitte ohne Namen.",
               "Hier redet niemand euer Handy schlecht. Die Frage ist: Wann tut es euch gut – und wann eher nicht? Das wisst ihr selbst am besten.",
               "Zahlen, Apps und Chats bleiben heute bei euch. Niemand muss etwas zeigen oder sagen."
             ],
-            "tipp": "Die Haltung am Anfang entscheidet über die Stunde: Viele Jugendliche erwarten eine Predigt und machen innerlich zu. Wer das Gegenteil ankündigt und dabei bleibt, bekommt ehrlichere Antworten."
+            "tipp": "Die Haltung am Anfang entscheidet über die Stunde: Viele Jugendliche erwarten eine Predigt und machen innerlich zu. Wer das Gegenteil ankündigt und dabei bleibt, bekommt ehrlichere Antworten.",
+            "wennEsKippt": "Fällt beim Erzählen doch ein Name oder eine laufende Geschichte aus der Klasse, sofort und freundlich stoppen: Danke – darüber reden wir nach der Stunde. Das Gespräch dann wirklich führen; geht es um Mobbing, noch am selben Tag Régent und SePAS informieren."
           },
           {
             "titel": "Handy-Quiz: Stimmt das?",
             "dauer": 12,
             "phase": "uebung",
-            "text": "Acht Aussagen vorlesen (Liste). Bei jeder Aussage flüstern die Tischgruppen 15 Sekunden; auf „drei“ zeigt jede Person ihren Daumen – hoch für stimmt, runter für stimmt nicht. Dann in einem Satz auflösen (Klammer) und eine Person, die richtig lag, fragen: Wie bist du darauf gekommen? Bei den Aussagen 1, 3 und 4 den Trick links an die Tafel schreiben; die übrigen Zeilen des Tafelbilds kommen in Schritt 7 dazu. Punkte werden nicht gezählt – wichtiger sind die kurzen Gespräche zwischen den Aussagen.",
+            "text": "Acht Aussagen vorlesen (Liste), jede zweimal und langsam. Bei jeder Aussage flüstern die Tischgruppen 15 Sekunden; auf „drei“ zeigt jede Person ihren Daumen – hoch für stimmt, runter für stimmt nicht. Dann in einem Satz auflösen (Klammer) und eine Person, die richtig lag, fragen: Wie bist du darauf gekommen? Bei den Aussagen 1, 3 und 4 den Trick links an die Tafel schreiben; die übrigen Zeilen des Tafelbilds kommen in Schritt 7 dazu. Punkte werden nicht gezählt – wichtiger sind die kurzen Gespräche zwischen den Aussagen.",
             "sagen": [
               "Daumen hoch heißt stimmt, Daumen runter stimmt nicht. Wer unsicher ist, entscheidet trotzdem – auf drei.",
               "Hat euch eine Antwort überrascht?"
@@ -153,14 +154,19 @@
             "titel": "Bildschirmzeit: schätzen und nachsehen",
             "dauer": 18,
             "phase": "uebung",
-            "text": "Allein (2 Min.): Aufgabe 1 im Heft – schätzen, wie lange man an einem normalen Tag am Handy ist. Nachsehen (4 Min.): Erlaubt es die Hausordnung, lesen alle, die mögen, die echte Zeit in den Einstellungen ab und stecken das Handy sofort wieder ein; sonst arbeiten alle mit Mila (Kasten im Heft) und sehen zu Hause nach. Wer kein Handy hat oder nicht nachsehen will, nimmt ohne Begründung Mila. Klasse (5 Min.): Die Lehrkraft nennt Schätzung und echte Zahl. Auf drei zeigen alle mit der flachen Hand – nach oben: echte Zeit höher als geschätzt, waagrecht: etwa gleich, nach unten: niedriger; wer mit Mila arbeitet, zeigt Milas Richtung. An Milas Beispiel sammeln, warum man sich verschätzt. Allein (3 Min.): Aufgabe 2. Zu zweit (4 Min.): Was am Handy lädt euch auf, was zieht euch runter? Danach zwei, drei Stimmen.",
+            "text": "Allein (2 Min.): Aufgabe 1 im Heft – schätzen, wie lange man an einem normalen Tag am Handy ist. Nachsehen (3 Min.): nur, wenn die Regeln des Lycée es erlauben, und nur, wer mag; die drei Schritte stehen an der Tafel (Liste). Wer kein Handy hat, die Anzeige nicht findet oder nicht nachsehen will, nimmt ohne Begründung Mila (Kasten im Heft). Klasse (5 Min.): Die Lehrkraft nennt Schätzung und echte Zahl. Auf drei zeigen alle mit der flachen Hand, ob die echte Zeit höher ist als geschätzt (nach oben), etwa gleich (waagrecht) oder niedriger (nach unten); wer mit Mila arbeitet, zeigt Milas Richtung. An Milas Beispiel sammeln, warum man sich verschätzt. Allein, dann zu zweit (8 Min.): Aufgabe 2 ankreuzen, dann mit dem Nachbarn: Was am Handy lädt euren Akku auf, was zieht ihn leer? Zum Schluss zwei, drei Stimmen.",
             "sagen": [
               "Ich hatte eine Stunde zwanzig geschätzt. Mein Handy sagt: zwei Stunden fünfzig. Damit hatte ich nicht gerechnet.",
               "Mila schätzt zwei Stunden am Tag, ihr Handy zeigt über vier. Wie kann das passieren?",
               "Wie fühlt ihr euch meistens nach einer halben Stunde Scrollen?"
             ],
-            "tipp": "Dass alle eine Richtung zeigen – die eigene oder Milas –, ist Absicht: So fällt niemand auf, der kein Handy hat. Die Hand statt des Daumens: So wirkt keine Zahl wie gut oder schlecht. Findet jemand die Anzeige nicht, nach zwei Minuten Mila nehmen und zu Hause in Ruhe suchen; bei manchen Handys muss sie erst eingeschaltet werden. Typische Gründe fürs Verschätzen: Kurze Blicke zählt man nicht mit, und das Handy läuft nebenbei im Bus und im Bett.",
-            "wennEsKippt": "Ruft jemand eine Zahl in den Raum oder zieht andere auf („Sieben Stunden, du Süchtiger“), deutlich stoppen: Die Zahlen gehören jeder Person selbst, hier wird nichts verglichen. Bleiben Handys nach dem Nachsehen draußen, ruhig und konsequent: Handy in die Tasche, sonst arbeitet die Person ab jetzt mit Mila. Erzählt jemand von nächtelangem Zocken, Streit ums Handy zu Hause oder unangenehmen Kontakten, nicht vertiefen, sondern nach der Stunde ansprechen.",
+            "punkte": [
+              "Handy heraus, die Zeit in den Einstellungen ablesen und in Aufgabe 1 eintragen.",
+              "Handy mit dem Display nach unten auf den Tisch legen.",
+              "Auf „3, 2, 1“ der Lehrkraft: Handy in die Tasche – auch wer noch nicht fertig ist."
+            ],
+            "tipp": "Dass alle eine Richtung zeigen – die eigene oder Milas –, ist Absicht: So fällt niemand auf, der kein Handy hat, und keine Zahl wirkt gut oder schlecht. Typische Gründe fürs Verschätzen: Kurze Blicke zählt man nicht mit, und das Handy läuft nebenbei im Bus und im Bett. Für manche ist das Handy die Verbindung zu Familie und Freunden im Ausland – das gehört ausdrücklich zu dem, was auflädt.",
+            "wennEsKippt": "Ruft jemand eine Zahl in den Raum oder zieht andere auf („Sieben Stunden, du Süchtiger“), deutlich stoppen: Die Zahlen gehören jeder Person selbst, hier wird nichts verglichen. Liegt nach dem „1“ noch ein Handy draußen, ruhig und konsequent: Handy in die Tasche, ab jetzt arbeitet die Person mit Mila. Findet jemand die Anzeige nicht, nach einer Minute Mila nehmen und zu Hause in Ruhe suchen; bei manchen Handys muss sie erst eingeschaltet werden. Erzählt jemand von nächtelangem Zocken, Streit ums Handy zu Hause oder unangenehmen Kontakten, nicht vertiefen, sondern nach der Stunde ansprechen.",
             "blatt": "ff7-handy-check"
           },
           {
@@ -181,11 +187,11 @@
             "titel": "Hinter dem perfekten Bild",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Vorzeigen (30 Sek.): Rahmen flach aufs Pult, im Fenster ein ordentlicher Bücherstapel, unter dem Papierrand ein Durcheinander. Tischgruppen (6 Min.): Jede Gruppe wählt ein Motiv von der Tafel – perfekter Lernplatz, gemütlicher Sonntag, alles in Ordnung, sportlich, Frühling – und baut mit Schulsachen, Flaschen und Jacken (ohne Handys und Wertsachen) ein perfektes Bild flach auf den Tisch: Im Fenster ist alles perfekt, die Unordnung kommt unter den Rand. Rundgang (5 Min.): Alle Gruppen gehen zweimal einen Tisch weiter, schauen erst nur ins Fenster, geben dem Bild einen Titel und heben dann kurz den Rahmen an. Klasse (4 Min.): Sachen zurück in die Taschen, dann an der Tafel sammeln, was ein Bild nicht zeigt (Liste). Allein (4 Min.): Aufgabe 3 – Leas Beispiel lesen, dann den Eisberg für ein eigenes oder erfundenes Bild füllen.",
+            "text": "Vorzeigen (1 Min.): Rahmen flach aufs Pult; im Fenster liegen Heft, Stift und Flasche ordentlich, rundherum Durcheinander. Eine Person beugt sich wie eine Handykamera tief über das Fenster, sagt, was sie sieht, und richtet sich auf. Tischgruppen (6 Min.): Jede Gruppe wählt ein Motiv von der Tafel – perfekter Lernplatz, bereit für den Test, alles im Griff, kreativer Nachmittag, gemütliche Lesepause – und legt mit Schulsachen, Flaschen und Jacken ein perfektes Bild ins Fenster; was stört, kommt rund um den Rahmen. Handys und Wertsachen bleiben in der Tasche. Einmal weiter (3 Min.): Alle Gruppen gehen einen Tisch im Uhrzeigersinn weiter, schauen nur durch das Fenster und geben dem Bild einen Titel wie im Netz; auf „Kopf hoch“ richten sich alle gleichzeitig auf. Klasse (5 Min.): zurück an die Plätze, Sachen weg, an der Tafel sammeln, was ein Bild nicht zeigt (Liste). Allein (5 Min.): Aufgabe 3 – Leas Beispiel lesen, dann den Eisberg für das Bild der Gruppe oder ein Bild aus dem Netz füllen; Stichworte reichen.",
             "sagen": [
-              "Nur was im Fenster ist, zählt. Wie bekommt ihr euer Bild perfekt?",
+              "Nur was im Fenster liegt, kommt aufs Bild. Wie bekommt ihr euer Bild perfekt?",
               "Wer sich vergleicht, vergleicht seinen ganzen Alltag mit den besten zwei Sekunden von anderen.",
-              "Wie fühlt man sich, wenn man sich jeden Tag mit solchen Bildern vergleicht?"
+              "Wie geht es wohl jemandem, der sich jeden Tag mit solchen Bildern vergleicht?"
             ],
             "punkte": [
               "Ausschnitt: Alles außerhalb des Rahmens fehlt.",
@@ -195,15 +201,15 @@
               "Filter und Bearbeitung: Haut glatter, Farben wärmer, Beine länger – oft, ohne dass man es merkt.",
               "Davor und danach: Stress, Streit, ein ganz normaler Tag."
             ],
-            "tipp": "Bei Filtern nicht über Gesichter oder Körper von Mitschülerinnen und Mitschülern sprechen und keine Beispielbilder von Menschen zeigen – die Liste reicht. Der Eisberg bleibt im Heft; vorgelesen wird nur freiwillig.",
-            "wennEsKippt": "Nehmen Gruppen Sachen anderer ohne zu fragen oder wird der Rundgang wild, alle an ihre Plätze: Die Lehrkraft geht allein von Tisch zu Tisch und hebt die Rahmen, die Klasse schaut von den Plätzen aus zu. Kippt das Gespräch in Spott über Influencer oder über das Aussehen Einzelner, zurücklenken: Es geht nicht darum, wer postet, sondern darum, was die Bilder mit uns machen. Sagt jemand, er oder sie fühle sich nach dem Scrollen oft hässlich oder zu dick, das ruhig würdigen, nicht vertiefen und nach der Stunde ansprechen.",
+            "tipp": "Bei Filtern nicht über Gesichter oder Körper von Mitschülerinnen und Mitschülern sprechen und keine Beispielbilder von Menschen zeigen – die Liste reicht. Für den Eisberg das Bild der Gruppe oder ein Bild aus dem Netz vorschlagen, nicht ein Foto von sich selbst: Es geht um Bilder, nicht um den eigenen Körper. Vorgelesen wird nur freiwillig.",
+            "wennEsKippt": "Nehmen Gruppen Sachen anderer ohne zu fragen oder wird das Weitergehen wild, alle an ihre Plätze: Die Lehrkraft geht allein von Tisch zu Tisch, beugt sich über jedes Fenster und beschreibt, was sie sieht. Kippt das Gespräch in Spott über Influencer oder über das Aussehen Einzelner, zurücklenken: Es geht nicht darum, wer postet, sondern darum, was die Bilder mit uns machen. Sagt jemand, er oder sie fühle sich nach dem Scrollen oft hässlich oder zu dick, das ruhig würdigen, nicht vertiefen und nach der Stunde ansprechen; bei Hinweisen auf Essprobleme noch am selben Tag den SePAS informieren.",
             "blatt": "ff7-handy-check"
           },
           {
             "titel": "Mein Handy-Plan: eine kleine Änderung",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Klasse (5 Min.): Auf die Tricks links an der Tafel zeigen und gemeinsam die rechte Spalte füllen: Was kann man selbst tun? Erst die Ideen der Klasse, dann ergänzen (Tafelbild). Dazu sagen: Ein Plan kann auch heißen, mehr von dem zu machen, was auflädt. Allein (7 Min.): Aufgabe 4 – eine einzige kleine Änderung ankreuzen oder selbst formulieren und daraus einen Wenn-dann-Plan für den Moment machen, in dem das Handy am meisten zieht. Wer kein Handy hat, plant für Konsole, Fernseher oder Tablet. Zu zweit (3 Min.): Wer mag, liest den Plan dem Nachbarn vor; der prüft nur eins: Ist er so klein, dass er morgen klappt?",
+            "text": "Klasse (5 Min.): Auf die Tricks links an der Tafel zeigen und gemeinsam die rechte Spalte füllen: Was kann man selbst tun? Erst die Ideen der Klasse, dann ergänzen (Tafelbild). Dazu sagen: Ein Plan kann auch heißen, mehr von dem zu machen, was auflädt. Allein (6 Min.): Aufgabe 4 – eine einzige kleine Änderung ankreuzen oder selbst formulieren und daraus einen Wenn-dann-Plan für den Moment machen, in dem das Handy am meisten zieht. Wer kein Handy hat, plant für Konsole, Fernseher oder Tablet. Zu zweit (4 Min.): Wer mag, liest den Plan dem Nachbarn vor; der stellt zwei Fragen: Ist er so klein, dass er morgen klappt? Was könnte dazwischenkommen – und was machst du dann?",
             "sagen": [
               "Welche eine Sache wollt ihr ab morgen anders machen? Nicht fünf – eine.",
               "Wann zieht das Handy bei euch am meisten? Abends im Bett, bei den Hausaufgaben, im Bus?"
@@ -232,19 +238,19 @@
                 ],
                 [
                   "Das Handy liegt immer in Reichweite.",
-                  "Nachts und bei den Hausaufgaben in einen anderen Raum."
+                  "Nachts und bei den Hausaufgaben außer Reichweite legen, etwa in die Tasche."
                 ]
               ]
             },
-            "tipp": "Pläne, die an eine feste Situation gebunden sind („Wenn ich ins Bett gehe, dann …“), halten deutlich besser als gute Vorsätze. Lieber eine Änderung, die hält, als drei, die am Mittwoch vergessen sind.",
-            "wennEsKippt": "Sagt jemand „Ich ändere gar nichts“, das stehen lassen: Auch das ist eine Entscheidung. Anbieten, einen Plan für mehr von dem zu schreiben, was guttut, oder einen für Mila. Schreibt jemand einen sehr großen Plan („nie mehr TikTok“), nicht bremsen, aber fragen: Klappt das auch am Freitagabend? Dann gemeinsam eine kleinere Stufe finden.",
+            "tipp": "Pläne, die an eine feste Situation gebunden sind („Wenn ich ins Bett gehe, dann …“), halten deutlich besser als gute Vorsätze – noch besser, wenn man vorher überlegt, was dazwischenkommen kann. Lieber eine Änderung, die hält, als drei, die am Mittwoch vergessen sind.",
+            "wennEsKippt": "Sagt jemand „Ich ändere gar nichts“, das stehen lassen: Auch das ist eine Entscheidung. Anbieten, einen Plan für mehr von dem zu schreiben, was guttut, oder einen für Mila. Schreibt jemand einen sehr großen Plan („nie mehr TikTok“), nicht bremsen, aber fragen: Klappt das auch am Freitagabend? Kommen Handyregeln der Eltern zur Sprache, sie nicht bewerten: Das entscheidet jede Familie selbst; der Plan betrifft nur, was man selbst in der Hand hat.",
             "blatt": "ff7-handy-check"
           },
           {
             "titel": "Skill: Drei Atemzüge vor dem Handy",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: ein Skill für den Moment, in dem die Hand zum Handy will, bevor der Kopf entschieden hat. Das Handy der Lehrkraft liegt mit dem Display nach unten vorn auf dem Pult, der Wecker ist auf Vibration gestellt; die Handys der Klasse bleiben in der Tasche. Alle sitzen bequem, die Hände auf dem Tisch. Wenn es vibriert, bemerken alle eine halbe Minute lang nur, was passiert: Wohin wandern Blick und Hände, was will der Kopf wissen? Danach die drei Schritte zweimal langsam gemeinsam üben (Liste); beim zweiten Mal stellen sich alle vor, das eigene Handy vibriert bei den Hausaufgaben. Zwei, drei Rückmeldungen: Wie stark war der Zug, wann könnte das helfen? Zum Schluss: Es geht nicht darum, nie hinzuschauen, sondern selbst zu entscheiden.",
+            "text": "Ankündigen: ein Skill für den Moment, in dem die Hand zum Handy will, bevor der Kopf entschieden hat. Das Handy der Lehrkraft liegt mit dem Display nach unten vorn auf dem Pult; ein Timer läuft eine Minute und vibriert dann. Die Handys der Klasse bleiben in der Tasche. Alle sitzen bequem, die Hände auf dem Tisch. Wenn es vibriert, bemerken alle eine halbe Minute lang nur, was passiert: Wohin wandern Blick und Hände, was will der Kopf wissen? Danach die drei Schritte zweimal langsam gemeinsam üben (Liste); beim zweiten Mal stellen sich alle vor, das eigene Handy vibriert bei den Hausaufgaben. Zwei, drei Rückmeldungen: Wie stark war der Zug, wann könnte das helfen? Zum Schluss: Es geht nicht darum, nie hinzuschauen, sondern selbst zu entscheiden.",
             "sagen": [
               "Ihr müsst nichts tun, nur hinschauen: Wohin wollen eure Augen, was wollen eure Hände?",
               "Drei Atemzüge, eine Frage: Was will ich gerade wirklich?"
@@ -254,14 +260,14 @@
               "Drei ruhige Atemzüge, das Ausatmen etwas länger. Das Handy bleibt liegen.",
               "Fragen: Was will ich gerade wirklich – Kontakt, Ablenkung, Ruhe? Dann entscheiden."
             ],
-            "tipp": "Der Zug zum Handy ist wie eine Welle: Er steigt an und flaut ab, auch wenn man ihm nicht folgt. Wer das ein paarmal erlebt, merkt: Ich muss nicht sofort nachschauen. Statt des eigenen Handys geht auch ein Wecker oder ein Benachrichtigungston am Laptop.",
+            "tipp": "Der Zug zum Handy ist wie eine Welle: Er steigt an und flaut ab, auch wenn man ihm nicht folgt. Wer das ein paarmal erlebt, merkt: Ich muss nicht sofort nachschauen. Statt des Timers geht auch ein Wecker oder ein Benachrichtigungston am Laptop.",
             "wennEsKippt": "Lacht die Klasse über das vibrierende Handy, mitlachen und weitermachen – der Zug ist gerade für alle spürbar, genau darum geht es. Greift jemand zum eigenen Handy, nicht schimpfen, sondern freundlich fragen, ob er oder sie die drei Schritte einmal ausprobieren mag. Niemand muss die Augen schließen."
           },
           {
             "titel": "Skills-Pass, Mission und Ausblick",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (3 Min.): die Leitfrage an die Tafel schreiben – Was nehme ich heute über mich und mein Handy mit? Wer mag, schreibt stattdessen den Wenn-dann-Plan hinein; danach gibt es den Stempel. Daumen-Blitzlicht (30 Sek.): Wie gut kennt ihr jetzt die Tricks eurer Apps? Zum Schluss die Wochen-Mission im Heft ansagen und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "text": "Skills-Pass (3 Min.): die Seite für das dritte Trimester aufschlagen und die Leitfrage an die Tafel schreiben – Was nehme ich heute über mich und mein Handy mit? Wer mag, schreibt stattdessen den Wenn-dann-Plan hinein; danach gibt es den Stempel. Daumen-Blitzlicht (30 Sek.): Wie gut kennt ihr jetzt die Tricks eurer Apps? Zum Schluss die Wochen-Mission im Heft ansagen und den Ausblick auf die nächste Stunde geben (1 Min.).",
             "sagen": [
               "Diese Woche probiert ihr eure kleine Änderung aus – oder drei Atemzüge, bevor ihr zum Handy greift. Es geht nicht ums Schaffen, sondern darum, was ihr dabei merkt."
             ],
@@ -269,19 +275,19 @@
           }
         ],
         "bruecke": "Nächste Woche geht es um Bilder und Nachrichten, die es so nie gegeben hat: Ihr spielt Echt oder fake, lernt eine Checkliste für Beiträge kennen und schaut, was KI kann – und was nicht.",
-        "mission": "Probier diese Woche deine kleine Änderung aus dem Handy-Plan aus – oder drei Atemzüge, bevor du zu Handy, Konsole oder Fernbedienung greifst.",
-        "hintergrund": "Pauschale Warnungen vor dem Handy greifen zu kurz: In großen Datensätzen hängt die Nutzung digitaler Medien zwar negativ, aber nur sehr schwach mit dem Wohlbefinden Jugendlicher zusammen (Orben & Przybylski, 2019). Entscheidend ist, was jemand nutzt, wann und mit welchem Gefühl danach – deshalb vergleicht die Stunde keine Zahlen, sondern lädt zur Selbstbeobachtung ein. Gut belegt ist die Wirkung von Vergleichen: Junge Frauen, die zehn Minuten in einem sozialen Netzwerk verbrachten, waren danach schlechter gelaunt als eine Vergleichsgruppe; wer dazu neigte, das eigene Aussehen zu vergleichen, war mit Gesicht, Haaren und Haut unzufriedener (Fardouly et al., 2015). Das Rahmen-Experiment zeigt, wie viel Auswahl und Inszenierung in einem perfekten Bild steckt. Der Handy-Plan bindet eine kleine Änderung an eine feste Situation; solche Wenn-dann-Pläne werden deutlich häufiger umgesetzt als allgemeine Vorsätze (Gollwitzer, 1999).",
+        "mission": "Probier diese Woche deine kleine Änderung aus dem Handy-Plan aus – oder drei Atemzüge, bevor du zu Handy, Konsole oder Fernbedienung greifst. Was hast du gemerkt?",
+        "hintergrund": "Pauschale Warnungen vor dem Handy greifen zu kurz: In großen Datensätzen hängt die Nutzung digitaler Medien zwar negativ, aber nur sehr schwach mit dem Wohlbefinden Jugendlicher zusammen (Orben & Przybylski, 2019). Entscheidend ist, was jemand nutzt, wann und mit welchem Gefühl danach – deshalb vergleicht die Stunde keine Zahlen, sondern lädt zur Selbstbeobachtung ein. Spürbar wirken Vergleiche: In einem Experiment waren junge Frauen nach zehn Minuten in einem sozialen Netzwerk schlechter gelaunt als eine Vergleichsgruppe; wer dazu neigte, das eigene Aussehen zu vergleichen, war danach mit Gesicht, Haaren und Haut unzufriedener (Fardouly et al., 2015). Das Rahmen-Experiment macht sichtbar, wie viel Auswahl in einem perfekten Bild steckt. Der Handy-Plan bindet eine kleine Änderung an eine feste Situation; solche Wenn-dann-Pläne werden deutlich häufiger umgesetzt als allgemeine Vorsätze (Gollwitzer, 1999).",
         "quellen": [
           "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
           "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
-        "achtung": "Bildschirmzeiten, Apps und Chats sind privat: keine Handys einsammeln, keine Zahlen vergleichen, niemanden für viel oder wenig Zeit aufziehen; wer kein Handy hat, muss das nicht erklären. Vergleiche können viel auslösen: Körper von Mitschülerinnen und Mitschülern werden nicht kommentiert, auch nicht als Lob. Hinweise auf Cybermobbing, Erpressung mit Bildern, Kontakte zu Fremden, starken Rückzug oder Essprobleme nicht vor der Klasse vertiefen: nach der Stunde ansprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Beratung: BEE SECURE Helpline 8002 1234.",
+        "achtung": "Bildschirmzeiten, Apps und Chats sind privat: keine Handys einsammeln, keine Zahlen vergleichen, niemanden für viel oder wenig Zeit aufziehen; wer kein Handy hat, muss das nicht erklären. Körper von Mitschülerinnen und Mitschülern werden nicht kommentiert, auch nicht als Lob. Erzählt jemand, nicht mehr aufhören zu können oder kaum zu schlafen, nach der Stunde ansprechen und den SePAS als Anlaufstelle nennen. Hinweise auf Cybermobbing, Erpressung mit Bildern, Kontakte zu Fremden oder Essprobleme nicht vor der Klasse vertiefen: nach der Stunde ansprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Beratung: BEE SECURE Helpline 8002 1234.",
         "differenzierung": {
-          "leichter": "Aufgaben 1 und 2 im Tandem mit einer Person, die gut liest; statt Stunden reicht ein Wort: mehr, gleich oder weniger als gedacht. Wer die Unterrichtssprache noch lernt, sitzt wenn möglich neben jemandem, der übersetzen kann, und darf in der eigenen Sprache notieren. Beim Plan eine Idee ankreuzen und den Wenn-dann-Satz nach dem Beispiel ergänzen; Filter und Algorithmus an der Tafel mit einer Skizze zeigen.",
-          "schwerer": "Den Eisberg für ein zweites, selbst ausgedachtes Bild füllen oder für die Klasse drei Tipps formulieren, wie man eine Pause von Flammen und Serien macht, ohne Freunde zu verärgern. Im Rahmen-Experiment die Regie übernehmen: Was muss aus dem Bild verschwinden, damit es perfekt wirkt?"
+          "leichter": "Aufgaben 1 und 2 im Tandem mit jemandem, der gut liest; statt Stunden reicht ein Wort: mehr, gleich, weniger. Wer die Unterrichtssprache noch lernt, sitzt neben jemandem, der übersetzt, notiert in der eigenen Sprache und folgt den drei Schritten an der Tafel. Beim Plan eine Idee ankreuzen und den Wenn-dann-Satz nach dem Beispiel ergänzen.",
+          "schwerer": "Den Eisberg für ein zweites, ausgedachtes Bild füllen oder drei Tipps formulieren, wie man eine Pause von Flammen und Serien macht, ohne Freunde zu verärgern. Im Rahmen-Experiment Regie führen: Was muss weg, damit das Bild perfekt wirkt?"
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt und Zahl (5 Min.), Bildschirmzeit schätzen und mit Mila vergleichen, Aufgaben 1 und 2 (12 Min.), Rahmen-Experiment mit zwei Gruppen, die anderen schauen zu, dazu Aufgabe 3 (13 Min.), Handy-Plan mit dem Tafelbild (10 Min.), drei Atemzüge vor dem Handy (5 Min.), Skills-Pass und Mission (5 Min.). Das Quiz entfällt; die Tricks der Apps kommen beim Tafelbild zur Sprache."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt und Zahl (5 Min.), Bildschirmzeit schätzen und mit Mila vergleichen, Aufgaben 1 und 2 (12 Min.), Rahmen-Experiment mit zwei Gruppen vor der Klasse, Aufgabe 3 (13 Min.), Handy-Plan mit dem Tafelbild (10 Min.), drei Atemzüge (5 Min.), Skills-Pass und Mission (5 Min.). Das Quiz entfällt; die Tricks der Apps kommen beim Tafelbild zur Sprache."
       },
       "fr": {
         "titel": "Les réseaux sociaux et moi",
@@ -295,27 +301,26 @@
         "material": [
           "Un cahier de l’élève par jeune",
           "Roue des émotions, 20 gommettes",
-          "Cinq cadres en papier (A4, fenêtre)",
-          "Réveil ou portable (enseignant·e)",
+          "Cinq cadres en papier (A4 avec fenêtre)",
+          "Portable de l’enseignant·e, minuteur en vibreur",
           "Tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
-          "Vérifier le règlement intérieur : les portables peuvent-ils sortir trois minutes pour consulter le temps d’écran ? Sinon, tout le monde travaille avec Mila.",
+          "Vérifier les règles du lycée sur les portables : peuvent-ils sortir trois minutes pour lire le temps d’écran ? Sinon, tout le monde travaille avec Mila.",
           "Fabriquer cinq cadres : dans une feuille A4, découper une fenêtre d’environ 9 sur 16 cm – la taille d’un écran de portable.",
-          "Consulter son propre temps d’écran – l’enseignant·e donne son chiffre en premier.",
-          "Pour le skill, régler une alarme en vibreur sur son portable ou préparer un son de notification sur l’ordinateur.",
-          "Au tableau : question clé, place pour deux colonnes (étape 7), cinq thèmes (étape 6), mots-clés."
+          "Consulter son propre temps d’écran – l’enseignant·e donne son chiffre en premier. Pour le skill, préparer un minuteur en vibreur sur son portable.",
+          "Au tableau : question clé, une batterie, les trois étapes pour vérifier, cinq thèmes (étape 6), place pour deux colonnes (étapes 3 et 7), mots-clés."
         ],
         "ablauf": [
           {
             "min": "0–10",
             "phase": "ankommen",
-            "titel": "Tour d’humeur : roue, chiffre et emoji du jour"
+            "titel": "Tour d’humeur : roue, chiffre et batterie"
           },
           {
             "min": "10–15",
             "phase": "bruecke",
-            "titel": "Retour, mission et nouveau chapitre"
+            "titel": "Mission d’avant les vacances et nouveau chapitre"
           },
           {
             "min": "15–27",
@@ -355,33 +360,35 @@
         ],
         "schritte": [
           {
-            "titel": "Tour d’humeur : roue, chiffre et emoji du jour",
+            "titel": "Tour d’humeur : roue, chiffre et batterie",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre (3 min). Puis la question du jour : quel emoji vous correspond aujourd’hui ? Trois volontaires dessinent leur emoji en grand au tableau, sans rien dire. La classe devine quel mot de la roue pourrait se cacher derrière, et le jeune dit si c’est juste (5 min). Pour finir, retenir : un emoji s’envoie vite – ce qu’on veut dire, c’est souvent le mot qui le précise (2 min).",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre (3 min). Puis la question du jour, avec la batterie dessinée au tableau : votre batterie est à combien après les vacances ? À trois, chacun la montre avec le bras, comme un indicateur de charge – main sur la table : presque vide, à hauteur de poitrine : à moitié, bras tendu vers le haut : pleine (2 min). Deux ou trois volontaires disent ce qui l’a rechargée ; noter des mots-clés à côté de la batterie (3 min). Pour finir, annoncer : aujourd’hui, on regarde quand le portable recharge votre batterie – et quand il la vide (2 min).",
             "sagen": [
-              "Gommette sur la roue, et à trois, votre chiffre avec les doigts. Je commence : de bonne humeur, 30 – aujourd’hui, on parle d’un sujet où les experts, c’est vous.",
-              "Quel emoji vous correspond aujourd’hui – comme un statut dans le chat ? Dessinez-le sans rien dire – les autres devinent l’émotion."
+              "Gommette sur la roue, et à trois, votre chiffre avec les doigts. Je commence : de bonne humeur, 30 – et après les vacances, ma batterie est plutôt pleine.",
+              "Votre batterie est à combien ? Montrez-la avec le bras, à trois. Qui veut : qu’est-ce qui l’a rechargée ?"
             ],
-            "tipp": "Deviner montre au passage ce qui comptera plus tard : en ligne, il manque la voix et le visage, c’est pour ça qu’il y a tant de malentendus. Trois emojis suffisent. Un jeune qui a du mal à rester assis distribue les gommettes à la porte.",
-            "wennEsKippt": "Si quelqu’un dessine un emoji pour rire, une tête de mort par exemple, rester serein et le prendre au sérieux : quelle émotion pourrait se cacher derrière – agacé, ennuyé, humour noir ? Souvent, c’est même juste. Effacer sans commentaire un dessin déplacé et en parler plus tard en tête-à-tête. Si des gommettes sont sur des mots très lourds ou si un jeune montre huit doigts ou plus, ne pas poser de questions devant la classe, mais discrètement pendant le travail individuel."
+            "tipp": "La batterie, c’est l’image de la séance : plus tard, la classe cherche ce qui, sur le portable, recharge et ce qui vide. Un jeune qui a du mal à rester assis distribue les gommettes à la porte.",
+            "wennEsKippt": "Si quelqu’un lance « zéro pour cent » ou tourne la batterie en blague, rester serein : vide, c’est aussi une réponse. Si un jeune raconte de ses vacances plus qu’il n’est bon d’en dire devant la classe – une dispute, une maladie, un deuil –, l’arrêter gentiment et lui en reparler après le cours. Si des gommettes sont sur des mots très lourds, si un jeune montre huit doigts ou plus ou une batterie vide, ne pas poser de questions devant la classe, mais discrètement pendant le travail individuel."
           },
           {
-            "titel": "Retour, mission et nouveau chapitre",
+            "titel": "Mission d’avant les vacances et nouveau chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Puis demander avec le pouce où en est la mission d’avant les vacances – refuser une fois d’être le public, ne rien transférer : en haut, au milieu ou en bas ; une voix raconte, personne n’est obligé de l’avoir réussie. Dans le Skills-Pass, ouvrir la page « 3e trimestre » : la première phrase y sera écrite aujourd’hui. Ouvrir le nouveau chapitre et écrire la question clé au tableau : qu’est-ce que le portable fait de moi ? Pendant deux séances, on parle du monde numérique – aujourd’hui de vous et de votre portable, la semaine prochaine du vrai et du faux. Pour finir, dire si et quand les portables peuvent sortir aujourd’hui.",
+            "text": "Lire à voix haute la mission d’avant les vacances, dans le cahier : refuser une fois d’être le public – ne pas rire avec les autres, ne rien transférer. Puis demander avec le pouce : en haut, au milieu ou en bas. Raconter est facultatif et se fait sans prénoms ; personne n’est obligé de l’avoir réussie. Ensuite, ouvrir le nouveau chapitre et écrire la question clé au tableau : qu’est-ce que le portable fait de moi ? Annoncer que le chapitre dure deux séances : aujourd’hui, vous et votre portable ; la semaine prochaine, le vrai et le faux.",
             "sagen": [
+              "Avant les vacances, votre mission était de refuser une fois d’être le public. Pouce : ça a marché ? Si vous racontez, c’est sans prénoms, s’il vous plaît.",
               "Ici, personne ne va dire du mal de votre portable. La question, c’est : quand est-ce qu’il vous fait du bien – et quand plutôt pas ? C’est vous qui le savez le mieux.",
               "Les chiffres, les applis et les conversations restent chez vous aujourd’hui. Personne n’est obligé de montrer ou de dire quoi que ce soit."
             ],
-            "tipp": "L’attitude du début décide de la séance : beaucoup de jeunes s’attendent à un sermon et se ferment. Annoncer le contraire et s’y tenir donne des réponses plus sincères."
+            "tipp": "L’attitude du début décide de la séance : beaucoup de jeunes s’attendent à un sermon et se ferment. Annoncer le contraire et s’y tenir donne des réponses plus sincères.",
+            "wennEsKippt": "Si un prénom ou une histoire en cours dans la classe tombe malgré tout, arrêter tout de suite, gentiment : merci – on en parle après le cours. Avoir vraiment cette conversation et, s’il s’agit de harcèlement, informer le régent et le SePAS le jour même."
           },
           {
             "titel": "Quiz portable : vrai ou pas ?",
             "dauer": 12,
             "phase": "uebung",
-            "text": "Lire huit affirmations (liste). Pour chacune, les îlots se concertent à voix basse pendant 15 secondes ; à « trois », chaque jeune montre son pouce – en haut pour vrai, en bas pour faux. Puis donner la réponse en une phrase (parenthèse) et demander à un jeune qui avait juste : comment tu l’as su ? Pour les affirmations 1, 3 et 4, écrire l’astuce à gauche du tableau ; les autres lignes du tableau s’ajoutent à l’étape 7. On ne compte pas les points – les petits échanges entre les affirmations comptent davantage.",
+            "text": "Lire huit affirmations (liste), chacune deux fois, lentement. Pour chacune, les îlots se concertent à voix basse pendant 15 secondes ; à « trois », chaque jeune montre son pouce – en haut pour vrai, en bas pour faux. Puis donner la réponse en une phrase (parenthèse) et demander à un jeune qui avait juste : comment tu l’as su ? Pour les affirmations 1, 3 et 4, écrire l’astuce à gauche du tableau ; les autres lignes du tableau s’ajoutent à l’étape 7. On ne compte pas les points – les petits échanges entre les affirmations comptent davantage.",
             "sagen": [
               "Pouce en haut, c’est vrai ; pouce en bas, c’est faux. Si vous hésitez, décidez quand même – à trois.",
               "Une réponse vous a surpris ?"
@@ -392,7 +399,7 @@
               "Les pastilles rouges et les notifications sont faites pour me faire revenir dans l’appli. (vrai : elles sont conçues pour qu’on ait envie de regarder.)",
               "Le fil finit par s’arrêter tout seul. (faux : il est infini, et les vidéos se lancent toutes seules – c’est moi qui mets le point final.)",
               "Ce que j’envoie dans un groupe privé reste privé. (faux : une capture d’écran suffit, et c’est parti – même des années plus tard.)",
-              "J’ai le droit de publier une photo drôle de quelqu’un sans lui demander. (faux : d’abord demander. Chacun décide des images de lui-même.)",
+              "J’ai le droit de publier une photo drôle de quelqu’un sans lui demander. (faux : d’abord demander. Chacun décide des photos où il apparaît.)",
               "Beaucoup d’images en ligne sont retouchées ou refaites de nombreuses fois. (vrai : lumière, angle, filtres et nombreux essais en font souvent partie – on en reparle après la pause.)",
               "Les réseaux sociaux rendent tous les jeunes malheureux. (faux : ça dépend de ce qu’on regarde, combien de temps, à quel moment – et de comment on se sent après.)"
             ],
@@ -403,14 +410,19 @@
             "titel": "Temps d’écran : d’abord estimer, puis vérifier",
             "dauer": 18,
             "phase": "uebung",
-            "text": "Seul (2 min) : exercice 1 du cahier – estimer combien de temps on passe sur son portable un jour normal. Vérifier (4 min) : si le règlement intérieur le permet, ceux qui le veulent lisent le temps réel dans les réglages et rangent aussitôt leur portable ; sinon, tout le monde travaille avec Mila (encadré du cahier) et vérifie à la maison. Qui n’a pas de portable ou ne veut pas vérifier prend Mila, sans se justifier. En classe entière (5 min) : l’enseignant·e donne son estimation et son vrai chiffre. À trois, tout le monde montre avec la main à plat – vers le haut : temps réel plus élevé que prévu, à l’horizontale : à peu près pareil, vers le bas : plus bas ; qui travaille avec Mila montre la direction de Mila. À partir de l’exemple de Mila, chercher pourquoi on se trompe. Seul (3 min) : exercice 2. À deux (4 min) : sur le portable, qu’est-ce qui vous recharge, qu’est-ce qui vous plombe ? Ensuite, deux ou trois voix.",
+            "text": "Seul (2 min) : exercice 1 du cahier – estimer combien de temps on passe sur son portable un jour normal. Vérifier (3 min) : seulement si les règles du lycée le permettent, et seulement pour ceux qui le veulent ; les trois étapes sont au tableau (liste). Qui n’a pas de portable, ne trouve pas l’affichage ou ne veut pas vérifier prend Mila (encadré du cahier), sans se justifier. En classe entière (5 min) : l’enseignant·e donne son estimation et son vrai chiffre. À trois, chacun montre avec la main à plat si le temps réel est plus élevé que prévu (vers le haut), à peu près pareil (à l’horizontale) ou plus bas (vers le bas) ; qui travaille avec Mila montre la direction de Mila. À partir de l’exemple de Mila, chercher pourquoi on se trompe. Seul, puis à deux (8 min) : cocher l’exercice 2, puis avec son voisin : sur le portable, qu’est-ce qui recharge votre batterie, qu’est-ce qui la vide ? Pour finir, deux ou trois voix.",
             "sagen": [
               "J’avais estimé une heure vingt. Mon portable dit : deux heures cinquante. Je ne m’y attendais pas.",
               "Mila pense passer deux heures par jour sur son portable, et il en affiche plus de quatre. Comment c’est possible ?",
               "Comment vous sentez-vous, le plus souvent, après une demi-heure à scroller ?"
             ],
-            "tipp": "Que tout le monde montre une direction – la sienne ou celle de Mila – est voulu : ainsi, personne ne se fait remarquer parce qu’il n’a pas de portable. La main plutôt que le pouce : aucun chiffre ne passe pour bon ou mauvais. Si quelqu’un ne trouve pas l’affichage, prendre Mila au bout de deux minutes et chercher tranquillement à la maison ; sur certains portables, il faut d’abord l’activer. Raisons typiques de l’erreur : on ne compte pas les petits coups d’œil, et le portable tourne en fond dans le bus et au lit.",
-            "wennEsKippt": "Si quelqu’un crie un chiffre ou se moque des autres (« Sept heures, t’es accro »), arrêter clairement : les chiffres appartiennent à chacun, ici on ne compare rien. Si des portables restent sortis après la vérification, rester calme et ferme : le portable dans le sac, sinon le jeune continue avec Mila. Si un jeune parle de nuits entières à jouer, de disputes à la maison à cause du portable ou de contacts désagréables, ne pas approfondir, mais lui en parler après le cours.",
+            "punkte": [
+              "Sortir son portable, lire le temps dans les réglages et le noter à l’exercice 1.",
+              "Poser le portable sur la table, écran vers le bas.",
+              "Au « 3, 2, 1 » de l’enseignant·e : portable dans le sac – même si on n’a pas fini."
+            ],
+            "tipp": "Si tout le monde montre une direction – la sienne ou celle de Mila –, c’est voulu : ainsi, personne ne se fait remarquer parce qu’il n’a pas de portable, et aucun chiffre ne passe pour bon ou mauvais. Raisons typiques de l’erreur : on ne compte pas les petits coups d’œil, et le portable tourne en fond dans le bus et au lit. Pour certains, le portable est le lien avec la famille et les amis à l’étranger – cela fait clairement partie de ce qui recharge.",
+            "wennEsKippt": "Si quelqu’un crie un chiffre ou se moque des autres (« Sept heures, t’es accro »), arrêter clairement : les chiffres appartiennent à chacun, ici on ne compare rien. Si un portable traîne encore sur la table après le « 1 », rester calme et ferme : le portable dans le sac, et le jeune continue avec Mila. Si quelqu’un ne trouve pas l’affichage, passer à Mila au bout d’une minute et chercher tranquillement à la maison ; sur certains portables, il faut d’abord l’activer. Si un jeune parle de nuits entières à jouer, de disputes à la maison à cause du portable ou de contacts désagréables, ne pas approfondir, mais lui en parler après le cours.",
             "blatt": "ff7-handy-check"
           },
           {
@@ -431,11 +443,11 @@
             "titel": "Derrière l’image parfaite",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Montrer (30 secondes) : le cadre à plat sur le bureau, dans la fenêtre une pile de livres bien rangée, sous le bord du papier un fouillis. En îlots (6 min) : chaque groupe choisit un thème au tableau – coin devoirs parfait, dimanche cocooning, tout est en ordre, sportif, printemps – et construit à plat sur la table, avec des affaires de classe, des gourdes et des vestes (sans portables ni objets de valeur), une image parfaite : dans la fenêtre, tout est parfait, le désordre va sous le bord. Tour des tables (5 min) : tous les groupes avancent deux fois d’une table, regardent d’abord seulement dans la fenêtre, donnent un titre à l’image, puis soulèvent un instant le cadre. En classe entière (4 min) : ranger les affaires, puis noter au tableau ce qu’une image ne montre pas (liste). Seul (4 min) : exercice 3 – lire l’exemple de Lea, puis remplir l’iceberg pour une image vue, personnelle ou inventée.",
+            "text": "Montrer (1 min) : cadre posé à plat sur le bureau ; dans la fenêtre, un cahier, un stylo et une gourde bien alignés, tout autour, le désordre. Un jeune se penche au-dessus de la fenêtre comme un appareil photo, dit ce qu’il voit, puis se redresse. En îlots (6 min) : chaque groupe choisit un thème au tableau – coin devoirs parfait, prêt pour le devoir en classe, tout sous contrôle, après-midi créatif, pause lecture tranquille – et compose dans la fenêtre une image parfaite avec des affaires de classe, des gourdes et des vestes ; ce qui dérange va autour du cadre. Portables et objets de valeur restent dans le sac. Changement de table (3 min) : chaque groupe avance d’une table dans le sens des aiguilles d’une montre, regarde seulement par la fenêtre et donne un titre à l’image, comme sur les réseaux ; au signal « levez la tête », tout le monde se redresse en même temps. En classe entière (5 min) : retour aux places, affaires rangées, puis noter au tableau ce qu’une image ne montre pas (liste). Seul (5 min) : exercice 3 – lire l’exemple de Lea, puis remplir l’iceberg pour l’image de l’îlot ou une image vue en ligne ; des mots-clés suffisent.",
             "sagen": [
-              "Seul compte ce qui est dans la fenêtre. Comment rendre votre image parfaite ?",
+              "Seul ce qui est dans la fenêtre sera sur la photo. Comment rendre votre image parfaite ?",
               "Quand on se compare, on compare toute sa vie de tous les jours aux deux meilleures secondes des autres.",
-              "Comment on se sent quand on se compare tous les jours à ce genre d’images ?"
+              "À votre avis, comment se sent quelqu’un qui se compare tous les jours à ce genre d’images ?"
             ],
             "punkte": [
               "Le cadrage : tout ce qui est hors du cadre manque.",
@@ -445,15 +457,15 @@
               "Les filtres et les retouches : peau plus lisse, couleurs plus chaudes, jambes plus longues – souvent sans qu’on le remarque.",
               "L’avant et l’après : le stress, une dispute, une journée tout à fait normale."
             ],
-            "tipp": "Pour les filtres, ne pas parler du visage ou du corps d’élèves de la classe et ne montrer aucune photo de personnes – la liste suffit. L’iceberg reste dans le cahier ; on ne lit que si on le souhaite.",
-            "wennEsKippt": "Si des groupes prennent les affaires des autres sans demander ou si le tour des tables dégénère, tout le monde regagne sa place : l’enseignant·e passe seul·e de table en table et soulève les cadres, la classe regarde depuis les places. Si la discussion tourne à la moquerie envers des influenceurs ou envers l’apparence de quelqu’un, recentrer : la question n’est pas qui publie, mais ce que ces images nous font. Si un jeune dit qu’il se trouve souvent moche ou trop gros après avoir scrollé, l’accueillir calmement, ne pas approfondir et lui en parler après le cours.",
+            "tipp": "Pour les filtres, ne pas parler du visage ou du corps d’élèves de la classe et ne montrer aucune photo de personnes – la liste suffit. Pour l’iceberg, proposer l’image de l’îlot ou une image vue en ligne, pas une photo de soi : on parle des images, pas de son propre corps. On ne lit que si on le souhaite.",
+            "wennEsKippt": "Si des groupes prennent les affaires des autres sans demander ou si le tour devient agité, tout le monde regagne sa place : l’enseignant·e passe seul·e de table en table, se penche sur chaque fenêtre et décrit ce qu’il ou elle voit. Si la discussion tourne à la moquerie envers des influenceurs ou envers l’apparence de quelqu’un, recentrer : la question n’est pas qui publie, mais ce que ces images nous font. Si un jeune dit qu’il se trouve souvent moche ou trop gros après avoir scrollé, l’accueillir calmement, ne pas approfondir et lui en parler après le cours ; en cas de signes de problèmes alimentaires, informer le SePAS le jour même.",
             "blatt": "ff7-handy-check"
           },
           {
             "titel": "Mon plan portable : un petit changement",
             "dauer": 15,
             "phase": "uebung",
-            "text": "En classe entière (5 min) : montrer les astuces à gauche du tableau et remplir ensemble la colonne de droite : qu’est-ce qu’on peut faire soi-même ? D’abord les idées de la classe, puis compléter (tableau). Ajouter : un plan peut aussi vouloir dire faire davantage de ce qui recharge. Seul (7 min) : exercice 4 – cocher ou formuler un seul petit changement et en faire un plan « si… alors » pour le moment où le portable attire le plus. Qui n’a pas de portable fait un plan pour la console, la télé ou la tablette. À deux (3 min) : qui le souhaite lit son plan à son voisin, qui vérifie une seule chose : est-il assez petit pour marcher dès demain ?",
+            "text": "En classe entière (5 min) : montrer les astuces à gauche du tableau et remplir ensemble la colonne de droite : qu’est-ce qu’on peut faire soi-même ? D’abord les idées de la classe, puis compléter (tableau). Ajouter : un plan peut aussi vouloir dire faire davantage de ce qui recharge. Seul (6 min) : exercice 4 – cocher ou formuler un seul petit changement et en faire un plan « si… alors » pour le moment où le portable attire le plus. Qui n’a pas de portable fait un plan pour la console, la télé ou la tablette. À deux (4 min) : qui le souhaite lit son plan à son voisin, qui pose deux questions : ton plan est-il assez petit pour marcher dès demain ? Qu’est-ce qui pourrait t’en empêcher – et que fais-tu alors ?",
             "sagen": [
               "Quelle chose, une seule, voulez-vous changer dès demain ? Pas cinq – une.",
               "À quel moment le portable vous attire-t-il le plus ? Le soir au lit, pendant les devoirs, dans le bus ?"
@@ -478,23 +490,23 @@
                 ],
                 [
                   "L’algorithme montre toujours plus de la même chose.",
-                  "Ne plus suivre les comptes qui me font me sentir mal."
+                  "Se désabonner des comptes après lesquels je me sens moins bien."
                 ],
                 [
                   "Le portable est toujours à portée de main.",
-                  "La nuit et pendant les devoirs, dans une autre pièce."
+                  "La nuit et pendant les devoirs, le poser hors de portée, par exemple dans le sac."
                 ]
               ]
             },
-            "tipp": "Les plans liés à une situation précise (« Quand je vais me coucher, alors… ») tiennent nettement mieux que les bonnes résolutions. Mieux vaut un changement qui tient que trois qu’on a oubliés mercredi.",
-            "wennEsKippt": "Si quelqu’un dit « Je ne change rien », l’accepter : c’est aussi une décision. Proposer d’écrire un plan pour faire davantage de ce qui fait du bien, ou un plan pour Mila. Si un jeune écrit un plan énorme (« plus jamais TikTok »), ne pas freiner, mais demander : est-ce que ça marche aussi le vendredi soir ? Puis chercher ensemble une marche plus petite.",
+            "tipp": "Les plans liés à une situation précise (« Quand je vais me coucher, alors… ») tiennent nettement mieux que les bonnes résolutions – encore mieux si l’on a prévu ce qui pourrait se mettre en travers. Mieux vaut un changement qui tient que trois qu’on a oubliés mercredi.",
+            "wennEsKippt": "Si quelqu’un dit « Je ne change rien », l’accepter : c’est aussi une décision. Proposer un plan pour faire davantage de ce qui fait du bien, ou un plan pour Mila. Si un jeune écrit un plan énorme (« plus jamais TikTok »), ne pas freiner, mais demander : ça marche aussi le vendredi soir ? Si les règles des parents sont évoquées, ne pas les juger : chaque famille en décide ; le plan ne concerne que ce qu’on a soi-même en main.",
             "blatt": "ff7-handy-check"
           },
           {
             "titel": "Skill : trois respirations avant le portable",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : voici un skill pour le moment où la main part vers le portable avant que la tête ait décidé. Le portable de l’enseignant·e est posé devant, écran contre le bureau, l’alarme réglée en vibreur ; ceux des jeunes restent dans le sac. Tout le monde s’assoit confortablement, les mains sur la table. Quand il vibre, chacun se contente d’observer pendant une demi-minute ce qui se passe : où vont le regard et les mains, qu’est-ce que la tête veut savoir ? Ensuite, faire deux fois ensemble les trois étapes, lentement (liste) ; la deuxième fois, chacun imagine que son propre portable vibre pendant les devoirs. Deux ou trois retours : l’envie était-elle forte, quand cela pourrait-il aider ? Pour finir : le but n’est pas de ne jamais regarder, mais de décider soi-même.",
+            "text": "Annoncer : voici un skill pour le moment où la main part vers le portable avant que la tête ait décidé. Le portable de l’enseignant·e est posé devant, écran contre le bureau ; un minuteur d’une minute tourne, puis le portable vibre. Ceux des jeunes restent dans le sac. Tout le monde s’assoit confortablement, les mains sur la table. Quand il vibre, chacun se contente d’observer pendant une demi-minute ce qui se passe : où vont le regard et les mains, qu’est-ce que la tête veut savoir ? Ensuite, faire deux fois ensemble les trois étapes, lentement (liste) ; la deuxième fois, chacun imagine que son propre portable vibre pendant les devoirs. Deux ou trois retours : l’envie était-elle forte, quand cela pourrait-il aider ? Pour finir : le but n’est pas de ne jamais regarder, mais de décider soi-même.",
             "sagen": [
               "Vous n’avez rien à faire, juste à observer : où vont vos yeux, que veulent faire vos mains ?",
               "Trois respirations, une question : qu’est-ce que je veux vraiment, là ?"
@@ -504,14 +516,14 @@
               "Trois respirations calmes, l’expiration un peu plus longue. Le portable reste où il est.",
               "Me demander : qu’est-ce que je veux vraiment, là – du contact, me distraire, du calme ? Puis décider."
             ],
-            "tipp": "L’envie de prendre son portable est comme une vague : elle monte et redescend, même si on ne la suit pas. Qui l’a vécu plusieurs fois le remarque : je ne suis pas obligé de regarder tout de suite. Au lieu de son propre portable, un réveil ou un son de notification sur l’ordinateur fait aussi l’affaire.",
+            "tipp": "L’envie de prendre son portable est comme une vague : elle monte et redescend, même si on ne la suit pas. Qui l’a vécu plusieurs fois le remarque : je ne suis pas obligé de regarder tout de suite. Au lieu du minuteur, un réveil ou un son de notification sur l’ordinateur fait aussi l’affaire.",
             "wennEsKippt": "Si la classe rit du portable qui vibre, rire avec elle et continuer – l’envie est justement palpable pour tout le monde. Si un jeune prend son propre portable, ne pas gronder, mais lui demander gentiment s’il veut essayer une fois les trois étapes. Personne n’est obligé de fermer les yeux."
           },
           {
             "titel": "Skills-Pass, mission et suite",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Skills-Pass (3 min) : écrire la question au tableau – qu’est-ce que j’emporte aujourd’hui sur moi et mon portable ? Qui le souhaite y écrit plutôt son plan « si… alors » ; ensuite, le tampon. Tour éclair avec le pouce (30 secondes) : connaissez-vous maintenant les astuces de vos applis ? Pour finir, annoncer la mission de la semaine dans le cahier et la prochaine séance (1 min).",
+            "text": "Skills-Pass (3 min) : ouvrir la page du 3e trimestre et écrire la question au tableau – qu’est-ce que j’emporte aujourd’hui sur moi et mon portable ? Qui le souhaite y écrit plutôt son plan « si… alors » ; ensuite, le tampon. Tour éclair avec le pouce (30 secondes) : connaissez-vous maintenant les astuces de vos applis ? Pour finir, annoncer la mission de la semaine dans le cahier et la prochaine séance (1 min).",
             "sagen": [
               "Cette semaine, vous essayez votre petit changement – ou trois respirations avant de prendre votre portable. La question n’est pas de réussir, mais de remarquer ce qui se passe."
             ],
@@ -519,19 +531,19 @@
           }
         ],
         "bruecke": "La semaine prochaine, on parle d’images et de messages qui n’ont jamais existé : vous jouez à “Vrai ou faux ?”, vous découvrez une liste pour vérifier les publications et vous regardez ce que l’IA sait faire – ou pas.",
-        "mission": "Cette semaine, essaie le petit changement de ton plan portable – ou trois respirations avant de prendre ton portable, ta console ou la télécommande.",
-        "hintergrund": "Les mises en garde contre le portable ne suffisent pas : dans de grandes bases de données, l’usage des écrans est lié négativement au bien-être des jeunes, mais très faiblement (Orben & Przybylski, 2019). Ce qui compte, c’est ce qu’on utilise, à quel moment et comment on se sent après – la séance ne compare donc pas les chiffres, elle invite à s’observer soi-même. L’effet des comparaisons est bien établi : de jeunes femmes qui avaient passé dix minutes sur un réseau social étaient ensuite de moins bonne humeur qu’un groupe témoin ; celles qui avaient tendance à comparer leur apparence étaient plus insatisfaites de leur visage, de leurs cheveux et de leur peau (Fardouly et al., 2015). L’expérience du cadre montre la part de sélection et de mise en scène d’une image parfaite. Le plan portable relie un petit changement à une situation précise ; ce type de plan est nettement plus souvent appliqué qu’une bonne résolution (Gollwitzer, 1999).",
+        "mission": "Cette semaine, essaie le petit changement de ton plan portable – ou trois respirations avant de prendre ton portable, ta console ou la télécommande. Qu’as-tu remarqué ?",
+        "hintergrund": "Les mises en garde contre le portable ne suffisent pas : dans de grandes bases de données, l’usage des écrans est lié négativement au bien-être des jeunes, mais très faiblement (Orben & Przybylski, 2019). Ce qui compte, c’est ce qu’on utilise, à quel moment et comment on se sent après – la séance ne compare donc pas les chiffres, elle invite à s’observer. Les comparaisons pèsent : dans une expérience, après dix minutes sur un réseau social, de jeunes femmes étaient de moins bonne humeur qu’un groupe témoin ; celles qui comparaient volontiers leur apparence étaient plus insatisfaites de leur visage, de leurs cheveux et de leur peau (Fardouly et al., 2015). L’expérience du cadre montre la part de sélection dans une image parfaite. Le plan portable relie un petit changement à une situation précise ; ce type de plan est bien plus souvent appliqué qu’une bonne résolution (Gollwitzer, 1999).",
         "quellen": [
           "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
           "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
           "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
         ],
-        "achtung": "Temps d’écran, applis et conversations sont privés : ne pas ramasser les portables, ne pas comparer les chiffres, ne laisser personne se moquer de beaucoup ou de peu de temps ; un jeune sans portable n’a pas à s’expliquer. Les comparaisons peuvent toucher fort : on ne commente pas le corps des élèves de la classe, même pour complimenter. En cas de signes de cyberharcèlement, de chantage avec des images, de contacts avec des inconnus, de repli marqué ou de problèmes alimentaires, ne pas approfondir devant la classe : en parler après le cours, informer le SePAS le jour même et suivre le protocole de protection de l’école. Conseil : BEE SECURE Helpline 8002 1234.",
+        "achtung": "Temps d’écran, applis et conversations sont privés : ne pas ramasser les portables, ne pas comparer les chiffres, ne laisser personne se moquer du temps des autres ; un jeune sans portable n’a pas à s’expliquer. On ne commente pas le corps des élèves, même pour complimenter. Si un jeune dit ne plus pouvoir décrocher ou à peine dormir, lui en parler après le cours et lui indiquer le SePAS. Signes de cyberharcèlement, de chantage avec des images, de contacts avec des inconnus ou de problèmes alimentaires : ne pas approfondir devant la classe, en parler après le cours, informer le SePAS le jour même et suivre le protocole de protection de l’école. Conseil : BEE SECURE Helpline 8002 1234.",
         "differenzierung": {
-          "leichter": "Exercices 1 et 2 en binôme avec un camarade qui lit bien ; au lieu des heures, un mot suffit : plus, pareil ou moins que prévu. Un jeune qui apprend encore la langue du cours s’assoit si possible à côté de quelqu’un qui peut traduire et peut noter dans sa langue. Pour le plan, cocher une idée et compléter la phrase « si… alors » sur le modèle de l’exemple ; montrer filtre et algorithme au tableau avec un croquis.",
-          "schwerer": "Remplir l’iceberg pour une deuxième image inventée ou formuler pour la classe trois conseils pour faire une pause dans les flammes et les séries sans fâcher ses amis. Pendant l’expérience du cadre, prendre la mise en scène : qu’est-ce qui doit disparaître de l’image pour qu’elle paraisse parfaite ?"
+          "leichter": "Exercices 1 et 2 en binôme avec quelqu’un qui lit bien ; au lieu des heures, un mot suffit : plus, pareil, moins. Un jeune qui apprend la langue du cours s’assoit à côté de quelqu’un qui traduit, note dans sa langue et suit les trois étapes au tableau. Pour le plan, cocher une idée et compléter la phrase « si… alors ».",
+          "schwerer": "Remplir l’iceberg pour une deuxième image inventée, ou formuler trois conseils pour faire une pause dans les flammes et les séries sans fâcher ses amis. Pendant l’expérience du cadre, faire la mise en scène : que faut-il cacher pour que l’image paraisse parfaite ?"
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et chiffre (5 min), estimer le temps d’écran et le comparer à celui de Mila, exercices 1 et 2 (12 min), expérience du cadre avec deux groupes pendant que les autres regardent, puis exercice 3 (13 min), plan portable avec le tableau (10 min), trois respirations avant le portable (5 min), Skills-Pass et mission (5 min). Le quiz est supprimé ; les astuces des applis sont abordées avec le tableau."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur rapide (5 min), temps d’écran estimé et comparé à celui de Mila, exercices 1 et 2 (12 min), expérience du cadre avec deux îlots devant la classe, exercice 3 (13 min), plan portable avec le tableau (10 min), trois respirations (5 min), Skills-Pass et mission (5 min). Le quiz saute ; ses astuces sont vues avec le tableau."
       }
     }
   ],
@@ -567,7 +579,7 @@
         "bausteine": [
           {
             "art": "text",
-            "text": "Das Handy ist nicht der Feind. Die Frage ist: Wann tut es dir gut – und wann eher nicht? Das weißt du selbst am besten."
+            "text": "Das Handy ist nicht der Feind. Die Frage ist: Wann tut es dir gut – und wann nicht?"
           },
           {
             "art": "info",
@@ -578,7 +590,7 @@
           {
             "art": "aufgabe",
             "text": "Erst schätzen, dann nachsehen: Wie lange bist du an einem normalen Tag am Handy?",
-            "hinweis": "Die echte Zeit steht in den Einstellungen, meist unter „Bildschirmzeit“ oder „Digitales Wohlbefinden“ – nimm den Durchschnitt pro Tag. Die Zahlen bleiben bei dir."
+            "hinweis": "Die echte Zeit steht in den Einstellungen, meist unter „Bildschirmzeit“ oder „Digitales Wohlbefinden“. Die Zahlen bleiben bei dir."
           },
           {
             "art": "satzanfaenge",
@@ -593,7 +605,7 @@
             "art": "info",
             "symbol": "tipp",
             "titel": "Kein Handy – oder du willst nicht nachsehen?",
-            "text": "Dann arbeite mit Mila (13, erfunden). Sie schätzt: 2 Stunden am Tag. Ihr Handy zeigt: 4 Stunden 10 Minuten – Kurzvideos 1 Std. 50, Chats 1 Std. 20, Spiele 40 Min., Rest 20 Min. Am meisten abends im Bett."
+            "text": "Dann arbeite mit Mila (13, erfunden). Sie schätzt: 2 Stunden am Tag. Ihr Handy zeigt: über 4 Stunden – vor allem Kurzvideos und Chats, meistens abends im Bett."
           },
           {
             "art": "aufgabe",
@@ -620,7 +632,7 @@
             "art": "info",
             "symbol": "wissen",
             "titel": "So halten dich Apps fest",
-            "text": "Der Feed hört nie auf, Videos starten von selbst, rote Punkte und Flammen locken dich zurück. Ein Algorithmus merkt sich, wobei du hängen bleibst, und zeigt dir mehr davon. Wer die Tricks kennt, kann selbst entscheiden."
+            "text": "Der Feed hört nie auf, Videos starten von selbst, rote Punkte und Flammen locken dich zurück. Der Algorithmus zeigt dir mehr von dem, wobei du hängen bleibst. Wer die Tricks kennt, entscheidet selbst."
           },
           {
             "art": "info",
@@ -638,7 +650,7 @@
           {
             "art": "aufgabe",
             "text": "Hinter dem perfekten Bild: Was zeigt ein Bild – und was zeigt es nicht?",
-            "hinweis": "Nimm ein Bild aus dem Netz, eins von dir oder ein erfundenes. Das Beispiel von Lea ist erfunden."
+            "hinweis": "Nimm das Bild deiner Gruppe, ein Bild aus dem Netz oder ein erfundenes. Stichworte reichen. Das Beispiel von Lea ist erfunden."
           },
           {
             "art": "eisberg",
@@ -657,9 +669,9 @@
             "spalten": 3,
             "frei": 1,
             "items": [
-              "Push-Nachrichten aus",
-              "Autoplay ausschalten",
-              "Nachts kein Handy im Bett",
+              "Benachrichtigungen aus",
+              "Automatisches Abspielen aus",
+              "Kein Handy im Bett",
               "Hausaufgaben ohne Handy",
               "Essen ohne Handy",
               "Einem Konto entfolgen",
@@ -672,7 +684,7 @@
             "beispiele": [
               {
                 "wenn": "Wenn ich abends ins Bett gehe,",
-                "dann": "lege ich das Handy auf den Schreibtisch und stelle dort den Wecker."
+                "dann": "lege ich das Handy so weit weg, dass ich aufstehen müsste."
               }
             ]
           },
@@ -683,19 +695,19 @@
         "lehrer": {
           "ziel": "Die Jugendlichen vergleichen geschätzte und echte Bildschirmzeit, beobachten ihre Gefühle nach dem Scrollen, schauen hinter ein perfektes Bild und legen eine kleine, machbare Änderung fest.",
           "ablauf": [
-            "Einheit 25, Schritt 4 (18 Min.): Aufgabe 1 schätzen, dann nachsehen – nur, wenn die Hausordnung es erlaubt, sonst mit Mila; Aufgabe 2 mit dem Gefühlsrad.",
-            "Schritt 6 (4 Min.): Aufgabe 3 nach dem Rahmen-Experiment, zuerst Leas Beispiel lesen.",
-            "Schritt 7 (7 Min.): Aufgabe 4 nach dem Tafelbild – eine Änderung, ein Wenn-dann-Plan.",
+            "Einheit 25, Schritt 4 (18 Min.): Aufgabe 1 schätzen, dann nachsehen (drei Schritte an der Tafel) – nur, wenn die Regeln des Lycée es erlauben, sonst mit Mila; Aufgabe 2 mit dem Gefühlsrad.",
+            "Schritt 6 (5 Min.): Aufgabe 3 nach dem Rahmen-Experiment, zuerst Leas Beispiel lesen; Stichworte reichen.",
+            "Schritt 7 (6 Min.): Aufgabe 4 nach dem Tafelbild – eine Änderung, ein Wenn-dann-Plan.",
             "Zahlen und Plan bleiben privat; vorgelesen wird nur freiwillig."
           ],
-          "hintergrund": "Die Nutzung digitaler Medien hängt im Durchschnitt nur sehr schwach mit dem Wohlbefinden Jugendlicher zusammen (Orben & Przybylski, 2019); aussagekräftiger ist, was genutzt wird und wie man sich danach fühlt. Vergleiche mit bearbeiteten Bildern drücken die Stimmung (Fardouly et al., 2015). Wenn-dann-Pläne erhöhen die Chance, dass ein Vorhaben umgesetzt wird (Gollwitzer, 1999).",
+          "hintergrund": "Die Nutzung digitaler Medien hängt im Durchschnitt nur sehr schwach mit dem Wohlbefinden Jugendlicher zusammen (Orben & Przybylski, 2019); aussagekräftiger ist, was genutzt wird und wie man sich danach fühlt. In einem Experiment drückten schon zehn Minuten in einem sozialen Netzwerk die Stimmung junger Frauen (Fardouly et al., 2015). Wenn-dann-Pläne erhöhen die Chance, dass ein Vorhaben umgesetzt wird (Gollwitzer, 1999).",
           "quellen": [
             "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
             "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
             "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
           ],
           "achtung": "Hinweise auf Cybermobbing, Erpressung mit Bildern, Kontakte zu Fremden oder Essprobleme nicht vor der Klasse vertiefen: nach der Stunde ansprechen, noch am selben Tag den SePAS informieren.",
-          "material": "Schülerheft, Gefühlsrad; Handys nur nach der Hausordnung"
+          "material": "Schülerheft, Gefühlsrad; Handys nur nach den Regeln des Lycée"
         }
       },
       "fr": {
@@ -704,7 +716,7 @@
         "bausteine": [
           {
             "art": "text",
-            "text": "Le portable n’est pas l’ennemi. La vraie question : quand est-ce qu’il te fait du bien – et quand plutôt pas ? C’est toi qui le sais le mieux."
+            "text": "Le portable n’est pas l’ennemi. La vraie question : quand est-ce qu’il te fait du bien – et quand pas ?"
           },
           {
             "art": "info",
@@ -715,7 +727,7 @@
           {
             "art": "aufgabe",
             "text": "D’abord estimer, puis vérifier : combien de temps passes-tu sur ton portable un jour normal ?",
-            "hinweis": "Le temps réel se trouve dans les réglages, souvent sous « Temps d’écran » ou « Bien-être numérique » – prends la moyenne par jour. Les chiffres restent chez toi."
+            "hinweis": "Le temps réel se trouve dans les réglages, souvent sous « Temps d’écran » ou « Bien-être numérique ». Les chiffres restent chez toi."
           },
           {
             "art": "satzanfaenge",
@@ -730,7 +742,7 @@
             "art": "info",
             "symbol": "tipp",
             "titel": "Pas de portable – ou pas envie de vérifier ?",
-            "text": "Alors travaille avec Mila (13 ans, inventée). Elle estime : 2 heures par jour. Son portable affiche : 4 heures 10 – vidéos courtes 1 h 50, messageries 1 h 20, jeux 40 min, le reste 20 min. Surtout le soir, au lit."
+            "text": "Alors travaille avec Mila (13 ans, inventée). Elle estime : 2 heures par jour. Son portable affiche : plus de 4 heures – surtout des vidéos courtes et des messages, le plus souvent le soir, au lit."
           },
           {
             "art": "aufgabe",
@@ -757,7 +769,7 @@
             "art": "info",
             "symbol": "wissen",
             "titel": "Comment les applis te retiennent",
-            "text": "Le fil ne s’arrête jamais, les vidéos se lancent toutes seules, les pastilles rouges et les flammes te font revenir. Un algorithme retient ce qui t’accroche et t’en montre davantage. Qui connaît les astuces peut décider lui-même."
+            "text": "Le fil ne s’arrête jamais, les vidéos se lancent toutes seules, les pastilles rouges et les flammes te font revenir. L’algorithme te montre davantage de ce qui t’accroche. Quand on connaît les astuces, on décide soi-même."
           },
           {
             "art": "info",
@@ -775,7 +787,7 @@
           {
             "art": "aufgabe",
             "text": "Derrière l’image parfaite : qu’est-ce qu’une image montre – et qu’est-ce qu’elle ne montre pas ?",
-            "hinweis": "Prends une image vue en ligne, une de toi ou une image inventée. L’exemple de Lea est inventé."
+            "hinweis": "Prends l’image de ton îlot, une image vue en ligne ou une image inventée. Des mots-clés suffisent. L’exemple de Lea est inventé."
           },
           {
             "art": "eisberg",
@@ -796,7 +808,7 @@
             "items": [
               "Couper les notifications",
               "Couper la lecture auto",
-              "Portable hors de la chambre",
+              "Pas de portable au lit",
               "Devoirs sans portable",
               "Repas sans portable",
               "Ne plus suivre un compte",
@@ -810,8 +822,8 @@
             "zeilen": 1,
             "beispiele": [
               {
-                "wenn": "Si c’est l’heure de dormir,",
-                "dann": "je pose mon portable sur le bureau et je règle le réveil là-bas."
+                "wenn": "Si c’est l’heure d’aller au lit,",
+                "dann": "je pose mon portable assez loin pour devoir me lever."
               }
             ]
           },
@@ -822,19 +834,19 @@
         "lehrer": {
           "ziel": "Les jeunes comparent leur temps d’écran estimé et réel, observent ce qu’ils ressentent après avoir scrollé, regardent derrière une image parfaite et fixent un petit changement réaliste.",
           "ablauf": [
-            "Séance 25, étape 4 (18 min) : exercice 1, estimer puis vérifier – seulement si le règlement intérieur le permet, sinon avec Mila ; exercice 2 avec la roue des émotions.",
-            "Étape 6 (4 min) : exercice 3 après l’expérience du cadre, lire d’abord l’exemple de Lea.",
-            "Étape 7 (7 min) : exercice 4 après le tableau – un changement, un plan « si… alors ».",
+            "Séance 25, étape 4 (18 min) : exercice 1, estimer puis vérifier (trois étapes au tableau) – seulement si les règles du lycée le permettent, sinon avec Mila ; exercice 2 avec la roue des émotions.",
+            "Étape 6 (5 min) : exercice 3 après l’expérience du cadre, lire d’abord l’exemple de Lea ; des mots-clés suffisent.",
+            "Étape 7 (6 min) : exercice 4 après le tableau – un changement, un plan « si… alors ».",
             "Les chiffres et le plan restent privés ; on ne lit à voix haute que si on le souhaite."
           ],
-          "hintergrund": "En moyenne, l’usage des écrans n’est que très faiblement lié au bien-être des jeunes (Orben & Przybylski, 2019) ; ce qu’on utilise et comment on se sent après en dit davantage. Se comparer à des images retouchées fait baisser l’humeur (Fardouly et al., 2015). Les plans « si… alors » augmentent les chances qu’une intention soit mise en œuvre (Gollwitzer, 1999).",
+          "hintergrund": "En moyenne, l’usage des écrans n’est que très faiblement lié au bien-être des jeunes (Orben & Przybylski, 2019) ; ce qu’on utilise et comment on se sent après en dit davantage. Dans une expérience, dix minutes sur un réseau social ont suffi à faire baisser l’humeur de jeunes femmes (Fardouly et al., 2015). Les plans « si… alors » augmentent les chances qu’une intention soit mise en œuvre (Gollwitzer, 1999).",
           "quellen": [
             "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
             "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
             "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
           ],
           "achtung": "En cas de signes de cyberharcèlement, de chantage avec des images, de contacts avec des inconnus ou de problèmes alimentaires, ne pas approfondir devant la classe : en parler après le cours, informer le SePAS le jour même.",
-          "material": "Cahier de l’élève, roue des émotions ; portables seulement selon le règlement intérieur"
+          "material": "Cahier de l’élève, roue des émotions ; portables seulement selon les règles du lycée"
         }
       }
     }

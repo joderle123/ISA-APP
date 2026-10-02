@@ -48,7 +48,7 @@
         ],
         "material": [
           "Gefühlsrad-Plakat, 20 Klebepunkte",
-          "Fünf Tierschilder mit Bild (A4)",
+          "Fünf Tierschilder (A4)",
           "Treppen-Plakat (A2), abgedeckt",
           "Streit-Karten (Kopiervorlage)",
           "Schülerheft mit Ampelplan",
@@ -56,10 +56,10 @@
           "Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
-          "Tierschilder (Name und Skizze) in die vier Ecken und an die Tafel hängen; vorne Platz zum Spielen schaffen.",
-          "Treppen-Plakat zeichnen (Tabelle in Schritt 4) und abdecken.",
-          "Streit-Karten schneiden; Karten weglassen, die an einen echten Streit in der Klasse erinnern.",
-          "Beim Régent nachfragen, ob es offene Konflikte oder Hinweise auf Mobbing in der Klasse gibt; Beteiligte nicht in eine Szene setzen."
+          "Tierschilder in die vier Ecken und an die Tafel hängen; vorn Platz zum Spielen schaffen.",
+          "Treppen-Plakat (Tabelle in Schritt 4) und die drei Situationen aus Schritt 3 verdeckt vorbereiten.",
+          "Streit-Karten schneiden; was an einen echten Streit erinnert, weglassen; Namen tauschen, wenn jemand so heißt.",
+          "Beim Régent nachfragen, ob es offene Konflikte oder Mobbing in der Klasse gibt; Beteiligte nicht in eine Szene setzen."
         ],
         "ablauf": [
           {
@@ -125,10 +125,10 @@
             "titel": "Rückblick, Mission und neues Kapitel",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Kurz an die letzte Stunde erinnern: Ein Stopp wirkt, wenn Worte, Stimme und Körper dasselbe sagen. Per Daumen nach der Wochen-Mission fragen – hoch, Mitte, runter –, eine Stimme erzählt in einem Satz. Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was tue ich bei Streit, Gruppendruck und Mobbing? Die drei Stunden ankündigen: heute Streit, nächste Woche Druck von außen, danach Mobbing. Den Rahmen klären: Gespielt wird nur mit erfundenen Karten, nie ein echter Streit aus der Klasse.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor; kurz festhalten: Ein Stopp wirkt, wenn Worte, Stimme und Körper dasselbe sagen. Per Daumen nach der Wochen-Mission fragen – hoch, Mitte, runter –, eine Stimme erzählt in einem Satz. Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was tue ich bei Streit, Gruppendruck und Mobbing? Die drei Stunden ankündigen: heute Streit, nächste Woche Druck von außen, danach Mobbing. Den Rahmen klären: Gespielt wird nur mit erfundenen Karten, nie ein echter Streit aus der Klasse oder aus der Familie.",
             "sagen": [
               "Streit gehört zum Leben. Die Frage ist nicht, ob es kracht, sondern wie ihr wieder herauskommt.",
-              "Echte Streits aus dieser Klasse spielen wir nicht nach. Wenn euch einer beschäftigt, sprecht mich nach der Stunde an."
+              "Echte Streits aus dieser Klasse oder aus euren Familien spielen wir nicht nach. Wenn euch einer beschäftigt, sprecht mich nach der Stunde an."
             ],
             "tipp": "Eine Mission, die nicht geklappt hat, ist auch eine Auskunft. Wer den Daumen nach unten zeigt, muss nichts erklären."
           },
@@ -136,28 +136,28 @@
             "titel": "Welches Tier bin ich im Streit?",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Die fünf Tiere mit ihren Beschreibungen vorstellen (Liste, 3 Min.); die Schilder hängen in den vier Ecken und an der Tafel. Dann drei Runden: eine Streitsituation vorlesen und in drei Stichworten an die Tafel schreiben; alle gehen ohne Kommentar zu dem Tier, das am ehesten zu ihrer Reaktion passt (je 2 Min.). Nach jeder Runde laut spiegeln, wie sich die Klasse verteilt, und fragen, wer freiwillig einen Satz zu seiner Wahl sagen mag. Zurück am Platz kreuzt jede Person auf dem Blatt an, welches Tier sie mit wem ist (Aufgabe 1, 4 Min.); wer fertig ist, ergänzt die Sätze darunter. Festhalten: Kein Stil ist immer richtig – und die meisten sind je nach Gegenüber ein anderes Tier.",
+            "text": "Die fünf Tiere vorstellen (Liste, 3 Min.): Beschreibung vorlesen, das Zeichen vormachen, alle machen es einmal mit. Dann zwei Runden im Stehen: Situation an der Tafel aufdecken und vorlesen; alle gehen ohne Kommentar zu dem Tier, das am ehesten zu ihrer Reaktion passt. Laut spiegeln, wie sich die Klasse verteilt, und fragen, wer freiwillig einen Satz zu seiner Wahl sagen mag (je 3 Min.). Runde 3 vom Platz aus: Auf drei zeigen alle das Zeichen ihres Tiers (2 Min.). Dann Aufgabe 1 allein (4 Min.): Die Lehrkraft liest die Aufgabe vor und zeigt an der Tafel, wie man ankreuzt; wer fertig ist, ergänzt die Sätze darunter. Festhalten: Kein Stil ist immer richtig – und die meisten sind je nach Gegenüber ein anderes Tier.",
             "sagen": [
-              "Runde 1: Deine beste Freundin hat etwas weitererzählt, das nur für sie bestimmt war. Welches Tier bist du?",
-              "Runde 2: Dein Bruder oder deine Schwester hat ohne zu fragen deinen Pulli angezogen, jetzt ist er dreckig. Runde 3: Ein Lehrer gibt dir eine Note, die du ungerecht findest.",
+              "Die Tiere beschreiben, was ihr im Streit tut – nicht, wer ihr seid. Deshalb nennt hier niemand einen anderen Hai oder Teddybär.",
+              "Runde 1: Deine beste Freundin hat etwas weitererzählt, das nur für sie bestimmt war. Runde 2: Jemand drängelt sich in der Kantine vor dich. Runde 3: Ein Lehrer gibt dir eine Note, die du ungerecht findest.",
               "Wann ist die Schildkröte eigentlich klug? Und wann macht sie alles schlimmer?"
             ],
             "punkte": [
-              "Schildkröte: zieht sich zurück, weicht aus, sagt lieber nichts.",
-              "Hai: will gewinnen – egal, was es kostet.",
-              "Teddybär: gibt nach, damit wieder Ruhe ist.",
-              "Fuchs: sucht einen Kompromiss, bei dem beide ein Stück nachgeben.",
-              "Eule: sucht eine Lösung, mit der beide wirklich zufrieden sind."
+              "Schildkröte: zieht sich zurück, weicht aus, sagt lieber nichts. Zeichen: Hände über den Kopf wie ein Panzer.",
+              "Hai: will gewinnen – egal, was es kostet. Zeichen: flache Hand als Flosse auf den Kopf.",
+              "Teddybär: gibt nach, damit wieder Ruhe ist. Zeichen: die Arme um sich selbst legen.",
+              "Fuchs: sucht einen Kompromiss, bei dem beide ein Stück nachgeben. Zeichen: zwei Finger als spitze Ohren.",
+              "Eule: sucht eine Lösung, mit der beide wirklich zufrieden sind. Zeichen: Finger als Brille vor die Augen."
             ],
-            "tipp": "Viele merken hier zum ersten Mal, dass sie mit Freunden ein anderes Tier sind als zu Hause oder in der Schule. Das ausdrücklich würdigen: Wer den Stil wechseln kann, hat mehr Möglichkeiten. Die Lehrkraft stellt sich in jeder Runde ehrlich mit auf.",
-            "wennEsKippt": "Rennen alle aus Spaß zum Hai oder dorthin, wo die Beliebtesten stehen, gelassen fragen, was am Hai so attraktiv ist. Die nächste Runde dann im Sitzen mit geschlossenen Augen: Alle zeigen mit dem Arm zu ihrem Tier, die Lehrkraft zählt und nennt nur das Ergebnis. Wer nicht aufstehen möchte, zeigt vom Platz aus oder zählt mit der Lehrkraft die Verteilung.",
+            "tipp": "Viele merken hier zum ersten Mal, dass sie mit Freunden ein anderes Tier sind als mit Fremden oder Erwachsenen. Das ausdrücklich würdigen: Wer den Stil wechseln kann, hat mehr Möglichkeiten. Die Lehrkraft stellt sich in jeder Runde ehrlich mit auf.",
+            "wennEsKippt": "Rennen alle aus Spaß zum Hai oder dorthin, wo die Beliebtesten stehen, gelassen fragen, was am Hai so attraktiv ist; die nächste Runde dann vom Platz aus mit dem Zeichen, Blick auf den Tisch. Ruft jemand einem anderen „Hai“ oder „Teddy“ hinterher, kurz stoppen: Die Tiere beschreiben, was man tut, nicht, wer man ist. Wer nicht aufstehen möchte, zeigt immer vom Platz aus.",
             "blatt": "ff7-streit-treppe"
           },
           {
             "titel": "Die Konflikt-Treppe",
             "dauer": 15,
             "phase": "input",
-            "text": "Die Geschichte „Das Plakat“ auf dem Blatt vorlesen und fragen, was passiert, wenn Léa mit 80 loslegt (2 Min.). Dann das Plakat aufdecken und die Stufen von unten nach oben erklären (Tabelle, 5 Min.). Bei jeder Stufe fragen, woher die Klasse sie kennt: Stufe 1 aus dem Ampelplan, Stufe 2 und 3 aus der Stunde zu Ich-Botschaften und Zuhören. Auf die drei Zahlen vom Check-in zeigen: Wer über seiner Grenze ist, schafft Stufe 2 kaum – deshalb steht das Runterkommen ganz unten. Dann schreiben die Paare zu jeder Stufe einen Satz für Léa (Aufgabe 2, 6 Min.); zum Schluss lesen zwei Paare ihre Treppe vor (2 Min.).",
+            "text": "Die Geschichte „Das Plakat“ auf dem Blatt vorlesen und fragen, was passiert, wenn Léa mit 80 loslegt (2 Min.). Dann das Plakat aufdecken und die Stufen von unten nach oben erklären (Tabelle, 5 Min.); die Beispielsätze gehören zu einer anderen Lage: Der Tischnachbar nimmt ständig Stifte, ohne zu fragen. Bei jeder Stufe fragen, woher die Klasse sie kennt: Stufe 1 aus dem Ampelplan, Stufe 2 und 3 aus der Stunde zu Ich-Botschaften und Zuhören. Auf die drei Zahlen vom Check-in zeigen: Wer über seiner Grenze ist, schafft Stufe 2 kaum – deshalb steht das Runterkommen ganz unten. Dann finden die Paare Sätze für Léa auf Stufe 1 bis 3: erst sagen, dann in Stichworten aufschreiben (Aufgabe 2, 6 Min.); wer schneller ist, macht Stufe 4 und 5. Zum Schluss lesen zwei Paare vor (2 Min.).",
             "sagen": [
               "Warum steht das Runterkommen ganz unten und nicht irgendwo in der Mitte?",
               "Welche Stufe überspringt ihr im echten Leben am häufigsten?"
@@ -170,15 +170,15 @@
               "zeilen": [
                 [
                   "1 Stopp und runterkommen",
-                  "„Ich brauch kurz fünf Minuten. Dann reden wir.“"
+                  "„Stopp. Ich brauch kurz fünf Minuten, dann reden wir.“"
                 ],
                 [
                   "2 Ich-Botschaft",
-                  "„Ich ärgere mich, weil ich fast alles allein gemacht habe.“"
+                  "„Ich ärgere mich, wenn meine Stifte weg sind. Ich wünsche mir, dass du vorher fragst.“"
                 ],
                 [
                   "3 Zuhören",
-                  "„Du meinst also, du wusstest nicht, was du machen sollst?“"
+                  "„Du meinst also, du hattest deine zu Hause vergessen?“"
                 ],
                 [
                   "4 Lösungen sammeln",
@@ -186,21 +186,21 @@
                 ],
                 [
                   "5 Einigen",
-                  "„Okay, wir probieren das bis Freitag und schauen dann.“"
+                  "„Okay: Du fragst vorher, ich leih sie dir. Freitag schauen wir, ob es klappt.“"
                 ]
               ]
             },
             "tipp": "Die Treppe als Geländer anbieten, nicht als Pflichtprogramm: Wer merkt, dass es wieder kippt, geht zurück auf Stufe 1. Das ist kein Scheitern, sondern der Weg, der funktioniert.",
-            "wennEsKippt": "Kommt der Einwand „So redet doch keiner“, zustimmen und fragen, wie derselbe Gedanke in eurer Sprache klingt; die Sätze der Klasse ersetzen die Beispielsätze. Wer mit dem Schreiben nicht weiterkommt, schreibt Stufe 1 und 2 und sagt den Rest der Person daneben.",
+            "wennEsKippt": "Kommt der Einwand „So redet doch keiner“, zustimmen und fragen, wie derselbe Gedanke in eurer Sprache klingt; die Sätze der Klasse ersetzen die Beispielsätze. Wer mit dem Schreiben nicht weiterkommt, sagt den Satz, und die Partnerin oder der Partner schreibt Stichworte auf.",
             "blatt": "ff7-streit-treppe"
           },
           {
             "titel": "Bewegungspause: Alle reden gleichzeitig",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen auf und suchen sich eine Person auf der anderen Seite des Raums. Runde 1: Auf ein Zeichen erzählen sich beide gleichzeitig 20 Sekunden lang, was sie machen würden, wenn morgen schulfrei wäre. Dann fragen: Was hat euer Gegenüber erzählt? Runde 2 mit einer neuen Person: Eine Person erzählt 20 Sekunden, die andere wiederholt in einem Satz, was sie gehört hat; dann umgekehrt. Zum Schluss fragen, was den Unterschied gemacht hat – das ist Stufe 3 der Treppe. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Alle stehen auf und gehen kreuz und quer durch den Raum; bei „Stopp“ bildet jede Person ein Paar mit der nächsten Person, zu dritt geht auch. Runde 1: Rücken zueinander, ohne sich zu berühren; auf ein Zeichen erzählen beide gleichzeitig 20 Sekunden lang, was sie machen würden, wenn morgen schulfrei wäre – in jeder Sprache. Umdrehen: Was hat dein Gegenüber erzählt? Weitergehen, neues Paar. Runde 2 von Angesicht zu Angesicht: Eine Person erzählt 20 Sekunden, die andere wiederholt in einem Satz, was sie gehört hat; dann umgekehrt. Mit dem Ruhezeichen zurück an die Plätze und fragen, was den Unterschied gemacht hat – das ist Stufe 3 der Treppe. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
             "sagen": [
-              "Auf drei redet ihr beide gleichzeitig – und zwar die ganzen 20 Sekunden.",
+              "Auf drei redet ihr beide gleichzeitig, Rücken zueinander – und zwar die ganzen 20 Sekunden.",
               "Was hat euer Gegenüber erzählt? Nichts verstanden? Genau darum geht es."
             ],
             "tipp": "Laut wird es nur 20 Sekunden lang; die Tür schließen oder die Nachbarklasse kurz vorwarnen. Wer Lärm schlecht aushält, übernimmt die Stoppuhr und gibt das Zeichen."
@@ -209,12 +209,12 @@
             "titel": "Streit-Karten: Szenen proben",
             "dauer": 10,
             "phase": "uebung",
-            "text": "Jede Tischgruppe zieht eine Streit-Karte und verteilt vier Rollen: A und B spielen, die Treppenwache hält das Blatt mit der Treppe und ruft die Stufen aus oder zeigt sie mit den Fingern, die Beobachtung merkt sich den Satz, der etwas verändert. Die Spielregeln gemeinsam lesen (Liste, 2 Min.). Dann proben alle Gruppen gleichzeitig (8 Min.): zuerst Version 1, so wie ein solcher Streit oft läuft, höchstens eine Minute; dann Version 2 mit der Treppe, Stufe für Stufe. Wer früher fertig ist, spielt Version 2 noch einmal mit getauschten Rollen. Herumgehen und bei jeder Gruppe nachfragen, welcher Satz auf Stufe 2 und 3 kommt.",
+            "text": "Jede Tischgruppe zieht eine Streit-Karte und verteilt vier Rollen: A und B spielen, die Treppenwache hält das Blatt mit der Treppe und ruft die Stufen aus, die Beobachtung merkt sich den Satz, der etwas verändert. Die Spielregeln gemeinsam lesen (Liste, 1 Min.). Dann zeigt die Lehrkraft, wie Version 2 aussieht (2 Min.): mit einer freiwilligen Person oder allein mit zwei Stühlen, an der Lage vom Plakat; die Klasse zeigt mit den Fingern die Stufe. Danach proben alle Gruppen gleichzeitig (7 Min.): zuerst Version 1, so wie ein solcher Streit oft läuft, höchstens eine Minute; dann Version 2, Stufe für Stufe. Herumgehen und bei jeder Gruppe nachfragen, welcher Satz auf Stufe 2 und 3 kommt.",
             "sagen": [
               "Version 1 kennt ihr aus dem echten Leben – gern übertrieben, aber ohne Schimpfwörter. Version 2 ist die Treppe."
             ],
             "punkte": [
-              "Wir spielen nur die Karte: keine echten Namen, keine Streits aus der Klasse.",
+              "Wir spielen nur die Karte: keine echten Namen, keine Streits aus der Klasse oder aus der Familie.",
               "Laut darf es werden, verletzend nicht: keine Schimpfwörter, nichts über Familie oder Aussehen.",
               "Keine Berührung, auch nicht im Spiel.",
               "Die Treppenwache darf jederzeit „Stopp“ rufen – dann friert die Szene ein.",
@@ -228,21 +228,21 @@
             "titel": "Zweimal derselbe Streit",
             "dauer": 25,
             "phase": "uebung",
-            "text": "Die Gruppen spielen nacheinander vorn, je etwa vier Minuten: Version 1 nur so lange, bis die Treppenwache „Stopp“ ruft, dann Version 2. Während Version 2 zeigt das Publikum mit den Fingern, auf welcher Stufe die Szene gerade ist. Nach jeder Szene nennt die Beobachtung den Satz, der etwas verändert hat – oder schreibt ihn auf, und die Lehrkraft liest vor; eine zuschauende Gruppe ergänzt. Dann steigen alle aus der Rolle aus. Die Sätze, die einen Streit gedreht haben, kommen neben das Treppen-Plakat. Reicht die Zeit nicht für alle fünf Gruppen, spielt die letzte nur Version 2.",
+            "text": "Die Gruppen spielen nacheinander vorn, je höchstens vier Minuten mit Stoppuhr: Version 1 nur so lange, bis die Treppenwache „Stopp“ ruft, dann Version 2. Während Version 2 zeigt das Publikum mit den Fingern, auf welcher Stufe die Szene gerade ist. Nach jeder Szene nennt die Beobachtung den Satz, der etwas verändert hat – oder schreibt ihn auf, und die Lehrkraft liest vor; eine zuschauende Gruppe ergänzt. Dann steigen alle aus der Rolle aus: ausschütteln, den eigenen Namen sagen. Die Sätze, die einen Streit gedreht haben, kommen neben das Treppen-Plakat. Reicht die Zeit nicht für alle fünf Gruppen, spielt die letzte nur Version 2.",
             "sagen": [
               "Stopp. Wo genau ist es gerade gekippt?",
               "Welcher Satz hat bei euch etwas verändert?",
               "Welche Version würdet ihr lieber erleben – und welche kennt ihr besser?"
             ],
-            "tipp": "Die erste Version kurz halten und die meiste Zeit in die zweite stecken. Hängt eine Szene fest, einfrieren und das Publikum fragen, welche Stufe gerade fehlt. In der ersten Szene kann die Lehrkraft B spielen; dann sehen alle, wie ernst es gemeint ist.",
-            "wennEsKippt": "Wird eine Szene zu echt – jemand wird persönlich oder spielt erkennbar einen Streit aus der Klasse nach –, freundlich abbrechen, aus der Rolle holen und die Karte wechseln. Echte Konflikte werden nicht im Rollenspiel gelöst, sondern später in einem Gespräch mit Régent oder Éducateur. Lacht das Publikum über Spielende, auf die Klassenvereinbarung zeigen: Wir lachen miteinander, nicht übereinander.",
+            "tipp": "Die erste Version kurz halten und die meiste Zeit in die zweite stecken. Hängt eine Szene fest, einfrieren und das Publikum fragen, welche Stufe gerade fehlt. Nach jeder Szene Applaus, bevor jemand etwas sagt: Wer vorn spielt, traut sich etwas.",
+            "wennEsKippt": "Wird eine Szene zu echt – jemand wird persönlich oder spielt erkennbar einen Streit aus der Klasse nach –, freundlich abbrechen, aus der Rolle holen und die Karte wechseln; echte Konflikte gehören in ein späteres Gespräch mit Régent oder Éducateur. Lacht das Publikum über Spielende, auf die Klassenvereinbarung zeigen: Wir lachen miteinander, nicht übereinander. Will eine Gruppe nicht nach vorn, spielt sie am eigenen Tisch im Sitzen, und die anderen drehen sich um.",
             "blatt": "ff7-streit-karten"
           },
           {
             "titel": "Skill: Faire Auszeit",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: Jetzt kommt ein Skill für Stufe 1 – für den Moment, in dem ihr merkt, dass ihr über eure Grenze rutscht. Anders als bei der Schildkröte wird eine faire Auszeit angesagt und hat ein Ende; im Unterricht heißt das: die Lehrkraft fragen oder am Platz atmen, nicht einfach hinausgehen. Alle schlagen ihren Ampelplan im Heft auf, suchen bei Gelb und Rot einen Skill, der auch mitten im Streit geht, und machen einen Stern daneben (2 Min.). Dann die drei Schritte vorlesen (Liste) und üben: den Satz einmal gemeinsam halblaut sagen, danach zwei Runden Kastenatmung im Sitzen – vier Sekunden ein, vier halten, vier aus, vier halten; leise mitzählen und mitmachen (4 Min.). Zum Schluss zwei, drei Stimmen: Wo könnte euch die faire Auszeit helfen?",
+            "text": "Ankündigen: ein Skill für Stufe 1 – für den Moment, in dem ihr merkt, dass ihr über eure Grenze rutscht. Anders als bei der Schildkröte wird eine faire Auszeit angesagt und hat ein Ende; im Unterricht heißt das: die Lehrkraft fragen oder am Platz atmen, nicht einfach hinausgehen. Alle suchen in ihrem Ampelplan bei Gelb und Rot einen Skill, der auch mitten im Streit geht, und machen einen Stern daneben (2 Min.). Die Lehrkraft macht die drei Schritte einmal vor (Liste, 1 Min.). Zu zweit (2 Min.): A liest den Startsatz der Streit-Karte vor, B sagt die Ansage in eigenen Worten; dann tauschen. Danach zwei Runden Kastenatmung im Sitzen – vier Sekunden ein, vier halten, vier aus, vier halten; leise mitzählen und mitmachen (3 Min.). Zum Schluss zwei, drei Stimmen: Wo könnte euch die faire Auszeit helfen?",
             "sagen": [
               "Die Schildkröte verschwindet und kommt nicht wieder. Wer eine faire Auszeit nimmt, sagt, wann er zurück ist.",
               "Von 80 auf 0 schafft niemand in einer Minute. Von 80 auf 60 reicht für Stufe 2."
@@ -253,34 +253,34 @@
               "Zurückkommen: zur abgemachten Zeit wieder da sein und mit einer Ich-Botschaft weitermachen."
             ],
             "tipp": "Wer seinen Ampelplan nicht dabeihat oder ihn in Einheit 17 nicht fertig bekommen hat, schreibt den Skill auf Stufe 1 des Treppen-Blatts. Den Auszeit-Satz an der Tafel stehen lassen: Er hilft auch bei echten Streits in der Klasse, und die Lehrkraft kann ihn selbst vormachen.",
-            "wennEsKippt": "Wird beim gemeinsamen Satz gealbert, ihn einfach flüstern lassen. Wer das Luftanhalten unangenehm findet, lässt es weg und atmet nur langsam aus. Niemand muss die Augen schließen.",
+            "wennEsKippt": "Wird bei der Partnerübung gealbert, die Ansage flüstern lassen. Wer das Luftanhalten unangenehm findet, lässt es weg und atmet nur langsam aus. Niemand muss die Augen schließen.",
             "blatt": "ff7-skills-koffer"
           },
           {
             "titel": "Skills-Pass, Tier-Blitzlicht und Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Welche Stufe der Treppe fällt mir am schwersten – und was hilft mir dabei? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel. Blitzlicht ohne Worte (1 Min.): Auf drei zeigen alle auf das Tier, das sie im nächsten Streit öfter sein möchten. Zum Schluss die Wochen-Mission ansagen (steht im Heft) und den Ausblick auf die nächste Stunde geben.",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Welche Stufe der Treppe fällt mir am schwersten – und was hilft mir dabei? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel. Blitzlicht ohne Worte (1 Min.): Auf drei zeigen alle das Zeichen des Tiers, das sie im nächsten Streit öfter sein möchten. Zum Schluss die Wochen-Mission ansagen (steht im Heft) und den Ausblick auf die nächste Stunde geben.",
             "sagen": [
-              "Zeigt auf drei auf das Tier, das ihr im nächsten Streit öfter sein wollt."
+              "Auf drei: das Zeichen des Tiers, das ihr im nächsten Streit öfter sein wollt."
             ],
             "tipp": "Wer möchte, schreibt den Auszeit-Satz in den Skills-Pass – auch das ist ein guter Satz zum Mitnehmen."
           }
         ],
         "bruecke": "Nächste Woche geht es um Druck von außen: Was macht ihr, wenn alle etwas wollen, das ihr selbst nicht wollt – auf dem Pausenhof oder im Klassenchat?",
         "mission": "Wenn es diese Woche kracht: Probiere einmal die faire Auszeit – ansagen, runterkommen, zurückkommen. Oder beobachte nur, welches Tier du im Streit bist.",
-        "hintergrund": "Streit gehört zum Jugendalter; entscheidend ist, wie er ausgetragen wird. Thomas und Kilmann (1974) ordnen Konfliktverhalten nach zwei Fragen: Wie stark verfolgt jemand die eigenen Anliegen, wie stark die der anderen? Daraus ergeben sich fünf Stile – Konkurrieren (Hai), Vermeiden (Schildkröte), Entgegenkommen (Teddybär), Kompromiss (Fuchs) und Zusammenarbeiten (Eule). Keiner ist immer richtig; hilfreich ist, wählen zu können. Konflikte eskalieren in Stufen, und je früher die Beteiligten aussteigen, desto eher gelingt eine Lösung, bei der beide gewinnen (Glasl, 1980). Die Konflikt-Treppe stellt deshalb das Runterkommen an den Anfang und folgt dann der niederlagelosen Methode von Gordon (1972): Ich-Botschaft, Zuhören, gemeinsam Lösungen suchen. Sie setzt ungefähr gleich starke Seiten voraus; bei Mobbing braucht es Schutz und Erwachsene, keine Verhandlung.",
+        "hintergrund": "Streit gehört zum Jugendalter; entscheidend ist, wie er ausgetragen wird. Thomas und Kilmann (1974) ordnen Konfliktverhalten nach zwei Fragen: Wie stark verfolgt jemand die eigenen Anliegen, wie stark die der anderen? Daraus ergeben sich fünf Stile – Konkurrieren, Vermeiden, Entgegenkommen, Kompromiss und Zusammenarbeiten; die Tiere (Hai, Schildkröte, Teddybär, Fuchs, Eule) sind ein verbreitetes Merkbild aus der Schulpraxis. Keiner ist immer richtig; hilfreich ist, wählen zu können. Konflikte eskalieren in Stufen, und je früher die Beteiligten aussteigen, desto eher gelingt eine Lösung, bei der beide gewinnen (Glasl, 1980). Die Konflikt-Treppe stellt deshalb das Runterkommen an den Anfang und folgt dann der niederlagelosen Methode von Gordon (1972): Ich-Botschaft, Zuhören, gemeinsam Lösungen suchen. Sie setzt ungefähr gleich starke Seiten voraus; bei Mobbing braucht es Schutz und Erwachsene, keine Verhandlung.",
         "quellen": [
           "Thomas, K. W. & Kilmann, R. H. (1974). Thomas-Kilmann Conflict Mode Instrument. Tuxedo, NY: Xicom.",
           "Glasl, F. (1980). Konfliktmanagement. Bern: Haupt.",
           "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe."
         ],
-        "achtung": "Gespielt werden nur die erfundenen Karten, nie ein echter Streit aus der Klasse; wer gerade wirklich Streit hat, kommt nicht in dieselbe Szene. Offene Konflikte nicht im Plenum verhandeln, sondern ein Gespräch mit Régent oder Éducateur anbieten. Wird jemand immer wieder angegriffen, ist das kein Streit, sondern möglicherweise Mobbing: nicht in der Stunde klären, sondern mit Régent und SePAS nach dem Vorgehen der Schule. Erzählt jemand von Gewalt, nicht vertiefen, nach der Stunde sprechen und noch am selben Tag den SePAS informieren.",
+        "achtung": "Gespielt werden nur die erfundenen Karten, nie ein echter Streit aus Klasse oder Familie; wer wirklich Streit hat, kommt nicht in dieselbe Szene. Offene Konflikte nicht im Plenum verhandeln, sondern ein Gespräch mit Régent oder Éducateur anbieten. Wird jemand immer wieder angegriffen, ist das möglicherweise Mobbing: nicht in der Stunde klären, sondern mit Régent und SePAS nach dem Vorgehen der Schule. Erzählt jemand von Gewalt, auch zu Hause, nicht vertiefen, nach der Stunde sprechen und am selben Tag den SePAS informieren; bei akuter Gefahr 112.",
         "differenzierung": {
-          "leichter": "Bei den Tieren reichen die Bilder auf den Schildern; die Beschreibungen liest eine Person der Tischgruppe vor. Für die Treppe stehen Satzanfänge an der Tafel: Ich brauch kurz … · Ich ärgere mich, weil … · Du meinst also … · Wir könnten … Wer mühsam schreibt, füllt nur Stufe 1 und 2 aus; wer die Unterrichtssprache noch lernt, darf in der eigenen Sprache schreiben und übernimmt im Rollenspiel die Treppenwache.",
+          "leichter": "Bei den Tieren helfen die Zeichen und die Schilder; die Beschreibungen liest die Lehrkraft vor. Für die Treppe stehen Satzanfänge an der Tafel: Ich brauch kurz … · Ich fühle mich …, wenn … · Du meinst also … · Wir könnten … Wer mühsam schreibt, sagt den Satz und schreibt nur Stichworte; wer die Unterrichtssprache noch lernt, darf in der eigenen Sprache schreiben und übernimmt im Rollenspiel die Treppenwache, die die Stufen mit den Fingern zeigt.",
           "schwerer": "Die Treppe auf einen Streit mit einer erwachsenen Person übertragen: Was ändert sich? Oder im Rollenspiel die Moderation übernehmen und bei jedem Stopp fragen, was die beiden eigentlich wollen – hinter dem, was sie fordern."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Streit-Grenze (5 Min.), Welches Tier bin ich im Streit? – eine Runde Aufstellen und Aufgabe 1 (10 Min.), die Konflikt-Treppe mit Léas Geschichte (12 Min.), eine Streit-Karte, von zwei Freiwilligen vor der Klasse zweimal gespielt (13 Min.), faire Auszeit (5 Min.), Skills-Pass und Mission (5 Min.). Bewegungspause und Rollenspiele in Tischgruppen entfallen."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Streit-Grenze (5 Min.), Welches Tier bin ich im Streit? – zwei Runden mit den Zeichen am Platz und Aufgabe 1 (10 Min.), die Konflikt-Treppe mit Léas Geschichte (12 Min.), eine Streit-Karte, von der Lehrkraft und einer freiwilligen Person vor der Klasse zweimal gespielt (13 Min.), faire Auszeit (5 Min.), Skills-Pass und Mission (5 Min.). Bewegungspause und Rollenspiele in Tischgruppen entfallen."
       },
       "fr": {
         "titel": "Résoudre les conflits",
@@ -288,12 +288,12 @@
         "ziele": [
           "associent leur façon de se disputer à cinq styles de conflit et constatent qu’elle dépend de la personne en face",
           "décrivent les cinq marches de l’escalier du conflit et trouvent une phrase pour chacune",
-          "rejouent deux fois une dispute du quotidien et repèrent la phrase qui l’a fait basculer",
+          "rejouent deux fois une dispute du quotidien et repèrent la phrase qui a tout changé",
           "choisissent dans leur plan feu tricolore un skill pour la marche 1 et s’entraînent au temps mort"
         ],
         "material": [
           "Roue des émotions, 20 gommettes",
-          "Cinq panneaux animaux illustrés (A4)",
+          "Cinq panneaux animaux (A4)",
           "Affiche de l’escalier (A2), cachée",
           "Cartes disputes (modèle)",
           "Cahier avec le plan feu tricolore",
@@ -301,10 +301,10 @@
           "Tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
-          "Accrocher les panneaux animaux (nom et croquis) dans les quatre coins et au tableau ; libérer de la place devant.",
-          "Dessiner l’affiche de l’escalier (tableau de l’étape 4) et la cacher.",
-          "Découper les cartes disputes ; écarter celles qui rappellent une vraie dispute de la classe.",
-          "Demander au régent s’il y a des conflits ouverts ou des signes de harcèlement dans la classe ; ne pas réunir les jeunes concernés dans une scène."
+          "Accrocher les panneaux animaux dans les quatre coins et au tableau ; libérer de la place devant.",
+          "Préparer l’affiche de l’escalier (tableau de l’étape 4) et les trois situations de l’étape 3, cachées au tableau.",
+          "Découper les cartes disputes ; écarter ce qui rappelle une vraie dispute ; changer un prénom si un jeune le porte.",
+          "Demander au régent s’il y a des conflits ou du harcèlement dans la classe ; ne pas réunir les jeunes concernés."
         ],
         "ablauf": [
           {
@@ -370,10 +370,10 @@
             "titel": "Retour, mission et nouveau chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Rappeler brièvement la dernière séance : un stop fonctionne quand les mots, la voix et le corps disent la même chose. Demander avec le pouce où en est la mission de la semaine – en haut, au milieu, en bas ; une voix raconte en une phrase. Ouvrir ensuite le nouveau chapitre et écrire la question clé au tableau : que faire face aux disputes, à la pression du groupe et au harcèlement ? Annoncer les trois séances : aujourd’hui les disputes, la semaine prochaine la pression des autres, ensuite le harcèlement. Poser le cadre : on ne joue que des cartes inventées, jamais une vraie dispute de la classe.",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance ; retenir brièvement : un stop fonctionne quand les mots, la voix et le corps disent la même chose. Demander avec le pouce où en est la mission de la semaine – en haut, au milieu, en bas ; une voix raconte en une phrase. Ouvrir ensuite le nouveau chapitre et écrire la question clé au tableau : que faire face aux disputes, à la pression du groupe et au harcèlement ? Annoncer les trois séances : aujourd’hui les disputes, la semaine prochaine la pression des autres, ensuite le harcèlement. Poser le cadre : on ne joue que des cartes inventées, jamais une vraie dispute de la classe ou de la famille.",
             "sagen": [
               "Les disputes font partie de la vie. La question, ce n’est pas de savoir si ça va chauffer, mais comment vous en sortez.",
-              "On ne rejoue pas de vraies disputes de cette classe. Si l’une d’elles vous travaille, venez me voir après le cours."
+              "On ne rejoue pas de vraies disputes de cette classe ni de vos familles. Si l’une d’elles vous travaille, venez me voir après le cours."
             ],
             "tipp": "Une mission qui n’a pas marché, c’est aussi une information. Qui montre le pouce en bas n’a rien à expliquer."
           },
@@ -381,28 +381,28 @@
             "titel": "Quel animal suis-je dans une dispute ?",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Présenter les cinq animaux et leur description (liste, 3 min) ; les panneaux sont accrochés dans les quatre coins et au tableau. Puis trois tours : lire une situation de dispute et l’écrire en trois mots-clés au tableau ; chacun va, sans commentaire, vers l’animal qui correspond le mieux à sa réaction (2 min par tour). Après chaque tour, dire à voix haute comment la classe se répartit et demander qui veut dire une phrase sur son choix. De retour à sa place, chacun coche sur la fiche quel animal il est avec qui (exercice 1, 4 min) ; qui a fini complète les phrases en dessous. Retenir : aucun style n’est toujours le bon – et la plupart d’entre nous changent d’animal selon la personne en face.",
+            "text": "Présenter les cinq animaux (liste, 3 min) : lire la description, montrer le geste, tout le monde le fait une fois. Puis deux tours debout : découvrir une situation au tableau et la lire ; chacun va, sans commentaire, vers l’animal qui correspond le mieux à sa réaction. Dire à voix haute comment la classe se répartit et demander qui veut dire une phrase sur son choix (3 min par tour). Tour 3 depuis sa place : à trois, chacun fait le geste de son animal (2 min). Puis l’exercice 1, seul (4 min) : lire la consigne à voix haute et montrer au tableau comment cocher ; qui a fini complète les phrases en dessous. Retenir : aucun style n’est toujours le bon – et la plupart d’entre nous changent d’animal selon la personne en face.",
             "sagen": [
-              "Tour 1 : ta meilleure amie a répété quelque chose qui n’était que pour elle. Quel animal es-tu ?",
-              "Tour 2 : ton frère ou ta sœur a mis ton pull sans demander, et maintenant il est sale. Tour 3 : un prof te met une note que tu trouves injuste.",
+              "Les animaux décrivent ce que vous faites dans une dispute – pas qui vous êtes. Donc ici, personne ne traite quelqu’un d’autre de requin ou de nounours.",
+              "Tour 1 : ta meilleure amie a répété quelque chose qui n’était que pour elle. Tour 2 : quelqu’un te passe devant dans la file de la cantine. Tour 3 : un prof te met une note que tu trouves injuste.",
               "Quand est-ce que la tortue est maligne, en fait ? Et quand est-ce qu’elle aggrave tout ?"
             ],
             "punkte": [
-              "Tortue : se retire, évite, préfère ne rien dire.",
-              "Requin : veut gagner – peu importe le prix.",
-              "Nounours : cède pour que le calme revienne.",
-              "Renard : cherche un compromis où chacun lâche un peu.",
-              "Chouette : cherche une solution qui convient vraiment aux deux."
+              "Tortue : se retire, évite, préfère ne rien dire. Geste : les mains sur la tête, comme une carapace.",
+              "Requin : veut gagner – peu importe le prix. Geste : la main à plat sur la tête, comme un aileron.",
+              "Nounours : cède pour que le calme revienne. Geste : se serrer dans ses propres bras.",
+              "Renard : cherche un compromis où chacun lâche un peu. Geste : deux doigts en oreilles pointues.",
+              "Chouette : cherche une solution qui convient vraiment aux deux. Geste : les doigts en lunettes devant les yeux."
             ],
-            "tipp": "Beaucoup remarquent ici pour la première fois qu’ils ne sont pas le même animal avec leurs amis, à la maison ou à l’école. Le souligner : qui sait changer de style a plus de possibilités. L’enseignant·e se place honnêtement à chaque tour.",
-            "wennEsKippt": "Si tout le monde court vers le requin pour rire, ou là où se trouvent les plus populaires, demander calmement ce qui attire tant chez le requin. Faire le tour suivant assis, les yeux fermés : chacun tend le bras vers son animal, l’enseignant·e compte et ne donne que le résultat. Qui ne veut pas se lever montre depuis sa place ou compte la répartition avec l’adulte.",
+            "tipp": "Beaucoup remarquent ici pour la première fois qu’ils ne sont pas le même animal avec leurs amis, avec des inconnus ou avec des adultes. Le souligner : qui sait changer de style a plus de possibilités. Se placer honnêtement à chaque tour, comme la classe.",
+            "wennEsKippt": "Si tout le monde court vers le requin pour rire, ou là où se trouvent les plus populaires, demander calmement ce qui attire tant chez le requin ; faire le tour suivant depuis les places, avec le geste, les yeux sur la table. Si quelqu’un lance « Requin ! » ou « Nounours ! » à un autre, arrêter brièvement : les animaux décrivent ce qu’on fait, pas qui on est. Qui ne veut pas se lever montre toujours depuis sa place.",
             "blatt": "ff7-streit-treppe"
           },
           {
             "titel": "L’escalier du conflit",
             "dauer": 15,
             "phase": "input",
-            "text": "Lire l’histoire « L’affiche » sur la fiche et demander ce qui se passe si Léa démarre à 80 (2 min). Découvrir ensuite l’affiche et expliquer les marches de bas en haut (tableau, 5 min). À chaque marche, demander d’où la classe la connaît : la marche 1 du plan feu tricolore, les marches 2 et 3 de la séance sur les messages en « je » et l’écoute. Montrer les trois chiffres du tour d’humeur : au-dessus de sa limite, on n’arrive presque plus à la marche 2 – c’est pour ça que redescendre est tout en bas. Puis, à deux, les jeunes écrivent une phrase pour Léa à chaque marche (exercice 2, 6 min) ; pour finir, deux binômes lisent leur escalier (2 min).",
+            "text": "Lire l’histoire « L’affiche » sur la fiche et demander ce qui se passe si Léa démarre à 80 (2 min). Découvrir ensuite l’affiche et expliquer les marches de bas en haut (tableau, 5 min) ; les phrases d’exemple viennent d’une autre situation : le voisin de table prend sans arrêt des stylos sans demander. À chaque marche, demander d’où la classe la connaît : la marche 1 du plan feu tricolore, les marches 2 et 3 de la séance sur les messages en « je » et l’écoute. Montrer les trois chiffres du tour d’humeur : au-dessus de sa limite, on n’arrive presque plus à la marche 2 – c’est pour ça que redescendre est tout en bas. Puis, à deux, les jeunes trouvent des phrases pour Léa aux marches 1 à 3 : d’abord les dire, puis les noter en mots-clés (exercice 2, 6 min) ; les plus rapides font les marches 4 et 5. Pour finir, deux binômes lisent leurs phrases (2 min).",
             "sagen": [
               "Pourquoi est-ce que redescendre est tout en bas, et pas quelque part au milieu ?",
               "Quelle marche est-ce que vous sautez le plus souvent dans la vraie vie ?"
@@ -410,20 +410,20 @@
             "tabelle": {
               "spalten": [
                 "Marche",
-                "Ça peut donner"
+                "Ce qu’on peut dire"
               ],
               "zeilen": [
                 [
                   "1 Stop et redescendre",
-                  "« J’ai besoin de cinq minutes. Après, on en parle. »"
+                  "« Stop. J’ai besoin de cinq minutes, après on en parle. »"
                 ],
                 [
                   "2 Message en « je »",
-                  "« Je suis énervée, parce que j’ai presque tout fait toute seule. »"
+                  "« Je suis agacé quand mes stylos disparaissent. J’aimerais que tu demandes avant. »"
                 ],
                 [
                   "3 Écouter",
-                  "« Si je comprends bien, tu ne savais pas quoi faire ? »"
+                  "« Si je comprends bien, tu avais oublié les tiens à la maison ? »"
                 ],
                 [
                   "4 Chercher des solutions",
@@ -431,21 +431,21 @@
                 ],
                 [
                   "5 Se mettre d’accord",
-                  "« D’accord, on essaie comme ça jusqu’à vendredi et on refait le point. »"
+                  "« D’accord : tu demandes avant, et je te les prête. Vendredi, on voit si ça marche. »"
                 ]
               ]
             },
-            "tipp": "Présenter l’escalier comme une rampe, pas comme un programme obligatoire : qui sent que ça repart redescend à la marche 1. Ce n’est pas un échec, c’est le chemin qui marche.",
-            "wennEsKippt": "Si quelqu’un objecte : « Personne ne parle comme ça », lui donner raison et demander comment la même idée sonnerait avec vos mots ; les phrases de la classe remplacent les exemples. Qui bloque à l’écrit note les marches 1 et 2 et dit le reste à son voisin.",
+            "tipp": "Présenter l’escalier comme une rampe, pas comme un programme obligatoire : qui sent que ça repart redescend à la marche 1. Ce n’est pas un échec – c’est comme ça que ça marche.",
+            "wennEsKippt": "Si quelqu’un objecte : « Personne ne parle comme ça », lui donner raison et demander comment la même idée sonnerait avec vos mots ; les phrases de la classe remplacent les exemples. Qui bloque à l’écrit dit la phrase, et son binôme la note en mots-clés.",
             "blatt": "ff7-streit-treppe"
           },
           {
             "titel": "Pause active : tout le monde parle en même temps",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se lève et va trouver quelqu’un de l’autre côté de la salle. Tour 1 : au signal, les deux racontent en même temps, pendant 20 secondes, ce qu’ils feraient si demain il n’y avait pas cours. Puis demander : qu’est-ce que l’autre a raconté ? Tour 2 avec une nouvelle personne : l’un raconte pendant 20 secondes, l’autre répète en une phrase ce qu’il a entendu ; puis on inverse. Pour finir, demander ce qui a fait la différence – c’est la marche 3 de l’escalier. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Tout le monde se lève et marche dans la salle en tous sens ; au « Stop », chacun forme un binôme avec la personne la plus proche – à trois, c’est possible aussi. Tour 1 : dos à dos, sans se toucher ; au signal, les deux racontent en même temps, pendant 20 secondes, ce qu’ils feraient si demain il n’y avait pas cours – dans la langue de leur choix. Se retourner : qu’est-ce que l’autre a raconté ? Repartir, nouveau binôme. Tour 2, face à face : l’un raconte pendant 20 secondes, l’autre répète en une phrase ce qu’il a entendu ; puis on inverse. Retour aux places avec le signal de calme, puis demander ce qui a fait la différence – c’est la marche 3 de l’escalier. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
             "sagen": [
-              "À trois, vous parlez tous les deux en même temps – et pendant les 20 secondes entières.",
+              "À trois, vous parlez tous les deux en même temps, dos à dos – et pendant les 20 secondes entières.",
               "Qu’est-ce que l’autre a raconté ? Vous n’avez rien compris ? C’est exactement le but."
             ],
             "tipp": "Le bruit ne dure que 20 secondes ; fermer la porte ou prévenir la classe d’à côté. Un jeune que le bruit dérange tient le chronomètre et donne le signal."
@@ -454,12 +454,12 @@
             "titel": "Cartes disputes : préparer les scènes",
             "dauer": 10,
             "phase": "uebung",
-            "text": "Chaque îlot tire une carte dispute et se répartit quatre rôles : A et B jouent, le gardien de l’escalier tient la fiche avec l’escalier et annonce les marches ou les montre avec les doigts, l’observateur retient la phrase qui change quelque chose. Lire ensemble les règles du jeu (liste, 2 min). Puis tous les groupes répètent en même temps (8 min) : d’abord la version 1, comme ce genre de dispute tourne souvent, une minute au plus ; ensuite la version 2 avec l’escalier, marche par marche. Un groupe qui a fini plus tôt rejoue la version 2 en échangeant les rôles. Passer dans les îlots et demander quelle phrase vient aux marches 2 et 3.",
+            "text": "Chaque îlot tire une carte dispute et se répartit quatre rôles : A et B jouent, le gardien de l’escalier tient la fiche avec l’escalier et annonce les marches, l’observateur retient la phrase qui change quelque chose. Lire ensemble les règles du jeu (liste, 1 min). Montrer ensuite à quoi ressemble la version 2 (2 min) : avec un volontaire, ou seul en passant d’une chaise à l’autre, sur la situation de l’affiche ; la classe montre la marche avec les doigts. Puis tous les groupes répètent en même temps (7 min) : d’abord la version 1, comme ce genre de dispute tourne souvent, une minute au plus ; ensuite la version 2, marche par marche. Passer dans les îlots et demander quelle phrase vient aux marches 2 et 3.",
             "sagen": [
               "La version 1, vous la connaissez par cœur – vous pouvez exagérer, mais sans gros mots. La version 2, c’est l’escalier."
             ],
             "punkte": [
-              "On ne joue que la carte : pas de vrais prénoms, pas de disputes de la classe.",
+              "On ne joue que la carte : pas de vrais prénoms, pas de disputes de la classe ou de la famille.",
               "On peut parler fort, mais pas blesser : pas de gros mots, rien sur la famille ou l’apparence.",
               "On ne se touche pas, même pour jouer.",
               "Le gardien de l’escalier peut crier « Stop » à tout moment – la scène se fige.",
@@ -473,21 +473,21 @@
             "titel": "Deux fois la même dispute",
             "dauer": 25,
             "phase": "uebung",
-            "text": "Les groupes passent l’un après l’autre devant la classe, environ quatre minutes chacun : la version 1 seulement jusqu’à ce que le gardien de l’escalier crie « Stop », puis la version 2. Pendant la version 2, le public montre avec les doigts sur quelle marche se trouve la scène. Après chaque scène, l’observateur donne la phrase qui a changé quelque chose – ou l’écrit, et l’enseignant·e la lit ; un îlot spectateur complète. Puis tout le monde sort du rôle. Les phrases qui ont fait basculer une dispute vont à côté de l’affiche de l’escalier. Si le temps manque pour les cinq groupes, le dernier ne joue que la version 2.",
+            "text": "Les groupes passent l’un après l’autre devant la classe, quatre minutes au plus, chronomètre en main : la version 1 seulement jusqu’à ce que le gardien de l’escalier crie « Stop », puis la version 2. Pendant la version 2, le public montre avec les doigts sur quelle marche se trouve la scène. Après chaque scène, l’observateur donne la phrase qui a changé quelque chose – ou l’écrit, et l’enseignant·e la lit ; un îlot spectateur complète. Puis tout le monde sort du rôle : se secouer, dire son propre prénom. Les phrases qui ont désamorcé une dispute vont à côté de l’affiche de l’escalier. Si le temps manque pour les cinq groupes, le dernier ne joue que la version 2.",
             "sagen": [
               "Stop. Où est-ce que ça a basculé, exactement ?",
               "Quelle phrase a changé quelque chose chez vous ?",
               "Quelle version est-ce que vous préféreriez vivre – et laquelle connaissez-vous le mieux ?"
             ],
-            "tipp": "Garder la version 1 courte et consacrer l’essentiel du temps à la version 2. Si une scène se bloque, la figer et demander au public quelle marche manque. Pour la première scène, l’enseignant·e peut jouer B : la classe voit alors à quel point c’est sérieux.",
-            "wennEsKippt": "Si une scène devient trop réelle – quelqu’un devient personnel ou rejoue visiblement une dispute de la classe –, arrêter avec bienveillance, faire sortir du rôle et changer de carte. Les vrais conflits ne se règlent pas en jeu de rôle, mais plus tard, lors d’un entretien avec le régent ou un éducateur. Si le public se moque de ceux qui jouent, montrer la charte de classe : on rit ensemble, pas les uns des autres.",
+            "tipp": "Garder la version 1 courte et consacrer l’essentiel du temps à la version 2. Si une scène se bloque, la figer et demander au public quelle marche manque. Après chaque scène, applaudir avant tout commentaire : jouer devant la classe demande du cran.",
+            "wennEsKippt": "Si une scène devient trop réelle – quelqu’un devient personnel ou rejoue visiblement une dispute de la classe –, arrêter avec bienveillance, faire sortir du rôle et changer de carte ; les vrais conflits se règlent plus tard, lors d’un entretien avec le régent ou un éducateur. Si le public se moque de ceux qui jouent, montrer la charte de classe : on rit ensemble, pas les uns des autres. Si un groupe ne veut pas venir devant, il joue assis à sa table, et les autres se tournent vers lui.",
             "blatt": "ff7-streit-karten"
           },
           {
             "titel": "Skill : le temps mort",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : voici un skill pour la marche 1 – pour le moment où vous sentez que vous dépassez votre limite. Contrairement à la tortue, on annonce un temps mort, et il a une fin ; en classe, cela veut dire demander à l’enseignant·e ou respirer à sa place, pas sortir sans rien dire. Chacun ouvre son plan feu tricolore dans le cahier, cherche à l’orange et au rouge un skill qui marche aussi en pleine dispute et met une étoile à côté (2 min). Puis lire les trois étapes (liste) et s’entraîner : dire une fois la phrase ensemble à mi-voix, puis deux tours de respiration carrée, assis – inspirer quatre secondes, retenir quatre, expirer quatre, retenir quatre ; compter à voix basse et faire l’exercice avec la classe (4 min). Pour finir, deux ou trois voix : où est-ce que le temps mort pourrait vous aider ?",
+            "text": "Annoncer : un skill pour la marche 1 – pour le moment où vous sentez que vous dépassez votre limite. Contrairement à la tortue, on annonce un temps mort, et il a une fin ; en classe, cela veut dire demander à l’enseignant·e ou respirer à sa place, pas sortir sans rien dire. Chacun cherche dans son plan feu tricolore, à l’orange et au rouge, un skill qui marche aussi en pleine dispute et met une étoile à côté (2 min). Montrer une fois les trois étapes (liste, 1 min). À deux (2 min) : A lit la phrase de départ de la carte dispute, B annonce le temps mort avec ses propres mots ; puis on échange. Ensuite, deux tours de respiration carrée, assis – inspirer quatre secondes, retenir quatre, expirer quatre, retenir quatre ; compter à voix basse et faire l’exercice avec la classe (3 min). Pour finir, deux ou trois voix : où est-ce que le temps mort pourrait vous aider ?",
             "sagen": [
               "La tortue disparaît et ne revient pas. Celui qui prend un temps mort dit quand il revient.",
               "Personne ne passe de 80 à 0 en une minute. De 80 à 60, ça suffit pour la marche 2."
@@ -498,34 +498,34 @@
               "Revenir : être là à l’heure dite et reprendre avec un message en « je »."
             ],
             "tipp": "Qui n’a pas son plan feu tricolore, ou ne l’a pas terminé à la séance 17, écrit le skill à la marche 1 de la fiche de l’escalier. Laisser la phrase du temps mort au tableau : elle aide aussi lors de vraies disputes en classe, et l’enseignant·e peut la montrer en exemple.",
-            "wennEsKippt": "Si la phrase dite ensemble fait rire, la faire chuchoter. Qui n’aime pas retenir son souffle laisse cette partie et expire juste lentement. Personne n’est obligé de fermer les yeux.",
+            "wennEsKippt": "Si l’exercice à deux fait rire, faire chuchoter l’annonce. Qui n’aime pas retenir son souffle laisse cette partie et expire juste lentement. Personne n’est obligé de fermer les yeux.",
             "blatt": "ff7-skills-koffer"
           },
           {
             "titel": "Skills-Pass, tour éclair des animaux et mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire au tableau la question clé du Skills-Pass : quelle marche de l’escalier est la plus difficile pour moi – et qu’est-ce qui m’aide ? Chacun écrit sa phrase (2 min) et reçoit le tampon. Tour éclair sans un mot (1 min) : à trois, tout le monde montre le panneau de l’animal qu’il aimerait être plus souvent lors de la prochaine dispute. Pour finir, annoncer la mission de la semaine (dans le cahier) et la prochaine séance.",
+            "text": "Écrire au tableau la question clé du Skills-Pass : quelle marche de l’escalier est la plus difficile pour moi – et qu’est-ce qui m’aide ? Chacun écrit sa phrase (2 min) et reçoit le tampon. Tour éclair sans un mot (1 min) : à trois, tout le monde fait le geste de l’animal qu’il aimerait être plus souvent lors de la prochaine dispute. Pour finir, annoncer la mission de la semaine (dans le cahier) et la prochaine séance.",
             "sagen": [
-              "À trois, montrez l’animal que vous voulez être plus souvent à la prochaine dispute."
+              "À trois : le geste de l’animal que vous voulez être plus souvent à la prochaine dispute."
             ],
             "tipp": "Qui le souhaite écrit la phrase du temps mort dans le Skills-Pass – c’est aussi une bonne phrase à emporter."
           }
         ],
         "bruecke": "La semaine prochaine, on parle de la pression des autres : que faire quand tout le monde veut quelque chose que vous ne voulez pas – dans la cour ou dans le groupe de la classe ?",
         "mission": "Si ça chauffe cette semaine, essaie une fois le temps mort : l’annoncer, redescendre, revenir. Ou observe simplement quel animal tu es dans une dispute.",
-        "hintergrund": "Les disputes font partie de l’adolescence ; ce qui compte, c’est la façon de les mener. Thomas et Kilmann (1974) classent les comportements en conflit selon deux questions : à quel point quelqu’un défend-il ses propres intérêts, et à quel point ceux des autres ? On obtient cinq styles – rivaliser (requin), éviter (tortue), céder (nounours), faire un compromis (renard) et coopérer (chouette). Aucun n’est toujours le bon ; ce qui aide, c’est de pouvoir choisir. Les conflits s’enveniment par étapes, et plus on en sort tôt, plus une solution où les deux gagnent est possible (Glasl, 1980). L’escalier du conflit place donc le retour au calme au début, puis suit la méthode sans perdant de Gordon (1972) : message en « je », écoute, recherche commune de solutions. Il suppose deux parties à peu près aussi fortes ; face au harcèlement, il faut de la protection et des adultes, pas une négociation.",
+        "hintergrund": "Les disputes font partie de l’adolescence ; ce qui compte, c’est la façon de les mener. Thomas et Kilmann (1974) classent les comportements en conflit selon deux questions : à quel point quelqu’un défend-il ses propres intérêts, et à quel point ceux des autres ? On obtient cinq styles – rivaliser, éviter, céder, faire un compromis et coopérer ; les animaux (requin, tortue, nounours, renard, chouette) sont une image répandue à l’école. Aucun n’est toujours le bon ; ce qui aide, c’est de pouvoir choisir. Les conflits s’enveniment par étapes, et plus on en sort tôt, plus une solution où les deux gagnent est possible (Glasl, 1980). L’escalier du conflit place donc le retour au calme au début, puis suit la méthode sans perdant de Gordon (1972) : message en « je », écoute, recherche commune de solutions. Il suppose deux parties à peu près aussi fortes ; face au harcèlement, il faut de la protection et des adultes, pas une négociation.",
         "quellen": [
           "Thomas, K. W. & Kilmann, R. H. (1974). Thomas-Kilmann Conflict Mode Instrument. Tuxedo, NY: Xicom.",
           "Glasl, F. (1980). Konfliktmanagement. Bern: Haupt.",
           "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe."
         ],
-        "achtung": "On ne joue que les cartes inventées, jamais une vraie dispute de la classe ; deux jeunes réellement en conflit ne jouent pas la même scène. Ne pas régler les conflits ouverts devant la classe, mais proposer un entretien avec le régent ou un éducateur. Si quelqu’un est attaqué encore et encore, ce n’est pas une dispute, mais peut-être du harcèlement : ne pas le traiter pendant le cours, mais avec le régent et le SePAS, selon la procédure de l’école. Si un jeune parle de violence, ne pas approfondir, lui parler après le cours et informer le SePAS le jour même.",
+        "achtung": "On ne joue que les cartes inventées, jamais une vraie dispute de la classe ou de la famille ; deux jeunes en conflit ne jouent pas la même scène. Pas de conflit ouvert réglé devant la classe : proposer un entretien avec le régent ou un éducateur. Si quelqu’un est attaqué encore et encore, c’est peut-être du harcèlement : pas en cours, mais avec le régent et le SePAS, selon la procédure de l’école. Si un jeune parle de violence, même à la maison, ne pas approfondir, lui parler après le cours, informer le SePAS le jour même ; en cas de danger immédiat, le 112.",
         "differenzierung": {
-          "leichter": "Pour les animaux, les images des panneaux suffisent ; un jeune de l’îlot lit les descriptions. Pour l’escalier, des débuts de phrase au tableau : J’ai besoin de… · Je suis énervé·e, parce que… · Si je comprends bien… · On pourrait… Qui a du mal à écrire ne remplit que les marches 1 et 2 ; qui apprend encore la langue du cours peut écrire dans sa propre langue et prend le rôle de gardien de l’escalier.",
+          "leichter": "Pour les animaux, les gestes et les panneaux aident ; lire les descriptions à voix haute. Pour l’escalier, des débuts de phrase au tableau : J’ai besoin de… · Je me sens… quand… · Si je comprends bien… · On pourrait… Qui a du mal à écrire dit sa phrase et ne note que des mots-clés ; qui apprend encore la langue du cours peut écrire dans sa propre langue et prend le rôle de gardien de l’escalier, qui montre les marches avec les doigts.",
           "schwerer": "Transposer l’escalier à une dispute avec un adulte : qu’est-ce qui change ? Ou animer le jeu de rôle et demander à chaque stop ce que les deux veulent vraiment – derrière ce qu’ils exigent."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec la limite dans une dispute (5 min), quel animal suis-je dans une dispute ? – un tour en se plaçant et l’exercice 1 (10 min), l’escalier du conflit avec l’histoire de Léa (12 min), une carte dispute jouée deux fois devant la classe par deux volontaires (13 min), le temps mort (5 min), Skills-Pass et mission (5 min). La pause active et les jeux de rôle en îlots sont supprimés."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec la limite dans une dispute (5 min), quel animal suis-je dans une dispute ? – deux tours avec les gestes, depuis les places, et l’exercice 1 (10 min), l’escalier du conflit avec l’histoire de Léa (12 min), une carte dispute jouée deux fois devant la classe par l’enseignant·e et un volontaire (13 min), le temps mort (5 min), Skills-Pass et mission (5 min). La pause active et les jeux de rôle en îlots sont supprimés."
       }
     }
   ],
@@ -565,7 +565,7 @@
           {
             "art": "aufgabe",
             "text": "Welches Tier bist du mit wem? Kreuz in jeder Spalte das Tier an, das am besten passt.",
-            "hinweis": "Passen zwei Tiere, darfst du auch zwei ankreuzen."
+            "hinweis": "Passen zwei Tiere, darfst du zwei ankreuzen. Passt eine Spalte nicht zu dir, lass sie frei."
           },
           {
             "art": "einschaetzung",
@@ -620,12 +620,12 @@
             "art": "geschichte",
             "titel": "Das Plakat",
             "bild": "figur:jana:wuetend:verschraenkt",
-            "text": "Léa und Tiago sollen bis Freitag ein Plakat für Geschichte fertig machen. Léa hat alles herausgesucht und die Hälfte gestaltet, von Tiago kam seit einer Woche nichts. Am Donnerstag kommt er in der Pause vorbei: „Und, sind wir fertig?“ Léas Anspannung schießt auf 80."
+            "text": "Léa und Noah sollen bis Freitag ein Plakat für Geschichte fertig machen. Léa hat alles herausgesucht und die Hälfte gestaltet, von Noah kam seit einer Woche nichts. Am Donnerstag kommt er in der Pause vorbei: „Und, sind wir fertig?“ Léas Anspannung schießt auf 80."
           },
           {
             "art": "aufgabe",
-            "text": "Was könnte Léa auf jeder Stufe sagen oder tun? Schreib zu jeder Stufe einen Satz.",
-            "hinweis": "Für Stufe 1 hilft dir dein Ampelplan im Heft."
+            "text": "Was könnte Léa auf Stufe 1 bis 3 sagen oder tun? Schreib zu jeder Stufe einen Satz.",
+            "hinweis": "Stufe 4 und 5, wenn du noch Zeit hast. Für Stufe 1 hilft dir dein Ampelplan im Heft."
           },
           {
             "art": "schritte",
@@ -637,7 +637,7 @@
               },
               {
                 "titel": "Stufe 2 · Ich-Botschaft",
-                "text": "Sagen, was dich stört, ohne Vorwurf: Ich ärgere mich, weil … Ich wünsche mir …"
+                "text": "Sagen, was dich stört, ohne Vorwurf: Ich fühle mich …, wenn … Ich wünsche mir …"
               },
               {
                 "titel": "Stufe 3 · Zuhören",
@@ -663,28 +663,16 @@
             "art": "info",
             "symbol": "achtung",
             "titel": "Streit oder mehr?",
-            "text": "Die Treppe hilft, wenn beide ungefähr gleich stark sind. Wird jemand immer wieder fertiggemacht, ist das kein Streit mehr. Dann hol dir Hilfe bei einer erwachsenen Person."
-          },
-          {
-            "art": "aufgabe",
-            "text": "Welche Stufe fällt dir im echten Leben am schwersten – und was könnte dir helfen?"
-          },
-          {
-            "art": "satzanfaenge",
-            "items": [
-              "Am schwersten fällt mir Stufe …, weil …",
-              "Helfen könnte mir …"
-            ],
-            "linien": 1
+            "text": "Die Treppe hilft, wenn beide ungefähr gleich stark sind. Wird jemand immer wieder fertiggemacht oder macht dir ein Streit Angst – auch zu Hause –, ist das kein normaler Streit mehr. Hol dir Hilfe: bei einer Person, der du vertraust, beim SePAS oder beim Kanner- a Jugendtelefon (116 111)."
           }
         ],
         "lehrer": {
-          "ziel": "Die Jugendlichen ordnen ihr Verhalten im Streit fünf Konfliktstilen zu, lernen die fünf Stufen der Konflikt-Treppe und formulieren zu jeder Stufe einen Satz.",
+          "ziel": "Die Jugendlichen ordnen ihr Verhalten im Streit fünf Konfliktstilen zu, lernen die fünf Stufen der Konflikt-Treppe und formulieren Sätze für die ersten drei Stufen.",
           "ablauf": [
-            "Einheit 22, Schritt 3: nach dem Aufstellen bei den Tierschildern Aufgabe 1 allein (4 Min.).",
-            "Schritt 4: Geschichte vorlesen, die Treppe am Plakat erklären, Aufgabe 2 zu zweit (6 Min.).",
+            "Einheit 22, Schritt 3: nach den Aufstellrunden Aufgabe 1 allein (4 Min.); die Spalte „zu Hause“ bleibt privat.",
+            "Schritt 4: Geschichte vorlesen, die Treppe am Plakat erklären, Aufgabe 2 zu zweit (6 Min.); Stufe 1 bis 3 reichen.",
             "Im Rollenspiel hält die Treppenwache die zweite Seite hoch und ruft die Stufen aus.",
-            "Aufgabe 3 allein, gern als Vorbereitung für den Skills-Pass; nicht einsammeln."
+            "Das Blatt nicht einsammeln; es bleibt im Heft."
           ],
           "hintergrund": "Das Modell von Thomas und Kilmann (1974) ordnet Konfliktverhalten nach zwei Fragen: wie stark jemand die eigenen Anliegen verfolgt und wie stark die der anderen. Keiner der fünf Stile ist immer richtig. Die Treppe stellt das Runterkommen vor das Gespräch und folgt dann der niederlagelosen Methode von Gordon (1972): Ich-Botschaft, Zuhören, gemeinsam Lösungen suchen und sich einigen.",
           "quellen": [
@@ -706,7 +694,7 @@
           {
             "art": "aufgabe",
             "text": "Quel animal es-tu, et avec qui ? Dans chaque colonne, coche l’animal qui te correspond le mieux.",
-            "hinweis": "Si deux animaux te correspondent, tu peux en cocher deux."
+            "hinweis": "Si deux animaux te correspondent, tu peux en cocher deux. Si une colonne ne te concerne pas, laisse-la vide."
           },
           {
             "art": "einschaetzung",
@@ -745,7 +733,7 @@
               "La tortue est maligne quand l’autre est très en colère – et pose problème quand elle ne réapparaît jamais.",
               "Le requin s’impose – et y perd souvent des amis.",
               "Le nounours garde la paix – mais à force de céder, on accumule de la colère.",
-              "La chouette a besoin de calme et de temps. Elle ne marche que si les deux sont sous 70."
+              "La chouette a besoin de calme et de temps. Ça ne marche que si les deux sont sous 70."
             ]
           },
           {
@@ -761,12 +749,12 @@
             "art": "geschichte",
             "titel": "L’affiche",
             "bild": "figur:jana:wuetend:verschraenkt",
-            "text": "Léa et Tiago doivent finir une affiche d’histoire pour vendredi. Léa a tout cherché et fait la moitié de la mise en page ; Tiago n’a rien fait depuis une semaine. Jeudi, à la récré, il passe la voir : « Alors, on a fini ? » La tension de Léa grimpe à 80."
+            "text": "Léa et Noah doivent finir une affiche d’histoire pour vendredi. Léa a tout cherché et fait la moitié de la mise en page ; Noah n’a rien fait depuis une semaine. Jeudi, à la récré, il passe la voir : « Alors, on a fini ? » La tension de Léa grimpe à 80."
           },
           {
             "art": "aufgabe",
-            "text": "Qu’est-ce que Léa pourrait dire ou faire à chaque marche ? Écris une phrase par marche.",
-            "hinweis": "Pour la marche 1, ton plan feu tricolore du cahier t’aide."
+            "text": "Qu’est-ce que Léa pourrait dire ou faire aux marches 1 à 3 ? Écris une phrase par marche.",
+            "hinweis": "Les marches 4 et 5, si tu as encore le temps. Pour la marche 1, ton plan feu tricolore du cahier t’aide."
           },
           {
             "art": "schritte",
@@ -778,7 +766,7 @@
               },
               {
                 "titel": "Marche 2 · Message en « je »",
-                "text": "Dire ce qui te dérange, sans reproche : Je suis énervé·e, parce que… J’aimerais…"
+                "text": "Dire ce qui te dérange, sans reproche : Je me sens… quand… J’aimerais…"
               },
               {
                 "titel": "Marche 3 · Écouter",
@@ -798,34 +786,22 @@
             "art": "info",
             "symbol": "tipp",
             "titel": "Quand ça repart",
-            "text": "Si la tension remonte sur une marche, reviens à la marche 1. Ce n’est pas un retour en arrière, c’est le chemin qui marche."
+            "text": "Si la tension remonte sur une marche, reviens à la marche 1. Ce n’est pas un retour en arrière : c’est comme ça que ça marche."
           },
           {
             "art": "info",
             "symbol": "achtung",
             "titel": "Dispute ou plus que ça ?",
-            "text": "L’escalier aide quand les deux sont à peu près aussi forts. Si quelqu’un se fait démolir encore et encore, ce n’est plus une dispute. Alors, va chercher de l’aide auprès d’un adulte."
-          },
-          {
-            "art": "aufgabe",
-            "text": "Quelle marche est la plus difficile pour toi dans la vraie vie – et qu’est-ce qui pourrait t’aider ?"
-          },
-          {
-            "art": "satzanfaenge",
-            "items": [
-              "La marche la plus difficile pour moi, c’est la…, parce que…",
-              "Ce qui pourrait m’aider : …"
-            ],
-            "linien": 1
+            "text": "L’escalier aide quand les deux sont à peu près aussi forts. Si quelqu’un se fait démolir encore et encore, ou si une dispute te fait peur – même à la maison –, ce n’est plus une dispute ordinaire. Va chercher de l’aide : auprès d’une personne de confiance, du SePAS ou du Kanner- a Jugendtelefon (116 111)."
           }
         ],
         "lehrer": {
-          "ziel": "Les jeunes associent leur façon de se disputer à cinq styles de conflit, découvrent les cinq marches de l’escalier du conflit et formulent une phrase pour chacune.",
+          "ziel": "Les jeunes associent leur façon de se disputer à cinq styles de conflit, découvrent les cinq marches de l’escalier du conflit et formulent des phrases pour les trois premières.",
           "ablauf": [
-            "Séance 22, étape 3 : après s’être placés près des panneaux animaux, exercice 1 seul (4 min).",
-            "Étape 4 : lire l’histoire, expliquer l’escalier sur l’affiche, exercice 2 à deux (6 min).",
+            "Séance 22, étape 3 : après les tours debout, exercice 1 seul (4 min) ; la colonne « à la maison » reste privée.",
+            "Étape 4 : lire l’histoire, expliquer l’escalier sur l’affiche, exercice 2 à deux (6 min) ; les marches 1 à 3 suffisent.",
             "Pendant le jeu de rôle, le gardien de l’escalier lève la deuxième page et annonce les marches.",
-            "Exercice 3 seul, par exemple pour préparer le Skills-Pass ; ne pas ramasser."
+            "Ne pas ramasser la fiche ; elle reste dans le cahier."
           ],
           "hintergrund": "Le modèle de Thomas et Kilmann (1974) classe les comportements en conflit selon deux questions : à quel point on défend ses propres intérêts, et à quel point ceux des autres. Aucun des cinq styles n’est toujours le bon. L’escalier place le retour au calme avant la discussion, puis suit la méthode sans perdant de Gordon (1972) : message en « je », écoute, recherche commune de solutions et accord.",
           "quellen": [
@@ -872,7 +848,7 @@
             "punkte": [
               "Jede Tischgruppe zieht eine Karte. A und B spielen, die Treppenwache hält die Treppe aus dem Heft hoch und ruft die Stufen aus, die Beobachtung merkt sich den Satz, der etwas verändert.",
               "Version 1: so, wie der Streit oft läuft – höchstens eine Minute, ohne Schimpfwörter. Version 2: mit der Treppe, Stufe für Stufe.",
-              "Keine echten Namen, keine Streits aus der Klasse, keine Berührung. Karte 6 ist Reserve."
+              "Keine echten Namen, keine Streits aus der Klasse oder Familie, keine Berührung. Eine Karte bleibt als Reserve."
             ]
           },
           {
@@ -898,11 +874,11 @@
               },
               {
                 "titel": "5 · Das Ladekabel",
-                "text": "Rafael nimmt ständig das Ladekabel seiner Schwester Ana und bringt es nicht zurück. Heute Morgen war ihr Akku leer.\nAna beginnt: „Du hast schon wieder mein Kabel genommen.“"
+                "text": "Gabriel nimmt ständig das Ladekabel seiner Schwester Ana und bringt es nicht zurück. Heute Morgen war ihr Akku leer.\nAna beginnt: „Du hast schon wieder mein Kabel genommen.“"
               },
               {
                 "titel": "6 · Der Platz im Bus",
-                "text": "Noah und Ben sitzen im Bus seit Jahren nebeneinander. Heute setzt sich Ben zu zwei Neuen und winkt nur kurz.\nNoah beginnt: „Ach so. Jetzt bin ich dir wohl nicht mehr gut genug.“"
+                "text": "Samuel und Ben sitzen im Bus seit Jahren nebeneinander. Heute setzt sich Ben zu zwei Neuen und winkt nur kurz.\nSamuel beginnt: „Ach so. Jetzt bin ich dir wohl nicht mehr gut genug.“"
               }
             ]
           }
@@ -910,8 +886,8 @@
         "lehrer": {
           "ziel": "Erfundene, alltagsnahe Streits zwischen ungefähr Gleichstarken für das Rollenspiel mit der Konflikt-Treppe: Freunde, Geschwister, Pause, Klassenfeier.",
           "ablauf": [
-            "Einmal kopieren, ausschneiden; Karten weglassen, die einem echten Streit in der Klasse ähneln, und Namen tauschen, falls jemand in der Klasse so heißt.",
-            "Einheit 22, Schritt 6: je Tischgruppe eine Karte, vier Rollen verteilen, 8 Min. proben.",
+            "Einmal kopieren, ausschneiden; Karten weglassen, die einem echten Streit in der Klasse ähneln, und Namen tauschen, falls jemand in der Klasse so heißt. Eine Karte bleibt als Reserve.",
+            "Einheit 22, Schritt 6: je Tischgruppe eine Karte, vier Rollen verteilen; die Lehrkraft zeigt Version 2 vor, dann 7 Min. proben.",
             "Schritt 7: Version 1 bis zum Stopp der Treppenwache, dann Version 2 mit der Treppe."
           ],
           "hintergrund": "Im Rollenspiel lässt sich eine neue Reaktion ohne echtes Risiko ausprobieren und im zweiten Durchgang verbessern. Programme zum sozial-emotionalen Lernen wirken besonders, wenn sie aktiv üben lassen und klar benennen, was geübt wird (Durlak et al., 2011). Erfundene Streits schützen: Niemand muss Eigenes zeigen.",
@@ -932,7 +908,7 @@
             "punkte": [
               "Chaque îlot tire une carte. A et B jouent, le gardien de l’escalier lève l’escalier du cahier et annonce les marches, l’observateur retient la phrase qui change quelque chose.",
               "Version 1 : comme la dispute tourne souvent – une minute au plus, sans gros mots. Version 2 : avec l’escalier, marche par marche.",
-              "Pas de vrais prénoms, pas de disputes de la classe, on ne se touche pas. La carte 6 est une réserve."
+              "Pas de vrais prénoms, pas de disputes de la classe ou de la famille, on ne se touche pas. Une carte reste en réserve."
             ]
           },
           {
@@ -958,11 +934,11 @@
               },
               {
                 "titel": "5 · Le chargeur",
-                "text": "Rafael prend sans arrêt le chargeur de sa sœur Ana et ne le rend jamais. Ce matin, son portable était à plat.\nAna commence : « Tu as encore pris mon chargeur. »"
+                "text": "Gabriel prend sans arrêt le chargeur de sa sœur Ana et ne le rend jamais. Ce matin, le portable d’Ana était à plat.\nAna commence : « Tu as encore pris mon chargeur. »"
               },
               {
                 "titel": "6 · La place dans le bus",
-                "text": "Dans le bus, Noah et Ben sont assis côte à côte depuis des années. Aujourd’hui, Ben s’assoit avec deux nouveaux et lui fait juste un signe.\nNoah commence : « Ah d’accord. Je ne suis plus assez bien pour toi, c’est ça ? »"
+                "text": "Dans le bus, Samuel et Ben sont assis côte à côte depuis des années. Aujourd’hui, Ben s’assoit avec deux nouveaux et lui fait juste un signe.\nSamuel commence : « Ah d’accord. Je ne suis plus assez bien pour toi, c’est ça ? »"
               }
             ]
           }
@@ -970,8 +946,8 @@
         "lehrer": {
           "ziel": "Des disputes inventées et proches du quotidien, entre personnes à peu près aussi fortes, pour le jeu de rôle avec l’escalier du conflit : amis, frères et sœurs, récré, fête de classe.",
           "ablauf": [
-            "Photocopier une fois, découper ; écarter les cartes qui ressemblent à une vraie dispute de la classe et changer les prénoms si un jeune s’appelle ainsi.",
-            "Séance 22, étape 6 : une carte par îlot, répartir quatre rôles, 8 min de répétition.",
+            "Photocopier une fois, découper ; écarter les cartes qui ressemblent à une vraie dispute de la classe et changer les prénoms si un jeune s’appelle ainsi. Une carte reste en réserve.",
+            "Séance 22, étape 6 : une carte par îlot, répartir quatre rôles ; montrer la version 2, puis 7 min de répétition.",
             "Étape 7 : version 1 jusqu’au stop du gardien de l’escalier, puis version 2 avec l’escalier."
           ],
           "hintergrund": "Le jeu de rôle permet d’essayer une nouvelle réaction sans vrai risque et de l’améliorer au deuxième passage. Les programmes d’apprentissage socio-émotionnel sont particulièrement efficaces quand ils font pratiquer activement et nomment clairement ce qui est travaillé (Durlak et al., 2011). Les disputes inventées protègent : personne n’a à montrer quelque chose de personnel.",

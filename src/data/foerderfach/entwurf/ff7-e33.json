@@ -41,7 +41,7 @@
         "kurz": "Jede Tischgruppe wählt ein Thema aus dem Jahr, fasst ihre Botschaft in einen Satz und plant ein Stück von drei Minuten. Alle haben eine Aufgabe – auf oder hinter der Bühne.",
         "ziele": [
           "wählen in der Tischgruppe ein Thema aus dem Jahr und fassen ihre Botschaft in einen Satz",
-          "planen ein Stück in drei Szenen und verteilen die Aufgaben auf und hinter der Bühne",
+          "planen drei Szenen, in denen jemand einen Skill aus dem Jahr zeigt, und verteilen die Aufgaben auf und hinter der Bühne",
           "proben ihre Szenen ein erstes Mal und halten sich an gemeinsame Abmachungen",
           "probieren den Skill „Aufregung umdeuten“ gegen Lampenfieber aus"
         ],
@@ -49,16 +49,16 @@
           "Gefühlsrad-Plakat, 20 Klebepunkte",
           "Schülerheft, Stempel für den Pass",
           "Themen- und Aufgabenkarten (Vorlage)",
-          "Klebezettel, Magnete oder Krepp",
-          "Kiste mit einfachen Requisiten",
-          "Tablets der Schule (für Videos)",
+          "Klebezettel, fünf Tüten (A–E)",
+          "Kiste mit Tüchern und Mützen",
+          "Tablet der Schule (nur Video-Gruppe)",
           "Stoppuhr oder Timer"
         ],
         "vorbereitung": [
-          "Mit der Direktion klären, ob auf Tablets der Schule gefilmt werden darf und welche Einverständnisse nötig sind; sonst nur live.",
-          "Beim Régent fragen, ob ein Thema an einen echten Vorfall in der Klasse rührt – diese Karte dann weglassen.",
-          "Karten kopieren und schneiden (Seite 1 einmal, Seite 2 fünfmal); Themenkarten und Tafelbild aus Schritt 3 an die Tafel.",
-          "Jahresweg aufhängen, vorn eine Spielfläche freiräumen, eine Kiste mit Tüchern, Mützen und Taschen packen."
+          "Mit der Direktion klären, ob gefilmt werden darf (Tablet der Schule, Einverständnis der Eltern); sonst kein Video.",
+          "Beim Régent fragen, ob ein Thema an einen echten Vorfall in der Klasse rührt – dieses Thema dann streichen.",
+          "Seite 1 der Vorlage sechsmal kopieren (einmal auf A3), Seite 2 fünfmal und schneiden; Tafelbild aus Schritt 3.",
+          "Jahresweg aufhängen, vorn eine Spielfläche freiräumen; als Requisiten reichen Jacken, Rucksäcke, Tücher, Mützen."
         ],
         "ablauf": [
           {
@@ -112,13 +112,13 @@
             "titel": "Check-in: Gefühl, Zahl und Lust auf Bühne",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige nennen ihr Wort (4 Min.). Dann eine zweite Frage, wieder auf drei mit den Fingern: Wie viel Lust habt ihr heute auf Bühne, von 0 bis 10 (dabei auf die freie Spielfläche zeigen)? Die Zahlen nicht kommentieren, aber merken, wer wenig Lust zeigt – diesen Jugendlichen nachher zuerst Aufgaben hinter der Bühne anbieten (2 Min.). Zum Schluss sagen, dass eine Null genauso willkommen ist wie eine Zehn: Ein Stück braucht beides.",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige nennen ihr Wort (4 Min.). Dann eine zweite Frage, diesmal mit geschlossenen Augen oder dem Kopf auf dem Arm, damit niemand die Zahlen der anderen sieht: Wie viel Lust habt ihr heute auf Bühne, von 0 bis 10 Fingern? Die Zahlen nicht kommentieren, aber merken, wer wenig Lust zeigt – diesen Jugendlichen nachher zuerst Aufgaben hinter der Bühne anbieten (2 Min.). Zum Schluss sagen, dass eine Null genauso willkommen ist wie eine Zehn: Ein Stück braucht beides.",
             "sagen": [
-              "Gefühl und Zahl wie immer. Und dazu: Wie viel Lust habt ihr heute auf Bühne – null bis zehn Finger, auf drei.",
+              "Gefühl und Zahl wie immer. Und jetzt mit geschlossenen Augen: Wie viel Lust habt ihr heute auf Bühne – null bis zehn Finger, auf drei.",
               "Eine Null ist völlig in Ordnung. Ein Stück braucht auch Leute für Regie, Geräusche und Technik."
             ],
-            "tipp": "Selbst ehrlich beginnen, etwa: Ich zeige vier Finger – vor Publikum bin ich lieber hinter den Kulissen. Das nimmt den Leisen die Sorge, dass heute alle auf die Bühne müssen.",
-            "wennEsKippt": "Zeigen ein paar Jugendliche demonstrativ zehn Finger und werden laut, das mit Humor aufnehmen: Gut, dann wissen wir, wer nachher das erste Standbild vormacht. Zeigt jemand gar nichts oder verschränkt die Arme, das gelten lassen und nicht nachfragen; in der Gruppenarbeit leise eine Aufgabe ohne Publikum anbieten."
+            "tipp": "Vorher die eigene Zahl offen zeigen, etwa: Ich zeige vier Finger – vor Publikum bin ich lieber hinter den Kulissen. Das nimmt den Leisen die Sorge, dass heute alle auf die Bühne müssen.",
+            "wennEsKippt": "Schauen einige doch hin und kommentieren die Zahlen anderer, freundlich stoppen: Jede Zahl ist richtig, und auf die Bühne muss niemand. Zeigt jemand gar nichts oder verschränkt die Arme, das gelten lassen und nicht nachfragen; in der Gruppenarbeit leise eine Aufgabe ohne Publikum anbieten."
           },
           {
             "titel": "Rückblick und Start ins letzte Kapitel",
@@ -134,13 +134,13 @@
               "Auf die Bühne muss niemand. Jede Person hat eine Aufgabe, auf der Bühne oder dahinter."
             ],
             "tipp": "Den Jahresweg mit den zehn Kapiteln gut sichtbar hängen lassen: Er ist gleich die Ideenkiste für die Themen.",
-            "wennEsKippt": "Kommt sofort die Frage nach dem eigenen Handy, kurz und klar antworten: Gefilmt wird nur mit Tablets der Schule und nur, wer Ja sagt – Einzelheiten gleich bei den Formen."
+            "wennEsKippt": "Kommt sofort die Frage nach dem eigenen Handy, kurz und klar antworten: Gefilmt wird nur mit einem Tablet der Schule und nur, wer Ja sagt – Einzelheiten gleich bei den Formen."
           },
           {
             "titel": "Themen-Galerie: Was war dieses Jahr wichtig?",
             "dauer": 12,
             "phase": "uebung",
-            "text": "An der Tafel hängen die zwölf Themenkarten, daneben der Jahresweg. Die Karten der Reihe nach kurz vorstellen und bei jeder fragen: Wisst ihr noch? (4 Min.). Dann einigt sich jede Tischgruppe auf einen Erst- und einen Zweitwunsch und schreibt ihren Gruppenbuchstaben auf zwei Klebezettel, mit 1 und 2 (3 Min.). Je Gruppe klebt eine Person die Zettel an die Karten. Jedes Thema gibt es nur einmal; wollen zwei Gruppen dasselbe, entscheidet Stein, Papier, Schere, und die andere Gruppe nimmt ihren Zweitwunsch oder eine freie Karte (2 Min.). Zum Schluss die vier Formen mit dem Tafelbild erklären; jede Gruppe überlegt schon, welche zu ihr passt (3 Min.).",
+            "text": "Jede Tischgruppe bekommt einen Buchstaben von A bis E und die Themenseite (Vorlage, Seite 1); dieselbe Seite hängt groß an der Tafel, daneben der Jahresweg. Die Themen der Reihe nach vorlesen und bei jedem fragen: Wisst ihr noch? (4 Min.). Dann einigt sich jede Tischgruppe auf einen Erst- und einen Zweitwunsch und schreibt ihren Buchstaben auf zwei Klebezettel, mit 1 und 2 (3 Min.). Gruppe für Gruppe klebt eine Person die Zettel an der Tafel neben die Themen. Jedes Thema gibt es nur einmal; wollen zwei Gruppen dasselbe, entscheidet Stein, Papier, Schere, und die andere Gruppe nimmt ihren Zweitwunsch (2 Min.). Zum Schluss die vier Formen am Tafelbild erklären; jede Gruppe wählt eine – ein Video höchstens eine Gruppe (3 Min.).",
             "sagen": [
               "Welches Thema aus diesem Jahr würdet ihr anderen Jugendlichen gern zeigen?",
               "Ihr dürft lustig werden. Es zählt nur, dass man am Ende versteht, worum es geht."
@@ -157,7 +157,7 @@
                 ],
                 [
                   "Standbild-Geschichte",
-                  "Drei Standbilder ohne Bewegung. Die Erzählstimme spricht dazu; tippt die Regie eine Figur an, sagt sie ihren Gedanken."
+                  "Drei Standbilder ohne Bewegung. Die Erzählstimme spricht dazu; tippt die Regie eine Figur an, sagt diese laut ihren Gedanken."
                 ],
                 [
                   "Hörstück",
@@ -169,15 +169,15 @@
                 ]
               ]
             },
-            "tipp": "Witzige Stücke sind ausdrücklich erlaubt: Eine Komödie über ein Gerücht im Klassenchat trägt eine Botschaft oft besser als ein ernstes Stück. Die Karte „Euer eigenes Thema“ nur vergeben, wenn die Gruppe ihr Thema in einem Satz erklären kann.",
-            "wennEsKippt": "Drängeln alle gleichzeitig an die Tafel, nur eine Person je Gruppe nach vorn rufen, Gruppe für Gruppe. Kann sich eine Gruppe nicht einigen, legt jede Person einen Finger auf eine Karte, die Mehrheit gilt; bei Gleichstand entscheidet das Los. Will eine Gruppe ein Stück über eine echte Person aus der Klasse oder ein Thema, das zu persönlich oder zu schwer ist (Gewalt zu Hause, Drogen, der Liebeskummer einer bestimmten Person), freundlich, aber klar ablehnen und zu den Themen des Jahres zurückführen.",
+            "tipp": "Witzige Stücke sind ausdrücklich erlaubt: Eine Komödie über ein Gerücht im Klassenchat trägt eine Botschaft oft besser als ein ernstes Stück. Ein Video bleibt bei einer Gruppe – Ton, Einverständnis und Löschen sind sonst nicht zu schaffen.",
+            "wennEsKippt": "Drängeln alle gleichzeitig an die Tafel, nur eine Person je Gruppe nach vorn rufen, Gruppe für Gruppe. Kann sich eine Gruppe nicht einigen, legt jede Person einen Finger auf ein Thema, die Mehrheit gilt; bei Gleichstand entscheidet das Los. Will eine Gruppe ein Stück über eine echte Person aus der Klasse oder ein Thema, das zu persönlich oder zu schwer ist (Gewalt zu Hause, Drogen, der Liebeskummer einer bestimmten Person), freundlich, aber klar ablehnen und zu den Themen des Jahres zurückführen. Drängt jemand auf so ein Thema, nach der Stunde unter vier Augen nachfragen – es kann ein Hinweis sein; bei Sorge noch am selben Tag den SePAS informieren.",
             "blatt": "ff7-stueck-karten"
           },
           {
             "titel": "Die Botschaft und drei Szenen",
             "dauer": 18,
             "phase": "uebung",
-            "text": "In der Tischgruppe zuerst die Botschaft (5 Min.): Was soll das Publikum nach dem Stück denken oder anders machen? Ein Satz, den jede Person in Aufgabe 1 ins eigene Heft schreibt; dazu die Form ankreuzen. Herumgehen und bei jeder Gruppe prüfen: Kann man diesen Satz spielen? Wer feststeckt, bekommt ein Beispiel (Liste). Dann die Geschichte in drei Szenen (10 Min.): der Anfang – es wird schwierig – die Wendung, in der man die Botschaft sieht. Alle skizzieren in Aufgabe 2 mit, mit Strichfiguren oder Stichworten, und schreiben darunter den wichtigsten Satz der Szene. Zum Schluss geht die Lehrkraft reihum: Jede Gruppe erzählt ihr die drei Szenen in drei Sätzen (3 Min.).",
+            "text": "In der Tischgruppe zuerst die Botschaft (5 Min.): Was soll das Publikum nach dem Stück denken oder anders machen? Ein Satz, den jede Person in Aufgabe 1 ins eigene Heft schreibt, dazu Thema und Form. Herumgehen und prüfen: Kann man diesen Satz spielen? Wer feststeckt, bekommt ein Beispiel (Liste). Dann die drei Szenen im Stehen finden (5 Min.): der Anfang – es wird schwierig – die Wendung, in der jemand etwas anders macht. Die Gruppe stellt jede Szene kurz nach; für die Wendung probiert sie zwei Ideen aus und nimmt die bessere. Zurück am Tisch skizziert jede Person die Szenen in Aufgabe 2 – Strichfiguren und ein Stichwort reichen (5 Min.). Zum Schluss erzählt jede Gruppe der Lehrkraft ihre Szenen in drei Sätzen (3 Min.).",
             "sagen": [
               "Stellt euch vor, jemand sieht euer Stück und macht danach etwas anders. Was genau?",
               "Die Wendung ist der Moment, in dem jemand etwas anders macht – mit einem Skill, einem Satz oder mit Hilfe."
@@ -190,15 +190,15 @@
               "Erst prüfen, dann teilen.",
               "Nicht alles, was du denkst, stimmt."
             ],
-            "tipp": "Jede Person füllt den Plan im eigenen Heft aus, Stichworte reichen. Fehlt nächste Woche jemand, ist der Plan trotzdem da. Die erfundenen Figuren bekommen Namen, die niemand in der Klasse trägt.",
-            "wennEsKippt": "Wird die Geschichte immer härter – Schlägereien, Waffen, Blut –, zur Botschaft zurückführen: Was soll das Publikum mitnehmen? Gewalt bleibt eine Andeutung im Hintergrund, im Mittelpunkt steht die Wendung. Kreist eine Gruppe nur um einen Witz, nach der Wendung fragen: Wer macht hier etwas anders – und was? Können einige nicht mehr sitzen, steht die Gruppe auf und probiert die schwierige Szene gleich als Standbild – oft kommt so die Idee.",
+            "tipp": "Jede Person hält den Plan im eigenen Heft fest – fehlt nächste Woche jemand, ist er trotzdem da. Die erfundenen Figuren bekommen Namen, die niemand in der Klasse trägt.",
+            "wennEsKippt": "Wird die Geschichte immer härter – Schlägereien, Waffen, Blut –, zur Botschaft zurückführen: Was soll das Publikum mitnehmen? Gewalt bleibt eine Andeutung im Hintergrund, im Mittelpunkt steht die Wendung. Kreist eine Gruppe nur um einen Witz, nach der Wendung fragen: Wer macht hier etwas anders – und was? Bleibt eine Gruppe sitzen, die erste Szene mit ihr stellen: Wer ist da? Du stellst dich hierhin, du dorthin – und was sagt ihr?",
             "blatt": "ff7-unser-stueck"
           },
           {
             "titel": "Bewegungspause: Standbilder in fünf Sekunden",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen mit ihrer Tischgruppe neben dem Tisch. Die Lehrkraft ruft eine Situation (Liste) und zählt laut von fünf herunter; bei „Freeze!“ steht jede Gruppe als Standbild, eingefroren wie auf einem Foto. Kurz umschauen, lockern, die nächste Situation. Nebenbei lernen alle das Zeichen für die Probe: Bei „Freeze!“ ist es sofort still. Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung; dann das Freeze-Zeichen zu Beginn von Schritt 6 kurz üben.",
+            "text": "Alle stehen mit ihrer Tischgruppe neben dem Tisch. Die Lehrkraft ruft eine Situation (Liste) und zählt laut von fünf herunter; bei „Freeze!“ steht jede Gruppe als Standbild, eingefroren wie auf einem Foto. Kurz umschauen, lockern, die nächste Situation. Nebenbei lernen alle das Zeichen für die Probe: „Freeze!“ und dazu die erhobene Hand wie beim Ruhezeichen der Klasse – dann ist es sofort still. Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung; dann das Freeze-Zeichen zu Beginn von Schritt 6 kurz üben.",
             "punkte": [
               "Das Tor in der letzten Sekunde.",
               "Der Bus fährt euch vor der Nase weg.",
@@ -214,13 +214,19 @@
             "titel": "Aufgaben verteilen und erste Probe",
             "dauer": 25,
             "phase": "uebung",
-            "text": "Zuerst die Abmachungen gemeinsam lesen (Aufgabe 4, zweite Seite des Blatts); jede Gruppe kreuzt an und ergänzt eine (3 Min.). Dann verteilt jede Tischgruppe mit den Aufgabenkarten und der Karte ihrer Form die Aufgaben, jede Person mindestens eine, und trägt sie in Aufgabe 3 ein (5 Min.). Wer nicht auf die Bühne will, wählt zuerst; wer im Check-in wenig Lust zeigte, bekommt leise ein Angebot. In Video-Gruppen jede Person einzeln fragen, ob sie zu sehen sein will; gefilmt wird erst nächste Woche. Erste Probe (14 Min.): Wer steht wo, wer sagt welchen Satz, wie lang ist jede Szene? Die Lehrkraft geht reihum, etwa drei Minuten je Gruppe. Zum Schluss schütteln alle die Rolle ab, und jede Gruppe klärt, wer einspringt, wenn nächste Woche jemand fehlt (3 Min.).",
+            "text": "Zuerst die Abmachungen gemeinsam lesen (Aufgabe 4, Seite 2); jede Gruppe kreuzt an und ergänzt eine (3 Min.). Dann verteilt jede Tischgruppe mit den Aufgabenkarten und der Karte ihrer Form die Aufgaben, jede Person mindestens eine, und trägt sie in Aufgabe 3 ein (5 Min.). Wer nicht auf die Bühne will, wählt zuerst; wer im Check-in wenig Lust zeigte, bekommt leise ein Angebot. In der Video-Gruppe jede Person einzeln fragen, ob sie zu sehen sein will; gefilmt wird erst nächste Woche. Erste Probe nach dem Probenplan an der Tafel (Liste, 14 Min.): Jede Gruppe probt an einem festen Platz, die Lehrkraft geht reihum, etwa drei Minuten je Gruppe. Zum Schluss schütteln alle die Rolle ab, und jede Gruppe klärt, wer einspringt, wenn nächste Woche jemand fehlt (3 Min.).",
             "sagen": [
               "Bei Freeze ist es sofort still – danach geht es weiter.",
               "Niemand muss spielen. Aber jede Person hat eine Aufgabe. Welche passt zu dir?",
               "Heute wird noch kein Stück gut. Heute zählt nur: Wer steht wo, und wer sagt welchen Satz?"
             ],
-            "tipp": "Fünf Gruppen, die gleichzeitig proben, sind laut; das gehört dazu. Ein, zwei Gruppen dürfen im Flur proben, wenn die Tür offen bleibt und die Lehrkraft sie sieht. Unruhigen liegen Aufgaben mit Bewegung oder Verantwortung: Zeit, Requisite, Geräusche.",
+            "punkte": [
+              "Stellt das erste Bild der Szene: Wer steht wo?",
+              "Jede Figur sagt ihren wichtigsten Satz – laut und zum Publikum.",
+              "Spielt die Szene einmal ganz. Die Regie ruft „Bitte!“ und „Stopp!“ und gibt einen Tipp.",
+              "Dann die nächste Szene. Zum Schluss alles am Stück, die Zeit stoppt mit."
+            ],
+            "tipp": "Fünf Gruppen, die gleichzeitig proben, sind laut; das gehört dazu. Jede Gruppe probt in ihrer Ecke, eine darf in den Flur, wenn die Tür offen bleibt und die Lehrkraft sie sieht. Unruhigen liegen Aufgaben mit Bewegung oder Verantwortung: Zeit, Requisite, Geräusche.",
             "wennEsKippt": "Wollen alle die Regie und niemand spielt, das Los ziehen oder auf Hörstück oder Standbilder ausweichen. Lehnt jemand jede Aufgabe ab, nicht vor der Gruppe streiten: zwei Aufgaben zur Wahl anbieten (Zeit oder Geräusche), sonst die Beobachtung für die Vorschau übertragen und nach der Stunde kurz nachfragen. Bekommt jemand eine Rolle, die ihm zu nah ist – die Neue als Figur, die nichts versteht, der Kleinste als Opfer –, leise umbesetzen: Rollen gehen nach Lust, nicht nach Ähnlichkeit. Wird geschubst oder eine echte Person nachgeäfft, „Freeze!“ rufen, auf die Abmachungen zeigen und neu ansetzen.",
             "blatt": "ff7-unser-stueck"
           },
@@ -228,9 +234,9 @@
             "titel": "Vorschau: ein Standbild je Gruppe",
             "dauer": 10,
             "phase": "uebung",
-            "text": "Alle sitzen mit Blick nach vorn, die Spielfläche ist frei. Jede Gruppe zeigt den wichtigsten Moment ihres Stücks als Standbild: Die Regie zählt laut von drei herunter, dann bleibt das Bild zehn Sekunden stehen. Die Klasse rät das Thema, danach sagt eine Person aus einer anderen Gruppe ein Lob mit dem Satzanfang „Man sieht sofort, dass …“. Gruppen mit einem Hörstück spielen stattdessen zwanzig Sekunden Stimmen und Geräusche, das Publikum schließt die Augen. Je Gruppe etwa zwei Minuten.",
+            "text": "Alle sitzen mit Blick nach vorn, die Spielfläche ist frei. Jede Gruppe zeigt den wichtigsten Moment ihres Stücks als Standbild: Die Regie zählt laut von drei herunter, dann bleibt das Bild zehn Sekunden stehen. Die Klasse rät das Thema und sagt, welcher Skill hier helfen könnte; danach sagt eine Person aus einer anderen Gruppe ein Lob mit dem Satzanfang „Man sieht sofort, dass …“. Gruppen mit einem Hörstück spielen stattdessen zwanzig Sekunden Stimmen und Geräusche, das Publikum schließt die Augen. Je Gruppe etwa zwei Minuten.",
             "sagen": [
-              "Drei, zwei, eins – Freeze. Was seht ihr? Um welches Thema geht es?",
+              "Drei, zwei, eins – Freeze. Was seht ihr? Um welches Thema geht es – und welcher Skill könnte helfen?",
               "Ein Lob, und zwar genau: Man sieht sofort, dass …"
             ],
             "tipp": "Das Standbild ist ein Auftritt ohne Text – für viele die erste Bühne des Jahres. Wer heute zehn Sekunden stillsteht, traut sich nächste Woche drei Minuten eher zu.",
@@ -240,7 +246,7 @@
             "titel": "Skill: Aufregung umdeuten",
             "dauer": 10,
             "phase": "skill",
-            "text": "Anknüpfen: Wer hatte eben vor dem Standbild ein wenig Herzklopfen? Nächste Woche zeigt ihr das ganze Stück – Profis nennen das Gefühl Lampenfieber. Erklären: Herzklopfen, schneller Atem und kribbelnde Hände heißen nicht, dass etwas schiefgeht; der Körper stellt Energie bereit, wie vor einem Spiel. Damit die Übung echt wird, laufen alle zwanzig Sekunden auf der Stelle (wer nicht laufen kann, trommelt schnell auf die Oberschenkel). Dann die drei Schritte langsam anleiten, selbst mitmachen und zweimal üben (Liste). Zum Schluss zwei, drei Rückmeldungen einholen: Was war anders? Wann könnte das helfen – vor einem Test, einem Elfmeter, dem ersten Tag im Praktikum?",
+            "text": "Anknüpfen: Wer hatte eben vor dem Standbild Herzklopfen? Nächste Woche zeigt ihr das ganze Stück – Profis nennen das Gefühl Lampenfieber. Erklären: Herzklopfen, schneller Atem und kribbelnde Hände heißen nicht, dass etwas schiefgeht; der Körper stellt Energie bereit, wie vor einem Spiel. Damit man es spürt, laufen alle zwanzig Sekunden leise auf der Stelle (oder trommeln schnell auf die Oberschenkel). Dann die drei Schritte langsam anleiten, selbst mitmachen und zweimal üben (Liste). Zum Schluss zwei, drei Rückmeldungen: Was war anders? Wann hilft das – vor einem Test, einem Elfmeter, dem ersten Tag im Praktikum? Klarstellen: Der Skill gilt für Aufregung vor einem Auftritt; wer vor einer Person Angst hat, holt Hilfe.",
             "sagen": [
               "Euer Herz klopft. Das heißt nicht: Gleich geht es schief. Das heißt: Euer Körper macht sich bereit.",
               "Ihr müsst die Aufregung nicht wegmachen. Ihr könnt sie benutzen."
@@ -257,12 +263,12 @@
             "titel": "Skills-Pass, Mission und Ausblick",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Was ist die Botschaft unseres Stücks – und was trage ich dazu bei? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel. Dann die Wochen-Mission ansagen, die im Heft steht: einmal im Alltag die Aufregung umdeuten. Requisiten zurück in die Kiste, die Karten jeder Gruppe in eine Tüte mit ihrem Buchstaben; die Lehrkraft bewahrt die Tüten bis nächste Woche auf. Zum Schluss der Ausblick auf die nächste Stunde.",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Was ist die Botschaft unseres Stücks – und was trage ich dazu bei? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel. Dann die Wochen-Mission ansagen, die im Heft steht: einmal im Alltag die Aufregung umdeuten. Die Requisite-Person jeder Gruppe bringt die Sachen zurück in die Kiste; Themenseite und Karten kommen in die Tüte mit dem Gruppenbuchstaben, die Lehrkraft bewahrt die Tüten bis nächste Woche auf. Zum Schluss der Ausblick auf die nächste Stunde.",
             "sagen": [
               "Für den Skills-Pass: Was ist eure Botschaft – und was ist euer Teil daran?",
               "Wenn euer Herz diese Woche schneller schlägt, probiert den Satz aus: Mein Körper macht sich bereit."
             ],
-            "tipp": "Plakate, Zettel und Karten jeder Gruppe in einer eigenen Tüte mit dem Gruppenbuchstaben sammeln – nächste Woche geht es ohne Suchen weiter."
+            "tipp": "Wer oft sein Heft vergisst, legt es heute mit in die Tüte seiner Gruppe – sonst fehlt nächste Woche der Plan."
           }
         ],
         "bruecke": "Nächste Woche probt ihr noch einmal und zeigt eure Stücke der Klasse – mit Rückmeldungen nach festen, freundlichen Regeln. Auf die Bühne muss niemand, aber jede Aufgabe zählt.",
@@ -273,9 +279,9 @@
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
           "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212."
         ],
-        "achtung": "Keine echten Vorfälle, Namen oder Personen aus Klasse und Schule nachspielen, auch keine Lehrkräfte. Rollen, in denen jemand ausgelacht, ausgegrenzt oder bedroht wird, nur freiwillig vergeben; wer selbst Mobbing erlebt, wird nie in diese Rolle gedrängt. Gewalt nur andeuten, Berührung nur nach Absprache. Gefilmt wird nur mit Tablets der Schule und nur, wer einzeln Ja gesagt hat. Wird im Spiel deutlich, dass jemand Gewalt oder Mobbing erlebt: nicht vor der Klasse vertiefen, nach der Stunde ansprechen, noch am selben Tag den SePAS informieren.",
+        "achtung": "Keine echten Vorfälle, Namen oder Personen aus Klasse und Schule nachspielen, auch keine Lehrkräfte; keine Witze über Herkunft, Sprache, Religion oder Aussehen. Rollen, in denen jemand ausgelacht, ausgegrenzt oder bedroht wird, nur freiwillig vergeben – nie an jemanden, der Mobbing erlebt. Gewalt nur andeuten, Berührung nur nach Absprache. Gefilmt wird nur mit einem Tablet der Schule, mit dem nötigen Einverständnis und nur, wer selbst Ja sagt. Wird im Spiel oder bei der Themenwahl deutlich, dass jemand Gewalt oder Mobbing erlebt: nicht vor der Klasse vertiefen, nach der Stunde ansprechen, am selben Tag den SePAS informieren.",
         "differenzierung": {
-          "leichter": "Themenkarten vorlesen und dabei auf die Bilder zeigen; im Szenenplan reichen Strichfiguren und ein Satz. Wer die Sprache noch lernt oder mühsam liest, bekommt eine Aufgabe mit wenig Text (Standbild, Geräusche, Technik), am besten im Tandem; eine Figur darf auch in ihrer eigenen Sprache sprechen.",
+          "leichter": "Die Themen vorlesen und dabei auf die Bilder zeigen; im Szenenplan reichen Strichfiguren und ein Stichwort. Wer die Sprache noch lernt oder mühsam liest, bekommt eine Aufgabe mit wenig Text (Standbild, Geräusche, Technik), am besten im Tandem; eine Figur darf auch in ihrer eigenen Sprache sprechen.",
           "schwerer": "Die Wendung zweimal planen: einmal, wie es oft läuft, einmal mit einem Skill aus dem Jahr. Oder als Regie nach der Vorschau einen Probenplan für nächste Woche schreiben: Was proben wir zuerst, was muss lauter, was kürzer werden?"
         },
         "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gefühl, Zahl und Lust auf Bühne (5 Min.), Thema wählen und Botschaft finden (10 Min.), drei Szenen planen und Aufgaben verteilen (15 Min.), erste Probe (10 Min.), Aufregung umdeuten (5 Min.), Skills-Pass und Mission (5 Min.). Die Standbild-Vorschau entfällt; die Abmachungen werden zu Beginn der nächsten Stunde gelesen."
@@ -285,7 +291,7 @@
         "kurz": "Chaque îlot choisit un thème de l’année, résume son message en une phrase et prépare une pièce de trois minutes. Chacun a un rôle – sur scène ou en coulisses.",
         "ziele": [
           "choisissent en îlot un thème de l’année et résument leur message en une phrase",
-          "préparent une pièce en trois scènes et se répartissent les rôles sur scène et en coulisses",
+          "préparent trois scènes où quelqu’un utilise un skill de l’année et se répartissent les rôles sur scène et en coulisses",
           "répètent leurs scènes une première fois en respectant des règles communes",
           "essaient le skill « voir le trac autrement »"
         ],
@@ -293,16 +299,16 @@
           "Roue des émotions, 20 gommettes",
           "Cahier de l’élève, tampon",
           "Cartes thèmes et rôles (modèle)",
-          "Post-it, aimants ou ruban",
-          "Caisse d’accessoires simples",
-          "Tablettes de l’école (vidéos)",
+          "Post-it, cinq sacs (A à E)",
+          "Caisse avec foulards et bonnets",
+          "Tablette de l’école (îlot vidéo)",
           "Chronomètre ou minuteur"
         ],
         "vorbereitung": [
-          "Vérifier avec la direction si l’on peut filmer avec les tablettes de l’école et quelles autorisations il faut ; sinon, seulement du direct.",
-          "Demander au régent si un thème touche à un incident réel dans la classe – retirer alors cette carte.",
-          "Photocopier et découper les cartes (page 1 une fois, page 2 cinq fois) ; afficher au tableau les cartes thèmes et le tableau de l’étape 3.",
-          "Afficher le chemin de l’année, libérer un espace de jeu devant, préparer une caisse avec foulards, bonnets et sacs."
+          "Vérifier avec la direction si l’on peut filmer (tablette de l’école, autorisation des parents) ; sinon, pas de vidéo.",
+          "Demander au régent si un thème touche à un incident réel dans la classe – le rayer alors.",
+          "Photocopier la page 1 du modèle six fois (une en A3), la page 2 cinq fois, à découper ; formes de l’étape 3 au tableau.",
+          "Afficher le chemin de l’année, libérer un espace de jeu devant ; vestes, sacs, foulards et bonnets suffisent comme accessoires."
         ],
         "ablauf": [
           {
@@ -356,13 +362,13 @@
             "titel": "Tour d’humeur : émotion, chiffre et envie de scène",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires disent leur mot (4 min). Puis une deuxième question, toujours à trois avec les doigts : quelle envie avez-vous de monter sur scène aujourd’hui, de 0 à 10 (en montrant l’espace de jeu) ? Ne pas commenter les chiffres, mais retenir qui en montre peu – ces jeunes se verront proposer en premier un rôle en coulisses (2 min). Pour finir, dire qu’un zéro est aussi bienvenu qu’un dix : une pièce a besoin des deux.",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires disent leur mot (4 min). Puis une deuxième question, cette fois les yeux fermés ou la tête posée sur les bras, pour que personne ne voie les chiffres des autres : quelle envie avez-vous de monter sur scène aujourd’hui, de 0 à 10 doigts ? Ne pas commenter les chiffres, mais retenir qui en montre peu – ces jeunes se verront proposer en premier un rôle en coulisses (2 min). Pour finir, dire qu’un zéro est aussi bienvenu qu’un dix : une pièce a besoin des deux.",
             "sagen": [
-              "L’émotion et le chiffre, comme d’habitude. Et en plus : quelle envie avez-vous de monter sur scène aujourd’hui – de zéro à dix doigts, à trois.",
+              "L’émotion et le chiffre, comme d’habitude. Et maintenant, les yeux fermés : quelle envie avez-vous de monter sur scène aujourd’hui – de zéro à dix doigts, à trois.",
               "Un zéro, c’est tout à fait d’accord. Une pièce a aussi besoin de monde pour la mise en scène, les bruitages et la technique."
             ],
-            "tipp": "Commencer soi-même, honnêtement, par exemple : je montre quatre doigts – devant un public, je préfère les coulisses. Cela enlève aux plus discrets la crainte que tout le monde doive monter sur scène aujourd’hui.",
-            "wennEsKippt": "Si quelques jeunes montrent ostensiblement dix doigts et deviennent bruyants, le prendre avec humour : parfait, on sait qui montrera la première image figée. Si quelqu’un ne montre rien ou croise les bras, l’accepter sans poser de question ; pendant le travail en îlot, lui proposer discrètement un rôle sans public."
+            "tipp": "Montrer d’abord son propre chiffre, ouvertement, par exemple : je montre quatre doigts – devant un public, je préfère les coulisses. Cela enlève aux plus discrets la crainte que tout le monde doive monter sur scène aujourd’hui.",
+            "wennEsKippt": "Si certains regardent quand même et commentent les chiffres des autres, les arrêter gentiment : chaque chiffre est juste, et personne n’est obligé de monter sur scène. Si quelqu’un ne montre rien ou croise les bras, l’accepter sans poser de question ; pendant le travail en îlot, lui proposer discrètement un rôle sans public."
           },
           {
             "titel": "Retour sur la séance et dernier chapitre",
@@ -378,13 +384,13 @@
               "Personne n’est obligé de monter sur scène. Chacun a un rôle, sur scène ou en coulisses."
             ],
             "tipp": "Laisser bien en vue le chemin de l’année avec ses dix chapitres : c’est en même temps la boîte à idées pour les thèmes.",
-            "wennEsKippt": "Si la question du portable personnel arrive tout de suite, répondre brièvement et clairement : on ne filme qu’avec les tablettes de l’école, et seulement ceux qui disent oui – les détails viennent avec les formes."
+            "wennEsKippt": "Si la question du portable personnel arrive tout de suite, répondre brièvement et clairement : on ne filme qu’avec une tablette de l’école, et seulement ceux qui disent oui – les détails viennent avec les formes."
           },
           {
             "titel": "Galerie des thèmes : qu’est-ce qui a compté ?",
             "dauer": 12,
             "phase": "uebung",
-            "text": "Au tableau sont affichées les douze cartes thèmes, à côté du chemin de l’année. Présenter brièvement les cartes une à une en demandant chaque fois : vous vous souvenez ? (4 min). Chaque îlot se met ensuite d’accord sur un premier et un deuxième choix et écrit la lettre de son groupe sur deux post-it, avec 1 et 2 (3 min). Un jeune par îlot vient coller les post-it sur les cartes. Chaque thème n’est pris qu’une fois ; si deux îlots veulent le même, pierre-feuille-ciseaux décide, et l’autre îlot prend son deuxième choix ou une carte libre (2 min). Pour finir, expliquer les quatre formes à l’aide du tableau ; chaque îlot réfléchit déjà à celle qui lui convient (3 min).",
+            "text": "Chaque îlot reçoit une lettre de A à E et la page des thèmes (modèle, page 1) ; la même page est affichée en grand au tableau, à côté du chemin de l’année. Lire les thèmes un par un en demandant chaque fois : vous vous souvenez ? (4 min). Chaque îlot se met ensuite d’accord sur un premier et un deuxième choix et écrit sa lettre sur deux post-it, avec 1 et 2 (3 min). Îlot après îlot, un jeune vient coller les post-it au tableau, à côté des thèmes. Chaque thème n’est pris qu’une fois ; si deux îlots veulent le même, pierre-feuille-ciseaux décide, et l’autre îlot prend son deuxième choix (2 min). Pour finir, expliquer les quatre formes à l’aide du tableau ; chaque îlot en choisit une – la vidéo, un seul îlot au maximum (3 min).",
             "sagen": [
               "Quel thème de cette année aimeriez-vous montrer à d’autres jeunes ?",
               "Vous avez le droit d’être drôles. Ce qui compte, c’est qu’à la fin, on comprenne de quoi ça parle."
@@ -397,11 +403,11 @@
               "zeilen": [
                 [
                   "Scène en direct",
-                  "Vous jouez trois courtes scènes devant la classe, une voix off fait le lien."
+                  "Vous jouez trois courtes scènes devant la classe ; un narrateur ou une narratrice fait le lien."
                 ],
                 [
                   "Histoire en images figées",
-                  "Trois images figées, sans mouvement. La voix off raconte ; quand le metteur en scène touche un personnage, il dit sa pensée."
+                  "Trois images figées, sans mouvement. Le narrateur raconte ; quand le metteur en scène touche un personnage, celui-ci dit sa pensée à voix haute."
                 ],
                 [
                   "Pièce à écouter",
@@ -409,19 +415,19 @@
                 ],
                 [
                   "Vidéo sans montage",
-                  "Filmer scène après scène, dans l’ordre, uniquement avec une tablette de l’école. Qui ne veut pas être vu est voix, mains ou caméra."
+                  "Filmer scène après scène, dans l’ordre, uniquement avec une tablette de l’école. Qui ne veut pas apparaître à l’image prête sa voix ou ses mains, ou tient la caméra."
                 ]
               ]
             },
-            "tipp": "Les pièces drôles sont expressément permises : une comédie sur une rumeur dans le groupe de la classe fait souvent mieux passer un message qu’une pièce sérieuse. Ne donner la carte « Votre propre thème » que si l’îlot peut expliquer son thème en une phrase.",
-            "wennEsKippt": "Si tout le monde se presse au tableau, n’appeler qu’un jeune par îlot, îlot après îlot. Si un îlot n’arrive pas à se décider, chacun pose un doigt sur une carte et la majorité l’emporte ; en cas d’égalité, on tire au sort. Si un îlot veut une pièce sur une vraie personne de la classe ou un thème trop personnel ou trop lourd (violence à la maison, drogue, chagrin d’amour d’une personne précise), refuser aimablement mais clairement et revenir aux thèmes de l’année.",
+            "tipp": "Les pièces drôles sont expressément permises : une comédie sur une rumeur dans le groupe de la classe fait souvent mieux passer un message qu’une pièce sérieuse. La vidéo reste à un seul îlot – sinon, le son, les autorisations et l’effacement deviennent ingérables.",
+            "wennEsKippt": "Si tout le monde se presse au tableau, n’appeler qu’un jeune par îlot, îlot après îlot. Si un îlot n’arrive pas à se décider, chacun pose un doigt sur un thème et la majorité l’emporte ; en cas d’égalité, on tire au sort. Si un îlot veut une pièce sur une vraie personne de la classe ou un thème trop personnel ou trop lourd (violence à la maison, drogue, chagrin d’amour d’une personne précise), refuser aimablement mais clairement et revenir aux thèmes de l’année. Si un jeune insiste sur un tel thème, lui en reparler en tête-à-tête après le cours – cela peut être un signal ; en cas d’inquiétude, informer le SePAS le jour même.",
             "blatt": "ff7-stueck-karten"
           },
           {
             "titel": "Le message et trois scènes",
             "dauer": 18,
             "phase": "uebung",
-            "text": "En îlot, d’abord le message (5 min) : qu’est-ce que le public doit penser ou faire autrement après la pièce ? Une phrase, que chacun écrit dans son propre cahier à l’exercice 1, en cochant aussi la forme. Passer dans les îlots et vérifier pour chacun : est-ce qu’on peut jouer cette phrase ? Un îlot bloqué reçoit un exemple (liste). Puis l’histoire en trois scènes (10 min) : le début – ça se complique – le tournant, où l’on voit le message. Chacun esquisse à l’exercice 2, avec des bonshommes bâtons ou des mots-clés, et note en dessous la phrase la plus importante de la scène. Pour finir, passer dans chaque îlot : il raconte ses trois scènes en trois phrases (3 min).",
+            "text": "En îlot, d’abord le message (5 min) : qu’est-ce que le public doit penser ou faire autrement après la pièce ? Une phrase, que chacun écrit dans son propre cahier à l’exercice 1, avec le thème et la forme. Passer dans les îlots et vérifier : est-ce qu’on peut jouer cette phrase ? Un îlot bloqué reçoit un exemple (liste). Puis trouver les trois scènes debout (5 min) : le début – ça se complique – le tournant, où quelqu’un agit autrement. L’îlot met chaque scène rapidement en place ; pour le tournant, il essaie deux idées et garde la meilleure. De retour à la table, chacun esquisse les scènes à l’exercice 2 – des bonshommes bâtons et un mot-clé suffisent (5 min). Pour finir, chaque îlot raconte ses scènes à l’enseignant·e en trois phrases (3 min).",
             "sagen": [
               "Imaginez que quelqu’un voie votre pièce et fasse ensuite quelque chose autrement. Quoi exactement ?",
               "Le tournant, c’est le moment où quelqu’un agit autrement – avec un skill, une phrase ou de l’aide."
@@ -434,15 +440,15 @@
               "D’abord vérifier, ensuite partager.",
               "Tout ce que tu penses n’est pas forcément vrai."
             ],
-            "tipp": "Chacun remplit le plan dans son propre cahier, des mots-clés suffisent. Si quelqu’un manque la semaine prochaine, le plan est quand même là. Les personnages inventés reçoivent des prénoms que personne ne porte dans la classe.",
-            "wennEsKippt": "Si l’histoire devient de plus en plus dure – bagarres, armes, sang –, revenir au message : qu’est-ce que le public doit retenir ? La violence reste une allusion à l’arrière-plan ; au centre, il y a le tournant. Si un îlot tourne seulement autour d’une blague, poser une question sur le tournant : qui agit autrement ici – et comment ? Si certains ne tiennent plus en place, l’îlot se lève et essaie tout de suite la scène difficile en image figée – c’est souvent là que l’idée arrive.",
+            "tipp": "Chacun garde le plan dans son propre cahier – si quelqu’un manque la semaine prochaine, il est quand même là. Les personnages inventés reçoivent des prénoms que personne ne porte dans la classe.",
+            "wennEsKippt": "Si l’histoire devient de plus en plus dure – bagarres, armes, sang –, revenir au message : qu’est-ce que le public doit retenir ? La violence reste une allusion à l’arrière-plan ; au centre, il y a le tournant. Si un îlot tourne seulement autour d’une blague, poser une question sur le tournant : qui agit autrement ici – et comment ? Si un îlot reste assis, mettre la première scène en place avec lui : qui est là ? Toi, tu te mets ici, toi là – et qu’est-ce que vous dites ?",
             "blatt": "ff7-unser-stueck"
           },
           {
             "titel": "Pause active : images figées en cinq secondes",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se lève avec son îlot, à côté de la table. Annoncer une situation (liste) et compter à voix haute de cinq à zéro ; à « Statue ! », chaque îlot se fige en image, comme sur une photo. Regarder un instant autour de soi, se détendre, situation suivante. Au passage, tout le monde apprend le signal des répétitions : à « Statue ! », silence immédiat. Si la grande récréation tombe entre les deux heures, supprimer l’exercice ; s’entraîner alors brièvement au signal au début de l’étape 6.",
+            "text": "Tout le monde se lève avec son îlot, à côté de la table. Annoncer une situation (liste) et compter à voix haute de cinq à zéro ; à « Statue ! », chaque îlot se fige en image, comme sur une photo. Regarder un instant autour de soi, se détendre, situation suivante. Au passage, tout le monde apprend le signal des répétitions : « Statue ! » avec la main levée, comme le signal de calme de la classe – silence immédiat. Si la grande récréation tombe entre les deux heures, supprimer l’exercice ; s’entraîner alors brièvement au signal au début de l’étape 6.",
             "punkte": [
               "Le but à la dernière seconde.",
               "Le bus vous passe sous le nez.",
@@ -458,13 +464,19 @@
             "titel": "Répartir les rôles et première répétition",
             "dauer": 25,
             "phase": "uebung",
-            "text": "D’abord, lire ensemble les règles communes (exercice 4, page 2 de la fiche) ; chaque îlot coche et en ajoute une (3 min). Puis chaque îlot répartit les tâches avec les cartes rôles et la carte de sa forme, au moins une par personne, notées à l’exercice 3 (5 min). Qui ne veut pas monter sur scène choisit en premier ; à ceux qui ont montré peu d’envie au tour d’humeur, faire discrètement une proposition. Dans les îlots vidéo, demander à chacun, individuellement, s’il accepte d’être filmé ; on ne filme que la semaine prochaine. Première répétition (14 min) : qui se place où, qui dit quelle phrase, combien dure chaque scène ? Passer d’îlot en îlot, environ trois minutes chacun. Pour finir, chacun se secoue pour sortir du rôle, et l’îlot décide qui remplace qui en cas d’absence la semaine prochaine (3 min).",
+            "text": "D’abord, lire ensemble les règles communes (exercice 4, page 2) ; chaque îlot coche et en ajoute une (3 min). Puis chaque îlot répartit les tâches avec les cartes rôles et la carte de sa forme, au moins une par personne, notées à l’exercice 3 (5 min). Qui ne veut pas monter sur scène choisit en premier ; à ceux qui ont montré peu d’envie au tour d’humeur, faire discrètement une proposition. Dans l’îlot vidéo, demander à chacun, individuellement, s’il accepte d’être filmé ; on ne filme que la semaine prochaine. Première répétition selon le plan au tableau (liste, 14 min) : chaque îlot répète à une place fixe ; passer d’îlot en îlot, environ trois minutes chacun. Pour finir, chacun se secoue pour sortir du rôle, et l’îlot décide qui remplace un absent la semaine prochaine (3 min).",
             "sagen": [
-              "À « Statue ! », silence immédiat – ensuite, on continue.",
+              "Au signal “Statue !”, silence immédiat – ensuite, on continue.",
               "Personne n’est obligé de jouer. Mais chacun a un rôle. Lequel te correspond ?",
               "Aujourd’hui, aucune pièce n’est encore bonne. Une seule chose compte : qui se place où, et qui dit quelle phrase ?"
             ],
-            "tipp": "Cinq îlots qui répètent en même temps, c’est bruyant ; ça fait partie du jeu. Un ou deux îlots peuvent répéter dans le couloir si la porte reste ouverte et qu’on les voit. Aux plus agités conviennent les tâches avec du mouvement ou une responsabilité : le temps, les accessoires, les bruitages.",
+            "punkte": [
+              "Mettez en place la première image de la scène : qui se tient où ?",
+              "Chaque personnage dit sa phrase la plus importante – fort et face au public.",
+              "Jouez la scène une fois en entier. La mise en scène lance « Action ! » et « Coupez ! » et donne un conseil.",
+              "Puis la scène suivante. Pour finir, tout d’une traite, en chronométrant."
+            ],
+            "tipp": "Cinq îlots qui répètent en même temps, c’est bruyant ; ça fait partie du jeu. Chaque îlot répète dans son coin ; un îlot peut aller dans le couloir si la porte reste ouverte et qu’on le voit. Aux plus agités conviennent les tâches avec du mouvement ou une responsabilité : le temps, les accessoires, les bruitages.",
             "wennEsKippt": "Si tout le monde veut la mise en scène et que personne ne joue, tirer au sort ou passer à la pièce à écouter ou aux images figées. Si un jeune refuse tout rôle, ne pas se disputer devant l’îlot : lui proposer deux tâches au choix (le temps ou les bruitages), sinon lui confier l’observation pour l’avant-première et lui en reparler après le cours. Si quelqu’un reçoit un rôle trop proche de lui – la nouvelle dans le rôle de celle qui ne comprend rien, le plus petit dans celui de la victime –, redistribuer discrètement : on choisit un rôle par envie, pas par ressemblance. Si quelqu’un bouscule ou imite une vraie personne, lancer « Statue ! », montrer les règles communes et reprendre.",
             "blatt": "ff7-unser-stueck"
           },
@@ -472,9 +484,9 @@
             "titel": "Avant-première : une image figée par îlot",
             "dauer": 10,
             "phase": "uebung",
-            "text": "Tout le monde est assis face à l’espace de jeu, libéré. Chaque îlot montre le moment clé de sa pièce en image figée : le metteur en scène compte à voix haute de trois à zéro, puis l’image tient dix secondes. La classe devine le thème, puis un jeune d’un autre îlot fait un compliment qui commence par « On voit tout de suite que… ». Les îlots qui préparent une pièce à écouter jouent à la place vingt secondes de voix et de bruits, le public ferme les yeux. Environ deux minutes par îlot.",
+            "text": "Tout le monde est assis face à l’espace de jeu, libéré. Chaque îlot montre le moment clé de sa pièce en image figée : le metteur en scène compte à voix haute de trois à zéro, puis l’image tient dix secondes. La classe devine le thème et dit quel skill pourrait aider ici ; puis un jeune d’un autre îlot fait un compliment qui commence par « On voit tout de suite que… ». Les îlots qui préparent une pièce à écouter jouent à la place vingt secondes de voix et de bruits, le public ferme les yeux. Environ deux minutes par îlot.",
             "sagen": [
-              "Trois, deux, un – statue. Qu’est-ce que vous voyez ? De quel thème s’agit-il ?",
+              "Trois, deux, un – statue. Qu’est-ce que vous voyez ? De quel thème s’agit-il – et quel skill pourrait aider ?",
               "Un compliment, et précis : on voit tout de suite que…"
             ],
             "tipp": "L’image figée est une prestation sans texte – pour beaucoup, la première scène de l’année. Qui tient dix secondes aujourd’hui osera plus facilement trois minutes la semaine prochaine.",
@@ -484,7 +496,7 @@
             "titel": "Skill : voir le trac autrement",
             "dauer": 10,
             "phase": "skill",
-            "text": "Faire le lien : qui avait le cœur qui battait un peu avant l’image figée ? La semaine prochaine, vous présentez la pièce entière – les comédiens appellent ça le trac. Expliquer : le cœur qui bat vite, la respiration rapide et les mains qui picotent ne veulent pas dire que ça va rater ; le corps libère de l’énergie, comme avant un match. Pour que l’exercice soit réel, tout le monde court sur place pendant vingt secondes (qui ne peut pas courir tambourine vite sur ses cuisses). Puis guider lentement les trois étapes en les faisant soi-même, deux fois (liste). Pour finir, recueillir deux ou trois retours : qu’est-ce qui a changé ? Quand est-ce que ça pourrait servir – avant un devoir en classe, un penalty, le premier jour de stage ?",
+            "text": "Faire le lien : qui avait le cœur qui battait avant l’image figée ? La semaine prochaine, vous présentez la pièce entière – les comédiens appellent ça le trac. Expliquer : le cœur qui bat vite, la respiration rapide et les mains qui picotent ne veulent pas dire que ça va rater ; le corps libère de l’énergie, comme avant un match. Pour le sentir, tout le monde court sur place sans bruit pendant vingt secondes (ou tambourine vite sur ses cuisses). Puis guider lentement les trois étapes en les faisant soi-même, deux fois (liste). Pour finir, deux ou trois retours : qu’est-ce qui a changé ? Quand est-ce que ça aide – avant un devoir en classe, un penalty, le premier jour de stage ? Préciser : ce skill vaut pour le trac avant de se montrer ; qui a peur d’une personne va chercher de l’aide.",
             "sagen": [
               "Votre cœur bat vite. Ça ne veut pas dire : ça va rater. Ça veut dire : votre corps se prépare.",
               "Vous n’avez pas besoin de faire disparaître le trac. Vous pouvez vous en servir."
@@ -501,12 +513,12 @@
             "titel": "Skills-Pass, mission et suite",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire au tableau la question du Skills-Pass : quel est le message de notre pièce – et qu’est-ce que j’y apporte ? Chacun écrit sa phrase (2 min) et reçoit le tampon. Puis annoncer la mission de la semaine, qui figure dans le cahier : une fois dans la semaine, voir le trac autrement. Les accessoires retournent dans la caisse, les cartes de chaque îlot dans un sac marqué de sa lettre, que l’enseignant·e garde jusqu’à la semaine prochaine. Pour finir, annoncer la prochaine séance.",
+            "text": "Écrire au tableau la question du Skills-Pass : quel est le message de notre pièce – et qu’est-ce que j’y apporte ? Chacun écrit sa phrase (2 min) et reçoit le tampon. Puis annoncer la mission de la semaine, qui figure dans le cahier : une fois dans la semaine, voir le trac autrement. Dans chaque îlot, la personne chargée des accessoires les remet dans la caisse ; la page des thèmes et les cartes vont dans le sac marqué de la lettre de l’îlot, que l’enseignant·e garde jusqu’à la semaine prochaine. Pour finir, annoncer la prochaine séance.",
             "sagen": [
               "Pour le Skills-Pass : quel est votre message – et quelle est votre part ?",
               "Si votre cœur bat plus vite cette semaine, essayez la phrase : mon corps se prépare."
             ],
-            "tipp": "Rassembler affiches, post-it et cartes de chaque îlot dans un sac marqué de la lettre du groupe – la semaine prochaine, on repart sans chercher."
+            "tipp": "Qui oublie souvent son cahier le met aujourd’hui dans le sac de son îlot – sinon, le plan manquera la semaine prochaine."
           }
         ],
         "bruecke": "La semaine prochaine, vous répétez une dernière fois et vous présentez vos pièces à la classe – avec des retours selon des règles fixes et bienveillantes. Personne n’est obligé de monter sur scène, mais chaque rôle compte.",
@@ -517,9 +529,9 @@
           "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
           "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212."
         ],
-        "achtung": "Ne jamais rejouer de vrais incidents, prénoms ou personnes de la classe ou de l’école, enseignants compris. Les rôles où quelqu’un est moqué, exclu ou menacé ne vont qu’à des volontaires ; un jeune qui subit du harcèlement n’est jamais poussé dans ce rôle. La violence est seulement suggérée, les contacts physiques seulement après accord. On ne filme qu’avec les tablettes de l’école et seulement ceux qui ont dit oui individuellement. Si le jeu révèle qu’un jeune subit de la violence ou du harcèlement : ne pas approfondir devant la classe, lui parler après le cours, informer le SePAS le jour même.",
+        "achtung": "Ne jamais rejouer de vrais incidents, prénoms ou personnes de la classe ou de l’école, enseignants compris ; aucune blague sur l’origine, la langue, la religion ou l’apparence. Les rôles où quelqu’un est moqué, exclu ou menacé ne vont qu’à des volontaires – jamais à un jeune harcelé. La violence est seulement suggérée, les contacts physiques seulement après accord. On ne filme qu’avec une tablette de l’école, avec l’autorisation requise, et seulement ceux qui disent oui. Si le jeu ou le choix du thème révèle qu’un jeune subit de la violence ou du harcèlement : ne pas approfondir en classe, lui parler après le cours, informer le SePAS le jour même.",
         "differenzierung": {
-          "leichter": "Lire les cartes thèmes à voix haute en montrant les images ; dans le plan des scènes, des bonshommes bâtons et une phrase suffisent. Les jeunes qui apprennent encore la langue ou qui lisent difficilement reçoivent un rôle avec peu de texte (image figée, bruitages, technique), de préférence en binôme ; un personnage peut aussi parler sa propre langue.",
+          "leichter": "Lire les thèmes à voix haute en montrant les images ; dans le plan des scènes, des bonshommes bâtons et un mot-clé suffisent. Les jeunes qui apprennent encore la langue ou qui lisent difficilement reçoivent un rôle avec peu de texte (image figée, bruitages, technique), de préférence en binôme ; un personnage peut aussi parler sa propre langue.",
           "schwerer": "Prévoir le tournant en deux versions : comme ça se passe souvent, puis avec un skill de l’année. Ou, à la mise en scène, écrire après l’avant-première un plan de répétition pour la semaine suivante : qu’est-ce qu’on répète d’abord, qu’est-ce qui doit être plus fort, plus court ?"
         },
         "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec émotion, chiffre et envie de scène (5 min), choisir le thème et trouver le message (10 min), préparer trois scènes et répartir les rôles (15 min), première répétition (10 min), voir le trac autrement (5 min), Skills-Pass et mission (5 min). L’avant-première est supprimée ; les règles communes sont lues au début de la séance suivante."
@@ -586,7 +598,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Plant drei Szenen. Zeichnet Strichfiguren oder schreibt Stichworte, darunter den wichtigsten Satz der Szene.",
+            "text": "Plant drei Szenen. Zeichnet Strichfiguren und schreibt darunter ein Stichwort oder den wichtigsten Satz.",
             "symbole": [
               "malen",
               "schreiben"
@@ -650,7 +662,7 @@
             "beispiel": [
               "Erzählstimme",
               "Inês",
-              "sagt am Anfang, wo wir sind; liest zwischen den Szenen einen Satz"
+              "sagt am Anfang, wo wir sind; sagt zwischen den Szenen einen Satz"
             ]
           },
           {
@@ -670,10 +682,11 @@
             "frei": 1,
             "items": [
               "Wir spielen keine echten Personen aus Klasse oder Schule – auch keine Lehrkräfte.",
+              "Wir machen keine Witze über Herkunft, Sprache, Religion oder Aussehen.",
               "Gewalt deuten wir nur an: in Zeitlupe oder als Standbild.",
               "Berührungen nur nach Absprache. Stopp heißt Stopp.",
               "Wer eine schwere Rolle hat, darf sie jederzeit abgeben.",
-              "Gefilmt wird nur, wer Ja gesagt hat, mit dem Tablet der Schule. Nach dem Zeigen löschen wir das Video.",
+              "Gefilmt wird nur mit dem Tablet der Schule und nur, wer Ja gesagt hat – nie mit dem eigenen Handy. Nach dem Zeigen löschen wir das Video.",
               "Nach dem Spielen schütteln wir die Rolle ab."
             ]
           },
@@ -726,8 +739,8 @@
         "lehrer": {
           "ziel": "Die Tischgruppe plant ein Stück von drei Minuten: Form, Thema, Botschaft, drei Szenen und eine Aufgabe für jede Person. Nach dem Zeigen hält jede Person fest, was sie mitnimmt.",
           "ablauf": [
-            "Einheit 33, Schritt 4 (18 Min.): Aufgaben 1 und 2 – jede Person schreibt im eigenen Heft mit.",
-            "Schritt 6 (25 Min.): Abmachungen lesen und ankreuzen (Aufgabe 4), Aufgaben verteilen (Aufgabe 3), erste Probe.",
+            "Einheit 33, Schritt 4 (18 Min.): Aufgabe 1, dann die Szenen im Stehen finden und in Aufgabe 2 skizzieren – Strichfiguren und ein Stichwort reichen.",
+            "Schritt 6 (25 Min.): Abmachungen lesen und ankreuzen (Aufgabe 4), Aufgaben verteilen (Aufgabe 3), erste Probe nach dem Probenplan.",
             "Einheit 34: die Regeln für Rückmeldungen vor der Generalprobe lesen, „Aufregung umdeuten“ vor dem ersten Auftritt, Aufgabe 5 im Nachgespräch."
           ],
           "hintergrund": "Wer ein Verhalten selbst spielt und damit Erfolg hat, erlebt sich als wirksam (Bandura, 1977). Rückmeldungen helfen, wenn sie konkret sind und sich auf die Aufgabe beziehen, nicht auf die Person (Hattie & Timperley, 2007).",
@@ -771,7 +784,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Préparez trois scènes. Dessinez des bonshommes bâtons ou notez des mots-clés, avec en dessous la phrase la plus importante.",
+            "text": "Préparez trois scènes. Dessinez des bonshommes bâtons et notez en dessous un mot-clé ou la phrase la plus importante.",
             "symbole": [
               "malen",
               "schreiben"
@@ -833,9 +846,9 @@
             ],
             "zeilen": 4,
             "beispiel": [
-              "Voix off",
+              "Narratrice",
               "Inês",
-              "dit au début où l’on est ; lit une phrase entre les scènes"
+              "dit au début où l’on est ; dit une phrase entre les scènes"
             ]
           },
           {
@@ -843,7 +856,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Lisez les règles pour jouer et filmer. Cochez ce que vous promettez et ajoutez-en une à vous.",
+            "text": "Lisez les règles pour jouer et filmer. Cochez ce que vous promettez et ajoutez-en une de votre choix.",
             "symbole": [
               "gruppe",
               "ankreuzen"
@@ -854,12 +867,13 @@
             "spalten": 1,
             "frei": 1,
             "items": [
-              "Nous ne jouons pas de vraies personnes de la classe ou de l’école – pas d’enseignants non plus.",
+              "On ne joue pas de vraies personnes de la classe ou de l’école – pas d’enseignants non plus.",
+              "On ne fait pas de blagues sur l’origine, la langue, la religion ou l’apparence.",
               "La violence est seulement suggérée : au ralenti ou en image figée.",
               "On ne se touche qu’après s’être mis d’accord. Stop veut dire stop.",
               "Qui a un rôle difficile peut le rendre à tout moment.",
-              "On ne filme que ceux qui ont dit oui, avec la tablette de l’école. Après la présentation, nous effaçons la vidéo.",
-              "Après avoir joué, nous nous secouons pour sortir du rôle."
+              "On ne filme qu’avec la tablette de l’école et seulement ceux qui ont dit oui – jamais avec son propre portable. Après la présentation, on efface la vidéo.",
+              "Après avoir joué, on se secoue pour sortir du rôle."
             ]
           },
           {
@@ -868,7 +882,7 @@
             "titel": "Comment on donne un retour",
             "punkte": [
               "D’abord, on applaudit.",
-              "Ce qui est passé : « Ce qu’on a compris, c’est que… »",
+              "Le message : « On a compris que… »",
               "Un compliment précis : « J’ai aimé la façon dont… »",
               "Un conseil sur la scène : « Vous pourriez peut-être… »",
               "Jamais de remarque sur l’apparence, la voix ou l’accent.",
@@ -911,8 +925,8 @@
         "lehrer": {
           "ziel": "L’îlot prépare une pièce de trois minutes : forme, thème, message, trois scènes et un rôle pour chacun. Après la présentation, chaque jeune note ce qu’il retient.",
           "ablauf": [
-            "Séance 33, étape 4 (18 min) : exercices 1 et 2 – chacun écrit dans son propre cahier.",
-            "Étape 6 (25 min) : lire et cocher les règles communes (exercice 4), répartir les rôles (exercice 3), première répétition.",
+            "Séance 33, étape 4 (18 min) : exercice 1, puis trouver les scènes debout et les esquisser à l’exercice 2 – des bonshommes bâtons et un mot-clé suffisent.",
+            "Étape 6 (25 min) : lire et cocher les règles communes (exercice 4), répartir les rôles (exercice 3), première répétition selon le plan.",
             "Séance 34 : lire les règles du retour avant la générale, « voir le trac autrement » avant la première prestation, exercice 5 pendant l’échange final."
           ],
           "hintergrund": "Qui joue soi-même un comportement et réussit se découvre capable (Bandura, 1977). Les retours aident quand ils sont précis et portent sur la tâche, pas sur la personne (Hattie & Timperley, 2007).",
@@ -950,11 +964,11 @@
       ],
       "de": {
         "titel": "Unser Stück: Themen und Aufgaben",
-        "untertitel": "Kopiervorlage – Seite 1 einmal, Seite 2 fünfmal kopieren und ausschneiden",
+        "untertitel": "Kopiervorlage – Seite 1 sechsmal (eine davon auf A3), Seite 2 fünfmal kopieren; nur Seite 2 ausschneiden",
         "bausteine": [
           {
             "art": "text",
-            "text": "Themenkarten an die Tafel hängen. Eine Karte weglassen, wenn sie an einen echten Vorfall in der Klasse rührt.",
+            "text": "Je Tischgruppe eine Themenseite, eine auf A3 an die Tafel. Ein Thema streichen, wenn es an einen echten Vorfall in der Klasse rührt; Namen ändern, die jemand in der Klasse trägt.",
             "klein": true
           },
           {
@@ -985,7 +999,7 @@
               {
                 "titel": "Stopp sagen",
                 "bild": "icon:hand-stop",
-                "text": "An der Bushaltestelle nimmt Kevin Zoé immer wieder die Mütze weg. Lustig findet das nur er. Wie sagt Zoé Stopp?"
+                "text": "An der Bushaltestelle nimmt Mathis Zoé immer wieder die Mütze weg. Lustig findet das nur er. Wie sagt Zoé Stopp?"
               },
               {
                 "titel": "Streit, der anders ausgeht",
@@ -995,7 +1009,7 @@
               {
                 "titel": "Nein sagen",
                 "bild": "icon:users-group",
-                "text": "Die Clique will mittags ohne Erlaubnis zum Laden: ‚Komm schon, sei kein Baby.‘ Wie sagt Rafael Nein?"
+                "text": "Die Clique will mittags ohne Erlaubnis zum Laden: „Komm schon, sei kein Baby.“ Wie sagt Rafael Nein?"
               },
               {
                 "titel": "Zuschauen oder helfen?",
@@ -1010,12 +1024,12 @@
               {
                 "titel": "Der Detektiv im Kopf",
                 "bild": "icon:search",
-                "text": "Vor dem Spiel denkt Diogo: ‚Ich verliere sowieso.‘ Ein Detektiv prüft den Satz, dann spielt Diogo mit einem neuen."
+                "text": "Vor dem Spiel denkt Diogo: „Ich verliere sowieso.“ Ein Detektiv prüft den Satz, dann spielt Diogo mit einem neuen."
               },
               {
                 "titel": "Ruhig durch den Test",
                 "bild": "icon:pencil",
-                "text": "Morgen ist der Mathetest. Aylin liegt wach, der Kopf ist voll. Was macht sie am Abend – und im Test?"
+                "text": "Morgen ist der Mathetest. Aylin liegt wach; ihre Gedanken spricht eine zweite Person laut. Was hilft am Abend – und im Test?"
               },
               {
                 "titel": "Euer eigenes Thema",
@@ -1040,7 +1054,7 @@
               {
                 "titel": "Regie",
                 "bild": "icon:speakerphone",
-                "text": "Du hast den Überblick. Du rufst ‚Bitte!‘ und ‚Stopp!‘ und gibst pro Stopp genau einen Tipp: lauter, langsamer, zum Publikum."
+                "text": "Du hast den Überblick. Du rufst „Bitte!“ und „Stopp!“ und gibst pro Stopp genau einen Tipp: lauter, langsamer, zum Publikum."
               },
               {
                 "titel": "Spiel",
@@ -1087,7 +1101,7 @@
               {
                 "titel": "Standbild-Geschichte",
                 "bild": "icon:photo",
-                "text": "Drei Standbilder ohne Bewegung, die Erzählstimme spricht dazu. Tippt die Regie eine Figur an, sagt sie ihren Gedanken."
+                "text": "Drei Standbilder ohne Bewegung, die Erzählstimme spricht dazu. Tippt die Regie eine Figur an, sagt diese ihren Gedanken."
               },
               {
                 "titel": "Hörstück",
@@ -1105,24 +1119,24 @@
         "lehrer": {
           "ziel": "Die Themenkarten erinnern an die Kapitel des Jahres und geben jeder Gruppe einen Einstieg; Aufgaben- und Formkarten sorgen dafür, dass jede Person eine klare Aufgabe hat.",
           "ablauf": [
-            "Seite 1 einmal kopieren, ausschneiden und an die Tafel hängen; eine Karte weglassen, wenn sie an einen echten Vorfall in der Klasse rührt.",
-            "Seite 2 fünfmal kopieren: Jede Tischgruppe bekommt die sechs Aufgabenkarten und die Karte ihrer Form.",
+            "Seite 1 sechsmal kopieren: je Tischgruppe eine Themenseite, eine auf A3 an die Tafel; ein Thema streichen, wenn es an einen echten Vorfall in der Klasse rührt.",
+            "Seite 2 fünfmal kopieren und schneiden: Jede Tischgruppe bekommt die sechs Aufgabenkarten und die Karte ihrer Form.",
             "Nach Einheit 34 einsammeln; die Karten lassen sich im nächsten Jahr wieder verwenden."
           ],
           "hintergrund": "Feste Aufgaben in der Gruppe verteilen die Verantwortung und beteiligen auch Zurückhaltende. Im Theater nach Boal (1979) dient das Spiel einer Frage an das Publikum: Was könnte man anders machen?",
           "quellen": [
             "Boal, A. (1979). Theatre of the Oppressed. London: Pluto Press."
           ],
-          "material": "Schere, Tüten oder Umschläge für fünf Gruppen"
+          "material": "Schere, fünf Tüten oder Umschläge (A–E)"
         }
       },
       "fr": {
         "titel": "Notre pièce : thèmes et rôles",
-        "untertitel": "Modèle à photocopier – page 1 une fois, page 2 cinq fois, puis découper",
+        "untertitel": "Modèle à photocopier – page 1 six fois (dont une en A3), page 2 cinq fois ; seule la page 2 est à découper",
         "bausteine": [
           {
             "art": "text",
-            "text": "Afficher les cartes thèmes au tableau. Retirer une carte si elle touche à un incident réel dans la classe.",
+            "text": "Une page des thèmes par îlot, une en A3 au tableau. Rayer un thème s’il touche à un incident réel dans la classe ; changer les prénoms que porte un jeune de la classe.",
             "klein": true
           },
           {
@@ -1153,7 +1167,7 @@
               {
                 "titel": "Dire stop",
                 "bild": "icon:hand-stop",
-                "text": "À l’arrêt de bus, Kevin pique sans arrêt le bonnet de Zoé. Il n’y a que lui que ça fait rire. Comment Zoé dit-elle stop ?"
+                "text": "À l’arrêt de bus, Mathis pique sans arrêt le bonnet de Zoé. Il n’y a que lui que ça fait rire. Comment Zoé dit-elle stop ?"
               },
               {
                 "titel": "Une dispute qui finit autrement",
@@ -1163,7 +1177,7 @@
               {
                 "titel": "Dire non",
                 "bild": "icon:users-group",
-                "text": "La bande veut aller au magasin à midi sans autorisation : “Allez, fais pas le bébé.” Comment Rafael dit-il non ?"
+                "text": "La bande veut aller au magasin à midi sans autorisation : « Allez, fais pas le bébé. » Comment Rafael dit-il non ?"
               },
               {
                 "titel": "Regarder ou aider ?",
@@ -1178,12 +1192,12 @@
               {
                 "titel": "Le détective dans la tête",
                 "bild": "icon:search",
-                "text": "Avant le match, Diogo pense : “De toute façon, je vais perdre.” Un détective examine la phrase, puis Diogo joue avec une nouvelle."
+                "text": "Avant le match, Diogo pense : « De toute façon, je vais perdre. » Un détective examine la phrase, puis Diogo joue avec une nouvelle."
               },
               {
                 "titel": "Calme pendant le devoir",
                 "bild": "icon:pencil",
-                "text": "Demain, c’est le devoir de maths. Aylin n’arrive pas à dormir, sa tête est pleine. Que fait-elle le soir – et pendant le devoir ?"
+                "text": "Demain, c’est le devoir de maths. Aylin n’arrive pas à dormir ; une deuxième personne dit ses pensées à voix haute. Qu’est-ce qui aide le soir – et pendant le devoir ?"
               },
               {
                 "titel": "Votre propre thème",
@@ -1208,7 +1222,7 @@
               {
                 "titel": "Mise en scène",
                 "bild": "icon:speakerphone",
-                "text": "Tu as une vue d’ensemble. Tu lances “Action !” et “Coupez !” et tu donnes un seul conseil par arrêt : plus fort, plus lentement, face au public."
+                "text": "Tu as une vue d’ensemble. Tu lances « Action ! » et « Coupez ! » et tu donnes un seul conseil par arrêt : plus fort, plus lentement, face au public."
               },
               {
                 "titel": "Jeu",
@@ -1216,7 +1230,7 @@
                 "text": "Tu joues un personnage – jamais toi-même ni une vraie personne. Après avoir joué, tu te secoues pour sortir du rôle."
               },
               {
-                "titel": "Voix off",
+                "titel": "Narrateur, narratrice",
                 "bild": "icon:microphone",
                 "text": "Tu guides le public : où, quand, qui. Entre les scènes, tu dis une phrase. Tu restes sur le côté ou tu parles depuis le fond."
               },
@@ -1250,12 +1264,12 @@
               {
                 "titel": "Scène en direct",
                 "bild": "icon:users",
-                "text": "Vous jouez trois courtes scènes devant la classe. La voix off fait le lien."
+                "text": "Vous jouez trois courtes scènes devant la classe. Le narrateur ou la narratrice fait le lien."
               },
               {
                 "titel": "Histoire en images figées",
                 "bild": "icon:photo",
-                "text": "Trois images figées, sans mouvement ; la voix off raconte. Quand le metteur en scène touche un personnage, il dit sa pensée."
+                "text": "Trois images figées, sans mouvement ; le narrateur raconte. Quand le metteur en scène touche un personnage, celui-ci dit sa pensée."
               },
               {
                 "titel": "Pièce à écouter",
@@ -1265,7 +1279,7 @@
               {
                 "titel": "Vidéo sans montage",
                 "bild": "icon:camera",
-                "text": "Filmer scène après scène, dans l’ordre. Qui ne veut pas être vu est voix, mains ou caméra."
+                "text": "Filmer scène après scène, dans l’ordre. Qui ne veut pas apparaître à l’image prête sa voix ou ses mains, ou tient la caméra."
               }
             ]
           }
@@ -1273,15 +1287,15 @@
         "lehrer": {
           "ziel": "Les cartes thèmes rappellent les chapitres de l’année et donnent un point de départ à chaque îlot ; les cartes rôles et formes donnent à chacun une tâche claire.",
           "ablauf": [
-            "Photocopier la page 1 une fois, découper et afficher au tableau ; retirer une carte si elle touche à un incident réel dans la classe.",
-            "Photocopier la page 2 cinq fois : chaque îlot reçoit les six cartes rôles et la carte de sa forme.",
+            "Photocopier la page 1 six fois : une page des thèmes par îlot, une en A3 au tableau ; rayer un thème s’il touche à un incident réel dans la classe.",
+            "Photocopier la page 2 cinq fois et découper : chaque îlot reçoit les six cartes rôles et la carte de sa forme.",
             "Ramasser après la séance 34 ; les cartes resservent l’année suivante."
           ],
           "hintergrund": "Des rôles fixes dans le groupe répartissent les responsabilités et font participer aussi les plus réservés. Dans le théâtre de Boal (1979), le jeu sert une question posée au public : qu’est-ce qu’on pourrait faire autrement ?",
           "quellen": [
             "Boal, A. (1979). Theatre of the Oppressed. London: Pluto Press."
           ],
-          "material": "Ciseaux, sachets ou enveloppes pour cinq îlots"
+          "material": "Ciseaux, cinq sacs ou enveloppes (A à E)"
         }
       }
     }

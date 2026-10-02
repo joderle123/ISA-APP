@@ -36,27 +36,26 @@
       ],
       "de": {
         "titel": "Achtsamkeit und Kopf-Skills",
-        "kurz": "Gedanken kommen und gehen: Die Klasse übt, sie vorbeiziehen zu lassen, testet Kopf-Skills unter Störung und wählt einen sicheren Ort im Kopf – oder einen Gegenstand, ein Bild, das ruhig macht.",
+        "kurz": "Gedanken kommen und gehen: Die Klasse übt, sie vorbeiziehen zu lassen, testet Kopf-Skills mit und ohne Störung und wählt einen sicheren Ort – oder einen Gegenstand, ein Bild.",
         "ziele": [
           "beschreiben nach dem Gedankenschiffchen, wie es ist, Gedanken zu bemerken und vorbeiziehen zu lassen, statt ihnen zu folgen",
-          "testen vier Kopf-Skills und erklären mit dem Störsender-Experiment, warum sie bei Gelb helfen und bei Rot kaum",
+          "testen Kopf-Skills und erklären mit dem Störsender-Experiment, warum sie bei Gelb helfen und bei Rot kaum",
           "wählen einen sicheren Ort, einen Gegenstand oder ein Bild und rufen ihn mit einem Stichwort auf"
         ],
         "material": [
-          "Gefühlsrad-Plakat, 20 Klebepunkte",
-          "Plakat Anspannungsskala 0–100",
+          "Gefühlsrad, Skala 0–100, 40 Klebepunkte",
           "Klangschale oder anderes Ruhesignal",
           "Schülerheft mit Skills-Tester",
-          "Kiste: Steine, Murmeln, Postkarten",
+          "Kiste: glatte Steine, Knetbälle, Postkarten",
           "Buntstifte, Musik ohne Gesang",
           "Uhr mit Sekundenzeiger oder Timer",
           "Stempel für den Skills-Pass"
         ],
         "vorbereitung": [
-          "Tafel: die vier Kopf-Skills (Schritt 4), die Regeln und das abgedeckte Tafelbild (Schritt 6).",
-          "Kiste mit 20 bis 25 kleinen Gegenständen (Steine, Murmeln, Knetbälle) und ruhigen Postkarten packen.",
-          "Die Anleitungen in Schritt 3 und 8 einmal laut und langsam lesen.",
-          "Régent oder SePAS fragen, ob jemand gerade sehr belastet ist; diese Person vorher ansprechen und wählen lassen."
+          "Tafel: Kurznamen der Skills (Schritt 2), Regeln und abgedecktes Tafelbild (Schritt 6).",
+          "Kiste: 25 glatte Steine, die Knetbälle aus Stunde 15, zehn ruhige Postkarten.",
+          "Anleitungen in Schritt 3 und 8 einmal laut und langsam lesen.",
+          "Régent oder SePAS fragen, ob jemand gerade sehr belastet ist; die Person vorher ansprechen und wählen lassen."
         ],
         "ablauf": [
           {
@@ -77,7 +76,7 @@
           {
             "min": "30–45",
             "phase": "uebung",
-            "titel": "Kopf-Skills ausprobieren: vier Runden"
+            "titel": "Kopf-Skills im Test: drei Runden"
           },
           {
             "min": "45–50",
@@ -110,7 +109,7 @@
             "titel": "Check-in: erst still spüren, dann zeigen",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person wie gewohnt ihren Punkt auf das Gefühlsrad (2 Min.). Wenn alle sitzen, eine halbe Minute Stille – die Lehrkraft macht die Haltung vor: beide Füße auf dem Boden, Blick auf den Tisch oder Augen zu, nur bemerken, welches Gefühl und welche Zahl gerade da sind; ein Ton der Klangschale beendet die Stille (1 Min.). Dann zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige nennen ihr Wort (5 Min.). Zum Schluss per Daumen fragen: War eure Zahl nach der Stille anders als davor (2 Min.)? Die halbe Minute war schon die erste Übung der Stunde.",
+            "text": "Beim Hereinkommen klebt jede Person wie gewohnt ihre zwei Punkte auf Gefühlsrad und Anspannungsskala (2 Min.); der Punkt auf der Skala ist heute die Zahl vorher. Wenn alle sitzen, eine halbe Minute Stille: Die Lehrkraft macht die Haltung vor – beide Füße auf dem Boden, Blick auf den Tisch oder Augen zu, nur bemerken, welches Gefühl und welche Zahl gerade da sind; ein Ton der Klangschale beendet die Stille (1 Min.). Dann zeigen alle auf drei ihre Zahl jetzt mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige nennen ihr Wort (5 Min.). Zum Schluss per Daumen: Ist eure Zahl jetzt anders als euer Punkt auf der Skala (2 Min.)? Die halbe Minute war schon die erste Übung der Stunde.",
             "sagen": [
               "Eine halbe Minute nur bemerken: Welches Gefühl ist da, welche Zahl? Ihr müsst nichts ändern.",
               "Auf drei zeigt ihr eure Zahl. Ich fange an: ruhig, ein bisschen müde – 30."
@@ -122,7 +121,7 @@
             "titel": "Rückblick, Wochen-Mission und Thema",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission der letzten Stunde per Daumen fragen (hoch, Mitte, runter); eine Stimme erzählt, was sie ausprobiert hat. Dann auf das Plakat der Anspannungsskala zeigen: Körper- und Sinnes-Skills wirken auch bei Rot. Heute kommt der Kopf dazu – Gedanken bemerken, ohne ihnen zu folgen, und Kopf-Skills, die bei Gelb helfen. Das Thema an die Tafel schreiben: Achtsamkeit und Kopf-Skills.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission per Daumen fragen: Wer hat 3-3-3 oder einen Song von seiner Liste ausprobiert, als die Zahl über 50 stieg? Eine Stimme erzählt Zahl vorher und nachher. Dann auf die Anspannungsskala zeigen: Körper- und Sinnes-Skills wirken auch bei Rot. Heute kommt der Kopf dazu – Gedanken bemerken, ohne ihnen zu folgen, und Kopf-Skills für Gelb. Das Thema an die Tafel schreiben und den Skills-Tester bei „Stunde 16“ aufschlagen lassen; die Kurznamen der heutigen Skills stehen an der Tafel: Schiffchen, Zählen, Fünferliste, Freund, Ort.",
             "sagen": [
               "Körper und Sinne sind eure Notbremse. Heute trainiert ihr den Kopf – für Momente, in denen er noch mitspielt."
             ],
@@ -132,7 +131,7 @@
             "titel": "Gedanken vorbeiziehen lassen",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Eisbär-Experiment (3 Min.): Alle schauen auf den Tisch oder schließen die Augen und denken 30 Sekunden lang auf keinen Fall an einen Eisbären; wer ihn trotzdem gesehen hat, hebt die Hand – meist fast alle. Erklären (2 Min.): Gedanken lassen sich nicht wegdrücken, je mehr man es versucht, desto öfter kommen sie – aber man kann sie vorbeiziehen lassen. Dann einen Fluss mit Schiffen an die Tafel skizzieren, alle schätzen still ihre Zahl, und das Gedankenschiffchen im Sitzen anleiten (5 Min.): ruhige Stimme, nach jeder Zeile drei, vier Atemzüge Pause (Liste), die Lehrkraft macht mit offenen Augen mit. Auswertung (3 Min.): Wie viele Schiffe sind vorbeigefahren? Wer ist mitgefahren? Festhalten: Abschweifen ist kein Fehler, das Bemerken und Zurückkommen ist der Skill. Zum Schluss Aufgabe 1 ankreuzen und die erste Zeile im Skills-Tester füllen: Zahl vorher, Skill, Zahl nachher (2 Min.).",
+            "text": "Eisbär-Experiment (3 Min.): Einen Eisbären an die Tafel skizzieren; alle schauen auf den Tisch oder schließen die Augen und denken 30 Sekunden lang auf keinen Fall an einen Eisbären. Wer ihn trotzdem gesehen hat, hebt die Hand – meist fast alle. Erklären (2 Min.): Gedanken lassen sich nicht wegdrücken, je mehr man es versucht, desto öfter kommen sie; man kann sie aber vorbeiziehen lassen. Einen Fluss mit Schiffen dazuzeichnen; alle tragen ihre Zahl vorher in die erste freie Zeile des Skills-Testers ein. Dann das Gedankenschiffchen im Sitzen anleiten (5 Min.): ruhige Stimme, nach jeder Zeile drei, vier Atemzüge Pause (Liste), die Lehrkraft macht mit offenen Augen mit. Auswertung (3 Min.): Wie viele Schiffe sind vorbeigefahren, wer ist mitgefahren? Festhalten: Abschweifen ist kein Fehler, das Bemerken und Zurückkommen ist der Skill. Zum Schluss Zahl nachher eintragen und Aufgabe 1 ankreuzen (2 Min.).",
             "sagen": [
               "Ihr müsst nicht an nichts denken. Das kann niemand.",
               "Wer hat gemerkt, dass er mitgefahren ist? Genau dieses Bemerken ist der Skill."
@@ -145,51 +144,51 @@
               "Merkst du, dass du auf ein Schiff gestiegen bist und mitfährst? Kein Problem. Steig aus und setz dich wieder ans Ufer.",
               "Noch drei ruhige Atemzüge am Ufer. Dann heb den Blick und schau dich im Raum um."
             ],
-            "tipp": "Wem Schiffe zu kindlich sind, dem hilft ein Bild aus dem Alltag: Gedanken sind Busse an der Haltestelle – du liest, was vorne draufsteht, und lässt den Bus weiterfahren. Der Gedanke „Alle lachen über mich“ ist dann ein Bus, kein Beweis.",
-            "wennEsKippt": "Kichern beim ersten Mal ist normal: ruhig weiterlesen, nicht ermahnen. Wird die Stille für jemanden zu viel, darf er oder sie die Augen öffnen, die Hände flach auf den Tisch legen und sie spüren; wer kaum stillsitzen kann, bekommt einen Knetball aus der Kiste in die Hand. Wer nicht mitmachen will, sitzt still und stört nicht – mehr wird nicht verlangt. Kommt in der Auswertung ein schwerer Gedanke zur Sprache, kurz würdigen, nicht vertiefen und nach der Stunde ansprechen.",
+            "tipp": "Wem Schiffe zu kindlich sind, dem hilft ein Bild aus dem Alltag: Gedanken sind Busse an der Haltestelle – du liest, was vorne draufsteht, und lässt den Bus weiterfahren. Der Gedanke „Alle lachen über mich“ ist dann ein Bus, kein Beweis. Beim ersten Mal reichen drei Minuten.",
+            "wennEsKippt": "Kichern beim ersten Mal ist normal: ruhig weiterlesen, nicht ermahnen. Wird die Stille für jemanden zu viel, darf er oder sie die Augen öffnen, die Hände flach auf den Tisch legen und sie spüren; wer kaum stillsitzen kann, bekommt einen Knetball aus der Kiste. Wer nicht mitmachen will, sitzt still und stört nicht – mehr wird nicht verlangt. Solange andere die Augen zu haben, berührt niemand jemanden. Kommt in der Auswertung ein schwerer Gedanke zur Sprache, kurz würdigen, nicht vertiefen und nach der Stunde ansprechen.",
             "blatt": "ff7-kopf-skills"
           },
           {
-            "titel": "Kopf-Skills ausprobieren: vier Runden",
+            "titel": "Kopf-Skills im Test: drei Runden",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Von Luca erzählen: Er liegt um elf im Bett, morgen stellt er in Geografie sein Plakat vor, und sein Kopf fährt Karussell – Was, wenn ich alles vergesse? Was, wenn alle lachen? Fragen, wer so ein Karussell kennt; Handzeichen genügt (2 Min.). Erklären: Kopf-Skills geben dem Kopf eine Aufgabe, die so viel Platz braucht, dass für das Grübeln wenig übrig bleibt (1 Min.). Dann probiert die Klasse die vier Kopf-Skills nacheinander aus, je eine Minute, still und für sich (Liste). Vor jedem ein Beispiel geben; danach zeigen alle mit dem Daumen, wie gut er ging, und füllen sofort eine Zeile im Skills-Tester – die Zahl nachher ist zugleich die Zahl vorher für den nächsten Skill (10 Min.). Zum Schluss per Handzeichen: Welcher Kopf-Skill hat bei euch die Zahl am meisten gesenkt (2 Min.)?",
+            "text": "Von Luca erzählen: Er liegt um zehn im Bett, morgen stellt er in Geografie sein Plakat vor, und sein Kopf fährt Karussell – Was, wenn ich alles vergesse? Was, wenn alle lachen? Wer so ein Karussell kennt, hebt die Hand (2 Min.). Erklären (2 Min.): Kopf-Skills geben dem Kopf eine Aufgabe, die so viel Platz braucht, dass fürs Grübeln wenig bleibt – oder sie schaffen Abstand, wie ein guter Freund. Dann drei Runden (Liste, je 3 Min.): Alle denken 15 Sekunden an etwas, das diese Woche noch ansteht und ein bisschen nervt, und tragen die Zahl vorher ein; nach einem Beispiel macht jede Person den Skill eine Minute still für sich. Danach Zahl nachher eintragen und mit dem Daumen zeigen: Gedanke weg, leiser oder noch da? Zum Schluss per Handzeichen: Welcher Skill hat am besten gewirkt (2 Min.)?",
             "sagen": [
+              "Denkt 15 Sekunden an etwas, das diese Woche noch ansteht – ein Test, ein Referat, das Zimmer. Nichts Schlimmes, nur etwas, das nervt.",
               "Kopf-Skills sind wie ein Job für euren Kopf. Wer beschäftigt ist, hat keine Zeit zum Grübeln.",
-              "Wer hat beim Zählen vergessen, woran er gerade gedacht hat? Genau so wirkt der Skill."
+              "Wo ist der Gedanke jetzt? Daumen hoch: weg. Mitte: leiser. Runter: noch da."
             ],
             "punkte": [
               "Rückwärts zählen: von 100 in Dreierschritten – 100, 97, 94 … Wer es schwerer mag: in Siebenerschritten.",
-              "ABC-Spiel: zu jedem Buchstaben ein Tier, ein Land oder ein Essen – in jeder Sprache.",
               "Fünferlisten: fünf Fußballvereine, fünf Lieder, fünf Automarken – dann die nächste Liste.",
               "Wie mit einem Freund: in Gedanken mit dir reden, mit deinem Namen – „Luca, du hast geübt. Eins nach dem anderen.“"
             ],
-            "tipp": "Beim Selbstgespräch zuerst ein eigenes Beispiel geben, mit dem eigenen Vornamen, etwa: „Sarah, das hast du schon oft geschafft.“ Wer sich mit Namen anspricht, bekommt Abstand – der Satz klingt dann wie von einem Freund.",
-            "wennEsKippt": "Fällt das Rückwärtszählen schwer, ist das kein Rechentest: Dreierschritte oder einfach von 30 rückwärts sind genauso gut. Wird beim Selbstgespräch gelacht, das Lachen zulassen und festhalten: Laut sagt das niemand, der Satz bleibt im Kopf. Wer gar nicht will, zählt still die Fenster, Stühle und Lampen im Raum.",
+            "tipp": "Beim Selbstgespräch zuerst ein eigenes Beispiel geben, mit dem eigenen Vornamen: „Sarah, das hast du schon oft geschafft.“ Mit dem Namen bekommt man Abstand – der Satz klingt wie von einem Freund. Das ABC-Spiel, der vierte Kopf-Skill, kommt nach der Pause.",
+            "wennEsKippt": "Fällt das Rückwärtszählen schwer, ist das kein Rechentest: Dreierschritte oder von 30 rückwärts sind genauso gut. Wird beim Selbstgespräch gelacht, festhalten: Laut sagt das niemand. Macht der Gedanke an den Test jemanden unruhig, denkt er an etwas Harmloses. Wer nicht will, zählt still die Stühle; wer zappelig wird, macht die Runde im Stehen.",
             "blatt": "ff7-skills-tester"
           },
           {
             "titel": "Bewegungspause: Hampelmann, Stille, bis 20 zählen",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Fenster auf. Alle stehen hinter ihrem Stuhl: eine Minute Hampelmann oder auf der Stelle laufen, dann eine Minute ganz still stehen und spüren, was Herz und Atem machen. Danach zählt die Klasse gemeinsam bis 20: Jede Person darf jederzeit die nächste Zahl sagen, nur ohne Absprache; sprechen zwei gleichzeitig, beginnt die Klasse wieder bei 1 (3 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Fenster auf. Alle stehen hinter ihrem Stuhl: eine Minute Hampelmann oder auf der Stelle laufen, dann eine Minute still stehen und spüren, was Herz und Atem machen. Danach zählt die Klasse bis 20: Jede Person darf jederzeit die nächste Zahl sagen, ohne Absprache; sprechen zwei gleichzeitig, geht es wieder bei 1 los (3 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
             "tipp": "Bis 20 zählen klappt nur, wenn alle aufeinander hören – nebenbei eine Übung in Aufmerksamkeit und eine gute Brücke zum Störsender-Experiment.",
-            "wennEsKippt": "Wer nicht springen kann oder will, schüttelt Arme und Beine aus. Ruft beim Zählen jemand absichtlich dazwischen, nach dem dritten Neustart lachend aufhören: Störsender gibt es überall – gleich testet ihr, was sie mit dem Kopf machen."
+            "wennEsKippt": "Wer nicht springen kann oder will, schüttelt Arme und Beine aus. Ruft jemand absichtlich dazwischen, nach dem dritten Neustart lachend aufhören: Störsender gibt es überall – gleich testet ihr, was sie mit dem Kopf machen."
           },
           {
             "titel": "Das Störsender-Experiment",
             "dauer": 20,
             "phase": "aktiv",
-            "text": "Vorführen (3 Min.): Die Lehrkraft ist der Profi und sagt halblaut zu jedem Buchstaben ein Tier, zwei Freiwillige stören nach den Regeln (Liste) – das wird schnell komisch, und alle sehen, wie es geht. Rollen in den Tischgruppen (1 Min.): ein Profi, zwei Störsender, eine Person mit Strichliste; zu fünft drei Störsender, zu dritt stört die Lehrkraft in Runde 3 mit. Die Lehrkraft gibt für alle gleichzeitig Start und Stopp, je 30 Sekunden: Runde 1 in Ruhe, Runde 2 mit einem Störsender, Runde 3 mit beiden. Nach jeder Runde nennt die Strichliste die Zahl, der Profi trägt sie in Aufgabe 2 ein; dann wechseln die Rollen, bis alle einmal Profi waren (12 Min.). Auswertung (4 Min.): Wer hatte in Runde 3 weniger Tiere als in Runde 1? Das Tafelbild aufdecken, den Vergleich zur Anspannung ziehen, die zwei Sätze in Aufgabe 2 ergänzen.",
+            "text": "Vorführen (3 Min.): Die Lehrkraft ist der Profi und sagt zu jedem Buchstaben ein Tier – das ABC-Spiel –, zwei Freiwillige stören nach den Regeln (Liste); so sehen alle, wie es geht, und es wird gelacht. Rollen in den Tischgruppen (1 Min.): ein Profi, zwei Störsender, eine Strichliste; zu fünft drei Störsender, zu dritt stört die Lehrkraft in Runde 3 mit. Die Lehrkraft gibt für alle gleichzeitig Start und Stopp mit Klangschale und Handzeichen, drei Runden zu je 30 Sekunden. Nach jeder Runde nennt die Strichliste die Zahl, der Profi trägt sie in Aufgabe 2 ein; dann wechseln die Rollen, bis alle einmal Profi waren (12 Min.). Auswertung (4 Min.): Wer hatte in Runde 3 weniger Tiere als in Runde 1? Das Tafelbild aufdecken, den Vergleich zur Anspannung ziehen, Aufgabe 2 zu Ende schreiben.",
             "sagen": [
-              "Stört freundlich und nur mit Worten. Wer jemanden anfasst oder beleidigt, wechselt an die Strichliste.",
+              "Stört freundlich, nur mit Worten. Wer anfasst oder beleidigt, macht die Strichliste.",
               "Bei Rot sitzt der Störsender in euch – Wut oder Angst. Und der ist lauter als zwei Mitschüler."
             ],
             "punkte": [
-              "Der Profi sagt 30 Sekunden lang halblaut zu jedem Buchstaben ein Tier, in jeder Sprache: Affe, Bär, Chamäleon … Fällt nichts ein, weiter zum nächsten Buchstaben.",
-              "Die Person mit der Strichliste macht für jedes Tier einen Strich.",
-              "Störsender reden freundlich auf den Profi ein: Fragen stellen, vom Wochenende erzählen, Zahlen sagen. Normale Lautstärke.",
-              "Kein Anfassen, nicht ins Ohr schreien, keine Beleidigungen, keine Namen aus der Klasse.",
+              "Der Profi sagt 30 Sekunden lang zu jedem Buchstaben ein Tier, in jeder Sprache. Kein Tier? Nächster Buchstabe.",
+              "Die Strichliste sitzt direkt neben dem Profi und macht für jedes Tier einen Strich.",
+              "Störsender reden ohne Pause in Zimmerlautstärke: Fragen, Zahlen, Geschichten vom Wochenende.",
+              "Kein Anfassen, nicht ins Ohr schreien, keine Beleidigungen, nichts über den Profi oder andere in der Klasse.",
               "Runde 1: Ruhe. Runde 2: ein Störsender. Runde 3: beide Störsender."
             ],
             "tabelle": {
@@ -212,7 +211,7 @@
                 ]
               ]
             },
-            "tipp": "Wer gern Faxen macht, ist als Störsender oft großartig – mit klaren Regeln bekommt die Energie einen erlaubten Platz. Dass die Lehrkraft zuerst Profi ist, nimmt allen die Angst, sich zu blamieren.",
+            "tipp": "Wer gern Faxen macht, ist als Störsender oft großartig – mit klaren Regeln bekommt die Energie einen erlaubten Platz. Dass die Lehrkraft zuerst Profi ist, nimmt allen die Angst, sich zu blamieren. Zimmerlautstärke reicht: Es stören die Fragen, nicht der Lärm.",
             "wennEsKippt": "Wird aus dem Stören Ärgern – Anfassen, Schreien, Beleidigungen –, sofort mit der Klangschale stoppen und die Regeln noch einmal vorlesen; wer sie bricht, übernimmt die Strichliste. Wird es insgesamt zu laut, Runde 3 nur von einer Tischgruppe vorn spielen lassen, die anderen zählen mit. Wer nicht Profi sein will, bleibt an der Strichliste und trägt in Aufgabe 2 die Zahlen seiner Gruppe ein. Schaffen manche in Runde 3 mehr Tiere, das ehrlich festhalten: Manche Köpfe halten viel aus – bei Rot ist der Störsender in einem selbst aber lauter als zwei Mitschüler.",
             "blatt": "ff7-kopf-skills"
           },
@@ -220,20 +219,20 @@
             "titel": "Mein sicherer Ort, ein Gegenstand oder ein Bild",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Erklären (3 Min.): Ein sicherer Ort ist ein Ort in der Vorstellung, an dem man ruhig wird – echt oder erfunden: ein Strand, das eigene Bett, ein Baumhaus, ein Ort aus einem Spiel. Nicht allen gelingt so ein Bild im Kopf, das ist normal; dann helfen ein Gegenstand zum Anfassen oder ein Bild zum Anschauen genauso. Die Lehrkraft nennt ihr eigenes Beispiel. Wählen (2 Min.): Wer einen Gegenstand oder eine Postkarte möchte, holt sie tischgruppenweise aus der Kiste und darf sie behalten. Gestalten (9 Min.): Aufgaben 3 und 4 im Heft – malen oder beschreiben, die Sinne ergänzen, ein Stichwort finden; dazu leise Musik ohne Gesang. Herumgehen und helfen, wo jemand nichts findet. Zum Schluss bleibt das Heft auf dieser Seite offen liegen (1 Min.).",
+            "text": "Erklären (3 Min.): Ein sicherer Ort ist ein Ort in der Vorstellung, an dem man ruhig wird – echt oder erfunden: ein Strand, das eigene Bett, ein Baumhaus, ein Ort aus einem Spiel. Wer mit „sicher“ wenig anfangen kann, sagt Ruheort. Nicht allen gelingt so ein Bild im Kopf, das ist normal; dann helfen ein Gegenstand zum Anfassen oder ein Bild zum Anschauen genauso. Die Lehrkraft nennt ihr eigenes Beispiel. Wählen (2 Min.): Die Lehrkraft geht mit der Kiste durch die Tischgruppen; wer einen Stein, einen Knetball oder eine Postkarte möchte, nimmt sich eins und darf es behalten. Gestalten (9 Min.): Aufgaben 3 und 4 im Heft – malen oder beschreiben, die Sinne ergänzen, ein Stichwort finden; dazu leise Musik ohne Gesang. Herumgehen und helfen, wo jemand nichts findet. Zum Schluss bleibt das Heft auf dieser Seite offen liegen (1 Min.).",
             "sagen": [
               "Euer Ort gehört euch. Niemand muss ihn zeigen oder erklären.",
               "Ihr müsst nicht malen können. Farben, Formen oder ein paar Wörter reichen."
             ],
-            "tipp": "Wer mit „sicher“ wenig anfangen kann, sagt Ruheort oder Wohlfühlort. Ein glatter Stein oder eine Murmel in der Hosentasche fällt niemandem auf – viele nutzen ihren Gegenstand später auch im Test.",
-            "wennEsKippt": "Findet jemand gar nichts, nicht drängen: Ein ganz normaler Ort wie das eigene Zimmer ist genauso gut, ebenso der Gegenstand aus der Kiste. Wird ein Scherzort genannt, gelassen ernst nehmen und nach den Sinnen fragen – oft wird daraus ein echter Ort. Malt jemand etwas Bedrohliches oder bleibt die Seite leer, nichts deuten und nicht vor der Klasse nachfragen; nach der Stunde ein kurzes Gespräch anbieten. Wird an der Kiste gedrängelt oder fliegen Murmeln, die Kiste schließen und selbst austeilen.",
+            "tipp": "Ein glatter Stein in der Hosentasche fällt niemandem auf – viele nutzen ihn später auch im Test. Wer sein Blatt mit der Hand abdeckt, wird nicht gefragt: Der Ort gehört der Person, die ihn gewählt hat.",
+            "wennEsKippt": "Findet jemand gar nichts, nicht drängen: Ein ganz normaler Ort wie das eigene Zimmer ist genauso gut, ebenso der Gegenstand aus der Kiste. Wird ein Scherzort genannt, gelassen ernst nehmen und nach den Sinnen fragen – oft wird daraus ein echter Ort. Bleibt die Seite leer, reichen ein Stichwort oder der Gegenstand. Sagt jemand, es gebe nirgends einen sicheren Ort, oder malt Bedrohliches: nichts deuten, nicht vor der Klasse nachfragen, nach der Stunde ein kurzes Gespräch anbieten und bei Sorge noch am selben Tag den SePAS informieren. Fliegen Steine, sammelt die Lehrkraft sie wortlos ein.",
             "blatt": "ff7-kopf-skills"
           },
           {
             "titel": "Skill: Mein sicherer Ort",
             "dauer": 10,
             "phase": "skill",
-            "text": "Alle sitzen bequem, beide Füße am Boden; das Heft mit dem Ort, der Gegenstand oder die Postkarte liegt vor ihnen. Ankündigen: Augen zu oder offen ist beides richtig, und wer aussteigen will, öffnet die Augen und schaut sich im Raum um. Die drei Schritte langsam anleiten und nach jedem Satz zwei, drei Atemzüge warten (Liste, 4 Min.); wer einen Gegenstand hat, hält ihn in der Hand. Danach zurückholen: Füße spüren, strecken, umschauen. Zwei, drei Rückmeldungen einholen (3 Min.): Wie war das? Wann könnte das helfen – im Bus, vor einem Test, abends im Bett? Erklären: Der Ort wirkt, wenn man ihn bei Grün übt; dann ist er bei Gelb schnell da. Zum Schluss den sicheren Ort als letzte Zeile in den Skills-Tester eintragen (2 Min.).",
+            "text": "Alle sitzen bequem, beide Füße am Boden; das Heft mit dem Ort, der Gegenstand oder die Postkarte liegt vor ihnen, die Zahl vorher kommt in die nächste Zeile des Skills-Testers. Ankündigen: Augen zu oder offen ist beides richtig; wer aussteigen will, öffnet die Augen und schaut sich im Raum um. Die drei Schritte langsam anleiten und nach jedem Satz zwei, drei Atemzüge warten (Liste, 4 Min.); die Lehrkraft liest mit offenen Augen. Danach zurückholen: Füße spüren, strecken, umschauen. Zwei, drei Rückmeldungen einholen (3 Min.): Wie war das? Wann könnte das helfen – im Bus, vor einem Test, abends im Bett? Erklären: Der Ort wirkt, wenn man ihn bei Grün übt; dann ist er bei Gelb schnell da. Zum Schluss Zahl nachher eintragen (2 Min.).",
             "sagen": [
               "Ihr entscheidet, wie weit ihr euch darauf einlasst. Augen auf ist völlig in Ordnung.",
               "Wer seinen Ort ein paarmal pro Woche besucht, findet ihn auch dann, wenn es eng wird."
@@ -244,7 +243,7 @@
               "Bleib drei ruhige Atemzüge lang. Dann komm zurück: Spür den Stuhl, streck dich und schau dich im Raum um."
             ],
             "tipp": "Nicht zu schnell lesen: Die Pausen machen die Wirkung aus. Bei Rot hilft der Ort meist nicht mehr – dann zuerst ein Körper- oder Sinnes-Skill, danach der Ort.",
-            "wennEsKippt": "Wirkt jemand während der Übung angespannt oder aufgewühlt, leise anbieten, die Augen zu öffnen, die Füße fest auf den Boden zu stellen oder den Gegenstand fest zu drücken, und nach der Stunde kurz nachfragen. Bei großer Unruhe nur die drei Sätze lesen und die Übung mit offenen Augen machen. Wer nicht mitmachen will, sitzt still – das ist erlaubt.",
+            "wennEsKippt": "Wirkt jemand während der Übung angespannt oder aufgewühlt, leise anbieten, die Augen zu öffnen, die Füße fest auf den Boden zu stellen oder den Gegenstand fest zu drücken; hilft das nicht, zusammen 5-4-3-2-1 machen. Wer Abstand braucht, geht an den Ruheplatz im Raum, nie allein hinaus; nach der Stunde kurz nachfragen. Bei großer Unruhe nur die drei Sätze lesen und die Übung mit offenen Augen machen. Wer nicht mitmachen will, sitzt still – das ist erlaubt.",
             "blatt": "ff7-kopf-skills"
           },
           {
@@ -259,43 +258,42 @@
           }
         ],
         "bruecke": "Nächste Woche packt ihr euren Skills-Koffer: Aus allen Skills, die ihr getestet habt, wählt ihr eure besten – und macht einen Plan für Grün, Gelb und Rot.",
-        "mission": "Besuch deinen sicheren Ort diese Woche zweimal für eine Minute – oder gib deinem Kopf einen Job, wenn er Karussell fährt. Was hat geholfen?",
-        "hintergrund": "Achtsamkeit heißt, die Aufmerksamkeit absichtlich und ohne Bewertung auf den Augenblick zu richten – auch auf die eigenen Gedanken. Sie werden bemerkt, nicht bekämpft: Wer einen Gedanken unterdrücken will, denkt ihn oft erst recht; im Experiment kehrte ein unterdrückter Gedanke danach sogar häufiger zurück (Wegner et al., 1987). Das Gedankenschiffchen übt das Gegenteil: bemerken, vorbeiziehen lassen, zurückkommen. In Schulen verbessern Achtsamkeitsübungen vor allem die Aufmerksamkeit und den Umgang mit Stress (Zenner et al., 2014). Kopf-Skills lenken die Aufmerksamkeit um und unterbrechen das Grübeln; weil sie freie Denkkraft brauchen, helfen sie bei mittlerer Anspannung, bei Rot kaum noch. Der sichere Ort stammt aus der Arbeit mit inneren Bildern zur Stabilisierung (Reddemann, 2001). Nicht allen gelingt ein solches Bild, und für manche ist „sicher“ ein schweres Wort – deshalb sind Gegenstand und Bild gleichwertige Wege.",
+        "mission": "Besuch deinen sicheren Ort diese Woche zweimal eine Minute lang, etwa abends im Bett – oder gib deinem Kopf einen Job, wenn er Karussell fährt. Was hat geholfen?",
+        "hintergrund": "Achtsamkeit heißt, bewusst und ohne Bewertung wahrzunehmen, was gerade da ist – auch Gedanken. Sie werden bemerkt, nicht bekämpft: Wer einen Gedanken unterdrücken will, denkt ihn oft erst recht; im Experiment kehrte ein unterdrückter Gedanke danach sogar häufiger zurück (Wegner et al., 1987). Das Gedankenschiffchen übt das Gegenteil: bemerken, vorbeiziehen lassen, zurückkommen. In Schulen verbessern Achtsamkeitsübungen vor allem Aufmerksamkeit und Umgang mit Stress (Zenner et al., 2014); sie sind Aufmerksamkeitstraining ohne religiösen Hintergrund. Kopf-Skills beschäftigen den Kopf oder schaffen Abstand zum Grübeln; weil sie freie Denkkraft brauchen, helfen sie bei mittlerer Anspannung, bei Rot kaum. Der sichere Ort stammt aus der Arbeit mit inneren Bildern zur Stabilisierung (Reddemann, 2001). Nicht allen gelingt ein solches Bild; Gegenstand und Bild sind deshalb gleichwertige Wege.",
         "quellen": [
           "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.",
           "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603.",
           "Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta."
         ],
-        "achtung": "Achtsamkeits- und Vorstellungsübungen können belastende Gedanken oder Erinnerungen wecken, vor allem nach schweren Erfahrungen. Deshalb gilt immer: im Sitzen, Augen offen erlaubt, Aussteigen erlaubt, niemand muss seinen Ort beschreiben oder zeigen. Findet jemand keinen sicheren Ort, malt Bedrohliches oder wirkt aufgewühlt: nichts deuten, nicht vor der Klasse nachfragen, nach der Stunde unter vier Augen ansprechen, bei Sorge noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "achtung": "Achtsamkeits- und Vorstellungsübungen können belastende Gedanken oder Erinnerungen wecken. Deshalb immer: im Sitzen, Augen offen erlaubt, Aussteigen erlaubt, die Lehrkraft liest mit offenen Augen, niemand muss seinen Ort zeigen. Keinen Ort zu finden, ist häufig und meist harmlos. Hellhörig werden, wenn jemand sagt, es gebe nirgends einen sicheren Ort, Bedrohliches malt oder aufgewühlt wirkt: nichts deuten, nicht vor der Klasse nachfragen, nach der Stunde unter vier Augen sprechen, noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln. Wer Abstand braucht, geht an den Ruheplatz, nie allein hinaus.",
         "differenzierung": {
-          "leichter": "Eisbär und Fluss an die Tafel skizzieren; beim ABC-Spiel ist jede Sprache erlaubt, beim Rückwärtszählen reichen Dreierschritte oder von 30 rückwärts. Die Anleitungen langsam lesen und mit Gesten begleiten. Beim sicheren Ort genügen ein Bild und ein Stichwort; wer die Sprache noch lernt, schreibt in der eigenen Sprache – das Blatt liest niemand.",
+          "leichter": "Eisbär und Fluss an die Tafel skizzieren; die Kurznamen der Skills stehen zum Abschreiben an der Tafel. Alle Kopf-Skills gehen in jeder Sprache, beim Rückwärtszählen reichen Dreierschritte oder von 30 rückwärts. Die Anleitungen langsam lesen und mit Gesten begleiten. Beim sicheren Ort genügen ein Bild und ein Stichwort, in jeder Sprache – das Blatt liest niemand.",
           "schwerer": "Rückwärts in Siebenerschritten zählen; im Experiment die Auswertung der Tischgruppe übernehmen und an die Tafel schreiben. Einen eigenen Kopf-Skill erfinden und erklären, warum er bei Gelb hilft und bei Rot kaum."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit einer halben Minute Stille (5 Min.), Eisbär-Experiment und Gedankenschiffchen (12 Min.), Störsender-Experiment mit zwei Profis je Tischgruppe (15 Min.), den sicheren Ort wählen und gleich mit den drei Sätzen besuchen (13 Min.), Skills-Pass und Wochen-Mission (5 Min.). Die vier Kopf-Skills in Ruhe entfallen; sie stehen im Kasten auf dem Blatt und lassen sich zu Hause ausprobieren."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit einer halben Minute Stille (5 Min.), Eisbär-Experiment und Gedankenschiffchen (12 Min.), Störsender-Experiment mit zwei Profis je Tischgruppe (15 Min.), den sicheren Ort wählen und gleich mit den drei Sätzen besuchen (13 Min.), Skills-Pass und Wochen-Mission (5 Min.). Die drei Kopf-Skills in Ruhe entfallen; sie stehen im Kasten auf dem Blatt und lassen sich zu Hause ausprobieren."
       },
       "fr": {
         "titel": "Pleine conscience et skills mentaux",
-        "kurz": "Les pensées vont et viennent : la classe s’exerce à les laisser passer, teste des skills mentaux sous perturbation et choisit un lieu sûr dans sa tête – ou un objet, une image qui apaise.",
+        "kurz": "Les pensées vont et viennent : la classe s’exerce à les laisser passer, teste des skills mentaux au calme et sous perturbation, puis choisit un lieu sûr – ou un objet, une image.",
         "ziele": [
-          "décrivent, après les petits bateaux de pensées, ce que c’est de remarquer ses pensées et de les laisser passer au lieu de les suivre",
-          "testent quatre skills mentaux et expliquent, grâce à l’expérience des brouilleurs, pourquoi ils aident dans l’orange et presque plus dans le rouge",
-          "choisissent un lieu sûr, un objet ou une image et le rappellent à eux avec un mot-clé"
+          "décrivent, après le petit bateau des pensées, ce que l’on ressent quand on remarque ses pensées et qu’on les laisse passer au lieu de les suivre",
+          "testent des skills mentaux et expliquent, grâce à l’expérience des perturbateurs, pourquoi ils aident dans l’orange mais presque plus dans le rouge",
+          "choisissent un lieu sûr, un objet ou une image et le retrouvent grâce à un mot-clé"
         ],
         "material": [
-          "Roue des émotions, 20 gommettes",
-          "Affiche de l’échelle de tension",
+          "Roue, échelle 0–100, 40 gommettes",
           "Bol chantant ou autre signal calme",
           "Cahier de l’élève, testeur de skills",
-          "Galets, billes, cartes postales",
+          "Boîte : galets, balles, cartes postales",
           "Crayons, musique sans paroles",
           "Montre avec trotteuse ou minuteur",
           "Tampon pour le Skills-Pass"
         ],
         "vorbereitung": [
-          "Tableau : les quatre skills mentaux (étape 4), les règles et le tableau caché de l’étape 6.",
-          "Boîte avec 20 à 25 petits objets (galets, billes, balles anti-stress) et des cartes postales apaisantes.",
+          "Tableau : noms courts des skills (étape 2), règles et tableau caché (étape 6).",
+          "Boîte : 25 galets lisses, les balles de la séance 15, dix cartes postales calmes.",
           "Lire une fois, lentement et à voix haute, les consignes des étapes 3 et 8.",
-          "Demander au régent ou au SePAS si un jeune va très mal en ce moment ; lui parler avant et le laisser choisir."
+          "Demander au régent ou au SePAS si un jeune va très mal ; lui parler avant et le laisser choisir."
         ],
         "ablauf": [
           {
@@ -316,7 +314,7 @@
           {
             "min": "30–45",
             "phase": "uebung",
-            "titel": "Essayer des skills mentaux : quatre manches"
+            "titel": "Tester des skills mentaux : trois manches"
           },
           {
             "min": "45–50",
@@ -326,7 +324,7 @@
           {
             "min": "50–70",
             "phase": "aktiv",
-            "titel": "L’expérience des brouilleurs"
+            "titel": "L’expérience des perturbateurs"
           },
           {
             "min": "70–85",
@@ -349,7 +347,7 @@
             "titel": "Tour d’humeur : d’abord sentir, puis montrer",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle comme d’habitude sa gommette sur la roue des émotions (2 min). Une fois tout le monde assis, une demi-minute de silence – l’enseignant·e montre la posture : les deux pieds au sol, le regard sur la table ou les yeux fermés, juste remarquer quelle émotion et quel chiffre sont là ; un son du bol chantant termine le silence (1 min). Puis, à trois, tout le monde montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires disent leur mot (5 min). Pour finir, demander avec le pouce : votre chiffre était-il différent après le silence (2 min) ? Cette demi-minute était déjà le premier exercice de la séance.",
+            "text": "En entrant, chaque jeune colle comme d’habitude ses deux gommettes sur la roue des émotions et sur l’échelle de tension (2 min) ; la gommette sur l’échelle est aujourd’hui le chiffre avant. Une fois tout le monde assis, une demi-minute de silence : l’enseignant·e montre la posture – les deux pieds au sol, le regard sur la table ou les yeux fermés, juste remarquer quelle émotion et quel chiffre sont là ; un son du bol chantant termine le silence (1 min). Puis, à trois, tout le monde montre son chiffre actuel avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires disent leur mot (5 min). Pour finir, vote du pouce : votre chiffre est-il différent de votre gommette sur l’échelle (2 min) ? Cette demi-minute était déjà le premier exercice de la séance.",
             "sagen": [
               "Une demi-minute juste pour remarquer : quelle émotion est là, quel chiffre ? Vous n’avez rien à changer.",
               "À trois, vous montrez votre chiffre. Je commence : plutôt calme, un peu de fatigue – 30."
@@ -361,7 +359,7 @@
             "titel": "Retour, mission de la semaine et thème",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Pour la mission de la semaine passée, demander avec le pouce (en haut, au milieu, en bas) ; une voix raconte ce qu’elle a essayé. Puis montrer l’affiche de l’échelle de tension : les skills du corps et des sens agissent même dans le rouge. Aujourd’hui, on ajoute la tête – remarquer ses pensées sans les suivre, et des skills mentaux qui aident dans l’orange. Écrire le thème au tableau : pleine conscience et skills mentaux.",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Pour la mission de la semaine, vote du pouce : qui a essayé le 3-3-3 ou une chanson de sa liste quand son chiffre dépassait 50 ? Une voix raconte son chiffre avant et après. Puis montrer l’échelle de tension : les skills du corps et des sens agissent même dans le rouge. Aujourd’hui, on ajoute la tête – remarquer ses pensées sans les suivre, et des skills mentaux pour l’orange. Écrire le thème au tableau et faire ouvrir le testeur de skills à « séance 16 » ; les noms courts des skills du jour sont au tableau : bateau, compter, liste de cinq, ami, lieu.",
             "sagen": [
               "Le corps et les sens, c’est votre frein d’urgence. Aujourd’hui, vous entraînez la tête – pour les moments où elle suit encore."
             ],
@@ -371,7 +369,7 @@
             "titel": "Laisser passer ses pensées",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Expérience de l’ours blanc (3 min) : tout le monde regarde la table ou ferme les yeux et, pendant 30 secondes, ne pense surtout pas à un ours blanc ; qui l’a vu quand même lève la main – en général presque tout le monde. Expliquer (2 min) : on ne peut pas chasser une pensée, plus on essaie, plus elle revient – mais on peut la laisser passer. Puis esquisser au tableau une rivière avec des bateaux ; chacun estime en silence son chiffre, et guider les petits bateaux de pensées, assis (5 min) : voix calme, trois ou quatre respirations de pause après chaque phrase (liste), l’enseignant·e fait l’exercice les yeux ouverts. Retour (3 min) : combien de bateaux sont passés ? Qui s’est laissé emporter ? Retenir : s’égarer n’est pas une faute, remarquer et revenir, c’est ça, le skill. Pour finir, cocher l’exercice 1 et remplir la première ligne du testeur de skills : chiffre avant, skill, chiffre après (2 min).",
+            "text": "Expérience de l’ours blanc (3 min) : esquisser un ours blanc au tableau ; tout le monde regarde la table ou ferme les yeux et, pendant 30 secondes, ne pense surtout pas à un ours blanc. Qui l’a vu quand même lève la main – en général presque tout le monde. Expliquer (2 min) : on ne peut pas chasser une pensée, plus on essaie, plus elle revient ; mais on peut la laisser passer. Ajouter une rivière avec des bateaux ; chacun note son chiffre avant sur la première ligne libre du testeur de skills. Puis guider le petit bateau des pensées, assis (5 min) : voix calme, trois ou quatre respirations de pause après chaque phrase (liste), l’enseignant·e fait l’exercice les yeux ouverts. Retour (3 min) : combien de bateaux sont passés, qui s’est laissé emporter ? Retenir : s’égarer n’est pas une faute, remarquer et revenir, c’est ça, le skill. Pour finir, noter le chiffre après et cocher l’exercice 1 (2 min).",
             "sagen": [
               "Vous n’avez pas à ne penser à rien. Personne n’y arrive.",
               "Qui a remarqué qu’un bateau l’avait emporté ? C’est justement ça, le skill : le remarquer."
@@ -384,52 +382,52 @@
               "Tu remarques qu’un bateau t’a emporté ? Pas de problème. Descends et reviens t’asseoir sur la rive.",
               "Encore trois respirations calmes sur la rive. Puis lève les yeux et regarde autour de toi dans la salle."
             ],
-            "tipp": "Si les bateaux font trop enfantin, prendre une image du quotidien : les pensées sont des bus à l’arrêt – tu lis ce qui est écrit devant et tu laisses le bus repartir. La pensée « tout le monde se moque de moi » devient alors un bus, pas une preuve.",
-            "wennEsKippt": "Les rires sont normaux la première fois : continuer à lire calmement, sans reprendre personne. Si le silence devient trop lourd pour quelqu’un, il peut ouvrir les yeux, poser les mains à plat sur la table et les sentir ; qui a du mal à rester assis reçoit une balle anti-stress de la boîte. Qui ne veut pas participer reste assis en silence sans déranger – on n’en demande pas plus. Si une pensée lourde est évoquée pendant le retour, l’accueillir brièvement, ne pas approfondir et en parler après le cours.",
+            "tipp": "Si les bateaux font trop enfantin, prendre une image du quotidien : les pensées sont des bus à l’arrêt – tu lis ce qui est écrit devant et tu laisses le bus repartir. La pensée « tout le monde se moque de moi » devient alors un bus, pas une preuve. La première fois, trois minutes suffisent.",
+            "wennEsKippt": "Les rires sont normaux la première fois : continuer à lire calmement, sans reprendre personne. Si le silence devient trop lourd pour quelqu’un, il peut ouvrir les yeux, poser les mains à plat sur la table et les sentir ; qui a du mal à rester assis reçoit une balle anti-stress de la boîte. Qui ne veut pas participer reste assis en silence sans déranger – on n’en demande pas plus. Tant que d’autres ont les yeux fermés, personne ne touche personne. Si une pensée lourde est évoquée pendant le retour, l’accueillir brièvement, ne pas approfondir et en parler après le cours.",
             "blatt": "ff7-kopf-skills"
           },
           {
-            "titel": "Essayer des skills mentaux : quatre manches",
+            "titel": "Tester des skills mentaux : trois manches",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Parler de Luca : il est onze heures du soir, il est au lit, demain il présente son affiche en géographie, et sa tête tourne en boucle – Et si j’oubliais tout ? Et si tout le monde riait ? Demander qui connaît ce manège dans la tête ; une main levée suffit (2 min). Expliquer : les skills mentaux donnent à la tête une tâche qui prend tellement de place qu’il ne reste presque rien pour ruminer (1 min). Puis la classe essaie les quatre skills mentaux l’un après l’autre, une minute chacun, en silence et pour soi (liste). Avant chacun, donner un exemple ; après, tout le monde montre avec le pouce si ça a marché et remplit tout de suite une ligne du testeur de skills – le chiffre après est aussi le chiffre avant du skill suivant (10 min). Pour finir, à main levée : quel skill mental a le plus fait baisser votre chiffre (2 min) ?",
+            "text": "Parler de Luca : il est dix heures du soir, il est au lit, demain il présente son affiche en géographie, et sa tête tourne en boucle – Et si j’oubliais tout ? Et si tout le monde riait ? Qui connaît ce manège dans la tête lève la main (2 min). Expliquer (2 min) : les skills mentaux donnent à la tête une tâche qui prend tellement de place qu’il ne reste presque rien pour ruminer – ou ils créent de la distance, comme un bon ami. Puis trois manches (liste, 3 min chacune) : tout le monde pense 15 secondes à quelque chose qui l’attend cette semaine et l’agace un peu, et note son chiffre avant ; après un exemple, chacun fait le skill une minute, en silence et pour soi. Ensuite, noter le chiffre après et montrer avec le pouce : la pensée est-elle partie, moins forte ou encore là ? Pour finir, à main levée : quel skill a le mieux marché (2 min) ?",
             "sagen": [
+              "Pensez 15 secondes à quelque chose qui vous attend cette semaine – un devoir en classe, un exposé, ranger votre chambre. Rien de grave, juste un truc qui agace.",
               "Les skills mentaux, c’est comme un job pour votre tête. Une tête occupée n’a pas le temps de ruminer.",
-              "Qui a oublié, en comptant, à quoi il pensait juste avant ? C’est exactement comme ça que le skill agit."
+              "Où est la pensée maintenant ? Pouce en haut : partie. Au milieu : moins forte. En bas : encore là."
             ],
             "punkte": [
               "Compter à rebours : de 100 en retirant 3 à chaque fois – 100, 97, 94… Pour corser : en retirant 7.",
-              "Le jeu de l’alphabet : pour chaque lettre, un animal, un pays ou un plat – dans n’importe quelle langue.",
               "Les listes de cinq : cinq clubs de foot, cinq chansons, cinq marques de voitures – puis la liste suivante.",
               "Comme avec un ami : te parler dans ta tête, avec ton prénom – « Luca, tu t’es entraîné. Une chose après l’autre. »"
             ],
-            "tipp": "Pour le dialogue avec soi-même, donner d’abord son propre exemple, avec son prénom, par exemple : « Sarah, tu as déjà réussi ça plein de fois. » S’appeler par son prénom crée de la distance – la phrase sonne alors comme celle d’un ami.",
-            "wennEsKippt": "Si compter à rebours est difficile, ce n’est pas un contrôle de calcul : de 3 en 3 ou simplement à rebours à partir de 30, ça marche tout aussi bien. Si le dialogue avec soi-même fait rire, laisser rire et préciser : personne ne le dit à voix haute, la phrase reste dans la tête. Qui ne veut vraiment pas participer compte en silence les fenêtres, les chaises et les lampes de la salle.",
+            "tipp": "Pour le dialogue avec soi-même, donner d’abord son propre exemple, avec son prénom : « Sarah, tu as déjà réussi ça plein de fois. » Le prénom crée de la distance – la phrase sonne comme celle d’un ami. Le jeu de l’alphabet, quatrième skill mental, vient après la pause.",
+            "wennEsKippt": "Si compter à rebours est difficile, ce n’est pas un contrôle de calcul : de 3 en 3 ou à partir de 30, ça marche aussi bien. Si le dialogue avec soi-même fait rire, préciser : personne ne le dit à voix haute. Si penser au devoir rend quelqu’un nerveux, il pense à quelque chose d’anodin. Qui ne veut pas compte les chaises ; qui ne tient plus en place fait la manche debout.",
             "blatt": "ff7-skills-tester"
           },
           {
             "titel": "Pause active : sauts, silence, compter jusqu’à 20",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Ouvrir la fenêtre. Tout le monde se lève derrière sa chaise : une minute de sauts en étoile ou de course sur place, puis une minute immobile, en silence, pour sentir ce que font le cœur et la respiration. Ensuite, la classe compte ensemble jusqu’à 20 : chacun peut dire le nombre suivant à n’importe quel moment, mais sans se concerter ; si deux personnes parlent en même temps, on recommence à 1 (3 min). Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
-            "tipp": "Compter jusqu’à 20 ne marche que si tout le monde s’écoute – au passage, c’est un exercice d’attention et une bonne transition vers l’expérience des brouilleurs.",
-            "wennEsKippt": "Qui ne peut pas ou ne veut pas sauter secoue les bras et les jambes. Si quelqu’un parle exprès en même temps qu’un autre, arrêter en riant après le troisième redémarrage : des brouilleurs, il y en a partout – vous allez tout de suite tester ce qu’ils font à la tête."
+            "text": "Ouvrir la fenêtre. Debout derrière sa chaise : une minute de sauts en étoile ou de course sur place, puis une minute immobile, pour sentir le cœur et la respiration. Ensuite, la classe compte jusqu’à 20 : chacun dit le nombre suivant quand il veut, sans se concerter ; si deux voix parlent en même temps, on recommence à 1 (3 min). Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "tipp": "Compter jusqu’à 20 ne marche que si tout le monde s’écoute – au passage, c’est un exercice d’attention et une bonne transition vers l’expérience des perturbateurs.",
+            "wennEsKippt": "Qui ne peut pas ou ne veut pas sauter secoue les bras et les jambes. Si quelqu’un parle exprès en même temps qu’un autre, arrêter en riant après le troisième redémarrage : des perturbateurs, il y en a partout – vous allez tester ce qu’ils font à la tête."
           },
           {
-            "titel": "L’expérience des brouilleurs",
+            "titel": "L’expérience des perturbateurs",
             "dauer": 20,
             "phase": "aktiv",
-            "text": "Démonstration (3 min) : l’enseignant·e joue le pro et dit à mi-voix un animal pour chaque lettre, deux volontaires le perturbent selon les règles (liste) – c’est vite drôle, et tout le monde voit comment ça marche. Rôles en îlots (1 min) : un pro, deux brouilleurs, un compteur qui trace des bâtons ; à cinq, trois brouilleurs, à trois, l’enseignant·e brouille aussi à la manche 3. L’enseignant·e donne le départ et l’arrêt pour tous en même temps, 30 secondes par manche : manche 1 au calme, manche 2 avec un brouilleur, manche 3 avec les deux. Après chaque manche, le compteur donne le chiffre, le pro le note dans l’exercice 2 ; puis les rôles tournent jusqu’à ce que chacun ait été pro (12 min). Retour (4 min) : qui a trouvé moins d’animaux à la manche 3 qu’à la manche 1 ? Découvrir le tableau, faire le lien avec la tension, compléter les deux phrases de l’exercice 2.",
+            "text": "Démonstration (3 min) : l’enseignant·e joue le pro et dit un animal pour chaque lettre – le jeu de l’alphabet –, deux volontaires le perturbent selon les règles (liste) ; tout le monde voit comment ça marche, et on rit. Rôles en îlots (1 min) : un pro, deux perturbateurs, un compteur ; à cinq, trois perturbateurs, à trois, l’enseignant·e perturbe aussi à la manche 3. L’enseignant·e donne le départ et l’arrêt pour tous en même temps, avec le bol chantant et un signe de la main : trois manches de 30 secondes. Après chaque manche, le compteur donne le chiffre, le pro le note dans l’exercice 2 ; puis les rôles tournent jusqu’à ce que chacun ait été pro (12 min). Retour (4 min) : qui a trouvé moins d’animaux à la manche 3 qu’à la manche 1 ? Découvrir le tableau, faire le lien avec la tension, terminer l’exercice 2.",
             "sagen": [
-              "Perturbez gentiment, seulement avec des mots. Qui touche ou insulte quelqu’un passe au comptage.",
-              "Dans le rouge, le brouilleur est en vous – la colère ou la peur. Et il est plus fort que deux camarades."
+              "Perturbez gentiment, seulement avec des mots. Qui touche ou insulte passe au comptage.",
+              "Dans le rouge, le perturbateur est en vous – la colère ou la peur. Et il est plus fort que deux camarades."
             ],
             "punkte": [
-              "Le pro dit à mi-voix, pendant 30 secondes, un animal pour chaque lettre, dans n’importe quelle langue : âne, baleine, chat… S’il ne trouve rien, il passe à la lettre suivante.",
-              "Le compteur trace un bâton pour chaque animal.",
-              "Les brouilleurs parlent gentiment au pro : poser des questions, raconter leur week-end, dire des nombres. Volume normal.",
-              "On ne touche pas, on ne crie pas dans l’oreille, pas d’insultes, pas de prénoms de la classe.",
-              "Manche 1 : calme. Manche 2 : un brouilleur. Manche 3 : les deux brouilleurs."
+              "Le pro dit en 30 secondes un animal par lettre, dans n’importe quelle langue. Rien ne vient ? Lettre suivante.",
+              "Le compteur est assis juste à côté du pro et trace un bâton pour chaque animal.",
+              "Les perturbateurs parlent sans arrêt au pro, à volume normal : questions, nombres, histoires du week-end.",
+              "On ne touche pas, on ne crie pas dans l’oreille, pas d’insultes, rien sur le pro ni sur d’autres élèves de la classe.",
+              "Manche 1 : calme. Manche 2 : un perturbateur. Manche 3 : les deux perturbateurs."
             ],
             "tabelle": {
               "spalten": [
@@ -442,40 +440,40 @@
                   "Vert (0–30) : la tête a beaucoup de place – idéal pour s’entraîner."
                 ],
                 [
-                  "Manche 2 : un brouilleur",
+                  "Manche 2 : un perturbateur",
                   "Orange (30–70) : les skills mentaux aident, ils couvrent les ruminations."
                 ],
                 [
-                  "Manche 3 : deux brouilleurs",
+                  "Manche 3 : deux perturbateurs",
                   "Rouge (70–100) : trop de bruit pour la tête. D’abord le corps et les sens, ensuite la tête."
                 ]
               ]
             },
-            "tipp": "Les jeunes qui aiment faire le clown sont souvent d’excellents brouilleurs – avec des règles claires, leur énergie trouve une place permise. Que l’enseignant·e soit le premier pro enlève à tous la peur du ridicule.",
-            "wennEsKippt": "Si la perturbation tourne à l’embêtement – toucher, crier, insulter –, arrêter tout de suite avec le bol chantant et relire les règles ; qui ne les respecte pas prend le comptage. Si le bruit devient trop fort, faire jouer la manche 3 par un seul îlot devant la classe, les autres comptent. Qui ne veut pas être pro reste au comptage et note dans l’exercice 2 les chiffres de son îlot. Si certains trouvent plus d’animaux à la manche 3, le dire franchement : certaines têtes résistent bien – mais dans le rouge, le brouilleur intérieur est plus fort que deux camarades.",
+            "tipp": "Les jeunes qui aiment faire le clown sont souvent d’excellents perturbateurs – avec des règles claires, leur énergie trouve une place permise. Que l’enseignant·e soit le premier pro enlève à tous la peur du ridicule. Le volume normal suffit : ce sont les questions qui gênent, pas le bruit.",
+            "wennEsKippt": "Si la perturbation tourne à l’embêtement – toucher, crier, insulter –, arrêter tout de suite avec le bol chantant et relire les règles ; qui ne les respecte pas prend le comptage. Si le bruit devient trop fort, faire jouer la manche 3 par un seul îlot devant la classe, les autres comptent. Qui ne veut pas être pro reste au comptage et note dans l’exercice 2 les chiffres de son îlot. Si certains trouvent plus d’animaux à la manche 3, le dire franchement : certaines têtes résistent bien – mais dans le rouge, le perturbateur intérieur est plus fort que deux camarades.",
             "blatt": "ff7-kopf-skills"
           },
           {
             "titel": "Mon lieu sûr, un objet ou une image",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Expliquer (3 min) : un lieu sûr, c’est un endroit dans l’imagination où l’on se calme – réel ou inventé : une plage, son lit, une cabane dans un arbre, un lieu tiré d’un jeu vidéo. Tout le monde n’arrive pas à se faire une telle image, c’est normal ; un objet à toucher ou une image à regarder aident alors tout autant. L’enseignant·e donne son propre exemple. Choisir (2 min) : qui veut un objet ou une carte postale vient le chercher dans la boîte, îlot par îlot, et peut le garder. Créer (9 min) : exercices 3 et 4 du cahier – dessiner ou décrire, compléter avec les sens, trouver un mot-clé ; en fond, une musique douce sans paroles. Passer dans les rangs et aider qui ne trouve rien. Pour finir, le cahier reste ouvert à cette page (1 min).",
+            "text": "Expliquer (3 min) : un lieu sûr, c’est un endroit dans l’imagination où l’on se calme – réel ou inventé : une plage, son lit, une cabane dans un arbre, un lieu tiré d’un jeu vidéo. Qui n’accroche pas au mot « sûr » dit lieu calme. Tout le monde n’arrive pas à se faire une telle image, c’est normal ; un objet à toucher ou une image à regarder aident alors tout autant. L’enseignant·e donne son propre exemple. Choisir (2 min) : l’enseignant·e passe dans les îlots avec la boîte ; qui veut un galet, une balle ou une carte postale en prend un et peut le garder. Créer (9 min) : exercices 3 et 4 du cahier – dessiner ou décrire, compléter avec les sens, trouver un mot-clé ; en fond, une musique douce sans paroles. Passer entre les tables et aider qui ne trouve rien. Pour finir, le cahier reste ouvert à cette page (1 min).",
             "sagen": [
               "Votre lieu vous appartient. Personne n’a à le montrer ni à l’expliquer.",
               "Pas besoin de savoir dessiner. Des couleurs, des formes ou quelques mots suffisent."
             ],
-            "tipp": "Qui n’accroche pas au mot « sûr » peut dire lieu calme ou lieu où je me sens bien. Un galet lisse ou une bille dans la poche passe inaperçu – beaucoup s’en servent ensuite aussi pendant un devoir en classe.",
-            "wennEsKippt": "Si quelqu’un ne trouve rien, ne pas insister : un endroit tout simple comme sa chambre convient aussi bien, tout comme l’objet de la boîte. Si un jeune cite un lieu pour rire, le prendre au sérieux avec calme et l’interroger sur ses sens – souvent, il en sort un vrai lieu. Si un jeune dessine quelque chose de menaçant ou laisse la page vide, ne rien interpréter et ne pas poser de questions devant la classe ; lui proposer un court échange après le cours. Si ça se bouscule devant la boîte ou si des billes volent, fermer la boîte et distribuer soi-même.",
+            "tipp": "Un galet lisse dans la poche passe inaperçu – beaucoup s’en servent ensuite aussi pendant un devoir en classe. Qui cache sa feuille avec la main n’est pas questionné : le lieu appartient à celui ou celle qui l’a choisi.",
+            "wennEsKippt": "Si quelqu’un ne trouve rien, ne pas insister : un endroit tout simple comme sa chambre convient aussi bien, tout comme l’objet de la boîte. Si un jeune cite un lieu pour rire, le prendre au sérieux avec calme et l’interroger sur ses sens – souvent, il en sort un vrai lieu. Si la page reste vide, un mot-clé ou l’objet suffisent. Si un jeune dit qu’il n’y a nulle part de lieu sûr ou dessine quelque chose de menaçant : ne rien interpréter, ne pas poser de questions devant la classe, lui proposer un court échange après le cours et, en cas d’inquiétude, informer le SePAS le jour même. Si des galets volent, l’enseignant·e les ramasse sans un mot.",
             "blatt": "ff7-kopf-skills"
           },
           {
             "titel": "Skill : mon lieu sûr",
             "dauer": 10,
             "phase": "skill",
-            "text": "Tout le monde est assis confortablement, les deux pieds au sol ; le cahier avec le lieu, l’objet ou la carte postale est posé devant soi. Annoncer : yeux fermés ou ouverts, les deux sont bien, et qui veut sortir de l’exercice ouvre les yeux et regarde la salle. Guider lentement les trois étapes et attendre deux ou trois respirations après chaque phrase (liste, 4 min) ; qui a un objet le tient dans la main. Ensuite, revenir : sentir ses pieds, s’étirer, regarder autour de soi. Recueillir deux ou trois retours (3 min) : comment c’était ? Quand est-ce que ça pourrait aider – dans le bus, avant un devoir en classe, le soir au lit ? Expliquer : le lieu marche si on l’entraîne dans le vert ; il est alors vite là dans l’orange. Pour finir, noter le lieu sûr sur la dernière ligne du testeur de skills (2 min).",
+            "text": "Tout le monde est assis confortablement, les deux pieds au sol ; le cahier avec le lieu, l’objet ou la carte postale est posé devant soi, le chiffre avant va sur la ligne suivante du testeur de skills. Annoncer : yeux fermés ou ouverts, les deux sont bien ; qui veut sortir de l’exercice ouvre les yeux et regarde la salle. Guider lentement les trois étapes et attendre deux ou trois respirations après chaque phrase (liste, 4 min) ; l’enseignant·e lit les yeux ouverts. Ensuite, revenir : sentir ses pieds, s’étirer, regarder autour de soi. Recueillir deux ou trois retours (3 min) : comment c’était ? Quand est-ce que ça pourrait aider – dans le bus, avant un devoir en classe, le soir au lit ? Expliquer : le lieu marche si on l’entraîne dans le vert ; il est alors vite là dans l’orange. Pour finir, noter le chiffre après (2 min).",
             "sagen": [
               "C’est vous qui décidez jusqu’où vous allez. Garder les yeux ouverts, c’est tout à fait bien.",
-              "Qui visite son lieu quelques fois par semaine le retrouve aussi quand ça devient serré."
+              "Qui visite son lieu quelques fois par semaine le retrouve aussi quand ça chauffe."
             ],
             "punkte": [
               "Dis-toi ton mot-clé – ou prends ton objet dans la main, regarde ton image. Expire lentement.",
@@ -483,7 +481,7 @@
               "Reste le temps de trois respirations calmes. Puis reviens : sens la chaise, étire-toi et regarde la salle autour de toi."
             ],
             "tipp": "Ne pas lire trop vite : ce sont les pauses qui font l’effet. Dans le rouge, le lieu n’aide souvent plus – d’abord un skill du corps ou des sens, ensuite le lieu.",
-            "wennEsKippt": "Si un jeune semble tendu ou agité pendant l’exercice, lui proposer discrètement d’ouvrir les yeux, de bien poser les pieds au sol ou de serrer fort son objet, et lui parler brièvement après le cours. Si la classe est très agitée, lire seulement les trois phrases et faire l’exercice les yeux ouverts. Qui ne veut pas participer reste assis en silence – c’est permis.",
+            "wennEsKippt": "Si un jeune semble tendu ou agité pendant l’exercice, lui proposer discrètement d’ouvrir les yeux, de bien poser les pieds au sol ou de serrer fort son objet ; si cela ne suffit pas, faire avec lui le 5-4-3-2-1. Qui a besoin de distance va au coin calme de la salle, jamais seul dehors ; lui parler brièvement après le cours. Si la classe est très agitée, lire seulement les trois phrases et faire l’exercice les yeux ouverts. Qui ne veut pas participer reste assis en silence – c’est permis.",
             "blatt": "ff7-kopf-skills"
           },
           {
@@ -498,19 +496,19 @@
           }
         ],
         "bruecke": "La semaine prochaine, vous remplissez votre valise à skills : parmi tous les skills que vous avez testés, vous choisissez les meilleurs – et vous faites un plan pour le vert, l’orange et le rouge.",
-        "mission": "Cette semaine, va deux fois une minute dans ton lieu sûr – ou donne un job à ta tête quand elle tourne en boucle. Qu’est-ce qui t’a aidé ?",
-        "hintergrund": "La pleine conscience consiste à porter son attention, volontairement et sans jugement, sur le moment présent, y compris sur ses pensées. On les remarque au lieu de les combattre : vouloir chasser une pensée la rend souvent plus présente ; dans l’expérience, une pensée réprimée revenait même plus souvent ensuite (Wegner et al., 1987). Les petits bateaux entraînent l’inverse : remarquer, laisser passer, revenir. À l’école, la pleine conscience améliore surtout l’attention et la gestion du stress (Zenner et al., 2014). Les skills mentaux détournent l’attention et coupent les ruminations ; comme ils demandent de la capacité de réflexion, ils aident quand la tension est moyenne, presque plus dans le rouge. Le lieu sûr vient du travail de stabilisation par les images intérieures (Reddemann, 2001). Tout le monde n’arrive pas à créer une telle image, et pour certains, « sûr » est un mot lourd : l’objet et l’image valent donc tout autant.",
+        "mission": "Cette semaine, rends-toi deux fois une minute dans ton lieu sûr, par exemple le soir au lit – ou donne un job à ta tête quand elle tourne en boucle. Qu’est-ce qui t’a aidé ?",
+        "hintergrund": "La pleine conscience consiste à percevoir sans jugement ce qui est là en ce moment – y compris ses pensées. On les remarque au lieu de les combattre : vouloir chasser une pensée la rend souvent plus présente ; dans l’expérience, une pensée réprimée revenait même plus souvent ensuite (Wegner et al., 1987). Le petit bateau des pensées entraîne l’inverse : remarquer, laisser passer, revenir. À l’école, la pleine conscience améliore surtout l’attention et la gestion du stress (Zenner et al., 2014) ; c’est un entraînement de l’attention, sans dimension religieuse. Les skills mentaux occupent la tête ou créent de la distance avec les ruminations ; comme ils demandent une tête disponible, ils aident quand la tension est moyenne, presque plus dans le rouge. Le lieu sûr vient du travail de stabilisation par les images intérieures (Reddemann, 2001). Tout le monde n’y arrive pas : l’objet et l’image valent donc tout autant.",
         "quellen": [
           "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.",
           "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603.",
           "Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta."
         ],
-        "achtung": "Les exercices de pleine conscience et d’imagination peuvent réveiller des pensées ou des souvenirs pénibles, surtout après des expériences difficiles. Toujours : assis, yeux ouverts permis, sortir de l’exercice permis, personne n’a à décrire ni à montrer son lieu. Si un jeune ne trouve aucun lieu sûr, dessine quelque chose de menaçant ou semble bouleversé : ne rien interpréter, ne pas poser de questions devant la classe, lui parler en tête-à-tête après le cours et, en cas d’inquiétude, informer le SePAS le jour même et suivre le protocole de protection de l’école.",
+        "achtung": "Les exercices de pleine conscience et d’imagination peuvent réveiller des pensées ou des souvenirs pénibles. Toujours : assis, yeux ouverts permis, sortir de l’exercice permis, l’enseignant·e lit les yeux ouverts, personne n’a à montrer son lieu. Ne trouver aucun lieu est fréquent et souvent sans gravité. Être attentif si un jeune dit qu’il n’y a nulle part de lieu sûr, dessine quelque chose de menaçant ou semble bouleversé : ne rien interpréter, ne pas questionner devant la classe, lui parler en tête-à-tête après le cours, informer le SePAS le jour même, suivre le protocole de protection de l’école. Qui a besoin de distance va au coin calme, jamais seul dehors.",
         "differenzierung": {
-          "leichter": "Esquisser l’ours blanc et la rivière au tableau ; pour le jeu de l’alphabet, toutes les langues sont permises, pour compter à rebours, de 3 en 3 ou à partir de 30 suffit. Lire les consignes lentement en les accompagnant de gestes. Pour le lieu sûr, un dessin et un mot-clé suffisent ; qui apprend encore la langue écrit dans sa langue – personne ne lit la fiche.",
+          "leichter": "Esquisser l’ours blanc et la rivière au tableau ; les noms courts des skills y sont à recopier. Tous les skills mentaux marchent dans n’importe quelle langue, pour compter à rebours, de 3 en 3 ou à partir de 30 suffit. Lire les consignes lentement en les accompagnant de gestes. Pour le lieu sûr, un dessin et un mot-clé suffisent, dans n’importe quelle langue – personne ne lit la fiche.",
           "schwerer": "Compter à rebours de 7 en 7 ; pendant l’expérience, prendre en charge le bilan de l’îlot et l’écrire au tableau. Inventer son propre skill mental et expliquer pourquoi il aide dans l’orange et presque plus dans le rouge."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec une demi-minute de silence (5 min), expérience de l’ours blanc et petits bateaux de pensées (12 min), expérience des brouilleurs avec deux pros par îlot (15 min), choisir son lieu sûr et le visiter tout de suite avec les trois phrases (13 min), Skills-Pass et mission de la semaine (5 min). Les quatre skills mentaux au calme sont supprimés ; ils figurent dans l’encadré de la fiche et peuvent être essayés à la maison."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec une demi-minute de silence (5 min), expérience de l’ours blanc et petit bateau des pensées (12 min), expérience des perturbateurs avec deux pros par îlot (15 min), choisir son lieu sûr et le visiter tout de suite avec les trois phrases (13 min), Skills-Pass et mission de la semaine (5 min). Les trois skills mentaux au calme sont supprimés ; ils figurent dans l’encadré de la fiche et peuvent être essayés à la maison."
       }
     }
   ],
@@ -614,10 +612,10 @@
           {
             "art": "satzanfaenge",
             "items": [
-              "Kopf-Skills helfen mir bei Gelb, weil …",
+              "Mein Kopf-Skill für Gelb: …",
               "Bei Rot nehme ich zuerst …"
             ],
-            "linien": 2
+            "linien": 1
           },
           {
             "art": "info",
@@ -627,7 +625,8 @@
               "Rückwärts zählen: 100, 97, 94 …",
               "ABC-Spiel: zu jedem Buchstaben ein Tier, ein Land, ein Essen",
               "Fünferlisten: fünf Vereine, fünf Lieder, fünf Automarken",
-              "Wie mit einem Freund: in Gedanken mit deinem Namen mit dir reden"
+              "Wie mit einem Freund: in Gedanken mit deinem Namen mit dir reden",
+              "Alle gehen in jeder Sprache – und niemand merkt es."
             ]
           },
           {
@@ -641,7 +640,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Dein sicherer Ort: Wähl einen Ort in deinem Kopf, einen Gegenstand oder ein Bild. Mal oder beschreib ihn.",
+            "text": "Dein sicherer Ort – oder Ruheort: Wähl einen Ort in deinem Kopf, einen Gegenstand oder ein Bild. Mal oder beschreib ihn.",
             "hinweis": "Der Ort kann echt oder erfunden sein. Du musst ihn niemandem zeigen."
           },
           {
@@ -698,13 +697,13 @@
             "Schritt 7: Aufgaben 3 und 4 (9 Min.) mit leiser Musik; in Schritt 8 wird der Ort zum Skill.",
             "Das Blatt wird nicht eingesammelt; die Seite mit dem Ort zeigt nur, wer will."
           ],
-          "hintergrund": "Unterdrückte Gedanken kehren eher zurück (Wegner et al., 1987); das Gedankenschiffchen übt, sie zu bemerken und ziehen zu lassen. Kopf-Skills lenken die Aufmerksamkeit um und brauchen freie Denkkraft, deshalb helfen sie vor allem bei mittlerer Anspannung. Der sichere Ort ist eine Übung mit inneren Bildern zur Stabilisierung (Reddemann, 2001); Gegenstand und Bild sind gleichwertige Alternativen.",
+          "hintergrund": "Unterdrückte Gedanken kehren eher zurück (Wegner et al., 1987); das Gedankenschiffchen übt, sie zu bemerken und ziehen zu lassen. Kopf-Skills beschäftigen den Kopf oder schaffen Abstand und brauchen freie Denkkraft, deshalb helfen sie vor allem bei mittlerer Anspannung. Der sichere Ort ist eine Übung mit inneren Bildern zur Stabilisierung (Reddemann, 2001); Gegenstand und Bild sind gleichwertige Alternativen.",
           "quellen": [
             "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.",
             "Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta."
           ],
-          "achtung": "Findet jemand keinen sicheren Ort oder malt Bedrohliches: nichts deuten, nicht vor der Klasse nachfragen, nach der Stunde ansprechen und bei Sorge den SePAS informieren.",
-          "material": "Kiste mit kleinen Gegenständen und Postkarten, Buntstifte"
+          "achtung": "Keinen Ort zu finden, ist häufig und meist harmlos. Sagt jemand, es gebe nirgends einen sicheren Ort, oder malt Bedrohliches: nichts deuten, nicht vor der Klasse nachfragen, nach der Stunde ansprechen und noch am selben Tag den SePAS informieren.",
+          "material": "Kiste mit glatten Steinen, Knetbällen und Postkarten, Buntstifte"
         }
       },
       "fr": {
@@ -718,7 +717,7 @@
           {
             "art": "info",
             "symbol": "wissen",
-            "titel": "Les petits bateaux de pensées",
+            "titel": "Le petit bateau des pensées",
             "punkte": [
               "Une pensée arrive : pose-la sur un bateau.",
               "Regarde le bateau s’éloigner. Tu n’as rien à retenir, rien à repousser.",
@@ -727,7 +726,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Comment se sont passés les petits bateaux pour toi ? Coche ce qui est vrai.",
+            "text": "Comment s’est passé le petit bateau des pensées pour toi ? Coche ce qui est vrai.",
             "hinweis": "Se laisser emporter n’est pas une faute. Au début, ça arrive souvent à presque tout le monde."
           },
           {
@@ -744,7 +743,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "L’expérience des brouilleurs : combien d’animaux as-tu trouvés en 30 secondes ? Note tes chiffres.",
+            "text": "L’expérience des perturbateurs : combien d’animaux as-tu trouvés en 30 secondes ? Note tes chiffres.",
             "hinweis": "Si tu n’as pas été pro, note les chiffres de ton îlot."
           },
           {
@@ -768,12 +767,12 @@
               ],
               [
                 "2",
-                "un brouilleur",
+                "un perturbateur",
                 ""
               ],
               [
                 "3",
-                "deux brouilleurs",
+                "deux perturbateurs",
                 ""
               ]
             ]
@@ -781,10 +780,10 @@
           {
             "art": "satzanfaenge",
             "items": [
-              "Les skills mentaux m’aident dans l’orange parce que…",
+              "Mon skill mental pour l’orange : …",
               "Dans le rouge, je prends d’abord…"
             ],
-            "linien": 2
+            "linien": 1
           },
           {
             "art": "info",
@@ -794,7 +793,8 @@
               "Compter à rebours : 100, 97, 94…",
               "Le jeu de l’alphabet : pour chaque lettre, un animal, un pays, un plat",
               "Les listes de cinq : cinq clubs, cinq chansons, cinq marques de voitures",
-              "Comme avec un ami : te parler dans ta tête, avec ton prénom"
+              "Comme avec un ami : te parler dans ta tête, avec ton prénom",
+              "Ils marchent dans n’importe quelle langue – et personne ne le remarque."
             ]
           },
           {
@@ -808,7 +808,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Ton lieu sûr : choisis un endroit dans ta tête, un objet ou une image. Dessine-le ou décris-le.",
+            "text": "Ton lieu sûr – ou lieu calme : choisis un endroit dans ta tête, un objet ou une image. Dessine-le ou décris-le.",
             "hinweis": "L’endroit peut être réel ou inventé. Tu n’as à le montrer à personne."
           },
           {
@@ -858,20 +858,20 @@
           }
         ],
         "lehrer": {
-          "ziel": "Les jeunes notent comment se sont passés les petits bateaux de pensées, consignent l’expérience des brouilleurs et créent un lieu sûr – ou choisissent un objet ou une image – avec un mot-clé.",
+          "ziel": "Les jeunes notent comment s’est passé le petit bateau des pensées, consignent l’expérience des perturbateurs et créent un lieu sûr – ou choisissent un objet ou une image – avec un mot-clé.",
           "ablauf": [
-            "Séance 16, étape 3 : après les petits bateaux, cocher l’exercice 1 (1 min).",
-            "Étape 6 : noter le chiffre après chaque manche de l’expérience des brouilleurs, compléter les deux phrases après le bilan.",
+            "Séance 16, étape 3 : après le petit bateau des pensées, cocher l’exercice 1 (1 min).",
+            "Étape 6 : noter le chiffre après chaque manche de l’expérience des perturbateurs, compléter les deux phrases après le bilan.",
             "Étape 7 : exercices 3 et 4 (9 min) avec une musique douce ; à l’étape 8, le lieu devient un skill.",
             "La fiche n’est pas ramassée ; seul celui qui le veut montre la page de son lieu."
           ],
-          "hintergrund": "Les pensées réprimées reviennent plus facilement (Wegner et al., 1987) ; les petits bateaux entraînent à les remarquer et à les laisser passer. Les skills mentaux détournent l’attention et demandent de la capacité de réflexion, c’est pourquoi ils aident surtout quand la tension est moyenne. Le lieu sûr est un exercice de stabilisation par les images intérieures (Reddemann, 2001) ; l’objet et l’image sont des alternatives de même valeur.",
+          "hintergrund": "Les pensées réprimées reviennent plus facilement (Wegner et al., 1987) ; le petit bateau des pensées entraîne à les remarquer et à les laisser passer. Les skills mentaux occupent la tête ou créent de la distance et demandent une tête disponible, c’est pourquoi ils aident surtout quand la tension est moyenne. Le lieu sûr est un exercice de stabilisation par les images intérieures (Reddemann, 2001) ; l’objet et l’image sont des alternatives de même valeur.",
           "quellen": [
             "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.",
             "Reddemann, L. (2001). Imagination als heilsame Kraft. Zur Behandlung von Traumafolgen mit ressourcenorientierten Verfahren. Stuttgart: Pfeiffer bei Klett-Cotta."
           ],
-          "achtung": "Si un jeune ne trouve aucun lieu sûr ou dessine quelque chose de menaçant : ne rien interpréter, ne pas poser de questions devant la classe, lui parler après le cours et, en cas d’inquiétude, informer le SePAS.",
-          "material": "Boîte avec de petits objets et des cartes postales, crayons de couleur"
+          "achtung": "Ne trouver aucun lieu est fréquent et le plus souvent sans gravité. Si un jeune dit qu’il n’y a nulle part de lieu sûr ou dessine quelque chose de menaçant : ne rien interpréter, ne pas questionner devant la classe, lui parler après le cours et informer le SePAS le jour même.",
+          "material": "Boîte avec des galets, des balles anti-stress et des cartes postales, crayons de couleur"
         }
       }
     }
