@@ -129,6 +129,13 @@ export const TX = {
     imKapitel: 'In diesem Kapitel',
     fuerLehrkraft: 'Kopiervorlage für die Lehrkraft',
     kapitelEnde: (k: string) => `Am Ende des Kapitels: ${k}`,
+    /** Theoretische Grundlagen: wo die Theorie im Fach steckt */
+    imFach: 'Im Fach',
+    /** Fragebogen und Auswertungsbogen */
+    aussage: 'Aussage',
+    nr: 'Nr.',
+    klasseFeld: 'Klasse',
+    schuljahrFeld: 'Schuljahr',
   },
   fr: {
     lehrerhandbuch: 'Guide de l’enseignant',
@@ -203,6 +210,11 @@ export const TX = {
     imKapitel: 'Dans ce chapitre',
     fuerLehrkraft: 'Modèle pour l’enseignant·e',
     kapitelEnde: (k: string) => `En fin de chapitre : ${k}`,
+    imFach: 'Dans la matière',
+    aussage: 'Affirmation',
+    nr: 'N°',
+    klasseFeld: 'Classe',
+    schuljahrFeld: 'Année scolaire',
   },
 } satisfies Record<Sprache, Record<string, unknown>>
 

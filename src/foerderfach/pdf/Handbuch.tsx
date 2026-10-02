@@ -20,7 +20,7 @@ import { SCHRIFT } from '../../blatt/pdf/stil'
 import { QUELLEN } from '../../blatt/quellen'
 import { URHEBER_NAME } from '../../lib/urheber'
 import { FACH, KOMPETENZEN, PHASEN, STUFE_FARBEN, TX, trimesterName, type FachTx } from '../fach'
-import type { ElternBrief, Einheit, HandbuchText, Jahresplan, Kapitel, Klasse, Kompetenz, PlanEinheit, Schritt, SkillKarte, Sprache } from '../typen'
+import type { ElternBrief, Einheit, FragebogenText, HandbuchText, Jahresplan, Kapitel, Klasse, Kompetenz, PlanEinheit, Schritt, SkillKarte, Sprache } from '../typen'
 import {
   Absatz,
   BREITE,
@@ -300,6 +300,36 @@ function KompetenzSeite({ sprache, p, klasse, text, plaene, marken }: { sprache:
       </Absatz>
       <Quellen liste={[quelle('casel2020')]} />
       <Fuss links={FACH.name} titel={ty(k.titel, sprache)} sprache={sprache} />
+    </Page>
+  )
+}
+
+/** „Theoretische Grundlagen“: je Theorie Kernaussage und wo sie im Fach steckt; läuft bei Bedarf auf die nächste Seite. */
+function GrundlagenSeiten({ sprache, p, klasse, text, marken }: { sprache: Sprache; p: Palette; klasse: Klasse; text: HandbuchText; marken?: Marken }) {
+  const t = TX[sprache]
+  const g = text.grundlagen
+  return (
+    <Page size="A4" style={seitenStil}>
+      <Marke id="a-grund" marken={marken} />
+      <KopfA t={t} klasse={klasse} p={p} />
+      <SeitenTitel titel={g.titel} unter={g.einleitung} p={p} sprache={sprache} />
+      {g.theorien.map((x, i) => (
+        <View key={i} wrap={false} style={{ flexDirection: 'row', paddingVertical: 7, borderTopWidth: i ? 0.6 : 0, borderTopColor: NEUTRAL.haarlinie }}>
+          <View style={{ width: 132, paddingRight: 10 }}>
+            <Fett groesse={9.4}>{ty(x.titel, sprache)}</Fett>
+          </View>
+          <View style={{ flex: 1 }}>
+            <Absatz groesse={8.9} style={{ lineHeight: 1.42 }}>
+              {ty(x.text, sprache)}
+            </Absatz>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, lineHeight: 1.38, color: p.tief, marginTop: 2.5 }}>
+              <Text style={{ fontWeight: 600 }}>{`${t.imFach}: `}</Text>
+              {ty(x.imFach, sprache)}
+            </Text>
+          </View>
+        </View>
+      ))}
+      <Fuss links={FACH.name} titel={ty(g.titel, sprache)} sprache={sprache} />
     </Page>
   )
 }
@@ -636,6 +666,144 @@ function MaterialSeite({ sprache, p, klasse, text, marken }: { sprache: Sprache;
         ))}
       </View>
       <Fuss links={FACH.name} titel={ty(m.titel, sprache)} sprache={sprache} />
+    </Page>
+  )
+}
+
+/** „Wirkt es?“: Vorgehen in wenigen Schritten und der Auswertungsbogen; der Fragebogen folgt als Kopiervorlage. */
+function MessenSeite({ sprache, p, klasse, text, marken }: { sprache: Sprache; p: Palette; klasse: Klasse; text: HandbuchText; marken?: Marken }) {
+  const t = TX[sprache]
+  const m = text.messen
+  return (
+    <Page size="A4" style={seitenStil}>
+      <Marke id="a8" marken={marken} />
+      <KopfA t={t} klasse={klasse} p={p} />
+      <SeitenTitel titel={m.titel} unter={m.einleitung} p={p} sprache={sprache} />
+      {m.schritte.map((x, i) => (
+        <View key={i} wrap={false} style={{ flexDirection: 'row', marginBottom: 7 }}>
+          <View style={{ width: 17, height: 17, borderRadius: 8.5, backgroundColor: p.tief, alignItems: 'center', justifyContent: 'center', marginRight: 9, marginTop: 0.5 }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.6, color: '#FFFFFF' }}>{String(i + 1)}</Text>
+          </View>
+          <View style={{ flex: 1 }}>
+            <Fett groesse={9.4}>{ty(x.titel, sprache)}</Fett>
+            <Absatz groesse={8.8} style={{ marginTop: 1.5, lineHeight: 1.42 }}>
+              {ty(x.text, sprache)}
+            </Absatz>
+          </View>
+        </View>
+      ))}
+      <View wrap={false} style={{ marginTop: 6, backgroundColor: p.zart, borderRadius: 9, padding: 11 }}>
+        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: p.tief }}>{ty(m.zuordnung.titel, sprache)}</Text>
+        <Absatz groesse={8.6} style={{ marginTop: 2, marginBottom: 7, lineHeight: 1.4 }}>
+          {ty(m.zuordnung.text, sprache)}
+        </Absatz>
+        {m.zuordnung.bereiche.map((x, i) => (
+          <View key={i} style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 2 }}>
+            <Text style={{ width: 46, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.6, color: p.tief }}>{x.aussagen}</Text>
+            <KompetenzChip id={x.kompetenz} sprache={sprache} groesse={8.6} />
+          </View>
+        ))}
+      </View>
+      <Fuss links={FACH.name} titel={ty(m.titel, sprache)} sprache={sprache} />
+    </Page>
+  )
+}
+
+/** Anonymer Klassen-Fragebogen als Kopiervorlage, in seiner eigenen Sprache (wie der Elternbrief in beiden Sprachen). */
+function FragebogenSeite({ fb, fbSprache, sprache, p, klasse, marken }: { fb: FragebogenText; fbSprache: Sprache; sprache: Sprache; p: Palette; klasse: Klasse; marken?: Marken }) {
+  const t = TX[sprache]
+  const b = (x: string) => ty(x, fbSprache)
+  const kaestchen = (d = 10) => <View style={{ width: d, height: d, borderWidth: 1, borderColor: NEUTRAL.linie, borderRadius: d / 2 }} />
+  const spalte = 50
+  return (
+    <Page size="A4" style={seitenStil}>
+      <Marke id={`frage-${fbSprache}`} marken={marken} />
+      <Kopf reiter={t.kopiervorlage} meta={`${FACH.name}  ·  ${t.lehrerhandbuch} ${klasse}  ·  ${fb.seite}`} p={p} />
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9, color: p.tief, letterSpacing: 0.6, marginTop: 4 }}>{versal(FACH.name)}</Text>
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 15, color: NEUTRAL.text, marginTop: 6, marginBottom: 6 }}>{b(fb.titel)}</Text>
+      <Absatz groesse={9.4} style={{ lineHeight: 1.45 }}>
+        {b(fb.anleitung)}
+      </Absatz>
+      <View style={{ flexDirection: 'row', marginTop: 8, marginBottom: 10 }}>
+        {fb.zeitpunkt.map((z, i) => (
+          <View key={i} style={{ flexDirection: 'row', alignItems: 'center', marginRight: 22 }}>
+            <View style={{ width: 10, height: 10, borderWidth: 1, borderColor: NEUTRAL.linie, borderRadius: 2, marginRight: 6 }} />
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.2, color: NEUTRAL.text }}>{b(z)}</Text>
+          </View>
+        ))}
+      </View>
+      <View style={{ flexDirection: 'row', alignItems: 'flex-end', borderBottomWidth: 1.2, borderBottomColor: p.tief, paddingBottom: 4 }}>
+        <View style={{ flex: 1 }} />
+        {fb.skala.map((s, i) => (
+          <Text key={i} style={{ width: spalte, textAlign: 'center', fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: 7.2, lineHeight: 1.25, color: p.tief }}>
+            {b(s)}
+          </Text>
+        ))}
+      </View>
+      {fb.aussagen.map((a, i) => (
+        <View key={i} wrap={false} style={{ flexDirection: 'row', alignItems: 'center', paddingVertical: 5, borderBottomWidth: 0.5, borderBottomColor: NEUTRAL.haarlinie, backgroundColor: i % 2 ? undefined : NEUTRAL.flaeche }}>
+          <Text style={{ width: 18, paddingLeft: 3, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.6, color: p.tief }}>{String(i + 1)}</Text>
+          <Text style={{ flex: 1, paddingRight: 6, fontFamily: SCHRIFT.jugend, fontSize: 9.6, lineHeight: 1.35, color: NEUTRAL.text }}>{b(a)}</Text>
+          {fb.skala.map((_, j) => (
+            <View key={j} style={{ width: spalte, alignItems: 'center' }}>
+              {kaestchen(11)}
+            </View>
+          ))}
+        </View>
+      ))}
+      {fb.offen.map((f, i) => (
+        <View key={i} wrap={false} style={{ marginTop: 10 }}>
+          <Fett groesse={9.4}>{b(f)}</Fett>
+          {[0, 1].map((j) => (
+            <View key={j} style={{ height: 19, borderBottomWidth: 0.9, borderBottomColor: NEUTRAL.linie }} />
+          ))}
+        </View>
+      ))}
+      <Absatz groesse={9} farbe={NEUTRAL.leise} style={{ marginTop: 10 }}>
+        {b(fb.dank)}
+      </Absatz>
+      <Fuss links={FACH.name} titel={fb.seite} sprache={sprache} />
+    </Page>
+  )
+}
+
+/** Auswertungsbogen der Klasse als Kopiervorlage: je Aussage Durchschnitt am Anfang, am Ende und die Veränderung. */
+function AuswertungSeite({ sprache, p, klasse, text, marken }: { sprache: Sprache; p: Palette; klasse: Klasse; text: HandbuchText; marken?: Marken }) {
+  const t = TX[sprache]
+  const m = text.messen
+  const kopf = { fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7.6, letterSpacing: 0.4, color: p.tief } as const
+  return (
+    <Page size="A4" style={seitenStil}>
+      <Marke id="auswertung" marken={marken} />
+      <Kopf reiter={t.kopiervorlage} meta={`${FACH.name}  ·  ${t.lehrerhandbuch} ${klasse}  ·  ${m.auswertung.titel}`} p={p} />
+      <SeitenTitel titel={m.auswertung.titel} unter={m.auswertung.text} p={p} sprache={sprache} />
+      <View style={{ flexDirection: 'row', marginBottom: 12 }}>
+        {[t.klasseFeld, t.schuljahrFeld].map((f, i) => (
+          <View key={i} style={{ flex: 1, marginRight: 16 }}>
+            <View style={{ height: 18, borderBottomWidth: 0.9, borderBottomColor: NEUTRAL.linie }} />
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.6, color: NEUTRAL.leise, marginTop: 2 }}>{f}</Text>
+          </View>
+        ))}
+      </View>
+      <View style={{ flexDirection: 'row', borderBottomWidth: 1.2, borderBottomColor: p.tief, paddingBottom: 4 }}>
+        <Text style={{ ...kopf, width: 22 }}>{t.nr}</Text>
+        <Text style={{ ...kopf, flex: 1 }}>{versal(t.aussage)}</Text>
+        {m.auswertung.spalten.map((x, i) => (
+          <Text key={i} style={{ ...kopf, width: 66, textAlign: 'center' }}>
+            {versal(x)}
+          </Text>
+        ))}
+      </View>
+      {m.fragebogen.aussagen.map((a, i) => (
+        <View key={i} wrap={false} style={{ flexDirection: 'row', alignItems: 'center', minHeight: 30, borderBottomWidth: 0.5, borderBottomColor: NEUTRAL.haarlinie }}>
+          <Text style={{ width: 22, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.6, color: p.tief }}>{String(i + 1)}</Text>
+          <Text style={{ flex: 1, paddingRight: 8, paddingVertical: 3, fontFamily: SCHRIFT.jugend, fontSize: 8.6, lineHeight: 1.32, color: NEUTRAL.text }}>{ty(a, sprache)}</Text>
+          {m.auswertung.spalten.map((_, j) => (
+            <View key={j} style={{ width: 66, alignSelf: 'stretch', borderLeftWidth: 0.5, borderLeftColor: NEUTRAL.haarlinie }} />
+          ))}
+        </View>
+      ))}
+      <Fuss links={FACH.name} titel={ty(m.auswertung.titel, sprache)} sprache={sprache} />
     </Page>
   )
 }
@@ -1374,6 +1542,36 @@ function GlossarSeiten({ eintraege, sprache, p, klasse, text, marken }: { eintra
   )
 }
 
+/** Quellen von Teil A (Schlüssel aus quellen.ts): Überblick, Kompetenzen, theoretische Grundlagen */
+function quellenTeilA(text: HandbuchText): string[] {
+  return ['durlak2011', 'taylor2017', 'casel2020', ...text.grundlagen.theorien.flatMap((x) => x.quellen)].map(quelle).filter(Boolean)
+}
+
+/** Literaturverzeichnis: alle Quellen aus Teil A und den Einheiten der Klassenstufe, ohne Doppelte, alphabetisch */
+export function literaturVon(einheiten: Einheit[], sprache: Sprache, teilA: string[]): string[] {
+  const alle = new Set<string>(teilA)
+  for (const e of einheiten) for (const q of e[sprache].quellen ?? []) alle.add(q)
+  return [...alle].sort((a, b) => a.localeCompare(b, sprache))
+}
+
+function LiteraturSeiten({ eintraege, sprache, p, klasse, text, marken }: { eintraege: string[]; sprache: Sprache; p: Palette; klasse: Klasse; text: HandbuchText; marken?: Marken }) {
+  const t = TX[sprache]
+  return (
+    <Page size="A4" style={seitenStil}>
+      <Marke id="lit" marken={marken} />
+      <Kopf reiter={t.anhang} meta={`${FACH.name}  ·  ${t.lehrerhandbuch} ${klasse}`} p={p} />
+      <SeitenTitel titel={text.literatur.titel} unter={text.literatur.text.replaceAll('{klasse}', klasse)} p={p} sprache={sprache} />
+      {eintraege.map((q, i) => (
+        <View key={i} wrap={false} style={{ flexDirection: 'row', marginBottom: 4.5 }}>
+          <View style={{ width: 4, height: 4, borderRadius: 2, backgroundColor: p.mittel, marginTop: 4, marginRight: 8 }} />
+          <Text style={{ flex: 1, fontFamily: SCHRIFT.jugend, fontSize: 8.3, lineHeight: 1.42, color: NEUTRAL.text }}>{ty(q, 'de')}</Text>
+        </View>
+      ))}
+      <Fuss links={FACH.name} titel={ty(text.literatur.titel, sprache)} sprache={sprache} />
+    </Page>
+  )
+}
+
 // --- Booklet ------------------------------------------------------------------------------------------------------------
 
 export function bookletTitel(klasse: Klasse, sprache: Sprache): string {
@@ -1416,6 +1614,7 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
   const jeEinheit = vorlagenJeEinheit(einheiten, daten.blaetter)
   const werkzeuge = werkzeugeVon(daten, klasse)
   const glossar = glossarVon(einheiten, plan, sprache)
+  const literatur = literaturVon(einheiten, sprache, quellenTeilA(text))
   const p = stufenPalette(klasse)
   const briefe: Sprache[] = sprache === 'fr' ? ['fr', 'de'] : ['de', 'fr']
   const teilC = t.teil(2, t.teilC)
@@ -1429,12 +1628,16 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
           { id: 'a0', titel: text.start.titel },
           { id: 'a1', titel: text.ueberblick.titel },
           { id: 'a2', titel: text.kompetenzen.titel },
+          { id: 'a-grund', titel: text.grundlagen.titel },
           { id: 'a3', titel: text.doppelstunde.titel },
           { id: 'a4', titel: text.sicherheit.titel },
           { id: 'a5', titel: text.methoden.titel },
           { id: 'a6', titel: text.eltern.titel },
           ...briefe.map((b) => ({ id: `brief-${b}`, titel: daten.text[b].brief.seite, ebene: 2 as const })),
           { id: 'a7', titel: text.material.titel },
+          { id: 'a8', titel: text.messen.titel },
+          ...briefe.map((b) => ({ id: `frage-${b}`, titel: daten.text[b].messen.fragebogen.seite, ebene: 2 as const })),
+          { id: 'auswertung', titel: text.messen.auswertung.titel, ebene: 2 as const },
         ],
       ],
     },
@@ -1460,7 +1663,8 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
     })
   }
   teile.push({ titel: teilD, gruppen: [werkzeuge.map((id) => ({ id: vorlageId(id), titel: blattInhalt(daten.blaetter.get(id)!, sprache).titel }))] })
-  if (glossar.length) teile.push({ titel: t.anhang, gruppen: [[{ id: 'g', titel: text.glossar.titel }]] })
+  const anhang = [...(glossar.length ? [{ id: 'g', titel: text.glossar.titel }] : []), { id: 'lit', titel: text.literatur.titel }]
+  teile.push({ titel: t.anhang, gruppen: [anhang] })
 
   return (
     <Document title={bookletTitel(klasse, sprache)} author={URHEBER_NAME} creator="CDSE" producer="CDSE" language={sprache}>
@@ -1469,6 +1673,7 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
       <StartSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
       <UeberblickSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
       <KompetenzSeite sprache={sprache} p={p} klasse={klasse} text={text} plaene={daten.plaene} marken={marken} />
+      <GrundlagenSeiten sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
       <DoppelstundeSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
       <SicherheitSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
       <MethodenSeiten sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
@@ -1477,6 +1682,11 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
         <BriefSeite key={b} brief={daten.text[b].brief} briefSprache={b} sprache={sprache} p={p} klasse={klasse} marken={marken} />
       ))}
       <MaterialSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
+      <MessenSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
+      {briefe.map((b) => (
+        <FragebogenSeite key={b} fb={daten.text[b].messen.fragebogen} fbSprache={b} sprache={sprache} p={p} klasse={klasse} marken={marken} />
+      ))}
+      <AuswertungSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
       <JahresplanSeiten plan={plan} sprache={sprache} text={text} marken={marken} seiten={seiten} fertig={new Set(einheiten.map((e) => e.id))} />
       <JahreswegSeite plan={plan} sprache={sprache} text={text} marken={marken} />
       {einheiten.length
@@ -1513,6 +1723,7 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
         marken={marken}
       />
       {glossar.length ? <GlossarSeiten eintraege={glossar} sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
+      <LiteraturSeiten eintraege={literatur} sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
       {Array.from({ length: notizen }, (_, i) => (
         <NotizenSeite key={i} klasse={klasse} sprache={sprache} />
       ))}

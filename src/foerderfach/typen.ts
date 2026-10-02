@@ -175,11 +175,53 @@ export interface ElternBrief {
   abschnitt: { titel: string; felder: string[]; bestaetigung: string; frage: string; unterschrift: string }
 }
 
+/** Eine Theorie bzw. ein Modell, auf dem das Fach beruht (Teil A, „Theoretische Grundlagen“) */
+export interface TheorieText {
+  titel: string
+  /** Kernaussage in ein, zwei Sätzen */
+  text: string
+  /** Wo sie im Fach steckt: Einheiten, Rituale */
+  imFach: string
+  /** Schlüssel aus src/blatt/quellen.ts */
+  quellen: string[]
+}
+
+/** Anonymer Klassen-Fragebogen am Anfang und am Ende des Jahres (Kopiervorlage, je Sprache) */
+export interface FragebogenText {
+  /** Überschrift der Seite im Heft, z. B. „Fragebogen (Deutsch)“ */
+  seite: string
+  titel: string
+  anleitung: string
+  /** Zum Ankreuzen: „Anfang des Schuljahres“, „Ende des Schuljahres“ */
+  zeitpunkt: string[]
+  /** Antwortstufen von „stimmt gar nicht“ bis „stimmt genau“ */
+  skala: string[]
+  aussagen: string[]
+  /** Offene Fragen am Schluss */
+  offen: string[]
+  dank: string
+}
+
 export interface HandbuchText {
   /** Kurzer Hinweis auf der Inhaltsseite (Aufbau des Hefts); {klasse} wird ersetzt */
   vorwort: { titel: string; text: string }
   /** „Bevor Sie starten“: die häufigsten Sorgen vor den ersten Stunden mit kurzen Antworten (Teil A, vorn) */
   start: { titel: string; einleitung: string; fragen: TitelText[] }
+  /** „Theoretische Grundlagen“: Modelle und Theorien, auf denen das Fach beruht (Teil A) */
+  grundlagen: { titel: string; einleitung: string; theorien: TheorieText[] }
+  /** „Wirkt es?“: die Wirkung in der eigenen Klasse prüfen – Vorgehen, Auswertung, Fragebogen (Teil A) */
+  messen: {
+    titel: string
+    einleitung: string
+    schritte: TitelText[]
+    /** Was die Aussagen messen: Kompetenzbereich je Gruppe von Aussagen (Nummern, z. B. „1–2“) */
+    zuordnung: { titel: string; text: string; bereiche: { kompetenz: Kompetenz; aussagen: string }[] }
+    /** Auswertungsbogen für die Lehrkraft (eigene Kopiervorlage): Überschrift, Hinweis, Spaltenköpfe */
+    auswertung: { titel: string; text: string; spalten: string[] }
+    fragebogen: FragebogenText
+  }
+  /** Literaturverzeichnis im Anhang */
+  literatur: { titel: string; text: string }
   ueberblick: {
     titel: string
     einleitung: string

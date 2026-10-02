@@ -130,6 +130,20 @@
       },
       "hinweis": "Die Jahresziele beschreiben, was die Jugendlichen am Ende des Schuljahres können sollen. Sie werden nicht benotet; die Jugendlichen schätzen sich am Ende jedes Trimesters selbst ein."
     },
+    "grundlagen": {
+      "titel": "Theoretische Grundlagen",
+      "einleitung": "Vorläufig – wird mit dem Wirkungs-Check ersetzt.",
+      "theorien": [
+        {
+          "titel": "Sozial-emotionales Lernen (CASEL)",
+          "text": "Fünf Kompetenzbereiche, die sich lernen lassen (CASEL, 2020).",
+          "imFach": "Jahresziele, Kompetenzen jeder Einheit.",
+          "quellen": [
+            "casel2020"
+          ]
+        }
+      ]
+    },
     "doppelstunde": {
       "titel": "So läuft eine Doppelstunde",
       "einleitung": "Alle Einheiten folgen demselben Aufbau. Das gibt der Klasse Sicherheit und der Lehrkraft Routine: Nach wenigen Wochen laufen Check-in und Abschluss fast von selbst.",
@@ -601,6 +615,105 @@
         }
       ]
     },
+    "messen": {
+      "titel": "Wirkt es? So prüfen Sie es",
+      "einleitung": "Ob das Fach in Ihrer Klasse wirkt, lässt sich mit wenig Aufwand prüfen: derselbe anonyme Fragebogen am Anfang und am Ende des Schuljahres, ausgezählt in rund zehn Minuten. Er bewertet nicht die Jugendlichen, sondern das Fach – und zeigt, wo Sie nachlegen können.",
+      "schritte": [
+        {
+          "titel": "Wann",
+          "text": "In den ersten beiden Wochen und in den letzten beiden Wochen des Schuljahres, jeweils etwa 10 Minuten – zum Beispiel am Anfang der ersten und am Ende der letzten Stunde. Immer derselbe Bogen: Nur so lässt sich vergleichen."
+        },
+        {
+          "titel": "Wie",
+          "text": "Anleitung vorlesen, die Aussagen bei Bedarf einzeln vorlesen. Jede Person kreuzt für sich an, ohne Namen. Die Bögen kommen umgedreht in einen Umschlag, den eine Person aus der Klasse zuklebt. Wer nicht mitmachen möchte, gibt einen leeren Bogen ab."
+        },
+        {
+          "titel": "Auszählen",
+          "text": "Jede Antwort zählt 1 bis 4 Punkte („stimmt gar nicht“ = 1 … „stimmt genau“ = 4). Je Aussage den Durchschnitt der Klasse ausrechnen (Summe geteilt durch die Zahl der Bögen) und in den Auswertungsbogen eintragen; am Ende des Jahres ebenso, dann die Veränderung."
+        },
+        {
+          "titel": "Lesen",
+          "text": "Eine Veränderung ab etwa 0,3 Punkten ist ein Hinweis, kein Beweis – Klassen verändern sich auch ohne das Fach. Aussagekräftig ist das Muster: wo die Klasse wächst und wo nicht. Liegt Aussage 10 („In unserer Klasse fühle ich mich sicher“) unter 2,5, mit Régent und SePAS sprechen."
+        },
+        {
+          "titel": "Nutzen",
+          "text": "Zeigen Sie der Klasse am Ende zwei, drei Veränderungen und fragen Sie, was geholfen hat. Schwache Bereiche im nächsten Jahr gezielt stärken. Die Antworten auf „Wenn es mir nicht gut geht, hilft mir …“ zeigen, ob Skills im Alltag ankommen."
+        },
+        {
+          "titel": "Datenschutz",
+          "text": "Anonym, keine Einzelauswertung, keine Noten. Die Bögen bleiben in der Schule und werden nach dem Auszählen vernichtet; weitergegeben werden höchstens Klassenwerte, nie einzelne Bögen. In Gruppen unter acht Jugendlichen nur über Tendenzen sprechen."
+        }
+      ],
+      "zuordnung": {
+        "titel": "Was die Aussagen messen",
+        "text": "Je ein bis drei Aussagen gehören zu einem der fünf Kompetenzbereiche des Fachs. Aussage 10 fragt zusätzlich nach dem Klima der Klasse.",
+        "bereiche": [
+          {
+            "kompetenz": "kennen",
+            "aussagen": "1–2"
+          },
+          {
+            "kompetenz": "steuern",
+            "aussagen": "3–5"
+          },
+          {
+            "kompetenz": "verstehen",
+            "aussagen": "6–7"
+          },
+          {
+            "kompetenz": "miteinander",
+            "aussagen": "8–10"
+          },
+          {
+            "kompetenz": "entscheiden",
+            "aussagen": "11–12"
+          }
+        ]
+      },
+      "auswertung": {
+        "titel": "Auswertungsbogen der Klasse",
+        "text": "Für jede Aussage den Durchschnitt der Klasse eintragen (Summe der Punkte geteilt durch die Zahl der Bögen, 1 bis 4). Veränderung = Ende minus Anfang.",
+        "spalten": [
+          "Anfang",
+          "Ende",
+          "Veränderung"
+        ]
+      },
+      "fragebogen": {
+        "seite": "Fragebogen (Deutsch)",
+        "titel": "Wie geht es dir mit diesen Dingen?",
+        "anleitung": "Dieser Fragebogen ist anonym: Schreib deinen Namen nicht darauf. Es gibt keine richtigen und keine falschen Antworten. Kreuze bei jeder Aussage an, wie sehr sie für dich stimmt. Gezählt wird nur, wie es der ganzen Klasse geht – so können wir das Fach verbessern.",
+        "zeitpunkt": [
+          "Anfang des Schuljahres",
+          "Ende des Schuljahres"
+        ],
+        "skala": [
+          "stimmt gar nicht",
+          "stimmt eher nicht",
+          "stimmt eher",
+          "stimmt genau"
+        ],
+        "aussagen": [
+          "Ich kann sagen, wie ich mich gerade fühle.",
+          "Ich weiß, was ich gut kann.",
+          "Wenn ich wütend oder gestresst bin, kenne ich etwas, das mir hilft, ruhiger zu werden.",
+          "Ich kann mich bremsen, bevor ich etwas tue, das ich später bereue.",
+          "Wenn etwas schwer ist, gebe ich nicht gleich auf.",
+          "Ich merke, wenn es jemandem in der Klasse nicht gut geht.",
+          "Ich verstehe, dass andere eine Situation anders erleben können als ich.",
+          "Ich kann sagen, was ich brauche, ohne andere zu verletzen.",
+          "Wenn ich Nein sagen will, schaffe ich es.",
+          "In unserer Klasse fühle ich mich sicher.",
+          "Bevor ich etwas Wichtiges entscheide, denke ich an die Folgen.",
+          "Wenn es mir oder anderen schlecht geht, weiß ich, wo es Hilfe gibt."
+        ],
+        "offen": [
+          "Wenn es mir nicht gut geht, hilft mir …",
+          "Was wünschst du dir von diesem Fach – oder, am Ende des Jahres: Was nimmst du mit?"
+        ],
+        "dank": "Danke! Leg den Bogen umgedreht in den Umschlag."
+      }
+    },
     "plaene": {
       "titel": "Die Jahrespläne",
       "einleitung": "Jedes Jahr hat 35 Einheiten für rund 36 Schulwochen. Wahleinheiten vertiefen ein Thema; fallen Stunden aus, entfallen zuerst sie. Die Kapitel bauen aufeinander auf – ihre Reihenfolge sollte bleiben."
@@ -613,6 +726,10 @@
     "glossar": {
       "titel": "Glossar Deutsch – Französisch",
       "text": "Die Wörter aus den Wortspeichern der Einheiten – für Klassen, die in beiden Sprachen lernen, und für Lehrkräfte, die eine Einheit in der anderen Sprache halten. Die Zahl nennt die Einheit, in der das Wort vorkommt."
+    },
+    "literatur": {
+      "titel": "Literatur",
+      "text": "Alle Quellen, auf die sich Teil A und die Einheiten der {klasse} stützen. Bei jeder Einheit stehen die Belege unter „Fachlicher Hintergrund“."
     },
     "heft": {
       "inhalt": "Inhalt",
@@ -764,6 +881,20 @@
         "entscheiden": "Peser les conséquences, évaluer les risques, faire de bons choix pour soi et pour les autres."
       },
       "hinweis": "Les objectifs annuels décrivent ce que les jeunes devraient savoir faire à la fin de l’année. Ils ne sont pas notés ; les jeunes s’auto-évaluent à la fin de chaque trimestre."
+    },
+    "grundlagen": {
+      "titel": "Fondements théoriques",
+      "einleitung": "Provisoire – sera remplacé après la vérification de l’efficacité.",
+      "theorien": [
+        {
+          "titel": "Apprentissage socio-émotionnel (CASEL)",
+          "text": "Cinq domaines de compétences qui s’apprennent (CASEL, 2020).",
+          "imFach": "Objectifs de l’année, compétences de chaque unité.",
+          "quellen": [
+            "casel2020"
+          ]
+        }
+      ]
     },
     "doppelstunde": {
       "titel": "Le déroulement d’une séance double",
@@ -1236,6 +1367,105 @@
         }
       ]
     },
+    "messen": {
+      "titel": "Est-ce que ça marche ? Comment le vérifier",
+      "einleitung": "Vérifier si la matière porte ses fruits dans votre classe demande peu d’effort : le même questionnaire anonyme au début et à la fin de l’année, dépouillé en une dizaine de minutes. Il n’évalue pas les jeunes, mais la matière – et montre où renforcer.",
+      "schritte": [
+        {
+          "titel": "Quand",
+          "text": "Pendant les deux premières et les deux dernières semaines de l’année scolaire, environ 10 minutes à chaque fois – par exemple au début de la première et à la fin de la dernière séance. Toujours le même questionnaire : c’est la seule façon de comparer."
+        },
+        {
+          "titel": "Comment",
+          "text": "Lire la consigne à voix haute et, si nécessaire, chaque affirmation. Chacun coche pour soi, sans nom. Les feuilles vont, retournées, dans une enveloppe qu’un élève ferme. Qui ne souhaite pas participer rend une feuille vierge."
+        },
+        {
+          "titel": "Dépouiller",
+          "text": "Chaque réponse vaut de 1 à 4 points (« pas du tout vrai » = 1 … « tout à fait vrai » = 4). Pour chaque affirmation, calculer la moyenne de la classe (somme divisée par le nombre de feuilles) et la noter dans la grille ; en fin d’année, de même, puis l’évolution."
+        },
+        {
+          "titel": "Lire",
+          "text": "Une évolution à partir de 0,3 point environ est un indice, pas une preuve – une classe évolue aussi sans la matière. Ce qui compte, c’est l’ensemble : où la classe progresse et où elle stagne. Si l’affirmation 10 (« Dans notre classe, je me sens en sécurité ») est sous 2,5, en parler au régent et au SePAS."
+        },
+        {
+          "titel": "Utiliser",
+          "text": "En fin d’année, montrez deux ou trois évolutions à la classe et demandez ce qui a aidé. Renforcez de façon ciblée les points faibles l’année suivante. Les réponses à « Quand je ne vais pas bien, ce qui m’aide, c’est … » montrent si les skills arrivent au quotidien."
+        },
+        {
+          "titel": "Protection des données",
+          "text": "Anonyme, pas d’analyse individuelle, pas de notes. Les feuilles restent à l’école et sont détruites après le dépouillement ; seules des moyennes de classe peuvent être transmises, jamais des feuilles. Dans un groupe de moins de huit jeunes, ne parler que de tendances."
+        }
+      ],
+      "zuordnung": {
+        "titel": "Ce que mesurent les affirmations",
+        "text": "Une à trois affirmations par domaine de compétences de la matière. L’affirmation 10 renseigne en plus sur le climat de la classe.",
+        "bereiche": [
+          {
+            "kompetenz": "kennen",
+            "aussagen": "1–2"
+          },
+          {
+            "kompetenz": "steuern",
+            "aussagen": "3–5"
+          },
+          {
+            "kompetenz": "verstehen",
+            "aussagen": "6–7"
+          },
+          {
+            "kompetenz": "miteinander",
+            "aussagen": "8–10"
+          },
+          {
+            "kompetenz": "entscheiden",
+            "aussagen": "11–12"
+          }
+        ]
+      },
+      "auswertung": {
+        "titel": "Grille d’analyse de la classe",
+        "text": "Pour chaque affirmation, noter la moyenne de la classe (somme des points divisée par le nombre de feuilles, de 1 à 4). Évolution = fin moins début.",
+        "spalten": [
+          "Début",
+          "Fin",
+          "Évolution"
+        ]
+      },
+      "fragebogen": {
+        "seite": "Questionnaire (français)",
+        "titel": "Où en es-tu avec ces choses-là ?",
+        "anleitung": "Ce questionnaire est anonyme : n’écris pas ton nom. Il n’y a ni bonnes ni mauvaises réponses. Pour chaque affirmation, coche à quel point elle est vraie pour toi. On compte seulement comment va toute la classe – pour améliorer la matière.",
+        "zeitpunkt": [
+          "Début de l’année scolaire",
+          "Fin de l’année scolaire"
+        ],
+        "skala": [
+          "pas du tout vrai",
+          "plutôt pas vrai",
+          "plutôt vrai",
+          "tout à fait vrai"
+        ],
+        "aussagen": [
+          "Je peux dire comment je me sens en ce moment.",
+          "Je sais ce que je fais bien.",
+          "Quand je suis en colère ou stressé·e, je connais quelque chose qui m’aide à me calmer.",
+          "J’arrive à m’arrêter avant de faire quelque chose que je regretterais.",
+          "Quand quelque chose est difficile, je n’abandonne pas tout de suite.",
+          "Je remarque quand quelqu’un de la classe ne va pas bien.",
+          "Je comprends que les autres peuvent vivre une situation autrement que moi.",
+          "Je peux dire ce dont j’ai besoin sans blesser les autres.",
+          "Quand je veux dire non, j’y arrive.",
+          "Dans notre classe, je me sens en sécurité.",
+          "Avant de prendre une décision importante, je pense aux conséquences.",
+          "Quand je vais mal ou que quelqu’un va mal, je sais où trouver de l’aide."
+        ],
+        "offen": [
+          "Quand je ne vais pas bien, ce qui m’aide, c’est …",
+          "Qu’attends-tu de cette matière – ou, en fin d’année : que retiens-tu ?"
+        ],
+        "dank": "Merci ! Pose la feuille à l’envers dans l’enveloppe."
+      }
+    },
     "plaene": {
       "titel": "Les plans annuels",
       "einleitung": "Chaque année compte 35 séances pour environ 36 semaines de cours. Les séances au choix approfondissent un thème ; si des heures tombent, elles sautent en premier. Les chapitres s’enchaînent – leur ordre devrait être respecté."
@@ -1248,6 +1478,10 @@
     "glossar": {
       "titel": "Glossaire français – allemand",
       "text": "Les mots clés des séances – pour les classes qui apprennent dans les deux langues et pour les enseignant·es qui mènent une séance dans l’autre langue. Le numéro indique la séance où le mot apparaît."
+    },
+    "literatur": {
+      "titel": "Bibliographie",
+      "text": "Toutes les sources sur lesquelles s’appuient la partie A et les unités de la {klasse}. Pour chaque unité, les références figurent sous « Repères théoriques »."
     },
     "heft": {
       "inhalt": "Sommaire",
