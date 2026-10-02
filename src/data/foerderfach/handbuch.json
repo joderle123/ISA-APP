@@ -2,7 +2,7 @@
   "de": {
     "vorwort": {
       "titel": "So ist dieses Handbuch aufgebaut",
-      "text": "Teil A erklärt das Fach: Aufbau der Doppelstunde, Rahmen und Sicherheit, Methoden, Zusammenarbeit mit Eltern und Kollegium. Teil B zeigt den Jahresplan der {klasse}. Teil C enthält alle Einheiten des Jahres, Kapitel für Kapitel – jede mit Zielen, Material, Ablauf, Anleitung mit Beispielsätzen, Hinweisen für schwierige Momente, einer Kurzfassung für eine einzelne Stunde und den Kopiervorlagen direkt dahinter. Teil D enthält die Blätter, die das ganze Jahr gebraucht werden. Bei jedem Blatt steht die Seite im Schülerheft."
+      "text": "Teil A erklärt das Fach: theoretische Grundlagen, Aufbau der Doppelstunde, Rahmen und Sicherheit, Methoden, Zusammenarbeit mit Eltern und Kollegium und wie Sie die Wirkung prüfen. Teil B zeigt den Jahresplan der {klasse}. Teil C enthält alle Einheiten des Jahres, Kapitel für Kapitel – jede mit Zielen, Material, Ablauf, Anleitung mit Beispielsätzen, Hinweisen für schwierige Momente, einer Kurzfassung für eine einzelne Stunde und den Kopiervorlagen direkt dahinter. Teil D enthält die Blätter, die das ganze Jahr gebraucht werden. Bei jedem Blatt steht die Seite im Schülerheft."
     },
     "start": {
       "titel": "Bevor Sie starten",
@@ -132,14 +132,137 @@
     },
     "grundlagen": {
       "titel": "Theoretische Grundlagen",
-      "einleitung": "Vorläufig – wird mit dem Wirkungs-Check ersetzt.",
+      "einleitung": "Das Fach „Skills fir d’Liewen“ erfindet nichts Neues: Es übersetzt Modelle, die sich in Forschung und Praxis bewährt haben, in Doppelstunden für die Voie de préparation. Jede Einheit nennt im „Fachlichen Hintergrund“, auf welchem Modell sie beruht und was über die Wirkung bekannt ist; alle Quellen stehen im Literaturverzeichnis im Anhang.",
       "theorien": [
         {
-          "titel": "Sozial-emotionales Lernen (CASEL)",
-          "text": "Fünf Kompetenzbereiche, die sich lernen lassen (CASEL, 2020).",
-          "imFach": "Jahresziele, Kompetenzen jeder Einheit.",
+          "titel": "Fünf Kompetenzbereiche (CASEL)",
+          "text": "Sozial-emotionales Lernen umfasst fünf Bereiche: sich selbst kennen, sich steuern, andere verstehen, Beziehungen gestalten, verantwortlich entscheiden. Programme, die diese Bereiche systematisch üben, verbessern Fertigkeiten, Verhalten, Wohlbefinden und Schulleistung; am stärksten wirkt, dass sich Jugendliche in der Schule sicherer und zugehöriger fühlen (CASEL, 2020; Durlak et al., 2011; Cipriano et al., 2023).",
+          "imFach": "die fünf Jahresziele jeder Klassenstufe, die Kompetenz-Punkte jeder Einheit, die fünf Sätze der Selbsteinschätzung im Skills-Pass.",
           "quellen": [
-            "casel2020"
+            "casel2020",
+            "durlak2011",
+            "cipriano2023"
+          ]
+        },
+        {
+          "titel": "SAFE: so üben wirksame Programme",
+          "text": "Wirksame Programme bauen aufeinander auf (sequenced), lassen aktiv üben (active), haben einen klaren Fokus (focused) und sagen offen, welche Fertigkeit geübt wird (explicit). Ebenso wichtig ist die Umsetzung: Einheiten, die wie geplant gehalten werden, wirken – gekürzte oder improvisierte kaum (Durlak et al., 2011; Durlak & DuPre, 2008).",
+          "imFach": "der feste Aufbau der Doppelstunde (Check-in, Brücke, zwei Hauptteile mit Übung, Skill, Skills-Pass), die Kapitelbögen einführen – üben – anwenden – übertragen, die Kurzfassung statt Improvisation.",
+          "quellen": [
+            "durlak2011",
+            "durlakDuPre2008"
+          ]
+        },
+        {
+          "titel": "Skills: Fertigkeiten gegen starke Gefühle (DBT)",
+          "text": "Die Dialektisch-Behaviorale Therapie beschreibt Fertigkeiten, mit denen Menschen starke Anspannung aushalten, Gefühle regulieren und Beziehungen führen; die Fassung für Jugendliche und die Schulfassung DBT STEPS-A übertragen sie auf Gruppen und Klassen. Kern: Bei sehr hoher Anspannung versagen Fertigkeiten, die Nachdenken voraussetzen – dann helfen Körper und Sinne (Linehan, 2015; Rathus & Miller, 2015; Fleischhaker, Sixt & Schulz, 2011; Mazza et al., 2016).",
+          "imFach": "der Begriff Skill, die Anspannungsskala von 0 bis 100 (7e 13), Körper-, Sinnes- und Kopf-Skills (7e 14–16), Skills-Koffer, Ampelplan und Notfallkarte (7e 17), „Stopp, zurück, ausatmen“ (7e 13), die Skills-Olympiade (6e 2), Schlaf, Essen und Bewegung als Skills (7e 31; 6e 30–32).",
+          "quellen": [
+            "linehan2015",
+            "rathusMiller2015",
+            "fleischhaker2011",
+            "mazza2016"
+          ]
+        },
+        {
+          "titel": "Emotionen regulieren: früh ansetzen, Strategie wählen",
+          "text": "Gefühle entstehen in Schritten – Situation, Aufmerksamkeit, Bewertung, Reaktion –, und je früher man eingreift, desto weniger Kraft kostet es. Ein Gefühl zu benennen, dämpft es messbar; bei schwachen Gefühlen hilft Umdeuten, bei sehr starken Ablenkung über Körper und Sinne (Gross, 1998; Lieberman et al., 2007; Sheppes et al., 2011; Nummenmaa et al., 2014).",
+          "imFach": "Gefühlsrad und Check-in in jeder Stunde (7e 1), Gefühlswörter und Botschaften (7e 9), „Gefühl benennen“ (7e 10), Warnsignale im Körper (7e 11; 6e 10), „erst runter, dann reden“ (7e 13), die Stopp-Ampel (6e 11).",
+          "quellen": [
+            "gross1998",
+            "lieberman2007",
+            "sheppes2011",
+            "nummenmaa2014"
+          ]
+        },
+        {
+          "titel": "Stress: Bewertung und Umdeutung",
+          "text": "Stress entsteht, wenn eine Anforderung größer wirkt als die eigenen Mittel; diese Bewertung lässt sich ändern. Wer Herzklopfen vor einer Prüfung als Bereitschaft statt als Gefahr deutet, schneidet besser ab, und bei Jugendlichen schützt die Botschaft „Stress kann helfen“ messbar vor Belastung (Lazarus & Folkman, 1984; Jamieson et al., 2010; Brooks, 2014; Yeager, Bryan et al., 2022).",
+          "imFach": "die Test-Waage und der Skill „Füße, Atem, Stift“ (7e 32), Aufregung umdeuten (7e 33), Stress-Barometer und „Herzklopfen: Angst oder Energie?“ (6e 6, 9), Warteraum-Skills vor dem Vorstellungsgespräch (5e 8).",
+          "quellen": [
+            "lazarusFolkman1984",
+            "jamieson2010",
+            "brooks2014",
+            "yeagerBryan2022"
+          ]
+        },
+        {
+          "titel": "Gedanken prüfen – und Abstand gewinnen",
+          "text": "Zwischen Situation und Gefühl steht eine Bewertung (ABC-Modell); tief sitzende Sätze über sich selbst färben sie. Man kann solche Sätze prüfen wie ein Detektiv – oder ihnen mit Abstand begegnen, ohne sie zu bekämpfen („Mein Kopf sagt gerade …“). In Lehrkrafthand wirkt reine Gedankenarbeit wenig; wirksamer sind Figuren, Verhaltensexperimente und Abstand (Ellis, 1962; Beck, 2011; Hayes, Strosahl & Wilson, 2012; Masuda et al., 2004; Stallard et al., 2014).",
+          "imFach": "das Kapitel „Meine Gedanken“ (7e 27–30) mit „Danke, Kopf“, Detektiv-Methode und Beweis-Challenge, Prüfungsgedanken (7e 32; 6e 9), „Gedanke oder Tatsache?“ (5e 24).",
+          "quellen": [
+            "ellis1962",
+            "beck2011",
+            "hayes2012",
+            "masuda2004",
+            "stallard2014"
+          ]
+        },
+        {
+          "titel": "Lernen am Modell und durch Bewältigung (Bandura)",
+          "text": "Menschen lernen, indem sie anderen zusehen, und trauen sich etwas zu, wenn sie es selbst geschafft haben – die stärkste Quelle von Selbstwirksamkeit. Deshalb macht die Lehrkraft jeden Skill vor und mit, und deshalb wird im Rollenspiel geübt, nicht nur besprochen (Bandura, 1977; Bandura & Schunk, 1981).",
+          "imFach": "„Die Lehrkraft macht mit“ in jedem Check-in und Skill, Rollenspiele mit der Lehrkraft in der schwierigen Rolle (7e 21, 23; 6e 11, 19), Skills-Tester mit Zahl vorher und nachher (7e 14–16), die Beweis-Challenge (7e 30).",
+          "quellen": [
+            "bandura1977",
+            "banduraSchunk1981"
+          ]
+        },
+        {
+          "titel": "Drei Grundbedürfnisse (Selbstbestimmungstheorie)",
+          "text": "Menschen sind motiviert und gesund, wenn drei Bedürfnisse erfüllt sind: sich als fähig erleben, selbst entscheiden, dazugehören. Beteiligung ist dabei nur echt, wenn Entscheidungen Folgen haben (Deci & Ryan, 2000; Hart, 1992).",
+          "imFach": "das Glas der Bedürfnisse (7e 6, 17, 35), die Klassenvereinbarung aus der Klasse (7e 1), der Klassenrat mit echten Beschlüssen (7e 5, 9, 19, 25), Wahlfreiheit in jeder Übung („weiter“ ist erlaubt).",
+          "quellen": [
+            "deciRyan2000",
+            "hart1992"
+          ]
+        },
+        {
+          "titel": "Wenn-dann-Pläne und WOOP",
+          "text": "Ein Vorsatz wird umgesetzt, wenn er an eine konkrete Situation gebunden ist: „Wenn X passiert, dann tue ich Y.“ Über viele Studien hinweg erhöht das deutlich die Chance, dass ein Ziel erreicht wird; bei Jugendlichen stärkt die Verbindung mit dem ehrlichen Blick auf das Hindernis (WOOP) die Selbstdisziplin (Gollwitzer, 1999; Gollwitzer & Sheeran, 2006; Duckworth et al., 2011; Oettingen, 2014).",
+          "imFach": "die Wochen-Mission jeder Einheit mit dem selbst gewählten Moment („Mein Moment: Wenn …“), der Ampelplan (7e 17), der Handy-Plan (7e 25), der kleine Schritt (7e 31), der Blackout-Plan (7e 32), Plan B (6e 28), das Schlaf-Experiment (6e 30).",
+          "quellen": [
+            "gollwitzer1999",
+            "gollwitzerSheeran2006",
+            "duckworth2011",
+            "oettingen2014"
+          ]
+        },
+        {
+          "titel": "Mobbing ist ein Gruppenprozess – und Normen entscheiden",
+          "text": "In einer Klasse hat fast jede Person eine Rolle: Täter, Helfer, Verstärker, Außenstehende, Verteidiger, Betroffene. Mobbing braucht Publikum; wer die Seite wechselt, nimmt es ihm. Jugendliche überschätzen zudem, wie sehr andere Mobbing billigen; wird die echte Mehrheit sichtbar, sinkt es. Programme, die die Zuschauenden stärken, wirken – am besten bis zur 7e (Olweus, 1993; Salmivalli et al., 1996; Kärnä et al., 2011; Polanin, Espelage & Pigott, 2012; Perkins, Craig & Perkins, 2011; Yeager et al., 2015).",
+          "imFach": "Rollen im Mobbing, Zivilcourage-Leiter, Normen-Abstimmung und „Hilfe holen ist kein Petzen“ (7e 24), das zweite Nein (7e 23), Einbeziehen (6e 15), Gegenrede (6e 25), Forumtheater gegen Diskriminierung (6e 23).",
+          "quellen": [
+            "olweus1993",
+            "salmivalli1996",
+            "kaerna2011",
+            "polanin2012",
+            "perkinsCraig2011",
+            "yeagerFong2015"
+          ]
+        },
+        {
+          "titel": "Jugendliche wollen Status, Respekt und Autonomie",
+          "text": "Ab der Pubertät reagiert das Gehirn stärker auf Belohnung und auf Gleichaltrige; Jugendliche gehen in Gegenwart anderer mehr Risiken ein und lehnen ab, was ihren Status bedroht oder sie bevormundet. Programme wirken, wenn sie Respekt zeigen, die Entscheidung den Jugendlichen lassen und offenlegen, wie Erwachsene oder Firmen sie steuern wollen (Steinberg, 2014; Gardner & Steinberg, 2005; Yeager, 2017; Yeager, Dahl & Dweck, 2018; Bryan et al., 2016).",
+          "imFach": "keine Noten, keine Moral, „Ihr entscheidet“ als Haltung (7e 25, 26; 6e 27–29), Jugendliche als Forschende und Erklärende (Skills-Tester 7e 14–16; Expertenteams 6e 27), Tricks der Apps und Games aufdecken (7e 25; 6e 26).",
+          "quellen": [
+            "steinberg2014",
+            "gardnerSteinberg2005",
+            "yeager2017",
+            "yeagerDahlDweck2018",
+            "bryanYeager2016"
+          ]
+        },
+        {
+          "titel": "Stärken und Ressourcen vor Defiziten",
+          "text": "Wer sich auf das besinnt, was trägt – verlässliche Menschen, eigene Fähigkeiten, gelungene Momente –, bewältigt Belastungen besser; Resilienz entsteht aus gewöhnlichen Schutzfaktoren. Eigene Stärken bewusst auf neue Art einzusetzen und Gutes zu notieren, hob in Studien das Wohlbefinden; Selbstmitgefühl geht bei Jugendlichen mit weniger Angst und Niedergeschlagenheit einher (Masten, 2014; Werner & Smith, 1992; Peterson & Seligman, 2004; Seligman et al., 2005; Neff, 2003; Neff & McGehee, 2010).",
+          "imFach": "Baum der Stärke und Stärken-Post (7e 8, 30, 35), Dankbarkeitsblitz (7e 28), die freundliche Stimme (7e 29; 6e 5), Kraftquellen und Mein Netz (5e 21–23), das Stärken-Fest (6e 35).",
+          "quellen": [
+            "masten2014",
+            "wernerSmith1992",
+            "petersonSeligman2004",
+            "seligman2005",
+            "neff2003",
+            "neffMcGehee2010"
           ]
         }
       ]
@@ -545,7 +668,7 @@
       "anrede": "Liebe Eltern, liebe Erziehungsberechtigte,",
       "absaetze": [
         "in diesem Schuljahr hat die Klasse Ihres Kindes jede Woche eine Doppelstunde im Fach „Skills fir d’Liewen“. Die Jugendlichen lernen dort Fertigkeiten, die im Alltag helfen: Gefühle erkennen und benennen, mit Stress und Wut umgehen, gut miteinander reden, Grenzen setzen, Konflikte fair lösen und verantwortlich entscheiden.",
-        "Das Fach wird nicht benotet. Gelernt wird durch Üben: in Gesprächen, Rollenspielen, mit Bewegung und kurzen Übungen zum Ruhigwerden. Niemand muss etwas Persönliches erzählen. Was in der Klasse erzählt wird, bleibt dort – außer ein Kind ist in Gefahr. Dann holt die Schule Hilfe, zum Beispiel beim SePAS.",
+        "Das Fach wird nicht benotet. Gelernt wird durch Üben: in Gesprächen, Rollenspielen, mit Bewegung und kurzen Übungen zum Ruhigwerden. Niemand muss etwas Persönliches erzählen. Was in der Klasse erzählt wird, bleibt dort – außer ein Kind ist in Gefahr. Dann holt die Schule Hilfe, zum Beispiel beim SePAS. Am Anfang und am Ende des Jahres füllt die Klasse einen kurzen anonymen Fragebogen aus; er bewertet das Fach, nicht Ihr Kind, und Mitmachen ist freiwillig.",
         "Einige Stunden behandeln Themen wie Freundschaft und Liebe, Familie, Internet oder Alkohol und Drogen. Vor diesen Stunden informieren wir Sie noch einmal. Alle Materialien können Sie gern bei uns ansehen.",
         "Ihr Kind bekommt ein Schülerheft, in das es während des Jahres schreibt. Das Heft gehört Ihrem Kind – bitte lesen Sie darin nur, wenn es Ihnen das Heft zeigt. Wenn Sie Fragen haben oder uns etwas mitteilen möchten, melden Sie sich gern."
       ],
@@ -617,36 +740,36 @@
     },
     "messen": {
       "titel": "Wirkt es? So prüfen Sie es",
-      "einleitung": "Ob das Fach in Ihrer Klasse wirkt, lässt sich mit wenig Aufwand prüfen: derselbe anonyme Fragebogen am Anfang und am Ende des Schuljahres, ausgezählt in rund zehn Minuten. Er bewertet nicht die Jugendlichen, sondern das Fach – und zeigt, wo Sie nachlegen können.",
+      "einleitung": "Ob das Fach in Ihrer Klasse wirkt, lässt sich mit wenig Aufwand prüfen: derselbe anonyme Fragebogen am Anfang und am Ende des Schuljahres, ausgezählt in rund zehn Minuten, dazu das Umsetzungs-Logbuch. Der Bogen bewertet nicht die Jugendlichen, sondern das Fach – und zeigt, wo Sie nachlegen können.",
       "schritte": [
         {
           "titel": "Wann",
-          "text": "In den ersten beiden Wochen und in den letzten beiden Wochen des Schuljahres, jeweils etwa 10 Minuten – zum Beispiel am Anfang der ersten und am Ende der letzten Stunde. Immer derselbe Bogen: Nur so lässt sich vergleichen."
+          "text": "Am Anfang in Einheit 2 (Schritt 3), am Ende im Check-in der letzten Einheit – nicht in Einheit 1, die Vertrauen aufbaut. Beide Male liest dieselbe Person vor, an derselben Stelle der Stunde, ohne aufwühlende Übung davor. Jede Person wählt die Sprache ihres Bogens."
         },
         {
           "titel": "Wie",
-          "text": "Anleitung vorlesen, die Aussagen bei Bedarf einzeln vorlesen. Jede Person kreuzt für sich an, ohne Namen. Die Bögen kommen umgedreht in einen Umschlag, den eine Person aus der Klasse zuklebt. Wer nicht mitmachen möchte, gibt einen leeren Bogen ab."
+          "text": "Anleitung vorlesen, die Aussagen bei Bedarf einzeln vorlesen. Jede Person kreuzt für sich an, ohne Namen und ohne Angaben zu Geschlecht, Alter oder Herkunft. Die Bögen kommen umgedreht in einen Umschlag, den eine Person aus der Klasse zuklebt. Wer nicht mitmachen möchte, gibt einen leeren Bogen ab."
         },
         {
           "titel": "Auszählen",
-          "text": "Jede Antwort zählt 1 bis 4 Punkte („stimmt gar nicht“ = 1 … „stimmt genau“ = 4). Je Aussage den Durchschnitt der Klasse ausrechnen (Summe geteilt durch die Zahl der Bögen) und in den Auswertungsbogen eintragen; am Ende des Jahres ebenso, dann die Veränderung."
+          "text": "Bogen für Bogen je Aussage einen Strich in das Feld der angekreuzten Stufe (1 bis 4); fehlt ein Kreuz oder sind es zwei, zählt die Aussage für diesen Bogen nicht. N = Zahl der Striche. Mittel = (1 × Striche bei 1 + 2 × bei 2 + 3 × bei 3 + 4 × bei 4) ÷ N. Anteil zustimmend = Striche bei 3 und 4 ÷ N, z. B. „14 von 20“."
         },
         {
           "titel": "Lesen",
-          "text": "Eine Veränderung ab etwa 0,3 Punkten ist ein Hinweis, kein Beweis – Klassen verändern sich auch ohne das Fach. Aussagekräftig ist das Muster: wo die Klasse wächst und wo nicht. Liegt Aussage 10 („In unserer Klasse fühle ich mich sicher“) unter 2,5, mit Régent und SePAS sprechen."
+          "text": "Erst ab zwölf Bögen gilt: Eine Veränderung ab 0,3 ist ein Hinweis, kein Beweis. Darunter nur Anteile, unter acht nur Tendenzen. Liegt eine Aussage schon am Anfang bei 3,5, ist sie „schon stark“. Wer viel gelernt hat, urteilt am Ende oft strenger. Aussage 10 unter 2,5 oder um 0,3 gesunken: mit Régent und SePAS sprechen; Aussage 12 am Ende unter 3: Hilfe-Wege im Klassenrat wiederholen."
         },
         {
           "titel": "Nutzen",
-          "text": "Zeigen Sie der Klasse am Ende zwei, drei Veränderungen und fragen Sie, was geholfen hat. Schwache Bereiche im nächsten Jahr gezielt stärken. Die Antworten auf „Wenn es mir nicht gut geht, hilft mir …“ zeigen, ob Skills im Alltag ankommen."
+          "text": "Die Antworten auf „Wenn es mir nicht gut geht, hilft mir …“ in drei Gruppen zählen: etwas aus dem Fach, eine Person, anderes oder leer – „x von N nennen etwas aus dem Fach“ zeigt, ob Skills im Alltag ankommen. Der Klasse am Ende zwei, drei Veränderungen zeigen; die Wünsche vom Anfang helfen bei der Wahl der Wahleinheiten."
         },
         {
           "titel": "Datenschutz",
-          "text": "Anonym, keine Einzelauswertung, keine Noten. Die Bögen bleiben in der Schule und werden nach dem Auszählen vernichtet; weitergegeben werden höchstens Klassenwerte, nie einzelne Bögen. In Gruppen unter acht Jugendlichen nur über Tendenzen sprechen."
+          "text": "Nur die Lehrkraft liest die offenen Antworten; nichts wird fotografiert oder abgetippt. Innerhalb einer Woche auszählen, dann die Bögen schreddern. Den Klassenraum verlässt nur der Auswertungsbogen mit Klassenwerten (ab acht Bögen), nie in Bulletin, Conseil de classe oder Elterngespräch. Ob Werte schulweit gesammelt werden, klärt die Schule vorher mit ihrer oder ihrem Datenschutzbeauftragten."
         }
       ],
       "zuordnung": {
         "titel": "Was die Aussagen messen",
-        "text": "Je ein bis drei Aussagen gehören zu einem der fünf Kompetenzbereiche des Fachs. Aussage 10 fragt zusätzlich nach dem Klima der Klasse.",
+        "text": "Je ein bis drei Aussagen gehören zu einem der fünf Kompetenzbereiche des Fachs; Aussage 10 fragt zusätzlich nach dem Klima der Klasse. Der Skills-Pass hat einen anderen Zweck: Er gehört den Jugendlichen und wird nie ausgezählt oder mit dem Bogen verglichen.",
         "bereiche": [
           {
             "kompetenz": "kennen",
@@ -672,11 +795,45 @@
       },
       "auswertung": {
         "titel": "Auswertungsbogen der Klasse",
-        "text": "Für jede Aussage den Durchschnitt der Klasse eintragen (Summe der Punkte geteilt durch die Zahl der Bögen, 1 bis 4). Veränderung = Ende minus Anfang.",
-        "spalten": [
+        "text": "Je Aussage Bogen für Bogen einen Strich bei der angekreuzten Stufe; dann N, Mittel und Anteil zustimmend (Schritt 3). Veränderung = Ende minus Anfang.",
+        "bloecke": [
           "Anfang",
           "Ende",
           "Veränderung"
+        ],
+        "werte": [
+          "N",
+          "Mittel",
+          "Anteil"
+        ],
+        "boegen": [
+          "Bögen gesamt",
+          "davon leer"
+        ],
+        "offen": {
+          "titel": "Offene Frage 1: Wenn es mir nicht gut geht, hilft mir …",
+          "gruppen": [
+            "etwas aus dem Fach (Skill, Skala, Koffer, Notfallkarte …)",
+            "eine Person (Freundin, Eltern, Lehrkraft, SePAS …)",
+            "anderes (Musik, Sport, Handy …) oder leer"
+          ]
+        },
+        "praxis": "Nur am Ende: einen Skill aus dem Fach benutzt"
+      },
+      "logbuch": {
+        "titel": "Umsetzungs-Logbuch",
+        "text": "Je Einheit eine Zeile: Datum, wie weit sie gehalten wurde, welcher Schritt entfiel, ob die Mission gegeben und in der nächsten Brücke nachgefragt wurde, Besonderes (Vorfall, SePAS, Klassenrat). Ohne diese Angaben lässt sich der Fragebogen nicht deuten – und in der Fachgruppe lassen sich Erfahrungen vergleichen, ohne Lehrkräfte zu vergleichen.",
+        "spalten": [
+          "Datum",
+          "Gehalten",
+          "Entfallen",
+          "Mission",
+          "Besonderes"
+        ],
+        "gehalten": [
+          "ganz",
+          "teils",
+          "nicht"
         ]
       },
       "fragebogen": {
@@ -698,19 +855,28 @@
           "Ich weiß, was ich gut kann.",
           "Wenn ich wütend oder gestresst bin, kenne ich etwas, das mir hilft, ruhiger zu werden.",
           "Ich kann mich bremsen, bevor ich etwas tue, das ich später bereue.",
-          "Wenn etwas schwer ist, gebe ich nicht gleich auf.",
+          "Ich merke früh, wenn ich wütend oder nervös werde.",
           "Ich merke, wenn es jemandem in der Klasse nicht gut geht.",
-          "Ich verstehe, dass andere eine Situation anders erleben können als ich.",
+          "Ich merke, wann ein Spaß für jemanden kein Spaß mehr ist.",
           "Ich kann sagen, was ich brauche, ohne andere zu verletzen.",
           "Wenn ich Nein sagen will, schaffe ich es.",
           "In unserer Klasse fühle ich mich sicher.",
-          "Bevor ich etwas Wichtiges entscheide, denke ich an die Folgen.",
+          "Wenn jemand immer wieder fertiggemacht wird, weiß ich, was ich tun kann.",
           "Wenn es mir oder anderen schlecht geht, weiß ich, wo es Hilfe gibt."
         ],
         "offen": [
           "Wenn es mir nicht gut geht, hilft mir …",
           "Was wünschst du dir von diesem Fach – oder, am Ende des Jahres: Was nimmst du mit?"
         ],
+        "praxis": {
+          "hinweis": "Nur am Ende des Schuljahres ausfüllen:",
+          "text": "In den letzten zwei Wochen habe ich einen Skill aus dem Fach benutzt.",
+          "optionen": [
+            "nein",
+            "einmal",
+            "mehrmals"
+          ]
+        },
         "dank": "Danke! Leg den Bogen umgedreht in den Umschlag."
       }
     },
@@ -735,8 +901,9 @@
       "inhalt": "Inhalt",
       "jedeStunde": "Für jede Stunde",
       "missionen": "Meine Wochen-Missionen",
-      "missionenText": "Nach jeder Stunde wartet eine kleine Mission auf dich. Probiere sie bis zur nächsten Stunde aus und kreuze an, wenn du sie geschafft hast. Es gibt keine Note – es zählt, dass du es versuchst.",
+      "missionenText": "Nach jeder Stunde wartet eine kleine Mission auf dich. Schreib auf, wann du sie machst – deinen Moment, zum Beispiel: Wenn ich im Bus sitze … Kreuze an, wenn du sie geschafft hast. Es gibt keine Note – es zählt, dass du es versuchst.",
       "geschafft": "geschafft",
+      "moment": "Mein Moment: Wenn …",
       "karten": "Meine Skill-Karten",
       "kartenText": "Schneide die Karten aus. Sie passen ins Portemonnaie oder in die Handyhülle – für Momente, in denen du einen Skill brauchst.",
       "woerter": "Meine Wörter",
@@ -754,7 +921,7 @@
   "fr": {
     "vorwort": {
       "titel": "Comment ce guide est organisé",
-      "text": "La partie A présente la matière : déroulement de la séance, cadre et sécurité, méthodes, collaboration avec les parents et les collègues. La partie B présente le plan annuel de la {klasse}. La partie C contient toutes les séances de l’année, chapitre par chapitre – chacune avec ses objectifs, le matériel, le déroulement, des consignes avec des exemples de phrases, des conseils pour les moments difficiles, une version courte pour une seule heure et, juste après, les modèles à photocopier. La partie D réunit les fiches utilisées toute l’année. Pour chaque fiche, la page du cahier de l’élève est indiquée."
+      "text": "La partie A présente la matière : fondements théoriques, déroulement de la séance, cadre et sécurité, méthodes, collaboration avec les parents et les collègues, et comment vérifier son efficacité. La partie B présente le plan annuel de la {klasse}. La partie C contient toutes les séances de l’année, chapitre par chapitre – chacune avec ses objectifs, le matériel, le déroulement, des consignes avec des exemples de phrases, des conseils pour les moments difficiles, une version courte pour une seule heure et, juste après, les modèles à photocopier. La partie D réunit les fiches utilisées toute l’année. Pour chaque fiche, la page du cahier de l’élève est indiquée."
     },
     "start": {
       "titel": "Avant de commencer",
@@ -884,14 +1051,137 @@
     },
     "grundlagen": {
       "titel": "Fondements théoriques",
-      "einleitung": "Provisoire – sera remplacé après la vérification de l’efficacité.",
+      "einleitung": "La matière « Skills fir d’Liewen » n’invente rien : elle traduit en doubles leçons pour la voie de préparation des modèles qui ont fait leurs preuves dans la recherche et dans la pratique. Chaque unité indique, sous « Repères théoriques », sur quel modèle elle repose et ce que l’on sait de son efficacité ; toutes les sources figurent dans la bibliographie en annexe.",
       "theorien": [
         {
-          "titel": "Apprentissage socio-émotionnel (CASEL)",
-          "text": "Cinq domaines de compétences qui s’apprennent (CASEL, 2020).",
-          "imFach": "Objectifs de l’année, compétences de chaque unité.",
+          "titel": "Cinq domaines de compétences (CASEL)",
+          "text": "L’apprentissage socio-émotionnel couvre cinq domaines : se connaître, se maîtriser, comprendre les autres, construire des relations, décider de façon responsable. Les programmes qui les travaillent de façon systématique améliorent les compétences, le comportement, le bien-être et les résultats scolaires ; l’effet le plus fort : les jeunes se sentent plus en sécurité et plus à leur place à l’école (CASEL, 2020 ; Durlak et al., 2011 ; Cipriano et al., 2023).",
+          "imFach": "les cinq objectifs de l’année de chaque niveau, les pastilles de compétences de chaque unité, les cinq phrases d’auto-évaluation du Skills-Pass.",
           "quellen": [
-            "casel2020"
+            "casel2020",
+            "durlak2011",
+            "cipriano2023"
+          ]
+        },
+        {
+          "titel": "SAFE : comment s’exercent les programmes efficaces",
+          "text": "Les programmes efficaces sont progressifs (sequenced), font pratiquer activement (active), ont un objectif clair (focused) et nomment ouvertement la compétence travaillée (explicit). La mise en œuvre compte tout autant : les unités menées comme prévu agissent – celles qu’on raccourcit ou improvise, très peu (Durlak et al., 2011 ; Durlak & DuPre, 2008).",
+          "imFach": "la structure fixe de la double leçon (check-in, pont, deux parties principales avec exercice, skill, Skills-Pass), les arcs de chapitre introduire – s’exercer – appliquer – transférer, la version courte plutôt que l’improvisation.",
+          "quellen": [
+            "durlak2011",
+            "durlakDuPre2008"
+          ]
+        },
+        {
+          "titel": "Les skills : des compétences face aux émotions fortes (TCD)",
+          "text": "La thérapie comportementale dialectique décrit des compétences qui aident à supporter une forte tension, à réguler ses émotions et à mener ses relations ; sa version pour adolescents et sa version scolaire, DBT STEPS-A, les transposent aux groupes et aux classes. L’essentiel : quand la tension est très forte, les compétences qui demandent de réfléchir ne marchent plus – le corps et les sens prennent le relais (Linehan, 2015 ; Rathus & Miller, 2015 ; Fleischhaker, Sixt & Schulz, 2011 ; Mazza et al., 2016).",
+          "imFach": "la notion de skill, l’échelle de tension de 0 à 100 (7e 13), les skills du corps, des sens et de la tête (7e 14–16), la valise à skills, le plan feu tricolore et la carte d’urgence (7e 17), « stop, recule, expire » (7e 13), les olympiades des skills (6e 2), le sommeil, l’alimentation et le mouvement comme skills (7e 31 ; 6e 30–32).",
+          "quellen": [
+            "linehan2015",
+            "rathusMiller2015",
+            "fleischhaker2011",
+            "mazza2016"
+          ]
+        },
+        {
+          "titel": "Réguler ses émotions : agir tôt, choisir sa stratégie",
+          "text": "Une émotion se construit par étapes – situation, attention, évaluation, réaction – et plus on intervient tôt, moins cela coûte d’effort. Nommer une émotion l’apaise de façon mesurable ; face à une émotion faible, la réévaluation aide, face à une émotion très forte, la diversion par le corps et les sens (Gross, 1998 ; Lieberman et al., 2007 ; Sheppes et al., 2011 ; Nummenmaa et al., 2014).",
+          "imFach": "la roue des émotions et le check-in à chaque séance (7e 1), les mots et les messages des émotions (7e 9), « nommer l’émotion » (7e 10), les signaux d’alerte du corps (7e 11 ; 6e 10), « d’abord redescendre, ensuite parler » (7e 13), le feu stop (6e 11).",
+          "quellen": [
+            "gross1998",
+            "lieberman2007",
+            "sheppes2011",
+            "nummenmaa2014"
+          ]
+        },
+        {
+          "titel": "Le stress : évaluation et réévaluation",
+          "text": "Le stress apparaît quand une exigence semble dépasser nos moyens ; cette évaluation peut changer. Qui interprète son cœur qui bat avant un examen comme de l’énergie plutôt que comme un danger réussit mieux, et chez les adolescents, le message « le stress peut aider » protège de façon mesurable contre la surcharge (Lazarus & Folkman, 1984 ; Jamieson et al., 2010 ; Brooks, 2014 ; Yeager, Bryan et al., 2022).",
+          "imFach": "la balance du devoir et le skill « pieds, souffle, stylo » (7e 32), réinterpréter le trac (7e 33), le baromètre du stress et « cœur qui bat : peur ou énergie ? » (6e 6, 9), les skills de la salle d’attente avant un entretien (5e 8).",
+          "quellen": [
+            "lazarusFolkman1984",
+            "jamieson2010",
+            "brooks2014",
+            "yeagerBryan2022"
+          ]
+        },
+        {
+          "titel": "Examiner ses pensées – et prendre de la distance",
+          "text": "Entre la situation et l’émotion se glisse une évaluation (modèle ABC) ; des phrases profondément ancrées sur soi-même la colorent. On peut examiner ces phrases comme un détective – ou les regarder avec distance, sans les combattre (« Ma tête est en train de dire … »). Menée par un enseignant, la seule discussion des pensées agit peu ; les personnages, les expériences concrètes et la prise de distance sont plus efficaces (Ellis, 1962 ; Beck, 2011 ; Hayes, Strosahl & Wilson, 2012 ; Masuda et al., 2004 ; Stallard et al., 2014).",
+          "imFach": "le chapitre « Mes pensées » (7e 27–30) avec « Merci, ma tête », la méthode du détective et le défi des preuves, les pensées avant un devoir (7e 32 ; 6e 9), « pensée ou fait ? » (5e 24).",
+          "quellen": [
+            "ellis1962",
+            "beck2011",
+            "hayes2012",
+            "masuda2004",
+            "stallard2014"
+          ]
+        },
+        {
+          "titel": "Apprendre par l’exemple et par la réussite (Bandura)",
+          "text": "On apprend en observant les autres, et on ose quand on a soi-même réussi – la source la plus forte du sentiment d’efficacité personnelle. C’est pourquoi l’enseignant montre et pratique chaque skill avec la classe, et pourquoi on s’exerce en jeu de rôle au lieu d’en parler seulement (Bandura, 1977 ; Bandura & Schunk, 1981).",
+          "imFach": "« l’enseignant participe » à chaque check-in et à chaque skill, les jeux de rôle où l’enseignant prend le rôle difficile (7e 21, 23 ; 6e 11, 19), les testeurs de skills avec un chiffre avant et après (7e 14–16), le défi des preuves (7e 30).",
+          "quellen": [
+            "bandura1977",
+            "banduraSchunk1981"
+          ]
+        },
+        {
+          "titel": "Trois besoins fondamentaux (théorie de l’autodétermination)",
+          "text": "On est motivé et en bonne santé quand trois besoins sont satisfaits : se sentir compétent, décider par soi-même, appartenir à un groupe. La participation n’est réelle que si les décisions ont des effets (Deci & Ryan, 2000 ; Hart, 1992).",
+          "imFach": "le bocal des besoins (7e 6, 17, 35), la charte de classe élaborée par la classe (7e 1), le conseil de coopération avec de vraies décisions (7e 5, 9, 19, 25), le libre choix dans chaque exercice (« je passe » est permis).",
+          "quellen": [
+            "deciRyan2000",
+            "hart1992"
+          ]
+        },
+        {
+          "titel": "Les plans « si… alors » et WOOP",
+          "text": "Une résolution est tenue quand elle est liée à une situation précise : « Si X arrive, alors je fais Y. » Sur de nombreuses études, cela augmente nettement les chances d’atteindre un objectif ; chez les adolescents, y associer un regard honnête sur l’obstacle (WOOP) renforce la maîtrise de soi (Gollwitzer, 1999 ; Gollwitzer & Sheeran, 2006 ; Duckworth et al., 2011 ; Oettingen, 2014).",
+          "imFach": "la mission de la semaine de chaque unité avec le moment choisi par chacun (« Mon moment : quand … »), le plan feu tricolore (7e 17), le plan portable (7e 25), le petit pas (7e 31), le plan trou de mémoire (7e 32), le plan B (6e 28), l’expérience du sommeil (6e 30).",
+          "quellen": [
+            "gollwitzer1999",
+            "gollwitzerSheeran2006",
+            "duckworth2011",
+            "oettingen2014"
+          ]
+        },
+        {
+          "titel": "Le harcèlement est un processus de groupe – et les normes sont décisives",
+          "text": "Dans une classe, presque chacun a un rôle : auteur, assistant, supporter, spectateur, défenseur, victime. Le harcèlement a besoin d’un public ; qui change de camp le lui retire. De plus, les adolescents surestiment à quel point les autres approuvent le harcèlement ; quand la vraie majorité devient visible, il diminue. Les programmes qui renforcent les témoins sont efficaces – surtout jusqu’en 7e (Olweus, 1993 ; Salmivalli et al., 1996 ; Kärnä et al., 2011 ; Polanin, Espelage & Pigott, 2012 ; Perkins, Craig & Perkins, 2011 ; Yeager et al., 2015).",
+          "imFach": "les rôles dans le harcèlement, l’échelle du courage civil, le vote sur les normes et « demander de l’aide, ce n’est pas cafarder » (7e 24), le deuxième non (7e 23), inclure les autres (6e 15), répondre à la haine en ligne (6e 25), le théâtre-forum contre les discriminations (6e 23).",
+          "quellen": [
+            "olweus1993",
+            "salmivalli1996",
+            "kaerna2011",
+            "polanin2012",
+            "perkinsCraig2011",
+            "yeagerFong2015"
+          ]
+        },
+        {
+          "titel": "Les adolescents veulent statut, respect et autonomie",
+          "text": "Dès la puberté, le cerveau réagit plus fortement à la récompense et aux pairs ; en présence des autres, les adolescents prennent plus de risques et rejettent ce qui menace leur statut ou les infantilise. Les programmes fonctionnent quand ils témoignent du respect, laissent la décision aux jeunes et dévoilent comment des adultes ou des entreprises cherchent à les influencer (Steinberg, 2014 ; Gardner & Steinberg, 2005 ; Yeager, 2017 ; Yeager, Dahl & Dweck, 2018 ; Bryan et al., 2016).",
+          "imFach": "pas de notes, pas de morale, « c’est vous qui décidez » comme posture (7e 25, 26 ; 6e 27–29), les jeunes comme chercheurs et explicateurs (testeurs de skills 7e 14–16 ; équipes d’experts 6e 27), démasquer les astuces des applis et des jeux (7e 25 ; 6e 26).",
+          "quellen": [
+            "steinberg2014",
+            "gardnerSteinberg2005",
+            "yeager2017",
+            "yeagerDahlDweck2018",
+            "bryanYeager2016"
+          ]
+        },
+        {
+          "titel": "Les forces et les ressources avant les manques",
+          "text": "Qui s’appuie sur ce qui porte – des personnes fiables, ses propres capacités, des moments réussis – surmonte mieux les difficultés ; la résilience naît de facteurs de protection ordinaires. Utiliser consciemment ses forces d’une nouvelle manière et noter ce qui va bien a amélioré le bien-être dans des études ; chez les adolescents, l’autocompassion va de pair avec moins d’anxiété et d’abattement (Masten, 2014 ; Werner & Smith, 1992 ; Peterson & Seligman, 2004 ; Seligman et al., 2005 ; Neff, 2003 ; Neff & McGehee, 2010).",
+          "imFach": "l’arbre des forces et le courrier des forces (7e 8, 30, 35), l’éclair de gratitude (7e 28), la voix bienveillante (7e 29 ; 6e 5), les sources d’énergie et mon réseau (5e 21–23), la fête des forces (6e 35).",
+          "quellen": [
+            "masten2014",
+            "wernerSmith1992",
+            "petersonSeligman2004",
+            "seligman2005",
+            "neff2003",
+            "neffMcGehee2010"
           ]
         }
       ]
@@ -1297,7 +1587,7 @@
       "anrede": "Chers parents, chères personnes responsables,",
       "absaetze": [
         "cette année, la classe de votre enfant a chaque semaine une séance de deux heures de « Skills fir d’Liewen ». Les jeunes y apprennent des savoir-faire utiles au quotidien : reconnaître et nommer leurs émotions, gérer le stress et la colère, bien communiquer, poser des limites, régler les conflits de façon juste et prendre des décisions responsables.",
-        "Cette matière n’est pas notée. On apprend en s’exerçant : échanges, jeux de rôle, mouvement et courts exercices pour se calmer. Personne n’est obligé de raconter quelque chose de personnel. Ce qui est dit en classe reste en classe – sauf si un enfant est en danger. L’école cherche alors de l’aide, par exemple auprès du SePAS.",
+        "Cette matière n’est pas notée. On apprend en s’exerçant : échanges, jeux de rôle, mouvement et courts exercices pour se calmer. Personne n’est obligé de raconter quelque chose de personnel. Ce qui est dit en classe reste en classe – sauf si un enfant est en danger. L’école cherche alors de l’aide, par exemple auprès du SePAS. Au début et à la fin de l’année, la classe remplit un court questionnaire anonyme ; il évalue la matière, pas votre enfant, et la participation est libre.",
         "Certaines séances abordent des sujets comme l’amitié et l’amour, la famille, Internet, l’alcool ou les drogues. Avant ces séances, nous vous informerons à nouveau. Vous pouvez consulter tout le matériel auprès de nous.",
         "Votre enfant reçoit un cahier dans lequel il écrit tout au long de l’année. Ce cahier lui appartient – merci de ne le lire que s’il vous le montre. Si vous avez des questions ou souhaitez nous signaler quelque chose, n’hésitez pas à nous contacter."
       ],
@@ -1369,36 +1659,36 @@
     },
     "messen": {
       "titel": "Est-ce que ça marche ? Comment le vérifier",
-      "einleitung": "Vérifier si la matière porte ses fruits dans votre classe demande peu d’effort : le même questionnaire anonyme au début et à la fin de l’année, dépouillé en une dizaine de minutes. Il n’évalue pas les jeunes, mais la matière – et montre où renforcer.",
+      "einleitung": "Vérifier si la matière porte ses fruits dans votre classe demande peu d’effort : le même questionnaire anonyme au début et à la fin de l’année, dépouillé en une dizaine de minutes, et le journal de mise en œuvre. Le questionnaire n’évalue pas les jeunes, mais la matière – et montre où renforcer.",
       "schritte": [
         {
           "titel": "Quand",
-          "text": "Pendant les deux premières et les deux dernières semaines de l’année scolaire, environ 10 minutes à chaque fois – par exemple au début de la première et à la fin de la dernière séance. Toujours le même questionnaire : c’est la seule façon de comparer."
+          "text": "Au début dans l’unité 2 (étape 3), à la fin pendant le check-in de la dernière unité – pas dans l’unité 1, qui construit la confiance. Les deux fois, la même personne lit, au même moment de la séance, sans exercice bouleversant juste avant. Chacun choisit la langue de son questionnaire."
         },
         {
           "titel": "Comment",
-          "text": "Lire la consigne à voix haute et, si nécessaire, chaque affirmation. Chacun coche pour soi, sans nom. Les feuilles vont, retournées, dans une enveloppe qu’un élève ferme. Qui ne souhaite pas participer rend une feuille vierge."
+          "text": "Lire la consigne à voix haute et, si nécessaire, chaque affirmation. Chacun coche pour soi, sans nom et sans indiquer le sexe, l’âge ou l’origine. Les feuilles vont, retournées, dans une enveloppe qu’un élève ferme. Qui ne souhaite pas participer rend une feuille vierge."
         },
         {
           "titel": "Dépouiller",
-          "text": "Chaque réponse vaut de 1 à 4 points (« pas du tout vrai » = 1 … « tout à fait vrai » = 4). Pour chaque affirmation, calculer la moyenne de la classe (somme divisée par le nombre de feuilles) et la noter dans la grille ; en fin d’année, de même, puis l’évolution."
+          "text": "Feuille par feuille, pour chaque affirmation, un trait dans la case du niveau coché (1 à 4) ; s’il manque une croix ou s’il y en a deux, l’affirmation ne compte pas pour cette feuille. N = nombre de traits. Moyenne = (1 × traits en 1 + 2 × en 2 + 3 × en 3 + 4 × en 4) ÷ N. Part d’accord = traits en 3 et 4 ÷ N, par ex. « 14 sur 20 »."
         },
         {
           "titel": "Lire",
-          "text": "Une évolution à partir de 0,3 point environ est un indice, pas une preuve – une classe évolue aussi sans la matière. Ce qui compte, c’est l’ensemble : où la classe progresse et où elle stagne. Si l’affirmation 10 (« Dans notre classe, je me sens en sécurité ») est sous 2,5, en parler au régent et au SePAS."
+          "text": "À partir de douze feuilles seulement : une évolution de 0,3 ou plus est un indice, pas une preuve. En dessous, seulement les parts ; sous huit, seulement des tendances. Une affirmation déjà à 3,5 au début est « déjà forte ». Qui a beaucoup appris juge souvent plus sévèrement à la fin. Affirmation 10 sous 2,5 ou en baisse de 0,3 : en parler au régent et au SePAS ; affirmation 12 sous 3 en fin d’année : revoir les chemins d’aide en conseil de coopération."
         },
         {
           "titel": "Utiliser",
-          "text": "En fin d’année, montrez deux ou trois évolutions à la classe et demandez ce qui a aidé. Renforcez de façon ciblée les points faibles l’année suivante. Les réponses à « Quand je ne vais pas bien, ce qui m’aide, c’est … » montrent si les skills arrivent au quotidien."
+          "text": "Classer les réponses à « Quand je ne vais pas bien, ce qui m’aide, c’est … » en trois groupes : quelque chose de la matière, une personne, autre chose ou vide – « x sur N citent quelque chose de la matière » montre si les skills arrivent au quotidien. En fin d’année, montrer deux ou trois évolutions à la classe ; les souhaits du début aident à choisir les unités au choix."
         },
         {
           "titel": "Protection des données",
-          "text": "Anonyme, pas d’analyse individuelle, pas de notes. Les feuilles restent à l’école et sont détruites après le dépouillement ; seules des moyennes de classe peuvent être transmises, jamais des feuilles. Dans un groupe de moins de huit jeunes, ne parler que de tendances."
+          "text": "Seul l’enseignant lit les réponses libres ; rien n’est photographié ni retapé. Dépouiller dans la semaine, puis détruire les feuilles. Seule la grille avec des moyennes de classe quitte la salle (à partir de huit feuilles), jamais pour le bulletin, le conseil de classe ou un entretien avec les parents. Avant de collecter des résultats à l’échelle de l’école, celle-ci consulte son délégué à la protection des données."
         }
       ],
       "zuordnung": {
         "titel": "Ce que mesurent les affirmations",
-        "text": "Une à trois affirmations par domaine de compétences de la matière. L’affirmation 10 renseigne en plus sur le climat de la classe.",
+        "text": "Une à trois affirmations par domaine de compétences de la matière ; l’affirmation 10 renseigne en plus sur le climat de la classe. Le Skills-Pass a un autre but : il appartient aux jeunes et n’est jamais dépouillé ni comparé au questionnaire.",
         "bereiche": [
           {
             "kompetenz": "kennen",
@@ -1424,11 +1714,45 @@
       },
       "auswertung": {
         "titel": "Grille d’analyse de la classe",
-        "text": "Pour chaque affirmation, noter la moyenne de la classe (somme des points divisée par le nombre de feuilles, de 1 à 4). Évolution = fin moins début.",
-        "spalten": [
+        "text": "Pour chaque affirmation, feuille par feuille, un trait au niveau coché ; puis N, moyenne et part d’accord (étape 3). Évolution = fin moins début.",
+        "bloecke": [
           "Début",
           "Fin",
           "Évolution"
+        ],
+        "werte": [
+          "N",
+          "Moy.",
+          "Part"
+        ],
+        "boegen": [
+          "Feuilles au total",
+          "dont vierges"
+        ],
+        "offen": {
+          "titel": "Question 1 : Quand je ne vais pas bien, ce qui m’aide, c’est …",
+          "gruppen": [
+            "quelque chose de la matière (skill, échelle, valise, carte d’urgence …)",
+            "une personne (amie, parents, enseignant, SePAS …)",
+            "autre chose (musique, sport, portable …) ou vide"
+          ]
+        },
+        "praxis": "En fin d’année seulement : a utilisé un skill de la matière"
+      },
+      "logbuch": {
+        "titel": "Journal de mise en œuvre",
+        "text": "Une ligne par unité : date, dans quelle mesure elle a été menée, quelle étape a été supprimée, si la mission a été donnée puis reprise au pont suivant, particularités (incident, SePAS, conseil de coopération). Sans ces informations, le questionnaire ne peut pas être interprété – et l’équipe peut comparer ses expériences sans comparer les enseignants.",
+        "spalten": [
+          "Date",
+          "Menée",
+          "Supprimé",
+          "Mission",
+          "Particularités"
+        ],
+        "gehalten": [
+          "oui",
+          "en partie",
+          "non"
         ]
       },
       "fragebogen": {
@@ -1450,19 +1774,28 @@
           "Je sais ce que je fais bien.",
           "Quand je suis en colère ou stressé·e, je connais quelque chose qui m’aide à me calmer.",
           "J’arrive à m’arrêter avant de faire quelque chose que je regretterais.",
-          "Quand quelque chose est difficile, je n’abandonne pas tout de suite.",
+          "Je remarque tôt quand je commence à m’énerver ou à stresser.",
           "Je remarque quand quelqu’un de la classe ne va pas bien.",
-          "Je comprends que les autres peuvent vivre une situation autrement que moi.",
+          "Je remarque quand une blague n’est plus drôle pour quelqu’un.",
           "Je peux dire ce dont j’ai besoin sans blesser les autres.",
           "Quand je veux dire non, j’y arrive.",
           "Dans notre classe, je me sens en sécurité.",
-          "Avant de prendre une décision importante, je pense aux conséquences.",
+          "Quand quelqu’un se fait rabaisser encore et encore, je sais ce que je peux faire.",
           "Quand je vais mal ou que quelqu’un va mal, je sais où trouver de l’aide."
         ],
         "offen": [
           "Quand je ne vais pas bien, ce qui m’aide, c’est …",
           "Qu’attends-tu de cette matière – ou, en fin d’année : que retiens-tu ?"
         ],
+        "praxis": {
+          "hinweis": "À remplir seulement en fin d’année :",
+          "text": "Ces deux dernières semaines, j’ai utilisé un skill de cette matière.",
+          "optionen": [
+            "non",
+            "une fois",
+            "plusieurs fois"
+          ]
+        },
         "dank": "Merci ! Pose la feuille à l’envers dans l’enveloppe."
       }
     },
@@ -1487,8 +1820,9 @@
       "inhalt": "Sommaire",
       "jedeStunde": "Pour chaque séance",
       "missionen": "Mes missions de la semaine",
-      "missionenText": "Après chaque séance, une petite mission t’attend. Essaie-la avant la séance suivante et coche la case quand tu l’as réussie. Il n’y a pas de note : ce qui compte, c’est d’essayer.",
+      "missionenText": "Après chaque séance, une petite mission t’attend. Note quand tu vas la faire – ton moment, par exemple : quand je suis dans le bus … Coche la case quand tu l’as réussie. Il n’y a pas de note : ce qui compte, c’est d’essayer.",
       "geschafft": "réussi",
+      "moment": "Mon moment : quand …",
       "karten": "Mes cartes skills",
       "kartenText": "Découpe les cartes. Elles tiennent dans un porte-monnaie ou dans une coque de téléphone – pour les moments où tu as besoin d’un skill.",
       "woerter": "Mes mots",

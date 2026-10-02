@@ -169,7 +169,13 @@ function MissionenSeite({
           <Text style={{ width: 24, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 11, color: p.tief }}>{String(pe.nr)}</Text>
           <View style={{ flex: 1, paddingRight: 12 }}>
             <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7.6, color: NEUTRAL.leise, letterSpacing: 0.2 }}>{ty(pe.titel[sprache], sprache)}</Text>
-            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.8, lineHeight: 1.36, color: NEUTRAL.text, marginTop: 1.5 }}>{ty(mission, sprache)}</Text>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9.4, lineHeight: 1.34, color: NEUTRAL.text, marginTop: 1.5 }}>{ty(mission, sprache)}</Text>
+          </View>
+          {/* Wenn-dann-Plan: Jede Person schreibt ihren eigenen Moment hinein */}
+          <View style={{ width: 150, marginRight: 8, alignSelf: 'stretch', justifyContent: 'flex-end' }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: p.tief, letterSpacing: 0.2 }}>{ty(text.heft.moment, sprache)}</Text>
+            <View style={{ height: 15, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
+            <View style={{ height: 15, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
           </View>
           <View style={{ width: 44, alignItems: 'center' }}>
             <View style={{ width: 15, height: 15, borderWidth: 1.2, borderColor: p.tief, borderRadius: 3.5, backgroundColor: '#FFFFFF' }} />

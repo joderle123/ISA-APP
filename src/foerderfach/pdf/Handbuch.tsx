@@ -12,6 +12,7 @@
 // scripts/foerderfach.tsx); die Seiten im Schülerheft aus dem vorher gesetzten Schülerheft.
 // ---------------------------------------------------------------------------
 
+import type { ReactNode } from 'react'
 import { Document, Page, View, Text, Svg, Path, Circle } from '@react-pdf/renderer'
 import type { Blatt } from '../../blatt/typen'
 import { BlattSeiten, blattInhalt } from '../../blatt/pdf/BlattDokument'
@@ -751,6 +752,18 @@ function FragebogenSeite({ fb, fbSprache, sprache, p, klasse, marken }: { fb: Fr
           ))}
         </View>
       ))}
+      <View wrap={false} style={{ marginTop: 9, borderWidth: 0.8, borderColor: p.mittel, borderStyle: 'dashed', borderRadius: 8, padding: 8 }}>
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, color: p.tief, marginBottom: 3 }}>{b(fb.praxis.hinweis)}</Text>
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <Text style={{ flex: 1, fontFamily: SCHRIFT.jugend, fontSize: 9.4, lineHeight: 1.3, color: NEUTRAL.text, paddingRight: 8 }}>{b(fb.praxis.text)}</Text>
+          {fb.praxis.optionen.map((o, i) => (
+            <View key={i} style={{ flexDirection: 'row', alignItems: 'center', marginLeft: 12 }}>
+              {kaestchen(10)}
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.6, color: NEUTRAL.text, marginLeft: 4 }}>{b(o)}</Text>
+            </View>
+          ))}
+        </View>
+      </View>
       {fb.offen.map((f, i) => (
         <View key={i} wrap={false} style={{ marginTop: 10 }}>
           <Fett groesse={9.4}>{b(f)}</Fett>
@@ -767,43 +780,151 @@ function FragebogenSeite({ fb, fbSprache, sprache, p, klasse, marken }: { fb: Fr
   )
 }
 
-/** Auswertungsbogen der Klasse als Kopiervorlage: je Aussage Durchschnitt am Anfang, am Ende und die Veränderung. */
+/**
+ * Auswertungsbogen der Klasse als Kopiervorlage (quer): je Aussage eine Strichliste für die Stufen 1–4,
+ * dazu N, Mittel und Anteil zustimmend – am Anfang und am Ende des Jahres – und die Veränderung.
+ */
 function AuswertungSeite({ sprache, p, klasse, text, marken }: { sprache: Sprache; p: Palette; klasse: Klasse; text: HandbuchText; marken?: Marken }) {
   const t = TX[sprache]
   const m = text.messen
-  const kopf = { fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7.6, letterSpacing: 0.4, color: p.tief } as const
+  const a = m.auswertung
+  const kopf = { fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 6.8, color: p.tief, textAlign: 'center' } as const
+  const zelle = (w: number, grund?: string, stark?: boolean) => ({ width: w, alignSelf: 'stretch' as const, borderLeftWidth: stark ? 1 : 0.5, borderLeftColor: stark ? p.mittel : NEUTRAL.haarlinie, backgroundColor: grund })
+  const stufen = ['1', '2', '3', '4']
+  const W = { stufe: 30, wert: 34, aend: 44 }
+  const block = (b: number, i: number) => [
+    ...stufen.map((_, j) => <View key={`s${b}${j}`} style={zelle(W.stufe, undefined, j === 0)} />),
+    ...a.werte.map((_, j) => <View key={`w${b}${j}`} style={zelle(W.wert, i % 2 ? undefined : NEUTRAL.flaeche)} />),
+  ]
+  const zeile = (inhalt: ReactNode, i: number, nur?: 'zahlen') => (
+    <View key={i} wrap={false} style={{ flexDirection: 'row', alignItems: 'center', minHeight: 21, borderBottomWidth: 0.5, borderBottomColor: NEUTRAL.haarlinie }}>
+      <View style={{ flex: 1, paddingRight: 6, paddingVertical: 2 }}>{inhalt}</View>
+      {block(0, i)}
+      {block(1, i)}
+      {nur ? <View style={{ width: 2 * W.aend + 1, alignSelf: 'stretch', borderLeftWidth: 1, borderLeftColor: p.mittel }} /> : [0, 1].map((j) => <View key={j} style={zelle(W.aend, undefined, j === 0)} />)}
+    </View>
+  )
   return (
-    <Page size="A4" style={seitenStil}>
+    <Page size="A4" orientation="landscape" style={seitenStil}>
       <Marke id="auswertung" marken={marken} />
-      <Kopf reiter={t.kopiervorlage} meta={`${FACH.name}  ·  ${t.lehrerhandbuch} ${klasse}  ·  ${m.auswertung.titel}`} p={p} />
-      <SeitenTitel titel={m.auswertung.titel} unter={m.auswertung.text} p={p} sprache={sprache} />
-      <View style={{ flexDirection: 'row', marginBottom: 12 }}>
+      <Kopf reiter={t.kopiervorlage} meta={`${FACH.name}  ·  ${t.lehrerhandbuch} ${klasse}  ·  ${a.titel}`} p={p} />
+      <View style={{ flexDirection: 'row', alignItems: 'flex-end', marginBottom: 8 }}>
+        <View style={{ flex: 1, paddingRight: 20 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 15, color: NEUTRAL.text }}>{ty(a.titel, sprache)}</Text>
+          <Absatz groesse={8.2} farbe={NEUTRAL.leise} style={{ marginTop: 2, lineHeight: 1.35 }}>
+            {ty(a.text, sprache)}
+          </Absatz>
+        </View>
         {[t.klasseFeld, t.schuljahrFeld].map((f, i) => (
-          <View key={i} style={{ flex: 1, marginRight: 16 }}>
-            <View style={{ height: 18, borderBottomWidth: 0.9, borderBottomColor: NEUTRAL.linie }} />
-            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.6, color: NEUTRAL.leise, marginTop: 2 }}>{f}</Text>
+          <View key={i} style={{ width: 110, marginLeft: 12 }}>
+            <View style={{ height: 16, borderBottomWidth: 0.9, borderBottomColor: NEUTRAL.linie }} />
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.2, color: NEUTRAL.leise, marginTop: 2 }}>{f}</Text>
           </View>
         ))}
       </View>
-      <View style={{ flexDirection: 'row', borderBottomWidth: 1.2, borderBottomColor: p.tief, paddingBottom: 4 }}>
-        <Text style={{ ...kopf, width: 22 }}>{t.nr}</Text>
-        <Text style={{ ...kopf, flex: 1 }}>{versal(t.aussage)}</Text>
-        {m.auswertung.spalten.map((x, i) => (
-          <Text key={i} style={{ ...kopf, width: 66, textAlign: 'center' }}>
+      <View style={{ flexDirection: 'row', alignItems: 'flex-end' }}>
+        <View style={{ flex: 1 }} />
+        {[0, 1].map((b) => (
+          <Text key={b} style={{ ...kopf, fontSize: 8, width: 4 * W.stufe + a.werte.length * W.wert, paddingBottom: 2, borderBottomWidth: 1.2, borderBottomColor: p.tief }}>
+            {versal(a.bloecke[b])}
+          </Text>
+        ))}
+        <Text style={{ ...kopf, fontSize: 8, width: 2 * W.aend, paddingBottom: 2, borderBottomWidth: 1.2, borderBottomColor: p.tief }}>{versal(a.bloecke[2])}</Text>
+      </View>
+      <View style={{ flexDirection: 'row', alignItems: 'flex-end', paddingVertical: 3, borderBottomWidth: 1, borderBottomColor: p.tief }}>
+        <Text style={{ ...kopf, flex: 1, textAlign: 'left' }}>{`${t.nr}  ${versal(t.aussage)}`}</Text>
+        {[0, 1].map((b) => [...stufen.map((x) => <Text key={`k${b}${x}`} style={{ ...kopf, width: W.stufe }}>{x}</Text>), ...a.werte.map((x) => <Text key={`v${b}${x}`} style={{ ...kopf, width: W.wert }}>{x}</Text>)])}
+        {a.werte.slice(1).map((x) => (
+          <Text key={`d${x}`} style={{ ...kopf, width: W.aend }}>
+            {x}
+          </Text>
+        ))}
+      </View>
+      {m.fragebogen.aussagen.map((x, i) =>
+        zeile(
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.6, lineHeight: 1.25, color: NEUTRAL.text }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, color: p.tief }}>{`${i + 1}  `}</Text>
+            {ty(x, sprache)}
+          </Text>,
+          i,
+        ),
+      )}
+      {a.boegen.map((x, i) => zeile(<Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: 7.6, color: NEUTRAL.leise }}>{ty(x, sprache)}</Text>, 20 + i, 'zahlen'))}
+      <View wrap={false} style={{ flexDirection: 'row', marginTop: 10 }}>
+        <View style={{ flex: 1.4, marginRight: 14 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.4, color: p.tief, marginBottom: 3 }}>{ty(a.offen.titel, sprache)}</Text>
+          {a.offen.gruppen.map((g, i) => (
+            <View key={i} style={{ flexDirection: 'row', alignItems: 'flex-end', marginBottom: 3 }}>
+              <Text style={{ flex: 1, fontFamily: SCHRIFT.jugend, fontSize: 7.6, color: NEUTRAL.text }}>{ty(g, sprache)}</Text>
+              {a.bloecke.slice(0, 2).map((b, j) => (
+                <View key={j} style={{ width: 92, marginLeft: 8, flexDirection: 'row', alignItems: 'flex-end' }}>
+                  <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6.8, color: NEUTRAL.leise, marginRight: 4 }}>{b}</Text>
+                  <View style={{ flex: 1, height: 12, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
+                </View>
+              ))}
+            </View>
+          ))}
+        </View>
+        <View style={{ flex: 1 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.4, color: p.tief, marginBottom: 3 }}>{ty(a.praxis, sprache)}</Text>
+          <View style={{ flexDirection: 'row' }}>
+            {m.fragebogen.praxis.optionen.map((o, i) => (
+              <View key={i} style={{ flex: 1, flexDirection: 'row', alignItems: 'flex-end', marginRight: 8 }}>
+                <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.6, color: NEUTRAL.text, marginRight: 4 }}>{ty(o, sprache)}</Text>
+                <View style={{ flex: 1, height: 12, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
+              </View>
+            ))}
+          </View>
+        </View>
+      </View>
+      <Fuss links={FACH.name} titel={ty(a.titel, sprache)} sprache={sprache} />
+    </Page>
+  )
+}
+
+/** Umsetzungs-Logbuch: je Einheit eine Zeile – ohne diese Angaben lässt sich der Fragebogen nicht deuten. */
+function LogbuchSeite({ plan, sprache, p, klasse, text, marken }: { plan: Jahresplan; sprache: Sprache; p: Palette; klasse: Klasse; text: HandbuchText; marken?: Marken }) {
+  const t = TX[sprache]
+  const l = text.messen.logbuch
+  const breiten = [46, 92, 62, 62, 0]
+  const kopf = { fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 6.8, color: p.tief } as const
+  return (
+    <Page size="A4" style={seitenStil}>
+      <Marke id="logbuch" marken={marken} />
+      <Kopf reiter={t.kopiervorlage} meta={`${FACH.name}  ·  ${t.lehrerhandbuch} ${klasse}  ·  ${l.titel}`} p={p} />
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 15, color: NEUTRAL.text }}>{ty(l.titel, sprache)}</Text>
+      <Absatz groesse={8.2} farbe={NEUTRAL.leise} style={{ marginTop: 2, marginBottom: 6, lineHeight: 1.35 }}>
+        {ty(l.text, sprache)}
+      </Absatz>
+      <View fixed style={{ flexDirection: 'row', alignItems: 'flex-end', paddingBottom: 3, borderBottomWidth: 1, borderBottomColor: p.tief }}>
+        <Text style={{ ...kopf, width: 150 }}>{versal(t.einheit)}</Text>
+        {l.spalten.map((x, i) => (
+          <Text key={i} style={{ ...kopf, ...(breiten[i] ? { width: breiten[i] } : { flex: 1 }), paddingLeft: 4 }}>
             {versal(x)}
           </Text>
         ))}
       </View>
-      {m.fragebogen.aussagen.map((a, i) => (
-        <View key={i} wrap={false} style={{ flexDirection: 'row', alignItems: 'center', minHeight: 30, borderBottomWidth: 0.5, borderBottomColor: NEUTRAL.haarlinie }}>
-          <Text style={{ width: 22, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.6, color: p.tief }}>{String(i + 1)}</Text>
-          <Text style={{ flex: 1, paddingRight: 8, paddingVertical: 3, fontFamily: SCHRIFT.jugend, fontSize: 8.6, lineHeight: 1.32, color: NEUTRAL.text }}>{ty(a, sprache)}</Text>
-          {m.auswertung.spalten.map((_, j) => (
-            <View key={j} style={{ width: 66, alignSelf: 'stretch', borderLeftWidth: 0.5, borderLeftColor: NEUTRAL.haarlinie }} />
+      {plan.einheiten.map((e, i) => (
+        <View key={e.id} wrap={false} style={{ flexDirection: 'row', alignItems: 'center', minHeight: 17.2, borderBottomWidth: 0.5, borderBottomColor: NEUTRAL.haarlinie, backgroundColor: i % 2 ? undefined : NEUTRAL.flaeche }}>
+          <Text style={{ width: 150, paddingRight: 4, fontFamily: SCHRIFT.jugend, fontSize: 7, lineHeight: 1.2, color: NEUTRAL.text }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, color: p.tief }}>{`${e.nr}  `}</Text>
+            {ty(e.titel[sprache], sprache)}
+          </Text>
+          {l.spalten.map((_, j) => (
+            <View key={j} style={{ ...(breiten[j] ? { width: breiten[j] } : { flex: 1 }), alignSelf: 'stretch', borderLeftWidth: 0.5, borderLeftColor: NEUTRAL.haarlinie, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around' }}>
+              {j === 1
+                ? l.gehalten.map((g, k) => (
+                    <View key={k} style={{ flexDirection: 'row', alignItems: 'center' }}>
+                      <View style={{ width: 6.5, height: 6.5, borderWidth: 0.8, borderColor: NEUTRAL.linie, borderRadius: 1.2, marginRight: 1.5 }} />
+                      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 5.8, color: NEUTRAL.leise }}>{g}</Text>
+                    </View>
+                  ))
+                : null}
+            </View>
           ))}
         </View>
       ))}
-      <Fuss links={FACH.name} titel={ty(m.auswertung.titel, sprache)} sprache={sprache} />
+      <Fuss links={FACH.name} titel={ty(l.titel, sprache)} sprache={sprache} />
     </Page>
   )
 }
@@ -1638,6 +1759,7 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
           { id: 'a8', titel: text.messen.titel },
           ...briefe.map((b) => ({ id: `frage-${b}`, titel: daten.text[b].messen.fragebogen.seite, ebene: 2 as const })),
           { id: 'auswertung', titel: text.messen.auswertung.titel, ebene: 2 as const },
+          { id: 'logbuch', titel: text.messen.logbuch.titel, ebene: 2 as const },
         ],
       ],
     },
@@ -1687,6 +1809,7 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
         <FragebogenSeite key={b} fb={daten.text[b].messen.fragebogen} fbSprache={b} sprache={sprache} p={p} klasse={klasse} marken={marken} />
       ))}
       <AuswertungSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
+      <LogbuchSeite plan={plan} sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
       <JahresplanSeiten plan={plan} sprache={sprache} text={text} marken={marken} seiten={seiten} fertig={new Set(einheiten.map((e) => e.id))} />
       <JahreswegSeite plan={plan} sprache={sprache} text={text} marken={marken} />
       {einheiten.length

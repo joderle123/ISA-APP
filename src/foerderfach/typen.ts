@@ -199,6 +199,8 @@ export interface FragebogenText {
   aussagen: string[]
   /** Offene Fragen am Schluss */
   offen: string[]
+  /** Nur am Ende des Schuljahres: Wurde ein Skill im Alltag benutzt? (zählt nicht zum Vorher-nachher-Vergleich) */
+  praxis: { hinweis: string; text: string; optionen: string[] }
   dank: string
 }
 
@@ -216,8 +218,26 @@ export interface HandbuchText {
     schritte: TitelText[]
     /** Was die Aussagen messen: Kompetenzbereich je Gruppe von Aussagen (Nummern, z. B. „1–2“) */
     zuordnung: { titel: string; text: string; bereiche: { kompetenz: Kompetenz; aussagen: string }[] }
-    /** Auswertungsbogen für die Lehrkraft (eigene Kopiervorlage): Überschrift, Hinweis, Spaltenköpfe */
-    auswertung: { titel: string; text: string; spalten: string[] }
+    /**
+     * Auswertungsbogen (Kopiervorlage, quer): je Aussage Strichliste 1–4, N, Mittel und Anteil zustimmend,
+     * am Anfang und am Ende; dazu Zeilen für die Bögen, die Praxis-Zeile und die offene Frage 1.
+     */
+    auswertung: {
+      titel: string
+      text: string
+      /** „Anfang“, „Ende“, „Veränderung“ */
+      bloecke: string[]
+      /** Spalten je Block: „N“, „Mittel“, „Anteil“ (die Stufen 1–4 kommen davor) */
+      werte: string[]
+      /** Zeilen unter den Aussagen: „Bögen gesamt“, „davon leer“ */
+      boegen: string[]
+      /** Offene Frage 1 ausgezählt: Überschrift und drei Gruppen */
+      offen: { titel: string; gruppen: string[] }
+      /** Praxis-Zeile (nur Ende): Überschrift; die Optionen stehen im Fragebogen */
+      praxis: string
+    }
+    /** Umsetzungs-Logbuch der Lehrkraft (Kopiervorlage): je Einheit eine Zeile */
+    logbuch: { titel: string; text: string; spalten: string[]; gehalten: string[] }
     fragebogen: FragebogenText
   }
   /** Literaturverzeichnis im Anhang */
@@ -274,6 +294,8 @@ export interface HandbuchText {
     kartenText: string
     /** Beschriftung unter dem Kästchen zum Abhaken */
     geschafft: string
+    /** Spalte für den Wenn-dann-Plan je Mission: „Mein Moment: Wenn …“ */
+    moment: string
     woerter: string
     woerterText: string
     hilfeTitel: string
