@@ -7,12 +7,20 @@
       "de": {
         "name": "5-4-3-2-1",
         "wann": "Wenn der Kopf voll ist oder alles zu viel wird",
-        "schritte": ["Nenne still 5 Dinge, die du siehst, und 4, die du hörst.", "Dann 3 Dinge, die du spürst, 2, die du riechst, 1, das du schmeckst.", "Atme langsam aus. Merkst du einen Unterschied?"]
+        "schritte": [
+          "Nenne still 5 Dinge, die du siehst, und 4, die du hörst.",
+          "Dann 3 Dinge, die du spürst, 2, die du riechst, 1, das du schmeckst.",
+          "Atme langsam aus. Merkst du einen Unterschied?"
+        ]
       },
       "fr": {
         "name": "5-4-3-2-1",
         "wann": "Quand la tête est pleine ou que tout devient trop",
-        "schritte": ["Nomme en silence 5 choses que tu vois et 4 que tu entends.", "Puis 3 choses que tu sens sur ta peau, 2 odeurs, 1 goût.", "Expire lentement. Tu sens une différence ?"]
+        "schritte": [
+          "Nomme en silence 5 choses que tu vois et 4 que tu entends.",
+          "Puis 3 choses que tu sens sur ta peau, 2 odeurs, 1 goût.",
+          "Expire lentement. Tu sens une différence ?"
+        ]
       }
     },
     {
@@ -22,12 +30,342 @@
       "de": {
         "name": "Fingeratmung",
         "wann": "Wenn alles neu ist oder du nervös wirst – niemand sieht es",
-        "schritte": ["Leg eine Hand offen auf den Tisch oder aufs Bein.", "Mit dem Zeigefinger am Finger hinauf: einatmen. Hinunter: langsam ausatmen.", "Fünf Finger, fünf Atemzüge – dann den Weg zurück."]
+        "schritte": [
+          "Leg eine Hand offen auf den Tisch oder aufs Bein.",
+          "Mit dem Zeigefinger am Finger hinauf: einatmen. Hinunter: langsam ausatmen.",
+          "Fünf Finger, fünf Atemzüge – dann den Weg zurück."
+        ]
       },
       "fr": {
         "name": "La respiration des doigts",
         "wann": "Quand tout est nouveau ou que tu stresses – personne ne le voit",
-        "schritte": ["Pose une main à plat sur la table ou sur ta cuisse.", "L’index monte le long d’un doigt : inspire. Il redescend : expire lentement.", "Cinq doigts, cinq respirations – puis le chemin du retour."]
+        "schritte": [
+          "Pose une main à plat sur la table ou sur ta cuisse.",
+          "L’index monte le long d’un doigt : inspire. Il redescend : expire lentement.",
+          "Cinq doigts, cinq respirations – puis le chemin du retour."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-anspannen",
+      "bild": "icon:hand-grab",
+      "einheit": "ff7-e05",
+      "de": {
+        "name": "Anspannen und Loslassen",
+        "wann": "Wenn sich Ärger oder Stress im Körper staut",
+        "schritte": [
+          "Fäuste ballen, Schultern hoch – fünf Sekunden fest halten.",
+          "Loslassen: Hände öffnen, Schultern fallen lassen, langsam ausatmen.",
+          "Zehn Sekunden nachspüren. Noch zweimal. Unauffällig: nur die Fäuste."
+        ]
+      },
+      "fr": {
+        "name": "Contracter et relâcher",
+        "wann": "Quand la colère ou le stress s’accumule dans le corps",
+        "schritte": [
+          "Serre les poings, monte les épaules – tiens cinq secondes.",
+          "Relâche : ouvre les mains, laisse tomber les épaules, expire lentement.",
+          "Ressens dix secondes. Encore deux fois. Discret : seulement les poings."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-hoeren",
+      "bild": "icon:ear",
+      "einheit": "ff7-e07",
+      "de": {
+        "name": "Achtsames Hören",
+        "wann": "Wenn es außen oder im Kopf zu laut wird",
+        "schritte": [
+          "Füße auf den Boden, Augen zu oder auf einen Punkt am Tisch.",
+          "Hör zuerst das lauteste Geräusch, dann ein leiseres, dann das leiseste.",
+          "Hör deinen Atem, spür die Füße und öffne die Augen."
+        ]
+      },
+      "fr": {
+        "name": "L’écoute attentive",
+        "wann": "Quand c’est trop bruyant autour de toi ou dans ta tête",
+        "schritte": [
+          "Pieds au sol, yeux fermés ou fixés sur un point de la table.",
+          "Écoute le bruit le plus fort, puis un plus faible, puis le plus faible.",
+          "Écoute ta respiration, sens tes pieds, puis ouvre les yeux."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-farbsuche",
+      "bild": "icon:search",
+      "einheit": "ff7-e09",
+      "de": {
+        "name": "Farbsuche",
+        "wann": "Wenn ein Gefühl sehr laut ist und der Kopf eine Pause braucht",
+        "schritte": [
+          "Wähl eine Farbe, zum Beispiel Rot.",
+          "Such eine Minute lang still alles, was rot ist, und zähl mit.",
+          "Dann eine zweite Farbe. Zum Schluss einmal langsam ausatmen."
+        ]
+      },
+      "fr": {
+        "name": "La chasse aux couleurs",
+        "wann": "Quand une émotion est très forte et que ta tête a besoin d’une pause",
+        "schritte": [
+          "Choisis une couleur, par exemple le rouge.",
+          "Pendant une minute, cherche en silence tout ce qui est rouge et compte.",
+          "Puis une deuxième couleur. Pour finir, expire lentement une fois."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-koerper-check",
+      "bild": "icon:user",
+      "einheit": "ff7-e11",
+      "de": {
+        "name": "Körper-Check",
+        "wann": "Um Warnsignale im Körper früh zu bemerken",
+        "schritte": [
+          "Setz dich aufrecht hin, Füße auf den Boden, einmal langsam ausatmen.",
+          "Wandere mit der Aufmerksamkeit von der Stirn bis zu den Füßen.",
+          "Wo spannt es, wo ist es warm? Nur bemerken – alles ist in Ordnung."
+        ]
+      },
+      "fr": {
+        "name": "Le tour du corps",
+        "wann": "Pour repérer tôt les signaux d’alerte dans ton corps",
+        "schritte": [
+          "Assieds-toi droit, pieds au sol, et expire lentement une fois.",
+          "Promène ton attention du front jusqu’aux pieds.",
+          "Où ça serre, où c’est chaud ? Remarque simplement, sans juger."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-bauchatmung",
+      "bild": "icon:wind",
+      "einheit": "ff7-e12",
+      "de": {
+        "name": "Bauchatmung",
+        "wann": "Wenn du unruhig bist und runterkommen willst",
+        "schritte": [
+          "Leg eine Hand auf den Bauch.",
+          "Durch die Nase einatmen bis vier – der Bauch hebt die Hand.",
+          "Langsam durch den Mund ausatmen bis sechs. Fünfmal."
+        ]
+      },
+      "fr": {
+        "name": "La respiration par le ventre",
+        "wann": "Quand ça s’agite en toi et que tu veux te calmer",
+        "schritte": [
+          "Pose une main sur ton ventre.",
+          "Inspire par le nez en comptant jusqu’à quatre – le ventre soulève ta main.",
+          "Expire lentement par la bouche jusqu’à six. Cinq fois."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-stopp",
+      "bild": "icon:hand-stop",
+      "einheit": "ff7-e13",
+      "de": {
+        "name": "Stopp, zurück, ausatmen",
+        "wann": "Bei Rot: wenn du gleich explodierst",
+        "schritte": [
+          "Stopp: nichts sagen, nichts tun, nichts abschicken.",
+          "Zurück: einen Schritt Abstand – zurücklehnen, Blick weg.",
+          "Ausatmen: fünfmal lang, länger aus als ein. Reden erst danach."
+        ]
+      },
+      "fr": {
+        "name": "Stop, recule, souffle",
+        "wann": "Au rouge : quand tu es sur le point d’exploser",
+        "schritte": [
+          "Stop : ne rien dire, ne rien faire, ne rien envoyer.",
+          "Recule : prends de la distance – penche-toi en arrière, regarde ailleurs.",
+          "Souffle : cinq longues expirations, plus longues que l’inspiration."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-seufzer",
+      "bild": "icon:cloud",
+      "einheit": "ff7-e14",
+      "de": {
+        "name": "Doppelter Seufzer",
+        "wann": "Vor einem Test, nach einem Streit oder abends im Bett",
+        "schritte": [
+          "Tief durch die Nase einatmen.",
+          "Oben noch einmal kurz nachziehen – ein kleiner zweiter Atemzug.",
+          "Ganz langsam durch den Mund ausatmen, wie ein Seufzer."
+        ]
+      },
+      "fr": {
+        "name": "Le double soupir",
+        "wann": "Avant un devoir en classe, après une dispute ou le soir au lit",
+        "schritte": [
+          "Inspire profondément par le nez.",
+          "En haut, inspire encore un petit coup – une deuxième petite inspiration.",
+          "Expire très lentement par la bouche, comme un soupir."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-sicherer-ort",
+      "bild": "icon:map-pin",
+      "einheit": "ff7-e16",
+      "de": {
+        "name": "Mein sicherer Ort",
+        "wann": "Wenn es eng wird – am besten vorher in Ruhe üben",
+        "schritte": [
+          "Sag dir dein Stichwort oder nimm deinen Gegenstand in die Hand.",
+          "Geh mit allen Sinnen hin: Was siehst, hörst, spürst du?",
+          "Drei ruhige Atemzüge. Dann zurück: Stuhl spüren, strecken, umschauen."
+        ]
+      },
+      "fr": {
+        "name": "Mon lieu sûr",
+        "wann": "Quand ça devient difficile – à pratiquer d’abord au calme",
+        "schritte": [
+          "Dis-toi ton mot-clé ou prends ton objet dans la main.",
+          "Vas-y avec tous tes sens : que vois-tu, entends-tu, ressens-tu ?",
+          "Trois respirations calmes. Puis reviens : sens la chaise, étire-toi."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-ampel",
+      "bild": "icon:traffic-lights",
+      "einheit": "ff7-e17",
+      "de": {
+        "name": "Ampel-Check",
+        "wann": "Immer, wenn du merkst: Gleich wird es zu viel",
+        "schritte": [
+          "Stopp: Schätz deine Zahl von 0 bis 100.",
+          "Farbe: Grün, Gelb oder Rot?",
+          "Skill: Nimm einen Skill aus deinem Koffer, der zu dieser Farbe passt."
+        ]
+      },
+      "fr": {
+        "name": "Le réflexe feu tricolore",
+        "wann": "Chaque fois que tu sens que ça va devenir trop",
+        "schritte": [
+          "Stop : estime ton chiffre de 0 à 100.",
+          "Couleur : vert, orange ou rouge ?",
+          "Skill : prends dans ta valise un skill qui va avec cette couleur."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-erst-atmen",
+      "bild": "icon:message-circle",
+      "einheit": "ff7-e19",
+      "de": {
+        "name": "Erst atmen, dann reden",
+        "wann": "Wenn du gleich etwas sagen willst, das verletzt",
+        "schritte": [
+          "Merk deine Zahl: Über 70? Dann noch nichts sagen.",
+          "Atme dreimal langsam – länger aus als ein.",
+          "Dann sag deine Ich-Botschaft: Gefühl und Wunsch, kurz und klar."
+        ]
+      },
+      "fr": {
+        "name": "Respirer avant de parler",
+        "wann": "Quand tu es sur le point de dire quelque chose qui blesse",
+        "schritte": [
+          "Repère ton chiffre : plus de 70 ? Alors ne dis rien pour l’instant.",
+          "Respire trois fois lentement – l’expiration plus longue que l’inspiration.",
+          "Puis dis ton message en « je » : ton émotion et ton souhait, court et clair."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-auszeit",
+      "bild": "icon:stopwatch",
+      "einheit": "ff7-e22",
+      "de": {
+        "name": "Faire Auszeit",
+        "wann": "Wenn du im Streit merkst: Ich rutsche über meine Grenze",
+        "schritte": [
+          "Ansagen: „Ich brauch kurz fünf Minuten. Dann reden wir weiter.“",
+          "Runterkommen: Kastenatmung oder dein Skill, bis du unter 70 bist.",
+          "Zurückkommen: pünktlich wieder da sein und mit einer Ich-Botschaft weiter."
+        ]
+      },
+      "fr": {
+        "name": "Le temps mort",
+        "wann": "Quand tu sens, en pleine dispute, que tu dépasses ta limite",
+        "schritte": [
+          "Annonce : « J’ai besoin de cinq minutes. Ensuite, on en reparle. »",
+          "Calme-toi : respiration carrée ou ton skill, jusqu’à passer sous 70.",
+          "Reviens à l’heure prévue et continue avec un message en « je »."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-anker",
+      "bild": "icon:shield",
+      "einheit": "ff7-e23",
+      "de": {
+        "name": "Anker vor dem Nein",
+        "wann": "In den zwei Sekunden, bevor du Nein sagst – auch online",
+        "schritte": [
+          "Füße fest auf den Boden: Spür, wie du stehst.",
+          "Einmal lang ausatmen.",
+          "Dann deinen Nein-Satz sagen – ruhig und mit Blick."
+        ]
+      },
+      "fr": {
+        "name": "L’ancre avant le non",
+        "wann": "Dans les deux secondes avant de dire non – aussi en ligne",
+        "schritte": [
+          "Pieds bien ancrés au sol : sens comment tu tiens debout.",
+          "Expire longuement une fois.",
+          "Puis dis ta phrase pour refuser – calmement, en regardant l’autre."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-freundliche-stimme",
+      "bild": "icon:user-heart",
+      "einheit": "ff7-e29",
+      "de": {
+        "name": "Die freundliche Stimme",
+        "wann": "Wenn deine innere Stimme streng mit dir wird",
+        "schritte": [
+          "Sag dir: „Das ist gerade schwer.“",
+          "Sag dir: „So geht es vielen. Ich bin damit nicht allein.“",
+          "Frag dich: „Was brauche ich jetzt?“ – so freundlich wie zu einem Freund."
+        ]
+      },
+      "fr": {
+        "name": "La voix bienveillante",
+        "wann": "Quand ta voix intérieure devient dure avec toi",
+        "schritte": [
+          "Dis-toi : « C’est difficile en ce moment. »",
+          "Dis-toi : « Ça arrive à beaucoup de monde. »",
+          "Demande-toi : « De quoi j’ai besoin ? », comme à quelqu’un que tu aimes."
+        ]
+      }
+    },
+    {
+      "id": "ff7-k-fuesse-atem-stift",
+      "bild": "icon:pencil",
+      "einheit": "ff7-e32",
+      "de": {
+        "name": "Füße, Atem, Stift",
+        "wann": "Im Test, wenn die Anspannung hochgeht – niemand sieht es",
+        "schritte": [
+          "Füße fest in den Boden drücken, fünf Sekunden halten, lösen.",
+          "Zweimal lang ausatmen: vier Zählzeiten ein, sechs aus.",
+          "Stift fest drücken, loslassen und die nächste Aufgabe lesen."
+        ]
+      },
+      "fr": {
+        "name": "Pieds, souffle, stylo",
+        "wann": "Pendant un devoir en classe, quand la tension monte – personne ne voit",
+        "schritte": [
+          "Appuie fort tes pieds dans le sol, tiens cinq secondes, relâche.",
+          "Expire longuement deux fois : quatre temps pour inspirer, six pour expirer.",
+          "Serre ton stylo, relâche-le et lis la question suivante."
+        ]
       }
     }
   ],
