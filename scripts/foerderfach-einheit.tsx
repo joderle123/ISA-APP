@@ -11,7 +11,7 @@ import { fileURLToPath } from 'node:url'
 import { execFileSync } from 'node:child_process'
 import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { EinheitSeiten } from '../src/foerderfach/pdf/Handbuch'
-import { blattById, planVon } from '../src/foerderfach/daten'
+import { SKILLKARTEN, blattById, planVon } from '../src/foerderfach/daten'
 import type { Blatt } from '../src/blatt/typen'
 import type { EinheitenDatei, Sprache } from '../src/foerderfach/typen'
 
@@ -45,9 +45,13 @@ for (const datei of args.filter((a) => a.endsWith('.json'))) {
     for (const sprache of ['de', 'fr'] as Sprache[]) {
       const pdf = join(ziel, `${e.id}_${sprache}.pdf`)
       const marken = new Map<string, number>()
+      // Seitenverweise wie im fertigen Handbuch (Heft S. …, Vorlage S. …), mit dreistelligen Platzhaltern
+      const heft = new Map<string, number>([...e.blaetter, ...(e.vorlagen ?? [])].map((id) => [id, 188]))
+      const seiten = new Map<string, number>([...e.blaetter, ...(e.vorlagen ?? [])].map((id) => [`v-${id}`, 188]))
+      for (const tr of [1, 2, 3]) heft.set(`m${tr}`, 188)
       await renderToFile(
         <Document>
-          <EinheitSeiten e={e} plan={plan} sprache={sprache} blaetter={blaetter} marken={marken} />
+          <EinheitSeiten e={e} plan={plan} sprache={sprache} blaetter={blaetter} marken={marken} heft={heft} seiten={seiten} karte={SKILLKARTEN[e.klasse]?.find((k) => k.einheit === e.id)} />
         </Document>,
         pdf,
       )

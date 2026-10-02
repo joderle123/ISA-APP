@@ -44,7 +44,13 @@ if (args.includes('--entwurf')) {
   const ordner = join(ROOT, 'src/data/foerderfach/entwurf')
   const dateien = existsSync(ordner) ? readdirSync(ordner).filter((d) => d.endsWith('.json')) : []
   for (const d of dateien) {
-    const x = JSON.parse(readFileSync(join(ordner, d), 'utf8')) as EinheitenDatei
+    let x: EinheitenDatei
+    try {
+      x = JSON.parse(readFileSync(join(ordner, d), 'utf8')) as EinheitenDatei
+    } catch {
+      console.error(`  Entwurf ${d} übersprungen: kein gültiges JSON (wird vielleicht gerade geschrieben)`)
+      continue
+    }
     for (const e of x.einheiten) einheiten = [...einheiten.filter((y) => y.id !== e.id), e]
     for (const b of x.blaetter ?? []) blaetter.set(b.id, b)
   }
