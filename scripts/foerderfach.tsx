@@ -130,7 +130,7 @@ for (const klasse of KLASSEN.filter((k) => !nur || k === nur)) {
       console.error(`✗ ${heftDatei}: ${nh} Seiten – kein Vielfaches von 4`)
       process.exitCode = 1
     }
-    console.log('✓', heftDatei, `(${nh} Seiten, ${heftNotizen} Notizseiten, ${[...heft.keys()].filter((k) => !/^(w|k|m\d?)$/.test(k)).length} Blätter)`)
+    console.log('✓', heftDatei, `(${nh} Seiten, ${heftNotizen} Notizseiten, ${[...heft.keys()].filter((k) => !/^(w|k|m\d?|k-.+)$/.test(k)).length} Blätter)`)
     bilder(heftDatei)
 
     // --- Lehrerhandbuch ------------------------------------------------------------------------
