@@ -38,28 +38,23 @@
       ],
       "de": {
         "titel": "Meine Glaubenssätze",
-        "kurz": "In Ruhe und nur für sich: An Figuren sieht die Klasse, wie bremsende Sätze entstehen und was eine gute Freundin dazu sagt; dann schreibt jede Person privat ihre eigenen auf.",
+        "kurz": "In Ruhe und nur für sich: An Figuren sieht die Klasse, wie bremsende Sätze entstehen und was eine gute Freundin dazu sagen würde; dann schreibt jede Person privat ihre eigenen auf.",
         "ziele": [
-          "beschreiben an Figuren, woher ein bremsender Satz kommt und wo er bremst",
-          "schreiben privat eigene Sätze auf und schätzen ein, ob sie noch stimmen",
-          "üben an Figuren den Blick einer guten Freundin und übertragen ihn auf ihren eigenen Satz",
-          "lenken mit dem Dankbarkeitsblitz den Blick auf Gutes"
+          "beschreiben an Figuren, woher ein bremsender Satz kommt, und sprechen ihm einen freundlichen Satz zu",
+          "schreiben privat einen eigenen Satz auf und schätzen ein, ob er noch stimmt",
+          "leihen sich den Blick einer guten Freundin und üben den Dankbarkeitsblitz"
         ],
         "material": [
-          "Gefühlsrad-Plakat, 20 Klebepunkte",
-          "Schülerheft für jede Person",
-          "Figurenkarten, Karten aus Einheit 27",
-          "Fünf A3-Blätter, Klebestifte",
-          "Klebezettel, ein Block je Gruppe",
+          "Gefühlsrad-Plakat, 20 Klebepunkte; leise Musik ohne Gesang",
+          "Figurenkarten (Vorlage), fünf A3-Blätter, Klebestifte",
+          "Klebezettel, ein Block je Tischgruppe",
           "Büroklammern, 20 Stück",
-          "Leise Musik ohne Gesang",
-          "Stempel für den Skills-Pass"
+          "Schülerheft: Blatt „Meine Glaubenssätze“ und Skills-Pass, Stempel"
         ],
         "vorbereitung": [
-          "Mit Régent und SePAS klären, ob jemand gerade in einer Krise ist; diese Person vorher ansprechen.",
-          "Klären, wer heute für ein Gespräch erreichbar ist; einen ruhigen Platz in Sichtweite festlegen.",
-          "Figurenkarten kopieren, ausschneiden; Fragen (Schritt 3) und Herkunftsliste an die Tafel.",
-          "Musik ohne Gesang bereitstellen, nicht über ein Handy der Jugendlichen."
+          "Mit Régent und SePAS klären, ob jemand gerade in einer Krise ist; diese Person vorher ansprechen. Klären, wer heute für ein Gespräch erreichbar ist.",
+          "Einen ruhigen Platz in Sichtweite festlegen; Musik ohne Gesang bereitstellen, nicht über ein Handy der Jugendlichen.",
+          "Figurenkarten kopieren und schneiden; die drei Fragen und die Herkunftsliste an die Tafel schreiben."
         ],
         "ablauf": [
           {
@@ -73,14 +68,9 @@
             "titel": "Rückblick und Rahmen: heute ganz privat"
           },
           {
-            "min": "15–30",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Wie ein Satz entsteht: fünf Figuren"
-          },
-          {
-            "min": "30–45",
-            "phase": "uebung",
-            "titel": "Meine Sätze – allein und privat"
+            "titel": "Wie ein Satz entsteht – und was eine Freundin sagt"
           },
           {
             "min": "45–50",
@@ -88,24 +78,14 @@
             "titel": "Bewegungspause: Stein, Papier, Schere mit Fanclub"
           },
           {
-            "min": "50–70",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Was würde eine gute Freundin sagen?"
+            "titel": "Meine Sätze – allein und privat"
           },
           {
-            "min": "70–85",
-            "phase": "uebung",
-            "titel": "Der freundliche Blick auf meinen Satz"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: Dankbarkeitsblitz"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Daumen, Skills-Pass, Moment wählen und Mission"
           }
         ],
         "schritte": [
@@ -113,165 +93,132 @@
             "titel": "Check-in: ruhig ankommen",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat; leise Musik ohne Gesang läuft schon. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100). Die Lehrkraft beginnt mit Gefühl und Zahl und lässt dann bewusst Pausen: Zwei, drei Freiwillige nennen ihr Wort, ohne Kommentar (4 Min.). Dann ankündigen, dass heute eine ruhigere Stunde ist, in der jede Person viel für sich arbeitet, und dass zwischendurch auch gelacht werden darf (1 Min.). Zum Schluss die Ampel-Frage, heute in der langen Form: eine Runde Fingeratmung für alle, langsam angeleitet – sie hilft auch, vom Flur im Raum anzukommen (3 Min.).",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad, leise Musik ohne Gesang läuft; dann zeigen alle auf drei ihre Anspannung mit den Fingern (0–100), die Lehrkraft beginnt und lässt bewusst Pausen. Heute eine ruhigere Stunde: Alle machen eine Runde Fingeratmung, langsam angeleitet – sie hilft auch, vom Flur im Raum anzukommen.",
             "sagen": [
-              "Wie geht es euch gerade – Wort und Zahl? Heute wird ein ruhigerer Tag.",
-              "Wer nichts sagen mag, zeigt nur die Zahl. Das reicht völlig."
+              "Wie geht es euch gerade, Wort und Zahl – heute wird ein ruhigerer Tag?",
+              "Wer nichts sagen mag, zeigt nur die Zahl – das reicht völlig."
             ],
-            "tipp": "Liegt jemand schon beim Ankommen über 70, leise einen Skill aus dem Skills-Koffer anbieten oder ein Glas Wasser: Über eigene Sätze schreiben klappt nur, wenn der Kopf halbwegs ruhig ist.",
-            "wennEsKippt": "Ist die Klasse nach der Pause aufgedreht, nicht gegen die Unruhe anreden: eine Minute Fenster auf, alle stehen und schütteln Hände und Schultern aus, dann die Fingeratmung im Sitzen – erst danach Gefühl und Zahl."
+            "wennEsKippt": "Ist die Klasse nach der Pause aufgedreht, nicht gegen die Unruhe anreden: eine Minute Fenster auf, alle stehen und schütteln Hände und Schultern aus, dann die Fingeratmung im Sitzen. Liegt jemand schon beim Ankommen über 70, leise einen Skill oder ein Glas Wasser anbieten: Über eigene Sätze schreiben klappt nur mit halbwegs ruhigem Kopf."
           },
           {
             "titel": "Rückblick und Rahmen: heute ganz privat",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Dann zur Wochen-Mission – den ersten Gedanken ertappen und einen zweiten dazu finden: Kam euer Moment – eine Nachricht ohne Antwort, ein Lachen, ein Test – und was habt ihr gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt, welcher zweite Gedanke gepasst hat. Niemand muss es geschafft haben. Zwei, drei Glaubenssatz-Karten aus der letzten Stunde aus einem Umschlag nehmen und an die Tafel hängen. Dann den Rahmen für heute ruhig und klar nennen: Jede Person schreibt für sich, niemand liest vor, nichts wird eingesammelt, und das Blatt kann am Ende verschlossen werden. Offen sagen, wo die Vertraulichkeit endet – Geheimhaltung nicht versprechen –, und Fragen dazu ehrlich beantworten.",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – und was hast du gemacht? Daumen hoch: Der Moment kam, ich habe einen zweiten Gedanken gefunden; Mitte: Der Moment kam, ich habe etwas anderes gemacht; runter: Der Moment kam nicht. Eine Stimme erzählt in einem Satz; dann das Thema und den Rahmen nennen: Heute schreibt jede Person nur für sich.",
             "sagen": [
-              "Kam euer Moment – und was habt ihr gemacht? Daumen, dann eine Stimme.",
-              "Heute schreibt jede und jeder für sich. Was ihr aufschreibt, gehört euch – ich lese es nicht, außer ihr zeigt es mir.",
-              "Eine Ausnahme gibt es: Wenn ich mir ernsthaft Sorgen um jemanden mache, spreche ich ihn nach der Stunde allein an und hole mir Hilfe beim SePAS. Nie vor der Klasse."
-            ],
-            "tipp": "Die Grenze der Vertraulichkeit vorher auszusprechen, schafft Vertrauen: Die Jugendlichen wissen, woran sie sind, und fühlen sich später nicht ertappt."
-          },
-          {
-            "titel": "Wie ein Satz entsteht: fünf Figuren",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Jede Tischgruppe bekommt eine Figurenkarte und ein A3-Blatt. Die Gruppe klebt die Karte in die Mitte, eine Person liest sie laut vor, eine andere schreibt den Satz der Figur groß oben auf das Plakat und rundherum die Antworten auf die drei Fragen an der Tafel (6 Min.). Dann stellt jede Gruppe ihre Figur in drei Sätzen vor (6 Min.); die Lehrkraft hakt an der Herkunftsliste aus der letzten Stunde ab, welche Herkunft vorkam. Zum Schluss festhalten (3 Min.): Ein Satz kann einmal einen guten Grund gehabt haben und heute trotzdem nicht mehr stimmen. Und: Woher ein Satz kommt, sagt nicht, wer schuld ist – oft hat der Bruder oder der Mitspieler gar nicht gemerkt, was sein Spruch anrichtet. Die Plakate bleiben auf den Tischen; nach der Pause werden sie gebraucht.",
-            "sagen": [
-              "Was hat Ana damals erlebt – und was macht der Satz heute mit ihr?",
-              "Hatte der Satz mal einen guten Grund? Und stimmt er heute noch genauso?"
+              "Kam euer Moment, und was habt ihr gemacht – Daumen hoch, Mitte oder runter?",
+              "Heute schreibt jede und jeder für sich – was ihr aufschreibt, gehört euch, ich lese es nicht, außer ihr zeigt es mir."
             ],
             "punkte": [
-              "Woher kommt der Satz – und seit wann gibt es ihn?",
-              "Stimmt er heute noch? Gebt eine Zahl von 0 bis 10 und sagt, warum.",
-              "Wo bremst er die Person heute – in der Schule, bei Freunden, in der Freizeit?"
+              "Niemand liest vor, nichts wird eingesammelt; das Blatt kann am Ende verschlossen werden.",
+              "Schreiben in jeder Sprache, auch mit Zeichen, die nur ihr versteht.",
+              "Wer eine Pause braucht, geht an den ruhigen Platz – zurückkommen ist jederzeit möglich.",
+              "Die Grenze der Vertraulichkeit offen sagen: Mache ich mir ernsthaft Sorgen um jemanden, spreche ich ihn nach der Stunde allein an und hole Hilfe beim SePAS – nie vor der Klasse. Geheimhaltung wird nicht versprochen.",
+              "Zwei, drei Glaubenssatz-Karten aus Stunde 27 zur Erinnerung an die Tafel hängen."
             ],
-            "tipp": "In jeder Geschichte steckt ein Gegenbeweis: Ana trifft im Training fast immer, Sofias Zeichnung hängt im Lycée. Wer ihn findet, hat schon den ersten Schritt der Detektivarbeit von nächster Woche gemacht – dafür ausdrücklich loben.",
-            "wennEsKippt": "Erkennt sich jemand in einer Figur wieder und wird still oder albern, nicht darauf eingehen; die Gruppe arbeitet mit der Figur weiter, nach der Stunde kurz nachfragen. Wird eine Figur mit jemandem aus der Klasse verglichen („Das ist ja wie bei …“), sofort stoppen: Wir reden über die Figur. Wird über eine Figur gelästert, zurückfragen: Was würde Noah fühlen, wenn er das hört? Ist eine Gruppe schnell fertig, bekommt sie die Reservekarte dazu.",
-            "blatt": "ff7-glaubenssatz-figuren"
+            "tipp": "Die Grenze der Vertraulichkeit vorher auszusprechen, schafft Vertrauen: Die Jugendlichen wissen, woran sie sind, und fühlen sich später nicht ertappt. Zur Mission vor allem fragen, was schwierig war."
           },
           {
-            "titel": "Meine Sätze – allein und privat",
-            "dauer": 15,
+            "titel": "Wie ein Satz entsteht – und was eine Freundin sagt",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Die Plakate an den Rand der Tische legen. Jede Person stellt einen Ordner oder ein Buch als Sichtschutz auf; wer mehr Ruhe braucht, setzt sich an einen freien Platz (1 Min.). Das Blatt „Meine Glaubenssätze“ aufschlagen, den Kasten oben vorlesen und Aufgabe 1 an einem eigenen, harmlosen Beispiel zeigen, etwa „Ich kann nicht singen“: woher er kommt, wo er bremst, wo das Kreuz auf der Skala liegt (3 Min.). Dann schreibt jede Person allein Aufgabe 1 in Stichworten, die leise Musik läuft (10 Min.); wer fertig ist, macht Aufgabe 2 oder malt ein Zeichen neben den Satz. Die Lehrkraft geht langsam herum, hilft nur, wenn jemand fragt, und liest nicht mit. Zum Schluss legen alle den Stift hin und atmen einmal lang aus (1 Min.).",
+            "text": "Jede Tischgruppe bekommt eine Figurenkarte und ein A3-Blatt. Die Gruppen sehen, woher der Satz der Figur kommt und wo er bremst – und sagen der Figur laut, was eine gute Freundin oder ein guter Freund ihr sagen würde.",
             "sagen": [
-              "Ein Satz reicht, und es muss nicht der schwerste sein. Wenn ihr nicht wisst, woher er kommt, schreibt ein Fragezeichen – auch das ist eine Antwort.",
-              "Ihr dürft in jeder Sprache schreiben, auch mit Abkürzungen oder Zeichen, die nur ihr versteht.",
-              "Stimmt der Satz heute noch? Kreuzt auf der Skala an, wie sehr ihr ihn glaubt – ganz aus dem Bauch."
+              "Was hat Ana damals erlebt – und was macht der Satz heute mit ihr?",
+              "Stellt euch vor, Ana ist eure Freundin und sagt euch diesen Satz: Was würdet ihr ihr wirklich sagen, so wie einer Freundin und nicht wie ein Lehrer?"
             ],
-            "tipp": "Eigene Sätze sind am Anfang schwer zu greifen; der Kasten „Sätze, die viele kennen“ hilft beim Einstieg, und wer sich einen Satz leiht, arbeitet genauso gut. Bleiben die Hefte in der Schule, zusagen, dass geklammerte Seiten nicht aufgeschlagen werden; am Jahresende gehen die Hefte nach Hause – auch deshalb sind Zeichen erlaubt.",
-            "wennEsKippt": "Schreibt jemand gar nichts oder macht Witze, nicht drängen: anbieten, einen Satz aus dem Kasten zu nehmen oder das Blatt für eine der Figuren auszufüllen – auch das zählt. Schaut jemand beim Nachbarn aufs Blatt, ruhig den Platz wechseln lassen. Wer nicht still sitzen kann, darf im Stehen am Fensterbrett schreiben. Wird jemand traurig oder wütend, leise den ruhigen Platz anbieten; zurückkommen ist jederzeit möglich, nach der Stunde kurz nachfragen.",
-            "blatt": "ff7-meine-glaubenssaetze"
+            "punkte": [
+              "Lesen und kleben (3 Min.): Die Gruppe klebt die Karte in die Mitte des A3-Blatts, eine Person liest sie laut vor, eine andere schreibt den Satz der Figur groß oben auf.",
+              "Drei Fragen (7 Min.): Woher kommt der Satz – und seit wann? Stimmt er heute noch? Gebt eine Zahl von 0 bis 10 und sagt warum. Wo bremst er die Person heute? Antworten rund um den Satz schreiben.",
+              "Freundes-Satz (8 Min.): Die Gruppe sagt der Figur leise, was eine gute Freundin oder ein guter Freund ihr sagen würde; die beste Antwort kommt auf einen Klebezettel. Zu großes Lob glaubt die Figur nicht – was würde sie wirklich glauben?",
+              "Vorstellen (8 Min.): Jede Gruppe stellt ihre Figur in drei Sätzen vor und liest ihren Freundes-Satz vor; die Lehrkraft hakt die Herkünfte an der Tafel ab.",
+              "Festhalten (4 Min.): Ein Satz kann einmal einen guten Grund gehabt haben und heute nicht mehr stimmen. Ein guter Freundes-Satz ist ehrlich und freundlich, kein Schönreden – er nimmt das Schwierige ernst und zeigt einen Ausweg."
+            ],
+            "wennEsKippt": "Erkennt sich jemand in einer Figur wieder und wird still oder albern, nicht darauf eingehen: Die Gruppe arbeitet mit der Figur weiter, nach der Stunde kurz nachfragen. Wird eine Figur mit jemandem aus der Klasse verglichen oder über sie gelästert, sofort stoppen: Wir reden über die Figur – was würde Noah fühlen, wenn er das hört?",
+            "blatt": "ff7-glaubenssatz-figuren"
           },
           {
             "titel": "Bewegungspause: Stein, Papier, Schere mit Fanclub",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen auf. Zu zweit Stein, Papier, Schere spielen; wer verliert, wird Fan der anderen Person, stellt sich hinter sie und feuert sie beim nächsten Spiel mit ihrem Namen an. Die Fanclubs wachsen, bis im Finale die ganze Klasse ihre beiden Letzten anfeuert (4 Min.). Nach dem stillen Schreiben ist Lärm ausdrücklich erlaubt. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Alle stehen auf. Zu zweit Stein, Papier, Schere spielen; wer verliert, wird Fan der anderen Person, stellt sich hinter sie und feuert sie beim nächsten Spiel mit ihrem Namen an. Die Fanclubs wachsen, bis im Finale die ganze Klasse ihre beiden Letzten anfeuert.",
             "sagen": [
               "Nach so viel Stille darf es jetzt laut werden – mit Anfeuern, nie mit Auslachen."
             ],
-            "tipp": "Das Spiel holt nach der Einzelarbeit alle zurück in die Gruppe: Am Ende jubeln zwanzig Leute für zwei. Ein gutes Gegengewicht zum stillen Schreiben.",
-            "wennEsKippt": "Lacht jemand Ausgeschiedene aus, kurz anhalten: Fans feuern ihre Person an, niemand buht. Wer nicht spielen mag, ist von Anfang an Fan oder zählt die Runden."
+            "tipp": "Das Spiel holt nach dem stillen Schreiben alle zurück in die Gruppe: Am Ende jubeln zwanzig Leute für zwei. Liegt die große Pause dazwischen, entfällt die Übung."
           },
           {
-            "titel": "Was würde eine gute Freundin sagen?",
-            "dauer": 20,
+            "titel": "Meine Sätze – allein und privat",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Die fünf Plakate liegen auf den Tischgruppen, dazu je ein Block Klebezettel; Pfeile an der Tafel zeigen die Reihenfolge. Zum Umschalten einmal gemeinsam ausatmen und die Regel nennen: An den Plakaten wird geflüstert. Am nächsten Plakat liest eine Person den Satz der Figur so vor, als wäre sie die Figur; eine andere antwortet leise als gute Freundin oder guter Freund. Die Gruppe einigt sich auf den besten Freundes-Satz, eine Person schreibt ihn auf einen Zettel – an jedem Plakat jemand anderes. Alle drei Minuten das Zeichen zum Weitergehen geben, bis jede Gruppe vier fremde Plakate gesehen hat (12 Min.). Zurück am eigenen Plakat wählt die Gruppe den hilfreichsten Zettel; eine Person sagt ihn der Klasse so, als spräche sie mit der Figur (4 Min.). Zum Schluss (4 Min.): Was macht einen guten Freundes-Satz aus? An der Tafel festhalten: ehrlich, freundlich, kein Schönreden – er nimmt das Schwierige ernst und zeigt einen Ausweg.",
+            "text": "Alle gehen an einen geschützten Platz, leise Musik läuft. Jede Person schreibt allein auf ihrem Blatt: einen eigenen Satz, den freundlichen Blick darauf und ein Gegengewicht (Aufgabe 1 bis 3). Die Lehrkraft geht langsam herum, hilft nur auf Nachfrage und liest nicht mit.",
             "sagen": [
-              "Stellt euch vor, Ana ist eure Freundin und sagt euch diesen Satz. Was würdet ihr ihr wirklich sagen?",
-              "‚Du bist die Beste‘ glaubt sie euch vielleicht nicht. Was würde sie euch glauben?",
-              "Sagt den Satz so, wie ihr ihn einer Freundin sagen würdet – nicht wie ein Lehrer."
+              "Ein Satz reicht, und es muss nicht der schwerste sein – wenn ihr nicht wisst, woher er kommt, schreibt ein Fragezeichen, auch das ist eine Antwort.",
+              "Leiht euch jetzt die Stimme, die ihr eben für Ana und die anderen hattet – und sprecht damit über euch."
             ],
-            "tipp": "Mit Freunden reden die meisten viel freundlicher und klüger als mit sich selbst. Genau diese Stimme sollen die Jugendlichen gleich für den eigenen Satz ausleihen – deshalb wird sie hier laut gesprochen, nicht nur geschrieben. Sammelt sich unter einer Figur nur Schönrederei, fragen: Würde sie euch das glauben?",
-            "wennEsKippt": "Stehen auf Zetteln Witze oder Gemeinheiten über eine Figur, diese wortlos abnehmen und später unter vier Augen ansprechen. Wird es zu laut, das Wandern kurz anhalten und die Flüsterregel wiederholen. Wer nicht sprechen mag, hört zu oder schreibt den Zettel; das ist erlaubt. Drängeln sich alle an einem Plakat, bleibt jede Gruppe an ihrem Tisch, und die Plakate wandern.",
-            "blatt": "ff7-glaubenssatz-figuren"
-          },
-          {
-            "titel": "Der freundliche Blick auf meinen Satz",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Alle gehen zurück an ihren geschützten Platz, die leise Musik läuft wieder (2 Min.). Aufgabe 3 (6 Min.): Jede Person liest ihren Satz von vorhin noch einmal, sagt sich innerlich, was eine gute Freundin oder ein guter Freund dazu sagen würde, und schreibt es auf – ehrlich und freundlich, wie eben an den Plakaten. Wer vorhin nichts Eigenes geschrieben hat, nimmt einen Satz aus dem Kasten. Aufgabe 4 (5 Min.): das Gegengewicht – drei Dinge, die die Person sicher Gutes über sich weiß; diese Aufgabe machen alle, Stichworte reichen. Zum Schluss (2 Min.) verschließen alle die Seite mit einer Büroklammer oder falten sie; die Lehrkraft verteilt die Klammern. Beim Herumgehen auf Gesichter achten, nicht auf Blätter.",
-            "sagen": [
-              "Leiht euch jetzt die Stimme, die ihr eben für Ana, Diogo und die anderen hattet – und sprecht damit über euch.",
-              "Fällt euch nichts Gutes ein, fragt euch: Was würde jemand sagen, der mich mag?"
+            "punkte": [
+              "Ankommen (3 Min.): Jede Person stellt einen Ordner oder ein Buch als Sichtschutz auf; wer mehr Ruhe braucht, setzt sich an einen freien Platz. Das Blatt aufschlagen, den Kasten oben vorlesen.",
+              "Aufgabe 1 (12 Min.): einen Satz aufschreiben, der manchmal bremst: woher er kommt und wie sehr man ihn glaubt (0–10). Zuerst ein harmloses Beispiel der Lehrkraft, etwa „Ich kann nicht singen“; wer keinen eigenen findet, leiht sich einen von den Karten.",
+              "Aufgabe 2 (8 Min.): den eigenen Satz noch einmal lesen und aufschreiben, was eine gute Freundin oder ein guter Freund dazu sagen würde – ehrlich und freundlich, wie eben bei den Figuren.",
+              "Aufgabe 3 (8 Min.): das Gegengewicht – drei Dinge, die die Person sicher Gutes über sich weiß; diese Aufgabe machen alle.",
+              "Abschluss (4 Min.): Alle legen den Stift hin, atmen einmal lang aus und verschließen die Seite mit einer Büroklammer oder falten sie; die Lehrkraft verteilt die Klammern."
             ],
-            "tipp": "Die Reihenfolge ist Absicht: erst der freundliche Blick, dann das Gegengewicht – niemand soll die Stunde mit dem schwersten Satz im Kopf verlassen. Die Büroklammer ist mehr als Technik: Sie zeigt, dass das Blatt wirklich privat bleibt.",
-            "wennEsKippt": "Findet jemand gar nichts Gutes, nicht widersprechen und nicht überreden; leise eine Stärke nennen, die die Lehrkraft selbst beobachtet hat, und fragen, ob die Person sie aufschreiben mag. Wirkt jemand nach dem Schreiben sehr bedrückt oder fällt beim Herumgehen ein sehr negativer Satz ins Auge, die Person nach der Stunde allein ansprechen und noch am selben Tag den SePAS informieren.",
+            "wennEsKippt": "Schreibt jemand gar nichts oder macht Witze, nicht drängen: anbieten, einen Satz von den Karten zu nehmen oder das Blatt für eine Figur auszufüllen. Wirkt jemand sehr bedrückt oder fällt beim Herumgehen ein sehr negativer Satz ins Auge, die Person nach der Stunde allein ansprechen und noch am selben Tag den SePAS informieren.",
             "blatt": "ff7-meine-glaubenssaetze"
           },
           {
             "titel": "Skill: Dankbarkeitsblitz",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Ankündigen: Nach so einer Stunde darf der Kopf wieder etwas Freundliches sehen. Alle sitzen bequem, eine Hand auf dem Bauch; Augen zu oder offen ist beides richtig, und wer aussteigen will, spürt einfach die Füße am Boden oder schaut aus dem Fenster. Die Lehrkraft leitet die drei Schritte langsam an (Liste) und macht selbst mit; zwischen den Schritten Zeit lassen, insgesamt höchstens drei Minuten (3 Min.). Dann der Blitz zu zweit (2 Min.): Jede Person sagt der Person daneben in einem Satz eine kleine gute Sache dieser Woche – laut, nicht still; ein Wort reicht, auch in der eigenen Sprache, und „weiter“ ist erlaubt. Zwei, drei Stimmen nennen ihre gute Sache in einem Wort für alle (2 Min.). Erklären (3 Min.): Der Kopf bemerkt von allein eher, was schiefläuft. Wer ihn öfter auf Gutes lenkt, dem fällt Gutes leichter auf – mit Jugendlichen wurde das ausprobiert, und vielen ging es danach etwas besser. Die Übung ist ein Angebot, nie ein Mittel gegen Unruhe.",
+            "text": "Nach so einer Stunde darf der Kopf wieder etwas Freundliches sehen (5 Min.): Alle sitzen bequem, eine Hand auf dem Bauch, Augen zu oder offen; wer aussteigen will, spürt die Füße am Boden. Die Lehrkraft leitet die drei Schritte höchstens drei Minuten an, dann sagen alle zu zweit eine kleine gute Sache. Danach der Abschluss (10 Min.): Daumen, Skills-Pass, Mission, Moment.",
             "sagen": [
-              "Es muss nichts Großes sein. Ein warmes Brötchen am Morgen zählt genauso."
+              "Es muss nichts Großes sein – ein warmes Brötchen am Morgen zählt genauso.",
+              "Augen zu, Daumen zeigen: Wie geht es euch jetzt, nach dem Schreiben – nur ich sehe hin."
             ],
             "punkte": [
               "Atme dreimal wie in einen Ballon: durch die Nase ein, bis der Bauch rund wird, langsam durch den Mund aus.",
               "Denk 20 Sekunden lang an eine kleine gute Sache aus dieser Woche – ein Essen, ein Lied, ein Mensch, ein Tor.",
-              "Spür nach: Wo im Körper merkst du sie? Bleib noch drei Atemzüge dabei."
+              "Spür nach: Wo im Körper merkst du sie? Bleib noch drei Atemzüge dabei.",
+              "Daumen und Skills-Pass (5 Min.): Augen zu oder auf den Tisch, auf drei zeigen alle Daumen hoch, Mitte oder runter – nur die Lehrkraft schaut hin und merkt sich, wer unten ist. Dann ein Satz zur Frage: Was nehme ich heute für mich mit? Stempel.",
+              "Mission, Moment und Ausblick (5 Min.): die Mission vorlesen; auf drei zeigen alle ihren Moment – ein Finger Test oder Note, zwei Vergleichen, drei abends im Bett, die Faust ein eigener Moment – und schreiben ihn in die Spalte „Mein Moment: Wenn …“. Zum Schluss sagen: Nächste Woche werden alle Detektive; nach der Stunde bin ich noch da, der SePAS auch."
             ],
-            "tipp": "Die Reihenfolge ist wichtig: erst der Atem, dann der Kopf. Mit ruhigerem Atem fällt es leichter, etwas Gutes zu finden. Drei Minuten reichen: Längere Stille bringt nach so einer Stunde nichts und ist für belastete Jugendliche eher ungünstig – lieber kurz, und dann laut zu zweit.",
-            "wennEsKippt": "Sagt jemand, es gebe nichts Gutes, das gelten lassen und an etwas ganz Kleines denken lassen: eine warme Dusche, ein Lieblingslied, eine Katze im Video. Wird gekichert, ruhig weitersprechen; niemand muss die Augen schließen, und wer die stille Runde nicht mag, hört nur zu und macht erst beim Blitz zu zweit mit."
-          },
-          {
-            "titel": "Daumen, Skills-Pass, Moment wählen und Mission",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Daumen-Blitzlicht (1 Min.): Alle schauen auf den Tisch oder schließen die Augen und zeigen auf drei, wie es ihnen jetzt geht – Daumen hoch, Mitte oder runter. Nur die Lehrkraft schaut hin und merkt sich still, wer den Daumen unten hat. Skills-Pass (2 Min.): ein Satz mit der Leitfrage – Was nehme ich heute für mich mit? –, dann der Stempel. Moment wählen (1 Min.): die Wochen-Mission im Heft vorlesen – wenn mein Moment kommt, dann sage ich mir, was eine gute Freundin sagen würde, oder mache den Dankbarkeitsblitz. Auf drei zeigen alle, wo ihr Moment am ehesten kommt: ein Finger für einen Test oder eine Note, zwei fürs Vergleichen – im Feed oder in der Familie –, drei für abends im Bett, die Faust für einen eigenen Moment; dann schreibt jede Person ihren Moment in die Spalte „Mein Moment: Wenn …“, ein Stichwort reicht. Ausblick (1 Min.): Nächste Woche werden alle Detektive; zum Schluss sagen, dass die Lehrkraft nach der Stunde noch ein paar Minuten da ist.",
-            "sagen": [
-              "Augen zu, Daumen zeigen: Wie geht es euch jetzt, nach dem Schreiben? Nur ich sehe hin.",
-              "Eure Mission: Wenn euer Moment kommt – ein Test, das Vergleichen, abends im Bett –, dann sagt ihr euch, was eine gute Freundin sagen würde, oder macht den Dankbarkeitsblitz. Wählt jetzt euren Moment.",
-              "Wer noch kurz reden möchte: Ich bin gleich danach noch ein paar Minuten hier. Und der SePAS ist für euch da."
-            ],
-            "tipp": "Wer den Daumen unten hat, bekommt beim Hinausgehen einen kurzen Blick und ein Wort: Wie geht es dir? Brauchst du noch etwas? Der Moment darf privat bleiben – welcher Satz sich dort meldet, muss niemand sagen; wer keinen wählen will, lässt die Spalte leer.",
-            "wennEsKippt": "Zeigen mehrere den Daumen nach unten, nicht einfach schließen: zwei Minuten für eine gemeinsame Runde Ballon-Atem nehmen und sagen, dass schwere Gefühle nach so einer Stunde normal sind und sich wieder legen. Mit einzelnen Jugendlichen noch vor dem Gehen sprechen."
+            "wennEsKippt": "Zeigen mehrere den Daumen nach unten, nicht einfach schließen: zwei Minuten für eine gemeinsame Runde Ballon-Atem nehmen, sagen, dass schwere Gefühle nach so einer Stunde normal sind und sich wieder legen, und vor dem Gehen mit einzelnen sprechen. Sagt jemand, es gebe nichts Gutes, das gelten lassen und an etwas ganz Kleines denken lassen: eine warme Dusche, ein Lieblingslied, eine Katze im Video."
           }
         ],
-        "bruecke": "Nächste Woche werdet ihr Detektive: Ihr nehmt einen Satz – euren eigenen oder einen von den Karten – und prüft mit Beweisen, ob er wirklich stimmt.",
-        "mission": "Wenn dein Moment kommt – ein Test kommt zurück, du vergleichst dich, abends im Bett –, dann sag dir, was eine gute Freundin sagen würde, oder mach den Dankbarkeitsblitz.",
-        "hintergrund": "Grundlage ist das Konzept der Grundüberzeugungen aus der kognitiven Verhaltenstherapie: stark verallgemeinerte, kaum noch überprüfte Annahmen über sich selbst (Beck, 2011). Wer einen solchen Satz aufschreibt, nach seiner Herkunft fragt und in Zahlen einschätzt, macht aus einer vermeintlichen Tatsache eine Annahme. Die Frage, was man einer Freundin sagen würde, nutzt das Selbst-Distanzieren: Aus dem Blickwinkel einer anderen Person denken Menschen klarer und weniger belastet über Schwieriges nach (Kross & Ayduk, 2017) – daher der Kasten „Aus der Forschung“. Weil Gedankenarbeit in Lehrkrafthand in Schulstudien wenig brachte (Stallard et al., 2014), ist die Stunde Wahleinheit und endet mit Gutem: Bei jungen Jugendlichen, die zwei Wochen lang aufschrieben, wofür sie dankbar waren, gingen negative Gefühle zurück und die Zufriedenheit mit der Schule stieg (Froh, Sefick & Emmons, 2008).",
+        "bruecke": "Nächste Woche werdet ihr Detektive: Ihr prüft mit Beweisen, ob ein Satz – euer eigener oder einer von den Karten – wirklich stimmt.",
+        "mission": "Sag dir, was eine gute Freundin sagen würde – oder mach den Dankbarkeitsblitz.",
+        "hintergrund": "Glaubenssätze sind Grundüberzeugungen der kognitiven Verhaltenstherapie: früh gelernte, stark verallgemeinerte Annahmen über sich selbst (Beck, 2011). Mit dem Blick einer Freundin denken Menschen klarer und weniger belastet über Schwieriges nach (Kross & Ayduk, 2017). Weil Gedankenarbeit in Lehrkrafthand wenig brachte (Stallard et al., 2014), ist die Stunde Wahleinheit und endet mit Gutem: Zwei Wochen aufschreiben, wofür man dankbar ist, senkte negative Gefühle (Froh, Sefick & Emmons, 2008).",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
           "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
           "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233."
         ],
-        "achtung": "Wahleinheit, die persönlichste Stunde des Kapitels: nur halten, wenn die Klasse 15 Minuten ruhig für sich schreiben kann; entfällt sie, übernimmt Einheit 29 den freundlichen Blick. Blätter werden weder eingesammelt noch gelesen, niemand liest vor; die Grenze der Vertraulichkeit vorher offen sagen, nie Geheimhaltung versprechen. Sehr negative Sätze über sich – nichts wert zu sein, dass es ohne einen besser wäre –, gehört oder zufällig gesehen: nicht vor der Klasse vertiefen, die Person nach der Stunde ansprechen, am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr nicht allein lassen, 112. Ebenso bei Hinweisen auf Abwertung oder Gewalt zu Hause.",
+        "achtung": "Wahleinheit, die persönlichste Stunde des Kapitels: nur halten, wenn die Klasse 15 Minuten ruhig für sich schreiben kann; entfällt sie, übernimmt Einheit 29 den freundlichen Blick. Blätter werden weder eingesammelt noch gelesen, niemand liest vor; die Grenze der Vertraulichkeit vorher offen sagen, nie Geheimhaltung versprechen. Sehr negative Sätze über sich – nichts wert zu sein, ohne einen wäre es besser – oder Hinweise auf Abwertung oder Gewalt zu Hause, gehört oder zufällig gesehen: nicht vor der Klasse vertiefen, die Person nach der Stunde ansprechen, am selben Tag den SePAS informieren, bei akuter Gefahr nicht allein lassen, 112.",
         "differenzierung": {
-          "leichter": "Wer mühsam schreibt oder die Unterrichtssprache noch lernt, schreibt in Stichworten oder in der eigenen Sprache und leiht sich einen Satz aus dem Kasten; ein Satz und ein Kreuz auf der Skala reichen. Bei den Figuren liest eine Person, die gut liest, die Karte vor; an den Plakaten darf man nur zuhören oder ein einzelnes Wort beitragen. Für die Spalte „Mein Moment“ reicht ein Wort oder ein Zeichen.",
-          "schwerer": "Zu einem eigenen Satz notieren, wer oder was ihn heute noch bestätigt und wer ihm widerspricht. An den Plakaten für jede Figur einen Freundes-Satz finden, der ehrlich ist und trotzdem Mut macht."
+          "leichter": "Wer mühsam schreibt oder die Unterrichtssprache noch lernt, schreibt in Stichworten oder in der eigenen Sprache; ein Satz und eine Zahl reichen. Bei den Figuren liest eine Person, die gut liest, die Karte vor; wer lieber zuhört, trägt ein einzelnes Wort bei.",
+          "schwerer": "Zu einem eigenen Satz notieren, wer oder was ihn heute noch bestätigt und wer ihm widerspricht; für jede Figur der Klasse einen Freundes-Satz finden, der ehrlich ist und trotzdem Mut macht."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Rahmen für heute (3 Min.), eine Figur gemeinsam an der Tafel besprechen und laut einen Freundes-Satz für sie finden (9 Min.), Aufgabe 1 allein und privat (10 Min.), Aufgaben 3 und 4 allein (10 Min.), Dankbarkeitsblitz (6 Min.), Daumen, Skills-Pass, Moment wählen und Wochen-Mission (7 Min.). Die Runde an den Plakaten entfällt; die Figurenkarten lassen sich nächste Woche als Detektivfälle nutzen."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Rahmen für heute (3 Min.), eine Figur gemeinsam an der Tafel mit Freundes-Satz (12 Min.), Aufgabe 1 und 2 allein und privat (15 Min.), Dankbarkeitsblitz und Daumen (8 Min.), Skills-Pass und Mission (7 Min.). Bewegungspause und Aufgabe 3 entfallen; die Figurenkarten lassen sich nächste Woche als Detektivfälle nutzen."
       },
       "fr": {
         "titel": "Mes croyances",
         "kurz": "Au calme et pour soi : avec des personnages, la classe voit comment naissent les phrases qui freinent et ce qu’une bonne amie en dirait ; puis chacun note les siennes, en privé.",
         "ziele": [
-          "décrivent, avec des personnages, d’où vient une phrase qui freine",
-          "notent en privé leurs phrases et estiment si elles sont encore vraies",
-          "s’entraînent, avec des personnages, au regard d’une bonne amie et l’appliquent à leur propre phrase",
-          "tournent leur regard vers le positif avec l’éclair de gratitude"
+          "décrivent, avec des personnages, d’où vient une phrase qui freine et lui disent une phrase d’ami",
+          "notent en privé une de leurs phrases et estiment si elle est encore vraie",
+          "empruntent le regard d’une bonne amie et s’exercent à l’éclair de gratitude"
         ],
         "material": [
-          "Roue des émotions, 20 gommettes",
-          "Un cahier de l’élève par jeune",
-          "Cartes personnages, cartes de la séance 27",
-          "Cinq feuilles A3, bâtons de colle",
+          "Roue des émotions, 20 gommettes ; musique douce sans paroles",
+          "Cartes personnages (modèle), cinq feuilles A3, bâtons de colle",
           "Post-it, un bloc par îlot",
           "Trombones, 20",
-          "Musique douce, sans paroles",
-          "Tampon pour le Skills-Pass"
+          "Cahier : fiche « Mes croyances » et Skills-Pass, tampon"
         ],
         "vorbereitung": [
-          "Voir avec le régent et le SePAS si un jeune traverse une crise ; lui parler avant.",
-          "Savoir qui est joignable aujourd’hui pour un entretien ; prévoir un coin calme, en vue.",
-          "Photocopier, découper les cartes ; au tableau : questions (étape 3) et liste des origines.",
-          "Prévoir une musique sans paroles, pas sur le portable d’un jeune."
+          "Voir avec le régent et le SePAS si un jeune traverse une crise ; lui parler avant. Savoir qui est joignable aujourd’hui pour un entretien.",
+          "Prévoir un coin calme, en vue ; préparer une musique sans paroles, pas sur le portable d’un jeune.",
+          "Photocopier et découper les cartes personnages ; écrire au tableau les trois questions et la liste des origines."
         ],
         "ablauf": [
           {
@@ -285,14 +232,9 @@
             "titel": "Retour et cadre : aujourd’hui, tout est privé"
           },
           {
-            "min": "15–30",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Comment naît une phrase : cinq personnages"
-          },
-          {
-            "min": "30–45",
-            "phase": "uebung",
-            "titel": "Mes phrases – seul et en privé"
+            "titel": "Comment naît une phrase – et ce que dit une amie"
           },
           {
             "min": "45–50",
@@ -300,24 +242,14 @@
             "titel": "Pause active : pierre-feuille-ciseaux avec fan-club"
           },
           {
-            "min": "50–70",
+            "min": "50–85",
             "phase": "uebung",
-            "titel": "Que dirait une bonne amie ?"
+            "titel": "Mes phrases – seul et en privé"
           },
           {
-            "min": "70–85",
-            "phase": "uebung",
-            "titel": "Le regard bienveillant sur ma phrase"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : l’éclair de gratitude"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Pouce, Skills-Pass, choisir son moment et mission"
           }
         ],
         "schritte": [
@@ -325,140 +257,112 @@
             "titel": "Tour d’humeur : arriver au calme",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions ; une musique douce sans paroles joue déjà. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100). L’enseignant·e commence avec son émotion et son chiffre, puis laisse volontairement des pauses : deux ou trois volontaires disent leur mot, sans commentaire (4 min). Annoncer ensuite que la séance sera plus calme, que chacun travaillera beaucoup pour soi, et qu’on aura aussi le droit de rire (1 min). Pour finir, la question du feu, aujourd’hui en version longue : un tour de respiration des doigts pour tous, guidé lentement – il aide aussi à passer du couloir à la salle (3 min).",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions, une musique douce sans paroles joue déjà ; puis tout le monde montre à trois sa tension avec les doigts (0–100), l’enseignant·e commence et laisse volontairement des pauses. Aujourd’hui, une séance plus calme : un tour de respiration des doigts pour tous, guidé lentement – il aide aussi à passer du couloir à la salle.",
             "sagen": [
-              "Comment ça va en ce moment – un mot et un chiffre ? Aujourd’hui, la séance sera plus calme.",
-              "Si vous ne voulez rien dire, montrez juste le chiffre. Ça suffit largement."
+              "Comment ça va en ce moment, un mot et un chiffre – aujourd’hui, la séance sera plus calme ?",
+              "Si vous ne voulez rien dire, montrez juste le chiffre – ça suffit largement."
             ],
-            "tipp": "Si un jeune est déjà au-dessus de 70 en arrivant, lui proposer discrètement un skill de sa valise à skills ou un verre d’eau : écrire sur ses propres phrases ne marche que si la tête est à peu près calme.",
-            "wennEsKippt": "Si la classe arrive très agitée de la récré, ne pas parler plus fort qu’elle : une minute fenêtre ouverte, tout le monde debout secoue les mains et les épaules, puis la respiration des doigts assis – seulement après, l’émotion et le chiffre."
+            "wennEsKippt": "Si la classe arrive agitée de la récré, ne pas parler plus fort qu’elle : une minute fenêtre ouverte, tout le monde debout secoue les mains et les épaules, puis la respiration des doigts assis. Si un jeune est déjà au-dessus de 70 en arrivant, lui proposer discrètement un skill ou un verre d’eau : écrire sur ses propres phrases ne marche que si la tête est à peu près calme."
           },
           {
             "titel": "Retour et cadre : aujourd’hui, tout est privé",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass. Puis la mission de la semaine – attraper la première pensée et en trouver une deuxième : votre moment est-il venu – un message sans réponse, un rire, un devoir en classe – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas ; une voix raconte quelle deuxième pensée convenait. Personne n’est obligé d’avoir réussi. Sortir d’une enveloppe deux ou trois cartes croyances de la dernière séance et les accrocher au tableau. Puis poser calmement et clairement le cadre du jour : chacun écrit pour soi, personne ne lit à voix haute, rien n’est ramassé, et la fiche pourra être fermée à la fin. Dire ouvertement où s’arrête la confidentialité – ne pas promettre le secret – et répondre honnêtement aux questions.",
+            "text": "Revenir sur la mission de la semaine : ton moment est-il venu – et qu’as-tu fait ? Pouce en haut : le moment est venu, j’ai trouvé une deuxième pensée ; au milieu : le moment est venu, j’ai fait autre chose ; en bas : le moment n’est pas venu. Une voix raconte en une phrase ; puis annoncer le thème et le cadre : aujourd’hui, chacun écrit seulement pour soi.",
             "sagen": [
-              "Votre moment est-il venu – et qu’avez-vous fait ? Le pouce, puis une voix.",
-              "Aujourd’hui, chacun écrit pour soi. Ce que vous écrivez vous appartient – je ne le lis pas, sauf si vous me le montrez.",
-              "Il y a une exception : si je m’inquiète sérieusement pour quelqu’un, je lui parle seul à seul après le cours et je demande de l’aide au SePAS. Jamais devant la classe."
-            ],
-            "tipp": "Dire à l’avance où s’arrête la confidentialité crée de la confiance : les jeunes savent à quoi s’en tenir et ne se sentent pas pris au piège plus tard."
-          },
-          {
-            "titel": "Comment naît une phrase : cinq personnages",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Chaque îlot reçoit une carte personnage et une feuille A3. Le groupe colle la carte au milieu, un jeune la lit à voix haute, un autre écrit en grand la phrase du personnage en haut de l’affiche et, autour, les réponses aux trois questions du tableau (6 min). Ensuite, chaque îlot présente son personnage en trois phrases (6 min) ; l’enseignant·e coche sur la liste des origines de la dernière séance celles qui sont apparues. Pour finir, retenir (3 min) : une phrase a pu avoir une bonne raison un jour et ne plus être vraie aujourd’hui. Et : savoir d’où vient une phrase ne dit pas qui est coupable – souvent, le frère ou le coéquipier n’a même pas remarqué l’effet de sa remarque. Les affiches restent sur les tables ; elles serviront après la pause.",
-            "sagen": [
-              "Qu’est-ce qu’Ana a vécu à l’époque – et qu’est-ce que cette phrase lui fait aujourd’hui ?",
-              "Est-ce que la phrase avait une bonne raison au départ ? Et est-elle encore aussi vraie aujourd’hui ?"
+              "Votre moment est-il venu, et qu’avez-vous fait – pouce en haut, au milieu ou en bas ?",
+              "Aujourd’hui, chacun écrit pour soi – ce que vous écrivez vous appartient, je ne le lis pas, sauf si vous me le montrez."
             ],
             "punkte": [
-              "D’où vient la phrase – et depuis quand existe-t-elle ?",
-              "Est-elle encore vraie aujourd’hui ? Donnez un chiffre de 0 à 10 et dites pourquoi.",
-              "Où freine-t-elle la personne aujourd’hui – à l’école, avec les amis, pendant les loisirs ?"
+              "Personne ne lit à voix haute, rien n’est ramassé ; la fiche peut être fermée à la fin.",
+              "On écrit dans n’importe quelle langue, aussi avec des signes que vous seuls comprenez.",
+              "Qui a besoin d’une pause va au coin calme – on peut revenir à tout moment.",
+              "Dire ouvertement où s’arrête la confidentialité : si je m’inquiète sérieusement pour quelqu’un, je lui parle seul à seul après le cours et je demande de l’aide au SePAS – jamais devant la classe. Je ne promets pas le secret.",
+              "Accrocher au tableau deux ou trois cartes croyances de la séance 27, en rappel."
             ],
-            "tipp": "Chaque histoire cache une contre-preuve : Ana marque presque toujours à l’entraînement, le dessin de Sofia est exposé au lycée. Qui la trouve a déjà fait le premier pas du travail de détective de la semaine prochaine – le souligner.",
-            "wennEsKippt": "Si un jeune se reconnaît dans un personnage et devient silencieux ou fait le pitre, ne pas le relever ; le groupe continue avec le personnage, et on lui parle brièvement après le cours. Si un personnage est comparé à quelqu’un de la classe (« c’est comme… »), arrêter tout de suite : on parle du personnage. Si on se moque d’un personnage, demander : qu’est-ce que Noah ressentirait s’il entendait ça ? Un îlot qui a fini vite reçoit la carte de réserve.",
-            "blatt": "ff7-glaubenssatz-figuren"
+            "tipp": "Dire à l’avance où s’arrête la confidentialité crée de la confiance : les jeunes savent à quoi s’en tenir et ne se sentent pas pris au piège plus tard. Pour la mission, demander surtout ce qui a été difficile."
           },
           {
-            "titel": "Mes phrases – seul et en privé",
-            "dauer": 15,
+            "titel": "Comment naît une phrase – et ce que dit une amie",
+            "dauer": 30,
             "phase": "uebung",
-            "text": "Poser les affiches au bord des tables. Chacun dresse un classeur ou un livre comme paravent ; qui a besoin de plus de calme s’installe à une place libre (1 min). Ouvrir la fiche « Mes croyances », lire à voix haute l’encadré du haut et montrer l’exercice 1 avec un exemple personnel et anodin, par exemple « Je ne sais pas chanter » : d’où vient la phrase, où elle freine, où se trouve la croix sur l’échelle (3 min). Puis chacun écrit seul l’exercice 1 avec des mots-clés, la musique douce reprend (10 min) ; qui a fini fait l’exercice 2 ou dessine un signe à côté de sa phrase. L’enseignant·e circule lentement, n’aide que si on le demande et ne lit pas par-dessus l’épaule. Pour finir, tout le monde pose son stylo et expire longuement une fois (1 min).",
+            "text": "Chaque îlot reçoit une carte personnage et une feuille A3. Les groupes voient d’où vient la phrase du personnage et où elle freine – et disent à voix haute au personnage ce qu’une bonne amie ou un bon ami lui dirait.",
             "sagen": [
-              "Une phrase suffit, et pas forcément la plus lourde. Si vous ne savez pas d’où elle vient, mettez un point d’interrogation – c’est aussi une réponse.",
-              "Vous pouvez écrire dans la langue que vous voulez, aussi avec des abréviations ou des signes que vous seuls comprenez.",
-              "Est-ce que la phrase est encore vraie aujourd’hui ? Cochez sur l’échelle à quel point vous y croyez, sans trop réfléchir."
+              "Qu’est-ce qu’Ana a vécu à l’époque – et qu’est-ce que cette phrase lui fait aujourd’hui ?",
+              "Imaginez qu’Ana est votre amie et qu’elle vous dit cette phrase : que lui diriez-vous vraiment, comme à une amie et pas comme un prof ?"
             ],
-            "tipp": "Au début, ses propres phrases sont difficiles à saisir ; l’encadré « Des phrases que beaucoup connaissent » aide à démarrer, et emprunter une phrase, c’est travailler aussi bien. Si les cahiers restent à l’école, promettre que les pages fermées par un trombone ne seront pas ouvertes ; en fin d’année, les cahiers partent à la maison – c’est aussi pour cela que les signes sont permis.",
-            "wennEsKippt": "Si un jeune n’écrit rien ou fait des blagues, ne pas insister : lui proposer de prendre une phrase de l’encadré ou de remplir la fiche pour un des personnages – ça compte aussi. Si quelqu’un regarde la fiche de son voisin, le faire changer de place calmement. Qui ne tient pas en place peut écrire debout, au rebord de la fenêtre. Si un jeune devient triste ou en colère, lui proposer discrètement le coin calme ; il peut revenir à tout moment, et on lui parle brièvement après le cours.",
-            "blatt": "ff7-meine-glaubenssaetze"
+            "punkte": [
+              "Lire et coller (3 min) : le groupe colle la carte au milieu de la feuille A3, un jeune la lit à voix haute, un autre écrit en grand la phrase du personnage en haut.",
+              "Trois questions (7 min) : d’où vient la phrase – et depuis quand ? Est-elle encore vraie aujourd’hui ? Donnez un chiffre de 0 à 10 et dites pourquoi. Où freine-t-elle la personne aujourd’hui ? Noter les réponses autour de la phrase.",
+              "Phrase d’ami (8 min) : le groupe dit à voix basse au personnage ce qu’une bonne amie ou un bon ami lui dirait ; la meilleure réponse va sur un post-it. Un compliment exagéré, le personnage n’y croit pas – que pourrait-il croire vraiment ?",
+              "Présenter (8 min) : chaque îlot présente son personnage en trois phrases et lit sa phrase d’ami ; l’enseignant·e coche les origines au tableau.",
+              "Retenir (4 min) : une phrase a pu avoir une bonne raison un jour et ne plus être vraie aujourd’hui. Une bonne phrase d’ami est sincère et bienveillante, sans enjoliver – elle prend la difficulté au sérieux et montre une issue."
+            ],
+            "wennEsKippt": "Si un jeune se reconnaît dans un personnage et devient silencieux ou fait le pitre, ne pas y réagir : le groupe continue avec le personnage, on lui parle brièvement après le cours. Si un personnage est comparé à quelqu’un de la classe ou si on se moque de lui, arrêter tout de suite : on parle du personnage – qu’est-ce que Noah ressentirait en entendant ça ?",
+            "blatt": "ff7-glaubenssatz-figuren"
           },
           {
             "titel": "Pause active : pierre-feuille-ciseaux avec fan-club",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se lève. On joue à deux à pierre-feuille-ciseaux ; qui perd devient fan de l’autre, se place derrière lui et l’encourage au match suivant en scandant son prénom. Les fan-clubs grossissent jusqu’à la finale, où toute la classe encourage les deux derniers (4 min). Après l’écriture en silence, le bruit est expressément permis. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Tout le monde se lève. On joue à deux à pierre-feuille-ciseaux ; qui perd devient fan de l’autre, se place derrière lui et l’encourage au match suivant en scandant son prénom. Les fan-clubs grossissent jusqu’à la finale, où toute la classe encourage les deux derniers.",
             "sagen": [
               "Après tout ce silence, vous avez le droit de faire du bruit – pour encourager, jamais pour se moquer."
             ],
-            "tipp": "Après le travail individuel, le jeu ramène tout le monde dans le groupe : à la fin, vingt personnes encouragent deux joueurs. Un bon contrepoids à l’écriture silencieuse.",
-            "wennEsKippt": "Si quelqu’un se moque des perdants, arrêter un instant : les fans encouragent leur joueur, personne ne hue. Qui ne veut pas jouer est fan dès le début ou compte les manches."
+            "tipp": "Après l’écriture silencieuse, le jeu ramène tout le monde dans le groupe : à la fin, vingt personnes encouragent deux joueurs. Si la grande récréation tombe entre les deux heures, supprimer l’exercice."
           },
           {
-            "titel": "Que dirait une bonne amie ?",
-            "dauer": 20,
+            "titel": "Mes phrases – seul et en privé",
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Les cinq affiches sont posées sur les îlots, avec un bloc de post-it sur chaque table ; des flèches au tableau indiquent l’ordre. Pour revenir au calme, expirer une fois tous ensemble et annoncer la règle : près des affiches, on chuchote. À l’affiche suivante, un jeune lit la phrase du personnage comme s’il était ce personnage ; un autre lui répond à voix basse, comme une bonne amie ou un bon ami. Le groupe se met d’accord sur la meilleure phrase d’ami, quelqu’un l’écrit sur un post-it – à chaque affiche, une autre personne. Toutes les trois minutes, donner le signal pour avancer, jusqu’à ce que chaque groupe ait vu quatre autres affiches (12 min). De retour à sa propre affiche, le groupe choisit le post-it le plus utile ; un jeune le dit à la classe comme s’il parlait au personnage (4 min). Pour finir (4 min) : qu’est-ce qui fait une bonne phrase d’ami ? Noter au tableau : sincère, bienveillante, sans enjoliver – elle prend la difficulté au sérieux et montre une issue.",
+            "text": "Chacun va à une place protégée, une musique douce joue. Chaque jeune écrit seul sur sa fiche : une phrase à lui, le regard bienveillant dessus et un contrepoids (exercices 1 à 3). L’enseignant·e circule lentement, n’aide que si on le demande et ne lit pas par-dessus l’épaule.",
             "sagen": [
-              "Imaginez qu’Ana est votre amie et qu’elle vous dit cette phrase. Qu’est-ce que vous lui diriez vraiment ?",
-              "Si vous lui dites “tu es la meilleure”, elle ne vous croira peut-être pas. Qu’est-ce qu’elle pourrait croire ?",
-              "Dites la phrase comme vous la diriez à une amie – pas comme un prof."
+              "Une phrase suffit, et pas forcément la plus lourde – si vous ne savez pas d’où elle vient, mettez un point d’interrogation, c’est aussi une réponse.",
+              "Empruntez maintenant la voix que vous aviez à l’instant pour Ana et les autres – et parlez de vous avec elle."
             ],
-            "tipp": "La plupart des gens parlent à leurs amis avec bien plus de bienveillance et de sagesse qu’à eux-mêmes. C’est justement cette voix que les jeunes vont emprunter tout à l’heure pour leur propre phrase – c’est pourquoi on la dit ici à voix haute, au lieu de seulement l’écrire. Si un personnage ne reçoit que de beaux compliments, demander : est-ce qu’il vous croirait ?",
-            "wennEsKippt": "Si des post-it contiennent des blagues ou des méchancetés sur un personnage, les retirer sans commentaire et en parler plus tard en tête-à-tête. Si ça devient trop bruyant, arrêter un instant la rotation et rappeler la règle : on chuchote. Qui ne veut pas parler écoute ou écrit le post-it ; c’est permis. Si tout le monde se bouscule autour d’une affiche, chaque groupe reste à sa table, et ce sont les affiches qui tournent.",
-            "blatt": "ff7-glaubenssatz-figuren"
-          },
-          {
-            "titel": "Le regard bienveillant sur ma phrase",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Chacun retourne à sa place protégée, la musique douce reprend (2 min). Exercice 3 (6 min) : chacun relit sa phrase de tout à l’heure, se dit intérieurement ce qu’une bonne amie ou un bon ami en dirait, puis l’écrit – sincère et bienveillant, comme tout à l’heure près des affiches. Qui n’a rien écrit de personnel tout à l’heure prend une phrase de l’encadré. Exercice 4 (5 min) : le contrepoids – trois choses positives qu’on sait sur soi, à coup sûr ; tout le monde fait cet exercice, des mots-clés suffisent. Pour finir (2 min), chacun ferme la page avec un trombone ou la plie ; l’enseignant·e distribue les trombones. En circulant, regarder les visages, pas les fiches.",
-            "sagen": [
-              "Empruntez maintenant la voix que vous aviez à l’instant pour Ana, Diogo et les autres – et parlez de vous avec elle.",
-              "Si rien de positif ne vous vient, demandez-vous : qu’est-ce que dirait quelqu’un qui m’aime bien ?"
+            "punkte": [
+              "Arriver (3 min) : chacun dresse un classeur ou un livre comme paravent ; qui a besoin de plus de calme s’installe à une place libre. Ouvrir la fiche, lire l’encadré du haut.",
+              "Exercice 1 (12 min) : écrire une phrase qui freine parfois, d’où elle vient, à quel point on y croit (0–10). D’abord un exemple anodin de l’enseignant·e, par exemple « Je ne sais pas chanter » ; qui ne trouve pas la sienne en emprunte une aux cartes.",
+              "Exercice 2 (8 min) : relire sa phrase et écrire ce qu’une bonne amie ou un bon ami en dirait – sincère et bienveillant, comme tout à l’heure avec les personnages.",
+              "Exercice 3 (8 min) : le contrepoids – trois choses positives qu’on sait sur soi, à coup sûr ; tout le monde fait cet exercice.",
+              "Clôture (4 min) : tout le monde pose son stylo, expire longuement une fois et ferme la page avec un trombone ou la plie ; l’enseignant·e distribue les trombones."
             ],
-            "tipp": "L’ordre est voulu : d’abord le regard bienveillant, puis le contrepoids – personne ne doit quitter la séance avec la phrase la plus lourde en tête. Le trombone est plus qu’un détail technique : il montre que la fiche reste vraiment privée.",
-            "wennEsKippt": "Si un jeune ne trouve rien de positif, ne pas le contredire ni chercher à le convaincre ; lui citer discrètement une force que l’on a soi-même observée et lui demander s’il veut l’écrire. Si un jeune semble très abattu après l’écriture, ou si une phrase très négative saute aux yeux en circulant, lui parler seul à seul après le cours et informer le SePAS le jour même.",
+            "wennEsKippt": "Si un jeune n’écrit rien ou fait des blagues, ne pas insister : lui proposer de prendre une phrase des cartes ou de remplir la fiche pour un personnage. Si un jeune semble très abattu ou si une phrase très négative saute aux yeux en circulant, lui parler seul à seul après le cours et informer le SePAS le jour même.",
             "blatt": "ff7-meine-glaubenssaetze"
           },
           {
             "titel": "Skill : l’éclair de gratitude",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Annoncer : après une séance pareille, la tête a le droit de voir à nouveau quelque chose d’agréable. Tout le monde est assis confortablement, une main sur le ventre ; les yeux fermés ou ouverts, les deux conviennent, et qui veut arrêter sent simplement ses pieds au sol ou regarde par la fenêtre. Guider lentement les trois étapes (liste) en faisant l’exercice soi-même ; laisser du temps entre les étapes, trois minutes au maximum (3 min). Puis l’éclair à deux (2 min) : chacun dit à son voisin, en une phrase, une petite chose agréable de la semaine – à voix haute, pas en silence ; un mot suffit, aussi dans sa propre langue, et « je passe » est permis. Deux ou trois voix disent leur chose en un mot pour toute la classe (2 min). Expliquer (3 min) : la tête remarque spontanément plutôt ce qui ne va pas. Qui la dirige plus souvent vers le positif remarque plus facilement ce qui est agréable – cela a été essayé avec des jeunes, et beaucoup allaient ensuite un peu mieux. L’exercice est une proposition, jamais un moyen de calmer la classe.",
+            "text": "Après une séance pareille, la tête a le droit de voir à nouveau quelque chose d’agréable (5 min) : tout le monde est assis confortablement, une main sur le ventre, les yeux fermés ou ouverts ; qui veut arrêter sent ses pieds au sol. L’enseignant·e guide les trois étapes, trois minutes au maximum, puis chacun dit à deux une petite chose agréable. Ensuite, la clôture (10 min) : pouce, Skills-Pass, mission, moment.",
             "sagen": [
-              "Pas besoin que ce soit grand. Un petit pain chaud le matin, ça compte aussi."
+              "Pas besoin que ce soit grand – un petit pain chaud le matin, ça compte aussi.",
+              "Les yeux fermés, montrez le pouce : comment ça va maintenant, après l’écriture – il n’y a que moi qui regarde."
             ],
             "punkte": [
               "Respire trois fois comme dans un ballon : par le nez jusqu’à ce que le ventre s’arrondisse, puis lentement par la bouche.",
               "Pense pendant 20 secondes à une petite chose agréable de cette semaine – un repas, une chanson, une personne, un but.",
-              "Ressens : où, dans ton corps, est-ce que tu la remarques ? Restes-y encore trois respirations."
+              "Ressens : où, dans ton corps, est-ce que tu la remarques ? Restes-y encore trois respirations.",
+              "Pouce et Skills-Pass (5 min) : les yeux fermés ou sur la table, à trois, tout le monde montre le pouce en haut, au milieu ou en bas – seul·e l’enseignant·e regarde et note mentalement qui l’a en bas. Puis une phrase en réponse à la question : qu’est-ce que j’emporte pour moi aujourd’hui ? ; le tampon.",
+              "Mission, moment et suite (5 min) : lire la mission ; à trois, chacun montre son moment – un doigt pour un devoir ou une note, deux pour les comparaisons, trois pour le soir au lit, le poing pour un moment à soi – et l’écrit dans la colonne « Mon moment : quand … ». Pour finir, dire : la semaine prochaine, tout le monde devient détective ; je reste encore un peu après le cours, le SePAS aussi."
             ],
-            "tipp": "L’ordre compte : d’abord la respiration, ensuite la tête. Avec un souffle plus calme, il est plus facile de trouver quelque chose de positif. Trois minutes suffisent : un silence plus long n’apporte rien après une séance pareille et convient mal aux jeunes qui vont mal – mieux vaut court, puis à voix haute à deux.",
-            "wennEsKippt": "Si un jeune dit qu’il n’y a rien de positif, l’accepter et l’inviter à penser à quelque chose de tout petit : une douche chaude, une chanson préférée, un chat dans une vidéo. Si ça ricane, continuer calmement ; personne n’est obligé de fermer les yeux, et qui n’aime pas le tour silencieux écoute seulement et ne participe qu’à l’éclair à deux."
-          },
-          {
-            "titel": "Pouce, Skills-Pass, choisir son moment et mission",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Tour éclair avec le pouce (1 min) : tout le monde regarde la table ou ferme les yeux et montre à trois comment ça va maintenant – pouce en haut, au milieu ou en bas. Seul·e l’enseignant·e regarde et note mentalement, sans rien dire, qui a le pouce en bas. Skills-Pass (2 min) : une phrase avec la question – qu’est-ce que j’emporte pour moi aujourd’hui ? –, puis le tampon. Choisir son moment (1 min) : lire la mission de la semaine dans le cahier – quand mon moment arrive, je me dis ce qu’une bonne amie dirait, ou je fais l’éclair de gratitude. À trois, tout le monde montre où son moment a le plus de chances d’arriver : un doigt pour un devoir en classe ou une note, deux pour les comparaisons – dans le fil d’actualité ou en famille –, trois pour le soir au lit, le poing pour un moment à soi ; puis chacun écrit son moment dans la colonne « Mon moment : quand … », un mot-clé suffit. Suite (1 min) : la semaine prochaine, tout le monde devient détective ; pour finir, dire que l’enseignant·e reste encore quelques minutes après le cours.",
-            "sagen": [
-              "Les yeux fermés, montrez le pouce : comment ça va maintenant, après l’écriture ? Il n’y a que moi qui regarde.",
-              "Votre mission : quand votre moment arrive – un devoir en classe, les comparaisons, le soir au lit –, vous vous dites ce qu’une bonne amie dirait, ou vous faites l’éclair de gratitude. Choisissez votre moment maintenant.",
-              "Si quelqu’un veut parler un instant : je reste encore quelques minutes après le cours. Et le SePAS est là pour vous."
-            ],
-            "tipp": "Un jeune qui a le pouce en bas reçoit en sortant un regard et un mot : comment ça va ? Tu as besoin de quelque chose ? Le moment peut rester privé – personne n’a à dire quelle phrase s’y manifeste ; qui ne veut pas choisir laisse la colonne vide.",
-            "wennEsKippt": "Si plusieurs jeunes ont le pouce en bas, ne pas simplement terminer : prendre deux minutes pour un tour de respiration du ballon ensemble et dire que les émotions lourdes sont normales après une séance pareille et qu’elles passent. Parler encore à certains jeunes avant qu’ils partent."
+            "wennEsKippt": "Si plusieurs jeunes ont le pouce en bas, ne pas simplement terminer : prendre deux minutes pour un tour de respiration du ballon ensemble, dire que les émotions lourdes sont normales après une séance pareille et qu’elles passent, et parler à certains avant qu’ils partent. Si quelqu’un dit qu’il n’y a rien de positif, l’accepter et l’inviter à penser à quelque chose de tout petit : une douche chaude, une chanson préférée, un chat dans une vidéo."
           }
         ],
-        "bruecke": "La semaine prochaine, vous devenez détectives : vous prenez une phrase – la vôtre ou une carte – et vous vérifiez avec des preuves si elle est vraiment vraie.",
-        "mission": "Quand ton moment arrive – un devoir rendu, une comparaison, le soir au lit –, dis-toi ce qu’une bonne amie dirait, ou fais l’éclair de gratitude.",
-        "hintergrund": "La base est le concept des convictions profondes de la thérapie cognitive : des suppositions très générales sur soi, presque jamais vérifiées (Beck, 2011). Écrire une telle phrase, chercher son origine et l’évaluer avec un chiffre transforme un prétendu fait en supposition. La question de ce qu’on dirait à une amie utilise la mise à distance de soi : vue avec les yeux de quelqu’un d’autre, une difficulté se pense plus clairement, avec moins de détresse (Kross & Ayduk, 2017) – d’où l’encadré « Ce que dit la recherche ». Comme le travail sur les pensées mené par des enseignants a peu agi dans les études scolaires (Stallard et al., 2014), la séance est au choix et finit sur du positif : chez de jeunes adolescents qui ont noté deux semaines durant ce qui les rendait reconnaissants, les émotions négatives ont baissé et la satisfaction envers l’école a augmenté (Froh, Sefick & Emmons, 2008).",
+        "bruecke": "La semaine prochaine, vous devenez détectives : vous vérifiez avec des preuves si une phrase – la vôtre ou une carte – est vraiment vraie.",
+        "mission": "Dis-toi ce qu’une bonne amie dirait – ou fais l’éclair de gratitude.",
+        "hintergrund": "Les croyances sont les convictions profondes de la thérapie cognitive : des suppositions générales sur soi, apprises tôt (Beck, 2011). Avec le regard d’une amie, on pense une difficulté plus clairement et avec moins de détresse (Kross & Ayduk, 2017). Le travail sur les pensées mené par des enseignants ayant peu agi (Stallard et al., 2014), la séance est au choix et finit en positif : noter deux semaines ce dont on est reconnaissant a réduit les émotions négatives (Froh, Sefick & Emmons, 2008).",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
           "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
           "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233."
         ],
-        "achtung": "Séance au choix, la plus intime du chapitre : à tenir seulement si la classe peut écrire au calme pour soi 15 minutes ; si elle est supprimée, la séance 29 reprend le regard bienveillant. Les fiches ne sont ni ramassées ni lues, personne ne lit à voix haute ; dire avant où s’arrête la confidentialité, sans promettre le secret. Phrases très négatives sur soi – ne rien valoir, que ce serait mieux sans soi –, dites ou vues par hasard : ne pas approfondir devant la classe, parler au jeune après le cours, informer le SePAS le jour même, agir selon le protocole de protection ; en cas de danger immédiat, ne pas le laisser seul, 112. Même démarche en cas de dévalorisation ou de violence à la maison.",
+        "achtung": "Séance au choix, la plus intime du chapitre : à tenir seulement si la classe peut écrire au calme pour soi 15 minutes ; si elle est supprimée, la séance 29 reprend le regard bienveillant. Les fiches ne sont ni ramassées ni lues, personne ne lit à voix haute ; dire avant où s’arrête la confidentialité, sans promettre le secret. Phrases très négatives sur soi – ne rien valoir, que ce serait mieux sans soi – ou signes de dévalorisation ou de violence à la maison, dits ou vus par hasard : ne pas approfondir devant la classe, parler au jeune après le cours, informer le SePAS le jour même, ne pas le laisser seul en cas de danger immédiat, 112.",
         "differenzierung": {
-          "leichter": "Qui écrit difficilement ou apprend encore la langue d’enseignement écrit avec des mots-clés ou dans sa propre langue et emprunte une phrase dans l’encadré ; une phrase et une croix sur l’échelle suffisent. Pour les personnages, un jeune qui lit bien lit la carte à voix haute ; près des affiches, on peut seulement écouter ou proposer un seul mot. Pour la colonne « Mon moment », un mot ou un signe suffit.",
-          "schwerer": "Pour une de ses phrases, noter qui ou quoi la confirme encore aujourd’hui, et qui la contredit. Près des affiches, trouver pour chaque personnage une phrase d’ami sincère qui donne quand même du courage."
+          "leichter": "Qui écrit difficilement ou apprend encore la langue du cours écrit avec des mots-clés ou dans sa propre langue ; une phrase et un chiffre suffisent. Pour les personnages, un jeune qui lit bien lit la carte ; qui préfère écouter apporte un seul mot.",
+          "schwerer": "Pour une de ses phrases, noter qui ou quoi la confirme encore aujourd’hui et qui la contredit ; trouver pour chaque personnage de la classe une phrase d’ami sincère qui donne quand même du courage."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), cadre du jour (3 min), un personnage discuté ensemble au tableau, avec une phrase d’ami trouvée à voix haute (9 min), exercice 1 seul et en privé (10 min), exercices 3 et 4 seul (10 min), éclair de gratitude (6 min), pouce, Skills-Pass, choix du moment et mission de la semaine (7 min). Le tour des affiches est supprimé ; les cartes personnages peuvent servir de cas de détective la semaine suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), cadre du jour (3 min), un personnage discuté ensemble au tableau avec une phrase d’ami (12 min), exercices 1 et 2 seul et en privé (15 min), éclair de gratitude et pouce (8 min), Skills-Pass et mission (7 min). La pause active et l’exercice 3 sautent ; les cartes personnages peuvent servir de cas de détective la semaine suivante."
       }
     }
   ],
@@ -490,89 +394,34 @@
       ],
       "de": {
         "titel": "Meine Glaubenssätze",
-        "untertitel": "Nur für dich – niemand muss lesen, was du hier schreibst.",
+        "untertitel": "Nur für dich – niemand liest mit.",
         "bausteine": [
           {
             "art": "info",
             "symbol": "hilfe",
             "titel": "Du entscheidest, was du teilst.",
-            "text": "Dieses Blatt gehört nur dir: Niemand liest es, niemand sammelt es ein, nichts wird vorgelesen. Schreib in jeder Sprache – oder mit Zeichen, die nur du verstehst. Am Ende kannst du die Seite mit einer Büroklammer verschließen oder falten."
-          },
-          {
-            "art": "text",
-            "text": "Glaubenssätze sind Sätze, die du über dich denkst – oft schon so lange, dass sie sich wie Tatsachen anfühlen. Viele sind aus einer einzigen Erfahrung entstanden, aus Sprüchen anderer oder aus Vergleichen. Manche haben dich früher geschützt. Ob sie heute noch stimmen, ist eine andere Frage."
+            "text": "Niemand liest dieses Blatt, niemand sammelt es ein. Am Ende kannst du die Seite falten oder mit einer Büroklammer verschließen."
           },
           {
             "art": "aufgabe",
-            "text": "Welcher Satz bremst dich manchmal? Schreib ihn auf und beantworte die Fragen in Stichworten.",
-            "hinweis": "Du kannst dir auch einen Satz aus dem Kasten leihen.",
+            "text": "Schreib einen Satz auf, der dich manchmal bremst.",
+            "hinweis": "Du kannst dir einen Satz von den Karten leihen.",
             "symbole": [
               "schreiben"
             ]
           },
           {
-            "art": "wortspeicher",
-            "titel": "Sätze, die viele kennen",
-            "items": [
-              "Ich bin nicht gut genug.",
-              "Das schaffe ich eh nicht.",
-              "Die anderen sind besser als ich.",
-              "Ich muss perfekt sein.",
-              "Keiner versteht mich.",
-              "Ich bin zu langsam.",
-              "Wenn ich Nein sage, mag mich keiner mehr.",
-              "Mir hilft sowieso keiner."
-            ]
-          },
-          {
-            "art": "feld",
-            "label": "Mein Satz",
-            "hoehe": 1.5,
-            "beispiel": "Ich bin schlecht in Sprachen."
-          },
-          {
             "art": "satzanfaenge",
             "items": [
-              "Woher kommt er? Seit wann?",
-              "Wo bremst er mich?"
-            ],
-            "linien": 2
-          },
-          {
-            "art": "skala",
-            "von": "0 – gar nicht",
-            "bis": "10 – völlig",
-            "stufen": 11,
-            "frage": "Stimmt er heute noch? So sehr glaube ich ihn:"
-          },
-          {
-            "art": "seitenumbruch"
-          },
-          {
-            "art": "aufgabe",
-            "text": "Wenn du magst: ein zweiter Satz.",
-            "symbole": [
-              "schreiben"
-            ]
-          },
-          {
-            "art": "feld",
-            "label": "Mein zweiter Satz",
-            "hoehe": 1.5
-          },
-          {
-            "art": "satzanfaenge",
-            "items": [
-              "Woher kommt er? Seit wann?",
-              "Stimmt er heute noch? (0–10)",
-              "Wo bremst er mich?"
+              "Mein Satz: …",
+              "Er kommt von: …",
+              "So sehr glaube ich ihn, von 0 bis 10: …"
             ],
             "linien": 1
           },
           {
             "art": "aufgabe",
-            "text": "Stell dir vor, eine gute Freundin oder ein guter Freund denkt diesen Satz über sich. Was würdest du ihr oder ihm sagen?",
-            "hinweis": "Schreib es so, wie du es wirklich sagen würdest – ehrlich und freundlich.",
+            "text": "Schreib, was du einer Freundin mit diesem Satz sagen würdest.",
             "symbole": [
               "schreiben"
             ]
@@ -583,7 +432,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Und jetzt das Gegengewicht: Was weißt du sicher Gutes über dich?",
+            "text": "Schreib dein Gegengewicht auf: Was weißt du sicher Gutes über dich?",
             "symbole": [
               "schreiben"
             ]
@@ -591,30 +440,30 @@
           {
             "art": "satzanfaenge",
             "items": [
-              "Etwas, das ich gut kann:",
-              "Etwas, das ich schon geschafft habe:",
-              "Jemand, der mich mag, würde über mich sagen:"
+              "Das kann ich gut: …",
+              "Das habe ich geschafft: …",
+              "Wer mich mag, sagt: …"
             ],
             "linien": 2
           },
           {
             "art": "info",
-            "symbol": "merke",
-            "titel": "Und dann?",
-            "text": "Verschließ die Seite mit einer Büroklammer oder falte sie. Nächste Woche nimmst du einen Satz – deinen oder einen von den Karten – und prüfst ihn wie ein Detektiv: Stimmt er wirklich?"
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Viele Sätze über uns kommen von einem Erlebnis oder einem Spruch. Mit einer Freundin sprichst du oft freundlicher als mit dir selbst. Diese Stimme darfst du dir ausleihen."
           },
           {
             "art": "notfall",
-            "text": "Wenn dich ein Satz runterzieht: Sprich mit dem SePAS oder ruf an."
+            "text": "Zieht dich ein Satz runter? Sprich mit dem SePAS · 116 111",
+            "eintraege": []
           }
         ],
         "lehrer": {
-          "ziel": "Die Jugendlichen notieren privat eigene bremsende Sätze, fragen nach Herkunft und Gültigkeit, leihen sich den freundlichen Blick einer Freundin und schließen mit einem Gegengewicht ab.",
+          "ziel": "Die Jugendlichen notieren privat einen eigenen bremsenden Satz, fragen nach Herkunft und Gültigkeit, leihen sich den freundlichen Blick einer Freundin und schließen mit einem Gegengewicht ab.",
           "ablauf": [
             "Vor dem Schreiben den Rahmen nennen: privat, nichts wird vorgelesen oder eingesammelt; die Grenze der Vertraulichkeit offen sagen.",
-            "Einheit 28, Schritt 4 (10 Min.): Aufgabe 1 mit Kreuz auf der Skala, wer mag Aufgabe 2. Nur auf Nachfrage helfen, nicht mitlesen.",
-            "Schritt 7 (13 Min.): Aufgaben 3 und 4, dann die Seite mit einer Büroklammer verschließen oder falten.",
-            "Der Kasten „Aus der Forschung“ fasst Kross & Ayduk (2017) zusammen; der Beleg steht im Hintergrund der Einheit.",
+            "Einheit 28, Schritt 5 (35 Min.): Aufgabe 1 mit Zahl von 0 bis 10 (12 Min.), Aufgabe 2 freundlicher Blick (8 Min.), Aufgabe 3 Gegengewicht (8 Min.); nur auf Nachfrage helfen, nicht mitlesen.",
+            "Zum Schluss die Seite mit einer Büroklammer verschließen oder falten.",
             "Einheit 29: Wer mag, prüft einen dieser Sätze als Detektiv; die anderen nehmen eine Karte."
           ],
           "hintergrund": "Glaubenssätze entsprechen den Grundüberzeugungen der kognitiven Verhaltenstherapie: früh gelernten, stark verallgemeinerten Annahmen über sich selbst (Beck, 2011). Herkunft und Zahl schaffen Abstand; die Frage nach dem Blick einer Freundin nutzt das Selbst-Distanzieren (Kross & Ayduk, 2017). Private Schreibaufgaben helfen, Belastendes zu ordnen, ohne es preiszugeben (Pennebaker, 1997).",
@@ -629,89 +478,34 @@
       },
       "fr": {
         "titel": "Mes croyances",
-        "untertitel": "Rien que pour toi – personne n’a besoin de lire ce que tu écris ici.",
+        "untertitel": "Rien que pour toi – personne ne lit.",
         "bausteine": [
           {
             "art": "info",
             "symbol": "hilfe",
             "titel": "Tu décides de ce que tu partages.",
-            "text": "Cette fiche n’appartient qu’à toi : personne ne la lit, personne ne la ramasse, rien n’est lu à voix haute. Écris dans la langue de ton choix – ou avec des signes que toi seul·e comprends. À la fin, tu peux fermer la page avec un trombone ou la plier."
-          },
-          {
-            "art": "text",
-            "text": "Les croyances sont des phrases que tu penses sur toi – souvent depuis si longtemps qu’elles ressemblent à des faits. Beaucoup viennent d’une seule expérience, de remarques entendues ou de comparaisons. Certaines t’ont protégé autrefois. Savoir si elles sont encore vraies aujourd’hui, c’est une autre question."
+            "text": "Personne ne lit cette fiche, personne ne la ramasse. À la fin, tu peux plier la page ou mettre un trombone."
           },
           {
             "art": "aufgabe",
-            "text": "Quelle phrase te freine parfois ? Écris-la et réponds aux questions avec des mots-clés.",
-            "hinweis": "Tu peux aussi emprunter une phrase dans l’encadré.",
+            "text": "Écris une phrase qui te freine parfois.",
+            "hinweis": "Tu peux emprunter une phrase aux cartes.",
             "symbole": [
               "schreiben"
             ]
           },
           {
-            "art": "wortspeicher",
-            "titel": "Des phrases que beaucoup connaissent",
-            "items": [
-              "Je ne suis pas assez bien.",
-              "De toute façon, je n’y arriverai pas.",
-              "Les autres sont meilleurs que moi.",
-              "Je dois être parfait·e.",
-              "Personne ne me comprend.",
-              "Je suis trop lent·e.",
-              "Si je dis non, plus personne ne m’aimera.",
-              "De toute façon, personne ne m’aide."
-            ]
-          },
-          {
-            "art": "feld",
-            "label": "Ma phrase",
-            "hoehe": 1.5,
-            "beispiel": "Je suis nul en langues."
-          },
-          {
             "art": "satzanfaenge",
             "items": [
-              "D’où vient-elle ? Depuis quand ?",
-              "Où est-ce qu’elle me freine ?"
-            ],
-            "linien": 2
-          },
-          {
-            "art": "skala",
-            "von": "0 – pas du tout",
-            "bis": "10 – complètement",
-            "stufen": 11,
-            "frage": "Est-elle encore vraie ? J’y crois à ce point :"
-          },
-          {
-            "art": "seitenumbruch"
-          },
-          {
-            "art": "aufgabe",
-            "text": "Si tu veux : une deuxième phrase.",
-            "symbole": [
-              "schreiben"
-            ]
-          },
-          {
-            "art": "feld",
-            "label": "Ma deuxième phrase",
-            "hoehe": 1.5
-          },
-          {
-            "art": "satzanfaenge",
-            "items": [
-              "D’où vient-elle ? Depuis quand ?",
-              "Est-elle encore vraie aujourd’hui ? (0–10)",
-              "Où est-ce qu’elle me freine ?"
+              "Ma phrase : …",
+              "Elle vient de : …",
+              "J’y crois, de 0 à 10 : …"
             ],
             "linien": 1
           },
           {
             "art": "aufgabe",
-            "text": "Imagine qu’une bonne amie ou un bon ami pense cette phrase sur lui-même. Que lui dirais-tu ?",
-            "hinweis": "Écris-le comme tu le dirais vraiment – sincère et bienveillant.",
+            "text": "Écris ce que tu dirais à une amie qui pense cette phrase.",
             "symbole": [
               "schreiben"
             ]
@@ -722,7 +516,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Et maintenant, le contrepoids : qu’est-ce que tu sais de bien sur toi, à coup sûr ?",
+            "text": "Écris ton contrepoids : ce que tu sais de bien sur toi.",
             "symbole": [
               "schreiben"
             ]
@@ -730,30 +524,30 @@
           {
             "art": "satzanfaenge",
             "items": [
-              "Quelque chose que je sais bien faire :",
-              "Quelque chose que j’ai déjà réussi :",
-              "Quelqu’un qui m’aime bien dirait de moi :"
+              "Je sais bien faire : …",
+              "J’ai réussi : …",
+              "Qui m’aime bien dit : …"
             ],
             "linien": 2
           },
           {
             "art": "info",
-            "symbol": "merke",
-            "titel": "Et ensuite ?",
-            "text": "Ferme la page avec un trombone ou plie-la. La semaine prochaine, tu prendras une phrase – la tienne ou une carte – et tu l’examineras comme un détective : est-elle vraiment vraie ?"
+            "symbol": "wissen",
+            "titel": "Bon à savoir",
+            "text": "Beaucoup de phrases sur nous viennent d’un événement ou d’une remarque. Avec une amie, tu parles souvent plus gentiment qu’avec toi. Cette voix, tu peux l’emprunter."
           },
           {
             "art": "notfall",
-            "text": "Si une phrase te tire vers le bas : parle au SePAS ou appelle."
+            "text": "Une phrase te tire vers le bas ? Parle au SePAS · 116 111",
+            "eintraege": []
           }
         ],
         "lehrer": {
-          "ziel": "Les jeunes notent en privé leurs phrases qui freinent, se demandent d’où elles viennent et si elles sont encore vraies, empruntent le regard bienveillant d’un ami et terminent par un contrepoids.",
+          "ziel": "Les jeunes notent en privé une phrase à eux qui freine, se demandent d’où elle vient et si elle est encore vraie, empruntent le regard bienveillant d’une amie et terminent par un contrepoids.",
           "ablauf": [
             "Avant d’écrire, poser le cadre : privé, rien n’est lu à voix haute ni ramassé ; dire ouvertement où s’arrête la confidentialité.",
-            "Séance 28, étape 4 (10 min) : exercice 1 avec une croix sur l’échelle, et l’exercice 2 pour qui veut. N’aider que sur demande, ne pas lire par-dessus l’épaule.",
-            "Étape 7 (13 min) : exercices 3 et 4, puis fermer la page avec un trombone ou la plier.",
-            "L’encadré « Ce que dit la recherche » résume Kross & Ayduk (2017) ; la référence figure dans le fond de la séance.",
+            "Séance 28, étape 5 (35 min) : exercice 1 avec un chiffre de 0 à 10 (12 min), exercice 2 regard bienveillant (8 min), exercice 3 contrepoids (8 min) ; n’aider que sur demande, ne pas lire par-dessus l’épaule.",
+            "Pour finir, fermer la page avec un trombone ou la plier.",
             "Séance 29 : qui veut examine une de ces phrases en détective ; les autres prennent une carte."
           ],
           "hintergrund": "Les croyances correspondent aux convictions profondes de la thérapie cognitive et comportementale : des suppositions très générales sur soi, apprises tôt (Beck, 2011). L’origine et le chiffre créent de la distance ; la question du regard d’une amie utilise la mise à distance de soi (Kross & Ayduk, 2017). Écrire en privé aide à mettre de l’ordre dans ce qui pèse, sans le dévoiler (Pennebaker, 1997).",

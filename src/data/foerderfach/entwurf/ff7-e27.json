@@ -41,25 +41,20 @@
         "kurz": "Zwischen Situation und Gefühl steht ein Gedanke: An erfundenen Figuren sieht die Klasse, wie er den Ausgang verändert, und sortiert Sätze, die helfen oder bremsen.",
         "ziele": [
           "erklären an erfundenen Figuren, wie ein Gedanke den Ausgang einer Situation verändert",
-          "unterscheiden Sätze über sich, die helfen, von Sätzen, die bremsen",
-          "nennen, woher bremsende Sätze kommen können",
+          "unterscheiden Sätze über sich, die helfen, von Sätzen, die bremsen, und nennen, woher sie kommen können",
           "probieren mit „Danke, Kopf“ aus, Abstand zu einem Satz zu gewinnen"
         ],
         "material": [
           "Gefühlsrad-Plakat, 20 Klebepunkte",
-          "Schülerheft für jede Person",
-          "Glaubenssatz-Karten, 5 Umschläge",
-          "Fünf A3-Blätter, dicke Stifte",
           "Zwei Denkblasen auf A4-Papier",
-          "Kleine Zettel, Schachtel (Reserve)",
-          "Stempel für den Skills-Pass"
+          "Glaubenssatz-Karten, fünf Umschläge (Vorlage); fünf A3-Blätter, dicke Stifte",
+          "Kleine Zettel und eine Schachtel (Reserve)",
+          "Schülerheft: Blatt „Der Gedanke macht den Unterschied“ und Skills-Pass, Stempel"
         ],
         "vorbereitung": [
           "Régent und SePAS sagen, dass das Kapitel „Meine Gedanken“ beginnt; fragen, ob jemand gerade belastet ist.",
-          "Tafelbild aus Schritt 3 anschreiben und abdecken; die Herkunftsliste aus Schritt 6 an den Rand.",
-          "Karten fünfmal kopieren, ausschneiden, je Tischgruppe ein Umschlag.",
-          "Zwei große Denkblasen auf A4 zeichnen und die Gedanken aus Schritt 3 hineinschreiben.",
-          "Ein eigenes, längst erledigtes Beispiel überlegen (Schritt 3)."
+          "Tafelbild anschreiben und abdecken: Situation – Gedanke – Gefühl – Verhalten und die fünf Herkünfte eines Satzes. Zwei Denkblasen für Ben zeichnen.",
+          "Karten fünfmal kopieren, ausschneiden, je Tischgruppe ein Umschlag; ein eigenes, längst erledigtes Beispiel für einen Glaubenssatz überlegen."
         ],
         "ablauf": [
           {
@@ -73,14 +68,9 @@
             "titel": "Rückblick und neues Kapitel: Meine Gedanken"
           },
           {
-            "min": "15–30",
-            "phase": "input",
-            "titel": "Ein Gedanke macht den Unterschied"
-          },
-          {
-            "min": "30–45",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Gleiche Lage, andere Gedanken"
+            "titel": "Ein Gedanke macht den Unterschied"
           },
           {
             "min": "45–50",
@@ -88,24 +78,14 @@
             "titel": "Bewegungspause: Alle, die …"
           },
           {
-            "min": "50–75",
+            "min": "50–85",
             "phase": "uebung",
             "titel": "Sortierspiel: hilft, kommt drauf an, bremst"
           },
           {
-            "min": "75–85",
-            "phase": "uebung",
-            "titel": "Kenne ich auch – Köpfe auf den Tisch"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill: Danke, Kopf"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, Moment wählen und Wochen-Mission"
           }
         ],
         "schritte": [
@@ -113,208 +93,131 @@
             "titel": "Check-in: Gefühl, Zahl und Kopf-Lautstärke",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige nennen ihr Wort (4 Min.). Danach die Ampel-Frage: Wer bei Gelb oder Rot ist, nimmt sich still einen Skill aus dem Ampelplan – alle atmen dazu dreimal lang aus, so muss sich niemand melden. Heute kommt eine dritte Frage dazu: Wie laut ist es gerade im Kopf? Die drei Handzeichen einmal vormachen – flache Hand auf dem Tisch für leise, in Brusthöhe für mittel, über dem Kopf für laut –, dann zeigen alle auf drei (2 Min.). Laut spiegeln, was zu sehen ist, ohne Namen und ohne Kommentar, und festhalten: Gedanken sind immer da, auch wenn niemand über sie spricht. Genau um sie geht es in den nächsten vier Wochen.",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad, dann zeigen alle auf drei ihre Anspannung mit den Fingern (0–100); die Lehrkraft beginnt. Heute dazu: Wie laut ist es gerade im Kopf? Hand flach auf dem Tisch heißt leise, in Brusthöhe mittel, über dem Kopf laut.",
             "sagen": [
-              "Gefühl, Zahl – und jetzt noch: Wie laut ist es gerade da oben? Leise, mittel oder laut, auf drei.",
-              "Laut heißt: Da rattert es, ein Gedanke jagt den nächsten. Leise heißt: eher ruhig im Kopf."
+              "Gefühl, Zahl – und jetzt: Wie laut ist es da oben, leise, mittel oder laut, auf drei?",
+              "Laut heißt: Da rattert es, ein Gedanke jagt den nächsten."
             ],
-            "tipp": "Die Frage nach der Kopf-Lautstärke führt ohne Erklärung zum Thema. Selbst mit einer ehrlichen Antwort beginnen, etwa: mittel – ich denke schon an die Pause und an den Stapel Tests auf meinem Schreibtisch.",
-            "wennEsKippt": "Zeigen einige demonstrativ übertrieben laut, mitlachen und es gelten lassen: Auch ein voller Kopf ist eine Auskunft. Liegt jemand schon beim Ankommen bei 70 oder mehr, nicht vor der Klasse nachfragen, sondern beim Austeilen der Hefte leise anbieten, zuerst die Fingeratmung zu machen oder kurz Wasser zu trinken."
+            "wennEsKippt": "Zeigen einige demonstrativ übertrieben laut, mitlachen und gelten lassen: Auch ein voller Kopf ist eine Auskunft. Liegt jemand schon beim Ankommen bei 70 oder mehr, nicht vor der Klasse nachfragen, sondern beim Austeilen der Hefte leise Fingeratmung oder ein Glas Wasser anbieten."
           },
           {
             "titel": "Rückblick und neues Kapitel: Meine Gedanken",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann zur Wochen-Mission – erst fragen, wer etwas sagt und woher die Person es weiß, bevor man es glaubt oder weiterleitet: Kam euer Moment – jemand hat euch im Chat, auf dem Schulhof oder zu Hause etwas Krasses erzählt – und was habt ihr gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt kurz. Niemand muss die Mission geschafft haben, und „mein Moment kam nicht“ ist eine ehrliche Antwort. Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was denke ich über mich – und stimmt das? Die Stunden des Kapitels ankündigen: heute entdecken, dann wie Detektive prüfen, zum Schluss neue Sätze ausprobieren – und, wenn die Wahlstunde gehalten wird, nächste Woche vorher eine ruhige Stunde ganz privat für die eigenen Sätze.",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – und was hast du gemacht? Daumen hoch: Der Moment kam, ich habe zuerst gefragt; Mitte: Der Moment kam, ich habe etwas anderes gemacht; runter: Der Moment kam nicht. Eine Stimme erzählt in einem Satz; dann das neue Kapitel nennen: Was denke ich über mich – und stimmt das?",
             "sagen": [
-              "Kam euer Moment – und was habt ihr gemacht? Daumen, dann eine Stimme.",
-              "Letzte Woche habt ihr Beiträge aus dem Netz geprüft: echt oder fake? Ab heute prüft ihr etwas, das noch näher dran ist – Sätze in eurem eigenen Kopf.",
-              "Ihr müsst in diesem Kapitel nichts Persönliches erzählen. Wir arbeiten mit erfundenen Figuren und mit Karten."
+              "Kam euer Moment, und was habt ihr gemacht – Daumen hoch, Mitte oder runter?",
+              "Ab heute prüft ihr etwas, das noch näher ist als ein Beitrag im Netz: Sätze in eurem eigenen Kopf – ihr müsst nichts Persönliches erzählen, wir arbeiten mit erfundenen Figuren und Karten."
             ],
-            "tipp": "Die Treppe des Kapitels am Rand der Tafel stehen lassen: entdecken – prüfen – ausprobieren, mit der Wahlstunde „privat hinschauen“ als Zwischenstufe. Wer weiß, was kommt, lässt sich leichter auf ein persönliches Thema ein. Zur Mission vor allem fragen, was schwierig war – sie wird nicht kontrolliert."
+            "tipp": "Die Treppe des Kapitels am Rand der Tafel stehen lassen: entdecken, prüfen, ausprobieren – mit der Wahlstunde „privat hinschauen“ als Zwischenstufe. Zur Mission vor allem fragen, was schwierig war; sie wird nicht kontrolliert."
           },
           {
             "titel": "Ein Gedanke macht den Unterschied",
-            "dauer": 15,
-            "phase": "input",
-            "text": "Die Lehrkraft spielt Ben zweimal, eine freiwillige Person hält die Denkblase über seinen Kopf und liest sie vor. Die Lage: Ben hat Mila am Nachmittag geschrieben, am Abend steht da: gelesen, keine Antwort. Version A mit der ersten Denkblase, Version B mit der zweiten (je 1 Min.). Nach jeder Version nennt die Klasse Gefühl (Wörter vom Gefühlsrad) und Verhalten; die Lehrkraft deckt das Tafelbild auf und ergänzt, alle tragen es in Aufgabe 1 des Blatts ein (5 Min.). Dann kurz erklären (3 Min.): Zwischen Situation und Gefühl steht ein Gedanke – so schnell, dass man ihn kaum merkt. Welcher Gedanke zuerst kommt, hängt oft von einem Glaubenssatz ab: einem Satz über sich selbst, den man schon lange für wahr hält; manche helfen, manche bremsen. Glauben heißt hier ‚für wahr halten‘ – mit Religion hat das nichts zu tun. Zum Schluss die Geschichte von Luca vorlesen; alle zeigen mit dem Daumen, ob Lucas Satz stimmt, zwei Stimmen begründen (5 Min.). Stottert jemand in der Klasse oder wird oft beim Vorlesen ausgelacht, statt Luca die Geschichte von Liam nehmen.",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Erst das Modell: Die Lehrkraft spielt Ben zweimal, eine freiwillige Person hält die Denkblase. Dann üben Paare und Tischgruppen: gleiche Lage, andere Gedanken (Aufgabe 1 und 2). Zum Schluss ein Satz an die Tafel: Gedanken sind Vermutungen, keine Tatsachen.",
             "sagen": [
               "Dieselbe Nachricht, zwei Gedanken – und plötzlich zwei ganz verschiedene Abende.",
-              "Wer tief drinnen glaubt, dass ihn keiner mag, liest aus ‚gelesen, keine Antwort‘ viel schneller Ablehnung heraus.",
-              "Viele Glaubenssätze hatten mal einen Grund. Die Frage ist nur, ob sie heute noch stimmen."
+              "Wer tief drinnen glaubt, dass ihn keiner mag, liest aus ‚gelesen, keine Antwort‘ schneller Ablehnung heraus – solche Sätze über sich heißen Glaubenssätze, und manche helfen, manche bremsen."
             ],
             "punkte": [
-              "Luca war zehn, als er beim Vorlesen hängen blieb und zwei aus der Klasse lachten. Seitdem denkt er: „Ich kann nicht vor anderen reden.“ Im Fußballverein erklärt er den Jüngeren jede Woche die Übungen – in der Schule meldet er sich nie.",
-              "Ersatz: Liam hat einmal vor der Klasse ein Gedicht vergessen. Seitdem denkt er: „Ich kann mir nichts merken.“ Die Aufstellung seines Lieblingsvereins kennt er seit Jahren auswendig."
+              "Ben (6 Min.): Er schreibt Mila; am Abend steht da: gelesen, keine Antwort. Version A mit der ersten Denkblase („Die hat keinen Bock mehr auf mich.“), Version B mit der zweiten („Sie ist bestimmt noch beim Training.“); nach jeder Version nennt die Klasse Gefühl und Verhalten.",
+              "Tafelbild (4 Min.): Situation – Gedanke – Gefühl – Verhalten aufdecken; Glaubenssatz erklären: ein Satz über sich, den man lange für wahr hält – mit Religion hat das nichts zu tun.",
+              "Aufgabe 1 (6 Min.): zu zweit verbinden, welcher Gedanke von Yusuf zu welchem Gefühl und Verhalten führt; die Lehrkraft liest jeden Gedanken vor, ein Paar sagt, wohin seine Linie führt.",
+              "Aufgabe 2 (10 Min.): Jemand lacht, als Aylin hereinkommt. Reihum sagt jede Person der Tischgruppe laut einen anderen Gedanken, den Aylin denken könnte; dann schreibt jede Person den hilfreichsten auf, mit Gefühl und Verhalten. Zwei Gruppen lesen vor.",
+              "Fazit (4 Min.): Eine Vermutung heißt: Ich weiß es nicht sicher. Eine Tatsache könnte eine Kamera filmen. Der erste Gedanke kommt von allein – den zweiten Blick kann man üben."
             ],
-            "tabelle": {
-              "spalten": [
-                "Version A",
-                "Version B"
-              ],
-              "zeilen": [
-                [
-                  "Situation: gelesen, keine Antwort",
-                  "Situation: gelesen, keine Antwort"
-                ],
-                [
-                  "Gedanke: „Die hat keinen Bock mehr auf mich.“",
-                  "Gedanke: „Sie ist bestimmt noch beim Training.“"
-                ],
-                [
-                  "Gefühl: gekränkt, traurig",
-                  "Gefühl: gelassen, etwas ungeduldig"
-                ],
-                [
-                  "Verhalten: schreibt nichts mehr, ist den ganzen Abend mies drauf",
-                  "Verhalten: macht etwas anderes, fragt morgen nach"
-                ]
-              ]
-            },
-            "tipp": "Selbst einen harmlosen, längst erledigten Glaubenssatz erzählen, etwa: Mit 13 dachte ich, ich kann nicht singen – bis ich in einem Chor gelandet bin. Das macht das Thema greifbar, ohne dass jemand aus der Klasse von sich erzählen muss. Die Denkblase darf ruhig der Klassenclown halten: Er bekommt seinen Auftritt, aber in einer Rolle mit klaren Grenzen.",
-            "wennEsKippt": "Kommt ein Spruch wie „Ich bin halt dumm, ist so“, nicht widersprechen und nicht belehren: ruhig sagen, dass viele diesen Satz kennen, und ihn ohne Namen als Beispiel für einen bremsenden Satz an die Tafel schreiben. Wird über Ben und Mila gekichert („die ist verliebt“), kurz mitlachen und weitermachen – die Nachricht könnte genauso an einen Kumpel gehen. Wird die Denkblase zur Show, hält die Person sie weiter hoch, aber die Lehrkraft liest vor.",
-            "blatt": "ff7-gedanke-macht-den-unterschied"
-          },
-          {
-            "titel": "Gleiche Lage, andere Gedanken",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Aufgabe 2 zu zweit (4 Min.): Yusuf wird an die Tafel gerufen – welcher Gedanke führt wohin? Zum Vergleichen liest die Lehrkraft jeden Gedanken vor, ein Paar sagt, wohin seine Linie führt. Aufgabe 3 in den Tischgruppen (6 Min.): Jemand lacht, als Aylin in die Klasse kommt. Reihum sagt jede Person laut einen anderen Gedanken, so wie Aylin ihn denken könnte; dann schreibt jede Person den Gedanken auf, der Aylin ihrer Meinung nach am meisten hilft, dazu Gefühl und Verhalten in Stichworten. Zwei Gruppen lesen ihren hilfreichsten Gedanken vor. Aufgabe 4 allein (4 Min.): Mila und Jang bekommen dieselbe Punktzahl zurück, glauben aber verschiedene Sätze über sich; in die Denkblasen kommt, was beide zuerst denken, darunter in Stichworten, was sie dann tun. Zum Schluss an die Tafel (1 Min.): Gedanken sind Vermutungen, keine Tatsachen. Vermutung heißt: Ich weiß es nicht sicher. Tatsache heißt: Eine Kamera könnte es filmen.",
-            "sagen": [
-              "Was ist der Unterschied zwischen ‚Die lachen über mich‘ und ‚Vielleicht hat jemand einen Witz erzählt‘? Die Situation ist dieselbe.",
-              "Ein Gedanke ist eine Vermutung. Manche stimmen, manche nicht – das wisst ihr erst, wenn ihr hinschaut."
-            ],
-            "tipp": "Bei Aufgabe 3 kommen zuerst die bedrohlichen Gedanken – das ist normal und gehört dazu. Ziel ist nicht, den einen richtigen Gedanken zu finden, sondern zu merken, dass es mehrere gibt.",
-            "wennEsKippt": "Sagt eine Gruppe, man könne sich Gedanken nicht aussuchen, zustimmen: Der erste Gedanke kommt von allein. Den zweiten Blick darauf kann man üben – genau darum geht es im Kapitel. Wird das Beispiel mit dem Lachen auf eine echte Szene in der Klasse bezogen, freundlich stoppen: Heute geht es um Aylin, nicht um uns. Kommt ein gemeiner Gedanke über Aylins Aussehen, ruhig zurückfragen: Würde Aylin das denken? Wir suchen ihre Gedanken, keine Sprüche über sie. Wer verweigert, löst Aufgabe 2 mündlich mit der Person daneben; das reicht.",
+            "wennEsKippt": "Kommt ein Spruch wie „Ich bin halt dumm, ist so“, nicht widersprechen: ruhig sagen, dass viele diesen Satz kennen, und ihn ohne Namen als Beispiel für einen bremsenden Satz an die Tafel schreiben. Wird die Denkblase zur Show oder ein Beispiel auf eine echte Szene in der Klasse bezogen, freundlich stoppen: Heute geht es um Ben und Aylin, nicht um uns.",
             "blatt": "ff7-gedanke-macht-den-unterschied"
           },
           {
             "titel": "Bewegungspause: Alle, die …",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen hinter ihrem Stuhl. Sätze vorlesen; wer sich angesprochen fühlt, setzt sich kurz und steht wieder auf. Die Lehrkraft macht mit; wer lieber sitzen bleibt, hebt bei ja kurz die Hand. Die Sätze handeln von schnellen Gedanken im Alltag und sind bewusst harmlos. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Alle stehen hinter ihrem Stuhl. Die Lehrkraft liest Sätze vor; wer sich angesprochen fühlt, setzt sich kurz und steht wieder auf, wer lieber sitzen bleibt, hebt die Hand. Die Lehrkraft macht mit; die Sätze handeln von schnellen Gedanken im Alltag und sind bewusst harmlos.",
+            "sagen": [
+              "Wer sich angesprochen fühlt, setzt sich kurz – und steht wieder auf."
+            ],
             "punkte": [
               "Alle, die heute Morgen beim Wecker gedacht haben: Noch fünf Minuten.",
               "Alle, die schon einmal ein Lied den ganzen Tag im Kopf hatten.",
-              "Alle, die vor einem Test schon einmal gedacht haben: Das wird nichts – und dann lief es gut.",
-              "Alle, die nachts schon einmal wach lagen, weil der Kopf nicht aufhören wollte.",
-              "Alle, die schon einmal dachten, jemand sei sauer auf sie – und es war gar nichts.",
-              "Alle, die sich heute auf etwas freuen."
+              "Alle, die vor einem Test gedacht haben: Das wird nichts – und dann lief es gut.",
+              "Alle, die schon einmal dachten, jemand sei sauer auf sie – und es war gar nichts."
             ],
-            "tipp": "Die Sätze drei und fünf sind kleine Beweise für das Thema der Stunde: Gedanken können sich irren. Das kurz so benennen, ohne nachzufragen."
+            "tipp": "Die letzten beiden Sätze sind kleine Beweise für das Thema: Gedanken können sich irren. Liegt die große Pause dazwischen, entfällt die Übung."
           },
           {
             "titel": "Sortierspiel: hilft, kommt drauf an, bremst",
-            "dauer": 25,
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Jede Tischgruppe bekommt einen Umschlag mit zwölf Satzkarten und ein A3-Blatt, das sie in drei Felder teilt: hilft – kommt drauf an – bremst. Sortieren (8 Min.): Reihum zieht jede Person eine Karte, liest sie vor, legt sie auf ein Feld und sagt in einem Satz, warum; wer anders denkt, darf die Karte mit Begründung verschieben. Paare finden (5 Min.): Zu jeder bremsenden Karte sucht die Gruppe das hilfreiche Gegenstück und legt beide zusammen. Herkunft (4 Min.): Die Gruppe wählt eine bremsende Karte und überlegt mit der Liste an der Tafel, woher so ein Satz kommen könnte. Klasse (8 Min.): Jede Gruppe nennt ihre schwierigste Karte und ihre Herkunfts-Idee; die Lehrkraft macht an der Tafel einen Strich bei jeder genannten Herkunft. Die Karten kommen zurück in den Umschlag – sie werden noch gebraucht.",
+            "text": "Jede Tischgruppe bekommt zwölf Satzkarten und ein A3-Blatt mit drei Feldern: hilft – kommt drauf an – bremst. Die Gruppen sortieren, suchen zu den bremsenden Karten die hilfreichen Gegenstücke und überlegen, woher ein bremsender Satz kommen kann (Aufgabe 3).",
             "sagen": [
-              "Es gibt nicht immer die eine richtige Lösung. Wichtig ist, dass ihr begründet.",
-              "‚Mir ist alles egal‘ klingt stark. Hilft der Satz – oder bremst er?",
-              "Woher könnte jemand so einen Satz haben?"
+              "Es gibt nicht immer die eine richtige Lösung – wichtig ist, dass ihr begründet.",
+              "‚Mir ist alles egal‘ klingt stark: Hilft der Satz oder bremst er – und woher könnte jemand so einen Satz haben?"
             ],
             "punkte": [
-              "Eine einzige Erfahrung: Einmal ging etwas schief – daraus wurde „immer“.",
-              "Sprüche von anderen: Jemand hat es oft genug gesagt.",
-              "Vergleiche: Die anderen scheinen alles besser zu können.",
-              "Social Media: Perfekte Bilder, perfekte Leben – aber nur ein Ausschnitt.",
-              "Früher ein Schutz: Der Satz hat einmal vor Enttäuschung bewahrt."
+              "Sortieren (10 Min.): Reihum zieht jede Person eine Karte, liest sie vor, legt sie auf ein Feld und sagt in einem Satz, warum; wer anders denkt, darf sie mit Begründung verschieben.",
+              "Paare (6 Min.): Zu jeder bremsenden Karte suchen die Gruppen das hilfreiche Gegenstück und legen beide zusammen.",
+              "Herkunft (8 Min.): Die Gruppe wählt eine bremsende Karte und überlegt mit der Liste an der Tafel, woher der Satz kommen könnte – eine einzige Erfahrung, Sprüche von anderen, Vergleiche, Social Media, früher ein Schutz –, und kreuzt in Aufgabe 3 an.",
+              "Klasse (7 Min.): Jede Gruppe nennt ihre schwierigste Karte und ihre Herkunfts-Idee; die Lehrkraft macht an der Tafel einen Strich bei jeder genannten Herkunft.",
+              "Kenne ich auch (4 Min.): Köpfe auf die Arme oder Blick auf den Tisch; wer einen bremsenden Satz von den Karten schon einmal gedacht hat, streckt kurz den Daumen – die Lehrkraft sagt nur, ob es einige, viele oder fast alle waren."
             ],
-            "tipp": "Die Karten im Feld „kommt drauf an“ sind die ergiebigsten: Dort merken die Jugendlichen, dass ein Satz früher geschützt haben kann und heute trotzdem bremst. Beim Herumgehen genau dort nachfragen. Wer nicht sprechen mag, legt die Karte nur hin, die Gruppe begründet. Unruhigen Jugendlichen eine Aufgabe geben: Karten austeilen, die Zeit nehmen, das Feld „bremst“ verwalten.",
-            "wennEsKippt": "Werden Karten Personen aus der Klasse zugeschrieben („Das ist Kevins Satz“), sofort stoppen und auf die Klassenvereinbarung zeigen: Heute geht es um Sätze, nicht um Personen. Danach in fester Reihenfolge weiterspielen; wer es noch einmal tut, liest nur noch vor. Bleibt eine Gruppe stumm, sich dazusetzen und die erste Karte selbst ziehen. Läuft die Zeit davon, die Herkunft im Plenum an einer einzigen Karte besprechen.",
-            "blatt": "ff7-glaubenssatz-karten"
-          },
-          {
-            "titel": "Kenne ich auch – Köpfe auf den Tisch",
-            "dauer": 10,
-            "phase": "uebung",
-            "text": "Erst einmal gemeinsam ausatmen, dann legen alle den Kopf auf die verschränkten Arme, die Augen zu oder auf die Tischplatte gerichtet; wer den Kopf nicht ablegen mag, schaut einfach auf den Tisch – das zählt genauso (1 Min.). Die Regel vorher sagen: Wer einen Satz über sich selbst schon einmal gedacht hat, streckt kurz den Daumen hoch – die Hand bleibt neben dem Kopf auf dem Tisch, nicht in der Luft. Die Lehrkraft liest die Sätze langsam vor (Liste), wartet nach jedem einige Sekunden und sagt nur, wie viele es ungefähr sind – ziemlich viele, fast alle, einige –, ohne Namen und ohne Kommentar; länger als vier Minuten bleibt kein Kopf unten (4 Min.). Danach setzen sich alle wieder auf. Fragen: Was fällt euch auf? Festhalten: Bremsende Sätze sind normal, und niemand ist allein damit – auch Erwachsene kennen sie (4 Min.). Einen bremsenden Satz für den Skill an der Tafel stehen lassen (1 Min.).",
-            "sagen": [
-              "Nur ich sehe die Daumen, und ich sage nur ungefähr, wie viele. Ihr dürft bei jedem Satz die Hand still liegen lassen.",
-              "Was fällt euch auf? Viele von uns kennen dieselben Sätze – die bremsenden und die hilfreichen."
-            ],
-            "punkte": [
-              "… „Heute wird ein guter Tag.“ (zum Ausprobieren)",
-              "… „Das schaffe ich eh nicht.“",
-              "… „Die anderen sind besser als ich.“",
-              "… „Wenn ich übe, werde ich besser.“",
-              "… „Ich muss perfekt sein.“",
-              "… „Ich kann gut mit anderen umgehen.“",
-              "… „Wenn ich Nein sage, mag mich keiner mehr.“",
-              "… „Ich bin ein guter Freund oder eine gute Freundin.“"
-            ],
-            "tipp": "Die Rückmeldung bewusst ungenau halten: Genau das ist die Botschaft. Die hilfreichen Sätze dazwischen sind Absicht – sie zeigen, dass jeder Kopf beide Sorten kennt, und machen die Runde leichter.",
-            "wennEsKippt": "Wird geblinzelt, gekichert oder kommentiert, einmal unterbrechen und die Regel wiederholen: Augen zu oder auf den Tisch, damit hier alle ehrlich sein können. Bleibt es unruhig, auf Zettel wechseln: Alle bekommen einen kleinen Zettel, die Lehrkraft nennt vor jedem Satz seine Nummer, alle schreiben die Nummern der Sätze auf, die sie kennen, falten den Zettel und werfen ihn in die Schachtel; die Lehrkraft zählt nach der Stunde und nennt das Ergebnis nächste Woche. Zeigt jemand bei fast allen bremsenden Sätzen den Daumen und wirkt bedrückt, nach der Stunde unauffällig ansprechen."
+            "wennEsKippt": "Werden Karten Personen aus der Klasse zugeschrieben („Das ist Kevins Satz“), sofort stoppen: Heute geht es um Sätze, nicht um Personen. Bleibt es bei „Kenne ich auch“ unruhig, auf Zettel wechseln: Alle schreiben Ja oder Nein, falten und werfen sie in die Schachtel.",
+            "blatt": "ff7-gedanke-macht-den-unterschied"
           },
           {
             "titel": "Skill: Danke, Kopf",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Ankündigen: ein Kopf-Skill für Momente, in denen ein bremsender Satz laut wird und keine Zeit zum Prüfen bleibt. Alle sitzen bequem, die Füße auf dem Boden. Mit dem Satz von der Tafel, etwa „Das schaffe ich eh nicht“, die drei Schritte langsam anleiten (Liste); alle sprechen innerlich mit, je etwa eine halbe Minute. Zweite Runde: Jede Person wählt still einen Satz von den Karten und macht die Schritte allein. Dritte Runde, wer mag: den Satz innerlich von einer Navi-Stimme, einem Sportreporter oder einer Zeichentrickfigur sagen lassen. Danach zwei, drei Rückmeldungen: Was hat sich verändert, und wann könnte das helfen – vor einem Test, im Bus, abends im Bett? Erklären: Der Satz ist noch da, aber ihr schaut ihn von außen an. Wegdrücken klappt nicht, das kennt die Klasse vom Eisbären aus Einheit 16; ob ein Satz stimmt, prüft sie in der Detektiv-Stunde.",
+            "text": "Ein Kopf-Skill für Momente, in denen ein bremsender Satz laut wird und keine Zeit zum Prüfen bleibt (5 Min.): Mit dem Satz von der Tafel, etwa „Das schaffe ich eh nicht“, die drei Schritte langsam anleiten; alle sprechen innerlich mit, dann noch einmal mit einem Satz von den Karten. Danach der Abschluss (10 Min.): Skills-Pass, Mission, Moment.",
             "sagen": [
-              "Der Satz muss nicht weg. Ihr rückt nur einen Schritt von ihm ab – wie von einem Bildschirm, vor dem man zu nah sitzt.",
-              "Das ist ein Skill für Alltagssätze. Wenn Gedanken richtig schwer werden, braucht es keinen Trick, sondern ein Gespräch – mit mir oder mit dem SePAS."
+              "Der Satz muss nicht weg – ihr rückt nur einen Schritt von ihm ab, wie von einem Bildschirm, vor dem man zu nah sitzt.",
+              "Das ist ein Skill für Alltagssätze – wenn Gedanken richtig schwer werden, braucht es ein Gespräch, mit mir oder mit dem SePAS."
             ],
             "punkte": [
               "Bemerke den Satz, der gerade da ist: „Das schaffe ich eh nicht.“",
               "Setz davor: „Mein Kopf sagt gerade: …“",
-              "Antworte ihm: „Danke, Kopf. Hab’s gehört.“ – und mach weiter mit dem, was du gerade tust."
+              "Antworte ihm: „Danke, Kopf. Hab’s gehört.“ – und mach weiter mit dem, was du gerade tust.",
+              "Skills-Pass (4 Min.): ein Satz zur Frage an der Tafel – Welcher Satz von heute bleibt bei mir hängen? Beispiel: Gedanken sind Vermutungen, keine Tatsachen; dann der Stempel.",
+              "Mission und Moment (6 Min.): die Mission vorlesen; auf drei zeigen alle ihren Moment – ein Finger Nachricht ohne Antwort, zwei ein Lachen oder ein komischer Blick, drei Test oder Note, die Faust ein eigener Moment – und schreiben ihn in die Spalte „Mein Moment: Wenn …“; dann der Ausblick."
             ],
-            "tipp": "Die fremde Stimme ist kein Witz auf Kosten des Themas: Ein Satz, den ein Navi oder ein Sportreporter sagt, verliert sofort an Gewicht – und Ältere finden das weniger kindisch als eine Zeichentrickfigur. Variante für die dritte Runde: das härteste Wort des Satzes – etwa „dumm“ – eine halbe Minute lang leise und schnell hintereinander sagen, bis es nur noch ein Klang ist – Gelächter dabei gehört zum Effekt; genau diese alte Übung wurde geprüft und nimmt dem Wort messbar Gewicht (Kasten auf dem Blatt). Die Satzanfänge sind bewusst einfach; wer die Unterrichtssprache noch lernt, kann sie nutzen oder in der eigenen Sprache denken.",
-            "wennEsKippt": "Wird bei den Stimmen laut gelacht, kurz mitlachen und still wiederholen: innerlich, nicht laut. Wer mit einem Satz von den Karten nicht arbeiten mag, bleibt bei dem Satz von der Tafel. Niemand muss die Augen schließen."
-          },
-          {
-            "titel": "Skills-Pass, Moment wählen und Wochen-Mission",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Welcher Satz von heute bleibt bei mir hängen? Beispiel: Gedanken sind Vermutungen, keine Tatsachen. Jede Person schreibt ihren Satz, die Lehrkraft geht mit dem Stempel herum. Moment wählen (1 Min.): die Wochen-Mission im Heft vorlesen – wenn mein Moment kommt, dann ertappe ich den ersten Gedanken und frage mich, welcher andere auch passen würde. Auf drei zeigen alle, wo ihr Moment am ehesten kommt: ein Finger für eine Nachricht ohne Antwort, zwei für ein Lachen oder einen Blick, der komisch wirkt, drei für einen Test oder eine Note, die Faust für einen eigenen Moment; dann schreibt jede Person ihren Moment in die Spalte „Mein Moment: Wenn …“, ein Stichwort reicht. Ausblick (2 Min.): Wird die Wahlstunde gehalten, ausdrücklich sagen, dass nächste Woche niemand etwas vorlesen muss; sonst ankündigen, dass die Klasse nächste Woche Detektive wird.",
-            "sagen": [
-              "Eure Mission: Wenn euer Moment kommt – eine Nachricht ohne Antwort, ein Lachen, ein Test –, dann ertappt ihr den ersten Gedanken und fragt euch: Welcher andere würde auch passen? Wählt jetzt euren Moment.",
-              "Kommt der Moment diese Woche nicht, ist das auch eine Auskunft. Ich frage nächste Woche nur: Kam er – und was habt ihr gemacht?"
-            ],
-            "tipp": "Die sortierten Felder einer Gruppe fotografieren und die Umschläge aufheben: Die Karten werden in den nächsten Stunden wieder gebraucht, bis zum Glaubenssatz-Baum in Einheit 30. Ein Moment, der sicher kommt – der Klassenchat am Abend, die nächste Rückgabe eines Tests –, trägt die Mission besser als „irgendwann diese Woche“.",
-            "wennEsKippt": "Nennt jemand einen Scherz-Moment, gelten lassen, wenn er ernst gemeint ist: Jeder echte Moment zählt. Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Wer die Sprache noch lernt oder nicht schreiben mag, malt ein kleines Zeichen für seinen Moment: Handy, Gesicht, Blatt."
+            "wennEsKippt": "Wird gelacht, kurz mitlachen und still wiederholen – innerlich, nicht laut. Wer mit einem Satz von den Karten nicht arbeiten mag, bleibt bei dem von der Tafel; niemand muss die Augen schließen."
           }
         ],
-        "bruecke": "Nächste Woche schaut jede und jeder in Ruhe und nur für sich auf die eigenen bremsenden Sätze – niemand liest etwas vor. Ohne die Wahlstunde: Nächste Woche werdet ihr Detektive und prüft mit Beweisen, ob so ein Satz wirklich stimmt.",
-        "mission": "Wenn dein Moment kommt – eine Nachricht ohne Antwort, ein Lachen, ein Test –, dann ertapp deinen ersten Gedanken und frag dich: Welcher andere würde auch passen?",
-        "hintergrund": "Grundlage ist das ABC-Modell der kognitiven Therapie: Zwischen Situation (A) und Gefühl und Verhalten (C) steht die Bewertung (B) – ein Gedanke, den oft eine Grundüberzeugung über sich selbst färbt, im Fach Glaubenssatz genannt (Ellis, 1962; Beck, 2011). Reine Gedankenarbeit in Lehrkrafthand wirkte in großen Schulstudien kaum (Stallard et al., 2014). Deshalb bleibt die Stunde kurz, arbeitet an Figuren und Karten und endet mit einem Skill, der auch ohne Therapeutin wirkt: Defusion aus der Akzeptanz- und Commitment-Therapie – einen Gedanken als Gedanken benennen und Abstand gewinnen, statt ihn zu bekämpfen (Hayes, Strosahl & Wilson, 2012). Masuda et al. (2004) zeigten, dass schon eine halbe Minute einer solchen Übung einem harten Wort über sich messbar Glaubwürdigkeit und Schmerz nimmt – daher der Kasten „Aus der Forschung“.",
+        "bruecke": "Nächste Woche schaut ihr in der Wahlstunde ganz privat auf eure eigenen Sätze – niemand liest etwas vor; fällt sie aus, werdet ihr gleich zu Detektiven und prüft mit Beweisen, ob ein Satz stimmt.",
+        "mission": "Ertapp deinen ersten Gedanken: Welcher andere würde auch passen?",
+        "hintergrund": "Das ABC-Modell: Zwischen Situation und Gefühl steht eine Bewertung, oft gefärbt von Grundüberzeugungen über sich selbst – im Fach Glaubenssätze (Ellis, 1962; Beck, 2011). Reine Gedankenarbeit in Lehrkrafthand wirkte in Schulstudien kaum (Stallard et al., 2014); deshalb Figuren, Karten und ein Skill: Defusion – einen Gedanken als Gedanken benennen und Abstand gewinnen (Hayes, Strosahl & Wilson, 2012; Masuda et al., 2004).",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
           "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
           "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
         ],
-        "achtung": "Glaubenssätze berühren das Selbstwertgefühl. Eigene Sätze werden heute nicht erfragt; bei „Kenne ich auch“ nur die vorgegebenen Sätze, Köpfe unten, keine Namen, kein Kommentar. Karten nie Personen aus der Klasse zuschreiben lassen. Fallen Sätze starker Selbstabwertung – etwa, nichts wert zu sein oder dass es ohne einen besser wäre –, nicht vor der Klasse vertiefen: nach der Stunde unter vier Augen ansprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Bei akuter Gefahr nicht allein lassen, 112.",
+        "achtung": "Glaubenssätze berühren das Selbstwertgefühl: Eigene Sätze werden heute nicht erfragt, bei „Kenne ich auch“ gibt es nur die vorgegebenen Sätze – Köpfe unten, keine Namen, kein Kommentar. Karten nie Personen aus der Klasse zuschreiben lassen. Fallen Sätze starker Selbstabwertung – nichts wert zu sein, ohne einen wäre es besser –, nicht vor der Klasse vertiefen: nach der Stunde unter vier Augen ansprechen, noch am selben Tag den SePAS informieren; bei akuter Gefahr nicht allein lassen, 112.",
         "differenzierung": {
-          "leichter": "Aufgabe 2 und 3 im Tandem mit einer Person, die gut liest; bei Aufgabe 3 reichen Stichworte oder Gefühlswörter vom Rad. Beim Sortierspiel liest ein Gruppenmitglied die Karten vor, die Person legt. Den Wortspeicher an der Tafel stehen lassen; wer die Unterrichtssprache noch lernt, darf Gedanken in der eigenen Sprache notieren. Für die Spalte „Mein Moment“ reicht ein Wort oder ein Zeichen.",
-          "schwerer": "Zu Aufgabe 3 einen zweiten Gedanken aufschreiben, der realistisch ist und trotzdem hilft; zu Aufgabe 4 überlegen, was Mila glauben müsste, damit sie es beim nächsten Test anders macht. Beim Sortierspiel die Moderation übernehmen und für die Karten im Feld „kommt drauf an“ eine Lage finden, in der sie helfen, und eine, in der sie bremsen."
+          "leichter": "Aufgabe 1 und 2 im Tandem mit jemandem, der gut liest; Stichworte oder Gefühlswörter vom Rad genügen. Beim Sortierspiel liest ein Gruppenmitglied die Karten vor, die Person legt; für die Spalte „Mein Moment“ reicht ein Wort oder ein Zeichen.",
+          "schwerer": "Zu Aufgabe 2 einen zweiten, realistischen Gedanken aufschreiben, der trotzdem hilft. Beim Sortierspiel die Moderation übernehmen und für Karten im Feld „kommt drauf an“ eine Lage finden, in der sie helfen, und eine, in der sie bremsen."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gefühl und Zahl (5 Min.), Ben zweimal gespielt, mit Tafelbild und kurzer Erklärung der Glaubenssätze (12 Min.), Aufgaben 2 und 4 des Blatts (8 Min.), Sortierspiel ohne Herkunft (15 Min.), Danke, Kopf (5 Min.), Skills-Pass, Moment wählen und Wochen-Mission (5 Min.). „Kenne ich auch“ entfällt oder eröffnet die nächste Stunde."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Ben zweimal gespielt mit Tafelbild und Aufgabe 1 (15 Min.), Sortierspiel ohne Herkunft (15 Min.), Danke, Kopf (5 Min.), Skills-Pass und Mission (10 Min.). Bewegungspause, Aufgabe 2 und „Kenne ich auch“ entfallen."
       },
       "fr": {
         "titel": "C’est quoi, une croyance ?",
         "kurz": "Entre la situation et l’émotion, il y a une pensée : avec des personnages inventés, la classe voit comment elle change la suite et trie des phrases qui aident ou qui freinent.",
         "ziele": [
           "expliquent, avec des personnages inventés, comment une pensée change la suite d’une situation",
-          "distinguent les phrases sur soi qui aident de celles qui freinent",
-          "nomment d’où peuvent venir les phrases qui freinent",
+          "distinguent les phrases sur soi qui aident de celles qui freinent et disent d’où elles peuvent venir",
           "essaient, avec « Merci, ma tête », de prendre de la distance avec une phrase"
         ],
         "material": [
           "Roue des émotions, 20 gommettes",
-          "Un cahier de l’élève par jeune",
-          "Cartes croyances, 5 enveloppes",
-          "Cinq feuilles A3, gros feutres",
-          "Deux bulles de pensée sur A4",
-          "Petits papiers, boîte (réserve)",
-          "Tampon pour le Skills-Pass"
+          "Deux bulles de pensée sur papier A4",
+          "Cartes croyances, cinq enveloppes (modèle) ; cinq feuilles A3, gros feutres",
+          "Petits papiers et une boîte (réserve)",
+          "Cahier : fiche « La pensée fait la différence » et Skills-Pass, tampon"
         ],
         "vorbereitung": [
           "Dire au régent et au SePAS que le chapitre « Mes pensées » commence ; demander si un jeune va mal en ce moment.",
-          "Écrire au tableau la grille de l’étape 3 et la cacher ; noter au bord la liste des origines (étape 6).",
-          "Photocopier cinq fois les cartes, les découper, une enveloppe par îlot.",
-          "Dessiner deux grandes bulles de pensée sur A4 et y écrire les pensées de l’étape 3.",
-          "Préparer un exemple personnel, réglé depuis longtemps (étape 3)."
+          "Écrire au tableau et cacher : situation – pensée – émotion – comportement et les cinq origines d’une phrase. Dessiner deux bulles de pensée pour Ben.",
+          "Photocopier cinq fois les cartes, les découper, une enveloppe par îlot ; préparer un exemple personnel de croyance, réglé depuis longtemps."
         ],
         "ablauf": [
           {
@@ -328,14 +231,9 @@
             "titel": "Retour et nouveau chapitre : mes pensées"
           },
           {
-            "min": "15–30",
-            "phase": "input",
-            "titel": "Une pensée fait la différence"
-          },
-          {
-            "min": "30–45",
+            "min": "15–45",
             "phase": "uebung",
-            "titel": "Même situation, autres pensées"
+            "titel": "Une pensée fait la différence"
           },
           {
             "min": "45–50",
@@ -343,24 +241,14 @@
             "titel": "Pause active : tous ceux qui…"
           },
           {
-            "min": "50–75",
+            "min": "50–85",
             "phase": "uebung",
             "titel": "Jeu de tri : aide, ça dépend, freine"
           },
           {
-            "min": "75–85",
-            "phase": "uebung",
-            "titel": "Moi aussi – la tête sur les bras"
-          },
-          {
-            "min": "85–95",
+            "min": "85–100",
             "phase": "skill",
             "titel": "Skill : Merci, ma tête"
-          },
-          {
-            "min": "95–100",
-            "phase": "abschluss",
-            "titel": "Skills-Pass, choisir son moment et mission de la semaine"
           }
         ],
         "schritte": [
@@ -368,183 +256,111 @@
             "titel": "Tour d’humeur : émotion, chiffre, volume dans la tête",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires disent leur mot (4 min). Ensuite, la question du feu : qui est dans l’orange ou dans le rouge prend en silence un skill de son plan feu tricolore – tout le monde expire trois fois longuement, ainsi personne n’a à se signaler. Aujourd’hui s’ajoute une troisième question : quel est le volume dans votre tête en ce moment ? Montrer une fois les trois signes – main à plat sur la table pour calme, à hauteur de poitrine pour moyen, au-dessus de la tête pour fort –, puis tout le monde montre à trois (2 min). Dire à voix haute ce qu’on voit, sans nommer personne ni commenter, et retenir : les pensées sont toujours là, même quand personne n’en parle. C’est d’elles qu’il s’agit pendant les quatre prochaines semaines.",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions, puis tout le monde montre à trois sa tension avec les doigts (0–100) ; l’enseignant·e commence. Aujourd’hui en plus : quel est le volume dans ta tête ? Main à plat sur la table pour calme, à hauteur de poitrine pour moyen, au-dessus de la tête pour fort.",
             "sagen": [
-              "L’émotion, le chiffre – et maintenant : quel est le volume là-haut ? Calme, moyen ou fort, à trois.",
-              "Fort, ça veut dire : ça tourne à toute vitesse, une pensée chasse l’autre. Calme, ça veut dire : plutôt tranquille dans la tête."
+              "Émotion, chiffre – et maintenant : quel est le volume là-haut, calme, moyen ou fort, à trois ?",
+              "Fort, ça veut dire : ça tourne à toute vitesse, une pensée chasse l’autre."
             ],
-            "tipp": "La question du volume dans la tête mène au thème sans explication. Commencer soi-même par une réponse sincère, par exemple : moyen – je pense déjà à la récré et à la pile de copies sur mon bureau.",
-            "wennEsKippt": "Si certains montrent « fort » en exagérant, rire avec eux et l’accepter : une tête pleine, c’est aussi une information. Si un jeune est déjà à 70 ou plus en arrivant, ne pas poser de questions devant la classe ; en distribuant les cahiers, lui proposer discrètement de faire d’abord la respiration des doigts ou d’aller boire un peu d’eau."
+            "wennEsKippt": "Si certains montrent « fort » en exagérant, rire avec eux et l’accepter : une tête pleine, c’est aussi une information. Si un jeune est déjà à 70 ou plus en arrivant, ne pas poser de questions devant la classe, mais lui proposer discrètement, en distribuant les cahiers, la respiration des doigts ou un verre d’eau."
           },
           {
             "titel": "Retour et nouveau chapitre : mes pensées",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Puis la mission de la semaine – demander d’abord qui dit ça et comment la personne peut le savoir, avant de croire ou de transférer : votre moment est-il venu – quelqu’un vous a raconté un truc énorme dans le groupe de classe, dans la cour ou à la maison – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas ; une voix raconte brièvement. Personne n’est obligé d’avoir réussi la mission, et « mon moment n’est pas venu » est une réponse honnête. Puis ouvrir le nouveau chapitre et écrire la question clé au tableau : qu’est-ce que je pense de moi – et est-ce vrai ? Annoncer les séances du chapitre : aujourd’hui découvrir, ensuite examiner comme des détectives, pour finir essayer de nouvelles phrases – et, si la séance au choix a lieu, la semaine prochaine d’abord une séance calme, rien que pour soi, sur ses propres phrases.",
+            "text": "Revenir sur la mission de la semaine : ton moment est-il venu – et qu’as-tu fait ? Pouce en haut : le moment est venu, j’ai d’abord posé la question ; au milieu : le moment est venu, j’ai fait autre chose ; en bas : le moment n’est pas venu. Une voix raconte en une phrase ; puis annoncer le nouveau chapitre : qu’est-ce que je pense de moi – et est-ce vrai ?",
             "sagen": [
-              "Votre moment est-il venu – et qu’avez-vous fait ? Le pouce, puis une voix.",
-              "La semaine dernière, vous avez vérifié des publications en ligne : vrai ou faux ? À partir d’aujourd’hui, vous vérifiez quelque chose d’encore plus proche – les phrases dans votre propre tête.",
-              "Dans ce chapitre, vous n’avez rien de personnel à raconter. On travaille avec des personnages inventés et avec des cartes."
+              "Votre moment est-il venu, et qu’avez-vous fait – pouce en haut, au milieu ou en bas ?",
+              "À partir d’aujourd’hui, vous vérifiez quelque chose de plus proche qu’une publication en ligne : les phrases dans votre propre tête – vous n’avez rien de personnel à raconter, on travaille avec des personnages inventés et des cartes."
             ],
-            "tipp": "Laisser au bord du tableau l’escalier du chapitre : découvrir – examiner – essayer, avec la séance au choix « regarder en privé » comme marche intermédiaire. Quand on sait ce qui arrive, on s’ouvre plus facilement à un sujet personnel. Pour la mission, demander surtout ce qui a été difficile – elle n’est pas contrôlée."
+            "tipp": "Laisser au bord du tableau l’escalier du chapitre : découvrir, examiner, essayer – avec la séance au choix « regarder en privé » comme marche intermédiaire. Pour la mission, demander surtout ce qui a été difficile ; elle n’est pas contrôlée."
           },
           {
             "titel": "Une pensée fait la différence",
-            "dauer": 15,
-            "phase": "input",
-            "text": "L’enseignant·e joue Ben deux fois ; un ou une volontaire tient la bulle de pensée au-dessus de sa tête et la lit à voix haute. La situation : Ben a écrit à Mila dans l’après-midi ; le soir, il voit : lu, pas de réponse. Version A avec la première bulle, version B avec la deuxième (1 min chacune). Après chaque version, la classe propose l’émotion (mots de la roue) et le comportement ; découvrir le tableau et compléter, chacun le reporte dans l’exercice 1 de la fiche (5 min). Puis expliquer brièvement (3 min) : entre la situation et l’émotion, il y a une pensée – si rapide qu’on la remarque à peine. La pensée qui vient en premier dépend souvent d’une croyance : une phrase sur soi qu’on tient pour vraie depuis longtemps ; certaines aident, d’autres freinent. Préciser : croire veut dire ici “tenir pour vrai” – rien à voir avec la religion. Pour finir, lire l’histoire de Luca ; chacun montre avec le pouce si la phrase de Luca est vraie, deux voix expliquent (5 min). Si un jeune de la classe bégaie ou se fait souvent moquer quand il lit, prendre l’histoire de Liam à la place de celle de Luca.",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "D’abord le modèle : l’enseignant·e joue Ben deux fois, un ou une volontaire tient la bulle de pensée. Puis les binômes et les îlots s’exercent : même situation, autres pensées (exercices 1 et 2). Pour finir, une phrase au tableau : les pensées sont des suppositions, pas des faits.",
             "sagen": [
               "Le même message, deux pensées – et tout à coup, deux soirées complètement différentes.",
-              "Quelqu’un qui croit au fond de lui que personne ne l’aime voit beaucoup plus vite un rejet dans “lu, pas de réponse”.",
-              "Beaucoup de croyances avaient une raison au départ. La question, c’est de savoir si elles sont encore vraies aujourd’hui."
+              "Qui croit au fond de lui que personne ne l’aime voit plus vite un rejet dans « lu, pas de réponse » – ces phrases sur soi s’appellent des croyances, et certaines aident, d’autres freinent."
             ],
             "punkte": [
-              "Luca avait dix ans quand il a bloqué en lisant à voix haute et que deux élèves ont ri. Depuis, il pense : « Je ne sais pas parler devant les autres. » Au club de foot, il explique chaque semaine les exercices aux plus jeunes – mais en classe, il ne lève jamais la main.",
-              "À la place : Liam a un jour oublié un poème devant la classe. Depuis, il pense : « Je n’arrive à rien retenir. » Pourtant, il connaît par cœur depuis des années la composition de son équipe préférée."
+              "Ben (6 min) : il écrit à Mila ; le soir, il voit : lu, pas de réponse. Version A avec la première bulle (« Elle n’a plus envie de me parler. »), version B avec la deuxième (« Elle est sûrement encore à l’entraînement. ») ; après chaque version, la classe dit l’émotion et le comportement.",
+              "Tableau (4 min) : découvrir situation – pensée – émotion – comportement ; expliquer la croyance : une phrase sur soi qu’on tient pour vraie depuis longtemps – rien à voir avec la religion.",
+              "Exercice 1 (6 min) : à deux, relier la pensée de Yusuf à l’émotion et au comportement qui vont avec ; l’enseignant·e lit chaque pensée, un binôme dit où mène son trait.",
+              "Exercice 2 (10 min) : quelqu’un rit quand Aylin entre. À tour de rôle, chaque jeune de l’îlot dit à voix haute une autre pensée qu’Aylin pourrait avoir ; puis chacun écrit la plus utile, avec l’émotion et le comportement. Deux îlots lisent.",
+              "Bilan (4 min) : une supposition, c’est : je ne le sais pas avec certitude. Un fait, une caméra pourrait le filmer. La première pensée vient toute seule – le deuxième regard, on peut l’entraîner."
             ],
-            "tabelle": {
-              "spalten": [
-                "Version A",
-                "Version B"
-              ],
-              "zeilen": [
-                [
-                  "Situation : lu, pas de réponse",
-                  "Situation : lu, pas de réponse"
-                ],
-                [
-                  "Pensée : « Elle n’a plus envie de me parler. »",
-                  "Pensée : « Elle est sûrement encore à l’entraînement. »"
-                ],
-                [
-                  "Émotion : blessé, triste",
-                  "Émotion : serein, un peu impatient"
-                ],
-                [
-                  "Comportement : n’écrit plus rien, passe une sale soirée",
-                  "Comportement : fait autre chose, redemande demain"
-                ]
-              ]
-            },
-            "tipp": "Raconter soi-même une croyance sans danger, réglée depuis longtemps, par exemple : à 13 ans, je pensais que je ne savais pas chanter – jusqu’au jour où je me suis retrouvé·e dans une chorale. Le sujet devient concret sans que personne dans la classe ait à parler de soi. La bulle peut très bien être tenue par le clown de la classe : il a son moment, mais dans un rôle avec des limites claires.",
-            "wennEsKippt": "Si quelqu’un lance : « Moi, je suis nul, c’est comme ça », ne pas contredire ni faire la morale : dire calmement que beaucoup connaissent cette phrase et l’écrire au tableau, sans nom, comme exemple de phrase qui freine. Si Ben et Mila font ricaner (« elle est amoureuse »), rire un instant et continuer – le message pourrait tout aussi bien être pour un copain. Si la bulle devient un spectacle, le jeune continue de la tenir, mais c’est l’enseignant·e qui la lit.",
-            "blatt": "ff7-gedanke-macht-den-unterschied"
-          },
-          {
-            "titel": "Même situation, autres pensées",
-            "dauer": 15,
-            "phase": "uebung",
-            "text": "Exercice 2 à deux (4 min) : on appelle Yusuf au tableau – quelle pensée mène où ? Pour comparer, lire chaque pensée à voix haute ; un binôme dit où mène son trait. Exercice 3 en îlots (6 min) : quelqu’un rit quand Aylin entre en classe. À tour de rôle, chacun dit à voix haute une autre pensée, comme Aylin pourrait la penser ; puis chacun écrit la pensée qui, selon lui, aide le plus Aylin, avec l’émotion et le comportement en mots-clés. Deux îlots lisent leur pensée la plus utile. Exercice 4 seul (4 min) : Mila et Jang récupèrent un devoir en classe avec la même note, mais ils ne croient pas la même chose sur eux-mêmes ; dans les bulles, ce qu’ils pensent d’abord, en dessous, en mots-clés, ce qu’ils font ensuite. Pour finir, au tableau (1 min) : les pensées sont des suppositions, pas des faits. Une supposition, c’est : je ne le sais pas avec certitude. Un fait, c’est : une caméra pourrait le filmer.",
-            "sagen": [
-              "Quelle différence entre “ils se moquent de moi” et “quelqu’un a peut-être raconté une blague” ? La situation est la même.",
-              "Une pensée, c’est une supposition. Certaines sont justes, d’autres non – on ne le sait qu’en regardant de plus près."
-            ],
-            "tipp": "Dans l’exercice 3, les pensées menaçantes arrivent en premier – c’est normal et ça fait partie de l’exercice. Le but n’est pas de trouver la seule bonne pensée, mais de remarquer qu’il y en a plusieurs.",
-            "wennEsKippt": "Si un îlot dit qu’on ne choisit pas ses pensées, lui donner raison : la première pensée vient toute seule. Le deuxième regard, lui, s’entraîne – c’est tout le sujet du chapitre. Si l’exemple du rire est rapporté à une vraie scène de la classe, arrêter avec bienveillance : aujourd’hui, on parle d’Aylin, pas de nous. Si une pensée méchante sur l’apparence d’Aylin surgit, demander calmement : est-ce qu’Aylin penserait ça ? On cherche ses pensées à elle, pas des remarques sur elle. Un jeune qui refuse fait l’exercice 2 à l’oral avec son voisin ; cela suffit.",
+            "wennEsKippt": "Si quelqu’un lance « Moi, je suis nul, c’est comme ça », ne pas contredire : dire calmement que beaucoup connaissent cette phrase et l’écrire au tableau, sans nom, comme exemple de phrase qui freine. Si la bulle devient un spectacle ou si un exemple est rapporté à une vraie scène de la classe, arrêter gentiment : aujourd’hui, on parle de Ben et d’Aylin, pas de nous.",
             "blatt": "ff7-gedanke-macht-den-unterschied"
           },
           {
             "titel": "Pause active : tous ceux qui…",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se lève derrière sa chaise. Lire des phrases ; qui se sent concerné s’assoit un instant, puis se relève. L’enseignant·e participe ; qui préfère rester assis lève brièvement la main pour dire oui. Les phrases parlent des pensées rapides du quotidien et restent volontairement anodines. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Tout le monde se lève derrière sa chaise. L’enseignant·e lit des phrases ; qui se sent concerné s’assoit un instant, puis se relève, qui préfère rester assis lève la main. L’enseignant·e participe ; les phrases parlent des pensées rapides du quotidien et restent volontairement anodines.",
+            "sagen": [
+              "Qui se sent concerné s’assoit un instant – et se relève."
+            ],
             "punkte": [
               "Tous ceux qui ont pensé ce matin, en entendant le réveil : encore cinq minutes.",
               "Tous ceux qui ont déjà eu une chanson dans la tête toute la journée.",
-              "Tous ceux qui se sont déjà dit avant un devoir en classe : ça va être une catastrophe – et puis ça s’est bien passé.",
-              "Tous ceux qui sont déjà restés éveillés la nuit parce que leur tête ne voulait pas s’arrêter.",
-              "Tous ceux qui ont déjà cru que quelqu’un leur en voulait – et en fait, il n’y avait rien.",
-              "Tous ceux qui se réjouissent de quelque chose aujourd’hui."
+              "Tous ceux qui se sont dit avant un devoir en classe : ça va être une catastrophe – et puis ça s’est bien passé.",
+              "Tous ceux qui ont déjà cru que quelqu’un leur en voulait – et en fait, il n’y avait rien."
             ],
-            "tipp": "Les phrases trois et cinq sont de petites preuves du thème du jour : les pensées peuvent se tromper. Le dire brièvement, sans poser de questions."
+            "tipp": "Les deux dernières phrases sont de petites preuves du thème : les pensées peuvent se tromper. Si la grande récréation tombe entre les deux heures, supprimer l’exercice."
           },
           {
             "titel": "Jeu de tri : aide, ça dépend, freine",
-            "dauer": 25,
+            "dauer": 35,
             "phase": "uebung",
-            "text": "Chaque îlot reçoit une enveloppe avec douze cartes phrases et une feuille A3 qu’il partage en trois zones : aide – ça dépend – freine. Trier (8 min) : à tour de rôle, chacun tire une carte, la lit à voix haute, la pose dans une zone et dit en une phrase pourquoi ; qui n’est pas d’accord peut la déplacer en expliquant. Trouver les paires (5 min) : pour chaque carte qui freine, le groupe cherche la carte qui aide et lui répond, puis pose les deux ensemble. D’où ça vient (4 min) : le groupe choisit une carte qui freine et réfléchit, avec la liste au tableau, à l’origine possible d’une telle phrase. En classe entière (8 min) : chaque îlot dit sa carte la plus difficile et son idée d’origine ; l’enseignant·e fait un trait au tableau à côté de chaque origine citée. Les cartes retournent dans l’enveloppe – elles resserviront.",
+            "text": "Chaque îlot reçoit douze cartes phrases et une feuille A3 avec trois zones : aide – ça dépend – freine. Les groupes trient, cherchent pour chaque carte qui freine la carte qui aide, et réfléchissent à l’origine d’une phrase qui freine (exercice 3).",
             "sagen": [
-              "Il n’y a pas toujours une seule bonne réponse. Ce qui compte, c’est d’expliquer pourquoi.",
-              "Ça a l’air fort, “tout m’est égal”. Mais est-ce que cette phrase aide – ou est-ce qu’elle freine ?",
-              "D’où quelqu’un pourrait-il tenir une phrase pareille ?"
+              "Il n’y a pas toujours une seule bonne réponse – ce qui compte, c’est d’expliquer pourquoi.",
+              "Pour « Tout m’est égal », la phrase aide-t-elle ou freine-t-elle – et d’où quelqu’un pourrait-il la tenir ?"
             ],
             "punkte": [
-              "Une seule expérience : une fois, quelque chose a raté – et c’est devenu « toujours ».",
-              "Les remarques des autres : quelqu’un l’a dit assez souvent.",
-              "Les comparaisons : les autres ont l’air de tout mieux réussir.",
-              "Les réseaux sociaux : des images parfaites, des vies parfaites – mais seulement un extrait.",
-              "Une ancienne protection : la phrase a un jour évité une déception."
+              "Trier (10 min) : à tour de rôle, chacun tire une carte, la lit, la pose dans une zone et dit en une phrase pourquoi ; qui n’est pas d’accord peut la déplacer en expliquant.",
+              "Paires (6 min) : pour chaque carte qui freine, les groupes cherchent la carte qui aide et posent les deux ensemble.",
+              "Origine (8 min) : le groupe choisit une carte qui freine et réfléchit, avec la liste au tableau, à son origine – une seule expérience, les remarques des autres, les comparaisons, les réseaux sociaux, une ancienne protection – et coche à l’exercice 3.",
+              "En classe entière (7 min) : chaque îlot dit sa carte la plus difficile et son idée d’origine ; l’enseignant·e fait un trait au tableau à côté de chaque origine citée.",
+              "Moi aussi (4 min) : la tête sur les bras ou le regard sur la table ; qui s’est déjà dit une phrase qui freine parmi les cartes lève brièvement le pouce – l’enseignant·e dit seulement si c’est quelques-uns, beaucoup ou presque tous."
             ],
-            "tipp": "Les cartes de la zone « ça dépend » sont les plus riches : les jeunes y voient qu’une phrase a pu protéger autrefois et freiner aujourd’hui. C’est là qu’il faut poser des questions en passant dans les îlots. Qui ne veut pas parler pose seulement la carte, le groupe explique. Donner une tâche aux jeunes agités : distribuer les cartes, chronométrer, gérer la zone « freine ».",
-            "wennEsKippt": "Si des cartes sont attribuées à des élèves de la classe (« ça, c’est la phrase de Kevin »), arrêter tout de suite et montrer la charte de classe : aujourd’hui, on parle de phrases, pas de personnes. Reprendre ensuite dans un ordre fixe ; qui recommence ne fait plus que lire. Si un îlot reste muet, s’asseoir avec lui et tirer soi-même la première carte. Si le temps manque, parler de l’origine en classe entière avec une seule carte.",
-            "blatt": "ff7-glaubenssatz-karten"
-          },
-          {
-            "titel": "Moi aussi – la tête sur les bras",
-            "dauer": 10,
-            "phase": "uebung",
-            "text": "D’abord expirer une fois tous ensemble, puis chacun pose la tête sur ses bras croisés, les yeux fermés ou tournés vers la table ; qui ne veut pas poser la tête regarde simplement la table – ça compte autant (1 min). Dire la règle avant : qui s’est déjà dit une phrase sur lui-même lève brièvement le pouce – la main reste posée sur la table, à côté de la tête, pas en l’air. Lire lentement les phrases (liste), attendre quelques secondes après chacune et dire seulement combien de pouces environ – pas mal, presque tout le monde, quelques-uns –, sans nom ni commentaire ; aucune tête ne reste baissée plus de quatre minutes (4 min). Ensuite, tout le monde se redresse. Demander : qu’est-ce que vous remarquez ? Retenir : les phrases qui freinent sont normales, et personne n’est seul avec elles – les adultes aussi les connaissent (4 min). Laisser au tableau une phrase qui freine pour le skill (1 min).",
-            "sagen": [
-              "Il n’y a que moi qui vois les pouces, et je dis seulement à peu près combien. Vous pouvez laisser la main immobile à chaque phrase.",
-              "Qu’est-ce que vous remarquez ? Beaucoup d’entre nous connaissent les mêmes phrases – celles qui freinent et celles qui aident."
-            ],
-            "punkte": [
-              "… « Aujourd’hui sera une bonne journée. » (pour essayer)",
-              "… « De toute façon, je n’y arriverai pas. »",
-              "… « Les autres sont meilleurs que moi. »",
-              "… « Si je m’entraîne, je progresse. »",
-              "… « Je dois être parfait·e. »",
-              "… « Je m’entends bien avec les autres. »",
-              "… « Si je dis non, plus personne ne m’aimera. »",
-              "… « Je suis un bon ami ou une bonne amie. »"
-            ],
-            "tipp": "Rester volontairement vague dans les retours : c’est justement le message. Les phrases qui aident, glissées entre les autres, sont voulues – elles montrent que chaque tête connaît les deux sortes et rendent le tour plus léger.",
-            "wennEsKippt": "Si quelqu’un ouvre les yeux, ricane ou commente, interrompre une fois et répéter la règle : les yeux fermés ou sur la table, pour que tout le monde puisse être sincère. Si ça reste agité, passer aux papiers : chacun reçoit un petit papier, l’enseignant·e annonce le numéro avant chaque phrase, chacun note les numéros des phrases qu’il connaît, plie le papier et le met dans la boîte ; l’enseignant·e compte après le cours et donne le résultat la semaine suivante. Si un jeune lève le pouce à presque toutes les phrases qui freinent et semble abattu, lui parler discrètement après le cours."
+            "wennEsKippt": "Si des cartes sont attribuées à des élèves de la classe (« Ça, c’est la phrase de Kevin »), arrêter tout de suite : aujourd’hui, on parle de phrases, pas de personnes. Si ça reste agité pendant « Moi aussi », passer aux papiers : chacun écrit oui ou non, plie et glisse dans la boîte.",
+            "blatt": "ff7-gedanke-macht-den-unterschied"
           },
           {
             "titel": "Skill : Merci, ma tête",
-            "dauer": 10,
+            "dauer": 15,
             "phase": "skill",
-            "text": "Annoncer : voici un skill pour la tête, pour les moments où une phrase qui freine devient bruyante et où l’on n’a pas le temps de la vérifier. Tout le monde est assis confortablement, les pieds au sol. Avec la phrase du tableau, par exemple « De toute façon, je n’y arriverai pas », guider lentement les trois étapes (liste) ; chacun parle intérieurement, environ une demi-minute par étape. Deuxième tour : chacun choisit en silence une phrase des cartes et fait les étapes seul. Troisième tour, pour qui veut : se faire dire la phrase, dans sa tête, par une voix de GPS, un commentateur sportif ou un personnage de dessin animé. Ensuite, deux ou trois retours : qu’est-ce qui a changé, et quand est-ce que ça pourrait aider – avant un devoir en classe, dans le bus, le soir au lit ? Expliquer : la phrase est encore là, mais vous la regardez de l’extérieur. La repousser ne marche pas, la classe le sait depuis l’ours blanc de la séance 16 ; vérifier si une phrase est vraie, ce sera le travail de la séance détective.",
+            "text": "Un skill pour la tête, pour les moments où une phrase qui freine devient bruyante et où l’on n’a pas le temps de la vérifier (5 min) : avec la phrase du tableau, par exemple « De toute façon, je n’y arriverai pas », guider lentement les trois étapes ; chacun parle intérieurement, puis une deuxième fois avec une phrase des cartes. Ensuite, la clôture (10 min) : Skills-Pass, mission, moment.",
             "sagen": [
-              "La phrase n’a pas besoin de disparaître. Vous reculez juste d’un pas – comme devant un écran dont on est trop près.",
-              "C’est un skill pour les phrases de tous les jours. Quand des pensées deviennent vraiment lourdes, il ne faut pas une astuce, mais une discussion – avec moi ou avec le SePAS."
+              "La phrase n’a pas besoin de disparaître – vous reculez juste d’un pas, comme devant un écran dont on est trop près.",
+              "C’est un skill pour les phrases de tous les jours – quand des pensées deviennent vraiment lourdes, il faut une discussion, avec moi ou avec le SePAS."
             ],
             "punkte": [
               "Remarque la phrase qui est là : « De toute façon, je n’y arriverai pas. »",
               "Mets devant : « Ma tête me dit : … »",
-              "Réponds-lui : « Merci, ma tête, c’est noté. » – et continue ce que tu étais en train de faire."
+              "Réponds-lui : « Merci, ma tête, c’est noté. » – et continue ce que tu étais en train de faire.",
+              "Skills-Pass (4 min) : une phrase en réponse à la question du tableau – quelle phrase d’aujourd’hui reste avec moi ? Exemple : les pensées sont des suppositions, pas des faits ; puis le tampon.",
+              "Mission et moment (6 min) : lire la mission ; à trois, chacun montre son moment – un doigt pour un message sans réponse, deux pour un rire ou un regard bizarre, trois pour un devoir en classe ou une note, le poing pour un moment à soi – et l’écrit dans la colonne « Mon moment : quand … » ; puis annoncer la suite."
             ],
-            "tipp": "La voix étrangère n’est pas une blague aux dépens du sujet : une phrase dite par un GPS ou un commentateur sportif perd tout de suite de son poids – et les plus âgés trouvent cela moins enfantin qu’un dessin animé. Variante pour le troisième tour : répéter le mot le plus dur de la phrase – par exemple « nul » – à voix basse et très vite pendant une demi-minute, jusqu’à ce qu’il ne soit plus qu’un son – les rires font partie de l’effet ; c’est exactement ce vieil exercice qui a été testé, et il enlève au mot un poids mesurable (encadré sur la fiche). Les débuts de phrase sont volontairement simples ; qui apprend encore la langue peut les utiliser ou penser dans sa propre langue.",
-            "wennEsKippt": "Si les voix déclenchent de grands rires, rire un instant avec la classe, puis recommencer en silence : dans la tête, pas à voix haute. Qui ne veut pas travailler avec une phrase des cartes garde celle du tableau. Personne n’est obligé de fermer les yeux."
-          },
-          {
-            "titel": "Skills-Pass, choisir son moment et mission de la semaine",
-            "dauer": 5,
-            "phase": "abschluss",
-            "text": "Skills-Pass (2 min) : écrire la question au tableau – quelle phrase d’aujourd’hui est-ce que je retiens ? Exemple : les pensées sont des suppositions, pas des faits. Chacun écrit sa phrase, l’enseignant·e passe avec le tampon. Choisir son moment (1 min) : lire la mission de la semaine dans le cahier – quand mon moment arrive, j’attrape la première pensée et je me demande quelle autre pensée irait aussi. À trois, tout le monde montre où son moment a le plus de chances d’arriver : un doigt pour un message sans réponse, deux pour un rire ou un regard qui semble bizarre, trois pour un devoir en classe ou une note, le poing pour un moment à soi ; puis chacun écrit son moment dans la colonne « Mon moment : quand … », un mot-clé suffit. Suite (2 min) : si la séance au choix a lieu, dire clairement que personne n’aura rien à lire à voix haute la semaine prochaine ; sinon, annoncer que la classe devient détective la semaine prochaine.",
-            "sagen": [
-              "Votre mission : quand votre moment arrive – un message sans réponse, un rire, un devoir en classe –, vous attrapez la première pensée et vous vous demandez : quelle autre pensée irait aussi ? Choisissez votre moment maintenant.",
-              "Si le moment ne vient pas cette semaine, c’est aussi une réponse. La semaine prochaine, je demande seulement : est-il venu – et qu’avez-vous fait ?"
-            ],
-            "tipp": "Prendre en photo les zones de tri d’un îlot et garder les enveloppes : les cartes resserviront dans les prochaines séances, jusqu’à l’arbre des croyances de la séance 30. Un moment qui arrive à coup sûr – le groupe de classe le soir, le prochain devoir rendu – porte mieux la mission que « un jour cette semaine ».",
-            "wennEsKippt": "Si quelqu’un propose un moment pour rire, l’accepter s’il est sérieux : tout vrai moment compte. Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne le lui demandera. Qui apprend encore la langue ou n’aime pas écrire dessine un petit signe pour son moment : portable, visage, feuille."
+            "wennEsKippt": "Si ça rit, rire un instant puis recommencer en silence : dans la tête, pas à voix haute. Qui ne veut pas travailler avec une phrase des cartes garde celle du tableau ; personne n’est obligé de fermer les yeux."
           }
         ],
-        "bruecke": "La semaine prochaine, chacun regarde au calme et rien que pour soi ses propres phrases qui freinent – personne ne lit à voix haute. Sans la séance au choix : la semaine prochaine, vous devenez détectives et vous vérifiez avec des preuves si une telle phrase est vraiment vraie.",
-        "mission": "Quand ton moment arrive – un message sans réponse, un rire, un devoir en classe –, attrape ta première pensée et demande-toi : quelle autre pensée irait aussi ?",
-        "hintergrund": "La base est le modèle ABC de la thérapie cognitive : entre la situation (A) et l’émotion et le comportement (C), il y a l’évaluation (B) – une pensée souvent colorée par une conviction profonde sur soi, appelée croyance dans la matière (Ellis, 1962 ; Beck, 2011). Le pur travail sur les pensées mené par des enseignants n’a guère agi dans de grandes études scolaires (Stallard et al., 2014). D’où une séance courte, sur des personnages et des cartes, qui finit par un skill efficace même sans thérapeute : la défusion de la thérapie d’acceptation et d’engagement – nommer une pensée comme une pensée et prendre de la distance au lieu de la combattre (Hayes, Strosahl & Wilson, 2012). Masuda et al. (2004) ont montré qu’une demi-minute d’un tel exercice rend un mot dur sur soi nettement moins crédible et moins douloureux – d’où l’encadré « Ce que dit la recherche ».",
+        "bruecke": "La semaine prochaine, dans la séance au choix, vous regardez en privé vos propres phrases – personne ne lit à voix haute ; si elle saute, vous devenez tout de suite détectives et vérifiez avec des preuves si une phrase est vraie.",
+        "mission": "Attrape ta première pensée : quelle autre pensée irait aussi ?",
+        "hintergrund": "Le modèle ABC : entre la situation et l’émotion, il y a une évaluation, souvent colorée par des convictions sur soi – les croyances (Ellis, 1962 ; Beck, 2011). Le travail sur les pensées mené par des enseignants a peu agi dans les études scolaires (Stallard et al., 2014) ; d’où des personnages, des cartes et un skill : la défusion – nommer une pensée comme une pensée et prendre de la distance (Hayes, Strosahl & Wilson, 2012 ; Masuda et al., 2004).",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
           "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
           "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
         ],
-        "achtung": "Les croyances touchent à l’estime de soi. Aujourd’hui, on ne demande pas ses propres phrases ; pour « Moi aussi », seulement les phrases prévues, la tête sur les bras, sans noms ni commentaires. Ne jamais laisser attribuer des cartes à des élèves de la classe. Si des phrases de forte dévalorisation apparaissent – ne rien valoir, ou que ce serait mieux sans soi –, ne pas approfondir devant la classe : en parler en tête-à-tête après le cours, informer le SePAS le jour même et agir selon le protocole de protection de l’école. En cas de danger immédiat, ne pas laisser le jeune seul, 112.",
+        "achtung": "Les croyances touchent à l’estime de soi : aujourd’hui, on ne demande pas ses propres phrases ; pour « Moi aussi », seulement les phrases prévues, la tête baissée, sans noms ni commentaires. Ne jamais laisser attribuer des cartes à des élèves de la classe. Si des phrases de forte dévalorisation apparaissent – ne rien valoir, ou que ce serait mieux sans soi –, ne pas approfondir devant la classe : en parler en tête-à-tête après le cours, informer le SePAS le jour même ; en cas de danger immédiat, ne pas laisser le jeune seul, 112.",
         "differenzierung": {
-          "leichter": "Exercices 2 et 3 en binôme avec un camarade qui lit bien ; pour l’exercice 3, des mots-clés ou des mots de la roue suffisent. Au jeu de tri, un membre du groupe lit les cartes, le jeune les pose. Laisser les mots-clés au tableau ; qui apprend encore la langue d’enseignement peut noter ses pensées dans sa langue. Pour la colonne « Mon moment », un mot ou un signe suffit.",
-          "schwerer": "Pour l’exercice 3, écrire une deuxième pensée, réaliste et qui aide quand même ; pour l’exercice 4, réfléchir à ce que Mila devrait croire pour s’y prendre autrement au prochain devoir. Au jeu de tri, animer le groupe et trouver, pour les cartes de la zone « ça dépend », une situation où elles aident et une où elles freinent."
+          "leichter": "Exercices 1 et 2 en binôme avec un camarade qui lit bien ; des mots-clés ou des mots de la roue suffisent. Au jeu de tri, un membre du groupe lit les cartes, le jeune les pose ; pour la colonne « Mon moment », un mot ou un signe suffit.",
+          "schwerer": "Pour l’exercice 2, écrire une deuxième pensée, réaliste et qui aide quand même. Au jeu de tri, animer le groupe et trouver pour les cartes de la zone « ça dépend » une situation où elles aident et une où elles freinent."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec émotion et chiffre (5 min), Ben joué deux fois, avec le tableau et une courte explication des croyances (12 min), exercices 2 et 4 de la fiche (8 min), jeu de tri sans l’origine (15 min), Merci, ma tête (5 min), Skills-Pass, choix du moment et mission de la semaine (5 min). « Moi aussi » est supprimé ou ouvre la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), Ben joué deux fois avec le tableau et l’exercice 1 (15 min), jeu de tri sans l’origine (15 min), Merci, ma tête (5 min), Skills-Pass et mission (10 min). La pause active, l’exercice 2 et « Moi aussi » sautent."
       }
     }
   ],
@@ -576,90 +392,31 @@
       ],
       "de": {
         "titel": "Der Gedanke macht den Unterschied",
-        "untertitel": "Dieselbe Situation kann ganz verschieden ausgehen – je nachdem, was du in dem Moment denkst.",
+        "untertitel": "Gleiche Lage, anderer Gedanke, anderer Ausgang",
         "bausteine": [
-          {
-            "art": "text",
-            "text": "Zwischen dem, was passiert, und dem, was du fühlst, steht ein Gedanke. Er ist oft so schnell, dass du ihn kaum bemerkst. Trotzdem entscheidet er mit, wie es weitergeht."
-          },
           {
             "art": "schritte",
             "stil": "kette",
             "linien": 0,
             "items": [
               {
-                "titel": "Situation",
-                "text": "Was passiert – so, wie eine Kamera es filmen würde"
+                "titel": "Situation"
               },
               {
-                "titel": "Gedanke",
-                "text": "Was dir in dem Moment durch den Kopf geht"
+                "titel": "Gedanke"
               },
               {
-                "titel": "Gefühl",
-                "text": "Was du spürst, im Kopf und im Körper"
+                "titel": "Gefühl"
               },
               {
-                "titel": "Verhalten",
-                "text": "Was du dann tust – oder lässt"
+                "titel": "Verhalten"
               }
             ]
           },
           {
             "art": "aufgabe",
-            "text": "Dieselbe Nachricht, zwei Gedanken: Wie fühlt sich Ben jeweils – und was tut er als Nächstes?",
-            "hinweis": "Ben hat Mila am Nachmittag geschrieben. Am Abend steht da: gelesen. Keine Antwort.",
-            "symbole": [
-              "schreiben"
-            ]
-          },
-          {
-            "art": "comic",
-            "spalten": 2,
-            "felder": [
-              {
-                "figuren": [
-                  "figur:ben:neutral"
-                ],
-                "requisit": "icon:device-mobile-message",
-                "blase": "denken",
-                "text": "Gelesen und keine Antwort. Die hat keinen Bock mehr auf mich."
-              },
-              {
-                "figuren": [
-                  "figur:ben:neutral"
-                ],
-                "requisit": "icon:device-mobile-message",
-                "blase": "denken",
-                "text": "Gelesen, keine Antwort. Sie ist bestimmt noch beim Training."
-              }
-            ]
-          },
-          {
-            "art": "spalten",
-            "verhaeltnis": "1:1",
-            "links": [
-              {
-                "art": "satzanfaenge",
-                "items": [
-                  "Gefühl:",
-                  "Verhalten:"
-                ]
-              }
-            ],
-            "rechts": [
-              {
-                "art": "satzanfaenge",
-                "items": [
-                  "Gefühl:",
-                  "Verhalten:"
-                ]
-              }
-            ]
-          },
-          {
-            "art": "aufgabe",
-            "text": "Yusuf wird an die Tafel gerufen. Welcher Gedanke führt wohin? Verbinde.",
+            "text": "Verbinde jeden Gedanken von Yusuf mit dem, was er fühlt und tut.",
+            "hinweis": "Yusuf wird an die Tafel gerufen.",
             "symbole": [
               "verbinden",
               "partner"
@@ -672,213 +429,101 @@
               "… fühlt und tut"
             ],
             "links": [
-              "„Alle warten nur darauf, dass ich mich blamiere.“",
+              "„Alle warten darauf, dass ich mich blamiere.“",
               "„Schon wieder ich. Die hat was gegen mich.“",
               "„Nur eine Aufgabe. Wenn ich hänge, frage ich nach.“"
             ],
             "rechts": [
-              "wütend – bleibt sitzen und murmelt: „Immer ich.“",
-              "etwas nervös – geht nach vorn und fängt an",
-              "ängstlich, wird rot – sagt „Weiß ich nicht“, obwohl er es weiß"
+              "wütend – murmelt: „Immer ich.“",
+              "etwas nervös – geht nach vorn",
+              "ängstlich – sagt: „Weiß ich nicht.“"
             ]
           },
           {
-            "art": "seitenumbruch"
-          },
-          {
             "art": "aufgabe",
-            "text": "Jemand lacht, als Aylin in die Klasse kommt. Sie denkt: „Die lachen über mich.“ Sammelt andere Gedanken. Schreib den auf, der ihr am meisten hilft.",
-            "hinweis": "Aylins erster Gedanke macht sie beschämt und wütend. Sie schaut zu Boden und setzt sich schnell hin.",
+            "text": "Schreib einen anderen Gedanken auf, den Aylin denken könnte.",
+            "hinweis": "Jemand lacht, als Aylin hereinkommt. Sie denkt: „Die lachen über mich.“",
             "symbole": [
               "schreiben",
               "gruppe"
             ]
           },
           {
-            "art": "spalten",
-            "verhaeltnis": "1:1",
-            "links": [
-              {
-                "art": "satzanfaenge",
-                "items": [
-                  "Ein anderer Gedanke:"
-                ],
-                "linien": 2
-              }
+            "art": "satzanfaenge",
+            "items": [
+              "Ein anderer Gedanke:",
+              "Dann fühlt und tut Aylin:"
             ],
-            "rechts": [
-              {
-                "art": "satzanfaenge",
-                "items": [
-                  "Gefühl und Verhalten:"
-                ],
-                "linien": 2
-              }
-            ]
+            "linien": 2
           },
           {
             "art": "aufgabe",
-            "text": "Mila und Jang bekommen beide 31 von 60 Punkten zurück. Was denken sie zuerst? Schreib es in die Denkblasen.",
-            "hinweis": "Mila glaubt schon lange: „Ich bin halt dumm.“ Jang glaubt: „Wenn ich übe, werde ich besser.“",
+            "text": "Kreuze an, woher der Satz einer bremsenden Karte kommen kann.",
             "symbole": [
-              "schreiben"
+              "ankreuzen"
             ]
           },
           {
-            "art": "comic",
-            "spalten": 2,
-            "felder": [
-              {
-                "figuren": [
-                  "figur:jana:enttaeuscht"
-                ],
-                "requisit": "icon:file-text",
-                "blase": "denken",
-                "untertitel": "Mila"
-              },
-              {
-                "figuren": [
-                  "figur:ben:ruhig"
-                ],
-                "requisit": "icon:file-text",
-                "blase": "denken",
-                "untertitel": "Jang"
-              }
-            ]
-          },
-          {
-            "art": "spalten",
-            "verhaeltnis": "1:1",
-            "links": [
-              {
-                "art": "satzanfaenge",
-                "items": [
-                  "Was tut Mila dann?"
-                ],
-                "linien": 1
-              }
-            ],
-            "rechts": [
-              {
-                "art": "satzanfaenge",
-                "items": [
-                  "Was tut Jang dann?"
-                ],
-                "linien": 1
-              }
+            "art": "ankreuzen",
+            "spalten": 3,
+            "items": [
+              "eine einzige Erfahrung",
+              "Sprüche von anderen",
+              "Vergleiche",
+              "Social Media",
+              "früher ein Schutz"
             ]
           },
           {
             "art": "info",
-            "symbol": "merke",
-            "titel": "Gedanken sind Vermutungen, keine Tatsachen",
-            "text": "Manche Vermutungen stimmen, manche nicht. Welcher Gedanke dir zuerst kommt, hängt oft von einem Glaubenssatz ab: einem Satz über dich, den du schon lange für wahr hältst. Manche Glaubenssätze helfen, manche bremsen."
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Ein Gedanke ist eine Vermutung, keine Tatsache. Ein Glaubenssatz ist ein Satz über dich, den du lange glaubst. Manche helfen, manche bremsen – fast alle kennen solche Sätze."
           }
         ],
         "lehrer": {
-          "ziel": "Die Jugendlichen verstehen an erfundenen Figuren das Modell Situation – Gedanke – Gefühl – Verhalten und sehen, dass Glaubenssätze färben, welcher Gedanke zuerst kommt.",
+          "ziel": "Die Jugendlichen verstehen an erfundenen Figuren das Modell Situation – Gedanke – Gefühl – Verhalten, sehen, dass andere Gedanken andere Wege öffnen, und nennen, woher bremsende Sätze kommen können.",
           "ablauf": [
-            "Einheit 27, Schritt 3: Aufgabe 1 gemeinsam mit dem Tafelbild, nachdem die Lehrkraft Ben zweimal gespielt hat.",
-            "Schritt 4: Aufgabe 2 zu zweit (4 Min.), Aufgabe 3 erst mündlich in der Tischgruppe, dann einen Gedanken aufschreiben (6 Min.), Aufgabe 4 allein (4 Min.).",
-            "Zum Schluss den Merkkasten lesen: Gedanken sind Vermutungen, keine Tatsachen.",
-            "Der Kasten „Aus der Forschung“ fasst Masuda et al. (2004) zusammen; der Beleg steht im Hintergrund der Einheit."
+            "Einheit 27, Schritt 3: Ben zweimal spielen und das Modell an die Tafel; Aufgabe 1 zu zweit (6 Min.), Aufgabe 2 in der Tischgruppe (10 Min.).",
+            "Schritt 5: Aufgabe 3 nach dem Sortierspiel – eine bremsende Karte wählen und die Herkunft ankreuzen.",
+            "Zum Schluss den Kasten „Gut zu wissen“ lesen: Gedanken sind Vermutungen, keine Tatsachen."
           ],
           "hintergrund": "Das Blatt folgt dem kognitiven Modell: Nicht die Situation allein, sondern ihre Bewertung prägt Gefühl und Verhalten (Ellis, 1962; Beck, 2011). Grundüberzeugungen – hier Glaubenssätze – färben, welcher Gedanke zuerst kommt. Arbeitsbücher der kognitiven Verhaltenstherapie für Jugendliche führen das Modell an harmlosen Alltagssituationen ein, bevor eigene Themen folgen (Stallard, 2019).",
           "quellen": [
             "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
             "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
-            "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
-            "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
+            "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
           ],
           "material": "Schülerheft, Tafelbild aus Schritt 3"
         }
       },
       "fr": {
         "titel": "La pensée fait la différence",
-        "untertitel": "Une même situation peut finir de façons très différentes – selon ce que tu penses sur le moment.",
+        "untertitel": "Même situation, autre pensée, autre suite",
         "bausteine": [
-          {
-            "art": "text",
-            "text": "Entre ce qui se passe et ce que tu ressens, il y a une pensée. Elle est souvent si rapide que tu la remarques à peine. Pourtant, elle décide en partie de la suite."
-          },
           {
             "art": "schritte",
             "stil": "kette",
             "linien": 0,
             "items": [
               {
-                "titel": "Situation",
-                "text": "Ce qui se passe – comme une caméra le filmerait"
+                "titel": "Situation"
               },
               {
-                "titel": "Pensée",
-                "text": "Ce qui te passe par la tête à ce moment-là"
+                "titel": "Pensée"
               },
               {
-                "titel": "Émotion",
-                "text": "Ce que tu ressens, dans la tête et dans le corps"
+                "titel": "Émotion"
               },
               {
-                "titel": "Comportement",
-                "text": "Ce que tu fais ensuite – ou ce que tu ne fais pas"
+                "titel": "Comportement"
               }
             ]
           },
           {
             "art": "aufgabe",
-            "text": "Le même message, deux pensées : comment se sent Ben chaque fois – et que fait-il ensuite ?",
-            "hinweis": "Ben a écrit à Mila dans l’après-midi. Le soir, il voit : lu. Pas de réponse.",
-            "symbole": [
-              "schreiben"
-            ]
-          },
-          {
-            "art": "comic",
-            "spalten": 2,
-            "felder": [
-              {
-                "figuren": [
-                  "figur:ben:neutral"
-                ],
-                "requisit": "icon:device-mobile-message",
-                "blase": "denken",
-                "text": "Lu et pas de réponse. Elle n’a plus envie de me parler."
-              },
-              {
-                "figuren": [
-                  "figur:ben:neutral"
-                ],
-                "requisit": "icon:device-mobile-message",
-                "blase": "denken",
-                "text": "Lu, pas de réponse. Elle est sûrement encore à l’entraînement."
-              }
-            ]
-          },
-          {
-            "art": "spalten",
-            "verhaeltnis": "1:1",
-            "links": [
-              {
-                "art": "satzanfaenge",
-                "items": [
-                  "Émotion :",
-                  "Comportement :"
-                ]
-              }
-            ],
-            "rechts": [
-              {
-                "art": "satzanfaenge",
-                "items": [
-                  "Émotion :",
-                  "Comportement :"
-                ]
-              }
-            ]
-          },
-          {
-            "art": "aufgabe",
-            "text": "On appelle Yusuf au tableau. Quelle pensée mène où ? Relie.",
+            "text": "Relie chaque pensée de Yusuf à ce qu’il ressent et fait.",
+            "hinweis": "On appelle Yusuf au tableau.",
             "symbole": [
               "verbinden",
               "partner"
@@ -896,118 +541,65 @@
               "« C’est juste un exercice. Si je bloque, je demande. »"
             ],
             "rechts": [
-              "en colère – reste assis et marmonne : « Toujours moi. »",
-              "un peu nerveux – va au tableau et commence",
-              "angoissé, rougit – dit « Je ne sais pas » alors qu’il sait"
+              "en colère – marmonne : « Toujours moi. »",
+              "un peu nerveux – va au tableau",
+              "angoissé – dit : « Je ne sais pas. »"
             ]
           },
           {
-            "art": "seitenumbruch"
-          },
-          {
             "art": "aufgabe",
-            "text": "Quelqu’un rit quand Aylin entre en classe. Elle pense : « Ils se moquent de moi. » Cherchez d’autres pensées. Écris celle qui l’aide le plus.",
-            "hinweis": "Sa première pensée la rend honteuse et en colère. Elle regarde par terre et s’assoit vite.",
+            "text": "Écris une autre pensée qu’Aylin pourrait avoir.",
+            "hinweis": "Quelqu’un rit quand Aylin entre. Elle pense : « Ils se moquent de moi. »",
             "symbole": [
               "schreiben",
               "gruppe"
             ]
           },
           {
-            "art": "spalten",
-            "verhaeltnis": "1:1",
-            "links": [
-              {
-                "art": "satzanfaenge",
-                "items": [
-                  "Une autre pensée :"
-                ],
-                "linien": 2
-              }
+            "art": "satzanfaenge",
+            "items": [
+              "Une autre pensée :",
+              "Alors Aylin ressent et fait :"
             ],
-            "rechts": [
-              {
-                "art": "satzanfaenge",
-                "items": [
-                  "Émotion et comportement :"
-                ],
-                "linien": 2
-              }
-            ]
+            "linien": 2
           },
           {
             "art": "aufgabe",
-            "text": "Mila et Jang ont tous les deux 31 sur 60 à leur devoir en classe. Que pensent-ils d’abord ? Écris-le dans les bulles.",
-            "hinweis": "Mila croit depuis longtemps : « Je suis nulle, c’est comme ça. » Jang croit : « Si je m’entraîne, je progresse. »",
+            "text": "Coche d’où peut venir la phrase d’une carte qui freine.",
             "symbole": [
-              "schreiben"
+              "ankreuzen"
             ]
           },
           {
-            "art": "comic",
-            "spalten": 2,
-            "felder": [
-              {
-                "figuren": [
-                  "figur:jana:enttaeuscht"
-                ],
-                "requisit": "icon:file-text",
-                "blase": "denken",
-                "untertitel": "Mila"
-              },
-              {
-                "figuren": [
-                  "figur:ben:ruhig"
-                ],
-                "requisit": "icon:file-text",
-                "blase": "denken",
-                "untertitel": "Jang"
-              }
-            ]
-          },
-          {
-            "art": "spalten",
-            "verhaeltnis": "1:1",
-            "links": [
-              {
-                "art": "satzanfaenge",
-                "items": [
-                  "Que fait Mila ensuite ?"
-                ],
-                "linien": 1
-              }
-            ],
-            "rechts": [
-              {
-                "art": "satzanfaenge",
-                "items": [
-                  "Que fait Jang ensuite ?"
-                ],
-                "linien": 1
-              }
+            "art": "ankreuzen",
+            "spalten": 3,
+            "items": [
+              "une seule expérience",
+              "des remarques des autres",
+              "des comparaisons",
+              "les réseaux sociaux",
+              "autrefois une protection"
             ]
           },
           {
             "art": "info",
-            "symbol": "merke",
-            "titel": "Les pensées sont des suppositions, pas des faits",
-            "text": "Certaines suppositions sont justes, d’autres non. La pensée qui te vient en premier dépend souvent d’une croyance : une phrase sur toi que tu tiens pour vraie depuis longtemps. Certaines croyances aident, d’autres freinent."
+            "symbol": "wissen",
+            "titel": "Bon à savoir",
+            "text": "Une pensée est une supposition, pas un fait. Une croyance est une phrase sur toi que tu crois depuis longtemps. Certaines aident, d’autres freinent – presque tout le monde en a."
           }
         ],
         "lehrer": {
-          "ziel": "Les jeunes comprennent, avec des personnages inventés, le modèle situation – pensée – émotion – comportement et voient que les croyances colorent la pensée qui vient en premier.",
+          "ziel": "Les jeunes comprennent, avec des personnages inventés, le modèle situation – pensée – émotion – comportement, voient que d’autres pensées ouvrent d’autres chemins et disent d’où peuvent venir les phrases qui freinent.",
           "ablauf": [
-            "Séance 27, étape 3 : exercice 1 ensemble avec le tableau, après que l’enseignant·e a joué Ben deux fois.",
-            "Étape 4 : exercice 2 à deux (4 min), exercice 3 d’abord à l’oral en îlot, puis écrire une pensée (6 min), exercice 4 seul (4 min).",
-            "Pour finir, lire l’encadré : les pensées sont des suppositions, pas des faits.",
-            "L’encadré « Ce que dit la recherche » résume Masuda et al. (2004) ; la référence figure dans le fond de la séance."
+            "Séance 27, étape 3 : jouer Ben deux fois et faire le modèle au tableau ; exercice 1 à deux (6 min), exercice 2 en îlot (10 min).",
+            "Étape 5 : exercice 3 après le jeu de tri – choisir une carte qui freine et cocher l’origine.",
+            "Pour finir, lire l’encadré « Bon à savoir » : les pensées sont des suppositions, pas des faits."
           ],
           "hintergrund": "La fiche suit le modèle cognitif : ce n’est pas la situation seule, mais son évaluation qui façonne l’émotion et le comportement (Ellis, 1962 ; Beck, 2011). Les convictions profondes – ici les croyances – colorent la pensée qui vient en premier. Les cahiers de thérapie cognitive et comportementale pour les jeunes introduisent ce modèle avec des situations anodines du quotidien, avant les sujets personnels (Stallard, 2019).",
           "quellen": [
             "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
             "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
-            "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
-            "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
+            "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
           ],
           "material": "Cahier de l’élève, tableau de l’étape 3"
         }
@@ -1045,7 +637,7 @@
         "bausteine": [
           {
             "art": "text",
-            "text": "Fünfmal kopieren, möglichst auf festes Papier, ausschneiden und je Tischgruppe in einen Umschlag stecken. Fünf Karten bremsen, fünf sind ihre hilfreichen Gegenstücke, zwei sind zum Diskutieren. Gebraucht werden die Karten in den Einheiten 27 bis 30: Sortierspiel, Gegensatz-Duell, Glaubenssatz-Baum.",
+            "text": "Fünfmal kopieren, möglichst auf festes Papier, ausschneiden und je Tischgruppe in einen Umschlag stecken. Fünf Karten bremsen, fünf sind ihre hilfreichen Gegenstücke, zwei sind zum Diskutieren. Gebraucht werden die Karten in den Einheiten 27 bis 30: Sortierspiel, Detektiv-Stunde, Glaubenssatz-Baum.",
             "klein": true
           },
           {
@@ -1096,8 +688,8 @@
           "ziel": "Die Karten machen Glaubenssätze greifbar: sortieren, Gegenstücke finden, nach der Herkunft fragen – und später für das Gegensatz-Duell und den Glaubenssatz-Baum.",
           "ablauf": [
             "Fünfmal kopieren und ausschneiden, je Tischgruppe ein Umschlag mit zwölf Karten.",
-            "Einheit 27 (25 Min.): auf drei Felder sortieren, Paare finden, nach der Herkunft einer Karte fragen.",
-            "Einheit 29: Gegensatz-Duell mit den bremsenden Karten. Einheit 30: ein Kartenpaar je Tischgruppe für den Glaubenssatz-Baum."
+            "Einheit 27, Schritt 5 (35 Min.): auf drei Felder sortieren, Paare finden, nach der Herkunft einer Karte fragen.",
+            "Einheit 29: eine Karte kann der Satz für „Mein Satz vor Gericht“ sein. Einheit 30: ein Kartenpaar je Tischgruppe für den Glaubenssatz-Baum."
           ],
           "hintergrund": "Glaubenssätze sind verallgemeinerte Annahmen über sich selbst; sie entstehen aus Erfahrungen und wirken oft unbemerkt als Filter für Neues (Beck, 2011). Auf Karten werden sie zu einem Gegenstand, über den man sprechen kann, ohne Persönliches preiszugeben. Paare: „Das schaffe ich eh nicht“ – „Ich probiere es …“, „Die anderen sind besser als ich“ – „Jeder hat andere Stärken …“, „Wenn ich Nein sage …“ – „Echte Freunde …“, „Ich muss perfekt sein“ – „Ich gebe mein Bestes …“, „Mir hilft sowieso keiner“ – „Ich kann mir Hilfe holen“.",
           "quellen": [
@@ -1112,7 +704,7 @@
         "bausteine": [
           {
             "art": "text",
-            "text": "Photocopier cinq fois, si possible sur papier épais, découper et mettre dans une enveloppe par îlot. Cinq cartes freinent, cinq sont les réponses qui aident, deux sont à discuter. Les cartes servent dans les séances 27 à 30 : jeu de tri, duel des contre-phrases, arbre des croyances.",
+            "text": "Photocopier cinq fois, si possible sur papier épais, découper et mettre dans une enveloppe par îlot. Cinq cartes freinent, cinq sont les réponses qui aident, deux sont à discuter. Les cartes servent dans les séances 27 à 30 : jeu de tri, séance du détective, arbre des croyances.",
             "klein": true
           },
           {
@@ -1163,8 +755,8 @@
           "ziel": "Les cartes rendent les croyances concrètes : trier, trouver les réponses, chercher l’origine – puis, plus tard, le duel des contre-phrases et l’arbre des croyances.",
           "ablauf": [
             "Photocopier cinq fois et découper : une enveloppe de douze cartes par îlot.",
-            "Séance 27 (25 min) : trier en trois zones, trouver les paires, chercher l’origine d’une carte.",
-            "Séance 29 : duel des contre-phrases avec les cartes qui freinent. Séance 30 : une paire de cartes par îlot pour l’arbre des croyances."
+            "Séance 27, étape 5 (35 min) : trier en trois zones, trouver les paires, chercher l’origine d’une carte.",
+            "Séance 29 : une carte peut fournir la phrase pour « Ma phrase au tribunal ». Séance 30 : une paire de cartes par îlot pour l’arbre des croyances."
           ],
           "hintergrund": "Les croyances sont des suppositions générales sur soi ; elles naissent de l’expérience et filtrent souvent sans qu’on le remarque ce qui arrive ensuite (Beck, 2011). Sur des cartes, elles deviennent un objet dont on peut parler sans rien dévoiler de personnel. Paires : « De toute façon, je n’y arriverai pas » – « J’essaie… », « Les autres sont meilleurs que moi » – « Chacun a ses forces… », « Si je dis non… » – « Les vrais amis… », « Je dois être parfait·e » – « Je fais de mon mieux… », « De toute façon, personne ne m’aide » – « Je peux demander de l’aide ».",
           "quellen": [
