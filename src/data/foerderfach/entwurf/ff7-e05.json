@@ -1,0 +1,1097 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e05",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-klassenrat"
+      ],
+      "vorlagen": [
+        "ff7-klassenrat-karten"
+      ],
+      "woerter": [
+        {
+          "de": "der Klassenrat",
+          "fr": "le conseil de coopération"
+        },
+        {
+          "de": "das Anliegen",
+          "fr": "la demande"
+        },
+        {
+          "de": "der Vorschlag",
+          "fr": "la proposition"
+        },
+        {
+          "de": "abstimmen",
+          "fr": "voter"
+        },
+        {
+          "de": "die Entscheidung",
+          "fr": "la décision"
+        },
+        {
+          "de": "der Briefkasten",
+          "fr": "la boîte aux lettres"
+        }
+      ],
+      "de": {
+        "titel": "Unser Klassenrat",
+        "kurz": "Die Klasse gründet ihren Klassenrat: Sie klärt, was er entscheiden darf, lernt Rollen, Ablauf und Briefkasten kennen und trifft eine erste echte Entscheidung.",
+        "ziele": [
+          "unterscheiden, was der Klassenrat selbst entscheidet, wozu er Vorschläge macht und was nicht in den Klassenrat gehört",
+          "kennen die vier Rollen und den festen Ablauf einer Sitzung und probieren eine Rolle aus",
+          "schreiben ein Anliegen als Ich-Anliegen oder ohne Namen",
+          "treffen gemeinsam eine erste Entscheidung und halten sie im Protokoll fest"
+        ],
+        "material": [
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Rollenkarten: fünf Sätze",
+          "Anliegen-Zettel, zwei je Person",
+          "Schuhkarton mit Schlitz",
+          "Ein Heft für das Protokoll",
+          "Stoppuhr",
+          "Schülerheft für jede Person",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Die Frage der ersten Entscheidung samt Rahmen festlegen (Schritt 7); bei Bedarf mit dem Régent absprechen.",
+          "Rollenkarten fünfmal und Anliegen-Zettel für alle kopieren und schneiden; einen Schuhkarton als Briefkasten herrichten.",
+          "Festlegen, wo der Briefkasten steht; leeren darf ihn nur die Lehrkraft.",
+          "Den Termin der nächsten Sitzung festlegen: in drei bis vier Wochen, letzte 10 Minuten einer Stunde.",
+          "Das Tafelbild aus Schritt 3 vorbereiten und abdecken."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Klebepunkt und Probeabstimmung"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick und Thema: Wir gründen den Klassenrat"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "Was darf der Klassenrat entscheiden?"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Rollen und Ablauf: die Probesitzung"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Zip Zap Boing an den Tischen"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Der Briefkasten: Anliegen schreiben"
+          },
+          {
+            "min": "65–85",
+            "phase": "uebung",
+            "titel": "Erste Sitzung: unsere erste Entscheidung"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Anspannen und Loslassen"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, ein Satz je Gruppe und Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Klebepunkt und Probeabstimmung",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person einen Punkt auf das Gefühlsrad-Plakat; der Punkt der Lehrkraft klebt schon. Die Lehrkraft sagt einen Satz zu ihrem Punkt, zwei, drei Freiwillige nennen ihr Wort (4 Min.). Dann eine Probeabstimmung zum Aufwärmen, so wie später im Klassenrat: eine Frage mit zwei Antworten stellen; alle schließen die Augen oder senken den Blick, wer für A ist, hebt die Hand, dann für B. Die Lehrkraft zählt und sagt das Ergebnis (3 Min.). Kurz fragen: Warum kann es gut sein, mit geschlossenen Augen abzustimmen?",
+            "sagen": [
+              "Augen zu oder Blick nach unten. Wer ist für Pizza? Hand hoch … danke. Und wer für Pasta?",
+              "Mit geschlossenen Augen stimmt jede Person so ab, wie sie wirklich denkt – nicht so wie ihre Freunde."
+            ],
+            "tipp": "Die Probeabstimmung dauert drei Minuten und spart später Zeit: Die Klasse kennt das Verfahren, und die Frage nach den geschlossenen Augen führt direkt zum fairen Entscheiden.",
+            "wennEsKippt": "Schaut jemand und kommentiert, wer wofür gestimmt hat, ruhig stoppen: Im Klassenrat zählt die Stimme, nicht der Name. Wer die Augen nicht schließen mag, schaut auf den Tisch. Kleben Punkte bei sehr belasteten Wörtern, das nicht vor der Klasse ansprechen, sondern nach der Stunde kurz nachfragen."
+          },
+          {
+            "titel": "Rückblick und Thema: Wir gründen den Klassenrat",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann kurz nach der Wochen-Mission fragen: Wer hat bei einer Gruppenarbeit eine Sache getan, die dem Team geholfen hat? Daumen hoch, Mitte oder runter; eine Stimme erzählt. Auf die neuen Team-Regeln am Plakat der Klassenvereinbarung zeigen: Letzte Woche habt ihr schon gemeinsam entschieden. Dann das Thema an die Tafel schreiben: Unser Klassenrat – hier entscheidet die Klasse mit.",
+            "sagen": [
+              "Letzte Woche habt ihr schon eine Regel gemeinsam beschlossen. Heute bekommt das einen festen Platz: euren Klassenrat."
+            ],
+            "tipp": "Den Klassenrat als echtes Angebot vorstellen, nicht als Belohnung: Er gehört der Klasse, und er tagt auch, wenn die Woche schwierig war."
+          },
+          {
+            "titel": "Was darf der Klassenrat entscheiden?",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Kurz erklären (2 Min.): Im Klassenrat bespricht die Klasse, was alle betrifft, und entscheidet – aber nicht über alles. Dann acht Situationen vorlesen (Liste). Die Tischgruppen beraten jeweils 20 Sekunden flüsternd, auf drei zeigt eine Person mit den Fingern: 1 = Das entscheidet der Klassenrat selbst (grün). 2 = Dazu macht er einen Vorschlag, andere entscheiden mit (gelb). 3 = Das gehört nicht in den Klassenrat (rot) (8 Min.). Bei Unterschieden kurz nachfragen, dann auflösen. Zum Schluss das Tafelbild aufdecken und gemeinsam lesen; alle tragen zu jeder Farbe ein Beispiel in Aufgabe 1 im Heft ein (5 Min.).",
+            "sagen": [
+              "Der Klassenrat ist kein Gericht. Über Personen und Strafen wird hier nie abgestimmt.",
+              "Bei Mobbing oder Sorgen um jemanden wartet ihr nicht auf den Klassenrat – dann geht ihr sofort zu einer erwachsenen Person."
+            ],
+            "punkte": [
+              "Welches Spiel die Klasse in der Bewegungspause spielt. (1)",
+              "Wie der Briefkasten des Klassenrats aussieht. (1)",
+              "Welche Musik leise läuft, wenn die Klasse in den Skills-Pass schreibt. (1)",
+              "Wohin der nächste Klassenausflug geht. (2 – Lehrkräfte und Direktion entscheiden mit)",
+              "Ob der Test am Freitag auf Montag verschoben wird. (2 – die Lehrkraft des Fachs entscheidet)",
+              "Ob jemand, der zu spät kam, nachsitzen muss. (3 – über Strafen und einzelne Personen entscheidet der Klassenrat nie)",
+              "Jemand aus der Klasse wird in der Chatgruppe immer wieder ausgelacht. (3 – das klären Lehrkraft, Régent und SePAS, und zwar sofort)",
+              "Wie die Klasse eine neue Mitschülerin oder einen neuen Mitschüler begrüßt. (1)"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Der Klassenrat …",
+                "Zum Beispiel"
+              ],
+              "zeilen": [
+                [
+                  "entscheidet selbst (grün)",
+                  "Spiel in der Bewegungspause, Briefkasten, Musik beim Schreiben, Begrüßung von Neuen"
+                ],
+                [
+                  "macht einen Vorschlag (gelb)",
+                  "Ausflug, Testtermin – andere entscheiden mit"
+                ],
+                [
+                  "ist nicht zuständig (rot)",
+                  "Strafen, Streit mit einer bestimmten Person, Mobbing – das klären Lehrkraft, Régent und SePAS"
+                ]
+              ]
+            },
+            "tipp": "Die Grenzen gleich am Anfang zu klären, schützt den Klassenrat: Er wird kein Ort, an dem Einzelne vorgeführt werden. Fragen, die die Lehrkraft nicht sicher beantworten kann, etwa zum Ausflug, kommen auf eine Liste für den Régent.",
+            "wennEsKippt": "Fordert die Klasse sofort Großes („Handys im Unterricht erlauben!“), das ernst nehmen: Das wäre ein Vorschlag an die Direktion – gelb. Nennt jemand bei der Chat-Situation einen echten Fall aus der Klasse, nicht vor allen vertiefen: Danke, darüber spreche ich gleich nach der Stunde mit dir. Dann mit Régent und SePAS nach dem Vorgehen der Schule handeln.",
+            "blatt": "ff7-klassenrat"
+          },
+          {
+            "titel": "Rollen und Ablauf: die Probesitzung",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Ablauf und Rollen vorstellen (4 Min.): Die fünf Schritte einer Sitzung stehen auf dem Blatt (Liste); die Lehrkraft liest sie vor und zeigt die vier Rollenkarten: Vorsitz, Zeit, Protokoll, Regeln. Jede Tischgruppe bekommt einen Satz Rollenkarten; wer am nächsten an der Tür sitzt, beginnt mit dem Vorsitz, die anderen Rollen folgen im Uhrzeigersinn. Probesitzung (8 Min.): Jede Tischgruppe spielt eine Sitzung mit einem ausgedachten Anliegen einmal durch, etwa: In der Garderobe wird nach dem Sport immer gedrängelt – zwei Lösungen sammeln, eine auswählen. Der Vorsitz liest dabei von seiner Karte ab. Austausch (3 Min.): Welche Rolle war leicht, welche schwer? Was hat der Vorsitz gebraucht?",
+            "sagen": [
+              "Die Sitzung ist nur eine Probe. Es geht darum, dass jede Rolle einmal drankommt – nicht um die beste Entscheidung.",
+              "Vorsitz, ihr müsst nichts auswendig können: Lest von eurer Karte ab."
+            ],
+            "punkte": [
+              "Eröffnung (1 Min.): Der Vorsitz begrüßt und nennt die Rollen.",
+              "Lob und Danke (2 Min.): Wer mag, sagt, was gut lief – drei Stimmen.",
+              "Rückblick (1 Min.): Was ist aus dem letzten Beschluss geworden?",
+              "Ein Anliegen (5 Min.): vorlesen, Vorschläge sammeln, abstimmen, festhalten.",
+              "Abschluss (1 Min.): Das Protokoll liest den Beschluss vor; die Rollen für das nächste Mal werden verteilt."
+            ],
+            "tipp": "Die Vorsitzkarte enthält die Sätze für jeden Schritt – damit trauen sich auch Stille an die Rolle. Die Lehrkraft geht herum und hilft dort, wo eine Gruppe beim Abstimmen hängt.",
+            "wennEsKippt": "Läuft eine Probesitzung aus dem Ruder, weil alle durcheinanderreden, die Rolle Regeln stärken: Sie hält ihre Karte hoch, dann spricht nur, wer dran ist. Will jemand keine Rolle übernehmen, bleibt er oder sie normales Mitglied und stimmt mit; die Rolle übernimmt eine andere Person zusätzlich.",
+            "blatt": "ff7-klassenrat-karten"
+          },
+          {
+            "titel": "Bewegungspause: Zip Zap Boing an den Tischen",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Jede Tischgruppe steht im Kreis um ihren Tisch. Ein Klatscher wandert: Zip gibt ihn mit einer Handbewegung an die Person daneben, Zap schickt ihn quer über den Tisch, Boing – beide Hände wie ein Schild hoch – schickt ihn zurück. Niemand scheidet aus; wer sich vertut, macht einfach weiter (3 Min.). Zum Schluss, wenn Platz ist, zwei Tischgruppen zusammen in einem größeren Kreis (1 Min.), dann setzen sich alle (1 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Zip geht zur Seite, Zap über den Tisch, Boing schickt zurück. Wer sich vertut, lacht und macht weiter."
+            ],
+            "tipp": "Das Spiel braucht kaum Sprache und läuft sofort, wenn die Lehrkraft es einmal mit einer Tischgruppe vormacht. Je schneller, desto lustiger.",
+            "wennEsKippt": "Wird es zu laut, Ruhesignal und eine Runde nur flüsternd spielen. Wer nicht mitspielen mag, zählt, wie oft der Klatscher den Tisch umrundet."
+          },
+          {
+            "titel": "Der Briefkasten: Anliegen schreiben",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Den Briefkasten zeigen und erklären (3 Min.): Hinein kommen Anliegen, Vorschläge und Lob – ohne Namen von anderen. Den eigenen Namen darf man daruntersetzen, muss es aber nicht. Nur die Lehrkraft leert den Briefkasten, vor jeder Sitzung. Dann fünf Beispielzettel vorlesen (Liste); die Tischgruppen zeigen auf drei: Daumen hoch = passt, Daumen zur Seite = umschreiben, Daumen runter = gehört zu einer erwachsenen Person (5 Min.). Allein (5 Min.): Jede Person übt mit Aufgabe 2 im Heft und schreibt dann einen Anliegen-Zettel. Zum Schluss wirft jede Person einen Zettel ein – auch einen leeren (2 Min.).",
+            "sagen": [
+              "Schreibt über eine Sache, nicht über eine Person: nicht ‚… nervt‘, sondern ‚Mich stört, wenn …‘.",
+              "Alle werfen einen Zettel ein, auch einen leeren. So sieht niemand, wer etwas geschrieben hat."
+            ],
+            "punkte": [
+              "„Ich schlage vor, dass wir die Bewegungspause manchmal draußen machen.“ (passt)",
+              "„Danke an alle, die beim Papierturm geholfen haben.“ (passt – Lob)",
+              "„… nervt in jeder Stunde.“ – mit dem Namen einer Person (umschreiben: Mich stört, wenn …)",
+              "„Mich stört, dass es nach dem Sport in der Garderobe so laut und eng ist.“ (passt)",
+              "„In der Pause wird jemand aus unserer Klasse immer wieder von Älteren geschubst.“ (gehört sofort zu Lehrkraft, Régent oder SePAS)"
+            ],
+            "tipp": "Der leere Zettel ist der Trick: Wenn alle etwas einwerfen, traut sich auch, wer ein heikles Anliegen hat. Die Zettel vor der nächsten Sitzung sortieren; was nicht in den Klassenrat gehört, unter vier Augen klären.",
+            "wennEsKippt": "Fällt jemandem nichts ein, ein Lob schreiben lassen oder den leeren Zettel einwerfen. Wird gekichert, weil jemand angeblich über eine Person schreibt, ruhig wiederholen: Zettel mit Namen werden nie vorgelesen. Taucht ein Zettel mit einem Hinweis auf Mobbing oder Gewalt auf, ihn nicht vorlesen und noch am selben Tag mit dem SePAS besprechen.",
+            "blatt": "ff7-klassenrat"
+          },
+          {
+            "titel": "Erste Sitzung: unsere erste Entscheidung",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Vorbereiten (3 Min.): Die Frage des Tages und ihren Rahmen an die Tafel schreiben: Darüber entscheidet ihr heute … Nicht zur Wahl steht … Vier Freiwillige übernehmen die Rollen, bei mehr Meldungen entscheidet das Los; die Lehrkraft setzt sich neben den Vorsitz. Sitzung (15 Min.): Der Vorsitz führt nach seiner Karte durch den Ablauf; der Rückblick entfällt beim ersten Mal. Beim Anliegen einigt sich jede Tischgruppe in zwei Minuten auf einen Vorschlag, die Vorschläge kommen an die Tafel, dann wird mit geschlossenen Augen abgestimmt. Der Vorsitz fragt: Kann jede und jeder damit leben? Das Protokoll schreibt den Beschluss ins Klassenrat-Heft und liest ihn vor: Wer macht was bis wann? Abschluss (2 Min.): Die Lehrkraft nennt den Termin der nächsten Sitzung.",
+            "sagen": [
+              "Darüber entscheidet ihr heute wirklich – was ihr beschließt, gilt bis zur nächsten Sitzung.",
+              "Wer überstimmt wurde, hat nicht verloren: Beim nächsten Mal prüfen wir, ob der Beschluss funktioniert."
+            ],
+            "punkte": [
+              "Welches Spiel machen wir in den Bewegungspausen der nächsten drei Stunden?",
+              "Wie gestalten wir unseren Briefkasten?",
+              "Welche ruhige Musik läuft, wenn wir in den Skills-Pass schreiben?",
+              "Wo hängen Gefühlsrad, Klassenvereinbarung und Plakate im Raum?",
+              "Welchen Skill wiederholen wir am Anfang der nächsten Stunden?",
+              "Wie begrüßen wir jemanden, der neu in die Klasse kommt?"
+            ],
+            "tipp": "Die erste Entscheidung muss echt sein und schnell sichtbar werden – am besten schon in der nächsten Stunde. Beschlüsse gelten auf Probe bis zur nächsten Sitzung; das macht es leichter, überstimmt zu werden. Ab jetzt tagt der Klassenrat alle drei, vier Wochen in den letzten zehn Minuten einer Stunde.",
+            "wennEsKippt": "Gibt es nach der Abstimmung Ärger („Das ist unfair!“), ernst nehmen und fragen, was die Gruppe bräuchte, um damit leben zu können; oft hilft ein Zusatz wie ein Wechsel nach drei Wochen. Stockt der Vorsitz, flüstert die Lehrkraft den nächsten Satz vor, statt die Sitzung selbst zu übernehmen. Werden Freunde bedrängt, so oder so abzustimmen, die Abstimmung wiederholen: Jede Person stimmt für sich.",
+            "blatt": "ff7-klassenrat"
+          },
+          {
+            "titel": "Skill: Anspannen und Loslassen",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: Im Klassenrat verliert manchmal die eigene Idee, oder man wartet ungeduldig, bis man dran ist – dann staut sich Ärger im Körper. Dieser Skill lässt ihn ab. Alle sitzen, beide Füße auf dem Boden; die Lehrkraft leitet langsam an und macht mit. Fäuste ballen, Schultern hochziehen, das Gesicht zusammenkneifen – fünf Sekunden fest halten. Dann loslassen, langsam ausatmen und zehn Sekunden spüren, wie es sich anfühlt. Dreimal wiederholen (5 Min.). Zwei, drei Rückmeldungen: Was war nach dem Loslassen anders? Wann könnte das helfen? Zum Schluss die unauffällige Variante zeigen: nur die Fäuste, unter dem Tisch (3 Min.).",
+            "sagen": [
+              "Fäuste fest, Schultern hoch, Gesicht zusammenkneifen – eins, zwei, drei, vier, fünf. Und loslassen.",
+              "Spürt ihr den Unterschied zwischen fest und locker? Wann könntet ihr das brauchen?"
+            ],
+            "punkte": [
+              "Anspannen: Fäuste ballen, Schultern hoch – fünf Sekunden fest.",
+              "Loslassen: Hände öffnen, Schultern fallen lassen, langsam ausatmen.",
+              "Spüren: zehn Sekunden nachspüren, dann noch zweimal."
+            ],
+            "tipp": "Der Unterschied macht die Wirkung: Wer bewusst anspannt, spürt beim Loslassen, wie viel Spannung vorher da war. Mit den Fäusten unter dem Tisch geht das auch im Klassenrat, wenn die eigene Idee gerade verliert.",
+            "wennEsKippt": "Das Gesicht-Zusammenkneifen sorgt oft für Gelächter: mitlachen und beim zweiten Durchgang das Gesicht weglassen. Wer Schmerzen hat oder nicht anspannen möchte, macht nur das Ausatmen mit. Niemand muss die Augen schließen."
+          },
+          {
+            "titel": "Skills-Pass, ein Satz je Gruppe und Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Worüber möchte ich im Klassenrat einmal mitentscheiden? Danach gibt es den Stempel. Ein Satz für alle (2 Min.): Jede Tischgruppe einigt sich auf einen Satz, der mit „Unser Klassenrat …“ beginnt, eine Person sagt ihn laut. Zum Schluss die Wochen-Mission ansagen (steht im Heft) und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "sagen": [
+              "Ein Satz pro Tischgruppe, der mit ‚Unser Klassenrat …‘ beginnt. Ihr habt eine Minute."
+            ],
+            "tipp": "Kommen kritische Sätze („Unser Klassenrat ist sowieso unfair“), sie stehen lassen und als Thema für die nächste Sitzung aufheben. Den Beschluss in der nächsten Stunde sichtbar umsetzen – das überzeugt mehr als jedes Wort."
+          }
+        ],
+        "bruecke": "Nächste Woche beginnt ein neues Kapitel: Ihr schaut auf euch selbst – was braucht ihr, damit es euch gut geht? Dafür füllt die Klasse gemeinsam das Glas der Bedürfnisse.",
+        "mission": "Achte diese Woche darauf, was in deiner Klasse gut läuft und was besser laufen könnte. Schreib eine Sache als Anliegen oder Lob auf – für den Briefkasten.",
+        "hintergrund": "Jugendliche wollen ernst genommen werden und mitbestimmen; Programme, die das berücksichtigen, erreichen sie besser als belehrende (Yeager, 2017). Der Klassenrat gibt dafür einen festen Ort: Die Klasse bespricht ihre Anliegen in einem verlässlichen Ablauf und entscheidet im vereinbarten Rahmen selbst. Hart (1992) beschreibt Beteiligung als Leiter: Unten stehen Schein-Beteiligung und Dekoration, oben echte Mitentscheidung. Deshalb muss die erste Entscheidung echt sein und umgesetzt werden – eine Abstimmung ohne Folgen entmutigt mehr, als sie nützt. Wer erlebt, dass die eigene Stimme zählt, erfährt Autonomie und Zugehörigkeit, zwei Grundbedürfnisse, die Motivation tragen (Deci & Ryan, 2000). Die klaren Grenzen – keine Entscheidungen über Personen, keine Strafen – verhindern, dass der Klassenrat zum Tribunal wird.",
+        "quellen": [
+          "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94.",
+          "Hart, R. A. (1992). Children’s Participation: From Tokenism to Citizenship. Florenz: UNICEF International Child Development Centre.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "achtung": "Der Klassenrat ist kein Gericht: Über einzelne Personen, Strafen, Streit zwischen zwei Jugendlichen oder Mobbing wird hier nicht verhandelt – das klären Lehrkraft, Régent und SePAS nach dem Vorgehen der Schule. Den Briefkasten vor jeder Sitzung selbst leeren und lesen: Zettel mit Namen werden nicht vorgelesen; Hinweise auf Mobbing, Gewalt oder Selbstverletzung noch am selben Tag mit dem SePAS besprechen und nach dem Schutzkonzept der Schule handeln. Nur zur Wahl stellen, was die Klasse wirklich entscheiden darf, und Beschlüsse umsetzen.",
+        "differenzierung": {
+          "leichter": "Beim Sortieren der Situationen die drei Ampelfarben an die Tafel hängen und mit dem Finger zeigen lassen. Für Aufgabe 2 und den Anliegen-Zettel reichen die Satzanfänge; wer noch wenig schreibt, wirft ein Lob oder einen Vorschlag in drei Wörtern ein. Die Vorsitzkarte darf im Tandem gelesen werden.",
+          "schwerer": "In der ersten Sitzung den Vorsitz oder das Protokoll übernehmen. Oder ein Anliegen so schreiben, dass es einen Vorschlag mit Begründung enthält: Ich schlage vor, dass …, weil …"
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), Was darf der Klassenrat entscheiden? mit vier Situationen (10 Min.), Rollen und Ablauf vorstellen (5 Min.), Briefkasten zeigen, jede Person wirft einen Zettel ein (5 Min.), erste Sitzung mit der vorbereiteten Frage (20 Min.), Skills-Pass und Mission (5 Min.). Probesitzung und Skill entfallen; die erste echte Sitzung ersetzt die Probe."
+      },
+      "fr": {
+        "titel": "Notre conseil de coopération",
+        "kurz": "La classe fonde son conseil de coopération : elle clarifie ce qu’il peut décider, découvre ses rôles, son déroulement et sa boîte aux lettres, et prend une première vraie décision.",
+        "ziele": [
+          "distinguent ce que le conseil décide lui-même, ce sur quoi il fait des propositions et ce qui n’a pas sa place au conseil",
+          "connaissent les quatre rôles et le déroulement fixe d’une séance et essaient un rôle",
+          "rédigent une demande en « je » ou sans nommer personne",
+          "prennent ensemble une première décision et la consignent dans le compte rendu"
+        ],
+        "material": [
+          "Roue des émotions, 20 gommettes",
+          "Cartes de rôle : cinq jeux",
+          "Papiers de demande, deux par jeune",
+          "Boîte à chaussures avec une fente",
+          "Un cahier pour le compte rendu",
+          "Chronomètre",
+          "Un cahier de l’élève par jeune",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Fixer la question de la première décision et son cadre (étape 7) ; si besoin, en parler avec le régent.",
+          "Photocopier et découper les cartes de rôle (cinq jeux) et les papiers de demande ; préparer une boîte à chaussures.",
+          "Choisir l’emplacement de la boîte aux lettres ; elle n’est vidée que par l’enseignant·e.",
+          "Fixer la date de la prochaine séance : dans trois ou quatre semaines, 10 dernières minutes d’un cours.",
+          "Préparer le tableau de l’étape 3 et le cacher."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : gommette et vote d’essai"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour et thème : nous fondons le conseil"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "Que peut décider le conseil ?"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Rôles et déroulement : la séance d’essai"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : zip zap boing autour des tables"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "La boîte aux lettres : écrire une demande"
+          },
+          {
+            "min": "65–85",
+            "phase": "uebung",
+            "titel": "Première séance : notre première décision"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : contracter et relâcher"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, une phrase par îlot et mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : gommette et vote d’essai",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle une gommette sur la roue des émotions ; celle de l’enseignant·e est déjà collée. Dire une phrase sur sa propre gommette, puis deux ou trois volontaires disent leur mot (4 min). Ensuite, un vote d’essai pour se mettre en route, comme plus tard au conseil : poser une question à deux réponses ; tout le monde ferme les yeux ou baisse le regard, qui est pour A lève la main, puis pour B. Compter et annoncer le résultat (3 min). Demander brièvement : pourquoi peut-il être utile de voter les yeux fermés ?",
+            "sagen": [
+              "Fermez les yeux ou baissez le regard. Qui est pour la pizza ? Main levée… merci. Et qui est pour les pâtes ?",
+              "Les yeux fermés, chacun vote ce qu’il pense vraiment – pas comme ses amis."
+            ],
+            "tipp": "Le vote d’essai prend trois minutes et en fait gagner plus tard : la classe connaît la procédure, et la question des yeux fermés mène tout droit à la décision équitable.",
+            "wennEsKippt": "Si quelqu’un regarde et commente qui a voté quoi, arrêter calmement : au conseil, c’est la voix qui compte, pas le nom. Qui ne veut pas fermer les yeux regarde la table. Si des gommettes sont collées sur des mots très lourds, ne pas en parler devant la classe, mais prendre des nouvelles après le cours."
+          },
+          {
+            "titel": "Retour et thème : nous fondons le conseil",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière fois. Puis demander brièvement où en est la mission de la semaine : qui a fait, lors d’un travail de groupe, quelque chose qui a aidé l’équipe ? Pouce en haut, au milieu ou en bas ; une voix raconte. Montrer les nouvelles règles d’équipe sur l’affiche de la charte : la semaine dernière, vous avez déjà décidé ensemble. Puis écrire le thème au tableau : notre conseil de coopération – ici, la classe participe aux décisions.",
+            "sagen": [
+              "La semaine dernière, vous avez déjà adopté une règle ensemble. Aujourd’hui, cela trouve une place fixe : votre conseil de coopération."
+            ],
+            "tipp": "Présenter le conseil comme une vraie offre, pas comme une récompense : il appartient à la classe, et il se réunit aussi quand la semaine a été difficile."
+          },
+          {
+            "titel": "Que peut décider le conseil ?",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Expliquer brièvement (2 min) : au conseil, la classe parle de ce qui concerne tout le monde et décide – mais pas de tout. Puis lire huit situations (liste). Pour chacune, les îlots se concertent 20 secondes à voix basse ; à trois, quelqu’un montre avec les doigts : 1 = le conseil décide lui-même (vert). 2 = il fait une proposition, d’autres décident avec lui (orange). 3 = ce n’est pas l’affaire du conseil (rouge) (8 min). En cas de désaccord, demander pourquoi, puis donner la réponse. Pour finir, découvrir le tableau et le lire ensemble ; chacun note un exemple par couleur dans l’exercice 1 du cahier (5 min).",
+            "sagen": [
+              "Le conseil n’est pas un tribunal. On n’y vote jamais sur des personnes ni sur des punitions.",
+              "En cas de harcèlement ou d’inquiétude pour quelqu’un, vous n’attendez pas le conseil – vous allez tout de suite voir un adulte."
+            ],
+            "punkte": [
+              "Le jeu de la pause active. (1)",
+              "L’allure de la boîte aux lettres du conseil. (1)",
+              "La musique douce pendant qu’on écrit dans le Skills-Pass. (1)",
+              "La destination de la prochaine sortie de classe. (2 – les enseignants et la direction décident avec vous)",
+              "Le report du devoir en classe de vendredi à lundi. (2 – l’enseignant·e de la matière décide)",
+              "Une punition pour quelqu’un qui est arrivé en retard. (3 – le conseil ne décide jamais de punitions ni de personnes précises)",
+              "Quelqu’un de la classe se fait sans cesse moquer dans le groupe de discussion. (3 – l’enseignant·e, le régent et le SePAS s’en occupent, tout de suite)",
+              "La façon d’accueillir une nouvelle ou un nouveau camarade. (1)"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Le conseil…",
+                "Par exemple"
+              ],
+              "zeilen": [
+                [
+                  "décide lui-même (vert)",
+                  "jeu de la pause active, boîte aux lettres, musique pendant l’écriture, accueil des nouveaux"
+                ],
+                [
+                  "fait une proposition (orange)",
+                  "sortie, date d’un devoir en classe – d’autres décident avec lui"
+                ],
+                [
+                  "n’est pas compétent (rouge)",
+                  "punitions, dispute avec une personne précise, harcèlement – l’enseignant·e, le régent et le SePAS s’en occupent"
+                ]
+              ]
+            },
+            "tipp": "Clarifier les limites dès le début protège le conseil : il ne deviendra pas un lieu où l’on met quelqu’un sur la sellette. Les questions auxquelles on ne peut pas répondre avec certitude, par exemple sur la sortie, vont sur une liste pour le régent.",
+            "wennEsKippt": "Si la classe réclame tout de suite de grandes choses (« Autoriser les portables en cours ! »), le prendre au sérieux : ce serait une proposition à la direction – orange. Si un jeune cite un vrai cas de la classe à propos du groupe de discussion, ne pas approfondir devant tout le monde : merci, je t’en parle juste après le cours. Puis agir avec le régent et le SePAS selon la procédure de l’école.",
+            "blatt": "ff7-klassenrat"
+          },
+          {
+            "titel": "Rôles et déroulement : la séance d’essai",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Présenter le déroulement et les rôles (4 min) : les cinq étapes d’une séance figurent sur la fiche (liste) ; les lire et montrer les quatre cartes de rôle : présidence, temps, secrétaire, règles. Chaque îlot reçoit un jeu de cartes de rôle ; la personne assise le plus près de la porte commence à la présidence, les autres rôles suivent dans le sens des aiguilles d’une montre. Séance d’essai (8 min) : chaque îlot joue une séance complète avec une demande inventée, par exemple : au vestiaire, après le sport, tout le monde se bouscule – trouver deux solutions et en choisir une. La présidence lit les phrases de sa carte. Échange (3 min) : quel rôle était facile, lequel difficile ? De quoi la présidence avait-elle besoin ?",
+            "sagen": [
+              "La séance n’est qu’un essai. Ce qui compte, c’est que chaque rôle passe une fois – pas de trouver la meilleure décision.",
+              "Présidence, vous n’avez rien à apprendre par cœur : lisez votre carte."
+            ],
+            "punkte": [
+              "Ouverture (1 min) : la présidence accueille et présente les rôles.",
+              "Félicitations et mercis (2 min) : qui veut dit ce qui s’est bien passé – trois voix.",
+              "Retour (1 min) : qu’est devenue la dernière décision ?",
+              "Une demande (5 min) : lire, recueillir des propositions, voter, noter.",
+              "Clôture (1 min) : le secrétaire lit la décision ; on répartit les rôles de la prochaine fois."
+            ],
+            "tipp": "La carte de la présidence contient les phrases de chaque étape – ainsi, même les plus discrets osent prendre ce rôle. Circuler et aider là où un îlot bloque au moment du vote.",
+            "wennEsKippt": "Si une séance d’essai part dans tous les sens parce que tout le monde parle en même temps, renforcer le rôle des règles : il lève sa carte, puis seul celui qui a la parole parle. Si un jeune ne veut pas de rôle, il reste simple membre et vote ; quelqu’un d’autre prend son rôle en plus du sien.",
+            "blatt": "ff7-klassenrat-karten"
+          },
+          {
+            "titel": "Pause active : zip zap boing autour des tables",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Chaque îlot se tient debout en cercle autour de sa table. Un clap circule : « zip » le passe au voisin d’un geste de la main, « zap » l’envoie de l’autre côté de la table, « boing » – les deux mains levées comme un bouclier – le renvoie. Personne n’est éliminé ; qui se trompe continue simplement (3 min). Pour finir, s’il y a de la place, deux îlots ensemble en un plus grand cercle (1 min), puis tout le monde s’assoit (1 min). Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Zip passe à côté, zap traverse la table, boing renvoie. Qui se trompe rit et continue."
+            ],
+            "tipp": "Le jeu demande très peu de langue et fonctionne tout de suite si on le montre une fois avec un îlot. Plus c’est rapide, plus c’est drôle.",
+            "wennEsKippt": "Si le bruit monte trop, signal de calme et un tour en chuchotant. Qui ne veut pas jouer compte combien de fois le clap fait le tour de la table."
+          },
+          {
+            "titel": "La boîte aux lettres : écrire une demande",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Montrer la boîte aux lettres et l’expliquer (3 min) : on y met des demandes, des propositions et des félicitations – sans nommer d’autres personnes. On peut signer de son propre prénom, mais ce n’est pas obligatoire. La boîte n’est vidée que par l’enseignant·e, avant chaque séance. Puis lire cinq papiers d’exemple (liste) ; à trois, les îlots montrent : pouce en haut = ça va, pouce à l’horizontale = à reformuler, pouce en bas = c’est pour un adulte (5 min). Seul (5 min) : chacun s’exerce avec l’exercice 2 du cahier, puis écrit un papier de demande. Pour finir, chacun glisse un papier dans la boîte – même vide (2 min).",
+            "sagen": [
+              "Écrivez sur une situation, pas sur une personne : pas “… m’énerve”, mais “ça me gêne quand…”.",
+              "Tout le monde glisse un papier, même vide. Ainsi, personne ne voit qui a écrit quelque chose."
+            ],
+            "punkte": [
+              "« Je propose qu’on fasse parfois la pause active dehors. » (ça va)",
+              "« Merci à tous ceux qui ont aidé pour la tour en papier. » (ça va – félicitations)",
+              "« … m’énerve à chaque cours. » – avec le prénom de quelqu’un (à reformuler : ça me gêne quand…)",
+              "« Ça me gêne qu’au vestiaire, après le sport, ce soit si bruyant et si serré. » (ça va)",
+              "« À la récré, quelqu’un de notre classe se fait sans cesse bousculer par des plus grands. » (c’est tout de suite pour l’enseignant·e, le régent ou le SePAS)"
+            ],
+            "tipp": "Le papier vide, c’est l’astuce : si tout le monde glisse quelque chose, celui qui a une demande délicate ose aussi. Trier les papiers avant la prochaine séance ; ce qui n’a pas sa place au conseil se règle en tête-à-tête.",
+            "wennEsKippt": "Si quelqu’un ne trouve rien, lui proposer d’écrire des félicitations ou de glisser un papier vide. Si l’on rit parce que quelqu’un écrirait soi-disant sur une personne, répéter calmement : les papiers avec un prénom ne sont jamais lus à voix haute. Si un papier signale du harcèlement ou de la violence, ne pas le lire et en parler le jour même avec le SePAS.",
+            "blatt": "ff7-klassenrat"
+          },
+          {
+            "titel": "Première séance : notre première décision",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Préparer (3 min) : écrire au tableau la question du jour et son cadre : aujourd’hui, vous décidez de… Ce qui n’est pas au choix : … Quatre volontaires prennent les rôles ; s’il y en a plus, on tire au sort ; l’enseignant·e s’assoit à côté de la présidence. La séance (15 min) : la présidence suit le déroulement de sa carte ; le retour est supprimé la première fois. Pour la demande, chaque îlot se met d’accord en deux minutes sur une proposition ; les propositions vont au tableau, puis on vote les yeux fermés. La présidence demande : est-ce que chacun peut vivre avec ? Le secrétaire écrit la décision dans le cahier du conseil et la lit : qui fait quoi, et pour quand ? Clôture (2 min) : annoncer la date de la prochaine séance.",
+            "sagen": [
+              "Aujourd’hui, vous décidez vraiment – ce que vous adoptez vaut jusqu’à la prochaine séance.",
+              "Qui a été mis en minorité n’a pas perdu : la prochaine fois, on vérifie si la décision fonctionne."
+            ],
+            "punkte": [
+              "Quel jeu fait-on pendant les pauses actives des trois prochaines séances ?",
+              "Comment décore-t-on notre boîte aux lettres ?",
+              "Quelle musique douce passe pendant qu’on écrit dans le Skills-Pass ?",
+              "Où accroche-t-on la roue des émotions, la charte et les affiches dans la salle ?",
+              "Quel skill répète-t-on au début des prochaines séances ?",
+              "Comment accueille-t-on quelqu’un qui arrive dans la classe ?"
+            ],
+            "tipp": "La première décision doit être réelle et vite visible – idéalement dès la séance suivante. Les décisions valent à l’essai jusqu’à la prochaine séance ; c’est plus facile d’être mis en minorité. Désormais, le conseil se réunit toutes les trois ou quatre semaines, pendant les dix dernières minutes d’un cours.",
+            "wennEsKippt": "Si la colère éclate après le vote (« C’est injuste ! »), la prendre au sérieux et demander ce dont le groupe aurait besoin pour pouvoir vivre avec ; souvent, un ajout aide, comme un changement au bout de trois semaines. Si la présidence bloque, lui souffler la phrase suivante au lieu de prendre la main. Si des amis sont mis sous pression pour voter d’une certaine façon, refaire le vote : chacun vote pour soi.",
+            "blatt": "ff7-klassenrat"
+          },
+          {
+            "titel": "Skill : contracter et relâcher",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : au conseil, il arrive que sa propre idée perde, ou qu’on attende impatiemment son tour – la colère s’accumule alors dans le corps. Ce skill permet de la relâcher. Tout le monde est assis, les deux pieds au sol ; guider lentement et faire l’exercice soi-même. Serrer les poings, remonter les épaules, plisser le visage – tenir fort cinq secondes. Puis relâcher, expirer lentement et sentir pendant dix secondes ce que ça fait. Répéter trois fois (5 min). Deux ou trois retours : qu’est-ce qui a changé après avoir relâché ? Quand est-ce que ça pourrait aider ? Pour finir, montrer la version discrète : seulement les poings, sous la table (3 min).",
+            "sagen": [
+              "Poings serrés, épaules en haut, visage plissé – un, deux, trois, quatre, cinq. Et on relâche.",
+              "Vous sentez la différence entre serré et détendu ? Quand pourriez-vous en avoir besoin ?"
+            ],
+            "punkte": [
+              "Contracter : serre les poings, remonte les épaules – cinq secondes, fort.",
+              "Relâcher : ouvre les mains, laisse tomber les épaules, expire lentement.",
+              "Sentir : dix secondes pour sentir la différence, puis encore deux fois."
+            ],
+            "tipp": "C’est le contraste qui agit : qui contracte volontairement sent, en relâchant, combien il y avait de tension avant. Avec les poings, sous la table, ça marche aussi au conseil, quand sa propre idée est en train de perdre.",
+            "wennEsKippt": "Plisser le visage fait souvent rire : rire avec la classe et, au deuxième tour, laisser le visage de côté. Qui a mal ou ne veut pas contracter fait seulement l’expiration. Personne n’est obligé de fermer les yeux."
+          },
+          {
+            "titel": "Skills-Pass, une phrase par îlot et mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Skills-Pass (2 min) : écrire la question au tableau – sur quoi aimerais-je un jour décider au conseil ? Ensuite, le tampon. Une phrase pour tous (2 min) : chaque îlot se met d’accord sur une phrase qui commence par « Notre conseil… », et quelqu’un la dit à voix haute. Pour finir, annoncer la mission de la semaine (elle figure dans le cahier) et la prochaine séance (1 min).",
+            "sagen": [
+              "Une phrase par îlot, qui commence par “Notre conseil…”. Vous avez une minute."
+            ],
+            "tipp": "Si des phrases critiques tombent (« Notre conseil, de toute façon, c’est injuste »), les accueillir et les garder comme sujet pour la prochaine séance. Appliquer la décision de façon visible dès la séance suivante – cela convainc plus que tous les discours."
+          }
+        ],
+        "bruecke": "La semaine prochaine, un nouveau chapitre commence : vous regardez vers vous-mêmes – de quoi avez-vous besoin pour aller bien ? Pour cela, la classe remplit ensemble le bocal des besoins.",
+        "mission": "Cette semaine, observe ce qui va bien dans ta classe et ce qui pourrait aller mieux. Écris une chose sous forme de demande ou de félicitations – pour la boîte aux lettres.",
+        "hintergrund": "Les jeunes veulent être pris au sérieux et participer aux décisions ; les programmes qui en tiennent compte les touchent mieux que ceux qui font la morale (Yeager, 2017). Le conseil de coopération leur offre un lieu fixe : la classe discute de ses demandes selon un déroulement fiable et décide elle-même dans le cadre convenu. Hart (1992) décrit la participation comme une échelle : en bas, la participation de façade et la décoration ; en haut, la vraie codécision. C’est pourquoi la première décision doit être réelle et mise en œuvre – un vote sans suite décourage plus qu’il n’aide. Qui constate que sa voix compte fait l’expérience de l’autonomie et de l’appartenance, deux besoins fondamentaux qui portent la motivation (Deci & Ryan, 2000). Les limites claires – pas de décisions sur des personnes, pas de punitions – empêchent le conseil de devenir un tribunal.",
+        "quellen": [
+          "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94.",
+          "Hart, R. A. (1992). Children’s Participation: From Tokenism to Citizenship. Florenz: UNICEF International Child Development Centre.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "achtung": "Le conseil n’est pas un tribunal : on n’y traite ni de personnes précises, ni de punitions, ni de disputes entre deux jeunes, ni de harcèlement – l’enseignant·e, le régent et le SePAS s’en occupent selon la procédure de l’école. Vider et lire soi-même la boîte aux lettres avant chaque séance : les papiers portant un prénom ne sont pas lus à voix haute ; les signes de harcèlement, de violence ou d’automutilation sont discutés le jour même avec le SePAS, selon le protocole de protection de l’école. Ne mettre au vote que ce que la classe peut vraiment décider, et appliquer les décisions.",
+        "differenzierung": {
+          "leichter": "Pour trier les situations, accrocher les trois couleurs du feu au tableau et laisser les jeunes montrer du doigt. Pour l’exercice 2 et le papier de demande, les débuts de phrase suffisent ; qui écrit encore peu glisse des félicitations ou une proposition en trois mots. La carte de la présidence peut se lire à deux.",
+          "schwerer": "Prendre la présidence ou le secrétariat lors de la première séance. Ou rédiger une demande qui contient une proposition et sa raison : je propose que…, parce que…"
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), que peut décider le conseil ? avec quatre situations (10 min), présenter rôles et déroulement (5 min), montrer la boîte aux lettres, chacun y glisse un papier (5 min), première séance avec la question préparée (20 min), Skills-Pass et mission (5 min). La séance d’essai et le skill sont supprimés ; la première vraie séance sert d’essai."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-klassenrat",
+      "bereich": "skills",
+      "thema": "ankommen",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe",
+        "klasse"
+      ],
+      "dauer": "30 Min. und das ganze Jahr",
+      "eldib": [],
+      "schlagworte": [
+        "Klassenrat",
+        "Mitbestimmung",
+        "Anliegen",
+        "Abstimmen",
+        "Förderfach"
+      ],
+      "bild": "icon:users-group",
+      "kurs": [
+        "ff7-e05"
+      ],
+      "de": {
+        "titel": "Unser Klassenrat",
+        "untertitel": "Hier entscheidet die Klasse mit – alle paar Wochen, zehn Minuten am Ende einer Stunde",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Was darf der Klassenrat? Schreib zu jeder Farbe ein Beispiel auf.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "ampel",
+            "stufen": [
+              {
+                "titel": "Gehört nicht in den Klassenrat",
+                "text": "Streit mit einer Person, Mobbing, Strafen – dafür sind Erwachsene da."
+              },
+              {
+                "titel": "Dazu machen wir einen Vorschlag",
+                "text": "Andere entscheiden mit, etwa die Lehrkraft oder die Direktion."
+              },
+              {
+                "titel": "Das entscheiden wir selbst",
+                "text": "Dinge, die nur unsere Klasse betreffen."
+              }
+            ],
+            "linien": 1
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "info",
+                "symbol": "merke",
+                "titel": "So läuft eine Sitzung",
+                "punkte": [
+                  "Eröffnung: Der Vorsitz begrüßt.",
+                  "Lob und Danke: Was lief gut?",
+                  "Rückblick: Was wurde aus dem letzten Beschluss?",
+                  "Ein Anliegen: Vorschläge sammeln, abstimmen.",
+                  "Abschluss: Das Protokoll liest den Beschluss vor."
+                ]
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "wissen",
+                "titel": "Die vier Rollen",
+                "punkte": [
+                  "Vorsitz: eröffnet, ruft auf, lässt abstimmen.",
+                  "Zeit: achtet auf die zehn Minuten.",
+                  "Protokoll: schreibt den Beschluss auf.",
+                  "Regeln: erinnert freundlich an die Gesprächsregeln."
+                ]
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Auf einem Zettel steht ein Name und: „… redet immer dazwischen, wenn ich etwas sage.“ Mach daraus ein Anliegen für den Briefkasten.",
+            "hinweis": "Ohne Namen von anderen. Schreib über die Sache, nicht über die Person.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mich stört, wenn …",
+              "Ich schlage vor, dass …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Wenn es um eine bestimmte Person geht",
+            "text": "Streit, Ärger oder Sorgen wegen einer bestimmten Person gehören nicht in den Briefkasten. Sprich mit der Lehrkraft, dem Régent oder dem SePAS – sofort, nicht erst beim nächsten Klassenrat."
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "So funktioniert unser Briefkasten",
+            "punkte": [
+              "Hinein dürfen Anliegen, Vorschläge und Lob.",
+              "Keine Namen von anderen. Deinen eigenen Namen darfst du daruntersetzen – musst du aber nicht.",
+              "Nur die Lehrkraft leert den Briefkasten, vor jeder Sitzung.",
+              "Zettel mit Namen werden nie vorgelesen."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Unsere Beschlüsse: Trag nach jeder Sitzung ein, was die Klasse beschlossen hat.",
+            "hinweis": "In der nächsten Sitzung schaut ihr nach: Hat es geklappt?",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Datum",
+              "Beschluss",
+              "Hat es geklappt?"
+            ],
+            "breiten": [
+              0.9,
+              3,
+              1.3
+            ],
+            "zeilen": 7,
+            "beispiel": [
+              "z. B. 14.10.",
+              "Drei Wochen lang Zip Zap Boing in der Bewegungspause",
+              "ja"
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen kennen Grenzen, Ablauf und Rollen ihres Klassenrats, üben, ein Anliegen ohne Namen zu formulieren, und halten ihre Beschlüsse über das Jahr fest.",
+          "ablauf": [
+            "Einheit 5, Schritt 3 (15 Min.): Situationen sortieren, dann Aufgabe 1 mit einem Beispiel je Farbe.",
+            "Schritt 4: Ablauf und Rollen im Kasten lesen, Probesitzung mit den Rollenkarten.",
+            "Schritt 6: Aufgabe 2 als Übung, dann den Anliegen-Zettel schreiben und einwerfen.",
+            "Schritt 7 und jede weitere Sitzung: Beschluss in Aufgabe 3 eintragen."
+          ],
+          "hintergrund": "Beteiligung lässt sich als Leiter beschreiben, von Schein-Beteiligung bis zu echter Mitentscheidung (Hart, 1992). Ein fester Ablauf, klare Rollen und klare Grenzen machen den Klassenrat zu einem sicheren Ort, an dem die Klasse erlebt, dass ihre Stimme zählt (Deci & Ryan, 2000).",
+          "quellen": [
+            "Hart, R. A. (1992). Children’s Participation: From Tokenism to Citizenship. Florenz: UNICEF International Child Development Centre.",
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          ],
+          "material": "Schülerheft, Rollenkarten, Anliegen-Zettel, Briefkasten"
+        }
+      },
+      "fr": {
+        "titel": "Notre conseil de coopération",
+        "untertitel": "Ici, la classe participe aux décisions – toutes les quelques semaines, dix minutes à la fin d’un cours",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Que peut faire le conseil ? Écris un exemple pour chaque couleur.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "ampel",
+            "stufen": [
+              {
+                "titel": "Pas pour le conseil",
+                "text": "Dispute avec une personne, harcèlement, punitions – il y a des adultes pour cela."
+              },
+              {
+                "titel": "Nous faisons une proposition",
+                "text": "D’autres décident avec nous, par exemple l’enseignant·e ou la direction."
+              },
+              {
+                "titel": "Nous décidons nous-mêmes",
+                "text": "Ce qui ne concerne que notre classe."
+              }
+            ],
+            "linien": 1
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "info",
+                "symbol": "merke",
+                "titel": "Déroulement d’une séance",
+                "punkte": [
+                  "Ouverture : la présidence accueille.",
+                  "Félicitations et mercis : qu’est-ce qui s’est bien passé ?",
+                  "Retour : qu’est devenue la dernière décision ?",
+                  "Une demande : propositions, puis vote.",
+                  "Clôture : le secrétaire lit la décision."
+                ]
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "wissen",
+                "titel": "Les quatre rôles",
+                "punkte": [
+                  "Présidence : ouvre, donne la parole, fait voter.",
+                  "Temps : veille aux dix minutes.",
+                  "Secrétaire : note la décision.",
+                  "Règles : rappelle gentiment les règles de parole."
+                ]
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Sur un papier, il y a un prénom et : « … me coupe toujours la parole quand je parle. » Transforme-le en demande pour la boîte aux lettres.",
+            "hinweis": "Sans nommer personne. Parle de la situation, pas de la personne.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ça me gêne quand…",
+              "Je propose que…"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Quand il s’agit d’une personne précise",
+            "text": "Une dispute, un souci ou une inquiétude au sujet d’une personne précise n’ont pas leur place dans la boîte aux lettres. Parles-en à l’enseignant·e, au régent ou au SePAS – tout de suite, sans attendre le prochain conseil."
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Comment fonctionne notre boîte aux lettres",
+            "punkte": [
+              "On peut y mettre des demandes, des propositions et des félicitations.",
+              "Sans nommer d’autres personnes. Tu peux signer de ton prénom – mais tu n’es pas obligé.",
+              "Seul l’enseignant ou l’enseignante vide la boîte, avant chaque séance.",
+              "Les papiers portant un prénom ne sont jamais lus à voix haute."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Nos décisions : après chaque séance, note ce que la classe a décidé.",
+            "hinweis": "À la séance suivante, vous vérifiez : est-ce que ça a marché ?",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Date",
+              "Décision",
+              "Ça a marché ?"
+            ],
+            "breiten": [
+              0.9,
+              3,
+              1.3
+            ],
+            "zeilen": 7,
+            "beispiel": [
+              "ex. 14/10",
+              "Trois semaines de zip zap boing pendant la pause active",
+              "oui"
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes connaissent les limites, le déroulement et les rôles de leur conseil de coopération, s’exercent à formuler une demande sans nommer personne et notent leurs décisions tout au long de l’année.",
+          "ablauf": [
+            "Séance 5, étape 3 (15 min) : trier les situations, puis exercice 1 avec un exemple par couleur.",
+            "Étape 4 : lire le déroulement et les rôles dans l’encadré, séance d’essai avec les cartes de rôle.",
+            "Étape 6 : exercice 2 pour s’entraîner, puis écrire le papier de demande et le glisser dans la boîte.",
+            "Étape 7 et chaque séance suivante : noter la décision dans l’exercice 3."
+          ],
+          "hintergrund": "La participation peut se décrire comme une échelle, de la participation de façade à la vraie codécision (Hart, 1992). Un déroulement fixe, des rôles et des limites claires font du conseil un lieu sûr, où la classe constate que sa voix compte (Deci & Ryan, 2000).",
+          "quellen": [
+            "Hart, R. A. (1992). Children’s Participation: From Tokenism to Citizenship. Florenz: UNICEF International Child Development Centre.",
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          ],
+          "material": "Cahier de l’élève, cartes de rôle, papiers de demande, boîte aux lettres"
+        }
+      }
+    },
+    {
+      "id": "ff7-klassenrat-karten",
+      "bereich": "skills",
+      "thema": "ankommen",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe",
+        "klasse"
+      ],
+      "dauer": "das ganze Jahr",
+      "eldib": [],
+      "schlagworte": [
+        "Klassenrat",
+        "Rollenkarten",
+        "Anliegen-Zettel",
+        "Förderfach"
+      ],
+      "bild": "icon:mail",
+      "kurs": [
+        "ff7-e05"
+      ],
+      "de": {
+        "titel": "Klassenrat: Rollenkarten und Anliegen-Zettel",
+        "untertitel": "Kopiervorlage – Rollenkarten fünfmal, Anliegen-Zettel für alle",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Die Rollenkarten fünfmal auf festes Papier kopieren: ein Satz je Tischgruppe für die Probesitzung, danach ein Satz für die echten Sitzungen. Die Rollen wechseln bei jeder Sitzung.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 190,
+            "karten": [
+              {
+                "titel": "Vorsitz",
+                "bild": "icon:microphone",
+                "text": "Du leitest die Sitzung und liest diese Sätze vor:\n„Ich eröffne den Klassenrat.“\n„Wer möchte etwas loben oder sich bedanken?“\n„Wir sprechen heute über …“\n„Augen zu – wer ist dafür?“\n„Kann jede und jeder damit leben?“"
+              },
+              {
+                "titel": "Zeit",
+                "bild": "icon:hourglass",
+                "text": "Du hast die Uhr. Die Sitzung dauert zehn Minuten.\nNach fünf Minuten sagst du: „Halbzeit.“\nKurz vor Schluss: „Noch eine Minute.“"
+              },
+              {
+                "titel": "Protokoll",
+                "bild": "icon:notebook",
+                "text": "Du schreibst den Beschluss ins Klassenrat-Heft: Datum, was beschlossen wurde, wer was bis wann macht.\nAm Ende liest du ihn vor."
+              },
+              {
+                "titel": "Regeln",
+                "bild": "icon:hand-stop",
+                "text": "Du achtest auf die Gesprächsregeln:\nWer spricht, wird nicht unterbrochen.\nWir reden über Sachen, nicht über Personen.\nErinnere freundlich daran."
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "text",
+            "text": "Anliegen-Zettel: kopieren, schneiden und neben den Briefkasten legen. Nur die Lehrkraft leert den Briefkasten und liest die Zettel vor jeder Sitzung.",
+            "klein": true
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "feld",
+                "label": "Für den Briefkasten · Datum: ____________\nMich stört, wenn … · Ich schlage vor, dass … · Danke für …\nKeine Namen von anderen.",
+                "hoehe": 6
+              },
+              {
+                "art": "feld",
+                "label": "Für den Briefkasten · Datum: ____________\nMich stört, wenn … · Ich schlage vor, dass … · Danke für …\nKeine Namen von anderen.",
+                "hoehe": 6
+              },
+              {
+                "art": "feld",
+                "label": "Für den Briefkasten · Datum: ____________\nMich stört, wenn … · Ich schlage vor, dass … · Danke für …\nKeine Namen von anderen.",
+                "hoehe": 6
+              },
+              {
+                "art": "feld",
+                "label": "Für den Briefkasten · Datum: ____________\nMich stört, wenn … · Ich schlage vor, dass … · Danke für …\nKeine Namen von anderen.",
+                "hoehe": 6
+              }
+            ],
+            "rechts": [
+              {
+                "art": "feld",
+                "label": "Für den Briefkasten · Datum: ____________\nMich stört, wenn … · Ich schlage vor, dass … · Danke für …\nKeine Namen von anderen.",
+                "hoehe": 6
+              },
+              {
+                "art": "feld",
+                "label": "Für den Briefkasten · Datum: ____________\nMich stört, wenn … · Ich schlage vor, dass … · Danke für …\nKeine Namen von anderen.",
+                "hoehe": 6
+              },
+              {
+                "art": "feld",
+                "label": "Für den Briefkasten · Datum: ____________\nMich stört, wenn … · Ich schlage vor, dass … · Danke für …\nKeine Namen von anderen.",
+                "hoehe": 6
+              },
+              {
+                "art": "feld",
+                "label": "Für den Briefkasten · Datum: ____________\nMich stört, wenn … · Ich schlage vor, dass … · Danke für …\nKeine Namen von anderen.",
+                "hoehe": 6
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Rollenkarten mit festen Sätzen, damit jede Person eine Rolle im Klassenrat übernehmen kann, und Zettel für den Briefkasten.",
+          "ablauf": [
+            "Rollenkarten fünfmal auf festes Papier kopieren und schneiden; Anliegen-Zettel nach Bedarf.",
+            "Einheit 5, Schritt 4: ein Satz Rollenkarten je Tischgruppe für die Probesitzung.",
+            "Ab Schritt 7: ein Satz für die echten Sitzungen; die Zettel liegen neben dem Briefkasten."
+          ],
+          "hintergrund": "Feste Sätze auf der Vorsitzkarte senken die Schwelle, eine Leitungsrolle zu übernehmen – auch für Jugendliche, die sonst wenig sprechen. Echte Beteiligung braucht einen verlässlichen Rahmen (Hart, 1992).",
+          "quellen": [
+            "Hart, R. A. (1992). Children’s Participation: From Tokenism to Citizenship. Florenz: UNICEF International Child Development Centre."
+          ],
+          "material": "Festes Papier, Schere, Schuhkarton als Briefkasten"
+        }
+      },
+      "fr": {
+        "titel": "Conseil : cartes de rôle et papiers de demande",
+        "untertitel": "Modèle à photocopier – cartes de rôle en cinq exemplaires, papiers de demande pour tous",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Photocopier les cartes de rôle cinq fois sur du papier épais : un jeu par îlot pour la séance d’essai, puis un jeu pour les vraies séances. Les rôles changent à chaque séance.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 190,
+            "karten": [
+              {
+                "titel": "Présidence",
+                "bild": "icon:microphone",
+                "text": "Tu mènes la séance et tu lis ces phrases :\n« J’ouvre le conseil. »\n« Qui veut féliciter ou remercier quelqu’un ? »\n« Aujourd’hui, nous parlons de… »\n« Les yeux fermés : qui est pour ? »\n« Est-ce que chacun peut vivre avec ? »"
+              },
+              {
+                "titel": "Gardien·ne du temps",
+                "bild": "icon:hourglass",
+                "text": "Tu as la montre. La séance dure dix minutes.\nAu bout de cinq minutes, tu dis : « Mi-temps. »\nJuste avant la fin : « Encore une minute. »"
+              },
+              {
+                "titel": "Secrétaire",
+                "bild": "icon:notebook",
+                "text": "Tu écris la décision dans le cahier du conseil : la date, ce qui a été décidé, qui fait quoi et pour quand.\nÀ la fin, tu la lis à voix haute."
+              },
+              {
+                "titel": "Gardien·ne des règles",
+                "bild": "icon:hand-stop",
+                "text": "Tu veilles aux règles de parole :\non ne coupe pas la parole ;\non parle de la situation, pas de la personne.\nTu les rappelles gentiment."
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "text",
+            "text": "Papiers de demande : photocopier, découper et poser à côté de la boîte aux lettres. Seul l’enseignant ou l’enseignante vide la boîte et lit les papiers avant chaque séance.",
+            "klein": true
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "feld",
+                "label": "Pour la boîte aux lettres · Date : ____________\nÇa me gêne quand… · Je propose que… · Merci pour…\nSans nommer d’autres personnes.",
+                "hoehe": 6
+              },
+              {
+                "art": "feld",
+                "label": "Pour la boîte aux lettres · Date : ____________\nÇa me gêne quand… · Je propose que… · Merci pour…\nSans nommer d’autres personnes.",
+                "hoehe": 6
+              },
+              {
+                "art": "feld",
+                "label": "Pour la boîte aux lettres · Date : ____________\nÇa me gêne quand… · Je propose que… · Merci pour…\nSans nommer d’autres personnes.",
+                "hoehe": 6
+              },
+              {
+                "art": "feld",
+                "label": "Pour la boîte aux lettres · Date : ____________\nÇa me gêne quand… · Je propose que… · Merci pour…\nSans nommer d’autres personnes.",
+                "hoehe": 6
+              }
+            ],
+            "rechts": [
+              {
+                "art": "feld",
+                "label": "Pour la boîte aux lettres · Date : ____________\nÇa me gêne quand… · Je propose que… · Merci pour…\nSans nommer d’autres personnes.",
+                "hoehe": 6
+              },
+              {
+                "art": "feld",
+                "label": "Pour la boîte aux lettres · Date : ____________\nÇa me gêne quand… · Je propose que… · Merci pour…\nSans nommer d’autres personnes.",
+                "hoehe": 6
+              },
+              {
+                "art": "feld",
+                "label": "Pour la boîte aux lettres · Date : ____________\nÇa me gêne quand… · Je propose que… · Merci pour…\nSans nommer d’autres personnes.",
+                "hoehe": 6
+              },
+              {
+                "art": "feld",
+                "label": "Pour la boîte aux lettres · Date : ____________\nÇa me gêne quand… · Je propose que… · Merci pour…\nSans nommer d’autres personnes.",
+                "hoehe": 6
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Des cartes de rôle avec des phrases toutes prêtes, pour que chacun puisse tenir un rôle au conseil, et des papiers pour la boîte aux lettres.",
+          "ablauf": [
+            "Photocopier les cartes de rôle cinq fois sur du papier épais et les découper ; les papiers de demande selon les besoins.",
+            "Séance 5, étape 4 : un jeu de cartes de rôle par îlot pour la séance d’essai.",
+            "À partir de l’étape 7 : un jeu pour les vraies séances ; les papiers sont posés à côté de la boîte aux lettres."
+          ],
+          "hintergrund": "Des phrases toutes prêtes sur la carte de la présidence abaissent le seuil pour prendre un rôle de direction – aussi pour les jeunes qui parlent peu d’habitude. Une vraie participation a besoin d’un cadre fiable (Hart, 1992).",
+          "quellen": [
+            "Hart, R. A. (1992). Children’s Participation: From Tokenism to Citizenship. Florenz: UNICEF International Child Development Centre."
+          ],
+          "material": "Papier épais, ciseaux, boîte à chaussures comme boîte aux lettres"
+        }
+      }
+    }
+  ]
+}

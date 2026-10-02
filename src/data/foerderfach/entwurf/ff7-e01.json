@@ -48,19 +48,19 @@
         "material": [
           "Schülerheft für jede Person",
           "A5-Blätter, dicke Stifte",
-          "Moderationskarten, 8 je Gruppe",
+          "Moderationskarten, 2 Farben, 40 Stück",
           "Klebepunkte: drei je Person",
           "Zwei leere Plakate (A2), Klebeband",
-          "Jahresweg (Handbuch Teil B) und Gefühlsrad als Plakat",
+          "Plakate: Jahresweg (Teil B), Gefühlsrad",
           "Stempel oder Sticker für den Skills-Pass",
           "Elternbrief für jede Person"
         ],
         "vorbereitung": [
           "Fünf Gruppentische, nummeriert 1–5",
-          "Plakate aufhängen, Ablauf der Stunde an die Tafel",
+          "Plakate aufhängen, Ablauf an die Tafel",
           "Beim SePAS klären: Ansprechperson und Schutzkonzept der Schule",
           "Elternbrief (Handbuch Teil A) kopieren, in der Sprache der Familie",
-          "Den Satz zur Vertraulichkeit im Heft einmal laut lesen"
+          "Vertraulichkeitssatz (Heft) laut lesen"
         ],
         "ablauf": [
           {
@@ -148,7 +148,8 @@
               ]
             },
             "tipp": "Auch Scherzantworten wie „zocken“ oder „schlafen“ aufschreiben: Ablenkung und Ruhe sind echte Skills – nur helfen sie nicht in jeder Lage. Das Plakat aufheben: Es kommt in Einheit 13 und am Ende des Jahres wieder.",
-            "wennEsKippt": "Sagt niemand etwas, selbst zwei Beispiele aus der Tabelle geben und fragen, was davon die Klasse kennt. Kommt eine Provokation wie „jemanden schlagen“, sie ruhig unter „hilft kurz“ schreiben und fragen: Und was passiert danach? Meist sagt die Klasse selbst, dass es neuen Ärger bringt. Wird das Ruhezeichen ignoriert, nicht lauter werden: Hand oben lassen und warten."
+            "wennEsKippt": "Sagt niemand etwas, selbst zwei Beispiele aus der Tabelle geben und fragen, was davon die Klasse kennt. Kommt eine Provokation wie „jemanden schlagen“, sie ruhig unter „hilft kurz“ schreiben und fragen: Und was passiert danach? Meist sagt die Klasse selbst, dass es neuen Ärger bringt. Wird das Ruhezeichen ignoriert, nicht lauter werden: Hand oben lassen und warten.",
+            "blatt": "ff-das-fach"
           },
           {
             "titel": "Klassenvereinbarung 1: sammeln und gewichten",
@@ -266,19 +267,19 @@
         "material": [
           "Un cahier de l’élève par jeune",
           "Feuilles A5, gros feutres",
-          "Cartes, 8 par îlot",
+          "Cartes, 2 couleurs, 40 en tout",
           "Gommettes : trois par jeune",
           "Deux affiches (A2), ruban adhésif",
-          "Chemin de l’année (guide, partie B) et roue en affiche",
+          "Affiches : chemin de l’année (partie B), roue des émotions",
           "Tampon ou autocollants (Skills-Pass)",
           "Une lettre aux parents par jeune"
         ],
         "vorbereitung": [
           "Cinq îlots de quatre, numérotés 1–5",
-          "Accrocher les affiches, noter le déroulement au tableau",
+          "Accrocher les affiches, déroulement au tableau",
           "Voir avec le SePAS : interlocuteur et protocole de protection",
           "Copier la lettre aux parents (guide, partie A) dans la langue de la famille",
-          "Lire une fois à voix haute la phrase sur la confidentialité (cahier)"
+          "Lire à voix haute la phrase de confidentialité"
         ],
         "ablauf": [
           {
@@ -339,7 +340,7 @@
             "titel": "C’est quoi, un skill ? La matière et l’année",
             "dauer": 15,
             "phase": "input",
-            "text": "D’abord, introduire le signal de calme valable dès aujourd’hui et l’essayer une fois (1 min). Puis écrire la question au tableau : que faites-vous quand vous êtes vraiment en colère ou stressés – et qu’est-ce qui vous aide vraiment ensuite ? Deux minutes d’échange à deux, puis rassembler les réponses sur l’affiche « C’est quoi, un skill ? » en deux colonnes : aide un moment – aide vraiment (6 min, exemple dans le tableau). Expliquer ensuite : les skills sont des savoir-faire qui aident à mieux traverser les moments difficiles – avec ses émotions, avec le stress, avec les autres. On les apprend comme un sport : en s’entraînant, pas en écoutant (2 min). Présenter la matière avec la première page du cahier : pas de notes, quatre temps forts à chaque séance, l’encadré « De l’aide au lycée » et les numéros en dessous (3 min). Pour finir, le chemin de l’année sur l’affiche : du moi au nous, puis au monde ; deux ou trois voix : quel chapitre vous rend curieux ? (3 min)",
+            "text": "D’abord, introduire le signal de calme valable dès aujourd’hui et l’essayer une fois (1 min). Puis écrire la question au tableau : que faites-vous quand vous êtes vraiment en colère ou stressés – et qu’est-ce qui vous aide vraiment ensuite ? Deux minutes d’échange à deux, puis rassembler les réponses sur l’affiche « C’est quoi, un skill ? » en deux colonnes : aide un moment – aide vraiment (6 min, exemple ci-dessous). Expliquer ensuite : les skills sont des savoir-faire qui aident à mieux traverser les moments difficiles – avec ses émotions, avec le stress, avec les autres. On les apprend comme un sport : en s’entraînant, pas en écoutant (2 min). Présenter la matière avec la première page du cahier : pas de notes, quatre temps forts à chaque séance, l’encadré « De l’aide au lycée » et les numéros en dessous (3 min). Pour finir, le chemin de l’année sur l’affiche : du moi au nous, puis au monde ; deux ou trois voix : quel chapitre vous rend curieux ? (3 min)",
             "sagen": [
               "Quand je lève la main, vous levez la main aussi et vous faites silence. Ça vaut pour toute l’année.",
               "Ici, il n’y a pas de notes. Ce qui compte, c’est d’essayer et de dire honnêtement ce qui marche pour vous.",
@@ -366,7 +367,8 @@
               ]
             },
             "tipp": "Noter aussi les réponses pour rire, comme « jouer à la console » ou « dormir » : se distraire et se reposer sont de vrais skills – ils n’aident simplement pas dans toutes les situations. Garder l’affiche : elle revient à la séance 13 et en fin d’année.",
-            "wennEsKippt": "Si personne ne parle, donner soi-même deux exemples du tableau et demander lesquels la classe connaît. Si quelqu’un provoque, par exemple avec « frapper quelqu’un », l’écrire calmement sous « aide un moment » et demander : et après, qu’est-ce qui se passe ? En général, la classe dit elle-même que ça crée de nouveaux problèmes. Si le signal de calme est ignoré, ne pas hausser la voix : garder la main levée et attendre."
+            "wennEsKippt": "Si personne ne parle, donner soi-même deux exemples ci-dessous et demander lesquels la classe connaît. Si quelqu’un provoque, par exemple avec « frapper quelqu’un », l’écrire calmement sous « aide un moment » et demander : et après, qu’est-ce qui se passe ? En général, la classe dit elle-même que ça crée de nouveaux problèmes. Si le signal de calme est ignoré, ne pas hausser la voix : garder la main levée et attendre.",
+            "blatt": "ff-das-fach"
           },
           {
             "titel": "Charte 1 : rassembler et choisir",
