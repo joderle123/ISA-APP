@@ -171,9 +171,8 @@
     },
     {
       "id": "ff7-e10", "nr": 10, "kapitel": "ff7-k3", "basis": "j1-e08", "kompetenzen": ["kennen", "verstehen"],
-      "titel": { "de": "Alles steht Kopf", "fr": "Vice-versa" },
-      "kurz": { "de": "Filmausschnitte: Wie Gefühle das Steuer übernehmen – und warum auch Kummer seinen Platz hat", "fr": "Extraits de film : comment les émotions prennent les commandes – et pourquoi la tristesse a sa place" },
-      "hinweis": { "de": "Vorführrechte der Schule klären", "fr": "Vérifier les droits de projection" }
+      "titel": { "de": "Wer sitzt am Steuer?", "fr": "Qui est aux commandes ?" },
+      "kurz": { "de": "Eine Geschichte in Standbildern zeigt, wie Gefühle das Steuer übernehmen – und warum auch Kummer seinen Platz hat", "fr": "Une histoire en images figées montre comment les émotions prennent les commandes et pourquoi la tristesse compte" }
     },
     {
       "id": "ff7-e11", "nr": 11, "kapitel": "ff7-k3", "basis": "j1-e09", "kompetenzen": ["kennen", "steuern"],
@@ -262,7 +261,7 @@
       "kurz": { "de": "Zwischen Situation und Gefühl steht ein Gedanke: Sätze entdecken, die helfen oder bremsen", "fr": "Entre la situation et l’émotion, il y a une pensée : repérer les phrases qui aident ou qui freinent" }
     },
     {
-      "id": "ff7-e28", "nr": 28, "kapitel": "ff7-k8", "basis": "j1-e17", "kompetenzen": ["kennen"],
+      "id": "ff7-e28", "nr": 28, "kapitel": "ff7-k8", "basis": "j1-e17", "wahl": true, "kompetenzen": ["kennen"],
       "titel": { "de": "Meine Glaubenssätze", "fr": "Mes croyances" },
       "kurz": { "de": "In Ruhe und nur für sich: eigene bremsende Sätze finden – woher sie kommen und ob sie noch stimmen", "fr": "Au calme et pour soi : repérer ses phrases qui freinent – d’où elles viennent, si elles sont vraies" }
     },
@@ -272,7 +271,7 @@
       "kurz": { "de": "Glaubenssätze wie Detektive prüfen und realistische neue Sätze auf Kärtchen mitnehmen", "fr": "Examiner ses croyances comme un détective et emporter de nouvelles phrases réalistes" }
     },
     {
-      "id": "ff7-e30", "nr": 30, "kapitel": "ff7-k8", "basis": "j1-e19", "wahl": true, "kompetenzen": ["steuern", "kennen"],
+      "id": "ff7-e30", "nr": 30, "kapitel": "ff7-k8", "basis": "j1-e19", "kompetenzen": ["steuern", "kennen"],
       "titel": { "de": "Neue Gedanken ausprobieren", "fr": "Essayer de nouvelles pensées" },
       "kurz": { "de": "Im Rollenspiel erleben, wie ein neuer Satz eine Szene verändert, und ihn eine Woche lang testen", "fr": "Voir en jeu de rôle comment une nouvelle phrase change une scène, puis la tester une semaine" }
     },
