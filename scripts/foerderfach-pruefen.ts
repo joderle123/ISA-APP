@@ -7,7 +7,7 @@
 // Die Blätter laufen zusätzlich durch scripts/blatt-pruefen.ts (Regeln der Toolbox), ohne die
 // Regeln, die im Förderfach nicht gelten (ELDiB-Ziele, Lehrerseite – sie wird nicht gedruckt).
 // Fehler → Exit-Code 1. Hinweise (Stil) werden nur gezeigt; mit --streng zählen sie als Fehler.
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
+import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { basename, dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { spawnSync } from 'node:child_process'
@@ -448,11 +448,13 @@ for (const b of zuPruefen) {
 }
 // Regeln der Toolbox (scripts/blatt-pruefen.ts) – ohne die, die im Förderfach nicht gelten
 if (zuPruefen.length) {
-  const tmp = join(ROOT, 'tmp/foerderfach-pruefen')
+  // je Lauf ein eigener Ordner: Mehrere Prüfläufe gleichzeitig dürfen sich nicht die Datei überschreiben
+  const tmp = join(ROOT, 'tmp/foerderfach-pruefen', String(process.pid))
   mkdirSync(tmp, { recursive: true })
   const datei = join(tmp, 'foerderfach-blaetter.json')
   writeFileSync(datei, JSON.stringify(zuPruefen))
   const r = spawnSync('npx', ['tsx', '--tsconfig', 'tsconfig.scripts.json', 'scripts/blatt-pruefen.ts', datei], { cwd: ROOT, encoding: 'utf8' })
+  rmSync(tmp, { recursive: true, force: true })
   const ohneAufgabe = (zeile: string) => / (ff-[a-z0-9-]+) (DE|FR): keine einzige Aufgabe/.exec(zeile) || [...vorlagenIds].some((id) => zeile.includes(` ${id} `) && zeile.includes('keine einzige Aufgabe'))
   const giltNicht = [/1–4 ELDiB-Ziele/, /Lehrerseite: fachlicher Hintergrund zu kurz/, /Lehrerseite ohne Quelle/, /Hintergrund über 1100 Zeichen/]
   for (const zeile of (r.stdout ?? '').split('\n')) {
