@@ -1,0 +1,614 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e35",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff-skills-pass",
+        "ff7-glas-der-beduerfnisse",
+        "ff7-baum-der-staerke"
+      ],
+      "vorlagen": [
+        "ff7-brief-an-mich"
+      ],
+      "woerter": [
+        {
+          "de": "der Rückblick",
+          "fr": "le bilan"
+        },
+        {
+          "de": "wachsen",
+          "fr": "grandir"
+        },
+        {
+          "de": "stolz sein",
+          "fr": "être fier, fière"
+        },
+        {
+          "de": "die Stärke",
+          "fr": "la force"
+        },
+        {
+          "de": "der Brief",
+          "fr": "la lettre"
+        },
+        {
+          "de": "sich verabschieden",
+          "fr": "dire au revoir"
+        }
+      ],
+      "de": {
+        "titel": "Rückblick und Abschied",
+        "kurz": "Mit Skills-Pass, Plakat, Glas und Baum schaut die Klasse auf ihr Jahr, schreibt einen Brief an sich selbst, schenkt einander Früchte und verabschiedet sich.",
+        "ziele": [
+          "sehen an Plakat, Glas und Baum, was seit September gewachsen ist",
+          "schätzen sich im Skills-Pass am Ende des Jahres selbst ein",
+          "schreiben einen Brief an sich selbst für das nächste Schuljahr",
+          "schreiben einander wertschätzende Sätze und verabschieden sich"
+        ],
+        "material": [
+          "Gefühlsrad-Plakat, 40 Klebepunkte",
+          "Schülerheft mit Skills-Pass, Stempel",
+          "Plakat „Was sind Skills?“",
+          "Klebezettel in einer neuen Farbe",
+          "Glas der Bedürfnisse, rote Stifte",
+          "Briefbogen und Umschlag je Person",
+          "Box zum Verschließen, leise Musik",
+          "Je Person eine Karte der Lehrkraft"
+        ],
+        "vorbereitung": [
+          "Mit der Lehrkraft der 6e den Termin absprechen, an dem sie die Briefe zurückgibt.",
+          "Für jede Person eine Karte mit einem persönlichen Satz schreiben: ein konkreter Moment aus dem Jahr.",
+          "Die Zettel im Glas vorher still lesen und drei, vier unverfängliche auswählen.",
+          "Briefbogen kopieren; für alle, denen das Glas- oder Baum-Blatt fehlt, Kopien bereitlegen."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Wenn ich an dieses Jahr denke …"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Mission und der letzte Punkt am Jahresweg"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "Plakat „Was sind Skills?“ abschließen"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Das Glas der Bedürfnisse – ein letztes Mal"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Alle, die … – zum letzten Mal"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Brief an mich – zu öffnen im nächsten Jahr"
+          },
+          {
+            "min": "65–85",
+            "phase": "uebung",
+            "titel": "Früchte für den Baum"
+          },
+          {
+            "min": "85–90",
+            "phase": "skill",
+            "titel": "Skill: 5-4-3-2-1"
+          },
+          {
+            "min": "90–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass und Abschied"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Wenn ich an dieses Jahr denke …",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "An der Tafel steht: Wenn ich an dieses Jahr denke, fühle ich mich … Beim Hereinkommen klebt jede Person bis zu zwei Punkte auf das Gefühlsrad-Plakat; zwei sind heute ausdrücklich erlaubt, denn Abschiede machen oft gemischte Gefühle. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern. Die Lehrkraft beginnt mit zwei Wörtern und einer Zahl, etwa: stolz und ein bisschen wehmütig, 30 – weil heute unsere letzte Stunde ist. Drei, vier Freiwillige nennen ihre Wörter (4 Min.). Zum Schluss gemeinsam auf das Plakat schauen: Wo liegen die Punkte heute (2 Min.)?",
+            "sagen": [
+              "Wenn ihr an dieses Jahr denkt – welches Wort passt? Heute dürfen es zwei sein.",
+              "Letzte Stunden machen manche nervös, andere merken gar nichts. Beides ist in Ordnung."
+            ],
+            "tipp": "Mit einem ehrlichen Paar beginnen, das Gegensätze verbindet – stolz und traurig, froh und müde. So sehen alle, dass ein Abschied beides sein darf.",
+            "wennEsKippt": "Sagt jemand „Endlich vorbei“, das mit Humor stehen lassen: Auch Erleichterung ist ein Gefühl. Kleben Punkte bei sehr schweren Wörtern wie einsam oder hilflos, nicht vor der Klasse nachfragen; in der Arbeitsphase leise bei den Tischgruppen vorbeigehen und nach der Stunde ansprechbar sein."
+          },
+          {
+            "titel": "Mission und der letzte Punkt am Jahresweg",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Per Daumen nach der Wochen-Mission der letzten Stunde fragen – hoch, Mitte, runter –, eine Stimme erzählt. Hat die Klasse in den letzten Wochen Stücke gezeigt, kurz fragen: Welche Szene ist euch geblieben? Dann setzt eine freiwillige Person den letzten Punkt auf den Jahresweg, bei Kapitel 10: Die Klasse ist oben angekommen. Den Ablauf der Stunde an die Tafel schreiben (Liste) und sagen, dass heute alle Hefte mit nach Hause gehen.",
+            "sagen": [
+              "Heute ist unsere letzte Stunde in diesem Jahr. Wir schauen zurück, ihr schreibt euch selbst einen Brief, und wir verabschieden uns richtig."
+            ],
+            "punkte": [
+              "Was ist gewachsen? Plakat, Skills-Pass, Glas der Bedürfnisse",
+              "Ein Brief an mich – zu öffnen im nächsten Schuljahr",
+              "Früchte für den Baum – von mir und von den anderen",
+              "Ein letzter Skill und der Abschied"
+            ],
+            "tipp": "Den Jahresweg nach der Stunde nicht wegwerfen: Im September zeigt er der neuen 7e, was sie erwartet – und dass eine Klasse diesen Weg schon gegangen ist."
+          },
+          {
+            "titel": "Plakat „Was sind Skills?“ abschließen",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Das Plakat „Was sind Skills?“ aus Stunde 1 hängt an der Tafel, mit den Spalten hilft kurz – hilft wirklich und den Ergänzungen aus Stunde 13; kurz erinnern, wie es im September aussah (2 Min.). Dann blättert jede Person still durch ihren Skills-Pass und markiert ihren Lieblingssatz (4 Min.). Danach schreibt sie auf einen Klebezettel in der neuen Farbe einen Skill, der ihr wirklich hilft und den sie im September noch nicht kannte. Tischgruppe für Tischgruppe kommen die Zettel in die Spalte „hilft wirklich“ (3 Min.). Die Lehrkraft liest sie vor und ordnet Ähnliches zusammen (3 Min.). Zum Schluss ergänzt jede Tischgruppe auf einer Karte den Satz „Skills sind …“; die Klasse wählt einen, der groß über das Plakat kommt (3 Min.).",
+            "sagen": [
+              "Schaut auf das Plakat vom ersten Tag. Was wusstet ihr damals noch nicht?",
+              "Was aus der Spalte ‚hilft kurz‘ hat bei euch trotzdem noch Platz – als kurze Pause?"
+            ],
+            "tipp": "Die Spalte „hilft kurz“ nicht schlechtmachen: Zocken oder laute Musik sind als Pause in Ordnung, sie lösen nur nichts. Das Plakat aufheben – im September ist es der beste Einstieg für die neue 7e.",
+            "wennEsKippt": "Ist das Plakat nicht mehr da, die beiden Spalten neu an die Tafel schreiben und zuerst gemeinsam sammeln, was im September hineingehört hätte. Fällt jemandem kein Skill ein, helfen der Skills-Pass oder die Skill-Karten hinten im Heft. Wer erst im Lauf des Jahres dazugekommen ist, nimmt einen Skill aus den letzten Wochen; Lücken im Pass nicht ansprechen.",
+            "blatt": "ff-skills-pass"
+          },
+          {
+            "titel": "Das Glas der Bedürfnisse – ein letztes Mal",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Das Glas der Bedürfnisse aus Stunde 6 steht auf dem Pult. Die Lehrkraft öffnet es ein letztes Mal und liest drei, vier vorher ausgewählte Zettel ohne Kommentar vor (3 Min.). Dann eine Frage an die Klasse, Antwort per Handzeichen: Welcher dieser Tanks ist in unserer Klasse dieses Jahr voller geworden? Zwei, drei Stimmen sagen, was geholfen hat (3 Min.). Danach arbeitet jede Person allein auf dem Blatt „Das Glas der Bedürfnisse“: rote Striche in die Gläser, dann die Sätze für Stunde 35 (6 Min.). Zum Schluss erzählt, wer mag, in der Tischgruppe von einem Tank, der voller geworden ist – den Tank, nicht den Grund (3 Min.).",
+            "sagen": [
+              "Im Herbst kam in dieses Glas, was ihr braucht. Was davon ist dieses Jahr voller geworden?",
+              "Rot ist die Farbe von heute. Vergleicht mit Blau und Grün: Was hat sich verändert?"
+            ],
+            "tipp": "Vorher sagen, was mit den Zetteln geschieht: Wer seinen eigenen wiedererkennt, darf ihn nach der Stunde ohne Nachfrage abholen; die übrigen vernichtet die Lehrkraft vertraulich.",
+            "wennEsKippt": "Rät jemand laut, wer einen Zettel geschrieben hat, sofort freundlich stoppen: Die Zettel bleiben ohne Namen. Fehlt jemandem das Blatt (neu dazugekommen oder verloren), reicht ein Zettel mit den zwei Sätzen: Am meisten verändert hat sich … Im Sommer achte ich auf … Ist ein Tank bei jemandem auffällig leer geblieben, nicht vor der Klasse nachfragen, sondern nach der Stunde ein Gespräch anbieten und bei Sorge den SePAS einbeziehen.",
+            "blatt": "ff7-glas-der-beduerfnisse"
+          },
+          {
+            "titel": "Bewegungspause: Alle, die … – zum letzten Mal",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Wie in der allerersten Stunde stehen alle hinter ihrem Stuhl. Die Sätze vorlesen; wer sich angesprochen fühlt, setzt sich kurz und steht wieder auf. Die Lehrkraft macht selbst mit. Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung; dann den letzten Satz zu Beginn der zweiten Stunde vorlesen.",
+            "punkte": [
+              "Alle, die heute mit dem Bus gekommen sind.",
+              "Alle, die sich im Lycée nicht mehr verlaufen.",
+              "Alle, die dieses Jahr einen Skill ausprobiert haben, der wirklich geholfen hat.",
+              "Alle, die dieses Jahr vor der Klasse etwas gezeigt, gespielt oder vorgelesen haben.",
+              "Alle, die in dieser Klasse jemandem geholfen haben.",
+              "Alle, die sich auf die Sommerferien freuen."
+            ],
+            "tipp": "Der erste Satz ist derselbe wie in der ersten Stunde des Jahres. Wer es merkt, darf grinsen – der Kreis schließt sich."
+          },
+          {
+            "titel": "Brief an mich – zu öffnen im nächsten Jahr",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Zuerst den Rahmen nennen (2 Min.): Niemand liest die Briefe, auch die Lehrkraft nicht. Sie kommen verschlossen in die Box, und die Lehrkraft der 6e gibt sie im neuen Schuljahr zurück; den vereinbarten Termin an die Tafel schreiben. Dann schreibt jede Person auf dem Briefbogen an sich selbst, leise Musik im Hintergrund (10 Min.). Die Satzanfänge sind ein Angebot, keine Pflicht; Zeichnungen sind erlaubt. Zum Schluss den Brief falten, in den Umschlag stecken und zukleben, außen Name und „Zu öffnen im nächsten Schuljahr“ (3 Min.). Die Lehrkraft geht mit der Box durch die Tischgruppen, alle legen ihren Umschlag sichtbar hinein, dann wird die Box verschlossen.",
+            "sagen": [
+              "Stellt euch vor, ihr seid ein Jahr älter. Was wollt ihr euch dann sagen?",
+              "Diese Briefe liest niemand außer euch. Sie bleiben verschlossen, bis ihr sie im neuen Schuljahr zurückbekommt."
+            ],
+            "tipp": "Wer die Schule verlässt, nimmt seinen verschlossenen Brief heute mit nach Hause, außen das Datum, an dem er ihn öffnen will. Den Rückgabetermin am besten gleich mit der Lehrkraft der 6e in ihren Kalender eintragen.",
+            "wennEsKippt": "Findet jemand die Übung peinlich, ernst bleiben und eine kurze Form anbieten: drei Sätze oder eine Zeichnung reichen. Wird jemand beim Schreiben traurig, ruhig dazusetzen und ein Gespräch nach der Stunde anbieten. Fällt dabei ein Satz, der auf Gefährdung hindeutet, gilt das Achtung-Feld – der Brief selbst bleibt trotzdem verschlossen.",
+            "blatt": "ff7-brief-an-mich"
+          },
+          {
+            "titel": "Früchte für den Baum",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Alle schlagen ihren Baum der Stärke aus Stunde 8 auf. Zuerst die eigenen Früchte (5 Min.): zwei, drei Dinge, die die Person dieses Jahr geschafft hat – klein darf es sein –, in einer neuen Farbe und mit Datum an den Baum und in die Tabelle zu Stunde 35. Dann Früchte von den anderen, wie in Stunde 8 (8 Min.): Jede Person bekommt drei Klebezettel und schreibt für jede der drei anderen in der Tischgruppe einen Satz nach den Regeln an der Tafel (Liste). Die Zettel liegen verdeckt in der Tischmitte, die Lehrkraft geht herum und liest mit. Dann bekommt jede Person ihre Zettel, liest sie still und klebt sie an ihren Baum (3 Min.). Zum Schluss verteilt die Lehrkraft die Karten mit ihrem persönlichen Satz (2 Min.); zwei, drei Freiwillige sagen, welcher Satz sie überrascht hat (2 Min.).",
+            "sagen": [
+              "Schreibt so, dass sich die Person in einem Jahr noch darüber freut.",
+              "Was hat euch an euren Zetteln überrascht?"
+            ],
+            "punkte": [
+              "Ein Satz, der stärkt: eine Stärke, die du erlebt hast, oder ein Danke.",
+              "Konkret: nicht nur „du bist nett“, sondern wann und wie.",
+              "Nichts über Aussehen, keine Witze auf Kosten der Person.",
+              "Jede Person in der Tischgruppe bekommt von jeder anderen einen Zettel."
+            ],
+            "tipp": "Die Karten der Lehrkraft wirken am stärksten, wenn sie einen konkreten Moment nennen, etwa: Im März hast du in deiner Gruppe als Erste Stopp gesagt. Die Zettel festkleben lassen – lose gehen sie in den Ferien verloren.",
+            "wennEsKippt": "Taucht ein abwertender oder zweideutiger Zettel auf, nimmt die Lehrkraft ihn wortlos heraus und schreibt selbst einen neuen; mit der Person, die ihn geschrieben hat, später unter vier Augen sprechen. Ist jemand eher am Rand oder fehlt ein Zettel, weil jemand nicht schreiben will, darauf achten, dass niemand weniger bekommt: Die Lehrkraft schreibt selbst einen dazu. Fehlt der Baum, kommen die Früchte auf ein Blatt mit einem gezeichneten Stamm.",
+            "blatt": "ff7-baum-der-staerke"
+          },
+          {
+            "titel": "Skill: 5-4-3-2-1",
+            "dauer": 5,
+            "phase": "skill",
+            "text": "Erinnern: Mit diesem Skill hat das Jahr begonnen. Heute leitet ihn eine Person aus der Klasse an, die vorher gefragt wurde; die Lehrkraft sitzt daneben und hilft bei Bedarf mit den Stichworten (Liste). Augen offen oder geschlossen, ganz langsam. Danach eine Frage an alle, per Handzeichen: Wer hat diesen Skill seit September irgendwo benutzt – im Bus, vor einem Test, abends im Bett?",
+            "sagen": [
+              "Mit diesem Skill haben wir im September angefangen. Heute leitet ihn jemand von euch an."
+            ],
+            "punkte": [
+              "Still für dich: 5 Dinge, die du siehst, und 4, die du hörst.",
+              "Dann 3 Dinge, die du spürst, 2, die du riechst, 1, das du schmeckst.",
+              "Langsam ausatmen: Was ist jetzt anders?"
+            ],
+            "tipp": "Die anleitende Person vor der Stunde fragen, nicht vor der Klasse: So kann auch jemand Leises zusagen. Wünscht sich die Klasse einen anderen Lieblings-Skill, darf es dieser sein.",
+            "wennEsKippt": "Albert die anleitende Person, übernimmt die Lehrkraft ruhig die Stichworte, ohne sie abzusetzen: Ihr leitet gemeinsam. Wird es unruhig, auf 3-2-1 kürzen."
+          },
+          {
+            "titel": "Skills-Pass und Abschied",
+            "dauer": 10,
+            "phase": "abschluss",
+            "text": "Der Skills-Pass ein letztes Mal (6 Min.): zuerst Satz Nr. 35 mit der Leitfrage an der Tafel – Was nehme ich aus diesem Jahr mit? –, dann die Frage auf der Seite: Welcher Skill hat dir am meisten geholfen? Danach kreuzt jede Person die fünf Sätze der Einschätzung an und blättert zurück zum ersten Trimester: Wo ist ein Kreuz gewandert? Eine Selbsteinschätzung, keine Note; wer mag, sagt, was sich verändert hat. Dann der letzte Stempel. Zum Schluss die Wochen-Mission für die Sommerferien ansagen, allen danken und den Abschiedssatz sagen (4 Min.). Alle Hefte gehen heute mit nach Hause.",
+            "sagen": [
+              "Schaut, wo eure Kreuze im Herbst standen und wo sie heute stehen. Was hat sich bewegt?",
+              "Danke für dieses Jahr. Ich habe gesehen, wie viel ihr euch getraut habt."
+            ],
+            "tipp": "Kreuze, die nicht gewandert sind, nicht kommentieren: Manches wächst langsamer, und ein ehrliches Kreuz ist mehr wert als ein schönes. Wer im ersten Trimester noch nicht da war, vergleicht mit seinem ersten eigenen Kreuz.",
+            "wennEsKippt": "Fällt der Abschied schwer – Tränen, Rückzug oder Albernheit als Schutz –, das nicht wegreden: benennen, dass Abschiede gemischte Gefühle machen, und nach der Stunde Zeit für diese Person haben.",
+            "blatt": "ff-skills-pass"
+          }
+        ],
+        "bruecke": "Das war unsere letzte Stunde in diesem Jahr. Eure Skills kommen mit in die Ferien – und eure Briefe warten verschlossen auf euch, bis ins neue Schuljahr.",
+        "mission": "Nimm deinen Lieblings-Skill mit in die Sommerferien und probiere ihn mindestens einmal aus – wo immer du gerade bist. Im neuen Schuljahr wartet dein Brief auf dich.",
+        "hintergrund": "Am Ende eines Jahres geht leicht unter, was sich verändert hat. Der Rückblick mit Skills-Pass, Plakat, Glas und Baum macht Entwicklung sichtbar: Die Jugendlichen sehen schwarz auf weiß, was sie im September noch nicht konnten. Über eigene Erfahrungen zu schreiben, hilft, sie zu ordnen (Pennebaker, 1997); der Brief an sich selbst verbindet den Rückblick mit einem Blick nach vorn. Dankbarkeit wirkt schon in diesem Alter: Jugendliche von etwa elf bis dreizehn Jahren, die zwei Wochen lang notierten, wofür sie dankbar waren, waren danach unter anderem zufriedener mit der Schule (Froh et al., 2008). Auch eine Klasse braucht ein Ende: Tuckman und Jensen (1977) ergänzten die Phasen der Gruppenentwicklung um eine eigene Abschlussphase. Ein gestalteter Abschied zeigt, dass Beziehungen gut enden können – gerade für Jugendliche, die schon Abbrüche erlebt haben.",
+        "quellen": [
+          "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
+          "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233.",
+          "Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. Group & Organization Studies, 2(4), 419–427."
+        ],
+        "achtung": "Abschiede wecken bei manchen alte Verluste: Umzüge, Trennungen, Schulwechsel. Traurigkeit, Rückzug oder Albernheit sind dann verständlich – nicht vor der Klasse vertiefen, nach der Stunde Zeit haben. Die Briefe liest niemand; das vorher sagen und einhalten. Bei den Früchten liest die Lehrkraft mit und nimmt abwertende Zettel wortlos heraus. Deutet jemand an, nicht mehr leben zu wollen, oder gibt es andere Hinweise auf Gefährdung: noch am selben Tag das Gespräch suchen, den SePAS informieren, nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112.",
+        "differenzierung": {
+          "leichter": "Für den Brief reichen drei Satzanfänge, Stichworte oder eine Zeichnung; wer die Sprache noch lernt, darf in seiner Sprache schreiben. Für die Früchte Satzanfänge an die Tafel: Ich habe erlebt, dass du … · Danke, dass du … Im Skills-Pass reicht ein Wort.",
+          "schwerer": "Auf das Plakat zusätzlich einen Tipp für die neue 7e schreiben: Welcher Skill hilft am Anfang am meisten? Oder im Brief drei Fragen an das eigene Ich im nächsten Jahr stellen, die es beim Öffnen beantworten soll."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Plakat „Was sind Skills?“ abschließen (10 Min.), Brief an mich (15 Min.), Früchte für den Baum, von mir und von den anderen (10 Min.), Skills-Pass mit Jahres-Einschätzung und Abschied (10 Min.). Das Glas und 5-4-3-2-1 entfallen; das Glas öffnet die Lehrkraft beim Abschied kurz für ein, zwei Zettel."
+      },
+      "fr": {
+        "titel": "Bilan et au revoir",
+        "kurz": "Avec le Skills-Pass, l’affiche, le bocal et l’arbre, la classe revient sur son année, s’écrit une lettre, s’offre des fruits et se dit au revoir.",
+        "ziele": [
+          "voient sur l’affiche, dans le bocal et sur l’arbre ce qui a grandi",
+          "s’auto-évaluent dans le Skills-Pass en fin d’année",
+          "s’écrivent une lettre pour l’année scolaire prochaine",
+          "s’écrivent des phrases bienveillantes et se disent au revoir"
+        ],
+        "material": [
+          "Roue des émotions, 40 gommettes",
+          "Cahier avec Skills-Pass, tampon",
+          "Affiche « C’est quoi, un skill ? »",
+          "Post-it d’une nouvelle couleur",
+          "Bocal des besoins, feutres rouges",
+          "Lettre et enveloppe par jeune",
+          "Boîte qui se ferme, musique douce",
+          "Une carte personnelle par jeune"
+        ],
+        "vorbereitung": [
+          "Convenir avec l’enseignant·e de 6e de la date à laquelle les lettres seront rendues.",
+          "Écrire pour chaque jeune une carte avec une phrase personnelle : un moment concret de l’année.",
+          "Lire avant en silence les papiers du bocal et en choisir trois ou quatre sans risque.",
+          "Photocopier le papier à lettre ; prévoir des copies de la fiche du bocal ou de l’arbre pour ceux à qui elle manque."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : quand je pense à cette année…"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Mission et dernier point sur le chemin de l’année"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "Terminer l’affiche des skills"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Le bocal des besoins – une dernière fois"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : debout, assis – une dernière fois"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Lettre à moi – à ouvrir l’an prochain"
+          },
+          {
+            "min": "65–85",
+            "phase": "uebung",
+            "titel": "Des fruits pour l’arbre"
+          },
+          {
+            "min": "85–90",
+            "phase": "skill",
+            "titel": "Skill : 5-4-3-2-1"
+          },
+          {
+            "min": "90–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass et au revoir"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : quand je pense à cette année…",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Au tableau : quand je pense à cette année, je me sens… En entrant, chaque jeune colle jusqu’à deux gommettes sur la roue des émotions ; deux sont expressément permises aujourd’hui, car les au revoir mélangent souvent les émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts. L’enseignant·e commence avec deux mots et un chiffre, par exemple : fier et un peu nostalgique, 30 – parce que c’est notre dernière séance. Trois ou quatre volontaires disent leurs mots (4 min). Pour finir, regarder ensemble l’affiche : où sont les gommettes aujourd’hui (2 min) ?",
+            "sagen": [
+              "Quand vous pensez à cette année – quel mot vous correspond ? Aujourd’hui, vous pouvez en prendre deux.",
+              "Les dernières séances rendent certains nerveux, d’autres ne sentent rien. Les deux, c’est normal."
+            ],
+            "tipp": "Commencer par une paire honnête qui réunit des contraires – fier et triste, content et fatigué. Tout le monde voit ainsi qu’un au revoir peut être les deux à la fois.",
+            "wennEsKippt": "Si quelqu’un dit « Enfin fini », le laisser passer avec humour : le soulagement aussi est une émotion. Si des gommettes sont sur des mots très lourds comme seul ou impuissant, ne pas poser de questions devant la classe ; pendant le travail, passer discrètement dans les îlots et rester disponible après le cours."
+          },
+          {
+            "titel": "Mission et dernier point sur le chemin de l’année",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Demander avec le pouce où en est la mission de la dernière séance – en haut, au milieu, en bas –, une voix raconte. Si la classe a présenté des pièces ces dernières semaines, demander brièvement : quelle scène vous est restée ? Puis un ou une volontaire colle le dernier point sur le chemin de l’année, au chapitre 10 : la classe est arrivée en haut. Écrire le programme de la séance au tableau (liste) et dire qu’aujourd’hui, tous les cahiers partent à la maison.",
+            "sagen": [
+              "Aujourd’hui, c’est notre dernière séance de l’année. On regarde en arrière, vous vous écrivez une lettre, et on se dit vraiment au revoir."
+            ],
+            "punkte": [
+              "Qu’est-ce qui a grandi ? L’affiche, le Skills-Pass, le bocal des besoins",
+              "Une lettre à moi – à ouvrir l’année scolaire prochaine",
+              "Des fruits pour l’arbre – de moi et des autres",
+              "Un dernier skill et l’au revoir"
+            ],
+            "tipp": "Ne pas jeter le chemin de l’année après la séance : en septembre, il montre à la nouvelle 7e ce qui l’attend – et qu’une classe a déjà fait ce chemin."
+          },
+          {
+            "titel": "Terminer l’affiche des skills",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "L’affiche « C’est quoi, un skill ? » de la séance 1 est au tableau, avec ses colonnes aide un moment – aide vraiment et les ajouts de la séance 13 ; rappeler brièvement à quoi elle ressemblait en septembre (2 min). Puis chacun feuillette en silence son Skills-Pass et y marque sa phrase préférée (4 min). Ensuite, il écrit sur un post-it de la nouvelle couleur un skill qui l’aide vraiment et qu’il ne connaissait pas en septembre. Îlot par îlot, les post-it vont dans la colonne « aide vraiment » (3 min). Les lire à voix haute en regroupant ce qui se ressemble (3 min). Pour finir, chaque îlot complète sur une carte la phrase « Les skills, c’est… » ; la classe en choisit une, que l’on écrit en grand en haut de l’affiche (3 min).",
+            "sagen": [
+              "Regardez l’affiche du premier jour. Qu’est-ce que vous ne saviez pas encore à l’époque ?",
+              "Qu’est-ce qui, dans la colonne “aide un moment”, a quand même encore sa place chez vous – comme petite pause ?"
+            ],
+            "tipp": "Ne pas dénigrer la colonne « aide un moment » : jouer ou mettre la musique à fond, c’est correct comme pause, ça ne règle juste rien. Garder l’affiche – en septembre, c’est la meilleure entrée en matière pour la nouvelle 7e.",
+            "wennEsKippt": "Si l’affiche n’existe plus, réécrire les deux colonnes au tableau et rassembler d’abord ensemble ce qui y aurait figuré en septembre. Si quelqu’un ne trouve aucun skill, le Skills-Pass ou les cartes skills à la fin du cahier aident. Qui est arrivé en cours d’année prend un skill des dernières semaines ; ne pas relever les trous dans le pass.",
+            "blatt": "ff-skills-pass"
+          },
+          {
+            "titel": "Le bocal des besoins – une dernière fois",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Le bocal des besoins de la séance 6 est sur le bureau. L’ouvrir une dernière fois et lire sans commentaire trois ou quatre papiers choisis à l’avance (3 min). Puis une question à la classe, réponse à main levée : lequel de ces réservoirs s’est rempli dans notre classe cette année ? Deux ou trois voix disent ce qui a aidé (3 min). Ensuite, chacun travaille seul sur la fiche « Le bocal des besoins » : des traits rouges dans les bocaux, puis les phrases de la séance 35 (6 min). Pour finir, qui le souhaite parle en îlot d’un réservoir qui s’est rempli – le réservoir, pas la raison (3 min).",
+            "sagen": [
+              "À l’automne, vous avez mis dans ce bocal ce dont vous avez besoin. Qu’est-ce qui s’est rempli cette année ?",
+              "Le rouge, c’est la couleur d’aujourd’hui. Comparez avec le bleu et le vert : qu’est-ce qui a changé ?"
+            ],
+            "tipp": "Dire avant ce qui arrive aux papiers : qui reconnaît le sien peut venir le chercher après le cours, sans question ; les autres sont détruits de façon confidentielle.",
+            "wennEsKippt": "Si quelqu’un devine à voix haute qui a écrit un papier, l’arrêter tout de suite, gentiment : les papiers restent anonymes. S’il manque la fiche à quelqu’un (nouveau ou fiche perdue), un papier avec les deux phrases suffit : ce qui a le plus changé, c’est… Cet été, je ferai attention à… Si un réservoir est resté visiblement vide chez quelqu’un, ne pas poser de questions devant la classe, mais proposer un entretien après le cours et, en cas d’inquiétude, impliquer le SePAS.",
+            "blatt": "ff7-glas-der-beduerfnisse"
+          },
+          {
+            "titel": "Pause active : debout, assis – une dernière fois",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Comme lors de la toute première séance, tout le monde se lève derrière sa chaise. Lire les phrases ; qui se sent concerné s’assoit un instant, puis se relève. Participer soi-même. Si la grande récréation tombe entre les deux heures, supprimer l’exercice ; lire alors la dernière phrase au début de la deuxième heure.",
+            "punkte": [
+              "Qui est venu en bus aujourd’hui.",
+              "Qui ne se perd plus dans le lycée.",
+              "Qui a essayé cette année un skill qui a vraiment aidé.",
+              "Qui a montré, joué ou lu quelque chose devant la classe cette année.",
+              "Qui a aidé quelqu’un de cette classe.",
+              "Qui se réjouit des grandes vacances."
+            ],
+            "tipp": "La première phrase est la même que lors de la première séance de l’année. Qui le remarque a le droit de sourire – la boucle est bouclée."
+          },
+          {
+            "titel": "Lettre à moi – à ouvrir l’an prochain",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "D’abord, poser le cadre (2 min) : personne ne lit les lettres, l’enseignant·e non plus. Elles vont fermées dans la boîte, et l’enseignant·e de 6e les rendra l’année scolaire prochaine ; écrire au tableau la date convenue. Puis chacun s’écrit une lettre sur le papier à lettre, avec une musique douce en fond (10 min). Les débuts de phrase sont une proposition, pas une obligation ; les dessins sont permis. Pour finir, plier la lettre, la glisser dans l’enveloppe et la fermer, écrire dessus son prénom et « À ouvrir l’année prochaine » (3 min). Passer avec la boîte dans les îlots ; chacun y dépose son enveloppe, bien en vue, puis la boîte est fermée.",
+            "sagen": [
+              "Imaginez que vous avez un an de plus. Qu’est-ce que vous voulez vous dire ?",
+              "Personne ne lira ces lettres à part vous. Elles restent fermées jusqu’à ce que vous les récupériez l’année prochaine."
+            ],
+            "tipp": "Qui quitte l’école emporte aujourd’hui sa lettre fermée, avec sur l’enveloppe la date à laquelle il veut l’ouvrir. Noter tout de suite la date de remise dans l’agenda de l’enseignant·e de 6e.",
+            "wennEsKippt": "Si quelqu’un trouve l’exercice gênant, rester sérieux et proposer une forme courte : trois phrases ou un dessin suffisent. Si un jeune devient triste en écrivant, s’asseoir calmement à côté de lui et proposer un entretien après le cours. Si une phrase laisse penser à un danger, la rubrique Attention s’applique – la lettre, elle, reste fermée.",
+            "blatt": "ff7-brief-an-mich"
+          },
+          {
+            "titel": "Des fruits pour l’arbre",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Chacun ouvre son arbre des forces de la séance 8. D’abord ses propres fruits (5 min) : deux ou trois choses réussies cette année – même petites –, dans une nouvelle couleur et avec la date, sur l’arbre et dans le tableau de la séance 35. Puis des fruits des autres, comme à la séance 8 (8 min) : chacun reçoit trois post-it et écrit, pour chacune des trois autres personnes de l’îlot, une phrase selon les règles au tableau (liste). Les post-it restent retournés au milieu de la table ; passer dans les îlots et les lire au passage. Ensuite, chacun reçoit les siens, les lit en silence et les colle sur son arbre (3 min). Pour finir, distribuer les cartes avec sa phrase personnelle (2 min) ; deux ou trois volontaires disent quelle phrase les a surpris (2 min).",
+            "sagen": [
+              "Écrivez de façon à ce que la personne soit encore contente de la lire dans un an.",
+              "Qu’est-ce qui vous a surpris dans vos post-it ?"
+            ],
+            "punkte": [
+              "Une phrase qui fait du bien : une force que tu as vue chez la personne, ou un merci.",
+              "Concret : pas seulement « tu es sympa », mais quand et comment.",
+              "Rien sur l’apparence, pas de blague aux dépens de la personne.",
+              "Chacun reçoit un post-it de chaque autre personne de l’îlot."
+            ],
+            "tipp": "Les cartes de l’enseignant·e touchent le plus quand elles nomment un moment précis, par exemple : en mars, tu as été la première de ton îlot à dire stop. Faire coller les post-it – sinon, ils se perdent pendant les vacances.",
+            "wennEsKippt": "Si un post-it dévalorisant ou ambigu apparaît, le retirer sans un mot et en écrire soi-même un nouveau ; en parler plus tard en tête-à-tête avec l’auteur. Si quelqu’un est un peu à l’écart, ou s’il manque un post-it parce qu’un jeune ne veut pas écrire, veiller à ce que personne n’en reçoive moins : l’enseignant·e en écrit un elle-même ou lui-même. S’il manque l’arbre, les fruits vont sur une feuille avec un tronc dessiné.",
+            "blatt": "ff7-baum-der-staerke"
+          },
+          {
+            "titel": "Skill : 5-4-3-2-1",
+            "dauer": 5,
+            "phase": "skill",
+            "text": "Rappeler : l’année a commencé avec ce skill. Aujourd’hui, un jeune de la classe, sollicité avant le cours, le guide ; l’enseignant·e s’assoit à côté et aide au besoin avec les mots-clés (liste). Yeux ouverts ou fermés, très lentement. Ensuite, une question à tous, à main levée : qui a utilisé ce skill quelque part depuis septembre – dans le bus, avant un devoir en classe, le soir au lit ?",
+            "sagen": [
+              "C’est avec ce skill qu’on a commencé en septembre. Aujourd’hui, c’est l’un ou l’une d’entre vous qui le guide."
+            ],
+            "punkte": [
+              "En silence, pour toi : 5 choses que tu vois et 4 que tu entends.",
+              "Puis 3 choses que tu sens sur ta peau, 2 odeurs, 1 goût.",
+              "Expirer lentement : qu’est-ce qui a changé ?"
+            ],
+            "tipp": "Solliciter le jeune avant le cours, pas devant la classe : ainsi, même quelqu’un de discret peut accepter. Si la classe préfère un autre skill favori, on prend celui-là.",
+            "wennEsKippt": "Si le jeune qui guide fait le clown, reprendre calmement les mots-clés sans le remplacer : vous guidez ensemble. Si la classe s’agite, raccourcir à 3-2-1."
+          },
+          {
+            "titel": "Skills-Pass et au revoir",
+            "dauer": 10,
+            "phase": "abschluss",
+            "text": "Le Skills-Pass une dernière fois (6 min) : d’abord la phrase n° 35 avec la question au tableau – qu’est-ce que j’emporte de cette année ? –, puis la question de la page : quel skill t’a le plus aidé ? Ensuite, chacun coche les cinq phrases de l’auto-évaluation et revient à la page du premier trimestre : où une croix s’est-elle déplacée ? Une auto-évaluation, pas une note ; qui le souhaite dit ce qui a changé. Puis le dernier tampon. Pour finir, annoncer la mission des grandes vacances, remercier tout le monde et dire la phrase d’au revoir (4 min). Tous les cahiers partent aujourd’hui à la maison.",
+            "sagen": [
+              "Regardez où étaient vos croix à l’automne et où elles sont aujourd’hui. Qu’est-ce qui a bougé ?",
+              "Merci pour cette année. J’ai vu tout ce que vous avez osé."
+            ],
+            "tipp": "Ne pas commenter les croix qui n’ont pas bougé : certaines choses grandissent plus lentement, et une croix honnête vaut plus qu’une belle croix. Qui n’était pas là au premier trimestre compare avec les premières croix qu’il a cochées.",
+            "wennEsKippt": "Si l’au revoir est difficile – larmes, repli ou pitreries pour se protéger –, ne pas le balayer : dire que les au revoir mélangent les émotions, et prendre du temps pour ce jeune après le cours.",
+            "blatt": "ff-skills-pass"
+          }
+        ],
+        "bruecke": "C’était notre dernière séance de l’année. Vos skills partent en vacances avec vous – et vos lettres vous attendent, bien fermées, jusqu’à la prochaine année scolaire.",
+        "mission": "Emporte ton skill préféré en vacances et essaie-le au moins une fois, là où tu te trouves. À la rentrée, ta lettre t’attend.",
+        "hintergrund": "En fin d’année, on perd facilement de vue ce qui a changé. Le bilan avec le Skills-Pass, l’affiche, le bocal et l’arbre rend les progrès visibles : les jeunes voient noir sur blanc ce qu’ils ne savaient pas faire en septembre. Écrire sur ses propres expériences aide à les mettre en ordre (Pennebaker, 1997) ; la lettre à soi-même relie le bilan à un regard vers l’avenir. La gratitude agit dès cet âge : des jeunes de onze à treize ans environ qui ont noté pendant deux semaines ce pour quoi ils étaient reconnaissants étaient ensuite, entre autres, plus satisfaits de l’école (Froh et al., 2008). Une classe aussi a besoin d’une fin : Tuckman et Jensen (1977) ont ajouté aux étapes du développement d’un groupe une phase de clôture. Un au revoir préparé montre qu’une relation peut bien se terminer – surtout pour les jeunes qui ont déjà vécu des ruptures.",
+        "quellen": [
+          "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
+          "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233.",
+          "Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. Group & Organization Studies, 2(4), 419–427."
+        ],
+        "achtung": "Les au revoir réveillent chez certains d’anciennes pertes : déménagements, séparations, changements d’école. Tristesse, repli ou pitreries se comprennent alors – ne pas approfondir devant la classe, prendre du temps après le cours. Personne ne lit les lettres ; le dire avant et s’y tenir. Pour les fruits, lire au passage et retirer sans un mot les post-it dévalorisants. Si un jeune laisse entendre qu’il ne veut plus vivre, ou s’il y a d’autres signes de danger : chercher l’entretien le jour même, informer le SePAS, suivre le protocole de protection de l’école ; en cas de danger immédiat, 112.",
+        "differenzierung": {
+          "leichter": "Pour la lettre, trois débuts de phrase, des mots-clés ou un dessin suffisent ; un jeune qui apprend encore la langue peut écrire dans la sienne. Pour les fruits, des débuts de phrase au tableau : j’ai vu que tu… · merci d’avoir… Dans le Skills-Pass, un mot suffit.",
+          "schwerer": "Écrire en plus sur l’affiche un conseil pour la nouvelle 7e : quel skill aide le plus au début ? Ou poser dans la lettre trois questions à son moi de l’année prochaine, auxquelles il répondra en l’ouvrant."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), terminer l’affiche « C’est quoi, un skill ? » (10 min), lettre à moi (15 min), des fruits pour l’arbre, de moi et des autres (10 min), Skills-Pass avec bilan de l’année et au revoir (10 min). Le bocal et le 5-4-3-2-1 sont supprimés ; l’enseignant·e ouvre brièvement le bocal au moment de l’au revoir pour un ou deux papiers."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-brief-an-mich",
+      "bereich": "skills",
+      "thema": "abschluss",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln"
+      ],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Brief an mich",
+        "Rückblick",
+        "Ausblick",
+        "Abschied",
+        "Förderfach"
+      ],
+      "bild": "icon:mail",
+      "kurs": [
+        "ff7-e35"
+      ],
+      "de": {
+        "titel": "Brief an mich",
+        "untertitel": "Geschrieben am Ende der 7e – zu öffnen im nächsten Schuljahr",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Niemand liest diesen Brief.",
+            "text": "Du steckst ihn in einen Umschlag und klebst ihn zu. Die Lehrkraft bewahrt ihn verschlossen auf. Im nächsten Schuljahr bekommst du ihn zurück."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib dir selbst einen Brief. Die Satzanfänge sind ein Angebot – du musst sie nicht benutzen.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Hallo …, heute ist der …",
+              "Gerade beschäftigt mich …",
+              "Dieses Jahr habe ich gelernt, dass …",
+              "Darauf bin ich stolz: …",
+              "Dieser Skill soll dich begleiten: …",
+              "Wenn es mal schwer wird, denk daran: …",
+              "Im neuen Schuljahr wünsche ich dir …"
+            ],
+            "linien": 3
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Bis bald – dein Ich vom Ende der 7e:"
+            ],
+            "linien": 1
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen halten in einem Brief an sich selbst fest, was sie aus dem Jahr mitnehmen und was sie sich wünschen. Im nächsten Schuljahr lesen sie ihn wieder.",
+          "ablauf": [
+            "Vorher mit der Lehrkraft der 6e klären: Wer bewahrt die Box auf, wann werden die Briefe zurückgegeben, was geschieht mit den Briefen derer, die die Schule verlassen?",
+            "Einheit 35 (15 Min.): Rahmen nennen (2 Min.), schreiben bei leiser Musik (10 Min.), verschließen und sichtbar in die Box legen (3 Min.).",
+            "Rückgabe im neuen Schuljahr persönlich und ohne Druck, den Brief vor anderen zu öffnen."
+          ],
+          "hintergrund": "Über eigene Erfahrungen zu schreiben, hilft, sie zu ordnen (Pennebaker, 1997). Die Sicht auf ein späteres Ich schafft Abstand; aus dieser Distanz fällt es leichter, klug und freundlich mit sich selbst zu sprechen (Kross & Ayduk, 2017).",
+          "quellen": [
+            "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
+            "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+          ],
+          "material": "Briefbogen und Umschlag je Person, verschließbare Box, leise Musik"
+        }
+      },
+      "fr": {
+        "titel": "Lettre à moi",
+        "untertitel": "Écrite à la fin de la 7e – à ouvrir l’année scolaire prochaine",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Personne ne lit cette lettre.",
+            "text": "Tu la glisses dans une enveloppe et tu la fermes. L’enseignant·e la garde, fermée. L’année scolaire prochaine, tu la récupères."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Écris-toi une lettre. Les débuts de phrase sont une proposition – tu n’es pas obligé de les utiliser.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Salut…, aujourd’hui, nous sommes le…",
+              "En ce moment, je pense souvent à…",
+              "Cette année, j’ai appris que…",
+              "Je suis fier, fière de…",
+              "Ce skill doit t’accompagner : …",
+              "Quand ce sera difficile, pense à…",
+              "Pour la nouvelle année scolaire, je te souhaite…"
+            ],
+            "linien": 3
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "À bientôt – ton moi de la fin de la 7e :"
+            ],
+            "linien": 1
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes notent dans une lettre à eux-mêmes ce qu’ils emportent de l’année et ce qu’ils se souhaitent. Ils la relisent l’année scolaire suivante.",
+          "ablauf": [
+            "Convenir avant avec l’enseignant·e de 6e : qui garde la boîte, quand les lettres sont-elles rendues, que deviennent les lettres de ceux qui quittent l’école ?",
+            "Séance 35 (15 min) : poser le cadre (2 min), écrire en musique douce (10 min), fermer et déposer bien en vue dans la boîte (3 min).",
+            "Remise l’année suivante en main propre, sans pousser personne à ouvrir sa lettre devant les autres."
+          ],
+          "hintergrund": "Écrire sur ses propres expériences aide à les mettre en ordre (Pennebaker, 1997). Se placer du point de vue de son moi futur crée de la distance ; avec ce recul, il est plus facile de se parler avec sagesse et bienveillance (Kross & Ayduk, 2017).",
+          "quellen": [
+            "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
+            "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+          ],
+          "material": "Papier à lettre et enveloppe par jeune, boîte qui se ferme, musique douce"
+        }
+      }
+    }
+  ]
+}

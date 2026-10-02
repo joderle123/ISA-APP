@@ -1,0 +1,1098 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e19",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-ich-botschaften"
+      ],
+      "vorlagen": [
+        "ff7-vorwurf-karten"
+      ],
+      "woerter": [
+        {
+          "de": "die Ich-Botschaft",
+          "fr": "le message en « je »"
+        },
+        {
+          "de": "der Vorwurf",
+          "fr": "le reproche"
+        },
+        {
+          "de": "der Wunsch",
+          "fr": "le souhait"
+        },
+        {
+          "de": "zuhören",
+          "fr": "écouter"
+        },
+        {
+          "de": "zusammenfassen",
+          "fr": "résumer"
+        }
+      ],
+      "de": {
+        "titel": "Ich-Botschaften und Zuhören",
+        "kurz": "Die Klasse macht aus Vorwürfen Ich-Botschaften, erlebt, was Zuhören bremst, und übt zu zweit, so zuzuhören, dass sich die andere Person verstanden fühlt.",
+        "ziele": [
+          "unterscheiden Du- und Ich-Botschaften und beschreiben, wie beide auf das Gegenüber wirken",
+          "verwandeln Vorwürfe aus dem Alltag in Ich-Botschaften mit Gefühl und Wunsch",
+          "hören zwei Minuten zu, ohne zu unterbrechen, und fassen das Gehörte mit dem Gefühl zusammen",
+          "probieren den Skill „Erst atmen, dann reden“ aus"
+        ],
+        "material": [
+          "Schülerheft, Stempel für den Pass",
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Vorwurf-Karten, ein Satz je Gruppe",
+          "Uhr oder Handy-Timer mit Signal",
+          "Leise Musik für Schritt 8 (optional)"
+        ],
+        "vorbereitung": [
+          "Vorwurf-Karten kopieren, schneiden, je Tischgruppe ein Satz.",
+          "Die Formel (Schritt 3) an die Tafel schreiben und abdecken.",
+          "Vorher jemanden fragen, ob er oder sie in Schritt 3 unterbricht.",
+          "Erzählthemen (Schritt 7) an die Tafel schreiben.",
+          "Für Schritt 8 Platz zum Gehen schaffen: Taschen weg."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Ich fühle mich …, weil …"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick: Wie etwas ankommt"
+          },
+          {
+            "min": "15–27",
+            "phase": "input",
+            "titel": "Du-Botschaft oder Ich-Botschaft?"
+          },
+          {
+            "min": "27–45",
+            "phase": "uebung",
+            "titel": "Aus Vorwürfen werden Ich-Botschaften"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Zip Zap Boing"
+          },
+          {
+            "min": "50–58",
+            "phase": "input",
+            "titel": "Zuhören: Was läuft schief?"
+          },
+          {
+            "min": "58–75",
+            "phase": "uebung",
+            "titel": "Zuhören zu zweit: zwei Minuten nur zuhören"
+          },
+          {
+            "min": "75–85",
+            "phase": "aktiv",
+            "titel": "Begegnungen: Ich-Botschaft und Zusammenfassen"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Erst atmen, dann reden"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Ich-Blitzlicht, Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Ich fühle mich …, weil …",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100). Die Lehrkraft beginnt mit einem ganzen Satz: Ich fühle mich …, weil … – zum Beispiel: Ich bin ein bisschen gestresst, weil mein Zug Verspätung hatte. Dann sagen drei, vier Freiwillige ihren Satz in derselben Form; das „weil“ bleibt freiwillig (5 Min.). Zum Schluss darauf hinweisen: Ihr habt gerade den ersten Teil einer Ich-Botschaft gesagt – heute kommt der Rest.",
+            "sagen": [
+              "Gefühl und Zahl – und wer mag, sagt den ganzen Satz: Ich fühle mich …, weil …",
+              "Das ‚weil‘ ist freiwillig. ‚Müde, 30‘ reicht auch."
+            ],
+            "tipp": "Mit einem echten, aber harmlosen Grund beginnen. Wer sieht, dass auch die Lehrkraft ein „weil“ hat, traut sich eher; ein Grund wie der verspätete Zug zeigt, dass niemand Privates erzählen muss.",
+            "wennEsKippt": "Kommen nur Scherzsätze („Ich fühle mich hungrig, weil Montag ist“), sie stehen lassen – formal stimmen sie. Zeigt jemand acht Finger oder mehr, nicht vor der Klasse nachfragen, sondern später leise fragen, ob er oder sie gerade etwas braucht."
+          },
+          {
+            "titel": "Rückblick: Wie etwas ankommt",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Kurz an die letzte Stunde erinnern: Über welche drei Kanäle läuft eine Nachricht, und wem glauben wir, wenn sie nicht zusammenpassen? Eine Person liest ihren Satz aus dem Skills-Pass vor. Per Daumen nach der Wochen-Mission fragen (hoch, Mitte, runter); eine Stimme erzählt, was ihr aufgefallen ist, niemand muss sie geschafft haben. Dann das Thema an die Tafel schreiben: Was sage ich, wenn mich etwas stört – und wie höre ich zu, wenn jemand etwas loswerden will?",
+            "sagen": [
+              "Letzte Woche ging es darum, wie etwas ankommt. Heute geht es darum, was ihr sagt, wenn euch etwas stört – ohne dass gleich Streit daraus wird."
+            ],
+            "tipp": "Wer in der Mission nachgefragt hat, statt zu raten, bekommt ausdrücklich Anerkennung: Genau dieses Nachfragen ist heute der Kern des Zuhörens."
+          },
+          {
+            "titel": "Du-Botschaft oder Ich-Botschaft?",
+            "dauer": 12,
+            "phase": "input",
+            "text": "Kurze Szene mit der vorher gefragten Person: Die Lehrkraft erzählt vom Wochenende, die Person unterbricht dreimal. Erste Fassung: Die Lehrkraft reagiert mit „Du nervst. Nie lässt du mich ausreden.“ Zweite Fassung, gleiche Szene: „Ich bin genervt, wenn ich unterbrochen werde, weil ich dann den Faden verliere. Lass mich bitte ausreden.“ (3 Min.) Die Klasse beschreibt, wie beide Sätze wirken – auch die Person, die unterbrochen hat (3 Min.). Dann die Formel aufdecken und die vier Teile am Beispiel erklären (4 Min.). Zum Schluss die drei Regeln aus der Liste nennen (2 Min.).",
+            "sagen": [
+              "Stellt euch vor, das sagt jemand zu euch. Was wollt ihr nach dem ersten Satz tun – und was nach dem zweiten?",
+              "Hinter einem Vorwurf steckt fast immer ein Wunsch. Die Ich-Botschaft sagt den Wunsch, statt anzugreifen."
+            ],
+            "punkte": [
+              "Wie eine Kamera: beschreiben, was passiert ist – ohne „immer“ und „nie“.",
+              "Ein Gefühl statt eines Urteils: „Ich bin enttäuscht“ statt „Du bist egoistisch“.",
+              "Der Wunsch ist konkret und machbar: „Frag bitte vorher.“"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Teil",
+                "Beispiel"
+              ],
+              "zeilen": [
+                [
+                  "Ich fühle mich … – das Gefühl",
+                  "Ich bin genervt,"
+                ],
+                [
+                  "wenn … – was passiert ist",
+                  "wenn ich unterbrochen werde,"
+                ],
+                [
+                  "weil … – was mir wichtig ist",
+                  "weil ich dann den Faden verliere."
+                ],
+                [
+                  "Ich wünsche mir … – was anders werden soll",
+                  "Lass mich bitte ausreden."
+                ]
+              ]
+            },
+            "tipp": "Beim „weil“ auf das Glas der Bedürfnisse aus Einheit 6 zeigen: Welches Bedürfnis steckt dahinter – Ruhe, Respekt, Fairness, dazugehören? Die Rolle der unterbrechenden Person übernimmt gern jemand, der ohnehin gern auf der Bühne steht.",
+            "wennEsKippt": "Findet jemand die Formel gestelzt, zustimmen: So redet im Alltag niemand. Die Formel ist ein Übungsgerüst wie Stützräder; später reichen oft zwei Teile: „Mich stresst das. Frag bitte vorher.“ Spielt die unterbrechende Person zu wild, die Szene anhalten und neu starten – oder die Lehrkraft spielt mit einem leeren Stuhl als Gegenüber."
+          },
+          {
+            "titel": "Aus Vorwürfen werden Ich-Botschaften",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Allein (3 Min.): Aufgabe 1 auf dem Blatt – Du- und Ich-Botschaften verbinden, in einer Ich-Botschaft das Gefühl unterstreichen. Zu zweit (5 Min.): Aufgabe 2, zwei Vorwürfe in Ich-Botschaften verwandeln; Gefühl und Wunsch reichen schon. In den Tischgruppen (4 Min.): Jede Gruppe zieht zwei Vorwurf-Karten und formuliert zu jeder eine Ich-Botschaft. Vorwurf-Check mit der Klasse (5 Min.): Jede Gruppe liest eine Karte und ihre Ich-Botschaft vor; alle zeigen auf drei Daumen hoch, wenn es nach Ich-Botschaft klingt, und runter, wenn noch ein Vorwurf drinsteckt – dann verbessert die Klasse gemeinsam. Zum Schluss den Kasten „Verkleidete Du-Botschaft“ lesen (1 Min.).",
+            "sagen": [
+              "Lest euren Satz einmal laut. Klingt er noch nach Angriff? Dann steckt irgendwo ein ‚immer‘, ein ‚nie‘ oder ein Urteil drin.",
+              "Ein Satz wie ‚Ich fühle mich, als wärst du egoistisch‘ ist eine verkleidete Du-Botschaft. Ein Gefühl ist ein Wort wie enttäuscht, gestresst, unsicher."
+            ],
+            "tipp": "Ich-Botschaften an Erwachsene brauchen eine höfliche Form – die Karte mit dem Trainer zeigt das: „Ich bin enttäuscht, wenn ich zum dritten Mal auf der Bank sitze, weil ich mich angestrengt habe. Können Sie mir sagen, woran ich arbeiten soll?“ Wer nicht schreiben will, ist in der Tischgruppe der Vorwurf-Detektor und prüft die Sätze der anderen.",
+            "wennEsKippt": "Wird aus einer Ich-Botschaft eine versteckte Beleidigung („…, wenn du existierst“), sie ohne Namen als Beispiel für eine verkleidete Du-Botschaft nutzen. Erzählt jemand, dass ihm so etwas gerade wirklich passiert, etwa in der Klassengruppe, nicht vertiefen: würdigen und ein Gespräch nach der Stunde anbieten; bei Hinweisen auf Mobbing Régent und SePAS einbeziehen.",
+            "blatt": "ff7-ich-botschaften"
+          },
+          {
+            "titel": "Bewegungspause: Zip Zap Boing",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Die Klasse bildet zwei Kreise zu zehn, vorne und hinten im Raum. Ein Klatschimpuls wandert: Zip geht zur Nachbarin oder zum Nachbarn, Zap mit Blick und Zeigen quer durch den Kreis, Boing schickt ihn mit erhobenen Händen dorthin zurück, woher er kam. Wer sich vertut, macht einfach weiter; niemand scheidet aus. Nach zwei Minuten das Tempo erhöhen. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Schaut die Person an, der ihr den Impuls schickt. Wer nicht hinschaut, verpasst ihn – wie beim Zuhören."
+            ],
+            "tipp": "Die Übung trainiert genau, was gleich gebraucht wird: hinschauen, aufmerksam sein, reagieren. Ist kein Platz für Kreise, im Sitzen in den Tischgruppen spielen.",
+            "wennEsKippt": "Wird es zu wild, das Tempo herausnehmen und nur Zip spielen. Wer nicht mitspielen möchte, steht neben der Lehrkraft und gibt das Zeichen für jede neue Runde."
+          },
+          {
+            "titel": "Zuhören: Was läuft schief?",
+            "dauer": 8,
+            "phase": "input",
+            "text": "Eine freiwillige Person erzählt eine Minute lang etwas Harmloses, etwa vom besten Essen der letzten Woche. Die Lehrkraft „hört zu“ – und macht alles falsch: schaut aufs Handy, unterbricht, erzählt von sich, gibt ungefragt Tipps (2 Min.). Die Klasse ruft, was schiefläuft; die Lehrkraft schreibt die Zuhör-Bremsen an die Tafel (2 Min.). Dann dieselbe Szene noch einmal, diesmal richtig: zuwenden, nicken, nachfragen, zum Schluss mit dem Gefühl zusammenfassen (2 Min.). Die vier Schritte auf dem Blatt zeigen (2 Min.).",
+            "sagen": [
+              "Was habe ich alles falsch gemacht? Ruft es mir zu – ich schreibe mit.",
+              "Zuhören heißt nicht nur still sein. Die andere Person soll merken, dass es ankommt."
+            ],
+            "punkte": [
+              "aufs Handy schauen",
+              "unterbrechen",
+              "von sich selbst erzählen: „Das kenn ich, bei mir …“",
+              "ungefragt Tipps geben: „Du musst einfach …“",
+              "abwerten: „Ist doch nicht schlimm.“"
+            ],
+            "tipp": "Blickkontakt nicht verlangen: Für manche Jugendliche ist er anstrengend, in manchen Familien gilt er gegenüber Erwachsenen als unhöflich. Sich zuwenden reicht – oder auf die Stirn schauen.",
+            "wennEsKippt": "Meldet sich niemand zum Erzählen, erzählt die Lehrkraft selbst und lässt jemanden die schlechte Zuhörerin spielen – mit einem Zettel, was sie alles falsch machen soll. Diese Rolle ist bei denen beliebt, die gern Quatsch machen, und hier ausdrücklich erwünscht."
+          },
+          {
+            "titel": "Zuhören zu zweit: zwei Minuten nur zuhören",
+            "dauer": 17,
+            "phase": "uebung",
+            "text": "Die Aufgabe erklären und den Satz zum Zusammenfassen an die Tafel schreiben (2 Min.); Tischnachbarn bilden Paare (1 Min.). A wählt ein Thema aus der Liste und erzählt zwei Minuten, B hört nur zu – keine eigenen Geschichten, keine Tipps – und fasst dann in ein, zwei Sätzen zusammen, mit dem Gefühl; A bestätigt oder korrigiert (3 Min.). Dann wechseln (3 Min.). Danach füllen beide den Zuhör-Check aus, Aufgabe 4 auf dem Blatt (3 Min.). In der Klasse (5 Min.): Wie war es, wirklich gehört zu werden? Was war beim Zuhören schwer? Ein Timer mit Signal beendet die Runden für alle gleichzeitig.",
+            "sagen": [
+              "Du hörst nur zu – keine eigenen Geschichten, keine Tipps. Am Ende sagst du: Habe ich richtig verstanden, dass …?",
+              "Und das Gefühl dazu: Du warst also ziemlich genervt?"
+            ],
+            "punkte": [
+              "Was dich diese Woche gefreut oder genervt hat – im Bus, in der Pause, zu Hause",
+              "Dein Lieblingsessen – und wer es am besten kocht",
+              "Eine Serie, ein Spiel oder ein Lied, das du gerade magst",
+              "Was du mit einem ganz freien Tag machen würdest",
+              "Ein Ort, an dem du gern bist"
+            ],
+            "tipp": "Zwei Minuten fühlen sich für Zuhörende länger an, als sie sind – das vorher offen sagen. Die erzählende Person hält einen Stift: Solange sie ihn hält, spricht nur sie. Bei ungerader Zahl entsteht eine Dreiergruppe: Die dritte Person beobachtet mit dem Zuhör-Check und gibt Rückmeldung.",
+            "wennEsKippt": "Fällt jemandem nichts ein, ein Thema aus der Liste vorschlagen; ist jemand nach 30 Sekunden fertig, stellt die zuhörende Person eine Nachfrage – genau das wird geübt. Erzählt jemand etwas Belastendes, das über die Woche hinausgeht, übernimmt die Lehrkraft: freundlich unterbrechen, würdigen, ein Gespräch nach der Stunde anbieten – die zuhörende Person ist dafür nicht zuständig. Wird gealbert, die Zeit auf eine Minute kürzen und neu starten.",
+            "blatt": "ff7-ich-botschaften"
+          },
+          {
+            "titel": "Begegnungen: Ich-Botschaft und Zusammenfassen",
+            "dauer": 10,
+            "phase": "aktiv",
+            "text": "Alle gehen kreuz und quer durch den Raum, gern zu leiser Musik. Auf ein Klatschen bleibt jede Person vor der nächsten stehen, und die Lehrkraft liest eine Situation von einer Vorwurf-Karte vor. Wer näher am Fenster steht, sagt eine Ich-Botschaft; die andere Person fasst sie in einem Satz zusammen: Du bist …, weil … Du wünschst dir … Dann weitergehen; vier Runden, mit wechselnden Rollen (8 Min.). Zum Schluss fragen: Was war schwerer – die Ich-Botschaft oder das Zusammenfassen (2 Min.)?",
+            "sagen": [
+              "Klatsch – stehen bleiben. Die Person vor euch ist euer Gegenüber.",
+              "Ihr sagt nicht, ob ihr zustimmt. Ihr sagt nur, was ihr verstanden habt."
+            ],
+            "tipp": "Das Zusammenfassen bremst Streit, weil sich die andere Person verstanden fühlt, bevor überhaupt jemand widerspricht. Wer nicht herumgehen möchte, übt am Platz mit der Nachbarin oder dem Nachbarn.",
+            "wennEsKippt": "Werden die Ich-Botschaften zu Beleidigungen oder wird gerempelt, anhalten, eine Situation gemeinsam durchspielen und dann im Sitzen weitermachen. Bleibt jemand ohne Gegenüber, stellt sich die Lehrkraft dazu.",
+            "blatt": "ff7-vorwurf-karten"
+          },
+          {
+            "titel": "Skill: Erst atmen, dann reden",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Erklären: Ich-Botschaften gelingen mit ruhigem Kopf; ab etwa 70 auf der Anspannungsskala klingt fast jeder Satz wie ein Angriff. Die drei Schritte anleiten (Liste) und mit einer Situation üben, die die Lehrkraft vorliest: Dein Bruder hat dein Ladekabel schon wieder genommen – und dein Akku ist bei zwei Prozent. Alle merken still, welcher Satz zuerst kommt, atmen dreimal langsam, länger aus als ein, und sagen die Ich-Botschaft leise vor sich hin. In der zweiten Runde denkt jede Person an eine eigene Situation, die nichts mit jemandem hier im Raum zu tun hat; wer mag, schreibt die Ich-Botschaft in Aufgabe 3, vorgelesen wird nichts. Zum Schluss fragen: Wo könnte das helfen?",
+            "sagen": [
+              "Merkt ihr, welcher Satz zuerst kommen will? Den lasst ihr heute im Kopf.",
+              "Drei Atemzüge dauern zehn Sekunden. So lange kann fast jeder Streit warten."
+            ],
+            "punkte": [
+              "Merk deine Zahl: Über 70? Dann noch nichts sagen.",
+              "Atme dreimal langsam – länger aus als ein. Die Fingeratmung geht auch.",
+              "Dann sag deine Ich-Botschaft – kurz reicht: Gefühl und Wunsch."
+            ],
+            "tipp": "Den Skill mit der Anspannungsskala und dem Ampelplan aus dem letzten Kapitel verbinden: Bei Rot erst runter, dann reden – das gilt auch für Erwachsene.",
+            "wennEsKippt": "Kommt beim Üben echter Ärger über eine anwesende Person hoch, die Situation wechseln: Heute nur erfundene oder vergangene Situationen. Wer nichts schreiben will, übt nur das Atmen.",
+            "blatt": "ff7-ich-botschaften"
+          },
+          {
+            "titel": "Skills-Pass, Ich-Blitzlicht, Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Skills-Pass (2 Min.) mit der Leitfrage an der Tafel: Welche Ich-Botschaft könnte ich diese Woche brauchen? Danach gibt es den Stempel. Dann das Ich-Blitzlicht: Fünf, sechs Freiwillige sagen einen Satz zu heute, der mit „Ich“ beginnt (2 Min.). Zum Schluss die Wochen-Mission im Heft ansagen und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "sagen": [
+              "Ein Satz zu heute, der mit ‚Ich‘ anfängt: Ich nehme mit … oder Ich fand schwierig …"
+            ],
+            "tipp": "Wer im Skills-Pass keine eigene Ich-Botschaft aufschreiben möchte, schreibt die Formel ab – auch das ist ein Satz zum Mitnehmen."
+          }
+        ],
+        "bruecke": "Nächste Woche geht es um Grenzen: Wo fangen eure an – und woran merkt ihr, dass ihr jemandem zu nahe kommt?",
+        "mission": "Probier diese Woche eine Ich-Botschaft aus – zu Hause, im Bus oder im Chat. Oder hör jemandem zwei Minuten lang nur zu, ohne Tipps.",
+        "hintergrund": "Thomas Gordon (1972) beschrieb zwei Werkzeuge, die zusammengehören: die Ich-Botschaft für Momente, in denen mich etwas stört, und das aktive Zuhören für Momente, in denen die andere Person etwas bewegt. Du-Botschaften enthalten Urteile und lösen meist Verteidigung aus; Ich-Botschaften beschreiben Situation, Gefühl und Wunsch und lassen dem Gegenüber Raum. Mit dem „weil“ nimmt die Formel auf, was die Gewaltfreie Kommunikation das Bedürfnis hinter dem Gefühl nennt, und mit dem Wunsch eine erfüllbare Bitte (Rosenberg, 2001). Rogers und Roethlisberger (1952) sahen im vorschnellen Bewerten das größte Hindernis im Gespräch und schlugen eine einfache Regel vor: Erst wenn ich wiedergegeben habe, was der andere denkt und fühlt – so, dass er zustimmt –, sage ich meine eigene Meinung. Genau das üben die Paare beim Zusammenfassen. Beides gelingt nur mit ruhigem Kopf: erst runter, dann reden.",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52."
+        ],
+        "achtung": "Ich-Botschaften sind ein Werkzeug für Alltagskonflikte, kein Schutz vor Mobbing oder Gewalt: Wer wiederholt angegriffen, bedroht oder kontrolliert wird, braucht Erwachsene – dann Régent und SePAS einbeziehen. Die eigene Ich-Botschaft auf dem Blatt wird nicht vorgelesen. Beim Zuhören zu zweit nur harmlose Themen anbieten; erzählt jemand Belastendes, übernimmt die Lehrkraft, würdigt den Beitrag und bietet ein Gespräch nach der Stunde an. Bei Hinweisen auf Gewalt, Missbrauch oder Selbstverletzung noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "differenzierung": {
+          "leichter": "Nur zwei Teile verlangen: Gefühl und Wunsch („Ich bin genervt. Klopf bitte.“); die Formel und die Gefühlswörter vom Gefühlsrad bleiben an der Tafel. Aufgabe 1 im Tandem lösen; die Vorwurf-Karte liest eine Person vor, die gut liest. Beim Zuhören darf das Zusammenfassen mit „Du meinst also …“ beginnen und in jeder Sprache stattfinden, die beide sprechen.",
+          "schwerer": "Aufschreiben, was die andere Person auf die Ich-Botschaft antworten könnte, und eine ruhige zweite Antwort darauf formulieren. Beim Zuhören zu dritt die Beobachtung übernehmen und mit dem Zuhör-Check Rückmeldung geben."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Ich-Satz (5 Min.), Du-Botschaft oder Ich-Botschaft mit Szene und Formel (10 Min.), Aufgabe 1 und 2 und der Vorwurf-Check (15 Min.), Zuhören mit den Zuhör-Bremsen und einer Runde zu zweit (12 Min.), erst atmen, dann reden (3 Min.), Skills-Pass und Wochen-Mission (5 Min.). Die Begegnungen im Raum und der Zuhör-Check entfallen; das Zuhören zu zweit lässt sich in der nächsten Stunde ausbauen."
+      },
+      "fr": {
+        "titel": "Messages en « je » et écoute",
+        "kurz": "La classe transforme des reproches en messages en « je », découvre ce qui freine l’écoute et s’entraîne à deux à écouter de façon que l’autre se sente compris.",
+        "ziele": [
+          "distinguent les messages en « tu » et en « je » et décrivent l’effet de chacun sur l’autre",
+          "transforment des reproches du quotidien en messages en « je » avec une émotion et un souhait",
+          "écoutent deux minutes sans interrompre et résument ce qu’ils ont entendu, émotion comprise",
+          "essaient le skill « Respirer avant de parler »"
+        ],
+        "material": [
+          "Cahiers, tampon pour le Skills-Pass",
+          "Roue des émotions, 20 gommettes",
+          "Cartes reproches, un jeu par îlot",
+          "Montre ou minuteur avec sonnerie",
+          "Musique douce, étape 8 (facultatif)"
+        ],
+        "vorbereitung": [
+          "Cartes reproches : photocopier, découper, un jeu par îlot.",
+          "Écrire la formule (étape 3) au tableau et la cacher.",
+          "Demander à l’avance à un jeune s’il veut couper la parole à l’étape 3.",
+          "Écrire au tableau les sujets de l’étape 7.",
+          "Pour l’étape 8, dégager le passage : sacs rangés."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : je me sens…, parce que…"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour : comment un message est reçu"
+          },
+          {
+            "min": "15–27",
+            "phase": "input",
+            "titel": "Message en « tu » ou message en « je » ?"
+          },
+          {
+            "min": "27–45",
+            "phase": "uebung",
+            "titel": "Des reproches aux messages en « je »"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : zip zap boing"
+          },
+          {
+            "min": "50–58",
+            "phase": "input",
+            "titel": "Écouter : qu’est-ce qui cloche ?"
+          },
+          {
+            "min": "58–75",
+            "phase": "uebung",
+            "titel": "Écouter à deux : deux minutes rien qu’écouter"
+          },
+          {
+            "min": "75–85",
+            "phase": "aktiv",
+            "titel": "Rencontres : message en « je » et résumé"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : respirer avant de parler"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, tour éclair en « je », mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : je me sens…, parce que…",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Une fois tout le monde assis, chacun montre sa tension avec les doigts, à « trois » (0 à 10 doigts pour 0 à 100). Commencer soi-même par une phrase complète : je me sens…, parce que… – par exemple : je suis un peu stressé, parce que mon train avait du retard. Ensuite, trois ou quatre volontaires disent leur phrase sur le même modèle ; le « parce que » reste facultatif (5 min). Pour finir, faire remarquer : vous venez de dire la première partie d’un message en « je » – aujourd’hui, on voit la suite.",
+            "sagen": [
+              "Une émotion et un chiffre – et qui veut dit la phrase entière : je me sens…, parce que…",
+              "Le “parce que” est facultatif. “Fatigué, 30”, ça suffit aussi."
+            ],
+            "tipp": "Commencer avec une raison vraie, mais sans risque. Quand les jeunes voient que l’adulte aussi a un « parce que », ils osent davantage ; une raison comme le train en retard montre que personne n’a besoin de raconter sa vie privée.",
+            "wennEsKippt": "S’il n’y a que des phrases pour rire (« Je me sens affamé, parce que c’est lundi »), les laisser passer – sur la forme, elles sont justes. Si un jeune montre huit doigts ou plus, ne pas poser de questions devant la classe, mais lui demander plus tard, discrètement, s’il a besoin de quelque chose."
+          },
+          {
+            "titel": "Retour : comment un message est reçu",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Rappeler brièvement la dernière séance : par quels trois canaux passe un message, et qui croit-on quand ils ne vont pas ensemble ? Un jeune lit la phrase de son Skills-Pass. Pour la mission de la semaine, faire un sondage du pouce (en haut, au milieu, en bas) ; une voix raconte ce qu’elle a remarqué, personne n’est obligé de l’avoir réussie. Écrire ensuite le thème au tableau : qu’est-ce que je dis quand quelque chose me dérange – et comment j’écoute quand quelqu’un a besoin de vider son sac ?",
+            "sagen": [
+              "La semaine dernière, on a vu comment un message est reçu. Aujourd’hui, on voit quoi dire quand quelque chose vous dérange – sans que ça tourne tout de suite à la dispute."
+            ],
+            "tipp": "Qui a demandé ce que voulait dire un message au lieu de deviner mérite d’être salué : c’est justement ce réflexe de demander qui est au cœur de l’écoute aujourd’hui."
+          },
+          {
+            "titel": "Message en « tu » ou message en « je » ?",
+            "dauer": 12,
+            "phase": "input",
+            "text": "Courte scène avec le jeune prévenu à l’avance : l’enseignant·e raconte son week-end, le jeune lui coupe la parole trois fois. Première version, la réaction est : « Tu m’énerves. Tu ne me laisses jamais finir. » Deuxième version, même scène : « Je suis agacé quand on me coupe la parole, parce que je perds le fil. Laisse-moi finir, s’il te plaît. » (3 min) La classe décrit l’effet des deux phrases – le jeune qui a coupé la parole aussi (3 min). Puis découvrir la formule et expliquer les quatre parties avec l’exemple (4 min). Pour finir, donner les trois règles de la liste (2 min).",
+            "sagen": [
+              "Imaginez que quelqu’un vous dise ça. Qu’est-ce que vous avez envie de faire après la première phrase – et après la deuxième ?",
+              "Derrière un reproche, il y a presque toujours un souhait. Le message en “je” dit le souhait au lieu d’attaquer."
+            ],
+            "punkte": [
+              "Comme une caméra : décrire ce qui s’est passé – sans « toujours » ni « jamais ».",
+              "Une émotion plutôt qu’un jugement : « Je suis déçu » plutôt que « Tu es égoïste ».",
+              "Le souhait est concret et faisable : « Demande-moi avant, s’il te plaît. »"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Partie",
+                "Exemple"
+              ],
+              "zeilen": [
+                [
+                  "Je me sens… – l’émotion",
+                  "Je suis agacé"
+                ],
+                [
+                  "quand… – ce qui s’est passé",
+                  "quand on me coupe la parole,"
+                ],
+                [
+                  "parce que… – ce qui compte pour moi",
+                  "parce que je perds le fil."
+                ],
+                [
+                  "J’aimerais… – ce qui doit changer",
+                  "Laisse-moi finir, s’il te plaît."
+                ]
+              ]
+            },
+            "tipp": "Au moment du « parce que », montrer le bocal des besoins de la séance 6 : quel besoin se cache derrière – le calme, le respect, la justice, faire partie du groupe ? Le rôle de celui qui coupe la parole plaît souvent à quelqu’un qui aime de toute façon être sur scène.",
+            "wennEsKippt": "Si quelqu’un trouve la formule artificielle, lui donner raison : personne ne parle comme ça au quotidien. La formule est un échafaudage pour s’entraîner, comme les petites roues d’un vélo ; plus tard, deux parties suffisent souvent : « Ça me stresse. Demande avant, s’il te plaît. » Si le jeune qui coupe la parole en fait trop, arrêter la scène et recommencer – ou jouer seul, face à une chaise vide."
+          },
+          {
+            "titel": "Des reproches aux messages en « je »",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Seul (3 min) : exercice 1 de la fiche – relier messages en « tu » et messages en « je », puis souligner l’émotion dans un message en « je ». À deux (5 min) : exercice 2, transformer deux reproches en messages en « je » ; l’émotion et le souhait suffisent. En îlots (4 min) : chaque îlot tire deux cartes reproches et formule pour chacune un message en « je ». Contrôle des reproches en classe entière (5 min) : chaque îlot lit une carte et son message en « je » ; à « trois », tout le monde montre le pouce en haut si ça sonne comme un message en « je », en bas s’il reste un reproche – la classe améliore alors ensemble. Pour finir, lire l’encadré « Le faux message en “je” » (1 min).",
+            "sagen": [
+              "Lisez votre phrase une fois à voix haute. Est-ce qu’elle sonne encore comme une attaque ? Alors il y a quelque part un “toujours”, un “jamais” ou un jugement.",
+              "Une phrase comme “J’ai l’impression que tu es égoïste”, c’est un faux message en “je”. Une émotion, c’est un mot comme déçu, stressé, pas sûr de moi."
+            ],
+            "tipp": "Face aux adultes, le message en « je » a besoin d’une forme polie – la carte de l’entraîneur le montre : « Je suis déçu quand je reste sur le banc pour la troisième fois, parce que je me suis donné de la peine. Vous pouvez me dire sur quoi travailler ? » Qui ne veut pas écrire devient, dans son îlot, le détecteur de reproches et vérifie les phrases des autres.",
+            "wennEsKippt": "Si un message en « je » devient une insulte déguisée (« …, quand tu existes »), s’en servir, sans nommer personne, comme exemple de faux message en « je ». Si un jeune raconte que cela lui arrive vraiment en ce moment, par exemple dans le groupe de la classe, ne pas approfondir : l’accueillir et proposer un entretien après le cours ; en cas de signes de harcèlement, impliquer le régent et le SePAS.",
+            "blatt": "ff7-ich-botschaften"
+          },
+          {
+            "titel": "Pause active : zip zap boing",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "La classe forme deux cercles de dix, à l’avant et au fond de la salle. Une impulsion circule en tapant dans les mains : zip passe au voisin, zap traverse le cercle avec un regard et un geste, boing la renvoie, mains levées, d’où elle vient. Qui se trompe continue simplement ; personne n’est éliminé. Après deux minutes, accélérer le rythme. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Regardez la personne à qui vous envoyez l’impulsion. Qui ne regarde pas la rate – comme quand on écoute."
+            ],
+            "tipp": "L’exercice entraîne exactement ce dont on a besoin ensuite : regarder, être attentif, réagir. S’il n’y a pas de place pour des cercles, jouer assis, en îlots.",
+            "wennEsKippt": "Si ça devient trop agité, ralentir et ne jouer qu’avec zip. Qui ne veut pas jouer se met à côté de l’enseignant·e et donne le signal de chaque nouveau tour."
+          },
+          {
+            "titel": "Écouter : qu’est-ce qui cloche ?",
+            "dauer": 8,
+            "phase": "input",
+            "text": "Un ou une volontaire raconte pendant une minute quelque chose d’anodin, par exemple le meilleur repas de la semaine dernière. L’enseignant·e « écoute » – et fait tout de travers : regarde son portable, coupe la parole, parle de soi, donne des conseils que personne n’a demandés (2 min). La classe lance ce qui cloche ; les freins à l’écoute sont notés au tableau (2 min). Puis la même scène encore une fois, bien faite cette fois : se tourner vers l’autre, hocher la tête, poser une question, résumer à la fin avec l’émotion (2 min). Montrer les quatre étapes sur la fiche (2 min).",
+            "sagen": [
+              "Qu’est-ce que j’ai fait de travers ? Lancez-le-moi – je note.",
+              "Écouter, ce n’est pas seulement se taire. L’autre doit sentir que ça arrive."
+            ],
+            "punkte": [
+              "regarder son portable",
+              "couper la parole",
+              "parler de soi : « Je connais, moi aussi… »",
+              "donner des conseils non demandés : « T’as qu’à… »",
+              "minimiser : « C’est pas grave. »"
+            ],
+            "tipp": "Ne pas exiger le contact visuel : il est fatigant pour certains jeunes, et dans certaines familles, il passe pour impoli face à un adulte. Se tourner vers l’autre suffit – ou regarder son front.",
+            "wennEsKippt": "Si personne ne veut raconter, raconter soi-même et faire jouer le mauvais auditeur par un jeune – avec un papier qui dit tout ce qu’il doit faire de travers. Ce rôle plaît à ceux qui aiment faire les clowns, et ici, c’est exactement ce qu’on veut."
+          },
+          {
+            "titel": "Écouter à deux : deux minutes rien qu’écouter",
+            "dauer": 17,
+            "phase": "uebung",
+            "text": "Expliquer la consigne et écrire au tableau la phrase pour résumer (2 min) ; les voisins de table forment des binômes (1 min). A choisit un sujet de la liste et parle deux minutes ; B ne fait qu’écouter – pas ses propres histoires, pas de conseils – puis résume en une ou deux phrases, avec l’émotion ; A confirme ou corrige (3 min). Puis on échange (3 min). Ensuite, les deux remplissent le contrôle d’écoute, exercice 4 de la fiche (3 min). En classe entière (5 min) : qu’est-ce que ça fait d’être vraiment écouté ? Qu’est-ce qui était difficile en écoutant ? Un minuteur avec sonnerie arrête les tours pour tout le monde en même temps.",
+            "sagen": [
+              "Tu ne fais qu’écouter – pas tes histoires, pas de conseils. À la fin, tu dis : si j’ai bien compris…",
+              "Et l’émotion avec : tu étais donc pas mal agacé ?"
+            ],
+            "punkte": [
+              "Ce qui t’a fait plaisir ou t’a énervé cette semaine – dans le bus, à la récré, à la maison",
+              "Ton plat préféré – et qui le cuisine le mieux",
+              "Une série, un jeu ou une chanson que tu aimes en ce moment",
+              "Ce que tu ferais d’une journée entièrement libre",
+              "Un endroit où tu te sens bien"
+            ],
+            "tipp": "Deux minutes paraissent plus longues à celui qui écoute qu’elles ne le sont – le dire franchement avant. Celui qui raconte tient un stylo : tant qu’il le tient, lui seul parle. Avec un nombre impair, former un groupe de trois : la troisième personne observe avec le contrôle d’écoute et fait un retour.",
+            "wennEsKippt": "Si quelqu’un ne trouve rien, lui proposer un sujet de la liste ; si un jeune a fini au bout de 30 secondes, celui qui écoute pose une question – c’est justement ce qu’on entraîne. Si un jeune raconte quelque chose de lourd qui dépasse la semaine, l’enseignant·e prend le relais : interrompre gentiment, accueillir, proposer un entretien après le cours – ce n’est pas à celui qui écoute de s’en charger. Si ça chahute, réduire à une minute et recommencer.",
+            "blatt": "ff7-ich-botschaften"
+          },
+          {
+            "titel": "Rencontres : message en « je » et résumé",
+            "dauer": 10,
+            "phase": "aktiv",
+            "text": "Tout le monde marche dans la salle, dans tous les sens, sur une musique douce si possible. Au signal (un clap), chacun s’arrête face à la personne la plus proche, et l’enseignant·e lit une situation d’une carte reproche. Celui ou celle qui est le plus près de la fenêtre dit un message en « je » ; l’autre le résume en une phrase : tu es…, parce que… Tu aimerais… Puis on repart ; quatre tours, en changeant de rôle (8 min). Pour finir, demander : qu’est-ce qui était le plus difficile – le message en « je » ou le résumé (2 min) ?",
+            "sagen": [
+              "Clap – on s’arrête. La personne en face de vous est votre partenaire.",
+              "Vous ne dites pas si vous êtes d’accord. Vous dites seulement ce que vous avez compris."
+            ],
+            "tipp": "Résumer freine la dispute, parce que l’autre se sent compris avant même que quelqu’un ne le contredise. Qui ne veut pas se déplacer s’entraîne à sa place avec son voisin ou sa voisine.",
+            "wennEsKippt": "Si les messages en « je » tournent à l’insulte ou si on se bouscule, arrêter, jouer une situation ensemble, puis continuer assis. Si quelqu’un se retrouve sans partenaire, l’enseignant·e se met en face de lui.",
+            "blatt": "ff7-vorwurf-karten"
+          },
+          {
+            "titel": "Skill : respirer avant de parler",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Expliquer : un message en « je » réussit avec la tête calme ; à partir de 70 environ sur l’échelle de tension, presque chaque phrase sonne comme une attaque. Guider les trois étapes (liste) et s’entraîner avec une situation lue à voix haute : ton frère a encore pris ton chargeur – et ta batterie est à deux pour cent. Chacun remarque en silence quelle phrase vient en premier, respire trois fois lentement, en expirant plus longtemps qu’il n’inspire, et se dit le message en « je » à voix basse. Au deuxième tour, chacun pense à une situation à lui, qui ne concerne personne dans la salle ; qui le souhaite écrit son message en « je » dans l’exercice 3, rien n’est lu à voix haute. Pour finir, demander : où est-ce que ça pourrait aider ?",
+            "sagen": [
+              "Vous sentez quelle phrase veut sortir en premier ? Celle-là, aujourd’hui, vous la gardez dans la tête.",
+              "Trois respirations, ça dure dix secondes. Presque toutes les disputes peuvent attendre aussi longtemps."
+            ],
+            "punkte": [
+              "Regarde ton chiffre : au-dessus de 70 ? Alors ne dis encore rien.",
+              "Respire trois fois lentement – l’expiration plus longue que l’inspiration. La respiration des doigts marche aussi.",
+              "Puis dis ton message en « je » – court, ça suffit : l’émotion et le souhait."
+            ],
+            "tipp": "Relier le skill à l’échelle de tension et au plan feu tricolore du chapitre précédent : au rouge, d’abord redescendre, ensuite parler – ça vaut aussi pour les adultes.",
+            "wennEsKippt": "Si une vraie colère contre une personne présente remonte pendant l’exercice, changer de situation : aujourd’hui, seulement des situations inventées ou passées. Qui ne veut rien écrire s’entraîne seulement à respirer.",
+            "blatt": "ff7-ich-botschaften"
+          },
+          {
+            "titel": "Skills-Pass, tour éclair en « je », mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Skills-Pass (2 min) avec la question au tableau : de quel message en « je » pourrais-je avoir besoin cette semaine ? Ensuite, le tampon. Puis le tour éclair en « je » : cinq ou six volontaires disent une phrase sur la séance qui commence par « Je » (2 min). Pour finir, annoncer la mission de la semaine dans le cahier et la prochaine séance (1 min).",
+            "sagen": [
+              "Une phrase sur aujourd’hui qui commence par “Je” : j’emporte… ou j’ai trouvé difficile…"
+            ],
+            "tipp": "Qui ne veut pas écrire son propre message en « je » dans le Skills-Pass recopie la formule – c’est aussi une phrase à emporter."
+          }
+        ],
+        "bruecke": "La semaine prochaine, on parle des limites : où commencent les vôtres – et à quoi remarquez-vous que vous êtes trop près de quelqu’un ?",
+        "mission": "Cette semaine, essaie une fois un message en « je » – à la maison, dans le bus ou par message. Ou écoute quelqu’un deux minutes, sans donner de conseils.",
+        "hintergrund": "Thomas Gordon (1972) a décrit deux outils qui vont ensemble : le message en « je » pour les moments où quelque chose me dérange, et l’écoute active pour ceux où c’est l’autre qui est touché. Les messages en « tu » contiennent des jugements et provoquent souvent une défense ; les messages en « je » décrivent la situation, l’émotion et le souhait et laissent de la place à l’autre. Avec le « parce que », la formule reprend ce que la communication non violente appelle le besoin derrière l’émotion, et avec le souhait, une demande réalisable (Rosenberg, 2001). Rogers et Roethlisberger (1952) voyaient dans le jugement trop rapide le principal obstacle à la discussion et proposaient une règle simple : je ne donne mon avis qu’après avoir reformulé ce que l’autre pense et ressent – à sa satisfaction. C’est exactement ce que les binômes entraînent en résumant. Les deux ne réussissent qu’avec la tête calme : d’abord redescendre, ensuite parler.",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52."
+        ],
+        "achtung": "Le message en « je » est un outil pour les conflits du quotidien, pas une protection contre le harcèlement ou la violence : un jeune attaqué, menacé ou contrôlé de façon répétée a besoin d’adultes – impliquer alors le régent et le SePAS. Le message en « je » personnel de la fiche n’est pas lu à voix haute. Pour l’écoute à deux, ne proposer que des sujets anodins ; si un jeune raconte quelque chose de lourd, prendre le relais, l’accueillir et proposer un entretien après le cours. En cas de signes de violence, d’abus ou d’automutilation, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
+        "differenzierung": {
+          "leichter": "N’exiger que deux parties : l’émotion et le souhait (« Je suis agacé. Frappe avant, s’il te plaît. ») ; la formule et les mots de la roue des émotions restent au tableau. Exercice 1 en binôme ; un jeune qui lit bien lit la carte reproche à son îlot. Pour l’écoute, le résumé peut commencer par « Tu veux dire que… » et se faire dans n’importe quelle langue que les deux parlent.",
+          "schwerer": "Écrire ce que l’autre pourrait répondre au message en « je », puis formuler une deuxième réponse calme. Pour l’écoute, travailler à trois et prendre le rôle d’observateur, avec un retour à partir du contrôle d’écoute."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec une phrase en « je » (5 min), message en « tu » ou en « je » avec la scène et la formule (10 min), exercices 1 et 2 et contrôle des reproches (15 min), écoute avec les freins à l’écoute et un tour à deux (12 min), respirer avant de parler (3 min), Skills-Pass et mission de la semaine (5 min). Les rencontres dans la salle et le contrôle d’écoute sont supprimés ; l’écoute à deux peut être approfondie à la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-ich-botschaften",
+      "bereich": "skills",
+      "thema": "kommunikation",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "25 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Ich-Botschaft",
+        "Du-Botschaft",
+        "aktives Zuhören",
+        "Zusammenfassen",
+        "Förderfach"
+      ],
+      "bild": "icon:message-circle",
+      "kurs": [
+        "ff7-e19"
+      ],
+      "de": {
+        "titel": "Ich-Botschaften und Zuhören",
+        "untertitel": "Sagen, was dich stört – ohne anzugreifen. Zuhören, bis die andere Person sich verstanden fühlt.",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "„Du nervst immer.“ Solche Du-Botschaften klingen nach Angriff – die andere Person verteidigt sich oder schlägt zurück. Eine Ich-Botschaft sagt, was bei dir passiert und was du dir wünschst."
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 0,
+            "items": [
+              {
+                "titel": "Ich fühle mich …",
+                "text": "das Gefühl: ein Wort vom Gefühlsrad"
+              },
+              {
+                "titel": "wenn …",
+                "text": "was passiert ist – wie eine Kamera, ohne „immer“ und „nie“"
+              },
+              {
+                "titel": "weil …",
+                "text": "was dir wichtig ist"
+              },
+              {
+                "titel": "Ich wünsche mir …",
+                "text": "was anders werden soll – konkret und machbar"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Welche Ich-Botschaft passt zu welcher Du-Botschaft? Verbinde.",
+            "hinweis": "Unterstreiche danach in einer Ich-Botschaft das Gefühl."
+          },
+          {
+            "art": "zuordnen",
+            "titel": [
+              "Du-Botschaft",
+              "Ich-Botschaft"
+            ],
+            "links": [
+              "„Du lässt mich nie ausreden.“",
+              "„Immer nimmst du mein Ladekabel.“",
+              "„Ihr spielt immer nur unter euch.“",
+              "„Du bist echt das Letzte.“"
+            ],
+            "rechts": [
+              "„Ich ärgere mich, wenn mein Ladekabel weg ist, weil ich es abends brauche. Frag bitte vorher.“",
+              "„Mir ist es unangenehm, wenn mein Foto ohne Frage in der Gruppe landet. Lösch es bitte.“",
+              "„Ich bin genervt, wenn du mich unterbrichst, weil ich dann den Faden verliere. Lass mich bitte ausreden.“",
+              "„Ich fühle mich ausgeschlossen, wenn ich nie den Ball bekomme. Spielt ihr mir auch mal zu?“"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Mach aus dem Vorwurf eine Ich-Botschaft. Die Situation hilft dir.",
+            "hinweis": "Gefühl und Wunsch reichen schon."
+          },
+          {
+            "art": "frage",
+            "text": "Klassenchat: Nachts kommen Dutzende Nachrichten. Vorwurf: „Seid ihr bescheuert?“",
+            "linien": 2
+          },
+          {
+            "art": "frage",
+            "text": "Zu Hause: Deine Schwester bringt deine Kopfhörer kaputt zurück. Vorwurf: „Du machst alles kaputt.“",
+            "linien": 2
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Deine eigene Ich-Botschaft: Denk an eine Situation, die dich stört oder gestört hat.",
+            "hinweis": "Du entscheidest, was du teilst. Niemand muss den Satz vorlesen."
+          },
+          {
+            "art": "satzanfaenge",
+            "linien": 1,
+            "items": [
+              "Ich fühle mich …",
+              "wenn …",
+              "weil …",
+              "Ich wünsche mir …"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "achtung",
+            "titel": "Vorsicht, verkleidete Du-Botschaft",
+            "text": "„Ich finde, du bist egoistisch“ beginnt mit „Ich“ – und greift trotzdem an. Eine echte Ich-Botschaft beschreibt dein Gefühl, nicht die andere Person."
+          },
+          {
+            "art": "text",
+            "text": "Zuhören ist mehr als still sein. So merkt die andere Person, dass es ankommt:"
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 0,
+            "items": [
+              {
+                "titel": "Zuwenden",
+                "text": "Körper und Blick zur Person – die Stirn reicht. Handy weg."
+              },
+              {
+                "titel": "Dranbleiben",
+                "text": "nicken, „mhm“, ausreden lassen"
+              },
+              {
+                "titel": "Nachfragen",
+                "text": "„Wie war das genau?“"
+              },
+              {
+                "titel": "Zusammenfassen",
+                "text": "„Habe ich richtig verstanden, dass …?“ – mit dem Gefühl"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Nach der Übung zu zweit: Wie gut ist dir das Zuhören gelungen? Kreuze an."
+          },
+          {
+            "art": "einschaetzung",
+            "optionen": [
+              "gelungen",
+              "teilweise",
+              "noch nicht"
+            ],
+            "items": [
+              "Ich habe die Person ausreden lassen.",
+              "Ich habe nicht von mir selbst erzählt.",
+              "Ich habe keine Tipps gegeben, um die niemand gebeten hat.",
+              "Ich habe nachgefragt.",
+              "Ich habe zusammengefasst – mit dem Gefühl."
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Erst atmen, dann reden",
+            "punkte": [
+              "Merk deine Zahl: Über 70? Dann noch nichts sagen.",
+              "Atme dreimal langsam – länger aus als ein.",
+              "Dann sag deine Ich-Botschaft. Kurz reicht: Gefühl und Wunsch."
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen kennen die vier Teile einer Ich-Botschaft, verwandeln Vorwürfe aus dem Alltag in Ich-Botschaften, üben aktives Zuhören zu zweit und schätzen ein, was ihnen dabei schon gelingt.",
+          "ablauf": [
+            "Einheit 19, Schritt 4: Aufgabe 1 allein (3 Min.), Aufgabe 2 zu zweit (5 Min.).",
+            "Schritt 6 und 7: die vier Schritte des Zuhörens zeigen, nach der Übung zu zweit Aufgabe 4 (3 Min.).",
+            "Schritt 9: Aufgabe 3 beim Skill – wer mag, schreibt eine eigene Ich-Botschaft; vorgelesen wird nichts."
+          ],
+          "hintergrund": "Ich-Botschaft und aktives Zuhören gehören zusammen: Die eine passt, wenn mich etwas stört, das andere, wenn die andere Person etwas bewegt (Gordon, 1972). Das „weil“ benennt das Bedürfnis hinter dem Gefühl, der Wunsch eine erfüllbare Bitte (Rosenberg, 2001).",
+          "quellen": [
+            "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+            "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+          ],
+          "material": "Schülerheft, Stifte"
+        }
+      },
+      "fr": {
+        "titel": "Messages en « je » et écoute",
+        "untertitel": "Dire ce qui te dérange – sans attaquer. Écouter jusqu’à ce que l’autre se sente compris.",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "« Tu m’énerves tout le temps. » Ce genre de message en « tu » sonne comme une attaque – l’autre se défend ou contre-attaque. Un message en « je » dit ce qui se passe pour toi et ce que tu souhaites."
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 0,
+            "items": [
+              {
+                "titel": "Je me sens…",
+                "text": "l’émotion : un mot de la roue des émotions"
+              },
+              {
+                "titel": "quand…",
+                "text": "ce qui s’est passé – comme une caméra, sans « toujours » ni « jamais »"
+              },
+              {
+                "titel": "parce que…",
+                "text": "ce qui compte pour toi"
+              },
+              {
+                "titel": "J’aimerais…",
+                "text": "ce qui doit changer – concret et faisable"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Quel message en « je » va avec quel message en « tu » ? Relie.",
+            "hinweis": "Souligne ensuite l’émotion dans un des messages en « je »."
+          },
+          {
+            "art": "zuordnen",
+            "titel": [
+              "Message en « tu »",
+              "Message en « je »"
+            ],
+            "links": [
+              "« Tu ne me laisses jamais finir. »",
+              "« Tu prends toujours mon chargeur. »",
+              "« Vous jouez toujours entre vous. »",
+              "« T’es vraiment trop nul. »"
+            ],
+            "rechts": [
+              "« Ça m’énerve quand mon chargeur a disparu, parce que j’en ai besoin le soir. Demande avant, s’il te plaît. »",
+              "« Ça me gêne quand une photo de moi arrive dans le groupe sans qu’on me demande. Efface-la, s’il te plaît. »",
+              "« Je suis agacé quand tu me coupes la parole, parce que je perds le fil. Laisse-moi finir, s’il te plaît. »",
+              "« Je me sens mis de côté quand je n’ai jamais le ballon. Vous me faites une passe ? »"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Transforme le reproche en message en « je ». La situation t’aide.",
+            "hinweis": "L’émotion et le souhait suffisent déjà."
+          },
+          {
+            "art": "frage",
+            "text": "Groupe de classe : des dizaines de messages la nuit. Reproche : « Vous êtes malades ? »",
+            "linien": 2
+          },
+          {
+            "art": "frage",
+            "text": "Maison : ta sœur te rend tes écouteurs cassés. Reproche : « Tu casses toujours tout. »",
+            "linien": 2
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ton propre message en « je » : pense à une situation qui te dérange ou qui t’a dérangé.",
+            "hinweis": "Tu décides de ce que tu partages. Personne n’est obligé de lire sa phrase."
+          },
+          {
+            "art": "satzanfaenge",
+            "linien": 1,
+            "items": [
+              "Je me sens…",
+              "quand…",
+              "parce que…",
+              "J’aimerais…"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "achtung",
+            "titel": "Attention, faux message en « je »",
+            "text": "« J’ai l’impression que tu es égoïste » commence par « je » – et attaque quand même. Un vrai message en « je » décrit ton émotion, pas l’autre personne."
+          },
+          {
+            "art": "text",
+            "text": "Écouter, c’est plus que se taire. Voici comment l’autre sent que ça arrive :"
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 0,
+            "items": [
+              {
+                "titel": "Se tourner vers l’autre",
+                "text": "le corps et le regard vers la personne – le front suffit. Portable rangé."
+              },
+              {
+                "titel": "Rester avec l’autre",
+                "text": "hocher la tête, « hm hm », laisser finir"
+              },
+              {
+                "titel": "Poser une question",
+                "text": "« Ça s’est passé comment ? »"
+              },
+              {
+                "titel": "Résumer",
+                "text": "« Si j’ai bien compris… ? » – avec l’émotion"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Après l’exercice à deux : est-ce que tu as bien réussi à écouter ? Coche."
+          },
+          {
+            "art": "einschaetzung",
+            "optionen": [
+              "réussi",
+              "en partie",
+              "pas encore"
+            ],
+            "items": [
+              "J’ai laissé la personne finir.",
+              "Je n’ai pas parlé de moi.",
+              "Je n’ai pas donné de conseils que personne n’a demandés.",
+              "J’ai posé une question.",
+              "J’ai résumé – avec l’émotion."
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Respirer avant de parler",
+            "punkte": [
+              "Regarde ton chiffre : au-dessus de 70 ? Alors ne dis encore rien.",
+              "Respire trois fois lentement – l’expiration plus longue que l’inspiration.",
+              "Puis dis ton message en « je ». Court, ça suffit : l’émotion et le souhait."
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes connaissent les quatre parties d’un message en « je », transforment des reproches du quotidien en messages en « je », s’entraînent à deux à l’écoute active et évaluent ce qu’ils réussissent déjà.",
+          "ablauf": [
+            "Séance 19, étape 4 : exercice 1 seul (3 min), exercice 2 à deux (5 min).",
+            "Étapes 6 et 7 : montrer les quatre étapes de l’écoute, puis, après l’exercice à deux, l’exercice 4 (3 min).",
+            "Étape 9 : exercice 3 pendant le skill – qui le souhaite écrit son propre message en « je » ; rien n’est lu à voix haute."
+          ],
+          "hintergrund": "Le message en « je » et l’écoute active vont ensemble : l’un convient quand quelque chose me dérange, l’autre quand c’est l’autre qui est touché (Gordon, 1972). Le « parce que » nomme le besoin derrière l’émotion, le souhait une demande réalisable (Rosenberg, 2001).",
+          "quellen": [
+            "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+            "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+          ],
+          "material": "Cahier de l’élève, stylos"
+        }
+      }
+    },
+    {
+      "id": "ff7-vorwurf-karten",
+      "bereich": "skills",
+      "thema": "kommunikation",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe",
+        "klasse"
+      ],
+      "dauer": "4 Min. und 10 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Vorwurf-Karten",
+        "Ich-Botschaft",
+        "Situationskarten",
+        "Förderfach"
+      ],
+      "bild": "icon:messages",
+      "kurs": [
+        "ff7-e19"
+      ],
+      "de": {
+        "titel": "Vorwurf-Karten",
+        "untertitel": "Kopiervorlage: einmal je Tischgruppe – für die Schritte 4 und 8",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Ausschneiden und je Tischgruppe einen Satz in einen Umschlag stecken. Die Gruppe zieht zwei Karten und macht aus dem Vorwurf eine Ich-Botschaft. In Schritt 8 liest die Lehrkraft die Situationen vor. Heißt jemand in der Klasse so wie eine Figur, den Namen ändern.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 138,
+            "karten": [
+              {
+                "titel": "Pause · Der Ball",
+                "text": "Beim Fußball gibt dir niemand den Ball.\nVorwurf: „Ihr spielt immer nur unter euch.“"
+              },
+              {
+                "titel": "Bus · Der Platz",
+                "text": "Ana setzt sich jeden Morgen auf den Platz, auf dem du immer sitzt.\nVorwurf: „Du bist so dreist.“"
+              },
+              {
+                "titel": "Klassenchat · Das Foto",
+                "text": "Jemand stellt ein Foto von dir mit geschlossenen Augen in die Gruppe.\nVorwurf: „Du bist echt das Letzte.“"
+              },
+              {
+                "titel": "Zu Hause · Die Tür",
+                "text": "Dein Bruder kommt ohne zu klopfen in dein Zimmer.\nVorwurf: „Du nervst immer.“"
+              },
+              {
+                "titel": "Gruppenarbeit",
+                "text": "Diogo macht nichts, du schreibst alles allein.\nVorwurf: „Du bist so faul.“"
+              },
+              {
+                "titel": "Zu Hause · Das Ladekabel",
+                "text": "Deine Schwester nimmt dein Ladekabel und bringt es nie zurück.\nVorwurf: „Nie bringst du was zurück.“"
+              },
+              {
+                "titel": "Pause · Das Geheimnis",
+                "text": "Mila erzählt weiter, was du ihr anvertraut hast.\nVorwurf: „Dir kann man nichts erzählen.“"
+              },
+              {
+                "titel": "Klassenchat · Keine Antwort",
+                "text": "Luca ist online, antwortet dir aber seit zwei Tagen nicht.\nVorwurf: „Du ignorierst mich.“"
+              },
+              {
+                "titel": "Bus · Die Musik",
+                "text": "Neben dir hört jemand laut Musik ohne Kopfhörer.\nVorwurf: „Geht’s noch?“"
+              },
+              {
+                "titel": "Zu Hause · Das Bulletin",
+                "text": "Dein Vater spricht vor den Gästen über dein Bulletin.\nVorwurf: „Musst du mich immer blamieren?“"
+              },
+              {
+                "titel": "Klasse · Unterbrochen",
+                "text": "Noah unterbricht dich jedes Mal, wenn du etwas sagst.\nVorwurf: „Du lässt mich nie ausreden.“"
+              },
+              {
+                "titel": "Training · Die Bank",
+                "text": "Dein Trainer lässt dich das dritte Spiel auf der Bank sitzen.\nVorwurf: „Sie sind total unfair.“"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Erfundene Alltagssituationen aus Pause, Bus, Klassenchat und Familie: Die Jugendlichen verwandeln den Vorwurf auf der Karte in eine Ich-Botschaft, ohne über eigene Konflikte sprechen zu müssen.",
+          "ablauf": [
+            "Einmal je Tischgruppe kopieren, ausschneiden, in Umschläge stecken; Namen tauschen, falls jemand in der Klasse so heißt.",
+            "Einheit 19, Schritt 4: Jede Gruppe zieht zwei Karten und formuliert zu jeder eine Ich-Botschaft.",
+            "Schritt 8: Die Lehrkraft liest bei jeder Begegnung eine Situation vor."
+          ],
+          "hintergrund": "Du-Botschaften enthalten Urteile und lösen Verteidigung aus; Ich-Botschaften beschreiben Situation, Gefühl und Wunsch (Gordon, 1972). Erfundene Situationen schaffen Abstand: Geübt wird an Figuren, nicht an echten Konflikten in der Klasse.",
+          "quellen": [
+            "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe."
+          ],
+          "material": "Schere, fünf Umschläge"
+        }
+      },
+      "fr": {
+        "titel": "Cartes reproches",
+        "untertitel": "Modèle à photocopier : un jeu par îlot – pour les étapes 4 et 8",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Découper et mettre un jeu par îlot dans une enveloppe. L’îlot tire deux cartes et transforme le reproche en message en « je ». À l’étape 8, l’enseignant·e lit les situations à voix haute. Si un jeune de la classe porte le prénom d’un personnage, le changer.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 138,
+            "karten": [
+              {
+                "titel": "Récré · Le ballon",
+                "text": "Au foot, personne ne te passe le ballon.\nReproche : « Vous jouez toujours entre vous. »"
+              },
+              {
+                "titel": "Bus · La place",
+                "text": "Chaque matin, Ana s’assoit à la place où tu t’assois toujours.\nReproche : « T’es vraiment gonflée. »"
+              },
+              {
+                "titel": "Groupe de classe · La photo",
+                "text": "Quelqu’un poste une photo de toi les yeux fermés dans le groupe.\nReproche : « T’es vraiment trop nul. »"
+              },
+              {
+                "titel": "Maison · La porte",
+                "text": "Ton frère entre dans ta chambre sans frapper.\nReproche : « Tu m’énerves tout le temps. »"
+              },
+              {
+                "titel": "Travail de groupe",
+                "text": "Diogo ne fait rien, tu écris tout seul.\nReproche : « T’es trop flemmard. »"
+              },
+              {
+                "titel": "Maison · Le chargeur",
+                "text": "Ta sœur prend ton chargeur et ne le rend jamais.\nReproche : « Tu ne rends jamais rien. »"
+              },
+              {
+                "titel": "Récré · Le secret",
+                "text": "Mila répète ce que tu lui as confié.\nReproche : « On ne peut rien te dire. »"
+              },
+              {
+                "titel": "Groupe de classe · Pas de réponse",
+                "text": "Luca est en ligne, mais il ne te répond pas depuis deux jours.\nReproche : « Tu m’ignores. »"
+              },
+              {
+                "titel": "Bus · La musique",
+                "text": "À côté de toi, quelqu’un écoute de la musique à fond, sans écouteurs.\nReproche : « Ça va pas, non ? »"
+              },
+              {
+                "titel": "Maison · Le bulletin",
+                "text": "Ton père parle de ton bulletin devant les invités.\nReproche : « Tu dois toujours me ridiculiser ? »"
+              },
+              {
+                "titel": "Classe · Coupé",
+                "text": "Noah te coupe la parole chaque fois que tu dis quelque chose.\nReproche : « Tu ne me laisses jamais finir. »"
+              },
+              {
+                "titel": "Entraînement · Le banc",
+                "text": "Ton entraîneur te laisse sur le banc pour le troisième match.\nReproche : « Vous êtes vraiment injuste. »"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Des situations inventées de la récré, du bus, du groupe de la classe et de la famille : les jeunes transforment le reproche de la carte en message en « je », sans devoir parler de leurs propres conflits.",
+          "ablauf": [
+            "Photocopier une fois par îlot, découper, mettre dans des enveloppes ; changer les prénoms si un jeune de la classe s’appelle ainsi.",
+            "Séance 19, étape 4 : chaque îlot tire deux cartes et formule un message en « je » pour chacune.",
+            "Étape 8 : à chaque rencontre, l’enseignant·e lit une situation à voix haute."
+          ],
+          "hintergrund": "Les messages en « tu » contiennent des jugements et provoquent une défense ; les messages en « je » décrivent la situation, l’émotion et le souhait (Gordon, 1972). Les situations inventées créent de la distance : on s’entraîne avec des personnages, pas avec de vrais conflits de la classe.",
+          "quellen": [
+            "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe."
+          ],
+          "material": "Ciseaux, cinq enveloppes"
+        }
+      }
+    }
+  ]
+}

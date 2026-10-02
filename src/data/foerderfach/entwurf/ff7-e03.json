@@ -1,0 +1,779 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e03",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-finde-jemanden"
+      ],
+      "woerter": [
+        {
+          "de": "kennenlernen",
+          "fr": "faire connaissance"
+        },
+        {
+          "de": "die Gemeinsamkeit",
+          "fr": "le point commun"
+        },
+        {
+          "de": "sich aufstellen",
+          "fr": "se placer"
+        },
+        {
+          "de": "raten",
+          "fr": "deviner"
+        },
+        {
+          "de": "nachfragen",
+          "fr": "demander des précisions"
+        },
+        {
+          "de": "das Kompliment",
+          "fr": "le compliment"
+        }
+      ],
+      "de": {
+        "titel": "Kennenlernen in Bewegung",
+        "kurz": "Ecken, Linie, Raten und Bingo mit Nachfrage: Die Klasse entdeckt Gemeinsamkeiten, ohne dass jemand Persönliches erzählen muss.",
+        "ziele": [
+          "entdecken beim Aufstellen und Raten Gemeinsamkeiten, ohne Persönliches erklären zu müssen",
+          "stellen einander Fragen und haken bei jeder Antwort einmal nach",
+          "sprechen mit mindestens fünf Mitschülerinnen und Mitschülern, die sie noch kaum kennen",
+          "geben ein konkretes Kompliment und nehmen eines mit einem einfachen Danke an"
+        ],
+        "material": [
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Namensschilder aus Einheit 1",
+          "Malerkrepp für eine Linie am Boden",
+          "Vier A4-Schilder: A, B, C, D",
+          "Schülerheft für jede Person",
+          "Moderationskarten, zwei je Gruppe",
+          "Plakat, dicke Stifte",
+          "Klebezettel, einer je Person",
+          "Stoppuhr, Stempel (Skills-Pass)"
+        ],
+        "vorbereitung": [
+          "Eine Linie aus Malerkrepp von der Tür zum Fenster kleben; die Ecken freiräumen und mit A bis D beschriften.",
+          "Die Antworten der Eckenfragen (mit kleinen Zeichnungen) und die Bingo-Regeln an die Tafel schreiben.",
+          "Drei eigene Sätze für „Zwei Wahrheiten, eine Lüge“ überlegen; Fragen und Bingo-Felder auf Heikles prüfen.",
+          "Für Jugendliche, die noch wenig Deutsch verstehen, ein Tandem überlegen."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Klebepunkt und Namenswelle"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick und Regeln für heute"
+          },
+          {
+            "min": "15–30",
+            "phase": "aktiv",
+            "titel": "Aufstellen: Ecken und Linie"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Zwei Wahrheiten, eine Lüge"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Stein, Papier, Schere mit Fanclub"
+          },
+          {
+            "min": "50–75",
+            "phase": "aktiv",
+            "titel": "Finde jemanden, der … – mit Nachfrage"
+          },
+          {
+            "min": "75–85",
+            "phase": "uebung",
+            "titel": "Das haben wir gemeinsam"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Ein Kompliment annehmen"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Blitzlicht und Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Klebepunkt und Namenswelle",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Die Namensschilder aus Einheit 1 liegen auf den Plätzen. Beim Hereinkommen klebt jede Person einen Punkt auf das Gefühlsrad-Plakat; wer die Wörter noch nicht kennt, klebt ihn in die Farbe, die passt. Die Lehrkraft sagt einen Satz zu ihrem Punkt, der schon klebt, zwei, drei Freiwillige nennen ihr Wort (3 Min.). Dann die Namenswelle: Die Lehrkraft beginnt, dann sagt Tisch für Tisch im Uhrzeigersinn jede Person nur ihren Vornamen, so schnell es geht; die Lehrkraft stoppt die Zeit. In der zweiten Runde läuft die Welle rückwärts – schafft die Klasse einen Rekord (3 Min.)? Zum Schluss das Ruhesignal einführen und einmal ausprobieren: Die Lehrkraft hebt die Hand, alle heben die Hand und werden still (1 Min.).",
+            "sagen": [
+              "Ein Punkt für jetzt gerade. Niemand muss sagen, welcher seiner ist.",
+              "Heute bewegt ihr euch viel. Wenn ich die Hand hebe, hebt ihr eure Hand und seid still – probieren wir es einmal."
+            ],
+            "tipp": "Bei Namen, die neu oder schwer auszusprechen sind, kurz nachfragen und sie ab heute richtig sagen – für Jugendliche mit mehreren Sprachen ist das ein starkes Zeichen. Die Welle ist ein Rekord der ganzen Klasse, kein Test einzelner.",
+            "wennEsKippt": "Sagt jemand einen Fantasienamen, die Welle ruhig neu starten: Die Zeit läuft von vorn. Ruft jemand „lauter!“, abwinken: Gezählt wird die Zeit, nicht die Lautstärke. Lacht jemand über einen Namen, sofort stoppen: Über Namen wird hier nicht gelacht – das steht in unserer Vereinbarung. Fehlt ein Namensschild, ein A5-Blatt falten und den Vornamen groß daraufschreiben."
+          },
+          {
+            "titel": "Rückblick und Regeln für heute",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann kurz nach der Wochen-Mission fragen: Wer hat seinen Wenn-dann-Plan oder die Fingeratmung ausprobiert? Auf drei zeigen alle Daumen hoch, Mitte oder runter; eine Stimme erzählt, wo es war. Auf die Klassenvereinbarung zeigen und zwei Regeln hervorheben, die heute besonders zählen: „Weiter“ ist immer erlaubt, und wir lachen miteinander, nicht übereinander. Dann das Thema nennen: sich als Klasse besser kennenlernen – in Bewegung, mit Raten und Nachfragen.",
+            "sagen": [
+              "Heute bewegt ihr euch, ratet und fragt nach. Was ihr von euch zeigt, entscheidet ihr selbst – stehenbleiben oder ‚weiter‘ sagen ist immer in Ordnung."
+            ],
+            "tipp": "Zeigen bei der Mission kaum Daumen nach oben, das gelassen nehmen: Diese Woche gibt es eine neue Mission. Wer etwas ausprobiert hat, erzählt in einem Satz – das überzeugt mehr als jede Erklärung."
+          },
+          {
+            "titel": "Aufstellen: Ecken und Linie",
+            "dauer": 15,
+            "phase": "aktiv",
+            "text": "Ecken (8 Min.): Die Ecken tragen die Schilder A bis D. Eine Frage vorlesen, die vier Antworten stehen an der Tafel. Auf „los“ geht jede Person in die Ecke ihrer Antwort – gehen, nicht rennen. Dort fragt jede Person jemanden, den sie noch wenig kennt: Warum diese Ecke? (1 Min.). Dann Ruhesignal und die nächste Frage; drei oder vier Runden. Linie (5 Min.): Alle stellen sich an die Linie am Boden – an der Tür, wer heute am frühesten aufgestanden ist, am Fenster, wer am spätesten. Den richtigen Platz findet nur, wer die anderen fragt. Die Lehrkraft geht die Reihe entlang, jede Person sagt nur ihre Uhrzeit. Zurück an die Plätze, Tischgruppe für Tischgruppe (2 Min.).",
+            "sagen": [
+              "Geht in die Ecke, die für euch stimmt – nicht in die, in der eure Freunde stehen.",
+              "Fragt jemanden, den ihr noch wenig kennt: Warum gerade diese Ecke?"
+            ],
+            "punkte": [
+              "Was nimmst du mit auf eine einsame Insel? A Handy ohne Netz · B Ball · C Lieblingsessen für ein Jahr · D Kopfhörer mit Musik",
+              "Welche Fähigkeit hättest du gern? A fliegen · B Tiere verstehen · C die Zeit anhalten · D jede Sprache sprechen",
+              "Welches Fach würdest du am Lycée erfinden? A Kochen · B Gaming · C Tiere · D Musik machen",
+              "Womit kann man dich am besten wecken? A Musik · B Wecker · C Duft von Frühstück · D gar nicht"
+            ],
+            "tipp": "Die Lehrkraft stellt sich in die leerste Ecke und fragt dort mit nach. Steht jemand allein in einer Ecke, ist das kein Problem, sondern eine eigene Meinung: hingehen und nach dem Warum fragen. Wird die Zeit knapp, entfällt die Linie.",
+            "wennEsKippt": "Rennen alle los oder wird geschubst, Ruhesignal und die Runde neu starten: erst nachdenken, dann auf „los“ gehen. Sucht jemand vor allem die Ecke mit den meisten Lachern, das gelassen nehmen und ihm oder ihr die nächste Frage zum Vorlesen geben. Wer nicht laufen mag, zeigt die Antwort vom Platz aus mit einem bis vier Fingern; wer die Sprache noch lernt, zeigt auf die Zeichnung an der Tafel."
+          },
+          {
+            "titel": "Zwei Wahrheiten, eine Lüge",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Die Lehrkraft beginnt mit ihren drei Sätzen (Beispiel unten, durch eigene ersetzen); die Klasse rät auf drei mit einem, zwei oder drei Fingern, welcher erfunden ist (2 Min.). Dann schreibt jede Person allein drei kurze Sätze über sich ins Heft, zwei wahre und einen erfundenen (Aufgabe 1, 4 Min.). Stichworte an der Tafel helfen: ein Talent, ein Missgeschick, ein Rekord, eine Sammlung, ein seltsames Lieblingsessen. In der Tischgruppe liest jede Person ihre Sätze vor, die anderen raten auf drei mit den Fingern, dann wird aufgelöst (5 Min.). Zum Schluss liest je Tischgruppe eine freiwillige Person ihre Sätze der ganzen Klasse vor, und alle raten mit (4 Min.).",
+            "sagen": [
+              "Nehmt Dinge, die man euch nicht ansieht – nichts über Familie, Körper oder Noten.",
+              "Die Lüge darf ruhig glaubwürdig sein. Genau das macht es schwer."
+            ],
+            "punkte": [
+              "Ich bin einmal im Bus eingeschlafen und erst an der Endstation aufgewacht.",
+              "Ich habe als Kind drei Jahre lang Trompete gespielt.",
+              "Ich habe einmal einen Kuchen gebacken, den nicht einmal der Hund fressen wollte."
+            ],
+            "tipp": "Wer nichts über sich schreiben will, schreibt drei Sätze über eine Figur aus einem Film, einer Serie oder einem Spiel; die anderen raten, was an der Figur nicht stimmt. Die Lehrkraft verrät ihre Lüge erst, wenn alle getippt haben – das ist für die Klasse der lustigste Moment.",
+            "wennEsKippt": "Steht in einem Satz etwas über andere, etwas Verletzendes oder etwas sehr Persönliches, leise um einen anderen Satz bitten: Hier geht es nur um dich, und nur um Harmloses. Klingt ein Satz wie ein ernster Hinweis, etwa auf Gewalt, ihn nicht vor der Klasse aufgreifen, sondern nach der Stunde ansprechen. Wer gar nicht mitmachen will, ist Schiedsrichter der Tischgruppe und zählt, wer am häufigsten richtig rät.",
+            "blatt": "ff7-finde-jemanden"
+          },
+          {
+            "titel": "Bewegungspause: Stein, Papier, Schere mit Fanclub",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen auf und spielen zu zweit Stein, Papier, Schere; vorher sagen beide ihren Vornamen. Wer verliert, wird Fan der anderen Person, stellt sich hinter sie und feuert sie beim nächsten Duell mit ihrem Namen an – ohne Anfassen. Die Fanclubs wachsen, bis im Finale zwei Hälften der Klasse ihre beiden Letzten anfeuern (4 Min.). Dann Ruhesignal: Alle setzen sich und atmen dreimal langsam aus (1 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Vor jedem Duell sagt ihr euren Namen. Wer verliert, wird Fan – und feuert mit dem Namen an."
+            ],
+            "tipp": "Die Namen sind der eigentliche Gewinn: Nach fünf Minuten haben alle ein Dutzend Namen gehört und gerufen. Wird nebenan geprüft, feuern die Fans nur mit Klatschen und geflüsterten Namen an. Wer im Finale nicht im Mittelpunkt stehen möchte, darf aufgeben und Fan werden.",
+            "wennEsKippt": "Wird es zu wild oder buht jemand Verlierer aus, Ruhesignal: Fans feuern ihre Person an, niemand buht. Wer nicht spielen möchte, ist von Anfang an Fan oder Schiedsrichter im Finale. Ist die Klasse danach aufgedreht, im Sitzen fünf statt drei Atemzüge."
+          },
+          {
+            "titel": "Finde jemanden, der … – mit Nachfrage",
+            "dauer": 25,
+            "phase": "aktiv",
+            "text": "Nachfragen vormachen (3 Min.): Die Lehrkraft fragt eine freiwillige Person vor allen zweimal – zuerst ohne Nachfrage („Kochst du gern? – Ja. – Okay, schreib deinen Namen hin.“), dann mit („Was kochst du am liebsten? Wer hat dir das gezeigt?“); die Klasse sagt, was anders war. Die Regeln an der Tafel lesen (2 Min.). Runde (15 Min.): Alle gehen mit Heft und Stift herum (Aufgabe 2). Bei jedem Ja wird einmal nachgefragt; die gefragte Person schreibt ihren Vornamen ins Feld, die andere notiert ein Stichwort. Nach sieben Minuten Halbzeit ansagen. Mit dem Ruhesignal setzen sich alle (2 Min.). Zum Schluss erzählen zwei, drei Freiwillige, was sie beim Nachfragen überrascht hat; die genannte Person darf ergänzen oder „weiter“ sagen (3 Min.).",
+            "sagen": [
+              "Die Nachfrage ist wichtiger als der Name. Ohne Stichwort zählt das Feld nicht.",
+              "Was hat euch überrascht? Mit wem habt ihr etwas gemeinsam, das ihr nicht erwartet hättet?"
+            ],
+            "punkte": [
+              "Gehen, nicht rennen – und in normaler Lautstärke sprechen.",
+              "Jeder Vorname steht auf deinem Blatt nur einmal.",
+              "Bei jedem Ja fragst du einmal nach: Was genau? Wie war das? Warum gerade das?",
+              "Ein Feld zählt nur mit Vorname und Stichwort.",
+              "Wer „weiter“ sagt, wird nicht weiter gefragt.",
+              "Wer alle Felder voll hat, hilft anderen, ihre Felder zu füllen."
+            ],
+            "tipp": "Die Lehrkraft zählt als Person mit: Ihr Name darf einmal auf jedem Blatt stehen. Wer am Rand stehen bleibt, bekommt sie als Tandem. Wer nicht herumgehen möchte, bleibt sitzen und ist eine Station: Die anderen kommen zum Fragen vorbei. Wer eine weitere Sprache spricht, ist beim Feld „Sprache“ gefragt – für Neue oft der erste Erfolg in der Klasse.",
+            "wennEsKippt": "Sammeln alle nur Unterschriften, stoppen und die Nachfrage noch einmal vormachen. Wird es zu laut, Ruhesignal und eine Minute flüstern lassen. Ballt sich eine Traube um wenige, zu zweit losschicken: Sucht jemanden, mit dem ihr heute noch nicht gesprochen habt. Wird jemand auffällig gemieden, geht die Lehrkraft mit ihm oder ihr als Tandem los, ohne es vor der Klasse anzusprechen.",
+            "blatt": "ff7-finde-jemanden"
+          },
+          {
+            "titel": "Das haben wir gemeinsam",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Allein (3 Min.): Aufgabe 3 im Heft – Was hat dich überrascht? Mit wem hast du etwas gemeinsam? In der Tischgruppe (3 Min.): die Blätter vergleichen und zwei Dinge suchen, die in der Klasse viele gemeinsam haben; jede Gemeinsamkeit kommt groß auf eine Moderationskarte. Klasse (4 Min.): Die Karten kommen auf das Plakat „Das haben wir gemeinsam“, je Gruppe liest eine Person vor. Die Lehrkraft fasst zusammen: Ihr habt mehr gemeinsam, als ihr vor der Stunde gedacht habt – und niemand musste dafür etwas Persönliches erzählen. Das Plakat bleibt hängen.",
+            "sagen": [
+              "Welche Gemeinsamkeit hättet ihr vorher nicht erwartet?"
+            ],
+            "tipp": "Auch lustige Gemeinsamkeiten zählen: Sieben Leute, die man nur mit Musik wach bekommt, sind ein echtes Merkmal dieser Klasse. Wer schwer still sitzt, sammelt die Karten ein und hängt sie auf. Das Plakat ist der Einstieg in die nächste Stunde.",
+            "wennEsKippt": "Kommen nur Witze, einen davon aufhängen und um eine zweite, ernst gemeinte Karte bitten. Schließt eine Karte jemanden aus („alle außer …“), sie nicht aufhängen und erklären: Auf dieses Plakat kommt nur, was verbindet.",
+            "blatt": "ff7-finde-jemanden"
+          },
+          {
+            "titel": "Skill: Ein Kompliment annehmen",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: Jetzt kommt ein Skill für einen Moment, der schwerer ist, als er klingt – wenn jemand etwas Nettes über einen sagt. Jede Person schreibt auf einen Klebezettel, was ihr heute an der Person rechts in der Tischgruppe aufgefallen ist: etwas, das sie getan hat, nicht wie sie aussieht (3 Min.). Dann liest jede Person ihr Kompliment der Person rechts vor und gibt ihr den Zettel; wer es bekommt, übt die drei Schritte (3 Min.). Zum Schluss zwei, drei Rückmeldungen: Was war schwerer, geben oder annehmen? Wann könnte der Skill helfen? Erklären: Wer ein Kompliment kleinredet, sagt dem anderen eigentlich: Du irrst dich. Wer Danke sagt, lässt es ankommen (3 Min.).",
+            "sagen": [
+              "Schreibt, was die Person heute gemacht hat: Du hast beim Bingo richtig nachgefragt. Deine Lüge hat keiner erraten.",
+              "Wer ein Kompliment bekommt, sagt nur: Danke."
+            ],
+            "punkte": [
+              "Anschauen: Schau die Person kurz an.",
+              "Danke sagen: Ein Danke reicht – ohne „ach, das war doch nichts“.",
+              "Wirken lassen: einen Moment still bleiben, statt es kleinzureden."
+            ],
+            "tipp": "Drei, vier Beispiele an die Tafel schreiben, die alle abschreiben dürfen: Du hast gut zugehört. Du hast mich zum Lachen gebracht. Du hast mir beim Bingo geholfen. Aussehen, Kleidung und Körper bleiben außen vor – so fühlt sich niemand bewertet.",
+            "wennEsKippt": "Kommt etwas Ironisches oder etwas über das Aussehen, den Zettel freundlich zurückgeben: Was hat die Person heute getan? Kommen Sprüche wie „verliebt!“, ruhig bleiben: Hier geht es nur darum, was jemand getan hat. Will jemand nicht schreiben, schreibt die Lehrkraft selbst einen Zettel für die Person daneben – niemand geht leer aus. Wer sich beim Danke nicht traut, nickt; das zählt auch."
+          },
+          {
+            "titel": "Skills-Pass, Blitzlicht und Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Was habe ich heute über die Klasse erfahren, das mich überrascht hat? Danach gibt es den Stempel; wer mag, klebt seinen Kompliment-Zettel daneben. Blitzlicht (2 Min.): Jede Person sagt ein Wort zu heute, die Lehrkraft beginnt und gibt das Tempo vor. Zum Schluss die Wochen-Mission ansagen (steht im Heft) und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "sagen": [
+              "Ein Wort zu heute – schnell und ohne Erklärung. ‚Weiter‘ ist erlaubt."
+            ],
+            "tipp": "Die Mission setzt die Stunde fort: eine Frage, eine Nachfrage. Wer nächste Woche davon erzählt, berichtet, wie es war – nicht, was die andere Person erzählt hat."
+          }
+        ],
+        "bruecke": "Nächste Woche arbeitet ihr in euren Tischgruppen an Aufgaben, die nur gemeinsam gelingen – und schaut danach, was eurer Klasse dabei hilft.",
+        "mission": "Stell diese Woche jemandem aus der Klasse, mit dem du noch wenig geredet hast, eine Frage – und frag einmal nach. Was hast du erfahren?",
+        "hintergrund": "Zu Beginn prüfen die Mitglieder einer Gruppe vor allem, ob sie dazugehören und wie sicher der Rahmen ist; Tuckman (1965) beschreibt diese erste Phase als Orientierung. Übungen mit wenig Risiko, viel Bewegung und klaren Regeln helfen, weil sie Kontakt ermöglichen, ohne Offenheit zu erzwingen: Wer in eine Ecke geht, zeigt eine Vorliebe, keine Geschichte. Wer sieht, dass andere Ähnliches erleben, fühlt sich weniger allein – Yalom und Leszcz (2005) zählen diese Erfahrung zu den Wirkfaktoren von Gruppen. Verbundenheit gehört neben Autonomie und Kompetenz zu den psychologischen Grundbedürfnissen (Deci & Ryan, 2000) und ist die Voraussetzung dafür, dass später auch Schwieriges Platz hat. Die Nachfrage-Regel übt nebenbei Interesse und Zuhören. Ein Kompliment anzunehmen, ohne es abzuwehren, fällt vielen Jugendlichen schwer; es wird hier als erster sozialer Skill geübt.",
+        "quellen": [
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+          "Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "achtung": "Kennenlernspiele zeigen, wer dazugehört: wer allein in einer Ecke steht, wen beim Bingo niemand fragt, über wessen Namen gelacht wird. Das nicht vor der Klasse kommentieren, sondern unauffällig ausgleichen (Tandem, Station) und später nachfragen. Keine Fragen nach Familie, Herkunft, Religion, Körper oder Noten; „weiter“ ist immer erlaubt. Schreibt jemand etwas Ernstes, nicht vertiefen, sondern unter vier Augen ansprechen; bei Hinweisen auf Gewalt oder Selbstverletzung noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "differenzierung": {
+          "leichter": "Die Antworten der Eckenfragen und die Stichworte für die drei Sätze stehen an der Tafel, wenn möglich mit kleinen Zeichnungen. Beim Bingo im Tandem mit einer Person gehen, die gut liest; als Nachfrage reicht „Was denn?“ oder „Welche?“, als Stichwort ein Wort oder eine kleine Zeichnung.",
+          "schwerer": "Beim Bingo zu jedem Feld eine zweite Nachfrage stellen und beim Auflösen eine Gemeinsamkeit suchen, die fast die ganze Klasse teilt. Oder eine weitere Eckenfrage erfinden, die niemanden bloßstellt, und sie der Klasse stellen."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), Ecken mit drei Fragen (8 Min.), „Finde jemanden, der …“ mit Nachfrage und kurzem Auflösen (22 Min.), Kompliment annehmen in der Tischgruppe (8 Min.), Skills-Pass und Mission (7 Min.). Linie, „Zwei Wahrheiten, eine Lüge“ und das Plakat entfallen; das Raten eignet sich als Einstieg in die nächste Stunde."
+      },
+      "fr": {
+        "titel": "Faire connaissance en bougeant",
+        "kurz": "Coins, ligne, devinettes et bingo avec relance : la classe découvre des points communs sans que personne ait à se dévoiler.",
+        "ziele": [
+          "découvrent des points communs en se plaçant dans la salle et en devinant, sans avoir à se dévoiler",
+          "se posent des questions et demandent une précision après chaque réponse",
+          "échangent avec au moins cinq camarades qu’ils connaissaient encore peu",
+          "font un compliment précis et en acceptent un d’un simple merci"
+        ],
+        "material": [
+          "Roue des émotions, 20 gommettes",
+          "Chevalets nominatifs de la séance 1",
+          "Ruban de masquage (ligne au sol)",
+          "Quatre panneaux A4 : A, B, C, D",
+          "Un cahier de l’élève par jeune",
+          "Cartes, deux par îlot",
+          "Affiche, gros feutres",
+          "Post-it, un par jeune",
+          "Chronomètre, tampon (Skills-Pass)"
+        ],
+        "vorbereitung": [
+          "Coller une ligne de ruban de la porte à la fenêtre ; dégager les coins et y afficher A à D.",
+          "Écrire au tableau les réponses des coins (avec de petits dessins) et les règles du bingo.",
+          "Préparer ses trois phrases pour le jeu de devinettes ; relire questions et cases du bingo en pensant à la classe.",
+          "Prévoir un binôme pour les jeunes qui comprennent encore peu le français."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : gommette et vague des prénoms"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour sur la séance et règles du jour"
+          },
+          {
+            "min": "15–30",
+            "phase": "aktiv",
+            "titel": "Se placer : les coins et la ligne"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Deux vérités, un mensonge"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : pierre-feuille-ciseaux et fan-club"
+          },
+          {
+            "min": "50–75",
+            "phase": "aktiv",
+            "titel": "Trouve quelqu’un qui… – et demande des précisions"
+          },
+          {
+            "min": "75–85",
+            "phase": "uebung",
+            "titel": "Ce que nous avons en commun"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : accepter un compliment"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, tour éclair et mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : gommette et vague des prénoms",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Les chevalets de la séance 1 sont déjà sur les tables. En entrant, chaque jeune colle une gommette sur la roue des émotions ; qui ne connaît pas encore les mots la colle dans la couleur qui convient. Dire une phrase sur sa propre gommette, déjà collée, puis deux ou trois volontaires disent leur mot (3 min). Ensuite, la vague des prénoms : l’enseignant·e commence, puis, îlot après îlot dans le sens des aiguilles d’une montre, chacun dit seulement son prénom, le plus vite possible ; l’enseignant·e chronomètre. Au deuxième tour, la vague repart dans l’autre sens – la classe bat-elle son record (3 min) ? Pour finir, présenter le signal de calme et l’essayer une fois : main levée, tout le monde lève la main et se tait (1 min).",
+            "sagen": [
+              "Une gommette pour maintenant. Personne n’est obligé de dire laquelle est la sienne.",
+              "Aujourd’hui, vous allez beaucoup bouger. Quand je lève la main, vous levez la main et vous vous taisez – on essaie une fois."
+            ],
+            "tipp": "Pour les prénoms nouveaux ou difficiles à prononcer, demander brièvement et les prononcer correctement dès aujourd’hui – pour des jeunes qui parlent plusieurs langues, c’est un signe fort. La vague est un record de toute la classe, pas une épreuve individuelle.",
+            "wennEsKippt": "Si quelqu’un dit un prénom inventé, relancer calmement la vague : le chrono repart de zéro. Si quelqu’un crie « plus fort ! », balayer d’un geste : on compte le temps, pas le volume. Si quelqu’un se moque d’un prénom, arrêter tout de suite : ici, on ne rit pas des prénoms – c’est dans notre charte. S’il manque un chevalet, plier une feuille A5 et y écrire son prénom en grand."
+          },
+          {
+            "titel": "Retour sur la séance et règles du jour",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière fois. Puis demander brièvement où en est la mission de la semaine : qui a essayé son plan « si… alors » ou la respiration des doigts ? À trois, tout le monde montre pouce en haut, au milieu ou en bas ; une voix raconte où c’était. Montrer la charte de classe et souligner deux règles qui comptent particulièrement aujourd’hui : on peut toujours dire « je passe », et on rit ensemble, pas les uns des autres. Puis annoncer le thème : mieux se connaître en tant que classe – en bougeant, en devinant et en posant des questions.",
+            "sagen": [
+              "Aujourd’hui, vous allez bouger, deviner et poser des questions. Ce que vous montrez de vous, c’est vous qui le décidez – rester à sa place ou dire “je passe”, c’est toujours permis."
+            ],
+            "tipp": "Si peu de pouces sont en haut pour la mission, le prendre avec calme : cette semaine, il y a une nouvelle mission. Qui a essayé quelque chose le raconte en une phrase – cela convainc plus que n’importe quelle explication."
+          },
+          {
+            "titel": "Se placer : les coins et la ligne",
+            "dauer": 15,
+            "phase": "aktiv",
+            "text": "Les coins (8 min) : les coins portent les panneaux A à D. Lire une question ; les quatre réponses sont au tableau. Au signal, chacun va dans le coin de sa réponse – en marchant, sans courir. Là, chacun demande à quelqu’un qu’il connaît encore peu : pourquoi ce coin (1 min) ? Puis signal de calme et question suivante ; trois ou quatre tours. La ligne (5 min) : tout le monde se place le long de la ligne au sol – côté porte, ceux qui se sont levés le plus tôt ce matin, côté fenêtre, les plus tardifs. Pour trouver sa place, il faut interroger les autres. Longer la ligne : chacun dit seulement son heure de lever. Retour aux places, îlot par îlot (2 min).",
+            "sagen": [
+              "Allez dans le coin qui vous correspond – pas dans celui où sont vos amis.",
+              "Demandez à quelqu’un que vous connaissez encore peu : pourquoi ce coin-là ?"
+            ],
+            "punkte": [
+              "Qu’emportes-tu sur une île déserte ? A un portable sans réseau · B un ballon · C ton plat préféré pour un an · D un casque avec ta musique",
+              "Quel don aimerais-tu avoir ? A voler · B comprendre les animaux · C arrêter le temps · D parler toutes les langues",
+              "Quelle matière inventerais-tu au lycée ? A cuisine · B jeux vidéo · C animaux · D faire de la musique",
+              "Qu’est-ce qui te réveille le mieux ? A la musique · B le réveil · C l’odeur du petit-déjeuner · D rien du tout"
+            ],
+            "tipp": "Se placer soi-même dans le coin le plus vide et y poser des questions. Si quelqu’un est seul dans un coin, ce n’est pas un problème mais une opinion à lui : aller le rejoindre et lui demander pourquoi. Si le temps manque, laisser tomber la ligne.",
+            "wennEsKippt": "Si tout le monde se précipite ou se bouscule, signal de calme et on recommence le tour : d’abord réfléchir, puis y aller au signal. Si quelqu’un choisit surtout le coin où l’on rit le plus, le prendre avec calme et lui confier la lecture de la question suivante. Qui ne veut pas se déplacer montre sa réponse depuis sa place avec un à quatre doigts ; qui apprend encore la langue montre le dessin au tableau."
+          },
+          {
+            "titel": "Deux vérités, un mensonge",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Commencer avec ses trois phrases (exemple ci-dessous, à remplacer par les siennes) ; à trois, la classe montre avec un, deux ou trois doigts laquelle est inventée (2 min). Puis chaque jeune écrit seul dans son cahier trois courtes phrases sur lui : deux vraies et une inventée (exercice 1, 4 min). Des mots-clés au tableau aident : un talent, une gaffe, un record, une collection, un plat préféré bizarre. En îlot, chacun lit ses phrases, les autres devinent à trois avec les doigts, puis on dévoile (5 min). Pour finir, dans chaque îlot, un volontaire lit ses phrases à toute la classe, et tout le monde devine (4 min).",
+            "sagen": [
+              "Choisissez des choses qu’on ne voit pas sur vous – rien sur la famille, le corps ou les notes.",
+              "Le mensonge peut tout à fait être crédible. C’est justement ce qui rend le jeu difficile."
+            ],
+            "punkte": [
+              "Un jour, je me suis endormi·e dans le bus et je ne me suis réveillé·e qu’au terminus.",
+              "Enfant, j’ai joué de la trompette pendant trois ans.",
+              "Un jour, j’ai fait un gâteau que même le chien n’a pas voulu manger."
+            ],
+            "tipp": "Qui ne veut rien écrire sur lui-même écrit trois phrases sur un personnage de film, de série ou de jeu vidéo ; les autres devinent ce qui ne colle pas. Ne dévoiler son propre mensonge qu’une fois que tout le monde a parié – c’est le moment le plus drôle pour la classe.",
+            "wennEsKippt": "Si une phrase parle d’autres personnes, blesse quelqu’un ou est très personnelle, demander discrètement une autre phrase : ici, il s’agit seulement de toi, et de choses sans risque. Si une phrase ressemble à un signal sérieux, par exemple de violence, ne pas la reprendre devant la classe, mais en parler après le cours. Qui ne veut pas du tout participer devient arbitre de l’îlot et compte qui devine juste le plus souvent.",
+            "blatt": "ff7-finde-jemanden"
+          },
+          {
+            "titel": "Pause active : pierre-feuille-ciseaux et fan-club",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève et joue à pierre-feuille-ciseaux à deux ; avant, chacun dit son prénom. Qui perd devient le fan de l’autre, se place derrière lui et l’encourage au duel suivant en criant son prénom – sans le toucher. Les fan-clubs grossissent jusqu’à la finale, où deux moitiés de la classe encouragent leurs deux derniers joueurs (4 min). Puis signal de calme : tout le monde s’assoit et expire lentement trois fois (1 min). Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Avant chaque duel, vous dites votre prénom. Qui perd devient fan – et encourage en criant le prénom."
+            ],
+            "tipp": "Les prénoms sont le vrai gain : en cinq minutes, chacun en a entendu et crié une douzaine. Si la classe voisine a un devoir en classe, les fans encouragent seulement en applaudissant et en chuchotant le prénom. Qui ne veut pas être au centre en finale peut abandonner et devenir fan.",
+            "wennEsKippt": "Si ça devient trop sauvage ou si quelqu’un hue les perdants, signal de calme : les fans encouragent leur joueur, personne ne hue. Qui ne veut pas jouer est fan dès le début ou arbitre de la finale. Si la classe est encore excitée ensuite, cinq respirations assises au lieu de trois."
+          },
+          {
+            "titel": "Trouve quelqu’un qui… – et demande des précisions",
+            "dauer": 25,
+            "phase": "aktiv",
+            "text": "Montrer la relance (3 min) : poser deux fois une question à un volontaire devant la classe – d’abord sans relance (« Tu aimes cuisiner ? – Oui. – D’accord, écris ton prénom. »), puis avec (« Qu’est-ce que tu cuisines le plus souvent ? Qui t’a appris ? ») ; la classe dit ce qui a changé. Lire les règles au tableau (2 min). Le tour (15 min) : chacun circule avec son cahier et un stylo (exercice 2). À chaque oui, on demande une précision ; la personne interrogée écrit son prénom dans la case, l’autre note un mot-clé. Annoncer la mi-temps au bout de sept minutes. Au signal de calme, tout le monde s’assoit (2 min). Pour finir, deux ou trois volontaires racontent ce qui les a surpris ; la personne citée peut compléter ou dire « je passe » (3 min).",
+            "sagen": [
+              "La précision compte plus que le prénom. Sans mot-clé, la case ne compte pas.",
+              "Qu’est-ce qui vous a surpris ? Avec qui avez-vous un point commun auquel vous ne vous attendiez pas ?"
+            ],
+            "punkte": [
+              "On marche, on ne court pas – et on parle à voix normale.",
+              "Chaque prénom n’apparaît qu’une fois sur ta fiche.",
+              "À chaque oui, tu demandes une précision : quoi exactement ? comment c’était ? pourquoi ça ?",
+              "Une case ne compte qu’avec un prénom et un mot-clé.",
+              "Qui dit « je passe » n’est pas questionné davantage.",
+              "Qui a rempli toutes ses cases aide les autres à remplir les leurs."
+            ],
+            "tipp": "L’enseignant·e compte comme une personne : son nom peut figurer une fois sur chaque fiche. Qui reste en retrait fait équipe avec l’adulte. Qui ne veut pas circuler reste assis et devient un poste : les autres viennent l’interroger. Qui parle une autre langue est très demandé pour la case « langue » – pour un nouvel élève, c’est souvent la première réussite dans la classe.",
+            "wennEsKippt": "Si tout le monde ne fait que collecter des prénoms, arrêter et remontrer la relance. Si le bruit monte trop, signal de calme et une minute en chuchotant. Si un attroupement se forme autour de quelques-uns, envoyer les jeunes par deux : cherchez quelqu’un à qui vous n’avez pas encore parlé aujourd’hui. Si un jeune est visiblement évité, partir avec lui en binôme, sans en parler devant la classe.",
+            "blatt": "ff7-finde-jemanden"
+          },
+          {
+            "titel": "Ce que nous avons en commun",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Seul (3 min) : exercice 3 dans le cahier – qu’est-ce qui t’a surpris ? Avec qui as-tu un point commun ? En îlot (3 min) : comparer les fiches et chercher deux choses que beaucoup ont en commun dans la classe ; chaque point commun s’écrit en grand sur une carte. En classe entière (4 min) : les cartes vont sur l’affiche « Ce que nous avons en commun », et dans chaque îlot, quelqu’un lit à voix haute. Résumer : vous avez plus en commun que vous ne le pensiez avant le cours – et personne n’a eu besoin de raconter quelque chose de personnel. L’affiche reste au mur.",
+            "sagen": [
+              "Quel point commun n’auriez-vous pas imaginé avant ?"
+            ],
+            "tipp": "Les points communs drôles comptent aussi : sept personnes qu’on ne réveille qu’avec de la musique, c’est un vrai trait de cette classe. Qui a du mal à rester assis ramasse les cartes et les affiche. L’affiche servira d’entrée en matière la semaine prochaine.",
+            "wennEsKippt": "S’il n’y a que des blagues, en afficher une et demander une deuxième carte sérieuse. Si une carte exclut quelqu’un (« tous sauf… »), ne pas l’afficher et expliquer : sur cette affiche, on ne met que ce qui rassemble.",
+            "blatt": "ff7-finde-jemanden"
+          },
+          {
+            "titel": "Skill : accepter un compliment",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : voici un skill pour un moment plus difficile qu’il n’y paraît – quand quelqu’un dit quelque chose de gentil sur nous. Chaque jeune écrit sur un post-it ce qu’il a remarqué aujourd’hui chez la personne à sa droite dans l’îlot : quelque chose qu’elle a fait, pas son apparence (3 min). Puis chacun lit son compliment à la personne de droite et lui donne le post-it ; celle qui le reçoit s’entraîne aux trois étapes (3 min). Pour finir, deux ou trois retours : qu’est-ce qui était le plus difficile, donner ou recevoir ? Quand ce skill pourrait-il aider ? Expliquer : qui minimise un compliment dit en fait à l’autre : tu te trompes. Qui dit merci le laisse arriver (3 min).",
+            "sagen": [
+              "Écrivez ce que la personne a fait aujourd’hui : tu as vraiment posé des questions au bingo. Personne n’a deviné ton mensonge.",
+              "Qui reçoit un compliment dit seulement : merci."
+            ],
+            "punkte": [
+              "Regarder : regarde la personne un instant.",
+              "Dire merci : un merci suffit – sans « oh, c’était rien ».",
+              "Laisser agir : rester un moment silencieux au lieu de minimiser."
+            ],
+            "tipp": "Écrire au tableau trois ou quatre exemples que chacun peut recopier : tu as bien écouté. Tu m’as fait rire. Tu m’as aidé au bingo. L’apparence, les vêtements et le corps restent en dehors – ainsi, personne ne se sent jugé.",
+            "wennEsKippt": "Si un compliment est ironique ou porte sur l’apparence, rendre gentiment le post-it : qu’est-ce que la personne a fait aujourd’hui ? Si fusent des remarques comme « amoureux ! », rester calme : il s’agit seulement de ce que quelqu’un a fait. Si un jeune ne veut pas écrire, l’enseignant·e écrit soi-même un post-it pour son voisin – personne ne repart les mains vides. Qui n’ose pas dire merci fait un signe de tête ; ça compte aussi."
+          },
+          {
+            "titel": "Skills-Pass, tour éclair et mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Skills-Pass (2 min) : écrire la question au tableau – qu’est-ce que j’ai appris aujourd’hui sur la classe qui m’a surpris ? Ensuite, le tampon ; qui le souhaite colle son post-it à côté. Tour éclair (2 min) : chacun dit un mot sur la séance ; l’enseignant·e commence et donne le rythme. Pour finir, annoncer la mission de la semaine (elle figure dans le cahier) et la prochaine séance (1 min).",
+            "sagen": [
+              "Un mot sur aujourd’hui – vite et sans explication. On peut dire “je passe”."
+            ],
+            "tipp": "La mission prolonge la séance : une question, une précision. La semaine prochaine, on raconte comment ça s’est passé – pas ce que l’autre a raconté."
+          }
+        ],
+        "bruecke": "La semaine prochaine, vous allez travailler en îlots sur des défis qu’on ne réussit qu’ensemble – puis regarder ce qui aide votre classe.",
+        "mission": "Cette semaine, pose une question à quelqu’un de ta classe à qui tu as encore peu parlé – et demande une précision. Qu’as-tu appris ?",
+        "hintergrund": "Au début, les membres d’un groupe vérifient surtout s’ils en font partie et si le cadre est sûr ; Tuckman (1965) appelle cette première phase l’orientation. Des exercices peu risqués, avec beaucoup de mouvement et des règles claires, aident parce qu’ils permettent le contact sans forcer les confidences : qui va dans un coin montre une préférence, pas une histoire. Qui voit que d’autres vivent des choses semblables se sent moins seul – Yalom et Leszcz (2005) comptent cette expérience parmi les facteurs d’efficacité des groupes. Le sentiment d’appartenance fait partie, avec l’autonomie et la compétence, des besoins psychologiques fondamentaux (Deci & Ryan, 2000) ; c’est la condition pour aborder plus tard des sujets difficiles. La règle de la relance exerce au passage l’intérêt pour l’autre et l’écoute. Accepter un compliment sans le repousser est difficile pour beaucoup de jeunes ; on l’exerce ici comme premier skill relationnel.",
+        "quellen": [
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+          "Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "achtung": "Les jeux pour faire connaissance montrent qui fait partie du groupe : qui est seul dans un coin, que personne n’interroge au bingo, de quel prénom on se moque. Ne pas le commenter devant la classe, mais compenser discrètement (binôme, poste fixe) et prendre des nouvelles ensuite. Pas de questions sur la famille, l’origine, la religion, le corps ou les notes ; on peut toujours dire « je passe ». Si un jeune écrit quelque chose de grave, ne pas approfondir, mais lui parler en tête-à-tête ; en cas de signes de violence ou d’automutilation, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
+        "differenzierung": {
+          "leichter": "Les réponses des questions des coins et les mots-clés pour les trois phrases sont au tableau, si possible avec de petits dessins. Au bingo, circuler en binôme avec quelqu’un qui lit bien ; comme précision, « Lequel ? » ou « Quoi ? » suffit, comme mot-clé un mot ou un petit dessin.",
+          "schwerer": "Au bingo, poser une deuxième question pour chaque case et chercher, lors de la mise en commun, un point commun que presque toute la classe partage. Ou inventer une autre question pour les coins, qui ne met personne mal à l’aise, et la poser à la classe."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), coins avec trois questions (8 min), « Trouve quelqu’un qui… » avec précisions et courte mise en commun (22 min), accepter un compliment en îlot (8 min), Skills-Pass et mission (7 min). La ligne, « deux vérités, un mensonge » et l’affiche sont supprimées ; le jeu de devinettes peut ouvrir la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-finde-jemanden",
+      "bereich": "skills",
+      "thema": "ankommen",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe",
+        "klasse"
+      ],
+      "dauer": "45 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Kennenlernen",
+        "Menschen-Bingo",
+        "Nachfragen",
+        "Gemeinsamkeiten",
+        "Förderfach"
+      ],
+      "bild": "icon:friends",
+      "kurs": [
+        "ff7-e03"
+      ],
+      "de": {
+        "titel": "Finde jemanden, der …",
+        "untertitel": "Raten, fragen, nachhaken – und herausfinden, was ihr gemeinsam habt",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Zwei Wahrheiten, eine Lüge: Schreib drei kurze Sätze über dich. Zwei stimmen, einer ist erfunden.",
+            "hinweis": "Nimm Dinge, die man dir nicht ansieht: ein Talent, ein Missgeschick, ein Rekord. Nichts über Familie, Körper oder Noten.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "1.",
+              "2.",
+              "3."
+            ],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Geh herum und frag. Sagt jemand Ja, schreibt die Person ihren Vornamen ins Feld. Frag einmal nach und notiere ein Stichwort.",
+            "hinweis": "Jeder Vorname nur einmal. Ein Feld zählt nur mit Vorname und Stichwort.",
+            "symbole": [
+              "gruppe",
+              "sprechen"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Finde jemanden, der …",
+              "Vorname",
+              "Nachgefragt: Stichwort"
+            ],
+            "breiten": [
+              2.5,
+              1.1,
+              1.6
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "… heute schon über etwas gelacht hat",
+                "",
+                ""
+              ],
+              [
+                "… im selben Monat Geburtstag hat wie du",
+                "",
+                ""
+              ],
+              [
+                "… gern kocht oder backt",
+                "",
+                ""
+              ],
+              [
+                "… ein Lied auswendig mitsingen kann",
+                "",
+                ""
+              ],
+              [
+                "… einen Sport macht, den du noch nie ausprobiert hast",
+                "",
+                ""
+              ],
+              [
+                "… ein Haustier hat oder gern eins hätte",
+                "",
+                ""
+              ],
+              [
+                "… dir ein Wort in einer Sprache beibringen kann, die du nicht sprichst",
+                "",
+                ""
+              ],
+              [
+                "… dir eine Serie, ein Buch oder ein Spiel empfehlen kann",
+                "",
+                ""
+              ]
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "info",
+                "symbol": "tipp",
+                "titel": "Gute Nachfragen",
+                "text": "Was genau? · Wie war das? · Warum gerade das? · Seit wann? · Wer hat dir das gezeigt?"
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "hilfe",
+                "titel": "Du entscheidest, was du teilst.",
+                "text": "Bei jeder Frage darfst du „weiter“ sagen. Wer „weiter“ sagt, wird nicht weiter gefragt."
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Nach der Runde: Was hat dich überrascht?",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Überrascht hat mich, dass …",
+              "Mit … habe ich gemeinsam, dass …"
+            ],
+            "linien": 1
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen kommen in Bewegung ins Gespräch, raten, welcher von drei Sätzen erfunden ist, und üben, bei jeder Antwort einmal nachzufragen. Die Felder sind bewusst harmlos: Familie, Herkunft, Religion, Körper und Noten kommen nicht vor.",
+          "ablauf": [
+            "Einheit 3, Schritt 4 (15 Min.): Aufgabe 1 allein, dann in der Tischgruppe raten.",
+            "Schritt 6 (25 Min.): Nachfragen vormachen, Regeln lesen, Runde mit Aufgabe 2; jeder Vorname nur einmal.",
+            "Schritt 7 (10 Min.): Aufgabe 3 allein, dann Gemeinsamkeiten für das Klassenplakat sammeln."
+          ],
+          "hintergrund": "Zu Beginn prüfen die Mitglieder einer Gruppe vor allem, ob sie dazugehören und wie sicher der Rahmen ist (Tuckman, 1965). Kleine, ungefährliche Fragen in Bewegung senken die Hemmschwelle, weil niemand vor allen sprechen muss. Gemeinsamkeiten zu entdecken, stärkt die Verbundenheit, eines der psychologischen Grundbedürfnisse (Deci & Ryan, 2000). Die Nachfrage-Regel macht aus dem Unterschriftensammeln ein Gespräch.",
+          "quellen": [
+            "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          ],
+          "material": "Schülerheft, Stifte"
+        }
+      },
+      "fr": {
+        "titel": "Trouve quelqu’un qui…",
+        "untertitel": "Deviner, demander, relancer – et découvrir ce que vous avez en commun",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Deux vérités, un mensonge : écris trois courtes phrases sur toi. Deux sont vraies, une est inventée.",
+            "hinweis": "Choisis des choses qu’on ne voit pas sur toi : un talent, une gaffe, un record. Rien sur la famille, le corps ou les notes.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "1.",
+              "2.",
+              "3."
+            ],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Circule et pose tes questions. Si quelqu’un répond oui, il écrit son prénom dans la case. Demande une précision et note un mot-clé.",
+            "hinweis": "Chaque prénom une seule fois. Une case ne compte qu’avec un prénom et un mot-clé.",
+            "symbole": [
+              "gruppe",
+              "sprechen"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Trouve quelqu’un qui…",
+              "Prénom",
+              "Précision : mot-clé"
+            ],
+            "breiten": [
+              2.5,
+              1.1,
+              1.6
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "… a déjà ri de quelque chose aujourd’hui",
+                "",
+                ""
+              ],
+              [
+                "… a son anniversaire le même mois que toi",
+                "",
+                ""
+              ],
+              [
+                "… aime cuisiner ou faire des gâteaux",
+                "",
+                ""
+              ],
+              [
+                "… connaît une chanson par cœur",
+                "",
+                ""
+              ],
+              [
+                "… fait un sport que tu n’as jamais essayé",
+                "",
+                ""
+              ],
+              [
+                "… a un animal ou aimerait en avoir un",
+                "",
+                ""
+              ],
+              [
+                "… peut t’apprendre un mot dans une langue que tu ne parles pas",
+                "",
+                ""
+              ],
+              [
+                "… peut te conseiller une série, un livre ou un jeu",
+                "",
+                ""
+              ]
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "info",
+                "symbol": "tipp",
+                "titel": "Bonnes questions pour relancer",
+                "text": "Quoi exactement ? · Comment c’était ? · Pourquoi ça ? · Depuis quand ? · Qui t’a appris ?"
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "hilfe",
+                "titel": "Tu décides de ce que tu partages.",
+                "text": "À chaque question, tu peux dire « je passe ». Qui dit « je passe » n’est pas questionné davantage."
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Après le tour : qu’est-ce qui t’a surpris ?",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ce qui m’a surpris, c’est que…",
+              "Avec …, j’ai en commun que…"
+            ],
+            "linien": 1
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes engagent la conversation en bougeant, devinent laquelle de trois phrases est inventée et s’exercent à demander une précision après chaque réponse. Les cases sont volontairement anodines : la famille, l’origine, la religion, le corps et les notes n’y figurent pas.",
+          "ablauf": [
+            "Séance 3, étape 4 (15 min) : exercice 1 seul, puis deviner en îlot.",
+            "Étape 6 (25 min) : montrer la relance, lire les règles, tour avec l’exercice 2 ; chaque prénom une seule fois.",
+            "Étape 7 (10 min) : exercice 3 seul, puis rassembler les points communs pour l’affiche de la classe."
+          ],
+          "hintergrund": "Au début, les membres d’un groupe vérifient surtout s’ils en font partie et si le cadre est sûr (Tuckman, 1965). De petites questions sans risque, posées en bougeant, abaissent le seuil, car personne ne doit parler devant tout le monde. Découvrir des points communs renforce le sentiment d’appartenance, l’un des besoins psychologiques fondamentaux (Deci & Ryan, 2000). La règle de la relance transforme la collecte de signatures en conversation.",
+          "quellen": [
+            "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          ],
+          "material": "Cahier de l’élève, stylos"
+        }
+      }
+    }
+  ]
+}

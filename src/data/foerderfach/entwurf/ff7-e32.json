@@ -1,0 +1,1083 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e32",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-test-countdown"
+      ],
+      "woerter": [
+        {
+          "de": "der Test",
+          "fr": "le devoir en classe"
+        },
+        {
+          "de": "die Aufregung",
+          "fr": "le trac"
+        },
+        {
+          "de": "rückwärts planen",
+          "fr": "planifier à rebours"
+        },
+        {
+          "de": "sich abfragen",
+          "fr": "se tester"
+        },
+        {
+          "de": "der Blackout",
+          "fr": "le trou de mémoire"
+        },
+        {
+          "de": "die Note",
+          "fr": "la note"
+        }
+      ],
+      "de": {
+        "titel": "Ruhig durch die Testphase",
+        "kurz": "Woher Prüfungsstress kommt und was ihn kleiner macht: das Lernen vom Testtag rückwärts planen, Test-Gedanken prüfen, einen Blackout proben und einen Skill üben, den niemand sieht.",
+        "ziele": [
+          "erklären mit der Test-Waage, woher Prüfungsstress kommt und was ihn kleiner macht",
+          "planen das Lernen für einen Test rückwärts, mit Selbsttests",
+          "prüfen Test-Gedanken und finden Sätze, die wirklich helfen",
+          "üben einen Blackout-Plan und den Skill Füße, Atem, Stift"
+        ],
+        "material": [
+          "Schülerheft, Stempel für den Pass",
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "20 kleine Zettel, eine Schachtel",
+          "Klebezettel in Gelb und Grün",
+          "Moderationskarten, 6 je Gruppe",
+          "Test-Gedanken auf sechs A4-Blättern",
+          "Mini-Quiz, abgedeckt (Schritt 7)",
+          "Stoppuhr, dicke Stifte, Magnete"
+        ],
+        "vorbereitung": [
+          "Beim Régent die Testtermine erfragen und klären, ob jemand gerade unter Druck steht.",
+          "An die Tafel eine Linie von 0 bis 100 zeichnen (Schritt 1).",
+          "Test-Waage und Testtermine an die Tafel schreiben (Schritt 3).",
+          "Die sechs Test-Gedanken aus Schritt 6 groß auf A4-Blätter schreiben.",
+          "Mini-Quiz (Schritt 7) auf ein Plakat schreiben und abdecken."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Gefühl, Anspannung und die Test-Zahl"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick: Welcher Test kommt als Nächstes?"
+          },
+          {
+            "min": "15–30",
+            "phase": "input",
+            "titel": "Woher Prüfungsstress kommt: die Test-Waage"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Mein Lernplan rückwärts"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: bis 20 zählen"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Test-Gedanken auf dem Prüfstand"
+          },
+          {
+            "min": "65–75",
+            "phase": "uebung",
+            "titel": "Blackout-Probe mit Mini-Quiz"
+          },
+          {
+            "min": "75–85",
+            "phase": "uebung",
+            "titel": "Mein Countdown für den Testtag"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Füße, Atem, Stift"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Mission und Ausblick"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühl, Anspannung und die Test-Zahl",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt, zwei Freiwillige nennen Gefühl und Zahl (3 Min.). Dann eine zweite Zahl, verdeckt: Wie hoch wäre eure Anspannung, wenn morgen ein Test wäre? Jede Person schreibt nur die Zahl auf einen Zettel, faltet ihn und wirft ihn in die Schachtel (2 Min.). Die Lehrkraft liest die Zahlen vor, ihre eigene dazu; eine freiwillige Person macht für jede ein Kreuz an der Linie von 0 bis 100 an der Tafel (3 Min.). Dann schaut die Klasse auf die Linie: Wo liegen die meisten Kreuze? Zwei Stimmen sagen, was ihnen auffällt (2 Min.).",
+            "sagen": [
+              "Schreibt nur eine Zahl, keinen Namen. Niemand erfährt, welcher Zettel eurer ist.",
+              "Schaut auf die Linie: Mit eurer Aufregung seid ihr nicht allein – und manche sind ganz entspannt. Beides ist in Ordnung."
+            ],
+            "tipp": "Die eigene Zahl kurz erklären, etwa: Meine 80 ist die Zahl vor meiner Führerscheinprüfung – an das Gefühl im Bauch erinnere ich mich bis heute. Prüfungsstress kennen auch Erwachsene, und man kann lernen, damit umzugehen.",
+            "wennEsKippt": "Stehen Scherzzahlen wie 1000 auf den Zetteln, sie trotzdem vorlesen und gelassen ans Ende der Linie setzen: Manche zeigen Aufregung lieber mit einem Witz. Steht auf einem Zettel ein Satz statt einer Zahl, etwa „Ich halte das nicht mehr aus“, ihn nicht vorlesen, sondern beiseitelegen; am Ende der Stunde allen anbieten, danach oder beim SePAS zu reden, und den SePAS noch am selben Tag informieren."
+          },
+          {
+            "titel": "Rückblick: Welcher Test kommt als Nächstes?",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Per Daumen nach der Wochen-Mission fragen – hoch, Mitte, runter: Wer hat seinen kleinen Schritt ausprobiert? Eine Stimme erzählt, wie es lief; auch „zweimal geklappt“ zählt. Dann auf die Testtermine an der Tafel zeigen: Jede Person wählt einen Test, der sie wirklich beschäftigt, und trägt Fach und Datum oben auf dem Blatt ein. Wer gerade keinen hat, nimmt den letzten, der schwierig war. Das Thema der Stunde nennen: Ruhig durch die Testphase.",
+            "sagen": [
+              "Nehmt einen Test, der euch wirklich beschäftigt – nicht den leichtesten.",
+              "Heute geht es nicht um Noten, sondern um das, was ihr selbst in der Hand habt."
+            ],
+            "tipp": "Wer seinen kleinen Schritt aus der letzten Stunde beim Schlaf gewählt hat, ist schon mitten im Thema: Eine ausgeschlafene Nacht vor dem Test gehört zum Lernplan.",
+            "blatt": "ff7-test-countdown"
+          },
+          {
+            "titel": "Woher Prüfungsstress kommt: die Test-Waage",
+            "dauer": 15,
+            "phase": "input",
+            "text": "An der Tafel ist eine Waage gezeichnet: links „Das macht Druck“, rechts „Das habe ich dagegen“. Jede Tischgruppe schreibt in drei Minuten auf Klebezettel, was Tests in ihrem Alter stressig macht (gelb) und was hilft (grün), ein Gedanke pro Zettel. Dann klebt je Gruppe eine Person die Zettel an die Waage und liest zwei vor (4 Min.). Im Gespräch mit der Klasse erklären (5 Min.): Stress entsteht, wenn die linke Seite schwerer wirkt als die rechte. Also gibt es zwei Hebel – links leichter machen: früher anfangen, den Stoff teilen, nachfragen, was drankommt; rechts schwerer machen: Lernmethoden, Skills, Schlaf, Hilfe. Zum Schluss das Tafelbild zur Anspannung (3 Min.): Etwas Aufregung macht wach, zu viel macht den Kopf leer.",
+            "sagen": [
+              "Was macht Tests in eurem Alter stressig? Schreibt es allgemein auf, nicht über einzelne Personen.",
+              "Etwas Aufregung ist kein Fehler – sie macht wach. Schwierig wird es erst, wenn sie über 70 steigt.",
+              "Eine Note sagt, wie ein Test an einem Tag gelaufen ist – nicht, wer ihr seid."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Anspannung",
+                "Beim Lernen und im Test"
+              ],
+              "zeilen": [
+                [
+                  "0–30 · ruhig",
+                  "Klarer Kopf – aber oft fehlt der Anstoß, überhaupt anzufangen."
+                ],
+                [
+                  "30–70 · wach",
+                  "Angespannt und wach: gut zum Lernen und für den Test."
+                ],
+                [
+                  "70–100 · zu viel",
+                  "Der Kopf wird leer, ein Blackout droht: erst runter, dann weiter."
+                ]
+              ]
+            },
+            "tipp": "Zettel wie „Eltern“, „Bulletin“ oder „alle schauen zu“ gehören an die Waage, ohne sie zu kommentieren: Sie zeigen, wie viel Gewicht Jugendliche tragen. Den Blick danach ruhig auf die rechte Seite lenken – auf das, was sich beeinflussen lässt.",
+            "wennEsKippt": "Kommt nur „Mir sind Tests egal“, das nicht widerlegen: Gleichgültigkeit schützt oft vor Enttäuschung. Nachfragen, wie es am Morgen vor einem Test im Bauch aussieht, und weitermachen. Steht auf einem Zettel etwas, das auf Angst vor Strafe oder Gewalt zu Hause hindeutet, ihn nicht vorlesen, unauffällig abnehmen und noch am selben Tag mit dem SePAS besprechen."
+          },
+          {
+            "titel": "Mein Lernplan rückwärts",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Zuerst an der Tafel ein Beispiel gemeinsam planen (5 Min.): Bruna schreibt am Freitag einen Test in Französisch, heute ist Montag. Rückwärts fragen: Was ist am Donnerstag dran, was am Mittwoch, was am Dienstag – und was noch heute? Dabei zwei Regeln erklären: lieber drei kurze Lernzeiten an verschiedenen Tagen als ein langer Abend davor, und sich selbst testen statt nur durchlesen. Dann allein (8 Min.): Aufgabe 1 für den eigenen Test, vom Testtag aus rückwärts; jede Zeile bekommt einen Eintrag in „So teste ich mich“. Herumgehen und helfen, zu große Brocken zu teilen. Zu zweit (2 Min.): Die Person daneben prüft nur, ob man weiß, wann es losgeht.",
+            "sagen": [
+              "Dreimal durchlesen fühlt sich gut an, bringt aber wenig. Heft zu und aufschreiben, was noch da ist – das wirkt.",
+              "Welcher Brocken ist so groß, dass ihr ihn vor euch herschiebt? Den teilen wir jetzt."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Brunas Plan",
+                "Was und wie?"
+              ],
+              "zeilen": [
+                [
+                  "Montag (heute)",
+                  "Im Heft markieren, was drankommt; die Vokabeln auf Karteikarten schreiben."
+                ],
+                [
+                  "Dienstag",
+                  "Vokabeln: Karte lesen, Antwort sagen, umdrehen, prüfen – zehn Minuten."
+                ],
+                [
+                  "Mittwoch",
+                  "Grammatik: zwei Übungen ohne Lösung noch einmal machen, dann vergleichen."
+                ],
+                [
+                  "Donnerstag",
+                  "Alles einmal selbst abfragen; was noch hakt, markieren; früh ins Bett."
+                ],
+                [
+                  "Freitag (Test)",
+                  "Etwas essen oder trinken, rechtzeitig los, vor der ersten Aufgabe Füße, Atem, Stift."
+                ]
+              ]
+            },
+            "tipp": "Wer nicht weiß, was im Test drankommt, schreibt als ersten Schritt: bei der Lehrkraft nachfragen – das ist schon ein echter Teil des Plans. Wichtiger als ein perfekter Plan ist der erste Termin: Wann genau geht es los?",
+            "wennEsKippt": "Sagt jemand, er lerne nie und brauche keinen Plan, nicht diskutieren: einen Plan für nur zwei Tage mit je zehn Minuten verlangen. Wirkt jemand beim Planen überfordert oder sagt „Ich schaff das eh nicht“, den Plan gemeinsam auf eine Zeile verkleinern und nach der Stunde kurz nachfragen.",
+            "blatt": "ff7-test-countdown"
+          },
+          {
+            "titel": "Bewegungspause: bis 20 zählen",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Fenster auf, alle stehen hinter ihrem Stuhl und schütteln Hände, Arme und Beine aus (1 Min.). Dann zählt die Klasse gemeinsam bis 20: Jede Person darf jederzeit die nächste Zahl sagen, ohne Absprache und ohne Zeichen; sprechen zwei gleichzeitig, beginnt die Klasse wieder bei 1 (4 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Sprechen zwei gleichzeitig, fangen wir wieder bei 1 an – ohne Schuldige."
+            ],
+            "tipp": "Das Spiel passt zum Thema: Etwas geht schief, die Klasse fängt ruhig neu an. Genau das braucht man im Test, wenn eine Aufgabe danebengeht.",
+            "wennEsKippt": "Ruft jemand absichtlich dazwischen, nach zwei Versuchen ohne Kommentar zum Ausschütteln zurückkehren und das Spiel in einer anderen Stunde wiederholen."
+          },
+          {
+            "titel": "Test-Gedanken auf dem Prüfstand",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Das Prüfen von Gedanken kennt die Klasse aus Kapitel 8 – heute geht es um Sätze, die vor und während eines Tests im Kopf auftauchen. Jede Tischgruppe hat Moderationskarten und einen dicken Stift. Die Lehrkraft hält einen Test-Gedanken hoch und liest ihn vor; die Gruppen haben 90 Sekunden für einen Satz, der realistisch ist und im Test hilft. Auf „Stopp“ bringt eine Person der Gruppe die Karte an die Tafel, in jeder Runde eine andere. Die Lehrkraft liest die Karten vor, die Klasse prüft mit dem Daumen, und der beste Satz bekommt einen Stern. Fünf Runden (10 Min.), die sechste nur, wenn Zeit bleibt. Zum Schluss allein Aufgabe 2 auf dem Blatt: ein eigener Gedanke, der bremst (3 Min.).",
+            "sagen": [
+              "Nicht schönreden, sondern prüfen: Würdet ihr den Satz am Morgen vor dem Test wirklich glauben?",
+              "Ein Satz wie ‚Ich bin der Beste‘ zählt nicht. Ein guter Satz ist realistisch und schaut auf das, was ihr selbst in der Hand habt."
+            ],
+            "punkte": [
+              "„Ich falle sowieso durch.“",
+              "„Alle anderen haben mehr gelernt.“",
+              "„Wenn ich einen Blackout habe, ist alles vorbei.“",
+              "„Wenn die Note schlecht ist, bin ich dumm.“",
+              "„Ich muss alles wissen.“",
+              "„Ich habe zu spät angefangen – jetzt lohnt es sich nicht mehr.“"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Test-Gedanke",
+                "Ein hilfreicher Satz"
+              ],
+              "zeilen": [
+                [
+                  "Ich falle sowieso durch.",
+                  "Ich weiß noch nicht, wie es ausgeht. Ich zeige, was ich kann."
+                ],
+                [
+                  "Alle anderen haben mehr gelernt.",
+                  "Ich weiß nicht, was die anderen gemacht haben. Ich schaue auf meine Aufgaben."
+                ],
+                [
+                  "Wenn ich einen Blackout habe, ist alles vorbei.",
+                  "Ein Blackout geht vorbei. Ich habe einen Plan dafür."
+                ],
+                [
+                  "Wenn die Note schlecht ist, bin ich dumm.",
+                  "Eine Note zeigt, wie dieser Test lief – nicht, wer ich bin."
+                ],
+                [
+                  "Ich muss alles wissen.",
+                  "Niemand weiß alles. Ich hole mir die Punkte, die ich kriegen kann."
+                ],
+                [
+                  "Jetzt lohnt es sich nicht mehr.",
+                  "Jede Stunde, die ich jetzt noch lerne, zählt."
+                ]
+              ]
+            },
+            "tipp": "Beim vierten Gedanken länger bleiben: Viele in der Voie de préparation haben ihn schon oft gedacht. Die besten Sätze auf ein Plakat übertragen, das bis zum Ende der Testphase hängt; wer mag, schreibt seinen auf ein Kärtchen für die Federmappe.",
+            "wennEsKippt": "Wird das Rennen wichtiger als die Sätze, das Tempo herausnehmen: Alle schreiben in Ruhe, dann wird gemeinsam geprüft, ohne Sterne. Kommen nur Scherzsätze wie „Ich schreib einfach ab“, die Karte trotzdem vorlesen und die Gruppe fragen, was dieser Satz am Testmorgen wirklich bringt.",
+            "blatt": "ff7-test-countdown"
+          },
+          {
+            "titel": "Blackout-Probe mit Mini-Quiz",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Zuerst den Blackout-Plan an die Tafel schreiben und kurz besprechen (3 Min.): merken, dass nichts mehr geht – zweimal lang ausatmen – die Aufgabe markieren – zur nächsten – später zurück. Dann die Probe: Alle räumen den Tisch bis auf einen Stift und einen Zettel leer. Ankündigen: zehn leichte Fragen, zwei Minuten Zeit, und eine Frage ist mit Absicht nicht lösbar. Das Quiz aufdecken und die Zeit stoppen (2 Min.). Danach auflösen (5 Min.): Wer ist bei Frage 6 hängen geblieben? Wer hat weitergemacht – und wie? Es gibt keine Punkte, und die Zettel werden nicht eingesammelt.",
+            "sagen": [
+              "Eine Frage ist mit Absicht nicht lösbar. Eure Aufgabe ist nicht, alles zu wissen, sondern weiterzumachen.",
+              "Wie hat es sich angefühlt, eine Frage einfach stehen zu lassen?"
+            ],
+            "punkte": [
+              "1. Wie viel ist 12 + 15?",
+              "2. Nenne drei Farben.",
+              "3. Welcher Tag kommt nach Dienstag?",
+              "4. Wie viele Minuten hat eine Stunde?",
+              "5. Schreib deinen Vornamen rückwärts.",
+              "6. Bilde ein deutsches Wort nur aus diesen Buchstaben: M, R, T, K, S. (nicht lösbar – es fehlen Vokale)",
+              "7. Wie viel ist 5 × 6?",
+              "8. Nenne ein Tier mit vier Beinen.",
+              "9. Wie viele Tage hat eine Woche?",
+              "10. Schreib eine Zahl zwischen 10 und 20."
+            ],
+            "tipp": "Für Jugendliche, die die Unterrichtssprache noch lernen, gehört das Gefühl, eine Frage nicht zu verstehen, zum Alltag – sie sind hier oft die Profis im Weitermachen. Wer mag, erzählt, wie er das sonst macht.",
+            "wennEsKippt": "Ärgert sich jemand über die unlösbare Frage, den Ärger würdigen: Genau dieses Gefühl kommt im echten Test auch. Dann fragen, was geholfen hat weiterzumachen – oder was geholfen hätte. Ruft jemand Antworten in den Raum, kurz stoppen: Im Test ist es still, hier auch."
+          },
+          {
+            "titel": "Mein Countdown für den Testtag",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Kurze Szene zum Einstieg (3 Min.): vor der Tür des Testraums. Die Lehrkraft oder eine freiwillige Person spielt den aufgeregten Mitschüler, der alle mit Fragen überschüttet („Hast du Kapitel 4 gelernt? Das kommt sicher dran.“); zwei Freiwillige probieren nacheinander, wie man sich davor schützt – kurz zur Seite gehen, sagen „Ich will jetzt nicht über den Stoff reden“, Fingeratmung. Dann allein (5 Min.): Aufgabe 3 auf dem Blatt – in jedes Feld des Countdowns schreiben, was man selbst tut: am Abend davor, am Morgen, vor der Tür, in den ersten Minuten. Zum Schluss nennen zwei, drei Freiwillige ihren besten Punkt (2 Min.).",
+            "sagen": [
+              "Was tut ihr am Abend davor – und was lasst ihr lieber?",
+              "Vor der Tür reden alle über den Stoff. Was macht ihr, wenn euch das nervös macht?"
+            ],
+            "tipp": "Die Rolle des aufgeregten Mitschülers am besten jemandem geben, der gern übertreibt: Hier ist das erwünscht, und alle sehen, wie ansteckend Panik vor der Tür ist. Wer in der letzten Stunde einen Schritt beim Schlaf gewählt hat, trägt ihn beim Abend davor ein.",
+            "wennEsKippt": "Kommt „Ich lerne in der Nacht davor durch“, nicht verbieten, sondern fragen, wie es am nächsten Morgen um acht aussieht und was davon im Kopf bleibt. Erzählt jemand, dass er vor Tests nie schlafen kann oder Bauchweh hat, das als häufig würdigen und nach der Stunde fragen, ob es oft so ist; bei Bedarf gemeinsam mit dem SePAS weitersehen.",
+            "blatt": "ff7-test-countdown"
+          },
+          {
+            "titel": "Skill: Füße, Atem, Stift",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Alle sitzen wie im Test am Tisch, den Stift in der Hand, das Blatt vor sich. Ankündigen: ein Skill für den Moment, in dem im Test die Anspannung hochgeht – und niemand im Raum soll merken, dass ihr ihn macht. Die drei Schritte einzeln vormachen und gemeinsam üben (je 1 Min.), dann zweimal am Stück ohne Ansage, jede Person in ihrem Tempo (3 Min.). Danach zwei, drei Rückmeldungen: Hat jemand beim Nachbarn etwas bemerkt? Wann im Test würdet ihr das brauchen? Zum Schluss schreibt jede Person in Aufgabe 4 ihren Blackout-Plan als Wenn-dann-Satz und darunter ihren Skill (2 Min.).",
+            "sagen": [
+              "Füße, Atem, Stift. Niemand sieht es, und es dauert keine halbe Minute.",
+              "Hat jemand bei seinem Nachbarn etwas bemerkt?"
+            ],
+            "punkte": [
+              "Füße: Beide Füße fest in den Boden drücken, fünf Sekunden halten, lösen.",
+              "Atem: Zweimal lang ausatmen – vier Zählzeiten ein, sechs aus.",
+              "Stift: Den Stift fest drücken, bis die Hand warm wird, loslassen und die nächste Aufgabe lesen."
+            ],
+            "tipp": "Langes Ausatmen bremst den Körper, Füße und Stift holen die Aufmerksamkeit aus dem Kopf zurück an den Tisch. Den Skill in den nächsten Stunden vor jedem echten Test einmal gemeinsam machen – dann sitzt er.",
+            "wennEsKippt": "Wird gekichert oder übertrieben laut geatmet, ruhig weiterzählen und selbst mitmachen; beim zweiten Durchgang ohne Ansage wird es meist still, weil es zum Spiel wird, unsichtbar zu bleiben. Wem beim Atmen schwindlig oder unwohl wird, atmet normal weiter und macht nur Füße und Stift.",
+            "blatt": "ff7-test-countdown"
+          },
+          {
+            "titel": "Skills-Pass, Mission und Ausblick",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Die Leitfrage an die Tafel: Welcher Skill oder welcher Satz kommt mit in meinen nächsten Test? Alle schreiben ihren Satz in den Skills-Pass (2 Min.) und bekommen den Stempel. Daumen-Blitzlicht: Wie fühlt ihr euch jetzt beim Gedanken an den nächsten Test – ruhiger, gleich oder unruhiger als am Anfang? Dann die Wochen-Mission ansagen (steht im Heft) und erklären, dass die Sätze unten auf dem Blatt erst nach dem Test ausgefüllt werden. Zum Schluss der Ausblick auf das letzte Kapitel.",
+            "sagen": [
+              "Nach den Tests frage ich, was geholfen hat – nicht nach der Note."
+            ],
+            "tipp": "Nicht nach Noten fragen, auch nicht im Scherz. In der nächsten Stunde reicht eine kurze Frage: Wer hat Füße, Atem, Stift im Test schon ausprobiert?"
+          }
+        ],
+        "bruecke": "Nächste Woche beginnt das letzte Kapitel: In Gruppen wählt ihr ein Thema aus diesem Jahr und plant dazu ein kurzes Stück oder Video.",
+        "mission": "Halte den ersten Termin aus deinem Lernplan ein – oder probier Füße, Atem, Stift einmal aus, wenn du in der Schule nervös wirst. Was hat es gebracht?",
+        "hintergrund": "Prüfungsangst hat zwei Seiten: sorgenvolle Gedanken wie „Ich falle sowieso durch“ und körperliche Aufregung. Vor allem die Sorgen binden Aufmerksamkeit, die dann für die Aufgaben fehlt (Zeidner, 1998). Nach dem Stressmodell von Lazarus und Folkman (1984) entsteht Stress, wenn eine Anforderung größer wirkt als die eigenen Mittel. Die Test-Waage macht diese Bewertung sichtbar, und die Stunde setzt an beiden Seiten an: Die Aufgabe wird durch Planen kleiner, die Mittel werden durch Lernmethoden und Skills größer. Beim Lernen sind zwei Methoden besonders gut belegt: sich selbst abfragen und das Lernen auf mehrere Tage verteilen (Dunlosky et al., 2013). Gerade in der Voie de préparation haben viele schon schlechte Erfahrungen mit Tests gemacht; deshalb richtet die Stunde den Blick auf das, was man beeinflussen kann, und nicht auf die Note.",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58."
+        ],
+        "achtung": "Tests und Noten sind für viele ein wunder Punkt, gerade in der Voie de préparation. Nicht nach Noten, Bulletins oder Reaktionen der Eltern fragen; was jemand davon erzählt, nicht vor der Klasse vertiefen. Sätze wie „Ich bin eh zu dumm“ ernst nehmen. Hinter starker Prüfungsangst stecken manchmal Schlafprobleme, Druck zu Hause oder anhaltende Niedergeschlagenheit: nach der Stunde ansprechen, Régent und SePAS einbeziehen. Sagt jemand, er halte den Druck nicht mehr aus, oder deutet an, nicht mehr leben zu wollen: noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112.",
+        "differenzierung": {
+          "leichter": "Den Lernplan nur für zwei Tage schreiben; ein Tandem mit einer Person, die gut plant, hilft beim Teilen der Brocken. Bei den Test-Gedanken darf die Gruppe einen Satz von der Tafel verbessern, statt neu zu schreiben. Wer die Unterrichtssprache noch lernt, schreibt den Plan in der eigenen Sprache und lernt Füße, Atem, Stift durch Vor- und Nachmachen.",
+          "schwerer": "Für Bruna die Waage weiterdenken: Was kann sie bis Freitag rechts dazulegen? Oder einen zweiten Lernplan für einen weiteren Test schreiben. In der Gedanken-Runde die Moderation übernehmen und bei jedem Satz fragen: Ist das realistisch – und schaut es auf das, was man selbst beeinflussen kann?"
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit der verdeckten Test-Zahl (5 Min.), die Test-Waage mit Tafelbild (10 Min.), Mein Lernplan rückwärts (15 Min.), Blackout-Probe mit Mini-Quiz (10 Min.), Füße, Atem, Stift (5 Min.), Skills-Pass und Mission (5 Min.). Die Test-Gedanken und der Countdown entfallen oder werden in der nächsten Stunde nachgeholt."
+      },
+      "fr": {
+        "titel": "Rester calme pendant les devoirs en classe",
+        "kurz": "D’où vient le stress des devoirs en classe et comment l’alléger : planifier ses révisions à rebours, examiner ses pensées, simuler un trou de mémoire et s’entraîner à un skill invisible.",
+        "ziele": [
+          "expliquent avec la balance d’où vient le stress des devoirs et ce qui l’allège",
+          "planifient leurs révisions à rebours, en se testant eux-mêmes",
+          "examinent des pensées d’avant le devoir et trouvent des phrases qui aident",
+          "s’entraînent à un plan anti-trou de mémoire et au skill pieds, souffle, stylo"
+        ],
+        "material": [
+          "Cahier de l’élève, tampon",
+          "Roue des émotions, 20 gommettes",
+          "20 petits papiers, une boîte",
+          "Post-it jaunes et verts",
+          "Cartes, 6 par îlot",
+          "Six pensées sur feuilles A4",
+          "Mini-quiz caché (étape 7)",
+          "Chronomètre, feutres, aimants"
+        ],
+        "vorbereitung": [
+          "Demander au régent les dates des devoirs et vérifier si un jeune subit une pression particulière.",
+          "Tracer au tableau une ligne de 0 à 100 (étape 1).",
+          "Balance du devoir et dates des devoirs au tableau (étape 3).",
+          "Écrire en grand les six pensées de l’étape 6 sur des feuilles A4.",
+          "Mini-quiz (étape 7) écrit sur une affiche, puis caché."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : émotion, tension et chiffre du devoir"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour : quel est le prochain devoir ?"
+          },
+          {
+            "min": "15–30",
+            "phase": "input",
+            "titel": "D’où vient le stress : la balance du devoir"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Mon plan de révision à rebours"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : compter jusqu’à 20"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Les pensées du devoir passées au crible"
+          },
+          {
+            "min": "65–75",
+            "phase": "uebung",
+            "titel": "Simulation de trou de mémoire avec un mini-quiz"
+          },
+          {
+            "min": "75–85",
+            "phase": "uebung",
+            "titel": "Mon compte à rebours pour le jour J"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : pieds, souffle, stylo"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, mission et suite"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : émotion, tension et chiffre du devoir",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Une fois tout le monde assis, chacun montre sa tension avec les doigts à « trois » (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence, deux volontaires donnent leur émotion et leur chiffre (3 min). Puis un second chiffre, caché : à combien serait votre tension s’il y avait un devoir en classe demain ? Chacun écrit seulement le chiffre sur un papier, le plie et le met dans la boîte (2 min). L’enseignant·e lit les chiffres à voix haute, y compris le sien ; un volontaire fait une croix pour chacun sur la ligne de 0 à 100 au tableau (3 min). Puis la classe regarde la ligne : où se trouvent la plupart des croix ? Deux voix disent ce qu’elles remarquent (2 min).",
+            "sagen": [
+              "Écrivez seulement un chiffre, pas de nom. Personne ne saura quel papier est le vôtre.",
+              "Regardez la ligne : vous n’êtes pas seuls avec votre trac – et certains sont très détendus. Les deux sont normaux."
+            ],
+            "tipp": "Expliquer brièvement son propre chiffre, par exemple : mon 80, c’est le chiffre avant mon permis de conduire – je me souviens encore de mon ventre. Les adultes aussi connaissent le stress des examens, et on peut apprendre à faire avec.",
+            "wennEsKippt": "Si des papiers portent des chiffres pour rire, comme 1000, les lire quand même et les placer tranquillement au bout de la ligne : certains préfèrent montrer leur trac par une blague. Si un papier porte une phrase au lieu d’un chiffre, par exemple « Je n’en peux plus », ne pas la lire à voix haute, mettre le papier de côté ; à la fin du cours, proposer à tous de venir parler après la séance ou au SePAS, et informer le SePAS le jour même."
+          },
+          {
+            "titel": "Retour : quel est le prochain devoir ?",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Demander avec le pouce où en est la mission de la semaine – en haut, au milieu, en bas : qui a essayé son petit pas ? Une voix raconte comment ça s’est passé ; « deux fois réussi », ça compte aussi. Puis montrer les dates des devoirs au tableau : chacun choisit un devoir en classe qui le préoccupe vraiment et note la matière et la date en haut de la fiche. Qui n’en a pas en ce moment prend le dernier qui a été difficile. Annoncer le thème du jour : rester calme pendant les devoirs en classe.",
+            "sagen": [
+              "Prenez un devoir qui vous préoccupe vraiment – pas le plus facile.",
+              "Aujourd’hui, on ne parle pas de notes, mais de ce que vous avez vous-mêmes entre les mains."
+            ],
+            "tipp": "Qui a choisi la semaine dernière un petit pas pour le sommeil est déjà en plein dans le sujet : une bonne nuit avant le devoir fait partie du plan de révision.",
+            "blatt": "ff7-test-countdown"
+          },
+          {
+            "titel": "D’où vient le stress : la balance du devoir",
+            "dauer": 15,
+            "phase": "input",
+            "text": "Au tableau, une balance : à gauche « Ce qui met la pression », à droite « Ce que j’ai pour y faire face ». En trois minutes, chaque îlot écrit sur des post-it ce qui rend les devoirs stressants à leur âge (jaune) et ce qui aide (vert), une idée par post-it. Puis, dans chaque îlot, quelqu’un colle les post-it sur la balance et en lit deux (4 min). Expliquer en questionnant la classe (5 min) : le stress apparaît quand le côté gauche paraît plus lourd que le droit. Deux leviers, donc – alléger la gauche : commencer plus tôt, découper la matière, demander ce qui tombera ; alourdir la droite : méthodes de révision, skills, sommeil, aide. Pour finir, le tableau sur la tension (3 min) : un peu de trac réveille, trop vide la tête.",
+            "sagen": [
+              "Qu’est-ce qui rend les devoirs en classe stressants à votre âge ? Écrivez-le de façon générale, pas sur une personne en particulier.",
+              "Un peu de trac, ce n’est pas une erreur – ça réveille. Ça devient difficile quand il dépasse 70.",
+              "Une note dit comment un devoir s’est passé un jour donné – pas qui vous êtes."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Tension",
+                "Pendant les révisions et le devoir"
+              ],
+              "zeilen": [
+                [
+                  "0–30 · calme",
+                  "La tête est claire – mais souvent, il manque l’élan pour commencer."
+                ],
+                [
+                  "30–70 · éveillé",
+                  "Tendu et bien réveillé : idéal pour réviser et pour le devoir."
+                ],
+                [
+                  "70–100 · trop",
+                  "La tête se vide, le trou de mémoire menace : d’abord redescendre, ensuite continuer."
+                ]
+              ]
+            },
+            "tipp": "Des post-it comme « parents », « bulletin » ou « tout le monde regarde » vont sur la balance sans commentaire : ils montrent le poids que portent les jeunes. Ramener ensuite calmement le regard sur le côté droit – sur ce qu’on peut influencer.",
+            "wennEsKippt": "Si on entend seulement « Les devoirs, je m’en fiche », ne pas contredire : l’indifférence protège souvent de la déception. Demander comment ça se passe dans le ventre le matin d’un devoir, puis continuer. Si un post-it laisse penser à la peur d’une punition ou à de la violence à la maison, ne pas le lire, le retirer discrètement et en parler au SePAS le jour même."
+          },
+          {
+            "titel": "Mon plan de révision à rebours",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "D’abord, planifier ensemble un exemple au tableau (5 min) : Bruna a un devoir en classe de français vendredi, on est lundi. Remonter le temps : que fait-elle jeudi, mercredi, mardi – et dès aujourd’hui ? Expliquer au passage deux règles : mieux vaut trois courtes séances de révision sur plusieurs jours qu’une longue soirée la veille, et se tester soi-même plutôt que relire. Puis seul (8 min) : exercice 1 pour son propre devoir, à rebours à partir du jour J ; chaque ligne reçoit une entrée dans « Comment je me teste ». Passer dans les rangs et aider à découper les gros morceaux. À deux (2 min) : le voisin vérifie seulement si on sait quand on commence.",
+            "sagen": [
+              "Relire trois fois, ça rassure, mais ça ne sert pas à grand-chose. Fermer le cahier et écrire ce qu’on a retenu – ça, ça marche.",
+              "Quel morceau est si gros que vous le repoussez sans arrêt ? On le découpe maintenant."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Le plan de Bruna",
+                "Quoi et comment ?"
+              ],
+              "zeilen": [
+                [
+                  "Lundi (aujourd’hui)",
+                  "Surligner dans le cahier ce qui tombe ; écrire le vocabulaire sur des fiches."
+                ],
+                [
+                  "Mardi",
+                  "Vocabulaire : lire la fiche, dire la réponse, retourner, vérifier – dix minutes."
+                ],
+                [
+                  "Mercredi",
+                  "Grammaire : refaire deux exercices sans la correction, puis comparer."
+                ],
+                [
+                  "Jeudi",
+                  "Se tester une fois sur tout ; surligner ce qui coince ; se coucher tôt."
+                ],
+                [
+                  "Vendredi (devoir)",
+                  "Manger ou boire quelque chose, partir à l’heure, avant la première question : pieds, souffle, stylo."
+                ]
+              ]
+            },
+            "tipp": "Qui ne sait pas ce qui tombera écrit comme première étape : demander au professeur – c’est déjà une vraie partie du plan. Plus important qu’un plan parfait : le premier rendez-vous. Quand exactement est-ce qu’on commence ?",
+            "wennEsKippt": "Si un jeune dit qu’il ne révise jamais et n’a pas besoin de plan, ne pas discuter : demander un plan pour deux jours seulement, dix minutes par jour. Si un jeune semble débordé ou dit « De toute façon, je n’y arriverai pas », réduire le plan ensemble à une seule ligne et en reparler brièvement après le cours.",
+            "blatt": "ff7-test-countdown"
+          },
+          {
+            "titel": "Pause active : compter jusqu’à 20",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Ouvrir la fenêtre ; tout le monde se lève derrière sa chaise et secoue les mains, les bras et les jambes (1 min). Puis la classe compte ensemble jusqu’à 20 : chacun peut dire le nombre suivant à tout moment, sans se concerter et sans signe ; si deux personnes parlent en même temps, la classe recommence à 1 (4 min). Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Si deux personnes parlent en même temps, on recommence à 1 – sans coupable."
+            ],
+            "tipp": "Le jeu va avec le thème : quelque chose rate, la classe recommence calmement. C’est exactement ce dont on a besoin pendant un devoir quand une question tourne mal.",
+            "wennEsKippt": "Si quelqu’un parle exprès en même temps que les autres, arrêter le jeu sans commentaire après deux essais, revenir aux secousses des bras et des jambes, et refaire le jeu une autre fois."
+          },
+          {
+            "titel": "Les pensées du devoir passées au crible",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "La classe sait examiner ses pensées depuis le chapitre 8 – aujourd’hui, il s’agit des phrases qui surgissent dans la tête avant et pendant un devoir. Chaque îlot a des cartes et un gros feutre. Montrer une pensée et la lire à voix haute ; les îlots ont 90 secondes pour écrire une phrase réaliste qui aide pendant le devoir. À « stop », une personne de l’îlot apporte la carte au tableau, à chaque tour quelqu’un d’autre. Lire les cartes ; la classe vérifie avec le pouce, et la meilleure phrase reçoit une étoile. Cinq tours (10 min), le sixième seulement s’il reste du temps. Pour finir, seul : exercice 2 de la fiche, une pensée personnelle qui freine (3 min).",
+            "sagen": [
+              "Pas de belles paroles, on vérifie : croiriez-vous vraiment cette phrase le matin du devoir ?",
+              "Une phrase comme “Je suis le meilleur” ne compte pas. Une bonne phrase est réaliste et regarde ce que vous avez vous-mêmes entre les mains."
+            ],
+            "punkte": [
+              "« De toute façon, je vais rater. »",
+              "« Tous les autres ont plus révisé que moi. »",
+              "« Si j’ai un trou de mémoire, tout est fichu. »",
+              "« Si j’ai une mauvaise note, c’est que je suis bête. »",
+              "« Je dois tout savoir. »",
+              "« J’ai commencé trop tard – maintenant, ça ne sert plus à rien. »"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Pensée",
+                "Une phrase qui aide"
+              ],
+              "zeilen": [
+                [
+                  "De toute façon, je vais rater.",
+                  "Je ne sais pas encore comment ça va se passer. Je montre ce que je sais faire."
+                ],
+                [
+                  "Tous les autres ont plus révisé.",
+                  "Je ne sais pas ce que les autres ont fait. Je me concentre sur mes questions."
+                ],
+                [
+                  "Si j’ai un trou de mémoire, tout est fichu.",
+                  "Un trou de mémoire, ça passe. J’ai un plan pour ça."
+                ],
+                [
+                  "Si j’ai une mauvaise note, je suis bête.",
+                  "Une note montre comment ce devoir s’est passé – pas qui je suis."
+                ],
+                [
+                  "Je dois tout savoir.",
+                  "Personne ne sait tout. Je prends les points que je peux prendre."
+                ],
+                [
+                  "Maintenant, ça ne sert plus à rien.",
+                  "Chaque heure de révision compte encore."
+                ]
+              ]
+            },
+            "tipp": "S’attarder sur la quatrième pensée : beaucoup de jeunes en voie de préparation l’ont déjà eue souvent. Recopier les meilleures phrases sur une affiche qui reste au mur jusqu’à la fin des devoirs en classe ; qui le souhaite écrit la sienne sur une petite carte pour sa trousse.",
+            "wennEsKippt": "Si la course devient plus importante que les phrases, ralentir : tout le monde écrit tranquillement, puis on vérifie ensemble, sans étoiles. S’il n’y a que des phrases pour rire comme « Je n’ai qu’à copier », lire quand même la carte et demander au groupe ce que cette phrase apporte vraiment le matin du devoir.",
+            "blatt": "ff7-test-countdown"
+          },
+          {
+            "titel": "Simulation de trou de mémoire avec un mini-quiz",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "D’abord, écrire au tableau le plan anti-trou de mémoire et en parler brièvement (3 min) : remarquer que plus rien ne vient – expirer longuement deux fois – marquer la question – passer à la suivante – y revenir plus tard. Puis la simulation : chacun range sa table, sauf un stylo et une feuille. Annoncer : dix questions faciles, deux minutes, et une question est volontairement impossible. Découvrir le quiz et chronométrer (2 min). Ensuite, faire le bilan (5 min) : qui est resté bloqué à la question 6 ? Qui a continué – et comment ? Il n’y a pas de points, et les feuilles ne sont pas ramassées.",
+            "sagen": [
+              "Une des questions n’a pas de solution, c’est voulu. Votre tâche n’est pas de tout savoir, mais de continuer.",
+              "Qu’est-ce que ça fait de laisser simplement une question de côté ?"
+            ],
+            "punkte": [
+              "1. Combien font 12 + 15 ?",
+              "2. Cite trois couleurs.",
+              "3. Quel jour vient après mardi ?",
+              "4. Combien de minutes y a-t-il dans une heure ?",
+              "5. Écris ton prénom à l’envers.",
+              "6. Forme un mot français uniquement avec ces lettres : M, R, T, K, S. (impossible – il manque les voyelles)",
+              "7. Combien font 5 × 6 ?",
+              "8. Cite un animal à quatre pattes.",
+              "9. Combien de jours y a-t-il dans une semaine ?",
+              "10. Écris un nombre entre 10 et 20."
+            ],
+            "tipp": "Pour les jeunes qui apprennent encore la langue d’enseignement, ne pas comprendre une question fait partie du quotidien – ici, ce sont souvent eux les pros pour continuer. Qui le souhaite raconte comment il fait d’habitude.",
+            "wennEsKippt": "Si un jeune s’énerve à cause de la question impossible, reconnaître sa colère : c’est exactement ce sentiment qui arrive aussi pendant un vrai devoir. Puis demander ce qui a aidé à continuer – ou ce qui aurait aidé. Si quelqu’un lance des réponses à voix haute, arrêter brièvement : pendant un devoir, c’est le silence, ici aussi."
+          },
+          {
+            "titel": "Mon compte à rebours pour le jour J",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Une courte scène pour commencer (3 min) : devant la porte de la salle du devoir. L’enseignant·e ou un volontaire joue le camarade paniqué qui assaille tout le monde de questions (« Tu as révisé le chapitre 4 ? Il va sûrement tomber. ») ; deux volontaires essaient l’un après l’autre de s’en protéger – s’écarter un moment, dire « Là, je ne veux pas parler de la matière », la respiration des doigts. Puis seul (5 min) : exercice 3 de la fiche – écrire dans chaque case du compte à rebours ce qu’on fait soi-même : la veille au soir, le matin, devant la porte, dans les premières minutes. Pour finir, deux ou trois volontaires disent leur meilleure idée (2 min).",
+            "sagen": [
+              "Qu’est-ce que vous faites la veille au soir – et qu’est-ce que vous évitez plutôt ?",
+              "Devant la porte, tout le monde parle de la matière. Que faites-vous quand ça vous rend nerveux ?"
+            ],
+            "tipp": "Confier le rôle du camarade paniqué à quelqu’un qui aime en faire trop : ici, c’est voulu, et tout le monde voit à quel point la panique devant la porte est contagieuse. Qui a choisi la semaine dernière un petit pas pour le sommeil l’inscrit dans la case de la veille au soir.",
+            "wennEsKippt": "Si quelqu’un dit « Moi, je révise toute la nuit d’avant », ne pas l’interdire, mais demander à quoi ça ressemble le lendemain à huit heures – et ce qui reste dans la tête. Si un jeune raconte qu’il ne dort jamais avant un devoir ou qu’il a mal au ventre, reconnaître que c’est fréquent et lui demander après le cours si ça arrive souvent ; si besoin, voir la suite avec le SePAS.",
+            "blatt": "ff7-test-countdown"
+          },
+          {
+            "titel": "Skill : pieds, souffle, stylo",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Tout le monde est assis comme pendant un devoir, le stylo à la main, la fiche devant soi. Annoncer : un skill pour le moment où la tension monte pendant le devoir – et personne dans la salle ne doit remarquer que vous le faites. Montrer les trois étapes une par une et les pratiquer ensemble (1 min chacune), puis deux fois d’affilée sans consigne, chacun à son rythme (3 min). Ensuite, deux ou trois retours : quelqu’un a-t-il remarqué quelque chose chez son voisin ? À quel moment d’un devoir en auriez-vous besoin ? Pour finir, chacun écrit dans l’exercice 4 son plan anti-trou de mémoire sous forme de plan « si… alors » et, en dessous, son skill (2 min).",
+            "sagen": [
+              "Pieds, souffle, stylo. Personne ne le voit, et ça prend moins de trente secondes.",
+              "Quelqu’un a-t-il remarqué quelque chose chez son voisin ?"
+            ],
+            "punkte": [
+              "Pieds : appuyer fort les deux pieds dans le sol, tenir cinq secondes, relâcher.",
+              "Souffle : expirer longuement deux fois – inspirer sur quatre temps, expirer sur six.",
+              "Stylo : serrer fort le stylo jusqu’à ce que la main chauffe, relâcher et lire la question suivante."
+            ],
+            "tipp": "Expirer longuement freine le corps ; les pieds et le stylo ramènent l’attention de la tête vers la table. Refaire le skill ensemble une fois avant chaque vrai devoir lors des prochaines séances – après, il est acquis.",
+            "wennEsKippt": "Si des rires fusent ou si quelqu’un souffle bruyamment exprès, continuer à compter calmement et faire l’exercice soi-même ; au deuxième passage sans consigne, le calme revient souvent, car rester invisible devient un jeu. Si quelqu’un a la tête qui tourne ou se sent mal en respirant, il respire normalement et ne fait que les pieds et le stylo.",
+            "blatt": "ff7-test-countdown"
+          },
+          {
+            "titel": "Skills-Pass, mission et suite",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire la question au tableau : quel skill ou quelle phrase est-ce que j’emporte pour mon prochain devoir ? Chacun écrit sa phrase dans le Skills-Pass (2 min) et reçoit le tampon. Tour éclair avec le pouce : comment vous sentez-vous maintenant en pensant au prochain devoir – plus calme, pareil ou moins calme qu’au début ? Puis annoncer la mission de la semaine (dans le cahier) et expliquer que les phrases en bas de la fiche ne se remplissent qu’après le devoir. Pour finir, annoncer le dernier chapitre.",
+            "sagen": [
+              "Après les devoirs, je vous demanderai ce qui vous a aidés – pas votre note."
+            ],
+            "tipp": "Ne pas demander les notes, même pour plaisanter. À la séance suivante, une question suffit : qui a déjà essayé pieds, souffle, stylo pendant un devoir ?"
+          }
+        ],
+        "bruecke": "La semaine prochaine commence le dernier chapitre : en groupes, vous choisissez un thème de l’année et vous préparez une courte pièce ou une vidéo.",
+        "mission": "Fais la première séance prévue dans ton plan de révision – ou essaie une fois pieds, souffle, stylo quand le stress monte à l’école. Qu’est-ce que ça t’a apporté ?",
+        "hintergrund": "La peur des épreuves a deux faces : des pensées inquiètes comme « De toute façon, je vais rater » et une agitation physique. Ce sont surtout les inquiétudes qui accaparent l’attention – une attention qui manque ensuite pour répondre aux questions (Zeidner, 1998). Selon le modèle du stress de Lazarus et Folkman (1984), le stress apparaît quand une exigence paraît plus grande que ses propres ressources. La balance du devoir rend cette évaluation visible, et la séance agit des deux côtés : la tâche devient plus petite grâce au plan, les ressources plus grandes grâce aux méthodes de révision et aux skills. Pour réviser, deux méthodes sont particulièrement bien étayées : se tester soi-même et répartir les révisions sur plusieurs jours (Dunlosky et al., 2013). En voie de préparation, beaucoup de jeunes ont déjà vécu de mauvaises expériences avec les devoirs ; la séance tourne donc le regard vers ce qu’on peut influencer, pas vers la note.",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58."
+        ],
+        "achtung": "Les devoirs et les notes sont un point sensible pour beaucoup, surtout en voie de préparation. Ne pas demander les notes, les bulletins ou les réactions des parents, ni approfondir devant la classe ce qu’un jeune en raconte. Prendre au sérieux des phrases comme « De toute façon, je suis trop bête ». Une forte peur des épreuves cache parfois des problèmes de sommeil, une grosse pression à la maison ou une tristesse durable : en parler après le cours, impliquer le régent et le SePAS. Si un jeune dit qu’il ne supporte plus la pression ou laisse entendre qu’il ne veut plus vivre : informer le SePAS le jour même, suivre le protocole de protection de l’école ; en cas de danger immédiat, le 112.",
+        "differenzierung": {
+          "leichter": "Écrire le plan de révision pour deux jours seulement ; un binôme avec quelqu’un qui planifie bien aide à découper les gros morceaux. Pour les pensées, le groupe peut améliorer une phrase du tableau au lieu d’en écrire une nouvelle. Qui apprend encore la langue d’enseignement écrit son plan dans sa langue et apprend pieds, souffle, stylo en imitant.",
+          "schwerer": "Poursuivre la balance de Bruna : qu’est-ce qu’elle peut ajouter à droite d’ici vendredi ? Ou écrire un deuxième plan pour un autre devoir. Pendant les pensées passées au crible, animer et demander pour chaque phrase : est-ce réaliste – et est-ce que ça regarde ce qu’on peut influencer soi-même ?"
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le chiffre caché du devoir (5 min), la balance du devoir avec le tableau (10 min), mon plan de révision à rebours (15 min), simulation de trou de mémoire avec le mini-quiz (10 min), pieds, souffle, stylo (5 min), Skills-Pass et mission (5 min). Les pensées passées au crible et le compte à rebours sont supprimés ou rattrapés à la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-test-countdown",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln"
+      ],
+      "dauer": "35 Min., verteilt über die Stunde",
+      "eldib": [],
+      "schlagworte": [
+        "Tests",
+        "Prüfungsstress",
+        "Lernplan",
+        "Blackout",
+        "Förderfach"
+      ],
+      "bild": "icon:hourglass",
+      "kurs": [
+        "ff7-e32"
+      ],
+      "de": {
+        "titel": "Mein Test-Countdown",
+        "untertitel": "Vom Lernplan bis zum Blackout-Plan: So gehst du ruhig in deinen nächsten Test.",
+        "bausteine": [
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein nächster Test (Fach und Datum): …"
+            ],
+            "linien": 0
+          },
+          {
+            "art": "aufgabe",
+            "text": "Plane rückwärts vom Testtag. Schreib in jede Zeile auch, wie du dich selbst testest.",
+            "hinweis": "Mehrere kurze Lernzeiten an verschiedenen Tagen bringen mehr als ein langer Abend davor.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Wann?",
+              "Was lerne ich?",
+              "So teste ich mich",
+              "Erledigt"
+            ],
+            "breiten": [
+              1.1,
+              1.9,
+              2.4,
+              0.8
+            ],
+            "zeilen": 4,
+            "beispiel": [
+              "Mo, 4 Tage vorher",
+              "Vokabeln Kapitel 3",
+              "Heft zu, 20 Wörter aufschreiben, dann vergleichen",
+              ""
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "So testest du dich selbst",
+            "punkte": [
+              "Heft zu: Schreib auf, was du noch weißt. Dann vergleichen.",
+              "Karteikarten: vorne die Frage, hinten die Antwort.",
+              "Erklär den Stoff jemandem – oder deinem Spiegelbild.",
+              "Rechne eine Aufgabe ohne die Lösung noch einmal."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Prüf einen Test-Gedanken, der dich bremst. Was spricht dagegen – und was sagst du dir stattdessen?",
+            "hinweis": "Ein guter Satz ist realistisch und schaut auf das, was du selbst in der Hand hast.",
+            "symbole": [
+              "nachdenken",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Test-Gedanke",
+              "Was spricht dagegen?",
+              "Mein hilfreicher Satz"
+            ],
+            "breiten": [
+              1.7,
+              2.2,
+              2.1
+            ],
+            "zeilen": 2,
+            "beispiel": [
+              "„Ich falle sowieso durch.“",
+              "Ich habe schon Tests geschafft, vor denen ich Angst hatte.",
+              "„Ich zeige, was ich kann.“"
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein Countdown für die letzten Stunden: Lies die Tipps und schreib in jedes Feld, was du selbst tust.",
+            "symbole": [
+              "lesen",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 2,
+            "items": [
+              {
+                "titel": "Am Abend davor",
+                "text": "Tasche packen, Handy weg, rechtzeitig schlafen."
+              },
+              {
+                "titel": "Am Morgen",
+                "text": "Etwas essen oder trinken, früh genug losgehen."
+              },
+              {
+                "titel": "Vor der Tür",
+                "text": "Nicht mitreden, wenn es dich nervös macht."
+              },
+              {
+                "titel": "In den ersten Minuten",
+                "text": "Alles überfliegen, mit einer leichten Aufgabe anfangen."
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein Blackout-Plan: Was tust du, wenn dir im Test nichts mehr einfällt?",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Wenn mir bei einer Aufgabe nichts mehr einfällt,",
+                "dann": "atme ich zweimal lang aus, markiere die Aufgabe und mache mit der nächsten weiter."
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Füße, Atem, Stift – dein Skill, den niemand sieht",
+            "punkte": [
+              "Füße fest in den Boden drücken, fünf Sekunden halten, lösen.",
+              "Zweimal lang ausatmen: vier Zählzeiten ein, sechs aus.",
+              "Den Stift fest drücken, loslassen – und die nächste Aufgabe lesen."
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein Skill für den Test: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "text",
+            "text": "Nach dem Test – egal, wie er gelaufen ist:",
+            "klein": true
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Geholfen hat mir …",
+              "Beim nächsten Mal mache ich anders: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Wenn die Angst zu groß wird",
+            "text": "Kannst du wegen der Tests kaum noch schlafen oder lernen, sprich mit deinem Régent, deiner Régente oder dem SePAS – oder ruf das Kanner- a Jugendtelefon an: 116 111, anonym und kostenlos."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen planen das Lernen für einen echten Test rückwärts mit Selbsttests, prüfen einen Test-Gedanken, legen ihren Countdown für die letzten Stunden fest und halten einen Blackout-Plan mit einem unauffälligen Skill fest.",
+          "ablauf": [
+            "Einheit 32, Schritt 2: Fach und Datum eintragen. Schritt 4 (15 Min.): Aufgabe 1 nach dem Beispiel von Bruna an der Tafel.",
+            "Schritt 6: Aufgabe 2 nach der Gedanken-Runde (3 Min.). Schritt 8: Aufgabe 3, der Countdown (5 Min.).",
+            "Schritt 9: nach Füße, Atem, Stift den Blackout-Plan und den eigenen Skill eintragen (Aufgabe 4).",
+            "Die Sätze unten erst nach dem Test ausfüllen; nachgefragt wird, was geholfen hat, nie die Note."
+          ],
+          "hintergrund": "Prüfungsangst besteht aus Sorgengedanken und körperlicher Aufregung; vor allem die Sorgen binden Aufmerksamkeit, die für die Aufgaben fehlt (Zeidner, 1998). Deshalb verbindet das Blatt Lernplanung mit dem Prüfen von Gedanken und einem Körper-Skill. Für das Lernen sind Selbsttests und verteiltes Lernen am besten belegt (Dunlosky et al., 2013); Wenn-dann-Pläne werden im entscheidenden Moment leichter abgerufen als gute Vorsätze (Gollwitzer, 1999).",
+          "quellen": [
+            "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+            "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          ],
+          "achtung": "Nicht nach Noten oder Reaktionen der Eltern fragen. Wirkt die Angst über Wochen lähmend oder deutet jemand an, den Druck nicht mehr auszuhalten: Gespräch nach der Stunde, Régent und SePAS einbeziehen, nach dem Schutzkonzept der Schule handeln.",
+          "material": "Testtermine der Klasse, Stifte"
+        }
+      },
+      "fr": {
+        "titel": "Mon compte à rebours avant le devoir",
+        "untertitel": "Du plan de révision au plan anti-trou de mémoire : aborder ton prochain devoir en classe avec calme.",
+        "bausteine": [
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mon prochain devoir en classe (matière et date) : …"
+            ],
+            "linien": 0
+          },
+          {
+            "art": "aufgabe",
+            "text": "Planifie à rebours à partir du jour J. Note aussi sur chaque ligne comment tu te testes toi-même.",
+            "hinweis": "Plusieurs courtes séances sur différents jours rapportent plus qu’une longue soirée la veille.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Quand ?",
+              "Qu’est-ce que je révise ?",
+              "Comment je me teste",
+              "Fait"
+            ],
+            "breiten": [
+              1.1,
+              1.9,
+              2.4,
+              0.8
+            ],
+            "zeilen": 4,
+            "beispiel": [
+              "Lu, 4 jours avant",
+              "Vocabulaire, chapitre 3",
+              "Cahier fermé, écrire 20 mots, puis comparer",
+              ""
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Comment te tester toi-même",
+            "punkte": [
+              "Cahier fermé : écris ce que tu sais encore. Puis compare.",
+              "Fiches : la question devant, la réponse derrière.",
+              "Explique la matière à quelqu’un – ou à ton reflet dans le miroir.",
+              "Refais un exercice sans regarder la correction."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Examine une pensée qui te freine avant un devoir. Qu’est-ce qui la contredit – et que te dis-tu à la place ?",
+            "hinweis": "Une bonne phrase est réaliste et regarde ce que tu as toi-même entre les mains.",
+            "symbole": [
+              "nachdenken",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Pensée",
+              "Qu’est-ce qui la contredit ?",
+              "Ma phrase qui aide"
+            ],
+            "breiten": [
+              1.7,
+              2.2,
+              2.1
+            ],
+            "zeilen": 2,
+            "beispiel": [
+              "« De toute façon, je vais rater. »",
+              "J’ai déjà réussi des devoirs qui me faisaient peur.",
+              "« Je montre ce que je sais faire. »"
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ton compte à rebours pour les dernières heures : lis les conseils et écris dans chaque case ce que tu fais toi-même.",
+            "symbole": [
+              "lesen",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 2,
+            "items": [
+              {
+                "titel": "La veille au soir",
+                "text": "Préparer son sac, ranger le portable, se coucher à temps."
+              },
+              {
+                "titel": "Le matin",
+                "text": "Manger ou boire quelque chose, partir assez tôt."
+              },
+              {
+                "titel": "Devant la porte",
+                "text": "Ne pas se mêler aux discussions qui stressent."
+              },
+              {
+                "titel": "Les premières minutes",
+                "text": "Tout survoler, commencer par une question facile."
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ton plan anti-trou de mémoire : que fais-tu quand plus rien ne te vient pendant le devoir ?",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "wennDann",
+            "wenn": "Si …",
+            "dann": "… alors",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Si plus rien ne me vient pour une question,",
+                "dann": "j’expire longuement deux fois, je marque la question et je passe à la suivante."
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Pieds, souffle, stylo – ton skill invisible",
+            "punkte": [
+              "Appuie fort tes pieds dans le sol, tiens cinq secondes, relâche.",
+              "Expire longuement deux fois : inspire sur quatre temps, expire sur six.",
+              "Serre fort ton stylo, relâche – et lis la question suivante."
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mon skill pour le devoir : …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "text",
+            "text": "Après le devoir – quel que soit le résultat :",
+            "klein": true
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ce qui m’a aidé, c’est…",
+              "La prochaine fois, je ferai autrement : …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Quand la peur devient trop forte",
+            "text": "Si, à cause des devoirs, tu n’arrives presque plus à dormir ou à réviser, parles-en à ton régent, ta régente ou au SePAS – ou appelle le Kanner- a Jugendtelefon au 116 111, anonyme et gratuit."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes planifient à rebours leurs révisions pour un vrai devoir en se testant eux-mêmes, examinent une pensée, fixent leur compte à rebours pour les dernières heures et notent un plan anti-trou de mémoire avec un skill discret.",
+          "ablauf": [
+            "Séance 32, étape 2 : noter la matière et la date. Étape 4 (15 min) : exercice 1 d’après l’exemple de Bruna au tableau.",
+            "Étape 6 : exercice 2 après les pensées passées au crible (3 min). Étape 8 : exercice 3, le compte à rebours (5 min).",
+            "Étape 9 : après pieds, souffle, stylo, noter le plan anti-trou de mémoire et son skill (exercice 4).",
+            "Les phrases du bas ne se remplissent qu’après le devoir ; on demande ce qui a aidé, jamais la note."
+          ],
+          "hintergrund": "La peur des épreuves se compose de pensées inquiètes et d’agitation physique ; ce sont surtout les inquiétudes qui accaparent l’attention, et elle manque ensuite pour les questions (Zeidner, 1998). La fiche relie donc la planification des révisions à l’examen des pensées et à un skill corporel. Pour réviser, se tester soi-même et répartir les révisions sont les méthodes les mieux étayées (Dunlosky et al., 2013) ; les plans « si… alors » reviennent plus facilement au moment décisif que les bonnes résolutions (Gollwitzer, 1999).",
+          "quellen": [
+            "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+            "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          ],
+          "achtung": "Ne pas demander les notes ni les réactions des parents. Si la peur paralyse pendant des semaines ou si un jeune laisse entendre qu’il ne supporte plus la pression : entretien après le cours, impliquer le régent et le SePAS, agir selon le protocole de protection de l’école.",
+          "material": "Dates des devoirs de la classe, stylos"
+        }
+      }
+    }
+  ]
+}

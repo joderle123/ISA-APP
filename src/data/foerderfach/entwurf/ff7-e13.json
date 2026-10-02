@@ -1,0 +1,1014 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e13",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff-anspannungsskala",
+        "ff7-skills-nach-zahl"
+      ],
+      "vorlagen": [
+        "ff7-skill-sortierkarten"
+      ],
+      "woerter": [
+        {
+          "de": "die Anspannung",
+          "fr": "la tension"
+        },
+        {
+          "de": "die Anspannungsskala",
+          "fr": "l’échelle de tension (f.)"
+        },
+        {
+          "de": "angespannt",
+          "fr": "tendu, tendue"
+        },
+        {
+          "de": "runterkommen",
+          "fr": "redescendre"
+        },
+        {
+          "de": "Abstand nehmen",
+          "fr": "prendre du recul"
+        }
+      ],
+      "de": {
+        "titel": "Skills und die Anspannungsskala",
+        "kurz": "Die Klasse lernt die Anspannungsskala von 0 bis 100 kennen, ordnet Skills danach, was bei 30, bei 70 und bei 90 noch hilft, und übt einen Skill für Rot.",
+        "ziele": [
+          "nennen ihre Anspannung als Zahl von 0 bis 100 und beschreiben, was bei Grün, Gelb und Rot in Kopf und Körper passiert",
+          "erklären mit dem Handmodell, warum bei Rot Nachdenken und Reden kaum noch helfen: erst runter, dann reden",
+          "ordnen Skills danach, bis zu welcher Zahl sie noch helfen, und unterscheiden sie von Verhalten, das kurz entlastet und danach Ärger macht",
+          "probieren den Skill „Stopp, zurück, ausatmen“ aus und schätzen ihre Zahl vorher und nachher"
+        ],
+        "material": [
+          "Schülerheft, Stempel für den Pass",
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Plakat „Was sind Skills?“ (Stunde 1)",
+          "Anspannungsskala als Plakat (A3)",
+          "Skill-Karten: fünf Sätze (Vorlage)",
+          "Moderationskarten: 7 je Tischgruppe",
+          "Klebepunkte in Grün, Gelb und Rot",
+          "Dicke Stifte, Klebeband, Umschläge"
+        ],
+        "vorbereitung": [
+          "Plakat „Was sind Skills?“ aus Stunde 1 bereitlegen; fehlt es, die zwei Spalten neu anschreiben.",
+          "Anspannungsskala als A3-Plakat zeichnen: Grün 0–30, Gelb 30–70, Rot 70–100; die Zonen bleiben leer.",
+          "Skill-Karten fünfmal kopieren und schneiden; je Gruppe mit sieben Moderationskarten in einen Umschlag.",
+          "Tafelbilder aus Schritt 4 und 6 vorbereiten; die Szene aus Schritt 8 einmal laut lesen."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Gefühlsrad und die erste Zahl"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick und Start ins Kapitel"
+          },
+          {
+            "min": "15–25",
+            "phase": "uebung",
+            "titel": "Alle, die …: Wenn es zu viel wird"
+          },
+          {
+            "min": "25–45",
+            "phase": "input",
+            "titel": "Anspannungsskala: Zonen und Handmodell"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Zahlen-Statuen"
+          },
+          {
+            "min": "50–70",
+            "phase": "uebung",
+            "titel": "Skills sortieren: Bis zu welcher Zahl hilft das?"
+          },
+          {
+            "min": "70–85",
+            "phase": "uebung",
+            "titel": "Das Plakat ergänzen, meine Skills"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Stopp, zurück, ausatmen"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Zahl am Ende und Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad und die erste Zahl",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person wie gewohnt ihren Punkt auf das Gefühlsrad (3 Min.). Wenn alle sitzen, das Neue ankündigen: Ab heute gehört zum Gefühl eine Zahl – die Anspannung von 0 bis 100. Die Skala mit zwei Bildern verankern: 0 ist völlig entspannt, kurz vor dem Einschlafen; 100 ist so aufgewühlt, wie man es sich nur vorstellen kann – dazu den Arm von unten nach oben führen. Die Lehrkraft nennt Gefühl und Zahl mit einem Satz dazu. Dann zeigen alle auf drei gleichzeitig ihre Zahl mit den Fingern: null bis zehn Finger, mal zehn (2 Min.). Zwei, drei Freiwillige nennen Wort und Zahl; die Zahlen werden weder kommentiert noch verglichen.",
+            "sagen": [
+              "Ab heute gibt es zum Gefühl noch eine Zahl: Wie angespannt seid ihr gerade, von 0 bis 100?",
+              "Bei mir ist es eine 40. Nach den Ferien bin ich noch nicht ganz im Takt, und der Morgen war hektisch.",
+              "Es gibt keine falsche Zahl. Eure Zahl ist eure Zahl – und niemand kommentiert die Zahl der anderen."
+            ],
+            "tipp": "Die Finger-Skala ist schnell und anonym genug: Alle zeigen gleichzeitig, niemand muss etwas erklären. Ein Blick über die Hände zeigt, wie die Klasse heute ankommt.",
+            "wennEsKippt": "Zeigen alle aus Spaß zehn Finger, das mit Humor aufnehmen und zurückfragen: Wie sähe eine echte 100 aus – und woran merkt ihr, dass heute keine ist? Daraus entsteht oft schon das Gespräch, um das es gleich geht. Zeigt jemand ernsthaft acht Finger oder mehr, nicht vor der Klasse nachfragen, sondern in der nächsten Arbeitsphase leise: Brauchst du gerade etwas?"
+          },
+          {
+            "titel": "Rückblick und Start ins Kapitel",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission aus der Stunde vor den Ferien im Heft vorlesen und kurz nachfragen: Daumen hoch, Mitte oder runter – eine Stimme erzählt, wie es war. Dann an die letzte Stunde anknüpfen: Bei den gemischten Gefühlen ging es um die Stärke eines Gefühls von 0 bis 10; die neue Skala misst die Anspannung insgesamt und zeigt, was dann noch hilft. Das neue Kapitel mit seiner Leitfrage an die Tafel schreiben: Gefühle regulieren – Was hilft mir, wenn es zu viel wird? Die fünf Stunden ankündigen: heute die Skala, dann Skills über Körper und Atem, über die Sinne und über den Kopf, zum Schluss der eigene Skills-Koffer mit Ampelplan.",
+            "sagen": [
+              "Letztes Mal ging es darum, wie stark ein Gefühl ist. Ab heute geht es darum, was man macht, wenn es zu stark wird.",
+              "Die nächsten fünf Wochen sind so etwas wie ein Trainingslager. Am Ende hat jede und jeder einen Koffer mit Skills, die wirklich passen."
+            ],
+            "tipp": "Ist die Stunde zu den gemischten Gefühlen ausgefallen, an die Gefühls-Landkarte aus Stunde 11 anknüpfen: Die Warnsignale im Körper zeigen, dass die Zahl steigt."
+          },
+          {
+            "titel": "Alle, die …: Wenn es zu viel wird",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Alle sitzen. Die Sätze langsam vorlesen; wer sich angesprochen fühlt, steht kurz auf, schaut sich um und setzt sich wieder. Niemand erklärt etwas, niemand kommentiert, wer steht, sitzen bleiben ist immer erlaubt, und die Lehrkraft macht ehrlich mit (3 Min.). Danach fragen, bei welchen Sätzen fast alle standen, und festhalten: Momente, in denen es zu viel wird, kennen alle. Dann sammeln, was hilft, wieder runterzukommen – ohne Namen, in zwei Spalten an der Tafel: hilft kurz – hilft wirklich (4 Min.). Zum Schluss das Plakat „Was sind Skills?“ aus der ersten Stunde daneben hängen: Was steht schon darauf, was kommt neu dazu? Auch die Skills seit September ergänzen, etwa 5-4-3-2-1 und die Fingeratmung (3 Min.).",
+            "sagen": [
+              "Was ist euch aufgefallen? Bei welchen Sätzen standen fast alle?",
+              "Das, was euch hilft, wenn es zu viel wird, nennen wir Skills. Ihr habt also schon welche – ihr wusstet es vielleicht nur nicht."
+            ],
+            "punkte": [
+              "Alle, die heute schon einmal genervt waren.",
+              "Alle, die schon einmal wegen einer Kleinigkeit richtig sauer geworden sind – etwa weil ein Spiel abgestürzt ist.",
+              "Alle, die schon einmal so nervös waren, dass ihnen im Test nichts mehr eingefallen ist.",
+              "Alle, die schon einmal etwas gesagt haben, das ihnen hinterher leidtat.",
+              "Alle, die schon einmal gemerkt haben, dass der Körper schneller war als der Kopf.",
+              "Alle, die etwas kennen, das sie wieder runterbringt.",
+              "Alle, die schon einmal jemandem geholfen haben, wieder ruhig zu werden."
+            ],
+            "tipp": "Auch Antworten wie „jemanden anschreien“ oder „Tür knallen“ ohne Bewertung in die Spalte „hilft kurz“ schreiben. Dass sie danach Ärger machen, merkt die Klasse beim Sortieren von selbst – das wirkt stärker als jede Ermahnung.",
+            "wennEsKippt": "Wird gekichert oder jemand zum Aufstehen geschubst, kurz anhalten und auf die Klassenvereinbarung zeigen: Jede Person entscheidet allein, ob sie aufsteht. Ruft jemand als Witz „kiffen“ oder „saufen“, sachlich bleiben: Das gehört zu „hilft kurz“ und macht danach meist mehr Probleme – weiter. Klingt es ernst oder nennt jemand „mir wehtun“, nicht vertiefen (Danke, darüber reden wir nach der Stunde), das Gespräch danach führen und bei Sorge noch am selben Tag den SePAS informieren."
+          },
+          {
+            "titel": "Anspannungsskala: Zonen und Handmodell",
+            "dauer": 20,
+            "phase": "input",
+            "text": "Das Plakat mit der Anspannungsskala aufhängen und erklären: Anspannung ist die Lautstärke des inneren Alarms; Wut, Angst, Stress oder Aufregung treiben sie hoch. Die drei Zonen gemeinsam füllen: Woran merkt man eine 20, eine 50, eine 90 – im Kopf, im Körper, im Verhalten? Die Antworten kommen auf das Plakat – gern schreibt jemand mit, dem das Stillsitzen schwerfällt; die Warnsignale aus Stunde 11 helfen (6 Min.). Dann das Handmodell vormachen, alle machen mit (3 Min.). Danach füllt jede Person auf dem Blatt „Meine Anspannung von 0 bis 100“ allein Aufgabe 1 aus (4 Min.). Zum Schluss vier Situationen aus Aufgabe 2 vorlesen: Auf drei zeigen alle ihre Zahl mit den Fingern, zwei Freiwillige sagen, warum (5 Min.). Die übrigen Situationen kreuzt jede Person allein an (2 Min.).",
+            "sagen": [
+              "Macht eine Faust und legt den Daumen hinein. Der Daumen ist euer Alarm, die Finger sind der Teil, der nachdenkt und bremst.",
+              "Bei 90 klappen die Finger hoch – der Deckel ist weg. Dann kann niemand vernünftig mit euch reden, auch ihr selbst nicht. Deshalb gilt ab heute: erst runter, dann reden.",
+              "Dieselbe Situation ist für die eine eine 20 und für den anderen eine 80. Keiner liegt falsch."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Zone",
+                "Kopf und Körper"
+              ],
+              "zeilen": [
+                [
+                  "Grün 0–30",
+                  "Klarer Kopf: Zuhören, Reden, Nachdenken und Probleme lösen klappen."
+                ],
+                [
+                  "Gelb 30–70",
+                  "Es wird eng: gereizt, unruhig, die Gedanken kreisen, manche ziehen sich zurück."
+                ],
+                [
+                  "Rot 70–100",
+                  "Der Körper übernimmt: Herzrasen, Hitze, Tunnelblick – Denken geht kaum noch."
+                ]
+              ]
+            },
+            "tipp": "„Erst runter, dann reden“ groß neben das Plakat schreiben; der Satz hilft auch im Konflikt: Wir klären das, wenn du wieder unter 50 bist. Situationen, die an einen aktuellen Vorfall in der Klasse erinnern, beim Vorlesen auslassen.",
+            "wennEsKippt": "Beschreibt jemand Rot mit „dann hau ich zu“, das ohne Kommentar als Zeichen notieren (man will zuschlagen) – genau dafür sind die Skills für Rot da. Wird es zu theoretisch, mit Alltagsbeispielen arbeiten: Wie sieht eine 20 im Bus aus, eine 60 vor einem Test, eine 95 auf dem Fußballplatz? Gibt es bei den Situationen nur noch Lacher, still auf dem Blatt ankreuzen lassen und nur zwei gemeinsam besprechen.",
+            "blatt": "ff-anspannungsskala"
+          },
+          {
+            "titel": "Bewegungspause: Zahlen-Statuen",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen hinter ihrem Stuhl. Die Lehrkraft nennt eine Zahl und eine Situation; alle zeigen sie drei Sekunden lang mit dem ganzen Körper – ohne Worte, ohne Berührung, am eigenen Platz – und werden wieder locker. Nach der letzten Zahl schütteln alle Arme und Beine aus. Wer nicht mitmachen mag, zeigt die Zahl nur mit den Händen. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "punkte": [
+              "10: Sonntagmorgen im Bett, nichts los.",
+              "40: Gleich kommt der Test zurück.",
+              "60: Jemand drängelt sich in der Kantine vor.",
+              "80: Dein Handy ist weg, gerade war es noch da.",
+              "95: Einfrieren, drei Sekunden – dann alles ausschütteln.",
+              "20: Zurück am Platz, alles in Ordnung."
+            ],
+            "tipp": "Die Statuen machen die Zonen sichtbar: Bei 80 und 95 ballen sich Fäuste, die Schultern gehen hoch. Wer das in einem Satz benennt, schlägt die Brücke zum Sortieren."
+          },
+          {
+            "titel": "Skills sortieren: Bis zu welcher Zahl hilft das?",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Jede Tischgruppe bekommt einen Umschlag mit den zwölf Skill-Karten und sieben Moderationskarten. Vier werden Überschriften und liegen nebeneinander auf dem Tisch: Grün 0–30, Gelb 30–70, Rot 70–100, Papierkorb (weiß); auf die drei leeren schreibt die Gruppe eigene Skills vom Plakat. Rollen: Vorlesen, Legen, Zeit, Sprechen. Jede Karte wird laut gelesen und in die höchste Zone gelegt, in der der Skill noch hilft; in den Papierkorb kommt, was die Zahl kurz senkt und danach Ärger macht (9 Min.). Rundgang: Jede Gruppe schaut sich den Tisch der Nachbargruppe an – nur schauen, nichts anfassen (3 Min.). In der Klasse: Was geht bei 90 noch? Die Gruppen nennen ihre roten Karten, die Lehrkraft schreibt die Faustregel an die Tafel und lässt über zwei umstrittene Karten mit den Fingern abstimmen (8 Min.).",
+            "sagen": [
+              "Legt jede Karte dorthin, wo der Skill für euch gerade noch hilft. Seid ihr euch nicht einig, legt sie auf die Grenze – das ist auch ein Ergebnis.",
+              "Was geht bei 90 noch? Alles, wofür man nachdenken muss, fällt dort weg.",
+              "Zocken: Gelb oder Papierkorb? Zwanzig Minuten, um runterzukommen, sind ein Skill. Fünf Stunden, um nicht an den Test zu denken, eher nicht."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Zone",
+                "Was dann noch hilft"
+              ],
+              "zeilen": [
+                [
+                  "Grün 0–30",
+                  "Reden, nachdenken, einen Plan machen – und Skills üben"
+                ],
+                [
+                  "Gelb 30–70",
+                  "Umschalten: Atem, Sinne, Musik, Bewegung, rückwärts zählen"
+                ],
+                [
+                  "Rot 70–100",
+                  "Ohne Nachdenken: Kälte, Vollgas-Bewegung, raus aus der Situation, Hilfe holen"
+                ],
+                [
+                  "Papierkorb",
+                  "Senkt die Zahl kurz und macht danach Ärger: Tür knallen, anschreien, etwas kaputt machen"
+                ]
+              ]
+            },
+            "tipp": "Uneinigkeit ist erwünscht: Dass Musik die eine bei 80 noch beruhigt und den anderen schon bei 40 nervt, ist genau die Botschaft – darum testet die Klasse ab nächster Woche. Wird die Zeit knapp, den Rundgang streichen und gleich in die Klassenrunde gehen.",
+            "wennEsKippt": "Wird mit den Karten herumgealbert, die Rollen tauschen: Wer albert, liest vor. Will jemand nicht mitmachen, übernimmt er nur die Uhr. Legt eine Gruppe alles in den Papierkorb oder alles auf Rot, nicht korrigieren, sondern nachfragen: Bei welcher Zahl habt ihr das schon ausprobiert? Taucht eine Karte wie „sich wehtun“ auf, sie wortlos aus dem Spiel nehmen und nach der Stunde mit der Person sprechen.",
+            "blatt": "ff7-skill-sortierkarten"
+          },
+          {
+            "titel": "Das Plakat ergänzen, meine Skills",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Zurück zum Plakat „Was sind Skills?“: Die Lehrkraft verteilt die Skills darauf an die Tischgruppen; jede Gruppe klebt neben ihre drei, vier Skills einen grünen, gelben oder roten Punkt – je nachdem, bis zu welcher Zahl sie helfen. Neben die Einträge in der Spalte „hilft kurz“ kommt der Vermerk: Ärger danach (4 Min.). Gemeinsam auf das Plakat schauen: Wo gibt es kaum rote Punkte? Genau dafür sind die nächsten Wochen da. Dann füllt jede Person allein das Blatt „Meine Skills von 0 bis 100“ aus, Aufgaben 1 und 2 (8 Min.). Zum Schluss nennen zwei, drei Freiwillige einen Skill aus ihrer roten Zone (3 Min.).",
+            "sagen": [
+              "Schreibt in jede Zone mindestens einen Skill, der wirklich zu euch passt – nicht den, der am besten klingt.",
+              "Die Papierkorb-Frage ist nur für euch. Niemand liest sie, wenn ihr es nicht wollt."
+            ],
+            "tipp": "Wem für Rot nichts einfällt, ist in guter Gesellschaft: Die meisten Jugendlichen kennen Skills für Grün und Gelb, aber kaum welche für Rot. „Noch offen“ ist als Eintrag erlaubt – die nächsten drei Stunden füllen die Lücke.",
+            "wennEsKippt": "Drängeln sich alle am Plakat, tischgruppenweise nach vorn schicken. Schreibt jemand gar nichts, mündlich nachfragen und ein Stichwort notieren lassen. Steht im Papierkorb etwas, das auf Selbstverletzung oder Gewalt hindeutet, nicht vor der Klasse ansprechen, sondern nach der Stunde, und noch am selben Tag den SePAS einbeziehen.",
+            "blatt": "ff7-skills-nach-zahl"
+          },
+          {
+            "titel": "Skill: Stopp, zurück, ausatmen",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: Jetzt kommt ein Skill für Rot, der ohne Nachdenken funktioniert. Zuerst schätzt jede Person still ihre Zahl und trägt sie in Aufgabe 3 auf dem Blatt ein (1 Min.). Dann die Szene langsam vorlesen; alle stellen sie sich mit offenen Augen vor und zeigen auf drei, wie hoch ihre Zahl in der Szene wäre. Auf „Stopp!“ die drei Schritte langsam anleiten und selbst mitmachen (3 Min.). Danach die Zahl nachher eintragen und zwei, drei Rückmeldungen einholen (3 Min.): Wie war das? Wo im Lycée könnt ihr einen Schritt zurück machen? Was heißt Stopp im Klassenchat? Die drei Wörter bleiben an der Tafel.",
+            "sagen": [
+              "Stellt euch vor: Ihr rennt zur Haltestelle, und der Bus fährt euch vor der Nase weg. Der nächste kommt in zwanzig Minuten – genau dann beginnt der Test. Wie hoch ist eure Zahl jetzt?",
+              "Stopp. Hände flach auf den Tisch, Mund zu. Lehnt euch zurück, Blick zum Fenster. Und jetzt ausatmen – länger aus als ein.",
+              "Reden, schreiben, entscheiden – alles erst, wenn die Zahl wieder unter 50 ist."
+            ],
+            "punkte": [
+              "Stopp: Nichts sagen, nichts tun, nichts abschicken. Hände flach auf den Tisch oder in die Taschen.",
+              "Zurück: einen Schritt Abstand – zurücklehnen oder zurücktreten, Blick weg, wenn nötig mit Erlaubnis kurz raus.",
+              "Ausatmen: fünfmal lang ausatmen, länger aus als ein. Reden erst danach."
+            ],
+            "tipp": "Die Szene bewusst alltäglich halten und niemanden auffordern, an eigene Erlebnisse zu denken. Dass die Zahl schon durch die Vorstellung steigt, ist eine wichtige Entdeckung: Der Körper reagiert auf Gedanken – und lässt sich mit den drei Schritten wieder bremsen.",
+            "wennEsKippt": "Wird beim Vorlesen gelacht, ruhig weiterlesen und selbst mitmachen; beim ersten Mal ist das normal. Wer die Szene nicht mitmachen will, übt nur die drei Schritte. Wirkt jemand danach aufgewühlt, leise anbieten, noch ein paar Atemzüge am offenen Fenster zu machen, und nach der Stunde nachfragen.",
+            "blatt": "ff7-skills-nach-zahl"
+          },
+          {
+            "titel": "Skills-Pass, Zahl am Ende und Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Im Skills-Pass beginnt heute die Seite für das 2. Trimester. Die Leitfrage für den ersten Eintrag an die Tafel schreiben: Was hilft mir noch, wenn meine Zahl bei 90 ist? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel. Dann zeigen alle auf drei ihre Zahl jetzt mit den Fingern; die Lehrkraft vergleicht laut mit dem Anfang, ohne Einzelne zu nennen. Zum Schluss die Wochen-Mission ansagen (steht im Heft) und den Ausblick geben. Ab jetzt gehört die Zahl zu jedem Check-in.",
+            "sagen": [
+              "Eure Zahl jetzt – auf drei. Im Vergleich zum Anfang hat sich bei vielen etwas bewegt.",
+              "Ab nächster Woche klebt ihr beim Hereinkommen einen zweiten Punkt auf die Anspannungsskala."
+            ],
+            "tipp": "Die Anspannungsskala bleibt ab heute neben dem Gefühlsrad hängen. Ein zweiter Klebepunkt beim Hereinkommen macht den Check-in nicht länger, zeigt aber auf einen Blick, wie angespannt die Klasse ankommt."
+          }
+        ],
+        "bruecke": "Nächste Woche werdet ihr zu Versuchspersonen: Ihr testet Skills über Körper und Atem – mit Zahl vorher und Zahl nachher. Zieht Kleidung an, in der ihr euch gut bewegen könnt.",
+        "mission": "Wenn deine Zahl diese Woche über 50 steigt: Probier „Stopp, zurück, ausatmen“ oder einen Skill aus deiner Liste. Wie hoch war die Zahl vorher, wie hoch danach?",
+        "hintergrund": "Die Anspannungsskala von 0 bis 100 gehört zu den Grundwerkzeugen des Skillstrainings für Jugendliche (Fleischhaker et al., 2011). Sie trennt die Stärke der Anspannung vom einzelnen Gefühl und macht greifbar, was Linehan (2015) beschreibt: Bei sehr hoher Erregung versagen Fertigkeiten, die Nachdenken voraussetzen. Dann helfen Skills, die direkt am Körper und an den Sinnen ansetzen; Gespräch und Problemlösen gelingen erst wieder, wenn die Anspannung gesunken ist. Das Handmodell des Gehirns zeigt das jugendgerecht: Bei hoher Erregung „klappt der Deckel auf“, und der Teil, der nachdenkt und bremst, ist kaum erreichbar (Siegel & Bryson, 2011). Daraus folgt die Faustregel: bei Grün reden und lösen, bei Gelb umschalten, bei Rot zuerst den Körper beruhigen. Die Grenzen bei 30 und 70 sind Orientierungswerte. Wer seine Zahl regelmäßig nennt, bemerkt eigene Zustände früher und kann den passenden Skill wählen.",
+        "quellen": [
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte."
+        ],
+        "achtung": "„Alle, die …“, die Papierkorb-Frage und die eigenen Zahlen berühren Momente, in denen jemand die Kontrolle verloren hat. Sitzenbleiben ist immer erlaubt, das Blatt wird nicht eingesammelt. Nennt jemand Selbstverletzung, Drogen oder Gewalt als „Skill“: ruhig bleiben, nicht vor der Klasse vertiefen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Zeigt jemand immer wieder Zahlen über 80, nach der Stunde behutsam nachfragen und den Régent einbeziehen.",
+        "differenzierung": {
+          "leichter": "Statt der Zahl reicht die Farbe: grün, gelb, rot. Die Skill-Karten haben Bilder; in der Tischgruppe liest eine Person vor, die gut liest. Wer die Unterrichtssprache noch lernt, sitzt neben jemandem, der übersetzen kann, und schreibt auf dem Blatt Stichwörter, auch in der eigenen Sprache; Wortspeicher und Faustregel bleiben an der Tafel.",
+          "schwerer": "Zu zwei Situationen aus Aufgabe 2 notieren, welcher Gedanke die Zahl hochtreibt. In der Tischgruppe die Moderation übernehmen und bei Uneinigkeit nach Gründen fragen. Eine eigene Faustregel für die Klasse formulieren, etwa für Streit im Klassenchat."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit der ersten Zahl (5 Min.), die Anspannungsskala mit Handmodell und Aufgabe 1 (15 Min.), Skills sortieren mit den Karten und der Faustregel an der Tafel (15 Min.), Skill: Stopp, zurück, ausatmen (10 Min.), Skills-Pass und Mission (5 Min.). „Alle, die …“, die Situationen und die Zahlen-Statuen entfallen; Plakat und Blatt „Meine Skills von 0 bis 100“ werden in der nächsten Stunde ergänzt."
+      },
+      "fr": {
+        "titel": "Les skills et l’échelle de tension",
+        "kurz": "La classe découvre l’échelle de tension de 0 à 100, range les skills selon ce qui aide encore à 30, à 70 et à 90, et s’entraîne à un skill pour la zone rouge.",
+        "ziele": [
+          "donnent leur tension de 0 à 100 et décrivent ce qui se passe dans la tête et le corps en vert, en orange et en rouge",
+          "expliquent avec le modèle de la main pourquoi réfléchir n’aide presque plus dans le rouge : d’abord redescendre, ensuite parler",
+          "rangent les skills selon le chiffre jusqu’auquel ils aident et les distinguent de ce qui soulage un moment, puis cause des ennuis",
+          "essaient le skill « Stop, recule, souffle » et estiment leur chiffre avant et après"
+        ],
+        "material": [
+          "Cahier de l’élève, tampon",
+          "Roue des émotions, 20 gommettes",
+          "Affiche « C’est quoi, un skill ? »",
+          "Échelle de tension en affiche (A3)",
+          "Cartes skills : cinq jeux (modèle)",
+          "Cartons : sept par îlot",
+          "Gommettes vertes, orange, rouges",
+          "Gros feutres, adhésif, enveloppes"
+        ],
+        "vorbereitung": [
+          "Préparer l’affiche « C’est quoi, un skill ? » de la séance 1 ; si elle a disparu, recopier les deux colonnes.",
+          "Dessiner l’échelle de tension sur une affiche A3 : vert 0–30, orange 30–70, rouge 70–100 ; zones vides.",
+          "Photocopier les cartes skills en cinq exemplaires, les découper ; par îlot, une enveloppe avec sept cartons.",
+          "Préparer les tableaux des étapes 4 et 6 ; lire une fois à voix haute la scène de l’étape 8."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : la roue et le premier chiffre"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour sur la séance et ouverture du chapitre"
+          },
+          {
+            "min": "15–25",
+            "phase": "uebung",
+            "titel": "Lève-toi si… : quand ça devient trop"
+          },
+          {
+            "min": "25–45",
+            "phase": "input",
+            "titel": "Échelle de tension et modèle de la main"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : statues chiffrées"
+          },
+          {
+            "min": "50–70",
+            "phase": "uebung",
+            "titel": "Ranger les skills : jusqu’à quel chiffre ça aide ?"
+          },
+          {
+            "min": "70–85",
+            "phase": "uebung",
+            "titel": "L’affiche et mes skills de 0 à 100"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : Stop, recule, souffle"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, chiffre de fin et mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : la roue et le premier chiffre",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle comme d’habitude sa gommette sur la roue des émotions (3 min). Une fois tout le monde assis, annoncer la nouveauté : à partir d’aujourd’hui, l’émotion s’accompagne d’un chiffre – la tension, de 0 à 100. Donner deux repères : 0, c’est complètement détendu, juste avant de s’endormir ; 100, c’est aussi agité qu’on puisse l’imaginer – en montrant du bras, de bas en haut. L’enseignant·e donne son émotion et son chiffre, avec une phrase. Puis, à trois, tout le monde montre son chiffre avec les doigts : de zéro à dix doigts, fois dix (2 min). Deux ou trois volontaires disent leur mot et leur chiffre ; on ne commente pas les chiffres et on ne les compare pas.",
+            "sagen": [
+              "À partir d’aujourd’hui, l’émotion s’accompagne d’un chiffre : vous êtes tendus à combien, là, de 0 à 100 ?",
+              "Moi, je suis à 40. Après les vacances, je n’ai pas encore retrouvé mon rythme, et la matinée a été agitée.",
+              "Il n’y a pas de mauvais chiffre. Votre chiffre, c’est votre chiffre – et personne ne commente celui des autres."
+            ],
+            "tipp": "L’échelle des doigts est rapide et assez discrète : tout le monde montre en même temps, personne n’a à se justifier. Un coup d’œil sur les mains suffit pour voir dans quel état la classe arrive.",
+            "wennEsKippt": "Si tout le monde montre dix doigts pour rire, le prendre avec humour et demander : à quoi ressemblerait un vrai 100 – et à quoi voyez-vous qu’aujourd’hui, ce n’en est pas un ? La discussion du jour démarre souvent là. Si un jeune montre sérieusement huit doigts ou plus, ne pas l’interroger devant la classe, mais lui demander discrètement pendant le travail suivant : tu as besoin de quelque chose ?"
+          },
+          {
+            "titel": "Retour sur la séance et ouverture du chapitre",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Relire dans le cahier la mission de la semaine d’avant les vacances et demander brièvement où chacun en est : pouce en haut, au milieu ou en bas – une voix raconte. Puis faire le lien avec la dernière séance : avec les émotions mélangées, on a évalué la force d’une émotion de 0 à 10 ; la nouvelle échelle mesure la tension dans son ensemble et montre ce qui aide encore. Écrire au tableau le nouveau chapitre et sa question clé : Réguler ses émotions – qu’est-ce qui m’aide quand c’est trop ? Annoncer les cinq séances : aujourd’hui l’échelle, puis des skills par le corps et le souffle, par les sens et par la tête, et pour finir sa propre valise à skills avec un plan feu tricolore.",
+            "sagen": [
+              "La dernière fois, on a regardé à quel point une émotion est forte. À partir d’aujourd’hui, on se demande quoi faire quand elle devient trop forte.",
+              "Les cinq prochaines semaines, c’est un peu un camp d’entraînement. À la fin, chacun aura une valise remplie de skills qui lui conviennent vraiment."
+            ],
+            "tipp": "Si la séance sur les émotions mélangées n’a pas eu lieu, s’appuyer sur la carte corporelle des émotions de la séance 11 : les signaux d’alerte du corps montrent que le chiffre monte."
+          },
+          {
+            "titel": "Lève-toi si… : quand ça devient trop",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Tout le monde est assis. Lire les phrases lentement ; qui se sent concerné se lève un instant, regarde autour de lui et se rassoit. Personne n’explique rien, personne ne commente qui se lève, rester assis est toujours permis, et l’enseignant·e joue le jeu honnêtement (3 min). Demander ensuite à quelles phrases presque tout le monde était debout, et retenir : tout le monde connaît des moments où c’est trop. Rassembler alors ce qui aide à redescendre – sans noms, en deux colonnes au tableau : aide un moment – aide vraiment (4 min). Pour finir, accrocher à côté l’affiche « C’est quoi, un skill ? » de la première séance : qu’est-ce qui y figure déjà, qu’est-ce qui s’ajoute ? Compléter aussi avec les skills appris depuis septembre, par exemple 5-4-3-2-1 et la respiration des doigts (3 min).",
+            "sagen": [
+              "Qu’est-ce que vous avez remarqué ? À quelles phrases presque tout le monde était debout ?",
+              "Ce qui vous aide quand c’est trop, on l’appelle des skills. Vous en avez donc déjà – vous ne le saviez peut-être pas."
+            ],
+            "punkte": [
+              "Lève-toi si tu as déjà eu un moment d’agacement aujourd’hui.",
+              "Lève-toi s’il t’est déjà arrivé de te fâcher pour un détail – par exemple parce qu’un jeu a planté.",
+              "Lève-toi si, pendant un devoir en classe, tu as déjà eu un trou noir à cause du stress.",
+              "Lève-toi si tu as déjà dit quelque chose que tu as regretté ensuite.",
+              "Lève-toi si tu as déjà remarqué que ton corps allait plus vite que ta tête.",
+              "Lève-toi si tu connais quelque chose qui t’aide à redescendre.",
+              "Lève-toi si tu as déjà aidé quelqu’un à se calmer."
+            ],
+            "tipp": "Noter aussi, sans jugement, des réponses comme « crier sur quelqu’un » ou « claquer la porte » dans la colonne « aide un moment ». Qu’elles causent des ennuis ensuite, la classe le découvre d’elle-même en rangeant les cartes – c’est plus fort que n’importe quel rappel à l’ordre.",
+            "wennEsKippt": "Si des rires fusent ou si quelqu’un est poussé à se lever, s’arrêter un instant et montrer la charte de classe : chacun décide seul s’il se lève. Si quelqu’un lance pour rire « fumer un joint » ou « boire », rester factuel : ça va dans « aide un moment » et cause ensuite plutôt plus de problèmes – on continue. Si cela semble sérieux ou si un jeune dit « me faire mal », ne pas approfondir (merci, on en parle après le cours), avoir cet entretien ensuite et, en cas d’inquiétude, informer le SePAS le jour même."
+          },
+          {
+            "titel": "Échelle de tension et modèle de la main",
+            "dauer": 20,
+            "phase": "input",
+            "text": "Accrocher l’affiche de l’échelle de tension et expliquer : la tension, c’est le volume de l’alarme intérieure ; la colère, la peur, le stress ou l’excitation la font monter. Remplir ensemble les trois zones : à quoi reconnaît-on un 20, un 50, un 90 – dans la tête, dans le corps, dans le comportement ? Les réponses vont sur l’affiche – un jeune qui a du mal à rester assis peut les écrire ; les signaux d’alerte de la séance 11 aident (6 min). Montrer ensuite le modèle de la main, tout le monde le fait (3 min). Puis chaque jeune remplit seul l’exercice 1 de la fiche « Ma tension de 0 à 100 » (4 min). Pour finir, lire quatre situations de l’exercice 2 : à trois, tout le monde montre son chiffre avec les doigts, deux volontaires expliquent pourquoi (5 min). Chacun coche seul les situations restantes (2 min).",
+            "sagen": [
+              "Faites un poing en rentrant le pouce à l’intérieur. Le pouce, c’est votre alarme ; les doigts, c’est la partie qui réfléchit et qui freine.",
+              "À 90, les doigts se relèvent – le couvercle saute. Plus personne ne peut discuter calmement avec vous, vous non plus. D’où la règle à partir d’aujourd’hui : d’abord redescendre, ensuite parler.",
+              "La même situation vaut 20 pour l’une et 80 pour l’autre. Personne n’a tort."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Zone",
+                "Tête et corps"
+              ],
+              "zeilen": [
+                [
+                  "Vert 0–30",
+                  "Tête claire : écouter, parler, réfléchir et résoudre des problèmes, ça marche."
+                ],
+                [
+                  "Orange 30–70",
+                  "Ça devient serré : irritable, agité, les pensées tournent en rond, certains se renferment."
+                ],
+                [
+                  "Rouge 70–100",
+                  "Le corps prend le dessus : cœur qui s’emballe, chaleur, vision en tunnel – réfléchir devient presque impossible."
+                ]
+              ]
+            },
+            "tipp": "Écrire en grand à côté de l’affiche : « D’abord redescendre, ensuite parler » ; la phrase aide aussi en cas de conflit : on en reparle quand tu seras de nouveau sous 50. En lisant les situations, laisser de côté celles qui rappellent un incident récent dans la classe.",
+            "wennEsKippt": "Si un jeune décrit le rouge par « là, je frappe », le noter sans commentaire comme un signal (on a envie de frapper) – c’est justement pour ça qu’il existe des skills pour le rouge. Si cela devient trop théorique, prendre des exemples du quotidien : à quoi ressemble un 20 dans le bus, un 60 avant un devoir en classe, un 95 sur le terrain de foot ? Si les situations ne provoquent plus que des rires, faire cocher en silence sur la fiche et n’en discuter que deux ensemble.",
+            "blatt": "ff-anspannungsskala"
+          },
+          {
+            "titel": "Pause active : statues chiffrées",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève derrière sa chaise. L’enseignant·e annonce un chiffre et une situation ; chacun le montre pendant trois secondes avec tout son corps – sans paroles, sans contact, à sa place – puis se relâche. Après le dernier chiffre, tout le monde secoue bras et jambes. Qui ne veut pas participer montre le chiffre seulement avec les mains. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "punkte": [
+              "10 : dimanche matin au lit, rien à faire.",
+              "40 : le devoir en classe va être rendu.",
+              "60 : quelqu’un te passe devant à la cantine.",
+              "80 : ton portable a disparu, il était là il y a une seconde.",
+              "95 : on se fige, trois secondes – puis on secoue tout.",
+              "20 : de retour à sa place, tout va bien."
+            ],
+            "tipp": "Les statues rendent les zones visibles : à 80 et à 95, les poings se serrent, les épaules montent. Le dire en une phrase prépare le tri des skills."
+          },
+          {
+            "titel": "Ranger les skills : jusqu’à quel chiffre ça aide ?",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Chaque îlot reçoit une enveloppe avec les douze cartes skills et sept cartons. Quatre deviennent des titres, posés côte à côte sur la table : vert 0–30, orange 30–70, rouge 70–100, corbeille (blanc) ; sur les trois vierges, le groupe écrit ses propres skills, pris sur l’affiche. Rôles : lire, poser, surveiller le temps, présenter. Chaque carte est lue à voix haute et posée dans la zone la plus haute où le skill aide encore ; dans la corbeille va ce qui fait baisser le chiffre un moment, puis cause des ennuis (9 min). Tour de galerie : chaque îlot va voir la table voisine – on regarde, on ne touche pas (3 min). En classe entière : qu’est-ce qui marche encore à 90 ? Les îlots nomment leurs cartes rouges, l’enseignant·e écrit la règle de base au tableau et fait voter avec les doigts sur deux cartes discutées (8 min).",
+            "sagen": [
+              "Posez chaque carte là où le skill vous aide encore. Si vous n’êtes pas d’accord, posez-la sur la frontière – c’est aussi un résultat.",
+              "Qu’est-ce qui marche encore à 90 ? Tout ce qui demande de réfléchir tombe.",
+              "Jouer à la console : orange ou corbeille ? Vingt minutes pour redescendre, c’est un skill. Cinq heures pour ne pas penser au devoir en classe, plutôt pas."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Zone",
+                "Ce qui aide encore"
+              ],
+              "zeilen": [
+                [
+                  "Vert 0–30",
+                  "Parler, réfléchir, faire un plan – et s’entraîner aux skills"
+                ],
+                [
+                  "Orange 30–70",
+                  "Changer de canal : souffle, sens, musique, mouvement, compter à rebours"
+                ],
+                [
+                  "Rouge 70–100",
+                  "Sans réfléchir : froid, bouger à fond, sortir de la situation, demander de l’aide"
+                ],
+                [
+                  "Corbeille",
+                  "Fait baisser le chiffre un moment, puis cause des ennuis : claquer la porte, crier, casser quelque chose"
+                ]
+              ]
+            },
+            "tipp": "Les désaccords sont bienvenus : que la musique calme encore l’une à 80 et énerve l’autre dès 40, c’est exactement le message – c’est pourquoi la classe teste à partir de la semaine prochaine. Si le temps manque, supprimer le tour de galerie et passer directement à la classe entière.",
+            "wennEsKippt": "Si les cartes servent à faire les clowns, échanger les rôles : qui chahute lit à voix haute. Un jeune qui ne veut pas participer surveille seulement le temps. Si un groupe met tout dans la corbeille ou tout dans le rouge, ne pas corriger, mais demander : à quel chiffre l’avez-vous déjà essayé ? Si une carte du type « se faire mal » apparaît, la retirer sans commentaire et en parler à la personne après le cours.",
+            "blatt": "ff7-skill-sortierkarten"
+          },
+          {
+            "titel": "L’affiche et mes skills de 0 à 100",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Retour à l’affiche « C’est quoi, un skill ? » : répartir entre les îlots les skills qui y figurent ; chaque îlot colle à côté de ses trois ou quatre skills une gommette verte, orange ou rouge – selon le chiffre jusqu’auquel ils aident. À côté des réponses de la colonne « aide un moment », on note : ennuis ensuite (4 min). Regarder l’affiche ensemble : où n’y a-t-il presque pas de gommettes rouges ? C’est justement à ça que serviront les prochaines semaines. Puis chaque jeune remplit seul la fiche « Mes skills de 0 à 100 », exercices 1 et 2 (8 min). Pour finir, deux ou trois volontaires citent un skill de leur zone rouge (3 min).",
+            "sagen": [
+              "Écrivez dans chaque zone au moins un skill qui vous correspond vraiment – pas celui qui sonne le mieux.",
+              "La question de la corbeille est pour vous seuls. Personne ne la lit si vous ne le voulez pas."
+            ],
+            "tipp": "Qui ne trouve rien pour le rouge est en bonne compagnie : la plupart des jeunes connaissent des skills pour le vert et l’orange, mais presque aucun pour le rouge. Écrire « à trouver » est permis – les trois prochaines séances combleront le vide.",
+            "wennEsKippt": "Si tout le monde se bouscule devant l’affiche, faire passer îlot par îlot. Si un jeune n’écrit rien, lui poser la question à l’oral et lui faire noter un mot-clé. Si la corbeille contient quelque chose qui évoque l’automutilation ou la violence, ne pas en parler devant la classe, mais après le cours, et impliquer le SePAS le jour même.",
+            "blatt": "ff7-skills-nach-zahl"
+          },
+          {
+            "titel": "Skill : Stop, recule, souffle",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : voici un skill pour le rouge, qui marche sans réfléchir. D’abord, chacun estime en silence son chiffre et le note dans l’exercice 3 de la fiche (1 min). Puis lire lentement la scène ; tout le monde se l’imagine, les yeux ouverts, et montre à trois à combien serait son chiffre dans cette scène. Au « Stop ! », guider lentement les trois étapes en les faisant soi-même (3 min). Ensuite, noter le chiffre d’après et recueillir deux ou trois retours (3 min) : comment c’était ? Où, au lycée, pouvez-vous reculer d’un pas ? Que veut dire stop dans le groupe WhatsApp de la classe ? Les trois mots restent au tableau.",
+            "sagen": [
+              "Imaginez : vous courez jusqu’à l’arrêt, et le bus part juste sous votre nez. Le prochain passe dans vingt minutes – pile à l’heure du devoir en classe. Vous êtes à combien, là ?",
+              "Stop. Les mains à plat sur la table, la bouche fermée. Penchez-vous en arrière, regardez par la fenêtre. Et maintenant, on souffle – plus longtemps qu’on inspire.",
+              "Parler, écrire, décider – tout ça seulement quand le chiffre est retombé sous 50."
+            ],
+            "punkte": [
+              "Stop : ne rien dire, ne rien faire, ne rien envoyer. Les mains à plat sur la table ou dans les poches.",
+              "Recule : prendre un pas de distance – se pencher en arrière ou reculer, regarder ailleurs, si besoin sortir un instant avec la permission.",
+              "Souffle : expirer longuement cinq fois, plus longtemps qu’on inspire. Parler seulement après."
+            ],
+            "tipp": "Garder une scène banale et ne demander à personne de penser à ses propres souvenirs. Que le chiffre monte rien qu’en imaginant est une découverte importante : le corps réagit aux pensées – et les trois étapes permettent de le freiner.",
+            "wennEsKippt": "Si des rires fusent pendant la lecture, continuer calmement et faire l’exercice soi-même ; la première fois, c’est normal. Qui ne veut pas imaginer la scène s’entraîne seulement aux trois étapes. Si un jeune semble remué ensuite, lui proposer discrètement de respirer encore un peu près de la fenêtre ouverte et lui reparler après le cours.",
+            "blatt": "ff7-skills-nach-zahl"
+          },
+          {
+            "titel": "Skills-Pass, chiffre de fin et mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Dans le Skills-Pass commence aujourd’hui la page du 2e trimestre. Écrire au tableau la question de la première phrase : qu’est-ce qui m’aide encore quand mon chiffre est à 90 ? Chacun écrit sa phrase (2 min) et reçoit le tampon. Ensuite, à trois, tout le monde montre son chiffre actuel avec les doigts ; comparer à voix haute avec le début, sans nommer personne. Pour finir, annoncer la mission de la semaine (elle figure dans le cahier) et la prochaine séance. Désormais, le chiffre fait partie de chaque tour d’humeur.",
+            "sagen": [
+              "Votre chiffre maintenant – à trois. Par rapport au début, chez beaucoup, quelque chose a bougé.",
+              "À partir de la semaine prochaine, en entrant, vous collez une deuxième gommette sur l’échelle de tension."
+            ],
+            "tipp": "L’échelle de tension reste désormais affichée à côté de la roue des émotions. Une deuxième gommette en entrant ne rallonge pas le tour d’humeur, mais montre d’un coup d’œil dans quel état de tension la classe arrive."
+          }
+        ],
+        "bruecke": "La semaine prochaine, vous serez les cobayes : vous testerez des skills par le corps et le souffle – avec un chiffre avant et un chiffre après. Mettez des vêtements dans lesquels vous pouvez bouger.",
+        "mission": "Si ton chiffre dépasse 50 cette semaine : essaie « Stop, recule, souffle » ou un skill de ta liste. À combien était ton chiffre avant, à combien après ?",
+        "hintergrund": "L’échelle de tension de 0 à 100 fait partie des outils de base de l’entraînement aux skills pour adolescents (Fleischhaker et al., 2011). Elle distingue l’intensité de la tension de l’émotion elle-même et rend concret ce que décrit Linehan (2015) : quand l’excitation est très forte, les savoir-faire qui demandent de réfléchir ne fonctionnent plus. Ce qui aide alors passe directement par le corps et les sens ; discuter et résoudre un problème ne redevient possible qu’une fois la tension retombée. Le modèle de la main le montre avec des mots de jeunes : quand l’excitation monte, « le couvercle saute », et la partie qui réfléchit et freine devient presque injoignable (Siegel & Bryson, 2011). D’où la règle de base : en vert, parler et résoudre ; en orange, changer de canal ; en rouge, calmer d’abord le corps. Les limites de 30 et 70 sont des repères. Qui donne souvent son chiffre repère plus tôt son état et choisit mieux son skill.",
+        "quellen": [
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte."
+        ],
+        "achtung": "« Lève-toi si… », la question de la corbeille et les chiffres personnels touchent à des moments où l’on a perdu le contrôle. Rester assis est toujours permis, la fiche n’est pas ramassée. Si un jeune cite l’automutilation, la drogue ou la violence comme « skill » : rester calme, ne pas approfondir devant la classe, informer le SePAS le jour même et agir selon le protocole de protection de l’école. Si un jeune montre souvent des chiffres au-dessus de 80, lui en parler délicatement après le cours et impliquer le régent.",
+        "differenzierung": {
+          "leichter": "La couleur suffit à la place du chiffre : vert, orange, rouge. Les cartes skills ont des pictogrammes ; dans l’îlot, quelqu’un qui lit bien lit à voix haute. Un jeune qui apprend encore la langue du cours s’assoit à côté de quelqu’un qui peut traduire et note des mots-clés sur la fiche, aussi dans sa langue ; les mots-clés et la règle de base restent au tableau.",
+          "schwerer": "Pour deux situations de l’exercice 2, noter quelle pensée fait monter le chiffre. Prendre le rôle de modérateur dans l’îlot et, en cas de désaccord, demander les raisons. Formuler une règle de base pour la classe, par exemple pour les disputes dans le groupe WhatsApp de la classe."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le premier chiffre (5 min), l’échelle de tension avec le modèle de la main et l’exercice 1 (15 min), ranger les skills avec les cartes et la règle de base au tableau (15 min), skill « Stop, recule, souffle » (10 min), Skills-Pass et mission (5 min). « Lève-toi si… », les situations et les statues chiffrées sont supprimés ; l’affiche et la fiche « Mes skills de 0 à 100 » sont complétées à la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-skills-nach-zahl",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln"
+      ],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Anspannung",
+        "Anspannungsskala 0–100",
+        "Skills ordnen",
+        "Förderfach"
+      ],
+      "bild": "icon:temperature",
+      "kurs": [
+        "ff7-e13"
+      ],
+      "de": {
+        "titel": "Meine Skills von 0 bis 100",
+        "untertitel": "Nicht jeder Skill passt zu jeder Zahl. Hier sammelst du, was dir bei Grün, Gelb und Rot hilft.",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Bei Grün kannst du reden, nachdenken und Probleme lösen. Bei Gelb hilft es, umzuschalten: Atem, Sinne, Musik, Bewegung. Bei Rot geht Nachdenken kaum noch – dann helfen Skills, die ohne Kopf funktionieren."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Welche Skills helfen dir – und bis zu welcher Zahl? Schreib in jede Zone mindestens einen Skill.",
+            "hinweis": "Ideen: die Skill-Karten, das Plakat „Was sind Skills?“ und deine eigenen. Für Rot darfst du auch „noch offen“ schreiben.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "thermometer",
+            "linien": 3,
+            "stufen": [
+              {
+                "titel": "Grün (0–30): Ich kann klar denken",
+                "text": "Das hilft mir, solange ich noch reden und nachdenken kann:"
+              },
+              {
+                "titel": "Gelb (30–70): Es wird eng",
+                "text": "Damit schalte ich um und komme wieder runter:"
+              },
+              {
+                "titel": "Rot (70–100): Der Körper übernimmt",
+                "text": "Das geht bei mir auch bei 90 noch:"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Skill für Rot: Stopp, zurück, ausatmen",
+            "punkte": [
+              "Stopp: Nichts sagen, nichts tun, nichts abschicken.",
+              "Zurück: einen Schritt Abstand – Blick weg, wenn nötig kurz raus.",
+              "Ausatmen: fünfmal lang aus, länger aus als ein. Reden erst danach."
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Der Papierkorb: Was senkt deine Zahl kurz, macht aber danach Ärger? Was probierst du stattdessen?"
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Kurz hilft mir manchmal …, aber danach …",
+              "Stattdessen probiere ich …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein erstes Experiment: Schätz deine Zahl vor und nach dem Skill. Trag auch einen Test aus deinem Alltag ein.",
+            "hinweis": "So testest du ab jetzt jeden Skill: Zahl vorher, Skill, Zahl nachher.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Zahl vorher",
+              "Skill – wann und wo?",
+              "Zahl nachher"
+            ],
+            "breiten": [
+              1,
+              3,
+              1
+            ],
+            "zeilen": 3,
+            "beispiel": [
+              "60",
+              "5-4-3-2-1 im Bus nach einem Streit",
+              "40"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Das Blatt wird nicht eingesammelt. Die Papierkorb-Frage liest niemand ohne deine Erlaubnis."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen halten fest, welche Skills ihnen bei Grün, Gelb und Rot helfen, erkennen Verhalten, das kurz entlastet und danach schadet, und testen einen ersten Skill mit Zahl vorher und nachher.",
+          "ablauf": [
+            "Einheit 13, Schritt 7 (8 Min.): Aufgaben 1 und 2 allein; Skill-Karten, Plakat und Faustregel an der Tafel liefern Ideen.",
+            "Schritt 8: Aufgabe 3 – Zahl vorher, Skill „Stopp, zurück, ausatmen“, Zahl nachher.",
+            "Die zweite Zeile von Aufgabe 3 gehört zur Wochen-Mission. Beim Skills-Koffer und Ampelplan (Einheit 17) liegt das Blatt daneben."
+          ],
+          "hintergrund": "Bei sehr hoher Erregung versagen Fertigkeiten, die Nachdenken voraussetzen; dann helfen Skills, die am Körper und an den Sinnen ansetzen (Linehan, 2015). Die Anspannungsskala von 0 bis 100 macht diese Unterscheidung für Jugendliche greifbar (Fleischhaker et al., 2011). Der Papierkorb benennt, was kurz entlastet und auf Dauer schadet – ohne zu moralisieren.",
+          "quellen": [
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+            "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer."
+          ],
+          "achtung": "Die Papierkorb-Frage nicht vorlesen lassen und nicht einsammeln. Hinweise auf Selbstverletzung, Drogen oder Gewalt nach der Stunde aufgreifen und noch am selben Tag den SePAS einbeziehen.",
+          "material": "Skill-Karten, Plakat „Was sind Skills?“"
+        }
+      },
+      "fr": {
+        "titel": "Mes skills de 0 à 100",
+        "untertitel": "Tous les skills ne conviennent pas à tous les chiffres. Ici, tu notes ce qui t’aide en vert, en orange et en rouge.",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "En vert, tu peux parler, réfléchir et résoudre des problèmes. En orange, ça aide de changer de canal : souffle, sens, musique, mouvement. En rouge, réfléchir devient presque impossible – ce qui aide alors, ce sont des skills qui marchent sans la tête."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Quels skills t’aident – et jusqu’à quel chiffre ? Écris au moins un skill dans chaque zone.",
+            "hinweis": "Des idées : les cartes skills, l’affiche « C’est quoi, un skill ? » et les tiennes. Pour le rouge, tu peux aussi écrire « à trouver ».",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "thermometer",
+            "linien": 3,
+            "stufen": [
+              {
+                "titel": "Vert (0–30) : je peux réfléchir clairement",
+                "text": "Ce qui m’aide tant que je peux encore parler et réfléchir :"
+              },
+              {
+                "titel": "Orange (30–70) : ça devient serré",
+                "text": "Ce qui me fait changer de canal et redescendre :"
+              },
+              {
+                "titel": "Rouge (70–100) : le corps prend le dessus",
+                "text": "Ce qui marche encore chez moi à 90 :"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Skill pour le rouge : Stop, recule, souffle",
+            "punkte": [
+              "Stop : ne dis rien, ne fais rien, n’envoie rien.",
+              "Recule : prends un pas de distance – regarde ailleurs, sors un instant si besoin.",
+              "Souffle : expire longuement cinq fois, plus longtemps que tu n’inspires. Parle seulement après."
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "La corbeille : qu’est-ce qui fait baisser ton chiffre un moment, mais cause des ennuis ensuite ? Qu’essaies-tu à la place ?"
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Sur le moment, ce qui m’aide parfois, c’est…, mais ensuite…",
+              "À la place, j’essaie…"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ta première expérience : estime ton chiffre avant et après le skill. Note aussi un essai de ton quotidien.",
+            "hinweis": "Désormais, tu testes chaque skill ainsi : chiffre avant, skill, chiffre après.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Chiffre avant",
+              "Skill – quand et où ?",
+              "Chiffre après"
+            ],
+            "breiten": [
+              1,
+              3,
+              1
+            ],
+            "zeilen": 3,
+            "beispiel": [
+              "60",
+              "5-4-3-2-1 dans le bus après une dispute",
+              "40"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "La fiche n’est pas ramassée. Personne ne lit la question de la corbeille sans ta permission."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes notent quels skills les aident en vert, en orange et en rouge, repèrent les comportements qui soulagent un moment puis font du tort, et testent un premier skill avec un chiffre avant et après.",
+          "ablauf": [
+            "Séance 13, étape 7 (8 min) : exercices 1 et 2 seul ; les cartes skills, l’affiche et la règle de base au tableau donnent des idées.",
+            "Étape 8 : exercice 3 – chiffre avant, skill « Stop, recule, souffle », chiffre après.",
+            "La deuxième ligne de l’exercice 3 va avec la mission de la semaine. Pour la valise à skills et le plan feu tricolore (séance 17), la fiche reste à portée de main."
+          ],
+          "hintergrund": "Quand l’excitation est très forte, les savoir-faire qui demandent de réfléchir ne fonctionnent plus ; ce qui aide alors passe par le corps et les sens (Linehan, 2015). L’échelle de tension de 0 à 100 rend cette distinction concrète pour les jeunes (Fleischhaker et al., 2011). La corbeille nomme ce qui soulage un moment et fait du tort à la longue – sans faire la morale.",
+          "quellen": [
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+            "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer."
+          ],
+          "achtung": "Ne pas faire lire la question de la corbeille et ne pas ramasser la fiche. Reprendre après le cours tout signe d’automutilation, de drogue ou de violence et impliquer le SePAS le jour même.",
+          "material": "Cartes skills, affiche « C’est quoi, un skill ? »"
+        }
+      }
+    },
+    {
+      "id": "ff7-skill-sortierkarten",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Skills ordnen",
+        "Anspannung",
+        "Sortierkarten",
+        "Förderfach"
+      ],
+      "bild": "icon:list-check",
+      "kurs": [
+        "ff7-e13"
+      ],
+      "de": {
+        "titel": "Skill-Karten zum Sortieren",
+        "untertitel": "Ein Satz je Tischgruppe – vor der Stunde ausschneiden und in Umschläge stecken",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Die Gruppe legt jede Karte in die höchste Zone, in der der Skill noch hilft: Grün 0–30, Gelb 30–70, Rot 70–100. In den Papierkorb kommt, was die Zahl kurz senkt und danach Ärger macht. Die Karten sind bewusst gemischt; einige sind umstritten.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "karten": [
+              {
+                "titel": "Musik hören",
+                "text": "Einen Song, der dich runterbringt, über Kopfhörer hören.",
+                "bild": "icon:headphones"
+              },
+              {
+                "titel": "Kaltes Wasser",
+                "text": "Hände oder Handgelenke 30 Sekunden unter kaltes Wasser halten.",
+                "bild": "icon:droplet"
+              },
+              {
+                "titel": "In Ruhe reden",
+                "text": "Einer Person erzählen, was los ist, und zusammen überlegen.",
+                "bild": "icon:messages"
+              },
+              {
+                "titel": "Tür knallen",
+                "text": "Die Tür zuschlagen, gegen etwas treten oder laut fluchen.",
+                "bild": "icon:door"
+              },
+              {
+                "titel": "Fingeratmung",
+                "text": "Am Finger hoch einatmen, runter langsam ausatmen. Fünf Finger.",
+                "bild": "icon:hand-finger"
+              },
+              {
+                "titel": "Hilfe holen",
+                "text": "Einer erwachsenen Person sagen: Ich brauche gerade Hilfe.",
+                "bild": "icon:lifebuoy"
+              },
+              {
+                "titel": "Zocken oder scrollen",
+                "text": "Eine Weile am Handy oder an der Konsole abschalten.",
+                "bild": "icon:device-gamepad-2"
+              },
+              {
+                "titel": "Rückwärts zählen",
+                "text": "Von 100 in Dreierschritten rückwärts: 100, 97, 94 …",
+                "bild": "icon:math-symbols"
+              },
+              {
+                "titel": "Vollgas-Bewegung",
+                "text": "Eine Minute Treppe laufen, Hampelmann oder auf der Stelle rennen.",
+                "bild": "icon:run"
+              },
+              {
+                "titel": "Einen Plan machen",
+                "text": "Aufschreiben: Was ist das Problem? Was ist der erste Schritt?",
+                "bild": "icon:checklist"
+              },
+              {
+                "titel": "5-4-3-2-1",
+                "text": "5 Dinge sehen, 4 hören, 3 spüren, 2 riechen, 1 schmecken.",
+                "bild": "icon:eye"
+              },
+              {
+                "titel": "Raus aus der Situation",
+                "text": "Kurz weggehen. In der Schule nur mit Erlaubnis – vor die Tür, in Sichtweite.",
+                "bild": "icon:door-exit"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Zwölf Skills zum Sortieren nach Zonen: Die Tischgruppen entscheiden, bis zu welcher Zahl ein Skill noch hilft, und trennen Skills von Verhalten, das kurz entlastet und danach Ärger macht.",
+          "ablauf": [
+            "Fünfmal kopieren, möglichst auf festes Papier, und ausschneiden; je Tischgruppe ein Satz in einem Umschlag.",
+            "In jeden Umschlag sieben Moderationskarten: grün, gelb, rot, weiß (Papierkorb) und drei leere für eigene Skills.",
+            "Einheit 13, Schritt 6: sortieren (9 Min.), Rundgang (3 Min.), Faustregel in der Klasse (8 Min.)."
+          ],
+          "hintergrund": "Fertigkeiten, die Nachdenken brauchen, versagen bei sehr hoher Anspannung, Körper- und Sinnes-Skills dagegen kaum (Linehan, 2015). Die Karten „Musik hören“ und „Zocken oder scrollen“ sind bewusst umstritten: Ob sie helfen, hängt von Dauer, Person und Moment ab.",
+          "quellen": [
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          ],
+          "material": "Festes Papier, Schere, fünf Umschläge"
+        }
+      },
+      "fr": {
+        "titel": "Cartes skills à trier",
+        "untertitel": "Un jeu par îlot – à découper avant la séance et à glisser dans des enveloppes",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Le groupe pose chaque carte dans la zone la plus haute où le skill aide encore : vert 0–30, orange 30–70, rouge 70–100. Dans la corbeille va ce qui fait baisser le chiffre un moment, puis cause des ennuis. Les cartes sont volontairement mélangées ; certaines font débat.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "karten": [
+              {
+                "titel": "Écouter de la musique",
+                "text": "Un morceau qui te calme, avec des écouteurs.",
+                "bild": "icon:headphones"
+              },
+              {
+                "titel": "De l’eau froide",
+                "text": "Passer les mains ou les poignets 30 secondes sous l’eau froide.",
+                "bild": "icon:droplet"
+              },
+              {
+                "titel": "Parler au calme",
+                "text": "Raconter à quelqu’un ce qui se passe et réfléchir ensemble.",
+                "bild": "icon:messages"
+              },
+              {
+                "titel": "Claquer la porte",
+                "text": "Claquer la porte, donner un coup de pied dans quelque chose ou jurer fort.",
+                "bild": "icon:door"
+              },
+              {
+                "titel": "Respiration des doigts",
+                "text": "On monte le long du doigt en inspirant, on redescend en expirant lentement. Cinq doigts.",
+                "bild": "icon:hand-finger"
+              },
+              {
+                "titel": "Demander de l’aide",
+                "text": "Dire à un adulte : j’ai besoin d’aide, là.",
+                "bild": "icon:lifebuoy"
+              },
+              {
+                "titel": "Jouer ou scroller",
+                "text": "Décrocher un moment sur le portable ou la console.",
+                "bild": "icon:device-gamepad-2"
+              },
+              {
+                "titel": "Compter à rebours",
+                "text": "Partir de 100 et reculer de 3 en 3 : 100, 97, 94…",
+                "bild": "icon:math-symbols"
+              },
+              {
+                "titel": "Bouger à fond",
+                "text": "Une minute d’escaliers, de sauts sur place ou de course sur place.",
+                "bild": "icon:run"
+              },
+              {
+                "titel": "Faire un plan",
+                "text": "Écrire : quel est le problème ? Quelle est la première étape ?",
+                "bild": "icon:checklist"
+              },
+              {
+                "titel": "5-4-3-2-1",
+                "text": "5 choses que tu vois, 4 que tu entends, 3 que tu sens sur ta peau, 2 odeurs, 1 goût.",
+                "bild": "icon:eye"
+              },
+              {
+                "titel": "Sortir de la situation",
+                "text": "S’éloigner un moment. À l’école, seulement avec la permission – devant la porte, à portée de vue.",
+                "bild": "icon:door-exit"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Douze skills à trier par zones : les îlots décident jusqu’à quel chiffre un skill aide encore et séparent les skills des comportements qui soulagent un moment, puis causent des ennuis.",
+          "ablauf": [
+            "Photocopier en cinq exemplaires, si possible sur papier épais, et découper ; un jeu par îlot dans une enveloppe.",
+            "Dans chaque enveloppe, sept cartons : vert, orange, rouge, blanc (corbeille) et trois vierges pour les skills des jeunes.",
+            "Séance 13, étape 6 : trier (9 min), tour de galerie (3 min), règle de base en classe entière (8 min)."
+          ],
+          "hintergrund": "Les savoir-faire qui demandent de réfléchir ne fonctionnent plus quand la tension est très forte, contrairement aux skills qui passent par le corps et les sens (Linehan, 2015). Les cartes « Écouter de la musique » et « Jouer ou scroller » font volontairement débat : leur effet dépend de la durée, de la personne et du moment.",
+          "quellen": [
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          ],
+          "material": "Papier épais, ciseaux, cinq enveloppes"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1066 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e29",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-kritischer-detektiv"
+      ],
+      "vorlagen": [
+        "ff7-detektiv-fallakten",
+        "ff7-glaubenssatz-karten"
+      ],
+      "woerter": [
+        {
+          "de": "der Beweis",
+          "fr": "la preuve"
+        },
+        {
+          "de": "die Tatsache",
+          "fr": "le fait"
+        },
+        {
+          "de": "das Urteil",
+          "fr": "le jugement"
+        },
+        {
+          "de": "prüfen",
+          "fr": "vérifier"
+        },
+        {
+          "de": "realistisch",
+          "fr": "réaliste"
+        },
+        {
+          "de": "der Detektiv",
+          "fr": "le détective"
+        }
+      ],
+      "de": {
+        "titel": "Der kritische Detektiv",
+        "kurz": "Glaubenssätze wie Detektive prüfen: erst an erfundenen Fällen, dann an einem selbst gewählten Satz – und einen realistischen neuen Satz auf einem Kärtchen mitnehmen.",
+        "ziele": [
+          "unterscheiden Tatsachen von Gefühlen, Vermutungen und Sprüchen",
+          "sammeln Beweise für und gegen einen Glaubenssatz",
+          "formulieren mit drei Regeln einen realistischen neuen Satz",
+          "probieren die freundliche Stimme als Skill aus"
+        ],
+        "material": [
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Schülerheft für jede Person",
+          "Fallakten (Kopiervorlage)",
+          "Glaubenssatz-Karten, 5 Umschläge",
+          "Fünf A4-Blätter, Moderationskarten",
+          "Karteikarten A7, zwei je Person",
+          "Buntstifte, breites Klebeband",
+          "Leise Musik ohne Gesang",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Tafelbild: oben der Fall Mathis, darunter eine leere Waage (Schritt 3).",
+          "Fallakten kopieren, ausschneiden; einen Fall, der einer Lage in der Klasse ähnelt, durch die Reserve ersetzen.",
+          "Die drei Regeln (Schritt 4) groß auf ein Plakat; es hängt bis Einheit 30.",
+          "Bremsende Glaubenssatz-Karten aus zwei Umschlägen mischen (Schritt 6)."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in mit Detektivfrage"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick: Heute seid ihr Detektive"
+          },
+          {
+            "min": "15–28",
+            "phase": "input",
+            "titel": "Die Detektiv-Methode: der Fall Mathis"
+          },
+          {
+            "min": "28–45",
+            "phase": "uebung",
+            "titel": "Fallakten in Tischgruppen"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Wer ist der Dirigent?"
+          },
+          {
+            "min": "50–60",
+            "phase": "uebung",
+            "titel": "Gegensatz-Duell der Tischgruppen"
+          },
+          {
+            "min": "60–75",
+            "phase": "uebung",
+            "titel": "Mein Satz vor Gericht"
+          },
+          {
+            "min": "75–85",
+            "phase": "uebung",
+            "titel": "Mein Kärtchen für den Alltag"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Die freundliche Stimme"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass und Wochen-Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in mit Detektivfrage",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern; die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige folgen (4 Min.). Dazu die Detektivfrage der Woche: Ist euch seit letzter Woche einer der Sätze von den Karten irgendwo begegnet – im Kopf, in einem Gespräch, in einem Video oder Songtext? Zwei, drei Stimmen erzählen kurz; nur erzählen, nicht erklären, und niemand muss sagen, wessen Kopf es war (4 Min.). Zum Schluss sagen, warum Detektive einen kühlen Kopf brauchen: Gedanken prüfen klappt im grünen Bereich. Wer über 70 liegt, macht vorher eine Runde Fingeratmung (2 Min.).",
+            "sagen": [
+              "Gefühl und Zahl – und wer mag: Ist euch diese Woche einer der Sätze begegnet? Im Kopf, im Gespräch, in einem Video?",
+              "Nur erzählen, nicht erklären. Und niemand muss sagen, ob es der eigene Kopf war."
+            ],
+            "tipp": "Songtexte und Videos sind ergiebig: Sätze wie „Mich versteht eh keiner“ oder „Ich bin nicht gut genug“ tauchen dort ständig auf. So lässt sich über die Sätze reden, ohne über sich selbst zu reden.",
+            "wennEsKippt": "Meldet sich niemand, selbst ein Beispiel geben, etwa einen Satz aus einem Lied oder einer Serie. Erzählt jemand doch sehr Persönliches, kurz danken, nicht vertiefen und nach der Stunde ansprechen."
+          },
+          {
+            "titel": "Rückblick: Heute seid ihr Detektive",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Per Daumen nach der Wochen-Mission fragen: Wer hat sich einmal gesagt, was eine gute Freundin sagen würde, oder den Dankbarkeitsblitz gemacht? Eine Stimme erzählt, niemand muss es geschafft haben. Dann das Bild des Detektivs einführen: Ein guter Detektiv glaubt nichts, nur weil es jemand behauptet – auch nicht der eigenen inneren Stimme. Er sammelt Beweise für beide Seiten und urteilt erst dann. Die Verbindung zu „Echt oder fake?“ ziehen: Auch dort hieß es, erst prüfen, dann glauben.",
+            "sagen": [
+              "Eure innere Stimme behauptet manchmal Dinge wie: Du bist dumm. Heute prüft ihr, ob sie dafür Beweise hat.",
+              "Ein Detektiv ist weder nett noch gemein. Er will nur wissen, was stimmt."
+            ],
+            "tipp": "Ein Requisit wirkt Wunder: eine Lupe, eine Kappe oder ein Notizblock, mit dem die Lehrkraft in die Rolle der Ermittlerin schlüpft. Die meisten 7e machen da sofort mit."
+          },
+          {
+            "titel": "Die Detektiv-Methode: der Fall Mathis",
+            "dauer": 13,
+            "phase": "input",
+            "text": "Auf das Tafelbild zeigen: Mathis, 13, hat im Mathetest 22 von 60 Punkten und denkt: „Ich bin dumm.“ Zuerst klären, was ein Beweis ist: etwas, das wirklich passiert ist und das eine Kamera filmen könnte. „22 von 60“ ist eine Tatsache, „dumm“ ist ein Urteil, „Ich fühle mich so dumm“ ist ein Gefühl (3 Min.). Dann die Waage gemeinsam füllen: Die Lehrkraft liest die Spuren aus der Tabelle nacheinander vor, die Klasse zeigt mit dem Arm auf die Seite der Waage, auf die sie gehört, und die Lehrkraft schreibt sie dort an. Dazwischen zwei Spuren, die keine Beweise sind – „Ich fühle mich in Mathe so dumm“ und „Mein Bruder sagt, ich bin dumm“ –; sie kommen neben die Waage und werden durchgestrichen (4 Min.). Dann die Detektivfragen vorstellen (Liste) und eine an Mathis ausprobieren: Was würde sein bester Kumpel sagen? (3 Min.) Zum Schluss das Urteil: Nicht „Ich bin dumm“ stimmt, sondern „Mathe fällt mir schwer“. Daraus wird mit den drei Regeln vom Plakat der neue Satz: „Mathe fällt mir schwer, aber wenn ich übe und nachfrage, werde ich besser.“ (3 Min.)",
+            "sagen": [
+              "Ist das ein Beweis oder ein Gefühl? Würde das vor Gericht zählen?",
+              "Die Beweise dafür lassen wir stehen. Sie stimmen ja – aber sie beweisen nur einen kleineren Satz."
+            ],
+            "punkte": [
+              "Gab es eine Situation, in der der Satz nicht gestimmt hat?",
+              "Was würde eine gute Freundin oder ein guter Freund dazu sagen?",
+              "Würde ich das auch über jemanden sagen, den ich mag?",
+              "Stimmt der Satz immer – oder nur manchmal, nur in einem Bereich?",
+              "Ist das eine Tatsache – oder ein Gefühl, eine Vermutung, ein Spruch?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Beweise dafür",
+                "Beweise dagegen"
+              ],
+              "zeilen": [
+                [
+                  "22 von 60 Punkten im letzten Mathetest",
+                  "Im Test davor waren es 15 – es wird besser"
+                ],
+                [
+                  "Bei langen Textaufgaben braucht er länger als andere",
+                  "Er repariert die Fahrräder seiner Freunde"
+                ],
+                [
+                  "",
+                  "Er kennt die Regeln von drei Kartenspielen und erklärt sie anderen"
+                ],
+                [
+                  "",
+                  "Im Atelier war seine Lampe als Erste fertig"
+                ]
+              ]
+            },
+            "tipp": "Die Beweise für den Satz ernst nehmen und stehen lassen: Meist stützen sie nur einen kleineren Satz („Mathe fällt mir schwer“) – genau daraus wird der neue Satz. Wer sofort zum Gegenteil springt („Mathis ist ein Genie“), wird zurückgeholt: Würde Mathis sich das glauben?",
+            "wennEsKippt": "Sagt jemand „Mathis ist halt dumm, 22 Punkte“, nicht empört reagieren, sondern die Detektivfrage stellen: Ist das eine Tatsache oder ein Urteil? Dann fragen, wer jemanden kennt, der in Mathe schwach war und etwas anderes richtig gut kann. Meist kippt die Stimmung von selbst.",
+            "blatt": "ff7-kritischer-detektiv"
+          },
+          {
+            "titel": "Fallakten in Tischgruppen",
+            "dauer": 17,
+            "phase": "uebung",
+            "text": "Jede Tischgruppe bekommt eine Fallakte und ein A4-Blatt, das sie quer in drei Spalten teilt: dafür – dagegen – kein Beweis. Rollen verteilen: Vorlesen, Schreiben, Zeit, Sprechen. Die Gruppe liest den Fall und sortiert die sechs Spuren mit ihren Buchstaben in die drei Spalten (6 Min.). Dann stellt sie die Detektivfrage, was eine gute Freundin der Figur sagen würde, und schreibt auf eine Moderationskarte ihr Urteil – Was stimmt wirklich? – und einen neuen Satz nach den drei Regeln (5 Min.). Zum Schluss stellt jede Gruppe ihren Fall in einem Satz vor, nennt ihre stärkste Gegenspur und hängt die Karte an die Tafel; die Klasse prüft mit dem Daumen, ob der neue Satz die drei Regeln erfüllt (6 Min.). Die Lösungen stehen in der Tabelle.",
+            "sagen": [
+              "Sortiert jede Spur: dafür, dagegen – oder gar kein Beweis?",
+              "Was würde Tiagos beste Freundin zu seinem Satz sagen?",
+              "Erfüllt der neue Satz die drei Regeln? Daumen hoch oder runter."
+            ],
+            "punkte": [
+              "Ich kann mir den Satz glauben – kein Schönreden. „Ich bin perfekt“ glaubt keiner.",
+              "Er sagt, was ich tun kann – nicht, was ich nicht bin.",
+              "Er lässt Platz zum Besserwerden: „noch“, „ich lerne“, „wenn ich übe“."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Fallakte",
+                "dafür – dagegen – kein Beweis"
+              ],
+              "zeilen": [
+                [
+                  "1 Tiago: „Ich bin unsportlich.“",
+                  "A, D – B, E, F – C (Vermutung)"
+                ],
+                [
+                  "2 Inês: „Ich kann kein Französisch.“",
+                  "A, E – B, C, F – D (Gefühl)"
+                ],
+                [
+                  "3 Yusuf: „Wenn ich einen Fehler mache, lachen alle.“",
+                  "A, F – B, C, E – D (Vermutung)"
+                ],
+                [
+                  "4 Léa: „Mir hilft sowieso keiner.“",
+                  "B, E – A, C, F – D (Gefühl)"
+                ],
+                [
+                  "5 Chiara: „Ich bin zu schüchtern, ich finde nie Freunde.“",
+                  "A, E – B, C, F – D (Vermutung)"
+                ],
+                [
+                  "6 Rafael (Reserve): „Ich bin faul.“",
+                  "A, E – B, D, F – C (Spruch)"
+                ]
+              ]
+            },
+            "tipp": "Die Spuren „kein Beweis“ sind die lehrreichsten: Gefühle, Vermutungen und Sprüche fühlen sich wie Beweise an, sind aber keine. Wer das einmal an einer Figur gesehen hat, erkennt es leichter bei sich. Unruhige Jugendliche bekommen die Rolle Zeit oder Schreiben.",
+            "wennEsKippt": "Rätselt eine Gruppe lange über eine Spur, legt sie sie in die Mitte; beim Vorstellen klärt die Klasse. Wird aus dem neuen Satz Schönrederei („Tiago ist der Beste“), zurückfragen: Würde Tiago sich das glauben? Was davon stimmt wirklich? Albert eine Gruppe nur herum, setzt sich die Lehrkraft dazu und übernimmt das Vorlesen.",
+            "blatt": "ff7-detektiv-fallakten"
+          },
+          {
+            "titel": "Bewegungspause: Wer ist der Dirigent?",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen an ihren Plätzen. Eine freiwillige Person ist Detektiv und dreht sich zur Wand. Die Klasse bestimmt per Zeichen einen Dirigenten, der Bewegungen vormacht – klatschen, auf die Oberschenkel klopfen, mit dem Fuß stampfen – und unauffällig wechselt; alle machen sofort mit. Der Detektiv dreht sich um, beobachtet und hat drei Versuche, den Dirigenten zu finden. Zwei, drei Runden mit neuen Rollen. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Detektive, schaut genau hin: Wer macht den Wechsel zuerst?"
+            ],
+            "tipp": "Das Spiel übt nebenbei, was Detektive ausmacht: genau beobachten statt raten. Wer nicht aufstehen möchte, macht die Bewegungen im Sitzen mit.",
+            "wennEsKippt": "Verraten die anderen den Dirigenten durch Hinstarren, den Tipp geben: Schaut auf jemanden gegenüber, nicht auf den Dirigenten. Findet der Detektiv den Dirigenten nicht, löst dieser nach drei Versuchen selbst auf – Applaus für beide. Will niemand Detektiv sein, übernimmt die Lehrkraft die erste Runde."
+          },
+          {
+            "titel": "Gegensatz-Duell der Tischgruppen",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Die bremsenden Karten aus zwei Umschlägen liegen gemischt als Stapel bereit. Eine Runde: Die Lehrkraft zieht eine Karte und liest sie laut vor, alle rufen „Stopp!“. Jede Gruppe hat 30 Sekunden, um flüsternd einen hilfreichen, realistischen Gegensatz zu finden. Dann sagt jede Gruppe ihren Gegensatz der Reihe nach, jedes Mal spricht eine andere Person; die Klasse prüft mit dem Daumen, ob er die drei Regeln erfüllt. Jeder gültige Gegensatz bringt einen Punkt. Kommt ein Satz zum zweiten Mal, muss der Gegensatz neu sein. Vier bis fünf Runden; ab Runde drei zieht und liest eine Person aus der Klasse. Danach kommen die Karten offen aufs Pult.",
+            "sagen": [
+              "Stopp! Und jetzt: Was sagt ihr diesem Satz?",
+              "Kann man ihn sich glauben, sagt er, was ich tun kann, lässt er Platz zum Besserwerden? Daumen hoch oder runter."
+            ],
+            "tipp": "Gerät die Klasse in Konkurrenz-Stress, kooperativ spielen: Alle Gruppen zusammen sammeln in 60 Sekunden so viele gültige Gegensätze wie möglich, die Lehrkraft zählt mit. Wer nicht sprechen mag, gibt das Wort in der Gruppe weiter.",
+            "wennEsKippt": "Werden Gegensätze absichtlich albern oder gegen Personen gerichtet, das Spiel kurz anhalten: Gegensätze antworten dem Satz, nie einer Person. Streiten Gruppen um Punkte, die Punkte weglassen und nur den besten Gegensatz jeder Runde an die Tafel schreiben.",
+            "blatt": "ff7-glaubenssatz-karten"
+          },
+          {
+            "titel": "Mein Satz vor Gericht",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Jede Person wählt still einen Satz: einen eigenen vom Blatt „Meine Glaubenssätze“, eine Karte vom Pult oder den Satz einer Figur aus der letzten Stunde. Niemand muss sagen, welchen. Sichtschutz wie letzte Woche, leise Musik (1 Min.). Aufgabe 1 (2 Min.): den verdächtigen Satz aufschreiben und ankreuzen, wie sehr man ihn glaubt. Aufgabe 2 (6 Min.): Beweise auf die Waage; die Detektivfragen im Kasten helfen, wenn eine Seite leer bleibt. Aufgabe 3 (3 Min.): Urteil – Was stimmt wirklich? – und neu ankreuzen. Aufgabe 4 (3 Min.): ein neuer Satz mit den drei Regeln; wer schnell ist, plant mit Aufgabe 5 eine Situation. Die Lehrkraft sagt jeweils an, wann die nächste Aufgabe beginnt, geht herum und hilft auf Nachfrage, vor allem bei der rechten Seite der Waage; sie liest nur, was ihr gezeigt wird.",
+            "sagen": [
+              "Ihr entscheidet, welchen Satz ihr vor Gericht stellt. Niemand muss wissen, welchen.",
+              "Schreibt Gegenbeweise auch dann auf, wenn ihr selbst noch nicht ganz überzeugt seid.",
+              "Wie sehr glaubt ihr den alten Satz jetzt, nach der Beweisaufnahme?"
+            ],
+            "tipp": "Die Zahlen vorher und nachher vergleichen lassen: Schon ein Schritt von 8 auf 6 ist ein Erfolg und darf so benannt werden. Wer nur Aufgabe 1 und 2 schafft, hat das Wichtigste gemacht.",
+            "wennEsKippt": "Bleibt die rechte Seite leer („Da gibt es nichts“), nicht überreden, sondern die Detektivfragen einzeln und leise stellen und kleine Belege gelten lassen. Wer mit dem eigenen Satz nicht weiterkommt oder ihn heute nicht anfassen mag, wechselt ohne Begründung zu einer Karte. Hat ein Satz einen wahren Kern, etwa weil jemand wirklich ausgegrenzt wird, nicht wegdiskutieren: ernst nehmen und nach der Stunde besprechen, wer helfen kann.",
+            "blatt": "ff7-kritischer-detektiv"
+          },
+          {
+            "titel": "Mein Kärtchen für den Alltag",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Jede Person schreibt ihren neuen Satz auf eine Karteikarte und gestaltet sie mit Farbe, Schrift oder einem Symbol (7 Min.). Wer den Satz nicht offen herumtragen möchte, schreibt ihn auf die Rückseite und gestaltet die Vorderseite mit einem neutralen Motiv. Wer noch keinen neuen Satz hat, nimmt einen von den hilfreichen Karten oder von der Tafel. Ein Streifen breites Klebeband über der Vorderseite macht das Kärtchen haltbar. Zum Schluss überlegt jede Person still, wo das Kärtchen wohnen soll – Handyhülle, Portemonnaie, Federmäppchen –, und zwei, drei Freiwillige zeigen ihre Vorderseite (3 Min.).",
+            "sagen": [
+              "Gestaltet die Karte so, dass ihr sie gern anschaut – nicht so, dass sie für andere gut aussieht.",
+              "Wo muss der Satz sein, damit er da ist, wenn sich der alte meldet?"
+            ],
+            "tipp": "Die zweite Karteikarte ist für einen zweiten Satz oder einen Skill aus dem Skills-Koffer, der zum neuen Satz passt. Laminieren ist nicht nötig.",
+            "wennEsKippt": "Findet jemand Kärtchen kindisch, das gelten lassen: Dann reicht es, den Satz zu Hause als Notiz ins Handy zu schreiben. Wer gar keinen neuen Satz mag, schreibt einen Skill auf die Karte, der ihm hilft."
+          },
+          {
+            "titel": "Skill: Die freundliche Stimme",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: ein Skill für Momente, in denen die innere Stimme streng wird. Alle sitzen bequem, Augen zu oder Blick auf den Tisch. Wer mag, legt eine Hand auf die Brust oder den Unterarm; wer nicht möchte, lässt die Hände im Schoß. Die Lehrkraft spricht die drei Sätze langsam vor (Liste), alle sprechen sie innerlich mit; nach jedem Satz zwei Atemzüge Pause (3 Min.). Zweite Runde: Jede Person denkt an eine kleine schwierige Situation der letzten Tage – einen verpatzten Test, einen Streit, einen verpassten Bus – und spricht die drei Sätze innerlich dazu (3 Min.). Danach zwei, drei Rückmeldungen und erklären: Das ist die Stimme, mit der ihr mit einem guten Freund reden würdet; ihr dürft sie auch für euch benutzen (4 Min.).",
+            "sagen": [
+              "Ihr müsst die Sätze nicht glauben. Probiert nur aus, wie sie sich anfühlen."
+            ],
+            "punkte": [
+              "Sag dir: „Das ist gerade schwer.“",
+              "Sag dir: „So geht es vielen. Ich bin damit nicht allein.“",
+              "Frag dich: „Was brauche ich jetzt?“ – und sei so freundlich zu dir wie zu einem guten Freund."
+            ],
+            "tipp": "Die Hand auf der Brust ist ein Angebot, keine Pflicht. Mit einer kleinen Situation üben, nie mit der schwersten: Einen Skill übt man, solange das Meer ruhig ist.",
+            "wennEsKippt": "Wird gekichert („Ich red doch nicht mit mir selbst“), gelassen bleiben: Das tut ihr sowieso den ganzen Tag – die Frage ist nur, in welchem Ton. Wird jemand während der Übung traurig, leise anbieten, die Augen zu öffnen und die Füße fest auf den Boden zu stellen; nach der Stunde nachfragen."
+          },
+          {
+            "titel": "Skills-Pass und Wochen-Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Welche Detektivfrage hilft mir am meisten? Beispiel: Ein Gedanke ist eine Vermutung – ich kann ihn prüfen. Jede Person schreibt ihren Satz (2 Min.), die Lehrkraft geht mit dem Stempel herum. Das Detektivblatt bleibt im Heft, das Kärtchen geht mit. Dann die Wochen-Mission ansagen und den Ausblick geben: Nächste Woche werden die Kärtchen gebraucht.",
+            "sagen": [
+              "Nächste Woche bringt ihr euer Kärtchen mit – dann testen wir die neuen Sätze im Rollenspiel."
+            ],
+            "tipp": "Wer sein Kärtchen erfahrungsgemäß verliert, darf eine zweite Karte mit demselben Satz ins Heft legen; so ist der Satz nächste Woche auf jeden Fall da."
+          }
+        ],
+        "bruecke": "Nächste Woche testet ihr eure neuen Sätze im Rollenspiel und schaut, was sich verändert, wenn man nach ihnen handelt – bringt eure Kärtchen mit.",
+        "mission": "Trag dein Kärtchen diese Woche bei dir. Wenn sich der alte Satz meldet, lies den neuen – und schau, was dann passiert.",
+        "hintergrund": "Die Detektivarbeit überträgt zentrale Techniken der kognitiven Verhaltenstherapie in eine jugendgerechte Form: Belege für und gegen einen Gedanken prüfen, sokratisch nachfragen und die Überzeugung vorher und nachher in Zahlen einschätzen (Beck, 2011). Gearbeitet wird zuerst an erfundenen Fällen, dann – mit freier Wahl – an einem eigenen Satz. Fragen wie „Was würde eine Freundin sagen?“ schaffen Abstand zum eigenen Erleben; solches Selbst-Distanzieren senkt die Belastung beim Nachdenken über Schwieriges (Kross & Ayduk, 2017). Die drei Regeln verhindern bloßes Schönreden: Hilfreich ist ein realistischer Satz, der sagt, was man tun kann. Die freundliche Stimme am Ende folgt dem Konzept des Selbstmitgefühls: sich selbst in schweren Momenten so zu behandeln wie einen guten Freund (Neff, 2003).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+        ],
+        "achtung": "Beim Beweise-Sammeln kann deutlich werden, dass ein Satz einen wahren Kern hat, etwa wenn jemand tatsächlich ausgegrenzt oder abgewertet wird. Dann nicht wegdiskutieren und nicht zum Umformulieren drängen: ernst nehmen und nach der Stunde besprechen, wer helfen kann. Im Gegensatz-Duell nur Sätze von den Karten, nie aus persönlichen Blättern. Bei Hinweisen auf starke Selbstabwertung, Selbstverletzung, Suizidgedanken oder Gewalt nicht vor der Klasse vertiefen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "differenzierung": {
+          "leichter": "Bei den Fallakten liest eine Person, die gut liest, vor; die anderen sortieren die Buchstaben. Auf dem Detektivblatt reichen Aufgabe 1 und 2 in Stichworten; den neuen Satz darf man von der Tafel oder einer hilfreichen Karte übernehmen und in der eigenen Sprache schreiben.",
+          "schwerer": "Aufgabe 5 des Detektivblatts: vorhersagen, wo sich der neue Satz nächste Woche bewähren muss, und einen Wenn-dann-Plan dazu schreiben. Beim Gegensatz-Duell die Schiedsrichterrolle übernehmen und begründen, welche Regel ein Gegensatz verletzt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), der Fall Mathis an der Tafel (10 Min.), eine Fallakte in Tischgruppen (10 Min.), Mein Satz vor Gericht mit den Aufgaben 1, 2 und 4 (15 Min.), Kärtchen (5 Min.), Skills-Pass und Wochen-Mission (5 Min.). Das Gegensatz-Duell und die freundliche Stimme lassen sich an den Anfang der nächsten Stunde verschieben."
+      },
+      "fr": {
+        "titel": "Le détective critique",
+        "kurz": "Examiner ses croyances comme un détective : d’abord avec des cas inventés, puis avec une phrase choisie – et emporter une nouvelle phrase réaliste sur une petite carte.",
+        "ziele": [
+          "distinguent les faits des émotions, des suppositions et des remarques",
+          "rassemblent des preuves pour et contre une croyance",
+          "formulent avec trois règles une nouvelle phrase réaliste",
+          "essaient le skill de la voix bienveillante"
+        ],
+        "material": [
+          "Roue des émotions, 20 gommettes",
+          "Un cahier de l’élève par jeune",
+          "Dossiers d’enquête (modèle)",
+          "Cartes croyances, 5 enveloppes",
+          "Cinq feuilles A4, cartes",
+          "Fiches bristol A7, deux par jeune",
+          "Crayons de couleur, ruban adhésif",
+          "Musique douce, sans paroles",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Au tableau : en haut le cas Mathis, en dessous une balance vide (étape 3).",
+          "Photocopier, découper les dossiers ; remplacer par la réserve un cas qui ressemble à une situation de la classe.",
+          "Les trois règles (étape 4) en grand sur une affiche ; elle reste jusqu’à la séance 30.",
+          "Mélanger les cartes qui freinent de deux enveloppes (étape 6)."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur avec question de détective"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour : aujourd’hui, vous êtes détectives"
+          },
+          {
+            "min": "15–28",
+            "phase": "input",
+            "titel": "La méthode du détective : le cas Mathis"
+          },
+          {
+            "min": "28–45",
+            "phase": "uebung",
+            "titel": "Dossiers d’enquête en îlots"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : qui est le chef d’orchestre ?"
+          },
+          {
+            "min": "50–60",
+            "phase": "uebung",
+            "titel": "Duel des contre-phrases entre îlots"
+          },
+          {
+            "min": "60–75",
+            "phase": "uebung",
+            "titel": "Ma phrase au tribunal"
+          },
+          {
+            "min": "75–85",
+            "phase": "uebung",
+            "titel": "Ma petite carte pour le quotidien"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : la voix bienveillante"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass et mission de la semaine"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur avec question de détective",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts ; l’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires suivent (4 min). Puis la question de détective de la semaine : depuis la semaine dernière, avez-vous croisé quelque part une des phrases des cartes – dans votre tête, dans une conversation, dans une vidéo ou les paroles d’une chanson ? Deux ou trois voix racontent brièvement ; on raconte, on n’explique pas, et personne n’a à dire de quelle tête il s’agissait (4 min). Pour finir, expliquer pourquoi un détective a besoin de garder la tête froide : on examine ses pensées dans la zone verte. Qui est au-dessus de 70 fait d’abord un tour de respiration des doigts (2 min).",
+            "sagen": [
+              "Émotion et chiffre – et pour qui veut : avez-vous croisé une des phrases cette semaine ? Dans votre tête, dans une conversation, dans une vidéo ?",
+              "On raconte, on n’explique pas. Et personne n’a à dire si c’était sa propre tête."
+            ],
+            "tipp": "Les paroles de chansons et les vidéos sont riches : des phrases comme « De toute façon, personne ne me comprend » ou « Je ne suis pas assez bien » y reviennent sans cesse. On peut ainsi parler des phrases sans parler de soi.",
+            "wennEsKippt": "Si personne ne se lance, donner soi-même un exemple, par exemple une phrase tirée d’une chanson ou d’une série. Si un jeune raconte malgré tout quelque chose de très personnel, le remercier brièvement, ne pas approfondir et lui parler après le cours."
+          },
+          {
+            "titel": "Retour : aujourd’hui, vous êtes détectives",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit la phrase de son Skills-Pass. Demander avec le pouce où en est la mission de la semaine : qui s’est dit une fois ce qu’une bonne amie aurait dit, ou a fait l’éclair de gratitude ? Une voix raconte, personne n’est obligé de l’avoir réussie. Puis introduire l’image du détective : un bon détective ne croit rien simplement parce que quelqu’un l’affirme – pas même sa propre petite voix intérieure. Il rassemble des preuves des deux côtés et ne juge qu’ensuite. Faire le lien avec « Vrai ou faux ? » : là aussi, on vérifiait avant de croire.",
+            "sagen": [
+              "Votre petite voix intérieure affirme parfois des choses comme : tu es nul. Aujourd’hui, vous vérifiez si elle a des preuves.",
+              "Un détective n’est ni gentil ni méchant. Il veut juste savoir ce qui est vrai."
+            ],
+            "tipp": "Un accessoire fait des merveilles : une loupe, une casquette ou un carnet avec lequel l’enseignant·e se glisse dans le rôle de l’enquêteur. La plupart des 7e embarquent tout de suite."
+          },
+          {
+            "titel": "La méthode du détective : le cas Mathis",
+            "dauer": 13,
+            "phase": "input",
+            "text": "Montrer le tableau : Mathis, 13 ans, a eu 22 sur 60 à son devoir de maths et pense : « Je suis nul. » D’abord clarifier ce qu’est une preuve : quelque chose qui s’est vraiment passé et qu’une caméra pourrait filmer. « 22 sur 60 » est un fait, « nul » est un jugement, « Je me sens tellement nul » est une émotion (3 min). Puis remplir la balance ensemble : l’enseignant·e lit les indices du tableau ci-dessous l’un après l’autre, la classe montre du bras le côté de la balance où il va, et l’enseignant·e l’y écrit. Glisser entre eux deux indices qui ne sont pas des preuves – « Je me sens tellement nul en maths » et « Mon frère dit que je suis nul » – ; ils vont à côté de la balance et sont barrés (4 min). Ensuite, présenter les questions du détective (liste) et en essayer une sur Mathis : que dirait son meilleur copain ? (3 min) Pour finir, le jugement : ce n’est pas « Je suis nul » qui est vrai, mais « Les maths, c’est difficile pour moi ». Avec les trois règles de l’affiche, cela devient la nouvelle phrase : « Les maths, c’est difficile pour moi, mais si je m’entraîne et que je pose des questions, je progresse. » (3 min)",
+            "sagen": [
+              "C’est une preuve ou une émotion ? Est-ce que ça compterait au tribunal ?",
+              "Les preuves pour, on les laisse. Elles sont vraies – mais elles prouvent seulement une phrase plus petite."
+            ],
+            "punkte": [
+              "Y a-t-il eu une situation où la phrase n’était pas vraie ?",
+              "Que dirait une bonne amie ou un bon ami ?",
+              "Est-ce que je dirais ça de quelqu’un que j’aime bien ?",
+              "La phrase est-elle toujours vraie – ou seulement parfois, dans un seul domaine ?",
+              "Est-ce un fait – ou une émotion, une supposition, une remarque ?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Preuves pour",
+                "Preuves contre"
+              ],
+              "zeilen": [
+                [
+                  "22 sur 60 au dernier devoir de maths",
+                  "Au devoir d’avant, il avait 15 – ça progresse"
+                ],
+                [
+                  "Pour les problèmes avec beaucoup de texte, il lui faut plus de temps qu’aux autres",
+                  "Il répare les vélos de ses copains"
+                ],
+                [
+                  "",
+                  "Il connaît les règles de trois jeux de cartes et les explique aux autres"
+                ],
+                [
+                  "",
+                  "À l’atelier, sa lampe a été la première terminée"
+                ]
+              ]
+            },
+            "tipp": "Prendre au sérieux les preuves pour et les laisser au tableau : la plupart du temps, elles ne soutiennent qu’une phrase plus petite (« Les maths, c’est difficile pour moi ») – c’est justement elle qui devient la nouvelle phrase. Qui saute tout de suite à l’inverse (« Mathis est un génie ») est ramené au réel : est-ce que Mathis le croirait ?",
+            "wennEsKippt": "Si quelqu’un lance : « Mathis est nul, c’est tout, 22 points », ne pas s’indigner, mais poser la question du détective : c’est un fait ou un jugement ? Puis demander qui connaît quelqu’un de faible en maths qui sait très bien faire autre chose. En général, l’ambiance bascule d’elle-même.",
+            "blatt": "ff7-kritischer-detektiv"
+          },
+          {
+            "titel": "Dossiers d’enquête en îlots",
+            "dauer": 17,
+            "phase": "uebung",
+            "text": "Chaque îlot reçoit un dossier d’enquête et une feuille A4 qu’il partage en trois colonnes, dans la largeur : pour – contre – pas une preuve. Répartir les rôles : lire, écrire, temps, parole. Le groupe lit le cas et classe les six indices, avec leur lettre, dans les trois colonnes (6 min). Ensuite, il pose la question du détective – que dirait une bonne amie au personnage ? – et écrit sur une carte son jugement (qu’est-ce qui est vraiment vrai ?) et une nouvelle phrase selon les trois règles (5 min). Pour finir, chaque îlot présente son cas en une phrase, cite son indice contre le plus fort et accroche sa carte au tableau ; la classe vérifie avec le pouce si la nouvelle phrase respecte les trois règles (6 min). Les solutions figurent dans le tableau.",
+            "sagen": [
+              "Classez chaque indice : pour, contre – ou pas une preuve du tout ?",
+              "Que dirait la meilleure amie de Tiago à propos de sa phrase ?",
+              "La nouvelle phrase respecte-t-elle les trois règles ? Pouce en haut ou en bas."
+            ],
+            "punkte": [
+              "Je peux croire cette phrase – pas d’embellissement. « Je suis parfait », personne n’y croit.",
+              "Elle dit ce que je peux faire – pas ce que je ne suis pas.",
+              "Elle laisse de la place pour progresser : « pas encore », « j’apprends », « si je m’entraîne »."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Dossier",
+                "pour – contre – pas une preuve"
+              ],
+              "zeilen": [
+                [
+                  "1 Tiago : « Je suis nul en sport. »",
+                  "A, D – B, E, F – C (supposition)"
+                ],
+                [
+                  "2 Inês : « Je suis nulle en allemand. »",
+                  "A, E – B, C, F – D (émotion)"
+                ],
+                [
+                  "3 Yusuf : « Si je fais une erreur, tout le monde rit. »",
+                  "A, F – B, C, E – D (supposition)"
+                ],
+                [
+                  "4 Léa : « De toute façon, personne ne m’aide. »",
+                  "B, E – A, C, F – D (émotion)"
+                ],
+                [
+                  "5 Chiara : « Je suis trop timide, je ne me ferai jamais d’amis. »",
+                  "A, E – B, C, F – D (supposition)"
+                ],
+                [
+                  "6 Rafael (réserve) : « Je suis paresseux. »",
+                  "A, E – B, D, F – C (remarque)"
+                ]
+              ]
+            },
+            "tipp": "Les indices « pas une preuve » sont les plus instructifs : les émotions, les suppositions et les remarques ressemblent à des preuves, mais n’en sont pas. Qui l’a vu une fois sur un personnage le repère plus facilement chez soi. Donner aux jeunes agités le rôle temps ou écrire.",
+            "wennEsKippt": "Si un groupe bloque longtemps sur un indice, il le pose au milieu ; la classe tranche pendant la présentation. Si la nouvelle phrase devient un embellissement (« Tiago est le meilleur »), demander : est-ce que Tiago le croirait ? Qu’est-ce qui est vraiment vrai là-dedans ? Si un îlot ne fait que chahuter, s’asseoir avec lui et prendre soi-même la lecture.",
+            "blatt": "ff7-detektiv-fallakten"
+          },
+          {
+            "titel": "Pause active : qui est le chef d’orchestre ?",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde est debout à sa place. Un ou une volontaire est le détective et se tourne vers le mur. La classe désigne d’un signe un chef d’orchestre qui montre des mouvements – taper des mains, tapoter les cuisses, taper du pied – et en change discrètement ; tout le monde suit aussitôt. Le détective se retourne, observe et a trois essais pour trouver le chef d’orchestre. Deux ou trois manches, avec de nouveaux rôles. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Détectives, regardez bien : qui change de mouvement en premier ?"
+            ],
+            "tipp": "Le jeu entraîne au passage ce qui fait un détective : observer précisément au lieu de deviner. Qui ne veut pas se lever fait les mouvements assis.",
+            "wennEsKippt": "Si les autres trahissent le chef d’orchestre en le fixant, donner l’astuce : regardez quelqu’un en face, pas le chef d’orchestre. Si le détective ne trouve pas, le chef d’orchestre se dévoile après trois essais – applaudissements pour les deux. Si personne ne veut être détective, l’enseignant·e prend la première manche."
+          },
+          {
+            "titel": "Duel des contre-phrases entre îlots",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Les cartes qui freinent de deux enveloppes sont prêtes, mélangées en une pile. Un tour : l’enseignant·e tire une carte et la lit à voix haute, tout le monde crie « Stop ! ». Chaque îlot a 30 secondes pour trouver, à voix basse, une contre-phrase réaliste qui aide. Puis chaque îlot dit sa contre-phrase à tour de rôle, chaque fois par une autre personne ; la classe vérifie avec le pouce si elle respecte les trois règles. Chaque contre-phrase valable rapporte un point. Si une phrase revient une deuxième fois, la contre-phrase doit être nouvelle. Quatre ou cinq tours ; à partir du troisième, c’est un jeune qui tire et lit. Ensuite, les cartes sont posées, visibles, sur le bureau.",
+            "sagen": [
+              "Stop ! Et maintenant : qu’est-ce que vous répondez à cette phrase ?",
+              "On peut la croire, elle dit ce que je peux faire, elle laisse de la place pour progresser ? Pouce en haut ou en bas."
+            ],
+            "tipp": "Si la classe tombe dans la compétition stressante, jouer en coopération : tous les îlots ensemble rassemblent en 60 secondes le plus possible de contre-phrases valables, l’enseignant·e compte. Qui ne veut pas parler passe la parole dans son groupe.",
+            "wennEsKippt": "Si des contre-phrases deviennent volontairement absurdes ou visent des personnes, arrêter un instant : une contre-phrase répond à la phrase, jamais à une personne. Si des îlots se disputent les points, supprimer les points et noter seulement au tableau la meilleure contre-phrase de chaque tour.",
+            "blatt": "ff7-glaubenssatz-karten"
+          },
+          {
+            "titel": "Ma phrase au tribunal",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Chacun choisit en silence une phrase : une des siennes, sur la fiche « Mes croyances », une carte prise sur le bureau ou la phrase d’un personnage de la dernière séance. Personne n’a à dire laquelle. Paravent comme la semaine dernière, musique douce (1 min). Exercice 1 (2 min) : écrire la phrase suspecte et cocher à quel point on y croit. Exercice 2 (6 min) : les preuves sur la balance ; les questions du détective dans l’encadré aident quand un côté reste vide. Exercice 3 (3 min) : le jugement – qu’est-ce qui est vraiment vrai ? – et cocher à nouveau. Exercice 4 (3 min) : une nouvelle phrase avec les trois règles ; qui va vite prévoit une situation avec l’exercice 5. L’enseignant·e annonce chaque fois le passage à l’exercice suivant, circule et aide sur demande, surtout pour le côté droit de la balance ; il ou elle ne lit que ce qu’on lui montre.",
+            "sagen": [
+              "C’est vous qui choisissez quelle phrase passe au tribunal. Personne n’a besoin de savoir laquelle.",
+              "Notez les contre-preuves même si vous n’en êtes pas encore tout à fait convaincus.",
+              "À quel point croyez-vous l’ancienne phrase maintenant, après l’enquête ?"
+            ],
+            "tipp": "Faire comparer les chiffres avant et après : passer de 8 à 6, c’est déjà une réussite, et on peut le dire. Qui ne fait que les exercices 1 et 2 a fait l’essentiel.",
+            "wennEsKippt": "Si le côté droit reste vide (« Il n’y a rien »), ne pas chercher à convaincre, mais poser les questions du détective une à une, à voix basse, et accepter les petites preuves. Qui n’avance pas avec sa propre phrase, ou ne veut pas y toucher aujourd’hui, passe à une carte sans avoir à se justifier. Si une phrase a un fond de vérité, par exemple parce qu’un jeune est vraiment mis à l’écart, ne pas la discuter : la prendre au sérieux et voir après le cours qui peut aider.",
+            "blatt": "ff7-kritischer-detektiv"
+          },
+          {
+            "titel": "Ma petite carte pour le quotidien",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Chacun écrit sa nouvelle phrase sur une fiche bristol et la décore avec des couleurs, une écriture ou un symbole (7 min). Qui ne veut pas promener sa phrase à la vue de tous l’écrit au verso et décore le recto avec un motif neutre. Qui n’a pas encore de nouvelle phrase en prend une parmi les cartes qui aident ou au tableau. Une bande de ruban adhésif large sur le recto rend la carte solide. Pour finir, chacun réfléchit en silence à l’endroit où la carte va vivre – coque de portable, porte-monnaie, trousse –, et deux ou trois volontaires montrent leur recto (3 min).",
+            "sagen": [
+              "Décorez la carte pour que vous ayez envie de la regarder – pas pour qu’elle plaise aux autres.",
+              "Où doit être la phrase pour qu’elle soit là quand l’ancienne revient ?"
+            ],
+            "tipp": "La deuxième fiche sert pour une deuxième phrase ou pour un skill de la valise à skills qui va avec la nouvelle phrase. Pas besoin de plastifier.",
+            "wennEsKippt": "Si un jeune trouve les petites cartes puériles, l’accepter : il suffit alors d’écrire la phrase à la maison dans une note de son portable. Qui ne veut aucune nouvelle phrase écrit sur la carte un skill qui l’aide."
+          },
+          {
+            "titel": "Skill : la voix bienveillante",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : voici un skill pour les moments où la petite voix intérieure devient sévère. Tout le monde est assis confortablement, les yeux fermés ou tournés vers la table. Qui veut pose une main sur la poitrine ou sur l’avant-bras ; qui ne veut pas laisse ses mains sur les genoux. Dire lentement les trois phrases (liste), chacun les répète intérieurement ; après chaque phrase, deux respirations de pause (3 min). Deuxième tour : chacun pense à une petite situation difficile des derniers jours – un devoir raté, une dispute, un bus manqué – et se dit intérieurement les trois phrases (3 min). Ensuite, deux ou trois retours, et expliquer : c’est la voix avec laquelle vous parleriez à un bon ami ; vous avez le droit de l’utiliser pour vous aussi (4 min).",
+            "sagen": [
+              "Vous n’avez pas besoin de croire les phrases. Essayez juste de voir ce qu’elles font."
+            ],
+            "punkte": [
+              "Dis-toi : « C’est dur, là, maintenant. »",
+              "Dis-toi : « Beaucoup de gens vivent ça. Je ne suis pas seul·e. »",
+              "Demande-toi : « De quoi j’ai besoin maintenant ? » – et sois aussi gentil·le avec toi qu’avec un bon ami."
+            ],
+            "tipp": "La main sur la poitrine est une proposition, pas une obligation. S’entraîner avec une petite situation, jamais avec la plus lourde : un skill s’apprend quand la mer est calme.",
+            "wennEsKippt": "Si ça ricane (« Je ne vais pas me parler à moi-même »), rester serein : vous le faites toute la journée de toute façon – la question, c’est sur quel ton. Si un jeune devient triste pendant l’exercice, lui proposer à voix basse d’ouvrir les yeux et de bien poser les pieds au sol ; lui parler après le cours."
+          },
+          {
+            "titel": "Skills-Pass et mission de la semaine",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire au tableau la question du Skills-Pass : quelle question du détective m’aide le plus ? Exemple : une pensée est une supposition – je peux la vérifier. Chacun écrit sa phrase (2 min) ; l’enseignant·e passe avec le tampon. La fiche du détective reste dans le cahier, la petite carte part avec le jeune. Ensuite, annoncer la mission de la semaine et la prochaine séance : la semaine prochaine, on aura besoin des cartes.",
+            "sagen": [
+              "La semaine prochaine, apportez votre petite carte – on testera les nouvelles phrases en jeu de rôle."
+            ],
+            "tipp": "Un jeune qui perd souvent ses affaires peut glisser dans son cahier une deuxième fiche avec la même phrase ; ainsi, la phrase sera là la semaine prochaine, quoi qu’il arrive."
+          }
+        ],
+        "bruecke": "La semaine prochaine, vous testez vos nouvelles phrases en jeu de rôle et vous voyez ce qui change quand on agit d’après elles – apportez vos petites cartes.",
+        "mission": "Garde ta petite carte sur toi cette semaine. Quand l’ancienne phrase revient, lis la nouvelle – et regarde ce qui se passe.",
+        "hintergrund": "Le travail de détective transpose sous une forme adaptée aux jeunes des techniques centrales de la thérapie cognitive et comportementale : examiner les preuves pour et contre une pensée, questionner à la manière de Socrate et estimer sa conviction avant et après avec un chiffre (Beck, 2011). On travaille d’abord sur des cas inventés, puis – librement – sur une phrase à soi. Des questions comme « Que dirait une amie ? » créent de la distance avec ce qu’on vit ; cette mise à distance de soi réduit la détresse quand on réfléchit à des choses difficiles (Kross & Ayduk, 2017). Les trois règles évitent de simplement embellir : ce qui aide, c’est une phrase réaliste qui dit ce qu’on peut faire. La voix bienveillante de la fin suit le concept d’autocompassion : se traiter soi-même dans les moments durs comme on traiterait un bon ami (Neff, 2003).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+        ],
+        "achtung": "En rassemblant les preuves, il peut apparaître qu’une phrase a un fond de vérité, par exemple quand un jeune est réellement mis à l’écart ou dévalorisé. Ne pas la discuter alors, ni pousser à la reformuler : la prendre au sérieux et voir après le cours qui peut aider. Pour le duel des contre-phrases, uniquement les phrases des cartes, jamais celles des fiches personnelles. En cas de signes de forte dévalorisation de soi, d’automutilation, d’idées suicidaires ou de violence, ne pas approfondir devant la classe, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
+        "differenzierung": {
+          "leichter": "Pour les dossiers, un jeune qui lit bien lit à voix haute ; les autres classent les lettres. Sur la fiche du détective, les exercices 1 et 2 en mots-clés suffisent ; on peut reprendre la nouvelle phrase au tableau ou sur une carte qui aide, et l’écrire dans sa propre langue.",
+          "schwerer": "Exercice 5 de la fiche du détective : prévoir où la nouvelle phrase devra faire ses preuves la semaine prochaine et écrire un plan « si… alors ». Pendant le duel, jouer l’arbitre et expliquer quelle règle une contre-phrase ne respecte pas."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), le cas Mathis au tableau (10 min), un dossier d’enquête en îlots (10 min), ma phrase au tribunal avec les exercices 1, 2 et 4 (15 min), petite carte (5 min), Skills-Pass et mission de la semaine (5 min). Le duel des contre-phrases et la voix bienveillante peuvent être reportés au début de la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-kritischer-detektiv",
+      "bereich": "skills",
+      "thema": "gedanken",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln"
+      ],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Glaubenssätze",
+        "Beweise prüfen",
+        "Umformulieren",
+        "Förderfach"
+      ],
+      "bild": "icon:search",
+      "kurs": [
+        "ff7-e29"
+      ],
+      "de": {
+        "titel": "Der kritische Detektiv",
+        "untertitel": "Stimmt das wirklich? Ein guter Detektiv glaubt nichts, nur weil es jemand behauptet.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Nimm einen eigenen Satz, eine Karte oder den Satz einer Figur. Niemand muss wissen, welchen du prüfst."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib den verdächtigen Satz auf. Wie sehr glaubst du ihn gerade?",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "feld",
+            "label": "Der verdächtige Satz",
+            "hoehe": 1.5
+          },
+          {
+            "art": "skala",
+            "von": "0 – gar nicht",
+            "bis": "10 – völlig",
+            "stufen": 11,
+            "frage": "So sehr glaube ich ihn vor der Beweisaufnahme:"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Sammle Beweise für beide Seiten – auch wenn du von der zweiten Seite noch nicht überzeugt bist.",
+            "hinweis": "Ein Beweis ist etwas, das wirklich passiert ist. Ein Gefühl, eine Vermutung oder ein Spruch zählt nicht.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Detektivfragen",
+            "punkte": [
+              "Gab es eine Situation, in der der Satz nicht gestimmt hat?",
+              "Was würde eine gute Freundin oder ein guter Freund dazu sagen?",
+              "Würde ich das auch über jemanden sagen, den ich mag?",
+              "Stimmt der Satz immer – oder nur manchmal, nur in einem Bereich?",
+              "Ist das eine Tatsache – oder ein Gefühl, eine Vermutung, ein Spruch?"
+            ]
+          },
+          {
+            "art": "waage",
+            "links": "Beweise, dass er stimmt",
+            "rechts": "Beweise, dass er nicht (immer) stimmt",
+            "zeilen": 4
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein Urteil als Detektiv: Was stimmt wirklich?",
+            "hinweis": "Oft stimmt nur ein kleiner Teil – zum Beispiel nicht „Ich bin dumm“, sondern „Mathe fällt mir schwer“.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Genauer gesagt stimmt nur:"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "skala",
+            "von": "0 – gar nicht",
+            "bis": "10 – völlig",
+            "stufen": 11,
+            "frage": "So sehr glaube ich den alten Satz jetzt:"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Bau einen neuen Satz nach den drei Regeln. Hak ab, was dein Satz schon erfüllt.",
+            "symbole": [
+              "ankreuzen",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "ankreuzen",
+            "items": [
+              "Ich kann mir den Satz glauben – kein Schönreden.",
+              "Er sagt, was ich tun kann – nicht, was ich nicht bin.",
+              "Er lässt Platz zum Besserwerden: „noch“, „ich lerne“, „wenn ich übe“."
+            ]
+          },
+          {
+            "art": "feld",
+            "label": "Mein neuer Satz",
+            "hoehe": 3,
+            "beispiel": "„Ich bin dumm“ wird zu „Mathe fällt mir schwer, aber wenn ich übe und nachfrage, werde ich besser.“"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wenn du magst: Was würdest du tun, wenn du den neuen Satz glaubst? Plane eine Situation.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Wenn ich in Mathe etwas nicht verstehe,",
+                "dann": "melde ich mich und frage nach, statt abzuschalten."
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Und dann?",
+            "text": "Dein neuer Satz kommt auf ein Kärtchen. Trag es bei dir – dann ist der Satz da, wenn sich der alte meldet."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen prüfen einen selbst gewählten Satz wie Detektive, schätzen ihn vorher und nachher ein und formulieren nach drei Regeln einen realistischen neuen Satz.",
+          "ablauf": [
+            "Einheit 29, Schritt 3: Aufgabe 2 an der Tafel mit dem Fall Mathis vormachen.",
+            "Schritt 7 (15 Min.): Satz frei wählen – eigener Satz, Karte oder Figur; Aufgaben 1 bis 4.",
+            "Schritt 8: den neuen Satz auf ein Kärtchen übertragen und gestalten."
+          ],
+          "hintergrund": "Das Blatt überträgt Techniken der kognitiven Verhaltenstherapie in eine jugendgerechte Form: Belege prüfen, sokratisch nachfragen und die Überzeugung vorher und nachher einschätzen (Beck, 2011). Die Frage nach der Freundin schafft Abstand (Kross & Ayduk, 2017). Im DBT-Skillstraining heißt der verwandte Skill „Fakten prüfen“ (Linehan, 2015).",
+          "quellen": [
+            "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+            "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          ],
+          "material": "Schülerheft, Karteikarten"
+        }
+      },
+      "fr": {
+        "titel": "Le détective critique",
+        "untertitel": "Est-ce vraiment vrai ? Un bon détective ne croit rien juste parce qu’on l’affirme.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "Prends une de tes phrases, une carte ou la phrase d’un personnage. Personne n’a besoin de savoir laquelle tu examines."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Écris la phrase suspecte. À quel point y crois-tu en ce moment ?",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "feld",
+            "label": "La phrase suspecte",
+            "hoehe": 1.5
+          },
+          {
+            "art": "skala",
+            "von": "0 – pas du tout",
+            "bis": "10 – complètement",
+            "stufen": 11,
+            "frage": "J’y crois à ce point avant l’enquête :"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Rassemble des preuves des deux côtés – même si tu n’es pas encore convaincu par le deuxième côté.",
+            "hinweis": "Une preuve, c’est quelque chose qui s’est vraiment passé. Une émotion, une supposition ou une remarque ne compte pas.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Les questions du détective",
+            "punkte": [
+              "Y a-t-il eu une situation où la phrase n’était pas vraie ?",
+              "Que dirait une bonne amie ou un bon ami ?",
+              "Est-ce que je dirais ça de quelqu’un que j’aime bien ?",
+              "La phrase est-elle toujours vraie – ou seulement parfois, dans un seul domaine ?",
+              "Est-ce un fait – ou une émotion, une supposition, une remarque ?"
+            ]
+          },
+          {
+            "art": "waage",
+            "links": "Preuves qu’elle est vraie",
+            "rechts": "Preuves qu’elle n’est pas (toujours) vraie",
+            "zeilen": 4
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ton jugement de détective : qu’est-ce qui est vraiment vrai ?",
+            "hinweis": "Souvent, seule une petite partie est vraie – par exemple, pas « Je suis nul », mais « Les maths, c’est difficile pour moi ».",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Pour être précis, ce qui est vrai, c’est seulement :"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "skala",
+            "von": "0 – pas du tout",
+            "bis": "10 – complètement",
+            "stufen": 11,
+            "frage": "Maintenant, je crois l’ancienne phrase à ce point :"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Construis une nouvelle phrase avec les trois règles. Coche ce que ta phrase respecte déjà.",
+            "symbole": [
+              "ankreuzen",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "ankreuzen",
+            "items": [
+              "Je peux croire cette phrase – pas d’embellissement.",
+              "Elle dit ce que je peux faire – pas ce que je ne suis pas.",
+              "Elle laisse de la place pour progresser : « pas encore », « j’apprends », « si je m’entraîne »."
+            ]
+          },
+          {
+            "art": "feld",
+            "label": "Ma nouvelle phrase",
+            "hoehe": 3,
+            "beispiel": "« Je suis nul » devient « Les maths, c’est difficile pour moi, mais si je m’entraîne et que je pose des questions, je progresse. »"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Si tu veux : que ferais-tu si tu croyais la nouvelle phrase ? Prévois une situation.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "wennDann",
+            "wenn": "Si …",
+            "dann": "… alors",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Si je ne comprends pas quelque chose en maths,",
+                "dann": "je lève la main et je pose une question au lieu de décrocher."
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Et ensuite ?",
+            "text": "Ta nouvelle phrase va sur une petite carte. Garde-la sur toi – ainsi, la phrase sera là quand l’ancienne reviendra."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes examinent comme des détectives une phrase qu’ils ont choisie, l’évaluent avant et après et formulent avec trois règles une nouvelle phrase réaliste.",
+          "ablauf": [
+            "Séance 29, étape 3 : montrer l’exercice 2 au tableau avec le cas Mathis.",
+            "Étape 7 (15 min) : choisir librement une phrase – la sienne, une carte ou un personnage ; exercices 1 à 4.",
+            "Étape 8 : recopier la nouvelle phrase sur une petite carte et la décorer."
+          ],
+          "hintergrund": "La fiche transpose sous une forme adaptée aux jeunes des techniques de la thérapie cognitive et comportementale : examiner les preuves, questionner à la manière de Socrate, évaluer sa conviction avant et après (Beck, 2011). La question de l’amie crée de la distance (Kross & Ayduk, 2017). Dans l’entraînement aux skills de la DBT, le skill voisin s’appelle « vérifier les faits » (Linehan, 2015).",
+          "quellen": [
+            "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+            "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          ],
+          "material": "Cahier de l’élève, fiches bristol"
+        }
+      }
+    },
+    {
+      "id": "ff7-detektiv-fallakten",
+      "bereich": "skills",
+      "thema": "gedanken",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "17 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Glaubenssätze",
+        "Beweise prüfen",
+        "Fallgeschichten",
+        "Förderfach"
+      ],
+      "bild": "icon:file-text",
+      "kurs": [
+        "ff7-e29"
+      ],
+      "de": {
+        "titel": "Fallakten für Detektive",
+        "untertitel": "Sechs Fälle mit je sechs Spuren – einer je Tischgruppe, einer als Reserve",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Einmal kopieren und ausschneiden. Jede Gruppe sortiert die Spuren A bis F: Beweis dafür, Beweis dagegen oder kein Beweis (Gefühl, Vermutung, Spruch). Fälle, die einer echten Lage in der Klasse zu nah sind, durch die Reserve ersetzen; heißt jemand wie eine Figur, den Namen ändern.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 196,
+            "karten": [
+              {
+                "titel": "Fallakte 1 · Tiago, 13",
+                "text": "Sein Satz: „Ich bin unsportlich.“\nA Beim Fußball in der Pause wird er oft als Letzter gewählt.\nB Er fährt jeden Tag 20 Minuten mit dem Rad zur Schule, auch bei Regen.\nC „Alle lachen, wenn ich den Ball verfehle.“\nD Im Basketball trifft er selten den Korb.\nE Beim Ausdauerlauf war er Dritter der Klasse.\nF Er tanzt gern und kann ganze Choreos auswendig."
+              },
+              {
+                "titel": "Fallakte 2 · Inês, 12",
+                "text": "Ihr Satz: „Ich kann kein Französisch.“\nA Im letzten Französischtest hatte sie 28 von 60 Punkten.\nB Sie versteht fast alles, was die Lehrerin sagt.\nC Beim Bäcker bestellt sie jeden Morgen auf Französisch.\nD „Wenn ich vor der Klasse Französisch rede, werde ich rot.“\nE In ihren Texten sind viele Rechtschreibfehler.\nF Vor einem Jahr konnte sie viel weniger als heute."
+              },
+              {
+                "titel": "Fallakte 3 · Yusuf, 13",
+                "text": "Sein Satz: „Wenn ich einen Fehler mache, lachen alle.“\nA Vor zwei Jahren haben zwei gelacht, als er beim Vorlesen ein Wort falsch ausgesprochen hat.\nB Letzte Woche hat Ben in Mathe etwas Falsches gesagt – niemand hat gelacht.\nC Als er im Training danebengeschossen hat, rief der Trainer: „Weiter, nächster Versuch.“\nD „Ich merke doch, wie die anderen gucken.“\nE Bei seinem Vortrag hat hinten jemand gekichert – über ein Video auf dem Handy.\nF Einmal hat jemand ein Foto von seinem Fehler an der Tafel in den Klassenchat gestellt."
+              },
+              {
+                "titel": "Fallakte 4 · Léa, 12",
+                "text": "Ihr Satz: „Mir hilft sowieso keiner.“\nA Als sie eine Bescheinigung brauchte, hat das Sekretariat sie in fünf Minuten ausgestellt.\nB Einmal hat sie in der Pause einen Éducateur gefragt; er hatte gerade keine Zeit.\nC Ihre Sitznachbarin erklärt ihr oft die Aufgaben.\nD „Ich will niemandem zur Last fallen.“\nE Ihr großer Bruder hat nie Zeit, ihr bei Mathe zu helfen.\nF Ihr Trainer ist nach dem Training geblieben, um ihr den Aufschlag zu zeigen."
+              },
+              {
+                "titel": "Fallakte 5 · Chiara, 13",
+                "text": "Ihr Satz: „Ich bin zu schüchtern, ich finde nie Freunde.“\nA In der neuen Klasse sitzt sie in der Pause oft allein.\nB Im Handballverein geht sie nach dem Training mit zwei Mädchen Pommes essen.\nC Mit Aylin aus der Nachbarklasse schreibt sie fast jeden Abend.\nD „Die anderen finden mich bestimmt komisch.“\nE Bei Gruppenarbeiten sagt sie fast nichts.\nF Letzte Woche hat Sofia gefragt, ob sie mit in die Bibliothek kommt."
+              },
+              {
+                "titel": "Fallakte 6 · Rafael, 13 (Reserve)",
+                "text": "Sein Satz: „Ich bin faul.“\nA Seine Hausaufgaben macht er oft erst morgens im Bus.\nB Jeden Samstag hilft er seinem Onkel vier Stunden in der Werkstatt.\nC Sein Bruder sagt oft: „Du bist so faul.“\nD Für ein Gaming-Turnier hat er drei Wochen lang jeden Tag trainiert.\nE Für Geschichte hat er seit Wochen nichts gelernt.\nF Er hat sein Fahrrad allein repariert."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Tischgruppen üben die Detektivarbeit an erfundenen Fällen: Spuren sortieren, Tatsachen von Gefühlen, Vermutungen und Sprüchen trennen, ein Urteil fällen.",
+          "ablauf": [
+            "Einmal kopieren und ausschneiden; Fall 6 ist die Reserve.",
+            "Einheit 29, Schritt 4: Spuren A bis F in drei Spalten sortieren – dafür, dagegen, kein Beweis.",
+            "Urteil und neuer Satz auf eine Moderationskarte; die Klasse prüft die drei Regeln. Die Lösungen stehen in Schritt 4."
+          ],
+          "hintergrund": "Grundüberzeugungen lenken den Blick auf Bestätigendes und lassen Gegenbelege übersehen (Beck, 2011). An fremden Fällen fällt es leichter, beide Seiten zu sehen; so wird die Methode geübt, bevor sie am eigenen Satz zum Einsatz kommt. Die Spuren „kein Beweis“ zeigen, dass sich Gefühle, Vermutungen und Sprüche wie Beweise anfühlen, aber keine sind.",
+          "quellen": [
+            "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford."
+          ],
+          "material": "Schere, fünf A4-Blätter, Moderationskarten"
+        }
+      },
+      "fr": {
+        "titel": "Dossiers d’enquête",
+        "untertitel": "Six cas avec six indices chacun – un par îlot, un en réserve",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Photocopier une fois et découper. Chaque groupe classe les indices A à F : preuve pour, preuve contre ou pas une preuve (émotion, supposition, remarque). Remplacer par la réserve un cas trop proche d’une situation réelle de la classe ; si un élève porte le prénom d’un personnage, changer le prénom.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 196,
+            "karten": [
+              {
+                "titel": "Dossier 1 · Tiago, 13 ans",
+                "text": "Sa phrase : « Je suis nul en sport. »\nA Au foot, à la récré, il est souvent choisi en dernier.\nB Il va à l’école à vélo tous les jours, 20 minutes, même sous la pluie.\nC « Tout le monde rit quand je rate le ballon. »\nD Au basket, il marque rarement un panier.\nE À la course d’endurance, il est arrivé troisième de la classe.\nF Il adore danser et connaît des chorégraphies entières par cœur."
+              },
+              {
+                "titel": "Dossier 2 · Inês, 12 ans",
+                "text": "Sa phrase : « Je suis nulle en allemand. »\nA Au dernier devoir d’allemand, elle a eu 28 sur 60.\nB Elle comprend presque tout ce que dit la prof.\nC Avec son petit frère, elle regarde des dessins animés en allemand et comprend l’histoire.\nD « Quand je parle allemand devant la classe, je rougis. »\nE Dans ses textes, il y a beaucoup de fautes d’orthographe.\nF Il y a un an, elle savait beaucoup moins qu’aujourd’hui."
+              },
+              {
+                "titel": "Dossier 3 · Yusuf, 13 ans",
+                "text": "Sa phrase : « Si je fais une erreur, tout le monde rit. »\nA Il y a deux ans, deux élèves ont ri quand il a mal prononcé un mot en lisant.\nB La semaine dernière, Ben a dit une bêtise en maths – personne n’a ri.\nC Quand il a raté un tir à l’entraînement, l’entraîneur a crié : « Allez, essai suivant. »\nD « Je vois bien comment les autres me regardent. »\nE Pendant son exposé, quelqu’un a ricané au fond – à cause d’une vidéo sur son portable.\nF Une fois, quelqu’un a posté dans le groupe de la classe une photo de son erreur au tableau."
+              },
+              {
+                "titel": "Dossier 4 · Léa, 12 ans",
+                "text": "Sa phrase : « De toute façon, personne ne m’aide. »\nA Quand elle a eu besoin d’une attestation, le secrétariat la lui a faite en cinq minutes.\nB Une fois, à la récré, elle a demandé quelque chose à un éducateur ; il n’avait pas le temps.\nC Sa voisine de table lui explique souvent les exercices.\nD « Je ne veux déranger personne. »\nE Son grand frère n’a jamais le temps de l’aider en maths.\nF Son entraîneur est resté après l’entraînement pour lui montrer le service."
+              },
+              {
+                "titel": "Dossier 5 · Chiara, 13 ans",
+                "text": "Sa phrase : « Je suis trop timide, je ne me ferai jamais d’amis. »\nA Dans sa nouvelle classe, elle est souvent seule à la récré.\nB Au club de handball, elle va manger des frites avec deux filles après l’entraînement.\nC Elle s’écrit presque tous les soirs avec Aylin, de la classe d’à côté.\nD « Les autres me trouvent sûrement bizarre. »\nE Pendant les travaux de groupe, elle ne dit presque rien.\nF La semaine dernière, Sofia lui a proposé de venir à la bibliothèque."
+              },
+              {
+                "titel": "Dossier 6 · Rafael, 13 ans (réserve)",
+                "text": "Sa phrase : « Je suis paresseux. »\nA Il fait souvent ses devoirs le matin dans le bus.\nB Tous les samedis, il aide son oncle quatre heures à l’atelier.\nC Son frère lui dit souvent : « Tu es tellement paresseux. »\nD Pour un tournoi de jeu vidéo, il s’est entraîné tous les jours pendant trois semaines.\nE En histoire, il n’a rien appris depuis des semaines.\nF Il a réparé son vélo tout seul."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les îlots s’entraînent au travail de détective sur des cas inventés : classer les indices, séparer les faits des émotions, des suppositions et des remarques, rendre un jugement.",
+          "ablauf": [
+            "Photocopier une fois et découper ; le cas 6 est la réserve.",
+            "Séance 29, étape 4 : classer les indices A à F en trois colonnes – pour, contre, pas une preuve.",
+            "Jugement et nouvelle phrase sur une carte ; la classe vérifie les trois règles. Les solutions figurent à l’étape 4."
+          ],
+          "hintergrund": "Les convictions profondes attirent le regard sur ce qui les confirme et font oublier les contre-preuves (Beck, 2011). Sur des cas étrangers, il est plus facile de voir les deux côtés ; la méthode s’exerce ainsi avant d’être appliquée à sa propre phrase. Les indices « pas une preuve » montrent que les émotions, les suppositions et les remarques ressemblent à des preuves, mais n’en sont pas.",
+          "quellen": [
+            "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford."
+          ],
+          "material": "Ciseaux, cinq feuilles A4, cartes"
+        }
+      }
+    }
+  ]
+}

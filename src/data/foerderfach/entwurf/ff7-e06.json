@@ -1,0 +1,845 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e06",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-glas-der-beduerfnisse"
+      ],
+      "woerter": [
+        {
+          "de": "das Bedürfnis",
+          "fr": "le besoin"
+        },
+        {
+          "de": "der Wunsch",
+          "fr": "l’envie (f.)"
+        },
+        {
+          "de": "der Tank",
+          "fr": "le réservoir"
+        },
+        {
+          "de": "leer – voll",
+          "fr": "vide – plein"
+        },
+        {
+          "de": "auftanken",
+          "fr": "faire le plein"
+        },
+        {
+          "de": "anonym",
+          "fr": "anonyme"
+        }
+      ],
+      "de": {
+        "titel": "Das Glas der Bedürfnisse",
+        "kurz": "Bedürfnisse sind wie innere Tanks: Die Klasse füllt anonym ihr Glas der Bedürfnisse, jede Person schaut, welcher eigene Tank gerade leer ist, und plant einen kleinen Schritt zum Auftanken.",
+        "ziele": [
+          "unterscheiden Bedürfnisse von Wünschen und ordnen sie sechs Tanks zu",
+          "füllen anonym das Glas der Klasse und sehen, welche Bedürfnisse viele teilen",
+          "schätzen ein, wie voll ihre eigenen Tanks gerade sind, und finden den leersten",
+          "planen einen kleinen Schritt, der einen Tank in dieser Woche etwas auffüllt"
+        ],
+        "material": [
+          "Schülerheft, blaue Buntstifte",
+          "Gefühlsrad-Plakat, Klebepunkte",
+          "Schraubglas mit Deckel, Etikett",
+          "40 Zettel in einer einzigen Farbe",
+          "20 gleiche Bleistifte",
+          "Vier Schilder für die Raumecken",
+          "Sechs A3-Plakate, Stifte, Klebeband",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Schraubglas besorgen, Etikett schreiben: Glas der Bedürfnisse – 7e …, gefüllt am …",
+          "Tafelbild der sechs Tanks (Schritt 3), neben jedem Tank ein einfaches Zeichen.",
+          "Schilder in die Raumecken hängen: Ruhe, Bewegung, Leute, Essen und Schlaf.",
+          "Sechs A3-Plakate beschriften (Schritt 7) und auf sechs Tische legen.",
+          "Zwei Zettel je Person abzählen; andere Farben für Stunde 17 und 35 aufheben."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Was braucht ein guter Tag?"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick und Start ins Kapitel „Wer bin ich?“"
+          },
+          {
+            "min": "15–30",
+            "phase": "input",
+            "titel": "Sechs Tanks: Was braucht ein Mensch?"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Das Glas der Klasse füllen"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Vier Ecken"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Meine Tanks: Wie voll sind sie gerade?"
+          },
+          {
+            "min": "65–85",
+            "phase": "uebung",
+            "titel": "Ideen-Karussell und mein kleiner Schritt"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: 4-7-8-Atmung"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass und Wochen-Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Was braucht ein guter Tag?",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat; der Punkt der Lehrkraft klebt schon. Wenn alle sitzen, sagt die Lehrkraft einen Satz zu ihrem Wort, zwei, drei Freiwillige folgen (3 Min.). Dann die Frage an die Tafel schreiben: Was braucht ihr, damit ein Tag gut anfängt? In den Tischgruppen nennt jede Person eine Sache, „weiter“ ist erlaubt (2 Min.). Jede Gruppe ruft zwei Antworten in die Klasse, die Lehrkraft schreibt sie ungeordnet an den Rand der Tafel (4 Min.). In Schritt 3 werden sie den Tanks zugeordnet.",
+            "sagen": [
+              "Was braucht ihr, damit ein Tag gut anfängt? Eine Sache reicht – Frühstück zählt, Musik im Bus auch.",
+              "Bei mir sind es zehn Minuten Ruhe mit einem Kaffee, bevor jemand etwas von mir will."
+            ],
+            "tipp": "Die Antworten bleiben am Rand stehen: In Schritt 3 merkt die Klasse, dass sie die Tanks längst kennt – ihr fehlten nur die Namen dafür.",
+            "wennEsKippt": "Drängeln sich alle am Plakat, tischgruppenweise kleben lassen. Kommen nur Antworten wie „Ferien“ oder „keine Schule“, sie lachend aufschreiben und nachfragen: Was hättet ihr dann – Schlaf, Ruhe, Zeit mit Freunden? Sagt jemand etwas Schweres, etwa „dass zu Hause keiner streitet“, das nicht an die Tafel schreiben: kurz danken, nicht vertiefen und nach der Stunde nachfragen."
+          },
+          {
+            "titel": "Rückblick und Start ins Kapitel „Wer bin ich?“",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Kurz nach der Wochen-Mission fragen: Daumen hoch, Mitte oder runter – eine Stimme erzählt, niemand muss sie geschafft haben. Dann das neue Kapitel an die Seitentafel schreiben: Wer bin ich? – Was brauche ich, was kann ich? Die drei Stunden ankündigen: heute, was ihr braucht; nächste Woche, wie ihr seid; danach, was ihr könnt. Zum Schluss auf die Klassenvereinbarung zeigen: Was ihr heute über euch herausfindet, bleibt anonym oder in eurem Heft.",
+            "sagen": [
+              "Bisher ging es um uns als Klasse. Ab heute schaut jede und jeder auf sich selbst.",
+              "Die Frage für heute: Was braucht ihr, damit es euch gut geht?"
+            ],
+            "tipp": "Die Kapitelfrage bleibt drei Wochen an der Seitentafel stehen. So sehen die Jugendlichen, dass Bedürfnisse, Art und Stärken zusammengehören – und dass am Ende jede und jeder ein eigenes Glas und einen eigenen Baum im Heft hat."
+          },
+          {
+            "titel": "Sechs Tanks: Was braucht ein Mensch?",
+            "dauer": 15,
+            "phase": "input",
+            "text": "Das Bild erklären: Jedes Bedürfnis ist wie ein Tank. Ist einer fast leer, meldet sich ein Gefühl – oft, bevor man den Grund kennt. Die sechs Tanks an der Tafel vorstellen (Tabelle) und gemeinsam die Antworten vom Check-in zuordnen (5 Min.). Dann die Geschichte „Das Warnlicht“ vom Blatt vorlesen: Welcher Tank ist bei Noah leer, und was ist das Warnlicht (3 Min.)? Zum Schluss das Spiel „Wunsch oder Bedürfnis?“: Die Lehrkraft liest einen Wunsch vor, die Tischgruppen einigen sich flüsternd in zehn Sekunden, auf ‚drei‘ zeigt eine Person die Nummer des Tanks mit den Fingern (7 Min.). Oft passen zwei Tanks; nachfragen, warum, und festhalten: Hinter einem Wunsch steckt meist ein Bedürfnis – und für ein Bedürfnis gibt es mehr als einen Weg.",
+            "sagen": [
+              "Stellt euch vor, in euch gibt es sechs Tanks. Was passiert, wenn der Schlaf-Tank leer ist?",
+              "Hinter ‚Ich will die neuen Sneakers‘ steckt oft: Ich will dazugehören. Gibt es dafür noch andere Wege?"
+            ],
+            "punkte": [
+              "Die neuen Sneakers, die gerade alle tragen. (3, 4)",
+              "Am Samstag bis mittags schlafen. (1)",
+              "Ein eigenes Zimmer, in das niemand ohne Klopfen kommt. (5, 2, auch 1: Ruhe)",
+              "Dass der Trainer mich endlich von Anfang an spielen lässt. (4)",
+              "Abends länger am Handy bleiben dürfen. (3, 6, 5)",
+              "Mit der Klasse einen Ausflug in den Freizeitpark machen. (6, 3)"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Tank – zum Beispiel",
+                "Ist er fast leer, fühlt es sich oft so an"
+              ],
+              "zeilen": [
+                [
+                  "1 Körper: Schlaf, Essen, Trinken, Bewegung, Ruhe",
+                  "müde, gereizt, unkonzentriert"
+                ],
+                [
+                  "2 Sicherheit: wissen, was kommt; Menschen, auf die man sich verlassen kann",
+                  "nervös, angespannt, misstrauisch"
+                ],
+                [
+                  "3 Dazugehören: Freunde, Familie, Menschen, die zu einem halten",
+                  "einsam, ausgeschlossen, eifersüchtig"
+                ],
+                [
+                  "4 Anerkennung: gesehen und ernst genommen werden",
+                  "gekränkt, wütend, unsichtbar"
+                ],
+                [
+                  "5 Selbst entscheiden: Freiraum, mitreden dürfen",
+                  "trotzig, eingeengt, wütend"
+                ],
+                [
+                  "6 Spaß und Neues: lachen, etwas erleben, dazulernen",
+                  "gelangweilt, lustlos, leer"
+                ]
+              ]
+            },
+            "tipp": "Nennt jemand Handy oder WLAN als Bedürfnis, nachfragen, wofür: um Freunden zu schreiben (3), um abzuschalten (1), um mitreden zu können (4). So wird der Unterschied zwischen Wunsch und Bedürfnis greifbar, ohne dass jemand belehrt wird.",
+            "wennEsKippt": "Rufen alle durcheinander, beim Ablauf bleiben: zehn Sekunden flüstern, dann zeigen alle auf drei – wer vorher ruft, zählt nicht. Streiten Gruppen über die richtige Nummer, auflösen: Oft stimmen zwei, es kommt darauf an, was die Person eigentlich braucht. Versteht jemand die Wörter nicht, helfen die Zeichen neben den Tanks und eine Tischnachbarin, die übersetzt. Wird die Zeit knapp, nur vier Wünsche spielen.",
+            "blatt": "ff7-glas-der-beduerfnisse"
+          },
+          {
+            "titel": "Das Glas der Klasse füllen",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Das Schraubglas zeigen und das Etikett vorlesen. Jede Person bekommt zwei Zettel derselben Farbe und einen der gleichen Bleistifte und schreibt auf jeden Zettel ein Bedürfnis, ohne Namen (3 Min.). Die Zettel zweimal falten; die Lehrkraft geht mit dem Glas durch die Tischgruppen, alle werfen ihre Zettel hinein (2 Min.). Dann das Glas schütteln, einen Zettel ziehen, still lesen und vorlesen; auf ‚drei‘ zeigen die Tischgruppen die Nummer des Tanks, eine Person macht an der Tafel einen Strich (8 Min., 12 bis 15 Zettel). Zum Schluss auf die Striche schauen: Welche Tanks sind vielen wichtig (2 Min.)? Die übrigen Zettel liest die Lehrkraft nach der Stunde. Alle Zettel kommen zurück ins Glas, der Deckel wird zugeschraubt, und das Glas bekommt seinen festen Platz.",
+            "sagen": [
+              "Schreibt auf, was ihr wirklich braucht – nicht, was gut klingt. Niemand erfährt, von wem ein Zettel ist. Auch ein leerer Zettel darf ins Glas.",
+              "Hier rät niemand, von wem ein Zettel stammt.",
+              "Das Glas bleibt das ganze Jahr hier. Im Winter und am Ende des Jahres öffnen wir es wieder."
+            ],
+            "tipp": "Gleiche Zettel und gleiche Stifte schützen die Anonymität. Wer unruhig ist, bekommt eine Aufgabe: das Glas schütteln oder die Striche an der Tafel machen. Kommen in Stunde 17 und 35 Zettel in anderen Farben dazu, werden im Glas die Schichten des Jahres sichtbar.",
+            "wennEsKippt": "Steht auf einem Zettel ein Name, eine Beleidigung oder ein Hinweis auf Gefahr, ihn nicht vorlesen, sondern still einstecken und der ganzen Klasse sagen: Wer etwas aufgeschrieben hat, worüber er reden möchte, kann nach der Stunde zu mir kommen. Noch am selben Tag mit dem SePAS besprechen, wie es weitergeht; dieser Zettel kommt nicht zurück ins Glas. Scherzzettel wie „Pizza“ oder „Weltherrschaft“ vorlesen und fragen, welcher Tank dahintersteckt: Pizza ist Essen und oft auch Zeit mit Freunden."
+          },
+          {
+            "titel": "Bewegungspause: Vier Ecken",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "In den Raumecken hängen die Schilder Ruhe, Bewegung, Leute, Essen und Schlaf. Alle stehen auf; die Lehrkraft liest einen Satz vor, und alle gehen ohne Kommentar in die Ecke, die für sie passt. Nach dem ersten und dem letzten Satz sagt in jeder Ecke eine Person, wenn sie mag, in einem Satz, warum. Gefragt wird nach Vorlieben, nicht nach Mängeln: Es gibt keine falsche Ecke. Wer nicht laufen mag, zeigt vom Platz aus. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "punkte": [
+              "Nach einem langen Schultag tankst du am besten auf mit …",
+              "Am Wochenende tut dir am meisten gut: …",
+              "Nach einem Streit brauchst du zuerst …",
+              "Vor einem Test hilft dir am ehesten …"
+            ],
+            "tipp": "Die Ecken zeigen ohne Worte, worum es heute geht: Dieselbe Lage füllt bei der einen den Tank mit Ruhe, beim anderen mit Bewegung. Beides ist in Ordnung."
+          },
+          {
+            "titel": "Meine Tanks: Wie voll sind sie gerade?",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Ein Glas an die Tafel zeichnen und an einem eigenen Beispiel zeigen, wie es geht: Mein Körper-Tank steht diese Woche nur bei einem Drittel – zu wenig Schlaf (2 Min.). Dann arbeitet jede Person allein auf dem Blatt (8 Min.): in jedes der sechs Gläser mit Blau einen Strich – so voll ist der Tank gerade –, das Datum in die Farbtabelle, den leersten Tank einkreisen und die beiden Sätze ergänzen. Die Lehrkraft geht herum und hilft mit Fragen, nicht mit Vorschlägen. Zum Schluss eine Abfrage mit geschlossenen Augen (3 Min.): Wer hat mindestens einen Tank, der mehr als halb voll ist – Daumen hoch? Wer hat einen, der gerade ziemlich leer ist? Meist sind bei beiden Fragen fast alle Daumen oben; das laut festhalten (2 Min.).",
+            "sagen": [
+              "Zeichnet ehrlich, nicht schön. Niemand sammelt das Blatt ein.",
+              "Fast niemand hat alle Tanks voll. Wichtig ist, dass ihr wisst, welcher gerade leer ist."
+            ],
+            "tipp": "Das eigene Beispiel ehrlich, aber im Rahmen halten – Schlaf oder Bewegung eignen sich gut. Wer früh fertig ist, überlegt schon eine Idee für den leersten Tank.",
+            "wennEsKippt": "Schreibt jemand „alles leer“ oder „egal“, nicht diskutieren, sondern fragen: Welcher Tank ist am wenigsten leer? Wer nicht über sich schreiben möchte, zeichnet die Tanks für Noah aus der Geschichte. Zeichnet jemand fast alle Gläser leer, bleibt bei der ersten Daumenfrage ein Daumen unten oder deutet jemand auf ernsten Mangel hin, etwa kein Essen oder keine Sicherheit zu Hause, das nicht vor der Klasse ansprechen, sondern nach der Stunde kurz nachfragen und bei Sorge den SePAS einbeziehen. Kommentiert jemand das Blatt des Nachbarn, an die Regel erinnern: Jedes Blatt gehört nur der Person, die es ausfüllt.",
+            "blatt": "ff7-glas-der-beduerfnisse"
+          },
+          {
+            "titel": "Ideen-Karussell und mein kleiner Schritt",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Vorher schließen alle ihr Heft. Auf den fünf Gruppentischen und dem Pult liegt je ein Plakat mit einem Tank und der Frage: Was füllt diesen Tank – in zehn Minuten, ohne Geld? Die Tischgruppen starten an verschiedenen Plakaten, schreiben in 90 Sekunden neue Ideen dazu und wandern auf ein Zeichen im Uhrzeigersinn weiter; gute Ideen der anderen bekommen einen Haken (vier Runden, 8 Min.). Danach klebt jede Gruppe ihr letztes Plakat an die Wand neben dem Glas (2 Min.). Am Platz wählt jede Person eine Idee für ihren eingekreisten Tank – oder für einen anderen, der ihr wichtig ist – und schreibt einen Wenn-dann-Plan aufs Blatt; vorher das Beispiel gemeinsam lesen (6 Min.). Zum Schluss nennen drei, vier Freiwillige ihren Schritt, nicht den Grund (3 Min.).",
+            "sagen": [
+              "Klein heißt: in zehn Minuten machbar, ohne Geld und ohne dass jemand anderes mitspielen muss.",
+              "Wer mag, nennt seinen Schritt – nur den Schritt, nicht den Grund."
+            ],
+            "tipp": "Ideen von Gleichaltrigen wirken stärker als Ratschläge von Erwachsenen. Auch „zocken“ oder „Musik laut“ darf auf ein Plakat, wenn es wirklich einen Tank füllt; dann fragen, wie lange es guttut.",
+            "wennEsKippt": "Wird es beim Wandern laut, das Ruhesignal geben und die Runde erst starten, wenn alle stehen. Steht auf einem Plakat etwas Beleidigendes, es wortlos durchstreichen und später unter vier Augen klären. Fällt jemandem kein Schritt ein, nimmt er eine Idee mit Haken vom Plakat und füllt nur die Wenn-Zeile mit einem Moment aus seinem Alltag. Wer nicht über sich schreiben möchte, schreibt den Plan für Noah.",
+            "blatt": "ff7-glas-der-beduerfnisse"
+          },
+          {
+            "titel": "Skill: 4-7-8-Atmung",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: Jetzt kommt ein Skill, der den Körper-Tank in einer Minute ein Stück auffüllt – abends im Bett, vor einem Test oder nach einer lauten Pause. Alle sitzen aufrecht, die Hände locker auf den Oberschenkeln. Die Lehrkraft zählt leise vor und macht mit: vier Durchgänge mit den drei Schritten (Liste). Danach ruhig weiteratmen und nachspüren. Zwei, drei Rückmeldungen einholen: Wie fühlt sich der Körper jetzt an? Wo könntet ihr das brauchen? Zum Schluss erklären: Langes Ausatmen bremst den Körper – der Herzschlag wird ruhiger.",
+            "sagen": [
+              "Das Ausatmen ist der wichtigste Teil. Langes Ausatmen sagt dem Körper: Du kannst runterfahren."
+            ],
+            "punkte": [
+              "Durch die Nase einatmen und dabei bis vier zählen.",
+              "Die Luft anhalten und bis sieben zählen – wer das unangenehm findet, hält kürzer oder gar nicht.",
+              "Durch den Mund langsam ausatmen, wie durch einen Strohhalm, und bis acht zählen."
+            ],
+            "tipp": "Vorher sagen, dass manchen beim ersten Mal leicht schwindlig wird; das vergeht, und man darf jederzeit normal weiteratmen. Wer schneller zählen möchte, nimmt 3-4-6: Wichtig ist nur, dass das Ausatmen am längsten dauert.",
+            "wennEsKippt": "Wird gekichert oder übertrieben laut ausgeatmet, eine Runde mit offenen Augen machen und mit leiser Stimme weiterzählen. Wer nicht mitmachen möchte, sitzt still dabei. Wer Asthma hat oder das Anhalten nicht mag, atmet nur langsam aus."
+          },
+          {
+            "titel": "Skills-Pass und Wochen-Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Was füllt meinen Tank? Jede Person schreibt einen Satz (2 Min.) und bekommt den Stempel; zwei Freiwillige lesen vor. Dann die Wochen-Mission im Heft zeigen und in einem Satz ansagen: den kleinen Schritt einmal ausprobieren – oder die 4-7-8-Atmung abends im Bett. Zum Schluss auf das Glas zeigen und den Ausblick auf die nächste Stunde geben.",
+            "sagen": [
+              "Ein Satz für den Pass: Was füllt euren Tank? Es darf euer kleiner Schritt sein oder die Atmung."
+            ],
+            "tipp": "Nach der Stunde die übrigen Zettel still lesen, die Striche ergänzen und die Tafel fotografieren: Das Bild der Klasse hängt nächste Woche neben dem Glas und kommt in Stunde 17 wieder hervor."
+          }
+        ],
+        "bruecke": "Nächste Woche geht es darum, wie ihr seid: eher laut oder eher leise, eher spontan oder eher geplant – und warum eine Klasse beide Seiten braucht.",
+        "mission": "Probiere diese Woche deinen kleinen Schritt einmal aus – oder die 4-7-8-Atmung abends im Bett. Fühlt sich der Tank danach etwas voller an?",
+        "hintergrund": "Hinter vielen Gefühlen und Verhaltensweisen stehen Bedürfnisse. Maslow (1943) beschrieb Bereiche vom Körper über Sicherheit, Zugehörigkeit und Anerkennung bis zur Selbstverwirklichung; seine strenge Stufenfolge gilt heute als überholt, die Bereiche selbst nicht. Nach der Selbstbestimmungstheorie geht es Menschen besser, und sie lernen motivierter, wenn drei Grundbedürfnisse erfüllt sind: Autonomie, Kompetenz und Verbundenheit (Deci & Ryan, 2000). Die sechs Tanks fassen diese Modelle jugendgerecht zusammen und machen Gefühle lesbar: Wer gereizt ist, hat vielleicht nur einen leeren Körper-Tank. Die Gewaltfreie Kommunikation unterscheidet Bedürfnisse von den Strategien, mit denen man sie erfüllen will (Rosenberg, 2001): Hinter dem Wunsch nach neuen Sneakers kann Dazugehören stehen, und dafür gibt es mehr als einen Weg. Das anonyme Glas zeigt der Klasse, wie viel sie teilt, ohne dass jemand etwas preisgibt.",
+        "quellen": [
+          "Maslow, A. H. (1943). A theory of human motivation. Psychological Review, 50(4), 370–396.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+        ],
+        "achtung": "Das Thema kann Mangel sichtbar machen: kein sicheres Zuhause, zu wenig Essen oder Schlaf, niemand, der zu einem hält. Nichts davon wird vor der Klasse vertieft. Die Zettel zuerst still lesen; Zettel mit Namen, Beleidigungen oder Hinweisen auf Gefahr nicht vorlesen, beiseitelegen und noch am selben Tag mit dem SePAS besprechen, nach dem Schutzkonzept der Schule. Die Pegel im Heft sind privat und werden weder eingesammelt noch vorgelesen. Zeichnet jemand fast alle Tanks leer, nach der Stunde kurz nachfragen. Beim Atmen ist das Anhalten freiwillig.",
+        "differenzierung": {
+          "leichter": "Für Jugendliche, die mühsam schreiben oder die Sprache noch lernen: Auf einen Zettel darf ein einzelnes Wort, eine kleine Zeichnung oder ein Wort in der eigenen Sprache. Die Zeichen neben den Tanks bleiben an der Tafel stehen; für den Plan reicht eine Idee mit Haken vom Plakat.",
+          "schwerer": "Zu einem Wunsch aus dem Spiel zwei andere Wege finden, die dasselbe Bedürfnis erfüllen. Im Ideen-Karussell die Moderation einer Tischgruppe übernehmen und am Ende die drei besten Ideen eines Plakats vorstellen."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), die sechs Tanks und das Spiel ‚Wunsch oder Bedürfnis?‘ (10 Min.), das Glas der Klasse füllen und zehn Zettel vorlesen (15 Min.), meine Tanks einzeichnen und einen kleinen Schritt planen (12 Min.), 4-7-8-Atmung (3 Min.), Skills-Pass und Wochen-Mission (5 Min.). Vier Ecken und Ideen-Karussell entfallen; die Plakate lassen sich in der nächsten Stunde als Check-in nachholen."
+      },
+      "fr": {
+        "titel": "Le bocal des besoins",
+        "kurz": "Les besoins sont comme des réservoirs intérieurs : la classe remplit anonymement son bocal des besoins, chaque jeune repère son réservoir le plus vide et prévoit un petit pas pour faire le plein.",
+        "ziele": [
+          "distinguent besoins et envies et les rangent dans six réservoirs",
+          "remplissent anonymement le bocal de la classe et voient quels besoins beaucoup partagent",
+          "évaluent le niveau de leurs propres réservoirs et repèrent le plus vide",
+          "prévoient un petit pas qui remplit un peu un réservoir cette semaine"
+        ],
+        "material": [
+          "Cahier de l’élève, crayons bleus",
+          "Roue des émotions, gommettes",
+          "Bocal à couvercle vissé, étiquette",
+          "40 papiers d’une seule couleur",
+          "20 crayons à papier identiques",
+          "Quatre panneaux pour les coins",
+          "Six affiches A3, feutres, scotch",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Se procurer un bocal, écrire l’étiquette : Bocal des besoins – 7e…, rempli le…",
+          "Préparer au tableau les six réservoirs (étape 3), un petit dessin à côté de chacun.",
+          "Accrocher les panneaux dans les coins : Calme, Bouger, Être avec d’autres, Manger et dormir.",
+          "Préparer les six affiches A3 (étape 7) et les poser sur six tables.",
+          "Compter deux papiers par jeune ; garder d’autres couleurs pour les séances 17 et 35."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : bien commencer la journée"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour et début du chapitre « Qui suis-je ? »"
+          },
+          {
+            "min": "15–30",
+            "phase": "input",
+            "titel": "Six réservoirs : de quoi a-t-on besoin ?"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Remplir le bocal de la classe"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : les quatre coins"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Mes réservoirs : où en sont-ils ?"
+          },
+          {
+            "min": "65–85",
+            "phase": "uebung",
+            "titel": "Carrousel des idées et mon petit pas"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : la respiration 4-7-8"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass et mission de la semaine"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : bien commencer la journée",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions ; celle de l’enseignant·e est déjà collée. Une fois tout le monde assis, dire une phrase sur son propre mot ; deux ou trois volontaires suivent (3 min). Écrire ensuite la question au tableau : de quoi avez-vous besoin pour qu’une journée commence bien ? En îlots, chacun cite une chose ; on peut dire « je passe » (2 min). Chaque îlot lance deux réponses à la classe, que l’on note en vrac sur le bord du tableau (4 min). Elles seront rangées dans les réservoirs à l’étape 3.",
+            "sagen": [
+              "De quoi avez-vous besoin pour qu’une journée commence bien ? Une chose suffit – le petit-déjeuner compte, la musique dans le bus aussi.",
+              "Pour moi, ce sont dix minutes au calme avec un café, avant que quelqu’un me demande quelque chose."
+            ],
+            "tipp": "Les réponses restent au bord du tableau : à l’étape 3, la classe s’aperçoit qu’elle connaît les réservoirs depuis longtemps – il leur manquait seulement un nom.",
+            "wennEsKippt": "Si tout le monde se bouscule devant l’affiche, faire passer îlot par îlot. Si les réponses se limitent à « les vacances » ou « pas d’école », les noter en riant et demander : qu’est-ce que vous auriez alors – du sommeil, du calme, du temps avec vos amis ? Si quelqu’un dit quelque chose de lourd, par exemple « que personne ne se dispute à la maison », ne pas l’écrire au tableau : remercier brièvement, ne pas approfondir et lui en reparler après le cours."
+          },
+          {
+            "titel": "Retour et début du chapitre « Qui suis-je ? »",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Demander brièvement des nouvelles de la mission de la semaine : pouce en haut, au milieu ou en bas – une personne raconte, personne n’est obligé de l’avoir réussie. Écrire ensuite le nouveau chapitre sur le tableau latéral : Qui suis-je ? – De quoi ai-je besoin, qu’est-ce que je sais faire ? Annoncer les trois séances : aujourd’hui, ce dont vous avez besoin ; la semaine prochaine, comment vous êtes ; ensuite, ce que vous savez faire. Pour finir, montrer la charte de classe : ce que vous découvrez aujourd’hui sur vous reste anonyme ou dans votre cahier.",
+            "sagen": [
+              "Jusqu’ici, on a parlé de nous en tant que classe. À partir d’aujourd’hui, chacun se regarde soi-même.",
+              "La question du jour : de quoi avez-vous besoin pour aller bien ?"
+            ],
+            "tipp": "La question du chapitre reste trois semaines au tableau latéral. Les jeunes voient ainsi que besoins, manière d’être et forces vont ensemble – et qu’à la fin, chacun a son bocal et son arbre dans le cahier."
+          },
+          {
+            "titel": "Six réservoirs : de quoi a-t-on besoin ?",
+            "dauer": 15,
+            "phase": "input",
+            "text": "Expliquer l’image : chaque besoin est comme un réservoir. Quand l’un d’eux est presque vide, une émotion s’allume – souvent avant qu’on en connaisse la raison. Présenter les six réservoirs au tableau (tableau) et y ranger ensemble les réponses du tour d’humeur (5 min). Lire ensuite l’histoire « Le voyant » de la fiche : quel réservoir est vide chez Noah, et quel est le voyant (3 min) ? Pour finir, le jeu « envie ou besoin ? » : lire une envie ; les îlots se mettent d’accord à voix basse en dix secondes et, à « trois », une personne montre le numéro du réservoir avec les doigts (7 min). Souvent, deux réservoirs conviennent ; demander pourquoi et retenir : derrière une envie se cache souvent un besoin – et pour un besoin, il existe plus d’un chemin.",
+            "sagen": [
+              "Imaginez qu’il y a en vous six réservoirs. Que se passe-t-il quand le réservoir du sommeil est vide ?",
+              "Derrière “je veux les nouvelles baskets”, il y a souvent : je veux faire partie du groupe. Est-ce qu’il existe d’autres chemins pour ça ?"
+            ],
+            "punkte": [
+              "Les nouvelles baskets que tout le monde porte en ce moment. (3, 4)",
+              "Dormir jusqu’à midi le samedi. (1)",
+              "Une chambre à moi, où personne n’entre sans frapper. (5, 2, aussi 1 : le calme)",
+              "Que l’entraîneur me fasse enfin commencer le match. (4)",
+              "Pouvoir rester plus longtemps sur mon portable le soir. (3, 6, 5)",
+              "Une sortie au parc d’attractions avec la classe. (6, 3)"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Réservoir – par exemple",
+                "Presque vide, on se sent souvent…"
+              ],
+              "zeilen": [
+                [
+                  "1 Le corps : sommeil, manger, boire, bouger, repos",
+                  "fatigué, irritable, distrait"
+                ],
+                [
+                  "2 La sécurité : savoir ce qui vient ; des gens sur qui compter",
+                  "nerveux, tendu, méfiant"
+                ],
+                [
+                  "3 Faire partie : amis, famille, des gens qui sont là pour moi",
+                  "seul, exclu, jaloux"
+                ],
+                [
+                  "4 La reconnaissance : être vu et pris au sérieux",
+                  "blessé, en colère, invisible"
+                ],
+                [
+                  "5 Décider soi-même : de la liberté, avoir son mot à dire",
+                  "buté, à l’étroit, en colère"
+                ],
+                [
+                  "6 Plaisir et nouveauté : rire, vivre des choses, apprendre",
+                  "ennuyé, sans envie, vide"
+                ]
+              ]
+            },
+            "tipp": "Si quelqu’un cite le portable ou le wifi comme besoin, demander à quoi il sert : écrire à ses amis (3), décompresser (1), pouvoir suivre les conversations (4). La différence entre envie et besoin devient concrète, sans faire la leçon.",
+            "wennEsKippt": "Si tout le monde crie en même temps, s’en tenir au déroulement : dix secondes à voix basse, puis tout le monde montre à trois – qui crie avant ne compte pas. Si des îlots se disputent sur le bon numéro, trancher : souvent, deux sont justes ; tout dépend de ce dont la personne a vraiment besoin. Si un jeune ne comprend pas les mots, les petits dessins à côté des réservoirs et une voisine qui traduit l’aident. Si le temps manque, ne jouer que quatre envies.",
+            "blatt": "ff7-glas-der-beduerfnisse"
+          },
+          {
+            "titel": "Remplir le bocal de la classe",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Montrer le bocal et lire l’étiquette. Chaque jeune reçoit deux papiers de la même couleur et un des crayons identiques, et écrit sur chaque papier un besoin, sans son nom (3 min). Plier les papiers en quatre ; passer avec le bocal dans les îlots, chacun y glisse ses papiers (2 min). Puis secouer le bocal, tirer un papier, le lire d’abord en silence, puis à voix haute ; à « trois », les îlots montrent le numéro du réservoir et un jeune trace un bâton au tableau (8 min, 12 à 15 papiers). Pour finir, regarder les bâtons : quels réservoirs comptent pour beaucoup d’entre nous (2 min) ? Les autres papiers seront lus après le cours. Tous les papiers retournent dans le bocal, le couvercle est vissé et le bocal prend sa place fixe.",
+            "sagen": [
+              "Écrivez ce dont vous avez vraiment besoin – pas ce qui sonne bien. Personne ne saura de qui vient un papier. Un papier vide peut aussi aller dans le bocal.",
+              "Ici, personne ne cherche à deviner qui a écrit quoi.",
+              "Le bocal reste ici toute l’année. On le rouvrira en hiver et à la fin de l’année."
+            ],
+            "tipp": "Les mêmes papiers et les mêmes crayons protègent l’anonymat. Un jeune agité reçoit une mission : secouer le bocal ou tracer les bâtons au tableau. Quand des papiers d’autres couleurs s’ajouteront aux séances 17 et 35, on verra dans le bocal les couches de l’année.",
+            "wennEsKippt": "Si un papier porte un nom, une insulte ou un signe de danger, ne pas le lire, mais le mettre discrètement de côté et dire à toute la classe : si quelqu’un a écrit quelque chose dont il aimerait parler, il peut venir me voir après le cours. En parler au SePAS le jour même pour décider de la suite ; ce papier ne retourne pas dans le bocal. Lire les papiers pour rire, comme « pizza » ou « dominer le monde », et demander quel réservoir se cache derrière : la pizza, c’est manger – et souvent un moment entre amis."
+          },
+          {
+            "titel": "Pause active : les quatre coins",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Dans les coins de la salle sont affichés les panneaux Calme, Bouger, Être avec d’autres, Manger et dormir. Tout le monde se lève ; lire une phrase, et chacun va sans commentaire dans le coin qui lui correspond. Après la première et la dernière phrase, un jeune par coin dit, s’il le veut, pourquoi en une phrase. On parle de préférences, pas de manques : il n’y a pas de mauvais coin. Qui ne veut pas bouger montre depuis sa place. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "punkte": [
+              "Après une longue journée de cours, pour refaire le plein, tu as surtout besoin de…",
+              "Le week-end, ce qui te fait le plus de bien, c’est…",
+              "Après une dispute, tu as d’abord besoin de…",
+              "Avant un devoir en classe, ce qui t’aide le plus, c’est…"
+            ],
+            "tipp": "Les coins montrent sans un mot le message du jour : la même situation remplit le réservoir de l’une avec du calme, celui de l’autre avec du mouvement. Les deux sont normaux."
+          },
+          {
+            "titel": "Mes réservoirs : où en sont-ils ?",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Dessiner un bocal au tableau et montrer avec un exemple personnel comment faire : cette semaine, mon réservoir du corps n’est rempli qu’au tiers – pas assez de sommeil (2 min). Puis chaque jeune travaille seul sur la fiche (8 min) : un trait bleu dans chacun des six bocaux – c’est le niveau du réservoir en ce moment –, la date dans le tableau des couleurs, entourer le réservoir le plus vide et compléter les deux phrases. Circuler et aider par des questions, pas par des propositions. Pour finir, un sondage les yeux fermés (3 min) : qui a au moins un réservoir rempli à plus de la moitié – pouce en haut ? Qui en a un qui est plutôt vide en ce moment ? En général, presque tous les pouces se lèvent aux deux questions ; le dire à voix haute (2 min).",
+            "sagen": [
+              "Dessinez honnêtement, pas joliment. Personne ne ramasse la fiche.",
+              "Presque personne n’a tous ses réservoirs pleins. L’important, c’est de savoir lequel est vide en ce moment."
+            ],
+            "tipp": "Garder un exemple personnel honnête mais sans risque – le sommeil ou le mouvement s’y prêtent bien. Qui a fini tôt réfléchit déjà à une idée pour son réservoir le plus vide.",
+            "wennEsKippt": "Si un jeune écrit « tout est vide » ou « je m’en fiche », ne pas discuter, mais demander : quel réservoir est le moins vide ? Qui ne veut pas écrire sur soi dessine les réservoirs de Noah, le garçon de l’histoire. Si un jeune dessine presque tous les bocaux vides, si un pouce reste baissé à la première question ou si quelqu’un laisse deviner un manque grave, par exemple pas assez à manger ou pas de sécurité à la maison, ne pas en parler devant la classe, mais lui poser une question brève après le cours et, en cas d’inquiétude, impliquer le SePAS. Si quelqu’un commente la fiche du voisin, rappeler la règle : chaque fiche n’appartient qu’à celui ou celle qui la remplit.",
+            "blatt": "ff7-glas-der-beduerfnisse"
+          },
+          {
+            "titel": "Carrousel des idées et mon petit pas",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Tout le monde ferme d’abord son cahier. Sur les cinq tables des îlots et sur le bureau, une affiche par réservoir avec la question : qu’est-ce qui remplit ce réservoir – en dix minutes, sans argent ? Les îlots commencent devant des affiches différentes, ajoutent de nouvelles idées en 90 secondes et, au signal, passent à l’affiche suivante dans le sens des aiguilles d’une montre ; les bonnes idées des autres reçoivent une coche (quatre tours, 8 min). Chaque îlot accroche ensuite sa dernière affiche au mur, près du bocal (2 min). À sa place, chaque jeune choisit une idée pour le réservoir entouré – ou pour un autre qui compte pour lui – et écrit un plan « si… alors » sur la fiche ; lire d’abord l’exemple ensemble (6 min). Pour finir, trois ou quatre volontaires disent leur petit pas, pas la raison (3 min).",
+            "sagen": [
+              "Petit veut dire : faisable en dix minutes, sans argent et sans que quelqu’un d’autre doive participer.",
+              "Qui le souhaite dit son petit pas – juste le pas, pas la raison."
+            ],
+            "tipp": "Les idées des jeunes portent plus que les conseils des adultes. « Jouer à la console » ou « mettre la musique fort » peuvent aller sur une affiche s’ils remplissent vraiment un réservoir ; demander alors combien de temps ça fait du bien.",
+            "wennEsKippt": "Si ça devient bruyant pendant les déplacements, donner le signal de calme et ne lancer le tour que lorsque tout le monde est en place. Si une affiche porte quelque chose de blessant, le barrer sans un mot et en parler plus tard en tête-à-tête. Si un jeune ne trouve pas de petit pas, il prend une idée cochée sur une affiche et complète seulement la ligne « si » avec un moment de son quotidien. Qui ne veut pas écrire sur soi écrit le plan de Noah.",
+            "blatt": "ff7-glas-der-beduerfnisse"
+          },
+          {
+            "titel": "Skill : la respiration 4-7-8",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : voici un skill qui remplit un peu le réservoir du corps en une minute – le soir au lit, avant un devoir en classe ou après une récré bruyante. Tout le monde est assis bien droit, les mains posées sur les cuisses. Compter à voix basse et faire l’exercice avec la classe : quatre cycles avec les trois étapes (liste). Ensuite, respirer normalement et observer. Recueillir deux ou trois retours : comment se sent le corps maintenant ? Où pourriez-vous en avoir besoin ? Pour finir, expliquer : une longue expiration freine le corps – le cœur bat plus calmement.",
+            "sagen": [
+              "L’expiration est la partie la plus importante. Une longue expiration dit au corps : tu peux ralentir."
+            ],
+            "punkte": [
+              "Inspirer par le nez en comptant jusqu’à quatre.",
+              "Retenir son souffle en comptant jusqu’à sept – si c’est désagréable, moins longtemps ou pas du tout.",
+              "Expirer lentement par la bouche, comme dans une paille, en comptant jusqu’à huit."
+            ],
+            "tipp": "Prévenir que certains ont un peu la tête qui tourne la première fois ; ça passe, et on peut à tout moment reprendre une respiration normale. Qui veut compter plus vite prend 3-4-6 : l’essentiel est que l’expiration dure le plus longtemps.",
+            "wennEsKippt": "Si la classe pouffe ou expire très fort pour faire rire, faire un tour les yeux ouverts et continuer à compter à voix basse. Qui ne veut pas participer reste assis en silence. Un jeune asthmatique ou qui n’aime pas retenir son souffle se contente d’expirer lentement."
+          },
+          {
+            "titel": "Skills-Pass et mission de la semaine",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire la question du Skills-Pass au tableau : qu’est-ce qui remplit mon réservoir ? Chaque jeune écrit une phrase (2 min) et reçoit le tampon ; deux volontaires lisent la leur. Montrer ensuite la mission de la semaine dans le cahier et l’annoncer en une phrase : essayer une fois son petit pas – ou la respiration 4-7-8 le soir au lit. Pour finir, montrer le bocal et annoncer la prochaine séance.",
+            "sagen": [
+              "Une phrase pour le Skills-Pass : qu’est-ce qui remplit votre réservoir ? Ce peut être votre petit pas ou la respiration."
+            ],
+            "tipp": "Après le cours, lire en silence les papiers restants, compléter les bâtons et photographier le tableau : l’image de la classe est affichée la semaine suivante près du bocal et ressort à la séance 17."
+          }
+        ],
+        "bruecke": "La semaine prochaine, on regarde comment vous êtes : plutôt expansifs ou plutôt réservés, plutôt spontanés ou plutôt organisés – et pourquoi une classe a besoin des deux.",
+        "mission": "Cette semaine, essaie une fois ton petit pas – ou la respiration 4-7-8 le soir au lit. Ton réservoir te semble-t-il un peu plus plein après ?",
+        "hintergrund": "Derrière beaucoup d’émotions et de comportements se cachent des besoins. Maslow (1943) a décrit des domaines allant du corps à l’accomplissement de soi, en passant par la sécurité, l’appartenance et la reconnaissance ; son ordre strict par étages est dépassé, pas les domaines. Selon la théorie de l’autodétermination, on va mieux et on apprend avec plus d’envie quand trois besoins de base sont satisfaits : autonomie, compétence et lien aux autres (Deci & Ryan, 2000). Les six réservoirs résument ces modèles et rendent les émotions lisibles : qui est irritable a peut-être juste le réservoir du corps vide. La communication non violente distingue les besoins des stratégies pour les satisfaire (Rosenberg, 2001) : derrière l’envie de nouvelles baskets peut se cacher le besoin de faire partie du groupe, et il existe plus d’un chemin pour y arriver. Le bocal anonyme montre à la classe ce qu’elle partage, sans que personne se dévoile.",
+        "quellen": [
+          "Maslow, A. H. (1943). A theory of human motivation. Psychological Review, 50(4), 370–396.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+        ],
+        "achtung": "Le thème peut révéler des manques : pas de sécurité à la maison, pas assez à manger ou de sommeil, personne sur qui compter. Rien de tout cela n’est approfondi devant la classe. Lire d’abord les papiers en silence ; ne pas lire ceux qui portent un nom, une insulte ou un signe de danger, les mettre de côté et en parler le jour même au SePAS, selon le protocole de protection de l’école. Les niveaux dans le cahier sont privés : ni ramassés ni lus à voix haute. Si un jeune dessine presque tous ses réservoirs vides, lui parler brièvement après le cours. Retenir son souffle reste facultatif.",
+        "differenzierung": {
+          "leichter": "Pour les jeunes qui ont du mal à écrire ou qui apprennent encore la langue : sur un papier, un seul mot, un petit dessin ou un mot dans leur langue suffisent. Les dessins à côté des réservoirs restent au tableau ; pour le plan, une idée cochée sur une affiche suffit.",
+          "schwerer": "Pour une envie du jeu, trouver deux autres chemins qui répondent au même besoin. Pendant le carrousel des idées, animer un îlot et présenter à la fin les trois meilleures idées d’une affiche."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), les six réservoirs et le jeu « envie ou besoin ? » (10 min), remplir le bocal de la classe et lire dix papiers (15 min), dessiner ses réservoirs et prévoir un petit pas (12 min), respiration 4-7-8 (3 min), Skills-Pass et mission de la semaine (5 min). Les quatre coins et le carrousel sont supprimés ; les affiches d’idées peuvent être rattrapées à la séance suivante, en guise de tour d’humeur."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-glas-der-beduerfnisse",
+      "bereich": "skills",
+      "thema": "ich",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "klasse"
+      ],
+      "dauer": "25 Min.; später je 10 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Bedürfnisse",
+        "Glas der Bedürfnisse",
+        "Tanks",
+        "Wenn-dann-Plan",
+        "Jahresfaden",
+        "Förderfach"
+      ],
+      "bild": "icon:bottle",
+      "kurs": [
+        "ff7-e06",
+        "ff7-e17",
+        "ff7-e35"
+      ],
+      "de": {
+        "titel": "Das Glas der Bedürfnisse",
+        "untertitel": "Wie voll sind meine Tanks? Du schaust heute nach – und noch einmal im Winter und im Sommer.",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Jeder Mensch hat Bedürfnisse: Dinge, die er braucht, damit es ihm gut geht. Stell sie dir wie Tanks vor. Ist einer fast leer, meldet sich ein Gefühl wie ein Warnlicht – oft, bevor du den Grund kennst."
+          },
+          {
+            "art": "geschichte",
+            "titel": "Das Warnlicht",
+            "bild": "figur:ben:wuetend:verschraenkt",
+            "text": "Noah (12) ist seit einer Woche schlecht drauf. Er motzt seine Schwester an, in Mathe kann er sich kaum konzentrieren, und abends scrollt er lange durch sein Handy. Am Wochenende merkt er, was fehlt: Sein bester Freund Diogo ist in eine andere Klasse gekommen. In der Pause hat Noah niemanden mehr zum Reden. Sein Tank für Dazugehören ist fast leer – die schlechte Laune ist das Warnlicht."
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Sechs Tanks",
+            "punkte": [
+              "Körper: Schlaf, Essen, Trinken, Bewegung, Ruhe",
+              "Sicherheit: wissen, was kommt; Menschen, auf die du dich verlassen kannst",
+              "Dazugehören: Freunde, Familie, Menschen, die zu dir halten",
+              "Anerkennung: gesehen und ernst genommen werden",
+              "Selbst entscheiden: Freiraum, mitreden dürfen",
+              "Spaß und Neues: lachen, etwas erleben, dazulernen"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wie voll ist jeder Tank gerade? Zeichne in jedes Glas einen Strich. Kreis dann den leersten Tank ein.",
+            "hinweis": "Heute mit Blau. In Stunde 17 kommt ein grüner Strich dazu, in Stunde 35 ein roter – so siehst du, was sich verändert.",
+            "symbole": [
+              "malen",
+              "einkreisen"
+            ]
+          },
+          {
+            "art": "glaeser",
+            "items": [
+              "Körper",
+              "Sicherheit",
+              "Dazugehören",
+              "Anerkennung",
+              "Selbst entscheiden",
+              "Spaß und Neues"
+            ],
+            "spalten": 3
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein leerster Tank ist gerade …",
+              "Das merke ich so: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Plane einen kleinen Schritt, der einen Tank diese Woche etwas auffüllt. Schreib einen Wenn-dann-Plan.",
+            "hinweis": "Klein heißt: in zehn Minuten machbar, ohne Geld und ohne dass jemand anderes mitspielen muss.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "wortspeicher",
+            "titel": "Ideen zum Auftanken",
+            "items": [
+              "früher ins Bett",
+              "Wasser trinken",
+              "zehn Minuten an die Luft",
+              "Musik hören",
+              "Handy-Pause",
+              "jemandem schreiben, der mir guttut",
+              "Sport oder Tanzen",
+              "um Hilfe bitten",
+              "etwas selbst entscheiden",
+              "mit jemandem lachen",
+              "etwas Neues ausprobieren",
+              "Zeit nur für mich"
+            ]
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Wenn ich abends ins Bett gehe,",
+                "dann": "lege ich das Handy außer Reichweite und höre noch ein Lied. (Tank: Körper)"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Stunde 17: Zeichne grüne Striche in die Gläser. Was hat sich seit dem Herbst verändert?"
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Voller geworden ist …",
+              "Geholfen hat mir …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "aufgabe",
+            "text": "Stunde 35: Zeichne rote Striche ein und schau auf das ganze Jahr."
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Am meisten verändert hat sich …",
+              "Im Sommer achte ich auf …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Deine Tanks gehören dir. Niemand sammelt dieses Blatt ein. Ist ein Tank lange leer, sprich mit einer Person, der du vertraust, oder mit dem SePAS."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen schätzen ein, wie voll ihre sechs Tanks sind, finden den leersten und planen einen kleinen Schritt. In Stunde 17 und 35 kommen neue Striche dazu.",
+          "ablauf": [
+            "Stunde 6, Schritt 3: die Geschichte vorlesen und den Kasten „Sechs Tanks“ mit dem Tafelbild verbinden.",
+            "Stunde 6, Schritt 6 (8 Min.): blaue Striche, Datum, den leersten Tank einkreisen; Schritt 7: Wenn-dann-Plan.",
+            "Stunde 17: nach dem Öffnen des Glases grüne Striche und Aufgabe 3; Stunde 35: rote Striche und Aufgabe 4.",
+            "Das Blatt bleibt im Heft und wird weder eingesammelt noch vorgelesen."
+          ],
+          "hintergrund": "Die sechs Tanks fassen Bedürfnismodelle jugendgerecht zusammen, von Maslow (1943) bis zu den Grundbedürfnissen der Selbstbestimmungstheorie: Autonomie, Kompetenz und Verbundenheit (Deci & Ryan, 2000). Wer merkt, welcher Tank leer ist, versteht die eigenen Gefühle besser. Wenn-dann-Pläne verknüpfen einen Vorsatz mit einer Situation und werden häufiger umgesetzt als allgemeine Absichten (Gollwitzer, 1999).",
+          "quellen": [
+            "Maslow, A. H. (1943). A theory of human motivation. Psychological Review, 50(4), 370–396.",
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          ],
+          "material": "Buntstifte in Blau, Grün und Rot"
+        }
+      },
+      "fr": {
+        "titel": "Le bocal des besoins",
+        "untertitel": "Où en sont mes réservoirs ? Tu fais le point aujourd’hui – puis encore en hiver et en été.",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Chacun a des besoins : ce qu’il lui faut pour aller bien. Imagine-les comme des réservoirs. Quand l’un d’eux est presque vide, une émotion s’allume comme un voyant – souvent avant que tu en connaisses la raison."
+          },
+          {
+            "art": "geschichte",
+            "titel": "Le voyant",
+            "bild": "figur:ben:wuetend:verschraenkt",
+            "text": "Depuis une semaine, Noah (12 ans) est de mauvaise humeur. Il envoie promener sa sœur, il n’arrive presque plus à se concentrer en maths et, le soir, il passe des heures à faire défiler son portable. Le week-end, il comprend ce qui lui manque : son meilleur ami Diogo est dans une autre classe. À la récré, Noah n’a plus personne à qui parler. Son réservoir « faire partie » est presque vide – sa mauvaise humeur, c’est le voyant."
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Six réservoirs",
+            "punkte": [
+              "Le corps : sommeil, manger, boire, bouger, se reposer",
+              "La sécurité : savoir ce qui vient ; des gens sur qui tu peux compter",
+              "Faire partie : des amis, la famille, des gens qui sont là pour toi",
+              "La reconnaissance : être vu et pris au sérieux",
+              "Décider soi-même : de la liberté, avoir son mot à dire",
+              "Plaisir et nouveauté : rire, vivre des choses, apprendre"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Où en est chaque réservoir ? Trace un trait dans chaque bocal. Entoure ensuite le réservoir le plus vide.",
+            "hinweis": "Aujourd’hui en bleu. À la séance 17, tu ajoutes un trait vert, à la séance 35 un trait rouge – tu verras ce qui change.",
+            "symbole": [
+              "malen",
+              "einkreisen"
+            ]
+          },
+          {
+            "art": "glaeser",
+            "items": [
+              "Le corps",
+              "La sécurité",
+              "Faire partie",
+              "La reconnaissance",
+              "Décider soi-même",
+              "Plaisir et nouveauté"
+            ],
+            "spalten": 3
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "En ce moment, mon réservoir le plus vide, c’est…",
+              "Je le remarque à…"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Prévois un petit pas qui remplit un peu un réservoir cette semaine. Écris un plan « si… alors ».",
+            "hinweis": "Petit veut dire : faisable en dix minutes, sans argent et sans que quelqu’un d’autre doive participer.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "wortspeicher",
+            "titel": "Idées pour faire le plein",
+            "items": [
+              "me coucher plus tôt",
+              "boire de l’eau",
+              "dix minutes dehors",
+              "écouter de la musique",
+              "une pause sans portable",
+              "écrire à quelqu’un qui me fait du bien",
+              "du sport ou de la danse",
+              "demander de l’aide",
+              "décider quelque chose moi-même",
+              "rire avec quelqu’un",
+              "essayer quelque chose de nouveau",
+              "du temps rien que pour moi"
+            ]
+          },
+          {
+            "art": "wennDann",
+            "wenn": "Si …",
+            "dann": "… alors",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Si c’est l’heure d’aller me coucher,",
+                "dann": "je pose mon portable hors de portée et j’écoute encore une chanson. (Réservoir : le corps)"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Séance 17 : trace des traits verts dans les bocaux. Qu’est-ce qui a changé depuis l’automne ?"
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ce qui s’est rempli, c’est…",
+              "Ce qui m’a aidé, c’est…"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "aufgabe",
+            "text": "Séance 35 : trace des traits rouges et regarde toute l’année."
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ce qui a le plus changé, c’est…",
+              "Cet été, je ferai attention à…"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "Tes réservoirs t’appartiennent. Personne ne ramasse cette fiche. Si un réservoir reste longtemps vide, parles-en à une personne de confiance ou au SePAS."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes évaluent le niveau de leurs six réservoirs, repèrent le plus vide et prévoient un petit pas. Aux séances 17 et 35, de nouveaux traits s’ajoutent.",
+          "ablauf": [
+            "Séance 6, étape 3 : lire l’histoire et relier l’encadré « Six réservoirs » au tableau.",
+            "Séance 6, étape 6 (8 min) : traits bleus, date, entourer le réservoir le plus vide ; étape 7 : plan « si… alors ».",
+            "Séance 17 : après l’ouverture du bocal, traits verts et exercice 3 ; séance 35 : traits rouges et exercice 4.",
+            "La fiche reste dans le cahier ; elle n’est ni ramassée ni lue à voix haute."
+          ],
+          "hintergrund": "Les six réservoirs résument pour des jeunes les modèles des besoins, de Maslow (1943) aux besoins de base de la théorie de l’autodétermination : autonomie, compétence et lien aux autres (Deci & Ryan, 2000). Qui repère le réservoir vide comprend mieux ses émotions. Les plans « si… alors » relient une résolution à une situation et sont plus souvent mis en œuvre que des intentions générales (Gollwitzer, 1999).",
+          "quellen": [
+            "Maslow, A. H. (1943). A theory of human motivation. Psychological Review, 50(4), 370–396.",
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          ],
+          "material": "Crayons de couleur bleu, vert et rouge"
+        }
+      }
+    }
+  ]
+}

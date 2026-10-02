@@ -1,0 +1,1078 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e14",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-skills-tester"
+      ],
+      "woerter": [
+        {
+          "de": "der Atem",
+          "fr": "le souffle"
+        },
+        {
+          "de": "einatmen",
+          "fr": "inspirer"
+        },
+        {
+          "de": "ausatmen",
+          "fr": "expirer"
+        },
+        {
+          "de": "anspannen",
+          "fr": "contracter"
+        },
+        {
+          "de": "loslassen",
+          "fr": "relâcher"
+        },
+        {
+          "de": "unauffällig",
+          "fr": "discret, discrète"
+        }
+      ],
+      "de": {
+        "titel": "Skills über Körper und Atem",
+        "kurz": "Wie in einem Labor testet die Klasse Atem-, Muskel- und Bewegungs-Skills mit Zahl vorher und nachher, übt sie unauffällig für Bus und Test und findet ihren Lieblings-Skill.",
+        "ziele": [
+          "testen Atem-, Muskel- und Bewegungs-Skills mit Zahl vorher und nachher und halten die Ergebnisse im Skills-Tester fest",
+          "erklären mit dem Bild von Gaspedal und Bremse, warum Körper-Skills auch bei hoher Anspannung wirken",
+          "üben Körper-Skills so, dass sie im Bus, im Test oder in der Pause unauffällig gehen",
+          "wählen einen Lieblings-Skill und legen fest, bis zu welcher Zahl er hilft"
+        ],
+        "material": [
+          "Schülerheft, Stempel für den Pass",
+          "Gefühlsrad, Anspannungsskala, Punkte",
+          "Eine Feder je Person, ein Becher",
+          "Stoppuhr oder Timer",
+          "Lautsprecher, ein schneller Song",
+          "Fünf Zettel mit den Situationen"
+        ],
+        "vorbereitung": [
+          "Beim Régent klären, wer Asthma, Herz- oder Kreislaufprobleme oder eine Verletzung hat; diese Jugendlichen bewegen sich in eigenem Tempo.",
+          "Platz schaffen: Taschen unter die Tische, Gänge frei; die Kollegin oder den Kollegen im Raum darunter vorwarnen, dass es kurz lauter wird.",
+          "Kastenatmung und doppelten Seufzer selbst ausprobieren, vor allem das langsame Zählen; das Tafelbild aus Schritt 3 anschreiben.",
+          "Die fünf Situationen aus Schritt 7 auf Zettel schreiben – einer je Tischgruppe."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Gefühl, Zahl und Körper-Check"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick: Mission und „erst runter“"
+          },
+          {
+            "min": "15–25",
+            "phase": "input",
+            "titel": "Gaspedal und Bremse: So hilft der Körper"
+          },
+          {
+            "min": "25–45",
+            "phase": "uebung",
+            "titel": "Atem-Labor: drei Atem-Skills im Test"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause als Experiment: Vollgas"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Anspannen und Loslassen"
+          },
+          {
+            "min": "65–85",
+            "phase": "uebung",
+            "titel": "Wer sieht es? Körper-Skills unauffällig"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Doppelter Seufzer"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Lieblings-Skill, Skills-Pass und Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühl, Zahl und Körper-Check",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person einen Punkt auf das Gefühlsrad und – neu – einen zweiten auf die Anspannungsskala (3 Min.). Dann ein Körper-Check im Sitzen: Augen offen oder auf den Tisch gerichtet, 30 Sekunden lang von oben nach unten spüren – Stirn, Kiefer, Schultern, Bauch, Hände, Füße. Wo sitzt die Zahl gerade? Die Lehrkraft beginnt; dann zeigen drei, vier Freiwillige nur mit der Hand auf die Stelle, ein Wort dazu ist freiwillig (3 Min.). Zum Schluss gemeinsam auf die Anspannungsskala schauen: Wo kleben heute die meisten Punkte? Die Lehrkraft beschreibt, was sie sieht, ohne Einzelne zu nennen (2 Min.).",
+            "sagen": [
+              "Gefühl, Zahl – und wo im Körper sitzt die Zahl gerade? Ihr dürft einfach zeigen.",
+              "Bei mir ist es eine 35, und ich merke sie im Nacken."
+            ],
+            "tipp": "Den eigenen Körper wahrzunehmen, fällt vielen schwer und wird heute geübt. „Weiß nicht“ ist deshalb eine gute Antwort, keine Verweigerung.",
+            "wennEsKippt": "Zeigt jemand zum Spaß auf den Hintern oder macht Witze über Körperstellen, gelassen bleiben: Auch das Sitzfleisch kann verspannt sein – und weiter. Drängeln sich alle an den Plakaten, tischgruppenweise kleben lassen."
+          },
+          {
+            "titel": "Rückblick: Mission und „erst runter“",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Kurz nach der Wochen-Mission fragen: Wer hat einen Skill ausprobiert, als die Zahl über 50 stieg? Daumen hoch, Mitte oder runter – eine Stimme erzählt Zahl vorher und nachher. Dann auf die Faustregel von letzter Woche zeigen: Was geht bei 90 noch? Im Kopf kaum noch etwas, im Körper aber vieles. Das Thema nennen und den Skills-Tester im Heft aufschlagen lassen: Heute wird jeder Skill wie in einem Experiment getestet.",
+            "sagen": [
+              "Letzte Woche hieß es: erst runter, dann reden. Heute geht es um das Runter.",
+              "Ihr seid heute Versuchspersonen und Forschende zugleich. Bewertet ehrlich – auch „hilft kaum“ ist ein Ergebnis."
+            ],
+            "tipp": "Wer die Mission nicht geschafft hat, bekommt keinen Kommentar. Fragen, was es schwer gemacht hat – vergessen, keine Gelegenheit, peinlich –, und eine kleine Erinnerungshilfe vorschlagen, etwa einen Punkt auf der Handyhülle."
+          },
+          {
+            "titel": "Gaspedal und Bremse: So hilft der Körper",
+            "dauer": 10,
+            "phase": "input",
+            "text": "Mit dem Bild vom Auto erklären: Bei Wut, Angst oder Stress tritt der Körper aufs Gas – das Herz schlägt schneller, der Atem wird flach, die Muskeln spannen sich; der Körper macht sich bereit zu kämpfen oder wegzurennen. Bei Rot kommt der Kopf nicht mehr an die Bremse (Handmodell), aber der Körper hat eigene Bremsen. Das Tafelbild gemeinsam lesen (4 Min.). Dann ein Mini-Versuch: Alle legen zwei Finger an den eigenen Hals oder das eigene Handgelenk und spüren den Puls; erst normal atmen, dann dreimal langsam und lang ausatmen und darauf achten, ob der Herzschlag beim Ausatmen langsamer wird (3 Min.). Zum Schluss den Skills-Tester erklären: Zahl vorher, Skill zwei bis drei Minuten, Zahl nachher, einkreisen, wie gut er geholfen hat (3 Min.).",
+            "sagen": [
+              "Euer Körper hat ein Gaspedal und eine Bremse. Bei Rot steht der Fuß auf dem Gas – und der Kopf kommt nicht an die Bremse.",
+              "Langes Ausatmen ist eine Bremse, die ihr immer dabeihabt."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Körper-Skill",
+                "So wirkt er"
+              ],
+              "zeilen": [
+                [
+                  "Atem: lang ausatmen",
+                  "tritt auf die Bremse – Herz und Atem werden langsamer"
+                ],
+                [
+                  "Muskeln: anspannen und loslassen",
+                  "der Körper spürt den Unterschied und lässt los"
+                ],
+                [
+                  "Bewegung: Vollgas",
+                  "verbraucht die Energie, die der Alarm bereitgestellt hat"
+                ]
+              ]
+            },
+            "tipp": "Den Puls muss niemand finden: Wer ihn nicht spürt, legt die Hand auf die Brust oder folgt nur dem Atem.",
+            "wennEsKippt": "Wird beim Pulsfühlen gealbert oder macht es jemanden nervös, auf das eigene Herz zu achten, die Hand stattdessen auf den Bauch legen und nur dem Atem folgen. Wird es zu lang, das Tafelbild nur vorlesen und gleich ins Atem-Labor gehen."
+          },
+          {
+            "titel": "Atem-Labor: drei Atem-Skills im Test",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Alle schlagen den Skills-Tester auf; die Federn liegen in einem Becher bereit, wer keine möchte, nimmt einen schmalen Papierstreifen. Jeder Skill läuft gleich ab: Zahl vorher eintragen, zwei bis drei Minuten üben, kurz nachspüren, Zahl nachher eintragen und einkreisen, wie gut er geholfen hat. Die Lehrkraft leitet langsam an, zählt leise und macht selbst mit. Erster Skill: die Atem-Feder; danach kommen die Federn zurück in den Becher (5 Min.). Zweiter Skill: die Kastenatmung (6 Min.). Dritter Skill: die Fingeratmung aus Stunde 2 zum Vergleich (4 Min.). Zum Schluss per Handzeichen: Bei welchem Skill ist die Zahl am meisten gesunken? Die Lehrkraft erklärt in zwei Sätzen, warum alle drei wirken: Sie verlängern das Ausatmen (5 Min.).",
+            "sagen": [
+              "Wird euch schwindelig, hört ihr auf und atmet normal weiter. Das ist kein Wettbewerb.",
+              "Kurz nachspüren: Hat sich eure Zahl bewegt? Eintragen – auch wenn sie gleich geblieben ist. Wer schon bei 10 ist, kreist ein, wie es sich angefühlt hat."
+            ],
+            "punkte": [
+              "Atem-Feder: Die Feder am Kiel eine Handbreit vor den Mund halten. Durch die Nase einatmen und so langsam ausatmen, dass die Feder nur zittert, aber nicht umknickt.",
+              "Kastenatmung: Mit dem Finger ein Quadrat auf den Tisch malen – 4 Sekunden ein, 4 halten, 4 aus, 4 halten. Drei bis vier Runden.",
+              "Fingeratmung: Am Finger hoch einatmen, runter langsam ausatmen. Fünf Finger, dann zurück."
+            ],
+            "tipp": "Die Feder kommt zuerst: Es wird gelacht, die Spannung löst sich, und danach gelingt die Kastenatmung besser. Wer kaum still sitzen kann, teilt die Federn aus, sammelt sie ein oder bedient die Stoppuhr.",
+            "wennEsKippt": "Kichern bei Atemübungen ist normal, weil sie sich ungewohnt anfühlen: nicht ermahnen, ruhig weiterzählen und anbieten, auf einen Punkt am Tisch zu schauen. Werden Federn geworfen oder angepustet, sie einsammeln und mit der Hand vor dem Mund weiterüben. Wer Asthma hat, lässt bei der Kastenatmung das Halten weg.",
+            "blatt": "ff7-skills-tester"
+          },
+          {
+            "titel": "Bewegungspause als Experiment: Vollgas",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen neben ihrem Platz und tragen die Zahl vorher in der Zeile „Vollgas-Bewegung“ ein. Dann läuft der schnelle Song: 90 Sekunden mit voller Kraft auf der Stelle laufen, Hampelmann oder Schattenboxen in die Luft, mit einer Armlänge Abstand, ohne Berührung, jede Person in ihrem Tempo. Danach zwei Minuten ruhig sitzen, eine Hand auf dem Bauch, und die Zahl nachher eintragen. Fragen: Was hat die Zahl während der Bewegung gemacht – und jetzt? Liegt die große Pause zwischen den Stunden, das Experiment zu Beginn der zweiten Stunde machen und dafür in Schritt 7 eine Szene weniger spielen.",
+            "sagen": [
+              "Neunzig Sekunden Vollgas. Ihr müsst nicht schneller sein als die anderen, nur schneller als sonst.",
+              "Jetzt ganz ruhig sitzen. Was macht euer Herz, was macht eure Zahl?"
+            ],
+            "tipp": "Bei vielen steigt die Zahl während der Bewegung und fällt danach unter den Wert von vorher. Genau darum ist Bewegung ein Skill für Rot: Sie verbraucht den Alarm, statt ihn wegzudrücken.",
+            "wennEsKippt": "Dreht die Klasse danach auf, die zwei Minuten Sitzen konsequent halten und leise die Kastenatmung vorzählen. Wer nicht rennen soll oder will, drückt die Handflächen fest gegeneinander oder macht langsame Kniebeugen.",
+            "blatt": "ff7-skills-tester"
+          },
+          {
+            "titel": "Anspannen und Loslassen",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Zahl vorher eintragen lassen, dann eine Kurzform der Muskelentspannung anleiten, zuerst im Sitzen: Jede Muskelgruppe fünf Sekunden fest anspannen, ohne dass es wehtut, dann loslassen und zehn Sekunden nachspüren (6 Min.). Im Stehen folgt eine schnelle Runde: alles auf einmal anspannen, halten, loslassen (2 Min.). Danach gemeinsam sammeln, welche Varianten unauffällig gehen – im Unterricht, im Bus, bei Streit in der Pause – und an die Tafel schreiben (4 Min.). Zum Schluss Zahl nachher und Bewertung im Skills-Tester eintragen (3 Min.).",
+            "sagen": [
+              "Achtet auf den Moment, in dem ihr loslasst. Genau diesen Unterschied soll euer Körper lernen.",
+              "Wo könntet ihr das machen, ohne dass es jemand merkt?"
+            ],
+            "punkte": [
+              "Hände: beide Fäuste ballen, als würdest du eine Zitrone auspressen – halten – loslassen.",
+              "Schultern: hoch bis zu den Ohren – halten – fallen lassen.",
+              "Bauch: fest machen, als würde gleich ein Ball dagegen fliegen – halten – weich werden lassen.",
+              "Beine und Füße: Zehen in den Boden drücken, Oberschenkel fest – halten – locker.",
+              "Unauffällig: Fäuste unter dem Tisch, Zehen im Schuh, Handflächen fest gegeneinander."
+            ],
+            "tipp": "Halbe Kraft reicht – nicht bis zum Zittern anspannen. Verletzte oder schmerzende Stellen lässt jede Person aus.",
+            "wennEsKippt": "Wird aus dem Anspannen ein Kräftemessen, im Sitzen weitermachen und nur noch Hände und Füße anspannen lassen. Wer die Augen nicht schließen möchte, schaut auf die eigenen Hände; niemand muss die Augen schließen.",
+            "blatt": "ff7-skills-tester"
+          },
+          {
+            "titel": "Wer sieht es? Körper-Skills unauffällig",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Einstieg: fragen, ob jemand gemerkt hat, dass die Lehrkraft gerade beim Erklären einen Skill gemacht hat – etwa die Fäuste unter dem Pult. Dann bekommt jede Tischgruppe einen Zettel mit einer Situation (Liste) und bereitet eine stumme Szene von 30 Sekunden vor: Eine Person ist bei Gelb oder Rot und macht einen Körper-Skill so unauffällig wie möglich, die anderen spielen die Umgebung (5 Min.). Die Gruppen spielen nacheinander vorn; danach rät die Klasse, wer den Skill gemacht hat und welchen – die Gruppe gewinnt, wenn niemand es merkt (je 2 Min., zusammen 10 Min.). Zum Schluss sammeln (4 Min.): Welche Skills sind wirklich unsichtbar – und welche gehören eher in die Pause oder nach Hause?",
+            "sagen": [
+              "Ich habe gerade beim Erklären einen Skill gemacht. Wer hat es gemerkt?",
+              "Die Szene ist stumm und dauert dreißig Sekunden – Sprüche und Lachen werden nur gespielt. Gewonnen hat die Gruppe, bei der die Klasse falsch rät."
+            ],
+            "punkte": [
+              "Gruppe 1 · Im Bus: Der Bus ist voll und laut, zwei Ältere machen Sprüche über deine Jacke.",
+              "Gruppe 2 · Im Test: Die erste Aufgabe verstehst du nicht, alle anderen schreiben schon.",
+              "Gruppe 3 · In der Kantine: Jemand drängelt sich vor, und die Pause ist gleich vorbei.",
+              "Gruppe 4 · Im Unterricht: Der Lehrer schimpft dich vor allen, obwohl es dein Nachbar war.",
+              "Gruppe 5 · Vor dem Vortrag: Gleich bist du dran und sollst vorn vor der Klasse sprechen."
+            ],
+            "tipp": "Die Rolle der Person mit dem Skill passt gut für Stille: Sie muss nichts sagen und hat trotzdem die wichtigste Aufgabe. Wer gern Theater macht, spielt die Umgebung.",
+            "wennEsKippt": "Wird aus der Szene Klamauk, anhalten: dreißig Sekunden, keine Berührung, keine echten Personen aus Schule oder Klasse nachspielen. Wer nicht spielen will, ist Detektiv und rät mit. Fehlt die Zeit, spielen nur drei Gruppen; die anderen erzählen ihre Szene in einem Satz."
+          },
+          {
+            "titel": "Skill: Doppelter Seufzer",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: Forschende haben verschiedene Atemübungen verglichen; diese hier hat am besten abgeschnitten. Zahl vorher in der Zeile „Doppelter Seufzer“ eintragen. Die drei Schritte einmal langsam vormachen, dann drei Minuten gemeinsam üben: etwa zehn Seufzer in ruhigem Tempo, dazwischen normal atmen. Wer mag, schließt die Augen; alle anderen schauen auf einen Punkt am Tisch. Danach kurz nachspüren, Zahl nachher eintragen und zwei, drei Rückmeldungen einholen: Wann könnte das helfen – vor dem Test, abends im Bett, nach einem Streit?",
+            "sagen": [
+              "Ein, noch ein bisschen nachziehen – und jetzt ganz lang aus, wie ein Seufzer.",
+              "Wird euch schwindelig, atmet einfach normal weiter."
+            ],
+            "punkte": [
+              "Durch die Nase tief einatmen.",
+              "Oben noch einmal kurz nachziehen – ein zweiter, kleiner Atemzug obendrauf.",
+              "Ganz langsam durch den Mund ausatmen, bis die Luft draußen ist."
+            ],
+            "tipp": "Der doppelte Seufzer ist der Skill, den viele später wirklich benutzen: Er geht schnell und fällt kaum auf. In den nächsten Stunden nach einer lauten Pause zwei Minuten lang wiederholen.",
+            "wennEsKippt": "Wird das Seufzen übertrieben laut oder theatralisch, mitlachen und vorschlagen, es leiser zu versuchen – wer es hört, hat es übertrieben. Wird jemandem schwindelig, sofort normal atmen und die Füße fest auf den Boden stellen.",
+            "blatt": "ff7-skills-tester"
+          },
+          {
+            "titel": "Lieblings-Skill, Skills-Pass und Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Im Skills-Tester kreist jede Person ihren Lieblings-Skill von heute ein. Leitfrage für den Skills-Pass an die Tafel: Mein Lieblings-Körper-Skill – und bis zu welcher Zahl hilft er? Satz schreiben, Stempel (2 Min.). Dann die Wochen-Mission ansagen (steht im Heft) und den Ausblick geben. Für die Duft-Station nächste Woche fragen: Wer Asthma hat oder auf Düfte reagiert, sagt es nach der Stunde oder über das Mitteilungsheft.",
+            "sagen": [
+              "Kreist euren Favoriten ein. Bei wem ist es die Feder, bei wem der Seufzer, bei wem Vollgas?"
+            ],
+            "tipp": "Eine schnelle Strichliste an der Tafel zeigt, wie verschieden die Favoriten sind – das entlastet: Es gibt nicht den einen richtigen Skill.",
+            "blatt": "ff7-skills-tester"
+          }
+        ],
+        "bruecke": "Nächste Woche testet ihr Skills über die Sinne: An Stationen geht es um Kälte, Klänge und Dinge zum Anfassen – und ihr schreibt eure Playlist zum Runterkommen. Überlegt euch schon mal zwei Songs.",
+        "mission": "Teste deinen Lieblings-Skill von heute einmal im Alltag – im Bus, vor einem Test oder abends im Bett. Merk dir deine Zahl vorher und nachher.",
+        "hintergrund": "Körper-Skills setzen dort an, wo bei sehr hoher Anspannung noch etwas zu machen ist: am Körper selbst. Linehan (2015) beschreibt für Momente extremer Erregung drei schnelle Wege: intensive Bewegung, langsames Atmen mit langer Ausatmung und das Anspannen und Lösen der Muskeln. Sie wirken über den Körper, nicht über das Nachdenken, und eignen sich deshalb für Gelb und Rot. Balban et al. (2023) verglichen mehrere fünfminütige Atemübungen: Am stärksten hob das zyklische Seufzen – doppelt einatmen, lang ausatmen – die Stimmung und senkte die Atemfrequenz. Das Anspannen und Lösen geht auf die progressive Relaxation zurück (Jacobson, 1929): Wer den Unterschied zwischen fest und locker spürt, kann Muskeln gezielt loslassen. Entscheidend ist das Üben in ruhigen Zeiten, denn nur ein vertrauter Skill ist bei Rot abrufbar. Weil Skills nicht bei allen gleich wirken, testen die Jugendlichen wie in einem Experiment, statt Rezepte zu bekommen.",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895.",
+          "Jacobson, E. (1929). Progressive Relaxation. Chicago: University of Chicago Press."
+        ],
+        "achtung": "Körperübungen sind freiwillig; jede Person darf aussetzen oder in eigenem Tempo mitmachen. Bei Asthma, Herz- oder Kreislaufproblemen und Verletzungen die Bewegung anpassen und die Luft nicht anhalten lassen. Wird jemandem beim Atmen schwindelig: sofort aufhören, normal weiteratmen, hinsetzen. Manche erleben es als unangenehm, den eigenen Körper zu spüren oder die Augen zu schließen, etwa nach belastenden Erfahrungen: mit offenen Augen arbeiten lassen und nichts erzwingen. Wirkt jemand danach aufgewühlt, nach der Stunde nachfragen; bei Hinweisen auf eine Gefährdung noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "differenzierung": {
+          "leichter": "Die Skills vor allem vormachen und mitmachen lassen, wenig erklären; im Skills-Tester reichen die Zahlen, die Bewertung kann auch ein gemalter Daumen sein. Für die Szenen eine Rolle ohne Text anbieten; wer die Unterrichtssprache noch lernt, spielt die Umgebung oder die Person mit dem Skill.",
+          "schwerer": "Im Atem-Labor vorher eine Vermutung aufschreiben: Welcher Skill senkt meine Zahl am stärksten? Am Ende prüfen. In Schritt 7 die Regie übernehmen und eine Variante erfinden, die selbst die Lehrkraft nicht bemerkt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit zweitem Klebepunkt (5 Min.), Gaspedal und Bremse mit dem Skills-Tester (5 Min.), Atem-Labor mit Feder und Kastenatmung (15 Min.), Vollgas-Experiment (5 Min.), Anspannen und Loslassen (10 Min.), Skill: Doppelter Seufzer mit Lieblings-Skill und Mission (10 Min.). „Wer sieht es?“ und der Puls-Versuch entfallen; die unauffälligen Varianten werden in der nächsten Stunde gesammelt."
+      },
+      "fr": {
+        "titel": "Des skills par le corps et le souffle",
+        "kurz": "Comme dans un labo, la classe teste des skills de respiration, de muscles et de mouvement avec un chiffre avant et après, les entraîne discrètement pour le bus et les devoirs en classe et trouve son skill préféré.",
+        "ziele": [
+          "testent des skills de respiration, de muscles et de mouvement avec un chiffre avant et après et notent les résultats dans le testeur de skills",
+          "expliquent avec l’image de l’accélérateur et du frein pourquoi les skills corporels marchent même quand la tension est haute",
+          "s’entraînent à des skills corporels assez discrets pour le bus, un devoir en classe ou la récré",
+          "choisissent leur skill préféré et précisent jusqu’à quel chiffre il aide"
+        ],
+        "material": [
+          "Cahier de l’élève, tampon",
+          "Roue, échelle de tension, gommettes",
+          "Une plume par jeune, un gobelet",
+          "Chronomètre ou minuteur",
+          "Enceinte, un morceau rythmé",
+          "Cinq papiers avec les situations"
+        ],
+        "vorbereitung": [
+          "Demander au régent qui a de l’asthme, des problèmes cardiaques ou circulatoires ou une blessure ; ces jeunes bougent à leur rythme.",
+          "Faire de la place : sacs sous les tables, allées libres ; prévenir le ou la collègue de la salle du dessous que ce sera bruyant un moment.",
+          "Essayer soi-même la respiration carrée et le double soupir, surtout le comptage lent ; écrire au tableau la grille de l’étape 3.",
+          "Écrire les cinq situations de l’étape 7 sur des papiers – un par îlot."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : émotion, chiffre et scan du corps"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour : la mission et « d’abord redescendre »"
+          },
+          {
+            "min": "15–25",
+            "phase": "input",
+            "titel": "L’accélérateur et le frein : comment le corps aide"
+          },
+          {
+            "min": "25–45",
+            "phase": "uebung",
+            "titel": "Labo du souffle : trois skills à l’essai"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active en expérience : à fond"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Contracter et relâcher"
+          },
+          {
+            "min": "65–85",
+            "phase": "uebung",
+            "titel": "Qui l’a vu ? Des skills corporels discrets"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : le double soupir"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skill préféré, Skills-Pass et mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : émotion, chiffre et scan du corps",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle une gommette sur la roue des émotions et – c’est nouveau – une deuxième sur l’échelle de tension (3 min). Puis un scan du corps, assis : yeux ouverts ou posés sur la table, sentir pendant 30 secondes de haut en bas – front, mâchoire, épaules, ventre, mains, pieds. Où se trouve le chiffre en ce moment ? L’enseignant·e commence ; puis trois ou quatre volontaires montrent simplement l’endroit de la main, un mot en plus est facultatif (3 min). Pour finir, regarder ensemble l’échelle de tension : où sont la plupart des gommettes aujourd’hui ? Dire ce qu’on voit, sans nommer personne (2 min).",
+            "sagen": [
+              "L’émotion, le chiffre – et où se trouve ce chiffre dans votre corps, là ? Vous pouvez simplement montrer.",
+              "Moi, je suis à 35, et je le sens dans la nuque."
+            ],
+            "tipp": "Sentir son propre corps est difficile pour beaucoup, et c’est justement ce qu’on travaille aujourd’hui. « Je ne sais pas » est donc une bonne réponse, pas un refus.",
+            "wennEsKippt": "Si quelqu’un désigne son derrière pour faire rire ou plaisante sur des parties du corps, rester détendu : le derrière aussi peut être crispé – et on continue. Si tout le monde se bouscule devant les affiches, faire coller îlot par îlot."
+          },
+          {
+            "titel": "Retour : la mission et « d’abord redescendre »",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Demander brièvement où en est la mission de la semaine : qui a essayé un skill quand son chiffre dépassait 50 ? Pouce en haut, au milieu ou en bas – une voix raconte son chiffre avant et après. Puis montrer la règle de base de la semaine dernière : qu’est-ce qui marche encore à 90 ? Presque plus rien dans la tête, mais beaucoup de choses dans le corps. Annoncer le thème et faire ouvrir le testeur de skills dans le cahier : aujourd’hui, chaque skill est testé comme dans une expérience.",
+            "sagen": [
+              "La semaine dernière, on a dit : d’abord redescendre, ensuite parler. Aujourd’hui, on s’occupe du « redescendre ».",
+              "Aujourd’hui, vous êtes à la fois cobayes et chercheurs. Notez honnêtement – « ça aide à peine », c’est aussi un résultat."
+            ],
+            "tipp": "Qui n’a pas réussi la mission ne reçoit aucun commentaire. Demander ce qui a été difficile – oublié, pas d’occasion, gênant – et proposer un petit aide-mémoire, par exemple une gommette sur la coque du portable."
+          },
+          {
+            "titel": "L’accélérateur et le frein : comment le corps aide",
+            "dauer": 10,
+            "phase": "input",
+            "text": "Expliquer avec l’image de la voiture : face à la colère, à la peur ou au stress, le corps appuie sur l’accélérateur – le cœur bat plus vite, la respiration devient courte, les muscles se tendent ; le corps se prépare à se battre ou à fuir. Dans le rouge, la tête n’atteint plus le frein (modèle de la main), mais le corps a ses propres freins. Lire ensemble le tableau (4 min). Puis une mini-expérience : chacun pose deux doigts sur son propre cou ou son propre poignet et sent son pouls ; d’abord respirer normalement, puis expirer trois fois lentement et longtemps, en observant si le cœur ralentit pendant l’expiration (3 min). Pour finir, expliquer le testeur de skills : chiffre avant, skill pendant deux ou trois minutes, chiffre après, entourer à quel point il a aidé (3 min).",
+            "sagen": [
+              "Votre corps a un accélérateur et un frein. Dans le rouge, le pied est sur l’accélérateur – et la tête n’atteint plus le frein.",
+              "Expirer longtemps, c’est un frein que vous avez toujours sur vous."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Skill corporel",
+                "Comment il agit"
+              ],
+              "zeilen": [
+                [
+                  "Souffle : expirer longtemps",
+                  "appuie sur le frein – le cœur et la respiration ralentissent"
+                ],
+                [
+                  "Muscles : contracter et relâcher",
+                  "le corps sent la différence et lâche prise"
+                ],
+                [
+                  "Mouvement : bouger à fond",
+                  "brûle l’énergie que l’alarme a préparée"
+                ]
+              ]
+            },
+            "tipp": "Personne n’est obligé de trouver son pouls : qui ne le sent pas pose la main sur la poitrine ou suit seulement sa respiration.",
+            "wennEsKippt": "Si la prise de pouls tourne au chahut, ou si quelqu’un devient nerveux en se concentrant sur son cœur, poser plutôt la main sur le ventre et suivre seulement la respiration. Si cela dure trop, lire simplement le tableau et passer directement au labo du souffle."
+          },
+          {
+            "titel": "Labo du souffle : trois skills à l’essai",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Tout le monde ouvre le testeur de skills ; les plumes attendent dans un gobelet, qui n’en veut pas prend une fine bande de papier. Chaque skill se déroule de la même façon : noter le chiffre avant, s’entraîner deux ou trois minutes, sentir un instant, noter le chiffre après et entourer à quel point il a aidé. Guider lentement, compter à voix basse et faire l’exercice soi-même. Premier skill : la plume ; ensuite, les plumes retournent dans le gobelet (5 min). Deuxième : la respiration carrée (6 min). Troisième : la respiration des doigts de la séance 2, pour comparer (4 min). Pour finir, à main levée : avec quel skill le chiffre a-t-il le plus baissé ? Expliquer en deux phrases pourquoi les trois marchent : ils allongent l’expiration (5 min).",
+            "sagen": [
+              "Si la tête vous tourne, arrêtez et respirez normalement. Ce n’est pas une compétition.",
+              "Prenez un instant : votre chiffre a-t-il bougé ? Notez-le – même s’il n’a pas changé. Qui est déjà à 10 entoure comment il l’a ressenti."
+            ],
+            "punkte": [
+              "La plume : la tenir par le bout, à une main de la bouche. Inspirer par le nez et expirer si lentement que la plume tremble sans se plier.",
+              "Respiration carrée : dessiner du doigt un carré sur la table – inspirer 4 secondes, retenir 4, expirer 4, retenir 4. Trois ou quatre tours.",
+              "Respiration des doigts : on monte le long du doigt en inspirant, on redescend en expirant lentement. Cinq doigts, puis retour."
+            ],
+            "tipp": "La plume passe en premier : on rit, la tension retombe, et la respiration carrée passe mieux ensuite. Un jeune qui a du mal à rester assis distribue et ramasse les plumes ou s’occupe du chronomètre.",
+            "wennEsKippt": "Rire pendant les exercices de respiration est normal, parce que c’est inhabituel : ne pas reprendre, continuer à compter calmement et proposer de fixer un point sur la table. Si des plumes volent, les ramasser et continuer avec la main devant la bouche. Qui a de l’asthme laisse de côté les temps de retenue de la respiration carrée.",
+            "blatt": "ff7-skills-tester"
+          },
+          {
+            "titel": "Pause active en expérience : à fond",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève à côté de sa place et note son chiffre avant à la ligne « Bouger à fond ». Puis la musique rythmée démarre : 90 secondes à fond – courir sur place, sauts écartés ou boxer dans le vide, à une longueur de bras des autres, sans contact, chacun à son rythme. Ensuite deux minutes assis au calme, une main sur le ventre, puis noter le chiffre après. Demander : qu’a fait le chiffre pendant le mouvement – et maintenant ? Si la grande récréation tombe entre les deux heures, faire l’expérience au début de la deuxième heure et jouer une scène de moins à l’étape 7.",
+            "sagen": [
+              "Quatre-vingt-dix secondes à fond. Vous n’avez pas à être plus rapides que les autres, juste plus rapides que d’habitude.",
+              "Maintenant, assis, bien calmes. Que fait votre cœur, que fait votre chiffre ?"
+            ],
+            "tipp": "Chez beaucoup, le chiffre monte pendant le mouvement, puis redescend en dessous de celui d’avant. C’est pour ça que bouger est un skill pour le rouge : ça brûle l’alarme au lieu de l’étouffer.",
+            "wennEsKippt": "Si la classe s’excite ensuite, tenir fermement les deux minutes assises et compter tout bas la respiration carrée. Qui ne doit pas ou ne veut pas courir presse fort les paumes l’une contre l’autre ou fait des flexions lentes.",
+            "blatt": "ff7-skills-tester"
+          },
+          {
+            "titel": "Contracter et relâcher",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Faire noter le chiffre avant, puis guider une version courte de la relaxation musculaire, d’abord assis : contracter chaque groupe de muscles cinq secondes, sans se faire mal, puis relâcher et sentir pendant dix secondes (6 min). Debout, un tour rapide : tout contracter en même temps, tenir, relâcher (2 min). Rassembler ensuite ensemble les variantes discrètes – en cours, dans le bus, lors d’une dispute à la récré – et les écrire au tableau (4 min). Pour finir, noter le chiffre après et l’évaluation dans le testeur (3 min).",
+            "sagen": [
+              "Faites attention au moment où vous relâchez. C’est exactement cette différence que votre corps doit apprendre.",
+              "Où pourriez-vous faire ça sans que personne ne le remarque ?"
+            ],
+            "punkte": [
+              "Mains : serrer les deux poings, comme pour presser un citron – tenir – relâcher.",
+              "Épaules : les monter jusqu’aux oreilles – tenir – les laisser tomber.",
+              "Ventre : le durcir, comme si un ballon allait arriver dessus – tenir – le laisser redevenir souple.",
+              "Jambes et pieds : enfoncer les orteils dans le sol, cuisses dures – tenir – relâcher.",
+              "Discret : poings sous la table, orteils dans la chaussure, paumes pressées l’une contre l’autre."
+            ],
+            "tipp": "La moitié de la force suffit – pas besoin de serrer jusqu’à trembler. Chacun laisse de côté les endroits blessés ou douloureux.",
+            "wennEsKippt": "Si contracter tourne au concours de force, continuer assis et ne contracter que les mains et les pieds. Qui ne veut pas fermer les yeux regarde ses mains ; personne n’est obligé de fermer les yeux.",
+            "blatt": "ff7-skills-tester"
+          },
+          {
+            "titel": "Qui l’a vu ? Des skills corporels discrets",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Pour commencer, demander si quelqu’un a remarqué que l’enseignant·e vient de faire un skill en expliquant – par exemple serrer les poings sous le bureau. Puis chaque îlot reçoit un papier avec une situation (liste) et prépare une scène muette de 30 secondes : une personne est dans l’orange ou le rouge et fait un skill corporel aussi discrètement que possible, les autres jouent l’entourage (5 min). Les îlots jouent l’un après l’autre devant ; ensuite la classe devine qui a fait le skill et lequel – l’îlot gagne si personne ne l’a remarqué (2 min par îlot, en tout 10 min). Pour finir, rassembler (4 min) : quels skills sont vraiment invisibles – et lesquels vont plutôt à la récré ou à la maison ?",
+            "sagen": [
+              "Je viens de faire un skill pendant que j’expliquais. Qui l’a remarqué ?",
+              "La scène est muette et dure trente secondes – les moqueries et les rires sont seulement mimés. L’îlot gagne si la classe se trompe."
+            ],
+            "punkte": [
+              "Îlot 1 · Dans le bus : le bus est plein et bruyant, deux plus grands se moquent de ta veste.",
+              "Îlot 2 · Devoir en classe : tu ne comprends pas le premier exercice, les autres écrivent déjà.",
+              "Îlot 3 · À la cantine : quelqu’un te passe devant, et la pause est presque finie.",
+              "Îlot 4 · En cours : le prof te gronde devant tout le monde, alors que c’était ton voisin.",
+              "Îlot 5 · Avant l’exposé : c’est bientôt ton tour de parler devant la classe."
+            ],
+            "tipp": "Le rôle de la personne qui fait le skill convient bien aux jeunes discrets : rien à dire, et pourtant le rôle le plus important. Ceux qui aiment faire le show jouent l’entourage.",
+            "wennEsKippt": "Si la scène tourne à la pitrerie, arrêter : trente secondes, sans contact, sans imiter de vraies personnes de l’école ou de la classe. Qui ne veut pas jouer est détective et devine. Si le temps manque, seuls trois îlots jouent ; les autres racontent leur scène en une phrase."
+          },
+          {
+            "titel": "Skill : le double soupir",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : des chercheurs ont comparé plusieurs exercices de respiration ; celui-ci est arrivé en tête. Noter le chiffre avant à la ligne « Le double soupir ». Montrer une fois lentement les trois étapes, puis s’entraîner ensemble pendant trois minutes : une dizaine de soupirs à un rythme calme, en respirant normalement entre deux. Qui veut ferme les yeux ; les autres fixent un point sur la table. Ensuite, sentir un instant, noter le chiffre après et recueillir deux ou trois retours : quand est-ce que ça pourrait aider – avant un devoir en classe, le soir au lit, après une dispute ?",
+            "sagen": [
+              "On inspire, encore un petit peu – et maintenant on souffle très longtemps, comme un soupir.",
+              "Si la tête vous tourne, respirez simplement normalement."
+            ],
+            "punkte": [
+              "Inspirer profondément par le nez.",
+              "En haut, inspirer encore un petit coup – une deuxième petite bouffée par-dessus.",
+              "Expirer très lentement par la bouche, jusqu’à ce que l’air soit sorti."
+            ],
+            "tipp": "Le double soupir est le skill que beaucoup utilisent vraiment ensuite : il va vite et se remarque à peine. Le refaire deux minutes lors des prochaines séances, après une récré bruyante.",
+            "wennEsKippt": "Si les soupirs deviennent théâtraux et bruyants, en rire avec la classe et proposer de les faire plus doucement – si on l’entend, c’est trop. Si la tête tourne à quelqu’un, respirer tout de suite normalement et poser les pieds bien à plat.",
+            "blatt": "ff7-skills-tester"
+          },
+          {
+            "titel": "Skill préféré, Skills-Pass et mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Dans le testeur, chacun entoure son skill préféré du jour. Question pour le Skills-Pass au tableau : mon skill corporel préféré – et jusqu’à quel chiffre il aide ? Écrire la phrase, tampon (2 min). Puis annoncer la mission de la semaine (elle figure dans le cahier) et la prochaine séance. Pour l’atelier des odeurs de la semaine prochaine, demander : qui a de l’asthme ou réagit aux odeurs le dit après le cours ou par le carnet de correspondance.",
+            "sagen": [
+              "Entourez votre favori. Chez qui c’est la plume, chez qui le soupir, chez qui bouger à fond ?"
+            ],
+            "tipp": "Une liste de bâtons rapide au tableau montre à quel point les favoris sont différents – ça soulage : il n’existe pas un seul bon skill.",
+            "blatt": "ff7-skills-tester"
+          }
+        ],
+        "bruecke": "La semaine prochaine, vous testerez des skills par les sens : en ateliers, il y aura du froid, des sons et des choses à toucher – et vous écrirez votre playlist pour redescendre. Pensez déjà à deux chansons.",
+        "mission": "Teste ton skill préféré d’aujourd’hui une fois au quotidien – dans le bus, avant un devoir en classe ou le soir au lit. Retiens ton chiffre avant et après.",
+        "hintergrund": "Quand la tension est très forte, il reste une prise : le corps lui-même. Linehan (2015) décrit, pour les moments d’excitation extrême, trois voies rapides : l’effort physique intense, la respiration lente avec une longue expiration, la contraction puis le relâchement des muscles. Ils passent par le corps, pas par la réflexion, et conviennent donc à l’orange et au rouge. Balban et al. (2023) ont comparé plusieurs exercices de respiration de cinq minutes : le soupir cyclique – inspirer deux fois, expirer longtemps – a le plus amélioré l’humeur et ralenti la respiration. Contracter et relâcher remonte à la relaxation progressive (Jacobson, 1929) : qui sent la différence entre tendu et détendu peut relâcher ses muscles. L’essentiel est de s’entraîner au calme : seul un skill familier est disponible dans le rouge. Et comme les skills n’agissent pas pareil chez tous, les jeunes testent au lieu de recevoir des recettes.",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Balban, M. Y., Neri, E., Kogon, M. M., Weed, L., Nouriani, B., Jo, B., Holl, G., Zeitzer, J. M., Spiegel, D. & Huberman, A. D. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. Cell Reports Medicine, 4(1), 100895.",
+          "Jacobson, E. (1929). Progressive Relaxation. Chicago: University of Chicago Press."
+        ],
+        "achtung": "Les exercices corporels sont facultatifs ; chacun peut faire une pause ou suivre à son rythme. En cas d’asthme, de problèmes cardiaques ou circulatoires ou de blessure, adapter le mouvement et ne pas faire retenir la respiration. Si la tête tourne à quelqu’un : arrêter tout de suite, respirer normalement, s’asseoir. Certains trouvent désagréable de sentir leur corps ou de fermer les yeux, par exemple après des expériences pénibles : les laisser garder les yeux ouverts et ne rien forcer. Si un jeune semble remué ensuite, lui reparler après le cours ; en cas de signe de danger, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
+        "differenzierung": {
+          "leichter": "Montrer les skills et les faire avec la classe plutôt que de les expliquer longuement ; dans le testeur, les chiffres suffisent, l’évaluation peut aussi être un pouce dessiné. Pour les scènes, proposer un rôle sans texte ; un jeune qui apprend encore la langue du cours joue l’entourage ou la personne qui fait le skill.",
+          "schwerer": "Au labo du souffle, écrire d’abord une hypothèse : quel skill fera le plus baisser mon chiffre ? La vérifier à la fin. À l’étape 7, prendre la mise en scène et inventer une variante que même l’enseignant·e ne remarque pas."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec la deuxième gommette (5 min), l’accélérateur et le frein avec le testeur de skills (5 min), labo du souffle avec la plume et la respiration carrée (15 min), expérience à fond (5 min), contracter et relâcher (10 min), skill « le double soupir » avec skill préféré et mission (10 min). « Qui l’a vu ? » et la prise de pouls sont supprimés ; les variantes discrètes sont rassemblées à la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-skills-tester",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln"
+      ],
+      "dauer": "Stunden 14 bis 17, je 10–20 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Skills testen",
+        "Zahl vorher und nachher",
+        "Körper-Skills",
+        "Sinnes-Skills",
+        "Förderfach"
+      ],
+      "bild": "icon:microscope",
+      "kurs": [
+        "ff7-e14",
+        "ff7-e15",
+        "ff7-e16",
+        "ff7-e17"
+      ],
+      "de": {
+        "titel": "Mein Skills-Tester",
+        "untertitel": "Nicht jeder Skill wirkt bei allen gleich. Teste wie in einem Labor: Zahl vorher, Skill, Zahl nachher.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "So testest du einen Skill",
+            "punkte": [
+              "Schätz deine Anspannung vorher: 0 bis 100.",
+              "Mach den Skill zwei bis drei Minuten lang.",
+              "Spür kurz nach und schätz die Zahl nachher.",
+              "Kreis ein, wie gut er dir geholfen hat. Auch „kaum“ ist ein Ergebnis."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Körper und Atem (Stunde 14): Trag deine Zahlen ein und kreis ein, wie gut der Skill geholfen hat.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Zahl vorher",
+              "Skill",
+              "Zahl nachher",
+              "Das hilft mir …"
+            ],
+            "breiten": [
+              0.9,
+              2.3,
+              0.9,
+              1.9
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "",
+                "Atem-Feder",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "Kastenatmung",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "Fingeratmung",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "Vollgas-Bewegung",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "Anspannen und Loslassen",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "Doppelter Seufzer",
+                "",
+                "kaum · etwas · sehr"
+              ]
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Sinne (Stunde 15): An jeder Station eine Zeile.",
+            "hinweis": "Deine Zahl nachher ist gleich die Zahl vorher an der nächsten Station."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Zahl vorher",
+              "Skill",
+              "Zahl nachher",
+              "Das hilft mir …"
+            ],
+            "breiten": [
+              0.9,
+              2.3,
+              0.9,
+              1.9
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "",
+                "Station 1 · Tasten",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "Station 2 · Kälte",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "Station 3 · Klang",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "Station 4 · Sehen",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "Station 5 · Duft oder Hände",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "3-3-3",
+                "",
+                "kaum · etwas · sehr"
+              ]
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Achtsamkeit und Kopf (Stunde 16): Trag die Skills der Stunde ein."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Zahl vorher",
+              "Skill",
+              "Zahl nachher",
+              "Das hilft mir …"
+            ],
+            "breiten": [
+              0.9,
+              2.3,
+              0.9,
+              1.9
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "",
+                "",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "",
+                "",
+                "kaum · etwas · sehr"
+              ],
+              [
+                "",
+                "",
+                "",
+                "kaum · etwas · sehr"
+              ]
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Test im Alltag: Probier einen Skill zwischen zwei Stunden aus.",
+            "hinweis": "Zahl vorher, Skill, Zahl nachher – mehr musst du nicht notieren."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Wann und wo?",
+              "Zahl vorher",
+              "Skill",
+              "Zahl nachher"
+            ],
+            "breiten": [
+              1.8,
+              0.9,
+              2.2,
+              0.9
+            ],
+            "zeilen": 3,
+            "beispiel": [
+              "Mi., Streit im Chat",
+              "70",
+              "Treppe laufen, drei Minuten",
+              "45"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Meine drei Favoriten: Welche Skills haben am besten gewirkt – und bis zu welcher Zahl helfen sie?"
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Mein Skill",
+              "hilft bis",
+              "Wo geht er unauffällig?"
+            ],
+            "breiten": [
+              2.1,
+              0.8,
+              2.3
+            ],
+            "zeilen": 3,
+            "beispiel": [
+              "Doppelter Seufzer",
+              "70",
+              "im Bus, vor dem Test"
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen testen in vier Stunden Skills für Körper, Sinne und Kopf mit Zahl vorher und nachher, bewerten sie ehrlich und halten ihre Favoriten fest – die Grundlage für den Skills-Koffer.",
+          "ablauf": [
+            "Stunde 14: Atem-Feder, Kastenatmung, Fingeratmung, Vollgas-Bewegung, Anspannen und Loslassen, doppelter Seufzer – nach jedem Skill eine Zeile.",
+            "Stunde 15: eine Zeile je Sinnes-Station und für 3-3-3.",
+            "Stunde 16: die Kopf-Skills der Stunde in die leeren Zeilen eintragen.",
+            "Zwischen den Stunden: Test im Alltag (Wochen-Mission). Stunde 16 oder 17: die drei Favoriten für den Skills-Koffer."
+          ],
+          "hintergrund": "Skills wirken individuell: Was die eine beruhigt, macht den anderen nervös. Das Skillstraining für Jugendliche setzt deshalb auf Ausprobieren und Protokollieren (Rathus & Miller, 2015). Körper-Skills senken die Erregung, Sinnes-Skills binden die Aufmerksamkeit mit starken Reizen, Kopf-Skills lenken ab und brauchen dafür freie Denkkapazität (Linehan, 2015).",
+          "quellen": [
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          ],
+          "achtung": "Bei Schwindel aufhören und normal atmen; bei Asthma die Luft nicht anhalten. Kälte nur kurz und im Tuch, Düfte nur nach Rückfrage. Aussetzen ist immer erlaubt.",
+          "material": "Federn, Timer, Lautsprecher; in Stunde 15 die Sinnes-Stationen"
+        }
+      },
+      "fr": {
+        "titel": "Mon testeur de skills",
+        "untertitel": "Un skill n’agit pas de la même façon chez tout le monde. Teste comme dans un labo : chiffre avant, skill, chiffre après.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Comment tester un skill",
+            "punkte": [
+              "Estime ta tension avant : de 0 à 100.",
+              "Fais le skill pendant deux ou trois minutes.",
+              "Prends un instant pour sentir, puis estime ton chiffre après.",
+              "Entoure à quel point il t’a aidé. « À peine », c’est aussi un résultat."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Corps et souffle (séance 14) : note tes chiffres et entoure à quel point le skill t’a aidé.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Chiffre avant",
+              "Skill",
+              "Chiffre après",
+              "Ça m’aide…"
+            ],
+            "breiten": [
+              0.9,
+              2.3,
+              0.9,
+              1.9
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "",
+                "La plume",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "Respiration carrée",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "Respiration des doigts",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "Bouger à fond",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "Contracter et relâcher",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "Le double soupir",
+                "",
+                "à peine · un peu · beaucoup"
+              ]
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Les sens (séance 15) : une ligne par atelier.",
+            "hinweis": "Ton chiffre après est aussi ton chiffre avant à l’atelier suivant."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Chiffre avant",
+              "Skill",
+              "Chiffre après",
+              "Ça m’aide…"
+            ],
+            "breiten": [
+              0.9,
+              2.3,
+              0.9,
+              1.9
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "",
+                "Atelier 1 · Toucher",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "Atelier 2 · Froid",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "Atelier 3 · Son",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "Atelier 4 · Regarder",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "Atelier 5 · Odeur ou mains",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "3-3-3",
+                "",
+                "à peine · un peu · beaucoup"
+              ]
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Pleine conscience et tête (séance 16) : note les skills de la séance."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Chiffre avant",
+              "Skill",
+              "Chiffre après",
+              "Ça m’aide…"
+            ],
+            "breiten": [
+              0.9,
+              2.3,
+              0.9,
+              1.9
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "",
+                "",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "",
+                "",
+                "à peine · un peu · beaucoup"
+              ],
+              [
+                "",
+                "",
+                "",
+                "à peine · un peu · beaucoup"
+              ]
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Essai au quotidien : teste un skill entre deux séances.",
+            "hinweis": "Chiffre avant, skill, chiffre après – c’est tout ce que tu notes."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Quand et où ?",
+              "Chiffre avant",
+              "Skill",
+              "Chiffre après"
+            ],
+            "breiten": [
+              1.8,
+              0.9,
+              2.2,
+              0.9
+            ],
+            "zeilen": 3,
+            "beispiel": [
+              "mer., dispute dans le chat",
+              "70",
+              "escaliers, trois minutes",
+              "45"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Mes trois favoris : quels skills ont le mieux marché – et jusqu’à quel chiffre aident-ils ?"
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Mon skill",
+              "aide jusqu’à",
+              "Où, discrètement ?"
+            ],
+            "breiten": [
+              2.1,
+              0.8,
+              2.3
+            ],
+            "zeilen": 3,
+            "beispiel": [
+              "Le double soupir",
+              "70",
+              "dans le bus, avant un devoir en classe"
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Pendant quatre séances, les jeunes testent des skills pour le corps, les sens et la tête avec un chiffre avant et après, les évaluent honnêtement et notent leurs favoris – la base de la valise à skills.",
+          "ablauf": [
+            "Séance 14 : la plume, la respiration carrée, la respiration des doigts, bouger à fond, contracter et relâcher, le double soupir – une ligne après chaque skill.",
+            "Séance 15 : une ligne par atelier des sens et pour le 3-3-3.",
+            "Séance 16 : noter les skills mentaux de la séance dans les lignes vides.",
+            "Entre les séances : essai au quotidien (mission de la semaine). Séance 16 ou 17 : les trois favoris pour la valise à skills."
+          ],
+          "hintergrund": "Les skills agissent différemment selon les personnes : ce qui calme l’une rend l’autre nerveux. L’entraînement aux skills pour adolescents mise donc sur l’essai et la prise de notes (Rathus & Miller, 2015). Les skills corporels font baisser l’excitation, les skills sensoriels captent l’attention par des stimulations fortes, les skills mentaux distraient et ont besoin pour cela d’une tête encore disponible (Linehan, 2015).",
+          "quellen": [
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          ],
+          "achtung": "En cas de vertige, arrêter et respirer normalement ; en cas d’asthme, ne pas retenir sa respiration. Le froid seulement brièvement et dans un linge, les odeurs seulement après vérification. On peut toujours faire une pause.",
+          "material": "Plumes, minuteur, enceinte ; à la séance 15, les ateliers des sens"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,932 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e17",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-skills-tester",
+        "ff7-glas-der-beduerfnisse",
+        "ff7-skills-koffer"
+      ],
+      "woerter": [
+        {
+          "de": "der Skills-Koffer",
+          "fr": "la valise à skills"
+        },
+        {
+          "de": "der Ampelplan",
+          "fr": "le plan feu tricolore"
+        },
+        {
+          "de": "das Warnsignal",
+          "fr": "le signal d’alerte"
+        },
+        {
+          "de": "die Notfallkarte",
+          "fr": "la carte d’urgence"
+        },
+        {
+          "de": "das Bedürfnis",
+          "fr": "le besoin"
+        },
+        {
+          "de": "erreichbar",
+          "fr": "joignable"
+        }
+      ],
+      "de": {
+        "titel": "Mein Skills-Koffer und Ampelplan",
+        "kurz": "Die Klasse öffnet das Glas der Bedürfnisse wieder, packt aus den getesteten Skills den eigenen Skills-Koffer, macht einen Ampelplan für Grün, Gelb und Rot und gestaltet eine Notfallkarte.",
+        "ziele": [
+          "verbinden leere Tanks mit ihrer Anspannung und nennen, was sie bei Grün auffüllt",
+          "packen aus ihren Testergebnissen einen Skills-Koffer",
+          "erstellen einen Ampelplan mit Warnsignalen, Skills und einer erreichbaren erwachsenen Person",
+          "gestalten eine Notfallkarte und üben den Ampel-Check"
+        ],
+        "material": [
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Plakat Anspannungsskala 0–100",
+          "Glas der Bedürfnisse aus Einheit 6",
+          "Schülerheft mit Skills-Tester",
+          "Notfallkarten auf festem Papier, 20",
+          "Grüne Buntstifte, Scheren, Klebeband",
+          "Plakat Klassen-Koffer, 40 Punkte",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Zettel im Glas durchsehen: fünf, sechs allgemeine obenauf, Persönliches beiseite.",
+          "Die Notfallkarte (Blatt „Mein Skills-Koffer“, S. 2) je Person auf festes Papier kopieren.",
+          "Plakat „Unser Klassen-Koffer“: alle Skills der Einheiten 14 bis 16, nach Körper, Sinne, Kopf.",
+          "Tafel, abgedeckt: Tafelbilder aus Schritt 6 und 9, Raum und Zeiten des SePAS.",
+          "Tandems für alle, die in Einheit 14 bis 16 gefehlt haben."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Gefühl, Zahl und Ampelfarbe"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick, Wochen-Mission und Thema"
+          },
+          {
+            "min": "15–25",
+            "phase": "uebung",
+            "titel": "Das Glas der Bedürfnisse"
+          },
+          {
+            "min": "25–45",
+            "phase": "uebung",
+            "titel": "Meinen Skills-Koffer packen"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: das Ampel-Spiel"
+          },
+          {
+            "min": "50–68",
+            "phase": "uebung",
+            "titel": "Mein Ampelplan"
+          },
+          {
+            "min": "68–78",
+            "phase": "uebung",
+            "titel": "Meine Notfallkarte"
+          },
+          {
+            "min": "78–85",
+            "phase": "uebung",
+            "titel": "Kapitel-Rückblick: die Skills-Hitparade"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Ampel-Check"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Wochen-Mission und Ausblick"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühl, Zahl und Ampelfarbe",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad (2 Min.). Auf drei zeigen alle ihre Anspannung mit den Fingern; die Lehrkraft beginnt mit Gefühl, Zahl und der passenden Farbe auf dem Plakat der Anspannungsskala – Grün bis 30, Gelb bis 70, Rot darüber (3 Min.). Zwei, drei Freiwillige nennen Gefühl, Zahl und Farbe (2 Min.). Dann die neue Frage: Wer bei Gelb ist – braucht ihr jetzt einen Skill? Die ganze Klasse macht eine Runde Fingeratmung mit, so muss sich niemand zu erkennen geben (3 Min.). Ab heute gehört diese Frage zu jedem Check-in.",
+            "sagen": [
+              "Gefühl, Zahl und Farbe: Wo steht eure Ampel heute?",
+              "Wer bei Gelb ist, kennt jetzt Skills dafür. Wir machen einen zusammen – alle, egal welche Farbe."
+            ],
+            "tipp": "Macht die ganze Klasse den Skill mit, muss niemand vor allen zugeben, dass er bei Gelb ist. Nach ein paar Wochen fragen die Jugendlichen oft selbst danach.",
+            "wennEsKippt": "Zeigt jemand aus Spaß zehn Finger, nicht diskutieren: ruhig zur Kenntnis nehmen und später kurz nachfragen – manchmal steckt doch etwas dahinter. Ist jemand wirklich bei Rot, nicht vor der Klasse ausfragen, sondern einen Körper-Skill anbieten, etwa kaltes Wasser an die Handgelenke oder ein paar Schritte am Fenster, und nach der Stunde sprechen."
+          },
+          {
+            "titel": "Rückblick, Wochen-Mission und Thema",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission per Daumen fragen: Wer hat seinen sicheren Ort besucht oder einen Kopf-Skill ausprobiert? Eine Stimme erzählt, wann. Dann das Ziel der Stunde an die Tafel schreiben: Heute packt ihr aus allem, was ihr getestet habt, euren Skills-Koffer – und macht einen Plan für Grün, Gelb und Rot. Ankündigen, dass die Stunde das Kapitel „Gefühle regulieren“ abschließt, und die Skills-Tester aufschlagen lassen.",
+            "sagen": [
+              "Ihr habt in den letzten Wochen eine ganze Menge Skills getestet. Heute sucht ihr die aus, die wirklich zu euch passen."
+            ],
+            "tipp": "Skills-Tester, Skills-Pass und das Blatt zum sicheren Ort liegen ab jetzt offen auf dem Tisch – sie sind das Material für den Koffer.",
+            "blatt": "ff7-skills-tester"
+          },
+          {
+            "titel": "Das Glas der Bedürfnisse",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Das Glas der Klasse aus Einheit 6 in die Mitte stellen und öffnen. Die Lehrkraft zieht die fünf, sechs vorher ausgewählten Zettel und liest sie vor; auf drei zeigen die Tischgruppen wie in Einheit 6 die Nummer des Tanks – die sechs Tanks stehen dafür nummeriert an der Tafel (3 Min.). Dann die beiden Fragen stellen, alle zeigen ihre Zahl mit den Fingern, und den Satz für Grün an die Tafel schreiben: Tanks füllen schützt vor Rot (2 Min.). Zum Schluss Aufgabe 3 auf dem Blatt aus Einheit 6: mit Grün einen zweiten Strich in jedes Glas zeichnen – so voll ist der Tank heute – und die zwei Sätze ergänzen (5 Min.). Was einen Tank füllt, kommt später in den Ampelplan bei Grün.",
+            "sagen": [
+              "Stellt euch vor: kaum geschlafen, nichts gegessen, Streit am Morgen. Bei welcher Zahl startet ihr in den Tag?",
+              "Und jetzt: ausgeschlafen, gefrühstückt, am Nachmittag ist Training. Welche Zahl?",
+              "Skills helfen, wenn es brennt. Volle Tanks helfen, dass es seltener brennt."
+            ],
+            "tipp": "Die Zettel sind anonym. Trotzdem nur allgemein klingende vorlesen; was nach einer bestimmten Person klingt oder Sorge macht, bleibt im Glas und wird nach der Stunde mit dem SePAS besprochen.",
+            "wennEsKippt": "Wird über einen Zettel gelacht oder geraten, wer was geschrieben hat, sofort anhalten und an die Klassenvereinbarung erinnern; danach liest nur noch die Lehrkraft, ohne Kommentar. Ist das Glas nicht mehr da, gleich mit den beiden Fragen beginnen. Wer in Einheit 6 gefehlt hat, zeichnet heute nur einen Strich je Glas und kreist den leersten Tank ein.",
+            "blatt": "ff7-glas-der-beduerfnisse"
+          },
+          {
+            "titel": "Meinen Skills-Koffer packen",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Auf das Plakat „Unser Klassen-Koffer“ zeigen, an der Tafel die Fächer erklären (Liste) und den Satz vom kleinen Koffer auf dem Blatt vorlesen (2 Min.). Zuerst trägt jede Person im Skills-Tester ihre drei Favoriten ein (3 Min.), dann packt sie allein ihren Koffer (8 Min.): je Fach ein bis zwei Skills, die gut abgeschnitten haben oder im Alltag schon helfen; das letzte Fach bleibt frei. Herumgehen und nachfragen: Hat der wirklich geholfen? Zu zweit (4 Min.): Das Gegenüber schaut auf Körper, Sinne und Kopf und fragt bei einem Skill: Wo und wann nimmst du den? Abschauen ist erlaubt. Klasse (3 Min.): Zwei, drei Freiwillige nennen einen Skill, den sie beim Gegenüber entdeckt haben und selbst ausprobieren wollen.",
+            "sagen": [
+              "Packt nur ein, was bei euch wirklich gewirkt hat – nicht das, was gut klingt.",
+              "Was in eurem Koffer liegt, muss nicht im Koffer der anderen liegen. Jeder Koffer ist anders."
+            ],
+            "punkte": [
+              "Körper: Atem, Bewegung, Anspannen und Loslassen, doppelter Seufzer (Einheit 14)",
+              "Sinne: Tasten, Kälte, Klang, Sehen, Musik (Einheit 15)",
+              "Kopf: Gedankenschiffchen, Kopf-Skills, sicherer Ort (Einheit 16)",
+              "Menschen: wem ich schreibe, mit wem ich rede, bei wem ich einfach sein darf",
+              "Das tut mir gut: Sport, Musik, zeichnen, mit dem Hund raus",
+              "Kommt dazu: frei für Skills, die im Lauf des Jahres dazukommen"
+            ],
+            "tipp": "Wer sagt, nichts helfe, schaut mit der Lehrkraft in den Skills-Tester: Fast immer gibt es einen Skill, der wenigstens etwas geholfen hat. Ein Skill, der etwas hilft, ist ein guter Anfang.",
+            "wennEsKippt": "Schreibt jemand „zocken“ oder „schlafen“ in jedes Fach, nicht streiten: Ablenkung und Ruhe sind echte Skills und können bei Gelb helfen. Nachfragen, was im Bus, im Unterricht oder im Test hilft, wenn kein Handy da ist. Wer nichts über sich schreiben will, packt den Koffer für eine erfundene Person, etwa einen Torwart vor dem Elfmeterschießen. Wer in einer der Stunden gefehlt hat, arbeitet mit seinem Tandem und nimmt Skills vom Plakat.",
+            "blatt": "ff7-skills-koffer"
+          },
+          {
+            "titel": "Bewegungspause: das Ampel-Spiel",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen hinter ihrem Stuhl. Die Lehrkraft ruft Farben und zeigt sie dabei auf dem Plakat der Anspannungsskala: Grün – auf der Stelle zügig gehen, Gelb – in Zeitlupe weitergehen, Rot – einfrieren und einmal lang ausatmen. Erst langsam, dann schneller und durcheinander; zum Schluss ruft eine freiwillige Person die Farben (4 Min.). Niemand scheidet aus. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "tipp": "Das Spiel übt nebenbei, was der Plan verlangt: bei Rot zuerst anhalten und den Körper beruhigen, dann weiter.",
+            "wennEsKippt": "Wird gerannt oder geschubst, sofort Rot rufen und erst weitermachen, wenn alle stillstehen. Wer nicht mitmachen will, ruft die Farben oder achtet darauf, dass bei Rot wirklich alle stillstehen."
+          },
+          {
+            "titel": "Mein Ampelplan",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Warnsignale (4 Min.): Jede Person kreuzt in Aufgabe 2 an, woran sie merkt, dass sie Richtung Gelb geht – im Körper, in den Gedanken, im Verhalten; die Gefühls-Landkarte aus Einheit 11 und die Skala aus Einheit 13 helfen. Dann das Tafelbild aufdecken und die Regel lesen: Bei Rot keine Kopf-Skills (2 Min.). Ampelplan (9 Min.): von unten nach oben füllen – Grün: was meine Tanks füllt; Gelb: mein erstes Warnsignal und zwei Skills aus dem Koffer; Rot: zwei, drei Körper- oder Sinnes-Skills und eine erwachsene Person, zu der ich gehe. Herumgehen und bei Rot fragen: Geht das auch, wenn man nicht mehr denken kann? Zum Schluss lesen zwei Freiwillige ihre Zeile für Gelb vor (3 Min.).",
+            "sagen": [
+              "Bei Rot könnt ihr nicht mehr nachdenken. Was steht da, das auch dann noch funktioniert?",
+              "Wer ist eine erwachsene Person, die ihr wirklich erreicht – auch an einem Freitagnachmittag?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Farbe",
+                "Welche Skills passen?"
+              ],
+              "zeilen": [
+                [
+                  "Rot (70–100)",
+                  "Körper und Sinne: Kälte, Bewegung, langsam ausatmen. Raus aus der Situation, Hilfe holen."
+                ],
+                [
+                  "Gelb (30–70)",
+                  "Kopf-Skills, Musik, Bewegung, jemandem schreiben, der sichere Ort."
+                ],
+                [
+                  "Grün (0–30)",
+                  "Tanks füllen, Skills üben, Dinge tun, die guttun."
+                ]
+              ]
+            },
+            "tipp": "Findet jemand keine erwachsene Person, gemeinsam überlegen: Régent, SePAS, Éducateur, Trainerin im Verein, eine Tante. Bleibt die Zeile trotzdem leer, steht dort vorerst das Kanner- a Jugendtelefon – und die Lehrkraft greift das nach der Stunde unter vier Augen auf.",
+            "wennEsKippt": "Stehen bei Rot Dinge wie zuschlagen, sich wehtun oder abhauen, nicht vor der Klasse kommentieren: ruhig fragen, was stattdessen helfen könnte, und nach der Stunde unter vier Augen sprechen; bei Hinweisen auf Selbstverletzung oder Gefahr noch am selben Tag den SePAS informieren. Wer nichts über sich schreiben will, füllt den Plan für eine erfundene Person aus.",
+            "blatt": "ff7-skills-koffer"
+          },
+          {
+            "titel": "Meine Notfallkarte",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Jede Person bekommt die Notfallkarte auf festem Papier. Vorne kommen die zwei, drei wichtigsten Skills für Rot hin, hinten eine erwachsene Person und der Raum des SePAS; die Hilfsnummern stehen schon da (6 Min.). Kurz, groß und klar schreiben – bei 90 liest niemand lange Sätze. Dann beide Felder als ein Stück ausschneiden – die Scheren gehen in der Tischgruppe reihum –, in der Mitte falten und, wer mag, mit Klebeband überziehen (3 Min.). Zum Schluss klären, wo die Karte hinkommt: Portemonnaie, Handyhülle, Federmäppchen (1 Min.). Wer schnell fertig ist, trägt die Karte auch im Heft ein – als Kopie, falls sie verloren geht.",
+            "sagen": [
+              "Schreibt so, dass ihr es bei 90 noch lesen könnt: kurz, groß, klar.",
+              "Wo ist die Karte, wenn ihr sie braucht? In der Tasche, die ihr immer dabeihabt."
+            ],
+            "tipp": "Nach Handynummern aus der Klasse wird nicht gefragt. Freunde sind wichtig, aber bei Rot braucht es jemanden, der mehr tun kann: eine erwachsene Person und die Hilfsnummern.",
+            "wennEsKippt": "Findet jemand Basteln kindisch, reicht die Karte ohne Klebeband – oder ein Foto davon im Handy. Kann jemand keine erwachsene Person eintragen, bleibt die Zeile frei; nach der Stunde ein kurzes Gespräch führen und mit dem SePAS überlegen, wer infrage kommt.",
+            "blatt": "ff7-skills-koffer"
+          },
+          {
+            "titel": "Kapitel-Rückblick: die Skills-Hitparade",
+            "dauer": 7,
+            "phase": "uebung",
+            "text": "Auf dem Plakat „Unser Klassen-Koffer“ stehen alle Skills des Kapitels in drei Spalten. Tischgruppe für Tischgruppe kommt nach vorn, jede Person klebt zwei Punkte zu den Skills, die in ihrem Koffer ganz oben liegen (3 Min.). Gemeinsam anschauen: Welche Skills haben viele Punkte, welche wenige? Festhalten: Fast jeder Skill hilft irgendwem, keiner hilft allen – deshalb packt jede Person ihren eigenen Koffer (2 Min.). Zum Schluss die Leitfrage des Kapitels vorlesen – Was hilft mir, wenn es zu viel wird? – und je Tischgruppe einen Satz für alle sagen lassen (2 Min.). Das Plakat bleibt hängen.",
+            "sagen": [
+              "Schaut auf die Punkte: Gibt es einen Skill, der allen hilft? Und einen, der niemandem hilft?"
+            ],
+            "tipp": "Das Plakat im Raum lassen: Im Check-in kann die Klasse künftig einen Skill daraus wählen, und in Einheit 22 hilft es, wenn ein Streit zu heiß wird.",
+            "wennEsKippt": "Drängeln sich alle vorn, kommen die Tischgruppen einzeln, während die anderen schon ihren Satz überlegen. Hat ein Skill gar keine Punkte, nicht schlechtreden: Vielleicht braucht ihn jemand erst später."
+          },
+          {
+            "titel": "Skill: Ampel-Check",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: Der letzte Skill des Kapitels hält alle anderen zusammen. Die drei Schritte an der Tafel aufdecken (Tabelle) und die drei Situationen nacheinander vorlesen (Liste). Nach jeder macht jede Person still den Ampel-Check – Zahl schätzen, Farbe bestimmen, einen Skill aus dem eigenen Koffer wählen –; auf drei zeigen alle ihre Zahl mit den Fingern, zwei Stimmen nennen ihren Skill, und jede Person macht ihren Skill eine halbe Minute lang (je 2 Min.). Zum Schluss fragen: Wann könnte der Ampel-Check euch diese Woche nützen (2 Min.)?",
+            "sagen": [
+              "Stopp, Farbe, Skill. Mehr ist es nicht – aber üben muss man es, solange es ruhig ist."
+            ],
+            "punkte": [
+              "Du kommst nach Hause, und dein Bruder hat schon wieder dein Ladekabel genommen.",
+              "Beim Fußball in der Pause foult dich jemand absichtlich, und dein Knie blutet.",
+              "Es ist 22 Uhr, morgen ist der Mathe-Test, und dein Kopf fährt Karussell."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Schritt",
+                "Was du tust"
+              ],
+              "zeilen": [
+                [
+                  "1 Stopp",
+                  "Kurz anhalten: Welche Zahl habe ich gerade?"
+                ],
+                [
+                  "2 Farbe",
+                  "Grün, Gelb oder Rot?"
+                ],
+                [
+                  "3 Skill",
+                  "Den passenden Skill aus dem Koffer nehmen – bei Rot Körper oder Sinne."
+                ]
+              ]
+            },
+            "tipp": "Den Ampel-Check ab jetzt in den Check-in einbauen: Wer bei Gelb ist, nimmt einen Skill aus dem Koffer, und die Klasse macht mit.",
+            "wennEsKippt": "Sagt jemand: „Bei mir wäre das 100, dann hau ich zu“, nicht moralisieren, sondern ernst nehmen: Was hilft dir bei 100, bevor du zuschlägst? Läuft die Zeit davon, die dritte Situation weglassen."
+          },
+          {
+            "titel": "Skills-Pass, Wochen-Mission und Ausblick",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Welcher Skill liegt in meinem Koffer ganz oben – und wann nehme ich ihn? Jede Person schreibt ihren Satz (2 Min.) und bekommt den Stempel. Daumen-Blitzlicht zum Kapitel: Wie gut kennt ihr jetzt eure Skills (1 Min.)? Dann die Wochen-Mission ansagen (steht im Heft) und den Ausblick auf das neue Kapitel geben (2 Min.). Koffer, Plan und Karte werden nicht eingesammelt.",
+            "sagen": [
+              "Ein Satz für den Skills-Pass: Welcher Skill liegt bei euch ganz oben im Koffer?"
+            ],
+            "tipp": "Den Koffer in den Einheiten 22 und 31 wieder aufschlagen lassen: Dann kommen neue Skills ins freie Fach."
+          }
+        ],
+        "bruecke": "Nächste Woche beginnt ein neues Kapitel: Ihr erlebt, wie viel ohne Worte ankommt, lest Körpersprache und übersetzt Emojis in Sätze.",
+        "mission": "Trag deine Notfallkarte diese Woche immer bei dir – und mach einmal den Ampel-Check: Stopp, Farbe, Skill. Welche Farbe hattest du?",
+        "hintergrund": "Der Skills-Koffer – in der Praxis oft Notfallkoffer genannt – bündelt, was die Klasse seit Einheit 13 getestet hat: eine kleine, persönliche Auswahl, die bei hoher Anspannung greifbar ist. Er folgt dem DBT-Skillstraining für Jugendliche, das erprobte Fertigkeiten für Krisen bereithält (Fleischhaker et al., 2011). Der Ampelplan knüpft die Skills an frühe Warnsignale, damit gehandelt wird, bevor Rot erreicht ist. Solche Wenn-dann-Verknüpfungen werden in der Situation deutlich häufiger umgesetzt als allgemeine Vorsätze (Gollwitzer, 1999). Aus dem Sicherheitsplan stammen die Reihenfolge – erst eigene Skills, dann Menschen, dann Hilfsnummern – und der Grundsatz, erreichbare Personen konkret zu nennen (Stanley & Brown, 2012). Grün knüpft an das Glas der Bedürfnisse an: Wer ausgeschlafen ist, gegessen hat und sich zugehörig fühlt, startet mit weniger Anspannung in den Tag.",
+        "quellen": [
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
+        ],
+        "achtung": "Ampelplan und Notfallkarte berühren Krisen: nicht einsammeln, nicht vorlesen, nicht bewerten. Stehen bei Rot Selbstverletzung, Gewalt, Weglaufen oder Drogen, findet jemand keine erreichbare Person oder deutet an, nicht mehr leben zu wollen: nicht vor der Klasse vertiefen, nach der Stunde unter vier Augen sprechen, nichts versprechen, noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112. Die Zettel im Glas bleiben anonym.",
+        "differenzierung": {
+          "leichter": "Im Koffer reicht ein Skill je Fach, im Ampelplan reichen Rot und eine Person; Stichworte statt Sätze. Die Namen der Skills stehen auf dem Plakat zum Abschreiben, wer mühsam schreibt, diktiert seinem Tandem. Die Situationen beim Ampel-Check mit Gesten vorspielen.",
+          "schwerer": "Für Gelb einen Wenn-dann-Satz formulieren: Wenn ich merke, dass …, dann … Einen zweiten Ampelplan für eine bestimmte Lage machen, etwa für den Test oder für Streit im Chat."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Zahl und Farbe (5 Min.), Glas der Bedürfnisse mit den beiden Fragen (5 Min.), Skills-Koffer packen (15 Min.), Ampelplan (15 Min.), Ampel-Check mit einer Situation (5 Min.), Skills-Pass und Wochen-Mission (5 Min.). Die Notfallkarte gestalten die Jugendlichen in der nächsten Stunde nach dem Check-in; die Hitparade entfällt."
+      },
+      "fr": {
+        "titel": "Ma valise à skills et mon plan feu tricolore",
+        "kurz": "La classe rouvre le bocal des besoins, remplit sa valise à skills avec les skills testés, établit un plan feu tricolore pour le vert, l’orange et le rouge et fabrique une carte d’urgence.",
+        "ziele": [
+          "relient les réservoirs vides à leur tension et nomment ce qui les remplit dans le vert",
+          "remplissent une valise à skills à partir de leurs résultats",
+          "établissent un plan feu tricolore avec signaux d’alerte, skills et un adulte joignable",
+          "fabriquent une carte d’urgence et s’entraînent au réflexe feu tricolore"
+        ],
+        "material": [
+          "Roue des émotions, 20 gommettes",
+          "Affiche de l’échelle de tension",
+          "Bocal des besoins (séance 6)",
+          "Cahier de l’élève, testeur de skills",
+          "Cartes d’urgence, papier épais, 20",
+          "Crayons verts, ciseaux, adhésif",
+          "Affiche valise, 40 gommettes",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Trier les papiers du bocal : cinq ou six papiers généraux dessus.",
+          "Carte d’urgence (fiche « Ma valise à skills », p. 2) : une copie par jeune sur papier épais.",
+          "Affiche « Notre valise de classe » : les skills des séances 14 à 16.",
+          "Au tableau, caché : grilles des étapes 6 et 9, salle et horaires du SePAS.",
+          "Un binôme pour qui a manqué une des séances 14 à 16."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : émotion, chiffre et couleur"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour, mission de la semaine et thème"
+          },
+          {
+            "min": "15–25",
+            "phase": "uebung",
+            "titel": "Le bocal des besoins"
+          },
+          {
+            "min": "25–45",
+            "phase": "uebung",
+            "titel": "Remplir ma valise à skills"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : le jeu du feu tricolore"
+          },
+          {
+            "min": "50–68",
+            "phase": "uebung",
+            "titel": "Mon plan feu tricolore"
+          },
+          {
+            "min": "68–78",
+            "phase": "uebung",
+            "titel": "Ma carte d’urgence"
+          },
+          {
+            "min": "78–85",
+            "phase": "uebung",
+            "titel": "Bilan du chapitre : le hit-parade des skills"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : le réflexe feu tricolore"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, mission et suite"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : émotion, chiffre et couleur",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions (2 min). À trois, tout le monde montre sa tension avec les doigts ; l’enseignant·e commence avec son émotion, son chiffre et la couleur correspondante sur l’affiche de l’échelle de tension – vert jusqu’à 30, orange jusqu’à 70, rouge au-delà (3 min). Deux ou trois volontaires donnent leur émotion, leur chiffre et leur couleur (2 min). Puis la nouvelle question : ceux qui sont dans l’orange, avez-vous besoin d’un skill maintenant ? Toute la classe fait un tour de respiration des doigts, ainsi personne n’a à se dévoiler (3 min). À partir d’aujourd’hui, cette question fait partie de chaque tour d’humeur.",
+            "sagen": [
+              "Émotion, chiffre et couleur : où en est votre feu aujourd’hui ?",
+              "Qui est dans l’orange connaît maintenant des skills pour ça. On en fait un ensemble – tout le monde, quelle que soit sa couleur."
+            ],
+            "tipp": "Si toute la classe fait le skill, personne n’a à avouer devant les autres qu’il est dans l’orange. Après quelques semaines, les jeunes le demandent souvent d’eux-mêmes.",
+            "wennEsKippt": "Si un jeune montre dix doigts pour rire, ne pas discuter : en prendre note calmement et lui poser la question plus tard – parfois, il y a quand même quelque chose derrière. Si quelqu’un est vraiment dans le rouge, ne pas l’interroger devant la classe, mais lui proposer un skill du corps, par exemple de l’eau froide sur les poignets ou quelques pas près de la fenêtre, et lui parler après le cours."
+          },
+          {
+            "titel": "Retour, mission de la semaine et thème",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Pour la mission de la semaine, demander avec le pouce : qui est allé dans son lieu sûr ou a essayé un skill mental ? Une voix raconte quand. Puis écrire au tableau le but de la séance : aujourd’hui, avec tout ce que vous avez testé, vous remplissez votre valise à skills – et vous faites un plan pour le vert, l’orange et le rouge. Annoncer que la séance clôt le chapitre « Réguler ses émotions » et faire ouvrir les testeurs de skills.",
+            "sagen": [
+              "Ces dernières semaines, vous avez testé toute une série de skills. Aujourd’hui, vous choisissez ceux qui vous conviennent vraiment."
+            ],
+            "tipp": "Le testeur de skills, le Skills-Pass et la fiche du lieu sûr restent désormais ouverts sur la table – c’est le matériel pour la valise.",
+            "blatt": "ff7-skills-tester"
+          },
+          {
+            "titel": "Le bocal des besoins",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Poser au milieu le bocal de la classe de la séance 6 et l’ouvrir. L’enseignant·e tire les cinq ou six papiers choisis à l’avance et les lit ; à trois, les îlots montrent, comme à la séance 6, le numéro du réservoir – les six réservoirs sont numérotés au tableau (3 min). Puis poser les deux questions, tout le monde montre son chiffre avec les doigts, et écrire au tableau la phrase pour le vert : remplir ses réservoirs protège du rouge (2 min). Pour finir, exercice 3 de la fiche de la séance 6 : tracer en vert un deuxième trait dans chaque bocal – voilà à quel point le réservoir est plein aujourd’hui – et compléter les deux phrases (5 min). Ce qui remplit un réservoir ira plus tard dans le plan feu tricolore, au vert.",
+            "sagen": [
+              "Imaginez : presque pas dormi, rien mangé, une dispute le matin. À quel chiffre est-ce que vous commencez la journée ?",
+              "Et maintenant : bien dormi, un bon petit-déjeuner, entraînement l’après-midi. Quel chiffre ?",
+              "Les skills aident quand ça brûle. Des réservoirs pleins aident à ce que ça brûle moins souvent."
+            ],
+            "tipp": "Les papiers sont anonymes. Ne lire malgré tout que ceux qui restent généraux ; ce qui fait penser à une personne précise ou qui inquiète reste dans le bocal et sera discuté avec le SePAS après le cours.",
+            "wennEsKippt": "Si un papier fait rire ou si la classe devine qui a écrit quoi, arrêter tout de suite et rappeler la charte de classe ; ensuite, c’est l’enseignant·e qui lit, sans commentaire. Si le bocal n’est plus là, commencer directement par les deux questions. Qui était absent à la séance 6 trace aujourd’hui un seul trait par bocal et entoure le réservoir le plus vide.",
+            "blatt": "ff7-glas-der-beduerfnisse"
+          },
+          {
+            "titel": "Remplir ma valise à skills",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Montrer l’affiche « Notre valise de classe », expliquer les compartiments au tableau (liste) et lire sur la fiche la phrase de la petite valise (2 min). D’abord, chacun note ses trois favoris dans le testeur de skills (3 min), puis remplit seul sa valise (8 min) : un ou deux skills par compartiment, qui ont bien marché ou qui l’aident déjà au quotidien ; le dernier compartiment reste libre. Passer dans les rangs et demander : est-ce que celui-là t’a vraiment aidé ? À deux (4 min) : le ou la partenaire regarde les compartiments corps, sens et tête et pose une question sur un skill : où et quand est-ce que tu l’utilises ? Copier est permis. En classe entière (3 min) : deux ou trois volontaires citent un skill découvert chez leur partenaire et qu’ils veulent essayer.",
+            "sagen": [
+              "Ne mettez dedans que ce qui a vraiment marché pour vous – pas ce qui sonne bien.",
+              "Ce qu’il y a dans votre valise n’a pas besoin d’être dans celle des autres. Chaque valise est différente."
+            ],
+            "punkte": [
+              "Corps : respiration, mouvement, contracter et relâcher, double soupir (séance 14)",
+              "Sens : toucher, froid, sons, regarder, musique (séance 15)",
+              "Tête : petits bateaux de pensées, skills mentaux, lieu sûr (séance 16)",
+              "Personnes : à qui j’écris, avec qui je parle, chez qui je peux juste être là",
+              "Ce qui me fait du bien : le sport, la musique, dessiner, sortir le chien",
+              "À ajouter : libre pour les skills qui viendront pendant l’année"
+            ],
+            "tipp": "Qui dit que rien ne l’aide regarde son testeur de skills avec l’enseignant·e : il y a presque toujours un skill qui a au moins un peu aidé. Un skill qui aide un peu, c’est un bon début.",
+            "wennEsKippt": "Si un jeune écrit « jouer à la console » ou « dormir » dans chaque compartiment, ne pas se disputer : se distraire et se reposer sont de vrais skills et peuvent aider dans l’orange. Demander ce qui aide dans le bus, en cours ou pendant un devoir en classe, quand il n’y a pas de portable. Qui ne veut rien écrire sur soi remplit la valise d’un personnage inventé, par exemple un gardien de but avant les tirs au but. Qui a manqué une des séances travaille avec son binôme et prend des skills sur l’affiche.",
+            "blatt": "ff7-skills-koffer"
+          },
+          {
+            "titel": "Pause active : le jeu du feu tricolore",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève derrière sa chaise. L’enseignant·e annonce des couleurs en les montrant sur l’affiche de l’échelle de tension : vert – marcher vite sur place, orange – continuer au ralenti, rouge – se figer et expirer longuement une fois. D’abord lentement, puis plus vite et dans le désordre ; pour finir, un ou une volontaire annonce les couleurs (4 min). Personne n’est éliminé. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "tipp": "Au passage, le jeu entraîne ce que demande le plan : dans le rouge, d’abord s’arrêter et calmer le corps, ensuite continuer.",
+            "wennEsKippt": "Si quelqu’un court ou bouscule, annoncer tout de suite rouge et ne reprendre que quand tout le monde est immobile. Qui ne veut pas jouer annonce les couleurs ou vérifie qu’au rouge, tout le monde est bien immobile."
+          },
+          {
+            "titel": "Mon plan feu tricolore",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Signaux d’alerte (4 min) : chacun coche dans l’exercice 2 à quoi il remarque qu’il passe à l’orange – dans le corps, les pensées, le comportement ; la carte corporelle des émotions de la séance 11 et l’échelle de la séance 13 aident. Puis découvrir le tableau et lire la règle : dans le rouge, pas de skills mentaux (2 min). Plan feu tricolore (9 min) : le remplir de bas en haut – vert : ce qui remplit mes réservoirs ; orange : mon premier signal d’alerte et deux skills de la valise ; rouge : deux ou trois skills du corps ou des sens et un adulte vers qui je vais. Passer dans les rangs et demander pour le rouge : est-ce que ça marche aussi quand on ne peut plus réfléchir ? Pour finir, deux volontaires lisent leur ligne pour l’orange (3 min).",
+            "sagen": [
+              "Dans le rouge, vous ne pouvez plus réfléchir. Qu’est-ce qui est écrit là et qui marche quand même ?",
+              "Quel adulte pouvez-vous vraiment joindre – même un vendredi après-midi ?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Couleur",
+                "Quels skills conviennent ?"
+              ],
+              "zeilen": [
+                [
+                  "Rouge (70–100)",
+                  "Le corps et les sens : froid, mouvement, expirer lentement. Sortir de la situation, chercher de l’aide."
+                ],
+                [
+                  "Orange (30–70)",
+                  "Skills mentaux, musique, bouger, écrire à quelqu’un, le lieu sûr."
+                ],
+                [
+                  "Vert (0–30)",
+                  "Remplir ses réservoirs, s’entraîner aux skills, faire ce qui fait du bien."
+                ]
+              ]
+            },
+            "tipp": "Si un jeune ne trouve aucun adulte, chercher ensemble : le régent, le SePAS, un éducateur, une entraîneuse au club, une tante. Si la ligne reste vide malgré tout, y noter pour l’instant le Kanner- a Jugendtelefon – et en reparler en tête-à-tête après le cours.",
+            "wennEsKippt": "Si, au rouge, un jeune écrit des choses comme frapper, se faire du mal ou fuguer, ne pas commenter devant la classe : demander calmement ce qui pourrait aider à la place et lui parler en tête-à-tête après le cours ; en cas de signe d’automutilation ou de danger, informer le SePAS le jour même. Qui ne veut rien écrire sur soi remplit le plan pour un personnage inventé.",
+            "blatt": "ff7-skills-koffer"
+          },
+          {
+            "titel": "Ma carte d’urgence",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Chaque jeune reçoit la carte d’urgence sur papier épais. Devant : les deux ou trois skills les plus importants pour le rouge ; derrière : un adulte et la salle du SePAS ; les numéros d’aide y figurent déjà (6 min). Écrire court, gros et clair – à 90, personne ne lit de longues phrases. Puis découper les deux cases d’un seul tenant – les ciseaux tournent dans l’îlot –, plier au milieu et, si on veut, recouvrir de ruban adhésif (3 min). Pour finir, voir où la carte va : portefeuille, coque du portable, trousse (1 min). Qui a vite fini recopie la carte dans le cahier – une copie au cas où il la perdrait.",
+            "sagen": [
+              "Écrivez de façon à pouvoir encore le lire à 90 : court, gros, clair.",
+              "Où est la carte quand vous en avez besoin ? Dans le sac que vous avez toujours sur vous."
+            ],
+            "tipp": "On ne demande pas de numéros de portable de la classe. Les amis comptent, mais dans le rouge, il faut quelqu’un qui peut faire plus : un adulte et les numéros d’aide.",
+            "wennEsKippt": "Si un jeune trouve le bricolage enfantin, la carte sans ruban adhésif suffit – ou une photo sur son portable. Si un jeune ne peut inscrire aucun adulte, la ligne reste vide ; avoir un court échange avec lui après le cours et chercher avec le SePAS qui pourrait convenir.",
+            "blatt": "ff7-skills-koffer"
+          },
+          {
+            "titel": "Bilan du chapitre : le hit-parade des skills",
+            "dauer": 7,
+            "phase": "uebung",
+            "text": "Sur l’affiche « Notre valise de classe », tous les skills du chapitre figurent en trois colonnes. Îlot par îlot, les jeunes viennent devant, chacun colle deux gommettes à côté des skills qui sont tout en haut de sa valise (3 min). Regarder ensemble : quels skills ont beaucoup de gommettes, lesquels peu ? Retenir : presque chaque skill aide quelqu’un, aucun n’aide tout le monde – c’est pourquoi chacun remplit sa propre valise (2 min). Pour finir, lire la question clé du chapitre – qu’est-ce qui m’aide quand c’est trop ? – et faire dire par chaque îlot une phrase pour tous (2 min). L’affiche reste au mur.",
+            "sagen": [
+              "Regardez les gommettes : est-ce qu’il y a un skill qui aide tout le monde ? Et un qui n’aide personne ?"
+            ],
+            "tipp": "Laisser l’affiche dans la salle : au tour d’humeur, la classe pourra y choisir un skill, et à la séance 22, elle aidera quand une dispute s’échauffe.",
+            "wennEsKippt": "Si tout le monde se bouscule devant, faire venir les îlots un par un pendant que les autres réfléchissent déjà à leur phrase. Si un skill n’a aucune gommette, ne pas le dénigrer : quelqu’un en aura peut-être besoin plus tard."
+          },
+          {
+            "titel": "Skill : le réflexe feu tricolore",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : le dernier skill du chapitre relie tous les autres. Découvrir au tableau les trois étapes (tableau) et lire les trois situations l’une après l’autre (liste). Après chacune, chacun fait en silence le réflexe feu tricolore – estimer son chiffre, trouver sa couleur, choisir un skill dans sa valise – ; à trois, tout le monde montre son chiffre avec les doigts, deux voix disent leur skill, et chacun fait son skill pendant une demi-minute (2 min chaque fois). Pour finir, demander : quand est-ce que le réflexe feu tricolore pourrait vous servir cette semaine (2 min) ?",
+            "sagen": [
+              "Stop, couleur, skill. Ce n’est pas plus compliqué – mais il faut s’entraîner tant que tout est calme."
+            ],
+            "punkte": [
+              "Tu rentres à la maison, et ton frère a encore pris ton chargeur.",
+              "Au foot, à la récré, quelqu’un te fait exprès une faute, et ton genou saigne.",
+              "Il est 22 heures, demain il y a le devoir en classe de maths, et ta tête tourne en boucle."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Étape",
+                "Ce que tu fais"
+              ],
+              "zeilen": [
+                [
+                  "1 Stop",
+                  "Faire une pause : quel est mon chiffre en ce moment ?"
+                ],
+                [
+                  "2 Couleur",
+                  "Vert, orange ou rouge ?"
+                ],
+                [
+                  "3 Skill",
+                  "Prendre dans la valise le skill qui convient – dans le rouge, le corps ou les sens."
+                ]
+              ]
+            },
+            "tipp": "Intégrer désormais le réflexe feu tricolore au tour d’humeur : qui est dans l’orange prend un skill dans sa valise, et la classe le fait avec lui.",
+            "wennEsKippt": "Si un jeune dit : « Moi, là, je serais à 100, je cogne », ne pas faire la morale, mais le prendre au sérieux : qu’est-ce qui t’aide à 100, avant de frapper ? Si le temps manque, laisser tomber la troisième situation."
+          },
+          {
+            "titel": "Skills-Pass, mission et suite",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire au tableau la question du Skills-Pass : quel skill est tout en haut de ma valise – et quand est-ce que je le prends ? Chacun écrit sa phrase (2 min) et reçoit le tampon. Tour éclair avec le pouce sur le chapitre : est-ce que vous connaissez bien vos skills maintenant (1 min) ? Puis annoncer la mission de la semaine (elle est dans le cahier) et la suite, avec le nouveau chapitre (2 min). La valise, le plan et la carte ne sont pas ramassés.",
+            "sagen": [
+              "Une phrase pour le Skills-Pass : quel skill est tout en haut de votre valise ?"
+            ],
+            "tipp": "Faire rouvrir la valise aux séances 22 et 31 : de nouveaux skills y rejoindront le compartiment libre."
+          }
+        ],
+        "bruecke": "La semaine prochaine commence un nouveau chapitre : vous découvrez tout ce qui passe sans les mots, vous lisez le langage du corps et vous traduisez des émojis en phrases.",
+        "mission": "Cette semaine, garde ta carte d’urgence toujours sur toi – et fais une fois le réflexe feu tricolore : stop, couleur, skill. Quelle couleur avais-tu ?",
+        "hintergrund": "La valise à skills – souvent appelée trousse d’urgence dans la pratique – rassemble ce que la classe a testé depuis la séance 13 : une petite sélection personnelle, à portée de main quand la tension est forte. Elle s’inspire de l’entraînement aux skills de la DBT pour adolescents, qui garde sous la main des savoir-faire éprouvés pour les crises (Fleischhaker et al., 2011). Le plan feu tricolore relie les skills à des signaux d’alerte précoces, pour agir avant d’arriver au rouge. Ces liens « si… alors » sont nettement plus souvent mis en œuvre dans la situation que les résolutions générales (Gollwitzer, 1999). Du plan de sécurité viennent l’ordre – d’abord ses propres skills, puis des personnes, puis les numéros d’aide – et le principe de nommer des personnes joignables (Stanley & Brown, 2012). Le vert rejoint le bocal des besoins : qui a bien dormi, a mangé et se sent faire partie du groupe commence la journée moins tendu.",
+        "quellen": [
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
+        ],
+        "achtung": "Le plan feu tricolore et la carte d’urgence touchent aux crises : ni ramassés, ni lus, ni évalués. Si l’automutilation, la violence, la fugue ou la drogue figurent au rouge, si un jeune ne trouve aucune personne joignable ou laisse entendre qu’il ne veut plus vivre : ne pas approfondir devant la classe, lui parler en tête-à-tête après le cours, ne rien promettre, informer le SePAS le jour même, suivre le protocole de protection de l’école ; en cas de danger immédiat, 112. Le bocal reste anonyme.",
+        "differenzierung": {
+          "leichter": "Dans la valise, un skill par compartiment suffit ; dans le plan, le rouge et un adulte suffisent ; des mots-clés plutôt que des phrases. Les noms des skills sont sur l’affiche, à recopier ; qui écrit difficilement dicte à son binôme. Mimer les situations du réflexe feu tricolore.",
+          "schwerer": "Pour l’orange, formuler une phrase « si… alors » : si je remarque que…, alors… Faire un deuxième plan pour une situation précise, par exemple pour un devoir en classe ou une dispute dans le groupe de la classe."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec chiffre et couleur (5 min), bocal des besoins avec les deux questions (5 min), remplir la valise à skills (15 min), plan feu tricolore (15 min), réflexe feu tricolore avec une situation (5 min), Skills-Pass et mission de la semaine (5 min). Les jeunes fabriquent la carte d’urgence à la séance suivante, après le tour d’humeur ; le hit-parade est supprimé."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-skills-koffer",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "40 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Skills-Koffer",
+        "Ampelplan",
+        "Notfallkarte",
+        "Warnsignale",
+        "Förderfach"
+      ],
+      "bild": "icon:package",
+      "kurs": [
+        "ff7-e17",
+        "ff7-e22",
+        "ff7-e31"
+      ],
+      "de": {
+        "titel": "Mein Skills-Koffer und Ampelplan",
+        "untertitel": "Deine besten Skills an einem Ort – und ein Plan für Grün, Gelb und Rot",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Leg deinen Skills-Tester daneben. In den Koffer kommt nur, was dir wirklich hilft. Ein kleiner Koffer, den du benutzt, ist besser als ein großer, der im Schrank steht."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Pack deinen Skills-Koffer: Schreib in jedes Fach ein bis zwei Skills, die dir helfen.",
+            "hinweis": "Das letzte Fach bleibt frei: Dort kommt im Lauf des Jahres Neues dazu."
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "feld",
+                "label": "Körper",
+                "beispiel": "doppelter Seufzer, Kastenatmung",
+                "hoehe": 4
+              },
+              {
+                "art": "feld",
+                "label": "Sinne",
+                "beispiel": "kaltes Wasser an die Hände, Knetball",
+                "hoehe": 4
+              },
+              {
+                "art": "feld",
+                "label": "Kopf",
+                "beispiel": "rückwärts zählen, mein sicherer Ort",
+                "hoehe": 4
+              }
+            ],
+            "rechts": [
+              {
+                "art": "feld",
+                "label": "Menschen",
+                "beispiel": "meiner Schwester schreiben, mit Diogo reden",
+                "hoehe": 4
+              },
+              {
+                "art": "feld",
+                "label": "Das tut mir gut",
+                "beispiel": "Fußball, zeichnen, mit dem Hund raus",
+                "hoehe": 4
+              },
+              {
+                "art": "feld",
+                "label": "Kommt im Lauf des Jahres dazu",
+                "hoehe": 4
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Woran merkst du, dass du Richtung Gelb gehst? Kreuz deine Warnsignale an.",
+            "hinweis": "Denk an Körper, Gedanken und Verhalten. Deine Gefühls-Landkarte aus Einheit 11 hilft."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 3,
+            "frei": 3,
+            "items": [
+              "Herz klopft schneller",
+              "heißes Gesicht",
+              "Fäuste, harter Kiefer",
+              "Bauchweh",
+              "schneller Atem",
+              "Tunnelblick",
+              "Gedanken rasen",
+              "„Das ist so unfair.“",
+              "„Alle gegen mich.“",
+              "lauter werden",
+              "mich zurückziehen",
+              "Türen knallen"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Welcher Skill gehört wohin?",
+            "punkte": [
+              "Rot: Körper und Sinne – sie wirken, auch wenn Denken nicht mehr geht.",
+              "Gelb: Kopf-Skills, Musik, Bewegung, jemandem schreiben.",
+              "Grün: Tanks füllen, Skills üben, Dinge tun, die dir guttun."
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein Ampelplan: Was tust du bei welcher Farbe? Fang unten bei Grün an.",
+            "hinweis": "Bei Rot nur Skills, die ohne Nachdenken funktionieren – und eine erwachsene Person, zu der du gehst."
+          },
+          {
+            "art": "ampel",
+            "linien": 2,
+            "stufen": [
+              {
+                "titel": "Rot – Notfall (70–100)",
+                "text": "Meine Skills für Körper und Sinne – und zu wem ich gehe:"
+              },
+              {
+                "titel": "Gelb – es wird eng (30–70)",
+                "text": "Mein erstes Warnsignal – und die Skills, die ich dann nehme:"
+              },
+              {
+                "titel": "Grün – mir geht es gut (0–30)",
+                "text": "Das füllt meine Tanks:"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Deine Notfallkarte: vorne deine Skills für Rot, hinten deine Hilfe. Beide Felder als ein Stück ausschneiden, in der Mitte falten.",
+            "hinweis": "Du bekommst die Karte auf festem Papier. Trag sie auch hier ein – so hast du eine Kopie, falls sie verloren geht."
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "feld",
+                "zeichnen": true,
+                "hoehe": 6.5,
+                "label": "Vorne – wenn es über 70 geht\nErst runter, dann reden.",
+                "beispiel": "kaltes Wasser an die Hände, Treppe laufen, Kastenatmung"
+              }
+            ],
+            "rechts": [
+              {
+                "art": "feld",
+                "zeichnen": true,
+                "hoehe": 6.5,
+                "label": "Hinten – hier hole ich Hilfe\nKanner- a Jugendtelefon 116 111\nNotruf 112 · Polizei 113",
+                "beispiel": "meine Tante, der SePAS (Raum B 12), meine Trainerin"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Koffer, Plan und Karte gehören dir. Niemand sammelt sie ein. Bist du oft bei Rot, sprich mit dem SePAS oder einer Person, der du vertraust."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen bündeln ihre getesteten Skills in einem Skills-Koffer, legen im Ampelplan fest, was sie bei Grün, Gelb und Rot tun und zu wem sie gehen, und tragen eine Notfallkarte bei sich. Das Blatt kommt in den Einheiten 22 und 31 wieder.",
+          "ablauf": [
+            "Einheit 17, Schritt 4: den Koffer mit Skills-Tester und Skills-Pass packen (10 Min. allein, 4 Min. zu zweit); das letzte Fach bleibt frei.",
+            "Schritt 6: Warnsignale ankreuzen, dann den Ampelplan von Grün nach Rot füllen – bei Rot nur Körper und Sinne und eine erwachsene Person.",
+            "Schritt 7: die Notfallkarte auf der Kopie aus festem Papier ausfüllen, ausschneiden, falten; im Heft als Kopie eintragen.",
+            "Einheiten 22 und 31: Koffer und Plan wieder aufschlagen und das freie Fach füllen."
+          ],
+          "hintergrund": "Der Skills-Koffer folgt dem DBT-Skillstraining für Jugendliche, das erprobte Fertigkeiten für Krisen bereithält (Fleischhaker et al., 2011). Die Ampel knüpft die Skills an Warnsignale und Anspannung; aus dem Sicherheitsplan nach Stanley & Brown (2012) stammt die Reihenfolge von eigenen Skills über vertraute Menschen bis zu Hilfsnummern.",
+          "quellen": [
+            "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+            "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
+          ],
+          "achtung": "Nicht einsammeln, nicht vorlesen, nicht bewerten. Fehlt jede erreichbare Person oder stehen bei Rot Selbstverletzung, Gewalt oder Drogen: Gespräch unter vier Augen, noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln.",
+          "material": "Notfallkarte auf festem Papier, Scheren, Klebeband"
+        }
+      },
+      "fr": {
+        "titel": "Ma valise à skills et mon plan feu tricolore",
+        "untertitel": "Tes meilleurs skills au même endroit – et un plan pour le vert, l’orange et le rouge",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Pose ton testeur de skills à côté. Dans la valise, tu ne mets que ce qui t’aide vraiment. Une petite valise que tu utilises vaut mieux qu’une grande qui reste au placard."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Remplis ta valise à skills : écris dans chaque compartiment un ou deux skills qui t’aident.",
+            "hinweis": "Le dernier compartiment reste libre : d’autres skills s’y ajouteront pendant l’année."
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "feld",
+                "label": "Corps",
+                "beispiel": "le double soupir, la respiration carrée",
+                "hoehe": 4
+              },
+              {
+                "art": "feld",
+                "label": "Sens",
+                "beispiel": "eau froide sur les mains, balle anti-stress",
+                "hoehe": 4
+              },
+              {
+                "art": "feld",
+                "label": "Tête",
+                "beispiel": "compter à rebours, mon lieu sûr",
+                "hoehe": 4
+              }
+            ],
+            "rechts": [
+              {
+                "art": "feld",
+                "label": "Personnes",
+                "beispiel": "écrire à ma sœur, parler avec Diogo",
+                "hoehe": 4
+              },
+              {
+                "art": "feld",
+                "label": "Ce qui me fait du bien",
+                "beispiel": "le foot, dessiner, sortir le chien",
+                "hoehe": 4
+              },
+              {
+                "art": "feld",
+                "label": "À ajouter pendant l’année",
+                "hoehe": 4
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "À quoi remarques-tu que tu passes à l’orange ? Coche tes signaux d’alerte.",
+            "hinweis": "Pense au corps, aux pensées et au comportement. Ta carte corporelle des émotions de la séance 11 t’aide."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 3,
+            "frei": 3,
+            "items": [
+              "le cœur bat plus vite",
+              "visage chaud",
+              "poings serrés, mâchoire dure",
+              "mal au ventre",
+              "respiration rapide",
+              "vision en tunnel",
+              "les pensées s’emballent",
+              "« C’est trop injuste. »",
+              "« Tout le monde contre moi. »",
+              "parler plus fort",
+              "me renfermer",
+              "claquer les portes"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Quel skill pour quelle couleur ?",
+            "punkte": [
+              "Rouge : le corps et les sens – ils marchent même quand on ne peut plus réfléchir.",
+              "Orange : les skills mentaux, la musique, bouger, écrire à quelqu’un.",
+              "Vert : remplir ses réservoirs, s’entraîner aux skills, faire ce qui te fait du bien."
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ton plan feu tricolore : que fais-tu à chaque couleur ? Commence en bas, par le vert.",
+            "hinweis": "Dans le rouge, seulement des skills qui marchent sans réfléchir – et un adulte vers qui tu vas."
+          },
+          {
+            "art": "ampel",
+            "linien": 2,
+            "stufen": [
+              {
+                "titel": "Rouge – urgence (70–100)",
+                "text": "Mes skills du corps et des sens – et vers qui je vais :"
+              },
+              {
+                "titel": "Orange – ça devient serré (30–70)",
+                "text": "Mon premier signal d’alerte – et les skills que je prends alors :"
+              },
+              {
+                "titel": "Vert – je vais bien (0–30)",
+                "text": "Ce qui remplit mes réservoirs :"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ta carte d’urgence : devant, tes skills pour le rouge, derrière, ton aide. Découpe les deux cases d’un seul tenant et plie au milieu.",
+            "hinweis": "Tu reçois la carte sur du papier épais. Remplis-la aussi ici – tu auras une copie si tu la perds."
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "feld",
+                "zeichnen": true,
+                "hoehe": 6.5,
+                "label": "Devant – quand ça dépasse 70\nD’abord redescendre, ensuite parler.",
+                "beispiel": "eau froide sur les mains, monter les escaliers, respiration carrée"
+              }
+            ],
+            "rechts": [
+              {
+                "art": "feld",
+                "zeichnen": true,
+                "hoehe": 6.5,
+                "label": "Derrière – ici, je trouve de l’aide\nKanner- a Jugendtelefon 116 111\nUrgences 112 · Police 113",
+                "beispiel": "ma tante, le SePAS (salle B 12), mon entraîneuse"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "La valise, le plan et la carte t’appartiennent. Personne ne les ramasse. Si tu es souvent dans le rouge, parles-en au SePAS ou à une personne de confiance."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes rassemblent leurs skills testés dans une valise à skills, fixent dans le plan feu tricolore ce qu’ils font dans le vert, l’orange et le rouge et vers qui ils vont, et gardent sur eux une carte d’urgence. La fiche revient aux séances 22 et 31.",
+          "ablauf": [
+            "Séance 17, étape 4 : remplir la valise avec le testeur de skills et le Skills-Pass (10 min seul, 4 min à deux) ; le dernier compartiment reste libre.",
+            "Étape 6 : cocher les signaux d’alerte, puis remplir le plan du vert au rouge – dans le rouge, seulement le corps, les sens et un adulte.",
+            "Étape 7 : remplir la carte d’urgence sur la copie en papier épais, la découper, la plier ; la recopier dans le cahier.",
+            "Séances 22 et 31 : rouvrir la valise et le plan et remplir le compartiment libre."
+          ],
+          "hintergrund": "La valise à skills s’inspire de l’entraînement aux skills de la DBT pour adolescents, qui garde sous la main des savoir-faire éprouvés pour les crises (Fleischhaker et al., 2011). Le feu tricolore relie les skills aux signaux d’alerte et à la tension ; du plan de sécurité de Stanley & Brown (2012) vient l’ordre : ses propres skills, puis des personnes de confiance, puis les numéros d’aide.",
+          "quellen": [
+            "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+            "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264."
+          ],
+          "achtung": "Ne pas ramasser, ne pas lire à voix haute, ne pas évaluer. Si aucune personne joignable n’est notée ou si l’automutilation, la violence ou la drogue figurent au rouge : entretien en tête-à-tête, informer le SePAS le jour même, agir selon le protocole de protection de l’école.",
+          "material": "Carte d’urgence sur papier épais, ciseaux, ruban adhésif"
+        }
+      }
+    }
+  ]
+}

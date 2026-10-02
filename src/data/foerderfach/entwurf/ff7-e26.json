@@ -1,0 +1,1021 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e26",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-echt-oder-fake"
+      ],
+      "vorlagen": [
+        "ff7-echt-oder-fake-karten"
+      ],
+      "woerter": [
+        {
+          "de": "echt",
+          "fr": "vrai, authentique"
+        },
+        {
+          "de": "die Falschmeldung",
+          "fr": "la fausse info"
+        },
+        {
+          "de": "die Quelle",
+          "fr": "la source"
+        },
+        {
+          "de": "prüfen",
+          "fr": "vérifier"
+        },
+        {
+          "de": "die KI (künstliche Intelligenz)",
+          "fr": "l’IA (f.)"
+        },
+        {
+          "de": "teilen",
+          "fr": "partager"
+        }
+      ],
+      "de": {
+        "titel": "Echt oder fake?",
+        "kurz": "Im Kartenspiel merkt die Klasse, wie leicht man sich täuscht, prüft Beiträge mit einer Checkliste und zieht in einer Aufstellung Grenzen für KI – alles mit erfundenen Beispielen.",
+        "ziele": [
+          "sortieren erfundene Beiträge nach echt, fake und erst prüfen und begründen ihre Wahl mit einem Hinweis",
+          "prüfen Beiträge mit einer Checkliste und fragen zuerst nach der Quelle",
+          "unterscheiden, wofür KI hilft und wo sie gefährlich wird, und benennen die Grenze bei Bildern von anderen",
+          "nutzen die Teilen-Bremse, bevor sie etwas glauben oder teilen"
+        ],
+        "material": [
+          "Schülerheft für jede Person",
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Fünf Kartensätze in Umschlägen",
+          "Drei A4-Blätter: grün, gelb, rot",
+          "Klebeband für die Zonen",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Fünf Kartensätze kopieren, schneiden, in Umschläge stecken. Namen auf Karten und in Schritt 6 tauschen, wenn sie in der Klasse vorkommen.",
+          "Drei Zonen: grünes Blatt am Fenster, gelbes in der Mitte, rotes an der Tür.",
+          "Die KI-Regeln des Lycée für Hausaufgaben und Tests kennen.",
+          "Für die Bewegungspause zweimal drei Sätze über sich vorbereiten, je einer erfunden.",
+          "Tafel: Leitfrage, Tafelbild aus Schritt 7 (abgedeckt), Wortspeicher."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Gefühlsrad, Zahl und ein Netz-Gefühl"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Mission: vom perfekten zum falschen Bild"
+          },
+          {
+            "min": "15–33",
+            "phase": "uebung",
+            "titel": "Echt oder fake? Das Kartenspiel"
+          },
+          {
+            "min": "33–45",
+            "phase": "uebung",
+            "titel": "Prüfen wie die Profis: die Checkliste"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Zwei Wahrheiten, eine Lüge"
+          },
+          {
+            "min": "50–72",
+            "phase": "uebung",
+            "titel": "KI: hilfreich, Vorsicht oder Grenze?"
+          },
+          {
+            "min": "72–85",
+            "phase": "uebung",
+            "titel": "Meine KI-Ampel und Hilfe bei Fakes"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Die Teilen-Bremse"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Mission und Ausblick"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad, Zahl und ein Netz-Gefühl",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl (3 Min.). Dann eine Zusatzfrage per Handzeichen: Wer hat sich diese Woche über etwas im Netz geärgert, gewundert oder erschrocken? Zwei, drei Freiwillige nennen nur das Gefühlswort vom Rad, nicht den Inhalt (4 Min.). Die Wörter an den Rand der Tafel schreiben und festhalten: Ein starkes Gefühl beim Lesen ist ein Signal – heute erfahrt ihr, warum (3 Min.).",
+            "sagen": [
+              "Gefühl und Zahl auf drei. Ich fange an: neugierig, 20 – heute geht es um Fakes, und ich bin gespannt, ob ihr mich reinlegen könnt.",
+              "Nur das Gefühl, nicht worum es ging: Was hat euch diese Woche im Netz geärgert, gewundert oder erschreckt?"
+            ],
+            "tipp": "Nur das Gefühlswort zu nennen, schützt doppelt: Niemand erzählt Privates, und keiner beschreibt ein verstörendes Video vor der Klasse. Die Wörter an der Tafel kommen bei der Checkliste und beim Skill wieder.",
+            "wennEsKippt": "Beginnt jemand doch, ein Video oder einen Beitrag zu beschreiben, freundlich stoppen: Nur das Gefühl, bitte – den Rest gern nach der Stunde. Will jemand etwas auf dem Handy zeigen, nicht zulassen: Heute wird nichts aus dem Netz gezeigt. Wirkt jemand nach der Frage betroffen, während der Gruppenarbeit leise nachfragen."
+          },
+          {
+            "titel": "Mission: vom perfekten zum falschen Bild",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Dann zur Wochen-Mission: Wer hat seine kleine Änderung aus dem Handy-Plan oder die drei Atemzüge ausprobiert? Daumen hoch, Mitte oder runter; eine Stimme erzählt, was dabei auffiel – geschafft haben muss es niemand. Dann die Überleitung: Letzte Woche war das perfekte Bild echt, nur inszeniert. Heute geht es um Bilder und Nachrichten, die es so nie gegeben hat. Das Thema an die Tafel: Echt oder fake – woran erkenne ich das?",
+            "sagen": [
+              "Hat jemand seine kleine Änderung ausprobiert? Mich interessiert vor allem, was schwierig war.",
+              "Letzte Woche war das Foto echt, nur geschönt. Heute geht es um Bilder, die es nie gegeben hat."
+            ],
+            "tipp": "Erzählt jemand, dass der Plan nicht geklappt hat, das ausdrücklich würdigen und kurz fragen: Was wäre eine kleinere Stufe? So bleibt der Plan lebendig, ohne dass er kontrolliert wird."
+          },
+          {
+            "titel": "Echt oder fake? Das Kartenspiel",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Jede Tischgruppe bekommt einen Umschlag mit acht Beitragskarten und drei Kopfkarten: echt, fake, erst prüfen. Tischgruppen (8 Min.): Eine Person liest die Karten nacheinander laut vor; die Gruppe legt jede Karte unter eine Kopfkarte und einigt sich auf einen Grund. Klasse (8 Min.): Karte für Karte aufrufen; auf drei hält je Gruppe eine Person die Kopfkarte hoch, unter der die Karte liegt. Eine Gruppe nennt ihren Grund, dann kommt die Auflösung (Liste). Die Hinweise, die geholfen haben, an die Tafel schreiben: Quelle, Datum, andere berichten, Gefühl, Eile, seltsame Details. Klasse (2 Min.): Wo wart ihr euch sicher und lagt daneben?",
+            "sagen": [
+              "Ihr müsst nicht alles wissen. Wenn ihr es nicht sicher sagen könnt, ist ‚erst prüfen‘ eine gute Antwort.",
+              "Bei welcher Karte wart ihr euch ganz sicher – und lagt trotzdem daneben?"
+            ],
+            "punkte": [
+              "Karte 1 · Der Hai im Bahnhof: fake – neues Konto, niemand sonst berichtet, „Teilt das“. Solche Bilder sind zusammengesetzt oder mit KI gemacht.",
+              "Karte 2 · Schnee im April: echt – seltsam, aber gut belegt: offizielle Seite der Gemeinde, genaues Datum, das Radio meldet dasselbe.",
+              "Karte 3 · Das Handy-Geschenk: fake – die Lippen passen nicht zu den Wörtern, der Link ist unbekannt, und man soll seine Nummer eingeben. Ein mit KI gefälschtes Video, um an Daten zu kommen.",
+              "Karte 4 · Die Sprachnachricht: fake – Stimmen lassen sich mit KI nachmachen. Nie einen Code weitergeben; die Schwester auf der alten Nummer anrufen oder persönlich fragen.",
+              "Karte 5 · Der Screenshot: fake – einen Screenshot kann jeder bauen. Auf der Seite des Lycée nachsehen oder den Régent fragen.",
+              "Karte 6 · Die Schokoladen-Studie: erst prüfen, vermutlich fake – keine Namen, keine Studie, eine übertriebene Überschrift.",
+              "Karte 7 · Die Unwetterwarnung: echt – offizielle App, genaue Uhrzeit, dieselbe Warnung auf der Internetseite.",
+              "Karte 8 · Die Klavier-Katze: nicht sicher zu sagen – und das ist in Ordnung. Prüfen lohnt sich, bevor man etwas glaubt, teilt oder Daten eingibt."
+            ],
+            "tipp": "Sich sicher zu irren, ist der eigentliche Lernmoment: Er bereitet die Botschaft der Checkliste vor. Wird es knapp, legen Gruppen, die nicht fertig werden, den Rest unter „erst prüfen“, und in der Klasse werden nur die Karten besprochen, bei denen die Gruppen uneinig sind.",
+            "wennEsKippt": "Wird nur gestritten, wer recht hat, oder hört niemand auf die Auflösung, keine Punkte vergeben und nur noch fragen: Woran habt ihr das erkannt? Liest in einer Gruppe niemand vor, die erste Karte dort selbst vorlesen und die Rolle dann weitergeben. Sagt jemand „Das ist doch alles fake“, umdrehen: Zwei Karten sind echt – wer prüfen kann, kann auch wieder vertrauen.",
+            "blatt": "ff7-echt-oder-fake-karten"
+          },
+          {
+            "titel": "Prüfen wie die Profis: die Checkliste",
+            "dauer": 12,
+            "phase": "uebung",
+            "text": "Klasse (4 Min.): Die Hinweise an der Tafel mit der Checkliste im Heft vergleichen – fast alles, was die Gruppen gefunden haben, steht dort als Frage. Dann das Quer-Lesen erklären: Profis bleiben nicht im Beitrag, sondern suchen neu und schauen, was andere über die Quelle sagen. Zu zweit (6 Min.): den Beitrag „Gesehen im Klassenchat“ lesen, die Checkliste ausfüllen (Aufgabe 1) und das Urteil darunter schreiben: Was mache ich mit dem Beitrag? Klasse (2 Min.): Welches Kreuz war am wichtigsten? Zwei Stimmen.",
+            "sagen": [
+              "Bevor ihr auf Hände oder Schatten schaut: Wer hat das eigentlich gepostet?",
+              "Quer lesen heißt: raus aus dem Beitrag, rein in eine neue Suche. Was sagen andere über diese Quelle?"
+            ],
+            "tipp": "Die Gefühlswörter vom Check-in jetzt wieder aufgreifen: Beiträge, die wütend oder ängstlich machen, sind oft genau darauf gebaut – und werden deshalb besonders schnell geteilt.",
+            "wennEsKippt": "Kommt die Haltung „Man kann eh nichts mehr glauben“, sie ernst nehmen und umdrehen: Nicht alles ist fake. Die Unwetterwarnung und der Schnee im April waren echt – wer weiß, wie man prüft, kann echten Quellen wieder vertrauen. Brauchen die Paare zu lange, die Checkliste gemeinsam laut durchgehen.",
+            "blatt": "ff7-echt-oder-fake"
+          },
+          {
+            "titel": "Bewegungspause: Zwei Wahrheiten, eine Lüge",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen auf. Drei Ecken des Raums bekommen die Nummern 1, 2 und 3. Die Lehrkraft sagt drei kurze Sätze über sich selbst; einer davon ist erfunden (Beispiele in der Liste, eigene nehmen). Alle gehen in die Ecke des Satzes, den sie für erfunden halten; wer nicht laufen mag, zeigt die Nummer mit den Fingern. Dann kommt die Auflösung. Zweite Runde mit drei neuen Sätzen. Zum Schluss kurz fragen: Woran habt ihr versucht, es zu erkennen – Gesicht, Stimme, Bauchgefühl? Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "punkte": [
+              "Beispiel: Ich habe schon einmal im Zelt neben einem Gletscher geschlafen.",
+              "Beispiel: Als Kind habe ich ein Jahr lang Akkordeon gespielt.",
+              "Beispiel: Ich habe einmal ein Flugzeug verpasst, weil ich am Gate eingeschlafen bin."
+            ],
+            "tipp": "Bei einem Menschen helfen Gesicht und Stimme beim Raten – bei einem Bild im Netz fehlt sogar das. Wer mag, sagt in einer dritten Runde selbst drei Sätze und flüstert sie vorher der Lehrkraft zu, damit nichts Verletzendes dabei ist."
+          },
+          {
+            "titel": "KI: hilfreich, Vorsicht oder Grenze?",
+            "dauer": 22,
+            "phase": "uebung",
+            "text": "Klasse (3 Min.): Per Handzeichen fragen, wer schon einmal eine KI benutzt hat – zum Chatten, Übersetzen, für Bilder. Kurz erklären: Eine KI ist ein Programm, das aus sehr vielen Daten gelernt hat und Texte, Bilder, Stimmen und Videos erzeugt. Sie klingt sicher, auch wenn sie sich irrt. Ein Deepfake ist ein gefälschtes Video, Bild oder eine gefälschte Stimme einer echten Person. Aufstellung (15 Min.): Sieben Situationen vorlesen (Liste); alle gehen in die Zone, die passt – grün: hilft, gelb: Vorsicht, rot: Grenze überschritten. Je zwei Personen aus verschiedenen Zonen begründen, dann in einem Satz ergänzen (Klammer). Klasse (4 Min.): Das Tafelbild aufdecken (Schritt 7) und mit den Beispielen der Klasse ergänzen.",
+            "sagen": [
+              "Grün heißt: Da hilft KI. Gelb: Vorsicht, erst nachdenken. Rot: Da ist eine Grenze überschritten.",
+              "Wo genau liegt für euch die Grenze – und warum?"
+            ],
+            "punkte": [
+              "Tiago lässt sich von einer KI Brüche erklären, bis er sie versteht. (grün – und trotzdem im Heft nachprüfen: KI kann sich irren.)",
+              "Mila lässt eine KI ihren Aufsatz für Deutsch schreiben und gibt ihn als ihren eigenen ab. (gelb bis rot – sie lernt nichts, und die Schule hat dazu Regeln.)",
+              "Elias übersetzt mit einer KI eine Nachricht an seine Oma ins Portugiesische. (grün)",
+              "Noah macht mit einer App aus einem Klassenfoto ein Bild, auf dem Ben als Clown zu sehen ist, und schickt es in die Gruppe. (rot – ein Bild von jemandem ohne Erlaubnis zu verändern und zu teilen, kann Mobbing sein und strafbar.)",
+              "Amira lädt ein Foto ihrer Freundin in eine KI-App, um zu sehen, wie sie mit 80 aussähe – ohne zu fragen. (gelb bis rot – ein fremdes Foto ohne Erlaubnis; die App behält es vielleicht.)",
+              "Yusuf fühlt sich einsam und erzählt jeden Abend einem Chatbot, wie es ihm geht. (gelb – das kann kurz helfen, ersetzt aber keinen Menschen, und Privates bleibt vielleicht gespeichert. Reden hilft: Freunde, Familie, SePAS, 116 111.)",
+              "Léa fragt eine KI, wann ihr nächster Test ist, und bekommt sofort ein Datum. (gelb – die KI kann das nicht wissen, klingt aber sicher. Im Hausaufgabenheft nachsehen.)"
+            ],
+            "tipp": "Die Regeln der Schule zu KI erst am Ende nennen: Hat die Klasse vorher eigene Grenzen gezogen, werden die Regeln eher verstanden als nur hingenommen. Namen in den Situationen vorher tauschen, wenn jemand in der Klasse so heißt.",
+            "wennEsKippt": "Läuft die Aufstellung aus dem Ruder, Tempo herausnehmen: erst still bis drei zählen, dann gehen; wer nicht laufen mag, zeigt vom Platz aus mit den Fingern (1 grün, 2 gelb, 3 rot). Lacht die Klasse bei Situation 4 über eine anwesende Person, sofort stoppen: Genau das ist die Grenze. Sagt jemand bei Situation 6, das mache er oder sie auch, das ohne Bewertung stehen lassen und nach der Stunde nachfragen. Wird ein Fake über eine reale Person aus der Schule erwähnt: nichts zeigen lassen, nicht vertiefen, nach dem Schutzkonzept der Schule handeln."
+          },
+          {
+            "titel": "Meine KI-Ampel und Hilfe bei Fakes",
+            "dauer": 13,
+            "phase": "uebung",
+            "text": "Allein (5 Min.): Aufgabe 2 im Heft – die eigene KI-Ampel: zu jeder Farbe ein Beispiel oder eine Regel; das Tafelbild hilft (Tabelle). Klasse (6 Min.): Fragen: Was tut ihr, wenn in eurer Klassengruppe ein gefälschtes oder peinliches Bild von jemandem auftaucht? Antworten sammeln und mit den vier Schritten ergänzen (Liste); dazu den Kasten „Klare Grenze“ im Heft lesen. Zum Schluss auf den Hilfe-Kasten im Heft zeigen: Die BEE SECURE Helpline (8002 1234) hilft bei Problemen im Netz, kostenlos und vertraulich (2 Min.).",
+            "sagen": [
+              "Wer weiterleitet, macht mit – auch wenn er es nur lustig fand. Wer Hilfe holt, damit es aufhört, petzt nicht."
+            ],
+            "punkte": [
+              "Nicht weiterleiten, nicht liken, nicht kommentieren, nicht speichern.",
+              "Der Person zeigen: Ich bin auf deiner Seite – ohne das Bild herumzuzeigen.",
+              "Einer erwachsenen Person Bescheid sagen: Régent, SePAS, Eltern. Das ist kein Petzen.",
+              "Den Beitrag zusammen mit einer erwachsenen Person melden."
+            ],
+            "tabelle": {
+              "spalten": [
+                "KI hilft, wenn …",
+                "Vorsicht oder Grenze, wenn …"
+              ],
+              "zeilen": [
+                [
+                  "ich mir etwas erklären lasse – und es nachprüfe",
+                  "sie sicher klingt: Auch dann kann sie sich irren"
+                ],
+                [
+                  "ich übersetze oder Ideen sammle",
+                  "ich private Fotos oder Geheimnisse eingebe"
+                ],
+                [
+                  "ich damit übe und Fragen stelle",
+                  "ich Arbeiten abgebe, ohne selbst zu lernen"
+                ],
+                [
+                  "ich meinen eigenen Text überprüfen lasse",
+                  "Bilder, Videos oder Stimmen von anderen ohne Erlaubnis gefälscht werden: Grenze"
+                ]
+              ]
+            },
+            "tipp": "Hier knüpft die Stunde an Mobbing und Zivilcourage an: Zuschauen ist im Netz nicht neutral, weil jedes Weiterleiten das Bild größer macht.",
+            "wennEsKippt": "Will jemand von einem echten Fall erzählen, nicht vertiefen: Danke, dass du das ansprichst – wir reden gleich nach der Stunde. Dann noch am selben Tag den SePAS informieren. Bleibt eine Ampel leer, mit einer Situation aus der Aufstellung beginnen lassen.",
+            "blatt": "ff7-echt-oder-fake"
+          },
+          {
+            "titel": "Skill: Die Teilen-Bremse",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: Letzte Woche kamen drei Atemzüge vor dem Griff zum Handy, heute kommt eine Frage dazu. Eine der erfundenen Schlagzeilen mit viel Empörung vorlesen und erst danach sagen, dass sie erfunden ist. Alle schätzen still ihre Anspannung und zeigen auf drei die Finger. Dann die Teilen-Bremse gemeinsam langsam üben (Liste) und die Zahl neu schätzen. Zweiter Durchgang mit der zweiten Schlagzeile, jede Person für sich. Zwei, drei Rückmeldungen: Was hat sich an der Zahl verändert, wann könnte die Bremse helfen?",
+            "sagen": [
+              "Eilmeldung: Ab Montag Handyverbot in allen Bussen – wer erwischt wird, zahlt 300 Euro.",
+              "Neue Regel ab nächster Woche: Alle Pausen werden gestrichen, damit mehr Zeit für Tests bleibt.",
+              "Wer wütend ist, teilt schneller. Genau darauf sind viele Fakes gebaut."
+            ],
+            "punkte": [
+              "Stopp: Hände weg vom Handy – flach auf den Tisch.",
+              "Drei ruhige Atemzüge, das Ausatmen länger. Die Zahl neu schätzen.",
+              "Fragen: Wer sagt das? Dann entscheiden: teilen, liegen lassen oder nachfragen."
+            ],
+            "tipp": "Der Skill verbindet die Anspannungsskala mit der Medienwelt: dieselbe Zahl, nur ein anderer Auslöser. Die Schlagzeilen ruhig mit Drama vorlesen – je echter die Empörung, desto deutlicher spürt die Klasse die Bremse.",
+            "wennEsKippt": "Glauben einige die Schlagzeile und regen sich laut auf, ist das kein Fehler, sondern der Beweis: So schnell geht es. Sofort auflösen und genau damit weiterarbeiten. Wird über die Übung gelacht, die zweite Runde still und jede Person für sich machen lassen; niemand muss die Augen schließen."
+          },
+          {
+            "titel": "Skills-Pass, Mission und Ausblick",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Skills-Pass (3 Min.): die Leitfrage an die Tafel schreiben – Welche Frage stelle ich, bevor ich etwas glaube oder teile? Danach gibt es den Stempel. Daumen-Blitzlicht (30 Sek.): Wie sicher fühlt ihr euch jetzt beim Prüfen? Zum Schluss die Wochen-Mission im Heft ansagen und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "sagen": [
+              "Diese Woche prüft ihr eine Nachricht oder ein Gerücht, bevor ihr es glaubt oder weitersagt – im Netz oder auf dem Schulhof. Fragt euch: Woher kann die Person das wissen?"
+            ],
+            "tipp": "Gerüchte auf dem Schulhof funktionieren wie Fakes im Netz: Wer fragt, woher jemand etwas weiß, bremst beides. Deshalb geht die Mission auch ohne Handy."
+          }
+        ],
+        "bruecke": "Heute habt ihr Beiträge geprüft: Stimmt das? Nächste Woche prüft ihr etwas, das noch näher ist – die Sätze, die ihr euch selbst im Kopf sagt.",
+        "mission": "Prüf diese Woche eine Nachricht oder ein Gerücht, bevor du es glaubst oder weitersagst. Frag dich: Wer sagt das – und woher kann die Person das wissen?",
+        "hintergrund": "Mit jeder neuen Generation von Bildgeneratoren verschwinden typische Fehler wie verformte Hände oder verwaschene Schrift; verlässlicher als der Blick auf Details ist die Frage nach der Quelle. Professionelle Faktenprüfer verlassen eine unbekannte Seite schnell und sehen nach, wer dahintersteht; so urteilten sie schneller und häufiger richtig als Historiker und Studierende, die die Seite selbst genau lasen (Wineburg & McGrew, 2019). Wer die Tricks von Falschmeldungen kennt – Empörung, falsche Experten, Zeitdruck –, fällt seltener darauf herein: Ein Spiel, in dem man selbst Falschmeldungen baut, verringerte die Anfälligkeit messbar (Roozenbeek & van der Linden, 2019). Sprachmodelle erzeugen zudem Inhalte, die plausibel klingen, aber nicht stimmen (Ji et al., 2023). Weil viele Fälschungen auf Wut und Angst setzen, verbindet die Stunde Medienkompetenz mit einem Skill: erst bremsen, dann prüfen.",
+        "quellen": [
+          "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+          "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+          "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38."
+        ],
+        "achtung": "Keine Fälschungen echter Personen erstellen oder zeigen, auch nicht zur Demonstration; alle Beispiele sind erfunden, Namen aus der Klasse vorher tauschen. Erzählt jemand von gefälschten, peinlichen oder intimen Bildern einer realen Person, nichts zeigen, weiterleiten oder speichern lassen und nicht vor der Klasse vertiefen: nach der Stunde unter vier Augen sprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Bei Erpressung mit Bildern sofort Hilfe holen. Beratung: BEE SECURE Helpline 8002 1234.",
+        "differenzierung": {
+          "leichter": "Beim Kartenspiel liest eine Person, die gut liest, die Karten vor; die anderen entscheiden mit. Die Checkliste zu zweit laut durchgehen; in der KI-Ampel reicht ein Stichwort je Farbe. Wer die Unterrichtssprache noch lernt, arbeitet mit den Kopfkarten und den farbigen Zonen – zeigen geht vor sprechen.",
+          "schwerer": "Eine harmlose, erfundene Falschmeldung zu einem Schulthema bauen, ohne echte Personen und mit mindestens drei Tricks aus der Checkliste, und von einer anderen Gruppe prüfen lassen. Oder bei der Aufstellung moderieren und nachfragen, wo genau die Grenze liegt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt und Zahl (5 Min.), Kartenspiel mit vier Karten je Gruppe und kurzer Auflösung (15 Min.), Checkliste am Beitrag aus dem Klassenchat (10 Min.), KI-Aufstellung mit vier Situationen (10 Min.), Teilen-Bremse (5 Min.), Skills-Pass und Mission (5 Min.). Die KI-Ampel im Heft wird in der nächsten Stunde nachgeholt."
+      },
+      "fr": {
+        "titel": "Vrai ou faux ?",
+        "kurz": "Avec un jeu de cartes, la classe découvre à quel point on se trompe vite, vérifie des publications avec une liste et trace des limites pour l’IA en se déplaçant – avec des exemples inventés.",
+        "ziele": [
+          "classent des publications inventées en vrai, faux et à vérifier et justifient leur choix par un indice",
+          "vérifient une publication avec une liste en partant de la source",
+          "distinguent à quoi l’IA est utile et où elle devient dangereuse, et nomment la limite pour les images des autres",
+          "utilisent le frein à partage avant de croire ou de partager"
+        ],
+        "material": [
+          "Un cahier de l’élève par jeune",
+          "Roue des émotions, 20 gommettes",
+          "Cinq jeux de cartes en enveloppes",
+          "Feuilles A4 verte, orange, rouge",
+          "Ruban adhésif pour les zones",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Cinq jeux de cartes à photocopier, découper et mettre sous enveloppe. Changer les prénoms portés par des jeunes de la classe (cartes, étape 6).",
+          "Trois zones : feuille verte côté fenêtre, orange au milieu, rouge côté porte.",
+          "Connaître les règles du lycée sur l’IA pour les devoirs.",
+          "Pour la pause active, préparer deux fois trois phrases sur soi, dont une inventée.",
+          "Au tableau : question clé, tableau de l’étape 7 (caché), mots-clés."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : roue, chiffre et émotion en ligne"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Mission : de l’image parfaite à l’image fausse"
+          },
+          {
+            "min": "15–33",
+            "phase": "uebung",
+            "titel": "Vrai ou faux ? Le jeu de cartes"
+          },
+          {
+            "min": "33–45",
+            "phase": "uebung",
+            "titel": "Vérifier comme les pros : la liste"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : deux vérités, un mensonge"
+          },
+          {
+            "min": "50–72",
+            "phase": "uebung",
+            "titel": "L’IA : utile, prudence ou limite ?"
+          },
+          {
+            "min": "72–85",
+            "phase": "uebung",
+            "titel": "Feu tricolore de l’IA – que faire ?"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : le frein à partage"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, mission et suite"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : roue, chiffre et émotion en ligne",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. Une fois tout le monde assis, à trois, chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre (3 min). Puis une question en plus, à main levée : qui a été agacé, surpris ou effrayé cette semaine par quelque chose en ligne ? Deux ou trois volontaires disent seulement le mot de la roue, pas le contenu (4 min). Noter les mots en marge du tableau et retenir : une émotion forte en lisant, c’est un signal – aujourd’hui, vous allez voir pourquoi (3 min).",
+            "sagen": [
+              "Émotion et chiffre, à trois. Je commence : plutôt de bonne humeur, 20 – aujourd’hui, on parle de fakes, et je me demande si vous allez réussir à me piéger.",
+              "Juste l’émotion, pas le sujet : qu’est-ce qui vous a agacés, surpris ou effrayés en ligne cette semaine ?"
+            ],
+            "tipp": "Ne dire que le mot de l’émotion protège doublement : personne ne raconte quelque chose de privé, et personne ne décrit une vidéo choquante devant la classe. Les mots au tableau reviendront avec la liste et le skill.",
+            "wennEsKippt": "Si quelqu’un commence quand même à décrire une vidéo ou une publication, l’arrêter gentiment : juste l’émotion, s’il te plaît – le reste volontiers après le cours. Si un jeune veut montrer quelque chose sur son portable, ne pas l’accepter : aujourd’hui, on ne montre rien d’Internet. Si un jeune semble touché par la question, lui demander discrètement pendant le travail en groupe."
+          },
+          {
+            "titel": "Mission : de l’image parfaite à l’image fausse",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit la phrase de son Skills-Pass. Puis la mission de la semaine : qui a essayé le petit changement de son plan portable ou les trois respirations ? Pouce en haut, au milieu ou en bas ; une voix raconte ce qu’elle a remarqué – personne n’est obligé de l’avoir réussie. Ensuite, faire le lien : la semaine dernière, l’image parfaite était vraie, juste mise en scène. Aujourd’hui, on parle d’images et de messages qui n’ont jamais existé. Écrire le thème au tableau : vrai ou faux – comment je le reconnais ?",
+            "sagen": [
+              "Quelqu’un a essayé son petit changement ? Ce qui m’intéresse surtout, c’est ce qui a été difficile.",
+              "La semaine dernière, la photo était vraie, juste embellie. Aujourd’hui, on parle d’images qui n’ont jamais existé."
+            ],
+            "tipp": "Si un jeune raconte que son plan n’a pas marché, saluer clairement sa franchise et demander brièvement : quelle serait une marche plus petite ? Le plan reste ainsi vivant, sans être contrôlé."
+          },
+          {
+            "titel": "Vrai ou faux ? Le jeu de cartes",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Chaque îlot reçoit une enveloppe avec huit cartes publication et trois cartes titre : vrai, faux, à vérifier. En îlots (8 min) : un jeune lit les cartes à voix haute l’une après l’autre ; le groupe pose chaque carte sous une carte titre et se met d’accord sur une raison. En classe entière (8 min) : appeler les cartes une à une ; à trois, dans chaque îlot, quelqu’un lève la carte titre sous laquelle se trouve la carte. Un îlot donne sa raison, puis vient la solution (liste). Noter au tableau les indices qui ont aidé : source, date, d’autres en parlent, émotion, urgence, détails bizarres. En classe entière (2 min) : où étiez-vous sûrs de vous tout en vous trompant ?",
+            "sagen": [
+              "Vous n’êtes pas obligés de tout savoir. Si vous ne pouvez pas le dire avec certitude, “à vérifier” est une bonne réponse.",
+              "Sur quelle carte étiez-vous complètement sûrs de vous – et vous vous êtes quand même trompés ?"
+            ],
+            "punkte": [
+              "Carte 1 · Le requin dans la gare : faux – compte récent, personne d’autre n’en parle, « Partagez ». Ce genre d’images est un montage ou une création d’IA.",
+              "Carte 2 · De la neige en avril : vrai – étrange, mais bien établi : page officielle de la commune, date précise, la radio annonce la même chose.",
+              "Carte 3 · Le portable offert : faux – les lèvres ne collent pas aux mots, le lien est inconnu et il faut entrer son numéro : une vidéo truquée avec l’IA pour récupérer des données.",
+              "Carte 4 · Le message vocal : faux – une voix peut être imitée avec l’IA. Ne jamais transmettre un code ; appeler la sœur sur son ancien numéro ou lui demander en face.",
+              "Carte 5 · La capture d’écran : faux – n’importe qui peut fabriquer une capture d’écran. Vérifier sur le site du lycée ou demander au régent.",
+              "Carte 6 · L’étude sur le chocolat : à vérifier, probablement faux – pas de noms, pas d’étude, un titre exagéré.",
+              "Carte 7 · L’alerte météo : vrai – appli officielle, heure précise, même alerte sur le site internet.",
+              "Carte 8 · Le chat pianiste : impossible de le dire avec certitude – et ce n’est pas grave. Vérifier vaut la peine avant de croire, de partager ou d’entrer des données."
+            ],
+            "tipp": "Se tromper en étant sûr de soi, c’est le vrai moment d’apprentissage : il prépare le message de la liste. Si le temps manque, les îlots qui n’ont pas fini posent le reste sous « à vérifier », et on ne corrige en classe que les cartes sur lesquelles les îlots ne sont pas d’accord.",
+            "wennEsKippt": "Si tout le monde se bat pour avoir raison ou si personne n’écoute la solution, ne pas compter de points et demander seulement : à quoi l’avez-vous reconnu ? Si personne ne lit dans un îlot, y lire soi-même la première carte, puis passer le relais. Si quelqu’un dit « De toute façon, tout est faux », retourner l’idée : deux cartes sont vraies – qui sait vérifier peut aussi refaire confiance.",
+            "blatt": "ff7-echt-oder-fake-karten"
+          },
+          {
+            "titel": "Vérifier comme les pros : la liste",
+            "dauer": 12,
+            "phase": "uebung",
+            "text": "En classe entière (4 min) : comparer les indices du tableau avec la liste du cahier – presque tout ce que les îlots ont trouvé y figure sous forme de question. Puis expliquer la lecture latérale : les pros ne restent pas dans la publication, ils font une nouvelle recherche et regardent ce que les autres disent de la source. À deux (6 min) : lire la publication « Vu dans le groupe de classe », remplir la liste (exercice 1) et écrire son avis en dessous : qu’est-ce que je fais de cette publication ? En classe entière (2 min) : quelle croix était la plus importante ? Deux voix.",
+            "sagen": [
+              "Avant de regarder les mains ou les ombres : qui a publié ça ?",
+              "La lecture latérale, c’est sortir de la publication et lancer une nouvelle recherche. Que disent les autres de cette source ?"
+            ],
+            "tipp": "Reprendre maintenant les mots d’émotion du tour d’humeur : les publications qui mettent en colère ou font peur sont souvent faites pour ça – et c’est pour ça qu’elles sont partagées si vite.",
+            "wennEsKippt": "Si la classe lance « On ne peut plus rien croire », le prendre au sérieux et retourner l’idée : tout n’est pas faux. L’alerte météo et la neige en avril étaient vraies – qui sait vérifier peut de nouveau faire confiance aux vraies sources. Si les binômes mettent trop de temps, parcourir la liste ensemble à voix haute.",
+            "blatt": "ff7-echt-oder-fake"
+          },
+          {
+            "titel": "Pause active : deux vérités, un mensonge",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève. Trois coins de la salle reçoivent les numéros 1, 2 et 3. L’enseignant·e dit trois courtes phrases sur soi ; l’une est inventée (exemples dans la liste, à remplacer par les siennes). Chacun va dans le coin de la phrase qu’il pense inventée ; qui ne veut pas se déplacer montre le numéro avec les doigts. Puis vient la réponse. Deuxième tour avec trois nouvelles phrases. Pour finir, demander brièvement : à quoi avez-vous essayé de le reconnaître – le visage, la voix, l’intuition ? Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "punkte": [
+              "Exemple : J’ai déjà dormi sous une tente à côté d’un glacier.",
+              "Exemple : Enfant, j’ai joué de l’accordéon pendant un an.",
+              "Exemple : Un jour, j’ai raté un avion parce que je m’étais endormi à la porte d’embarquement."
+            ],
+            "tipp": "Face à une personne, le visage et la voix aident à deviner – face à une image en ligne, même ça manque. Qui veut peut dire trois phrases lors d’un troisième tour, en les chuchotant d’abord à l’enseignant·e pour que rien de blessant n’y figure."
+          },
+          {
+            "titel": "L’IA : utile, prudence ou limite ?",
+            "dauer": 22,
+            "phase": "uebung",
+            "text": "En classe entière (3 min) : demander à main levée qui a déjà utilisé une IA – pour discuter, traduire, créer des images. Expliquer brièvement : une IA est un programme qui a appris à partir d’énormément de données et qui produit des textes, des images, des voix et des vidéos. Elle a l’air sûre d’elle, même quand elle se trompe. Un deepfake est une vidéo, une image ou une voix truquée d’une personne réelle. Dans la salle (15 min) : lire sept situations (liste) ; chacun va dans la zone qui convient – vert : ça aide, orange : prudence, rouge : limite franchie. Deux jeunes de zones différentes justifient, puis compléter en une phrase (parenthèse). En classe entière (4 min) : découvrir le tableau (étape 7) et le compléter avec les exemples de la classe.",
+            "sagen": [
+              "Vert : là, l’IA aide. Orange : prudence, d’abord réfléchir. Rouge : là, une limite est franchie.",
+              "Où passe exactement la limite pour vous – et pourquoi ?"
+            ],
+            "punkte": [
+              "Tiago se fait expliquer les fractions par une IA jusqu’à ce qu’il comprenne. (vert – et vérifier quand même dans le cahier : l’IA peut se tromper.)",
+              "Mila fait écrire sa rédaction de français par une IA et la rend comme si c’était la sienne. (orange à rouge – elle n’apprend rien, et l’école a des règles là-dessus.)",
+              "Elias traduit avec une IA un message en portugais pour sa grand-mère. (vert)",
+              "Avec une appli, Noah transforme une photo de classe pour que Ben y apparaisse en clown, puis l’envoie dans le groupe. (rouge – modifier et partager l’image de quelqu’un sans son accord peut être du harcèlement et puni par la loi.)",
+              "Amira charge une photo de son amie dans une appli d’IA pour voir à quoi elle ressemblerait à 80 ans – sans lui demander. (orange à rouge – la photo de quelqu’un d’autre sans son accord ; l’appli la garde peut-être.)",
+              "Yusuf se sent seul et raconte chaque soir à un chatbot comment il va. (orange – ça peut aider un moment, mais ça ne remplace pas une personne, et ce qu’on confie reste peut-être enregistré. Parler aide : amis, famille, SePAS, 116 111.)",
+              "Léa demande à une IA la date de son prochain devoir en classe et obtient tout de suite une date. (orange – l’IA ne peut pas le savoir, mais elle a l’air sûre d’elle. Regarder dans son journal de classe.)"
+            ],
+            "tipp": "Ne donner les règles de l’école sur l’IA qu’à la fin : si la classe a d’abord tracé ses propres limites, les règles sont mieux comprises que simplement subies. Changer avant le cours les prénoms des situations si un jeune de la classe les porte.",
+            "wennEsKippt": "Si les déplacements dégénèrent, ralentir : compter d’abord en silence jusqu’à trois, puis bouger ; qui ne veut pas se déplacer montre depuis sa place avec les doigts (1 vert, 2 orange, 3 rouge). Si la classe rit d’un élève présent à la situation 4, arrêter tout de suite : c’est exactement ça, la limite. Si un jeune dit à la situation 6 qu’il fait pareil, l’accueillir sans jugement et lui en reparler après le cours. Si un fake sur une personne réelle de l’école est évoqué : ne rien laisser montrer, ne pas approfondir, agir selon le protocole de protection de l’école."
+          },
+          {
+            "titel": "Feu tricolore de l’IA – que faire ?",
+            "dauer": 13,
+            "phase": "uebung",
+            "text": "Seul (5 min) : exercice 2 du cahier – son propre feu tricolore de l’IA : pour chaque couleur, un exemple ou une règle ; le tableau aide (grille). En classe entière (6 min) : demander : que faites-vous si une image truquée ou gênante de quelqu’un apparaît dans votre groupe de classe ? Rassembler les réponses et compléter avec les quatre étapes (liste) ; lire ensemble l’encadré « Limite claire » du cahier. Pour finir, montrer l’encadré d’aide du cahier : la BEE SECURE Helpline (8002 1234) aide en cas de problème en ligne, gratuitement et en toute confidentialité (2 min).",
+            "sagen": [
+              "Celui qui transfère participe – même s’il trouvait juste ça drôle. Aller chercher de l’aide pour que ça s’arrête, ce n’est pas cafter."
+            ],
+            "punkte": [
+              "Ne pas transférer, ne pas liker, ne pas commenter, ne pas enregistrer.",
+              "Montrer à la personne : je suis de ton côté – sans faire circuler l’image.",
+              "Prévenir un adulte : régent, SePAS, parents. Ce n’est pas cafter.",
+              "Signaler la publication avec un adulte."
+            ],
+            "tabelle": {
+              "spalten": [
+                "L’IA aide quand…",
+                "Prudence ou limite quand…"
+              ],
+              "zeilen": [
+                [
+                  "je me fais expliquer quelque chose – et je vérifie",
+                  "elle a l’air sûre d’elle : même là, elle peut se tromper"
+                ],
+                [
+                  "je traduis ou je cherche des idées",
+                  "je donne des photos privées ou des secrets"
+                ],
+                [
+                  "je m’en sers pour m’entraîner et poser des questions",
+                  "je rends un travail sans avoir appris moi-même"
+                ],
+                [
+                  "je fais relire mon propre texte",
+                  "on truque des images, des vidéos ou des voix d’autres personnes sans leur accord : limite"
+                ]
+              ]
+            },
+            "tipp": "Ici, la séance rejoint le thème du harcèlement et du courage civique : en ligne, regarder sans rien faire n’est pas neutre, parce que chaque transfert rend l’image plus grande.",
+            "wennEsKippt": "Si un jeune veut raconter un cas réel, ne pas approfondir : merci d’en parler – on en discute juste après le cours. Puis informer le SePAS le jour même. Si un feu tricolore reste vide, faire commencer par une situation de l’exercice dans la salle.",
+            "blatt": "ff7-echt-oder-fake"
+          },
+          {
+            "titel": "Skill : le frein à partage",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : la semaine dernière, c’étaient trois respirations avant de prendre son portable ; aujourd’hui, une question s’y ajoute. Lire avec beaucoup d’indignation l’un des titres inventés et ne dire qu’ensuite qu’il est inventé. Chacun estime en silence sa tension et montre ses doigts à trois. Puis s’exercer ensemble, lentement, au frein à partage (liste) et réestimer son chiffre. Deuxième tour avec le deuxième titre, chacun pour soi. Deux ou trois retours : qu’est-ce qui a changé dans le chiffre, quand le frein pourrait-il aider ?",
+            "sagen": [
+              "Flash info : à partir de lundi, portables interdits dans tous les bus – qui se fait prendre paie 300 euros.",
+              "Nouvelle règle dès la semaine prochaine : toutes les récrés sont supprimées pour laisser plus de temps aux devoirs en classe.",
+              "Quand on est en colère, on partage plus vite. Beaucoup de fakes sont construits exactement là-dessus."
+            ],
+            "punkte": [
+              "Stop : les mains loin du portable – à plat sur la table.",
+              "Trois respirations calmes, l’expiration plus longue. Réestimer son chiffre.",
+              "Se demander : qui dit ça ? Puis décider : partager, laisser tomber ou se renseigner."
+            ],
+            "tipp": "Le skill relie l’échelle de tension au monde numérique : le même chiffre, seulement un autre déclencheur. Lire les titres avec du drame – plus l’indignation est réelle, plus la classe sent l’effet du frein.",
+            "wennEsKippt": "Si certains croient au titre et s’énervent bruyamment, ce n’est pas une erreur, c’est la preuve : ça va aussi vite que ça. Donner tout de suite la réponse et travailler justement avec ça. Si la classe rit de l’exercice, faire le deuxième tour en silence, chacun pour soi ; personne n’est obligé de fermer les yeux."
+          },
+          {
+            "titel": "Skills-Pass, mission et suite",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Skills-Pass (3 min) : écrire la question au tableau – quelle question est-ce que je me pose avant de croire ou de partager quelque chose ? Ensuite, le tampon. Tour éclair avec le pouce (30 secondes) : vous sentez-vous plus sûrs maintenant pour vérifier ? Pour finir, annoncer la mission de la semaine dans le cahier et la prochaine séance (1 min).",
+            "sagen": [
+              "Cette semaine, vous vérifiez une info ou une rumeur avant de la croire ou de la répéter – en ligne ou dans la cour. Demandez-vous : comment cette personne peut-elle le savoir ?"
+            ],
+            "tipp": "Les rumeurs dans la cour fonctionnent comme les fakes en ligne : demander d’où quelqu’un tient une info freine les deux. C’est pour ça que la mission marche aussi sans portable."
+          }
+        ],
+        "bruecke": "Aujourd’hui, vous avez vérifié des publications : est-ce que c’est vrai ? La semaine prochaine, vous vérifiez quelque chose de plus proche encore – les phrases que vous vous dites dans votre tête.",
+        "mission": "Cette semaine, vérifie une info ou une rumeur avant de la croire ou de la répéter. Demande-toi : qui dit ça – et comment cette personne peut-elle le savoir ?",
+        "hintergrund": "À chaque nouvelle génération de générateurs d’images, les erreurs typiques comme les mains déformées ou l’écriture floue disparaissent ; la question de la source est plus fiable que l’examen des détails. Des vérificateurs professionnels quittent vite un site inconnu et regardent qui se cache derrière ; ils jugeaient ainsi plus vite et plus souvent juste que des historiens et des étudiants qui lisaient le site en détail (Wineburg & McGrew, 2019). Qui connaît les ficelles des fausses informations – indignation, faux experts, urgence – s’y laisse moins prendre : un jeu où l’on fabrique soi-même de fausses informations a réduit cette vulnérabilité de façon mesurable (Roozenbeek & van der Linden, 2019). Les modèles de langage produisent en outre des contenus plausibles mais faux (Ji et al., 2023). Comme beaucoup de trucages misent sur la colère et la peur, la séance relie l’éducation aux médias à un skill : d’abord freiner, puis vérifier.",
+        "quellen": [
+          "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+          "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+          "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38."
+        ],
+        "achtung": "Ne créer ni ne montrer aucun trucage de personnes réelles, même pour une démonstration ; tous les exemples sont inventés, changer avant le cours les prénoms portés par des jeunes de la classe. Si un jeune parle d’images truquées, gênantes ou intimes d’une personne réelle, ne rien laisser montrer, transférer ni enregistrer et ne pas approfondir devant la classe : lui parler en tête-à-tête après le cours, informer le SePAS le jour même et agir selon le protocole de protection de l’école. En cas de chantage avec des images, aller chercher de l’aide tout de suite. Conseil : BEE SECURE Helpline 8002 1234.",
+        "differenzierung": {
+          "leichter": "Pour le jeu de cartes, un jeune qui lit bien lit les cartes à voix haute ; les autres décident avec lui. Parcourir la liste à deux, à voix haute ; dans le feu tricolore, un mot-clé par couleur suffit. Un jeune qui apprend encore la langue du cours s’appuie sur les cartes titre et les zones de couleur – montrer passe avant parler.",
+          "schwerer": "Fabriquer une fausse information inoffensive et inventée sur un sujet scolaire, sans personnes réelles et avec au moins trois astuces de la liste, puis la faire vérifier par un autre îlot. Ou animer l’exercice dans la salle et demander où se trouve exactement la limite."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et chiffre (5 min), jeu de cartes avec quatre cartes par îlot et une courte correction (15 min), liste de vérification avec la publication du groupe de classe (10 min), exercice dans la salle sur l’IA avec quatre situations (10 min), frein à partage (5 min), Skills-Pass et mission (5 min). Le feu tricolore de l’IA du cahier est rattrapé à la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-echt-oder-fake",
+      "bereich": "skills",
+      "thema": "digital",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Echt oder fake",
+        "Quellen prüfen",
+        "KI",
+        "Teilen-Bremse",
+        "Förderfach"
+      ],
+      "bild": "icon:search",
+      "kurs": [
+        "ff7-e26"
+      ],
+      "de": {
+        "titel": "Echt oder fake?",
+        "untertitel": "Erst prüfen, dann glauben oder teilen",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Ein Bild kann perfekt aussehen und trotzdem nie passiert sein. Auf deine Augen allein ist kein Verlass mehr – die Quelle verrät mehr."
+          },
+          {
+            "art": "geschichte",
+            "titel": "Gesehen im Klassenchat",
+            "bild": "figur:ben:ueberrascht",
+            "text": "Ein Bild macht die Runde: der Busbahnhof, alle Busse mit Absperrband. Darüber in Großbuchstaben: „EILMELDUNG: Ab Montag fahren keine Schulbusse mehr. Teilen, bevor es gelöscht wird!“ Wer es zuerst gepostet hat, weiß niemand. Ein Datum fehlt, die Schrift auf einem Schild ist verschwommen."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Prüf den Beitrag mit der Checkliste. Je mehr „ja“, desto vorsichtiger solltest du sein.",
+            "symbole": [
+              "ankreuzen",
+              "partner"
+            ]
+          },
+          {
+            "art": "einschaetzung",
+            "optionen": [
+              "ja",
+              "nein",
+              "weiß nicht"
+            ],
+            "items": [
+              "Ich weiß nicht, wer es gepostet hat, oder die Quelle ist unbekannt.",
+              "Es gibt kein Datum, oder es ist alt.",
+              "Keine bekannte Seite berichtet darüber.",
+              "Der Beitrag will mich wütend, ängstlich oder gierig machen.",
+              "Ich soll schnell teilen, klicken oder etwas eingeben.",
+              "Die Überschrift übertreibt: GROSSBUCHSTABEN, „unglaublich“.",
+              "Im Bild oder Video wirkt etwas seltsam: Hände, Schrift, Mund, Stimme."
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein Urteil – echt, fake oder erst prüfen: …",
+              "Das mache ich mit dem Beitrag: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Prüfen wie die Profis",
+            "text": "Profis bleiben nicht im Beitrag. Sie suchen neu: Was sagen andere über diese Quelle? Steht es auch auf einer bekannten Nachrichtenseite? Seltsame Hände verraten KI-Bilder immer seltener – die Frage nach der Quelle bleibt."
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Dein Skill: die Teilen-Bremse",
+            "punkte": [
+              "Stopp: Hände weg vom Handy.",
+              "Drei ruhige Atemzüge, das Ausatmen länger.",
+              "Fragen: Wer sagt das? Dann entscheiden: teilen, liegen lassen oder nachfragen."
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Meine KI-Ampel: Schreib zu jeder Farbe ein Beispiel oder eine Regel.",
+            "hinweis": "Die Tafel und die Situationen aus der Aufstellung helfen dir."
+          },
+          {
+            "art": "ampel",
+            "stufen": [
+              {
+                "titel": "Rot: Das mache ich nicht.",
+                "text": "Hier ist eine Grenze überschritten."
+              },
+              {
+                "titel": "Gelb: Da bin ich vorsichtig.",
+                "text": "Erst nachdenken, nachprüfen oder fragen."
+              },
+              {
+                "titel": "Grün: Dafür nutze ich KI.",
+                "text": "Hier hilft sie mir wirklich."
+              }
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "achtung",
+            "titel": "Klare Grenze",
+            "text": "Bilder, Videos oder Stimmen von anderen ohne Erlaubnis zu verändern oder zu teilen, kann Mobbing sein und strafbar – auch wenn es als Spaß gemeint ist."
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Wenn ein Fake über jemanden auftaucht",
+            "punkte": [
+              "Nicht weiterleiten, nicht liken, nicht speichern.",
+              "Der Person zeigen: Ich bin auf deiner Seite.",
+              "Einer erwachsenen Person Bescheid sagen und gemeinsam melden – das ist kein Petzen."
+            ]
+          },
+          {
+            "art": "notfall"
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen prüfen einen Beitrag mit einer Checkliste, lernen das Quer-Lesen kennen, ziehen mit der KI-Ampel eigene Grenzen und wissen, was zu tun ist, wenn ein Fake über jemanden auftaucht.",
+          "ablauf": [
+            "Einheit 26, Schritt 4 (6 Min.): Aufgabe 1 zu zweit am Beitrag aus dem Klassenchat; danach: Welches Kreuz war am wichtigsten?",
+            "Schritt 7 (5 Min.): Aufgabe 2 allein, nach der KI-Aufstellung; ein Stichwort je Farbe reicht.",
+            "Den Kasten „Klare Grenze“ und die drei Schritte bei einem Fake gemeinsam lesen; auf den Hilfe-Kasten zeigen."
+          ],
+          "hintergrund": "Professionelle Faktenprüfer verlassen eine unbekannte Seite schnell und prüfen, wer dahintersteht (Wineburg & McGrew, 2019). Wer die Tricks von Falschmeldungen kennt, fällt seltener darauf herein (Roozenbeek & van der Linden, 2019). Sprachmodelle erzeugen Inhalte, die plausibel klingen, aber nicht stimmen (Ji et al., 2023).",
+          "quellen": [
+            "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+            "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+            "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38."
+          ],
+          "achtung": "Berichtet jemand von gefälschten oder intimen Bildern einer realen Person: nichts zeigen oder weiterleiten lassen, nach der Stunde sprechen, noch am selben Tag den SePAS informieren.",
+          "material": "Schülerheft; Tafelbild aus Schritt 6"
+        }
+      },
+      "fr": {
+        "titel": "Vrai ou faux ?",
+        "untertitel": "Vérifier d’abord, croire ou partager ensuite",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Une image peut avoir l’air parfaite et n’avoir jamais existé. Tes yeux ne suffisent plus – la source en dit davantage."
+          },
+          {
+            "art": "geschichte",
+            "titel": "Vu dans le groupe de classe",
+            "bild": "figur:ben:ueberrascht",
+            "text": "Une image circule : la gare routière, tous les bus entourés de ruban de signalisation. Au-dessus, en majuscules : « URGENT : à partir de lundi, plus aucun bus scolaire. Partagez avant que ce soit supprimé ! » Personne ne sait qui l’a publiée en premier. Il n’y a pas de date, et l’écriture sur un panneau est floue."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Vérifie la publication avec la liste. Plus tu coches « oui », plus tu dois être prudent·e.",
+            "symbole": [
+              "ankreuzen",
+              "partner"
+            ]
+          },
+          {
+            "art": "einschaetzung",
+            "optionen": [
+              "oui",
+              "non",
+              "je ne sais pas"
+            ],
+            "items": [
+              "Je ne sais pas qui l’a publiée, ou la source est inconnue.",
+              "Il n’y a pas de date, ou elle est ancienne.",
+              "Aucun site connu n’en parle.",
+              "La publication veut me mettre en colère, me faire peur ou me faire envie.",
+              "Je dois vite partager, cliquer ou entrer quelque chose.",
+              "Le titre exagère : MAJUSCULES, « incroyable ».",
+              "Dans l’image ou la vidéo, quelque chose cloche : mains, écriture, bouche, voix."
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mon avis – vrai, faux ou à vérifier : …",
+              "Ce que je fais de cette publication : …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Vérifier comme les pros",
+            "text": "Les pros ne restent pas dans la publication. Ils font une nouvelle recherche : que disent les autres de cette source ? Un site d’info connu en parle-t-il aussi ? Les mains bizarres trahissent de moins en moins les images d’IA – la question de la source reste."
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Ton skill : le frein à partage",
+            "punkte": [
+              "Stop : les mains loin du portable.",
+              "Trois respirations calmes, l’expiration plus longue.",
+              "Se demander : qui dit ça ? Puis décider : partager, laisser tomber ou se renseigner."
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Mon feu tricolore de l’IA : écris un exemple ou une règle pour chaque couleur.",
+            "hinweis": "Le tableau et les situations de l’exercice dans la salle t’aident."
+          },
+          {
+            "art": "ampel",
+            "stufen": [
+              {
+                "titel": "Rouge : je ne le fais pas.",
+                "text": "Là, une limite est franchie."
+              },
+              {
+                "titel": "Orange : je fais attention.",
+                "text": "D’abord réfléchir, vérifier ou demander."
+              },
+              {
+                "titel": "Vert : j’utilise l’IA pour ça.",
+                "text": "Là, elle m’aide vraiment."
+              }
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "achtung",
+            "titel": "Limite claire",
+            "text": "Modifier ou partager des images, des vidéos ou des voix d’autres personnes sans leur accord peut être du harcèlement et puni par la loi – même si c’est pour rire."
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Si un fake sur quelqu’un circule",
+            "punkte": [
+              "Ne pas transférer, ne pas liker, ne pas enregistrer.",
+              "Montrer à la personne : je suis de ton côté.",
+              "Prévenir un adulte et signaler ensemble – ce n’est pas cafter."
+            ]
+          },
+          {
+            "art": "notfall"
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes vérifient une publication avec une liste, découvrent la lecture latérale, tracent leurs propres limites avec le feu tricolore de l’IA et savent quoi faire si un fake sur quelqu’un circule.",
+          "ablauf": [
+            "Séance 26, étape 4 (6 min) : exercice 1 à deux avec la publication du groupe de classe ; ensuite : quelle croix était la plus importante ?",
+            "Étape 7 (5 min) : exercice 2 seul, après l’exercice dans la salle ; un mot-clé par couleur suffit.",
+            "Lire ensemble l’encadré « Limite claire » et les trois étapes en cas de fake ; montrer l’encadré d’aide."
+          ],
+          "hintergrund": "Des vérificateurs professionnels quittent vite un site inconnu et regardent qui se cache derrière (Wineburg & McGrew, 2019). Qui connaît les ficelles des fausses informations s’y laisse moins prendre (Roozenbeek & van der Linden, 2019). Les modèles de langage produisent des contenus plausibles mais faux (Ji et al., 2023).",
+          "quellen": [
+            "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+            "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+            "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38."
+          ],
+          "achtung": "Si un jeune parle d’images truquées ou intimes d’une personne réelle : ne rien laisser montrer ni transférer, lui parler après le cours, informer le SePAS le jour même.",
+          "material": "Cahier de l’élève ; tableau de l’étape 6"
+        }
+      }
+    },
+    {
+      "id": "ff7-echt-oder-fake-karten",
+      "bereich": "skills",
+      "thema": "digital",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "18 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Echt oder fake",
+        "Spielkarten",
+        "Falschmeldungen",
+        "Förderfach"
+      ],
+      "bild": "icon:photo",
+      "kurs": [
+        "ff7-e26"
+      ],
+      "de": {
+        "titel": "Echt oder fake? Spielkarten",
+        "untertitel": "Acht erfundene Beiträge und drei Kopfkarten – je Tischgruppe ein Satz im Umschlag",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So wird gespielt",
+            "punkte": [
+              "Eine Person liest die Karten nacheinander laut vor.",
+              "Die Gruppe legt jede Karte unter eine Kopfkarte: echt, fake oder erst prüfen.",
+              "Für jede Karte einigt ihr euch auf einen Grund: Woran erkennt ihr das?"
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 50,
+            "karten": [
+              {
+                "titel": "echt",
+                "bild": "icon:circle-check"
+              },
+              {
+                "titel": "fake",
+                "bild": "icon:alert-triangle"
+              },
+              {
+                "titel": "erst prüfen",
+                "bild": "icon:search"
+              }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 104,
+            "karten": [
+              {
+                "titel": "1 · Der Hai im Bahnhof",
+                "text": "Video-App, Konto @wetter.news.247, erstellt vor drei Tagen: Ein Foto zeigt einen Hai, der nach einem Unwetter durch eine überflutete Bahnhofshalle schwimmt. Darüber: UNGLAUBLICH – TEILT DAS. Schon 80 000-mal geteilt. Sonst berichtet niemand darüber."
+              },
+              {
+                "titel": "2 · Schnee im April",
+                "text": "Auf der offiziellen Seite der Gemeinde, gestern, 7.45 Uhr: Ein Foto zeigt Schnee auf blühenden Kirschbäumen im Dorf. Darunter: Vorsicht, Glätte auf der Hauptstraße. Das Radio meldet am Morgen dasselbe."
+              },
+              {
+                "titel": "3 · Das Handy-Geschenk",
+                "text": "Ein Video zeigt einen berühmten Fußballspieler: „Ich schenke 500 Fans ein neues Handy. Klickt auf den Link und gebt eure Handynummer ein.“ Seine Lippen passen nicht ganz zu den Wörtern. Der Link führt zu einer unbekannten Seite."
+              },
+              {
+                "titel": "4 · Die Sprachnachricht",
+                "text": "Von einer neuen Nummer kommt eine Sprachnachricht. Die Stimme klingt genau wie die von Noahs großer Schwester: „Ich hab mein Handy verloren. Gleich kommt bei dir ein Code per SMS – schick ihn mir schnell, bitte.“"
+              },
+              {
+                "titel": "5 · Der Screenshot",
+                "text": "In der Klassengruppe taucht ein Screenshot auf, angeblich von der Direktion: „Morgen schulfrei wegen Hitze.“ Das Logo ist unscharf, die Schrift sieht anders aus als sonst. Auf der Seite des Lycée steht nichts davon."
+              },
+              {
+                "titel": "6 · Die Schokoladen-Studie",
+                "text": "Eine Seite namens gesund-und-klug-news schreibt: „Forscher beweisen: Wer jeden Morgen Schokolade isst, schreibt bessere Noten.“ Welche Forscher, steht nirgends. Ein Link zur Studie fehlt."
+              },
+              {
+                "titel": "7 · Die Unwetterwarnung",
+                "text": "Push-Nachricht aus der App des Wetterdienstes, die auf deinem Handy installiert ist: „Warnstufe Orange: Gewitter heute von 15 bis 21 Uhr.“ Auf der Internetseite des Wetterdienstes steht dieselbe Warnung."
+              },
+              {
+                "titel": "8 · Die Klavier-Katze",
+                "text": "Ein Video zeigt eine Katze, die auf einem Klavier eine bekannte Melodie spielt – ohne Fehler. 2 Millionen Likes. In den Kommentaren streiten alle: „Das ist KI.“ – „Nein, das ist echt.“ Wer das Video zuerst gepostet hat, ist nicht zu finden."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Erfundene Beiträge für das Echt-oder-fake-Spiel: Die Tischgruppen sortieren, begründen und merken, wie leicht man sich täuscht.",
+          "ablauf": [
+            "Fünfmal auf festes Papier kopieren und ausschneiden; je Tischgruppe ein Umschlag mit den acht Beitragskarten und den drei Kopfkarten.",
+            "Namen auf den Karten tauschen, wenn jemand in der Klasse so heißt.",
+            "Einheit 26, Schritt 3: sortieren (8 Min.), Auflösung in der Klasse (8 Min.). Lösung: echt 2 und 7; fake 1, 3, 4 und 5; erst prüfen 6 und 8."
+          ],
+          "hintergrund": "Wer die Tricks von Falschmeldungen kennt – Empörung, falsche Experten, Zeitdruck –, fällt seltener darauf herein (Roozenbeek & van der Linden, 2019). Die Karten enthalten deshalb typische Hinweise; die Auflösung lenkt den Blick vom Bild auf die Quelle (Wineburg & McGrew, 2019).",
+          "quellen": [
+            "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+            "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40."
+          ],
+          "material": "Festes Papier, Schere, fünf Umschläge"
+        }
+      },
+      "fr": {
+        "titel": "Vrai ou faux ? Cartes de jeu",
+        "untertitel": "Huit publications inventées et trois cartes titre – un jeu par îlot dans une enveloppe",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Règle du jeu",
+            "punkte": [
+              "Un jeune lit les cartes à voix haute, l’une après l’autre.",
+              "Le groupe pose chaque carte sous une carte titre : vrai, faux ou à vérifier.",
+              "Pour chaque carte, mettez-vous d’accord sur une raison : à quoi le reconnaissez-vous ?"
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 50,
+            "karten": [
+              {
+                "titel": "vrai",
+                "bild": "icon:circle-check"
+              },
+              {
+                "titel": "faux",
+                "bild": "icon:alert-triangle"
+              },
+              {
+                "titel": "à vérifier",
+                "bild": "icon:search"
+              }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 104,
+            "karten": [
+              {
+                "titel": "1 · Le requin dans la gare",
+                "text": "Appli vidéo, compte @meteo.news.247, créé il y a trois jours : une photo montre un requin qui nage dans le hall d’une gare inondée après un orage. Au-dessus : INCROYABLE – PARTAGEZ. Déjà partagée 80 000 fois. Personne d’autre n’en parle."
+              },
+              {
+                "titel": "2 · De la neige en avril",
+                "text": "Sur la page officielle de la commune, hier, 7 h 45 : une photo montre de la neige sur des cerisiers en fleurs au village. En dessous : attention, verglas sur la rue principale. La radio annonce la même chose le matin."
+              },
+              {
+                "titel": "3 · Le portable offert",
+                "text": "Une vidéo montre un footballeur célèbre : « J’offre un nouveau portable à 500 fans. Cliquez sur le lien et entrez votre numéro. » Ses lèvres ne collent pas tout à fait aux mots. Le lien mène à un site inconnu."
+              },
+              {
+                "titel": "4 · Le message vocal",
+                "text": "Un message vocal arrive d’un nouveau numéro. La voix ressemble exactement à celle de la grande sœur de Noah : « J’ai perdu mon portable. Tu vas recevoir un code par SMS – envoie-le-moi vite, s’il te plaît. »"
+              },
+              {
+                "titel": "5 · La capture d’écran",
+                "text": "Dans le groupe de classe, une capture d’écran circule, soi-disant de la direction : « Demain, pas cours à cause de la chaleur. » Le logo est flou, l’écriture n’est pas comme d’habitude. Le site du lycée n’en parle pas."
+              },
+              {
+                "titel": "6 · L’étude sur le chocolat",
+                "text": "Un site appelé sante-et-malin-news écrit : « Des chercheurs le prouvent : manger du chocolat chaque matin donne de meilleures notes. » Quels chercheurs ? Ce n’est écrit nulle part. Aucun lien vers l’étude."
+              },
+              {
+                "titel": "7 · L’alerte météo",
+                "text": "Notification de l’appli du service météo installée sur ton portable : « Vigilance orange : orages aujourd’hui de 15 h à 21 h. » Le site internet du service météo affiche la même alerte."
+              },
+              {
+                "titel": "8 · Le chat pianiste",
+                "text": "Une vidéo montre un chat qui joue un air connu au piano – sans fausse note. 2 millions de likes. Dans les commentaires, tout le monde se dispute : « C’est de l’IA. » – « Non, c’est vrai. » Impossible de trouver qui a publié la vidéo en premier."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Des publications inventées pour le jeu « Vrai ou faux ? » : les îlots trient, justifient et remarquent à quel point on se trompe facilement.",
+          "ablauf": [
+            "Photocopier cinq fois sur papier épais et découper ; une enveloppe par îlot avec les huit cartes publication et les trois cartes titre.",
+            "Changer les prénoms des cartes si un jeune de la classe les porte.",
+            "Séance 26, étape 3 : trier (8 min), correction en classe entière (8 min). Solution : vrai 2 et 7 ; faux 1, 3, 4 et 5 ; à vérifier 6 et 8."
+          ],
+          "hintergrund": "Qui connaît les ficelles des fausses informations – indignation, faux experts, urgence – s’y laisse moins prendre (Roozenbeek & van der Linden, 2019). Les cartes contiennent donc des indices typiques ; la correction déplace le regard de l’image vers la source (Wineburg & McGrew, 2019).",
+          "quellen": [
+            "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+            "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40."
+          ],
+          "material": "Papier épais, ciseaux, cinq enveloppes"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,963 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e10",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-wer-sitzt-am-steuer"
+      ],
+      "vorlagen": [
+        "ff7-steuerpult-karten"
+      ],
+      "woerter": [
+        {
+          "de": "am Steuer sein",
+          "fr": "être aux commandes"
+        },
+        {
+          "de": "der Kummer",
+          "fr": "la tristesse"
+        },
+        {
+          "de": "der Ekel",
+          "fr": "le dégoût"
+        },
+        {
+          "de": "die Erinnerung",
+          "fr": "le souvenir"
+        },
+        {
+          "de": "trösten",
+          "fr": "consoler"
+        }
+      ],
+      "de": {
+        "titel": "Alles steht Kopf",
+        "kurz": "Filmszenen – oder Standbilder, wenn die Vorführrechte fehlen – zeigen, wie Gefühle das Steuer übernehmen und warum auch Kummer seinen Platz hat.",
+        "ziele": [
+          "erkennen in Szenen, welches Gefühl am Steuer ist",
+          "erklären, wozu auch Kummer gut ist",
+          "zeigen, welches Gefühl im Alltag bei ihnen am Steuer wäre",
+          "probieren achtsames Hören als Skill aus"
+        ],
+        "material": [
+          "„Alles steht Kopf“ (2015), Lizenz",
+          "Beamer oder Bildschirm, Lautsprecher",
+          "Schilder und Szenenkarten (Vorlage)",
+          "Botschaften-Plakat aus Einheit 9",
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Schülerheft für jede Person",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Vorführrechte mit der Direktion klären (Schullizenz); fehlen sie, mit Szenenkarten und Standbildern arbeiten.",
+          "Altersfreigabe prüfen: FSK 0, in Frankreich tous publics (Hülle oder Anbieter).",
+          "Szenen vorher ansehen, Start und Ende notieren; Bild und Ton testen.",
+          "Schilder und Szenenkarten kopieren; die fünf Gefühle groß auf A4 schreiben und im Raum aufhängen.",
+          "Mit dem Régent klären, wen der Film gerade treffen könnte."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Welches Gefühl war zuerst wach?"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick und Blick in den Kopf"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "Szenen 1 und 2: Wer steht am Pult?"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Szene 3: Wut übernimmt das Steuer"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Gesichter spiegeln"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Szene 4: Warum Kummer hilft"
+          },
+          {
+            "min": "65–85",
+            "phase": "aktiv",
+            "titel": "Wer stünde bei euch am Steuer?"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Achtsames Hören"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass und Blitzlicht"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Welches Gefühl war zuerst wach?",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt wie gewohnt auf das Gefühlsrad – für jetzt (3 Min.). Dazu kommt heute eine Frage: Welches Gefühl war heute Morgen als Erstes wach – beim Aufwachen, im Bad, im Bus? Die Lehrkraft beginnt; dann nennen drei, vier Freiwillige ihr Gefühl vom Morgen und, wenn sie mögen, das Wort von jetzt (5 Min.). Zum Schluss fragen, ob sich das Gefühl seit dem Morgen verändert hat und was es verändert hat – der Bus, ein Freund, ein Test? (2 Min.)",
+            "sagen": [
+              "Welches Gefühl war heute als Erstes wach? Bei mir war es ‚müde‘ und dann kurz ‚gestresst‘, weil ich meinen Schlüssel gesucht habe.",
+              "Gleich schaut ihr in einen Kopf hinein, in dem fünf Gefühle um das Steuer streiten."
+            ],
+            "tipp": "Die Frage nach dem ersten Gefühl führt direkt zum Film: Dort ist Freude das erste Gefühl in Rileys Kopf – und gleich danach kommt Kummer.",
+            "wennEsKippt": "Sagen viele „müde“, das gelten lassen und nachfragen, ob Müdigkeit ein Gefühl ist oder eher ein Zustand des Körpers – eine gute Brücke zu Einheit 11. Drängeln sich alle am Plakat, tischgruppenweise kleben lassen."
+          },
+          {
+            "titel": "Rückblick und Blick in den Kopf",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Zur Wochen-Mission per Daumen fragen: Farbsuche ausprobiert, eine Botschaft gelesen? Eine Stimme erzählt; niemand muss sie geschafft haben. Auf das Botschaften-Plakat zeigen und die Botschaften von Angst und Wut wiederholen lassen. Dann die Geschichte in zwei Sätzen vorstellen: Riley ist elf und zieht mit ihren Eltern in eine neue Stadt; in ihrem Kopf arbeiten Freude, Kummer, Angst, Wut und Ekel an einem Steuerpult. Das Blatt austeilen und Aufgabe 1 erklären: Während der Szenen wird nur angekreuzt.",
+            "sagen": [
+              "Letzte Woche habt ihr herausgefunden, welche Botschaft jedes Gefühl hat. Wer weiß noch die von Angst? Und die von Wut?",
+              "Heute schaut ihr zu, was passiert, wenn ein Gefühl das Steuer übernimmt. Kummer heißt im Film die Traurigkeit."
+            ],
+            "tipp": "Ohne Film dieselbe Einführung: die Schilder zeigen und erklären, dass die Klasse die Szenen gleich selbst als Standbilder baut.",
+            "wennEsKippt": "Kennt jemand den Film und verrät das Ende, freundlich bremsen und eine Rolle geben: Du bist heute Filmexperte und darfst nach jeder Szene ergänzen, was davor passiert ist – nur das Ende bleibt geheim."
+          },
+          {
+            "titel": "Szenen 1 und 2: Wer steht am Pult?",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Szene 1 zeigen (etwa 5 Min.), anhalten und die Frage aus der Tabelle stellen; zwei, drei Antworten genügen, dann kreuzen alle in Aufgabe 1 an. Genauso mit Szene 2 (etwa 4 Min.). Die Minuten sind ungefähre Angaben ab Filmbeginn und je nach Fassung verschieden. Ohne Film: die Szenenkarte vorlesen; sechs Freiwillige nehmen die Schilder und bauen um einen Tisch, das Steuerpult, zuerst Standbild A, dann Standbild B (Liste). Die Klasse führt Regie: Wer muss ans Pult? Was macht Riley? Danach dieselben Fragen.",
+            "sagen": [
+              "Stopp. Wer stand gerade am Pult – und was hat Riley deshalb gemacht?",
+              "Welche Gefühle aus unserem Rad fehlen am Pult? Und wer aus dem Film fehlt in unserem Rad?"
+            ],
+            "punkte": [
+              "Ohne Film: Szenenkarte vorlesen, dann Standbild A, danach Standbild B bauen.",
+              "Hinter dem Tisch stehen die Gefühle, davor steht Riley mit dem Gesicht zur Klasse.",
+              "Wer am Steuer ist, legt die Hände auf den Tisch; die anderen stehen dahinter.",
+              "Auf „Standbild!“ frieren alle fünf Sekunden ein – ohne Worte, ohne Berührung.",
+              "Danach legen alle ihr Schild ab und sagen ihren eigenen Namen."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Szene, ungefähre Minuten",
+                "Was passiert – Frage danach"
+              ],
+              "zeilen": [
+                [
+                  "1 · Die Zentrale (Filmanfang, ca. Min. 1–6)",
+                  "Riley wird geboren, Freude ist zuerst da, dann Kummer; Angst, Ekel und Wut zeigen ihre Aufgaben. Frage: Wozu braucht Riley Angst, Ekel und Wut?"
+                ],
+                [
+                  "2 · Der erste Schultag (ca. Min. 16–20)",
+                  "Freude malt einen Kreis, in dem Kummer bleiben soll; in der neuen Klasse berührt Kummer eine Erinnerung, Riley weint vor allen. Frage: Was passiert, wenn man ein Gefühl wegsperren will?"
+                ],
+                [
+                  "3 · Das Abendessen (ca. Min. 26–30)",
+                  "Freude und Kummer sind verloren gegangen; am Esstisch übernimmt Wut das Pult, Riley schreit, der Vater schickt sie in ihr Zimmer. Frage: Wer steht am Pult – bei Riley und beim Vater?"
+                ],
+                [
+                  "4 · Bing Bong (ca. Min. 40–44)",
+                  "Bing Bong verliert seine Rakete; Freude will ihn aufheitern, erst als Kummer sich zu ihm setzt und zuhört, kann er weitergehen. Frage: Warum hilft Kummer hier mehr als Freude?"
+                ]
+              ]
+            },
+            "tipp": "Die Frage nach den fehlenden Gefühlen lohnt sich: Stark und ruhig stehen in unserem Rad, nicht am Pult; Ekel steht am Pult, nicht im Rad. Es gibt verschiedene Arten, Gefühle zu ordnen – keine ist die einzig richtige.",
+            "wennEsKippt": "Streikt die Technik, sofort auf die Szenenkarten umsteigen – die Stunde funktioniert genauso. Findet jemand den Film „für Kinder“, das ernst nehmen und eine Expertenrolle anbieten: Du achtest darauf, was der Film über Gefühle richtig und was er falsch zeigt.",
+            "blatt": "ff7-steuerpult-karten"
+          },
+          {
+            "titel": "Szene 3: Wut übernimmt das Steuer",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Szene 3 zeigen (etwa 4 Min.) – ohne Film als Standbild mit der Szenenkarte. Danach fragen: Wer stand am Pult, und was hat Riley deshalb gesagt? Wann hätte ein anderes Gefühl das Steuer noch übernehmen können? Zwei, drei Antworten (3 Min.). Dann Aufgabe 1 für die Szenen 1 bis 3 mit der Person daneben vergleichen (2 Min.) und Aufgabe 2 zu zweit lösen: zwei unangenehme Gefühle aus den Szenen – was machen sie, und wozu sind sie für Riley gut? (5 Min.) Zum Schluss lesen zwei Paare ihre Antwort vor (1 Min.).",
+            "sagen": [
+              "Wut ist nicht das Problem – sie meldet: Das ist unfair. Schwierig wird, was Riley dann sagt.",
+              "Wann hätte Riley das Steuer noch zurückbekommen können?"
+            ],
+            "tipp": "Die Szene ist lustig und trifft trotzdem: Viele kennen Streit beim Abendessen. Darum über Riley sprechen, nicht über die eigene Familie – die Frage „Kennt ihr das?“ hier nicht stellen.",
+            "wennEsKippt": "Fangen einige an, von Streit zu Hause zu erzählen, freundlich zur Figur zurückführen: Bleiben wir bei Riley; wer mehr erzählen möchte, kann nach der Stunde zu mir kommen. Wirkt jemand dabei betroffen, nach der Stunde kurz nachfragen, wie es geht.",
+            "blatt": "ff7-wer-sitzt-am-steuer"
+          },
+          {
+            "titel": "Bewegungspause: Gesichter spiegeln",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen auf und stellen sich zu zweit gegenüber. Eine Person zeigt langsam, nur mit dem Gesicht, ein Gefühl vom Steuerpult, die andere spiegelt es wie ein Spiegel; nach drei Gefühlen wird gewechselt (3 Min.). Zum Schluss ruft die Lehrkraft schnell hintereinander Freude, Ekel, Angst, Wut, Kummer, und alle zeigen gleichzeitig das Gesicht (1 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Ganz langsam, wie in Zeitlupe. Wer spiegelt, macht genau dasselbe – ohne zu lachen, wenn ihr es schafft."
+            ],
+            "tipp": "Bei einer ungeraden Zahl spiegelt die Lehrkraft mit. Wer niemandem gegenüberstehen mag, spiegelt die Lehrkraft vorn.",
+            "wennEsKippt": "Wird nur noch gelacht, das Lachen kurz zulassen und dann eine Regel setzen: Die nächste Runde ganz ohne Ton. Mit Zeitlupe wird es meist sofort ruhiger."
+          },
+          {
+            "titel": "Szene 4: Warum Kummer hilft",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Szene 4 zeigen (etwa 3 Min.) – ohne Film als Standbild mit der Szenenkarte; eine freiwillige Person spielt Bing Bong, zwei weitere Freude und Kummer. Danach fragen: Warum hilft Kummer hier mehr als Freude? Was braucht jemand, der traurig ist – Witze oder jemanden, der zuhört? (4 Min.) Dann gemeinsam die Hauptbotschaft des Films festhalten: Was will er über Gefühle sagen? Die Antworten in der Sprache der Klasse auf ein Plakat schreiben; fehlt einer der drei Sätze, mit einer Frage darauf hinführen (6 Min.). Zum Schluss die letzte Zeile in Aufgabe 1 ankreuzen (2 Min.).",
+            "sagen": [
+              "Freude wollte Bing Bong aufheitern. Kummer hat sich einfach neben ihn gesetzt. Was hat ihm mehr geholfen – und warum?",
+              "Kummer zeigt anderen: Ich brauche Trost. Ohne Kummer würde niemand merken, dass Bing Bong Hilfe braucht."
+            ],
+            "punkte": [
+              "Jedes Gefühl hat eine Aufgabe – auch Kummer.",
+              "Wer am Steuer steht, bestimmt mit, was wir sagen und tun.",
+              "Gefühle lassen sich nicht wegsperren – sie melden sich trotzdem."
+            ],
+            "tipp": "Das Plakat mit den drei Sätzen neben das Botschaften-Plakat hängen. Der zweite Satz ist die Brücke zum nächsten Kapitel: Dort geht es darum, wie man das Steuer zurückbekommt.",
+            "wennEsKippt": "Lacht jemand über Bing Bongs Weinen, nicht schimpfen, sondern nachfragen: Wie fühlt es sich an, wenn einem etwas weggenommen wird, das man geliebt hat? Meist wird es dann ruhig. Wird jemand still oder traurig, nicht vor der Klasse ansprechen, sondern nach der Stunde kurz nachfragen.",
+            "blatt": "ff7-steuerpult-karten"
+          },
+          {
+            "titel": "Wer stünde bei euch am Steuer?",
+            "dauer": 20,
+            "phase": "aktiv",
+            "text": "Die fünf Gefühle hängen groß an fünf Stellen im Raum. Die Lehrkraft liest eine Situation vor; alle gehen zu dem Gefühl, das bei ihnen wahrscheinlich am Steuer stünde – zwischen zwei Schildern zu stehen ist erlaubt. Nach jeder Situation zwei Personen an verschiedenen Stellen fragen, warum sie dort stehen; freiwillig und ohne zu bewerten (sechs Situationen, 11 Min.). Zum Schluss: Gleiche Situation, verschiedene Gefühle am Steuer – was heißt das? (1 Min.) Zurück an den Plätzen füllt jede Person Aufgabe 3 allein aus (6 Min.); wer mag, liest einen Satz vor (2 Min.).",
+            "sagen": [
+              "Geht zu dem Gefühl, das bei euch jetzt am Steuer stünde. Dazwischen ist erlaubt.",
+              "Gleiche Situation, drei verschiedene Gefühle am Steuer. Wer mag sagen, warum er hier steht?"
+            ],
+            "punkte": [
+              "Der Lehrer kündigt für morgen einen Test an, von dem niemand etwas wusste.",
+              "Im Bus setzt sich jemand neben dich, der stark nach Rauch riecht.",
+              "Dein bester Freund sagt euer Treffen zum dritten Mal kurz vorher ab.",
+              "Du schießt beim Turnier in der letzten Minute das entscheidende Tor.",
+              "Du wartest abends allein an der Bushaltestelle, und hinter dir raschelt es im Gebüsch.",
+              "Deine Lieblingsserie wird mitten in der Geschichte abgesetzt."
+            ],
+            "tipp": "Wer sich nicht bewegen mag, zeigt vom Platz aus auf ein Schild. Bei wenig Platz bleiben alle an ihren Plätzen stehen und zeigen auf drei gleichzeitig auf ein Schild.",
+            "wennEsKippt": "Rennen alle aus Spaß zum selben Schild, die nächste Situation mit geschlossenen Augen hören lassen; erst auf ein Zeichen gehen alle los. Bleibt jemand immer zwischen den Schildern stehen, das gelten lassen: Auch Unentschlossenheit ist eine Auskunft.",
+            "blatt": "ff7-wer-sitzt-am-steuer"
+          },
+          {
+            "titel": "Skill: Achtsames Hören",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: ein Skill, mit dem man das Steuer ein Stück zurückbekommt, wenn ein Gefühl zu laut wird. Alle sitzen bequem, Augen zu oder Blick auf einen Punkt am Tisch. Langsam drei Fragen stellen und nach jeder etwa eine Minute Stille lassen (Liste); selbst mitmachen. Danach drei, vier Stimmen: Welche Geräusche sind euch aufgefallen? Welches war das leiseste? Zum Schluss erklären: Wer ein paar Atemzüge lang nur hört, holt die Aufmerksamkeit ins Jetzt – und das Gefühl am Pult wird oft leiser. Wann könnte das helfen – im Bus, vor dem Einschlafen, nach einem Streit?",
+            "sagen": [
+              "Ihr müsst nichts tun, nur hören. Die Augen dürfen offen bleiben."
+            ],
+            "punkte": [
+              "Welche Geräusche hörst du ganz nah – im Raum, an deinem Stuhl, bei dir selbst?",
+              "Welche Geräusche kommen von weiter weg – aus dem Flur, von draußen?",
+              "Welches ist das leiseste Geräusch, das du gerade hören kannst?"
+            ],
+            "tipp": "Kichern ist auch ein Geräusch – nicht ermahnen, ruhig weitersprechen; nach der ersten Minute wird es meist still. Eine Klangschale oder ein Glas mit Löffel hilft: einmal anschlagen und zuhören, bis der Ton weg ist.",
+            "wennEsKippt": "Fällt jemandem das Stillsitzen schwer, darf er mit offenen Augen hören und dabei etwas in der Hand drehen – einen Radiergummi, einen Knetball. Wird es zu unruhig, die Stille auf 30 Sekunden kürzen und nächste Woche wiederholen."
+          },
+          {
+            "titel": "Skills-Pass und Blitzlicht",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Was nehme ich aus Rileys Geschichte für mich mit? Danach gibt es den Stempel. Blitzlicht (2 Min.): Jede Person nennt in einem Wort, welches Gefühl heute bei ihr am meisten am Steuer saß; „weiter“ ist erlaubt. Zum Schluss die Wochen-Mission ansagen und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "sagen": [
+              "Ein Wort: Wer saß heute bei euch am Steuer?"
+            ],
+            "tipp": "Das Blitzlicht selbst mit einem ehrlichen Wort beginnen, etwa: Neugier. Das gibt das Tempo vor – mit zwanzig dauert es so etwa zwei Minuten."
+          }
+        ],
+        "bruecke": "Gefühle passieren nicht nur im Kopf: Nächste Woche sucht ihr, wo sie im Körper sitzen – und welches Signal bei Wut und Angst als Erstes kommt.",
+        "mission": "Ertapp dich diese Woche einmal: Welches Gefühl stand gerade bei dir am Steuer – und was hast du deshalb gesagt oder getan?",
+        "hintergrund": "Für „Alles steht Kopf“ ließ sich Pixar von den Emotionsforschern Dacher Keltner und Paul Ekman beraten. Sie heben zwei Einsichten hervor, die der Film anschaulich macht: Gefühle stören das Denken nicht, sondern ordnen es, und sie regeln das Zusammenleben – Kummer zeigt anderen, dass jemand Trost braucht, und holt so Hilfe herbei (Keltner & Ekman, 2015). Die fünf Figuren entsprechen fünf der Grundgefühle, die Ekman (1992) beschreibt. Das Bild vom Steuerpult passt zur Emotionsregulation: Gefühle lassen sich nicht abschalten, aber man kann beeinflussen, wie stark und wie lange sie das Handeln bestimmen (Gross, 1998). Szenen schaffen Abstand – über Rileys Gefühle zu sprechen, fällt leichter als über die eigenen. Die Standbilder erhalten diesen Abstand, wenn der Film nicht gezeigt werden kann.",
+        "quellen": [
+          "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+        ],
+        "achtung": "Den Film nur mit geklärten Vorführrechten zeigen (Absprache mit der Direktion, Schullizenz), nicht einfach über ein privates Streaming-Konto oder eine private DVD. Fehlen die Rechte, läuft die Stunde vollständig mit Szenenkarten und Standbildern. Der Film erzählt von Umzug, Heimweh und Streit mit den Eltern; das kann Jugendliche treffen, die gerade umgezogen oder geflüchtet sind, nicht bei ihrer Familie leben oder einen Verlust erleben. Wird jemand still oder weint, später unter vier Augen ansprechen, nicht vor der Klasse. Bei Hinweisen auf Gewalt zu Hause noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "differenzierung": {
+          "leichter": "Für Jugendliche, die die Unterrichtssprache noch lernen: die Fassung zeigen, die die meisten verstehen, mit Untertiteln; die Namen der fünf Gefühle mit Gesichtern in beiden Sprachen an die Tafel. Aufgabe 1 nur ankreuzen, Aufgabe 2 gemeinsam an der Tafel; bei den Standbildern eine Rolle ohne Text.",
+          "schwerer": "Eine Alltagsszene als Steuerpult-Szene beschreiben: Wer steht am Pult, wer will hin – und was würde passieren, wenn ein anderes Gefühl übernähme? Oder als Filmexperte nach jeder Szene ergänzen, was davor passiert ist."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Szene 1 und 2 mit Fragen und Aufgabe 1 (15 Min.), Szene 4 mit Bing Bong und der Hauptbotschaft (15 Min.), Aufstellung mit drei Situationen (8 Min.), Skills-Pass und Blitzlicht (7 Min.). Szene 3, die Aufgaben 2 und 3 und das achtsame Hören entfallen; Aufgabe 3 lässt sich zu Beginn der nächsten Stunde nachholen."
+      },
+      "fr": {
+        "titel": "Vice-versa",
+        "kurz": "Des scènes de film – ou des images figées, sans droits de projection – montrent comment les émotions prennent les commandes et pourquoi même la tristesse a sa place.",
+        "ziele": [
+          "reconnaissent dans des scènes l’émotion aux commandes",
+          "expliquent à quoi sert aussi la tristesse",
+          "situent l’émotion qui serait aux commandes chez eux",
+          "essaient l’écoute attentive comme skill"
+        ],
+        "material": [
+          "« Vice-versa » (2015), licence",
+          "Projecteur ou écran, haut-parleurs",
+          "Pancartes et cartes scènes (modèle)",
+          "Affiche des messages (séance 9)",
+          "Roue des émotions, 20 gommettes",
+          "Un cahier de l’élève par jeune",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Vérifier les droits de projection avec la direction ; sinon, travailler avec les cartes scènes.",
+          "Classification : FSK 0, en France tous publics (jaquette ou fournisseur).",
+          "Regarder les scènes à l’avance, noter début et fin ; tester image et son.",
+          "Copier pancartes et cartes scènes ; émotions en grand sur des A4.",
+          "Voir avec le régent qui le film pourrait toucher en ce moment."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : la première émotion"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour et regard dans une tête"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "Scènes 1 et 2 : qui est aux commandes ?"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Scène 3 : la colère prend les commandes"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : le miroir des visages"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Scène 4 : pourquoi Tristesse aide"
+          },
+          {
+            "min": "65–85",
+            "phase": "aktiv",
+            "titel": "Et vous, qui serait aux commandes ?"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : l’écoute attentive"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass et tour éclair"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : la première émotion",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle comme d’habitude sa gommette sur la roue des émotions – pour maintenant (3 min). Aujourd’hui, une question en plus : quelle émotion s’est réveillée la première ce matin – au réveil, dans la salle de bain, dans le bus ? L’enseignant·e commence ; puis trois ou quatre volontaires disent leur émotion du matin et, s’ils le souhaitent, leur mot de maintenant (5 min). Pour finir, demander si l’émotion a changé depuis le matin et ce qui l’a changée – le bus, un copain, un devoir en classe ? (2 min)",
+            "sagen": [
+              "Quelle émotion s’est réveillée la première ce matin ? Chez moi, c’était “fatigué”, puis un instant “stressé”, parce que je cherchais mes clés.",
+              "Tout à l’heure, vous allez regarder à l’intérieur d’une tête où cinq émotions se disputent les commandes."
+            ],
+            "tipp": "La question de la première émotion mène tout droit au film : dans la tête de Riley, Joie est la première à apparaître – et juste après arrive Tristesse.",
+            "wennEsKippt": "Si beaucoup disent « fatigué », l’accepter et demander si la fatigue est une émotion ou plutôt un état du corps – un bon lien vers la séance 11. Si tout le monde se bouscule devant l’affiche, faire passer îlot par îlot."
+          },
+          {
+            "titel": "Retour et regard dans une tête",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit la phrase de son Skills-Pass. Pour la mission de la semaine, demander avec le pouce : chasse aux couleurs essayée, un message lu ? Une voix raconte ; personne n’est obligé de l’avoir réussie. Montrer l’affiche des messages et faire répéter ceux de la peur et de la colère. Puis présenter l’histoire en deux phrases : Riley a onze ans et déménage avec ses parents dans une nouvelle ville ; dans sa tête, Joie, Tristesse, Peur, Colère et Dégoût travaillent à une console. Distribuer la fiche et expliquer l’exercice 1 : pendant les scènes, on coche seulement.",
+            "sagen": [
+              "La semaine dernière, vous avez trouvé le message de chaque émotion. Qui se souvient de celui de la peur ? Et de la colère ?",
+              "Aujourd’hui, vous regardez ce qui se passe quand une émotion prend les commandes."
+            ],
+            "tipp": "Sans film, même introduction : montrer les pancartes et expliquer que la classe va construire elle-même les scènes en images figées.",
+            "wennEsKippt": "Si quelqu’un connaît le film et dévoile la fin, le freiner gentiment et lui confier un rôle : aujourd’hui, tu es l’expert du film et tu complètes après chaque scène ce qui s’est passé avant – seule la fin reste secrète."
+          },
+          {
+            "titel": "Scènes 1 et 2 : qui est aux commandes ?",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Montrer la scène 1 (environ 5 min), faire une pause et poser la question du tableau ; deux ou trois réponses suffisent, puis tout le monde coche l’exercice 1. Même chose avec la scène 2 (environ 4 min). Les minutes sont approximatives, comptées depuis le début du film, et varient selon la version. Sans film : lire la carte scène ; six volontaires prennent les pancartes et construisent autour d’une table, la console, l’image figée A puis l’image figée B (liste). La classe fait la mise en scène : qui doit aller aux commandes ? Que fait Riley ? Ensuite, mêmes questions.",
+            "sagen": [
+              "Pause. Qui était aux commandes à l’instant – et qu’est-ce que Riley a fait à cause de ça ?",
+              "Quelles émotions de notre roue manquent à la console ? Et laquelle du film manque sur notre roue ?"
+            ],
+            "punkte": [
+              "Sans film : lire la carte scène, puis construire l’image figée A, ensuite l’image figée B.",
+              "Derrière la table se tiennent les émotions ; devant, Riley, face à la classe.",
+              "Celle qui est aux commandes pose les mains sur la table ; les autres restent derrière.",
+              "À « Image figée ! », tout le monde s’immobilise cinq secondes – sans mots, sans se toucher.",
+              "Ensuite, chacun pose sa pancarte et dit son propre prénom."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Scène, minutes approximatives",
+                "Ce qui se passe – question ensuite"
+              ],
+              "zeilen": [
+                [
+                  "1 · Le Quartier Général (début du film, min 1–6 env.)",
+                  "Riley naît, Joie arrive la première, puis Tristesse ; Peur, Dégoût et Colère montrent leur rôle. Question : à quoi servent Peur, Dégoût et Colère pour Riley ?"
+                ],
+                [
+                  "2 · Le premier jour d’école (min 16–20 env.)",
+                  "Joie trace un cercle où Tristesse doit rester ; dans la nouvelle classe, Tristesse touche un souvenir et Riley pleure devant tout le monde. Question : que se passe-t-il quand on veut enfermer une émotion ?"
+                ],
+                [
+                  "3 · Le dîner (min 26–30 env.)",
+                  "Joie et Tristesse se sont perdues ; à table, Colère prend les commandes, Riley crie, son père l’envoie dans sa chambre. Question : qui est aux commandes – chez Riley et chez son père ?"
+                ],
+                [
+                  "4 · Bing Bong (min 40–44 env.)",
+                  "Bing Bong perd sa fusée ; Joie veut le faire rire, mais c’est quand Tristesse s’assoit à côté de lui et l’écoute qu’il peut repartir. Question : pourquoi Tristesse aide-t-elle plus que Joie ici ?"
+                ]
+              ]
+            },
+            "tipp": "La question des émotions qui manquent vaut la peine : fort et calme sont sur notre roue, pas à la console ; Dégoût est à la console, pas sur la roue. Il existe plusieurs façons de ranger les émotions – aucune n’est la seule bonne.",
+            "wennEsKippt": "Si la technique lâche, passer tout de suite aux cartes scènes – la séance marche aussi bien. Si quelqu’un trouve le film « pour les petits », le prendre au sérieux et lui proposer un rôle d’expert : tu observes ce que le film montre de juste et de faux sur les émotions.",
+            "blatt": "ff7-steuerpult-karten"
+          },
+          {
+            "titel": "Scène 3 : la colère prend les commandes",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Montrer la scène 3 (environ 4 min) – sans film, en image figée avec la carte scène. Puis demander : qui était aux commandes, et qu’est-ce que Riley a dit à cause de ça ? À quel moment une autre émotion aurait-elle encore pu prendre les commandes ? Deux ou trois réponses (3 min). Ensuite, comparer l’exercice 1 pour les scènes 1 à 3 avec son voisin (2 min) et faire l’exercice 2 à deux : deux émotions désagréables des scènes – que font-elles, et à quoi servent-elles pour Riley ? (5 min) Pour finir, deux binômes lisent leur réponse (1 min).",
+            "sagen": [
+              "La colère n’est pas le problème – elle signale : ce n’est pas juste. Ce qui pose problème, c’est ce que Riley dit ensuite.",
+              "À quel moment Riley aurait-elle encore pu reprendre les commandes ?"
+            ],
+            "tipp": "La scène est drôle et touche quand même : beaucoup connaissent les disputes à table. C’est pourquoi on parle de Riley, pas de sa propre famille – ne pas poser ici la question « Vous connaissez ça ? ».",
+            "wennEsKippt": "Si certains commencent à raconter des disputes à la maison, les ramener gentiment au personnage : restons avec Riley ; qui veut en dire plus peut venir me voir après le cours. Si un jeune paraît touché, lui demander brièvement après le cours comment il va.",
+            "blatt": "ff7-wer-sitzt-am-steuer"
+          },
+          {
+            "titel": "Pause active : le miroir des visages",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève et se met face à face, à deux. L’un montre lentement, seulement avec le visage, une émotion de la console ; l’autre l’imite comme un miroir ; on échange après trois émotions (3 min). Pour finir, annoncer rapidement à la suite Joie, Dégoût, Peur, Colère, Tristesse – tout le monde montre le visage en même temps (1 min). Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Tout doucement, comme au ralenti. Le miroir fait exactement pareil – sans rire, si vous y arrivez."
+            ],
+            "tipp": "Si le nombre est impair, faire soi-même le miroir avec un jeune. Qui ne veut faire face à personne imite l’enseignant·e devant la classe.",
+            "wennEsKippt": "Si tout le monde ne fait plus que rire, laisser rire un instant puis poser une règle : au prochain tour, pas un bruit. Avec le ralenti, le calme revient souvent tout de suite."
+          },
+          {
+            "titel": "Scène 4 : pourquoi Tristesse aide",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Montrer la scène 4 (environ 3 min) – sans film, en image figée avec la carte scène ; un volontaire joue Bing Bong, deux autres Joie et Tristesse. Puis demander : pourquoi Tristesse aide-t-elle plus que Joie ici ? De quoi a besoin quelqu’un de triste – de blagues ou de quelqu’un qui écoute ? (4 min) Ensuite, retenir ensemble le message principal du film : que veut-il dire sur les émotions ? Écrire les réponses avec les mots de la classe sur une affiche ; si l’une des trois phrases manque, y amener par une question (6 min). Pour finir, cocher la dernière ligne de l’exercice 1 (2 min).",
+            "sagen": [
+              "Joie voulait faire rire Bing Bong. Tristesse s’est simplement assise à côté de lui. Qu’est-ce qui l’a le plus aidé – et pourquoi ?",
+              "Tristesse montre aux autres : j’ai besoin de réconfort. Sans Tristesse, personne ne remarquerait que Bing Bong a besoin d’aide."
+            ],
+            "punkte": [
+              "Chaque émotion a un rôle – Tristesse aussi.",
+              "Celle qui est aux commandes décide en partie de ce qu’on dit et de ce qu’on fait.",
+              "On ne peut pas enfermer une émotion – elle se manifeste quand même."
+            ],
+            "tipp": "Afficher les trois phrases à côté de l’affiche des messages. La deuxième phrase fait le lien avec le chapitre suivant : comment reprendre les commandes.",
+            "wennEsKippt": "Si quelqu’un se moque des larmes de Bing Bong, ne pas gronder, mais demander : qu’est-ce qu’on ressent quand on vous enlève quelque chose que vous aimiez ? En général, le calme revient. Si un jeune devient silencieux ou triste, ne pas lui en parler devant la classe, mais brièvement après le cours.",
+            "blatt": "ff7-steuerpult-karten"
+          },
+          {
+            "titel": "Et vous, qui serait aux commandes ?",
+            "dauer": 20,
+            "phase": "aktiv",
+            "text": "Les cinq émotions sont affichées en grand à cinq endroits de la salle. Lire une situation ; chacun va vers l’émotion qui serait sans doute aux commandes chez lui – on peut se placer entre deux affiches. Après chaque situation, demander à deux jeunes placés à des endroits différents pourquoi ils sont là ; c’est facultatif et sans jugement (six situations, 11 min). Pour finir : même situation, émotions différentes aux commandes – qu’est-ce que ça veut dire ? (1 min) De retour à sa place, chacun remplit seul l’exercice 3 (6 min) ; qui le souhaite lit une phrase (2 min).",
+            "sagen": [
+              "Allez vers l’émotion qui serait aux commandes chez vous. Entre deux, c’est permis.",
+              "Même situation, trois émotions différentes aux commandes. Qui veut dire pourquoi il est là ?"
+            ],
+            "punkte": [
+              "Le prof annonce pour demain un devoir en classe dont personne n’était au courant.",
+              "Dans le bus, quelqu’un qui sent très fort la cigarette s’assoit à côté de toi.",
+              "Ton meilleur ami annule votre rendez-vous au dernier moment – pour la troisième fois.",
+              "Au tournoi, tu marques le but décisif à la dernière minute.",
+              "Le soir, tu attends seul·e à l’arrêt de bus, et derrière toi, quelque chose bouge dans les buissons.",
+              "Ta série préférée est arrêtée en plein milieu de l’histoire."
+            ],
+            "tipp": "Qui ne veut pas se déplacer montre une affiche depuis sa place. S’il y a peu de place, tout le monde reste debout à sa place et montre une affiche en même temps, à trois.",
+            "wennEsKippt": "Si tout le monde court vers la même affiche pour rire, faire écouter la situation suivante les yeux fermés ; on ne part qu’au signal. Si un jeune reste toujours entre deux affiches, l’accepter : l’hésitation aussi est une réponse.",
+            "blatt": "ff7-wer-sitzt-am-steuer"
+          },
+          {
+            "titel": "Skill : l’écoute attentive",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : voici un skill qui permet de reprendre un peu les commandes quand une émotion devient trop forte. Tout le monde s’assoit confortablement, les yeux fermés ou le regard posé sur un point de la table. Poser lentement trois questions et laisser environ une minute de silence après chacune (liste) ; participer soi-même. Ensuite, trois ou quatre voix : quels bruits avez-vous remarqués ? Lequel était le plus discret ? Pour finir, expliquer : écouter pendant quelques respirations ramène l’attention dans le moment présent – et l’émotion aux commandes baisse souvent d’un cran. Quand est-ce que ça pourrait aider – dans le bus, avant de s’endormir, après une dispute ?",
+            "sagen": [
+              "Vous n’avez rien à faire, juste écouter. Vous pouvez garder les yeux ouverts."
+            ],
+            "punkte": [
+              "Quels bruits entends-tu tout près – dans la salle, sur ta chaise, en toi ?",
+              "Quels bruits viennent de plus loin – du couloir, de dehors ?",
+              "Quel est le bruit le plus discret que tu entends en ce moment ?"
+            ],
+            "tipp": "Les rires aussi sont un bruit – ne pas gronder, continuer calmement ; après la première minute, le silence s’installe en général. Un bol chantant ou un verre et une cuillère aident : frapper une fois et écouter jusqu’à ce que le son disparaisse.",
+            "wennEsKippt": "Si un jeune a du mal à rester immobile, il peut écouter les yeux ouverts en tournant quelque chose dans sa main – une gomme, une balle à malaxer. Si la classe s’agite trop, réduire le silence à trente secondes et refaire l’exercice la semaine prochaine."
+          },
+          {
+            "titel": "Skills-Pass et tour éclair",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Skills-Pass (2 min) : écrire la question clé au tableau – qu’est-ce que je retiens de l’histoire de Riley pour moi ? Ensuite, le tampon. Tour éclair (2 min) : chacun dit en un mot quelle émotion a été le plus souvent aux commandes chez lui aujourd’hui ; on peut dire « je passe ». Pour finir, annoncer la mission de la semaine et la prochaine séance (1 min).",
+            "sagen": [
+              "Un mot : qui était aux commandes chez vous aujourd’hui ?"
+            ],
+            "tipp": "Commencer soi-même le tour éclair avec un mot sincère, par exemple : curiosité. Cela donne le rythme – à vingt, le tour dure ainsi environ deux minutes."
+          }
+        ],
+        "bruecke": "Les émotions ne se passent pas seulement dans la tête : la semaine prochaine, vous cherchez où elles se logent dans le corps – et quel signal arrive en premier avec la colère et la peur.",
+        "mission": "Cette semaine, prends-toi une fois sur le fait : quelle émotion était aux commandes chez toi – et qu’est-ce que tu as dit ou fait à cause d’elle ?",
+        "hintergrund": "Pour « Vice-versa », Pixar s’est fait conseiller par les chercheurs en émotions Dacher Keltner et Paul Ekman. Ils soulignent deux idées que le film rend visibles : les émotions ne perturbent pas la pensée, elles l’organisent, et elles règlent la vie en commun – la tristesse montre aux autres qu’on a besoin de réconfort et fait ainsi venir de l’aide (Keltner & Ekman, 2015). Les cinq personnages correspondent à cinq des émotions de base décrites par Ekman (1992). L’image de la console rejoint la régulation des émotions : on ne peut pas les éteindre, mais on peut influencer leur intensité et la durée pendant laquelle elles dirigent nos actes (Gross, 1998). Les scènes créent de la distance – parler des émotions de Riley est plus facile que parler des siennes. Les images figées gardent cet avantage quand le film ne peut pas être projeté.",
+        "quellen": [
+          "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+        ],
+        "achtung": "Ne projeter le film qu’avec des droits vérifiés (accord de la direction, licence scolaire), pas simplement avec un compte de streaming privé ou un DVD personnel. Sans droits, la séance se fait entièrement avec les cartes scènes et les images figées. Le film parle de déménagement, de mal du pays et de disputes avec les parents : cela peut toucher des jeunes qui viennent de déménager ou de fuir leur pays, qui vivent loin de leur famille ou qui vivent une perte. Si un jeune se tait ou pleure, lui en parler plus tard en tête-à-tête. En cas de signes de violence à la maison, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
+        "differenzierung": {
+          "leichter": "Pour les jeunes qui apprennent encore la langue : montrer la version que la plupart comprennent, avec sous-titres ; écrire au tableau les noms des cinq émotions dans les deux langues, avec les visages. Exercice 1 : seulement cocher ; exercice 2 ensemble au tableau ; pour les images figées, un rôle sans texte.",
+          "schwerer": "Décrire une scène du quotidien comme une scène de console : qui est aux commandes, qui veut y aller – et que se passerait-il si une autre émotion prenait le relais ? Ou, en tant qu’expert du film, compléter après chaque scène ce qui s’est passé avant."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), scènes 1 et 2 avec questions et exercice 1 (15 min), scène 4 avec Bing Bong et le message principal (15 min), placement avec trois situations (8 min), Skills-Pass et tour éclair (7 min). La scène 3, les exercices 2 et 3 et l’écoute attentive sont supprimés ; l’exercice 3 peut être rattrapé au début de la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-wer-sitzt-am-steuer",
+      "bereich": "skills",
+      "thema": "gefuehle",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "30 Min. mit Szenen",
+      "eldib": [],
+      "schlagworte": [
+        "Steuerpult",
+        "Grundgefühle",
+        "Kummer",
+        "Förderfach"
+      ],
+      "bild": "icon:device-tv",
+      "kurs": [
+        "ff7-e10"
+      ],
+      "de": {
+        "titel": "Wer sitzt am Steuer?",
+        "untertitel": "Fünf Gefühle, ein Steuerpult – und wer gerade dran ist, bestimmt mit, was du tust.",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Stell dir vor, in deinem Kopf gibt es eine Zentrale mit einem Steuerpult. Dort arbeiten Freude, Kummer, Angst, Wut und Ekel. Wer gerade am Pult steht, bestimmt mit, was du sagst und tust."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wer steht am Pult? Kreuze nach jeder Szene an.",
+            "hinweis": "Mehr als ein Kreuz pro Szene ist erlaubt.",
+            "symbole": [
+              "ankreuzen"
+            ]
+          },
+          {
+            "art": "einschaetzung",
+            "items": [
+              "Szene 1 · Die Zentrale",
+              "Szene 2 · Der erste Schultag",
+              "Szene 3 · Das Abendessen",
+              "Szene 4 · Bing Bong"
+            ],
+            "optionen": [
+              "Freude",
+              "Kummer",
+              "Angst",
+              "Wut",
+              "Ekel"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wähle zwei unangenehme Gefühle aus den Szenen. Was machen sie – und wozu sind sie für Riley gut?",
+            "symbole": [
+              "partner",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Gefühl",
+              "Was macht es in der Szene?",
+              "Wozu ist es gut?"
+            ],
+            "breiten": [
+              1,
+              2.4,
+              2.2
+            ],
+            "zeilen": 2,
+            "beispiel": [
+              "Angst",
+              "Sie passt auf, dass Riley nicht über das Kabel stolpert.",
+              "Sie schützt vor Gefahren."
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Kummer hat seinen Platz",
+            "text": "Kummer zeigt anderen: Ich brauche Trost. Wer Kummer wegsperren will, wird ihn nicht los – er meldet sich trotzdem, oft im falschen Moment."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Und bei dir? Ergänze die Sätze.",
+            "hinweis": "Du entscheidest, was du davon erzählst.",
+            "symbole": [
+              "nachdenken",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Bei mir steht oft … am Pult, zum Beispiel wenn …",
+              "Am meisten erkenne ich mich in …, weil …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Aufgabe 3 gehört dir. Du liest nur vor, wenn du willst."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen erkennen in Szenen oder Standbildern, welches Gefühl am Steuer ist, begründen, wozu auch unangenehme Gefühle gut sind, und übertragen das Bild vom Steuerpult auf sich.",
+          "ablauf": [
+            "Einheit 10, Schritte 3, 4 und 6: nach jeder Szene in Aufgabe 1 ankreuzen.",
+            "Schritt 4: Aufgabe 1 vergleichen, Aufgabe 2 zu zweit (5 Min.).",
+            "Schritt 7: nach der Aufstellung Aufgabe 3 allein (6 Min.); vorgelesen wird nur freiwillig."
+          ],
+          "hintergrund": "Pixar ließ sich für den Film von den Emotionsforschern Keltner und Ekman beraten: Gefühle ordnen das Denken, und Kummer zeigt anderen, dass jemand Trost braucht (Keltner & Ekman, 2015). Die fünf Figuren entsprechen Grundgefühlen nach Ekman (1992). Über Rileys Gefühle zu sprechen, fällt leichter als über die eigenen.",
+          "quellen": [
+            "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
+            "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200."
+          ],
+          "material": "Filmausschnitte oder Szenenkarten, Gefühls-Schilder"
+        }
+      },
+      "fr": {
+        "titel": "Qui est aux commandes ?",
+        "untertitel": "Cinq émotions, une console – et celle qui est aux commandes décide en partie de ce que tu fais.",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Imagine que dans ta tête, il y a un quartier général avec une console. Joie, Tristesse, Peur, Colère et Dégoût y travaillent. Celle qui est aux commandes décide en partie de ce que tu dis et de ce que tu fais."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Qui est aux commandes ? Coche après chaque scène.",
+            "hinweis": "Tu peux faire plus d’une croix par scène.",
+            "symbole": [
+              "ankreuzen"
+            ]
+          },
+          {
+            "art": "einschaetzung",
+            "items": [
+              "Scène 1 · Le Quartier Général",
+              "Scène 2 · Le premier jour d’école",
+              "Scène 3 · Le dîner",
+              "Scène 4 · Bing Bong"
+            ],
+            "optionen": [
+              "Joie",
+              "Tristesse",
+              "Peur",
+              "Colère",
+              "Dégoût"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Choisis deux émotions désagréables des scènes. Que font-elles – et à quoi servent-elles pour Riley ?",
+            "symbole": [
+              "partner",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Émotion",
+              "Ce qu’elle fait dans la scène",
+              "À quoi elle sert"
+            ],
+            "breiten": [
+              1,
+              2.4,
+              2.2
+            ],
+            "zeilen": 2,
+            "beispiel": [
+              "Peur",
+              "Elle veille à ce que Riley ne trébuche pas sur le câble.",
+              "Elle protège des dangers."
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Tristesse a sa place",
+            "text": "Tristesse montre aux autres : j’ai besoin de réconfort. Qui veut l’enfermer ne s’en débarrasse pas – elle revient quand même, souvent au mauvais moment."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Et toi ? Complète les phrases.",
+            "hinweis": "Tu décides de ce que tu en racontes.",
+            "symbole": [
+              "nachdenken",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Chez moi, c’est souvent … qui est aux commandes, par exemple quand…",
+              "Je me reconnais le plus dans …, parce que…"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "L’exercice 3 t’appartient. Tu ne le lis à voix haute que si tu le veux."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes reconnaissent dans des scènes ou des images figées l’émotion aux commandes, expliquent à quoi servent aussi les émotions désagréables et appliquent l’image de la console à eux-mêmes.",
+          "ablauf": [
+            "Séance 10, étapes 3, 4 et 6 : cocher l’exercice 1 après chaque scène.",
+            "Étape 4 : comparer l’exercice 1, exercice 2 à deux (5 min).",
+            "Étape 7 : après le placement, exercice 3 seul (6 min) ; lecture à voix haute seulement si on le souhaite."
+          ],
+          "hintergrund": "Pour le film, Pixar s’est fait conseiller par les chercheurs en émotions Keltner et Ekman : les émotions organisent la pensée, et la tristesse montre aux autres qu’on a besoin de réconfort (Keltner & Ekman, 2015). Les cinq personnages correspondent à des émotions de base selon Ekman (1992). Parler des émotions de Riley est plus facile que parler des siennes.",
+          "quellen": [
+            "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
+            "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200."
+          ],
+          "material": "Extraits du film ou cartes scènes, pancartes des émotions"
+        }
+      }
+    },
+    {
+      "id": "ff7-steuerpult-karten",
+      "bereich": "skills",
+      "thema": "gefuehle",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe",
+        "klasse"
+      ],
+      "dauer": "45 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Standbild",
+        "Steuerpult",
+        "Szenenkarten",
+        "Förderfach"
+      ],
+      "bild": "icon:masks-theater",
+      "kurs": [
+        "ff7-e10"
+      ],
+      "de": {
+        "titel": "Das Steuerpult: Schilder und Szenen",
+        "untertitel": "Kopiervorlage – Schilder für die Standbilder, Szenenkarten für die Stunde ohne Film",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So werden die Karten gebraucht",
+            "punkte": [
+              "Die sechs Schilder auf festes Papier kopieren und ausschneiden; die Szenenkarten (Seite 2) einmal kopieren.",
+              "Ohne Film: die Szenenkarte vorlesen; sechs Freiwillige bauen mit den Schildern um einen Tisch Standbild A, dann B. Die Klasse führt Regie.",
+              "Keine Berührung, keine echten Personen aus der Klasse. Nach dem Standbild Schild ablegen und den eigenen Namen sagen."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 150,
+            "karten": [
+              {
+                "bild": "gesicht:froh",
+                "titel": "Freude"
+              },
+              {
+                "bild": "gesicht:traurig",
+                "titel": "Kummer"
+              },
+              {
+                "bild": "gesicht:aengstlich",
+                "titel": "Angst"
+              },
+              {
+                "bild": "gesicht:wuetend",
+                "titel": "Wut"
+              },
+              {
+                "bild": "gesicht:angeekelt",
+                "titel": "Ekel"
+              },
+              {
+                "bild": "figur:jana",
+                "titel": "Riley"
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 300,
+            "karten": [
+              {
+                "titel": "Szene 1 · Die Zentrale",
+                "text": "Riley wird geboren. In ihrem Kopf ist zuerst Freude da – Riley lacht. Kurz danach kommt Kummer – Riley weint. Dann kommen Angst, Ekel und Wut dazu: Angst passt auf, dass Riley nicht über ein Kabel stolpert. Ekel sorgt dafür, dass sie keinen Brokkoli isst. Wut wird laut, als es keinen Nachtisch gibt.\nStandbild A: Angst am Pult – Riley weicht dem Kabel aus.\nStandbild B: Wut am Pult – Riley schimpft am Esstisch."
+              },
+              {
+                "titel": "Szene 2 · Der erste Schultag",
+                "text": "Riley ist elf und mit ihren Eltern in eine neue Stadt gezogen. Am ersten Schultag will Freude, dass alles gut läuft: Sie malt einen Kreis auf den Boden, Kummer soll darin bleiben. In der Klasse soll Riley sich vorstellen und erzählt von ihrer alten Heimat und vom Eishockey. Da verlässt Kummer den Kreis und berührt eine schöne Erinnerung – Riley weint vor der ganzen Klasse.\nStandbild A: Freude am Pult, Kummer im Kreis – Riley lächelt.\nStandbild B: Kummer am Pult – Riley weint."
+              },
+              {
+                "titel": "Szene 3 · Das Abendessen",
+                "text": "Freude und Kummer sind verloren gegangen; am Pult stehen nur noch Angst, Wut und Ekel. Beim Abendessen fragt Rileys Mutter, wie die Schule war. Riley antwortet kurz und genervt, der Vater wird streng. Riley wird immer gereizter, bis Wut das Pult übernimmt: Sie schreit ihren Vater an. Er schickt sie in ihr Zimmer.\nStandbild A: Ekel am Pult – Riley verdreht die Augen.\nStandbild B: Wut am Pult – Riley schreit."
+              },
+              {
+                "titel": "Szene 4 · Bing Bong",
+                "text": "Freude und Kummer suchen den Weg zurück. Unterwegs treffen sie Bing Bong, Rileys Fantasiefreund aus Kindertagen. Er verliert seine Rakete, mit der er und Riley einmal zum Mond fliegen wollten, setzt sich hin und weint. Freude will ihn aufheitern – Grimassen, Witze. Es hilft nicht. Kummer setzt sich neben ihn und sagt: Sie haben dir etwas weggenommen, das du geliebt hast. Bing Bong weint sich aus – und kann danach weitergehen.\nStandbild A: Freude hüpft vor Bing Bong herum, er bleibt traurig.\nStandbild B: Kummer sitzt neben ihm und hört zu, er hebt den Kopf."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Mit Schildern und Szenenkarten lässt sich die Stunde vollständig ohne Film halten: Die Klasse baut die Zentrale in Standbildern nach und erkennt, welches Gefühl am Steuer ist.",
+          "ablauf": [
+            "Schilder auf festes Papier kopieren und ausschneiden, Szenenkarten einmal kopieren.",
+            "Einheit 10, Schritte 3, 4 und 6: Szenenkarte vorlesen, Standbild A und B bauen lassen, dann die Fragen aus Schritt 3.",
+            "Bing Bong spielt in Szene 4 eine freiwillige Person ohne Schild."
+          ],
+          "hintergrund": "Standbilder schaffen wie Filmszenen Abstand: Die Jugendlichen zeigen Gefühle einer erfundenen Figur, nicht ihre eigenen. Die fünf Figuren entsprechen Grundgefühlen nach Ekman (1992); dass Kummer anderen zeigt, dass jemand Trost braucht, betonen Keltner & Ekman (2015).",
+          "quellen": [
+            "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+            "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times."
+          ],
+          "material": "Festes Papier, Schere, ein Tisch als Steuerpult"
+        }
+      },
+      "fr": {
+        "titel": "La console : pancartes et scènes",
+        "untertitel": "Modèle à photocopier – pancartes pour les images figées, cartes scènes pour la séance sans film",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Comment utiliser les cartes",
+            "punkte": [
+              "Photocopier les six pancartes sur papier épais et les découper ; photocopier une fois les cartes scènes (page 2).",
+              "Sans film : lire la carte scène ; six volontaires construisent avec les pancartes, autour d’une table, l’image figée A, puis B. La classe fait la mise en scène.",
+              "On ne se touche pas, on ne joue pas de vraies personnes de la classe. Après l’image figée, poser la pancarte et dire son propre prénom."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 150,
+            "karten": [
+              {
+                "bild": "gesicht:froh",
+                "titel": "Joie"
+              },
+              {
+                "bild": "gesicht:traurig",
+                "titel": "Tristesse"
+              },
+              {
+                "bild": "gesicht:aengstlich",
+                "titel": "Peur"
+              },
+              {
+                "bild": "gesicht:wuetend",
+                "titel": "Colère"
+              },
+              {
+                "bild": "gesicht:angeekelt",
+                "titel": "Dégoût"
+              },
+              {
+                "bild": "figur:jana",
+                "titel": "Riley"
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 300,
+            "karten": [
+              {
+                "titel": "Scène 1 · Le Quartier Général",
+                "text": "Riley vient de naître. Dans sa tête, Joie est là la première – Riley rit. Juste après arrive Tristesse – Riley pleure. Puis viennent Peur, Dégoût et Colère : Peur veille à ce que Riley ne trébuche pas sur un câble. Dégoût l’empêche de manger du brocoli. Colère s’emporte quand il n’y a pas de dessert.\nImage figée A : Peur aux commandes – Riley évite le câble.\nImage figée B : Colère aux commandes – Riley se fâche à table."
+              },
+              {
+                "titel": "Scène 2 · Le premier jour d’école",
+                "text": "Riley a onze ans ; elle vient de déménager avec ses parents dans une nouvelle ville. Le premier jour d’école, Joie veut que tout se passe bien : elle trace un cercle par terre, et Tristesse doit rester dedans. En classe, Riley doit se présenter et parle de son ancienne ville et du hockey sur glace. Alors Tristesse sort du cercle et touche un beau souvenir – Riley pleure devant toute la classe.\nImage figée A : Joie aux commandes, Tristesse dans le cercle – Riley sourit.\nImage figée B : Tristesse aux commandes – Riley pleure."
+              },
+              {
+                "titel": "Scène 3 · Le dîner",
+                "text": "Joie et Tristesse se sont perdues ; aux commandes, il ne reste que Peur, Colère et Dégoût. Au dîner, la mère de Riley lui demande comment s’est passée l’école. Riley répond sèchement, son père devient sévère. Riley est de plus en plus agacée, jusqu’à ce que Colère prenne les commandes : elle crie sur son père. Il l’envoie dans sa chambre.\nImage figée A : Dégoût aux commandes – Riley lève les yeux au ciel.\nImage figée B : Colère aux commandes – Riley crie."
+              },
+              {
+                "titel": "Scène 4 · Bing Bong",
+                "text": "Joie et Tristesse cherchent le chemin du retour. En route, elles rencontrent Bing Bong, l’ami imaginaire de Riley quand elle était petite. Il perd sa fusée, avec laquelle Riley et lui voulaient aller sur la Lune, s’assoit et pleure. Joie veut le faire rire – grimaces, blagues. Rien n’y fait. Tristesse s’assoit à côté de lui et lui dit qu’on lui a pris quelque chose qu’il aimait. Bing Bong pleure un bon coup – et peut ensuite repartir.\nImage figée A : Joie sautille devant Bing Bong, qui reste triste.\nImage figée B : Tristesse assise à côté de lui l’écoute, il relève la tête."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Avec les pancartes et les cartes scènes, la séance peut se faire entièrement sans film : la classe reconstruit le Quartier Général en images figées et reconnaît l’émotion aux commandes.",
+          "ablauf": [
+            "Photocopier les pancartes sur papier épais et les découper, photocopier une fois les cartes scènes.",
+            "Séance 10, étapes 3, 4 et 6 : lire la carte scène, faire construire les images figées A et B, puis poser les questions de l’étape 3.",
+            "Dans la scène 4, un volontaire joue Bing Bong, sans pancarte."
+          ],
+          "hintergrund": "Comme les scènes de film, les images figées créent de la distance : les jeunes montrent les émotions d’un personnage inventé, pas les leurs. Les cinq personnages correspondent à des émotions de base selon Ekman (1992) ; Keltner & Ekman (2015) soulignent que la tristesse montre aux autres qu’on a besoin de réconfort.",
+          "quellen": [
+            "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+            "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times."
+          ],
+          "material": "Papier épais, ciseaux, une table comme console"
+        }
+      }
+    }
+  ]
+}

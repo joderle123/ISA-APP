@@ -1,0 +1,3134 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e18",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-mehr-als-worte"
+      ],
+      "vorlagen": [
+        "ff7-ohne-worte-karten"
+      ],
+      "woerter": [
+        {
+          "de": "die Körpersprache",
+          "fr": "le langage du corps"
+        },
+        {
+          "de": "die Stimme",
+          "fr": "la voix"
+        },
+        {
+          "de": "der Gesichtsausdruck",
+          "fr": "l’expression du visage (f.)"
+        },
+        {
+          "de": "das Missverständnis",
+          "fr": "le malentendu"
+        },
+        {
+          "de": "nachfragen",
+          "fr": "demander des précisions"
+        }
+      ],
+      "de": {
+        "titel": "Verbal und nonverbal",
+        "kurz": "Die Klasse erlebt, wie viel Gesicht, Stimme und Haltung verraten, liest Körpersprache in Tischgruppen, beschreibt Bilder nur mit Worten und übersetzt Emojis in ganze Sätze.",
+        "ziele": [
+          "unterscheiden, was Worte, Stimme und Körper mitteilen, und erkennen, wenn sie sich widersprechen",
+          "lesen Gefühle an Gesicht und Haltung ab und sagen, woran sie sie erkannt haben",
+          "erleben beim Beschreiben ohne Blickkontakt, wie Rückfragen das Verstehen verbessern",
+          "übersetzen Emojis in ganze Sätze und nennen eine Regel gegen Missverständnisse im Chat"
+        ],
+        "material": [
+          "Schülerheft, Stempel für den Pass",
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Gefühlskarten, ein Satz je Gruppe",
+          "Bildvorlagen (Seite 2), zehnmal",
+          "Papier und Bleistift für jedes Paar",
+          "Fünf Emojis, groß ausgedruckt",
+          "Moderationskarten, dicke Stifte",
+          "Uhr oder Handy-Timer"
+        ],
+        "vorbereitung": [
+          "Gefühlskarten: fünfmal kopieren, schneiden, je Gruppe ein Umschlag.",
+          "Bildvorlagen: zehnmal kopieren und vierteln.",
+          "Emojis groß drucken oder am Beamer zeigen; Tafelbilder (Schritt 3, 7) vorbereiten.",
+          "Platz für zehn Stuhlpaare Rücken an Rücken (Raum, Flur, Halle).",
+          "Vorher fragen, wer den Rätselsatz in einer anderen Sprache sagen mag."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: erst das Gesicht, dann das Wort"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick und Start ins Kapitel"
+          },
+          {
+            "min": "15–30",
+            "phase": "input",
+            "titel": "Worte, Stimme, Körper: Was glaubt ihr mir?"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Gefühle ohne Worte: Körpersprache lesen"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Spiegeln zu zweit"
+          },
+          {
+            "min": "50–68",
+            "phase": "aktiv",
+            "titel": "Rücken an Rücken: nur mit Worten"
+          },
+          {
+            "min": "68–85",
+            "phase": "uebung",
+            "titel": "Emojis in Sätze übersetzen"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Achtsames Hören"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Daumen ohne Worte, Skills-Pass, Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: erst das Gesicht, dann das Wort",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person wie gewohnt ihren Punkt auf das Gefühlsrad. Wenn alle sitzen, zeigt die Lehrkraft ihr eigenes Gefühl zuerst drei Sekunden lang ohne Worte, nur mit Gesicht und Haltung; die Klasse rät, dann nennt sie Wort und Zahl. Danach zeigen in den Tischgruppen alle gleichzeitig auf drei ihr Gefühl ohne Worte und schauen sich dabei am Tisch um; jede Person rät still für sich (2 Min.). Dann zeigen alle ihre Anspannung mit den Fingern (0–10 Finger für 0–100), und zwei, drei Freiwillige nennen Wort und Zahl – und ob man es ihnen angesehen hätte. Festhalten: Manches sieht man sofort, anderes gar nicht.",
+            "sagen": [
+              "Heute zeigt ihr euer Gefühl zuerst ohne ein Wort – alle gleichzeitig, nur für eure Tischgruppe. Wer nicht mag, schaut einfach auf seinen Punkt.",
+              "Hättet ihr es erkannt? Nicht laut raten, nur für euch."
+            ],
+            "tipp": "Ruhig ein wenig übertreiben: Wer als Lehrkraft beim eigenen Gefühl gähnt und die Schultern hängen lässt, nimmt allen die Scheu. Dass alle gleichzeitig zeigen, schützt die Stillen – niemand steht allein im Mittelpunkt.",
+            "wennEsKippt": "Wird über ein Gesicht gelacht, kurz anhalten und auf die Klassenvereinbarung zeigen: Wir lachen miteinander, nicht übereinander. Wer danach nichts zeigen will, nennt nur Wort und Zahl. Zeigt jemand acht Finger oder mehr oder klebt den Punkt auf ein schweres Wort, nicht vor der Klasse nachfragen, sondern in der nächsten Gruppenarbeit leise fragen, ob er oder sie gerade etwas braucht."
+          },
+          {
+            "titel": "Rückblick und Start ins Kapitel",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor, in der der Skills-Koffer gepackt wurde. Per Daumen nach der Wochen-Mission fragen (hoch, Mitte, runter); eine Stimme erzählt in einem Satz, niemand muss sie geschafft haben. Dann das neue Kapitel an die Tafel schreiben: Kommunikation und Grenzen – Wie sage ich, was ich fühle und brauche? Die vier Stunden am Tafelrand notieren: ohne Worte, Ich-Botschaften und Zuhören, Grenzen erkennen, Stopp sagen.",
+            "sagen": [
+              "In den nächsten vier Wochen geht es darum, wie ihr sagt, was ihr fühlt und braucht – und wie ihr zeigt, wo eure Grenze ist. Heute fangen wir mit allem an, was ohne Worte ankommt."
+            ],
+            "tipp": "Die vier Stunden des Kapitels am Tafelrand stehen lassen. Wer weiß, wohin ein Kapitel führt, arbeitet ruhiger – und die Verbindung zum Kapitel davor liegt auf der Hand: Erst runter, dann reden."
+          },
+          {
+            "titel": "Worte, Stimme, Körper: Was glaubt ihr mir?",
+            "dauer": 15,
+            "phase": "input",
+            "text": "Die Lehrkraft sagt die vier Sätze aus der Liste wie beschrieben (vorher einmal laut üben); nach jedem Satz zeigt die Klasse auf drei: Daumen hoch für die Worte, runter für den Rest (4 Min.). Dann zehn Sekunden schweigend mit verschränkten Armen auf die Uhr schauen: Was habe ich gerade gesagt? Daraus das Tafelbild entwickeln (3 Min.). Zu zweit (4 Min.): Wer früher im Jahr Geburtstag hat, sagt viermal „Ja, klar.“, jedes Mal in einer anderen Stimmung von der Tafel (begeistert, genervt, traurig, ironisch); die andere Person rät, dann wechseln. Zum Schluss der Rätselsatz (4 Min.): Die Freiwilligen sagen „Heute gibt es Nudeln in der Kantine“ in einer anderen Sprache, in der Stimmung, die die Lehrkraft ihnen zuflüstert; die Klasse rät das Gefühl.",
+            "sagen": [
+              "Was glaubt ihr mir – den Worten oder dem Rest?",
+              "Auch wer schweigt oder wegschaut, sagt etwas. Man kann nicht nicht kommunizieren.",
+              "Ihr habt kein Wort verstanden und wusstet trotzdem, wie es gemeint war. Das macht die Stimme."
+            ],
+            "punkte": [
+              "„Mir geht’s super.“ – traurige Stimme, hängende Schultern, Blick nach unten",
+              "„Ich bin überhaupt nicht nervös.“ – zitternde Stimme, die Finger spielen mit dem Stift",
+              "„Klar, mach ruhig.“ – Augenrollen, verschränkte Arme",
+              "„Schön, dass du da bist.“ – ohne aufzuschauen, den Blick auf dem Handy"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Kanal",
+                "Was dazugehört"
+              ],
+              "zeilen": [
+                [
+                  "Worte (verbal)",
+                  "was ich sage: welche Wörter, ob ich frage oder befehle – und was ich weglasse"
+                ],
+                [
+                  "Stimme",
+                  "laut oder leise, schnell oder langsam, freundlich, genervt oder ironisch; Seufzen, Lachen, Pausen"
+                ],
+                [
+                  "Körper (nonverbal)",
+                  "Gesicht (Mimik), Hände (Gestik), Haltung, Blick, Abstand"
+                ],
+                [
+                  "Man kann nicht nicht kommunizieren.",
+                  "Auch Schweigen, Wegschauen und Weggehen sagen etwas."
+                ]
+              ]
+            },
+            "tipp": "Körpersprache beschreiben, nie bewerten: Blickkontakt ist für manche Jugendliche anstrengend, und in manchen Familien gilt es als unhöflich, Erwachsenen lange in die Augen zu schauen. Der Rätselsatz macht mehrsprachige Jugendliche zu Fachleuten – oft der stärkste Moment der Stunde.",
+            "wennEsKippt": "Übertreibt jemand beim „Ja, klar.“ ins Alberne, das aufgreifen: Genau so schlägt die Stimme die Worte. Wird über eine Sprache oder einen Akzent gelacht, sofort ruhig stoppen: Über Sprachen lachen wir hier nicht. Meldet sich niemand für den Rätselsatz, sagt die Lehrkraft ihn selbst in einer Sprache, die die Klasse nicht kennt, oder summt ihn nur – auch dann ist das Gefühl zu hören."
+          },
+          {
+            "titel": "Gefühle ohne Worte: Körpersprache lesen",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Jede Tischgruppe bekommt einen Umschlag mit zwölf Gefühlskarten. Reihum zieht eine Person eine Karte und zeigt das Gefühl zehn Sekunden lang nur mit Gesicht und Körper, im Sitzen oder Stehen; die anderen raten, die Situation auf der Karte darf als Hilfe vorgelesen werden. Wer nicht spielen mag, sagt „weiter“ und gibt die Karte der nächsten Person; eine Person je Gruppe – gern jemand, der lieber nicht spielt – notiert, was leicht und was schwer zu erraten war (7 Min.). In der Klasse sammeln: Welche Gefühle waren leicht, welche schwer – und woran habt ihr sie erkannt (4 Min.)? Festhalten: Körpersprache ist ein Hinweis, kein Beweis. Zum Schluss Aufgabe 1 auf dem Blatt „Mehr als Worte“ allein (4 Min.).",
+            "sagen": [
+              "Nur Gesicht und Körper – keine Laute, kein Zeigen auf Dinge im Raum.",
+              "Woran habt ihr es erkannt: am Blick, am Mund, an den Händen, an den Schultern, an den Füßen?",
+              "Wer die Arme verschränkt, ist vielleicht sauer – oder friert. Wenn ihr unsicher seid: nachfragen statt Gedanken lesen."
+            ],
+            "tipp": "Meist sind wütend, müde und überrascht leicht zu erraten, enttäuscht, verlegen und besorgt schwer. Genau darüber lohnt das Gespräch: Gerade die leisen Gefühle übersieht man bei anderen schnell. Stockt eine Gruppe, setzt sich die Lehrkraft dazu und spielt die erste Karte selbst.",
+            "wennEsKippt": "Wird eine Gruppe zu laut oder albern, die Regel verschärfen: nur noch im Sitzen und nur mit dem Gesicht. Spielt jemand eine Mitschülerin oder einen Mitschüler nach, die Karte einziehen und die Person für den Rest der Übung notieren lassen. Wer gar nicht spielen will, rät nur mit – auch das ist Körpersprache lesen.",
+            "blatt": "ff7-ohne-worte-karten"
+          },
+          {
+            "titel": "Bewegungspause: Spiegeln zu zweit",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen auf und stellen sich zu zweit gegenüber, etwa eine Armlänge Abstand. Wer früher im Jahr Geburtstag hat, führt: Hände, Arme und Gesicht bewegen sich ganz langsam, die andere Person spiegelt jede Bewegung (1 Min.). Dann wechseln (1 Min.). In der dritten Runde führt niemand: Beide versuchen, sich gemeinsam zu bewegen, ohne abzusprechen, wer anfängt (1 Min.). Keine Berührung, kein Wort. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "So langsam, dass die andere Person mitkommt. Ihr redet nur mit den Augen."
+            ],
+            "tipp": "Danach reicht eine Frage: Woran habt ihr gemerkt, was als Nächstes kommt? Meist ist es der Blick – genau der fehlt in der nächsten Übung.",
+            "wennEsKippt": "Wird aus dem Spiegeln ein Grimassen-Wettbewerb, darf das kurz sein; dann eine Runde nur mit den Händen. Wer keinen Partner möchte, spiegelt die Lehrkraft."
+          },
+          {
+            "titel": "Rücken an Rücken: nur mit Worten",
+            "dauer": 18,
+            "phase": "aktiv",
+            "text": "Die Tischnachbarn bilden Paare und stellen zwei Stühle mit den Lehnen aneinander, sodass sie Rücken an Rücken sitzen, ohne sich zu berühren (2 Min.). Runde 1 (3 Min.): Eine Person bekommt verdeckt Vorlage B und beschreibt, die andere zeichnet, darf aber nichts fragen und sich nicht umdrehen; dann Vorlage und Zeichnung nebeneinanderlegen (1 Min.). Runde 2 (3 Min.): Rollen tauschen, jetzt mit Vorlage C – etwa gleich schwer –, und Rückfragen sind erlaubt; wieder vergleichen (1 Min.). In der Klasse auswerten (6 Min.): Welche Runde hat besser geklappt, und warum? Was geholfen hat, kommt an die Tafel (Liste), und jede Person kreuzt es in Aufgabe 2 auf dem Blatt an. Stühle zurückstellen (2 Min.).",
+            "sagen": [
+              "Ihr seht euch nicht. Ihr habt nur Worte – genau wie im Chat.",
+              "Was hat in Runde 2 geholfen, das in Runde 1 gefehlt hat?",
+              "Wo seht ihr euch im Alltag nicht – und wo gehen Nachrichten deshalb schief?"
+            ],
+            "punkte": [
+              "Erst das Ganze, dann die Teile: „Es sind drei Formen.“",
+              "Genaue Wörter für die Lage: oben links, in der Mitte, darunter, daneben.",
+              "Größen vergleichen: so groß wie eine Handfläche, halb so groß wie das Quadrat.",
+              "Bilder benutzen: sieht aus wie ein Dach, wie eine Tüte.",
+              "Nachfragen und zurückmelden: „Meinst du so?“ – „Ja, genau.“"
+            ],
+            "tipp": "Runde 1 klappt fast nie – das ist der Sinn. Vorher ankündigen, dass es schwer wird; beim Vergleichen wird viel gelacht, und genau darin steckt die Erkenntnis. Paare mit einer gemeinsamen Sprache dürfen sie benutzen: Es geht ums Beschreiben, nicht ums Deutsche.",
+            "wennEsKippt": "Wird die zeichnende Person in Runde 1 ungeduldig oder wirft den Stift hin, kurz anhalten und verraten, dass es ohne Rückfragen kaum klappen kann. Dreht sich jemand um oder zeigt auf die Vorlage, eine neue Vorlage nehmen und neu starten. Bei ungerader Zahl entsteht eine Dreiergruppe: Die dritte Person sieht die Vorlage und notiert, welche Wörter geholfen haben. Ist kein Platz für Stuhlpaare, bleiben die Paare am Tisch und stellen eine aufgeklappte Mappe als Sichtschutz zwischen sich.",
+            "blatt": "ff7-ohne-worte-karten"
+          },
+          {
+            "titel": "Emojis in Sätze übersetzen",
+            "dauer": 17,
+            "phase": "uebung",
+            "text": "Die fünf Emojis nacheinander zeigen (Liste). Jede Tischgruppe bekommt eines, berät leise und schreibt zwei verschiedene Übersetzungen auf je eine Moderationskarte: ganze Sätze, die jemand meinen könnte, der genau dieses Emoji schickt (4 Min.). Die Gruppen lesen ihre Sätze vor, die Klasse ergänzt, die Karten kommen neben das Emoji an die Tafel (5 Min.). Meist gehen die Übersetzungen weit auseinander – das ist die Erkenntnis. Dann zu zweit Aufgabe 3 und 4 auf dem Blatt (5 Min.); je zwei Gesichter und zwei Nachrichten reichen. Zum Schluss das Tafelbild mit den Chat-Regeln aufdecken und gemeinsam prüfen: Passt jede Regel, oder fehlt eine (3 Min.)?",
+            "sagen": [
+              "Was will jemand sagen, der euch genau das schickt? Schreibt es als ganzen Satz.",
+              "Im Chat fehlen Stimme und Gesicht. Was macht euer Kopf dann aus einem ‚ok.‘ ohne alles?"
+            ],
+            "punkte": [
+              "Gesicht mit Dampf aus der Nase – offiziell „triumphierend“, die meisten lesen es als wütend",
+              "Totenkopf – für die einen „Ich lach mich tot“, für andere Gefahr oder Tod",
+              "Daumen hoch – „Passt, danke“ oder kurz angebunden und genervt",
+              "Kopfüber-Gesicht – ironisch, „na ja“, peinlich oder egal",
+              "Gefaltete Hände – bitte, danke, beten oder ein High five"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Chat-Regel",
+                "So klingt das"
+              ],
+              "zeilen": [
+                [
+                  "Im Zweifel nachfragen statt raten",
+                  "„Wie meinst du das?“"
+                ],
+                [
+                  "Wichtiges und Streit lieber persönlich oder per Sprachnachricht",
+                  "„Können wir das morgen in der Pause klären?“"
+                ],
+                [
+                  "Vor dem Senden einmal mit müden Augen lesen",
+                  "Wie klingt das für jemanden, der schon genervt ist?"
+                ],
+                [
+                  "Ab 70 nichts abschicken",
+                  "Erst runter, dann schreiben."
+                ]
+              ]
+            },
+            "tipp": "Jugendliche und Erwachsene lesen Emojis oft verschieden – ein guter Moment, die Klasse als Fachleute zu fragen: Was heißt der Totenkopf bei euch? Den Hinweis auf das Dampf-Gesicht zum Schluss geben: Selbst Bildzeichen sind nicht eindeutig.",
+            "wennEsKippt": "Kommt ein aktueller Streit im Klassenchat oder eine verletzende Nachricht zur Sprache, nicht in der Klasse auswerten: anerkennen, dass das belastet, und ein Gespräch nach der Stunde anbieten. Will jemand echte Chats auf dem Handy zeigen, freundlich ablehnen: Heute bleiben wir bei erfundenen Nachrichten. Schreibt eine Gruppe nur Anzügliches, die Karte nicht vorlesen und um eine Übersetzung bitten, die man auch der Oma schicken könnte.",
+            "blatt": "ff7-mehr-als-worte"
+          },
+          {
+            "titel": "Skill: Achtsames Hören",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: Zuhören ist ein Skill, den man trainieren kann – nächste Woche geht es genau darum. Alle sitzen bequem, die Augen geschlossen oder auf einen Punkt am Boden gerichtet. Die drei Schritte langsam anleiten, je etwa eine Minute, und selbst mitmachen (Liste). Danach nennen drei, vier Freiwillige ihr leisestes Geräusch. Zum Schluss fragen, wann das helfen könnte – im Bus, abends im Bett, wenn der Kopf voll ist – und erklären: Wer auf Geräusche achtet, holt die Aufmerksamkeit aus dem Gedankenkarussell ins Hier und Jetzt.",
+            "sagen": [
+              "Ihr müsst nichts tun außer hören. Wenn Gedanken kommen, geht einfach zurück zu den Geräuschen.",
+              "Was war das leiseste Geräusch, das ihr gehört habt?"
+            ],
+            "punkte": [
+              "Hör eine Minute nur auf die Geräusche hier im Raum: Stühle, Atem, das Summen der Lampe.",
+              "Hör eine Minute auf die Geräusche draußen: Flur, Straße, Wind.",
+              "Such eine Minute lang das leiseste Geräusch, das du finden kannst – und atme dabei langsam aus."
+            ],
+            "tipp": "Wer schwer still sitzen kann, hält einen Knetball oder Radiergummi in der Hand. Macht jemand absichtlich ein Geräusch, es ruhig mitzählen: Auch das ist ein Geräusch im Raum.",
+            "wennEsKippt": "Kichern ist beim ersten Mal normal: kurz warten und leise weitersprechen. Ist es zu unruhig, auf eine Minute kürzen und nur das leiseste Geräusch suchen lassen. Niemand muss die Augen schließen."
+          },
+          {
+            "titel": "Daumen ohne Worte, Skills-Pass, Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Passend zum Thema zuerst ohne Worte: Auf drei zeigen alle mit dem Daumen, wie die Stunde war (1 Min.). Dann schreibt jede Person einen Satz in den Skills-Pass zur Leitfrage an der Tafel: Woran merke ich, wie jemand etwas meint? Danach gibt es den Stempel (3 Min.). Zum Schluss die Wochen-Mission im Heft ansagen und den Ausblick auf die nächste Stunde geben (1 Min.).",
+            "sagen": [
+              "Daumen auf drei – ohne ein Wort. Eins, zwei, drei.",
+              "Für den Skills-Pass: Woran merkt ihr, wie jemand etwas meint?"
+            ],
+            "tipp": "Wem nichts einfällt, schreibt die Chat-Regel ab, die ihm am wichtigsten ist."
+          }
+        ],
+        "bruecke": "Nächste Woche lernt ihr einen Satz, der viel Streit verhindert: die Ich-Botschaft – und wie man so zuhört, dass sich jemand wirklich verstanden fühlt.",
+        "mission": "Achte diese Woche einmal darauf, wie jemand etwas sagt: Gesicht, Stimme, Hände. Oder frag einmal nach, wenn dir eine Nachricht komisch vorkommt.",
+        "hintergrund": "Kommunikation läuft über mehrere Kanäle: Worte, Stimme und Körper. Watzlawick et al. (1967) prägten den Satz, dass man nicht nicht kommunizieren kann, und beschrieben, dass jede Nachricht einen Inhalts- und einen Beziehungsaspekt hat; die Beziehung zeigt sich vor allem in Stimme, Blick und Haltung. Widersprechen sich die Kanäle, muss das Gegenüber deuten – und liegt dabei oft daneben, denn Körpersprache ist ein Hinweis, kein Beweis. Wie viel Rückfragen ausmachen, zeigten Leavitt und Mueller (1951): Beschrieb jemand geometrische Figuren, zeichneten die Zuhörenden deutlich genauer, sobald sie nachfragen durften – es dauerte nur länger. Im Chat fehlen Stimme und Körper ganz. Wer schreibt, hört beim Tippen den eigenen Tonfall mit und überschätzt, wie gut Ironie oder Ernst beim anderen ankommen (Kruger et al., 2005). Deshalb übt die Stunde das einfachste Gegenmittel: nachfragen.",
+        "quellen": [
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+          "Leavitt, H. J. & Mueller, R. A. H. (1951). Some effects of feedback on communication. Human Relations, 4(4), 401–410.",
+          "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936."
+        ],
+        "achtung": "Die Körpersprache einzelner Jugendlicher nie vor der Klasse deuten oder bewerten: Blickkontakt, Abstand und Gesten sind von Familie zu Familie und von Kultur zu Kultur verschieden. Die Pantomime ist freiwillig, und über Sprachen und Akzente wird nicht gelacht. Kommen ein aktueller Chat-Streit, verletzende Nachrichten oder Cybermobbing zur Sprache: nicht in der Klasse auswerten, keine echten Chats zeigen lassen, nach der Stunde ein Gespräch anbieten, auf die BEE SECURE Helpline (8002 1234) hinweisen und bei Hinweisen auf Mobbing Régent und SePAS einbeziehen.",
+        "differenzierung": {
+          "leichter": "Die Gefühlskarten zeigen zu jedem Wort ein Gesicht; so spielen auch Jugendliche mit, die das Wort noch nicht kennen. „Ja, klar.“ und den Rätselsatz darf man in jeder Sprache sagen; bei Rücken an Rücken arbeiten Paare mit einer gemeinsamen Sprache in dieser oder nehmen Vorlage A. Wer mühsam schreibt, übersetzt die Emojis mündlich oder mit einem Wort aus dem Wortspeicher.",
+          "schwerer": "Eine eigene missverständliche Nachricht erfinden und von einer anderen Gruppe deuten lassen: Stimmt die Deutung mit der Absicht überein? Bei Rücken an Rücken die schwierigste Vorlage D nehmen oder als dritte Person notieren, welche Wörter geholfen haben."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gesicht und Zahl (5 Min.), die vier Sätze und das Tafelbild Worte, Stimme, Körper (10 Min.), Gefühle ohne Worte in den Tischgruppen (10 Min.), Emojis in Sätze übersetzen und Chat-Regeln (15 Min.), achtsames Hören (5 Min.), Skills-Pass und Wochen-Mission (5 Min.). Rücken an Rücken entfällt; die Übung passt in eine spätere Stunde, wenn Zeit übrig bleibt."
+      },
+      "fr": {
+        "titel": "Verbal et non verbal",
+        "kurz": "La classe découvre tout ce que le visage, la voix et la posture trahissent, lit le langage du corps en îlots, décrit des dessins avec les seuls mots et traduit des émojis en phrases complètes.",
+        "ziele": [
+          "distinguent ce que transmettent les mots, la voix et le corps, et repèrent quand ils se contredisent",
+          "lisent des émotions sur un visage et dans une posture et disent à quoi ils les ont reconnues",
+          "découvrent, en décrivant un dessin dos à dos, que les questions améliorent la compréhension",
+          "traduisent des émojis en phrases complètes et nomment une règle contre les malentendus dans les messages"
+        ],
+        "material": [
+          "Cahiers, tampon pour le Skills-Pass",
+          "Roue des émotions, 20 gommettes",
+          "Cartes émotions, un jeu par îlot",
+          "Modèles de dessins (page 2), 10 fois",
+          "Papier et crayon pour chaque binôme",
+          "Cinq émojis imprimés en grand",
+          "Cartes (cartons), gros feutres",
+          "Montre ou minuteur"
+        ],
+        "vorbereitung": [
+          "Cartes émotions : 5 copies, découper, une enveloppe par îlot.",
+          "Modèles de dessins : 10 copies, couper en quatre.",
+          "Émojis imprimés en grand ou projetés ; tableaux des étapes 3 et 7 prêts.",
+          "Place pour dix paires de chaises dos à dos (salle, couloir, hall).",
+          "Demander à l’avance qui veut dire la phrase mystère dans une autre langue."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : d’abord le visage, ensuite le mot"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour sur la séance et nouveau chapitre"
+          },
+          {
+            "min": "15–30",
+            "phase": "input",
+            "titel": "Mots, voix, corps : qu’est-ce que vous croyez ?"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Des émotions sans mots : lire le langage du corps"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : le miroir à deux"
+          },
+          {
+            "min": "50–68",
+            "phase": "aktiv",
+            "titel": "Dos à dos : rien que des mots"
+          },
+          {
+            "min": "68–85",
+            "phase": "uebung",
+            "titel": "Traduire des émojis en phrases"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : l’écoute attentive"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Pouce sans un mot, Skills-Pass, mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : d’abord le visage, ensuite le mot",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle comme d’habitude sa gommette sur la roue des émotions. Une fois tout le monde assis, montrer d’abord sa propre émotion pendant trois secondes, sans un mot, seulement avec le visage et la posture ; la classe devine, puis donner le mot et le chiffre. Ensuite, dans les îlots, tout le monde montre son émotion en même temps et sans un mot, à « trois », en regardant les autres autour de la table ; chacun devine en silence, pour soi (2 min). Puis chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100), et deux ou trois volontaires disent leur mot et leur chiffre – et si on l’aurait deviné. À retenir : certaines choses se voient tout de suite, d’autres pas du tout.",
+            "sagen": [
+              "Aujourd’hui, vous montrez d’abord votre émotion sans un mot – tous en même temps, seulement pour votre îlot. Si vous ne voulez pas, regardez simplement votre gommette.",
+              "Vous l’auriez deviné ? Ne le dites pas, gardez-le pour vous."
+            ],
+            "tipp": "Ne pas hésiter à exagérer un peu : un adulte qui bâille et laisse tomber les épaules en montrant sa propre émotion met tout le monde à l’aise. Comme tout le monde montre en même temps, les plus discrets sont protégés – personne n’est seul au centre.",
+            "wennEsKippt": "Si quelqu’un se moque d’un visage, s’arrêter un instant et montrer la charte de classe : on rit ensemble, pas les uns des autres. Qui ne veut plus rien montrer donne seulement son mot et son chiffre. Si un jeune montre huit doigts ou plus, ou colle sa gommette sur un mot lourd, ne pas poser de questions devant la classe, mais lui demander discrètement, pendant le travail en îlot suivant, s’il a besoin de quelque chose."
+          },
+          {
+            "titel": "Retour sur la séance et nouveau chapitre",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance, celle où l’on a rempli la valise à skills. Pour la mission de la semaine, faire un sondage du pouce (en haut, au milieu, en bas) ; une voix raconte en une phrase, personne n’est obligé de l’avoir réussie. Écrire ensuite le nouveau chapitre au tableau : Communication et limites – Comment dire ce que je ressens et ce dont j’ai besoin ? Noter en marge les quatre séances : sans les mots, messages en « je » et écoute, reconnaître les limites, dire stop.",
+            "sagen": [
+              "Pendant quatre semaines, on va voir comment dire ce que vous ressentez et ce dont vous avez besoin – et comment montrer où se trouve votre limite. Aujourd’hui, on commence par tout ce qui passe sans les mots."
+            ],
+            "tipp": "Laisser les quatre séances du chapitre en marge du tableau. Quand on sait où mène un chapitre, on travaille plus sereinement – et le lien avec le chapitre précédent est évident : d’abord redescendre, ensuite parler."
+          },
+          {
+            "titel": "Mots, voix, corps : qu’est-ce que vous croyez ?",
+            "dauer": 15,
+            "phase": "input",
+            "text": "Dire les quatre phrases de la liste comme indiqué (s’y exercer une fois avant) ; après chaque phrase, la classe montre à « trois » : pouce en haut pour les mots, en bas pour le reste (4 min). Puis rester dix secondes en silence, bras croisés, les yeux sur la montre : qu’est-ce que je viens de dire ? En tirer le tableau (3 min). À deux (4 min) : celui ou celle dont l’anniversaire tombe le plus tôt dans l’année dit quatre fois « Oui, bien sûr. », chaque fois sur un des tons notés au tableau (enthousiaste, agacé, triste, ironique) ; l’autre devine, puis on échange. Pour finir, la phrase mystère (4 min) : les volontaires disent « Aujourd’hui, il y a des pâtes à la cantine » dans une autre langue, sur le ton qu’on leur a soufflé à l’oreille ; la classe devine l’émotion.",
+            "sagen": [
+              "Qu’est-ce que vous croyez – les mots ou le reste ?",
+              "Même celui qui se tait ou détourne le regard dit quelque chose. On ne peut pas ne pas communiquer.",
+              "Vous n’avez pas compris un seul mot, et pourtant vous saviez comment c’était dit. C’est la voix qui fait ça."
+            ],
+            "punkte": [
+              "« Je vais super bien. » – voix triste, épaules tombantes, regard vers le sol",
+              "« Je ne suis pas du tout stressé. » – voix qui tremble, les doigts jouent avec le stylo",
+              "« Vas-y, fais comme tu veux. » – yeux au ciel, bras croisés",
+              "« Ça fait plaisir de te voir. » – sans lever les yeux, le regard sur le portable"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Canal",
+                "Ce qui en fait partie"
+              ],
+              "zeilen": [
+                [
+                  "Les mots (verbal)",
+                  "ce que je dis : quels mots, si je demande ou si j’ordonne – et ce que je ne dis pas"
+                ],
+                [
+                  "La voix",
+                  "fort ou doucement, vite ou lentement, gentiment, agacé ou ironique ; soupirs, rires, silences"
+                ],
+                [
+                  "Le corps (non verbal)",
+                  "le visage (mimiques), les mains (gestes), la posture, le regard, la distance"
+                ],
+                [
+                  "On ne peut pas ne pas communiquer.",
+                  "Se taire, détourner le regard ou partir, ça dit aussi quelque chose."
+                ]
+              ]
+            },
+            "tipp": "Décrire le langage du corps, ne jamais le juger : le contact visuel est fatigant pour certains jeunes, et dans certaines familles, regarder longtemps un adulte dans les yeux passe pour impoli. La phrase mystère fait des jeunes plurilingues des experts – c’est souvent le meilleur moment de la séance.",
+            "wennEsKippt": "Si quelqu’un pousse le « Oui, bien sûr. » jusqu’au ridicule, le reprendre : voilà exactement comment la voix l’emporte sur les mots. Si quelqu’un se moque d’une langue ou d’un accent, arrêter tout de suite, calmement : ici, on ne rit pas des langues. Si personne ne veut dire la phrase mystère, la dire soi-même dans une langue que la classe ne connaît pas, ou simplement la fredonner – l’émotion s’entend quand même."
+          },
+          {
+            "titel": "Des émotions sans mots : lire le langage du corps",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Chaque îlot reçoit une enveloppe avec douze cartes émotions. À tour de rôle, un jeune tire une carte et montre l’émotion pendant dix secondes, uniquement avec le visage et le corps, assis ou debout ; les autres devinent, et on peut lire la situation de la carte pour aider. Qui ne veut pas jouer dit « je passe » et donne la carte à son voisin ; dans chaque îlot, une personne – volontiers quelqu’un qui préfère ne pas jouer – note ce qui était facile ou difficile à deviner (7 min). En classe entière : quelles émotions étaient faciles, lesquelles difficiles – et à quoi les avez-vous reconnues (4 min) ? À retenir : le langage du corps est un indice, pas une preuve. Pour finir, exercice 1 de la fiche « Plus que des mots », seul (4 min).",
+            "sagen": [
+              "Seulement le visage et le corps – pas de sons, et on ne montre pas d’objets dans la salle.",
+              "À quoi l’avez-vous reconnue : au regard, à la bouche, aux mains, aux épaules, aux pieds ?",
+              "Quelqu’un qui croise les bras est peut-être fâché – ou il a froid. Si vous n’êtes pas sûrs : demandez au lieu de lire dans les pensées."
+            ],
+            "tipp": "En général, la colère, la fatigue et la surprise se devinent facilement ; la déception, la gêne et l’inquiétude beaucoup moins. C’est là que la discussion devient intéressante : ce sont justement les émotions discrètes qu’on rate facilement chez les autres. Si un îlot bloque, s’asseoir avec lui et jouer soi-même la première carte.",
+            "wennEsKippt": "Si un îlot devient trop bruyant ou chahute, durcir la règle : seulement assis et seulement avec le visage. Si quelqu’un imite un ou une camarade, reprendre la carte et lui confier la prise de notes pour le reste de l’exercice. Qui ne veut pas jouer du tout se contente de deviner – c’est aussi lire le langage du corps.",
+            "blatt": "ff7-ohne-worte-karten"
+          },
+          {
+            "titel": "Pause active : le miroir à deux",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève et se met face à face, à deux, à environ une longueur de bras. Celui ou celle dont l’anniversaire tombe le plus tôt dans l’année mène : les mains, les bras et le visage bougent très lentement, et l’autre reproduit chaque mouvement comme dans un miroir (1 min). Puis on échange (1 min). Au troisième tour, personne ne mène : les deux essaient de bouger ensemble, sans décider qui commence (1 min). Pas de contact, pas un mot. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Assez lentement pour que l’autre puisse suivre. Vous ne parlez qu’avec les yeux."
+            ],
+            "tipp": "Ensuite, une question suffit : à quoi avez-vous vu ce qui allait venir ? En général, c’est le regard – et c’est justement lui qui manque dans l’exercice suivant.",
+            "wennEsKippt": "Si le miroir tourne au concours de grimaces, on peut le laisser un instant ; puis faire un tour avec les mains seulement. Qui ne veut pas de partenaire fait le miroir de l’enseignant·e."
+          },
+          {
+            "titel": "Dos à dos : rien que des mots",
+            "dauer": 18,
+            "phase": "aktiv",
+            "text": "Les voisins de table forment des binômes et placent deux chaises dossier contre dossier, pour s’asseoir dos à dos sans se toucher (2 min). Tour 1 (3 min) : l’un reçoit le modèle B, face cachée, et le décrit ; l’autre dessine, sans poser de questions et sans se retourner ; puis on pose le modèle et le dessin côte à côte (1 min). Tour 2 (3 min) : on échange les rôles, avec le modèle C – à peu près aussi difficile –, et cette fois les questions sont permises ; on compare à nouveau (1 min). Bilan en classe entière (6 min) : quel tour a le mieux marché, et pourquoi ? Ce qui a aidé va au tableau (liste), et chacun le coche dans l’exercice 2 de la fiche. Remettre les chaises en place (2 min).",
+            "sagen": [
+              "Vous ne vous voyez pas. Vous n’avez que des mots – exactement comme dans un message.",
+              "Qu’est-ce qui vous a aidés au tour 2 et qui manquait au tour 1 ?",
+              "Où est-ce qu’on ne se voit pas au quotidien – et où les messages tournent-ils mal à cause de ça ?"
+            ],
+            "punkte": [
+              "D’abord l’ensemble, ensuite les détails : « Il y a trois formes. »",
+              "Des mots précis pour la position : en haut à gauche, au milieu, en dessous, à côté.",
+              "Comparer les tailles : grand comme une paume, deux fois plus petit que le carré.",
+              "Utiliser des images : ça ressemble à un toit, à un cornet.",
+              "Poser des questions et confirmer : « Comme ça ? » – « Oui, exactement. »"
+            ],
+            "tipp": "Le tour 1 ne marche presque jamais – c’est voulu. Annoncer d’avance que ce sera difficile ; au moment de comparer, on rit beaucoup, et c’est dans ce rire que se fait la découverte. Les binômes qui partagent une langue peuvent l’utiliser : le but est de décrire, pas de parler français.",
+            "wennEsKippt": "Si celui ou celle qui dessine s’impatiente ou jette son crayon au tour 1, arrêter un instant et révéler que, sans questions, ça ne peut presque pas marcher. Si quelqu’un se retourne ou montre le modèle, prendre un autre modèle et recommencer. Avec un nombre impair, former un groupe de trois : la troisième personne voit le modèle et note les mots qui ont aidé. S’il n’y a pas de place pour les chaises, les binômes restent à leur table, séparés par un classeur ouvert.",
+            "blatt": "ff7-ohne-worte-karten"
+          },
+          {
+            "titel": "Traduire des émojis en phrases",
+            "dauer": 17,
+            "phase": "uebung",
+            "text": "Montrer les cinq émojis l’un après l’autre (liste). Chaque îlot en reçoit un, en discute à voix basse et écrit deux traductions différentes, chacune sur une carte : des phrases complètes que pourrait vouloir dire quelqu’un qui envoie exactement cet émoji (4 min). Les îlots lisent leurs phrases, la classe complète, et les cartes vont au tableau à côté de l’émoji (5 min). En général, les traductions sont très éloignées les unes des autres – c’est ce qu’il faut découvrir. Puis, à deux, exercices 3 et 4 de la fiche (5 min) ; deux visages et deux messages suffisent. Pour finir, découvrir le tableau des règles pour les messages et vérifier ensemble : chaque règle convient-elle, en manque-t-il une (3 min) ?",
+            "sagen": [
+              "Qu’est-ce que veut dire quelqu’un qui vous envoie exactement ça ? Écrivez-le en phrase complète.",
+              "Dans un message, il n’y a ni voix ni visage. Qu’est-ce que votre tête fait alors d’un “ok.” tout sec ?"
+            ],
+            "punkte": [
+              "Visage avec de la vapeur qui sort du nez – officiellement « triomphant », la plupart le lisent comme en colère",
+              "Tête de mort – pour les uns « Je suis mort de rire », pour d’autres le danger ou la mort",
+              "Pouce levé – « Ça marche, merci » ou sec et agacé",
+              "Visage à l’envers – ironique, « bof », gêné ou indifférent",
+              "Mains jointes – s’il te plaît, merci, prier ou « tope là »"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Règle pour les messages",
+                "Ce que ça donne"
+              ],
+              "zeilen": [
+                [
+                  "En cas de doute, demander au lieu de deviner",
+                  "« Tu veux dire quoi ? »"
+                ],
+                [
+                  "Les choses importantes et les disputes : plutôt en face ou par vocal",
+                  "« On en parle demain à la récré ? »"
+                ],
+                [
+                  "Avant d’envoyer, relire comme si on était fatigué",
+                  "Comment ça sonne pour quelqu’un qui est déjà agacé ?"
+                ],
+                [
+                  "À partir de 70 : ne rien envoyer",
+                  "D’abord redescendre, ensuite écrire."
+                ]
+              ]
+            },
+            "tipp": "Les jeunes et les adultes lisent souvent les émojis différemment – le bon moment pour interroger la classe en experte : que veut dire la tête de mort chez vous ? Garder pour la fin l’anecdote du visage à la vapeur : même les images ne sont pas sans ambiguïté.",
+            "wennEsKippt": "Si une dispute en cours dans le groupe de la classe ou un message blessant est évoqué, ne pas en parler en classe : reconnaître que c’est pesant et proposer un entretien après le cours. Si quelqu’un veut montrer de vraies conversations sur son portable, refuser gentiment : aujourd’hui, on reste sur des messages inventés. Si un îlot n’écrit que des choses déplacées, ne pas lire la carte et demander une traduction qu’on pourrait aussi envoyer à sa grand-mère.",
+            "blatt": "ff7-mehr-als-worte"
+          },
+          {
+            "titel": "Skill : l’écoute attentive",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : écouter, c’est un skill qui s’entraîne – c’est justement le sujet de la semaine prochaine. Tout le monde s’assoit confortablement, les yeux fermés ou posés sur un point au sol. Guider lentement les trois étapes, environ une minute chacune, et faire l’exercice soi-même (liste). Ensuite, trois ou quatre volontaires disent le bruit le plus faible qu’ils ont entendu. Pour finir, demander quand cela pourrait aider – dans le bus, le soir au lit, quand la tête est pleine – et expliquer : écouter les bruits sort l’attention du tourbillon des pensées et la ramène ici et maintenant.",
+            "sagen": [
+              "Vous n’avez rien à faire, à part écouter. Si des pensées arrivent, revenez simplement aux bruits.",
+              "Quel est le bruit le plus faible que vous avez entendu ?"
+            ],
+            "punkte": [
+              "Écoute pendant une minute seulement les bruits de la salle : les chaises, la respiration, le bourdonnement de la lampe.",
+              "Écoute pendant une minute les bruits du dehors : le couloir, la rue, le vent.",
+              "Cherche pendant une minute le bruit le plus faible que tu puisses trouver – et expire lentement."
+            ],
+            "tipp": "Qui a du mal à rester tranquille peut garder une balle anti-stress ou une gomme dans la main. Si quelqu’un fait exprès du bruit, le compter calmement avec les autres : c’est aussi un bruit de la salle.",
+            "wennEsKippt": "Les rires sont normaux la première fois : attendre un instant et continuer à voix basse. Si c’est trop agité, réduire à une minute et chercher seulement le bruit le plus faible. Personne n’est obligé de fermer les yeux."
+          },
+          {
+            "titel": "Pouce sans un mot, Skills-Pass, mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Pour rester dans le thème, d’abord sans un mot : à « trois », tout le monde montre avec le pouce comment était la séance (1 min). Puis chacun écrit une phrase dans son Skills-Pass, à partir de la question au tableau : à quoi je vois ce que quelqu’un veut vraiment dire ? Ensuite, le tampon (3 min). Pour finir, annoncer la mission de la semaine dans le cahier et la prochaine séance (1 min).",
+            "sagen": [
+              "Le pouce à “trois” – sans un mot. Un, deux, trois.",
+              "Pour le Skills-Pass : à quoi voyez-vous ce que quelqu’un veut vraiment dire ?"
+            ],
+            "tipp": "Qui ne trouve rien recopie la règle pour les messages qui lui semble la plus importante."
+          }
+        ],
+        "bruecke": "La semaine prochaine, vous apprendrez une phrase qui évite beaucoup de disputes : le message en « je » – et comment écouter pour que l’autre se sente vraiment compris.",
+        "mission": "Cette semaine, observe une fois comment quelqu’un dit les choses : visage, voix, mains. Ou, si un message te paraît bizarre, demande une fois ce qu’il voulait dire.",
+        "hintergrund": "La communication passe par plusieurs canaux : les mots, la voix et le corps. Watzlawick et al. (1967) ont formulé l’idée qu’on ne peut pas ne pas communiquer et montré que tout message a un aspect de contenu et un aspect de relation ; la relation se lit surtout dans la voix, le regard et la posture. Quand les canaux se contredisent, l’autre doit interpréter – et se trompe souvent, car le langage du corps est un indice, pas une preuve. Leavitt et Mueller (1951) ont montré l’effet des questions : quand une personne décrivait des figures géométriques, ceux qui écoutaient dessinaient bien plus juste dès qu’ils pouvaient poser des questions, mais il leur fallait plus de temps. Dans un message écrit, la voix et le corps disparaissent. Celui qui écrit entend son propre ton dans sa tête et surestime à quel point l’ironie ou le sérieux passent chez l’autre (Kruger et al., 2005). D’où le remède le plus simple, que la séance entraîne : demander.",
+        "quellen": [
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+          "Leavitt, H. J. & Mueller, R. A. H. (1951). Some effects of feedback on communication. Human Relations, 4(4), 401–410.",
+          "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936."
+        ],
+        "achtung": "Ne jamais interpréter ni juger devant la classe le langage du corps d’un jeune : le contact visuel, la distance et les gestes varient d’une famille et d’une culture à l’autre. Le mime est facultatif, et on ne rit ni des langues ni des accents. Si une dispute en ligne, des messages blessants ou du cyberharcèlement sont évoqués : ne pas en parler en classe, ne pas faire montrer de vraies conversations, proposer un entretien après le cours, signaler la BEE SECURE Helpline (8002 1234) et, en cas de signes de harcèlement, impliquer le régent et le SePAS.",
+        "differenzierung": {
+          "leichter": "Les cartes émotions montrent un visage pour chaque mot ; ainsi, même les jeunes qui ne connaissent pas encore le mot peuvent jouer. On peut dire « Oui, bien sûr. » et la phrase mystère dans n’importe quelle langue ; pour l’exercice dos à dos, les binômes qui partagent une langue l’utilisent ou prennent le modèle A. Qui a du mal à écrire traduit les émojis à l’oral ou avec un des mots clés du tableau.",
+          "schwerer": "Inventer un message ambigu et le faire interpréter par un autre îlot : l’interprétation correspond-elle à l’intention ? Pour l’exercice dos à dos, prendre le modèle D, le plus difficile, ou noter, en troisième personne, les mots qui ont aidé."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le visage et le chiffre (5 min), les quatre phrases et le tableau mots, voix, corps (10 min), des émotions sans mots en îlots (10 min), traduire des émojis et règles pour les messages (15 min), écoute attentive (5 min), Skills-Pass et mission de la semaine (5 min). L’exercice dos à dos est supprimé ; il trouve sa place dans une séance ultérieure, s’il reste du temps."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-mehr-als-worte",
+      "bereich": "skills",
+      "thema": "kommunikation",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "10 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Körpersprache",
+        "Stimme",
+        "Emojis",
+        "Chat",
+        "Förderfach"
+      ],
+      "bild": "icon:messages",
+      "kurs": [
+        "ff7-e18"
+      ],
+      "de": {
+        "titel": "Mehr als Worte",
+        "untertitel": "Was Gesicht, Stimme und Haltung mitsagen – und was im Chat fehlt",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Wer spricht, sagt mehr als Worte: Gesicht, Stimme und Haltung reden mit. Auch wer schweigt oder wegschaut, sendet eine Botschaft."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Passen Worte und Körper zusammen? Schreib unter jedes Bild, was der Körper sagt."
+          },
+          {
+            "art": "comic",
+            "spalten": 3,
+            "felder": [
+              {
+                "figuren": [
+                  "figur:ben:wuetend:verschraenkt"
+                ],
+                "text": "Mir doch egal.",
+                "untertitel": ""
+              },
+              {
+                "figuren": [
+                  "figur:jana:traurig:stehen"
+                ],
+                "text": "Passt schon, echt.",
+                "untertitel": ""
+              },
+              {
+                "figuren": [
+                  "figur:ben:froh:jubeln"
+                ],
+                "text": "Wir haben gewonnen.",
+                "untertitel": ""
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Drei Kanäle",
+            "text": "Passen sie nicht zusammen, glauben die meisten der Stimme und dem Körper. Aber Körpersprache ist ein Hinweis, kein Beweis: Im Zweifel fragst du nach.",
+            "punkte": [
+              "Worte: was du sagst.",
+              "Stimme: wie du es sagst – laut oder leise, freundlich oder genervt.",
+              "Körper: Gesicht, Blick, Hände, Haltung, Abstand."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Rücken an Rücken: Was hat dir beim Beschreiben und Zeichnen geholfen? Kreuze an."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 2,
+            "frei": 1,
+            "items": [
+              "erst das Ganze, dann die Teile",
+              "genaue Wörter: oben, unten, links, rechts",
+              "Größen vergleichen",
+              "Bilder benutzen: „sieht aus wie …“",
+              "nachfragen",
+              "zurückmelden: „Meinst du so?“"
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Emojis übersetzen: Jemand schickt dir nur dieses Gesicht. Was könnte gemeint sein? Schreib einen ganzen Satz.",
+            "hinweis": "Es gibt mehr als eine richtige Antwort."
+          },
+          {
+            "art": "wortspeicher",
+            "titel": "Wörter, die helfen",
+            "items": [
+              "peinlich",
+              "langweilig",
+              "überrascht",
+              "sauer",
+              "genervt",
+              "ironisch",
+              "egal",
+              "einverstanden"
+            ]
+          },
+          {
+            "art": "bilder",
+            "klein": true,
+            "spalten": 1,
+            "bilder": [
+              {
+                "bild": "gesicht:verlegen",
+                "text": "______________________________________________________________________"
+              },
+              {
+                "bild": "gesicht:gelangweilt",
+                "text": "______________________________________________________________________"
+              },
+              {
+                "bild": "gesicht:ueberrascht",
+                "text": "______________________________________________________________________"
+              },
+              {
+                "bild": "gesicht:wuetend",
+                "text": "______________________________________________________________________"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Im Chat fehlen Stimme und Gesicht. Wie kann die Nachricht gemeint sein – und wie kann sie ankommen?",
+            "hinweis": "Stichworte reichen."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Nachricht",
+              "So kann sie gemeint sein",
+              "So kann sie ankommen"
+            ],
+            "breiten": [
+              1.1,
+              2,
+              2
+            ],
+            "zeilen": 0,
+            "beispiel": [
+              "„ok.“",
+              "Passt, bin einverstanden.",
+              "Die ist sauer auf mich."
+            ],
+            "werte": [
+              [
+                "„Wie du meinst.“",
+                "",
+                ""
+              ],
+              [
+                "„Wir müssen reden.“",
+                "",
+                ""
+              ],
+              [
+                "„Aha.“",
+                "",
+                ""
+              ]
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "So vermeidest du Missverständnisse",
+            "punkte": [
+              "Im Zweifel nachfragen: „Wie meinst du das?“",
+              "Wichtiges und Streit lieber persönlich oder per Sprachnachricht klären.",
+              "Über 70? Erst runterkommen, dann schreiben."
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen erkennen, wenn Worte und Körper sich widersprechen, übersetzen Emoji-Gesichter in ganze Sätze und überlegen, wie eine Nachricht ohne Stimme ankommt.",
+          "ablauf": [
+            "Einheit 18, Schritt 4 (4 Min.): Aufgabe 1 allein nach den Gefühlskarten, dann kurz vergleichen.",
+            "Schritt 6: Nach Rücken an Rücken kreuzt jede Person in Aufgabe 2 an, was ihr geholfen hat.",
+            "Schritt 7 (5 Min.): Aufgabe 3 und 4 zu zweit, nachdem die Tischgruppen die Emojis übersetzt haben; die Tipps im Kasten mit den Chat-Regeln an der Tafel vergleichen."
+          ],
+          "hintergrund": "Jede Nachricht hat einen Inhalts- und einen Beziehungsaspekt; die Beziehung zeigt sich vor allem in Stimme, Blick und Haltung (Watzlawick et al., 1967). Im Chat fehlen beide, und wer schreibt, überschätzt, wie gut der eigene Tonfall ankommt (Kruger et al., 2005).",
+          "quellen": [
+            "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+            "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936."
+          ],
+          "material": "Schülerheft, Stifte"
+        }
+      },
+      "fr": {
+        "titel": "Plus que des mots",
+        "untertitel": "Ce que le visage, la voix et la posture disent aussi – et ce qui manque dans les messages",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Quand on parle, on dit plus que des mots : le visage, la voix et la posture parlent aussi. Même celui qui se tait ou détourne le regard envoie un message."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Les mots et le corps vont-ils ensemble ? Écris sous chaque image ce que dit le corps."
+          },
+          {
+            "art": "comic",
+            "spalten": 3,
+            "felder": [
+              {
+                "figuren": [
+                  "figur:ben:wuetend:verschraenkt"
+                ],
+                "text": "Je m’en fiche.",
+                "untertitel": ""
+              },
+              {
+                "figuren": [
+                  "figur:jana:traurig:stehen"
+                ],
+                "text": "Ça va, je t’assure.",
+                "untertitel": ""
+              },
+              {
+                "figuren": [
+                  "figur:ben:froh:jubeln"
+                ],
+                "text": "On a gagné !",
+                "untertitel": ""
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Trois canaux",
+            "text": "Quand ils ne vont pas ensemble, la plupart des gens croient la voix et le corps. Mais le langage du corps est un indice, pas une preuve : en cas de doute, tu demandes.",
+            "punkte": [
+              "Les mots : ce que tu dis.",
+              "La voix : comment tu le dis – fort ou doucement, gentiment ou agacé.",
+              "Le corps : visage, regard, mains, posture, distance."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dos à dos : qu’est-ce qui t’a aidé à décrire et à dessiner ? Coche."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 2,
+            "frei": 1,
+            "items": [
+              "d’abord l’ensemble, ensuite les détails",
+              "des mots précis : en haut, en bas, à gauche, à droite",
+              "comparer les tailles",
+              "utiliser des images : « ça ressemble à… »",
+              "poser des questions",
+              "confirmer : « Comme ça ? »"
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Traduire des émojis : quelqu’un t’envoie seulement ce visage. Que veut-il dire ? Écris une phrase complète.",
+            "hinweis": "Il y a plus d’une bonne réponse."
+          },
+          {
+            "art": "wortspeicher",
+            "titel": "Des mots pour t’aider",
+            "items": [
+              "gênant",
+              "ennuyeux",
+              "surpris",
+              "fâché",
+              "agacé",
+              "ironique",
+              "indifférent",
+              "d’accord"
+            ]
+          },
+          {
+            "art": "bilder",
+            "klein": true,
+            "spalten": 1,
+            "bilder": [
+              {
+                "bild": "gesicht:verlegen",
+                "text": "______________________________________________________________________"
+              },
+              {
+                "bild": "gesicht:gelangweilt",
+                "text": "______________________________________________________________________"
+              },
+              {
+                "bild": "gesicht:ueberrascht",
+                "text": "______________________________________________________________________"
+              },
+              {
+                "bild": "gesicht:wuetend",
+                "text": "______________________________________________________________________"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dans un message, il manque la voix et le visage. Que peut vouloir dire le message – et comment peut-il être reçu ?",
+            "hinweis": "Quelques mots suffisent."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Message",
+              "Ce qu’il peut vouloir dire",
+              "Comment il peut être reçu"
+            ],
+            "breiten": [
+              1.1,
+              2,
+              2
+            ],
+            "zeilen": 0,
+            "beispiel": [
+              "« ok. »",
+              "D’accord, ça me va.",
+              "Elle m’en veut."
+            ],
+            "werte": [
+              [
+                "« Comme tu veux. »",
+                "",
+                ""
+              ],
+              [
+                "« Faut qu’on parle. »",
+                "",
+                ""
+              ],
+              [
+                "« Si tu le dis. »",
+                "",
+                ""
+              ]
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Pour éviter les malentendus",
+            "punkte": [
+              "En cas de doute, demande : « Tu veux dire quoi ? »",
+              "Règle les choses importantes et les disputes plutôt en face ou par message vocal.",
+              "Au-dessus de 70 ? D’abord redescendre, ensuite écrire."
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes repèrent quand les mots et le corps se contredisent, traduisent des visages-émojis en phrases complètes et réfléchissent à la façon dont un message est reçu sans la voix.",
+          "ablauf": [
+            "Séance 18, étape 4 (4 min) : exercice 1 seul après les cartes émotions, puis comparer brièvement.",
+            "Étape 6 : après l’exercice dos à dos, chacun coche dans l’exercice 2 ce qui l’a aidé.",
+            "Étape 7 (5 min) : exercices 3 et 4 à deux, après la traduction des émojis en îlots ; comparer les conseils de l’encadré aux règles pour les messages au tableau."
+          ],
+          "hintergrund": "Tout message a un aspect de contenu et un aspect de relation ; la relation passe surtout par la voix, le regard et la posture (Watzlawick et al., 1967). Dans un message écrit, les deux manquent, et celui qui écrit surestime à quel point son ton passe (Kruger et al., 2005).",
+          "quellen": [
+            "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+            "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936."
+          ],
+          "material": "Cahier de l’élève, stylos"
+        }
+      }
+    },
+    {
+      "id": "ff7-ohne-worte-karten",
+      "bereich": "skills",
+      "thema": "kommunikation",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "15 Min. und 18 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Gefühlskarten",
+        "Pantomime",
+        "Rücken an Rücken",
+        "Bildvorlagen",
+        "Förderfach"
+      ],
+      "bild": "icon:masks-theater",
+      "kurs": [
+        "ff7-e18"
+      ],
+      "de": {
+        "titel": "Gefühlskarten und Bildvorlagen",
+        "untertitel": "Kopiervorlage: Seite 1 fünfmal (ein Satz je Tischgruppe), Seite 2 zehnmal, vierteln",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Gefühlskarten für Schritt 4: ausschneiden und je Tischgruppe in einen Umschlag stecken. Wer eine Karte zieht, zeigt nur das Gefühl; die Situation hilft beim Spielen und darf zum Raten vorgelesen werden.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "karten": [
+              {
+                "titel": "stolz",
+                "text": "Dein Tor hat das Spiel entschieden.",
+                "bild": "gesicht:stolz"
+              },
+              {
+                "titel": "gelangweilt",
+                "text": "Die dritte Erklärung zum selben Thema.",
+                "bild": "gesicht:gelangweilt"
+              },
+              {
+                "titel": "nervös",
+                "text": "Gleich musst du vor der Klasse sprechen.",
+                "bild": "gesicht:nervoes"
+              },
+              {
+                "titel": "verlegen",
+                "text": "Du hast die Lehrerin aus Versehen „Mama“ genannt.",
+                "bild": "gesicht:verlegen"
+              },
+              {
+                "titel": "enttäuscht",
+                "text": "Das Konzert, auf das du dich gefreut hast, fällt aus.",
+                "bild": "gesicht:enttaeuscht"
+              },
+              {
+                "titel": "überrascht",
+                "text": "Deine Freunde haben eine Party für dich vorbereitet.",
+                "bild": "gesicht:ueberrascht"
+              },
+              {
+                "titel": "angeekelt",
+                "text": "In deinem Essen liegt ein Haar.",
+                "bild": "gesicht:angeekelt"
+              },
+              {
+                "titel": "müde",
+                "text": "Montag, erste Stunde, kaum geschlafen.",
+                "bild": "gesicht:muede"
+              },
+              {
+                "titel": "besorgt",
+                "text": "Dein Hund frisst seit gestern nichts.",
+                "bild": "gesicht:besorgt"
+              },
+              {
+                "titel": "verwirrt",
+                "text": "Du kommst in den Raum – und niemand ist da.",
+                "bild": "gesicht:verwirrt"
+              },
+              {
+                "titel": "aufgeregt",
+                "text": "Morgen geht es in die Ferien.",
+                "bild": "gesicht:aufgeregt"
+              },
+              {
+                "titel": "wütend",
+                "text": "Der Bus fährt dir vor der Nase weg.",
+                "bild": "gesicht:wuetend"
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "text",
+            "text": "Bildvorlagen für Schritt 6 (Rücken an Rücken): zehnmal kopieren und vierteln. Runde 1 mit Vorlage B, Runde 2 mit Vorlage C; A ist leichter (für Paare, die sich schwertun), D schwerer (für Schnelle).",
+            "klein": true
+          },
+          {
+            "art": "geo",
+            "spalten": 2,
+            "felder": [
+              {
+                "h": 100,
+                "label": "Vorlage A",
+                "elemente": [
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        14,
+                        50
+                      ],
+                      [
+                        44,
+                        50
+                      ],
+                      [
+                        44,
+                        80
+                      ],
+                      [
+                        14,
+                        80
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        14,
+                        50
+                      ],
+                      [
+                        29,
+                        30
+                      ],
+                      [
+                        44,
+                        50
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        75,
+                        26
+                      ],
+                      [
+                        74.8,
+                        28
+                      ],
+                      [
+                        74.1,
+                        29.9
+                      ],
+                      [
+                        73,
+                        31.6
+                      ],
+                      [
+                        71.6,
+                        33
+                      ],
+                      [
+                        69.9,
+                        34.1
+                      ],
+                      [
+                        68,
+                        34.8
+                      ],
+                      [
+                        66,
+                        35
+                      ],
+                      [
+                        64,
+                        34.8
+                      ],
+                      [
+                        62.1,
+                        34.1
+                      ],
+                      [
+                        60.4,
+                        33
+                      ],
+                      [
+                        59,
+                        31.6
+                      ],
+                      [
+                        57.9,
+                        29.9
+                      ],
+                      [
+                        57.2,
+                        28
+                      ],
+                      [
+                        57,
+                        26
+                      ],
+                      [
+                        57.2,
+                        24
+                      ],
+                      [
+                        57.9,
+                        22.1
+                      ],
+                      [
+                        59,
+                        20.4
+                      ],
+                      [
+                        60.4,
+                        19
+                      ],
+                      [
+                        62.1,
+                        17.9
+                      ],
+                      [
+                        64,
+                        17.2
+                      ],
+                      [
+                        66,
+                        17
+                      ],
+                      [
+                        68,
+                        17.2
+                      ],
+                      [
+                        69.9,
+                        17.9
+                      ],
+                      [
+                        71.6,
+                        19
+                      ],
+                      [
+                        73,
+                        20.4
+                      ],
+                      [
+                        74.1,
+                        22.1
+                      ],
+                      [
+                        74.8,
+                        24
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      6,
+                      87
+                    ],
+                    "bis": [
+                      83,
+                      87
+                    ]
+                  }
+                ]
+              },
+              {
+                "h": 100,
+                "label": "Vorlage B",
+                "elemente": [
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        28,
+                        34
+                      ],
+                      [
+                        27.8,
+                        36
+                      ],
+                      [
+                        27.1,
+                        37.9
+                      ],
+                      [
+                        26,
+                        39.6
+                      ],
+                      [
+                        24.6,
+                        41
+                      ],
+                      [
+                        22.9,
+                        42.1
+                      ],
+                      [
+                        21,
+                        42.8
+                      ],
+                      [
+                        19,
+                        43
+                      ],
+                      [
+                        17,
+                        42.8
+                      ],
+                      [
+                        15.1,
+                        42.1
+                      ],
+                      [
+                        13.4,
+                        41
+                      ],
+                      [
+                        12,
+                        39.6
+                      ],
+                      [
+                        10.9,
+                        37.9
+                      ],
+                      [
+                        10.2,
+                        36
+                      ],
+                      [
+                        10,
+                        34
+                      ],
+                      [
+                        10.2,
+                        32
+                      ],
+                      [
+                        10.9,
+                        30.1
+                      ],
+                      [
+                        12,
+                        28.4
+                      ],
+                      [
+                        13.4,
+                        27
+                      ],
+                      [
+                        15.1,
+                        25.9
+                      ],
+                      [
+                        17,
+                        25.2
+                      ],
+                      [
+                        19,
+                        25
+                      ],
+                      [
+                        21,
+                        25.2
+                      ],
+                      [
+                        22.9,
+                        25.9
+                      ],
+                      [
+                        24.6,
+                        27
+                      ],
+                      [
+                        26,
+                        28.4
+                      ],
+                      [
+                        27.1,
+                        30.1
+                      ],
+                      [
+                        27.8,
+                        32
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        58.5,
+                        32
+                      ],
+                      [
+                        58.1,
+                        35.1
+                      ],
+                      [
+                        57.1,
+                        38.1
+                      ],
+                      [
+                        55.4,
+                        40.7
+                      ],
+                      [
+                        53.2,
+                        42.9
+                      ],
+                      [
+                        50.6,
+                        44.6
+                      ],
+                      [
+                        47.6,
+                        45.6
+                      ],
+                      [
+                        44.5,
+                        46
+                      ],
+                      [
+                        41.4,
+                        45.6
+                      ],
+                      [
+                        38.4,
+                        44.6
+                      ],
+                      [
+                        35.8,
+                        42.9
+                      ],
+                      [
+                        33.6,
+                        40.7
+                      ],
+                      [
+                        31.9,
+                        38.1
+                      ],
+                      [
+                        30.9,
+                        35.1
+                      ],
+                      [
+                        30.5,
+                        32
+                      ],
+                      [
+                        30.9,
+                        28.9
+                      ],
+                      [
+                        31.9,
+                        25.9
+                      ],
+                      [
+                        33.6,
+                        23.3
+                      ],
+                      [
+                        35.8,
+                        21.1
+                      ],
+                      [
+                        38.4,
+                        19.4
+                      ],
+                      [
+                        41.4,
+                        18.4
+                      ],
+                      [
+                        44.5,
+                        18
+                      ],
+                      [
+                        47.6,
+                        18.4
+                      ],
+                      [
+                        50.6,
+                        19.4
+                      ],
+                      [
+                        53.2,
+                        21.1
+                      ],
+                      [
+                        55.4,
+                        23.3
+                      ],
+                      [
+                        57.1,
+                        25.9
+                      ],
+                      [
+                        58.1,
+                        28.9
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        79,
+                        34
+                      ],
+                      [
+                        78.8,
+                        36
+                      ],
+                      [
+                        78.1,
+                        37.9
+                      ],
+                      [
+                        77,
+                        39.6
+                      ],
+                      [
+                        75.6,
+                        41
+                      ],
+                      [
+                        73.9,
+                        42.1
+                      ],
+                      [
+                        72,
+                        42.8
+                      ],
+                      [
+                        70,
+                        43
+                      ],
+                      [
+                        68,
+                        42.8
+                      ],
+                      [
+                        66.1,
+                        42.1
+                      ],
+                      [
+                        64.4,
+                        41
+                      ],
+                      [
+                        63,
+                        39.6
+                      ],
+                      [
+                        61.9,
+                        37.9
+                      ],
+                      [
+                        61.2,
+                        36
+                      ],
+                      [
+                        61,
+                        34
+                      ],
+                      [
+                        61.2,
+                        32
+                      ],
+                      [
+                        61.9,
+                        30.1
+                      ],
+                      [
+                        63,
+                        28.4
+                      ],
+                      [
+                        64.4,
+                        27
+                      ],
+                      [
+                        66.1,
+                        25.9
+                      ],
+                      [
+                        68,
+                        25.2
+                      ],
+                      [
+                        70,
+                        25
+                      ],
+                      [
+                        72,
+                        25.2
+                      ],
+                      [
+                        73.9,
+                        25.9
+                      ],
+                      [
+                        75.6,
+                        27
+                      ],
+                      [
+                        77,
+                        28.4
+                      ],
+                      [
+                        78.1,
+                        30.1
+                      ],
+                      [
+                        78.8,
+                        32
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      10,
+                      72
+                    ],
+                    "bis": [
+                      20,
+                      62
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      20,
+                      62
+                    ],
+                    "bis": [
+                      30,
+                      72
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      30,
+                      72
+                    ],
+                    "bis": [
+                      40,
+                      62
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      40,
+                      62
+                    ],
+                    "bis": [
+                      50,
+                      72
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      50,
+                      72
+                    ],
+                    "bis": [
+                      60,
+                      62
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      60,
+                      62
+                    ],
+                    "bis": [
+                      70,
+                      72
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      70,
+                      72
+                    ],
+                    "bis": [
+                      80,
+                      62
+                    ]
+                  }
+                ]
+              },
+              {
+                "h": 100,
+                "label": "Vorlage C",
+                "elemente": [
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        32,
+                        14
+                      ],
+                      [
+                        82,
+                        14
+                      ],
+                      [
+                        57,
+                        76
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        63,
+                        31
+                      ],
+                      [
+                        62.8,
+                        32.3
+                      ],
+                      [
+                        62.4,
+                        33.6
+                      ],
+                      [
+                        61.7,
+                        34.7
+                      ],
+                      [
+                        60.7,
+                        35.7
+                      ],
+                      [
+                        59.6,
+                        36.4
+                      ],
+                      [
+                        58.3,
+                        36.8
+                      ],
+                      [
+                        57,
+                        37
+                      ],
+                      [
+                        55.7,
+                        36.8
+                      ],
+                      [
+                        54.4,
+                        36.4
+                      ],
+                      [
+                        53.3,
+                        35.7
+                      ],
+                      [
+                        52.3,
+                        34.7
+                      ],
+                      [
+                        51.6,
+                        33.6
+                      ],
+                      [
+                        51.2,
+                        32.3
+                      ],
+                      [
+                        51,
+                        31
+                      ],
+                      [
+                        51.2,
+                        29.7
+                      ],
+                      [
+                        51.6,
+                        28.4
+                      ],
+                      [
+                        52.3,
+                        27.3
+                      ],
+                      [
+                        53.3,
+                        26.3
+                      ],
+                      [
+                        54.4,
+                        25.6
+                      ],
+                      [
+                        55.7,
+                        25.2
+                      ],
+                      [
+                        57,
+                        25
+                      ],
+                      [
+                        58.3,
+                        25.2
+                      ],
+                      [
+                        59.6,
+                        25.6
+                      ],
+                      [
+                        60.7,
+                        26.3
+                      ],
+                      [
+                        61.7,
+                        27.3
+                      ],
+                      [
+                        62.4,
+                        28.4
+                      ],
+                      [
+                        62.8,
+                        29.7
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      13,
+                      78
+                    ],
+                    "bis": [
+                      13,
+                      26
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      13,
+                      26
+                    ],
+                    "bis": [
+                      7,
+                      35
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      13,
+                      26
+                    ],
+                    "bis": [
+                      19,
+                      35
+                    ]
+                  }
+                ]
+              },
+              {
+                "h": 100,
+                "label": "Vorlage D",
+                "elemente": [
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        8,
+                        58
+                      ],
+                      [
+                        44,
+                        58
+                      ],
+                      [
+                        44,
+                        84
+                      ],
+                      [
+                        8,
+                        84
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        44,
+                        36
+                      ],
+                      [
+                        80,
+                        36
+                      ],
+                      [
+                        80,
+                        58
+                      ],
+                      [
+                        44,
+                        58
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        32,
+                        51
+                      ],
+                      [
+                        31.8,
+                        52.3
+                      ],
+                      [
+                        31.4,
+                        53.6
+                      ],
+                      [
+                        30.7,
+                        54.7
+                      ],
+                      [
+                        29.7,
+                        55.7
+                      ],
+                      [
+                        28.6,
+                        56.4
+                      ],
+                      [
+                        27.3,
+                        56.8
+                      ],
+                      [
+                        26,
+                        57
+                      ],
+                      [
+                        24.7,
+                        56.8
+                      ],
+                      [
+                        23.4,
+                        56.4
+                      ],
+                      [
+                        22.3,
+                        55.7
+                      ],
+                      [
+                        21.3,
+                        54.7
+                      ],
+                      [
+                        20.6,
+                        53.6
+                      ],
+                      [
+                        20.2,
+                        52.3
+                      ],
+                      [
+                        20,
+                        51
+                      ],
+                      [
+                        20.2,
+                        49.7
+                      ],
+                      [
+                        20.6,
+                        48.4
+                      ],
+                      [
+                        21.3,
+                        47.3
+                      ],
+                      [
+                        22.3,
+                        46.3
+                      ],
+                      [
+                        23.4,
+                        45.6
+                      ],
+                      [
+                        24.7,
+                        45.2
+                      ],
+                      [
+                        26,
+                        45
+                      ],
+                      [
+                        27.3,
+                        45.2
+                      ],
+                      [
+                        28.6,
+                        45.6
+                      ],
+                      [
+                        29.7,
+                        46.3
+                      ],
+                      [
+                        30.7,
+                        47.3
+                      ],
+                      [
+                        31.4,
+                        48.4
+                      ],
+                      [
+                        31.8,
+                        49.7
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      66,
+                      10
+                    ],
+                    "bis": [
+                      76,
+                      20
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      66,
+                      20
+                    ],
+                    "bis": [
+                      76,
+                      10
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Karten und Vorlagen für die Übungen ohne Worte: Mit den Gefühlskarten lesen die Tischgruppen Körpersprache, mit den Bildvorlagen erleben die Paare, was Worte allein leisten und wie viel Rückfragen helfen.",
+          "ablauf": [
+            "Seite 1 fünfmal kopieren, ausschneiden, je Tischgruppe in einen Umschlag.",
+            "Seite 2 zehnmal kopieren und vierteln; jedes Paar bekommt verdeckt Vorlage B und C, A und D liegen als leichtere und schwerere Reserve bereit.",
+            "Einheit 18: die Gefühlskarten in Schritt 4, die Bildvorlagen in Schritt 6."
+          ],
+          "hintergrund": "Beschreibt eine Person geometrische Figuren und darf die andere nachfragen, werden die Zeichnungen deutlich genauer – es dauert nur länger (Leavitt & Mueller, 1951). Das Gesicht auf den Gefühlskarten hilft auch Jugendlichen, die das Wort noch nicht kennen.",
+          "quellen": [
+            "Leavitt, H. J. & Mueller, R. A. H. (1951). Some effects of feedback on communication. Human Relations, 4(4), 401–410."
+          ],
+          "material": "Schere, fünf Umschläge, Papier und Bleistifte"
+        }
+      },
+      "fr": {
+        "titel": "Cartes émotions et dessins",
+        "untertitel": "Modèle à photocopier : page 1 cinq fois (un jeu par îlot), page 2 dix fois, à couper en quatre",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Cartes émotions pour l’étape 4 : découper et mettre un jeu par îlot dans une enveloppe. Qui tire une carte montre seulement l’émotion ; la situation aide à jouer et peut être lue pour aider à deviner.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "karten": [
+              {
+                "titel": "la fierté",
+                "text": "Ton but a fait gagner le match.",
+                "bild": "gesicht:stolz"
+              },
+              {
+                "titel": "l’ennui",
+                "text": "La troisième explication sur le même sujet.",
+                "bild": "gesicht:gelangweilt"
+              },
+              {
+                "titel": "le trac",
+                "text": "Dans une minute, tu dois parler devant la classe.",
+                "bild": "gesicht:nervoes"
+              },
+              {
+                "titel": "la gêne",
+                "text": "Tu as appelé la prof « maman » sans faire exprès.",
+                "bild": "gesicht:verlegen"
+              },
+              {
+                "titel": "la déception",
+                "text": "Le concert que tu attendais tant est annulé.",
+                "bild": "gesicht:enttaeuscht"
+              },
+              {
+                "titel": "la surprise",
+                "text": "Tes amis t’ont préparé une fête.",
+                "bild": "gesicht:ueberrascht"
+              },
+              {
+                "titel": "le dégoût",
+                "text": "Il y a un cheveu dans ton assiette.",
+                "bild": "gesicht:angeekelt"
+              },
+              {
+                "titel": "la fatigue",
+                "text": "Lundi, première heure, presque pas dormi.",
+                "bild": "gesicht:muede"
+              },
+              {
+                "titel": "l’inquiétude",
+                "text": "Ton chien ne mange plus depuis hier.",
+                "bild": "gesicht:besorgt"
+              },
+              {
+                "titel": "perplexe",
+                "text": "Tu entres dans la salle – et il n’y a personne.",
+                "bild": "gesicht:verwirrt"
+              },
+              {
+                "titel": "l’impatience",
+                "text": "Demain, tu pars en vacances.",
+                "bild": "gesicht:aufgeregt"
+              },
+              {
+                "titel": "la colère",
+                "text": "Le bus part sous ton nez.",
+                "bild": "gesicht:wuetend"
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "text",
+            "text": "Modèles pour l’étape 6 (dos à dos) : photocopier dix fois et couper en quatre. Tour 1 avec le modèle B, tour 2 avec le modèle C ; A est plus facile (pour les binômes en difficulté), D plus difficile (pour les plus rapides).",
+            "klein": true
+          },
+          {
+            "art": "geo",
+            "spalten": 2,
+            "felder": [
+              {
+                "h": 100,
+                "label": "Modèle A",
+                "elemente": [
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        14,
+                        50
+                      ],
+                      [
+                        44,
+                        50
+                      ],
+                      [
+                        44,
+                        80
+                      ],
+                      [
+                        14,
+                        80
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        14,
+                        50
+                      ],
+                      [
+                        29,
+                        30
+                      ],
+                      [
+                        44,
+                        50
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        75,
+                        26
+                      ],
+                      [
+                        74.8,
+                        28
+                      ],
+                      [
+                        74.1,
+                        29.9
+                      ],
+                      [
+                        73,
+                        31.6
+                      ],
+                      [
+                        71.6,
+                        33
+                      ],
+                      [
+                        69.9,
+                        34.1
+                      ],
+                      [
+                        68,
+                        34.8
+                      ],
+                      [
+                        66,
+                        35
+                      ],
+                      [
+                        64,
+                        34.8
+                      ],
+                      [
+                        62.1,
+                        34.1
+                      ],
+                      [
+                        60.4,
+                        33
+                      ],
+                      [
+                        59,
+                        31.6
+                      ],
+                      [
+                        57.9,
+                        29.9
+                      ],
+                      [
+                        57.2,
+                        28
+                      ],
+                      [
+                        57,
+                        26
+                      ],
+                      [
+                        57.2,
+                        24
+                      ],
+                      [
+                        57.9,
+                        22.1
+                      ],
+                      [
+                        59,
+                        20.4
+                      ],
+                      [
+                        60.4,
+                        19
+                      ],
+                      [
+                        62.1,
+                        17.9
+                      ],
+                      [
+                        64,
+                        17.2
+                      ],
+                      [
+                        66,
+                        17
+                      ],
+                      [
+                        68,
+                        17.2
+                      ],
+                      [
+                        69.9,
+                        17.9
+                      ],
+                      [
+                        71.6,
+                        19
+                      ],
+                      [
+                        73,
+                        20.4
+                      ],
+                      [
+                        74.1,
+                        22.1
+                      ],
+                      [
+                        74.8,
+                        24
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      6,
+                      87
+                    ],
+                    "bis": [
+                      83,
+                      87
+                    ]
+                  }
+                ]
+              },
+              {
+                "h": 100,
+                "label": "Modèle B",
+                "elemente": [
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        28,
+                        34
+                      ],
+                      [
+                        27.8,
+                        36
+                      ],
+                      [
+                        27.1,
+                        37.9
+                      ],
+                      [
+                        26,
+                        39.6
+                      ],
+                      [
+                        24.6,
+                        41
+                      ],
+                      [
+                        22.9,
+                        42.1
+                      ],
+                      [
+                        21,
+                        42.8
+                      ],
+                      [
+                        19,
+                        43
+                      ],
+                      [
+                        17,
+                        42.8
+                      ],
+                      [
+                        15.1,
+                        42.1
+                      ],
+                      [
+                        13.4,
+                        41
+                      ],
+                      [
+                        12,
+                        39.6
+                      ],
+                      [
+                        10.9,
+                        37.9
+                      ],
+                      [
+                        10.2,
+                        36
+                      ],
+                      [
+                        10,
+                        34
+                      ],
+                      [
+                        10.2,
+                        32
+                      ],
+                      [
+                        10.9,
+                        30.1
+                      ],
+                      [
+                        12,
+                        28.4
+                      ],
+                      [
+                        13.4,
+                        27
+                      ],
+                      [
+                        15.1,
+                        25.9
+                      ],
+                      [
+                        17,
+                        25.2
+                      ],
+                      [
+                        19,
+                        25
+                      ],
+                      [
+                        21,
+                        25.2
+                      ],
+                      [
+                        22.9,
+                        25.9
+                      ],
+                      [
+                        24.6,
+                        27
+                      ],
+                      [
+                        26,
+                        28.4
+                      ],
+                      [
+                        27.1,
+                        30.1
+                      ],
+                      [
+                        27.8,
+                        32
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        58.5,
+                        32
+                      ],
+                      [
+                        58.1,
+                        35.1
+                      ],
+                      [
+                        57.1,
+                        38.1
+                      ],
+                      [
+                        55.4,
+                        40.7
+                      ],
+                      [
+                        53.2,
+                        42.9
+                      ],
+                      [
+                        50.6,
+                        44.6
+                      ],
+                      [
+                        47.6,
+                        45.6
+                      ],
+                      [
+                        44.5,
+                        46
+                      ],
+                      [
+                        41.4,
+                        45.6
+                      ],
+                      [
+                        38.4,
+                        44.6
+                      ],
+                      [
+                        35.8,
+                        42.9
+                      ],
+                      [
+                        33.6,
+                        40.7
+                      ],
+                      [
+                        31.9,
+                        38.1
+                      ],
+                      [
+                        30.9,
+                        35.1
+                      ],
+                      [
+                        30.5,
+                        32
+                      ],
+                      [
+                        30.9,
+                        28.9
+                      ],
+                      [
+                        31.9,
+                        25.9
+                      ],
+                      [
+                        33.6,
+                        23.3
+                      ],
+                      [
+                        35.8,
+                        21.1
+                      ],
+                      [
+                        38.4,
+                        19.4
+                      ],
+                      [
+                        41.4,
+                        18.4
+                      ],
+                      [
+                        44.5,
+                        18
+                      ],
+                      [
+                        47.6,
+                        18.4
+                      ],
+                      [
+                        50.6,
+                        19.4
+                      ],
+                      [
+                        53.2,
+                        21.1
+                      ],
+                      [
+                        55.4,
+                        23.3
+                      ],
+                      [
+                        57.1,
+                        25.9
+                      ],
+                      [
+                        58.1,
+                        28.9
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        79,
+                        34
+                      ],
+                      [
+                        78.8,
+                        36
+                      ],
+                      [
+                        78.1,
+                        37.9
+                      ],
+                      [
+                        77,
+                        39.6
+                      ],
+                      [
+                        75.6,
+                        41
+                      ],
+                      [
+                        73.9,
+                        42.1
+                      ],
+                      [
+                        72,
+                        42.8
+                      ],
+                      [
+                        70,
+                        43
+                      ],
+                      [
+                        68,
+                        42.8
+                      ],
+                      [
+                        66.1,
+                        42.1
+                      ],
+                      [
+                        64.4,
+                        41
+                      ],
+                      [
+                        63,
+                        39.6
+                      ],
+                      [
+                        61.9,
+                        37.9
+                      ],
+                      [
+                        61.2,
+                        36
+                      ],
+                      [
+                        61,
+                        34
+                      ],
+                      [
+                        61.2,
+                        32
+                      ],
+                      [
+                        61.9,
+                        30.1
+                      ],
+                      [
+                        63,
+                        28.4
+                      ],
+                      [
+                        64.4,
+                        27
+                      ],
+                      [
+                        66.1,
+                        25.9
+                      ],
+                      [
+                        68,
+                        25.2
+                      ],
+                      [
+                        70,
+                        25
+                      ],
+                      [
+                        72,
+                        25.2
+                      ],
+                      [
+                        73.9,
+                        25.9
+                      ],
+                      [
+                        75.6,
+                        27
+                      ],
+                      [
+                        77,
+                        28.4
+                      ],
+                      [
+                        78.1,
+                        30.1
+                      ],
+                      [
+                        78.8,
+                        32
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      10,
+                      72
+                    ],
+                    "bis": [
+                      20,
+                      62
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      20,
+                      62
+                    ],
+                    "bis": [
+                      30,
+                      72
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      30,
+                      72
+                    ],
+                    "bis": [
+                      40,
+                      62
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      40,
+                      62
+                    ],
+                    "bis": [
+                      50,
+                      72
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      50,
+                      72
+                    ],
+                    "bis": [
+                      60,
+                      62
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      60,
+                      62
+                    ],
+                    "bis": [
+                      70,
+                      72
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      70,
+                      72
+                    ],
+                    "bis": [
+                      80,
+                      62
+                    ]
+                  }
+                ]
+              },
+              {
+                "h": 100,
+                "label": "Modèle C",
+                "elemente": [
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        32,
+                        14
+                      ],
+                      [
+                        82,
+                        14
+                      ],
+                      [
+                        57,
+                        76
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        63,
+                        31
+                      ],
+                      [
+                        62.8,
+                        32.3
+                      ],
+                      [
+                        62.4,
+                        33.6
+                      ],
+                      [
+                        61.7,
+                        34.7
+                      ],
+                      [
+                        60.7,
+                        35.7
+                      ],
+                      [
+                        59.6,
+                        36.4
+                      ],
+                      [
+                        58.3,
+                        36.8
+                      ],
+                      [
+                        57,
+                        37
+                      ],
+                      [
+                        55.7,
+                        36.8
+                      ],
+                      [
+                        54.4,
+                        36.4
+                      ],
+                      [
+                        53.3,
+                        35.7
+                      ],
+                      [
+                        52.3,
+                        34.7
+                      ],
+                      [
+                        51.6,
+                        33.6
+                      ],
+                      [
+                        51.2,
+                        32.3
+                      ],
+                      [
+                        51,
+                        31
+                      ],
+                      [
+                        51.2,
+                        29.7
+                      ],
+                      [
+                        51.6,
+                        28.4
+                      ],
+                      [
+                        52.3,
+                        27.3
+                      ],
+                      [
+                        53.3,
+                        26.3
+                      ],
+                      [
+                        54.4,
+                        25.6
+                      ],
+                      [
+                        55.7,
+                        25.2
+                      ],
+                      [
+                        57,
+                        25
+                      ],
+                      [
+                        58.3,
+                        25.2
+                      ],
+                      [
+                        59.6,
+                        25.6
+                      ],
+                      [
+                        60.7,
+                        26.3
+                      ],
+                      [
+                        61.7,
+                        27.3
+                      ],
+                      [
+                        62.4,
+                        28.4
+                      ],
+                      [
+                        62.8,
+                        29.7
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      13,
+                      78
+                    ],
+                    "bis": [
+                      13,
+                      26
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      13,
+                      26
+                    ],
+                    "bis": [
+                      7,
+                      35
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      13,
+                      26
+                    ],
+                    "bis": [
+                      19,
+                      35
+                    ]
+                  }
+                ]
+              },
+              {
+                "h": 100,
+                "label": "Modèle D",
+                "elemente": [
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        8,
+                        58
+                      ],
+                      [
+                        44,
+                        58
+                      ],
+                      [
+                        44,
+                        84
+                      ],
+                      [
+                        8,
+                        84
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        44,
+                        36
+                      ],
+                      [
+                        80,
+                        36
+                      ],
+                      [
+                        80,
+                        58
+                      ],
+                      [
+                        44,
+                        58
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "vieleck",
+                    "punkte": [
+                      [
+                        32,
+                        51
+                      ],
+                      [
+                        31.8,
+                        52.3
+                      ],
+                      [
+                        31.4,
+                        53.6
+                      ],
+                      [
+                        30.7,
+                        54.7
+                      ],
+                      [
+                        29.7,
+                        55.7
+                      ],
+                      [
+                        28.6,
+                        56.4
+                      ],
+                      [
+                        27.3,
+                        56.8
+                      ],
+                      [
+                        26,
+                        57
+                      ],
+                      [
+                        24.7,
+                        56.8
+                      ],
+                      [
+                        23.4,
+                        56.4
+                      ],
+                      [
+                        22.3,
+                        55.7
+                      ],
+                      [
+                        21.3,
+                        54.7
+                      ],
+                      [
+                        20.6,
+                        53.6
+                      ],
+                      [
+                        20.2,
+                        52.3
+                      ],
+                      [
+                        20,
+                        51
+                      ],
+                      [
+                        20.2,
+                        49.7
+                      ],
+                      [
+                        20.6,
+                        48.4
+                      ],
+                      [
+                        21.3,
+                        47.3
+                      ],
+                      [
+                        22.3,
+                        46.3
+                      ],
+                      [
+                        23.4,
+                        45.6
+                      ],
+                      [
+                        24.7,
+                        45.2
+                      ],
+                      [
+                        26,
+                        45
+                      ],
+                      [
+                        27.3,
+                        45.2
+                      ],
+                      [
+                        28.6,
+                        45.6
+                      ],
+                      [
+                        29.7,
+                        46.3
+                      ],
+                      [
+                        30.7,
+                        47.3
+                      ],
+                      [
+                        31.4,
+                        48.4
+                      ],
+                      [
+                        31.8,
+                        49.7
+                      ]
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      66,
+                      10
+                    ],
+                    "bis": [
+                      76,
+                      20
+                    ]
+                  },
+                  {
+                    "t": "linie",
+                    "von": [
+                      66,
+                      20
+                    ],
+                    "bis": [
+                      76,
+                      10
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Cartes et modèles pour les exercices sans mots : avec les cartes émotions, les îlots lisent le langage du corps ; avec les modèles de dessins, les binômes découvrent ce que permettent les mots seuls et combien les questions aident.",
+          "ablauf": [
+            "Photocopier cinq fois la page 1, découper, une enveloppe par îlot.",
+            "Photocopier dix fois la page 2 et couper en quatre ; chaque binôme reçoit les modèles B et C, face cachée ; A et D servent de réserve, plus facile et plus difficile.",
+            "Séance 18 : les cartes émotions à l’étape 4, les modèles de dessins à l’étape 6."
+          ],
+          "hintergrund": "Quand une personne décrit des figures géométriques et que l’autre peut poser des questions, les dessins deviennent nettement plus justes – cela prend seulement plus de temps (Leavitt & Mueller, 1951). Le visage sur les cartes émotions aide aussi les jeunes qui ne connaissent pas encore le mot.",
+          "quellen": [
+            "Leavitt, H. J. & Mueller, R. A. H. (1951). Some effects of feedback on communication. Human Relations, 4(4), 401–410."
+          ],
+          "material": "Ciseaux, cinq enveloppes, papier et crayons"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1031 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e23",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-nein-sagen"
+      ],
+      "vorlagen": [
+        "ff7-druck-karten"
+      ],
+      "woerter": [
+        {
+          "de": "der Gruppendruck",
+          "fr": "la pression du groupe"
+        },
+        {
+          "de": "Nein sagen",
+          "fr": "dire non"
+        },
+        {
+          "de": "dazugehören",
+          "fr": "faire partie du groupe"
+        },
+        {
+          "de": "überreden",
+          "fr": "persuader"
+        },
+        {
+          "de": "die Mutprobe",
+          "fr": "le défi"
+        },
+        {
+          "de": "sich trauen",
+          "fr": "oser"
+        }
+      ],
+      "de": {
+        "titel": "Gruppendruck und Nein sagen",
+        "kurz": "Wo fängt Mut an? Die Klasse findet ihre Komfort-, Lern- und Panikzone und übt vier Arten, Nein zu sagen – vom Pausenhof bis zum Klassenchat.",
+        "ziele": [
+          "erkennen lauten und leisen Gruppendruck",
+          "merken, dass jede Person ihre Zonen woanders hat",
+          "kennen vier Arten, Nein zu sagen, und finden ihren Satz",
+          "erleben im Spiel, wie stark ein zweites Nein wirkt"
+        ],
+        "material": [
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Malerkrepp für die Zonen-Linie",
+          "Zonen-Schilder in Grün, Gelb, Rot",
+          "Druck-Karten (Kopiervorlage)",
+          "Schülerheft: Blatt „Nein sagen“",
+          "Stoppuhr oder Handy-Timer",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Vorn vor der Tafel eine Linie von der Tür- zur Fensterseite kleben, in drei Zonen teilen und die Schilder daneben legen: Komfort grün, Lernen gelb, Panik rot.",
+          "Die vier Arten, Nein zu sagen, an die Tafel schreiben und abdecken (Liste in Schritt 4).",
+          "Druck-Karten schneiden; beim Régent nachfragen, ob es gerade Ärger um Mutproben, E-Zigaretten, Diebstahl oder ein Foto im Klassenchat gibt, und passende Karten weglassen."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Wenn alle dich anschauen"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick, Mission und Druck von außen"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "Komfort, Lernen, Panik"
+          },
+          {
+            "min": "30–45",
+            "phase": "input",
+            "titel": "Vier Arten, Nein zu sagen"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Mach das Gegenteil"
+          },
+          {
+            "min": "50–60",
+            "phase": "uebung",
+            "titel": "Druck-Karten in der Tischgruppe"
+          },
+          {
+            "min": "60–80",
+            "phase": "uebung",
+            "titel": "Szenen: das erste und das zweite Nein"
+          },
+          {
+            "min": "80–85",
+            "phase": "uebung",
+            "titel": "Mein Plan für einen Druck-Moment"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Anker vor dem Nein"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Daumen und Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Wenn alle dich anschauen",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Auf drei zeigen alle ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt, zwei, drei Freiwillige nennen ihr Wort (4 Min.). Dann eine Zusatzfrage, die nur mit den Fingern beantwortet wird: Wie hoch geht eure Anspannung, wenn alle euch anschauen und auf eure Antwort warten? Auf drei zeigen alle gleichzeitig (2 Min.). Die Zahlen nicht kommentieren, nur laut spiegeln, was zu sehen ist: Bei vielen geht die Zahl deutlich nach oben. Ankündigen: Genau um diesen Moment geht es heute.",
+            "sagen": [
+              "Gefühl und Zahl – auf drei. Und jetzt: Wie hoch geht es bei euch, wenn alle gleichzeitig auf eure Antwort warten?",
+              "Bei mir springt die Zahl von 30 auf 60, wenn mich zwanzig Leute anschauen."
+            ],
+            "tipp": "Wer bei der Zusatzfrage nicht mitmachen mag, lässt die Hände unten. Gerade bei diesem Thema zählt, dass auch ein Nein im Check-in in Ordnung ist.",
+            "wennEsKippt": "Zeigt jemand bei der Zusatzfrage zehn Finger und wirkt dabei ernst, nicht nachfragen, sondern später darauf achten, dass diese Person nicht vorn spielen muss. Wird über hohe Zahlen gelacht, kurz auf die Klassenvereinbarung zeigen."
+          },
+          {
+            "titel": "Rückblick, Mission und Druck von außen",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "An die Konflikt-Treppe erinnern: Beim Streit stehen zwei Seiten gegeneinander. Per Daumen nach der Wochen-Mission fragen – faire Auszeit ausprobiert oder das eigene Tier beobachtet? –, eine Stimme erzählt. Dann die neue Lage beschreiben: Heute will die Gruppe etwas, das man selbst nicht will. Kurz an das Glas der Bedürfnisse erinnern: Dazugehören ist eines der stärksten Bedürfnisse, deshalb wirkt Gruppendruck so stark. Klarstellen: Niemand muss erzählen, wo er selbst schon einmal mitgemacht hat.",
+            "sagen": [
+              "Heute geht es um Momente, in denen alle Ja sagen und ihr eigentlich Nein meint.",
+              "Dazugehören ist ein echtes Bedürfnis, kein Zeichen von Schwäche. Genau deshalb ist ein Nein in der Gruppe so schwer."
+            ],
+            "tipp": "Das Wort Gruppendruck an die Tafel schreiben und zwei Formen daneben: laut (überreden, auslachen, drohen) und leise (alle machen mit, keiner sagt etwas). Viele Jugendliche kennen vor allem die leise Form."
+          },
+          {
+            "titel": "Komfort, Lernen, Panik",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Die Linie vor der Tafel erklären: an der Türseite die Komfortzone (grün, fühlt sich sicher an), in der Mitte die Lernzone (gelb, aufregend, aber machbar), an der Fensterseite die Panikzone (rot, zu viel). Sechs Situationen vorlesen (Liste); alle stellen sich in die Zone, die für sie passt (je 1 Min.). Nach jeder Situation schauen alle, wie sich die Klasse verteilt; je Zone darf eine Person einen Satz sagen. Festhalten: Die Zonen liegen bei jeder Person woanders – und wachsen kann man in der Lernzone, nicht in der Panikzone. Zurück am Platz trägt jede Person in Aufgabe 1 je eine eigene Situation in die drei Ringe ein (4 Min.).",
+            "sagen": [
+              "Schaut euch um: Wo stehen die anderen? Das ist die wichtigste Beobachtung heute.",
+              "Was müsste passieren, damit diese Situation für dich einen Schritt näher an die Tür rückt?"
+            ],
+            "punkte": [
+              "Vor der Klasse ein Lied singen.",
+              "In der Pause eine neue Person ansprechen.",
+              "Vor der Klasse nachfragen, wenn du etwas nicht verstanden hast.",
+              "Einer Freundin sagen, dass du auf ihren Plan keine Lust hast.",
+              "Im Klassenchat als Einzige oder Einziger schreiben: Das finde ich nicht okay.",
+              "Nein sagen, wenn alle anderen Ja sagen."
+            ],
+            "tipp": "Die Lehrkraft stellt sich mit auf und steht ruhig auch einmal in der Panikzone, etwa beim Singen. Das zeigt mehr als jede Erklärung, dass die Zonen nichts mit Mut oder Feigheit zu tun haben.",
+            "wennEsKippt": "Stellen sich alle dorthin, wo die Beliebtesten stehen, das ruhig ansprechen: Genau das ist Gruppendruck – live. Die nächsten Situationen dann im Sitzen mit geschlossenen Augen: Alle zeigen mit einem, zwei oder drei Fingern ihre Zone, die Lehrkraft nennt nur das Ergebnis. Wer nicht aufstehen möchte, zeigt immer vom Platz aus.",
+            "blatt": "ff7-nein-sagen"
+          },
+          {
+            "titel": "Vier Arten, Nein zu sagen",
+            "dauer": 15,
+            "phase": "input",
+            "text": "Die vier Arten an der Tafel aufdecken (Liste) und jede kurz vorspielen: Die Lehrkraft übernimmt selbst die drängelnde Rolle – freundlich, hartnäckig, ohne Beleidigung –, eine freiwillige Person sagt Nein und darf den Satz von der Tafel ablesen (6 Min.). Bei „Einfach gehen“ dreht sich die Person um und geht ruhig an ihren Platz zurück – auch das ist ein klares Nein. Nach jeder Art zeigt die Klasse mit den Fingern von 0 bis 10, wie überzeugend das Nein war. Danach auf dem Blatt die Art einkreisen, die passt, und darunter einen eigenen Nein-Satz schreiben (Aufgabe 2, 3 Min.). Zu zweit Anas Antworten im Comic schreiben und die Szene einmal leise sprechen (Aufgabe 3, 4 Min.). Zum Schluss den Satz an die Tafel schreiben, der für alle vier Arten gilt: Ein echter Freund akzeptiert ein Nein (2 Min.).",
+            "sagen": [
+              "Welche dieser vier Arten habt ihr schon einmal benutzt – vielleicht, ohne es zu merken?",
+              "Ein Nein braucht keine lange Begründung. Je länger die Erklärung, desto mehr Angriffsfläche."
+            ],
+            "punkte": [
+              "Endlosschleife: ruhig immer wieder denselben Satz sagen – „Nein, ich will nicht.“",
+              "Nein plus Vorschlag: „Nein. Aber wir könnten stattdessen …“",
+              "Mit Humor: „Nee, dafür bin ich heute echt zu faul.“",
+              "Einfach gehen: Man muss sich nicht rechtfertigen."
+            ],
+            "tipp": "Die drängelnde Rolle beim ersten Mal selbst spielen: So erlebt die Klasse Druck, ohne dass jemand aus der Klasse ihn ausübt. Freiwillige für das Nein finden sich leichter, wenn die Lehrkraft vorher sagt, dass sie freundlich bleibt.",
+            "wennEsKippt": "Kommt der Einwand „Dann bin ich raus aus der Gruppe“, ihn ernst nehmen und nicht wegreden. Fragen: Was kostet ein Nein – und was kostet ein Ja, das man eigentlich nicht will? Beides gehört auf den Tisch. Meldet sich niemand für das Nein, spielt die Lehrkraft beide Rollen mit verstellter Stimme – das bricht meist das Eis.",
+            "blatt": "ff7-nein-sagen"
+          },
+          {
+            "titel": "Bewegungspause: Mach das Gegenteil",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen hinter ihrem Stuhl. Die Lehrkraft gibt Kommandos und macht sie selbst vor – alle anderen tun das Gegenteil: Bei „Hände hoch“ bleiben die Hände unten, bei „Hinsetzen“ bleiben alle stehen, bei „nach links“ schauen alle nach rechts (3 Min.). Niemand scheidet aus. Zum Schluss fragen, was schwer war: Meistens rutscht der Körper mit, weil das Vormachen stärker ist als das Wort – genau so wirkt Gruppendruck. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Ich mache es vor – und ihr macht das Gegenteil. Wer sich vertut, lacht kurz und macht weiter."
+            ],
+            "tipp": "Immer schneller werden und zwischendurch eine freiwillige Person die Kommandos geben lassen. Für Jugendliche, die die Unterrichtssprache noch lernen, funktioniert das Spiel ohne Worte: Das Vormachen reicht."
+          },
+          {
+            "titel": "Druck-Karten in der Tischgruppe",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Jede Tischgruppe zieht eine Druck-Karte und bespricht drei Fragen (4 Min.): Wie fühlt sich die Person auf der Karte? Was würdest du tun? Was wäre hier mutig? Dann bereitet die Gruppe eine kurze Szene vor und verteilt vier Rollen (6 Min.): Eine Person macht Druck, eine zweite sagt Nein mit einer der vier Arten, die dritte sagt beim zweiten Durchgang ebenfalls Nein, die vierte führt Regie. Druck heißt: freundlich und hartnäckig, ohne Beleidigung und ohne Berührung. Herumgehen und bei jeder Gruppe fragen, welche Art von Nein sie wählt.",
+            "sagen": [
+              "Wie fühlt sich die Person auf der Karte? Was würdest du tun? Und was wäre hier mutig?"
+            ],
+            "tipp": "Mutig heißt nicht immer laut Nein sagen: Auch weggehen, das Thema wechseln oder eine zweite Person dazuholen ist mutig. Wer so antwortet, hat die Stunde verstanden.",
+            "wennEsKippt": "Bei den Karten zu E-Zigarette, Mutprobe oder Diebstahl erzählen manche von eigenen Erlebnissen oder prahlen damit. Nicht vertiefen und nicht bewerten, sondern zur Karte zurückführen: Heute geht es um die Person auf der Karte. Wer etwas loswerden will, bekommt ein Gespräch nach der Stunde angeboten.",
+            "blatt": "ff7-druck-karten"
+          },
+          {
+            "titel": "Szenen: das erste und das zweite Nein",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Die Gruppen spielen nacheinander vorn, je etwa drei Minuten. Erster Durchgang: Eine Person macht Druck, eine sagt Nein; die Regie friert die Szene ein, wenn es eng wird. Zweiter Durchgang: dieselbe Szene, nun stellt sich eine zweite Person dazu und sagt ebenfalls Nein. Nach jedem Durchgang zeigt das Publikum mit den Fingern, wie stark das Nein gewirkt hat (0–10); dann fragen, was sich durch das zweite Nein verändert hat. In der ersten Szene übernimmt die Lehrkraft selbst die drängelnde Rolle, danach nur Freiwillige. Nach jeder Szene steigen alle aus der Rolle aus.",
+            "sagen": [
+              "Freeze. Wie fühlt sich das gerade für die Person an, die Nein sagt?",
+              "Was hat sich verändert, als eine zweite Person auch Nein gesagt hat?",
+              "Wer könnte im echten Leben diese zweite Person sein?"
+            ],
+            "tipp": "Das zweite Nein ist der stärkste Moment der Stunde: Fast jede Szene kippt, sobald jemand zur Seite der Person wechselt, die Nein sagt. Das ausdrücklich benennen – es bereitet die Zivilcourage der nächsten Stunde vor.",
+            "wennEsKippt": "Wird die drängelnde Rolle zu heftig – Beleidigungen, Berührung, echte Namen –, sofort einfrieren, aus der Rolle holen und mit der Lehrkraft in dieser Rolle neu starten. Wird das Nein ausgelacht, die Szene stoppen und fragen: Was macht das Lachen gerade mit der Person? Genau das ist der Druck, um den es heute geht.",
+            "blatt": "ff7-druck-karten"
+          },
+          {
+            "titel": "Mein Plan für einen Druck-Moment",
+            "dauer": 5,
+            "phase": "uebung",
+            "text": "Allein (4 Min.): Aufgabe 4 auf dem Blatt. Jede Person denkt an einen Druck-Moment, den sie kennt oder sich gut vorstellen kann, und schreibt einen Wenn-dann-Plan: Wenn diese Situation kommt, dann sage oder tue ich das. Vorher das Beispiel gemeinsam lesen. Beim Herumgehen nicht über die Schulter lesen und nur helfen, wenn sich jemand meldet. Die Pläne werden weder vorgelesen noch eingesammelt; wer mag, zeigt seinen Plan der Lehrkraft.",
+            "sagen": [
+              "Ihr müsst niemandem sagen, an welche Situation ihr denkt. Der Plan ist für euch.",
+              "Fällt euch kein eigener Moment ein, nehmt eine Situation von den Karten."
+            ],
+            "tipp": "Pläne mit einem fertigen Satz wirken besonders: Wer den Satz schon im Kopf hat, muss im Druck-Moment nicht mehr nach Worten suchen.",
+            "wennEsKippt": "Zeigt jemand einen Plan, der nach Erpressung, Bedrohung oder Druck mit Nacktbildern klingt, nicht vor der Klasse nachfragen, sondern nach der Stunde ansprechen und noch am selben Tag den SePAS informieren.",
+            "blatt": "ff7-nein-sagen"
+          },
+          {
+            "titel": "Skill: Anker vor dem Nein",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: ein Skill für die zwei Sekunden vor dem Nein. Alle stehen hinter ihrem Stuhl. Langsam anleiten (Liste): Füße fest auf den Boden, das Gewicht auf beiden Füßen spüren – wie beim festen Stand für das Stopp; einmal lang ausatmen; dann den eigenen Nein-Satz vom Blatt sagen. Drei Durchgänge: erst flüstern, dann in normaler Lautstärke, dann zu zweit mit Blick zum Gegenüber, das einmal freundlich drängelt (5 Min.). Danach zwei, drei Rückmeldungen: Was war beim dritten Mal anders? Wo könnte euch der Anker helfen – auch online, bevor ihr etwas abschickt?",
+            "sagen": [
+              "Füße spüren. Lang ausatmen. Dann erst der Satz.",
+              "Ein ruhiger Atemzug vor dem Nein gibt euch zwei Sekunden – oft reichen genau die."
+            ],
+            "punkte": [
+              "Füße fest auf den Boden: Spür, wie du stehst.",
+              "Einmal lang ausatmen.",
+              "Dann deinen Nein-Satz sagen – ruhig, mit Blick."
+            ],
+            "tipp": "Wer nicht laut sprechen mag, sagt den Satz innerlich; der Anker wirkt trotzdem. Im Sitzen geht er genauso: Füße auf den Boden, Hände auf die Oberschenkel.",
+            "wennEsKippt": "Wird beim Drängeln zu zweit übertrieben, die Partnerübung abbrechen und den dritten Durchgang für alle gleichzeitig machen: Die Lehrkraft drängelt mit „Komm schon“, alle antworten mit ihrem Satz."
+          },
+          {
+            "titel": "Skills-Pass, Daumen und Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Mein Nein-Satz – und wann ich ihn brauchen könnte. Jede Person schreibt (2 Min.) und bekommt den Stempel. Blitzlicht mit dem Daumen (1 Min.): Wie sicher fühlt sich euer Nein heute an – hoch, Mitte, runter? Zum Schluss die Wochen-Mission ansagen (steht im Heft) und den Ausblick auf die nächste Stunde geben.",
+            "sagen": [
+              "Daumen auf drei: Wie sicher fühlt sich euer Nein heute an?"
+            ],
+            "tipp": "Zeigen viele Daumen nach unten, das gelassen spiegeln: Ein Nein unter Druck ist schwer, auch für Erwachsene. Es wird mit jedem Üben leichter, wie jeder Skill."
+          }
+        ],
+        "bruecke": "Nächste Woche geht es um ein Thema, das viele betrifft: Mobbing – wie man es von Spaß und Streit unterscheidet und was Zuschauende tun können, damit es aufhört.",
+        "mission": "Achte diese Woche auf einen Moment mit Gruppendruck – laut oder leise, in der Pause oder im Chat. Wenn es für dich passt, probiere deinen Nein-Satz mit dem Anker.",
+        "hintergrund": "Im Jugendalter gewinnt die Meinung Gleichaltriger stark an Gewicht. In einem Experiment gingen Jugendliche in einem Fahrspiel am Computer deutlich mehr Risiken ein, wenn Gleichaltrige zuschauten; bei Erwachsenen war dieser Effekt viel schwächer (Gardner & Steinberg, 2005). Schon Asch (1956) zeigte, dass sich viele Menschen einer eindeutig falschen Mehrheit anschließen – hatte eine Person nur einen einzigen Verbündeten, sank diese Anpassung deutlich. Daraus folgen zwei Botschaften für die Klasse: Gruppendruck ist kein Charakterfehler, sondern eine erwartbare Herausforderung dieses Alters, und ein zweites Nein wirkt stark. Das Skillstraining der DBT für Jugendliche übt dafür kurze, wiederholbare Sätze und ein ruhiges, sicheres Auftreten (Rathus & Miller, 2015). Das Bild von Komfort-, Lern- und Panikzone hilft, Mut dosiert zu üben.",
+        "quellen": [
+          "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+          "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "achtung": "Die Karten zu E-Zigarette, Mutprobe und Diebstahl sind Themen, keine Anleitung: keine Einzelheiten, keine Fragen nach eigenem Konsum oder eigenen Mutproben. Erzählt jemand davon oder prahlt damit, nicht vertiefen und nicht bewerten, sondern ein Gespräch nach der Stunde anbieten. Die drängelnde Rolle spielt zuerst die Lehrkraft. Wird deutlich, dass jemand erpresst, bedroht oder zu etwas gedrängt wird – auch online oder mit Nacktbildern –, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "differenzierung": {
+          "leichter": "Für die Zonen reicht das Zeigen mit einem, zwei oder drei Fingern. Nein-Sätze stehen zur Auswahl an der Tafel: Nein, danke. · Ohne mich. · Nee, lass mal. Wer mühsam schreibt, wählt einen Satz von der Tafel; wer die Unterrichtssprache noch lernt, schreibt ihn zusätzlich in der eigenen Sprache auf und übernimmt in der Szene das zweite Nein – dafür reicht ein Wort.",
+          "schwerer": "Eine Szene mit leisem Druck erfinden, in der niemand etwas sagt, und ein Nein dafür finden. Oder in den Szenen die Regie übernehmen und beim Einfrieren fragen, was die drängelnde Person eigentlich will."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit der Zusatzfrage (5 Min.), Komfort, Lernen, Panik mit vier Situationen (10 Min.), die vier Arten, Nein zu sagen, mit der Lehrkraft in der drängelnden Rolle und Aufgabe 2 (12 Min.), zwei Druck-Karten, von Freiwilligen vor der Klasse gespielt – mit erstem und zweitem Nein (13 Min.), Anker vor dem Nein und Skills-Pass (10 Min.). Die Szenen in Tischgruppen und der Wenn-dann-Plan entfallen; der Plan lässt sich als Wochen-Mission mitgeben."
+      },
+      "fr": {
+        "titel": "Pression du groupe et savoir dire non",
+        "kurz": "Où commence le courage ? La classe repère ses zones de confort et de panique et s’entraîne à dire non de quatre façons – de la cour au groupe de la classe.",
+        "ziele": [
+          "repèrent la pression du groupe, bruyante ou silencieuse",
+          "constatent que chacun a ses propres zones",
+          "connaissent quatre façons de dire non et trouvent leur phrase",
+          "découvrent en jeu la force d’un deuxième non"
+        ],
+        "material": [
+          "Roue des émotions, 20 gommettes",
+          "Ruban de masquage pour la ligne",
+          "Panneaux vert, jaune, rouge",
+          "Cartes pression (modèle)",
+          "Cahier : fiche « Dire non »",
+          "Chronomètre ou minuteur",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Coller une ligne au sol devant le tableau, du côté porte au côté fenêtre, la diviser en trois zones et poser les panneaux : confort vert, apprentissage jaune, panique rouge.",
+          "Écrire au tableau les quatre façons de dire non et les cacher (liste de l’étape 4).",
+          "Découper les cartes pression ; demander au régent s’il y a des histoires de défis, de vapoteuse, de vol ou de photo dans le groupe de la classe, et écarter les cartes trop proches."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : quand tout le monde te regarde"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour, mission et pression des autres"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "Confort, apprentissage, panique"
+          },
+          {
+            "min": "30–45",
+            "phase": "input",
+            "titel": "Quatre façons de dire non"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : fais le contraire"
+          },
+          {
+            "min": "50–60",
+            "phase": "uebung",
+            "titel": "Cartes pression en îlots"
+          },
+          {
+            "min": "60–80",
+            "phase": "uebung",
+            "titel": "Scènes : le premier et le deuxième non"
+          },
+          {
+            "min": "80–85",
+            "phase": "uebung",
+            "titel": "Mon plan pour un moment de pression"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : l’ancre avant le non"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, pouce et mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : quand tout le monde te regarde",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. À trois, tout le monde montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence, deux ou trois volontaires disent leur mot (4 min). Puis une question en plus, à laquelle on répond seulement avec les doigts : jusqu’où monte votre tension quand tout le monde vous regarde et attend votre réponse ? À trois, tout le monde montre en même temps (2 min). Ne pas commenter les chiffres, seulement dire ce qu’on voit : chez beaucoup, le chiffre monte nettement. Annoncer : c’est justement ce moment-là qui nous occupe aujourd’hui.",
+            "sagen": [
+              "L’émotion et le chiffre – à trois. Et maintenant : jusqu’où ça monte chez vous quand tout le monde attend votre réponse en même temps ?",
+              "Chez moi, le chiffre passe de 30 à 60 quand vingt personnes me regardent."
+            ],
+            "tipp": "Qui ne veut pas répondre à la question en plus garde les mains baissées. Sur ce thème plus que jamais, un non doit aussi être accepté au tour d’humeur.",
+            "wennEsKippt": "Si quelqu’un montre dix doigts à la question en plus et semble sérieux, ne pas poser de questions, mais veiller ensuite à ce qu’il n’ait pas à jouer devant la classe. Si on se moque des chiffres élevés, montrer brièvement la charte de classe."
+          },
+          {
+            "titel": "Retour, mission et pression des autres",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Rappeler l’escalier du conflit : dans une dispute, deux côtés s’opposent. Demander avec le pouce où en est la mission de la semaine – temps mort essayé ou animal observé ? –, une voix raconte. Décrire ensuite la nouvelle situation : aujourd’hui, le groupe veut quelque chose qu’on ne veut pas soi-même. Rappeler le bocal des besoins : faire partie du groupe est l’un des besoins les plus forts, c’est pour ça que la pression du groupe pèse autant. Préciser : personne n’a à raconter quand il a déjà suivi le groupe.",
+            "sagen": [
+              "Aujourd’hui, on parle des moments où tout le monde dit oui alors que vous pensez non.",
+              "Vouloir faire partie du groupe, c’est un vrai besoin, pas une faiblesse. C’est justement pour ça qu’un non devant le groupe est si difficile."
+            ],
+            "tipp": "Écrire « pression du groupe » au tableau, avec deux formes à côté : bruyante (insister, se moquer, menacer) et silencieuse (tout le monde suit, personne ne dit rien). Beaucoup de jeunes connaissent surtout la forme silencieuse."
+          },
+          {
+            "titel": "Confort, apprentissage, panique",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Expliquer la ligne devant le tableau : côté porte, la zone de confort (verte, on s’y sent en sécurité), au milieu la zone d’apprentissage (jaune, excitant, mais faisable), côté fenêtre la zone de panique (rouge, trop). Lire six situations (liste) ; chacun se place dans la zone qui lui correspond (1 min par situation). Après chaque situation, tout le monde regarde comment la classe se répartit ; dans chaque zone, une personne peut dire une phrase. Retenir : les zones sont différentes pour chacun – et on grandit dans la zone d’apprentissage, pas dans la zone de panique. De retour à sa place, chacun note dans l’exercice 1 une situation à soi dans chacun des trois cercles (4 min).",
+            "sagen": [
+              "Regardez autour de vous : où sont les autres ? C’est l’observation la plus importante d’aujourd’hui.",
+              "Qu’est-ce qui devrait se passer pour que cette situation se rapproche d’un pas de la porte ?"
+            ],
+            "punkte": [
+              "Chanter une chanson devant la classe.",
+              "À la récré, aller parler à quelqu’un de nouveau.",
+              "Demander devant la classe quand tu n’as pas compris quelque chose.",
+              "Dire à une amie que son idée ne te dit rien.",
+              "Dans le groupe de la classe, être le seul ou la seule à écrire : « Ça, ce n’est pas correct. »",
+              "Dire non quand tous les autres disent oui."
+            ],
+            "tipp": "L’enseignant·e se place aussi et se met tranquillement dans la zone de panique une fois, pour chanter par exemple. Cela montre mieux que toute explication que les zones n’ont rien à voir avec le courage ou la lâcheté.",
+            "wennEsKippt": "Si tout le monde se place là où sont les plus populaires, le dire calmement : c’est exactement ça, la pression du groupe – en direct. Faire les situations suivantes assis, les yeux fermés : chacun montre sa zone avec un, deux ou trois doigts, l’enseignant·e ne donne que le résultat. Qui ne veut pas se lever montre toujours depuis sa place.",
+            "blatt": "ff7-nein-sagen"
+          },
+          {
+            "titel": "Quatre façons de dire non",
+            "dauer": 15,
+            "phase": "input",
+            "text": "Découvrir au tableau les quatre façons (liste) et jouer brièvement chacune : l’enseignant·e prend soi-même le rôle de celui qui insiste – gentiment, avec insistance, sans insulte –, un volontaire dit non et peut lire sa phrase au tableau (6 min). Pour « Partir, tout simplement », le volontaire se retourne et regagne calmement sa place – c’est aussi un non très clair. Après chaque façon, la classe montre avec les doigts, de 0 à 10, à quel point le non était convaincant. Ensuite, entourer sur la fiche la façon qui convient et écrire en dessous sa propre phrase (exercice 2, 3 min). À deux, écrire les réponses d’Ana dans la BD et dire la scène une fois à voix basse (exercice 3, 4 min). Pour finir, écrire au tableau la phrase qui vaut pour les quatre façons : un vrai ami accepte un non (2 min).",
+            "sagen": [
+              "Laquelle de ces quatre façons avez-vous déjà utilisée – peut-être sans vous en rendre compte ?",
+              "Un non n’a pas besoin d’une longue explication. Plus on se justifie, plus on donne de prise à l’autre."
+            ],
+            "punkte": [
+              "Le disque rayé : répéter calmement la même phrase – « Non, je ne veux pas. »",
+              "Non + proposition : « Non. Mais on pourrait plutôt… »",
+              "Avec humour : « Non merci, aujourd’hui je suis bien trop flemmard. »",
+              "Partir, tout simplement : on n’a pas à se justifier."
+            ],
+            "tipp": "Jouer soi-même le rôle de celui qui insiste la première fois : la classe vit la pression sans qu’un jeune l’exerce. On trouve plus facilement des volontaires pour le non si l’on annonce d’avance qu’on restera gentil.",
+            "wennEsKippt": "Si quelqu’un objecte : « Alors je suis exclu du groupe », le prendre au sérieux sans le balayer. Demander : qu’est-ce que coûte un non – et qu’est-ce que coûte un oui qu’on ne veut pas vraiment ? Les deux ont leur place. Si personne ne se porte volontaire pour le non, jouer les deux rôles en changeant de voix – ça brise souvent la glace.",
+            "blatt": "ff7-nein-sagen"
+          },
+          {
+            "titel": "Pause active : fais le contraire",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se tient derrière sa chaise. L’enseignant·e donne des consignes et les fait soi-même – tous les autres font le contraire : à « Les mains en l’air », les mains restent en bas ; à « Asseyez-vous », tout le monde reste debout ; à « À gauche », tout le monde regarde à droite (3 min). Personne n’est éliminé. Pour finir, demander ce qui était difficile : le plus souvent, le corps suit, parce que l’exemple est plus fort que la parole – c’est exactement comme ça qu’agit la pression du groupe. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Je montre – et vous faites le contraire. Qui se trompe rit un coup et continue."
+            ],
+            "tipp": "Accélérer peu à peu et laisser de temps en temps un volontaire donner les consignes. Pour les jeunes qui apprennent encore la langue du cours, le jeu marche sans les mots : l’exemple suffit."
+          },
+          {
+            "titel": "Cartes pression en îlots",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Chaque îlot tire une carte pression et discute de trois questions (4 min) : comment se sent la personne de la carte ? Qu’est-ce que tu ferais ? Qu’est-ce qui serait courageux ici ? Puis le groupe prépare une courte scène et répartit quatre rôles (6 min) : une personne met la pression, une deuxième dit non avec l’une des quatre façons, la troisième dit non elle aussi au deuxième passage, la quatrième fait la mise en scène. Mettre la pression veut dire : gentiment et avec insistance, sans insulte et sans se toucher. Passer dans les îlots et demander quelle façon de dire non le groupe a choisie.",
+            "sagen": [
+              "Comment se sent la personne de la carte ? Qu’est-ce que tu ferais ? Et qu’est-ce qui serait courageux ici ?"
+            ],
+            "tipp": "Être courageux, ce n’est pas toujours dire non bien fort : partir, changer de sujet ou rallier une deuxième personne, c’est aussi du courage. Qui répond ainsi a compris la séance.",
+            "wennEsKippt": "Avec les cartes sur la vapoteuse, le défi ou le vol, certains racontent leurs propres expériences ou s’en vantent. Ne pas approfondir ni juger, mais revenir à la carte : aujourd’hui, on parle de la personne de la carte. Qui a besoin de parler se voit proposer un entretien après le cours.",
+            "blatt": "ff7-druck-karten"
+          },
+          {
+            "titel": "Scènes : le premier et le deuxième non",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Les groupes passent l’un après l’autre devant la classe, environ trois minutes chacun. Premier passage : une personne met la pression, une autre dit non ; le metteur en scène fige la scène quand ça devient serré. Deuxième passage : la même scène, mais une deuxième personne vient se placer à côté et dit non elle aussi. Après chaque passage, le public montre avec les doigts la force du non (0 à 10) ; puis demander ce que le deuxième non a changé. Pour la première scène, l’enseignant·e prend soi-même le rôle de celui qui insiste, ensuite seulement des volontaires. Après chaque scène, tout le monde sort du rôle.",
+            "sagen": [
+              "Arrêt sur image. Comment se sent la personne qui dit non, en ce moment ?",
+              "Qu’est-ce qui a changé quand une deuxième personne a dit non aussi ?",
+              "Qui pourrait être cette deuxième personne dans la vraie vie ?"
+            ],
+            "tipp": "Le deuxième non est le moment le plus fort de la séance : presque chaque scène bascule dès que quelqu’un passe du côté de celui qui dit non. Le dire clairement – cela prépare le courage civique de la prochaine séance.",
+            "wennEsKippt": "Si le rôle de celui qui insiste devient trop dur – insultes, contact physique, vrais prénoms –, figer tout de suite, faire sortir du rôle et recommencer avec l’enseignant·e dans ce rôle. Si la classe se moque de celui qui dit non, arrêter la scène et demander : qu’est-ce que ces rires font à cette personne en ce moment ? C’est exactement la pression dont on parle aujourd’hui.",
+            "blatt": "ff7-druck-karten"
+          },
+          {
+            "titel": "Mon plan pour un moment de pression",
+            "dauer": 5,
+            "phase": "uebung",
+            "text": "Seul (4 min) : exercice 4 de la fiche. Chacun pense à un moment de pression qu’il connaît ou qu’il imagine bien, et écrit un plan « si… alors » : si cette situation arrive, alors je dis ou je fais ceci. Lire d’abord l’exemple ensemble. En passant dans les rangs, ne pas lire par-dessus l’épaule et n’aider que si quelqu’un lève la main. Les plans ne sont ni lus à voix haute ni ramassés ; qui le souhaite montre le sien à l’enseignant·e.",
+            "sagen": [
+              "Vous n’avez à dire à personne à quelle situation vous pensez. Le plan est pour vous.",
+              "Si aucun moment ne vous vient, prenez une situation des cartes."
+            ],
+            "tipp": "Les plans avec une phrase toute prête marchent particulièrement bien : qui a déjà la phrase en tête n’a plus à chercher ses mots au moment de la pression.",
+            "wennEsKippt": "Si un jeune montre un plan qui fait penser à du chantage, à des menaces ou à une pression autour de photos dénudées, ne pas poser de questions devant la classe, mais lui parler après le cours et informer le SePAS le jour même.",
+            "blatt": "ff7-nein-sagen"
+          },
+          {
+            "titel": "Skill : l’ancre avant le non",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : un skill pour les deux secondes avant le non. Tout le monde se tient derrière sa chaise. Guider lentement (liste) : les pieds bien au sol, sentir le poids sur les deux pieds – comme la position stable pour le stop ; expirer une fois longuement ; puis dire sa propre phrase de la fiche. Trois passages : d’abord en chuchotant, puis à voix normale, puis à deux en regardant l’autre, qui insiste gentiment une fois (5 min). Ensuite, deux ou trois retours : qu’est-ce qui était différent la troisième fois ? Où l’ancre pourrait-elle vous aider – en ligne aussi, avant d’envoyer quelque chose ?",
+            "sagen": [
+              "Sentir les pieds. Expirer longuement. Et seulement ensuite, la phrase.",
+              "Une respiration calme avant le non vous donne deux secondes – et souvent, elles suffisent."
+            ],
+            "punkte": [
+              "Les pieds bien au sol : sens comment tu tiens debout.",
+              "Expire une fois, longuement.",
+              "Puis dis ta phrase pour dire non – calmement, en regardant l’autre."
+            ],
+            "tipp": "Qui ne veut pas parler fort dit sa phrase dans sa tête ; l’ancre fonctionne quand même. Assis, ça marche aussi : les pieds au sol, les mains sur les cuisses.",
+            "wennEsKippt": "Si les binômes en rajoutent en insistant, arrêter l’exercice à deux et faire le troisième passage pour tout le monde en même temps : l’enseignant·e insiste avec « Allez, viens », et chacun répond avec sa phrase."
+          },
+          {
+            "titel": "Skills-Pass, pouce et mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire au tableau la question clé du Skills-Pass : ma phrase pour dire non – et quand je pourrais en avoir besoin. Chacun écrit (2 min) et reçoit le tampon. Tour éclair avec le pouce (1 min) : votre non vous semble-t-il solide aujourd’hui – en haut, au milieu, en bas ? Pour finir, annoncer la mission de la semaine (dans le cahier) et la prochaine séance.",
+            "sagen": [
+              "Le pouce, à trois : à quel point votre non vous semble-t-il solide aujourd’hui ?"
+            ],
+            "tipp": "Si beaucoup de pouces sont en bas, le dire calmement : dire non sous pression, c’est difficile, même pour les adultes. Ça devient plus facile à chaque entraînement, comme pour tout skill."
+          }
+        ],
+        "bruecke": "La semaine prochaine, on parle d’un sujet qui concerne beaucoup de monde : le harcèlement – comment le distinguer d’une blague ou d’une dispute, et ce que les témoins peuvent faire pour que ça s’arrête.",
+        "mission": "Cette semaine, repère un moment de pression du groupe – bruyante ou silencieuse, à la récré ou en ligne. Si tu le sens, essaie ta phrase pour dire non avec l’ancre.",
+        "hintergrund": "À l’adolescence, l’avis des jeunes du même âge prend beaucoup de poids. Dans une expérience, des adolescents prenaient nettement plus de risques dans un jeu de conduite sur ordinateur quand des jeunes de leur âge les regardaient ; chez les adultes, cet effet était beaucoup plus faible (Gardner & Steinberg, 2005). Asch (1956) avait déjà montré que beaucoup de gens se rallient à une majorité qui se trompe clairement – et qu’un seul allié suffit pour que ce conformisme baisse nettement. On en tire deux messages pour la classe : la pression du groupe n’est pas un défaut de caractère, mais un défi attendu à cet âge, et un deuxième non a beaucoup de force. L’entraînement aux skills de la DBT pour adolescents travaille avec des phrases courtes, faciles à répéter, et une attitude calme et assurée (Rathus & Miller, 2015). L’image des trois zones aide à doser le courage.",
+        "quellen": [
+          "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+          "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "achtung": "Les cartes sur la vapoteuse, le défi et le vol sont des thèmes, pas des modes d’emploi : aucun détail, aucune question sur sa propre consommation ou ses propres défis. Si un jeune en parle ou s’en vante, ne pas approfondir ni juger, mais proposer un entretien après le cours. L’enseignant·e joue d’abord le rôle de celui qui insiste. S’il apparaît qu’un jeune subit chantage, menaces ou pression – en ligne aussi, ou autour de photos dénudées –, informer le SePAS le jour même et suivre le protocole de protection de l’école.",
+        "differenzierung": {
+          "leichter": "Pour les zones, il suffit de montrer un, deux ou trois doigts. Des phrases pour dire non au choix au tableau : Non merci. · Sans moi. · Laisse tomber. Qui a du mal à écrire choisit une phrase au tableau ; qui apprend encore la langue du cours l’écrit aussi dans sa langue et prend dans la scène le deuxième non – un mot suffit.",
+          "schwerer": "Inventer une scène de pression silencieuse, où personne ne dit rien, et trouver un non adapté. Ou faire la mise en scène et demander à chaque arrêt sur image ce que veut vraiment celui qui insiste."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec la question en plus (5 min), confort, apprentissage, panique avec quatre situations (10 min), les quatre façons de dire non, avec l’enseignant·e dans le rôle de celui qui insiste, et l’exercice 2 (12 min), deux cartes pression jouées par des volontaires devant la classe – avec un premier et un deuxième non (13 min), l’ancre avant le non et Skills-Pass (10 min). Les scènes en îlots et le plan « si… alors » sont supprimés ; le plan peut devenir la mission de la semaine."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-nein-sagen",
+      "bereich": "skills",
+      "thema": "schwierig",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Nein sagen",
+        "Gruppendruck",
+        "Komfortzone",
+        "Förderfach"
+      ],
+      "bild": "icon:hand-stop",
+      "kurs": [
+        "ff7-e23"
+      ],
+      "de": {
+        "titel": "Nein sagen – vier Wege",
+        "untertitel": "Wenn alle Ja sagen und du eigentlich Nein meinst",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Druck kann laut sein – überreden, auslachen, drohen. Oder leise: Alle machen mit, und keiner sagt etwas. Beides ist schwer auszuhalten, weil Dazugehören viel bedeutet. Ein vorbereitetes Nein macht es leichter."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wo liegen deine Zonen? Schreib in jeden Ring eine Situation aus deinem Alltag.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "zielscheibe",
+                "ringe": [
+                  "Panikzone",
+                  "Lernzone",
+                  "Komfortzone"
+                ],
+                "mitte": "ich"
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "wissen",
+                "titel": "Drei Zonen",
+                "punkte": [
+                  "Komfortzone: fühlt sich sicher an.",
+                  "Lernzone: aufregend, aber machbar.",
+                  "Panikzone: zu viel – hier geht nichts mehr."
+                ]
+              },
+              {
+                "art": "text",
+                "text": "Wachsen kannst du in der Lernzone. Was heute dort liegt, rutscht mit etwas Übung nach innen. Die Zonen sind bei jeder Person anders."
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Vier Arten, Nein zu sagen: Kreis die Art ein, die zu dir passt. Schreib darunter deinen eigenen Satz."
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 0,
+            "items": [
+              {
+                "titel": "Endlosschleife",
+                "text": "Ruhig immer wieder denselben Satz: „Nein, ich will nicht.“"
+              },
+              {
+                "titel": "Nein plus Vorschlag",
+                "text": "„Nein. Aber wir könnten stattdessen …“"
+              },
+              {
+                "titel": "Mit Humor",
+                "text": "„Nee, dafür bin ich heute echt zu faul.“"
+              },
+              {
+                "titel": "Einfach gehen",
+                "text": "Du musst dich nicht rechtfertigen."
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein Nein-Satz: …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "text": "Ein echter Freund akzeptiert ein Nein. Und ein Nein braucht keine lange Begründung."
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "In der Pause: Kevin will Anas Hausaufgaben abschreiben, Ana will nicht. Schreib Anas Antworten in die leere Blase und auf die Linie.",
+            "hinweis": "Nutze zwei verschiedene Arten, Nein zu sagen."
+          },
+          {
+            "art": "comic",
+            "spalten": 3,
+            "felder": [
+              {
+                "figuren": [
+                  "figur:ben:froh:geben",
+                  "figur:jana:neutral"
+                ],
+                "sprecher": 0,
+                "text": "Gib mal schnell deine Mathe-Hausaufgaben. Machen doch alle so.",
+                "requisit": "icon:notebook"
+              },
+              {
+                "figuren": [
+                  "figur:ben:froh",
+                  "figur:jana:ruhig:stopp"
+                ],
+                "sprecher": 1
+              },
+              {
+                "figuren": [
+                  "figur:ben:enttaeuscht:verschraenkt",
+                  "figur:jana:ruhig"
+                ],
+                "sprecher": 0,
+                "text": "Echt jetzt? Ich dachte, wir sind Freunde."
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Anas zweite Antwort: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Das zweite Nein",
+            "text": "Sagt eine zweite Person auch Nein, kippt fast jede Druck-Situation. Diese zweite Person kannst du sein."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein Plan für einen Druck-Moment, den du kennst.",
+            "hinweis": "Schreib den Satz so, dass du ihn sofort sagen kannst."
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Wenn in der Clique über jemanden gelästert wird und alle mich anschauen,",
+                "dann": "sage ich „Ohne mich“ und wechsle das Thema."
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Deine Zonen und dein Plan gehören dir. Wirst du erpresst, bedroht oder zu etwas gedrängt, das dir schadet – auch online –, hol dir Hilfe: bei einer Vertrauensperson, beim SePAS, beim Kanner- a Jugendtelefon (116 111) oder bei der BEE SECURE Helpline (8002 1234)."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen erkunden ihre Komfort-, Lern- und Panikzone, lernen vier Arten, Nein zu sagen, schreiben einen eigenen Nein-Satz und einen Plan für einen Druck-Moment.",
+          "ablauf": [
+            "Einheit 23, Schritt 3: nach der Zonen-Linie Aufgabe 1 allein (4 Min.), nicht vorlesen lassen.",
+            "Schritt 4: die vier Arten vorspielen, Aufgabe 2 allein (3 Min.), Aufgabe 3 zu zweit (4 Min.).",
+            "Schritt 8: Aufgabe 4 allein (4 Min.); Pläne weder vorlesen noch einsammeln.",
+            "Schritt 9: Der eigene Nein-Satz aus Aufgabe 2 ist der Satz für den Anker."
+          ],
+          "hintergrund": "Im Jugendalter beeinflusst die Anwesenheit Gleichaltriger Entscheidungen stark (Gardner & Steinberg, 2005). Schon eine einzige weitere Person, die widerspricht, verringert den Anpassungsdruck deutlich (Asch, 1956). Kurze, vorbereitete Sätze erleichtern das Nein; die Endlosschleife, ruhig denselben Satz wiederholen, stammt aus dem Skillstraining der DBT für Jugendliche (Rathus & Miller, 2015).",
+          "quellen": [
+            "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+            "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+          ],
+          "achtung": "Eigene Erfahrungen mit E-Zigaretten, Diebstahl oder Mutproben nicht vertiefen und nicht bewerten. Bei Erpressung oder Bedrohung, auch online, noch am selben Tag den SePAS informieren.",
+          "material": "Malerkrepp, drei Schilder für die Zonen"
+        }
+      },
+      "fr": {
+        "titel": "Dire non – quatre façons",
+        "untertitel": "Quand tout le monde dit oui et que toi, tu penses non",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "La pression peut être bruyante – insister, se moquer, menacer. Ou silencieuse : tout le monde suit, et personne ne dit rien. Les deux sont difficiles à supporter, parce que faire partie du groupe compte beaucoup. Un non préparé rend les choses plus faciles."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Où sont tes zones ? Écris une situation de ton quotidien dans chaque cercle.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "zielscheibe",
+                "ringe": [
+                  "Panique",
+                  "Apprentissage",
+                  "Confort"
+                ],
+                "mitte": "moi"
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "wissen",
+                "titel": "Trois zones",
+                "punkte": [
+                  "Confort : on se sent en sécurité.",
+                  "Apprentissage : excitant, mais faisable.",
+                  "Panique : trop – plus rien ne marche."
+                ]
+              },
+              {
+                "art": "text",
+                "text": "C’est dans la zone d’apprentissage que tu grandis. Ce qui s’y trouve aujourd’hui se rapproche du centre avec un peu d’entraînement. Les zones sont différentes pour chacun."
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Quatre façons de dire non : entoure celle qui te va. Écris en dessous ta propre phrase."
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 0,
+            "items": [
+              {
+                "titel": "Le disque rayé",
+                "text": "Répéter calmement la même phrase : « Non, je ne veux pas. »"
+              },
+              {
+                "titel": "Non + proposition",
+                "text": "« Non. Mais on pourrait plutôt… »"
+              },
+              {
+                "titel": "Avec humour",
+                "text": "« Non merci, je suis bien trop flemmard aujourd’hui. »"
+              },
+              {
+                "titel": "Partir, simplement",
+                "text": "Tu n’as pas à te justifier."
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ma phrase pour dire non : …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "text": "Un vrai ami accepte un non. Et un non n’a pas besoin d’une longue explication."
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "À la récré, Kevin veut copier les devoirs d’Ana, Ana ne veut pas. Écris les réponses d’Ana dans la bulle vide et sur la ligne.",
+            "hinweis": "Utilise deux façons différentes de dire non."
+          },
+          {
+            "art": "comic",
+            "spalten": 3,
+            "felder": [
+              {
+                "figuren": [
+                  "figur:ben:froh:geben",
+                  "figur:jana:neutral"
+                ],
+                "sprecher": 0,
+                "text": "Passe-moi vite tes devoirs de maths. Tout le monde fait ça.",
+                "requisit": "icon:notebook"
+              },
+              {
+                "figuren": [
+                  "figur:ben:froh",
+                  "figur:jana:ruhig:stopp"
+                ],
+                "sprecher": 1
+              },
+              {
+                "figuren": [
+                  "figur:ben:enttaeuscht:verschraenkt",
+                  "figur:jana:ruhig"
+                ],
+                "sprecher": 0,
+                "text": "Sérieux ? Je croyais qu’on était amis."
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Deuxième réponse d’Ana : …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Le deuxième non",
+            "text": "Quand une deuxième personne dit non elle aussi, presque toutes les situations de pression basculent. Cette deuxième personne, ça peut être toi."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ton plan pour un moment de pression que tu connais.",
+            "hinweis": "Écris la phrase de façon à pouvoir la dire tout de suite."
+          },
+          {
+            "art": "wennDann",
+            "wenn": "Si …",
+            "dann": "… alors",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Si, dans ma bande, on se moque de quelqu’un et que tout le monde me regarde,",
+                "dann": "je dis « Sans moi » et je change de sujet."
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "Tes zones et ton plan t’appartiennent. Si on te fait du chantage, si on te menace ou si on te pousse à faire quelque chose qui te fait du mal – en ligne aussi –, va chercher de l’aide : auprès d’une personne de confiance, du SePAS, du Kanner- a Jugendtelefon (116 111) ou de la BEE SECURE Helpline (8002 1234)."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes explorent leurs zones de confort, d’apprentissage et de panique, découvrent quatre façons de dire non, écrivent leur propre phrase et un plan pour un moment de pression.",
+          "ablauf": [
+            "Séance 23, étape 3 : après la ligne des zones, exercice 1 seul (4 min), sans lecture à voix haute.",
+            "Étape 4 : jouer les quatre façons, exercice 2 seul (3 min), exercice 3 à deux (4 min).",
+            "Étape 8 : exercice 4 seul (4 min) ; les plans ne sont ni lus ni ramassés.",
+            "Étape 9 : la phrase de l’exercice 2 sert pour l’ancre."
+          ],
+          "hintergrund": "À l’adolescence, la présence de jeunes du même âge influence fortement les décisions (Gardner & Steinberg, 2005). Une seule personne de plus qui ose contredire suffit à réduire nettement la pression à se conformer (Asch, 1956). Des phrases courtes et préparées facilitent le non ; le disque rayé – répéter calmement la même phrase – vient de l’entraînement aux skills de la DBT pour adolescents (Rathus & Miller, 2015).",
+          "quellen": [
+            "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+            "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+          ],
+          "achtung": "Ne pas approfondir ni juger les expériences personnelles avec la vapoteuse, le vol ou les défis. En cas de chantage ou de menaces, en ligne aussi, informer le SePAS le jour même.",
+          "material": "Ruban de masquage, trois panneaux pour les zones"
+        }
+      }
+    },
+    {
+      "id": "ff7-druck-karten",
+      "bereich": "skills",
+      "thema": "schwierig",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe",
+        "klasse"
+      ],
+      "dauer": "30 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Gruppendruck",
+        "Rollenspiel",
+        "Situationskarten",
+        "Förderfach"
+      ],
+      "bild": "icon:users-group",
+      "kurs": [
+        "ff7-e23"
+      ],
+      "de": {
+        "titel": "Druck-Karten",
+        "untertitel": "Kopiervorlage zum Ausschneiden – sechs erfundene Druck-Situationen vom Pausenhof bis zum Klassenchat",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So wird gespielt",
+            "punkte": [
+              "Jede Tischgruppe zieht eine Karte und bespricht: Wie fühlt sich die Person? Was würdest du tun? Was wäre hier mutig?",
+              "Vier Rollen: Druck machen, Nein sagen, im zweiten Durchgang ebenfalls Nein sagen, Regie.",
+              "Druck heißt: freundlich und hartnäckig – ohne Beleidigung, ohne Berührung, ohne echte Namen. Karte 6 ist Reserve."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 140,
+            "karten": [
+              {
+                "titel": "1 · Die Hausaufgaben",
+                "text": "Im Klassenchat schreibt Kevin: „Wer schickt die Mathe-Hausaufgaben? Du hast sie doch.“ Zehn Leute lesen mit und warten auf deine Antwort."
+              },
+              {
+                "titel": "2 · Das Foto",
+                "text": "Im Klassenchat geht ein peinliches Foto von einem Mitschüler herum. Alle schicken Lach-Smileys. Jemand schreibt dir: „Leite es in die andere Gruppe weiter.“"
+              },
+              {
+                "titel": "3 · Der Zaun",
+                "text": "Nach der Schule wollen alle über den Zaun der Baustelle klettern. Einer ruft: „Nur Feiglinge bleiben unten.“ Alle schauen dich an."
+              },
+              {
+                "titel": "4 · Hinter der Turnhalle",
+                "text": "In der Pause geht hinter der Turnhalle eine E-Zigarette herum. Alle haben schon probiert. Jetzt hält sie dir jemand hin: „Komm, nur einmal.“"
+              },
+              {
+                "titel": "5 · Der Kaugummi",
+                "text": "Im Supermarkt steckt Luca eine Packung Kaugummi ein, ohne zu bezahlen, und drückt sie dir in die Hand: „Halt mal kurz.“"
+              },
+              {
+                "titel": "6 · Die Einladung",
+                "text": "Deine Clique plant einen Kinoabend. „Aber ohne Sofia, die ist peinlich. Du sagst ihr nichts, okay?“"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Erfundene Druck-Situationen vom Pausenhof bis zum Klassenchat für das Gespräch in Tischgruppen und die Szenen mit erstem und zweitem Nein.",
+          "ablauf": [
+            "Einmal kopieren, ausschneiden; Karten weglassen, die einer aktuellen Lage in der Klasse ähneln, und Namen tauschen, falls jemand so heißt.",
+            "Einheit 23, Schritt 6: je Tischgruppe eine Karte, drei Fragen besprechen, Szene vorbereiten.",
+            "Schritt 7: erster Durchgang mit einem Nein, zweiter mit einem zweiten Nein; die drängelnde Rolle in der ersten Szene spielt die Lehrkraft."
+          ],
+          "hintergrund": "Mutproben und Konsum kommen hier nur als Thema vor, ohne Einzelheiten. Geübt wird das Nein, nicht das Abschrecken: Angst machende Botschaften wirken nur, wenn Menschen zugleich wissen und sich zutrauen, was sie tun können (Peters et al., 2013). Ein einziger Verbündeter schwächt den Druck einer Mehrheit deutlich (Asch, 1956) – deshalb das zweite Nein in jeder Szene.",
+          "quellen": [
+            "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31.",
+            "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70."
+          ],
+          "material": "Papier, Schere"
+        }
+      },
+      "fr": {
+        "titel": "Cartes pression",
+        "untertitel": "Modèle à photocopier et à découper – six situations de pression inventées, de la cour au groupe de la classe",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Comment on joue",
+            "punkte": [
+              "Chaque îlot tire une carte et discute : comment se sent la personne ? Qu’est-ce que tu ferais ? Qu’est-ce qui serait courageux ici ?",
+              "Quatre rôles : mettre la pression, dire non, dire non aussi au deuxième passage, mise en scène.",
+              "Mettre la pression, c’est insister gentiment – sans insulte, sans se toucher, sans vrais prénoms. La carte 6 est une réserve."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 140,
+            "karten": [
+              {
+                "titel": "1 · Les devoirs",
+                "text": "Dans le groupe de la classe, Kevin écrit : « Qui envoie les devoirs de maths ? Toi, tu les as. » Dix personnes lisent et attendent ta réponse."
+              },
+              {
+                "titel": "2 · La photo",
+                "text": "Dans le groupe de la classe, une photo gênante d’un élève circule. Tout le monde envoie des émojis qui rient. Quelqu’un t’écrit : « Transfère-la dans l’autre groupe. »"
+              },
+              {
+                "titel": "3 · La palissade",
+                "text": "Après les cours, tout le monde veut escalader la palissade du chantier. Quelqu’un crie : « Seuls les trouillards restent en bas. » Tout le monde te regarde."
+              },
+              {
+                "titel": "4 · Derrière le gymnase",
+                "text": "À la récré, une vapoteuse passe de main en main derrière le gymnase. Tout le monde a déjà essayé. Maintenant, quelqu’un te la tend : « Allez, juste une fois. »"
+              },
+              {
+                "titel": "5 · Le chewing-gum",
+                "text": "Au supermarché, Luca met un paquet de chewing-gums dans sa poche sans payer et te le glisse dans la main : « Tiens-le deux secondes. »"
+              },
+              {
+                "titel": "6 · L’invitation",
+                "text": "Ta bande prévoit une soirée cinéma. « Mais sans Sofia, elle est trop gênante. Tu ne lui dis rien, d’accord ? »"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Des situations de pression inventées, de la cour au groupe de la classe, pour la discussion en îlots et les scènes avec un premier et un deuxième non.",
+          "ablauf": [
+            "Photocopier une fois, découper ; écarter les cartes qui ressemblent à une situation actuelle de la classe et changer les prénoms si un jeune s’appelle ainsi.",
+            "Séance 23, étape 6 : une carte par îlot, discuter des trois questions, préparer la scène.",
+            "Étape 7 : premier passage avec un non, deuxième avec un deuxième non ; dans la première scène, l’enseignant·e joue celui qui insiste."
+          ],
+          "hintergrund": "Les défis et la consommation n’apparaissent ici que comme thèmes, sans détails. On s’entraîne à dire non, on ne cherche pas à faire peur : les messages qui font peur n’agissent que si l’on sait en même temps quoi faire et qu’on s’en sent capable (Peters et al., 2013). Un seul allié affaiblit nettement la pression d’une majorité (Asch, 1956) – d’où le deuxième non dans chaque scène.",
+          "quellen": [
+            "Peters, G.-J. Y., Ruiter, R. A. C. & Kok, G. (2013). Threatening communication: A critical re-analysis and a revised meta-analytic test of fear appeal theory. Health Psychology Review, 7(Suppl. 1), S8–S31.",
+            "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70."
+          ],
+          "material": "Papier, ciseaux"
+        }
+      }
+    }
+  ]
+}

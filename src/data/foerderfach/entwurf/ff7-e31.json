@@ -1,0 +1,1043 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e31",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-was-mir-guttut",
+        "ff7-skills-koffer"
+      ],
+      "vorlagen": [
+        "ff7-noahs-kette"
+      ],
+      "woerter": [
+        {
+          "de": "der Schlaf",
+          "fr": "le sommeil"
+        },
+        {
+          "de": "die Bewegung",
+          "fr": "le mouvement"
+        },
+        {
+          "de": "der Hunger",
+          "fr": "la faim"
+        },
+        {
+          "de": "müde",
+          "fr": "fatigué, fatiguée"
+        },
+        {
+          "de": "guttun",
+          "fr": "faire du bien"
+        },
+        {
+          "de": "der kleine Schritt",
+          "fr": "le petit pas"
+        }
+      ],
+      "de": {
+        "titel": "Was mir guttut",
+        "kurz": "Schlaf, Bewegung, Essen und Stress hängen zusammen: Die Klasse bezieht Position, legt einen erfundenen Tag als Kette, sucht Stellen zum Unterbrechen und plant einen kleinen Schritt.",
+        "ziele": [
+          "beziehen Position zu Fragen rund um Schlaf, Bewegung, Essen und Stress und hören, wie andere es sehen",
+          "zeigen an einem erfundenen Tag, wie Schlaf, Essen, Bewegung und Stress einander mitziehen, und finden Stellen zum Unterbrechen",
+          "planen einen kleinen, machbaren Schritt mit einem Wenn-dann-Satz und tragen ihn in die grüne Zone ihres Ampelplans ein",
+          "probieren den Bodyscan als Skill zum Abschalten am Abend aus"
+        ],
+        "material": [
+          "Schülerheft mit dem Skills-Koffer",
+          "Gefühlsrad-Plakat, 40 Klebepunkte",
+          "Plakat „Letzte Nacht“ (Schritt 1)",
+          "Drei Schilder: A, B, Kommt drauf an",
+          "Kettenkarten, fünf Umschläge",
+          "Klebezettel, ein Block je Gruppe",
+          "Moderationskarten, Stifte, Magnete",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Mit Régent oder SePAS klären, ob das Thema jemanden gerade besonders trifft; diese Person vorher ansprechen.",
+          "Plakat „Letzte Nacht“ mit fünf Feldern neben das Gefühlsrad hängen (Schritt 1).",
+          "Schilder A (Fenster), B (Tür) und „Kommt drauf an“ (Mitte) aufhängen; den Weg frei räumen.",
+          "Kettenkarten fünfmal kopieren, ausschneiden, gemischt in Umschläge legen."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Gefühl, Anspannung, letzte Nacht"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick und Start ins Kapitel „Gesund und stark“"
+          },
+          {
+            "min": "15–30",
+            "phase": "aktiv",
+            "titel": "Position beziehen: Wo steht ihr?"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Noahs Dienstag: die Kette legen"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: der Wach-Test"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Die Kette unterbrechen"
+          },
+          {
+            "min": "65–85",
+            "phase": "uebung",
+            "titel": "Mein kleiner Schritt"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Bodyscan"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Mission und Ausblick"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühl, Anspannung, letzte Nacht",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person wie gewohnt einen Punkt auf das Gefühlsrad und einen zweiten auf das Plakat „Letzte Nacht habe ich … geschlafen“ mit fünf Feldern: unter 6 Stunden, 6–7, 7–8, 8–9, über 9; wer es nicht genau weiß, schätzt. Die Punkte der Lehrkraft kleben schon. Wenn alle sitzen, zeigen alle auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft nennt zuerst Gefühl und Zahl, dann zwei, drei Freiwillige (4 Min.). Danach schaut die Klasse auf beide Plakate, und zwei Stimmen sagen, was ihnen auffällt (3 Min.). Nicht bewerten, nur festhalten: Viele kurze Nächte und viele Punkte bei müde, gereizt oder genervt – vielleicht kein Zufall.",
+            "sagen": [
+              "Ein Punkt für euer Gefühl, einer für eure letzte Nacht. Die Punkte haben keine Namen – niemand muss sagen, welcher seiner ist.",
+              "Schaut auf die beiden Plakate. Passt da etwas zusammen?"
+            ],
+            "tipp": "Mit einem ehrlichen Beispiel beginnen, etwa: Ich habe nur sechs Stunden geschlafen, und das merke ich an meiner Geduld. Das Plakat „Letzte Nacht“ bis zum Ende hängen lassen – beim kleinen Schritt kommt die Klasse darauf zurück.",
+            "wennEsKippt": "Drängeln sich alle an den Plakaten, tischgruppenweise kleben lassen. Kommentiert jemand laut fremde Punkte („Wer schläft denn nur fünf Stunden?“), auf die Klassenvereinbarung zeigen: Die Punkte bleiben ohne Namen. Kleben auffallend viele Punkte unter 6 Stunden, das ruhig benennen, ohne nach Gründen zu fragen: Kurze Nächte haben viele Ursachen, und nicht alle kann man selbst ändern."
+          },
+          {
+            "titel": "Rückblick und Start ins Kapitel „Gesund und stark“",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann per Daumen nach der Wochen-Mission fragen – hoch, Mitte, runter –, und eine Stimme erzählt, wie es mit dem neuen Satz gelaufen ist; niemand muss die Mission geschafft haben. Das neue Kapitel an die Tafel schreiben: Gesund und stark – Wie sorge ich für mich? Zwei Stunden: heute Schlaf, Bewegung, Essen und Stress, nächste Woche ruhig durch die Testphase. Darunter in großer Schrift den Rahmen: Hier wird kein Körper, kein Teller und keine Schlafenszeit bewertet.",
+            "sagen": [
+              "Heute geht es um Schlaf, Bewegung, Essen und Stress – und darum, wie das zusammenhängt. Niemand muss erzählen, was er isst oder wann er schlafen geht.",
+              "Gesund heißt hier nicht perfekt. Am Ende sucht sich jede und jeder einen kleinen Schritt aus, der in den eigenen Alltag passt."
+            ],
+            "tipp": "Der Satz zum Rahmen entlastet viele: alle, die bei Gesundheitsthemen Ermahnungen erwarten, und alle, die zu Hause wenig Spielraum haben – was es zu essen gibt oder wie ruhig es abends ist, entscheiden Jugendliche oft nicht selbst."
+          },
+          {
+            "titel": "Position beziehen: Wo steht ihr?",
+            "dauer": 15,
+            "phase": "aktiv",
+            "text": "Alle stehen auf. An der Fensterseite hängt das Schild A, an der Türseite B, in der Mitte „Kommt drauf an“. Eine Frage mit zwei Antworten langsam vorlesen und die Antworten mit einer Geste zeigen; alle überlegen still, zeigen auf drei mit dem Arm in ihre Richtung und gehen erst dann los. Danach sagen ein, zwei Freiwillige, warum sie dort stehen; wer in der Mitte steht, sagt, worauf es ankommt. Die Lehrkraft fasst in einem Satz zusammen, ohne zu bewerten, und fragt, wo es passt: Was hat das mit Stress zu tun? Sechs Fragen schaffen die meisten Klassen in der Zeit, die beiden letzten nur, wenn es gut läuft. Wer nicht laufen mag, zeigt vom Platz aus mit dem Daumen: hoch für A, runter für B, waagrecht für die Mitte.",
+            "sagen": [
+              "Erst überlegen, dann auf drei zeigen, dann gehen, nicht rennen. Eure Seite sagt nichts über euch – nur, wie ihr es heute seht.",
+              "Wer in der Mitte steht: Worauf kommt es an?",
+              "Was hat das mit Stress zu tun?"
+            ],
+            "punkte": [
+              "Der Wecker klingelt. A: Ich stehe sofort auf. B: Ich drücke noch ein paarmal auf Schlummern.",
+              "Nach einer kurzen Nacht merke ich es vor allem … A: an meiner Laune. B: an meiner Konzentration.",
+              "Mit leerem Magen bin ich eher … A: schnell gereizt. B: müde und langsam.",
+              "Wenn mir alles zu viel wird, hilft mir eher … A: Bewegung, Musik oder frische Luft. B: Handy, Serie oder Konsole.",
+              "Ich bewege mich vor allem, … A: weil es mir Spaß macht. B: weil ich muss – Schulweg, Sportunterricht.",
+              "„Wer müde ist, soll halt früher schlafen gehen.“ A: So einfach ist das. B: So einfach ist es nicht.",
+              "Abends liegt mein Handy … A: außer Reichweite. B: direkt neben mir.",
+              "Wenn es mir nicht gut geht, brauche ich eher … A: Menschen um mich. B: Ruhe für mich allein."
+            ],
+            "tipp": "Bei der Frage „Wer müde ist, soll halt früher schlafen gehen“ länger bleiben: Lärm, ein geteiltes Zimmer, Gedanken an morgen, das Handy und eine innere Uhr, die sich in der Pubertät nach hinten verschiebt – früher schlafen ist selten nur eine Frage des Willens. Das nimmt dem Thema die Moral, bevor es um eigene Schritte geht.",
+            "wennEsKippt": "Laufen alle den Freunden hinterher, strenger beim Ablauf bleiben: Auf drei zeigen alle gleichzeitig und halten den Arm oben, bis die Lehrkraft geschaut hat; erst dann gehen. Wird es zu laut, die nächsten Fragen im Sitzen mit dem Daumen spielen. Kommentiert jemand die Seite eines anderen („Du machst doch eh keinen Sport“), sofort stoppen: Hier wird niemand für seine Seite bewertet. Erzählt jemand Privates („Bei uns ist es nachts nie ruhig“), kurz würdigen, allgemein machen und nach der Stunde nachfragen."
+          },
+          {
+            "titel": "Noahs Dienstag: die Kette legen",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Jede Tischgruppe bekommt einen Umschlag mit acht Kettenkarten: ein erfundener Tag von Noah, 13, durcheinandergemischt. Rollen verteilen: vorlesen, legen, schreiben, Zeit. Die Gruppe liest die Karten laut und legt sie nach der Uhrzeit (4 Min.). Dann klebt sie zwischen die Karten Klebezettel mit dem Warum, mindestens vier; das Beispiel steht an der Tafel: zu spät geschlafen, deshalb todmüde (5 Min.). Zum Schluss schiebt die Gruppe die letzte Karte neben die erste: Der Dienstagabend führt in die nächste kurze Nacht – aus dem Tag wird ein Kreis. Zwei Gruppen erklären ihren Kreis in drei Sätzen (4 Min.); an der Tafel festhalten: Schlaf, Essen, Bewegung und Stress ziehen einander mit – nach unten wie nach oben (2 Min.).",
+            "sagen": [
+              "Lest erst alle Karten, dann legt sie nach der Uhrzeit. Die eigentliche Aufgabe kommt danach: Warum führt das eine zum nächsten?",
+              "Schaut euch die letzte Karte an. Was passiert in der Nacht darauf?"
+            ],
+            "tipp": "Die Uhrzeiten auf den Karten sind Absicht: Das Ordnen gelingt auch Jugendlichen, die mühsam lesen, und die Denkarbeit liegt bei den Klebezetteln dazwischen. Die Karten bleiben über die Bewegungspause auf den Tischen liegen – danach geht es mit ihnen weiter.",
+            "wennEsKippt": "Ist eine Gruppe nach drei Minuten fertig und albert herum, eine Zusatzfrage stellen: Welche Karte ist die gefährlichste – und warum? Kommt in einer Gruppe kein Zusammenhang zustande, selbst den ersten vorgeben (spät geschlafen, deshalb müde) und fragen, wie es weitergeht. Sagt jemand „Das bin ja ich“, freundlich bleiben: Vielen geht es manchmal so – genau deshalb ist Noah erfunden.",
+            "blatt": "ff7-noahs-kette"
+          },
+          {
+            "titel": "Bewegungspause: der Wach-Test",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Fenster auf, alle stehen hinter ihrem Stuhl. Auf drei zeigt jede Person mit den Fingern, wie wach sie gerade ist, von 0 bis 10. Dann eine Minute Bewegung: auf der Stelle laufen, Knie hoch, Arme schwingen; wer nicht springen kann oder mag, kreist Arme und Schultern. Danach eine Minute ganz still stehen, eine Hand auf dem Bauch, und spüren, wie der Atem ruhiger wird. Auf drei zeigen alle noch einmal ihre Zahl; kurz fragen, was sich verändert hat. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Wie wach seid ihr gerade, von 0 bis 10? Auf drei – Finger hoch.",
+              "Zwei Minuten, kein Geld, kein Sportzeug. Wo in Noahs Tag hätte das gepasst?"
+            ],
+            "tipp": "Bei den meisten steigt die Zahl – das ist die Brücke zurück zur Kette: Bewegung ist eine der Stellen, an denen sich Noahs Tag drehen lässt, und sie kostet nichts."
+          },
+          {
+            "titel": "Die Kette unterbrechen",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Die Tischgruppen kehren zu ihrem Kreis zurück. Auftrag (4 Min.): zwei Stellen finden, an denen ein kleiner Schritt Noahs Kette unterbrechen könnte, und jeden Schritt auf eine Moderationskarte schreiben – so genau, dass Noah morgen weiß, was er tut. Bedingung: Der Schritt kostet nichts und dauert höchstens zehn Minuten. Dann stellt jede Gruppe einen Schritt vor und hängt ihn an die Tafel; die Klasse prüft mit dem Daumen, ob Noah das auch an einem stressigen Tag schafft (6 Min.). Die Lehrkraft ordnet die Karten nach den vier Bereichen – Schlaf, Essen und Trinken, Bewegung, Stress und Pausen – und ergänzt, was fehlt (Tafelbild, 3 Min.). Zum Schluss die Frage an alle: Welche Stelle würdet ihr als Erstes ändern? (2 Min.)",
+            "sagen": [
+              "Nicht das perfekte Leben für Noah planen – nur einen Schritt, den er morgen wirklich schafft.",
+              "Schafft Noah das auch an einem stressigen Tag? Daumen."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Hier unterbrechen",
+                "Kleiner Schritt"
+              ],
+              "zeilen": [
+                [
+                  "Montag, 23:40 – Videos im Bett",
+                  "Um 22 Uhr kommt das Handy zum Laden in die Küche."
+                ],
+                [
+                  "Dienstag, 7:20 – keine Zeit",
+                  "Am Abend die Tasche packen und die Flasche mit Leitungswasser füllen."
+                ],
+                [
+                  "Dienstag, 8:30 – Kopf wie Watte",
+                  "Vor dem Test eine Runde Fingeratmung."
+                ],
+                [
+                  "Dienstag, 10:00 – Hunger, schlechte Laune",
+                  "In der Pause zuerst etwas trinken oder essen, dann reden."
+                ],
+                [
+                  "Dienstag, 17:00 – zu platt",
+                  "Trotzdem zehn Minuten mit auf den Platz."
+                ],
+                [
+                  "Dienstag, 21:30 – Kopf voll",
+                  "Zwei Gedanken auf einen Zettel schreiben, dann der Bodyscan."
+                ]
+              ]
+            },
+            "tipp": "Kommen große Vorschläge („Noah soll jeden Tag joggen“), zurückfragen: Was davon schafft er auch an einem schlechten Tag? Aus Riesenvorsätzen werden so kleine Schritte – genau das braucht gleich jede Person für ihren eigenen Plan.",
+            "wennEsKippt": "Kommen Sprüche über Essen oder Körper („Noah soll halt weniger fressen“), ruhig und sofort stoppen: Hier geht es darum, wie Hunger und Laune zusammenhängen, nicht um Figur. Schlägt jemand einen Energydrink vor, das ernst nehmen: Er macht kurz wach und raubt dann den Schlaf der nächsten Nacht – die Kette dreht sich weiter. Findet eine Gruppe nichts, mit einer Frage starten: Was hätte Noah um 21:30 Uhr tun können, statt zu grübeln?",
+            "blatt": "ff7-noahs-kette"
+          },
+          {
+            "titel": "Mein kleiner Schritt",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Allein am Blatt „Was mir guttut“. Aufgabe 1 (3 Min.): in sechs Bereichen ankreuzen, wie es gerade läuft. Aufgabe 2 (7 Min.): einen Bereich wählen und einen kleinen Schritt als Wenn-dann-Satz aufschreiben – aus den Ideen auf dem Blatt, von der Tafel oder selbst erfunden; die zweite Zeile ist der Plan für das größte Hindernis. Dabei herumgehen und helfen, zu große Schritte kleiner zu machen. Aufgabe 3 (2 Min.): die Zuversicht von 0 bis 10 einkreisen; unter 7 wird der Schritt kleiner. Zu zweit (4 Min.): Wer mag, liest seinen Plan der Person daneben vor; sie prüft nur, ob man weiß, wann, wo und was genau. Wer den Plan nicht zeigen will, prüft ihn selbst. Zum Schluss die Abhakliste in Aufgabe 4 erklären (2 Min.).",
+            "sagen": [
+              "Ein kleiner Schritt kostet nichts, dauert höchstens zehn Minuten und klappt auch an einem stressigen Tag.",
+              "Wie sicher seid ihr, von 0 bis 10? Unter 7? Dann macht den Schritt kleiner – so klein, dass er fast sicher klappt.",
+              "Euren Plan muss niemand vorlesen. Wer mag, liest nur seinen eigenen vor – leise, der Person daneben."
+            ],
+            "tipp": "Schritte, die nichts kosten, zuerst vorschlagen: Handy zum Laden in die Küche, eine Haltestelle früher aussteigen, Leitungswasser in die Flasche, in der Pause zehn Minuten raus. Wer sagt, bei ihm laufe alles gut, schreibt auf, was er beibehalten will – auch das ist ein Plan. Wer unruhig wird, darf an die Tafel gehen und sich dort einen Schritt aussuchen.",
+            "wennEsKippt": "Schreibt jemand ein Ziel wie „abnehmen“ oder „weniger essen“, das weder loben noch vor der Klasse besprechen: leise umlenken auf etwas, das guttut, ohne zu verzichten – Bewegung, die Spaß macht, genug trinken, früher schlafen – und nach der Stunde kurz nachfragen. Wer gar nicht schreiben will, wählt mündlich einen Schritt von der Tafel; die Lehrkraft notiert ihn auf dem Blatt.",
+            "blatt": "ff7-was-mir-guttut"
+          },
+          {
+            "titel": "Skill: Bodyscan",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: ein Skill für abends im Bett, wenn der Kopf nicht abschaltet – wie bei Noah um 21:30 Uhr. Alle sitzen bequem, die Füße auf dem Boden, Augen zu oder Blick auf einen Punkt am Boden. Langsam anleiten, bei jedem Satz die Körperstelle mit der eigenen Hand zeigen und Pausen lassen (Liste, 4 Min.). Danach zwei, drei Rückmeldungen: Wann könnte das helfen? (2 Min.) Zum Schluss schlagen alle ihren Skills-Koffer auf (ohne Heft: Kopie der Seite): Der kleine Schritt kommt in die grüne Zone des Ampelplans, und wer den Bodyscan mochte, trägt ihn ins freie Fach des Koffers ein (4 Min.). Der Skill in drei Schritten: ankommen und ausatmen – von Kopf bis Fuß jede Stelle spüren und lockerlassen – zurückkommen.",
+            "sagen": [
+              "Niemand muss die Augen schließen. Ihr könnt auch auf einen Punkt am Boden schauen.",
+              "Der Skills-Koffer hilft, wenn es brennt. Die grüne Zone sorgt dafür, dass es seltener brennt – dort gehört euer kleiner Schritt hin."
+            ],
+            "punkte": [
+              "Setz dich bequem hin, die Füße auf dem Boden. Schließ die Augen, wenn es für dich passt. Atme einmal tief ein … und langsam aus.",
+              "Geh mit der Aufmerksamkeit zur Stirn, zu den Augen, zum Kiefer. Lass die Zähne locker auseinander. Spür Nacken und Schultern – vielleicht sinken sie ein Stück.",
+              "Spür deine Arme bis in die Fingerspitzen. Spür den Bauch: Er hebt und senkt sich von allein.",
+              "Geh weiter zu den Beinen und Füßen: Oberschenkel auf dem Stuhl, Fersen, Sohlen, Zehen. Lass sie schwer werden.",
+              "Spür noch einmal den ganzen Körper. Beweg Finger und Zehen, streck dich und öffne langsam die Augen."
+            ],
+            "tipp": "Kichern beim ersten Mal ist normal. Wer nicht still sitzen kann, darf einen Knetball halten oder die Füße leicht bewegen. Den Bodyscan als Abendskill empfehlen: im Bett, Licht aus, dieselben Sätze leise im Kopf.",
+            "wennEsKippt": "Wird es unruhig, nicht schimpfen, sondern leiser weitersprechen und kürzen: nur Kopf, Schultern, Füße. Wer nicht mitmachen will, sitzt still und schaut aus dem Fenster – das ist erlaubt, Stören nicht. Ist jemandem das Spüren des eigenen Körpers unangenehm, darf er die Augen offen lassen und still seine Atemzüge zählen; wirkt jemand sehr angespannt, nach der Stunde kurz nachfragen.",
+            "blatt": "ff7-skills-koffer"
+          },
+          {
+            "titel": "Skills-Pass, Mission und Ausblick",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Was tut mir gut – und welchen kleinen Schritt probiere ich aus? Alle schreiben einen Satz (2 Min.) und bekommen den Stempel. Blitzlicht mit Handzeichen statt Worten: Wer hat Schlaf gewählt, wer Bewegung, wer Essen und Trinken, wer Pausen, wer Menschen? Dann die Wochen-Mission ansagen (steht im Heft): den kleinen Schritt an drei Tagen ausprobieren – oder einmal abends den Bodyscan. Zum Schluss der Ausblick auf die nächste Stunde.",
+            "sagen": [
+              "Hand hoch, wer Schlaf gewählt hat. Und Bewegung? … Ihr seht: Jeder Bereich hat seine Leute."
+            ],
+            "tipp": "Die Abhakliste in der nächsten Stunde nicht kontrollieren. Ein Daumen reicht – und ein verpasster Tag ist kein Scheitern."
+          }
+        ],
+        "bruecke": "Nächste Woche geht es um die Testphase: woher der Stress vor einem Test kommt, wie ihr das Lernen vom Testtag rückwärts plant – und welche Skills im Test niemand bemerkt.",
+        "mission": "Probiere deinen kleinen Schritt diese Woche an drei Tagen aus und hake ihn ab – oder mach einmal abends im Bett den Bodyscan. Was war danach anders?",
+        "hintergrund": "Schlaf, Bewegung und Essen sind kein Extrathema neben den Gefühlen: Wer übermüdet oder hungrig ist oder sich lange kaum bewegt hat, reagiert schneller gereizt und kommt schwerer wieder herunter. Im Skillstraining für Jugendliche gilt die Sorge für Schlaf, Essen und Bewegung deshalb als eigener Baustein, der die Anfälligkeit für starke Gefühle senkt (Rathus & Miller, 2015). Beim Schlaf kommt in diesem Alter etwas hinzu: In der Pubertät verschiebt sich die innere Uhr nach hinten, die Schule beginnt aber früh, und Bildschirme am Abend verstärken das (Carskadon, 2011). Früher schlafen ist darum selten nur eine Frage des Willens – die Stunde sucht kleine Stellschrauben statt Schuldige. Beim Essen geht es nur um Hunger und Laune, nie um Gewicht: Jugendliche, die Diät halten, haben fünf Jahre später eher mehr Probleme mit Essen und Gewicht als weniger (Neumark-Sztainer et al., 2006).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
+          "Neumark-Sztainer, D., Wall, M., Guo, J., Story, M., Haines, J. & Eisenberg, M. (2006). Obesity, disordered eating, and eating disorders in a longitudinal study of adolescents: How do dieters fare 5 years later? Journal of the American Dietetic Association, 106(4), 559–568."
+        ],
+        "achtung": "Gesundheit berührt schnell Privates. Keine Zahlen zu Gewicht oder Kalorien, keine Kommentare zu Körpern, keine guten oder schlechten Lebensmittel; Ziele wie „abnehmen“ nicht bestärken, sondern behutsam umlenken. Was es zu essen gibt und wie ruhig die Nächte sind, entscheiden Jugendliche oft nicht selbst: nie nach dem Essen zu Hause fragen, nur kostenlose Schritte vorschlagen. Hinweise auf Hunger, Erschöpfung, Essstörungen, Selbstverletzung oder Vernachlässigung nicht vor der Klasse vertiefen: nach der Stunde ansprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "differenzierung": {
+          "leichter": "Wer die Unterrichtssprache noch lernt, stellt sich bei der Aufstellung neben eine Person, die übersetzt, und darf den eigenen Plan in der eigenen Sprache schreiben; auf das Plakat „Letzte Nacht“ einen Mond zeichnen. Die Kettenkarten liest eine Person vor, die gut liest; Uhrzeiten und Bilder helfen beim Ordnen, auf den Klebezetteln reichen Stichworte. Für den Plan einen Schritt von der Tafel übernehmen und den Satzanfang ergänzen: Wenn es … Uhr ist, dann …",
+          "schwerer": "Eine Gegenkette für Noah legen: Wie sähe der Dienstag aus, wenn er am Montag um 22 Uhr das Handy weglegt? Oder im eigenen Plan zwei Hindernisse vorausdenken und für beide einen Wenn-dann-Satz schreiben."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gefühlsrad und Schlaf-Punkt (5 Min.), Position beziehen mit vier Fragen (10 Min.), Noahs Kette legen und an zwei Stellen unterbrechen (15 Min.), Mein kleiner Schritt mit den Aufgaben 2 und 3 (10 Min.), Bodyscan (5 Min.), Skills-Pass und Mission (5 Min.). Aufgabe 1 und der Eintrag in den Skills-Koffer werden in der nächsten Stunde nachgeholt."
+      },
+      "fr": {
+        "titel": "Ce qui me fait du bien",
+        "kurz": "Sommeil, mouvement, alimentation et stress sont liés : la classe prend position, reconstitue une journée inventée en chaîne, cherche où la briser et planifie un petit pas.",
+        "ziele": [
+          "prennent position sur des questions de sommeil, de mouvement, d’alimentation et de stress et écoutent le point de vue des autres",
+          "montrent, à partir d’une journée inventée, comment sommeil, alimentation, mouvement et stress s’entraînent, et repèrent où briser la chaîne",
+          "planifient un petit pas réaliste avec un plan « si… alors » et l’inscrivent dans la zone verte de leur plan feu tricolore",
+          "essaient le scan corporel comme skill pour décrocher le soir"
+        ],
+        "material": [
+          "Cahier avec la valise à skills",
+          "Roue des émotions, 40 gommettes",
+          "Affiche « Cette nuit » (étape 1)",
+          "Trois panneaux : A, B, Ça dépend",
+          "Cartes chaîne, cinq enveloppes",
+          "Post-it : un bloc par îlot",
+          "Cartes, feutres, aimants",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Vérifier avec le régent ou le SePAS si le thème touche particulièrement un jeune ; lui en parler avant.",
+          "Afficher « Cette nuit » avec cinq cases à côté de la roue des émotions (étape 1).",
+          "Panneaux A (fenêtre), B (porte) et « Ça dépend » (milieu) ; dégager le passage.",
+          "Photocopier cinq fois les cartes chaîne, les découper, les mélanger dans les enveloppes."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : émotion, tension, la nuit dernière"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour et début du chapitre « Prendre soin de soi »"
+          },
+          {
+            "min": "15–30",
+            "phase": "aktiv",
+            "titel": "Prendre position : où vous placez-vous ?"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Le mardi de Noah : reconstituer la chaîne"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : le test de l’éveil"
+          },
+          {
+            "min": "50–65",
+            "phase": "uebung",
+            "titel": "Briser la chaîne"
+          },
+          {
+            "min": "65–85",
+            "phase": "uebung",
+            "titel": "Mon petit pas"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : le scan corporel"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, mission et suite"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : émotion, tension, la nuit dernière",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle comme d’habitude une gommette sur la roue des émotions, et une seconde sur l’affiche « Cette nuit, j’ai dormi… » à cinq cases : moins de 6 heures, 6 à 7, 7 à 8, 8 à 9, plus de 9 ; en cas de doute, on estime. Les gommettes de l’enseignant·e sont déjà collées. Une fois tout le monde assis, chacun montre sa tension avec les doigts à « trois » (0 à 10 doigts pour 0 à 100) ; l’enseignant·e donne d’abord son émotion et son chiffre, puis deux ou trois volontaires (4 min). Ensuite, la classe regarde les deux affiches, et deux voix disent ce qu’elles remarquent (3 min). Ne pas juger, seulement constater : beaucoup de nuits courtes, beaucoup de gommettes sur fatigué, irrité ou agacé – peut-être pas un hasard.",
+            "sagen": [
+              "Une gommette pour votre émotion, une pour votre nuit. Les gommettes n’ont pas de nom – personne n’est obligé de dire laquelle est la sienne.",
+              "Regardez les deux affiches. Est-ce que quelque chose va ensemble ?"
+            ],
+            "tipp": "Commencer par un exemple sincère, comme : je n’ai dormi que six heures, et ça se voit à ma patience. Laisser l’affiche « Cette nuit » jusqu’à la fin : la classe y reviendra au moment du petit pas.",
+            "wennEsKippt": "Si tout le monde se bouscule devant les affiches, faire passer îlot par îlot. Si quelqu’un commente à voix haute les gommettes des autres (« Qui dort seulement cinq heures ? »), montrer la charte de classe : les gommettes restent anonymes. Si beaucoup de gommettes sont sous les 6 heures, le dire calmement sans demander pourquoi : les nuits courtes ont beaucoup de causes, et on ne peut pas toutes les changer soi-même."
+          },
+          {
+            "titel": "Retour et début du chapitre « Prendre soin de soi »",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Puis demander avec le pouce où en est la mission de la semaine – en haut, au milieu, en bas –, et une voix raconte comment ça s’est passé avec la nouvelle phrase ; personne n’est obligé d’avoir réussi la mission. Écrire le nouveau chapitre au tableau : Prendre soin de soi – Comment prendre soin de moi ? Deux séances : aujourd’hui le sommeil, le mouvement, l’alimentation et le stress, la semaine prochaine les devoirs en classe abordés avec calme. En dessous, en grand, le cadre : ici, on ne juge ni les corps, ni les assiettes, ni les heures de coucher.",
+            "sagen": [
+              "Aujourd’hui, on parle de sommeil, de mouvement, d’alimentation et de stress – et de la façon dont tout ça est lié. Personne n’est obligé de dire ce qu’il mange ou à quelle heure il se couche.",
+              "Ici, prendre soin de soi ne veut pas dire être parfait. À la fin, chacun choisit un petit pas qui va avec son quotidien."
+            ],
+            "tipp": "La phrase sur le cadre soulage beaucoup de jeunes : ceux qui s’attendent à des reproches dès qu’on parle de santé, et ceux qui ont peu de marge à la maison – ce qu’il y a à manger ou le calme du soir, les jeunes ne le décident souvent pas eux-mêmes."
+          },
+          {
+            "titel": "Prendre position : où vous placez-vous ?",
+            "dauer": 15,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève. Côté fenêtre, le panneau A, côté porte, le B, au milieu « Ça dépend ». Lire lentement une question à deux réponses et montrer les réponses avec un geste ; chacun réfléchit en silence, montre sa direction avec le bras à « trois » et seulement ensuite se déplace. Puis un ou deux volontaires disent pourquoi ils sont là ; ceux du milieu disent de quoi ça dépend. Résumer en une phrase, sans juger, et demander quand ça s’y prête : quel rapport avec le stress ? La plupart des classes font six questions dans le temps prévu, les deux dernières seulement si tout roule. Qui ne veut pas se déplacer répond depuis sa place avec le pouce : en haut pour A, en bas pour B, à l’horizontale pour le milieu.",
+            "sagen": [
+              "D’abord réfléchir, puis montrer à trois, puis marcher, sans courir. Votre côté ne dit rien sur vous – seulement comment vous voyez les choses aujourd’hui.",
+              "Ceux du milieu : ça dépend de quoi ?",
+              "Quel rapport avec le stress ?"
+            ],
+            "punkte": [
+              "Le réveil sonne. A : je me lève tout de suite. B : je repousse encore plusieurs fois l’alarme.",
+              "Après une nuit trop courte, je le remarque surtout… A : à mon humeur. B : à ma concentration.",
+              "Le ventre vide, je suis plutôt… A : vite irritable. B : fatigué et lent.",
+              "Quand tout devient trop, ce qui m’aide plutôt, c’est… A : bouger, la musique ou l’air frais. B : le portable, une série ou la console.",
+              "Je bouge surtout… A : parce que ça me plaît. B : parce que je dois – le trajet, le cours de sport.",
+              "« Quand on est fatigué, on n’a qu’à se coucher plus tôt. » A : c’est aussi simple que ça. B : ce n’est pas si simple.",
+              "Le soir, mon portable est… A : hors de portée. B : juste à côté de moi.",
+              "Quand ça ne va pas, j’ai plutôt besoin… A : d’avoir du monde autour de moi. B : d’être tranquille, seul."
+            ],
+            "tipp": "S’attarder sur la question « Quand on est fatigué, on n’a qu’à se coucher plus tôt » : le bruit, une chambre partagée, les pensées pour le lendemain, le portable et une horloge interne qui se décale vers le soir à l’adolescence – se coucher plus tôt est rarement une simple question de volonté. Cela retire au sujet toute dimension morale avant de parler des petits pas de chacun.",
+            "wennEsKippt": "Si tout le monde suit ses copains, être plus strict : à trois, tout le monde montre en même temps et garde le bras levé jusqu’à ce que l’enseignant·e ait regardé ; ensuite seulement, on se déplace. Si c’est trop bruyant, faire les questions suivantes assis, avec le pouce. Si quelqu’un commente le côté d’un autre (« Toi, de toute façon, tu ne fais jamais de sport »), arrêter tout de suite : ici, personne n’est jugé pour son côté. Si un jeune raconte quelque chose de privé (« Chez nous, la nuit, ce n’est jamais calme »), l’accueillir brièvement, le rendre général et en reparler après le cours."
+          },
+          {
+            "titel": "Le mardi de Noah : reconstituer la chaîne",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Chaque îlot reçoit une enveloppe avec huit cartes chaîne : une journée inventée de Noah, 13 ans, dans le désordre. Répartir les rôles : lire, poser, écrire, temps. Le groupe lit les cartes à voix haute et les pose dans l’ordre des heures (4 min). Puis il colle entre les cartes des post-it qui disent pourquoi, au moins quatre ; l’exemple est au tableau : couché trop tard, donc mort de fatigue (5 min). Pour finir, il pousse la dernière carte à côté de la première : le mardi soir mène à la nuit courte suivante – la journée devient un cercle. Deux îlots expliquent leur cercle en trois phrases (4 min) ; noter au tableau : sommeil, alimentation, mouvement et stress s’entraînent les uns les autres – vers le bas comme vers le haut (2 min).",
+            "sagen": [
+              "Lisez d’abord toutes les cartes, puis posez-les dans l’ordre des heures. Le vrai travail vient après : pourquoi l’une mène-t-elle à l’autre ?",
+              "Regardez la dernière carte. Que se passe-t-il la nuit suivante ?"
+            ],
+            "tipp": "Les heures sur les cartes sont voulues : remettre en ordre est à la portée de ceux qui lisent difficilement, et la vraie réflexion se fait sur les post-it entre les cartes. Les cartes restent sur les tables pendant la pause active – on continue avec elles juste après.",
+            "wennEsKippt": "Si un îlot a fini en trois minutes et commence à chahuter, poser une question en plus : quelle carte est la plus dangereuse – et pourquoi ? Si un groupe n’arrive à faire aucun lien, donner soi-même le premier (couché tard, donc fatigué) et demander la suite. Si quelqu’un dit « Mais c’est moi, ça ! », rester bienveillant : ça arrive à beaucoup de monde – c’est justement pour ça que Noah est inventé.",
+            "blatt": "ff7-noahs-kette"
+          },
+          {
+            "titel": "Pause active : le test de l’éveil",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Ouvrir la fenêtre ; tout le monde se lève derrière sa chaise. À « trois », chacun montre avec les doigts à quel point il est réveillé, de 0 à 10. Puis une minute de mouvement : courir sur place, lever les genoux, balancer les bras ; qui ne peut ou ne veut pas sauter fait des cercles avec les bras et les épaules. Ensuite, une minute debout sans bouger, une main sur le ventre, en sentant la respiration se calmer. À « trois », tout le monde montre de nouveau son chiffre ; demander brièvement ce qui a changé. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Vous êtes réveillés à combien, de 0 à 10 ? À trois – les doigts en l’air.",
+              "Deux minutes, pas d’argent, pas de tenue de sport. Où est-ce que ça aurait trouvé sa place dans la journée de Noah ?"
+            ],
+            "tipp": "Chez la plupart, le chiffre monte – c’est le lien avec la chaîne : le mouvement fait partie des endroits où la journée de Noah peut basculer, et il ne coûte rien."
+          },
+          {
+            "titel": "Briser la chaîne",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Les îlots retrouvent leur cercle. Consigne (4 min) : trouver deux endroits où un petit pas pourrait briser la chaîne de Noah et écrire chaque pas sur une carte – assez précisément pour que Noah sache demain ce qu’il fait. Condition : le pas ne coûte rien et prend dix minutes au maximum. Puis chaque îlot présente un pas et l’affiche au tableau ; la classe vérifie avec le pouce si Noah y arriverait même un jour de stress (6 min). Classer les cartes selon quatre domaines – sommeil, manger et boire, mouvement, stress et pauses – et compléter ce qui manque (tableau, 3 min). Pour finir, la question à tous : quel endroit changeriez-vous en premier ? (2 min)",
+            "sagen": [
+              "On ne planifie pas la vie parfaite de Noah – seulement un pas qu’il arrivera vraiment à faire demain.",
+              "Est-ce que Noah y arriverait même un jour de stress ? Pouce."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Briser ici",
+                "Petit pas"
+              ],
+              "zeilen": [
+                [
+                  "Lundi, 23 h 40 – vidéos au lit",
+                  "À 22 h, le portable va charger dans la cuisine."
+                ],
+                [
+                  "Mardi, 7 h 20 – plus le temps",
+                  "La veille, préparer son sac et remplir sa gourde d’eau du robinet."
+                ],
+                [
+                  "Mardi, 8 h 30 – la tête dans le coton",
+                  "Avant le devoir, un tour de respiration des doigts."
+                ],
+                [
+                  "Mardi, 10 h – faim, mauvaise humeur",
+                  "À la récré, d’abord boire ou manger quelque chose, puis parler."
+                ],
+                [
+                  "Mardi, 17 h – sur les rotules",
+                  "Sortir quand même dix minutes sur le terrain."
+                ],
+                [
+                  "Mardi, 21 h 30 – la tête pleine",
+                  "Écrire deux pensées sur un papier, puis le scan corporel."
+                ]
+              ]
+            },
+            "tipp": "Si les propositions sont énormes (« Noah n’a qu’à courir tous les jours »), demander : qu’est-ce qu’il arriverait à faire même un mauvais jour ? Les grandes résolutions deviennent ainsi de petits pas – exactement ce dont chacun aura besoin juste après pour son propre plan.",
+            "wennEsKippt": "Si des remarques fusent sur la nourriture ou le corps (« Noah n’a qu’à moins bouffer »), arrêter tout de suite et calmement : ici, on parle du lien entre la faim et l’humeur, pas de silhouette. Si quelqu’un propose une boisson énergisante, le prendre au sérieux : elle réveille un moment, puis vole le sommeil de la nuit suivante – et la chaîne continue de tourner. Si un îlot ne trouve rien, lancer une question : qu’est-ce que Noah aurait pu faire à 21 h 30 au lieu de ruminer ?",
+            "blatt": "ff7-noahs-kette"
+          },
+          {
+            "titel": "Mon petit pas",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Seul, sur la fiche « Ce qui me fait du bien ». Exercice 1 (3 min) : dans six domaines, cocher où on en est. Exercice 2 (7 min) : choisir un domaine et écrire un petit pas sous forme de plan « si… alors » – parmi les idées de la fiche, au tableau ou inventé ; la deuxième ligne est le plan pour le plus gros obstacle. Passer dans les rangs et aider à rendre plus petits les pas trop grands. Exercice 3 (2 min) : entourer de 0 à 10 à quel point on y croit ; en dessous de 7, le pas devient plus petit. À deux (4 min) : qui le souhaite lit son plan à son voisin, qui vérifie seulement si on sait quand, où et quoi exactement. Qui ne veut pas montrer son plan le vérifie seul. Pour finir, expliquer la grille de l’exercice 4 (2 min).",
+            "sagen": [
+              "Un petit pas ne coûte rien, prend dix minutes au maximum et marche même un jour de stress.",
+              "Vous y croyez à combien, de 0 à 10 ? Moins de 7 ? Alors rendez le pas plus petit – si petit qu’il marchera presque à coup sûr.",
+              "Personne n’est obligé de lire son plan. Qui le souhaite lit seulement le sien – à voix basse, à son voisin."
+            ],
+            "tipp": "Proposer d’abord des pas gratuits : le portable qui charge dans la cuisine, descendre un arrêt plus tôt, de l’eau du robinet dans la gourde, dix minutes dehors à la récré. Qui dit que tout va bien chez lui écrit ce qu’il veut garder – c’est aussi un plan. Qui a besoin de bouger peut aller au tableau et y choisir un pas.",
+            "wennEsKippt": "Si un jeune écrit un objectif comme « maigrir » ou « manger moins », ne pas le féliciter ni en parler devant la classe : réorienter discrètement vers quelque chose qui fait du bien sans se priver – un sport qui plaît, boire assez, se coucher plus tôt – et en reparler brièvement après le cours. Qui ne veut pas écrire du tout choisit à l’oral un pas au tableau ; l’enseignant·e le note sur la fiche.",
+            "blatt": "ff7-was-mir-guttut"
+          },
+          {
+            "titel": "Skill : le scan corporel",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : un skill pour le soir au lit, quand la tête ne veut pas s’arrêter – comme chez Noah à 21 h 30. Chacun s’assoit confortablement, les pieds au sol, les yeux fermés ou le regard posé au sol. Guider lentement, montrer à chaque phrase la partie du corps avec sa propre main et laisser des pauses (liste, 4 min). Ensuite, deux ou trois retours : quand est-ce que ça pourrait aider ? (2 min) Pour finir, chacun ouvre sa valise à skills (sans cahier : une copie de la page) : le petit pas va dans la zone verte du plan feu tricolore, et qui a aimé le scan corporel l’inscrit dans le compartiment libre de la valise (4 min). Le skill en trois étapes : arriver et expirer – sentir chaque partie de la tête aux pieds et la relâcher – revenir.",
+            "sagen": [
+              "Personne n’est obligé de fermer les yeux. Vous pouvez aussi regarder un point au sol.",
+              "La valise à skills aide quand ça brûle. La zone verte fait en sorte que ça brûle moins souvent – c’est là que votre petit pas a sa place."
+            ],
+            "punkte": [
+              "Assieds-toi confortablement, les pieds au sol. Ferme les yeux si ça te va. Inspire une fois profondément… et expire lentement.",
+              "Porte ton attention sur ton front, tes yeux, ta mâchoire. Laisse tes dents se desserrer. Sens ta nuque et tes épaules – elles descendent peut-être un peu.",
+              "Sens tes bras jusqu’au bout des doigts. Sens ton ventre : il se soulève et s’abaisse tout seul.",
+              "Descends vers tes jambes et tes pieds : les cuisses sur la chaise, les talons, la plante des pieds, les orteils. Laisse-les devenir lourds.",
+              "Sens encore une fois tout ton corps. Bouge les doigts et les orteils, étire-toi et ouvre lentement les yeux."
+            ],
+            "tipp": "Les rires sont normaux la première fois. Qui n’arrive pas à rester immobile peut tenir une balle anti-stress ou bouger un peu les pieds. Recommander le scan corporel pour le soir : au lit, lumière éteinte, les mêmes phrases dans la tête.",
+            "wennEsKippt": "Si la classe s’agite, ne pas gronder, mais parler plus doucement et raccourcir : seulement la tête, les épaules, les pieds. Qui ne veut pas participer reste assis en silence et regarde par la fenêtre – c’est permis, déranger ne l’est pas. Si un jeune se sent mal à l’aise en sentant son propre corps, il peut garder les yeux ouverts et compter ses respirations en silence ; si quelqu’un semble très tendu, lui en parler brièvement après le cours.",
+            "blatt": "ff7-skills-koffer"
+          },
+          {
+            "titel": "Skills-Pass, mission et suite",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire au tableau la question du Skills-Pass : qu’est-ce qui me fait du bien – et quel petit pas est-ce que j’essaie ? Chacun écrit une phrase (2 min) et reçoit le tampon. Tour éclair à main levée plutôt qu’en paroles : qui a choisi le sommeil, qui le mouvement, qui manger et boire, qui les pauses, qui les autres ? Puis annoncer la mission de la semaine (dans le cahier) : essayer son petit pas trois jours – ou une fois le scan corporel le soir. Pour finir, annoncer la prochaine séance.",
+            "sagen": [
+              "Main levée si vous avez choisi le sommeil. Et le mouvement ? … Vous voyez : chaque domaine a ses adeptes."
+            ],
+            "tipp": "Ne pas contrôler la grille à la prochaine séance. Un pouce suffit – et un jour raté n’est pas un échec."
+          }
+        ],
+        "bruecke": "La semaine prochaine, on parle de la période des devoirs en classe : d’où vient le stress avant un devoir, comment planifier ses révisions à rebours à partir du jour J – et quels skills personne ne remarque pendant l’épreuve.",
+        "mission": "Essaie ton petit pas trois jours cette semaine et coche-le – ou fais une fois le scan corporel le soir au lit. Qu’est-ce qui a changé ensuite ?",
+        "hintergrund": "Sommeil, mouvement et alimentation ne sont pas un sujet à part : qui est épuisé, a faim ou n’a presque pas bougé s’irrite plus vite et redescend plus difficilement. Dans l’entraînement aux skills pour adolescents, prendre soin de son sommeil, de son alimentation et de son corps est donc un module à part entière, qui réduit la vulnérabilité aux émotions fortes (Rathus & Miller, 2015). Pour le sommeil, un élément s’ajoute à cet âge : à la puberté, l’horloge interne se décale vers le soir, alors que l’école commence tôt, et les écrans du soir aggravent cela (Carskadon, 2011). Se coucher plus tôt est donc rarement une simple question de volonté ; la séance cherche de petits leviers, pas des coupables. Pour l’alimentation, il s’agit seulement du lien entre faim et humeur, jamais du poids : cinq ans plus tard, les adolescents qui font un régime ont plutôt plus de problèmes d’alimentation et de poids, pas moins (Neumark-Sztainer et al., 2006).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
+          "Neumark-Sztainer, D., Wall, M., Guo, J., Story, M., Haines, J. & Eisenberg, M. (2006). Obesity, disordered eating, and eating disorders in a longitudinal study of adolescents: How do dieters fare 5 years later? Journal of the American Dietetic Association, 106(4), 559–568."
+        ],
+        "achtung": "La santé touche vite à la vie privée. Pas de chiffres sur le poids ou les calories, pas de remarques sur les corps, pas d’aliments bons ou mauvais ; ne pas encourager des objectifs comme « maigrir », mais réorienter avec tact. Ce qu’il y a à manger et le calme des nuits, les jeunes ne le décident souvent pas eux-mêmes : ne jamais demander ce qu’on mange à la maison, ne proposer que des pas gratuits. Ne pas approfondir devant la classe les signes de faim, d’épuisement, de troubles alimentaires, d’automutilation ou de négligence : en parler après le cours, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
+        "differenzierung": {
+          "leichter": "Qui apprend encore la langue d’enseignement se place pendant la prise de position à côté de quelqu’un qui traduit, et peut écrire son plan dans sa propre langue ; dessiner une lune sur l’affiche « Cette nuit ». Les cartes chaîne sont lues par un jeune qui lit bien ; les heures et les images aident à les remettre en ordre, et des mots-clés suffisent sur les post-it. Pour son plan, reprendre un pas du tableau et compléter le début de phrase : S’il est … heures, alors …",
+          "schwerer": "Construire une contre-chaîne pour Noah : à quoi ressemblerait son mardi s’il posait son portable lundi à 22 h ? Ou, dans son propre plan, anticiper deux obstacles et écrire un plan « si… alors » pour chacun."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec la roue et la gommette du sommeil (5 min), prendre position avec quatre questions (10 min), reconstituer la chaîne de Noah et la briser à deux endroits (15 min), mon petit pas avec les exercices 2 et 3 (10 min), scan corporel (5 min), Skills-Pass et mission (5 min). L’exercice 1 et l’ajout dans la valise à skills sont rattrapés à la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-was-mir-guttut",
+      "bereich": "skills",
+      "thema": "gesund",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln"
+      ],
+      "dauer": "20 Min. und zwei Wochen",
+      "eldib": [],
+      "schlagworte": [
+        "Gesundheit",
+        "Schlaf",
+        "Bewegung",
+        "kleiner Schritt",
+        "Wenn-dann-Plan",
+        "Förderfach"
+      ],
+      "bild": "icon:seedling",
+      "kurs": [
+        "ff7-e31"
+      ],
+      "de": {
+        "titel": "Was mir guttut",
+        "untertitel": "Schlaf, Bewegung, Essen und Pausen – und ein kleiner Schritt, der wirklich klappt",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Schlaf, Bewegung, Essen und Stress hängen zusammen wie eine Kette: Eine kurze Nacht macht gereizt, Stress raubt den Schlaf. Schon ein kleiner Schritt kann die Kette umdrehen."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wie läuft es gerade bei dir? Kreuz in jeder Zeile an.",
+            "symbole": [
+              "ankreuzen"
+            ]
+          },
+          {
+            "art": "einschaetzung",
+            "optionen": [
+              "läuft gut",
+              "geht so",
+              "da will ich ran"
+            ],
+            "items": [
+              "Schlaf",
+              "Bewegung",
+              "Essen und Trinken",
+              "Handy und Bildschirm",
+              "Pausen und Ruhe",
+              "Menschen, die mir guttun"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wähl einen Bereich und schreib deinen kleinen Schritt als Wenn-dann-Satz auf.",
+            "hinweis": "Zweite Zeile: dein Plan für das größte Hindernis. Klein heißt: kostet nichts, dauert höchstens zehn Minuten.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Ideen für kleine Schritte",
+            "punkte": [
+              "Schlaf: Um 22 Uhr kommt mein Handy zum Laden in die Küche.",
+              "Bewegung: Ich steige eine Haltestelle früher aus und gehe zu Fuß.",
+              "Essen und Trinken: Ich fülle morgens Leitungswasser in meine Flasche.",
+              "Pausen: In der großen Pause gehe ich zehn Minuten auf den Schulhof.",
+              "Menschen: Einmal pro Woche mache ich etwas mit jemandem, der mir guttut."
+            ]
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 2,
+            "beispiele": [
+              {
+                "wenn": "Wenn es 22 Uhr ist,",
+                "dann": "lege ich mein Handy zum Laden in die Küche."
+              },
+              {
+                "wenn": "Wenn dann noch jemand schreibt,",
+                "dann": "antworte ich morgen früh im Bus."
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wie sicher bist du, dass du deinen Schritt schaffst? Kreis eine Zahl ein.",
+            "hinweis": "Unter 7? Mach den Schritt kleiner – so klein, dass er fast sicher klappt.",
+            "symbole": [
+              "einkreisen"
+            ]
+          },
+          {
+            "art": "skala",
+            "von": "gar nicht sicher",
+            "bis": "ganz sicher",
+            "stufen": 11
+          },
+          {
+            "art": "aufgabe",
+            "text": "Hak zwei Wochen lang jeden Tag ab, an dem dein Schritt geklappt hat.",
+            "hinweis": "Ein verpasster Tag ist kein Scheitern. Mach am nächsten Tag einfach weiter.",
+            "symbole": [
+              "ankreuzen"
+            ]
+          },
+          {
+            "art": "plan",
+            "ziel": "",
+            "tage": [
+              "Mo",
+              "Di",
+              "Mi",
+              "Do",
+              "Fr",
+              "Sa",
+              "So"
+            ],
+            "zeilen": [
+              "1. Woche",
+              "2. Woche"
+            ],
+            "symbol": "kasten"
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Skills-Koffer und grüne Zone",
+            "text": "Dein Skills-Koffer hilft, wenn es akut wird. Schlaf, Bewegung, Essen, Pausen und Menschen, die dir guttun, sorgen dafür, dass es seltener so weit kommt. Trag deinen Schritt deshalb auch in die grüne Zone deines Ampelplans ein."
+          },
+          {
+            "art": "text",
+            "text": "Nach zwei Wochen: Schau auf deine Kreuze.",
+            "klein": true
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Geholfen hat mir …",
+              "Schwierig war …",
+              "Das mache ich weiter: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Dieses Blatt gehört dir. Niemand bewertet hier, wie du schläfst, isst oder dich bewegst."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen schätzen in sechs Bereichen ein, was ihnen guttut, wählen einen kleinen, kostenlosen Schritt, sichern ihn mit Wenn-dann-Satz und Zuversichtsskala ab und tragen ihn in die grüne Zone ihres Ampelplans ein.",
+          "ablauf": [
+            "Einheit 31, Schritt 7 (20 Min.): Aufgabe 1 allein, dann Aufgabe 2 mit den Ideen auf dem Blatt oder von der Tafel.",
+            "Aufgabe 3: Liegt die Zuversicht unter 7, den Schritt gemeinsam verkleinern; Pläne vorlesen nur, wer mag.",
+            "Aufgabe 4 läuft zwei Wochen; nachgefragt wird mit dem Daumen, ohne Kontrolle.",
+            "Im Skill-Schritt: den Schritt in die grüne Zone des Ampelplans übertragen (Skills-Koffer, Einheit 17)."
+          ],
+          "hintergrund": "Vorsätze scheitern selten am Wissen, sondern an der Umsetzung. Wenn-dann-Pläne, die festlegen, wann, wo und wie gehandelt wird, werden deutlich häufiger umgesetzt als allgemeine Absichten (Gollwitzer, 1999). Die Zuversichtsskala aus der motivierenden Gesprächsführung hilft, den Schritt so zu bemessen, dass er gelingt (Miller & Rollnick, 2013). Ziele rund um Gewicht werden bewusst nicht bestärkt: Diäten im Jugendalter gehen eher mit späteren Essproblemen einher (Neumark-Sztainer et al., 2006).",
+          "quellen": [
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+            "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford.",
+            "Neumark-Sztainer, D., Wall, M., Guo, J., Story, M., Haines, J. & Eisenberg, M. (2006). Obesity, disordered eating, and eating disorders in a longitudinal study of adolescents: How do dieters fare 5 years later? Journal of the American Dietetic Association, 106(4), 559–568."
+          ],
+          "achtung": "Nicht einsammeln, nicht vorlesen lassen. Ziele wie „abnehmen“ behutsam umlenken; bei Hinweisen auf Hunger, Essstörungen oder Vernachlässigung nach der Stunde ansprechen und den SePAS informieren.",
+          "material": "Schülerheft, Skills-Koffer aus Einheit 17"
+        }
+      },
+      "fr": {
+        "titel": "Ce qui me fait du bien",
+        "untertitel": "Sommeil, mouvement, alimentation et pauses – et un petit pas qui marche vraiment",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Sommeil, mouvement, alimentation et stress sont liés comme une chaîne : une nuit trop courte rend irritable, le stress empêche de dormir. Un petit pas peut suffire à inverser la chaîne."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Où en es-tu en ce moment ? Coche une case par ligne.",
+            "symbole": [
+              "ankreuzen"
+            ]
+          },
+          {
+            "art": "einschaetzung",
+            "optionen": [
+              "ça va bien",
+              "moyen",
+              "je veux m’y mettre"
+            ],
+            "items": [
+              "Sommeil",
+              "Mouvement",
+              "Manger et boire",
+              "Portable et écrans",
+              "Pauses et repos",
+              "Les gens qui me font du bien"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Choisis un domaine et écris ton petit pas sous forme de plan « si… alors ».",
+            "hinweis": "Deuxième ligne : ton plan pour le plus gros obstacle. Petit, ça veut dire : gratuit, dix minutes au maximum.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Des idées de petits pas",
+            "punkte": [
+              "Sommeil : à 22 h, mon portable va charger dans la cuisine.",
+              "Mouvement : je descends du bus un arrêt plus tôt et je marche.",
+              "Manger et boire : le matin, je remplis ma gourde d’eau du robinet.",
+              "Pauses : à la grande récré, je sors dix minutes dans la cour.",
+              "Les autres : une fois par semaine, je fais quelque chose avec quelqu’un qui me fait du bien."
+            ]
+          },
+          {
+            "art": "wennDann",
+            "wenn": "Si …",
+            "dann": "… alors",
+            "zeilen": 2,
+            "beispiele": [
+              {
+                "wenn": "S’il est 22 h,",
+                "dann": "je mets mon portable à charger dans la cuisine."
+              },
+              {
+                "wenn": "Si quelqu’un m’écrit encore,",
+                "dann": "je réponds demain matin dans le bus."
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "À quel point crois-tu que tu vas réussir ton petit pas ? Entoure un chiffre.",
+            "hinweis": "Moins de 7 ? Rends ton pas plus petit – si petit qu’il marchera presque à coup sûr.",
+            "symbole": [
+              "einkreisen"
+            ]
+          },
+          {
+            "art": "skala",
+            "von": "pas du tout",
+            "bis": "complètement",
+            "stufen": 11
+          },
+          {
+            "art": "aufgabe",
+            "text": "Pendant deux semaines, coche chaque jour où ton petit pas a marché.",
+            "hinweis": "Un jour raté n’est pas un échec. Continue simplement le lendemain.",
+            "symbole": [
+              "ankreuzen"
+            ]
+          },
+          {
+            "art": "plan",
+            "ziel": "",
+            "tage": [
+              "Lu",
+              "Ma",
+              "Me",
+              "Je",
+              "Ve",
+              "Sa",
+              "Di"
+            ],
+            "zeilen": [
+              "1re semaine",
+              "2e semaine"
+            ],
+            "symbol": "kasten"
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Valise à skills et zone verte",
+            "text": "Ta valise à skills t’aide quand ça devient aigu. Le sommeil, le mouvement, l’alimentation, les pauses et les gens qui te font du bien font en sorte que ça arrive moins souvent. Inscris donc aussi ton petit pas dans la zone verte de ton plan feu tricolore."
+          },
+          {
+            "art": "text",
+            "text": "Au bout de deux semaines : regarde tes croix.",
+            "klein": true
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ce qui m’a aidé, c’est…",
+              "Ce qui était difficile, c’est…",
+              "Ce que je continue : …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "Cette fiche t’appartient. Personne ne juge ici ta façon de dormir, de manger ou de bouger."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes évaluent dans six domaines ce qui leur fait du bien, choisissent un petit pas gratuit, le consolident avec un plan « si… alors » et une échelle de confiance, puis l’inscrivent dans la zone verte de leur plan feu tricolore.",
+          "ablauf": [
+            "Séance 31, étape 7 (20 min) : exercice 1 seul, puis exercice 2 avec les idées de la fiche ou du tableau.",
+            "Exercice 3 : si la confiance est en dessous de 7, rendre le pas plus petit ensemble ; on ne lit son plan que si on le souhaite.",
+            "L’exercice 4 dure deux semaines ; on demande avec le pouce, sans contrôle.",
+            "À l’étape du skill : reporter le pas dans la zone verte du plan feu tricolore (valise à skills, séance 17)."
+          ],
+          "hintergrund": "Les bonnes résolutions échouent rarement par manque de savoir, mais au moment de passer à l’acte. Les plans « si… alors », qui fixent quand, où et comment agir, sont nettement plus souvent mis en œuvre que les intentions générales (Gollwitzer, 1999). L’échelle de confiance, issue de l’entretien motivationnel, aide à doser le pas pour qu’il réussisse (Miller & Rollnick, 2013). Les objectifs liés au poids ne sont volontairement pas encouragés : à l’adolescence, les régimes vont plutôt de pair avec des problèmes alimentaires ultérieurs (Neumark-Sztainer et al., 2006).",
+          "quellen": [
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+            "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford.",
+            "Neumark-Sztainer, D., Wall, M., Guo, J., Story, M., Haines, J. & Eisenberg, M. (2006). Obesity, disordered eating, and eating disorders in a longitudinal study of adolescents: How do dieters fare 5 years later? Journal of the American Dietetic Association, 106(4), 559–568."
+          ],
+          "achtung": "Ne pas ramasser la fiche ni la faire lire. Réorienter avec tact les objectifs comme « maigrir » ; en cas de signes de faim, de troubles alimentaires ou de négligence, en parler après le cours et informer le SePAS.",
+          "material": "Cahier de l’élève, valise à skills de la séance 17"
+        }
+      }
+    },
+    {
+      "id": "ff7-noahs-kette",
+      "bereich": "skills",
+      "thema": "gesund",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "30 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Kettenkarten",
+        "Schlaf",
+        "Stress",
+        "Tagesablauf",
+        "Förderfach"
+      ],
+      "bild": "icon:timeline",
+      "kurs": [
+        "ff7-e31"
+      ],
+      "de": {
+        "titel": "Noahs Dienstag: Kettenkarten",
+        "untertitel": "Kopiervorlage: fünfmal kopieren, je Tischgruppe ein Umschlag",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Nach der Uhrzeit legen, zwischen je zwei Karten einen Klebezettel mit dem Warum kleben, die letzte Karte neben die erste schieben. Nach der Bewegungspause: zwei Stellen zum Unterbrechen suchen.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 140,
+            "karten": [
+              {
+                "titel": "Montag, 23:40",
+                "text": "Noah liegt im Bett und schaut Videos. Eigentlich ist er müde. „Nur noch eins.“",
+                "bild": "icon:device-mobile"
+              },
+              {
+                "titel": "Dienstag, 6:45",
+                "text": "Der Wecker klingelt. Noah drückt dreimal auf Schlummern. Er fühlt sich wie ein Stein.",
+                "bild": "icon:alarm"
+              },
+              {
+                "titel": "Dienstag, 7:20",
+                "text": "Jetzt wird es knapp. Noah rennt ohne Frühstück und ohne Trinkflasche zum Bus.",
+                "bild": "icon:bus"
+              },
+              {
+                "titel": "Dienstag, 8:30",
+                "text": "Mathe-Test. Noah liest die erste Aufgabe dreimal. Sein Kopf ist wie Watte.",
+                "bild": "icon:pencil"
+              },
+              {
+                "titel": "Dienstag, 10:00",
+                "text": "Pause. Noah hat Hunger und schlechte Laune. Diogo macht einen Witz – Noah schnauzt ihn an.",
+                "bild": "icon:mood-angry"
+              },
+              {
+                "titel": "Dienstag, 17:00",
+                "text": "Die anderen spielen Fußball auf dem Platz. Noah ist zu platt. Er bleibt auf dem Sofa und zockt.",
+                "bild": "icon:device-gamepad-2"
+              },
+              {
+                "titel": "Dienstag, 21:30",
+                "text": "Noah ist kein bisschen müde. Im Kopf: der Streit mit Diogo und der Test.",
+                "bild": "icon:brain"
+              },
+              {
+                "titel": "Dienstag, 22:45",
+                "text": "Noah kann nicht einschlafen. Er greift zum Handy …",
+                "bild": "icon:moon"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Ein erfundener Tag macht sichtbar, wie Schlaf, Essen, Bewegung und Stress einander mitziehen – ohne dass jemand über den eigenen Alltag sprechen muss.",
+          "ablauf": [
+            "Fünfmal kopieren, ausschneiden, mischen; je Tischgruppe ein Umschlag mit acht Karten. Namen tauschen, falls jemand in der Klasse Noah oder Diogo heißt.",
+            "Einheit 31, Schritt 4 (15 Min.): Karten nach der Uhrzeit legen, Klebezettel mit dem Warum dazwischen, Kreis schließen.",
+            "Schritt 6 (15 Min.): zwei Stellen finden, an denen ein kleiner, kostenloser Schritt die Kette unterbricht."
+          ],
+          "hintergrund": "Im Skillstraining für Jugendliche gilt die Sorge für Schlaf, Essen und Bewegung als Baustein, der die Anfälligkeit für starke Gefühle senkt (Rathus & Miller, 2015). Der Kreis zeigt zugleich, warum ‚einfach früher schlafen‘ selten reicht: In der Pubertät verschiebt sich die innere Uhr nach hinten, und Bildschirme am Abend verstärken das (Carskadon, 2011).",
+          "quellen": [
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+            "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647."
+          ],
+          "material": "Schere, fünf Umschläge, Klebezettel"
+        }
+      },
+      "fr": {
+        "titel": "Le mardi de Noah : cartes chaîne",
+        "untertitel": "Modèle à photocopier cinq fois, une enveloppe par îlot",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Poser les cartes dans l’ordre des heures, coller entre deux cartes un post-it qui dit pourquoi, pousser la dernière carte à côté de la première. Après la pause active : chercher deux endroits où briser la chaîne.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 140,
+            "karten": [
+              {
+                "titel": "Lundi, 23 h 40",
+                "text": "Noah est au lit et regarde des vidéos. En fait, il est fatigué. « Juste une dernière. »",
+                "bild": "icon:device-mobile"
+              },
+              {
+                "titel": "Mardi, 6 h 45",
+                "text": "Le réveil sonne. Noah repousse l’alarme trois fois. Il se sent lourd comme une pierre.",
+                "bild": "icon:alarm"
+              },
+              {
+                "titel": "Mardi, 7 h 20",
+                "text": "Ça devient juste. Noah court au bus sans petit-déjeuner et sans gourde.",
+                "bild": "icon:bus"
+              },
+              {
+                "titel": "Mardi, 8 h 30",
+                "text": "Devoir en classe de maths. Noah lit la première question trois fois. Il a la tête dans le coton.",
+                "bild": "icon:pencil"
+              },
+              {
+                "titel": "Mardi, 10 h",
+                "text": "Récré. Noah a faim et il est de mauvaise humeur. Diogo fait une blague – Noah l’envoie balader.",
+                "bild": "icon:mood-angry"
+              },
+              {
+                "titel": "Mardi, 17 h",
+                "text": "Les autres jouent au foot sur le terrain. Noah est sur les rotules. Il reste sur le canapé et joue à la console.",
+                "bild": "icon:device-gamepad-2"
+              },
+              {
+                "titel": "Mardi, 21 h 30",
+                "text": "Noah n’est pas fatigué du tout. Dans sa tête : la dispute avec Diogo et le devoir en classe.",
+                "bild": "icon:brain"
+              },
+              {
+                "titel": "Mardi, 22 h 45",
+                "text": "Noah n’arrive pas à s’endormir. Il attrape son portable…",
+                "bild": "icon:moon"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Une journée inventée montre comment sommeil, alimentation, mouvement et stress s’entraînent les uns les autres – sans que personne ait à parler de son propre quotidien.",
+          "ablauf": [
+            "Photocopier cinq fois, découper, mélanger ; une enveloppe de huit cartes par îlot. Changer les prénoms si un jeune de la classe s’appelle Noah ou Diogo.",
+            "Séance 31, étape 4 (15 min) : poser les cartes dans l’ordre des heures, coller entre elles les post-it avec le pourquoi, fermer le cercle.",
+            "Étape 6 (15 min) : trouver deux endroits où un petit pas gratuit brise la chaîne."
+          ],
+          "hintergrund": "Dans l’entraînement aux skills pour adolescents, prendre soin de son sommeil, de son alimentation et de son corps est un module qui réduit la vulnérabilité aux émotions fortes (Rathus & Miller, 2015). Le cercle montre aussi pourquoi “se coucher plus tôt” suffit rarement : à la puberté, l’horloge interne se décale vers le soir, et les écrans du soir aggravent le phénomène (Carskadon, 2011).",
+          "quellen": [
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+            "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647."
+          ],
+          "material": "Ciseaux, cinq enveloppes, post-it"
+        }
+      }
+    }
+  ]
+}
