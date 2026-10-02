@@ -42,7 +42,7 @@
         "kurz": "Welches Tier bin ich im Streit? Die Klasse entdeckt fünf Konfliktstile, lernt die Konflikt-Treppe kennen und spielt Alltagsstreits zweimal: so, wie sie oft laufen, und Stufe für Stufe.",
         "ziele": [
           "ordnen ihr Verhalten im Streit fünf Konfliktstilen zu und merken, dass es vom Gegenüber abhängt",
-          "beschreiben die fünf Stufen der Konflikt-Treppe und finden zu jeder Stufe einen Satz",
+          "beschreiben die fünf Stufen der Konflikt-Treppe und finden für die ersten drei Stufen eigene Sätze",
           "spielen einen Alltagsstreit zweimal und benennen den Satz, der ihn gedreht hat",
           "wählen aus ihrem Ampelplan einen Skill für Stufe 1 und üben die faire Auszeit"
         ],
@@ -252,7 +252,7 @@
               "Runterkommen: Kastenatmung oder dein Skill aus dem Ampelplan, bis du unter 70 bist.",
               "Zurückkommen: zur abgemachten Zeit wieder da sein und mit einer Ich-Botschaft weitermachen."
             ],
-            "tipp": "Wer seinen Ampelplan nicht dabeihat oder ihn in Einheit 17 nicht fertig bekommen hat, schreibt den Skill auf Stufe 1 des Treppen-Blatts. Den Auszeit-Satz an der Tafel stehen lassen: Er hilft auch bei echten Streits in der Klasse, und die Lehrkraft kann ihn selbst vormachen.",
+            "tipp": "Wer seinen Ampelplan nicht dabeihat oder ihn in Einheit 17 nicht fertig bekommen hat, schreibt den Skill neben Stufe 1 auf das Treppen-Blatt. Den Auszeit-Satz an der Tafel stehen lassen: Er hilft auch bei echten Streits in der Klasse, und die Lehrkraft kann ihn selbst vormachen.",
             "wennEsKippt": "Wird bei der Partnerübung gealbert, die Ansage flüstern lassen. Wer das Luftanhalten unangenehm findet, lässt es weg und atmet nur langsam aus. Niemand muss die Augen schließen.",
             "blatt": "ff7-skills-koffer"
           },
@@ -287,7 +287,7 @@
         "kurz": "Quel animal suis-je dans une dispute ? La classe découvre cinq styles de conflit, apprend l’escalier du conflit et rejoue des disputes du quotidien deux fois, la seconde marche par marche.",
         "ziele": [
           "associent leur façon de se disputer à cinq styles de conflit et constatent qu’elle dépend de la personne en face",
-          "décrivent les cinq marches de l’escalier du conflit et trouvent une phrase pour chacune",
+          "décrivent les cinq marches de l’escalier du conflit et trouvent leurs propres phrases pour les trois premières",
           "rejouent deux fois une dispute du quotidien et repèrent la phrase qui a tout changé",
           "choisissent dans leur plan feu tricolore un skill pour la marche 1 et s’entraînent au temps mort"
         ],
@@ -497,7 +497,7 @@
               "Redescendre : respiration carrée ou ton skill du plan feu tricolore, jusqu’à passer sous 70.",
               "Revenir : être là à l’heure dite et reprendre avec un message en « je »."
             ],
-            "tipp": "Qui n’a pas son plan feu tricolore, ou ne l’a pas terminé à la séance 17, écrit le skill à la marche 1 de la fiche de l’escalier. Laisser la phrase du temps mort au tableau : elle aide aussi lors de vraies disputes en classe, et l’enseignant·e peut la montrer en exemple.",
+            "tipp": "Qui n’a pas son plan feu tricolore, ou ne l’a pas terminé à la séance 17, écrit le skill à côté de la marche 1, sur la fiche de l’escalier. Laisser la phrase du temps mort au tableau : elle aide aussi lors de vraies disputes en classe, et l’enseignant·e peut la montrer en exemple.",
             "wennEsKippt": "Si l’exercice à deux fait rire, faire chuchoter l’annonce. Qui n’aime pas retenir son souffle laisse cette partie et expire juste lentement. Personne n’est obligé de fermer les yeux.",
             "blatt": "ff7-skills-koffer"
           },

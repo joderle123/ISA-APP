@@ -48,15 +48,14 @@
           "Bildvorlagen (Seite 2), zehnmal",
           "Papier und Bleistift für jedes Paar",
           "Fünf Emojis, groß ausgedruckt",
-          "Moderationskarten, dicke Stifte",
-          "Uhr oder Handy-Timer"
+          "Karten, dicke Stifte, Magnete"
         ],
         "vorbereitung": [
           "Gefühlskarten: fünfmal kopieren, schneiden, je Gruppe ein Umschlag.",
-          "Bildvorlagen: zehnmal kopieren und vierteln.",
-          "Emojis groß drucken oder am Beamer zeigen; Tafelbilder (Schritt 3, 7) vorbereiten.",
-          "Platz für zehn Stuhlpaare Rücken an Rücken (Raum, Flur, Halle).",
-          "Vorher fragen, wer den Rätselsatz in einer anderen Sprache sagen mag."
+          "Bildvorlagen: zehnmal kopieren, vierteln.",
+          "Emojis drucken oder am Beamer zeigen.",
+          "Tafel: Kapitel (Schritt 2), Tafelbilder (3, 7), Formen-Wörter (6).",
+          "Vorab fragen, wer den Rätselsatz in einer anderen Sprache sagt."
         ],
         "ablauf": [
           {
@@ -122,7 +121,7 @@
             "titel": "Rückblick und Start ins Kapitel",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor, in der der Skills-Koffer gepackt wurde. Per Daumen nach der Wochen-Mission fragen: Wer hatte die Notfallkarte dabei und hat einmal den Ampel-Check gemacht (hoch, Mitte, runter)? Eine Stimme erzählt, welche Farbe sie hatte; niemand muss die Mission geschafft haben. Dann das neue Kapitel an die Tafel schreiben: Kommunikation und Grenzen – Wie sage ich, was ich fühle und brauche? Die vier Stunden am Tafelrand notieren: ohne Worte, Ich-Botschaften und Zuhören, Grenzen erkennen, Stopp sagen.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor, in der der Skills-Koffer gepackt wurde. Per Daumen nach der Wochen-Mission fragen: Wer hatte die Notfallkarte dabei und hat einmal den Ampel-Check gemacht (hoch, Mitte, runter)? Eine Stimme erzählt, welche Farbe sie hatte; niemand muss die Mission geschafft haben. Dann das neue Kapitel an der Tafel aufdecken (vorher angeschrieben): Kommunikation und Grenzen – Wie sage ich, was ich fühle und brauche? Am Tafelrand stehen die vier Stunden: ohne Worte, Ich-Botschaften und Zuhören, Grenzen erkennen, Stopp sagen.",
             "sagen": [
               "In den nächsten vier Wochen geht es darum, wie ihr sagt, was ihr fühlt und braucht – und wie ihr zeigt, wo eure Grenze ist. Heute fangen wir mit allem an, was ohne Worte ankommt."
             ],
@@ -132,7 +131,7 @@
             "titel": "Worte, Stimme, Körper: Was glaubt ihr mir?",
             "dauer": 15,
             "phase": "input",
-            "text": "Die Lehrkraft sagt die vier Sätze aus der Liste wie beschrieben (vorher einmal laut üben); nach jedem Satz zeigt die Klasse auf drei: Daumen hoch für die Worte, runter für den Rest (4 Min.). Dann zehn Sekunden schweigend mit verschränkten Armen auf die Uhr schauen: Was habe ich gerade gesagt? Daraus das Tafelbild entwickeln (3 Min.). Zu zweit (4 Min.): Wer früher im Jahr Geburtstag hat, sagt viermal „Ja, klar.“, jedes Mal in einer anderen Stimmung von der Tafel (begeistert, genervt, traurig, ironisch); die andere Person rät, dann wechseln. Zum Schluss der Rätselsatz (4 Min.): Die Freiwilligen sagen „Heute gibt es Nudeln in der Kantine“ in einer anderen Sprache, in der Stimmung, die die Lehrkraft ihnen zuflüstert; die Klasse rät das Gefühl.",
+            "text": "Die Lehrkraft sagt die vier Sätze aus der Liste wie beschrieben (vorher einmal laut üben). Nach jedem Satz zeigt die Klasse auf drei: Daumen hoch – ich glaube den Worten, Daumen runter – ich glaube Stimme und Körper (4 Min.). Dann zehn Sekunden schweigend mit verschränkten Armen auf die Uhr schauen: Was habe ich gerade gesagt? Daraus das Tafelbild entwickeln (3 Min.). Zu zweit (4 Min.): Wer früher im Jahr Geburtstag hat, sagt viermal „Ja, klar.“, jedes Mal in einer anderen Stimmung von der Tafel (begeistert, genervt, traurig, ironisch); die andere Person rät, dann wechseln. Zum Schluss der Rätselsatz (4 Min.): Die Freiwilligen sagen „Heute gibt es Nudeln in der Kantine“ in einer anderen Sprache oder in einer erfundenen Fantasiesprache, in der Stimmung, die die Lehrkraft ihnen zuflüstert; die Klasse rät das Gefühl.",
             "sagen": [
               "Was glaubt ihr mir – den Worten oder dem Rest?",
               "Auch wer schweigt oder wegschaut, sagt etwas. Man kann nicht nicht kommunizieren.",
@@ -175,7 +174,7 @@
             "titel": "Gefühle ohne Worte: Körpersprache lesen",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Jede Tischgruppe bekommt einen Umschlag mit zwölf Gefühlskarten. Reihum zieht eine Person eine Karte und zeigt das Gefühl zehn Sekunden lang nur mit Gesicht und Körper, im Sitzen oder Stehen; die anderen raten, die Situation auf der Karte darf als Hilfe vorgelesen werden. Wer nicht spielen mag, sagt „weiter“ und gibt die Karte der nächsten Person; eine Person je Gruppe – gern jemand, der lieber nicht spielt – notiert, was leicht und was schwer zu erraten war (7 Min.). In der Klasse sammeln: Welche Gefühle waren leicht, welche schwer – und woran habt ihr sie erkannt (4 Min.)? Festhalten: Körpersprache ist ein Hinweis, kein Beweis. Zum Schluss Aufgabe 1 auf dem Blatt „Mehr als Worte“ allein (4 Min.).",
+            "text": "Jede Tischgruppe bekommt einen Umschlag mit zwölf Gefühlskarten. Reihum zieht eine Person eine Karte und zeigt das Gefühl zehn Sekunden lang nur mit Gesicht und Körper, im Sitzen oder Stehen; die anderen raten, die Situation auf der Karte darf als Hilfe vorgelesen werden. Wer nicht spielen mag, sagt „weiter“ und gibt die Karte der nächsten Person; eine Person je Gruppe – gern jemand, der lieber nicht spielt – notiert auf dem Umschlag, was leicht und was schwer zu erraten war (7 Min.). In der Klasse sammeln: Welche Gefühle waren leicht, welche schwer – und woran habt ihr sie erkannt (4 Min.)? Festhalten: Körpersprache ist ein Hinweis, kein Beweis. Zum Schluss Aufgabe 1 auf dem Blatt „Mehr als Worte“ allein (4 Min.).",
             "sagen": [
               "Nur Gesicht und Körper – keine Laute, kein Zeigen auf Dinge im Raum.",
               "Woran habt ihr es erkannt: am Blick, am Mund, an den Händen, an den Schultern, an den Füßen?",
@@ -189,9 +188,9 @@
             "titel": "Bewegungspause: Spiegeln zu zweit",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Alle stehen auf und stellen sich zu zweit gegenüber, etwa eine Armlänge Abstand. Wer früher im Jahr Geburtstag hat, führt: Hände, Arme und Gesicht bewegen sich ganz langsam, die andere Person spiegelt jede Bewegung (1 Min.). Dann wechseln (1 Min.). In der dritten Runde führt niemand: Beide versuchen, sich gemeinsam zu bewegen, ohne abzusprechen, wer anfängt (1 Min.). Keine Berührung, kein Wort. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "text": "Alle stehen auf und stellen sich zu zweit gegenüber, gut eine Armlänge Abstand. Wer früher im Jahr Geburtstag hat, führt: Hände, Arme und Gesicht bewegen sich ganz langsam, die andere Person spiegelt jede Bewegung (1 Min.). Dann wechseln (1 Min.). In der dritten Runde führt niemand: Beide versuchen, sich gemeinsam zu bewegen, ohne abzusprechen, wer anfängt (1 Min.). Keine Berührung, kein Wort; wer Blickkontakt unangenehm findet, schaut auf die Hände. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
             "sagen": [
-              "So langsam, dass die andere Person mitkommt. Ihr redet nur mit den Augen."
+              "So langsam, dass die andere Person mitkommt. Ihr redet nur mit Blick und Händen."
             ],
             "tipp": "Danach reicht eine Frage: Woran habt ihr gemerkt, was als Nächstes kommt? Meist ist es der Blick – genau der fehlt in der nächsten Übung.",
             "wennEsKippt": "Wird aus dem Spiegeln ein Grimassen-Wettbewerb, darf das kurz sein; dann eine Runde nur mit den Händen. Wer keinen Partner möchte, spiegelt die Lehrkraft."
@@ -200,7 +199,7 @@
             "titel": "Rücken an Rücken: nur mit Worten",
             "dauer": 18,
             "phase": "aktiv",
-            "text": "Die Tischnachbarn bilden Paare und stellen zwei Stühle mit den Lehnen aneinander, sodass sie Rücken an Rücken sitzen, ohne sich zu berühren (2 Min.). Runde 1 (3 Min.): Eine Person bekommt verdeckt Vorlage B und beschreibt, die andere zeichnet, darf aber nichts fragen und sich nicht umdrehen; dann Vorlage und Zeichnung nebeneinanderlegen (1 Min.). Runde 2 (3 Min.): Rollen tauschen, jetzt mit Vorlage C – etwa gleich schwer –, und Rückfragen sind erlaubt; wieder vergleichen (1 Min.). In der Klasse auswerten (6 Min.): Welche Runde hat besser geklappt, und warum? Was geholfen hat, kommt an die Tafel (Liste), und jede Person kreuzt es in Aufgabe 2 auf dem Blatt an. Stühle zurückstellen (2 Min.).",
+            "text": "Die Paare bleiben am Tisch: Die zeichnende Person sitzt wie immer, die beschreibende dreht ihren Stuhl um und sitzt mit dem Rücken zu ihr (1 Min.). Runde 1 (4 Min.): Die beschreibende Person bekommt verdeckt Vorlage B und beschreibt; die andere zeichnet, darf aber nichts fragen. Dann Vorlage und Zeichnung nebeneinanderlegen (1 Min.). Runde 2 (4 Min.): Rollen tauschen, jetzt mit Vorlage C – etwa gleich schwer –, und Rückfragen sind erlaubt; wieder vergleichen (1 Min.). Die Formen-Wörter am Tafelrand helfen beim Beschreiben: Kreis, Dreieck, Quadrat, Linie, Pfeil, oben, unten, links, rechts, Mitte. In der Klasse auswerten (6 Min.): Welche Runde hat besser geklappt, und warum? Was geholfen hat, kommt an die Tafel (Liste), und jede Person kreuzt es in Aufgabe 2 auf dem Blatt an. Stühle zurückdrehen (1 Min.).",
             "sagen": [
               "Ihr seht euch nicht. Ihr habt nur Worte – genau wie im Chat.",
               "Was hat in Runde 2 geholfen, das in Runde 1 gefehlt hat?",
@@ -214,7 +213,7 @@
               "Nachfragen und zurückmelden: „Meinst du so?“ – „Ja, genau.“"
             ],
             "tipp": "Runde 1 klappt fast nie – das ist der Sinn. Vorher ankündigen, dass es schwer wird; beim Vergleichen wird viel gelacht, und genau darin steckt die Erkenntnis. Paare mit einer gemeinsamen Sprache dürfen sie benutzen: Es geht ums Beschreiben, nicht ums Deutsche.",
-            "wennEsKippt": "Wird die zeichnende Person in Runde 1 ungeduldig oder wirft den Stift hin, kurz anhalten und verraten, dass es ohne Rückfragen kaum klappen kann. Dreht sich jemand um oder zeigt auf die Vorlage, eine neue Vorlage nehmen und neu starten. Bei ungerader Zahl entsteht eine Dreiergruppe: Die dritte Person sieht die Vorlage und notiert, welche Wörter geholfen haben. Ist kein Platz für Stuhlpaare, bleiben die Paare am Tisch und stellen eine aufgeklappte Mappe als Sichtschutz zwischen sich.",
+            "wennEsKippt": "Wird die zeichnende Person in Runde 1 ungeduldig oder wirft den Stift hin, kurz anhalten und verraten, dass es ohne Rückfragen kaum klappen kann. Dreht sich jemand um oder zeigt auf die Vorlage, eine neue Vorlage nehmen und neu starten. Bei ungerader Zahl entsteht eine Dreiergruppe: Die dritte Person sieht die Vorlage und notiert, welche Wörter geholfen haben. Wird es an den Tischen zu laut, Ruhezeichen geben: Beschrieben wird halblaut, nur für das eigene Gegenüber.",
             "blatt": "ff7-ohne-worte-karten"
           },
           {
@@ -229,7 +228,7 @@
             "punkte": [
               "Gesicht mit Dampf aus der Nase – offiziell „triumphierend“, die meisten lesen es als wütend",
               "Totenkopf – für die einen „Ich lach mich tot“, für andere Gefahr oder Tod",
-              "Daumen hoch – „Passt, danke“ oder kurz angebunden und genervt",
+              "Daumen hoch – „Passt, danke“, kurz angebunden und genervt oder in manchen Ländern unhöflich",
               "Kopfüber-Gesicht – ironisch, „na ja“, peinlich oder egal",
               "Gefaltete Hände – bitte, danke, beten oder ein High five"
             ],
@@ -291,23 +290,23 @@
           }
         ],
         "bruecke": "Nächste Woche lernt ihr einen Satz, der viel Streit verhindert: die Ich-Botschaft – und wie man so zuhört, dass sich jemand wirklich verstanden fühlt.",
-        "mission": "Achte diese Woche einmal darauf, wie jemand etwas sagt: Gesicht, Stimme, Hände. Oder frag einmal nach, wenn dir eine Nachricht komisch vorkommt.",
+        "mission": "Kommt dir diese Woche eine Nachricht komisch vor, frag einmal nach: „Wie meinst du das?“ Oder achte einmal darauf, was Gesicht, Stimme und Hände sagen.",
         "hintergrund": "Kommunikation läuft über mehrere Kanäle: Worte, Stimme und Körper. Watzlawick et al. (1967) prägten den Satz, dass man nicht nicht kommunizieren kann, und beschrieben, dass jede Nachricht einen Inhalts- und einen Beziehungsaspekt hat; die Beziehung zeigt sich vor allem in Stimme, Blick und Haltung. Widersprechen sich die Kanäle, muss das Gegenüber deuten – und liegt dabei oft daneben, denn Körpersprache ist ein Hinweis, kein Beweis. Wie viel Rückfragen ausmachen, zeigten Leavitt und Mueller (1951): Beschrieb jemand geometrische Figuren, zeichneten die Zuhörenden deutlich genauer, sobald sie nachfragen durften – es dauerte nur länger. Im Chat fehlen Stimme und Körper ganz. Wer schreibt, hört beim Tippen den eigenen Tonfall mit und überschätzt, wie gut Ironie oder Ernst beim anderen ankommen (Kruger et al., 2005). Deshalb übt die Stunde das einfachste Gegenmittel: nachfragen.",
         "quellen": [
           "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
           "Leavitt, H. J. & Mueller, R. A. H. (1951). Some effects of feedback on communication. Human Relations, 4(4), 401–410.",
           "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936."
         ],
-        "achtung": "Die Körpersprache einzelner Jugendlicher nie vor der Klasse deuten oder bewerten: Blickkontakt, Abstand und Gesten sind von Familie zu Familie und von Kultur zu Kultur verschieden. Die Pantomime ist freiwillig, und über Sprachen und Akzente wird nicht gelacht. Kommen ein aktueller Chat-Streit, verletzende Nachrichten oder Cybermobbing zur Sprache: nicht in der Klasse auswerten, keine echten Chats zeigen lassen, nach der Stunde ein Gespräch anbieten, auf die BEE SECURE Helpline (8002 1234) hinweisen und bei Hinweisen auf Mobbing Régent und SePAS einbeziehen.",
+        "achtung": "Die Körpersprache einzelner Jugendlicher nie vor der Klasse deuten oder bewerten: Blickkontakt, Abstand und Gesten sind in jeder Familie und Kultur anders. Die Pantomime ist freiwillig, und über Sprachen und Akzente wird nicht gelacht. Kommen ein Chat-Streit, verletzende Nachrichten oder Cybermobbing zur Sprache: nicht in der Klasse auswerten, keine echten Chats zeigen lassen, nach der Stunde ein Gespräch anbieten, auf die BEE SECURE Helpline (8002 1234) hinweisen, bei Mobbing Régent und SePAS einbeziehen. Bei Drohungen, Gewalt oder Selbstverletzung noch am selben Tag den SePAS informieren.",
         "differenzierung": {
-          "leichter": "Die Gefühlskarten zeigen zu jedem Wort ein Gesicht; so spielen auch Jugendliche mit, die das Wort noch nicht kennen. „Ja, klar.“ und den Rätselsatz darf man in jeder Sprache sagen; bei Rücken an Rücken arbeiten Paare mit einer gemeinsamen Sprache in dieser oder nehmen Vorlage A. Wer mühsam schreibt, übersetzt die Emojis mündlich oder mit einem Wort aus dem Wortspeicher.",
+          "leichter": "Die Gefühlskarten zeigen zu jedem Wort ein Gesicht; so spielen auch Jugendliche mit, die das Wort noch nicht kennen. „Ja, klar.“ und den Rätselsatz darf man in jeder Sprache sagen; bei Rücken an Rücken helfen die Formen-Wörter an der Tafel, und Paare mit einer gemeinsamen Sprache arbeiten in dieser oder nehmen Vorlage A. Wer mühsam schreibt, übersetzt die Emojis mündlich oder mit einem Wort aus dem Wortspeicher.",
           "schwerer": "Eine eigene missverständliche Nachricht erfinden und von einer anderen Gruppe deuten lassen: Stimmt die Deutung mit der Absicht überein? Bei Rücken an Rücken die schwierigste Vorlage D nehmen oder als dritte Person notieren, welche Wörter geholfen haben."
         },
         "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gesicht und Zahl (5 Min.), die vier Sätze und das Tafelbild Worte, Stimme, Körper (10 Min.), Gefühle ohne Worte in den Tischgruppen (10 Min.), Emojis in Sätze übersetzen und Chat-Regeln (15 Min.), achtsames Hören (5 Min.), Skills-Pass und Wochen-Mission (5 Min.). Rücken an Rücken entfällt; die Übung passt in eine spätere Stunde, wenn Zeit übrig bleibt."
       },
       "fr": {
         "titel": "Verbal et non verbal",
-        "kurz": "La classe découvre tout ce que le visage, la voix et la posture trahissent, lit le langage du corps en îlots, décrit des dessins avec les seuls mots et traduit des émojis en phrases complètes.",
+        "kurz": "La classe découvre tout ce que le visage, la voix et la posture trahissent, lit le langage du corps en îlots, décrit des dessins uniquement avec des mots et traduit des émojis en phrases complètes.",
         "ziele": [
           "distinguent ce que transmettent les mots, la voix et le corps, et repèrent quand ils se contredisent",
           "lisent des émotions sur un visage et dans une posture et disent à quoi ils les ont reconnues",
@@ -318,18 +317,17 @@
           "Cahiers, tampon pour le Skills-Pass",
           "Roue des émotions, 20 gommettes",
           "Cartes émotions, un jeu par îlot",
-          "Modèles de dessins (page 2), 10 fois",
+          "Modèles de dessins (page 2), 10 copies",
           "Papier et crayon pour chaque binôme",
           "Cinq émojis imprimés en grand",
-          "Cartes (cartons), gros feutres",
-          "Montre ou minuteur"
+          "Cartons, gros feutres, aimants"
         ],
         "vorbereitung": [
           "Cartes émotions : 5 copies, découper, une enveloppe par îlot.",
           "Modèles de dessins : 10 copies, couper en quatre.",
-          "Émojis imprimés en grand ou projetés ; tableaux des étapes 3 et 7 prêts.",
-          "Place pour dix paires de chaises dos à dos (salle, couloir, hall).",
-          "Demander à l’avance qui veut dire la phrase mystère dans une autre langue."
+          "Émojis imprimés en grand ou projetés.",
+          "Tableau : chapitre (étape 2), tableaux (3, 7), mots des formes (6).",
+          "Demander à l’avance qui dira la phrase mystère dans une autre langue."
         ],
         "ablauf": [
           {
@@ -345,7 +343,7 @@
           {
             "min": "15–30",
             "phase": "input",
-            "titel": "Mots, voix, corps : qu’est-ce que vous croyez ?"
+            "titel": "Mots, voix, corps : vous croyez quoi ?"
           },
           {
             "min": "30–45",
@@ -383,7 +381,7 @@
             "titel": "Tour d’humeur : d’abord le visage, ensuite le mot",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "En entrant, chaque jeune colle comme d’habitude sa gommette sur la roue des émotions. Une fois tout le monde assis, montrer d’abord sa propre émotion pendant trois secondes, sans un mot, seulement avec le visage et la posture ; la classe devine, puis donner le mot et le chiffre. Ensuite, dans les îlots, tout le monde montre son émotion en même temps et sans un mot, à « trois », en regardant les autres autour de la table ; chacun devine en silence, pour soi (2 min). Puis chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100), et deux ou trois volontaires disent leur mot et leur chiffre – et si on l’aurait deviné. À retenir : certaines choses se voient tout de suite, d’autres pas du tout.",
+            "text": "En entrant, chaque jeune colle comme d’habitude sa gommette sur la roue des émotions. Une fois tout le monde assis, montrer d’abord sa propre émotion pendant trois secondes, sans un mot, seulement avec le visage et la posture ; la classe devine, puis donner le mot et le chiffre. Ensuite, dans les îlots, tout le monde montre son émotion en même temps et sans un mot, à « trois », en regardant les autres autour de la table ; chacun devine en silence, pour soi (2 min). Puis chacun montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100), et deux ou trois volontaires disent leur mot et leur chiffre – et disent si, à leur avis, ça se voyait. À retenir : certaines choses se voient tout de suite, d’autres pas du tout.",
             "sagen": [
               "Aujourd’hui, vous montrez d’abord votre émotion sans un mot – tous en même temps, seulement pour votre îlot. Si vous ne voulez pas, regardez simplement votre gommette.",
               "Vous l’auriez deviné ? Ne le dites pas, gardez-le pour vous."
@@ -395,21 +393,21 @@
             "titel": "Retour sur la séance et nouveau chapitre",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance, celle où l’on a rempli la valise à skills. Pour la mission de la semaine, faire un sondage du pouce : qui avait sa carte d’urgence sur lui et a fait une fois le check du feu tricolore (en haut, au milieu, en bas) ? Une voix raconte quelle couleur elle avait ; personne n’est obligé d’avoir réussi la mission. Écrire ensuite le nouveau chapitre au tableau : Communication et limites – Comment dire ce que je ressens et ce dont j’ai besoin ? Noter en marge les quatre séances : sans les mots, messages en « je » et écoute, reconnaître les limites, dire stop.",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance, celle où l’on a rempli la valise à skills. Pour la mission de la semaine, faire un sondage du pouce : qui avait sa carte d’urgence sur lui et a fait une fois le réflexe feu tricolore (en haut, au milieu, en bas) ? Une voix raconte quelle couleur elle avait ; personne n’est obligé d’avoir réussi la mission. Découvrir ensuite le nouveau chapitre, écrit au tableau à l’avance : Communication et limites – Comment dire ce que je ressens et ce dont j’ai besoin ? En marge, les quatre séances : sans les mots, messages en « je » et écoute, reconnaître les limites, dire stop.",
             "sagen": [
               "Pendant quatre semaines, on va voir comment dire ce que vous ressentez et ce dont vous avez besoin – et comment montrer où se trouve votre limite. Aujourd’hui, on commence par tout ce qui passe sans les mots."
             ],
             "tipp": "Laisser les quatre séances du chapitre en marge du tableau. Quand on sait où mène un chapitre, on travaille plus sereinement – et le lien avec le chapitre précédent est évident : d’abord redescendre, ensuite parler."
           },
           {
-            "titel": "Mots, voix, corps : qu’est-ce que vous croyez ?",
+            "titel": "Mots, voix, corps : vous croyez quoi ?",
             "dauer": 15,
             "phase": "input",
-            "text": "Dire les quatre phrases de la liste comme indiqué (s’y exercer une fois avant) ; après chaque phrase, la classe montre à « trois » : pouce en haut pour les mots, en bas pour le reste (4 min). Puis rester dix secondes en silence, bras croisés, les yeux sur la montre : qu’est-ce que je viens de dire ? En tirer le tableau (3 min). À deux (4 min) : celui ou celle dont l’anniversaire tombe le plus tôt dans l’année dit quatre fois « Oui, bien sûr. », chaque fois sur un des tons notés au tableau (enthousiaste, agacé, triste, ironique) ; l’autre devine, puis on échange. Pour finir, la phrase mystère (4 min) : les volontaires disent « Aujourd’hui, il y a des pâtes à la cantine » dans une autre langue, sur le ton qu’on leur a soufflé à l’oreille ; la classe devine l’émotion.",
+            "text": "Dire les quatre phrases de la liste comme indiqué (s’y exercer une fois avant). Après chaque phrase, la classe montre à « trois » : pouce en haut – je crois les mots, pouce en bas – je crois la voix et le corps (4 min). Puis rester dix secondes en silence, bras croisés, les yeux sur la montre : qu’est-ce que je viens de dire ? En tirer le tableau (3 min). À deux (4 min) : celui ou celle dont l’anniversaire tombe le plus tôt dans l’année dit quatre fois « Oui, bien sûr. », chaque fois sur un des tons notés au tableau (enthousiaste, agacé, triste, ironique) ; l’autre devine, puis on échange. Pour finir, la phrase mystère (4 min) : les volontaires disent « Aujourd’hui, il y a des pâtes à la cantine » dans une autre langue ou dans une langue inventée, sur le ton qu’on leur a soufflé à l’oreille ; la classe devine l’émotion.",
             "sagen": [
-              "Qu’est-ce que vous croyez – les mots ou le reste ?",
+              "Vous croyez quoi : mes mots ou le reste ?",
               "Même celui qui se tait ou détourne le regard dit quelque chose. On ne peut pas ne pas communiquer.",
-              "Vous n’avez pas compris un seul mot, et pourtant vous saviez comment c’était dit. C’est la voix qui fait ça."
+              "Vous n’avez pas compris un mot, et pourtant vous avez entendu l’émotion. C’est la voix qui fait ça."
             ],
             "punkte": [
               "« Je vais super bien. » – voix triste, épaules tombantes, regard vers le sol",
@@ -429,7 +427,7 @@
                 ],
                 [
                   "La voix",
-                  "fort ou doucement, vite ou lentement, gentiment, agacé ou ironique ; soupirs, rires, silences"
+                  "fort ou doucement, vite ou lentement, sur un ton gentil, agacé ou ironique ; soupirs, rires, silences"
                 ],
                 [
                   "Le corps (non verbal)",
@@ -448,7 +446,7 @@
             "titel": "Des émotions sans mots : lire le langage du corps",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Chaque îlot reçoit une enveloppe avec douze cartes émotions. À tour de rôle, un jeune tire une carte et montre l’émotion pendant dix secondes, uniquement avec le visage et le corps, assis ou debout ; les autres devinent, et on peut lire la situation de la carte pour aider. Qui ne veut pas jouer dit « je passe » et donne la carte à son voisin ; dans chaque îlot, une personne – volontiers quelqu’un qui préfère ne pas jouer – note ce qui était facile ou difficile à deviner (7 min). En classe entière : quelles émotions étaient faciles, lesquelles difficiles – et à quoi les avez-vous reconnues (4 min) ? À retenir : le langage du corps est un indice, pas une preuve. Pour finir, exercice 1 de la fiche « Plus que des mots », seul (4 min).",
+            "text": "Chaque îlot reçoit une enveloppe avec douze cartes émotions. À tour de rôle, un jeune tire une carte et montre l’émotion pendant dix secondes, uniquement avec le visage et le corps, assis ou debout ; les autres devinent, et on peut lire la situation de la carte pour aider. Qui ne veut pas jouer dit « je passe » et donne la carte à son voisin ; dans chaque îlot, une personne – de préférence quelqu’un qui n’a pas envie de jouer – note sur l’enveloppe ce qui était facile ou difficile à deviner (7 min). En classe entière : quelles émotions étaient faciles, lesquelles difficiles – et à quoi les avez-vous reconnues (4 min) ? À retenir : le langage du corps est un indice, pas une preuve. Pour finir, exercice 1 de la fiche « Plus que des mots », seul (4 min).",
             "sagen": [
               "Seulement le visage et le corps – pas de sons, et on ne montre pas d’objets dans la salle.",
               "À quoi l’avez-vous reconnue : au regard, à la bouche, aux mains, aux épaules, aux pieds ?",
@@ -462,9 +460,9 @@
             "titel": "Pause active : le miroir à deux",
             "dauer": 5,
             "phase": "aktiv",
-            "text": "Tout le monde se lève et se met face à face, à deux, à environ une longueur de bras. Celui ou celle dont l’anniversaire tombe le plus tôt dans l’année mène : les mains, les bras et le visage bougent très lentement, et l’autre reproduit chaque mouvement comme dans un miroir (1 min). Puis on échange (1 min). Au troisième tour, personne ne mène : les deux essaient de bouger ensemble, sans décider qui commence (1 min). Pas de contact, pas un mot. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "text": "Tout le monde se lève et se met face à face, à deux, à un bon bras de distance. Celui ou celle dont l’anniversaire tombe le plus tôt dans l’année mène : les mains, les bras et le visage bougent très lentement, et l’autre reproduit chaque mouvement comme dans un miroir (1 min). Puis on échange (1 min). Au troisième tour, personne ne mène : les deux essaient de bouger ensemble, sans décider qui commence (1 min). Pas de contact, pas un mot ; qui n’aime pas regarder l’autre dans les yeux regarde ses mains. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
             "sagen": [
-              "Assez lentement pour que l’autre puisse suivre. Vous ne parlez qu’avec les yeux."
+              "Assez lentement pour que l’autre puisse suivre. Vous ne parlez qu’avec le regard et les mains."
             ],
             "tipp": "Ensuite, une question suffit : à quoi avez-vous vu ce qui allait venir ? En général, c’est le regard – et c’est justement lui qui manque dans l’exercice suivant.",
             "wennEsKippt": "Si le miroir tourne au concours de grimaces, on peut le laisser un instant ; puis faire un tour avec les mains seulement. Qui ne veut pas de partenaire fait le miroir de l’enseignant·e."
@@ -473,7 +471,7 @@
             "titel": "Dos à dos : rien que des mots",
             "dauer": 18,
             "phase": "aktiv",
-            "text": "Les voisins de table forment des binômes et placent deux chaises dossier contre dossier, pour s’asseoir dos à dos sans se toucher (2 min). Tour 1 (3 min) : l’un reçoit le modèle B, face cachée, et le décrit ; l’autre dessine, sans poser de questions et sans se retourner ; puis on pose le modèle et le dessin côte à côte (1 min). Tour 2 (3 min) : on échange les rôles, avec le modèle C – à peu près aussi difficile –, et cette fois les questions sont permises ; on compare à nouveau (1 min). Bilan en classe entière (6 min) : quel tour a le mieux marché, et pourquoi ? Ce qui a aidé va au tableau (liste), et chacun le coche dans l’exercice 2 de la fiche. Remettre les chaises en place (2 min).",
+            "text": "Les binômes restent à leur table : celui ou celle qui dessine reste assis normalement, celui ou celle qui décrit retourne sa chaise et s’assoit dos à son partenaire (1 min). Tour 1 (4 min) : celui qui décrit reçoit le modèle B, face cachée, et le décrit ; l’autre dessine, sans poser de questions. Puis on pose le modèle et le dessin côte à côte (1 min). Tour 2 (4 min) : on échange les rôles, avec le modèle C – à peu près aussi difficile –, et cette fois les questions sont permises ; on compare à nouveau (1 min). Les mots des formes, en marge du tableau, aident à décrire : cercle, triangle, carré, ligne, flèche, en haut, en bas, à gauche, à droite, au milieu. Bilan en classe entière (6 min) : quel tour a le mieux marché, et pourquoi ? Ce qui a aidé va au tableau (liste), et chacun le coche dans l’exercice 2 de la fiche. Remettre les chaises dans le bon sens (1 min).",
             "sagen": [
               "Vous ne vous voyez pas. Vous n’avez que des mots – exactement comme dans un message.",
               "Qu’est-ce qui vous a aidés au tour 2 et qui manquait au tour 1 ?",
@@ -487,7 +485,7 @@
               "Poser des questions et confirmer : « Comme ça ? » – « Oui, exactement. »"
             ],
             "tipp": "Le tour 1 ne marche presque jamais – c’est voulu. Annoncer d’avance que ce sera difficile ; au moment de comparer, on rit beaucoup, et c’est dans ce rire que se fait la découverte. Les binômes qui partagent une langue peuvent l’utiliser : le but est de décrire, pas de parler français.",
-            "wennEsKippt": "Si celui ou celle qui dessine s’impatiente ou jette son crayon au tour 1, arrêter un instant et révéler que, sans questions, ça ne peut presque pas marcher. Si quelqu’un se retourne ou montre le modèle, prendre un autre modèle et recommencer. Avec un nombre impair, former un groupe de trois : la troisième personne voit le modèle et note les mots qui ont aidé. S’il n’y a pas de place pour les chaises, les binômes restent à leur table, séparés par un classeur ouvert.",
+            "wennEsKippt": "Si celui ou celle qui dessine s’impatiente ou jette son crayon au tour 1, arrêter un instant et révéler que, sans questions, ça ne peut presque pas marcher. Si quelqu’un se retourne ou montre le modèle, prendre un autre modèle et recommencer. Avec un nombre impair, former un groupe de trois : la troisième personne voit le modèle et note les mots qui ont aidé. Si les tables deviennent trop bruyantes, faire le signal du silence : on décrit à mi-voix, seulement pour son partenaire.",
             "blatt": "ff7-ohne-worte-karten"
           },
           {
@@ -502,7 +500,7 @@
             "punkte": [
               "Visage avec de la vapeur qui sort du nez – officiellement « triomphant », la plupart le lisent comme en colère",
               "Tête de mort – pour les uns « Je suis mort de rire », pour d’autres le danger ou la mort",
-              "Pouce levé – « Ça marche, merci » ou sec et agacé",
+              "Pouce levé – « Ça marche, merci », sec et agacé ou, dans certains pays, impoli",
               "Visage à l’envers – ironique, « bof », gêné ou indifférent",
               "Mains jointes – s’il te plaît, merci, prier ou « tope là »"
             ],
@@ -564,17 +562,17 @@
           }
         ],
         "bruecke": "La semaine prochaine, vous apprendrez une phrase qui évite beaucoup de disputes : le message en « je » – et comment écouter pour que l’autre se sente vraiment compris.",
-        "mission": "Cette semaine, observe une fois comment quelqu’un dit les choses : visage, voix, mains. Ou, si un message te paraît bizarre, demande une fois ce qu’il voulait dire.",
+        "mission": "Si un message te paraît bizarre cette semaine, demande une fois : « Tu veux dire quoi ? » Ou observe une fois ce que disent le visage, la voix et les mains.",
         "hintergrund": "La communication passe par plusieurs canaux : les mots, la voix et le corps. Watzlawick et al. (1967) ont formulé l’idée qu’on ne peut pas ne pas communiquer et montré que tout message a un aspect de contenu et un aspect de relation ; la relation se lit surtout dans la voix, le regard et la posture. Quand les canaux se contredisent, l’autre doit interpréter – et se trompe souvent, car le langage du corps est un indice, pas une preuve. Leavitt et Mueller (1951) ont montré l’effet des questions : quand une personne décrivait des figures géométriques, ceux qui écoutaient dessinaient bien plus juste dès qu’ils pouvaient poser des questions, mais il leur fallait plus de temps. Dans un message écrit, la voix et le corps disparaissent. Celui qui écrit entend son propre ton dans sa tête et surestime à quel point l’ironie ou le sérieux passent chez l’autre (Kruger et al., 2005). D’où le remède le plus simple, que la séance entraîne : demander.",
         "quellen": [
           "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
           "Leavitt, H. J. & Mueller, R. A. H. (1951). Some effects of feedback on communication. Human Relations, 4(4), 401–410.",
           "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936."
         ],
-        "achtung": "Ne jamais interpréter ni juger devant la classe le langage du corps d’un jeune : le contact visuel, la distance et les gestes varient d’une famille et d’une culture à l’autre. Le mime est facultatif, et on ne rit ni des langues ni des accents. Si une dispute en ligne, des messages blessants ou du cyberharcèlement sont évoqués : ne pas en parler en classe, ne pas faire montrer de vraies conversations, proposer un entretien après le cours, signaler la BEE SECURE Helpline (8002 1234) et, en cas de signes de harcèlement, impliquer le régent et le SePAS.",
+        "achtung": "Ne jamais interpréter ni juger devant la classe le langage du corps d’un jeune : le contact visuel, la distance et les gestes varient selon les familles et les cultures. Le mime est facultatif, et on ne rit ni des langues ni des accents. Si une dispute en ligne, des messages blessants ou du cyberharcèlement sont évoqués : ne pas en parler en classe, ne pas faire montrer de vraies conversations, proposer un entretien après le cours, indiquer la BEE SECURE Helpline (8002 1234), en cas de harcèlement impliquer le régent et le SePAS. En cas de menaces, de violence ou d’automutilation, informer le SePAS le jour même.",
         "differenzierung": {
-          "leichter": "Les cartes émotions montrent un visage pour chaque mot ; ainsi, même les jeunes qui ne connaissent pas encore le mot peuvent jouer. On peut dire « Oui, bien sûr. » et la phrase mystère dans n’importe quelle langue ; pour l’exercice dos à dos, les binômes qui partagent une langue l’utilisent ou prennent le modèle A. Qui a du mal à écrire traduit les émojis à l’oral ou avec un des mots clés du tableau.",
-          "schwerer": "Inventer un message ambigu et le faire interpréter par un autre îlot : l’interprétation correspond-elle à l’intention ? Pour l’exercice dos à dos, prendre le modèle D, le plus difficile, ou noter, en troisième personne, les mots qui ont aidé."
+          "leichter": "Les cartes émotions montrent un visage pour chaque mot ; ainsi, même les jeunes qui ne connaissent pas encore le mot peuvent jouer. On peut dire « Oui, bien sûr. » et la phrase mystère dans n’importe quelle langue ; pour l’exercice dos à dos, les mots des formes au tableau aident, et les binômes qui partagent une langue l’utilisent ou prennent le modèle A. Qui a du mal à écrire traduit les émojis à l’oral ou avec un des mots clés du tableau.",
+          "schwerer": "Inventer un message ambigu et le faire interpréter par un autre îlot : l’interprétation correspond-elle à l’intention ? Pour l’exercice dos à dos, prendre le modèle D, le plus difficile, ou, dans un groupe de trois, noter comme observateur les mots qui ont aidé."
         },
         "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le visage et le chiffre (5 min), les quatre phrases et le tableau mots, voix, corps (10 min), des émotions sans mots en îlots (10 min), traduire des émojis et règles pour les messages (15 min), écoute attentive (5 min), Skills-Pass et mission de la semaine (5 min). L’exercice dos à dos est supprimé ; il trouve sa place dans une séance ultérieure, s’il reste du temps."
       }
@@ -616,7 +614,8 @@
           },
           {
             "art": "aufgabe",
-            "text": "Passen Worte und Körper zusammen? Schreib unter jedes Bild, was der Körper sagt."
+            "text": "Passen Worte und Körper zusammen? Schreib unter jedes Bild, was der Körper sagt.",
+            "hinweis": "Ein Wort reicht."
           },
           {
             "art": "comic",
@@ -649,7 +648,7 @@
             "art": "info",
             "symbol": "wissen",
             "titel": "Drei Kanäle",
-            "text": "Passen sie nicht zusammen, glauben die meisten der Stimme und dem Körper. Aber Körpersprache ist ein Hinweis, kein Beweis: Im Zweifel fragst du nach.",
+            "text": "Passen sie nicht zusammen, achten viele mehr auf Stimme und Körper als auf die Worte. Aber Körpersprache ist ein Hinweis, kein Beweis: Im Zweifel fragst du nach.",
             "punkte": [
               "Worte: was du sagst.",
               "Stimme: wie du es sagst – laut oder leise, freundlich oder genervt.",
@@ -678,7 +677,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Emojis übersetzen: Jemand schickt dir nur dieses Gesicht. Was könnte gemeint sein? Schreib einen ganzen Satz.",
+            "text": "Emojis übersetzen: Jemand schickt dir nur ein Gesicht. Was könnte gemeint sein? Wähle zwei Gesichter und schreib je einen ganzen Satz.",
             "hinweis": "Es gibt mehr als eine richtige Antwort."
           },
           {
@@ -721,7 +720,7 @@
           {
             "art": "aufgabe",
             "text": "Im Chat fehlen Stimme und Gesicht. Wie kann die Nachricht gemeint sein – und wie kann sie ankommen?",
-            "hinweis": "Stichworte reichen."
+            "hinweis": "Wähle zwei Nachrichten. Stichworte reichen."
           },
           {
             "art": "tabelle",
@@ -795,7 +794,8 @@
           },
           {
             "art": "aufgabe",
-            "text": "Les mots et le corps vont-ils ensemble ? Écris sous chaque image ce que dit le corps."
+            "text": "Les mots et le corps vont-ils ensemble ? Écris sous chaque image ce que dit le corps.",
+            "hinweis": "Un mot suffit."
           },
           {
             "art": "comic",
@@ -828,7 +828,7 @@
             "art": "info",
             "symbol": "wissen",
             "titel": "Trois canaux",
-            "text": "Quand ils ne vont pas ensemble, la plupart des gens croient la voix et le corps. Mais le langage du corps est un indice, pas une preuve : en cas de doute, tu demandes.",
+            "text": "Quand ils ne vont pas ensemble, beaucoup se fient plus à la voix et au corps qu’aux mots. Mais le langage du corps est un indice, pas une preuve : en cas de doute, tu demandes.",
             "punkte": [
               "Les mots : ce que tu dis.",
               "La voix : comment tu le dis – fort ou doucement, gentiment ou agacé.",
@@ -857,7 +857,7 @@
           },
           {
             "art": "aufgabe",
-            "text": "Traduire des émojis : quelqu’un t’envoie seulement ce visage. Que veut-il dire ? Écris une phrase complète.",
+            "text": "Traduire des émojis : quelqu’un t’envoie seulement un visage. Que veut-il dire ? Choisis deux visages et écris chaque fois une phrase complète.",
             "hinweis": "Il y a plus d’une bonne réponse."
           },
           {
@@ -900,7 +900,7 @@
           {
             "art": "aufgabe",
             "text": "Dans un message, il manque la voix et le visage. Que peut vouloir dire le message – et comment peut-il être reçu ?",
-            "hinweis": "Quelques mots suffisent."
+            "hinweis": "Choisis deux messages. Quelques mots suffisent."
           },
           {
             "art": "tabelle",
@@ -1019,7 +1019,7 @@
               },
               {
                 "titel": "verlegen",
-                "text": "Du hast die Lehrerin aus Versehen „Mama“ genannt.",
+                "text": "Du winkst zurück – aber gemeint war jemand hinter dir.",
                 "bild": "gesicht:verlegen"
               },
               {
@@ -2089,7 +2089,7 @@
               },
               {
                 "titel": "la gêne",
-                "text": "Tu as appelé la prof « maman » sans faire exprès.",
+                "text": "Tu réponds à un signe de la main – mais il était pour quelqu’un derrière toi.",
                 "bild": "gesicht:verlegen"
               },
               {
@@ -2118,7 +2118,7 @@
                 "bild": "gesicht:besorgt"
               },
               {
-                "titel": "perplexe",
+                "titel": "la confusion",
                 "text": "Tu entres dans la salle – et il n’y a personne.",
                 "bild": "gesicht:verwirrt"
               },

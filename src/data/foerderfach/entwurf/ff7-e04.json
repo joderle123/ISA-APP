@@ -484,7 +484,7 @@
             "titel": "Ce dont notre classe a besoin",
             "dauer": 10,
             "phase": "uebung",
-            "text": "Lire la charte de classe de la séance 1 et demander : quelle règle nous a aidés aujourd’hui ? Chaque règle qui a aidé reçoit une coche (3 min). Puis : que manque-t-il pour bien travailler ensemble en tant que classe ? À partir des points soulignés au tableau, la classe formule une ou deux règles d’équipe, de façon positive et avec ses propres mots (4 min). Vote avec le pouce : tout le monde peut-il l’accepter ? Les règles s’ajoutent en bas de l’affiche de la charte et dans l’exercice 4 du cahier (3 min).",
+            "text": "Lire la charte de classe de la séance 1 et demander : quelle règle nous a aidés aujourd’hui ? Chaque règle qui a aidé reçoit une coche (3 min). Puis : que manque-t-il pour bien travailler ensemble en tant que classe ? À partir des points soulignés au tableau, la classe formule une ou deux règles d’équipe, de façon positive et avec ses propres mots (4 min). Vote avec le pouce : tout le monde peut-il accepter ces règles ? Les règles s’ajoutent en bas de l’affiche de la charte et dans l’exercice 4 du cahier (3 min).",
             "sagen": [
               "Quelle règle de notre charte vous a aidés aujourd’hui ?",
               "Qu’est-ce qui doit valoir désormais quand on travaille en groupe ?"
@@ -577,7 +577,7 @@
           {
             "art": "info",
             "symbol": "merke",
-            "titel": "Vier Rollen in jeder Tischgruppe",
+            "titel": "Vier Rollen in jeder Tischgruppe – sie wechseln jede Runde",
             "punkte": [
               "Moderation: Jede Person kommt zu Wort.",
               "Zeit: Halbzeit und letzte Minute ansagen.",
@@ -587,7 +587,7 @@
           },
           {
             "art": "text",
-            "text": "Vier Jugendliche sitzen nebeneinander auf einer Bank im Schulhof: Mila, Tiago, Aylin und Noah. Jede Person macht etwas anderes:"
+            "text": "Mila, Tiago, Aylin und Noah sitzen nebeneinander auf einer Bank. Jede Person macht etwas anderes:"
           },
           {
             "art": "bilder",
@@ -732,12 +732,6 @@
               "2."
             ],
             "linien": 1
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Warum Rollen?",
-            "text": "In vielen Gruppen reden zwei, und der Rest schaut zu. Mit Rollen wird jede Person gebraucht – auch die, die sonst wenig sagen. Die Rollen wechseln, damit alle jede einmal ausprobieren."
           }
         ],
         "lehrer": {
@@ -763,7 +757,7 @@
           {
             "art": "info",
             "symbol": "merke",
-            "titel": "Quatre rôles dans chaque îlot",
+            "titel": "Quatre rôles par îlot – ils tournent à chaque manche",
             "punkte": [
               "Animation : chacun a la parole.",
               "Temps : annoncer la mi-temps et la dernière minute.",
@@ -773,7 +767,7 @@
           },
           {
             "art": "text",
-            "text": "Quatre jeunes sont assis côte à côte sur un banc de la cour : Mila, Tiago, Aylin et Noah. Chacun fait autre chose :"
+            "text": "Mila, Tiago, Aylin et Noah sont assis côte à côte sur un banc. Chacun fait autre chose :"
           },
           {
             "art": "bilder",
@@ -918,12 +912,6 @@
               "2."
             ],
             "linien": 1
-          },
-          {
-            "art": "info",
-            "symbol": "wissen",
-            "titel": "Pourquoi des rôles ?",
-            "text": "Dans beaucoup de groupes, deux personnes parlent et les autres regardent. Avec des rôles, chacun est utile – même ceux qui parlent peu d’habitude. Les rôles tournent, pour que chacun les essaie tous."
           }
         ],
         "lehrer": {

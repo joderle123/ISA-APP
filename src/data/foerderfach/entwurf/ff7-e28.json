@@ -179,7 +179,7 @@
             "titel": "Was würde eine gute Freundin sagen?",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Die fünf Plakate liegen auf den Tischgruppen, auf jedem Tisch ein Block Klebezettel; die Reihenfolge der Tische steht als Pfeile an der Tafel. Zum Umschalten nach der Pause einmal gemeinsam ausatmen und die Regel nennen: An den Plakaten wird geflüstert. Die Gruppen gehen zum nächsten Plakat. Eine Person liest den Satz der Figur so vor, als wäre sie die Figur; eine andere antwortet ihr leise als gute Freundin oder guter Freund. Die Gruppe einigt sich auf den besten Freundes-Satz, eine Person schreibt ihn auf einen Klebezettel – an jedem Plakat jemand anderes. Alle drei Minuten gibt die Lehrkraft das Zeichen zum Weitergehen, bis jede Gruppe vier fremde Plakate gesehen hat (12 Min.). Zurück am eigenen Plakat wählt die Gruppe den Zettel, der der Figur am meisten helfen würde; eine Person sagt ihn der Klasse so, als spräche sie mit der Figur (4 Min.). Zum Schluss fragen (4 Min.): Was macht einen guten Freundes-Satz aus? An der Tafel festhalten: ehrlich, freundlich, kein Schönreden – er nimmt das Schwierige ernst und zeigt einen Ausweg.",
+            "text": "Die fünf Plakate liegen auf den Tischgruppen, dazu je ein Block Klebezettel; Pfeile an der Tafel zeigen die Reihenfolge. Zum Umschalten einmal gemeinsam ausatmen und die Regel nennen: An den Plakaten wird geflüstert. Am nächsten Plakat liest eine Person den Satz der Figur so vor, als wäre sie die Figur; eine andere antwortet leise als gute Freundin oder guter Freund. Die Gruppe einigt sich auf den besten Freundes-Satz, eine Person schreibt ihn auf einen Zettel – an jedem Plakat jemand anderes. Alle drei Minuten das Zeichen zum Weitergehen geben, bis jede Gruppe vier fremde Plakate gesehen hat (12 Min.). Zurück am eigenen Plakat wählt die Gruppe den hilfreichsten Zettel; eine Person sagt ihn der Klasse so, als spräche sie mit der Figur (4 Min.). Zum Schluss (4 Min.): Was macht einen guten Freundes-Satz aus? An der Tafel festhalten: ehrlich, freundlich, kein Schönreden – er nimmt das Schwierige ernst und zeigt einen Ausweg.",
             "sagen": [
               "Stellt euch vor, Ana ist eure Freundin und sagt euch diesen Satz. Was würdet ihr ihr wirklich sagen?",
               "‚Du bist die Beste‘ glaubt sie euch vielleicht nicht. Was würde sie euch glauben?",
@@ -389,7 +389,7 @@
             "titel": "Que dirait une bonne amie ?",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Les cinq affiches sont posées sur les îlots, avec un bloc de post-it sur chaque table ; l’ordre des tables est dessiné au tableau avec des flèches. Pour revenir au calme après la pause, expirer une fois tous ensemble et annoncer la règle : près des affiches, on chuchote. Les groupes passent à l’affiche suivante. Un jeune lit la phrase du personnage comme s’il était ce personnage ; un autre lui répond à voix basse, comme une bonne amie ou un bon ami. Le groupe se met d’accord sur la meilleure phrase d’ami, quelqu’un l’écrit sur un post-it – à chaque affiche, une autre personne. Toutes les trois minutes, l’enseignant·e donne le signal pour avancer, jusqu’à ce que chaque groupe ait vu quatre autres affiches (12 min). De retour à sa propre affiche, le groupe choisit le post-it qui aiderait le plus le personnage ; un jeune le dit à la classe comme s’il parlait au personnage (4 min). Pour finir, demander (4 min) : qu’est-ce qui fait une bonne phrase d’ami ? Noter au tableau : sincère, bienveillante, sans enjoliver – elle prend la difficulté au sérieux et montre une issue.",
+            "text": "Les cinq affiches sont posées sur les îlots, avec un bloc de post-it sur chaque table ; des flèches au tableau indiquent l’ordre. Pour revenir au calme, expirer une fois tous ensemble et annoncer la règle : près des affiches, on chuchote. À l’affiche suivante, un jeune lit la phrase du personnage comme s’il était ce personnage ; un autre lui répond à voix basse, comme une bonne amie ou un bon ami. Le groupe se met d’accord sur la meilleure phrase d’ami, quelqu’un l’écrit sur un post-it – à chaque affiche, une autre personne. Toutes les trois minutes, donner le signal pour avancer, jusqu’à ce que chaque groupe ait vu quatre autres affiches (12 min). De retour à sa propre affiche, le groupe choisit le post-it le plus utile ; un jeune le dit à la classe comme s’il parlait au personnage (4 min). Pour finir (4 min) : qu’est-ce qui fait une bonne phrase d’ami ? Noter au tableau : sincère, bienveillante, sans enjoliver – elle prend la difficulté au sérieux et montre une issue.",
             "sagen": [
               "Imaginez qu’Ana est votre amie et qu’elle vous dit cette phrase. Qu’est-ce que vous lui diriez vraiment ?",
               "Si vous lui dites “tu es la meilleure”, elle ne vous croira peut-être pas. Qu’est-ce qu’elle pourrait croire ?",
@@ -542,6 +542,9 @@
             "frage": "Stimmt er heute noch? So sehr glaube ich ihn:"
           },
           {
+            "art": "seitenumbruch"
+          },
+          {
             "art": "aufgabe",
             "text": "Wenn du magst: ein zweiter Satz.",
             "symbole": [
@@ -561,9 +564,6 @@
               "Wo bremst er mich?"
             ],
             "linien": 1
-          },
-          {
-            "art": "seitenumbruch"
           },
           {
             "art": "aufgabe",
@@ -601,7 +601,7 @@
           },
           {
             "art": "notfall",
-            "text": "Wenn dich ein Satz sehr runterzieht: Sprich mit dem SePAS oder einer Vertrauensperson – oder ruf an."
+            "text": "Wenn dich ein Satz runterzieht: Sprich mit dem SePAS oder ruf an."
           }
         ],
         "lehrer": {
@@ -680,6 +680,9 @@
             "frage": "Est-elle encore vraie ? J’y crois à ce point :"
           },
           {
+            "art": "seitenumbruch"
+          },
+          {
             "art": "aufgabe",
             "text": "Si tu veux : une deuxième phrase.",
             "symbole": [
@@ -699,9 +702,6 @@
               "Où est-ce qu’elle me freine ?"
             ],
             "linien": 1
-          },
-          {
-            "art": "seitenumbruch"
           },
           {
             "art": "aufgabe",
@@ -739,7 +739,7 @@
           },
           {
             "art": "notfall",
-            "text": "Si une phrase te tire vers le bas : parles-en au SePAS ou à une personne de confiance – ou appelle."
+            "text": "Si une phrase te tire vers le bas : parle au SePAS ou appelle."
           }
         ],
         "lehrer": {

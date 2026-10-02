@@ -213,7 +213,7 @@
             "sagen": [
               "Wir schaffen das nur zusammen – und nur, wenn alle auf alle achten."
             ],
-            "tipp": "Das Spiel klappt selten beim ersten Versuch, und das ist der Witz daran. Gelingt es nach drei Versuchen nicht, die Augen schließen lassen – dann hören alle besser hin."
+            "tipp": "Das Spiel klappt selten beim ersten Versuch, und das ist der Witz daran. Gelingt es nach drei Versuchen nicht, schließt, wer mag, die Augen – dann hören alle besser hin."
           },
           {
             "titel": "Die Zivilcourage-Leiter",
@@ -234,7 +234,7 @@
               "6 Direkt „Stopp“ sagen – nur, wenn es für dich sicher ist."
             ],
             "tipp": "Eine klare Antwort auf die Petzen-Frage hilft: Petzen will jemandem schaden, Hilfe holen will jemanden schützen. Bei wenig Platz liegt die Leiter auf dem Pult, und alle zeigen mit den Fingern ihre Stufe.",
-            "wennEsKippt": "Sagt jemand „Ich würde den einfach verhauen“, klar antworten: Gewalt ist keine Stufe der Leiter – sie macht alles gefährlicher, auch für dich. Behauptet jemand, er würde sich sofort dazwischenwerfen, einordnen: Stufe 6 ist nur richtig, wenn sie sicher ist – Hilfe holen ist oft die mutigere Wahl. Stellen sich alle aus Spaß auf Stufe 6, die nächste Karte im Sitzen mit geschlossenen Augen und Fingern zeigen lassen.",
+            "wennEsKippt": "Sagt jemand „Ich würde den einfach verhauen“, klar antworten: Gewalt ist keine Stufe der Leiter – sie macht alles gefährlicher, auch für dich. Behauptet jemand, er würde sich sofort dazwischenwerfen, einordnen: Stufe 6 ist nur richtig, wenn sie sicher ist – Hilfe holen ist oft die mutigere Wahl. Stellen sich alle aus Spaß auf Stufe 6, die nächste Karte im Sitzen, Blick auf den Tisch, mit den Fingern zeigen lassen.",
             "blatt": "ff7-mobbing-karten"
           },
           {
@@ -289,7 +289,7 @@
         ],
         "bruecke": "Nach den Ferien geht es um euer Handy: wie viel Zeit ihr wirklich am Bildschirm verbringt, was hinter perfekten Bildern steckt – und wie ein guter Handy-Plan aussieht.",
         "mission": "Sei bis zur nächsten Stunde einmal bewusst kein Publikum: nicht mitlachen, nichts weiterleiten – oder zeig jemandem, dass du auf seiner Seite bist.",
-        "hintergrund": "Olweus (1993) beschreibt Mobbing über drei Merkmale: wiederholte, absichtlich verletzende Handlungen und ein Ungleichgewicht der Kräfte, sodass sich die betroffene Person kaum wehren kann; das vierte Merkmal auf dem Blatt macht diese Folge sichtbar. Das unterscheidet Mobbing vom Konflikt zwischen ungefähr Gleichstarken, für den die Konflikt-Treppe gedacht ist. Mobbing ist zudem ein Gruppenprozess: Salmivalli et al. (1996) konnten den meisten Jugendlichen einer Klasse eine Rolle zuordnen – Täter, Helfer, Verstärker, Außenstehende, Verteidiger oder Betroffene. Wer lacht oder schweigt, sichert dem Täter Publikum. Viele Zuschauende lehnen Mobbing ab und greifen trotzdem nicht ein, oft aus Angst oder weil sie nicht wissen, was sie tun können. Programme wie KiVa setzen genau dort an und stärken die Zuschauenden; das senkte Mobbing messbar (Kärnä et al., 2011). Die Zivilcourage-Leiter gibt deshalb konkrete, sichere Schritte vor.",
+        "hintergrund": "Olweus (1993) beschreibt Mobbing über drei Merkmale: wiederholte, absichtlich verletzende Handlungen und ein Ungleichgewicht der Kräfte, sodass sich die betroffene Person kaum wehren kann – diese Folge ist auf dem Blatt das vierte Merkmal. Diese Merkmale unterscheiden Mobbing vom Konflikt zwischen ungefähr Gleichstarken, für den die Konflikt-Treppe gedacht ist. Mobbing ist zudem ein Gruppenprozess: Salmivalli et al. (1996) konnten den meisten Jugendlichen einer Klasse eine Rolle zuordnen – Täter, Helfer, Verstärker, Außenstehende, Verteidiger oder Betroffene. Wer lacht oder schweigt, sichert dem Täter Publikum. Viele Zuschauende lehnen Mobbing ab und greifen trotzdem nicht ein, oft aus Angst oder weil sie nicht wissen, was sie tun können. Programme wie KiVa setzen genau dort an und stärken die Zuschauenden; das senkte Mobbing messbar (Kärnä et al., 2011). Die Zivilcourage-Leiter gibt deshalb konkrete, sichere Schritte vor.",
         "quellen": [
           "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
           "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
@@ -478,7 +478,7 @@
             "sagen": [
               "On n’y arrive qu’ensemble – et seulement si tout le monde fait attention à tout le monde."
             ],
-            "tipp": "Le jeu marche rarement du premier coup, et c’est tout l’intérêt. Si ça ne marche pas après trois essais, faire fermer les yeux : on écoute alors mieux."
+            "tipp": "Le jeu marche rarement du premier coup, et c’est tout l’intérêt. Si ça ne marche pas après trois essais, qui le veut ferme les yeux : on écoute alors mieux."
           },
           {
             "titel": "L’échelle du courage civique",
@@ -499,7 +499,7 @@
               "6 Dire « Stop » directement – seulement si c’est sans danger pour toi."
             ],
             "tipp": "Une réponse claire à la question du « cafter » aide : cafter, c’est vouloir nuire à quelqu’un ; chercher de l’aide, c’est vouloir protéger quelqu’un. S’il y a peu de place, poser l’échelle sur le bureau, et chacun montre sa marche avec les doigts.",
-            "wennEsKippt": "Si quelqu’un dit « Moi, je le frappe », répondre clairement : la violence n’est pas une marche de l’échelle – elle rend tout plus dangereux, toi compris. Si quelqu’un affirme qu’il s’interposerait tout de suite, nuancer : la marche 6 n’est juste que si elle est sans danger – chercher de l’aide est souvent le choix le plus courageux. Si tout le monde se place sur la marche 6 pour rire, faire la carte suivante assis, les yeux fermés, en montrant avec les doigts.",
+            "wennEsKippt": "Si quelqu’un dit « Moi, je le frappe », répondre clairement : la violence n’est pas une marche de l’échelle – elle rend tout plus dangereux, toi compris. Si quelqu’un affirme qu’il s’interposerait tout de suite, nuancer : la marche 6 n’est juste que si elle est sans danger – chercher de l’aide est souvent le choix le plus courageux. Si tout le monde se place sur la marche 6 pour rire, faire la carte suivante assis, les yeux sur la table, en montrant avec les doigts.",
             "blatt": "ff7-mobbing-karten"
           },
           {
@@ -554,7 +554,7 @@
         ],
         "bruecke": "Après les vacances, on parle de votre portable : combien de temps vous passez vraiment sur l’écran, ce qui se cache derrière les images parfaites – et à quoi ressemble un bon plan portable.",
         "mission": "D’ici la prochaine séance, refuse une fois d’être le public : ne ris pas avec les autres, ne transfère rien – ou montre à quelqu’un que tu es de son côté.",
-        "hintergrund": "Olweus (1993) décrit le harcèlement par trois critères : des actes blessants, répétés et intentionnels, et un déséquilibre des forces qui empêche la personne visée de se défendre ; le quatrième critère de la fiche rend cette conséquence visible. C’est ce qui le distingue du conflit entre personnes à peu près aussi fortes, pour lequel l’escalier du conflit est prévu. Le harcèlement est aussi un processus de groupe : Salmivalli et al. (1996) ont pu attribuer un rôle à la plupart des jeunes d’une classe – meneur, suiveur, supporter, témoin passif, défenseur ou personne visée. Qui rit ou se tait offre un public au meneur. Beaucoup de témoins désapprouvent le harcèlement sans intervenir, souvent par peur ou parce qu’ils ne savent pas quoi faire. Des programmes comme KiVa agissent précisément là en renforçant les témoins, et le harcèlement a diminué de façon mesurable (Kärnä et al., 2011). L’échelle du courage civique propose donc des étapes concrètes et sans danger.",
+        "hintergrund": "Olweus (1993) décrit le harcèlement par trois critères : des actes blessants, répétés et intentionnels, et un déséquilibre des forces qui empêche la personne visée de se défendre – cette conséquence est le quatrième critère de la fiche. Ces critères le distinguent du conflit entre personnes à peu près aussi fortes, pour lequel l’escalier du conflit est prévu. Le harcèlement est aussi un processus de groupe : Salmivalli et al. (1996) ont pu attribuer un rôle à la plupart des jeunes d’une classe – meneur, suiveur, supporter, témoin passif, défenseur ou personne visée. Qui rit ou se tait offre un public au meneur. Beaucoup de témoins désapprouvent le harcèlement sans intervenir, souvent par peur ou faute de savoir quoi faire. Des programmes comme KiVa renforcent précisément les témoins, et le harcèlement a diminué de façon mesurable (Kärnä et al., 2011). L’échelle du courage civique propose donc des étapes concrètes et sans danger.",
         "quellen": [
           "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
           "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
@@ -869,7 +869,7 @@
           },
           {
             "art": "notfall",
-            "text": "Tu es toi-même harcelé·e ? Ce n’est pas ta faute. Ici, tu trouves de l’aide – même anonyme."
+            "text": "Tu es harcelé·e ? Ce n’est pas ta faute. Voici de l’aide, même anonyme."
           }
         ],
         "lehrer": {
