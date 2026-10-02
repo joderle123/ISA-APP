@@ -40,7 +40,7 @@
           "unterscheiden Bedürfnisse von Wünschen und ordnen sie sechs Tanks zu",
           "füllen anonym das Glas der Klasse und sehen, welche Bedürfnisse viele teilen",
           "schätzen ein, wie voll ihre eigenen Tanks gerade sind, und finden den leersten",
-          "planen einen kleinen Schritt, der einen Tank in dieser Woche etwas auffüllt"
+          "planen einen kleinen Schritt als Wenn-dann-Plan und wählen den Moment, in dem sie ihn diese Woche machen"
         ],
         "material": [
           "Schülerheft, blaue Stifte (Kuli reicht)",
@@ -102,7 +102,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass und Wochen-Mission"
+            "titel": "Skills-Pass, Mission und Moment wählen"
           }
         ],
         "schritte": [
@@ -122,7 +122,7 @@
             "titel": "Rückblick und Start ins Kapitel „Wer bin ich?“",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Kurz nach der Wochen-Mission fragen: Wer hat darauf geachtet, was in der Klasse gut läuft, und einen Zettel für den Briefkasten geschrieben? Daumen hoch, Mitte oder runter – eine Stimme erzählt ohne Namen, niemand muss sie geschafft haben; der Klassenrat tagt wieder in Stunde 9. Dann das neue Kapitel an die Seitentafel schreiben: Wer bin ich? – Was brauche ich, was kann ich? Die drei Stunden ankündigen: heute, was ihr braucht; nächste Woche, wie ihr seid; danach, was ihr könnt. Zum Schluss auf die Klassenvereinbarung zeigen: Was ihr heute über euch herausfindet, bleibt anonym oder in eurem Heft.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission fragen: Kam euer Moment – Pause, Gruppenarbeit, Heimweg –, und habt ihr hingeschaut, was in der Klasse gut läuft? Daumen hoch, Mitte oder runter – eine Stimme erzählt ohne Namen; niemand muss den Moment erlebt haben. Die Zettel für den Briefkasten liegen daneben, der Klassenrat tagt wieder in Stunde 9. Dann das neue Kapitel an die Seitentafel schreiben: Wer bin ich? – Was brauche ich, was kann ich? Die drei Stunden ankündigen: heute, was ihr braucht; nächste Woche, wie ihr seid; danach, was ihr könnt. Zum Schluss auf die Klassenvereinbarung zeigen: Was ihr heute über euch herausfindet, bleibt anonym oder in eurem Heft.",
             "sagen": [
               "Bisher ging es um uns als Klasse. Ab heute schaut jede und jeder auf sich selbst.",
               "Die Frage für heute: Was braucht ihr, damit es euch gut geht?"
@@ -226,9 +226,10 @@
             "titel": "Ideen-Karussell und mein kleiner Schritt",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Die Hefte bleiben geschlossen. Jede Tischgruppe bekommt ein Tank-Plakat mit der Frage: Was füllt diesen Tank – in zehn Minuten, ohne Geld? In 90 Sekunden schreibt sie Ideen dazu, dann wandert das Plakat zum nächsten Tisch, die Gruppen bleiben sitzen; gute Ideen der anderen bekommen einen Haken (fünf Runden, 8 Min.). Danach hängen die Plakate neben dem Plakat Sicherheit an der Wand (2 Min.). Am Platz wählt jede Person eine Idee für ihren eingekreisten Tank – oder einen anderen – und schreibt nach dem Beispiel einen Wenn-dann-Plan aufs Blatt (7 Min.). Zum Schluss nennen drei, vier Freiwillige ihren Schritt, nicht den Grund (3 Min.).",
+            "text": "Die Hefte bleiben geschlossen. Jede Tischgruppe bekommt ein Tank-Plakat mit der Frage: Was füllt diesen Tank – in zehn Minuten, ohne Geld? In 90 Sekunden schreibt sie Ideen dazu, dann wandert das Plakat zum nächsten Tisch, die Gruppen bleiben sitzen; gute Ideen der anderen bekommen einen Haken (fünf Runden, 8 Min.). Danach hängen die Plakate neben dem Plakat Sicherheit an der Wand (2 Min.). Am Platz wählt jede Person eine Idee für ihren eingekreisten Tank – oder einen anderen – und schreibt nach dem Beispiel einen Wenn-dann-Plan aufs Blatt. Die Wenn-Zeile ist der Moment, in dem der Schritt passiert: ein fester Ort oder eine feste Zeit, nicht ‚irgendwann diese Woche‘ (7 Min.). Zum Schluss nennen drei, vier Freiwillige ihren Schritt, nicht den Grund (3 Min.).",
             "sagen": [
               "Klein heißt: in zehn Minuten machbar, ohne Geld – und ihr könnt ihn selbst anfangen.",
+              "Die Wenn-Zeile ist der wichtigste Teil: ‚Wenn ich nach der Schule nach Hause komme‘ ist ein Moment – ‚irgendwann diese Woche‘ nicht.",
               "Wer mag, nennt seinen Schritt – nur den Schritt, nicht den Grund."
             ],
             "tipp": "Das Plakat Sicherheit beginnt die Lehrkraft selbst – etwa mit „mit jemandem reden, dem ich vertraue, auch beim SePAS“ und „wissen, was morgen kommt“ –, denn diesen Tank füllt man selten allein. Auch „zocken“ darf auf ein Plakat, wenn es wirklich einen Tank füllt; dann fragen, wie lange es guttut.",
@@ -252,30 +253,33 @@
             "wennEsKippt": "Wird gekichert oder übertrieben laut ausgeatmet, eine Runde mit offenen Augen machen und mit leiser Stimme weiterzählen. Wer nicht mitmachen möchte, sitzt still dabei. Wer Asthma hat oder das Anhalten nicht mag, atmet nur langsam aus."
           },
           {
-            "titel": "Skills-Pass und Wochen-Mission",
+            "titel": "Skills-Pass, Mission und Moment wählen",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Was füllt meinen Tank? Jede Person schreibt einen Satz (2 Min.) und bekommt den Stempel; zwei Freiwillige lesen vor. Dann die Wochen-Mission im Heft zeigen und in einem Satz ansagen: den kleinen Schritt einmal ausprobieren – oder die 4-7-8-Atmung abends im Bett. Zum Schluss auf das Glas zeigen und den Ausblick auf die nächste Stunde geben.",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Was füllt meinen Tank? Jede Person schreibt einen Satz und bekommt den Stempel; zwei Freiwillige lesen vor. Mission und Moment wählen (2 Min.): die Wochen-Mission im Heft zeigen und ansagen – den kleinen Schritt machen, wenn der Moment aus dem Plan kommt, oder die 4-7-8-Atmung. Auf ‚drei‘ zeigen alle: ein Finger für den kleinen Schritt, zwei für die Atmung, Faust für beides. Dann schreibt jede Person ihren Moment in die Spalte „Mein Moment: Wenn …“ bei den Wochen-Missionen: die Wenn-Zeile vom Blatt – wer die Atmung nimmt, zum Beispiel ‚wenn ich abends im Bett liege‘. Ausblick (1 Min.): auf das Glas zeigen und die nächste Stunde ankündigen.",
             "sagen": [
-              "Ein Satz für den Pass: Was füllt euren Tank? Es darf euer kleiner Schritt sein oder die Atmung."
+              "Ein Satz für den Pass: Was füllt euren Tank? Es darf euer kleiner Schritt sein oder die Atmung.",
+              "Euer Moment steht schon auf dem Blatt – in der Wenn-Zeile. Schreibt ihn ins Heft: Wenn …, dann mein kleiner Schritt. Wer die Atmung nimmt: Wenn ich abends im Bett liege, dann 4-7-8."
             ],
-            "tipp": "Nach der Stunde die übrigen Zettel still lesen, die Striche ergänzen, die Tafel fotografieren und das Glas einschließen: Das Foto hängt nächste Woche neben den Plakaten und kommt in Stunde 17 wieder hervor."
+            "tipp": "Der Moment ist der eigentliche Plan: Ein Schritt mit festem Auslöser wird eher gemacht als ein guter Vorsatz – nächste Woche fragt die Brücke danach, ohne Kontrolle. Nach der Stunde die übrigen Zettel still lesen, die Striche ergänzen, die Tafel fotografieren und das Glas einschließen: Das Foto hängt nächste Woche neben den Plakaten und kommt in Stunde 17 wieder hervor.",
+            "wennEsKippt": "Hat jemand den Plan für Noah geschrieben, nimmt er für sich die Atmung und den Moment ‚abends im Bett‘. Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Wird es beim Zeigen albern („mein Moment ist nie“), gelassen bleiben: Ein ernst gemeinter Moment reicht, auch ein kleiner."
           }
         ],
         "bruecke": "Nächste Woche geht es darum, wie ihr seid: eher laut oder eher leise, eher spontan oder eher geplant – und warum eine Klasse beide Seiten braucht.",
-        "mission": "Probiere diese Woche deinen kleinen Schritt einmal aus – oder die 4-7-8-Atmung abends im Bett. Fühlt sich der Tank danach etwas voller an?",
-        "hintergrund": "Hinter vielen Gefühlen und Verhaltensweisen stehen Bedürfnisse. Maslow (1943) beschrieb Bereiche vom Körper über Sicherheit, Zugehörigkeit und Anerkennung bis zur Selbstverwirklichung; seine strenge Stufenfolge gilt heute als überholt, die Bereiche selbst nicht. Nach der Selbstbestimmungstheorie geht es Menschen besser, und sie lernen motivierter, wenn drei Grundbedürfnisse erfüllt sind: Autonomie, Kompetenz und Verbundenheit (Deci & Ryan, 2000). Die sechs Tanks fassen diese Modelle jugendgerecht zusammen und machen Gefühle lesbar: Wer gereizt ist, hat vielleicht nur einen leeren Körper-Tank. Die Gewaltfreie Kommunikation unterscheidet Bedürfnisse von den Strategien, mit denen man sie erfüllen will (Rosenberg, 2001): Hinter dem Wunsch nach neuen Sneakers kann Dazugehören stehen, und dafür gibt es mehr als einen Weg. Das anonyme Glas zeigt der Klasse, wie viel sie teilt, ohne dass jemand etwas preisgibt.",
+        "mission": "Wenn dein Moment kommt – der aus deinem Plan –, dann mach deinen kleinen Schritt. Oder: Wenn du abends im Bett liegst, dann 4-7-8-Atmung. Ist der Tank danach etwas voller?",
+        "hintergrund": "Hinter vielen Gefühlen stehen Bedürfnisse. Grundlage ist die Selbstbestimmungstheorie: Menschen geht es besser, und sie lernen motivierter, wenn drei Grundbedürfnisse erfüllt sind – sich fähig erleben, selbst entscheiden, dazugehören (Deci & Ryan, 2000). Grawe (2004) ergänzt Bindung, Orientierung und Kontrolle, Selbstwert und Lustgewinn; werden sie dauerhaft verletzt, entsteht Belastung. Die Tanks nehmen Maslows Bereiche auf (Maslow, 1943); die strenge Stufenfolge gilt als überholt. So werden Gefühle lesbar: Wer gereizt ist, hat vielleicht nur einen leeren Körper-Tank; hinter dem Wunsch nach Sneakers kann Dazugehören stehen. Der kleine Schritt ist ein Wenn-dann-Plan mit selbst gewähltem Moment – solche Vorsätze werden deutlich häufiger umgesetzt als gute Absichten (Gollwitzer & Sheeran, 2006). Das anonyme Glas zeigt, wie viel die Klasse teilt, ohne dass jemand etwas preisgibt.",
         "quellen": [
-          "Maslow, A. H. (1943). A theory of human motivation. Psychological Review, 50(4), 370–396.",
           "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
-          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+          "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe.",
+          "Maslow, A. H. (1943). A theory of human motivation. Psychological Review, 50(4), 370–396.",
+          "Gollwitzer, P. M. & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119."
         ],
         "achtung": "Das Thema kann Mangel sichtbar machen: kein sicheres Zuhause, zu wenig Essen oder Schlaf, niemand, der zu einem hält. Nichts davon wird vor der Klasse vertieft. Die Zettel zuerst still lesen und nur Allgemeines vorlesen; Hinweise auf Gefahr nie vorlesen, nicht nach dem Schreiber forschen und noch am selben Tag mit dem SePAS besprechen, nach dem Schutzkonzept der Schule. Das Glas bleibt verschlossen im Schrank, die Pegel im Heft sind privat. Zeichnet jemand fast alle Tanks leer, nach der Stunde kurz nachfragen. Beim Atmen ist das Anhalten freiwillig.",
         "differenzierung": {
-          "leichter": "Für Jugendliche, die mühsam schreiben oder die Sprache noch lernen: Auf einen Zettel darf ein einzelnes Wort von der Tafel oder eine kleine Zeichnung – kein Wort in der eigenen Sprache, das würde die Person verraten. Im Heft darf dagegen alles in der eigenen Sprache stehen; für den Plan reicht eine Idee mit Haken vom Plakat.",
+          "leichter": "Für Jugendliche, die mühsam schreiben oder die Sprache noch lernen: Auf einen Zettel darf ein einzelnes Wort von der Tafel oder eine kleine Zeichnung – kein Wort in der eigenen Sprache, das würde die Person verraten. Im Heft darf dagegen alles in der eigenen Sprache stehen; für den Plan reicht eine Idee mit Haken vom Plakat. Für die Spalte „Mein Moment“ reicht ein Wort oder ein kleines Zeichen: Bett, Bus, Tisch.",
           "schwerer": "Zu einem Wunsch aus dem Spiel zwei andere Wege finden, die denselben Tank füllen. Im Ideen-Karussell die Moderation einer Tischgruppe übernehmen und am Ende die drei besten Ideen eines Plakats vorstellen."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), die sechs Tanks und das Spiel ‚Welcher Tank steckt dahinter?‘ (10 Min.), das Glas der Klasse füllen und zehn Zettel vorlesen (15 Min.), meine Tanks einzeichnen und einen kleinen Schritt planen (12 Min.), 4-7-8-Atmung (3 Min.), Skills-Pass und Wochen-Mission (5 Min.). Vier Ecken und Ideen-Karussell entfallen; die Plakate mit den Ideen lassen sich in einer späteren Stunde nachholen."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt (5 Min.), die sechs Tanks und das Spiel ‚Welcher Tank steckt dahinter?‘ (10 Min.), das Glas der Klasse füllen und zehn Zettel vorlesen (15 Min.), meine Tanks einzeichnen und einen kleinen Schritt planen (12 Min.), 4-7-8-Atmung (3 Min.), Skills-Pass, Mission und Moment wählen (5 Min.). Vier Ecken und Ideen-Karussell entfallen; die Plakate mit den Ideen lassen sich in einer späteren Stunde nachholen."
       },
       "fr": {
         "titel": "Le bocal des besoins",
@@ -284,7 +288,7 @@
           "distinguent besoins et souhaits et les rangent dans six réservoirs",
           "remplissent anonymement le bocal de la classe et voient quels besoins beaucoup partagent",
           "évaluent le niveau de leurs propres réservoirs et repèrent le plus vide",
-          "prévoient un petit pas qui remplit un peu un réservoir cette semaine"
+          "prévoient un petit pas sous forme de plan « si… alors » et choisissent le moment où ils le feront cette semaine"
         ],
         "material": [
           "Cahier de l’élève, stylos bleus",
@@ -346,7 +350,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass et mission de la semaine"
+            "titel": "Skills-Pass, mission et choix du moment"
           }
         ],
         "schritte": [
@@ -366,7 +370,7 @@
             "titel": "Retour et début du chapitre « Qui suis-je ? »",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission de la semaine, vote du pouce : qui a observé ce qui va bien dans la classe et écrit un billet pour la boîte aux lettres – en haut, au milieu ou en bas ? Une personne raconte, sans nommer personne ; personne n’est obligé de l’avoir réussie, et le conseil se réunit de nouveau à la séance 9. Écrire ensuite le nouveau chapitre sur le tableau latéral : Qui suis-je ? – De quoi ai-je besoin, qu’est-ce que je sais faire ? Annoncer les trois séances : aujourd’hui, ce dont vous avez besoin ; la semaine prochaine, comment vous êtes ; ensuite, ce que vous savez faire. Pour finir, montrer la charte de classe : ce que vous découvrez aujourd’hui sur vous reste anonyme ou dans votre cahier.",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission de la semaine, demander : votre moment est-il arrivé – récré, travail de groupe, trajet du retour – et avez-vous observé ce qui va bien dans la classe ? Pouce en haut, au milieu ou en bas – une voix raconte, sans nommer personne ; personne n’est obligé d’avoir vécu son moment. Les billets pour la boîte aux lettres sont à côté d’elle, et le conseil se réunit de nouveau à la séance 9. Écrire ensuite le nouveau chapitre sur le tableau latéral : Qui suis-je ? – De quoi ai-je besoin, qu’est-ce que je sais faire ? Annoncer les trois séances : aujourd’hui, ce dont vous avez besoin ; la semaine prochaine, comment vous êtes ; ensuite, ce que vous savez faire. Pour finir, montrer la charte de classe : ce que vous découvrez aujourd’hui sur vous reste anonyme ou dans votre cahier.",
             "sagen": [
               "Jusqu’ici, on a parlé de nous en tant que classe. À partir d’aujourd’hui, chacun se regarde soi-même.",
               "La question du jour : de quoi avez-vous besoin pour aller bien ?"
@@ -470,9 +474,10 @@
             "titel": "Carrousel des idées et mon petit pas",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Les cahiers restent fermés. Chaque îlot reçoit une affiche de réservoir avec la question : qu’est-ce qui remplit ce réservoir – en dix minutes, sans argent ? En 90 secondes, il y ajoute des idées, puis l’affiche passe à la table suivante, les groupes restent assis ; les bonnes idées des autres reçoivent une coche (cinq tours, 8 min). Ensuite, les affiches rejoignent au mur l’affiche Sécurité (2 min). À sa place, chaque jeune choisit une idée pour le réservoir entouré – ou pour un autre – et écrit, d’après l’exemple, un plan « si… alors » sur la fiche (7 min). Pour finir, trois ou quatre volontaires disent leur petit pas, pas la raison (3 min).",
+            "text": "Les cahiers restent fermés. Chaque îlot reçoit une affiche de réservoir avec la question : qu’est-ce qui remplit ce réservoir – en dix minutes, sans argent ? En 90 secondes, il y ajoute des idées, puis l’affiche passe à la table suivante, les groupes restent assis ; les bonnes idées des autres reçoivent une coche (cinq tours, 8 min). Ensuite, les affiches rejoignent au mur l’affiche Sécurité (2 min). À sa place, chaque jeune choisit une idée pour le réservoir entouré – ou pour un autre – et écrit, d’après l’exemple, un plan « si… alors » sur la fiche. La ligne « si » est le moment où le pas se fait : un lieu ou une heure précise, pas « un jour cette semaine » (7 min). Pour finir, trois ou quatre volontaires disent leur petit pas, pas la raison (3 min).",
             "sagen": [
               "Petit veut dire : faisable en dix minutes, sans argent – et vous pouvez le commencer vous-mêmes.",
+              "La ligne « si » est la partie la plus importante : “quand je rentre de l’école” est un moment – “un jour cette semaine” n’en est pas un.",
               "Qui le souhaite dit son petit pas – juste le pas, pas la raison."
             ],
             "tipp": "L’affiche Sécurité, l’enseignant·e la commence soi-même – par exemple avec « parler à quelqu’un en qui j’ai confiance, aussi au SePAS » et « savoir ce qui m’attend demain » –, car ce réservoir se remplit rarement seul. « Jouer à la console » peut aller sur une affiche s’il remplit vraiment un réservoir ; demander alors combien de temps ça fait du bien.",
@@ -496,30 +501,33 @@
             "wennEsKippt": "Si la classe pouffe ou expire très fort pour faire rire, faire un tour les yeux ouverts et continuer à compter à voix basse. Qui ne veut pas participer reste assis en silence. Un jeune asthmatique ou qui n’aime pas retenir son souffle se contente d’expirer lentement."
           },
           {
-            "titel": "Skills-Pass et mission de la semaine",
+            "titel": "Skills-Pass, mission et choix du moment",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire la question du Skills-Pass au tableau : qu’est-ce qui remplit mon réservoir ? Chaque jeune écrit une phrase (2 min) et reçoit le tampon ; deux volontaires lisent la leur. Montrer ensuite la mission de la semaine dans le cahier et l’annoncer en une phrase : essayer une fois son petit pas – ou la respiration 4-7-8 le soir au lit. Pour finir, montrer le bocal et annoncer la prochaine séance.",
+            "text": "Skills-Pass (2 min) : écrire la question au tableau – qu’est-ce qui remplit mon réservoir ? Chaque jeune écrit une phrase et reçoit le tampon ; deux volontaires lisent la leur. Mission et choix du moment (2 min) : montrer la mission de la semaine dans le cahier et l’annoncer – faire son petit pas quand le moment du plan arrive, ou la respiration 4-7-8. À « trois », tout le monde montre : un doigt pour le petit pas, deux pour la respiration, le poing pour les deux. Puis chacun écrit son moment dans la colonne « Mon moment : quand … » des missions de la semaine : la ligne « si » de la fiche – qui prend la respiration écrit par exemple “quand je suis au lit le soir”. Pour finir (1 min) : montrer le bocal et annoncer la prochaine séance.",
             "sagen": [
-              "Une phrase pour le Skills-Pass : qu’est-ce qui remplit votre réservoir ? Ce peut être votre petit pas ou la respiration."
+              "Une phrase pour le Skills-Pass : qu’est-ce qui remplit votre réservoir ? Ce peut être votre petit pas ou la respiration.",
+              "Votre moment est déjà sur la fiche – dans la ligne « si ». Écrivez-le dans le cahier : quand…, alors mon petit pas. Qui prend la respiration : quand je suis au lit le soir, alors 4-7-8."
             ],
-            "tipp": "Après le cours, lire en silence les papiers restants, compléter les bâtons, photographier le tableau et ranger le bocal sous clé : la photo est affichée la semaine suivante près des affiches et ressort à la séance 17."
+            "tipp": "Le moment, c’est le vrai plan : un pas avec un déclencheur précis se fait plus souvent qu’une bonne résolution – la semaine prochaine, le lien y revient, sans contrôle. Après le cours, lire en silence les papiers restants, compléter les bâtons, photographier le tableau et ranger le bocal sous clé : la photo est affichée la semaine suivante près des affiches et ressort à la séance 17.",
+            "wennEsKippt": "Si un jeune a écrit le plan pour Noah, il prend pour lui la respiration et le moment “le soir au lit”. Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne lui posera la question. Si ça devient bête au moment de montrer (« mon moment, c’est jamais »), rester calme : un moment choisi sérieusement suffit, même petit."
           }
         ],
         "bruecke": "La semaine prochaine, on regarde comment vous êtes : plutôt expansifs ou plutôt réservés, plutôt spontanés ou plutôt organisés – et pourquoi une classe a besoin des deux.",
-        "mission": "Cette semaine, essaie une fois ton petit pas – ou la respiration 4-7-8 le soir au lit. Ton réservoir te semble-t-il un peu plus plein après ?",
-        "hintergrund": "Derrière beaucoup d’émotions et de comportements se cachent des besoins. Maslow (1943) a décrit des domaines allant du corps à l’accomplissement de soi, en passant par la sécurité, l’appartenance et la reconnaissance ; son ordre strict par étages est dépassé, pas les domaines. Selon la théorie de l’autodétermination, on va mieux et on apprend avec plus d’envie quand trois besoins de base sont satisfaits : autonomie, compétence et lien aux autres (Deci & Ryan, 2000). Les six réservoirs résument ces modèles et rendent les émotions lisibles : qui est irritable a peut-être juste le réservoir du corps vide. La communication non violente distingue les besoins des stratégies pour les satisfaire (Rosenberg, 2001) : derrière le souhait d’avoir de nouvelles baskets peut se cacher le besoin de faire partie du groupe, et il existe plus d’un chemin pour y arriver. Le bocal anonyme montre à la classe ce qu’elle partage, sans que personne se dévoile.",
+        "mission": "Quand ton moment arrive – celui de ton plan –, fais ton petit pas. Ou : quand tu es au lit le soir, respiration 4-7-8. Ton réservoir te semble-t-il un peu plus plein après ?",
+        "hintergrund": "Derrière beaucoup d’émotions se cachent des besoins. La base est la théorie de l’autodétermination : on va mieux et on apprend mieux quand trois besoins de base sont satisfaits – se sentir capable, décider soi-même, avoir sa place (Deci & Ryan, 2000). Grawe (2004) ajoute l’attachement, l’orientation et le contrôle, l’estime de soi et le plaisir ; frustrés durablement, ils font souffrir. Les réservoirs reprennent les domaines de Maslow (Maslow, 1943) ; l’ordre strict par étages est dépassé. Qui est irritable a peut-être juste le réservoir du corps vide ; derrière le souhait de baskets peut se cacher le besoin d’avoir sa place. Le petit pas est un plan « si… alors » avec un moment choisi par le jeune – ces résolutions sont bien plus souvent mises en œuvre que de bonnes intentions (Gollwitzer & Sheeran, 2006). Le bocal anonyme montre ce que la classe partage, sans que personne se dévoile.",
         "quellen": [
-          "Maslow, A. H. (1943). A theory of human motivation. Psychological Review, 50(4), 370–396.",
           "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
-          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann."
+          "Grawe, K. (2004). Neuropsychotherapie. Göttingen: Hogrefe.",
+          "Maslow, A. H. (1943). A theory of human motivation. Psychological Review, 50(4), 370–396.",
+          "Gollwitzer, P. M. & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119."
         ],
         "achtung": "Le thème peut révéler des manques : pas de sécurité à la maison, pas assez à manger ou de sommeil, personne sur qui compter. Rien de tout cela n’est approfondi devant la classe. Lire d’abord les papiers en silence et ne lire à voix haute que ce qui reste général ; ne jamais lire un signe de danger, ne pas chercher qui l’a écrit et en parler au SePAS le jour même, selon le protocole de protection de l’école. Le bocal reste fermé dans l’armoire, les niveaux dans le cahier sont privés. Si un jeune dessine presque tous ses réservoirs vides, lui parler brièvement après le cours. Retenir son souffle reste facultatif.",
         "differenzierung": {
-          "leichter": "Pour les jeunes qui ont du mal à écrire ou qui apprennent encore la langue : sur un papier, un seul mot recopié au tableau ou un petit dessin suffit – pas de mot dans leur langue, il les trahirait. Dans le cahier, en revanche, tout peut être écrit dans leur langue ; pour le plan, une idée cochée sur une affiche suffit.",
+          "leichter": "Pour les jeunes qui ont du mal à écrire ou qui apprennent encore la langue : sur un papier, un seul mot recopié au tableau ou un petit dessin suffit – pas de mot dans leur langue, il les trahirait. Dans le cahier, en revanche, tout peut être écrit dans leur langue ; pour le plan, une idée cochée sur une affiche suffit. Pour la colonne « Mon moment », un mot ou un petit dessin suffit : lit, bus, table.",
           "schwerer": "Pour un souhait du jeu, trouver deux autres chemins qui remplissent le même réservoir. Pendant le carrousel des idées, animer un îlot et présenter à la fin les trois meilleures idées d’une affiche."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), les six réservoirs et le jeu « Quel réservoir se cache derrière ? » (10 min), remplir le bocal de la classe et lire dix papiers (15 min), dessiner ses réservoirs et prévoir un petit pas (12 min), respiration 4-7-8 (3 min), Skills-Pass et mission de la semaine (5 min). Les quatre coins et le carrousel sont supprimés ; les affiches d’idées peuvent être rattrapées lors d’une séance ultérieure."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette (5 min), les six réservoirs et le jeu « Quel réservoir se cache derrière ? » (10 min), remplir le bocal de la classe et lire dix papiers (15 min), dessiner ses réservoirs et prévoir un petit pas (12 min), respiration 4-7-8 (3 min), Skills-Pass, mission et choix du moment (5 min). Les quatre coins et le carrousel sont supprimés ; les affiches d’idées peuvent être rattrapées lors d’une séance ultérieure."
       }
     }
   ],
@@ -614,7 +622,7 @@
           {
             "art": "aufgabe",
             "text": "Plane einen kleinen Schritt, der einen Tank diese Woche etwas auffüllt. Schreib einen Wenn-dann-Plan.",
-            "hinweis": "Klein heißt: in zehn Minuten machbar, ohne Geld – und du kannst ihn selbst anfangen.",
+            "hinweis": "Klein heißt: in zehn Minuten machbar, ohne Geld – und du kannst ihn selbst anfangen. Die Wenn-Zeile ist dein Moment: Schreib sie auch ins Heft bei den Wochen-Missionen.",
             "symbole": [
               "schreiben"
             ]
@@ -682,7 +690,7 @@
           "ziel": "Die Jugendlichen schätzen ein, wie voll ihre sechs Tanks sind, finden den leersten und planen einen kleinen Schritt. In Stunde 17 und 35 kommen neue Striche dazu.",
           "ablauf": [
             "Stunde 6, Schritt 3: die Geschichte vorlesen und den Kasten „Sechs Tanks“ mit dem Tafelbild verbinden; die Nummern gelten auch im Spiel.",
-            "Stunde 6, Schritt 6 (9 Min.): blaue Striche, den leersten Tank einkreisen, zwei Sätze; Schritt 7: Wenn-dann-Plan.",
+            "Stunde 6, Schritt 6 (9 Min.): blaue Striche, den leersten Tank einkreisen, zwei Sätze; Schritt 7: Wenn-dann-Plan – die Wenn-Zeile ist der Moment für die Wochen-Mission.",
             "Stunde 17: nach dem Öffnen des Glases grüne Striche und Aufgabe 3; Stunde 35: rote Striche und Aufgabe 4.",
             "Das Blatt bleibt im Heft und wird weder eingesammelt noch vorgelesen."
           ],
@@ -757,7 +765,7 @@
           {
             "art": "aufgabe",
             "text": "Prévois un petit pas qui remplit un peu un réservoir cette semaine. Écris un plan « si… alors ».",
-            "hinweis": "Petit veut dire : faisable en dix minutes, sans argent – et tu peux le commencer toi-même.",
+            "hinweis": "Petit veut dire : faisable en dix minutes, sans argent – et tu peux le commencer toi-même. La ligne « si » est ton moment : recopie-la aussi dans le cahier, aux missions de la semaine.",
             "symbole": [
               "schreiben"
             ]
@@ -827,7 +835,7 @@
           "ziel": "Les jeunes évaluent le niveau de leurs six réservoirs, repèrent le plus vide et prévoient un petit pas. Aux séances 17 et 35, de nouveaux traits s’ajoutent.",
           "ablauf": [
             "Séance 6, étape 3 : lire l’histoire et relier l’encadré « Six réservoirs » au tableau ; les numéros servent aussi pour le jeu.",
-            "Séance 6, étape 6 (9 min) : traits bleus, entourer le réservoir le plus vide, deux phrases ; étape 7 : plan « si… alors ».",
+            "Séance 6, étape 6 (9 min) : traits bleus, entourer le réservoir le plus vide, deux phrases ; étape 7 : plan « si… alors » – la ligne « si » est le moment de la mission de la semaine.",
             "Séance 17 : après l’ouverture du bocal, traits verts et exercice 3 ; séance 35 : traits rouges et exercice 4.",
             "La fiche reste dans le cahier ; elle n’est ni ramassée ni lue à voix haute."
           ],

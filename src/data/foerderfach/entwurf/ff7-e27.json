@@ -105,7 +105,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass und Wochen-Mission"
+            "titel": "Skills-Pass, Moment wählen und Wochen-Mission"
           }
         ],
         "schritte": [
@@ -125,12 +125,13 @@
             "titel": "Rückblick und neues Kapitel: Meine Gedanken",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Per Daumen nach der Wochen-Mission fragen: Wer hat eine Nachricht oder ein Gerücht geprüft, bevor er es geglaubt oder weitergesagt hat? Eine Stimme erzählt kurz, niemand muss es geschafft haben. Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was denke ich über mich – und stimmt das? Die vier Stunden ankündigen: heute entdecken, nächste Woche ganz privat auf die eigenen Sätze schauen, dann wie Detektive prüfen, zum Schluss neue Sätze ausprobieren.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann zur Wochen-Mission – erst fragen, wer etwas sagt und woher die Person es weiß, bevor man es glaubt oder weiterleitet: Kam euer Moment – jemand hat euch im Chat, auf dem Schulhof oder zu Hause etwas Krasses erzählt – und was habt ihr gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt kurz. Niemand muss die Mission geschafft haben, und „mein Moment kam nicht“ ist eine ehrliche Antwort. Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Was denke ich über mich – und stimmt das? Die Stunden des Kapitels ankündigen: heute entdecken, dann wie Detektive prüfen, zum Schluss neue Sätze ausprobieren – und, wenn die Wahlstunde gehalten wird, nächste Woche vorher eine ruhige Stunde ganz privat für die eigenen Sätze.",
             "sagen": [
+              "Kam euer Moment – und was habt ihr gemacht? Daumen, dann eine Stimme.",
               "Letzte Woche habt ihr Beiträge aus dem Netz geprüft: echt oder fake? Ab heute prüft ihr etwas, das noch näher dran ist – Sätze in eurem eigenen Kopf.",
               "Ihr müsst in diesem Kapitel nichts Persönliches erzählen. Wir arbeiten mit erfundenen Figuren und mit Karten."
             ],
-            "tipp": "Die vier Schritte des Kapitels als kleine Treppe am Rand der Tafel stehen lassen: entdecken – privat hinschauen – prüfen – ausprobieren. Wer weiß, was kommt, lässt sich leichter auf ein persönliches Thema ein."
+            "tipp": "Die Treppe des Kapitels am Rand der Tafel stehen lassen: entdecken – prüfen – ausprobieren, mit der Wahlstunde „privat hinschauen“ als Zwischenstufe. Wer weiß, was kommt, lässt sich leichter auf ein persönliches Thema ein. Zur Mission vor allem fragen, was schwierig war – sie wird nicht kontrolliert."
           },
           {
             "titel": "Ein Gedanke macht den Unterschied",
@@ -227,7 +228,7 @@
             "titel": "Kenne ich auch – Köpfe auf den Tisch",
             "dauer": 10,
             "phase": "uebung",
-            "text": "Erst einmal gemeinsam ausatmen, dann legen alle den Kopf auf die verschränkten Arme, die Augen zu oder auf die Tischplatte gerichtet. Die Regel vorher sagen: Wer einen Satz über sich selbst schon einmal gedacht hat, streckt kurz den Daumen hoch – die Hand bleibt neben dem Kopf auf dem Tisch, nicht in der Luft. Die Lehrkraft liest die Sätze langsam vor (Liste), wartet nach jedem einige Sekunden und sagt nur, wie viele es ungefähr sind – ziemlich viele, fast alle, einige –, ohne Namen und ohne Kommentar (6 Min.). Danach setzen sich alle wieder auf. Fragen: Was fällt euch auf? Festhalten: Bremsende Sätze sind normal, und niemand ist allein damit – auch Erwachsene kennen sie (3 Min.). Einen bremsenden Satz für den Skill an der Tafel stehen lassen.",
+            "text": "Erst einmal gemeinsam ausatmen, dann legen alle den Kopf auf die verschränkten Arme, die Augen zu oder auf die Tischplatte gerichtet; wer den Kopf nicht ablegen mag, schaut einfach auf den Tisch – das zählt genauso (1 Min.). Die Regel vorher sagen: Wer einen Satz über sich selbst schon einmal gedacht hat, streckt kurz den Daumen hoch – die Hand bleibt neben dem Kopf auf dem Tisch, nicht in der Luft. Die Lehrkraft liest die Sätze langsam vor (Liste), wartet nach jedem einige Sekunden und sagt nur, wie viele es ungefähr sind – ziemlich viele, fast alle, einige –, ohne Namen und ohne Kommentar; länger als vier Minuten bleibt kein Kopf unten (4 Min.). Danach setzen sich alle wieder auf. Fragen: Was fällt euch auf? Festhalten: Bremsende Sätze sind normal, und niemand ist allein damit – auch Erwachsene kennen sie (4 Min.). Einen bremsenden Satz für den Skill an der Tafel stehen lassen (1 Min.).",
             "sagen": [
               "Nur ich sehe die Daumen, und ich sage nur ungefähr, wie viele. Ihr dürft bei jedem Satz die Hand still liegen lassen.",
               "Was fällt euch auf? Viele von uns kennen dieselben Sätze – die bremsenden und die hilfreichen."
@@ -249,7 +250,7 @@
             "titel": "Skill: Danke, Kopf",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: ein Kopf-Skill für Momente, in denen ein bremsender Satz laut wird und keine Zeit zum Prüfen bleibt. Alle sitzen bequem, die Füße auf dem Boden. Mit dem Satz von der Tafel, etwa „Das schaffe ich eh nicht“, die drei Schritte langsam anleiten (Liste); alle sprechen innerlich mit, je etwa eine halbe Minute. Zweite Runde: Jede Person wählt still einen Satz von den Karten und macht die Schritte allein. Dritte Runde, wer mag: den Satz innerlich von einer Navi-Stimme, einem Sportreporter oder einer Zeichentrickfigur sagen lassen. Danach zwei, drei Rückmeldungen: Was hat sich verändert, und wann könnte das helfen – vor einem Test, im Bus, abends im Bett? Erklären: Der Satz ist noch da, aber ihr schaut ihn von außen an. Wegdrücken klappt nicht, das kennt die Klasse vom Eisbären aus Einheit 16; ob ein Satz stimmt, prüft sie in zwei Wochen als Detektive.",
+            "text": "Ankündigen: ein Kopf-Skill für Momente, in denen ein bremsender Satz laut wird und keine Zeit zum Prüfen bleibt. Alle sitzen bequem, die Füße auf dem Boden. Mit dem Satz von der Tafel, etwa „Das schaffe ich eh nicht“, die drei Schritte langsam anleiten (Liste); alle sprechen innerlich mit, je etwa eine halbe Minute. Zweite Runde: Jede Person wählt still einen Satz von den Karten und macht die Schritte allein. Dritte Runde, wer mag: den Satz innerlich von einer Navi-Stimme, einem Sportreporter oder einer Zeichentrickfigur sagen lassen. Danach zwei, drei Rückmeldungen: Was hat sich verändert, und wann könnte das helfen – vor einem Test, im Bus, abends im Bett? Erklären: Der Satz ist noch da, aber ihr schaut ihn von außen an. Wegdrücken klappt nicht, das kennt die Klasse vom Eisbären aus Einheit 16; ob ein Satz stimmt, prüft sie in der Detektiv-Stunde.",
             "sagen": [
               "Der Satz muss nicht weg. Ihr rückt nur einen Schritt von ihm ab – wie von einem Bildschirm, vor dem man zu nah sitzt.",
               "Das ist ein Skill für Alltagssätze. Wenn Gedanken richtig schwer werden, braucht es keinen Trick, sondern ein Gespräch – mit mir oder mit dem SePAS."
@@ -259,34 +260,36 @@
               "Setz davor: „Mein Kopf sagt gerade: …“",
               "Antworte ihm: „Danke, Kopf. Hab’s gehört.“ – und mach weiter mit dem, was du gerade tust."
             ],
-            "tipp": "Die fremde Stimme ist kein Witz auf Kosten des Themas: Ein Satz, den ein Navi oder ein Sportreporter sagt, verliert sofort an Gewicht – und Ältere finden das weniger kindisch als eine Zeichentrickfigur. Die Satzanfänge sind bewusst einfach; wer die Unterrichtssprache noch lernt, kann sie nutzen oder in der eigenen Sprache denken.",
+            "tipp": "Die fremde Stimme ist kein Witz auf Kosten des Themas: Ein Satz, den ein Navi oder ein Sportreporter sagt, verliert sofort an Gewicht – und Ältere finden das weniger kindisch als eine Zeichentrickfigur. Variante für die dritte Runde: das härteste Wort des Satzes – etwa „dumm“ – eine halbe Minute lang leise und schnell hintereinander sagen, bis es nur noch ein Klang ist – Gelächter dabei gehört zum Effekt; genau diese alte Übung wurde geprüft und nimmt dem Wort messbar Gewicht (Kasten auf dem Blatt). Die Satzanfänge sind bewusst einfach; wer die Unterrichtssprache noch lernt, kann sie nutzen oder in der eigenen Sprache denken.",
             "wennEsKippt": "Wird bei den Stimmen laut gelacht, kurz mitlachen und still wiederholen: innerlich, nicht laut. Wer mit einem Satz von den Karten nicht arbeiten mag, bleibt bei dem Satz von der Tafel. Niemand muss die Augen schließen."
           },
           {
-            "titel": "Skills-Pass und Wochen-Mission",
+            "titel": "Skills-Pass, Moment wählen und Wochen-Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Welcher Satz von heute bleibt bei mir hängen? Beispiel: Gedanken sind Vermutungen, keine Tatsachen. Jede Person schreibt ihren Satz (2 Min.); die Lehrkraft geht mit dem Stempel herum. Dann die Wochen-Mission im Heft ansagen und den Ausblick geben; ausdrücklich sagen, dass nächste Woche niemand etwas vorlesen muss.",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Welcher Satz von heute bleibt bei mir hängen? Beispiel: Gedanken sind Vermutungen, keine Tatsachen. Jede Person schreibt ihren Satz, die Lehrkraft geht mit dem Stempel herum. Moment wählen (1 Min.): die Wochen-Mission im Heft vorlesen – wenn mein Moment kommt, dann ertappe ich den ersten Gedanken und frage mich, welcher andere auch passen würde. Auf drei zeigen alle, wo ihr Moment am ehesten kommt: ein Finger für eine Nachricht ohne Antwort, zwei für ein Lachen oder einen Blick, der komisch wirkt, drei für einen Test oder eine Note, die Faust für einen eigenen Moment; dann schreibt jede Person ihren Moment in die Spalte „Mein Moment: Wenn …“, ein Stichwort reicht. Ausblick (2 Min.): Wird die Wahlstunde gehalten, ausdrücklich sagen, dass nächste Woche niemand etwas vorlesen muss; sonst ankündigen, dass die Klasse nächste Woche Detektive wird.",
             "sagen": [
-              "Nächste Woche schreibt jede und jeder nur für sich. Das Blatt bleibt bei euch – niemand sammelt es ein, niemand liest es vor."
+              "Eure Mission: Wenn euer Moment kommt – eine Nachricht ohne Antwort, ein Lachen, ein Test –, dann ertappt ihr den ersten Gedanken und fragt euch: Welcher andere würde auch passen? Wählt jetzt euren Moment.",
+              "Kommt der Moment diese Woche nicht, ist das auch eine Auskunft. Ich frage nächste Woche nur: Kam er – und was habt ihr gemacht?"
             ],
-            "tipp": "Die sortierten Felder einer Gruppe fotografieren und die Umschläge aufheben: Die Karten werden in den nächsten Stunden wieder gebraucht, bis zum Glaubenssatz-Baum in Einheit 30."
+            "tipp": "Die sortierten Felder einer Gruppe fotografieren und die Umschläge aufheben: Die Karten werden in den nächsten Stunden wieder gebraucht, bis zum Glaubenssatz-Baum in Einheit 30. Ein Moment, der sicher kommt – der Klassenchat am Abend, die nächste Rückgabe eines Tests –, trägt die Mission besser als „irgendwann diese Woche“.",
+            "wennEsKippt": "Nennt jemand einen Scherz-Moment, gelten lassen, wenn er ernst gemeint ist: Jeder echte Moment zählt. Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Wer die Sprache noch lernt oder nicht schreiben mag, malt ein kleines Zeichen für seinen Moment: Handy, Gesicht, Blatt."
           }
         ],
-        "bruecke": "Nächste Woche schaut jede und jeder in Ruhe und ganz für sich auf die eigenen bremsenden Sätze: woher sie kommen und ob sie heute noch stimmen. Niemand muss etwas vorlesen.",
-        "mission": "Ertapp diese Woche einen schnellen Gedanken – etwa bei einer Nachricht ohne Antwort. Frag dich: Welcher andere Gedanke würde auch passen?",
-        "hintergrund": "Die Stunde beruht auf dem Grundmodell der kognitiven Verhaltenstherapie: Nicht eine Situation allein löst Gefühle und Verhalten aus, sondern der Gedanke, mit dem man sie bewertet. Beck (2011) unterscheidet dabei schnelle, situative Gedanken von tiefer liegenden Grundüberzeugungen über die eigene Person – im Fach heißen sie Glaubenssätze. Sie färben, welcher Gedanke in einer Situation zuerst auftaucht. Im Jugendalter wird das Selbstbild abstrakter, der Vergleich mit Gleichaltrigen wichtiger und die Selbstbewertung oft strenger (Harter, 2012). Deshalb arbeitet die Klasse zuerst mit erfundenen Figuren und Karten; die Erfahrung, dass viele dieselben Sätze kennen, entlastet. Der Skill stammt aus der Akzeptanz- und Commitment-Therapie: Wer einen Gedanken als Gedanken benennt, gewinnt Abstand zu ihm, ohne ihn wegdrücken zu müssen (Hayes et al., 2012).",
+        "bruecke": "Nächste Woche schaut jede und jeder in Ruhe und nur für sich auf die eigenen bremsenden Sätze – niemand liest etwas vor. Ohne die Wahlstunde: Nächste Woche werdet ihr Detektive und prüft mit Beweisen, ob so ein Satz wirklich stimmt.",
+        "mission": "Wenn dein Moment kommt – eine Nachricht ohne Antwort, ein Lachen, ein Test –, dann ertapp deinen ersten Gedanken und frag dich: Welcher andere würde auch passen?",
+        "hintergrund": "Grundlage ist das ABC-Modell der kognitiven Therapie: Zwischen Situation (A) und Gefühl und Verhalten (C) steht die Bewertung (B) – ein Gedanke, den oft eine Grundüberzeugung über sich selbst färbt, im Fach Glaubenssatz genannt (Ellis, 1962; Beck, 2011). Reine Gedankenarbeit in Lehrkrafthand wirkte in großen Schulstudien kaum (Stallard et al., 2014). Deshalb bleibt die Stunde kurz, arbeitet an Figuren und Karten und endet mit einem Skill, der auch ohne Therapeutin wirkt: Defusion aus der Akzeptanz- und Commitment-Therapie – einen Gedanken als Gedanken benennen und Abstand gewinnen, statt ihn zu bekämpfen (Hayes, Strosahl & Wilson, 2012). Masuda et al. (2004) zeigten, dass schon eine halbe Minute einer solchen Übung einem harten Wort über sich messbar Glaubwürdigkeit und Schmerz nimmt – daher der Kasten „Aus der Forschung“.",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
-          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
-          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford."
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+          "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
         ],
         "achtung": "Glaubenssätze berühren das Selbstwertgefühl. Eigene Sätze werden heute nicht erfragt; bei „Kenne ich auch“ nur die vorgegebenen Sätze, Köpfe unten, keine Namen, kein Kommentar. Karten nie Personen aus der Klasse zuschreiben lassen. Fallen Sätze starker Selbstabwertung – etwa, nichts wert zu sein oder dass es ohne einen besser wäre –, nicht vor der Klasse vertiefen: nach der Stunde unter vier Augen ansprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Bei akuter Gefahr nicht allein lassen, 112.",
         "differenzierung": {
-          "leichter": "Aufgabe 2 und 3 im Tandem mit einer Person, die gut liest; bei Aufgabe 3 reichen Stichworte oder Gefühlswörter vom Rad. Beim Sortierspiel liest ein Gruppenmitglied die Karten vor, die Person legt. Den Wortspeicher an der Tafel stehen lassen; wer die Unterrichtssprache noch lernt, darf Gedanken in der eigenen Sprache notieren.",
+          "leichter": "Aufgabe 2 und 3 im Tandem mit einer Person, die gut liest; bei Aufgabe 3 reichen Stichworte oder Gefühlswörter vom Rad. Beim Sortierspiel liest ein Gruppenmitglied die Karten vor, die Person legt. Den Wortspeicher an der Tafel stehen lassen; wer die Unterrichtssprache noch lernt, darf Gedanken in der eigenen Sprache notieren. Für die Spalte „Mein Moment“ reicht ein Wort oder ein Zeichen.",
           "schwerer": "Zu Aufgabe 3 einen zweiten Gedanken aufschreiben, der realistisch ist und trotzdem hilft; zu Aufgabe 4 überlegen, was Mila glauben müsste, damit sie es beim nächsten Test anders macht. Beim Sortierspiel die Moderation übernehmen und für die Karten im Feld „kommt drauf an“ eine Lage finden, in der sie helfen, und eine, in der sie bremsen."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gefühl und Zahl (5 Min.), Ben zweimal gespielt, mit Tafelbild und kurzer Erklärung der Glaubenssätze (12 Min.), Aufgaben 2 und 4 des Blatts (8 Min.), Sortierspiel ohne Herkunft (15 Min.), Danke, Kopf (5 Min.), Skills-Pass und Wochen-Mission (5 Min.). „Kenne ich auch“ entfällt oder eröffnet die nächste Stunde."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gefühl und Zahl (5 Min.), Ben zweimal gespielt, mit Tafelbild und kurzer Erklärung der Glaubenssätze (12 Min.), Aufgaben 2 und 4 des Blatts (8 Min.), Sortierspiel ohne Herkunft (15 Min.), Danke, Kopf (5 Min.), Skills-Pass, Moment wählen und Wochen-Mission (5 Min.). „Kenne ich auch“ entfällt oder eröffnet die nächste Stunde."
       },
       "fr": {
         "titel": "C’est quoi, une croyance ?",
@@ -357,7 +360,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass et mission de la semaine"
+            "titel": "Skills-Pass, choisir son moment et mission de la semaine"
           }
         ],
         "schritte": [
@@ -377,12 +380,13 @@
             "titel": "Retour et nouveau chapitre : mes pensées",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Demander avec le pouce où en est la mission de la semaine : qui a vérifié une info ou une rumeur avant de la croire ou de la répéter ? Une voix raconte brièvement, personne n’est obligé de l’avoir réussie. Puis ouvrir le nouveau chapitre et écrire la question clé au tableau : qu’est-ce que je pense de moi – et est-ce vrai ? Annoncer les quatre séances : aujourd’hui découvrir, la semaine prochaine regarder ses propres phrases en privé, ensuite les examiner comme des détectives, pour finir essayer de nouvelles phrases.",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Puis la mission de la semaine – demander d’abord qui dit ça et comment la personne peut le savoir, avant de croire ou de transférer : votre moment est-il venu – quelqu’un vous a raconté un truc énorme dans le groupe de classe, dans la cour ou à la maison – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas ; une voix raconte brièvement. Personne n’est obligé d’avoir réussi la mission, et « mon moment n’est pas venu » est une réponse honnête. Puis ouvrir le nouveau chapitre et écrire la question clé au tableau : qu’est-ce que je pense de moi – et est-ce vrai ? Annoncer les séances du chapitre : aujourd’hui découvrir, ensuite examiner comme des détectives, pour finir essayer de nouvelles phrases – et, si la séance au choix a lieu, la semaine prochaine d’abord une séance calme, rien que pour soi, sur ses propres phrases.",
             "sagen": [
+              "Votre moment est-il venu – et qu’avez-vous fait ? Le pouce, puis une voix.",
               "La semaine dernière, vous avez vérifié des publications en ligne : vrai ou faux ? À partir d’aujourd’hui, vous vérifiez quelque chose d’encore plus proche – les phrases dans votre propre tête.",
               "Dans ce chapitre, vous n’avez rien de personnel à raconter. On travaille avec des personnages inventés et avec des cartes."
             ],
-            "tipp": "Laisser au bord du tableau les quatre étapes du chapitre, en petit escalier : découvrir – regarder en privé – examiner – essayer. Quand on sait ce qui arrive, on s’ouvre plus facilement à un sujet personnel."
+            "tipp": "Laisser au bord du tableau l’escalier du chapitre : découvrir – examiner – essayer, avec la séance au choix « regarder en privé » comme marche intermédiaire. Quand on sait ce qui arrive, on s’ouvre plus facilement à un sujet personnel. Pour la mission, demander surtout ce qui a été difficile – elle n’est pas contrôlée."
           },
           {
             "titel": "Une pensée fait la différence",
@@ -479,7 +483,7 @@
             "titel": "Moi aussi – la tête sur les bras",
             "dauer": 10,
             "phase": "uebung",
-            "text": "D’abord expirer une fois tous ensemble, puis chacun pose la tête sur ses bras croisés, les yeux fermés ou tournés vers la table. Dire la règle avant : qui s’est déjà dit une phrase sur lui-même lève brièvement le pouce – la main reste posée sur la table, à côté de la tête, pas en l’air. Lire lentement les phrases (liste), attendre quelques secondes après chacune et dire seulement combien de pouces environ – pas mal, presque tout le monde, quelques-uns –, sans nom ni commentaire (6 min). Ensuite, tout le monde se redresse. Demander : qu’est-ce que vous remarquez ? Retenir : les phrases qui freinent sont normales, et personne n’est seul avec elles – les adultes aussi les connaissent (3 min). Laisser au tableau une phrase qui freine pour le skill.",
+            "text": "D’abord expirer une fois tous ensemble, puis chacun pose la tête sur ses bras croisés, les yeux fermés ou tournés vers la table ; qui ne veut pas poser la tête regarde simplement la table – ça compte autant (1 min). Dire la règle avant : qui s’est déjà dit une phrase sur lui-même lève brièvement le pouce – la main reste posée sur la table, à côté de la tête, pas en l’air. Lire lentement les phrases (liste), attendre quelques secondes après chacune et dire seulement combien de pouces environ – pas mal, presque tout le monde, quelques-uns –, sans nom ni commentaire ; aucune tête ne reste baissée plus de quatre minutes (4 min). Ensuite, tout le monde se redresse. Demander : qu’est-ce que vous remarquez ? Retenir : les phrases qui freinent sont normales, et personne n’est seul avec elles – les adultes aussi les connaissent (4 min). Laisser au tableau une phrase qui freine pour le skill (1 min).",
             "sagen": [
               "Il n’y a que moi qui vois les pouces, et je dis seulement à peu près combien. Vous pouvez laisser la main immobile à chaque phrase.",
               "Qu’est-ce que vous remarquez ? Beaucoup d’entre nous connaissent les mêmes phrases – celles qui freinent et celles qui aident."
@@ -501,7 +505,7 @@
             "titel": "Skill : Merci, ma tête",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : voici un skill pour la tête, pour les moments où une phrase qui freine devient bruyante et où l’on n’a pas le temps de la vérifier. Tout le monde est assis confortablement, les pieds au sol. Avec la phrase du tableau, par exemple « De toute façon, je n’y arriverai pas », guider lentement les trois étapes (liste) ; chacun parle intérieurement, environ une demi-minute par étape. Deuxième tour : chacun choisit en silence une phrase des cartes et fait les étapes seul. Troisième tour, pour qui veut : se faire dire la phrase, dans sa tête, par une voix de GPS, un commentateur sportif ou un personnage de dessin animé. Ensuite, deux ou trois retours : qu’est-ce qui a changé, et quand est-ce que ça pourrait aider – avant un devoir en classe, dans le bus, le soir au lit ? Expliquer : la phrase est encore là, mais vous la regardez de l’extérieur. La repousser ne marche pas, la classe le sait depuis l’ours blanc de la séance 16 ; vérifier si une phrase est vraie, ce sera le travail de détective dans deux semaines.",
+            "text": "Annoncer : voici un skill pour la tête, pour les moments où une phrase qui freine devient bruyante et où l’on n’a pas le temps de la vérifier. Tout le monde est assis confortablement, les pieds au sol. Avec la phrase du tableau, par exemple « De toute façon, je n’y arriverai pas », guider lentement les trois étapes (liste) ; chacun parle intérieurement, environ une demi-minute par étape. Deuxième tour : chacun choisit en silence une phrase des cartes et fait les étapes seul. Troisième tour, pour qui veut : se faire dire la phrase, dans sa tête, par une voix de GPS, un commentateur sportif ou un personnage de dessin animé. Ensuite, deux ou trois retours : qu’est-ce qui a changé, et quand est-ce que ça pourrait aider – avant un devoir en classe, dans le bus, le soir au lit ? Expliquer : la phrase est encore là, mais vous la regardez de l’extérieur. La repousser ne marche pas, la classe le sait depuis l’ours blanc de la séance 16 ; vérifier si une phrase est vraie, ce sera le travail de la séance détective.",
             "sagen": [
               "La phrase n’a pas besoin de disparaître. Vous reculez juste d’un pas – comme devant un écran dont on est trop près.",
               "C’est un skill pour les phrases de tous les jours. Quand des pensées deviennent vraiment lourdes, il ne faut pas une astuce, mais une discussion – avec moi ou avec le SePAS."
@@ -511,34 +515,36 @@
               "Mets devant : « Ma tête me dit : … »",
               "Réponds-lui : « Merci, ma tête, c’est noté. » – et continue ce que tu étais en train de faire."
             ],
-            "tipp": "La voix étrangère n’est pas une blague aux dépens du sujet : une phrase dite par un GPS ou un commentateur sportif perd tout de suite de son poids – et les plus âgés trouvent cela moins enfantin qu’un dessin animé. Les débuts de phrase sont volontairement simples ; qui apprend encore la langue peut les utiliser ou penser dans sa propre langue.",
+            "tipp": "La voix étrangère n’est pas une blague aux dépens du sujet : une phrase dite par un GPS ou un commentateur sportif perd tout de suite de son poids – et les plus âgés trouvent cela moins enfantin qu’un dessin animé. Variante pour le troisième tour : répéter le mot le plus dur de la phrase – par exemple « nul » – à voix basse et très vite pendant une demi-minute, jusqu’à ce qu’il ne soit plus qu’un son – les rires font partie de l’effet ; c’est exactement ce vieil exercice qui a été testé, et il enlève au mot un poids mesurable (encadré sur la fiche). Les débuts de phrase sont volontairement simples ; qui apprend encore la langue peut les utiliser ou penser dans sa propre langue.",
             "wennEsKippt": "Si les voix déclenchent de grands rires, rire un instant avec la classe, puis recommencer en silence : dans la tête, pas à voix haute. Qui ne veut pas travailler avec une phrase des cartes garde celle du tableau. Personne n’est obligé de fermer les yeux."
           },
           {
-            "titel": "Skills-Pass et mission de la semaine",
+            "titel": "Skills-Pass, choisir son moment et mission de la semaine",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire au tableau la question du Skills-Pass : quelle phrase d’aujourd’hui est-ce que je retiens ? Exemple : les pensées sont des suppositions, pas des faits. Chacun écrit sa phrase (2 min) ; l’enseignant·e passe avec le tampon. Ensuite, annoncer la mission de la semaine dans le cahier et la prochaine séance ; dire clairement que personne n’aura rien à lire à voix haute la semaine prochaine.",
+            "text": "Skills-Pass (2 min) : écrire la question au tableau – quelle phrase d’aujourd’hui est-ce que je retiens ? Exemple : les pensées sont des suppositions, pas des faits. Chacun écrit sa phrase, l’enseignant·e passe avec le tampon. Choisir son moment (1 min) : lire la mission de la semaine dans le cahier – quand mon moment arrive, j’attrape la première pensée et je me demande quelle autre pensée irait aussi. À trois, tout le monde montre où son moment a le plus de chances d’arriver : un doigt pour un message sans réponse, deux pour un rire ou un regard qui semble bizarre, trois pour un devoir en classe ou une note, le poing pour un moment à soi ; puis chacun écrit son moment dans la colonne « Mon moment : quand … », un mot-clé suffit. Suite (2 min) : si la séance au choix a lieu, dire clairement que personne n’aura rien à lire à voix haute la semaine prochaine ; sinon, annoncer que la classe devient détective la semaine prochaine.",
             "sagen": [
-              "La semaine prochaine, chacun écrit seulement pour soi. La fiche reste chez vous – personne ne la ramasse, personne ne la lit à voix haute."
+              "Votre mission : quand votre moment arrive – un message sans réponse, un rire, un devoir en classe –, vous attrapez la première pensée et vous vous demandez : quelle autre pensée irait aussi ? Choisissez votre moment maintenant.",
+              "Si le moment ne vient pas cette semaine, c’est aussi une réponse. La semaine prochaine, je demande seulement : est-il venu – et qu’avez-vous fait ?"
             ],
-            "tipp": "Prendre en photo les zones de tri d’un îlot et garder les enveloppes : les cartes resserviront dans les prochaines séances, jusqu’à l’arbre des croyances de la séance 30."
+            "tipp": "Prendre en photo les zones de tri d’un îlot et garder les enveloppes : les cartes resserviront dans les prochaines séances, jusqu’à l’arbre des croyances de la séance 30. Un moment qui arrive à coup sûr – le groupe de classe le soir, le prochain devoir rendu – porte mieux la mission que « un jour cette semaine ».",
+            "wennEsKippt": "Si quelqu’un propose un moment pour rire, l’accepter s’il est sérieux : tout vrai moment compte. Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne le lui demandera. Qui apprend encore la langue ou n’aime pas écrire dessine un petit signe pour son moment : portable, visage, feuille."
           }
         ],
-        "bruecke": "La semaine prochaine, chacun regarde au calme et rien que pour soi ses propres phrases qui freinent : d’où elles viennent et si elles sont encore vraies aujourd’hui. Personne n’aura rien à lire à voix haute.",
-        "mission": "Cette semaine, attrape au vol une pensée rapide – par exemple devant un message resté sans réponse. Demande-toi : quelle autre pensée irait aussi ?",
-        "hintergrund": "La séance s’appuie sur le modèle de base de la thérapie cognitive et comportementale : ce n’est pas la situation seule qui déclenche les émotions et le comportement, mais la pensée avec laquelle on l’évalue. Beck (2011) distingue les pensées rapides, liées à la situation, des convictions plus profondes sur sa propre personne – dans la matière, on les appelle des croyances. Elles colorent la pensée qui surgit en premier. À l’adolescence, l’image de soi devient plus abstraite, la comparaison avec les pairs compte davantage et le jugement sur soi est souvent plus sévère (Harter, 2012). C’est pourquoi la classe travaille d’abord avec des personnages inventés et des cartes ; découvrir que beaucoup connaissent les mêmes phrases soulage. Le skill vient de la thérapie d’acceptation et d’engagement : nommer une pensée comme une pensée permet de prendre de la distance, sans devoir la repousser (Hayes et al., 2012).",
+        "bruecke": "La semaine prochaine, chacun regarde au calme et rien que pour soi ses propres phrases qui freinent – personne ne lit à voix haute. Sans la séance au choix : la semaine prochaine, vous devenez détectives et vous vérifiez avec des preuves si une telle phrase est vraiment vraie.",
+        "mission": "Quand ton moment arrive – un message sans réponse, un rire, un devoir en classe –, attrape ta première pensée et demande-toi : quelle autre pensée irait aussi ?",
+        "hintergrund": "La base est le modèle ABC de la thérapie cognitive : entre la situation (A) et l’émotion et le comportement (C), il y a l’évaluation (B) – une pensée souvent colorée par une conviction profonde sur soi, appelée croyance dans la matière (Ellis, 1962 ; Beck, 2011). Le pur travail sur les pensées mené par des enseignants n’a guère agi dans de grandes études scolaires (Stallard et al., 2014). D’où une séance courte, sur des personnages et des cartes, qui finit par un skill efficace même sans thérapeute : la défusion de la thérapie d’acceptation et d’engagement – nommer une pensée comme une pensée et prendre de la distance au lieu de la combattre (Hayes, Strosahl & Wilson, 2012). Masuda et al. (2004) ont montré qu’une demi-minute d’un tel exercice rend un mot dur sur soi nettement moins crédible et moins douloureux – d’où l’encadré « Ce que dit la recherche ».",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
-          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
-          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford."
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+          "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
         ],
         "achtung": "Les croyances touchent à l’estime de soi. Aujourd’hui, on ne demande pas ses propres phrases ; pour « Moi aussi », seulement les phrases prévues, la tête sur les bras, sans noms ni commentaires. Ne jamais laisser attribuer des cartes à des élèves de la classe. Si des phrases de forte dévalorisation apparaissent – ne rien valoir, ou que ce serait mieux sans soi –, ne pas approfondir devant la classe : en parler en tête-à-tête après le cours, informer le SePAS le jour même et agir selon le protocole de protection de l’école. En cas de danger immédiat, ne pas laisser le jeune seul, 112.",
         "differenzierung": {
-          "leichter": "Exercices 2 et 3 en binôme avec un camarade qui lit bien ; pour l’exercice 3, des mots-clés ou des mots de la roue suffisent. Au jeu de tri, un membre du groupe lit les cartes, le jeune les pose. Laisser les mots-clés au tableau ; qui apprend encore la langue d’enseignement peut noter ses pensées dans sa langue.",
+          "leichter": "Exercices 2 et 3 en binôme avec un camarade qui lit bien ; pour l’exercice 3, des mots-clés ou des mots de la roue suffisent. Au jeu de tri, un membre du groupe lit les cartes, le jeune les pose. Laisser les mots-clés au tableau ; qui apprend encore la langue d’enseignement peut noter ses pensées dans sa langue. Pour la colonne « Mon moment », un mot ou un signe suffit.",
           "schwerer": "Pour l’exercice 3, écrire une deuxième pensée, réaliste et qui aide quand même ; pour l’exercice 4, réfléchir à ce que Mila devrait croire pour s’y prendre autrement au prochain devoir. Au jeu de tri, animer le groupe et trouver, pour les cartes de la zone « ça dépend », une situation où elles aident et une où elles freinent."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec émotion et chiffre (5 min), Ben joué deux fois, avec le tableau et une courte explication des croyances (12 min), exercices 2 et 4 de la fiche (8 min), jeu de tri sans l’origine (15 min), Merci, ma tête (5 min), Skills-Pass et mission de la semaine (5 min). « Moi aussi » est supprimé ou ouvre la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec émotion et chiffre (5 min), Ben joué deux fois, avec le tableau et une courte explication des croyances (12 min), exercices 2 et 4 de la fiche (8 min), jeu de tri sans l’origine (15 min), Merci, ma tête (5 min), Skills-Pass, choix du moment et mission de la semaine (5 min). « Moi aussi » est supprimé ou ouvre la séance suivante."
       }
     }
   ],
@@ -767,6 +773,12 @@
             "symbol": "merke",
             "titel": "Gedanken sind Vermutungen, keine Tatsachen",
             "text": "Manche Vermutungen stimmen, manche nicht. Welcher Gedanke dir zuerst kommt, hängt oft von einem Glaubenssatz ab: einem Satz über dich, den du schon lange für wahr hältst. Manche Glaubenssätze helfen, manche bremsen."
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Aus der Forschung",
+            "text": "Ein Gedanke ist kein Beweis: Wer ein hartes Wort über sich 30 Sekunden lang schnell wiederholt, glaubt ihm danach weniger."
           }
         ],
         "lehrer": {
@@ -774,13 +786,15 @@
           "ablauf": [
             "Einheit 27, Schritt 3: Aufgabe 1 gemeinsam mit dem Tafelbild, nachdem die Lehrkraft Ben zweimal gespielt hat.",
             "Schritt 4: Aufgabe 2 zu zweit (4 Min.), Aufgabe 3 erst mündlich in der Tischgruppe, dann einen Gedanken aufschreiben (6 Min.), Aufgabe 4 allein (4 Min.).",
-            "Zum Schluss den Merkkasten lesen: Gedanken sind Vermutungen, keine Tatsachen."
+            "Zum Schluss den Merkkasten lesen: Gedanken sind Vermutungen, keine Tatsachen.",
+            "Der Kasten „Aus der Forschung“ fasst Masuda et al. (2004) zusammen; der Beleg steht im Hintergrund der Einheit."
           ],
           "hintergrund": "Das Blatt folgt dem kognitiven Modell: Nicht die Situation allein, sondern ihre Bewertung prägt Gefühl und Verhalten (Ellis, 1962; Beck, 2011). Grundüberzeugungen – hier Glaubenssätze – färben, welcher Gedanke zuerst kommt. Arbeitsbücher der kognitiven Verhaltenstherapie für Jugendliche führen das Modell an harmlosen Alltagssituationen ein, bevor eigene Themen folgen (Stallard, 2019).",
           "quellen": [
             "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
             "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
-            "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+            "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+            "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
           ],
           "material": "Schülerheft, Tafelbild aus Schritt 3"
         }
@@ -984,6 +998,12 @@
             "symbol": "merke",
             "titel": "Les pensées sont des suppositions, pas des faits",
             "text": "Certaines suppositions sont justes, d’autres non. La pensée qui te vient en premier dépend souvent d’une croyance : une phrase sur toi que tu tiens pour vraie depuis longtemps. Certaines croyances aident, d’autres freinent."
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce que dit la recherche",
+            "text": "Une pensée n’est pas une preuve : qui répète vite, pendant 30 secondes, un mot dur sur lui-même y croit moins ensuite."
           }
         ],
         "lehrer": {
@@ -991,13 +1011,15 @@
           "ablauf": [
             "Séance 27, étape 3 : exercice 1 ensemble avec le tableau, après que l’enseignant·e a joué Ben deux fois.",
             "Étape 4 : exercice 2 à deux (4 min), exercice 3 d’abord à l’oral en îlot, puis écrire une pensée (6 min), exercice 4 seul (4 min).",
-            "Pour finir, lire l’encadré : les pensées sont des suppositions, pas des faits."
+            "Pour finir, lire l’encadré : les pensées sont des suppositions, pas des faits.",
+            "L’encadré « Ce que dit la recherche » résume Masuda et al. (2004) ; la référence figure dans le fond de la séance."
           ],
           "hintergrund": "La fiche suit le modèle cognitif : ce n’est pas la situation seule, mais son évaluation qui façonne l’émotion et le comportement (Ellis, 1962 ; Beck, 2011). Les convictions profondes – ici les croyances – colorent la pensée qui vient en premier. Les cahiers de thérapie cognitive et comportementale pour les jeunes introduisent ce modèle avec des situations anodines du quotidien, avant les sujets personnels (Stallard, 2019).",
           "quellen": [
             "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
             "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
-            "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+            "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+            "Masuda, A., Hayes, S. C., Sackett, C. F. & Twohig, M. P. (2004). Cognitive defusion and self-relevant negative thoughts: Examining the impact of a ninety year old technique. Behaviour Research and Therapy, 42(4), 477–485."
           ],
           "material": "Cahier de l’élève, tableau de l’étape 3"
         }

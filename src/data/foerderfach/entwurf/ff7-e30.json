@@ -40,7 +40,7 @@
       ],
       "de": {
         "titel": "Neue Gedanken ausprobieren",
-        "kurz": "Mit einer inneren Stimme im Rollenspiel erleben, wie ein neuer Satz eine Szene verändert – dann wächst er am Baum der Stärke und wird eine Woche lang getestet.",
+        "kurz": "Mit einer inneren Stimme im Rollenspiel erleben, wie ein neuer Satz eine Szene verändert – dann wächst er am Baum der Stärke und wird eine Woche lang getestet. Abschluss des Kapitels.",
         "ziele": [
           "erleben im Rollenspiel, wie ein anderer Satz eine Szene verändert",
           "verbinden ihren neuen Satz mit Stärken aus ihrem Baum der Stärke",
@@ -112,7 +112,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Kapitel-Blitzlicht und Wochen-Mission"
+            "titel": "Kapitel-Blitzlicht, Moment wählen und Wochen-Mission"
           }
         ],
         "schritte": [
@@ -132,8 +132,9 @@
             "titel": "Rückblick: Hat dein Kärtchen gearbeitet?",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Per Daumen nach der Wochen-Mission fragen: Hat euer Kärtchen diese Woche gearbeitet – habt ihr den neuen Satz einmal gelesen, als sich der alte gemeldet hat? Eine Stimme erzählt; auch „vergessen“ ist eine ehrliche Antwort. Dann das Thema nennen: Heute wird getestet, wie sich ein neuer Satz anfühlt, wenn man nach ihm handelt – erst im Rollenspiel, dann eine Woche lang im Alltag. Ankündigen, dass es die letzte Stunde des Kapitels ist.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Dann zur Wochen-Mission – den neuen Satz vom Kärtchen lesen, wenn sich der alte meldet: Kam euer Moment – ein Test, die Tafel, die Pause – und was habt ihr gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt, und auch „der Moment kam, aber das Kärtchen war nicht da“ ist eine ehrliche Antwort. Dann das Thema nennen: Heute wird getestet, wie sich ein neuer Satz anfühlt, wenn man nach ihm handelt – erst im Rollenspiel, dann eine Woche lang im Alltag. Ankündigen, dass es die letzte Stunde des Kapitels ist und die Klasse am Ende auf das ganze Kapitel zurückschaut.",
             "sagen": [
+              "Kam euer Moment – und was habt ihr gemacht? Daumen, dann eine Stimme.",
               "Ein neuer Satz ist wie neue Schuhe: Am Anfang drückt er ein bisschen. Heute laufen wir ihn ein."
             ],
             "tipp": "Ein ehrliches „Hab’s vergessen“ ausdrücklich würdigen: Wer zugibt, dass der alte Satz schneller war, hat genau verstanden, worum es geht."
@@ -224,7 +225,7 @@
             "titel": "Skill: Bemerken, atmen, antworten",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: der Skill für die Woche – er verbindet, was die Klasse in diesem Kapitel geübt hat. Alle sitzen, das Kärtchen liegt vor ihnen. Die Lehrkraft leitet die drei Schritte an einem Satz von der Tafel an (Liste, 2 Min.). Dann liest sie drei Alltagsmomente vor, und alle machen still die drei Schritte mit ihrem eigenen neuen Satz: Du bekommst einen Test zurück, die Note ist schlecht. – Du willst dich in der Pause zu einer Gruppe stellen. – Im Klassenchat antwortet niemand auf deine Frage (5 Min.). Danach zwei, drei Rückmeldungen: Welcher Schritt war am schwersten? Erklären: Der alte Satz verschwindet nicht – er wird leiser, wenn man ihm oft genug antwortet (3 Min.).",
+            "text": "Ankündigen: der Skill für die Woche – er verbindet, was die Klasse in diesem Kapitel geübt hat. Alle sitzen, das Kärtchen liegt vor ihnen; die Augen bleiben offen, denn der Skill wird mitten im Alltag gebraucht. Die Lehrkraft leitet die drei Schritte an einem Satz von der Tafel an (Liste, 2 Min.). Dann liest sie drei Alltagsmomente vor, je eine Minute, und alle machen still die drei Schritte mit ihrem eigenen neuen Satz; wer mag, spricht den Satz leise mit (3 Min.): Du bekommst einen Test zurück, die Note ist schlecht. – Du willst dich in der Pause zu einer Gruppe stellen. – Im Klassenchat antwortet niemand auf deine Frage. Dritte Runde laut zu zweit (2 Min.): Person A sagt einen der drei Momente, B macht die drei Schritte hörbar – „Aha, da ist er wieder“, ausatmen, neuer Satz; wer den eigenen Satz nicht sagen mag, nimmt den von der Tafel –, dann wechseln. Danach zwei, drei Rückmeldungen: Welcher Schritt war am schwersten? Erklären: Der alte Satz verschwindet nicht – er wird leiser, wenn man ihm oft genug antwortet (3 Min.).",
             "sagen": [
               "Der alte Satz darf kommen. Ihr müsst ihm nur nicht mehr gehorchen."
             ],
@@ -233,38 +234,40 @@
               "Atme einmal langsam aus und spür deine Füße auf dem Boden.",
               "Antworte mit deinem neuen Satz – und tu den nächsten kleinen Schritt."
             ],
-            "tipp": "Das ist der Skill für die Beweis-Challenge: Wer ihn in der geplanten Situation einsetzt, sammelt fast von selbst einen Beweis.",
-            "wennEsKippt": "Hat jemand noch keinen eigenen neuen Satz, nimmt er einen hilfreichen von der Tafel oder vom Glaubenssatz-Baum. Wird gekichert, ruhig weitersprechen; niemand muss die Augen schließen."
+            "tipp": "Das ist der Skill für die Beweis-Challenge: Wer ihn in der geplanten Situation einsetzt, sammelt fast von selbst einen Beweis. Die laute Runde zu zweit ist für alle, denen stille Übungen schwerfallen – und sie ist näher am Alltag, wo man den Satz leise sagt und dann handelt.",
+            "wennEsKippt": "Hat jemand noch keinen eigenen neuen Satz, nimmt er einen hilfreichen von der Tafel oder vom Glaubenssatz-Baum. Wird gekichert, ruhig weitersprechen; wer die stille Runde nicht mag, macht nur die laute zu zweit mit."
           },
           {
-            "titel": "Kapitel-Blitzlicht und Wochen-Mission",
+            "titel": "Kapitel-Blitzlicht, Moment wählen und Wochen-Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Zum Abschluss des Kapitels eine Frage, die nur beantwortet, wer mag: Was denkst du heute ein kleines bisschen anders über dich als vor vier Wochen? Zwei, drei Stimmen reichen. Dann der Satz in den Skills-Pass mit derselben Leitfrage, Stempel. Die Wochen-Mission ansagen – die Beweis-Challenge – und den Ausblick auf das neue Kapitel geben.",
+            "text": "Kapitel-Blitzlicht (2 Min.): Zum Abschluss des Kapitels eine Frage, die nur beantwortet, wer mag – Was denkst du heute ein kleines bisschen anders über dich als zu Beginn des Kapitels? Zwei, drei Stimmen reichen. Skills-Pass (2 Min.): der Satz mit derselben Leitfrage, Stempel. Moment wählen (1 Min.): die Wochen-Mission ansagen – wenn meine geplante Situation kommt, dann sage ich mir meinen neuen Satz, tue den nächsten kleinen Schritt und trage einen Beweis ein. Auf drei zeigen alle, wo ihre Situation liegt: ein Finger für den Unterricht, zwei für Pause oder Freunde, drei für zu Hause, die Faust für woanders; dann schreibt jede Person den Wenn-Teil ihres Plans aus der Beweis-Challenge in Stichworten in die Spalte „Mein Moment: Wenn …“. Dazu der Ausblick in einem Satz: Nächste Woche beginnt das neue Kapitel, und zu Beginn wird nach den Beweisen gefragt – nach Beobachtungen, nicht nach Erfolgen.",
             "sagen": [
-              "Was denkt ihr heute ein kleines bisschen anders über euch als vor vier Wochen? Nur, wer mag."
+              "Was denkt ihr heute ein kleines bisschen anders über euch als am Anfang des Kapitels? Nur, wer mag.",
+              "Eure Mission: Wenn eure geplante Situation kommt, dann sagt ihr euch euren neuen Satz, tut den nächsten kleinen Schritt und tragt einen Beweis ein. Schreibt euren Wenn-Teil in die Spalte."
             ],
-            "tipp": "Wer „noch nichts“ sagt, bekommt ein ehrliches Danke: Auch das ist eine Beobachtung, und die Beweis-Challenge fängt ja erst an."
+            "tipp": "Wer „noch nichts“ sagt, bekommt ein ehrliches Danke: Auch das ist eine Beobachtung, und die Beweis-Challenge fängt ja erst an. Der Wenn-Teil steht schon auf dem Blatt; die Spalte im Heft braucht ihn trotzdem – dort stehen alle Missionen des Jahres nebeneinander.",
+            "wennEsKippt": "Hat jemand keinen Plan geschrieben, reicht als Moment die erste der drei Szenen aus dem Skill, die diese Woche sicher kommt; wer nichts schreiben will, lässt die Spalte leer – nächste Woche fragt niemand nach."
           }
         ],
         "bruecke": "Nächste Woche beginnt ein neues Kapitel: was euch guttut – Schlaf, Bewegung, Essen und Stress. Zu Beginn frage ich, welche Beweise ihr gesammelt habt.",
-        "mission": "Probiere deinen neuen Satz diese Woche in deiner geplanten Situation aus. Trag danach einen Beweis in deine Beweis-Challenge ein – auch ein kleiner zählt.",
-        "hintergrund": "Überzeugungen verändern sich weniger durch Argumente als durch Erfahrungen. Bandura (1977) beschreibt eigene Bewältigungserlebnisse als stärkste Quelle von Selbstwirksamkeit; im Rollenspiel und in der Beweis-Challenge sammeln die Jugendlichen genau solche Erlebnisse – erst geschützt in einer erfundenen Szene, dann im Alltag. Die innere Stimme im Rollenspiel macht sichtbar, wie ein Gedanke Haltung, Stimme und Ausgang einer Situation verändert. Die Arbeit mit dem Baum der Stärke folgt dem narrativen Ansatz des Tree of Life (Ncube, 2006): Neue Sätze werden an vorhandene Stärken und Menschen gebunden statt an Defizite. Ein konkreter Wenn-dann-Plan erhöht die Wahrscheinlichkeit, dass ein Vorsatz im Alltag umgesetzt wird (Gollwitzer, 1999).",
+        "mission": "Wenn deine geplante Situation kommt, dann sag dir deinen neuen Satz und tu den nächsten kleinen Schritt. Trag danach einen Beweis ein – auch ein kleiner zählt.",
+        "hintergrund": "Grundlage ist Banduras Theorie der Selbstwirksamkeit: Überzeugungen ändern sich weniger durch Argumente als durch Erfahrungen, und eigene Bewältigungserlebnisse sind ihre stärkste Quelle (Bandura, 1977). Im Rollenspiel und in der Beweis-Challenge sammeln die Jugendlichen solche Erlebnisse – erst in einer erfundenen Szene, dann im Alltag. Die innere Stimme macht hörbar, wie ein Gedanke Haltung, Stimme und Ausgang verändert. Der Baum der Stärke folgt dem narrativen Ansatz des Tree of Life (Ncube, 2006): Neue Sätze werden an vorhandene Stärken und Menschen gebunden statt an Defizite. Der Wochenplan ist ein Wenn-dann-Plan (Gollwitzer, 1999); über 94 Studien hinweg erhöht diese Form deutlich die Chance, dass ein Vorsatz umgesetzt wird (Gollwitzer & Sheeran, 2006). Handeln und Beweise sammeln sind der am besten belegte Teil des Kapitels – deshalb ist diese Stunde sein fester Abschluss.",
         "quellen": [
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
           "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children. International Journal of Narrative Therapy and Community Work, 1, 3–16.",
-          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          "Gollwitzer, P. M. & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119."
         ],
         "achtung": "Rollenspiele nur mit den Szenen von den Karten; niemand spielt eine eigene Situation, alle dürfen Stopp sagen oder beobachten. Die Szenen mit dem Test und dem Nein können an Druck oder Abwertung erinnern: auf Reaktionen achten, nach der Stunde ein Gespräch anbieten. Bestätigt die Woche den alten Satz, etwa durch anhaltende Ausgrenzung, nicht auf Durchhalten drängen, sondern mit Régent und SePAS klären, wer hilft. Bei Hinweisen auf Selbstabwertung, Gewalt oder Selbstgefährdung noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr nicht allein lassen, 112.",
         "differenzierung": {
-          "leichter": "Im Rollenspiel zuerst Beobachtung oder innere Stimme übernehmen – die Sätze stehen auf der Karte und werden nur vorgelesen. Für den Wenn-dann-Plan Satzanfänge an die Tafel: Wenn ich … merke, dann sage ich mir … und …; Beweise dürfen gezeichnet oder in der eigenen Sprache notiert werden.",
+          "leichter": "Im Rollenspiel zuerst Beobachtung oder innere Stimme übernehmen – die Sätze stehen auf der Karte und werden nur vorgelesen. Für den Wenn-dann-Plan Satzanfänge an die Tafel: Wenn ich … merke, dann sage ich mir … und …; Beweise dürfen gezeichnet oder in der eigenen Sprache notiert werden. Für die Spalte „Mein Moment“ reicht der Wenn-Teil in Stichworten oder ein Zeichen.",
           "schwerer": "Eine eigene sechste Szene für die Klasse schreiben – mit altem und neuem Satz, ohne echte Personen. Auf der Bühne die Moderation übernehmen und nach jeder Szene die Beobachtungen der Tischgruppen zusammenfassen."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), zwei Sätze, zwei Haltungen (5 Min.), Rollenspiel in Tischgruppen mit einer Runde (15 Min.), den neuen Satz an den Baum der Stärke schreiben (8 Min.), Beweis-Challenge (8 Min.), Bemerken, atmen, antworten (4 Min.), Skills-Pass und Wochen-Mission (5 Min.). Die Bühne und der Glaubenssatz-Baum entfallen."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), zwei Sätze, zwei Haltungen (5 Min.), Rollenspiel in Tischgruppen mit einer Runde (15 Min.), den neuen Satz an den Baum der Stärke schreiben (8 Min.), Beweis-Challenge (8 Min.), Bemerken, atmen, antworten (4 Min.), Skills-Pass, Moment wählen und Wochen-Mission (5 Min.). Die Bühne und der Glaubenssatz-Baum entfallen."
       },
       "fr": {
         "titel": "Essayer de nouvelles pensées",
-        "kurz": "Vivre en jeu de rôle, avec une petite voix intérieure, comment une nouvelle phrase change une scène – puis l’accrocher à l’arbre des forces et la tester une semaine.",
+        "kurz": "Vivre en jeu de rôle, avec une petite voix intérieure, comment une nouvelle phrase change une scène – puis l’accrocher à l’arbre des forces et la tester une semaine. Fin du chapitre.",
         "ziele": [
           "vivent en jeu de rôle comment une autre phrase change une scène",
           "relient leur nouvelle phrase aux forces de leur arbre des forces",
@@ -336,7 +339,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Tour éclair du chapitre et mission de la semaine"
+            "titel": "Tour éclair du chapitre, choix du moment et mission"
           }
         ],
         "schritte": [
@@ -356,8 +359,9 @@
             "titel": "Retour : ta petite carte a-t-elle servi ?",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass. Demander avec le pouce où en est la mission de la semaine : est-ce que votre petite carte a servi – avez-vous lu une fois la nouvelle phrase quand l’ancienne est revenue ? Une voix raconte ; « oublié » est aussi une réponse honnête. Puis annoncer le thème : aujourd’hui, on teste ce que ça fait d’agir d’après une nouvelle phrase – d’abord en jeu de rôle, puis pendant une semaine au quotidien. Dire que c’est la dernière séance du chapitre.",
+            "text": "Un jeune lit la phrase de son Skills-Pass. Puis la mission de la semaine – lire la nouvelle phrase sur la petite carte quand l’ancienne revient : votre moment est-il venu – un devoir en classe, le tableau, la récré – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas ; une voix raconte, et « le moment est venu, mais la carte n’était pas là » est aussi une réponse honnête. Puis annoncer le thème : aujourd’hui, on teste ce que ça fait d’agir d’après une nouvelle phrase – d’abord en jeu de rôle, puis pendant une semaine au quotidien. Dire que c’est la dernière séance du chapitre et qu’à la fin, la classe fera le bilan de tout le chapitre.",
             "sagen": [
+              "Votre moment est-il venu – et qu’avez-vous fait ? Le pouce, puis une voix.",
               "Une nouvelle phrase, c’est comme des chaussures neuves : au début, elles serrent un peu. Aujourd’hui, on les fait à notre pied."
             ],
             "tipp": "Saluer expressément un « j’ai oublié » sincère : qui reconnaît que l’ancienne phrase a été plus rapide a très bien compris de quoi il s’agit."
@@ -448,7 +452,7 @@
             "titel": "Skill : remarquer, respirer, répondre",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : voici le skill de la semaine – il rassemble ce que la classe a travaillé dans ce chapitre. Tout le monde est assis, la petite carte posée devant soi. Guider les trois étapes avec une phrase du tableau (liste, 2 min). Puis lire trois moments du quotidien ; chacun fait en silence les trois étapes avec sa propre nouvelle phrase : tu récupères un devoir en classe, la note est mauvaise. – Tu veux te joindre à un groupe à la récré. – Dans le groupe de la classe, personne ne répond à ta question (5 min). Ensuite, deux ou trois retours : quelle étape était la plus difficile ? Expliquer : l’ancienne phrase ne disparaît pas – elle devient plus faible quand on lui répond assez souvent (3 min).",
+            "text": "Annoncer : voici le skill de la semaine – il rassemble ce que la classe a travaillé dans ce chapitre. Tout le monde est assis, la petite carte posée devant soi ; les yeux restent ouverts, car le skill sert en plein quotidien. Guider les trois étapes avec une phrase du tableau (liste, 2 min). Puis lire trois moments du quotidien, une minute chacun ; chacun fait en silence les trois étapes avec sa propre nouvelle phrase, et qui veut dit la phrase à voix basse (3 min) : tu récupères un devoir en classe, la note est mauvaise. – Tu veux te joindre à un groupe à la récré. – Dans le groupe de la classe, personne ne répond à ta question. Troisième tour à voix haute, à deux (2 min) : A dit un des trois moments, B fait les trois étapes de façon audible – « Tiens, la revoilà », expirer, nouvelle phrase ; qui ne veut pas dire la sienne prend celle du tableau –, puis on inverse. Ensuite, deux ou trois retours : quelle étape était la plus difficile ? Expliquer : l’ancienne phrase ne disparaît pas – elle devient plus faible quand on lui répond assez souvent (3 min).",
             "sagen": [
               "L’ancienne phrase a le droit de venir. Vous n’êtes simplement plus obligés de lui obéir."
             ],
@@ -457,34 +461,36 @@
               "Expire une fois lentement et sens tes pieds sur le sol.",
               "Réponds avec ta nouvelle phrase – et fais le petit pas suivant."
             ],
-            "tipp": "C’est le skill du défi des preuves : qui l’utilise dans la situation prévue récolte presque automatiquement une preuve.",
-            "wennEsKippt": "Qui n’a pas encore de nouvelle phrase à soi en prend une qui aide, au tableau ou sur l’arbre des croyances. Si ça ricane, continuer calmement ; personne n’est obligé de fermer les yeux."
+            "tipp": "C’est le skill du défi des preuves : qui l’utilise dans la situation prévue récolte presque automatiquement une preuve. Le tour à voix haute, à deux, est pour tous ceux qui ont du mal avec les exercices silencieux – et il est plus proche du quotidien, où l’on dit la phrase tout bas avant d’agir.",
+            "wennEsKippt": "Qui n’a pas encore de nouvelle phrase à soi en prend une qui aide, au tableau ou sur l’arbre des croyances. Si ça ricane, continuer calmement ; qui n’aime pas le tour silencieux ne fait que le tour à voix haute, à deux."
           },
           {
-            "titel": "Tour éclair du chapitre et mission de la semaine",
+            "titel": "Tour éclair du chapitre, choix du moment et mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Pour clore le chapitre, une question à laquelle ne répond que qui veut : qu’est-ce que tu penses de toi aujourd’hui un tout petit peu autrement qu’il y a quatre semaines ? Deux ou trois voix suffisent. Puis la phrase dans le Skills-Pass, avec la même question, et le tampon. Annoncer la mission de la semaine – le défi des preuves – et le nouveau chapitre.",
+            "text": "Tour éclair du chapitre (2 min) : pour clore le chapitre, une question à laquelle ne répond que qui veut – qu’est-ce que tu penses de toi aujourd’hui un tout petit peu autrement qu’au début du chapitre ? Deux ou trois voix suffisent. Skills-Pass (2 min) : la phrase avec la même question, le tampon. Choisir son moment (1 min) : annoncer la mission de la semaine – quand la situation que j’ai prévue arrive, je me dis ma nouvelle phrase, je fais le petit pas suivant et je note une preuve. À trois, tout le monde montre où se situe sa situation : un doigt pour les cours, deux pour la récré ou les amis, trois pour la maison, le poing pour ailleurs ; puis chacun recopie en mots-clés la partie « si » de son plan du défi des preuves dans la colonne « Mon moment : quand … ». Avec la suite en une phrase : la semaine prochaine commence le nouveau chapitre, et au début, on demandera les preuves – des observations, pas des réussites.",
             "sagen": [
-              "Qu’est-ce que vous pensez de vous aujourd’hui un tout petit peu autrement qu’il y a quatre semaines ? Seulement si vous voulez."
+              "Qu’est-ce que vous pensez de vous aujourd’hui un tout petit peu autrement qu’au début du chapitre ? Seulement si vous voulez.",
+              "Votre mission : quand la situation que vous avez prévue arrive, vous vous dites votre nouvelle phrase, vous faites le petit pas suivant et vous notez une preuve. Écrivez votre partie « si » dans la colonne."
             ],
-            "tipp": "Qui répond « rien encore » reçoit un merci sincère : c’est aussi une observation, et le défi des preuves ne fait que commencer."
+            "tipp": "Qui répond « rien encore » reçoit un merci sincère : c’est aussi une observation, et le défi des preuves ne fait que commencer. La partie « si » est déjà sur la fiche ; la colonne du cahier en a quand même besoin – toutes les missions de l’année y sont côte à côte.",
+            "wennEsKippt": "Si un jeune n’a pas écrit de plan, la première des trois scènes du skill qui arrivera à coup sûr cette semaine suffit comme moment ; qui ne veut rien écrire laisse la colonne vide – la semaine prochaine, personne ne le lui demandera."
           }
         ],
         "bruecke": "La semaine prochaine commence un nouveau chapitre : ce qui vous fait du bien – le sommeil, le mouvement, l’alimentation et le stress. Au début, je vous demanderai quelles preuves vous avez récoltées.",
-        "mission": "Essaie ta nouvelle phrase cette semaine dans la situation que tu as prévue. Ensuite, note une preuve dans ton défi des preuves – même une petite compte.",
-        "hintergrund": "Les convictions changent moins grâce aux arguments que grâce aux expériences. Bandura (1977) décrit les expériences de réussite personnelles comme la source la plus forte du sentiment d’efficacité ; dans le jeu de rôle et le défi des preuves, les jeunes vivent justement ce genre d’expériences – d’abord à l’abri d’une scène inventée, puis au quotidien. La petite voix intérieure du jeu de rôle rend visible la manière dont une pensée change la posture, la voix et la fin d’une situation. Le travail avec l’arbre des forces suit l’approche narrative du Tree of Life (Ncube, 2006) : les nouvelles phrases sont rattachées à des forces et à des personnes déjà présentes plutôt qu’à des manques. Un plan « si… alors » concret augmente la probabilité qu’une résolution soit mise en œuvre au quotidien (Gollwitzer, 1999).",
+        "mission": "Quand la situation que tu as prévue arrive, dis-toi ta nouvelle phrase et fais le petit pas suivant. Note ensuite une preuve dans ton défi – même une petite compte.",
+        "hintergrund": "La base est la théorie de l’efficacité personnelle de Bandura : les convictions changent moins par les arguments que par les expériences, et les réussites vécues en sont la première source (Bandura, 1977). Dans le jeu de rôle et le défi des preuves, les jeunes vivent de telles expériences – d’abord dans une scène inventée, puis au quotidien. La petite voix rend audible la façon dont une pensée change la posture, la voix et la fin d’une scène. L’arbre des forces suit l’approche du Tree of Life (Ncube, 2006) : les nouvelles phrases sont rattachées à des forces et à des personnes déjà là, pas à des manques. Le plan de la semaine est un plan « si… alors » (Gollwitzer, 1999) ; sur 94 études, cette forme augmente nettement les chances de passer à l’acte (Gollwitzer & Sheeran, 2006). Agir et rassembler des preuves est la partie la mieux étayée du chapitre – d’où cette séance en conclusion fixe.",
         "quellen": [
           "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
           "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children. International Journal of Narrative Therapy and Community Work, 1, 3–16.",
-          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          "Gollwitzer, P. M. & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119."
         ],
         "achtung": "Jeux de rôle uniquement avec les scènes des cartes ; personne ne joue sa propre situation, chacun peut dire stop ou observer. Les scènes du devoir en classe et du non peuvent rappeler des pressions ou des dévalorisations : être attentif aux réactions, proposer un entretien après le cours. Si la semaine confirme l’ancienne phrase, par exemple à cause d’une mise à l’écart durable, ne pas pousser à tenir bon, mais voir avec le régent et le SePAS qui peut aider. Signes de dévalorisation de soi, de violence ou de mise en danger : informer le SePAS le jour même et agir selon le protocole de protection de l’école ; en cas de danger immédiat, ne pas laisser le jeune seul, 112.",
         "differenzierung": {
-          "leichter": "Dans le jeu de rôle, prendre d’abord l’observation ou la petite voix – les phrases sont sur la carte et il suffit de les lire. Pour le plan « si… alors », des débuts de phrase au tableau : Si je remarque…, alors je me dis… et je… ; les preuves peuvent être dessinées ou notées dans sa propre langue.",
+          "leichter": "Dans le jeu de rôle, prendre d’abord l’observation ou la petite voix – les phrases sont sur la carte et il suffit de les lire. Pour le plan « si… alors », des débuts de phrase au tableau : Si je remarque…, alors je me dis… et je… ; les preuves peuvent être dessinées ou notées dans sa propre langue. Pour la colonne « Mon moment », la partie « si » en mots-clés ou un signe suffit.",
           "schwerer": "Écrire une sixième scène pour la classe – avec une ancienne et une nouvelle phrase, sans personnes réelles. Sur scène, animer les retours et résumer après chaque scène les observations des îlots."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), deux phrases, deux postures (5 min), jeu de rôle en îlots avec un seul tour (15 min), écrire la nouvelle phrase sur l’arbre des forces (8 min), défi des preuves (8 min), remarquer, respirer, répondre (4 min), Skills-Pass et mission de la semaine (5 min). La scène devant la classe et l’arbre des croyances sont supprimés."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), deux phrases, deux postures (5 min), jeu de rôle en îlots avec un seul tour (15 min), écrire la nouvelle phrase sur l’arbre des forces (8 min), défi des preuves (8 min), remarquer, respirer, répondre (4 min), Skills-Pass, choix du moment et mission de la semaine (5 min). La scène devant la classe et l’arbre des croyances sont supprimés."
       }
     }
   ],
@@ -604,7 +610,7 @@
         "lehrer": {
           "ziel": "Die Jugendlichen übertragen ihren neuen Satz in den Alltag: eine Situation planen, eine Woche lang Belege sammeln und bemerken, ob sich die Überzeugung verändert.",
           "ablauf": [
-            "Einheit 30, Schritt 8 (10 Min.): Satz abschreiben, Wenn-dann-Plan, Einschätzung für heute; zu zweit prüfen: Weiß man, wann und wo?",
+            "Einheit 30, Schritt 8 (10 Min.): Satz abschreiben, Wenn-dann-Plan, Einschätzung für heute; zu zweit prüfen: Weiß man, wann und wo? Im Abschluss kommt der Wenn-Teil als Moment in die Spalte „Mein Moment“ im Heft.",
             "Während der Woche: jeden Beweis, auch einen kleinen, in die Tabelle.",
             "Einheit 31, zu Beginn: Wer mag, erzählt einen Beweis. Gefragt wird nach Beobachtungen, nicht nach Erfolgen."
           ],
@@ -712,7 +718,7 @@
         "lehrer": {
           "ziel": "Les jeunes transfèrent leur nouvelle phrase dans le quotidien : prévoir une situation, rassembler des preuves pendant une semaine et remarquer si leur conviction change.",
           "ablauf": [
-            "Séance 30, étape 8 (10 min) : recopier la phrase, plan « si… alors », évaluation du jour ; à deux, vérifier : sait-on quand et où ?",
+            "Séance 30, étape 8 (10 min) : recopier la phrase, plan « si… alors », évaluation du jour ; à deux, vérifier : sait-on quand et où ? À la fin de la séance, la partie « si » devient le moment dans la colonne « Mon moment » du cahier.",
             "Pendant la semaine : chaque preuve, même petite, va dans le tableau.",
             "Séance 31, au début : qui veut raconte une preuve. On demande des observations, pas des réussites."
           ],

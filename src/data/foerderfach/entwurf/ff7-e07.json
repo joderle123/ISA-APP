@@ -104,7 +104,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass und Wochen-Mission"
+            "titel": "Skills-Pass, Mission und Moment wählen"
           }
         ],
         "schritte": [
@@ -124,11 +124,11 @@
             "titel": "Rückblick: Glas, Mission und Thema",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann kurz nach der Wochen-Mission fragen: Wer hat seinen kleinen Schritt oder die 4-7-8-Atmung ausprobiert? Daumen hoch, Mitte oder runter – eine Stimme erzählt, niemand muss sie geschafft haben. Das Glas der Bedürfnisse auf das Pult stellen und auf das Foto der Striche zeigen: Diese Tanks sind vielen von uns wichtig. Dann das Thema an die Tafel schreiben: Zwischen laut und leise – Wie bin ich? Und wie sehen mich die anderen?",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Zur Wochen-Mission fragen: Kam euer Moment – und habt ihr euren kleinen Schritt gemacht oder die 4-7-8-Atmung? Daumen hoch, Mitte oder runter – eine Stimme erzählt, niemand muss den Moment erlebt haben. Das Glas der Bedürfnisse auf das Pult stellen und auf das Foto der Striche zeigen: Diese Tanks sind vielen von uns wichtig. Dann das Thema an die Tafel schreiben: Zwischen laut und leise – Wie bin ich? Und wie sehen mich die anderen?",
             "sagen": [
               "Letzte Woche ging es darum, was ihr braucht. Heute geht es darum, wie ihr seid – und keine Art ist besser als die andere."
             ],
-            "tipp": "Hat kaum jemand die Mission geschafft, das gelassen nehmen: Neue Gewohnheiten brauchen mehrere Anläufe. Wer mag, nimmt sich den kleinen Schritt für diese Woche noch einmal vor."
+            "tipp": "Kam bei vielen der Moment nicht oder ging der Schritt unter, das gelassen nehmen: Neue Gewohnheiten brauchen mehrere Anläufe. Wer mag, nimmt sich denselben Plan noch einmal vor – mit demselben Moment."
           },
           {
             "titel": "Aufstellung: zwischen zwei Polen",
@@ -241,7 +241,7 @@
             "titel": "Skill: Achtsames Hören",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: Jetzt kommt ein Skill für Momente, in denen es außen oder innen zu laut wird – in der Kantine, im Bus, wenn der Kopf nicht aufhört. Das Fenster einen Spalt öffnen; alle sitzen bequem, die Füße auf dem Boden. Erste Runde (1 Min.): mit der Klangschale beginnen, alle zählen still an den Fingern, wie viele verschiedene Geräusche sie hören; kurz vergleichen – wer hat mehr als fünf? Zweite Runde (2 Min.): die drei Schritte langsam anleiten (Liste), das leiseste Geräusch suchen, mit der Klangschale enden. Danach zwei, drei Rückmeldungen: Was war das leiseste? Wann könnte das helfen? Zum Schluss erklären: Wer bewusst hinhört, holt die Aufmerksamkeit aus dem Gedankenkarussell ins Hier und Jetzt.",
+            "text": "Ankündigen: Jetzt kommt ein Skill für Momente, in denen es außen oder innen zu laut wird – in der Kantine, im Bus, wenn der Kopf nicht aufhört. Das Fenster einen Spalt öffnen; alle sitzen bequem, die Füße auf dem Boden, Augen zu oder offen auf einen Punkt – beides ist gleich gut. Erste Runde (1 Min.): mit der Klangschale beginnen, alle zählen still an den Fingern, wie viele verschiedene Geräusche sie hören; kurz vergleichen – wer hat mehr als fünf? Zweite Runde (2 Min.): die drei Schritte langsam anleiten (Liste), das leiseste Geräusch suchen, mit der Klangschale enden; länger als diese drei Minuten wird nicht angeleitet. Danach zwei, drei Rückmeldungen: Was war das leiseste? Wann könnte das helfen? Zum Schluss erklären: Wer bewusst hinhört, holt die Aufmerksamkeit aus dem Gedankenkarussell ins Hier und Jetzt.",
             "sagen": [
               "Ihr müsst nichts verändern. Nur hören, was da ist – auch das Ticken der Uhr oder euren eigenen Atem."
             ],
@@ -251,33 +251,36 @@
               "Zurückkommen: den eigenen Atem hören, die Füße spüren, die Augen öffnen."
             ],
             "tipp": "Laute und leise Jugendliche erleben die Übung oft verschieden: Die einen finden die Stille anstrengend, die anderen genießen sie. Beides ist eine wertvolle Beobachtung und passt zum Thema der Stunde.",
-            "wennEsKippt": "Macht jemand absichtlich Geräusche, das ruhig in die Übung nehmen: Auch das ist ein Geräusch – und jetzt sucht das leiseste. Wird es zu unruhig, nach der ersten Runde enden und nächste Woche wiederholen. Niemand muss die Augen schließen."
+            "wennEsKippt": "Macht jemand absichtlich Geräusche, das ruhig in die Übung nehmen: Auch das ist ein Geräusch – und jetzt sucht das leiseste. Wird es zu unruhig, nach der ersten Runde enden und nächste Woche wiederholen. Niemand muss die Augen schließen, und aussteigen ist erlaubt: Wer mag, drückt nur die Füße in den Boden und wartet auf die Klangschale."
           },
           {
-            "titel": "Skills-Pass und Wochen-Mission",
+            "titel": "Skills-Pass, Mission und Moment wählen",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Was habe ich heute über mich gemerkt? Jede Person schreibt einen Satz (2 Min.) und bekommt den Stempel; zwei Freiwillige lesen vor. Dann die Wochen-Mission im Heft zeigen und in einem Satz ansagen: beobachten, wo man eher laut und wo eher leise ist – oder achtsames Hören im Bus ausprobieren. Zum Schluss den Ausblick auf die nächste Stunde geben.",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Was habe ich heute über mich gemerkt? Jede Person schreibt einen Satz und bekommt den Stempel; zwei Freiwillige lesen vor. Mission und Moment wählen (2 Min.): die Wochen-Mission im Heft zeigen und ansagen – in einem festen Moment darauf achten, ob man dort eher laut oder eher leise ist, oder in diesem Moment achtsames Hören ausprobieren. Auf ‚drei‘ zeigen alle ihren Moment: ein Finger für die Pause, zwei für den Esstisch zu Hause, drei für den Bus, Faust für einen eigenen – und schreiben ihn in die Spalte „Mein Moment: Wenn …“ bei den Wochen-Missionen. Ausblick (1 Min.): die nächste Stunde ankündigen.",
             "sagen": [
-              "Ein Satz für den Pass: Was habt ihr heute über euch gemerkt – über eure Art oder beim achtsamen Hören?"
+              "Ein Satz für den Pass: Was habt ihr heute über euch gemerkt – über eure Art oder beim achtsamen Hören?",
+              "Wann kommt euer Moment? Pause – ein Finger, Esstisch – zwei, Bus – drei, ein eigener – die Faust. Schreibt ihn ins Heft: Wenn ich …, dann achte ich darauf, wie laut ich bin – oder dann höre ich hin."
             ],
-            "tipp": "Die A3-Blätter der Teams bis nächste Woche hängen lassen: Beim Baum der Stärke helfen sie, Stärken zu finden, an die sonst niemand denkt."
+            "tipp": "Die A3-Blätter der Teams bis nächste Woche hängen lassen: Beim Baum der Stärke helfen sie, Stärken zu finden, an die sonst niemand denkt. Auch eine Beobachtung braucht einen Auslöser: Wer sich die Pause vorgenommen hat, denkt in der Pause daran.",
+            "wennEsKippt": "Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach. Wer die Sprache noch lernt, malt ein kleines Zeichen für seinen Moment: Pausenhof, Teller, Bus."
           }
         ],
         "bruecke": "Nächste Woche geht es um eure Stärken: Jede und jeder gestaltet einen eigenen Baum – und bekommt von der Klasse Stärken zurück.",
-        "mission": "Beobachte diese Woche, wo du eher laut und wo eher leise bist – in der Klasse, zu Hause, mit Freunden. Oder probiere achtsames Hören einmal im Bus aus.",
-        "hintergrund": "Introversion und Extraversion beschreiben, woher Menschen Energie beziehen: aus Ruhe und Konzentration oder aus Kontakt und Anregung; die meisten liegen dazwischen. Cain (2012) grenzt Introversion deutlich von Schüchternheit ab, der Angst vor Bewertung, und zeigt, dass Schulen oft das Laute belohnen, obwohl leise Menschen eigene Stärken wie Zuhören und gründliches Nachdenken mitbringen. Laute Jugendliche wiederum hören in der Schule oft vor allem Ermahnungen. Im Jugendalter wird das Selbstbild vielschichtiger: Jugendliche erleben sich je nach Umfeld anders und fragen sich, welche Seite die echte ist (Harter, 2012). Das Johari-Fenster (Luft & Ingham, 1955) erklärt, warum ein Blick von außen überraschen kann: Andere sehen manches, bevor man es selbst bemerkt. Weil Fremdbilder in diesem Alter schnell kränken, wählt jede Person selbst, was geraten wird, und jede Vermutung braucht ein beobachtetes Beispiel.",
+        "mission": "Wenn dein Moment kommt – Pause, Esstisch, Bus –, dann achte einmal darauf: Bist du dort eher laut oder eher leise? Oder mach in deinem Moment einmal achtsames Hören.",
+        "hintergrund": "Introversion und Extraversion beschreiben, woher Menschen Energie beziehen: aus Ruhe oder aus Kontakt; die meisten liegen dazwischen. Cain (2012) grenzt Introversion von Schüchternheit ab, der Angst vor Bewertung, und zeigt, dass Schulen oft das Laute belohnen, obwohl leise Menschen eigene Stärken wie Zuhören mitbringen. Im Jugendalter wird das Selbstbild vielschichtiger: Jugendliche erleben sich je nach Umfeld anders (Harter, 2012). Das Johari-Fenster (Luft & Ingham, 1955) erklärt, warum ein Blick von außen überraschen kann: Andere sehen manches zuerst. Über die Wirkung entscheidet die Form: Jugendliche nehmen an, was ihren Status achtet und ihnen die Entscheidung lässt, und lehnen ab, was sie bloßstellt (Yeager, Dahl & Dweck, 2018). Deshalb entscheidet hier jede Person selbst, wo sie steht und was geraten wird, und jede Vermutung braucht ein freundliches, beobachtetes Beispiel.",
         "quellen": [
           "Cain, S. (2012). Quiet: The Power of Introverts in a World That Can’t Stop Talking. New York: Crown.",
           "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
-          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California."
+          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
+          "Yeager, D. S., Dahl, R. E. & Dweck, C. S. (2018). Why interventions to influence adolescent behavior often fail but could succeed. Perspectives on Psychological Science, 13(1), 101–122."
         ],
         "achtung": "Fremdbilder können kränken, auch wenn beide Seiten jeder Linie freundlich formuliert sind. Niemand wird von anderen eingeordnet: Bei der Aufstellung steht jede Person, wo sie will, beim Raten wählt sie die Linien selbst, und ‚heute nicht‘ ist erlaubt. Kommentare wie „Du doch nicht“ sofort stoppen. Nicht nach ‚besten Freunden‘ fragen – nicht alle haben gerade welche. Wird jemand ausgegrenzt, die Paare selbst einteilen oder nur bei der Lehrkraft raten lassen; bei Hinweisen auf Mobbing mit Régent und SePAS nach dem Vorgehen der Schule handeln. Wer nach dem Raten still wird, bekommt nach der Stunde ein kurzes Gespräch.",
         "differenzierung": {
-          "leichter": "Für Jugendliche, die mühsam lesen oder die Sprache noch lernen: Die Pole der Aufstellung zusätzlich mit einer Geste zeigen; auf dem Blatt nur die fünf Linien aus der Aufstellung übertragen, eine Tischnachbarin liest vor. Beim Raten reicht der Satzanfang an der Tafel mit einem Stichwort.",
+          "leichter": "Für Jugendliche, die mühsam lesen oder die Sprache noch lernen: Die Pole der Aufstellung zusätzlich mit einer Geste zeigen; auf dem Blatt nur die fünf Linien aus der Aufstellung übertragen, eine Tischnachbarin liest vor. Beim Raten reicht der Satzanfang an der Tafel mit einem Stichwort. Für die Spalte „Mein Moment“ reicht ein Wort: Pause, Bus.",
           "schwerer": "Eine Linie wählen, bei der Kreuz und Vermutung weit auseinanderlagen, und aufschreiben: In welchen Situationen zeige ich die Seite, die die anderen sehen? In der Teamaufgabe die Moderation übernehmen und darauf achten, dass auch die Leisen zu Wort kommen – oder auf der sechsten Karte ein eigenes Projekt erfinden."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt und Hand-Höhe (5 Min.), Aufstellung mit drei Gegensätzen (10 Min.), Tafelbild und Aufgabe 1 (10 Min.), Rate mal – erst bei der Lehrkraft, dann zu zweit (13 Min.), achtsames Hören (7 Min.), Skills-Pass und Wochen-Mission (5 Min.). Die Teamaufgabe entfällt; den Satz „Eine Klasse braucht beide Seiten“ sagt die Lehrkraft beim Tafelbild."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klebepunkt und Hand-Höhe (5 Min.), Aufstellung mit drei Gegensätzen (10 Min.), Tafelbild und Aufgabe 1 (10 Min.), Rate mal – erst bei der Lehrkraft, dann zu zweit (13 Min.), achtsames Hören (7 Min.), Skills-Pass, Mission und Moment wählen (5 Min.). Die Teamaufgabe entfällt; den Satz „Eine Klasse braucht beide Seiten“ sagt die Lehrkraft beim Tafelbild."
       },
       "fr": {
         "titel": "Entre expansif et réservé",
@@ -347,7 +350,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass et mission de la semaine"
+            "titel": "Skills-Pass, mission et choix du moment"
           }
         ],
         "schritte": [
@@ -367,11 +370,11 @@
             "titel": "Retour : le bocal, la mission et le thème",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Demander ensuite brièvement des nouvelles de la mission de la semaine : qui a essayé son petit pas ou la respiration 4-7-8 ? Pouce en haut, au milieu ou en bas – une personne raconte, personne n’est obligé de l’avoir réussie. Poser le bocal des besoins sur le bureau et montrer la photo des bâtons : ces réservoirs comptent pour beaucoup d’entre nous. Puis écrire le thème au tableau : Entre expansif et réservé – comment suis-je ? Et comment les autres me voient-ils ?",
+            "text": "Un jeune lit la phrase de son Skills-Pass de la dernière séance. Pour la mission de la semaine, demander : votre moment est-il arrivé – et avez-vous fait votre petit pas ou la respiration 4-7-8 ? Pouce en haut, au milieu ou en bas – une voix raconte, personne n’est obligé d’avoir vécu son moment. Poser le bocal des besoins sur le bureau et montrer la photo des bâtons : ces réservoirs comptent pour beaucoup d’entre nous. Puis écrire le thème au tableau : Entre expansif et réservé – comment suis-je ? Et comment les autres me voient-ils ?",
             "sagen": [
               "La semaine dernière, on a parlé de ce dont vous avez besoin. Aujourd’hui, on parle de comment vous êtes – et aucune manière d’être n’est meilleure que l’autre."
             ],
-            "tipp": "Si presque personne n’a réussi la mission, le prendre avec calme : une nouvelle habitude demande plusieurs essais. Qui le souhaite se fixe le même petit pas pour cette semaine."
+            "tipp": "Si, pour beaucoup, le moment n’est pas venu ou le pas a été oublié, le prendre avec calme : une nouvelle habitude demande plusieurs essais. Qui le souhaite reprend le même plan – avec le même moment."
           },
           {
             "titel": "Se placer : entre deux pôles",
@@ -484,7 +487,7 @@
             "titel": "Skill : l’écoute attentive",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : voici un skill pour les moments où c’est trop bruyant, dehors ou dans la tête – à la cantine, dans le bus, quand les pensées tournent en boucle. Entrouvrir la fenêtre ; tout le monde s’assoit confortablement, les pieds au sol. Premier tour (1 min) : commencer avec le bol chantant ; chacun compte en silence sur ses doigts combien de sons différents il entend ; comparer brièvement – qui en a plus de cinq ? Deuxième tour (2 min) : guider lentement les trois étapes (liste), chercher le son le plus faible, finir avec le bol. Recueillir ensuite deux ou trois retours : quel était le son le plus faible ? Quand est-ce que ça pourrait aider ? Pour finir, expliquer : écouter attentivement ramène l’attention ici et maintenant, loin du manège des pensées.",
+            "text": "Annoncer : voici un skill pour les moments où c’est trop bruyant, dehors ou dans la tête – à la cantine, dans le bus, quand les pensées tournent en boucle. Entrouvrir la fenêtre ; tout le monde s’assoit confortablement, les pieds au sol, les yeux fermés ou ouverts sur un point – les deux se valent. Premier tour (1 min) : commencer avec le bol chantant ; chacun compte en silence sur ses doigts combien de sons différents il entend ; comparer brièvement – qui en a plus de cinq ? Deuxième tour (2 min) : guider lentement les trois étapes (liste), chercher le son le plus faible, finir avec le bol ; on ne guide pas plus longtemps que ces trois minutes. Recueillir ensuite deux ou trois retours : quel était le son le plus faible ? Quand est-ce que ça pourrait aider ? Pour finir, expliquer : écouter attentivement ramène l’attention ici et maintenant, loin du manège des pensées.",
             "sagen": [
               "Vous n’avez rien à changer. Écoutez seulement ce qui est là – même le tic-tac de l’horloge ou votre propre respiration."
             ],
@@ -494,33 +497,36 @@
               "Revenir : écouter ta respiration, sentir tes pieds, ouvrir les yeux."
             ],
             "tipp": "Les jeunes expansifs et réservés vivent souvent l’exercice différemment : les uns trouvent le silence pénible, les autres l’apprécient. Les deux sont des observations précieuses, en plein dans le thème de la séance.",
-            "wennEsKippt": "Si quelqu’un fait exprès du bruit, l’intégrer calmement : c’est aussi un son – et maintenant, cherchez le plus faible. Si la classe s’agite trop, terminer après le premier tour et recommencer la semaine prochaine. Personne n’est obligé de fermer les yeux."
+            "wennEsKippt": "Si quelqu’un fait exprès du bruit, l’intégrer calmement : c’est aussi un son – et maintenant, cherchez le plus faible. Si la classe s’agite trop, terminer après le premier tour et recommencer la semaine prochaine. Personne n’est obligé de fermer les yeux, et on peut sortir de l’exercice : qui le souhaite appuie seulement ses pieds dans le sol et attend le bol chantant."
           },
           {
-            "titel": "Skills-Pass et mission de la semaine",
+            "titel": "Skills-Pass, mission et choix du moment",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire la question du Skills-Pass au tableau : qu’est-ce que j’ai remarqué sur moi aujourd’hui ? Chaque jeune écrit une phrase (2 min) et reçoit le tampon ; deux volontaires lisent la leur. Montrer ensuite la mission de la semaine dans le cahier et l’annoncer en une phrase : observer où son volume monte et où il baisse – ou essayer l’écoute attentive dans le bus. Pour finir, annoncer la prochaine séance.",
+            "text": "Skills-Pass (2 min) : écrire la question au tableau – qu’est-ce que j’ai remarqué sur moi aujourd’hui ? Chaque jeune écrit une phrase et reçoit le tampon ; deux volontaires lisent la leur. Mission et choix du moment (2 min) : montrer la mission de la semaine dans le cahier et l’annoncer – à un moment précis, observer si l’on y est plutôt expansif ou plutôt réservé, ou y essayer l’écoute attentive. À « trois », tout le monde montre son moment : un doigt pour la récré, deux pour la table du dîner, trois pour le bus, le poing pour un moment à soi – et l’écrit dans la colonne « Mon moment : quand … » des missions de la semaine. Pour finir (1 min) : annoncer la prochaine séance.",
             "sagen": [
-              "Une phrase pour le Skills-Pass : qu’avez-vous remarqué sur vous aujourd’hui – sur votre manière d’être ou pendant l’écoute attentive ?"
+              "Une phrase pour le Skills-Pass : qu’avez-vous remarqué sur vous aujourd’hui – sur votre manière d’être ou pendant l’écoute attentive ?",
+              "Quand arrive votre moment ? Récré – un doigt, table du dîner – deux, bus – trois, un moment à vous – le poing. Écrivez-le dans le cahier : quand je…, alors j’observe mon volume – ou alors j’écoute."
             ],
-            "tipp": "Laisser les feuilles A3 des équipes au mur jusqu’à la semaine prochaine : pour l’arbre des forces, elles aident à trouver des forces auxquelles personne ne pense."
+            "tipp": "Laisser les feuilles A3 des équipes au mur jusqu’à la semaine prochaine : pour l’arbre des forces, elles aident à trouver des forces auxquelles personne ne pense. Une observation aussi a besoin d’un déclencheur : qui a choisi la récré y pense à la récré.",
+            "wennEsKippt": "Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne lui posera la question. Qui apprend encore la langue dessine un petit signe pour son moment : cour, assiette, bus."
           }
         ],
         "bruecke": "La semaine prochaine, on parle de vos forces : chacun dessine son propre arbre – et reçoit de la classe les forces qu’elle voit en lui.",
-        "mission": "Observe cette semaine où ton volume monte et où il baisse – en classe, à la maison, avec tes amis. Ou essaie une fois l’écoute attentive dans le bus.",
-        "hintergrund": "L’introversion et l’extraversion décrivent où l’on puise son énergie : dans le calme et la concentration, ou dans le contact et l’animation ; la plupart des gens se situent entre les deux. Cain (2012) distingue l’introversion de la timidité, qui est la peur d’être jugé, et montre que l’école récompense souvent ce qui fait du bruit, alors que les personnes discrètes ont leurs propres forces, comme l’écoute et la réflexion. Les jeunes expansifs, eux, entendent surtout des remarques. À l’adolescence, l’image de soi devient plus complexe : les jeunes se vivent différemment selon le contexte et se demandent quelle facette est la vraie (Harter, 2012). La fenêtre de Johari (Luft & Ingham, 1955) explique pourquoi un regard extérieur peut surprendre : les autres voient certaines choses avant nous. Comme le regard des autres blesse vite à cet âge, chacun choisit ce qui peut être deviné, et chaque supposition s’appuie sur un exemple observé.",
+        "mission": "Quand ton moment arrive – récré, table du dîner, bus –, observe une fois : es-tu plutôt expansif ou plutôt réservé ? Ou fais à ce moment-là une fois l’écoute attentive.",
+        "hintergrund": "L’introversion et l’extraversion décrivent où l’on puise son énergie : dans le calme ou le contact ; la plupart sont entre les deux. Cain (2012) distingue l’introversion de la timidité, la peur d’être jugé, et montre que l’école récompense souvent le bruit, alors que les discrets ont leurs propres forces, comme l’écoute. À l’adolescence, l’image de soi se complexifie : les jeunes se vivent différemment selon le contexte (Harter, 2012). La fenêtre de Johari (Luft & Ingham, 1955) explique pourquoi un regard extérieur peut surprendre : les autres voient certaines choses avant nous. La forme décide de l’effet : les jeunes acceptent ce qui respecte leur statut et leur laisse la décision, et rejettent ce qui les expose (Yeager, Dahl & Dweck, 2018). D’où la règle : chacun décide où il se place et ce qui peut être deviné, et chaque supposition s’appuie sur un exemple observé et bienveillant.",
         "quellen": [
           "Cain, S. (2012). Quiet: The Power of Introverts in a World That Can’t Stop Talking. New York: Crown.",
           "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
-          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California."
+          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
+          "Yeager, D. S., Dahl, R. E. & Dweck, C. S. (2018). Why interventions to influence adolescent behavior often fail but could succeed. Perspectives on Psychological Science, 13(1), 101–122."
         ],
         "achtung": "Le regard des autres peut blesser, même si les deux côtés de chaque ligne sont formulés de façon positive. Personne n’est classé par les autres : pour se placer, chacun va où il veut ; pour deviner, chacun choisit ses lignes, et « pas aujourd’hui » est permis. Arrêter tout de suite les commentaires comme « Toi ? Jamais ». Ne pas parler de « meilleurs amis » – tout le monde n’en a pas en ce moment. Si un jeune est mis à l’écart, former soi-même les paires ou ne deviner que chez l’enseignant·e ; en cas de signes de harcèlement, agir avec le régent et le SePAS selon la procédure de l’école. Qui devient silencieux après l’exercice a droit à un court entretien après le cours.",
         "differenzierung": {
-          "leichter": "Pour les jeunes qui ont du mal à lire ou qui apprennent encore la langue : montrer aussi les pôles par un geste ; sur la fiche, reporter seulement les cinq lignes de l’exercice au sol, une voisine lit à voix haute. Pour deviner, le début de phrase au tableau et un mot-clé suffisent.",
+          "leichter": "Pour les jeunes qui ont du mal à lire ou qui apprennent encore la langue : montrer aussi les pôles par un geste ; sur la fiche, reporter seulement les cinq lignes de l’exercice au sol, une voisine lit à voix haute. Pour deviner, le début de phrase au tableau et un mot-clé suffisent. Pour la colonne « Mon moment », un mot suffit : récré, bus.",
           "schwerer": "Choisir une ligne où la croix et la supposition étaient très éloignées et noter : dans quelles situations est-ce que je montre le côté que les autres voient ? Pendant le travail d’équipe, animer le groupe et veiller à ce que les plus réservés aient aussi la parole – ou inventer un projet sur la sixième carte."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et hauteur de la main (5 min), se placer sur trois contraires (10 min), tableau et exercice 1 (10 min), devine – d’abord chez l’enseignant·e, puis à deux (13 min), écoute attentive (7 min), Skills-Pass et mission de la semaine (5 min). Le travail d’équipe est supprimé ; la phrase « une classe a besoin des deux côtés » est dite au moment du tableau."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et hauteur de la main (5 min), se placer sur trois contraires (10 min), tableau et exercice 1 (10 min), devine – d’abord chez l’enseignant·e, puis à deux (13 min), écoute attentive (7 min), Skills-Pass, mission et choix du moment (5 min). Le travail d’équipe est supprimé ; la phrase « une classe a besoin des deux côtés » est dite au moment du tableau."
       }
     }
   ],

@@ -112,7 +112,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass und Wochen-Mission"
+            "titel": "Skills-Pass, Moment wählen und Wochen-Mission"
           }
         ],
         "schritte": [
@@ -132,18 +132,19 @@
             "titel": "Rückblick: Heute seid ihr Detektive",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Per Daumen nach der Wochen-Mission fragen: Wer hat sich einmal gesagt, was eine gute Freundin sagen würde, oder den Dankbarkeitsblitz gemacht? Eine Stimme erzählt, niemand muss es geschafft haben. Dann das Bild des Detektivs einführen: Ein guter Detektiv glaubt nichts, nur weil es jemand behauptet – auch nicht der eigenen inneren Stimme. Er sammelt Beweise für beide Seiten und urteilt erst dann. Die Verbindung zu „Echt oder fake?“ ziehen: Auch dort hieß es, erst prüfen, dann glauben.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Dann zur Wochen-Mission – sich sagen, was eine gute Freundin sagen würde, oder der Dankbarkeitsblitz: Kam euer Moment – ein Test, das Vergleichen, abends im Bett – und was habt ihr gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt, niemand muss es geschafft haben. Dann das Bild des Detektivs einführen: Ein guter Detektiv glaubt nichts, nur weil es jemand behauptet – auch nicht der eigenen inneren Stimme. Er sammelt Beweise für beide Seiten und urteilt erst dann. Die Verbindung zu „Echt oder fake?“ ziehen: Auch dort hieß es, erst prüfen, dann glauben.",
             "sagen": [
+              "Kam euer Moment – und was habt ihr gemacht? Daumen, dann eine Stimme.",
               "Eure innere Stimme behauptet manchmal Dinge wie: Du bist dumm. Heute prüft ihr, ob sie dafür Beweise hat.",
               "Ein Detektiv ist weder nett noch gemein. Er will nur wissen, was stimmt."
             ],
-            "tipp": "Ein Requisit wirkt Wunder: eine Lupe, eine Kappe oder ein Notizblock, mit dem die Lehrkraft in die Rolle der Ermittlerin schlüpft. Die meisten 7e machen da sofort mit."
+            "tipp": "Ist die Wahlstunde 28 entfallen, nach der Mission von Stunde 27 fragen: Kam euer Moment – eine Nachricht ohne Antwort, ein Lachen, ein Test – und habt ihr den ersten Gedanken ertappt und einen zweiten gefunden? Die Frage, was eine gute Freundin sagen würde, lernt die Klasse dann heute am Fall Mathis kennen. Ein Requisit wirkt Wunder: eine Lupe, eine Kappe oder ein Notizblock, mit dem die Lehrkraft in die Rolle der Ermittlerin schlüpft."
           },
           {
             "titel": "Die Detektiv-Methode: der Fall Mathis",
             "dauer": 13,
             "phase": "input",
-            "text": "Auf das Tafelbild zeigen: Mathis, 13, hat im Mathetest 22 von 60 Punkten und denkt: „Ich bin dumm.“ Zuerst klären, was ein Beweis ist: etwas, das wirklich passiert ist und das eine Kamera filmen könnte. „22 von 60“ ist eine Tatsache, „dumm“ ist ein Urteil, „Ich fühle mich so dumm“ ist ein Gefühl (3 Min.). Dann die Waage gemeinsam füllen: Die Lehrkraft liest die Spuren aus der Tabelle nacheinander vor, die Klasse zeigt mit dem Arm auf die Seite der Waage, auf die sie gehört, und die Lehrkraft schreibt sie dort an. Dazwischen zwei Spuren, die keine Beweise sind – „Ich fühle mich in Mathe so dumm“ und „Mein Bruder sagt, ich bin dumm“ –; sie kommen neben die Waage und werden durchgestrichen (4 Min.). Dann die Detektivfragen vorstellen (Liste) und eine an Mathis ausprobieren: Was würde sein bester Kumpel sagen? (3 Min.) Zum Schluss das Urteil: Nicht „Ich bin dumm“ stimmt, sondern „Mathe fällt mir schwer“. Daraus wird mit den drei Regeln vom Plakat der neue Satz: „Mathe fällt mir schwer, aber wenn ich übe und nachfrage, werde ich besser.“ (3 Min.)",
+            "text": "Auf das Tafelbild zeigen: Mathis, 13, hat im Mathetest 22 von 60 Punkten und denkt: „Ich bin dumm.“ Zuerst klären, was ein Beweis ist: etwas, das wirklich passiert ist und das eine Kamera filmen könnte. „22 von 60“ ist eine Tatsache, „dumm“ ist ein Urteil, „Ich fühle mich so dumm“ ist ein Gefühl (3 Min.). Dann die Waage gemeinsam füllen: Die Lehrkraft liest die Spuren aus der Tabelle nacheinander vor, die Klasse zeigt mit dem Arm auf die Seite der Waage, auf die sie gehört, und die Lehrkraft schreibt sie dort an. Dazwischen zwei Spuren, die keine Beweise sind – „Ich fühle mich in Mathe so dumm“ und „Mein Bruder sagt, ich bin dumm“ –; sie kommen neben die Waage und werden durchgestrichen (4 Min.). Dann die Detektivfragen vorstellen (Liste) und die Freundes-Frage an Mathis ausprobieren – wer die Wahlstunde hatte, kennt sie von den Plakaten, alle anderen lernen sie hier: Was würde sein bester Kumpel sagen? (3 Min.) Zum Schluss das Urteil: Nicht „Ich bin dumm“ stimmt, sondern „Mathe fällt mir schwer“. Daraus wird mit den drei Regeln vom Plakat der neue Satz: „Mathe fällt mir schwer, aber wenn ich übe und nachfrage, werde ich besser.“ (3 Min.)",
             "sagen": [
               "Ist das ein Beweis oder ein Gefühl? Würde das vor Gericht zählen?",
               "Die Beweise dafür lassen wir stehen. Sie stimmen ja – aber sie beweisen nur einen kleineren Satz."
@@ -262,7 +263,7 @@
             "titel": "Mein Satz vor Gericht",
             "dauer": 17,
             "phase": "uebung",
-            "text": "Zum Umschalten nach dem Duell (2 Min.): Musik an, dreimal gemeinsam langsam ausatmen, Sichtschutz wie letzte Woche. Jede Person wählt still einen Satz: einen eigenen vom Blatt „Meine Glaubenssätze“, eine Karte vom Pult oder den Satz einer Figur aus der letzten Stunde – zum Üben lieber einen mittleren als den schwersten. Niemand muss sagen, welchen. Aufgabe 1 (2 Min.): den verdächtigen Satz aufschreiben und ankreuzen, wie sehr man ihn glaubt. Aufgabe 2 (6 Min.): Beweise auf die Waage; die Detektivfragen im Kasten helfen, wenn eine Seite leer bleibt. Aufgabe 3 (4 Min.): Urteil – Was stimmt wirklich? – und neu ankreuzen. Aufgabe 4 (3 Min.): ein neuer Satz mit den drei Regeln; wer schnell ist, plant mit Aufgabe 5 eine Situation. Die Lehrkraft sagt jeweils an, wann die nächste Aufgabe beginnt, geht herum und hilft auf Nachfrage, vor allem bei der rechten Seite der Waage; sie liest nur, was ihr gezeigt wird.",
+            "text": "Zum Umschalten nach dem Duell (2 Min.): Musik an, dreimal gemeinsam langsam ausatmen, jede Person stellt einen Ordner oder ein Buch als Sichtschutz auf. Jede Person wählt still einen Satz: einen eigenen – vom Blatt „Meine Glaubenssätze“, wenn die Wahlstunde gehalten wurde, sonst einen, der nur im Kopf steht –, eine Karte vom Pult oder den Satz einer Fallakte; zum Üben lieber einen mittleren als den schwersten. Niemand muss sagen, welchen. Aufgabe 1 (2 Min.): den verdächtigen Satz aufschreiben und ankreuzen, wie sehr man ihn glaubt. Aufgabe 2 (6 Min.): Beweise auf die Waage; die Detektivfragen im Kasten helfen, wenn eine Seite leer bleibt. Aufgabe 3 (4 Min.): Urteil – Was stimmt wirklich? – und neu ankreuzen. Aufgabe 4 (3 Min.): ein neuer Satz mit den drei Regeln; wer schnell ist, plant mit Aufgabe 5 eine Situation. Die Lehrkraft sagt jeweils an, wann die nächste Aufgabe beginnt, geht herum und hilft auf Nachfrage, vor allem bei der rechten Seite der Waage; sie liest nur, was ihr gezeigt wird.",
             "sagen": [
               "Ihr entscheidet, welchen Satz ihr vor Gericht stellt – zum Üben reicht ein mittlerer. Niemand muss wissen, welchen.",
               "Schreibt Gegenbeweise auch dann auf, wenn ihr selbst noch nicht ganz überzeugt seid.",
@@ -288,43 +289,46 @@
             "titel": "Skill: Die freundliche Stimme",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: ein Skill für Momente, in denen die innere Stimme streng wird. Alle sitzen bequem, Augen zu oder Blick auf den Tisch. Wer mag, legt eine Hand auf die Brust oder den Unterarm; wer nicht möchte, lässt die Hände im Schoß. Die Lehrkraft spricht die drei Sätze langsam vor (Liste), alle sprechen sie innerlich mit; nach jedem Satz zwei Atemzüge Pause (3 Min.). Zweite Runde: Jede Person denkt an eine kleine schwierige Situation der letzten Tage – einen verpatzten Test, einen Streit, einen verpassten Bus – und spricht die drei Sätze innerlich dazu (3 Min.). Danach zwei, drei Rückmeldungen und erklären: Das ist die Stimme, mit der ihr mit einem guten Freund reden würdet; ihr dürft sie auch für euch benutzen (4 Min.).",
+            "text": "Ankündigen: ein Skill für Momente, in denen die innere Stimme streng wird. Alle sitzen bequem; Augen zu oder offen ist beides richtig, und wer aussteigen will, drückt die Füße in den Boden und schaut sich im Raum um. Wer mag, legt eine Hand auf die Brust oder den Unterarm; wer nicht möchte, lässt die Hände im Schoß (1 Min.). Die Lehrkraft spricht die drei Sätze langsam vor (Liste), alle sprechen sie innerlich mit; nach jedem Satz zwei Atemzüge Pause – höchstens drei Minuten angeleitet (3 Min.). Zweite Runde laut zu zweit (2 Min.): Die Lehrkraft nennt eine kleine Panne – Bus verpasst, Test verpatzt, Streit mit einer Freundin –, und die Paare sagen einander die drei Sätze in der Du-Form – „Das ist gerade schwer. So geht es vielen, du bist nicht allein. Was brauchst du jetzt?“ –, erst A für B, dann B für A, so freundlich, wie man mit einem guten Freund redet. Danach zwei, drei Rückmeldungen und erklären (4 Min.): Das ist die Stimme, mit der ihr mit einem guten Freund reden würdet; ihr dürft sie auch für euch benutzen – laut zu zweit hört man, wie anders sie klingt als die strenge.",
             "sagen": [
-              "Ihr müsst die Sätze nicht glauben. Probiert nur aus, wie sie sich anfühlen."
+              "Ihr müsst die Sätze nicht glauben. Probiert nur aus, wie sie sich anfühlen.",
+              "Sagt die Sätze eurem Partner so, wie ihr sie einem guten Freund sagen würdet – nicht wie ein Lehrer."
             ],
             "punkte": [
               "Sag dir: „Das ist gerade schwer.“",
               "Sag dir: „So geht es vielen. Ich bin damit nicht allein.“",
               "Frag dich: „Was brauche ich jetzt?“ – und sei so freundlich zu dir wie zu einem guten Freund."
             ],
-            "tipp": "Die Hand auf der Brust ist ein Angebot, keine Pflicht. Mit einer kleinen Situation üben, nie mit der schwersten: Einen Skill übt man, solange das Meer ruhig ist.",
-            "wennEsKippt": "Wird gekichert („Ich red doch nicht mit mir selbst“), gelassen bleiben: Das tut ihr sowieso den ganzen Tag – die Frage ist nur, in welchem Ton. Wird jemand während der Übung traurig, leise anbieten, die Augen zu öffnen und die Füße fest auf den Boden zu stellen; nach der Stunde nachfragen."
+            "tipp": "Die Hand auf der Brust ist ein Angebot, keine Pflicht. Mit einer kleinen Situation üben, nie mit der schwersten: Einen Skill übt man, solange das Meer ruhig ist. Die laute Runde zu zweit ist kein Ersatz für die stille, sondern ihr Gegengewicht – kurz, aktiv, mit Wahl.",
+            "wennEsKippt": "Wird gekichert („Ich red doch nicht mit mir selbst“), gelassen bleiben: Das tut ihr sowieso den ganzen Tag – die Frage ist nur, in welchem Ton. Wer die stille Runde nicht mag, steigt aus und macht nur die laute zu zweit mit; auch das übt den Skill. Wird jemand während der Übung traurig, leise anbieten, die Augen zu öffnen und die Füße fest auf den Boden zu stellen; nach der Stunde nachfragen."
           },
           {
-            "titel": "Skills-Pass und Wochen-Mission",
+            "titel": "Skills-Pass, Moment wählen und Wochen-Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Welche Detektivfrage hilft mir am meisten? Beispiel: Ein Gedanke ist eine Vermutung – ich kann ihn prüfen. Jede Person schreibt ihren Satz (2 Min.), die Lehrkraft geht mit dem Stempel herum. Das Detektivblatt bleibt im Heft, das Kärtchen geht mit. Dann die Wochen-Mission ansagen und den Ausblick geben: Nächste Woche werden die Kärtchen gebraucht.",
+            "text": "Skills-Pass (2 Min.): die Leitfrage an die Tafel schreiben – Welche Detektivfrage hilft mir am meisten? Beispiel: Ein Gedanke ist eine Vermutung – ich kann ihn prüfen. Jede Person schreibt ihren Satz, die Lehrkraft geht mit dem Stempel herum. Moment wählen (1 Min.): die Wochen-Mission im Heft vorlesen – wenn mein Moment kommt, dann lese ich meinen neuen Satz vom Kärtchen und schaue, was passiert. Auf drei zeigen alle, wo sich der alte Satz am ehesten meldet: ein Finger für einen Test oder eine Note, zwei für die Tafel oder einen Vortrag, drei für die Pause oder den Chat, die Faust für einen eigenen Moment; wer Aufgabe 5 geschafft hat, nimmt den Wenn-Teil von dort. Dann schreibt jede Person ihren Moment in die Spalte „Mein Moment: Wenn …“, ein Stichwort reicht. Ausblick (2 Min.): Das Detektivblatt bleibt im Heft, das Kärtchen geht mit; nächste Woche werden die Kärtchen gebraucht.",
             "sagen": [
+              "Eure Mission: Wenn euer Moment kommt – ein Test, die Tafel, die Pause –, dann lest ihr euren neuen Satz vom Kärtchen und schaut, was passiert. Wählt jetzt euren Moment.",
               "Nächste Woche bringt ihr euer Kärtchen mit – dann testen wir die neuen Sätze im Rollenspiel."
             ],
-            "tipp": "Wer sein Kärtchen erfahrungsgemäß verliert, darf eine zweite Karte mit demselben Satz ins Heft legen; so ist der Satz nächste Woche auf jeden Fall da. Nach der Stunde die Glaubenssatz-Karten zurück in ihre Umschläge sortieren: Einheit 30 braucht die Kartenpaare für den Glaubenssatz-Baum."
+            "tipp": "Wer sein Kärtchen erfahrungsgemäß verliert, darf eine zweite Karte mit demselben Satz ins Heft legen; so ist der Satz nächste Woche auf jeden Fall da. Der Moment darf privat bleiben, der neue Satz auch. Nach der Stunde die Glaubenssatz-Karten zurück in ihre Umschläge sortieren: Einheit 30 braucht die Kartenpaare für den Glaubenssatz-Baum.",
+            "wennEsKippt": "Wer keinen Moment wählen will, lässt die Spalte leer – nächste Woche fragt niemand nach; wer die Sprache noch lernt, malt ein Zeichen: Blatt, Tafel, Handy. Findet jemand Kärtchen und Moment kindisch, reicht eine Notiz im Handy mit demselben Satz – und ein Moment, der sicher kommt, etwa der nächste Test."
           }
         ],
         "bruecke": "Nächste Woche testet ihr eure neuen Sätze im Rollenspiel und schaut, was sich verändert, wenn man nach ihnen handelt – bringt eure Kärtchen mit.",
-        "mission": "Trag dein Kärtchen diese Woche bei dir. Wenn sich der alte Satz meldet, lies den neuen – und schau, was dann passiert.",
-        "hintergrund": "Die Detektivarbeit überträgt zentrale Techniken der kognitiven Verhaltenstherapie in eine jugendgerechte Form: Belege für und gegen einen Gedanken prüfen, sokratisch nachfragen und die Überzeugung vorher und nachher in Zahlen einschätzen (Beck, 2011). Gearbeitet wird zuerst an erfundenen Fällen, dann – mit freier Wahl – an einem eigenen Satz. Fragen wie „Was würde eine Freundin sagen?“ schaffen Abstand zum eigenen Erleben; solches Selbst-Distanzieren senkt die Belastung beim Nachdenken über Schwieriges (Kross & Ayduk, 2017). Die drei Regeln verhindern bloßes Schönreden: Hilfreich ist ein realistischer Satz, der sagt, was man tun kann. Die freundliche Stimme am Ende folgt dem Konzept des Selbstmitgefühls: sich selbst in schweren Momenten so zu behandeln wie einen guten Freund (Neff, 2003).",
+        "mission": "Wenn dein Moment kommt – ein Test, die Tafel, die Pause –, dann lies deinen neuen Satz vom Kärtchen und schau, was dann passiert. Trag das Kärtchen deshalb bei dir.",
+        "hintergrund": "Grundlage ist die Technik „Belege prüfen“ der kognitiven Verhaltenstherapie: Beweise für und gegen einen Gedanken sammeln, nachfragen und die Überzeugung vorher und nachher in Zahlen einschätzen (Beck, 2011). Fragen wie „Was würde eine Freundin sagen?“ nutzen das Selbst-Distanzieren, das die Belastung beim Nachdenken über Schwieriges senkt (Kross & Ayduk, 2017). Die drei Regeln für den neuen Satz verhindern Schönreden und tragen die einzige Selbstbild-Botschaft, die bei leistungsschwächeren Jugendlichen messbar wirkt: kurz, konkret, mit Platz zum Besserwerden. In einem landesweiten Experiment hob eine kurze Botschaft dieser Art die Noten – wenig, aber messbar, am stärksten bei denen, die schlecht standen (Yeager et al., 2019); daher der Kasten „Aus der Forschung“. Die freundliche Stimme folgt dem Selbstmitgefühl: sich in schweren Momenten wie einen guten Freund behandeln (Neff, 2003).",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
-          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
-          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Yeager, D. S., Hanselman, P., Walton, G. M., Murray, J. S., Crosnoe, R., Muller, C. et al. (2019). A national experiment reveals where a growth mindset improves achievement. Nature, 573(7774), 364–369."
         ],
         "achtung": "Beim Beweise-Sammeln kann deutlich werden, dass ein Satz einen wahren Kern hat, etwa wenn jemand tatsächlich ausgegrenzt oder abgewertet wird. Dann nicht wegdiskutieren und nicht zum Umformulieren drängen: ernst nehmen und nach der Stunde besprechen, wer helfen kann. Im Gegensatz-Duell nur Sätze von den Karten, nie aus persönlichen Blättern. Bei Hinweisen auf starke Selbstabwertung, Selbstverletzung, Suizidgedanken oder Gewalt nicht vor der Klasse vertiefen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr nicht allein lassen, 112.",
         "differenzierung": {
-          "leichter": "Bei den Fallakten liest eine Person, die gut liest, vor; die anderen sortieren die Buchstaben. Auf dem Detektivblatt reichen Aufgabe 1 und 2 in Stichworten; den neuen Satz darf man von der Tafel oder einer hilfreichen Karte übernehmen und in der eigenen Sprache schreiben.",
+          "leichter": "Bei den Fallakten liest eine Person, die gut liest, vor; die anderen sortieren die Buchstaben. Auf dem Detektivblatt reichen Aufgabe 1 und 2 in Stichworten; den neuen Satz darf man von der Tafel oder einer hilfreichen Karte übernehmen und in der eigenen Sprache schreiben. Für die Spalte „Mein Moment“ reicht ein Wort oder ein Zeichen.",
           "schwerer": "Aufgabe 5 des Detektivblatts: vorhersagen, wo sich der neue Satz nächste Woche bewähren muss, und einen Wenn-dann-Plan dazu schreiben. Beim Gegensatz-Duell die Schiedsrichterrolle übernehmen und begründen, welche Regel ein Gegensatz verletzt."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), der Fall Mathis an der Tafel (10 Min.), eine Fallakte in Tischgruppen (10 Min.), Mein Satz vor Gericht mit den Aufgaben 1, 2 und 4 (15 Min.), Kärtchen (5 Min.), Skills-Pass und Wochen-Mission (5 Min.). Das Gegensatz-Duell und die freundliche Stimme lassen sich an den Anfang der nächsten Stunde verschieben."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), der Fall Mathis an der Tafel (10 Min.), eine Fallakte in Tischgruppen (10 Min.), Mein Satz vor Gericht mit den Aufgaben 1, 2 und 4 (15 Min.), Kärtchen (5 Min.), Skills-Pass, Moment wählen und Wochen-Mission (5 Min.). Das Gegensatz-Duell und die freundliche Stimme lassen sich an den Anfang der nächsten Stunde verschieben."
       },
       "fr": {
         "titel": "Le détective critique",
@@ -401,7 +405,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Skills-Pass et mission de la semaine"
+            "titel": "Skills-Pass, choisir son moment et mission de la semaine"
           }
         ],
         "schritte": [
@@ -421,18 +425,19 @@
             "titel": "Retour : aujourd’hui, vous êtes détectives",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass. Demander avec le pouce où en est la mission de la semaine : qui s’est dit une fois ce qu’une bonne amie aurait dit, ou a fait l’éclair de gratitude ? Une voix raconte, personne n’est obligé de l’avoir réussie. Puis introduire l’image du détective : un bon détective ne croit rien simplement parce que quelqu’un l’affirme – pas même sa propre petite voix intérieure. Il rassemble des preuves des deux côtés et ne juge qu’ensuite. Faire le lien avec « Vrai ou faux ? » : là aussi, on vérifiait avant de croire.",
+            "text": "Un jeune lit la phrase de son Skills-Pass. Puis la mission de la semaine – se dire ce qu’une bonne amie dirait, ou l’éclair de gratitude : votre moment est-il venu – un devoir en classe, les comparaisons, le soir au lit – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas ; une voix raconte, personne n’est obligé d’avoir réussi. Puis introduire l’image du détective : un bon détective ne croit rien simplement parce que quelqu’un l’affirme – pas même sa propre petite voix intérieure. Il rassemble des preuves des deux côtés et ne juge qu’ensuite. Faire le lien avec « Vrai ou faux ? » : là aussi, on vérifiait avant de croire.",
             "sagen": [
+              "Votre moment est-il venu – et qu’avez-vous fait ? Le pouce, puis une voix.",
               "Votre petite voix intérieure affirme parfois des choses comme : tu es nul. Aujourd’hui, vous vérifiez si elle a des preuves.",
               "Un détective n’est ni gentil ni méchant. Il veut juste savoir ce qui est vrai."
             ],
-            "tipp": "Un accessoire fait des merveilles : une loupe, une casquette ou un carnet avec lequel l’enseignant·e se glisse dans le rôle de l’enquêteur. La plupart des classes de 7e se prennent tout de suite au jeu."
+            "tipp": "Si la séance au choix 28 n’a pas eu lieu, demander la mission de la séance 27 : votre moment est-il venu – un message sans réponse, un rire, un devoir en classe – et avez-vous attrapé la première pensée et trouvé une deuxième ? La question de ce qu’une bonne amie dirait, la classe la découvre alors aujourd’hui avec le cas Mathis. Un accessoire fait des merveilles : une loupe, une casquette ou un carnet avec lequel l’enseignant·e se glisse dans le rôle de l’enquêteur."
           },
           {
             "titel": "La méthode du détective : le cas Mathis",
             "dauer": 13,
             "phase": "input",
-            "text": "Montrer le tableau : Mathis, 13 ans, a eu 22 sur 60 au dernier devoir en classe de maths et pense : « Je suis nul. » D’abord clarifier ce qu’est une preuve : quelque chose qui s’est vraiment passé et qu’une caméra pourrait filmer. « 22 sur 60 » est un fait, « nul » est un jugement, « Je me sens tellement nul » est une émotion (3 min). Puis remplir la balance ensemble : l’enseignant·e lit les indices du tableau ci-dessous l’un après l’autre, la classe montre du bras le côté de la balance où il va, et l’enseignant·e l’y écrit. Glisser entre eux deux indices qui ne sont pas des preuves – « Je me sens tellement nul en maths » et « Mon frère dit que je suis nul » – ; ils vont à côté de la balance et sont barrés (4 min). Ensuite, présenter les questions du détective (liste) et en essayer une sur Mathis : que dirait son meilleur copain ? (3 min) Pour finir, le jugement : ce n’est pas « Je suis nul » qui est vrai, mais « Les maths, c’est difficile pour moi ». Avec les trois règles de l’affiche, cela devient la nouvelle phrase : « Les maths, c’est difficile pour moi, mais si je m’entraîne et que je pose des questions, je progresse. » (3 min)",
+            "text": "Montrer le tableau : Mathis, 13 ans, a eu 22 sur 60 au dernier devoir en classe de maths et pense : « Je suis nul. » D’abord clarifier ce qu’est une preuve : quelque chose qui s’est vraiment passé et qu’une caméra pourrait filmer. « 22 sur 60 » est un fait, « nul » est un jugement, « Je me sens tellement nul » est une émotion (3 min). Puis remplir la balance ensemble : l’enseignant·e lit les indices du tableau ci-dessous l’un après l’autre, la classe montre du bras le côté de la balance où il va, et l’enseignant·e l’y écrit. Glisser entre eux deux indices qui ne sont pas des preuves – « Je me sens tellement nul en maths » et « Mon frère dit que je suis nul » – ; ils vont à côté de la balance et sont barrés (4 min). Ensuite, présenter les questions du détective (liste) et essayer sur Mathis la question de l’ami – qui a eu la séance au choix la connaît des affiches, les autres la découvrent ici : que dirait son meilleur copain ? (3 min) Pour finir, le jugement : ce n’est pas « Je suis nul » qui est vrai, mais « Les maths, c’est difficile pour moi ». Avec les trois règles de l’affiche, cela devient la nouvelle phrase : « Les maths, c’est difficile pour moi, mais si je m’entraîne et que je pose des questions, je progresse. » (3 min)",
             "sagen": [
               "C’est une preuve ou une émotion ? Est-ce que ça compterait au tribunal ?",
               "Les preuves pour, on les laisse. Elles sont vraies – mais elles prouvent seulement une phrase plus petite."
@@ -551,7 +556,7 @@
             "titel": "Ma phrase au tribunal",
             "dauer": 17,
             "phase": "uebung",
-            "text": "Pour revenir au calme après le duel (2 min) : musique, trois longues expirations ensemble, paravent comme la semaine dernière. Chacun choisit en silence une phrase : une des siennes, sur la fiche « Mes croyances », une carte prise sur le bureau ou la phrase d’un personnage de la dernière séance – pour s’entraîner, plutôt une phrase moyenne que la plus lourde. Personne n’a à dire laquelle. Exercice 1 (2 min) : écrire la phrase suspecte et cocher à quel point on y croit. Exercice 2 (6 min) : les preuves sur la balance ; les questions du détective dans l’encadré aident quand un côté reste vide. Exercice 3 (4 min) : le jugement – qu’est-ce qui est vraiment vrai ? – et cocher à nouveau. Exercice 4 (3 min) : une nouvelle phrase avec les trois règles ; qui va vite prévoit une situation avec l’exercice 5. L’enseignant·e annonce chaque fois le passage à l’exercice suivant, circule et aide sur demande, surtout pour le côté droit de la balance ; il ou elle ne lit que ce qu’on lui montre.",
+            "text": "Pour revenir au calme après le duel (2 min) : musique, trois longues expirations ensemble, chacun dresse un classeur ou un livre comme paravent. Chacun choisit en silence une phrase : une des siennes – sur la fiche « Mes croyances » si la séance au choix a eu lieu, sinon une phrase qui n’est que dans sa tête –, une carte prise sur le bureau ou la phrase d’un dossier d’enquête ; pour s’entraîner, plutôt une phrase moyenne que la plus lourde. Personne n’a à dire laquelle. Exercice 1 (2 min) : écrire la phrase suspecte et cocher à quel point on y croit. Exercice 2 (6 min) : les preuves sur la balance ; les questions du détective dans l’encadré aident quand un côté reste vide. Exercice 3 (4 min) : le jugement – qu’est-ce qui est vraiment vrai ? – et cocher à nouveau. Exercice 4 (3 min) : une nouvelle phrase avec les trois règles ; qui va vite prévoit une situation avec l’exercice 5. L’enseignant·e annonce chaque fois le passage à l’exercice suivant, circule et aide sur demande, surtout pour le côté droit de la balance ; il ou elle ne lit que ce qu’on lui montre.",
             "sagen": [
               "C’est vous qui choisissez quelle phrase passe au tribunal – pour s’entraîner, une phrase moyenne suffit. Personne n’a besoin de savoir laquelle.",
               "Notez les contre-preuves même si vous n’en êtes pas encore tout à fait convaincus.",
@@ -577,43 +582,46 @@
             "titel": "Skill : la voix bienveillante",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : voici un skill pour les moments où la petite voix intérieure devient sévère. Tout le monde est assis confortablement, les yeux fermés ou tournés vers la table. Qui veut pose une main sur la poitrine ou sur l’avant-bras ; qui ne veut pas laisse ses mains sur les genoux. Dire lentement les trois phrases (liste), chacun les répète intérieurement ; après chaque phrase, deux respirations de pause (3 min). Deuxième tour : chacun pense à une petite situation difficile des derniers jours – un devoir raté, une dispute, un bus manqué – et se dit intérieurement les trois phrases (3 min). Ensuite, deux ou trois retours, et expliquer : c’est la voix avec laquelle vous parleriez à un bon ami ; vous avez le droit de l’utiliser pour vous aussi (4 min).",
+            "text": "Annoncer : voici un skill pour les moments où la petite voix intérieure devient sévère. Tout le monde est assis confortablement ; les yeux fermés ou ouverts, les deux conviennent, et qui veut arrêter appuie les pieds dans le sol et regarde la salle. Qui veut pose une main sur la poitrine ou sur l’avant-bras ; qui ne veut pas laisse ses mains sur les genoux (1 min). Dire lentement les trois phrases (liste), chacun les répète intérieurement ; après chaque phrase, deux respirations de pause – trois minutes guidées au maximum (3 min). Deuxième tour à voix haute, à deux (2 min) : nommer un petit raté – bus manqué, devoir raté, dispute avec une amie –, et les binômes se disent les trois phrases en « tu » – « C’est dur, là, maintenant. Beaucoup vivent ça, tu n’es pas seul·e. De quoi as-tu besoin ? » –, d’abord A pour B, puis B pour A, aussi gentiment qu’on parle à un bon ami. Ensuite, deux ou trois retours, et expliquer (4 min) : c’est la voix avec laquelle vous parleriez à un bon ami ; vous avez le droit de l’utiliser pour vous aussi – à voix haute, à deux, on entend à quel point elle sonne autrement que la voix sévère.",
             "sagen": [
-              "Vous n’avez pas besoin de croire les phrases. Essayez juste de voir ce qu’elles font."
+              "Vous n’avez pas besoin de croire les phrases. Essayez juste de voir ce qu’elles font.",
+              "Dites les phrases à votre partenaire comme vous les diriez à un bon ami – pas comme un prof."
             ],
             "punkte": [
               "Dis-toi : « C’est dur, là, maintenant. »",
               "Dis-toi : « Beaucoup de gens vivent ça. Je ne suis pas seul·e. »",
               "Demande-toi : « De quoi j’ai besoin maintenant ? » – et sois aussi gentil·le avec toi qu’avec un bon ami."
             ],
-            "tipp": "La main sur la poitrine est une proposition, pas une obligation. S’entraîner avec une petite situation, jamais avec la plus lourde : un skill s’apprend quand la mer est calme.",
-            "wennEsKippt": "Si ça ricane (« Je ne vais pas me parler à moi-même »), rester serein : vous le faites toute la journée de toute façon – la question, c’est sur quel ton. Si un jeune devient triste pendant l’exercice, lui proposer à voix basse d’ouvrir les yeux et de bien poser les pieds au sol ; lui parler après le cours."
+            "tipp": "La main sur la poitrine est une proposition, pas une obligation. S’entraîner avec une petite situation, jamais avec la plus lourde : un skill s’apprend quand la mer est calme. Le tour à voix haute, à deux, ne remplace pas le tour silencieux, il lui fait contrepoids – court, actif, avec le choix.",
+            "wennEsKippt": "Si ça ricane (« Je ne vais pas me parler à moi-même »), rester serein : vous le faites toute la journée de toute façon – la question, c’est sur quel ton. Qui n’aime pas le tour silencieux arrête et ne fait que le tour à voix haute, à deux ; cela entraîne aussi le skill. Si un jeune devient triste pendant l’exercice, lui proposer à voix basse d’ouvrir les yeux et de bien poser les pieds au sol ; lui parler après le cours."
           },
           {
-            "titel": "Skills-Pass et mission de la semaine",
+            "titel": "Skills-Pass, choisir son moment et mission de la semaine",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Écrire au tableau la question du Skills-Pass : quelle question du détective m’aide le plus ? Exemple : une pensée est une supposition – je peux la vérifier. Chacun écrit sa phrase (2 min) ; l’enseignant·e passe avec le tampon. La fiche du détective reste dans le cahier, la petite carte part avec le jeune. Ensuite, annoncer la mission de la semaine et la prochaine séance : la semaine prochaine, on aura besoin des cartes.",
+            "text": "Skills-Pass (2 min) : écrire la question au tableau – quelle question du détective m’aide le plus ? Exemple : une pensée est une supposition – je peux la vérifier. Chacun écrit sa phrase, l’enseignant·e passe avec le tampon. Choisir son moment (1 min) : lire la mission de la semaine dans le cahier – quand mon moment arrive, je lis ma nouvelle phrase sur ma petite carte et je regarde ce qui se passe. À trois, tout le monde montre où l’ancienne phrase a le plus de chances de revenir : un doigt pour un devoir en classe ou une note, deux pour le tableau ou un exposé, trois pour la récré ou le groupe de classe, le poing pour un moment à soi ; qui a fait l’exercice 5 reprend la partie « si » de son plan. Puis chacun écrit son moment dans la colonne « Mon moment : quand … », un mot-clé suffit. Suite (2 min) : la fiche du détective reste dans le cahier, la petite carte part avec le jeune ; la semaine prochaine, on aura besoin des cartes.",
             "sagen": [
+              "Votre mission : quand votre moment arrive – un devoir en classe, le tableau, la récré –, vous lisez votre nouvelle phrase sur votre petite carte et vous regardez ce qui se passe. Choisissez votre moment maintenant.",
               "La semaine prochaine, apportez votre petite carte – on testera les nouvelles phrases en jeu de rôle."
             ],
-            "tipp": "Un jeune qui perd souvent ses affaires peut glisser dans son cahier une deuxième fiche avec la même phrase ; ainsi, la phrase sera là la semaine prochaine, quoi qu’il arrive. Après le cours, remettre les cartes croyances dans leurs enveloppes : la séance 30 a besoin des paires de cartes pour l’arbre des croyances."
+            "tipp": "Un jeune qui perd souvent ses affaires peut glisser dans son cahier une deuxième fiche avec la même phrase ; ainsi, la phrase sera là la semaine prochaine, quoi qu’il arrive. Le moment peut rester privé, la nouvelle phrase aussi. Après le cours, remettre les cartes croyances dans leurs enveloppes : la séance 30 a besoin des paires de cartes pour l’arbre des croyances.",
+            "wennEsKippt": "Qui ne veut pas choisir de moment laisse la colonne vide – la semaine prochaine, personne ne le lui demandera ; qui apprend encore la langue dessine un signe : feuille, tableau, portable. Si un jeune trouve la petite carte et le moment puérils, une note dans le portable avec la même phrase suffit – et un moment qui arrive à coup sûr, par exemple le prochain devoir en classe."
           }
         ],
         "bruecke": "La semaine prochaine, vous testez vos nouvelles phrases en jeu de rôle et vous voyez ce qui change quand on agit d’après elles – apportez vos petites cartes.",
-        "mission": "Garde ta petite carte sur toi cette semaine. Quand l’ancienne phrase revient, lis la nouvelle – et regarde ce qui se passe.",
-        "hintergrund": "Le travail de détective transpose sous une forme adaptée aux jeunes des techniques centrales de la thérapie cognitive et comportementale : examiner les preuves pour et contre une pensée, pratiquer le questionnement socratique et estimer sa conviction avant et après avec un chiffre (Beck, 2011). On travaille d’abord sur des cas inventés, puis – librement – sur une phrase à soi. Des questions comme « Que dirait une amie ? » créent de la distance avec ce qu’on vit ; cette mise à distance de soi réduit la détresse quand on réfléchit à des choses difficiles (Kross & Ayduk, 2017). Les trois règles évitent de simplement embellir : ce qui aide, c’est une phrase réaliste qui dit ce qu’on peut faire. La voix bienveillante de la fin suit le concept d’autocompassion : se traiter soi-même dans les moments durs comme on traiterait un bon ami (Neff, 2003).",
+        "mission": "Quand ton moment arrive – un devoir en classe, le tableau, la récré –, lis ta nouvelle phrase sur ta petite carte et regarde ce qui se passe. Garde donc la carte sur toi.",
+        "hintergrund": "La base est la technique « examiner les preuves » de la thérapie cognitive et comportementale : rassembler les preuves pour et contre une pensée et chiffrer sa conviction avant et après (Beck, 2011). Des questions comme « Que dirait une amie ? » utilisent la mise à distance de soi, qui réduit la détresse face aux difficultés (Kross & Ayduk, 2017). Les trois règles de la nouvelle phrase évitent d’embellir et portent le seul message sur soi qui agit de façon mesurable chez des jeunes en difficulté scolaire : court, concret, avec de la place pour progresser. Dans une expérience nationale, un bref message de ce type a amélioré les notes – peu, mais de façon mesurable, surtout chez les élèves en difficulté (Yeager et al., 2019) ; d’où l’encadré « Ce que dit la recherche ». La voix bienveillante suit l’autocompassion : se traiter dans les moments durs comme un bon ami (Neff, 2003).",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
-          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
-          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Yeager, D. S., Hanselman, P., Walton, G. M., Murray, J. S., Crosnoe, R., Muller, C. et al. (2019). A national experiment reveals where a growth mindset improves achievement. Nature, 573(7774), 364–369."
         ],
         "achtung": "En rassemblant les preuves, il peut apparaître qu’une phrase a un fond de vérité, par exemple quand un jeune est réellement mis à l’écart ou dévalorisé. Ne pas la discuter alors, ni pousser à la reformuler : la prendre au sérieux et voir après le cours qui peut aider. Pour le duel des contre-phrases, uniquement les phrases des cartes, jamais celles des fiches personnelles. En cas de signes de forte dévalorisation de soi, d’automutilation, d’idées suicidaires ou de violence, ne pas approfondir devant la classe, informer le SePAS le jour même et agir selon le protocole de protection de l’école ; en cas de danger immédiat, ne pas laisser le jeune seul, 112.",
         "differenzierung": {
-          "leichter": "Pour les dossiers, un jeune qui lit bien lit à voix haute ; les autres classent les lettres. Sur la fiche du détective, les exercices 1 et 2 en mots-clés suffisent ; on peut reprendre la nouvelle phrase au tableau ou sur une carte qui aide, et l’écrire dans sa propre langue.",
+          "leichter": "Pour les dossiers, un jeune qui lit bien lit à voix haute ; les autres classent les lettres. Sur la fiche du détective, les exercices 1 et 2 en mots-clés suffisent ; on peut reprendre la nouvelle phrase au tableau ou sur une carte qui aide, et l’écrire dans sa propre langue. Pour la colonne « Mon moment », un mot ou un signe suffit.",
           "schwerer": "Exercice 5 de la fiche du détective : prévoir où la nouvelle phrase devra faire ses preuves la semaine prochaine et écrire un plan « si… alors ». Pendant le duel, jouer l’arbitre et expliquer quelle règle une contre-phrase ne respecte pas."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), le cas Mathis au tableau (10 min), un dossier d’enquête en îlots (10 min), ma phrase au tribunal avec les exercices 1, 2 et 4 (15 min), petite carte (5 min), Skills-Pass et mission de la semaine (5 min). Le duel des contre-phrases et la voix bienveillante peuvent être reportés au début de la séance suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), le cas Mathis au tableau (10 min), un dossier d’enquête en îlots (10 min), ma phrase au tribunal avec les exercices 1, 2 et 4 (15 min), petite carte (5 min), Skills-Pass, choix du moment et mission de la semaine (5 min). Le duel des contre-phrases et la voix bienveillante peuvent être reportés au début de la séance suivante."
       }
     }
   ],
@@ -744,6 +752,12 @@
             "beispiel": "„Ich bin dumm“ wird zu „Mathe fällt mir schwer, aber wenn ich übe und nachfrage, werde ich besser.“"
           },
           {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Aus der Forschung",
+            "text": "Jugendliche, die lernten, dass das Gehirn durch Üben wächst, verbesserten ihre Noten – am meisten die, die schlecht standen."
+          },
+          {
             "art": "aufgabe",
             "text": "Wenn du magst: Was würdest du tun, wenn du den neuen Satz glaubst? Plane eine Situation.",
             "symbole": [
@@ -772,13 +786,15 @@
           "ablauf": [
             "Einheit 29, Schritt 3: Aufgabe 2 an der Tafel mit dem Fall Mathis vormachen.",
             "Schritt 7 (17 Min.): Satz frei wählen – eigener Satz, Karte oder Figur; Aufgaben 1 bis 4.",
-            "Schritt 8: den neuen Satz auf ein Kärtchen übertragen und gestalten."
+            "Schritt 8: den neuen Satz auf ein Kärtchen übertragen und gestalten.",
+            "Der Kasten „Aus der Forschung“ fasst Yeager et al. (2019) zusammen; der Beleg steht im Hintergrund der Einheit."
           ],
           "hintergrund": "Das Blatt überträgt Techniken der kognitiven Verhaltenstherapie in eine jugendgerechte Form: Belege prüfen, sokratisch nachfragen und die Überzeugung vorher und nachher einschätzen (Beck, 2011). Die Frage nach der Freundin schafft Abstand (Kross & Ayduk, 2017). Im DBT-Skillstraining heißt der verwandte Skill „Fakten prüfen“ (Linehan, 2015).",
           "quellen": [
             "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
             "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
-            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+            "Yeager, D. S., Hanselman, P., Walton, G. M., Murray, J. S., Crosnoe, R., Muller, C. et al. (2019). A national experiment reveals where a growth mindset improves achievement. Nature, 573(7774), 364–369."
           ],
           "material": "Schülerheft, Karteikarten"
         }
@@ -886,6 +902,12 @@
             "beispiel": "« Je suis nul » devient « Les maths, c’est difficile pour moi, mais si je m’entraîne et que je pose des questions, je progresse. »"
           },
           {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce que dit la recherche",
+            "text": "Des jeunes qui ont appris que le cerveau grandit en s’entraînant ont amélioré leurs notes – surtout ceux qui étaient en difficulté."
+          },
+          {
             "art": "aufgabe",
             "text": "Si tu veux : que ferais-tu si tu croyais la nouvelle phrase ? Prévois une situation.",
             "symbole": [
@@ -916,13 +938,15 @@
           "ablauf": [
             "Séance 29, étape 3 : montrer l’exercice 2 au tableau avec le cas Mathis.",
             "Étape 7 (17 min) : choisir librement une phrase – la sienne, une carte ou un personnage ; exercices 1 à 4.",
-            "Étape 8 : recopier la nouvelle phrase sur une petite carte et la décorer."
+            "Étape 8 : recopier la nouvelle phrase sur une petite carte et la décorer.",
+            "L’encadré « Ce que dit la recherche » résume Yeager et al. (2019) ; la référence figure dans le fond de la séance."
           ],
           "hintergrund": "La fiche transpose sous une forme adaptée aux jeunes des techniques de la thérapie cognitive et comportementale : examiner les preuves, pratiquer le questionnement socratique, évaluer sa conviction avant et après (Beck, 2011). La question de l’amie crée de la distance (Kross & Ayduk, 2017). Dans l’entraînement aux skills de la DBT, le skill voisin s’appelle « vérifier les faits » (Linehan, 2015).",
           "quellen": [
             "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
             "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
-            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+            "Yeager, D. S., Hanselman, P., Walton, G. M., Murray, J. S., Crosnoe, R., Muller, C. et al. (2019). A national experiment reveals where a growth mindset improves achievement. Nature, 573(7774), 364–369."
           ],
           "material": "Cahier de l’élève, fiches bristol"
         }

@@ -121,20 +121,20 @@
       "einheit": "ff7-e11",
       "de": {
         "name": "Körper-Check",
-        "wann": "Um Warnsignale im Körper früh zu bemerken",
+        "wann": "Um Warnsignale im Körper früh zu bemerken – drei Minuten reichen",
         "schritte": [
-          "Setz dich aufrecht hin, Füße auf den Boden, einmal langsam ausatmen.",
-          "Wandere mit der Aufmerksamkeit von der Stirn bis zu den Füßen.",
-          "Wo spannt es, wo ist es warm? Nur bemerken – alles ist in Ordnung."
+          "Aufrecht sitzen, Füße auf den Boden, Augen offen oder zu. Einmal lang ausatmen.",
+          "Geh mit der Aufmerksamkeit von der Stirn bis zu den Füßen. Nur bemerken.",
+          "Kurzform unterwegs: Schultern fallen lassen, Füße in den Boden, lang ausatmen."
         ]
       },
       "fr": {
         "name": "Le tour du corps",
-        "wann": "Pour repérer tôt les signaux d’alerte dans ton corps",
+        "wann": "Pour repérer tôt les signaux d’alerte dans ton corps – trois minutes",
         "schritte": [
-          "Assieds-toi droit, pieds au sol, et expire lentement une fois.",
-          "Promène ton attention du front jusqu’aux pieds.",
-          "Où ça serre, où c’est chaud ? Remarque simplement, sans juger."
+          "Assis droit, pieds au sol, yeux ouverts ou fermés. Expire longuement une fois.",
+          "Promène ton attention du front jusqu’aux pieds. Remarque, simplement.",
+          "Version courte : épaules relâchées, pieds dans le sol, longue expiration."
         ]
       }
     },

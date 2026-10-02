@@ -105,7 +105,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Daumen, Skills-Pass und Wochen-Mission"
+            "titel": "Daumen, Skills-Pass, Moment wählen und Mission"
           }
         ],
         "schritte": [
@@ -125,8 +125,9 @@
             "titel": "Rückblick und Rahmen: heute ganz privat",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Per Daumen nach der Wochen-Mission fragen: Wer hat einen schnellen Gedanken ertappt und einen anderen dazu gefunden? Eine Stimme erzählt. Zwei, drei Glaubenssatz-Karten aus der letzten Stunde aus einem Umschlag nehmen und an die Tafel hängen. Dann den Rahmen für heute ruhig und klar nennen: Jede Person schreibt für sich, niemand liest vor, nichts wird eingesammelt, und das Blatt kann am Ende verschlossen werden. Offen sagen, wo die Vertraulichkeit endet – Geheimhaltung nicht versprechen –, und Fragen dazu ehrlich beantworten.",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass vor. Dann zur Wochen-Mission – den ersten Gedanken ertappen und einen zweiten dazu finden: Kam euer Moment – eine Nachricht ohne Antwort, ein Lachen, ein Test – und was habt ihr gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt, welcher zweite Gedanke gepasst hat. Niemand muss es geschafft haben. Zwei, drei Glaubenssatz-Karten aus der letzten Stunde aus einem Umschlag nehmen und an die Tafel hängen. Dann den Rahmen für heute ruhig und klar nennen: Jede Person schreibt für sich, niemand liest vor, nichts wird eingesammelt, und das Blatt kann am Ende verschlossen werden. Offen sagen, wo die Vertraulichkeit endet – Geheimhaltung nicht versprechen –, und Fragen dazu ehrlich beantworten.",
             "sagen": [
+              "Kam euer Moment – und was habt ihr gemacht? Daumen, dann eine Stimme.",
               "Heute schreibt jede und jeder für sich. Was ihr aufschreibt, gehört euch – ich lese es nicht, außer ihr zeigt es mir.",
               "Eine Ausnahme gibt es: Wenn ich mir ernsthaft Sorgen um jemanden mache, spreche ich ihn nach der Stunde allein an und hole mir Hilfe beim SePAS. Nie vor der Klasse."
             ],
@@ -206,7 +207,7 @@
             "titel": "Skill: Dankbarkeitsblitz",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: Nach so einer Stunde darf der Kopf wieder etwas Freundliches sehen. Alle sitzen bequem, eine Hand auf dem Bauch, die Augen zu oder auf den Tisch gerichtet. Die Lehrkraft leitet die drei Schritte langsam an (Liste) und macht selbst mit; zwischen den Schritten Zeit lassen (4 Min.). Danach eine zweite, kürzere Runde mit einer anderen guten Sache (2 Min.). Wer mag, nennt seine gute Sache in einem Wort; zwei, drei Stimmen reichen (2 Min.). Erklären (2 Min.): Der Kopf bemerkt von allein eher, was schiefläuft. Wer ihn öfter auf Gutes lenkt, dem fällt Gutes leichter auf – mit Jugendlichen wurde das ausprobiert, und vielen ging es danach etwas besser.",
+            "text": "Ankündigen: Nach so einer Stunde darf der Kopf wieder etwas Freundliches sehen. Alle sitzen bequem, eine Hand auf dem Bauch; Augen zu oder offen ist beides richtig, und wer aussteigen will, spürt einfach die Füße am Boden oder schaut aus dem Fenster. Die Lehrkraft leitet die drei Schritte langsam an (Liste) und macht selbst mit; zwischen den Schritten Zeit lassen, insgesamt höchstens drei Minuten (3 Min.). Dann der Blitz zu zweit (2 Min.): Jede Person sagt der Person daneben in einem Satz eine kleine gute Sache dieser Woche – laut, nicht still; ein Wort reicht, auch in der eigenen Sprache, und „weiter“ ist erlaubt. Zwei, drei Stimmen nennen ihre gute Sache in einem Wort für alle (2 Min.). Erklären (3 Min.): Der Kopf bemerkt von allein eher, was schiefläuft. Wer ihn öfter auf Gutes lenkt, dem fällt Gutes leichter auf – mit Jugendlichen wurde das ausprobiert, und vielen ging es danach etwas besser. Die Übung ist ein Angebot, nie ein Mittel gegen Unruhe.",
             "sagen": [
               "Es muss nichts Großes sein. Ein warmes Brötchen am Morgen zählt genauso."
             ],
@@ -215,36 +216,37 @@
               "Denk 20 Sekunden lang an eine kleine gute Sache aus dieser Woche – ein Essen, ein Lied, ein Mensch, ein Tor.",
               "Spür nach: Wo im Körper merkst du sie? Bleib noch drei Atemzüge dabei."
             ],
-            "tipp": "Die Reihenfolge ist wichtig: erst der Atem, dann der Kopf. Mit ruhigerem Atem fällt es leichter, etwas Gutes zu finden.",
-            "wennEsKippt": "Sagt jemand, es gebe nichts Gutes, das gelten lassen und an etwas ganz Kleines denken lassen: eine warme Dusche, ein Lieblingslied, eine Katze im Video. Wird gekichert, ruhig weitersprechen; niemand muss die Augen schließen."
+            "tipp": "Die Reihenfolge ist wichtig: erst der Atem, dann der Kopf. Mit ruhigerem Atem fällt es leichter, etwas Gutes zu finden. Drei Minuten reichen: Längere Stille bringt nach so einer Stunde nichts und ist für belastete Jugendliche eher ungünstig – lieber kurz, und dann laut zu zweit.",
+            "wennEsKippt": "Sagt jemand, es gebe nichts Gutes, das gelten lassen und an etwas ganz Kleines denken lassen: eine warme Dusche, ein Lieblingslied, eine Katze im Video. Wird gekichert, ruhig weitersprechen; niemand muss die Augen schließen, und wer die stille Runde nicht mag, hört nur zu und macht erst beim Blitz zu zweit mit."
           },
           {
-            "titel": "Daumen, Skills-Pass und Wochen-Mission",
+            "titel": "Daumen, Skills-Pass, Moment wählen und Mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Daumen-Blitzlicht mit geschlossenen Augen: Alle schauen auf den Tisch oder schließen die Augen und zeigen auf drei, wie es ihnen jetzt geht – Daumen hoch, Mitte oder runter. Nur die Lehrkraft schaut hin und merkt sich still, wer den Daumen unten hat. Dann ein Satz in den Skills-Pass mit der Leitfrage: Was nehme ich heute für mich mit? Stempel. Die Wochen-Mission ansagen – sie lässt die Wahl zwischen zwei Möglichkeiten – und den Ausblick geben. Zum Schluss sagen, dass die Lehrkraft nach der Stunde noch ein paar Minuten da ist.",
+            "text": "Daumen-Blitzlicht (1 Min.): Alle schauen auf den Tisch oder schließen die Augen und zeigen auf drei, wie es ihnen jetzt geht – Daumen hoch, Mitte oder runter. Nur die Lehrkraft schaut hin und merkt sich still, wer den Daumen unten hat. Skills-Pass (2 Min.): ein Satz mit der Leitfrage – Was nehme ich heute für mich mit? –, dann der Stempel. Moment wählen (1 Min.): die Wochen-Mission im Heft vorlesen – wenn mein Moment kommt, dann sage ich mir, was eine gute Freundin sagen würde, oder mache den Dankbarkeitsblitz. Auf drei zeigen alle, wo ihr Moment am ehesten kommt: ein Finger für einen Test oder eine Note, zwei fürs Vergleichen – im Feed oder in der Familie –, drei für abends im Bett, die Faust für einen eigenen Moment; dann schreibt jede Person ihren Moment in die Spalte „Mein Moment: Wenn …“, ein Stichwort reicht. Ausblick (1 Min.): Nächste Woche werden alle Detektive; zum Schluss sagen, dass die Lehrkraft nach der Stunde noch ein paar Minuten da ist.",
             "sagen": [
               "Augen zu, Daumen zeigen: Wie geht es euch jetzt, nach dem Schreiben? Nur ich sehe hin.",
+              "Eure Mission: Wenn euer Moment kommt – ein Test, das Vergleichen, abends im Bett –, dann sagt ihr euch, was eine gute Freundin sagen würde, oder macht den Dankbarkeitsblitz. Wählt jetzt euren Moment.",
               "Wer noch kurz reden möchte: Ich bin gleich danach noch ein paar Minuten hier. Und der SePAS ist für euch da."
             ],
-            "tipp": "Wer den Daumen unten hat, bekommt beim Hinausgehen einen kurzen Blick und ein Wort: Wie geht es dir? Brauchst du noch etwas?",
+            "tipp": "Wer den Daumen unten hat, bekommt beim Hinausgehen einen kurzen Blick und ein Wort: Wie geht es dir? Brauchst du noch etwas? Der Moment darf privat bleiben – welcher Satz sich dort meldet, muss niemand sagen; wer keinen wählen will, lässt die Spalte leer.",
             "wennEsKippt": "Zeigen mehrere den Daumen nach unten, nicht einfach schließen: zwei Minuten für eine gemeinsame Runde Ballon-Atem nehmen und sagen, dass schwere Gefühle nach so einer Stunde normal sind und sich wieder legen. Mit einzelnen Jugendlichen noch vor dem Gehen sprechen."
           }
         ],
         "bruecke": "Nächste Woche werdet ihr Detektive: Ihr nehmt einen Satz – euren eigenen oder einen von den Karten – und prüft mit Beweisen, ob er wirklich stimmt.",
-        "mission": "Wenn sich diese Woche einer deiner bremsenden Sätze meldet: Sag dir, was eine gute Freundin dazu sagen würde – oder mach den Dankbarkeitsblitz.",
-        "hintergrund": "Glaubenssätze entsprechen in der kognitiven Verhaltenstherapie den Grundüberzeugungen: stark verallgemeinerten Annahmen über die eigene Person, etwa unfähig, nicht liebenswert oder wertlos zu sein. Sie entstehen oft in bestimmten Lebenslagen und werden später kaum noch überprüft (Beck, 2011). Wer einen solchen Satz aufschreibt, nach seiner Herkunft fragt und in Zahlen einschätzt, gewinnt Abstand: Aus einer vermeintlichen Tatsache wird eine Annahme. Die Frage, was man einer Freundin sagen würde, nutzt das Selbst-Distanzieren: Aus dem Blickwinkel einer anderen Person denken Menschen über Schwieriges mit weniger Belastung nach (Kross & Ayduk, 2017). Die Stunde endet bewusst mit Gutem: In einer Studie mit Jugendlichen gingen negative Gefühle zurück, und die Zufriedenheit mit der Schule stieg, wenn sie regelmäßig aufschrieben, wofür sie dankbar waren (Froh et al., 2008).",
+        "mission": "Wenn dein Moment kommt – ein Test kommt zurück, du vergleichst dich, abends im Bett –, dann sag dir, was eine gute Freundin sagen würde, oder mach den Dankbarkeitsblitz.",
+        "hintergrund": "Grundlage ist das Konzept der Grundüberzeugungen aus der kognitiven Verhaltenstherapie: stark verallgemeinerte, kaum noch überprüfte Annahmen über sich selbst (Beck, 2011). Wer einen solchen Satz aufschreibt, nach seiner Herkunft fragt und in Zahlen einschätzt, macht aus einer vermeintlichen Tatsache eine Annahme. Die Frage, was man einer Freundin sagen würde, nutzt das Selbst-Distanzieren: Aus dem Blickwinkel einer anderen Person denken Menschen klarer und weniger belastet über Schwieriges nach (Kross & Ayduk, 2017) – daher der Kasten „Aus der Forschung“. Weil Gedankenarbeit in Lehrkrafthand in Schulstudien wenig brachte (Stallard et al., 2014), ist die Stunde Wahleinheit und endet mit Gutem: Bei jungen Jugendlichen, die zwei Wochen lang aufschrieben, wofür sie dankbar waren, gingen negative Gefühle zurück und die Zufriedenheit mit der Schule stieg (Froh, Sefick & Emmons, 2008).",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
           "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
           "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233."
         ],
-        "achtung": "Die persönlichste Stunde des Kapitels: Blätter werden weder eingesammelt noch gelesen, niemand liest vor; die Grenze der Vertraulichkeit wird vorher offen gesagt, Geheimhaltung nie versprochen. Sehr negative Sätze über sich selbst – etwa, nichts wert zu sein oder dass es ohne einen besser wäre –, ob ausgesprochen oder zufällig gesehen: nicht vor der Klasse vertiefen, die Person nach der Stunde ansprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr nicht allein lassen, 112. Klingen Sätze nach Abwertung oder Gewalt zu Hause, ebenso handeln.",
+        "achtung": "Wahleinheit, die persönlichste Stunde des Kapitels: nur halten, wenn die Klasse 15 Minuten ruhig für sich schreiben kann; entfällt sie, übernimmt Einheit 29 den freundlichen Blick. Blätter werden weder eingesammelt noch gelesen, niemand liest vor; die Grenze der Vertraulichkeit vorher offen sagen, nie Geheimhaltung versprechen. Sehr negative Sätze über sich – nichts wert zu sein, dass es ohne einen besser wäre –, gehört oder zufällig gesehen: nicht vor der Klasse vertiefen, die Person nach der Stunde ansprechen, am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr nicht allein lassen, 112. Ebenso bei Hinweisen auf Abwertung oder Gewalt zu Hause.",
         "differenzierung": {
-          "leichter": "Wer mühsam schreibt oder die Unterrichtssprache noch lernt, schreibt in Stichworten oder in der eigenen Sprache und leiht sich einen Satz aus dem Kasten; ein Satz und ein Kreuz auf der Skala reichen. Bei den Figuren liest eine Person, die gut liest, die Karte vor; an den Plakaten darf man nur zuhören oder ein einzelnes Wort beitragen.",
+          "leichter": "Wer mühsam schreibt oder die Unterrichtssprache noch lernt, schreibt in Stichworten oder in der eigenen Sprache und leiht sich einen Satz aus dem Kasten; ein Satz und ein Kreuz auf der Skala reichen. Bei den Figuren liest eine Person, die gut liest, die Karte vor; an den Plakaten darf man nur zuhören oder ein einzelnes Wort beitragen. Für die Spalte „Mein Moment“ reicht ein Wort oder ein Zeichen.",
           "schwerer": "Zu einem eigenen Satz notieren, wer oder was ihn heute noch bestätigt und wer ihm widerspricht. An den Plakaten für jede Figur einen Freundes-Satz finden, der ehrlich ist und trotzdem Mut macht."
         },
-        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Rahmen für heute (3 Min.), eine Figur gemeinsam an der Tafel besprechen und laut einen Freundes-Satz für sie finden (9 Min.), Aufgabe 1 allein und privat (10 Min.), Aufgaben 3 und 4 allein (10 Min.), Dankbarkeitsblitz (6 Min.), Daumen, Skills-Pass und Wochen-Mission (7 Min.). Die Runde an den Plakaten entfällt; die Figurenkarten lassen sich nächste Woche als Detektivfälle nutzen."
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Rahmen für heute (3 Min.), eine Figur gemeinsam an der Tafel besprechen und laut einen Freundes-Satz für sie finden (9 Min.), Aufgabe 1 allein und privat (10 Min.), Aufgaben 3 und 4 allein (10 Min.), Dankbarkeitsblitz (6 Min.), Daumen, Skills-Pass, Moment wählen und Wochen-Mission (7 Min.). Die Runde an den Plakaten entfällt; die Figurenkarten lassen sich nächste Woche als Detektivfälle nutzen."
       },
       "fr": {
         "titel": "Mes croyances",
@@ -315,7 +317,7 @@
           {
             "min": "95–100",
             "phase": "abschluss",
-            "titel": "Pouce, Skills-Pass et mission de la semaine"
+            "titel": "Pouce, Skills-Pass, choisir son moment et mission"
           }
         ],
         "schritte": [
@@ -335,8 +337,9 @@
             "titel": "Retour et cadre : aujourd’hui, tout est privé",
             "dauer": 5,
             "phase": "bruecke",
-            "text": "Un jeune lit la phrase de son Skills-Pass. Demander avec le pouce où en est la mission de la semaine : qui a attrapé une pensée rapide et en a trouvé une autre ? Une voix raconte. Sortir d’une enveloppe deux ou trois cartes croyances de la dernière séance et les accrocher au tableau. Puis poser calmement et clairement le cadre du jour : chacun écrit pour soi, personne ne lit à voix haute, rien n’est ramassé, et la fiche pourra être fermée à la fin. Dire ouvertement où s’arrête la confidentialité – ne pas promettre le secret – et répondre honnêtement aux questions.",
+            "text": "Un jeune lit la phrase de son Skills-Pass. Puis la mission de la semaine – attraper la première pensée et en trouver une deuxième : votre moment est-il venu – un message sans réponse, un rire, un devoir en classe – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas ; une voix raconte quelle deuxième pensée convenait. Personne n’est obligé d’avoir réussi. Sortir d’une enveloppe deux ou trois cartes croyances de la dernière séance et les accrocher au tableau. Puis poser calmement et clairement le cadre du jour : chacun écrit pour soi, personne ne lit à voix haute, rien n’est ramassé, et la fiche pourra être fermée à la fin. Dire ouvertement où s’arrête la confidentialité – ne pas promettre le secret – et répondre honnêtement aux questions.",
             "sagen": [
+              "Votre moment est-il venu – et qu’avez-vous fait ? Le pouce, puis une voix.",
               "Aujourd’hui, chacun écrit pour soi. Ce que vous écrivez vous appartient – je ne le lis pas, sauf si vous me le montrez.",
               "Il y a une exception : si je m’inquiète sérieusement pour quelqu’un, je lui parle seul à seul après le cours et je demande de l’aide au SePAS. Jamais devant la classe."
             ],
@@ -416,7 +419,7 @@
             "titel": "Skill : l’éclair de gratitude",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : après une séance pareille, la tête a le droit de voir à nouveau quelque chose d’agréable. Tout le monde est assis confortablement, une main sur le ventre, les yeux fermés ou tournés vers la table. Guider lentement les trois étapes (liste) en faisant l’exercice soi-même ; laisser du temps entre les étapes (4 min). Ensuite, un deuxième tour plus court, avec une autre chose agréable (2 min). Qui veut dit sa chose en un mot ; deux ou trois voix suffisent (2 min). Expliquer (2 min) : la tête remarque spontanément plutôt ce qui ne va pas. Qui la dirige plus souvent vers le positif remarque plus facilement ce qui est agréable – cela a été essayé avec des jeunes, et beaucoup allaient ensuite un peu mieux.",
+            "text": "Annoncer : après une séance pareille, la tête a le droit de voir à nouveau quelque chose d’agréable. Tout le monde est assis confortablement, une main sur le ventre ; les yeux fermés ou ouverts, les deux conviennent, et qui veut arrêter sent simplement ses pieds au sol ou regarde par la fenêtre. Guider lentement les trois étapes (liste) en faisant l’exercice soi-même ; laisser du temps entre les étapes, trois minutes au maximum (3 min). Puis l’éclair à deux (2 min) : chacun dit à son voisin, en une phrase, une petite chose agréable de la semaine – à voix haute, pas en silence ; un mot suffit, aussi dans sa propre langue, et « je passe » est permis. Deux ou trois voix disent leur chose en un mot pour toute la classe (2 min). Expliquer (3 min) : la tête remarque spontanément plutôt ce qui ne va pas. Qui la dirige plus souvent vers le positif remarque plus facilement ce qui est agréable – cela a été essayé avec des jeunes, et beaucoup allaient ensuite un peu mieux. L’exercice est une proposition, jamais un moyen de calmer la classe.",
             "sagen": [
               "Pas besoin que ce soit grand. Un petit pain chaud le matin, ça compte aussi."
             ],
@@ -425,36 +428,37 @@
               "Pense pendant 20 secondes à une petite chose agréable de cette semaine – un repas, une chanson, une personne, un but.",
               "Ressens : où, dans ton corps, est-ce que tu la remarques ? Restes-y encore trois respirations."
             ],
-            "tipp": "L’ordre compte : d’abord la respiration, ensuite la tête. Avec un souffle plus calme, il est plus facile de trouver quelque chose de positif.",
-            "wennEsKippt": "Si un jeune dit qu’il n’y a rien de positif, l’accepter et l’inviter à penser à quelque chose de tout petit : une douche chaude, une chanson préférée, un chat dans une vidéo. Si ça ricane, continuer calmement ; personne n’est obligé de fermer les yeux."
+            "tipp": "L’ordre compte : d’abord la respiration, ensuite la tête. Avec un souffle plus calme, il est plus facile de trouver quelque chose de positif. Trois minutes suffisent : un silence plus long n’apporte rien après une séance pareille et convient mal aux jeunes qui vont mal – mieux vaut court, puis à voix haute à deux.",
+            "wennEsKippt": "Si un jeune dit qu’il n’y a rien de positif, l’accepter et l’inviter à penser à quelque chose de tout petit : une douche chaude, une chanson préférée, un chat dans une vidéo. Si ça ricane, continuer calmement ; personne n’est obligé de fermer les yeux, et qui n’aime pas le tour silencieux écoute seulement et ne participe qu’à l’éclair à deux."
           },
           {
-            "titel": "Pouce, Skills-Pass et mission de la semaine",
+            "titel": "Pouce, Skills-Pass, choisir son moment et mission",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Tour éclair avec le pouce, les yeux fermés : tout le monde regarde la table ou ferme les yeux et montre à trois comment ça va maintenant – pouce en haut, au milieu ou en bas. Seul·e l’enseignant·e regarde et note mentalement, sans rien dire, qui a le pouce en bas. Puis une phrase dans le Skills-Pass avec la question : qu’est-ce que j’emporte pour moi aujourd’hui ? Tampon. Annoncer la mission de la semaine – elle laisse le choix entre deux possibilités – et la prochaine séance. Pour finir, dire que l’enseignant·e reste encore quelques minutes après le cours.",
+            "text": "Tour éclair avec le pouce (1 min) : tout le monde regarde la table ou ferme les yeux et montre à trois comment ça va maintenant – pouce en haut, au milieu ou en bas. Seul·e l’enseignant·e regarde et note mentalement, sans rien dire, qui a le pouce en bas. Skills-Pass (2 min) : une phrase avec la question – qu’est-ce que j’emporte pour moi aujourd’hui ? –, puis le tampon. Choisir son moment (1 min) : lire la mission de la semaine dans le cahier – quand mon moment arrive, je me dis ce qu’une bonne amie dirait, ou je fais l’éclair de gratitude. À trois, tout le monde montre où son moment a le plus de chances d’arriver : un doigt pour un devoir en classe ou une note, deux pour les comparaisons – dans le fil d’actualité ou en famille –, trois pour le soir au lit, le poing pour un moment à soi ; puis chacun écrit son moment dans la colonne « Mon moment : quand … », un mot-clé suffit. Suite (1 min) : la semaine prochaine, tout le monde devient détective ; pour finir, dire que l’enseignant·e reste encore quelques minutes après le cours.",
             "sagen": [
               "Les yeux fermés, montrez le pouce : comment ça va maintenant, après l’écriture ? Il n’y a que moi qui regarde.",
+              "Votre mission : quand votre moment arrive – un devoir en classe, les comparaisons, le soir au lit –, vous vous dites ce qu’une bonne amie dirait, ou vous faites l’éclair de gratitude. Choisissez votre moment maintenant.",
               "Si quelqu’un veut parler un instant : je reste encore quelques minutes après le cours. Et le SePAS est là pour vous."
             ],
-            "tipp": "Un jeune qui a le pouce en bas reçoit en sortant un regard et un mot : comment ça va ? Tu as besoin de quelque chose ?",
+            "tipp": "Un jeune qui a le pouce en bas reçoit en sortant un regard et un mot : comment ça va ? Tu as besoin de quelque chose ? Le moment peut rester privé – personne n’a à dire quelle phrase s’y manifeste ; qui ne veut pas choisir laisse la colonne vide.",
             "wennEsKippt": "Si plusieurs jeunes ont le pouce en bas, ne pas simplement terminer : prendre deux minutes pour un tour de respiration du ballon ensemble et dire que les émotions lourdes sont normales après une séance pareille et qu’elles passent. Parler encore à certains jeunes avant qu’ils partent."
           }
         ],
         "bruecke": "La semaine prochaine, vous devenez détectives : vous prenez une phrase – la vôtre ou une carte – et vous vérifiez avec des preuves si elle est vraiment vraie.",
-        "mission": "Si l’une de tes phrases qui freinent se manifeste cette semaine : dis-toi ce qu’une bonne amie en dirait – ou fais l’éclair de gratitude.",
-        "hintergrund": "Dans la thérapie cognitive et comportementale, les croyances correspondent aux convictions profondes : des suppositions très générales sur soi, par exemple être incapable, pas aimable ou sans valeur. Elles naissent souvent dans des situations précises et ne sont presque plus vérifiées ensuite (Beck, 2011). Écrire une telle phrase, se demander d’où elle vient et l’évaluer avec un chiffre permet de prendre de la distance : un prétendu fait devient une supposition. La question de ce qu’on dirait à une amie utilise la mise à distance de soi : vue avec les yeux de quelqu’un d’autre, une situation difficile est pensée avec moins de détresse (Kross & Ayduk, 2017). La séance se termine volontairement sur du positif : dans une étude avec des jeunes, les émotions négatives ont diminué et la satisfaction à l’égard de l’école a augmenté quand ils notaient régulièrement ce pour quoi ils étaient reconnaissants (Froh et al., 2008).",
+        "mission": "Quand ton moment arrive – un devoir rendu, une comparaison, le soir au lit –, dis-toi ce qu’une bonne amie dirait, ou fais l’éclair de gratitude.",
+        "hintergrund": "La base est le concept des convictions profondes de la thérapie cognitive : des suppositions très générales sur soi, presque jamais vérifiées (Beck, 2011). Écrire une telle phrase, chercher son origine et l’évaluer avec un chiffre transforme un prétendu fait en supposition. La question de ce qu’on dirait à une amie utilise la mise à distance de soi : vue avec les yeux de quelqu’un d’autre, une difficulté se pense plus clairement, avec moins de détresse (Kross & Ayduk, 2017) – d’où l’encadré « Ce que dit la recherche ». Comme le travail sur les pensées mené par des enseignants a peu agi dans les études scolaires (Stallard et al., 2014), la séance est au choix et finit sur du positif : chez de jeunes adolescents qui ont noté deux semaines durant ce qui les rendait reconnaissants, les émotions négatives ont baissé et la satisfaction envers l’école a augmenté (Froh, Sefick & Emmons, 2008).",
         "quellen": [
           "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
           "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
           "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233."
         ],
-        "achtung": "La séance la plus personnelle du chapitre : les fiches ne sont ni ramassées ni lues, personne ne lit à voix haute ; on dit avant où s’arrête la confidentialité, sans jamais promettre le secret. Phrases très négatives sur soi – par exemple ne rien valoir, ou que ce serait mieux sans soi –, dites ou aperçues par hasard : ne pas approfondir devant la classe, parler au jeune après le cours, informer le SePAS le jour même et agir selon le protocole de protection de l’école ; en cas de danger immédiat, ne pas le laisser seul, 112. Même démarche si des phrases font penser à des dévalorisations ou à de la violence à la maison.",
+        "achtung": "Séance au choix, la plus intime du chapitre : à tenir seulement si la classe peut écrire au calme pour soi 15 minutes ; si elle est supprimée, la séance 29 reprend le regard bienveillant. Les fiches ne sont ni ramassées ni lues, personne ne lit à voix haute ; dire avant où s’arrête la confidentialité, sans promettre le secret. Phrases très négatives sur soi – ne rien valoir, que ce serait mieux sans soi –, dites ou vues par hasard : ne pas approfondir devant la classe, parler au jeune après le cours, informer le SePAS le jour même, agir selon le protocole de protection ; en cas de danger immédiat, ne pas le laisser seul, 112. Même démarche en cas de dévalorisation ou de violence à la maison.",
         "differenzierung": {
-          "leichter": "Qui écrit difficilement ou apprend encore la langue d’enseignement écrit avec des mots-clés ou dans sa propre langue et emprunte une phrase dans l’encadré ; une phrase et une croix sur l’échelle suffisent. Pour les personnages, un jeune qui lit bien lit la carte à voix haute ; près des affiches, on peut seulement écouter ou proposer un seul mot.",
+          "leichter": "Qui écrit difficilement ou apprend encore la langue d’enseignement écrit avec des mots-clés ou dans sa propre langue et emprunte une phrase dans l’encadré ; une phrase et une croix sur l’échelle suffisent. Pour les personnages, un jeune qui lit bien lit la carte à voix haute ; près des affiches, on peut seulement écouter ou proposer un seul mot. Pour la colonne « Mon moment », un mot ou un signe suffit.",
           "schwerer": "Pour une de ses phrases, noter qui ou quoi la confirme encore aujourd’hui, et qui la contredit. Près des affiches, trouver pour chaque personnage une phrase d’ami sincère qui donne quand même du courage."
         },
-        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), cadre du jour (3 min), un personnage discuté ensemble au tableau, avec une phrase d’ami trouvée à voix haute (9 min), exercice 1 seul et en privé (10 min), exercices 3 et 4 seul (10 min), éclair de gratitude (6 min), pouce, Skills-Pass et mission de la semaine (7 min). Le tour des affiches est supprimé ; les cartes personnages peuvent servir de cas de détective la semaine suivante."
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), cadre du jour (3 min), un personnage discuté ensemble au tableau, avec une phrase d’ami trouvée à voix haute (9 min), exercice 1 seul et en privé (10 min), exercices 3 et 4 seul (10 min), éclair de gratitude (6 min), pouce, Skills-Pass, choix du moment et mission de la semaine (7 min). Le tour des affiches est supprimé ; les cartes personnages peuvent servir de cas de détective la semaine suivante."
       }
     }
   ],
@@ -542,6 +546,12 @@
             "frage": "Stimmt er heute noch? So sehr glaube ich ihn:"
           },
           {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Aus der Forschung",
+            "text": "Über ein Problem so nachzudenken, als ginge es um eine Freundin, macht klüger und weniger aufgewühlt."
+          },
+          {
             "art": "seitenumbruch"
           },
           {
@@ -610,6 +620,7 @@
             "Vor dem Schreiben den Rahmen nennen: privat, nichts wird vorgelesen oder eingesammelt; die Grenze der Vertraulichkeit offen sagen.",
             "Einheit 28, Schritt 4 (10 Min.): Aufgabe 1 mit Kreuz auf der Skala, wer mag Aufgabe 2. Nur auf Nachfrage helfen, nicht mitlesen.",
             "Schritt 7 (13 Min.): Aufgaben 3 und 4, dann die Seite mit einer Büroklammer verschließen oder falten.",
+            "Der Kasten „Aus der Forschung“ fasst Kross & Ayduk (2017) zusammen; der Beleg steht im Hintergrund der Einheit.",
             "Einheit 29: Wer mag, prüft einen dieser Sätze als Detektiv; die anderen nehmen eine Karte."
           ],
           "hintergrund": "Glaubenssätze entsprechen den Grundüberzeugungen der kognitiven Verhaltenstherapie: früh gelernten, stark verallgemeinerten Annahmen über sich selbst (Beck, 2011). Herkunft und Zahl schaffen Abstand; die Frage nach dem Blick einer Freundin nutzt das Selbst-Distanzieren (Kross & Ayduk, 2017). Private Schreibaufgaben helfen, Belastendes zu ordnen, ohne es preiszugeben (Pennebaker, 1997).",
@@ -680,6 +691,12 @@
             "frage": "Est-elle encore vraie ? J’y crois à ce point :"
           },
           {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce que dit la recherche",
+            "text": "Réfléchir à un problème comme s’il concernait une amie rend plus lucide et moins bouleversé·e."
+          },
+          {
             "art": "seitenumbruch"
           },
           {
@@ -748,6 +765,7 @@
             "Avant d’écrire, poser le cadre : privé, rien n’est lu à voix haute ni ramassé ; dire ouvertement où s’arrête la confidentialité.",
             "Séance 28, étape 4 (10 min) : exercice 1 avec une croix sur l’échelle, et l’exercice 2 pour qui veut. N’aider que sur demande, ne pas lire par-dessus l’épaule.",
             "Étape 7 (13 min) : exercices 3 et 4, puis fermer la page avec un trombone ou la plier.",
+            "L’encadré « Ce que dit la recherche » résume Kross & Ayduk (2017) ; la référence figure dans le fond de la séance.",
             "Séance 29 : qui veut examine une de ces phrases en détective ; les autres prennent une carte."
           ],
           "hintergrund": "Les croyances correspondent aux convictions profondes de la thérapie cognitive et comportementale : des suppositions très générales sur soi, apprises tôt (Beck, 2011). L’origine et le chiffre créent de la distance ; la question du regard d’une amie utilise la mise à distance de soi (Kross & Ayduk, 2017). Écrire en privé aide à mettre de l’ordre dans ce qui pèse, sans le dévoiler (Pennebaker, 1997).",
