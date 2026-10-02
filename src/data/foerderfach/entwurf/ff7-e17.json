@@ -408,7 +408,7 @@
             "titel": "Remplir ma valise à skills",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Expliquer au tableau les compartiments de la valise (liste) et lire sur la fiche la phrase de la petite valise (2 min). D’abord, chacun met une étoile dans son testeur de skills à côté des skills qui ont bien marché pour lui (2 min). Puis il remplit seul sa valise (9 min) : un ou deux skills par compartiment, avec une étoile ou tirés du quotidien, des mots-clés suffisent ; le dernier compartiment reste libre. Passer entre les tables et demander : est-ce que celui-là t’a vraiment aidé ? À deux (4 min) : le ou la partenaire regarde seulement les compartiments corps, sens et tête et pose une question sur un skill : où et quand est-ce que tu l’utilises ? On a le droit de reprendre les idées de l’autre. En classe entière (3 min) : deux ou trois volontaires citent un skill découvert chez leur partenaire et qu’ils veulent essayer. Qui a fini plus tôt vérifie sa valise avec une question : quel skill marche aussi dans le bus, sans que personne ne le remarque ?",
+            "text": "Expliquer au tableau les compartiments de la valise (liste) et lire la phrase de la petite valise (2 min). D’abord, chacun met une étoile dans son testeur à côté des skills qui ont bien marché pour lui (2 min). Puis il remplit seul sa valise (9 min) : un ou deux skills par compartiment, avec une étoile ou tirés du quotidien, des mots-clés suffisent ; le dernier compartiment reste libre. Passer entre les tables et demander : est-ce que celui-là t’a vraiment aidé ? À deux (4 min) : le ou la partenaire regarde seulement les compartiments corps, sens et tête et pose une question sur un skill : où et quand est-ce que tu l’utilises ? Reprendre les idées de l’autre est permis. En classe entière (3 min) : deux ou trois volontaires citent un skill découvert chez leur partenaire et qu’ils veulent essayer. Qui a fini plus tôt vérifie : quel skill marche aussi dans le bus, sans que personne ne le remarque ?",
             "sagen": [
               "Ne mettez dedans que ce qui a vraiment marché pour vous – pas ce qui sonne bien.",
               "Ce qu’il y a dans votre valise n’a pas besoin d’être dans celle des autres. Chaque valise est différente.",
@@ -423,7 +423,7 @@
               "À ajouter : libre pour les skills qui viendront pendant l’année"
             ],
             "tipp": "Qui dit que rien ne l’aide regarde son testeur de skills avec l’enseignant·e : il y a presque toujours un skill qui a au moins un peu aidé. Un skill qui aide un peu, c’est un bon début. Qui veut peut aussi noter ses trois meilleurs dans le tableau « Mes trois favoris ».",
-            "wennEsKippt": "Si « jouer à la console » ou « dormir » figure partout, ne pas se disputer : vingt minutes pour se distraire ou se reposer sont de vrais skills pour l’orange – et sans portable, dans le bus ? Qui ne veut rien écrire sur soi remplit la valise d’un personnage inventé, par exemple un gardien de but avant un penalty. Compartiment « personnes » vide : ne pas questionner devant la classe – un animal ou l’entraîneuse comptent aussi –, mais le noter pour un court échange. Qui était absent travaille avec son binôme.",
+            "wennEsKippt": "Si « jouer à la console » ou « dormir » figure partout, ne pas se disputer : vingt minutes pour se distraire ou se reposer sont de vrais skills pour l’orange – et sans portable, dans le bus ? Qui ne veut rien écrire sur soi remplit la valise d’un personnage inventé, un gardien de but avant un penalty par exemple. Compartiment « personnes » vide : ne pas questionner devant la classe, mais le noter pour un court échange ; un animal ou l’entraîneuse comptent aussi. Les absents travaillent avec leur binôme.",
             "blatt": "ff7-skills-koffer"
           },
           {
@@ -477,9 +477,9 @@
               "Demander de l’aide, ce n’est pas cafter et ce n’est pas une faiblesse. C’est le skill le plus important pour le rouge."
             ],
             "punkte": [
-              "Demander de l’aide : « Ça ne va pas bien en ce moment. Vous avez un moment ? »",
+              "Demander de l’aide : « Ça ne va pas bien en ce moment. Vous avez deux minutes ? »",
               "Manche 1 – l’adulte : « Oui, bien sûr. Viens, on sort un instant. »",
-              "Manche 2 – l’adulte : « Pas maintenant, j’ai cours dans deux minutes. »",
+              "Manche 2 – l’adulte : « Pas maintenant, j’ai cours tout de suite. »",
               "Insister : « C’est important. Quand est-ce que c’est possible ? » – ou aller voir la personne suivante."
             ],
             "tipp": "On ne demande pas de numéros de portable de la classe. Les amis comptent, mais dans le rouge, il faut quelqu’un qui peut faire plus : un adulte et les numéros d’aide. Qui n’ose pas parler peut aussi donner la phrase sur un papier ou venir avec une amie.",
@@ -867,7 +867,7 @@
             "symbol": "merke",
             "titel": "Comment demander de l’aide",
             "punkte": [
-              "Dis : « Ça ne va pas bien en ce moment. Vous avez un moment ? »",
+              "Dis : « Ça ne va pas bien en ce moment. Vous avez deux minutes ? »",
               "La personne n’a pas le temps ? Demande quand c’est possible – ou va voir quelqu’un d’autre.",
               "Tu peux venir avec un ami ou une amie. Demander de l’aide, ce n’est pas cafter."
             ]
@@ -1001,7 +1001,7 @@
               },
               {
                 "titel": "Ici, je trouve de l’aide",
-                "text": "Je vais voir : ______________________\nSePAS, salle : ______________________\n« Ça ne va pas bien en ce moment.\nVous avez un moment ? »\nKanner- a Jugendtelefon 116 111\nUrgences 112 · Police 113"
+                "text": "Je vais voir : ______________________\nSePAS, salle : ______________________\n« Ça ne va pas bien en ce moment.\nVous avez deux minutes ? »\nKanner- a Jugendtelefon 116 111\nUrgences 112 · Police 113"
               },
               {
                 "titel": "Quand ça dépasse 70",
@@ -1009,7 +1009,7 @@
               },
               {
                 "titel": "Ici, je trouve de l’aide",
-                "text": "Je vais voir : ______________________\nSePAS, salle : ______________________\n« Ça ne va pas bien en ce moment.\nVous avez un moment ? »\nKanner- a Jugendtelefon 116 111\nUrgences 112 · Police 113"
+                "text": "Je vais voir : ______________________\nSePAS, salle : ______________________\n« Ça ne va pas bien en ce moment.\nVous avez deux minutes ? »\nKanner- a Jugendtelefon 116 111\nUrgences 112 · Police 113"
               },
               {
                 "titel": "Quand ça dépasse 70",
@@ -1017,7 +1017,7 @@
               },
               {
                 "titel": "Ici, je trouve de l’aide",
-                "text": "Je vais voir : ______________________\nSePAS, salle : ______________________\n« Ça ne va pas bien en ce moment.\nVous avez un moment ? »\nKanner- a Jugendtelefon 116 111\nUrgences 112 · Police 113"
+                "text": "Je vais voir : ______________________\nSePAS, salle : ______________________\n« Ça ne va pas bien en ce moment.\nVous avez deux minutes ? »\nKanner- a Jugendtelefon 116 111\nUrgences 112 · Police 113"
               },
               {
                 "titel": "Quand ça dépasse 70",
@@ -1025,7 +1025,7 @@
               },
               {
                 "titel": "Ici, je trouve de l’aide",
-                "text": "Je vais voir : ______________________\nSePAS, salle : ______________________\n« Ça ne va pas bien en ce moment.\nVous avez un moment ? »\nKanner- a Jugendtelefon 116 111\nUrgences 112 · Police 113"
+                "text": "Je vais voir : ______________________\nSePAS, salle : ______________________\n« Ça ne va pas bien en ce moment.\nVous avez deux minutes ? »\nKanner- a Jugendtelefon 116 111\nUrgences 112 · Police 113"
               }
             ]
           }
