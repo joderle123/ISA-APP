@@ -214,7 +214,7 @@
             "titel": "Wer sieht es? Körper-Skills unauffällig",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Einstieg: fragen, ob jemand gemerkt hat, dass die Lehrkraft gerade beim Erklären einen Skill gemacht hat – etwa die Fäuste unter dem Pult. Dann bekommt jede Tischgruppe einen Zettel mit einer Situation (Liste) und bereitet eine stumme Szene von 30 Sekunden vor: Eine Person ist bei Gelb oder Rot und macht einen Körper-Skill so unauffällig wie möglich, die anderen spielen die Umgebung (5 Min.). Die Gruppen spielen nacheinander vorn; danach rät die Klasse, wer den Skill gemacht hat und welchen – die Gruppe gewinnt, wenn niemand es merkt (je 2 Min., zusammen 10 Min.). Zum Schluss sammeln (4 Min.): Welche Skills sind wirklich unsichtbar – und welche gehören eher in die Pause oder nach Hause?",
+            "text": "Beim Erklären der Aufgabe macht die Lehrkraft unauffällig einen Skill – etwa die Fäuste unter dem Pult – und fragt danach, wer es gemerkt hat. Dann bekommt jede Tischgruppe einen Zettel mit einer Situation (Liste) und bereitet eine stumme Szene von 30 Sekunden vor: Eine Person ist bei Gelb oder Rot und macht einen Körper-Skill so unauffällig wie möglich, die anderen spielen die Umgebung (5 Min.). Die Gruppen spielen nacheinander vorn; danach rät die Klasse, wer den Skill gemacht hat und welchen – die Gruppe gewinnt, wenn niemand es merkt (je 2 Min., zusammen 10 Min.). Zum Schluss sammeln (4 Min.): Welche Skills sind wirklich unsichtbar – und welche gehören eher in die Pause oder nach Hause?",
             "sagen": [
               "Ich habe gerade beim Erklären einen Skill gemacht. Wer hat es gemerkt?",
               "Die Szene ist stumm und dauert dreißig Sekunden – Sprüche und Lachen werden nur gespielt. Gewonnen hat die Gruppe, bei der die Klasse falsch rät."
@@ -223,7 +223,7 @@
               "Gruppe 1 · Im Bus: Der Bus ist voll und laut, zwei Ältere machen Sprüche über deine Jacke.",
               "Gruppe 2 · Im Test: Die erste Aufgabe verstehst du nicht, alle anderen schreiben schon.",
               "Gruppe 3 · In der Kantine: Jemand drängelt sich vor, und die Pause ist gleich vorbei.",
-              "Gruppe 4 · Im Unterricht: Der Lehrer schimpft dich vor allen, obwohl es dein Nachbar war.",
+              "Gruppe 4 · Im Unterricht: Der Lehrer schimpft vor allen mit dir, obwohl es dein Nachbar war.",
               "Gruppe 5 · Vor dem Vortrag: Gleich bist du dran und sollst vorn vor der Klasse sprechen."
             ],
             "tipp": "Die Rolle der Person mit dem Skill passt gut für Stille: Sie muss nichts sagen und hat trotzdem die wichtigste Aufgabe. Wer gern Theater macht, spielt die Umgebung.",
@@ -428,7 +428,7 @@
               "Maintenant, assis, bien calmes. Que fait votre cœur, que fait votre chiffre ?"
             ],
             "tipp": "Chez beaucoup, le chiffre monte pendant le mouvement, puis redescend en dessous de celui d’avant. C’est pour ça que bouger est un skill pour le rouge : ça brûle l’alarme au lieu de l’étouffer.",
-            "wennEsKippt": "Si la classe s’excite ensuite, tenir fermement les deux minutes assises et compter tout bas la respiration carrée. Qui ne doit pas ou ne veut pas courir presse fort les paumes l’une contre l’autre ou fait des flexions lentes.",
+            "wennEsKippt": "Si la classe s’excite ensuite, tenir fermement les deux minutes de calme, assis, et compter tout bas la respiration carrée. Qui ne doit pas ou ne veut pas courir presse fort les paumes l’une contre l’autre ou fait des flexions lentes.",
             "blatt": "ff7-skills-tester"
           },
           {
@@ -455,7 +455,7 @@
             "titel": "Qui l’a vu ? Des skills corporels discrets",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Pour commencer, demander si quelqu’un a remarqué que l’enseignant·e vient de faire un skill en expliquant – par exemple serrer les poings sous le bureau. Puis chaque îlot reçoit un papier avec une situation (liste) et prépare une scène muette de 30 secondes : une personne est dans l’orange ou le rouge et fait un skill corporel aussi discrètement que possible, les autres jouent l’entourage (5 min). Les îlots jouent l’un après l’autre devant ; ensuite la classe devine qui a fait le skill et lequel – l’îlot gagne si personne ne l’a remarqué (2 min par îlot, en tout 10 min). Pour finir, rassembler (4 min) : quels skills sont vraiment invisibles – et lesquels vont plutôt à la récré ou à la maison ?",
+            "text": "En expliquant la consigne, l’enseignant·e fait discrètement un skill – par exemple serrer les poings sous le bureau – puis demande qui l’a remarqué. Ensuite, chaque îlot reçoit un papier avec une situation (liste) et prépare une scène muette de 30 secondes : une personne est dans l’orange ou le rouge et fait un skill corporel aussi discrètement que possible, les autres jouent l’entourage (5 min). Les îlots jouent l’un après l’autre devant ; ensuite la classe devine qui a fait le skill et lequel – l’îlot gagne si personne ne l’a remarqué (2 min par îlot, en tout 10 min). Pour finir, rassembler (4 min) : quels skills sont vraiment invisibles – et lesquels vont plutôt à la récré ou à la maison ?",
             "sagen": [
               "Je viens de faire un skill pendant que j’expliquais. Qui l’a remarqué ?",
               "La scène est muette et dure trente secondes – les moqueries et les rires sont seulement mimés. L’îlot gagne si la classe se trompe."

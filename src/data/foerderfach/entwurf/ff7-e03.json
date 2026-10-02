@@ -111,7 +111,7 @@
             "titel": "Check-in: Klebepunkt und Namenswelle",
             "dauer": 10,
             "phase": "ankommen",
-            "text": "Die Namensschilder aus Einheit 1 liegen auf den Plätzen. Beim Hereinkommen klebt jede Person einen Punkt auf das Gefühlsrad-Plakat; wer die Wörter noch nicht kennt, klebt ihn in die Farbe, die passt. Die Lehrkraft sagt einen Satz zu ihrem Punkt, der schon klebt, zwei, drei Freiwillige nennen ihr Wort (3 Min.). Dann die Namenswelle: Die Lehrkraft beginnt, dann sagt Tisch für Tisch im Uhrzeigersinn jede Person nur ihren Vornamen, so schnell es geht; die Lehrkraft stoppt die Zeit. In der zweiten Runde läuft die Welle rückwärts – schafft die Klasse einen Rekord (3 Min.)? Zum Schluss das Ruhesignal einführen und einmal ausprobieren: Die Lehrkraft hebt die Hand, alle heben die Hand und werden still (1 Min.).",
+            "text": "Die Namensschilder aus Einheit 1 liegen auf den Plätzen. Beim Hereinkommen klebt jede Person einen Punkt auf das Gefühlsrad-Plakat; wer die Wörter noch nicht kennt, klebt ihn in die Farbe, die passt. Die Lehrkraft hat ihren Punkt schon geklebt und sagt einen Satz dazu; zwei, drei Freiwillige nennen ihr Wort (3 Min.). Dann die Namenswelle: Die Lehrkraft beginnt, dann sagt Tisch für Tisch im Uhrzeigersinn jede Person nur ihren Vornamen, so schnell es geht; die Lehrkraft stoppt die Zeit. In der zweiten Runde läuft die Welle rückwärts – schafft die Klasse einen Rekord (3 Min.)? Zum Schluss das Ruhesignal einführen und einmal ausprobieren: Die Lehrkraft hebt die Hand, alle heben die Hand und werden still (1 Min.).",
             "sagen": [
               "Ein Punkt für jetzt gerade. Niemand muss sagen, welcher seiner ist.",
               "Heute bewegt ihr euch viel. Wenn ich die Hand hebe, hebt ihr eure Hand und seid still – probieren wir es einmal."
@@ -139,10 +139,10 @@
               "Fragt jemanden, den ihr noch wenig kennt: Warum gerade diese Ecke?"
             ],
             "punkte": [
-              "Was nimmst du mit auf eine einsame Insel? A Handy ohne Netz · B Ball · C Lieblingsessen für ein Jahr · D Kopfhörer mit Musik",
-              "Welche Fähigkeit hättest du gern? A fliegen · B Tiere verstehen · C die Zeit anhalten · D jede Sprache sprechen",
-              "Welches Fach würdest du am Lycée erfinden? A Kochen · B Gaming · C Tiere · D Musik machen",
-              "Womit kann man dich am besten wecken? A Musik · B Wecker · C Duft von Frühstück · D gar nicht"
+              "Was nimmst du mit auf eine einsame Insel? A) Handy ohne Netz · B) Ball · C) Lieblingsessen für ein Jahr · D) Kopfhörer mit Musik",
+              "Welche Fähigkeit hättest du gern? A) fliegen · B) Tiere verstehen · C) die Zeit anhalten · D) jede Sprache sprechen",
+              "Welches Fach würdest du am Lycée erfinden? A) Kochen · B) Gaming · C) Tiere · D) Musik machen",
+              "Womit kann man dich am besten wecken? A) Musik · B) Wecker · C) Duft von Frühstück · D) gar nicht"
             ],
             "tipp": "Die Lehrkraft stellt sich in die leerste Ecke und fragt dort mit nach. Steht jemand allein in einer Ecke, ist das kein Problem, sondern eine eigene Meinung: hingehen und nach dem Warum fragen. Wird die Zeit knapp, entfällt die Linie.",
             "wennEsKippt": "Rennen alle los oder wird geschubst, Ruhesignal und die Runde neu starten: erst nachdenken, dann auf „los“ gehen. Sucht jemand vor allem die Ecke mit den meisten Lachern, das gelassen nehmen und ihm oder ihr die nächste Frage zum Vorlesen geben. Wer nicht laufen mag, zeigt die Antwort vom Platz aus mit einem bis vier Fingern; wer die Sprache noch lernt, zeigt auf die Zeichnung an der Tafel."
@@ -213,7 +213,7 @@
             "titel": "Skill: Ein Kompliment annehmen",
             "dauer": 10,
             "phase": "skill",
-            "text": "Ankündigen: Jetzt kommt ein Skill für einen Moment, der schwerer ist, als er klingt – wenn jemand etwas Nettes über einen sagt. Jede Person schreibt auf einen Klebezettel, was ihr heute an der Person rechts in der Tischgruppe aufgefallen ist: etwas, das sie getan hat, nicht wie sie aussieht (3 Min.). Dann liest jede Person ihr Kompliment der Person rechts vor und gibt ihr den Zettel; wer es bekommt, übt die drei Schritte (3 Min.). Zum Schluss zwei, drei Rückmeldungen: Was war schwerer, geben oder annehmen? Wann könnte der Skill helfen? Erklären: Wer ein Kompliment kleinredet, sagt dem anderen eigentlich: Du irrst dich. Wer Danke sagt, lässt es ankommen (3 Min.).",
+            "text": "Ankündigen: Jetzt kommt ein Skill für einen Moment, der schwerer ist, als er klingt – wenn jemand etwas Nettes über einen sagt. Jede Person schreibt auf einen Klebezettel, was ihr heute an der Person rechts in der Tischgruppe aufgefallen ist: etwas, das sie getan hat, nicht wie sie aussieht (3 Min.). Dann liest jede Person ihr Kompliment der Person rechts vor und gibt ihr den Zettel; wer es bekommt, übt die drei Schritte (3 Min.). Zum Schluss zwei, drei Rückmeldungen: Was war schwerer, geben oder annehmen? Wann könnte der Skill helfen? Erklären: Wer ein Kompliment kleinredet, sagt dem anderen eigentlich, dass er sich irrt; wer Danke sagt, lässt es ankommen (3 Min.).",
             "sagen": [
               "Schreibt, was die Person heute gemacht hat: Du hast beim Bingo richtig nachgefragt. Deine Lüge hat keiner erraten.",
               "Wer ein Kompliment bekommt, sagt nur: Danke."
@@ -358,12 +358,12 @@
               "Demandez à quelqu’un que vous connaissez encore peu : pourquoi ce coin-là ?"
             ],
             "punkte": [
-              "Qu’emportes-tu sur une île déserte ? A un portable sans réseau · B un ballon · C ton plat préféré pour un an · D un casque avec ta musique",
-              "Quel don aimerais-tu avoir ? A voler · B comprendre les animaux · C arrêter le temps · D parler toutes les langues",
-              "Quelle matière inventerais-tu au lycée ? A cuisine · B jeux vidéo · C animaux · D faire de la musique",
-              "Qu’est-ce qui te réveille le mieux ? A la musique · B le réveil · C l’odeur du petit-déjeuner · D rien du tout"
+              "Qu’emportes-tu sur une île déserte ? A) un portable sans réseau · B) un ballon · C) ton plat préféré pour un an · D) un casque avec ta musique",
+              "Quel don aimerais-tu avoir ? A) voler · B) comprendre les animaux · C) arrêter le temps · D) parler toutes les langues",
+              "Quelle matière inventerais-tu au lycée ? A) cuisine · B) jeux vidéo · C) animaux · D) faire de la musique",
+              "Qu’est-ce qui te réveille le mieux ? A) la musique · B) le réveil · C) l’odeur du petit-déjeuner · D) rien du tout"
             ],
-            "tipp": "Se placer soi-même dans le coin le plus vide et y poser des questions. Si quelqu’un est seul dans un coin, ce n’est pas un problème mais une opinion à lui : aller le rejoindre et lui demander pourquoi. Si le temps manque, laisser tomber la ligne.",
+            "tipp": "Se placer soi-même dans le coin le plus vide et y poser des questions. Si quelqu’un est seul dans un coin, ce n’est pas un problème, c’est son choix : aller le rejoindre et lui demander pourquoi. Si le temps manque, laisser tomber la ligne.",
             "wennEsKippt": "Si tout le monde se précipite ou se bouscule, signal de calme et on recommence le tour : d’abord réfléchir, puis y aller au signal. Si quelqu’un choisit surtout le coin où l’on rit le plus, le prendre avec calme et lui confier la lecture de la question suivante. Qui ne veut pas se déplacer montre sa réponse depuis sa place avec un à quatre doigts ; qui apprend encore la langue montre le dessin au tableau."
           },
           {
@@ -432,7 +432,7 @@
             "titel": "Skill : accepter un compliment",
             "dauer": 10,
             "phase": "skill",
-            "text": "Annoncer : voici un skill pour un moment plus difficile qu’il n’y paraît – quand quelqu’un dit quelque chose de gentil sur nous. Chaque jeune écrit sur un post-it ce qu’il a remarqué aujourd’hui chez la personne à sa droite dans l’îlot : quelque chose qu’elle a fait, pas son apparence (3 min). Puis chacun lit son compliment à la personne de droite et lui donne le post-it ; celle qui le reçoit s’entraîne aux trois étapes (3 min). Pour finir, deux ou trois retours : qu’est-ce qui était le plus difficile, donner ou recevoir ? Quand ce skill pourrait-il aider ? Expliquer : qui minimise un compliment dit en fait à l’autre : tu te trompes. Qui dit merci le laisse arriver (3 min).",
+            "text": "Annoncer : voici un skill pour un moment plus difficile qu’il n’y paraît – quand quelqu’un dit quelque chose de gentil sur nous. Chaque jeune écrit sur un post-it ce qu’il a remarqué aujourd’hui chez la personne à sa droite dans l’îlot : quelque chose qu’elle a fait, pas son apparence (3 min). Puis chacun lit son compliment à la personne de droite et lui donne le post-it ; celle qui le reçoit s’entraîne aux trois étapes (3 min). Pour finir, deux ou trois retours : qu’est-ce qui était le plus difficile, donner ou recevoir ? Quand ce skill pourrait-il aider ? Expliquer : minimiser un compliment, c’est dire à l’autre qu’il se trompe ; dire merci, c’est le laisser arriver (3 min).",
             "sagen": [
               "Écrivez ce que la personne a fait aujourd’hui : tu as vraiment posé des questions au bingo. Personne n’a deviné ton mensonge.",
               "Qui reçoit un compliment dit seulement : merci."
@@ -443,7 +443,7 @@
               "Laisser agir : rester un moment silencieux au lieu de minimiser."
             ],
             "tipp": "Écrire au tableau trois ou quatre exemples que chacun peut recopier : tu as bien écouté. Tu m’as fait rire. Tu m’as aidé au bingo. L’apparence, les vêtements et le corps restent en dehors – ainsi, personne ne se sent jugé.",
-            "wennEsKippt": "Si un compliment est ironique ou porte sur l’apparence, rendre gentiment le post-it : qu’est-ce que la personne a fait aujourd’hui ? Si fusent des remarques comme « amoureux ! », rester calme : il s’agit seulement de ce que quelqu’un a fait. Si un jeune ne veut pas écrire, l’enseignant·e écrit soi-même un post-it pour son voisin – personne ne repart les mains vides. Qui n’ose pas dire merci fait un signe de tête ; ça compte aussi."
+            "wennEsKippt": "Si un compliment est ironique ou porte sur l’apparence, rendre gentiment le post-it : qu’est-ce que la personne a fait aujourd’hui ? Si fusent des remarques comme « amoureux ! », rester calme : il s’agit seulement de ce que quelqu’un a fait. Si un jeune ne veut pas écrire, l’enseignant·e écrit alors un post-it pour son voisin – personne ne repart les mains vides. Qui n’ose pas dire merci fait un signe de tête ; ça compte aussi."
           },
           {
             "titel": "Skills-Pass, tour éclair et mission",

@@ -192,7 +192,7 @@
             "titel": "Stopp-Abstand: meine Wohlfühl-Distanz",
             "dauer": 18,
             "phase": "aktiv",
-            "text": "Jede Tischgruppe bekommt eine Bahn mit Start- und Bodenlinie. Vorführen (3 Min.): Die Lehrkraft steht am Ende einer Bahn, eine freiwillige Person geht langsam und schweigend auf sie zu und bleibt auf „Stopp“ stehen; den Abstand in Fußlängen messen. Dann die Variante zeigen: allein auf die Bodenlinie zugehen und sich dort eine Person vorstellen. Runde 1 (5 Min.): Wer einverstanden ist, steht am Ende der Bahn, eine andere Person geht auf sie zu; zwei messen und notieren ohne Namen, dann wechseln. Wer nicht angesteuert werden möchte, nimmt die Linie. Runde 2 (4 Min.): Alle gehen zweimal auf die Linie zu; die Lehrkraft sagt für alle Bahnen an, wer in Gedanken dort steht – erst eine fremde Person im Bus, dann die beste Freundin oder der beste Freund. Auswertung in der Klasse (4 Min.), dann Aufgabe 2 auf dem Blatt (2 Min.).",
+            "text": "Jede Tischgruppe bekommt eine Bahn mit Start- und Bodenlinie. Vorführen (3 Min.): Eine ruhige freiwillige Person geht langsam und schweigend auf die Lehrkraft zu und bleibt auf „Stopp“ stehen; den Abstand in Fußlängen messen. Dann die Variante zeigen: allein auf die Bodenlinie zugehen und sich dort eine Person vorstellen. Runde 1 (5 Min.): Wer einverstanden ist, steht am Ende der Bahn, eine andere Person geht auf sie zu; zwei messen und notieren ohne Namen, dann wechseln. Wer nicht angesteuert werden möchte, nimmt die Linie. Runde 2 (4 Min.): Alle gehen zweimal auf die Linie zu; die Lehrkraft sagt an, wer in Gedanken dort steht – eine fremde Person im Bus, dann der beste Freund oder die beste Freundin. Auswertung (4 Min.), dann Aufgabe 2 auf dem Blatt (2 Min.).",
             "sagen": [
               "Wer Stopp hört, bleibt sofort stehen. Ohne Diskussion. Das ist heute die wichtigste Regel.",
               "Spätestens eine Fußlänge vor der Person ist Schluss – auch wenn niemand Stopp sagt.",
@@ -229,7 +229,7 @@
                 ]
               ]
             },
-            "tipp": "Eine Fußlänge sind etwa 25 Zentimeter; wer mag, rechnet die Abstände in Zentimeter um und vergleicht mit dem Tafelbild. Die Abstände ohne Namen an die Tafel schreiben – die Spannweite von zwei bis acht Fußlängen zeigt, dass es keinen richtigen Abstand gibt. Für die Vorführung eine ruhige Person wählen.",
+            "tipp": "Eine Fußlänge sind etwa 25 Zentimeter; wer mag, rechnet die Abstände in Zentimeter um und vergleicht mit dem Tafelbild. Die Abstände ohne Namen an die Tafel schreiben – die Spannweite von zwei bis acht Fußlängen zeigt, dass es keinen richtigen Abstand gibt.",
             "wennEsKippt": "Rennt jemand los, bleibt nicht stehen oder macht Faxen, sofort abbrechen, die Regel wiederholen und die Person in der nächsten Runde messen lassen. Wird gekichert oder gestichelt, wer auf wen zugeht, die Paarbildung stoppen und alle auf die Linie zugehen lassen. Erstarrt jemand oder will raus, die Übung für diese Person beenden, einen ruhigen Platz in Sichtweite anbieten und später nachfragen.",
             "blatt": "ff7-meine-grenzen"
           },
@@ -485,7 +485,7 @@
             "titel": "La distance « stop » : ma distance de confort",
             "dauer": 18,
             "phase": "aktiv",
-            "text": "Chaque îlot reçoit une piste avec une ligne de départ et une ligne au sol. Démonstration (3 min) : l’enseignant·e se place au bout d’une piste, un volontaire avance lentement et en silence et s’arrête au « stop » ; mesurer la distance en pieds. Montrer ensuite la variante : avancer seul vers la ligne au sol en imaginant une personne qui s’y trouve. Tour 1 (5 min) : qui est d’accord se place au bout de la piste, un autre avance vers lui ; deux jeunes mesurent et notent sans prénom, puis on change. Qui ne veut pas qu’on avance vers lui prend la ligne. Tour 2 (4 min) : chacun avance deux fois vers la ligne ; l’enseignant·e annonce pour toutes les pistes qui s’y trouve en pensée – d’abord un inconnu dans le bus, puis le meilleur ami ou la meilleure amie. Bilan en classe entière (4 min), puis exercice 2 de la fiche (2 min).",
+            "text": "Chaque îlot reçoit une piste avec une ligne de départ et une ligne au sol. Démonstration (3 min) : un volontaire calme avance lentement et en silence vers l’enseignant·e et s’arrête au « stop » ; mesurer la distance en pieds. Montrer ensuite la variante : avancer seul vers la ligne au sol en imaginant une personne qui s’y trouve. Tour 1 (5 min) : qui est d’accord se place au bout de la piste, un autre avance vers lui ; deux jeunes mesurent et notent sans prénom, puis on change. Qui ne veut pas qu’on avance vers lui prend la ligne. Tour 2 (4 min) : chacun avance deux fois vers la ligne ; l’enseignant·e annonce qui s’y trouve en pensée – un inconnu dans le bus, puis le meilleur ami ou la meilleure amie. Bilan (4 min), puis exercice 2 de la fiche (2 min).",
             "sagen": [
               "Qui entend “stop” s’arrête immédiatement. Sans discuter. C’est la règle la plus importante aujourd’hui.",
               "Au plus tard à un pied de la personne, on s’arrête – même si personne ne dit stop.",
@@ -522,7 +522,7 @@
                 ]
               ]
             },
-            "tipp": "Un pied mesure environ 25 centimètres ; qui veut convertit les distances en centimètres et compare avec le tableau. Noter les distances au tableau sans prénom – l’écart de deux à huit pieds montre qu’il n’y a pas de bonne distance. Pour la démonstration, choisir un jeune calme.",
+            "tipp": "Un pied mesure environ 25 centimètres ; qui veut convertit les distances en centimètres et compare avec le tableau. Noter les distances au tableau sans prénom – l’écart de deux à huit pieds montre qu’il n’y a pas de bonne distance.",
             "wennEsKippt": "Si quelqu’un fonce, ne s’arrête pas ou fait le clown, arrêter tout de suite, répéter la règle et lui confier la mesure au tour suivant. Si on se met à ricaner ou à faire des allusions sur qui avance vers qui, arrêter les paires et faire avancer tout le monde vers la ligne. Si un jeune se fige ou veut sortir, arrêter l’exercice pour lui, lui proposer une place au calme à portée de vue et lui parler plus tard.",
             "blatt": "ff7-meine-grenzen"
           },

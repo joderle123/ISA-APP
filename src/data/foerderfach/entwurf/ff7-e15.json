@@ -39,7 +39,7 @@
       ],
       "de": {
         "titel": "Skills über die Sinne",
-        "kurz": "An fünf Stationen testet die Klasse Sinnes-Skills – Tasten, Kälte, Klang, Sehen und Duft oder Hände –, schreibt ihre Playlist zum Runterkommen auf Papier und übt 3-3-3 für unterwegs.",
+        "kurz": "An fünf Stationen testet die Klasse Sinnes-Skills (Tasten, Kälte, Klang, Sehen, Duft oder Hände), schreibt ihre Playlist zum Runterkommen auf Papier und übt 3-3-3 für unterwegs.",
         "ziele": [
           "testen an fünf Stationen Sinnes-Skills mit Zahl vorher und nachher und vergleichen, was beruhigt und was wach macht",
           "erklären, warum ein starker oder angenehmer Reiz die Aufmerksamkeit aus dem Gedankenkarussell holt",
@@ -52,14 +52,15 @@
           "Stationskarten (Vorlage)",
           "Fühlbeutel mit sechs Dingen",
           "2 Kühlakkus, 5 Geschirrtücher",
-          "Klangschale, Glitzerglas, Lautsprecher",
-          "Riechgläser, Igelball (Station 5)"
+          "Klangschale, Glitzerflasche",
+          "Riechdosen, Igelball (Station 5)",
+          "Lautsprecher, ein ruhiges Stück"
         ],
         "vorbereitung": [
           "Eine Woche vorher klären, wer Asthma, eine Duftallergie oder Probleme mit Kälte hat (Régent, Eltern, Jugendliche).",
-          "Kühlakkus am Vortag einfrieren, Glitzerglas basteln (siehe Vorlage).",
+          "Kühlakkus am Vortag einfrieren, Glitzerflasche basteln (siehe Vorlage).",
           "Fünf Stationen aufbauen: Kälte und Duft nah am Pult, Klang möglichst weit weg.",
-          "Riechstreifen erst kurz vor der Stunde beträufeln und in Schraubgläser stellen."
+          "Riechstreifen erst kurz vor der Stunde beträufeln und in die Riechdosen legen."
         ],
         "ablauf": [
           {
@@ -162,7 +163,7 @@
                 ],
                 [
                   "Sehen",
-                  "dem Glitzer im Glas zuschauen, im Raum alles in einer Farbe suchen"
+                  "dem Glitzer in der Flasche zuschauen, im Raum alles in einer Farbe suchen"
                 ],
                 [
                   "Riechen",
@@ -177,7 +178,7 @@
             "titel": "Meine Playlist auf Papier",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Während leise ein ruhiges Instrumentalstück läuft, schreibt jede Person allein auf das Blatt „Meine Sinne, meine Playlist“ je drei Songs zum Runterkommen und zum Aufladen (5 Min.); ein Handy braucht dafür niemand. Dann Song-Tausch in der Tischgruppe: Reihum nennt jede Person einen Song zum Runterkommen und sagt in einem Satz, warum er wirkt – Rhythmus, Stimme, Text, eine Erinnerung; die anderen notieren sich einen Song, den sie ausprobieren wollen (7 Min.). Dann in der Klasse (5 Min.): Welche Songs würden eine 70 eher zur 90 machen – und was hört ihr dann lieber? Zum Schluss beantwortet jede Person Aufgabe 2 für sich (3 Min.).",
+            "text": "Während leise ein ruhiges Instrumentalstück läuft, schreibt jede Person allein auf das Blatt „Meine Sinne, meine Playlist“ je drei Songs zum Runterkommen und zum Aufladen (5 Min.); ein Handy braucht dafür niemand. Dann Song-Tausch in der Tischgruppe: Reihum nennt jede Person einen Song zum Runterkommen und sagt in einem Satz, warum er wirkt: Rhythmus, Stimme, Text oder eine Erinnerung; „weiter“ ist erlaubt. Die anderen notieren sich einen Song, den sie ausprobieren wollen (7 Min.). Dann in der Klasse (5 Min.): Welche Songs würden eine 70 eher zur 90 machen – und was hört ihr dann lieber? Zum Schluss beantwortet jede Person Aufgabe 2 für sich (3 Min.).",
             "sagen": [
               "Ein Song zum Runterkommen muss nicht langsam sein. Er muss euch runterbringen.",
               "Musik kann auch hochziehen. Bei Rot lieber nicht den Song, der die Wut noch lauter macht."
@@ -205,7 +206,7 @@
             "titel": "Sinnes-Stationen: fünf Tests",
             "dauer": 28,
             "phase": "uebung",
-            "text": "Start (3 Min.): Jede Tischgruppe geht zu ihrer ersten Station – Gruppe 1 zu Station 1 und so weiter – und verteilt die Rollen Vorlesen, Zeit, Material und Aufräumen; die Regeln an der Tafel gemeinsam lesen. Dann fünf Runden zu je fünf Minuten (25 Min.): Karte vorlesen, Zahl vorher, Skill etwa drei Minuten, Zahl nachher im Skills-Tester eintragen, Station aufräumen. Auf das Zeichen – Hand heben, dann „Wechsel“ – geht jede Gruppe im Uhrzeigersinn weiter. Die Lehrkraft bleibt bei Kälte und Duft, gibt jeder Gruppe ein frisches Tuch und achtet darauf, dass die Gläser nur kurz offen sind. In der letzten Runde das Fenster öffnen.",
+            "text": "Start (3 Min.): Jede Tischgruppe geht zu ihrer ersten Station – Gruppe 1 zu Station 1 und so weiter – und verteilt die Rollen Vorlesen, Zeit, Material und Aufräumen; die Regeln an der Tafel gemeinsam lesen. Dann fünf Runden zu je fünf Minuten (25 Min.): Karte vorlesen, Zahl vorher, Skill etwa drei Minuten, Zahl nachher im Skills-Tester eintragen, Station aufräumen. Auf das Zeichen – Hand heben, dann „Wechsel“ – geht jede Gruppe im Uhrzeigersinn weiter. Die Lehrkraft bleibt bei Kälte und Duft, gibt jeder Gruppe ein frisches Tuch und achtet darauf, dass die Riechdosen nur kurz offen sind. In der letzten Runde das Fenster öffnen.",
             "sagen": [
               "Ihr testet nicht, ob ihr etwas mögt, sondern was es mit eurer Zahl macht.",
               "Hand hoch heißt: Satz zu Ende, Zahl eintragen, aufräumen. Dann Wechsel."
@@ -213,19 +214,19 @@
             "punkte": [
               "Wir bleiben an unserer Station und wechseln erst auf das Zeichen.",
               "Kühlakku nur im Tuch, nur an Händen oder Handgelenken – nie ins Gesicht oder in den Nacken anderer.",
-              "Riechgläser nur kurz öffnen, den Duft mit der Hand zufächeln, Glas wieder zu.",
+              "Riechdosen nur kurz öffnen, den Duft mit der Hand zufächeln, Dose wieder zu; niemandem etwas unter die Nase halten.",
               "Nichts in den Mund, nichts werfen; jede Person entscheidet selbst, ob sie mitmacht.",
               "Die Station so verlassen, wie wir sie gefunden haben."
             ],
             "tipp": "Die Stationskarten so auslegen, dass jede Gruppe ohne Erklärung beginnen kann. Wer die Unterrichtssprache noch lernt, orientiert sich an den Bildern auf den Karten und macht einfach mit; wer nicht lesen mag, übernimmt Zeit oder Material.",
-            "wennEsKippt": "Wird an einer Station herumgealbert – Kühlakku in den Nacken, Glitzerglas als Rassel –, die Gruppe eine Runde lang bei der Lehrkraft zuschauen lassen. Klagt jemand über Kopfschmerzen, Übelkeit oder Atemnot, das Glas schließen, das Fenster öffnen und die Person ans offene Fenster setzen; bei Atemnot das Krankenzimmer rufen. Wer gar nicht mitmachen will, begleitet seine Gruppe als Zeitwächter.",
+            "wennEsKippt": "Wird an einer Station herumgealbert – Kühlakku in den Nacken, Glitzerflasche als Rassel –, die Gruppe eine Runde lang bei der Lehrkraft zuschauen lassen. Klagt jemand über Kopfschmerzen, Übelkeit oder Atemnot, die Dose schließen, das Fenster öffnen und die Person ans offene Fenster setzen; bei Atemnot das Krankenzimmer rufen. Wer gar nicht mitmachen will, begleitet seine Gruppe als Zeitwächter.",
             "blatt": "ff7-sinnes-stationen"
           },
           {
             "titel": "Was wirkt bei wem? Mein Plan",
             "dauer": 7,
             "phase": "uebung",
-            "text": "Zurück an den Plätzen: Die Lehrkraft nennt die Stationen nacheinander, alle heben die Hand bei der Station, bei der ihre Zahl am meisten gesunken ist, und an der Tafel entsteht eine Strichliste (2 Min.). Kurz auswerten: Was hat beruhigt, was hat wach gemacht? Stimmt die Vermutung am Rand des Skills-Testers (2 Min.)? Dann füllt jede Person auf dem Blatt Aufgabe 3 aus: Welchen Sinnes-Skill nehme ich diese Woche mit – und wann (3 Min.)?",
+            "text": "Zurück an den Plätzen: Die Lehrkraft nennt die Stationen nacheinander, alle heben die Hand bei der Station, bei der ihre Zahl am meisten gesunken ist, und an der Tafel entsteht eine Strichliste (2 Min.). Kurz auswerten (2 Min.): Was hat beruhigt, was hat wach gemacht? Stimmt die Vermutung am Rand des Skills-Testers? Dann füllt jede Person auf dem Blatt Aufgabe 3 aus (3 Min.): Welchen Sinnes-Skill nehme ich diese Woche mit – und wann?",
             "sagen": [
               "Hebt die Hand bei der Station, bei der eure Zahl am meisten gesunken ist.",
               "Kälte und Pfefferminze machen viele wach. Das kann vor einem Test genau richtig sein."
@@ -255,11 +256,11 @@
             "titel": "Skills-Pass, Mission und Ausblick",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Leitfrage für den Skills-Pass an die Tafel: Welcher Sinn hilft mir am meisten – und wann setze ich ihn ein? Satz schreiben, Stempel (2 Min.). Dann die Wochen-Mission ansagen (steht im Heft) und den Ausblick geben. Nach der Stunde kommen die Kühlakkus zurück ins Gefrierfach, die Tücher in die Wäsche und die Gläser verschlossen in den Schrank.",
+            "text": "Leitfrage für den Skills-Pass an die Tafel: Welcher Sinn hilft mir am meisten – und wann setze ich ihn ein? Satz schreiben, Stempel (2 Min.). Dann die Wochen-Mission ansagen (steht im Heft) und den Ausblick geben. Nach der Stunde kommen die Kühlakkus zurück ins Gefrierfach, die Tücher in die Wäsche und die Riechdosen verschlossen in den Schrank.",
             "sagen": [
               "Ein Satz für den Skills-Pass: Welcher Sinn hilft euch am meisten – und wann?"
             ],
-            "tipp": "Wer einen Knetball oder einen glatten Stein besonders mochte, darf ihn bis zur Stunde 17 behalten: Ein Skill in der Hosentasche wird eher benutzt als einer, der nur auf dem Blatt steht."
+            "tipp": "Hat die Schule genug Knetbälle oder glatte Steine, darf mitnehmen, wer einen besonders mochte: Ein Skill in der Hosentasche wird eher benutzt als einer, der nur auf dem Blatt steht."
           }
         ],
         "bruecke": "Nächste Woche wird es ruhig im Kopf: Ihr lernt, Gedanken vorbeiziehen zu lassen, testet Kopf-Skills für einen vollen Kopf und sucht euch einen sicheren Ort in Gedanken.",
@@ -270,7 +271,7 @@
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
           "Juslin, P. N. & Västfjäll, D. (2008). Emotional responses to music: The need to consider underlying mechanisms. Behavioral and Brain Sciences, 31(5), 559–575."
         ],
-        "achtung": "Düfte nur nach Rückfrage: Eine Woche vorher klären, wer Asthma, eine Allergie oder eine Duftempfindlichkeit hat; gibt es das in der Klasse, bleibt Station 5 ohne Duft. Düfte nur vom Riechstreifen im Glas, nie auf die Haut. Bei Kopfschmerzen, Übelkeit oder Atemnot: Glas zu, Fenster auf, die Person ans Fenster setzen, bei Atemnot das Krankenzimmer rufen, im Notfall 112. Kälte nur im Tuch, kurz und freiwillig, nicht bei Durchblutungsproblemen. Düfte und Musik können belastende Erinnerungen wecken: Aussetzen ist immer erlaubt. Wer aufgewühlt wirkt, nach der Stunde ansprechen; bei Hinweisen auf Gefährdung noch am selben Tag den SePAS informieren.",
+        "achtung": "Düfte nur nach Rückfrage: Eine Woche vorher klären, wer Asthma, eine Allergie oder eine Duftempfindlichkeit hat; gibt es das in der Klasse, bleibt Station 5 ohne Duft. Düfte nur vom Riechstreifen in der Dose, nie auf die Haut. Bei Kopfschmerzen, Übelkeit oder Atemnot: Dose zu, Fenster auf, die Person ans Fenster setzen, bei Atemnot das Krankenzimmer rufen, im Notfall 112. Kälte nur im Tuch, kurz und freiwillig, nicht bei Durchblutungsproblemen. Düfte und Musik können belastende Erinnerungen wecken: Aussetzen ist immer erlaubt. Wer aufgewühlt wirkt, nach der Stunde ansprechen; bei Hinweisen auf Gefährdung noch am selben Tag den SePAS informieren.",
         "differenzierung": {
           "leichter": "Die Stationskarten haben Bilder; in jeder Gruppe liest eine Person vor, die gut liest. Im Skills-Tester reichen die Zahlen. Auf der Playlist dürfen auch ein Geräusch oder ein Ort stehen, gern in der eigenen Sprache; für den Plan Satzanfänge an die Tafel: Wenn ich …, dann …",
           "schwerer": "An einer Station die Gruppe anleiten und durch den Skill führen. Zu jeder Station notieren, ob sie eher beruhigt oder wach macht, und eine Situation finden, in der genau das gebraucht wird."
@@ -279,7 +280,7 @@
       },
       "fr": {
         "titel": "Des skills par les sens",
-        "kurz": "En cinq ateliers, la classe teste des skills par les sens – toucher, froid, son, vue et odeur ou mains –, écrit sur papier sa playlist pour redescendre et s’entraîne au 3-3-3 pour la route.",
+        "kurz": "En cinq ateliers, la classe teste des skills par les sens (toucher, froid, son, vue, odeur ou mains), écrit sur papier sa playlist pour redescendre et s’entraîne au 3-3-3 pour la route.",
         "ziele": [
           "testent en cinq ateliers des skills par les sens avec un chiffre avant et après et comparent ce qui calme et ce qui réveille",
           "expliquent pourquoi une sensation forte ou agréable sort l’attention du manège des pensées",
@@ -292,14 +293,15 @@
           "Cartes d’ateliers (modèle)",
           "Sac à toucher avec six objets",
           "2 poches de froid, 5 torchons",
-          "Bol chantant, bocal à paillettes, enceinte",
-          "Bocaux à odeurs, balle à picots"
+          "Bol chantant, bouteille à paillettes",
+          "Boîtes à odeurs, balle à picots",
+          "Enceinte, un morceau calme"
         ],
         "vorbereitung": [
-          "Une semaine avant, vérifier qui a de l’asthme, une allergie aux odeurs ou un souci avec le froid (régent, parents, jeunes).",
-          "Congeler les poches de froid la veille ; fabriquer le bocal à paillettes (voir modèle).",
+          "Une semaine avant, vérifier asthme, allergies aux odeurs et soucis avec le froid (régent, parents, jeunes).",
+          "Congeler les poches de froid la veille ; fabriquer la bouteille à paillettes (voir modèle).",
           "Installer cinq ateliers : froid et odeurs près du bureau, son le plus loin possible.",
-          "Imbiber les bandelettes juste avant la séance, dans des bocaux à vis."
+          "Imbiber les bandelettes juste avant la séance, dans les boîtes à odeurs."
         ],
         "ablauf": [
           {
@@ -402,7 +404,7 @@
                 ],
                 [
                   "Vue",
-                  "regarder les paillettes retomber dans le bocal, chercher dans la salle tout ce qui a une couleur"
+                  "regarder les paillettes retomber dans la bouteille, chercher dans la salle tout ce qui a une couleur"
                 ],
                 [
                   "Odorat",
@@ -417,10 +419,10 @@
             "titel": "Ma playlist sur papier",
             "dauer": 20,
             "phase": "uebung",
-            "text": "Pendant qu’un morceau instrumental calme passe doucement, chaque jeune écrit seul sur la fiche « Mes sens, ma playlist » trois chansons pour redescendre et trois pour recharger ses batteries (5 min) ; personne n’a besoin de son portable pour ça. Puis échange de chansons en îlot : à tour de rôle, chacun cite une chanson pour redescendre et dit en une phrase pourquoi elle marche – le rythme, la voix, les paroles, un souvenir ; les autres notent une chanson qu’ils veulent essayer (7 min). Ensuite en classe entière (5 min) : quelles chansons feraient plutôt passer un 70 à 90 – et qu’écoutez-vous alors plutôt ? Pour finir, chacun répond seul à l’exercice 2 (3 min).",
+            "text": "Pendant qu’un morceau instrumental calme passe doucement, chaque jeune écrit seul sur la fiche « Mes sens, ma playlist » trois chansons pour redescendre et trois pour recharger ses batteries (5 min) ; personne n’a besoin de son portable pour ça. Puis échange de chansons en îlot : à tour de rôle, chacun cite une chanson pour redescendre et dit en une phrase pourquoi elle marche : le rythme, la voix, les paroles ou un souvenir ; on peut dire « je passe ». Les autres notent une chanson qu’ils veulent essayer (7 min). Ensuite en classe entière (5 min) : quelles chansons feraient plutôt passer un 70 à 90 – et qu’écoutez-vous alors plutôt ? Pour finir, chacun répond seul à l’exercice 2 (3 min).",
             "sagen": [
               "Une chanson pour redescendre n’a pas besoin d’être lente. Elle doit vous faire redescendre.",
-              "La musique peut aussi faire monter. Dans le rouge, mieux vaut éviter la chanson qui met encore plus la rage."
+              "La musique peut aussi faire monter. Dans le rouge, mieux vaut éviter la chanson qui fait encore monter la colère."
             ],
             "tipp": "Aucune chanson n’est jugée ni diffusée : personne n’a à justifier ses goûts, et on évite les débats sur les paroles. Le morceau calme en fond montre au passage comment la musique change l’ambiance de la salle.",
             "wennEsKippt": "Si des chansons sont moquées, montrer la charte de classe : ici, on ne juge pas les goûts. Si des chansons violentes ou insultantes sont citées, ne pas débattre des paroles, mais demander : est-ce que cette chanson te fait redescendre – ou est-ce qu’elle entretient la colère ? Qui ne trouve pas de chanson note un bruit, une voix ou un lieu qui l’apaise.",
@@ -445,7 +447,7 @@
             "titel": "Ateliers des sens : cinq tests",
             "dauer": 28,
             "phase": "uebung",
-            "text": "Départ (3 min) : chaque îlot va à son premier atelier – l’îlot 1 à l’atelier 1, et ainsi de suite – et se répartit les rôles : lire, temps, matériel, rangement ; lire ensemble les règles au tableau. Puis cinq tours de cinq minutes (25 min) : lire la carte, chiffre avant, le skill pendant environ trois minutes, chiffre après dans le testeur de skills, ranger l’atelier. Au signal – main levée, puis « On change » –, chaque îlot passe à l’atelier suivant dans le sens des aiguilles d’une montre. L’enseignant·e reste près du froid et des odeurs, donne à chaque îlot un torchon propre et veille à ce que les bocaux ne restent ouverts qu’un instant. Au dernier tour, ouvrir la fenêtre.",
+            "text": "Départ (3 min) : chaque îlot va à son premier atelier – l’îlot 1 à l’atelier 1, et ainsi de suite – et se répartit les rôles : lire, temps, matériel, rangement ; lire ensemble les règles au tableau. Puis cinq tours de cinq minutes (25 min) : lire la carte, chiffre avant, le skill pendant environ trois minutes, chiffre après dans le testeur de skills, ranger l’atelier. Au signal – main levée, puis « On change » –, chaque îlot passe à l’atelier suivant dans le sens des aiguilles d’une montre. L’enseignant·e reste près du froid et des odeurs, donne à chaque îlot un torchon propre et veille à ce que les boîtes à odeurs ne restent ouvertes qu’un instant. Au dernier tour, ouvrir la fenêtre.",
             "sagen": [
               "Vous ne testez pas si vous aimez quelque chose, mais ce que ça fait à votre chiffre.",
               "Main levée, ça veut dire : on finit sa phrase, on note son chiffre, on range. Puis on change."
@@ -453,19 +455,19 @@
             "punkte": [
               "On reste à son atelier et on change seulement au signal.",
               "La poche de froid seulement dans le torchon, seulement sur les mains ou les poignets – jamais sur le visage ou dans le cou des autres.",
-              "Les bocaux à odeurs ouverts un instant seulement, on ramène l’odeur vers soi avec la main, puis on referme.",
+              "Les boîtes à odeurs ouvertes un instant seulement, on ramène l’odeur vers soi avec la main, puis on referme ; on ne met rien sous le nez des autres.",
               "Rien dans la bouche, rien ne se lance ; chacun décide s’il participe.",
               "On laisse l’atelier comme on l’a trouvé."
             ],
             "tipp": "Disposer les cartes pour que chaque îlot puisse commencer sans explication. Un jeune qui apprend encore la langue du cours s’aide des pictogrammes des cartes et fait comme les autres ; qui n’aime pas lire prend le temps ou le matériel.",
-            "wennEsKippt": "Si un atelier tourne au chahut – poche de froid dans le cou, bocal à paillettes utilisé comme maracas –, faire observer l’îlot un tour à côté de l’enseignant·e. Si quelqu’un se plaint de maux de tête, de nausée ou de difficultés à respirer, refermer le bocal, ouvrir la fenêtre et installer la personne près de la fenêtre ouverte ; en cas de difficultés à respirer, appeler l’infirmerie. Qui ne veut pas du tout participer accompagne son îlot comme gardien du temps.",
+            "wennEsKippt": "Si un atelier tourne au chahut – poche de froid dans le cou, bouteille à paillettes utilisée comme maracas –, faire observer l’îlot un tour à côté de l’enseignant·e. Si quelqu’un se plaint de maux de tête, de nausée ou de difficultés à respirer, refermer la boîte, ouvrir la fenêtre et installer la personne près de la fenêtre ouverte ; en cas de difficultés à respirer, appeler l’infirmerie. Qui ne veut pas du tout participer accompagne son îlot comme gardien du temps.",
             "blatt": "ff7-sinnes-stationen"
           },
           {
             "titel": "Qu’est-ce qui marche pour qui ? Mon plan",
             "dauer": 7,
             "phase": "uebung",
-            "text": "De retour à sa place : l’enseignant·e cite les ateliers l’un après l’autre, chacun lève la main pour l’atelier où son chiffre a le plus baissé, et une liste de bâtons apparaît au tableau (2 min). Faire le point : qu’est-ce qui a calmé, qu’est-ce qui a réveillé ? L’hypothèse dans la marge du testeur se vérifie-t-elle (2 min) ? Puis chacun remplit l’exercice 3 de la fiche : quel skill des sens est-ce que j’emporte cette semaine – et pour quel moment (3 min) ?",
+            "text": "De retour à sa place : l’enseignant·e cite les ateliers l’un après l’autre, chacun lève la main pour l’atelier où son chiffre a le plus baissé, et une liste de bâtons apparaît au tableau (2 min). Faire le point (2 min) : qu’est-ce qui a calmé, qu’est-ce qui a réveillé ? L’hypothèse dans la marge du testeur se vérifie-t-elle ? Puis chacun remplit l’exercice 3 de la fiche (3 min) : quel skill des sens est-ce que j’emporte cette semaine – et pour quel moment ?",
             "sagen": [
               "Levez la main pour l’atelier où votre chiffre a le plus baissé.",
               "Le froid et la menthe réveillent beaucoup de monde. Avant un devoir en classe, ça peut être exactement ce qu’il faut."
@@ -495,11 +497,11 @@
             "titel": "Skills-Pass, mission et suite",
             "dauer": 5,
             "phase": "abschluss",
-            "text": "Question pour le Skills-Pass au tableau : quel sens m’aide le plus – et quand est-ce que je l’utilise ? Écrire la phrase, tampon (2 min). Puis annoncer la mission de la semaine (elle figure dans le cahier) et la prochaine séance. Après le cours, les poches de froid retournent au congélateur, les torchons au lavage et les bocaux, bien fermés, dans l’armoire.",
+            "text": "Question pour le Skills-Pass au tableau : quel sens m’aide le plus – et quand est-ce que je l’utilise ? Écrire la phrase, tampon (2 min). Puis annoncer la mission de la semaine (elle figure dans le cahier) et la prochaine séance. Après le cours, les poches de froid retournent au congélateur, les torchons au lavage et les boîtes à odeurs, bien fermées, dans l’armoire.",
             "sagen": [
               "Une phrase pour le Skills-Pass : quel sens vous aide le plus – et à quel moment ?"
             ],
-            "tipp": "Qui a particulièrement aimé une balle anti-stress ou une pierre lisse peut la garder jusqu’à la séance 17 : un skill dans la poche s’utilise plus qu’un skill qui reste sur la fiche."
+            "tipp": "Si l’école a assez de balles anti-stress ou de pierres lisses, qui en a particulièrement aimé une peut l’emporter : un skill dans la poche s’utilise plus qu’un skill qui reste sur la fiche."
           }
         ],
         "bruecke": "La semaine prochaine, place au calme dans la tête : vous apprendrez à laisser passer vos pensées, vous testerez des skills mentaux pour une tête trop pleine et vous chercherez un lieu sûr dans votre imagination.",
@@ -510,7 +512,7 @@
           "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
           "Juslin, P. N. & Västfjäll, D. (2008). Emotional responses to music: The need to consider underlying mechanisms. Behavioral and Brain Sciences, 31(5), 559–575."
         ],
-        "achtung": "Les odeurs seulement après vérification : une semaine avant, savoir qui a de l’asthme, une allergie ou une sensibilité aux odeurs ; si c’est le cas, l’atelier 5 reste sans odeur. Odeurs uniquement sur bandelette dans un bocal, jamais sur la peau. En cas de maux de tête, de nausée ou de gêne respiratoire : bocal fermé, fenêtre ouverte, la personne près de la fenêtre, l’infirmerie si elle respire mal, le 112 en cas d’urgence. Le froid seulement dans un torchon et brièvement, pas en cas de problèmes de circulation. Odeurs et musique peuvent réveiller des souvenirs pénibles : on peut toujours se retirer. Reparler après le cours à qui semble remué ; en cas de signe de danger, informer le SePAS le jour même.",
+        "achtung": "Les odeurs seulement après vérification : une semaine avant, savoir qui a de l’asthme, une allergie ou une sensibilité aux odeurs ; si c’est le cas, l’atelier 5 reste sans odeur. Odeurs uniquement sur bandelette dans une boîte, jamais sur la peau. En cas de maux de tête, de nausée ou de gêne respiratoire : boîte fermée, fenêtre ouverte, la personne près de la fenêtre, l’infirmerie si elle respire mal, le 112 en cas d’urgence. Le froid seulement dans un torchon et brièvement, pas en cas de problèmes de circulation. Odeurs et musique peuvent réveiller des souvenirs pénibles : on peut toujours se retirer. Reparler après le cours à qui semble remué ; en cas de signe de danger, informer le SePAS le jour même.",
         "differenzierung": {
           "leichter": "Les cartes des ateliers ont des pictogrammes ; dans chaque îlot, quelqu’un qui lit bien lit à voix haute. Dans le testeur, les chiffres suffisent. Dans la playlist, on peut aussi noter un bruit ou un lieu, volontiers dans sa langue ; pour le plan, des débuts de phrase au tableau : Si je…, alors…",
           "schwerer": "Prendre la direction d’un atelier et guider le groupe dans le skill. Pour chaque atelier, noter s’il calme ou s’il réveille, et trouver une situation où c’est exactement ce dont on a besoin."
@@ -612,7 +614,7 @@
             "beispiele": [
               {
                 "wenn": "Wenn ich vor dem Test merke, dass meine Zahl steigt,",
-                "dann": "mache ich 3-3-3: drei Dinge sehen, drei Geräusche hören, drei Körperteile bewegen."
+                "dann": "nehme ich meine kühle Wasserflasche in beide Hände und atme dreimal lang aus."
               }
             ]
           },
@@ -707,7 +709,7 @@
             "beispiele": [
               {
                 "wenn": "Si, avant un devoir en classe, je sens mon chiffre monter,",
-                "dann": "je fais le 3-3-3 : trois choses que je vois, trois bruits que j’entends, trois parties du corps que je bouge."
+                "dann": "je prends ma bouteille d’eau fraîche à deux mains et j’expire longuement trois fois."
               }
             ]
           },
@@ -763,7 +765,7 @@
         "bausteine": [
           {
             "art": "text",
-            "text": "Material je Station: 1 Stoffbeutel mit sechs Dingen (Igelball, glatter Stein, Knetball, weicher Stoff, Tannenzapfen, Korken) · 2 Kühlakkus in Tüchern · 3 Klangschale oder Glas mit Löffel · 4 Glitzerglas oder Schneekugel · 5 zwei Riechgläser (Orange, Pfefferminze) und ein Igelball – ohne Duft nur der Igelball. Glitzerglas: ein Schraubglas mit Wasser, Glitzer und einem Tropfen Spülmittel füllen, den Deckel festkleben.",
+            "text": "Material je Station: 1 Stoffbeutel mit sechs Dingen (Igelball, glatter Stein, Knetball, weicher Stoff, Tannenzapfen, Korken) · 2 Kühlakkus in Tüchern · 3 Klangschale oder Triangel · 4 Glitzerflasche oder Schneekugel · 5 zwei Riechdosen (Orange, Pfefferminze) und ein Igelball – ohne Duft nur der Igelball. Glitzerflasche: eine durchsichtige Plastikflasche mit Wasser, Glitzer und einem Tropfen Spülmittel füllen, den Deckel festkleben.",
             "klein": true
           },
           {
@@ -788,12 +790,12 @@
               },
               {
                 "titel": "Station 4 · Sehen",
-                "text": "Schüttelt das Glitzerglas und stellt es in die Mitte. Schaut zu, bis sich der ganze Glitzer gesetzt hat – ohne zu reden. Zweimal. Dann sucht jede Person still fünf Dinge im Raum, die ihre Lieblingsfarbe haben.",
+                "text": "Schüttelt die Glitzerflasche und stellt sie in die Mitte. Schaut zu, bis sich der ganze Glitzer gesetzt hat – ohne zu reden. Zweimal. Dann sucht jede Person still fünf Dinge im Raum, die ihre Lieblingsfarbe haben.",
                 "bild": "icon:eye"
               },
               {
                 "titel": "Station 5 · Duft oder Hände",
-                "text": "Duft: ein Glas öffnen, den Duft mit der Hand zufächeln, mit Abstand riechen, Glas wieder zu. Woran erinnert er euch? Ohne Duft: den Igelball langsam über Handflächen und Unterarme rollen, eine Minute lang. Jede Person wählt selbst.",
+                "text": "Duft: eine Dose öffnen, den Duft mit der Hand zufächeln, mit Abstand riechen, Dose wieder zu. Woran erinnert er euch? Ohne Duft: den Igelball langsam über Handflächen und Unterarme rollen, eine Minute lang. Jede Person wählt selbst.",
                 "bild": "icon:flower"
               },
               {
@@ -816,7 +818,7 @@
             "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
             "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
           ],
-          "material": "Stoffbeutel, sechs Fühl-Dinge, Kühlakkus, Tücher, Klangschale, Glitzerglas, Riechgläser, Igelball"
+          "material": "Stoffbeutel, sechs Fühl-Dinge, Kühlakkus, Tücher, Klangschale, Glitzerflasche, Riechdosen, Igelball"
         }
       },
       "fr": {
@@ -825,7 +827,7 @@
         "bausteine": [
           {
             "art": "text",
-            "text": "Matériel par atelier : 1 sac en tissu avec six objets (balle à picots, pierre lisse, balle anti-stress, tissu doux, pomme de pin, bouchon) · 2 poches de froid dans des torchons · 3 bol chantant ou verre et cuillère · 4 bocal à paillettes ou boule à neige · 5 deux bocaux à odeurs (orange, menthe) et une balle à picots – sans odeur, seulement la balle. Bocal à paillettes : remplir un bocal à vis d’eau, de paillettes et d’une goutte de liquide vaisselle, puis coller le couvercle.",
+            "text": "Matériel par atelier : 1 sac en tissu avec six objets (balle à picots, pierre lisse, balle anti-stress, tissu doux, pomme de pin, bouchon) · 2 poches de froid dans des torchons · 3 bol chantant ou triangle · 4 bouteille à paillettes ou boule à neige · 5 deux boîtes à odeurs (orange, menthe) et une balle à picots – sans odeur, seulement la balle. Bouteille à paillettes : remplir une bouteille en plastique transparente d’eau, de paillettes et d’une goutte de liquide vaisselle, puis coller le bouchon.",
             "klein": true
           },
           {
@@ -850,12 +852,12 @@
               },
               {
                 "titel": "Atelier 4 · Regarder",
-                "text": "Secouez le bocal à paillettes et posez-le au milieu. Regardez, sans parler, jusqu’à ce que toutes les paillettes soient retombées. Deux fois. Puis chacun cherche en silence cinq choses dans la salle de sa couleur préférée.",
+                "text": "Secouez la bouteille à paillettes et posez-la au milieu. Regardez, sans parler, jusqu’à ce que toutes les paillettes soient retombées. Deux fois. Puis chacun cherche en silence cinq choses dans la salle de sa couleur préférée.",
                 "bild": "icon:eye"
               },
               {
                 "titel": "Atelier 5 · Odeur ou mains",
-                "text": "Odeur : ouvrir un bocal, ramener l’odeur vers soi avec la main, sentir à distance, refermer. À quoi vous fait-elle penser ? Sans odeur : faire rouler lentement la balle à picots sur les paumes et les avant-bras, pendant une minute. Chacun choisit.",
+                "text": "Odeur : ouvrir une boîte, ramener l’odeur vers soi avec la main, sentir à distance, refermer. À quoi vous fait-elle penser ? Sans odeur : faire rouler lentement la balle à picots sur les paumes et les avant-bras, pendant une minute. Chacun choisit.",
                 "bild": "icon:flower"
               },
               {
@@ -878,7 +880,7 @@
             "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
             "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
           ],
-          "material": "Sac en tissu, six objets, poches de froid, torchons, bol chantant, bocal à paillettes, bocaux à odeurs, balle à picots"
+          "material": "Sac en tissu, six objets, poches de froid, torchons, bol chantant, bouteille à paillettes, boîtes à odeurs, balle à picots"
         }
       }
     }

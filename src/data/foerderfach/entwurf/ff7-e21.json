@@ -1,0 +1,990 @@
+{
+  "einheiten": [
+    {
+      "id": "ff7-e21",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "ff7-mein-stopp"
+      ],
+      "vorlagen": [
+        "ff7-stopp-szenen"
+      ],
+      "woerter": [
+        {
+          "de": "eine Grenze setzen",
+          "fr": "poser une limite"
+        },
+        {
+          "de": "Stopp sagen",
+          "fr": "dire stop"
+        },
+        {
+          "de": "die Haltung",
+          "fr": "la posture"
+        },
+        {
+          "de": "nachhaken",
+          "fr": "insister"
+        },
+        {
+          "de": "Hilfe holen",
+          "fr": "aller chercher de l’aide"
+        }
+      ],
+      "de": {
+        "titel": "Grenzen setzen: Stopp!",
+        "kurz": "Die Klasse vergleicht drei Arten, Stopp zu sagen, übt ein klares Stopp und setzt in erfundenen Szenen Grenzen – auch wenn jemand nachhakt.",
+        "ziele": [
+          "beschreiben, was ein Stopp klar macht: Haltung, Blick, Hand, Stimme und kurze Worte ohne Lächeln",
+          "setzen in Rollenspielen Grenzen mit Wort und Körper und bleiben dabei, wenn jemand nachhakt",
+          "erkennen Situationen, in denen Weggehen und Hilfe holen der richtige Weg ist",
+          "notieren einen eigenen Stopp-Satz und eine Person, zu der sie gehen können"
+        ],
+        "material": [
+          "Schülerheft, Stempel für den Pass",
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Szenen-Karten, ein Satz je Gruppe",
+          "Bahnen am Boden aus Einheit 20"
+        ],
+        "vorbereitung": [
+          "Szenen-Karten kopieren, schneiden, je Tischgruppe ein Satz.",
+          "Die drei Stopps (Schritt 3) einmal laut üben: Lächeln gegen ernstes Gesicht.",
+          "Tafelbild (Schritt 3) vorbereiten; Raum und Zeiten des SePAS dazuschreiben.",
+          "Klären, wo SePAS und Régent heute nach der Stunde erreichbar sind."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Gefühl und Zahl im Stehen"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick: Wo war es zu nah?"
+          },
+          {
+            "min": "15–27",
+            "phase": "input",
+            "titel": "Welches Stopp nimmt man ernst?"
+          },
+          {
+            "min": "27–45",
+            "phase": "uebung",
+            "titel": "Stopp üben: Wort und Körper"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Stopp und Los"
+          },
+          {
+            "min": "50–75",
+            "phase": "aktiv",
+            "titel": "Rollenspiel: Stopp in erfundenen Szenen"
+          },
+          {
+            "min": "75–85",
+            "phase": "uebung",
+            "titel": "Mein Stopp-Plan"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Fester Stand"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Stopp-Satz-Runde, Skills-Pass, Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühl und Zahl im Stehen",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad. Dann stehen alle hinter ihrem Stuhl und zeigen auf drei ihre Anspannung mit den Fingern (0–10 Finger für 0–100); zwei, drei Freiwillige nennen Wort und Zahl, die Lehrkraft beginnt. Zum Schluss noch zehn Sekunden stehen bleiben und die Füße spüren: Wie fest steht ihr heute – eher wackelig oder eher fest? Daumen hoch oder zur Seite, dann setzen. Ankündigen: Heute geht es darum, fest zu stehen – mit dem Körper und mit Worten.",
+            "sagen": [
+              "Gefühl und Zahl – heute im Stehen.",
+              "Spürt eure Füße. Steht ihr heute eher wackelig oder eher fest?"
+            ],
+            "tipp": "Der kurze Moment im Stehen bereitet den Skill am Ende der Stunde vor; wer ihn zweimal erlebt, erinnert sich leichter daran.",
+            "wennEsKippt": "Wird das Stehen zum Wackel-Wettbewerb, kurz mitlachen und dann ruhig zählen: drei Atemzüge still stehen, dann setzen. Zeigt jemand acht Finger oder mehr, nicht vor der Klasse nachfragen, sondern später leise fragen, ob er oder sie heute etwas braucht – das Thema Grenzen kann nahegehen."
+          },
+          {
+            "titel": "Rückblick: Wo war es zu nah?",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Kurz an die letzte Stunde erinnern: körperliche, emotionale und digitale Grenzen, die eigene Wohlfühl-Distanz. Eine Person liest ihren Satz aus dem Skills-Pass vor. Per Daumen nach der Wochen-Mission fragen (hoch, Mitte, runter): Wer hat bemerkt, wann der Körper „zu nah“ oder „zu viel“ gemeldet hat? Eine Stimme erzählt in einem Satz – ohne Namen und mit einer harmlosen Situation wie Bus oder Kantine; niemand muss die Mission geschafft haben. Dann das Ziel nennen: heute eine Grenze so zeigen, dass sie ankommt.",
+            "sagen": [
+              "Wo hat euer Körper diese Woche Stopp gesagt? Ein Satz, ohne Namen – zum Beispiel im Bus oder in der Schlange in der Kantine.",
+              "Letztes Mal habt ihr Grenzen erkannt. Heute übt ihr, sie zu zeigen – so, dass sie ankommen."
+            ],
+            "wennEsKippt": "Erzählt jemand von einer Situation, die nach Übergriff, Gewalt oder Bedrohung klingt, freundlich unterbrechen: Danke, dass du das sagst. Darüber möchte ich nachher in Ruhe mit dir reden. Dann weitermachen, das Gespräch direkt nach der Stunde führen und noch am selben Tag den SePAS informieren."
+          },
+          {
+            "titel": "Welches Stopp nimmt man ernst?",
+            "dauer": 12,
+            "phase": "input",
+            "text": "Die Lehrkraft zeigt drei Arten, Stopp zu sagen, zu einer gedachten Person zwei Meter entfernt: leise mit Lächeln, laut mit Grinsen, dann klar – Hand hoch, gerade stehen, Blick zur Person, ernstes Gesicht, feste Stimme. Nach jeder Variante zeigt die Klasse mit den Fingern von 0 bis 10, wie ernst sie das Stopp nehmen würde (3 Min.). Gemeinsam sammeln, was ein Stopp klar macht; dabei Aufgabe 1 auf dem Blatt lösen (3 Min.). Dann das Tafelbild aufdecken: drei Arten, Stopp zu sagen (4 Min.). Zum Schluss den wichtigsten Satz der Stunde sagen: Wer in einer echten Situation erstarrt, ist nicht schuld (2 Min.).",
+            "sagen": [
+              "Zeigt mit den Fingern: Wie ernst nehmt ihr dieses Stopp, von 0 bis 10?",
+              "Stellt euch vor, jemand sagt Stopp und lächelt dabei. Welcher Teil gewinnt?",
+              "Und wenn es in einer echten Situation nicht klappt, weil man erstarrt oder keinen Ton herausbringt: Das passiert vielen. Dann ist man nicht schuld – schuld ist, wer die Grenze überschreitet."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Art",
+                "So geht’s"
+              ],
+              "zeilen": [
+                [
+                  "1 Mit Worten",
+                  "kurz und klar, ohne Entschuldigung: „Stopp. Das will ich nicht.“"
+                ],
+                [
+                  "2 Mit dem Körper",
+                  "Hand heben, einen Schritt zurück, fest stehen, Blick zur Person (die Stirn reicht), ernstes Gesicht"
+                ],
+                [
+                  "3 Weggehen und Hilfe holen",
+                  "wenn das Stopp nicht gehört wird, wenn es gefährlich wird oder wenn man nichts sagen kann – das ist kein Petzen"
+                ]
+              ]
+            },
+            "tipp": "Das Lachen beim Stoppsagen ist meist Verlegenheit, kein fehlender Ernst. Das offen ansprechen: Viele lächeln, weil sie niemanden verletzen wollen – und genau deshalb wird ihr Stopp überhört. Dass Worte und Körper zusammenpassen müssen, kennt die Klasse aus der Stunde über verbal und nonverbal.",
+            "wennEsKippt": "Lacht die Klasse über die Vorführung, mitlachen und dann ernst wiederholen: Genau das ist der Unterschied. Fragt jemand: Und wenn der andere stärker ist?, das ernst nehmen: Dann ist der dritte Weg der richtige – weggehen und Hilfe holen.",
+            "blatt": "ff7-mein-stopp"
+          },
+          {
+            "titel": "Stopp üben: Wort und Körper",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Zu zweit an den Bahnen der letzten Stunde oder im Raum. B geht langsam auf A zu, A stoppt; nach jeder Runde wechseln (6 Min.): erst nur mit der Hand, dann Hand und Wort, dann alles zusammen – fester Stand, Blick, feste Stimme, ein kurzer Satz. Wer sich schwertut, beginnt leise und wird von Runde zu Runde lauter. Dann allein Aufgabe 2 auf dem Blatt: Stopp-Sätze ankreuzen (3 Min.). Danach das Nachhaken üben (6 Min.): A sagt den eigenen Stopp-Satz, B hakt einmal nach – „Stell dich nicht so an“ –, A wiederholt ruhig denselben Satz. Kurz in der Klasse (3 Min.): Was war schwerer – der erste Satz oder der zweite?",
+            "sagen": [
+              "Probiert es so leise, wie es für euch geht – und dann eine Stufe lauter. Ihr bestimmt das Tempo.",
+              "Beim Nachhaken müsst ihr nichts Neues erfinden. Derselbe Satz noch einmal, ruhig und fest – das reicht."
+            ],
+            "punkte": [
+              "Keine Berührung. Spätestens eine Fußlänge vorher ist Schluss.",
+              "Wer Stopp hört, bleibt sofort stehen.",
+              "Laut heißt nicht schreien: so laut, dass die Person es hört – nicht der ganze Flur.",
+              "Nachgehakt wird nur einmal, mit einem Satz von der Tafel."
+            ],
+            "tipp": "Viele finden das Nachhaken schwerer als das erste Stopp, gerade bei Freunden. Die Lehrkraft spielt einmal vor, wie man denselben Satz ruhig wiederholt, ohne sich zu rechtfertigen – das nimmt den Druck, eine bessere Begründung finden zu müssen. Ist wenig Platz, üben die Paare in zwei Durchgängen: Die eine Hälfte übt, die andere schaut zu.",
+            "wennEsKippt": "Wird das Üben zum Brüllwettbewerb, die Regel von der Tafel wiederholen und eine Runde im Flüsterton anschließen. Wer nicht vor anderen üben möchte, übt mit der Lehrkraft in einer Ecke oder zuerst nur mit der Hand. Geht jemand trotz Stopp weiter, sofort abbrechen und die Person das nächste Paar beobachten lassen.",
+            "blatt": "ff7-mein-stopp"
+          },
+          {
+            "titel": "Bewegungspause: Stopp und Los",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle gehen kreuz und quer durch den Raum, ohne sich zu berühren. Auf „Stopp“ frieren alle ein, auf „Los“ geht es weiter (1 Min.). Dann wird getauscht: „Stopp“ heißt gehen, „Los“ heißt stehen bleiben (1 Min.). Zum Schluss zwei neue Kommandos dazu: „Hand“ – alle zeigen die Stopp-Hand, „Boden“ – alle berühren kurz den Boden (2 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Stopp. – Los. – Und jetzt umgekehrt: Stopp heißt gehen."
+            ],
+            "tipp": "Das Spiel ist schnell erklärt und macht wach. Nebenbei üben alle, auf ein Stopp sofort zu reagieren – genau das, was danach im Rollenspiel zählt.",
+            "wennEsKippt": "Wird gerannt oder gerempelt, alle einfrieren lassen und in Zeitlupe weitermachen. Wer nicht gehen mag, macht die Kommandos am Platz mit."
+          },
+          {
+            "titel": "Rollenspiel: Stopp in erfundenen Szenen",
+            "dauer": 25,
+            "phase": "aktiv",
+            "text": "Jede Tischgruppe bekommt die Szenen-Karten. Die Lehrkraft spielt eine Szene als A vor, eine freiwillige Person setzt die Grenze (4 Min.). Dann in den Gruppen (12 Min.): A spielt die Person auf der Karte und hakt genau einmal nach, B setzt die Grenze mit Wort und Körper, C und D beobachten mit dem Stopp-Check; nach jeder Szene Rollen tauschen, bis jede Person einmal B war. Bei den Hilfe-Karten zeigt B, wie sie weggeht und wen sie holt. Danach spielen zwei Gruppen, die möchten, eine Szene vor der Klasse (6 Min.). Zum Schluss: Was hat gewirkt – und wann war Weggehen der bessere Weg (3 Min.)?",
+            "sagen": [
+              "A hakt genau einmal nach. B bleibt dabei, ruhig und klar. Dann ist Schluss.",
+              "Nach jeder Szene schüttelt ihr die Rolle ab und sagt euren eigenen Namen – hier spielt niemand sich selbst."
+            ],
+            "punkte": [
+              "Keine Berührung – nur Worte, Abstand und ein einziges Nachhaken.",
+              "A spielt nie eine echte Person aus der Klasse.",
+              "Wer nicht spielen möchte, übernimmt den Stopp-Check.",
+              "Nach jeder Szene: ausschütteln, den eigenen Namen sagen."
+            ],
+            "tipp": "An den Hilfe-Karten wird deutlich, dass Weggehen kein Verlieren ist. Bei der Chat-Karte gehört zum Stopp auch das Handeln: Screenshot machen, blockieren, melden und einer erwachsenen Person Bescheid sagen.",
+            "wennEsKippt": "Spielt jemand die Rolle A zu echt, wird körperlich oder baut Sprüche gegen Mitschülerinnen oder Mitschüler ein, sofort „Stopp“ rufen, die Szene beenden und sie mit der Lehrkraft als A neu starten. Wirkt jemand betroffen oder still, die Rolle wechseln lassen oder den Stopp-Check übergeben und nach der Stunde nachfragen.",
+            "blatt": "ff7-stopp-szenen"
+          },
+          {
+            "titel": "Mein Stopp-Plan",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Allein auf dem Blatt (6 Min.): Aufgabe 3 – was sagst du Luca beim ersten und beim zweiten Mal? – und Aufgabe 4, der eigene Stopp-Plan mit Satz, Körper und einer Person, zu der man geht, wenn das Stopp nicht reicht. Dann gemeinsam die beiden Kästen unten lesen und die Hilfe im Haus nennen: wo der SePAS ist und wann, wer die Éducateurs sind, wie man den Régent erreicht; dazu das Kanner- a Jugendtelefon 116 111 (4 Min.). Die Pläne werden nicht vorgelesen.",
+            "sagen": [
+              "Wer Hilfe holt, damit etwas aufhört, petzt nicht. Er schützt sich – oder jemand anderen.",
+              "Schreibt bei Aufgabe 4 eine echte Person auf, zu der ihr gehen würdet. Ihr müsst sie niemandem zeigen."
+            ],
+            "tipp": "Die Hilfe im Haus konkret machen: Raum und Sprechzeiten des SePAS an der Tafel, den Namen des Régent nennen. Wer weiß, wo die Tür ist, geht eher hinein.",
+            "wennEsKippt": "Fragt jemand nach, weil er sich um eine echte Person sorgt, nicht vor der Klasse vertiefen: Das ist eine wichtige Frage – ich spreche nach der Stunde mit dir darüber. Danach das Gespräch führen und den SePAS noch am selben Tag einbeziehen.",
+            "blatt": "ff7-mein-stopp"
+          },
+          {
+            "titel": "Skill: Fester Stand",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Alle stehen auf, mit etwas Platz zum Stuhl. Die drei Schritte langsam anleiten und selbst mitmachen (Liste); wer mag, stellt sich vor, dass Wurzeln in den Boden wachsen wie beim Baum der Stärke. Zweimal durchgehen, dann im festen Stand den eigenen Stopp-Satz leise sagen. Danach zwei, drei Rückmeldungen: Was ist anders als vorhin beim Check-in? Erklären: Diese Haltung ist der Boden für jedes klare Stopp – und sie beruhigt nach einer aufregenden Übung. Zum Schluss fragen, wann sie helfen könnte: vor der Klassentür, im Bus, bevor man Nein sagt.",
+            "sagen": [
+              "Spürt eure Füße. Das ist euer Platz – niemand schiebt euch weg.",
+              "Zehn Sekunden reichen. Das fällt niemandem auf."
+            ],
+            "punkte": [
+              "Stell die Füße hüftbreit, die Knie locker, und spür dein Gewicht auf beiden Füßen.",
+              "Richte den Rücken auf, lass die Schultern sinken und atme dreimal langsam aus.",
+              "Sag leise, aber fest: Ich stehe hier."
+            ],
+            "tipp": "Den festen Stand vor schwierigen Momenten nutzen – vor der Klassentür, vor einem Gespräch, bevor man Nein sagt. Er dauert zehn Sekunden und lässt sich mit der Fingeratmung verbinden.",
+            "wennEsKippt": "Wird gewackelt oder geschubst, alle wieder setzen und die Übung im Sitzen machen: beide Füße fest auf den Boden, Rücken aufrecht, ausatmen. Wer den Satz nicht laut sagen mag, sagt ihn im Kopf."
+          },
+          {
+            "titel": "Stopp-Satz-Runde, Skills-Pass, Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Wer mag, sagt seinen Stopp-Satz laut und klar – ohne Namen –, und die Klasse antwortet gemeinsam: Okay. So übt sie zum Schluss die andere Seite – ein Nein annehmen, ohne zu diskutieren (2 Min.). Dann der Skills-Pass zum Ende des Kapitels mit der Leitfrage an der Tafel: Was nehme ich aus vier Stunden Kommunikation und Grenzen mit? Danach gibt es den Stempel (2 Min.). Zum Schluss die Wochen-Mission im Heft ansagen und den Ausblick auf das neue Kapitel geben (1 Min.).",
+            "sagen": [
+              "Sagt euren Satz so, wie ihr ihn meint. Und wir antworten alle: Okay."
+            ],
+            "tipp": "Das gemeinsame Okay wirkt oft stärker als jede Erklärung: Ein Nein anzunehmen, ist genauso ein Skill wie Nein zu sagen."
+          }
+        ],
+        "bruecke": "Nächste Woche beginnt ein neues Kapitel: Es geht um Streit. Ihr lernt die Konflikt-Treppe kennen und spielt Alltagsstreits Stufe für Stufe durch – mit allem, was ihr in diesem Kapitel geübt habt.",
+        "mission": "Probier diese Woche einmal den festen Stand aus – vor einem Test, im Bus oder bevor du Nein sagst. Und wenn jemand zu dir Stopp sagt: einfach aufhören.",
+        "hintergrund": "Eine Grenze wirkt, wenn Worte, Stimme und Körper dasselbe sagen. Nach Watzlawick et al. (1967) bestimmt die Beziehungsebene, wie ein Inhalt verstanden wird: Ein Lächeln beim Stopp sagt „nicht so ernst gemeint“ und schwächt die Botschaft, auch wenn es meist nur Verlegenheit ist. Das Skillstraining der Dialektisch-Behavioralen Therapie für Jugendliche übt, ein Anliegen kurz und klar zu sagen, es bei Bedarf ruhig zu wiederholen und dabei selbstsicher aufzutreten (Rathus & Miller, 2015). Rollenspiele sind dabei keine Spielerei: Wer ein Verhalten mehrmals erfolgreich ausprobiert, traut es sich im Ernstfall eher zu (Bandura, 1977). Ebenso wichtig sind die Gegenseite – ein Nein anzunehmen – und der dritte Weg: weggehen und Hilfe holen, wenn ein Stopp nicht reicht. Ein Stopp ist kein Schutz vor Gewalt; wer in einer bedrohlichen Situation erstarrt, trägt keine Schuld.",
+        "quellen": [
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "achtung": "Rollenspiele zu Grenzverletzungen können Erinnerungen wecken. Es gilt das Stopp-Recht: Wer nicht mitspielen möchte, führt den Stopp-Check; niemand wird angefasst, es gibt nur Worte, Abstand und ein einziges Nachhaken, und die Rolle A ist nie eine echte Person aus der Klasse. Ausdrücklich sagen: Wer in einer echten Situation erstarrt, ist nicht schuld. Erzählt jemand in der Stunde von eigenen Grenzverletzungen: nicht im Plenum vertiefen, ruhig würdigen, nach der Stunde ansprechen, nichts versprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+        "differenzierung": {
+          "leichter": "Die Stopp-Sätze stehen an der Tafel, einer davon darf übernommen werden. Wer noch wenig Deutsch spricht, setzt die Grenze zuerst mit dem Körper und einem Wort – Stopp versteht man in jeder Sprache. Die Szenen-Karte liest in der Gruppe eine Person vor, die gut liest.",
+          "schwerer": "Das Gespräch mit Luca weiterschreiben: Was tust du, wenn er ein drittes Mal nachhakt? Im Rollenspiel den Stopp-Check übernehmen und der Gruppe am Ende zwei Dinge zurückmelden, die gewirkt haben."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in im Stehen (5 Min.), Welches Stopp nimmt man ernst? mit den drei Arten an der Tafel (10 Min.), Stopp üben zu zweit mit Hand und Wort (10 Min.), Rollenspiel mit zwei Szenen-Karten je Gruppe (15 Min.), fester Stand (5 Min.), Stopp-Satz-Runde, Skills-Pass und Wochen-Mission (5 Min.). Der Stopp-Plan auf dem Blatt wird in der nächsten Stunde ergänzt."
+      },
+      "fr": {
+        "titel": "Poser ses limites : stop !",
+        "kurz": "La classe compare trois façons de dire stop, s’entraîne à un stop clair et pose ses limites dans des scènes inventées, même quand l’autre insiste.",
+        "ziele": [
+          "décrivent ce qui rend un stop clair : la posture, le regard, la main, la voix et des mots courts, sans sourire",
+          "posent leurs limites en jeu de rôle avec les mots et le corps et tiennent bon quand l’autre insiste",
+          "reconnaissent les situations où partir et aller chercher de l’aide est la bonne solution",
+          "notent leur propre phrase stop et une personne vers qui ils peuvent aller"
+        ],
+        "material": [
+          "Cahiers, tampon pour le Skills-Pass",
+          "Roue des émotions, 20 gommettes",
+          "Cartes scènes, un jeu par îlot",
+          "Pistes au sol de la séance 20"
+        ],
+        "vorbereitung": [
+          "Cartes scènes : photocopier, découper, un jeu par îlot.",
+          "S’entraîner une fois aux trois stops (étape 3) : sourire contre visage sérieux.",
+          "Préparer le tableau de l’étape 3 ; y ajouter la salle et les horaires du SePAS.",
+          "Savoir où joindre le SePAS et le régent aujourd’hui après le cours."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : émotion et chiffre, debout"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour : où était-ce trop près ?"
+          },
+          {
+            "min": "15–27",
+            "phase": "input",
+            "titel": "Quel stop prend-on au sérieux ?"
+          },
+          {
+            "min": "27–45",
+            "phase": "uebung",
+            "titel": "S’entraîner à dire stop : les mots et le corps"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : stop et go"
+          },
+          {
+            "min": "50–75",
+            "phase": "aktiv",
+            "titel": "Jeu de rôle : stop en situation"
+          },
+          {
+            "min": "75–85",
+            "phase": "uebung",
+            "titel": "Mon plan stop"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : les pieds bien ancrés"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Tour des phrases stop, Skills-Pass, mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : émotion et chiffre, debout",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions. Puis tout le monde se lève derrière sa chaise et montre sa tension avec les doigts, à « trois » (0 à 10 doigts pour 0 à 100) ; deux ou trois volontaires disent leur mot et leur chiffre, l’enseignant·e commence. Pour finir, rester encore dix secondes debout et sentir ses pieds : comment tenez-vous debout aujourd’hui – plutôt bancal ou plutôt solide ? Pouce en haut ou sur le côté, puis s’asseoir. Annoncer : aujourd’hui, il s’agit de tenir bon – avec le corps et avec les mots.",
+            "sagen": [
+              "Une émotion et un chiffre – aujourd’hui, debout.",
+              "Sentez vos pieds. Vous tenez plutôt bancal ou plutôt solide aujourd’hui ?"
+            ],
+            "tipp": "Ce court moment debout prépare le skill de la fin de séance ; quand on l’a vécu deux fois, on s’en souvient plus facilement.",
+            "wennEsKippt": "Si ça tourne au concours de qui vacille le plus, rire un instant avec la classe, puis compter calmement : trois respirations immobiles, puis on s’assoit. Si un jeune montre huit doigts ou plus, ne pas poser de questions devant la classe, mais lui demander plus tard, discrètement, s’il a besoin de quelque chose – le thème des limites peut toucher."
+          },
+          {
+            "titel": "Retour : où était-ce trop près ?",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Rappeler brièvement la dernière séance : limites physiques, émotionnelles et numériques, la distance de confort. Un jeune lit la phrase de son Skills-Pass. Pour la mission de la semaine, faire un sondage du pouce (en haut, au milieu, en bas) : qui a remarqué quand son corps disait « trop près » ou « trop » ? Une voix raconte en une phrase – sans prénom, avec une situation anodine comme le bus ou la cantine ; personne n’est obligé d’avoir réussi la mission. Puis donner l’objectif : aujourd’hui, montrer une limite de façon qu’elle soit comprise.",
+            "sagen": [
+              "Où votre corps a-t-il dit stop cette semaine ? Une phrase, sans prénom – par exemple dans le bus ou dans la file à la cantine.",
+              "La dernière fois, vous avez appris à reconnaître les limites. Aujourd’hui, vous vous entraînez à les montrer – pour qu’elles soient comprises."
+            ],
+            "wennEsKippt": "Si un jeune raconte une situation qui ressemble à une agression, à de la violence ou à une menace, l’interrompre avec bienveillance : merci de le dire. J’aimerais qu’on en parle tranquillement tout à l’heure. Puis continuer, avoir l’entretien juste après le cours et informer le SePAS le jour même."
+          },
+          {
+            "titel": "Quel stop prend-on au sérieux ?",
+            "dauer": 12,
+            "phase": "input",
+            "text": "Montrer trois façons de dire stop à une personne imaginaire, à deux mètres : doucement avec un sourire, fort avec un grand sourire, puis net – la main levée, bien droit, le regard vers la personne, le visage sérieux, la voix ferme. Après chaque version, la classe montre avec les doigts, de 0 à 10, à quel point elle prendrait ce stop au sérieux (3 min). Rassembler ensemble ce qui rend un stop clair ; faire en même temps l’exercice 1 de la fiche (3 min). Puis découvrir le tableau : trois façons de dire stop (4 min). Pour finir, dire la phrase la plus importante de la séance : qui se fige dans une vraie situation n’est pas coupable (2 min).",
+            "sagen": [
+              "Montrez avec les doigts : à quel point vous prenez ce stop au sérieux, de 0 à 10 ?",
+              "Imaginez que quelqu’un dise stop en souriant. Qu’est-ce qui l’emporte ?",
+              "Et si ça ne marche pas dans une vraie situation, parce qu’on se fige ou qu’aucun son ne sort : ça arrive à beaucoup de gens. On n’est alors pas coupable – le coupable, c’est celui qui franchit la limite."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Façon",
+                "Comment faire"
+              ],
+              "zeilen": [
+                [
+                  "1 Avec les mots",
+                  "court et net, sans s’excuser : « Stop. Je ne veux pas. »"
+                ],
+                [
+                  "2 Avec le corps",
+                  "lever la main, reculer d’un pas, bien se tenir debout, regarder la personne (le front suffit), visage sérieux"
+                ],
+                [
+                  "3 Partir et aller chercher de l’aide",
+                  "quand le stop n’est pas entendu, quand ça devient dangereux ou quand on n’arrive pas à parler – ce n’est pas cafter"
+                ]
+              ]
+            },
+            "tipp": "Le rire qui accompagne le stop est le plus souvent de la gêne, pas un manque de sérieux. Le dire ouvertement : beaucoup sourient parce qu’ils ne veulent blesser personne – et c’est justement pour ça que leur stop n’est pas entendu. Que les mots et le corps doivent aller ensemble, la classe le sait depuis la séance sur le verbal et le non verbal.",
+            "wennEsKippt": "Si la classe rit de la démonstration, rire avec elle, puis répéter sérieusement : voilà exactement la différence. Si quelqu’un demande : et si l’autre est plus fort ?, prendre la question au sérieux : alors c’est la troisième façon qui convient – partir et aller chercher de l’aide.",
+            "blatt": "ff7-mein-stopp"
+          },
+          {
+            "titel": "S’entraîner à dire stop : les mots et le corps",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "À deux, sur les pistes de la dernière séance ou dans la salle. B avance lentement vers A, A l’arrête ; on change après chaque tour (6 min) : d’abord seulement avec la main, puis la main et un mot, puis tout ensemble – bien ancré, le regard, la voix ferme, une phrase courte. Qui a du mal commence doucement et parle un peu plus fort à chaque tour. Puis, seul, exercice 2 de la fiche : cocher des phrases stop (3 min). Ensuite, s’entraîner quand l’autre insiste (6 min) : A dit sa phrase stop, B insiste une fois – « Fais pas ton cinéma » –, A répète calmement la même phrase. Bref retour en classe entière (3 min) : qu’est-ce qui était le plus difficile – la première phrase ou la deuxième ?",
+            "sagen": [
+              "Essayez aussi doucement que vous le pouvez – puis un cran plus fort. C’est vous qui décidez du rythme.",
+              "Quand l’autre insiste, vous n’avez rien à inventer de nouveau. La même phrase encore une fois, calme et ferme – ça suffit."
+            ],
+            "punkte": [
+              "Pas de contact. Au plus tard à un pied de distance, on s’arrête.",
+              "Qui entend « stop » s’arrête immédiatement.",
+              "Fort ne veut pas dire crier : assez fort pour que la personne entende – pas tout le couloir.",
+              "On n’insiste qu’une fois, avec une phrase du tableau."
+            ],
+            "tipp": "Beaucoup trouvent plus difficile de tenir bon quand l’autre insiste que de dire le premier stop, surtout avec des amis. Montrer une fois comment répéter calmement la même phrase, sans se justifier – cela enlève la pression de devoir trouver une meilleure raison. S’il y a peu de place, les binômes s’entraînent en deux fois : une moitié s’exerce, l’autre regarde.",
+            "wennEsKippt": "Si l’exercice tourne au concours de cris, rappeler la règle du tableau et enchaîner avec un tour à voix basse. Qui ne veut pas s’entraîner devant les autres s’entraîne avec l’enseignant·e dans un coin ou d’abord seulement avec la main. Si quelqu’un continue d’avancer malgré le stop, arrêter tout de suite et lui faire observer la paire suivante.",
+            "blatt": "ff7-mein-stopp"
+          },
+          {
+            "titel": "Pause active : stop et go",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde marche dans la salle, dans tous les sens, sans se toucher. Au signal « stop », tout le monde se fige ; au signal « go », on repart (1 min). Puis on inverse : « stop » veut dire marcher, « go » veut dire s’arrêter (1 min). Pour finir, deux nouveaux signaux : « main » – tout le monde lève la main du stop, « sol » – tout le monde touche brièvement le sol (2 min). Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Stop. – Go. – Et maintenant à l’envers : stop veut dire marcher."
+            ],
+            "tipp": "Le jeu s’explique vite et réveille. Au passage, tout le monde s’entraîne à réagir tout de suite à un stop – exactement ce qui compte ensuite dans le jeu de rôle.",
+            "wennEsKippt": "Si ça court ou si on se bouscule, faire figer tout le monde et reprendre au ralenti. Qui ne veut pas marcher suit les signaux à sa place."
+          },
+          {
+            "titel": "Jeu de rôle : stop en situation",
+            "dauer": 25,
+            "phase": "aktiv",
+            "text": "Chaque îlot reçoit les cartes scènes. Jouer soi-même A dans une scène, un ou une volontaire pose la limite (4 min). Puis en îlots (12 min) : A joue la personne de la carte et insiste exactement une fois, B pose la limite avec les mots et le corps, C et D observent avec le check du stop ; après chaque scène, on change de rôle, jusqu’à ce que chacun ait été B une fois. Avec les cartes aide, B montre comment il part et qui il va chercher. Ensuite, deux îlots volontaires jouent une scène devant la classe (6 min). Pour finir : qu’est-ce qui a marché – et quand était-il préférable de partir (3 min) ?",
+            "sagen": [
+              "A insiste exactement une fois. B tient bon, calme et clair. Ensuite, c’est fini.",
+              "Après chaque scène, vous vous secouez pour sortir du rôle et vous dites votre propre prénom – ici, personne ne joue son propre rôle."
+            ],
+            "punkte": [
+              "Pas de contact – seulement des mots, de la distance et une seule insistance.",
+              "A ne joue jamais une vraie personne de la classe.",
+              "Qui ne veut pas jouer prend le check du stop.",
+              "Après chaque scène : se secouer, dire son propre prénom."
+            ],
+            "tipp": "Les cartes aide montrent que partir, ce n’est pas perdre. Pour la carte en ligne, le stop passe aussi par des actes : faire une capture d’écran, bloquer, signaler et prévenir un adulte.",
+            "wennEsKippt": "Si quelqu’un joue A de façon trop réaliste, devient physique ou glisse des piques contre des camarades, crier « stop » tout de suite, arrêter la scène et la reprendre avec l’enseignant·e dans le rôle de A. Si un jeune semble touché ou se tait, lui faire changer de rôle ou lui confier le check du stop, et lui parler après le cours.",
+            "blatt": "ff7-stopp-szenen"
+          },
+          {
+            "titel": "Mon plan stop",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Seul sur la fiche (6 min) : exercice 3 – que dis-tu à Luca la première et la deuxième fois ? – et exercice 4, son propre plan stop avec une phrase, le corps et une personne vers qui aller si le stop ne suffit pas. Puis lire ensemble les deux encadrés du bas et nommer l’aide dans l’établissement : où est le SePAS et quand, qui sont les éducateurs, comment joindre le régent ; et aussi le Kanner- a Jugendtelefon 116 111 (4 min). Les plans ne sont pas lus à voix haute.",
+            "sagen": [
+              "Aller chercher de l’aide pour que quelque chose s’arrête, ce n’est pas cafter. C’est se protéger – ou protéger quelqu’un.",
+              "À l’exercice 4, écrivez une vraie personne vers qui vous iriez. Vous n’avez à la montrer à personne."
+            ],
+            "tipp": "Rendre l’aide dans l’établissement concrète : la salle et les horaires du SePAS au tableau, le nom du régent. Quand on sait où est la porte, on la pousse plus facilement.",
+            "wennEsKippt": "Si un jeune pose une question parce qu’il s’inquiète pour une vraie personne, ne pas approfondir devant la classe : c’est une question importante – j’en parle avec toi après le cours. Ensuite, avoir cet entretien et impliquer le SePAS le jour même.",
+            "blatt": "ff7-mein-stopp"
+          },
+          {
+            "titel": "Skill : les pieds bien ancrés",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Tout le monde se lève, avec un peu de place autour de sa chaise. Guider lentement les trois étapes et faire l’exercice soi-même (liste) ; qui veut imagine que des racines poussent dans le sol, comme pour l’arbre des forces. Faire deux tours, puis, bien ancré, dire doucement sa propre phrase stop. Ensuite, deux ou trois retours : qu’est-ce qui est différent du début de la séance ? Expliquer : cette posture est la base de tout stop clair – et elle calme après un exercice agité. Pour finir, demander quand elle pourrait aider : devant la porte de la classe, dans le bus, avant de dire non.",
+            "sagen": [
+              "Sentez vos pieds. C’est votre place – personne ne vous pousse.",
+              "Dix secondes suffisent. Personne ne le remarque."
+            ],
+            "punkte": [
+              "Écarte les pieds de la largeur des hanches, les genoux souples, et sens ton poids sur les deux pieds.",
+              "Redresse le dos, laisse descendre les épaules et expire trois fois lentement.",
+              "Dis doucement, mais fermement : Je suis là."
+            ],
+            "tipp": "Utiliser cette posture avant les moments difficiles – devant la porte de la classe, avant une discussion, avant de dire non. Elle dure dix secondes et se combine bien avec la respiration des doigts.",
+            "wennEsKippt": "Si ça vacille ou si on se pousse, faire rasseoir tout le monde et faire l’exercice assis : les deux pieds bien au sol, le dos droit, expirer. Qui ne veut pas dire la phrase à voix haute la dit dans sa tête."
+          },
+          {
+            "titel": "Tour des phrases stop, Skills-Pass, mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Qui veut dit sa phrase stop à voix haute et clairement – sans prénom –, et la classe répond en chœur : d’accord. Ainsi, elle s’entraîne pour finir à l’autre côté – accepter un non sans discuter (2 min). Puis le Skills-Pass de fin de chapitre, avec la question au tableau : qu’est-ce que j’emporte de ces quatre séances sur la communication et les limites ? Ensuite, le tampon (2 min). Pour finir, annoncer la mission de la semaine dans le cahier et le nouveau chapitre (1 min).",
+            "sagen": [
+              "Dites votre phrase comme vous la pensez. Et nous répondons tous : d’accord."
+            ],
+            "tipp": "Le « d’accord » en chœur fait souvent plus d’effet que n’importe quelle explication : accepter un non est un skill, tout comme dire non."
+          }
+        ],
+        "bruecke": "La semaine prochaine commence un nouveau chapitre : on parle des disputes. Vous allez découvrir l’escalier du conflit et rejouer des disputes du quotidien marche par marche – avec tout ce que vous avez appris dans ce chapitre.",
+        "mission": "Cette semaine, essaie une fois de bien t’ancrer debout – avant un devoir en classe, dans le bus ou avant de dire non. Et si quelqu’un te dit stop : arrête, tout simplement.",
+        "hintergrund": "Une limite fonctionne quand les mots, la voix et le corps disent la même chose. Selon Watzlawick et al. (1967), c’est la relation qui détermine comment un contenu est compris : un sourire en disant stop signifie « pas si sérieux » et affaiblit le message, même s’il n’est le plus souvent que de la gêne. L’entraînement aux skills de la thérapie comportementale dialectique pour adolescents exerce à formuler une demande de façon courte et claire, à la répéter calmement si besoin et à se montrer sûr de soi (Rathus & Miller, 2015). Les jeux de rôle n’ont rien d’un jeu d’enfant : qui a réussi plusieurs fois un comportement ose davantage le mettre en œuvre en situation réelle (Bandura, 1977). Tout aussi importants sont l’autre côté – accepter un non – et la troisième voie : partir et aller chercher de l’aide quand un stop ne suffit pas. Un stop ne protège pas de la violence ; qui se fige face à une menace n’est pas coupable.",
+        "quellen": [
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "achtung": "Les jeux de rôle sur les limites franchies peuvent réveiller des souvenirs. Le droit de dire stop s’applique : qui ne veut pas jouer prend le check du stop ; personne n’est touché, il n’y a que des mots, de la distance et une seule insistance, et le rôle A n’est jamais une vraie personne de la classe. Le dire clairement : qui se fige dans une vraie situation n’est pas coupable. Si un jeune raconte que ses propres limites ont été franchies : ne pas approfondir en classe, l’accueillir, lui parler après le cours, ne rien promettre, informer le SePAS le jour même, suivre le protocole de protection de l’école.",
+        "differenzierung": {
+          "leichter": "Les phrases stop sont au tableau ; on peut en reprendre une telle quelle. Qui parle encore peu français pose d’abord la limite avec le corps et un mot – stop se comprend dans toutes les langues. Dans l’îlot, un jeune qui lit bien lit la carte scène.",
+          "schwerer": "Continuer le dialogue avec Luca : que fais-tu s’il insiste une troisième fois ? Dans le jeu de rôle, prendre le check du stop et donner à l’îlot, à la fin, deux choses qui ont marché."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur debout (5 min), quel stop prend-on au sérieux ? avec les trois façons au tableau (10 min), s’entraîner à deux avec la main et les mots (10 min), jeu de rôle avec deux cartes scènes par îlot (15 min), les pieds bien ancrés (5 min), tour des phrases stop, Skills-Pass et mission de la semaine (5 min). Le plan stop de la fiche est complété à la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff7-mein-stopp",
+      "bereich": "skills",
+      "thema": "kommunikation",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Grenzen setzen",
+        "Stopp sagen",
+        "Hilfe holen",
+        "Förderfach"
+      ],
+      "bild": "icon:hand-stop",
+      "kurs": [
+        "ff7-e21"
+      ],
+      "de": {
+        "titel": "Mein Stopp",
+        "untertitel": "Klar und deutlich – mit Worten, mit dem Körper oder durch Weggehen und Hilfe holen",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Drei Arten, Stopp zu sagen. Welches Stopp nimmt man ernst? Kreise es ein und schreib auf, warum."
+          },
+          {
+            "art": "comic",
+            "spalten": 3,
+            "felder": [
+              {
+                "figuren": [
+                  "figur:jana:verlegen:stehen"
+                ],
+                "text": "Ähm … stopp vielleicht?",
+                "untertitel": "leise, mit Lächeln"
+              },
+              {
+                "figuren": [
+                  "figur:jana:froh:stopp"
+                ],
+                "text": "Stopp, hör auf, haha.",
+                "untertitel": "laut, mit Grinsen"
+              },
+              {
+                "figuren": [
+                  "figur:jana:neutral:stopp"
+                ],
+                "text": "Stopp. Das will ich nicht.",
+                "untertitel": "klar: Hand hoch, Blick zur Person"
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "linien": 1,
+            "items": [
+              "Dieses Stopp wirkt am stärksten, weil …"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Drei Wege, Stopp zu sagen",
+            "punkte": [
+              "Mit Worten: kurz und klar, ohne Entschuldigung – „Stopp. Das will ich nicht.“",
+              "Mit dem Körper: Hand heben, einen Schritt zurück, fest stehen, Blick zur Person.",
+              "Weggehen und Hilfe holen: wenn das Stopp nicht gehört wird oder es gefährlich wird. Das ist kein Petzen."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Welche Stopp-Sätze passen zu dir? Kreuze an oder ergänze eigene."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 2,
+            "frei": 2,
+            "items": [
+              "„Stopp. Das will ich nicht.“",
+              "„Bitte fass mich nicht an.“",
+              "„Das ist für mich ein sensibles Thema.“",
+              "„Danke, aber das passt für mich nicht.“",
+              "„Ich brauche gerade Abstand.“",
+              "„Lösch das Foto bitte. Ich will das nicht.“",
+              "„Nein. Und dabei bleibt es.“",
+              "„Darüber rede ich nicht.“"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Luca hört nicht auf. Was sagst du beim ersten und beim zweiten Mal?",
+            "hinweis": "Bleib ruhig und klar. Du musst dich nicht rechtfertigen."
+          },
+          {
+            "art": "dialog",
+            "zeilen": [
+              {
+                "wer": "Luca",
+                "text": "„Zeig mal dein Handy, ich will die Fotos sehen.“"
+              },
+              {
+                "wer": "Du"
+              },
+              {
+                "wer": "Luca",
+                "text": "„Stell dich nicht so an. Ist doch nur Spaß.“"
+              },
+              {
+                "wer": "Du"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Mein Stopp-Plan",
+            "hinweis": "Du entscheidest, was du teilst. Niemand muss den Plan vorlesen."
+          },
+          {
+            "art": "satzanfaenge",
+            "linien": 1,
+            "items": [
+              "Mein Stopp-Satz: …",
+              "Dazu mache ich mit dem Körper: …",
+              "Wenn mein Stopp nicht reicht, gehe ich zu: …"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Wer Stopp hört, hört auf.",
+            "text": "Das gilt auch für dich – beim Spaß, in der Pause und im Chat. Ein Nein braucht keine Begründung."
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Wenn ein Stopp nicht reicht",
+            "text": "Geh weg und hol dir Hilfe – das ist kein Petzen. Und wenn du in einem Moment nichts sagen konntest: Du bist nicht schuld. Schuld hat, wer die Grenze überschreitet."
+          },
+          {
+            "art": "notfall"
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen erkennen, was ein Stopp glaubwürdig macht, wählen eigene Stopp-Sätze, bereiten sich auf ein Nachhaken vor und halten fest, zu wem sie gehen, wenn ein Stopp nicht reicht.",
+          "ablauf": [
+            "Einheit 21, Schritt 3: Aufgabe 1 nach der Vorführung der drei Stopps (3 Min.).",
+            "Schritt 4: Aufgabe 2 nach dem Üben mit Hand und Wort (3 Min.).",
+            "Schritt 7: Aufgabe 3 und 4 allein (6 Min.), dann die Kästen und die Notfallnummern gemeinsam lesen und die Hilfe im Haus nennen."
+          ],
+          "hintergrund": "Ein Stopp wirkt, wenn Worte, Stimme und Körper dasselbe sagen; das Skillstraining für Jugendliche übt, ein Anliegen kurz zu sagen und ruhig zu wiederholen (Rathus & Miller, 2015). Wer ein Verhalten im Rollenspiel erfolgreich ausprobiert, traut es sich im Ernstfall eher zu (Bandura, 1977).",
+          "quellen": [
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+          ],
+          "achtung": "Deutet jemand Übergriffe, Gewalt oder Erpressung an: nicht vor der Klasse vertiefen, nach der Stunde sprechen, nichts versprechen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln.",
+          "material": "Schülerheft, Stifte"
+        }
+      },
+      "fr": {
+        "titel": "Mon stop",
+        "untertitel": "Clair et net – avec les mots, avec le corps ou en partant chercher de l’aide",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Trois façons de dire stop. Quel stop prend-on au sérieux ? Entoure-le et écris pourquoi."
+          },
+          {
+            "art": "comic",
+            "spalten": 3,
+            "felder": [
+              {
+                "figuren": [
+                  "figur:jana:verlegen:stehen"
+                ],
+                "text": "Euh… stop, peut-être ?",
+                "untertitel": "doucement, avec un sourire"
+              },
+              {
+                "figuren": [
+                  "figur:jana:froh:stopp"
+                ],
+                "text": "Stop, arrête, haha.",
+                "untertitel": "fort, avec un grand sourire"
+              },
+              {
+                "figuren": [
+                  "figur:jana:neutral:stopp"
+                ],
+                "text": "Stop. Je ne veux pas.",
+                "untertitel": "net : main levée, regard vers la personne"
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "linien": 1,
+            "items": [
+              "Ce stop est le plus fort, parce que…"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Trois façons de dire stop",
+            "punkte": [
+              "Avec les mots : court et net, sans s’excuser – « Stop. Je ne veux pas. »",
+              "Avec le corps : lever la main, reculer d’un pas, bien se tenir debout, regarder la personne.",
+              "Partir et aller chercher de l’aide : quand le stop n’est pas entendu ou que ça devient dangereux. Ce n’est pas cafter."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Quelles phrases stop te ressemblent ? Coche ou ajoute les tiennes."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 2,
+            "frei": 2,
+            "items": [
+              "« Stop. Je ne veux pas. »",
+              "« Ne me touche pas, s’il te plaît. »",
+              "« C’est un sujet sensible pour moi. »",
+              "« Merci, mais ça ne me va pas. »",
+              "« J’ai besoin de distance. »",
+              "« Efface la photo, s’il te plaît. Je ne veux pas. »",
+              "« Non. Et c’est tout. »",
+              "« Je n’en parle pas. »"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Luca n’arrête pas. Que dis-tu la première et la deuxième fois ?",
+            "hinweis": "Reste calme et net. Tu n’as pas à te justifier."
+          },
+          {
+            "art": "dialog",
+            "zeilen": [
+              {
+                "wer": "Luca",
+                "text": "« Montre ton portable, je veux voir les photos. »"
+              },
+              {
+                "wer": "Toi"
+              },
+              {
+                "wer": "Luca",
+                "text": "« Fais pas ton cinéma. C’est juste pour rire. »"
+              },
+              {
+                "wer": "Toi"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Mon plan stop",
+            "hinweis": "Tu décides de ce que tu partages. Personne n’est obligé de lire son plan."
+          },
+          {
+            "art": "satzanfaenge",
+            "linien": 1,
+            "items": [
+              "Ma phrase stop : …",
+              "Avec mon corps, je fais : …",
+              "Si mon stop ne suffit pas, je vais voir : …"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Qui entend « stop » arrête.",
+            "text": "Ça vaut aussi pour toi – pour rire, à la récré et en ligne. Un non n’a pas besoin d’explication."
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Quand un stop ne suffit pas",
+            "text": "Pars et va chercher de l’aide – ce n’est pas cafter. Et si, à un moment, tu n’as rien pu dire : tu n’es pas coupable. Le coupable, c’est celui qui franchit la limite."
+          },
+          {
+            "art": "notfall"
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes repèrent ce qui rend un stop crédible, choisissent leurs phrases stop, se préparent à ce que l’autre insiste et notent vers qui aller quand un stop ne suffit pas.",
+          "ablauf": [
+            "Séance 21, étape 3 : exercice 1 après la démonstration des trois stops (3 min).",
+            "Étape 4 : exercice 2 après l’entraînement avec la main et les mots (3 min).",
+            "Étape 7 : exercices 3 et 4 seul (6 min), puis lire ensemble les encadrés et les numéros d’urgence et nommer l’aide dans l’établissement."
+          ],
+          "hintergrund": "Un stop fonctionne quand les mots, la voix et le corps disent la même chose ; l’entraînement aux skills pour adolescents exerce à formuler une demande brièvement et à la répéter calmement (Rathus & Miller, 2015). Qui a réussi un comportement en jeu de rôle ose davantage le mettre en œuvre en situation réelle (Bandura, 1977).",
+          "quellen": [
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+          ],
+          "achtung": "Si un jeune évoque des agressions, de la violence ou du chantage : ne pas approfondir devant la classe, lui parler après le cours, ne rien promettre, informer le SePAS le jour même et agir selon le protocole de protection de l’école.",
+          "material": "Cahier de l’élève, stylos"
+        }
+      }
+    },
+    {
+      "id": "ff7-stopp-szenen",
+      "bereich": "skills",
+      "thema": "kommunikation",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "25 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Szenen-Karten",
+        "Rollenspiel",
+        "Grenzen setzen",
+        "Förderfach"
+      ],
+      "bild": "icon:masks-theater",
+      "kurs": [
+        "ff7-e21"
+      ],
+      "de": {
+        "titel": "Szenen-Karten: Stopp sagen",
+        "untertitel": "Kopiervorlage: einmal je Tischgruppe – sieben Szenen, zwei Hilfe-Karten, drei Stopp-Checks",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Ausschneiden und je Tischgruppe einen Satz in einen Umschlag stecken. A spielt die Person auf der Karte und hakt genau einmal nach, B setzt die Grenze, C und D beobachten mit dem Stopp-Check. Keine Berührung. Heißt jemand in der Klasse so wie eine Figur, den Namen ändern.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 136,
+            "karten": [
+              {
+                "titel": "Pause · Das Handy",
+                "text": "A nimmt B das Handy aus der Hand: „Zeig mal deine Fotos.“\nNachhaken: „Stell dich nicht so an.“"
+              },
+              {
+                "titel": "Bus · Zu dicht",
+                "text": "A setzt sich ganz dicht neben B, obwohl genug Platz ist.\nNachhaken: „Ist doch Platz für beide.“"
+              },
+              {
+                "titel": "Klassenchat · Das Foto",
+                "text": "A will ein lustiges Foto von B in die Klassengruppe stellen.\nNachhaken: „Ist doch nur Spaß.“"
+              },
+              {
+                "titel": "Pause · Die Fragerei",
+                "text": "A will wissen, welche Note B im Mathe-Test hat, und fragt immer wieder.\nNachhaken: „Komm schon, ich sag’s auch keinem.“"
+              },
+              {
+                "titel": "Begrüßung · Die Umarmung",
+                "text": "A will B zur Begrüßung umarmen. B mag das nicht.\nNachhaken: „Wir sind doch Freunde.“"
+              },
+              {
+                "titel": "Zu Hause · Das Zimmer",
+                "text": "Der große Bruder (A) kommt ohne zu klopfen herein und setzt sich aufs Bett, während B lernt.\nNachhaken: „Ich bleib nur kurz.“"
+              },
+              {
+                "titel": "Chat · Das Passwort",
+                "text": "A will das Passwort von B: „Wenn du mir vertraust, gibst du es mir.“\nNachhaken: „Also vertraust du mir nicht?“"
+              },
+              {
+                "titel": "Hilfe-Karte · Im Bus",
+                "text": "Zwei Ältere stellen sich B in den Weg und wollen das Handy. A spielt beide.\nHier reicht ein Stopp nicht: Wohin geht B, wen holt B?"
+              },
+              {
+                "titel": "Hilfe-Karte · Nachts im Chat",
+                "text": "Jeden Abend schreibt jemand an B: „Morgen sehen alle dein Foto.“\nHier reicht ein Stopp nicht: Was tut B – und wem sagt B Bescheid?"
+              },
+              {
+                "titel": "Stopp-Check",
+                "text": "Hand gehoben? Blick zur Person? Feste Stimme, kein Lächeln, keine Entschuldigung? Kurzer, klarer Satz? Beim Nachhaken dabei geblieben?"
+              },
+              {
+                "titel": "Stopp-Check",
+                "text": "Hand gehoben? Blick zur Person? Feste Stimme, kein Lächeln, keine Entschuldigung? Kurzer, klarer Satz? Beim Nachhaken dabei geblieben?"
+              },
+              {
+                "titel": "Stopp-Check",
+                "text": "Hand gehoben? Blick zur Person? Feste Stimme, kein Lächeln, keine Entschuldigung? Kurzer, klarer Satz? Beim Nachhaken dabei geblieben?"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Erfundene Szenen für das Rollenspiel: Die Jugendlichen setzen Grenzen mit Wort und Körper, auch wenn jemand nachhakt, und üben an zwei Hilfe-Karten, dass Weggehen und Hilfe holen manchmal der richtige Weg ist.",
+          "ablauf": [
+            "Einmal je Tischgruppe auf festes Papier kopieren, ausschneiden, in fünf Umschläge stecken; Namen tauschen, falls jemand in der Klasse so heißt.",
+            "Einheit 21, Schritt 6: Die Lehrkraft spielt eine Szene als A vor; danach spielen die Gruppen vier Szenen, bis jede Person einmal B war.",
+            "Die Stopp-Checks bekommen C und D; wer nicht spielen möchte, übernimmt einen Stopp-Check."
+          ],
+          "hintergrund": "Rollenspiele sind keine Spielerei: Wer ein Verhalten mehrmals erfolgreich ausprobiert, traut es sich im Ernstfall eher zu (Bandura, 1977). Das einmalige Nachhaken übt, was im Alltag am schwersten ist – bei einem Nein zu bleiben, ohne sich zu rechtfertigen.",
+          "quellen": [
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+          ],
+          "material": "Festes Papier, Schere, fünf Umschläge"
+        }
+      },
+      "fr": {
+        "titel": "Cartes scènes : dire stop",
+        "untertitel": "Modèle à photocopier : un jeu par îlot – sept scènes, deux cartes aide, trois checks du stop",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Découper et mettre un jeu par îlot dans une enveloppe. A joue la personne de la carte et insiste exactement une fois, B pose la limite, C et D observent avec le check du stop. Pas de contact. Si un jeune de la classe porte le prénom d’un personnage, le changer.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 136,
+            "karten": [
+              {
+                "titel": "Récré · Le portable",
+                "text": "A prend le portable des mains de B : « Montre tes photos. »\nA insiste : « Fais pas ton cinéma. »"
+              },
+              {
+                "titel": "Bus · Trop près",
+                "text": "A s’assoit tout contre B alors qu’il y a assez de place.\nA insiste : « Il y a de la place pour deux. »"
+              },
+              {
+                "titel": "Groupe de classe · La photo",
+                "text": "A veut poster une photo drôle de B dans le groupe de la classe.\nA insiste : « C’est juste pour rire. »"
+              },
+              {
+                "titel": "Récré · Les questions",
+                "text": "A veut savoir quelle note B a eue au devoir de maths et demande sans arrêt.\nA insiste : « Allez, je le dirai à personne. »"
+              },
+              {
+                "titel": "Bonjour · Le câlin",
+                "text": "A veut faire un câlin à B pour lui dire bonjour. B n’aime pas ça.\nA insiste : « On est amis, non ? »"
+              },
+              {
+                "titel": "Maison · La chambre",
+                "text": "Le grand frère (A) entre sans frapper et s’assoit sur le lit pendant que B travaille.\nA insiste : « Je reste juste deux minutes. »"
+              },
+              {
+                "titel": "En ligne · Le mot de passe",
+                "text": "A veut le mot de passe de B : « Si tu as confiance, tu me le donnes. »\nA insiste : « Donc tu n’as pas confiance en moi ? »"
+              },
+              {
+                "titel": "Carte aide · Dans le bus",
+                "text": "Deux plus grands bloquent le passage de B et veulent son portable. A joue les deux.\nIci, un stop ne suffit pas : où va B, qui va-t-il chercher ?"
+              },
+              {
+                "titel": "Carte aide · La nuit, en ligne",
+                "text": "Chaque soir, quelqu’un écrit à B : « Demain, tout le monde verra ta photo. »\nIci, un stop ne suffit pas : que fait B – et à qui en parle-t-il ?"
+              },
+              {
+                "titel": "Check du stop",
+                "text": "La main levée ? Le regard vers la personne ? Une voix ferme, sans sourire ni excuse ? Une phrase courte et claire ? Ferme quand l’autre insiste ?"
+              },
+              {
+                "titel": "Check du stop",
+                "text": "La main levée ? Le regard vers la personne ? Une voix ferme, sans sourire ni excuse ? Une phrase courte et claire ? Ferme quand l’autre insiste ?"
+              },
+              {
+                "titel": "Check du stop",
+                "text": "La main levée ? Le regard vers la personne ? Une voix ferme, sans sourire ni excuse ? Une phrase courte et claire ? Ferme quand l’autre insiste ?"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Des scènes inventées pour le jeu de rôle : les jeunes posent leurs limites avec les mots et le corps, même quand l’autre insiste, et découvrent avec deux cartes aide que partir et aller chercher de l’aide est parfois la bonne solution.",
+          "ablauf": [
+            "Photocopier une fois par îlot sur du papier épais, découper, mettre dans cinq enveloppes ; changer les prénoms si un jeune de la classe s’appelle ainsi.",
+            "Séance 21, étape 6 : l’enseignant·e joue A dans une scène ; ensuite, les îlots jouent quatre scènes, jusqu’à ce que chacun ait été B une fois.",
+            "Les checks du stop vont à C et D ; qui ne veut pas jouer prend un check du stop."
+          ],
+          "hintergrund": "Les jeux de rôle n’ont rien d’un jeu d’enfant : qui a réussi plusieurs fois un comportement ose davantage le mettre en œuvre en situation réelle (Bandura, 1977). L’unique insistance entraîne ce qui est le plus difficile au quotidien – tenir son non sans se justifier.",
+          "quellen": [
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+          ],
+          "material": "Papier épais, ciseaux, cinq enveloppes"
+        }
+      }
+    }
+  ]
+}

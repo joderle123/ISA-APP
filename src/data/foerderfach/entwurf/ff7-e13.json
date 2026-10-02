@@ -21,8 +21,8 @@
           "fr": "l’échelle de tension (f.)"
         },
         {
-          "de": "angespannt",
-          "fr": "tendu, tendue"
+          "de": "der Alarm",
+          "fr": "l’alarme (f.)"
         },
         {
           "de": "runterkommen",
@@ -53,7 +53,7 @@
           "Dicke Stifte, Klebeband, Umschläge"
         ],
         "vorbereitung": [
-          "Plakat „Was sind Skills?“ aus Stunde 1 bereitlegen; fehlt es, die zwei Spalten neu anschreiben.",
+          "Plakat „Was sind Skills?“ aus Stunde 1 bereitlegen (sonst neu anschreiben).",
           "Anspannungsskala als A3-Plakat zeichnen: Grün 0–30, Gelb 30–70, Rot 70–100; die Zonen bleiben leer.",
           "Skill-Karten fünfmal kopieren und schneiden; je Gruppe mit sieben Moderationskarten in einen Umschlag.",
           "Tafelbilder aus Schritt 4 und 6 vorbereiten; die Szene aus Schritt 8 einmal laut lesen."
@@ -116,7 +116,7 @@
               "Bei mir ist es eine 40. Nach den Ferien bin ich noch nicht ganz im Takt, und der Morgen war hektisch.",
               "Es gibt keine falsche Zahl. Eure Zahl ist eure Zahl – und niemand kommentiert die Zahl der anderen."
             ],
-            "tipp": "Die Finger-Skala ist schnell und anonym genug: Alle zeigen gleichzeitig, niemand muss etwas erklären. Ein Blick über die Hände zeigt, wie die Klasse heute ankommt.",
+            "tipp": "Die Finger-Skala ist schnell und schützt: Alle zeigen gleichzeitig, niemand muss etwas erklären. Ein Blick über die Hände zeigt, wie die Klasse heute ankommt.",
             "wennEsKippt": "Zeigen alle aus Spaß zehn Finger, das mit Humor aufnehmen und zurückfragen: Wie sähe eine echte 100 aus – und woran merkt ihr, dass heute keine ist? Daraus entsteht oft schon das Gespräch, um das es gleich geht. Zeigt jemand ernsthaft acht Finger oder mehr, nicht vor der Klasse nachfragen, sondern in der nächsten Arbeitsphase leise: Brauchst du gerade etwas?"
           },
           {
@@ -208,7 +208,7 @@
             "sagen": [
               "Legt jede Karte dorthin, wo der Skill für euch gerade noch hilft. Seid ihr euch nicht einig, legt sie auf die Grenze – das ist auch ein Ergebnis.",
               "Was geht bei 90 noch? Alles, wofür man nachdenken muss, fällt dort weg.",
-              "Zocken: Gelb oder Papierkorb? Zwanzig Minuten, um runterzukommen, sind ein Skill. Fünf Stunden, um nicht an den Test zu denken, eher nicht."
+              "Zocken: Gelb oder Papierkorb? Zwanzig Minuten zocken, um runterzukommen – ein Skill. Fünf Stunden, um nicht an den Test zu denken – eher nicht."
             ],
             "tabelle": {
               "spalten": [
@@ -242,7 +242,7 @@
             "titel": "Das Plakat ergänzen, meine Skills",
             "dauer": 15,
             "phase": "uebung",
-            "text": "Zurück zum Plakat „Was sind Skills?“: Die Lehrkraft verteilt die Skills darauf an die Tischgruppen; jede Gruppe klebt neben ihre drei, vier Skills einen grünen, gelben oder roten Punkt – je nachdem, bis zu welcher Zahl sie helfen. Neben die Einträge in der Spalte „hilft kurz“ kommt der Vermerk: Ärger danach (4 Min.). Gemeinsam auf das Plakat schauen: Wo gibt es kaum rote Punkte? Genau dafür sind die nächsten Wochen da. Dann füllt jede Person allein das Blatt „Meine Skills von 0 bis 100“ aus, Aufgaben 1 und 2 (8 Min.). Zum Schluss nennen zwei, drei Freiwillige einen Skill aus ihrer roten Zone (3 Min.).",
+            "text": "Zurück zum Plakat „Was sind Skills?“: Die Lehrkraft verteilt die Skills, die dort stehen, an die Tischgruppen; jede Gruppe klebt neben ihre drei, vier Skills einen grünen, gelben oder roten Punkt – je nachdem, bis zu welcher Zahl sie helfen. Neben die Einträge in der Spalte „hilft kurz“ kommt der Vermerk: Ärger danach (4 Min.). Gemeinsam auf das Plakat schauen: Wo gibt es kaum rote Punkte? Genau dafür sind die nächsten Wochen da. Dann füllt jede Person allein das Blatt „Meine Skills von 0 bis 100“ aus, Aufgaben 1 und 2 (8 Min.). Zum Schluss nennen zwei, drei Freiwillige einen Skill aus ihrer roten Zone (3 Min.).",
             "sagen": [
               "Schreibt in jede Zone mindestens einen Skill, der wirklich zu euch passt – nicht den, der am besten klingt.",
               "Die Papierkorb-Frage ist nur für euch. Niemand liest sie, wenn ihr es nicht wollt."
@@ -290,7 +290,7 @@
           "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
           "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte."
         ],
-        "achtung": "„Alle, die …“, die Papierkorb-Frage und die eigenen Zahlen berühren Momente, in denen jemand die Kontrolle verloren hat. Sitzenbleiben ist immer erlaubt, das Blatt wird nicht eingesammelt. Nennt jemand Selbstverletzung, Drogen oder Gewalt als „Skill“: ruhig bleiben, nicht vor der Klasse vertiefen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Zeigt jemand immer wieder Zahlen über 80, nach der Stunde behutsam nachfragen und den Régent einbeziehen.",
+        "achtung": "„Alle, die …“, die Papierkorb-Frage und die eigenen Zahlen wecken Erinnerungen an Kontrollverlust. Sitzenbleiben ist erlaubt, das Blatt bleibt privat. Nennt jemand Selbstverletzung, Drogen oder Gewalt als „Skill“: ruhig bleiben, nicht im Plenum vertiefen, noch am selben Tag den SePAS informieren und nach dem Schutzkonzept der Schule handeln. Liegt jemand oft über 80, nach der Stunde behutsam nachfragen und den Régent einbeziehen.",
         "differenzierung": {
           "leichter": "Statt der Zahl reicht die Farbe: grün, gelb, rot. Die Skill-Karten haben Bilder; in der Tischgruppe liest eine Person vor, die gut liest. Wer die Unterrichtssprache noch lernt, sitzt neben jemandem, der übersetzen kann, und schreibt auf dem Blatt Stichwörter, auch in der eigenen Sprache; Wortspeicher und Faustregel bleiben an der Tafel.",
           "schwerer": "Zu zwei Situationen aus Aufgabe 2 notieren, welcher Gedanke die Zahl hochtreibt. In der Tischgruppe die Moderation übernehmen und bei Uneinigkeit nach Gründen fragen. Eine eigene Faustregel für die Klasse formulieren, etwa für Streit im Klassenchat."
@@ -522,12 +522,12 @@
             "text": "Annoncer : voici un skill pour le rouge, qui marche sans réfléchir. D’abord, chacun estime en silence son chiffre et le note dans l’exercice 3 de la fiche (1 min). Puis lire lentement la scène ; tout le monde se l’imagine, les yeux ouverts, et montre à trois à combien serait son chiffre dans cette scène. Au « Stop ! », guider lentement les trois étapes en les faisant soi-même (3 min). Ensuite, noter le chiffre d’après et recueillir deux ou trois retours (3 min) : comment c’était ? Où, au lycée, pouvez-vous reculer d’un pas ? Que veut dire stop dans le groupe WhatsApp de la classe ? Les trois mots restent au tableau.",
             "sagen": [
               "Imaginez : vous courez jusqu’à l’arrêt, et le bus part juste sous votre nez. Le prochain passe dans vingt minutes – pile à l’heure du devoir en classe. Vous êtes à combien, là ?",
-              "Stop. Les mains à plat sur la table, la bouche fermée. Penchez-vous en arrière, regardez par la fenêtre. Et maintenant, on souffle – plus longtemps qu’on inspire.",
+              "Stop. Les mains à plat sur la table, la bouche fermée. Adossez-vous, regardez par la fenêtre. Et maintenant, on souffle – plus longtemps qu’on inspire.",
               "Parler, écrire, décider – tout ça seulement quand le chiffre est retombé sous 50."
             ],
             "punkte": [
               "Stop : ne rien dire, ne rien faire, ne rien envoyer. Les mains à plat sur la table ou dans les poches.",
-              "Recule : prendre un pas de distance – se pencher en arrière ou reculer, regarder ailleurs, si besoin sortir un instant avec la permission.",
+              "Recule : prendre un pas de distance – s’adosser ou reculer, regarder ailleurs, si besoin sortir un instant avec la permission.",
               "Souffle : expirer longuement cinq fois, plus longtemps qu’on inspire. Parler seulement après."
             ],
             "tipp": "Garder une scène banale et ne demander à personne de penser à ses propres souvenirs. Que le chiffre monte rien qu’en imaginant est une découverte importante : le corps réagit aux pensées – et les trois étapes permettent de le freiner.",
