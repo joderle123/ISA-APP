@@ -128,6 +128,25 @@ for (const [vpName, vp] of [['ipadLandscape', VIEWPORTS.ipadLandscape], ['beamer
     expect(await page.locator('.unit-variant').count() >= 1, 'finder: Varianten-Text der Einheit fehlt');
     await shot(page, 'games-finder-einheit');
     problems.push(...await layoutCheck(page, 'finder'));
+    // Einheit, deren Katalog-Spiel NICHT gebaut ist: beste gebaute Variante statt totem Link
+    const unbuilt = await page.evaluate(() => (window.CREW.katalog.einheiten.find((e) => !window.CREW.games.get(e.spiel)) || {}).id || '');
+    if (unbuilt) {
+      await page.selectOption('#finder-unit', unbuilt);
+      await page.waitForTimeout(150);
+      const altId = await page.locator('.unit-card').getAttribute('data-alt');
+      expect(!!altId, `finder: ${unbuilt} ohne gebaute Variante`);
+      expect(await page.locator('.unit-alt').count() === 1, `finder: ${unbuilt} Varianten-Zeile fehlt`);
+      expect(await page.locator('#play-alt-' + altId + ':enabled').count() === 1, `finder: ${unbuilt} Varianten-Knopf fehlt`);
+      expect((await page.locator('.game-row').first().getAttribute('data-game')) === altId, `finder: ${unbuilt} Variante steht nicht oben`);
+      expect(await page.locator('.game-row[data-built="0"] button:enabled:has-text("Spielen")').count() === 0, `finder: ${unbuilt} toter Spielen-Knopf`);
+      await shot(page, 'games-finder-variante');
+    }
+    // Storystaffel: Weitergabe im Kreis – bei n=4..6 ist jeder Platz genau einmal dran, bevor es von vorn geht
+    const drehOk = await page.evaluate(() => { const g = window.CREW.games.get('storystaffel'); if (!g || !g.dreh) return 'fehlt'; for (let n = 4; n <= 6; n++) { let z = 1; const seen = []; for (let i = 0; i < n; i++) { seen.push(z); z = g.dreh(z, n); } if (z !== 1 || new Set(seen).size !== n) return 'n=' + n + ': ' + seen.join(','); } return 'ok'; });
+    expect(drehOk === 'ok' || (ONLY && drehOk === 'fehlt'), 'storystaffel: Weitergabe-Reihenfolge ' + drehOk);
+    // Zwei Brillen: jeder richtige Chip (ABCD) steht wörtlich in mindestens zwei Quellen (q), jede Szene hat mindestens zwei
+    const zbOk = await page.evaluate(() => { const g = window.CREW.games.get('zwei-brillen'); if (!g || !g.szenen) return 'fehlt'; const bad = []; g.szenen.forEach((sz) => { const ok = sz.chips.filter((c) => c.fits === 'ABCD'); if (ok.length < 2) bad.push(sz.id + ': <2 richtige'); ok.forEach((c) => { if (!c.q || c.q.length < 2) bad.push(sz.id + ': „' + c.t + '“ ohne zwei Quellen'); }); sz.chips.filter((c) => c.fits !== 'ABCD').forEach((c) => { if (c.q) bad.push(sz.id + ': „' + c.t + '“ hat q, ist aber nicht ABCD'); }); }); return bad.length ? bad.join('; ') : 'ok'; });
+    expect(zbOk === 'ok' || (ONLY && zbOk === 'fehlt'), 'zwei-brillen: ' + zbOk);
     await page.selectOption('#finder-unit', '');
     await page.locator('[data-chip="format-bewegung"]').click();
     await page.waitForTimeout(150);

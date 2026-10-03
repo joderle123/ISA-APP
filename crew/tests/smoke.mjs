@@ -45,11 +45,11 @@ for (const [vpName, vp] of Object.entries({ ipadLandscape: VIEWPORTS.ipadLandsca
   await shot(page, tag('05-checkin'));
   problems.push(...await layoutCheck(page, tag('checkin')));
   await clickText(page, 'Alle bereit');
-  await waitText(page, 'Was zeigt die Crew?', 8000);
+  await waitText(page, 'Wie ist das Wetter in der Crew?', 8000);
   await shot(page, tag('06a-checkin-schnell'));
   problems.push(...await layoutCheck(page, tag('checkin-schnell')));
-  await clickText(page, 'genauer zählen');
-  await waitText(page, 'Wetter zählen', 5000);
+  await clickText(page, 'genauer eintragen');
+  await waitText(page, 'Wetter eintragen', 5000);
   const plus = page.locator('.tally .t-item').nth(0).locator('button').nth(1);
   await plus.click(); await plus.click();
   await page.locator('.tally .t-item').nth(4).locator('button').nth(1).click();

@@ -32,7 +32,7 @@
     return h('div', { class: 'beschluss', 'data-theme': 'ankommen' },
       h('span', { class: 'eyebrow' }, 'Crew-Rat · ' + deDatum(b.datum)),
       h('b', { class: 'display' }, b.thema),
-      h('span', null, b.text),
+      h('span', null, b.text, b.angepasst ? h('span', { class: 'pill small', style: { marginLeft: '6px' } }, 'angepasst') : null),
       h('span', { class: 'muted small' }, 'Konsent: alle konnten damit leben' + (b.einwaende ? ' · ' + b.einwaende + (b.einwaende === 1 ? ' Einwand' : ' Einwände') + ' besprochen' : '')));
   }
   function renderBeschluesse() {
@@ -51,9 +51,9 @@
   }
 
   /* Vorschlagsliste als Karte (Status: offen / ok / veto) */
-  function liste(vs, status) {
+  function liste(vs, status, geaendert) {
     return h('div', { class: 'stack', style: { gap: '8px' } }, vs.map((v, i) => h('div', { class: 'cr-vorschlag', 'data-status': status[i] || 'offen' },
-      h('span', { class: 'cr-nr' }, String(i + 1)), h('b', null, v), h('span', { class: 'pill ' + (status[i] === 'ok' ? 'good' : '') }, status[i] === 'ok' ? 'alle können damit leben' : status[i] === 'veto' ? 'Veto' : 'offen'))));
+      h('span', { class: 'cr-nr' }, String(i + 1)), h('b', null, v), geaendert && geaendert[i] ? h('span', { class: 'pill small' }, 'angepasst') : null, h('span', { class: 'pill ' + (status[i] === 'ok' ? 'good' : '') }, status[i] === 'ok' ? 'alle können damit leben' : status[i] === 'veto' ? 'Veto' : 'offen'))));
   }
 
   /* Jugend-iPad per QR: stiller Einwand-Chip (zeigt nur Satzanfänge, nichts wird gesendet) */
@@ -140,6 +140,7 @@
       }
       // 4) Konsent: „Wer kann damit leben?“ – Veto nur mit Grund. Höchstens zwei Durchgänge.
       const status = vs.map(() => 'offen');
+      const geaendert = vs.map(() => false); // Flag statt „(geändert)“ an den Text zu hängen
       let einwaende = 0;
       let beschluss = null;
       for (let runde = 0; runde < 2 && !beschluss; runde++) {
@@ -166,9 +167,9 @@
           if (g === ctx.SKIP) continue;
           einwaende++;
           status[i] = 'veto';
-          const w6 = ctx.scr([ctx.say('Veto angenommen: ' + GRUENDE.find((x) => x.id === g).text + '. Kann der Vorschlag so geändert werden, dass das Veto wegfällt?', { eyebrow: 'Vorschlag ändern?', small: true }), liste(vs, status)], { eyebrow: 'Veto' });
+          const w6 = ctx.scr([ctx.say('Veto angenommen: ' + GRUENDE.find((x) => x.id === g).text + '. Kann der Vorschlag so geändert werden, dass das Veto wegfällt?', { eyebrow: 'Vorschlag ändern?', small: true }), liste(vs, status, geaendert)], { eyebrow: 'Veto' });
           const a = await ctx.ask(w6, [{ label: 'Nein, nächster Vorschlag', value: 'next', variant: 'ghost' }, { label: 'Ja, geändert – nochmal fragen', value: 'retry', icon: 'undo' }]);
-          if (a === 'retry') { status[i] = 'offen'; vs[i] = vs[i] + ' (geändert)'; i--; }
+          if (a === 'retry') { status[i] = 'offen'; geaendert[i] = true; i--; }
         }
         if (beschluss == null && status.every((s) => s === 'veto') && runde === 0) {
           const w7 = ctx.scr([ctx.say('Alle Vorschläge haben ein Veto. Zweite Runde: Welcher Vorschlag lässt sich ändern? Die Vetos sind zurückgesetzt.', { eyebrow: 'Zweite Runde', small: true })], { eyebrow: 'Konsent', center: true });
@@ -182,7 +183,7 @@
         await ctx.next(w8, 'Fertig');
         return { summary: 'Kein Beschluss – aber ' + einwaende + (einwaende === 1 ? ' Einwand' : ' Einwände') + ' gehört. Das zählt.', stats: [[vs.length, 'Vorschläge'], [einwaende, 'Vetos mit Grund']] };
       }
-      const b = { datum: CREW.util.todayISO(), thema: thema.name, text: vs[beschluss], einwaende };
+      const b = { datum: CREW.util.todayISO(), thema: thema.name, text: vs[beschluss], einwaende, angepasst: !!geaendert[beschluss] };
       beschluesse().push(b);
       if (beschluesse().length > 12) beschluesse().splice(0, beschluesse().length - 12);
       CREW.save();

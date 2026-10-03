@@ -12,10 +12,10 @@
   /* Szenen: Freund-Figur (yara/luca/sam), was sie tut, eine Einordnung mit Begründung (nie „falsch“) */
   const SZENEN = [
     { fig: 'yara', mood: 'wut', text: 'Im Klassenchat lacht jemand über Mikas Foto. Yara schreibt: „Lass das. Ist nicht lustig.“', best: 'gruen', warum: 'Yara stellt sich vor Mika, wenn’s zählt – auch wenn andere dabei sind.' },
-    { fig: 'luca', mood: 'froh', text: 'Mika hat Luca erzählt, dass die Eltern sich trennen. Zwei Tage später wissen es drei Leute aus der Klasse.', best: 'rot', warum: 'Ein Geheimnis weitergeben bricht Vertrauen – egal, wie nett es gemeint war.' },
+    { fig: 'luca', mood: 'froh', familie: true, text: 'Mika hat Luca erzählt, dass die Eltern sich trennen. Zwei Tage später wissen es drei Leute aus der Klasse.', best: 'rot', warum: 'Ein Geheimnis weitergeben bricht Vertrauen – egal, wie nett es gemeint war.' },
     { fig: 'sam', mood: 'neutral', text: 'Sam schreibt Mika nur, wenn Sam die Hausaufgaben braucht. Sonst: Funkstille.', best: 'kommt', warum: 'Einmal okay, als Muster rot. Freundschaft ist mehr als Nutzen.' },
     { fig: 'luca', mood: 'traurig', text: 'Mika geht es richtig schlecht. Luca kommt abends vorbei, sagt nicht viel, bleibt einfach da.', best: 'gruen', warum: 'Da sein ohne Ratschläge – das ist oft das Beste.' },
-    { fig: 'yara', mood: 'genervt', text: 'Yara macht vor anderen Witze über Mikas Aussprache. Allein sagt Yara: „War doch nur Spaß.“', best: 'rot', warum: 'Vor anderen klein machen, allein nett sein: Das ist kein Spaß, das ist ein Muster.' },
+    { fig: 'yara', mood: 'genervt', text: 'Yara macht vor anderen Witze über Mikas Frisur. Allein sagt Yara: „War doch nur Spaß.“', best: 'rot', warum: 'Vor anderen klein machen, allein nett sein: Das ist kein Spaß, das ist ein Muster.' },
     { fig: 'sam', mood: 'froh', text: 'Mika hat eine Party abgesagt. Sam ist enttäuscht, sagt es ehrlich – und fragt dann: „Alles okay bei dir?“', best: 'gruen', warum: 'Ehrlich enttäuscht sein und trotzdem nachfragen – beides zusammen ist Freundschaft.' },
     { fig: 'luca', mood: 'neutral', text: 'Luca will, dass Mika beim Abschreiben hilft. Als Mika Nein sagt: „Dachte, wir sind Freunde.“', best: 'rot', warum: '„Dachte, wir sind Freunde“ ist Druck. Ein Nein muss in einer Freundschaft erlaubt sein.' },
     { fig: 'yara', mood: 'froh', text: 'Yara vergisst Mikas Geburtstag. Am nächsten Tag kommt Yara mit einem selbst gemachten Kuchen.', best: 'kommt', warum: 'Vergessen passiert. Was danach kommt, zählt.' },
@@ -52,14 +52,16 @@
         ],
         probe: ctx.T.probeCard('Probe: Eine Figur bringt dir Pommes mit, ohne dass du gefragt hast. Flagge? Tippt – zählt nicht.', [{ label: 'Grüne Flagge', value: 'g', variant: 'ghost' }, { label: 'Rote Flagge', value: 'r', variant: 'ghost' }, { label: 'Kommt drauf an', value: 'k', variant: 'ghost' }]),
       });
-      const szenen = ctx.rshuffle(SZENEN).slice(0, 8);
+      // Familienszenen ans Ende (stabile Sortierung), mit eigenem Hinweis auf der Szene
+      const szenen = ctx.rshuffle(SZENEN).slice(0, 8).sort((a, b) => (a.familie ? 1 : 0) - (b.familie ? 1 : 0));
       const wahl = [];
       let einig = 0;
       for (let i = 0; i < szenen.length; i++) {
         const s = szenen[i];
         const fig = CREW.games.figures[s.fig];
         const w = ctx.scr([
-          ctx.figureCard({ fig: s.fig, mood: s.mood, text: s.text, eyebrow: 'Szene ' + (i + 1) + ' von ' + szenen.length + ' · ' + fig.name + ' ist Mikas Freund:in' }),
+          ctx.figureCard({ fig: s.fig, mood: s.mood, text: s.text, eyebrow: 'Szene ' + (i + 1) + ' von ' + szenen.length + ' · ' + fig.name + ' ist mit Mika befreundet' }),
+          s.familie ? h('p', { class: 'small', style: { color: 'var(--yellow)' } }, 'Familien-Thema – nur, wenn du magst. Pass ist okay. Hilfe oben rechts.') : null,
           h('p', { class: 'muted' }, 'Redet kurz: Grün, rot oder kommt drauf an? Dann tippt EINE Flagge für euch beide.'),
         ], { eyebrow: 'Szene ' + (i + 1) + '/' + szenen.length });
         const r = await ctx.ask(w, [

@@ -12,3 +12,7 @@
 .tank.mini { min-height: 0; padding: 6px; flex-direction: row; gap: 6px; }
 .tank.mini .tank-glass { width: 24px; height: 32px; }
 .tank.mini .tank-glass > i { height: 60%; }
+
+/* Weniger Text pro Tank: Erklärung erst, wenn der Tank gewählt ist */
+.tank .tank-desc { display: none; }
+.tank.sel .tank-desc, .tank[data-state] .tank-desc { display: block; }

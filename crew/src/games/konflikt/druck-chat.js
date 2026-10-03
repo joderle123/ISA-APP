@@ -2,7 +2,7 @@
    Ein simulierter Gruppenchat im Glimmr-Look. Der Druck steigt leise („Dachte, du bist cool“, Emoji-Schweigen).
    Du steuerst Mika. An drei Stellen pro Situation wählst du Mikas Nein-Art (klar / mit Grund / Ausweich-Nein /
    Nein + Alternative) oder „Mitmachen“; der Chat hakt nach, ein zweites Nein ist nötig. Drei Situationen:
-   Vape am Bahnhof, Arbeit abschreiben, jemanden im Chat auslachen. Ende: „Chat beendet, du bist noch du.“
+   Vape am Bahnhof, Arbeit abschreiben, jemanden im Chat auslachen. Ende: „Chat beendet, Mika bleibt Mika.“
    „Mitmachen“ wird nie rot markiert – es zeigt ruhig, was es kostet. Danach Vergleichskarte zu zweit.
    Einheit j1-e25: Wenn-dann-Plan am Ende (Nein-Trainer als Hausaufgabe). j1-e27: Reihenfolge mit dem Auslach-Chat zuerst. */
 (function () {
@@ -25,7 +25,7 @@
   const SITUATIONEN = [
     {
       id: 'vape', title: 'Vape am Bahnhof', gruppe: 'bahnhof 17:00 🚉', online: 4,
-      intro: [['luca', 'wer is am bahnhof?'], ['sam', 'ich. hab was dabei 🍇💨'], ['yara', 'lol was'], ['sam', 'vape, traubenzeug. alle probieren']],
+      intro: [['luca', 'wer is am bahnhof?'], ['sam', 'ich. hab was dabei 🍇💨'], ['yara', 'lol was'], ['sam', 'vape, traubenzeug. wer will?']],
       stellen: [
         {
           vor: [['sam', '@mika du auch oder?']],
@@ -54,7 +54,7 @@
       stellen: [
         {
           vor: [['luca', 'nur die 3 aufgaben. dauert 10 sek']],
-          antworten: { klar: 'Nein, ich schick das nicht.', grund: 'Nein. Frau Weber vergleicht die Hefte, dann haben wir beide Ärger.', ausweich: 'Hab das Heft nicht da.', alternativ: 'Nein. Aber ich erklär dir Aufgabe 3 morgen in der Pause.', mit: 'Ok, hier. (Foto)' },
+          antworten: { klar: 'Nein, ich schick das nicht.', grund: 'Nein. Die Lehrkraft vergleicht die Hefte, dann haben wir beide Ärger.', ausweich: 'Hab das Heft nicht da.', alternativ: 'Nein. Aber ich erklär dir Aufgabe 3 morgen in der Pause.', mit: 'Ok, hier. (Foto)' },
           reakt: { klar: [['luca', 'wow ok']], grund: [['sam', 'die checkt das nie']], ausweich: [['luca', 'dann schreib ab, dauert 2 min']], alternativ: [['yara', 'ich komm auch']], mit: [['luca', 'legende 🙏'], ['sam', 'schick mir auch']] },
           preis: 'Das Foto ist bei Luca. Und bei Sam. Und in zwei Minuten bei sechs Leuten.',
         },
@@ -62,41 +62,41 @@
           vor: [['luca', 'dachte wir sind freunde'], ['luca', 'du bist halt einfach gut in mathe, ich nicht']],
           antworten: { klar: 'Nein. Freunde hin oder her.', grund: 'Nein. Ich hab zwei Stunden daran gesessen, das geb ich nicht einfach raus.', ausweich: 'Ich schau mal später, ob ich’s finde.', alternativ: 'Nein. Aber wir machen morgen früh Aufgabe 1 zusammen, dann kannst du’s.', mit: 'Ugh, okay. (Foto)' },
           reakt: { klar: [['sam', 'streber']], grund: [['yara', 'versteh ich']], ausweich: [['luca', 'bitte bis 22 uhr']], alternativ: [['luca', 'ok 7:45 am spind?']], mit: [['luca', '❤️'], ['sam', 'haha ok ok']] },
-          preis: 'Sechs Hefte, dieselben Fehler. Frau Weber sieht in Aufgabe 2 sechs Mal „x = 7“.',
+          preis: 'Sechs Hefte, dieselben Fehler. Die Lehrkraft sieht in Aufgabe 2 sechs Mal „x = 7“.',
         },
         {
           vor: [['sam', '👀'], ['luca', '😶'], ['yara', '…'], ['sam', 'mika ist halt mika 🤷']],
           antworten: { klar: 'Nein. Bleibt dabei.', grund: 'Nein. Wenn ihr die Fehler abschreibt, lernt keiner was.', ausweich: 'Mein Akku ist fast leer, sorry.', alternativ: 'Nein. Aber: Wer Hilfe will, morgen 7:45 am Spind. Ehrlich.', mit: 'Fein. (Foto)' },
           reakt: { klar: [['luca', 'ok. bis morgen']], grund: [['yara', 'stimmt eigentlich']], ausweich: [['sam', 'klar 🙄']], alternativ: [['luca', 'bin da'], ['yara', 'ich auch']], mit: [['sam', 'war doch nicht so schwer']] },
-          preis: 'Frau Weber ruft am nächsten Tag sieben Namen auf. Mikas auch.',
+          preis: 'Die Lehrkraft ruft am nächsten Tag sieben Namen auf. Mikas auch.',
         },
       ],
-      ende: { nein: 'Morgen 7:45, drei Leute am Spind. Mika erklärt Aufgabe 3. Luca kann’s danach – und sagt: „Danke, ehrlich.“', mit: 'Chat beendet. Mika hat geholfen – auf die schnelle Art. Sieben Hefte mit demselben Fehler. Das Gespräch mit Frau Weber kommt.' },
+      ende: { nein: 'Morgen 7:45, drei Leute am Spind. Mika erklärt Aufgabe 3. Luca kann’s danach – und sagt: „Danke, ehrlich.“', mit: 'Chat beendet. Mika hat geholfen – auf die schnelle Art. Sieben Hefte mit demselben Fehler. Das Gespräch mit der Lehrkraft kommt.' },
     },
     {
-      id: 'auslachen', title: 'Jemanden im Chat auslachen', gruppe: '7B ohne nora 🤫', online: 6,
-      intro: [['sam', '(Foto: Nora beim Sport, unvorteilhaft)'], ['sam', 'nora beim weitsprung lol 🤣'], ['luca', 'haha omg'], ['yara', '😂']],
+      id: 'auslachen', title: 'Jemanden im Chat auslachen', gruppe: '7B ohne yara 🤫', online: 3,
+      intro: [['sam', '(Foto: Yara beim Sport, unvorteilhaft)'], ['sam', 'yara beim weitsprung lol 🤣'], ['luca', 'haha omg'], ['luca', '😂']],
       stellen: [
         {
           vor: [['sam', '@mika komm, einen sticker. der ist zu gut']],
-          antworten: { klar: 'Nein. Nicht über Nora.', grund: 'Nein. Das ist gemein, und sie wird das sehen.', ausweich: 'Hab grad kein Netz 😅', alternativ: 'Nein. Aber schickt mal das Video vom Ausflug, das war wirklich lustig.', mit: '😂😂' },
-          reakt: { klar: [['sam', 'ist nur spaß']], grund: [['luca', 'sieht sie ja nicht, sie ist nicht drin']], ausweich: [['sam', 'du schreibst aber grad 🤔']], alternativ: [['yara', 'omg ja das video 😂']], mit: [['sam', 'jaaa'], ['luca', 'mika ist auch dabei 😂']] },
+          antworten: { klar: 'Nein. Nicht über Yara.', grund: 'Nein. Das ist gemein, und sie wird das sehen.', ausweich: 'Hab grad kein Netz 😅', alternativ: 'Nein. Aber schickt mal das Video vom Ausflug, das war wirklich lustig.', mit: '😂😂' },
+          reakt: { klar: [['sam', 'ist nur spaß']], grund: [['luca', 'sieht sie ja nicht, sie ist nicht drin']], ausweich: [['sam', 'du schreibst aber grad 🤔']], alternativ: [['luca', 'omg ja das video 😂']], mit: [['sam', 'jaaa'], ['luca', 'mika ist auch dabei 😂']] },
           preis: 'Mikas 😂 steht jetzt unter dem Foto. Für immer, als Screenshot.',
         },
         {
-          vor: [['luca', 'bist du jetzt noras anwalt?'], ['luca', 'dachte, du bist auf unserer seite']],
-          antworten: { klar: 'Nein. Da gibt’s keine Seiten.', grund: 'Nein. Beim letzten Mal war’s Yara, davor Sam. Ich mach da nicht mit.', ausweich: 'Ich bin müde, bis morgen.', alternativ: 'Nein. Aber ich mach die Gruppe für den Ausflug auf, mit allen.', mit: 'Ok ok, ist ja nur ein Bild. 😅' },
-          reakt: { klar: [['sam', 'ok mimose']], grund: [['yara', '…stimmt']], ausweich: [['luca', 'läuft weg 🙄']], alternativ: [['yara', 'ja bitte mit allen']], mit: [['luca', 'siehst du']] },
+          vor: [['luca', 'bist du jetzt yaras anwalt?'], ['luca', 'dachte, du bist auf unserer seite']],
+          antworten: { klar: 'Nein. Da gibt’s keine Seiten.', grund: 'Nein. Beim letzten Mal war’s jemand anderes. Ich mach da nicht mit.', ausweich: 'Ich bin müde, bis morgen.', alternativ: 'Nein. Aber ich mach die Gruppe für den Ausflug auf, mit allen.', mit: 'Ok ok, ist ja nur ein Bild. 😅' },
+          reakt: { klar: [['sam', 'ok mimose']], grund: [['luca', '…stimmt']], ausweich: [['luca', 'läuft weg 🙄']], alternativ: [['sam', 'ja ok, mit allen']], mit: [['luca', 'siehst du']] },
           preis: 'Das Foto bekommt 14 Reaktionen. Eine davon ist Mikas.',
         },
         {
-          vor: [['sam', '👀'], ['luca', '😶'], ['yara', '…'], ['sam', 'ok mika ist raus aus der gruppe? 👀']],
+          vor: [['sam', '👀'], ['luca', '😶'], ['sam', 'ok mika ist raus aus der gruppe? 👀']],
           antworten: { klar: 'Nein. Und ich bleib in der Gruppe.', grund: 'Nein. Wenn ihr mich deshalb rauswerft, sagt das mehr über euch.', ausweich: 'Macht, was ihr wollt, ich geh schlafen.', alternativ: 'Nein. Löscht das Foto, dann ist morgen alles normal.', mit: 'Ok, ok, war lustig. 😂' },
-          reakt: { klar: [['yara', 'mika hat recht']], grund: [['luca', '…']], ausweich: [['sam', 'gn8 😂']], alternativ: [['yara', 'ja löschen'], ['sam', 'ok ok']], mit: [['sam', 'na also']] },
-          preis: 'Nora bekommt am nächsten Tag einen Screenshot. Mikas Name steht drin.',
+          reakt: { klar: [['luca', 'mika hat recht']], grund: [['luca', '…']], ausweich: [['sam', 'gn8 😂']], alternativ: [['luca', 'ja löschen'], ['sam', 'ok ok']], mit: [['sam', 'na also']] },
+          preis: 'Yara bekommt am nächsten Tag einen Screenshot. Mikas Name steht drin.',
         },
       ],
-      ende: { nein: 'Sam löscht das Foto. Yara schreibt Mika privat: „Danke, dass du das gesagt hast.“ Mika ist noch in der Gruppe – und Nora weiß nichts davon.', mit: 'Chat beendet. Nora sieht am nächsten Tag den Screenshot. Sie fragt Mika: „Du auch?“' },
+      ende: { nein: 'Sam löscht das Foto. Luca schreibt Mika privat: „Danke, dass du das gesagt hast.“ Mika ist noch in der Gruppe – und Yara weiß nichts davon.', mit: 'Chat beendet. Yara sieht am nächsten Tag den Screenshot. Yara fragt Mika: „Du auch?“' },
     },
   ];
 
@@ -118,7 +118,7 @@
       list,
       h('div', { class: 'dc-foot' }, meter.el));
     const add = (who, text, me) => {
-      const name = who === ICH ? 'Mika (du)' : ctx.figures[who].name;
+      const name = who === ICH ? 'Mika' : ctx.figures[who].name;
       const m = h('div', { class: 'dc-msg' + (me ? ' me' : ''), 'data-who': name, 'data-text': text },
         me ? null : ctx.avatar(who, 'neutral', 28),
         h('div', { class: 'bubble' + (me ? ' me' : '') }, h('span', { class: 'bubble-who' }, name), h('span', null, text)));
@@ -206,8 +206,10 @@
         }
         // Ende der Situation
         const wE = ctx.scr([
-          h('div', { class: 'dc-ende' }, CREW.icon('phone', 40), h('h2', null, 'Chat beendet. Du bist noch du.')),
+          h('div', { class: 'dc-ende' }, CREW.icon('phone', 40), h('h2', null, 'Chat beendet. Mika bleibt Mika.')),
           ctx.figureCard({ fig: ICH, mood: dabei ? 'neutral' : 'froh', text: dabei ? sit.ende.mit : sit.ende.nein, eyebrow: 'Danach' }),
+          // Hilfe nicht erst am Spielende: nach dem Vape-Chat gleich die Karte, sonst eine Zeile
+          sit.id === 'vape' ? ctx.helpCard({ title: 'Wenn dich das gerade selbst betrifft', text: 'Erfundener Chat – aber manchmal ist es nah dran. X-Karte oder Hilfe oben, oder hier:' }) : h('p', { class: 'muted small dc-selbst' }, 'Wenn dich das gerade selbst betrifft: X-Karte oder Hilfe oben. Erfundener Chat, echte Hilfe.'),
         ], { eyebrow: sit.title + ' · Ende' });
         await ctx.next(wE, si + 1 < sits.length ? 'Nächster Chat' : 'Fertig');
       }
@@ -234,7 +236,7 @@
         note: 'Mitmachen ist keine falsche Antwort. Es geht um Mika, nicht um dich. Pass ist okay.',
       });
       return {
-        summary: neinGesamt >= 6 ? 'Chat beendet. Du bist noch du. Das zweite Nein ist das wichtige.' : 'Chat beendet. Du bist noch du. Jedes Nein zählt – auch das späte.',
+        summary: neinGesamt >= 6 ? 'Chat beendet. Mika bleibt Mika. Das zweite Nein ist das wichtige.' : 'Chat beendet. Mika bleibt Mika. Jedes Nein zählt – auch das späte.',
         stats: [[neinGesamt, 'mal Nein'], [mitGesamt, 'mal mitgemacht']],
         help: true,
         extra: plan ? h('p', { class: 'muted small' }, 'Dein Wenn-dann für Mika: „' + plan + '“') : null,

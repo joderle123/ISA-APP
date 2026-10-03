@@ -1,7 +1,7 @@
 /* Spiel „Pegel-Reihe“ (Thema: Anspannung & Skills) · Vorlage T2 Rollen-Puzzle · j1-e11
    Jedes iPad zeigt eine Figur in einer Situation mit versteckter Anspannungszahl 0–100 (Platz-Nummer
    bestimmt die Karte, Tagescode die Mischung). Ohne ein Wort legt die Crew die iPads von niedrig nach hoch –
-   wer glaubt, die niedrigste zu haben, legt zuerst. Aufdecken, Kipper leuchten, „2 Kipper – trotzdem
+   wer glaubt, die niedrigste zu haben, legt zuerst. Aufdecken, falsch sortierte iPads leuchten, „2 falsch – trotzdem
    geschafft“. Die Lehrkraft tippt nichts. Variante zu zweit (j1-e11): Innen/Außen mit der ruhigen 85er-Figur. */
 (function () {
   'use strict';
@@ -66,22 +66,22 @@
     // Aufgedeckt: Zahl groß, dann der Kipper-Check gegen links und rechts
     const w2 = ctx.scr([
       karte(ctx, k, { offen: true, eyebrow: 'Aufgedeckt' }),
-      h('div', { class: 'card stack soft' }, h('b', null, 'Schaut links und rechts: Ist links kleiner, rechts größer?'), h('p', { class: 'muted small' }, 'Wenn nicht, leuchtet dein iPad als Kipper. Kipper sind kein Fehler – sie zeigen, wo die Zahl schwer zu lesen war.')),
+      h('div', { class: 'card stack soft' }, h('b', null, 'Schaut links und rechts: Ist links kleiner, rechts größer?'), h('p', { class: 'muted small' }, 'Wenn nicht, leuchtet dein iPad: falsch sortiert. Das ist kein Fehler – es zeigt, wo die Zahl schwer zu lesen war.')),
     ], { eyebrow: ey + ' · Aufgedeckt' });
-    const kipp = await ctx.ask(w2, [{ label: 'Passt', value: 'ok', variant: 'ghost', icon: 'check' }, { label: 'Kipper!', value: 'kipp', variant: 'ghost', icon: 'bolt' }]);
+    const kipp = await ctx.ask(w2, [{ label: 'Passt', value: 'ok', variant: 'ghost', icon: 'check' }, { label: 'Falsch sortiert', value: 'kipp', variant: 'ghost', icon: 'bolt' }]);
     if (kipp === ctx.SKIP) return null;
     // Leuchten
     const w3 = ctx.scr([
-      h('div', { class: 'pegel-light', 'data-kipp': kipp === 'kipp' ? '1' : '0' }, CREW.icon(kipp === 'kipp' ? 'bolt' : 'check', 64), h('b', { class: 'display' }, kipp === 'kipp' ? 'Kipper' : 'Sitzt'), h('span', null, CREW.games.figures[k.fig].name + ' · ' + k.zahl)),
-      h('p', { class: 'muted' }, 'Haltet die iPads hoch. Zählt die Kipper in der Reihe – laut, zusammen.'),
-    ], { eyebrow: ey + ' · Kipper', center: true });
+      h('div', { class: 'pegel-light', 'data-kipp': kipp === 'kipp' ? '1' : '0' }, CREW.icon(kipp === 'kipp' ? 'bolt' : 'check', 64), h('b', { class: 'display' }, kipp === 'kipp' ? 'Falsch sortiert' : 'Sitzt'), h('span', null, CREW.games.figures[k.fig].name + ' · ' + k.zahl)),
+      h('p', { class: 'muted' }, 'Haltet die iPads hoch. Wie viele leuchten „falsch sortiert“? Zählt laut, zusammen.'),
+    ], { eyebrow: ey + ' · Aufdecken', center: true });
     const st = CREW.ui.stepper({ value: 0, min: 0, max: 8 });
-    w3.appendChild(h('div', { class: 'card stack', style: { alignItems: 'center' } }, h('span', { class: 'eyebrow' }, 'Kipper in der Reihe'), st.el));
+    w3.appendChild(h('div', { class: 'card stack', style: { alignItems: 'center' } }, h('span', { class: 'eyebrow' }, 'Falsch sortiert in der Reihe'), st.el));
     const r = await ctx.next(w3, 'Weiter');
     if (r === ctx.SKIP) return null;
     const n = ctx.auto ? Math.floor(ctx.autoRng() * 3) : st.get();
     const w4 = ctx.scr([
-      h('div', { class: 'pegel-result' }, h('b', { class: 'display' }, n === 0 ? 'Null Kipper' : n + (n === 1 ? ' Kipper' : ' Kipper')), h('span', null, n === 0 ? 'Die Reihe stimmt. Ohne ein Wort.' : 'trotzdem geschafft. Ohne ein Wort.')),
+      h('div', { class: 'pegel-result' }, h('b', { class: 'display' }, n === 0 ? 'Alle richtig' : n + ' falsch sortiert'), h('span', null, n === 0 ? 'Die Reihe stimmt. Ohne ein Wort.' : 'trotzdem geschafft. Ohne ein Wort.')),
       ctx.say(k.ruhig ? 'Kurz reden: Eine Figur war außen ruhig und innen hoch. Woran hättet ihr es merken können?' : 'Kurz reden: Welche Karte war am schwersten einzuordnen? Was hat beim Lesen der Zahl geholfen – Gesicht, Hände, Haltung?', { eyebrow: 'Jetzt reden', small: true }),
       ctx.safetyLine('figuren'),
     ], { eyebrow: ey + ' · Ergebnis' });
@@ -130,10 +130,10 @@
         steps: [
           { icon: 'eyeOff', title: 'Karte lesen', text: 'Nur du siehst deine Zahl.' },
           { icon: 'users', title: 'Reihe legen', text: 'Kein Wort. Gesicht und Körper sind erlaubt. Die niedrigste legt zuerst.' },
-          { icon: 'eye', title: 'Aufdecken', text: 'Kipper leuchten. Zählen, kurz reden.' },
+          { icon: 'eye', title: 'Aufdecken', text: 'Falsch sortierte iPads leuchten. Zählen, kurz reden.' },
         ],
         probe: async () => {
-          const w = ctx.scr([h('div', { class: 'probe-tag' }, 'PROBE · zählt nicht · 10 Sekunden'), karte(ctx, KARTEN[1], { eyebrow: 'Probe-Karte' }), ctx.say('Zeig ohne Worte, wie hoch Luca steht. Die anderen raten: niedrig oder hoch?', { eyebrow: 'Zum Ausprobieren', small: true })], { eyebrow: 'Probe' });
+          const w = ctx.scr([h('div', { class: 'probe-tag' }, 'PROBE · zählt nicht · 10 Sekunden'), karte(ctx, KARTEN[1], { eyebrow: 'Probe-Karte' }), ctx.say('Zeig ohne Worte, wie hoch Luca steht. Die anderen raten: niedrig oder hoch? Liegt ein iPad später an der falschen Stelle, leuchtet es „falsch sortiert“ – kein Fehler, nur ein Zeichen.', { eyebrow: 'Zum Ausprobieren', small: true })], { eyebrow: 'Probe' });
           await ctx.ask(w, [{ label: 'Niedrig', value: 1, variant: 'ghost' }, { label: 'Hoch', value: 2, variant: 'ghost' }]);
         },
       });
@@ -150,8 +150,8 @@
         gespielt++; kipper += r.kipper;
       }
       return {
-        summary: gespielt ? (kipper === 0 ? 'Alle Reihen ohne Kipper. Ihr lest Signale.' : kipper + ' Kipper – trotzdem geschafft. Ohne ein Wort.') : 'Heute nur reingeschaut.',
-        stats: [[gespielt, 'Reihen gelegt'], [kipper, 'Kipper']],
+        summary: gespielt ? (kipper === 0 ? 'Alle Reihen richtig sortiert. Ihr lest Signale.' : kipper + ' falsch sortiert – trotzdem geschafft. Ohne ein Wort.') : 'Heute nur reingeschaut.',
+        stats: [[gespielt, 'Reihen gelegt'], [kipper, 'falsch sortiert']],
       };
     },
   });

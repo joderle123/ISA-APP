@@ -56,6 +56,9 @@
     const R = raster(pieces);
     const el = h('div', { class: 'sa-piece', style: { aspectRatio: R.w + ' / ' + R.hgt, maxWidth: R.w >= 400 ? '900px' : '700px' } });
     el.innerHTML = pieceSvg(bild, pieces, idx);
+    // Oben-Markierung: kleine Pfeile am Rand, damit klar ist, wie das Teil liegt
+    el.appendChild(h('span', { class: 'sa-oben', 'aria-hidden': 'true' }, '▲ oben'));
+    el.appendChild(h('span', { class: 'sa-unten', 'aria-hidden': 'true' }, '▼ unten'));
     return el;
   }
   function fullEl(bild) { const el = h('div', { class: 'sa-full' }); el.innerHTML = fullSvg(bild); return el; }
@@ -173,7 +176,8 @@
         ctx.safetyLine('freiwillig'),
       ], { eyebrow: 'Abschluss' });
       await ctx.next(w4, 'Fertig');
-      const faster = zeiten.length === 2 ? (zeiten[1] < zeiten[0] ? 'Mit Worten war es schneller' : 'Ohne Worte war es schneller') : 'Bild gelegt';
+      // Nur bei klarem Unterschied (ab 2 s) vergleichen – die Zeit hängt am Tippen der Lehrkraft
+      const faster = zeiten.length === 2 ? (Math.abs(zeiten[1] - zeiten[0]) < 2 ? 'Beide Runden gleich schnell' : zeiten[1] < zeiten[0] ? 'Mit Worten war es schneller' : 'Ohne Worte war es schneller') : 'Bild gelegt';
       const calm = stimmung[0] === 'ohne' ? ', ohne Worte entspannter.' : stimmung[0] === 'mit' ? ', mit Worten entspannter.' : '.';
       return { summary: faster + calm + ' Ein Team braucht beides.', stats: zeiten.map((t, i) => [t.toFixed(1).replace('.', ','), 's Runde ' + (i + 1)]) };
     },

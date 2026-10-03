@@ -735,6 +735,22 @@
       (!FILTER.einheit || k.einheiten.includes(FILTER.einheit) || K.einheiten.some((e) => e.id === FILTER.einheit && e.spiel === k.id)) &&
       (!q || (k.name + ' ' + k.text + ' ' + k.foerdert).toLowerCase().includes(q)));
   }
+  // Beste GEBAUTE Alternative für eine Einheit, deren Katalog-Spiel noch nicht gebaut ist:
+  // gleiches Thema, dann gleiche ELDiB-Codes (Skill), dann Einheit im Spiel genannt. Nie ein toter Link.
+  function bestBuiltFor(unit) {
+    const K = CREW.katalog;
+    const want = K.spiele[unit.spiel];
+    if (!want || get(want.id)) return null;
+    let best = null, score = -1;
+    list().forEach((g) => {
+      const k = K.spiele[g.id];
+      if (!k) return;
+      const eld = k.eldib.filter((c) => want.eldib.includes(c)).length;
+      const sc = (k.thema === want.thema ? 10 : 0) + eld * 4 + (k.einheiten.includes(unit.id) ? 3 : 0) + (k.format === want.format ? 1 : 0);
+      if (sc > score) { score = sc; best = k; }
+    });
+    return best;
+  }
   // Finder-Element (Startbildschirm/Hub ohne, Lehrermodus mit QR und Tagescode). renderFinder({teacher}) zeichnet den Bildschirm.
   function finderEl(o) {
     const oo = o || {};
@@ -760,7 +776,9 @@
       const drawList = () => {
         clear(listBox);
         let games = filterGames();
-        if (unit) games = games.sort((a, b) => (b.id === unit.spiel) - (a.id === unit.spiel));
+        const alt = unit ? bestBuiltFor(unit) : null;
+        if (unit) games = games.sort((a, b) => (b.id === unit.spiel) - (a.id === unit.spiel) || (alt ? (b.id === alt.id) - (a.id === alt.id) : 0));
+        if (alt && !games.some((k) => k.id === alt.id)) games.unshift(alt);
         if (!games.length) listBox.appendChild(h('p', { class: 'muted' }, 'Kein Spiel passt. Filter lockern.'));
         games.forEach((k) => listBox.appendChild(gameRow(k, { teacher: oo.teacher, unit: FILTER.einheit, compact: oo.compact })));
       };
@@ -771,7 +789,20 @@
           h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Thema'), themeChips),
           h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Format'), fmtChips),
           search),
-        unit ? h('div', { class: 'card stack unit-card' }, h('span', { class: 'eyebrow' }, 'Abschlussspiel für ' + unit.id), h('h3', null, unit.titel + ' → ' + (K.spiele[unit.spiel] ? K.spiele[unit.spiel].name : unit.spiel)), h('p', { class: 'small' }, unit.variante)) : null,
+        unit ? (() => {
+          const alt = bestBuiltFor(unit);
+          const want = K.spiele[unit.spiel];
+          return h('div', { class: 'card stack unit-card', 'data-alt': alt ? alt.id : '' },
+            h('span', { class: 'eyebrow' }, 'Abschlussspiel für ' + unit.id),
+            h('h3', null, unit.titel + ' → ' + (want ? want.name : unit.spiel)),
+            alt
+              ? h('div', { class: 'stack', style: { gap: '4px' } },
+                h('div', { class: 'row', style: { gap: '6px' } }, h('span', { class: 'pill' }, (want ? want.name : unit.spiel) + ' · bald'), h('span', { class: 'pill good' }, CREW.icon('check', 14), 'Heute spielbar: ' + alt.name)),
+                h('p', { class: 'small unit-alt' }, h('b', null, 'Variante: '), alt.name + ' (' + alt.formatName + ', ' + alt.dauer + ') passt zu dieser Stunde: ' + (alt.thema === (want || {}).thema ? 'gleiches Thema' : 'gleiche Fähigkeit') + '. ' + alt.text.split(/[.!?]\s/)[0] + '.'),
+                ui().btn('Variante spielen', () => startFromUi(alt.id), { small: true, icon: 'play', id: 'play-alt-' + alt.id }))
+              : null,
+            h('p', { class: 'small' }, unit.variante));
+        })() : null,
         listBox);
     };
     draw();
@@ -834,7 +865,7 @@
     figures: FIGURES, avatar, readBtn, say, figureCard, bubble, helpCard, safetyLine, colourChip, meter,
     award, stickers, renderWall, stickerEl,
     linkParams, linkFor, qrPanel, showQR, baseUrl, DEFAULT_BASE,
-    renderHub, renderFinder, finderEl, teacherPanel, FILTER,
+    renderHub, renderFinder, finderEl, teacherPanel, FILTER, bestBuiltFor,
     THEME_ICON, TEMPLATE_NAME,
     status: () => ({ running, done }),
   };

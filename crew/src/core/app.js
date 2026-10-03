@@ -291,7 +291,7 @@
   /* ---------- Schnellstart für Vertretung (ohne PIN) ---------- */
   const GUIDE_STEPS = [
     ['Öffnen', 'CREW am Beamer oder auf dem Lehrer-iPad öffnen. Die Jugendlichen öffnen auf ihren iPads die „Antwort-Karte“.'],
-    ['Wetter-Check (1 Min.)', 'Jede:r stellt geheim das Wetter ein und dreht die Karte nur zu dir. Die anderen schauen nach vorn. Du tippst einmal: sonnig, gemischt oder Sturm. „Genauer zählen“ ist freiwillig; genaue Zahlen erscheinen erst ab 6 Leuten.'],
+    ['Wetter-Check (1 Min.)', 'Jede:r stellt geheim das Wetter auf dem eigenen iPad ein. Dann zu zweit, freiwillig: „Rate zuerst, was dein Nachbar hat.“ Du tippst einmal: sonnig, gemischt oder Sturm. „Genauer eintragen“ ist freiwillig; genaue Zahlen erscheinen erst ab 6 Leuten.'],
     ['Mission des Tages (4–5 Min.)', 'Jeder Wochentag hat ein eigenes Spiel. Mit „Andere Mission“ kannst du tauschen. Eine Sitzungs-Uhr kürzt Runden, wenn die Zeit knapp wird.'],
     ['Nachspielzeit (1–2 Min.)', 'Eine Frage, freiwillig. Das ist der wichtigste Teil.'],
     ['Energie', 'Energie fließt ins gemeinsame Crew-HQ und wird sofort nach der Mission gespeichert. Beim Level-up wählt die Crew per A/B ein neues Teil. Es gibt keine Einzel-Rangliste.'],
@@ -550,22 +550,22 @@
       h('div', { class: 'wx-callout enter-2' }, CREW.icon('phone', 40),
         h('div', { class: 'stack', style: { gap: '2px' } },
           h('b', { class: 'wx-callout-t' }, 'Das wählt jede:r auf dem eigenen iPad.'),
-          h('span', null, 'Geheim einstellen. Karte nur zur Lehrkraft drehen. Die anderen schauen nach vorn.'))),
+          h('span', null, 'Geheim einstellen. Dann zu zweit – wer mag: „Rate zuerst, was dein Nachbar hat.“ Niemand muss zeigen.'))),
       h('div', { class: 'enter-3' }, legend),
     ]);
     const r = await waitX(ui.choice(wrap, [{ label: 'Überspringen', value: 'skip', variant: 'ghost' }, { label: 'Alle bereit', value: 'go', iconRight: 'right' }]), t, 'skip');
     if (r === 'skip') return { skipped: true };
-    await ui.threeTwoOne('Zur Lehrkraft drehen!');
+    await ui.threeTwoOne('Zu zweit austauschen!');
     if (!run || run.token !== t) throw new Abort();
     // Schnell: ein Tipp für die ganze Crew. Genauer zählen nur, wenn die Lehrkraft will.
     const w2 = ui.screen([
-      h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Was zeigt die Crew?'), ui.scanBar('Karten ansehen, dann tippen')),
+      h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center' } }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Wie ist das Wetter in der Crew?'), ui.scanBar('Kurz umhören, dann tippen')),
     ], { center: true, narrow: true });
     const quick = await waitX(ui.choice(w2, [
       { label: 'Alle eher sonnig', value: 'sonnig', icon: 'star', id: 'wx-sonnig' },
       { label: 'Gemischt', value: 'gemischt', variant: 'yellow', id: 'wx-gemischt' },
       { label: 'Bei einigen Sturm', value: 'sturm', variant: 'teamB', id: 'wx-sturm' },
-      { label: 'genauer zählen', value: 'count', variant: 'ghost', id: 'wx-count' },
+      { label: 'genauer eintragen', value: 'count', variant: 'ghost', id: 'wx-count' },
     ]), t, 'skip');
     if (quick === 'skip') return { skipped: true };
     let kind = quick;
@@ -573,8 +573,8 @@
     if (quick === 'count') {
       const ta = ui.tally(wx.map((w) => ({ id: w.id, label: w.label, icon: CREW.weatherIcon(w.id, 56) })), { max: size, onFull: () => ui.autoNext('wx-show', () => ta.total() >= size) });
       const w3 = ui.screen([
-        h('div', { class: 'row between' }, h('div', { class: 'stack' }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Wetter zählen')), ui.scanBar('Karten ansehen, dann tippen')),
-        h('p', { class: 'muted' }, 'Tippe auf ein Wetter, einmal pro Karte. Namen werden nicht gespeichert.'),
+        h('div', { class: 'row between' }, h('div', { class: 'stack' }, h('span', { class: 'eyebrow' }, 'Nur für die Lehrkraft'), h('h2', null, 'Wetter eintragen')), ui.scanBar('Wer mag, sagt es laut')),
+        h('p', { class: 'muted' }, 'Tippe auf ein Wetter, einmal pro Person – nur, wer es sagen will. Namen werden nicht gespeichert.'),
         ta.el,
       ]);
       const r3 = await waitX(ui.choice(w3, [{ label: 'Crew-Wetter anzeigen', value: 'go', iconRight: 'right', id: 'wx-show' }]), t, 'skip');

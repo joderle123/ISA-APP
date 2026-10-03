@@ -67,7 +67,7 @@
         h('span', { class: 'tank-glass' }, h('i')),
         h('span', { class: 'tank-ic' }, CREW.icon(t.icon, 22)),
         h('b', null, t.name),
-        h('span', { class: 'muted small' }, t.desc)), '--tk', t.colour);
+        h('span', { class: 'muted small tank-desc' }, t.desc)), '--tk', t.colour);
       if (oo.onPick) b.addEventListener('click', () => { CREW.sound.play('tap'); el.querySelectorAll('.tank').forEach((x) => x.classList.toggle('sel', x === b)); oo.onPick(t.id); });
       else b.disabled = true;
       els[t.id] = b;

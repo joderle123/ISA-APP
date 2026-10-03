@@ -16,34 +16,38 @@
     D: { name: 'Nur Tatsachen', icon: 'check', colour: 'var(--good)', desc: 'Was man zählen und sehen kann. Keine Meinung.' },
   };
 
-  /* Szenen: Figur, Situation, vier Sichten, sechs Chips (fits = zu welchen Brillen der Chip passt; alle vier = richtig).
+  /* Szenen: Figur, Situation, vier Sichten, sechs Chips.
+     REGEL für fits: Ein Satz „passt“ zu einer Brille, wenn die Brille ihn sagt oder ihm nicht widerspricht.
+     Richtig (fits 'ABCD') ist nur ein Satz, der in KEINER Brille widersprochen wird UND in mindestens zwei Brillen
+     wörtlich steht (q = diese Brillen; S = Situationstext). Der Test prüft q bei jedem ABCD-Chip.
      strenge: wie streng jede Brille urteilt (0–100) – die eigene ist fast immer oben. */
   const SZENEN = [
     { id: 'gruppe', fig: 'yara', freund: 'sam', titel: 'Gruppenarbeit', text: 'Yara hat in der Gruppenarbeit kaum geredet.',
       views: { A: 'Ich hab wieder nichts gesagt. Die anderen denken sicher, ich bin nutzlos. Ich war einfach zu feige.', B: 'Yara war leise, klar. Aber Yara hat die ganze Zeit mitgeschrieben. Und die Idee mit der Zeitleiste kam von Yara – sie hat sie mir nur zugeflüstert.', C: 'Yara hat sich wenig gemeldet. Das Plakat war am Ende zur Hälfte Yaras Handschrift. Ich hätte Yara gern öfter gehört.', D: '40 Minuten Gruppenarbeit. Yara hat 2 Sätze laut gesagt. Yara hat 14 Zeilen auf das Plakat geschrieben. Die Idee mit der Zeitleiste kam von Yara, geflüstert an Sam.' },
-      chips: [{ t: 'Yara hat wenig laut gesagt', fits: 'ABCD' }, { t: 'Yara hat viel aufgeschrieben', fits: 'ABCD' }, { t: 'Yara ist feige', fits: 'A' }, { t: 'Yara ist nutzlos', fits: '' }, { t: 'Yara hatte die beste Idee', fits: 'B' }, { t: 'Die Gruppe hat Yara ausgeschlossen', fits: '' }],
+      chips: [{ t: 'Yara hat wenig laut gesagt', fits: 'ABCD', q: 'ABCD' }, { t: 'Yara hat viel aufgeschrieben', fits: 'ABCD', q: 'BCD' }, { t: 'Yara ist feige', fits: 'A' }, { t: 'Yara ist nutzlos', fits: '' }, { t: 'Yara hatte die beste Idee', fits: 'B' }, { t: 'Die Gruppe hat Yara ausgeschlossen', fits: '' }],
       strenge: { A: 92, B: 20, C: 45, D: 5 } },
     { id: 'tor', fig: 'mika', freund: 'luca', titel: 'Das Eigentor', text: 'Mika hat im Spiel ein Eigentor geschossen. Die Mannschaft hat 2:3 verloren.',
-      views: { A: 'Wegen mir haben wir verloren. Alle hassen mich jetzt. Ich sollte aufhören mit Fußball.', B: 'Blöd gelaufen, das Eigentor. Aber Mika hat vorher das 1:0 vorbereitet. Beim Rausgehen hat Mika niemanden angeschaut – das war das Schlimmste.', C: 'Ein Eigentor passiert. Mika hat danach noch 20 Minuten alles gegeben. Das habe ich gesehen.', D: 'Spiel 2:3 verloren. Mika: ein Eigentor in Minute 60, eine Torvorlage in Minute 12. Nach dem Spiel haben zwei Mitspieler Mika auf die Schulter geklopft.' },
-      chips: [{ t: 'Mika hat ein Eigentor geschossen', fits: 'ABCD' }, { t: 'Mika hat weitergespielt und alles gegeben', fits: 'ABCD' }, { t: 'Alle hassen Mika', fits: 'A' }, { t: 'Mika hat das Spiel allein verloren', fits: 'A' }, { t: 'Mika sollte aufhören', fits: '' }, { t: 'Mika war der beste Spieler', fits: '' }],
+      views: { A: 'Wegen mir haben wir verloren. Alle hassen mich jetzt. Ich sollte aufhören mit Fußball.', B: 'Blöd gelaufen, das Eigentor. Aber Mika hat vorher das 1:0 vorbereitet. Beim Rausgehen hat Mika niemanden angeschaut – das war das Schlimmste.', C: 'Ein Eigentor passiert. Mika hat danach noch 20 Minuten alles gegeben. Das habe ich gesehen.', D: 'Spiel 2:3 verloren. Mika: ein Eigentor in Minute 60, eine Torvorlage in Minute 12. Mika hat bis zum Abpfiff gespielt. Nach dem Spiel haben zwei Mitspieler Mika auf die Schulter geklopft.' },
+      chips: [{ t: 'Mika hat ein Eigentor geschossen', fits: 'ABCD', q: 'SABCD' }, { t: 'Mika hat weitergespielt und alles gegeben', fits: 'ABCD', q: 'CD' }, { t: 'Alle hassen Mika', fits: 'A' }, { t: 'Mika hat das Spiel allein verloren', fits: 'A' }, { t: 'Mika sollte aufhören', fits: '' }, { t: 'Mika war der beste Spieler', fits: '' }],
       strenge: { A: 95, B: 25, C: 30, D: 5 } },
     { id: 'chat', fig: 'luca', freund: 'yara', titel: 'Die Nachricht', text: 'Luca hat im Gruppenchat einen Witz gemacht. Niemand hat geantwortet.',
-      views: { A: 'Peinlich. Keiner findet mich lustig. Die reden sicher gerade in einem anderen Chat über mich.', B: 'Ich hab den Witz gesehen und gelacht, war aber im Training und konnte nicht antworten. Luca macht sich sicher wieder Gedanken.', C: 'Ich sehe den Chat nicht. Ich sehe, dass Luca heute im Unterricht still war und oft aufs Handy geschaut hat.', D: 'Nachricht um 17:02 Uhr. 0 Antworten bis 19 Uhr. Von 8 Leuten im Chat waren 5 beim Training. Um 19:40 Uhr kamen zwei Lach-Emojis.' },
-      chips: [{ t: 'Luca hat einen Witz geschrieben', fits: 'ABCD' }, { t: 'Zwei Stunden kam keine Antwort', fits: 'ABCD' }, { t: 'Keiner findet Luca lustig', fits: 'A' }, { t: 'Die anderen lästern über Luca', fits: '' }, { t: 'Yara fand den Witz gut', fits: 'B' }, { t: 'Luca ist langweilig', fits: '' }],
+      views: { A: 'Peinlich. Keiner findet mich lustig. Die reden sicher gerade in einem anderen Chat über mich.', B: 'Ich hab den Witz gesehen und gelacht, war aber zwei Stunden im Training und konnte nicht antworten. Luca macht sich sicher wieder Gedanken.', C: 'Ich sehe den Chat nicht. Ich sehe, dass Luca heute im Unterricht still war und oft aufs Handy geschaut hat.', D: 'Nachricht um 17:02 Uhr. 0 Antworten bis 19 Uhr. Von 8 Leuten im Chat waren 5 beim Training. Um 19:40 Uhr kamen zwei Lach-Emojis.' },
+      chips: [{ t: 'Luca hat einen Witz geschrieben', fits: 'ABCD', q: 'SBD' }, { t: 'Zwei Stunden kam keine Antwort', fits: 'ABCD', q: 'BD' }, { t: 'Keiner findet Luca lustig', fits: 'A' }, { t: 'Die anderen lästern über Luca', fits: '' }, { t: 'Yara fand den Witz gut', fits: 'B' }, { t: 'Luca ist langweilig', fits: '' }],
       strenge: { A: 90, B: 15, C: 35, D: 5 } },
     { id: 'referat', fig: 'sam', freund: 'mika', titel: 'Das Referat', text: 'Sam hat beim Referat zweimal den Faden verloren.',
       views: { A: 'Totalausfall. Ich hab gestottert, alle haben gegrinst. Ich kann einfach nicht vor Leuten reden.', B: 'Sam hat zweimal kurz gestockt, ja. Aber den Teil mit dem Vulkan-Modell fand die ganze Klasse stark. Sam sieht nur die zwei Hänger.', C: 'Zwei Pausen, dann weitergemacht – das ist das Wichtigste. Inhalt gut, Modell sehr gut. Note 2.', D: 'Referat 9 Minuten. Zwei Pausen von je ca. 5 Sekunden. Modell gezeigt, drei Fragen aus der Klasse beantwortet. Note: 2.' },
-      chips: [{ t: 'Sam hat zweimal gestockt', fits: 'ABCD' }, { t: 'Sam hat das Referat zu Ende gebracht', fits: 'ABCD' }, { t: 'Das Referat war ein Totalausfall', fits: 'A' }, { t: 'Sam kann nicht vor Leuten reden', fits: 'A' }, { t: 'Das Modell war das Beste', fits: 'BC' }, { t: 'Die Klasse hat Sam ausgelacht', fits: '' }],
+      chips: [{ t: 'Sam hat zweimal gestockt', fits: 'ABCD', q: 'SABCD' }, { t: 'Sam hat das Referat zu Ende gebracht', fits: 'ABCD', q: 'CD' }, { t: 'Das Referat war ein Totalausfall', fits: 'A' }, { t: 'Sam kann nicht vor Leuten reden', fits: 'A' }, { t: 'Das Modell war das Beste', fits: 'BC' }, { t: 'Die Klasse hat Sam ausgelacht', fits: '' }],
       strenge: { A: 94, B: 20, C: 25, D: 5 } },
     { id: 'spaet', fig: 'yara', freund: 'luca', titel: 'Zu spät', text: 'Yara kommt zum dritten Mal in dieser Woche zu spät.',
-      views: { A: 'Ich bin unzuverlässig. Alle anderen schaffen es pünktlich. Ich krieg mein Leben nicht hin.', B: 'Yara kommt zu spät, seit Yara morgens den kleinen Bruder zur Kita bringt. Das weiß aber keiner in der Klasse.', C: 'Dreimal zu spät, das muss ich ansprechen. Mir fällt auf: Yara kommt mit rotem Kopf rein, als wäre Yara gerannt. Da ist was.', D: 'Montag 8:12 Uhr, Mittwoch 8:09 Uhr, Freitag 8:15 Uhr. Unterricht beginnt 8:00 Uhr. Letzte Woche: null Mal zu spät.' },
-      chips: [{ t: 'Yara kam dreimal zu spät', fits: 'ABCD' }, { t: 'Letzte Woche war Yara pünktlich', fits: 'BCD' }, { t: 'Yara ist unzuverlässig', fits: 'A' }, { t: 'Yara hat morgens einen Grund', fits: 'B' }, { t: 'Yara kriegt ihr Leben nicht hin', fits: '' }, { t: 'Yara kam diese Woche jeden Tag nach 8 Uhr', fits: 'ABCD' }],
+      views: { A: 'Ich bin unzuverlässig. Alle anderen schaffen es pünktlich. Ich krieg mein Leben nicht hin.', B: 'Letzte Woche war Yara pünktlich. Yara kommt zu spät, seit Yara morgens den kleinen Bruder zur Kita bringt. Das weiß aber keiner in der Klasse.', C: 'Montag, Mittwoch, Freitag – dreimal zu spät, das muss ich ansprechen. Mir fällt auf: Yara kommt mit rotem Kopf rein, als wäre Yara gerannt. Da ist was.', D: 'Montag 8:12 Uhr, Mittwoch 8:09 Uhr, Freitag 8:15 Uhr. Unterricht beginnt 8:00 Uhr. Letzte Woche: null Mal zu spät.' },
+      chips: [{ t: 'Yara kam dreimal zu spät', fits: 'ABCD', q: 'SCD' }, { t: 'Letzte Woche war Yara pünktlich', fits: 'ABCD', q: 'BD' }, { t: 'Yara ist unzuverlässig', fits: 'A' }, { t: 'Yara hat morgens einen Grund', fits: 'BC' }, { t: 'Yara kriegt ihr Leben nicht hin', fits: '' }, { t: 'Yara kam Montag, Mittwoch und Freitag nach 8 Uhr', fits: 'ABCD', q: 'CD' }],
       strenge: { A: 88, B: 10, C: 50, D: 5 },
       note: 'Hier passen drei Chips zu allen vier Brillen. Zwei reichen.' },
     { id: 'party', fig: 'luca', freund: 'sam', titel: 'Nicht eingeladen', text: 'Luca wurde nicht zu Mias Geburtstag eingeladen.',
       views: { A: 'Ich bin einfach nicht wichtig genug. Niemand will mich dabeihaben. War ja klar.', B: 'Mia durfte nur fünf Leute einladen, hat sie mir gesagt. Sie fand es selbst blöd. Luca denkt jetzt sicher wieder, dass es an Luca liegt.', C: 'Ich habe gesehen, dass Luca heute in der Pause allein saß. Vor zwei Wochen war Luca bei Sams Geburtstag dabei – das weiß ich auch.', D: 'Mia hat 5 Personen eingeladen. In der Klasse sind 22. Luca war vor zwei Wochen bei Sams Geburtstag eingeladen.' },
-      chips: [{ t: 'Luca war nicht auf der Liste', fits: 'ABCD' }, { t: 'Mia hat nur fünf Leute eingeladen', fits: 'BD' }, { t: 'Niemand will Luca dabeihaben', fits: 'A' }, { t: 'Luca war vor zwei Wochen bei Sam eingeladen', fits: 'ABCD' }, { t: 'Luca ist nicht wichtig', fits: '' }, { t: 'Mia mag Luca nicht', fits: '' }],
-      strenge: { A: 93, B: 15, C: 30, D: 5 } },
+      chips: [{ t: 'Luca war nicht auf der Liste', fits: 'ABCD', q: 'SAB' }, { t: 'Mia hat nur fünf Leute eingeladen', fits: 'ABCD', q: 'BD' }, { t: 'Niemand will Luca dabeihaben', fits: 'A' }, { t: 'Luca war vor zwei Wochen bei Sam eingeladen', fits: 'ABCD', q: 'CD' }, { t: 'Luca ist nicht wichtig', fits: '' }, { t: 'Mia mag Luca nicht', fits: '' }],
+      strenge: { A: 93, B: 15, C: 30, D: 5 },
+      note: 'Hier passen drei Sätze zu allen vier Brillen. Zwei reichen. Einen davon kennen nur B und D.' },
   ];
 
   const brilleCard = (ctx, key, sz, o) => {
@@ -105,9 +109,11 @@
       if (picked.length === 2 && picked.every((c) => c.fits === 'ABCD')) { CREW.sound.play('great'); return { ok: true, tries }; }
       // Noch nicht: Welcher Chip passt nicht zu welcher Brille? (ohne das Richtige zu verraten)
       const wrong = picked.filter((c) => c.fits !== 'ABCD');
-      const hint = wrong.length ? wrong.map((c) => '„' + c.t + '“ passt ' + (c.fits ? 'nur zu ' + c.fits.split('').map((k) => BRILLEN[k].name).join(' und ') : 'zu keiner Brille, nicht mal zur eigenen') + '.').join(' ') : 'Ihr braucht genau zwei Sätze.';
+      // Rückmeldung ohne Inhalt der anderen Brillen: nur, WEN man fragen soll
+      const fragen = Array.from(new Set(wrong.flatMap((c) => 'ABCD'.split('').filter((k) => !c.fits.includes(k))))).sort();
+      const hint = wrong.length ? 'Fragt ' + fragen.join(', ') + ': Passt das zu dir? Erst vorlesen, dann tippen.' : 'Ihr braucht genau zwei Sätze.';
       CREW.sound.play('soft');
-      const w2 = ctx.scr([ctx.say('Noch nicht. ' + hint + ' Fragt D: Steht das in den Tatsachen?', { eyebrow: 'Noch nicht', small: true })], { eyebrow: 'Lösung', center: true });
+      const w2 = ctx.scr([ctx.say('Noch nicht. ' + hint, { eyebrow: 'Noch nicht', small: true }), tries >= 3 ? h('p', { class: 'muted small' }, 'Dritter Versuch. Die Auflösung kommt gleich am Beamer – lest sie zusammen laut.') : null], { eyebrow: 'Lösung', center: true });
       await ctx.next(w2, 'Nochmal');
       if (tries >= 3) return { ok: false, tries };
     }
@@ -115,6 +121,7 @@
 
   CREW.registerGame({
     id: 'zwei-brillen',
+    szenen: SZENEN, // für den Test: Lösung gegen Quellen prüfen
     template: 'T2',
     icon: 'eye',
     themen: ['Selbstbild', 'Fremdbild', 'Tatsache vs. Urteil', 'Zuhören'],

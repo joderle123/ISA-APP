@@ -26,7 +26,7 @@
     const picked = [];
     const d = door(0);
     const count = h('span', { class: 'pill' }, '0 von 3 gewählt');
-    const chipRow = h('div', { class: 'row', style: { gap: '8px' } }, chips.map((c) => {
+    const chipRow = h('div', { class: 'fw-chips' }, chips.map((c) => {
       const b = h('button', { type: 'button', class: 'chip', 'data-q': c.q }, c.q);
       b.addEventListener('click', () => {
         CREW.sound.play('tap');

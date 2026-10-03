@@ -211,8 +211,8 @@
     },
   ];
 
-  // Nächster Platz im Kreis
-  const dreh = (z, n) => ((z + 1) % Math.max(1, n)) + 1;
+  // Nächster Platz im Kreis (1→2→…→n→1): jeder Platz ist genau einmal dran, bevor es von vorn geht
+  const dreh = (z, n) => (z % Math.max(1, n)) + 1;
 
   // Verlaufs-Karte: Start + bisherige Züge als Zeilen (für alle sichtbar)
   function verlauf(ctx, szene, log) {
@@ -228,6 +228,7 @@
 
   CREW.registerGame({
     id: 'storystaffel',
+    dreh, // für den Test: CREW.games.get('storystaffel').dreh
     template: 'T5',
     icon: 'undo',
     themen: ['Konflikt-Treppe', 'Eskalation', 'Ich-Botschaft', 'Deal'],
@@ -354,7 +355,7 @@
         await ctx.next(wR, deal ? 'Zum Deal' : 'Allen gezeigt');
         if (!deal && zug < MAX_ZUEGE) {
           seat = dreh(seat, n);
-          await ctx.T.passOn({ direction: 'links', text: 'Gib das iPad nach links. Die nächste Person baut auf diesem Zug auf. Pass ist okay: einfach weitergeben.', extra: h('div', { class: 'row center' }, h('span', { class: 'pill' }, 'Hitze ' + hitze), h('span', { class: 'pill accent' }, 'Als Nächstes: Platz ' + seat)) });
+          await ctx.T.passOn({ direction: 'links', text: 'Gib das iPad nach links. Die nächste Person baut auf diesem Zug auf. Pass ist okay: einfach weitergeben.', extra: h('div', { class: 'stack', style: { alignItems: 'center', gap: '6px' } }, h('div', { class: 'display ss-seat-big' }, 'Platz ' + seat), h('span', { class: 'muted small' }, 'Die Person links von dir. Platznummer steht auf dem iPad.'), h('span', { class: 'pill' }, 'Hitze ' + hitze)) });
         }
       }
 

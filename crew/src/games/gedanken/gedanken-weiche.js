@@ -72,19 +72,16 @@
     return el;
   }
 
-  /* Chip-Auswahl (ein Chip) + Zwei-Finger. Rückgabe id oder SKIP */
-  async function chipWahl(ctx, wrap, liste, o) {
+  /* Chip-Reihe (ein Chip wählbar), ohne eigene Bestätigung. Rückgabe { el, get() } */
+  function chipReihe(ctx, liste, title) {
     let sel = null;
     const row = h('div', { class: 'row', style: { gap: '8px' } }, liste.map((c) => {
       const b = h('button', { type: 'button', class: 'chip', 'data-chip': c.id }, CREW.icon(c.icon, 18), ' ' + c.label);
       b.addEventListener('click', () => { CREW.sound.play('tap'); sel = c.id; row.querySelectorAll('.chip').forEach((x) => x.classList.toggle('sel', x === b)); });
       return b;
     }));
-    wrap.appendChild(h('div', { class: 'card stack' }, h('b', null, o.title), row));
     if (ctx.auto) row.querySelectorAll('.chip')[Math.floor(ctx.autoRng() * liste.length)].click();
-    const r = await ctx.T.twoFinger(wrap, { label: o.label || 'Beide: Finger drauf', hint: 'Erst einigen, dann zwei Finger gleichzeitig.' });
-    if (r === ctx.SKIP) return ctx.SKIP;
-    return sel;
+    return { el: h('div', { class: 'card stack' }, h('b', null, title), row), get: () => sel };
   }
 
   const panelRow = (g, name) => h('div', { class: 'comic' }, g.panels.map((p, i) => h('div', { class: 'comic-panel' }, h('span', { class: 'comic-n' }, String(i + 1)), h('p', null, p))));
@@ -100,7 +97,7 @@
         rule: 'Eine Situation, zwei Gedanken-Gleise. Ihr sagt zu zweit voraus, welches Gefühl und welches Verhalten folgt – dann fährt der Zug und zeigt es.',
         steps: [
           { icon: 'eye', title: 'Situation', text: 'Eine Figur, ein Moment, eine Weiche.' },
-          { icon: 'sparkle', title: 'Vorhersagen', text: 'Pro Gleis: Gefühl-Chip + Verhalten-Chip, zwei Finger.' },
+          { icon: 'sparkle', title: 'Vorhersagen', text: 'Pro Gleis: Gefühl-Chip + Verhalten-Chip. Einmal zwei Finger pro Situation.' },
           { icon: 'right', title: 'Zug fährt', text: 'Comic zeigt den Ausgang. „Vorhersage stimmt“ statt richtig/falsch.' },
         ],
         probe: async () => {
@@ -125,22 +122,30 @@
         ], { eyebrow: ey, step: i + 1 });
         const go = await ctx.next(w0, 'Vorhersagen');
         if (go === ctx.SKIP) continue;
-        // Pro Gleis: Gefühl + Verhalten voraussagen
+        // Pro Gleis: Gefühl + Verhalten als zwei Chip-Reihen auf EINEM Bildschirm, Weiter per Knopf.
+        // Zwei Finger nur einmal pro Situation: wenn beide Vorhersagen stehen.
         const tipps = [];
         let skipped = false;
         for (let gi = 0; gi < gleise.length; gi++) {
           const g = gleise[gi];
+          const gef = chipReihe(ctx, GEFUEHLE, 'Gefühl');
+          const ver = chipReihe(ctx, VERHALTEN, 'Verhalten');
           const w1 = ctx.scr([
             h('div', { class: 'gleis-card big', 'data-gleis': gi + 1 }, h('span', { class: 'eyebrow' }, 'Gleis ' + (gi + 1) + ' · ' + name + ' denkt'), h('b', null, g.gedanke), ctx.readBtn(g.gedanke)),
-            ctx.say('Wenn ' + name + ' das denkt: Welches Gefühl kommt – und was tut ' + name + ' dann?', { eyebrow: 'Eure Vorhersage', small: true }),
+            ctx.say('Wenn ' + name + ' das denkt: Welches Gefühl kommt – und was tut ' + name + ' dann? Einigt euch, dann tippt einer.', { eyebrow: 'Eure Vorhersage', small: true }),
+            gef.el, ver.el,
           ], { eyebrow: ey + ' · Gleis ' + (gi + 1) });
-          const gef = await chipWahl(ctx, w1, GEFUEHLE, { title: 'Gefühl', label: 'Beide: Finger drauf – Gefühl' });
-          if (gef === ctx.SKIP) { skipped = true; break; }
-          const ver = await chipWahl(ctx, w1, VERHALTEN, { title: 'Verhalten', label: 'Beide: Finger drauf – Verhalten' });
-          if (ver === ctx.SKIP) { skipped = true; break; }
-          tipps.push({ gef, ver });
+          const r1 = await ctx.next(w1, gi + 1 < gleise.length ? 'Nächstes Gleis' : 'Vorhersage steht');
+          if (r1 === ctx.SKIP) { skipped = true; break; }
+          tipps.push({ gef: gef.get(), ver: ver.get() });
         }
         if (skipped) continue;
+        // Einmal zwei Finger: „Das ist unsere Vorhersage“ – dann fährt der Zug
+        const wF = ctx.scr([
+          ctx.say('Eure Vorhersage für beide Gleise steht. Beide Finger drauf – dann fährt der Zug.', { eyebrow: ey + ' · Vorhersage', small: true }),
+          h('div', { class: 'row' }, gleise.map((g, gi) => h('span', { class: 'chip small' }, 'Gleis ' + (gi + 1) + ': ' + (tipps[gi].gef ? gf(tipps[gi].gef).label : '–') + ' · ' + (tipps[gi].ver ? vh(tipps[gi].ver).label : '–')))),
+        ], { eyebrow: ey + ' · Vorhersage' });
+        if ((await ctx.T.twoFinger(wF, { label: 'Beide: Finger drauf – Zug fährt', hint: 'Einmal pro Situation.' })) === ctx.SKIP) continue;
         // Zug fährt beide Gleise ab: Animation, dann Comic-Panels und Abgleich
         for (let gi = 0; gi < gleise.length; gi++) {
           const g = gleise[gi];
@@ -168,8 +173,13 @@
         const ehrlich = await ctx.ask(w3, gleise.map((g, gi) => ({ label: 'Gleis ' + (gi + 1), value: g.art, variant: 'ghost' })));
         if (ehrlich === ctx.SKIP) continue;
         if (ehrlich === 'hilfreich') hilfreich++;
-        const w4 = ctx.scr([ctx.say(ehrlich === 'bremsend' ? 'Wahrscheinlich. Der bremsende Gedanke ist schneller da. Der Punkt ist: Es gibt eine Weiche. ' + name + ' kann sie umstellen – nicht am Gleisende, sondern direkt nach dem Gedanken.' : 'Schön, wenn ja. An schlechten Tagen ist das andere Gleis schneller. Der Trick: den Gedanken bemerken, bevor der Zug fährt.', { eyebrow: 'Die Weiche' })], { eyebrow: ey, center: true });
-        await ctx.T.twoFinger(w4, { label: 'Beide: Finger drauf – weiter' });
+        // Rückmeldung zur gewählten Weiche: nennt den Gedanken, den die beiden getippt haben
+        const gew = gleise.find((g) => g.art === ehrlich) || gleise[0];
+        const andere = gleise.find((g) => g !== gew) || gew;
+        const w4 = ctx.scr([ctx.say(ehrlich === 'bremsend'
+          ? 'Ihr sagt: An einem schlechten Tag denkt ' + name + ' „' + gew.gedanke + '“. Das Gleis ist schnell da. Die Weiche liegt direkt nach dem Gedanken: „' + andere.gedanke + '“ wäre das andere Gleis – ' + name + ' kann umstellen, bevor der Zug fährt.'
+          : 'Ihr sagt: ' + name + ' nimmt „' + gew.gedanke + '“. Stark, wenn das klappt. An schlechten Tagen ist „' + andere.gedanke + '“ schneller da. Der Trick: den Gedanken bemerken, bevor der Zug fährt.', { eyebrow: 'Die Weiche' })], { eyebrow: ey, center: true });
+        await ctx.next(w4, 'Weiter');
       }
       return {
         summary: vorhersagen ? treffer + ' von ' + vorhersagen + ' Vorhersagen stimmten. Gedanke → Gefühl → Verhalten: Die Weiche liegt direkt nach der Situation.' : 'Heute nur reingeschaut.',

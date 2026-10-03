@@ -86,3 +86,13 @@
 .ef-dots i[data-f="gruen"] { background: var(--good); }
 .ef-dots i[data-f="rot"] { background: var(--hot); }
 .ef-dots i[data-f="kommt"] { background: var(--yellow); }
+
+/* Stummer Aufbau: Oben/Unten-Markierung an der Kachel */
+.sa-piece { position: relative; }
+.sa-oben, .sa-unten { position: absolute; left: 50%; transform: translateX(-50%); font-size: 11px; font-weight: 800; letter-spacing: .06em; padding: 2px 8px; border-radius: 999px; background: rgba(255,255,255,.85); color: #0e0a26; pointer-events: none; }
+.sa-oben { top: 6px; } .sa-unten { bottom: 6px; }
+/* T3-Spiele (flaches iPad zwischen zwei Personen): Zwei-Finger-Fläche bleibt am unteren Rand sichtbar, kompakter */
+.game-screen .two-finger { position: sticky; bottom: 8px; z-index: 3; min-height: 88px; padding: 10px 14px; box-shadow: 0 -6px 16px rgba(0,0,0,.25); }
+/* Frag weiter: Chips in zwei Spalten, kleiner */
+.fw-chips { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.fw-chips .chip { font-size: .9em; padding: 6px 10px; white-space: normal; text-align: left; justify-content: flex-start; }
