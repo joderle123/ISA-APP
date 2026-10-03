@@ -59,6 +59,8 @@
     if (run && !run.solo && !force) {
       const txt = run.phase === 'after'
         ? ['Zum Start?', 'Die Energie ist schon gespeichert.', 'Zum Start']
+        : run.game
+          ? ['Spiel beenden?', 'Das Spiel wird abgebrochen. Nichts geht verloren, es wird nichts gespeichert.', 'Beenden']
         : run.inMission
           ? ['Session beenden?', 'Die Mission wird abgebrochen. Energie aus dieser Runde gibt es dann nicht.', 'Beenden']
           : ['Session abbrechen?', 'Ihr seid noch vor der Mission.', 'Abbrechen'];
@@ -257,7 +259,8 @@
       hero,
       cta,
       h('div', { class: 'grid two enter-3' }, h('div', { class: 'card home-week' }, weekPips()), unlock),
-      h('div', { class: 'grid two enter-3' },
+      h('div', { class: 'grid three enter-3' },
+        tile({ icon: 'star', title: 'Spiele', sub: CREW.games ? CREW.games.list().length + ' Spiele in 8 Themen · Finder' : 'Alle Spiele', onClick: () => CREW.games.renderHub(), id: 'tile-games' }),
         tile({ icon: 'leaf', title: 'Solo-Zone', sub: 'Alleine chillen und trainieren', onClick: renderSoloHub, id: 'tile-solo' }),
         tile({ icon: 'phone', title: 'Antwort-Karte', sub: 'Für dein iPad', onClick: renderPaddle, id: 'tile-paddle' })),
       h('div', { class: 'row end' }, quick, teacher),
@@ -898,6 +901,46 @@
     renderSoloHub();
   }
 
+  /* ---------- Neue Spiele (src/games/**, Vorlagen aus games.js) ---------- */
+  // opts: { auto, rolle, code, platz, back: 'hub' | 'home' | 'finder' }
+  async function startGame(g, opts) {
+    const o = opts || {};
+    endRun();
+    run = { token: ++tokenCounter, skipWaiter: null, inMission: true, game: true, phase: 'mission', startedAt: Date.now() };
+    renderTopbar();
+    requestAnimationFrame(coachXPause);
+    const ctx = makeCtx(g, CREW.seed ? CREW.seed.crewSize() : (S.lastCrewSize || 5));
+    try {
+      await CREW.games.play(g, ctx, o);
+    } catch (e) {
+      if (e instanceof Abort) return;
+      console.error(e);
+      if (!ctx.alive()) return;
+      ui.screen([h('div', { class: 'card stack' }, h('h2', null, 'Kurzer Hänger. Zurück zu den Spielen.'), ui.btn('Zu den Spielen', () => { endRun(); CREW.games.renderHub(); }, { icon: 'star' }))], { center: true, narrow: true });
+      endRun();
+      return;
+    }
+    if (!ctx.alive()) return;
+    endRun();
+    if (o.back === 'home') renderHome();
+    else if (o.back === 'finder') CREW.games.renderFinder();
+    else CREW.games.renderHub();
+  }
+  // Deep-Link: index.html?spiel=<id>&rolle=<A-D>&code=<tagescode>&platz=<1-8> → direkt ins Spiel (Jugend-iPad)
+  function openDeepLink() {
+    if (!CREW.games || !CREW.games.linkParams) return false;
+    const p = CREW.games.linkParams();
+    if (!p.spiel) return false;
+    const g = CREW.games.get(p.spiel);
+    if (p.code) CREW.seed.setCode(p.code);
+    if (p.platz) CREW.seed.setSeat(p.platz);
+    // Parameter aus der Adresszeile nehmen: „Start“ führt danach normal zum Startbildschirm
+    try { history.replaceState(null, '', location.pathname); } catch (e) { /* egal */ }
+    if (!g) { ui.toast('Dieses Spiel gibt es (noch) nicht: ' + p.spiel); return false; }
+    startGame(g, { rolle: p.rolle || null, code: p.code || null, platz: p.platz || 0, back: 'hub' });
+    return true;
+  }
+
   /* ---------- Crew-HQ ---------- */
   function renderBase(highlight) {
     endRun();
@@ -929,6 +972,8 @@
         h('b', null, own.length ? 'Euer HQ · antippen für die Crew-Regel' : 'Noch leer. Die erste Session bringt Licht.'),
         own.length ? h('div', { class: 'row' }, pills) : null),
       mystery,
+      // Sticker-Wand: gemeinsame Belohnung aller neuen Spiele
+      CREW.games && CREW.games.renderWall ? CREW.games.renderWall() : null,
     ]);
   }
 
@@ -976,7 +1021,7 @@
   }
 
   function renderTeacher(tab) {
-    const tabs = [['missionen', 'Missionen'], ['inhalte', 'Inhalte'], ['einstellungen', 'Einstellungen'], ['fortschritt', 'Fortschritt'], ['anleitung', 'Anleitung']];
+    const tabs = [['missionen', 'Missionen'], ['spiele', 'Spiele'], ['inhalte', 'Inhalte'], ['einstellungen', 'Einstellungen'], ['fortschritt', 'Fortschritt'], ['anleitung', 'Anleitung']];
     const head = h('div', { class: 'stack' },
       h('div', { class: 'row between' }, h('h2', null, 'Lehrermodus'), ui.btn('Schließen', () => renderHome(), { variant: 'ghost', small: true, icon: 'x' })),
       h('div', { class: 'tabs' }, tabs.map(([id, label]) => {
@@ -986,6 +1031,7 @@
       })));
     let body;
     if (tab === 'missionen') body = h('div', { class: 'stack' }, teacherMissions(), teacherSolo());
+    else if (tab === 'spiele') body = CREW.games.teacherPanel(); // Finder nach Einheit/Thema/Format/ELDiB, Tagescode, QR-Links
     else if (tab === 'inhalte') body = teacherContent();
     else if (tab === 'einstellungen') body = teacherSettings();
     else if (tab === 'fortschritt') body = teacherProgress();
@@ -1107,7 +1153,8 @@
   function boot() {
     CREW.missions.sort((a, b) => (a.day || 9) - (b.day || 9));
     applyLook();
-    renderHome();
+    // Deep-Link (QR-Code vom Beamer) öffnet direkt ein Spiel, sonst Startbildschirm
+    if (!openDeepLink()) renderHome();
     // Offline-Unterstützung (nur auf der echten Webseite, nicht in der Vorschau)
     try {
       if ('serviceWorker' in navigator && location.protocol === 'https:' && !/claude|anthropic/.test(location.hostname)) {
@@ -1116,12 +1163,15 @@
     } catch (e) { /* egal */ }
   }
 
-  CREW.app = { renderHome, startSession, renderPaddle, renderSoloHub, renderBase, renderTeacher, goHome, applyLook, LOOKS };
+  CREW.app = { renderHome, startSession, renderPaddle, renderSoloHub, renderBase, renderTeacher, goHome, applyLook, LOOKS, startGame, endRun, xcard: onXCard, openDeepLink };
   // Für automatische Tests
   CREW.debug = {
     found(name, look) { S.crew.name = name || 'Test Crew'; S.crew.look = look || 'arena'; S.crew.founded = true; CREW.save(); renderHome(); },
     startMission(id) { const m = CREW.missions.find((x) => x.id === id); if (m) startSession(m); return !!m; },
     startSolo(id) { const g = CREW.soloGames.find((x) => x.id === id); if (g) startSolo(g); return !!g; },
+    // Neues Spiel starten; opts.auto = true spielt es ohne Finger bis zum Ende (tests/games.mjs)
+    startGame(id, opts) { const g = CREW.games.get(id); if (g) startGame(g, opts || {}); return !!g; },
+    gameStatus() { return CREW.games.status(); },
     addEnergy(n) { S.energy += n; CREW.save(); renderTopbar(); },
     xcard: onXCard,
   };

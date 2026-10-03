@@ -94,6 +94,7 @@
     hq: { owned: [] },    // Crew-HQ: freigeschaltete Teile (Nummern 1–12), von der Crew gewählt
     records: {},          // Crew-Rekord (beste Punkte) pro Mission – nur für die ganze Crew
     seen: {},             // Einmal-Erklärungen, die dieses Gerät schon gezeigt hat (z. B. xpause, clashHeat)
+    stickers: {},         // Sticker-Wand im Crew-HQ: Spiel-ID -> {n, first, last} (Belohnung der neuen Spiele, ohne Namen)
   });
 
   function deepMerge(base, extra) {

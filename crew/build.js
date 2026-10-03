@@ -24,6 +24,20 @@ const listJs = (dir) => {
   if (!fs.existsSync(d)) return [];
   return fs.readdirSync(d).filter((f) => f.endsWith('.js')).sort().map((f) => path.join(d, f)).filter(allowed);
 };
+/* Alle Dateien einer Endung unterhalb eines Ordners, rekursiv und sortiert (src/games/<thema>/<id>.js) */
+const walk = (dir, ext) => {
+  if (!fs.existsSync(dir)) return [];
+  const out = [];
+  for (const name of fs.readdirSync(dir).sort()) {
+    const p = path.join(dir, name);
+    if (fs.statSync(p).isDirectory()) out.push(...walk(p, ext));
+    else if (name.endsWith(ext)) out.push(p);
+  }
+  return out.filter(allowed);
+};
+
+/* Spielekatalog: src/content/katalog.js wird aus docs/spielekatalog.json erzeugt (nur bei Änderung neu geschrieben) */
+require('./tools/katalog-gen.js').generate(ROOT);
 
 /* Schriften einbetten (keine externen Anfragen, datenschutzfreundlich) */
 const FONTS = [
@@ -39,21 +53,26 @@ const fontCss = FONTS.map(([fam, file, weight, style]) => {
 }).join('\n');
 
 /* CSS: Kern zuerst, dann Modul-CSS (falls vorhanden) */
-const cssFiles = [path.join(SRC, 'core', 'styles.css')]
+const cssFiles = [path.join(SRC, 'core', 'styles.css'), path.join(SRC, 'core', 'games.css')].filter((f) => fs.existsSync(f))
   .concat(['missions', 'solo', 'base'].flatMap((d) => {
     const dir = path.join(SRC, d);
     return fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith('.css')).sort().map((f) => path.join(dir, f)).filter(allowed) : [];
-  }));
+  }))
+  // Neue Spiele: src/games/<thema>/<id>.css werden automatisch eingebunden
+  .concat(walk(path.join(SRC, 'games'), '.css'));
 const css = cssFiles.map((f) => `/* ---- ${path.relative(SRC, f)} ---- */\n` + read(f)).join('\n');
 
 /* JS: feste Reihenfolge. app.js startet das Spiel und kommt zuletzt. */
-const coreFirst = ['util.js', 'icons.js', 'sound.js', 'ui.js'].map((f) => path.join(SRC, 'core', f));
+/* Kern: util, icons, sound, ui, dann Spiel-Vorlagen (games.js), Tagescode (seed.js) und QR (qr.js) */
+const coreFirst = ['util.js', 'icons.js', 'sound.js', 'ui.js', 'seed.js', 'qr.js', 'games.js'].map((f) => path.join(SRC, 'core', f));
 const jsFiles = [
   ...coreFirst,
   ...listJs('content'),
   ...listJs('missions'),
   ...listJs('solo'),
   ...listJs('base'),
+  // Neue Spiele: src/games/<thema>/<id>.js werden automatisch eingebunden (sortiert)
+  ...walk(path.join(SRC, 'games'), '.js'),
   path.join(SRC, 'core', 'credits.js'),
   path.join(SRC, 'core', 'app.js'),
 ].filter((f) => fs.existsSync(f));

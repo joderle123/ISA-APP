@@ -5,5 +5,6 @@
     'Pädagogischer Rahmen: ETEP / ELDiB. Im Spiel stehen nur Kürzel mit eigenen Kurzbeschreibungen, keine Katalogtexte.',
     'Schriften: Lilita One, Rubik, Pixelify Sans, Chakra Petch – SIL Open Font License 1.1.',
     'Töne und Grafiken: selbst erzeugt (WebAudio, SVG). Keine fremden Bild- oder Tondateien.',
+    'QR-Codes: qrcode-generator 1.4.4 von Kazuhiko Arase, MIT-Lizenz (eingebettet, kein Netz nötig). „QR Code“ ist eine Marke von DENSO WAVE.',
   ];
 })();

@@ -76,6 +76,42 @@ Look, Crew-Name, Ton und Vorlesen einstellen und den Fortschritt sichern.
 - **Sichern:** Lehrermodus → „Fortschritt“ → Sicherungscode kopieren oder als Datei speichern.
   Auf einem anderen Gerät unter „Laden“ einfügen.
 
+## Spiele (Spielekatalog Jahr 1)
+
+Neben den fünf Missionen gibt es den Bereich **Spiele**: 62 Spiele in 8 Themen aus `docs/spielekatalog.json`,
+passend zu den Einheiten j1-e01 … j1-e30 des Skills-Kurses. Kein Kahoot-Stil: Es wird nicht hochgehalten und
+gezählt, sondern geredet, kooperiert und bewegt. Alle Spiele reden über die Figuren Mika, Yara, Luca und Sam,
+nie über die Jugendlichen. Teilen ist freiwillig, **Pass** steht auf jedem Bildschirm, die X-Karte oben bleibt.
+
+- **Startbildschirm → „Spiele“**: alle Spiele nach Thema (noch nicht gebaute stehen als „bald“ dabei).
+- **Finder** (auch im Lehrermodus, Tab „Spiele“): nach Einheit (mit dem Varianten-Text für genau diese Stunde),
+  Thema, Format und ELDiB-Code suchen.
+- **Sticker-Wand** im Crew-HQ: Jedes gespielte Spiel klebt einen Sticker an die Wand. Das ist die gemeinsame
+  Belohnung aller neuen Spiele (gespeichert wird nur die Spiel-ID und wie oft, keine Namen).
+
+### Sieben Formate
+
+Solo · Solo + Austausch (allein tippen, dann **Vergleichskarte** zu zweit: „Wie hast du dich entschieden? Warum?“) ·
+Zu zweit an einem iPad (Bestätigen nur mit zwei Fingern) · Gerät weitergeben („Nur du schaust“) ·
+Rollen-Puzzle (jedes iPad zeigt etwas anderes, Rollen A–D plus Beobachter:in) · Bewegung im Raum (Wände und Ecken,
+die Lehrkraft tippt nur „Stopp!“ und „Weiter“) · Beamer-Gruppe.
+
+### Tagescode und Platznummer (Austausch ohne Server)
+
+Die iPads haben kein Netz untereinander. Damit trotzdem alle dieselben Szenen, dieselbe Paar-Farbe („Blau findet Blau“)
+und dieselben Rollen sehen, gibt es einen **4-stelligen Tagescode** (Lehrermodus → „Spiele“). Der Standard-Code kommt
+aus dem Datum, alle iPads mit richtigem Datum haben ihn von allein. Jedes iPad hat außerdem eine **Platznummer 1–8**
+(Aufkleber am Gerät). Beides wird im Spiel vor dem Start angezeigt und kann dort geändert werden.
+
+### Auf dem eigenen iPad spielen (QR-Codes)
+
+Im Lehrermodus → „Spiele“ zeigt **QR** zu jedem Spiel einen QR-Code (bei Rollen-Puzzles einen pro Rolle A–D).
+Die Jugendlichen scannen ihn mit der Kamera-App und landen direkt im Spiel:
+`index.html?spiel=<id>&rolle=<A-D>&code=<tagescode>&platz=<1-8>`. Die Links enthalten keine persönlichen Daten.
+Dafür muss CREW **online** stehen: Die Basis-URL steht unter „Spiele“ (Standard
+`https://joderle123.github.io/ISA-APP/crew/dist/index.html`). **GitHub Pages muss die Lehrkraft einmal
+einschalten** (siehe unten). Ohne Internet startet man das Spiel am Beamer bzw. Lehrer-iPad.
+
 ## Kostenlos online stellen (GitHub Pages)
 
 1. Auf github.com ein kostenloses Konto anlegen (falls noch nicht vorhanden).
@@ -96,6 +132,35 @@ Alles steckt in dieser einen Datei (auch Schriften und Grafiken).
 
 ## Für Entwickler:innen
 
-- Quellcode: `crew/src` (core, content, missions, solo, base)
-- Bauen: `node crew/build.js` → schreibt `crew/dist/index.html` und `crew/dist/crew-vorschau.html`
-- Tests (Playwright): `node crew/tests/smoke.mjs` (ebenso radar, clash, feed, reframe, solo-test, hq)
+- Quellcode: `crew/src` (core, content, missions, solo, base, games)
+- Bauen: `node crew/build.js` → schreibt `crew/dist/index.html` und `crew/dist/crew-vorschau.html`.
+  `src/content/katalog.js` wird dabei aus `docs/spielekatalog.json` erzeugt (`tools/katalog-gen.js`), nicht von Hand ändern.
+- Tests (Playwright): `node crew/tests/smoke.mjs` (ebenso radar, clash, feed, reframe, solo-test, hq) und
+  `node crew/tests/games.mjs` (spielt JEDES registrierte Spiel im Auto-Modus bis zum Ende, prüft Deep-Link und QR).
+  Läuft parallel noch ein anderer Browser-Test: `flock /tmp/crew-chrome.lock node crew/tests/games.mjs`.
+
+### Ein neues Spiel bauen
+
+Eine Datei `src/games/<thema>/<id>.js` (optional `<id>.css`) – build.js bindet alles unter `src/games/**` automatisch ein.
+Themen-Ordner: ankommen, ich, gefuehle, skills, gedanken, kommunikation, konflikt, digital. Die `id` ist die aus dem Katalog.
+
+```js
+CREW.registerGame({
+  id: 'frag-weiter', template: 'T3',           // Name, Thema, Format, Dauer, ELDiB, Einheiten kommen aus dem Katalog
+  themen: ['Nachfragen'], safety: ['figuren', 'freiwillig'], help: false, // help: true → Hilfenummern am Ende
+  async run(ctx) {
+    await ctx.T.intro({ rule: 'Ein Satz.', steps: [...], probe: ctx.T.probeCard('Probe …', [...]) });
+    await ctx.T.codeCheck();                     // T1/T2: Tagescode + Platz (Deep-Link/Auto überspringen das)
+    const wrap = ctx.scr([ctx.figureCard({ fig: 'mika', mood: 'angst', text: '…' })], { eyebrow: 'Runde 1' });
+    const r = await ctx.ask(wrap, [{ label: 'A', value: 'a' }, { label: 'B', value: 'b' }]); // X/Pass → ctx.SKIP
+    return { summary: '…', stats: [[3, 'Runden']] }; // ctx.T.end() mit Sticker macht der Kern
+  },
+});
+```
+
+Bausteine: `ctx.scr` (Bildschirm mit Kopfzeile + Pass), `ctx.ask`/`ctx.next` (warten, Auto-Modus wählt selbst),
+`ctx.timer` (nie unter 20 s außer `{movement:true}`), `ctx.rng`/`ctx.rpick`/`ctx.rshuffle` (gleich auf allen iPads),
+`ctx.pair`, `ctx.role`, `ctx.readBtn`, `ctx.say`, `ctx.figureCard`, `ctx.bubble`, `ctx.meter`, `ctx.helpCard`, `ctx.safetyLine`.
+Vorlagen: `ctx.T.intro`, `codeCheck`, `pairScreen`, `vergleich` (T1), `roleSetup`, `checkSolution` (T2), `split`, `twoFinger`,
+`handOn` (T3), `walk` (T4), `cover`, `passOn` (T5), `beamerStep` (T6), `end`. Jede Wartestelle muss über diese Helfer laufen,
+dann läuft das Spiel im Auto-Modus (`CREW.debug.startGame(id, { auto: true })`) ohne Finger bis zum Ende.
