@@ -24,7 +24,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const args = process.argv.slice(2)
 const wahl = waehleAusgabeAus(args)
 const annexe = wahl.annexe
-const { EINHEITEN, HANDBUCH, PLAENE, BLAETTER, SKILLKARTEN, VORLAGEN } = ladeDaten(wahl)
+const { EINHEITEN, HANDBUCH, PLAENE, BLAETTER, SKILLKARTEN, VORLAGEN, HEFT_VORN } = ladeDaten(wahl)
 const ENTWURF = wahl.entwurf
 const streng = args.includes('--streng')
 const dateien = args.filter((a) => a.endsWith('.json'))
@@ -445,7 +445,7 @@ if (alles) {
   if (annexe && !HANDBUCH.de.vorwort) melde('H', 'handbuch', 'keine Handbuchtexte (handbuch.json fehlt oder ist leer)')
   if (!annexe && JSON.stringify(aufbau(HANDBUCH.de)) !== JSON.stringify(aufbau(HANDBUCH.fr))) melde('F', 'handbuch', 'DE und FR sind nicht gleich aufgebaut')
   for (const s of SPRACHEN) if (HANDBUCH[s].vorwort && !HANDBUCH[s].vorwort.text.includes('{klasse}')) melde('F', `handbuch ${s}`, 'Vorwort ohne Platzhalter {klasse}')
-  for (const id of VORLAGEN) if (!blattById.has(id)) melde('F', 'daten.ts', `Kopiervorlage „${id}“ gibt es nicht`)
+  for (const id of new Set([...VORLAGEN, ...Object.values(HEFT_VORN).flat()])) if (!blattById.has(id)) melde('F', annexe ? 'foerderfach-ausgabe.ts' : 'daten.ts', `Werkzeug-Blatt „${id}“ gibt es nicht`)
   for (const s of SPRACHEN) for (const x of texteIn(HANDBUCH[s])) stil(`handbuch ${s}`, x, s)
 }
 
@@ -465,7 +465,8 @@ for (const b of zuPruefen) {
   }
   if (alles) {
     const genutzt = gepruefteEinheiten.some((e) => [...e.blaetter, ...(e.vorlagen ?? [])].includes(b.id)) || VORLAGEN.includes(b.id)
-    if (!genutzt) melde('H', `Blatt ${b.id}`, 'wird in keiner Einheit verwendet')
+    // Ausgabe annexe: Die geteilten Werkzeug-Blätter (ff-…) braucht sie nur teilweise (WERKZEUGE_ANNEXE); die übrigen prüft der Lauf für die Klassen
+    if (!genutzt && !(annexe && b.id.startsWith('ff-'))) melde('H', `Blatt ${b.id}`, 'wird in keiner Einheit verwendet')
   }
 }
 // Regeln der Toolbox (scripts/blatt-pruefen.ts) – ohne die, die im Förderfach nicht gelten
@@ -478,7 +479,7 @@ if (zuPruefen.length) {
   writeFileSync(datei, JSON.stringify(annexe ? zuPruefen.map((b) => ({ ...b, fr: undefined })) : zuPruefen))
   const r = spawnSync('npx', ['tsx', '--tsconfig', 'tsconfig.scripts.json', 'scripts/blatt-pruefen.ts', datei], { cwd: ROOT, encoding: 'utf8' })
   rmSync(tmp, { recursive: true, force: true })
-  const ohneAufgabe = (zeile: string) => / (ff-[a-z0-9-]+) (DE|FR): keine einzige Aufgabe/.exec(zeile) || [...vorlagenIds].some((id) => zeile.includes(` ${id} `) && zeile.includes('keine einzige Aufgabe'))
+  const ohneAufgabe = (zeile: string) => / ((?:ff|a)-[a-z0-9-]+) (DE|FR): keine einzige Aufgabe/.exec(zeile) || [...vorlagenIds].some((id) => zeile.includes(` ${id} `) && zeile.includes('keine einzige Aufgabe'))
   const giltNicht = [/1–4 ELDiB-Ziele/, /Lehrerseite: fachlicher Hintergrund zu kurz/, /Lehrerseite ohne Quelle/, /Hintergrund über 1100 Zeichen/]
   for (const zeile of (r.stdout ?? '').split('\n')) {
     const m = /^([✗·]) (.+?): (.+)$/.exec(zeile)

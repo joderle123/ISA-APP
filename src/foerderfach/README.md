@@ -65,14 +65,37 @@ dazu `--ausgabe=annexe`: Es liest dann `src/data/foerderfach/annexe/` statt `src
 `plan-<klasse>.json`, `handbuch.json`, `einheiten-<klasse>.json`, `blaetter-<klasse>.json`,
 `skillkarten.json`, Entwürfe in `entwurf/` (Ids `a7-e01`, `a6-…`, `a5-…`). Fehlende Dateien gelten als
 leer, fehlt `fr`, wird `fr` = `de` gesetzt; die Werkzeug-Blätter (`blaetter.json`) und die Quellen sind
-für beide Ausgaben gleich. Titel, Kopf und Fuß heißen „Skills fir d’Liewen · Annexe“, statt des
+für beide Ausgaben gleich, dazu kommen die eigenen Werkzeug-Blätter der Annexe (`werkzeuge.json`, siehe unten).
+Titel, Kopf und Fuß heißen „Skills fir d’Liewen · Annexe“, statt des
 Lehrerhandbuchs entsteht ein Leitungsheft (`Skills-fir-d-Liewen_Annexe_7e_Leitungsheft.pdf` und
-`…_Schuelerheft.pdf`, ohne Sprachkürzel). Teile ohne Texte oder Daten (z. B. der Auswertungsbogen der
+`…_Schuelerheft.pdf`, ohne Sprachkürzel). Auf Deckblatt und Rückseite steht über dem Titel „Annexe des CDSE ·
+Kleingruppen“ (statt „Voie de préparation“), der Vergleichsbogen trägt im Kopf „Name“ und „Datum“ (statt „Klasse“
+und „Schuljahr“). Teile ohne Texte oder Daten (z. B. der Auswertungsbogen der
 Klasse, Stufen ohne Plan) und alles Zweisprachige (Glossar, Elternbrief und Fragebogen auf Französisch,
 Übersetzung im Wortspeicher) entfallen; das Prüfen lässt Französisch sowie „Leitung“ und Imbiss aus den
 Regeln und rechnet mit 30 Doppelstunden. `--daten=<ordner>` nimmt einen anderen Datenordner (zum Testen,
 z. B. unter `tmp/`). Technik: `scripts/foerderfach-ausgabe.ts` lädt die Daten, `waehleAusgabe` in
 `fach.ts` stellt die Namen ein; ohne Option läuft alles wie bisher.
+
+**Spickzettel.** Vor jeder Einheit steht im Leitungsheft eine Seite „Spickzettel“ für die Hand der Leitung
+(`SpickzettelSeite` in `pdf/Handbuch.tsx`, nur in der Ausgabe annexe; Vorbild: die Funktion `Spickzettel` im Skills-Kurs
+der App, `src/seiten/Kurs.tsx`): Nummer und Titel, Minutenplan der Schritte (von–bis, Phase, Titel) mit dem ersten
+Impuls je Schritt (erster Eintrag aus „sagen“, sonst erster Punkt), Material zum Abhaken, Kasten „Achtung“ und
+Wochen-Mission. Er hat genau eine Seite: Je nach Länge der Texte wird in vier Stufen gekürzt (`SPICK_STUFEN`; Impulse auf
+ganze Sätze, „Achtung“ mit Verweis „ganz: S. …“ auf die Übersicht). Die Marken `sp-<id>` und `spe-<id>` zeigen, ob es
+dabei blieb – sonst meldet `foerderfach:pdf` und `foerderfach:einheit` ein ✗. Inhalt, Jahresplan und Kapitelseiten verweisen
+weiter auf die Übersicht der Einheit (eine Seite hinter dem Spickzettel); `foerderfach:einheit` setzt den Spickzettel mit.
+Die Sicherheitsseite (Teil A) hat in der Annexe etwas engere Abstände; ist ihr Text länger, fließt sie sauber auf eine
+zweite Seite (Grundsätze paarweise, „Wenn sich jemand anvertraut“, „Hilfe“ und „Ohne Noten“ bleiben zusammen).
+
+**Werkzeug-Blätter der Annexe.** Statt „So funktioniert das Fach“ (`ff-das-fach`) und „Klassenvereinbarung“
+(`ff-klassenvereinbarung`) hat die Annexe „So läuft der Skills-Kurs“ (`a-der-kurs`) und „Unser Gruppenvertrag“
+(`a-gruppenvertrag`), je eine Seite, in `src/data/foerderfach/annexe/werkzeuge.json` (Aufbau wie `blaetter.json`; ansehen:
+`npm run foerderfach:blatt -- --ausgabe=annexe src/data/foerderfach/annexe/werkzeuge.json --png`). Welche Werkzeug-Blätter
+je Klassenstufe in Teil D des Leitungshefts (`WERKZEUGE_ANNEXE`) und vorn im Schülerheft (`HEFT_VORN_ANNEXE`) stehen,
+stellt `scripts/foerderfach-ausgabe.ts` ein (für die Klassen `src/foerderfach/daten.ts`); in der Annexe sind es
+`a-der-kurs`, `ff-gefuehlsrad`, `ff-skills-pass`, `a-gruppenvertrag` und `ff-anspannungsskala` (Teil D) bzw. die ersten
+vier (Heft).
 
 ## Regeln für neue Einheiten
 

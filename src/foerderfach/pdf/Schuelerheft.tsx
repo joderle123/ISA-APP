@@ -39,7 +39,7 @@ export interface HeftEintrag {
 export function heftInhalt(plan: Jahresplan, einheiten: Einheit[], sprache: Sprache, vorn: string[]): HeftEintrag[] {
   const t = TX[sprache]
   const basis = `${FACH.name}  ·  ${plan.klasse}`
-  const liste: HeftEintrag[] = vorn.map((id, i) => ({ id, reiter: i === 0 ? (sprache === 'fr' ? 'La matière' : 'Das Fach') : t.jedeStunde, meta: basis, gruppe: 'vorn' }))
+  const liste: HeftEintrag[] = vorn.map((id, i) => ({ id, reiter: i === 0 ? t.reiterErstes : t.jedeStunde, meta: basis, gruppe: 'vorn' }))
   const schon = new Set(liste.map((x) => x.id))
   for (const pe of plan.einheiten) {
     const e = einheiten.find((x) => x.id === pe.id)

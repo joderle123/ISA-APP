@@ -11,7 +11,8 @@
 // Seitenzahlen (Inhalt, Jahresplan, Verweise) kommen aus einem ersten Durchlauf (Marken, siehe
 // scripts/foerderfach.tsx); die Seiten im Schülerheft aus dem vorher gesetzten Schülerheft.
 // In der Ausgabe annexe (fach.ts: „Leitungsheft“, nur Deutsch) entfallen Teile, deren Texte fehlen,
-// und was es nur zweisprachig gibt (Elternbrief und Fragebogen in der zweiten Sprache, Glossar).
+// und was es nur zweisprachig gibt (Elternbrief und Fragebogen in der zweiten Sprache, Glossar); dafür steht
+// vor jeder Einheit ein Spickzettel (SpickzettelSeite: eine Seite für die Hand der Leitung).
 // ---------------------------------------------------------------------------
 
 import type { ReactNode } from 'react'
@@ -65,8 +66,8 @@ export interface HandbuchDaten {
 /** Platzhalter für Seitenzahlen im ersten Durchlauf – so breit wie die echten, damit sich nichts verschiebt */
 const PLATZHALTER = 188
 const vorlageId = (blatt: string) => `v-${blatt}`
-/** Werkzeug-Blätter (für jede Stunde) beginnen mit „ff-“, die Blätter der Einheiten mit „ff7-“, „ff6-“, „ff5-“ */
-const istWerkzeug = (id: string) => id.startsWith('ff-')
+/** Werkzeug-Blätter (für jede Stunde) beginnen mit „ff-“ (Annexe: auch „a-“), die Blätter der Einheiten mit „ff7-“, „ff6-“, „ff5-“ („a7-“, „a6-“, „a5-“) */
+const istWerkzeug = (id: string) => id.startsWith('ff-') || id.startsWith('a-')
 
 const ROT = '#B4533A'
 const ROT_ZART = '#FBF1EC'
@@ -80,6 +81,15 @@ const quelle = (schluessel: string) => QUELLEN[schluessel] ?? ''
 /** Seitenzahl aus dem ersten Durchlauf (dort ein Platzhalter) */
 function seiteVon(seiten: Marken | undefined, id: string): number | undefined {
   return seiten ? seiten.get(id) : PLATZHALTER
+}
+
+/** Verweis auf ein Blatt der Einheit (Übersicht und Spickzettel): Seite im Schülerheft, sonst Seite der Kopiervorlage im Handbuch */
+function blattVerweis(e: Einheit, id: string | undefined, t: FachTx, heft?: Marken, seiten?: Marken): string | undefined {
+  if (!id) return undefined
+  const h = e.blaetter.includes(id) ? heft?.get(id) : undefined
+  if (h) return t.heftKurz(h)
+  const v = seiteVon(seiten, vorlageId(id))
+  return v ? t.vorlageSeite(v) : undefined
 }
 
 function Quellen({ liste }: { liste: string[] }) {
@@ -432,61 +442,73 @@ function DoppelstundeSeite({ sprache, p, klasse, text, marken }: { sprache: Spra
   )
 }
 
+/**
+ * Rahmen und Sicherheit. Läuft der Text über die Seite (Ausgabe annexe: längere Texte), fließt er sauber auf eine zweite:
+ * Die Grundsätze stehen paarweise, jedes Paar bleibt ganz; „Wenn sich jemand anvertraut“, „Hilfe“ und „Ohne Noten“ bleiben
+ * zusammen und beginnen dann die zweite Seite. In der Annexe sind die Abstände etwas enger, damit es möglichst bei einer Seite bleibt.
+ */
 function SicherheitSeite({ sprache, p, klasse, text, marken }: { sprache: Sprache; p: Palette; klasse: Klasse; text: HandbuchText; marken?: Marken }) {
   const t = TX[sprache]
   const s = text.sicherheit
+  const eng = AUSGABE.art === 'annexe'
+  const paare: (typeof s.grundsaetze)[] = []
+  for (let i = 0; i < s.grundsaetze.length; i += 2) paare.push(s.grundsaetze.slice(i, i + 2))
   return (
     <Page size="A4" style={seitenStil}>
       <Marke id="a4" marken={marken} />
       <KopfA t={t} klasse={klasse} p={p} />
       <SeitenTitel titel={s.titel} unter={s.einleitung} p={p} sprache={sprache} />
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginHorizontal: -5 }}>
-        {s.grundsaetze.map((g, i) => (
-          <View key={i} style={{ width: '50%', paddingHorizontal: 5, marginBottom: 10 }}>
-            <View style={{ borderTopWidth: 2.5, borderTopColor: p.tief, paddingTop: 6 }}>
-              <Fett groesse={9.6}>{ty(g.titel, sprache)}</Fett>
-              <Absatz groesse={8.8} style={{ lineHeight: 1.42, marginTop: 2 }}>
-                {ty(g.text, sprache)}
-              </Absatz>
+      {paare.map((paar, pi) => (
+        <View key={pi} wrap={false} style={{ flexDirection: 'row', marginHorizontal: -5 }}>
+          {paar.map((g, i) => (
+            <View key={i} style={{ width: '50%', paddingHorizontal: 5, marginBottom: eng ? 6 : 10 }}>
+              <View style={{ borderTopWidth: 2.5, borderTopColor: p.tief, paddingTop: 6 }}>
+                <Fett groesse={9.6}>{ty(g.titel, sprache)}</Fett>
+                <Absatz groesse={8.8} style={{ lineHeight: 1.42, marginTop: 2 }}>
+                  {ty(g.text, sprache)}
+                </Absatz>
+              </View>
             </View>
+          ))}
+        </View>
+      ))}
+      <View wrap={false}>
+        <View style={{ flexDirection: 'row', marginTop: eng ? 2 : 6 }}>
+          <View wrap={false} style={{ flex: 1.15, backgroundColor: ROT_ZART, borderRadius: 10, padding: eng ? 10 : 12, borderLeftWidth: 3, borderLeftColor: ROT }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 11, color: '#8A3A24', marginBottom: eng ? 5 : 6 }}>{ty(s.anvertrauen.titel, sprache)}</Text>
+            {s.anvertrauen.schritte.map((x, i) => (
+              <View key={i} style={{ flexDirection: 'row', marginBottom: eng ? 3.5 : 5 }}>
+                <View style={{ width: 16, height: 16, borderRadius: 8, backgroundColor: ROT, alignItems: 'center', justifyContent: 'center', marginRight: 8 }}>
+                  <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8, color: '#FFFFFF' }}>{String(i + 1)}</Text>
+                </View>
+                <View style={{ flex: 1 }}>
+                  <Absatz groesse={9}>{ty(x, sprache)}</Absatz>
+                </View>
+              </View>
+            ))}
           </View>
-        ))}
-      </View>
-      <View style={{ flexDirection: 'row', marginTop: 6 }}>
-        <View wrap={false} style={{ flex: 1.15, backgroundColor: ROT_ZART, borderRadius: 10, padding: 12, borderLeftWidth: 3, borderLeftColor: ROT }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 11, color: '#8A3A24', marginBottom: 6 }}>{ty(s.anvertrauen.titel, sprache)}</Text>
-          {s.anvertrauen.schritte.map((x, i) => (
-            <View key={i} style={{ flexDirection: 'row', marginBottom: 5 }}>
-              <View style={{ width: 16, height: 16, borderRadius: 8, backgroundColor: ROT, alignItems: 'center', justifyContent: 'center', marginRight: 8 }}>
-                <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8, color: '#FFFFFF' }}>{String(i + 1)}</Text>
+          <View style={{ width: 12 }} />
+          <View wrap={false} style={{ flex: 1, borderWidth: 1, borderColor: p.mittel, borderRadius: 10, padding: eng ? 10 : 12 }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 11, color: p.tief, marginBottom: 4 }}>{ty(s.hilfe.titel, sprache)}</Text>
+            <Absatz groesse={8.8} farbe={NEUTRAL.leise}>
+              {ty(s.hilfe.text, sprache)}
+            </Absatz>
+            {s.hilfe.nummern.map((n, i) => (
+              <View key={i} style={{ flexDirection: 'row', justifyContent: 'space-between', borderTopWidth: i ? 0.6 : 0, borderTopColor: NEUTRAL.haarlinie, paddingVertical: 4, marginTop: i ? 0 : 4 }}>
+                <Absatz groesse={8.4} style={{ flex: 1, paddingRight: 6, lineHeight: 1.3 }}>
+                  {ty(n.name, sprache)}
+                </Absatz>
+                <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text }}>{n.nummer}</Text>
               </View>
-              <View style={{ flex: 1 }}>
-                <Absatz groesse={9}>{ty(x, sprache)}</Absatz>
-              </View>
-            </View>
-          ))}
+            ))}
+          </View>
         </View>
-        <View style={{ width: 12 }} />
-        <View wrap={false} style={{ flex: 1, borderWidth: 1, borderColor: p.mittel, borderRadius: 10, padding: 12 }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 11, color: p.tief, marginBottom: 4 }}>{ty(s.hilfe.titel, sprache)}</Text>
-          <Absatz groesse={8.8} farbe={NEUTRAL.leise}>
-            {ty(s.hilfe.text, sprache)}
-          </Absatz>
-          {s.hilfe.nummern.map((n, i) => (
-            <View key={i} style={{ flexDirection: 'row', justifyContent: 'space-between', borderTopWidth: i ? 0.6 : 0, borderTopColor: NEUTRAL.haarlinie, paddingVertical: 4, marginTop: i ? 0 : 4 }}>
-              <Absatz groesse={8.4} style={{ flex: 1, paddingRight: 6, lineHeight: 1.3 }}>
-                {ty(n.name, sprache)}
-              </Absatz>
-              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text }}>{n.nummer}</Text>
-            </View>
-          ))}
-        </View>
-      </View>
-      <View wrap={false} style={{ marginTop: 14, flexDirection: 'row', backgroundColor: p.zart, borderRadius: 9, padding: 11, paddingLeft: 12 }}>
-        <View style={{ width: 3, borderRadius: 2, backgroundColor: p.tief, marginRight: 10 }} />
-        <View style={{ flex: 1 }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: p.tief, marginBottom: 3 }}>{ty(s.noten.titel, sprache)}</Text>
-          <Absatz groesse={9}>{ty(s.noten.text, sprache)}</Absatz>
+        <View wrap={false} style={{ marginTop: eng ? 8 : 14, flexDirection: 'row', backgroundColor: p.zart, borderRadius: 9, padding: 11, paddingLeft: 12 }}>
+          <View style={{ width: 3, borderRadius: 2, backgroundColor: p.tief, marginRight: 10 }} />
+          <View style={{ flex: 1 }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: p.tief, marginBottom: 3 }}>{ty(s.noten.titel, sprache)}</Text>
+            <Absatz groesse={9}>{ty(s.noten.text, sprache)}</Absatz>
+          </View>
         </View>
       </View>
       <Fuss links={FACH.name} titel={ty(s.titel, sprache)} sprache={sprache} />
@@ -1368,13 +1390,7 @@ export function EinheitSeiten({ e, plan, sprache, blaetter, seiten, marken, heft
   const p = stufenPalette(plan.klasse)
   const vorlageSeite = (id: string) => seiteVon(seiten, vorlageId(id))
   /** Blätter im Schülerheft zeigen die Heftseite, Kopiervorlagen für die Lehrkraft die Seite im Handbuch */
-  const verweis = (id?: string): string | undefined => {
-    if (!id) return undefined
-    const h = e.blaetter.includes(id) ? heft?.get(id) : undefined
-    if (h) return t.heftKurz(h)
-    const v = vorlageSeite(id)
-    return v ? t.vorlageSeite(v) : undefined
-  }
+  const verweis = (id?: string): string | undefined => blattVerweis(e, id, t, heft, seiten)
   const blattZuZeile = (i: number): string | undefined => (x.ablauf.length === x.schritte.length ? x.schritte[i]?.blatt : undefined)
   const alleBlaetter = [...e.blaetter, ...(e.vorlagen ?? [])]
   return (
@@ -1541,6 +1557,242 @@ export function EinheitSeiten({ e, plan, sprache, blaetter, seiten, marken, heft
         </View>
       ) : null}
       <Fuss links={FACH.name} titel={`${t.einheit} ${pe.nr} · ${ty(x.titel, sprache)}`} sprache={sprache} />
+    </Page>
+  )
+}
+
+// --- Spickzettel (Ausgabe annexe) ----------------------------------------------------------------------------------------
+
+/** Wörter, nach denen ein Punkt keinen Satz beendet („z. B.“, „Min.“ …) */
+const KUERZEL = /(?:^|[\s(„“‚])(?:z|B|bzw|ca|etc|ggf|evtl|usw|vgl|Nr|S|Min|Std|inkl|max|mind|u|a|d|h|Dr)$/
+
+/** Die Sätze eines Texts: nach Punkt, Frage- oder Ausrufezeichen folgt ein Großbuchstabe */
+function saetze(text: string): string[] {
+  const s = text.replace(/\s+/g, ' ').trim()
+  const liste: string[] = []
+  let start = 0
+  for (const m of s.matchAll(/[.!?…]+[“‘’”)]*(?=\s+[„‚(]?[A-ZÄÖÜ])/g)) {
+    const i = m.index ?? 0
+    if (m[0].startsWith('.') && KUERZEL.test(s.slice(0, i))) continue
+    liste.push(s.slice(start, i + m[0].length).trim())
+    start = i + m[0].length
+  }
+  if (start < s.length) liste.push(s.slice(start).trim())
+  return liste
+}
+
+/** Höchstens `max` Zeichen: so viele ganze Sätze wie passen, sonst bis zum letzten ganzen Wort und „…“ */
+function kuerze(text: string, max: number): { text: string; gekuerzt: boolean } {
+  const s = text.replace(/\s+/g, ' ').trim()
+  if (s.length <= max) return { text: s, gekuerzt: false }
+  let ganz = ''
+  for (const satz of saetze(s)) {
+    const neu = ganz ? `${ganz} ${satz}` : satz
+    if (neu.length > max) break
+    ganz = neu
+  }
+  if (ganz) return { text: ganz, gekuerzt: true }
+  const wort = s
+    .slice(0, max - 2)
+    .replace(/\s+\S*$/, '')
+    .replace(/[\s,;:–-]+$/, '')
+  return { text: `${wort} …`, gekuerzt: true }
+}
+
+/**
+ * Wie stark der Spickzettel gekürzt wird: höchstens so viele Zeichen für den ersten Impuls je Schritt und für den Kasten
+ * „Achtung“, höchstens so viele Zeilen für Titel und Impuls, dazu der Abstand zwischen den Zeilen des Minutenplans.
+ * Es gilt die erste Stufe, bei der die Seite (geschätzt, siehe spickHoehe) nicht voll wird.
+ */
+const SPICK_STUFEN = [
+  { impuls: 160, achtung: 1000, titelZeilen: 2, impulsZeilen: 3, achtungZeilen: 12, polster: 4 },
+  { impuls: 120, achtung: 600, titelZeilen: 2, impulsZeilen: 2, achtungZeilen: 8, polster: 4 },
+  { impuls: 90, achtung: 400, titelZeilen: 2, impulsZeilen: 2, achtungZeilen: 6, polster: 3.5 },
+  { impuls: 60, achtung: 220, titelZeilen: 1, impulsZeilen: 1, achtungZeilen: 3, polster: 2.5 },
+] as const
+
+interface SpickZeile {
+  von: number
+  bis: number
+  schritt: Schritt
+  impuls: string
+  /** „sagen“ und „punkt“ stehen im Text der Einheit, „text“ ist der Ersatz, wenn ein Schritt beides nicht hat */
+  art: 'sagen' | 'punkt' | 'text'
+  verweis?: string
+}
+
+/**
+ * Der erste Impuls eines Schritts: der erste Satz aus „sagen“ (wie im Skills-Kurs: der erste Eintrag, gekürzt auf ganze Sätze),
+ * sonst der erste Punkt, sonst der erste Satz der Anleitung (z. B. bei der Pause).
+ */
+function spickImpuls(s: Schritt, max: number, t: FachTx, sprache: Sprache): Pick<SpickZeile, 'impuls' | 'art'> {
+  const [auf, zu] = t.anf
+  const blank = sprache === 'fr' ? ' ' : ''
+  if (s.sagen?.[0]) return { impuls: `${auf}${blank}${kuerze(s.sagen[0], max - 2).text}${blank}${zu}`, art: 'sagen' }
+  if (s.punkte?.[0]) return { impuls: kuerze(s.punkte[0], max).text, art: 'punkt' }
+  return { impuls: kuerze(saetze(s.text)[0] ?? s.text, max).text, art: 'text' }
+}
+
+/** Die Texte des Spickzettels bei einer Kürzungsstufe */
+function spickDaten(e: Einheit, sprache: Sprache, stufe: number, verweis: (id?: string) => string | undefined) {
+  const t = TX[sprache]
+  const x = e[sprache]
+  const mass = SPICK_STUFEN[stufe]
+  let min = 0
+  const zeilen: SpickZeile[] = x.schritte.map((s) => {
+    const von = min
+    min += s.dauer
+    return { von, bis: min, schritt: s, ...spickImpuls(s, mass.impuls, t, sprache), verweis: verweis(s.blatt) }
+  })
+  const achtung = x.achtung ? kuerze(x.achtung, mass.achtung) : undefined
+  return { zeilen, achtung }
+}
+
+/** Maße des Spickzettels in pt – für die Schätzung der Höhe (spickHoehe), am gesetzten Blatt abgeglichen */
+const SP = {
+  /** nutzbare Höhe unter der Kopfzeile: 842 − 30 (oben) − 56 (unten) − 30 (Kopfzeile) = 726, abzüglich 20 Reserve */
+  platz: 706,
+  /** Zeichenbreite als Anteil der Schriftgröße (Inter, deutscher Text) – eher großzügig geschätzt */
+  zeichen: 0.55,
+  /** Titelzeile (Nummer), Unterzeile, Kästen und Abstände ohne Text */
+  fest: 194,
+  spalteSchritt: 142,
+  spalteImpuls: 300,
+  spalteMaterial: 228,
+}
+
+/** Geschätzte Höhe des Spickzettels in pt: Passt sie nicht auf die Seite, kürzt SpickzettelSeite eine Stufe mehr. */
+function spickHoehe(e: Einheit, sprache: Sprache, hinweis: string | undefined, d: ReturnType<typeof spickDaten>, stufe: number): number {
+  const x = e[sprache]
+  const mass = SPICK_STUFEN[stufe]
+  const zeilen = (text: string, breite: number, groesse: number) => Math.max(1, Math.ceil(text.length / Math.floor(breite / (groesse * SP.zeichen))))
+  const titel = (Math.min(2, zeilen(x.titel, BREITE - 76, 20)) - 1) * 23
+  const hinweisH = hinweis ? 3 + Math.min(2, zeilen(hinweis, BREITE, 8.4)) * 10.9 : 0
+  const tabelle = d.zeilen.reduce((h, z) => h + 2 * mass.polster + 0.5 + Math.max(10.5 + Math.min(mass.titelZeilen, zeilen(z.schritt.titel, SP.spalteSchritt, 8.8)) * 11.5, Math.min(mass.impulsZeilen, zeilen(z.impuls, SP.spalteImpuls, 8.6)) * 11.4), 0)
+  const spalte = (liste: string[]) => liste.reduce((h, m) => h + Math.min(2, zeilen(m, SP.spalteMaterial, 8.4)) * 10.9 + 3, 0)
+  const halb = Math.ceil(x.material.length / 2)
+  const material = Math.max(spalte(x.material.slice(0, halb)), spalte(x.material.slice(halb)))
+  const achtung = d.achtung ? Math.min(mass.achtungZeilen, zeilen(d.achtung.text + (d.achtung.gekuerzt ? ' (ganz: S. 188)' : ''), BREITE - 30, 8.6)) * 11.7 : 0
+  const mission = x.mission ? Math.min(2, zeilen(x.mission, BREITE - 45, 9.4)) * 13.2 : 0
+  return SP.fest + titel + hinweisH + tabelle + material + achtung + mission
+}
+
+/**
+ * Spickzettel: eine Seite für die Hand der Leitung vor jeder Einheit (nur Ausgabe annexe) – wie im Skills-Kurs der App:
+ * Kopf mit Nummer und Titel, Minutenplan (von–bis, Phase, Titel) mit dem ersten Impuls je Schritt, Material zum Abhaken,
+ * Kasten „Achtung“ (gekürzt, wenn nötig, mit Verweis auf die Übersicht) und die Wochen-Mission.
+ * Genau eine Seite: Die Texte werden so weit gekürzt, dass sie (geschätzt) passen, `maxLines` fängt den Rest ab. Die Marken
+ * `sp-<id>` (Anfang) und `spe-<id>` (Ende) zeigen dem Skript, ob es wirklich bei einer Seite blieb.
+ */
+export function SpickzettelSeite({ e, plan, sprache, seiten, marken, heft }: { e: Einheit; plan: Jahresplan; sprache: Sprache; seiten?: Marken; marken?: Marken; heft?: Marken }) {
+  const t = TX[sprache]
+  const x = e[sprache]
+  const pe = plan.einheiten.find((u) => u.id === e.id)!
+  const kap = plan.kapitel.find((k) => k.id === pe.kapitel)!
+  const p = stufenPalette(plan.klasse)
+  const nr = nummernVon(pe)
+  const hinweis = pe.hinweis ? `! ${ty(pe.hinweis[sprache], sprache)}` : undefined
+  const uebersicht = seiteVon(seiten, `c-${e.id}`)
+  const verweis = (id?: string) => blattVerweis(e, id, t, heft, seiten)
+  // so wenig kürzen wie möglich
+  let stufe = 0
+  let d = spickDaten(e, sprache, stufe, verweis)
+  while (stufe < SPICK_STUFEN.length - 1 && spickHoehe(e, sprache, hinweis, d, stufe) > SP.platz) d = spickDaten(e, sprache, ++stufe, verweis)
+  const mass = SPICK_STUFEN[stufe]
+  const halb = Math.ceil(x.material.length / 2)
+  const text = (groesse: number, extra?: Record<string, unknown>) => ({ fontFamily: SCHRIFT.jugend, fontSize: groesse, lineHeight: 1.32, color: NEUTRAL.text, ...extra })
+  return (
+    <Page size="A4" style={seitenStil}>
+      <Marke id={`sp-${e.id}`} marken={marken} />
+      <Kopf reiter={t.spickzettel} meta={`${FACH.name}  ·  ${plan.klasse}  ·  ${t.kapitel} ${kap.nr} · ${ty(kap.titel[sprache], sprache)}`} p={p} />
+      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <View style={{ minWidth: 46, height: 46, paddingHorizontal: nr.length > 2 ? 7 : 0, borderRadius: 11, backgroundColor: p.tief, alignItems: 'center', justifyContent: 'center', marginRight: 13 }}>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: nr.length > 2 ? 17 : 24, color: '#FFFFFF' }}>{nr}</Text>
+        </View>
+        <View style={{ flex: 1 }}>
+          <Kleinlabel farbe={p.tief}>{`${t.einheit} ${nr} · ${e.dauer} ${t.min}`}</Kleinlabel>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 20, lineHeight: 1.15, color: NEUTRAL.text, letterSpacing: -0.3, marginTop: 3, maxLines: 2, textOverflow: 'ellipsis' }}>{ty(x.titel, sprache)}</Text>
+        </View>
+      </View>
+      <Text style={text(8.6, { color: NEUTRAL.leise, marginTop: 6 })}>{t.spickUnter(uebersicht)}</Text>
+      {hinweis ? <Text style={text(8.4, { fontWeight: 600, lineHeight: 1.3, color: ROT, marginTop: 3, maxLines: 2, textOverflow: 'ellipsis' })}>{hinweis}</Text> : null}
+
+      {/* Minutenplan: von–bis, Phase und Titel, erster Impuls */}
+      <View style={{ marginTop: 12 }}>
+        <View style={{ flexDirection: 'row', alignItems: 'flex-end', paddingBottom: 3, borderBottomWidth: 1.2, borderBottomColor: p.tief }}>
+          <Kleinlabel farbe={p.tief} style={{ width: 44 }}>
+            {t.min}
+          </Kleinlabel>
+          <Kleinlabel farbe={p.tief} style={{ width: SP.spalteSchritt + 10 }}>
+            {t.schritt}
+          </Kleinlabel>
+          <Kleinlabel farbe={p.tief} style={{ flex: 1 }}>
+            {t.impuls}
+          </Kleinlabel>
+        </View>
+        {d.zeilen.map((z, i) => {
+          const ph = PHASEN[z.schritt.phase]
+          return (
+            <View key={i} wrap={false} style={{ flexDirection: 'row', paddingVertical: mass.polster, borderBottomWidth: i < d.zeilen.length - 1 ? 0.5 : 0, borderBottomColor: NEUTRAL.haarlinie }}>
+              <Text style={{ width: 44, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9, color: NEUTRAL.text }}>{`${z.von}–${z.bis}`}</Text>
+              <View style={{ width: SP.spalteSchritt + 10, paddingRight: 10 }}>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                  <View style={{ width: 6, height: 6, borderRadius: 3, backgroundColor: ph.farbe, marginRight: 4 }} />
+                  <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: 6.6, letterSpacing: 0.5, color: ph.farbe }}>{versal(ph.name[sprache])}</Text>
+                  <HeftVerweis text={z.verweis} p={p} />
+                </View>
+                <Text style={text(8.8, { fontWeight: 600, lineHeight: 1.3, marginTop: 1, maxLines: mass.titelZeilen, textOverflow: 'ellipsis' })}>{ty(z.schritt.titel, sprache)}</Text>
+              </View>
+              <Text style={text(8.6, { flex: 1, color: z.art === 'text' ? NEUTRAL.leise : NEUTRAL.text, maxLines: mass.impulsZeilen, textOverflow: 'ellipsis' })}>{ty(z.impuls, sprache)}</Text>
+            </View>
+          )
+        })}
+      </View>
+
+      {/* Material zum Abhaken, in zwei Spalten */}
+      {x.material.length ? (
+        <View wrap={false} style={{ marginTop: 14 }}>
+          <Kleinlabel style={{ marginBottom: 4 }}>{t.material}</Kleinlabel>
+          <View style={{ flexDirection: 'row' }}>
+            {[x.material.slice(0, halb), x.material.slice(halb)].map((liste, s) => (
+              <View key={s} style={{ flex: 1, marginLeft: s ? 16 : 0 }}>
+                {liste.map((m, i) => (
+                  <View key={i} wrap={false} style={{ flexDirection: 'row', marginBottom: 3 }}>
+                    <View style={{ width: 8, height: 8, borderWidth: 0.9, borderColor: NEUTRAL.leise, borderRadius: 1.5, marginTop: 1.8, marginRight: 6, backgroundColor: '#FFFFFF' }} />
+                    <Text style={text(8.4, { flex: 1, lineHeight: 1.3, maxLines: 2, textOverflow: 'ellipsis' })}>{ty(m, sprache)}</Text>
+                  </View>
+                ))}
+              </View>
+            ))}
+          </View>
+        </View>
+      ) : null}
+
+      {d.achtung ? (
+        <View wrap={false} style={{ marginTop: 12, backgroundColor: ROT_ZART, borderLeftWidth: 3, borderLeftColor: ROT, borderRadius: 7, padding: 9 }}>
+          <Kleinlabel farbe="#8A3A24" style={{ marginBottom: 2 }}>
+            {t.achtung}
+          </Kleinlabel>
+          <Text style={text(8.6, { lineHeight: 1.36, maxLines: mass.achtungZeilen, textOverflow: 'ellipsis' })}>{ty(d.achtung.gekuerzt ? `${d.achtung.text} (${t.gekuerzt(uebersicht)})` : d.achtung.text, sprache)}</Text>
+        </View>
+      ) : null}
+
+      {x.mission ? (
+        <View wrap={false} style={{ marginTop: 8, borderWidth: 0.9, borderColor: WARM, borderRadius: 9, padding: 9, flexDirection: 'row' }}>
+          <View style={{ width: 3, borderRadius: 2, backgroundColor: WARM, marginRight: 9 }} />
+          <View style={{ flex: 1 }}>
+            <View style={{ flexDirection: 'row', alignItems: 'flex-end', marginBottom: 2 }}>
+              <Kleinlabel farbe={NEUTRAL.tinte} style={{ flex: 1 }}>
+                {t.mission}
+              </Kleinlabel>
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, color: NEUTRAL.leise }}>{t.missionVerweis(heft?.get(`m${kap.trimester}`))}</Text>
+            </View>
+            <Text style={text(9.4, { lineHeight: 1.4, maxLines: 2, textOverflow: 'ellipsis' })}>{ty(x.mission, sprache)}</Text>
+          </View>
+        </View>
+      ) : null}
+      <Marke id={`spe-${e.id}`} marken={marken} fliess />
+      <Fuss links={FACH.name} titel={`${t.spickzettel} · ${t.einheit} ${nr} · ${ty(x.titel, sprache)}`} sprache={sprache} />
     </Page>
   )
 }
@@ -1829,6 +2081,8 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
               ...imKapitel.map((e) => {
                 const nr = plan.einheiten.find((u) => u.id === e.id)!.nr
                 return [
+                  // Ausgabe annexe: vor jeder Einheit der Spickzettel (eine Seite für die Hand der Leitung)
+                  ...(AUSGABE.art === 'annexe' ? [<SpickzettelSeite key={`${e.id}-sp`} e={e} plan={plan} sprache={sprache} seiten={seiten} marken={marken} heft={heft} />] : []),
                   <EinheitSeiten key={e.id} e={e} plan={plan} sprache={sprache} blaetter={daten.blaetter} seiten={seiten} marken={marken} heft={heft} fliessend={fliessen?.has(e.id)} karte={daten.karten?.[klasse]?.find((k) => k.einheit === e.id)} />,
                   <VorlagenSeiten
                     key={`${e.id}-v`}

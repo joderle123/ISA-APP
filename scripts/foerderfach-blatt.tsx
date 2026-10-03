@@ -4,6 +4,8 @@
 // Ausgabe: tmp/foerderfach-blatt/<blatt-id>_<de|fr>.pdf (mit --png zusätzlich jede Seite als Bild).
 // Mehr als zwei Seiten sind ein Fehler (Exit-Code 1).
 // --ausgabe=annexe: Blätter der Annexe (Ids a7-…), nur Deutsch, „Annexe“ in Kopf und Fuß (siehe scripts/foerderfach-ausgabe.ts).
+// Statt eines Entwurfs geht auch eine Liste von Blättern, z. B. die Werkzeug-Blätter der Annexe:
+//   npm run foerderfach:blatt -- --ausgabe=annexe src/data/foerderfach/annexe/werkzeuge.json --png
 import { Document, renderToFile } from '@react-pdf/renderer'
 import { mkdirSync, readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -13,6 +15,7 @@ import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { BlattSeiten } from '../src/blatt/pdf/BlattDokument'
 import { FACH, STUFE_FARBEN, TX } from '../src/foerderfach/fach'
 import { klasseVonId, ladeEntwurf, waehleAusgabeAus } from './foerderfach-ausgabe'
+import type { Blatt } from '../src/blatt/typen'
 import type { Sprache } from '../src/foerderfach/typen'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
@@ -29,7 +32,9 @@ function seitenzahl(datei: string): number {
 
 for (const datei of args.filter((a) => a.endsWith('.json'))) {
   const d = ladeEntwurf(datei, wahl)
-  for (const b of d.blaetter ?? []) {
+  // Entwurf { einheiten, blaetter } oder eine Liste von Blättern (annexe/werkzeuge.json)
+  const blaetter = Array.isArray(d) ? (d as unknown as Blatt[]) : (d.blaetter ?? [])
+  for (const b of blaetter) {
     const klasse = klasseVonId(wahl, b.id) ?? '7e'
     for (const sprache of (wahl.annexe ? ['de'] : ['de', 'fr']) as Sprache[]) {
       const t = TX[sprache]

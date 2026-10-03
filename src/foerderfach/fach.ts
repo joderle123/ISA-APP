@@ -16,6 +16,7 @@ export const FACH = {
   /** Zusatz der Ausgabe („Annexe“), sonst leer */
   zusatz: '',
   untertitel: { de: 'Sozio-emotionales Lernen', fr: 'Apprentissage socio-émotionnel' } as Zweisprachig,
+  /** Zeile über dem Titel auf Deckblatt und Rückseite – in der Ausgabe annexe „Annexe des CDSE · Kleingruppen“ */
   voie: { de: 'Voie de préparation', fr: 'Voie de préparation' } as Zweisprachig,
 }
 
@@ -138,11 +139,19 @@ export const TX = {
     kapitelEnde: (k: string) => `Am Ende des Kapitels: ${k}`,
     /** Theoretische Grundlagen: wo die Theorie im Fach steckt */
     imFach: 'Im Fach',
-    /** Fragebogen und Auswertungsbogen */
+    /** Fragebogen und Auswertungsbogen (in der Ausgabe annexe: Kopf des Vergleichsbogens mit „Name“ und „Datum“) */
     aussage: 'Aussage',
     nr: 'Nr.',
     klasseFeld: 'Klasse',
     schuljahrFeld: 'Schuljahr',
+    /** Reiter über dem ersten Blatt im Schülerheft (Ausgabe annexe: „Der Kurs“) */
+    reiterErstes: 'Das Fach',
+    /** Spickzettel (nur Ausgabe annexe): eine Seite für die Hand der Leitung vor jeder Einheit */
+    spickzettel: 'Spickzettel',
+    spickUnter: (s?: number) => `Eine Seite für die Hand der Leitung${s ? ` · alles Ausführliche ab S. ${s}` : ''}`,
+    schritt: 'Schritt',
+    impuls: 'Erster Impuls',
+    gekuerzt: (s?: number) => (s ? `ganz: S. ${s}` : 'gekürzt'),
   },
   fr: {
     lehrerhandbuch: 'Guide de l’enseignant',
@@ -222,6 +231,12 @@ export const TX = {
     nr: 'N°',
     klasseFeld: 'Classe',
     schuljahrFeld: 'Année scolaire',
+    reiterErstes: 'La matière',
+    spickzettel: 'Aide-mémoire',
+    spickUnter: (s?: number) => `Une page à garder en main${s ? ` · détails dès la p. ${s}` : ''}`,
+    schritt: 'Étape',
+    impuls: 'Première phrase',
+    gekuerzt: (s?: number) => (s ? `complet : p. ${s}` : 'abrégé'),
   },
 } satisfies Record<Sprache, Record<string, unknown>>
 
@@ -231,15 +246,24 @@ export type FachTx = (typeof TX)['de']
  * Zwei Ausgaben aus derselben Technik: „klassen“ = Förderfach für Klassen (Standard, Deutsch und Französisch),
  * „annexe“ = Skills-Kurs der Annexe (Leitungsheft statt Lehrerhandbuch, nur Deutsch, Daten in src/data/foerderfach/annexe).
  * Die PDF-Skripte rufen waehleAusgabe einmal auf, bevor sie setzen: Danach tragen Deckblatt, Kopf, Fuß und
- * Dokumenttitel den Zusatz, und die Hefte lassen aus, was es nur zweisprachig gibt.
+ * Dokumenttitel den Zusatz, die Zeile über dem Titel heißt „Annexe des CDSE · Kleingruppen“ (statt „Voie de préparation“),
+ * der Vergleichsbogen trägt „Name“ und „Datum“ (statt „Klasse“ und „Schuljahr“), und die Hefte lassen aus, was es nur zweisprachig gibt.
  */
 export type Ausgabe = 'klassen' | 'annexe'
 
 /** Die gewählte Ausgabe. `einsprachig`: Elternbrief und Fragebogen nur in der Heftsprache, Wortspeicher ohne Übersetzung, kein Glossar. */
 export const AUSGABE = { art: 'klassen' as Ausgabe, einsprachig: false }
 
-const TX_KLASSEN = { lehrerhandbuch: TX.de.lehrerhandbuch, fuerLehrkraft: TX.de.fuerLehrkraft }
-const TX_ANNEXE = { lehrerhandbuch: 'Leitungsheft', fuerLehrkraft: 'Kopiervorlage für die Leitung' }
+const VOIE_KLASSEN: Zweisprachig = { ...FACH.voie }
+const VOIE_ANNEXE: Zweisprachig = { de: 'Annexe des CDSE · Kleingruppen', fr: 'Annexe du CDSE · petits groupes' }
+const TX_KLASSEN = {
+  lehrerhandbuch: TX.de.lehrerhandbuch,
+  fuerLehrkraft: TX.de.fuerLehrkraft,
+  klasseFeld: TX.de.klasseFeld,
+  schuljahrFeld: TX.de.schuljahrFeld,
+  reiterErstes: TX.de.reiterErstes,
+}
+const TX_ANNEXE = { lehrerhandbuch: 'Leitungsheft', fuerLehrkraft: 'Kopiervorlage für die Leitung', klasseFeld: 'Name', schuljahrFeld: 'Datum', reiterErstes: 'Der Kurs' }
 
 export function waehleAusgabe(art: Ausgabe): void {
   const annexe = art === 'annexe'
@@ -247,6 +271,7 @@ export function waehleAusgabe(art: Ausgabe): void {
   AUSGABE.einsprachig = annexe
   FACH.zusatz = annexe ? 'Annexe' : ''
   FACH.name = annexe ? `${FACH.titel} · ${FACH.zusatz}` : FACH.titel
+  Object.assign(FACH.voie, annexe ? VOIE_ANNEXE : VOIE_KLASSEN)
   Object.assign(TX.de, annexe ? TX_ANNEXE : TX_KLASSEN)
 }
 

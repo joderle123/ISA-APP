@@ -9,7 +9,8 @@
 // bevor sie übernommen sind).
 // --ausgabe=annexe: der Skills-Kurs der Annexe statt des Förderfachs für Klassen – nur Deutsch, Leitungsheft
 // statt Lehrerhandbuch, Daten und Entwürfe aus src/data/foerderfach/annexe (siehe scripts/foerderfach-ausgabe.ts):
-// Skills-fir-d-Liewen_Annexe_7e_Leitungsheft.pdf und …_Schuelerheft.pdf. Teile ohne Texte oder Daten entfallen.
+// Skills-fir-d-Liewen_Annexe_7e_Leitungsheft.pdf und …_Schuelerheft.pdf. Teile ohne Texte oder Daten entfallen. Vor jeder
+// Einheit steht ein Spickzettel (eine Seite für die Hand der Leitung, Texte werden gekürzt); läuft einer doch über, meldet das ✗.
 // Jedes Heft wird zweimal gesetzt: Der erste Durchlauf sammelt die Seitenzahlen, der zweite setzt
 // sie ein (Inhalt, Jahresplan, Verweise) und füllt mit Notizseiten auf. Das Schülerheft kommt
 // zuerst – das Handbuch verweist auf seine Seiten.
@@ -183,12 +184,18 @@ for (const klasse of KLASSEN.filter((k) => !nur || k === nur)) {
     const m2 = new Map<string, number>()
     await renderToFile(<BookletDokument daten={daten} klasse={klasse} sprache={sprache} marken={m2} seiten={seiten} heft={heft} notizen={notizen} stand={stand(sprache)} fliessen={fliessen} />, datei)
     vergleiche(datei, seiten, m2)
+    // Ausgabe annexe: Jeder Spickzettel steht auf genau einer Seite (Anfang und Ende liegen auf derselben Seite)
+    const langeSpick = wahl.annexe ? eigene.filter((e) => m2.has(`sp-${e.id}`) && m2.get(`spe-${e.id}`) !== m2.get(`sp-${e.id}`)) : []
+    for (const e of langeSpick) {
+      console.error(`✗ ${datei}: Spickzettel von ${e.id} läuft über ${(m2.get(`spe-${e.id}`) ?? 0) - (m2.get(`sp-${e.id}`) ?? 0) + 1} Seiten`)
+      process.exitCode = 1
+    }
     const n = seitenzahl(datei)
     if (n % 4) {
       console.error(`✗ ${datei}: ${n} Seiten – kein Vielfaches von 4`)
       process.exitCode = 1
     }
-    console.log('✓', datei, `(${n} Seiten, ${notizen} Notizseiten, ${eigene.length} Einheiten)`)
+    console.log('✓', datei, `(${n} Seiten, ${notizen} Notizseiten, ${eigene.length} Einheiten${wahl.annexe ? `, ${eigene.length} Spickzettel` : ''})`)
     if (args.includes('--marken'))
       console.log(
         [...m2]

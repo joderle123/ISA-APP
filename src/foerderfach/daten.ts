@@ -30,14 +30,14 @@ export const SKILLKARTEN = skillkarten as SkillKartenDatei
 export const BLAETTER: Blatt[] = [werkzeugBlaetter, blaetter7e, blaetter6e, blaetter5e].flatMap((d) => d as Blatt[])
 export const blattById = new Map(BLAETTER.map((b) => [b.id, b]))
 
-/** Werkzeug-Blätter je Klassenstufe – Teil D des Lehrerhandbuchs („Kopiervorlagen für jede Stunde“). */
+/** Werkzeug-Blätter je Klassenstufe – Teil D des Lehrerhandbuchs („Kopiervorlagen für jede Stunde“). Für die Ausgabe annexe: WERKZEUGE_ANNEXE in scripts/foerderfach-ausgabe.ts. */
 export const WERKZEUGE: Record<Klasse, string[]> = {
   '7e': ['ff-das-fach', 'ff-gefuehlsrad', 'ff-skills-pass', 'ff-klassenvereinbarung', 'ff-anspannungsskala'],
   '6e': ['ff-das-fach', 'ff-gefuehlsrad', 'ff-anspannungsskala', 'ff-skills-pass', 'ff-klassenvereinbarung', 'ff-skills-kompass'],
   '5e': ['ff-das-fach', 'ff-gefuehlsrad', 'ff-anspannungsskala', 'ff-skills-pass', 'ff-klassenvereinbarung', 'ff-skills-buch'],
 }
 
-/** Blätter vorn im Schülerheft (vor den Blättern der Einheiten): Einstieg und was jede Stunde gebraucht wird. */
+/** Blätter vorn im Schülerheft (vor den Blättern der Einheiten): Einstieg und was jede Stunde gebraucht wird. Für die Ausgabe annexe: HEFT_VORN_ANNEXE. */
 export const HEFT_VORN: Record<Klasse, string[]> = {
   '7e': ['ff-das-fach', 'ff-gefuehlsrad', 'ff-skills-pass'],
   '6e': ['ff-das-fach', 'ff-gefuehlsrad', 'ff-anspannungsskala', 'ff-skills-pass', 'ff-skills-kompass'],

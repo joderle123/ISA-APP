@@ -196,7 +196,8 @@ deshalb meist Klebepunkt, Handzeichen, Aufstellen oder zwei, drei Freiwillige.
     bei Kernübungen 400–700.
   - `sagen`: 1–3 wörtliche Impulse an die Klasse, natürlich und jugendgerecht, ohne
     Anführungszeichen am Anfang und Ende (setzt das Programm). Die Klasse mit „ihr“ / « vous »
-    ansprechen.
+    ansprechen. (Ausgabe annexe: Der erste Impuls je Schritt – sonst der erste Punkt – steht auf dem Spickzettel der
+    Einheit; er sollte für sich verständlich sein.)
   - `punkte`: Listen, die die Lehrkraft vorliest oder anschreibt (Situationen, Sätze, Stationen,
     Regeln). Situationen immer ausformuliert, 4–8 Stück, aus dem Alltag der Jugendlichen.
   - `tabelle`: wenn ein Modell an die Tafel kommt (`{ "spalten": […], "zeilen": [[…]] }`).

@@ -2,7 +2,9 @@
 //   --ausgabe=annexe   Skills-Kurs der Annexe (Leitungsheft, nur Deutsch): Die Daten kommen aus
 //                      src/data/foerderfach/annexe (Pläne, Einheiten, Blätter, Handbuchtexte, Skill-Karten,
 //                      Entwürfe in annexe/entwurf), fehlende Dateien gelten als leer, fehlt „fr“, ist fr = de.
-//                      Die Werkzeug-Blätter (src/data/foerderfach/blaetter.json) sind für beide Ausgaben gleich.
+//                      Die Werkzeug-Blätter (src/data/foerderfach/blaetter.json) sind für beide Ausgaben gleich;
+//                      dazu kommen die eigenen der Annexe (annexe/werkzeuge.json: a-der-kurs, a-gruppenvertrag).
+//                      Welche Werkzeug-Blätter wo stehen, stellen WERKZEUGE_ANNEXE und HEFT_VORN_ANNEXE ein.
 //   --daten=<ordner>   nur mit annexe: anderer Datenordner, z. B. zum Testen unter tmp/
 // Ohne Option bleibt alles wie bisher (Förderfach für Klassen, Daten aus src/foerderfach/daten.ts).
 import { existsSync, readFileSync } from 'node:fs'
@@ -41,6 +43,25 @@ export function waehleAusgabeAus(args: string[]): AusgabeWahl {
   waehleAusgabe(art)
   const ordner = art === 'annexe' ? (daten ? resolve(daten) : join(DATEN, 'annexe')) : DATEN
   return { ausgabe: art, annexe: art === 'annexe', ordner, entwurf: join(ordner, 'entwurf') }
+}
+
+/**
+ * Werkzeug-Blätter der Ausgabe annexe je Klassenstufe – hier einstellen (für die Klassen: src/foerderfach/daten.ts):
+ *  WERKZEUGE_ANNEXE  Teil D des Leitungshefts („Kopiervorlagen für jede Stunde“), in dieser Reihenfolge
+ *  HEFT_VORN_ANNEXE  vorn im Schülerheft, vor den Blättern der Einheiten (und vor „Meine Wochen-Missionen“)
+ * Ids: ff-… aus src/data/foerderfach/blaetter.json (für beide Ausgaben gleich), a-… aus annexe/werkzeuge.json.
+ * Eine Id ohne Blatt wird übergangen. Statt „So funktioniert das Fach“ (ff-das-fach) und „Klassenvereinbarung“
+ * (ff-klassenvereinbarung) hat die Annexe „So läuft der Skills-Kurs“ (a-der-kurs) und „Unser Gruppenvertrag“ (a-gruppenvertrag).
+ */
+const WERKZEUGE_LISTE = ['a-der-kurs', 'ff-gefuehlsrad', 'ff-skills-pass', 'a-gruppenvertrag', 'ff-anspannungsskala']
+const HEFT_VORN_LISTE = ['a-der-kurs', 'ff-gefuehlsrad', 'ff-skills-pass', 'a-gruppenvertrag']
+export const WERKZEUGE_ANNEXE: Record<Klasse, string[]> = { '7e': [...WERKZEUGE_LISTE], '6e': [...WERKZEUGE_LISTE], '5e': [...WERKZEUGE_LISTE] }
+export const HEFT_VORN_ANNEXE: Record<Klasse, string[]> = { '7e': [...HEFT_VORN_LISTE], '6e': [...HEFT_VORN_LISTE], '5e': [...HEFT_VORN_LISTE] }
+
+/** Eigene Werkzeug-Blätter der Annexe: im Datenordner der Ausgabe, sonst (z. B. bei --daten=tmp/…) im Ordner der Annexe */
+function werkzeugDatei(wahl: AusgabeWahl): string {
+  const eigene = join(wahl.ordner, 'werkzeuge.json')
+  return existsSync(eigene) ? eigene : join(DATEN, 'annexe', 'werkzeuge.json')
 }
 
 /** Anfang der Ids einer Klassenstufe: ff7 (Förderfach für Klassen), a7 (Annexe) */
@@ -96,8 +117,12 @@ export function ladeDaten(wahl: AusgabeWahl): FachDaten {
   // Pläne gibt es nur für Klassenstufen mit Plandatei; ohne Plan wird die Stufe nicht gesetzt
   const PLAENE = KLASSEN.map((k) => liesAnnexe<Jahresplan | undefined>(datei(`plan-${k}.json`), undefined)).filter((p): p is Jahresplan => !!p)
   const karten = liesAnnexe<Partial<SkillKartenDatei>>(datei('skillkarten.json'), {})
-  // Werkzeug-Blätter (für jede Stunde) gelten für beide Ausgaben; dazu kommen die Blätter der Einheiten
-  const BLAETTER = [liesAnnexe<Blatt[]>(join(DATEN, 'blaetter.json'), []), ...KLASSEN.map((k) => liesAnnexe<Blatt[]>(datei(`blaetter-${k}.json`), []))].flat()
+  // Werkzeug-Blätter (für jede Stunde) gelten für beide Ausgaben; dazu kommen die eigenen der Annexe und die Blätter der Einheiten
+  const BLAETTER = [
+    liesAnnexe<Blatt[]>(join(DATEN, 'blaetter.json'), []),
+    liesAnnexe<Blatt[]>(werkzeugDatei(wahl), []),
+    ...KLASSEN.map((k) => liesAnnexe<Blatt[]>(datei(`blaetter-${k}.json`), [])),
+  ].flat()
   return {
     PLAENE,
     planVon: (k) => PLAENE.find((p) => p.klasse === k),
@@ -106,8 +131,8 @@ export function ladeDaten(wahl: AusgabeWahl): FachDaten {
     SKILLKARTEN: { '7e': karten['7e'] ?? [], '6e': karten['6e'] ?? [], '5e': karten['5e'] ?? [] },
     BLAETTER,
     blattById: new Map(BLAETTER.map((b) => [b.id, b])),
-    WERKZEUGE: klassen.WERKZEUGE,
-    HEFT_VORN: klassen.HEFT_VORN,
-    VORLAGEN: klassen.VORLAGEN,
+    WERKZEUGE: WERKZEUGE_ANNEXE,
+    HEFT_VORN: HEFT_VORN_ANNEXE,
+    VORLAGEN: [...new Set(Object.values(WERKZEUGE_ANNEXE).flat())],
   }
 }
