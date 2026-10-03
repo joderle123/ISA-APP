@@ -1,0 +1,299 @@
+{
+  "klasse": "7e",
+  "titel": { "de": "Skills-Kurs Annexe · Ich, wir und die Welt", "fr": "Skills-Kurs Annexe · Ich, wir und die Welt" },
+  "untertitel": {
+    "de": "30 Doppelstunden in der Annexe für Gruppen bis drei: Gefühle verstehen, Skills üben, rausgehen, Filme besprechen",
+    "fr": "30 Doppelstunden in der Annexe für Gruppen bis drei: Gefühle verstehen, Skills üben, rausgehen, Filme besprechen"
+  },
+  "faden": {
+    "de": "Das erste Jahr des Skills-Kurses Annexe ist wie eine Treppe gebaut: vom Ich (Bedürfnisse, Stärken, Gefühle, Skills) über das Wir (Kommunikation, Grenzen, Konflikte, Mobbing) zur Welt (Handy und Netz, Gesundheit). Jede Person übt selbst, mit eigenem Glas, eigenem Baum und eigenem Skills-Koffer; rund jede dritte Stunde findet draußen statt oder ist ein Ausflug, rund jede fünfte arbeitet mit einem Film. Der Rahmen bleibt gleich: Check-in mit dem Gefühlsrad, Mission mit eigenem Moment, Skills-Pass; ab Einheit 10 kommt die Anspannungsskala von 0 bis 100 in jeden Check-in. Im zweiten Jahr werden die Skills alltagstauglich, im dritten geht es um den eigenen Weg.",
+    "fr": "Das erste Jahr des Skills-Kurses Annexe ist wie eine Treppe gebaut: vom Ich (Bedürfnisse, Stärken, Gefühle, Skills) über das Wir (Kommunikation, Grenzen, Konflikte, Mobbing) zur Welt (Handy und Netz, Gesundheit). Jede Person übt selbst, mit eigenem Glas, eigenem Baum und eigenem Skills-Koffer; rund jede dritte Stunde findet draußen statt oder ist ein Ausflug, rund jede fünfte arbeitet mit einem Film. Der Rahmen bleibt gleich: Check-in mit dem Gefühlsrad, Mission mit eigenem Moment, Skills-Pass; ab Einheit 10 kommt die Anspannungsskala von 0 bis 100 in jeden Check-in. Im zweiten Jahr werden die Skills alltagstauglich, im dritten geht es um den eigenen Weg."
+  },
+  "ziele": {
+    "kennen": {
+      "de": "benennen Gefühle mit dem Gefühlsrad genau und kennen ihre Bedürfnisse, ihre Stärken und ihren Baum der Stärke.",
+      "fr": "benennen Gefühle mit dem Gefühlsrad genau und kennen ihre Bedürfnisse, ihre Stärken und ihren Baum der Stärke."
+    },
+    "steuern": {
+      "de": "schätzen ihre Anspannung von 0 bis 100 ein und nutzen ihren Skills-Koffer mit Ampelplan – auch draußen und unter Druck.",
+      "fr": "schätzen ihre Anspannung von 0 bis 100 ein und nutzen ihren Skills-Koffer mit Ampelplan – auch draußen und unter Druck."
+    },
+    "verstehen": {
+      "de": "lesen Körpersprache, Gefühle und Grenzen anderer und unterscheiden Spaß, Streit und Mobbing.",
+      "fr": "lesen Körpersprache, Gefühle und Grenzen anderer und unterscheiden Spaß, Streit und Mobbing."
+    },
+    "miteinander": {
+      "de": "sagen in Ich-Botschaften, was sie brauchen, setzen Grenzen, klären Streit Schritt für Schritt und holen Hilfe.",
+      "fr": "sagen in Ich-Botschaften, was sie brauchen, setzen Grenzen, klären Streit Schritt für Schritt und holen Hilfe."
+    },
+    "entscheiden": {
+      "de": "sagen Nein bei Druck, prüfen Beiträge im Netz und planen kleine Schritte für sich mit Wenn-dann-Sätzen.",
+      "fr": "sagen Nein bei Druck, prüfen Beiträge im Netz und planen kleine Schritte für sich mit Wenn-dann-Sätzen."
+    }
+  },
+  "kapitel": [
+    {
+      "id": "a7-k1", "nr": 1, "trimester": 1, "bild": "icon:door-enter",
+      "titel": { "de": "Ankommen", "fr": "Ankommen" },
+      "leitfrage": { "de": "Wer sind wir als Gruppe?", "fr": "Wer sind wir als Gruppe?" },
+      "worum": {
+        "de": "Drei Jugendliche, eine Leitung und viel Freiraum: Zuerst entsteht der Rahmen mit Gruppenvertrag, Skills-Pass, Gefühlsrad und Regeln für draußen. Die Gruppe lernt sich in Spielen kennen und löst draußen Aufgaben, die nur zu dritt gelingen. Wer sich sicher fühlt, kann später auch über Schwieriges reden.",
+        "fr": "Drei Jugendliche, eine Leitung und viel Freiraum: Zuerst entsteht der Rahmen mit Gruppenvertrag, Skills-Pass, Gefühlsrad und Regeln für draußen. Die Gruppe lernt sich in Spielen kennen und löst draußen Aufgaben, die nur zu dritt gelingen. Wer sich sicher fühlt, kann später auch über Schwieriges reden."
+      }
+    },
+    {
+      "id": "a7-k2", "nr": 2, "trimester": 1, "bild": "icon:user",
+      "titel": { "de": "Wer bin ich?", "fr": "Wer bin ich?" },
+      "leitfrage": { "de": "Was brauche ich, was kann ich?", "fr": "Was brauche ich, was kann ich?" },
+      "worum": {
+        "de": "Bevor es um Gefühle geht, schaut jede Person auf sich selbst: Was brauche ich, damit es mir gut geht? Wie sehen mich die anderen? Was kann ich schon? Jede Person füllt ihr eigenes Glas der Bedürfnisse und baut ihren eigenen Baum der Stärke – beides begleitet die Gruppe durch das ganze Jahr.",
+        "fr": "Bevor es um Gefühle geht, schaut jede Person auf sich selbst: Was brauche ich, damit es mir gut geht? Wie sehen mich die anderen? Was kann ich schon? Jede Person füllt ihr eigenes Glas der Bedürfnisse und baut ihren eigenen Baum der Stärke – beides begleitet die Gruppe durch das ganze Jahr."
+      }
+    },
+    {
+      "id": "a7-k3", "nr": 3, "trimester": 1, "bild": "icon:mood-smile",
+      "titel": { "de": "Gefühle verstehen", "fr": "Gefühle verstehen" },
+      "leitfrage": { "de": "Was fühle ich – und wozu?", "fr": "Was fühle ich – und wozu?" },
+      "worum": {
+        "de": "Gefühle sind Signale, keine Störungen. Die Gruppe sammelt Gefühlswörter, stellt Gefühle nach und fotografiert sie, sieht im Film, wie Gefühle das Steuer übernehmen, und findet heraus, wo sie im Körper sitzen. Das ist die Grundlage für die Skills.",
+        "fr": "Gefühle sind Signale, keine Störungen. Die Gruppe sammelt Gefühlswörter, stellt Gefühle nach und fotografiert sie, sieht im Film, wie Gefühle das Steuer übernehmen, und findet heraus, wo sie im Körper sitzen. Das ist die Grundlage für die Skills."
+      }
+    },
+    {
+      "id": "a7-k4", "nr": 4, "trimester": 2, "bild": "icon:feather",
+      "titel": { "de": "Gefühle regulieren", "fr": "Gefühle regulieren" },
+      "leitfrage": { "de": "Was hilft mir, wenn es zu viel wird?", "fr": "Was hilft mir, wenn es zu viel wird?" },
+      "worum": {
+        "de": "Das Herzstück des Jahres: Mit der Anspannungsskala von 0 bis 100 lernt jede Person, welcher Skill bei welcher Zahl noch hilft. Die Skills werden wie Experimente getestet – Zahl vorher, Skill, Zahl nachher – im Park, in der Natur und an der Kletterwand. Am Ende hat jede Person ihren eigenen Skills-Koffer mit Ampelplan.",
+        "fr": "Das Herzstück des Jahres: Mit der Anspannungsskala von 0 bis 100 lernt jede Person, welcher Skill bei welcher Zahl noch hilft. Die Skills werden wie Experimente getestet – Zahl vorher, Skill, Zahl nachher – im Park, in der Natur und an der Kletterwand. Am Ende hat jede Person ihren eigenen Skills-Koffer mit Ampelplan."
+      }
+    },
+    {
+      "id": "a7-k5", "nr": 5, "trimester": 2, "bild": "icon:bulb",
+      "titel": { "de": "Meine Gedanken", "fr": "Meine Gedanken" },
+      "leitfrage": { "de": "Was denke ich über mich – und stimmt das?", "fr": "Was denke ich über mich – und stimmt das?" },
+      "worum": {
+        "de": "Zwischen Situation und Gefühl steht ein Gedanke. Die Gruppe sieht im Film, wie Sätze über sich selbst entstehen, prüft sie wie Detektive und testet neue Sätze im Alltag – ein Verhaltensexperiment statt langer Gedankenarbeit. Persönliches bleibt im Heft; geübt wird mit Figuren und in Spielen.",
+        "fr": "Zwischen Situation und Gefühl steht ein Gedanke. Die Gruppe sieht im Film, wie Sätze über sich selbst entstehen, prüft sie wie Detektive und testet neue Sätze im Alltag – ein Verhaltensexperiment statt langer Gedankenarbeit. Persönliches bleibt im Heft; geübt wird mit Figuren und in Spielen."
+      }
+    },
+    {
+      "id": "a7-k6", "nr": 6, "trimester": 2, "bild": "icon:message-circle",
+      "titel": { "de": "Kommunikation und Grenzen", "fr": "Kommunikation und Grenzen" },
+      "leitfrage": { "de": "Wie sage ich, was ich fühle und brauche?", "fr": "Wie sage ich, was ich fühle und brauche?" },
+      "worum": {
+        "de": "Wie sage ich, was ich fühle und brauche – ohne Vorwurf? Die Gruppe liest Körpersprache in einer fast wortlosen Filmszene, übt Ich-Botschaften und echtes Zuhören, spürt die eigene Wohlfühl-Distanz und probiert aus, wie man Stopp sagt: mit Worten, Stimme und Körper. Kurze Videos zeigen, wie es wirkt.",
+        "fr": "Wie sage ich, was ich fühle und brauche – ohne Vorwurf? Die Gruppe liest Körpersprache in einer fast wortlosen Filmszene, übt Ich-Botschaften und echtes Zuhören, spürt die eigene Wohlfühl-Distanz und probiert aus, wie man Stopp sagt: mit Worten, Stimme und Körper. Kurze Videos zeigen, wie es wirkt."
+      }
+    },
+    {
+      "id": "a7-k7", "nr": 7, "trimester": 3, "bild": "icon:shield",
+      "titel": { "de": "Wenn es schwierig wird", "fr": "Wenn es schwierig wird" },
+      "leitfrage": { "de": "Was tue ich bei Streit, Druck und Mobbing – und wer hilft?", "fr": "Was tue ich bei Streit, Druck und Mobbing – und wer hilft?" },
+      "worum": {
+        "de": "Streit, Gruppendruck und Mobbing gehören zum Alltag vieler Jugendlicher. Die Gruppe lernt die Konflikt-Treppe, übt Nein-Sagen unter Druck und unterscheidet Spaß, Konflikt und Mobbing; im Mittelpunkt stehen die Zuschauenden. Zum Schluss besucht sie eine Stelle, die Jugendlichen hilft, und übt den ersten Satz.",
+        "fr": "Streit, Gruppendruck und Mobbing gehören zum Alltag vieler Jugendlicher. Die Gruppe lernt die Konflikt-Treppe, übt Nein-Sagen unter Druck und unterscheidet Spaß, Konflikt und Mobbing; im Mittelpunkt stehen die Zuschauenden. Zum Schluss besucht sie eine Stelle, die Jugendlichen hilft, und übt den ersten Satz."
+      }
+    },
+    {
+      "id": "a7-k8", "nr": 8, "trimester": 3, "bild": "icon:device-mobile",
+      "titel": { "de": "Digitale Welt", "fr": "Digitale Welt" },
+      "leitfrage": { "de": "Was macht das Handy mit mir?", "fr": "Was macht das Handy mit mir?" },
+      "worum": {
+        "de": "Ohne erhobenen Zeigefinger: Die Gruppe vergleicht geschätzte und echte Bildschirmzeit, inszeniert ein perfektes Foto und deckt seine Tricks auf, sieht in Ausschnitten, wie Apps Aufmerksamkeit binden, und prüft, was echt ist und was gefälscht. Am Ende steht ein eigener Handy-Plan.",
+        "fr": "Ohne erhobenen Zeigefinger: Die Gruppe vergleicht geschätzte und echte Bildschirmzeit, inszeniert ein perfektes Foto und deckt seine Tricks auf, sieht in Ausschnitten, wie Apps Aufmerksamkeit binden, und prüft, was echt ist und was gefälscht. Am Ende steht ein eigener Handy-Plan."
+      }
+    },
+    {
+      "id": "a7-k9", "nr": 9, "trimester": 3, "bild": "icon:heart",
+      "titel": { "de": "Gesund und stark", "fr": "Gesund und stark" },
+      "leitfrage": { "de": "Wie sorge ich für mich?", "fr": "Wie sorge ich für mich?" },
+      "worum": {
+        "de": "Schlaf, Essen, Bewegung und Stress hängen zusammen. Die Gruppe kauft ein, kocht gemeinsam und plant einen kleinen, machbaren Schritt für den Alltag. Danach geht es darum, ruhig durch die Testphase zu kommen: rückwärts planen und Skills, die im Klassenzimmer niemand bemerkt.",
+        "fr": "Schlaf, Essen, Bewegung und Stress hängen zusammen. Die Gruppe kauft ein, kocht gemeinsam und plant einen kleinen, machbaren Schritt für den Alltag. Danach geht es darum, ruhig durch die Testphase zu kommen: rückwärts planen und Skills, die im Klassenzimmer niemand bemerkt."
+      }
+    },
+    {
+      "id": "a7-k10", "nr": 10, "trimester": 3, "bild": "icon:flag",
+      "titel": { "de": "Abschluss", "fr": "Abschluss" },
+      "leitfrage": { "de": "Was nehme ich mit?", "fr": "Was nehme ich mit?" },
+      "worum": {
+        "de": "Das Jahr wird sichtbar: Die Gruppe macht einen Skills-Clip für die nächste Gruppe – mit Tipps von denen, die es geschafft haben. In der letzten Stunde schaut jede Person mit Skills-Pass, Glas und Baum zurück, schreibt einen Brief an sich selbst, und die Gruppe verabschiedet sich an einem Ort, den sie selbst gewählt hat.",
+        "fr": "Das Jahr wird sichtbar: Die Gruppe macht einen Skills-Clip für die nächste Gruppe – mit Tipps von denen, die es geschafft haben. In der letzten Stunde schaut jede Person mit Skills-Pass, Glas und Baum zurück, schreibt einen Brief an sich selbst, und die Gruppe verabschiedet sich an einem Ort, den sie selbst gewählt hat."
+      }
+    }
+  ],
+  "einheiten": [
+    {
+      "id": "a7-e01", "nr": 1, "kapitel": "a7-k1", "basis": "j1-e01", "kompetenzen": ["kennen", "miteinander"],
+      "titel": { "de": "Willkommen – unser Rahmen", "fr": "Willkommen – unser Rahmen" },
+      "kurz": { "de": "Rituale und Regeln kennenlernen, den Gruppenvertrag schreiben, den Skills-Pass anlegen, erster Skill: 5-4-3-2-1", "fr": "Rituale und Regeln kennenlernen, den Gruppenvertrag schreiben, den Skills-Pass anlegen, erster Skill: 5-4-3-2-1" },
+      "hinweis": { "de": "Vorher den Elternbrief mit Einverständnis für Ausflüge und Filme verteilen", "fr": "Vorher den Elternbrief mit Einverständnis für Ausflüge und Filme verteilen" }
+    },
+    {
+      "id": "a7-e02", "nr": 2, "kapitel": "a7-k1", "basis": "j1-e02", "kompetenzen": ["verstehen", "miteinander"],
+      "titel": { "de": "Kennenlernen in Bewegung", "fr": "Kennenlernen in Bewegung" },
+      "kurz": { "de": "Spiele und Mini-Challenges zu dritt: Gemeinsamkeiten finden, nachfragen, Komplimente geben – nichts Privates nötig", "fr": "Spiele und Mini-Challenges zu dritt: Gemeinsamkeiten finden, nachfragen, Komplimente geben – nichts Privates nötig" }
+    },
+    {
+      "id": "a7-e03", "nr": 3, "kapitel": "a7-k1", "basis": "j1-e03", "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Wir als Team", "fr": "Wir als Team" },
+      "kurz": { "de": "Draußen Aufgaben lösen, die nur zu dritt gelingen: blind führen, bauen, absprechen – mit Stopp-Recht", "fr": "Draußen Aufgaben lösen, die nur zu dritt gelingen: blind führen, bauen, absprechen – mit Stopp-Recht" },
+      "hinweis": { "de": "Ausflug: Wald oder Park in Gehweite · die Regeln für draußen üben (Treffpunkt, Signal, Notfallnummer)", "fr": "Ausflug: Wald oder Park in Gehweite · die Regeln für draußen üben (Treffpunkt, Signal, Notfallnummer)" }
+    },
+    {
+      "id": "a7-e04", "nr": 4, "kapitel": "a7-k2", "basis": "j1-e04", "kompetenzen": ["kennen"],
+      "titel": { "de": "Das Glas der Bedürfnisse", "fr": "Das Glas der Bedürfnisse" },
+      "kurz": { "de": "Bedürfnisse als innere Tanks: jede Person füllt ihr eigenes Glas, findet den leeren Tank und plant einen Schritt", "fr": "Bedürfnisse als innere Tanks: jede Person füllt ihr eigenes Glas, findet den leeren Tank und plant einen Schritt" }
+    },
+    {
+      "id": "a7-e05", "nr": 5, "kapitel": "a7-k2", "basis": "j1-e05", "kompetenzen": ["kennen", "verstehen"],
+      "titel": { "de": "Zwischen laut und leise", "fr": "Zwischen laut und leise" },
+      "kurz": { "de": "Sich zwischen Gegensätzen einordnen, den Blick der anderen erfahren: Welche Rolle hätte jede Person in einer Band?", "fr": "Sich zwischen Gegensätzen einordnen, den Blick der anderen erfahren: Welche Rolle hätte jede Person in einer Band?" },
+      "hinweis": { "de": "Film: School of Rock (2003) · Szene: Dewey gibt jedem Kind eine Aufgabe in der Band", "fr": "Film: School of Rock (2003) · Szene: Dewey gibt jedem Kind eine Aufgabe in der Band" }
+    },
+    {
+      "id": "a7-e06", "nr": 6, "kapitel": "a7-k2", "basis": "j1-e06", "kompetenzen": ["kennen", "verstehen"],
+      "titel": { "de": "Mein Baum der Stärke", "fr": "Mein Baum der Stärke" },
+      "kurz": { "de": "Einen echten Baum aussuchen, daraus den eigenen Baum aus Halt, Können und Stolz gestalten, Stärken-Post schreiben", "fr": "Einen echten Baum aussuchen, daraus den eigenen Baum aus Halt, Können und Stolz gestalten, Stärken-Post schreiben" },
+      "hinweis": { "de": "Draußen: Park oder Wald · Baum aussuchen, Rindenabdruck, Foto", "fr": "Draußen: Park oder Wald · Baum aussuchen, Rindenabdruck, Foto" }
+    },
+    {
+      "id": "a7-e07", "nr": 7, "kapitel": "a7-k3", "basis": "j1-e07", "kompetenzen": ["kennen"],
+      "titel": { "de": "Was sind Gefühle – und wozu?", "fr": "Was sind Gefühle – und wozu?" },
+      "kurz": { "de": "Gefühle sammeln, den sechs Grundgefühlen zuordnen, ihre Botschaft finden und im Foto-Studio nachstellen", "fr": "Gefühle sammeln, den sechs Grundgefühlen zuordnen, ihre Botschaft finden und im Foto-Studio nachstellen" },
+      "hinweis": { "de": "Fotos nur mit Einverständnis, sie bleiben in der Gruppe", "fr": "Fotos nur mit Einverständnis, sie bleiben in der Gruppe" }
+    },
+    {
+      "id": "a7-e08", "nr": 8, "kapitel": "a7-k3", "basis": "j1-e08", "kompetenzen": ["kennen", "verstehen"],
+      "titel": { "de": "Alles steht Kopf", "fr": "Alles steht Kopf" },
+      "kurz": { "de": "Filmszenen zeigen, wie Gefühle das Steuer übernehmen – und warum auch Kummer seinen Platz hat", "fr": "Filmszenen zeigen, wie Gefühle das Steuer übernehmen – und warum auch Kummer seinen Platz hat" },
+      "hinweis": { "de": "Film: Alles steht Kopf (2015) · Szenen: Rileys erster Schultag, Kummer tröstet Bing Bong", "fr": "Film: Alles steht Kopf (2015) · Szenen: Rileys erster Schultag, Kummer tröstet Bing Bong" }
+    },
+    {
+      "id": "a7-e09", "nr": 9, "kapitel": "a7-k3", "basis": "j1-e09", "kompetenzen": ["kennen", "steuern"],
+      "titel": { "de": "Wo spüre ich Gefühle?", "fr": "Wo spüre ich Gefühle?" },
+      "kurz": { "de": "Den Körper auf Packpapier umreißen, Gefühle und Warnsignale eintragen, ihre Stärke von 0 bis 10 einschätzen", "fr": "Den Körper auf Packpapier umreißen, Gefühle und Warnsignale eintragen, ihre Stärke von 0 bis 10 einschätzen" },
+      "hinweis": { "de": "Umriss nur freiwillig: Wer nicht liegen mag, zeichnet eine Figur", "fr": "Umriss nur freiwillig: Wer nicht liegen mag, zeichnet eine Figur" }
+    },
+    {
+      "id": "a7-e10", "nr": 10, "kapitel": "a7-k4", "basis": "j1-e11", "kompetenzen": ["steuern", "kennen"],
+      "titel": { "de": "Skills und die Anspannungsskala", "fr": "Skills und die Anspannungsskala" },
+      "kurz": { "de": "Alle haben schon Skills: Die Skala von 0 bis 100 zeigt, welcher Skill bei welcher Zahl noch hilft", "fr": "Alle haben schon Skills: Die Skala von 0 bis 100 zeigt, welcher Skill bei welcher Zahl noch hilft" }
+    },
+    {
+      "id": "a7-e11", "nr": 11, "kapitel": "a7-k4", "basis": "j1-e12", "kompetenzen": ["steuern"],
+      "titel": { "de": "Skills über Körper und Atem", "fr": "Skills über Körper und Atem" },
+      "kurz": { "de": "Atem- und Bewegungs-Skills als Experiment testen: Zahl vorher, Skill, Zahl nachher", "fr": "Atem- und Bewegungs-Skills als Experiment testen: Zahl vorher, Skill, Zahl nachher" },
+      "hinweis": { "de": "Draußen: Sportplatz oder Park, bei Frost die Turnhalle · Zahl vorher, Skill, Zahl nachher", "fr": "Draußen: Sportplatz oder Park, bei Frost die Turnhalle · Zahl vorher, Skill, Zahl nachher" }
+    },
+    {
+      "id": "a7-e12", "nr": 12, "kapitel": "a7-k4", "basis": "j1-e13", "wahl": true, "kompetenzen": ["steuern"],
+      "titel": { "de": "Skills über die Sinne", "fr": "Skills über die Sinne" },
+      "kurz": { "de": "Sinnes-Parcours mit Hören, Tasten, Riechen und Kälte, Gegenstand für die Hosentasche finden, Skills-Playlist bauen", "fr": "Sinnes-Parcours mit Hören, Tasten, Riechen und Kälte, Gegenstand für die Hosentasche finden, Skills-Playlist bauen" },
+      "hinweis": { "de": "Draußen: Park oder Wald, bei Dauerregen drinnen · Düfte nur nach Rückfrage (Allergien, Asthma)", "fr": "Draußen: Park oder Wald, bei Dauerregen drinnen · Düfte nur nach Rückfrage (Allergien, Asthma)" }
+    },
+    {
+      "id": "a7-e13", "nr": 13, "kapitel": "a7-k4", "basis": "j1-e14", "kompetenzen": ["steuern", "kennen"],
+      "titel": { "de": "Achtsamkeit und Kopf-Skills", "fr": "Achtsamkeit und Kopf-Skills" },
+      "kurz": { "de": "Gedanken vorbeiziehen lassen, Kopf-Skills für mittlere Anspannung testen, auch unter Störung, sicheren Ort finden", "fr": "Gedanken vorbeiziehen lassen, Kopf-Skills für mittlere Anspannung testen, auch unter Störung, sicheren Ort finden" }
+    },
+    {
+      "id": "a7-e14", "nr": 14, "kapitel": "a7-k4", "basis": "j1-e15", "kompetenzen": ["steuern", "kennen"],
+      "titel": { "de": "Mein Skills-Koffer und Ampelplan", "fr": "Mein Skills-Koffer und Ampelplan" },
+      "kurz": { "de": "Koffer und Ampelplan packen und an der Kletterwand im Ernstfall testen: Zahl hoch, Skill, Zahl runter", "fr": "Koffer und Ampelplan packen und an der Kletterwand im Ernstfall testen: Zahl hoch, Skill, Zahl runter" },
+      "hinweis": { "de": "Ausflug: Kletterhalle · Anmeldung und Einverständnis der Eltern rechtzeitig klären", "fr": "Ausflug: Kletterhalle · Anmeldung und Einverständnis der Eltern rechtzeitig klären" }
+    },
+    {
+      "id": "a7-e15", "nr": 15, "kapitel": "a7-k5", "basis": "j1-e16", "kompetenzen": ["kennen", "verstehen"],
+      "titel": { "de": "Was sind Glaubenssätze?", "fr": "Was sind Glaubenssätze?" },
+      "kurz": { "de": "Sätze über sich selbst entdecken, die helfen oder bremsen, und herausfinden, woher sie kommen", "fr": "Sätze über sich selbst entdecken, die helfen oder bremsen, und herausfinden, woher sie kommen" },
+      "hinweis": { "de": "Film: Alles steht Kopf 2 (2024) · Szenen: Rileys Selbstbild, die Panikattacke im Spiel", "fr": "Film: Alles steht Kopf 2 (2024) · Szenen: Rileys Selbstbild, die Panikattacke im Spiel" }
+    },
+    {
+      "id": "a7-e16", "nr": 16, "kapitel": "a7-k5", "basis": "j1-e18", "kompetenzen": ["kennen", "steuern"],
+      "titel": { "de": "Der kritische Detektiv", "fr": "Der kritische Detektiv" },
+      "kurz": { "de": "Einen bremsenden Satz im Gedanken-Gericht verhören, Beweise sammeln, einen neuen, realistischen Satz formulieren", "fr": "Einen bremsenden Satz im Gedanken-Gericht verhören, Beweise sammeln, einen neuen, realistischen Satz formulieren" }
+    },
+    {
+      "id": "a7-e17", "nr": 17, "kapitel": "a7-k5", "basis": "j1-e19", "kompetenzen": ["steuern", "entscheiden"],
+      "titel": { "de": "Neue Gedanken ausprobieren", "fr": "Neue Gedanken ausprobieren" },
+      "kurz": { "de": "In der Stadt testen, was der neue Satz verändert: Verhaltensexperimente als Beweis-Challenge", "fr": "In der Stadt testen, was der neue Satz verändert: Verhaltensexperimente als Beweis-Challenge" },
+      "hinweis": { "de": "Ausflug: Stadt (Bäckerei, Café, Haltestelle) · nur harmlose Aufträge, Begleitung in der Nähe", "fr": "Ausflug: Stadt (Bäckerei, Café, Haltestelle) · nur harmlose Aufträge, Begleitung in der Nähe" }
+    },
+    {
+      "id": "a7-e18", "nr": 18, "kapitel": "a7-k6", "basis": "j1-e21", "kompetenzen": ["verstehen", "miteinander"],
+      "titel": { "de": "Mehr als Worte – Ich-Botschaften und Zuhören", "fr": "Mehr als Worte – Ich-Botschaften und Zuhören" },
+      "kurz": { "de": "Körpersprache lesen, Du- in Ich-Botschaften verwandeln, beim Gehen zuhören und zusammenfassen", "fr": "Körpersprache lesen, Du- in Ich-Botschaften verwandeln, beim Gehen zuhören und zusammenfassen" },
+      "hinweis": { "de": "Film: WALL·E (2008) · Szene: Wall-E begegnet EVE, fast ohne Worte", "fr": "Film: WALL·E (2008) · Szene: Wall-E begegnet EVE, fast ohne Worte" }
+    },
+    {
+      "id": "a7-e19", "nr": 19, "kapitel": "a7-k6", "basis": "j1-e22", "kompetenzen": ["kennen", "verstehen"],
+      "titel": { "de": "Grenzen erkennen", "fr": "Grenzen erkennen" },
+      "kurz": { "de": "Grenz-Situationen sortieren, die eigene Wohlfühl-Distanz spüren, Körpersignale für „zu nah“ und „passt“ finden", "fr": "Grenz-Situationen sortieren, die eigene Wohlfühl-Distanz spüren, Körpersignale für „zu nah“ und „passt“ finden" }
+    },
+    {
+      "id": "a7-e20", "nr": 20, "kapitel": "a7-k6", "basis": "j1-e23", "kompetenzen": ["miteinander", "steuern"],
+      "titel": { "de": "Grenzen setzen: Stopp!", "fr": "Grenzen setzen: Stopp!" },
+      "kurz": { "de": "Drei Arten, Stopp zu sagen, im Video vergleichen und im Rollenspiel Grenzen mit Wort und Körper setzen", "fr": "Drei Arten, Stopp zu sagen, im Video vergleichen und im Rollenspiel Grenzen mit Wort und Körper setzen" },
+      "hinweis": { "de": "Videoaufnahmen nur mit Einverständnis, sie bleiben in der Gruppe", "fr": "Videoaufnahmen nur mit Einverständnis, sie bleiben in der Gruppe" }
+    },
+    {
+      "id": "a7-e21", "nr": 21, "kapitel": "a7-k7", "basis": "j1-e24", "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Konflikte lösen", "fr": "Konflikte lösen" },
+      "kurz": { "de": "Konfliktstile entdecken, die Konflikt-Treppe lernen, einen Streit zweimal spielen: wie sonst und Stufe für Stufe", "fr": "Konfliktstile entdecken, die Konflikt-Treppe lernen, einen Streit zweimal spielen: wie sonst und Stufe für Stufe" }
+    },
+    {
+      "id": "a7-e22", "nr": 22, "kapitel": "a7-k7", "basis": "j1-e25", "kompetenzen": ["entscheiden", "steuern"],
+      "titel": { "de": "Gruppendruck und Nein sagen", "fr": "Gruppendruck und Nein sagen" },
+      "kurz": { "de": "Komfort-, Lern- und Panikzone abstecken, vier Arten von Nein üben, in der Nein-Challenge standhalten", "fr": "Komfort-, Lern- und Panikzone abstecken, vier Arten von Nein üben, in der Nein-Challenge standhalten" }
+    },
+    {
+      "id": "a7-e23", "nr": 23, "kapitel": "a7-k7", "basis": "j1-e26", "kompetenzen": ["verstehen", "entscheiden"],
+      "titel": { "de": "Mobbing und Zivilcourage", "fr": "Mobbing und Zivilcourage" },
+      "kurz": { "de": "Spaß, Konflikt und Mobbing unterscheiden, die Rolle der Zuschauenden verstehen, Zivilcourage üben", "fr": "Spaß, Konflikt und Mobbing unterscheiden, die Rolle der Zuschauenden verstehen, Zivilcourage üben" },
+      "hinweis": { "de": "Film: Wunder (2017) · Szenen: Summer setzt sich zu Auggie, die Mitschüler stellen sich zu ihm", "fr": "Film: Wunder (2017) · Szenen: Summer setzt sich zu Auggie, die Mitschüler stellen sich zu ihm" }
+    },
+    {
+      "id": "a7-e24", "nr": 24, "kapitel": "a7-k7", "neu": true, "kompetenzen": ["miteinander", "entscheiden"],
+      "titel": { "de": "Hilfe holen ist stark", "fr": "Hilfe holen ist stark" },
+      "kurz": { "de": "Eine Beratungsstelle für Jugendliche besuchen, den ersten Satz üben, das eigene Netz aufschreiben", "fr": "Eine Beratungsstelle für Jugendliche besuchen, den ersten Satz üben, das eigene Netz aufschreiben" },
+      "hinweis": { "de": "Ausflug: Beratungsstelle oder Jugendhaus · Termin vorher vereinbaren", "fr": "Ausflug: Beratungsstelle oder Jugendhaus · Termin vorher vereinbaren" }
+    },
+    {
+      "id": "a7-e25", "nr": 25, "kapitel": "a7-k8", "basis": "j1-e27", "kompetenzen": ["kennen", "entscheiden"],
+      "titel": { "de": "Social Media und ich", "fr": "Social Media und ich" },
+      "kurz": { "de": "Geschätzte und echte Bildschirmzeit vergleichen, ein perfektes Foto inszenieren und entlarven, Handy-Plan machen", "fr": "Geschätzte und echte Bildschirmzeit vergleichen, ein perfektes Foto inszenieren und entlarven, Handy-Plan machen" }
+    },
+    {
+      "id": "a7-e26", "nr": 26, "kapitel": "a7-k8", "basis": "j1-e28", "kompetenzen": ["entscheiden", "verstehen"],
+      "titel": { "de": "Echt oder fake?", "fr": "Echt oder fake?" },
+      "kurz": { "de": "Doku-Ausschnitte, Echt-oder-fake-Spiel, Beiträge mit einer Checkliste prüfen, Chancen und Risiken von KI besprechen", "fr": "Doku-Ausschnitte, Echt-oder-fake-Spiel, Beiträge mit einer Checkliste prüfen, Chancen und Risiken von KI besprechen" },
+      "hinweis": { "de": "Film: Das Dilemma mit den sozialen Medien (2020) · vier kurze Ausschnitte, Altersfreigabe prüfen", "fr": "Film: Das Dilemma mit den sozialen Medien (2020) · vier kurze Ausschnitte, Altersfreigabe prüfen" }
+    },
+    {
+      "id": "a7-e27", "nr": 27, "kapitel": "a7-k9", "basis": "j1-e29", "kompetenzen": ["kennen", "entscheiden"],
+      "titel": { "de": "Gesund und stark", "fr": "Gesund und stark" },
+      "kurz": { "de": "Schlaf, Essen, Bewegung und Stress verbinden: einkaufen, gemeinsam kochen, einen kleinen Schritt planen", "fr": "Schlaf, Essen, Bewegung und Stress verbinden: einkaufen, gemeinsam kochen, einen kleinen Schritt planen" },
+      "hinweis": { "de": "Ausflug: Einkaufen und Kochen · Allergien und Essensregeln vorher klären", "fr": "Ausflug: Einkaufen und Kochen · Allergien und Essensregeln vorher klären" }
+    },
+    {
+      "id": "a7-e28", "nr": 28, "kapitel": "a7-k9", "basis": "j1-j09", "wahl": true, "kompetenzen": ["steuern", "entscheiden"],
+      "titel": { "de": "Ruhig durch die Testphase", "fr": "Ruhig durch die Testphase" },
+      "kurz": { "de": "Woher Testangst kommt, das Lernen rückwärts planen, den Blackout-Plan üben, unauffällige Skills fürs Klassenzimmer", "fr": "Woher Testangst kommt, das Lernen rückwärts planen, den Blackout-Plan üben, unauffällige Skills fürs Klassenzimmer" },
+      "hinweis": { "de": "Am besten zwei bis drei Wochen vor einer Testphase einplanen", "fr": "Am besten zwei bis drei Wochen vor einer Testphase einplanen" }
+    },
+    {
+      "id": "a7-e29", "nr": 29, "kapitel": "a7-k10", "basis": "j1-j05", "kompetenzen": ["miteinander", "kennen"],
+      "titel": { "de": "Unser Skills-Clip", "fr": "Unser Skills-Clip" },
+      "kurz": { "de": "Einen Skill für die nächste Gruppe erklären: Idee, Drehbuch, Dreh und Schnitt – als Video oder Podcast", "fr": "Einen Skill für die nächste Gruppe erklären: Idee, Drehbuch, Dreh und Schnitt – als Video oder Podcast" },
+      "hinweis": { "de": "Medienprojekt: Foto, Video oder Podcast · Einverständnis für Aufnahmen vorher klären", "fr": "Medienprojekt: Foto, Video oder Podcast · Einverständnis für Aufnahmen vorher klären" }
+    },
+    {
+      "id": "a7-e30", "nr": 30, "kapitel": "a7-k10", "basis": "j1-e30", "kompetenzen": ["kennen", "miteinander"],
+      "titel": { "de": "Rückblick und Abschied", "fr": "Rückblick und Abschied" },
+      "kurz": { "de": "Mit Skills-Pass, Glas und Baum aufs Jahr schauen, den Clip zeigen, Brief an sich schreiben, sich verabschieden", "fr": "Mit Skills-Pass, Glas und Baum aufs Jahr schauen, den Clip zeigen, Brief an sich schreiben, sich verabschieden" },
+      "hinweis": { "de": "Ausflug: Abschlussausflug zum Lieblingsort, die Gruppe wählt", "fr": "Ausflug: Abschlussausflug zum Lieblingsort, die Gruppe wählt" }
+    }
+  ]
+}

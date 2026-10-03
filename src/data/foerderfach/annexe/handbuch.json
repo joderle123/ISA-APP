@@ -1,0 +1,2134 @@
+{
+  "de": {
+    "vorwort": {
+      "titel": "So ist dieses Leitungsheft aufgebaut",
+      "text": "Teil A erklärt den Kurs: Grundlagen, Aufbau der Doppelstunde, Rahmen und Sicherheit, Methoden für Kleingruppen mit Ausflügen und Filmen, Zusammenarbeit mit Eltern und Team und die persönliche Standortbestimmung. Teil B zeigt den Jahresplan der {klasse}. Teil C enthält die Einheiten des Jahres, Kapitel für Kapitel – jede mit Zielen, Material, Ablauf, Anleitung mit Beispielsätzen, Hinweisen für schwierige Momente, einer Kurzfassung für eine einzelne Stunde und den Kopiervorlagen direkt dahinter. Teil D enthält die Blätter, die das ganze Jahr gebraucht werden. Bei jedem Blatt steht die Seite im Schülerheft."
+    },
+    "start": {
+      "titel": "Bevor Sie starten",
+      "einleitung": "Die Fragen, die sich Leitungen vor den ersten Stunden mit einer Kleingruppe am häufigsten stellen – mit kurzen Antworten aus der Praxis. Ausführlich steht alles in Teil A und in jeder Einheit.",
+      "fragen": [
+        {
+          "titel": "Ich habe keine psychologische Ausbildung. Kann ich das leiten?",
+          "text": "Ja. Der Kurs verlangt keine Therapie, sondern gute Gruppenarbeit: Sie leiten Übungen an, schützen den Rahmen und holen Hilfe, wenn etwas zu groß wird. Jede Einheit beschreibt Schritt für Schritt, was Sie vorbereiten, tun und sagen können. Für alles, was darüber hinausgeht, ist die zuständige Leitung (Responsable) da – und zu zweit zu leiten ist erlaubt."
+        },
+        {
+          "titel": "Was, wenn nur zwei kommen – oder nur eine Person?",
+          "text": "Der Kurs ist für höchstens drei gebaut und trägt auch zu zweit: Aus den Dreier-Rollen (üben, Gegenüber, beobachten) werden Paare, die Leitung übernimmt die dritte Rolle. Kommt nur eine Person, wird aus der Stunde ein Gespräch mit Übungen: ein Spiel, der Skill, der Skills-Pass. Wer gefehlt hat, bekommt Mission und Skill in der nächsten Stunde nachgereicht – ohne Vorwurf."
+        },
+        {
+          "titel": "Was, wenn jemand ausrastet – drinnen oder unterwegs?",
+          "text": "Ruhig bleiben, leiser und langsamer werden, Abstand lassen und den Stopp-Plan anwenden, den die Gruppe in der ersten Stunde vereinbart hat (Zeichen, Ort, Rückkehr). Unterwegs gilt zusätzlich: Handy und Notfallnummern dabei, wo möglich zu zweit. Bei Gefahr wird der Ausflug ruhig abgebrochen. Danach kurz klären, ohne Strafe: Was war der Auslöser, was hat geholfen?"
+        },
+        {
+          "titel": "Muss ich selbst Persönliches erzählen?",
+          "text": "Nein. Sie machen die Übungen mit und geben Beispiele, aber Sie entscheiden, wie viel Sie zeigen – genau wie die Jugendlichen. Ein kleines, echtes Beispiel („Vor Elterngesprächen bin ich nervös“) wirkt mehr als eine große Geschichte."
+        },
+        {
+          "titel": "Was, wenn jemand weint oder etwas Schweres erzählt?",
+          "text": "Ruhig bleiben, den Beitrag würdigen und in der Gruppe nicht vertiefen: „Danke, dass du das sagst. Wir reden nach der Stunde in Ruhe weiter.“ Wer Abstand braucht, bekommt eine Pause mit Begleitung, nie allein. Bei Hinweisen auf eine Gefährdung noch am selben Tag die zuständige Leitung (Responsable) informieren und nach dem Schutzkonzept handeln (siehe „Rahmen und Sicherheit“)."
+        },
+        {
+          "titel": "Wie motiviere ich ohne Noten?",
+          "text": "Mit Abwechslung, Bewegung, Ausflügen und Themen, die die Jugendlichen wirklich betreffen. Fortschritt wird sichtbar im Skills-Pass mit Stempel, in den Zahlen vorher und nachher und in der Standortbestimmung. Loben Sie das Mitmachen, nicht „richtige“ Antworten: Für viele ist es der erste Ort, an dem sie nicht scheitern können."
+        },
+        {
+          "titel": "Was, wenn die Zeit oder das Wetter nicht passt?",
+          "text": "Die Minuten sind ein Plan, kein Zwang. Lieber eine Übung gründlich als drei hastig. Ausflüge brauchen oft mehr als 100 Minuten: Zeitblock vorher klären oder ein Ziel in Gehweite wählen. Zu jedem Ausflug gibt es eine Variante im Haus; Wahleinheiten entfallen zuerst, wenn Stunden ausfallen. Fest bleiben Check-in, Skill und Abschluss."
+        },
+        {
+          "titel": "Einige lesen mühsam oder verstehen kaum Deutsch.",
+          "text": "Jede Einheit hat einen Wortspeicher und eine Differenzierung „Einfacher“: Bilder, Gesten, Satzanfänge, mündlich statt schriftlich, Fotos statt Text. Gefühlsrad und Anspannungsskala funktionieren auch mit wenigen Wörtern; Wörter und Skills dürfen in der eigenen Sprache notiert werden. Das Schülerheft gibt es auf Deutsch; mündlich erklären Sie in jeder Sprache, die Sie sprechen."
+        },
+        {
+          "titel": "Was, wenn jemand nicht mitmachen oder nicht mitkommen will?",
+          "text": "Freiwillig ist alles Persönliche, nicht die Anwesenheit. Wer nicht sprechen will, sagt „weiter“; wer eine Übung nicht mitmachen möchte, übernimmt eine Rolle (Zeit, Beobachtung, Kamera). Wer nicht mitkommen will, wird nicht überredet, sondern gefragt, was fehlt – und die Leitung klärt, wo die Person in dieser Zeit betreut wird. Nachfragen unter vier Augen; oft steckt Unsicherheit dahinter."
+        },
+        {
+          "titel": "Was sage ich den Eltern?",
+          "text": "Der Elternbrief liegt in Teil A bei, mit Einverständnis für Ausflüge, Filme und Aufnahmen. Er geht vor der ersten Stunde raus. Fehlt das Einverständnis, klären Sie vor dem Ausflug mit der zuständigen Leitung, wo die Person in dieser Zeit betreut wird. Vor sensiblen Einheiten, im Jahresplan markiert, informieren Sie noch einmal kurz. Fragen von Eltern beantworten Sie gern gemeinsam mit der zuständigen Leitung."
+        },
+        {
+          "titel": "Wie viel Vorbereitung brauche ich?",
+          "text": "Rund 20 Minuten zum Lesen der Einheit, dazu Material und Kopien – bei Ausflügen und Filmen auch die Organisation: Anmeldung, Fahrplan, Vorführrechte, Szenen vorher ansehen. Die erste Seite jeder Einheit zeigt Material und Vorbereitung auf einen Blick. Vieles brauchen Sie das ganze Jahr: Gefühlsrad-Plakat, Klebepunkte, Klangschale, Moderationskarten, Notfallmappe."
+        },
+        {
+          "titel": "Und die Wochen-Mission?",
+          "text": "Am Ende jeder Stunde in einem Satz ansagen. Jede Person wählt ihren eigenen Moment („Wenn ich im Bus sitze, dann …“) und schreibt ihn ins Heft. Im Rückblick der nächsten Stunde fragen Sie nach dem Moment: Kam er – und was hast du gemacht? Keine Kontrolle, keine Note; wer es nicht geschafft hat, erzählt, was dazwischenkam."
+        }
+      ]
+    },
+    "ueberblick": {
+      "titel": "Der Kurs auf einen Blick",
+      "einleitung": "Der Skills-Kurs Annexe begleitet Jugendliche von 12 bis 15 Jahren, die vorübergehend außerhalb ihrer Klasse unterrichtet werden – in einer Kleingruppe von höchstens drei Personen mit einer erfahrenen Leitung. Sie lernen, Gefühle zu verstehen, mit Anspannung umzugehen, zu sagen, was sie brauchen, Grenzen zu setzen und gut zu entscheiden. Der Kurs übt, statt zu predigen: Jede Doppelstunde besteht aus vielen kurzen Übungen, etwa jede dritte Stunde findet draußen statt oder ist ein Ausflug, etwa jede fünfte arbeitet mit einem Film.",
+      "fakten": [
+        {
+          "zahl": "3",
+          "text": "Jugendliche in der Gruppe, höchstens"
+        },
+        {
+          "zahl": "30",
+          "text": "Doppelstunden im Jahr, je 100 Minuten"
+        },
+        {
+          "zahl": "9",
+          "text": "Ausflüge und Draußen-Stunden in der 7e"
+        },
+        {
+          "zahl": "6",
+          "text": "Film-Stunden mit genau benannten Szenen"
+        },
+        {
+          "zahl": "5",
+          "text": "Kompetenzbereiche nach CASEL"
+        },
+        {
+          "zahl": "0",
+          "text": "Noten – Rückmeldung über Skills-Pass und Standortbestimmung"
+        }
+      ],
+      "wirkung": {
+        "titel": "Warum der Kurs wirkt",
+        "text": "Schulprogramme, die sozial-emotionale Kompetenzen Schritt für Schritt aufbauen, verbessern Verhalten, Klima und auch die Schulleistungen (Durlak et al., 2011); die Effekte sind noch Jahre später messbar (Taylor et al., 2017). Am besten wirken Programme mit vier Merkmalen – nach ihnen ist der Kurs gebaut:",
+        "punkte": [
+          {
+            "titel": "Schritt für Schritt",
+            "text": "Die Einheiten bauen aufeinander auf – im ersten Jahr vom Ich über das Wir zur Welt."
+          },
+          {
+            "titel": "Aktiv",
+            "text": "Rollenspiele, Challenges, Experimente, Ausflüge: Skills werden geübt, nicht nur besprochen."
+          },
+          {
+            "titel": "Fokussiert",
+            "text": "Jede Einheit hat ein klares Ziel und genug Zeit zum Üben – bei drei Jugendlichen übt jede Person selbst."
+          },
+          {
+            "titel": "Ausdrücklich",
+            "text": "Die Jugendlichen wissen, was sie lernen und wozu – der Skills-Pass hält es fest."
+          }
+        ]
+      },
+      "nicht": {
+        "titel": "Was der Kurs nicht ist",
+        "text": "Keine Therapie und keine Einzelberatung. Die Leitung muss nichts diagnostizieren und keine Krisen lösen. Sie schaut hin, hört zu und leitet weiter: an die zuständige Leitung (Responsable) und, wo nötig, an die Fachleute der Einrichtung."
+      },
+      "material": {
+        "titel": "Das Material",
+        "text": "Je Klassenstufe ein Leitungsheft mit allen Einheiten und ein Schülerheft mit allen Blättern, beides auf Deutsch. Jede Einheit ist vollständig ausgearbeitet: Ziele, Material, Ablauf mit Minuten, Anleitung mit Beispielsätzen und Hinweise für schwierige Momente – bei Ausflügen und Filmen auch Organisation und Szenen."
+      }
+    },
+    "kompetenzen": {
+      "titel": "Fünf Kompetenzbereiche",
+      "einleitung": "Der Kurs folgt dem international verbreiteten Rahmen von CASEL (2020). Jede Einheit fördert ein bis drei Bereiche; der Jahresplan zeigt sie mit farbigen Punkten. Über drei Jahre wachsen die Ziele mit den Jugendlichen: vom Erkennen über das Steuern zum eigenen Weg.",
+      "bereiche": {
+        "kennen": "Gefühle, Bedürfnisse, Stärken und Gedanken wahrnehmen und benennen.",
+        "steuern": "Anspannung erkennen, Skills einsetzen, Impulse bremsen, Ziele verfolgen.",
+        "verstehen": "Gefühle und Sichtweisen anderer erkennen, Vielfalt respektieren.",
+        "miteinander": "Zuhören, sagen, was man braucht, Grenzen setzen, Konflikte fair lösen.",
+        "entscheiden": "Folgen abwägen, Risiken einschätzen, für sich und andere gut entscheiden."
+      },
+      "hinweis": "Die Jahresziele beschreiben, was die Jugendlichen am Ende des Schuljahres können sollen. Sie werden nicht benotet; die Jugendlichen halten ihren Stand in der Standortbestimmung am Anfang und am Ende des Jahres fest."
+    },
+    "grundlagen": {
+      "titel": "Theoretische Grundlagen",
+      "einleitung": "Der Skills-Kurs Annexe erfindet nichts Neues: Er übersetzt Modelle, die sich in Forschung und Praxis bewährt haben, in Doppelstunden für kleine Gruppen. Jede Einheit nennt im „Fachlichen Hintergrund“, auf welchem Modell sie beruht und was über die Wirkung bekannt ist; alle Quellen stehen im Literaturverzeichnis im Anhang.",
+      "theorien": [
+        {
+          "titel": "Fünf Kompetenzbereiche (CASEL)",
+          "text": "Sozial-emotionales Lernen umfasst fünf Bereiche: sich selbst kennen, sich steuern, andere verstehen, Beziehungen gestalten, verantwortlich entscheiden. Programme, die diese Bereiche systematisch üben, verbessern Fertigkeiten, Verhalten, Wohlbefinden und Schulleistung; am stärksten wirkt, dass sich Jugendliche in der Schule sicherer und zugehöriger fühlen (CASEL, 2020; Durlak et al., 2011; Cipriano et al., 2023).",
+          "imFach": "die fünf Jahresziele der Klassenstufe, die Kompetenz-Punkte jeder Einheit, die zwölf Aussagen der Standortbestimmung.",
+          "quellen": [
+            "casel2020",
+            "durlak2011",
+            "cipriano2023"
+          ]
+        },
+        {
+          "titel": "SAFE: so üben wirksame Programme",
+          "text": "Wirksame Programme bauen aufeinander auf (sequenced), lassen aktiv üben (active), haben einen klaren Fokus (focused) und sagen offen, welche Fertigkeit geübt wird (explicit). Ebenso wichtig ist die Umsetzung: Einheiten, die wie geplant gehalten werden, wirken – gekürzte oder improvisierte kaum (Durlak et al., 2011; Durlak & DuPre, 2008).",
+          "imFach": "der feste Aufbau der Doppelstunde (Check-in, Rückblick, zwei Hauptteile mit Übung, Skill, Skills-Pass), die Kapitelbögen einführen – üben – anwenden – übertragen (zum Beispiel Kapitel 4: Skala, Körper, Sinne, Kopf, Koffer an der Kletterwand), die Kurzfassung statt Improvisation.",
+          "quellen": [
+            "durlak2011",
+            "durlakDuPre2008"
+          ]
+        },
+        {
+          "titel": "Skills: Fertigkeiten gegen starke Gefühle (DBT)",
+          "text": "Die Dialektisch-Behaviorale Therapie beschreibt Fertigkeiten, mit denen Menschen starke Anspannung aushalten, Gefühle regulieren und Beziehungen führen; die Fassung für Jugendliche und die Schulfassung DBT STEPS-A übertragen sie auf Gruppen und Klassen. Kern: Bei sehr hoher Anspannung versagen Fertigkeiten, die Nachdenken voraussetzen – dann helfen Körper und Sinne (Linehan, 2015; Rathus & Miller, 2015; Fleischhaker, Sixt & Schulz, 2011; Mazza et al., 2016).",
+          "imFach": "der Begriff Skill, die Anspannungsskala von 0 bis 100 (Einheit 10), Körper-, Sinnes- und Kopf-Skills (11–13), Skills-Koffer, Ampelplan und Notfallkarte (14), erst runter, dann reden (10), Schlaf, Essen und Bewegung als Skills (27).",
+          "quellen": [
+            "linehan2015",
+            "rathusMiller2015",
+            "fleischhaker2011",
+            "mazza2016"
+          ]
+        },
+        {
+          "titel": "Emotionen regulieren: früh ansetzen, Strategie wählen",
+          "text": "Gefühle entstehen in Schritten – Situation, Aufmerksamkeit, Bewertung, Reaktion –, und je früher man eingreift, desto weniger Kraft kostet es. Ein Gefühl zu benennen, dämpft es messbar; bei schwachen Gefühlen hilft Umdeuten, bei sehr starken Ablenkung über Körper und Sinne (Gross, 1998; Lieberman et al., 2007; Sheppes et al., 2011; Nummenmaa et al., 2014).",
+          "imFach": "Gefühlsrad und Check-in in jeder Stunde (1), Gefühlswörter und Botschaften (7), Filmszenen über Gefühle am Steuer (8), Warnsignale im Körper (9), erst runter, dann reden (10).",
+          "quellen": [
+            "gross1998",
+            "lieberman2007",
+            "sheppes2011",
+            "nummenmaa2014"
+          ]
+        },
+        {
+          "titel": "Stress: Bewertung und Umdeutung",
+          "text": "Stress entsteht, wenn eine Anforderung größer wirkt als die eigenen Mittel; diese Bewertung lässt sich ändern. Wer Herzklopfen vor einer Prüfung als Bereitschaft statt als Gefahr deutet, schneidet besser ab, und bei Jugendlichen schützt die Botschaft „Stress kann helfen“ messbar vor Belastung (Lazarus & Folkman, 1984; Jamieson et al., 2010; Brooks, 2014; Yeager, Bryan et al., 2022).",
+          "imFach": "die Zahl vorher und nachher im Experiment (11, 14), Prüfungsstress, Blackout-Plan und unauffällige Skills für den Test (28).",
+          "quellen": [
+            "lazarusFolkman1984",
+            "jamieson2010",
+            "brooks2014",
+            "yeagerBryan2022"
+          ]
+        },
+        {
+          "titel": "Gedanken prüfen – und Abstand gewinnen",
+          "text": "Zwischen Situation und Gefühl steht eine Bewertung (ABC-Modell); tief sitzende Sätze über sich selbst färben sie. Man kann solche Sätze prüfen wie ein Detektiv – oder ihnen mit Abstand begegnen, ohne sie zu bekämpfen („Mein Kopf sagt gerade …“). Von Lehrkräften angeleitet, wirkt reine Gedankenarbeit in der Schule wenig; wirksamer sind Figuren, Verhaltensexperimente und Abstand (Ellis, 1962; Beck, 2011; Hayes, Strosahl & Wilson, 2012; Masuda et al., 2004; Stallard et al., 2014).",
+          "imFach": "das Kapitel „Meine Gedanken“ (15–17) mit Glaubenssätzen im Film, Gedanken-Gericht und Beweis-Challenge in der Stadt, Prüfungsgedanken (28).",
+          "quellen": [
+            "ellis1962",
+            "beck2011",
+            "hayes2012",
+            "masuda2004",
+            "stallard2014"
+          ]
+        },
+        {
+          "titel": "Lernen am Modell und durch Bewältigung (Bandura)",
+          "text": "Menschen lernen, indem sie anderen zusehen, und trauen sich etwas zu, wenn sie es selbst geschafft haben – die stärkste Quelle von Selbstwirksamkeit. Deshalb macht die Leitung jeden Skill vor und mit, und deshalb wird im Rollenspiel geübt, nicht nur besprochen (Bandura, 1977; Bandura & Schunk, 1981).",
+          "imFach": "„Die Leitung macht mit“ in jedem Check-in und Skill, Rollenspiele mit der Leitung in der schwierigen Rolle (20, 22), Skills-Tester mit Zahl vorher und nachher (11), die Beweis-Challenge (17), der Skills-Koffer im Ernstfall an der Kletterwand (14).",
+          "quellen": [
+            "bandura1977",
+            "banduraSchunk1981"
+          ]
+        },
+        {
+          "titel": "Drei Grundbedürfnisse (Selbstbestimmungstheorie)",
+          "text": "Menschen sind motiviert und gesund, wenn drei Bedürfnisse erfüllt sind: sich als fähig erleben, selbst entscheiden, dazugehören. Beteiligung ist dabei nur echt, wenn Entscheidungen Folgen haben (Deci & Ryan, 2000; Hart, 1992).",
+          "imFach": "das Glas der Bedürfnisse (4, 14, 30), der Gruppenvertrag aus der Gruppe (1), echte Entscheidungen der Gruppe wie das Ziel des Abschlussausflugs (30), Wahlfreiheit in jeder Übung („weiter“ ist erlaubt).",
+          "quellen": [
+            "deciRyan2000",
+            "hart1992"
+          ]
+        },
+        {
+          "titel": "Wenn-dann-Pläne und WOOP",
+          "text": "Ein Vorsatz wird umgesetzt, wenn er an eine konkrete Situation gebunden ist: „Wenn X passiert, dann tue ich Y.“ Über viele Studien hinweg erhöht das deutlich die Chance, dass ein Ziel erreicht wird; bei Jugendlichen stärkt die Verbindung mit dem ehrlichen Blick auf das Hindernis (WOOP) die Selbstdisziplin (Gollwitzer, 1999; Gollwitzer & Sheeran, 2006; Duckworth et al., 2011; Oettingen, 2014).",
+          "imFach": "die Wochen-Mission jeder Einheit mit dem selbst gewählten Moment („Mein Moment: Wenn …“), der Ampelplan (14), der Handy-Plan (25), der kleine Schritt (27), der Blackout-Plan (28).",
+          "quellen": [
+            "gollwitzer1999",
+            "gollwitzerSheeran2006",
+            "duckworth2011",
+            "oettingen2014"
+          ]
+        },
+        {
+          "titel": "Mobbing ist ein Gruppenprozess – und Normen entscheiden",
+          "text": "In einer Klasse hat fast jede Person eine Rolle: Täter, Helfer, Verstärker, Außenstehende, Verteidiger, Betroffene. Mobbing braucht Publikum; wer die Seite wechselt, nimmt es ihm. Jugendliche überschätzen zudem, wie sehr andere Mobbing billigen; wird die echte Mehrheit sichtbar, sinkt es. Programme, die die Zuschauenden stärken, wirken – am besten bis zur 7e (Olweus, 1993; Salmivalli et al., 1996; Kärnä et al., 2011; Polanin, Espelage & Pigott, 2012; Perkins, Craig & Perkins, 2011; Yeager et al., 2015).",
+          "imFach": "Rollen im Mobbing, Zivilcourage-Leiter und „Hilfe holen ist kein Petzen“ (23), Hilfe holen üben (24), das zweite Nein (22).",
+          "quellen": [
+            "olweus1993",
+            "salmivalli1996",
+            "kaerna2011",
+            "polanin2012",
+            "perkinsCraig2011",
+            "yeagerFong2015"
+          ]
+        },
+        {
+          "titel": "Jugendliche wollen Status, Respekt und Autonomie",
+          "text": "Ab der Pubertät reagiert das Gehirn stärker auf Belohnung und auf Gleichaltrige; Jugendliche gehen in Gegenwart anderer mehr Risiken ein und lehnen ab, was ihren Status bedroht oder sie bevormundet. Programme wirken, wenn sie Respekt zeigen, die Entscheidung den Jugendlichen lassen und offenlegen, wie Erwachsene oder Firmen sie steuern wollen (Steinberg, 2014; Gardner & Steinberg, 2005; Yeager, 2017; Yeager, Dahl & Dweck, 2018; Bryan et al., 2016).",
+          "imFach": "keine Noten, keine Moral, „Ihr entscheidet“ als Haltung (22, 25, 26), Jugendliche als Forschende und Erklärende (Skills-Tester 11, Skills-Clip für die nächste Gruppe 29), Tricks der Apps aufdecken (25, 26).",
+          "quellen": [
+            "steinberg2014",
+            "gardnerSteinberg2005",
+            "yeager2017",
+            "yeagerDahlDweck2018",
+            "bryanYeager2016"
+          ]
+        },
+        {
+          "titel": "Stärken und Ressourcen vor Defiziten",
+          "text": "Wer sich auf das besinnt, was trägt – verlässliche Menschen, eigene Fähigkeiten, gelungene Momente –, bewältigt Belastungen besser; Resilienz entsteht aus gewöhnlichen Schutzfaktoren. Eigene Stärken bewusst auf neue Art einzusetzen und Gutes zu notieren, hob in Studien das Wohlbefinden; Selbstmitgefühl geht bei Jugendlichen mit weniger Angst und Niedergeschlagenheit einher (Masten, 2014; Werner & Smith, 1992; Peterson & Seligman, 2004; Seligman et al., 2005; Neff, 2003; Neff & McGehee, 2010).",
+          "imFach": "Baum der Stärke und Stärken-Post (6, 17, 30), die Rückmeldung der Gruppe zu Stärken (5), die freundliche Stimme (16), Stärken-Rücken beim Abschied (30).",
+          "quellen": [
+            "masten2014",
+            "wernerSmith1992",
+            "petersonSeligman2004",
+            "seligman2005",
+            "neff2003",
+            "neffMcGehee2010"
+          ]
+        },
+        {
+          "titel": "Die kleine Gruppe wirkt mit",
+          "text": "Auch eine Gruppe von drei Jugendlichen durchläuft Phasen – ankommen, ausprobieren, Regeln aushandeln, zusammenarbeiten, sich lösen. Sie profitiert von dem, was Gruppenarbeit auszeichnet: zu merken, dass man mit seinen Erfahrungen nicht allein ist, voneinander zu lernen und dazuzugehören. Ein klar gestalteter Anfang und ein klar gestalteter Abschied gehören dazu (Tuckman, 1965; Tuckman & Jensen, 1977; Yalom & Leszcz, 2005).",
+          "imFach": "der Gruppenvertrag (1), Kennenlernen und Teamaufgaben (2, 3), die Rückmeldung der Gruppe zu Stärken (5, 6), der Skills-Clip für die nächste Gruppe (29), der gestaltete Abschied (30).",
+          "quellen": [
+            "tuckman1965",
+            "tuckmanJensen1977",
+            "yalomLeszcz2005"
+          ]
+        },
+        {
+          "titel": "Draußen lernen und Bewegung",
+          "text": "Wer gemeinsam etwas erlebt, das ihn fordert – klettern, ein Hindernis überwinden, sich in der Stadt zurechtfinden –, lernt über sich und die Gruppe oft mehr als im Gespräch. Die Erlebnispädagogik arbeitet dafür mit drei Zonen (Komfortzone, Lernzone, Panikzone) und mit der Auswertung danach (Senninger, 2000). Natur kann die Aufmerksamkeit entlasten (Kaplan, 1995), und Bewegung hängt bei Kindern und Jugendlichen mit besserer Stimmung und seelischer Gesundheit zusammen, auch wenn die Belege eher mäßig sind (Biddle & Asare, 2011).",
+          "imFach": "Teamaufgaben im Wald (3), der echte Baum (6), Bewegungs-Experiment (11), Sinnes-Parcours (12), Kletterhalle mit dem Skills-Koffer (14), Stadt-Experimente (17), Einkaufen und Kochen (27), Abschlussausflug (30).",
+          "quellen": [
+            "senninger2000",
+            "kaplan1995",
+            "biddleAsare2011"
+          ]
+        },
+        {
+          "titel": "Filme und Figuren: Abstand schützt",
+          "text": "Über erfundene Figuren lässt sich leichter sprechen als über sich selbst: Mit etwas Abstand denken Menschen klarer und weniger belastet über Schwieriges nach (Kross & Ayduk, 2017). Filmfiguren sind außerdem Modelle: Wer sieht, wie jemand ein Problem angeht, traut sich das eher selbst zu (Bandura, 1977). Eine Szene lässt sich anhalten, wiederholen und im Rollenspiel weiterspielen, wie im Forumtheater (Boal, 1979). Deshalb arbeitet der Kurs mit genau benannten Szenen und einem Auftrag, nicht mit Filmabenden ohne Ziel.",
+          "imFach": "School of Rock (5), Alles steht Kopf (8), Alles steht Kopf 2 (15), WALL·E (18), Wunder (23), Das Dilemma mit den sozialen Medien (26).",
+          "quellen": [
+            "krossAyduk2017",
+            "bandura1977",
+            "boal1979"
+          ]
+        }
+      ]
+    },
+    "doppelstunde": {
+      "titel": "So läuft eine Doppelstunde",
+      "einleitung": "Alle Einheiten folgen demselben Aufbau – auch Ausflüge und Filmstunden behalten Ankommen und Abschluss. Das gibt der Gruppe Sicherheit und der Leitung Routine: Nach wenigen Wochen laufen Check-in und Abschluss fast von selbst.",
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in",
+          "text": "Gefühlsrad: Jede Person zeigt ihr Gefühl und sagt, wenn sie mag, einen Satz dazu; die Leitung beginnt. Ab Einheit 10 kommt die Anspannung von 0 bis 100 dazu."
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick",
+          "text": "Kam dein Moment – und was hast du gemacht? Dann das Thema von heute nennen."
+        },
+        {
+          "min": "15–45",
+          "phase": "uebung",
+          "titel": "Teil 1",
+          "text": "Kurze Psychoedukation, anschaulich und in wenigen Minuten, dann Übungen: erst allein, dann zu zweit mit einer Person, die beobachtet."
+        },
+        {
+          "min": "45–50",
+          "phase": "aktiv",
+          "titel": "Bewegung oder Pause",
+          "text": "Fünf Minuten aufstehen und bewegen – oder essen und trinken, je nach Tag und Gruppe."
+        },
+        {
+          "min": "50–85",
+          "phase": "uebung",
+          "titel": "Teil 2",
+          "text": "Praxis: Spiel, Rollenspiel, Challenge, Film oder Ausflug – hier wird das Thema ausprobiert."
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill",
+          "text": "Ein Skill oder eine kurze Achtsamkeitsübung, höchstens drei Minuten angeleitet, mit Zahl vorher und nachher."
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Abschluss",
+          "text": "Ein Satz in den Skills-Pass, die neue Mission als Wenn-dann-Plan, den eigenen Moment wählen, Ausblick."
+        }
+      ],
+      "rituale": {
+        "titel": "Drei Rituale für das ganze Jahr",
+        "punkte": [
+          {
+            "titel": "Check-in mit dem Gefühlsrad",
+            "text": "Jede Stunde beginnt mit der Frage: Wie geht es dir gerade? Ein Wort am Gefühlsrad genügt."
+          },
+          {
+            "titel": "Skills-Pass",
+            "text": "Am Ende jeder Stunde ein Satz: Das nehme ich mit. Dazu ein Stempel; die Einträge werden nicht bewertet."
+          },
+          {
+            "titel": "Réckbléck",
+            "text": "Davor eine kurze Runde, die zum Thema passt: ein Wort, der Daumen oder ein Satz. „Weiter“ ist erlaubt."
+          }
+        ]
+      },
+      "klasse": {
+        "titel": "Mit drei Jugendlichen arbeiten – die Rolle der Leitung",
+        "punkte": [
+          {
+            "titel": "Jede Person übt selbst",
+            "text": "In einer kleinen Gruppe gibt es keinen Platz zum Verstecken – und keinen Grund dafür. Jede Person hat eigene Ziele, ihr eigenes Glas, ihren eigenen Baum und ihren eigenen Skills-Koffer."
+          },
+          {
+            "titel": "Dreier-Rollen",
+            "text": "Eine Person übt, eine ist das Gegenüber, eine beobachtet und gibt eine Rückmeldung (ein Lob, ein Tipp). Nach jeder Runde wechseln die Rollen."
+          },
+          {
+            "titel": "Die Leitung macht mit",
+            "text": "Sie beginnt den Check-in, probiert jeden Skill und spielt die schwierige Rolle selbst: die drängelnde, die genervte, die ungeduldige Person. Nie sind es die Jugendlichen, die damit beginnen."
+          },
+          {
+            "titel": "Beziehung vor Methode",
+            "text": "Passt eine Übung an einem Tag nicht, wird sie gekürzt oder getauscht. Zuerst wird gesucht, was schon gelingt; Fehler und schwierige Gefühle werden nicht bewertet."
+          },
+          {
+            "titel": "Ein Ruhezeichen, feste Orte",
+            "text": "Dasselbe Zeichen das ganze Jahr (Hand heben, Klangschale), dieselbe Zeit, derselbe Raum. Verlässlichkeit gibt Sicherheit – auch für die Wege nach draußen."
+          },
+          {
+            "titel": "Beispiele statt Bekenntnisse",
+            "text": "Gearbeitet wird mit erfundenen Figuren und Filmfiguren – nah am Alltag, nie über einzelne Jugendliche. In einer kleinen Gruppe wüsste sonst jede Person sofort, wer gemeint ist."
+          }
+        ]
+      }
+    },
+    "sicherheit": {
+      "titel": "Rahmen und Sicherheit",
+      "einleitung": "In diesem Kurs geht es um Gefühle, Freundschaft, Grenzen und manchmal um schwere Themen. Viele Jugendliche bringen belastende Erfahrungen mit, und die Gruppe ist oft unterwegs. Ein klarer Rahmen schützt die Jugendlichen und die Leitung.",
+      "grundsaetze": [
+        {
+          "titel": "Freiwillig",
+          "text": "Niemand muss Persönliches erzählen; „weiter“ ist immer erlaubt. Persönliche Schreibaufgaben werden weder eingesammelt noch gegen den Willen vorgelesen. Jede Person darf bei jeder Übung aussetzen (Stopp-Recht) und bekommt dann eine andere Rolle. Für Momente, in denen es zu viel wird, vereinbart die Gruppe in der ersten Stunde einen Stopp-Plan: Zeichen, Ort, Rückkehr."
+        },
+        {
+          "titel": "Keine Tiefenbohrung",
+          "text": "Belastendes wird in der Gruppe nicht vertieft, sondern nach der Stunde unter vier Augen aufgegriffen. Bei drei Personen erfahren alle sofort alles: Die Leitung stoppt freundlich, würdigt den Beitrag und bietet ein Gespräch an."
+        },
+        {
+          "titel": "Vertraulich – mit Grenze",
+          "text": "Was erzählt wird, bleibt in der Gruppe – auch in Chats: keine Fotos von Plakaten mit Namen, keine Screenshots. Ist jemand in Gefahr, muss die Leitung handeln. Das sagt sie von Anfang an offen und teilt der Person vorher mit, was sie tut und warum."
+        },
+        {
+          "titel": "Unterwegs gelten feste Regeln",
+          "text": "Ausflüge nur mit schriftlichem Einverständnis der Eltern und nach den Regeln des CDSE für Aufsicht und Notfall: Treffpunkt und Signal vereinbaren, Notfallnummern dabeihaben, in Sichtweite bleiben, bei Gefahr ruhig abbrechen."
+        },
+        {
+          "titel": "Filme und Aufnahmen",
+          "text": "Filme nur mit geklärten Vorführrechten und geprüfter Altersfreigabe (bis 12), nur genau benannte Szenen, vorher selbst angesehen. Fotos, Videos und Tonaufnahmen von Jugendlichen nur mit Einverständnis; sie bleiben in der Gruppe."
+        },
+        {
+          "titel": "Sensible Einheiten",
+          "text": "Im Jahresplan markiert: vorher mit der zuständigen Leitung abstimmen, die Eltern informieren. Beispiele sind erfunden, nie über Anwesende. Hinweise auf laufendes Mobbing werden nicht in der Stunde geklärt, sondern nach dem Vorgehen der Einrichtung."
+        }
+      ],
+      "anvertrauen": {
+        "titel": "Wenn sich jemand anvertraut",
+        "schritte": [
+          "Ruhig zuhören und nicht ausfragen: keine Details erfragen, keine Suggestivfragen.",
+          "Glauben schenken und danken: Gut, dass du es mir sagst.",
+          "Nichts versprechen, was nicht zu halten ist – auch kein Geheimnis.",
+          "Sagen, was als Nächstes passiert und wer hilft.",
+          "Noch am selben Tag die zuständige Leitung (Responsable) informieren, nach dem Schutzkonzept handeln und festhalten, was die Person wörtlich gesagt hat, wann und wer dabei war."
+        ]
+      },
+      "hilfe": {
+        "titel": "Hilfe in Luxemburg",
+        "text": "Im CDSE: die zuständige Leitung (Responsable). Außerhalb, auch anonym:",
+        "nummern": [
+          {
+            "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+            "nummer": "116 111"
+          },
+          {
+            "name": "BEE SECURE Helpline (Internet, Cybermobbing)",
+            "nummer": "8002 1234"
+          },
+          {
+            "name": "SOS Détresse – Hilfe am Telefon",
+            "nummer": "45 45 45"
+          },
+          {
+            "name": "Notruf: Rettung und Feuerwehr",
+            "nummer": "112"
+          },
+          {
+            "name": "Polizei",
+            "nummer": "113"
+          }
+        ]
+      },
+      "noten": {
+        "titel": "Ohne Noten – aber mit Rückmeldung",
+        "text": "Der Kurs wird nicht benotet. Die Jugendlichen halten nach jeder Stunde im Skills-Pass fest, was sie mitnehmen, und bestimmen am Anfang und am Ende des Jahres ihren Standort. Die Leitung gibt Rückmeldung zur Mitarbeit, nie zu Gefühlen oder Persönlichem."
+      }
+    },
+    "methoden": {
+      "titel": "Methodenkoffer",
+      "einleitung": "Die Einheiten sind vollständig ausgearbeitet. Der Methodenkoffer hilft, wenn etwas nicht passt: als Ersatz für eine Übung, als Zusatz, wenn Zeit übrig ist, und als Werkzeug, wenn die Gruppe unruhig oder müde ist. Dazu stehen hier die beiden Formate, die den Kurs von anderen unterscheiden: Ausflüge und Filme. Alle Methoden funktionieren mit einer Gruppe von höchstens drei Jugendlichen.",
+      "gruppen": [
+        {
+          "titel": "Check-in",
+          "wann": "0–10",
+          "text": "Das Gefühlsrad liegt immer bereit. Die Variante darf zum Thema der Einheit passen; ab Einheit 10 kommt in jedem Fall die Anspannung von 0 bis 100 dazu.",
+          "eintraege": [
+            {
+              "titel": "Gefühlsrad",
+              "text": "Jede Person steckt eine Wäscheklammer an das passende Wort und sagt einen Satz dazu. Das „weil“ ist freiwillig. Die Leitung beginnt."
+            },
+            {
+              "titel": "Finger-Skala",
+              "text": "Auf drei zeigen alle gleichzeitig null bis zehn Finger – so hoch ist die Anspannung, mal zehn. Schnell und ohne Worte."
+            },
+            {
+              "titel": "Linie am Boden",
+              "text": "Klebeband am Boden oder eine Linie aus Ästen: 0 an der Tür, 100 am Fenster. Alle stellen sich zu ihrer Zahl; wer mag, sagt, was sie nach oben oder unten treibt."
+            },
+            {
+              "titel": "Wetterbericht",
+              "text": "Mein inneres Wetter ist heute … – sonnig, bewölkt, Nebel, Gewitter, Regenbogen."
+            },
+            {
+              "titel": "Akkustand",
+              "text": "Mein Akku steht bei … Prozent. Wer mag, sagt, was ihn heute geladen oder geleert hat."
+            },
+            {
+              "titel": "Zwei Gefühle",
+              "text": "Welche zwei Gefühle sind gerade gleichzeitig da? Passt ab dem Kapitel „Gefühle verstehen“."
+            }
+          ]
+        },
+        {
+          "titel": "Bewegung oder Pause",
+          "wann": "45–50",
+          "text": "Fünf Minuten, im Raum oder draußen. Der Imbiss ist bewusst Teil des Programms: Hier entsteht oft am meisten Beziehung, das Thema ruht. Allergien und Essensregeln vorher erfragen.",
+          "eintraege": [
+            {
+              "titel": "Alle, die …",
+              "text": "Alle stehen hinter dem Stuhl. Wer sich angesprochen fühlt, setzt sich kurz und steht wieder auf. Nur harmlose Sätze."
+            },
+            {
+              "titel": "Stein, Papier, Schere mit Fanclub",
+              "text": "Alle spielen zu zweit; wer verliert, wird Fan der Person, die gewonnen hat, und feuert sie an. Am Ende jubelt die Gruppe dem Finale zu."
+            },
+            {
+              "titel": "Zip Zap Boing",
+              "text": "Zu viert, mit der Leitung, wandert ein Klatschimpuls: Zip zur Nachbarin, Zap quer, Boing zurück. Niemand scheidet aus."
+            },
+            {
+              "titel": "Spiegeln",
+              "text": "Zu zweit gegenüber: Eine Person bewegt sich langsam, die andere spiegelt, nach einer Minute wechseln. Ruhig und konzentrierend."
+            },
+            {
+              "titel": "Zählen bis 20",
+              "text": "Die Gruppe zählt bis 20, jede Zahl sagt nur eine Person, ohne Absprache. Sprechen zwei gleichzeitig, geht es bei 1 los."
+            },
+            {
+              "titel": "Rekord-Ball",
+              "text": "Einen weichen Ball in der Luft halten, ohne dass er den Boden berührt. Rekord notieren und beim nächsten Mal schlagen – gemeinsam, nicht gegeneinander."
+            }
+          ]
+        },
+        {
+          "titel": "Skills zum Runterkommen",
+          "wann": "85–95",
+          "text": "Langsam anleiten, selbst mitmachen, danach fragen: Wann könnte das helfen? Angeleitete Stille und Vorstellung dauern höchstens drei Minuten; Augen offen ist gleichwertig, Aussteigen erlaubt.",
+          "eintraege": [
+            {
+              "titel": "5-4-3-2-1",
+              "text": "5 Dinge sehen, 4 hören, 3 spüren, 2 riechen, 1 schmecken – zwischen den Schritten Zeit lassen."
+            },
+            {
+              "titel": "Kastenatmung",
+              "text": "4 Sekunden ein, 4 halten, 4 aus, 4 halten. Wer das Halten unangenehm findet, lässt es weg."
+            },
+            {
+              "titel": "Anspannen und Loslassen",
+              "text": "Fäuste, Schultern und Gesicht fünf Sekunden fest anspannen, dann loslassen und den Unterschied spüren."
+            },
+            {
+              "titel": "Klangschale",
+              "text": "Schale anschlagen; alle heben die Hand, wenn der Ton ganz verklungen ist. Drei Durchgänge."
+            },
+            {
+              "titel": "Farbsuche",
+              "text": "Eine Farbe wählen und still alles im Raum oder draußen finden, was diese Farbe hat."
+            },
+            {
+              "titel": "Kälte",
+              "text": "Kaltes Wasser über die Handgelenke oder ein Kühlpack in die Hand – hilft schnell bei sehr hoher Anspannung."
+            }
+          ]
+        },
+        {
+          "titel": "Abschluss",
+          "wann": "95–100",
+          "text": "Der Skills-Pass kommt immer. Davor eine kurze Runde, die zum Thema passt; zum Schluss wählt jede Person ihren Moment für die Mission.",
+          "eintraege": [
+            {
+              "titel": "Blitzlicht",
+              "text": "Ein Wort pro Person, schnell und ohne Kommentar. Mit drei Jugendlichen dauert es eine Minute, wenn die Leitung beginnt."
+            },
+            {
+              "titel": "Daumen",
+              "text": "Daumen hoch, in die Mitte oder runter – auf drei alle gleichzeitig."
+            },
+            {
+              "titel": "Koffer und Papierkorb",
+              "text": "Was packe ich ein, was lasse ich hier? Je ein Satz."
+            },
+            {
+              "titel": "Ein Satz für alle",
+              "text": "Die Gruppe einigt sich auf einen Satz zur Stunde und sagt ihn laut."
+            },
+            {
+              "titel": "Mein Moment",
+              "text": "Mit den Fingern wählen, wann die Mission drankommt: ein Finger für den Bus, zwei für den Test, drei fürs Bett – oder ein eigener Moment."
+            }
+          ]
+        },
+        {
+          "titel": "Zu dritt arbeiten",
+          "text": "Drei Personen und eine Leitung ergeben viele Möglichkeiten: Paare mit einer Person, die beobachtet, Rollen im Dreieck, Wettbewerb gegen die Uhr statt gegeneinander. Wer übrig bleibt, hat eine Aufgabe, keine Wartezeit.",
+          "eintraege": [
+            {
+              "titel": "Dreier-Rollen",
+              "text": "Eine Person übt, eine ist das Gegenüber, eine beobachtet und gibt eine Rückmeldung (ein Lob, ein Tipp). Nach jeder Runde wechseln."
+            },
+            {
+              "titel": "Die Leitung als dritte Person",
+              "text": "Bei zwei Jugendlichen übernimmt die Leitung eine Rolle, besonders die schwierige: die drängelnde, die genervte, die ungeduldige Person."
+            },
+            {
+              "titel": "Gegen die Uhr",
+              "text": "Aufgaben als gemeinsame Challenge gegen die Zeit oder einen Rekord, nicht gegeneinander."
+            },
+            {
+              "titel": "Wer wählt?",
+              "text": "Rollen und Reihenfolge losen (Würfel, Karten), damit niemand auswählt oder übrig bleibt. Bei Streit oder wenn jemand geschützt werden muss, teilt die Leitung offen selbst ein."
+            },
+            {
+              "titel": "Stilles Schreibgespräch",
+              "text": "Eine Frage auf ein Plakat; alle schreiben schweigend Antworten und Kommentare dazu. Fünf Minuten spricht niemand."
+            },
+            {
+              "titel": "Eigenes Material",
+              "text": "Jede Person hat ihre Mappe, ihr Glas, ihren Baum, ihren Skills-Koffer. Ergebnisse werden verglichen, nie bewertet."
+            }
+          ]
+        },
+        {
+          "titel": "Ausflüge",
+          "text": "Ein Ausflug hat ein Ziel und eine Übung – nie nur „wir gehen raus“. Ankommen und Abschluss bleiben: Check-in am Treffpunkt, Skills-Pass am Ende. Die Aufsicht richtet sich nach den Regeln des CDSE.",
+          "eintraege": [
+            {
+              "titel": "Planen",
+              "text": "Ziel, Weg, Zeit und Kosten mindestens zwei Wochen vorher klären und bei der zuständigen Leitung abgeben. Ausflüge brauchen oft mehr als 100 Minuten: Zeitblock und Fahrplan prüfen oder ein Ziel in Gehweite wählen."
+            },
+            {
+              "titel": "Einverständnis",
+              "text": "Nur mit unterschriebenem Elternbrief. Fehlt es, klärt die Leitung vorher, wo die Person in dieser Zeit betreut wird. Vor jedem Ausflug die Eltern kurz informieren: Termin, Treffpunkt, Rückkehr, Kosten."
+            },
+            {
+              "titel": "Aufsicht",
+              "text": "Wo möglich zu zweit. Sichtweite vereinbaren, das Gelände vorher ansehen, Übungen mit verbundenen Augen nur auf sicherem Gelände. Beim Losgehen, an jedem Halt und beim Zurückkommen durchzählen."
+            },
+            {
+              "titel": "Treffpunkt und Signal",
+              "text": "Ein Treffpunkt für den Notfall, ein Signal (Pfiff, Handzeichen) und eine Uhrzeit für das Zurückkommen – vor dem Losgehen gemeinsam vereinbaren und wiederholen."
+            },
+            {
+              "titel": "Notfallmappe",
+              "text": "Telefonnummern der Eltern und des CDSE, Allergien und Medikamente, Erste-Hilfe-Set, aufgeladenes Handy, Wasser; Notruf 112, bei Gewalt oder Bedrohung 113."
+            },
+            {
+              "titel": "Wenn es kippt",
+              "text": "Der Stopp-Plan gilt auch unterwegs. Bei Gefahr oder Verweigerung nicht diskutieren, sondern ruhig abbrechen, gemeinsam zurückgehen und später klären. Bei Regen gibt es zu jedem Ausflug eine Variante im Haus."
+            }
+          ]
+        },
+        {
+          "titel": "Filme",
+          "text": "Ein Film ist kein Ersatzprogramm, sondern ein Gesprächsanlass: Gezeigt werden genau benannte Szenen, mit einem Auftrag vorher und einer Übung danach.",
+          "eintraege": [
+            {
+              "titel": "Auswahl",
+              "text": "Titel und Szenen stehen im Jahresplan und in der Einheit. Wer ersetzt, wählt bekannte, gut erhältliche Filme mit Altersfreigabe bis 12 und sieht die Szenen vorher selbst an."
+            },
+            {
+              "titel": "Freigabe und Rechte",
+              "text": "Vorführrechte klären (Schul- oder Einrichtungslizenz) und die Altersfreigabe prüfen. Ein privates Streaming-Abo oder eine private DVD deckt in der Regel keine Vorführung in der Einrichtung ab – im Zweifel bei der zuständigen Leitung nachfragen."
+            },
+            {
+              "titel": "Vorbereiten",
+              "text": "Anfang und Ende jeder Szene notieren, Technik testen (Bild, Ton, Untertitel), Sitzordnung ändern. Es muss nicht dunkel sein: Wer sich im Dunkeln unwohl fühlt, sitzt an der Tür."
+            },
+            {
+              "titel": "Mit Auftrag schauen",
+              "text": "Vor der Szene eine Beobachtungsfrage („Wer sitzt gerade am Steuer?“); nach jeder Szene anhalten, zwei Antworten, weiter. Kennt jemand den Film, bekommt er eine Expertenrolle – das Ende bleibt geheim."
+            },
+            {
+              "titel": "Szenen besprechen",
+              "text": "Erst beschreiben, was man sieht und hört, dann deuten, dann übertragen: Wann hilft mir das? Über die Figur zu sprechen ist leichter als über sich selbst – deshalb nach der Figur fragen, nicht nach dem eigenen Erleben."
+            },
+            {
+              "titel": "Wenn der Film trifft",
+              "text": "Szenen über Verlust, Mobbing, Streit mit den Eltern oder Heimweh berühren manche stark. Vorher überlegen, wen es betrifft, nicht vor der Gruppe nachfragen, in der Pause ansprechen und jederzeit Aussteigen erlauben."
+            }
+          ]
+        },
+        {
+          "titel": "Wenn es unruhig wird",
+          "text": "Nicht lauter werden, sondern leiser und langsamer. Eine kurze Bewegungsaufgabe vor die nächste Denkaufgabe setzen, die Sitzordnung ändern, kurze und klare Anweisungen geben. Unruhe ist oft Aufregung vor einem persönlichen Thema – dann hilft es, das Thema offen zu benennen.",
+          "eintraege": [
+            {
+              "titel": "Ruhesignal",
+              "text": "Hand heben oder Klangschale: Wer es sieht oder hört, wird still. Nach zwei, drei Wochen wirkt es fast von selbst."
+            },
+            {
+              "titel": "Bewegung, dann Stille",
+              "text": "Drei Minuten intensiv bewegen, danach eine Minute still sitzen und die Anspannung schätzen."
+            },
+            {
+              "titel": "Raus an die Luft",
+              "text": "Fünf Minuten nach draußen, zügig gehen, tief atmen – dann zurück zum Thema."
+            },
+            {
+              "titel": "Zählen bis 20",
+              "text": "Die Gruppe zählt bis 20, jede Zahl sagt nur eine Person, ohne Absprache. Bündelt die Aufmerksamkeit in zwei Minuten."
+            },
+            {
+              "titel": "Kettenreaktion",
+              "text": "Gemeinsam eine Dominokette bauen und auslösen – braucht Geduld und Absprache."
+            },
+            {
+              "titel": "Wortlos ordnen",
+              "text": "Die Gruppe stellt sich ohne zu sprechen nach Geburtstag in eine Reihe; danach auflösen."
+            }
+          ]
+        },
+        {
+          "titel": "Wenn die Energie fehlt",
+          "text": "Müdigkeit ernst nehmen, statt gegen sie anzuarbeiten: Fenster auf, kurz nach draußen, Wasser trinken. Danach eine leichte Übung im Sitzen, die trotzdem zum Thema führt.",
+          "eintraege": [
+            {
+              "titel": "Gefühls-Memory",
+              "text": "Paare aus Gefühlswort und Gesicht finden; wer ein Paar hat, nennt eine Situation dazu oder sagt „weiter“."
+            },
+            {
+              "titel": "Emotionswürfel",
+              "text": "Würfeln und erzählen, wann man das Gefühl zuletzt hatte – nur Harmloses, „weiter“ ist erlaubt."
+            },
+            {
+              "titel": "Musikrunde",
+              "text": "Jede Person spielt 30 Sekunden eines Songs, der sie auflädt, am besten aus der eigenen Skills-Playlist."
+            },
+            {
+              "titel": "Gemeinsames Kunstwerk",
+              "text": "Alle malen ohne Absprache an einem großen Papier; nach zwei Minuten rückt jede Person einen Platz weiter."
+            },
+            {
+              "titel": "Ball der Gefühle",
+              "text": "Einen weichen Ball zuwerfen; wer fängt, beantwortet eine leichte Frage, etwa: Was hat dich heute gefreut?"
+            },
+            {
+              "titel": "Dobble oder Mikado",
+              "text": "Eine kurze Runde als Pausenspiel; danach mit frischer Aufmerksamkeit weiter."
+            }
+          ]
+        },
+        {
+          "titel": "Wenn Zeit übrig bleibt",
+          "eintraege": [
+            {
+              "titel": "Positivitätskette",
+              "text": "Jede Person sagt der Person rechts, was ihr heute an ihr aufgefallen ist – über das, was sie tut, nicht über das Aussehen."
+            },
+            {
+              "titel": "Gefühlsstatue",
+              "text": "Eine Person stellt ein Gefühl als Standbild dar, die anderen raten und sagen, woran sie es erkannt haben."
+            },
+            {
+              "titel": "Rücken an Rücken",
+              "text": "Zu zweit: Eine Person beschreibt ein einfaches Bild, die andere zeichnet es, ohne nachzufragen. Dann vergleichen und wechseln."
+            },
+            {
+              "titel": "Skill ziehen",
+              "text": "Eine Person zieht eine Skill-Karte, alle machen den Skill eine Minute lang."
+            },
+            {
+              "titel": "Foto-Challenge",
+              "text": "Drei Fotos zu einem Thema in fünf Minuten, zum Beispiel „Was gibt mir Kraft?“. Die Bilder bleiben in der Gruppe."
+            }
+          ]
+        }
+      ]
+    },
+    "eltern": {
+      "titel": "Eltern und Team",
+      "einleitung": "Eltern und Kolleginnen und Kollegen sollen wissen, was im Kurs geschieht – nicht, was einzelne Jugendliche dort erzählen. Ein kurzer Brief vor der ersten Stunde schafft Transparenz, holt das Einverständnis für Ausflüge und Filme und klärt Allergien; im Team braucht es Absprachen, wie das Gelernte im Alltag gestützt wird.",
+      "punkte": [
+        {
+          "titel": "Mit der zuständigen Leitung abstimmen",
+          "text": "Vor dem ersten Brief klären: Welche Vorgaben der Einrichtung gelten für Einverständniserklärungen, Ausflüge, Fotos und Filme? Wer ist Ansprechperson für Notfälle und für das Schutzkonzept?"
+        },
+        {
+          "titel": "Eltern vorab informieren",
+          "text": "Mit dem Brief vor der ersten Stunde; vor sensiblen Einheiten, im Jahresplan markiert, noch einmal kurz – und vor jedem Ausflug mit Termin, Treffpunkt, Rückkehr und Kosten."
+        },
+        {
+          "titel": "In der Sprache der Familie",
+          "text": "Den Brief mitgeben und bei Bedarf mündlich erklären, wenn möglich in der Familiensprache oder mit einer Person, die übersetzt. Ein Gespräch anbieten, besonders wenn das Einverständnis fehlt."
+        },
+        {
+          "titel": "Keine Einzelheiten weitergeben",
+          "text": "Fragen von Eltern auf Ziele und Methoden lenken. Was Jugendliche in der Gruppe erzählen, bleibt in der Gruppe – außer jemand ist in Gefahr. Die Jugendlichen vorher informieren, was im Brief steht."
+        },
+        {
+          "titel": "Skills im Alltag erlauben",
+          "text": "Klassenleitung und Team der Stammklasse wissen, welche Skills die Gruppe lernt, und erlauben sie auch dort: kurz atmen, eine Pause nach Absprache, eine Skill-Karte in der Tasche."
+        },
+        {
+          "titel": "Beobachtungen, keine Geschichten",
+          "text": "Was Lehrpersonen im Alltag sehen, darf an die Leitung gehen („Mir fällt auf, dass es vor Tests laut wird“) – nie, was eine einzelne Person in der Gruppe erzählt hat."
+        }
+      ],
+      "kollegium": {
+        "titel": "Kurzinfo für das Team",
+        "text": "Ab [Datum] nimmt [Name der Gruppe] jeden [Wochentag] am Skills-Kurs Annexe teil. Die Jugendlichen lernen Fertigkeiten für schwierige Momente: Anspannung auf einer Skala von 0 bis 100 einschätzen, sich mit Skills beruhigen, Ich-Botschaften, Grenzen setzen. Was Sie tun können: Bemerken und kurz bestärken, wenn jemand einen Skill nutzt, und bei steigender Anspannung ruhig fragen: Wo bist du gerade, von 0 bis 100? Was aus deinem Skills-Koffer hilft jetzt? Bitte nicht nach Inhalten aus der Gruppe fragen. Rückmeldungen und Fragen gern an [Name]."
+      }
+    },
+    "brief": {
+      "seite": "Elternbrief",
+      "betreff": "Skills-Kurs Annexe: Information und Einverständnis",
+      "anrede": "Liebe Eltern, liebe Erziehungsberechtigte,",
+      "absaetze": [
+        "in diesem Schuljahr nimmt Ihr Kind am Skills-Kurs Annexe des CDSE teil. Der Kurs findet in einer kleinen Gruppe von höchstens drei Jugendlichen statt, jeweils am [Wochentag] von [Uhrzeit] bis [Uhrzeit], und umfasst rund 30 Treffen. Die Jugendlichen lernen Fertigkeiten, die im Alltag helfen: Gefühle erkennen, mit Anspannung umgehen, sagen, was sie brauchen, Grenzen setzen und Konflikte lösen.",
+        "Wir arbeiten mit Gesprächen, Spielen, Rollenspielen, Bewegung und kurzen Übungen zum Ruhigwerden. Weil die Gruppe klein ist, gehen wir oft raus: Etwa jede dritte Stunde findet draußen statt oder ist ein Ausflug (zum Beispiel Wald oder Park, Kletterhalle, Stadt, Einkaufen und Kochen), etwa jede fünfte arbeitet mit einem Film oder Filmausschnitten, die für Jugendliche bis 12 Jahre freigegeben sind. Die Ausflüge begleiten wir nach den Regeln des CDSE und geben die Termine vorher bekannt.",
+        "Was die Jugendlichen in der Gruppe erzählen, bleibt in der Gruppe, und niemand muss etwas Persönliches erzählen. Wenn wir uns um die Sicherheit Ihres Kindes sorgen, handeln wir nach den Regeln unserer Einrichtung. Fotos, Videos und Tonaufnahmen entstehen nur für die Gruppe; ohne Ihr Einverständnis geben wir sie nicht weiter.",
+        "Am Anfang und am Ende des Jahres bestimmt Ihr Kind gemeinsam mit der Leitung seinen Standort: Es kreuzt zwölf Aussagen an und spricht darüber. Das Blatt gehört Ihrem Kind. Am Ende jeder Stunde schreibt es in seinen Skills-Pass, was es mitnimmt; Heft und Pass bekommt es am Ende des Jahres mit nach Hause. Wenn Sie mögen, fragen Sie zwischendurch: Was habt ihr diese Woche ausprobiert?",
+        "Bitte geben Sie uns den Abschnitt unten bis zum [Datum] zurück. Bei Fragen erreichen Sie mich unter [Telefon oder E-Mail]."
+      ],
+      "gruss": "Mit freundlichen Grüßen",
+      "unterschrift": "[Name der Leitung] · [CDSE, Standort] · [Telefon oder E-Mail]",
+      "abschnitt": {
+        "titel": "Bitte ausfüllen und bis [Datum] zurückgeben",
+        "felder": [
+          "Name der oder des Jugendlichen",
+          "Notfallnummer der Eltern"
+        ],
+        "bestaetigung": "Ich habe den Brief gelesen. Mein Kind darf an den Ausflügen, an den Filmstunden und an Aufnahmen für die Gruppe teilnehmen.",
+        "frage": "Was wir wissen sollten, zum Beispiel Allergien, Essensregeln, Asthma, Medikamente (freiwillig) – oder womit Sie nicht einverstanden sind:",
+        "unterschrift": "Datum und Unterschrift einer erziehungsberechtigten Person"
+      }
+    },
+    "material": {
+      "titel": "Material für das Jahr",
+      "einleitung": "Die Liste zu Beginn des Schuljahres einmal durchgehen. Was eine Einheit zusätzlich braucht, steht bei der Einheit unter „Material“.",
+      "gruppen": [
+        {
+          "titel": "Für jede Stunde",
+          "punkte": [
+            "Gefühlsrad als Plakat (A2 oder A3), Wäscheklammern oder Klebepunkte",
+            "Anspannungsskala 0–100 als Plakat (ab Einheit 10)",
+            "Gruppenvertrag als Plakat",
+            "Skills-Pässe in einer Box, Stempel oder Sticker",
+            "Schülerhefte – einmal festlegen, ob sie im Raum bleiben",
+            "Klangschale oder ein anderes Ruhesignal",
+            "Liste mit Allergien und Essensregeln"
+          ]
+        },
+        {
+          "titel": "Papier und Stifte",
+          "punkte": [
+            "Moderationskarten und Klebezettel in mehreren Farben",
+            "Plakate (A1 oder A2), Packpapier für den Körperumriss",
+            "dicke Filzstifte, Malerkrepp, Klebeband",
+            "Briefumschläge und eine verschließbare Box"
+          ]
+        },
+        {
+          "titel": "Bewegung und Skills",
+          "punkte": [
+            "ein weicher Ball und ein Seil",
+            "Kühlpacks oder eine Schüssel für kaltes Wasser",
+            "Knetbälle, Federn, Sinneskiste",
+            "Riechstreifen – nur nach Rückfrage wegen Allergien und Asthma",
+            "Lautsprecher für leise Musik"
+          ]
+        },
+        {
+          "titel": "Technik",
+          "punkte": [
+            "Beamer oder großer Bildschirm",
+            "Handy oder Tablet für Fotos, Video und Podcast – nur mit Einverständnis",
+            "ein gut sichtbarer Timer",
+            "Internet für die Medien-Einheiten",
+            "Vorführrechte für Filme (Schul- oder Einrichtungslizenz) klären"
+          ]
+        },
+        {
+          "titel": "Für Ausflüge",
+          "punkte": [
+            "Notfallmappe: Telefonnummern der Eltern und des CDSE, Allergien, Medikamente",
+            "Erste-Hilfe-Set, Wasser, Regen- oder Sonnenschutz",
+            "aufgeladenes Handy der Leitung, Notruf 112",
+            "Fahrplan und, wenn nötig, Fahrkarten; Treffpunkt und Signal",
+            "Einverständniserklärungen in Kopie",
+            "Anmeldungen (zum Beispiel Kletterhalle, Besuch) und Kosten nach den Regeln der Einrichtung"
+          ]
+        },
+        {
+          "titel": "Aufbewahren bis zum Schuljahresende",
+          "punkte": [
+            "die Plakate der Gruppe",
+            "7e: Glas der Bedürfnisse, Plakat „Was sind Skills?“, Bäume der Stärke, Skills-Koffer",
+            "Schülerhefte und Skills-Pässe – sie gehören den Jugendlichen und gehen am Ende mit nach Hause",
+            "Fotos und Clips: nur mit Einverständnis, am Ende ausgehändigt oder gelöscht"
+          ]
+        }
+      ]
+    },
+    "messen": {
+      "titel": "Wirkt es? Die Standortbestimmung",
+      "einleitung": "In einer Gruppe von drei Jugendlichen ist ein anonymer Fragebogen nicht möglich: Jeder wüsste, wer welches Blatt ausgefüllt hat. Deshalb gibt es eine persönliche Standortbestimmung am Anfang und am Ende des Schuljahres – dieselben zwölf Aussagen, gemeinsam mit der Leitung besprochen. Das Blatt gehört der oder dem Jugendlichen. Es bewertet nicht die Person, sondern zeigt, wo sie steht, was sich bewegt hat und was sie sich vornimmt.",
+      "schritte": [
+        {
+          "titel": "Wann",
+          "text": "Am Anfang in Einheit 2, am Ende im ersten Teil der vorletzten Einheit – nicht in Einheit 1, die Vertrauen aufbaut. Beide Male an derselben Stelle der Stunde, ohne aufwühlende Übung davor und mit demselben Blatt. Fehlt jemand, wird die Standortbestimmung in der nächsten Stunde nachgeholt."
+        },
+        {
+          "titel": "Wie",
+          "text": "Die Anleitung vorlesen, die Aussagen bei Bedarf einzeln. Jede Person kreuzt für sich an; ob ihr Name darauf steht, entscheidet sie. Danach sagt sie, wenn sie mag, bei zwei oder drei Aussagen, woran sie ihr Kreuz festmacht. Niemand muss etwas erklären; „weiter“ ist erlaubt. Die anderen Jugendlichen sehen das Blatt nicht."
+        },
+        {
+          "titel": "Besprechen",
+          "text": "Hinschauen statt auszählen: Wo steht ein Kreuz ganz links oder ganz rechts? Was überrascht die Person? Dann zwei Fragen: Was davon willst du in diesem Jahr üben? Woran würdest du merken, dass es besser wird? Das Ziel kommt als ein Satz in den Skills-Pass."
+        },
+        {
+          "titel": "Lesen",
+          "text": "Am Ende legt die Person das Blatt vom Anfang neben das neue: Wo ist ein Kreuz gewandert, wo geblieben? Wer viel gelernt hat, urteilt am Ende oft strenger – ein gleiches oder kleineres Kreuz kann Lernen bedeuten. Die Leitung fragt nach Beispielen („Wann hast du das zuletzt gemacht?“), nie nach einer Rechtfertigung."
+        },
+        {
+          "titel": "Nutzen",
+          "text": "Die Antwort auf „Wenn es mir nicht gut geht, hilft mir …“ zeigt, ob Skills im Alltag ankommen: Steht am Ende etwas aus dem Kurs auf dem Blatt? Die Wünsche vom Anfang helfen bei der Wahl der Wahleinheiten und der Ausflüge. Ein niedriger Wert bei Aussage 10 (sicher in der Gruppe) oder 12 (Hilfe kennen) ist ein Gesprächsanlass – bei Hinweisen auf Gefährdung ein Fall für die zuständige Leitung."
+        },
+        {
+          "titel": "Datenschutz",
+          "text": "Das Blatt gehört der Person: Bis zum Ende liegt es in ihrer Mappe im Raum, dann geht es mit ihr nach Hause. Die Leitung kopiert, fotografiert oder sammelt nichts ein, außer die Person möchte es. Es gibt keine Auswertung über mehrere Jugendliche und keinen Vergleich zwischen ihnen. Soll die Wirkung über viele Gruppen geprüft werden, geht das nur freiwillig und ohne Namen, nach Klärung mit der oder dem Datenschutzbeauftragten der Einrichtung."
+        }
+      ],
+      "zuordnung": {
+        "titel": "Was die Aussagen zeigen",
+        "text": "Je ein bis drei Aussagen gehören zu einem der fünf Kompetenzbereiche; Aussage 10 fragt zusätzlich nach dem Klima in der Gruppe. Der Skills-Pass hat einen anderen Zweck: Er hält fest, was jemand nach jeder Stunde mitnimmt, und wird nie mit der Standortbestimmung verglichen.",
+        "bereiche": [
+          {
+            "kompetenz": "kennen",
+            "aussagen": "1–2"
+          },
+          {
+            "kompetenz": "steuern",
+            "aussagen": "3–5"
+          },
+          {
+            "kompetenz": "verstehen",
+            "aussagen": "6–7"
+          },
+          {
+            "kompetenz": "miteinander",
+            "aussagen": "8–10"
+          },
+          {
+            "kompetenz": "entscheiden",
+            "aussagen": "11–12"
+          }
+        ]
+      },
+      "auswertung": {
+        "titel": "Mein Vergleich: Anfang und Ende",
+        "text": "Am Ende des Jahres tragen die Person und die Leitung die Kreuze von beiden Terminen gemeinsam hier ein: je Aussage ein Kreuz bei der Stufe von damals (Anfang) und bei der Stufe von heute (Ende). Unter „Ziel“ ein Stern, wenn die Aussage ein Ziel war oder erreicht ist. Veränderung: ein Kreuz in der linken Spalte (+, gewachsen) oder in der rechten (–, kleiner geworden); leer heißt gleich geblieben. Die Seite gehört der Person.",
+        "bloecke": [
+          "Anfang",
+          "Ende",
+          "Veränderung"
+        ],
+        "werte": [
+          "Ziel"
+        ],
+        "boegen": [
+          "Datum",
+          "Besprochen mit"
+        ],
+        "offen": {
+          "titel": "Wenn es mir nicht gut geht, hilft mir …",
+          "gruppen": [
+            "etwas aus dem Kurs (Skill, Skala, Koffer, Notfallkarte …)",
+            "eine Person (Freundin, Eltern, Leitung, Vertrauensperson …)",
+            "anderes (Musik, Sport, Handy …)"
+          ]
+        },
+        "praxis": "Nur am Ende: einen Skill aus dem Kurs benutzt"
+      },
+      "logbuch": {
+        "titel": "Umsetzungs-Logbuch",
+        "text": "Je Einheit eine Zeile: Datum, wie weit sie gehalten wurde, welcher Schritt entfiel, ob die Mission gegeben und in der nächsten Stunde nachgefragt wurde, Besonderes (Vorfall, Ausflug, Film). Das Logbuch gehört der Leitung und bleibt ohne Namen von Jugendlichen. Es hilft, im Team Erfahrungen zu vergleichen, ohne Leitungen zu vergleichen.",
+        "spalten": [
+          "Datum",
+          "Gehalten",
+          "Entfallen",
+          "Mission",
+          "Besonderes"
+        ],
+        "gehalten": [
+          "ganz",
+          "teils",
+          "nicht"
+        ]
+      },
+      "fragebogen": {
+        "seite": "Standortbestimmung",
+        "titel": "Mein Standort: Wie geht es mir mit diesen Dingen?",
+        "anleitung": "Dieser Bogen gehört dir. Du entscheidest, ob dein Name darauf steht und was du davon zeigst. Es gibt keine richtigen und keine falschen Antworten. Kreuze bei jeder Aussage an, wie sehr sie für dich stimmt. Danach sprechen wir darüber – nur über das, was du möchtest. Am Ende des Jahres machst du es noch einmal und schaust, was sich verändert hat.",
+        "zeitpunkt": [
+          "Anfang des Schuljahres",
+          "Ende des Schuljahres"
+        ],
+        "skala": [
+          "stimmt gar nicht",
+          "stimmt eher nicht",
+          "stimmt eher",
+          "stimmt genau"
+        ],
+        "aussagen": [
+          "Ich kann sagen, wie ich mich gerade fühle.",
+          "Ich weiß, was ich gut kann.",
+          "Wenn ich wütend oder gestresst bin, kenne ich etwas, das mir hilft, ruhiger zu werden.",
+          "Ich kann mich bremsen, bevor ich etwas tue, das ich später bereue.",
+          "Ich merke früh, wenn ich wütend oder nervös werde.",
+          "Ich merke, wenn es jemandem in der Gruppe nicht gut geht.",
+          "Ich merke, wann ein Spaß für jemanden kein Spaß mehr ist.",
+          "Ich kann sagen, was ich brauche, ohne andere zu verletzen.",
+          "Wenn ich Nein sagen will, schaffe ich es.",
+          "In unserer Gruppe fühle ich mich sicher.",
+          "Wenn jemand immer wieder fertiggemacht wird, weiß ich, was ich tun kann.",
+          "Wenn es mir oder anderen schlecht geht, weiß ich, wo es Hilfe gibt."
+        ],
+        "offen": [
+          "Wenn es mir nicht gut geht, hilft mir …",
+          "Was wünschst du dir von diesem Kurs – oder, am Ende des Jahres: Was nimmst du mit?"
+        ],
+        "praxis": {
+          "hinweis": "Nur am Ende des Schuljahres ausfüllen:",
+          "text": "In den letzten zwei Wochen habe ich einen Skill aus dem Kurs benutzt.",
+          "optionen": [
+            "nein",
+            "einmal",
+            "mehrmals"
+          ]
+        },
+        "dank": "Danke! Wir sprechen jetzt darüber. Das Blatt gehört dir und geht am Ende des Jahres mit dir nach Hause."
+      }
+    },
+    "plaene": {
+      "titel": "Der Jahresplan",
+      "einleitung": "Das Jahr hat 30 Einheiten für rund 36 Schulwochen; die übrigen Wochen bleiben für Ferien, Tests und Ausfälle. Die roten Hinweise zeigen Ausflüge, Draußen-Stunden und Filme: Dafür brauchen Sie vorher das Einverständnis der Eltern, Termine und geklärte Vorführrechte. Wahleinheiten vertiefen ein Thema; fallen Stunden aus, entfallen zuerst sie. Die Kapitel bauen aufeinander auf – ihre Reihenfolge sollte bleiben."
+    },
+    "jahresweg": {
+      "titel": "Der Jahresweg",
+      "text": "Kopiervorlage für ein Plakat: auf A3 vergrößern und im Raum aufhängen. Nach jedem Kapitel markiert die Gruppe, wo sie steht – jede Person mit einem eigenen Klebepunkt. So sieht sie, was sie schon geschafft hat.",
+      "plakat": "Unser Weg durch die {klasse}"
+    },
+    "glossar": {
+      "titel": "Glossar",
+      "text": "Die Wörter aus den Wortspeichern der Einheiten – zum Nachschlagen für Jugendliche und Leitung. Die Zahl nennt die Einheit, in der das Wort vorkommt."
+    },
+    "literatur": {
+      "titel": "Literatur",
+      "text": "Alle Quellen, auf die sich Teil A und die Einheiten der {klasse} stützen. Bei jeder Einheit stehen die Belege unter „Fachlicher Hintergrund“."
+    },
+    "heft": {
+      "inhalt": "Inhalt",
+      "jedeStunde": "Für jede Stunde",
+      "missionen": "Meine Wochen-Missionen",
+      "missionenText": "Nach jeder Stunde wartet eine kleine Mission auf dich. Schreib auf, wann du sie machst – deinen Moment, zum Beispiel: Wenn ich im Bus sitze … Kreuze an, wenn du sie geschafft hast. Es gibt keine Note – es zählt, dass du es versuchst.",
+      "geschafft": "geschafft",
+      "moment": "Mein Moment: Wenn …",
+      "karten": "Meine Skill-Karten",
+      "kartenText": "Schneide die Karten aus. Sie passen ins Portemonnaie oder in die Handyhülle – für Momente, in denen du einen Skill brauchst.",
+      "woerter": "Meine Wörter",
+      "woerterText": "Die wichtigsten Wörter aus den Stunden.",
+      "hilfeTitel": "Hier bekommst du Hilfe",
+      "hilfeText": "Im CDSE hört dir deine Leitung zu. Du kannst auch anonym und kostenlos anrufen:",
+      "notizen": "Meine Notizen"
+    },
+    "rueckseite": {
+      "titel": "Drei Jahre, ein roter Faden",
+      "text": "Der Skills-Kurs begleitet Jugendliche bis zu drei Jahre: In der 7e lernen sie ihre Gefühle kennen und steuern, in der 6e setzen sie ihre Skills im Alltag ein, in der 5e planen sie ihren eigenen Weg. Jede Doppelstunde folgt demselben Aufbau – mit Ritualen, die Sicherheit geben, und Übungen, die im Alltag tragen.",
+      "dieses": "dieses Heft"
+    }
+  },
+  "fr": {
+    "vorwort": {
+      "titel": "So ist dieses Leitungsheft aufgebaut",
+      "text": "Teil A erklärt den Kurs: Grundlagen, Aufbau der Doppelstunde, Rahmen und Sicherheit, Methoden für Kleingruppen mit Ausflügen und Filmen, Zusammenarbeit mit Eltern und Team und die persönliche Standortbestimmung. Teil B zeigt den Jahresplan der {klasse}. Teil C enthält die Einheiten des Jahres, Kapitel für Kapitel – jede mit Zielen, Material, Ablauf, Anleitung mit Beispielsätzen, Hinweisen für schwierige Momente, einer Kurzfassung für eine einzelne Stunde und den Kopiervorlagen direkt dahinter. Teil D enthält die Blätter, die das ganze Jahr gebraucht werden. Bei jedem Blatt steht die Seite im Schülerheft."
+    },
+    "start": {
+      "titel": "Bevor Sie starten",
+      "einleitung": "Die Fragen, die sich Leitungen vor den ersten Stunden mit einer Kleingruppe am häufigsten stellen – mit kurzen Antworten aus der Praxis. Ausführlich steht alles in Teil A und in jeder Einheit.",
+      "fragen": [
+        {
+          "titel": "Ich habe keine psychologische Ausbildung. Kann ich das leiten?",
+          "text": "Ja. Der Kurs verlangt keine Therapie, sondern gute Gruppenarbeit: Sie leiten Übungen an, schützen den Rahmen und holen Hilfe, wenn etwas zu groß wird. Jede Einheit beschreibt Schritt für Schritt, was Sie vorbereiten, tun und sagen können. Für alles, was darüber hinausgeht, ist die zuständige Leitung (Responsable) da – und zu zweit zu leiten ist erlaubt."
+        },
+        {
+          "titel": "Was, wenn nur zwei kommen – oder nur eine Person?",
+          "text": "Der Kurs ist für höchstens drei gebaut und trägt auch zu zweit: Aus den Dreier-Rollen (üben, Gegenüber, beobachten) werden Paare, die Leitung übernimmt die dritte Rolle. Kommt nur eine Person, wird aus der Stunde ein Gespräch mit Übungen: ein Spiel, der Skill, der Skills-Pass. Wer gefehlt hat, bekommt Mission und Skill in der nächsten Stunde nachgereicht – ohne Vorwurf."
+        },
+        {
+          "titel": "Was, wenn jemand ausrastet – drinnen oder unterwegs?",
+          "text": "Ruhig bleiben, leiser und langsamer werden, Abstand lassen und den Stopp-Plan anwenden, den die Gruppe in der ersten Stunde vereinbart hat (Zeichen, Ort, Rückkehr). Unterwegs gilt zusätzlich: Handy und Notfallnummern dabei, wo möglich zu zweit. Bei Gefahr wird der Ausflug ruhig abgebrochen. Danach kurz klären, ohne Strafe: Was war der Auslöser, was hat geholfen?"
+        },
+        {
+          "titel": "Muss ich selbst Persönliches erzählen?",
+          "text": "Nein. Sie machen die Übungen mit und geben Beispiele, aber Sie entscheiden, wie viel Sie zeigen – genau wie die Jugendlichen. Ein kleines, echtes Beispiel („Vor Elterngesprächen bin ich nervös“) wirkt mehr als eine große Geschichte."
+        },
+        {
+          "titel": "Was, wenn jemand weint oder etwas Schweres erzählt?",
+          "text": "Ruhig bleiben, den Beitrag würdigen und in der Gruppe nicht vertiefen: „Danke, dass du das sagst. Wir reden nach der Stunde in Ruhe weiter.“ Wer Abstand braucht, bekommt eine Pause mit Begleitung, nie allein. Bei Hinweisen auf eine Gefährdung noch am selben Tag die zuständige Leitung (Responsable) informieren und nach dem Schutzkonzept handeln (siehe „Rahmen und Sicherheit“)."
+        },
+        {
+          "titel": "Wie motiviere ich ohne Noten?",
+          "text": "Mit Abwechslung, Bewegung, Ausflügen und Themen, die die Jugendlichen wirklich betreffen. Fortschritt wird sichtbar im Skills-Pass mit Stempel, in den Zahlen vorher und nachher und in der Standortbestimmung. Loben Sie das Mitmachen, nicht „richtige“ Antworten: Für viele ist es der erste Ort, an dem sie nicht scheitern können."
+        },
+        {
+          "titel": "Was, wenn die Zeit oder das Wetter nicht passt?",
+          "text": "Die Minuten sind ein Plan, kein Zwang. Lieber eine Übung gründlich als drei hastig. Ausflüge brauchen oft mehr als 100 Minuten: Zeitblock vorher klären oder ein Ziel in Gehweite wählen. Zu jedem Ausflug gibt es eine Variante im Haus; Wahleinheiten entfallen zuerst, wenn Stunden ausfallen. Fest bleiben Check-in, Skill und Abschluss."
+        },
+        {
+          "titel": "Einige lesen mühsam oder verstehen kaum Deutsch.",
+          "text": "Jede Einheit hat einen Wortspeicher und eine Differenzierung „Einfacher“: Bilder, Gesten, Satzanfänge, mündlich statt schriftlich, Fotos statt Text. Gefühlsrad und Anspannungsskala funktionieren auch mit wenigen Wörtern; Wörter und Skills dürfen in der eigenen Sprache notiert werden. Das Schülerheft gibt es auf Deutsch; mündlich erklären Sie in jeder Sprache, die Sie sprechen."
+        },
+        {
+          "titel": "Was, wenn jemand nicht mitmachen oder nicht mitkommen will?",
+          "text": "Freiwillig ist alles Persönliche, nicht die Anwesenheit. Wer nicht sprechen will, sagt „weiter“; wer eine Übung nicht mitmachen möchte, übernimmt eine Rolle (Zeit, Beobachtung, Kamera). Wer nicht mitkommen will, wird nicht überredet, sondern gefragt, was fehlt – und die Leitung klärt, wo die Person in dieser Zeit betreut wird. Nachfragen unter vier Augen; oft steckt Unsicherheit dahinter."
+        },
+        {
+          "titel": "Was sage ich den Eltern?",
+          "text": "Der Elternbrief liegt in Teil A bei, mit Einverständnis für Ausflüge, Filme und Aufnahmen. Er geht vor der ersten Stunde raus. Fehlt das Einverständnis, klären Sie vor dem Ausflug mit der zuständigen Leitung, wo die Person in dieser Zeit betreut wird. Vor sensiblen Einheiten, im Jahresplan markiert, informieren Sie noch einmal kurz. Fragen von Eltern beantworten Sie gern gemeinsam mit der zuständigen Leitung."
+        },
+        {
+          "titel": "Wie viel Vorbereitung brauche ich?",
+          "text": "Rund 20 Minuten zum Lesen der Einheit, dazu Material und Kopien – bei Ausflügen und Filmen auch die Organisation: Anmeldung, Fahrplan, Vorführrechte, Szenen vorher ansehen. Die erste Seite jeder Einheit zeigt Material und Vorbereitung auf einen Blick. Vieles brauchen Sie das ganze Jahr: Gefühlsrad-Plakat, Klebepunkte, Klangschale, Moderationskarten, Notfallmappe."
+        },
+        {
+          "titel": "Und die Wochen-Mission?",
+          "text": "Am Ende jeder Stunde in einem Satz ansagen. Jede Person wählt ihren eigenen Moment („Wenn ich im Bus sitze, dann …“) und schreibt ihn ins Heft. Im Rückblick der nächsten Stunde fragen Sie nach dem Moment: Kam er – und was hast du gemacht? Keine Kontrolle, keine Note; wer es nicht geschafft hat, erzählt, was dazwischenkam."
+        }
+      ]
+    },
+    "ueberblick": {
+      "titel": "Der Kurs auf einen Blick",
+      "einleitung": "Der Skills-Kurs Annexe begleitet Jugendliche von 12 bis 15 Jahren, die vorübergehend außerhalb ihrer Klasse unterrichtet werden – in einer Kleingruppe von höchstens drei Personen mit einer erfahrenen Leitung. Sie lernen, Gefühle zu verstehen, mit Anspannung umzugehen, zu sagen, was sie brauchen, Grenzen zu setzen und gut zu entscheiden. Der Kurs übt, statt zu predigen: Jede Doppelstunde besteht aus vielen kurzen Übungen, etwa jede dritte Stunde findet draußen statt oder ist ein Ausflug, etwa jede fünfte arbeitet mit einem Film.",
+      "fakten": [
+        {
+          "zahl": "3",
+          "text": "Jugendliche in der Gruppe, höchstens"
+        },
+        {
+          "zahl": "30",
+          "text": "Doppelstunden im Jahr, je 100 Minuten"
+        },
+        {
+          "zahl": "9",
+          "text": "Ausflüge und Draußen-Stunden in der 7e"
+        },
+        {
+          "zahl": "6",
+          "text": "Film-Stunden mit genau benannten Szenen"
+        },
+        {
+          "zahl": "5",
+          "text": "Kompetenzbereiche nach CASEL"
+        },
+        {
+          "zahl": "0",
+          "text": "Noten – Rückmeldung über Skills-Pass und Standortbestimmung"
+        }
+      ],
+      "wirkung": {
+        "titel": "Warum der Kurs wirkt",
+        "text": "Schulprogramme, die sozial-emotionale Kompetenzen Schritt für Schritt aufbauen, verbessern Verhalten, Klima und auch die Schulleistungen (Durlak et al., 2011); die Effekte sind noch Jahre später messbar (Taylor et al., 2017). Am besten wirken Programme mit vier Merkmalen – nach ihnen ist der Kurs gebaut:",
+        "punkte": [
+          {
+            "titel": "Schritt für Schritt",
+            "text": "Die Einheiten bauen aufeinander auf – im ersten Jahr vom Ich über das Wir zur Welt."
+          },
+          {
+            "titel": "Aktiv",
+            "text": "Rollenspiele, Challenges, Experimente, Ausflüge: Skills werden geübt, nicht nur besprochen."
+          },
+          {
+            "titel": "Fokussiert",
+            "text": "Jede Einheit hat ein klares Ziel und genug Zeit zum Üben – bei drei Jugendlichen übt jede Person selbst."
+          },
+          {
+            "titel": "Ausdrücklich",
+            "text": "Die Jugendlichen wissen, was sie lernen und wozu – der Skills-Pass hält es fest."
+          }
+        ]
+      },
+      "nicht": {
+        "titel": "Was der Kurs nicht ist",
+        "text": "Keine Therapie und keine Einzelberatung. Die Leitung muss nichts diagnostizieren und keine Krisen lösen. Sie schaut hin, hört zu und leitet weiter: an die zuständige Leitung (Responsable) und, wo nötig, an die Fachleute der Einrichtung."
+      },
+      "material": {
+        "titel": "Das Material",
+        "text": "Je Klassenstufe ein Leitungsheft mit allen Einheiten und ein Schülerheft mit allen Blättern, beides auf Deutsch. Jede Einheit ist vollständig ausgearbeitet: Ziele, Material, Ablauf mit Minuten, Anleitung mit Beispielsätzen und Hinweise für schwierige Momente – bei Ausflügen und Filmen auch Organisation und Szenen."
+      }
+    },
+    "kompetenzen": {
+      "titel": "Fünf Kompetenzbereiche",
+      "einleitung": "Der Kurs folgt dem international verbreiteten Rahmen von CASEL (2020). Jede Einheit fördert ein bis drei Bereiche; der Jahresplan zeigt sie mit farbigen Punkten. Über drei Jahre wachsen die Ziele mit den Jugendlichen: vom Erkennen über das Steuern zum eigenen Weg.",
+      "bereiche": {
+        "kennen": "Gefühle, Bedürfnisse, Stärken und Gedanken wahrnehmen und benennen.",
+        "steuern": "Anspannung erkennen, Skills einsetzen, Impulse bremsen, Ziele verfolgen.",
+        "verstehen": "Gefühle und Sichtweisen anderer erkennen, Vielfalt respektieren.",
+        "miteinander": "Zuhören, sagen, was man braucht, Grenzen setzen, Konflikte fair lösen.",
+        "entscheiden": "Folgen abwägen, Risiken einschätzen, für sich und andere gut entscheiden."
+      },
+      "hinweis": "Die Jahresziele beschreiben, was die Jugendlichen am Ende des Schuljahres können sollen. Sie werden nicht benotet; die Jugendlichen halten ihren Stand in der Standortbestimmung am Anfang und am Ende des Jahres fest."
+    },
+    "grundlagen": {
+      "titel": "Theoretische Grundlagen",
+      "einleitung": "Der Skills-Kurs Annexe erfindet nichts Neues: Er übersetzt Modelle, die sich in Forschung und Praxis bewährt haben, in Doppelstunden für kleine Gruppen. Jede Einheit nennt im „Fachlichen Hintergrund“, auf welchem Modell sie beruht und was über die Wirkung bekannt ist; alle Quellen stehen im Literaturverzeichnis im Anhang.",
+      "theorien": [
+        {
+          "titel": "Fünf Kompetenzbereiche (CASEL)",
+          "text": "Sozial-emotionales Lernen umfasst fünf Bereiche: sich selbst kennen, sich steuern, andere verstehen, Beziehungen gestalten, verantwortlich entscheiden. Programme, die diese Bereiche systematisch üben, verbessern Fertigkeiten, Verhalten, Wohlbefinden und Schulleistung; am stärksten wirkt, dass sich Jugendliche in der Schule sicherer und zugehöriger fühlen (CASEL, 2020; Durlak et al., 2011; Cipriano et al., 2023).",
+          "imFach": "die fünf Jahresziele der Klassenstufe, die Kompetenz-Punkte jeder Einheit, die zwölf Aussagen der Standortbestimmung.",
+          "quellen": [
+            "casel2020",
+            "durlak2011",
+            "cipriano2023"
+          ]
+        },
+        {
+          "titel": "SAFE: so üben wirksame Programme",
+          "text": "Wirksame Programme bauen aufeinander auf (sequenced), lassen aktiv üben (active), haben einen klaren Fokus (focused) und sagen offen, welche Fertigkeit geübt wird (explicit). Ebenso wichtig ist die Umsetzung: Einheiten, die wie geplant gehalten werden, wirken – gekürzte oder improvisierte kaum (Durlak et al., 2011; Durlak & DuPre, 2008).",
+          "imFach": "der feste Aufbau der Doppelstunde (Check-in, Rückblick, zwei Hauptteile mit Übung, Skill, Skills-Pass), die Kapitelbögen einführen – üben – anwenden – übertragen (zum Beispiel Kapitel 4: Skala, Körper, Sinne, Kopf, Koffer an der Kletterwand), die Kurzfassung statt Improvisation.",
+          "quellen": [
+            "durlak2011",
+            "durlakDuPre2008"
+          ]
+        },
+        {
+          "titel": "Skills: Fertigkeiten gegen starke Gefühle (DBT)",
+          "text": "Die Dialektisch-Behaviorale Therapie beschreibt Fertigkeiten, mit denen Menschen starke Anspannung aushalten, Gefühle regulieren und Beziehungen führen; die Fassung für Jugendliche und die Schulfassung DBT STEPS-A übertragen sie auf Gruppen und Klassen. Kern: Bei sehr hoher Anspannung versagen Fertigkeiten, die Nachdenken voraussetzen – dann helfen Körper und Sinne (Linehan, 2015; Rathus & Miller, 2015; Fleischhaker, Sixt & Schulz, 2011; Mazza et al., 2016).",
+          "imFach": "der Begriff Skill, die Anspannungsskala von 0 bis 100 (Einheit 10), Körper-, Sinnes- und Kopf-Skills (11–13), Skills-Koffer, Ampelplan und Notfallkarte (14), erst runter, dann reden (10), Schlaf, Essen und Bewegung als Skills (27).",
+          "quellen": [
+            "linehan2015",
+            "rathusMiller2015",
+            "fleischhaker2011",
+            "mazza2016"
+          ]
+        },
+        {
+          "titel": "Emotionen regulieren: früh ansetzen, Strategie wählen",
+          "text": "Gefühle entstehen in Schritten – Situation, Aufmerksamkeit, Bewertung, Reaktion –, und je früher man eingreift, desto weniger Kraft kostet es. Ein Gefühl zu benennen, dämpft es messbar; bei schwachen Gefühlen hilft Umdeuten, bei sehr starken Ablenkung über Körper und Sinne (Gross, 1998; Lieberman et al., 2007; Sheppes et al., 2011; Nummenmaa et al., 2014).",
+          "imFach": "Gefühlsrad und Check-in in jeder Stunde (1), Gefühlswörter und Botschaften (7), Filmszenen über Gefühle am Steuer (8), Warnsignale im Körper (9), erst runter, dann reden (10).",
+          "quellen": [
+            "gross1998",
+            "lieberman2007",
+            "sheppes2011",
+            "nummenmaa2014"
+          ]
+        },
+        {
+          "titel": "Stress: Bewertung und Umdeutung",
+          "text": "Stress entsteht, wenn eine Anforderung größer wirkt als die eigenen Mittel; diese Bewertung lässt sich ändern. Wer Herzklopfen vor einer Prüfung als Bereitschaft statt als Gefahr deutet, schneidet besser ab, und bei Jugendlichen schützt die Botschaft „Stress kann helfen“ messbar vor Belastung (Lazarus & Folkman, 1984; Jamieson et al., 2010; Brooks, 2014; Yeager, Bryan et al., 2022).",
+          "imFach": "die Zahl vorher und nachher im Experiment (11, 14), Prüfungsstress, Blackout-Plan und unauffällige Skills für den Test (28).",
+          "quellen": [
+            "lazarusFolkman1984",
+            "jamieson2010",
+            "brooks2014",
+            "yeagerBryan2022"
+          ]
+        },
+        {
+          "titel": "Gedanken prüfen – und Abstand gewinnen",
+          "text": "Zwischen Situation und Gefühl steht eine Bewertung (ABC-Modell); tief sitzende Sätze über sich selbst färben sie. Man kann solche Sätze prüfen wie ein Detektiv – oder ihnen mit Abstand begegnen, ohne sie zu bekämpfen („Mein Kopf sagt gerade …“). Von Lehrkräften angeleitet, wirkt reine Gedankenarbeit in der Schule wenig; wirksamer sind Figuren, Verhaltensexperimente und Abstand (Ellis, 1962; Beck, 2011; Hayes, Strosahl & Wilson, 2012; Masuda et al., 2004; Stallard et al., 2014).",
+          "imFach": "das Kapitel „Meine Gedanken“ (15–17) mit Glaubenssätzen im Film, Gedanken-Gericht und Beweis-Challenge in der Stadt, Prüfungsgedanken (28).",
+          "quellen": [
+            "ellis1962",
+            "beck2011",
+            "hayes2012",
+            "masuda2004",
+            "stallard2014"
+          ]
+        },
+        {
+          "titel": "Lernen am Modell und durch Bewältigung (Bandura)",
+          "text": "Menschen lernen, indem sie anderen zusehen, und trauen sich etwas zu, wenn sie es selbst geschafft haben – die stärkste Quelle von Selbstwirksamkeit. Deshalb macht die Leitung jeden Skill vor und mit, und deshalb wird im Rollenspiel geübt, nicht nur besprochen (Bandura, 1977; Bandura & Schunk, 1981).",
+          "imFach": "„Die Leitung macht mit“ in jedem Check-in und Skill, Rollenspiele mit der Leitung in der schwierigen Rolle (20, 22), Skills-Tester mit Zahl vorher und nachher (11), die Beweis-Challenge (17), der Skills-Koffer im Ernstfall an der Kletterwand (14).",
+          "quellen": [
+            "bandura1977",
+            "banduraSchunk1981"
+          ]
+        },
+        {
+          "titel": "Drei Grundbedürfnisse (Selbstbestimmungstheorie)",
+          "text": "Menschen sind motiviert und gesund, wenn drei Bedürfnisse erfüllt sind: sich als fähig erleben, selbst entscheiden, dazugehören. Beteiligung ist dabei nur echt, wenn Entscheidungen Folgen haben (Deci & Ryan, 2000; Hart, 1992).",
+          "imFach": "das Glas der Bedürfnisse (4, 14, 30), der Gruppenvertrag aus der Gruppe (1), echte Entscheidungen der Gruppe wie das Ziel des Abschlussausflugs (30), Wahlfreiheit in jeder Übung („weiter“ ist erlaubt).",
+          "quellen": [
+            "deciRyan2000",
+            "hart1992"
+          ]
+        },
+        {
+          "titel": "Wenn-dann-Pläne und WOOP",
+          "text": "Ein Vorsatz wird umgesetzt, wenn er an eine konkrete Situation gebunden ist: „Wenn X passiert, dann tue ich Y.“ Über viele Studien hinweg erhöht das deutlich die Chance, dass ein Ziel erreicht wird; bei Jugendlichen stärkt die Verbindung mit dem ehrlichen Blick auf das Hindernis (WOOP) die Selbstdisziplin (Gollwitzer, 1999; Gollwitzer & Sheeran, 2006; Duckworth et al., 2011; Oettingen, 2014).",
+          "imFach": "die Wochen-Mission jeder Einheit mit dem selbst gewählten Moment („Mein Moment: Wenn …“), der Ampelplan (14), der Handy-Plan (25), der kleine Schritt (27), der Blackout-Plan (28).",
+          "quellen": [
+            "gollwitzer1999",
+            "gollwitzerSheeran2006",
+            "duckworth2011",
+            "oettingen2014"
+          ]
+        },
+        {
+          "titel": "Mobbing ist ein Gruppenprozess – und Normen entscheiden",
+          "text": "In einer Klasse hat fast jede Person eine Rolle: Täter, Helfer, Verstärker, Außenstehende, Verteidiger, Betroffene. Mobbing braucht Publikum; wer die Seite wechselt, nimmt es ihm. Jugendliche überschätzen zudem, wie sehr andere Mobbing billigen; wird die echte Mehrheit sichtbar, sinkt es. Programme, die die Zuschauenden stärken, wirken – am besten bis zur 7e (Olweus, 1993; Salmivalli et al., 1996; Kärnä et al., 2011; Polanin, Espelage & Pigott, 2012; Perkins, Craig & Perkins, 2011; Yeager et al., 2015).",
+          "imFach": "Rollen im Mobbing, Zivilcourage-Leiter und „Hilfe holen ist kein Petzen“ (23), Hilfe holen üben (24), das zweite Nein (22).",
+          "quellen": [
+            "olweus1993",
+            "salmivalli1996",
+            "kaerna2011",
+            "polanin2012",
+            "perkinsCraig2011",
+            "yeagerFong2015"
+          ]
+        },
+        {
+          "titel": "Jugendliche wollen Status, Respekt und Autonomie",
+          "text": "Ab der Pubertät reagiert das Gehirn stärker auf Belohnung und auf Gleichaltrige; Jugendliche gehen in Gegenwart anderer mehr Risiken ein und lehnen ab, was ihren Status bedroht oder sie bevormundet. Programme wirken, wenn sie Respekt zeigen, die Entscheidung den Jugendlichen lassen und offenlegen, wie Erwachsene oder Firmen sie steuern wollen (Steinberg, 2014; Gardner & Steinberg, 2005; Yeager, 2017; Yeager, Dahl & Dweck, 2018; Bryan et al., 2016).",
+          "imFach": "keine Noten, keine Moral, „Ihr entscheidet“ als Haltung (22, 25, 26), Jugendliche als Forschende und Erklärende (Skills-Tester 11, Skills-Clip für die nächste Gruppe 29), Tricks der Apps aufdecken (25, 26).",
+          "quellen": [
+            "steinberg2014",
+            "gardnerSteinberg2005",
+            "yeager2017",
+            "yeagerDahlDweck2018",
+            "bryanYeager2016"
+          ]
+        },
+        {
+          "titel": "Stärken und Ressourcen vor Defiziten",
+          "text": "Wer sich auf das besinnt, was trägt – verlässliche Menschen, eigene Fähigkeiten, gelungene Momente –, bewältigt Belastungen besser; Resilienz entsteht aus gewöhnlichen Schutzfaktoren. Eigene Stärken bewusst auf neue Art einzusetzen und Gutes zu notieren, hob in Studien das Wohlbefinden; Selbstmitgefühl geht bei Jugendlichen mit weniger Angst und Niedergeschlagenheit einher (Masten, 2014; Werner & Smith, 1992; Peterson & Seligman, 2004; Seligman et al., 2005; Neff, 2003; Neff & McGehee, 2010).",
+          "imFach": "Baum der Stärke und Stärken-Post (6, 17, 30), die Rückmeldung der Gruppe zu Stärken (5), die freundliche Stimme (16), Stärken-Rücken beim Abschied (30).",
+          "quellen": [
+            "masten2014",
+            "wernerSmith1992",
+            "petersonSeligman2004",
+            "seligman2005",
+            "neff2003",
+            "neffMcGehee2010"
+          ]
+        },
+        {
+          "titel": "Die kleine Gruppe wirkt mit",
+          "text": "Auch eine Gruppe von drei Jugendlichen durchläuft Phasen – ankommen, ausprobieren, Regeln aushandeln, zusammenarbeiten, sich lösen. Sie profitiert von dem, was Gruppenarbeit auszeichnet: zu merken, dass man mit seinen Erfahrungen nicht allein ist, voneinander zu lernen und dazuzugehören. Ein klar gestalteter Anfang und ein klar gestalteter Abschied gehören dazu (Tuckman, 1965; Tuckman & Jensen, 1977; Yalom & Leszcz, 2005).",
+          "imFach": "der Gruppenvertrag (1), Kennenlernen und Teamaufgaben (2, 3), die Rückmeldung der Gruppe zu Stärken (5, 6), der Skills-Clip für die nächste Gruppe (29), der gestaltete Abschied (30).",
+          "quellen": [
+            "tuckman1965",
+            "tuckmanJensen1977",
+            "yalomLeszcz2005"
+          ]
+        },
+        {
+          "titel": "Draußen lernen und Bewegung",
+          "text": "Wer gemeinsam etwas erlebt, das ihn fordert – klettern, ein Hindernis überwinden, sich in der Stadt zurechtfinden –, lernt über sich und die Gruppe oft mehr als im Gespräch. Die Erlebnispädagogik arbeitet dafür mit drei Zonen (Komfortzone, Lernzone, Panikzone) und mit der Auswertung danach (Senninger, 2000). Natur kann die Aufmerksamkeit entlasten (Kaplan, 1995), und Bewegung hängt bei Kindern und Jugendlichen mit besserer Stimmung und seelischer Gesundheit zusammen, auch wenn die Belege eher mäßig sind (Biddle & Asare, 2011).",
+          "imFach": "Teamaufgaben im Wald (3), der echte Baum (6), Bewegungs-Experiment (11), Sinnes-Parcours (12), Kletterhalle mit dem Skills-Koffer (14), Stadt-Experimente (17), Einkaufen und Kochen (27), Abschlussausflug (30).",
+          "quellen": [
+            "senninger2000",
+            "kaplan1995",
+            "biddleAsare2011"
+          ]
+        },
+        {
+          "titel": "Filme und Figuren: Abstand schützt",
+          "text": "Über erfundene Figuren lässt sich leichter sprechen als über sich selbst: Mit etwas Abstand denken Menschen klarer und weniger belastet über Schwieriges nach (Kross & Ayduk, 2017). Filmfiguren sind außerdem Modelle: Wer sieht, wie jemand ein Problem angeht, traut sich das eher selbst zu (Bandura, 1977). Eine Szene lässt sich anhalten, wiederholen und im Rollenspiel weiterspielen, wie im Forumtheater (Boal, 1979). Deshalb arbeitet der Kurs mit genau benannten Szenen und einem Auftrag, nicht mit Filmabenden ohne Ziel.",
+          "imFach": "School of Rock (5), Alles steht Kopf (8), Alles steht Kopf 2 (15), WALL·E (18), Wunder (23), Das Dilemma mit den sozialen Medien (26).",
+          "quellen": [
+            "krossAyduk2017",
+            "bandura1977",
+            "boal1979"
+          ]
+        }
+      ]
+    },
+    "doppelstunde": {
+      "titel": "So läuft eine Doppelstunde",
+      "einleitung": "Alle Einheiten folgen demselben Aufbau – auch Ausflüge und Filmstunden behalten Ankommen und Abschluss. Das gibt der Gruppe Sicherheit und der Leitung Routine: Nach wenigen Wochen laufen Check-in und Abschluss fast von selbst.",
+      "ablauf": [
+        {
+          "min": "0–10",
+          "phase": "ankommen",
+          "titel": "Check-in",
+          "text": "Gefühlsrad: Jede Person zeigt ihr Gefühl und sagt, wenn sie mag, einen Satz dazu; die Leitung beginnt. Ab Einheit 10 kommt die Anspannung von 0 bis 100 dazu."
+        },
+        {
+          "min": "10–15",
+          "phase": "bruecke",
+          "titel": "Rückblick",
+          "text": "Kam dein Moment – und was hast du gemacht? Dann das Thema von heute nennen."
+        },
+        {
+          "min": "15–45",
+          "phase": "uebung",
+          "titel": "Teil 1",
+          "text": "Kurze Psychoedukation, anschaulich und in wenigen Minuten, dann Übungen: erst allein, dann zu zweit mit einer Person, die beobachtet."
+        },
+        {
+          "min": "45–50",
+          "phase": "aktiv",
+          "titel": "Bewegung oder Pause",
+          "text": "Fünf Minuten aufstehen und bewegen – oder essen und trinken, je nach Tag und Gruppe."
+        },
+        {
+          "min": "50–85",
+          "phase": "uebung",
+          "titel": "Teil 2",
+          "text": "Praxis: Spiel, Rollenspiel, Challenge, Film oder Ausflug – hier wird das Thema ausprobiert."
+        },
+        {
+          "min": "85–95",
+          "phase": "skill",
+          "titel": "Skill",
+          "text": "Ein Skill oder eine kurze Achtsamkeitsübung, höchstens drei Minuten angeleitet, mit Zahl vorher und nachher."
+        },
+        {
+          "min": "95–100",
+          "phase": "abschluss",
+          "titel": "Abschluss",
+          "text": "Ein Satz in den Skills-Pass, die neue Mission als Wenn-dann-Plan, den eigenen Moment wählen, Ausblick."
+        }
+      ],
+      "rituale": {
+        "titel": "Drei Rituale für das ganze Jahr",
+        "punkte": [
+          {
+            "titel": "Check-in mit dem Gefühlsrad",
+            "text": "Jede Stunde beginnt mit der Frage: Wie geht es dir gerade? Ein Wort am Gefühlsrad genügt."
+          },
+          {
+            "titel": "Skills-Pass",
+            "text": "Am Ende jeder Stunde ein Satz: Das nehme ich mit. Dazu ein Stempel; die Einträge werden nicht bewertet."
+          },
+          {
+            "titel": "Réckbléck",
+            "text": "Davor eine kurze Runde, die zum Thema passt: ein Wort, der Daumen oder ein Satz. „Weiter“ ist erlaubt."
+          }
+        ]
+      },
+      "klasse": {
+        "titel": "Mit drei Jugendlichen arbeiten – die Rolle der Leitung",
+        "punkte": [
+          {
+            "titel": "Jede Person übt selbst",
+            "text": "In einer kleinen Gruppe gibt es keinen Platz zum Verstecken – und keinen Grund dafür. Jede Person hat eigene Ziele, ihr eigenes Glas, ihren eigenen Baum und ihren eigenen Skills-Koffer."
+          },
+          {
+            "titel": "Dreier-Rollen",
+            "text": "Eine Person übt, eine ist das Gegenüber, eine beobachtet und gibt eine Rückmeldung (ein Lob, ein Tipp). Nach jeder Runde wechseln die Rollen."
+          },
+          {
+            "titel": "Die Leitung macht mit",
+            "text": "Sie beginnt den Check-in, probiert jeden Skill und spielt die schwierige Rolle selbst: die drängelnde, die genervte, die ungeduldige Person. Nie sind es die Jugendlichen, die damit beginnen."
+          },
+          {
+            "titel": "Beziehung vor Methode",
+            "text": "Passt eine Übung an einem Tag nicht, wird sie gekürzt oder getauscht. Zuerst wird gesucht, was schon gelingt; Fehler und schwierige Gefühle werden nicht bewertet."
+          },
+          {
+            "titel": "Ein Ruhezeichen, feste Orte",
+            "text": "Dasselbe Zeichen das ganze Jahr (Hand heben, Klangschale), dieselbe Zeit, derselbe Raum. Verlässlichkeit gibt Sicherheit – auch für die Wege nach draußen."
+          },
+          {
+            "titel": "Beispiele statt Bekenntnisse",
+            "text": "Gearbeitet wird mit erfundenen Figuren und Filmfiguren – nah am Alltag, nie über einzelne Jugendliche. In einer kleinen Gruppe wüsste sonst jede Person sofort, wer gemeint ist."
+          }
+        ]
+      }
+    },
+    "sicherheit": {
+      "titel": "Rahmen und Sicherheit",
+      "einleitung": "In diesem Kurs geht es um Gefühle, Freundschaft, Grenzen und manchmal um schwere Themen. Viele Jugendliche bringen belastende Erfahrungen mit, und die Gruppe ist oft unterwegs. Ein klarer Rahmen schützt die Jugendlichen und die Leitung.",
+      "grundsaetze": [
+        {
+          "titel": "Freiwillig",
+          "text": "Niemand muss Persönliches erzählen; „weiter“ ist immer erlaubt. Persönliche Schreibaufgaben werden weder eingesammelt noch gegen den Willen vorgelesen. Jede Person darf bei jeder Übung aussetzen (Stopp-Recht) und bekommt dann eine andere Rolle. Für Momente, in denen es zu viel wird, vereinbart die Gruppe in der ersten Stunde einen Stopp-Plan: Zeichen, Ort, Rückkehr."
+        },
+        {
+          "titel": "Keine Tiefenbohrung",
+          "text": "Belastendes wird in der Gruppe nicht vertieft, sondern nach der Stunde unter vier Augen aufgegriffen. Bei drei Personen erfahren alle sofort alles: Die Leitung stoppt freundlich, würdigt den Beitrag und bietet ein Gespräch an."
+        },
+        {
+          "titel": "Vertraulich – mit Grenze",
+          "text": "Was erzählt wird, bleibt in der Gruppe – auch in Chats: keine Fotos von Plakaten mit Namen, keine Screenshots. Ist jemand in Gefahr, muss die Leitung handeln. Das sagt sie von Anfang an offen und teilt der Person vorher mit, was sie tut und warum."
+        },
+        {
+          "titel": "Unterwegs gelten feste Regeln",
+          "text": "Ausflüge nur mit schriftlichem Einverständnis der Eltern und nach den Regeln des CDSE für Aufsicht und Notfall: Treffpunkt und Signal vereinbaren, Notfallnummern dabeihaben, in Sichtweite bleiben, bei Gefahr ruhig abbrechen."
+        },
+        {
+          "titel": "Filme und Aufnahmen",
+          "text": "Filme nur mit geklärten Vorführrechten und geprüfter Altersfreigabe (bis 12), nur genau benannte Szenen, vorher selbst angesehen. Fotos, Videos und Tonaufnahmen von Jugendlichen nur mit Einverständnis; sie bleiben in der Gruppe."
+        },
+        {
+          "titel": "Sensible Einheiten",
+          "text": "Im Jahresplan markiert: vorher mit der zuständigen Leitung abstimmen, die Eltern informieren. Beispiele sind erfunden, nie über Anwesende. Hinweise auf laufendes Mobbing werden nicht in der Stunde geklärt, sondern nach dem Vorgehen der Einrichtung."
+        }
+      ],
+      "anvertrauen": {
+        "titel": "Wenn sich jemand anvertraut",
+        "schritte": [
+          "Ruhig zuhören und nicht ausfragen: keine Details erfragen, keine Suggestivfragen.",
+          "Glauben schenken und danken: Gut, dass du es mir sagst.",
+          "Nichts versprechen, was nicht zu halten ist – auch kein Geheimnis.",
+          "Sagen, was als Nächstes passiert und wer hilft.",
+          "Noch am selben Tag die zuständige Leitung (Responsable) informieren, nach dem Schutzkonzept handeln und festhalten, was die Person wörtlich gesagt hat, wann und wer dabei war."
+        ]
+      },
+      "hilfe": {
+        "titel": "Hilfe in Luxemburg",
+        "text": "Im CDSE: die zuständige Leitung (Responsable). Außerhalb, auch anonym:",
+        "nummern": [
+          {
+            "name": "Kanner- a Jugendtelefon (anonym, kostenlos)",
+            "nummer": "116 111"
+          },
+          {
+            "name": "BEE SECURE Helpline (Internet, Cybermobbing)",
+            "nummer": "8002 1234"
+          },
+          {
+            "name": "SOS Détresse – Hilfe am Telefon",
+            "nummer": "45 45 45"
+          },
+          {
+            "name": "Notruf: Rettung und Feuerwehr",
+            "nummer": "112"
+          },
+          {
+            "name": "Polizei",
+            "nummer": "113"
+          }
+        ]
+      },
+      "noten": {
+        "titel": "Ohne Noten – aber mit Rückmeldung",
+        "text": "Der Kurs wird nicht benotet. Die Jugendlichen halten nach jeder Stunde im Skills-Pass fest, was sie mitnehmen, und bestimmen am Anfang und am Ende des Jahres ihren Standort. Die Leitung gibt Rückmeldung zur Mitarbeit, nie zu Gefühlen oder Persönlichem."
+      }
+    },
+    "methoden": {
+      "titel": "Methodenkoffer",
+      "einleitung": "Die Einheiten sind vollständig ausgearbeitet. Der Methodenkoffer hilft, wenn etwas nicht passt: als Ersatz für eine Übung, als Zusatz, wenn Zeit übrig ist, und als Werkzeug, wenn die Gruppe unruhig oder müde ist. Dazu stehen hier die beiden Formate, die den Kurs von anderen unterscheiden: Ausflüge und Filme. Alle Methoden funktionieren mit einer Gruppe von höchstens drei Jugendlichen.",
+      "gruppen": [
+        {
+          "titel": "Check-in",
+          "wann": "0–10",
+          "text": "Das Gefühlsrad liegt immer bereit. Die Variante darf zum Thema der Einheit passen; ab Einheit 10 kommt in jedem Fall die Anspannung von 0 bis 100 dazu.",
+          "eintraege": [
+            {
+              "titel": "Gefühlsrad",
+              "text": "Jede Person steckt eine Wäscheklammer an das passende Wort und sagt einen Satz dazu. Das „weil“ ist freiwillig. Die Leitung beginnt."
+            },
+            {
+              "titel": "Finger-Skala",
+              "text": "Auf drei zeigen alle gleichzeitig null bis zehn Finger – so hoch ist die Anspannung, mal zehn. Schnell und ohne Worte."
+            },
+            {
+              "titel": "Linie am Boden",
+              "text": "Klebeband am Boden oder eine Linie aus Ästen: 0 an der Tür, 100 am Fenster. Alle stellen sich zu ihrer Zahl; wer mag, sagt, was sie nach oben oder unten treibt."
+            },
+            {
+              "titel": "Wetterbericht",
+              "text": "Mein inneres Wetter ist heute … – sonnig, bewölkt, Nebel, Gewitter, Regenbogen."
+            },
+            {
+              "titel": "Akkustand",
+              "text": "Mein Akku steht bei … Prozent. Wer mag, sagt, was ihn heute geladen oder geleert hat."
+            },
+            {
+              "titel": "Zwei Gefühle",
+              "text": "Welche zwei Gefühle sind gerade gleichzeitig da? Passt ab dem Kapitel „Gefühle verstehen“."
+            }
+          ]
+        },
+        {
+          "titel": "Bewegung oder Pause",
+          "wann": "45–50",
+          "text": "Fünf Minuten, im Raum oder draußen. Der Imbiss ist bewusst Teil des Programms: Hier entsteht oft am meisten Beziehung, das Thema ruht. Allergien und Essensregeln vorher erfragen.",
+          "eintraege": [
+            {
+              "titel": "Alle, die …",
+              "text": "Alle stehen hinter dem Stuhl. Wer sich angesprochen fühlt, setzt sich kurz und steht wieder auf. Nur harmlose Sätze."
+            },
+            {
+              "titel": "Stein, Papier, Schere mit Fanclub",
+              "text": "Alle spielen zu zweit; wer verliert, wird Fan der Person, die gewonnen hat, und feuert sie an. Am Ende jubelt die Gruppe dem Finale zu."
+            },
+            {
+              "titel": "Zip Zap Boing",
+              "text": "Zu viert, mit der Leitung, wandert ein Klatschimpuls: Zip zur Nachbarin, Zap quer, Boing zurück. Niemand scheidet aus."
+            },
+            {
+              "titel": "Spiegeln",
+              "text": "Zu zweit gegenüber: Eine Person bewegt sich langsam, die andere spiegelt, nach einer Minute wechseln. Ruhig und konzentrierend."
+            },
+            {
+              "titel": "Zählen bis 20",
+              "text": "Die Gruppe zählt bis 20, jede Zahl sagt nur eine Person, ohne Absprache. Sprechen zwei gleichzeitig, geht es bei 1 los."
+            },
+            {
+              "titel": "Rekord-Ball",
+              "text": "Einen weichen Ball in der Luft halten, ohne dass er den Boden berührt. Rekord notieren und beim nächsten Mal schlagen – gemeinsam, nicht gegeneinander."
+            }
+          ]
+        },
+        {
+          "titel": "Skills zum Runterkommen",
+          "wann": "85–95",
+          "text": "Langsam anleiten, selbst mitmachen, danach fragen: Wann könnte das helfen? Angeleitete Stille und Vorstellung dauern höchstens drei Minuten; Augen offen ist gleichwertig, Aussteigen erlaubt.",
+          "eintraege": [
+            {
+              "titel": "5-4-3-2-1",
+              "text": "5 Dinge sehen, 4 hören, 3 spüren, 2 riechen, 1 schmecken – zwischen den Schritten Zeit lassen."
+            },
+            {
+              "titel": "Kastenatmung",
+              "text": "4 Sekunden ein, 4 halten, 4 aus, 4 halten. Wer das Halten unangenehm findet, lässt es weg."
+            },
+            {
+              "titel": "Anspannen und Loslassen",
+              "text": "Fäuste, Schultern und Gesicht fünf Sekunden fest anspannen, dann loslassen und den Unterschied spüren."
+            },
+            {
+              "titel": "Klangschale",
+              "text": "Schale anschlagen; alle heben die Hand, wenn der Ton ganz verklungen ist. Drei Durchgänge."
+            },
+            {
+              "titel": "Farbsuche",
+              "text": "Eine Farbe wählen und still alles im Raum oder draußen finden, was diese Farbe hat."
+            },
+            {
+              "titel": "Kälte",
+              "text": "Kaltes Wasser über die Handgelenke oder ein Kühlpack in die Hand – hilft schnell bei sehr hoher Anspannung."
+            }
+          ]
+        },
+        {
+          "titel": "Abschluss",
+          "wann": "95–100",
+          "text": "Der Skills-Pass kommt immer. Davor eine kurze Runde, die zum Thema passt; zum Schluss wählt jede Person ihren Moment für die Mission.",
+          "eintraege": [
+            {
+              "titel": "Blitzlicht",
+              "text": "Ein Wort pro Person, schnell und ohne Kommentar. Mit drei Jugendlichen dauert es eine Minute, wenn die Leitung beginnt."
+            },
+            {
+              "titel": "Daumen",
+              "text": "Daumen hoch, in die Mitte oder runter – auf drei alle gleichzeitig."
+            },
+            {
+              "titel": "Koffer und Papierkorb",
+              "text": "Was packe ich ein, was lasse ich hier? Je ein Satz."
+            },
+            {
+              "titel": "Ein Satz für alle",
+              "text": "Die Gruppe einigt sich auf einen Satz zur Stunde und sagt ihn laut."
+            },
+            {
+              "titel": "Mein Moment",
+              "text": "Mit den Fingern wählen, wann die Mission drankommt: ein Finger für den Bus, zwei für den Test, drei fürs Bett – oder ein eigener Moment."
+            }
+          ]
+        },
+        {
+          "titel": "Zu dritt arbeiten",
+          "text": "Drei Personen und eine Leitung ergeben viele Möglichkeiten: Paare mit einer Person, die beobachtet, Rollen im Dreieck, Wettbewerb gegen die Uhr statt gegeneinander. Wer übrig bleibt, hat eine Aufgabe, keine Wartezeit.",
+          "eintraege": [
+            {
+              "titel": "Dreier-Rollen",
+              "text": "Eine Person übt, eine ist das Gegenüber, eine beobachtet und gibt eine Rückmeldung (ein Lob, ein Tipp). Nach jeder Runde wechseln."
+            },
+            {
+              "titel": "Die Leitung als dritte Person",
+              "text": "Bei zwei Jugendlichen übernimmt die Leitung eine Rolle, besonders die schwierige: die drängelnde, die genervte, die ungeduldige Person."
+            },
+            {
+              "titel": "Gegen die Uhr",
+              "text": "Aufgaben als gemeinsame Challenge gegen die Zeit oder einen Rekord, nicht gegeneinander."
+            },
+            {
+              "titel": "Wer wählt?",
+              "text": "Rollen und Reihenfolge losen (Würfel, Karten), damit niemand auswählt oder übrig bleibt. Bei Streit oder wenn jemand geschützt werden muss, teilt die Leitung offen selbst ein."
+            },
+            {
+              "titel": "Stilles Schreibgespräch",
+              "text": "Eine Frage auf ein Plakat; alle schreiben schweigend Antworten und Kommentare dazu. Fünf Minuten spricht niemand."
+            },
+            {
+              "titel": "Eigenes Material",
+              "text": "Jede Person hat ihre Mappe, ihr Glas, ihren Baum, ihren Skills-Koffer. Ergebnisse werden verglichen, nie bewertet."
+            }
+          ]
+        },
+        {
+          "titel": "Ausflüge",
+          "text": "Ein Ausflug hat ein Ziel und eine Übung – nie nur „wir gehen raus“. Ankommen und Abschluss bleiben: Check-in am Treffpunkt, Skills-Pass am Ende. Die Aufsicht richtet sich nach den Regeln des CDSE.",
+          "eintraege": [
+            {
+              "titel": "Planen",
+              "text": "Ziel, Weg, Zeit und Kosten mindestens zwei Wochen vorher klären und bei der zuständigen Leitung abgeben. Ausflüge brauchen oft mehr als 100 Minuten: Zeitblock und Fahrplan prüfen oder ein Ziel in Gehweite wählen."
+            },
+            {
+              "titel": "Einverständnis",
+              "text": "Nur mit unterschriebenem Elternbrief. Fehlt es, klärt die Leitung vorher, wo die Person in dieser Zeit betreut wird. Vor jedem Ausflug die Eltern kurz informieren: Termin, Treffpunkt, Rückkehr, Kosten."
+            },
+            {
+              "titel": "Aufsicht",
+              "text": "Wo möglich zu zweit. Sichtweite vereinbaren, das Gelände vorher ansehen, Übungen mit verbundenen Augen nur auf sicherem Gelände. Beim Losgehen, an jedem Halt und beim Zurückkommen durchzählen."
+            },
+            {
+              "titel": "Treffpunkt und Signal",
+              "text": "Ein Treffpunkt für den Notfall, ein Signal (Pfiff, Handzeichen) und eine Uhrzeit für das Zurückkommen – vor dem Losgehen gemeinsam vereinbaren und wiederholen."
+            },
+            {
+              "titel": "Notfallmappe",
+              "text": "Telefonnummern der Eltern und des CDSE, Allergien und Medikamente, Erste-Hilfe-Set, aufgeladenes Handy, Wasser; Notruf 112, bei Gewalt oder Bedrohung 113."
+            },
+            {
+              "titel": "Wenn es kippt",
+              "text": "Der Stopp-Plan gilt auch unterwegs. Bei Gefahr oder Verweigerung nicht diskutieren, sondern ruhig abbrechen, gemeinsam zurückgehen und später klären. Bei Regen gibt es zu jedem Ausflug eine Variante im Haus."
+            }
+          ]
+        },
+        {
+          "titel": "Filme",
+          "text": "Ein Film ist kein Ersatzprogramm, sondern ein Gesprächsanlass: Gezeigt werden genau benannte Szenen, mit einem Auftrag vorher und einer Übung danach.",
+          "eintraege": [
+            {
+              "titel": "Auswahl",
+              "text": "Titel und Szenen stehen im Jahresplan und in der Einheit. Wer ersetzt, wählt bekannte, gut erhältliche Filme mit Altersfreigabe bis 12 und sieht die Szenen vorher selbst an."
+            },
+            {
+              "titel": "Freigabe und Rechte",
+              "text": "Vorführrechte klären (Schul- oder Einrichtungslizenz) und die Altersfreigabe prüfen. Ein privates Streaming-Abo oder eine private DVD deckt in der Regel keine Vorführung in der Einrichtung ab – im Zweifel bei der zuständigen Leitung nachfragen."
+            },
+            {
+              "titel": "Vorbereiten",
+              "text": "Anfang und Ende jeder Szene notieren, Technik testen (Bild, Ton, Untertitel), Sitzordnung ändern. Es muss nicht dunkel sein: Wer sich im Dunkeln unwohl fühlt, sitzt an der Tür."
+            },
+            {
+              "titel": "Mit Auftrag schauen",
+              "text": "Vor der Szene eine Beobachtungsfrage („Wer sitzt gerade am Steuer?“); nach jeder Szene anhalten, zwei Antworten, weiter. Kennt jemand den Film, bekommt er eine Expertenrolle – das Ende bleibt geheim."
+            },
+            {
+              "titel": "Szenen besprechen",
+              "text": "Erst beschreiben, was man sieht und hört, dann deuten, dann übertragen: Wann hilft mir das? Über die Figur zu sprechen ist leichter als über sich selbst – deshalb nach der Figur fragen, nicht nach dem eigenen Erleben."
+            },
+            {
+              "titel": "Wenn der Film trifft",
+              "text": "Szenen über Verlust, Mobbing, Streit mit den Eltern oder Heimweh berühren manche stark. Vorher überlegen, wen es betrifft, nicht vor der Gruppe nachfragen, in der Pause ansprechen und jederzeit Aussteigen erlauben."
+            }
+          ]
+        },
+        {
+          "titel": "Wenn es unruhig wird",
+          "text": "Nicht lauter werden, sondern leiser und langsamer. Eine kurze Bewegungsaufgabe vor die nächste Denkaufgabe setzen, die Sitzordnung ändern, kurze und klare Anweisungen geben. Unruhe ist oft Aufregung vor einem persönlichen Thema – dann hilft es, das Thema offen zu benennen.",
+          "eintraege": [
+            {
+              "titel": "Ruhesignal",
+              "text": "Hand heben oder Klangschale: Wer es sieht oder hört, wird still. Nach zwei, drei Wochen wirkt es fast von selbst."
+            },
+            {
+              "titel": "Bewegung, dann Stille",
+              "text": "Drei Minuten intensiv bewegen, danach eine Minute still sitzen und die Anspannung schätzen."
+            },
+            {
+              "titel": "Raus an die Luft",
+              "text": "Fünf Minuten nach draußen, zügig gehen, tief atmen – dann zurück zum Thema."
+            },
+            {
+              "titel": "Zählen bis 20",
+              "text": "Die Gruppe zählt bis 20, jede Zahl sagt nur eine Person, ohne Absprache. Bündelt die Aufmerksamkeit in zwei Minuten."
+            },
+            {
+              "titel": "Kettenreaktion",
+              "text": "Gemeinsam eine Dominokette bauen und auslösen – braucht Geduld und Absprache."
+            },
+            {
+              "titel": "Wortlos ordnen",
+              "text": "Die Gruppe stellt sich ohne zu sprechen nach Geburtstag in eine Reihe; danach auflösen."
+            }
+          ]
+        },
+        {
+          "titel": "Wenn die Energie fehlt",
+          "text": "Müdigkeit ernst nehmen, statt gegen sie anzuarbeiten: Fenster auf, kurz nach draußen, Wasser trinken. Danach eine leichte Übung im Sitzen, die trotzdem zum Thema führt.",
+          "eintraege": [
+            {
+              "titel": "Gefühls-Memory",
+              "text": "Paare aus Gefühlswort und Gesicht finden; wer ein Paar hat, nennt eine Situation dazu oder sagt „weiter“."
+            },
+            {
+              "titel": "Emotionswürfel",
+              "text": "Würfeln und erzählen, wann man das Gefühl zuletzt hatte – nur Harmloses, „weiter“ ist erlaubt."
+            },
+            {
+              "titel": "Musikrunde",
+              "text": "Jede Person spielt 30 Sekunden eines Songs, der sie auflädt, am besten aus der eigenen Skills-Playlist."
+            },
+            {
+              "titel": "Gemeinsames Kunstwerk",
+              "text": "Alle malen ohne Absprache an einem großen Papier; nach zwei Minuten rückt jede Person einen Platz weiter."
+            },
+            {
+              "titel": "Ball der Gefühle",
+              "text": "Einen weichen Ball zuwerfen; wer fängt, beantwortet eine leichte Frage, etwa: Was hat dich heute gefreut?"
+            },
+            {
+              "titel": "Dobble oder Mikado",
+              "text": "Eine kurze Runde als Pausenspiel; danach mit frischer Aufmerksamkeit weiter."
+            }
+          ]
+        },
+        {
+          "titel": "Wenn Zeit übrig bleibt",
+          "eintraege": [
+            {
+              "titel": "Positivitätskette",
+              "text": "Jede Person sagt der Person rechts, was ihr heute an ihr aufgefallen ist – über das, was sie tut, nicht über das Aussehen."
+            },
+            {
+              "titel": "Gefühlsstatue",
+              "text": "Eine Person stellt ein Gefühl als Standbild dar, die anderen raten und sagen, woran sie es erkannt haben."
+            },
+            {
+              "titel": "Rücken an Rücken",
+              "text": "Zu zweit: Eine Person beschreibt ein einfaches Bild, die andere zeichnet es, ohne nachzufragen. Dann vergleichen und wechseln."
+            },
+            {
+              "titel": "Skill ziehen",
+              "text": "Eine Person zieht eine Skill-Karte, alle machen den Skill eine Minute lang."
+            },
+            {
+              "titel": "Foto-Challenge",
+              "text": "Drei Fotos zu einem Thema in fünf Minuten, zum Beispiel „Was gibt mir Kraft?“. Die Bilder bleiben in der Gruppe."
+            }
+          ]
+        }
+      ]
+    },
+    "eltern": {
+      "titel": "Eltern und Team",
+      "einleitung": "Eltern und Kolleginnen und Kollegen sollen wissen, was im Kurs geschieht – nicht, was einzelne Jugendliche dort erzählen. Ein kurzer Brief vor der ersten Stunde schafft Transparenz, holt das Einverständnis für Ausflüge und Filme und klärt Allergien; im Team braucht es Absprachen, wie das Gelernte im Alltag gestützt wird.",
+      "punkte": [
+        {
+          "titel": "Mit der zuständigen Leitung abstimmen",
+          "text": "Vor dem ersten Brief klären: Welche Vorgaben der Einrichtung gelten für Einverständniserklärungen, Ausflüge, Fotos und Filme? Wer ist Ansprechperson für Notfälle und für das Schutzkonzept?"
+        },
+        {
+          "titel": "Eltern vorab informieren",
+          "text": "Mit dem Brief vor der ersten Stunde; vor sensiblen Einheiten, im Jahresplan markiert, noch einmal kurz – und vor jedem Ausflug mit Termin, Treffpunkt, Rückkehr und Kosten."
+        },
+        {
+          "titel": "In der Sprache der Familie",
+          "text": "Den Brief mitgeben und bei Bedarf mündlich erklären, wenn möglich in der Familiensprache oder mit einer Person, die übersetzt. Ein Gespräch anbieten, besonders wenn das Einverständnis fehlt."
+        },
+        {
+          "titel": "Keine Einzelheiten weitergeben",
+          "text": "Fragen von Eltern auf Ziele und Methoden lenken. Was Jugendliche in der Gruppe erzählen, bleibt in der Gruppe – außer jemand ist in Gefahr. Die Jugendlichen vorher informieren, was im Brief steht."
+        },
+        {
+          "titel": "Skills im Alltag erlauben",
+          "text": "Klassenleitung und Team der Stammklasse wissen, welche Skills die Gruppe lernt, und erlauben sie auch dort: kurz atmen, eine Pause nach Absprache, eine Skill-Karte in der Tasche."
+        },
+        {
+          "titel": "Beobachtungen, keine Geschichten",
+          "text": "Was Lehrpersonen im Alltag sehen, darf an die Leitung gehen („Mir fällt auf, dass es vor Tests laut wird“) – nie, was eine einzelne Person in der Gruppe erzählt hat."
+        }
+      ],
+      "kollegium": {
+        "titel": "Kurzinfo für das Team",
+        "text": "Ab [Datum] nimmt [Name der Gruppe] jeden [Wochentag] am Skills-Kurs Annexe teil. Die Jugendlichen lernen Fertigkeiten für schwierige Momente: Anspannung auf einer Skala von 0 bis 100 einschätzen, sich mit Skills beruhigen, Ich-Botschaften, Grenzen setzen. Was Sie tun können: Bemerken und kurz bestärken, wenn jemand einen Skill nutzt, und bei steigender Anspannung ruhig fragen: Wo bist du gerade, von 0 bis 100? Was aus deinem Skills-Koffer hilft jetzt? Bitte nicht nach Inhalten aus der Gruppe fragen. Rückmeldungen und Fragen gern an [Name]."
+      }
+    },
+    "brief": {
+      "seite": "Elternbrief",
+      "betreff": "Skills-Kurs Annexe: Information und Einverständnis",
+      "anrede": "Liebe Eltern, liebe Erziehungsberechtigte,",
+      "absaetze": [
+        "in diesem Schuljahr nimmt Ihr Kind am Skills-Kurs Annexe des CDSE teil. Der Kurs findet in einer kleinen Gruppe von höchstens drei Jugendlichen statt, jeweils am [Wochentag] von [Uhrzeit] bis [Uhrzeit], und umfasst rund 30 Treffen. Die Jugendlichen lernen Fertigkeiten, die im Alltag helfen: Gefühle erkennen, mit Anspannung umgehen, sagen, was sie brauchen, Grenzen setzen und Konflikte lösen.",
+        "Wir arbeiten mit Gesprächen, Spielen, Rollenspielen, Bewegung und kurzen Übungen zum Ruhigwerden. Weil die Gruppe klein ist, gehen wir oft raus: Etwa jede dritte Stunde findet draußen statt oder ist ein Ausflug (zum Beispiel Wald oder Park, Kletterhalle, Stadt, Einkaufen und Kochen), etwa jede fünfte arbeitet mit einem Film oder Filmausschnitten, die für Jugendliche bis 12 Jahre freigegeben sind. Die Ausflüge begleiten wir nach den Regeln des CDSE und geben die Termine vorher bekannt.",
+        "Was die Jugendlichen in der Gruppe erzählen, bleibt in der Gruppe, und niemand muss etwas Persönliches erzählen. Wenn wir uns um die Sicherheit Ihres Kindes sorgen, handeln wir nach den Regeln unserer Einrichtung. Fotos, Videos und Tonaufnahmen entstehen nur für die Gruppe; ohne Ihr Einverständnis geben wir sie nicht weiter.",
+        "Am Anfang und am Ende des Jahres bestimmt Ihr Kind gemeinsam mit der Leitung seinen Standort: Es kreuzt zwölf Aussagen an und spricht darüber. Das Blatt gehört Ihrem Kind. Am Ende jeder Stunde schreibt es in seinen Skills-Pass, was es mitnimmt; Heft und Pass bekommt es am Ende des Jahres mit nach Hause. Wenn Sie mögen, fragen Sie zwischendurch: Was habt ihr diese Woche ausprobiert?",
+        "Bitte geben Sie uns den Abschnitt unten bis zum [Datum] zurück. Bei Fragen erreichen Sie mich unter [Telefon oder E-Mail]."
+      ],
+      "gruss": "Mit freundlichen Grüßen",
+      "unterschrift": "[Name der Leitung] · [CDSE, Standort] · [Telefon oder E-Mail]",
+      "abschnitt": {
+        "titel": "Bitte ausfüllen und bis [Datum] zurückgeben",
+        "felder": [
+          "Name der oder des Jugendlichen",
+          "Notfallnummer der Eltern"
+        ],
+        "bestaetigung": "Ich habe den Brief gelesen. Mein Kind darf an den Ausflügen, an den Filmstunden und an Aufnahmen für die Gruppe teilnehmen.",
+        "frage": "Was wir wissen sollten, zum Beispiel Allergien, Essensregeln, Asthma, Medikamente (freiwillig) – oder womit Sie nicht einverstanden sind:",
+        "unterschrift": "Datum und Unterschrift einer erziehungsberechtigten Person"
+      }
+    },
+    "material": {
+      "titel": "Material für das Jahr",
+      "einleitung": "Die Liste zu Beginn des Schuljahres einmal durchgehen. Was eine Einheit zusätzlich braucht, steht bei der Einheit unter „Material“.",
+      "gruppen": [
+        {
+          "titel": "Für jede Stunde",
+          "punkte": [
+            "Gefühlsrad als Plakat (A2 oder A3), Wäscheklammern oder Klebepunkte",
+            "Anspannungsskala 0–100 als Plakat (ab Einheit 10)",
+            "Gruppenvertrag als Plakat",
+            "Skills-Pässe in einer Box, Stempel oder Sticker",
+            "Schülerhefte – einmal festlegen, ob sie im Raum bleiben",
+            "Klangschale oder ein anderes Ruhesignal",
+            "Liste mit Allergien und Essensregeln"
+          ]
+        },
+        {
+          "titel": "Papier und Stifte",
+          "punkte": [
+            "Moderationskarten und Klebezettel in mehreren Farben",
+            "Plakate (A1 oder A2), Packpapier für den Körperumriss",
+            "dicke Filzstifte, Malerkrepp, Klebeband",
+            "Briefumschläge und eine verschließbare Box"
+          ]
+        },
+        {
+          "titel": "Bewegung und Skills",
+          "punkte": [
+            "ein weicher Ball und ein Seil",
+            "Kühlpacks oder eine Schüssel für kaltes Wasser",
+            "Knetbälle, Federn, Sinneskiste",
+            "Riechstreifen – nur nach Rückfrage wegen Allergien und Asthma",
+            "Lautsprecher für leise Musik"
+          ]
+        },
+        {
+          "titel": "Technik",
+          "punkte": [
+            "Beamer oder großer Bildschirm",
+            "Handy oder Tablet für Fotos, Video und Podcast – nur mit Einverständnis",
+            "ein gut sichtbarer Timer",
+            "Internet für die Medien-Einheiten",
+            "Vorführrechte für Filme (Schul- oder Einrichtungslizenz) klären"
+          ]
+        },
+        {
+          "titel": "Für Ausflüge",
+          "punkte": [
+            "Notfallmappe: Telefonnummern der Eltern und des CDSE, Allergien, Medikamente",
+            "Erste-Hilfe-Set, Wasser, Regen- oder Sonnenschutz",
+            "aufgeladenes Handy der Leitung, Notruf 112",
+            "Fahrplan und, wenn nötig, Fahrkarten; Treffpunkt und Signal",
+            "Einverständniserklärungen in Kopie",
+            "Anmeldungen (zum Beispiel Kletterhalle, Besuch) und Kosten nach den Regeln der Einrichtung"
+          ]
+        },
+        {
+          "titel": "Aufbewahren bis zum Schuljahresende",
+          "punkte": [
+            "die Plakate der Gruppe",
+            "7e: Glas der Bedürfnisse, Plakat „Was sind Skills?“, Bäume der Stärke, Skills-Koffer",
+            "Schülerhefte und Skills-Pässe – sie gehören den Jugendlichen und gehen am Ende mit nach Hause",
+            "Fotos und Clips: nur mit Einverständnis, am Ende ausgehändigt oder gelöscht"
+          ]
+        }
+      ]
+    },
+    "messen": {
+      "titel": "Wirkt es? Die Standortbestimmung",
+      "einleitung": "In einer Gruppe von drei Jugendlichen ist ein anonymer Fragebogen nicht möglich: Jeder wüsste, wer welches Blatt ausgefüllt hat. Deshalb gibt es eine persönliche Standortbestimmung am Anfang und am Ende des Schuljahres – dieselben zwölf Aussagen, gemeinsam mit der Leitung besprochen. Das Blatt gehört der oder dem Jugendlichen. Es bewertet nicht die Person, sondern zeigt, wo sie steht, was sich bewegt hat und was sie sich vornimmt.",
+      "schritte": [
+        {
+          "titel": "Wann",
+          "text": "Am Anfang in Einheit 2, am Ende im ersten Teil der vorletzten Einheit – nicht in Einheit 1, die Vertrauen aufbaut. Beide Male an derselben Stelle der Stunde, ohne aufwühlende Übung davor und mit demselben Blatt. Fehlt jemand, wird die Standortbestimmung in der nächsten Stunde nachgeholt."
+        },
+        {
+          "titel": "Wie",
+          "text": "Die Anleitung vorlesen, die Aussagen bei Bedarf einzeln. Jede Person kreuzt für sich an; ob ihr Name darauf steht, entscheidet sie. Danach sagt sie, wenn sie mag, bei zwei oder drei Aussagen, woran sie ihr Kreuz festmacht. Niemand muss etwas erklären; „weiter“ ist erlaubt. Die anderen Jugendlichen sehen das Blatt nicht."
+        },
+        {
+          "titel": "Besprechen",
+          "text": "Hinschauen statt auszählen: Wo steht ein Kreuz ganz links oder ganz rechts? Was überrascht die Person? Dann zwei Fragen: Was davon willst du in diesem Jahr üben? Woran würdest du merken, dass es besser wird? Das Ziel kommt als ein Satz in den Skills-Pass."
+        },
+        {
+          "titel": "Lesen",
+          "text": "Am Ende legt die Person das Blatt vom Anfang neben das neue: Wo ist ein Kreuz gewandert, wo geblieben? Wer viel gelernt hat, urteilt am Ende oft strenger – ein gleiches oder kleineres Kreuz kann Lernen bedeuten. Die Leitung fragt nach Beispielen („Wann hast du das zuletzt gemacht?“), nie nach einer Rechtfertigung."
+        },
+        {
+          "titel": "Nutzen",
+          "text": "Die Antwort auf „Wenn es mir nicht gut geht, hilft mir …“ zeigt, ob Skills im Alltag ankommen: Steht am Ende etwas aus dem Kurs auf dem Blatt? Die Wünsche vom Anfang helfen bei der Wahl der Wahleinheiten und der Ausflüge. Ein niedriger Wert bei Aussage 10 (sicher in der Gruppe) oder 12 (Hilfe kennen) ist ein Gesprächsanlass – bei Hinweisen auf Gefährdung ein Fall für die zuständige Leitung."
+        },
+        {
+          "titel": "Datenschutz",
+          "text": "Das Blatt gehört der Person: Bis zum Ende liegt es in ihrer Mappe im Raum, dann geht es mit ihr nach Hause. Die Leitung kopiert, fotografiert oder sammelt nichts ein, außer die Person möchte es. Es gibt keine Auswertung über mehrere Jugendliche und keinen Vergleich zwischen ihnen. Soll die Wirkung über viele Gruppen geprüft werden, geht das nur freiwillig und ohne Namen, nach Klärung mit der oder dem Datenschutzbeauftragten der Einrichtung."
+        }
+      ],
+      "zuordnung": {
+        "titel": "Was die Aussagen zeigen",
+        "text": "Je ein bis drei Aussagen gehören zu einem der fünf Kompetenzbereiche; Aussage 10 fragt zusätzlich nach dem Klima in der Gruppe. Der Skills-Pass hat einen anderen Zweck: Er hält fest, was jemand nach jeder Stunde mitnimmt, und wird nie mit der Standortbestimmung verglichen.",
+        "bereiche": [
+          {
+            "kompetenz": "kennen",
+            "aussagen": "1–2"
+          },
+          {
+            "kompetenz": "steuern",
+            "aussagen": "3–5"
+          },
+          {
+            "kompetenz": "verstehen",
+            "aussagen": "6–7"
+          },
+          {
+            "kompetenz": "miteinander",
+            "aussagen": "8–10"
+          },
+          {
+            "kompetenz": "entscheiden",
+            "aussagen": "11–12"
+          }
+        ]
+      },
+      "auswertung": {
+        "titel": "Mein Vergleich: Anfang und Ende",
+        "text": "Am Ende des Jahres tragen die Person und die Leitung die Kreuze von beiden Terminen gemeinsam hier ein: je Aussage ein Kreuz bei der Stufe von damals (Anfang) und bei der Stufe von heute (Ende). Unter „Ziel“ ein Stern, wenn die Aussage ein Ziel war oder erreicht ist. Veränderung: ein Kreuz in der linken Spalte (+, gewachsen) oder in der rechten (–, kleiner geworden); leer heißt gleich geblieben. Die Seite gehört der Person.",
+        "bloecke": [
+          "Anfang",
+          "Ende",
+          "Veränderung"
+        ],
+        "werte": [
+          "Ziel"
+        ],
+        "boegen": [
+          "Datum",
+          "Besprochen mit"
+        ],
+        "offen": {
+          "titel": "Wenn es mir nicht gut geht, hilft mir …",
+          "gruppen": [
+            "etwas aus dem Kurs (Skill, Skala, Koffer, Notfallkarte …)",
+            "eine Person (Freundin, Eltern, Leitung, Vertrauensperson …)",
+            "anderes (Musik, Sport, Handy …)"
+          ]
+        },
+        "praxis": "Nur am Ende: einen Skill aus dem Kurs benutzt"
+      },
+      "logbuch": {
+        "titel": "Umsetzungs-Logbuch",
+        "text": "Je Einheit eine Zeile: Datum, wie weit sie gehalten wurde, welcher Schritt entfiel, ob die Mission gegeben und in der nächsten Stunde nachgefragt wurde, Besonderes (Vorfall, Ausflug, Film). Das Logbuch gehört der Leitung und bleibt ohne Namen von Jugendlichen. Es hilft, im Team Erfahrungen zu vergleichen, ohne Leitungen zu vergleichen.",
+        "spalten": [
+          "Datum",
+          "Gehalten",
+          "Entfallen",
+          "Mission",
+          "Besonderes"
+        ],
+        "gehalten": [
+          "ganz",
+          "teils",
+          "nicht"
+        ]
+      },
+      "fragebogen": {
+        "seite": "Standortbestimmung",
+        "titel": "Mein Standort: Wie geht es mir mit diesen Dingen?",
+        "anleitung": "Dieser Bogen gehört dir. Du entscheidest, ob dein Name darauf steht und was du davon zeigst. Es gibt keine richtigen und keine falschen Antworten. Kreuze bei jeder Aussage an, wie sehr sie für dich stimmt. Danach sprechen wir darüber – nur über das, was du möchtest. Am Ende des Jahres machst du es noch einmal und schaust, was sich verändert hat.",
+        "zeitpunkt": [
+          "Anfang des Schuljahres",
+          "Ende des Schuljahres"
+        ],
+        "skala": [
+          "stimmt gar nicht",
+          "stimmt eher nicht",
+          "stimmt eher",
+          "stimmt genau"
+        ],
+        "aussagen": [
+          "Ich kann sagen, wie ich mich gerade fühle.",
+          "Ich weiß, was ich gut kann.",
+          "Wenn ich wütend oder gestresst bin, kenne ich etwas, das mir hilft, ruhiger zu werden.",
+          "Ich kann mich bremsen, bevor ich etwas tue, das ich später bereue.",
+          "Ich merke früh, wenn ich wütend oder nervös werde.",
+          "Ich merke, wenn es jemandem in der Gruppe nicht gut geht.",
+          "Ich merke, wann ein Spaß für jemanden kein Spaß mehr ist.",
+          "Ich kann sagen, was ich brauche, ohne andere zu verletzen.",
+          "Wenn ich Nein sagen will, schaffe ich es.",
+          "In unserer Gruppe fühle ich mich sicher.",
+          "Wenn jemand immer wieder fertiggemacht wird, weiß ich, was ich tun kann.",
+          "Wenn es mir oder anderen schlecht geht, weiß ich, wo es Hilfe gibt."
+        ],
+        "offen": [
+          "Wenn es mir nicht gut geht, hilft mir …",
+          "Was wünschst du dir von diesem Kurs – oder, am Ende des Jahres: Was nimmst du mit?"
+        ],
+        "praxis": {
+          "hinweis": "Nur am Ende des Schuljahres ausfüllen:",
+          "text": "In den letzten zwei Wochen habe ich einen Skill aus dem Kurs benutzt.",
+          "optionen": [
+            "nein",
+            "einmal",
+            "mehrmals"
+          ]
+        },
+        "dank": "Danke! Wir sprechen jetzt darüber. Das Blatt gehört dir und geht am Ende des Jahres mit dir nach Hause."
+      }
+    },
+    "plaene": {
+      "titel": "Der Jahresplan",
+      "einleitung": "Das Jahr hat 30 Einheiten für rund 36 Schulwochen; die übrigen Wochen bleiben für Ferien, Tests und Ausfälle. Die roten Hinweise zeigen Ausflüge, Draußen-Stunden und Filme: Dafür brauchen Sie vorher das Einverständnis der Eltern, Termine und geklärte Vorführrechte. Wahleinheiten vertiefen ein Thema; fallen Stunden aus, entfallen zuerst sie. Die Kapitel bauen aufeinander auf – ihre Reihenfolge sollte bleiben."
+    },
+    "jahresweg": {
+      "titel": "Der Jahresweg",
+      "text": "Kopiervorlage für ein Plakat: auf A3 vergrößern und im Raum aufhängen. Nach jedem Kapitel markiert die Gruppe, wo sie steht – jede Person mit einem eigenen Klebepunkt. So sieht sie, was sie schon geschafft hat.",
+      "plakat": "Unser Weg durch die {klasse}"
+    },
+    "glossar": {
+      "titel": "Glossar",
+      "text": "Die Wörter aus den Wortspeichern der Einheiten – zum Nachschlagen für Jugendliche und Leitung. Die Zahl nennt die Einheit, in der das Wort vorkommt."
+    },
+    "literatur": {
+      "titel": "Literatur",
+      "text": "Alle Quellen, auf die sich Teil A und die Einheiten der {klasse} stützen. Bei jeder Einheit stehen die Belege unter „Fachlicher Hintergrund“."
+    },
+    "heft": {
+      "inhalt": "Inhalt",
+      "jedeStunde": "Für jede Stunde",
+      "missionen": "Meine Wochen-Missionen",
+      "missionenText": "Nach jeder Stunde wartet eine kleine Mission auf dich. Schreib auf, wann du sie machst – deinen Moment, zum Beispiel: Wenn ich im Bus sitze … Kreuze an, wenn du sie geschafft hast. Es gibt keine Note – es zählt, dass du es versuchst.",
+      "geschafft": "geschafft",
+      "moment": "Mein Moment: Wenn …",
+      "karten": "Meine Skill-Karten",
+      "kartenText": "Schneide die Karten aus. Sie passen ins Portemonnaie oder in die Handyhülle – für Momente, in denen du einen Skill brauchst.",
+      "woerter": "Meine Wörter",
+      "woerterText": "Die wichtigsten Wörter aus den Stunden.",
+      "hilfeTitel": "Hier bekommst du Hilfe",
+      "hilfeText": "Im CDSE hört dir deine Leitung zu. Du kannst auch anonym und kostenlos anrufen:",
+      "notizen": "Meine Notizen"
+    },
+    "rueckseite": {
+      "titel": "Drei Jahre, ein roter Faden",
+      "text": "Der Skills-Kurs begleitet Jugendliche bis zu drei Jahre: In der 7e lernen sie ihre Gefühle kennen und steuern, in der 6e setzen sie ihre Skills im Alltag ein, in der 5e planen sie ihren eigenen Weg. Jede Doppelstunde folgt demselben Aufbau – mit Ritualen, die Sicherheit geben, und Übungen, die im Alltag tragen.",
+      "dieses": "dieses Heft"
+    }
+  }
+}
