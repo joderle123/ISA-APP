@@ -1,0 +1,337 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e23",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "a7-zivilcourage"
+      ],
+      "vorlagen": [
+        "a7-mobbing-karten"
+      ],
+      "woerter": [
+        { "de": "das Mobbing", "fr": "das Mobbing" },
+        { "de": "die Zuschauenden", "fr": "die Zuschauenden" },
+        { "de": "die Zivilcourage", "fr": "die Zivilcourage" },
+        { "de": "Hilfe holen", "fr": "Hilfe holen" },
+        { "de": "petzen", "fr": "petzen" }
+      ],
+      "de": {
+        "titel": "Mobbing und Zivilcourage",
+        "kurz": "Die Gruppe unterscheidet Spaß, Konflikt und Mobbing, versteht die Macht der Zuschauenden, sieht im Film Wunder, wie Mitschüler zu Auggie halten, und wählt ihre Stufe der Zivilcourage.",
+        "ziele": [
+          "unterscheiden Spaß, Konflikt und Mobbing an vier Merkmalen und erkennen die Rollen im Mobbing",
+          "beschreiben an zwei Szenen aus dem Film Wunder, was Zuschauende tun können",
+          "wählen auf der Zivilcourage-Leiter eine sichere Stufe und nennen eine Vertrauensperson"
+        ],
+        "material": [
+          "Film „Wunder“ (2017), Beamer, Boxen",
+          "Drei Ecken-Schilder, sechs Stühle",
+          "Karten (Vorlage), Heft-Blatt",
+          "Sechs A4-Blätter für die Leiter",
+          "Plakat Anlaufstellen",
+          "Gefühlsrad, Skills-Pass, Stempel"
+        ],
+        "vorbereitung": [
+          "Im Team klären, ob es Hinweise auf Mobbing gibt; wenn ja, mit der Responsable abstimmen und Beispiele ändern.",
+          "Film „Wunder“ (2017): Rechte, Altersfreigabe und Einverständnis (Elternbrief) prüfen; beide Szenen vorab ansehen.",
+          "Ecken beschriften, Stühle und Karten bereitlegen, die sechs Stufen der Leiter groß auf A4-Blätter schreiben.",
+          "Plakat Anlaufstellen schreiben: 116 111, 8002 1234, Ansprechpersonen der Annexe."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Wo gehörst du dazu?" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Rahmen" },
+          { "min": "15–40", "phase": "uebung", "titel": "Spaß, Konflikt oder Mobbing? Die Rollen" },
+          { "min": "40–45", "phase": "aktiv", "titel": "Bewegung: Zählen bis 20" },
+          { "min": "45–85", "phase": "uebung", "titel": "Film Wunder und die Zivilcourage-Leiter" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Innehalten, schauen, handeln" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Wo gehörst du dazu?",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Jede Person zeigt ihr Wort auf dem Gefühlsrad und nennt ihre Anspannung von 0 bis 100; die Leitung macht mit und beginnt. Heute dazu eine stärkende Frage, freiwillig: Wo oder mit wem gehörst du so richtig dazu – ein Ort, ein Verein, ein Spiel, eine Person ohne Nachnamen? Ein Wort reicht.",
+            "sagen": [
+              "Gefühl, Zahl und ein Wort: Wo gehörst du so richtig dazu?",
+              "Mobbing nimmt Menschen genau das weg, das Dazugehören – darum fangen wir heute damit an."
+            ],
+            "tipp": "Die Frage gibt Halt, bevor es um ein schweres Thema geht; wem nichts einfällt, sagt „weiter“ – und die Leitung achtet darauf, wer allein wirkt."
+          },
+          {
+            "titel": "Rückblick, Mission und Rahmen",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – hast du den Anker gemacht und dein Nein gesagt, oder hast du bemerkt, wo Druck leise wirkt? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann das Thema nennen und den Rahmen klären (Liste).",
+            "sagen": [
+              "Kam euer Moment, und was habt ihr gemacht: Daumen hoch, Mitte oder runter?",
+              "Heute geht es um Mobbing – ihr müsst nichts von euch erzählen, wir arbeiten mit erfundenen Geschichten und einem Film."
+            ],
+            "punkte": [
+              "Alle Beispiele sind erfunden; niemand spricht über jemanden aus der Gruppe oder aus der Annexe.",
+              "Niemand muss erzählen, was er selbst erlebt hat; „Weiter“ ist immer erlaubt.",
+              "Wer eine Pause braucht, geht kurz raus oder macht das Fenster auf.",
+              "Nach der Stunde ist die Leitung da; ist jemand in Gefahr, holt sie Hilfe – und sagt vorher, was sie tut.",
+              "Handys bleiben in der Tasche: Niemand filmt oder fotografiert die Stunde."
+            ],
+            "wennEsKippt": "Fällt sofort ein Name („Das ist doch wie bei …“), freundlich, aber klar stoppen: Heute gibt es keine Namen – und nach der Stunde in Ruhe nachfragen. Kommt „Mobbing ist doch nur Spaß“, nicht diskutieren: Genau das schauen wir uns gleich an."
+          },
+          {
+            "titel": "Spaß, Konflikt oder Mobbing? Die Rollen",
+            "dauer": 25,
+            "phase": "uebung",
+            "text": "Zuerst ein Spiel in drei Ecken: Spaß, Konflikt oder Mobbing? Aus den Begründungen entstehen die vier Merkmale von Mobbing. Dann zeigen sechs Stühle, wer im Mobbing welche Rolle hat – der Stuhl der betroffenen Person bleibt leer – und wer die meiste Macht hat, es zu stoppen.",
+            "sagen": [
+              "Woran habt ihr das festgemacht – ein Spaß ist nur ein Spaß, wenn alle lachen können, auch die Person, um die es geht.",
+              "Mobbing braucht Publikum: Wenn das Publikum die Seite wechselt, fällt die Bühne weg."
+            ],
+            "punkte": [
+              "Spiel (9 Min.): Ecken – Die Leitung liest die fünf Situationen der Tabelle vor, alle stellen sich in die passende Ecke (wer unsicher ist, dazwischen) und sagen, woran sie es festmachen; daraus entstehen die vier Merkmale an der Tafel: wiederholt, Ungleichgewicht, Absicht, kann sich allein nicht wehren.",
+              "Modell (2 Min.): Die Konflikt-Treppe setzt zwei ungefähr Gleichstarke voraus – bei Mobbing braucht es Schutz und Hilfe von außen.",
+              "Übung (11 Min.): Rollen-Stühle – Sechs Stühle im Halbkreis, auf jedem eine Rollenkarte, der Stuhl der betroffenen Person bleibt leer und abseits; die Geschichte „Die Sprachnachricht“ vorlesen und gemeinsam klären, wer auf welchen Stuhl gehört.",
+              "Übung (3 Min.): Leitfrage – Wer hat die meiste Macht, das zu stoppen? Die Stühle der Verstärker und der Außenstehenden zum leeren Stuhl drehen und fragen: Was ändert sich jetzt für den Täter?"
+            ],
+            "tabelle": {
+              "spalten": ["Situation", "Eher …", "Woran man es erkennt"],
+              "zeilen": [
+                ["Zwei Freunde ziehen sich mit Spitznamen auf, beide lachen.", "Spaß", "Beide machen mit, beide können aufhören."],
+                ["Nach einem Foul beschimpfen sich zwei Spieler, am nächsten Tag ist es vorbei.", "Konflikt", "Einmalig, beide wehren sich."],
+                ["Seit Wochen macht eine Gruppe Geräusche, sobald Elias etwas sagt.", "Mobbing", "Wiederholt, mehrere gegen einen."],
+                ["Mila und Zoé streiten, wer das Video schneiden darf.", "Konflikt", "Ungefähr gleich stark, ein Streitpunkt."],
+                ["Über Samuels Schuhe gibt es jeden Tag einen Witz. Er lacht mit, geht aber allein in die Pause.", "Grenzfall, eher Mobbing", "Ein Spaß hört auf, wenn eine Seite nicht mehr lacht."]
+              ]
+            },
+            "tipp": "Für den Grenzfall am Ende Zeit lassen: An ihm lernt die Gruppe mehr als an den eindeutigen Beispielen.",
+            "wennEsKippt": "Sagt jemand, es passiere ihm gerade selbst, ruhig danken, nicht nachfragen, nach der Stunde allein sprechen und noch am selben Tag die Responsable informieren. Wird es still und bedrückt, benennen, dass das Thema schwer ist, und eine Minute Pause anbieten – Fenster auf, Wasser trinken.",
+            "blatt": "a7-mobbing-karten"
+          },
+          {
+            "titel": "Bewegung: Zählen bis 20",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen im Kreis und zählen gemeinsam bis 20: Jede Person darf jederzeit die nächste Zahl sagen, aber niemand zwei hintereinander – sprechen zwei gleichzeitig, geht es wieder bei 1 los. Zum Schluss fragen, was geholfen hat: aufeinander achten, wie gegen Mobbing.",
+            "sagen": [
+              "Das klappt nur zusammen – und nur, wenn alle auf alle achten."
+            ],
+            "tipp": "Das Spiel klappt selten beim ersten Versuch, und genau das ist der Witz daran; Lachen ist erlaubt, es ist ein Spiel."
+          },
+          {
+            "titel": "Film Wunder und die Zivilcourage-Leiter",
+            "dauer": 40,
+            "phase": "uebung",
+            "text": "Zwei kurze Szenen aus Wunder (2017) zeigen, was Zuschauende tun können: Summer setzt sich in der Schulkantine zu Auggie, und beim Schulausflug in die Natur stellen sich Jack und weitere Mitschüler zu ihm. Danach stellt sich jede Person auf der Zivilcourage-Leiter auf die Stufe, die sie sich zutraut.",
+            "sagen": [
+              "Achtet auf Summer: Was tut sie genau – und was tut sie nicht?",
+              "Achtet auf Auggies Mitschüler: Wer stellt sich als Erster dazu – und was ändert sich, als es mehr werden?"
+            ],
+            "punkte": [
+              "Film (8 Min.): Szene 1 – Summer setzt sich in der Schulkantine zu Auggie, der allein am Tisch sitzt (Ausschnitt auf höchstens 3 Min. begrenzen); danach drei Antworten auf den Auftrag sammeln – Summer zeigt Stufe 2: Ich bin auf deiner Seite.",
+              "Film (10 Min.): Szene 2 – Beim Schulausflug in die Natur stellen sich Jack und weitere Mitschüler zu Auggie, als ältere Jugendliche ihn bedrängen (höchstens 4 Min.); danach: Wer kam zuerst, was änderte sich – das ist das zweite Nein, nur größer.",
+              "Übung (14 Min.): Zivilcourage-Leiter – Sechs Leiter-Blätter liegen als Sprossen am Boden; die Leitung liest eine Situationskarte vor, alle stellen sich auf die Stufe, die sie sich zutrauen, und sagen, was sie genau tun würden – Stufe 6 nur, wenn es sicher ist.",
+              "Aufgabe 1 bis 3 (8 Min.): Die Beobachtungen zum Film notieren, die eigene Stufe einkreisen, einen Stern an die Stufe machen, die man üben will, und eine Vertrauensperson eintragen."
+            ],
+            "tipp": "Vor dem Film sagen, dass es um die Zuschauenden geht, nicht um einen Kampf; den Ausschnitt vorher ansehen und so wählen, dass er beim gemeinsamen Dastehen endet, nicht bei einer Rangelei.",
+            "wennEsKippt": "Behauptet jemand, er würde sich sofort dazwischenwerfen, nicht belächeln, aber einordnen: Stufe 6 ist nur richtig, wenn sie sicher ist, und Petzen will schaden, Hilfe holen will schützen. Wirkt jemand beim Film bedrückt oder will rausgehen, Pause anbieten und nach der Stunde allein nachfragen.",
+            "blatt": "a7-zivilcourage"
+          },
+          {
+            "titel": "Skill: Innehalten, schauen, handeln",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Der Skill für den Moment, in dem man etwas mitbekommt und nicht weiß, was tun: Hände flach auf die Oberschenkel, einmal lang ausatmen, hinschauen – und dann eine Stufe der Leiter wählen (höchstens 5 Min.). Danach eine Positivitätskette und der Abschluss (zusammen 10 Min.): Skills-Pass, Mission und eigener Moment.",
+            "sagen": [
+              "Hände flach auf die Oberschenkel, einmal lang ausatmen – und jetzt schaut hin: Was passiert hier?",
+              "Das hier ist das Gegenteil von Mobbing: Eine Person nach der anderen wird gesehen."
+            ],
+            "punkte": [
+              "Skill (4 Min.): Die Leitung liest eine Szene vor – im Gruppenchat taucht ein peinliches Foto von jemandem auf, die ersten Lach-Smileys kommen –, alle machen die drei Schritte und zeigen mit den Fingern ihre Stufe der Leiter; zwei sagen, was sie tun würden.",
+              "Positivitätskette (3 Min.): Reihum sagt jede Person der Person rechts neben sich etwas, das sie an ihr schätzt (konkret, ohne Aussehen); die angesprochene Person antwortet nur „Danke“, und auch die Leitung bekommt einen Satz.",
+              "Skills-Pass (3 Min.): ein Satz zur Frage – Welche Stufe der Leiter traue ich mir ab morgen zu? Dann der Stempel.",
+              "Mission und Moment (4 Min.): die Mission vorlesen; jede Person schreibt in die Spalte „Mein Moment: Wenn …“, wo ihr Moment am ehesten kommt – Chat, Pause, Bus oder Sport.",
+              "Hilfe (1 Min.): das Plakat Anlaufstellen zeigen (116 111, 8002 1234, Ansprechpersonen), das Gesprächsangebot nach der Stunde wiederholen und den Ausblick geben."
+            ],
+            "wennEsKippt": "Kommt bei der Kette ein ironischer oder abwertender Satz, die Runde anhalten, ruhig die Regel wiederholen und die Person noch einmal ansetzen lassen – die angesprochene Person bekommt in jedem Fall einen echten Satz, notfalls von der Leitung."
+          }
+        ],
+        "bruecke": "Nächstes Mal besuchen wir eine Stelle, die Jugendlichen hilft: Ihr lernt die Menschen dort kennen und übt den ersten Satz, wenn man Hilfe holt.",
+        "mission": "Sei einmal kein Publikum: Lach nicht mit – oder zeig: Ich bin auf deiner Seite.",
+        "hintergrund": "Olweus (1993) beschreibt Mobbing über wiederholte, absichtlich verletzende Handlungen und ein Ungleichgewicht der Kräfte; das unterscheidet es vom Streit zwischen Gleichstarken. Mobbing ist ein Gruppenprozess: Salmivalli et al. (1996) ordneten den meisten Kindern einer Klasse eine Rolle zu – Täter, Helfer, Verstärker, Außenstehende, Verteidiger, Betroffene. Wer lacht oder schweigt, sichert dem Täter das Publikum. Programme, die Zuschauende stärken, senken Mobbing messbar (Kärnä et al., 2011) – darum setzt die Leiter bei ihnen an.",
+        "quellen": [
+          "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "Kärnä, A., Voeten, M., Little, T. D., Poskiparta, E., Kaljonen, A. & Salmivalli, C. (2011). A large-scale evaluation of the KiVa antibullying program: Grades 4–6. Child Development, 82(1), 311–330."
+        ],
+        "achtung": "Mobbing kann in der Gruppe selbst vorkommen: niemanden nach eigenen Erfahrungen fragen, keine Rollen mit Jugendlichen besetzen, keine Namen sammeln; der Film zeigt Ausgrenzung wegen des Aussehens, das kann Betroffene treffen – Pause und „Weiter“ gelten immer. Gibt es Hinweise auf Mobbing, nicht öffentlich klären, sondern zuerst allein mit der betroffenen Person sprechen, nichts versprechen, was nicht zu halten ist, Beobachtungen mit Datum notieren, die zuständige Leitung (Responsable) informieren und nach dem internen Schutzkonzept handeln. Bei Gewalt, Drohungen, Nacktbildern oder Suizidgedanken sofort handeln; den Film nur mit Einverständnis der Eltern und geklärten Vorführrechten zeigen.",
+        "differenzierung": {
+          "leichter": "Die Geschichte liest die Leitung vor, die vier Merkmale stehen als Stichwörter an der Tafel, und beim Film genügt es, auf die beiden Aufträge mit einem Wort oder einer Geste zu antworten.",
+          "schwerer": "Die Geschichte weiterschreiben und zeigen, was passiert, wenn die Mitlesenden nicht mehr schweigen, oder eine eigene Szene erfinden, in der jemand zur Seite der Betroffenen wechselt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Ecken-Spiel und Rollen mit der Geschichte (15 Min.), eine Filmszene mit Gespräch (10 Min.), Leiter mit zwei Situationskarten (10 Min.), Skills-Pass, Mission und Hilfe-Plakat (10 Min.). Bewegungsspiel, zweite Filmszene und Positivitätskette entfallen."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-zivilcourage",
+      "bereich": "skills",
+      "thema": "schwierig",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Mobbing", "Zivilcourage", "Zuschauende", "Film"],
+      "bild": "icon:shield",
+      "kurs": ["a7-e23"],
+      "de": {
+        "titel": "Zivilcourage-Leiter",
+        "untertitel": "Wer nicht mitlacht, ist kein Publikum mehr.",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Film: Was tut Summer? Was ändert sich, als sich die Mitschüler zu Auggie stellen?",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "linien": 2,
+            "items": [
+              "Summer tut: …",
+              "Als die Mitschüler dazukommen, ändert sich: …"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Kreise die Stufe ein, die du dir schon zutraust. Mach einen Stern an die, die du üben willst.",
+            "symbole": ["einkreisen"]
+          },
+          {
+            "art": "leiter",
+            "stufen": 6,
+            "unten": "geht fast immer",
+            "oben": "braucht Mut – nur, wenn es sicher ist",
+            "beispiele": [
+              "Nicht mitlachen, nichts weiterleiten.",
+              "Der Person zeigen: Ich bin auf deiner Seite.",
+              "Andere dazuholen – zu zweit ist es leichter.",
+              "Einer erwachsenen Person Bescheid sagen – kein Petzen.",
+              "Online: Beweis sichern, melden, nicht teilen.",
+              "„Stopp“ sagen – nur, wenn es für dich sicher ist."
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "info",
+                "symbol": "wissen",
+                "titel": "Gut zu wissen",
+                "text": "Mobbing braucht Publikum. Wer nicht mitlacht, nimmt ihm die Bühne."
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "merke",
+                "titel": "Petzen oder Hilfe holen?",
+                "text": "Petzen will schaden. Hilfe holen will schützen."
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib eine Vertrauensperson in den Kasten.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "notfall",
+            "text": "Wirst du gemobbt? Du bist nicht schuld. Hilfe: 116 111 · 8002 1234",
+            "eintraege": []
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen halten fest, was Zuschauende im Film tun und bewirken, wählen eine sichere Stufe der Zivilcourage und tragen eine Vertrauensperson ein.",
+          "ablauf": [
+            "Einheit 23, Teil 2: Aufgabe 1 nach den beiden Filmszenen, kurz in Stichworten; danach die Leiter am Boden, dann Aufgabe 2 allein.",
+            "Aufgabe 3: eine Vertrauensperson eintragen – wem niemand einfällt, schreibt die Ansprechperson der Annexe.",
+            "Auf die Zeile „Du bist nicht schuld“ hinweisen; das Blatt wird nicht eingesammelt."
+          ],
+          "hintergrund": "Nach Olweus (1993) liegt Mobbing vor, wenn eine Person wiederholt und absichtlich verletzt wird und sich wegen ungleicher Kräfte kaum wehren kann. Mobbing ist ein Gruppenprozess mit festen Rollen (Salmivalli et al., 1996); wer lacht, liked oder weiterleitet, verstärkt – darum setzt die Leiter bei den Zuschauenden an. Programme, die Zuschauende stärken, senken Mobbing messbar (Kärnä et al., 2011).",
+          "quellen": [
+            "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
+            "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+            "Kärnä, A., Voeten, M., Little, T. D., Poskiparta, E., Kaljonen, A. & Salmivalli, C. (2011). A large-scale evaluation of the KiVa antibullying program: Grades 4–6. Child Development, 82(1), 311–330."
+          ],
+          "achtung": "Mobbing kann in der Gruppe selbst vorkommen: niemanden nach Erfahrungen fragen, keine Namen sammeln. Bei Hinweisen nicht in der Stunde klären, sondern allein sprechen und die zuständige Leitung (Responsable) informieren.",
+          "material": "Film „Wunder“ (2017), Leiter-Blätter, Stifte"
+        }
+      }
+    },
+    {
+      "id": "a7-mobbing-karten",
+      "bereich": "skills",
+      "thema": "schwierig",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "35 Min.",
+      "eldib": [],
+      "schlagworte": ["Mobbing", "Rollen", "Zivilcourage", "Situationskarten"],
+      "bild": "icon:users",
+      "kurs": ["a7-e23"],
+      "de": {
+        "titel": "Rollen und Situationen",
+        "untertitel": "Kopiervorlage: eine Geschichte, sechs Rollenkarten und sechs Situationen zum Ausschneiden",
+        "bausteine": [
+          {
+            "art": "geschichte",
+            "titel": "Die Sprachnachricht",
+            "bild": "figur:jana:traurig",
+            "text": "Nora hat im Gruppenchat eine Sprachnachricht geschickt, ihre Stimme zittert ein bisschen. Mathis macht daraus einen Clip mit Quietschgeräuschen und postet ihn. Rafael leitet ihn in eine andere Gruppe weiter. Zehn Leute reagieren mit Lach-Smileys, die meisten anderen lesen nur mit. Inês schreibt Nora privat: „Das war echt fies. Ich bin auf deiner Seite.“"
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 84,
+            "karten": [
+              { "titel": "Täter", "text": "fängt an und bestimmt, was passiert" },
+              { "titel": "Helfer", "text": "macht mit, sobald es losgeht" },
+              { "titel": "Verstärker", "text": "lacht, feuert an, liked" },
+              { "titel": "Außenstehende", "text": "schauen weg oder lesen nur mit" },
+              { "titel": "Verteidiger", "text": "hält zur betroffenen Person oder holt Hilfe" },
+              { "titel": "Betroffene Person", "text": "wird immer wieder angegriffen und kann sich allein nicht wehren – dieser Stuhl bleibt leer" }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 96,
+            "karten": [
+              { "titel": "M1 · Im Unterricht", "text": "Seit Wochen macht eine Gruppe Geräusche, sobald ein Mitschüler etwas sagt. Die halbe Klasse lacht." },
+              { "titel": "M2 · Die Kommentare", "text": "Unter den Videos einer Mitschülerin stehen immer wieder gemeine Kommentare. Einige aus der Klasse liken sie." },
+              { "titel": "M3 · Die Kleidung", "text": "Eine Neue wird jeden Tag wegen ihrer Kleidung ausgelacht. In der Pause steht sie inzwischen allein." },
+              { "titel": "M4 · Im Bus", "text": "Jeden Morgen nehmen zwei Ältere einem Jüngeren im Bus den Rucksack weg und werfen ihn herum." },
+              { "titel": "M5 · Der Chat", "text": "Ein Mitschüler wird aus dem Gruppenchat entfernt – jedes Mal, wenn ihn jemand wieder hinzufügt." },
+              { "titel": "M6 · Der Witz", "text": "Über das Aussehen eines Mitschülers gibt es seit Wochen Witze. Er lacht mit, bleibt in der Pause aber lieber allein." }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Eine erfundene Geschichte und Rollenkarten für die Stühle sowie Situationskarten für die Zivilcourage-Leiter.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; Karten weglassen, die auf jemanden in der Gruppe passen könnten, und Namen tauschen, falls jemand so heißt.",
+            "Einheit 23, Teil 1: Rollenkarten auf sechs Stühle legen, der Stuhl der betroffenen Person bleibt leer und abseits; die Geschichte vorlesen und die Rollen klären.",
+            "Teil 2: Die Leitung liest eine Situationskarte vor, alle stellen sich auf die Stufe der Leiter, die sie sich zutrauen, und sagen, was sie genau tun würden."
+          ],
+          "hintergrund": "Mobbing ist ein Gruppenprozess; die meisten Jugendlichen nehmen eine Rolle ein, auch ohne es zu merken (Salmivalli et al., 1996). Geübt wird nur das Handeln der Zuschauenden – die betroffene Person wird nie gespielt, ihr Stuhl bleibt leer.",
+          "quellen": [
+            "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}

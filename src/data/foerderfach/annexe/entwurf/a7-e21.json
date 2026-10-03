@@ -1,0 +1,366 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e21",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "a7-streit-treppe"
+      ],
+      "vorlagen": [
+        "a7-streit-karten"
+      ],
+      "woerter": [
+        { "de": "der Streit", "fr": "der Streit" },
+        { "de": "die Konflikt-Treppe", "fr": "die Konflikt-Treppe" },
+        { "de": "der Kompromiss", "fr": "der Kompromiss" },
+        { "de": "sich einigen", "fr": "sich einigen" },
+        { "de": "die Auszeit", "fr": "die Auszeit" }
+      ],
+      "de": {
+        "titel": "Konflikte lösen",
+        "kurz": "Die Gruppe entdeckt, welches Tier sie im Streit ist, lernt die Konflikt-Treppe kennen und spielt einen Streit zweimal gegen die Leitung: wie sonst und Stufe für Stufe.",
+        "ziele": [
+          "ordnen ihr Verhalten im Streit fünf Konfliktstilen zu und beschreiben die fünf Stufen der Konflikt-Treppe",
+          "spielen einen Alltagsstreit zweimal gegen die Leitung und benennen den Satz, der ihn gedreht hat",
+          "kennen ihre Streit-Grenze auf der Skala von 0 bis 100 und üben die Auszeit als Skill für Stufe 1"
+        ],
+        "material": [
+          "Gefühlsrad, Anspannungsskala, Klebepunkte",
+          "Fünf Tierschilder (A4)",
+          "Treppen-Plakat (A2), abgedeckt",
+          "Streit-Karten (Vorlage), Heft-Blatt",
+          "Ampelplan und Skills-Koffer",
+          "Skills-Pass, Stempel"
+        ],
+        "vorbereitung": [
+          "Tierschilder in die Ecken hängen; das Treppen-Plakat zeichnen (fünf Stufen mit Titel) und abdecken.",
+          "Streit-Karten schneiden; Karten weglassen, die einem echten Streit in der Gruppe ähneln.",
+          "Für das Schreiduell 10 Meter Strecke suchen (Hof, Flur) und Nachbarn vorwarnen: Es wird kurz laut.",
+          "Ampelpläne und Skills-Koffer der Jugendlichen bereitlegen."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühl, Zahl und Streit-Grenze" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und neues Kapitel" },
+          { "min": "15–45", "phase": "uebung", "titel": "Tiere im Streit und die Konflikt-Treppe" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Bewegung: Schreiduell" },
+          { "min": "50–85", "phase": "uebung", "titel": "Zweimal derselbe Streit mit der Leitung" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Runter unter 70" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühl, Zahl und Streit-Grenze",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Alle sitzen im Kreis, jede Person zeigt ihr Wort auf dem Gefühlsrad und nennt ihre Anspannung von 0 bis 100; die Leitung macht mit und beginnt. Heute dazu eine zweite Zahl: Ab wann hörst du in einem Streit nicht mehr richtig zu? Dafür klebt jede Person einen Punkt auf die Anspannungsskala – die Punkte werden bei der Treppe wieder gebraucht.",
+            "sagen": [
+              "Gefühl, Zahl – und ein Punkt auf die Skala: Ab welcher Zahl ist bei dir im Streit Schluss mit Zuhören?",
+              "Bei mir liegt die Grenze ungefähr bei 60: Darüber höre ich vor allem mich selbst."
+            ],
+            "tipp": "Dass die Punkte weit auseinanderliegen, ist das eigentliche Ergebnis: Jede Person kippt an einer anderen Stelle, und genau darauf baut die Treppe später auf."
+          },
+          {
+            "titel": "Rückblick, Mission und neues Kapitel",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – hast du den festen Stand gemacht oder dir leise deinen Stopp-Satz gesagt? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz, ohne Namen. Dann das neue Kapitel „Wenn es schwierig wird“ öffnen: In den nächsten vier Stunden geht es um Streit, Druck, Mobbing und Hilfe – heute zuerst um den ganz normalen Streit.",
+            "sagen": [
+              "Kam euer Moment, und was habt ihr gemacht: Daumen hoch, Mitte oder runter?",
+              "Streit gehört zum Leben – die Frage ist nicht, ob es kracht, sondern wie ihr wieder rauskommt."
+            ],
+            "tipp": "Gespielt werden heute nur erfundene Karten, nie ein echter Streit aus der Gruppe – das vorher ausdrücklich sagen."
+          },
+          {
+            "titel": "Tiere im Streit und die Konflikt-Treppe",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Zuerst das Modell: Fünf Tiere stehen für fünf Arten, im Streit zu reagieren – sie beschreiben, was man tut, nicht, wer man ist. Dann lernt die Gruppe die Konflikt-Treppe kennen, von unten nach oben, und findet für jede Stufe einen Satz in den eigenen Worten.",
+            "sagen": [
+              "Die Tiere beschreiben, was ihr im Streit tut – nicht, wer ihr seid; mit jedem Gegenüber kann es ein anderes Tier sein.",
+              "Warum steht das Runterkommen ganz unten und nicht irgendwo in der Mitte?"
+            ],
+            "punkte": [
+              "Modell (3 Min.): Die fünf Tierschilder mit je einer Geste vorstellen – Schildkröte zieht sich zurück (Hände als Panzer), Hai will gewinnen (Hand als Flosse), Teddybär gibt nach, Fuchs sucht einen Kompromiss, Eule sucht eine Lösung für beide.",
+              "Spiel (9 Min.): Tier-Aufstellung – Die Leitung nennt nacheinander drei Streits („Dein bester Freund hat ein Geheimnis von dir weitererzählt“ · „Deine Eltern wollen, dass du am Samstag mitkommst, obwohl du verabredet bist“ · „Eine Lehrkraft gibt dir eine Note, die du ungerecht findest“), alle gehen jedes Mal zu ihrem Tier und sagen in einem Satz, warum; die Leitung geht mit, danach Aufgabe 1.",
+              "Übung (10 Min.): Die Treppe – Lenas Streit erzählen (Tiago hat beim gemeinsamen Film nichts getan, Lena ist bei 80), das Plakat aufdecken und die Stufen von unten erklären: 1 Stopp und runterkommen · 2 Ich-Botschaft · 3 Zuhören · 4 Lösungen sammeln · 5 Einigen.",
+              "Übung (2 Min.): Zahlen – Auf die Punkte vom Check-in zeigen: Wer über seiner Grenze ist, schafft Stufe 2 kaum, darum steht das Runterkommen ganz unten.",
+              "Aufgabe 2 (6 Min.): Sätze für Lena – Jede Person schreibt für Stufe 1 bis 3 je einen Satz in eigenen Worten und liest einen vor; die Leitung schreibt mit und liest auch einen vor."
+            ],
+            "tipp": "Die Treppe als Geländer vorstellen, nicht als Pflichtprogramm: Wer merkt, dass es wieder kippt, geht zurück auf Stufe 1 – das ist kein Scheitern, sondern der Weg, der funktioniert.",
+            "wennEsKippt": "Rennen alle aus Spaß zum Hai, gelassen fragen, was am Hai so attraktiv ist, und die nächste Runde mit geschlossenen Augen zeigen lassen. Kommt „So redet doch keiner“, zustimmen und fragen, wie derselbe Satz in der eigenen Sprache klingt – die Stufe muss erkennbar bleiben, nicht der Wortlaut.",
+            "blatt": "a7-streit-treppe"
+          },
+          {
+            "titel": "Bewegung: Schreiduell",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Zwei Personen rufen auf ein Zeichen gleichzeitig ihren Quatsch-Satz aus etwa 10 Metern einer dritten zu, die versucht, beide zu wiederholen; dann wird gewechselt, und die Leitung ist einmal Hörerin. Zum Schluss fragen, was geholfen hätte, damit ein Satz ankommt: abwechseln, näher kommen, nachfragen – das ist Stufe 3 der Treppe.",
+            "sagen": [
+              "Zwei rufen gleichzeitig ihren Satz, eine hört zu und wiederholt – auf drei: eins, zwei, drei."
+            ],
+            "punkte": [
+              "Die Eule sucht ihre Brille im Kühlschrank.",
+              "Drei Schildkröten spielen Tischtennis im Regen.",
+              "Der Hai hat Zahnschmerzen und isst nur noch Pudding.",
+              "Der Fuchs verkauft Pizza mit Ananas an der Tankstelle.",
+              "Morgen regnet es Popcorn über dem Pausenhof."
+            ],
+            "tipp": "Draußen im Hof oder im Flur spielen; wer Lärm schlecht aushält, übernimmt das Zählen und hört aus der Nähe zu."
+          },
+          {
+            "titel": "Zweimal derselbe Streit mit der Leitung",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Jede Person zieht eine Streit-Karte und spielt gegen die Leitung, die anderen beiden sind Treppenwache. Die Szene läuft zweimal: erst so, wie ein solcher Streit oft läuft, dann Stufe für Stufe mit der Treppe.",
+            "sagen": [
+              "Erst die Version, die ihr aus dem echten Leben kennt – gern übertrieben, aber ohne echte Namen und ohne Schimpfwörter.",
+              "Stopp – wo genau ist es gerade gekippt?"
+            ],
+            "punkte": [
+              "Vorspiel (3 Min.): Die Leitung spielt eine Karte mit zwei Stühlen selbst vor, erst Version 1, dann Version 2; die Jugendlichen zeigen mit den Fingern die Stufe.",
+              "Rollenspiel (21 Min.): Zweimal derselbe Streit – Jede Person (je 7 Min.) spielt B gegen die Leitung als A: Version 1 höchstens eine Minute, danach Version 2 mit der Treppe; die Treppenwache zeigt die Stufe mit den Fingern, ruft „Stopp“, wenn es kippt, und merkt sich den Satz, der etwas dreht.",
+              "Challenge (6 Min.): Lösungen-Blitz – Zum Streit der letzten Karte rufen alle in 60 Sekunden so viele Lösungen wie möglich, auch verrückte; die Leitung schreibt mit, danach wählt die Gruppe die Lösung, mit der beide Seiten wirklich zufrieden wären – das ist die Eule.",
+              "Aufgabe 3 (5 Min.): Die Sätze, die einen Streit gedreht haben, auf Karteikarten neben das Treppen-Plakat hängen; allein den Satz, der den eigenen Streit drehen würde, auf das Blatt schreiben."
+            ],
+            "tipp": "Die erste Version kurz halten und die meiste Zeit in die zweite stecken; hängt eine Szene fest, friert die Leitung sie ein und fragt die Treppenwache, welche Stufe fehlt.",
+            "wennEsKippt": "Wird eine Szene zu echt – jemand wird persönlich oder spielt einen Streit aus der Gruppe nach –, freundlich abbrechen, aus der Rolle holen (ausschütteln, den eigenen Namen sagen) und die Karte wechseln. Echte Konflikte zwischen Jugendlichen gehören in ein begleitetes Gespräch, nicht ins Rollenspiel.",
+            "blatt": "a7-streit-karten"
+          },
+          {
+            "titel": "Skill: Runter unter 70",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Nach dem Lärm bewusst leise werden: Jede Person sucht in ihrem Ampelplan den Skill, der sie in einem Streit von 70 wieder nach unten bringt – auch wenn man nicht einfach weggehen kann – und testet ihn mit Zahl vorher und Zahl nachher (höchstens 5 Min., still höchstens 3 Min.). Danach der Abschluss (10 Min.): Skills-Pass, Mission und eigener Moment.",
+            "sagen": [
+              "Von 100 auf 0 schafft niemand in einer Minute – von 80 auf 60 reicht für Stufe 2.",
+              "Welcher Skill aus eurem Koffer geht auch mitten im Streit, ohne dass es die anderen merken?"
+            ],
+            "punkte": [
+              "Skill (5 Min.): Auszeit in drei Schritten – ansagen („Ich brauch kurz fünf Minuten, dann reden wir weiter“), runterkommen mit dem eigenen Skill oder einer Minute Quadrat-Atmen (vier Sekunden ein, vier halten, vier aus, vier halten), pünktlich zurückkommen und mit einer Ich-Botschaft weitermachen; Zahl vorher und nachher mit den Fingern zeigen.",
+              "Skills-Pass (3 Min.): ein Satz zur Frage – Welche Stufe der Treppe fällt mir am schwersten, und was hilft mir dabei? Dann der Stempel.",
+              "Mission und Moment (7 Min.): die Mission vorlesen; auf drei zeigen alle, wo es bei ihnen am ehesten kracht – ein Finger zu Hause, zwei Annexe oder Schule, drei Chat – und schreiben ihren Moment in die Spalte „Mein Moment: Wenn …“; dann der Ausblick."
+            ],
+            "wennEsKippt": "Fehlt der Ampelplan, den Skill auf eine leere Skills-Karte schreiben; wer das Atemanhalten unangenehm findet, atmet nur langsam aus, und niemand muss die Augen schließen."
+          }
+        ],
+        "bruecke": "Nächstes Mal geht es um Druck von außen: Was macht ihr, wenn alle etwas wollen, das ihr selbst nicht wollt – und wie sagt ihr dann Nein?",
+        "mission": "Probiere die Auszeit: ansagen, runterkommen, zurückkommen.",
+        "hintergrund": "Thomas und Kilmann (1974) ordnen Konfliktverhalten nach zwei Fragen: Wie stark verfolge ich meine Anliegen, wie stark die der anderen? So entstehen fünf Stile, für die die Tiere stehen; keiner ist immer richtig. Glasl (1980) beschreibt, wie Konflikte sich hochschaukeln: Je früher jemand aussteigt, desto eher gewinnen beide. Die Treppe beginnt deshalb mit dem Runterkommen und folgt der niederlagelosen Methode von Gordon (1972): Ich-Botschaft, Zuhören, gemeinsam Lösungen suchen.",
+        "quellen": [
+          "Thomas, K. W. & Kilmann, R. H. (1974). Thomas-Kilmann Conflict Mode Instrument. Tuxedo, NY: Xicom.",
+          "Glasl, F. (1980). Konfliktmanagement. Bern: Haupt.",
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe."
+        ],
+        "achtung": "Gespielt werden nur die erfundenen Karten, nie ein echter Streit aus der Gruppe; echte Konflikte zwischen Jugendlichen gehören in ein begleitetes Gespräch außerhalb der Stunde, nicht ins Rollenspiel und nicht ins Plenum. Wird jemand immer wieder angegriffen, ist das möglicherweise Mobbing und gehört nicht in die Konflikt-Treppe: Beobachtungen mit Datum notieren, die zuständige Leitung (Responsable) informieren und nach dem internen Schutzkonzept handeln. Erzählt jemand von Gewalt, auch zu Hause, nicht vertiefen, nichts versprechen und bei Gefährdung sofort handeln; beim Schreiduell auf Jugendliche achten, denen Lärm schnell zu viel wird.",
+        "differenzierung": {
+          "leichter": "Bei den Tieren helfen Schilder und Gesten, und für die Treppe stehen Satzanfänge an der Tafel („Ich brauch kurz …“, „Ich fühle mich …, wenn …“, „Du meinst also …?“, „Wir könnten …“); wer noch wenig Deutsch spricht, spielt mit Gesten und einem Wort.",
+          "schwerer": "Die Treppenwache moderiert eine Szene und fragt bei jedem Stopp, was die beiden eigentlich wollen, oder überträgt die Treppe auf einen Streit mit einer erwachsenen Person."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Streit-Grenze (5 Min.), Tiere und Konflikt-Treppe mit Lenas Geschichte (15 Min.), eine Streit-Karte, von der Leitung und einer Person zweimal gespielt (20 Min.), Skill, Skills-Pass und Mission (10 Min.). Schreiduell und Lösungen-Blitz entfallen."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-streit-treppe",
+      "bereich": "skills",
+      "thema": "schwierig",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Konfliktstil", "Konflikt-Treppe", "Streit lösen", "Rollenspiel"],
+      "bild": "icon:stairs-up",
+      "kurs": ["a7-e21"],
+      "de": {
+        "titel": "Die Konflikt-Treppe",
+        "untertitel": "Dein Tier im Streit – und der Weg heraus, Stufe für Stufe",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Kreuze dein Tier im Streit an.",
+            "hinweis": "Passen zwei, darfst du zwei ankreuzen.",
+            "symbole": ["ankreuzen"]
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 2,
+            "items": [
+              "Schildkröte: zieht sich zurück",
+              "Hai: will gewinnen",
+              "Teddybär: gibt nach",
+              "Fuchs: sucht einen Kompromiss",
+              "Eule: sucht eine Lösung für beide"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Was könnte Lena auf Stufe 1, 2 und 3 sagen? Schreib je einen Satz.",
+            "hinweis": "Tiago hat beim Film nichts getan. Lenas Zahl ist bei 80.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "linien": 1,
+            "items": [
+              "Stufe 1 · Stopp und runterkommen: …",
+              "Stufe 2 · Ich-Botschaft: …",
+              "Stufe 3 · Zuhören: …"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib den Satz auf, der euren Streit gedreht hat.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "linien": 2,
+            "items": [
+              "Der Satz, der den Streit gedreht hat: …"
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "info",
+                "symbol": "wissen",
+                "titel": "Gut zu wissen",
+                "text": "Im Streit steigt deine Anspannung. Ab etwa 70 hörst du kaum noch zu. Darum gilt: erst runterkommen, dann reden."
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "merke",
+                "titel": "Die Treppe",
+                "punkte": [
+                  "Stufe 4: Lösungen sammeln. Stufe 5: einigen.",
+                  "Kippt es wieder: zurück zu Stufe 1."
+                ]
+              }
+            ]
+          },
+          {
+            "art": "notfall",
+            "text": "Wirst du immer wieder fertiggemacht? Das ist mehr als Streit. Hilfe: 116 111",
+            "eintraege": []
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen ordnen ihr Verhalten im Streit fünf Konfliktstilen zu, formulieren Sätze für die ersten drei Stufen der Konflikt-Treppe und halten den Satz fest, der einen Streit gedreht hat.",
+          "ablauf": [
+            "Einheit 21, Teil 1: nach der Tier-Aufstellung Aufgabe 1 allein, die Antwort bleibt privat; nach der Erklärung der Treppe Aufgabe 2 (6 Min.), Stufe 1 bis 3 reichen.",
+            "Teil 2: Aufgabe 3 nach den Szenen – der Satz, der einen Streit gedreht hat.",
+            "Die Treppenwache zeigt im Rollenspiel auf das Treppen-Plakat oder auf dieses Blatt; das Blatt wird nicht eingesammelt."
+          ],
+          "hintergrund": "Das Modell von Thomas und Kilmann (1974) ordnet Konfliktverhalten nach zwei Fragen: wie stark jemand die eigenen Anliegen verfolgt und wie stark die der anderen. Keiner der fünf Stile ist immer richtig. Die Treppe stellt das Runterkommen vor das Gespräch und folgt dann der niederlagelosen Methode von Gordon (1972): Ich-Botschaft, Zuhören, gemeinsam Lösungen suchen und sich einigen.",
+          "quellen": [
+            "Thomas, K. W. & Kilmann, R. H. (1974). Thomas-Kilmann Conflict Mode Instrument. Tuxedo, NY: Xicom.",
+            "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe."
+          ],
+          "achtung": "Die Treppe setzt ungefähr gleich starke Seiten voraus. Bei Mobbing, Gewalt oder Bedrohung geht es um Schutz: nicht in der Gruppe klären, die zuständige Leitung (Responsable) informieren.",
+          "material": "Tierschilder, Treppen-Plakat"
+        }
+      }
+    },
+    {
+      "id": "a7-streit-karten",
+      "bereich": "skills",
+      "thema": "schwierig",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "25 Min.",
+      "eldib": [],
+      "schlagworte": ["Streit-Karten", "Rollenspiel", "Konflikt-Treppe"],
+      "bild": "icon:masks-theater",
+      "kurs": ["a7-e21"],
+      "de": {
+        "titel": "Streit-Karten und Treppen-Karten",
+        "untertitel": "Kopiervorlage: sechs erfundene Streits und die fünf Stufen zum Ausschneiden",
+        "bausteine": [
+          {
+            "art": "text",
+            "klein": true,
+            "text": "Einmal kopieren und ausschneiden. Die Leitung spielt A, die Person spielt B – erst die Szene so, wie ein solcher Streit oft läuft, dann mit der Treppe. Die anderen beiden sind Treppenwache und halten die Treppen-Karten. Alle Streits sind erfunden; niemand spielt sich selbst oder jemanden aus der Gruppe."
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 150,
+            "karten": [
+              {
+                "titel": "1 · Der Film",
+                "text": "B soll mit A einen Kurzfilm abgeben. A hat die ganze Woche nichts getan.\nStartsatz A: „Chill mal, das schaffen wir noch.“"
+              },
+              {
+                "titel": "2 · Das Gerücht",
+                "text": "A redet nicht mehr mit B, weil A ein Gerücht glaubt: B habe über A gelästert. Das stimmt nicht.\nStartsatz A: „Ich will nichts mehr von dir hören.“"
+              },
+              {
+                "titel": "3 · Die Wahl",
+                "text": "B wurde zum Kapitän der Mannschaft gewählt. A wollte das auch und redet seitdem kaum noch mit B.\nStartsatz A: „Na, Kapitän? Hast du ja leicht geschafft.“"
+              },
+              {
+                "titel": "4 · Dazwischen",
+                "text": "Zwei Freunde von B haben Streit. A will, dass B sich auf seine Seite stellt – am besten heute noch.\nStartsatz A: „Du bist doch auf meiner Seite, oder?“"
+              },
+              {
+                "titel": "5 · Das Ladekabel",
+                "text": "A nimmt ständig das Ladekabel von B und bringt es nicht zurück. Heute Morgen war der Akku von B leer.\nStartsatz A: „Was regst du dich auf, ist doch nur ein Kabel.“"
+              },
+              {
+                "titel": "6 · Die Kopfhörer",
+                "text": "B hat A die Kopfhörer geliehen. A gibt sie mit einem Kratzer zurück und sagt, der war schon vorher da.\nStartsatz A: „Der war schon vorher da, echt jetzt.“"
+              }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 100,
+            "karten": [
+              {
+                "titel": "Stufe 1 · Stopp und runterkommen",
+                "text": "Zahl unter 70 bringen.\n„Ich brauch kurz fünf Minuten.“"
+              },
+              {
+                "titel": "Stufe 2 · Ich-Botschaft",
+                "text": "Sagen, was mich stört – ohne Vorwurf.\n„Ich ärgere mich, weil …“"
+              },
+              {
+                "titel": "Stufe 3 · Zuhören",
+                "text": "Verstehen und zusammenfassen.\n„Du meinst also …?“"
+              },
+              {
+                "titel": "Stufe 4 · Lösungen sammeln",
+                "text": "Alle Ideen aufschreiben, noch nichts bewerten.\n„Was könnten wir noch tun?“"
+              },
+              {
+                "titel": "Stufe 5 · Einigen",
+                "text": "Eine Lösung wählen, mit der beide leben können.\n„Okay, wir probieren das bis Freitag.“"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Erfundene Alltagsstreits für das Rollenspiel mit der Leitung und fünf Treppen-Karten für die Treppenwache.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; Karten weglassen, die einem echten Streit in der Gruppe ähneln.",
+            "Einheit 21, Teil 2: Jede Person zieht eine Streit-Karte und spielt B; die Leitung spielt A und beginnt mit dem Startsatz; die Treppenwache zeigt die Stufe mit den Treppen-Karten.",
+            "Version 1 höchstens eine Minute, Version 2 mit der Treppe; nach jeder Szene aus der Rolle steigen: ausschütteln, den eigenen Namen sagen."
+          ],
+          "hintergrund": "Im Rollenspiel lässt sich eine Reaktion ohne echtes Risiko ausprobieren und im zweiten Durchgang verbessern; wer ein Verhalten mehrmals erfolgreich übt, traut es sich im Ernstfall eher zu (Bandura, 1977). Erfundene Streits schützen: Niemand muss Eigenes zeigen, und die Gegenseite spielt die Leitung.",
+          "quellen": [
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e24",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "a7-mein-netz"
+      ],
+      "vorlagen": [
+        "a7-besuchs-karten"
+      ],
+      "woerter": [
+        { "de": "die Beratungsstelle", "fr": "die Beratungsstelle" },
+        { "de": "Hilfe holen", "fr": "Hilfe holen" },
+        { "de": "vertraulich", "fr": "vertraulich" },
+        { "de": "der erste Satz", "fr": "der erste Satz" },
+        { "de": "das Netz", "fr": "das Netz" }
+      ],
+      "de": {
+        "titel": "Hilfe holen ist stark",
+        "kurz": "Die Gruppe besucht eine Beratungsstelle für Jugendliche oder ein Jugendhaus, übt den ersten Satz, wenn man Hilfe holt, und schreibt auf, wer und was in ihrem Netz hilft.",
+        "ziele": [
+          "unterscheiden Petzen und Hilfe holen und üben den ersten Satz – auch wenn die erwachsene Person „Jetzt nicht“ sagt",
+          "lernen vor Ort eine Stelle kennen, die Jugendlichen hilft, und stellen ihre eigenen Fragen",
+          "schreiben ihr Netz auf: Menschen, Stellen und Nummern, an die sie sich wenden können"
+        ],
+        "material": [
+          "Gefühlsrad, Anspannungsskala",
+          "Besuchs-Karten (Vorlage), Heft-Blatt",
+          "Klemmbrett, Stifte",
+          "Handynummer-Liste, Notfallnummer",
+          "Regenjacken, Wasser, Fahrkarten",
+          "Skills-Pass, Stempel"
+        ],
+        "vorbereitung": [
+          "Termin telefonisch vereinbaren (etwa 40 Min.): Informationsbesuch mit Rundgang und Fragerunde, ohne Persönliches.",
+          "Einverständnis der Eltern liegt vor; Weg abgehen, Treffpunkt und Signal festlegen, Notfallnummer 112 notieren.",
+          "Aufsicht: Die Leitung bleibt immer bei der Gruppe; ihre Handynummer steht auf den Besuchs-Karten.",
+          "Regenvariante: Bus statt Fußweg (Fahrzeit einplanen) oder die Fachperson bitten, in die Annexe zu kommen."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühl, Zahl und Hilfe-Frage" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Ziel: Hilfe holen" },
+          { "min": "15–30", "phase": "uebung", "titel": "Petzen oder Hilfe holen? Der erste Satz" },
+          { "min": "30–35", "phase": "aktiv", "titel": "Aufbruch: Regeln fürs Draußen" },
+          { "min": "35–85", "phase": "uebung", "titel": "Besuch bei der Anlaufstelle" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Der erste Satz" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühl, Zahl und Hilfe-Frage",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Jede Person zeigt ihr Wort auf dem Gefühlsrad und nennt ihre Anspannung von 0 bis 100; die Leitung macht mit und beginnt. Heute dazu eine leichte Frage: Wobei hast du dir zuletzt Hilfe geholt – bei etwas Kleinem, ein Wort reicht? Die Leitung nennt zuerst ein eigenes Beispiel.",
+            "sagen": [
+              "Gefühl, Zahl – und: Wobei hast du dir zuletzt Hilfe geholt? Hausaufgabe, Weg, Handy, Essen – ein Wort reicht.",
+              "Ich habe letzte Woche meine Nachbarin gebeten, ein Paket für mich anzunehmen."
+            ],
+            "tipp": "Die Frage zeigt, dass alle jeden Tag Hilfe holen; wem nichts einfällt, sagt „weiter“, und die Leitung hilft mit einem Beispiel aus dem Alltag."
+          },
+          {
+            "titel": "Rückblick, Mission und Ziel: Hilfe holen",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – hast du nicht mitgelacht oder gezeigt: Ich bin auf deiner Seite? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann das Ziel nennen: Stufe 4 der Leiter heißt Hilfe holen – heute besucht die Gruppe eine Stelle, die Jugendlichen hilft, und übt den ersten Satz.",
+            "sagen": [
+              "Kam euer Moment, und was habt ihr gemacht: Daumen hoch, Mitte oder runter?",
+              "Heute geht es um den Schritt, den viele aufschieben: Hilfe holen – und wir schauen uns an, wie das aussieht, bevor ihr es braucht."
+            ],
+            "tipp": "Den Gruppenvertrag zeigen: Wenn jemand in Gefahr ist, holt die Leitung Hilfe und sagt vorher, was sie tut – so sieht Hilfe holen aus, wenn Erwachsene es richtig machen."
+          },
+          {
+            "titel": "Petzen oder Hilfe holen? Der erste Satz",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Zuerst das Bild: Petzen will schaden, Hilfe holen will schützen – und wer sich Hilfe holt, ist wie ein Profi mit Trainer. Dann übt jede Person mit der Leitung den ersten Satz, auch wenn die erwachsene Person „Jetzt nicht“ sagt, und bereitet ihre Frage für den Besuch vor.",
+            "sagen": [
+              "Petzen will jemandem schaden, Hilfe holen will jemanden schützen – und das ist immer in Ordnung.",
+              "Jede Sportlerin hat einen Trainer, jeder Pilot eine Copilotin: Profis holen sich Hilfe, weil sie besser werden wollen."
+            ],
+            "punkte": [
+              "Bild (3 Min.): Das Netz – in der Mitte ich, im ersten Ring Menschen, die mir nah sind, im zweiten Menschen in Annexe und Schule, im dritten Stellen und Telefon; ein Netz hält, weil es mehr als einen Faden hat.",
+              "Rollenspiel (7 Min.): Der erste Satz – Die Leitung spielt eine erwachsene Person, jede Person sagt ihren ersten Satz („Hast du kurz Zeit? Ich brauche Hilfe bei etwas und weiß nicht, wie ich anfangen soll“); beim zweiten Mal sagt die Leitung „Jetzt nicht, ich habe gleich einen Termin“, und die Person bleibt dran („Wann hast du Zeit?“).",
+              "Karten (5 Min.): Jede Person wählt auf den Besuchs-Karten eine Frage für den Besuch oder schreibt eine eigene und zeigt die Zahl vorher mit den Fingern: Wie hoch ist meine Anspannung, wenn ich mir vorstelle, dort hineinzugehen?"
+            ],
+            "wennEsKippt": "Kommt „Das ist doch petzen“ oder „Die helfen eh nicht“, ernst nehmen: Schlechte Erfahrungen gibt es, und niemand muss sie erzählen – die Frage ist, wer dir helfen könnte, wenn du es brauchst. Wird das „Jetzt nicht“ zu hart gespielt oder lacht jemand die bittende Person aus, stoppen: Die erwachsene Person ist beschäftigt, nicht gemein.",
+            "blatt": "a7-besuchs-karten"
+          },
+          {
+            "titel": "Aufbruch: Regeln fürs Draußen",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen auf, packen Rucksack und Jacken und gehen die Regeln durch: Treffpunkt, Signal, Stopp-Recht, die Leitung ist immer in Sichtweite, Handynummer der Leitung und 112 stehen auf der Karte. Beim Losgehen zeigt jede Person ihre Zahl noch einmal mit den Fingern, und die Gruppe geht so schnell wie die langsamste Person.",
+            "sagen": [
+              "Treffpunkt, Signal, Stopp-Recht: Wer Stopp sagt, bleibt bei mir – und niemand geht allein weg."
+            ],
+            "tipp": "Wer unruhig wird oder umkehren will, bleibt bei der Leitung; das Stopp-Recht gilt draußen genauso wie drinnen."
+          },
+          {
+            "titel": "Besuch bei der Anlaufstelle",
+            "dauer": 50,
+            "phase": "uebung",
+            "text": "Auf dem Weg zählen die Jugendlichen Hilfe-Zeichen, dann besuchen sie die Stelle: Rundgang, jede Person sagt ihren ersten Satz an der Anmeldung und stellt ihre Frage, die Antworten kommen aufs Blatt. Vor der Tür schätzt jede Person ihre Zahl noch einmal, und auf dem Rückweg sammelt die Gruppe, was überrascht hat.",
+            "sagen": [
+              "Zählt unterwegs Hilfe-Zeichen: Notrufnummern, Plakate, Schilder – wie viele findet ihr?",
+              "Du bestimmst, was du fragst – und niemand muss etwas Persönliches erzählen."
+            ],
+            "punkte": [
+              "draußen (8 Min.): Hilfe-Detektive – Unterwegs zählt jede Person Hilfe-Zeichen (Notrufnummern, Hilfe-Plakate, Erste-Hilfe-Schilder) und notiert sie auf dem Klemmbrett; wer die meisten findet, sucht sich im Raum den Platz aus.",
+              "Besuch (12 Min.): Empfang und Rundgang – Die Fachperson stellt sich und die Stelle vor und zeigt die Räume; jede Person sagt an der Anmeldung ihren ersten Satz („Hallo, ich möchte wissen, wie das bei Ihnen läuft“).",
+              "Challenge (15 Min.): Fragen-Runde – Jede Person stellt ihre Frage, die Leitung ergänzt die Pflichtfragen zu Kosten, Vertraulichkeit, erstem Gespräch und Öffnungszeiten, falls niemand sie nennt; die Antworten kommen auf das Blatt (Aufgabe 1).",
+              "Übung (5 Min.): Zahl nachher – Vor der Tür schätzt jede Person ihre Zahl noch einmal und vergleicht mit vorher: War es so schlimm, wie der Kopf gesagt hat? Dann bedankt sich die Gruppe bei der Fachperson.",
+              "draußen (10 Min.): Rückweg – Gemeinsam zurückgehen und unterwegs sammeln, was überrascht hat und welche Antwort neu war; die Leitung macht mit."
+            ],
+            "tipp": "Bei der Fragen-Runde reicht eine Frage je Person; wer lieber zuhört, liest eine Frage von der Karte vor.",
+            "wennEsKippt": "Wird jemand still oder will gehen, kurz vor die Tür an die frische Luft und mit der Leitung eine Runde um den Block – Besuche darf man abkürzen. Spricht jemand von sich aus etwas Persönliches an, ruhig zuhören und fragen, ob er oder sie später mit der Fachperson oder der Leitung weiterreden möchte – niemand wird gedrängt.",
+            "blatt": "a7-mein-netz"
+          },
+          {
+            "titel": "Skill: Der erste Satz",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Ein Skill für den Moment, in dem man Hilfe braucht und nicht weiß, wie man anfangen soll: ausatmen, eine Person wählen, den ersten Satz sagen (höchstens 5 Min.). Danach schreibt jede Person ihr Netz auf, und der Abschluss folgt (zusammen 10 Min.): Skills-Pass zum Kapitelende, Mission und eigener Moment.",
+            "sagen": [
+              "Ausatmen, eine Person wählen, ersten Satz sagen – drei Schritte, mehr braucht es nicht.",
+              "Der erste Satz muss nicht schön sein: „Ich brauche Hilfe“ reicht."
+            ],
+            "punkte": [
+              "Skill (5 Min.): Jede Person schreibt ihren ersten Satz auf das Blatt (Aufgabe 2), dann wird zweimal geübt – einmal lang ausatmen und die Füße spüren, im Kopf eine Person aus dem eigenen Netz wählen und den ersten Satz laut zur Leitung sagen („Hast du kurz Zeit? Ich brauche Hilfe.“).",
+              "Mein Netz (4 Min.): Aufgabe 3 allein – eine Person aus dem Umfeld, eine aus Annexe oder Schule und eine Stelle eintragen, dazu die Nummern 116 111 und 8002 1234; die Netze werden nicht vorgelesen.",
+              "Skills-Pass (2 Min.): zum Kapitelende ein Satz zur Frage – Was nehme ich aus „Wenn es schwierig wird“ mit? Dann der Stempel.",
+              "Mission und Moment (4 Min.): die Mission vorlesen; jede Person schreibt in die Spalte „Mein Moment: Wenn …“, bei welcher kleinen Sache sie diese Woche um Hilfe bitten wird; Ausblick auf das nächste Kapitel."
+            ],
+            "tipp": "Wer mag, sagt den ersten Satz zu einer Person aus der Gruppe statt zur Leitung; wer nicht laut sprechen mag, übt ihn flüsternd oder im Kopf.",
+            "blatt": "a7-mein-netz"
+          }
+        ],
+        "bruecke": "Nächstes Mal beginnt ein neues Kapitel: Es geht um euer Handy – ihr schätzt eure Bildschirmzeit, stellt ein perfektes Foto nach und macht einen eigenen Handy-Plan.",
+        "mission": "Hol dir einmal Hilfe bei etwas Kleinem – und merk dir, wie es war.",
+        "hintergrund": "Jugendliche holen sich Hilfe zuerst bei Freunden und Familie, viel seltener bei Fachstellen (Rickwood et al., 2005). Als Hürden nennen sie Scham, den Wunsch, es allein zu schaffen, Zweifel an der Vertraulichkeit und fehlende Kenntnis der Angebote; Ermutigung durch andere und gute Erfahrungen erleichtern den Schritt (Gulliver et al., 2010). Die Einheit setzt an diesen Hürden an: Der Ort wird bekannt, der erste Satz ist geübt, und das eigene Netz steht auf Papier.",
+        "quellen": [
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Gulliver, A., Griffiths, K. M. & Christensen, H. (2010). Perceived barriers and facilitators to mental health help-seeking in young people: A systematic review. BMC Psychiatry, 10, 113."
+        ],
+        "achtung": "Der Besuch ist ein Informationsbesuch: Niemand wird nach Persönlichem gefragt, „Weiter“ gilt auch dort, und die Fachperson wird vorher gebeten, nichts nachzufragen; wer nach dem Besuch einen eigenen Termin möchte, bespricht das mit der Leitung, die den ersten Schritt begleitet und die Eltern nach den Regeln der Annexe einbezieht. Der Ausflug findet nur mit Einverständnis der Eltern statt, mit Treffpunkt, Signal, Notfallnummer 112 und der Leitung in Sichtweite; wem es zu viel wird, darf mit der Leitung kurz vor die Tür. Äußert jemand Gewalt, Selbstverletzung oder Suizidgedanken, nicht allein lassen, nichts versprechen, was nicht zu halten ist, noch am selben Tag die zuständige Leitung (Responsable) informieren und nach dem internen Schutzkonzept handeln; Hilfe: Kanner- a Jugendtelefon 116 111, bei Gefahr 112.",
+        "differenzierung": {
+          "leichter": "Die ersten Sätze stehen auf Karten zum Ablesen, die Frage für den Besuch wählt jede Person von der Karte, und wer noch wenig Deutsch spricht, stellt sie zusammen mit der Leitung.",
+          "schwerer": "Zwei Stellen vergleichen, zum Beispiel Telefon und Besuch, und überlegen, was zu welchem Problem passt, oder dem „Jetzt nicht“ eine zweite und dritte Antwort entgegensetzen."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Petzen oder Hilfe holen mit dem ersten Satz im Rollenspiel (15 Min.), ein kurzer Anruf der Gruppe bei der Stelle auf Lautsprecher, bei dem jede Person eine Frage stellt (15 Min.), Skill, Netz und Mission (15 Min.). Der Besuch wird mit der Stelle neu vereinbart."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-mein-netz",
+      "bereich": "skills",
+      "thema": "schwierig",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Hilfe holen", "Netz", "Beratungsstelle", "erster Satz"],
+      "bild": "icon:lifebuoy",
+      "kurs": ["a7-e24"],
+      "de": {
+        "titel": "Mein Hilfe-Netz",
+        "untertitel": "Wer hilft, wenn es zu viel wird – und wie fange ich an?",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Schreib auf, was du beim Besuch erfahren hast.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "tabelle",
+            "spalten": ["Meine Frage", "Die Antwort"],
+            "breiten": [1, 2],
+            "zeilen": 0,
+            "werte": [
+              ["Kostet es etwas?", ""],
+              ["Wer erfährt was?", ""],
+              ["Wie läuft das erste Gespräch ab?", ""],
+              ["Wann ist offen?", ""]
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib deinen ersten Satz.",
+            "hinweis": "Er muss nicht schön sein – „Ich brauche Hilfe“ reicht.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Mein erster Satz: …"],
+            "linien": 2
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib dein Netz auf.",
+            "hinweis": "Du entscheidest, was du teilst.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "tabelle",
+            "spalten": ["Mein Netz", "Name · Stelle · Nummer"],
+            "breiten": [1, 1.4],
+            "zeilen": 0,
+            "werte": [
+              ["Eine Person, die mir nah ist", ""],
+              ["Eine Person in Annexe oder Schule", ""],
+              ["Eine Stelle, die ich kenne", ""],
+              ["Ein Telefon, das immer geht", "116 111 · 8002 1234 · Gefahr: 112"]
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Petzen will schaden, Hilfe holen will schützen. Auch Profis haben Trainer – sie holen sich Hilfe, weil sie besser werden wollen."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen halten fest, was sie beim Besuch erfahren haben, schreiben einen ersten Satz für den Moment, in dem sie Hilfe brauchen, und tragen ihr Netz aus Menschen, Stellen und Nummern ein.",
+          "ablauf": [
+            "Einheit 24, Teil 2: Aufgabe 1 beim Besuch während der Fragen-Runde; die Pflichtfragen stehen schon im Blatt, die Antworten schreibt jede Person selbst.",
+            "Skill: Aufgabe 2 und 3 allein (zusammen etwa 6 Min.); der erste Satz ist der Satz für den Skill, im Netz stehen nur Personen, die die Jugendlichen selbst nennen.",
+            "Die Netze werden weder vorgelesen noch eingesammelt; wem keine Person einfällt, trägt die Ansprechperson der Annexe ein."
+          ],
+          "hintergrund": "Jugendliche holen sich Hilfe zuerst bei Freunden und Familie, viel seltener bei Fachstellen (Rickwood et al., 2005). Scham, der Wunsch, es allein zu schaffen, und Zweifel an der Vertraulichkeit halten sie ab; Ermutigung und gute Erfahrungen erleichtern den Schritt (Gulliver et al., 2010). Das Netz macht sichtbar, wer schon da ist.",
+          "quellen": [
+            "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+            "Gulliver, A., Griffiths, K. M. & Christensen, H. (2010). Perceived barriers and facilitators to mental health help-seeking in young people: A systematic review. BMC Psychiatry, 10, 113."
+          ],
+          "achtung": "Niemand muss persönliche Angaben machen; wer in Gefahr ist, bekommt sofort Hilfe, auch gegen ein „Weiter“. Äußert jemand Gewalt oder Suizidgedanken, nicht allein lassen und die zuständige Leitung (Responsable) informieren.",
+          "material": "Heft, Stifte, Klemmbrett"
+        }
+      }
+    },
+    {
+      "id": "a7-besuchs-karten",
+      "bereich": "skills",
+      "thema": "schwierig",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Fragekarten", "erster Satz", "Rollenspiel", "Besuch"],
+      "bild": "icon:door",
+      "kurs": ["a7-e24"],
+      "de": {
+        "titel": "Fragen und erste Sätze",
+        "untertitel": "Kopiervorlage: Fragen für den Besuch, erste Sätze und zwei „Jetzt nicht“-Karten",
+        "bausteine": [
+          {
+            "art": "text",
+            "klein": true,
+            "text": "Einmal kopieren und ausschneiden. Jede Person wählt eine Frage für den Besuch; die ersten Sätze werden mit der Leitung geübt, die „Jetzt nicht“-Karten spielt die Leitung. Handynummer der Leitung und Notfallnummer 112 vorher auf die Rückseite einer Karte schreiben."
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 84,
+            "karten": [
+              { "titel": "Kostet das etwas?", "text": "Wichtig, bevor man hingeht." },
+              { "titel": "Wer erfährt, dass ich da war?", "text": "Was bleibt hier vertraulich?" },
+              { "titel": "Muss ich einen Termin machen?", "text": "Und wann ist offen?" },
+              { "titel": "Wie läuft das erste Gespräch ab?", "text": "Wer ist dabei, wie lange dauert es?" },
+              { "titel": "Darf jemand mitkommen?", "text": "Eine Freundin, ein Freund, die Leitung." },
+              { "titel": "Worüber darf ich hier reden?", "text": "Und gibt es etwas, das hier nicht geht?" }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 84,
+            "karten": [
+              { "titel": "Für mich", "text": "Hast du kurz Zeit? Ich brauche Hilfe bei etwas und weiß nicht, wie ich anfangen soll." },
+              { "titel": "Für jemand anderen", "text": "Ich mache mir Sorgen um jemanden und weiß nicht, was ich tun soll." },
+              { "titel": "Zum Reinschnuppern", "text": "Hallo, ich möchte wissen, wie das bei Ihnen läuft." },
+              { "titel": "Am Telefon", "text": "Guten Tag, ich habe eine Frage und möchte erst wissen, wie das bei Ihnen abläuft." }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 84,
+            "karten": [
+              { "titel": "„Jetzt nicht, ich habe gleich einen Termin.“", "text": "Dranbleiben: „Wann hast du Zeit? Ich komme dann wieder.“" },
+              { "titel": "„Das ist gerade ungünstig.“", "text": "Dranbleiben: „Es ist mir wichtig. Wer könnte jetzt kurz zuhören?“" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Fragen für den Besuch, erste Sätze für den Moment, in dem man Hilfe braucht, und zwei „Jetzt nicht“-Karten, an denen die Jugendlichen üben, dranzubleiben.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; Handynummer der Leitung und 112 auf die Rückseite einer Karte schreiben.",
+            "Einheit 24, Teil 1: Die Leitung spielt eine erwachsene Person; jede Person wählt einen ersten Satz und sagt ihn, beim zweiten Mal antwortet die Leitung mit einer „Jetzt nicht“-Karte.",
+            "Jede Person wählt eine Frage für den Besuch und nimmt sie mit; wer lieber zuhört, liest sie bei der Fragen-Runde von der Karte vor."
+          ],
+          "hintergrund": "Scham, Zweifel an der Vertraulichkeit und der Wunsch, es allein zu schaffen, halten Jugendliche vom Hilfe holen ab; Ermutigung durch andere und gute Erfahrungen erleichtern den Schritt (Gulliver et al., 2010). Fragen und erste Sätze vorab zu üben, senkt die Hürde.",
+          "quellen": [
+            "Gulliver, A., Griffiths, K. M. & Christensen, H. (2010). Perceived barriers and facilitators to mental health help-seeking in young people: A systematic review. BMC Psychiatry, 10, 113."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}

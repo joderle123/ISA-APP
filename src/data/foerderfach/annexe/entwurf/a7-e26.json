@@ -1,0 +1,330 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e26",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-echt-oder-fake"],
+      "vorlagen": ["a7-echt-oder-fake-karten"],
+      "woerter": [
+        { "de": "der Algorithmus", "fr": "der Algorithmus" },
+        { "de": "die Falschmeldung", "fr": "die Falschmeldung" },
+        { "de": "die Quelle", "fr": "die Quelle" },
+        { "de": "quer lesen", "fr": "quer lesen" },
+        { "de": "die KI (künstliche Intelligenz)", "fr": "die KI (künstliche Intelligenz)" }
+      ],
+      "de": {
+        "titel": "Echt oder fake?",
+        "kurz": "Vier Filmausschnitte zeigen, wie Apps um Aufmerksamkeit kämpfen; dann prüft die Gruppe Beiträge, baut selbst einen harmlosen Fake, setzt Grenzen für KI und übt, nicht mitzumachen.",
+        "ziele": [
+          "erklären an Filmausschnitten, warum Apps Aufregendes zeigen und Falschmeldungen sich schnell verbreiten",
+          "prüfen Beiträge mit der Checkliste und lesen quer: Wer sagt das, und was sagen andere über die Quelle?",
+          "üben die Teilen-Bremse und eine klare Antwort, wenn jemand einen Fake weiterschickt"
+        ],
+        "material": [
+          "Film „Das Dilemma mit den sozialen Medien“ (2020), vier Ausschnitte, Bildschirm mit Ton",
+          "Karten (Vorlage), Heft-Blatt je Person, Stifte, Klebezettel",
+          "Gefühlsrad, Anspannungsskala 0–100, Tafel oder Plakat",
+          "Skills-Pass, Stempel"
+        ],
+        "vorbereitung": [
+          "Die vier Ausschnitte vorab ansehen, Zeitmarken notieren, jeden auf höchstens 2 Minuten kürzen; Passagen zu Selbstverletzung und Suizid auslassen.",
+          "Vorführrechte und Altersfreigabe klären (Streaming-Film, Gruppenvorführung nur mit Erlaubnis); Eltern im Elternbrief informieren.",
+          "Karten kopieren und schneiden; Namen tauschen, wenn jemand so heißt.",
+          "Wände beschriften: links „echt“, rechts „fake“, Mitte „erst prüfen“."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühlsrad, Zahl und Netz-Gefühl" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Thema: echt oder fake" },
+          { "min": "15–45", "phase": "uebung", "titel": "Film: Wer verdient an deiner Aufmerksamkeit?" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Bewegung: Die Echt-Fake-Linie" },
+          { "min": "50–85", "phase": "uebung", "titel": "Fakes erkennen, bauen und stoppen" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Die Teilen-Bremse" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad, Zahl und Netz-Gefühl",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Alle zeigen ihr Wort auf dem Gefühlsrad und nennen ihre Anspannung von 0 bis 100; die Leitung macht mit und beginnt. Heute dazu eine Frage ohne Details: Wann hat dich zuletzt etwas im Netz geärgert, gewundert oder erschreckt – nur das Gefühl, nicht der Inhalt.",
+            "sagen": [
+              "Wort aus dem Rad und Zahl von 0 bis 100 – ich fange an: ruhig, 20, und heute versuche ich, euch reinzulegen.",
+              "Nur das Gefühl, nicht worum es ging: Was hat euch zuletzt im Netz geärgert, gewundert oder erschreckt?"
+            ],
+            "wennEsKippt": "Beginnt jemand, einen Beitrag oder ein Video zu beschreiben, freundlich stoppen: Nur das Gefühl, den Rest gern nach der Stunde. Will jemand etwas auf dem Handy zeigen, nicht zulassen: Heute wird nichts aus dem Netz gezeigt."
+          },
+          {
+            "titel": "Rückblick, Mission und Thema: echt oder fake",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – hast du deinen Handy-Plan probiert oder dreimal geatmet, bevor du zum Handy gegriffen hast? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann das Thema nennen: Letzte Stunde war das Foto echt, nur geschönt – heute geht es um Bilder, Videos und Nachrichten, die es so nie gab.",
+            "sagen": [
+              "Kam euer Moment – habt ihr euren Handy-Plan probiert oder dreimal geatmet? Daumen hoch, Mitte oder runter?",
+              "Letzte Stunde ging es um das perfekte Foto – heute um Bilder, Videos und Nachrichten, die es so nie gab."
+            ],
+            "tipp": "Erzählt jemand, dass es nicht geklappt hat, ausdrücklich würdigen und fragen: Was wäre eine kleinere Stufe? So bleibt die Mission lebendig, ohne dass sie kontrolliert wird."
+          },
+          {
+            "titel": "Film: Wer verdient an deiner Aufmerksamkeit?",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Ein Bild an die Tafel: Aufmerksamkeit – Werbung – Geld. Dann vier kurze Ausschnitte aus „Das Dilemma mit den sozialen Medien“ (2020), jeder mit einer Beobachtungsfrage. Danach prüft die Gruppe, was der Film zeigt und was er weglässt.",
+            "sagen": [
+              "Gratis-Apps kosten kein Geld, aber Zeit und Daten – und wer wütend ist, bleibt länger dran.",
+              "Vor jedem Ausschnitt gibt es eine Frage: Merkt euch nur die eine."
+            ],
+            "punkte": [
+              "Übung (3 Min.): Das Bild – An die Tafel kommt ein Dreieck aus Aufmerksamkeit, Werbung und Geld; erklären: Die App ist gratis, bezahlt wird mit Zeit und Daten, und was aufregt, hält länger fest.",
+              "Übung (9 Min.): Ausschnitt 1 und 2 – Ehemalige Tech-Mitarbeitende erklären, wer an Gratis-Apps verdient (Frage: Wer verdient woran?); danach holen im Kontrollraum drei Figuren, die den Algorithmus darstellen, einen Jugendlichen mit einer Nachricht zurück ans Handy (Frage: Welches Ziel hat jede Figur?).",
+              "Übung (9 Min.): Ausschnitt 3 und 4 – Erst die Stelle, an der es heißt, dass falsche Nachrichten sich schneller verbreiten als wahre (Frage: Warum werden Fakes so schnell geteilt?); dann die Stelle über den eigenen Feed für jede Person (Frage: Was passiert, wenn alle ihre eigene Wahrheit sehen?).",
+              "Übung (6 Min.): Auswertung – Jede Person schreibt auf einen Klebezettel, was ihr neu war und was sie nicht ganz glaubt; die Leitung liest die Zettel vor, sortiert sie an die Tafel und ergänzt in je einem Satz die Begriffe Algorithmus, Filterblase und Deepfake.",
+              "Übung (3 Min.): Kritisch bleiben – Auch ein Film ist eine Auswahl: Wer hat ihn gemacht, was zeigt er nicht? Bildschirmzeit und Wohlbefinden hängen in Studien nur schwach zusammen, doch das Wissen, wie Apps gebaut sind, hilft trotzdem."
+            ],
+            "tipp": "Den Film nie ganz zeigen: vier kurze Ausschnitte, jeweils mit Frage, und danach sofort darüber sprechen.",
+            "wennEsKippt": "Sagt jemand „Alles Lüge, ich glaub gar nichts mehr“, umdrehen: Genau deshalb prüfen wir gleich – wer weiß, wie es geht, kann wieder vertrauen. Wird jemand beim Zuschauen sehr still oder bedrückt, den Ausschnitt abbrechen und fragen, was gerade los ist."
+          },
+          {
+            "titel": "Bewegung: Die Echt-Fake-Linie",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen: Die Wand links heißt echt, rechts fake, die Mitte erst prüfen. Die Leitung liest fünf Behauptungen vor, alle gehen auf drei an ihren Platz; danach sagen zwei Personen, woran sie es festgemacht haben – Wissen, Bauchgefühl oder „hab ich schon mal gehört“.",
+            "sagen": [
+              "Wo steht ihr: echt, fake oder erst prüfen – auf drei, geht!"
+            ],
+            "punkte": [
+              "Der Eiffelturm ist im Sommer bis zu 15 Zentimeter höher als im Winter. (echt: Metall dehnt sich in der Wärme aus)",
+              "Goldfische haben nur ein Gedächtnis von drei Sekunden. (fake: Sie merken sich vieles über Monate)",
+              "Honig kann jahrelang haltbar sein. (echt)",
+              "Der Mensch nutzt nur zehn Prozent seines Gehirns. (fake)",
+              "Ein Blitz schlägt nie zweimal an derselben Stelle ein. (fake)"
+            ],
+            "tipp": "Bei Mythen merkt man: Was man oft gehört hat, fühlt sich wahr an – darum ist „erst prüfen“ keine Schwäche."
+          },
+          {
+            "titel": "Fakes erkennen, bauen und stoppen",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Zuerst sortiert die Gruppe erfundene Beiträge nach echt, fake und erst prüfen und lernt, quer zu lesen; dann baut jede Person einen harmlosen Fake und prüft die der anderen. Zum Schluss zieht die Gruppe Grenzen für KI und übt im Rollenspiel, nicht mitzumachen, wenn jemand einen Fake weiterschickt.",
+            "sagen": [
+              "Wenn ihr es nicht sicher sagen könnt, ist erst prüfen die beste Antwort – Profis bleiben nicht im Beitrag, sie sehen woanders nach, wer dahintersteckt.",
+              "Wer weiterleitet, macht mit – auch wenn er es nur lustig fand; wer Hilfe holt, damit es aufhört, petzt nicht."
+            ],
+            "punkte": [
+              "Übung (10 Min.): Kartenspiel und Aufgabe 1 – Sechs erfundene Beiträge reihum vorlesen und unter echt, fake oder erst prüfen legen, dann die Tricks aufdecken (Eile, Wut, falsche Experten, bekannte Stimme) und den Gruppenchat-Beitrag prüfen; Lösung: echt 2 und 6 · fake 1, 3 und 4 · erst prüfen 5.",
+              "Übung (8 Min.): Fälscher-Werkstatt – Jede Person baut in vier Minuten einen harmlosen Fake mit drei Tricks über eine erfundene Sache, nie über echte Personen, die Leitung baut einen mit; dann tauschen und prüfen: Welche Tricks stecken drin?",
+              "Übung (8 Min.): KI-Ampel und Aufgabe 2 – Die Leitung liest die fünf KI-Karten vor, alle zeigen nach zehn Sekunden Flüstern 1 (grün), 2 (gelb) oder 3 (rot) Finger; danach trägt jede Person ein Beispiel je Farbe ein (Lösung: 1 grün · 2 rot · 3 gelb · 4 rot · 5 gelb).",
+              "Übung (9 Min.): Rollenspiel und Aufgabe 3 – Die Leitung spielt Marco, der ein peinliches Fake-Bild von Lena weiterschickt („Ist doch nur Spaß“); jede Person übt drei Antworten – nicht weiterleiten, Lena schreiben „Ich bin auf deiner Seite“, eine erwachsene Person holen – und schreibt ihre Nachricht an Lena ins Heft."
+            ],
+            "tipp": "Beim Rollenspiel hakt die Leitung bei „Ist doch nur Spaß“ genau einmal nach: Die Antwort soll ruhig und klar sein, nicht laut.",
+            "wennEsKippt": "Will jemand von einem echten Fall erzählen oder fragt nach gefälschten oder intimen Bildern, nicht vertiefen: nichts zeigen oder weiterleiten lassen, nach der Stunde sprechen und noch am selben Tag die zuständige Leitung (Responsable) informieren. Lacht die Gruppe bei einer Situation über eine anwesende Person, sofort stoppen: Genau das ist die Grenze.",
+            "blatt": "a7-echt-oder-fake"
+          },
+          {
+            "titel": "Skill: Die Teilen-Bremse",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Letzte Stunde kamen drei Atemzüge vor dem Griff zum Handy, heute kommt eine Frage dazu: Die Leitung liest eine erfundene Eilmeldung mit Drama vor und sagt erst danach, dass sie erfunden ist; alle schätzen still ihre Zahl, üben die drei Schritte der Teilen-Bremse (höchstens 5 Min., still höchstens 2 Min.) und schätzen neu. Danach der Abschluss (10 Min.): Skills-Pass, Mission und eigener Moment.",
+            "sagen": [
+              "Eilmeldung: Ab Montag Handyverbot in allen Bussen – wer erwischt wird, zahlt 300 Euro.",
+              "Wer wütend ist, teilt schneller – genau darauf sind viele Fakes gebaut."
+            ],
+            "punkte": [
+              "Die drei Schritte: Hand weg, das Handy flach auf den Tisch · dreimal ruhig ausatmen und die Zahl neu schätzen · fragen: Wer sagt das? – und teilen, liegen lassen oder nachfragen.",
+              "Üben (5 Min.): Eilmeldung vorlesen, Zahl schätzen, die drei Schritte gemeinsam machen, Zahl neu schätzen; eine zweite Meldung – „Schule streicht alle Pausen“ – übt jede Person allein.",
+              "Skills-Pass (4 Min.): ein Satz zur Frage an der Tafel – Welche Frage stelle ich, bevor ich etwas glaube oder teile? – dann der Stempel.",
+              "Mission und Moment (6 Min.): die Mission vorlesen; jede Person schreibt in die Spalte „Mein Moment: Wenn …“, wann sie die Bremse brauchen könnte – im Gruppenchat, in der Pause, abends im Bett –, dann der Ausblick."
+            ],
+            "wennEsKippt": "Glauben einige die Schlagzeile und regen sich laut auf, ist das kein Fehler, sondern der Beweis: So schnell geht es – sofort auflösen und genau damit weiterarbeiten. Niemand muss die Augen schließen."
+          }
+        ],
+        "bruecke": "Nächstes Mal gehen wir gemeinsam einkaufen und kochen – und ihr plant einen kleinen Schritt, der euch guttut.",
+        "mission": "Frag dich bei jedem aufregenden Beitrag zuerst: Wer sagt das?",
+        "hintergrund": "Apps leben von Aufmerksamkeit; Aufregendes hält länger fest. Verlässlicher als der Blick auf Bilddetails ist die Frage nach der Quelle: Profis verlassen eine unbekannte Seite und sehen woanders nach, wer dahintersteht (Wineburg & McGrew, 2019). Wer die Tricks von Falschmeldungen kennt und selbst nachbaut, fällt seltener darauf herein (Roozenbeek & van der Linden, 2019). KI klingt plausibel, kann aber falsch liegen (Ji et al., 2023). Der Film zeigt eine Seite: Bildschirmzeit und Wohlbefinden hängen nur schwach zusammen (Orben & Przybylski, 2019).",
+        "quellen": [
+          "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+          "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+          "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38.",
+          "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182."
+        ],
+        "achtung": "Keine Fälschungen echter Personen erstellen oder zeigen, auch nicht zur Demonstration; alle Beispiele sind erfunden. Vom Film nur die vier Ausschnitte zeigen, Passagen zu Selbstverletzung und Suizid auslassen und bei Bedrückung abbrechen. Erzählt jemand von gefälschten oder intimen Bildern einer realen Person: nichts zeigen oder weiterleiten lassen, nicht in der Gruppe vertiefen, noch am selben Tag die zuständige Leitung (Responsable) informieren; Beratung: BEE SECURE Helpline 8002 1234.",
+        "differenzierung": {
+          "leichter": "Beim Kartenspiel reicht es, die Kopfkarten zu zeigen statt zu begründen, in der Fälscher-Werkstatt genügt ein Trick, und alle Texte werden vorgelesen.",
+          "schwerer": "Den Fake mit allen drei Tricks bauen und von der anderen Person erst nach dem Quer-Lesen entlarven lassen, mit einem Satz dazu, was sie nachgesehen hat."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in und Brücke (8 Min.), zwei Ausschnitte mit Beobachtungsfragen und Auswertung (12 Min.), Kartenspiel mit Checkliste (10 Min.), Rollenspiel „Ich bin auf deiner Seite“ (8 Min.), Teilen-Bremse mit Skills-Pass und Mission (12 Min.). Bewegung, Fälscher-Werkstatt und KI-Ampel entfallen."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-echt-oder-fake",
+      "bereich": "skills",
+      "thema": "digital",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": ["Echt oder fake", "Quellen prüfen", "KI", "Teilen-Bremse"],
+      "bild": "icon:search",
+      "kurs": ["a7-e26"],
+      "de": {
+        "titel": "Echt oder fake?",
+        "untertitel": "Erst bremsen, dann prüfen, dann teilen",
+        "bausteine": [
+          {
+            "art": "geschichte",
+            "titel": "Gesehen im Gruppenchat",
+            "bild": "figur:jana:ueberrascht",
+            "text": "Im Gruppenchat taucht ein Screenshot auf: „EILMELDUNG: Ab Montag Handyverbot im ganzen Haus! Teilen, bevor es gelöscht wird!“ Wer ihn gepostet hat, weiß niemand."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Prüfe den Beitrag: Kreuze die Tricks an, die du siehst.",
+            "symbole": ["ankreuzen"]
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 2,
+            "items": ["Eile: „Teilen, bevor es gelöscht wird!“", "Wut: „Skandal!“", "Falsche Experten: „Forscher beweisen …“", "Bekannte Stimme oder echtes Logo"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Wer sagt das? …", "Wo sehe ich nach, wer dahintersteckt? …"],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Fülle deine KI-Ampel aus: ein Beispiel je Farbe.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "ampel",
+            "stufen": [
+              { "titel": "Rot: Das mache ich nicht." },
+              { "titel": "Gelb: Da bin ich vorsichtig." },
+              { "titel": "Grün: Dafür nutze ich KI." }
+            ],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib einer Person, über die ein Fake kursiert, eine Nachricht.",
+            "hinweis": "Zeig: Ich bin auf deiner Seite. Zum Beispiel: „Hab das Bild gesehen. Find ich nicht okay.“",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              { "art": "linien", "anzahl": 2 }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "wissen",
+                "titel": "Gut zu wissen",
+                "text": "Apps verdienen an deiner Aufmerksamkeit. Was wütend macht, hält länger fest. Darum: erst bremsen, dann fragen: Wer sagt das?"
+              }
+            ]
+          },
+          {
+            "art": "notfall",
+            "text": "Fake über dich? Hilfe: 8002 1234 (BEE SECURE) · 116 111",
+            "eintraege": []
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen prüfen einen Beitrag auf Tricks und Quelle, ziehen mit der KI-Ampel eigene Grenzen und üben, einer Person beizustehen, über die ein Fake kursiert.",
+          "ablauf": [
+            "Einheit 26, Schritt 5: Aufgabe 1 nach dem Kartenspiel, allein oder zu zweit am Beitrag aus dem Gruppenchat; danach: Wo würdet ihr nachsehen?",
+            "Aufgabe 2 nach der KI-Ampel: ein Beispiel je Farbe, aus der Abstimmung oder eigene.",
+            "Aufgabe 3 nach dem Rollenspiel: eine Nachricht an die betroffene Person schreiben; zum Schluss auf den Hilfe-Kasten zeigen.",
+            "Die Teilen-Bremse (Skill) steht auf der Skill-Karte am Ende des Hefts."
+          ],
+          "hintergrund": "Professionelle Faktenprüfer verlassen eine unbekannte Seite schnell und sehen woanders nach, wer dahintersteht (Wineburg & McGrew, 2019); deshalb fragt das Blatt nach der Quelle und danach, wo man nachsehen kann. Wer die Tricks von Falschmeldungen kennt, fällt seltener darauf herein (Roozenbeek & van der Linden, 2019). Sprachmodelle erzeugen Inhalte, die plausibel klingen, aber nicht stimmen (Ji et al., 2023).",
+          "quellen": [
+            "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40.",
+            "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+            "Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A. & Fung, P. (2023). Survey of hallucination in natural language generation. ACM Computing Surveys, 55(12), 1–38."
+          ],
+          "achtung": "Berichtet jemand von gefälschten oder intimen Bildern einer realen Person: sich nichts zeigen oder schicken lassen, nach der Stunde sprechen und nach dem Schutzkonzept handeln.",
+          "material": "Heft, Stifte"
+        }
+      }
+    },
+    {
+      "id": "a7-echt-oder-fake-karten",
+      "bereich": "skills",
+      "thema": "digital",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Echt oder fake", "Spielkarten", "Falschmeldungen", "KI"],
+      "bild": "icon:photo",
+      "kurs": ["a7-e26"],
+      "de": {
+        "titel": "Echt oder fake? Spielkarten",
+        "untertitel": "Kopiervorlage: drei Kopfkarten, sechs Beiträge, fünf KI-Situationen",
+        "bausteine": [
+          {
+            "art": "text",
+            "klein": true,
+            "text": "Einmal kopieren und ausschneiden. Die Beitragskarten werden reihum vorgelesen und unter eine Kopfkarte gelegt; die KI-Karten liest die Leitung vor, alle zeigen 1 (grün), 2 (gelb) oder 3 (rot) Finger. Heißt jemand in der Gruppe wie eine Figur, den Namen ändern."
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 44,
+            "karten": [
+              { "titel": "echt", "bild": "icon:circle-check" },
+              { "titel": "fake", "bild": "icon:alert-triangle" },
+              { "titel": "erst prüfen", "bild": "icon:search" }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 98,
+            "karten": [
+              { "titel": "1 · Der Wal im Hafen", "text": "Konto @krass.news.24, vor zwei Tagen angelegt: Ein Foto zeigt einen Wal mitten im Stadthafen. Darüber: UNGLAUBLICH – TEILT DAS! Schon 60 000-mal geteilt. Keine Zeitung berichtet darüber." },
+              { "titel": "2 · Die Busumleitung", "text": "Auf der offiziellen Seite der Verkehrsbetriebe, heute 6.30 Uhr: Wegen einer Baustelle fährt Linie 12 bis Freitag eine andere Strecke. Die Anzeige an der Haltestelle zeigt dasselbe." },
+              { "titel": "3 · Das Gewinnspiel", "text": "Ein Video zeigt einen bekannten Rapper: „Ich verschenke 100 Handys! Link anklicken und Nummer eingeben.“ Seine Lippen passen nicht ganz zu den Worten. Der Link führt auf eine unbekannte Seite." },
+              { "titel": "4 · Die Sprachnachricht", "text": "Von einer unbekannten Nummer kommt eine Sprachnachricht. Die Stimme klingt wie die von Kenzas großem Bruder: „Ich hab mein Handy verloren. Gleich kommt ein Code per SMS – schick ihn mir schnell!“" },
+              { "titel": "5 · Die Studie", "text": "Eine Seite namens fit-und-schlau-news schreibt: „Forscher beweisen: Wer jeden Morgen Pizza isst, schreibt bessere Noten.“ Welche Forscher, steht nirgends. Einen Link zur Studie gibt es nicht." },
+              { "titel": "6 · Die Unwetterwarnung", "text": "Push-Nachricht aus der App des Wetterdienstes, die auf deinem Handy installiert ist: „Warnstufe Orange: Gewitter heute von 15 bis 21 Uhr.“ Auf der Seite des Wetterdienstes steht dieselbe Warnung." }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 66,
+            "karten": [
+              { "titel": "KI 1", "text": "Dario lässt sich von einer KI Brüche erklären und rechnet danach selbst nach." },
+              { "titel": "KI 2", "text": "Samira lässt eine KI ihren Aufsatz schreiben und gibt ihn als eigenen ab." },
+              { "titel": "KI 3", "text": "Elif fragt die KI, wann der nächste Test ist." },
+              { "titel": "KI 4", "text": "Jonas macht aus einem Gruppenfoto ein Clown-Bild von Leon und schickt es in den Chat." },
+              { "titel": "KI 5", "text": "Kenza erzählt jeden Abend einem Chatbot, wie es ihr geht." }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Erfundene Beiträge und Situationen für Kartenspiel und KI-Ampel: Die Gruppe sortiert, begründet und merkt, wie leicht man sich täuscht und wo bei KI die Grenze liegt.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; Namen tauschen, wenn jemand in der Gruppe so heißt.",
+            "Einheit 26, Schritt 5: Beitragskarten reihum vorlesen und sortieren, danach die Tricks aufdecken. Lösung: echt 2 und 6; fake 1, 3 und 4; erst prüfen 5.",
+            "KI-Ampel: Die Leitung liest die KI-Karten vor. Lösung: 1 grün (trotzdem nachrechnen), 2 rot, 3 gelb (die KI kennt den Test nicht und erfindet eine Antwort), 4 rot (kann Mobbing und strafbar sein), 5 gelb (Zuhören kann sie, eine Vertrauensperson ersetzt sie nicht)."
+          ],
+          "hintergrund": "Wer die Tricks von Falschmeldungen kennt – Eile, Wut, falsche Experten –, fällt seltener darauf herein (Roozenbeek & van der Linden, 2019). Die Auflösung lenkt den Blick vom Bild auf die Quelle (Wineburg & McGrew, 2019).",
+          "quellen": [
+            "Roozenbeek, J. & van der Linden, S. (2019). Fake news game confers psychological resistance against online misinformation. Palgrave Communications, 5, 65.",
+            "Wineburg, S. & McGrew, S. (2019). Lateral reading and the nature of expertise: Reading less and learning more when evaluating digital information. Teachers College Record, 121(11), 1–40."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}

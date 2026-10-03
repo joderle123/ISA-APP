@@ -1,0 +1,307 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e29",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-mein-clip"],
+      "vorlagen": ["a7-clip-karten"],
+      "woerter": [
+        { "de": "der Clip", "fr": "der Clip" },
+        { "de": "die Botschaft", "fr": "die Botschaft" },
+        { "de": "die Aufnahme", "fr": "die Aufnahme" },
+        { "de": "das Einverständnis", "fr": "das Einverständnis" },
+        { "de": "der Dreh", "fr": "der Dreh" }
+      ],
+      "de": {
+        "titel": "Unser Skills-Clip",
+        "kurz": "Die Gruppe wählt einen Skill, der wirklich geholfen hat, erklärt ihn für die nächste Gruppe in drei Schritten und nimmt ihn auf – als Foto-Story, Video oder Podcast.",
+        "ziele": [
+          "wählen einen Skill, der wirklich geholfen hat, und erklären ihn in drei Schritten: wann, wie, was er bringt",
+          "planen und drehen einen kurzen Clip als Foto-Story, Video oder Podcast und übernehmen eine Aufgabe vor oder hinter der Kamera",
+          "geben einander ein Lob und einen Tipp und schütteln die Anspannung nach dem Dreh ab"
+        ],
+        "material": [
+          "Tablet oder Smartphone der Einrichtung, Ständer",
+          "Karten (Vorlage), Heft-Blatt je Person, Stifte",
+          "Plakat, Klebezettel, Klebepunkte",
+          "Gefühlsrad, Anspannungsskala 0–100",
+          "Skills-Pässe, Stempel"
+        ],
+        "vorbereitung": [
+          "Einverständnis der Eltern für Aufnahmen (Foto, Video, Ton) mit Zweck, Speicherort und Löschfrist einholen; nur Geräte der Einrichtung benutzen.",
+          "Mit der Leitung des Hauses klären: Wo bleibt der Clip, wer sieht ihn, wann wird er gelöscht; kein Hochladen, kein Weiterschicken.",
+          "Ruhigen Raum, Gerät mit Aufnahme-App, Ständer und die Karten (Vorlage) bereitlegen.",
+          "Die Leitung fügt die Aufnahmen nach der Stunde zusammen (höchstens 15 Minuten) und zeigt den Clip in Einheit 30."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühlsrad, Zahl und Kamera-Lust" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Thema: unser Clip" },
+          { "min": "15–45", "phase": "uebung", "titel": "Skill wählen, Botschaft und Drehplan" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Bewegung: Stimme und Körper aufwärmen" },
+          { "min": "50–85", "phase": "uebung", "titel": "Probe, Dreh und gemeinsam ansehen" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Abschütteln" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad, Zahl und Kamera-Lust",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Alle zeigen ihr Wort auf dem Gefühlsrad und nennen ihre Anspannung von 0 bis 100; die Leitung macht mit und beginnt. Dazu eine zweite Frage mit den Fingern: Wie viel Lust hast du heute auf die Kamera, von 0 bis 10? Die Zahlen werden nicht kommentiert; die Leitung merkt sich, wer wenig Lust hat, und denkt an Aufgaben hinter der Kamera.",
+            "sagen": [
+              "Wort aus dem Rad, Zahl von 0 bis 100 – und wie viel Lust habt ihr heute auf die Kamera, von 0 bis 10 Finger?",
+              "Eine Null ist völlig in Ordnung: Ein Clip braucht auch Regie, Ton und Auswahl hinter der Kamera."
+            ],
+            "wennEsKippt": "Zeigt jemand eine Zahl über 70, nicht vor den anderen nachfragen, sondern später leise fragen, ob er oder sie etwas braucht. Sagt jemand „Ich filme nie“, das gelten lassen: Hinter der Kamera und am Ton ist Platz."
+          },
+          {
+            "titel": "Rückblick, Mission und Thema: unser Clip",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission der letzten Stunde nachfragen: Kam dein Moment – und was hast du gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann das Projekt nennen: Heute entsteht ein Clip für die nächste Gruppe, nächstes Mal wird er gezeigt – dazu die drei Regeln für Aufnahmen.",
+            "sagen": [
+              "Kam euer Moment, und was habt ihr gemacht – Daumen hoch, Mitte oder runter?",
+              "Drei Regeln: Jede Person entscheidet selbst, ob sie zu sehen oder zu hören ist; Stopp gilt immer, und die Aufnahme wird gelöscht; der Clip bleibt in der Gruppe."
+            ],
+            "tipp": "Die Stopp-Karte liegt sichtbar auf dem Tisch: Wer sie hebt, braucht keine Begründung."
+          },
+          {
+            "titel": "Skill wählen, Botschaft und Drehplan",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Ein guter Clip ist eine Skill-Karte zum Anschauen: Er zeigt, wann der Skill hilft, wie er in drei Schritten geht und was er bringt. Die Gruppe wählt einen Skill aus dem Skills-Pass, formuliert die Botschaft und plant, wer was macht.",
+            "sagen": [
+              "Welcher Skill hat euch dieses Jahr wirklich geholfen – nicht der klügste, sondern der, den ihr benutzt habt?",
+              "Der Clip beantwortet drei Fragen: Wann hilft er, wie geht er, und was bringt er?"
+            ],
+            "tabelle": {
+              "spalten": ["Wann?", "Wie?", "Was bringt’s?"],
+              "zeilen": [
+                ["Wenn mein Herz vor dem Test rast", "Füße in den Boden, zweimal lang ausatmen, Stift drücken", "Zahl vorher, Zahl nachher: Sie sinkt"]
+              ]
+            },
+            "punkte": [
+              "Übung (8 Min.): Skill wählen – Jede Person blättert drei Minuten im Skills-Pass und markiert den Skill, der ihr wirklich geholfen hat; mit je zwei Klebepunkten stimmt die Gruppe ab und einigt sich auf einen.",
+              "Übung (8 Min.): Drei Fragen und Botschaft – Auf dem Plakat beantwortet die Gruppe Wann, Wie und Was bringt’s (die Situation darf erfunden sein) und formuliert die Botschaft in einem Satz: „Wenn …, probier …“.",
+              "Übung (14 Min.): Format und Drehplan – Die Gruppe zieht zwei Ideen-Karten und wählt Foto-Story (5 Fotos), Video (3 Szenen von 10 bis 20 Sekunden) oder Podcast (1 bis 2 Minuten); dann Aufgabe 1 und 2 auf dem Blatt ausfüllen und die Aufgaben verteilen: Regie, Kamera oder Ton, Sprechen oder Hände, Auswahl."
+            ],
+            "tipp": "Bei nur zwei Jugendlichen übernimmt die Leitung Ton oder Kamera; wer nicht zu sehen sein will, zeigt nur die Hände oder spricht nur.",
+            "wennEsKippt": "Einigt sich die Gruppe nicht, zwei Skills in einem Clip verbinden, etwa Atmen und Füße. Kommen nur Witzvorschläge, einen ernst nehmen: Auch eine Komödie kann eine klare Botschaft haben.",
+            "blatt": "a7-mein-clip"
+          },
+          {
+            "titel": "Bewegung: Stimme und Körper aufwärmen",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen im Kreis: Schultern kreisen, das Gesicht knautschen und loslassen, herzhaft gähnen. Dann sagt jede Person ihren wichtigsten Satz aus dem Clip erst flüsternd, dann normal, dann so laut, dass er die hintere Wand erreicht.",
+            "sagen": [
+              "Sagt euren wichtigsten Satz so, dass ihn die Wand ganz hinten versteht."
+            ],
+            "tipp": "Die Leitung macht mit und übertreibt zuerst: Das senkt die Scham schneller als jede Erklärung."
+          },
+          {
+            "titel": "Probe, Dreh und gemeinsam ansehen",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Geübt wird, einen Skill so zu zeigen, dass andere ihn nachmachen können. Erst eine Probe ohne Aufnahme, dann der Dreh, danach sieht die Gruppe die Takes an und wählt aus.",
+            "sagen": [
+              "Regie: ein Hinweis pro Stopp – mehr kann niemand auf einmal umsetzen.",
+              "Stopp gilt immer: Wer die Karte hebt, beendet die Aufnahme, und sie wird sofort gelöscht."
+            ],
+            "punkte": [
+              "Übung (8 Min.): Probe – Alle spielen oder sprechen den Clip einmal ohne Aufnahme durch, die Regie ruft Stopp und gibt genau einen Hinweis: lauter, langsamer, zur Kamera drehen.",
+              "Übung (15 Min.): Dreh – Jede Szene oder jeder Abschnitt wird höchstens dreimal aufgenommen; nach jedem Take sieht die Gruppe kurz hin, und wer sich nicht wohlfühlt, hebt die Stopp-Karte.",
+              "Übung (7 Min.): Gemeinsam ansehen – Alle sehen die besten Takes in der richtigen Reihenfolge und geben Rückmeldung nach der Regel „ein Lob, ein Tipp“; die Gruppe entscheidet, welche Takes bleiben.",
+              "Übung (5 Min.): Titel und Schluss – Der Clip bekommt einen Titel und einen Schlusssatz für die nächste Gruppe, zum Beispiel „Probier es aus, es kostet nichts“; die Leitung fügt die Takes nach der Stunde zusammen."
+            ],
+            "tipp": "Rückmeldungen nach der Regel „ein Lob, ein Tipp“ halten die Stimmung, auch wenn eine Szene zum dritten Mal nicht klappt.",
+            "wennEsKippt": "Streitet die Gruppe über eine Regie-Entscheidung, abstimmen lassen und die unterlegene Idee einmal als Alternative aufnehmen. Macht sich jemand über eine Aufnahme lustig, auf den Gruppenvertrag zeigen: Wir lachen miteinander, nicht übereinander.",
+            "blatt": "a7-clip-karten"
+          },
+          {
+            "titel": "Skill: Abschütteln",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Nach dem Dreh steckt oft noch Anspannung im Körper: Alle schütteln sie ab, wie nach einem Auftritt (höchstens 5 Min., still höchstens 2 Min.). Danach der Abschluss (10 Min.): Skills-Pass, Mission und eigener Moment, dazu die Wahl des Lieblingsorts für die letzte Stunde.",
+            "sagen": [
+              "Schüttelt die Anspannung raus – Hände, Arme, Beine, Schultern – und dann: Wer seid ihr wirklich?",
+              "Sagt euren Namen und etwas, das ihr wirklich mögt."
+            ],
+            "punkte": [
+              "Die drei Schritte: Hände, Arme, Beine und Schultern 20 Sekunden ausschütteln · dreimal lang ausatmen und die Schultern sinken lassen · den eigenen Namen sagen und etwas, das man mag.",
+              "Üben (5 Min.): Alle schütteln im Stehen, dann reihum Name und etwas, das man mag; die Leitung zeigt den Skill und beginnt – so bleibt auch eine gespielte Rolle im Clip.",
+              "Skills-Pass (3 Min.): ein Satz zur Frage an der Tafel – Was hat mir beim Dreh geholfen, und worauf bin ich stolz? – dann der Stempel.",
+              "Mission, Moment und Lieblingsort (7 Min.): die Mission vorlesen, jede Person schreibt ihren Moment ins Heft; dann stimmt die Gruppe über drei Vorschläge ab, nennt den Lieblingsort für den Abschlussausflug und wünscht sich etwas für den Imbiss."
+            ],
+            "wennEsKippt": "Wird beim Abschütteln gekichert, mitlachen und noch einmal ansetzen: Albern ist auch ein Ausgang für Anspannung. Findet die Gruppe keinen gemeinsamen Ort, nach der Stunde einzeln fragen; die Leitung entscheidet unter den Vorschlägen."
+          }
+        ],
+        "bruecke": "Nächstes Mal ist unsere letzte Stunde: Wir zeigen euren Clip, schauen aufs Jahr zurück und gehen an euren Lieblingsort.",
+        "mission": "Erklär deinen Clip-Skill einer Person in drei Sätzen – oder mach ihn selbst.",
+        "hintergrund": "Selbstwirksamkeit entsteht vor allem durch eigene Erfolgserlebnisse; wer anderen zuschaut, lernt zusätzlich am Modell (Bandura, 1977). Wer für spätere Jugendliche aufschreibt oder erklärt, was ihm geholfen hat, übernimmt die Botschaft selbst stärker (Walton & Cohen, 2011). Programme zum sozial-emotionalen Lernen wirken besonders, wenn sie aktive Übungsformen nutzen (Durlak et al., 2011): Der Clip lässt den Skill erklären, zeigen und festhalten.",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Walton, G. M. & Cohen, G. L. (2011). A brief social-belonging intervention improves academic and health outcomes of minority students. Science, 331(6023), 1447–1451.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "achtung": "Aufnahmen nur mit schriftlichem Einverständnis der Eltern und dem Ja der Jugendlichen selbst, nur auf Geräten der Einrichtung, ohne Hochladen und Weiterschicken; wer nicht zu sehen oder zu hören sein will, arbeitet hinter der Kamera oder zeigt nur Hände. Keine echten Vorfälle, Personen oder Namen aus der Schule nachspielen, und Stopp gilt immer: Die Aufnahme wird sofort gelöscht. Wird beim Reden über den Skill etwas Belastendes erzählt, nicht in der Gruppe vertiefen, ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
+        "differenzierung": {
+          "leichter": "Den Clip als Podcast mit einem Satz je Schritt aufnehmen oder als Foto-Story mit Händen und Gegenständen, während die Leitung die Kamera hält.",
+          "schwerer": "Im Clip zeigen, wie der Skill in zwei verschiedenen Situationen hilft, und eine Zahl vorher und nachher einbauen."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in und Brücke mit den Aufnahmeregeln (8 Min.), Skill und Botschaft wählen (10 Min.), Dreh eines Podcasts oder einer Foto-Story in einem Durchgang (17 Min.), Abschütteln mit Skills-Pass und Mission (15 Min.). Drehplan mit Ideen-Karten und Stimmen-Aufwärmen entfallen, die Probe wird gleich zur Aufnahme."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-mein-clip",
+      "bereich": "skills",
+      "thema": "abschluss",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Clip", "Skills erklären", "Foto, Video, Podcast", "Rückmeldung"],
+      "bild": "icon:camera",
+      "kurs": ["a7-e29"],
+      "de": {
+        "titel": "Unser Skills-Clip",
+        "untertitel": "Skill, Plan, Aufgabe – und deine Entscheidung",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Ein guter Clip zeigt drei Dinge: wann ein Skill hilft, wie er geht und was er bringt. Mehr braucht es nicht – auch 30 Sekunden reichen."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wählt Skill und Format.",
+            "symbole": ["gruppe", "ankreuzen"]
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 3,
+            "items": ["Foto-Story", "Video", "Podcast"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Unser Skill: …", "Er hilft, wenn …"],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Plant drei Bilder oder Abschnitte: Situation, Skill, Ergebnis.",
+            "symbole": ["malen", "schreiben"]
+          },
+          {
+            "art": "comic",
+            "spalten": 3,
+            "felder": [
+              { "leer": true, "untertitel": "1 Situation" },
+              { "leer": true, "untertitel": "2 Skill" },
+              { "leer": true, "untertitel": "3 Ergebnis" }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Trag deine Aufgabe ein und ergänze nach dem Dreh die Sätze.",
+            "hinweis": "Du entscheidest, was zu sehen oder zu hören ist: Gesicht, Hände oder nur deine Stimme.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Meine Aufgabe: …", "Stolz bin ich auf …"],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Stopp gilt immer.",
+            "text": "Du kannst jede Aufnahme beenden. Sie wird sofort gelöscht, ohne Begründung."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Gruppe wählt einen Skill und ein Format, plant drei Bilder oder Abschnitte, verteilt Aufgaben vor und hinter der Kamera und hält nach dem Dreh fest, worauf sie stolz ist.",
+          "ablauf": [
+            "Einheit 29, Schritt 3: Aufgabe 1 – Skill und Format wählen, Satzanfänge ausfüllen –, dann Aufgabe 2: drei Bilder oder Abschnitte skizzieren, Strichfiguren und Stichworte genügen.",
+            "Schritt 3 zum Schluss: die eigene Aufgabe eintragen; die Rollen werden angeboten, nicht zugeteilt.",
+            "Nach dem Dreh, Schritt 5 oder 6: die Sätze „Stolz bin ich auf …“ ergänzen; das Blatt wird nicht eingesammelt."
+          ],
+          "hintergrund": "Wer ein Verhalten nicht nur bespricht, sondern selbst zeigt und damit Erfolg hat, erlebt sich als wirksam; eigene Erfolgserlebnisse sind die stärkste Quelle von Selbstwirksamkeit, Zuschauen am Modell kommt hinzu (Bandura, 1977). Aktive, klar benannte Übungsformen machen Programme zum sozial-emotionalen Lernen wirksamer (Durlak et al., 2011).",
+          "quellen": [
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+            "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+          ],
+          "achtung": "Aufnahmen nur mit Einverständnis; wer nicht zu sehen sein will, arbeitet hinter der Kamera. Wird etwas Belastendes erzählt, nicht in der Gruppe vertiefen und nach dem Schutzkonzept handeln.",
+          "material": "Heft, Stifte"
+        }
+      }
+    },
+    {
+      "id": "a7-clip-karten",
+      "bereich": "skills",
+      "thema": "abschluss",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Ideen-Karten", "Rollenkarten", "Stopp-Karte", "Aufnahme"],
+      "bild": "icon:microphone",
+      "kurs": ["a7-e29"],
+      "de": {
+        "titel": "Clip-Karten",
+        "untertitel": "Kopiervorlage: sechs Ideen, sechs Aufgaben und die Stopp-Karte",
+        "bausteine": [
+          {
+            "art": "text",
+            "klein": true,
+            "text": "Einmal kopieren und ausschneiden. Die Gruppe zieht zwei Ideen-Karten und verteilt die Aufgaben; die Stopp-Karte liegt bei allen Aufnahmen sichtbar auf dem Tisch: Wer sie hebt, beendet die Aufnahme, und sie wird sofort gelöscht."
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 96,
+            "karten": [
+              { "titel": "Der Fehler-Film", "text": "Erst so nicht: Eine Person macht es falsch. Dann so: Der Skill in drei Schritten." },
+              { "titel": "Das 30-Sekunden-Tutorial", "text": "Eine Stimme erklärt den Skill, die Kamera zeigt nur Hände und Gegenstände." },
+              { "titel": "Zahl vorher, Zahl nachher", "text": "Eine Skala zeigt die Anspannung vor dem Skill und danach." },
+              { "titel": "Das Interview", "text": "Eine Person fragt: Was hilft dir wirklich? Die andere zeigt und erklärt es." },
+              { "titel": "Der Brief an die Nächsten", "text": "Podcast: Eine Stimme liest, was sie gern früher gewusst hätte." },
+              { "titel": "Foto-Story ohne Gesichter", "text": "Fünf Fotos von Händen, Schuhen oder Orten, dazu ein Satz je Foto." }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 96,
+            "karten": [
+              { "titel": "Regie", "text": "Sagt Start und Stopp und gibt pro Stopp genau einen Hinweis." },
+              { "titel": "Kamera oder Ton", "text": "Hält das Gerät ruhig und achtet auf Geräusche im Hintergrund." },
+              { "titel": "Sprechen oder Hände", "text": "Spricht den Text oder zeigt den Skill mit den Händen." },
+              { "titel": "Auswahl", "text": "Sieht die Takes an und sagt, welche bleiben." },
+              { "titel": "Leitung", "text": "Hilft bei der Technik und fügt die Takes nach der Stunde zusammen." },
+              { "titel": "STOPP", "text": "Wer diese Karte hebt, beendet die Aufnahme. Sie wird sofort gelöscht, ohne Begründung." }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Ideen-Karten, Aufgabenkarten und eine Stopp-Karte für den Skills-Clip: Die Gruppe findet ein Format, verteilt Aufgaben vor und hinter der Kamera und kann jede Aufnahme jederzeit stoppen.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; die Stopp-Karte vor der ersten Aufnahme erklären und sichtbar auflegen.",
+            "Einheit 29, Schritt 3: Die Gruppe zieht zwei Ideen-Karten, wählt das Format und verteilt die Aufgabenkarten; wer nicht gesehen werden will, nimmt Kamera, Ton oder Auswahl.",
+            "Schritt 5: Bei jeder Aufnahme liegt die Stopp-Karte auf dem Tisch; wird sie gehoben, wird die Aufnahme sofort gelöscht."
+          ],
+          "hintergrund": "Wer ein Verhalten selbst zeigt und damit Erfolg hat, erlebt sich als wirksam (Bandura, 1977). Die Stopp-Karte macht die Regel sichtbar, dass jede Person über ihre Aufnahmen bestimmt; das schützt gerade Jugendliche, die sich vor der Kamera unsicher fühlen.",
+          "quellen": [
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}

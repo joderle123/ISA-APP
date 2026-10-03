@@ -1,0 +1,327 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e28",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-test-countdown"],
+      "vorlagen": ["a7-test-quiz"],
+      "woerter": [
+        { "de": "der Test", "fr": "der Test" },
+        { "de": "die Aufregung", "fr": "die Aufregung" },
+        { "de": "rückwärts planen", "fr": "rückwärts planen" },
+        { "de": "sich abfragen", "fr": "sich abfragen" },
+        { "de": "der Blackout", "fr": "der Blackout" }
+      ],
+      "de": {
+        "titel": "Ruhig durch die Testphase",
+        "kurz": "Woher Teststress kommt und was ihn kleiner macht: rückwärts lernen, Testgedanken prüfen, Herzklopfen umdeuten, einen Blackout proben und einen Skill üben, den niemand sieht.",
+        "ziele": [
+          "erklären mit der Test-Waage, woher Teststress kommt, und planen das Lernen für einen echten Test rückwärts mit Selbsttests",
+          "prüfen Testgedanken, deuten Herzklopfen als „Mein Körper macht sich bereit“ und üben einen Blackout-Plan",
+          "wählen einen unsichtbaren Skill für den Testraum"
+        ],
+        "material": [
+          "Klebeband, Zettel, Tafel, Stoppuhr",
+          "Testtermine der Jugendlichen",
+          "Mini-Quiz und Gedanken-Karten (Vorlage), Heft-Blatt je Person",
+          "Gefühlsrad, Anspannungsskala 0–100",
+          "Skills-Pass, Stempel"
+        ],
+        "vorbereitung": [
+          "Testtermine bei den Klassenlehrkräften erfragen und klären, wer gerade besonders unter Druck steht; am besten zwei bis drei Wochen vor einer Testphase einplanen.",
+          "Mit Klebeband eine Linie von 0 bis 100 auf den Boden kleben; Mini-Quiz für jede Person kopieren, Karten schneiden.",
+          "Sechs erfundene Wortpaare für die Abfrage-Challenge aufschreiben, zum Beispiel Zorm = Blitz."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühlsrad, Zahl und Test-Zahl" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Thema: mein nächster Test" },
+          { "min": "15–45", "phase": "uebung", "titel": "Test-Waage, drei Zonen und Lernplan rückwärts" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Bewegung: bis 20 zählen" },
+          { "min": "50–85", "phase": "uebung", "titel": "Gedanken-Duell, Rollenspiel und Blackout-Probe" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Unsichtbar ruhig" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad, Zahl und Test-Zahl",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Alle zeigen ihr Wort auf dem Gefühlsrad und nennen ihre Anspannung von 0 bis 100; die Leitung macht mit und beginnt. Dann eine zweite Zahl, verdeckt: Wie hoch ist die Anspannung, wenn du an den nächsten Test denkst? Jede Person schreibt nur die Zahl auf einen Zettel, die Leitung schreibt einen eigenen dazu und legt alle Zettel ohne Namen auf die Linie am Boden.",
+            "sagen": [
+              "Schreibt nur eine Zahl, keinen Namen – niemand erfährt, welcher Zettel eurer ist.",
+              "Schaut auf die Linie: Mit eurer Aufregung seid ihr nicht allein, und manche sind ganz entspannt."
+            ],
+            "tipp": "Die Leitung nennt zu ihrem Zettel in einem Satz eine eigene Prüfung, etwa die Führerscheinprüfung: Zu hören, dass auch Erwachsene aufgeregt sind, entlastet.",
+            "wennEsKippt": "Stehen Scherzzahlen wie 1000 auf den Zetteln, sie trotzdem ans Ende der Linie legen. Steht auf einem Zettel ein Satz statt einer Zahl, etwa „Ich halte das nicht mehr aus“, ihn nicht vorlesen, sondern beiseitelegen und noch am selben Tag mit der zuständigen Leitung (Responsable) besprechen."
+          },
+          {
+            "titel": "Rückblick, Mission und Thema: mein nächster Test",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission der letzten Stunde nachfragen: Kam dein Moment – und was hast du gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann wählt jede Person einen Test, der sie wirklich beschäftigt, und trägt Fach und Datum oben auf dem Blatt ein.",
+            "sagen": [
+              "Kam euer Moment, und was habt ihr gemacht – Daumen hoch, Mitte oder runter?",
+              "Nehmt einen Test, der euch wirklich beschäftigt – nicht den leichtesten; heute geht es nicht um Noten, sondern um das, was ihr selbst in der Hand habt."
+            ],
+            "tipp": "Wer gerade keinen Test hat, nimmt den letzten, der schwierig war. Wer als kleinen Schritt den Schlaf gewählt hat, ist schon mittendrin: Eine ausgeschlafene Nacht gehört zum Lernplan.",
+            "blatt": "a7-test-countdown"
+          },
+          {
+            "titel": "Test-Waage, drei Zonen und Lernplan rückwärts",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Zuerst zeigt die Test-Waage an der Tafel, woher Teststress kommt: links der Druck, rechts, was man dagegen hat. Dann plant jede Person für den eigenen Test rückwärts vom Testtag, mit Selbsttests statt Durchlesen.",
+            "sagen": [
+              "Stress entsteht, wenn links mehr Gewicht liegt als rechts – also machen wir links leichter und rechts schwerer.",
+              "Dreimal durchlesen fühlt sich gut an, bringt aber wenig: Heft zu und aufschreiben, was noch da ist – das wirkt."
+            ],
+            "tabelle": {
+              "spalten": ["Anspannung", "Beim Lernen und im Test", "Was hilft"],
+              "zeilen": [
+                ["0–30", "Klar im Kopf; manchmal fehlt nur der Anstoß zum Anfangen.", "Startzeit festlegen, mit einer kleinen Aufgabe beginnen"],
+                ["30–70", "Wach und angespannt – gut für den Endspurt, bis die Gedanken eng werden.", "Pausen, Selbsttest statt Lesen, Bewegung zwischen den Lernblöcken"],
+                ["70–100", "Blackout: Der Kopf ist leer, der Körper übernimmt.", "Erst mit einem Körper-Skill runter, dann zur nächsten Aufgabe"]
+              ]
+            },
+            "punkte": [
+              "Übung (6 Min.): Waage – Links „Das macht Druck“, rechts „Das habe ich dagegen“; jede Person klebt je einen Zettel an, dann die zwei Hebel erklären: links leichter machen (früher anfangen, den Stoff teilen), rechts schwerer machen (Lernmethoden, Skills, Schlaf, Hilfe).",
+              "Übung (4 Min.): Drei Zonen – Mit der Tabelle zeigen, was bei welcher Zahl beim Lernen und im Test passiert, und die Zettel von der Linie dazuhalten: Wo liegen sie?",
+              "Übung (12 Min.): Lernplan rückwärts – Aufgabe 1: vom Testtag aus rückwärts planen, jede Zeile mit einem Eintrag in „So teste ich mich“; die Leitung geht herum und teilt zu große Brocken.",
+              "Übung (8 Min.): Abfrage-Challenge – Alle haben eine Minute für sechs erfundene Wortpaare (Zorm = Blitz, Pelo = Fenster, Kuti = Brot, Nafo = Schuh, Rilu = Mond, Dabe = Wolke), schreiben bei geschlossenem Heft auf, was noch da ist, schauen nach und schreiben noch einmal; die Trefferzahl zeigt, was Abfragen bringt."
+            ],
+            "tipp": "Wer keine Unterlagen dabeihat, plant mit dem, was er weiß, und ergänzt zu Hause: Wichtiger als ein perfekter Plan ist der erste Termin.",
+            "wennEsKippt": "Sagt jemand, er lerne nie und brauche keinen Plan, nicht diskutieren: einen Plan für nur zwei Tage mit je zehn Minuten verlangen. Wirkt jemand überfordert oder sagt „Ich schaff das eh nicht“, den Plan gemeinsam auf eine Zeile verkleinern und nach der Stunde kurz nachfragen.",
+            "blatt": "a7-test-countdown"
+          },
+          {
+            "titel": "Bewegung: bis 20 zählen",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen im Kreis und schütteln Hände, Arme und Beine aus. Dann zählt die Gruppe gemeinsam bis 20: Jede Person darf jederzeit die nächste Zahl sagen, ohne Absprache; sprechen zwei gleichzeitig, beginnt die Gruppe wieder bei 1.",
+            "sagen": [
+              "Sprechen zwei gleichzeitig, fangen wir wieder bei 1 an – ohne Schuldige."
+            ],
+            "tipp": "Das Spiel passt zum Thema: Etwas geht schief, die Gruppe fängt ruhig neu an – genau das braucht man im Test, wenn eine Aufgabe danebengeht."
+          },
+          {
+            "titel": "Gedanken-Duell, Rollenspiel und Blackout-Probe",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Zuerst prüft die Gruppe typische Testgedanken wie Detektive und sucht Sätze, die realistisch sind und helfen. Dann übt sie vor der Tür des Testraums, Herzklopfen als „Mein Körper macht sich bereit“ zu deuten, und probt den Blackout mit einem Mini-Quiz, in dem eine Frage nicht lösbar ist.",
+            "sagen": [
+              "Nicht schönreden, sondern prüfen: Würdet ihr den Satz am Morgen des Tests wirklich glauben?",
+              "Eine Frage im Quiz ist mit Absicht nicht lösbar – eure Aufgabe ist nicht, alles zu wissen, sondern weiterzumachen."
+            ],
+            "punkte": [
+              "Übung (8 Min.): Gedanken-Duell – Die Leitung liest einen Testgedanken von der Karte vor („Ich falle sowieso durch“), alle schreiben einen Satz, der realistisch ist und hilft; wer beide Prüffragen (realistisch, hilfreich) besteht, bekommt einen Punkt, „Ich bin der Beste“ zählt nicht.",
+              "Übung (7 Min.): Rollenspiel vor der Tür – Die Leitung spielt einen aufgeregten Mitschüler, der alle mit Fragen überschüttet („Hast du Kapitel 4 gelernt?“); jede Person übt drei Antworten – zur Seite gehen, „Ich will jetzt nicht über den Stoff reden“, ruhig ausatmen – und sagt sich: „Mein Körper macht sich bereit.“",
+              "Übung (10 Min.): Blackout-Plan und Mini-Quiz – Den Plan an die Tafel schreiben (merken, zweimal lang ausatmen, Aufgabe markieren, weitermachen, später zurück), dann drei Minuten Quiz mit Stoppuhr: zehn Fragen, eine davon nicht lösbar; danach fragen: Wer ist hängen geblieben, wer hat den Plan genutzt?",
+              "Übung (10 Min.): Test-Countdown – Aufgabe 2: im Countdown für den Testtag unterstreichen, was man übernimmt, und höchstens zwei eigene Ideen ergänzen; zwei Freiwillige nennen ihren besten Punkt."
+            ],
+            "tipp": "Das Mini-Quiz bekommt keine Noten und wird nicht eingesammelt: Es geht nur um den Moment, in dem man hängen bleibt.",
+            "wennEsKippt": "Kommt „Ich lerne in der Nacht davor durch“, nicht verbieten, sondern fragen, wie es am nächsten Morgen um acht aussieht. Ärgert sich jemand über die unlösbare Frage, den Ärger würdigen: Genau dieses Gefühl kommt im Test auch – dann fragen, was geholfen hat.",
+            "blatt": "a7-test-quiz"
+          },
+          {
+            "titel": "Skill: Unsichtbar ruhig",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Alle sitzen wie im Test am Tisch, den Stift in der Hand; die Leitung leitet vier Skills an, die im Raum niemand bemerkt, jeweils etwa eine Minute (höchstens 5 Min.). Danach wählt jede Person ihren Favoriten, und der Abschluss (10 Min.) folgt: Blackout-Plan, Skills-Pass, Mission und eigener Moment.",
+            "sagen": [
+              "Niemand im Raum darf merken, dass ihr gerade einen Skill macht.",
+              "Welcher würde bei euch im echten Test funktionieren – und wann genau würdet ihr ihn brauchen?"
+            ],
+            "punkte": [
+              "Die Skills: Füße fest in den Boden drücken, fünf Sekunden halten, lösen · vier Sekunden ein-, sechs Sekunden ausatmen · den Stift fest drücken, bis die Hand warm wird, loslassen · lautlos fünf Dinge sehen, vier hören, drei spüren.",
+              "Üben (5 Min.): Die Leitung leitet jeden Skill etwa eine Minute an, danach zweimal am Stück ohne Ansage; jede Person wählt ihren Favoriten und sagt, wann im Test sie ihn braucht.",
+              "Skills-Pass (4 Min.): ein Satz zur Frage an der Tafel – Welcher Skill kommt mit in meinen nächsten Test? –, dann der Stempel; den Blackout-Plan mit dem Favoriten auf dem Blatt eintragen (Aufgabe 3).",
+              "Mission und Moment (6 Min.): die Mission vorlesen; jede Person schreibt in die Spalte „Mein Moment: Wenn …“, wann sie lernen oder ihren Skill machen will – erster Lerntermin, vor der Tür, mitten im Test –, dann der Ausblick."
+            ],
+            "wennEsKippt": "Wird gekichert oder laut geatmet, ruhig weitermachen: Beim zweiten Durchgang ohne Ansage wird es meist still, weil Unsichtbarbleiben zum Spiel wird. Wem beim Atmen schwindlig wird, atmet normal weiter und macht nur Füße und Stift.",
+            "blatt": "a7-test-countdown"
+          }
+        ],
+        "bruecke": "Nächstes Mal macht ihr einen Skills-Clip für die nächste Gruppe – als Foto, Video oder Podcast.",
+        "mission": "Lern zehn Minuten, dann Heft zu: Schreib auf, was du noch weißt.",
+        "hintergrund": "Prüfungsangst besteht aus Sorgen und Aufregung; vor allem die Sorgen binden Aufmerksamkeit (Zeidner, 1998). Stress entsteht, wenn eine Aufgabe größer wirkt als die eigenen Mittel (Lazarus & Folkman, 1984) – die Waage zeigt beide Seiten. Selbsttests und über Tage verteiltes Lernen sind am besten belegt (Dunlosky et al., 2013). Wer Herzklopfen als Bereitschaft deutet, schneidet besser ab (Brooks, 2014).",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Brooks, A. W. (2014). Get excited: Reappraising pre-performance anxiety as excitement. Journal of Experimental Psychology: General, 143(3), 1144–1158."
+        ],
+        "achtung": "Tests und Noten sind für viele ein wunder Punkt: nicht nach Noten, Zeugnissen oder Reaktionen der Eltern fragen und nichts davon in der Gruppe vertiefen; das Mini-Quiz bleibt ohne Bewertung. Einen Zettel mit Angst vor Strafe oder Gewalt zu Hause nicht vorlesen, sondern beiseitelegen und noch am selben Tag die zuständige Leitung (Responsable) informieren. Sagt jemand, er halte den Druck nicht mehr aus, oder deutet an, nicht mehr leben zu wollen: nicht allein lassen, nach dem Schutzkonzept handeln, bei akuter Gefahr 112.",
+        "differenzierung": {
+          "leichter": "Den Lernplan nur für zwei Tage schreiben, die Testgedanken liest die Leitung vor, und wer mag, übt nur einen der vier Skills.",
+          "schwerer": "Einen zweiten Lernplan für einen weiteren Test schreiben oder zu jedem Testgedanken zwei realistische Gegensätze finden."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Test-Zahl und Brücke (8 Min.), Test-Waage und Lernplan rückwärts (17 Min.), Gedanken-Duell mit Blackout-Probe (10 Min.), Unsichtbar ruhig mit Skills-Pass und Mission (15 Min.). Bewegung, Abfrage-Challenge und Rollenspiel vor der Tür entfallen."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-test-countdown",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "30 Min., verteilt über die Stunde",
+      "eldib": [],
+      "schlagworte": ["Tests", "Teststress", "Lernplan", "Blackout"],
+      "bild": "icon:hourglass",
+      "kurs": ["a7-e28"],
+      "de": {
+        "titel": "Mein Test-Countdown",
+        "untertitel": "Vom Lernplan bis zum Blackout-Plan",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Etwas Aufregung macht wach. Vor dem Test klopft das Herz schneller: Dein Körper macht sich bereit."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Plane rückwärts vom Testtag.",
+            "hinweis": "Trag oben Fach und Datum ein und unten, wie du dich testest.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Mein Test: … am …"],
+            "linien": 1
+          },
+          {
+            "art": "tabelle",
+            "spalten": ["Wann?", "Was lerne ich?", "So teste ich mich"],
+            "breiten": [1.2, 1.9, 2.4],
+            "zeilen": 2,
+            "beispiel": ["Mo, vier Tage vorher", "Mathe: Brüche", "Heft zu, drei Aufgaben rechnen"]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Unterstreiche, was du am Testtag machst.",
+            "symbole": ["lesen"]
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 1,
+            "items": [
+              { "titel": "Am Abend davor", "text": "Tasche packen, früh schlafen." },
+              { "titel": "Am Morgen", "text": "Essen, trinken, rechtzeitig los." },
+              { "titel": "Vor der Tür", "text": "Herz klopft? Ich bin bereit." },
+              { "titel": "Im Test", "text": "Leichtes zuerst, dann der Rest." }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib deinen Blackout-Plan.",
+            "hinweis": "Dazu passt dein Skill: Unsichtbar ruhig.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 1,
+            "beispiele": [
+              { "wenn": "Wenn mir im Test nichts mehr einfällt,", "dann": "atme ich zweimal lang aus, sage „Mein Körper ist bereit“ und mache weiter." }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Wenn die Angst zu groß wird",
+            "text": "Sprich mit der Leitung oder einer Person, der du vertraust. Hilfe: 116 111."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen planen das Lernen für einen echten Test rückwärts mit Selbsttests, legen ihren Countdown für den Testtag fest und halten einen Blackout-Plan mit einem unauffälligen Skill fest.",
+          "ablauf": [
+            "Einheit 28, Schritt 2: Fach und Datum des gewählten Tests oben eintragen; Schritt 3: Aufgabe 1 nach der Test-Waage, mit Einträgen in „So teste ich mich“.",
+            "Schritt 5: Aufgabe 2 – im Countdown unterstreichen und ergänzen, dabei „Mein Körper macht sich bereit“ vor der Tür.",
+            "Schritt 6: nach den unsichtbaren Skills den Blackout-Plan eintragen (Aufgabe 3); nachgefragt wird, was geholfen hat, nie die Note."
+          ],
+          "hintergrund": "Prüfungsangst besteht aus Sorgengedanken und körperlicher Aufregung; vor allem die Sorgen binden Aufmerksamkeit, die für die Aufgaben fehlt (Zeidner, 1998). Für das Lernen sind Selbsttests und verteiltes Lernen am besten belegt (Dunlosky et al., 2013); Wenn-dann-Pläne werden im entscheidenden Moment leichter abgerufen als gute Vorsätze (Gollwitzer, 1999). Der Satz im Blackout-Plan beruht auf der Umdeutung von Aufregung als Bereitschaft, die in Prüfungen die Leistung verbessert (Brooks, 2014).",
+          "quellen": [
+            "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+            "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+            "Brooks, A. W. (2014). Get excited: Reappraising pre-performance anxiety as excitement. Journal of Experimental Psychology: General, 143(3), 1144–1158."
+          ],
+          "achtung": "Nicht nach Noten oder Reaktionen der Eltern fragen. Wirkt die Angst über Wochen lähmend oder deutet jemand an, den Druck nicht mehr auszuhalten: Gespräch nach der Stunde, die zuständige Leitung (Responsable) einbeziehen, nach dem Schutzkonzept handeln.",
+          "material": "Testtermine, Stifte"
+        }
+      }
+    },
+    {
+      "id": "a7-test-quiz",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": ["Mini-Quiz", "Blackout", "Testgedanken", "Gedanken-Karten"],
+      "bild": "icon:question-mark",
+      "kurs": ["a7-e28"],
+      "de": {
+        "titel": "Mini-Quiz und Testgedanken",
+        "untertitel": "Kopiervorlage: zehn Fragen, eine davon nicht lösbar – und sechs Gedanken-Karten",
+        "bausteine": [
+          {
+            "art": "text",
+            "klein": true,
+            "text": "Das Quiz für jede Person einmal kopieren: Tisch leer bis auf einen Stift, drei Minuten mit Stoppuhr, Frage 6 ist mit Absicht nicht lösbar. Keine Noten, nichts wird eingesammelt. Die Gedanken-Karten einmal kopieren und schneiden; die Leitung liest sie im Gedanken-Duell vor."
+          },
+          {
+            "art": "tabelle",
+            "spalten": ["Nr.", "Frage", "Antwort"],
+            "breiten": [0.6, 4, 2.4],
+            "zeilen": 0,
+            "werte": [
+              ["1", "Was ist 13 + 18?", ""],
+              ["2", "Welcher Monat kommt nach Juni?", ""],
+              ["3", "Nenne drei Farben des Regenbogens.", ""],
+              ["4", "Wie heißt die Hauptstadt von Luxemburg?", ""],
+              ["5", "Schreib deinen Vornamen rückwärts.", ""],
+              ["6", "Bilde ein Wort nur aus den Buchstaben M, R, T, K, S.", ""],
+              ["7", "Was ist 4 × 7?", ""],
+              ["8", "Nenne einen Skill aus deinem Skills-Koffer.", ""],
+              ["9", "Wie viele Beine hat eine Spinne?", ""],
+              ["10", "Nenne eine Zahl zwischen 20 und 30.", ""]
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 66,
+            "karten": [
+              { "text": "Ich falle sowieso durch." },
+              { "text": "Alle anderen haben mehr gelernt." },
+              { "text": "Wenn ich einen Blackout habe, ist alles vorbei." },
+              { "text": "Wenn diese Note schlecht ist, bin ich dumm." },
+              { "text": "Ich muss alles wissen." },
+              { "text": "Ich habe zu spät angefangen, jetzt lohnt es sich nicht mehr." }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Das Mini-Quiz probt den Moment, in dem man im Test hängen bleibt; die Gedanken-Karten liefern typische Testgedanken für das Gedanken-Duell.",
+          "ablauf": [
+            "Das Quiz für jede Person kopieren, die Karten einmal kopieren und schneiden.",
+            "Einheit 28, Schritt 5: Gedanken-Duell mit den Karten; danach das Quiz – drei Minuten, Frage 6 nicht lösbar –, anschließend auflösen: Wer ist hängen geblieben, wer hat den Plan genutzt?",
+            "Keine Punkte für das Quiz, nichts einsammeln; die Antworten bleiben bei den Jugendlichen."
+          ],
+          "hintergrund": "Prüfungsangst besteht aus Sorgen und Aufregung; die Sorgen binden Aufmerksamkeit, die für die Aufgaben fehlt (Zeidner, 1998). Das Quiz lässt die Gruppe den Moment des Hängenbleibens ohne Notendruck erleben und den Blackout-Plan ausprobieren.",
+          "quellen": [
+            "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum."
+          ],
+          "material": "Stoppuhr, Stifte, Schere"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e27",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-gesund-plan", "a7-skills-koffer"],
+      "vorlagen": ["a7-menue-karten"],
+      "woerter": [
+        { "de": "der Schlaf", "fr": "der Schlaf" },
+        { "de": "der Stress-Rucksack", "fr": "der Stress-Rucksack" },
+        { "de": "der kleine Schritt", "fr": "der kleine Schritt" },
+        { "de": "die Zutat", "fr": "die Zutat" },
+        { "de": "das Budget", "fr": "das Budget" }
+      ],
+      "de": {
+        "titel": "Gesund und stark",
+        "kurz": "Schlaf, Essen, Bewegung und Stress hängen zusammen: Die Gruppe packt den Stress-Rucksack, kauft mit Budget ein, kocht gemeinsam und plant einen kleinen Schritt, der wirklich klappt.",
+        "ziele": [
+          "zeigen im Stress-Rucksack, was belastet und was entlastet, und sehen, wie Schlaf, Essen, Bewegung und Stress einander mitziehen",
+          "kaufen mit Budget ein, kochen gemeinsam und essen mit dem Skill Der erste Bissen",
+          "planen einen kleinen, machbaren Schritt als Wenn-dann-Satz und tragen ihn in die grüne Zone des Ampelplans ein"
+        ],
+        "material": [
+          "Vier Schilder (A, B, Weiß nicht, Kommt drauf an), Klebeband",
+          "Rucksack, Bücher oder Flaschen, Rucksack-Plakat",
+          "Menükarten (Vorlage), Heft-Blatt, Stifte",
+          "Zutaten, Küchengeräte, Geschirr, Geld, Beutel, Erste-Hilfe-Tasche",
+          "Gefühlsrad, Anspannungsskala, Skills-Pass, Stempel"
+        ],
+        "vorbereitung": [
+          "Einverständnis der Eltern, Treffpunkt, Aufsicht und Notfallnummer nach den Regeln des CDSE klären; Regenvariante: Zutaten vorab kaufen.",
+          "Allergien und Essensregeln erfragen, danach drei Menükarten wählen (fertig in 20 Minuten); Küche, Herd, Budget und Laden klären.",
+          "Schilder und Rucksack-Plakat vorbereiten, Rucksack mit Büchern oder Flaschen bereitlegen."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühlsrad, Zahl und Schlafnote" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Thema: für mich sorgen" },
+          { "min": "15–40", "phase": "uebung", "titel": "Vier Ecken, Stress-Rucksack und Menü-Wahl" },
+          { "min": "40–45", "phase": "aktiv", "titel": "Weg zum Laden" },
+          { "min": "45–85", "phase": "uebung", "titel": "Einkaufen und Kochen" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Der erste Bissen" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad, Zahl und Schlafnote",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Alle zeigen ihr Wort auf dem Gefühlsrad und nennen ihre Anspannung von 0 bis 100; dazu zeigen sie mit den Fingern die Schlafnote der letzten Nacht (0 heißt kaum geschlafen, 10 heißt tief und lang). Die Leitung macht mit und beginnt; erst am Ende der Runde wird laut überlegt, ob Schlafnote und Zahl zusammenpassen.",
+            "sagen": [
+              "Ein Wort aus dem Rad, eure Zahl von 0 bis 100 – und heute eine zweite Zahl: Wie gut habt ihr letzte Nacht geschlafen, von null bis zehn Finger?",
+              "Fällt euch etwas auf? Wer wenig geschlafen hat, liegt oft höher – Zufall? Genau darum geht es heute."
+            ],
+            "tipp": "Die Zahlen nicht kommentieren und nicht nachfragen; wer wenig geschlafen hat, braucht keine Erklärung."
+          },
+          {
+            "titel": "Rückblick, Mission und Thema: für mich sorgen",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – und hast du zuerst gefragt: Wer sagt das? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann das Thema nennen und den Rahmen setzen: Niemand muss erzählen, was er isst oder wann er schläft, und heute wird nichts bewertet.",
+            "sagen": [
+              "Kam euer Moment, und habt ihr gefragt: Wer sagt das? – Daumen hoch, Mitte oder runter?",
+              "Heute geht es um Schlaf, Essen, Bewegung und Stress – und wir gehen einkaufen und kochen; niemand muss etwas Privates erzählen."
+            ],
+            "tipp": "Der Satz zum Rahmen entlastet viele: Was es zu Hause zu essen gibt oder wie ruhig es abends ist, entscheiden Jugendliche oft nicht selbst."
+          },
+          {
+            "titel": "Vier Ecken, Stress-Rucksack und Menü-Wahl",
+            "dauer": 25,
+            "phase": "uebung",
+            "text": "Erst bewegt sich die Gruppe im Vier-Ecken-Spiel zu Schlaf, Handy und Stress, dann macht der Rucksack sichtbar, was Jugendliche tragen und was entlastet. Zum Schluss wählt die Gruppe ihr Menü für den Einkauf.",
+            "sagen": [
+              "Die Ecke sagt nichts über euch, nur über eure Meinung heute – ihr dürft auch umziehen, wenn euch jemand überzeugt.",
+              "Schlaf, Essen, Bewegung und Stress ziehen einander mit – wie eine Kette: Wer wenig schläft, ist gereizter, und das macht noch mehr Stress."
+            ],
+            "tabelle": {
+              "spalten": ["Frage", "A", "B"],
+              "zeilen": [
+                ["Der Wecker klingelt. Was machst du meistens?", "sofort aufstehen", "noch ein paarmal schlummern"],
+                ["Nachts liegt mein Handy …", "außer Reichweite", "direkt neben mir"],
+                ["Wenn mir alles zu viel wird, greife ich eher zu …", "Bewegung oder Musik", "Handy, Serie oder Konsole"],
+                ["Nach einer kurzen Nacht merke ich es vor allem …", "an meiner Laune", "an meiner Konzentration"],
+                ["Beim Essen ist mir wichtiger …", "Geschmack", "dass es mir guttut"],
+                ["Wenn es mir schlecht geht, brauche ich eher …", "Menschen um mich", "Ruhe für mich allein"]
+              ]
+            },
+            "punkte": [
+              "Übung (9 Min.): Vier Ecken – Die Schilder A, B, „Weiß nicht“ und „Kommt drauf an“ hängen in den Ecken; die Leitung liest die sechs Fragen der Tabelle vor, alle gehen in ihre Ecke, und wer mag, sagt in einem Satz, warum.",
+              "Übung (8 Min.): Stress-Rucksack und Aufgabe 1 – Für jede Belastung, die Jugendliche in diesem Alter haben, kommt ein Buch oder eine volle Flasche in den Rucksack, eine Person trägt eine Runde, dann kommt für jede Idee, die entlastet, etwas heraus; zum Schluss trägt jede Person ihre eigene Tabelle ein, allgemein genügt.",
+              "Übung (8 Min.): Menü-Wahl – Aus drei Menükarten, die zu Allergien und Essensregeln passen, wählt die Gruppe ein Gericht, schreibt die Einkaufsliste und verteilt die Zutaten – jede Person kauft zwei, mit dem Budget, das die Leitung festgelegt hat."
+            ],
+            "tipp": "Bei nur zwei Jugendlichen oder wenig Energie im Sitzen spielen: Jede Person hat zwei Karten, A und B, und deckt sie auf drei gleichzeitig auf; die Leitung spielt mit.",
+            "wennEsKippt": "Laufen alle den anderen hinterher, die nächste Frage mit geschlossenen Augen stellen: Alle zeigen in eine Ecke, erst dann Augen auf. Werden die Belastungen im Rucksack sehr persönlich (Trennung der Eltern, Krankheit, Geldsorgen), nicht vertiefen: allgemein notieren, etwa „Sorgen in der Familie“, und nach der Stunde ein Gespräch anbieten.",
+            "blatt": "a7-gesund-plan"
+          },
+          {
+            "titel": "Weg zum Laden",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Unterwegs gelten Treffpunkt, Signal und Sichtweite, und die Gruppe geht so schnell wie die langsamste Person. Alle schätzen ihre Zahl vor dem Losgehen und beim Ankommen; bei Dauerregen gilt die Regenvariante.",
+            "sagen": [
+              "Wir gehen so schnell wie die langsamste Person – und ihr schätzt unterwegs still eure Zahl."
+            ],
+            "tipp": "Wer mag, geht die letzten Meter mit offenen Ohren und zählt, wie viele verschiedene Geräusche er hört.",
+            "wennEsKippt": "Rennt jemand voraus oder trödelt, kurz stehen bleiben und das Tempo gemeinsam abmachen: Treffpunkt ist an jeder Ecke, an der die Leitung wartet."
+          },
+          {
+            "titel": "Einkaufen und Kochen",
+            "dauer": 40,
+            "phase": "uebung",
+            "text": "Geübt wird, für sich zu sorgen: planen, vergleichen, gemeinsam kochen – und merken, was Kochen mit der Zahl macht. Die Leitung bleibt im Laden in Sichtweite und steht beim Kochen neben dem Herd.",
+            "sagen": [
+              "Ihr habt ein Budget und eine Liste – findet für jede Zutat zwei Preise und entscheidet euch.",
+              "Zahl vor dem Kochen, Zahl nach dem Kochen – schaut selbst, was Schneiden, Rühren und Duft mit euch machen."
+            ],
+            "punkte": [
+              "Übung (12 Min.): Einkaufs-Challenge – Jede Person kauft ihre zwei Zutaten und vergleicht dabei zwei Preise, die Leitung bleibt in Sichtweite und zahlt zuletzt; Ziel ist, mit dem Budget auszukommen und etwas Frisches im Korb zu haben.",
+              "Übung (6 Min.): Rückweg und Küchenregeln – Zurück in der Küche Hände waschen, dann die Regeln der Karte lesen: Messer nur auf dem Brett, Heißes ansagen, Rohes und Gekochtes trennen, Stopp gilt immer.",
+              "Übung (18 Min.): Kochen – Jede Person übernimmt eine Station (Schneiden, Zubereiten, Tisch), schätzt die Zahl vor dem Start und nach dem Kochen und schreibt beide Zahlen auf einen Zettel; die Leitung steht beim Herd.",
+              "Übung (4 Min.): Teller-Challenge – Jede Person richtet ihren Teller so an, dass sie selbst Lust darauf hätte, und deckt mit den anderen den Tisch."
+            ],
+            "tipp": "Fürs Aufräumen eine Rolle vergeben (Spülchef) oder fünf Minuten nach der Stunde einplanen; wer nicht schneiden mag, übernimmt Tisch oder Rühren, denn jede Station zählt.",
+            "wennEsKippt": "Gibt es Streit um Rollen oder Zutaten, das Menü zurück auf die Karte legen: Jede Person darf eine Zutat bestimmen. Schneidet sich jemand oder wird es am Herd hektisch, sofort ruhig stoppen, Erste Hilfe leisten und die Gruppe dann an die Aufgabe zurückholen.",
+            "blatt": "a7-menue-karten"
+          },
+          {
+            "titel": "Skill: Der erste Bissen",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Alle sitzen am gedeckten Tisch; der erste Bissen wird zum Skill: anschauen, riechen, langsam kauen und 20 Sekunden nur schmecken (höchstens 5 Min., still höchstens 2 Min.). Beim Essen folgt der Abschluss (10 Min.): Gesund-Plan, Skills-Pass, Mission und eigener Moment.",
+            "sagen": [
+              "Schaut euer Essen an, als wäre es ein Foto – und dann nur der erste Bissen: langsam, 20 Sekunden schmecken.",
+              "Wer beim Essen noch im Stress ist, macht den ersten Bissen zur Pause – das geht auch in der Kantine."
+            ],
+            "punkte": [
+              "Die drei Schritte: Anschauen und riechen · den ersten Bissen langsam kauen und 20 Sekunden nur schmecken · schlucken, ausatmen und die Zahl neu schätzen.",
+              "Üben (5 Min.): Alle nehmen den ersten Bissen gemeinsam, die Leitung zählt die 20 Sekunden still mit; danach reihum: Was hast du geschmeckt, das du sonst nicht merkst?",
+              "Gesund-Plan (6 Min.): Beim Essen Aufgabe 2 und 3 ausfüllen – Bereich ankreuzen, kleinen Schritt als Wenn-dann-Satz schreiben, Zuversicht einkreisen, unter 7 den Schritt kleiner machen – und den Schritt in die grüne Zone des Ampelplans eintragen.",
+              "Skills-Pass, Mission und Moment (4 Min.): ein Satz zur Frage an der Tafel – Was ist mein kleiner Schritt, und wann fange ich an? –, der Stempel; die Mission vorlesen, der Wenn-Teil des Plans ist der Moment."
+            ],
+            "wennEsKippt": "Wird gekichert, kurz mitlachen und neu ansetzen; wem das Schmecken unangenehm ist, kaut still weiter und zählt nur die Sekunden. Wer keinen Hunger hat, probiert nur einen Bissen und macht beim Plan mit.",
+            "blatt": "a7-gesund-plan"
+          }
+        ],
+        "bruecke": "Nächstes Mal – am besten kurz vor einer Testphase – geht es darum, wie ihr ruhig durch Tests kommt.",
+        "mission": "Mach an drei Tagen deinen kleinen Schritt. Was merkst du danach?",
+        "hintergrund": "Schlaf, Essen und Bewegung senken die Anfälligkeit für starke Gefühle; das Skillstraining für Jugendliche behandelt sie als eigenen Baustein (Rathus & Miller, 2015). In der Pubertät verschiebt sich die innere Uhr nach hinten (Carskadon, 2011): Die Stunde sucht Stellschrauben statt Schuldige. Ein Wenn-dann-Plan wird deutlich häufiger umgesetzt als eine gute Absicht (Gollwitzer, 1999). Der erste Bissen übt Achtsamkeit mit allen Sinnen (Kabat-Zinn, 1990).",
+        "quellen": [
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte."
+        ],
+        "achtung": "Gesundheit berührt schnell Privates: keine Zahlen zu Gewicht oder Kalorien, keine Kommentare zu Körpern oder Tellern, keine „guten“ oder „schlechten“ Lebensmittel, keine Fragen nach dem Essen zu Hause. Messer und Herd nur mit der Leitung daneben; bei Regen kauft die Leitung vorher ein, und die Gruppe bereitet zu. Bei Hinweisen auf Hunger, Essstörung, Selbstverletzung oder Vernachlässigung nicht in der Gruppe vertiefen, ein Einzelgespräch führen und die zuständige Leitung (Responsable) informieren.",
+        "differenzierung": {
+          "leichter": "Beim Gesund-Plan genügt ein Schritt aus der Liste mit dem Satzanfang „Wenn es … Uhr ist, dann …“, und beim Kochen reicht eine Station, die gut gelingt.",
+          "schwerer": "Den Plan um einen zweiten Wenn-dann-Satz für das größte Hindernis ergänzen oder beim Einkauf das Menü so abwandeln, dass es mit weniger Budget auskommt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in und Brücke (8 Min.), Stress-Rucksack mit Menü-Wahl (10 Min.), gemeinsam eine kalte Mahlzeit aus mitgebrachten Zutaten zubereiten (17 Min.), Der erste Bissen mit Gesund-Plan, Skills-Pass und Mission (15 Min.). Vier Ecken, Weg und Einkauf entfallen und werden bei nächster Gelegenheit nachgeholt."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-gesund-plan",
+      "bereich": "skills",
+      "thema": "gesund",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "20 Min. und eine Woche",
+      "eldib": [],
+      "schlagworte": ["Gesundheit", "Schlaf", "Stress-Rucksack", "kleiner Schritt", "Wenn-dann-Plan"],
+      "bild": "icon:backpack",
+      "kurs": ["a7-e27"],
+      "de": {
+        "titel": "Mein Gesund-Plan",
+        "untertitel": "Was drückt, was entlastet – und ein kleiner Schritt",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Schlaf, Essen, Bewegung und Stress ziehen einander mit. In der Pubertät wirst du abends später müde – das ist normal. Ein kleiner Schritt kann die Kette drehen."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Pack deinen Rucksack: Was macht ihn schwer, was macht ihn leichter?",
+            "hinweis": "Allgemein reicht – du musst nichts Privates schreiben.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "tabelle",
+            "spalten": ["Das macht schwer", "Das macht leichter"],
+            "zeilen": 3,
+            "beispiel": ["Test morgen, kaum geschlafen", "früh ins Bett, vorher Handy weg"]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Kreuze einen Bereich an und schreib einen kleinen Schritt als Wenn-dann-Satz.",
+            "hinweis": "Klein heißt: kostet nichts, höchstens zehn Minuten.",
+            "symbole": ["ankreuzen", "schreiben"]
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 3,
+            "items": ["Schlaf", "Bewegung", "Essen und Trinken", "Handy am Abend", "Pausen und Ruhe", "Menschen, die guttun"]
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 1,
+            "beispiele": [
+              { "wenn": "Wenn es 22 Uhr ist,", "dann": "lege ich das Handy weit weg vom Bett." }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wie sicher bist du, dass du ihn schaffst? Kreis eine Zahl ein.",
+            "hinweis": "Unter 7? Mach den Schritt kleiner.",
+            "symbole": ["einkreisen"]
+          },
+          {
+            "art": "skala",
+            "von": "gar nicht sicher",
+            "bis": "ganz sicher",
+            "stufen": 11
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Niemand bewertet, wie du schläfst, isst oder dich bewegst."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen sehen im Rucksack, was sie belastet und entlastet, wählen einen Bereich, planen einen kleinen, kostenlosen Schritt als Wenn-dann-Satz und schätzen ihre Zuversicht ein.",
+          "ablauf": [
+            "Einheit 27, Schritt 3: Aufgabe 1 nach dem Rucksack-Spiel, allgemein ausgefüllt; nichts wird vorgelesen.",
+            "Schritt 6, beim Essen: Aufgabe 2 – Bereich ankreuzen, Wenn-dann-Satz schreiben –, dann Aufgabe 3 mit der Zuversicht; unter 7 wird der Schritt kleiner.",
+            "Den Schritt in die grüne Zone des Ampelplans übertragen (Skills-Koffer, Einheit 14); abgehakt wird ohne Kontrolle, nachgefragt mit dem Daumen."
+          ],
+          "hintergrund": "Vorsätze scheitern selten am Wissen, sondern an der Umsetzung: Wenn-dann-Pläne, die festlegen, wann und wo gehandelt wird, werden deutlich häufiger umgesetzt als allgemeine Absichten (Gollwitzer, 1999). Schlaf, Essen und Bewegung gelten im Skillstraining für Jugendliche als eigener Baustein gegen starke Gefühle (Rathus & Miller, 2015); in der Pubertät verschiebt sich die innere Uhr nach hinten (Carskadon, 2011), darum bekommt der Schlaf keine Moral.",
+          "quellen": [
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+            "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647."
+          ],
+          "achtung": "Nicht einsammeln, nicht vorlesen lassen. Ziele wie „abnehmen“ behutsam umlenken; bei Hinweisen auf Hunger, Essstörung oder Vernachlässigung nach der Stunde ansprechen und nach dem Schutzkonzept handeln.",
+          "material": "Heft, Stifte, Skills-Koffer aus Einheit 14"
+        }
+      }
+    },
+    {
+      "id": "a7-menue-karten",
+      "bereich": "skills",
+      "thema": "gesund",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "10 Min. und Küche",
+      "eldib": [],
+      "schlagworte": ["Menükarten", "Kochen", "Einkaufen", "Küchenregeln"],
+      "bild": "icon:tools-kitchen-2",
+      "kurs": ["a7-e27"],
+      "de": {
+        "titel": "Menükarten",
+        "untertitel": "Kopiervorlage: drei einfache Gerichte und die Küchenregeln",
+        "bausteine": [
+          {
+            "art": "text",
+            "klein": true,
+            "text": "Einmal kopieren und ausschneiden. Alle drei Gerichte sind vegetarisch und für vier Personen gedacht; Allergien, Unverträglichkeiten und Essensregeln vorher prüfen und die Karten danach auswählen. Die Gruppe wählt ein Gericht, die Leitung legt das Budget fest."
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 150,
+            "karten": [
+              { "titel": "Gemüse-Wraps (kalt)", "text": "Zutaten: 4 Tortillas, Hummus oder Frischkäse, 1 Gurke, 2 Tomaten, 1 Paprika, Mais aus der Dose.\nSo geht’s: Gemüse waschen und in Streifen schneiden. Tortillas bestreichen, belegen und einrollen." },
+              { "titel": "Nudeln mit Tomatensauce", "text": "Zutaten: 300 g Nudeln, 1 Dose gehackte Tomaten, 1 Zwiebel, 1 Zucchini oder Paprika, Öl, Salz.\nSo geht’s: Wasser im Wasserkocher erhitzen, Nudeln kochen. Zwiebel und Gemüse klein schneiden und braten, Tomaten dazu, zehn Minuten köcheln lassen." },
+              { "titel": "Quesadillas", "text": "Zutaten: 4 Tortillas, geriebener Käse, Mais oder Bohnen aus der Dose, 1 Paprika.\nSo geht’s: Paprika klein schneiden. Eine Hälfte belegen, zuklappen und in der Pfanne von beiden Seiten braun braten." },
+              { "titel": "Küchenregeln", "text": "1 Hände waschen, bevor es losgeht.\n2 Messer nur auf dem Brett, nie in der Luft.\n3 Heißes ansagen: „Achtung, heiß!“\n4 Rohes und Gekochtes trennen.\n5 Stopp gilt immer." }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Drei einfache, vegetarische Gerichte für den Einkauf und das gemeinsame Kochen, dazu die Küchenregeln: Die Gruppe wählt, plant ihre Liste und kocht sicher.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; Allergien, Unverträglichkeiten und Essensregeln vorher klären und nur passende Gerichte auslegen.",
+            "Einheit 27, Schritt 3: Die Gruppe wählt ein Gericht und schreibt die Einkaufsliste; Schritt 5: Die Küchenregeln lesen, bevor das erste Messer benutzt wird.",
+            "Die Karte „Küchenregeln“ hängt während des Kochens sichtbar in der Küche."
+          ],
+          "hintergrund": "Die Küchenregeln folgen den fünf Schlüsseln der WHO für sicheres Essen: sauber halten, Rohes und Gekochtes trennen, gut durchgaren, richtig lagern, sichere Zutaten verwenden (WHO, 2006). Wer selbst plant, einkauft und kocht, übt, für sich zu sorgen; ein kleiner, gemeinsamer Plan wird eher umgesetzt als ein großer Vorsatz (Gollwitzer, 1999).",
+          "quellen": [
+            "World Health Organization (2006). Five Keys to Safer Food Manual. Genf: WHO.",
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}

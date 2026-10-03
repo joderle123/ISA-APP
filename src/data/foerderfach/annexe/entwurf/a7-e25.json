@@ -1,0 +1,326 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e25",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "a7-handy-check"
+      ],
+      "vorlagen": [
+        "a7-handy-karten"
+      ],
+      "woerter": [
+        { "de": "die Bildschirmzeit", "fr": "die Bildschirmzeit" },
+        { "de": "der Algorithmus", "fr": "der Algorithmus" },
+        { "de": "die Benachrichtigung", "fr": "die Benachrichtigung" },
+        { "de": "schätzen", "fr": "schätzen" },
+        { "de": "der Trick", "fr": "der Trick" }
+      ],
+      "de": {
+        "titel": "Social Media und ich",
+        "kurz": "Die Gruppe schätzt ihre Bildschirmzeit und sieht nach, deckt die Tricks der Apps auf, inszeniert ein perfektes Foto, entlarvt es und macht einen eigenen Handy-Plan – ohne erhobenen Zeigefinger.",
+        "ziele": [
+          "vergleichen geschätzte und echte Bildschirmzeit und erkennen die Tricks, mit denen Apps Aufmerksamkeit binden",
+          "inszenieren ein perfektes Foto und erklären, was ein Bild zeigt und was es verschweigt",
+          "machen einen kleinen Handy-Plan mit eigenem Moment und üben drei Atemzüge vor dem Griff zum Handy"
+        ],
+        "material": [
+          "Gefühlsrad, Anspannungsskala",
+          "Handy oder Tablet der Annexe (Kamera)",
+          "Handy-Karten (Vorlage), Heft-Blatt",
+          "Imbiss und Requisiten (Tasse, Buch)",
+          "Zettel, Schachtel, Stifte",
+          "Skills-Pass, Stempel"
+        ],
+        "vorbereitung": [
+          "Hausregel zum Handy klären: Dürfen die Handys für zwei Übungen heraus? Wer keins hat, schätzt nur.",
+          "Eigene Bildschirmzeit nachsehen: Die Leitung nennt ihre Zahl als Erste.",
+          "Imbiss so anrichten, dass er vor dem Essen fotografiert werden kann; Platz mit gutem Licht suchen.",
+          "Handy-Karten schneiden; Fotos bleiben auf dem Gerät der Annexe und werden am Ende gelöscht."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Emoji, Gefühlswort und Zahl" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und neues Kapitel" },
+          { "min": "15–45", "phase": "uebung", "titel": "Stimmt-Linie, Handy-Check und Tricks der Apps" },
+          { "min": "45–50", "phase": "pause", "titel": "Imbiss-Pause mit Foto-Versuch" },
+          { "min": "50–85", "phase": "uebung", "titel": "Perfektes Foto, Kommentare und Handy-Plan" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Drei Atemzüge vor dem Handy" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Emoji, Gefühlswort und Zahl",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Jede Person malt ein Emoji auf einen Zettel, das zu ihrer Stimmung passt, nennt dazu ein Wort vom Gefühlsrad und ihre Anspannung von 0 bis 100; die Leitung macht mit und beginnt. Danach kurz auf die Zettel schauen: Ein Emoji ist schnell gemalt – aber erst das Wort dazu sagt, was wirklich gemeint ist.",
+            "sagen": [
+              "Ein Emoji, ein Wort vom Rad, eine Zahl.",
+              "Wie oft schickt ihr ein Emoji statt eines Satzes – und wie oft wird es falsch verstanden?"
+            ],
+            "tipp": "Die zweite Frage knüpft an Einheit 18 an: Online fehlen Stimme und Gesicht, darum wird dort so viel missverstanden."
+          },
+          {
+            "titel": "Rückblick, Mission und neues Kapitel",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – hast du bei etwas Kleinem um Hilfe gebeten, und wie war es? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann das neue Kapitel „Digitale Welt“ öffnen und die Haltung klarstellen: Hier redet niemand das Handy schlecht – gefragt wird, wann es guttut und wann nicht.",
+            "sagen": [
+              "Kam euer Moment, und wie war es, um Hilfe zu bitten: Daumen hoch, Mitte oder runter?",
+              "Das Handy ist nicht der Feind – die Frage ist heute: Wann tut es euch gut, und wann eher nicht?"
+            ],
+            "punkte": [
+              "Zahlen, Apps und Chats bleiben bei euch – niemand muss etwas zeigen.",
+              "Nachsehen nur, wenn es die Regeln der Annexe erlauben und wer mag.",
+              "Wer kein Handy hat, schätzt nur oder nimmt das Beispiel auf dem Blatt."
+            ],
+            "wennEsKippt": "Fällt beim Erzählen ein Name oder eine laufende Geschichte aus einem Chat, freundlich stoppen: Danke – darüber reden wir nach der Stunde. Geht es um Mobbing im Netz, am selben Tag die Responsable informieren."
+          },
+          {
+            "titel": "Stimmt-Linie, Handy-Check und Tricks der Apps",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Zuerst ein Bewegungsquiz, dann der Handy-Check: schätzen, nachsehen, fühlen. Zum Schluss deckt die Gruppe die Tricks auf, mit denen Apps Aufmerksamkeit binden, und überlegt, was jede Person dagegen tun kann.",
+            "sagen": [
+              "Linke Wand heißt stimmt, rechte Wand heißt stimmt nicht – wer unsicher ist, entscheidet trotzdem.",
+              "Diese Tricks haben Erwachsene gebaut, die genau wissen, wie euer Gehirn reagiert – ob es bei euch klappt, entscheidet ihr."
+            ],
+            "punkte": [
+              "Spiel (8 Min.): Stimmt-Linie – Die Leitung liest die sechs Aussagen der Tabelle vor, alle laufen zur Wand „stimmt“ oder „stimmt nicht“, nach jeder Aussage wird die Auflösung kurz erklärt; Punkte zählen ist erlaubt.",
+              "Challenge (9 Min.): Schätzen und nachsehen – Jede Person schreibt auf dem Blatt ihre tägliche Bildschirmzeit, sieht in den Einstellungen nach und zeigt mit der flachen Hand, ob die echte Zeit höher, gleich oder niedriger war (Aufgabe 1); die Zahlen bleiben privat, die Leitung nennt ihre zuerst.",
+              "Übung (6 Min.): Akku-Check – Alle tippen auf dem Gefühlsrad das Wort, das nach 30 Minuten Scrollen meistens kommt, und notieren auf dem Blatt, was online auflädt und was Energie kostet (Aufgabe 2).",
+              "Übung (7 Min.): Tricks aufdecken – Die vier Trick-Karten aus der Vorlage nacheinander aufdecken und bei jedem fragen: Wozu ist das so gebaut, wer verdient daran, und was kann ich tun?"
+            ],
+            "tabelle": {
+              "spalten": ["Aussage", "Stimmt?", "Kurz erklärt"],
+              "zeilen": [
+                ["Was ich in einer privaten Gruppe schicke, bleibt privat.", "nein", "Jeder Screenshot kann es weitertragen – auch Jahre später."],
+                ["Apps entscheiden mit, was ich als Nächstes sehe.", "ja", "Ein Algorithmus zeigt mehr von dem, wobei ich hängen bleibe."],
+                ["Kostenlose Apps verdienen kein Geld mit mir.", "nein", "Sie verdienen mit Werbung – und damit mit meiner Zeit und meinen Daten."],
+                ["Ein lustiges Foto von anderen darf ich einfach posten.", "nein", "Vorher fragen: Jede Person entscheidet über Bilder von sich selbst."],
+                ["Viele Bilder im Netz sind bearbeitet oder oft wiederholt aufgenommen.", "ja", "Licht, Winkel, Filter und viele Versuche gehören oft dazu."],
+                ["Social Media macht alle Jugendlichen unglücklich.", "nein", "Es kommt darauf an, was, wie lange und in welcher Situation man es nutzt."]
+              ]
+            },
+            "tipp": "Die Leitung nennt ihre eigene Zahl als Erste: Das nimmt dem Thema die Schärfe und zeigt, dass es nicht nur um Jugendliche geht.",
+            "wennEsKippt": "Zieht jemand andere mit ihrer Zahl auf („Sieben Stunden, du Süchtiger“), deutlich stoppen: Die Zahlen gehören jeder Person selbst, hier wird nichts verglichen. Wer kein Handy hat oder die Zeit nicht sehen kann, schätzt einen gewöhnlichen Tag – der Vergleich mit dem Gefühl danach funktioniert auch so.",
+            "blatt": "a7-handy-check"
+          },
+          {
+            "titel": "Imbiss-Pause mit Foto-Versuch",
+            "dauer": 5,
+            "phase": "pause",
+            "text": "Während des Imbisses fotografiert jede Person reihum eine Minute lang den Imbiss so perfekt wie möglich: umstellen, Licht suchen, Winkel wechseln, Filter probieren; die anderen zählen die Versuche. Danach wird gegessen, das Fenster geht auf, und das Thema ruht.",
+            "sagen": [
+              "Reihum eine Minute pro Person: Macht das perfekteste Foto vom Imbiss – und die anderen zählen eure Versuche."
+            ],
+            "tipp": "Keine Gesichter fotografieren; die Fotos bleiben auf dem Gerät der Annexe und werden am Ende gemeinsam gelöscht."
+          },
+          {
+            "titel": "Perfektes Foto, Kommentare und Handy-Plan",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Zuerst wird das Imbiss-Foto neben ein schnelles Foto vom echten, halb leer gegessenen Tisch gelegt: Was zeigt ein Bild, was verschweigt es? Dann inszeniert die Gruppe perfekte Fotos mit Requisiten, schreibt positive Kommentare füreinander und macht ihre Handy-Pläne.",
+            "sagen": [
+              "Wie viele Versuche hat es gebraucht – und was sieht man auf dem Bild nicht?",
+              "Wenn schon ein Imbisstisch so viel Arbeit macht – was steckt dann hinter einem perfekten Tag im Netz?"
+            ],
+            "punkte": [
+              "Übung (5 Min.): Vorher-nachher – Das perfekte Imbiss-Foto neben ein schnelles Foto vom halb leer gegessenen Tisch legen und besprechen, was ein Bild zeigt und was es verschweigt: Licht, Winkel, Filter, viele Versuche.",
+              "Foto (11 Min.): Foto-Studio – Jede Person zieht eine Foto-Karte („Der perfekte Lernplatz“), die Gruppe inszeniert sie mit Requisiten: eine Person fotografiert, eine stylt, eine ist für die Requisiten zuständig, nach drei Minuten wird gewechselt; danach wird jedes perfekte Foto neben ein Foto vom echten Zustand gelegt.",
+              "Kreatives (8 Min.): Positive Kommentare – Jede Person schreibt für jede andere (und die Leitung) einen ehrlichen, konkreten Kommentar ohne Aussehen auf einen Zettel, beschriftet ihn außen mit dem Namen und legt ihn ohne Absender in die Schachtel; alle lesen still, dann: Wie fühlt sich das an – und warum sieht man online so wenig davon?",
+              "Rollenspiel (5 Min.): Warum antwortest du nicht? – Die Leitung spielt eine Freundin, die genervt ist, weil nicht sofort geantwortet wurde, und jede Person übt einen Satz, der ruhig bleibt und eine Grenze setzt („Ich war nicht am Handy – ich melde mich heute Abend“).",
+              "Aufgabe 3 (6 Min.): Handy-Plan – allein eine kleine Änderung als Wenn-dann-Satz schreiben, der Wenn-Teil ist der Moment der Mission; zu zweit prüfen, ob der Plan klein genug für morgen ist."
+            ],
+            "tipp": "Die Leitung schreibt für alle einen Zettel und sieht die Zettel beim Verteilen kurz durch – das vorher offen ansagen; so bekommt jede Person mindestens einen Kommentar, der sicher ankommt.",
+            "wennEsKippt": "Fällt beim Durchsehen ein abwertender Zettel auf, wird er nicht verteilt und nicht öffentlich gemacht; die Leitung spricht die Sache später unter vier Augen an. Kippt das Gespräch in Spott über einzelne Influencer, zurücklenken: Es geht nicht darum, wer etwas postet, sondern darum, was Bilder mit uns machen, wenn wir uns vergleichen.",
+            "blatt": "a7-handy-karten"
+          },
+          {
+            "titel": "Skill: Drei Atemzüge vor dem Handy",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Alle legen ihr Handy mit dem Display nach unten vor sich; die Leitung führt in drei Schritten an: den Impuls bemerken, drei ruhige Atemzüge, fragen: Was will ich gerade? (höchstens 5 Min., still höchstens 3 Min.). Danach der Abschluss (10 Min.): Skills-Pass, Mission und eigener Moment.",
+            "sagen": [
+              "Bemerkt einfach, ob eure Hand zum Handy will – ihr müsst nichts tun, nur hinschauen.",
+              "Drei Atemzüge und eine Frage: Was will ich gerade wirklich – Kontakt, Ablenkung oder Ruhe?"
+            ],
+            "punkte": [
+              "Skill (5 Min.): Das Handy der Leitung liegt vorn und vibriert nach einer Minute; alle merken, wohin Blick und Hände wollen, machen drei ruhige Atemzüge mit etwas längerem Ausatmen und beantworten still die Frage: Was will ich gerade wirklich?",
+              "Skills-Pass (3 Min.): ein Satz zur Frage – Was nehme ich über mich und mein Handy mit? Wer mag, schreibt den Wenn-dann-Satz hinein; dann der Stempel.",
+              "Mission und Moment (5 Min.): die Mission vorlesen; auf drei zeigen alle ihren Moment – ein Finger abends im Bett, zwei Hausaufgaben, drei Bus oder Pause – und schreiben ihn in die Spalte „Mein Moment: Wenn …“; wer den Handy-Plan nimmt, übernimmt den Wenn-Teil.",
+              "Aufräumen (2 Min.): alle Fotos auf dem Gerät gemeinsam löschen, auf den Hilfe-Kasten des Blatts zeigen (BEE SECURE Helpline 8002 1234) und den Ausblick geben."
+            ],
+            "wennEsKippt": "Lacht die Gruppe über das vibrierende Handy, mitlachen und weitermachen – genau dieser Zug ist das Thema. Greift jemand zum eigenen Handy, nicht schimpfen, sondern freundlich fragen, ob er die drei Schritte einmal ausprobieren mag."
+          }
+        ],
+        "bruecke": "Nächstes Mal prüft ihr, was echt ist und was gefälscht: Ihr spielt Echt oder fake, seht Ausschnitte aus einer Doku und prüft Beiträge mit einer Checkliste.",
+        "mission": "Probiere deinen Handy-Plan – oder atme dreimal, bevor du zum Handy greifst.",
+        "hintergrund": "Bildschirmzeit hängt nur sehr schwach mit dem Wohlbefinden Jugendlicher zusammen (Orben & Przybylski, 2019); entscheidend sind Inhalt, Zeitpunkt und das Gefühl danach. Darum setzt die Einheit auf Selbstbeobachtung statt Zahlenvergleich und auf Gespräche über Inhalte und Beziehungen, nicht nur über Minuten (Livingstone & Blum-Ross, 2020). Schon zehn Minuten in einem Netzwerk drückten die Stimmung junger Frauen, die sich gern mit dem Aussehen anderer vergleichen (Fardouly et al., 2015) – deshalb der Blick hinter das perfekte Foto.",
+        "quellen": [
+          "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+          "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45."
+        ],
+        "achtung": "Bildschirmzeiten, Apps und Chats sind privat: keine Handys einsammeln, keine Zahlen vergleichen, niemanden bloßstellen; wer kein Handy hat oder nicht nachsehen mag, schätzt nur. Beim Foto-Experiment keine Gesichter fotografieren und die Bilder am Ende gemeinsam löschen; Aussehen und Vergleiche können viel auslösen: Körper werden nicht kommentiert, auch nicht als Lob. Bei Hinweisen auf Cybermobbing, Erpressung mit Bildern, Kontakte zu Fremden, Essstörungen oder Selbstverletzung nicht in der Gruppe nachfragen, sondern ein Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren und bei Gefährdung nach dem internen Schutzkonzept handeln; Beratung: BEE SECURE Helpline 8002 1234.",
+        "differenzierung": {
+          "leichter": "Das Blatt kann im Tandem ausgefüllt werden, statt Stunden reicht ein Wort (mehr, gleich, weniger), und wer noch wenig Deutsch spricht, schreibt Plan und Kommentar in der eigenen Sprache.",
+          "schwerer": "Drei Tipps formulieren, wie man eine Pause von Serien und Flammen macht, ohne Freunde zu verärgern, oder ein Foto so inszenieren, dass man den Trick erkennt, und ihn der Gruppe erklären."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Stimmt-Linie und Handy-Check mit Aufgabe 1 (15 Min.), Foto-Studio mit Vorher-nachher (15 Min.), Handy-Plan, Skill und Mission (15 Min.). Imbiss-Pause, positive Kommentare und Rollenspiel entfallen."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-handy-check",
+      "bereich": "skills",
+      "thema": "digital",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Social Media", "Bildschirmzeit", "Handy-Plan", "Wenn-dann-Plan"],
+      "bild": "icon:device-mobile",
+      "kurs": ["a7-e25"],
+      "de": {
+        "titel": "Mein Handy-Check",
+        "untertitel": "Ehrlich zu mir selbst – ohne schlechtes Gewissen",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Erst schätzen, dann nachsehen. Die Zahlen bleiben bei dir.",
+            "hinweis": "Die echte Zeit steht in den Einstellungen, meist unter „Bildschirmzeit“ oder „Digital Wellbeing“.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "linien": 1,
+            "items": [
+              "Geschätzt pro Tag: …",
+              "Echt pro Tag: …",
+              "Die App, die am meisten Zeit frisst: …"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Was lädt dich online auf – und was kostet dich Energie?",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "batterie",
+            "laden": "Online lädt mich auf",
+            "leeren": "Online kostet mich Energie",
+            "linien": 2
+          },
+          {
+            "art": "aufgabe",
+            "text": "Mein Plan: eine kleine Änderung als Wenn-dann-Satz.",
+            "hinweis": "Lieber eine Änderung, die hält, als drei, die am Mittwoch vergessen sind.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Wenn ich abends ins Bett gehe,",
+                "dann": "lege ich das Handy auf den Schreibtisch und stelle dort den Wecker."
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Der Feed hört nie auf, Videos starten von selbst, rote Punkte locken zurück. Wer das weiß, entscheidet bewusster."
+          },
+          {
+            "art": "notfall",
+            "text": "Ärger im Netz? Hol dir Hilfe – kostenlos und vertraulich.",
+            "eintraege": [
+              { "name": "BEE SECURE Helpline (Internet, Cybermobbing)", "nummer": "8002 1234" },
+              { "name": "Kanner- a Jugendtelefon (anonym, kostenlos)", "nummer": "116 111" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen vergleichen geschätzte und echte Bildschirmzeit, halten fest, was online auflädt und was Energie kostet, und schreiben einen kleinen Handy-Plan als Wenn-dann-Satz.",
+          "ablauf": [
+            "Einheit 25, Teil 1: Aufgabe 1 nach dem Quiz – schätzen, in den Einstellungen nachsehen; wer kein Handy hat, schätzt nur. Aufgabe 2 nach dem Akku-Check.",
+            "Teil 2: Aufgabe 3 allein nach dem Foto-Studio; der Wenn-Teil ist der Moment der Mission, zu zweit prüfen, ob der Plan klein genug ist.",
+            "Auf den Hilfe-Kasten zeigen; die Zahlen werden nicht verglichen, das Blatt wird nicht eingesammelt."
+          ],
+          "hintergrund": "Bildschirmzeit hängt nur sehr schwach mit dem Wohlbefinden Jugendlicher zusammen (Orben & Przybylski, 2019); deshalb Selbstbeobachtung statt Zahlenvergleich. Gespräche über Inhalte und Beziehungen helfen mehr als das Zählen von Minuten (Livingstone & Blum-Ross, 2020).",
+          "quellen": [
+            "Orben, A. & Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. Nature Human Behaviour, 3(2), 173–182.",
+            "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press."
+          ],
+          "achtung": "Bildschirmzeiten, Apps und Chats sind privat: nichts vergleichen, niemanden bloßstellen. Bei Hinweisen auf Cybermobbing oder Erpressung mit Bildern ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
+          "material": "Heft, Stifte, Handy zum Nachsehen (freiwillig)"
+        }
+      }
+    },
+    {
+      "id": "a7-handy-karten",
+      "bereich": "skills",
+      "thema": "digital",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "25 Min.",
+      "eldib": [],
+      "schlagworte": ["Trick-Karten", "Foto-Karten", "perfektes Foto", "Apps"],
+      "bild": "icon:camera",
+      "kurs": ["a7-e25"],
+      "de": {
+        "titel": "Trick-Karten und Foto-Karten",
+        "untertitel": "Kopiervorlage: vier Tricks der Apps und sechs Foto-Aufträge zum Ausschneiden",
+        "bausteine": [
+          {
+            "art": "text",
+            "klein": true,
+            "text": "Einmal kopieren und ausschneiden. Die Trick-Karten werden aufgedeckt und besprochen, mit den Foto-Karten inszeniert die Gruppe perfekte Fotos und legt danach ein Foto vom echten Zustand daneben. Keine Gesichter fotografieren; die Fotos am Ende gemeinsam löschen."
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 100,
+            "karten": [
+              { "titel": "Der endlose Feed", "text": "Es gibt kein Ende, an dem man aufhört.\nTipp: Vorher ein Ende festlegen." },
+              { "titel": "Autoplay", "text": "Das nächste Video startet von selbst.\nTipp: Autoplay ausschalten." },
+              { "titel": "Rote Punkte und Push", "text": "Sie holen dich zurück in die App.\nTipp: Benachrichtigungen bis auf die wichtigen ausschalten." },
+              { "titel": "Serien und Flammen", "text": "Wer einen Tag auslässt, verliert die Serie.\nTipp: Mit Freunden abmachen: Eine Pause ist kein Streit." }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 84,
+            "karten": [
+              { "titel": "Der perfekte Lernplatz", "text": "Stift, Heft, Pflanze, Licht – und dahinter das Chaos." },
+              { "titel": "Sonntagmorgen", "text": "Eine Tasse, ein Buch, ein Sonnenstrahl." },
+              { "titel": "Frisch gekocht", "text": "Ein Teller, schön angerichtet – aus der Pfanne vor dem Foto." },
+              { "titel": "Sneaker des Tages", "text": "Die Schuhe im perfekten Winkel, ohne die Schmutzecke." },
+              { "titel": "Die Aussicht", "text": "Ein Blick aus dem Fenster, der nach Urlaub aussieht." },
+              { "titel": "Mein Sportmoment", "text": "Ball, Schuhe, Sonne – und niemand sieht die Pausen." }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Vier Tricks der Apps zum Aufdecken und sechs Foto-Aufträge, an denen die Jugendlichen erleben, wie viel Arbeit hinter einem perfekten Bild steckt.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; Fotos nur von Dingen, nie von Gesichtern, und am Ende gemeinsam löschen.",
+            "Einheit 25, Teil 1: Die vier Trick-Karten nacheinander aufdecken und fragen: Wozu ist das so gebaut, wer verdient daran, was kann ich tun?",
+            "Teil 2: Jede Person zieht eine Foto-Karte; die Gruppe inszeniert sie in drei Rollen (Foto, Styling, Requisiten) und legt das Foto vom echten Zustand daneben."
+          ],
+          "hintergrund": "Schon zehn Minuten in einem sozialen Netzwerk drückten die Stimmung junger Frauen, die sich gern mit dem Aussehen anderer vergleichen (Fardouly et al., 2015). Wer sieht, wie ein perfektes Bild entsteht, vergleicht sich mit Abstand.",
+          "quellen": [
+            "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45."
+          ],
+          "material": "Festes Papier, Schere, Requisiten"
+        }
+      }
+    }
+  ]
+}

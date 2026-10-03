@@ -1,0 +1,650 @@
+{
+  "7e": [
+    {
+      "id": "a7-k-54321",
+      "bild": "icon:eye",
+      "einheit": "a7-e01",
+      "de": {
+        "name": "5-4-3-2-1",
+        "wann": "Wenn der Kopf voll ist oder alles zu viel wird",
+        "schritte": [
+          "Nenne still 5 Dinge, die du siehst, und 4, die du hörst.",
+          "Dann 3 Dinge, die du spürst, 2, die du riechst, 1, das du schmeckst.",
+          "Atme langsam aus. Merkst du einen Unterschied?"
+        ]
+      },
+      "fr": {
+        "name": "5-4-3-2-1",
+        "wann": "Wenn der Kopf voll ist oder alles zu viel wird",
+        "schritte": [
+          "Nenne still 5 Dinge, die du siehst, und 4, die du hörst.",
+          "Dann 3 Dinge, die du spürst, 2, die du riechst, 1, das du schmeckst.",
+          "Atme langsam aus. Merkst du einen Unterschied?"
+        ]
+      }
+    },
+    {
+      "id": "a7-k-kompliment",
+      "bild": "icon:thumb-up",
+      "einheit": "a7-e02",
+      "de": {
+        "name": "Kompliment annehmen",
+        "wann": "Wenn dir jemand etwas Nettes sagt und du es abwehren willst",
+        "schritte": [
+          "Schau kurz hin oder nick – lass das Kompliment ankommen.",
+          "Sag nur: Danke. Kein „Ach, war doch nichts“.",
+          "Lass es einen Moment wirken und spür nach, wie es sich anfühlt."
+        ]
+      },
+      "fr": {
+        "name": "Kompliment annehmen",
+        "wann": "Wenn dir jemand etwas Nettes sagt und du es abwehren willst",
+        "schritte": [
+          "Schau kurz hin oder nick – lass das Kompliment ankommen.",
+          "Sag nur: Danke. Kein „Ach, war doch nichts“.",
+          "Lass es einen Moment wirken und spür nach, wie es sich anfühlt."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-gemeinsam-atmen",
+      "bild": "icon:wind",
+      "einheit": "a7-e03",
+      "de": {
+        "name": "Gemeinsam atmen",
+        "wann": "Wenn die Gruppe unruhig ist oder ihr zusammen runterkommen wollt",
+        "schritte": [
+          "Setzt euch bequem hin, beide Füße auf den Boden.",
+          "Vier Sekunden einatmen, vier Sekunden ausatmen – alle im selben Takt.",
+          "Eine Minute so atmen, dann nachspüren: Wie fühlt sich der Körper an?"
+        ]
+      },
+      "fr": {
+        "name": "Gemeinsam atmen",
+        "wann": "Wenn die Gruppe unruhig ist oder ihr zusammen runterkommen wollt",
+        "schritte": [
+          "Setzt euch bequem hin, beide Füße auf den Boden.",
+          "Vier Sekunden einatmen, vier Sekunden ausatmen – alle im selben Takt.",
+          "Eine Minute so atmen, dann nachspüren: Wie fühlt sich der Körper an?"
+        ]
+      }
+    },
+    {
+      "id": "a7-k-478",
+      "bild": "icon:moon-stars",
+      "einheit": "a7-e04",
+      "de": {
+        "name": "4-7-8-Atmung",
+        "wann": "Wenn du unruhig bist oder abends nicht runterkommst",
+        "schritte": [
+          "Durch die Nase einatmen und bis vier zählen.",
+          "Luft anhalten und bis sieben zählen – oder kürzer, wie es passt.",
+          "Langsam durch den Mund ausatmen, bis acht zählen. Viermal."
+        ]
+      },
+      "fr": {
+        "name": "4-7-8-Atmung",
+        "wann": "Wenn du unruhig bist oder abends nicht runterkommst",
+        "schritte": [
+          "Durch die Nase einatmen und bis vier zählen.",
+          "Luft anhalten und bis sieben zählen – oder kürzer, wie es passt.",
+          "Langsam durch den Mund ausatmen, bis acht zählen. Viermal."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-dankbarkeit",
+      "bild": "icon:sparkles",
+      "einheit": "a7-e05",
+      "de": {
+        "name": "Dankbarkeitsblitz",
+        "wann": "An Tagen, an denen der Kopf nur das Schlechte sieht",
+        "schritte": [
+          "Bleib stehen oder setz dich, Augen offen oder auf den Boden gerichtet.",
+          "Denk zwanzig Sekunden an eine Sache, für die du gerade dankbar bist.",
+          "Klein reicht: ein Lied, ein Essen, ein Mensch. Atme dabei ruhig."
+        ]
+      },
+      "fr": {
+        "name": "Dankbarkeitsblitz",
+        "wann": "An Tagen, an denen der Kopf nur das Schlechte sieht",
+        "schritte": [
+          "Bleib stehen oder setz dich, Augen offen oder auf den Boden gerichtet.",
+          "Denk zwanzig Sekunden an eine Sache, für die du gerade dankbar bist.",
+          "Klein reicht: ein Lied, ein Essen, ein Mensch. Atme dabei ruhig."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-baum",
+      "bild": "icon:tree",
+      "einheit": "a7-e06",
+      "de": {
+        "name": "Wie ein Baum stehen",
+        "wann": "Wenn du wackelst: vor einem Vortrag, im Streit, bei weichen Knien",
+        "schritte": [
+          "Stell die Füße hüftbreit hin und spür, wie aus den Sohlen Wurzeln wachsen.",
+          "Richte dich auf, lass die Schultern sinken und atme dreimal lang aus.",
+          "Heb den Blick, wieg dich leicht wie im Wind – und steh dann ganz still."
+        ]
+      },
+      "fr": {
+        "name": "Wie ein Baum stehen",
+        "wann": "Wenn du wackelst: vor einem Vortrag, im Streit, bei weichen Knien",
+        "schritte": [
+          "Stell die Füße hüftbreit hin und spür, wie aus den Sohlen Wurzeln wachsen.",
+          "Richte dich auf, lass die Schultern sinken und atme dreimal lang aus.",
+          "Heb den Blick, wieg dich leicht wie im Wind – und steh dann ganz still."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-farbsuche",
+      "bild": "icon:search",
+      "einheit": "a7-e07",
+      "de": {
+        "name": "Farbsuche",
+        "wann": "Wenn ein Gefühl groß wird und niemand es merken soll",
+        "schritte": [
+          "Such dir eine Farbe aus und finde drei Dinge in dieser Farbe.",
+          "Lass den Blick wandern, ohne zu reden – auch im Bus oder im Flur.",
+          "Frag dich dann: Was will mein Gefühl mir sagen?"
+        ]
+      },
+      "fr": {
+        "name": "Farbsuche",
+        "wann": "Wenn ein Gefühl groß wird und niemand es merken soll",
+        "schritte": [
+          "Such dir eine Farbe aus und finde drei Dinge in dieser Farbe.",
+          "Lass den Blick wandern, ohne zu reden – auch im Bus oder im Flur.",
+          "Frag dich dann: Was will mein Gefühl mir sagen?"
+        ]
+      }
+    },
+    {
+      "id": "a7-k-hoeren",
+      "bild": "icon:ear",
+      "einheit": "a7-e08",
+      "de": {
+        "name": "Achtsames Hören",
+        "wann": "Wenn der Kopf voll ist und du im Raum ankommen willst",
+        "schritte": [
+          "Schließ die Augen oder schau auf einen Punkt am Boden.",
+          "Hör erst auf Geräusche ganz nah, dann auf die, die weiter weg sind.",
+          "Such das leiseste Geräusch, das du gerade hören kannst."
+        ]
+      },
+      "fr": {
+        "name": "Achtsames Hören",
+        "wann": "Wenn der Kopf voll ist und du im Raum ankommen willst",
+        "schritte": [
+          "Schließ die Augen oder schau auf einen Punkt am Boden.",
+          "Hör erst auf Geräusche ganz nah, dann auf die, die weiter weg sind.",
+          "Such das leiseste Geräusch, das du gerade hören kannst."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-bodyscan",
+      "bild": "icon:user",
+      "einheit": "a7-e09",
+      "de": {
+        "name": "Bodyscan kurz",
+        "wann": "Wenn du wissen willst, wo im Körper ein Gefühl sitzt",
+        "schritte": [
+          "Setz oder leg dich bequem hin und atme einmal tief ein und lang aus.",
+          "Wandere von Stirn und Kiefer über die Schultern zu Brust und Bauch.",
+          "Spür Hände, Beine und Füße, beweg Finger und Zehen, öffne die Augen."
+        ]
+      },
+      "fr": {
+        "name": "Bodyscan kurz",
+        "wann": "Wenn du wissen willst, wo im Körper ein Gefühl sitzt",
+        "schritte": [
+          "Setz oder leg dich bequem hin und atme einmal tief ein und lang aus.",
+          "Wandere von Stirn und Kiefer über die Schultern zu Brust und Bauch.",
+          "Spür Hände, Beine und Füße, beweg Finger und Zehen, öffne die Augen."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-spaziergang",
+      "bild": "icon:walk",
+      "einheit": "a7-e10",
+      "de": {
+        "name": "Spaziergang ohne Worte",
+        "wann": "Wenn deine Zahl mittel ist und du Abstand zum Auslöser brauchst",
+        "schritte": [
+          "Schätze deine Zahl von 0 bis 100 und merk sie dir.",
+          "Geh drei Minuten ohne Worte und ohne Handy – achte auf Schritte und Geräusche.",
+          "Schätze die Zahl noch einmal: gesunken, gleich oder höher?"
+        ]
+      },
+      "fr": {
+        "name": "Spaziergang ohne Worte",
+        "wann": "Wenn deine Zahl mittel ist und du Abstand zum Auslöser brauchst",
+        "schritte": [
+          "Schätze deine Zahl von 0 bis 100 und merk sie dir.",
+          "Geh drei Minuten ohne Worte und ohne Handy – achte auf Schritte und Geräusche.",
+          "Schätze die Zahl noch einmal: gesunken, gleich oder höher?"
+        ]
+      }
+    },
+    {
+      "id": "a7-k-seufzer",
+      "bild": "icon:cloud",
+      "einheit": "a7-e11",
+      "de": {
+        "name": "Doppelter Seufzer",
+        "wann": "Vor einem Test, nach einem Streit, abends im Bett – unauffällig",
+        "schritte": [
+          "Atme durch die Nase tief ein und zieh oben noch einmal kurz nach.",
+          "Atme ganz langsam durch den Mund aus, länger, als du eingeatmet hast.",
+          "Mach etwa zehn Seufzer und schau dann: Ist deine Zahl gesunken?"
+        ]
+      },
+      "fr": {
+        "name": "Doppelter Seufzer",
+        "wann": "Vor einem Test, nach einem Streit, abends im Bett – unauffällig",
+        "schritte": [
+          "Atme durch die Nase tief ein und zieh oben noch einmal kurz nach.",
+          "Atme ganz langsam durch den Mund aus, länger, als du eingeatmet hast.",
+          "Mach etwa zehn Seufzer und schau dann: Ist deine Zahl gesunken?"
+        ]
+      }
+    },
+    {
+      "id": "a7-k-taschen-anker",
+      "bild": "icon:hand-grab",
+      "einheit": "a7-e12",
+      "de": {
+        "name": "Taschen-Anker",
+        "wann": "Wenn deine Zahl unterwegs steigt und niemand es merken soll",
+        "schritte": [
+          "Hab einen kleinen Gegenstand in der Tasche, der sich gut anfühlt.",
+          "Wenn die Zahl steigt: Hand in die Tasche und eine Minute nur spüren.",
+          "Spür Form, Gewicht und Temperatur – und atme dreimal lang aus."
+        ]
+      },
+      "fr": {
+        "name": "Taschen-Anker",
+        "wann": "Wenn deine Zahl unterwegs steigt und niemand es merken soll",
+        "schritte": [
+          "Hab einen kleinen Gegenstand in der Tasche, der sich gut anfühlt.",
+          "Wenn die Zahl steigt: Hand in die Tasche und eine Minute nur spüren.",
+          "Spür Form, Gewicht und Temperatur – und atme dreimal lang aus."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-sicherer-ort",
+      "bild": "icon:map-pin",
+      "einheit": "a7-e13",
+      "de": {
+        "name": "Mein sicherer Ort",
+        "wann": "Wenn der Kopf voll ist und du Abstand brauchst – vorher üben",
+        "schritte": [
+          "Sag dir dein Stichwort oder nimm deinen Gegenstand in die Hand.",
+          "Geh in Gedanken hin: Was siehst, hörst und spürst du dort?",
+          "Bleib höchstens drei Minuten, dann spür deine Füße und schau dich um."
+        ]
+      },
+      "fr": {
+        "name": "Mein sicherer Ort",
+        "wann": "Wenn der Kopf voll ist und du Abstand brauchst – vorher üben",
+        "schritte": [
+          "Sag dir dein Stichwort oder nimm deinen Gegenstand in die Hand.",
+          "Geh in Gedanken hin: Was siehst, hörst und spürst du dort?",
+          "Bleib höchstens drei Minuten, dann spür deine Füße und schau dich um."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-ampel",
+      "bild": "icon:traffic-lights",
+      "einheit": "a7-e14",
+      "de": {
+        "name": "Ampel-Check",
+        "wann": "Immer, wenn du merkst: Gleich wird es zu viel",
+        "schritte": [
+          "Stopp: Schätz deine Zahl von 0 bis 100.",
+          "Farbe: Grün bis 30, Gelb bis 70, Rot darüber.",
+          "Skill: Nimm den passenden aus deinem Koffer – bei Rot Körper oder Sinne."
+        ]
+      },
+      "fr": {
+        "name": "Ampel-Check",
+        "wann": "Immer, wenn du merkst: Gleich wird es zu viel",
+        "schritte": [
+          "Stopp: Schätz deine Zahl von 0 bis 100.",
+          "Farbe: Grün bis 30, Gelb bis 70, Rot darüber.",
+          "Skill: Nimm den passenden aus deinem Koffer – bei Rot Körper oder Sinne."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-danke-kopf",
+      "bild": "icon:brain",
+      "einheit": "a7-e15",
+      "de": {
+        "name": "Danke, Kopf",
+        "wann": "Wenn ein bremsender Satz laut wird und keine Zeit zum Prüfen bleibt",
+        "schritte": [
+          "Bemerke den Satz, der gerade da ist, zum Beispiel: „Das schaffe ich eh nicht.“",
+          "Setz davor: „Mein Kopf sagt gerade: …“ – und hör ihn dir an.",
+          "Antworte: „Danke, Kopf. Hab’s gehört.“ – und mach weiter."
+        ]
+      },
+      "fr": {
+        "name": "Danke, Kopf",
+        "wann": "Wenn ein bremsender Satz laut wird und keine Zeit zum Prüfen bleibt",
+        "schritte": [
+          "Bemerke den Satz, der gerade da ist, zum Beispiel: „Das schaffe ich eh nicht.“",
+          "Setz davor: „Mein Kopf sagt gerade: …“ – und hör ihn dir an.",
+          "Antworte: „Danke, Kopf. Hab’s gehört.“ – und mach weiter."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-freundliche-stimme",
+      "bild": "icon:user-heart",
+      "einheit": "a7-e16",
+      "de": {
+        "name": "Die freundliche Stimme",
+        "wann": "Wenn deine innere Stimme streng mit dir wird",
+        "schritte": [
+          "Sag dir: „Das ist gerade schwer.“",
+          "Sag dir: „So geht es vielen. Ich bin damit nicht allein.“",
+          "Frag dich: „Was brauche ich jetzt?“ – so freundlich wie bei einem Freund."
+        ]
+      },
+      "fr": {
+        "name": "Die freundliche Stimme",
+        "wann": "Wenn deine innere Stimme streng mit dir wird",
+        "schritte": [
+          "Sag dir: „Das ist gerade schwer.“",
+          "Sag dir: „So geht es vielen. Ich bin damit nicht allein.“",
+          "Frag dich: „Was brauche ich jetzt?“ – so freundlich wie bei einem Freund."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-bemerken-antworten",
+      "bild": "icon:bulb",
+      "einheit": "a7-e17",
+      "de": {
+        "name": "Bemerken, atmen, antworten",
+        "wann": "Wenn der alte Satz sich meldet – im Test, in der Pause, im Chat",
+        "schritte": [
+          "Bemerk den alten Satz: „Aha, da ist er wieder.“",
+          "Atme einmal langsam aus und spür deine Füße auf dem Boden.",
+          "Antworte mit deinem neuen Satz und tu den nächsten kleinen Schritt."
+        ]
+      },
+      "fr": {
+        "name": "Bemerken, atmen, antworten",
+        "wann": "Wenn der alte Satz sich meldet – im Test, in der Pause, im Chat",
+        "schritte": [
+          "Bemerk den alten Satz: „Aha, da ist er wieder.“",
+          "Atme einmal langsam aus und spür deine Füße auf dem Boden.",
+          "Antworte mit deinem neuen Satz und tu den nächsten kleinen Schritt."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-erst-atmen",
+      "bild": "icon:message-circle",
+      "einheit": "a7-e18",
+      "de": {
+        "name": "Erst atmen, dann reden",
+        "wann": "Wenn du gleich etwas sagen willst, das verletzt",
+        "schritte": [
+          "Schätze deine Zahl von 0 bis 100. Über 70? Dann noch nichts sagen.",
+          "Atme dreimal langsam aus – länger aus als ein.",
+          "Sag erst dann deine Ich-Botschaft: Gefühl und Wunsch."
+        ]
+      },
+      "fr": {
+        "name": "Erst atmen, dann reden",
+        "wann": "Wenn du gleich etwas sagen willst, das verletzt",
+        "schritte": [
+          "Schätze deine Zahl von 0 bis 100. Über 70? Dann noch nichts sagen.",
+          "Atme dreimal langsam aus – länger aus als ein.",
+          "Sag erst dann deine Ich-Botschaft: Gefühl und Wunsch."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-fester-stand",
+      "bild": "icon:shield",
+      "einheit": "a7-e20",
+      "de": {
+        "name": "Fester Stand",
+        "wann": "Bevor du Stopp oder Nein sagst – und wenn du wackelig bist",
+        "schritte": [
+          "Stell die Füße hüftbreit, die Knie locker, und spür beide Füße am Boden.",
+          "Richte den Rücken auf, lass die Schultern sinken, atme dreimal langsam aus.",
+          "Sag leise, aber fest: „Ich stehe hier.“ Dann deinen Stopp-Satz."
+        ]
+      },
+      "fr": {
+        "name": "Fester Stand",
+        "wann": "Bevor du Stopp oder Nein sagst – und wenn du wackelig bist",
+        "schritte": [
+          "Stell die Füße hüftbreit, die Knie locker, und spür beide Füße am Boden.",
+          "Richte den Rücken auf, lass die Schultern sinken, atme dreimal langsam aus.",
+          "Sag leise, aber fest: „Ich stehe hier.“ Dann deinen Stopp-Satz."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-runter-unter-70",
+      "bild": "icon:stopwatch",
+      "einheit": "a7-e21",
+      "de": {
+        "name": "Runter unter 70",
+        "wann": "Wenn es kracht und deine Zahl über 70 steigt",
+        "schritte": [
+          "Sag: „Ich brauch kurz fünf Minuten.“ Und wann du zurück bist.",
+          "Geh kurz weg und mach deinen Skill, bis die Zahl unter 70 ist.",
+          "Komm pünktlich zurück und starte mit „Ich …“ statt „Du …“."
+        ]
+      },
+      "fr": {
+        "name": "Runter unter 70",
+        "wann": "Wenn es kracht und deine Zahl über 70 steigt",
+        "schritte": [
+          "Sag: „Ich brauch kurz fünf Minuten.“ Und wann du zurück bist.",
+          "Geh kurz weg und mach deinen Skill, bis die Zahl unter 70 ist.",
+          "Komm pünktlich zurück und starte mit „Ich …“ statt „Du …“."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-anker-nein",
+      "bild": "icon:hand-stop",
+      "einheit": "a7-e22",
+      "de": {
+        "name": "Anker vor dem Nein",
+        "wann": "Kurz bevor du Nein sagst, wenn alle auf dich schauen",
+        "schritte": [
+          "Stell die Füße fest auf den Boden und spür dein Gewicht.",
+          "Atme einmal lang aus – das gibt dir zwei Sekunden.",
+          "Sag deinen Nein-Satz, ruhig und mit Blick zur Person."
+        ]
+      },
+      "fr": {
+        "name": "Anker vor dem Nein",
+        "wann": "Kurz bevor du Nein sagst, wenn alle auf dich schauen",
+        "schritte": [
+          "Stell die Füße fest auf den Boden und spür dein Gewicht.",
+          "Atme einmal lang aus – das gibt dir zwei Sekunden.",
+          "Sag deinen Nein-Satz, ruhig und mit Blick zur Person."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-innehalten",
+      "bild": "icon:eye",
+      "einheit": "a7-e23",
+      "de": {
+        "name": "Innehalten, schauen, handeln",
+        "wann": "Wenn du etwas mitbekommst und nicht weißt, was tun",
+        "schritte": [
+          "Hände flach auf die Oberschenkel, einmal lang ausatmen.",
+          "Hinschauen: Was passiert hier – und wem tut es weh?",
+          "Such eine Stufe der Leiter, die für dich sicher ist, und tu sie."
+        ]
+      },
+      "fr": {
+        "name": "Innehalten, schauen, handeln",
+        "wann": "Wenn du etwas mitbekommst und nicht weißt, was tun",
+        "schritte": [
+          "Hände flach auf die Oberschenkel, einmal lang ausatmen.",
+          "Hinschauen: Was passiert hier – und wem tut es weh?",
+          "Such eine Stufe der Leiter, die für dich sicher ist, und tu sie."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-erster-satz",
+      "bild": "icon:message-circle",
+      "einheit": "a7-e24",
+      "de": {
+        "name": "Der erste Satz",
+        "wann": "Wenn du Hilfe brauchst und nicht weißt, wie du anfangen sollst",
+        "schritte": [
+          "Atme einmal lang aus und spür die Füße.",
+          "Such dir eine Person oder Stelle aus deinem Netz aus.",
+          "Sag den ersten Satz: „Hast du kurz Zeit? Ich brauche Hilfe.“"
+        ]
+      },
+      "fr": {
+        "name": "Der erste Satz",
+        "wann": "Wenn du Hilfe brauchst und nicht weißt, wie du anfangen sollst",
+        "schritte": [
+          "Atme einmal lang aus und spür die Füße.",
+          "Such dir eine Person oder Stelle aus deinem Netz aus.",
+          "Sag den ersten Satz: „Hast du kurz Zeit? Ich brauche Hilfe.“"
+        ]
+      }
+    },
+    {
+      "id": "a7-k-handy-atmen",
+      "bild": "icon:device-mobile",
+      "einheit": "a7-e25",
+      "de": {
+        "name": "Drei Atemzüge vor dem Handy",
+        "wann": "Wenn die Hand zum Handy will, bevor du entschieden hast",
+        "schritte": [
+          "Merk, dass deine Hand zum Handy will – und lass es liegen.",
+          "Atme dreimal ruhig, das Ausatmen etwas länger.",
+          "Frag dich: Was will ich gerade – Kontakt, Ablenkung oder Ruhe?"
+        ]
+      },
+      "fr": {
+        "name": "Drei Atemzüge vor dem Handy",
+        "wann": "Wenn die Hand zum Handy will, bevor du entschieden hast",
+        "schritte": [
+          "Merk, dass deine Hand zum Handy will – und lass es liegen.",
+          "Atme dreimal ruhig, das Ausatmen etwas länger.",
+          "Frag dich: Was will ich gerade – Kontakt, Ablenkung oder Ruhe?"
+        ]
+      }
+    },
+    {
+      "id": "a7-k-teilen-bremse",
+      "bild": "icon:hand-stop",
+      "einheit": "a7-e26",
+      "de": {
+        "name": "Die Teilen-Bremse",
+        "wann": "Wenn dich ein Beitrag wütend macht und du ihn sofort teilen willst",
+        "schritte": [
+          "Hand weg: Leg das Handy flach auf den Tisch.",
+          "Atme dreimal langsam aus und schätze deine Zahl neu.",
+          "Frag: Wer sagt das? Dann teilen, liegen lassen oder nachfragen."
+        ]
+      },
+      "fr": {
+        "name": "Die Teilen-Bremse",
+        "wann": "Wenn dich ein Beitrag wütend macht und du ihn sofort teilen willst",
+        "schritte": [
+          "Hand weg: Leg das Handy flach auf den Tisch.",
+          "Atme dreimal langsam aus und schätze deine Zahl neu.",
+          "Frag: Wer sagt das? Dann teilen, liegen lassen oder nachfragen."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-erster-bissen",
+      "bild": "icon:apple",
+      "einheit": "a7-e27",
+      "de": {
+        "name": "Der erste Bissen",
+        "wann": "Wenn du gestresst isst oder beim Essen mit dem Kopf woanders bist",
+        "schritte": [
+          "Schau dein Essen kurz an und riech daran.",
+          "Kau den ersten Bissen langsam und schmecke 20 Sekunden nur nach.",
+          "Schluck, atme aus und schätze deine Zahl neu."
+        ]
+      },
+      "fr": {
+        "name": "Der erste Bissen",
+        "wann": "Wenn du gestresst isst oder beim Essen mit dem Kopf woanders bist",
+        "schritte": [
+          "Schau dein Essen kurz an und riech daran.",
+          "Kau den ersten Bissen langsam und schmecke 20 Sekunden nur nach.",
+          "Schluck, atme aus und schätze deine Zahl neu."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-unsichtbar-ruhig",
+      "bild": "icon:pencil",
+      "einheit": "a7-e28",
+      "de": {
+        "name": "Unsichtbar ruhig",
+        "wann": "Im Test oder vor einer Präsentation – wenn niemand es merken soll",
+        "schritte": [
+          "Drück beide Füße fest in den Boden, halte fünf Sekunden, lass los.",
+          "Atme vier Sekunden ein und sechs Sekunden aus – zweimal.",
+          "Drück den Stift fest, lass los und lies die nächste Aufgabe."
+        ]
+      },
+      "fr": {
+        "name": "Unsichtbar ruhig",
+        "wann": "Im Test oder vor einer Präsentation – wenn niemand es merken soll",
+        "schritte": [
+          "Drück beide Füße fest in den Boden, halte fünf Sekunden, lass los.",
+          "Atme vier Sekunden ein und sechs Sekunden aus – zweimal.",
+          "Drück den Stift fest, lass los und lies die nächste Aufgabe."
+        ]
+      }
+    },
+    {
+      "id": "a7-k-abschuetteln",
+      "bild": "icon:stretching",
+      "einheit": "a7-e29",
+      "de": {
+        "name": "Abschütteln",
+        "wann": "Nach einem Auftritt, Streit oder Test, wenn die Anspannung noch steckt",
+        "schritte": [
+          "Schüttle Hände, Arme, Beine und Schultern 20 Sekunden lang aus.",
+          "Atme dreimal lang aus und lass die Schultern sinken.",
+          "Sag deinen Namen und etwas, das du magst: Jetzt bist du wieder du."
+        ]
+      },
+      "fr": {
+        "name": "Abschütteln",
+        "wann": "Nach einem Auftritt, Streit oder Test, wenn die Anspannung noch steckt",
+        "schritte": [
+          "Schüttle Hände, Arme, Beine und Schultern 20 Sekunden lang aus.",
+          "Atme dreimal lang aus und lass die Schultern sinken.",
+          "Sag deinen Namen und etwas, das du magst: Jetzt bist du wieder du."
+        ]
+      }
+    }
+  ],
+  "6e": [],
+  "5e": []
+}

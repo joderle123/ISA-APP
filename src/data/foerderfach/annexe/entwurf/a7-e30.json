@@ -1,0 +1,297 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e30",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-mein-jahr", "ff-skills-pass", "a7-glas-der-beduerfnisse", "a7-baum-der-staerke"],
+      "vorlagen": ["a7-brief-an-mich"],
+      "woerter": [
+        { "de": "der Rückblick", "fr": "der Rückblick" },
+        { "de": "wachsen", "fr": "wachsen" },
+        { "de": "stolz sein auf", "fr": "stolz sein auf" },
+        { "de": "der Abschied", "fr": "der Abschied" },
+        { "de": "der Brief", "fr": "der Brief" }
+      ],
+      "de": {
+        "titel": "Rückblick und Abschied",
+        "kurz": "Mit Skills-Pass, Kurve, Glas und Baum aufs Jahr schauen, am Lieblingsort den Clip zeigen, einander Sätze schenken, einen Brief an sich schreiben und sich verabschieden.",
+        "ziele": [
+          "sehen mit Skills-Pass, Kurve, Glas und Baum, was sich in diesem Jahr verändert hat, und benennen, was sie gelernt haben",
+          "zeigen den Clip, geben einander Sätze, die stärken, und schreiben einen Brief an sich selbst",
+          "verabschieden sich bewusst voneinander und von der Leitung und nehmen ihren Lieblings-Skill mit"
+        ],
+        "material": [
+          "Skills-Pässe, Stempel, Stifte",
+          "Glas, Bäume, Skills-Plakat",
+          "Briefbogen (Vorlage), Umschläge, Box",
+          "Klebezettel, Gerät mit Clip, Decke",
+          "Karten mit Satz, Imbiss, Getränke",
+          "Gefühlsrad, Anspannungsskala 0–100"
+        ],
+        "vorbereitung": [
+          "Lieblingsort klären: Einverständnis der Eltern, Treffpunkt, Aufsicht, Notfallnummer, Fahrkarten und Regenvariante nach den Regeln des CDSE.",
+          "Briefe: Wer verwahrt sie, wann gehen sie zurück, wie bekommt sie, wer die Einrichtung verlässt?",
+          "Karten mit persönlichen Sätzen schreiben, den Clip prüfen (nur Aufnahmen, mit denen alle einverstanden sind), Imbiss und Allergien klären."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Wenn ich an dieses Jahr denke …" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Ablauf des letzten Tages" },
+          { "min": "15–40", "phase": "uebung", "titel": "Rückblick: Skills-Pass, Kurve, Glas und Baum" },
+          { "min": "40–50", "phase": "aktiv", "titel": "Weg zum Lieblingsort" },
+          { "min": "50–85", "phase": "uebung", "titel": "Clip-Premiere, Stärken-Post und Brief an mich" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: 5-4-3-2-1 wie am ersten Tag" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Wenn ich an dieses Jahr denke …",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Alle zeigen auf dem Gefühlsrad, wie sie sich fühlen, wenn sie an dieses Jahr denken – heute dürfen es zwei Wörter sein, auch solche, die nicht im Rad stehen – und nennen ihre Anspannung von 0 bis 100. Die Leitung macht mit, beginnt und zeigt, dass gemischte Gefühle dazugehören, zum Beispiel: stolz und ein bisschen traurig, weil heute das letzte Mal ist.",
+            "sagen": [
+              "Wenn ihr an dieses Jahr denkt – welches Wort passt? Heute dürfen es zwei sein.",
+              "Und die Anspannung? Letzte Male machen manche nervös, andere merken gar nichts – beides ist in Ordnung."
+            ],
+            "wennEsKippt": "Sagt jemand „Endlich vorbei“, mit Humor stehen lassen: Auch Erleichterung ist ein Gefühl. Wirkt jemand traurig oder zieht sich zurück, nicht in der Gruppe nachbohren, sondern später Zeit für diese Person haben."
+          },
+          {
+            "titel": "Rückblick, Mission und Ablauf des letzten Tages",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – und was hast du gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann setzt eine freiwillige Person den letzten Punkt auf die Treppe des Jahres aus Einheit 1 – Applaus für die Gruppe – und die Leitung nennt den Ablauf: Rückblick, Weg zum Lieblingsort, Clip, Brief und Abschied.",
+            "sagen": [
+              "Kam euer Moment, und was habt ihr gemacht – Daumen hoch, Mitte oder runter?",
+              "Heute ist unsere letzte Stunde: Wir schauen zurück, gehen zu eurem Lieblingsort, zeigen euren Clip und verabschieden uns richtig."
+            ],
+            "tipp": "Die Treppe nach der Stunde nicht wegwerfen: Sie zeigt der nächsten Gruppe, was sie erwartet – und dass andere diesen Weg schon gegangen sind."
+          },
+          {
+            "titel": "Rückblick: Skills-Pass, Kurve, Glas und Baum",
+            "dauer": 25,
+            "phase": "uebung",
+            "text": "Jede Person schaut mit Skills-Pass, Kurve, Glas und Baum auf das Jahr zurück: Was wusste ich am Anfang noch nicht, was kann ich heute? Die Leitung zeigt zuerst ihre eigene Beispielkurve mit einem Tief und dem, was sie daraus gelernt hat.",
+            "sagen": [
+              "Blättert durch euren Pass: Welcher Satz überrascht euch heute, und welcher stimmt immer noch?",
+              "Die Kurve gehört euch – schreibt nur dazu, was ihr aufschreiben wollt."
+            ],
+            "punkte": [
+              "Übung (7 Min.): Skills-Pass – Jede Person blättert still durch ihre Einträge und markiert die drei Sätze, die ihr heute am meisten bedeuten; wer mag, liest einen vor.",
+              "Übung (8 Min.): Jahreskurve – Auf dem Blatt je Thema ein Kreuz setzen, wie es damals ging, die Kreuze verbinden und zu einem Hoch- und einem Tiefpunkt Stichworte schreiben.",
+              "Übung (10 Min.): Plakat, Glas und Baum – Jede Person klebt auf das Skills-Plakat einen Zettel mit einem Skill, den sie am Anfang noch nicht kannte, malt im Glas der Bedürfnisse den roten Strich und hängt zwei Früchte in neuer Farbe an ihren Baum."
+            ],
+            "tipp": "Wer erst im Lauf des Jahres dazugekommen ist, beginnt die Kurve beim ersten Thema in der Gruppe; fehlende Einträge im Pass nicht ansprechen.",
+            "wennEsKippt": "Stockt jemand vor einem Tiefpunkt oder wird traurig, nicht nachfragen, sondern vorschlagen, die Kurve auszulassen und nur die Satzanfänge zu beantworten. Fehlt jemandem Glas oder Baum, reicht ein neues Blatt mit Stamm und Früchten.",
+            "blatt": "a7-mein-jahr"
+          },
+          {
+            "titel": "Weg zum Lieblingsort",
+            "dauer": 10,
+            "phase": "aktiv",
+            "text": "Die Gruppe geht zum Lieblingsort, den sie in der letzten Stunde gewählt hat; es gelten Treffpunkt, Signal und Sichtweite, und die Gruppe geht so schnell wie die langsamste Person. Unterwegs zeigt jede Person einmal ohne Worte auf etwas, das sie am Weg mag.",
+            "sagen": [
+              "Wir gehen so schnell wie die langsamste Person – und unterwegs zeigt jede Person einmal auf etwas, das sie hier mag."
+            ],
+            "tipp": "Wer mag, geht ein Stück allein in Sichtweite und schätzt dabei seine Zahl – ein Spaziergang ohne Worte.",
+            "wennEsKippt": "Rennt jemand voraus oder trödelt, kurz stehen bleiben und das Tempo gemeinsam abmachen: Treffpunkt ist an jeder Ecke, an der die Leitung wartet."
+          },
+          {
+            "titel": "Clip-Premiere, Stärken-Post und Brief an mich",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Am Lieblingsort feiert die Gruppe die Premiere ihres Clips, schreibt einander Sätze, die stärken, und schreibt sich selbst einen Brief. Geübt wird, Anerkennung zu geben und anzunehmen und nach vorn zu schauen.",
+            "sagen": [
+              "Heute seht ihr euren Clip zum ersten Mal ganz – wer dahinter stand, darf zuerst sagen, was ihm am besten gefällt.",
+              "Schreibt so, dass sich die Person in einem Jahr noch darüber freut."
+            ],
+            "punkte": [
+              "Übung (10 Min.): Premiere – Alle sehen den Clip auf dem Gerät, dann Applaus und die Regel „ein Lob, ein Tipp“; wer hinter der Kamera oder am Ton stand, wird zuerst gelobt.",
+              "Übung (10 Min.): Stärken-Post – Jede Person schreibt für jede andere einen Satz, der stärkt (eine Stärke, die sie erlebt hat, oder ein Danke), die Leitung schreibt für alle mit und liest alle Zettel, bevor sie in Umschlägen verteilt werden.",
+              "Übung (15 Min.): Brief an mich – Erst den Rahmen nennen (niemand liest die Briefe, die Leitung bewahrt sie verschlossen auf), dann schreibt jede Person allein an einem Platz in Sichtweite einen Brief an sich in einem Jahr, klebt ihn zu und gibt ihn ab."
+            ],
+            "tipp": "Wer nicht gern schreibt, legt Stichworte und eine Zeichnung in den Umschlag; es zählt, dass etwas drin ist.",
+            "wennEsKippt": "Taucht in der Stärken-Post ein abwertender oder zweideutiger Satz auf, wird er herausgenommen und später mit der Person besprochen, die ihn geschrieben hat – nicht in der Gruppe. Findet jemand den Brief peinlich, eine kurze Form anbieten: drei Sätze oder eine Zeichnung.",
+            "blatt": "a7-brief-an-mich"
+          },
+          {
+            "titel": "Skill: 5-4-3-2-1 wie am ersten Tag",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Mit diesem Skill hat das Jahr begonnen; heute leitet ihn eine Person an, die vorher gefragt wurde, am Lieblingsort mit echten Geräuschen und Düften (höchstens 5 Min., still höchstens 2 Min.). Dann der Abschluss (10 Min.): letzter Eintrag im Skills-Pass, Mission und Moment, Abschlussrunde mit Imbiss und Abschied.",
+            "sagen": [
+              "Mit diesem Skill haben wir angefangen – heute leitet ihn jemand von euch an.",
+              "Danke für dieses Jahr: Ich habe gesehen, wie viel ihr euch getraut habt."
+            ],
+            "punkte": [
+              "Die Schritte: fünf Dinge sehen, vier hören, drei spüren, zwei riechen, eins schmecken – langsam und still für sich.",
+              "Üben (4 Min.): Eine Person leitet an, die Leitung hilft bei Bedarf mit Stichworten; draußen gibt es mehr zu sehen, hören und riechen als im Raum.",
+              "Skills-Pass, Mission und Moment (4 Min.): ein letzter Satz zur Frage an der Tafel – Was nehme ich aus diesem Jahr mit? – und der letzte Stempel; die Mission vorlesen, jede Person schreibt ihren Moment ins Heft.",
+              "Abschlussrunde und Abschied (7 Min.): Beim Imbiss sagt jede Person einen Satz („Das nehme ich mit …“), die Leitung gibt jeder Person ihre Sachen und die Karte mit einem persönlichen Satz mit, nennt Tag und Ort für die Briefe und dankt der Gruppe."
+            ],
+            "wennEsKippt": "Macht die anleitende Person Quatsch, übernimmt die Leitung ruhig die Stichworte, ohne sie abzusetzen; wird es unruhig, auf 3-2-1 kürzen. Fällt der Abschied schwer – Tränen, Rückzug oder Albernheit als Schutz –, das nicht wegreden, sondern benennen, dass Abschiede gemischte Gefühle machen, und nach der Stunde Zeit für diese Person haben.",
+            "blatt": "ff-skills-pass"
+          }
+        ],
+        "bruecke": "Das war unsere letzte Stunde: Eure Skills, euer Brief und euer Clip gehen mit euch weiter – danke für dieses Jahr.",
+        "mission": "Mach in den nächsten Tagen einmal deinen Lieblings-Skill.",
+        "hintergrund": "Ein bewusster Rückblick macht Entwicklung sichtbar, die im Alltag untergeht; solche Erfahrungen und verlässliche Beziehungen zu Erwachsenen gehören zu den wichtigsten Schutzfaktoren (Masten, 2014). Über eigene Erfahrungen zu schreiben, hilft, sie zu ordnen (Pennebaker, 1997) – der Brief verbindet Rückblick und Ausblick. Wer zwei Wochen lang aufschreibt, wofür er dankbar ist, fühlt sich wohler (Froh et al., 2008), und auch eine Gruppe braucht ein gestaltetes Ende (Tuckman & Jensen, 1977).",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
+          "Froh, J. J., Sefick, W. J. & Emmons, R. A. (2008). Counting blessings in early adolescents: An experimental study of gratitude and subjective well-being. Journal of School Psychology, 46(2), 213–233.",
+          "Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. Group & Organization Studies, 2(4), 419–427."
+        ],
+        "achtung": "Abschiede wecken bei manchen alte Verluste: Traurigkeit, Rückzug oder Albernheit sind verständlich – nicht in der Gruppe vertiefen, aber nach der Stunde Zeit für ein Gespräch haben. Auf der Kurve und im Brief entscheidet jede Person selbst, was sie schreibt; die Briefe bleiben ungelesen und verschlossen, und die Leitung liest jeden Zettel der Stärken-Post, bevor er verteilt wird. Deutet jemand an, nicht mehr da sein zu wollen, noch am selben Tag das Gespräch suchen und die zuständige Leitung (Responsable) informieren.",
+        "differenzierung": {
+          "leichter": "Für die Kurve genügen zwei Kreuze, der Brief darf aus drei Sätzen oder einer Zeichnung bestehen, und für die Stärken-Post stehen Satzanfänge an der Tafel.",
+          "schwerer": "Im Brief drei Fragen an das Ich in einem Jahr stellen und für die nächste Gruppe einen Tipp als Wenn-dann-Satz aufschreiben."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in und Brücke (8 Min.), Skills-Pass, Glas und Baum (12 Min.), Clip-Premiere und Stärken-Post (10 Min.), Brief an mich (8 Min.), 5-4-3-2-1 mit Abschlussrunde und Abschied (12 Min.). Weg, Lieblingsort und Jahreskurve entfallen, die Gruppe feiert den Abschied mit einem Imbiss im Haus."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-mein-jahr",
+      "bereich": "skills",
+      "thema": "abschluss",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Rückblick", "Jahreskurve", "Skills-Pass", "Abschied"],
+      "bild": "icon:flag",
+      "kurs": ["a7-e30"],
+      "de": {
+        "titel": "Mein Jahr",
+        "untertitel": "Was ich gelernt habe – und was ich mitnehme",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Im Alltag geht unter, was man geschafft hat. Ein Rückblick macht es sichtbar: Hochpunkte, Tiefpunkte und das, was dich durch die Tiefs getragen hat."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Markiere im Skills-Pass drei Sätze, die dir heute wichtig sind, und schreib den wichtigsten ab.",
+            "symbole": ["lesen", "schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Mein wichtigster Satz: …"],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Zeichne deine Kurve: Wie ging es dir bei den Themen des Jahres?",
+            "hinweis": "Wer später dazukam, beginnt beim ersten Thema in der Gruppe.",
+            "symbole": ["malen"]
+          },
+          {
+            "art": "kurve",
+            "x": ["Start", "Gefühle", "Skills", "Gedanken", "Grenzen", "Welt", "heute"],
+            "oben": "richtig gut",
+            "unten": "richtig schwer",
+            "hoehe": 190
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ergänze die Sätze.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Am Anfang konnte ich noch nicht …", "Heute kann ich …", "Mein Lieblings-Skill: …"],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du aufschreibst.",
+            "text": "Beschäftigt dich etwas sehr, sprich mit der Leitung oder mit einer Person, der du vertraust."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen blicken mit Skills-Pass und Kurve auf das Jahr zurück und halten fest, was sie gelernt haben und welcher Skill sie begleitet.",
+          "ablauf": [
+            "Einheit 30, Schritt 3: Aufgabe 1 beim stillen Blättern im Skills-Pass (7 Min.); die Leitung zeigt vorher ihre eigene Beispielkurve.",
+            "Aufgabe 2 – die Kurve – und danach Aufgabe 3 mit den Satzanfängen; wer mag, erzählt in der Gruppe von einem Hochpunkt.",
+            "Das Blatt nimmt jede Person mit; es wird nicht eingesammelt und nicht gelesen."
+          ],
+          "hintergrund": "Ein bewusster Rückblick macht Entwicklung sichtbar, die im Alltag untergeht; solche Erfahrungen gehören zu den wichtigsten Schutzfaktoren (Masten, 2014). Über eigene Erfahrungen zu schreiben, hilft, sie zu ordnen (Pennebaker, 1997); die Kurve lässt dabei auch Tiefpunkte stehen, ohne sie zu bewerten.",
+          "quellen": [
+            "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+            "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166."
+          ],
+          "achtung": "Stockt jemand vor einem Tiefpunkt oder wird traurig, nicht nachfragen: die Kurve auslassen und nur die Satzanfänge beantworten, nach der Stunde ein Gespräch anbieten.",
+          "material": "Heft, Stifte, Skills-Pass"
+        }
+      }
+    },
+    {
+      "id": "a7-brief-an-mich",
+      "bereich": "skills",
+      "thema": "abschluss",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": ["Brief an mich", "Rückblick", "Ausblick", "Abschied"],
+      "bild": "icon:mail",
+      "kurs": ["a7-e30"],
+      "de": {
+        "titel": "Brief an mich",
+        "untertitel": "Geschrieben am Ende des Kurses – zu öffnen am vereinbarten Tag",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Niemand liest diesen Brief.",
+            "text": "Du steckst ihn in einen Umschlag und klebst ihn zu. Die Leitung bewahrt ihn verschlossen auf und gibt ihn dir am vereinbarten Tag zurück. Beschäftigt dich beim Schreiben etwas sehr, sprich mit der Leitung."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib dir selbst einen Brief. Die Satzanfänge sind ein Angebot – du musst sie nicht benutzen.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Hallo …, heute ist der …"],
+            "linien": 1
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Gerade beschäftigt mich …", "Dieses Jahr habe ich gelernt, dass …", "Darauf bin ich stolz: …", "Dieser Skill soll dich begleiten: …"],
+            "linien": 3
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Wenn es mal schwer wird, denk daran: …", "Ich wünsche dir …"],
+            "linien": 2
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Bis bald – dein Ich von heute"],
+            "linien": 1
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen halten in einem Brief an sich selbst fest, was sie aus dem Kurs mitnehmen und was sie sich wünschen; am vereinbarten Tag lesen sie ihn wieder.",
+          "ablauf": [
+            "Vorher im Team klären: Wer bewahrt die verschlossenen Briefe auf, wann werden sie zurückgegeben, und wie bekommen Jugendliche ihren Brief, die die Einrichtung verlassen? Wer geht, nimmt ihn verschlossen mit.",
+            "Einheit 30, Schritt 5 (15 Min.): Rahmen nennen (2 Min.), schreiben in Sichtweite (10 Min.), verschließen und sichtbar in die Box legen (3 Min.).",
+            "Rückgabe persönlich und ohne Druck, den Brief vor anderen zu öffnen."
+          ],
+          "hintergrund": "Über eigene Erfahrungen zu schreiben, hilft, sie zu ordnen (Pennebaker, 1997). Der Blick auf ein späteres Ich schafft Abstand; aus dieser Distanz fällt es leichter, klug und freundlich mit sich selbst zu sprechen (Kross & Ayduk, 2017).",
+          "quellen": [
+            "Pennebaker, J. W. (1997). Writing about emotional experiences as a therapeutic process. Psychological Science, 8(3), 162–166.",
+            "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+          ],
+          "material": "Briefbögen, Umschläge, verschließbare Box"
+        }
+      }
+    }
+  ]
+}

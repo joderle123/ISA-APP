@@ -1,0 +1,356 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e22",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "a7-nein-sagen"
+      ],
+      "vorlagen": [
+        "a7-druck-karten"
+      ],
+      "woerter": [
+        { "de": "der Gruppendruck", "fr": "der Gruppendruck" },
+        { "de": "Nein sagen", "fr": "Nein sagen" },
+        { "de": "dazugehören", "fr": "dazugehören" },
+        { "de": "überreden", "fr": "überreden" },
+        { "de": "die Lernzone", "fr": "die Lernzone" }
+      ],
+      "de": {
+        "titel": "Gruppendruck und Nein sagen",
+        "kurz": "Die Gruppe steckt Komfort-, Lern- und Panikzone ab, übt vier Arten, Nein zu sagen, und hält in der Nein-Challenge stand – mit der Leitung als Drängler und einem zweiten Nein als Rückhalt.",
+        "ziele": [
+          "stecken ihre Komfort-, Lern- und Panikzone ab und erkennen lauten und leisen Gruppendruck",
+          "kennen vier Arten, Nein zu sagen, und formulieren ihren eigenen Nein-Satz",
+          "halten in der Nein-Challenge stand und erleben, wie stark ein zweites Nein wirkt"
+        ],
+        "material": [
+          "Gefühlsrad, Anspannungsskala",
+          "Seile oder Kreide, drei Schilder",
+          "Druck-Karten (Vorlage), Heft-Blatt",
+          "Stoppuhr oder Handy-Timer",
+          "Skills-Pass, Stempel"
+        ],
+        "vorbereitung": [
+          "Drei Kreise auslegen (innen 2 Meter, die Ringe je einen Meter breit), bei trockenem Wetter draußen mit Kreide.",
+          "Druck-Karten schneiden; Karten weglassen, die einer aktuellen Lage in der Gruppe ähneln.",
+          "Die drängelnde Rolle üben: freundlich und hartnäckig, ohne Beleidigung und ohne Berührung.",
+          "Die vier Arten, Nein zu sagen, an die Tafel schreiben und abdecken."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Wenn alle dich anschauen" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Druck von außen" },
+          { "min": "15–45", "phase": "uebung", "titel": "Zonen-Spiel und vier Arten, Nein zu sagen" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Bewegung: Mach das Gegenteil" },
+          { "min": "50–85", "phase": "uebung", "titel": "Nein-Challenge: erstes und zweites Nein" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Anker vor dem Nein" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Wenn alle dich anschauen",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Jede Person zeigt ihr Wort auf dem Gefühlsrad und nennt ihre Anspannung von 0 bis 100; die Leitung macht mit und beginnt. Dazu eine Zusatzfrage, die nur mit einer Zahl beantwortet wird: Wie hoch geht deine Anspannung, wenn alle dich anschauen und auf deine Antwort warten? Die Zahlen nicht kommentieren, nur aufnehmen – genau um diesen Moment geht es heute.",
+            "sagen": [
+              "Gefühl, Zahl – und wie hoch geht es bei dir, wenn alle gleichzeitig auf deine Antwort warten?",
+              "Bei mir springt die Zahl von 30 auf 60, wenn mich alle anschauen."
+            ],
+            "tipp": "Wer die Zusatzfrage nicht beantworten mag, sagt „weiter“ – gerade bei diesem Thema zählt, dass auch ein Nein im Check-in in Ordnung ist."
+          },
+          {
+            "titel": "Rückblick, Mission und Druck von außen",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – und hast du die Auszeit probiert: ansagen, runterkommen, zurückkommen? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann das Thema nennen: Heute will die Gruppe etwas, und man selbst will es nicht – niemand muss erzählen, wo er schon einmal mitgemacht hat.",
+            "sagen": [
+              "Kam euer Moment, in dem es gekracht hat – und was habt ihr gemacht?",
+              "Dazugehören ist ein echtes Bedürfnis, kein Zeichen von Schwäche – darum ist ein Nein in der Gruppe so schwer."
+            ],
+            "tipp": "Wer mitgemacht hat, ohne es zu wollen, ist deshalb kein schlechter Mensch – das ausdrücklich sagen; ein Daumen nach unten ist keine verpasste Mission."
+          },
+          {
+            "titel": "Zonen-Spiel und vier Arten, Nein zu sagen",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Zuerst das Bild: drei Kreise – Komfortzone, Lernzone, Panikzone –, in die sich alle je nach Situation stellen; wachsen kann man nur in der Lernzone. Dann lernt die Gruppe vier Arten, Nein zu sagen, und übt sie mit der Leitung in der drängelnden Rolle.",
+            "sagen": [
+              "Schaut euch um: Wo stehen die anderen? Das ist die wichtigste Beobachtung heute.",
+              "Ein Nein braucht keine lange Begründung – je länger die Erklärung, desto mehr Angriffsfläche."
+            ],
+            "punkte": [
+              "Bild (3 Min.): Die drei Kreise erklären – innen sicher, in der Mitte aufregend, aber machbar, außen zu viel – und sagen, dass sie bei jeder Person woanders liegen.",
+              "Spiel (10 Min.): Zonen-Spiel – Die Leitung liest sechs Situationen vor (vor der Gruppe singen · eine neue Person ansprechen · allein mit dem Bus in eine fremde Stadt fahren · Nein sagen, wenn alle Ja sagen · im Gruppenchat allein widersprechen · einer Freundin absagen), alle stellen sich in ihre Zone, und eine Person pro Zone sagt, warum.",
+              "Übung (12 Min.): Vier Arten – Die Leitung drängelt freundlich und hartnäckig („Komm, nur kurz mit zum Kiosk“), jede Person probiert nacheinander alle vier Arten: Kaputte Schallplatte („Nein, ich will nicht“) · Nein plus Vorschlag („Nein. Aber wir könnten …“) · mit Humor („Nee, dafür bin ich heute zu faul“) · einfach gehen.",
+              "Aufgabe 1 und 2 (5 Min.): Auf dem Blatt die eigenen Zonen ankreuzen, die Art einkreisen, die am besten passt, und einen eigenen Nein-Satz schreiben."
+            ],
+            "tipp": "Die Leitung stellt sich mit auf und steht ruhig auch einmal in der Panikzone; bei Regen oder wenig Platz geht das Spiel im Sitzen mit einem, zwei oder drei Fingern.",
+            "wennEsKippt": "Stellen sich alle dorthin, wo die Beliebteste steht, das ruhig ansprechen – das ist Gruppendruck live – und die nächste Situation mit geschlossenen Augen zeigen lassen. Kommt „Dann bin ich raus aus der Gruppe“, ernst nehmen und fragen: Was kostet ein Nein – und was kostet ein Ja, das man eigentlich nicht will?",
+            "blatt": "a7-nein-sagen"
+          },
+          {
+            "titel": "Bewegung: Mach das Gegenteil",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen im Kreis; die Leitung gibt Kommandos und macht sie vor, alle anderen tun das Gegenteil: Bei „Hände hoch“ bleiben die Hände unten, bei „Hinsetzen“ bleiben alle stehen. Zum Schluss fragen, was schwer war: Meist rutscht der Körper mit, weil das Vormachen stärker ist als das Wort – so wirkt Gruppendruck.",
+            "sagen": [
+              "Ich mache es vor – und ihr macht das Gegenteil; wer sich vertut, lacht kurz und macht weiter."
+            ],
+            "tipp": "Immer schneller werden und zwischendurch eine Person die Kommandos geben lassen; ohne Worte klappt das Spiel auch für Jugendliche, die noch wenig Deutsch sprechen."
+          },
+          {
+            "titel": "Nein-Challenge: erstes und zweites Nein",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Zuerst besprechen alle eine Druck-Karte mit drei Fragen, dann spielt jede Person ihre Karte gegen die Leitung: erst mit einem Nein, dann mit einem zweiten Nein von einer weiteren Person. Danach folgt die Nein-Challenge, und zum Schluss schreibt jede Person ihren Wenn-dann-Plan für einen Druck-Moment.",
+            "sagen": [
+              "Freeze – wie fühlt sich das gerade für die Person an, die Nein sagt?",
+              "Was hat sich verändert, als eine zweite Person auch Nein gesagt hat?"
+            ],
+            "punkte": [
+              "Karte (6 Min.): Jede Person zieht eine Druck-Karte, die Gruppe bespricht drei Fragen – Wie fühlt sich die Person auf der Karte? Was würdest du tun? Was wäre hier mutig? –, und die Leitung sagt, dass auch Weggehen und Hilfe holen mutig sind.",
+              "Rollenspiel (14 Min.): Erstes und zweites Nein – Jede Person spielt ihre Karte gegen die Leitung, die freundlich und hartnäckig drängelt, und nutzt eine der vier Arten; im zweiten Durchgang stellt sich eine andere Person dazu und sagt ebenfalls Nein, die Zuschauenden zeigen mit den Fingern, wie stark das Nein war (0 bis 10).",
+              "Challenge (10 Min.): Nein-Challenge – Wer hält 60 Sekunden stand? Die Leitung macht Quatsch-Angebote („Tausch mit mir die Schuhe“, „Sing jetzt mit mir laut ein Lied“) und nutzt Druck-Sätze („Komm schon“, „Alle machen mit“), die Person sagt mindestens fünfmal Nein, jedes Mal anders, ohne Ja und ohne Lachen; die anderen zählen und dürfen mit Grimassen stören.",
+              "Aufgabe 3 (5 Min.): Allein einen Wenn-dann-Plan für einen Druck-Moment schreiben – Stichworte reichen; der Wenn-Teil ist der Moment für die Mission, die Pläne werden nicht vorgelesen."
+            ],
+            "tipp": "Das zweite Nein ist der stärkste Moment der Stunde: Fast jede Szene kippt, sobald jemand zur Seite der Person wechselt, die Nein sagt – das ausdrücklich benennen, es bereitet die Zivilcourage der nächsten Stunde vor.",
+            "wennEsKippt": "Erzählt jemand bei Karten zu Alkohol, Diebstahl oder Mutproben von eigenen Erlebnissen oder prahlt damit, nicht vertiefen und nicht bewerten, sondern zur Karte zurückführen. Wird die drängelnde Rolle zu heftig, sofort einfrieren und neu starten – die Leitung spielt, nie eine Person aus der Gruppe.",
+            "blatt": "a7-druck-karten"
+          },
+          {
+            "titel": "Skill: Anker vor dem Nein",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Ein Skill für die zwei Sekunden vor dem Nein, der auf dem festen Stand aus Einheit 20 aufbaut: Alle stehen, die Leitung leitet die drei Schritte langsam an und macht mit (höchstens 5 Min., still höchstens 3 Min.). Danach der Abschluss (10 Min.): Skills-Pass, Mission und eigener Moment.",
+            "sagen": [
+              "Füße spüren, lang ausatmen – dann erst der Satz.",
+              "Ein ruhiger Atemzug vor dem Nein gibt dir zwei Sekunden, und oft reichen genau die."
+            ],
+            "punkte": [
+              "Skill (5 Min.): Füße fest auf den Boden und das Gewicht spüren, einmal lang ausatmen, dann den eigenen Nein-Satz sagen – ruhig, mit Blick; drei Durchgänge: flüstern, normale Lautstärke, vor der Leitung, die einmal freundlich drängelt.",
+              "Skills-Pass (3 Min.): ein Satz zur Frage – Was hat mein Nein heute stärker gemacht: mein Satz, der Anker oder eine zweite Person? Dann der Stempel.",
+              "Daumen (1 Min.): Auf drei zeigen alle, wie sicher sich ihr Nein heute anfühlt – hoch, Mitte oder runter.",
+              "Mission und Moment (6 Min.): die Mission vorlesen; der Moment steht schon in Aufgabe 3 – jede Person überträgt ihren Wenn-Teil in die Spalte „Mein Moment: Wenn …“; wer einen anderen Moment will, zeigt vorher, wo er am ehesten kommt (ein Finger Pause, zwei Chat, drei nach der Schule); dann der Ausblick."
+            ],
+            "tipp": "Wer nicht laut sprechen mag, sagt den Satz im Kopf; im Sitzen geht der Anker genauso – Füße auf den Boden, Hände auf die Oberschenkel."
+          }
+        ],
+        "bruecke": "Nächstes Mal geht es um Mobbing: Ihr seht Szenen aus dem Film Wunder und übt, was Zuschauende tun können, damit es aufhört.",
+        "mission": "Mach den Anker und sag dein Nein – oder beobachte, wo leiser Druck wirkt.",
+        "hintergrund": "Gleichaltrige beeinflussen Jugendliche stark: In einem Fahrspiel am Computer gingen sie vor Zuschauern deutlich mehr Risiken ein (Gardner & Steinberg, 2005). Ein einziger Verbündeter senkt die Anpassung an eine falsche Mehrheit spürbar (Asch, 1956) – daher das zweite Nein. Das Bild von Komfort-, Lern- und Panikzone (Senninger, 2000) trennt Mut von Überforderung: Wachsen kann man nur in der Lernzone. Gruppendruck ist kein Charakterfehler, sondern eine erwartbare Herausforderung dieses Alters.",
+        "quellen": [
+          "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+          "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+          "Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia."
+        ],
+        "achtung": "Karten zu Alkohol, Diebstahl und Mutproben sind Themen, keine Anleitung: keine Einzelheiten, keine Fragen nach eigenem Konsum oder eigenen Mutproben, nichts bewerten, bei Bedarf ein Einzelgespräch anbieten. Die drängelnde Rolle spielt immer die Leitung, nie eine Person aus der Gruppe, und wer schon einmal nachgegeben hat, wird nicht beschämt – Druck wirkt bei allen. Wird deutlich, dass jemand erpresst, bedroht oder zu etwas gedrängt wird – auch online oder mit sexuellem Druck –, die zuständige Leitung (Responsable) informieren und bei Gefährdung sofort nach dem internen Schutzkonzept handeln.",
+        "differenzierung": {
+          "leichter": "Nein-Sätze stehen zur Auswahl an der Tafel („Nein, danke“, „Ohne mich“, „Nee, lass mal“), und wer noch wenig Deutsch spricht, sagt sein Nein zuerst in der eigenen Sprache und dann mit einem deutschen Wort.",
+          "schwerer": "Eine Szene mit leisem Druck erfinden, in der niemand etwas sagt, und ein Nein dafür finden – oder als zweite Person neben jemandem stehen und mit einem Satz Rückendeckung geben."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit der Zusatzfrage (5 Min.), Zonen-Spiel und die vier Arten, Nein zu sagen (15 Min.), eine Druck-Karte mit erstem und zweitem Nein (20 Min.), Anker vor dem Nein, Skills-Pass und Mission (10 Min.). Bewegungsspiel und Nein-Challenge entfallen; den Moment für die Mission wählen alle mündlich."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-nein-sagen",
+      "bereich": "skills",
+      "thema": "schwierig",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Nein sagen", "Gruppendruck", "Zonen", "Wenn-dann-Plan"],
+      "bild": "icon:hand-stop",
+      "kurs": ["a7-e22"],
+      "de": {
+        "titel": "Nein sagen – vier Wege",
+        "untertitel": "Wenn alle Ja sagen und du Nein meinst",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Wo stehst du? Kreuze für jede Situation deine Zone an.",
+            "hinweis": "Deine Zonen gehören dir – bei anderen liegen sie anders.",
+            "symbole": ["ankreuzen"]
+          },
+          {
+            "art": "einschaetzung",
+            "optionen": ["Komfort", "Lern", "Panik"],
+            "items": [
+              "Vor der Gruppe ein Lied singen",
+              "Nein sagen, wenn alle Ja sagen",
+              "Im Gruppenchat allein widersprechen",
+              "Einer Freundin absagen"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Kreise deine Art ein und schreib deinen Nein-Satz.",
+            "symbole": ["einkreisen", "schreiben"]
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 0,
+            "items": [
+              { "titel": "Kaputte Schallplatte", "text": "Ruhig immer derselbe Satz: „Nein, ich will nicht.“" },
+              { "titel": "Nein plus Vorschlag", "text": "„Nein. Aber wir könnten stattdessen …“" },
+              { "titel": "Mit Humor", "text": "„Nee, dafür bin ich heute zu faul.“" },
+              { "titel": "Einfach gehen", "text": "Du musst dich nicht rechtfertigen." }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Mein Nein-Satz: …"],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib deinen Plan für einen Druck-Moment.",
+            "hinweis": "Du entscheidest, was du teilst.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Wenn über jemanden gelästert wird und alle mich anschauen,",
+                "dann": "sage ich „Ohne mich“ und wechsle das Thema."
+              }
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "info",
+                "symbol": "wissen",
+                "titel": "Gut zu wissen",
+                "text": "Dazugehören ist ein starkes Bedürfnis. Darum fällt ein Nein vor der Gruppe schwer. Eine zweite Person macht den Druck viel kleiner."
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "merke",
+                "text": "Ein echter Freund akzeptiert ein Nein."
+              }
+            ]
+          },
+          {
+            "art": "notfall",
+            "text": "Erpresst oder bedroht? Hol dir Hilfe, auch wenn du mitgemacht hast. 116 111 · 8002 1234",
+            "eintraege": []
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen halten ihre Zonen fest, lernen vier Arten, Nein zu sagen, schreiben einen eigenen Nein-Satz und einen Plan für einen Druck-Moment.",
+          "ablauf": [
+            "Einheit 22, Teil 1: Aufgabe 1 nach dem Zonen-Spiel; nach den vier Arten Aufgabe 2 allein (5 Min.), danach mit der Leitung üben.",
+            "Teil 2: Aufgabe 3 allein nach den Szenen und der Nein-Challenge (5 Min.); Stichworte reichen, die Pläne werden weder vorgelesen noch eingesammelt.",
+            "Skill: Der Nein-Satz aus Aufgabe 2 ist der Satz für den Anker; der Wenn-Teil aus Aufgabe 3 ist der Moment für die Mission."
+          ],
+          "hintergrund": "Im Jugendalter beeinflusst die Anwesenheit Gleichaltriger Entscheidungen stark (Gardner & Steinberg, 2005). Schon eine einzige weitere Person, die widerspricht, verringert den Anpassungsdruck deutlich (Asch, 1956). Kurze, vorbereitete Sätze erleichtern das Nein; die Kaputte Schallplatte stammt aus dem Skillstraining der DBT für Jugendliche (Rathus & Miller, 2015).",
+          "quellen": [
+            "Gardner, M. & Steinberg, L. (2005). Peer influence on risk taking, risk preference, and risky decision making in adolescence and adulthood: An experimental study. Developmental Psychology, 41(4), 625–635.",
+            "Asch, S. E. (1956). Studies of independence and conformity: I. A minority of one against a unanimous majority. Psychological Monographs: General and Applied, 70(9), 1–70.",
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+          ],
+          "achtung": "Eigene Erfahrungen mit Alkohol, Diebstahl oder Mutproben nicht vertiefen und nicht bewerten; wer schon nachgegeben hat, wird nicht beschämt. Bei Erpressung oder Bedrohung, auch online, die zuständige Leitung (Responsable) informieren.",
+          "material": "Heft, Stifte"
+        }
+      }
+    },
+    {
+      "id": "a7-druck-karten",
+      "bereich": "skills",
+      "thema": "schwierig",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "25 Min.",
+      "eldib": [],
+      "schlagworte": ["Druck-Karten", "Rollenspiel", "Nein-Challenge", "zweites Nein"],
+      "bild": "icon:users",
+      "kurs": ["a7-e22"],
+      "de": {
+        "titel": "Druck-Karten und Nein-Karten",
+        "untertitel": "Kopiervorlage: sechs erfundene Druck-Situationen, drei Karten für die Challenge",
+        "bausteine": [
+          {
+            "art": "text",
+            "klein": true,
+            "text": "Einmal kopieren und ausschneiden. Die Leitung spielt A und drängelt freundlich und hartnäckig, die Person spielt B und sagt Nein; im zweiten Durchgang stellt sich eine weitere Person dazu. Keine Beleidigung, keine Berührung. Die drei Karten unten sind für die Nein-Challenge und für die Leitung gedacht."
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 130,
+            "karten": [
+              {
+                "titel": "1 · Im Supermarkt",
+                "text": "A steckt eine Packung Kaugummi ein, ohne zu bezahlen, und drückt sie B in die Hand.\nStartsatz A: „Behalt du die, merkt doch keiner.“"
+              },
+              {
+                "titel": "2 · Die Party",
+                "text": "Auf einer Geburtstagsfeier haben Ältere Alkohol mitgebracht, fast alle trinken. A hält B einen Becher hin.\nStartsatz A: „Komm schon, nur ein Schluck.“"
+              },
+              {
+                "titel": "3 · Das Lästern",
+                "text": "In der Clique wird über eine Freundin von B gelästert. Alle lachen und schauen B an.\nStartsatz A: „Du lachst doch auch, oder?“"
+              },
+              {
+                "titel": "4 · Der Verein",
+                "text": "A und die anderen melden sich im Fußballverein an und drängen B mitzukommen. B macht lieber Musik.\nStartsatz A: „Ohne dich ist es kein Team.“"
+              },
+              {
+                "titel": "5 · Die Mutprobe",
+                "text": "Nach der Schule wollen alle über den Zaun der Baustelle klettern. A geht voran.\nStartsatz A: „Nur Feiglinge bleiben unten.“"
+              },
+              {
+                "titel": "6 · Das Foto",
+                "text": "Im Gruppenchat geht ein peinliches Foto von einem Mitschüler herum. A will, dass B es weiterleitet.\nStartsatz A: „Leite es weiter, ist doch nur ein Witz.“"
+              }
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 160,
+            "karten": [
+              {
+                "titel": "Druck-Sätze (Leitung)",
+                "text": "Komm schon, nur einmal.\nAlle machen mit.\nDu traust dich eh nicht.\nSei kein Spielverderber.\nFreundlich und hartnäckig, nie beleidigend."
+              },
+              {
+                "titel": "Quatsch-Angebote",
+                "text": "Tausch mit mir die Schuhe.\nSing jetzt mit mir laut ein Lied.\nWir gehen alle rückwärts zum Bus.\nWir reden eine Minute nur in Reimen."
+              },
+              {
+                "titel": "Vier Arten, Nein zu sagen",
+                "text": "Kaputte Schallplatte: ruhig derselbe Satz.\nNein plus Vorschlag.\nMit Humor.\nEinfach gehen."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Erfundene Druck-Situationen für das Rollenspiel mit der Leitung als Drängler und Hilfen für die Nein-Challenge.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; Karten weglassen, die einer aktuellen Lage in der Gruppe ähneln.",
+            "Einheit 22, Teil 2: Jede Person zieht eine Karte, die Gruppe bespricht drei Fragen, dann spielt sie B gegen die Leitung als A; im zweiten Durchgang sagt eine weitere Person ebenfalls Nein.",
+            "Nein-Challenge: Die Leitung nutzt die Quatsch-Angebote und Druck-Sätze, die Person hält 60 Sekunden mit mindestens fünf verschiedenen Nein stand."
+          ],
+          "hintergrund": "Kurze, vorbereitete Sätze erleichtern das Nein; die Kaputte Schallplatte und ein selbstsicherer Auftritt stammen aus dem Skillstraining der DBT für Jugendliche (Rathus & Miller, 2015). Die drängelnde Rolle spielt immer die Leitung, damit niemand aus der Gruppe in die Rolle des Drängelnden gerät.",
+          "quellen": [
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}
