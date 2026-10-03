@@ -1,0 +1,14 @@
+/* Tank-Detektiv: sechs Tanks als Tipp-Flächen mit Glas, das sich füllt */
+.tank-grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.tank { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; background: var(--bg); border: 2px solid var(--line); border-radius: var(--radius-sm); padding: 10px 8px; font: inherit; color: inherit; cursor: pointer; min-height: 120px; transition: transform 120ms, box-shadow 120ms; }
+.tank:disabled { cursor: default; }
+.tank.sel { box-shadow: 0 0 0 3px var(--tk); background: color-mix(in srgb, var(--tk) 18%, var(--bg)); }
+.tank-glass { position: relative; width: 36px; height: 46px; border: 2px solid var(--line); border-radius: 4px 4px 10px 10px; background: color-mix(in srgb, var(--tk) 10%, var(--panel)); overflow: hidden; }
+.tank-glass > i { position: absolute; left: 0; right: 0; bottom: 0; height: 22%; background: var(--tk); transition: height 700ms cubic-bezier(.2,.8,.2,1); }
+.tank[data-state="empty"] .tank-glass > i { height: 4%; }
+.tank[data-state="half"] .tank-glass > i { height: 35%; }
+.tank[data-state="full"] .tank-glass > i { height: 96%; }
+.tank-ic { color: var(--tk); }
+.tank.mini { min-height: 0; padding: 6px; flex-direction: row; gap: 6px; }
+.tank.mini .tank-glass { width: 24px; height: 32px; }
+.tank.mini .tank-glass > i { height: 60%; }

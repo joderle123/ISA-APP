@@ -1,0 +1,12 @@
+/* Kleiner Schritt: Machbar-Meter, drei Taps, Wenn-dann-Satz, Eingabefelder (nur im RAM) */
+.ks-taps { display: grid; gap: 10px; grid-template-columns: repeat(3, 1fr); }
+.ks-tap { display: flex; flex-direction: column; gap: 4px; background: var(--bg); border: 2px solid var(--line); border-radius: var(--radius-sm); padding: 10px 12px; min-height: 86px; }
+.ks-tap[data-size="0"] { color: var(--muted); border-style: dashed; }
+.ks-tap[data-size="3"] { background: color-mix(in srgb, var(--hot) 22%, var(--bg)); }
+.ks-tap[data-size="2"] { background: color-mix(in srgb, var(--yellow) 30%, var(--bg)); }
+.ks-tap[data-size="1"] { background: color-mix(in srgb, var(--good) 30%, var(--bg)); }
+.ks-tap-ic { color: var(--muted); }
+.ks-satz.good { border-color: var(--good); box-shadow: 0 var(--lift) 0 var(--good); }
+.ks-input { font: inherit; font-size: 1.05em; padding: 12px 14px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: inherit; width: 100%; box-sizing: border-box; }
+.ks-input:focus { outline: 3px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 640px) { .ks-taps { grid-template-columns: 1fr; } }
