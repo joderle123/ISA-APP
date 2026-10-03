@@ -1,0 +1,307 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e10",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["ff-anspannungsskala", "a7-skills-nach-zahl"],
+      "vorlagen": ["a7-skill-sortierkarten"],
+      "woerter": [
+        { "de": "die Anspannung", "fr": "die Anspannung" },
+        { "de": "der Alarm", "fr": "der Alarm" },
+        { "de": "runterkommen", "fr": "runterkommen" }
+      ],
+      "de": {
+        "titel": "Skills und die Anspannungsskala",
+        "kurz": "Alle haben schon Skills: Die Anspannungsskala von 0 bis 100 zeigt, bei welcher Zahl welcher Skill noch hilft – mit Schritt nach vorn, Handmodell, Linie, Alarm-Rollenspiel und einem ersten Test.",
+        "ziele": [
+          "erkennen, dass sie schon Skills haben, und ordnen sie den Zonen der Anspannungsskala zu",
+          "erklären, was bei 0–30, 30–70 und 70–100 in Kopf und Körper passiert und warum bei Rot gilt: erst runter, dann reden",
+          "schätzen ihre Anspannung vor und nach einem Spaziergang ein"
+        ],
+        "material": [
+          "Malerkrepp für die Bodenlinie (4–5 m), Karten 0, 30, 70 und 100",
+          "Tafel oder Flipchart, Stifte in Grün, Gelb und Rot",
+          "Blätter „Meine Anspannung von 0 bis 100“ und „Meine Skills von 0 bis 100“",
+          "Skill-Karten zum Sortieren (Vorlage)",
+          "Gefühlsrad, Wäscheklammern, Uhr, Skills-Pässe, Stempel"
+        ],
+        "vorbereitung": [
+          "Bodenlinie mit Malerkrepp kleben (Platz davor und dahinter) und Karten 0, 30, 70 und 100 daneben legen; sie bleibt die ganze Stunde liegen.",
+          "Skill-Karten kopieren und schneiden, Zonenkarten auslegen; einen Weg für den Spaziergang festlegen (draußen oder durch Flur und Treppenhaus).",
+          "Eine echte, kleine Zahl für den Check-in überlegen, zum Beispiel 40: Der Morgen war hektisch."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühlsrad und die erste Zahl" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Start ins Kapitel" },
+          { "min": "15–45", "phase": "uebung", "titel": "Anspannungsskala: Zonen und Handmodell" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Bewegung: Zahlen-Statuen" },
+          { "min": "50–85", "phase": "uebung", "titel": "Auf der Linie, Skills sortieren, Alarm-Rollenspiel" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Spaziergang ohne Worte" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad und die erste Zahl",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Check-in wie gewohnt mit dem Gefühlsrad, neu ist eine Zahl von 0 bis 100 für die Anspannung: 0 ist völlig entspannt, kurz vor dem Einschlafen, 100 ist so aufgewühlt, wie man es sich nur vorstellen kann. Die Leitung beginnt mit einer ehrlichen Zahl; wer mag, stellt sich dazu an die passende Stelle der Bodenlinie.",
+            "sagen": [
+              "Ab heute gibt es zum Gefühl noch eine Zahl: Wie angespannt seid ihr gerade, von 0 bis 100?",
+              "Bei mir ist es eine 40. Der Morgen war hektisch, und ich bin noch nicht ganz angekommen."
+            ],
+            "tipp": "Zahlen weder kommentieren noch vergleichen: Wer eine sehr hohe Zahl nennt, bekommt ein kurzes „Danke“ und nach der Runde leise das Angebot, später kurz zu reden.",
+            "wennEsKippt": "Nennen alle aus Spaß 100 oder 0, mit Humor aufnehmen und nachfragen: Wie sähe eine echte 100 aus, und woran merkt ihr, dass heute keine ist?"
+          },
+          {
+            "titel": "Rückblick, Mission und Start ins Kapitel",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Zur Mission fragen: Kam dein Moment – wo hast du dein erstes Warnsignal gespürt, und was hast du danach getan? Dann an die Stärke-Linie von 0 bis 10 erinnern: Die neue Skala ist feiner und zeigt, was man bei welcher Zahl noch tun kann. Das Kapitel ankündigen: ein Trainingslager, am Ende hat jede Person ihren eigenen Skills-Koffer.",
+            "sagen": [
+              "Bisher ging es darum, wie stark ein Gefühl ist. Ab heute geht es darum, was man macht, wenn es zu stark wird.",
+              "Die nächsten Treffen sind so etwas wie ein Trainingslager – am Ende hat jede Person einen Koffer mit Skills, die wirklich passen."
+            ]
+          },
+          {
+            "titel": "Anspannungsskala: Zonen und Handmodell",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Das Bild (3 Min.): Anspannung ist die Lautstärke des inneren Alarms – Wut, Angst, Stress oder Aufregung drehen sie hoch. Das Modell: drei Zonen – grün bis 30, gelb bis 70, rot darüber – und ein Satz, der in jeder Zone gilt: Erst runter, dann reden.",
+            "sagen": [
+              "Mach einen Schritt nach vorn, wenn du heute schon einmal genervt warst.",
+              "Das, was euch hilft, wenn es zu viel wird, nennen wir Skills – ihr habt also schon welche."
+            ],
+            "punkte": [
+              "Ein Schritt nach vorn (8 Min.): Die Leitung liest Sätze von „heute schon genervt“ bis „etwas, das hilft“; wer sich angesprochen fühlt, tritt einen Schritt vor und geht zurück – niemand erklärt etwas, die Leitung geht ehrlich mit.",
+              "Thermometer füllen (7 Min.): Ein Thermometer mit drei Zonen entsteht an der Tafel; die Gruppe sagt, was in Kopf und Körper passiert und was dort hilft (Blatt „Meine Anspannung von 0 bis 100“).",
+              "Handmodell (5 Min.): Faust mit dem Daumen innen – der Daumen ist der Alarm, die Finger sind der Teil, der nachdenkt; bei 90 klappen die Finger hoch, und Reden hilft nicht mehr.",
+              "Skills-Sammlung (7 Min.): Alles, was beim Schritt nach vorn als Hilfe genannt wurde, kommt ohne Namen an die Tafel, dazu die Skills der letzten Wochen aus dem Skills-Pass."
+            ],
+            "tabelle": {
+              "spalten": ["Anspannung", "Was passiert?", "Was hilft?"],
+              "zeilen": [
+                ["0–30 (grün)", "Ich kann klar denken, zuhören und reden.", "Reden, nachdenken, Probleme lösen – und Skills üben"],
+                ["30–70 (gelb)", "Die Gedanken werden eng, ich werde gereizt, unruhig oder ziehe mich zurück.", "Ablenken: Kopf-Skills, Sinne, Musik, Bewegung"],
+                ["70–100 (rot)", "Denken geht kaum noch, der Körper übernimmt: Herzrasen, Hitze, Tunnelblick.", "Starke Körper- und Sinnes-Skills, raus aus der Situation, Hilfe holen"]
+              ]
+            },
+            "tipp": "„Erst runter, dann reden“ groß neben das Thermometer schreiben; der Satz hilft auch der Leitung im Konflikt: Wir reden, wenn du wieder unter 50 bist.",
+            "wennEsKippt": "Wird gekichert oder jemand nach vorn geschubst, kurz anhalten und an den Gruppenvertrag erinnern: Jede Person entscheidet allein über ihren Schritt. Nennt jemand etwas, das schadet – sich verletzen, Alkohol –, ruhig bleiben, nicht vertiefen und nach der Übung ein Einzelgespräch führen.",
+            "blatt": "ff-anspannungsskala"
+          },
+          {
+            "titel": "Bewegung: Zahlen-Statuen",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Die Leitung ruft eine Zahl – zum Beispiel 20, 60 oder 95 –, alle zeigen sie als Statue mit dem ganzen Körper; die anderen raten die Zahl und woran sie sie erkannt haben.",
+            "tipp": "Wer mag, ruft selbst eine Zahl – die Leitung macht mit und beginnt mit einer 95."
+          },
+          {
+            "titel": "Auf der Linie, Skills sortieren, Alarm-Rollenspiel",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Praxis: Die Gruppe stellt sich mit ihren Zahlen auf die Linie, sortiert Skills nach Zonen und übt mit der Leitung, was bei einer hohen Zahl hilft: erst runter, dann reden.",
+            "sagen": [
+              "Stellt euch dahin, wo ihr wirklich wärt – nicht, wo ihr gern wärt.",
+              "Dieselbe Situation ist für den einen eine 20 und für die andere eine 80. Keiner liegt falsch."
+            ],
+            "punkte": [
+              "Auf der Linie (10 Min.): Die Leitung liest Situationen vom Blatt „Meine Anspannung von 0 bis 100“ vor, alle stellen sich gleichzeitig an ihre Zahl, zwei sagen warum – und die anderen fragen: Was würde dir bei dieser Zahl helfen?",
+              "Skills sortieren (10 Min.): Die Skill-Karten kommen in die höchste Zone, in der der Skill noch hilft; was kurz entlastet und danach Ärger macht, landet im Papierkorb.",
+              "Alarm-Rollenspiel (10 Min.): Die Leitung spielt eine Person bei 85 („Das Spiel ist abgestürzt!“); erst versucht jede Person zu reden – es klappt nicht –, dann sagt sie den Stopp-Satz „Wir reden, wenn du wieder unter 50 bist“ und bietet einen Skill an.",
+              "Meine Skills (5 Min.): Jede Person trägt auf dem Blatt in jede Zone einen Skill ein, den sie schon kennt oder testen will; „noch offen“ ist erlaubt."
+            ],
+            "tipp": "Bei großen Unterschieden nachfragen statt bewerten: Was macht die Situation für dich so groß oder so klein?",
+            "wennEsKippt": "Stellt sich jemand aus Trotz immer auf 100, das gelten lassen und fragen, was in so einer Situation bei ihm los ist. Geht es nur noch um Lacher, die Linie verlassen und im Sitzen mit dem Blatt weitermachen.",
+            "blatt": "a7-skills-nach-zahl"
+          },
+          {
+            "titel": "Skill: Spaziergang ohne Worte",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Der Skill testet, was Gehen mit der Zahl macht: Zahl vorher, drei Minuten ohne Worte gehen, Zahl nachher (zusammen höchstens 5 Minuten, die Stille höchstens 3 Minuten), danach der Abschluss mit Skills-Pass, Mission und Moment.",
+            "sagen": [
+              "Schreibt eure Zahl auf, ohne bei den anderen zu schauen.",
+              "Bei wem ist die Zahl runtergegangen? Und bei wem nicht – das ist genauso ein Ergebnis."
+            ],
+            "punkte": [
+              "Zahl vorher (1 Min.): still von 0 bis 100 einschätzen und ins Blatt eintragen.",
+              "Gehen (3 Min.): hintereinander, ohne Worte und ohne Handy, draußen oder durch Flur und Treppenhaus; achte nur auf Schritte, Geräusche und Gerüche.",
+              "Zahl nachher (1 Min.): eintragen und beide Zahlen nennen – gesunken, gleich oder höher ist alles ein Ergebnis.",
+              "Skills-Pass (4 Min.): Ein Satz zu „Welchen Skill hatte ich schon, bevor ich wusste, dass es einer ist?“, dann der Stempel.",
+              "Mission, Moment und Ausblick (6 Min.): Mission ansagen, jede Person wählt ihren Moment und schreibt ihn ins Heft; Ausblick auf Körper und Atem draußen."
+            ],
+            "tipp": "Ein Skill wirkt nicht bei allen gleich und nicht an jedem Tag gleich – deshalb wird getestet, statt Rezepte zu verteilen.",
+            "wennEsKippt": "Macht jemand Faxen oder redet, ruhig dazugehen und leise erinnern: nur drei Minuten. Wer nicht mitgehen kann oder will, sitzt in Sichtweite am Fenster und hört drei Minuten nur zu.",
+            "blatt": "a7-skills-nach-zahl"
+          }
+        ],
+        "bruecke": "Nächste Woche werdet ihr zu Versuchspersonen: Ihr testet Skills über Körper und Atem draußen, mit Zahl vorher und Zahl nachher – zieht Schuhe an, in denen ihr euch bewegen könnt.",
+        "mission": "Schätze einmal am Tag deine Zahl von 0 bis 100 – morgens oder abends.",
+        "hintergrund": "Die Anspannungsskala von 0 bis 100 gehört im deutschsprachigen Raum zu den Grundwerkzeugen des Skillstrainings für Jugendliche (Fleischhaker et al., 2011). Bei sehr hoher Erregung versagen Fertigkeiten, die Nachdenken brauchen; dann helfen Skills über Körper und Sinne, und erst danach sind Gespräch und Problemlösen wieder möglich (Linehan, 2015). Das Handmodell zeigt jugendgerecht, warum: Der Daumen ist der Alarm, die Finger sind der Teil, der bremst und nachdenkt (Siegel & Bryson, 2011).",
+        "quellen": [
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte."
+        ],
+        "achtung": "„Ein Schritt nach vorn“ und die eigene Situation auf dem Blatt berühren Erlebnisse mit Kontrollverlust: Nichts davon wird vertieft, Stehenbleiben und „weiter“ sind immer erlaubt, und das Blatt wird nicht eingesammelt. Nennt jemand Selbstverletzung, Gewalt oder Suizidgedanken als „Skill“ oder als Situation, ruhig bleiben, nicht nachbohren, noch am selben Tag ein Einzelgespräch führen und die Responsable informieren. Nennt jemand im Check-in immer wieder Zahlen über 80, nach der Stunde behutsam nachfragen; beim Spaziergang bleiben alle in Sichtweite.",
+        "differenzierung": {
+          "leichter": "Statt der Zahl reicht die Farbe – grün, gelb, rot –, die Skill-Karten haben Bilder, und auf dem Blatt darf abgeschrieben werden, auch in der eigenen Sprache.",
+          "schwerer": "Zu zwei Situationen aufschreiben, welcher Gedanke die Zahl hochtreibt, oder eine eigene Faustregel für die Gruppe formulieren, zum Beispiel für Streit im Chat."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit der ersten Zahl (5 Min.), Zonen und Handmodell mit dem Schritt nach vorn (15 Min.), Skills sortieren und Alarm-Rollenspiel (15 Min.), Spaziergang mit Zahl vorher und nachher, Skills-Pass und Mission (15 Min.). Zahlen-Statuen und Bodenlinie entfallen; die Linie kann in der nächsten Stunde nachgeholt werden."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-skills-nach-zahl",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": ["Anspannung", "Anspannungsskala 0–100", "Skills ordnen", "Zahl vorher und nachher", "Annexe"],
+      "bild": "icon:temperature",
+      "kurs": ["a7-e10"],
+      "de": {
+        "titel": "Meine Skills von 0 bis 100",
+        "untertitel": "Nicht jeder Skill passt zu jeder Zahl.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Bei Rot ist dein Alarm so laut, dass Nachdenken kaum noch geht. Dann helfen Skills über den Körper, zum Beispiel lang ausatmen. Erst runter, dann reden."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib in jede Zone einen Skill, den du schon kennst oder testen willst.",
+            "hinweis": "Abschreiben ist erlaubt. Für Rot geht auch „noch offen“.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "thermometer",
+            "linien": 2,
+            "stufen": [
+              { "titel": "Grün (0–30): Ich kann klar denken", "text": "Das hilft mir, solange ich noch nachdenken kann:" },
+              { "titel": "Gelb (30–70): Es wird eng", "text": "Damit schalte ich um und komme runter:" },
+              { "titel": "Rot (70–100): Der Körper übernimmt", "text": "Das geht bei mir auch bei 90 noch:" }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Teste den Spaziergang: Zahl vorher, Zahl nachher.",
+            "hinweis": "Heute in der Stunde und einmal in deinem Moment. Das Blatt gehört dir.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "tabelle",
+            "spalten": ["Wann und wo?", "Zahl vorher", "Skill", "Zahl nachher"],
+            "breiten": [2, 1, 2.4, 1],
+            "zeilen": 2,
+            "beispiel": ["Mo., Streit im Bus", "70", "Musik hören", "50"],
+            "werte": [["heute in der Stunde", "", "Spaziergang ohne Worte", ""]]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Was treibt deine Zahl hoch – und was hilft dir vielleicht?",
+            "hinweis": "Du schreibst nur für dich. Stichworte reichen.",
+            "symbole": ["nachdenken", "schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Meine Zahl geht hoch, wenn …", "Das könnte mir helfen: …"],
+            "linien": 1
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen ordnen Skills den Zonen der Anspannungsskala zu und testen einen Skill mit Zahl vorher und Zahl nachher.",
+          "ablauf": [
+            "Einheit 10, Schritt 5: Aufgabe 1 – in jede Zone einen Skill eintragen (5 Min.); Abschreiben von der Tafel ist erlaubt, für Rot geht „noch offen“.",
+            "Schritt 6: Aufgabe 2 – Zahl vorher und nachher beim Spaziergang eintragen; die zweite Zeile füllt jede Person in ihrem Moment.",
+            "Aufgabe 3 allein und ohne Vorlesen; das Blatt wird nicht eingesammelt.",
+            "In den nächsten Einheiten wächst die Tabelle: Jeder getestete Skill bekommt eine Zeile."
+          ],
+          "hintergrund": "Fertigkeiten, die Nachdenken brauchen, versagen bei sehr hoher Anspannung, Körper- und Sinnes-Skills dagegen kaum (Linehan, 2015). Wer seine Zahl kennt, kann den passenden Weg wählen: Die Zahl vorher und nachher macht sichtbar, was ein Skill bei dieser Person bewirkt – statt Rezepte zu verteilen, wird getestet.",
+          "quellen": [
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          ],
+          "material": "Stifte, Uhr"
+        }
+      }
+    },
+    {
+      "id": "a7-skill-sortierkarten",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "10 Min.",
+      "eldib": [],
+      "schlagworte": ["Skills ordnen", "Anspannung", "Sortierkarten", "Annexe"],
+      "bild": "icon:list-check",
+      "kurs": ["a7-e10"],
+      "de": {
+        "titel": "Skill-Karten zum Sortieren",
+        "untertitel": "Kopiervorlage – beide Seiten einmal kopieren und ausschneiden, die Karten in einen Umschlag stecken",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Ein Satz besteht aus zwölf Skill-Karten (diese Seite), vier Zonen-Karten und zwei leeren Karten (nächste Seite). Die Gruppe legt jede Skill-Karte in die höchste Zone, in der der Skill noch hilft. In den Papierkorb kommt, was die Zahl kurz senkt und danach Ärger macht. Einige Karten sind bewusst umstritten.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "karten": [
+              { "titel": "5-4-3-2-1", "text": "5 Dinge sehen, 4 hören, 3 spüren, 2 riechen, 1 schmecken.", "bild": "icon:eye" },
+              { "titel": "Wie ein Baum stehen", "text": "Füße fest auf den Boden, aufrichten, dreimal lang ausatmen.", "bild": "icon:tree" },
+              { "titel": "Farbsuche", "text": "Eine Farbe wählen und drei Dinge in dieser Farbe finden.", "bild": "icon:search" },
+              { "titel": "Bodyscan kurz", "text": "Stirn, Schultern, Brust, Bauch, Füße: spüren, ohne etwas zu ändern.", "bild": "icon:user" },
+              { "titel": "Musik hören", "text": "Einen Song, der dich runterbringt, über Kopfhörer hören.", "bild": "icon:headphones" },
+              { "titel": "Kaltes Wasser", "text": "Hände oder Handgelenke 30 Sekunden unter kaltes Wasser halten.", "bild": "icon:droplet" },
+              { "titel": "In Ruhe reden", "text": "Einer Person erzählen, was los ist, und zusammen überlegen.", "bild": "icon:messages" },
+              { "titel": "Tür knallen", "text": "Die Tür zuschlagen, gegen etwas treten oder laut fluchen.", "bild": "icon:door" },
+              { "titel": "Hilfe holen", "text": "Einer erwachsenen Person sagen: Ich brauche gerade Hilfe.", "bild": "icon:lifebuoy" },
+              { "titel": "Zocken oder scrollen", "text": "Eine Weile am Handy oder an der Konsole abschalten.", "bild": "icon:device-gamepad-2" },
+              { "titel": "Wütende Nachricht", "text": "Sofort im Chat zurückschreiben, was du gerade denkst.", "bild": "icon:device-mobile-message" },
+              { "titel": "Vollgas-Bewegung", "text": "Eine Minute Treppe laufen, Hampelmann oder auf der Stelle rennen.", "bild": "icon:run" }
+            ]
+          },
+          { "art": "seitenumbruch" },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 170,
+            "karten": [
+              { "titel": "Grün 0–30", "text": "Ich kann klar denken.", "bild": "icon:mood-smile" },
+              { "titel": "Gelb 30–70", "text": "Es wird eng.", "bild": "icon:mood-nervous" },
+              { "titel": "Rot 70–100", "text": "Der Körper übernimmt.", "bild": "icon:alert-triangle" },
+              { "titel": "Papierkorb", "text": "Hilft kurz, macht danach Ärger.", "bild": "icon:trash" },
+              { "titel": "Unser Skill:" },
+              { "titel": "Unser Skill:" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Zwölf Skills zum Sortieren nach Zonen: Die Gruppe entscheidet, bis zu welcher Zahl ein Skill noch hilft, und trennt Skills von Verhalten, das kurz entlastet und danach Ärger macht.",
+          "ablauf": [
+            "Beide Seiten einmal auf festes Papier kopieren und ausschneiden; ein Satz (18 Karten) genügt für drei Jugendliche.",
+            "Einheit 10, Schritt 5: sortieren (10 Min.), Streitfälle mit der Bodenlinie klären, eigene Skills auf die leeren Karten schreiben.",
+            "Rote Karten hochhalten: Welcher Skill hilft bei 90 noch? Das sind fast immer Körper- und Sinnes-Skills.",
+            "Die Sätze nach der Stunde in den Umschlag zurücklegen; laminiert halten sie mehrere Jahre."
+          ],
+          "hintergrund": "Fertigkeiten, die Nachdenken brauchen, versagen bei sehr hoher Anspannung, Körper- und Sinnes-Skills dagegen kaum (Linehan, 2015). „Zocken oder scrollen“ und „Musik hören“ sind bewusst umstritten: Ob sie helfen, hängt von Dauer, Person und Moment ab. „Wütende Nachricht“ bereitet den ersten Schritt für Rot vor: nichts abschicken.",
+          "quellen": [
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          ],
+          "material": "Festes Papier, Schere, Umschlag"
+        }
+      }
+    }
+  ]
+}

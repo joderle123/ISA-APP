@@ -1,0 +1,294 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e08",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-wer-sitzt-am-steuer"],
+      "vorlagen": ["a7-steuerpult-karten"],
+      "woerter": [
+        { "de": "das Steuerpult", "fr": "das Steuerpult" },
+        { "de": "der Kummer", "fr": "der Kummer" },
+        { "de": "trösten", "fr": "trösten" }
+      ],
+      "de": {
+        "titel": "Alles steht Kopf",
+        "kurz": "Zwei Szenen aus „Alles steht Kopf“ (2015) zeigen, wie Gefühle das Steuer übernehmen – und warum auch Kummer seinen Platz hat; dazu Aufstellung, Stimmenspiel und Trost-Rollenspiel.",
+        "ziele": [
+          "erkennen Gefühle in Filmszenen und beschreiben, woran sie sie erkennen",
+          "erklären mit dem Bild vom Steuerpult, welches Gefühl in einer Situation das Handeln bestimmt",
+          "begründen, warum Zuhören bei Kummer mehr hilft als Aufheitern, und üben Trost"
+        ],
+        "material": [
+          "Film „Alles steht Kopf“ (2015), Laptop oder Beamer, Lautsprecher, Untertitel",
+          "Blatt „Wer sitzt am Steuer?“, Steuerpult- und Situationskarten (Vorlage)",
+          "Plakat A1, dicke Stifte; Plakat mit den Botschaften aus Einheit 7",
+          "Gefühlsrad, Skills-Pässe, Stempel",
+          "Popcorn und Getränke (Allergien beachten)"
+        ],
+        "vorbereitung": [
+          "Vorführrechte (Einrichtungslizenz) mit der Responsable klären und die Altersfreigabe prüfen lassen; keine Angaben aus dem Gedächtnis übernehmen.",
+          "Beide Szenen vorher ansehen, Anfang und Ende notieren, Bild, Ton und Untertitel testen; Steuerpult-Karten kopieren und schneiden.",
+          "Wer gerade Umzug, Trennung von der Familie oder einen Verlust erlebt, vorher ansprechen: zuschauen oder aussetzen ist erlaubt."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Welches Gefühl war zuerst wach?" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Beobachtungsauftrag" },
+          { "min": "15–45", "phase": "uebung", "titel": "Das Steuerpult und Szene 1: Rileys erster Schultag" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Pause mit Popcorn" },
+          { "min": "50–85", "phase": "uebung", "titel": "Szene 2: Kummer tröstet Bing Bong – und wir üben Trost" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Achtsames Hören" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Welches Gefühl war zuerst wach?",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Check-in mit dem Gefühlsrad, heute mit einer Zusatzfrage: Welches Gefühl war heute Morgen als Erstes da – beim Aufwachen, im Bad, im Bus? Die Leitung beginnt; wer nur ein Wort zeigen mag, zeigt nur ein Wort.",
+            "sagen": [
+              "Welches Gefühl war heute als Erstes wach? Bei mir war es „müde“, und dann kurz „gestresst“, weil ich meinen Schlüssel gesucht habe.",
+              "Und jetzt, hier in der Runde – welches Wort passt?"
+            ],
+            "tipp": "Die Zusatzfrage führt direkt zum Film: Dort ist Freude das erste Gefühl, das in Rileys Kopf auftaucht."
+          },
+          {
+            "titel": "Rückblick, Mission und Beobachtungsauftrag",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Zur Mission fragen: Kam dein Moment für die Farbsuche – was wollte das Gefühl dir sagen? Dann den Film in zwei Sätzen vorstellen: Riley ist elf und zieht in eine neue Stadt, in ihrem Kopf steuern fünf Gefühle. Beobachtungsauftrag: Wer steht am Pult – und was macht Riley deshalb?",
+            "sagen": [
+              "Letzte Woche habt ihr herausgefunden, welche Botschaft jedes Gefühl hat. Heute seht ihr, was passiert, wenn ein Gefühl das Steuer übernimmt."
+            ],
+            "tipp": "Kennt jemand den Film, bekommt er eine Expertenrolle: Er ergänzt nach jeder Szene, was davor passiert ist – nur das Ende bleibt geheim."
+          },
+          {
+            "titel": "Das Steuerpult und Szene 1: Rileys erster Schultag",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Das Bild (4 Min.): In Rileys Kopf sitzen Freude, Kummer, Angst, Wut und Ekel an einem Steuerpult, und jedes Gefühl hat eine Aufgabe – die fünf Karten liegen im Halbkreis. Dann sieht die Gruppe Szene 1 mit dem Beobachtungsauftrag.",
+            "sagen": [
+              "Stopp. Wer stand gerade am Pult – und was hat Riley deshalb gemacht?",
+              "Freude will, dass Kummer in ihrem Kreis bleibt. Kennt ihr das – ein Gefühl wegsperren wollen?"
+            ],
+            "punkte": [
+              "Szene 1 sehen (7 Min.): Rileys erster Tag in der neuen Schule – Freude malt einen Kreis, in dem Kummer bleiben soll, doch in der Klasse berührt Kummer eine glückliche Erinnerung, und Riley weint vor allen; nach der Szene anhalten.",
+              "Stopp-Quiz (5 Min.): Wer stand am Pult, was hat Riley getan – und was passiert, wenn man ein Gefühl wegsperren will? Danach kreuzt jede Person in Aufgabe 1 für Szene 1 an.",
+              "Stimmenspiel (5 Min.): Alle sagen denselben Satz („Das war ja klar.“) mit der Stimme eines Gefühls vom Pult, die anderen raten, wer gerade spricht.",
+              "Aufstellung (9 Min.): Die Leitung liest eine Situation von den Karten vor, alle stellen sich zu dem Gefühl, das bei ihnen am Pult stünde – dazwischen ist erlaubt; zwei, drei Personen sagen, warum."
+            ],
+            "tipp": "Anfang und Ende der Szene vorher auf dem Abspielgerät notieren. In gemischtsprachigen Gruppen hilft der deutsche Ton mit Untertiteln oder die französische Fassung „Vice-versa“.",
+            "wennEsKippt": "Findet jemand den Film „für Kinder“, das ernst nehmen und eine Expertenrolle anbieten: Du achtest darauf, was der Film über Gefühle richtig und was er falsch darstellt. Wird jemand bei Umzug oder Weinen still, nicht vor der Gruppe ansprechen, sondern in der Pause kurz nachfragen.",
+            "blatt": "a7-wer-sitzt-am-steuer"
+          },
+          {
+            "titel": "Pause mit Popcorn",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Popcorn und Getränke wie im Kino, Allergien vorher abfragen; die Leitung isst mit, das Thema ruht – über Lieblingsfilme und Serien darf geredet werden.",
+            "tipp": "In der Pause bereitet die Leitung die zweite Szene am Abspielgerät vor."
+          },
+          {
+            "titel": "Szene 2: Kummer tröstet Bing Bong – und wir üben Trost",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Szene 2 zeigt, dass Aufheitern nicht immer hilft: Bing Bong, Rileys früherer Fantasiefreund, verliert etwas, das ihm viel bedeutet, und Freude will ihn aufheitern – erst als Kummer sich zu ihm setzt und zuhört, kann er weitergehen. Danach üben alle Trost im Rollenspiel mit der Leitung und halten fest, was der Film über Gefühle sagt.",
+            "sagen": [
+              "Warum hilft Kummer hier mehr als Freude – was macht Kummer anders?",
+              "Welches Gefühl sitzt bei dir oft am Steuer? Du kannst auch sagen: in der Schule eher das eine, zu Hause eher das andere."
+            ],
+            "punkte": [
+              "Szene 2 sehen (6 Min.): Die Szene bis zum Ende anschauen, dann anhalten und in Aufgabe 1 ankreuzen, wer am Pult stand.",
+              "Kummer-Frage (5 Min.): Warum hilft Kummer hier mehr als Freude? Jede Person schreibt eine Antwort (Aufgabe 2), dann wird verglichen.",
+              "Trost-Rollenspiel (12 Min.): Die Leitung spielt eine Person mit einem kleinen Kummer („Das Konzert ist abgesagt“, „Der Lieblingsdöner ist aus“); jede Person probiert erst die Freude-Antwort („Kopf hoch!“), dann die Kummer-Antwort (zuhören, dabeisitzen) – danach: Was hat geholfen?",
+              "Filmplakat-Slogan (5 Min.): Die Gruppe schreibt die Hauptbotschaft des Films als Slogan auf ein Plakat, wie auf einem Kinoplakat.",
+              "Mein Pult (7 Min.): Welches Gefühl sitzt bei dir oft am Steuer – in der Schule, zu Hause, mit Freunden? Aufgabe 3 schreibt jede Person allein, vorgelesen wird nur freiwillig."
+            ],
+            "tipp": "Die Leitung reagiert ehrlich: auf „Kopf hoch!“ mit einem Seufzer, auf echtes Zuhören mit Erleichterung – so spüren alle den Unterschied.",
+            "wennEsKippt": "Wird albern gespielt, ruhig auf eine absurde Mini-Sorge wechseln und weiterspielen. Wird jemand beim Thema Verlust still, nicht vor der Gruppe ansprechen, sondern in der Pause kurz nachfragen.",
+            "blatt": "a7-wer-sitzt-am-steuer"
+          },
+          {
+            "titel": "Skill: Achtsames Hören",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Nach dem Film hilft Hören, im Raum anzukommen: drei kurze Runden mit geschlossenen Augen oder Blick auf einen Punkt (zusammen höchstens 3 Minuten), danach der Abschluss mit Skills-Pass, Mission und Moment.",
+            "sagen": [
+              "Macht es euch bequem. Ihr müsst nichts tun, nur hören.",
+              "Welches Geräusch war am leisesten – und was hat dich überrascht?"
+            ],
+            "punkte": [
+              "Nah (1 Min.): Welche Geräusche hörst du ganz nah – im Raum, an deinem Stuhl, bei dir selbst?",
+              "Fern (1 Min.): Welche Geräusche kommen von weiter weg – aus dem Flur, von der Straße?",
+              "Leise (1 Min.): Welches ist das leiseste Geräusch, das du gerade hören kannst?",
+              "Skills-Pass (4 Min.): Ein Satz zu „Was nehme ich aus dem Film mit?“, dann der Stempel.",
+              "Mission, Moment und Ausblick (8 Min.): Mission ansagen, jede Person wählt ihren Moment und schreibt ihn ins Heft; Ausblick auf den Körper-Umriss nächste Woche."
+            ],
+            "wennEsKippt": "Kichert jemand, nicht ermahnen: Auch das Kichern ist ein Geräusch – ruhig weitersprechen, meist wird es nach der ersten Minute still."
+          }
+        ],
+        "bruecke": "Gefühle passieren nicht nur im Kopf, sondern im ganzen Körper – nächste Woche sucht ihr, wo genau, und zeichnet eure Gefühls-Landkarte.",
+        "mission": "Benenne einmal still, wer bei dir am Steuer sitzt – und was du dann tust.",
+        "hintergrund": "Für „Alles steht Kopf“ ließ sich das Studio von den Emotionsforschern Dacher Keltner und Paul Ekman beraten: Gefühle stören das Denken nicht, sie ordnen es, und Kummer zeigt anderen, dass jemand Trost braucht (Keltner & Ekman, 2015). Die fünf Figuren entsprechen Grundgefühlen, die Ekman (1992) beschreibt. Über Rileys Gefühle zu sprechen schafft Abstand, und Abstand hilft, über Gefühle nachzudenken statt in ihnen zu versinken (Kross & Ayduk, 2017).",
+        "quellen": [
+          "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times.",
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "achtung": "Vorführrechte und Altersfreigabe vorab klären (Einrichtungslizenz, Responsable) und beide Szenen vorher ansehen. Der Film erzählt von Umzug, Heimweh und Kummer: Für Jugendliche, die nicht bei ihrer Familie leben oder gerade einen Verlust oder eine Trennung erleben, kann das stark wirken – vorher überlegen, wen es betrifft, wer aussetzen darf, und nach dem Film ansprechbar sein. Persönliches aus Aufstellung und Aufgabe 3 wird nicht im Plenum vertieft; bei Hinweisen auf eine Gefährdung noch am selben Tag die Responsable informieren.",
+        "differenzierung": {
+          "leichter": "Aufgabe 1 wird nur angekreuzt, die Szenen laufen mit Untertiteln oder in der Sprache, die alle gut verstehen, und beim Rollenspiel reicht ein Satz oder eine Geste.",
+          "schwerer": "Eine Alltagsszene als Steuerpult-Szene beschreiben: Wer will ans Pult, wer sitzt wirklich dort – und was würde ein anderes Gefühl am Steuer verändern?"
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Steuerpult und Szene 1 mit Stopp-Quiz (15 Min.), Szene 2 mit Trost-Rollenspiel (20 Min.), Skills-Pass und Mission (10 Min.). Aufstellung, Stimmenspiel, Popcorn-Pause und Achtsames Hören entfallen; das Hören wird in der nächsten Stunde nachgeholt."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-wer-sitzt-am-steuer",
+      "bereich": "skills",
+      "thema": "gefuehle",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "30 Min. mit Szenen",
+      "eldib": [],
+      "schlagworte": ["Steuerpult", "Grundgefühle", "Kummer", "Film", "Annexe"],
+      "bild": "icon:brain",
+      "kurs": ["a7-e08"],
+      "de": {
+        "titel": "Wer sitzt am Steuer?",
+        "untertitel": "Fünf Gefühle, ein Steuerpult.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Jedes Gefühl hat eine Aufgabe, auch Kummer. Kummer zeigt anderen: Ich brauche Trost. Wegsperren geht nicht – er meldet sich trotzdem."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wer steht am Pult? Kreuze nach jeder Szene an.",
+            "hinweis": "Mehr als ein Kreuz ist erlaubt.",
+            "symbole": ["ankreuzen"]
+          },
+          {
+            "art": "einschaetzung",
+            "items": ["Szene 1 · Rileys erster Schultag", "Szene 2 · Kummer und Bing Bong"],
+            "optionen": ["Freude", "Kummer", "Angst", "Wut", "Ekel"]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Warum hilft Kummer hier mehr als Freude?",
+            "hinweis": "Ein Satz reicht.",
+            "symbole": ["nachdenken", "schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Kummer hilft hier mehr, weil …"],
+            "linien": 2
+          },
+          {
+            "art": "aufgabe",
+            "text": "Und bei dir? Ergänze die Sätze.",
+            "hinweis": "Stichworte reichen. Du entscheidest, was du erzählst.",
+            "symbole": ["nachdenken", "schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Bei mir sitzt oft … am Steuer, zum Beispiel wenn …", "Das hilft mir, wenn … am Steuer sitzt: …"],
+            "linien": 2
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen erkennen in Filmszenen, welches Gefühl am Pult steht, begründen, warum Zuhören bei Kummer mehr hilft als Aufheitern, und übertragen das Bild vom Steuerpult auf sich.",
+          "ablauf": [
+            "Einheit 8, Schritt 3: Nach Szene 1 in Aufgabe 1 ankreuzen, wer am Pult stand (mehr als ein Kreuz ist erlaubt).",
+            "Schritt 5: Nach Szene 2 die zweite Zeile von Aufgabe 1 ankreuzen; Aufgabe 2 – eine Antwort auf „Warum hilft Kummer hier mehr als Freude?“ – zu zweit vergleichen.",
+            "Aufgabe 3 allein (7 Min.): Stichworte reichen, vorgelesen wird nur freiwillig.",
+            "Der Skill „Achtsames Hören“ steht im Handbuch (Schritt 6)."
+          ],
+          "hintergrund": "Beim Film hilft Abstand: Über Rileys Gefühle zu sprechen fällt leichter als über die eigenen, und Abstand erleichtert es, über ein Gefühl nachzudenken statt in ihm zu versinken (Kross & Ayduk, 2017). Fachleute, die den Film beraten haben, betonen: Kummer zeigt anderen, dass jemand Trost braucht (Keltner & Ekman, 2015).",
+          "quellen": [
+            "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+            "Keltner, D. & Ekman, P. (2015, 3. Juli). The science of “Inside Out”. The New York Times."
+          ],
+          "material": "Stifte, Klemmbrett"
+        }
+      }
+    },
+    {
+      "id": "a7-steuerpult-karten",
+      "bereich": "skills",
+      "thema": "gefuehle",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "9 Min.",
+      "eldib": [],
+      "schlagworte": ["Steuerpult", "Aufstellung", "Situationskarten", "Film", "Annexe"],
+      "bild": "icon:users",
+      "kurs": ["a7-e08"],
+      "de": {
+        "titel": "Steuerpult- und Situationskarten",
+        "untertitel": "Kopiervorlage – einmal kopieren und ausschneiden",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So werden die Karten gebraucht",
+            "punkte": [
+              "Die fünf Steuerpult-Karten liegen als Halbkreis auf dem Boden oder Tisch.",
+              "Die Leitung zieht eine Situationskarte und liest sie vor; alle stellen sich zu dem Gefühl, das bei ihnen am Pult stünde.",
+              "Zwischen zwei Karten stehen ist erlaubt."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 100,
+            "karten": [
+              { "bild": "gesicht:froh", "titel": "Freude", "text": "Sagt: Das tut mir gut." },
+              { "bild": "gesicht:traurig", "titel": "Kummer", "text": "Sagt: Ich brauche Trost." },
+              { "bild": "gesicht:aengstlich", "titel": "Angst", "text": "Sagt: Pass auf dich auf." },
+              { "bild": "gesicht:wuetend", "titel": "Wut", "text": "Sagt: Hier ist eine Grenze." },
+              { "bild": "gesicht:angeekelt", "titel": "Ekel", "text": "Sagt: Das ist nichts für mich." }
+            ]
+          },
+          {
+            "art": "text",
+            "text": "Situationskarten für die Aufstellung: ausschneiden und verdeckt ziehen.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 60,
+            "karten": [
+              { "titel": "Situation 1", "text": "Die Lehrerin kündigt für morgen einen Test an, von dem niemand wusste." },
+              { "titel": "Situation 2", "text": "Dein bester Freund sagt euer Treffen zum dritten Mal kurzfristig ab." },
+              { "titel": "Situation 3", "text": "Du wirfst im Turnier das entscheidende Tor." },
+              { "titel": "Situation 4", "text": "Du wartest abends allein an der Bushaltestelle, und hinter dir raschelt es." },
+              { "titel": "Situation 5", "text": "Im Bus setzt sich jemand neben dich, der stark nach Rauch riecht." },
+              { "titel": "Situation 6", "text": "Deine Lieblingsserie wird mitten in der Geschichte abgesetzt." }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Fünf Steuerpult-Karten und sechs Situationskarten für die Aufstellung: Die Gruppe stellt sich zu dem Gefühl, das in einer Alltagssituation am Pult stünde.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; ein Satz genügt für drei Jugendliche.",
+            "Einheit 8, Schritt 3: Die fünf Karten liegen im Halbkreis, die Leitung zieht eine Situationskarte und liest sie vor.",
+            "Nach jeder Situation freiwillig und ohne zu bewerten nachfragen: Warum stehst du hier?",
+            "Gleiche Situation, verschiedene Gefühle am Pult – das ist das Ergebnis, nicht ein Fehler."
+          ],
+          "hintergrund": "Das Bild vom Steuerpult passt zur Emotionsregulation: Gefühle lassen sich nicht abschalten, aber man kann beeinflussen, wie stark und wie lange sie das Handeln bestimmen (Gross, 1998). Dieselbe Situation löst bei verschiedenen Menschen verschiedene Gefühle aus – wer das sieht, versteht sich und andere besser.",
+          "quellen": [
+            "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}

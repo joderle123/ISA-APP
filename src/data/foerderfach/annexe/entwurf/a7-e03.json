@@ -1,0 +1,425 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e03",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "a7-natur-challenges",
+        "ff-gefuehlsrad",
+        "ff-skills-pass"
+      ],
+      "vorlagen": [
+        "a7-regelkarten"
+      ],
+      "woerter": [
+        {
+          "de": "das Team",
+          "fr": "das Team"
+        },
+        {
+          "de": "der Treffpunkt",
+          "fr": "der Treffpunkt"
+        },
+        {
+          "de": "das Signal",
+          "fr": "das Signal"
+        },
+        {
+          "de": "der Notruf",
+          "fr": "der Notruf"
+        },
+        {
+          "de": "das Stopp-Recht",
+          "fr": "das Stopp-Recht"
+        }
+      ],
+      "de": {
+        "titel": "Wir als Team",
+        "kurz": "Draußen im Wald oder Park löst die Gruppe Aufgaben, die nur zu dritt gelingen, führt sich blind mit Stopp-Recht und übt die Regeln für draußen: Treffpunkt, Signal und Notfallnummer.",
+        "ziele": [
+          "üben die Regeln für draußen: Treffpunkt, Signal und Notfallnummer",
+          "lösen gemeinsam Aufgaben, bei denen jede Person gebraucht wird",
+          "führen und lassen sich führen – mit klaren Absprachen und Stopp-Recht"
+        ],
+        "material": [
+          "Gefühlsrad (A3), Sitzunterlagen, Pfeife, Skills-Pässe",
+          "Natur-Challenges auf Klemmbrett, Stifte, Handy der Leitung",
+          "Augenbinden (je Person), Klingelball, Hütchen",
+          "Erste-Hilfe-Tasche, Imbiss, Getränke, Müllbeutel"
+        ],
+        "vorbereitung": [
+          "Einverständnis der Eltern und Notfallnummern für alle drei prüfen; Aufsicht nach den Regeln des CDSE klären.",
+          "Gelände ablaufen: Park höchstens fünf Gehminuten entfernt, Grenzen und Treffpunkt in Sichtweite, kein Wasser, keine Abhänge.",
+          "Regenvariante vorbereiten: Raum oder Turnhalle und eine Materialkiste."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Mein inneres Wetter"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick, Mission und Thema"
+          },
+          {
+            "min": "15–30",
+            "phase": "uebung",
+            "titel": "Regeln für draußen üben"
+          },
+          {
+            "min": "30–35",
+            "phase": "aktiv",
+            "titel": "Weg in den Park: Wer führt?"
+          },
+          {
+            "min": "35–85",
+            "phase": "aktiv",
+            "titel": "Ausflug: Challenges, Blind führen, Rückweg"
+          },
+          {
+            "min": "85–100",
+            "phase": "skill",
+            "titel": "Skill: Gemeinsam atmen"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Mein inneres Wetter",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Am Treffpunkt vor dem Haus steht die Gruppe im Kreis, das Gefühlsrad liegt auf einer Unterlage in der Mitte. Jede Person beschreibt ihr inneres Wetter mit einem Satz – sonnig, bewölkt, Nebel, Gewitter, Sturm – und nennt, wenn sie mag, das passende Wort vom Rad; die Leitung beginnt. Bei Regen findet der Check-in drinnen statt.",
+            "sagen": [
+              "Mein inneres Wetter ist heute … – und auf dem Gefühlsrad wäre das am ehesten …",
+              "Wetter ändert sich. Am Ende schauen wir, ob sich bei euch etwas getan hat."
+            ],
+            "tipp": "Das Wetterbild hilft, wenn Gefühlswörter schwerfallen: „Nebel“ sagt oft mehr als „verwirrt“.",
+            "wennEsKippt": "Antwortet jemand nur „Regen, weil es regnet“, das mit einem Lächeln gelten lassen und nachschieben: Und bei dir drinnen? Auch darauf ist „weiter“ eine Antwort.",
+            "blatt": "ff-gefuehlsrad"
+          },
+          {
+            "titel": "Rückblick, Mission und Thema",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Leitung fragt nach der Mission: Kam dein Moment, und wie hat die Person auf dein Kompliment reagiert? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann nennt sie das Thema: Heute löst die Gruppe draußen Aufgaben, die nur gemeinsam gelingen.",
+            "sagen": [
+              "Kam euer Moment, und wem habt ihr gesagt, was er gut gemacht hat? Daumen hoch, Mitte oder runter.",
+              "Heute gewinnt niemand gegen jemanden: Entweder ihr schafft es zusammen oder gar nicht."
+            ],
+            "tipp": "Wer ein Kompliment gegeben hat, bekommt ein Lächeln und keine Bewertung; kam der Moment nicht, ist das keine Niederlage."
+          },
+          {
+            "titel": "Regeln für draußen üben",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Draußen ist die Gruppe wie eine Seilschaft: Jede Person sichert die anderen, damit alle ankommen. Wer die drei Regeln sicher kann, bekommt auf Ausflügen mehr Freiraum – deshalb werden sie jetzt im Hof geübt wie bei Profis.",
+            "sagen": [
+              "Beim Signal kommen alle sofort zum Treffpunkt, ohne Diskussion – auch ich.",
+              "Bei einer Verletzung zuerst ruhig bleiben, dann 112 anrufen: Wo, was ist passiert, wie viele?"
+            ],
+            "punkte": [
+              "Signal-Probe (4 Min.): Alle verteilen sich im Hof; beim Signal (Pfeife oder dreimal lautes Klatschen) kommen alle in weniger als 20 Sekunden zum Treffpunkt – die Leitung wird auch gestoppt.",
+              "Notruf-Rollenspiel (6 Min.): Die Leitung spielt die Notrufzentrale (112, nicht wirklich wählen), jede Person übt einen Anruf: Wo bin ich, was ist passiert, wie viele sind betroffen – und dann auf Rückfragen warten.",
+              "Grenzen und Stopp (5 Min.): Die Leitung zeigt auf einem Foto oder Plan, wo das Gelände beginnt und endet, alle stecken ihre Regelkarte ein, und die Gruppe wiederholt: Wer Stopp sagt, wird immer ernst genommen."
+            ],
+            "tipp": "Ein Signal wählen, das man auch bei Wind hört: eine Pfeife oder dreimal lautes Klatschen.",
+            "wennEsKippt": "Wird die Probe albern, einmal mit Humor mitspielen und dann ernst wiederholen: Beim echten Signal kommen alle, ohne Diskussion.",
+            "blatt": "a7-regelkarten"
+          },
+          {
+            "titel": "Weg in den Park: Wer führt?",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Der Weg zum Park ist die erste Teamaufgabe: Die Gruppe führt die Leitung nach einem Wegplan, an jeder Ecke wechselt die Führung, und niemand geht allein vorn oder hinten. An Straßen entscheidet die Leitung.",
+            "sagen": [
+              "Die Führung wechselt an jeder Ecke – ich folge euch und halte nur an der Straße an."
+            ],
+            "tipp": "Bei Regen führt der Weg durch Flure und Treppenhaus; die Führung wechselt an jeder Tür.",
+            "wennEsKippt": "Rennt jemand voraus oder trödelt, kurz stehen bleiben und das Tempo gemeinsam abmachen: Wir gehen so schnell wie die langsamste Person."
+          },
+          {
+            "titel": "Ausflug: Challenges, Blind führen, Rückweg",
+            "dauer": 50,
+            "phase": "aktiv",
+            "text": "Im Park löst die Gruppe Natur-Challenges, bei denen jede Person gebraucht wird, und führt sich danach blind – mit Stopp-Recht und nur nach Erlaubnis. Zum Schluss sagt die Gruppe, was sie als Team braucht, und geht gemeinsam zurück.",
+            "sagen": [
+              "Es zählt nicht, wie viele Challenges ihr schafft, sondern ob alle mitmachen – dafür gibt es die Spalte „alle dabei“.",
+              "Ihr entscheidet selbst: Augenbinde, Augen zu oder heute nur führen. Alles ist in Ordnung."
+            ],
+            "punkte": [
+              "Natur-Challenges (18 Min.): Mit dem Blatt auf dem Klemmbrett löst die Gruppe so viele Challenges wie möglich, etwa ein Kunstwerk aus Fundstücken oder einen Turm aus fünf Steinen; „alle dabei“ wird nur angekreuzt, wenn wirklich jede Person etwas beigetragen hat.",
+              "Imbiss draußen (5 Min.): Alle essen auf Sitzunterlagen, Süßes wird wegen Wespen abgedeckt, der Müll geht wieder mit; die Leitung isst mit.",
+              "Blind führen (14 Min.): Eine Person führt nur mit der Stimme, eine geht mit Augenbinde oder geschlossenen Augen, die dritte beobachtet und achtet auf Hindernisse; nach jeder Runde wechseln die Rollen. Zum Schluss rollt eine Person mit Augenbinde den Klingelball ins Tor, die anderen lotsen mit der Stimme.",
+              "Bilanz am Treffpunkt (8 Min.): Die Gruppe sitzt im Kreis: Was hat dem Team geholfen, was hat gestört, und was braucht unsere Gruppe? Ein Satz kommt auf das Blatt, die Leitung ergänzt ihn nachher im Gruppenvertrag an der Wand.",
+              "Rückweg (5 Min.): Die Führung wechselt wie auf dem Hinweg; unterwegs sagt jede Person einen Satz, was sie heute gut gemacht hat."
+            ],
+            "tipp": "Bei Regen dieselben Aufgaben drinnen lösen: Raum, Flur oder Turnhalle sind das Gelände, die Materialkiste (Becher, Papier, Klammern, Korken) ersetzt das Naturmaterial.",
+            "wennEsKippt": "Übernimmt eine Person alles, nach zehn Minuten auf die Spalte „alle dabei“ zeigen. Führt jemand absichtlich gegen Hindernisse, das Paar sofort stoppen: Wer führt, trägt die Verantwortung.",
+            "blatt": "a7-natur-challenges"
+          },
+          {
+            "titel": "Skill: Gemeinsam atmen",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Im Kreis sitzen, Füße auf dem Boden: Die Gruppe atmet im selben Takt – vier Sekunden ein, vier Sekunden aus –, die Leitung zählt, danach übernimmt eine freiwillige Person (höchstens eine Minute still). Danach der Abschluss: ein Satz in den Skills-Pass, die Mission und der eigene Moment.",
+            "sagen": [
+              "Ein – zwei – drei – vier, aus – zwei – drei – vier.",
+              "Wie fühlt es sich an, wenn die ganze Gruppe im selben Takt atmet?"
+            ],
+            "punkte": [
+              "Skill (4 Min.): Gemeinsam atmen im Takt, die Leitung zählt zuerst, dann eine freiwillige Person; danach kurz nachspüren, wie sich der Körper anfühlt.",
+              "Rückmeldung (2 Min.): Wie fühlt es sich an, wenn alle im selben Takt atmen? Wo könntest du das allein brauchen?",
+              "Skills-Pass (4 Min.): Ein Satz: Was hat mir geholfen, jemandem zu vertrauen – oder was hätte ich dafür gebraucht? Stempel.",
+              "Mission und Moment (3 Min.): Die Leitung sagt die Mission an; jede Person schreibt ihren Moment (Hausaufgaben, Training, Küche) in die Spalte „Mein Moment: Wenn …“.",
+              "Ausblick (2 Min.): Die Leitung nennt das Thema der nächsten Stunde: Jede Person schaut auf sich selbst."
+            ],
+            "tipp": "Wer mag, legt eine Hand auf den Bauch; vier Sekunden sind ein Richtwert, wem das zu lang ist, atmet kürzer.",
+            "wennEsKippt": "Kichern gehört beim ersten Mal dazu: nicht ermahnen, ruhig weiterzählen – meist wird es nach drei, vier Atemzügen still.",
+            "blatt": "ff-skills-pass"
+          }
+        ],
+        "bruecke": "Ihr seid jetzt als Gruppe gestartet – nächstes Mal schaut jede und jeder auf sich selbst: Was brauche ich, damit es mir gut geht?",
+        "mission": "Frag bei einer Aufgabe zu zweit oder zu dritt: Was ist deine Idee?",
+        "hintergrund": "Aufgaben, die nur gemeinsam lösbar sind, fördern bei jungen Jugendlichen Leistung und Beziehungen mehr als Wettbewerb (Roseth et al., 2008); deshalb zählt die Spalte „alle dabei“, nicht die Zahl der Challenges. Aufenthalte in der Natur entlasten die gerichtete Aufmerksamkeit und erholen (Kaplan, 1995). In der Erlebnispädagogik lernt man durch Erleben und gemeinsames Auswerten, und jede Person wählt ihre Zone selbst (Senninger, 2000) – das Stopp-Recht beim Blindführen macht das sichtbar.",
+        "quellen": [
+          "Roseth, C. J., Johnson, D. W. & Johnson, R. T. (2008). Promoting early adolescents’ achievement and peer relationships: The effects of cooperative, competitive, and individualistic goal structures. Psychological Bulletin, 134(2), 223–246.",
+          "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182.",
+          "Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia."
+        ],
+        "achtung": "Ausflug nur mit Einverständnis der Eltern und nach den Regeln des CDSE für Aufsicht und Notfall: Treffpunkt, Signal und Notfallnummern kennt jede Person, bei Gefahr wird ruhig abgebrochen. Blindübungen können bei belastenden Erfahrungen Angst oder Wut auslösen: Das Stopp-Recht gilt ohne Begründung, Augen schließen statt Augenbinde ist immer möglich, Berührung gibt es nur nach Erlaubnis, und wer aussetzt, behält eine Rolle. Draußen an Wespen, Allergien und Zecken denken; erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, nicht vertiefen und noch am selben Tag die zuständige Leitung (Responsable) informieren.",
+        "differenzierung": {
+          "leichter": "Wer ungern geht oder die Sprache noch lernt, wählt fünf Challenges aus, übernimmt zuerst die Beobachtung und braucht für den Moment der Mission nur ein Wort.",
+          "schwerer": "Wer sicher ist, moderiert die Challenges, achtet darauf, dass alle zu Wort kommen, und erfindet eine Challenge für die Leitung."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Rückblick (10 Min.), Regeln für draußen üben (10 Min.), Natur-Challenges oder Blind führen im Hof oder drinnen (20 Min.), Skill Gemeinsam atmen mit Skills-Pass und Mission (10 Min.). Park, Imbiss und Rückweg entfallen und werden bei einem späteren Ausflug nachgeholt."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-natur-challenges",
+      "bereich": "skills",
+      "thema": "ankommen",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "30 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Teamarbeit",
+        "Kooperation",
+        "Natur",
+        "Draußen",
+        "Stopp-Recht",
+        "Annexe"
+      ],
+      "bild": "icon:trees",
+      "kurs": [
+        "a7-e03"
+      ],
+      "de": {
+        "titel": "Natur-Challenges",
+        "untertitel": "Im Team zählt, dass alle mitmachen – nicht, wie viel ihr schafft",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "In einem Team hat jede Person etwas, das den anderen fehlt. Beim Blindführen gilt: Wer „Stopp“ sagt, wird sofort ernst genommen – ohne Begründung."
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So spielt ihr",
+            "punkte": [
+              "Bleibt in Sicht- und Rufweite. Beim Signal kommen alle sofort zum Treffpunkt.",
+              "Pflanzen bleiben ganz – nehmt nur, was schon am Boden liegt."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Löst gemeinsam so viele Challenges wie möglich.",
+            "hinweis": "Kreuzt „geschafft“ an – und „alle dabei“ nur, wenn wirklich jede Person etwas beigetragen hat.",
+            "symbole": [
+              "gruppe",
+              "ankreuzen"
+            ]
+          },
+          {
+            "art": "einschaetzung",
+            "optionen": [
+              "geschafft",
+              "alle dabei"
+            ],
+            "items": [
+              "Findet drei Oberflächen: weich, rau, glatt.",
+              "Baut ein Kunstwerk aus Fundstücken – jede Person legt etwas dazu.",
+              "Baut einen Turm aus fünf Steinen, der zehn Sekunden steht.",
+              "Findet etwas in jeder Farbe des Regenbogens.",
+              "Seid zusammen eine Minute komplett still.",
+              "Erfindet eine Challenge für die Leitung."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Was hat euch als Team geholfen – und was war schwierig?",
+            "symbole": [
+              "gruppe",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "feld",
+                "label": "Das hat uns geholfen",
+                "hoehe": 2
+              }
+            ],
+            "rechts": [
+              {
+                "art": "feld",
+                "label": "Das war schwierig",
+                "hoehe": 2
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib einen Satz für den Gruppenvertrag: Was braucht unsere Gruppe?",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Unsere Gruppe braucht …"
+            ],
+            "linien": 2
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Gruppe löst draußen gemeinsam Aufgaben und erlebt, dass sie als Team mehr schafft; die Spalte „alle dabei“ lenkt den Blick vom Ergebnis auf die Zusammenarbeit.",
+          "ablauf": [
+            "Einheit 3, Schritt 5: Blatt auf dem Klemmbrett übergeben und 18 Minuten ansagen; die Leitung hält sich zurück, fotografiert Kunstwerke und beobachtet, wie Entscheidungen fallen.",
+            "Nach zehn Minuten auf die Spalte „alle dabei“ hinweisen.",
+            "Bilanz am Treffpunkt: die beiden letzten Aufgaben ausfüllen; der Satz wird später in den Gruppenvertrag übernommen.",
+            "Bei Regen dieselben Aufgaben drinnen, mit einer Materialkiste statt Naturmaterial."
+          ],
+          "hintergrund": "Aufgaben, die nur gemeinsam lösbar sind, stärken den Zusammenhalt, weil jede Person gebraucht wird; bei jungen Jugendlichen fördern kooperative Ziele Leistung und Beziehungen mehr als Wettbewerb (Roseth et al., 2008). Draußen zu sein entlastet die gerichtete Aufmerksamkeit (Kaplan, 1995). Die Spalte „alle dabei“ macht Beteiligung sichtbar, ohne jemanden bloßzustellen.",
+          "quellen": [
+            "Roseth, C. J., Johnson, D. W. & Johnson, R. T. (2008). Promoting early adolescents’ achievement and peer relationships: The effects of cooperative, competitive, and individualistic goal structures. Psychological Bulletin, 134(2), 223–246.",
+            "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182."
+          ],
+          "achtung": "Fotografiert werden Dinge, keine Gesichter. Gelände vorher prüfen und die Erste-Hilfe-Tasche mitnehmen.",
+          "material": "Blatt auf Klemmbrett, Stift, Handy der Leitung, Pfeife; bei Regen Materialkiste"
+        }
+      }
+    },
+    {
+      "id": "a7-regelkarten",
+      "bereich": "skills",
+      "thema": "ankommen",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Regeln für draußen",
+        "Treffpunkt",
+        "Signal",
+        "Notruf",
+        "Annexe"
+      ],
+      "bild": "icon:map-pin",
+      "kurs": [
+        "a7-e03"
+      ],
+      "de": {
+        "titel": "Regelkarten für draußen",
+        "untertitel": "Kopiervorlage – zweimal kopieren, schneiden und einstecken",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Jede Person steckt einen Satz Karten ein: Treffpunkt, Signal, Notruf und Stopp. Die Seite hat zwei Sätze, zweimal kopiert reicht sie für drei Jugendliche und die Leitung. Die Leitung trägt vorher den Treffpunkt und ihre Handynummer ein.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 128,
+            "karten": [
+              {
+                "titel": "Treffpunkt",
+                "bild": "icon:map-pin",
+                "text": "Unser Treffpunkt:\n______________________\nIn Sicht- und Rufweite bleiben."
+              },
+              {
+                "titel": "Signal",
+                "bild": "icon:bell",
+                "text": "Pfiff oder dreimal klatschen:\nAlle kommen sofort zum Treffpunkt."
+              },
+              {
+                "titel": "Notruf 112",
+                "bild": "icon:phone",
+                "text": "Wo bin ich? Was ist passiert?\nWie viele sind betroffen?\nDann auf Rückfragen warten.\nLeitung: ______________"
+              },
+              {
+                "titel": "Stopp",
+                "bild": "icon:hand-stop",
+                "text": "Wer Stopp sagt, wird sofort ernst genommen – immer, ohne Begründung."
+              },
+              {
+                "titel": "Treffpunkt",
+                "bild": "icon:map-pin",
+                "text": "Unser Treffpunkt:\n______________________\nIn Sicht- und Rufweite bleiben."
+              },
+              {
+                "titel": "Signal",
+                "bild": "icon:bell",
+                "text": "Pfiff oder dreimal klatschen:\nAlle kommen sofort zum Treffpunkt."
+              },
+              {
+                "titel": "Notruf 112",
+                "bild": "icon:phone",
+                "text": "Wo bin ich? Was ist passiert?\nWie viele sind betroffen?\nDann auf Rückfragen warten.\nLeitung: ______________"
+              },
+              {
+                "titel": "Stopp",
+                "bild": "icon:hand-stop",
+                "text": "Wer Stopp sagt, wird sofort ernst genommen – immer, ohne Begründung."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Taschenkarten mit den drei Regeln für draußen und dem Stopp-Recht; sie werden im Hof geübt und gehen auf jeden Ausflug mit.",
+          "ablauf": [
+            "Zweimal kopieren, am besten auf festes Papier, und schneiden; Treffpunkt und Handynummer der Leitung vorher eintragen.",
+            "Einheit 3, Schritt 3: Signal-Probe, Notruf-Rollenspiel und Grenzen üben; jede Person steckt ihren Satz Karten ein.",
+            "Vor späteren Ausflügen die Karten kurz wiederholen."
+          ],
+          "hintergrund": "Wer weiß, was im Notfall zu tun ist, handelt ruhiger: Kurze, geübte Abläufe geben Sicherheit, auch Jugendlichen, die sonst eher Regeln ablehnen. Klare Absprachen zur Sicherheit gehören zum Rahmen der Erlebnispädagogik (Senninger, 2000).",
+          "quellen": [
+            "Senninger, T. (2000). Abenteuer leiten – in Abenteuern lernen. Münster: Ökotopia."
+          ],
+          "material": "Festes Papier, Schere, Stift"
+        }
+      }
+    }
+  ]
+}

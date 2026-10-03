@@ -1,0 +1,461 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e02",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "a7-finde-jemanden",
+        "ff-gefuehlsrad",
+        "ff-skills-pass"
+      ],
+      "vorlagen": [
+        "a7-fragekarten"
+      ],
+      "woerter": [
+        {
+          "de": "die Gemeinsamkeit",
+          "fr": "die Gemeinsamkeit"
+        },
+        {
+          "de": "nachfragen",
+          "fr": "nachfragen"
+        },
+        {
+          "de": "das Kompliment",
+          "fr": "das Kompliment"
+        },
+        {
+          "de": "dazugehören",
+          "fr": "dazugehören"
+        }
+      ],
+      "de": {
+        "titel": "Kennenlernen in Bewegung",
+        "kurz": "Spiele und kleine Challenges in Bewegung: Die Gruppe findet Gemeinsamkeiten, fragt nach und gibt ein echtes Kompliment – ohne dass jemand etwas Privates erzählen muss.",
+        "ziele": [
+          "entdecken Gemeinsamkeiten, ohne etwas Persönliches zu erzählen",
+          "fragen bei einer Antwort einmal nach und zeigen so Interesse",
+          "geben ein Kompliment über eine Tat und nehmen eines mit einem Danke an"
+        ],
+        "material": [
+          "Gefühlsrad (A3), Namensklammern, Stoppuhr",
+          "Kreppband für die Linie (5 m), Karten, Stifte",
+          "Plakat „Das haben wir gemeinsam“, Klebezettel",
+          "Gruppenvertrag aus Einheit 1, Skills-Pässe, Stempel"
+        ],
+        "vorbereitung": [
+          "Linie aus Kreppband kleben (drei Schritte Platz davor), Gruppenvertrag aufhängen.",
+          "Die Sätze für „Ein Schritt nach vorn“ prüfen und alles streichen, was heute heikel sein könnte.",
+          "Eigene drei Sätze für „Zwei Wahrheiten, eine Lüge“ überlegen; Fragekarten schneiden."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Klammer am Gefühlsrad"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick, Mission und Thema"
+          },
+          {
+            "min": "15–45",
+            "phase": "uebung",
+            "titel": "Dazugehören: Schritt nach vorn und Wahrheiten"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegung: Barometer an der Linie"
+          },
+          {
+            "min": "50–85",
+            "phase": "aktiv",
+            "titel": "Finde jemanden, der … und Nachfrage-Kette"
+          },
+          {
+            "min": "85–100",
+            "phase": "skill",
+            "titel": "Skill: Kompliment annehmen"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Klammer am Gefühlsrad",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Das Gefühlsrad liegt in der Mitte: Jede Person steckt ihre Namensklammer an das Wort, das gerade am besten passt, und sagt – wenn sie mag – einen Satz dazu. Die Leitung beginnt und steckt ihre Klammer ehrlich, aber im Rahmen; die Klammern bleiben bis zum Schluss am Rad.",
+            "sagen": [
+              "Steckt eure Klammer dahin, wo ihr gerade seid – nicht dahin, wo ihr gern wärt.",
+              "Ein Satz reicht. Wer lieber nichts sagt, steckt nur die Klammer an."
+            ],
+            "wennEsKippt": "Stecken alle ihre Klammer demonstrativ an „gelangweilt“, das ohne Bewertung stehen lassen und kurz fragen, ob heute etwas los war – oft ist es ein Test, ob ehrliche Antworten hier erlaubt sind.",
+            "blatt": "ff-gefuehlsrad"
+          },
+          {
+            "titel": "Rückblick, Mission und Thema",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Leitung fragt nach der Mission der letzten Stunde: Kam dein Moment – und was hast du gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz, und niemand muss den Moment erlebt haben. Dann zeigt sie auf den Gruppenvertrag und nennt das Thema: sich besser kennenlernen, in Bewegung, ohne dass jemand mehr zeigen muss, als er möchte.",
+            "sagen": [
+              "Kam euer Moment, und habt ihr 5-4-3-2-1 ausprobiert? Daumen hoch, Mitte oder runter.",
+              "Heute geht es um Gemeinsamkeiten: Was ihr von euch zeigt, entscheidet ihr selbst."
+            ],
+            "tipp": "Zeigen kaum Daumen nach oben, das gelassen nehmen: Diese Woche gibt es eine neue Mission mit neuem Moment."
+          },
+          {
+            "titel": "Dazugehören: Schritt nach vorn und Wahrheiten",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "In jeder neuen Gruppe läuft im Kopf ein Radar: Bin ich sicher, und gehöre ich dazu? Gemeinsamkeiten stellen den Radar leiser – dafür muss niemand etwas Privates erzählen. Heute probiert die Gruppe vier Wege dorthin.",
+            "sagen": [
+              "Stehenbleiben ist immer okay – niemand weiß, ob ein Satz für euch stimmt, und niemand fragt nach.",
+              "Was ist euch aufgefallen? Bei welchem Satz hättet ihr gedacht, dass ihr allein vorn steht?"
+            ],
+            "punkte": [
+              "Radar (3 Min.): Die Leitung erklärt das Bild und fragt, wann der Radar in einer neuen Gruppe angesprungen ist; wer mag, nennt ein Beispiel ohne Namen.",
+              "Ein Schritt nach vorn (9 Min.): Alle stehen auf der Linie, die Leitung liest acht Sätze von der Vorlage – etwa „… in den falschen Bus gestiegen bist“ –, und wer sich angesprochen fühlt, tritt vor, schaut kurz, wer noch vorn steht, und geht zurück.",
+              "Zwei Wahrheiten, eine Lüge (12 Min.): Jede Person schreibt drei Sätze über sich, zwei wahre und einen erfundenen; die anderen raten mit 1, 2 oder 3 Fingern, die Leitung beginnt mit ihren eigenen.",
+              "Gemeinsamkeiten-Rekord (6 Min.): Die Gruppe sucht in drei Minuten möglichst viele Dinge, die alle teilen (Essen, Musik, Serien, Orte), die Stoppuhr läuft, und der Rekord kommt aufs Plakat."
+            ],
+            "tipp": "Die Leitung tritt bei zwei, drei Sätzen selbst vor, etwa beim falschen Bus oder beim nervösen Vortrag – das zeigt, dass Vortreten nichts Peinliches ist.",
+            "wennEsKippt": "Springen alle bei jedem Satz albern vor, das Tempo herausnehmen: Satz lesen, fünf Sekunden Stille, erst dann bewegen. Kommentiert jemand, wer vorn steht, sofort an die Regel erinnern: Hier wird geschaut, nicht bewertet.",
+            "blatt": "a7-fragekarten"
+          },
+          {
+            "titel": "Bewegung: Barometer an der Linie",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Die Linie am Boden wird zum Barometer: Die Leitung nennt zwei Pole, alle stellen sich dorthin, wo sie zwischen den Polen stehen, und sagen in einem Satz, warum. Vier Paare, je etwa eine Minute.",
+            "sagen": [
+              "Stellt euch dorthin, wo ihr zwischen den beiden Polen steht, und sagt in einem Satz, warum."
+            ],
+            "punkte": [
+              "Pizza – Burger",
+              "Morgenmuffel – Frühaufsteher",
+              "Berge – Meer",
+              "Kino – Gaming"
+            ],
+            "tipp": "Wer nicht laufen mag, zeigt mit dem Finger auf einer Linie auf dem Tisch; bei gutem Wetter geht es im Hof mit Kreide."
+          },
+          {
+            "titel": "Finde jemanden, der … und Nachfrage-Kette",
+            "dauer": 35,
+            "phase": "aktiv",
+            "text": "Jetzt geht es vom Raten zum Fragen: Die Gruppe übt die Nachfrage, den einfachsten Weg, Interesse zu zeigen. Die Leitung spielt zuerst die schwierige Gegenrolle – eine Person, die nur kurz antwortet.",
+            "sagen": [
+              "Die Nachfrage ist wichtiger als der Name: Ohne Stichwort zählt das Feld nicht.",
+              "Was hat euch überrascht? Mit wem habt ihr etwas gemeinsam, das ihr nicht erwartet hättet?"
+            ],
+            "punkte": [
+              "Nachfrage-Rollenspiel (6 Min.): Die Leitung spielt eine neue Person, die knapp antwortet („Geht so“); eine Person übt die Nachfrage („Was genau?“, „Wie war das?“), die dritte beobachtet und gibt ein Lob und einen Tipp, dann wechseln die Rollen.",
+              "Finde jemanden, der … (12 Min.): Alle gehen mit dem Heft-Blatt herum und finden zu jeder Zeile jemanden aus der Gruppe, auch die Leitung zählt mit; bei jedem Ja wird einmal nachgefragt und ein Stichwort notiert.",
+              "Nachfrage-Kette (12 Min.): Eine Person stellt eine Frage von der Fragekarte, die nächste fragt nach, die übernächste fragt nach der Nachfrage – wie lang wird die Kette, bevor sie reißt? Der Rekord kommt aufs Plakat.",
+              "Plakat und Foto (5 Min.): Die Gruppe schreibt auf das Plakat „Das haben wir gemeinsam“, was sie heute entdeckt hat, und fotografiert das Plakat – ohne Gesichter."
+            ],
+            "tipp": "Zu viert dürfen Namen beliebig oft vorkommen, und die Leitung spielt mit; wer nicht herumlaufen mag, setzt sich, und die anderen kommen zu ihm.",
+            "wennEsKippt": "Sammeln alle nur Namen, kurz stoppen und die Nachfrage vormachen: Die Leitung fragt eine Person vor allen und hört wirklich zu. Bleibt jemand am Rand stehen, geht die Leitung mit ihm als Tandem los.",
+            "blatt": "a7-finde-jemanden"
+          },
+          {
+            "titel": "Skill: Kompliment annehmen",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Ein Skill für einen Moment, der schwerer ist, als er klingt: Jemand sagt etwas Nettes über dich. Reihum sagt jede Person der Person rechts, was sie heute getan hat – eine Tat, nicht das Aussehen –, und die angesprochene Person antwortet nur mit „Danke“. Danach der Abschluss: ein Satz in den Skills-Pass, die Mission und der eigene Moment.",
+            "sagen": [
+              "Sagt, was die Person getan hat, nicht wie sie aussieht: Du hast bei der Nachfrage richtig zugehört.",
+              "Wer ein Kompliment bekommt, sagt nur: Danke – ohne „Ach, war doch nichts“."
+            ],
+            "punkte": [
+              "Skill (5 Min.): Reihum ein Kompliment über eine Tat von heute; wer es bekommt, nickt, schaut kurz hin und sagt nur „Danke“, ohne es kleinzureden.",
+              "Rückmeldung (2 Min.): Was war schwerer – geben oder annehmen? Wann hilft das?",
+              "Skills-Pass (3 Min.): Jede Person steckt ihre Klammer um, wenn sich seit dem Anfang etwas verändert hat, und schreibt einen Satz in den Pass; Stempel.",
+              "Mission und Moment (3 Min.): Die Leitung sagt die Mission an; jede Person schreibt ihren Moment (Pause, Training, Esstisch) in die Spalte „Mein Moment: Wenn …“.",
+              "Ausblick (2 Min.): Die Leitung erinnert an feste Schuhe und wetterfeste Kleidung für den Ausflug und fragt nach dem Abschnitt des Elternbriefs."
+            ],
+            "tipp": "Beispiele an die Tafel schreiben: „Du hast gut zugehört“, „Du hast lustig erzählt“ – Aussehen und Kleidung bleiben außen vor.",
+            "wennEsKippt": "Kommt nur ein „Du bist nett“ oder etwas Ironisches, freundlich nachfragen: Woran hast du das heute gemerkt? Fällt jemandem nichts ein, hilft die Leitung mit einer Beobachtung aus der Stunde.",
+            "blatt": "ff-skills-pass"
+          }
+        ],
+        "bruecke": "Nächstes Mal sind wir draußen im Wald oder Park und lösen Aufgaben, die nur zu dritt gelingen – feste Schuhe nicht vergessen.",
+        "mission": "Sag einer Person, was sie gut gemacht hat. Wie reagiert sie?",
+        "hintergrund": "Am Anfang prüft jedes Mitglied einer Gruppe vor allem, ob es dazugehört und der Rahmen sicher ist (Tuckman, 1965). Wer sieht, dass andere Ähnliches erleben, fühlt sich weniger allein; Yalom und Leszcz (2005) zählen das zu den Wirkfaktoren von Gruppen. Verbundenheit ist ein Grundbedürfnis (Deci & Ryan, 2000): Darum sind die Sätze harmlos gewählt, und Stehenbleiben heißt nicht Nein. Die Nachfrage übt Interesse und Zuhören, das Kompliment einen ersten kleinen Skill.",
+        "quellen": [
+          "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+          "Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "achtung": "Auch harmlose Sätze können berühren: Wer bei „Ein Schritt nach vorn“ sichtbar betroffen reagiert, wird nicht vor der Gruppe angesprochen, sondern später unauffällig gefragt. Zu viert sieht jede Person sofort, wer vorn steht – deshalb nur harmlose Sätze ohne Fragen zu Familie, Herkunft, Geld, Körper oder Noten, und beim Kompliment Bemerkungen über Aussehen umlenken. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, nicht vertiefen, noch am selben Tag die zuständige Leitung (Responsable) informieren und nach dem Schutzkonzept handeln.",
+        "differenzierung": {
+          "leichter": "Wer wenig liest oder noch Deutsch lernt, bekommt Fragekarten mit Zeichnungen, antwortet mit Stichworten oder in der eigenen Sprache, und die Leitung schreibt die drei Sätze mit.",
+          "schwerer": "Wer schnell ist, stellt bei jeder Karte eine zweite Nachfrage und erfindet eine neue Frage für die Gruppe, die niemanden bloßstellt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klammer (5 Min.), Ein Schritt nach vorn und Zwei Wahrheiten, eine Lüge (15 Min.), Nachfrage-Kette mit den Feldern des Blatts (15 Min.), Kompliment annehmen mit Skills-Pass und Mission (15 Min.). Barometer und Rekord-Challenge entfallen und lassen sich in einer späteren Stunde als Bewegungspause nachholen."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-finde-jemanden",
+      "bereich": "skills",
+      "thema": "ankommen",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "35 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Kennenlernen",
+        "Menschen-Bingo",
+        "Nachfragen",
+        "Gemeinsamkeiten",
+        "Annexe"
+      ],
+      "bild": "icon:friends",
+      "kurs": [
+        "a7-e02"
+      ],
+      "de": {
+        "titel": "Finde jemanden, der …",
+        "untertitel": "Raten, fragen, nachfragen – Gemeinsamkeiten finden",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "In jeder neuen Gruppe fragt sich fast jeder: Gehöre ich dazu? Gemeinsamkeiten helfen dabei. Wer nachfragt, zeigt: Du interessierst mich."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib zwei wahre Sätze und eine Lüge über dich.",
+            "hinweis": "Nichts über Familie, Körper, Geld oder Noten. „Weiter“ ist immer erlaubt.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "1.",
+              "2.",
+              "3."
+            ],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Finde zu jeder Zeile jemanden aus der Gruppe und frag einmal nach.",
+            "symbole": [
+              "gruppe",
+              "sprechen"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Finde jemanden, der …",
+              "Vorname",
+              "Nachgefragt: Stichwort"
+            ],
+            "breiten": [
+              2.5,
+              1.1,
+              1.6
+            ],
+            "zeilen": 0,
+            "werte": [
+              [
+                "… gern kocht oder backt",
+                "",
+                ""
+              ],
+              [
+                "… ein Lied auswendig kann",
+                "",
+                ""
+              ],
+              [
+                "… eine andere Sprache spricht",
+                "",
+                ""
+              ],
+              [
+                "… sich mit Musik beruhigt",
+                "",
+                ""
+              ],
+              [
+                "… schon mal in den falschen Bus gestiegen ist",
+                "",
+                ""
+              ]
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Gute Nachfragen",
+            "punkte": [
+              "Was genau? Wie war das?",
+              "Warum gerade das? Seit wann?"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib auf, was ihr in der Gruppe gemeinsam habt.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Das haben wir gemeinsam: …"
+            ],
+            "linien": 2
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen raten, welcher von drei Sätzen erfunden ist, üben bei jeder Antwort die Nachfrage und finden Gemeinsamkeiten; die Felder sind bewusst harmlos.",
+          "ablauf": [
+            "Einheit 2, Schritt 3: Aufgabe 1 – drei Sätze schreiben, die anderen raten mit Fingern.",
+            "Schritt 5: die Nachfrage im Rollenspiel vormachen, dann Aufgabe 2 – wer Ja sagt, schreibt den Vornamen, die Nachfrage kommt als Stichwort dazu.",
+            "Schritt 5, zum Schluss: Aufgabe 3 – eine Gemeinsamkeit der Gruppe aufschreiben und aufs Plakat übertragen."
+          ],
+          "hintergrund": "Zu Beginn prüfen die Mitglieder einer Gruppe vor allem, ob sie dazugehören und wie sicher der Rahmen ist (Tuckman, 1965). Kleine, ungefährliche Fragen in Bewegung senken die Hemmschwelle. Gemeinsamkeiten zu entdecken stärkt die Verbundenheit, eines der psychologischen Grundbedürfnisse (Deci & Ryan, 2000); die Nachfrage-Regel macht aus dem Unterschriftensammeln ein Gespräch.",
+          "quellen": [
+            "Tuckman, B. W. (1965). Developmental sequence in small groups. Psychological Bulletin, 63(6), 384–399.",
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          ],
+          "material": "Heft, Stifte, Stoppuhr"
+        }
+      }
+    },
+    {
+      "id": "a7-fragekarten",
+      "bereich": "skills",
+      "thema": "ankommen",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Fragekarten",
+        "Schritt nach vorn",
+        "Nachfrage-Kette",
+        "Annexe"
+      ],
+      "bild": "icon:messages",
+      "kurs": [
+        "a7-e02"
+      ],
+      "de": {
+        "titel": "Karten: Schritt nach vorn und Nachfrage-Kette",
+        "untertitel": "Kopiervorlage – einmal kopieren und schneiden",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Die Schritt-Karten liest die Leitung vor; wer sich angesprochen fühlt, tritt vor. Die Fragekarten ziehen die Jugendlichen für die Nachfrage-Kette. Alle Sätze sind bewusst harmlos – Familie, Herkunft, Geld, Körper und Noten kommen nicht vor.",
+            "klein": true
+          },
+          {
+            "art": "text",
+            "text": "Schritt-Karten: Mach einen Schritt nach vorn, wenn du …"
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 52,
+            "karten": [
+              {
+                "text": "… heute schon gelacht hast."
+              },
+              {
+                "text": "… schon mal in den falschen Bus gestiegen bist."
+              },
+              {
+                "text": "… mehr als zwei Sprachen sprichst."
+              },
+              {
+                "text": "… Musik hörst, wenn du runterkommen willst."
+              },
+              {
+                "text": "… ein Haustier hast oder gern eines hättest."
+              },
+              {
+                "text": "… etwas geschafft hast, das du dir nicht zugetraut hast."
+              },
+              {
+                "text": "… etwas kannst, worauf du stolz bist."
+              },
+              {
+                "text": "… neugierig bist, was in diesem Jahr passiert."
+              }
+            ]
+          },
+          {
+            "art": "text",
+            "text": "Fragekarten: Frag – und frag nach."
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 52,
+            "karten": [
+              {
+                "text": "Was hast du zuletzt zum ersten Mal gemacht?"
+              },
+              {
+                "text": "Welches Lied hörst du gerade am meisten?"
+              },
+              {
+                "text": "Was isst du am liebsten – und wie schmeckt es am besten?"
+              },
+              {
+                "text": "Welche Serie oder welches Spiel empfiehlst du?"
+              },
+              {
+                "text": "Was kannst du, das man dir nicht ansieht?"
+              },
+              {
+                "text": "Wohin würdest du gern einmal reisen?"
+              },
+              {
+                "text": "Welches Tier wärst du gern – und warum?"
+              },
+              {
+                "text": "Was war ein richtig guter Tag in letzter Zeit?"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Karten für zwei kurze Spiele: die Schritt-Karten für „Ein Schritt nach vorn“, die Fragekarten für die Nachfrage-Kette.",
+          "ablauf": [
+            "Einmal kopieren, am besten auf festes Papier, und schneiden.",
+            "Einheit 2, Schritt 3: Die Leitung prüft vorher, ob ein Satz für jemanden heikel ist, sortiert solche Karten aus und liest acht Schritt-Karten vor.",
+            "Schritt 5: Die Jugendlichen ziehen Fragekarten für die Nachfrage-Kette; jede Person darf eine Karte tauschen."
+          ],
+          "hintergrund": "Harmlose Sätze zeigen, wie viel eine Gruppe teilt, ohne dass jemand etwas Persönliches preisgeben muss; wer sieht, dass andere Ähnliches erleben, fühlt sich weniger allein (Yalom & Leszcz, 2005). Die Nachfrage übt Zuhören und Interesse und macht aus einer Frage ein kurzes Gespräch.",
+          "quellen": [
+            "Yalom, I. D. & Leszcz, M. (2005). The Theory and Practice of Group Psychotherapy (5th ed.). New York: Basic Books."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}

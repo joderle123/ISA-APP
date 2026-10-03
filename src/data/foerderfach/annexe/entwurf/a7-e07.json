@@ -1,0 +1,303 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e07",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["ff-gefuehlsrad", "a7-gefuehle-botschaften"],
+      "vorlagen": ["a7-gefuehlskarten"],
+      "woerter": [
+        { "de": "das Grundgefühl", "fr": "das Grundgefühl" },
+        { "de": "die Botschaft", "fr": "die Botschaft" },
+        { "de": "unangenehm", "fr": "unangenehm" }
+      ],
+      "de": {
+        "titel": "Was sind Gefühle – und wozu?",
+        "kurz": "Gefühle sammeln, den sechs Grundgefühlen zuordnen, ihre Botschaft finden – und im Foto-Studio ohne Worte darstellen, mit Einverständnis und nur für die Gruppe.",
+        "ziele": [
+          "benennen sechs Grundgefühle und ordnen ihnen genauere Gefühlswörter zu",
+          "erklären an Beispielen, welche Botschaft ein Gefühl hat und wozu auch unangenehme gut sind",
+          "erkennen Gefühle an Gesicht und Haltung und stellen sie ohne Worte dar"
+        ],
+        "material": [
+          "Gefühlsrad (A3-Plakat), Skills-Pässe, Stempel",
+          "Plakat A1, Zettel, dicke Stifte in sechs Farben, Klebeband",
+          "Blatt „Wozu sind Gefühle gut?“, Gefühlskarten (Vorlage), Schere",
+          "Handy oder Tablet der Leitung für das Foto-Studio"
+        ],
+        "vorbereitung": [
+          "Einverständnis für Fotos im Elternbrief prüfen; wer nicht fotografiert werden darf, führt Regie. Fotos bleiben auf dem Gerät der Leitung.",
+          "Gefühlskarten kopieren und schneiden, Plakat mit den sechs Grundgefühlen vorbereiten, Platz für die Pantomime freiräumen.",
+          "Die Geschichte von Kim (eine Minute) und die Mini-Szene „Der Bus fährt weg“ vorher laut üben."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: das genauere Wort" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Thema: Gefühle" },
+          { "min": "15–45", "phase": "uebung", "titel": "Gefühlswörter sammeln und Botschaften finden" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Bewegung: Gefühls-Gangarten" },
+          { "min": "50–85", "phase": "uebung", "titel": "Foto-Studio: Gefühle ohne Worte" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Farbsuche" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: das genauere Wort",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Das Gefühlsrad liegt in der Mitte; heute gilt eine Zusatzregel: Jede Person wählt ein Wort aus dem äußeren Ring, nicht aus der Mitte, und sagt einen Satz dazu. Die Leitung beginnt und zeigt, dass ein genaues Wort mehr verrät als „gut“ oder „schlecht“.",
+            "sagen": [
+              "Such dir heute ein Wort von außen, das es genauer trifft als „gut“ oder „schlecht“.",
+              "Ich nehme „gereizt“: Der Bus war voll, und ich bin noch nicht ganz angekommen."
+            ],
+            "wennEsKippt": "Sagt jemand „keine Ahnung“, das Rad in die Hand geben und fragen, welches Wort gar nicht passt – über das Ausschließen fällt die Wahl oft leichter.",
+            "blatt": "ff-gefuehlsrad"
+          },
+          {
+            "titel": "Rückblick, Mission und Thema: Gefühle",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Zur Mission fragen: Kam dein Moment – und wie hast du deine Stärke neu eingesetzt? Daumen hoch, Mitte oder runter, eine Stimme erzählt; niemand muss den Moment erlebt haben. Dann das Thema nennen: Heute geht es um Gefühle – was sie uns sagen wollen und wozu sie gut sind.",
+            "sagen": [
+              "Wenn ein Bedürfnis leer ist, meldet sich ein Gefühl: Wer zu wenig geschlafen hat, ist schneller gereizt – das Gefühl zeigt, dass ein Tank leer ist."
+            ]
+          },
+          {
+            "titel": "Gefühlswörter sammeln und Botschaften finden",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Das Bild (3 Min.): Ein Gefühl ist wie eine Nachricht auf dem Handy – es meldet, was gerade wichtig ist. Das Modell: Die sechs Grundgefühle des Gefühlsrads haben je eine Botschaft, und die Wörter im Außenring sind genauere Namen dafür.",
+            "sagen": [
+              "Stellt euch vor, ihr hättet nie wieder Angst. Klingt gut – oder?",
+              "Es gibt keine falschen Gefühle, aber hilfreiche und weniger hilfreiche Arten, mit ihnen umzugehen."
+            ],
+            "punkte": [
+              "Wörter-Wettlauf (5 Min.): Zwei Minuten lang so viele Gefühlswörter wie möglich auf Zettel schreiben – Gruppe gegen Leitung, Jugendsprache zählt –, dann vorlesen.",
+              "Rad-Sortierung (7 Min.): Die Zettel auf das Plakat mit den sechs Grundgefühlen (Freude, Traurigkeit, Angst, Wut, Ekel, Überraschung) kleben; passt ein Wort zu zwei, bekommt es zwei Farben.",
+              "Botschaften-Duell (8 Min.): Die Leitung nennt eine Botschaft („Achtung, Gefahr!“), die Gruppe ruft das Gefühl – dann umgekehrt; zum Schluss verbindet jede Person in Aufgabe 1 Gefühl und Botschaft.",
+              "Kim ohne Angst (7 Min.): Die Leitung erzählt in einer Minute von Kim, die nie Angst hat – sie rennt bei Rot über die Straße und springt ohne zu schauen vom Zehnmeterbrett –, dann Gespräch: Wozu ist Angst gut? Aufgabe 2 schreibt jede Person allein."
+            ],
+            "tabelle": {
+              "spalten": ["Gefühl", "Botschaft", "Was es uns tun lässt"],
+              "zeilen": [
+                ["Angst", "Achtung, Gefahr. Pass auf dich auf.", "vorsichtig sein, ausweichen, Hilfe holen"],
+                ["Wut", "Das ist unfair. Hier ist eine Grenze.", "sich wehren, Stopp sagen"],
+                ["Traurigkeit", "Mir fehlt etwas. Ich brauche Trost.", "sich zurückziehen, Nähe und Trost suchen"],
+                ["Freude", "Das tut mir gut. Davon will ich mehr.", "weitermachen, teilen, Neues ausprobieren"],
+                ["Ekel", "Das ist schlecht für mich. Abstand.", "wegschieben, sich abwenden"],
+                ["Überraschung", "Moment – was ist da los?", "innehalten, genau hinschauen"]
+              ]
+            },
+            "tipp": "Wörter mit zwei Farben stehen lassen, statt sie aufzulösen: Sie zeigen, dass sich Gefühle mischen.",
+            "wennEsKippt": "Kommen kaum Wörter, die Gefühlskarten verdeckt austeilen: Jede Person liest ihre Karte vor und klebt sie aufs Plakat. Werden Wörter albern oder beleidigend, ruhig nachfragen, welches Gefühl dahintersteckt – hinter „cringe“ steckt oft Fremdscham.",
+            "blatt": "a7-gefuehle-botschaften"
+          },
+          {
+            "titel": "Bewegung: Gefühls-Gangarten",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle gehen kreuz und quer durch den Raum; auf Zuruf der Leitung wechselt die Gangart: wie bei Wut, Freude, Angst, Stolz oder Langeweile. Wer mag, ruft selbst ein Gefühl; die Leitung geht mit.",
+            "tipp": "Nach der Runde kurz fragen: Was hat sich im Körper verändert? Das bereitet die Pantomime vor."
+          },
+          {
+            "titel": "Foto-Studio: Gefühle ohne Worte",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Zuerst die Einverständnis-Runde (3 Min.): Jede Person wählt, ob sie mit Gesicht, nur mit Händen, als Körper ohne Gesicht oder gar nicht fotografiert wird – dann ist sie Fotograf oder Regie; fotografiert wird mit dem Gerät der Leitung, die Fotos bleiben in der Gruppe. Danach zeigen alle Gefühle ohne Worte, und die Gruppe rät, woran sie es erkennt.",
+            "sagen": [
+              "Erst als Statue, dann in Bewegung – und kein einziges Wort. Woran habt ihr es erkannt: Gesicht, Schultern, Hände?",
+              "Du entscheidest, was auf dem Foto zu sehen ist – Gesicht, Hände oder nur die Haltung."
+            ],
+            "punkte": [
+              "Gefühle-Pantomime (10 Min.): Eine Gefühlskarte verdeckt ziehen, zehn Sekunden als Statue, dann in Bewegung zeigen – die anderen raten und sagen, woran sie es erkannt haben.",
+              "Foto-Studio (12 Min.): Jede Person stellt drei Gefühle für ein Foto nach, die anderen führen Regie („mehr Schultern!“); das beste Foto je Gefühl wird ausgewählt.",
+              "Foto-Rätsel (6 Min.): Die Fotos laufen ohne Titel durch, die Gruppe rät Gefühl und Botschaft; in Aufgabe 3 hält jede Person fest, woran man das Gefühl sieht.",
+              "Gefühl im Alltag (4 Min.): Die Leitung spielt eine Mini-Szene („Der Bus fährt weg“), alle nennen Gefühl und Botschaft in einem Satz."
+            ],
+            "tipp": "Die Leitung spielt die erste Karte selbst und übertreibt – das senkt die Hemmung; wer nicht allein spielen mag, spielt zu zweit mit der Leitung.",
+            "wennEsKippt": "Lacht jemand über eine Darstellung, kurz unterbrechen und an den Gruppenvertrag erinnern: Wir lachen miteinander, nicht übereinander. Zieht jemand sein Einverständnis zurück, wird das Foto sofort gelöscht – ohne Diskussion.",
+            "blatt": "a7-gefuehle-botschaften"
+          },
+          {
+            "titel": "Skill: Farbsuche",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Der Skill holt in den Moment zurück, wenn ein Gefühl groß wird – und niemand sieht es: Farbsuche und Nachspüren (zusammen höchstens 4 Minuten), danach der Abschluss mit Skills-Pass, Mission und Moment.",
+            "sagen": [
+              "Such dir eine Farbe aus und finde drei Dinge in dieser Farbe, die dir sonst nicht auffallen.",
+              "Welches Gefühl ist gerade da – und was will es dir sagen?"
+            ],
+            "punkte": [
+              "Farbsuche (3 Min.): Farbe wählen, Blick wandern lassen und drei Dinge in dieser Farbe finden – im Raum oder draußen, ohne zu reden; die Leitung macht mit.",
+              "Nachspüren (1 Min.): Was ist im Körper anders – wärmer, ruhiger, gleich?",
+              "Skills-Pass (4 Min.): Ein Satz zu „Welches Gefühl verstehe ich heute besser?“, dann der Stempel.",
+              "Mission und Moment (6 Min.): Mission ansagen; jede Person wählt ihren Moment, zum Beispiel im Bus oder vor dem Einschlafen, und schreibt ihn ins Heft.",
+              "Ausblick (1 Min.): Nächste Woche gibt es einen Film."
+            ],
+            "wennEsKippt": "Fällt jemandem keine Farbe ein, nimmt die Leitung eine vor, zum Beispiel alles Blaue. Wer nicht still sein mag, zählt die Dinge laut – Hauptsache, der Blick wandert."
+          }
+        ],
+        "bruecke": "Nächste Woche schaut ihr einen Film: Riley zieht in eine neue Stadt, und fünf Gefühle streiten in ihrem Kopf um das Steuer.",
+        "mission": "Mach einmal die Farbsuche, wenn ein Gefühl da ist: Was will es dir sagen?",
+        "hintergrund": "Gefühle sind kurze, organisierte Reaktionen auf Ereignisse, die uns wichtig sind: Sie lenken die Aufmerksamkeit und bereiten den Körper auf eine Handlung vor. Ekman (1992) beschreibt Grundgefühle, deren Gesichtsausdruck in vielen Kulturen erkannt wird; Plutchik (2001) ordnet jedem eine Funktion zu – Angst schützt, Wut räumt Hindernisse weg, Traurigkeit sucht Nähe. Wer ein Gefühl benennt, dämpft die Reaktion des Alarmzentrums im Gehirn (Lieberman et al., 2007).",
+        "quellen": [
+          "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+          "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428."
+        ],
+        "achtung": "Fotos nur mit Einverständnis der Jugendlichen und der Eltern: Wer nicht möchte, wird nicht fotografiert und führt Regie; zurückgezogene Einverständnisse gelten sofort, die Fotos bleiben in der Gruppe und werden nicht geteilt. Gefühle sind persönlich: Niemand muss erzählen, wann er ein Gefühl zuletzt hatte, „weiter“ ist erlaubt, und Geschichten und Szenen arbeiten mit erfundenen Figuren. Wird ein Beitrag zu persönlich oder deutet etwas auf Gewalt, Missbrauch oder Selbstverletzung hin, freundlich stoppen, ein Einzelgespräch anbieten und noch am selben Tag die Responsable informieren.",
+        "differenzierung": {
+          "leichter": "Statt zu schreiben, zeigen alle auf Gefühlskarten und Gesichter; die sechs Botschaften stehen vorab übersetzt am Plakat, und Wörter in der eigenen Sprache zählen.",
+          "schwerer": "Für Wörter vom Rand (Neid, Scham, Enttäuschung) eine eigene Botschaft formulieren und eine Situation aufschreiben, in der sich zwei Gefühle mischen."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit dem genaueren Wort (5 Min.), Wörter-Wettlauf und Rad-Sortierung mit den Botschaften (15 Min.), Pantomime mit zwei Fotos je Person (15 Min.), Farbsuche, Skills-Pass und Mission (15 Min.). Foto-Rätsel, Kim-Geschichte und Gefühls-Gangarten entfallen."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-gefuehle-botschaften",
+      "bereich": "skills",
+      "thema": "gefuehle",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Grundgefühle", "Botschaft", "Gefühlswörter", "Foto-Studio", "Annexe"],
+      "bild": "icon:mail",
+      "kurs": ["a7-e07"],
+      "de": {
+        "titel": "Wozu sind Gefühle gut?",
+        "untertitel": "Jedes Gefühl hat eine Botschaft.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Ein Gefühl ist wie eine Nachricht auf dem Handy: Es sagt dir, was gerade wichtig ist. Es gibt angenehme und unangenehme Gefühle, aber keine falschen. Was du daraus machst, entscheidest du."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Verbinde jedes Gefühl mit seiner Botschaft.",
+            "symbole": ["verbinden"]
+          },
+          {
+            "art": "zuordnen",
+            "titel": ["Gefühl", "Seine Botschaft"],
+            "links": ["Angst", "Wut", "Traurigkeit", "Freude", "Ekel", "Überraschung"],
+            "rechts": [
+              "Das tut mir gut. Davon will ich mehr.",
+              "Moment – was ist da los?",
+              "Mir fehlt etwas. Ich brauche Trost.",
+              "Achtung, Gefahr. Pass auf dich auf.",
+              "Das ist unfair. Hier ist eine Grenze.",
+              "Das ist schlecht für mich. Abstand."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Welches Gefühl magst du am wenigsten – und wozu ist es gut?",
+            "hinweis": "Du schreibst nur für dich.",
+            "symbole": ["nachdenken", "schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Am wenigsten mag ich …, weil …", "Trotzdem ist es gut, weil …"],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schau dir die Fotos an: Woran erkennst du das Gefühl?",
+            "hinweis": "Gesicht, Schultern, Hände – ein Stichwort reicht.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "tabelle",
+            "spalten": ["Gefühl", "Im Gesicht", "Im Körper"],
+            "breiten": [1, 1.6, 1.6],
+            "zeilen": 3,
+            "beispiel": ["Wut", "Augenbrauen zusammen", "Fäuste, Schultern hoch"]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen ordnen sechs Grundgefühlen ihre Botschaft zu, erklären, wozu auch ein unangenehmes Gefühl gut ist, und halten fest, woran man ein Gefühl im Gesicht und im Körper erkennt.",
+          "ablauf": [
+            "Einheit 7, Schritt 3: Aufgabe 1 nach dem Botschaften-Duell (Lösung: Angst – Achtung, Gefahr; Wut – unfair, Grenze; Traurigkeit – Trost; Freude – tut mir gut; Ekel – Abstand; Überraschung – Moment, was ist da los?).",
+            "Aufgabe 2 nach der Geschichte von Kim, allein und ohne Vorlesen.",
+            "Schritt 5: Aufgabe 3 nach dem Foto-Rätsel – ein Stichwort je Gefühl; die Fotos bleiben in der Gruppe.",
+            "Das Blatt bleibt im Heft und wird nicht eingesammelt."
+          ],
+          "hintergrund": "Ekman (1992) beschreibt Grundgefühle, deren Gesichtsausdruck in vielen Kulturen verstanden wird; Plutchik (2001) ordnet jedem Grundgefühl eine Funktion zu – Angst sorgt für Schutz, Wut räumt Hindernisse aus dem Weg, Traurigkeit sucht verlorene Nähe. Wer ein Gefühl genau benennt, dämpft die Reaktion des Alarmzentrums im Gehirn (Lieberman et al., 2007).",
+          "quellen": [
+            "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+            "Plutchik, R. (2001). The nature of emotions. American Scientist, 89(4), 344–350.",
+            "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428."
+          ],
+          "material": "Buntstifte, Zettel, Gefühlskarten"
+        }
+      }
+    },
+    {
+      "id": "a7-gefuehlskarten",
+      "bereich": "skills",
+      "thema": "gefuehle",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "je 10–20 Min.",
+      "eldib": [],
+      "schlagworte": ["Gefühlskarten", "Pantomime", "Foto-Studio", "Gefühlswortschatz", "Annexe"],
+      "bild": "icon:masks-theater",
+      "kurs": ["a7-e07"],
+      "de": {
+        "titel": "Gefühlskarten",
+        "untertitel": "Kopiervorlage zum Ausschneiden – für Pantomime und Foto-Studio",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So werden die Karten gebraucht",
+            "punkte": [
+              "Einmal auf festes Papier kopieren und ausschneiden – ein Satz genügt für drei Jugendliche.",
+              "Einheit 7: Pantomime und Foto-Studio; später gern wieder für Rollenspiele und Standbilder.",
+              "Wer mag, schreibt eigene Gefühlswörter der Gruppe auf die Rückseite."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 112,
+            "karten": [
+              { "bild": "gesicht:froh", "titel": "Freude" },
+              { "bild": "gesicht:traurig", "titel": "Traurigkeit" },
+              { "bild": "gesicht:wuetend", "titel": "Wut" },
+              { "bild": "gesicht:aengstlich", "titel": "Angst" },
+              { "bild": "gesicht:ueberrascht", "titel": "Überraschung" },
+              { "bild": "gesicht:angeekelt", "titel": "Ekel" },
+              { "bild": "gesicht:stolz", "titel": "Stolz" },
+              { "bild": "gesicht:verlegen", "titel": "Scham" },
+              { "bild": "gesicht:enttaeuscht", "titel": "Enttäuschung" },
+              { "bild": "gesicht:gelangweilt", "titel": "Langeweile" },
+              { "bild": "gesicht:nervoes", "titel": "Nervosität" },
+              { "bild": "gesicht:ruhig", "titel": "Zufriedenheit" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Ein Kartensatz für die Gruppe: Gefühle an Gesicht und Haltung erkennen, ohne Worte darstellen und für das Foto-Studio nachstellen.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; ein Satz genügt für drei Jugendliche.",
+            "Einheit 7, Schritt 5: Pantomime – verdeckt ziehen, erst Statue, dann Bewegung; danach das Foto-Studio.",
+            "Die Karten bleiben im Raum und können später wieder gebraucht werden, zum Beispiel für Standbilder.",
+            "Karten mit Gefühlen, die gerade zu nah gehen, ohne Begründung beiseitelegen."
+          ],
+          "hintergrund": "Ekman (1992) beschreibt Grundgefühle, deren Gesichtsausdruck in vielen Kulturen verstanden wird. Wer Gefühle selbst darstellt und bei anderen erkennt, erweitert seinen Gefühlswortschatz – und ein genauer Wortschatz hilft, passender zu reagieren (Brackett, 2019).",
+          "quellen": [
+            "Ekman, P. (1992). An argument for basic emotions. Cognition and Emotion, 6(3–4), 169–200.",
+            "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+          ],
+          "material": "Festes Papier, Schere, Umschlag"
+        }
+      }
+    }
+  ]
+}

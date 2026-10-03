@@ -1,0 +1,431 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e05",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "a7-laut-und-leise",
+        "ff-gefuehlsrad",
+        "ff-skills-pass"
+      ],
+      "vorlagen": [
+        "a7-band-karten"
+      ],
+      "woerter": [
+        {
+          "de": "laut – leise",
+          "fr": "laut – leise"
+        },
+        {
+          "de": "schüchtern",
+          "fr": "schüchtern"
+        },
+        {
+          "de": "die Rolle",
+          "fr": "die Rolle"
+        },
+        {
+          "de": "die Stärke",
+          "fr": "die Stärke"
+        },
+        {
+          "de": "dankbar",
+          "fr": "dankbar"
+        }
+      ],
+      "de": {
+        "titel": "Zwischen laut und leise",
+        "kurz": "Jede Person stellt ihre Regler zwischen laut und leise ein, hört den freundlichen Blick der anderen und findet in einer Filmszene ihre Rolle in einer Band.",
+        "ziele": [
+          "ordnen sich zwischen Gegensätzen wie laut und leise ein und merken, dass sie je nach Situation anders sind",
+          "vergleichen ihr Selbstbild mit dem freundlichen Blick der anderen",
+          "beschreiben, was laute und leise Seiten können und warum eine Band beide braucht"
+        ],
+        "material": [
+          "Gefühlsrad (A3), Namensklammern, Kreppband",
+          "Film „School of Rock“ (2003) und Abspielgerät",
+          "Band-Karten (Vorlage), Schere, Stifte",
+          "Handy der Leitung für ein Bandfoto, Skills-Pässe, Stempel"
+        ],
+        "vorbereitung": [
+          "„School of Rock“ besorgen; Vorführrechte der Einrichtung, Altersfreigabe (bis 12) und Einverständnis der Eltern prüfen.",
+          "Die Szene vorher selbst ansehen und markieren: Dewey verteilt Aufgaben an die ganze Klasse, auch an Kinder ohne Instrument.",
+          "Linie aus Kreppband kleben, Band-Karten schneiden und eine eigene Zeile für „Rate mal“ überlegen."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Wie laut bist du heute?"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick, Mission und Thema"
+          },
+          {
+            "min": "15–45",
+            "phase": "uebung",
+            "titel": "Mein Mischpult: Wo stehe ich?"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegung: Gewitter im Raum"
+          },
+          {
+            "min": "50–85",
+            "phase": "uebung",
+            "titel": "Film School of Rock: Jede Rolle zählt"
+          },
+          {
+            "min": "85–100",
+            "phase": "skill",
+            "titel": "Skill: Dankbarkeitsblitz"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Wie laut bist du heute?",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Reihum steckt jede Person ihre Klammer an ein Wort am Gefühlsrad und zeigt mit der flachen Hand, wie laut oder leise sie sich heute fühlt – Hand am Boden heißt flüsterleise, Hand über dem Kopf Lautsprecher. Die Leitung beginnt; die Handhöhe wird nicht gedeutet, nur wahrgenommen.",
+            "sagen": [
+              "Zeigt euer Wort – und mit der Hand, wie laut ihr heute drauf seid.",
+              "Ist das bei euch jeden Tag gleich – und überall?"
+            ],
+            "tipp": "Beiläufig sagen, dass leise nicht schlecht gelaunt heißt, bevor es jemand so deutet.",
+            "blatt": "ff-gefuehlsrad"
+          },
+          {
+            "titel": "Rückblick, Mission und Thema",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Leitung fragt nach der Mission: Kam dein Moment – hast du deinen kleinen Schritt oder die 4-7-8-Atmung gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann nennt sie das Thema: Wie bin ich – und wie sehen mich die anderen?",
+            "sagen": [
+              "Kam euer Moment, und habt ihr euren Schritt oder die Atmung ausprobiert? Daumen hoch, Mitte oder runter.",
+              "Letztes Mal ging es darum, was ihr braucht – heute geht es darum, wie ihr seid, und keine Art ist besser als die andere."
+            ],
+            "tipp": "Hat niemand den Schritt gemacht, das gelassen nehmen: Neue Gewohnheiten brauchen mehrere Anläufe."
+          },
+          {
+            "titel": "Mein Mischpult: Wo stehe ich?",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Das Bild für heute: Jeder Mensch hat ein Mischpult mit Reglern – laut oder leise, spontan oder planend, gern unter Leuten oder gern allein –, und kein Regler steht für immer fest. Leise ist nicht schüchtern, und keine Einstellung ist besser: Eine Band braucht Bass und Becken.",
+            "sagen": [
+              "Denkt daran, wie ihr meistens seid, nicht wie ihr sein solltet. Die Mitte ist immer erlaubt.",
+              "Ihr ratet nur Freundliches, das ihr selbst gesehen habt – und wer geraten wird, entscheidet, was stimmt."
+            ],
+            "punkte": [
+              "Mischpult erklären (4 Min.): Die Leitung zeichnet fünf Regler an die Tafel (laut – leise, spontan – planend, gern unter Leuten – gern allein, redet gern – hört gern zu, probiert gleich aus – schaut erst zu) und stellt ihre eigenen ein.",
+              "Regler einstellen (7 Min.): Jede Person kreuzt im Heft die fünf Regler an und denkt dabei an eine Situation; per Handzeichen: Wer steht nicht überall gleich?",
+              "Aufstellung an der Linie (8 Min.): Die Linie am Boden wird zum Regler: Bei drei Gegensatzpaaren stellen sich alle dorthin, wo sie meistens stehen, und sagen in einem Satz, wann sie anders sind.",
+              "Rate mal (11 Min.): Die Leitung beginnt und lässt sich raten; dann raten alle reihum, wo bei einer Person ein Regler steht und woran man es merkt – nur Freundliches, das man selbst gesehen hat; die geratene Person entscheidet, was stimmt, und sagt nur Danke."
+            ],
+            "tipp": "Die Leitung zeigt ihr eigenes Beispiel: Im Team bin ich eher laut, nach der Arbeit brauche ich eine Stunde Ruhe – so wird sichtbar, dass beides in einer Person steckt.",
+            "wennEsKippt": "Kommentiert jemand, wo ein anderer steht („Du und leise?“), sofort freundlich stoppen: Hier entscheidet jede Person für sich. Wer nicht geraten werden möchte, schätzt sich allein ein oder lässt nur die Leitung raten.",
+            "blatt": "a7-laut-und-leise"
+          },
+          {
+            "titel": "Bewegung: Gewitter im Raum",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen im Kreis, die Leitung dirigiert: Hände reiben (Wind), schnipsen (erste Tropfen), auf die Oberschenkel klatschen (Regen), mit den Füßen trampeln (Gewitter) – dann alles rückwärts bis zur Stille, die zehn Sekunden gehalten wird. In der zweiten Runde dirigiert eine freiwillige Person.",
+            "sagen": [
+              "Ohne Stille gibt es kein Gewitter – ein Orchester braucht das Laute und das Leise."
+            ],
+            "tipp": "Wer sonst eher laut ist, darf dirigieren: Die Aufgabe braucht viel Energie und endet in Stille."
+          },
+          {
+            "titel": "Film School of Rock: Jede Rolle zählt",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Im Film „School of Rock“ (2003) verteilt Dewey in einer Szene Aufgaben in der Band an die ganze Klasse – auch an Kinder, die kein Instrument spielen. Die Gruppe beobachtet, wer welche Aufgabe bekommt und wie die Kinder reagieren, und findet dann ihre eigene Rolle in einer Band.",
+            "sagen": [
+              "Achtet beim Zuschauen darauf: Wer bekommt welche Aufgabe, und wie reagieren die Kinder, die zuerst glauben, sie können nichts?",
+              "Wenn ihr eine Band wärt: Welche Rolle würde zu euch passen – und was sieht jemand anderes bei euch?"
+            ],
+            "punkte": [
+              "Beobachtungsauftrag (3 Min.): Jede Person bekommt einen Fokus: die Aufgaben, die Gesichter der Kinder oder das, was Dewey sagt.",
+              "Filmszene (7 Min.): Die Szene, in der Dewey jedem Kind eine Aufgabe in der Band gibt, einmal ansehen; die Leitung hat sie vorher markiert und stoppt am Ende.",
+              "Gespräch (7 Min.): Wer bekommt welche Aufgabe, und warum passt sie? Was wäre passiert, wenn alle Schlagzeug spielen wollten?",
+              "Meine Rolle in der Band (11 Min.): Jede Person zieht aus den Band-Karten die Rolle, die sie bei sich sieht, schreibt zwei Sätze ins Heft, und die anderen ergänzen eine Stärke, die sie bei ihr gesehen haben.",
+              "Bandfoto (7 Min.): Die Gruppe erfindet einen Bandnamen und stellt ein Standbild, jede Person in ihrer Rolle; fotografiert wird nur mit Einverständnis, das Foto bleibt in der Gruppe."
+            ],
+            "tipp": "Läuft die Szene länger als geplant, an einer ruhigen Stelle stoppen: Das Gespräch ist wichtiger als der Film.",
+            "wennEsKippt": "Sagt jemand „Ich kann nichts“, daran erinnern, dass Dewey in der Szene jedem Kind eine Aufgabe gibt, und nach einer Rolle abseits der Bühne fragen: Manager, Stylist, Technik. Wer kein Foto möchte, steht als Manager hinter der Kamera.",
+            "blatt": "a7-band-karten"
+          },
+          {
+            "titel": "Skill: Dankbarkeitsblitz",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Der Skill hilft an Tagen, an denen der Kopf nur das Schlechte sieht: zwanzig Sekunden an eine Sache denken, für die man gerade dankbar ist – klein reicht, zum Beispiel ein gutes Lied oder das Essen heute. Danach der Abschluss: ein Satz in den Skills-Pass, die Mission und der eigene Moment.",
+            "sagen": [
+              "Zwanzig Sekunden: eine Sache, für die ihr gerade dankbar seid. Auch ein gutes Lied zählt.",
+              "Der Kopf merkt sich Ärger leichter als Gutes – mit dem Dankbarkeitsblitz gleicht ihr das ein bisschen aus."
+            ],
+            "punkte": [
+              "Skill (4 Min.): Alle sitzen oder stehen, Augen offen oder auf den Boden gerichtet, und denken zwanzig Sekunden an eine Sache, für die sie dankbar sind; wer mag, teilt sie.",
+              "Skills-Pass (4 Min.): Ein Satz: Was mag ich an meiner Art – oder was habe ich über mich gemerkt? Stempel.",
+              "Mission und Moment (5 Min.): Die Leitung sagt die Mission an; jede Person wählt ihren Moment (Zähneputzen, Bus, Bett) und schreibt ihn in die Spalte „Mein Moment: Wenn …“; die Klammern am Gefühlsrad dürfen umgesteckt werden.",
+              "Ausblick (2 Min.): Die Leitung nennt das Thema der nächsten Stunde: einen echten Baum aussuchen und daraus den eigenen Baum der Stärke gestalten – feste Schuhe nicht vergessen."
+            ],
+            "tipp": "Der Skill ist unauffällig: Man kann ihn im Bus oder vor dem Einschlafen machen, ohne dass es jemand merkt.",
+            "wennEsKippt": "Wird gekichert oder kommt nur „für nichts“, ruhig weitermachen: Auch eine ganz kleine Sache reicht, etwa ein warmes Getränk. Wer nicht mitmachen mag, sitzt still dabei.",
+            "blatt": "ff-skills-pass"
+          }
+        ],
+        "bruecke": "Nächstes Mal geht es um deine Stärken: Du suchst dir einen echten Baum aus und gestaltest daraus deinen Baum der Stärke.",
+        "mission": "Mach vor dem Einschlafen einen Dankbarkeitsblitz – eine kleine Sache reicht.",
+        "hintergrund": "Introversion ist nicht Schüchternheit, die Angst vor Bewertung: Leise Menschen tanken in Ruhe auf und bringen eigene Stärken wie Zuhören mit (Cain, 2012). Das Johari-Fenster erklärt, warum der freundliche Blick einer anderen Person überraschen kann: Andere sehen manches zuerst (Luft & Ingham, 1955). Der Dankbarkeitsblitz geht auf Studien zurück, in denen regelmäßiges Festhalten von Dankbarem das Wohlbefinden steigerte (Emmons & McCullough, 2003).",
+        "quellen": [
+          "Cain, S. (2012). Quiet: The Power of Introverts in a World That Can’t Stop Talking. New York: Crown.",
+          "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California.",
+          "Emmons, R. A. & McCullough, M. E. (2003). Counting blessings versus burdens: An experimental investigation of gratitude and subjective well-being in daily life. Journal of Personality and Social Psychology, 84(2), 377–389."
+        ],
+        "achtung": "Der Blick der anderen kann kränken, auch wenn alles freundlich gemeint ist: Niemand wird eingeordnet, jede Person entscheidet selbst, was geraten wird, und „heute nicht“ ist erlaubt. Bei der Filmszene Vorführrechte, Altersfreigabe (bis 12) und Einverständnis der Eltern klären und den Film vorher selbst ansehen; Fotos nur mit Einverständnis, sie bleiben in der Gruppe. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken oder wird jemand in der Gruppe ausgegrenzt, nicht vertiefen und noch am selben Tag die zuständige Leitung (Responsable) informieren.",
+        "differenzierung": {
+          "leichter": "Wer mühsam liest oder die Sprache noch lernt, zeigt die Regler mit der Hand statt mit Kreuzen, wählt die Band-Rolle nach Bild und sagt seine Sätze, die Leitung schreibt sie auf.",
+          "schwerer": "Wer schnell ist, beschreibt eine Situation, in der Kreuz und Vermutung weit auseinanderlagen, und schreibt auf: Wann zeige ich die Seite, die die anderen sehen?"
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Klammer und Handhöhe (5 Min.), Regler einstellen und Rate mal (15 Min.), die Filmszene mit Gespräch und Band-Rolle (20 Min.), Dankbarkeitsblitz mit Skills-Pass, Mission und Moment (10 Min.). Gewitter im Raum und Bandfoto entfallen; den Satz „Eine Band braucht beide Seiten“ sagt die Leitung beim Gespräch."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-laut-und-leise",
+      "bereich": "skills",
+      "thema": "ich",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "30 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Selbstbild",
+        "Fremdbild",
+        "laut und leise",
+        "Vielfalt",
+        "Johari-Fenster",
+        "Annexe"
+      ],
+      "bild": "icon:music",
+      "kurs": [
+        "a7-e05"
+      ],
+      "de": {
+        "titel": "Zwischen laut und leise",
+        "untertitel": "Wo stehen deine Regler – und wie sehen dich andere?",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Leise heißt nicht schüchtern, laut heißt nicht frech. Fast alle sind mal laut, mal leise – je nach Situation. Eine Band braucht beides: den Bass und das Becken."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Stell deine Regler ein: Kreuze auf jeder Linie an, wo du meistens stehst.",
+            "hinweis": "Denk daran, wie du bist – nicht, wie du sein willst.",
+            "symbole": [
+              "ankreuzen"
+            ]
+          },
+          {
+            "art": "skala",
+            "von": "laut",
+            "bis": "leise",
+            "stufen": 5
+          },
+          {
+            "art": "skala",
+            "von": "spontan",
+            "bis": "plane gern",
+            "stufen": 5
+          },
+          {
+            "art": "skala",
+            "von": "gern unter Leuten",
+            "bis": "gern für mich",
+            "stufen": 5
+          },
+          {
+            "art": "skala",
+            "von": "rede gern",
+            "bis": "höre gern zu",
+            "stufen": 5
+          },
+          {
+            "art": "skala",
+            "von": "probiere gleich aus",
+            "bis": "schaue erst zu",
+            "stufen": 5
+          },
+          {
+            "art": "aufgabe",
+            "text": "Lass dich raten: Eine andere Person sagt, welche Rolle in einer Band zu dir passt – und woran sie es merkt.",
+            "symbole": [
+              "partner",
+              "sprechen"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Wer rät",
+              "Rolle in der Band",
+              "Woran man es merkt"
+            ],
+            "breiten": [
+              1.1,
+              1.5,
+              2.6
+            ],
+            "zeilen": 2,
+            "beispiel": [
+              "Leitung",
+              "Bass",
+              "Du hältst alles zusammen."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ergänze die Sätze.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "An meiner Art mag ich …",
+              "In einer Band wäre ich …, weil …"
+            ],
+            "linien": 1
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen merken, dass sie je nach Situation mal lauter, mal leiser sind, und vergleichen ihr Selbstbild mit dem freundlichen Blick einer anderen Person; im Film und mit der Band-Rolle sehen sie, dass beide Seiten gebraucht werden.",
+          "ablauf": [
+            "Einheit 5, Schritt 3: Aufgabe 1 – fünf Regler ankreuzen; per Handzeichen: Wer steht nicht überall gleich?",
+            "Schritt 3, zum Schluss: Rate mal – die Leitung beginnt; wer geraten wird, entscheidet, was stimmt.",
+            "Schritt 5: nach der Filmszene Aufgabe 2 mit den Band-Karten und Aufgabe 3 allein; vorgelesen wird nur freiwillig.",
+            "Das Blatt bleibt im Heft."
+          ],
+          "hintergrund": "Introversion und Extraversion beschreiben, woher Menschen Energie beziehen; Introversion ist nicht dasselbe wie Schüchternheit, die Angst vor Bewertung (Cain, 2012). Das Johari-Fenster erklärt, warum ein Blick von außen überraschen kann (Luft & Ingham, 1955). Deshalb sind alle Pole freundlich formuliert, und jede Person wählt selbst, was geraten wird.",
+          "quellen": [
+            "Cain, S. (2012). Quiet: The Power of Introverts in a World That Can’t Stop Talking. New York: Crown.",
+            "Luft, J. & Ingham, H. (1955). The Johari window, a graphic model of interpersonal awareness. Proceedings of the Western Training Laboratory in Group Development. Los Angeles: University of California."
+          ],
+          "achtung": "Der Blick der anderen kann kränken: Niemand wird eingeordnet, und „heute nicht“ ist erlaubt.",
+          "material": "Heft, Stifte"
+        }
+      }
+    },
+    {
+      "id": "a7-band-karten",
+      "bereich": "skills",
+      "thema": "ich",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Band-Karten",
+        "Rollen",
+        "Stärken",
+        "Vielfalt",
+        "Annexe"
+      ],
+      "bild": "icon:users-group",
+      "kurs": [
+        "a7-e05"
+      ],
+      "de": {
+        "titel": "Band-Karten: Welche Rolle hast du?",
+        "untertitel": "Kopiervorlage – einmal kopieren und schneiden",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Acht Aufgaben einer Band, mit und ohne Instrument. Jede Person zieht die Rolle, die sie bei sich sieht; die anderen ergänzen eine Stärke, die sie bei ihr beobachtet haben. Zwei Personen dürfen dieselbe Rolle wählen.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 112,
+            "karten": [
+              {
+                "titel": "Schlagzeug",
+                "bild": "icon:stopwatch",
+                "text": "Du gibst den Takt und die Energie. Die Band folgt dir."
+              },
+              {
+                "titel": "Bass",
+                "bild": "icon:puzzle",
+                "text": "Du hältst alles zusammen – leise, aber ohne dich fehlt der Boden."
+              },
+              {
+                "titel": "Gitarre",
+                "bild": "icon:flame",
+                "text": "Du spielst die Riffs und Soli und bringst den Song zum Brennen."
+              },
+              {
+                "titel": "Gesang",
+                "bild": "icon:microphone",
+                "text": "Du gibst dem Song eine Stimme – laut, leise oder beides."
+              },
+              {
+                "titel": "Songtexte",
+                "bild": "icon:pencil",
+                "text": "Du schreibst auf, was die Band sagen will."
+              },
+              {
+                "titel": "Manager",
+                "bild": "icon:calendar",
+                "text": "Du planst Auftritte, verhandelst und behältst den Überblick."
+              },
+              {
+                "titel": "Stylist",
+                "bild": "icon:palette",
+                "text": "Du gestaltest Look, Plakat und Bühne."
+              },
+              {
+                "titel": "Sound-Technik",
+                "bild": "icon:headphones",
+                "text": "Du stellst laut und leise ein, damit alles gut klingt."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Rollenkarten für die Übung Meine Rolle in der Band: acht Aufgaben einer Band, mit und ohne Instrument.",
+          "ablauf": [
+            "Einmal kopieren, am besten auf festes Papier, und schneiden.",
+            "Einheit 5, Schritt 5: Nach der Filmszene zieht jede Person die Karte, die sie bei sich sieht; die anderen ergänzen eine Stärke, die sie beobachtet haben.",
+            "Zwei Personen dürfen dieselbe Rolle wählen; wer keine passende Karte findet, erfindet eine neue Rolle auf der Rückseite."
+          ],
+          "hintergrund": "Rollen machen sichtbar, dass Gruppen verschiedene Stärken brauchen: Wer eine Rolle wählt, die zu ihm passt, erlebt Kompetenz und Zugehörigkeit zugleich (Deci & Ryan, 2000). Die Rollen jenseits von Gesang und Gitarre zeigen, dass auch leise Aufgaben eine Band tragen.",
+          "quellen": [
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e01",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "a-der-kurs",
+        "a7-mein-start",
+        "a-gruppenvertrag",
+        "ff-gefuehlsrad",
+        "ff-skills-pass"
+      ],
+      "vorlagen": [
+        "a7-treppe-karten"
+      ],
+      "woerter": [
+        {
+          "de": "die Fertigkeit (der Skill)",
+          "fr": "die Fertigkeit (der Skill)"
+        },
+        {
+          "de": "der Gruppenvertrag",
+          "fr": "der Gruppenvertrag"
+        },
+        {
+          "de": "die Regel",
+          "fr": "die Regel"
+        },
+        {
+          "de": "vertraulich",
+          "fr": "vertraulich"
+        },
+        {
+          "de": "der Stopp-Plan",
+          "fr": "der Stopp-Plan"
+        }
+      ],
+      "de": {
+        "titel": "Willkommen – unser Rahmen",
+        "kurz": "Die Gruppe lernt Rituale und Regeln kennen, schreibt ihren Gruppenvertrag mit Stopp-Plan, legt den Skills-Pass an und probiert den ersten Skill aus: 5-4-3-2-1.",
+        "ziele": [
+          "kennen die Rituale des Kurses: Gefühlsrad, Skills-Pass und Mission mit eigenem Moment",
+          "schreiben einen Gruppenvertrag mit Stopp-Plan und unterschreiben ihn",
+          "probieren den Skill 5-4-3-2-1 aus und wählen einen Moment dafür"
+        ],
+        "material": [
+          "Gefühlsrad (A3), Wäscheklammern mit Namen, Stifte",
+          "Plakate (A1), dicke Stifte, Moderationskarten, Kreppband",
+          "Skills-Pässe, Box, Stempel oder Sticker",
+          "Elternbrief-Abschnitte, Imbiss und Getränke"
+        ],
+        "vorbereitung": [
+          "Elternbrief mit Einverständnis für Ausflüge und Filme vorab verteilen.",
+          "Treppe-Karten schneiden, Skills-Plakat beschriften, Platz draußen in Sichtweite suchen.",
+          "Allergien erfragen; Schutzkonzept und Ansprechperson (Responsable) bereithalten."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Name, Geste und Gefühlsrad"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Willkommen: so läuft das Jahr"
+          },
+          {
+            "min": "15–45",
+            "phase": "uebung",
+            "titel": "Was sind Skills? Plakat, Treppe, Wünsche"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause: Imbiss und frische Luft"
+          },
+          {
+            "min": "50–85",
+            "phase": "uebung",
+            "titel": "Gruppenvertrag, Stopp-Plan und Regel-Test"
+          },
+          {
+            "min": "85–100",
+            "phase": "skill",
+            "titel": "Skill: 5-4-3-2-1"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Name, Geste und Gefühlsrad",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Die Leitung beginnt die Namensrunde mit einer eigenen, ruhig etwas albernen Geste; alle wiederholen Name und Geste und schreiben ihren Namen auf eine Wäscheklammer. Dann liegt das Gefühlsrad in der Mitte (innen die Grundgefühle, außen genauere Wörter): Jede Person steckt ihre Klammer an ein Wort, das gerade passt, und sagt – wenn sie mag – einen Satz dazu, die Leitung zuerst.",
+            "sagen": [
+              "Ich bin ein bisschen nervös, weil ich euch noch nicht kenne – und bei euch?",
+              "Steckt die Klammer dahin, wo ihr gerade seid, nicht dahin, wo ihr gern wärt. Müde zählt auch."
+            ],
+            "tipp": "Eine Geste reicht, auch ein Winken; wer sehr schüchtern ist, übernimmt die Geste der Person davor.",
+            "wennEsKippt": "Sagt jemand „egal“ oder „nichts“, das gelten lassen – auch das ist eine Auskunft – und nicht nachbohren; wer gar nichts sagen mag, steckt nur die Klammer an.",
+            "blatt": "ff-gefuehlsrad"
+          },
+          {
+            "titel": "Willkommen: so läuft das Jahr",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Einen Rückblick gibt es noch nicht: Die Leitung heißt alle willkommen und sagt in wenigen Sätzen, was dieses Jahr passiert – 30 Doppelstunden in einer kleinen Gruppe, viel draußen, ab und zu ein Film, keine Noten. Dann zeigt sie die vier Teile jeder Stunde (Check-in, Üben, Skill, Skills-Pass), probiert das Ruhezeichen einmal aus und fragt nach dem Rückgabe-Abschnitt des Elternbriefs.",
+            "sagen": [
+              "Hier gibt es keine Noten – es zählt, dass ihr ausprobiert und ehrlich seid.",
+              "Hand heben heißt: alle werden still. Das gilt das ganze Jahr, auch für mich."
+            ],
+            "tipp": "Das Ruhezeichen als Spiel ausprobieren: einmal mitten im Satz geben und schauen, wer es zuerst merkt.",
+            "blatt": "a-der-kurs"
+          },
+          {
+            "titel": "Was sind Skills? Plakat, Treppe, Wünsche",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Das Bild für heute: Skills sind Fertigkeiten, die man übt wie ein Profi im Sport – wer sie kann, behält auch in harten Momenten die Kontrolle. Vier kurze Übungen zeigen, was die Gruppe schon kann, wohin das Jahr führt und was sie gern erleben möchte.",
+            "sagen": [
+              "Was macht ihr, wenn ihr richtig sauer seid – und was davon hilft euch hinterher wirklich?",
+              "Welche Stufe reizt euch am meisten: Ich, Wir oder Welt?"
+            ],
+            "punkte": [
+              "Profi-Check (5 Min.): Was können Torhüterinnen, DJs oder Gamer, das man nicht über Nacht lernt – und wie haben sie es gelernt? Die Antworten kommen auf das Plakat „Skill = Fertigkeit, die man übt“.",
+              "Wenn ich sauer bin (9 Min.): Jede Person schreibt in Aufgabe 1 drei Dinge auf, die sie tut, wenn sie richtig sauer oder nervös ist (die Leitung beginnt), und kreuzt an, ob es kurz oder wirklich hilft; danach sortiert die Gruppe die Antworten auf dem Plakat in „hilft kurz“ und „hilft wirklich“.",
+              "Die Treppe (8 Min.): Zehn Stufenkarten von Ich über Wir bis Welt liegen als Treppe auf dem Boden; jede Person stellt sich auf die Stufe, die sie am meisten reizt, und sagt in einem Satz, warum.",
+              "Wunschliste (8 Min.): Jede Person schreibt in Aufgabe 3 einen Ausflugsort und einen Film oder eine Serie auf; die Leitung prüft später, was machbar ist, und klärt Altersfreigabe und Vorführrechte."
+            ],
+            "tipp": "Die Treppe von unten nach oben legen: So wird sichtbar, dass jede Stufe auf der vorherigen aufbaut.",
+            "wennEsKippt": "Kommt eine Provokation wie „jemanden schlagen“, ruhig unter „hilft kurz“ schreiben und fragen: Und was passiert danach? Kommen nur Scherzantworten, mit Humor aufnehmen und nachfragen, was dahintersteckt.",
+            "blatt": "a7-mein-start"
+          },
+          {
+            "titel": "Pause: Imbiss und frische Luft",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle gehen mit Getränk und Imbiss kurz nach draußen und suchen sich einen Platz in Sichtweite: zwei Minuten ohne Handy nur schauen und hören, dann in Ruhe essen. Die Leitung isst mit und lässt das Thema ruhen – hier darf es um Fußball, Serien und Haustiere gehen.",
+            "sagen": [
+              "Zwei Minuten nur schauen und hören, ohne Handy – danach gibt es etwas zu essen."
+            ],
+            "tipp": "Langeweile auszuhalten ist selbst ein Skill – das darf man genau so sagen.",
+            "wennEsKippt": "Bleiben zwei zusammen und reden, freundlich trennen: Zwei Minuten gehören jedem für sich, beim Essen geht es gemeinsam weiter. Bei Regen am offenen Fenster oder im Flur mit Blick nach draußen."
+          },
+          {
+            "titel": "Gruppenvertrag, Stopp-Plan und Regel-Test",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Der Vertrag entsteht aus den Wünschen der Jugendlichen; die Leitung ergänzt nur, was fehlt, und unterschreibt selbst. Zum Vertrag gehören ein Stopp-Plan für Momente, in denen es zu viel wird, und ein offenes Wort dazu, wo die Schweigepflicht endet.",
+            "sagen": [
+              "Was braucht ihr, damit ihr euch hier wohlfühlt und ehrlich sein könnt? Und was soll hier auf keinen Fall passieren?",
+              "Was hier erzählt wird, bleibt hier – außer jemand ist in Gefahr. Dann muss ich handeln, und ich sage euch vorher, was ich tue."
+            ],
+            "punkte": [
+              "Zettel (5 Min.): Jede Person schreibt allein auf zwei Zettel, was sie braucht, damit sie sich hier wohlfühlt, und was hier nie passieren soll.",
+              "Regeln bauen (10 Min.): Die Zettel hängen an der Wand; die Gruppe formuliert daraus drei bis fünf Regeln, positiv und in ihrer eigenen Sprache, die Leitung ergänzt nur, was fehlt.",
+              "Stopp-Plan (7 Min.): Die Gruppe legt fest, welches Zeichen „Ich brauche eine Pause“ heißt, wohin man geht (in Sichtweite) und wie man zurückkommt; jede Person trägt ihn in Aufgabe 2 von „Mein Start im Kurs“ ein.",
+              "Regel-Test (5 Min.): Die Leitung bricht absichtlich eine Regel, zum Beispiel greift sie mitten im Gespräch zum Handy. Die Jugendlichen zeigen auf den Vertrag und sagen ruhig, was sie stört – so wird der Vertrag zum Werkzeug.",
+              "Vertraulich und unterschreiben (8 Min.): Die Leitung sagt offen, wo die Schweigepflicht endet, dann unterschreiben alle im Gruppenvertrag, auch die Leitung; er hängt ab jetzt in jeder Stunde im Raum."
+            ],
+            "tipp": "Regeln positiv formulieren: „Wir lachen miteinander“ statt „Niemand lacht aus“. Bei Ausflügen steckt ein Foto des Vertrags im Rucksack.",
+            "wennEsKippt": "Kommen nur Scherzregeln („jeden Tag Pizza“), mit Humor aufnehmen und fragen, was dahintersteckt: Daraus wird oft eine echte Regel. Will jemand nicht unterschreiben, nicht drängen – Unterschreiben heißt „Ich halte mich daran“, nicht „Ich finde alles gut“.",
+            "blatt": "a-gruppenvertrag"
+          },
+          {
+            "titel": "Skill: 5-4-3-2-1",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Der erste Skill für Momente, in denen der Kopf voll ist: still 5 Dinge sehen, 4 hören, 3 spüren, 2 riechen, 1 schmecken – langsam angeleitet, Augen offen oder zu, höchstens drei Minuten. Danach der Abschluss: der erste Satz in den Skills-Pass, die erste Mission und der eigene Moment dafür.",
+            "sagen": [
+              "Zählt still mit: 5 Dinge, die ihr seht, 4, die ihr hört – es gibt kein Richtig oder Falsch.",
+              "Wann kommt euer Moment diese Woche – im Bus, vor einem Test oder abends im Bett?"
+            ],
+            "punkte": [
+              "Skill (5 Min.): Die Leitung führt langsam durch 5-4-3-2-1, am Platz oder am offenen Fenster, und macht selbst mit; danach sagt, wer mag, was sich verändert hat.",
+              "Skills-Pass (4 Min.): Die Pässe werden ausgeteilt: Am Ende jeder Stunde kommt ein Satz hinein („Das nehme ich heute mit“), dazu ein Stempel; die Einträge werden nie bewertet.",
+              "Mission und Moment (4 Min.): Die Leitung sagt die Mission an; jede Person wählt ihren Moment – Bus, vor einem Test oder abends im Bett – und schreibt ihn in die Spalte „Mein Moment: Wenn …“.",
+              "Ausblick (2 Min.): Die Leitung nennt das Thema der nächsten Stunde und erinnert an den Rückgabe-Abschnitt des Elternbriefs."
+            ],
+            "tipp": "Wer die Augen nicht schließen mag, schaut auf einen Punkt am Tisch.",
+            "wennEsKippt": "Wird gekichert oder findet jemand die Übung kindisch, ernst nehmen: Es ist ein Werkzeug für Stressmomente und wirkt, wenn man es übt. Wer aussteigt, bleibt still dabei.",
+            "blatt": "ff-skills-pass"
+          }
+        ],
+        "bruecke": "Nächstes Mal lernt ihr euch in Bewegung kennen – mit Spielen, bei denen niemand etwas Privates verraten muss.",
+        "mission": "Mach einmal 5-4-3-2-1. Was ist danach anders?",
+        "hintergrund": "Eine kleine Gruppe braucht zuerst Sicherheit: klare Regeln und feste Rituale, bevor Persönliches Platz hat. Programme für sozial-emotionales Lernen wirken, wenn sie aufeinander aufbauen, aktiv üben, auf Fertigkeiten zielen und offen sagen, was gelernt wird (Durlak et al., 2011). Jugendliche lehnen Belehrung ab und machen mit, wenn sie mitbestimmen (Yeager, 2017); deshalb schreiben sie den Vertrag selbst. Ein kurzer Skill in jeder Stunde folgt dem Skillstraining für Jugendliche (Rathus & Miller, 2015).",
+        "quellen": [
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+          "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "achtung": "Beim Gruppenvertrag offen sagen, wo die Schweigepflicht endet, und nie Geheimhaltung versprechen. Ausflüge, Filme und Aufnahmen nur mit unterschriebenem Abschnitt des Elternbriefs; bei der Wunschliste nichts fest zusagen. Erzählt jemand von Gewalt, Missbrauch, Selbstverletzung oder Suizidgedanken, nicht vertiefen, noch am selben Tag die zuständige Leitung (Responsable) informieren und nach dem Schutzkonzept des CDSE handeln; bei akuter Gefahr nicht allein lassen, 112.",
+        "differenzierung": {
+          "leichter": "Wer wenig schreibt oder noch Deutsch lernt, malt seine Ideen für den Vertrag oder sagt sie in der eigenen Sprache, die Leitung schreibt mit, und für den Moment der Mission reicht ein Wort.",
+          "schwerer": "Wer schnell fertig ist, schreibt zu jeder Regel ein Beispiel, woran man merkt, dass sie gilt, und schlägt vor, wie die Gruppe Regelbrüche anspricht."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Gefühlsrad und Namensrunde (5 Min.), Skills-Plakat und Treppe in Kurzform (10 Min.), Gruppenvertrag mit Stopp-Plan (20 Min.), Skill 5-4-3-2-1 mit Skills-Pass, Mission und Moment (15 Min.). Wunschliste, Regel-Test und Imbiss werden in der nächsten Stunde nachgeholt."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-mein-start",
+      "bereich": "skills",
+      "thema": "ankommen",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "25 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Skills",
+        "Stopp-Plan",
+        "Wünsche",
+        "Ankommen",
+        "Annexe"
+      ],
+      "bild": "icon:door-enter",
+      "kurs": [
+        "a7-e01"
+      ],
+      "de": {
+        "titel": "Mein Start im Kurs",
+        "untertitel": "Was mir hilft, mein Stopp-Plan und meine Wünsche",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Skills sind Fertigkeiten, die du übst wie ein Profi im Sport. Wer sie kann, behält auch in harten Momenten die Kontrolle. Dein Stopp-Plan ist der erste Skill: Er zeigt der Gruppe, wann du eine Pause brauchst."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Was tust du, wenn du richtig sauer oder nervös bist? Schreib drei Dinge auf und kreuze an.",
+            "symbole": [
+              "nachdenken",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Das tue ich",
+              "Hilft kurz?",
+              "Hilft wirklich?"
+            ],
+            "breiten": [
+              3,
+              1.1,
+              1.3
+            ],
+            "zeilen": 3,
+            "beispiel": [
+              "Musik auf die Ohren",
+              "ja",
+              "manchmal"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Lege deinen Stopp-Plan fest: Wie sagst du, dass du eine Pause brauchst – und wie kommst du zurück?",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein Zeichen: …",
+              "Mein Ort in Sichtweite: …",
+              "So komme ich zurück: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Was wünschst du dir für draußen und für die Leinwand?",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein Ausflugsort: …",
+              "Mein Film oder meine Serie: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Dein Blatt gehört dir. Die Leitung prüft bei den Wünschen, was machbar ist – Altersfreigabe und Erlaubnis der Eltern gehören dazu."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen halten fest, was sie bei Ärger und Anspannung tun und was davon wirklich hilft, legen ihren Stopp-Plan fest und notieren Wünsche für Ausflüge und Filme.",
+          "ablauf": [
+            "Einheit 1, Schritt 3: Aufgabe 1 – drei Dinge aufschreiben und ankreuzen; die Leitung beginnt mit einem eigenen Beispiel.",
+            "Schritt 3, zum Schluss: Aufgabe 3 – Ausflugsort und Film; die Leitung sammelt die Wünsche und prüft später Machbarkeit, Altersfreigabe und Vorführrechte.",
+            "Schritt 5: Aufgabe 2 – den Stopp-Plan der Gruppe ins eigene Heft übertragen und im Regel-Test ausprobieren."
+          ],
+          "hintergrund": "Skills lernt man wie einen Sport: durch Üben, nicht durch Zuhören. Programme für sozial-emotionales Lernen wirken, wenn sie aktiv üben und offen sagen, was gelernt wird (Durlak et al., 2011). Wer Wünsche und Regeln mitbestimmen darf, macht eher mit (Yeager, 2017); ein vereinbartes Pausenzeichen macht Selbststeuerung in der Gruppe sichtbar und sicher.",
+          "quellen": [
+            "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432.",
+            "Yeager, D. S. (2017). Social and emotional learning programs for adolescents. The Future of Children, 27(1), 73–94."
+          ],
+          "achtung": "Provokante Antworten bei Aufgabe 1 nicht bewerten, sondern nachfragen: Und was passiert danach?",
+          "material": "Heft, Stifte"
+        }
+      }
+    },
+    {
+      "id": "a7-treppe-karten",
+      "bereich": "skills",
+      "thema": "ankommen",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "8 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Jahresweg",
+        "Treppe",
+        "Kapitel",
+        "Annexe"
+      ],
+      "bild": "icon:stairs",
+      "kurs": [
+        "a7-e01"
+      ],
+      "de": {
+        "titel": "Die Treppe des Jahres",
+        "untertitel": "Kopiervorlage – einmal kopieren, schneiden und als Treppe auslegen",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Die zehn Karten zeigen den Weg des Jahres von Ich über Wir bis Welt. Die Leitung legt sie in dieser Reihenfolge als Treppe auf den Boden; jede Person stellt sich auf die Stufe, die sie am meisten reizt.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 88,
+            "karten": [
+              {
+                "titel": "1 Ankommen",
+                "bild": "icon:door-enter",
+                "text": "Wer sind wir als Gruppe?"
+              },
+              {
+                "titel": "2 Wer bin ich?",
+                "bild": "icon:user",
+                "text": "Was brauche ich, was kann ich?"
+              },
+              {
+                "titel": "3 Gefühle verstehen",
+                "bild": "icon:mood-smile",
+                "text": "Was fühle ich – und wozu?"
+              },
+              {
+                "titel": "4 Gefühle regulieren",
+                "bild": "icon:feather",
+                "text": "Was hilft mir, wenn es zu viel wird?"
+              },
+              {
+                "titel": "5 Meine Gedanken",
+                "bild": "icon:bulb",
+                "text": "Was denke ich über mich – und stimmt das?"
+              },
+              {
+                "titel": "6 Kommunikation und Grenzen",
+                "bild": "icon:message-circle",
+                "text": "Wie sage ich, was ich fühle und brauche?"
+              },
+              {
+                "titel": "7 Wenn es schwierig wird",
+                "bild": "icon:shield",
+                "text": "Was tue ich bei Streit, Druck und Mobbing – und wer hilft?"
+              },
+              {
+                "titel": "8 Digitale Welt",
+                "bild": "icon:device-mobile",
+                "text": "Was macht das Handy mit mir?"
+              },
+              {
+                "titel": "9 Gesund und stark",
+                "bild": "icon:heart",
+                "text": "Wie sorge ich für mich?"
+              },
+              {
+                "titel": "10 Abschluss",
+                "bild": "icon:flag",
+                "text": "Was nehme ich mit?"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Gruppe sieht den Weg des Jahres als Treppe von Ich über Wir bis Welt und wählt die Stufe, die sie am meisten reizt.",
+          "ablauf": [
+            "Einmal kopieren, am besten auf festes Papier, und ausschneiden.",
+            "Einheit 1, Schritt 3: Die Karten liegen als Treppe auf dem Boden; jede Person stellt sich auf eine Stufe und nennt einen Grund.",
+            "Die Karten bleiben in der Box; im Lauf des Jahres kann die Gruppe die erreichten Stufen abhaken."
+          ],
+          "hintergrund": "Wer weiß, wohin ein Programm führt und wie es aufgebaut ist, macht eher mit: Programme für sozial-emotionales Lernen wirken, wenn sie aufeinander aufbauen und offen sagen, was gelernt wird (Durlak et al., 2011). Die Treppe zeigt den Aufbau sichtbar: erst das Ich, dann das Wir, dann die Welt.",
+          "quellen": [
+            "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+          ],
+          "material": "Festes Papier, Schere, Kreppband"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e04",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": [
+        "a7-glas-der-beduerfnisse",
+        "ff-gefuehlsrad",
+        "ff-skills-pass"
+      ],
+      "vorlagen": [
+        "a7-tank-karten"
+      ],
+      "woerter": [
+        {
+          "de": "das Bedürfnis",
+          "fr": "das Bedürfnis"
+        },
+        {
+          "de": "der Wunsch",
+          "fr": "der Wunsch"
+        },
+        {
+          "de": "der Tank",
+          "fr": "der Tank"
+        },
+        {
+          "de": "auftanken",
+          "fr": "auftanken"
+        },
+        {
+          "de": "das Warnlicht",
+          "fr": "das Warnlicht"
+        }
+      ],
+      "de": {
+        "titel": "Das Glas der Bedürfnisse",
+        "kurz": "Bedürfnisse sind wie Ladebalken im Game: Jede Person füllt ihr eigenes Glas, findet ihren leersten Tank und plant einen kleinen Schritt zum Auftanken.",
+        "ziele": [
+          "erkennen sechs Bedürfnisse als Tanks und unterscheiden sie von Wünschen",
+          "füllen ihr eigenes Glas und finden ihren leersten Tank",
+          "planen einen kleinen Schritt als Wenn-dann-Plan und sagen ihr Bedürfnis in einem Satz"
+        ],
+        "material": [
+          "Gefühlsrad (A3), Namensklammern, blauer Stift",
+          "Schraubgläser mit Namensetikett (je Person und Leitung), Zettel",
+          "Tank-Karten (Vorlage), vier Eckschilder, Kreppband",
+          "Handy der Leitung für Fotos, Skills-Pässe, Stempel"
+        ],
+        "vorbereitung": [
+          "Gläser mit Namen beschriften und einen festen, abschließbaren Platz klären; Zettel in einer Farbe für heute, in anderen Farben für später bereitlegen.",
+          "Tank-Karten schneiden und vier Eckschilder aufhängen: Ruhe, Bewegung, Leute, Essen und Schlaf.",
+          "Foto-Regel prüfen: Einverständnis für Aufnahmen liegt vor, Fotos zeigen nur Dinge und bleiben in der Gruppe."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Gefühlsrad und Tank-Finger"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick, Mission und neues Kapitel"
+          },
+          {
+            "min": "15–45",
+            "phase": "uebung",
+            "titel": "Sechs Tanks und mein Glas"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegung: Vier Ecken"
+          },
+          {
+            "min": "50–85",
+            "phase": "uebung",
+            "titel": "Tank-Check, Foto-Challenge, kleiner Schritt"
+          },
+          {
+            "min": "85–100",
+            "phase": "skill",
+            "titel": "Skill: 4-7-8-Atmung"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad und Tank-Finger",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Reihum steckt jede Person ihre Klammer an ein Wort am Gefühlsrad und zeigt mit den Fingern, wie voll ihr Tank heute ist – null Finger heißt leer, zehn heißt randvoll –, und sagt, wenn sie mag, einen Satz dazu. Die Leitung beginnt und erklärt das Bild vom Tank noch nicht; es wird gleich aufgelöst.",
+            "sagen": [
+              "Zeigt euer Wort und mit den Fingern, wie voll euer Tank heute ist.",
+              "Was genau ein Tank ist, klären wir gleich."
+            ],
+            "tipp": "Die Zahlen nicht kommentieren; wer eine sehr niedrige Zahl zeigt, bekommt in der Stunde beiläufig Aufmerksamkeit, nicht vor der Gruppe.",
+            "blatt": "ff-gefuehlsrad"
+          },
+          {
+            "titel": "Rückblick, Mission und neues Kapitel",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Leitung fragt nach der Mission: Kam dein Moment, und hast du jemanden nach seiner Idee gefragt? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann nennt sie das neue Kapitel „Wer bin ich?“: Bisher ging es um die Gruppe, ab heute schaut jede Person auf sich selbst.",
+            "sagen": [
+              "Kam euer Moment, und habt ihr jemanden nach seiner Idee gefragt? Daumen hoch, Mitte oder runter.",
+              "Die Frage für heute: Was braucht ihr, damit es euch gut geht?"
+            ],
+            "tipp": "Die Kapitelfrage bleibt drei Stunden sichtbar: Bedürfnisse heute, die eigene Art nächstes Mal, Stärken danach."
+          },
+          {
+            "titel": "Sechs Tanks und mein Glas",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Das Bild für heute: Bedürfnisse sind wie Ladebalken in einem Game – ist einer fast leer, meldet sich ein Warnlicht, oft ein Gefühl, bevor man den Grund kennt. Vier kurze Übungen zeigen die sechs Tanks, und dann füllt jede Person ihr eigenes Glas.",
+            "sagen": [
+              "Stellt euch jedes Bedürfnis als Ladebalken vor. Was passiert, wenn der Schlaf-Balken leer ist?",
+              "Schreibt auf, was ihr wirklich braucht, nicht was gut klingt. Das Glas gehört euch, niemand liest mit."
+            ],
+            "punkte": [
+              "Warnlicht-Quiz (7 Min.): Die Leitung liest Milas Geschichte vor (seit einer Woche gereizt, unkonzentriert, abends lange am Handy); die Gruppe rät, welcher Tank leer ist – bei Mila ist es Dazugehören, seit ihre beste Freundin die Klasse gewechselt hat.",
+              "Sechs Tanks (6 Min.): Die sechs Tank-Karten liegen auf dem Tisch; die Gruppe ordnet Beispiele zu (ausschlafen, selbst entscheiden, ein Freund, der zu einem hält) und sagt, wie sich ein leerer Tank anfühlt.",
+              "Wunsch oder Bedürfnis? (5 Min.): Hinter „Ich will die neuen Sneakers“ kann Dazugehören stecken; die Leitung nennt drei Wünsche (Handy, WLAN, Pizza), die Gruppe findet den Tank dahinter.",
+              "Mein Glas füllen (12 Min.): Jede Person schreibt drei bis fünf ihrer wichtigsten Bedürfnisse auf Zettel, einen je Zettel, und steckt sie in ihr eigenes Glas; die Leitung füllt ihr Glas mit."
+            ],
+            "tipp": "Nennt jemand Handy oder WLAN, nachfragen, wofür: um Freunden zu schreiben (Dazugehören), um abzuschalten (Ruhe), um mitreden zu können (Anerkennung).",
+            "wennEsKippt": "Kommen nur Scherzzettel, mit Humor aufnehmen und fragen, welches Bedürfnis dahintersteckt – Pizza ist Essen und oft auch Gemeinschaft. Steht auf einem gezeigten Zettel ein Hinweis auf Gefahr, nicht vertiefen, danken und nach der Stunde nach dem Schutzkonzept handeln.",
+            "blatt": "a7-tank-karten"
+          },
+          {
+            "titel": "Bewegung: Vier Ecken",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "In den Raumecken hängen vier Schilder (Ruhe, Bewegung, Leute, Essen und Schlaf); die Leitung liest eine Frage vor, alle gehen in die Ecke, die für sie passt, und sagen in einem Satz, warum.",
+            "sagen": [
+              "Geht in die Ecke, die für euch passt – es gibt keine falsche Ecke."
+            ],
+            "punkte": [
+              "Nach einem langen Schultag brauchst du am meisten …",
+              "Vor einem Test hilft dir am ehesten …",
+              "Wenn du dich über jemanden geärgert hast, brauchst du …",
+              "Am Wochenende tankst du am besten auf mit …"
+            ],
+            "tipp": "Dieselbe Lage füllt bei der einen den Tank mit Ruhe, beim anderen mit Bewegung – beides ist in Ordnung.",
+            "wennEsKippt": "Laufen alle einer Person hinterher, die Antwort erst aufschreiben und dann gleichzeitig zeigen lassen."
+          },
+          {
+            "titel": "Tank-Check, Foto-Challenge, kleiner Schritt",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Jetzt wird es persönlich, aber nur für die Person selbst: Jede Person prüft ihre sechs Tanks, sucht mit dem Handy der Leitung Bilder für den leersten und plant einen kleinen Schritt. Die Leitung zeigt zuerst ihr eigenes Beispiel.",
+            "sagen": [
+              "Klein heißt: in zehn Minuten machbar, ohne Geld – und ihr könnt ihn allein anfangen.",
+              "Ein Moment ist nicht „irgendwann diese Woche“, sondern „wenn ich abends ins Bett gehe“."
+            ],
+            "punkte": [
+              "Tank-Check (7 Min.): Auf dem Blatt zeichnet jede Person in jedes Glas einen blauen Strich, so voll ist der Tank heute, und kreist den leersten ein.",
+              "Foto-Challenge (12 Min.): Mit dem Handy der Leitung fotografiert jede Person im Haus oder im Hof drei Dinge oder Orte, die ihren leersten Tank füllen – keine Gesichter; wer mag, zeigt ein Foto.",
+              "Mein kleiner Schritt (10 Min.): Jede Person wählt eine Idee für ihren leersten Tank und schreibt einen Wenn-dann-Plan; die Wenn-Zeile ist ein fester Ort oder eine feste Zeit.",
+              "Bedürfnis-Satz (6 Min.): Im Rollenspiel spielt die Leitung jemanden, der nicht zuhört („Ach, so schlimm ist das doch nicht“); eine Person übt den Satz „Ich brauche …, weil …“, die dritte beobachtet und gibt ein Lob und einen Tipp."
+            ],
+            "tipp": "Die Leitung zeigt ihre eigene Zeile, etwa: Bewegung, Tank 3 von 10, Schritt: zweimal pro Woche mit dem Rad zur Arbeit – ehrlich, aber im Rahmen.",
+            "wennEsKippt": "Schreibt jemand „alles leer“ oder „egal“, nicht diskutieren, sondern fragen: Welcher Tank ist am wenigsten leer? Deuten Einträge auf ernsten Mangel hin, etwa kein Essen oder keine Sicherheit zu Hause, nach der Stunde das Einzelgespräch suchen.",
+            "blatt": "a7-glas-der-beduerfnisse"
+          },
+          {
+            "titel": "Skill: 4-7-8-Atmung",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Der Skill füllt den Körper-Tank in einer Minute ein Stück auf – abends im Bett, vor einem Test, nach einer lauten Pause: vier Sekunden einatmen, sieben anhalten, acht ausatmen, vier Durchgänge. Danach der Abschluss: ein Satz in den Skills-Pass, die Mission und der eigene Moment.",
+            "sagen": [
+              "Langes Ausatmen sagt dem Körper: Du kannst runterfahren.",
+              "Das Anhalten ist freiwillig – wer es unangenehm findet, hält kürzer oder gar nicht."
+            ],
+            "punkte": [
+              "Skill (5 Min.): Die Leitung zählt vor und atmet mit: durch die Nase ein bis vier, Luft anhalten bis sieben, langsam durch den Mund aus bis acht; vier Durchgänge, danach nachspüren.",
+              "Skills-Pass (4 Min.): Ein Satz zur Frage „Was füllt meinen Tank?“; Stempel.",
+              "Mission und Moment (4 Min.): Die Leitung sagt die Mission an; der Moment steht schon in der Wenn-Zeile des Blatts und kommt in die Spalte „Mein Moment: Wenn …“.",
+              "Ausblick (2 Min.): Die Leitung nennt das Thema der nächsten Stunde – laut und leise – und kündigt den Film an."
+            ],
+            "tipp": "Vorher sagen, dass manchen beim ersten Mal leicht schwindlig wird, dass das vergeht und dass man jederzeit normal weiteratmen darf.",
+            "wennEsKippt": "Wird gekichert oder übertrieben laut ausgeatmet, eine Runde mit offenen Augen und leiser Stimme zählen. Wer Asthma hat oder das Anhalten nicht mag, atmet nur langsam aus.",
+            "blatt": "ff-skills-pass"
+          }
+        ],
+        "bruecke": "Nächstes Mal geht es um eure Art – eher laut oder eher leise – und um eine Filmszene, in der jedes Kind einer Band seine Aufgabe bekommt.",
+        "mission": "Mach deinen kleinen Schritt – oder die 4-7-8-Atmung. Was ist danach anders?",
+        "hintergrund": "Hinter vielen Gefühlen stehen Bedürfnisse: Menschen geht es besser, wenn sie sich fähig erleben, selbst entscheiden und dazugehören (Deci & Ryan, 2000); die sechs Tanks fassen solche Modelle jugendgerecht zusammen. Wünsche sind Wege, Bedürfnisse das Ziel: Hinter „Ich will die Sneakers“ kann Dazugehören stehen (Rosenberg, 2001). Ein Wenn-dann-Plan mit selbst gewähltem Moment wird deutlich häufiger umgesetzt als ein guter Vorsatz (Gollwitzer & Sheeran, 2006).",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Gollwitzer, P. M. & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119."
+        ],
+        "achtung": "Das Thema kann Mangel sichtbar machen: kein sicheres Zuhause, zu wenig Essen oder Schlaf, niemand, der zu einem hält. Das Glas gehört der Person: Die Leitung liest keine Zettel, die Striche im Heft sind privat, und nichts wird vor der Gruppe vertieft. Hinweise auf Gefahr oder Gewalt werden noch am selben Tag der zuständigen Leitung (Responsable) gemeldet und nach dem Schutzkonzept behandelt; beim Atmen ist das Anhalten freiwillig, bei Asthma nur langsam ausatmen.",
+        "differenzierung": {
+          "leichter": "Wer mühsam schreibt oder die Sprache noch lernt, malt ein Symbol statt eines Wortes auf den Zettel, schreibt im Heft in der eigenen Sprache und plant den Schritt mündlich, die Leitung hält ihn fest.",
+          "schwerer": "Wer schnell fertig ist, findet zu einem Wunsch zwei andere Wege, die denselben Tank füllen, und stellt der Gruppe seinen Wenn-dann-Plan vor."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Tank-Finger (5 Min.), die sechs Tanks und das eigene Glas füllen (20 Min.), Tank-Check und kleiner Schritt auf dem Blatt (15 Min.), 4-7-8-Atmung mit Skills-Pass, Mission und Moment (10 Min.). Vier Ecken und Foto-Challenge entfallen und lassen sich in einer späteren Stunde nachholen."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-glas-der-beduerfnisse",
+      "bereich": "skills",
+      "thema": "ich",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln"
+      ],
+      "dauer": "25 Min.; später je 10 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Bedürfnisse",
+        "Glas der Bedürfnisse",
+        "Tanks",
+        "Wenn-dann-Plan",
+        "Jahresfaden",
+        "Annexe"
+      ],
+      "bild": "icon:bottle",
+      "kurs": [
+        "a7-e04"
+      ],
+      "de": {
+        "titel": "Mein Glas der Bedürfnisse",
+        "untertitel": "Wie voll sind deine sechs Tanks?",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Bedürfnisse sind wie Ladebalken im Game. Ist einer fast leer, meldet sich ein Warnlicht – oft ein Gefühl, bevor du den Grund kennst. Dann hilft meist ein kleiner Schritt."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Zeichne in jedes Glas einen Strich: So voll ist der Tank heute.",
+            "hinweis": "Heute Blau. Später kommt Grün dazu, am Ende des Jahres Rot.",
+            "symbole": [
+              "malen"
+            ]
+          },
+          {
+            "art": "glaeser",
+            "items": [
+              "1 Körper",
+              "2 Sicherheit",
+              "3 Dazugehören",
+              "4 Anerkennung",
+              "5 Selbst entscheiden",
+              "6 Spaß und Neues"
+            ],
+            "spalten": 3
+          },
+          {
+            "art": "aufgabe",
+            "text": "Kreise den leersten Tank ein und ergänze die Sätze.",
+            "symbole": [
+              "einkreisen",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein leerster Tank ist gerade …",
+              "Das merke ich so: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Plane einen kleinen Schritt, der diesen Tank auffüllt.",
+            "hinweis": "Klein heißt: in zehn Minuten machbar, ohne Geld. Die Wenn-Zeile ist dein Moment.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Wenn ich abends ins Bett gehe,",
+                "dann": "lege ich das Handy weg und höre ein Lied. (Körper)"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Dein Blatt und dein Glas gehören dir. Ist ein Tank lange leer, sprich mit der Leitung oder mit einer Person, der du vertraust."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen schätzen ein, wie voll ihre sechs Tanks sind, finden den leersten und planen einen kleinen Schritt; später kommen neue Striche dazu.",
+          "ablauf": [
+            "Einheit 4, Schritt 5: Aufgabe 1 – blaue Striche in die Gläser, den leersten Tank einkreisen und die beiden Sätze ergänzen.",
+            "Aufgabe 3 – Wenn-dann-Plan; die Wenn-Zeile ist der Moment für die Wochen-Mission.",
+            "Später kommen grüne Striche (Zwischenstand) und am Ende des Jahres rote dazu; das Blatt bleibt im Heft und wird weder eingesammelt noch vorgelesen."
+          ],
+          "hintergrund": "Die sechs Tanks fassen Bedürfnismodelle jugendgerecht zusammen; nach der Selbstbestimmungstheorie geht es Menschen besser, wenn Autonomie, Kompetenz und Verbundenheit erfüllt sind (Deci & Ryan, 2000). Wer merkt, welcher Tank leer ist, versteht die eigenen Gefühle besser. Wenn-dann-Pläne verknüpfen einen Vorsatz mit einer Situation und werden häufiger umgesetzt als allgemeine Absichten (Gollwitzer & Sheeran, 2006).",
+          "quellen": [
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+            "Gollwitzer, P. M. & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119."
+          ],
+          "achtung": "Zeichnet jemand fast alle Tanks leer, nach der Stunde kurz nachfragen; Hinweise auf Gefahr werden nach dem Schutzkonzept behandelt.",
+          "material": "Stifte in Blau (später Grün und Rot)"
+        }
+      }
+    },
+    {
+      "id": "a7-tank-karten",
+      "bereich": "skills",
+      "thema": "ich",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Tank-Karten",
+        "Bedürfnisse",
+        "Warnlicht",
+        "Annexe"
+      ],
+      "bild": "icon:battery-4",
+      "kurs": [
+        "a7-e04"
+      ],
+      "de": {
+        "titel": "Karten: Die sechs Tanks",
+        "untertitel": "Kopiervorlage – einmal kopieren und schneiden",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Sechs Tank-Karten mit Warnlicht und acht Beispielkarten zum Zuordnen: Die Gruppe legt jedes Beispiel zu dem Tank, den es füllt.",
+            "klein": true
+          },
+          {
+            "art": "geschichte",
+            "titel": "Milas Warnlicht (zum Vorlesen)",
+            "text": "Mila ist seit einer Woche gereizt. Sie schnauzt ihren Bruder an, in Mathe kann sie sich kaum konzentrieren, und abends scrollt sie bis spät durch ihr Handy. Erst am Wochenende merkt sie, was fehlt: Seit ihre beste Freundin die Klasse gewechselt hat, sitzt sie in der Pause allein. Welcher Tank ist fast leer – und was ist das Warnlicht?",
+            "bild": "figur:jana:traurig"
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 128,
+            "karten": [
+              {
+                "titel": "1 Körper",
+                "bild": "icon:bed",
+                "text": "Schlaf, Essen, Bewegung, Ruhe\nWarnlicht: müde, gereizt"
+              },
+              {
+                "titel": "2 Sicherheit",
+                "bild": "icon:lock",
+                "text": "Verlässlichkeit, wissen, was kommt\nWarnlicht: nervös, misstrauisch"
+              },
+              {
+                "titel": "3 Dazugehören",
+                "bild": "icon:users",
+                "text": "Freunde, Familie, Menschen, die zu dir halten\nWarnlicht: einsam, ausgeschlossen"
+              },
+              {
+                "titel": "4 Anerkennung",
+                "bild": "icon:star",
+                "text": "gesehen und ernst genommen werden\nWarnlicht: gekränkt, wütend"
+              },
+              {
+                "titel": "5 Selbst entscheiden",
+                "bild": "icon:key",
+                "text": "mitreden dürfen, Freiraum\nWarnlicht: trotzig, eingeengt"
+              },
+              {
+                "titel": "6 Spaß und Neues",
+                "bild": "icon:rocket",
+                "text": "lachen, etwas erleben, dazulernen\nWarnlicht: gelangweilt, lustlos"
+              }
+            ]
+          },
+          {
+            "art": "text",
+            "text": "Beispielkarten: Zu welchem Tank gehört das?"
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 44,
+            "karten": [
+              {
+                "text": "ausschlafen"
+              },
+              {
+                "text": "ein Freund, der zu dir hält"
+              },
+              {
+                "text": "selbst entscheiden, wann die Hausaufgaben dran sind"
+              },
+              {
+                "text": "ein Lob für etwas, das du geschafft hast"
+              },
+              {
+                "text": "ein Tag ohne Überraschungen"
+              },
+              {
+                "text": "etwas Neues ausprobieren"
+              },
+              {
+                "text": "zehn Minuten Ruhe nach der Schule"
+              },
+              {
+                "text": "bei etwas mitreden dürfen"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Karten für die Übung Sechs Tanks: Tank-Karten mit Beispielen und Warnlichtern, Beispielkarten zum Zuordnen und Milas Geschichte zum Vorlesen.",
+          "ablauf": [
+            "Einmal kopieren, am besten auf festes Papier, und schneiden.",
+            "Einheit 4, Schritt 3: Milas Geschichte vorlesen, die Gruppe rät den leeren Tank; dann die Tank-Karten auslegen und die Beispielkarten zuordnen.",
+            "Die Tank-Karten bleiben bei der Gruppe und können in späteren Stunden wieder auf den Tisch kommen, etwa beim Check-in."
+          ],
+          "hintergrund": "Die sechs Tanks fassen die Grundbedürfnisse der Selbstbestimmungstheorie und ältere Bedürfnismodelle in ein Bild, das Jugendliche sofort verstehen (Deci & Ryan, 2000). Das Warnlicht zeigt, dass Gefühle oft melden, was fehlt, bevor man den Grund kennt.",
+          "quellen": [
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}

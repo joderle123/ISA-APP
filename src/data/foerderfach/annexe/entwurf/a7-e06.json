@@ -1,0 +1,291 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e06",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-baum-der-staerke"],
+      "vorlagen": ["a7-staerken-post"],
+      "woerter": [
+        { "de": "die Wurzel", "fr": "die Wurzel" },
+        { "de": "die Stärke", "fr": "die Stärke" },
+        { "de": "stolz sein auf", "fr": "stolz sein auf" }
+      ],
+      "de": {
+        "titel": "Mein Baum der Stärke",
+        "kurz": "Draußen einen echten Baum aussuchen, seine Rinde abpausen, ihn fotografieren – und daraus den eigenen Baum aus Halt, Können und Stolz gestalten, mit Stärken-Post von der Gruppe.",
+        "ziele": [
+          "halten in ihrem Baum fest, was sie hält, was sie können und worauf sie stolz sind",
+          "beschreiben Stärken der anderen an einem Beispiel, das sie selbst gesehen haben, und nehmen Rückmeldungen an",
+          "probieren den Skill „Wie ein Baum stehen“ aus"
+        ],
+        "material": [
+          "Gefühlsrad, Skills-Pässe, Stempel",
+          "Blatt „Mein Baum der Stärke“, Stärken-Post-Karten (9), Schere, Kleber",
+          "Dünnes Papier, Klebeband, Wachsmalblöcke für den Rindenabdruck",
+          "A3-Papier, Klemmbretter, Bunt- und Filzstifte",
+          "Handy der Leitung für Baumfotos (keine Personen); Wasser, Obst",
+          "Notfallmappe mit Nummern, Erste-Hilfe-Set, Klangschale"
+        ],
+        "vorbereitung": [
+          "Einverständnis der Eltern, Treffpunkt, Signal, Aufsicht und Notfallnummern (112, Responsable) klären; Park oder Wald in Gehweite wählen.",
+          "Regenvariante: Bäume vom Fenster, vorab gesammelte Rindenstücke, Baumfotos; draußen auf Wetter, feste Schuhe und Zecken hinweisen.",
+          "Eigenen Baum als Beispiel vorbereiten; Stärken-Post-Karten kopieren und für jede Person eine Karte mit einer echten Beobachtung vorschreiben."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Was hat diese Woche geklappt?" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Thema: Bäume" },
+          { "min": "15–50", "phase": "uebung", "titel": "Draußen: Baum aussuchen, abpausen, fotografieren" },
+          { "min": "50–55", "phase": "aktiv", "titel": "Rückweg mit Auftrag" },
+          { "min": "55–85", "phase": "uebung", "titel": "Mein Baum der Stärke und die Stärken-Post" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Wie ein Baum stehen" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Was hat diese Woche geklappt?",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Im Raum zeigt jede Person auf ein Wort im Gefühlsrad und nennt, wenn sie mag, eine Sache, die diese Woche geklappt hat – klein reicht, „weiter“ ist erlaubt. Die Leitung beginnt mit einem eigenen kleinen Erfolg. Diese Erfolge werden später Früchte am Baum.",
+            "sagen": [
+              "Zeig dein Wort. Und wer mag: Was hat diese Woche geklappt? Rechtzeitig aufgestanden zählt auch.",
+              "Bei mir: Ich habe endlich den Platten am Fahrrad geflickt."
+            ],
+            "wennEsKippt": "Sagt jemand „Nichts hat geklappt“, nicht widerlegen, sondern fragen: Was ist trotzdem gegangen – heute herzukommen zählt."
+          },
+          {
+            "titel": "Rückblick, Mission und Thema: Bäume",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Zur Mission fragen: Kam dein Moment für den Dankbarkeitsblitz – was hast du gemacht? Daumen hoch, Mitte oder runter, eine Stimme erzählt; niemand muss den Moment erlebt haben. Dann das Thema nennen: Jede Rolle in der Band zählt – heute geht es darum, was ihr könnt und was euch hält, und dafür gehen wir raus.",
+            "sagen": [
+              "Letzte Stunde ging es darum, wie ihr seid. Heute geht es darum, was ihr könnt und was euch hält, wenn es stürmt."
+            ],
+            "tipp": "Draußen gelten die Regeln der ersten Stunden: Treffpunkt, Signal, in Sichtweite bleiben – kurz wiederholen, bevor es losgeht."
+          },
+          {
+            "titel": "Draußen: Baum aussuchen, abpausen, fotografieren",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Auf dem Weg in den Park oder Wald (5 Min.) gelten Treffpunkt, Signal und Sichtweite. Am Baum der Leitung kommt zuerst das Bild vom Baum im Sturm (3 Min.): Er hält, weil seine Wurzeln halten und er sich im Wind biegen kann.",
+            "sagen": [
+              "Such dir einen Baum, der zu dir passt. Du musst nicht erklären, warum.",
+              "Was hält einen Baum im Sturm – und was hält dich, wenn es bei dir stürmt?"
+            ],
+            "punkte": [
+              "Baum-Casting (8 Min.): Jede Person sucht allein, in Sichtweite, den Baum, der zu ihr passt, fasst die Rinde an, schaut nach oben und achtet auf die Wurzeln.",
+              "Rindenabdruck (8 Min.): Dünnes Papier mit Klebeband an die Rinde heften und mit der Breitseite des Wachsmalblocks darüberstreichen – der Abdruck wird später der Stamm.",
+              "Foto-Challenge (8 Min.): Drei Fotos, die zeigen, was deinen Baum hält, was er kann und was an ihm wächst – nur Bäume, keine Personen.",
+              "Baum-Vorstellung (3 Min.): Am Treffpunkt stellt jede Person ihren Baum in einem Satz vor – wer mag, gibt ihm einen Namen."
+            ],
+            "tipp": "Der Abdruck wird klarer, wenn das Papier mit Klebeband hält und der Block flach geführt wird. Fotos gelingen bei Tageslicht ohne Gegenlicht.",
+            "wennEsKippt": "Wird geklettert oder herumgealbert, alle zum Treffpunkt rufen und die Frage nach den Wurzeln stellen – das holt die Aufmerksamkeit zurück. Wer keinen Baum wählen mag, leiht sich den der Leitung oder zeichnet später einen aus der Erinnerung."
+          },
+          {
+            "titel": "Rückweg mit Auftrag",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Auf dem Rückweg sammelt jede Person ein Blatt oder ein Stück Rinde vom Boden – nichts vom Baum abbrechen – und achtet bei den anderen auf eine Stärke, die sie heute schon gesehen hat. Im Raum gibt es Wasser und Obst.",
+            "tipp": "Bei Regen entfällt der Weg: Alle stehen hinter dem Stuhl und setzen sich kurz, wenn ein Satz passt – zum Beispiel „Alle, die schon einmal jemandem etwas erklärt haben“."
+          },
+          {
+            "titel": "Mein Baum der Stärke und die Stärken-Post",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Zurück im Raum baut jede Person ihren Baum auf A3: Der Rindenabdruck wird der Stamm, dazu kommen Wurzeln, Äste und Früchte. Danach schreibt jede Person Stärken-Post an die anderen, die Leitung auch, und liest ihre eigene Post still.",
+            "sagen": [
+              "Wurzeln können ein Mensch sein, aber auch ein Ort, ein Tier, ein Lied – oder etwas, das nur du weißt.",
+              "Schreib eine Stärke und woran du sie gemerkt hast: geduldig – du hast mir den Trick zweimal erklärt."
+            ],
+            "punkte": [
+              "Baum bauen (13 Min.): Abdruck ausschneiden und als Stamm aufkleben, Wurzeln (was mich hält), Äste (was noch wächst) und Früchte (worauf ich stolz bin) zeichnen, die Fotos als Vorbild – Platz am Stamm und in der Krone lassen.",
+              "Vermutung (2 Min.): „Ich glaube, die anderen sehen bei mir …“ – ein Satz, noch bevor die Post kommt (Aufgabe 2).",
+              "Stärken-Post schreiben (7 Min.): Für jede andere Person eine Karte mit einer Stärke und einem Beispiel, das du gesehen hast – nichts über Aussehen; die Leitung liest jede Karte, bevor sie ankommt.",
+              "Post lesen (8 Min.): Die Karten still lesen, die Stärken als Blätter an den Baum schreiben und eine Stärke für diese Woche wählen (Aufgabe 3); ein „Danke“ reicht als Antwort."
+            ],
+            "tipp": "Sind nur zwei Jugendliche da, schreibt die Leitung zwei Karten je Person, damit jeder Baum voll bleibt.",
+            "wennEsKippt": "Rutscht eine verletzende oder ironische Karte durch, sie still einsammeln, durch eine eigene ersetzen und später unter vier Augen mit dem Schreibenden sprechen. Dreht jemand den Baum beim Lesen verlegen um, das zulassen: Anerkennung muss man manchmal erst aushalten lernen.",
+            "blatt": "a7-baum-der-staerke"
+          },
+          {
+            "titel": "Skill: Wie ein Baum stehen",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Der Skill hilft, wenn man wackelt – vor einem Vortrag, im Streit, wenn die Knie zittern. Erst im Stehen, dann die Kurzform im Sitzen (zusammen höchstens 5 Minuten), danach der Abschluss: ein Satz in den Skills-Pass, Mission ansagen, Moment wählen.",
+            "sagen": [
+              "Ein Baum bewegt sich oben im Sturm, unten bleibt er stehen – spürt eure Wurzeln.",
+              "Wann kommt dein Moment für deine Stärke – zu Hause, im Verein oder in der Pause – und was tust du dann?"
+            ],
+            "punkte": [
+              "Wurzeln (2 Min.): Füße hüftbreit auf den Boden, Knie weich, das Gewicht spüren – aus den Fußsohlen wachsen Wurzeln.",
+              "Stamm und Krone (3 Min.): Aufrichten, Schultern sinken lassen, dreimal langsam ausatmen, den Blick heben und sich leicht wie im Wind wiegen – dann ganz still stehen; im Sitzen: Füße fest auf den Boden, aufrichten, ausatmen.",
+              "Skills-Pass (4 Min.): Ein Satz zu „Was gibt mir Halt, wenn ich wackle?“, dann der Stempel.",
+              "Mission und Moment (5 Min.): Mission ansagen; jede Person wählt ihren Moment und schreibt ihn ins Heft: „Mein Moment: Wenn …“.",
+              "Ausblick (1 Min.): Der Baum bleibt in der Mappe und wächst im Lauf des Jahres weiter."
+            ],
+            "wennEsKippt": "Wird aus dem Wiegen ein Schubsen, sofort anhalten: Bäume berühren sich nicht, jeder steht für sich. Wer nicht aufstehen mag, macht beide Teile im Sitzen."
+          }
+        ],
+        "bruecke": "Ihr kennt jetzt eure Stärken – nächste Woche geht es um Gefühle: was sie uns sagen wollen, wozu jedes gut ist und wie sie im Foto-Studio aussehen.",
+        "mission": "Setz deine gewählte Stärke einmal auf eine neue Art ein.",
+        "hintergrund": "Die Einheit fragt nicht, was fehlt, sondern was trägt. Das Baum-Bild stammt aus dem „Tree of Life“: Man erzählt von sich, ohne zuerst über Probleme zu sprechen – Wurzeln, Stamm, Äste und Früchte stehen für Halt, Können, Wachstum und Stolz (Ncube, 2006). Wer eine Stärke auf neue Weise einsetzt, fühlt sich danach oft besser (Seligman et al., 2005), und Aufenthalte im Grünen erholen die Aufmerksamkeit (Kaplan, 1995).",
+        "quellen": [
+          "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children. International Journal of Narrative Therapy and Community Work, 1, 3–16.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182."
+        ],
+        "achtung": "Ausflug nur mit schriftlichem Einverständnis der Eltern; Treffpunkt, Signal und Sichtweite gelten, bei Gefahr oder Wetterumschwung wird ruhig abgebrochen, Fotos zeigen nur Bäume. Die Frage nach den Wurzeln kann schmerzen: Orte, Tiere, Musik und Erinnerungen zulassen, Wurzeln bleiben privat, bei „niemand“ nach der Stunde ein Einzelgespräch anbieten. Die Leitung liest jede Stärken-Karte vor dem Verteilen; bei Hinweisen auf Gewalt oder Gefährdung nicht in der Gruppe vertiefen, sondern noch am selben Tag die Responsable informieren.",
+        "differenzierung": {
+          "leichter": "Im Baum reicht je Teil ein Stichwort, ein Zeichen oder ein Wort in der eigenen Sprache, und auf den Karten genügen eine Stärke aus dem Wortspeicher und ein Stichwort.",
+          "schwerer": "Zu jeder Stärke im Stamm eine Situation notieren, in der sie sichtbar wurde, und überlegen, wo sie diese Woche helfen könnte."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Baum aussuchen und Rindenabdruck an einem Baum vor dem Haus (15 Min.), Baum bauen und Stärken-Post schreiben und lesen (20 Min.), Skill, Skills-Pass und Mission (10 Min.). Foto-Challenge, Rückweg und Vermutung entfallen; fehlende Stärken-Post wird in der nächsten Stunde geschrieben."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-baum-der-staerke",
+      "bereich": "skills",
+      "thema": "ich",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "30 Min.; später je 10 Min.",
+      "eldib": [],
+      "schlagworte": ["Stärken", "Ressourcen", "Baum der Stärke", "Stärken-Post", "Jahresfaden", "Annexe"],
+      "bild": "icon:tree",
+      "kurs": ["a7-e06"],
+      "de": {
+        "titel": "Mein Baum der Stärke",
+        "untertitel": "Was dich hält und was du kannst",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Im Sturm hält ein Baum, weil seine Wurzeln halten und er sich im Wind biegen kann. Bei dir sind es vielleicht Menschen, Orte, Musik oder etwas, das du kannst. Wer eine Stärke neu einsetzt, fühlt sich danach oft besser."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Gestalte deinen Baum und schreib in jeden Teil etwas.",
+            "hinweis": "Auf A3 oder hier im Heft. Dein Rindenabdruck ist der Stamm. Lass in der Krone Platz – dein Baum wächst weiter.",
+            "symbole": ["malen", "schreiben"]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "2:1",
+            "links": [{ "art": "feld", "label": "Mein Baum", "zeichnen": true, "hoehe": 14 }],
+            "rechts": [
+              {
+                "art": "schritte",
+                "linien": 0,
+                "items": [
+                  { "titel": "Wurzeln – was mich hält", "text": "Menschen, Orte, Musik, Erinnerungen" },
+                  { "titel": "Stamm – was ich kann" },
+                  { "titel": "Äste – was noch wächst" },
+                  { "titel": "Früchte – worauf ich stolz bin" },
+                  { "titel": "Blätter – was andere sehen" }
+                ]
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib auf, was die anderen wohl bei dir sehen – und nach dem Lesen, was dich überrascht hat.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Ich glaube, die anderen sehen bei mir …", "Überrascht hat mich …"],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib die Stärken von deinen Karten als Blätter in den Baum und wähl eine für diese Woche.",
+            "symbole": ["lesen", "schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Meine Stärke für diese Woche: …", "Mein Moment: Wenn …"],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was auf deinen Baum kommt.",
+            "text": "Wurzeln darfst du mit Zeichen festhalten, die nur du verstehst."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen halten in einem Baum fest, was sie hält, was sie können und worauf sie stolz sind, und tragen Stärken ein, die ihnen die Gruppe zurückmeldet. Der Baum bleibt in der Mappe und wächst im Lauf des Jahres weiter.",
+          "ablauf": [
+            "Einheit 6, Schritt 5: Baum bauen (13 Min.), Rindenabdruck als Stamm, Platz am Stamm und in der Krone lassen; danach die Vermutung aufschreiben (Aufgabe 2, erste Zeile).",
+            "Stärken-Post schreiben und lesen, die Stärken als Blätter in den Baum schreiben; Aufgabe 2 mit „Überrascht hat mich …“ beenden, in Aufgabe 3 Stärke und Moment für die Woche wählen.",
+            "In späteren Einheiten (Glaubenssätze, Jahresrückblick) kommen neue Sätze und Früchte dazu – in neuer Farbe mit Datum.",
+            "Der Baum bleibt in der Mappe der Person; niemand muss ihn zeigen."
+          ],
+          "hintergrund": "Das Bild ist an den „Tree of Life“ angelehnt: In der narrativen Arbeit erzählen belastete Kinder und Jugendliche über Wurzeln, Stamm, Äste und Früchte von sich, ohne zuerst über Probleme sprechen zu müssen (Ncube, 2006). Eigene Stärken auf neue Weise einzusetzen, steigerte in einer kontrollierten Studie das Wohlbefinden über Monate (Seligman et al., 2005).",
+          "quellen": [
+            "Ncube, N. (2006). The Tree of Life Project: Using narrative ideas in work with vulnerable children. International Journal of Narrative Therapy and Community Work, 1, 3–16.",
+            "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+          ],
+          "material": "Rindenabdruck, Bunt- und Filzstifte, Kleber, Stärken-Post-Karten"
+        }
+      }
+    },
+    {
+      "id": "a7-staerken-post",
+      "bereich": "skills",
+      "thema": "ich",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": ["Stärken-Post", "Stärkenkarten", "Rückmeldung", "Annexe"],
+      "bild": "icon:mail",
+      "kurs": ["a7-e06"],
+      "de": {
+        "titel": "Stärken-Post: Karten",
+        "untertitel": "Kopiervorlage – einmal kopieren und ausschneiden: neun Karten für drei Jugendliche",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Jede Person bekommt drei Karten: zwei schreiben die anderen, eine die Leitung. Die Leitung liest jede Karte, bevor sie ankommt.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 170,
+            "karten": [
+              { "titel": "Stärken-Post für", "text": "________________________________\nIch sehe bei dir:\n________________________________\nZum Beispiel, als du\n________________________________\n________________________________\nVon: __________________________" },
+              { "titel": "Stärken-Post für", "text": "________________________________\nIch sehe bei dir:\n________________________________\nZum Beispiel, als du\n________________________________\n________________________________\nVon: __________________________" },
+              { "titel": "Stärken-Post für", "text": "________________________________\nIch sehe bei dir:\n________________________________\nZum Beispiel, als du\n________________________________\n________________________________\nVon: __________________________" },
+              { "titel": "Stärken-Post für", "text": "________________________________\nIch sehe bei dir:\n________________________________\nZum Beispiel, als du\n________________________________\n________________________________\nVon: __________________________" },
+              { "titel": "Stärken-Post für", "text": "________________________________\nIch sehe bei dir:\n________________________________\nZum Beispiel, als du\n________________________________\n________________________________\nVon: __________________________" },
+              { "titel": "Stärken-Post für", "text": "________________________________\nIch sehe bei dir:\n________________________________\nZum Beispiel, als du\n________________________________\n________________________________\nVon: __________________________" },
+              { "titel": "Stärken-Post für", "text": "________________________________\nIch sehe bei dir:\n________________________________\nZum Beispiel, als du\n________________________________\n________________________________\nVon: __________________________" },
+              { "titel": "Stärken-Post für", "text": "________________________________\nIch sehe bei dir:\n________________________________\nZum Beispiel, als du\n________________________________\n________________________________\nVon: __________________________" },
+              { "titel": "Stärken-Post für", "text": "________________________________\nIch sehe bei dir:\n________________________________\nZum Beispiel, als du\n________________________________\n________________________________\nVon: __________________________" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Karten für die Stärken-Post: Jede Person bekommt drei Karten mit einer Stärke und einem beobachteten Beispiel – zwei von den anderen, eine von der Leitung.",
+          "ablauf": [
+            "Einmal kopieren und ausschneiden, am besten auf festes Papier: neun Karten für drei Jugendliche.",
+            "Vor der Stunde für jede Person eine Karte mit einer echten Beobachtung schreiben.",
+            "Einheit 6, Schritt 5: Die Gruppe schreibt je zwei Karten; die Leitung liest jede Karte, bevor sie ankommt.",
+            "Ironische oder verletzende Karten nicht weitergeben, sondern durch eine eigene ersetzen."
+          ],
+          "hintergrund": "Rückmeldungen zu Stärken wirken, wenn sie an beobachtetem Verhalten festgemacht sind und nicht an Aussehen oder Noten. Die feste Verteilung sorgt dafür, dass niemand leer ausgeht – gerade bei Jugendlichen, die selten Anerkennung bekommen. Die eigenen Stärken zu kennen und neu einzusetzen, stärkt das Wohlbefinden (Seligman et al., 2005).",
+          "quellen": [
+            "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+          ],
+          "material": "Schere, Stifte"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e09",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-gefuehls-landkarte"],
+      "vorlagen": ["a7-situationskarten"],
+      "woerter": [
+        { "de": "das Warnsignal", "fr": "das Warnsignal" },
+        { "de": "spüren", "fr": "spüren" },
+        { "de": "angespannt", "fr": "angespannt" }
+      ],
+      "de": {
+        "titel": "Wo spüre ich Gefühle?",
+        "kurz": "Den Körper umreißen oder eine Figur zeichnen, Gefühle und erstes Warnsignal eintragen, die Stärke von 0 bis 10 einschätzen – dazu Statuen, Musik und ein kurzer Bodyscan.",
+        "ziele": [
+          "nehmen Gefühle als Signale im Körper wahr und halten sie in ihrer Gefühls-Landkarte fest",
+          "benennen ihr erstes Warnsignal für Wut und Angst und schätzen die Stärke eines Gefühls von 0 bis 10 ein",
+          "probieren den Bodyscan aus, bei dem sie jederzeit aufhören dürfen"
+        ],
+        "material": [
+          "Packpapier (Körperlänge je Person), dicke Filzstifte, Klebepunkte",
+          "Blatt „Meine Gefühls-Landkarte“, Situationskarten (Vorlage), Buntstifte",
+          "Malerkrepp für die Linie von 0 bis 10 (4–5 m)",
+          "Lautsprecher und vier Musikstücke",
+          "Matten oder Decken, Stühle; Gefühlsrad, Skills-Pässe, Stempel"
+        ],
+        "vorbereitung": [
+          "Mit der Responsable klären, wer Körperübungen oder Nähe schwer erträgt; der Umriss ist freiwillig, Figur oder Blatt sind gleichwertig.",
+          "Tische an die Wand, Packpapier in Körperlänge schneiden, Linie von 0 bis 10 mit Malerkrepp kleben, Situationskarten schneiden.",
+          "Vier Musikstücke von ein bis zwei Minuten bereitlegen (Vorschläge in Schritt 5); eigene Songs der Jugendlichen nur nach Textprüfung."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühl und Ort im Körper" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Thema: Körper" },
+          { "min": "15–45", "phase": "uebung", "titel": "Gefühlsstatuen, Warnsignale und die Stärke-Linie" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Bewegung: Hampelmann und Herzschlag" },
+          { "min": "50–85", "phase": "uebung", "titel": "Meine Gefühls-Landkarte: Umriss oder Figur" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Bodyscan kurz" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühl und Ort im Körper",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Check-in mit dem Gefühlsrad, heute als Körper-Check: Jede Person zeigt auf ein Wort und sagt, wo sie das Gefühl gerade spürt – oder dass sie es nirgends spürt. Die Leitung beginnt und zeigt dabei auf die Stelle am eigenen Körper; nicht nachfragen, nicht deuten.",
+            "sagen": [
+              "Ich bin gerade „angespannt“. Das sitzt bei mir im Nacken, der ist ganz fest.",
+              "Wo spürst du dein Gefühl gerade? „Nirgends“ ist auch eine Antwort."
+            ],
+            "tipp": "Wer nichts spürt, macht nichts falsch – oft hilft die Frage, wo es sich gerade warm, kalt, eng oder weit anfühlt."
+          },
+          {
+            "titel": "Rückblick, Mission und Thema: Körper",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Zur Mission fragen: Kam dein Moment – wer saß am Steuer, und was hast du danach getan? Daumen hoch, Mitte oder runter, eine Stimme erzählt; niemand muss den Moment erlebt haben. Dann das Thema nennen: Heute geht es darum, wo im Körper man merkt, dass ein Gefühl das Steuer übernimmt.",
+            "sagen": [
+              "Riley merkt im Film nicht, wer in ihrem Kopf gerade am Pult steht. Woran merkt ihr es bei euch?"
+            ],
+            "tipp": "Das Slogan-Plakat aus Einheit 8 aufhängen: Es erinnert an das Steuerpult und führt zum Körper."
+          },
+          {
+            "titel": "Gefühlsstatuen, Warnsignale und die Stärke-Linie",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Das Bild (3 Min.): Der Körper ist der Rauchmelder der Gefühle und meldet sich oft früher als der Kopf. Das Modell: Bei Wut spüren viele Kopf, Brust und Arme, bei Traurigkeit wird alles schwer und still – so zeigten es Körperkarten von über 700 Personen.",
+            "sagen": [
+              "Woran merkst du, dass du wütend wirst – noch bevor du etwas sagst oder tust?",
+              "Stellt euch dahin, wo es für euch passt. Es gibt keine richtige Zahl."
+            ],
+            "punkte": [
+              "Gefühlsstatuen (10 Min.): Die Leitung liest eine Situation von den Karten vor, auf „Los“ zeigen alle ohne Worte mit dem ganzen Körper ihr Gefühl und frieren ein – in den ersten Runden mit Blick zur Wand; danach: Was macht der Körper – Schultern, Hände, Atem?",
+              "Warnsignal-Sammlung (7 Min.): Woran merkst du, dass du wütend wirst – noch bevor du etwas sagst? Die Antworten kommen rund um eine Strichfigur an die Tafel, wer mag, klebt einen Punkt an sein erstes Signal.",
+              "Stärke-Linie (10 Min.): Auf dem Boden liegt eine Linie von 0 bis 10; die Leitung nennt eine Situation und ein Gefühl („Der Bus fährt dir vor der Nase weg – wie genervt?“), alle stellen sich an ihre Zahl und sagen auf Wunsch, was sie bestimmt."
+            ],
+            "tipp": "Die Situationen stehen auf den Karten (Vorlage); wer nichts spürt, macht nichts falsch – Spüren lässt sich üben.",
+            "wennEsKippt": "Wird es albern, kurz mitlachen und die nächste Situation leiser und langsamer vorlesen. Wer nicht mitmachen mag, bekommt eine Beobachterrolle und beschreibt nach jeder Runde eine Statue, ohne zu bewerten."
+          },
+          {
+            "titel": "Bewegung: Hampelmann und Herzschlag",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Eine Minute Hampelmann oder zügig auf der Stelle gehen, danach eine Hand auf die Brust: Wie schlagen Herz und Atem jetzt? So spüren alle, wie sich Aufregung im Körper anfühlt; die Leitung macht mit.",
+            "tipp": "Wer nicht springen mag, geht schnell auf der Stelle oder macht Kniebeugen; niemand muss den Puls zählen."
+          },
+          {
+            "titel": "Meine Gefühls-Landkarte: Umriss oder Figur",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Die Landkarte entsteht freiwillig auf einem Körperumriss (Packpapier) oder an einer Figur: Wer nicht liegen mag, zeichnet eine Figur oder nimmt den Körper auf dem Heft-Blatt. In den Farben des Gefühlsrads trägt jede Person ein, wo sie Wut, Angst, Freude und Traurigkeit spürt, kreist ihr erstes Warnsignal ein und schreibt daneben, ab welcher Stärke von 0 bis 10 sie es merkt.",
+            "sagen": [
+              "Du entscheidest, ob du liegst, eine Figur zeichnest oder nur das Blatt nimmst – alles zählt gleich.",
+              "Beweg dich so, wie die Musik klingt. Welches Gefühl hat sie bei dir ausgelöst – und wo im Körper?"
+            ],
+            "punkte": [
+              "Umriss oder Figur (8 Min.): Wer mag, legt sich auf das Packpapier und wird von einer Person ihrer Wahl mit Abstand umfahren, ohne Berührung; sonst zeichnet sie eine Figur oder nutzt das Heft-Blatt.",
+              "Landkarte (12 Min.): Farben eintragen – Wut rot, Angst lila, Freude gelb, Traurigkeit blau –, dann das erste Warnsignal einkreisen und daneben schreiben, ab welcher Stärke von 0 bis 10 es sich meldet (Aufgabe 1 bis 3).",
+              "Vergleich (5 Min.): Wer mag, zeigt die Landkarte; die Gruppe sucht, wo sie sich ähneln und wo jede Karte anders ist – niemand muss erklären.",
+              "Musik und Bewegung (10 Min.): Vier kurze Stücke – froh (Vivaldi, „Der Frühling“), traurig (Barber, „Adagio für Streicher“), wütend (Grieg, „In der Halle des Bergkönigs“), ruhig (Satie, „Gymnopédie Nr. 1“) –, dazu frei bewegen oder am Tisch malen; nach jedem Stück: Welches Gefühl, wo im Körper?"
+            ],
+            "tipp": "Wer mag, macht den Umriss als Schatten: Lampe oder Beamer, Schatten auf das Packpapier an der Wand, im Stehen und ohne Nähe.",
+            "wennEsKippt": "Findet jemand das Ausmalen kindisch, eine sachliche Variante anbieten: Kreuze und Stichworte statt Flächen. Wird das wütende Stück zu wild, leiser drehen und direkt zum ruhigen wechseln.",
+            "blatt": "a7-gefuehls-landkarte"
+          },
+          {
+            "titel": "Skill: Bodyscan kurz",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Der Bodyscan schult das Spüren, damit das Warnsignal früher auffällt: liegen oder sitzen, Augen zu oder Blick auf einen Punkt, höchstens 3 Minuten, aufhören ist jederzeit erlaubt. Danach der Abschluss mit Skills-Pass, Mission und Moment.",
+            "sagen": [
+              "Ihr dürft jederzeit die Augen öffnen oder euch hinsetzen. Ihr müsst nichts Besonderes spüren – alles, was da ist, ist in Ordnung.",
+              "Hat sich im Körper etwas verändert?"
+            ],
+            "punkte": [
+              "Ankommen (1 Min.): Bequeme Position, Augen zu oder Blick auf einen Punkt, einmal tief ein- und langsam ausatmen.",
+              "Wandern (2 Min.): Stirn, Kiefer, Nacken, Schultern, Brust und Bauch, dann Hände, Beine und Füße – nichts verändern, nur bemerken; bei Brust und Bauch länger bleiben; zum Schluss Finger und Zehen bewegen, strecken, Augen öffnen.",
+              "Skills-Pass (4 Min.): Ein Satz zu „Welches Warnsignal will ich mir merken?“, dann der Stempel.",
+              "Mission und Moment (7 Min.): Mission ansagen; jede Person wählt ihren Moment und schreibt ihn ins Heft: „Mein Moment: Wenn …“.",
+              "Ausblick (1 Min.): Nächste Woche kommt zum Gefühl eine Zahl dazu."
+            ],
+            "tipp": "Die Leitung bleibt sitzen und liest ruhig und eher zu langsam vor; das gibt Sicherheit. Schläft jemand ein, ist das ein ehrlicher Hinweis auf den Schlaf-Tank.",
+            "wennEsKippt": "Wird jemand beim Spüren unruhig, traurig oder angespannt, die Übung für diese Person freundlich beenden: Augen auf, Füße fest auf den Boden, fünf Dinge im Raum nennen. Später in Ruhe und ohne Druck nachfragen."
+          }
+        ],
+        "bruecke": "Nächste Woche kommt zum Gefühl eine Zahl dazu: die Anspannungsskala von 0 bis 100 – und die Frage, welcher Skill bei welcher Zahl noch hilft.",
+        "mission": "Spür einmal nach: Wo meldet sich dein erstes Warnsignal für Wut oder Angst?",
+        "hintergrund": "Gefühle sind Zustände des ganzen Körpers: Nummenmaa und Kollegen (2014) ließen über 700 Personen einzeichnen, wo sie bei Gefühlen etwas spüren – die Körperkarten unterschieden sich je nach Gefühl deutlich und ähnelten sich in westeuropäischen und ostasiatischen Gruppen. Der Körper meldet sich oft früher als der Gedanke „Ich bin wütend“, und je früher man eingreift, desto leichter gelingt es (Gross, 1998). Der Bodyscan übt, den Körper wahrzunehmen, ohne zu bewerten (Kabat-Zinn, 1990).",
+        "quellen": [
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte."
+        ],
+        "achtung": "Körperübungen und der Bodyscan können bei Jugendlichen mit belastenden Erfahrungen Unruhe oder Angst auslösen: Vorher das Stopp-Recht nennen (Augen offen, sitzen statt liegen, aussetzen), keine Übung mit Berührung, und der Umriss ist nur freiwillig – wer nicht liegen mag, zeichnet eine Figur. Niemand muss seine Landkarte zeigen oder erklären, und beim Tanzen gibt es immer eine Alternative. Zeigen sich Hinweise auf Verletzungen, Gewalt oder Selbstverletzung, nicht in der Gruppe nachfragen, sondern noch am selben Tag die Responsable informieren und nach dem Schutzkonzept handeln.",
+        "differenzierung": {
+          "leichter": "Auf der Landkarte reichen Wut und Freude, bei den Warnsignalen wird angekreuzt oder eingekreist statt geschrieben, und die Körperteile stehen als Wörter mit Bild an der Tafel.",
+          "schwerer": "Eine fünfte Farbe für Ruhe ergänzen (Wo spürst du, dass es dir gut geht?) oder aufschreiben, woran andere bei dir Wut oder Angst bemerken könnten, bevor du es selbst merkst."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Körperpunkt (5 Min.), Gefühlsstatuen und Warnsignale (10 Min.), Landkarte auf dem Blatt mit Warnsignal und Stärke (20 Min.), Bodyscan kurz, Skills-Pass und Mission (15 Min.). Umriss, Stärke-Linie, Hampelmann und Musik entfallen; die Stärke üben alle in der nächsten Stunde auf der Bodenlinie von 0 bis 100."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-gefuehls-landkarte",
+      "bereich": "skills",
+      "thema": "gefuehle",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "25 Min.",
+      "eldib": [],
+      "schlagworte": ["Körpersignale", "Gefühls-Landkarte", "Warnsignal", "Stärke 0–10", "Annexe"],
+      "bild": "icon:map",
+      "kurs": ["a7-e09"],
+      "de": {
+        "titel": "Meine Gefühls-Landkarte",
+        "untertitel": "Wo sitzt das Gefühl? Was merkst du zuerst?",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Gefühle sitzen im ganzen Körper. Oft meldet sich der Körper zuerst – wer das erste Signal merkt, hat mehr Zeit. Dieses Blatt ist die kleine Landkarte; die große ist dein Umriss."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Markiere in der passenden Farbe, wo du jedes Gefühl spürst.",
+            "hinweis": "Denk an einen Moment, der nicht zu schwer war. Du musst nichts zeigen.",
+            "symbole": ["malen"]
+          },
+          {
+            "art": "koerper",
+            "legende": [
+              { "farbe": "rot", "text": "Wut" },
+              { "farbe": "lila", "text": "Angst" },
+              { "farbe": "gelb", "text": "Freude" },
+              { "farbe": "blau", "text": "Traurigkeit" },
+              { "farbe": "gruen", "text": "Ruhe (wenn du magst)" }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Kreuze an, woran du Wut und Angst bei dir merkst.",
+            "symbole": ["ankreuzen"]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "ankreuzen",
+                "titel": "Wut",
+                "items": ["Mein Herz klopft schneller.", "Mein Gesicht wird heiß.", "Ich balle die Fäuste.", "Mein Kiefer wird fest."]
+              }
+            ],
+            "rechts": [
+              {
+                "art": "ankreuzen",
+                "titel": "Angst",
+                "items": ["Mein Herz rast.", "Mein Bauch kribbelt oder tut weh.", "Meine Knie werden weich.", "Ich will nur noch weg."]
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib dein erstes Warnsignal auf und ab welcher Stärke von 0 bis 10 du es merkst.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "tabelle",
+            "spalten": ["Gefühl", "Mein erstes Warnsignal", "Ab Stärke (0–10)"],
+            "breiten": [1, 3.2, 1.5],
+            "zeilen": 0,
+            "werte": [["Wut", "", ""], ["Angst", "", ""]]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen nehmen wahr, wo sie Wut, Angst, Freude und Traurigkeit im Körper spüren, benennen ihr erstes Warnsignal für Wut und Angst und schätzen die Stärke von 0 bis 10 ein – die Grundlage für die Anspannungsskala.",
+          "ablauf": [
+            "Einheit 9, Schritt 5: Aufgabe 1 allein (6 Min.) in den Farben des Gefühlsrads; wer einen Umriss gemacht hat, trägt dort die Farben ein, das Blatt ist die kleine Landkarte.",
+            "Aufgabe 2: Die Leitung liest die Sätze für Wut und Angst vor, alle kreuzen für sich an.",
+            "Aufgabe 3: das erste Warnsignal aufschreiben und ab welcher Stärke von 0 bis 10 es sich meldet, dann der freiwillige Vergleich.",
+            "Das Blatt bleibt im Heft und wird weder eingesammelt noch gezeigt. Der Bodyscan steht im Handbuch (Schritt 6)."
+          ],
+          "hintergrund": "Nummenmaa und Kollegen (2014) ließen über 700 Personen einzeichnen, wo sie bei verschiedenen Gefühlen etwas spüren; die Körperkarten unterschieden sich je nach Gefühl deutlich. Für die Regulation sind diese Signale wertvoll, denn sie kommen oft früher als der Gedanke – und je früher man eingreift, desto leichter gelingt es (Gross, 1998).",
+          "quellen": [
+            "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+            "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+          ],
+          "material": "Buntstifte in Rot, Lila, Gelb, Blau und Grün"
+        }
+      }
+    },
+    {
+      "id": "a7-situationskarten",
+      "bereich": "skills",
+      "thema": "gefuehle",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "je 10 Min.",
+      "eldib": [],
+      "schlagworte": ["Situationskarten", "Gefühlsstatuen", "Stärke-Linie", "Körpersignale", "Annexe"],
+      "bild": "icon:list-check",
+      "kurs": ["a7-e09"],
+      "de": {
+        "titel": "Situationskarten",
+        "untertitel": "Kopiervorlage – einmal kopieren und ausschneiden: für Gefühlsstatuen und Stärke-Linie",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So werden die Karten gebraucht",
+            "punkte": [
+              "Gefühlsstatuen: eine Karte ziehen und vorlesen, auf „Los“ zeigen alle ihr Gefühl als Statue.",
+              "Stärke-Linie: eine Karte ziehen, alle stellen sich an ihre Zahl von 0 bis 10.",
+              "Wer eine Karte nicht vorlesen mag, legt sie ohne Begründung beiseite."
+            ]
+          },
+          {
+            "art": "text",
+            "text": "Gefühlsstatuen",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 62,
+            "karten": [
+              { "titel": "Statue 1", "text": "Du hast lange gelernt – und im Test ist dein Kopf plötzlich leer." },
+              { "titel": "Statue 2", "text": "Dein bester Freund schenkt dir etwas, das du dir schon lange wünschst." },
+              { "titel": "Statue 3", "text": "Du sollst gleich vor allen etwas vortragen und bist nicht vorbereitet." },
+              { "titel": "Statue 4", "text": "Nach Wochen Training gewinnt deine Mannschaft das entscheidende Spiel." },
+              { "titel": "Statue 5", "text": "Du stolperst in der Kantine mit dem Tablett, und alle schauen her." },
+              { "titel": "Statue 6", "text": "Die letzte Stunde vor den Ferien will einfach nicht enden." }
+            ]
+          },
+          {
+            "art": "text",
+            "text": "Stärke-Linie von 0 bis 10",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 62,
+            "karten": [
+              { "titel": "Linie 1", "text": "Der Bus fährt dir vor der Nase weg. Wie genervt?" },
+              { "titel": "Linie 2", "text": "In der Kantine gibt es dein Lieblingsessen. Wie froh?" },
+              { "titel": "Linie 3", "text": "Dein Akku ist bei 2 Prozent, und du wartest auf eine wichtige Nachricht. Wie nervös?" },
+              { "titel": "Linie 4", "text": "Jemand verbreitet ein falsches Gerücht über dich. Wie wütend?" },
+              { "titel": "Linie 5", "text": "Morgen hältst du ein Referat. Wie aufgeregt?" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Elf Situationskarten für zwei Übungen: Gefühlsstatuen (ein Gefühl mit dem ganzen Körper zeigen) und Stärke-Linie (ein Gefühl von 0 bis 10 einschätzen).",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden, die beiden Stapel getrennt halten.",
+            "Einheit 9, Schritt 3: Statuen – in den ersten Runden mit Blick zur Wand, danach im Kreis; nach jeder Situation fragen: Was macht der Körper?",
+            "Stärke-Linie: Zwei, drei Personen sagen, was ihre Zahl bestimmt; niemand muss sich erklären.",
+            "Karten, die zu nah gehen, ohne Begründung austauschen oder weglassen."
+          ],
+          "hintergrund": "Dieselbe Situation löst bei verschiedenen Menschen verschiedene Gefühle und verschieden starke Reaktionen aus; das Einschätzen von 0 bis 10 macht Unterschiede sichtbar, ohne sie zu bewerten. Der Körper meldet sich oft früher als der Gedanke, und je früher man eingreift, desto leichter gelingt es (Gross, 1998).",
+          "quellen": [
+            "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}
