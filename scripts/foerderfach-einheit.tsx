@@ -1,9 +1,11 @@
 // Setzt Förderfach-Einheiten so, wie sie im Lehrerhandbuch stehen (Übersichtsseite und Schritt für
 // Schritt), auf Deutsch und Französisch – zum Ansehen, ohne das ganze Handbuch zu setzen.
-//   npx tsx --tsconfig tsconfig.scripts.json scripts/foerderfach-einheit.tsx <entwurf.json …> [--png] [--ordner=pfad]
+//   npx tsx --tsconfig tsconfig.scripts.json scripts/foerderfach-einheit.tsx <entwurf.json …> [--png] [--ordner=pfad] [--ausgabe=annexe]
 // Meldet je Sprache die Seitenzahl und ob die Übersicht (Ziele, Ablauf, Material, Vorbereitung,
 // Kopiervorlagen, Wortspeicher, Achtung) auf eine A4-Seite passt – sonst ✗ (Exit-Code 1).
 // Ausgabe: tmp/foerderfach-einheit/<id>_<de|fr>.pdf, mit --png jede Seite als Bild (<id>_<de|fr>-1.png …).
+// --ausgabe=annexe: Einheiten der Annexe (Ids a7-e01 …) aus dem Plan und den Entwürfen in src/data/foerderfach/annexe,
+// nur Deutsch (siehe scripts/foerderfach-ausgabe.ts).
 import { Document, renderToFile } from '@react-pdf/renderer'
 import { existsSync, mkdirSync, readFileSync, readdirSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -11,13 +13,16 @@ import { fileURLToPath } from 'node:url'
 import { execFileSync } from 'node:child_process'
 import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { EinheitSeiten } from '../src/foerderfach/pdf/Handbuch'
-import { SKILLKARTEN, blattById, planVon } from '../src/foerderfach/daten'
+import { ladeDaten, ladeEntwurf, waehleAusgabeAus } from './foerderfach-ausgabe'
 import type { Blatt } from '../src/blatt/typen'
-import type { EinheitenDatei, Sprache } from '../src/foerderfach/typen'
+import type { Sprache } from '../src/foerderfach/typen'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 registriereSchriften((d) => join(ROOT, 'src/assets/fonts/pdf', d))
 const args = process.argv.slice(2)
+const wahl = waehleAusgabeAus(args)
+const { SKILLKARTEN, blattById, planVon } = ladeDaten(wahl)
+const sprachen: Sprache[] = wahl.annexe ? ['de'] : ['de', 'fr']
 const png = args.includes('--png')
 const ziel = args.find((a) => a.startsWith('--ordner='))?.slice(9) ?? join(ROOT, 'tmp/foerderfach-einheit')
 mkdirSync(ziel, { recursive: true })
@@ -28,21 +33,26 @@ function seitenzahl(datei: string): number {
 
 // Alle Blätter: fertige und die aller Entwürfe (gemeinsame Blätter legt eine andere Einheit an)
 const blaetter = new Map<string, Blatt>(blattById)
-const ordner = join(ROOT, 'src/data/foerderfach/entwurf')
+const ordner = wahl.entwurf
 for (const d of existsSync(ordner) ? readdirSync(ordner).filter((x) => x.endsWith('.json')) : []) {
   try {
-    for (const b of (JSON.parse(readFileSync(join(ordner, d), 'utf8')) as EinheitenDatei).blaetter ?? []) blaetter.set(b.id, b)
+    for (const b of ladeEntwurf(join(ordner, d), wahl).blaetter ?? []) blaetter.set(b.id, b)
   } catch {
     // ein Entwurf, der gerade geschrieben wird, ist noch kein gültiges JSON
   }
 }
 
 for (const datei of args.filter((a) => a.endsWith('.json'))) {
-  const d = JSON.parse(readFileSync(datei, 'utf8')) as EinheitenDatei
+  const d = ladeEntwurf(datei, wahl)
   for (const b of d.blaetter ?? []) blaetter.set(b.id, b)
   for (const e of d.einheiten) {
     const plan = planVon(e.klasse)
-    for (const sprache of ['de', 'fr'] as Sprache[]) {
+    if (!plan) {
+      console.log(`– ${e.id}: kein Plan für die ${e.klasse} (plan-${e.klasse}.json fehlt) – nicht gesetzt`)
+      process.exitCode = 1
+      continue
+    }
+    for (const sprache of sprachen) {
       const pdf = join(ziel, `${e.id}_${sprache}.pdf`)
       const marken = new Map<string, number>()
       // Seitenverweise wie im fertigen Handbuch (Heft S. …, Vorlage S. …), mit dreistelligen Platzhaltern

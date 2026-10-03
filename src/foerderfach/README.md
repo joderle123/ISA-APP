@@ -57,6 +57,23 @@ Kopiervorlage im Handbuch. Beide Hefte haben eine durch 4 teilbare Seitenzahl (D
   dass Inhalt und Verweise stimmen, dass die Übersicht jeder Einheit auf eine Seite passt und dass die
   Seitenzahl durch 4 teilbar ist.
 
+## Zweite Ausgabe: Skills-Kurs Annexe
+
+Dieselbe Technik setzt auch den Skills-Kurs der Annexe (nur Deutsch). Jedes Skript aus „Befehle“
+(`foerderfach:pdf`, `:pruefen`, `:blatt`, `:einheit` und `scripts/foerderfach-uebernehmen.ts`) versteht
+dazu `--ausgabe=annexe`: Es liest dann `src/data/foerderfach/annexe/` statt `src/data/foerderfach/` –
+`plan-<klasse>.json`, `handbuch.json`, `einheiten-<klasse>.json`, `blaetter-<klasse>.json`,
+`skillkarten.json`, Entwürfe in `entwurf/` (Ids `a7-e01`, `a6-…`, `a5-…`). Fehlende Dateien gelten als
+leer, fehlt `fr`, wird `fr` = `de` gesetzt; die Werkzeug-Blätter (`blaetter.json`) und die Quellen sind
+für beide Ausgaben gleich. Titel, Kopf und Fuß heißen „Skills fir d’Liewen · Annexe“, statt des
+Lehrerhandbuchs entsteht ein Leitungsheft (`Skills-fir-d-Liewen_Annexe_7e_Leitungsheft.pdf` und
+`…_Schuelerheft.pdf`, ohne Sprachkürzel). Teile ohne Texte oder Daten (z. B. der Auswertungsbogen der
+Klasse, Stufen ohne Plan) und alles Zweisprachige (Glossar, Elternbrief und Fragebogen auf Französisch,
+Übersetzung im Wortspeicher) entfallen; das Prüfen lässt Französisch sowie „Leitung“ und Imbiss aus den
+Regeln und rechnet mit 30 Doppelstunden. `--daten=<ordner>` nimmt einen anderen Datenordner (zum Testen,
+z. B. unter `tmp/`). Technik: `scripts/foerderfach-ausgabe.ts` lädt die Daten, `waehleAusgabe` in
+`fach.ts` stellt die Namen ein; ohne Option läuft alles wie bisher.
+
 ## Regeln für neue Einheiten
 
 Siehe `EINHEITEN-STIL.md`. Kurz:

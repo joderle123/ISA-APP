@@ -10,6 +10,8 @@
 //   Anhang  Glossar Deutsch–Französisch · Notizen (füllen auf ein Vielfaches von 4 auf) · Rückseite
 // Seitenzahlen (Inhalt, Jahresplan, Verweise) kommen aus einem ersten Durchlauf (Marken, siehe
 // scripts/foerderfach.tsx); die Seiten im Schülerheft aus dem vorher gesetzten Schülerheft.
+// In der Ausgabe annexe (fach.ts: „Leitungsheft“, nur Deutsch) entfallen Teile, deren Texte fehlen,
+// und was es nur zweisprachig gibt (Elternbrief und Fragebogen in der zweiten Sprache, Glossar).
 // ---------------------------------------------------------------------------
 
 import type { ReactNode } from 'react'
@@ -20,7 +22,7 @@ import { NEUTRAL, type Palette } from '../../blatt/zeichnung'
 import { SCHRIFT } from '../../blatt/pdf/stil'
 import { QUELLEN } from '../../blatt/quellen'
 import { URHEBER_NAME } from '../../lib/urheber'
-import { FACH, KOMPETENZEN, PHASEN, STUFE_FARBEN, TX, trimesterName, type FachTx } from '../fach'
+import { AUSGABE, FACH, KOMPETENZEN, PHASEN, STUFE_FARBEN, TX, trimesterName, type FachTx } from '../fach'
 import type { ElternBrief, Einheit, FragebogenText, HandbuchText, Jahresplan, Kapitel, Klasse, Kompetenz, PlanEinheit, Schritt, SkillKarte, Sprache } from '../typen'
 import {
   Absatz,
@@ -144,13 +146,15 @@ function InhaltSeiten({ sprache, p, klasse, teile, text, seiten }: { sprache: Sp
     <Page size="A4" style={seitenStil}>
       <Kopf reiter={t.lehrerhandbuch} meta={`${FACH.name}  ·  ${klasse}`} p={p} />
       <SeitenTitel titel={t.inhalt} p={p} sprache={sprache} />
-      <View wrap={false} style={{ flexDirection: 'row', backgroundColor: p.zart, borderRadius: 9, padding: 11, paddingLeft: 12, marginBottom: 6 }}>
-        <View style={{ width: 3, borderRadius: 2, backgroundColor: p.tief, marginRight: 10 }} />
-        <View style={{ flex: 1 }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: p.tief, marginBottom: 3 }}>{ty(text.vorwort.titel, sprache)}</Text>
-          <Absatz groesse={8.8}>{ty(text.vorwort.text.replaceAll('{klasse}', klasse), sprache)}</Absatz>
+      {text.vorwort ? (
+        <View wrap={false} style={{ flexDirection: 'row', backgroundColor: p.zart, borderRadius: 9, padding: 11, paddingLeft: 12, marginBottom: 6 }}>
+          <View style={{ width: 3, borderRadius: 2, backgroundColor: p.tief, marginRight: 10 }} />
+          <View style={{ flex: 1 }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 10, color: p.tief, marginBottom: 3 }}>{ty(text.vorwort.titel, sprache)}</Text>
+            <Absatz groesse={8.8}>{ty(text.vorwort.text.replaceAll('{klasse}', klasse), sprache)}</Absatz>
+          </View>
         </View>
-      </View>
+      ) : null}
       {teile.map((teil, ti) => (
         <View key={ti}>
           <View minPresenceAhead={60} style={{ marginTop: 14, paddingBottom: 3, borderBottomWidth: 0.8, borderBottomColor: p.mittel }}>
@@ -1036,7 +1040,7 @@ function JahresplanSeiten({ plan, sprache, text, marken, seiten, fertig }: { pla
             <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, color: NEUTRAL.text }}>{t.wahl}</Text>
           </View>
         </View>
-        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, lineHeight: 1.35, color: NEUTRAL.leise, marginTop: 1 }}>{ty(text.plaene.einleitung, sprache)}</Text>
+        {text.plaene ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, lineHeight: 1.35, color: NEUTRAL.leise, marginTop: 1 }}>{ty(text.plaene.einleitung, sprache)}</Text> : null}
       </View>
       {trimester.map((tr) => {
         const kapitel = plan.kapitel.filter((k) => k.trimester === tr)
@@ -1333,19 +1337,20 @@ function SchrittBlock({ s, nr, sprache, p, t, verweis }: { s: Schritt; nr: numbe
   )
 }
 
-/** Wortspeicher: Wortpaare in der Sprache des Hefts zuerst, in drei Spalten */
+/** Wortspeicher: Wortpaare in der Sprache des Hefts zuerst, in drei Spalten (einsprachige Ausgabe: nur die Wörter) */
 function Wortspeicher({ woerter, sprache, p, t }: { woerter: Einheit['woerter']; sprache: Sprache; p: Palette; t: FachTx }) {
   if (!woerter?.length) return null
   const andere: Sprache = sprache === 'fr' ? 'de' : 'fr'
+  const paare = !AUSGABE.einsprachig
   return (
     <View wrap={false} style={{ marginTop: 12, borderWidth: 0.8, borderColor: p.mittel, borderRadius: 9, paddingHorizontal: 10, paddingVertical: 8 }}>
-      <Kleinlabel farbe={p.tief} style={{ marginBottom: 4 }}>{`${t.wortspeicher} · ${t.sprachen[0]} – ${t.sprachen[1]}`}</Kleinlabel>
+      <Kleinlabel farbe={p.tief} style={{ marginBottom: 4 }}>{paare ? `${t.wortspeicher} · ${t.sprachen[0]} – ${t.sprachen[1]}` : t.wortspeicher}</Kleinlabel>
       <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
         {woerter.map((w, i) => (
           <View key={i} style={{ width: '33.33%', paddingRight: 8, marginTop: 2.5 }}>
             <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, lineHeight: 1.3, color: NEUTRAL.text }}>
               <Text style={{ fontWeight: 600 }}>{ty(w[sprache], sprache)}</Text>
-              <Text style={{ color: NEUTRAL.leise }}>{` – ${ty(w[andere], andere)}`}</Text>
+              {paare ? <Text style={{ color: NEUTRAL.leise }}>{` – ${ty(w[andere], andere)}`}</Text> : null}
             </Text>
           </View>
         ))}
@@ -1663,9 +1668,9 @@ function GlossarSeiten({ eintraege, sprache, p, klasse, text, marken }: { eintra
   )
 }
 
-/** Quellen von Teil A (Schlüssel aus quellen.ts): Überblick, Kompetenzen, theoretische Grundlagen */
+/** Quellen von Teil A (Schlüssel aus quellen.ts): Überblick, Kompetenzen, theoretische Grundlagen – soweit es diese Seiten gibt */
 function quellenTeilA(text: HandbuchText): string[] {
-  return ['durlak2011', 'taylor2017', 'casel2020', ...text.grundlagen.theorien.flatMap((x) => x.quellen)].map(quelle).filter(Boolean)
+  return [...(text.ueberblick ? ['durlak2011', 'taylor2017'] : []), ...(text.kompetenzen ? ['casel2020'] : []), ...(text.grundlagen?.theorien ?? []).flatMap((x) => x.quellen)].map(quelle).filter(Boolean)
 }
 
 /** Literaturverzeichnis: alle Quellen aus Teil A und den Einheiten der Klassenstufe, ohne Doppelte, alphabetisch */
@@ -1734,41 +1739,45 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
   const einheiten = plan.einheiten.map((pe) => daten.einheiten.find((e) => e.id === pe.id)).filter((e): e is Einheit => !!e)
   const jeEinheit = vorlagenJeEinheit(einheiten, daten.blaetter)
   const werkzeuge = werkzeugeVon(daten, klasse)
-  const glossar = glossarVon(einheiten, plan, sprache)
+  // einsprachige Ausgabe (annexe): Elternbrief und Fragebogen nur in der Heftsprache, kein Glossar Deutsch–Französisch
+  const glossar = AUSGABE.einsprachig ? [] : glossarVon(einheiten, plan, sprache)
   const literatur = literaturVon(einheiten, sprache, quellenTeilA(text))
   const p = stufenPalette(klasse)
-  const briefe: Sprache[] = sprache === 'fr' ? ['fr', 'de'] : ['de', 'fr']
+  const briefe: Sprache[] = AUSGABE.einsprachig ? [sprache] : sprache === 'fr' ? ['fr', 'de'] : ['de', 'fr']
   const teilC = t.teil(2, t.teilC)
   const teilD = t.teil(3, t.teilD)
+  // Fehlen die Texte eines Teils (Ausgabe annexe: Handbuchtexte ohne ihn, z. B. der Auswertungsbogen der Klasse), entfallen seine Seiten und die Zeile im Inhalt
+  const briefSeiten = briefe.filter((b) => daten.text[b].brief)
+  const frageSeiten = briefe.filter((b) => daten.text[b].messen?.fragebogen)
+  const mitAuswertung = !!(text.messen?.auswertung && text.messen.fragebogen)
+
+  const teilA = (
+    [
+      text.start && { id: 'a0', titel: text.start.titel },
+      text.ueberblick && { id: 'a1', titel: text.ueberblick.titel },
+      text.kompetenzen && { id: 'a2', titel: text.kompetenzen.titel },
+      text.grundlagen && { id: 'a-grund', titel: text.grundlagen.titel },
+      text.doppelstunde && { id: 'a3', titel: text.doppelstunde.titel },
+      text.sicherheit && { id: 'a4', titel: text.sicherheit.titel },
+      text.methoden && { id: 'a5', titel: text.methoden.titel },
+      text.eltern && { id: 'a6', titel: text.eltern.titel },
+      ...briefSeiten.map((b) => ({ id: `brief-${b}`, titel: daten.text[b].brief.seite, ebene: 2 as const })),
+      text.material && { id: 'a7', titel: text.material.titel },
+      text.messen && { id: 'a8', titel: text.messen.titel },
+      ...frageSeiten.map((b) => ({ id: `frage-${b}`, titel: daten.text[b].messen.fragebogen.seite, ebene: 2 as const })),
+      mitAuswertung && { id: 'auswertung', titel: text.messen.auswertung.titel, ebene: 2 as const },
+      text.messen?.logbuch && { id: 'logbuch', titel: text.messen.logbuch.titel, ebene: 2 as const },
+    ] as (InhaltZeile | false | undefined)[]
+  ).filter((z): z is InhaltZeile => !!z)
 
   const teile: InhaltTeil[] = [
-    {
-      titel: t.teilA,
-      gruppen: [
-        [
-          { id: 'a0', titel: text.start.titel },
-          { id: 'a1', titel: text.ueberblick.titel },
-          { id: 'a2', titel: text.kompetenzen.titel },
-          { id: 'a-grund', titel: text.grundlagen.titel },
-          { id: 'a3', titel: text.doppelstunde.titel },
-          { id: 'a4', titel: text.sicherheit.titel },
-          { id: 'a5', titel: text.methoden.titel },
-          { id: 'a6', titel: text.eltern.titel },
-          ...briefe.map((b) => ({ id: `brief-${b}`, titel: daten.text[b].brief.seite, ebene: 2 as const })),
-          { id: 'a7', titel: text.material.titel },
-          { id: 'a8', titel: text.messen.titel },
-          ...briefe.map((b) => ({ id: `frage-${b}`, titel: daten.text[b].messen.fragebogen.seite, ebene: 2 as const })),
-          { id: 'auswertung', titel: text.messen.auswertung.titel, ebene: 2 as const },
-          { id: 'logbuch', titel: text.messen.logbuch.titel, ebene: 2 as const },
-        ],
-      ],
-    },
+    ...(teilA.length ? [{ titel: t.teilA, gruppen: [teilA] }] : []),
     {
       titel: t.teilB,
       gruppen: [
         [
           { id: 'b-plan', titel: `${t.jahresplan} ${klasse} · ${plan.titel[sprache]}` },
-          { id: 'b-weg', titel: text.jahresweg.titel },
+          ...(text.jahresweg ? [{ id: 'b-weg', titel: text.jahresweg.titel }] : []),
         ],
       ],
     },
@@ -1784,34 +1793,34 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
       ]),
     })
   }
-  teile.push({ titel: teilD, gruppen: [werkzeuge.map((id) => ({ id: vorlageId(id), titel: blattInhalt(daten.blaetter.get(id)!, sprache).titel }))] })
-  const anhang = [...(glossar.length ? [{ id: 'g', titel: text.glossar.titel }] : []), { id: 'lit', titel: text.literatur.titel }]
-  teile.push({ titel: t.anhang, gruppen: [anhang] })
+  if (werkzeuge.length) teile.push({ titel: teilD, gruppen: [werkzeuge.map((id) => ({ id: vorlageId(id), titel: blattInhalt(daten.blaetter.get(id)!, sprache).titel }))] })
+  const anhang = [...(glossar.length && text.glossar ? [{ id: 'g', titel: text.glossar.titel }] : []), ...(text.literatur ? [{ id: 'lit', titel: text.literatur.titel }] : [])]
+  if (anhang.length) teile.push({ titel: t.anhang, gruppen: [anhang] })
 
   return (
     <Document title={bookletTitel(klasse, sprache)} author={URHEBER_NAME} creator="CDSE" producer="CDSE" language={sprache}>
       <Deckblatt plan={plan} sprache={sprache} art="handbuch" />
       <InhaltSeiten sprache={sprache} p={p} klasse={klasse} teile={teile} text={text} seiten={seiten} />
-      <StartSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
-      <UeberblickSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
-      <KompetenzSeite sprache={sprache} p={p} klasse={klasse} text={text} plaene={daten.plaene} marken={marken} />
-      <GrundlagenSeiten sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
-      <DoppelstundeSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
-      <SicherheitSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
-      <MethodenSeiten sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
-      <ElternSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
-      {briefe.map((b) => (
+      {text.start ? <StartSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
+      {text.ueberblick ? <UeberblickSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
+      {text.kompetenzen ? <KompetenzSeite sprache={sprache} p={p} klasse={klasse} text={text} plaene={daten.plaene} marken={marken} /> : null}
+      {text.grundlagen ? <GrundlagenSeiten sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
+      {text.doppelstunde ? <DoppelstundeSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
+      {text.sicherheit ? <SicherheitSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
+      {text.methoden ? <MethodenSeiten sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
+      {text.eltern ? <ElternSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
+      {briefSeiten.map((b) => (
         <BriefSeite key={b} brief={daten.text[b].brief} briefSprache={b} sprache={sprache} p={p} klasse={klasse} marken={marken} />
       ))}
-      <MaterialSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
-      <MessenSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
-      {briefe.map((b) => (
+      {text.material ? <MaterialSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
+      {text.messen ? <MessenSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
+      {frageSeiten.map((b) => (
         <FragebogenSeite key={b} fb={daten.text[b].messen.fragebogen} fbSprache={b} sprache={sprache} p={p} klasse={klasse} marken={marken} />
       ))}
-      <AuswertungSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
-      <LogbuchSeite plan={plan} sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
+      {mitAuswertung ? <AuswertungSeite sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
+      {text.messen?.logbuch ? <LogbuchSeite plan={plan} sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
       <JahresplanSeiten plan={plan} sprache={sprache} text={text} marken={marken} seiten={seiten} fertig={new Set(einheiten.map((e) => e.id))} />
-      <JahreswegSeite plan={plan} sprache={sprache} text={text} marken={marken} />
+      {text.jahresweg ? <JahreswegSeite plan={plan} sprache={sprache} text={text} marken={marken} /> : null}
       {einheiten.length
         ? plan.kapitel.map((k) => {
             const imKapitel = einheiten.filter((e) => plan.einheiten.find((u) => u.id === e.id)?.kapitel === k.id)
@@ -1845,8 +1854,8 @@ export function BookletDokument({ daten, klasse, sprache, marken, seiten, heft, 
         blaetter={daten.blaetter}
         marken={marken}
       />
-      {glossar.length ? <GlossarSeiten eintraege={glossar} sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
-      <LiteraturSeiten eintraege={literatur} sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} />
+      {glossar.length && text.glossar ? <GlossarSeiten eintraege={glossar} sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
+      {text.literatur ? <LiteraturSeiten eintraege={literatur} sprache={sprache} p={p} klasse={klasse} text={text} marken={marken} /> : null}
       {Array.from({ length: notizen }, (_, i) => (
         <NotizenSeite key={i} klasse={klasse} sprache={sprache} />
       ))}

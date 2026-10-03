@@ -204,6 +204,7 @@ export interface FragebogenText {
   dank: string
 }
 
+/** In der Ausgabe annexe darf ein Teil fehlen (z. B. `messen.auswertung`, der Auswertungsbogen der Klasse): Das Leitungsheft lässt ihn dann samt Inhaltszeile weg. */
 export interface HandbuchText {
   /** Kurzer Hinweis auf der Inhaltsseite (Aufbau des Hefts); {klasse} wird ersetzt */
   vorwort: { titel: string; text: string }

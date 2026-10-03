@@ -3,10 +3,13 @@
 //    Rückseite mit Hilfe)
 //  - das Lehrerhandbuch als Booklet (Teil A–D, Glossar, Rückseite)
 // Beide haben eine durch 4 teilbare Seitenzahl (Druck als Broschüre, A3 gefaltet zu A4).
-//   npx tsx --tsconfig tsconfig.scripts.json scripts/foerderfach.tsx [ausgabeordner] [--png] [--entwurf] [--nur=7e] [--sprache=de]
+//   npx tsx --tsconfig tsconfig.scripts.json scripts/foerderfach.tsx [ausgabeordner] [--png] [--entwurf] [--nur=7e] [--sprache=de] [--ausgabe=annexe]
 // Ohne Ordner landen die PDFs in tmp/foerderfach (nicht im Repo). --png: jede Seite als Bild
 // (PyMuPDF). --entwurf: die Entwürfe aus src/data/foerderfach/entwurf mitnehmen (zum Ansehen,
 // bevor sie übernommen sind).
+// --ausgabe=annexe: der Skills-Kurs der Annexe statt des Förderfachs für Klassen – nur Deutsch, Leitungsheft
+// statt Lehrerhandbuch, Daten und Entwürfe aus src/data/foerderfach/annexe (siehe scripts/foerderfach-ausgabe.ts):
+// Skills-fir-d-Liewen_Annexe_7e_Leitungsheft.pdf und …_Schuelerheft.pdf. Teile ohne Texte oder Daten entfallen.
 // Jedes Heft wird zweimal gesetzt: Der erste Durchlauf sammelt die Seitenzahlen, der zweite setzt
 // sie ein (Inhalt, Jahresplan, Verweise) und füllt mit Notizseiten auf. Das Schülerheft kommt
 // zuerst – das Handbuch verweist auf seine Seiten.
@@ -18,7 +21,7 @@ import { execFileSync } from 'node:child_process'
 import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { BookletDokument, type HandbuchDaten } from '../src/foerderfach/pdf/Handbuch'
 import { SchuelerheftDokument } from '../src/foerderfach/pdf/Schuelerheft'
-import { EINHEITEN, HANDBUCH, HEFT_VORN, PLAENE, SKILLKARTEN, WERKZEUGE, blattById, planVon } from '../src/foerderfach/daten'
+import { ladeDaten, ladeEntwurf, waehleAusgabeAus } from './foerderfach-ausgabe'
 import { KLASSEN } from '../src/foerderfach/fach'
 import type { Blatt } from '../src/blatt/typen'
 import type { Einheit, EinheitenDatei, Sprache } from '../src/foerderfach/typen'
@@ -26,27 +29,44 @@ import type { Einheit, EinheitenDatei, Sprache } from '../src/foerderfach/typen'
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 registriereSchriften((d) => join(ROOT, 'src/assets/fonts/pdf', d))
 const args = process.argv.slice(2)
+const wahl = waehleAusgabeAus(args)
+const { EINHEITEN, HANDBUCH, HEFT_VORN, PLAENE, SKILLKARTEN, WERKZEUGE, blattById, planVon } = ladeDaten(wahl)
 const ziel = args.find((a) => !a.startsWith('--')) ?? join(ROOT, 'tmp/foerderfach')
-mkdirSync(ziel, { recursive: true })
 const nur = args.find((a) => a.startsWith('--nur='))?.slice(6)
 const nurSprache = args.find((a) => a.startsWith('--sprache='))?.slice(10) as Sprache | undefined
-const sprachen: Sprache[] = nurSprache ? [nurSprache] : ['de', 'fr']
+const sprachen: Sprache[] = nurSprache ? [nurSprache] : wahl.annexe ? ['de'] : ['de', 'fr']
+if (wahl.annexe && sprachen.includes('fr')) {
+  console.error('Die Ausgabe annexe gibt es nur auf Deutsch (--sprache=de).')
+  process.exit(1)
+}
+mkdirSync(ziel, { recursive: true })
 
 const NAME: Record<Sprache, { booklet: string; heft: string }> = {
   de: { booklet: 'Lehrerhandbuch', heft: 'Schuelerheft' },
   fr: { booklet: 'Guide-enseignant', heft: 'Cahier-eleve' },
 }
+/** Dateiname: „…_7e_Lehrerhandbuch_DE.pdf“, in der Ausgabe annexe (nur Deutsch, ohne Sprachkürzel) „…_Annexe_7e_Leitungsheft.pdf“ */
+const dateiName = (klasse: string, art: 'booklet' | 'heft', sprache: Sprache) =>
+  wahl.annexe ? `Skills-fir-d-Liewen_Annexe_${klasse}_${art === 'booklet' ? 'Leitungsheft' : NAME.de.heft}.pdf` : `Skills-fir-d-Liewen_${klasse}_${NAME[sprache][art]}_${sprache.toUpperCase()}.pdf`
 
 // --- Daten, auf Wunsch mit Entwürfen ------------------------------------------------------------
+if (wahl.annexe) {
+  console.log(`Ausgabe annexe: Daten aus ${wahl.ordner} (${PLAENE.length} Plan/Pläne, ${EINHEITEN.length} Einheit(en))`)
+  // Handbuchtexte, die es nicht gibt: Die Seiten entfallen
+  const teile = ['vorwort', 'start', 'ueberblick', 'kompetenzen', 'grundlagen', 'doppelstunde', 'sicherheit', 'methoden', 'eltern', 'brief', 'material', 'messen', 'plaene', 'jahresweg', 'glossar', 'literatur', 'heft', 'rueckseite'] as const
+  const unterteile = (['fragebogen', 'auswertung', 'logbuch'] as const).filter((k) => HANDBUCH.de.messen && !HANDBUCH.de.messen[k]).map((k) => `messen.${k}`)
+  const fehlen = [...teile.filter((k) => !HANDBUCH.de[k]), ...unterteile]
+  if (fehlen.length) console.log(`  Ohne Handbuchtext, entfällt: ${fehlen.join(', ')}`)
+}
 let einheiten: Einheit[] = [...EINHEITEN]
 const blaetter = new Map<string, Blatt>(blattById)
 if (args.includes('--entwurf')) {
-  const ordner = join(ROOT, 'src/data/foerderfach/entwurf')
+  const ordner = wahl.entwurf
   const dateien = existsSync(ordner) ? readdirSync(ordner).filter((d) => d.endsWith('.json')) : []
   for (const d of dateien) {
     let x: EinheitenDatei
     try {
-      x = JSON.parse(readFileSync(join(ordner, d), 'utf8')) as EinheitenDatei
+      x = ladeEntwurf(join(ordner, d), wahl)
     } catch {
       console.error(`  Entwurf ${d} übersprungen: kein gültiges JSON (wird vielleicht gerade geschrieben)`)
       continue
@@ -84,14 +104,44 @@ const daten: HandbuchDaten = { plaene: PLAENE, einheiten, text: HANDBUCH, blaett
 
 for (const klasse of KLASSEN.filter((k) => !nur || k === nur)) {
   const plan = planVon(klasse)
+  if (!plan) {
+    console.log(`– ${klasse}: kein Plan (plan-${klasse}.json fehlt), nicht gesetzt`)
+    continue
+  }
   const eigene = einheiten.filter((e) => e.klasse === klasse)
   for (const sprache of sprachen) {
     const text = HANDBUCH[sprache]
+    const heft = new Map<string, number>()
     // --- Schülerheft ---------------------------------------------------------------------------
-    const heftDatei = join(ziel, `Skills-fir-d-Liewen_${klasse}_${NAME[sprache].heft}_${sprache.toUpperCase()}.pdf`)
-    const h1 = new Map<string, number>()
-    const ersterDurchlauf = (kartenLuecke: boolean) =>
-      renderToFile(
+    if (!text.heft) {
+      console.log(`– ${klasse}: kein Schülerheft (der Handbuchtext „heft“ fehlt)`)
+    } else {
+      const heftDatei = join(ziel, dateiName(klasse, 'heft', sprache))
+      const h1 = new Map<string, number>()
+      const ersterDurchlauf = (kartenLuecke: boolean) =>
+        renderToFile(
+          <SchuelerheftDokument
+            plan={plan}
+            einheiten={eigene}
+            blaetter={blaetter}
+            text={text}
+            sprache={sprache}
+            vorn={HEFT_VORN[klasse]}
+            karten={SKILLKARTEN[klasse]}
+            kartenLuecke={kartenLuecke}
+            marken={h1}
+          />,
+          heftDatei,
+        )
+      await ersterDurchlauf(false)
+      // Die Skill-Karten beginnen auf einer Vorderseite (ungerade Seite): Ihre Rückseite wird beim Ausschneiden zerschnitten
+      const kartenLuecke = h1.has('k') && h1.get('k')! % 2 === 0
+      if (kartenLuecke) {
+        h1.clear()
+        await ersterDurchlauf(true)
+      }
+      const heftNotizen = auffuellen(seitenzahl(heftDatei))
+      await renderToFile(
         <SchuelerheftDokument
           plan={plan}
           einheiten={eigene}
@@ -101,46 +151,24 @@ for (const klasse of KLASSEN.filter((k) => !nur || k === nur)) {
           vorn={HEFT_VORN[klasse]}
           karten={SKILLKARTEN[klasse]}
           kartenLuecke={kartenLuecke}
-          marken={h1}
+          marken={heft}
+          seiten={h1}
+          notizen={heftNotizen}
         />,
         heftDatei,
       )
-    await ersterDurchlauf(false)
-    // Die Skill-Karten beginnen auf einer Vorderseite (ungerade Seite): Ihre Rückseite wird beim Ausschneiden zerschnitten
-    const kartenLuecke = h1.has('k') && h1.get('k')! % 2 === 0
-    if (kartenLuecke) {
-      h1.clear()
-      await ersterDurchlauf(true)
+      vergleiche(heftDatei, h1, heft)
+      const nh = seitenzahl(heftDatei)
+      if (nh % 4) {
+        console.error(`✗ ${heftDatei}: ${nh} Seiten – kein Vielfaches von 4`)
+        process.exitCode = 1
+      }
+      console.log('✓', heftDatei, `(${nh} Seiten, ${heftNotizen} Notizseiten, ${[...heft.keys()].filter((k) => !/^(w|k|m\d?|k-.+)$/.test(k)).length} Blätter)`)
+      bilder(heftDatei)
     }
-    const heftNotizen = auffuellen(seitenzahl(heftDatei))
-    const heft = new Map<string, number>()
-    await renderToFile(
-      <SchuelerheftDokument
-        plan={plan}
-        einheiten={eigene}
-        blaetter={blaetter}
-        text={text}
-        sprache={sprache}
-        vorn={HEFT_VORN[klasse]}
-        karten={SKILLKARTEN[klasse]}
-        kartenLuecke={kartenLuecke}
-        marken={heft}
-        seiten={h1}
-        notizen={heftNotizen}
-      />,
-      heftDatei,
-    )
-    vergleiche(heftDatei, h1, heft)
-    const nh = seitenzahl(heftDatei)
-    if (nh % 4) {
-      console.error(`✗ ${heftDatei}: ${nh} Seiten – kein Vielfaches von 4`)
-      process.exitCode = 1
-    }
-    console.log('✓', heftDatei, `(${nh} Seiten, ${heftNotizen} Notizseiten, ${[...heft.keys()].filter((k) => !/^(w|k|m\d?|k-.+)$/.test(k)).length} Blätter)`)
-    bilder(heftDatei)
 
     // --- Lehrerhandbuch ------------------------------------------------------------------------
-    const datei = join(ziel, `Skills-fir-d-Liewen_${klasse}_${NAME[sprache].booklet}_${sprache.toUpperCase()}.pdf`)
+    const datei = join(ziel, dateiName(klasse, 'booklet', sprache))
     const m1 = new Map<string, number>()
     await renderToFile(<BookletDokument daten={daten} klasse={klasse} sprache={sprache} marken={m1} heft={heft} stand={stand(sprache)} />, datei)
     // Passt die Übersicht einer Einheit nicht auf eine Seite, folgen ihre Schritte direkt (sonst bliebe eine Seite fast leer)

@@ -234,7 +234,10 @@ export function Deckblatt({ plan, sprache, art, felder }: { plan: Jahresplan; sp
         <Blume p={p} />
         <View style={{ position: 'absolute', left: 48, top: 54, width: 272 }}>
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.5, letterSpacing: 1.6, color: p.mittel }}>{`${FACH.voie[sprache].toUpperCase()} · ${plan.klasse}`}</Text>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 46, lineHeight: 1.04, color: '#FFFFFF', marginTop: 12, letterSpacing: -1 }}>{FACH.name}</Text>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 46, lineHeight: 1.04, color: '#FFFFFF', marginTop: 12, letterSpacing: -1 }}>
+            {FACH.titel}
+            {FACH.zusatz ? <Text style={{ color: WARM }}>{`\n${FACH.zusatz}`}</Text> : null}
+          </Text>
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 700, fontSize: 17, lineHeight: 1.2, color: '#FFFFFF', marginTop: 10 }}>{FACH.untertitel[sprache]}</Text>
           <View style={{ width: 40, height: 2, backgroundColor: WARM, marginTop: 18, marginBottom: 14 }} />
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 15, color: '#FFFFFF' }}>{`${plan.klasse} · ${ty(plan.titel[sprache], sprache)}`}</Text>
@@ -327,10 +330,14 @@ export function Rueckseite({ plan, plaene, sprache, text, stand }: { plan: Jahre
         <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 30, lineHeight: 1.1, color: NEUTRAL.text, marginTop: 8, letterSpacing: -0.5 }}>{FACH.name}</Text>
         <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 700, fontSize: 13, color: p.tief, marginTop: 4 }}>{FACH.untertitel[sprache]}</Text>
         <View style={{ width: 40, height: 2, backgroundColor: WARM, marginTop: 18, marginBottom: 14 }} />
-        <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 15, color: NEUTRAL.text }}>{ty(r.titel, sprache)}</Text>
-        <Absatz groesse={10.4} style={{ marginTop: 5, lineHeight: 1.55 }}>
-          {ty(r.text, sprache)}
-        </Absatz>
+        {r ? (
+          <>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 15, color: NEUTRAL.text }}>{ty(r.titel, sprache)}</Text>
+            <Absatz groesse={10.4} style={{ marginTop: 5, lineHeight: 1.55 }}>
+              {ty(r.text, sprache)}
+            </Absatz>
+          </>
+        ) : null}
         <View style={{ flexDirection: 'row', marginTop: 22 }}>
           {plaene.map((pl, i) => {
             const aktiv = pl.klasse === plan.klasse
@@ -341,7 +348,7 @@ export function Rueckseite({ plan, plaene, sprache, text, stand }: { plan: Jahre
                   <View style={{ width: 32, height: 32, borderRadius: 8, backgroundColor: f.tief, alignItems: 'center', justifyContent: 'center' }}>
                     <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 13, color: '#FFFFFF' }}>{pl.klasse}</Text>
                   </View>
-                  {aktiv ? (
+                  {aktiv && r ? (
                     <View style={{ marginLeft: 8, backgroundColor: f.tief, borderRadius: 4, paddingHorizontal: 5, paddingVertical: 1.5 }}>
                       <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 6.6, letterSpacing: 0.6, color: '#FFFFFF' }}>{versal(r.dieses)}</Text>
                     </View>
@@ -362,16 +369,20 @@ export function Rueckseite({ plan, plaene, sprache, text, stand }: { plan: Jahre
             </View>
           ))}
         </View>
-        <Kleinlabel style={{ marginTop: 26 }}>{text.ueberblick.titel}</Kleinlabel>
-        <View style={{ flexDirection: 'row', marginTop: 10 }}>
-          {text.ueberblick.fakten.map((f, i) => (
-            <View key={i} style={{ flex: 1, alignItems: 'center', paddingHorizontal: 4, borderLeftWidth: i ? 0.6 : 0, borderLeftColor: NEUTRAL.haarlinie }}>
-              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 20, lineHeight: 1.15, color: p.tief }}>{f.zahl}</Text>
-              {/* nur der Kern: „Jahre: 7e, 6e und 5e“ → „Jahre“ */}
-              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.6, lineHeight: 1.3, color: NEUTRAL.leise, textAlign: 'center', marginTop: 1 }}>{ty(f.text.split(/\s*(?::|–|,)\s*/)[0], sprache)}</Text>
+        {text.ueberblick ? (
+          <>
+            <Kleinlabel style={{ marginTop: 26 }}>{text.ueberblick.titel}</Kleinlabel>
+            <View style={{ flexDirection: 'row', marginTop: 10 }}>
+              {text.ueberblick.fakten.map((f, i) => (
+                <View key={i} style={{ flex: 1, alignItems: 'center', paddingHorizontal: 4, borderLeftWidth: i ? 0.6 : 0, borderLeftColor: NEUTRAL.haarlinie }}>
+                  <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 20, lineHeight: 1.15, color: p.tief }}>{f.zahl}</Text>
+                  {/* nur der Kern: „Jahre: 7e, 6e und 5e“ → „Jahre“ */}
+                  <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.6, lineHeight: 1.3, color: NEUTRAL.leise, textAlign: 'center', marginTop: 1 }}>{ty(f.text.split(/\s*(?::|–|,)\s*/)[0], sprache)}</Text>
+                </View>
+              ))}
             </View>
-          ))}
-        </View>
+          </>
+        ) : null}
       </View>
       <View style={{ position: 'absolute', left: 48, right: 48, bottom: 50, flexDirection: 'row', alignItems: 'center', borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 10 }}>
         <Image src={CDSE_LOGO} style={{ width: 30 * CDSE_LOGO_SEITEN, height: 30, marginRight: 12 }} />

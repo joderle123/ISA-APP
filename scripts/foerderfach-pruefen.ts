@@ -1,9 +1,12 @@
 // Prüft das Förderfach (src/data/foerderfach): Jahrespläne, ausgearbeitete Einheiten,
 // Handbuchtexte und Schülerblätter – Aufbau, Nummern, Trimester, beide Sprachen gleich
 // aufgebaut, lückenlose Minuten, vorhandene Blätter, geprüfte Quellen und Stil.
-//   npx tsx --tsconfig tsconfig.scripts.json scripts/foerderfach-pruefen.ts [entwurf.json …] [--streng]
+//   npx tsx --tsconfig tsconfig.scripts.json scripts/foerderfach-pruefen.ts [entwurf.json …] [--streng] [--ausgabe=annexe]
 // Ohne Dateien: alles, dazu alle Entwürfe in src/data/foerderfach/entwurf. Mit Dateien: nur diese
 // Entwürfe (je Einheit eine Datei { einheiten: [...], blaetter: [...] }, siehe EINHEITEN-STIL.md).
+// --ausgabe=annexe: Daten und Entwürfe der Annexe (src/data/foerderfach/annexe, Ids a7-e01 …), nur Deutsch –
+// ohne DE/FR-Vergleiche und ohne französische Stilregeln, ohne die Begriffe des Förderfachs für Klassen
+// („Leitung“, Imbiss) und mit 30 statt 35 Doppelstunden (siehe scripts/foerderfach-ausgabe.ts).
 // Die Blätter laufen zusätzlich durch scripts/blatt-pruefen.ts (Regeln der Toolbox), ohne die
 // Regeln, die im Förderfach nicht gelten (ELDiB-Ziele, Lehrerseite – sie wird nicht gedruckt).
 // Fehler → Exit-Code 1. Hinweise (Stil) werden nur gezeigt; mit --streng zählen sie als Fehler.
@@ -11,15 +14,18 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync
 import { basename, dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { spawnSync } from 'node:child_process'
-import { EINHEITEN, HANDBUCH, PLAENE, BLAETTER, SKILLKARTEN, VORLAGEN } from '../src/foerderfach/daten'
+import { idPraefix, klasseVonId, ladeDaten, ladeEntwurf as ladeEntwurfDatei, waehleAusgabeAus } from './foerderfach-ausgabe'
 import { KOMPETENZEN, PHASEN } from '../src/foerderfach/fach'
 import { QUELLEN_TEXTE } from '../src/blatt/quellen'
 import type { Blatt } from '../src/blatt/typen'
-import type { Einheit, EinheitenDatei, EinheitText, Phase, Sprache } from '../src/foerderfach/typen'
+import type { Einheit, EinheitText, Phase, Sprache } from '../src/foerderfach/typen'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
-const ENTWURF = join(ROOT, 'src/data/foerderfach/entwurf')
 const args = process.argv.slice(2)
+const wahl = waehleAusgabeAus(args)
+const annexe = wahl.annexe
+const { EINHEITEN, HANDBUCH, PLAENE, BLAETTER, SKILLKARTEN, VORLAGEN } = ladeDaten(wahl)
+const ENTWURF = wahl.entwurf
 const streng = args.includes('--streng')
 const dateien = args.filter((a) => a.endsWith('.json'))
 const alles = dateien.length === 0
@@ -32,19 +38,22 @@ function melde(art: 'F' | 'H', wo: string, text: string) {
   console.log(`${art === 'F' ? '✗' : '·'} ${wo}: ${text}`)
 }
 
-const SPRACHEN: Sprache[] = ['de', 'fr']
+/** Die Ausgabe annexe gibt es nur auf Deutsch: kein Französisch prüfen */
+const SPRACHEN: Sprache[] = annexe ? ['de'] : ['de', 'fr']
 const KOMP = new Set(KOMPETENZEN.map((k) => k.id))
 
 /** Blätter, die eine Einheit anlegt und spätere Einheiten weiterverwenden (EINHEITEN-STIL.md, Abschnitt 7). */
-const GEMEINSAM: Record<string, string> = {
-  'ff7-glas-der-beduerfnisse': 'ff7-e06',
-  'ff7-baum-der-staerke': 'ff7-e08',
-  'ff7-skills-tester': 'ff7-e14',
-  'ff7-skills-koffer': 'ff7-e17',
-  'ff5-skills-radar': 'ff5-e02',
-  'ff5-sicherheitsplan': 'ff5-e20',
-  'ff5-mein-netz': 'ff5-e22',
-}
+const GEMEINSAM: Record<string, string> = annexe
+  ? {}
+  : {
+      'ff7-glas-der-beduerfnisse': 'ff7-e06',
+      'ff7-baum-der-staerke': 'ff7-e08',
+      'ff7-skills-tester': 'ff7-e14',
+      'ff7-skills-koffer': 'ff7-e17',
+      'ff5-skills-radar': 'ff5-e02',
+      'ff5-sicherheitsplan': 'ff5-e20',
+      'ff5-mein-netz': 'ff5-e22',
+    }
 
 // --- Entwürfe laden --------------------------------------------------------------------------------
 interface Entwurf {
@@ -54,7 +63,7 @@ interface Entwurf {
 }
 function ladeEntwurf(datei: string): Entwurf | null {
   try {
-    const d = JSON.parse(readFileSync(datei, 'utf8')) as EinheitenDatei
+    const d = ladeEntwurfDatei(datei, wahl)
     if (!Array.isArray(d.einheiten)) throw new Error('„einheiten“ fehlt')
     return { datei, einheiten: d.einheiten, blaetter: d.blaetter ?? [] }
   } catch (e) {
@@ -91,8 +100,13 @@ const FLOSKELN: Record<Sprache, [RegExp, string][]> = {
     [/Es ist (sehr )?wichtig,? (zu|dass)/i, '„Es ist wichtig …“'],
     [/Gefühle sind wichtig|Kommunikation ist der Schlüssel/i, 'Allgemeinplatz'],
     [/«|»/, 'französische Anführungszeichen im deutschen Text'],
-    [/\bLeitung\b/, '„Leitung“ – im Fach heißt es „Lehrkraft“'],
-    [/\bImbiss\b/, 'Imbiss – im Fach gibt es keinen'],
+    // Begriffe des Förderfachs für Klassen – in der Annexe heißt die Person „Leitung“, und eine Pause mit Imbiss gibt es dort
+    ...(annexe
+      ? []
+      : ([
+          [/\bLeitung\b/, '„Leitung“ – im Fach heißt es „Lehrkraft“'],
+          [/\bImbiss\b/, 'Imbiss – im Fach gibt es keinen'],
+        ] as [RegExp, string][])),
     [/\bKlassenarbeit/, '„Klassenarbeit“ – in Luxemburg „Test“'],
   ],
   fr: [
@@ -184,7 +198,7 @@ if (alles) {
       const ew = `${wo} ${e.id}`
       if (planIds.has(e.id)) melde('F', ew, 'Id doppelt')
       planIds.add(e.id)
-      if (!new RegExp(`^ff${plan.klasse[0]}-e\\d{2}$`).test(e.id)) melde('F', ew, `Id im Format ff${plan.klasse[0]}-e01`)
+      if (!new RegExp(`^${idPraefix(wahl, plan.klasse)}-e\\d{2}$`).test(e.id)) melde('F', ew, `Id im Format ${idPraefix(wahl, plan.klasse)}-e01`)
       if (e.nr !== naechste) melde('F', ew, `Nr. ${e.nr}, erwartet ${naechste}`)
       naechste += e.termine ?? 1
       const ki = plan.kapitel.findIndex((k) => k.id === e.kapitel)
@@ -204,7 +218,8 @@ if (alles) {
         stil(`${ew} ${s}`, e.hinweis?.[s], s)
       }
     }
-    if (naechste - 1 !== 35) melde('H', wo, `${naechste - 1} Doppelstunden statt 35`)
+    const soll = annexe ? 30 : 35
+    if (naechste - 1 !== soll) melde('H', wo, `${naechste - 1} Doppelstunden statt ${soll}`)
     const jeTrimester = [1, 2, 3].map((tr) =>
       plan.einheiten.filter((e) => plan.kapitel.find((k) => k.id === e.kapitel)?.trimester === tr).reduce((n, e) => n + (e.termine ?? 1), 0),
     )
@@ -216,13 +231,12 @@ if (alles) {
 
 // --- Ausgearbeitete Einheiten ------------------------------------------------------------------
 const PHASEN_LISTE = Object.keys(PHASEN) as Phase[]
-const KLASSE_VON: Record<string, string> = { ff7: '7e', ff6: '6e', ff5: '5e' }
 
 function pruefeEinheit(e: Einheit, wo: string) {
   const plan = PLAENE.find((p) => p.klasse === e.klasse)
   const pe = plan?.einheiten.find((u) => u.id === e.id)
   if (!pe) melde('F', wo, 'steht in keinem Jahresplan')
-  if (KLASSE_VON[e.id.slice(0, 3)] !== e.klasse) melde('F', wo, `Klasse „${e.klasse}“ passt nicht zur Id`)
+  if (klasseVonId(wahl, e.id) !== e.klasse) melde('F', wo, `Klasse „${e.klasse}“ passt nicht zur Id`)
   if (e.dauer !== 100) melde('H', wo, `Dauer ${e.dauer} statt 100 Min.`)
   const eigene = [...(e.blaetter ?? []), ...(e.vorlagen ?? [])]
   if (!Array.isArray(e.blaetter)) melde('F', wo, '„blaetter“ fehlt (leere Liste, wenn keine)')
@@ -327,7 +341,8 @@ function pruefeEinheit(e: Einheit, wo: string) {
     }
     for (const y of [x.titel, x.kurz, ...(x.ziele ?? []), ...(x.material ?? []), ...(x.vorbereitung ?? []), x.bruecke, x.mission, x.hintergrund, x.achtung, x.differenzierung?.leichter, x.differenzierung?.schwerer, x.kurzfassung]) stil(sw, y, s)
   }
-  // Beide Sprachen gleich gebaut
+  // Beide Sprachen gleich gebaut (die Ausgabe annexe hat nur Deutsch)
+  if (annexe) return
   const [a, b] = [e.de, e.fr]
   if (!a || !b) return
   if (a.ablauf.length !== b.ablauf.length) melde('F', wo, 'Ablauf DE/FR ungleich lang')
@@ -366,18 +381,19 @@ for (const x of pruefEntwuerfe) {
   for (const b of x.blaetter) {
     const e = x.einheiten[0]
     if (!e) continue
-    if (!/^ff[765]-[a-z0-9]+(-[a-z0-9]+)*$/.test(b.id) || b.id.slice(0, 3) !== e.id.slice(0, 3)) melde('F', name, `Blatt-Id „${b.id}“: ${e.id.slice(0, 3)}-name`)
+    const pl = annexe ? 2 : 3 // Länge des Id-Anfangs: a7 / ff7
+    if (!new RegExp(`^${annexe ? 'a' : 'ff'}[765]-[a-z0-9]+(-[a-z0-9]+)*$`).test(b.id) || b.id.slice(0, pl) !== e.id.slice(0, pl)) melde('F', name, `Blatt-Id „${b.id}“: ${e.id.slice(0, pl)}-name`)
     if (!(b.kurs ?? []).includes(e.id)) melde('F', name, `Blatt „${b.id}“: „kurs“ muss ${e.id} enthalten`)
     if (![...e.blaetter, ...(e.vorlagen ?? [])].includes(b.id)) melde('F', name, `Blatt „${b.id}“ wird in der Einheit nicht verwendet`)
     if (GEMEINSAM[b.id] && GEMEINSAM[b.id] !== e.id) melde('F', name, `Blatt „${b.id}“ wird in ${GEMEINSAM[b.id]} angelegt, nicht hier`)
     if (b.bereich !== 'skills' || !b.stufen?.includes('ES') || b.layout !== 'jugend') melde('F', name, `Blatt „${b.id}“: bereich „skills“, stufen ["ES"], layout „jugend“`)
-    if (!b.schlagworte?.includes('Förderfach')) melde('H', name, `Blatt „${b.id}“: Schlagwort „Förderfach“ fehlt`)
+    if (!annexe && !b.schlagworte?.includes('Förderfach')) melde('H', name, `Blatt „${b.id}“: Schlagwort „Förderfach“ fehlt`)
   }
 }
 
-// --- Wortspeicher: gleiche Wörter gleich übersetzen ------------------------------------------------
+// --- Wortspeicher: gleiche Wörter gleich übersetzen (nur Deutsch: nichts zu übersetzen) -------------
 const uebersetzung = new Map<string, Map<string, string>>()
-for (const e of gepruefteEinheiten)
+for (const e of annexe ? [] : gepruefteEinheiten)
   for (const w of e.woerter ?? []) {
     if (!w.de || !w.fr) continue
     const m = uebersetzung.get(w.de) ?? new Map<string, string>()
@@ -396,7 +412,7 @@ if (alles) {
       const kw = `Skill-Karte ${k.id}`
       if (kartenIds.has(k.id)) melde('F', kw, 'Id doppelt')
       kartenIds.add(k.id)
-      if (!k.id.startsWith(`ff${plan.klasse[0]}-k-`)) melde('F', kw, `Id im Format ff${plan.klasse[0]}-k-name`)
+      if (!k.id.startsWith(`${idPraefix(wahl, plan.klasse)}-k-`)) melde('F', kw, `Id im Format ${idPraefix(wahl, plan.klasse)}-k-name`)
       if (!einheitIds.has(k.einheit)) melde('F', kw, `Einheit ${k.einheit} steht nicht im Plan der ${plan.klasse}`)
       if (!k.bild?.startsWith('icon:') || !icons.has(k.bild.slice(5))) melde('F', kw, `Piktogramm „${k.bild}“ gibt es nicht (src/blatt/bilder/icons.json)`)
       for (const s of SPRACHEN) {
@@ -426,8 +442,9 @@ function texteIn(x: unknown, out: string[] = []): string[] {
 }
 if (alles) {
   const aufbau = (x: unknown): unknown => (Array.isArray(x) ? x.map(aufbau) : x && typeof x === 'object' ? Object.fromEntries(Object.entries(x).map(([k, v]) => [k, aufbau(v)])) : typeof x)
-  if (JSON.stringify(aufbau(HANDBUCH.de)) !== JSON.stringify(aufbau(HANDBUCH.fr))) melde('F', 'handbuch', 'DE und FR sind nicht gleich aufgebaut')
-  for (const s of SPRACHEN) if (!HANDBUCH[s].vorwort.text.includes('{klasse}')) melde('F', `handbuch ${s}`, 'Vorwort ohne Platzhalter {klasse}')
+  if (annexe && !HANDBUCH.de.vorwort) melde('H', 'handbuch', 'keine Handbuchtexte (handbuch.json fehlt oder ist leer)')
+  if (!annexe && JSON.stringify(aufbau(HANDBUCH.de)) !== JSON.stringify(aufbau(HANDBUCH.fr))) melde('F', 'handbuch', 'DE und FR sind nicht gleich aufgebaut')
+  for (const s of SPRACHEN) if (HANDBUCH[s].vorwort && !HANDBUCH[s].vorwort.text.includes('{klasse}')) melde('F', `handbuch ${s}`, 'Vorwort ohne Platzhalter {klasse}')
   for (const id of VORLAGEN) if (!blattById.has(id)) melde('F', 'daten.ts', `Kopiervorlage „${id}“ gibt es nicht`)
   for (const s of SPRACHEN) for (const x of texteIn(HANDBUCH[s])) stil(`handbuch ${s}`, x, s)
 }
@@ -436,8 +453,10 @@ if (alles) {
 const zuPruefen: Blatt[] = alles ? blattListe : pruefEntwuerfe.flatMap((x) => x.blaetter)
 const vorlagenIds = new Set(gepruefteEinheiten.flatMap((e) => e.vorlagen ?? []))
 for (const b of zuPruefen) {
-  if (!b.fr) melde('F', `Blatt ${b.id}`, 'Französisch fehlt')
-  else if (JSON.stringify(b.de.bausteine.map((x) => x.art)) !== JSON.stringify(b.fr.bausteine.map((x) => x.art))) melde('F', `Blatt ${b.id}`, 'Bausteine DE/FR verschieden')
+  if (!annexe) {
+    if (!b.fr) melde('F', `Blatt ${b.id}`, 'Französisch fehlt')
+    else if (JSON.stringify(b.de.bausteine.map((x) => x.art)) !== JSON.stringify(b.fr.bausteine.map((x) => x.art))) melde('F', `Blatt ${b.id}`, 'Bausteine DE/FR verschieden')
+  }
   for (const s of SPRACHEN) {
     const inhalt = s === 'fr' ? b.fr : b.de
     if (!inhalt) continue
@@ -455,7 +474,8 @@ if (zuPruefen.length) {
   const tmp = join(ROOT, 'tmp/foerderfach-pruefen', String(process.pid))
   mkdirSync(tmp, { recursive: true })
   const datei = join(tmp, 'foerderfach-blaetter.json')
-  writeFileSync(datei, JSON.stringify(zuPruefen))
+  // nur Deutsch: Das fr = de, das beim Laden gesetzt wurde, bleibt draußen (JSON lässt undefined weg)
+  writeFileSync(datei, JSON.stringify(annexe ? zuPruefen.map((b) => ({ ...b, fr: undefined })) : zuPruefen))
   const r = spawnSync('npx', ['tsx', '--tsconfig', 'tsconfig.scripts.json', 'scripts/blatt-pruefen.ts', datei], { cwd: ROOT, encoding: 'utf8' })
   rmSync(tmp, { recursive: true, force: true })
   const ohneAufgabe = (zeile: string) => / (ff-[a-z0-9-]+) (DE|FR): keine einzige Aufgabe/.exec(zeile) || [...vorlagenIds].some((id) => zeile.includes(` ${id} `) && zeile.includes('keine einzige Aufgabe'))

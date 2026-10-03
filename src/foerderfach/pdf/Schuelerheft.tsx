@@ -321,16 +321,18 @@ function HilfeRueckseite({ plan, text, sprache }: { plan: Jahresplan; text: Hand
         <Absatz groesse={12} style={{ marginTop: 10, lineHeight: 1.5 }}>
           {ty(text.heft.hilfeText, sprache)}
         </Absatz>
-        <View style={{ marginTop: 18, borderRadius: 12, backgroundColor: p.zart, paddingHorizontal: 18, paddingVertical: 10 }}>
-          {text.sicherheit.hilfe.nummern.map((n, i) => (
-            <View key={i} style={{ flexDirection: 'row', alignItems: 'center', paddingVertical: 9, borderTopWidth: i ? 0.8 : 0, borderTopColor: '#FFFFFF' }}>
-              <Absatz groesse={11.5} style={{ flex: 1, paddingRight: 10, lineHeight: 1.3 }}>
-                {ty(n.name, sprache)}
-              </Absatz>
-              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 16, color: p.tief }}>{n.nummer}</Text>
-            </View>
-          ))}
-        </View>
+        {text.sicherheit ? (
+          <View style={{ marginTop: 18, borderRadius: 12, backgroundColor: p.zart, paddingHorizontal: 18, paddingVertical: 10 }}>
+            {text.sicherheit.hilfe.nummern.map((n, i) => (
+              <View key={i} style={{ flexDirection: 'row', alignItems: 'center', paddingVertical: 9, borderTopWidth: i ? 0.8 : 0, borderTopColor: '#FFFFFF' }}>
+                <Absatz groesse={11.5} style={{ flex: 1, paddingRight: 10, lineHeight: 1.3 }}>
+                  {ty(n.name, sprache)}
+                </Absatz>
+                <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 16, color: p.tief }}>{n.nummer}</Text>
+              </View>
+            ))}
+          </View>
+        ) : null}
       </View>
       <View style={{ position: 'absolute', left: 56, right: 56, bottom: 50, flexDirection: 'row', alignItems: 'center', borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 10 }}>
         <Image src={CDSE_LOGO} style={{ width: 28 * CDSE_LOGO_SEITEN, height: 28, marginRight: 12 }} />

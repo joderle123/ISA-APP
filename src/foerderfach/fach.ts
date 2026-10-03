@@ -5,9 +5,16 @@
 import type { Farben } from '../blatt/katalog'
 import type { Klasse, Kompetenz, Phase, Sprache, Zweisprachig } from './typen'
 
+const ARBEITSTITEL = 'Skills fir d’Liewen'
+
 /** Arbeitstitel – an einer Stelle, damit er sich leicht ändern lässt. */
 export const FACH = {
-  name: 'Skills fir d’Liewen',
+  /** Name in Kopf, Fuß und Dokumenttitel – in der Ausgabe annexe mit Zusatz („Skills fir d’Liewen · Annexe“) */
+  name: ARBEITSTITEL,
+  /** Name ohne Zusatz: der große Titel auf Deckblatt und Rückseite */
+  titel: ARBEITSTITEL,
+  /** Zusatz der Ausgabe („Annexe“), sonst leer */
+  zusatz: '',
   untertitel: { de: 'Sozio-emotionales Lernen', fr: 'Apprentissage socio-émotionnel' } as Zweisprachig,
   voie: { de: 'Voie de préparation', fr: 'Voie de préparation' } as Zweisprachig,
 }
@@ -219,6 +226,29 @@ export const TX = {
 } satisfies Record<Sprache, Record<string, unknown>>
 
 export type FachTx = (typeof TX)['de']
+
+/**
+ * Zwei Ausgaben aus derselben Technik: „klassen“ = Förderfach für Klassen (Standard, Deutsch und Französisch),
+ * „annexe“ = Skills-Kurs der Annexe (Leitungsheft statt Lehrerhandbuch, nur Deutsch, Daten in src/data/foerderfach/annexe).
+ * Die PDF-Skripte rufen waehleAusgabe einmal auf, bevor sie setzen: Danach tragen Deckblatt, Kopf, Fuß und
+ * Dokumenttitel den Zusatz, und die Hefte lassen aus, was es nur zweisprachig gibt.
+ */
+export type Ausgabe = 'klassen' | 'annexe'
+
+/** Die gewählte Ausgabe. `einsprachig`: Elternbrief und Fragebogen nur in der Heftsprache, Wortspeicher ohne Übersetzung, kein Glossar. */
+export const AUSGABE = { art: 'klassen' as Ausgabe, einsprachig: false }
+
+const TX_KLASSEN = { lehrerhandbuch: TX.de.lehrerhandbuch, fuerLehrkraft: TX.de.fuerLehrkraft }
+const TX_ANNEXE = { lehrerhandbuch: 'Leitungsheft', fuerLehrkraft: 'Kopiervorlage für die Leitung' }
+
+export function waehleAusgabe(art: Ausgabe): void {
+  const annexe = art === 'annexe'
+  AUSGABE.art = art
+  AUSGABE.einsprachig = annexe
+  FACH.zusatz = annexe ? 'Annexe' : ''
+  FACH.name = annexe ? `${FACH.titel} · ${FACH.zusatz}` : FACH.titel
+  Object.assign(TX.de, annexe ? TX_ANNEXE : TX_KLASSEN)
+}
 
 /** „1. Trimester“ / « 1er trimestre » */
 export function trimesterName(n: 1 | 2 | 3, sprache: Sprache): string {

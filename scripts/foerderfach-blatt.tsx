@@ -1,8 +1,9 @@
 // Setzt die Schülerblätter von Förderfach-Entwürfen so, wie sie im Schülerheft stehen (Farbe der
 // Klassenstufe, ohne Lehrerseite), auf Deutsch und Französisch, und meldet die Seitenzahl.
-//   npx tsx --tsconfig tsconfig.scripts.json scripts/foerderfach-blatt.tsx <entwurf.json …> [--png] [--ordner=pfad]
+//   npx tsx --tsconfig tsconfig.scripts.json scripts/foerderfach-blatt.tsx <entwurf.json …> [--png] [--ordner=pfad] [--ausgabe=annexe]
 // Ausgabe: tmp/foerderfach-blatt/<blatt-id>_<de|fr>.pdf (mit --png zusätzlich jede Seite als Bild).
 // Mehr als zwei Seiten sind ein Fehler (Exit-Code 1).
+// --ausgabe=annexe: Blätter der Annexe (Ids a7-…), nur Deutsch, „Annexe“ in Kopf und Fuß (siehe scripts/foerderfach-ausgabe.ts).
 import { Document, renderToFile } from '@react-pdf/renderer'
 import { mkdirSync, readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
@@ -11,25 +12,26 @@ import { execFileSync } from 'node:child_process'
 import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { BlattSeiten } from '../src/blatt/pdf/BlattDokument'
 import { FACH, STUFE_FARBEN, TX } from '../src/foerderfach/fach'
-import type { EinheitenDatei, Klasse, Sprache } from '../src/foerderfach/typen'
+import { klasseVonId, ladeEntwurf, waehleAusgabeAus } from './foerderfach-ausgabe'
+import type { Sprache } from '../src/foerderfach/typen'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 registriereSchriften((d) => join(ROOT, 'src/assets/fonts/pdf', d))
 const args = process.argv.slice(2)
+const wahl = waehleAusgabeAus(args)
 const png = args.includes('--png')
 const ziel = args.find((a) => a.startsWith('--ordner='))?.slice(9) ?? join(ROOT, 'tmp/foerderfach-blatt')
 mkdirSync(ziel, { recursive: true })
-const KLASSE: Record<string, Klasse> = { ff7: '7e', ff6: '6e', ff5: '5e' }
 
 function seitenzahl(datei: string): number {
   return readFileSync(datei, 'latin1').match(/\/Type\s*\/Page(?!s)/g)?.length ?? 0
 }
 
 for (const datei of args.filter((a) => a.endsWith('.json'))) {
-  const d = JSON.parse(readFileSync(datei, 'utf8')) as EinheitenDatei
+  const d = ladeEntwurf(datei, wahl)
   for (const b of d.blaetter ?? []) {
-    const klasse = KLASSE[b.id.slice(0, 3)] ?? '7e'
-    for (const sprache of ['de', 'fr'] as Sprache[]) {
+    const klasse = klasseVonId(wahl, b.id) ?? '7e'
+    for (const sprache of (wahl.annexe ? ['de'] : ['de', 'fr']) as Sprache[]) {
       const t = TX[sprache]
       const pdf = join(ziel, `${b.id}_${sprache}.pdf`)
       await renderToFile(
