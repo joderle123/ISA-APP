@@ -1,0 +1,270 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e20",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-mein-stopp"],
+      "vorlagen": ["a7-stopp-szenen"],
+      "woerter": [
+        { "de": "eine Grenze setzen", "fr": "eine Grenze setzen" },
+        { "de": "Stopp sagen", "fr": "Stopp sagen" },
+        { "de": "die Haltung", "fr": "die Haltung" },
+        { "de": "nachhaken", "fr": "nachhaken" },
+        { "de": "Hilfe holen", "fr": "Hilfe holen" }
+      ],
+      "de": {
+        "titel": "Grenzen setzen: Stopp!",
+        "kurz": "Drei Arten, Stopp zu sagen, im Video vergleichen und im Rollenspiel mit der Leitung üben, Grenzen mit Wort und Körper zu setzen – auch wenn jemand nachhakt.",
+        "ziele": [
+          "beschreiben, was ein Stopp klar macht: Haltung, Blick, Hand, Stimme und kurze Worte ohne Lächeln",
+          "setzen in Rollenspielen Grenzen mit Wort und Körper und bleiben dabei, wenn jemand nachhakt",
+          "notieren einen eigenen Stopp-Satz und eine Person, zu der sie gehen, wenn ein Stopp nicht reicht"
+        ],
+        "material": [
+          "Gefühlsrad, Anspannungsskala 0–100",
+          "Handy oder Tablet der Annexe, Ständer",
+          "Szenen-Karten (Vorlage), Heft-Blatt je Person",
+          "Tafel: Körper, Stimme, Worte",
+          "Seil oder Kreide für die Gärten",
+          "Skills-Pass, Stempel"
+        ],
+        "vorbereitung": [
+          "Einverständnis für Videos von allen einholen; Aufnahmen bleiben auf dem Gerät der Annexe und werden am Ende gelöscht.",
+          "Szenen-Karten kopieren und schneiden; die drei Stopps einmal laut üben – Lächeln gegen ernstes Gesicht.",
+          "Platz für die Gärten schaffen: je ein Kreis von etwa 1,5 Metern, bei gutem Wetter draußen mit Kreide.",
+          "Ansprechperson im Haus klären (Raum, Zeiten) und an die Tafel schreiben."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in im Stehen: Gefühl, Zahl und feste Füße" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Mission und Ziel: eine Grenze, die ankommt" },
+          { "min": "15–45", "phase": "uebung", "titel": "Drei Stopps im Video, Stopp-Check, Stopp üben" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Bewegung: Stopp und Los" },
+          { "min": "50–85", "phase": "uebung", "titel": "Garten-Übung, Szenen-Karten und Stopp-Plan" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Fester Stand" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in im Stehen: Gefühl, Zahl und feste Füße",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Alle stehen hinter ihrem Stuhl, zeigen auf drei ihre Anspannung (0 bis 100 mit den Fingern) und nennen Wort und Zahl; die Leitung macht mit und beginnt. Zum Schluss bleiben alle zehn Sekunden stehen, spüren die Füße und zeigen mit dem Daumen, ob sie heute eher wackelig oder eher fest stehen.",
+            "sagen": [
+              "Gefühl und Zahl – heute im Stehen.",
+              "Spürt eure Füße: Steht ihr heute eher wackelig oder eher fest?"
+            ],
+            "wennEsKippt": "Wird das Stehen zum Wackel-Wettbewerb, kurz mitlachen und dann ruhig zählen: drei Atemzüge still stehen, dann setzen. Zeigt jemand eine Zahl über 70, später leise fragen, ob er oder sie etwas braucht – das Thema Grenzen kann nahegehen."
+          },
+          {
+            "titel": "Mission und Ziel: eine Grenze, die ankommt",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – und was hat dein Körper gemeldet: zu nah, zu viel oder passt? Daumen hoch, Mitte oder runter; wer mag, nennt nur Ort und Signal – „Bus, zu nah“ –, keine Geschichte. Dann das Ziel nennen: Heute eine Grenze so zeigen, dass sie ankommt – und wer mag, sieht sich dabei im Video.",
+            "sagen": [
+              "Kam euer Moment – und was hat euer Körper gemeldet?",
+              "Letztes Mal habt ihr Grenzen erkannt, heute übt ihr, sie zu zeigen – so, dass sie ankommen."
+            ],
+            "wennEsKippt": "Klingt eine Erzählung nach Übergriff, Gewalt oder Bedrohung, freundlich unterbrechen: „Danke, dass du das sagst – darüber möchte ich nachher in Ruhe mit dir reden.“ Dann weitermachen, das Gespräch direkt nach der Stunde führen und nach dem Schutzkonzept handeln."
+          },
+          {
+            "titel": "Drei Stopps im Video, Stopp-Check, Stopp üben",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Zuerst das Bild (3 Min.): Ein Stopp wirkt, wenn Worte, Stimme und Körper dasselbe sagen – ein Lächeln beim Stopp gewinnt gegen die Worte. Dann nehmen alle drei Arten, Stopp zu sagen, auf Video auf und vergleichen sie, bevor sie ein klares Stopp üben.",
+            "sagen": [
+              "Zeigt mit den Fingern: Wie ernst nehmt ihr dieses Stopp, von 0 bis 10?",
+              "Probiert es so leise, wie es für euch geht – und dann eine Stufe lauter. Ihr bestimmt das Tempo."
+            ],
+            "tabelle": {
+              "spalten": ["Körper", "Stimme", "Worte"],
+              "zeilen": [
+                ["gerade stehen, beide Füße am Boden", "laut und ruhig", "„Stopp.“ oder „Nein.“"],
+                ["Blick zur Person (die Stirn reicht)", "fest statt piepsig", "kurz sagen, was ich nicht will"],
+                ["Hand heben, einen Schritt zurück", "nicht fragend, nicht lachend", "keine Entschuldigung, kein „vielleicht“"]
+              ]
+            },
+            "punkte": [
+              "Übung (9 Min.): Drei Stopps im Video – Jede Person, die einverstanden ist, nimmt sich selbst dreimal auf, zu einer gedachten Person zwei Meter entfernt: leise mit Lächeln, laut mit Grinsen, klar mit Hand, Blick und fester Stimme; wer nicht gefilmt werden mag, übt vor dem Spiegel, und die Leitung zeigt die drei Stopps vor.",
+              "Übung (7 Min.): Video-Kino – Alle sehen die Videos der Gruppe an und zeigen nach jedem mit den Fingern, wie ernst sie dieses Stopp nehmen würden; danach der Stopp-Check an der Tafel und Aufgabe 1 auf dem Blatt.",
+              "Übung (11 Min.): Stopp üben – Die Leitung geht langsam auf jede Person zu, die Person stoppt: erst nur mit der Hand, dann mit Hand und Wort, dann mit allem; wer sich schwertut, beginnt leise und wird von Runde zu Runde lauter; danach Aufgabe 2 (Stopp-Sätze ankreuzen)."
+            ],
+            "tipp": "Das Lachen beim Stoppsagen ist meist Verlegenheit, kein fehlender Ernst: Viele lächeln, weil sie niemanden verletzen wollen – und genau deshalb wird ihr Stopp überhört. Das Video zeigt es besser als jede Erklärung.",
+            "wennEsKippt": "Wird das Üben zum Brüllwettbewerb, die Regel wiederholen: laut, aber ruhig – so, dass die Person es hört, nicht der ganze Flur. Mag jemand nicht vor der Kamera üben oder sein Video nicht zeigen, wird nur geübt oder das Video sofort gelöscht.",
+            "blatt": "a7-mein-stopp"
+          },
+          {
+            "titel": "Bewegung: Stopp und Los",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle gehen kreuz und quer durch den Raum, ohne sich zu berühren: Auf „Stopp“ frieren alle ein, auf „Los“ geht es weiter. Dann wird getauscht – „Stopp“ heißt gehen, „Los“ heißt stehen bleiben –, zum Schluss kommen „Hand“ (alle zeigen die Stopp-Hand) und „Boden“ (alle berühren kurz den Boden) dazu.",
+            "sagen": [
+              "Stopp – Los – und jetzt umgekehrt: Stopp heißt gehen."
+            ],
+            "tipp": "Das Spiel macht wach, und nebenbei üben alle, auf ein Stopp sofort zu reagieren – genau das zählt im Rollenspiel. Wer mag, ruft die Kommandos."
+          },
+          {
+            "titel": "Garten-Übung, Szenen-Karten und Stopp-Plan",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Jede Person übt selbst, die Leitung spielt in allen Szenen die andere Seite: Erst verteidigt jede Person ihren Garten, dann setzt sie in drei Szenen von den Karten eine Grenze mit Ich-Botschaft und Körper, auch wenn die Leitung einmal nachhakt. Zum Schluss schreibt jede Person ihren Stopp-Plan.",
+            "sagen": [
+              "Ich hake genau einmal nach, du bleibst dabei – ruhig und klar, dann ist Schluss.",
+              "Wer Hilfe holt, damit etwas aufhört, petzt nicht – er schützt sich oder jemand anderen."
+            ],
+            "punkte": [
+              "Übung (10 Min.): Garten-Übung – Jede Person legt mit Seil oder Kreide einen Garten um sich, so groß, wie es sich richtig anfühlt; die anderen versuchen langsam und nur mit Worten hineinzukommen („Ich will doch nur kurz …“, „Wir sind doch Freunde“), die Gartenperson setzt die Grenze klar mit Worten und Körper.",
+              "Übung (14 Min.): Szenen-Karten – Jede Person zieht drei Karten; die Leitung spielt die Person auf der Karte und hakt einmal nach, die Person setzt die Grenze, die anderen beobachten mit dem Stopp-Check; keine Berührung, nach jeder Szene die Rolle abschütteln und den eigenen Namen sagen.",
+              "Übung (4 Min.): Hilfe-Karten – Die Gruppe berät die zwei Hilfe-Karten (Bedrohung im Bus, Drohnachrichten im Chat): Was ist am sichersten, und wem sagt man sofort Bescheid? Bei Bedrohung geht Sicherheit vor – lieber das Handy hergeben und Erwachsene holen.",
+              "Übung (7 Min.): Stopp-Plan – Aufgabe 3 allein: Stopp-Satz, Körper, eine Person; dann die Hilfe im Haus nennen (Raum und Zeiten der Ansprechperson, Kanner- a Jugendtelefon 116 111); die Pläne werden nicht vorgelesen."
+            ],
+            "tipp": "Beim Garten dürfen es die Besucher schwer machen („Wir sind doch Freunde“): So wird geübt, was im Alltag am schwersten ist – ein Nein zu netten Menschen.",
+            "wennEsKippt": "Spielt die Leitung zu echt oder wird jemand körperlich, sofort „Stopp“ rufen und die Szene beenden: In diesen Rollenspielen gibt es nur Worte, Abstand und ein einziges Nachhaken. Wirkt jemand betroffen, die Rolle wechseln lassen und nach der Stunde nachfragen.",
+            "blatt": "a7-stopp-szenen"
+          },
+          {
+            "titel": "Skill: Fester Stand",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Alle stehen mit etwas Platz um den Stuhl; die Leitung leitet die drei Schritte langsam an und macht mit (höchstens 5 Min., still höchstens 3 Min.). Danach die Okay-Runde und der Abschluss (10 Min.): Skills-Pass zum Kapitelende, Mission und eigener Moment.",
+            "sagen": [
+              "Spürt eure Füße – das ist euer Platz, niemand schiebt euch weg.",
+              "Sagt euren Stopp-Satz, und wir antworten alle: Okay."
+            ],
+            "punkte": [
+              "Skill (5 Min.): Füße hüftbreit, Knie locker, Gewicht auf beide Füße; den Rücken aufrichten, die Schultern sinken lassen, dreimal langsam ausatmen; leise, aber fest sagen: Ich stehe hier. Dann im festen Stand den eigenen Stopp-Satz leise sagen.",
+              "Okay-Runde (2 Min.): Wer mag, sagt seinen Stopp-Satz laut, ohne Namen, und die Gruppe antwortet gemeinsam „Okay“ – so übt sie die andere Seite, ein Nein anzunehmen.",
+              "Skills-Pass (3 Min.): zum Kapitelende ein Satz zur Frage: Was nehme ich aus „Kommunikation und Grenzen“ mit? Dann der Stempel.",
+              "Mission und Moment (5 Min.): die Mission vorlesen; jede Person schreibt in die Spalte „Mein Moment: Wenn …“, wann sie den festen Stand braucht – vor einem Test, an der Haltestelle, bevor ich Nein sage –, dann der Ausblick auf das neue Kapitel."
+            ],
+            "wennEsKippt": "Wird gewackelt oder geschubst, alle wieder setzen und die Übung im Sitzen machen: beide Füße fest auf den Boden, Rücken aufrecht, ausatmen. Wird die Okay-Runde zum Gejohle, beenden und das Okay einmal still mit dem Daumen geben."
+          }
+        ],
+        "bruecke": "Nächstes Mal beginnt ein neues Kapitel: Es geht um Streit – ihr lernt die Konflikt-Treppe kennen und spielt einen Alltagsstreit Stufe für Stufe durch.",
+        "mission": "Mach einmal den festen Stand und sag dir leise deinen Stopp-Satz.",
+        "hintergrund": "Ein Stopp wirkt, wenn Worte, Stimme und Körper dasselbe sagen; ein Lächeln schwächt die Botschaft (Watzlawick et al., 1967). Das DBT-Training für Jugendliche übt, ein Anliegen kurz zu sagen, ruhig zu wiederholen und aufrecht aufzutreten (Rathus & Miller, 2015). Wer ein Verhalten im Rollenspiel mehrmals erfolgreich ausprobiert, traut es sich im Ernstfall eher zu (Bandura, 1977). Ein Stopp schützt nicht vor Gewalt: Wer erstarrt, trägt keine Schuld.",
+        "quellen": [
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "achtung": "Rollenspiele zu Grenzverletzungen können Erinnerungen wecken: Es gilt das Stopp-Recht, niemand wird angefasst, es gibt nur Worte, Abstand und ein einziges Nachhaken, und die übergriffige Rolle spielt immer die Leitung. Videos nur mit Einverständnis aller – sie bleiben in der Gruppe –, und ausdrücklich sagen: Wer in einer echten Situation erstarrt, ist nicht schuld. Erzählt jemand von Grenzverletzungen, Erpressung oder verbreiteten Bildern: nicht in der Gruppe vertiefen, keine Geheimhaltung versprechen, zeitnah ein Einzelgespräch führen und nach dem internen Schutzkonzept handeln (zuständige Leitung, Responsable, informieren).",
+        "differenzierung": {
+          "leichter": "Die Stopp-Sätze stehen an der Tafel und einer darf übernommen werden; wer noch wenig Deutsch spricht, setzt die Grenze zuerst mit dem Körper und einem Wort – Stopp versteht man in jeder Sprache.",
+          "schwerer": "Im Rollenspiel den Stopp-Check übernehmen und zwei Dinge zurückmelden, die gewirkt haben, oder eine eigene Szene mit Nachhaken erfinden und von der Leitung spielen lassen."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in im Stehen (5 Min.), die drei Stopps im Video mit Stopp-Check (15 Min.), Rollenspiel mit zwei Szenen-Karten je Person (15 Min.), Fester Stand, Skills-Pass und Mission (15 Min.). Garten-Übung und Bewegungsspiel entfallen; der Stopp-Plan wird in der nächsten Stunde ergänzt."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-mein-stopp",
+      "bereich": "skills",
+      "thema": "kommunikation",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Grenzen setzen", "Stopp sagen", "Hilfe holen", "Video"],
+      "bild": "icon:hand-stop",
+      "kurs": ["a7-e20"],
+      "de": {
+        "titel": "Mein Stopp",
+        "untertitel": "Klar und deutlich – mit Worten, Körper oder Weggehen",
+        "bausteine": [
+          { "art": "aufgabe", "text": "Kreise das Stopp ein, das man ernst nimmt.", "symbole": ["einkreisen"] },
+          {
+            "art": "comic",
+            "spalten": 3,
+            "felder": [
+              { "figuren": ["figur:ben:verlegen:stehen"], "text": "Ähm … stopp vielleicht?", "untertitel": "leise, mit Lächeln" },
+              { "figuren": ["figur:ben:froh:stopp"], "text": "Stopp, hör auf, haha.", "untertitel": "laut, mit Grinsen" },
+              { "figuren": ["figur:ben:neutral:stopp"], "text": "Stopp. Das will ich nicht.", "untertitel": "klar: Hand hoch, Blick zur Person" }
+            ]
+          },
+          { "art": "aufgabe", "text": "Kreuze die Stopp-Sätze an, die zu dir passen.", "symbole": ["ankreuzen"] },
+          { "art": "ankreuzen", "spalten": 2, "items": ["„Stopp. Das will ich nicht.“", "„Bitte fass mich nicht an.“", "„Lass das. Ich mag das nicht.“", "„Geh bitte ein Stück weg.“", "„Lösch das Foto bitte.“", "„Nein. Und dabei bleibt es.“"] },
+          { "art": "aufgabe", "text": "Schreib deinen Stopp-Plan – und eine Person, zu der du gehst.", "hinweis": "Du entscheidest, was du teilst.", "symbole": ["schreiben"] },
+          { "art": "satzanfaenge", "linien": 1, "items": ["Mein Stopp-Satz: …", "Dazu mache ich mit dem Körper: …"] },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              { "art": "info", "symbol": "wissen", "titel": "Gut zu wissen", "text": "Bei Angst kann der Körper erstarren. Das passiert vielen und ist nicht deine Schuld. Schuld hat, wer die Grenze überschreitet." }
+            ],
+            "rechts": [
+              { "art": "info", "symbol": "merke", "titel": "Wer Stopp hört", "punkte": ["hört auf – auch beim Spaß und im Chat.", "Ein Nein braucht keine Begründung."] }
+            ]
+          },
+          { "art": "notfall", "text": "Reicht dein Stopp nicht? Geh weg, hol Hilfe. 116 111 · 8002 1234", "eintraege": [] }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen erkennen, was ein Stopp glaubwürdig macht, wählen eigene Stopp-Sätze und halten fest, mit welchem Satz, welchem Körper und zu welcher Person sie gehen, wenn ein Stopp nicht reicht.",
+          "ablauf": [
+            "Einheit 20, Teil 1: Aufgabe 1 nach den Videos und dem Stopp-Check; Aufgabe 2 nach dem Üben mit Hand und Wort.",
+            "Teil 2: Aufgabe 3 allein, der Stopp-Plan (7 Min.); danach die Hilfe im Haus nennen: Raum und Zeiten der Ansprechperson, Kanner- a Jugendtelefon 116 111.",
+            "Die Pläne werden nicht vorgelesen und das Blatt nicht eingesammelt."
+          ],
+          "hintergrund": "Ein Stopp wirkt, wenn Worte, Stimme und Körper dasselbe sagen; das Skillstraining für Jugendliche übt, ein Anliegen kurz zu sagen und ruhig zu wiederholen (Rathus & Miller, 2015). Wer ein Verhalten im Rollenspiel erfolgreich ausprobiert, traut es sich im Ernstfall eher zu (Bandura, 1977).",
+          "quellen": [
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+          ],
+          "achtung": "Deutet jemand Übergriffe, Gewalt oder Erpressung an: nicht in der Gruppe vertiefen, nach der Stunde sprechen, nichts versprechen und nach dem Schutzkonzept handeln.",
+          "material": "Heft, Stifte"
+        }
+      }
+    },
+    {
+      "id": "a7-stopp-szenen",
+      "bereich": "skills",
+      "thema": "kommunikation",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "25 Min.",
+      "eldib": [],
+      "schlagworte": ["Szenen-Karten", "Rollenspiel", "Grenzen setzen", "Stopp-Check"],
+      "bild": "icon:masks-theater",
+      "kurs": ["a7-e20"],
+      "de": {
+        "titel": "Szenen-Karten: Stopp sagen",
+        "untertitel": "Kopiervorlage: sieben Szenen, zwei Hilfe-Karten, ein Stopp-Check",
+        "bausteine": [
+          { "art": "text", "klein": true, "text": "Einmal kopieren und ausschneiden. Die Leitung spielt A und hakt genau einmal nach, die Person setzt als B die Grenze, die anderen beobachten mit dem Stopp-Check. Keine Berührung; A ist nie eine Person aus der Gruppe. Die Hilfe-Karten werden nicht gespielt, sondern beraten. Heißt jemand in der Gruppe wie eine Figur, den Namen ändern." },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 140,
+            "karten": [
+              { "titel": "Pause · Das Handy", "text": "A nimmt B das Handy aus der Hand: „Zeig mal deine Fotos.“\nNachhaken: „Stell dich nicht so an.“" },
+              { "titel": "Bus · Zu dicht", "text": "A setzt sich ganz dicht neben B, obwohl genug Platz ist.\nNachhaken: „Ist doch Platz für beide.“" },
+              { "titel": "Gruppenchat · Das Foto", "text": "A will ein lustiges Foto von B in die Gruppe stellen.\nNachhaken: „Ist doch nur Spaß.“" },
+              { "titel": "Pause · Die Fragerei", "text": "A will wissen, welche Note B im Test hat, und fragt immer wieder.\nNachhaken: „Komm schon, ich sag’s auch keinem.“" },
+              { "titel": "Begrüßung · Die Umarmung", "text": "A will B zur Begrüßung umarmen. B mag das nicht.\nNachhaken: „Wir sind doch Freunde.“" },
+              { "titel": "Zu Hause · Das Zimmer", "text": "Der große Bruder (A) kommt ohne zu klopfen herein und setzt sich aufs Bett, während B lernt.\nNachhaken: „Ich bleib nur kurz.“" },
+              { "titel": "Chat · Das Passwort", "text": "A will das Passwort von B: „Wenn du mir vertraust, gibst du es mir.“\nNachhaken: „Also vertraust du mir nicht?“" },
+              { "titel": "Hilfe-Karte · Im Bus", "text": "Zwei Ältere stellen sich B in den Weg und wollen das Handy.\nNicht spielen, nur beraten: Was ist jetzt am sichersten – und wem sagt B sofort Bescheid?" },
+              { "titel": "Hilfe-Karte · Nachts im Chat", "text": "Jemand schreibt B jeden Abend: „Morgen sehen alle dein Foto.“\nNicht spielen, nur beraten: Was tut B – und wem sagt B Bescheid?" },
+              { "titel": "Stopp-Check", "text": "Hand gehoben? Blick zur Person? Feste Stimme, kein Lächeln, keine Entschuldigung? Kurzer, klarer Satz? Beim Nachhaken dabeigeblieben?" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Erfundene Szenen für das Rollenspiel mit der Leitung: Die Jugendlichen setzen Grenzen mit Wort und Körper, auch wenn jemand nachhakt, und beraten an zwei Hilfe-Karten, warum Weggehen und Hilfe holen manchmal der richtige Weg ist.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; Namen tauschen, falls jemand in der Gruppe so heißt.",
+            "Einheit 20, Teil 2: Jede Person zieht drei Szenen; die Leitung spielt A und hakt genau einmal nach, die anderen beobachten mit dem Stopp-Check.",
+            "Wer nicht spielen möchte, übernimmt den Stopp-Check; die Hilfe-Karten werden nur beraten."
+          ],
+          "hintergrund": "Rollenspiele sind keine Spielerei: Wer ein Verhalten mehrmals erfolgreich ausprobiert, traut es sich im Ernstfall eher zu (Bandura, 1977). Das einmalige Nachhaken übt, was im Alltag am schwersten ist – bei einem Nein zu bleiben, ohne sich zu rechtfertigen.",
+          "quellen": [
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}

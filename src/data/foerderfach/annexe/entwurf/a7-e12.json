@@ -1,0 +1,294 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e12",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-sinnes-skills", "ff-gefuehlsrad", "ff-skills-pass"],
+      "vorlagen": ["a7-sinnes-karten"],
+      "woerter": [
+        { "de": "die Sinne", "fr": "die Sinne" },
+        { "de": "die Aufmerksamkeit", "fr": "die Aufmerksamkeit" },
+        { "de": "die Kälte", "fr": "die Kälte" },
+        { "de": "der Duft", "fr": "der Duft" },
+        { "de": "tasten", "fr": "tasten" }
+      ],
+      "de": {
+        "titel": "Skills über die Sinne",
+        "kurz": "Im Park oder Wald testen: Hören, Tasten, Kälte und – nur nach Rückfrage – Düfte; dazu ein Gegenstand für die Hosentasche und die Skills-Playlist.",
+        "ziele": [
+          "erklären mit dem Bild vom Scheinwerfer, wie ein deutlicher Reiz die Aufmerksamkeit umlenkt",
+          "testen Hören, Tasten, Kälte und – nach Rückfrage – Düfte mit Zahl vorher und nachher",
+          "stellen eine Skills-Playlist zusammen und wählen einen Gegenstand für die Hosentasche"
+        ],
+        "material": [
+          "Gefühlsrad, Skills-Pässe, Stempel",
+          "Blätter, Klemmbretter, Stifte",
+          "Klangschale, Lautsprecher",
+          "Fühlbeutel, Kühlpacks, Tücher",
+          "Düfte (nur nach Rückfrage)",
+          "Karten (Vorlage), Erste-Hilfe-Tasche"
+        ],
+        "vorbereitung": [
+          "Eine Woche vorher Allergien, Asthma, Duftempfindlichkeit erfragen; ohne Ja keine Düfte.",
+          "Eltern, Treffpunkt, Notfallnummern klären; Regenvariante: Raum mit Fenster.",
+          "Fühlbeutel packen, Kühlpacks einfrieren, Riechstreifen nummerieren, Elternzettel Kletterhalle kopieren."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühlsrad, Zahl und ein Sinneseindruck" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Thema: die Sinne" },
+          { "min": "15–45", "phase": "uebung", "titel": "Scheinwerfer, 5-4-3-2-1 und Geräusche-Karte" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Tast-Rallye" },
+          { "min": "50–85", "phase": "uebung", "titel": "Sinnes-Parcours, Hosentasche und Playlist" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Taschen-Anker" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad, Zahl und ein Sinneseindruck",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Am Treffpunkt im Park oder Wald zeigt jede Person auf ein Wort im Gefühlsrad und nennt ihre Zahl von 0 bis 100. Dazu kommt ein Sinneseindruck vom Weg: etwas, das sie gesehen, gehört oder gerochen hat; die Leitung beginnt mit einem eigenen Beispiel.",
+            "sagen": [
+              "Gefühl, Zahl – und eine Sache, die ihr auf dem Weg hierher gesehen, gehört oder gerochen habt.",
+              "Bei mir: 30, und im Bus hat es nach nassen Jacken gerochen."
+            ],
+            "tipp": "Wem nichts einfällt, schaut sich kurz um und nennt etwas, das er jetzt sieht oder hört – genau darum geht es heute.",
+            "wennEsKippt": "Kommen Witze über den Geruch von Personen, freundlich stoppen: Eindrücke vom Weg, nicht von Menschen. Bei Dauerregen findet der Check-in drinnen statt, die Eindrücke kommen dann vom Fenster.",
+            "blatt": "ff-gefuehlsrad"
+          },
+          {
+            "titel": "Rückblick, Mission und Thema: die Sinne",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Zur Mission fragen: Kam dein Moment – welchen Skill hast du gemacht, und was hat die Zahl getan? Daumen hoch, Mitte oder runter; eine Stimme erzählt. Dann das Thema: Körper-Skills verbrauchen oder bremsen den Alarm, Sinnes-Skills lenken die Aufmerksamkeit um – heute über Ohren, Hände, Kälte und, nur nach Rückfrage, die Nase.",
+            "sagen": [
+              "Kam euer Moment – und was hat eure Zahl gemacht, vorher und nachher?",
+              "Heute geht es um Skills, die über Ohren, Hände und Nase funktionieren."
+            ],
+            "tipp": "Kam der Moment bei vielen nicht, nicht belehren, sondern fragen, was es schwer gemacht hat; oft hilft ein Moment, der sicher kommt, etwa jeden Abend vor dem Schlafen."
+          },
+          {
+            "titel": "Scheinwerfer, 5-4-3-2-1 und Geräusche-Karte",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Erst das Bild vom Scheinwerfer: Aufmerksamkeit leuchtet immer nur eine Stelle aus, und ein deutlicher Reiz lenkt sie um. Dann testen die Jugendlichen draußen 5-4-3-2-1 und das Hören, jeweils mit Zahl vorher und nachher.",
+            "sagen": [
+              "Denkt zwanzig Sekunden lang an alles, was ihr heute noch erledigen müsst – irgendwann klingt die Schale.",
+              "Wohin ist euer Scheinwerfer gegangen: zur Aufgabenliste oder zum Klang?"
+            ],
+            "punkte": [
+              "Scheinwerfer-Test (6 Min.): Alle denken zwanzig Sekunden an alles, was heute noch ansteht, dann klingt die Schale oder der Handy-Gong. Wohin ging der Scheinwerfer der Aufmerksamkeit – und was heißt das für ein Gedankenkarussell?",
+              "5-4-3-2-1 zu dritt (9 Min.): Eine Person leitet an und lässt Zeit, die anderen nennen halblaut fünf Dinge, die sie sehen, vier, die sie hören, drei, die sie spüren, zwei, die sie riechen, und eines, das sie schmecken. Dann wechseln, bis alle einmal angeleitet haben, jeweils mit Zahl vorher und nachher.",
+              "Geräusche-Karte (10 Min.): Jede Person setzt sich allein in Sichtweite hin, Augen zu oder Blick auf einen Punkt, höchstens zwei Minuten still, und zeichnet sich danach in die Mitte eines Blatts mit allen Geräuschen ringsum, nah und fern. Wer hat das leiseste, wer das weiteste Geräusch gehört?",
+              "Auswertung (5 Min.): Auf drei zeigen alle, welcher Sinn ihre Zahl am meisten bewegt hat; Kreuze im Blatt, Strichliste bei der Leitung."
+            ],
+            "tipp": "Ein Reiz muss nicht angenehm sein, nur deutlich: Wer genau hinhört oder etwas Kaltes spürt, kann nicht zugleich grübeln.",
+            "wennEsKippt": "Wird bei der Stille gekichert oder in die Ohren gerufen, ruhig weitermachen und die Zeit auf eine Minute kürzen. Taucht bei jemandem ein belastender Gedanke auf, nicht nachfragen, sondern zurückholen: Was siehst du gerade?",
+            "blatt": "a7-sinnes-skills"
+          },
+          {
+            "titel": "Tast-Rallye",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Die Jugendlichen sammeln in drei Minuten fünf Dinge vom Boden: etwas Raues, etwas Glattes, etwas Weiches, etwas Kaltes und etwas Schweres – nichts abbrechen, in Sichtweite bleiben. Wer zuerst alle hat, zeigt sie; die Fundstücke kommen in den Fühlbeutel für den Parcours.",
+            "sagen": [
+              "Findet in drei Minuten fünf Dinge: etwas Raues, etwas Glattes, etwas Weiches, etwas Kaltes, etwas Schweres."
+            ],
+            "tipp": "Bei Dauerregen läuft die Rallye im Haus mit Dingen aus der Kiste: weicher Stoff, Stein, Tannenzapfen, Igelball. Die Leitung sucht mit und findet zuerst das Kälteste.",
+            "wennEsKippt": "Rennen alle auseinander, kurz an Treffpunkt und Signal erinnern: Wer außer Sichtweite ist, hat die Runde verloren.",
+            "blatt": "a7-sinnes-karten"
+          },
+          {
+            "titel": "Sinnes-Parcours, Hosentasche und Playlist",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Im Parcours testen die Jugendlichen nacheinander Tasten, Kälte und – nur wenn alle zugestimmt haben – Düfte, jeweils mit Zahl vorher und nachher. Danach wählt jede Person einen Gegenstand für die Hosentasche, und die Gruppe baut ihre Skills-Playlist.",
+            "sagen": [
+              "Ihr testet nicht, ob ihr etwas mögt, sondern was es mit eurer Zahl macht.",
+              "Kälte ist einer der stärksten Sinnes-Skills – gedacht für Rot, wenn sonst nichts mehr geht."
+            ],
+            "punkte": [
+              "Tast-Test (7 Min.): Mit geschlossenen Augen greift jede Person in den Fühlbeutel, beschreibt den Gegenstand – warm oder kalt, glatt oder rau, schwer oder leicht – und rät erst danach; Zahl vorher und nachher.",
+              "Kälte-Test (6 Min.): Ein Kühlpack im Tuch 30 Sekunden in der Hand oder am Handgelenk, freiwillig; die Zahl vorher und nachher vergleichen.",
+              "Duft-Check (8 Min.): Nur nach Rückfrage – drei nummerierte Riechstreifen, mit Abstand riechen, mit Wörtern beschreiben und Punkte vergeben, erst danach die Namen aufdecken. Ohne Ja der Gruppe entfällt die Station, die Zeit gehört dem Hören.",
+              "Gegenstand für die Hosentasche (6 Min.): Jede Person wählt aus Rallye und Fühlbeutel den einen Gegenstand, der sie beruhigt – Stein, Kastanie, Knetball – und beschreibt ihn im Blatt.",
+              "Skills-Playlist (8 Min.): Jede Person nennt drei Songs oder Geräusche zum Runterkommen und drei zum Aufladen und spielt auf Wunsch 30 Sekunden vor – laut läuft nur, was für alle in Ordnung ist; zu einem Aufladen-Song bewegt sich die Gruppe."
+            ],
+            "tipp": "Knetbälle oder Handschmeichler, die gut ankommen, gleich mitgeben: Ein Skill in der Hosentasche wird eher benutzt als einer, der nur auf dem Blatt steht.",
+            "wennEsKippt": "Werden Riechstreifen zum Spielzeug oder wird jemandem ein Streifen unter die Nase gehalten, sofort stoppen: Düfte können Kopfschmerzen oder Atemnot auslösen. Klagt jemand über Kopfschmerzen, Übelkeit oder Atemnot, Streifen weg, an die frische Luft, bei Atemnot Hilfe holen.",
+            "blatt": "a7-sinnes-skills"
+          },
+          {
+            "titel": "Skill: Taschen-Anker",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Der Taschen-Anker ist ein Sinnes-Skill, der überall geht: ein kleiner Gegenstand in der Tasche, den die Hand spürt (mit Zahl vorher und nachher höchstens 5 Minuten, still höchstens 3 Minuten). Danach der Abschluss mit Skills-Pass, Mission und eigenem Moment.",
+            "sagen": [
+              "Spür den Gegenstand: Form, Gewicht, Temperatur, Oberfläche – und atme dreimal lang aus.",
+              "Niemand sieht es: Das ist der Vorteil eines Skills in der Hosentasche."
+            ],
+            "punkte": [
+              "Taschen-Anker (5 Min.): Zahl vorher; den Gegenstand in der Hosentasche oder Hand eine Minute nur spüren – Form, Gewicht, Temperatur, Oberfläche – und dreimal lang ausatmen; Zahl nachher.",
+              "Rückmeldung (2 Min.): Wann könnte der Anker helfen – im Bus, vor einem Test, vor einer schweren Antwort? Kälte bleibt der Skill für Rot.",
+              "Skills-Pass (3 Min.): Ein Satz zu „Welcher Sinn hilft mir am meisten, und wann setze ich ihn ein?“, dann der Stempel.",
+              "Mission und Moment (3 Min.): Die Leitung sagt die Mission an; jede Person wählt ihren Moment und schreibt ihn ins Heft: „Mein Moment: Wenn …“.",
+              "Ausblick und Aufräumen (2 Min.): Nächste Woche geht es drinnen um den Kopf, in zwei Wochen in die Kletterhalle – die Elternzettel gehen heute mit; Fundstücke bleiben draußen, der Müll geht mit."
+            ],
+            "tipp": "Gegenstände nicht vorgeben: Wer einen Stein, eine Kastanie oder einen Ring wählt, bei dem wirkt er auch – er muss nur glatt, griffig und unauffällig sein.",
+            "wennEsKippt": "Wird der Gegenstand geworfen oder getauscht, ruhig zurückholen: Jede Person hat ihren eigenen. Kann jemand mit dem Spüren wenig anfangen, den Anker mit 5-4-3-2-1 aus dem ersten Teil verbinden.",
+            "blatt": "ff-skills-pass"
+          }
+        ],
+        "bruecke": "Nächste Woche wird es ruhig im Kopf: Ihr lernt, Gedanken vorbeiziehen zu lassen, testet Kopf-Skills für einen vollen Kopf und sucht euch einen sicheren Ort.",
+        "mission": "Nimm deinen Gegenstand oder einen Song deiner Liste – Zahl vorher, nachher.",
+        "hintergrund": "Starke, angenehme oder überraschende Reize lenken die Aufmerksamkeit aus kreisenden Gedanken um; Linehan (2015) zählt Sinnes-Skills zu den Wegen, Krisen zu überstehen, bei sehr hoher Anspannung mit einem intensiven Reiz wie Kälte. Nach dem Prozessmodell wirken sie über die Lenkung der Aufmerksamkeit (Gross, 1998), und Natur erholt die gerichtete Aufmerksamkeit zusätzlich (Kaplan, 1995). Welche Reize helfen, ist persönlich: Derselbe Duft oder Song beruhigt die eine und weckt bei dem anderen Erinnerungen, darum wird getestet statt verordnet.",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. Journal of Environmental Psychology, 15(3), 169–182."
+        ],
+        "achtung": "Düfte nur nach Rückfrage: Allergien, Asthma und Duftempfindlichkeit vorher bei den Jugendlichen und den Eltern klären, ohne ausdrückliches Ja entfällt die Station; Öle nur auf Riechstreifen, nie auf die Haut oder direkt aus der Flasche, bei Kopfschmerzen, Übelkeit oder Atemnot Streifen weg, an die frische Luft, bei Atemnot Hilfe holen (112). Kälte nur kurz, freiwillig und im Tuch, nicht bei Herz-, Kreislauf- oder Durchblutungsproblemen; draußen gelten Einverständnis der Eltern, Treffpunkt, Signal und Notfallnummern, bei Dauerregen, Gewitter oder Sturm geht es nach drinnen. Düfte, Klänge und Musik können unerwartet belastende Erinnerungen wecken: Aussteigen ohne Begründung ist erlaubt, nichts erfragen, bei Hinweisen auf Gefährdung noch am selben Tag die zuständige Leitung (Responsable) informieren.",
+        "differenzierung": {
+          "leichter": "Wer wenig sprechen mag, zeigt Zahlen mit den Fingern, kreuzt im Blatt nur an und nennt für die Playlist ein Stichwort statt eines Songs.",
+          "schwerer": "Zu jedem Sinn vorher eine Vermutung aufschreiben, wo die Zahl am stärksten sinkt, und für die Playlist begründen, warum ein Titel beruhigt oder weckt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Sinneseindruck (5 Min.), Rückblick auf die Mission (3 Min.), Scheinwerfer-Test und 5-4-3-2-1 (12 Min.), Tast- und Kälte-Test mit Hosentaschen-Gegenstand (15 Min.), Skill Taschen-Anker mit Mission und Moment (15 Min.). Geräusche-Karte, Tast-Rallye, Duft-Check und Playlist entfallen; die Playlist wird in der nächsten Stunde geschrieben."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-sinnes-skills",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Sinnes-Skills", "Aufmerksamkeit", "Playlist", "Zahl vorher und nachher", "Annexe"],
+      "bild": "icon:headphones",
+      "kurs": ["a7-e12"],
+      "de": {
+        "titel": "Meine Sinnes-Skills und meine Playlist",
+        "untertitel": "Die Sinne holen dich ins Hier und Jetzt.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Ein starker oder schöner Reiz holt deine Aufmerksamkeit ins Jetzt. Kälte ist ein Skill für Rot, ein Gegenstand in der Tasche geht überall. Was bei dir wirkt, findest du nur durch Testen heraus."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Trag deine Zahlen ein und schreib dazu, was jeder Test mit dir macht.",
+            "hinweis": "Beruhigt, weckt oder nervt – alles ist ein Ergebnis. Den Duft nur, wenn du mitgemacht hast.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "tabelle",
+            "spalten": ["Test", "vorher", "nachher", "beruhigt · weckt · nervt"],
+            "breiten": [2.2, 0.9, 0.9, 2.2],
+            "zeilen": 0,
+            "werte": [
+              ["5-4-3-2-1", "", "", ""],
+              ["Tasten", "", "", ""],
+              ["Kälte", "", "", ""],
+              ["Duft (nur mit Ja)", "", "", ""],
+              ["Taschen-Anker", "", "", ""]
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Schreib deine Playlist auf.",
+            "hinweis": "Songs, Geräusche, Stimmen oder Orte – alles geht. Das gehört dir.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "tabelle",
+            "spalten": ["Nr.", "Zum Runterkommen", "Zum Aufladen"],
+            "breiten": [0.45, 2.4, 2.4],
+            "zeilen": 3,
+            "nummern": 1,
+            "beispiel": ["z. B.", "Regen auf dem Dach", "der Song vom Training"]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Beschreib deinen Gegenstand für die Hosentasche.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Mein Gegenstand ist …", "So fühlt er sich an: …", "Ich nehme ihn, wenn …"],
+            "linien": 1
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen testen Sinnes-Skills mit Zahl vorher und nachher, halten fest, was beruhigt, weckt oder nervt, schreiben ihre Playlist und beschreiben ihren Gegenstand für die Hosentasche.",
+          "ablauf": [
+            "Einheit 12, Schritte 3 und 5: Nach jedem Test eine Zeile ausfüllen (5-4-3-2-1, Tasten, Kälte, Duft); die Duft-Zeile bleibt leer, wenn die Station entfällt.",
+            "Schritt 5: Aufgabe 2 – Playlist allein, Stichworte genügen, ein Handy braucht niemand; danach Aufgabe 3, der Gegenstand.",
+            "Schritt 6: Zeile Taschen-Anker mit Zahl vorher und nachher; das Blatt gehört der Person und wird nicht eingesammelt."
+          ],
+          "hintergrund": "Starke, angenehme oder überraschende Reize lenken die Aufmerksamkeit um; im Skillstraining gehören Sinnes-Skills zu den Wegen, Krisen zu überstehen (Linehan, 2015). Welche Reize helfen, ist sehr persönlich: Derselbe Song oder Duft beruhigt die eine Person und weckt bei der anderen Erinnerungen, darum wird getestet und bewertet, nicht verordnet (Rathus & Miller, 2015).",
+          "quellen": [
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+          ],
+          "material": "Stifte, Klemmbretter, Lautsprecher"
+        }
+      }
+    },
+    {
+      "id": "a7-sinnes-karten",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "10 Min.",
+      "eldib": [],
+      "schlagworte": ["Sinnes-Parcours", "Stationskarten", "Tast-Rallye", "Annexe"],
+      "bild": "icon:ear",
+      "kurs": ["a7-e12"],
+      "de": {
+        "titel": "Karten: Sinnes-Parcours",
+        "untertitel": "Kopiervorlage – einmal kopieren und ausschneiden",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Eine Rallye-Karte, vier Stationskarten und eine Regelkarte für den Parcours. Die Duft-Karte kommt nur auf den Tisch, wenn alle zugestimmt haben.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 128,
+            "karten": [
+              { "titel": "Tast-Rallye", "text": "Finde in drei Minuten: etwas Raues, etwas Glattes, etwas Weiches, etwas Kaltes, etwas Schweres.", "bild": "icon:search" },
+              { "titel": "Station Tasten", "text": "Augen zu, in den Beutel greifen, beschreiben, erst dann raten: warm oder kalt, glatt oder rau?", "bild": "icon:hand-grab" },
+              { "titel": "Station Kälte", "text": "Kühlpack im Tuch, 30 Sekunden in der Hand. Freiwillig, nur im Tuch.", "bild": "icon:snowflake" },
+              { "titel": "Station Duft (nur mit Ja)", "text": "Riechstreifen mit Abstand, nie auf die Haut. Unangenehm? Einfach weitergeben.", "bild": "icon:flower" },
+              { "titel": "Station Klang", "text": "30 Sekunden Ausschnitt hören: beruhigt, weckt oder nervt? Zahl vorher und nachher.", "bild": "icon:headphones" },
+              { "titel": "Regeln", "text": "Aussteigen ist immer erlaubt. Nichts in den Mund. Laut läuft nur, was für alle in Ordnung ist.", "bild": "icon:shield" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Sechs Karten für den Sinnes-Parcours: die Tast-Rallye, vier Stationen und die Regeln, damit sie nicht erst bei Problemen genannt werden.",
+          "ablauf": [
+            "Einheit 12: einmal auf festes Papier kopieren, ausschneiden und in einen Umschlag legen; die Duft-Karte nur auflegen, wenn alle zugestimmt haben.",
+            "Schritt 4: die Rallye-Karte vorlesen. Schritt 5: die Regelkarte vorlesen, dann die Stationskarten reihum vorlesen lassen.",
+            "Nach der Stunde die Karten zurücklegen; Fundstücke bleiben in der Natur, Kühlpacks und Tücher gehen mit."
+          ],
+          "hintergrund": "Intensive Reize wie Kälte lenken bei sehr hoher Anspannung die Aufmerksamkeit um (Linehan, 2015). Düfte, Musik und Klänge wirken sehr persönlich und können Erinnerungen wecken; deshalb gilt an allen Stationen: freiwillig, kurz, Aussteigen ohne Begründung. So üben auch Skillstrainings für Jugendliche: ausprobieren, bewerten und selbst entscheiden (Rathus & Miller, 2015).",
+          "quellen": [
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+          ],
+          "material": "Festes Papier, Schere, Umschlag"
+        }
+      }
+    }
+  ]
+}

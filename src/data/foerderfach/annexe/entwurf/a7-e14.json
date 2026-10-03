@@ -1,0 +1,304 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e14",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-skills-koffer", "ff-gefuehlsrad", "ff-skills-pass"],
+      "vorlagen": ["a7-notfallkarten"],
+      "woerter": [
+        { "de": "der Skills-Koffer", "fr": "der Skills-Koffer" },
+        { "de": "der Ampelplan", "fr": "der Ampelplan" },
+        { "de": "das Warnsignal", "fr": "das Warnsignal" },
+        { "de": "die Notfallkarte", "fr": "die Notfallkarte" },
+        { "de": "erreichbar", "fr": "erreichbar" }
+      ],
+      "de": {
+        "titel": "Mein Skills-Koffer und Ampelplan",
+        "kurz": "Koffer, Ampelplan und Notfallkarte packen – dann in der Kletterhalle im Ernstfall testen: Zahl hoch, Skill aus dem Koffer, Zahl runter.",
+        "ziele": [
+          "packen aus ihren Tests einen Skills-Koffer und erkennen, dass volle Tanks seltener zu Rot führen",
+          "erstellen Ampelplan und Notfallkarte mit Warnsignalen, Skills und einer erreichbaren erwachsenen Person",
+          "testen ihren Koffer an der Kletterwand: Zahl hoch, Skill, Zahl runter"
+        ],
+        "material": [
+          "Glas, Gefühlsrad, Profi-Stempel",
+          "Tester-Blätter der Einheiten 11 bis 13",
+          "Blätter, Notfallkarten (Vorlage), Scheren",
+          "Rucksack: Wasser, Erste-Hilfe-Tasche",
+          "Einverständnisse, Notfallnummern",
+          "Sportkleidung, Turnschuhe"
+        ],
+        "vorbereitung": [
+          "Halle zwei Wochen vorher anmelden: Gruppentermin, Einweisung.",
+          "Einverständnis der Eltern, Gesundheit, Aufsicht und Notfallnummern klären.",
+          "Weg und Treffpunkt festlegen; bei Regen oder Absage der Halle ein Parcours in der Turnhalle.",
+          "Glas durchsehen, Persönliches beiseitelegen."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Welche Farbe hat deine Ampel?" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Thema: Koffer und Kletterwand" },
+          { "min": "15–40", "phase": "uebung", "titel": "Glas öffnen, Skills-Koffer, Ampelplan und Notfallkarte" },
+          { "min": "40–45", "phase": "aktiv", "titel": "Weg zur Kletterhalle" },
+          { "min": "45–85", "phase": "uebung", "titel": "Kletterhalle: Skill-Coach und Ernstfall-Test" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Ampel-Check" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Welche Farbe hat deine Ampel?",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Im Raum zeigt jede Person ihr Wort im Gefühlsrad, nennt die Zahl von 0 bis 100 und die Farbe, die dazu passt – Grün bis 30, Gelb bis 70, Rot darüber; die Leitung beginnt. Wer bei Gelb oder Rot ist, darf sofort einen Skill machen, bevor es weitergeht.",
+            "sagen": [
+              "Gefühl, Zahl und Farbe: Wo steht eure Ampel heute?",
+              "Du bist bei Gelb. Brauchst du jetzt kurz einen Skill? Dann mach ihn – wir warten."
+            ],
+            "tipp": "Die Frage nach dem Skill ab heute in jeden Check-in einbauen: So wird aus dem Kapitel eine Gewohnheit.",
+            "wennEsKippt": "Nennt jemand aus Spaß immer Rot, nicht diskutieren, sondern ernst nehmen und fragen, was bei dieser Zahl helfen würde. Ist jemand wirklich bei Rot, nicht nachfragen, sondern einen Körper- oder Sinnes-Skill anbieten und nach der Stunde sprechen.",
+            "blatt": "ff-gefuehlsrad"
+          },
+          {
+            "titel": "Rückblick, Mission und Thema: Koffer und Kletterwand",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Zur Mission fragen: Kam dein Moment – hast du deinen Ort besucht oder dem Kopf einen Job gegeben? Daumen hoch, Mitte oder runter; eine Stimme erzählt. Dann das Ziel: Erst packt jede Person aus allem, was sie getestet hat, ihren Skills-Koffer und einen Ampelplan, dann geht es in die Kletterhalle, wo der Koffer im Ernstfall halten muss.",
+            "sagen": [
+              "Ihr habt jetzt mehr als 15 Skills getestet. Heute wird daraus euer eigener Koffer – und dann testen wir, ob er hält."
+            ],
+            "tipp": "Wer in den Einheiten 11 bis 13 gefehlt hat, bekommt die Skill-Karten als Übersicht und wählt daraus; niemand muss Lücken erklären."
+          },
+          {
+            "titel": "Glas öffnen, Skills-Koffer, Ampelplan und Notfallkarte",
+            "dauer": 25,
+            "phase": "uebung",
+            "text": "Erst das Glas der Bedürfnisse: Ein leerer Tank bringt schneller zu Gelb, volle Tanks schützen vor Rot. Dann packt jede Person allein ihren Koffer und ihren Ampelplan und gestaltet die Notfallkarte.",
+            "sagen": [
+              "Packt nur ein, was bei euch wirklich gewirkt hat: Ein kleiner Koffer, den ihr benutzt, ist besser als ein großer im Schrank.",
+              "Bei Rot könnt ihr nicht mehr nachdenken – was steht da, das auch dann noch funktioniert?"
+            ],
+            "punkte": [
+              "Glas öffnen (4 Min.): Die Leitung zieht aus dem Glas aus Einheit 4 drei allgemein klingende Zettel und liest sie vor; Frage: Bei welcher Zahl startet ihr in den Tag – nach kaum Schlaf, ohne Frühstück und mit Streit am Morgen?",
+              "Skills-Koffer packen (8 Min.): Aus den Favoriten der Einheiten 11 bis 13 trägt jede Person ein bis zwei Skills in jedes Fach ein – Körper, Sinne, Kopf, Menschen, Das tut mir gut –, die Leitung geht herum und fragt: Hat der wirklich geholfen?",
+              "Ampelplan (8 Min.): Von unten nach oben – Grün: was meine Tanks füllt; Gelb: Wenn ich … merke, dann nehme ich …; Rot: zwei Körper- oder Sinnes-Skills und eine erwachsene Person, die ich wirklich erreiche; bei Rot keine Kopf-Skills.",
+              "Notfallkarte (5 Min.): Die Rot-Zeile kommt in Kreditkartengröße auf die Karte – vorn die Skills, hinten die Menschen und die Nummern 116 111 und 112 –, ausschneiden und falten; wer mag, fotografiert sie zusätzlich fürs Handy."
+            ],
+            "tipp": "Findet jemand keine erwachsene Person, gemeinsam überlegen: Educatrice oder Educateur im Annexe, Klassenlehrerin, Trainer im Verein; zunächst steht das Kanner- a Jugendtelefon 116 111 da, und die Leitung greift das Thema im Einzelgespräch auf.",
+            "wennEsKippt": "Schreibt jemand demonstrativ „nichts hilft“ oder „Zocken“ in jedes Fach, nicht streiten: Zocken kann bei Gelb ablenken, also nachfragen, was bei Rot hilft, wenn kein Handy da ist. Stehen bei Rot Dinge wie zuschlagen oder abhauen, nicht kommentieren, sondern fragen, was stattdessen helfen könnte, und nach der Stunde sprechen.",
+            "blatt": "a7-skills-koffer"
+          },
+          {
+            "titel": "Weg zur Kletterhalle",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Unterwegs gelten Treffpunkt, Signal und Sichtweite: Die Gruppe geht so schnell wie die langsamste Person, und jede Person schätzt still ihre Zahl – ist sie auf dem Weg gestiegen oder gesunken? Bei längerem Weg verkürzt sich die Zeit in der Halle, nicht der Check-in und nicht der Abschluss.",
+            "sagen": [
+              "Wir gehen so schnell wie die langsamste Person – und ihr schätzt unterwegs still eure Zahl."
+            ],
+            "tipp": "Auf dem Weg schon den Lieblings-Skill für den ersten Versuch wählen und abmachen, wer wen coacht.",
+            "wennEsKippt": "Rennt jemand voraus oder trödelt, kurz stehen bleiben und das Tempo gemeinsam abmachen: Wir gehen so schnell wie die langsamste Person."
+          },
+          {
+            "titel": "Kletterhalle: Skill-Coach und Ernstfall-Test",
+            "dauer": 40,
+            "phase": "uebung",
+            "text": "In der Halle klettert jede Person freiwillig und im eigenen Tempo, die anderen coachen mit einem Skill. Getestet wird der Koffer im Ernstfall: Zahl hoch, Skill, Zahl runter.",
+            "sagen": [
+              "Ihr wählt selbst, wie hoch es geht – Ziel ist eine Gelb-Zahl, keine Rot-Zahl, und Stopp gilt immer.",
+              "Ihr seid jetzt die Trainerinnen und Trainer: Erklärt kurz, wann der Skill hilft, und macht ihn mit uns."
+            ],
+            "punkte": [
+              "Ankommen und Einweisung (8 Min.): Das Hallenpersonal erklärt Regeln, Sicherung und Absprunghöhe, die Gruppe wiederholt Stopp-Recht und Signal; wer nicht klettern mag oder darf, ist Skill-Coach oder Zeitnehmer und zählt die Zahlen mit.",
+              "Ich bringe dir einen Skill bei (7 Min.): Vor dem ersten Versuch zeigt jede Person der Gruppe ihren Lieblings-Skill in einer Minute – wann er hilft, vormachen, zusammen üben – und coacht damit die Person, die als Nächstes klettert.",
+              "Zahl hoch, Skill, Zahl runter (20 Min.): Jede Person wählt eine Route, bei der ihre Zahl auf etwa 40 bis 60 steigt, schätzt vor dem Start, klettert und schätzt oben oder beim Absteigen noch einmal; dann macht sie ihren Skill aus dem Koffer und schätzt zum dritten Mal, zwei bis drei Versuche je Person.",
+              "Rückweg und Auswertung (5 Min.): Beim Gehen sagt jede Person, welcher Skill an der Wand am meisten gebracht hat und bis zu welcher Zahl sie ihm jetzt traut."
+            ],
+            "tipp": "Wer Höhenangst hat, wählt die niedrigste Route oder bleibt Coach: Die Zahl steigt auch am Boden, wenn man nur zuschaut. Die Leitung klettert selbst eine Route mit und nennt ehrlich ihre Zahlen.",
+            "wennEsKippt": "Steigt eine Zahl über 70 oder zittert jemand stark, den Versuch ruhig beenden: absteigen, Pause, Skill, erst dann entscheiden, ob es weitergeht. Wird gedrängt oder gewettet, sofort stoppen: Niemand muss klettern, und Zuschauen oder Coachen ist eine vollwertige Rolle.",
+            "blatt": "a7-skills-koffer"
+          },
+          {
+            "titel": "Skill: Ampel-Check",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Zurück im Raum oder im Foyer der Halle macht die Gruppe den Ampel-Check in drei Schritten – Stopp, Zahl und Farbe, Skill aus dem Koffer (zusammen höchstens 5 Minuten). Danach der Abschluss: ein Satz in den Skills-Pass mit dem Stempel „Skills-Profi“, Mission und eigener Moment.",
+            "sagen": [
+              "Stopp: Welche Zahl habe ich? Farbe: Grün, Gelb oder Rot? Skill: der passende aus dem Koffer – bei Rot Körper oder Sinne.",
+              "Ein Skill, der in eurem Koffer ganz oben liegt – und damit seid ihr offiziell Skills-Profis."
+            ],
+            "punkte": [
+              "Ampel-Check (5 Min.): Die Leitung nennt eine Situation – dein Bruder nimmt schon wieder dein Ladekabel · beim Fußball foult dich jemand, alle lachen · 22 Uhr, morgen ist der Test; alle machen still Zahl, Farbe und Skill, zwei Stimmen nennen ihren Skill, alle machen ihn eine halbe Minute.",
+              "Rückmeldung (2 Min.): Wann nützt euch der Ampel-Check diese Woche – und wer ist eure erwachsene Person?",
+              "Skills-Pass und Stempel (4 Min.): Ein Satz zu „Welcher Skill liegt in meinem Koffer ganz oben?“, dazu der Stempel „Skills-Profi“ zum Abschluss des Kapitels.",
+              "Mission und Moment (3 Min.): Die Leitung sagt die Mission an; jede Person wählt ihren Moment und schreibt ihn ins Heft: „Mein Moment: Wenn …“.",
+              "Ausblick (1 Min.): Nächste Woche geht es um Gedanken – Ampelplan und Notfallkarte bleiben bei euch und werden nicht eingesammelt."
+            ],
+            "tipp": "Die Ampel-Frage bleibt in jedem Check-in; in der Kurzform macht, wer bei Gelb oder Rot ist, still einen Skill, und alle atmen dreimal lang aus.",
+            "wennEsKippt": "Sagt jemand: „Bei mir wäre das 100, dann hau ich zu“, nicht moralisieren, sondern ernst nehmen: Was hilft dir bei 100, bevor du zuschlägst? Wählt jemand einen Skill, der am Platz nicht geht, macht er ihn hier im Kleinen, zum Beispiel Fäuste ballen und loslassen.",
+            "blatt": "ff-skills-pass"
+          }
+        ],
+        "bruecke": "Nächste Woche beginnt ein neues Kapitel: Ihr seht Szenen aus „Alles steht Kopf 2“ und entdeckt, welche Sätze über sich selbst helfen und welche bremsen.",
+        "mission": "Trag deine Notfallkarte bei dir und mach einmal den Ampel-Check.",
+        "hintergrund": "Der Skills-Koffer bündelt, was in den Einheiten 11 bis 13 getestet wurde, und folgt dem Notfallkoffer der DBT für Jugendliche (Fleischhaker et al., 2011). Der Ampelplan knüpft Skills an frühe Warnsignale (Rathus & Miller, 2015) und übernimmt die Reihenfolge des Sicherheitsplans: eigene Skills, Menschen, Nummern (Stanley & Brown, 2012). Wenn-dann-Pläne werden deutlich häufiger umgesetzt als gute Vorsätze (Gollwitzer, 1999), und Erfolge unter echtem Druck stärken die Selbstwirksamkeit (Bandura, 1977).",
+        "quellen": [
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "achtung": "Klettern nur mit schriftlichem Einverständnis der Eltern, Anmeldung der Halle, Einweisung durch das Hallenpersonal und Aufsicht nach den Regeln des CDSE (Treffpunkt, Signal, Notfallnummern, Erste-Hilfe-Tasche); Gesundheit, Mindestalter und Haftung der Halle vorher klären. Alles ist freiwillig: kein Drängen, keine Wetten, keine Mutprobe, Stopp gilt ohne Begründung, und über 70 wird der Versuch ruhig beendet – Ziel ist eine Gelb-Zahl, kein Absturz in Rot. Ampelplan und Notfallkarte berühren Krisen: nicht einsammeln, nicht vorlesen, nicht bewerten; stehen bei Rot Selbstverletzung oder Drogen, fehlt jede erreichbare Person oder deutet jemand Suizidgedanken an, ein Einzelgespräch führen und noch am selben Tag die zuständige Leitung (Responsable) informieren, bei akuter Gefahr 112.",
+        "differenzierung": {
+          "leichter": "Im Koffer reichen zwei Fächer mit je einem Skill, die Skill-Karten helfen beim Ausfüllen, und an der Wand genügt die niedrigste Route oder die Rolle als Skill-Coach.",
+          "schwerer": "Den Ampelplan für eine zweite Lage schreiben, etwa für den Test am Freitag, und an der Wand einen Skill erstmals testen, der noch nicht im Koffer liegt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Ampelfarbe und Rückblick auf die Mission (8 Min.), Glas öffnen, Koffer packen und Ampelplan (17 Min.), Notfallkarte (5 Min.), Zahl hoch, Skill, Zahl runter mit Treppenlaufen im Haus (5 Min.), Skill Ampel-Check mit Skills-Pass und Stempel (15 Min.). Weg, Hallenbesuch und „Ich bringe dir einen Skill bei“ entfallen; der Ausflug in die Kletterhalle wird in einer späteren Stunde nachgeholt."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-skills-koffer",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "30 Min.",
+      "eldib": [],
+      "schlagworte": ["Skills-Koffer", "Ampelplan", "Warnsignale", "Zahl hoch, Zahl runter", "Annexe"],
+      "bild": "icon:backpack",
+      "kurs": ["a7-e14"],
+      "de": {
+        "titel": "Mein Skills-Koffer und Ampelplan",
+        "untertitel": "Deine besten Skills – und ein Plan.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Besser ein kleiner Koffer, den du benutzt, als ein großer im Schrank. Bei Rot geht Nachdenken kaum noch: Dort helfen Körper, Sinne und eine erwachsene Person."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Pack deinen Skills-Koffer: ein bis zwei Skills in jedes Fach.",
+            "hinweis": "Deine Tester-Blätter helfen. Stichworte reichen. Das letzte Fach bleibt frei.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              { "art": "feld", "label": "Körper", "hoehe": 2 },
+              { "art": "feld", "label": "Sinne", "hoehe": 2 },
+              { "art": "feld", "label": "Kopf", "hoehe": 2 }
+            ],
+            "rechts": [
+              { "art": "feld", "label": "Menschen", "hoehe": 2 },
+              { "art": "feld", "label": "Das tut mir gut", "hoehe": 2 },
+              { "art": "feld", "label": "Kommt später dazu", "hoehe": 2 }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Fülle deinen Ampelplan aus, von Grün nach oben.",
+            "hinweis": "Bei Rot nur Skills ohne Nachdenken. Dazu eine Person, zu der du gehst.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "ampel",
+            "linien": 1,
+            "stufen": [
+              { "titel": "Rot – Alarm (70–100)", "text": "Meine Skills für Körper und Sinne – und zu wem ich gehe:" },
+              { "titel": "Gelb – es wird eng (30–70)", "text": "Wenn ich … (Warnsignal) merke, dann nehme ich … (Skill)." },
+              { "titel": "Grün – mir geht es gut (0–30)", "text": "Das füllt meine Tanks:" }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Teste deinen Koffer an der Kletterwand: Zahl hoch, Skill, Zahl runter.",
+            "hinweis": "Ziel ist eine Gelb-Zahl, nicht Rot. Coachen und Zuschauen zählt auch.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "tabelle",
+            "spalten": ["Versuch", "vorher", "oben", "Skill", "nachher"],
+            "breiten": [0.9, 0.9, 0.9, 2.4, 0.9],
+            "zeilen": 0,
+            "werte": [
+              ["1", "", "", "", ""],
+              ["2", "", "", "", ""]
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen bündeln ihre getesteten Skills in einem Skills-Koffer, legen im Ampelplan fest, was sie bei Grün, Gelb und Rot tun und zu wem sie gehen, und testen den Koffer an der Kletterwand.",
+          "ablauf": [
+            "Einheit 14, Schritt 3: erst Sterne in den Tester-Blättern der Einheiten 11 bis 13, dann Aufgabe 1 – ein bis zwei Skills je Fach, das letzte Fach bleibt frei.",
+            "Schritt 3: Aufgabe 2 von Grün nach Rot – bei Gelb ein Wenn-dann-Satz, bei Rot nur Körper und Sinne und eine erwachsene Person; danach die Notfallkarte.",
+            "Schritt 5: Aufgabe 3 in der Kletterhalle – Zahl vorher, oben, Skill, Zahl nachher; wer nicht klettert, trägt als Coach die Zahlen der Gruppe ein.",
+            "Das Blatt wird nicht eingesammelt und nicht vorgelesen; in den nächsten Wochen kommen neue Skills ins freie Fach."
+          ],
+          "hintergrund": "Der Skills-Koffer folgt dem Notfallkoffer der DBT für Jugendliche (Fleischhaker et al., 2011). Die Ampel knüpft Skills an Warnsignale und Anspannung (Rathus & Miller, 2015); ein Wenn-dann-Satz macht aus einer guten Absicht einen Plan (Gollwitzer, 1999). Bei Rot geht Nachdenken kaum noch, deshalb stehen dort nur Körper- und Sinnes-Skills und eine erreichbare Person.",
+          "quellen": [
+            "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer.",
+            "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          ],
+          "material": "Tester-Blätter, Stifte, Scheren"
+        }
+      }
+    },
+    {
+      "id": "a7-notfallkarten",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "10 Min.",
+      "eldib": [],
+      "schlagworte": ["Notfallkarte", "Rot", "erwachsene Person", "Hilfe holen", "Annexe"],
+      "bild": "icon:shield",
+      "kurs": ["a7-e14"],
+      "de": {
+        "titel": "Meine Notfallkarte",
+        "untertitel": "Kopiervorlage – ausschneiden, an der Linie falten, laminieren",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Jede Person bekommt ein Kartenpaar: vorn die Skills für Rot, hinten die Menschen, zu denen sie gehen kann, und die Nummern. Schreib so, dass du es bei 90 noch lesen kannst: kurz, groß, klar.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 128,
+            "karten": [
+              { "titel": "Vorne: Bei Rot (70–100)", "text": "Stopp. Lang ausatmen.\n1. ______________________________\n2. ______________________________\n3. ______________________________", "bild": "icon:traffic-lights" },
+              { "titel": "Hinten: Hier hilft mir jemand", "text": "Name: __________________________\nTelefon: ________________________\nKanner- a Jugendtelefon 116 111\nNotruf 112", "bild": "icon:phone" },
+              { "titel": "Vorne: Bei Rot (70–100)", "text": "Stopp. Lang ausatmen.\n1. ______________________________\n2. ______________________________\n3. ______________________________", "bild": "icon:traffic-lights" },
+              { "titel": "Hinten: Hier hilft mir jemand", "text": "Name: __________________________\nTelefon: ________________________\nKanner- a Jugendtelefon 116 111\nNotruf 112", "bild": "icon:phone" },
+              { "titel": "Vorne: Bei Rot (70–100)", "text": "Stopp. Lang ausatmen.\n1. ______________________________\n2. ______________________________\n3. ______________________________", "bild": "icon:traffic-lights" },
+              { "titel": "Hinten: Hier hilft mir jemand", "text": "Name: __________________________\nTelefon: ________________________\nKanner- a Jugendtelefon 116 111\nNotruf 112", "bild": "icon:phone" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Eine Notfallkarte im Kreditkartenformat je Person: vorn drei Skills für Rot, hinten erreichbare Menschen und die Nummern 116 111 und 112.",
+          "ablauf": [
+            "Einheit 14: einmal auf festes Papier kopieren (drei Kartenpaare, mehr bei Bedarf); die Nummern stehen schon auf der Rückseite.",
+            "Schritt 3: die Rot-Zeile aus dem Ampelplan auf die Vorderseite übertragen, hinten die Menschen eintragen; ausschneiden, falten, laminieren oder mit Klebeband schützen.",
+            "Wer mag, fotografiert die Karte fürs Handy; die Karten werden nicht eingesammelt und nicht gezeigt."
+          ],
+          "hintergrund": "Die Notfallkarte folgt dem Sicherheitsplan: erst eigene Skills, dann Menschen, dann Nummern (Stanley & Brown, 2012). Bei Rot geht Nachdenken kaum noch, darum steht dort nur, was ohne Überlegen klappt: kurz, groß, klar. Der Notfallkoffer der DBT für Jugendliche bündelt erprobte Fertigkeiten für Krisen (Fleischhaker et al., 2011); die Karte ersetzt aber keinen Krisenplan mit einer Fachperson.",
+          "quellen": [
+            "Stanley, B. & Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. Cognitive and Behavioral Practice, 19(2), 256–264.",
+            "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer."
+          ],
+          "material": "Festes Papier, Schere, Laminierfolie oder Klebeband"
+        }
+      }
+    }
+  ]
+}

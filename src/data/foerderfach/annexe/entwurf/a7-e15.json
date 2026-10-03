@@ -1,0 +1,329 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e15",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-gedanke-macht-den-unterschied", "ff-gefuehlsrad", "ff-skills-pass"],
+      "vorlagen": ["a7-glaubenssatz-karten"],
+      "woerter": [
+        { "de": "der Glaubenssatz", "fr": "der Glaubenssatz" },
+        { "de": "die Vermutung", "fr": "die Vermutung" },
+        { "de": "die Tatsache", "fr": "die Tatsache" },
+        { "de": "bremsen", "fr": "bremsen" },
+        { "de": "das Selbstbild", "fr": "das Selbstbild" }
+      ],
+      "de": {
+        "titel": "Was sind Glaubenssätze?",
+        "kurz": "Mit Ben und Mila, einem Kamera-Check und zwei Szenen aus „Alles steht Kopf 2“ entdecken die Jugendlichen Sätze über sich selbst, die helfen oder bremsen.",
+        "ziele": [
+          "erklären an erfundenen Figuren, wie ein Gedanke den Ausgang verändert, und unterscheiden Vermutung und Tatsache",
+          "erkennen in den Szenen, wie Sätze über sich selbst ein Selbstbild bauen und wie ein lauter Satz Körper und Verhalten übernimmt",
+          "sortieren Sätze, die helfen oder bremsen, und probieren „Danke, Kopf“ aus"
+        ],
+        "material": [
+          "Film (2024), Laptop oder Beamer",
+          "Lautsprecher, Untertitel",
+          "Tafel oder Flipchart, Denkblasen",
+          "Karten (Vorlage), Umschlag, Klebeband",
+          "Blätter, Stifte, Gefühlsrad, Stempel",
+          "Popcorn oder Obst, Getränke"
+        ],
+        "vorbereitung": [
+          "Vorführrechte und Altersfreigabe mit der Responsable klären.",
+          "Szenen vorab ansehen, Anfang und Ende notieren, Untertitel testen.",
+          "Klären, wen Szene 2 belastet; diese Person vorher ansprechen.",
+          "Karten kopieren, Linie aus Malerkrepp kleben; ein harmloses eigenes Glaubenssatz-Beispiel überlegen."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühlsrad, Zahl und Kopf-Lautstärke" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und neues Kapitel: Meine Gedanken" },
+          { "min": "15–45", "phase": "uebung", "titel": "Ben und Mila, Kamera-Check und Glaubenssätze" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Ein Schritt nach vorn mit geschlossenen Augen" },
+          { "min": "50–85", "phase": "uebung", "titel": "Film: Rileys Selbstbild und die Panik im Spiel" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Danke, Kopf" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad, Zahl und Kopf-Lautstärke",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Jede Person zeigt ihr Wort im Gefühlsrad und nennt ihre Zahl von 0 bis 100; die Leitung beginnt. Neu ist heute eine dritte Angabe: Wie laut ist es gerade im Kopf – leise, mittel oder laut? Die Antworten werden nicht kommentiert, höchstens mit einem Nicken bestätigt.",
+            "sagen": [
+              "Gefühl, Zahl und Kopf-Lautstärke – mehr braucht es heute nicht.",
+              "Laut heißt: Da ist viel los, die Gedanken rattern. Leise heißt: eher ruhig da oben."
+            ],
+            "tipp": "Die Frage nach der Kopf-Lautstärke führt ohne Erklärung zum Thema: Gedanken sind immer da, auch wenn niemand über sie spricht.",
+            "wennEsKippt": "Nennen alle aus Spaß „laut“, mitlachen und gelten lassen: Auch ein voller Kopf ist eine Auskunft. Liegt jemand schon beim Ankommen bei 70 oder mehr, nicht nachfragen, sondern ein Glas Wasser oder einen Skill anbieten.",
+            "blatt": "ff-gefuehlsrad"
+          },
+          {
+            "titel": "Rückblick, Mission und neues Kapitel: Meine Gedanken",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Zur Mission fragen: Kam dein Moment – hattest du die Notfallkarte dabei oder hast du einen Ampel-Check gemacht, und wie war die Kletterhalle? Daumen hoch, Mitte oder runter; eine Stimme erzählt. Dann das neue Kapitel nennen: Was denke ich über mich – und stimmt das?",
+            "sagen": [
+              "Ihr habt viele Werkzeuge für den Moment, in dem die Welle hochgeht.",
+              "Manchmal macht aber nicht die Situation die Welle, sondern der Gedanke dazu – den schauen wir uns jetzt an."
+            ],
+            "tipp": "Die Leitfrage groß aufschreiben und bis zum Ende der Stunde stehen lassen: Am Schluss lässt sich zeigen, was sich an der Antwort bewegt hat."
+          },
+          {
+            "titel": "Ben und Mila, Kamera-Check und Glaubenssätze",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Erst das Modell: Die Leitung spielt Ben zweimal, jede Person hält eine Denkblase hoch, dann ordnet die Gruppe Situation, Gedanke, Gefühl und Verhalten. Danach der Begriff: Ein Glaubenssatz ist ein Satz über sich selbst, den man lange für wahr hält.",
+            "sagen": [
+              "Dieselbe Situation, zwei Gedanken – und plötzlich zwei ganz verschiedene Abende.",
+              "Ein Gedanke ist eine Vermutung, keine Tatsache: Eine Kamera könnte eine Tatsache filmen."
+            ],
+            "punkte": [
+              "Ben und Mila (8 Min.): Ben schreibt Mila, am Abend steht da „gelesen, keine Antwort“; die Leitung spielt Version A mit der Denkblase „Die hat keinen Bock mehr auf mich.“ und Version B mit „Wahrscheinlich ist sie noch beim Training.“, nach jeder Version nennt die Gruppe Gefühl und Verhalten (Aufgabe 1).",
+              "Kamera-Check (7 Min.): Die Leitung liest Sätze vor – „Mila hat nicht geantwortet“, „Mila ist sauer auf mich“, „Ich habe im Test 8 von 20 Punkten“, „Die lachen über mich“ –, die Gruppe zeigt Daumen hoch für Tatsache und Daumen quer für Vermutung (Aufgabe 2).",
+              "Glaubenssatz (8 Min.): Die Leitung erzählt Lucas Geschichte – in der Kantine wollte er ein Mädchen ansprechen, traute sich nicht, und daraus wurde „Ich werde nie eine Beziehung haben“ – und ihr eigenes erledigtes Beispiel; die Gruppe sagt, ob der Satz stimmt und wie aus einem einzigen Moment ein Satz wird.",
+              "Hilft oder bremst? (4 Min.): Zwei Spalten an die Tafel – hilfreich und bremsend – mit je zwei Beispielen aus Luca, Ben und dem Kamera-Check; mit Religion haben Glaubenssätze nichts zu tun.",
+              "Herkunft (3 Min.): Woher kommt ein bremsender Satz? Eine einzige Erfahrung, Sprüche von anderen, Vergleiche, Social Media, früher ein Schutz – jede Person kreuzt in Aufgabe 3 an."
+            ],
+            "tipp": "Selbst ein harmloses, längst erledigtes Beispiel erzählen, etwa „Ich kann nicht singen“: Das macht das Thema greifbar, ohne dass jemand von sich erzählen muss.",
+            "wennEsKippt": "Kommt ein Spruch wie „Ich bin halt dumm, ist so“, nicht widersprechen und nicht belehren: ruhig sagen, dass viele diesen Satz kennen, und ihn ohne Namen in die Spalte „bremsend“ schreiben. Wird ein Beispiel auf eine echte Person aus der Gruppe bezogen, freundlich stoppen: Heute geht es um Ben und Luca, nicht um uns.",
+            "blatt": "a7-gedanke-macht-den-unterschied"
+          },
+          {
+            "titel": "Ein Schritt nach vorn mit geschlossenen Augen",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen mit etwas Abstand an der Klebebandlinie, Augen zu oder Blick auf den Boden. Die Leitung liest vorgegebene Sätze langsam vor, wer sich angesprochen fühlt, macht einen Schritt nach vorn und geht zurück; nach jedem Satz sagt die Leitung nur: Diesen Satz kennen sehr viele Menschen – und macht selbst mit.",
+            "sagen": [
+              "Mach einen Schritt nach vorn, wenn du schon einmal gedacht hast: „Das schaffe ich eh nicht.“ – und geh danach wieder zurück.",
+              "Niemand kontrolliert, ob du gehst. Du darfst bei jedem Satz stehen bleiben."
+            ],
+            "punkte": [
+              "Heute wird ein guter Tag. (zum Ausprobieren)",
+              "Das schaffe ich eh nicht.",
+              "Die anderen sind besser als ich.",
+              "Ich muss perfekt sein.",
+              "Wenn ich übe, werde ich besser."
+            ],
+            "tipp": "Mit drei Personen keine Mengen nennen, sondern immer denselben Satz sagen: So bleibt jede Antwort privat, und die Botschaft kommt an – diese Sätze sind normal, niemand ist allein damit.",
+            "wennEsKippt": "Wird gekichert oder geblinzelt, die Regel wiederholen: Augen zu, damit alle ehrlich sein können. Bleibt es unruhig, im Sitzen weitermachen: Köpfe auf die Arme, bei einem Satz nur kurz die Hand heben."
+          },
+          {
+            "titel": "Film: Rileys Selbstbild und die Panik im Spiel",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Zwei kurze Ausschnitte aus „Alles steht Kopf 2“ (2024) zeigen, wie Sätze über sich selbst ein Selbstbild bauen und wie ein lauter Satz alles übernimmt. Danach sortieren die Jugendlichen Glaubenssätze auf Karten und suchen zu bremsenden Sätzen hilfreiche.",
+            "sagen": [
+              "Achtet in der ersten Szene darauf: Aus welchen Sätzen über sich selbst besteht Rileys Selbstbild?",
+              "Achtet in der zweiten Szene darauf: Welcher Satz ist am lautesten – und was macht er mit Rileys Körper und mit dem, was sie tut?"
+            ],
+            "punkte": [
+              "Szene 1: Rileys Selbstbild (9 Min.): Der Ausschnitt zeigt, wie aus Rileys Erlebnissen Überzeugungen über sie selbst werden, die zusammen ihr Selbstbild bilden – etwa „Ich bin eine gute Person“; danach nennt jede Person einen Satz, den sie erkannt hat, und die Gruppe sagt, was solche Sätze in Riley auslösen.",
+              "Szene 2: Panik im Spiel (10 Min.): Im Ausschnitt übernimmt ein neues, sehr lautes Gefühl das Steuer, und Riley erlebt im Spiel eine Panikattacke; danach hält die Gruppe fest, was Riley im Körper merkt, welcher Satz laut ist und was ihr helfen könnte – ein Körper-Skill, ein Sinnes-Skill, „Danke, Kopf“.",
+              "Sortierspiel (10 Min.): Reihum zieht jede Person eine Satzkarte, liest sie vor, legt sie auf „Hilft“, „Kommt drauf an“ oder „Bremst“ und begründet kurz; wer anders denkt, darf mit Begründung verschieben.",
+              "Gegenstücke (4 Min.): Zu jeder bremsenden Karte suchen alle das hilfreiche Gegenstück – glaubhaft, nicht übertrieben –, die Paare kommen zusammen in den Umschlag.",
+              "Herkunft und Skill-Idee (2 Min.): Zu einer bremsenden Karte raten, woher sie kommen könnte und welcher Skill aus dem Koffer in so einem Moment zuerst hilft."
+            ],
+            "tipp": "Anfang und Ende der Szenen vorher am Abspielgerät notieren und Untertitel anbieten; kennt jemand den Film, bekommt er eine Expertenrolle: Er ergänzt, was davor passiert ist, nur das Ende bleibt geheim.",
+            "wennEsKippt": "Findet jemand den Film „für Kinder“, das ernst nehmen und eine Expertenrolle anbieten: Du achtest darauf, was der Film über Gedanken richtig und was er übertrieben darstellt. Wird jemand bei Szene 2 still oder unruhig, die Szene pausieren oder ausblenden, in der Pause kurz nachfragen und nichts vor der Gruppe vertiefen.",
+            "blatt": "a7-glaubenssatz-karten"
+          },
+          {
+            "titel": "Skill: Danke, Kopf",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Danke, Kopf ist ein Kopf-Skill für Momente, in denen ein bremsender Satz laut wird und keine Zeit zum Prüfen bleibt: den Satz bemerken, „Mein Kopf sagt gerade: …“ davorsetzen, „Danke, Kopf“ antworten und weitermachen (mit Zahl vorher und nachher höchstens 5 Minuten). Danach der Abschluss mit Skills-Pass, Mission und eigenem Moment.",
+            "sagen": [
+              "Bemerke den Satz, der gerade da ist, und setz davor: „Mein Kopf sagt gerade: …“ – zum Beispiel: Das schaffe ich eh nicht.",
+              "Antworte ihm: „Danke, Kopf. Hab’s gehört.“ – und mach weiter mit dem, was du gerade tust."
+            ],
+            "punkte": [
+              "Danke, Kopf (5 Min.): Zahl vorher; mit dem Satz von der Tafel die drei Schritte langsam anleiten, alle sprechen innerlich mit, dann noch einmal mit einem Satz von den Karten; Zahl nachher.",
+              "Rückmeldung (2 Min.): Wann könnte das helfen – bei einer Nachricht ohne Antwort, vor einem Test, nach einem Lachen auf dem Gang?",
+              "Skills-Pass (4 Min.): Ein Satz zu „Welcher Satz von heute bleibt bei mir hängen?“ – zum Beispiel „Gedanken sind Vermutungen, keine Tatsachen“ –, dann der Stempel.",
+              "Mission und Moment (3 Min.): Die Leitung sagt die Mission an; jede Person wählt ihren Moment und schreibt ihn ins Heft: „Mein Moment: Wenn …“.",
+              "Ausblick (1 Min.): Nächste Woche werdet ihr zu Detektiven und prüft einen bremsenden Satz mit Beweisen; niemand muss dafür etwas Privates laut sagen."
+            ],
+            "tipp": "Wer mit dem Satz nicht arbeiten mag, bleibt bei dem von der Tafel: Es geht nicht darum, etwas zu beichten, sondern einen Gedanken als Gedanken zu hören.",
+            "wennEsKippt": "Wird gelacht, kurz mitlachen und still wiederholen – innerlich, nicht laut. Niemand muss die Augen schließen.",
+            "blatt": "ff-skills-pass"
+          }
+        ],
+        "bruecke": "Nächste Woche werdet ihr zu Detektiven: Ihr verhört einen bremsenden Satz, sammelt Beweise und formuliert einen neuen, glaubhaften Satz.",
+        "mission": "Sag einmal still „Danke, Kopf“, wenn ein bremsender Satz auftaucht.",
+        "hintergrund": "Das ABC-Modell zeigt, dass nicht das Ereignis, sondern seine Bewertung Gefühl und Verhalten prägt (Ellis, 1962); tiefer liegende Überzeugungen über sich selbst – im Kurs Glaubenssätze – färben, welche Gedanken überhaupt auftauchen (Beck, 2011). Im Jugendalter wird das Selbstbild abstrakter und kritischer (Harter, 2012), deshalb arbeitet die Gruppe zuerst mit Figuren, Karten und einem Film. Ein Gedanke wird als Gedanke benannt, nicht bekämpft (Hayes et al., 2012).",
+        "quellen": [
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford."
+        ],
+        "achtung": "Vorführrechte und Altersfreigabe vorab klären und beide Szenen vorher ansehen. Glaubenssätze berühren das Selbstwertgefühl, und Szene 2 zeigt eine Panikattacke, die bei Jugendlichen mit Angst- oder Panikerfahrung stark wirken kann: vorher überlegen, wen es betrifft, zuschauen oder aussetzen erlauben, die Szene bei Unruhe ausblenden und nach dem Film ansprechbar sein. Eigene Sätze werden heute nicht erfragt, der Schritt nach vorn läuft nur mit vorgegebenen Sätzen; bei Selbstabwertung („Ich bin nichts wert“) oder Hinweisen auf Selbstverletzung, Suizidgedanken, Gewalt oder Missbrauch nicht in der Gruppe vertiefen, sondern noch am selben Tag ein Einzelgespräch führen und die zuständige Leitung (Responsable) informieren.",
+        "differenzierung": {
+          "leichter": "Die Szenen laufen mit Untertiteln oder in der Sprache, die alle gut verstehen, und im Sortierspiel genügt es, eine Karte zu wählen und „hilft“ oder „bremst“ zu zeigen.",
+          "schwerer": "Zu einer bremsenden Karte drei Beweise suchen, die dagegen sprechen, und einen Satz formulieren, der glaubhaft ist und Platz für „noch“ lässt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Kopf-Lautstärke und Rückblick auf die Mission (8 Min.), Ben und Mila mit Kamera-Check und Glaubenssatz (12 Min.), Szene 1 mit Sortierspiel (15 Min.), Skill Danke, Kopf mit Skills-Pass, Mission und Moment (15 Min.). Szene 2, der Schritt nach vorn und die Herkunft der Sätze entfallen; wer mag, sieht Szene 2 in einer späteren Stunde."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-gedanke-macht-den-unterschied",
+      "bereich": "skills",
+      "thema": "gedanken",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "25 Min.",
+      "eldib": [],
+      "schlagworte": ["Gedanken", "Glaubenssätze", "Vermutung und Tatsache", "Selbstbild", "Annexe"],
+      "bild": "icon:brain",
+      "kurs": ["a7-e15"],
+      "de": {
+        "titel": "Der Gedanke macht den Unterschied",
+        "untertitel": "Gleiche Lage, anderer Gedanke, anderer Ausgang.",
+        "bausteine": [
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 0,
+            "items": [
+              { "titel": "Situation" },
+              { "titel": "Gedanke" },
+              { "titel": "Gefühl" },
+              { "titel": "Verhalten" }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Ein Gedanke ist eine Vermutung, keine Tatsache. Ein Glaubenssatz ist ein Satz über dich, den du lange glaubst. Manche helfen, manche bremsen – fast alle kennen solche Sätze."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Verbinde jeden Gedanken von Ben mit dem, was er fühlt und tut.",
+            "hinweis": "Ben schreibt Mila. Am Abend steht da: gelesen, keine Antwort.",
+            "symbole": ["verbinden"]
+          },
+          {
+            "art": "zuordnen",
+            "titel": ["Ben denkt …", "… fühlt und tut"],
+            "links": ["„Die hat keinen Bock mehr auf mich.“", "„Wahrscheinlich ist sie noch beim Training.“"],
+            "rechts": ["gelassen – macht etwas anderes, fragt morgen nach", "gekränkt – schreibt nicht mehr, ist mies drauf"]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Tatsache oder Vermutung? Kreuze an.",
+            "hinweis": "Eine Kamera könnte eine Tatsache filmen.",
+            "symbole": ["ankreuzen"]
+          },
+          {
+            "art": "einschaetzung",
+            "items": ["Mila hat nicht geantwortet.", "Mila ist sauer auf mich.", "Die lachen über mich.", "Ich habe im Test 8 von 20 Punkten."],
+            "optionen": ["Tatsache", "Vermutung"]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Kreuze an, woher ein bremsender Satz kommen kann.",
+            "symbole": ["ankreuzen"]
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 3,
+            "items": ["eine einzige Erfahrung", "Sprüche von anderen", "Vergleiche", "Social Media", "früher ein Schutz"]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen verstehen an erfundenen Figuren das Modell Situation – Gedanke – Gefühl – Verhalten, unterscheiden Vermutung und Tatsache und nennen, woher bremsende Sätze kommen können.",
+          "ablauf": [
+            "Einheit 15, Schritt 3: Ben und Mila zweimal spielen und das Modell an die Tafel; Aufgabe 1 verbinden, danach der Kamera-Check mit Aufgabe 2 und zum Schluss die Herkunft in Aufgabe 3.",
+            "Schritt 5: im Sortierspiel noch einmal raten, woher eine bremsende Karte kommen könnte; das Blatt bleibt dabei offen auf dem Tisch.",
+            "Zum Schluss den Kasten „Gut zu wissen“ lesen: Gedanken sind Vermutungen, keine Tatsachen; das Blatt wird nicht eingesammelt."
+          ],
+          "hintergrund": "Das Blatt folgt dem kognitiven Modell: Nicht die Situation allein, sondern ihre Bewertung prägt Gefühl und Verhalten (Ellis, 1962; Beck, 2011). Grundüberzeugungen – im Kurs Glaubenssätze – färben, welche Gedanken auftauchen. Im Jugendalter wird das Selbstbild abstrakter und kritischer (Harter, 2012); deshalb steht am Anfang die Unterscheidung von Vermutung und Tatsache an erfundenen Figuren.",
+          "quellen": [
+            "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+            "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+            "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford."
+          ],
+          "material": "Stifte, Tafelbild aus Schritt 3"
+        }
+      }
+    },
+    {
+      "id": "a7-glaubenssatz-karten",
+      "bereich": "skills",
+      "thema": "gedanken",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": ["Glaubenssätze", "Sortierspiel", "hilft oder bremst", "Annexe"],
+      "bild": "icon:bubble",
+      "kurs": ["a7-e15"],
+      "de": {
+        "titel": "Karten: Hilft oder bremst?",
+        "untertitel": "Kopiervorlage – einmal kopieren und ausschneiden, die Karten in einen Umschlag stecken",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Zwölf Satzkarten, drei Legekarten, eine leere Karte für einen eigenen Satz der Gruppe und fünf Herkunftskarten. Die Gruppe legt jede Satzkarte auf „Hilft“, „Kommt drauf an“ oder „Bremst“ und begründet. Es geht um Sätze, nicht um Personen.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 64,
+            "karten": [
+              { "text": "Wenn ich übe, werde ich besser." },
+              { "text": "Ich kann um Hilfe bitten." },
+              { "text": "Ich bin ein guter Freund oder eine gute Freundin." },
+              { "text": "Fehler gehören zum Lernen dazu." },
+              { "text": "Das schaffe ich eh nicht." },
+              { "text": "Die anderen sind besser als ich." },
+              { "text": "Keiner versteht mich." },
+              { "text": "Ich bin nicht gut genug." },
+              { "text": "Ich muss perfekt sein." },
+              { "text": "Mir ist alles egal." },
+              { "text": "Ich vertraue niemandem." },
+              { "text": "Ich muss immer stark sein." }
+            ]
+          },
+          { "art": "text", "text": "Legekarten und Herkunft", "klein": true },
+          {
+            "art": "karten",
+            "spalten": 4,
+            "hoehe": 62,
+            "karten": [
+              { "titel": "Hilft" },
+              { "titel": "Kommt drauf an" },
+              { "titel": "Bremst" },
+              { "titel": "Unser Satz:" },
+              { "titel": "eine einzige Erfahrung" },
+              { "titel": "Sprüche von anderen" },
+              { "titel": "Vergleiche" },
+              { "titel": "Social Media" },
+              { "titel": "früher ein Schutz" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Zwölf Satzkarten, drei Legekarten, eine leere Karte und fünf Herkunftskarten zum Sortieren: Welche Sätze über sich selbst helfen, welche bremsen und woher sie kommen können.",
+          "ablauf": [
+            "Einheit 15: einmal auf festes Papier kopieren, ausschneiden und in einen Umschlag legen; ein Satz genügt für drei Jugendliche.",
+            "Schritt 5: die Legekarten auslegen, reihum Satzkarten ziehen, vorlesen, legen und begründen; wer anders denkt, verschiebt mit Begründung.",
+            "Karten nie Personen zuschreiben: Heute geht es um Sätze, nicht um Menschen; die Karten kommen in den Umschlag und werden später wieder gebraucht."
+          ],
+          "hintergrund": "Das kognitive Modell unterscheidet schnelle Gedanken in einer Situation von tiefer liegenden Überzeugungen über die eigene Person (Beck, 2011). Die Karten arbeiten mit fremden Sätzen statt mit eigenen: Das schafft Abstand (Kross & Ayduk, 2017) und zeigt, dass viele dieselben Sätze kennen. Das Feld „Kommt drauf an“ ist das ergiebigste: Mancher Satz hat früher geschützt und bremst heute.",
+          "quellen": [
+            "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+            "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+          ],
+          "material": "Festes Papier, Schere, Umschlag"
+        }
+      }
+    }
+  ]
+}

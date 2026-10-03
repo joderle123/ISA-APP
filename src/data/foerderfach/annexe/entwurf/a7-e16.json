@@ -1,0 +1,251 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e16",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-kritischer-detektiv"],
+      "vorlagen": ["a7-detektiv-fallakten"],
+      "woerter": [
+        { "de": "der Beweis", "fr": "der Beweis" },
+        { "de": "die Tatsache", "fr": "die Tatsache" },
+        { "de": "das Urteil", "fr": "das Urteil" },
+        { "de": "die Vermutung", "fr": "die Vermutung" },
+        { "de": "prüfen", "fr": "prüfen" }
+      ],
+      "de": {
+        "titel": "Der kritische Detektiv",
+        "kurz": "Einen bremsenden Satz wie ein Detektiv verhören, Beweise für und gegen ihn sammeln und einen neuen, glaubhaften Satz formulieren – erst an erfundenen Fällen, dann am eigenen Satz.",
+        "ziele": [
+          "unterscheiden Tatsachen von Gefühlen, Vermutungen und Sprüchen und sammeln Beweise für und gegen einen Satz",
+          "formulieren nach drei Regeln einen glaubhaften neuen Satz und schätzen den alten vorher und nachher ein",
+          "üben die freundliche Stimme als Skill für Momente, in denen die innere Stimme streng wird"
+        ],
+        "material": [
+          "Gefühlsrad und Anspannungsskala 0–100",
+          "Fallakten (Vorlage), ausgeschnitten; Heft-Blatt je Person",
+          "Tafel oder Flipchart: Waage und Plakat mit den drei Regeln",
+          "Karteikarten im Kreditkartenformat, Buntstifte, Klebeband oder Laminiergerät",
+          "weicher Ball, leise Musik ohne Gesang",
+          "Skills-Pass und Stempel"
+        ],
+        "vorbereitung": [
+          "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln für den neuen Satz groß auf ein Plakat, es hängt bis Einheit 17.",
+          "Fallakten einmal kopieren und ausschneiden; Kamera-Test und Lösungen behält die Leitung; einen Fall, der einer Lage in der Gruppe ähnelt, durch die Reserve ersetzen.",
+          "Zwei Wandseiten beschriften: „Kamera filmt es“ und „Kamera sieht nichts“ (für den Kamera-Test)."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühlsrad, Zahl und Detektivfrage" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Mission und Thema: Heute seid ihr Detektive" },
+          { "min": "15–45", "phase": "uebung", "titel": "Detektiv-Training: Kamera-Test, Waage, Fallakten" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Bewegung: Gedankenstopp-Ball" },
+          { "min": "50–85", "phase": "uebung", "titel": "Mein Satz vor Gericht – und mein Kärtchen" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Die freundliche Stimme" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad, Zahl und Detektivfrage",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Jede Person zeigt ihr Gefühl auf dem Gefühlsrad und nennt ihre Anspannung von 0 bis 100; die Leitung macht mit und beginnt. Dazu die Detektivfrage der Woche: Ist dir ein Satz wie „Ich schaff das eh nicht“ begegnet – im Kopf, in einem Gespräch, in einem Song oder in einem Video? Nur erzählen, nicht erklären.",
+            "sagen": [
+              "Gefühl und Zahl – und wer mag: Ist euch diese Woche ein Satz begegnet, im Kopf, in einem Lied oder in einem Video?",
+              "Ich fange an: 30, ich bin neugierig auf heute."
+            ],
+            "tipp": "Songtexte und Videos sind ergiebig: Sätze wie „Mich versteht eh keiner“ tauchen dort ständig auf. Liegt jemand über 70, zuerst einen Körper-Skill aus dem Skills-Koffer machen – Gedanken prüfen klappt nur im grünen Bereich."
+          },
+          {
+            "titel": "Mission und Thema: Heute seid ihr Detektive",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – und was hast du gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz, niemand muss es geschafft haben. Dann das Thema nennen: Heute prüft die Gruppe Sätze wie Detektive.",
+            "sagen": [
+              "Kam euer Moment – und was habt ihr gemacht: Daumen hoch, Mitte oder runter?",
+              "Heute prüft ihr, ob eure innere Stimme für ihre Behauptungen auch Beweise hat."
+            ],
+            "tipp": "Daumen runter ist keine Niederlage: Mancher Moment kommt in einer Woche nicht, der Plan gilt weiter."
+          },
+          {
+            "titel": "Detektiv-Training: Kamera-Test, Waage, Fallakten",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Zuerst das Bild: Ein Detektiv glaubt nichts, nur weil es jemand behauptet – auch nicht der eigenen inneren Stimme; er sammelt Beweise für beide Seiten und urteilt erst dann (4 Min.). Als Modell vier Sorten von Sätzen: Tatsache, Gefühl, Vermutung und Spruch – nur die Tatsache ist ein Beweis. Danach üben alle an erfundenen Fällen, bevor es an den eigenen Satz geht.",
+            "sagen": [
+              "Ein Detektiv ist weder nett noch gemein – er will nur wissen, was stimmt.",
+              "Beweis oder nicht: Könnte eine Kamera das filmen?"
+            ],
+            "punkte": [
+              "Übung (7 Min.): Kamera-Test – Die Leitung liest acht Aussagen von der Vorlage vor, alle gehen zur Wand „Kamera filmt es“ oder „Kamera sieht nichts“, zum Beispiel „22 von 60 Punkten im Test“ gegen „Ich bin dumm“.",
+              "Übung (7 Min.): Fall Mathis – Die Leitung liest Spuren vor, die Gruppe zeigt mit dem Arm, auf welche Seite der Waage sie gehören oder ob sie durchgestrichen werden; am Ende steht nicht „Ich bin dumm“, sondern „Mathe fällt mir schwer“.",
+              "Übung (6 Min.): Fallakten – Jede Person bekommt eine andere Fallakte, sortiert die sechs Spuren in dafür, dagegen und kein Beweis und schreibt auf, was wirklich stimmt.",
+              "Übung (6 Min.): Gedanken-Gericht – Die Leitung spielt die innere Stimme der Fallakte und beharrt auf dem Satz; die Person verhört sie mit ihren Spuren, bis die Stimme einen kleineren Satz zugibt, die anderen beiden sind Geschworene (Daumen)."
+            ],
+            "tabelle": {
+              "spalten": ["Beweise dafür", "Beweise dagegen"],
+              "zeilen": [
+                ["22 von 60 Punkten im letzten Mathetest", "Im Test davor waren es 15 – es wird besser"],
+                ["Bei langen Textaufgaben braucht er länger als andere", "Er repariert die Mopeds seiner Freunde"],
+                ["", "Er kennt alle Fußballergebnisse der Saison auswendig"],
+                ["", "Im Praktikum wurde er gelobt, weil er schnell gelernt hat"]
+              ]
+            },
+            "tipp": "Die Beweise für den Satz ernst nehmen und stehen lassen: Meist stützen sie nur einen kleineren Satz – genau daraus wird später der neue.",
+            "wennEsKippt": "Sagt jemand „Mathis ist halt dumm, 22 Punkte“, nicht empört reagieren, sondern fragen: Tatsache oder Urteil? Wird aus dem neuen Satz Schönrederei („Ich bin der Beste“), zurückfragen: Glaubst du dir das – und was davon stimmt wirklich?",
+            "blatt": "a7-detektiv-fallakten"
+          },
+          {
+            "titel": "Bewegung: Gedankenstopp-Ball",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen im Kreis, die Leitung liest einen bremsenden Satz von einer Fallakte vor (nie einen persönlichen) und wirft den Ball. Wer fängt, sagt „Stopp!“ und einen glaubhaften Gegensatz; die anderen prüfen mit dem Daumen, ob er stimmen könnte – „Ich bin der Beste“ zählt nicht. Die Gruppe spielt zusammen: Schafft sie in drei Minuten zehn gute Gegensätze?",
+            "sagen": [
+              "Stopp! Und jetzt: Was sagst du diesem Satz – glaubhaft, nicht übertrieben?"
+            ],
+            "tipp": "Bei wenig Energie im Sitzen spielen: Wer den Ball bekommt, antwortet. Werden die Gegensätze albern oder gegen Personen gerichtet, kurz anhalten: Gegensätze sagen etwas über den Satz, nie über jemanden."
+          },
+          {
+            "titel": "Mein Satz vor Gericht – und mein Kärtchen",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Jede Person wählt still einen mittleren Satz – einen eigenen oder eine Karte – und prüft ihn auf dem Heft-Blatt wie ein Detektiv; niemand muss sagen, welchen. Am Ende steht ein neuer Satz auf einem Kärtchen, das in den Alltag mitgeht.",
+            "sagen": [
+              "Ihr entscheidet, welchen Satz ihr vor Gericht stellt – zum Üben reicht ein mittlerer, und niemand muss wissen, welcher.",
+              "Schreib Gegenbeweise auch dann auf, wenn du selbst noch nicht ganz überzeugt bist."
+            ],
+            "punkte": [
+              "Übung (3 Min.): Satz wählen – Musik an, dreimal gemeinsam ausatmen, Ordner als Sichtschutz; Aufgabe 1: den Satz aufschreiben und notieren, wie sehr man ihn glaubt, von 0 bis 10.",
+              "Übung (12 Min.): Beweise auf die Waage – allein Aufgabe 2: Beweise dafür und dagegen sammeln; die Leitung geht herum und stellt leise Detektivfragen, wenn eine Seite leer bleibt: Wann war der Satz einmal nicht wahr? Was würde eine gute Freundin sagen?",
+              "Übung (8 Min.): Urteil und neuer Satz – Aufgabe 3: Was stimmt wirklich? Dann ein neuer Satz nach den drei Regeln und die Zahl für den alten Satz noch einmal; schon ein Schritt von 8 auf 6 ist ein Erfolg.",
+              "Übung (7 Min.): Kärtchen – Den neuen Satz auf eine Karteikarte schreiben und gestalten; wer ihn nicht offen tragen mag, schreibt ihn auf die Rückseite; die Leitung laminiert die Karte oder klebt Klebeband darüber.",
+              "Übung (5 Min.): Daumen-Prüfung – Wer mag, liest den neuen Satz vor, die Gruppe prüft mit dem Daumen die drei Regeln: glaubhaft, sagt, was ich tue, lässt Platz fürs Besserwerden („noch“, „wenn ich übe“)."
+            ],
+            "tipp": "Wer mit dem Schreiben Mühe hat, zeichnet oder schreibt Stichworte; der neue Satz darf von der Tafel übernommen und in der eigenen Sprache geschrieben werden.",
+            "wennEsKippt": "Bleibt die rechte Seite der Waage leer („Da gibt es nichts“), nicht überreden, sondern die Detektivfragen einzeln stellen und kleine Belege gelten lassen; wer heute nicht an den eigenen Satz will, nimmt eine Karte. Hat ein Satz einen wahren Kern, etwa weil jemand wirklich ausgegrenzt wird, nicht wegdiskutieren, sondern ernst nehmen und nach der Stunde besprechen, wer helfen kann.",
+            "blatt": "a7-kritischer-detektiv"
+          },
+          {
+            "titel": "Skill: Die freundliche Stimme",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Ein Skill für Momente, in denen die innere Stimme streng wird (höchstens 5 Min., still höchstens 3 Min.): Alle sitzen bequem, die Leitung spricht die drei Sätze langsam vor, die Jugendlichen sprechen sie innerlich mit – wer mag, mit einer Hand auf der Brust oder dem Unterarm. Danach der Abschluss (10 Min.): Skills-Pass, Mission und eigener Moment.",
+            "sagen": [
+              "Ihr müsst die Sätze nicht glauben – probiert nur aus, wie sie sich anfühlen.",
+              "Sag sie so, wie du sie einem guten Freund sagen würdest."
+            ],
+            "punkte": [
+              "Die drei Sätze: „Das ist gerade schwer.“ – „So geht es vielen. Ich bin damit nicht allein.“ – „Was brauche ich jetzt? Ich darf freundlich zu mir sein.“",
+              "Skill (5 Min.): erst still mit den drei Sätzen, dann laut zu zweit mit einer kleinen Panne – Bus verpasst, Test verpatzt –, die Leitung macht mit.",
+              "Skills-Pass (4 Min.): ein Satz zur Frage an der Tafel – Welche Detektivfrage hilft mir am meisten? – zum Beispiel: Ein Gedanke ist eine Vermutung, ich kann ihn prüfen; dann der Stempel.",
+              "Mission und Moment (6 Min.): die Mission vorlesen; jede Person überlegt, wo sich der alte Satz am ehesten meldet, und schreibt den Moment in die Spalte „Mein Moment: Wenn …“; Ausblick: Das Kärtchen geht mit und wird nächste Stunde gebraucht."
+            ],
+            "wennEsKippt": "Wird gekichert („Ich red doch nicht mit mir selbst“), gelassen bleiben: Das tut ihr den ganzen Tag – die Frage ist nur, in welchem Ton. Wird jemand während der Übung traurig, leise anbieten, die Augen zu öffnen und die Füße fest auf den Boden zu stellen, und nach der Stunde nachfragen."
+          }
+        ],
+        "bruecke": "Nächstes Mal geht ihr mit euren Kärtchen in die Stadt und testet, was der neue Satz verändert.",
+        "mission": "Lies deinen neuen Satz vom Kärtchen – und schau, was dann passiert.",
+        "hintergrund": "Belege für und gegen einen Gedanken zu prüfen und die Überzeugung vorher und nachher in Zahlen einzuschätzen, ist eine Kerntechnik der kognitiven Verhaltenstherapie (Beck, 2011). Fragen wie „Was würde eine gute Freundin sagen?“ schaffen Abstand zum eigenen Erleben und senken die Belastung beim Nachdenken über Schwieriges (Kross & Ayduk, 2017). Die freundliche Stimme folgt dem Konzept des Selbstmitgefühls (Neff, 2003).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136.",
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+        ],
+        "achtung": "Beim Beweise-Sammeln kann deutlich werden, dass ein Satz einen wahren Kern hat, etwa wenn jemand wirklich ausgegrenzt oder abgewertet wird: nicht wegdiskutieren und nicht zum Umformulieren drängen, sondern ernst nehmen und im Einzelgespräch klären, wer helfen kann. Gedanken-Gericht und Gedankenstopp-Ball arbeiten nur mit erfundenen Sätzen, persönliche Blätter bleiben privat und werden nicht gelesen. Bei Hinweisen auf starke Selbstabwertung, Selbstverletzung, Suizidgedanken oder Gewalt nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "differenzierung": {
+          "leichter": "Die Fallakten liest eine Person vor, die gut liest, auf dem Blatt genügen Stichworte oder Zeichnungen, und der neue Satz darf von der Tafel übernommen werden.",
+          "schwerer": "Zu einem zweiten Satz einen Wenn-dann-Plan schreiben oder bei den Fallakten die Schiedsrichter-Rolle übernehmen und begründen, welche Regel ein neuer Satz verletzt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Kamera-Test und Fall Mathis (10 Min.), eine Fallakte mit Gedanken-Gericht (8 Min.), Mein Satz vor Gericht mit Kärtchen (20 Min.), freundliche Stimme, Skills-Pass und Mission (7 Min.). Der Gedankenstopp-Ball entfällt."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-kritischer-detektiv",
+      "bereich": "skills",
+      "thema": "gedanken",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Glaubenssätze", "Beweise prüfen", "Umformulieren", "Gedanken-Gericht"],
+      "bild": "icon:search",
+      "kurs": ["a7-e16"],
+      "de": {
+        "titel": "Der kritische Detektiv",
+        "untertitel": "Stimmt das wirklich? Ein Detektiv prüft.",
+        "bausteine": [
+          { "art": "info", "symbol": "hilfe", "titel": "Du entscheidest, was du teilst.", "text": "Nimm einen eigenen Satz oder eine Karte. Niemand muss wissen, welchen." },
+          { "art": "aufgabe", "text": "Schreib deinen verdächtigen Satz auf – und wie sehr du ihn glaubst.", "symbole": ["schreiben"] },
+          { "art": "satzanfaenge", "items": ["Mein Satz: …", "Ich glaube ihn so sehr, von 0 bis 10: …"], "linien": 1 },
+          { "art": "aufgabe", "text": "Sammle Beweise für beide Seiten.", "hinweis": "Ein Beweis ist wirklich passiert – eine Kamera könnte es filmen. Gefühle, Vermutungen und Sprüche zählen nicht.", "symbole": ["schreiben"] },
+          { "art": "waage", "links": "Beweise: Er stimmt", "rechts": "Beweise: Er stimmt nicht (immer)", "zeilen": 3 },
+          { "art": "aufgabe", "text": "Fälle dein Urteil und schreib einen neuen Satz.", "hinweis": "Drei Regeln: Du kannst ihn glauben. Er sagt, was du tun kannst. Er lässt Platz fürs Besserwerden – „noch“, „wenn ich übe“.", "symbole": ["schreiben"] },
+          { "art": "satzanfaenge", "items": ["Wirklich stimmt nur: …", "Mein neuer Satz: …", "Den alten Satz glaube ich jetzt, von 0 bis 10: …"], "linien": 1 },
+          { "art": "info", "symbol": "wissen", "titel": "Gut zu wissen", "text": "Dein Kopf sucht gern Beweise für das, was du schon glaubst, und übersieht die Gegenbeweise. Ein Detektiv schaut auf beide Seiten." }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen prüfen einen selbst gewählten Satz wie Detektive, schätzen ihn vorher und nachher ein und formulieren nach drei Regeln einen glaubhaften neuen Satz.",
+          "ablauf": [
+            "Einheit 16, Teil 2: Satz wählen und Aufgabe 1 (3 Min.), Beweise auf der Waage (12 Min.), Urteil und neuer Satz mit den drei Regeln (8 Min.).",
+            "Danach den neuen Satz auf ein Kärtchen übertragen; bei leerer Waagenseite stellt die Leitung leise Detektivfragen.",
+            "Persönliche Blätter bleiben privat; die Leitung liest nur, was ihr gezeigt wird."
+          ],
+          "hintergrund": "Das Blatt überträgt Techniken der kognitiven Verhaltenstherapie in eine jugendgerechte Form: Belege prüfen, nachfragen und die Überzeugung vorher und nachher einschätzen (Beck, 2011). Die Frage nach der guten Freundin schafft Abstand zum eigenen Erleben (Kross & Ayduk, 2017). Die drei Regeln sorgen dafür, dass der neue Satz nicht zur Schönrederei wird.",
+          "quellen": [
+            "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+            "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+          ],
+          "achtung": "Hinweise auf starke Selbstabwertung, Selbstverletzung oder Suizidgedanken nicht in der Gruppe vertiefen: im Einzelgespräch ansprechen und nach dem Schutzkonzept handeln.",
+          "material": "Heft, Stifte, Karteikarten"
+        }
+      }
+    },
+    {
+      "id": "a7-detektiv-fallakten",
+      "bereich": "skills",
+      "thema": "gedanken",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": ["Glaubenssätze", "Beweise prüfen", "Fallgeschichten", "Rollenspiel"],
+      "bild": "icon:file-text",
+      "kurs": ["a7-e16"],
+      "de": {
+        "titel": "Fallakten für Detektive",
+        "untertitel": "Kopiervorlage: vier Fälle mit je sechs Spuren, Kamera-Test und Lösungen für die Leitung",
+        "bausteine": [
+          { "art": "text", "klein": true, "text": "Einmal kopieren und ausschneiden. Jede Person bekommt eine Fallakte, sortiert die Spuren A bis F in drei Gruppen – Beweis dafür, Beweis dagegen, kein Beweis (Gefühl, Vermutung, Spruch) – und schreibt auf, was wirklich stimmt. Fall 4 ist die Reserve; die zwei Karten für die Leitung nicht austeilen." },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 184,
+            "karten": [
+              { "titel": "Fallakte 1 · Dario, 13", "text": "Sein Satz: „Ich raste immer aus.“\nA Letzte Woche hat er im Bus die Tür geknallt, weil der Fahrer ohne ihn abfuhr.\nB Als er beim Fußball gefoult wurde, hat er tief ausgeatmet und weitergespielt.\nC „Ich kann mich einfach nicht beherrschen.“\nD Seine Tante sagt: „Du bist genau wie dein Vater.“\nE Nach dem schlechten Test hat er nur „Mist“ gesagt und den Zettel eingesteckt.\nF Gestern hat er seinen Bruder angebrüllt, weil der seine Kopfhörer genommen hat." },
+              { "titel": "Fallakte 2 · Mira, 12", "text": "Ihr Satz: „Mich mag keiner.“\nA Zu zwei Geburtstagen in der Klasse wurde sie nicht eingeladen.\nB Auf dem Schulhof sitzt sie oft allein auf der Bank.\nC Aylin hat ihr gestern im Bus einen Platz freigehalten.\nD „Die anderen finden mich bestimmt komisch.“\nE Mit zwei Mädchen aus dem Training schreibt sie jeden Abend.\nF Ihr Bruder sagt: „Du hast doch eh keine Freunde.“" },
+              { "titel": "Fallakte 3 · Noor, 13", "text": "Ihr Satz: „Ich schaffe nie etwas zu Ende.“\nA Sie hat das ganze Schuljahr lang jeden Dienstag am Schwimmtraining teilgenommen.\nB „Ich fange eh immer alles an und gebe auf.“\nC Ihr Zeichenprojekt hat sie nach zwei Stunden liegen lassen.\nD Sie hat ein Armband aus 200 Perlen in einer Woche fertig geknüpft.\nE Ihre Lehrerin sagt: „Du bist eben so.“\nF Das Matheblatt von letzter Woche hat sie nicht beendet." },
+              { "titel": "Fallakte 4 · Sara, 12 (Reserve)", "text": "Ihr Satz: „Wenn ich etwas sage, hört mir keiner zu.“\nA Ihr Vorschlag in der Gruppenarbeit wurde gestern überhört.\nB Ihr Trainer hat nach ihrem Vorschlag die Aufstellung geändert.\nC „Ich bin für alle unsichtbar.“\nD Ihre Oma sagt: „Mädchen sollen nicht so viel reden.“\nE Beim Mittagessen haben die anderen zweimal dazwischengeredet, als sie anfing.\nF Ihre Betreuerin hat sich gestern zehn Minuten Zeit genommen und ihr zugehört." },
+              { "titel": "Kamera-Test (nur Leitung)", "text": "Acht Aussagen vorlesen:\n1 Im Mathetest hatte Mathis 22 von 60 Punkten. – filmt\n2 Mathis ist dumm. – filmt nicht (Urteil)\n3 Ich fühle mich wie ein Versager. – filmt nicht (Gefühl)\n4 Dario kam diese Woche zweimal zu spät. – filmt\n5 Alle lachen immer über mich. – filmt nicht (alle, immer)\n6 Beim Training hat Mira drei Tore geschossen. – filmt\n7 Das geht bestimmt schief. – filmt nicht (Vermutung)\n8 Gestern hat Noor den Bus knapp verpasst. – filmt" },
+              { "titel": "Lösungen (nur Leitung)", "text": "Fall 1: dafür A, F – dagegen B, E – kein Beweis C, D\nFall 2: dafür A, B – dagegen C, E – kein Beweis D, F\nFall 3: dafür C, F – dagegen A, D – kein Beweis B, E\nFall 4: dafür A, E – dagegen B, F – kein Beweis C, D\nNeue Sätze, zum Beispiel: „Manchmal raste ich aus – ich kann lernen, vorher auszuatmen.“ · „Einige mögen mich nicht, aber Aylin und zwei aus dem Training schon.“" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen üben die Detektivarbeit an erfundenen Fällen: Spuren sortieren, Tatsachen von Gefühlen, Vermutungen und Sprüchen trennen und ein Urteil fällen.",
+          "ablauf": [
+            "Einmal kopieren und ausschneiden; Fall 4 ist die Reserve, Kamera-Test und Lösungen behält die Leitung.",
+            "Einheit 16, Teil 1: Kamera-Test als Wandspiel, dann sortiert jede Person eine Fallakte in dafür, dagegen und kein Beweis.",
+            "Im Gedanken-Gericht spielt die Leitung die innere Stimme der Fallakte; die Lösungen stehen auf der letzten Karte."
+          ],
+          "hintergrund": "Grundüberzeugungen lenken den Blick auf Bestätigendes und lassen Gegenbelege übersehen (Beck, 2011). An fremden Fällen fällt es leichter, beide Seiten zu sehen; so wird die Methode geübt, bevor sie am eigenen Satz zum Einsatz kommt. Die Spuren „kein Beweis“ zeigen, dass sich Gefühle, Vermutungen und Sprüche wie Beweise anfühlen, aber keine sind.",
+          "quellen": [
+            "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford."
+          ],
+          "material": "Schere, Moderationskarten"
+        }
+      }
+    }
+  ]
+}

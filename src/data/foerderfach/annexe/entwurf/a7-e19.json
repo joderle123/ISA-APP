@@ -1,0 +1,270 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e19",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-meine-grenzen"],
+      "vorlagen": ["a7-grenz-karten"],
+      "woerter": [
+        { "de": "die Grenze", "fr": "die Grenze" },
+        { "de": "der Abstand", "fr": "der Abstand" },
+        { "de": "die Wohlfühl-Distanz", "fr": "die Wohlfühl-Distanz" },
+        { "de": "die Privatsphäre", "fr": "die Privatsphäre" },
+        { "de": "das Signal", "fr": "das Signal" }
+      ],
+      "de": {
+        "titel": "Grenzen erkennen",
+        "kurz": "Unsichtbare Grenzen sichtbar machen: Situationen sortieren, beim Stopp-Abstand die eigene Wohlfühl-Distanz messen und Zeichen für „zu nah“ bei sich und anderen lesen.",
+        "ziele": [
+          "unterscheiden körperliche, emotionale und digitale Grenzen und ordnen Alltagssituationen zu",
+          "erleben beim Stopp-Abstand, dass jede Person eine andere Wohlfühl-Distanz hat",
+          "benennen Körpersignale für „zu nah“ und „passt“ und erkennen Zeichen bei anderen"
+        ],
+        "material": [
+          "Gefühlsrad, Anspannungsskala 0–100",
+          "Grenz-Karten (Vorlage), Heft-Blatt je Person",
+          "Plakat und Stifte für die Mindmap",
+          "Kreppband oder Kreide, Maßband",
+          "Skills-Pass, Stempel"
+        ],
+        "vorbereitung": [
+          "Grenz-Karten kopieren und schneiden; die ersten fünf (harmlos) sind für die Raumseiten-Runde.",
+          "Fünf Meter freien Streifen suchen (Raum, Flur oder Hof) und zwei Linien mit Kreppband oder Kreide markieren.",
+          "Klären, ob es gerade einen Vorfall in der Gruppe gibt; Karten und Szenen dann anpassen."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühl, Stelle im Körper und Zahl" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Mission und Thema: Wo fangen meine Grenzen an?" },
+          { "min": "15–45", "phase": "uebung", "titel": "Was sind Grenzen? Mindmap, Karten, meine Ampel" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Bewegung: Klar eine Grenze – kommt drauf an" },
+          { "min": "50–85", "phase": "uebung", "titel": "Stopp-Abstand, Zeichen lesen und zeigen" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Mein sicherer Ort" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühl, Stelle im Körper und Zahl",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Jede Person zeigt ihr Wort auf dem Gefühlsrad, nennt die Stelle im Körper, an der sie das Gefühl spürt, und ihre Anspannung von 0 bis 100 – zum Beispiel „müde, in den Augen, 20“; die Leitung macht mit und beginnt. Die genannten Körperstellen schreibt die Leitung ohne Namen an den Tafelrand, denn sie werden in dieser Stunde noch gebraucht.",
+            "sagen": [
+              "Wo sitzt euer Gefühl gerade – im Bauch, in der Brust, in den Schultern, im Kopf?",
+              "Wer keine Stelle findet, sagt das – auch das ist eine Auskunft."
+            ],
+            "wennEsKippt": "Kommen alberne Körperstellen („im kleinen Zeh“), gelassen aufschreiben – oft steckt ein Körnchen Wahrheit darin. Zeigt jemand eine Zahl über 70, nicht vor den anderen nachfragen, sondern später leise fragen, ob er oder sie etwas braucht."
+          },
+          {
+            "titel": "Mission und Thema: Wo fangen meine Grenzen an?",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment für die Ich-Botschaft oder das Zuhören – und was hast du gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt, wie die andere Person reagiert hat. Dann überleiten: Viele Ich-Botschaften drehen sich darum, dass etwas zu nah oder zu viel wird – also um Grenzen.",
+            "sagen": [
+              "Kam euer Moment für die Ich-Botschaft oder das Zuhören – und was habt ihr gemacht?",
+              "Heute geht es um Grenzen: Wo fangen eure an, und woran merkt ihr, dass jemand an seiner ist?"
+            ],
+            "tipp": "Auch „hat nicht geklappt“ zählt – dann schauen, woran es lag. Hat niemand etwas ausprobiert, nicht tadeln, sondern gemeinsam in einem Satz formulieren, wo eine Ich-Botschaft gepasst hätte."
+          },
+          {
+            "titel": "Was sind Grenzen? Mindmap, Karten, meine Ampel",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Einstieg über Landesgrenzen: Luxemburg hat drei Nachbarländer, und man merkt die Grenze kaum – bis Schilder oder Sprache wechseln (5 Min.). Menschen haben auch Grenzen, nur sind sie unsichtbar und bei jeder Person anders; es gibt drei Arten: körperlich, emotional und digital.",
+            "sagen": [
+              "Woran merkt ihr, dass ihr über eine Landesgrenze gefahren seid – und woran bei einem Menschen, dass man zu weit gegangen ist?",
+              "Grenzen gelten in beide Richtungen: meine und die der anderen – online wie offline."
+            ],
+            "punkte": [
+              "Übung (7 Min.): Mindmap – In die Mitte des Plakats „Grenzen“, drei Äste: körperlich (mein Körper, mein Platz, meine Sachen), emotional (meine Gefühle, meine Meinung, mein Privates), digital (meine Fotos, Nachrichten, mein Standort); jede Person ergänzt zu jedem Ast ein Beispiel.",
+              "Übung (10 Min.): Grenz-Karten sortieren – Jede Person ordnet die Karten den drei Ästen zu; strittige Karten besprechen alle gemeinsam, manche passen zu zwei Ästen, und zu drei Karten fragt die Leitung, wie es sich anfühlt, wenn das passiert.",
+              "Übung (8 Min.): Meine Ampel – Aufgabe 1 auf dem Blatt: Woran merke ich, dass es passt (grün), eng wird (gelb) oder Stopp heißt (rot)? Die Körperstellen vom Check-in helfen; das Blatt bleibt privat."
+            ],
+            "tipp": "Die Mindmap bleibt hängen; sie wird in der nächsten Stunde bei den Rollenspielen wieder gebraucht.",
+            "wennEsKippt": "Wird über eine Karte gelacht oder verharmlost („ist doch nur Spaß“), die Frage umdrehen: Wie wäre es, wenn das mit deinem Foto oder deinem Handy passiert? Reagiert jemand sichtbar betroffen, nicht nachfragen, weitermachen und nach der Stunde ein Gespräch anbieten.",
+            "blatt": "a7-grenz-karten"
+          },
+          {
+            "titel": "Bewegung: Klar eine Grenze – kommt drauf an",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Die Fensterseite heißt „klar eine Grenze“, die Türseite „kein Problem“, die Mitte „kommt drauf an“. Die Leitung liest fünf harmlose Situationen vor, alle gehen ohne Kommentar auf ihre Seite – die Leitung auch.",
+            "sagen": [
+              "Welche Seite passt für euch – ohne Kommentar, einfach hingehen.",
+              "Schaut euch um: Bei fast jeder Situation stehen wir auf mehreren Seiten – und alle haben recht."
+            ],
+            "punkte": [
+              "Die Umarmung: Bei der Begrüßung umarmt dich jemand, den du kaum kennst.",
+              "Zu dicht: Im Bus steht jemand ganz dicht bei dir, obwohl Platz ist.",
+              "Das Handy: Jemand nimmt dir das Handy aus der Hand, ohne zu fragen.",
+              "Die Tür: Jemand kommt ins Zimmer, ohne anzuklopfen.",
+              "Das Hobby: Jemand macht sich über dein Hobby lustig."
+            ],
+            "tipp": "Wer nicht laufen mag, zeigt mit dem Daumen; das Spiel macht sichtbar, dass dieselbe Situation für die eine Person schön und für die andere zu viel ist."
+          },
+          {
+            "titel": "Stopp-Abstand, Zeichen lesen und zeigen",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Zuerst messen alle beim Stopp-Abstand, dass jede Person eine andere Wohlfühl-Distanz hat; danach lesen sie in Szenen mit der Leitung, woran man erkennt, dass es jemandem zu nah wird. Wer nicht mitgehen mag, misst und notiert – das Stopp-Recht gilt für jede Übung.",
+            "sagen": [
+              "Wer Stopp hört, bleibt sofort stehen – ohne Diskussion. Das ist heute die wichtigste Regel.",
+              "Mitlachen heißt nicht einverstanden sein – schaut, was der Körper tut."
+            ],
+            "punkte": [
+              "Übung (13 Min.): Zwei Linien – Eine Person geht langsam und schweigend von der Startlinie auf die andere zu, bis diese „Stopp“ sagt (spätestens eine Fußlänge vorher ist Schluss, niemand wird berührt); die Dritte misst in Fußlängen und schreibt die Abstände ohne Namen an die Tafel; dann wechseln, auch die Leitung geht und steht, in der zweiten Runde denkt die stehende Person an eine fremde Person im Bus, dann an die beste Freundin.",
+              "Übung (10 Min.): Zeichen lesen – Die Leitung spielt Inês, eine Person aus der Gruppe spielt Ben, der ihr ein Video zeigt und immer näher rückt; Inês lehnt sich zurück und lacht kurz. Bei „Stopp“ fragt die Gruppe: Woran sieht man es? Welche Grenze? Was kann Ben tun – aufhören oder fragen?",
+              "Übung (8 Min.): Zeichen zeigen – Jede Person zeigt ohne Worte ein Zeichen für „zu nah“ (zurückweichen, wegschauen, Hand vors Gesicht, still werden); die anderen lesen es und hören auf oder fragen: „Ist das okay für dich?“ Danach Aufgabe 3 auf dem Blatt.",
+              "Übung (4 Min.): Mein Stopp-Abstand – Aufgabe 2 auf dem Blatt: Wie viele Fußlängen brauche ich bei einer fremden Person im Bus, wie viele bei der besten Freundin oder dem besten Freund? Das Blatt ist privat, nichts wird vorgelesen."
+            ],
+            "tipp": "Die Unterschiede in Zentimetern zeigen, dass es keinen „richtigen“ Abstand gibt; wer nicht mitgehen mag, übernimmt das Messen.",
+            "wennEsKippt": "Rennt jemand los, bleibt nicht stehen oder macht Faxen, sofort abbrechen, die Regel wiederholen und die Person in der nächsten Runde messen lassen. Erstarrt jemand oder will raus, die Übung für diese Person beenden, einen ruhigen Platz in Sichtweite anbieten und später nachfragen.",
+            "blatt": "a7-meine-grenzen"
+          },
+          {
+            "titel": "Skill: Mein sicherer Ort",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Die Gruppe kennt die Vorstellungsübung aus Stunde 13; heute mit dem Bezug zum Thema: An diesem Ort bestimmt jede Person selbst, wer dazukommen darf (höchstens 5 Min., still höchstens 3 Min.). Wer die Augen nicht schließen mag, schaut auf einen Punkt am Boden, und wer aussteigen möchte, öffnet die Augen und sitzt still weiter. Danach der Abschluss (10 Min.): Skills-Pass, Mission und eigener Moment.",
+            "sagen": [
+              "Ihr entscheidet, wie euer Ort aussieht und wer dort sein darf – niemand muss erzählen, was er gesehen hat.",
+              "Wer aussteigen möchte, öffnet einfach die Augen."
+            ],
+            "punkte": [
+              "Skill (5 Min.): bequem hinsetzen, dreimal langsam ausatmen; einen Ort vorstellen, an dem du dich sicher fühlst – echt oder ausgedacht: Was siehst, hörst, spürst du dort? Such dir einen Platz, hier bestimmst du, wer dazukommen darf; dann Füße, Stuhl, Augen auf.",
+              "Skills-Pass (4 Min.): ein Satz zur Frage an der Tafel – Woran merke ich, dass mir etwas zu nah ist, und woran bei anderen? – dann der Stempel.",
+              "Mission und Moment (6 Min.): die Mission vorlesen, eine Beobachtung; jede Person schreibt in die Spalte „Mein Moment: Wenn …“, wo sie darauf achten will – voller Bus, Schlange beim Mittagessen, jemand will mein Handy sehen –, dann der Ausblick."
+            ],
+            "wennEsKippt": "Wirkt jemand bei der Übung aufgewühlt oder traurig, ruhig zu Ende führen, der Person danach Zeit lassen und später ein Gespräch anbieten. Bei großer Unruhe reicht die Kurzfassung: dreimal ausatmen und den Blick zum Fenster."
+          }
+        ],
+        "bruecke": "Nächstes Mal übt ihr, eine Grenze so zu setzen, dass sie ankommt: mit einem klaren Stopp – und wer mag, sieht sich dabei im Video.",
+        "mission": "Achte einmal darauf, was dein Körper meldet: zu nah, zu viel oder passt?",
+        "hintergrund": "Nach Hall (1966) halten Menschen je nach Beziehung unterschiedliche Abstände ein; es gibt keinen richtigen Abstand, nur einen, der passt – er schwankt mit Kultur und Stimmung. Dass eine Grenze erreicht ist, meldet oft zuerst der Körper: Gefühle gehen mit typischen Körperempfindungen einher (Nummenmaa et al., 2014). Den Sinn für solche Signale nennt Craig (2002) Interozeption.",
+        "quellen": [
+          "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday.",
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666."
+        ],
+        "achtung": "Grenzen berühren Erfahrungen, die manche nicht teilen möchten: Es gilt das Stopp-Recht – wer nicht mitmachen will, misst, notiert oder beobachtet, niemand wird berührt, und wer Stopp hört, bleibt sofort stehen. Nähe und Begrüßung sind in jeder Familie und Kultur anders, keine Form ist die richtige. Erzählt jemand von Übergriffen, Gewalt, Missbrauch oder verbreiteten Bildern: ruhig zuhören, nicht in der Gruppe nachfragen, keine Geheimhaltung versprechen, zeitnah ein Einzelgespräch führen und nach dem internen Schutzkonzept handeln (zuständige Leitung, Responsable, informieren).",
+        "differenzierung": {
+          "leichter": "Beim Stopp-Abstand übernimmt, wer lieber misst, das Messen – Fußlängen zählen geht in jeder Sprache –, und auf dem Blatt reichen Stichworte oder Kreuze.",
+          "schwerer": "Zu drei Karten aufschreiben, wovon es abhängt – wer, wo, wann –, oder eine eigene Szene erfinden, in der jemand eine Grenze ohne Worte zeigt, und von der Leitung lesen lassen."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Körperstelle (5 Min.), Mindmap und Grenz-Karten (15 Min.), Stopp-Abstand mit der Leitung (10 Min.), Zeichen lesen in einer Szene (10 Min.), Skill, Skills-Pass und Mission (10 Min.). Die Raumseiten-Runde und das Zeichen-Zeigen kommen in die nächste Stunde."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-meine-grenzen",
+      "bereich": "skills",
+      "thema": "kommunikation",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Grenzen", "Nähe und Distanz", "Körpersignale", "Wohlfühl-Distanz"],
+      "bild": "icon:target",
+      "kurs": ["a7-e19"],
+      "de": {
+        "titel": "Meine Grenzen",
+        "untertitel": "Wo deine Grenze liegt – und die der anderen",
+        "bausteine": [
+          { "art": "aufgabe", "text": "Schreib auf, woran du merkst, dass deine Grenze erreicht ist.", "hinweis": "Du entscheidest, was du teilst. Stichworte reichen.", "symbole": ["schreiben"] },
+          {
+            "art": "ampel",
+            "linien": 1,
+            "stufen": [
+              { "titel": "Rot: Stopp.", "text": "Das merke ich im Körper:" },
+              { "titel": "Gelb: Es wird eng.", "text": "Das merke ich im Körper:" },
+              { "titel": "Grün: Das passt.", "text": "So fühlt sich mein Körper an:" }
+            ]
+          },
+          { "art": "aufgabe", "text": "Schreib deinen Stopp-Abstand auf.", "hinweis": "Eine Fußlänge sind etwa 25 cm. Du entscheidest, was du teilst.", "symbole": ["schreiben"] },
+          { "art": "satzanfaenge", "linien": 1, "items": ["Bei einer fremden Person im Bus brauche ich etwa … Fußlängen.", "Bei meiner besten Freundin oder meinem besten Freund etwa …", "Mehr Abstand brauche ich, wenn …"] },
+          { "art": "aufgabe", "text": "Kreuze an, woran du merkst, dass es jemand anderem zu nah ist.", "symbole": ["ankreuzen"] },
+          { "art": "ankreuzen", "spalten": 2, "items": ["geht einen Schritt zurück", "dreht sich weg", "schaut weg", "antwortet nur noch kurz", "lächelt gequält", "wird plötzlich still"] },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              { "art": "info", "symbol": "wissen", "titel": "Gut zu wissen", "text": "Jede Person hat eine Wohlfühl-Distanz, bei jedem anders und mit jedem Tag verschieden. Dein Körper meldet oft zuerst, wenn es zu nah wird." }
+            ],
+            "rechts": [
+              { "art": "info", "symbol": "merke", "titel": "Im Zweifel", "punkte": ["Aufhören oder fragen: „Ist das okay für dich?“", "Wer Stopp hört, hört auf."] }
+            ]
+          },
+          { "art": "info", "symbol": "hilfe", "text": "Wird deine Grenze überschritten? Nicht deine Schuld. Hilfe: Leitung, Kanner- a Jugendtelefon 116 111, BEE SECURE Helpline 8002 1234." }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen halten fest, woran sie merken, dass die eigene Grenze erreicht ist, notieren ihren Stopp-Abstand und erkennen Zeichen, an denen es anderen zu nah wird.",
+          "ablauf": [
+            "Einheit 19, Teil 1: Aufgabe 1 allein nach den Grenz-Karten (8 Min.); die Körperstellen vom Check-in an der Tafel helfen. Das Blatt wird nicht eingesammelt.",
+            "Teil 2: Aufgabe 3 nach den Szenen und dem Zeichen-Zeigen, Aufgabe 2 am Ende nach dem Stopp-Abstand (4 Min.); die Abstände der Gruppe stehen an der Tafel.",
+            "Auf die Zeile „Nicht deine Schuld“ hinweisen; die Hilfe-Nummern stehen unten auf dem Blatt."
+          ],
+          "hintergrund": "Wie nah jemand kommen darf, hängt von Beziehung, Situation und Kultur ab (Hall, 1966). Dass eine Grenze erreicht ist, meldet oft zuerst der Körper; Gefühle gehen mit typischen Körperempfindungen einher (Nummenmaa et al., 2014).",
+          "quellen": [
+            "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday.",
+            "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651."
+          ],
+          "achtung": "Deutet jemand Übergriffe, Gewalt oder Missbrauch an: ruhig zuhören, nicht ausfragen, keine Geheimhaltung versprechen, zeitnah ein Einzelgespräch führen und nach dem Schutzkonzept handeln.",
+          "material": "Heft, Stifte"
+        }
+      }
+    },
+    {
+      "id": "a7-grenz-karten",
+      "bereich": "skills",
+      "thema": "kommunikation",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": ["Grenz-Karten", "Sortieren", "körperlich emotional digital", "Raumseiten"],
+      "bild": "icon:users",
+      "kurs": ["a7-e19"],
+      "de": {
+        "titel": "Grenz-Karten",
+        "untertitel": "Kopiervorlage: zwölf Alltagssituationen zum Sortieren in körperlich, emotional und digital",
+        "bausteine": [
+          { "art": "text", "klein": true, "text": "Einmal kopieren und ausschneiden. Die ersten fünf Karten sind besonders harmlos und passen für die Raumseiten-Runde; Karten, die einer echten Lage in der Gruppe zu nah sind, weglassen. Die letzte Karte zeigt die Zuordnung und bleibt bei der Leitung." },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 74,
+            "karten": [
+              { "titel": "1 · Die Umarmung", "text": "Bei der Begrüßung umarmt dich jemand, den du kaum kennst." },
+              { "titel": "2 · Zu dicht", "text": "Im Bus steht jemand ganz dicht bei dir, obwohl Platz ist." },
+              { "titel": "3 · Das Handy", "text": "Jemand nimmt dir das Handy aus der Hand, ohne zu fragen." },
+              { "titel": "4 · Die Tür", "text": "Jemand kommt ins Zimmer, ohne anzuklopfen." },
+              { "titel": "5 · Das Hobby", "text": "Jemand macht sich über dein Hobby lustig." },
+              { "titel": "6 · Die Fragerei", "text": "Jemand fragt vor allen nach deiner Note im Test." },
+              { "titel": "7 · Das Foto", "text": "Jemand postet ein Foto von dir, ohne zu fragen." },
+              { "titel": "8 · Die Nachrichten", "text": "Jemand liest deinen Chat über deine Schulter mit." },
+              { "titel": "9 · Der Standort", "text": "In einer App sieht die ganze Klasse, wo du gerade bist." },
+              { "titel": "10 · Die Familie", "text": "Jemand fragt neugierig nach deiner Familie, obwohl du nicht darüber reden magst." },
+              { "titel": "11 · Das Passwort", "text": "Jemand will dein Passwort: „Wenn du mir vertraust, gibst du es mir.“" },
+              { "titel": "12 · Der Spitzname", "text": "Jemand nennt dich vor anderen bei einem Spitznamen, den du hasst." },
+              { "titel": "Zuordnung (nur Leitung)", "text": "Körperlich: 1, 2, 4, 3 (auch digital)\nEmotional: 5, 6, 10, 12\nDigital: 7, 8, 9, 11, 3" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Zwölf erfundene Alltagssituationen zeigen, dass Grenzen körperlich, emotional oder digital sein können und dass eine Situation manchmal zu zwei Arten passt.",
+          "ablauf": [
+            "Einmal kopieren und ausschneiden; die Zuordnungskarte bleibt bei der Leitung.",
+            "Einheit 19, Teil 1: Jede Person sortiert die Karten unter die drei Äste der Mindmap; strittige Karten werden gemeinsam besprochen.",
+            "Im Bewegungsspiel dienen die ersten fünf Karten als Situationen für die Raumseiten."
+          ],
+          "hintergrund": "Grenzen schützen, was zu einer Person gehört: Körper und Raum, Gefühle und Privates – und zunehmend auch Fotos, Nachrichten und Daten. Wie nah jemand kommen darf, hängt von Beziehung, Situation und Kultur ab (Hall, 1966); deshalb sind Karten zum Sortieren und Diskutieren besser als feste Antworten.",
+          "quellen": [
+            "Hall, E. T. (1966). The Hidden Dimension. Garden City, NY: Doubleday."
+          ],
+          "material": "Schere"
+        }
+      }
+    }
+  ]
+}

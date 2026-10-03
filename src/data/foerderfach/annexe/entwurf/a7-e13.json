@@ -1,0 +1,329 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e13",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-kopf-skills", "ff-gefuehlsrad", "ff-skills-pass"],
+      "vorlagen": ["a7-kopf-karten"],
+      "woerter": [
+        { "de": "die Achtsamkeit", "fr": "die Achtsamkeit" },
+        { "de": "der Gedanke", "fr": "der Gedanke" },
+        { "de": "vorbeiziehen lassen", "fr": "vorbeiziehen lassen" },
+        { "de": "ablenken", "fr": "ablenken" },
+        { "de": "der sichere Ort", "fr": "der sichere Ort" }
+      ],
+      "de": {
+        "titel": "Achtsamkeit und Kopf-Skills",
+        "kurz": "Gedanken vorbeiziehen lassen, Kopf-Skills auch unter Störung testen, achtsam essen und einen sicheren Ort finden; dazu die Bilanz der besten Skills.",
+        "ziele": [
+          "beschreiben nach dem Gedankenschiffchen, wie es ist, Gedanken zu bemerken, statt ihnen zu folgen",
+          "testen Kopf-Skills in Ruhe und unter Störung und erklären, warum sie bei Gelb helfen und bei Rot kaum",
+          "wählen einen sicheren Ort oder Gegenstand und tragen ihre drei besten Skills in die Bilanz ein"
+        ],
+        "material": [
+          "Gefühlsrad, Skills-Pässe, Stempel",
+          "Blätter „Meine Kopf-Skills“, Stifte",
+          "Klangschale, Stoppuhr, leise Musik",
+          "Obst oder Schokolade, Alternative",
+          "Karten (Vorlage), Kiste mit Steinen"
+        ],
+        "vorbereitung": [
+          "Gedankenschiffchen und sicheren Ort einmal laut lesen und stoppen: je höchstens drei Minuten.",
+          "Allergien und Speisevorschriften für den Imbiss klären, Alternative bereithalten.",
+          "Raum abdunkeln können, Schild „Bitte nicht stören“, Ruheplatz mit Kissen.",
+          "Elternzettel Kletterhalle: Wer hat ihn abgegeben? Tester aus Einheit 11 und 12 bereitlegen."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in in Stille: erst spüren, dann sagen" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Rückblick, Mission und Thema: der Kopf" },
+          { "min": "15–45", "phase": "uebung", "titel": "Eisbär, Gedankenschiffchen und Kopf-Labor" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Achtsamer Imbiss" },
+          { "min": "50–85", "phase": "uebung", "titel": "Störsender-Experiment, sicherer Ort und Bilanz" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Mein sicherer Ort" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in in Stille: erst spüren, dann sagen",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Der Check-in beginnt mit einer halben Minute Stille: Augen zu oder Blick auf den Boden, nur spüren, welches Gefühl und welche Zahl gerade da sind. Dann zeigt jede Person ihr Wort im Gefühlsrad und nennt die Zahl von 0 bis 100; die Leitung beginnt und fragt, ob die Zahl nach der Stille anders war als davor.",
+            "sagen": [
+              "Eine halbe Minute nur wahrnehmen. Ihr müsst nichts ändern, nur bemerken.",
+              "Gefühl und Zahl – und war die Zahl nach der Stille eine andere?"
+            ],
+            "tipp": "Ein leiser Ton beendet die Stille, etwa die Klangschale: Das wird schnell zum Ritual.",
+            "wennEsKippt": "Ist eine halbe Minute zu lang, mit zehn Sekunden beginnen und die Stille von Woche zu Woche leicht verlängern. Wer die Augen nicht schließen mag, schaut auf einen Punkt am Boden oder auf die eigenen Hände.",
+            "blatt": "ff-gefuehlsrad"
+          },
+          {
+            "titel": "Rückblick, Mission und Thema: der Kopf",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Zur Mission fragen: Kam dein Moment – hast du deinen Gegenstand oder einen Song genutzt, und was hat die Zahl gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt. Dann das Thema: Körper und Sinne sind die Notbremse, heute kommt der Kopf dazu – Gedanken bemerken, ohne ihnen zu folgen, und Kopf-Skills für Gelb.",
+            "sagen": [
+              "Körper und Sinne sind eure Notbremse. Heute trainieren wir das Lenken – für Momente, in denen der Kopf noch mitspielt."
+            ],
+            "tipp": "Kam der Moment nicht, keinen Kommentar abgeben: fragen, was es schwer gemacht hat, und einen Moment vorschlagen, der sicher kommt, etwa den Weg hierher."
+          },
+          {
+            "titel": "Eisbär, Gedankenschiffchen und Kopf-Labor",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Erst der Eisbär: Gedanken lassen sich nicht wegdrücken, aber vorbeiziehen lassen – das übt das Gedankenschiffchen. Dann das Kopf-Labor mit Zahl vorher und nachher: Welche Kopf-Skills geben dem Kopf einen Job?",
+            "sagen": [
+              "Denkt dreißig Sekunden lang auf keinen Fall an einen Eisbären.",
+              "Ihr müsst nicht an nichts denken, das kann niemand: Das Bemerken ist der Skill."
+            ],
+            "punkte": [
+              "Eisbär (4 Min.): Dreißig Sekunden nicht an einen Eisbären denken, wer ihn trotzdem gesehen hat, hebt die Hand; dazu ein Fluss mit Schiffen auf das Flipchart.",
+              "Gedankenschiffchen (6 Min.): Höchstens drei Minuten angeleitet – jeder Gedanke bekommt ein Schiff und treibt vorbei, wer mitgefahren ist, steigt aus und setzt sich wieder ans Ufer. Danach: Wie viele Schiffe sind vorbeigefahren?",
+              "Kopf-Labor 1 (7 Min.): Rückwärts in Siebenerschritten von 100 und das ABC-Spiel – zu jedem Buchstaben ein Tier, eine Stadt oder ein Fußballverein –, jeweils eine Minute, Zahl vorher und nachher.",
+              "Kopf-Labor 2 (7 Min.): Alle blauen Dinge im Raum finden und leise zählen, dann mit sich reden wie mit einem Freund, mit dem eigenen Namen: „Noah, du schaffst die nächsten zehn Minuten.“ – jeweils eine Minute.",
+              "Auswertung (6 Min.): Per Handzeichen – welcher Kopf-Skill hat die Zahl am meisten gesenkt? Kopf-Skills binden Denkkraft und helfen deshalb bei Gelb, bei Rot reicht sie meist nicht mehr."
+            ],
+            "tipp": "Mit sich selbst wie mit einem Freund zu sprechen, wirkt überraschend gut: Wer sich mit dem eigenen Namen anspricht, bekommt Abstand – vorher ein Beispiel geben, damit es nicht albern wirkt.",
+            "wennEsKippt": "Wird die Stille für jemanden unerträglich oder kommen belastende Gedanken, darf die Person die Augen öffnen, aufstehen oder ans Fenster gehen. Kichert jemand, ruhig weiterlesen und danach sagen, dass Lachen oft eine Reaktion auf Ungewohntes ist.",
+            "blatt": "a7-kopf-skills"
+          },
+          {
+            "titel": "Achtsamer Imbiss",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Jede Person bekommt ein kleines Stück Obst oder Schokolade und isst es zwei Minuten lang mit allen Sinnen: anschauen, riechen, auf der Zunge liegen lassen, langsam kauen. Danach kurz fragen, ob jemand schon einmal so bewusst gegessen hat; die Leitung isst mit.",
+            "sagen": [
+              "Schaut euch das Stück an, als hättet ihr so etwas noch nie gesehen – wie sieht es aus, wie riecht es?"
+            ],
+            "tipp": "Eine Alternative ohne Allergierisiko bereithalten, etwa Apfelstücke: Schokolade kann Milch, Nüsse oder Gelatine enthalten.",
+            "wennEsKippt": "Wer das Stück sofort isst, bekommt keinen Kommentar und macht die Übung mit dem nächsten Bissen oder einem Schluck Wasser. Ekelt sich jemand, darf die Person nur schauen und riechen."
+          },
+          {
+            "titel": "Störsender-Experiment, sicherer Ort und Bilanz",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Im Störsender-Experiment übt jede Person einen Kopf-Skill, während die anderen freundlich stören – erst leise, dann lauter. Danach gestaltet jede Person ihren sicheren Ort, einen Gegenstand oder ein Bild und trägt ihre drei besten Skills in die Bilanz ein.",
+            "sagen": [
+              "Stört freundlich: nur mit Worten, keine Beleidigungen, kein Anfassen.",
+              "Ein sicherer Ort darf echt oder erfunden sein – er gehört dir, du musst ihn niemandem zeigen."
+            ],
+            "punkte": [
+              "Regeln und Vorführung (5 Min.): Die Leitung ist Profi und nennt zu jedem Buchstaben ein Tier, zwei Freiwillige stören mit Fragen, Zahlen und Geschichten vom Wochenende; Regeln: Zimmerlautstärke, kein Anfassen, keine Beleidigungen.",
+              "Drei Runden (9 Min.): Jede Person ist einmal Profi und nennt in 30 Sekunden so viele Tiere wie möglich – erst in Ruhe, dann mit einem Störsender, dann mit zwei; die Leitung zählt, die Tiere kommen ins Blatt.",
+              "Auswertung (3 Min.): Ruhe ist Grün, ein Störsender Gelb, zwei Störsender Rot – bei Rot wird der Kopf zu laut für Kopf-Skills, dann helfen zuerst Körper und Sinne.",
+              "Mein sicherer Ort (13 Min.): Jede Person wählt einen echten oder erfundenen Ort, einen Gegenstand oder ein Bild und hält ihn im Blatt fest – malen, Stichwörter oder ein Foto mit dem Handy der Leitung –, dazu ein Stichwort; leise Musik ohne Gesang.",
+              "Bilanz (5 Min.): Aus den Blättern der Einheiten 11 und 12 und dem Kopf-Labor trägt jede Person ihre drei besten Skills für Körper, Sinne und Kopf ein, mit der Zahl, bis zu der sie helfen."
+            ],
+            "tipp": "Leise Musik ohne Gesang hilft beim Gestalten und nimmt der Stille die Schwere; wer lieber einen Gegenstand aus der Kiste nimmt, nimmt ihn mit an seinen Platz.",
+            "wennEsKippt": "Wird aus dem Stören ein Ärgern, die Runde sofort beenden und die Regel wiederholen: nur Worte, nur freundlich. Malt jemand etwas Bedrohliches oder bleibt das Blatt leer, nichts deuten und nicht vor der Gruppe nachfragen, sondern nach der Stunde ein Gespräch anbieten.",
+            "blatt": "a7-kopf-karten"
+          },
+          {
+            "titel": "Skill: Mein sicherer Ort",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Der sichere Ort ist ein Kopf-Skill für Gelb, am besten vorher bei Grün geübt (mit Zahl vorher und nachher höchstens 5 Minuten, still höchstens 3 Minuten, Augen offen oder zu, Aussteigen jederzeit erlaubt). Danach der Abschluss mit Skills-Pass, Mission und eigenem Moment.",
+            "sagen": [
+              "Sag dir dein Stichwort oder nimm den Gegenstand in die Hand und geh in Gedanken hin: Was siehst, hörst, spürst du?",
+              "Augen auf ist völlig in Ordnung – du entscheidest, wie weit du dich darauf einlässt."
+            ],
+            "punkte": [
+              "Ort besuchen (5 Min.): Zahl vorher; höchstens drei Minuten mit allen Sinnen hingehen, nach jedem Satz zwei Atemzüge Pause; dann zurück: Füße spüren, strecken, umschauen; Zahl nachher.",
+              "Rückmeldung (2 Min.): Wann könnte der Ort helfen – abends im Bett, vor einem Test? Bei Rot zuerst ein Körper- oder Sinnes-Skill.",
+              "Skills-Pass (3 Min.): Ein Satz zu „Welcher Kopf-Skill passt zu mir, und wann nehme ich ihn?“, dann der Stempel.",
+              "Mission und Moment (3 Min.): Die Leitung sagt die Mission an; jede Person wählt ihren Moment und schreibt ihn ins Heft: „Mein Moment: Wenn …“.",
+              "Ausblick (2 Min.): Nächste Woche geht es in die Kletterhalle – Elternzettel, Sportsachen und das Heft mit den Tester-Blättern nicht vergessen."
+            ],
+            "tipp": "Nicht zu schnell sprechen: Nach jeder Zeile zwei, drei Atemzüge warten, die Pausen machen die Wirkung aus.",
+            "wennEsKippt": "Findet jemand keinen sicheren Ort oder wird unruhig, nicht drängen: Ein erfundener Ort, ein Gegenstand oder ein Bild ist genauso gut. Wirkt jemand aufgewühlt, Augen öffnen, Füße fest auf den Boden und zusammen 5-4-3-2-1 machen.",
+            "blatt": "ff-skills-pass"
+          }
+        ],
+        "bruecke": "Nächste Woche packt ihr aus allem, was ihr getestet habt, euren Skills-Koffer und prüft in der Kletterhalle im Ernstfall, ob er hält.",
+        "mission": "Besuch eine Minute deinen sicheren Ort oder gib deinem Kopf einen Job.",
+        "hintergrund": "Gedanken lassen sich nicht wegdrücken, unterdrückte kehren eher zurück (Wegner et al., 1987). Achtsamkeit heißt, den Moment ohne Bewertung zu beachten (Kabat-Zinn, 1990); das Gedankenschiffchen stammt aus der Akzeptanz- und Commitment-Therapie, in der Gedanken beobachtet statt geglaubt werden (Hayes et al., 2012). Kopf-Skills lenken um, bevor sich ein Gefühl voll entfaltet (Gross, 1998), und brauchen freie Denkkraft: Darum helfen sie bei Gelb.",
+        "quellen": [
+          "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.",
+          "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299."
+        ],
+        "achtung": "Achtsamkeits- und Vorstellungsübungen können belastende Erinnerungen wecken: höchstens drei Minuten, Augen offen ist gleichwertig, Aussteigen ohne Begründung erlaubt, niemand muss seinen Ort zeigen, und nie als Mittel gegen Unruhe. Findet jemand keinen sicheren Ort, malt Bedrohliches oder wirkt aufgewühlt, nichts deuten und nicht vor der Gruppe nachfragen, sondern nach der Stunde unter vier Augen sprechen und bei Hinweisen auf Gefährdung noch am selben Tag die zuständige Leitung (Responsable) informieren. Beim achtsamen Essen Allergien und Speisevorschriften beachten; wer Abstand braucht, geht an den Ruheplatz im Raum, nie allein hinaus.",
+        "differenzierung": {
+          "leichter": "Statt der Siebenerschritte reicht das Zählen blauer Dinge, im Blatt genügen Zahlen und Stichwörter, und der sichere Ort darf ein Gegenstand sein.",
+          "schwerer": "Eine eigene Kopf-Aufgabe erfinden, die selbst die Leitung unter zwei Störsendern nicht schafft, und notieren, ab welcher Zahl Kopf-Skills bei einem selbst nicht mehr tragen."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in in Stille mit Rückblick auf die Mission (8 Min.), Eisbär und Gedankenschiffchen (10 Min.), Kopf-Labor mit Auswertung (10 Min.), Bilanz der drei besten Skills (7 Min.), Skill Mein sicherer Ort mit Skills-Pass, Mission und Moment (15 Min.). Störsender-Experiment, achtsamer Imbiss und das Gestalten des Ortes entfallen; wer mag, gestaltet den Ort zu Hause."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-kopf-skills",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "25 Min.",
+      "eldib": [],
+      "schlagworte": ["Kopf-Skills", "Achtsamkeit", "sicherer Ort", "Zahl vorher und nachher", "Annexe"],
+      "bild": "icon:cloud",
+      "kurs": ["a7-e13"],
+      "de": {
+        "titel": "Meine Kopf-Skills und mein sicherer Ort",
+        "untertitel": "Gedanken ziehen lassen, den Kopf lenken, einen Ruheort finden.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Gut zu wissen",
+            "text": "Gedanken lassen sich nicht wegdrücken, aber vorbeiziehen lassen. Kopf-Skills geben dem Kopf einen Job und helfen bei Gelb. Bei Rot hilft zuerst der Körper."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Trag deine Zahlen aus dem Kopf-Labor und dem Störsender-Experiment ein.",
+            "hinweis": "Zahl vorher und nachher, ehrlich und ohne Druck. Warst du nicht Profi, trag die Zahlen deiner Gruppe ein.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "tabelle",
+                "spalten": ["Kopf-Skill", "vorher", "nachher"],
+                "breiten": [2.8, 0.9, 0.9],
+                "zeilen": 0,
+                "werte": [
+                  ["Gedankenschiffchen", "", ""],
+                  ["Siebenerschritte", "", ""],
+                  ["ABC-Spiel", "", ""],
+                  ["Blaue Dinge zählen", "", ""],
+                  ["Wie mit einem Freund", "", ""]
+                ]
+              }
+            ],
+            "rechts": [
+              {
+                "art": "tabelle",
+                "spalten": ["Runde", "Störung", "Tiere"],
+                "breiten": [0.8, 2.2, 1],
+                "zeilen": 0,
+                "werte": [
+                  ["1", "Ruhe", ""],
+                  ["2", "ein Störsender", ""],
+                  ["3", "zwei Störsender", ""]
+                ]
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wähle einen sicheren Ort, einen Gegenstand oder ein Bild und halte ihn fest.",
+            "hinweis": "Echt oder erfunden. Dein Ort gehört dir – du musst ihn niemandem zeigen.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": ["Mein Ort, Gegenstand oder Bild: …", "Ich sehe, höre, spüre: …", "Mein Stichwort: …"],
+            "linien": 1
+          },
+          {
+            "art": "aufgabe",
+            "text": "Trag deine drei besten Skills ein.",
+            "hinweis": "Aus den Blättern der Einheiten 11 und 12 und dem Kopf-Labor.",
+            "symbole": ["schreiben"]
+          },
+          {
+            "art": "tabelle",
+            "spalten": ["Fach", "Mein Favorit", "Hilft bis Zahl"],
+            "breiten": [1, 3, 1.2],
+            "zeilen": 0,
+            "werte": [
+              ["Körper", "", ""],
+              ["Sinne", "", ""],
+              ["Kopf", "", ""]
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen protokollieren das Kopf-Labor und das Störsender-Experiment, halten ihren sicheren Ort fest und tragen ihre drei besten Skills als Bilanz ein.",
+          "ablauf": [
+            "Einheit 13, Schritt 3: nach jedem Kopf-Skill die Zahlen eintragen (Aufgabe 1, linke Tabelle); Schritt 5: nach jeder Runde des Störsender-Experiments die Tiere zählen (rechte Tabelle).",
+            "Schritt 5: Aufgabe 2 mit leiser Musik – Zeichnen oder ein Foto sind Angebote; Aufgabe 3 ist die Bilanz aus den Blättern der Einheiten 11 und 12.",
+            "Schritt 6: Der Ort wird zum Skill; das Blatt wird nicht eingesammelt, die Seite mit dem Ort zeigt nur, wer will."
+          ],
+          "hintergrund": "Unterdrückte Gedanken kehren eher zurück (Wegner et al., 1987); das Gedankenschiffchen übt, sie zu bemerken und ziehen zu lassen. Kopf-Skills binden Denkkraft und helfen deshalb bei mittlerer Anspannung, bei Rot hilft zuerst der Körper (Linehan, 2015). Der Ort gehört der Person: Er wird nicht gezeigt, nicht bewertet und nicht eingesammelt.",
+          "quellen": [
+            "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.",
+            "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+          ],
+          "material": "Stifte, Buntstifte, leise Musik, Klangschale"
+        }
+      }
+    },
+    {
+      "id": "a7-kopf-karten",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": ["Kopf-Skills", "Störsender", "Rollenkarten", "Annexe"],
+      "bild": "icon:brain",
+      "kurs": ["a7-e13"],
+      "de": {
+        "titel": "Karten: Kopf-Skills und Störsender",
+        "untertitel": "Kopiervorlage – einmal kopieren und ausschneiden",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Sechs Kopf-Skill-Karten für das Kopf-Labor und vier Rollenkarten für das Störsender-Experiment. Regel für alle: nur Worte, nur freundlich, kein Anfassen.",
+            "klein": true
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 112,
+            "karten": [
+              { "titel": "Siebenerschritte", "text": "Von 100 rückwärts in Siebenerschritten: 100, 93, 86 …", "bild": "icon:calculator" },
+              { "titel": "ABC-Spiel", "text": "Zu jedem Buchstaben ein Tier, eine Stadt oder ein Verein.", "bild": "icon:alphabet-latin" },
+              { "titel": "Blaue Dinge zählen", "text": "Alle blauen Dinge im Raum finden und leise zählen.", "bild": "icon:eye" },
+              { "titel": "Fünferlisten", "text": "Fünf Vereine, fünf Lieder, fünf Automarken – still im Kopf.", "bild": "icon:list-check" },
+              { "titel": "Wie mit einem Freund", "text": "Mit dir reden, mit deinem Namen: „Noah, du schaffst die nächsten zehn Minuten.“", "bild": "icon:user-heart" },
+              { "titel": "Gedankenschiffchen", "text": "Jeder Gedanke bekommt ein Schiff und treibt vorbei. Mitgefahren? Aussteigen.", "bild": "icon:bubble" }
+            ]
+          },
+          { "art": "text", "text": "Rollen im Störsender-Experiment", "klein": true },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 78,
+            "karten": [
+              { "titel": "Profi", "text": "Du nennst in 30 Sekunden so viele Tiere wie möglich – zu jedem Buchstaben eines.", "bild": "icon:medal" },
+              { "titel": "Störsender 1", "text": "Du störst freundlich: Fragen, Zahlen dazwischenrufen, vom Wochenende erzählen.", "bild": "icon:speakerphone" },
+              { "titel": "Störsender 2", "text": "Du störst noch lauter – nur mit Worten, ohne Beleidigung, ohne Anfassen.", "bild": "icon:ear-off" },
+              { "titel": "Zählen und Stoppen", "text": "Du zählst die Tiere, stoppst die Zeit und gibst das Zeichen für Start und Stopp.", "bild": "icon:stopwatch" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Sechs Kopf-Skills zum Nachschlagen und vier Rollenkarten für das Störsender-Experiment.",
+          "ablauf": [
+            "Einheit 13: einmal auf festes Papier kopieren und ausschneiden; die Kopf-Skill-Karten liegen im Kopf-Labor (Schritt 3) offen auf dem Tisch.",
+            "Schritt 5: die Rollenkarten verteilen – bei drei Jugendlichen ist jede Person einmal Profi, die anderen sind Störsender, die Leitung zählt und stoppt.",
+            "Regel an die Tafel: nur Worte, nur freundlich, kein Anfassen; wird gestört, bis es ärgert, sofort beenden."
+          ],
+          "hintergrund": "Kopf-Skills wie Rückwärtszählen oder Listen lenken die Aufmerksamkeit um, bevor sich ein Gefühl voll entfaltet (Gross, 1998). Weil sie Denkkraft brauchen, tragen sie bei mittlerer Anspannung und brechen bei hoher meist zusammen – das macht das Störsender-Experiment sichtbar. Mit sich selbst wie mit einem Freund zu sprechen, schafft Abstand (Kross & Ayduk, 2017).",
+          "quellen": [
+            "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+            "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+          ],
+          "material": "Festes Papier, Schere"
+        }
+      }
+    }
+  ]
+}

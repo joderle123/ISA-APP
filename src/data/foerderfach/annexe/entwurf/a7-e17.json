@@ -1,0 +1,252 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e17",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-mein-experiment"],
+      "vorlagen": ["a7-experiment-karten"],
+      "woerter": [
+        { "de": "das Experiment", "fr": "das Experiment" },
+        { "de": "die Vorhersage", "fr": "die Vorhersage" },
+        { "de": "das Ergebnis", "fr": "das Ergebnis" },
+        { "de": "der Beweis", "fr": "der Beweis" },
+        { "de": "ausprobieren", "fr": "ausprobieren" }
+      ],
+      "de": {
+        "titel": "Neue Gedanken ausprobieren",
+        "kurz": "In der Stadt testen, ob der alte Satz recht behält: Vorhersage, kleine Experimente an Haltestelle, Bäckerei und Café, Ergebnis – der neue Satz als Beweis-Challenge.",
+        "ziele": [
+          "erleben im Rollenspiel, wie ein neuer Satz Haltung und Stimme verändert",
+          "testen die Vorhersage ihres alten Satzes in kleinen, harmlosen Experimenten und halten das Ergebnis fest",
+          "üben den Skill Bemerken, atmen, antworten"
+        ],
+        "material": [
+          "Gefühlsrad, Anspannungsskala 0–100",
+          "Experiment-Karten mit Regelkarte (Vorlage), Heft-Blatt je Person",
+          "Kärtchen (Einheit 16), Baum der Stärke",
+          "Klemmbrett, Stifte, etwas Kleingeld",
+          "Skills-Pass, Stempel"
+        ],
+        "vorbereitung": [
+          "Einverständnis der Eltern liegt vor (Elternbrief, Einheit 1); Bäckerei und Café vorab informieren.",
+          "Weg und Orte abgehen (höchstens 10 Gehminuten); Treffpunkt, Signal, Handynummer der Leitung und 112 auf die Regelkarte.",
+          "Aufsicht: Die Leitung bleibt bei jedem Auftrag in Sichtweite.",
+          "Regenvariante: Aufträge im Haus spielen, Leitung als Verkäuferin, Stühle als Haltestelle."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: Gefühlsrad, Zahl und Kärtchen" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Mission und Thema: Testen statt nur denken" },
+          { "min": "15–35", "phase": "uebung", "titel": "Experiment planen: Vorhersage und Rollenspiel" },
+          { "min": "35–45", "phase": "aktiv", "titel": "Weg in die Stadt: Spotlight-Test" },
+          { "min": "45–85", "phase": "uebung", "titel": "Beweis-Challenge: Haltestelle, Bäckerei, Café" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Bemerken, atmen, antworten" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad, Zahl und Kärtchen",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Jede Person zeigt ihr Gefühl auf dem Gefühlsrad und nennt ihre Anspannung von 0 bis 100; die Leitung macht mit und beginnt. Heute zählt die Zahl doppelt: Sie ist der Vorher-Wert für den Ausflug, nach der Rückkehr wird sie noch einmal geschätzt. Dazu die Frage, ob das Kärtchen aus der letzten Stunde diese Woche schon einmal gearbeitet hat – auch „vergessen“ ist eine ehrliche Antwort.",
+            "sagen": [
+              "Gefühl, Zahl – und: Hat dein Kärtchen diese Woche schon mal gearbeitet?",
+              "Merkt euch eure Zahl: Nach dem Ausflug schätzen wir sie noch einmal."
+            ],
+            "tipp": "Liegt jemand über 70, vor dem Losgehen einen Skill aus dem Skills-Koffer machen; wer das Kärtchen vergessen hat, schreibt seinen Satz heute neu auf eine Karteikarte."
+          },
+          {
+            "titel": "Mission und Thema: Testen statt nur denken",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – und was ist passiert, als du den Satz gelesen hast? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann das Thema: Bisher haben die Jugendlichen ihre Sätze geprüft, heute testen sie sie im echten Leben, draußen in der Stadt.",
+            "sagen": [
+              "Kam euer Moment – und was ist passiert, als ihr den Satz gelesen habt?",
+              "Ein neuer Satz ist wie neue Schuhe: Am Anfang drückt er ein bisschen, heute laufen wir ihn ein."
+            ],
+            "tipp": "Ein ehrliches „Hab’s vergessen“ ausdrücklich würdigen: Wer zugibt, dass der alte Satz schneller war, hat verstanden, worum es geht."
+          },
+          {
+            "titel": "Experiment planen: Vorhersage und Rollenspiel",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Das Modell in einem Satz (2 Min.): Der alte Satz sagt etwas voraus, ein Experiment prüft es – Vorhersage, Test, Ergebnis, wie bei Forschern. Dann spielt die Gruppe kurz, wie sich ein neuer Satz anfühlt, und jede Person plant ihr eigenes kleines Experiment.",
+            "sagen": [
+              "Euer alter Satz ist eine Vorhersage: Wenn ich … tue, dann passiert … – heute schauen wir, ob sie stimmt.",
+              "Auch 90 Prozent sicher heißt nicht, dass es so kommt – das finden wir heraus."
+            ],
+            "punkte": [
+              "Übung (7 Min.): Rollenspiel „Bäckerei“ – Die Leitung ist die Verkäuferin, eine Person bestellt, eine ist die innere Stimme (erst der alte Satz, dann der neue), eine beobachtet Haltung und Stimme; jede Szene dauert eine Minute, dann wird gewechselt.",
+              "Übung (8 Min.): Experiment-Karte – Jede Person wählt auf den Karten je Ort eine Stufe (klein, mittel, groß) und füllt Aufgabe 1 auf dem Blatt aus: alter Satz, Vorhersage, wie sicher von 0 bis 100 Prozent, neuer Satz.",
+              "Übung (3 Min.): Stärke suchen – Jede Person schaut in ihren Baum der Stärke: Welche Stärke hilft mir bei diesem Test? Sie steht als Stichwort neben dem neuen Satz."
+            ],
+            "tabelle": {
+              "spalten": ["Schritt", "Frage dazu", "Beispiel Bäckerei"],
+              "zeilen": [
+                ["Vorhersage", "Was passiert, wenn ich es tue – und wie sicher bin ich (0–100)?", "Alle starren mich an, die Verkäuferin ist genervt – 80 Prozent."],
+                ["Test", "Was genau tue ich – klein und harmlos?", "Ich frage: Was ist heute besonders gut?"],
+                ["Ergebnis", "Was ist wirklich passiert – wie bei einer Kamera?", "Sie lächelt und empfiehlt das Nussbrot."]
+              ]
+            },
+            "tipp": "Die Vorhersage ist der Schlüssel: Wer vorher aufschreibt, was er erwartet, merkt hinterher den Unterschied zur Wirklichkeit.",
+            "wennEsKippt": "Will jemand nicht spielen, beobachtet er oder übernimmt die innere Stimme. Fällt keine Vorhersage ein, fragt die Leitung: Was wäre das Schlimmste, das passieren könnte – und wie wahrscheinlich ist es wirklich?",
+            "blatt": "a7-experiment-karten"
+          },
+          {
+            "titel": "Weg in die Stadt: Spotlight-Test",
+            "dauer": 10,
+            "phase": "aktiv",
+            "text": "Die Gruppe geht zum Treffpunkt und von dort in die Stadt; vorher noch einmal die Regeln: Treffpunkt, Signal, Stopp-Recht – wer Stopp sagt, macht nicht mit und bleibt bei der Leitung. Unterwegs zählt jede Person drei Minuten lang unauffällig, wie viele Leute sie tatsächlich ansehen – meist sind es weniger, als der Kopf sagt.",
+            "sagen": [
+              "Zählt unauffällig, wie viele Menschen euch wirklich ansehen – nicht, wie viele ihr denkt.",
+              "Treffpunkt, Signal, Stopp-Recht: Wer Stopp sagt, bleibt bei mir."
+            ],
+            "tipp": "Der Spotlight-Test ist der erste kleine Beweis des Tages. Nie anstarren, nur zählen; die Zahlen auf dem Rückweg vergleichen.",
+            "wennEsKippt": "Wird jemand unruhig oder will umkehren, anhalten, durchatmen lassen und kurz die Zahl abfragen; wer nicht weitergehen mag, wartet mit der Leitung auf einer Bank."
+          },
+          {
+            "titel": "Beweis-Challenge: Haltestelle, Bäckerei, Café",
+            "dauer": 40,
+            "phase": "uebung",
+            "text": "An drei Orten testet jede Person der Reihe nach ihr Experiment, die anderen beobachten Haltung und Stimme und geben Rückhalt; die Leitung bleibt in Sichtweite. Nach jedem Ort trägt jede Person sofort ein, was wirklich passiert ist, und vergleicht es mit ihrer Vorhersage.",
+            "sagen": [
+              "Du entscheidest die Stufe – klein genügt: erst die Vorhersage, dann der Test, dann nur: Was ist wirklich passiert?",
+              "Ein unfreundlicher Mensch ist ein Ergebnis, aber kein Beweis, dass dein alter Satz stimmt."
+            ],
+            "punkte": [
+              "Übung (8 Min.): Haltestelle – Auftrag nach Karte: den Fahrplan laut lesen, eine Person nach der nächsten Abfahrt fragen oder nach dem Weg zum Bahnhof fragen; vorher ausatmen und den neuen Satz sagen.",
+              "Übung (10 Min.): Bäckerei – Auftrag nach Karte: guten Tag sagen und bestellen, nach einer Empfehlung oder nach den Zutaten fragen; danach sofort in Aufgabe 2 eintragen.",
+              "Übung (10 Min.): Café – Auftrag nach Karte: die Karte lesen, ein Glas Wasser oder ein Getränk bestellen und bezahlen; Vorhersage und Ergebnis vergleichen.",
+              "Übung (5 Min.): Auswertung auf einer Bank – Jede Person nennt Vorhersage und Ergebnis in Prozent oder Wörtern und ihren stärksten Beweis des Tages (Aufgabe 3); die Leitung macht mit.",
+              "Rückweg (7 Min.): Gemeinsam zurückgehen, dabei die Spotlight-Zahlen vergleichen und eine Sache nennen, die überrascht hat."
+            ],
+            "tipp": "Die Aufträge sind bewusst klein: fragen, bestellen, danken. Stufe klein liefert genauso gültige Beweise wie Stufe groß.",
+            "wennEsKippt": "Ist es voll oder reagiert jemand genervt, atmet die Person aus und wechselt den Ort – auch das ist ein Ergebnis und kommt ins Blatt. Will jemand nicht fragen, beobachtet er die anderen oder macht den Auftrag gemeinsam mit der Leitung.",
+            "blatt": "a7-mein-experiment"
+          },
+          {
+            "titel": "Skill: Bemerken, atmen, antworten",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Der Skill verbindet, was das Kapitel geübt hat: den alten Satz bemerken, einmal ausatmen, mit dem neuen Satz antworten (höchstens 5 Min., still höchstens 3 Min.). Danach der Abschluss (10 Min.): Zahl nachher, Skills-Pass, Mission und eigener Moment.",
+            "sagen": [
+              "Der alte Satz darf kommen – ihr müsst ihm nur nicht mehr gehorchen.",
+              "Was denkst du heute ein kleines bisschen anders über dich – nur, wenn du magst?"
+            ],
+            "punkte": [
+              "Die drei Schritte: Bemerk den alten Satz – „Aha, da ist er wieder.“ Atme einmal langsam aus und spür die Füße. Antworte mit dem neuen Satz und tu den nächsten kleinen Schritt.",
+              "Skill (5 Min.): Die Leitung liest drei Alltagsmomente vor – schlechte Note, Pause bei einer Gruppe, Chat ohne Antwort; alle machen still die drei Schritte, dann zu zweit laut.",
+              "Zahl nachher (2 Min.): Die Anspannung noch einmal von 0 bis 100 schätzen und mit der Zahl vom Anfang vergleichen.",
+              "Skills-Pass (3 Min.): zum Kapitelende ein Satz zur Frage: Was nehme ich aus „Meine Gedanken“ mit? Dann der Stempel.",
+              "Mission und Moment (5 Min.): die Mission vorlesen; jede Person schreibt in die Spalte „Mein Moment: Wenn …“, wann sie diese Woche einen Beweis sammeln kann; Ausblick auf das nächste Kapitel."
+            ],
+            "wennEsKippt": "Hat jemand keinen eigenen neuen Satz, nimmt er einen hilfreichen von der Tafel; wird gekichert, ruhig weitersprechen. Wer die stille Runde nicht mag, macht nur die laute zu zweit."
+          }
+        ],
+        "bruecke": "Nächstes Mal beginnt ein neues Kapitel: Es geht um Kommunikation – ihr seht eine Filmszene fast ohne Worte und übt, wie man sagt, was man fühlt und braucht.",
+        "mission": "Sammle einen Beweis für deinen neuen Satz – schreib ihn in einem Satz auf.",
+        "hintergrund": "Überzeugungen ändern sich weniger durch Argumente als durch eigene Erfahrungen: Bewältigungserlebnisse sind die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977). Im Experiment steht erst die Vorhersage, dann der Test, dann der Vergleich mit dem Ergebnis; ein Protokoll macht Erfahrungen sichtbar, die der alte Satz übersieht (Padesky, 1994). Ein Wenn-dann-Plan erhöht die Chance, dass ein Vorsatz umgesetzt wird (Gollwitzer & Sheeran, 2006).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Padesky, C. A. (1994). Schema change processes in cognitive therapy. Clinical Psychology & Psychotherapy, 1(5), 267–278.",
+          "Gollwitzer, P. M. & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119."
+        ],
+        "achtung": "Nur harmlose Aufträge – fragen, bestellen, danken –, immer in Sichtweite der Leitung und nie allein mit Fremden; wer nicht mag, beobachtet oder bleibt bei der Leitung, das Stopp-Recht gilt draußen genauso. Ein unfreundliches Gegenüber ist ein Ergebnis, kein Beweis für den alten Satz; bestätigt die Woche den Satz durch anhaltende Ausgrenzung, nicht auf Durchhalten drängen, sondern klären, wer hilft. Bei Hinweisen auf Mobbing, starke Selbstabwertung oder Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "differenzierung": {
+          "leichter": "Stufe klein genügt (Fahrplan laut vorlesen oder nur danke sagen), und die Vorhersage darf als Zahl oder Gesicht notiert werden.",
+          "schwerer": "Zwei Stufen an zwei Orten testen und die Vorhersagen vergleichen: Welche stimmte am besten, und warum?"
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Experiment planen mit Rollenspiel (15 Min.), ein Experiment im Haus oder in der Nachbarschaft (20 Min.), Skill mit Zahl nachher, Skills-Pass und Mission (10 Min.). Der Ausflug in die Stadt wird nachgeholt."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-mein-experiment",
+      "bereich": "skills",
+      "thema": "gedanken",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln"],
+      "dauer": "35 Min. in der Stadt",
+      "eldib": [],
+      "schlagworte": ["Verhaltensexperiment", "Vorhersage", "Beweise sammeln", "Neuer Satz"],
+      "bild": "icon:clipboard-check",
+      "kurs": ["a7-e17"],
+      "de": {
+        "titel": "Mein Experiment",
+        "untertitel": "Stimmt die Vorhersage deines alten Satzes?",
+        "bausteine": [
+          { "art": "info", "symbol": "hilfe", "titel": "Du entscheidest, wie groß dein Experiment ist.", "text": "Klein genügt. Stopp ist jederzeit erlaubt." },
+          { "art": "aufgabe", "text": "Plane: Was sagt dein alter Satz voraus?", "hinweis": "Wenn ich …, dann passiert …", "symbole": ["schreiben"] },
+          { "art": "satzanfaenge", "items": ["Mein alter Satz: …", "Ich sage voraus: …", "So sicher bin ich, von 0 bis 100 Prozent: …", "Mein neuer Satz: …"], "linien": 1 },
+          { "art": "aufgabe", "text": "Teste an drei Orten und trag ein, was wirklich passiert ist.", "hinweis": "Nur, was eine Kamera filmen könnte.", "symbole": ["schreiben"] },
+          { "art": "tabelle", "spalten": ["Ort", "Mein Test", "Was wirklich passiert ist"], "breiten": [1, 1.8, 2.4], "zeilen": 0, "werte": [["Haltestelle", "", ""], ["Bäckerei", "", ""], ["Café", "", ""]] },
+          { "art": "aufgabe", "text": "Zieh dein Fazit.", "hinweis": "Auch ein unfreundlicher Mensch ist nur ein Ergebnis.", "symbole": ["schreiben"] },
+          { "art": "satzanfaenge", "items": ["Meine Vorhersage stimmte zu … Prozent.", "Mein stärkster Beweis heute: …"], "linien": 1 },
+          { "art": "info", "symbol": "wissen", "titel": "Gut zu wissen", "text": "Der Kopf sagt oft das Schlimmste voraus. Ein Experiment zeigt, was wirklich passiert – und jeder Beweis zählt, auch ein kleiner. Ist jemand unfreundlich, sagt das etwas über die Person, nicht über dich." }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen formulieren eine Vorhersage zu ihrem alten Satz, testen sie in drei kleinen Experimenten in der Stadt und vergleichen das Ergebnis mit der Vorhersage.",
+          "ablauf": [
+            "Einheit 17, Teil 1: Aufgabe 1 – alter Satz, Vorhersage, Sicherheit in Prozent, neuer Satz (8 Min.); dazu die Stärke aus dem Baum der Stärke.",
+            "Teil 2: Nach jedem Ort die Zeile von Aufgabe 2 eintragen – nur, was eine Kamera filmen könnte; Aufgabe 3 auf der Bank.",
+            "Das Blatt bleibt bei der Person; wer mag, nennt in der nächsten Stunde einen Beweis."
+          ],
+          "hintergrund": "Das Blatt folgt dem Ablauf Vorhersage, Test, Ergebnis: Wer vorher aufschreibt, was er erwartet, bemerkt hinterher den Unterschied zur Wirklichkeit. Eigene Bewältigungserlebnisse sind die stärkste Quelle von Selbstwirksamkeit (Bandura, 1977), und ein Protokoll macht Erfahrungen sichtbar, die der alte Satz übersieht (Padesky, 1994).",
+          "quellen": [
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+            "Padesky, C. A. (1994). Schema change processes in cognitive therapy. Clinical Psychology & Psychotherapy, 1(5), 267–278."
+          ],
+          "achtung": "Nur harmlose Aufträge, immer in Sichtweite der Leitung; wer nicht mag, beobachtet. Bestätigt sich der alte Satz durch anhaltende Ausgrenzung, nicht auf Durchhalten drängen, sondern klären, wer helfen kann.",
+          "material": "Heft, Klemmbrett, Stifte"
+        }
+      }
+    },
+    {
+      "id": "a7-experiment-karten",
+      "bereich": "skills",
+      "thema": "gedanken",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "10 Min.",
+      "eldib": [],
+      "schlagworte": ["Aufträge", "Stufen", "Rollenspiel", "Regeln für draußen"],
+      "bild": "icon:route",
+      "kurs": ["a7-e17"],
+      "de": {
+        "titel": "Experiment-Karten für die Stadt",
+        "untertitel": "Kopiervorlage: drei Aufträge in drei Stufen, Regeln für draußen, zwei Szenen für das Rollenspiel",
+        "bausteine": [
+          { "art": "text", "klein": true, "text": "Einmal kopieren und ausschneiden. Jede Person wählt je Ort eine Stufe; alle Aufträge sind harmlos, und niemand muss. Vorher mit Bäckerei und Café klären, dass die Gruppe kommt, und die Handynummer der Leitung auf die Regelkarte schreiben." },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 128,
+            "karten": [
+              { "titel": "Haltestelle · Aufträge", "text": "Klein: den Fahrplan lesen und der Gruppe die nächste Abfahrt sagen.\nMittel: eine Person freundlich nach der nächsten Abfahrt fragen.\nGroß: nach dem Weg zum Bahnhof fragen und danke sagen." },
+              { "titel": "Bäckerei · Aufträge", "text": "Klein: guten Tag sagen und ein Brötchen bestellen.\nMittel: nach einer Empfehlung fragen und danke sagen.\nGroß: nach den Zutaten fragen, bestellen und selbst bezahlen." },
+              { "titel": "Café · Aufträge", "text": "Klein: die Karte lesen und der Gruppe das Günstigste nennen.\nMittel: ein Glas Wasser bestellen.\nGroß: ein Getränk bestellen und selbst bezahlen." },
+              { "titel": "Regeln für draußen", "text": "Treffpunkt: ____________\nSignal: ____________ (alle kommen sofort zur Leitung)\nStopp-Recht: Wer Stopp sagt, macht nicht weiter und bleibt bei der Leitung.\nNotfall: Handy der Leitung ____________ · 112" },
+              { "titel": "Szene · Bäckerei", "text": "Die Leitung ist die Verkäuferin. A bestellt ein Brötchen und fragt nach einer Empfehlung, B ist die innere Stimme (erst der alte Satz, dann der neue), C beobachtet Haltung und Stimme. Jede Szene dauert eine Minute, dann wechseln." },
+              { "titel": "Szene · Haltestelle", "text": "Die Leitung wartet an der Haltestelle. A fragt nach der nächsten Abfahrt, B ist die innere Stimme (erst der alte Satz, dann der neue), C beobachtet Haltung und Stimme. Jede Szene dauert eine Minute, dann wechseln." }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Karten bereiten den Ausflug vor: Aufträge in drei Stufen, die Regeln für draußen und zwei Szenen für das Rollenspiel mit der Leitung.",
+          "ablauf": [
+            "Einmal kopieren und ausschneiden; die Regelkarte vorher mit Treffpunkt, Signal und Handynummer der Leitung ausfüllen.",
+            "Einheit 17, Teil 1: Die Szenen spielen die Jugendlichen mit der Leitung als Verkäuferin; danach wählt jede Person je Ort eine Stufe.",
+            "Teil 2: Die Aufträge der Karten gelten als Vorschlag; alle Aufträge sind harmlos, und wer nicht mag, beobachtet."
+          ],
+          "hintergrund": "Kleine, steigerbare Aufträge machen es leichter, den ersten Schritt zu tun: Wer ein Verhalten in einer überschaubaren Lage erfolgreich ausprobiert, traut es sich auch in der nächsten eher zu (Bandura, 1977). Die drei Stufen lassen jede Person im eigenen Tempo wählen.",
+          "quellen": [
+            "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+          ],
+          "material": "Schere, Stifte"
+        }
+      }
+    }
+  ]
+}

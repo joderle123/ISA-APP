@@ -1,0 +1,262 @@
+{
+  "einheiten": [
+    {
+      "id": "a7-e18",
+      "klasse": "7e",
+      "dauer": 100,
+      "blaetter": ["a7-mehr-als-worte"],
+      "vorlagen": ["a7-mehr-als-worte-karten"],
+      "woerter": [
+        { "de": "die Körpersprache", "fr": "die Körpersprache" },
+        { "de": "die Ich-Botschaft", "fr": "die Ich-Botschaft" },
+        { "de": "der Vorwurf", "fr": "der Vorwurf" },
+        { "de": "zuhören", "fr": "zuhören" },
+        { "de": "zusammenfassen", "fr": "zusammenfassen" }
+      ],
+      "de": {
+        "titel": "Mehr als Worte – Ich-Botschaften und Zuhören",
+        "kurz": "In einer fast wortlosen Filmszene lesen, was Augen, Haltung und Stimme verraten, dann Vorwürfe in Ich-Botschaften verwandeln und beim Gehen so zuhören, dass sich jemand verstanden fühlt.",
+        "ziele": [
+          "lesen in einer fast wortlosen Filmszene, was Augen, Haltung und Stimme mitteilen",
+          "verwandeln Vorwürfe in Ich-Botschaften mit Gefühl und Wunsch",
+          "hören beim Gehen zwei Minuten zu, ohne zu unterbrechen, und fassen das Gehörte mit dem Gefühl zusammen"
+        ],
+        "material": [
+          "Film „WALL·E“ (2008), Beamer oder Bildschirm mit Ton",
+          "Karten (Vorlage), Heft-Blatt je Person",
+          "Gefühlsrad, Anspannungsskala 0–100",
+          "Tafel oder Plakat für die Formel",
+          "Timer mit Signal, Jacken",
+          "Skills-Pass, Stempel"
+        ],
+        "vorbereitung": [
+          "Ausschnitt vorab sichten: EVEs Landung und erste Begegnung mit Wall-E, höchstens 8 Min.; Vorführrechte und Altersfreigabe (bis 12) klären.",
+          "Karten kopieren und schneiden; die Formel an die Tafel schreiben und abdecken.",
+          "Runde für den Spaziergang festlegen (Hof oder um den Block, etwa 10 Min.); bei Regen den Flur nutzen."
+        ],
+        "ablauf": [
+          { "min": "0–10", "phase": "ankommen", "titel": "Check-in: erst das Gesicht, dann Wort und Zahl" },
+          { "min": "10–15", "phase": "bruecke", "titel": "Mission, neues Kapitel und Thema" },
+          { "min": "15–45", "phase": "uebung", "titel": "Film: Wall-E begegnet EVE – Kanäle lesen" },
+          { "min": "45–50", "phase": "aktiv", "titel": "Bewegung: Spiegel ohne Anführer" },
+          { "min": "50–85", "phase": "uebung", "titel": "Ich-Botschaften und Zuhören beim Gehen" },
+          { "min": "85–100", "phase": "skill", "titel": "Skill: Erst atmen, dann reden" }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: erst das Gesicht, dann Wort und Zahl",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Auf drei zeigen alle gleichzeitig ihr Gefühl ohne Wort, nur mit Gesicht und Haltung, und raten still, was die anderen zeigen. Dann zeigt jede Person ihr Wort auf dem Gefühlsrad und nennt ihre Anspannung von 0 bis 100; die Leitung macht mit und beginnt.",
+            "sagen": [
+              "Zeigt euer Gefühl ohne ein Wort – alle gleichzeitig, auf drei.",
+              "Wer nicht mag, zeigt einfach auf sein Wort im Gefühlsrad."
+            ],
+            "tipp": "Wütend, müde und überrascht sind leicht zu erraten, enttäuscht oder verlegen schwer – genau die leisen Gefühle übersieht man bei anderen schnell.",
+            "wennEsKippt": "Wird über ein Gesicht gelacht, kurz auf den Gruppenvertrag zeigen: Wir lachen miteinander, nicht übereinander. Zeigt jemand eine Zahl über 70, nicht vor den anderen nachfragen, sondern später leise fragen, ob er oder sie etwas braucht."
+          },
+          {
+            "titel": "Mission, neues Kapitel und Thema",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Die Wochen-Mission nachfragen: Kam dein Moment – und welchen Beweis hast du gesammelt? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz. Dann das neue Kapitel „Kommunikation und Grenzen“ aufdecken und das Thema von heute nennen: was ohne Worte ankommt und was man sagt, wenn einen etwas stört.",
+            "sagen": [
+              "Kam euer Moment – und welchen Beweis habt ihr für euren neuen Satz gesammelt?",
+              "Unser neues Kapitel fragt: Wie sage ich, was ich fühle und brauche – und heute geht es erst um alles, was ohne Worte ankommt."
+            ],
+            "tipp": "Wer einen Beweis erzählt, bekommt Anerkennung; wer nichts erlebt hat, auch – gefragt wird nach Beobachtungen, nicht nach Erfolgen."
+          },
+          {
+            "titel": "Film: Wall-E begegnet EVE – Kanäle lesen",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Zuerst das Bild der drei Kanäle (3 Min.): Eine Nachricht läuft über Worte, Stimme und Körper, und wenn sie nicht zusammenpassen, glauben die meisten dem Körper. Dann sehen alle den Ausschnitt aus „WALL·E“ (2008), in dem EVE landet und Wall-E ihr zum ersten Mal begegnet – fast ohne Worte, jede Person mit einem eigenen Beobachtungsauftrag.",
+            "sagen": [
+              "Achtet nur auf euren Kanal: Was zeigt er, ohne ein Wort zu sagen – und was fühlt die Figur dabei?",
+              "An der Tafel sammeln wir gleich: Gefühl, Zeichen, Kanal."
+            ],
+            "punkte": [
+              "Übung (3 Min.): Beobachtungsaufträge – Jede Person zieht eine Karte: Augen und Kopf, Hände und Haltung oder Töne und Tempo; die Leitung achtet auf den Abstand zwischen den beiden Figuren.",
+              "Übung (10 Min.): Film – Der Ausschnitt läuft einmal ohne Pause, danach die ersten Minuten noch einmal ohne Ton: Was versteht man jetzt noch? Wer will, notiert Stichworte.",
+              "Übung (7 Min.): Kanäle lesen – Jede Person sagt, was ihr Kanal gezeigt hat, und alle tragen es in Aufgabe 1 ein; die Leitung schreibt es mit dem Gefühl an die Tafel, zum Beispiel „neugierig: Kopf schief, Augen weit“, und fragt, wem man glaubt, wenn Kanäle sich widersprechen.",
+              "Übung (7 Min.): Ein Wort, viele Gefühle – Wie Wall-E und EVE nur ihre Namen haben, sagt jede Person nur ihren Vornamen so, dass die anderen das Gefühl erraten, das die Leitung auf dem Gefühlsrad zeigt."
+            ],
+            "tipp": "Den Ausschnitt vorher auf wenige Minuten kürzen und ohne Unterbrechung zeigen; Kichern bei den Roboter-Tönen ist erlaubt.",
+            "wennEsKippt": "Schweift die Gruppe zur Filmhandlung ab, kurz würdigen und zurück zur Frage: Was zeigt der Körper? Wird das Namen-Spiel albern, ein Gefühl neu verteilen, und die Leitung beginnt.",
+            "blatt": "a7-mehr-als-worte-karten"
+          },
+          {
+            "titel": "Bewegung: Spiegel ohne Anführer",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Zu zweit (die Leitung mit der dritten Person) stehen sich alle gegenüber: Eine Person führt langsame Bewegungen, die andere spiegelt sie; nach einer Minute wird gewechselt, in der letzten Runde führt niemand – beide spiegeln sich gegenseitig. Ohne Worte, nur mit Blick und Körper.",
+            "sagen": [
+              "Schaut nicht auf die Hände, schaut in die Augen – so merkt ihr, was als Nächstes kommt."
+            ],
+            "tipp": "Das Spiel trainiert, was gleich gebraucht wird: auf die andere Person achten und sich auf sie einstellen. Bei wenig Platz im Sitzen spiegeln."
+          },
+          {
+            "titel": "Ich-Botschaften und Zuhören beim Gehen",
+            "dauer": 35,
+            "phase": "uebung",
+            "text": "Zuerst zeigt die Leitung an einer kurzen Szene, wie ein Vorwurf und eine Ich-Botschaft wirken, dann bauen alle Vorwürfe um und gehen zum Zuhören nach draußen. Nebeneinander gehen nimmt den Druck des Blickkontakts, und das Zusammenfassen gelingt mit einem Satz wie „Du meinst also …“.",
+            "sagen": [
+              "Hinter jedem Vorwurf steckt ein Wunsch – die Ich-Botschaft sagt ihn, statt anzugreifen.",
+              "Du hörst nur zu, und am Ende fragst du: Habe ich richtig verstanden, dass …?"
+            ],
+            "tabelle": {
+              "spalten": ["Teil", "Frage dazu", "Beispiel"],
+              "zeilen": [
+                ["Ich fühle mich …", "Welches Gefühl? Das Gefühlsrad hilft.", "Ich fühle mich genervt,"],
+                ["wenn …", "Was ist passiert – wie bei einer Kamera, ohne „immer“ und „nie“?", "wenn ich unterbrochen werde,"],
+                ["weil …", "Was ist mir dabei wichtig?", "weil ich dann meinen Gedanken verliere."],
+                ["Ich wünsche mir …", "Was genau soll anders werden?", "Ich wünsche mir, dass du mich ausreden lässt."]
+              ]
+            },
+            "punkte": [
+              "Übung (6 Min.): Vorwurf oder Ich-Botschaft? – Eine Person, die vorher zugesagt hat, unterbricht die Leitung beim Erzählen; erst antwortet die Leitung mit „Du nervst immer.“, dann mit der Ich-Botschaft, und die Jugendlichen sagen, was sie nach jedem Satz tun würden; dann die Formel aufdecken.",
+              "Übung (9 Min.): Vorwurf-Karten umbauen – Jede Person zieht zwei Karten und baut die Vorwürfe zu Ich-Botschaften um (Aufgabe 2 auf dem Blatt); die Leitung spielt das Gegenüber und reagiert erst auf den Vorwurf, dann auf die Ich-Botschaft.",
+              "Übung (14 Min.): Zuhören beim Gehen – Zu zweit gehen alle eine Runde im Hof (die Leitung mit der dritten Person, alle in Sichtweite): A erzählt zwei Minuten von etwas Harmlosem – Lieblingsessen, Serie, ein Ort –, B hört nur zu und fasst mit dem Gefühl zusammen; dann wechseln.",
+              "Übung (6 Min.): Rückmeldung – Wieder im Raum füllt jede Person den Zuhör-Check aus (Aufgabe 3); danach die Frage: Wie war es, wirklich gehört zu werden, und was war beim Zuhören schwer?"
+            ],
+            "tipp": "Ein Timer klingelt nach zwei Minuten für alle gleichzeitig; wer nichts zu erzählen weiß, wählt das beste Essen der Woche oder einen nervigen Moment im Bus.",
+            "wennEsKippt": "Schreiben einige nur Scherzsätze („Ich fühle mich hungrig, wenn keine Pizza da ist“), mit Humor aufnehmen und um eine echte Alltagssituation bitten – Geschwister, Bus, Gruppenchat. Erzählt jemand Belastendes, das über die Woche hinausgeht, freundlich würdigen und ein Gespräch nach der Stunde anbieten; die zuhörende Person ist dafür nicht zuständig.",
+            "blatt": "a7-mehr-als-worte"
+          },
+          {
+            "titel": "Skill: Erst atmen, dann reden",
+            "dauer": 15,
+            "phase": "skill",
+            "text": "Ich-Botschaften gelingen mit ruhigem Kopf: Ab etwa 70 klingt fast jeder Satz wie ein Angriff. Die Leitung übt die drei Schritte mit einer erfundenen Situation (höchstens 5 Min., still höchstens 3 Min.), danach der Abschluss (10 Min.): Skills-Pass, Mission und eigener Moment.",
+            "sagen": [
+              "Merkt, welcher Satz zuerst kommen will – den behaltet ihr heute im Kopf.",
+              "Drei Atemzüge dauern zehn Sekunden – so lange kann fast jeder Streit warten."
+            ],
+            "punkte": [
+              "Skill (5 Min.): Situation vorlesen – dein Bruder hat schon wieder dein Ladekabel genommen, der Akku ist bei zwei Prozent; dann drei Schritte: Zahl merken (über 70: noch nichts sagen), dreimal langsam ausatmen, erst dann die Ich-Botschaft sagen.",
+              "Skills-Pass (4 Min.): ein Satz zur Frage an der Tafel – Welche Ich-Botschaft könnte ich diese Woche brauchen? – dann der Stempel.",
+              "Mission und Moment (6 Min.): die Mission vorlesen; jede Person schreibt in die Spalte „Mein Moment: Wenn …“, wann sie eine Ich-Botschaft sagen oder zuhören will – jemand nimmt meine Sachen, jemand unterbricht mich, im Chat nervt etwas –, dann der Ausblick."
+            ],
+            "wennEsKippt": "Kommt beim Üben echter Ärger über eine anwesende Person hoch, die Situation wechseln: Heute nur erfundene oder vergangene Situationen. Wer keinen Moment wählen mag, lässt die Spalte leer."
+          }
+        ],
+        "bruecke": "Nächstes Mal geht es um Grenzen: Wo fangen eure an – und woran merkt ihr, dass ihr jemandem zu nahe kommt?",
+        "mission": "Sag eine Ich-Botschaft – oder hör zwei Minuten nur zu. Was passiert?",
+        "hintergrund": "Nach Watzlawick et al. (1967) kann man nicht nicht kommunizieren: Jede Nachricht läuft über Worte, Stimme und Körper, und die Beziehung zeigt sich vor allem in Stimme, Blick und Haltung. Die Ich-Botschaft nennt Situation, Gefühl und Wunsch statt eines Urteils, und aktives Zuhören gibt wieder, was die andere Person sagt und fühlt (Gordon, 1972). Das größte Hindernis im Gespräch ist das vorschnelle Bewerten (Rogers & Roethlisberger, 1952).",
+        "quellen": [
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Rogers, C. R. & Roethlisberger, F. J. (1952). Barriers and gateways to communication. Harvard Business Review, 30(4), 46–52."
+        ],
+        "achtung": "Die Körpersprache einzelner Jugendlicher nie deuten oder bewerten: Blickkontakt, Abstand und Gesten sind in jeder Familie und Kultur anders, und über Sprachen und Akzente wird nicht gelacht. Beim Zuhören nur harmlose Themen anbieten; erzählt jemand Belastendes, freundlich würdigen und nach der Stunde ansprechen. Ich-Botschaften schützen nicht vor Mobbing oder Gewalt: Bei wiederholten Angriffen, Drohungen oder Hinweisen auf Gefährdung nach dem internen Schutzkonzept handeln und die zuständige Leitung (Responsable) informieren.",
+        "differenzierung": {
+          "leichter": "Nur zwei Teile verlangen – Gefühl und Wunsch –, die Formel und das Gefühlsrad bleiben an der Tafel, und das Zusammenfassen darf mit „Du meinst also …“ beginnen.",
+          "schwerer": "Aufschreiben, was die andere Person auf die Ich-Botschaft antworten könnte, und eine ruhige zweite Antwort formulieren, oder beim Zuhören die Beobachtung mit dem Zuhör-Check übernehmen."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Film mit Beobachtungsaufträgen und Kanäle lesen (15 Min.), Vorwurf-Karten mit Ich-Botschaften (10 Min.), Zuhören zu zweit im Raum (10 Min.), Erst atmen, dann reden mit Skills-Pass und Mission (10 Min.). Namen-Spiel, Spiegel und Gehen draußen entfallen."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "a7-mehr-als-worte",
+      "bereich": "skills",
+      "thema": "kommunikation",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["einzeln", "gruppe"],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": ["Körpersprache", "Ich-Botschaft", "Zuhören", "Film"],
+      "bild": "icon:messages",
+      "kurs": ["a7-e18"],
+      "de": {
+        "titel": "Mehr als Worte",
+        "untertitel": "Was Wall-E ohne Worte sagt – und was du sagen kannst, wenn dich etwas stört",
+        "bausteine": [
+          { "art": "aufgabe", "text": "Was zeigt Wall-E ohne Worte? Trag ein, was dein Kanal gezeigt hat – und welches Gefühl dazu passt.", "symbole": ["schreiben"] },
+          { "art": "tabelle", "spalten": ["Kanal", "Was ich gesehen habe", "Gefühl"], "breiten": [1.3, 2.2, 1.2], "zeilen": 0, "beispiel": ["Augen und Kopf", "Augen weit, Kopf schief", "neugierig"], "werte": [["Hände und Haltung", "", ""], ["Töne und Tempo", "", ""]] },
+          { "art": "aufgabe", "text": "Mach aus dem Vorwurf eine Ich-Botschaft.", "hinweis": "Dein Bruder nimmt schon wieder dein Ladekabel: „Nie gibst du was zurück!“", "symbole": ["schreiben"] },
+          { "art": "satzanfaenge", "items": ["Ich fühle mich …", "wenn …", "weil …", "Ich wünsche mir …"], "linien": 1 },
+          { "art": "aufgabe", "text": "Kreuze an, wie dir das Zuhören gelungen ist.", "symbole": ["ankreuzen"] },
+          { "art": "einschaetzung", "optionen": ["gelungen", "teilweise", "noch nicht"], "items": ["Ich habe die Person ausreden lassen.", "Ich habe mit dem Gefühl zusammengefasst."] },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              { "art": "info", "symbol": "wissen", "titel": "Gut zu wissen", "text": "Passen Worte und Körper nicht zusammen, glauben die meisten dem Körper. Ein Vorwurf macht dicht, eine Ich-Botschaft sagt, was du brauchst. Wer sich gehört fühlt, wird ruhiger." }
+            ],
+            "rechts": [
+              { "art": "info", "symbol": "tipp", "titel": "Vorsicht, verkleidete Du-Botschaft", "punkte": ["„Ich fühle mich, als wärst du egoistisch“ greift trotzdem an.", "Ein Gefühl ist ein Wort wie enttäuscht, gestresst, unsicher."] }
+            ]
+          },
+          { "art": "info", "symbol": "hilfe", "text": "Immer wieder angegriffen? Sprich mit der Leitung oder ruf an: Kanner- a Jugendtelefon 116 111." }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen halten fest, was eine Filmszene ohne Worte zeigt, verwandeln einen Vorwurf in eine Ich-Botschaft und schätzen ein, was ihnen beim Zuhören schon gelingt.",
+          "ablauf": [
+            "Einheit 18, Teil 1: Aufgabe 1 (Tabelle) wird bei „Kanäle lesen“ gemeinsam gefüllt; jede Person trägt ihren Kanal ein, die anderen aus der Runde dazu.",
+            "Teil 2: Aufgabe 2 nach der Formel, mit den Vorwurf-Karten geübt; Aufgabe 3 nach dem Zuhören beim Gehen, allein oder mit dem Gegenüber.",
+            "Das Blatt wird nicht eingesammelt; wenn es mehr ist als Alltagsärger, die Leitung ansprechen, anonym das Kanner- a Jugendtelefon 116 111."
+          ],
+          "hintergrund": "Jede Nachricht läuft über Worte, Stimme und Körper, und die Beziehung zeigt sich vor allem in Stimme, Blick und Haltung (Watzlawick et al., 1967). Ich-Botschaft und aktives Zuhören gehören zusammen: Die eine passt, wenn mich etwas stört, das andere, wenn die andere Person etwas bewegt (Gordon, 1972).",
+          "quellen": [
+            "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+            "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe."
+          ],
+          "material": "Heft, Stifte"
+        }
+      }
+    },
+    {
+      "id": "a7-mehr-als-worte-karten",
+      "bereich": "skills",
+      "thema": "kommunikation",
+      "stufen": ["ES"],
+      "layout": "jugend",
+      "sozialform": ["gruppe"],
+      "dauer": "10 Min.",
+      "eldib": [],
+      "schlagworte": ["Beobachtungskarten", "Vorwurf-Karten", "Film", "Ich-Botschaft"],
+      "bild": "icon:masks-theater",
+      "kurs": ["a7-e18"],
+      "de": {
+        "titel": "Karten: Kanäle und Vorwürfe",
+        "untertitel": "Kopiervorlage: drei Beobachtungskarten für den Film, sechs Vorwurf-Karten",
+        "bausteine": [
+          { "art": "text", "klein": true, "text": "Einmal kopieren und ausschneiden. Die Beobachtungskarten gehören zum Filmausschnitt, die Vorwurf-Karten zum Umbauen in Ich-Botschaften; die Situationen sind erfunden, und niemand muss eine eigene erzählen." },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 104,
+            "karten": [
+              { "titel": "Kanal 1 · Augen und Kopf", "text": "Wohin schaut Wall-E, wohin EVE? Wie weit sind die Augen, wie neigt sich der Kopf? Was fühlt die Figur dabei?" },
+              { "titel": "Kanal 2 · Hände und Haltung", "text": "Was machen Arme und Hände? Macht sich eine Figur klein oder groß, kommt sie näher oder weicht sie aus?" },
+              { "titel": "Kanal 3 · Töne und Tempo", "text": "Welche Töne und Laute gibt es – hoch, tief, schnell, leise? Wie schnell bewegen sich die Figuren, wann stocken sie?" },
+              { "titel": "Vorwurf 1 · Das Handy", "text": "Jemand nimmt dein Handy, ohne zu fragen.\nVorwurf: „Du nervst, lass das!“" },
+              { "titel": "Vorwurf 2 · Zu spät", "text": "Deine Freundin kommt zum dritten Mal zu spät.\nVorwurf: „Du bist immer so unzuverlässig!“" },
+              { "titel": "Vorwurf 3 · Im Bus", "text": "Neben dir hört jemand laut Musik ohne Kopfhörer.\nVorwurf: „Du bist so rücksichtslos!“" },
+              { "titel": "Vorwurf 4 · Das Kabel", "text": "Dein Bruder nimmt dein Ladekabel und bringt es nicht zurück.\nVorwurf: „Nie gibst du was zurück!“" },
+              { "titel": "Vorwurf 5 · Das Foto", "text": "Jemand postet ein Foto von dir, ohne zu fragen.\nVorwurf: „Du denkst nur an dich!“" },
+              { "titel": "Vorwurf 6 · Gruppenarbeit", "text": "In der Gruppenarbeit macht einer nichts.\nVorwurf: „Du bist so faul!“" }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Karten geben dem Film einen Beobachtungsauftrag je Kanal und dem Rollenspiel erfundene Alltagssituationen für Vorwürfe und Ich-Botschaften.",
+          "ablauf": [
+            "Einmal kopieren und ausschneiden; die drei Beobachtungskarten und sechs Vorwurf-Karten bereitlegen.",
+            "Einheit 18, Teil 1: Jede Person zieht eine Beobachtungskarte und achtet im Filmausschnitt auf diesen Kanal.",
+            "Teil 2: Jede Person zieht zwei Vorwurf-Karten und baut sie in Ich-Botschaften um; die Leitung spielt das Gegenüber."
+          ],
+          "hintergrund": "Wer nur auf einen Kanal achtet, sieht genauer hin: Gesicht, Haltung und Stimme tragen zusammen die Beziehungsseite einer Nachricht (Watzlawick et al., 1967). Die Vorwurf-Karten üben den Wechsel vom Urteil zur Ich-Botschaft, die Situation, Gefühl und Wunsch nennt (Gordon, 1972).",
+          "quellen": [
+            "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+            "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe."
+          ],
+          "material": "Schere"
+        }
+      }
+    }
+  ]
+}
