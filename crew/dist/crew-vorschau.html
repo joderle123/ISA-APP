@@ -3866,8 +3866,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 
 /* ---------- Stärken-Spion: Rollenkarte, Wort-Wand ---------- */
 .sp-card { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; padding: clamp(20px, 4vw, 40px); border-radius: calc(var(--radius) + 6px); border: var(--bw) solid var(--line); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line), var(--glow); max-width: 720px; width: 100%; }
-.sp-card[data-kind="spion"] { background: color-mix(in srgb, var(--yellow) 25%, var(--panel)); }
-.sp-card[data-kind="engel"] { background: color-mix(in srgb, var(--good) 25%, var(--panel)); }
+/* Absichtlich KEINE Farbe je Rolle: Von weitem sehen alle Karten gleich aus */
 .sp-card .ic { color: var(--text); }
 .sp-words { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
 .sp-found { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -15711,10 +15710,11 @@ var qrcode = function() {
   const DAGEGEN = ['Zu teuer', 'Zu lang', 'Nicht alle können mit', 'Langweilig nach 10 Minuten', 'Braucht Erlaubnis', 'Unfair für manche', 'Wetter-abhängig', 'Zu laut'];
 
   /* ---- Beschlüsse: im Spielstand (ohne Namen), als Karten im HQ unter der Sticker-Wand ---- */
+  const deDatum = (iso) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || ''); return m ? m[3] + '.' + m[2] + '.' + m[1] : iso || ''; };
   function beschluesse() { const st = CREW.state; if (!Array.isArray(st.beschluesse)) st.beschluesse = []; return st.beschluesse; }
   function beschlussKarte(b) {
     return h('div', { class: 'beschluss', 'data-theme': 'ankommen' },
-      h('span', { class: 'eyebrow' }, 'Crew-Rat · ' + b.datum),
+      h('span', { class: 'eyebrow' }, 'Crew-Rat · ' + deDatum(b.datum)),
       h('b', { class: 'display' }, b.thema),
       h('span', null, b.text),
       h('span', { class: 'muted small' }, 'Konsent: alle konnten damit leben' + (b.einwaende ? ' · ' + b.einwaende + (b.einwaende === 1 ? ' Einwand' : ' Einwände') + ' besprochen' : '')));

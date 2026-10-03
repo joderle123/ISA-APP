@@ -26,10 +26,11 @@
   const DAGEGEN = ['Zu teuer', 'Zu lang', 'Nicht alle können mit', 'Langweilig nach 10 Minuten', 'Braucht Erlaubnis', 'Unfair für manche', 'Wetter-abhängig', 'Zu laut'];
 
   /* ---- Beschlüsse: im Spielstand (ohne Namen), als Karten im HQ unter der Sticker-Wand ---- */
+  const deDatum = (iso) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || ''); return m ? m[3] + '.' + m[2] + '.' + m[1] : iso || ''; };
   function beschluesse() { const st = CREW.state; if (!Array.isArray(st.beschluesse)) st.beschluesse = []; return st.beschluesse; }
   function beschlussKarte(b) {
     return h('div', { class: 'beschluss', 'data-theme': 'ankommen' },
-      h('span', { class: 'eyebrow' }, 'Crew-Rat · ' + b.datum),
+      h('span', { class: 'eyebrow' }, 'Crew-Rat · ' + deDatum(b.datum)),
       h('b', { class: 'display' }, b.thema),
       h('span', null, b.text),
       h('span', { class: 'muted small' }, 'Konsent: alle konnten damit leben' + (b.einwaende ? ' · ' + b.einwaende + (b.einwaende === 1 ? ' Einwand' : ' Einwände') + ' besprochen' : '')));

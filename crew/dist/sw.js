@@ -1,5 +1,5 @@
-/* CREW Offline-Cache 72f8bf22f3 */
-const CACHE = 'crew-72f8bf22f3';
+/* CREW Offline-Cache c0ec4cac72 */
+const CACHE = 'crew-c0ec4cac72';
 const FILES = ['./', './index.html', './manifest.webmanifest'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });
