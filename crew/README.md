@@ -88,6 +88,24 @@ nie über die Jugendlichen. Teilen ist freiwillig, **Pass** steht auf jedem Bild
   Thema, Format und ELDiB-Code suchen.
 - **Sticker-Wand** im Crew-HQ: Jedes gespielte Spiel klebt einen Sticker an die Wand. Das ist die gemeinsame
   Belohnung aller neuen Spiele (gespeichert wird nur die Spiel-ID und wie oft, keine Namen).
+- Ist das Katalogspiel einer Einheit noch nicht gebaut, zeigt der Finder automatisch den **besten gebauten Ersatz**
+  (gleiches Thema, gleiche ELDiB-Codes). Es gibt nie einen toten Link.
+
+### Gebaute Spiele (28 von 62, ★ = Favorit)
+
+| Thema | Spiele |
+|---|---|
+| Ankommen & Crew | Probelauf · Regel-Radar · Frag weiter! · Pilot & Navigator ★ · Stummer Aufbau · Stärken-Spion ★ · Crew-Rat ★ · Erster Eindruck ★ · Echte Freunde? |
+| Ich: Bedürfnisse & Stärken | Tank-Detektiv ★ · Was steckt dahinter? · Kleiner Schritt ★ · Je nach Ort · Zwei Brillen ★ · Stärke im Einsatz ★ · Vergleichs-Falle |
+| Gefühle verstehen | Gefühls-Funk · Pult-Tausch ★ |
+| Anspannung & Skills | Pegel-Reihe ★ · Skill-Sprechstunde ★ |
+| Gedanken & Glaubenssätze | Gedanken-Weiche ★ · Tatsache oder Urteil? ★ |
+| Kommunikation & Grenzen | Funkstille – der Chat kippt ★ · Hitze-Ecken ★ |
+| Konflikt, Druck & Mobbing | Story-Staffel: Der Streit ★ · Deal oder kein Deal ★ · Druck-Chat ★ |
+| Digital, Gesundheit & Abschluss | Teilen oder nicht? ★ |
+
+Die übrigen 34 Spiele stehen mit Ablauf und Kritik-Notizen in `docs/SPIELEKATALOG.md` und erscheinen in der App als „bald“.
+Eine Kurzvorstellung für Kollegium und Leitung: `docs/VORSTELLUNG.md`.
 
 ### Sieben Formate
 
@@ -112,6 +130,14 @@ Dafür muss CREW **online** stehen: Die Basis-URL steht unter „Spiele“ (Stan
 `https://joderle123.github.io/ISA-APP/crew/dist/index.html`). **GitHub Pages muss die Lehrkraft einmal
 einschalten** (siehe unten). Ohne Internet startet man das Spiel am Beamer bzw. Lehrer-iPad.
 
+## Anbindung an die Klassebücher (Galileo / Unified)
+
+Das Paket `integration/` bindet CREW ins Klassebuch ein: `crew-hub.js` (eine Datei, keine Abhängigkeiten, kein Netz)
+liefert den Spielekatalog, Vorschläge nach ELDiB-Wochenzielen und Themen aus Notizen (`suggest`), die lokale
+Themen-Erkennung per Stichwortliste (`themenAusNotizen`, de/lb/fr, gibt nur Tags zurück), QR-Codes (`qrSvg`) und
+Deep-Links (`spielUrl`). Anleitung mit Datenschutz-Regeln und fertigem Prompt: `integration/HUB-ANLEITUNG.md`;
+Beispielseite mit erfundenen Daten: `integration/demo.html`. Die Datei wird von `node build.js` neu erzeugt.
+
 ## Kostenlos online stellen (GitHub Pages)
 
 1. Auf github.com ein kostenloses Konto anlegen (falls noch nicht vorhanden).
@@ -135,8 +161,10 @@ Alles steckt in dieser einen Datei (auch Schriften und Grafiken).
 - Quellcode: `crew/src` (core, content, missions, solo, base, games)
 - Bauen: `node crew/build.js` → schreibt `crew/dist/index.html` und `crew/dist/crew-vorschau.html`.
   `src/content/katalog.js` wird dabei aus `docs/spielekatalog.json` erzeugt (`tools/katalog-gen.js`), nicht von Hand ändern.
+  Ebenso entsteht `integration/crew-hub.js` aus `integration/src/crew-hub.src.js` + Katalog + QR-Kern (`tools/hub-gen.js`).
 - Tests (Playwright): `node crew/tests/smoke.mjs` (ebenso radar, clash, feed, reframe, solo-test, hq) und
-  `node crew/tests/games.mjs` (spielt JEDES registrierte Spiel im Auto-Modus bis zum Ende, prüft Deep-Link und QR).
+  `node crew/tests/games.mjs` (spielt JEDES registrierte Spiel im Auto-Modus bis zum Ende, prüft Deep-Link und QR);
+  `node crew/tests/hub.mjs` prüft die Klassebuch-Anbindung ohne Browser.
   Läuft parallel noch ein anderer Browser-Test: `flock /tmp/crew-chrome.lock node crew/tests/games.mjs`.
 
 ### Ein neues Spiel bauen

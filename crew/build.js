@@ -38,6 +38,8 @@ const walk = (dir, ext) => {
 
 /* Spielekatalog: src/content/katalog.js wird aus docs/spielekatalog.json erzeugt (nur bei Änderung neu geschrieben) */
 require('./tools/katalog-gen.js').generate(ROOT);
+/* Hub-Anbindung (Galileo/Unified): integration/crew-hub.js aus integration/src + Katalog + QR-Kern */
+require('./tools/hub-gen.js').generate(ROOT);
 
 /* Schriften einbetten (keine externen Anfragen, datenschutzfreundlich) */
 const FONTS = [
