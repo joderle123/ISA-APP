@@ -1,0 +1,20 @@
+/* Pult-Tausch: Steuerpult-Konsole, das gewählte Gefühl sitzt am Steuer */
+.pult { --pc: var(--line); --pi: var(--text); background: #14102b; color: #fff; border: var(--bw) solid var(--line); border-radius: var(--radius); padding: 14px; display: flex; flex-direction: column; gap: 10px; min-width: 200px; box-shadow: inset 0 0 0 2px rgba(255,255,255,.06), 0 var(--lift) 0 var(--line); }
+.pult.small { min-width: 150px; padding: 10px; }
+.pult-screen { background: linear-gradient(180deg, color-mix(in srgb, var(--pc) 35%, #0d0a1f), #0d0a1f); border: 2px solid color-mix(in srgb, var(--pc) 60%, transparent); border-radius: var(--radius-sm); min-height: 84px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 10px; text-align: center; }
+.pult-screen .muted { color: rgba(255,255,255,.6); }
+.pult-seat { display: flex; align-items: center; gap: 8px; color: var(--pc); font-family: var(--font-display); font-size: 1.3em; text-transform: var(--display-case); letter-spacing: var(--display-track); }
+.pult.small .pult-seat { font-size: 1.05em; }
+.pult-satz { font-size: 0.95em; color: #fff; opacity: .9; max-width: 260px; }
+.pult-knobs { display: flex; justify-content: center; gap: 10px; }
+.pult-knobs i { width: 22px; height: 22px; border-radius: 50%; background: color-mix(in srgb, var(--kc) 35%, #222); border: 2px solid rgba(255,255,255,.25); transition: transform .2s, box-shadow .2s; }
+.pult-knobs i.on { background: var(--kc); transform: scale(1.3); box-shadow: 0 0 14px var(--kc); border-color: #fff; }
+.pult-knobs.big i { width: 34px; height: 34px; background: var(--kc); border-color: var(--line); }
+.pult-row { display: grid; grid-template-columns: minmax(200px, 260px) 1fr; gap: 12px; align-items: start; }
+.pult-row > .fig-card, .pult-row > .bigcard { margin: 0; }
+.pult-tausch-anim { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.pult-tausch-anim .pult:last-child { animation: pult-pop .5s ease-out; }
+@keyframes pult-pop { from { transform: scale(.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.pult-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pult-chip { background: color-mix(in srgb, var(--pc) 30%, var(--bg)); align-self: flex-start; }
+@media (max-width: 760px) { .pult-row, .pult-compare { grid-template-columns: 1fr; } }

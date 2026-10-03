@@ -1,0 +1,9 @@
+/* Story-Staffel: Verlauf, Zug-Tipps, „Das hat die Figur gesagt“ */
+.ss-log { gap: 6px; }
+.ss-zug { display: grid; grid-template-columns: auto auto 1fr; gap: 10px; align-items: start; padding: 8px 10px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); }
+.ss-zug-n { font-family: var(--font-display); font-weight: 800; min-width: 1.6em; text-align: center; border-radius: 99px; background: var(--panel2); padding: 2px 6px; }
+.ss-zug-ic, .ss-said .ic { color: var(--tc, var(--accent)); }
+.ss-zug[data-zug="klartext"], .ss-said[data-zug="klartext"] { --tc: var(--good); }
+.ss-zug[data-zug="angriff"], .ss-said[data-zug="angriff"] { --tc: var(--hot); }
+.ss-zug[data-zug="abtauchen"], .ss-said[data-zug="abtauchen"] { --tc: var(--muted); }
+.ss-said { display: flex; gap: 12px; align-items: center; padding: 12px 16px; border: var(--bw) solid var(--line); border-left-width: 8px; border-left-color: var(--tc, var(--accent)); border-radius: var(--radius-sm); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }

@@ -1,0 +1,18 @@
+/* Pegel-Reihe: Karte mit verdeckter Zahl, Kipper-Leuchten, Ergebnis */
+.pegel-card { display: grid; grid-template-columns: 1fr minmax(170px, 220px); gap: 12px; align-items: stretch; }
+.pegel-card > .fig-card { margin: 0; }
+.pegel-side { background: var(--panel); border: var(--bw) solid var(--line); border-radius: var(--radius); padding: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center; box-shadow: 0 var(--lift) 0 var(--line); }
+.pegel-zahl { width: 100%; min-height: 96px; display: grid; place-items: center; border-radius: var(--radius-sm); background: repeating-linear-gradient(135deg, var(--panel2) 0 8px, var(--bg) 8px 16px); border: 2px dashed var(--line); color: var(--muted); }
+.pegel-hidden { display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 0.85em; }
+.pegel-card.offen .pegel-zahl { border-style: solid; background: var(--good); color: var(--good-ink); animation: pegel-reveal .4s ease-out; }
+.pegel-card.offen .pegel-zahl[data-stufe="gelb"] { background: var(--yellow); color: var(--yellow-ink); }
+.pegel-card.offen .pegel-zahl[data-stufe="rot"] { background: var(--hot); color: #fff; }
+.pegel-zahl b.display { font-size: clamp(2.6em, 6vw, 4em); line-height: 1; }
+@keyframes pegel-reveal { from { transform: scale(.7); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.pegel-light { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 28px; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--good); color: var(--good-ink); min-width: min(100%, 420px); box-shadow: 0 0 40px color-mix(in srgb, var(--good) 60%, transparent); }
+.pegel-light[data-kipp="1"] { background: var(--hot); color: #fff; box-shadow: 0 0 40px color-mix(in srgb, var(--hot) 60%, transparent); animation: pegel-blink 1s ease-in-out 3; }
+.pegel-light b.display { font-size: 2.4em; }
+@keyframes pegel-blink { 50% { filter: brightness(1.35); } }
+.pegel-result { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; padding: 18px; border-radius: var(--radius); background: var(--panel); border: var(--bw) solid var(--line); }
+.pegel-result b.display { font-size: 2.2em; color: var(--tc, var(--accent)); }
+@media (max-width: 760px) { .pegel-card { grid-template-columns: 1fr; } }

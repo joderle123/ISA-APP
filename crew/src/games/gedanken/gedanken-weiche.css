@@ -1,0 +1,27 @@
+/* Gedanken-Weiche: Weiche als SVG, Gleis-Karten, Comic-Panels, Vorhersage-Abgleich */
+.weiche { background: #14102b; border: var(--bw) solid var(--line); border-radius: var(--radius); padding: 10px; box-shadow: 0 var(--lift) 0 var(--line); }
+.weiche svg { width: 100%; height: auto; display: block; max-height: 240px; }
+.weiche.small svg { max-height: 150px; }
+.weiche .rail { stroke: #3a3360; }
+.weiche .rail-in { stroke: #8a80b8; }
+.weiche .rail.on { stroke: var(--tc, var(--accent)); }
+.weiche .rail-in.on { stroke: #fff; }
+.weiche .lbl { fill: #c9c3e6; font-family: var(--font-display); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.weiche .zug rect:first-child { fill: var(--yellow); stroke: #0e0a26; stroke-width: 2; }
+.weiche .zug circle { fill: #0e0a26; }
+.weiche-row { display: grid; grid-template-columns: minmax(240px, 1.1fr) 1fr; gap: 12px; align-items: start; }
+.gleis-card { position: relative; background: var(--panel); border: var(--bw) solid var(--line); border-left: 10px solid var(--tc, var(--accent)); border-radius: var(--radius); padding: 12px 14px; display: flex; flex-direction: column; gap: 4px; }
+.gleis-card[data-gleis="2"] { border-left-color: var(--teamB); }
+.gleis-card[data-art="bremsend"] { border-left-color: var(--hot); }
+.gleis-card[data-art="hilfreich"] { border-left-color: var(--good); }
+.gleis-card b { font-size: clamp(1.1em, 1.3vw + 0.6em, 1.5em); line-height: 1.25; }
+.gleis-card.big { padding: 18px 20px; }
+.gleis-card .read-btn { position: absolute; top: 8px; right: 8px; }
+.comic { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.comic-panel { position: relative; background: #fff; color: #0e0a26; border: 3px solid #0e0a26; border-radius: 6px; padding: 26px 12px 12px; min-height: 110px; box-shadow: 5px 5px 0 #0e0a26; }
+.comic-panel p { margin: 0; font-size: 1em; line-height: 1.3; font-weight: 600; }
+.comic-n { position: absolute; top: -10px; left: -10px; width: 28px; height: 28px; border-radius: 50%; background: var(--yellow); color: var(--yellow-ink); border: 3px solid #0e0a26; display: grid; place-items: center; font-family: var(--font-display); }
+.vorhersage-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.vorhersage { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--panel); }
+.vorhersage.hit { background: color-mix(in srgb, var(--good) 35%, var(--bg)); border-color: var(--good); }
+@media (max-width: 760px) { .weiche-row, .vorhersage-row { grid-template-columns: 1fr; } .comic { grid-template-columns: 1fr; } }
