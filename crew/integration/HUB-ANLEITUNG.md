@@ -112,23 +112,41 @@ Für QR-Codes muss CREW online stehen (GitHub Pages oder Schul-Server). Ohne Int
 ## 6. Fertiger Prompt für die Klassebuch-Sitzung (zum Kopieren)
 
 ```
-Binde CREW (crew/integration/crew-hub.js, Anleitung crew/integration/HUB-ANLEITUNG.md) in das Klassebuch ein:
+Ich möchte mein Spiel CREW in beide Klassebücher einbinden: „Galileo“ (Annexe Junglinster) und „Unified“ (CDSE-Hub).
+Bitte nichts Bestehendes kaputt machen, den vorhandenen Stil der App übernehmen und vor größeren Umbauten kurz nachfragen.
 
-1. App-Reiter „CREW“ neben der Toolbox: öffnet crew/dist/index.html (lokal) oder die in den Einstellungen
-   hinterlegte CREW-URL (Standard https://joderle123.github.io/ISA-APP/crew/dist/index.html) in einem neuen Fenster.
+QUELLE (öffentliches Repo, nur Spiele, keine Schülerdaten):
+- Repo: github.com/joderle123/ISA-APP, Branch: claude/youth-game-socio-emotional-ntxd04
+- crew/integration/crew-hub.js   → die Schnittstelle (window.CREWHub), ohne Abhängigkeiten
+- crew/integration/HUB-ANLEITUNG.md → Details und Datenschutz-Regeln (bitte zuerst lesen)
+- crew/integration/demo.html     → Beispiel, wie die Karten aussehen sollen (nur Beispieldaten)
+- crew/dist/index.html           → das Spiel selbst (eine Datei, läuft offline)
+Hol die Dateien per git (Repo zur Sitzung hinzufügen oder klonen) oder über
+https://raw.githubusercontent.com/joderle123/ISA-APP/claude/youth-game-socio-emotional-ntxd04/crew/integration/crew-hub.js
+und lege sie im Klassebuch unter apps/crew/ ab (crew-hub.js und index.html).
+
+AUFGABEN:
+1. App-Reiter „CREW“ neben der Toolbox: öffnet apps/crew/index.html (lokal) oder die in den Einstellungen hinterlegte
+   CREW-Adresse (Standard https://joderle123.github.io/ISA-APP/crew/dist/index.html) in einem neuen Fenster.
 2. Im Schülerprofil eine Karte „CREW-Spiele für diese Woche“:
-   - tags = CREWHub.themenAusNotizen(<Notizen der laufenden Woche dieser Person>)  — läuft lokal, Text verlässt die Seite nicht
-   - top3 = CREWHub.suggest({ eldib: <ELDiB-Codes der Wochenziele>, themen: tags, max: 3, ohne: <in den letzten 14 Tagen gespielte IDs> })
-   - Personal-Ansicht: Spielname, Format, Dauer, Grund (top3[i].grund), QR-Code (CREWHub.qrSvg(top3[i].url)).
-   - Jugend-Ansicht (Schüler-Login / Ausdruck): nur Spielname + QR-Code. Kein Grund, keine Tags, keine ELDiB-Codes.
-   - Tags mit vorsicht:true (familie, trauer) als gelben Hinweis fürs Personal markieren.
-3. Gruppenkarte am Ende der Skills-Stunde (Kursplan Jahr 1, Einheiten j1-e01…j1-e30):
-   - heute = CREWHub.suggest({ einheit: <Einheit laut Stundenplan>, max: 2 }); Variante aus CREWHub.katalog.einheiten anzeigen;
-     QR-Code groß für den Beamer, bei Rollen-Puzzles (format 'rollen') vier QR-Codes mit rolle A–D.
-4. Datenschutz, nicht verhandelbar: Notizen bleiben im Klassebuch; nur Tag-IDs und ELDiB-Codes werden an CREWHub übergeben;
-   keine Aufrufe an KI-Dienste; keine Namen/IDs in CREW-Links; Grund nur im Personal-Login; alles vor dem Rollout der DPO vorlegen.
-5. Tests: crew-hub.js lädt ohne Fehler; suggest liefert für jede Einheit j1-e01…j1-e30 mindestens ein gebautes Spiel;
-   themenAusNotizen('') ist leer; die Jugend-Ansicht enthält weder 'grund' noch Tags im DOM.
+   - tags = CREWHub.themenAusNotizen(<Réunion- und Wochen-Notizen dieser Person>) – läuft lokal, der Text verlässt die Seite nie
+   - top3 = CREWHub.suggest({ eldib: <ELDiB-Codes der aktuellen Ziele/Wochenziele>, themen: tags, max: 3,
+            ohne: <IDs der in den letzten 14 Tagen vorgeschlagenen Spiele> })
+   - Ansicht fürs Personal: Spielname, Format, Dauer, Grund (top3[i].grund), QR-Code (CREWHub.qrSvg(top3[i].url)).
+   - Falls es eine Schüler-Ansicht oder einen Ausdruck für Jugendliche gibt: nur Spielname + QR-Code.
+     Kein Grund, keine Tags, keine ELDiB-Codes.
+   - Tags mit vorsicht:true (z. B. familie, trauer) als gelben Hinweis nur fürs Personal markieren.
+3. Gruppenkarte am Ende der Skills-Stunde (Kursplan Jahr 1, Einheiten j1-e01 … j1-e30):
+   - heute = CREWHub.suggest({ einheit: <Einheit laut Stundenplan/Kursplan>, max: 2 }); die Variante aus
+     CREWHub.katalog.einheiten anzeigen; QR-Code groß für den Beamer; bei Rollen-Puzzles (format 'rollen')
+     vier QR-Codes mit rolle A–D (CREWHub.spielUrl(id, {rolle, code})).
+4. Datenschutz (nicht verhandelbar): Notizen bleiben im Klassebuch; an CREWHub gehen nur Tag-IDs und ELDiB-Codes;
+   keine Aufrufe an KI-Dienste mit Notizen oder Schülerdaten; keine Namen oder Schüler-IDs in CREW-Links;
+   der Grund ist nur für das Personal sichtbar. Vor dem Einsatz mit Jugendlichen der Datenschutzbeauftragten vorlegen.
+5. Tests: crew-hub.js lädt ohne Fehler; suggest liefert für jede Einheit j1-e01 … j1-e30 mindestens ein gebautes Spiel;
+   themenAusNotizen('') ist leer; die Schüler-Ansicht enthält weder 'grund' noch Tags noch ELDiB-Codes im DOM;
+   bestehende Tests des Klassebuchs bleiben grün.
+Danach kurz berichten, was eingebaut ist und wo ich es finde.
 ```
 
 ## 7. Pflege
