@@ -1,0 +1,35 @@
+/* Vergleichs-Falle: Handy-Look „Glimmr“ mit umdrehbaren Posts (keine echten Bilder, nur Farbflächen) */
+.vf-layout { display: grid; gap: 14px; grid-template-columns: minmax(260px, 340px) 1fr; align-items: start; }
+.glimmr { background: #fff; color: #111; border: var(--bw) solid var(--line); border-radius: 22px; padding: 12px; box-shadow: 0 var(--lift) 0 var(--line); display: flex; flex-direction: column; gap: 10px; font-family: system-ui, -apple-system, sans-serif; }
+.glimmr .muted { color: #666; }
+.gl-head { display: flex; flex-direction: column; gap: 0; padding: 2px 6px 6px; border-bottom: 1px solid #e5e5e5; }
+.gl-head b { font-size: 1.3em; letter-spacing: -.02em; background: linear-gradient(90deg, #f09433, #dc2743, #bc1888); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.gl-profile { display: flex; align-items: center; gap: 10px; padding: 0 4px; flex-wrap: wrap; }
+.gl-profile > .stack { min-width: 0; flex: 1 1 110px; }
+.gl-profile > .stack b { white-space: nowrap; }
+.gl-avatar { width: 48px; height: 48px; border-radius: 50%; background: conic-gradient(from 90deg, #f09433, #dc2743, #bc1888, #f09433); border: 3px solid #fff; box-shadow: 0 0 0 2px #dc2743; flex: none; }
+.gl-stats { flex: 1 1 100%; display: flex; gap: 18px; padding-left: 58px; font-size: .75em; color: #666; }
+.gl-stats span { display: flex; flex-direction: column; align-items: center; }
+.gl-stats b { color: #111; font-size: 1.1em; }
+.gl-posts { display: grid; gap: 8px; }
+.gl-post { position: relative; border-radius: 12px; overflow: hidden; border: 1px solid #e5e5e5; min-height: 112px; perspective: 800px; }
+.gl-post[role="button"] { cursor: pointer; }
+.gl-front, .gl-back { transition: transform 500ms cubic-bezier(.2,.8,.2,1), opacity 300ms; backface-visibility: hidden; }
+.gl-front { display: grid; grid-template-columns: 96px 1fr; grid-template-rows: 1fr auto; gap: 4px 10px; padding: 0 10px 8px 0; }
+.gl-img { grid-row: 1 / span 2; min-height: 112px; }
+.gl-post[data-bg="strand"] .gl-img { background: linear-gradient(180deg, #7ad7ff 0 55%, #ffe9a8 55%); }
+.gl-post[data-bg="freunde"] .gl-img { background: radial-gradient(circle at 30% 60%, #ff9ac1 0 18%, transparent 19%), radial-gradient(circle at 70% 60%, #ffd27a 0 18%, transparent 19%), linear-gradient(180deg, #ffd6e8, #c9e8ff); }
+.gl-post[data-bg="look"] .gl-img { background: radial-gradient(circle at 50% 40%, #ffd9b8 0 24%, transparent 25%), linear-gradient(180deg, #e9d5ff, #fbe1ff); }
+.gl-post[data-bg="setup"] .gl-img { background: linear-gradient(180deg, #1a1033, #3b1b6b); box-shadow: inset 0 0 40px #b48bff; }
+.gl-post[data-bg="party"] .gl-img { background: radial-gradient(circle at 20% 30%, #ff4fa3 0 10%, transparent 11%), radial-gradient(circle at 70% 70%, #ffc93c 0 12%, transparent 13%), linear-gradient(135deg, #2b1055, #7597de); }
+.gl-post[data-bg="pokal"] .gl-img { background: radial-gradient(circle at 50% 45%, #ffd700 0 20%, transparent 21%), linear-gradient(180deg, #1d3557, #457b9d); }
+.gl-post[data-bg="auto"] .gl-img { background: linear-gradient(180deg, #cfd8dc 0 60%, #37474f 60%); }
+.gl-cap { align-self: end; padding-top: 10px; font-size: .9em; line-height: 1.3; }
+.gl-likes { display: inline-flex; align-items: center; gap: 4px; font-size: .8em; color: #dc2743; font-weight: 700; }
+.gl-back { position: absolute; inset: 0; background: #111; color: #fff; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; transform: rotateY(180deg); }
+.gl-back p { margin: 0; font-size: .9em; line-height: 1.3; }
+.gl-trick { align-self: flex-start; font-size: .72em; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; background: var(--yellow); color: var(--yellow-ink); border-radius: 99px; padding: 2px 10px; }
+.gl-post.flipped .gl-front { transform: rotateY(180deg); }
+.gl-post.flipped .gl-back { transform: rotateY(0); }
+.gl-true { display: flex; justify-content: space-between; align-items: center; gap: 10px; border: 1px solid #e5e5e5; border-radius: 12px; padding: 10px 12px; font-weight: 700; }
+@media (max-width: 760px) { .vf-layout { grid-template-columns: 1fr; } }

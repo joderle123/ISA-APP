@@ -1,0 +1,16 @@
+/* Stärke im Einsatz: Stärken-Karten, Satzanfänge, Stärken-Turm */
+.se-layout { display: grid; gap: 14px; grid-template-columns: 1fr 190px; align-items: start; }
+.se-grid { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); }
+.se-card { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; background: var(--bg); border: 2px solid var(--line); border-radius: var(--radius-sm); padding: 10px 6px; font: inherit; color: inherit; cursor: pointer; min-height: 72px; }
+.se-card b { font-size: 0.92em; line-height: 1.15; }
+.se-card.sel { background: var(--yellow); color: var(--yellow-ink); box-shadow: 0 0 0 3px var(--line); }
+.se-card:disabled { opacity: .45; cursor: default; text-decoration: line-through; }
+.se-card.eigen { border-style: dashed; border-color: var(--good); }
+.se-input { font: inherit; font-size: 1em; padding: 10px 12px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: inherit; width: 100%; box-sizing: border-box; }
+.turm { display: flex; flex-direction: column; justify-content: flex-end; min-height: 320px; background: var(--panel); border: var(--bw) solid var(--line); border-radius: var(--radius); padding: 10px; box-shadow: 0 var(--lift) 0 var(--line); }
+.turm-stack { display: flex; flex-direction: column; gap: 4px; justify-content: flex-end; flex: 1; }
+.turm-block { display: flex; align-items: center; gap: 6px; background: color-mix(in srgb, var(--fc, var(--yellow)) 55%, var(--bg)); border: 2px solid var(--line); border-radius: 8px; padding: 6px 10px; font-size: 0.85em; font-weight: 800; }
+.turm-block.new { animation: turmDrop 500ms cubic-bezier(.2,.8,.2,1); }
+@keyframes turmDrop { from { transform: translateY(-30px); opacity: 0; } to { transform: none; opacity: 1; } }
+.turm-boden { border-top: 4px solid var(--line); margin-top: 8px; padding-top: 6px; text-align: center; }
+@media (max-width: 760px) { .se-layout { grid-template-columns: 1fr; } .turm { min-height: 120px; } .turm-stack { flex-direction: row; flex-wrap: wrap; } }

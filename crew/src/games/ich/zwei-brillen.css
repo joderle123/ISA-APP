@@ -1,0 +1,8 @@
+/* Zwei Brillen: Brillen-Karten mit Farbkante, Auflösung als Vierer-Raster */
+.brille { background: var(--panel); border: var(--bw) solid var(--line); border-left: 10px solid var(--bc); border-radius: var(--radius); padding: clamp(14px, 2vw, 22px); display: flex; flex-direction: column; gap: 6px; box-shadow: 0 var(--lift) 0 var(--line); }
+.brille p { margin: 0; font-size: clamp(1.05em, 1.2vw + 0.6em, 1.4em); line-height: 1.35; }
+.brille.small { padding: 12px 14px; box-shadow: none; }
+.brille.small p { font-size: 0.95em; }
+.brille-tag { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; font-size: 0.85em; letter-spacing: .06em; text-transform: uppercase; color: var(--bc); }
+.brillen-grid { display: grid; gap: 10px; grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 760px) { .brillen-grid { grid-template-columns: 1fr; } }

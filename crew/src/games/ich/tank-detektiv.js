@@ -20,6 +20,8 @@
     { id: 'frei', name: 'Selbst bestimmen', icon: 'star', colour: '#3da5ff', desc: 'selbst entscheiden, nicht nur Regeln' },
   ];
   const tank = (id) => TANKS.find((t) => t.id === id);
+  // Eigene CSS-Variable setzen (h() kennt keine --Variablen)
+  const cv = (el, k, v) => { el.style.setProperty(k, v); return el; };
 
   /* Fälle: Verhalten als Signal. tank = leerer Tank. steps: der kleinste Schritt ist „best“, einer ist zu groß,
      einer füllt einen anderen Tank. wunsch = Wunsch statt Bedürfnis → Rückfrage nötig; dahinter = möglicher Tank. */
@@ -61,11 +63,11 @@
     const oo = o || {};
     const els = {};
     const el = h('div', { class: 'tank-grid' }, TANKS.map((t) => {
-      const b = h('button', { type: 'button', class: 'tank', 'data-tank': t.id, style: { '--tk': t.colour }, 'aria-label': 'Tank ' + t.name + ': ' + t.desc },
+      const b = cv(h('button', { type: 'button', class: 'tank', 'data-tank': t.id, 'aria-label': 'Tank ' + t.name + ': ' + t.desc },
         h('span', { class: 'tank-glass' }, h('i')),
         h('span', { class: 'tank-ic' }, CREW.icon(t.icon, 22)),
         h('b', null, t.name),
-        h('span', { class: 'muted small' }, t.desc));
+        h('span', { class: 'muted small' }, t.desc)), '--tk', t.colour);
       if (oo.onPick) b.addEventListener('click', () => { CREW.sound.play('tap'); el.querySelectorAll('.tank').forEach((x) => x.classList.toggle('sel', x === b)); oo.onPick(t.id); });
       else b.disabled = true;
       els[t.id] = b;
@@ -127,7 +129,7 @@
     const spur = f.wunsch ? (f.dahinter.includes(picked) ? 'Das passt zur Antwort.' : 'Hm, ' + name + ' hat etwas anderes gesagt. Vielleicht nochmal hinhören.') : picked === f.tank ? 'Das passt zum Signal.' : 'Möglich. Das Signal „' + f.signal + '“ zeigt eher auf „' + tank(f.tank).name + '“. Beides ist eine Spur.';
     const steps = ctx.rshuffle(f.steps);
     const w4 = ctx.scr([
-      h('div', { class: 'row', style: { gap: '10px', alignItems: 'center' } }, h('span', { class: 'tank mini', style: { '--tk': t.colour } }, h('span', { class: 'tank-glass' }, h('i')), h('span', { class: 'tank-ic' }, CREW.icon(t.icon, 18))), h('div', { class: 'stack', style: { gap: '2px' } }, h('span', { class: 'eyebrow' }, 'Euer Tank'), h('b', null, t.name)), h('span', { class: 'muted small' }, spur)),
+      h('div', { class: 'row', style: { gap: '10px', alignItems: 'center' } }, cv(h('span', { class: 'tank mini' }, h('span', { class: 'tank-glass' }, h('i')), h('span', { class: 'tank-ic' }, CREW.icon(t.icon, 18))), '--tk', t.colour), h('div', { class: 'stack', style: { gap: '2px' } }, h('span', { class: 'eyebrow' }, 'Euer Tank'), h('b', null, t.name)), h('span', { class: 'muted small' }, spur)),
       ctx.say('Welcher Schritt füllt den Tank „' + t.name + '“ – und ist so klein, dass ' + name + ' ihn heute noch schafft?', { eyebrow: 'Der kleinste Schritt', small: true }),
     ], { eyebrow: 'Fall ' + (i + 1) + ' · Schritt' });
     let stepPick = null;
@@ -197,7 +199,7 @@
       const w6 = ctx.scr([
         ctx.say('Schlussrunde: Zwei Wünsche. Sagt euch gegenseitig in einem Satz: Welcher Tank steckt dahinter?', { eyebrow: 'Was steckt dahinter?', small: true }),
         h('div', { class: 'grid two' }, dahinter.map((d) => ctx.figureCard({ fig: d.fig, mood: 'neutral', text: '„Ich will ' + d.text.charAt(0).toLowerCase() + d.text.slice(1) + '.“', eyebrow: 'Wunsch', size: 72 }))),
-        h('div', { class: 'row' }, TANKS.map((t) => h('span', { class: 'chip small', style: { '--tk': t.colour } }, CREW.icon(t.icon, 14), ' ' + t.name))),
+        h('div', { class: 'row' }, TANKS.map((t) => h('span', { class: 'chip small', style: { background: 'color-mix(in srgb, ' + t.colour + ' 30%, var(--bg))' } }, CREW.icon(t.icon, 14), ' ' + t.name))),
         ctx.safetyLine('freiwillig'),
       ], { eyebrow: 'Schlussrunde' });
       await ctx.ask(w6, [{ label: 'Pass', value: 'pass', variant: 'ghost', icon: 'x' }, { label: 'Beide gesagt', value: 'done', iconRight: 'right' }]);
