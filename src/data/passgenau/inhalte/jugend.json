@@ -7236,5 +7236,1182 @@
   },
   "qualitaet": "entwurf",
   "sicher": {}
+ },
+ {
+  "id": "j:gefuehlte-minute",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Die gefühlte Minute",
+  "text": "Die Fachkraft startet die Uhr verdeckt. Der oder die Jugendliche sitzt ohne Blick auf Uhr oder Handy und sagt „Stopp“, wenn nach eigenem Gefühl 60 Sekunden um sind. Die Fachkraft nennt die echte Zeit und notiert sie. Es folgen drei weitere Versuche, jeder mit einem anderen Wartetrick: Atemzüge zählen, einen Song im Kopf laufen lassen, einen Punkt im Raum fixieren. Die Fachkraft hilft dabei nicht, kein Antippen, kein Erinnern. Zum Schluss wird überlegt: Welcher Trick passt zum Warten an der Bushaltestelle, in der Schlange in der Mensa oder bis man im Unterricht drankommt?",
+  "sagen": [
+   "Ich sage nichts und gebe kein Zeichen – du entscheidest allein, wann die Minute um ist.",
+   "Mit welchem Trick ging die Zeit am schnellsten vorbei?",
+   "Wo musst du im Alltag am häufigsten warten?"
+  ],
+  "wennEsKippt": "Ist eine Minute zu lang, mit 30 Sekunden anfangen und langsam steigern. Wird es unruhig, darf der oder die Jugendliche beim Warten einen Stift in der Hand drehen.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "wahrnehmen",
+  "thema": [
+   "regeln",
+   "aufmerksamkeit"
+  ],
+  "eldib": [
+   {
+    "code": "V-10",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-14",
+    "gewicht": 1
+   },
+   {
+    "code": "V-18",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 12,
+   "max": 15
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "sinne",
+   "atmen"
+  ],
+  "material": [
+   "uhr",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "La minute ressentie",
+   "text": "L’adulte lance le chronomètre sans le montrer. Sans regarder de montre ni de téléphone, le ou la jeune dit « Stop » quand, selon son ressenti, 60 secondes sont passées. L’adulte annonce le vrai temps et le note. Suivent trois essais, avec à chaque fois une autre astuce : compter ses respirations, se passer une chanson dans la tête, fixer un point dans la pièce. L’adulte n’aide pas : pas de geste, pas de rappel. Pour finir, on cherche quelle astuce convient pour attendre à l’arrêt de bus, dans la file de la cantine ou avant d’avoir la parole en cours.",
+   "sagen": [
+    "Je ne dis rien et je ne fais aucun signe – c’est toi qui décides quand la minute est finie.",
+    "Avec quelle astuce le temps est passé le plus vite ?",
+    "Où est-ce que tu dois le plus souvent attendre dans ta journée ?"
+   ],
+   "wennEsKippt": "Si une minute est trop longue, commencer par 30 secondes et augmenter petit à petit. Si l’agitation monte, le ou la jeune peut faire tourner un stylo entre ses doigts pendant l’attente."
+  },
+  "tagesform": [
+   "aufgedreht"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:kartentrick-mit-pause",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Kartentrick mit Pause",
+  "text": "Die Fachkraft zeigt einen Trick mit 21 Karten: drei Spalten zu je sieben Karten, offen ausgelegt. Der oder die Jugendliche merkt sich still eine Karte und sagt erst, wenn alles ausgeteilt ist, in welcher Spalte sie liegt. Das passiert dreimal. Die Regel: Hände bleiben auf dem Tisch, nichts anfassen, nicht dazwischenrufen. Die Fachkraft hält nichts fest und erinnert nicht, sie wartet einfach. Am Ende liegt die Karte an elfter Stelle. Dann verrät die Fachkraft das Geheimnis (die genannte Spalte kommt beim Einsammeln immer in die Mitte), und der oder die Jugendliche führt den Trick selbst vor. Jetzt wartet die Fachkraft.",
+  "sagen": [
+   "Merk dir eine Karte und behalt sie für dich.",
+   "Deine Hände bleiben liegen, bis ich fertig ausgeteilt habe – dann sagst du nur die Spalte.",
+   "Jetzt zeigst du mir den Trick, und ich warte, bis du so weit bist."
+  ],
+  "wennEsKippt": "Wird das Warten zu lang, darf der oder die Jugendliche beim Austeilen leise mitzählen. Klappt der Trick nicht, ist das kein Problem: Geübt wird das Abwarten, nicht die Zauberei.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "aufmerksamkeit",
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-10",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-14",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-19",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "karten",
+   "spiel"
+  ],
+  "material": [
+   "spielkarten"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Tour de cartes avec pause",
+   "text": "L’adulte présente un tour avec 21 cartes : trois colonnes de sept cartes, face visible. Le ou la jeune choisit une carte en silence et attend que tout soit distribué avant de dire dans quelle colonne elle se trouve. On le fait trois fois. La règle : les mains restent sur la table, on ne touche à rien, on ne coupe pas la parole. L’adulte ne retient pas les mains, ne fait aucun rappel et se contente d’attendre. À la fin, la carte est la onzième. L’adulte dévoile ensuite le secret (en ramassant, la colonne nommée va toujours au milieu) et le ou la jeune présente le tour à son tour. C’est maintenant l’adulte qui attend.",
+   "sagen": [
+    "Choisis une carte et garde-la pour toi.",
+    "Tes mains restent sur la table jusqu’à ce que j’aie fini de distribuer – ensuite, tu me dis seulement la colonne.",
+    "Maintenant, c’est toi qui fais le tour – prends ton temps, j’attends."
+   ],
+   "wennEsKippt": "Si l’attente est trop longue, le ou la jeune peut compter à voix basse pendant la distribution. Si le tour rate, ce n’est pas grave : on s’entraîne à attendre, pas à faire de la magie."
+  },
+  "tagesform": [
+   "aufgedreht",
+   "muede"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:erst-zu-ende-hoeren",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Erst zu Ende hören",
+  "text": "Die Fachkraft stellt Fragen, bei denen das Ende alles ändert, zum Beispiel: „Nenne eine Stadt in Luxemburg … die mit E anfängt und nicht Esch heißt.“ oder „Wie viele Beine hat eine Spinne … wenn man zwei Spinnen zusammenzählt?“ Geantwortet wird erst, wenn die Fachkraft den Stift auf den Tisch legt. Kommt die Antwort zu früh, wird die Frage einfach noch einmal gestellt. Ab der vierten Frage fällt das Zeichen weg: Gewartet wird ohne Hilfe bis zum Ende der Frage. Danach wird getauscht, und die Fachkraft wartet die Fragen des oder der Jugendlichen ab. Zum Schluss: Wo hilft es, erst zu Ende zu hören?",
+  "sagen": [
+   "Hör jede Frage bis zum Schluss – im Ende steckt der Trick.",
+   "Du antwortest, wenn der Stift liegt. Später entscheidest du das ohne Zeichen.",
+   "Jetzt stellst du die Fragen, und ich warte, bis du fertig bist."
+  ],
+  "wennEsKippt": "Platzt die Antwort immer wieder heraus, kürzere Fragen nehmen und die Wendung früher bringen. Ist das Erfinden zu schwer, verändert der oder die Jugendliche nur eine Frage der Fachkraft ein wenig.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "schule",
+   "aufmerksamkeit"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-14",
+    "gewicht": 1
+   },
+   {
+    "code": "V-10",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 12,
+   "max": 15
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "gespraech",
+   "spiel"
+  ],
+  "material": [
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Écouter jusqu’au bout",
+   "text": "L’adulte pose des questions dont la fin change tout, par exemple : « Cite une ville du Luxembourg… qui commence par E et qui n’est pas Esch. » ou « Combien de pattes a une araignée… si on additionne deux araignées ? » On ne répond que quand l’adulte pose le stylo sur la table. Si la réponse arrive trop tôt, la question est simplement reposée. À partir de la quatrième question, plus de signal : on attend la fin de la question sans aide. Ensuite, on échange les rôles et l’adulte attend la fin des questions du ou de la jeune. Pour finir : où est-ce utile d’écouter jusqu’au bout ?",
+   "sagen": [
+    "Écoute chaque question jusqu’au bout – le piège est à la fin.",
+    "Tu réponds quand le stylo est posé. Plus tard, tu décides sans signal.",
+    "Maintenant, c’est toi qui poses les questions, et j’attends que tu aies fini."
+   ],
+   "wennEsKippt": "Si la réponse part toujours trop vite, prendre des questions plus courtes avec le piège plus tôt. Si inventer est trop difficile, le ou la jeune modifie juste un peu une question de l’adulte."
+  },
+  "tagesform": [
+   "aufgedreht"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:fuenf-minuten-auf-sendung",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Fünf Minuten auf Sendung",
+  "text": "Die Fachkraft und der oder die Jugendliche machen eine kurze Radiosendung, ohne Aufnahme. Auf vier Zetteln stehen Rollen: Moderation, Experte oder Expertin, Reportage, Wetter und Verkehr. Der oder die Jugendliche sucht sich zuerst eine Rolle und ein Thema aus, etwa das beste Essen nach dem Lycée, einen Song, der gerade überall läuft, oder den Schulweg. Die Fachkraft nimmt eine andere Rolle. Fünf Minuten Stichworte sammeln, dann drei Minuten Sendung mit einem Stift als Mikrofon. Danach werden die Rollen getauscht. Die Fachkraft wartet bewusst ab und überlässt dem oder der Jugendlichen den ersten Satz der Sendung.",
+  "sagen": [
+   "Such dir eine Rolle aus, ich nehme eine von den anderen.",
+   "Du gibst das Zeichen, wann wir auf Sendung gehen.",
+   "Welche Rolle hat dir besser gelegen?"
+  ],
+  "wennEsKippt": "Ist Sprechen zu viel, übernimmt der oder die Jugendliche die Technik: Zeichen geben, Zeit stoppen, „noch zehn Sekunden“ ansagen. Fällt kein Thema ein, schlägt die Fachkraft drei vor, und es wird auf eines gezeigt.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-13",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-38",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "kooperation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 12,
+   "typ": 15,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "rollenspiel"
+  ],
+  "material": [
+   "papier",
+   "stifte",
+   "uhr"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Cinq minutes à l’antenne",
+   "text": "L’adulte et le ou la jeune font une courte émission de radio, sans enregistrement. Quatre papiers portent des rôles : animation, expert ou experte, reportage, météo et trafic. Le ou la jeune choisit en premier un rôle et un sujet, par exemple le meilleur snack après le lycée, une chanson qu’on entend partout ou le trajet jusqu’à l’école. L’adulte prend un autre rôle. Cinq minutes pour noter des mots-clés, puis trois minutes d’émission avec un stylo comme micro. Ensuite, on échange les rôles. L’adulte attend volontairement et laisse au ou à la jeune la première phrase de l’émission.",
+   "sagen": [
+    "Choisis un rôle, je prendrai un des autres.",
+    "C’est toi qui donnes le signal quand on passe à l’antenne.",
+    "Quel rôle t’a le mieux convenu ?"
+   ],
+   "wennEsKippt": "Si parler est trop difficile, le ou la jeune s’occupe de la technique : donner les signaux, chronométrer, annoncer « encore dix secondes ». Si aucun sujet ne vient, l’adulte en propose trois et le ou la jeune en montre un."
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:der-wuerfel-schlaegt-vor",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Der Würfel schlägt vor",
+  "text": "Auf ein Blatt kommen die Zahlen 1 bis 6. Die Fachkraft füllt vier Felder mit Aktionen von zwei Minuten, zum Beispiel: drei Songs nennen, die man nie überspringt; fünf Papierkugeln in den Papierkorb werfen; das perfekte Sandwich skizzieren; der Fachkraft eine Frage stellen, die sie ehrlich beantwortet. Zwei Felder füllt der oder die Jugendliche selbst. Dann wird vier- bis fünfmal gewürfelt. Einmal gibt es einen Joker: neu würfeln. Die Fachkraft fordert nicht auf, sondern wartet, bis der oder die Jugendliche von sich aus loslegt, und macht jede Aktion auch selbst mit.",
+  "sagen": [
+   "Zwei Felder gehören dir – schreib rein, worauf du Lust hast.",
+   "Der Würfel schlägt nur vor. Ob du den Joker nimmst, entscheidest du.",
+   "Fang an, wann du so weit bist."
+  ],
+  "wennEsKippt": "Fällt nichts für die eigenen Felder ein, bleiben sie leer, und bei dieser Zahl wird frei aus den anderen gewählt. Kommt der Start nicht von allein, beginnt die Fachkraft die Aktion und lässt eine Lücke zum Einsteigen.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-13",
+    "gewicht": 1
+   },
+   {
+    "code": "V-24",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "spiel",
+   "plan"
+  ],
+  "material": [
+   "wuerfel",
+   "papier",
+   "stifte",
+   "korb"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Le dé propose",
+   "text": "On écrit les chiffres de 1 à 6 sur une feuille. L’adulte remplit quatre cases avec des actions de deux minutes, par exemple : citer trois chansons qu’on ne zappe jamais ; lancer cinq boulettes de papier dans la corbeille ; dessiner le sandwich parfait ; poser à l’adulte une question à laquelle il ou elle répond honnêtement. Les deux autres cases sont pour le ou la jeune. Puis on lance le dé quatre ou cinq fois. Un joker permet de relancer une fois. L’adulte ne pousse pas, attend que le ou la jeune se lance de sa propre initiative et fait aussi chaque action.",
+   "sagen": [
+    "Deux cases sont à toi – écris ce qui te tente.",
+    "Le dé ne fait que proposer. C’est toi qui décides si tu prends le joker.",
+    "Commence quand tu veux."
+   ],
+   "wennEsKippt": "Si rien ne vient pour les cases personnelles, elles restent vides et, pour ce chiffre, on choisit librement parmi les autres. Si le départ ne vient pas tout seul, l’adulte commence l’action et laisse un espace pour que le ou la jeune s’y joigne."
+  },
+  "tagesform": [
+   "will-nicht",
+   "rueckzug"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:der-papierturm",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Der Papierturm",
+  "text": "Die Fachkraft und der oder die Jugendliche haben zehn Blätter Papier, einen Meter Klebeband und zwölf Minuten. Ziel ist ein gemeinsamer Turm, der von allein steht und möglichst hoch ist. Zuerst drei Minuten planen: Beide skizzieren eine Idee, dann wird eine ausgewählt oder beide werden kombiniert. Beim Bauen wird abgewechselt: Eine Person rollt oder faltet, die andere hält und klebt. Nach der Hälfte der Zeit kurzer Halt: Was klappt, was ändern wir? Am Ende wird mit dem Lineal gemessen. Die Fachkraft macht Vorschläge, übernimmt aber nicht das Bauen.",
+  "sagen": [
+   "Wir bauen zusammen: Ich halte, du klebst, dann tauschen wir.",
+   "Nehmen wir deine Idee, meine oder machen wir aus beiden eine?",
+   "Was müssen wir ändern, damit er stehen bleibt?"
+  ],
+  "wennEsKippt": "Kippt der Turm immer wieder, ändert sich das Ziel: nicht hoch, sondern stabil genug, dass ein Radiergummi oben liegen kann. Wird es frustrierend, eine Minute Pause machen und mit einer neuen Idee neu anfangen.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "freundschaft",
+   "lernen"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-18",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-23",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kooperation",
+   "ausdauer"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 12,
+   "typ": 15,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "basteln",
+   "plan"
+  ],
+  "material": [
+   "papier",
+   "klebeband",
+   "lineal",
+   "uhr",
+   "radiergummi",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "La tour de papier",
+   "text": "L’adulte et le ou la jeune disposent de dix feuilles, d’un mètre de ruban adhésif et de douze minutes. Objectif : construire ensemble une tour qui tient debout toute seule et qui soit la plus haute possible. D’abord trois minutes pour planifier : chaque personne esquisse sa propre idée, puis on en choisit une ou on combine les deux. Pendant la construction, on alterne : l’un roule ou plie, l’autre tient et colle. À mi-temps, courte pause : qu’est-ce qui marche, qu’est-ce qu’on change ? À la fin, on mesure avec la règle. L’adulte fait des propositions, mais ne construit pas à la place du ou de la jeune.",
+   "sagen": [
+    "On construit ensemble : je tiens, tu colles, puis on échange.",
+    "On prend ton idée, la mienne, ou on mélange les deux ?",
+    "Qu’est-ce qu’on doit changer pour qu’elle tienne debout ?"
+   ],
+   "wennEsKippt": "Si la tour tombe sans arrêt, on change d’objectif : pas haute, mais assez solide pour porter une gomme. Si la frustration monte, une minute de pause, puis on recommence avec une nouvelle idée."
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:quiz-aus-deinem-fachgebiet",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Quiz aus deinem Fachgebiet",
+  "text": "Der oder die Jugendliche wählt ein Gebiet, in dem er oder sie sich auskennt: ein Fußballverein, eine Band, Basketball, Autos, Mode, Skaten. Daraus werden gemeinsam acht Karteikarten aus Papier: vorne die Frage, hinten die Antwort, drei leichte, drei mittlere, zwei schwere. Die Fachkraft schreibt auf Wunsch mit, entscheidet aber nichts und wartet, bis die Ideen von selbst kommen. Dann fragt der oder die Jugendliche die Fachkraft ab und erklärt bei falschen Antworten, was stimmt. Die Fachkraft fragt dort nach, wo sie es wirklich wissen will.",
+  "sagen": [
+   "Hier bist du die Person, die sich auskennt, nicht ich.",
+   "Worüber weißt du mehr als die meisten Erwachsenen?",
+   "Frag mich ab – und wenn ich danebenliege, erklär es mir."
+  ],
+  "wennEsKippt": "Fällt kein Gebiet ein, nennt die Fachkraft drei Ideen (Lieblingsessen, Schulweg, Musik), und der oder die Jugendliche wählt eine. Ist Schreiben zu mühsam, schreibt die Fachkraft nach Diktat.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "lernen",
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-13",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-22",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 12,
+   "typ": 15,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "schreiben",
+   "karten"
+  ],
+  "material": [
+   "papier",
+   "stifte",
+   "schere"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Ton domaine, ton quiz",
+   "text": "Le ou la jeune choisit un domaine qu’il ou elle connaît bien : un club de foot, un chanteur ou une chanteuse, le basket, les voitures, la mode, le skate. Ensemble, on en tire huit fiches en papier : la question devant, la réponse derrière, trois faciles, trois moyennes, deux difficiles. L’adulte écrit si on le lui demande, mais ne décide rien et attend que les idées viennent. Ensuite, le ou la jeune interroge l’adulte et explique la bonne réponse en cas d’erreur. L’adulte pose des questions là où il ou elle veut vraiment en savoir plus.",
+   "sagen": [
+    "Ici, c’est toi qui t’y connais, pas moi.",
+    "Sur quoi est-ce que tu en sais plus que la plupart des adultes ?",
+    "Interroge-moi – et si je me trompe, explique-moi."
+   ],
+   "wennEsKippt": "Si aucun domaine ne vient, l’adulte propose trois idées (plat préféré, trajet de l’école, musique) et le ou la jeune en choisit une. Si écrire est trop pénible, l’adulte écrit sous la dictée."
+  },
+  "tagesform": [
+   "rueckzug"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:becher-beat",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Becher-Beat",
+  "text": "Die Fachkraft und der oder die Jugendliche sitzen sich am Tisch gegenüber, vor jeder Person steht ein umgedrehter Becher. Die Fachkraft spielt einen kurzen Rhythmus aus vier Schlägen vor (Becher auf den Tisch, Klatschen, zweimal mit der Hand auf den Tisch), der oder die Jugendliche spielt ihn nach. Dann gibt der oder die Jugendliche einen Rhythmus vor. Schritt für Schritt entsteht ein Beat aus acht Schlägen, den beide gleichzeitig spielen. Dazu wird laut gezählt oder ein Satz im Takt gesprochen, etwa der Titel eines Lieblingssongs. Zum Schluss wird der Beat einmal ganz langsam und einmal schnell gespielt.",
+  "sagen": [
+   "Ich spiele vor, du spielst nach – danach gibst du den Takt an.",
+   "Zähl laut mit, wenn es dir hilft.",
+   "Langsamer oder schneller – was willst du?"
+  ],
+  "wennEsKippt": "Wird es zu laut oder zu viel, nur mit den Fingerspitzen auf den Tisch klopfen. Klappt das Nachspielen nicht, bei zwei Schlägen bleiben, bis es sicher sitzt.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "aufmerksamkeit"
+  ],
+  "eldib": [
+   {
+    "code": "V-11",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-19",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "aufmerksamkeit",
+   "kooperation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 12,
+   "max": 15
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "musik",
+   "spiel"
+  ],
+  "material": [
+   "becher"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Le beat des gobelets",
+   "text": "L’adulte et le ou la jeune sont assis face à face à la table, un gobelet retourné devant chaque place. L’adulte joue un court rythme de quatre coups (poser le gobelet, taper dans les mains, deux fois la main sur la table) et le ou la jeune le reproduit. Puis c’est au tour du ou de la jeune de proposer un rythme. Petit à petit, on construit un beat de huit coups que les deux jouent en même temps. On compte à voix haute ou on dit une phrase en rythme, par exemple le titre d’une chanson préférée. Pour finir, on joue le beat une fois très lentement et une fois vite.",
+   "sagen": [
+    "Je joue d’abord, tu répètes – ensuite, c’est toi qui donnes le rythme.",
+    "Compte à voix haute si ça t’aide.",
+    "Plus lent ou plus rapide – qu’est-ce que tu préfères ?"
+   ],
+   "wennEsKippt": "Si c’est trop bruyant ou trop chargé, taper seulement du bout des doigts sur la table. Si reproduire ne marche pas, rester à deux coups jusqu’à ce que ce soit sûr."
+  },
+  "tagesform": [
+   "muede",
+   "aufgedreht"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:die-wurfserie",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Die Wurfserie",
+  "text": "Mit Klebeband kommen drei Abwurflinien auf den Boden: nah, mittel, weit. Ziel ist ein Korb oder Papierkorb, die Bälle sind fünf zusammengeknüllte Blätter. Der oder die Jugendliche wirft von jeder Linie fünfmal und zählt die Treffer laut mit, die Fachkraft notiert. Dann wirft die Fachkraft, und der oder die Jugendliche zählt und notiert. Beide Ergebnisse werden zusammengezählt: Schaffen wir gemeinsam 15 Treffer? Danach erfindet der oder die Jugendliche eine neue Regel (nur mit links, mit Aufsetzer, rückwärts über die Schulter), und es geht in einen zweiten Durchgang.",
+  "sagen": [
+   "Du wirfst und zählst selbst – wie beim Freiwurftraining.",
+   "Wie viele Treffer schaffen wir zusammen?",
+   "Welche Regel machen wir für den zweiten Durchgang?"
+  ],
+  "wennEsKippt": "Ist die Energie zu hoch, nur von der nahen Linie werfen und nach jedem Wurf kurz stehen bleiben. Will der oder die Jugendliche nicht werfen, übernimmt er oder sie zuerst nur das Zählen und steigt später ein.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-12",
+    "gewicht": 1
+   },
+   {
+    "code": "V-23",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstregulation",
+   "kooperation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 12,
+   "max": 15
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 1,
+  "format": [
+   "bewegung",
+   "spiel"
+  ],
+  "material": [
+   "klebeband",
+   "korb",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "La série de lancers",
+   "text": "Avec du ruban adhésif, on trace trois lignes au sol : près, moyen, loin. La cible est une corbeille, les balles sont cinq feuilles froissées en boule. Le ou la jeune lance cinq fois depuis chaque ligne et compte ses paniers à voix haute, l’adulte note. Puis l’adulte lance, et le ou la jeune compte et note. On additionne les deux résultats : est-ce qu’on arrive ensemble à 15 paniers ? Ensuite, le ou la jeune invente une nouvelle règle (seulement de la main gauche, avec un rebond, de dos par-dessus l’épaule) et on fait une deuxième série.",
+   "sagen": [
+    "Tu lances et tu comptes toi-même – comme à l’entraînement de lancers francs.",
+    "Combien de paniers on réussit ensemble ?",
+    "Quelle règle on prend pour la deuxième série ?"
+   ],
+   "wennEsKippt": "Si l’énergie est trop haute, lancer seulement depuis la ligne proche et s’arrêter un instant après chaque lancer. Si le ou la jeune ne veut pas lancer, il ou elle commence par compter et se joint au jeu plus tard."
+  },
+  "tagesform": [
+   "muede",
+   "aufgedreht"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:den-pass-annehmen",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Den Pass annehmen",
+  "text": "Die Fachkraft zeichnet ein kleines Spielfeld und erklärt ein Bild: Lob ist wie ein Pass. Man kann ihn wegschießen („War nur Glück“), ins Aus rollen lassen (Blödsinn machen, weggucken) oder annehmen: kurz stoppen, „Danke“ oder „Hat geklappt“ sagen, weiterspielen. Dann wird geübt: Zu jedem Lob rollt die Fachkraft den Ball zu, der oder die Jugendliche nimmt ihn an, sagt einen kurzen Satz und spielt zurück. Zuerst mit erfundenen Situationen (Trainer nach dem Spiel, Chefin im Praktikum, gute Note in Mathe), zum Schluss mit einem echten, kleinen Lob von heute.",
+  "sagen": [
+   "Viele finden Lob unangenehm, das ist normal.",
+   "Du musst es nicht toll finden, nur annehmen – „Danke“ reicht.",
+   "Jetzt kommt ein echtes Lob von heute, und du nimmst den Pass einfach an."
+  ],
+  "wennEsKippt": "Wird es peinlich oder albern, werden die Rollen getauscht: Der oder die Jugendliche lobt, und die Fachkraft zeigt alle drei Varianten, auch die schlechten. Ist ein echtes Lob zu viel, bei den erfundenen Situationen bleiben.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "thema": [
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-14",
+    "gewicht": 1
+   },
+   {
+    "code": "K-18",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstbild",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 12,
+   "max": 15
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "denkmodell",
+   "rollenspiel"
+  ],
+  "material": [
+   "ball",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Recevoir la passe",
+   "text": "L’adulte dessine un petit terrain et propose une image : un compliment, c’est comme une passe. On peut la dégager (« C’était de la chance »), la laisser filer en touche (faire le clown, regarder ailleurs) ou la contrôler : s’arrêter un instant, dire « Merci » ou « Oui, ça a marché », puis continuer à jouer. Ensuite, on s’entraîne : à chaque compliment, l’adulte fait rouler le ballon, le ou la jeune le contrôle, dit une courte phrase et le renvoie. D’abord avec des situations inventées (l’entraîneur après le match, la cheffe en stage, une bonne note en maths), puis avec un vrai petit compliment d’aujourd’hui.",
+   "sagen": [
+    "Beaucoup de gens trouvent les compliments gênants, c’est normal.",
+    "Pas besoin d’aimer ça : tu reçois juste la passe, un « Merci » et c’est bon.",
+    "Maintenant, un vrai compliment d’aujourd’hui – tu reçois simplement la passe."
+   ],
+   "wennEsKippt": "Si ça devient gênant ou que ça part en rigolade, on échange les rôles : le ou la jeune fait les compliments et l’adulte montre les trois façons, même les mauvaises. Si un vrai compliment est de trop, on reste sur les situations inventées."
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:der-chatverlauf",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Der Chatverlauf",
+  "text": "Die Fachkraft schreibt einen kurzen, erfundenen Chat auf ein Blatt: „Lina: Treffen wir uns morgen? – Noah: Ja, aber erst nach dem Training, so um fünf. – Lina: Am Skatepark? Ich bring die Box mit. – Noah: Ok, aber wenn es regnet, bei mir.“ Der oder die Jugendliche liest ihn oder hört ihn vorgelesen. Dann stellt die Fachkraft Fragen, erst zu Fakten (Wer? Wann? Wo?), dann zu Gründen (Warum erst um fünf?), zuletzt zur Meinung (Was würdest du antworten?). Eine passende Antwort reicht, ein kurzer Satz ist gut. Danach schreibt der oder die Jugendliche die nächste Nachricht von Lina, und die Fachkraft fragt, warum.",
+  "sagen": [
+   "Alles steht im Chat – nur bei der letzten Frage zählt deine eigene Meinung.",
+   "Wann treffen sie sich, und warum erst dann?",
+   "Was würdest du Noah zurückschreiben?"
+  ],
+  "wennEsKippt": "Ist Lesen anstrengend, liest die Fachkraft vor, und der oder die Jugendliche darf vor dem Antworten auf die Stelle zeigen. Bleibt eine Antwort aus, bietet die Fachkraft zwei Möglichkeiten zur Auswahl an.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "freundschaft",
+   "medien"
+  ],
+  "eldib": [
+   {
+    "code": "K-9",
+    "gewicht": 1
+   },
+   {
+    "code": "KOG-39",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "aufmerksamkeit"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 12,
+   "max": 15
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "lesen",
+   "schreiben"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Le fil de discussion",
+   "text": "L’adulte écrit sur une feuille une courte conversation inventée : « Lina : On se voit demain ? – Noah : Oui, mais après l’entraînement, vers cinq heures. – Lina : Au skatepark ? J’apporte l’enceinte. – Noah : Ok, mais s’il pleut, chez moi. » Le ou la jeune la lit ou l’écoute. L’adulte pose ensuite des questions : d’abord sur les faits (Qui ? Quand ? Où ?), puis sur les raisons (Pourquoi seulement à cinq heures ?), enfin sur l’avis personnel (Qu’est-ce que tu répondrais ?). Une réponse qui va avec la question suffit, une courte phrase, c’est bien. Puis le ou la jeune écrit le prochain message de Lina et l’adulte demande pourquoi.",
+   "sagen": [
+    "Tout est dans la conversation – seulement pour la dernière question, c’est ton avis qui compte.",
+    "Quand est-ce qu’ils se voient, et pourquoi seulement à ce moment-là ?",
+    "Qu’est-ce que tu répondrais à Noah ?"
+   ],
+   "wennEsKippt": "Si lire est fatigant, l’adulte lit à voix haute et le ou la jeune peut montrer le passage avant de répondre. Si une réponse ne vient pas, l’adulte propose deux possibilités au choix."
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:logo-diktat",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Logo-Diktat",
+  "text": "Ein aufgestelltes Buch steht als Sichtschutz zwischen beiden. Der oder die Jugendliche zeichnet ein einfaches Logo für eine erfundene Band oder Marke aus höchstens fünf Formen (Kreis, Dreieck, Linie, Buchstabe). Dann beschreibt er oder sie es, und die Fachkraft zeichnet nach Ansage. Die Fachkraft fragt nach („Wie groß ist der Kreis? Links oder rechts?“), der oder die Jugendliche antwortet und ergänzt. Danach werden beide Zeichnungen nebeneinandergelegt. Dann wird getauscht: Die Fachkraft beschreibt ein eigenes Logo, der oder die Jugendliche zeichnet und stellt selbst Fragen. Zum Schluss: Welche Angabe hat am meisten geholfen?",
+  "sagen": [
+   "Ich sehe nichts – du bist meine einzige Info. Wo fange ich an?",
+   "Jetzt zeichnest du. Frag nach, sobald dir etwas unklar ist.",
+   "Welche Angabe hat am meisten geholfen?"
+  ],
+  "wennEsKippt": "Ist das Beschreiben zu schwer, nur drei Formen nehmen und mit oben, unten, links, rechts arbeiten. Wird es frustrierend, das Buch kurz wegnehmen und einen Blick erlauben.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "lernen",
+   "schule"
+  ],
+  "eldib": [
+   {
+    "code": "K-12",
+    "gewicht": 1
+   },
+   {
+    "code": "SOZ-32",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "kooperation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 12,
+   "max": 15
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "malen",
+   "gespraech"
+  ],
+  "material": [
+   "buecher",
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Logo à l’aveugle",
+   "text": "Un livre posé debout fait écran entre les deux. Le ou la jeune dessine un logo simple pour une marque ou un artiste inventé, avec cinq formes au maximum (cercle, triangle, trait, lettre). Puis il ou elle le décrit et l’adulte dessine d’après les indications. L’adulte pose des questions (« Le cercle est grand comment ? À gauche ou à droite ? »), le ou la jeune répond et précise. Ensuite, on pose les deux dessins côte à côte. Puis on échange : l’adulte décrit son propre logo, le ou la jeune dessine et pose ses propres questions. Pour finir : quelle indication a le plus aidé ?",
+   "sagen": [
+    "Je ne vois rien – tu es ma seule source d’info. Je commence où ?",
+    "Maintenant, c’est toi qui dessines. Pose une question dès que quelque chose n’est pas clair.",
+    "Quelle indication a le plus aidé ?"
+   ],
+   "wennEsKippt": "Si décrire est trop difficile, prendre seulement trois formes et travailler avec en haut, en bas, à gauche, à droite. Si la frustration monte, enlever le livre un instant et autoriser un coup d’œil."
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:drei-spalten-zwoelf-woerter",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Drei Spalten, zwölf Wörter",
+  "text": "Die Fachkraft schreibt zwölf Eigenschaften untereinander: ruhig, lustig, sportlich, hilfsbereit, ehrlich, kreativ, geduldig, mutig, ordentlich, neugierig, zuverlässig, musikalisch. Daneben kommen drei Spalten: ich, eine Person, die ich gut finde (Freund, Sportlerin, Musiker, Held aus einem Buch), die Fachkraft. Der oder die Jugendliche kreuzt in jeder Spalte an, was passt, und ergänzt pro Spalte ein eigenes Wort. Dann gibt es zu einem Kreuz je Spalte ein Beispiel, etwa: „Ich bin geduldig, weil ich ein Level zehnmal spiele, bis es klappt.“ Zum Schluss nennt die Fachkraft zwei Wörter, die sie bei dem oder der Jugendlichen wahrnimmt, mit Beispiel.",
+  "sagen": [
+   "Hier stehen nur Eigenschaften, die man gut finden kann – kreuz an, was stimmt.",
+   "Woran merkt man das bei dir? Ein Beispiel reicht.",
+   "Was kreuzt du bei mir an? Ich bin gespannt."
+  ],
+  "wennEsKippt": "Fällt die Spalte „ich“ schwer, mit der Person beginnen, die er oder sie gut findet. Mag der oder die Jugendliche bei sich nichts ankreuzen, darf er oder sie überlegen, was ein guter Freund ankreuzen würde.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "wahrnehmen",
+  "thema": [
+   "selbstwert",
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "K-13",
+    "gewicht": 1
+   },
+   {
+    "code": "K-19",
+    "gewicht": 0.5
+   },
+   {
+    "code": "K-20",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "selbstbild",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 12,
+   "max": 15
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "ankreuzen",
+   "gespraech"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Trois colonnes, douze mots",
+   "text": "L’adulte écrit douze qualités l’une sous l’autre : calme, humour, sport, entraide, honnêteté, créativité, patience, courage, ordre, curiosité, fiabilité, musique. À côté, trois colonnes : moi, une personne que j’apprécie (un ami, une sportive, un musicien, un personnage de livre), l’adulte. Le ou la jeune coche dans chaque colonne ce qui correspond et ajoute un mot de son choix par colonne. Ensuite, pour une croix par colonne, on donne un exemple : « J’ai de la patience : je refais un niveau dix fois jusqu’à ce que ça marche. » Pour finir, l’adulte cite deux qualités remarquées chez le ou la jeune, avec un exemple.",
+   "sagen": [
+    "Il n’y a ici que des qualités – coche ce qui est vrai.",
+    "À quoi est-ce qu’on le remarque chez toi ? Un exemple suffit.",
+    "Qu’est-ce que tu coches pour moi ? J’ai hâte de voir."
+   ],
+   "wennEsKippt": "Si la colonne « moi » est difficile, commencer par la personne appréciée. Si le ou la jeune ne veut rien cocher pour soi, on peut se demander ce qu’un bon ami cocherait."
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:sprechblase-erster-satz",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Sprechblasen für den ersten Satz",
+  "text": "Die Fachkraft zeichnet drei Comic-Kästchen mit Strichmännchen und je einer leeren Sprechblase: Am Automaten im Lycée trägt jemand das Trikot des gleichen Vereins; beim Training ist jemand zum ersten Mal da; im Bus sitzt jemand, den man vom Sehen kennt. Der oder die Jugendliche schreibt in jede Sprechblase einen möglichen ersten Satz, zum Beispiel eine kurze Frage zur Situation („Bist du neu hier?“). Dann werden zwei Sätze im Rollenspiel ausprobiert: Die Fachkraft spielt die andere Person und antwortet einmal freundlich, einmal kurz angebunden. Zum Schluss spricht der oder die Jugendliche die Fachkraft von sich aus an, mit einem eigenen Satz zu einem Thema nach Wahl.",
+  "sagen": [
+   "Der erste Satz muss nicht witzig sein – eine kurze Frage zur Situation reicht.",
+   "Ich spiele die andere Person. Du fängst an, wann du willst.",
+   "Wenn jemand kurz antwortet, sagt das meist mehr über dessen Tag als über dich."
+  ],
+  "wennEsKippt": "Fällt kein Satz ein, gibt die Fachkraft drei Anfänge zur Auswahl („Weißt du, ob …?“, „Ist das …?“, „Bist du auch …?“). Ist das Rollenspiel zu viel, bleibt es bei den Sprechblasen.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "freundschaft"
+  ],
+  "eldib": [
+   {
+    "code": "SOZ-15",
+    "gewicht": 1
+   },
+   {
+    "code": "K-27",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 15,
+   "max": 20
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "comic",
+   "rollenspiel"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Des bulles pour la première phrase",
+   "text": "L’adulte dessine trois cases avec des bonshommes bâtons et une bulle vide par case : au distributeur du lycée, quelqu’un porte les couleurs du même club ; à l’entraînement, quelqu’un vient pour la première fois ; dans le bus, il y a quelqu’un qu’on connaît de vue. Le ou la jeune écrit dans chaque bulle une première phrase possible, par exemple une courte question sur la situation (« Tu es nouveau ici ? »). Puis on essaie deux phrases en jeu de rôle : l’adulte joue l’autre personne et répond une fois gentiment, une fois sèchement. Pour finir, le ou la jeune s’adresse de sa propre initiative à l’adulte, avec sa propre phrase, sur le sujet de son choix.",
+   "sagen": [
+    "La première phrase n’a pas besoin d’être drôle – une petite question sur la situation suffit.",
+    "Je joue l’autre personne. Tu commences quand tu veux.",
+    "Si quelqu’un répond sèchement, ça dit souvent plus sur sa journée que sur toi."
+   ],
+   "wennEsKippt": "Si aucune phrase ne vient, l’adulte propose trois débuts au choix (« Tu sais si… ? », « C’est… ? », « Toi aussi, tu… ? »). Si le jeu de rôle est de trop, on s’arrête aux bulles."
+  },
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
  }
 ]
