@@ -143,7 +143,7 @@ function Fusszeile({ blatt, nr, sprache, heft }: { blatt: Blatt; nr?: string; sp
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>{heft ? heft.fuss : u.marke[sprache]}</Text>
           {/* immer eine Zeile: ein sehr langer Titel endet mit „…“, statt die Fußzeile zu erhöhen */}
           <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, marginLeft: 6, flex: 1, maxLines: 1, textOverflow: 'ellipsis' }}>
-            {[nr && !heft ? `${tx.arbeitsblatt} ${nr}` : null, typo(blattInhalt(blatt, sprache).titel, sprache)].filter(Boolean).join('  ·  ')}
+            {[nr && !heft ? `${tx.arbeitsblatt} ${nr}` : null, typo(blattInhalt(blatt, sprache).titel, sprache), blatt.passgenau?.herkunft ?? null].filter(Boolean).join('  ·  ')}
           </Text>
           {/* Seiten zählen je Blatt (auch in einer Mappe); ein einseitiger Teil braucht keine Seitenzahl.
               Feste Breite: Der Titel wird gesetzt, bevor die Seitenzahl feststeht – so berührt er sie nie. */}
@@ -177,6 +177,12 @@ function Titelblock({ blatt, inhalt, sprache, p, m, heft }: { blatt: Blatt; inha
             <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>
               <Text style={{ fontWeight: m.fett, color: p.tief }}>{heft.zielWort ?? 'Mein Ziel:'} </Text>
               {typo(heft.lernziel, sprache)}
+            </Text>
+          ) : blatt.passgenau?.ziel?.[sprache] ? (
+            // Passgenau: Ich-Satz des Förderziels statt des Untertitels
+            <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>
+              <Text style={{ fontWeight: m.fett, color: p.tief }}>{typo(TEXTE[sprache].meinZiel + ':', sprache)} </Text>
+              {typo(blatt.passgenau.ziel[sprache]!, sprache)}
             </Text>
           ) : inhalt.untertitel ? (
             <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>{typo(inhalt.untertitel, sprache)}</Text>

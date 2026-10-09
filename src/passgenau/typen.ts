@@ -133,6 +133,8 @@ export interface Stundenschritt extends KatalogZusatz {
   ohneZiel?: boolean
   /** Tagesform-Chips aus Weg 3, zu denen der Schritt besonders passt */
   tagesform?: Tagesform[]
+  /** heikel je Schritt (T-M1): nur mit ausdrücklich freigeschaltetem Thema; familie/koerper nach `vorsicht` */
+  sensibel?: 'kinderschutz' | 'akut' | 'familie' | 'koerper'
   qualitaet: 'geprueft' | 'entwurf'
   sicher: Record<string, number>
 }
@@ -232,6 +234,11 @@ export interface PlanSchritt {
   ueberHerkunft?: Record<string, 'eigen' | 'vorlage'>
   /** Titel bzw. Aufgabentext (≤ 60 Zeichen), damit der Plan ohne Katalogtreffer lesbar bleibt (T-M10) */
   t?: string
+  /** Wahl (Weg 3, P8): weitere Optionen, aus denen das Kind in der Stunde wählt; der Schritt selbst ist Option 1.
+   *  Die Minuten gelten für die gewählte Option – die Summe der Stunde zählt nur eine. */
+  wahl?: { ref: string; h: string; min: number; t?: string }[]
+  /** Lockerung (T-M3) oder Hinweis zur Einzelstunde („Gruppenaktivität, so mit einem Kind“) */
+  hinweis?: string
 }
 
 export interface BlattTeil {
@@ -250,7 +257,8 @@ export interface Sitzung {
   status: 'geplant' | 'gehalten' | 'angepasst'
   datum: string | null
   schritte: PlanSchritt[]
-  blatt: { titel: string; bausteine: BlattTeil[] } | null
+  /** `ziel`: „Mein Ziel“ aufs Blatt (Vorgabe aus, bei Jugendlichen immer aus – E-M13) */
+  blatt: { titel: string; bausteine: BlattTeil[]; ziel?: boolean } | null
   hinweise?: string[]
   rueckmeldung: Rueckmeldung | null
   /** Zeitpunkt des Drucks (P7: gedruckt = gespeichert) */

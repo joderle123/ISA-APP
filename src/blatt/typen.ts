@@ -616,6 +616,9 @@ export interface Blatt {
   kurs?: string[]
   /** Nur Spielschule: Domänen, Wörterstreifen DE/FR/LB/PT, Satz der Woche, Elternbrief (für beide Sprachfassungen). */
   woche?: Themenwoche
+  /** Passgenau: zusammengesetztes Kinderblatt – „Mein Ziel“-Zeile unter dem Titel (statt des Untertitels) und die
+   *  Herkunft der Bausteine im Fuß („Bausteine aus G-01, S-18“). Texte je Sprache. */
+  passgenau?: { ziel?: Partial<Record<Sprache, string>>; herkunft?: string }
   de: BlattInhalt
   fr?: BlattInhalt
 }
