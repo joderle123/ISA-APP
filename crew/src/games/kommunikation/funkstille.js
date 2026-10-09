@@ -164,7 +164,7 @@
     help: true,
     async run(ctx) {
       await ctx.T.intro({
-        rule: 'Ein Chat kippt. A hat sechs Nachrichten, B die Formel, C die Grenzen, D den Pegel. Nur zusammen findet ihr die eine Nachricht, die alles erfüllt.',
+        rule: 'Ein Chat kippt. A hat sechs Nachrichten, B die Formel, C die Grenzen, D den Pegel. Nur zusammen findet ihr die Nachricht, die passt.',
         levels: LEVELS,
         steps: [
           { icon: 'phone', title: 'A: Chat', text: 'liest Chat und sechs Nachrichten vor' },
