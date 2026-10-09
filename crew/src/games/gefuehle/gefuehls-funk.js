@@ -30,9 +30,9 @@
     { fig: 'luca', mood: 'wut', text: 'Luca verschießt den Elfmeter. Der Vater steht am Rand. Luca brüllt den Schiri an. Die Ohren sind knallrot, Luca schaut keinen an.', family: 'scham', aussen: 'wut', best: 'bloßgestellt',
       actions: [{ id: 'a', label: 'Kurz rausgehen, durchatmen, später mit dem Vater reden', best: true }, { id: 'b', label: 'Weiter den Schiri anbrüllen', best: false }, { id: 'c', label: 'Nie wieder einen Elfmeter schießen', best: false }],
       feedback: 'Die Wut war der Schutz. Darunter war Scham: Alle haben es gesehen. Wer das merkt, kann ruhiger werden.' },
-    { fig: 'yara', mood: 'neutral', text: 'Alle reden über die Party am Samstag. Yara wurde nicht eingeladen. Yara sagt: „Mir doch egal.“ Später scrollt Yara eine Stunde durch die Fotos.', family: 'trauer', aussen: 'freude', best: 'enttäuscht',
+    { fig: 'yara', mood: 'neutral', text: 'Alle reden über die Party am Samstag. Yara wurde nicht eingeladen. Yara lacht laut: „Partys sind eh langweilig.“ Später scrollt Yara eine Stunde durch die Fotos.', family: 'trauer', aussen: 'freude', best: 'enttäuscht',
       actions: [{ id: 'a', label: 'Einer vertrauten Person sagen: „Das hat mich getroffen.“', best: true }, { id: 'b', label: 'Weiter so tun, als wär es egal', best: false }, { id: 'c', label: 'Unter die Fotos was Fieses schreiben', best: false }],
-      feedback: '„Mir doch egal“ war die Maske. Innen: enttäuscht. Wer es ausspricht, muss es nicht allein tragen.' },
+      feedback: 'Das Lachen war die Maske. Innen: enttäuscht. Wer es ausspricht, muss es nicht allein tragen.' },
     { fig: 'sam', mood: 'froh', text: 'Morgen gibt es Zeugnisse. Sam macht heute ständig Witze, lauter als sonst. Unter dem Tisch zittern Sams Hände.', family: 'angst', aussen: 'freude', best: 'besorgt',
       actions: [{ id: 'a', label: 'Jemandem sagen: „Ich hab Schiss vor morgen.“ und einen Plan machen', best: true }, { id: 'b', label: 'Noch mehr Witze machen, bis es vorbei ist', best: false }, { id: 'c', label: 'Das Zeugnis verstecken', best: false }],
       feedback: 'Die Witze waren Ablenkung. Innen war Angst. Angst wird kleiner, wenn man sie ausspricht und plant.' },
@@ -108,7 +108,7 @@
           const name = CREW.games.figures[sz.fig].name;
           const wv = ctx.scr([
             h('div', { class: 'grid two' },
-              h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Außen'), h('div', { class: 'row' }, CREW.icon(FAMILIEN[sz.aussen].icon, 26), h('b', { class: 'lead' }, FAMILIEN[sz.aussen].name)), h('p', { class: 'muted small' }, 'Das sehen die anderen.')),
+              h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Außen sieht es aus wie'), h('div', { class: 'row' }, CREW.icon(FAMILIEN[sz.aussen].icon, 26), h('b', { class: 'lead' }, FAMILIEN[sz.aussen].name)), h('p', { class: 'muted small' }, 'Das sehen die anderen.')),
               h('div', { class: 'card stack regel-plakat' }, h('span', { class: 'eyebrow' }, 'Innen'), h('div', { class: 'row' }, CREW.icon(fam.icon, 26), h('b', { class: 'lead' }, fam.name)), h('p', { class: 'muted small' }, 'Das spürt ' + name + ' wirklich.'))),
             ctx.say('Gefühle verstecken sich oft hinter anderen. Wer nur auf außen reagiert, versteht ' + name + ' falsch.', { eyebrow: 'Versteckt', small: true }),
           ], { eyebrow: 'Fall ' + (i + 1), badge: schritt(1) });

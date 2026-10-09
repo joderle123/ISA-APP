@@ -25,3 +25,4 @@
 .vorhersage { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--panel); }
 .vorhersage.hit { background: color-mix(in srgb, var(--good) 35%, var(--bg)); border-color: var(--good); }
 @media (max-width: 760px) { .weiche-row, .vorhersage-row { grid-template-columns: 1fr; } .comic { grid-template-columns: 1fr; } }
+.gleis-card.gleis-leer { border-style: dashed; border-left-style: solid; opacity: .85; }

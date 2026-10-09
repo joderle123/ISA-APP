@@ -704,7 +704,7 @@
         posRow,
         h('div', { class: 'row between' }, h('p', { class: 'muted' }, oo.hint || 'Mitte ist erlaubt. Gehen, nicht rennen.'), slot),
         oo.safety !== false ? h('div', { class: 'row' }, safetyLine('koerper'), safetyLine('raum')) : null,
-      ], { eyebrow: oo.step || 'Bewegung', noPass: false });
+      ], { eyebrow: oo.step || 'Bewegung', noPass: false, badge: oo.badge || null });
       const r = await ctx.timerOrButton(wrap, oo.seconds || 10, [{ label: 'Stopp!', value: 'stop', variant: 'teamB', icon: 'pause', id: 'btn-stop' }], { movement: true, slot });
       if (r === ctx.SKIP) return r;
       CREW.sound.play('go');
@@ -715,7 +715,7 @@
         h('div', { class: 'card stack soft' },
           h('b', null, oo.minorityFirst === false ? 'Jede Gruppe sagt einen Satz.' : 'Die kleinere Gruppe erklärt zuerst.'),
           h('p', { class: 'muted small' }, 'Wer allein steht, darf bleiben und nichts sagen. Mitte wird zuerst gefragt.')),
-      ], { eyebrow: oo.step || 'Bewegung' });
+      ], { eyebrow: oo.step || 'Bewegung', badge: oo.badge2 || oo.badge || null });
       return ctx.next(w2, oo.nextLabel || 'Weiter');
     };
 

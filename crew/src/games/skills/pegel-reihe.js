@@ -30,6 +30,54 @@
   ];
   const stufe = (z) => (z >= 70 ? 'rot' : z >= 40 ? 'gelb' : 'gruen');
   const STUFEN_TEXT = { gruen: 'Grün: Kopf-Skills ziehen noch.', gelb: 'Gelb: Zeit für einen Skill.', rot: 'Rot: erst Körper, dann Kopf.' };
+  const LEVELS = ['Lesen', 'Begründen', 'Anwenden'];
+
+  /* Level 2: Was hat getäuscht (falsch sortiert) – oder woran hast du die Zahl erkannt (passt)? */
+  const TAEUSCHT = [
+    { k: 'aussen-ruhig', t: 'Das Außen sah ruhiger aus' },
+    { k: 'aussen-wild', t: 'Das Außen sah wilder aus' },
+    { k: 'harmlos', t: 'Die Lage klang harmloser' },
+    { k: 'schlimm', t: 'Die Lage klang schlimmer' },
+  ];
+  const ERKANNT = [
+    { k: 'gesicht', t: 'Am Gesicht' },
+    { k: 'haende', t: 'An Händen und Haltung' },
+    { k: 'lage', t: 'An der Lage selbst' },
+    { k: 'mix', t: 'An allem zusammen' },
+  ];
+  /* Level 3: Was hilft der Figur bei ihrer Zahl zuerst? */
+  const HILFE = [
+    { k: 'koerper', t: 'Körper: atmen, bewegen, Fäuste lösen', icon: 'leaf' },
+    { k: 'sinne', t: 'Sinne: 5-4-3-2-1, kaltes Wasser', icon: 'eye' },
+    { k: 'kopf', t: 'Kopf: freundliche Stimme, Gedanken prüfen', icon: 'bulb' },
+    { k: 'reden', t: 'Reden: jemandem erzählen', icon: 'chat' },
+  ];
+  function hilfeFeedback(z, k) {
+    const st = stufe(z);
+    if (st === 'rot') return k === 'koerper' || k === 'sinne'
+      ? { ok: true, t: 'Genau. Bei ' + z + ' ist der Kopf im Alarm. Erst Körper oder Sinne – runter unter 70 – dann denken oder reden.' }
+      : { ok: false, t: 'Bei ' + z + ' kommt der Kopf kaum dran. Erst Körper oder Sinne, dann ' + (k === 'reden' ? 'reden.' : 'Kopf-Skills.') };
+    if (st === 'gelb') return { ok: true, t: k === 'koerper' || k === 'sinne' ? 'Gut. Bei ' + z + ' bringt ein kurzer Körper-Skill die Zahl zuverlässig runter.' : 'Passt. Bei ' + z + ' ziehen Kopf und Reden noch – am besten bevor es rot wird.' };
+    return { ok: true, t: 'Bei ' + z + ' ist alles im grünen Bereich. Jeder Skill geht – oder einfach genießen.' };
+  }
+  async function anwenden(ctx, k, ey) {
+    const name = CREW.games.figures[k.fig].name;
+    const w = ctx.scr([
+      ctx.figureCard({ fig: k.fig, mood: k.mood, text: k.text, eyebrow: name + ' · innen ' + k.zahl }),
+      ctx.say('Was hilft ' + name + ' bei ' + k.zahl + ' zuerst?', { eyebrow: 'Deine Figur', small: true }),
+    ], { eyebrow: ey + ' · Anwenden', badge: ctx.stufe(3, LEVELS) });
+    const wahl = await ctx.ask(w, HILFE.map((x) => ({ label: x.t, value: x.k, icon: x.icon, variant: 'ghost', id: 'pr-hilft-' + x.k })));
+    if (wahl === ctx.SKIP) return 0;
+    const fb = hilfeFeedback(k.zahl, wahl);
+    CREW.sound.play(fb.ok ? 'good' : 'tap');
+    const w2 = ctx.scr([
+      ctx.figureCard({ fig: k.fig, mood: fb.ok ? 'froh' : 'neutral', text: fb.t, eyebrow: fb.ok ? 'Passt' : 'Fast' }),
+      stufe(k.zahl) === 'rot' ? h('div', { class: 'row' }, h('span', { class: 'skill-chip karte' }, CREW.icon('sparkle', 14), 'Skill-Karte „Runter unter 70“')) : null,
+      h('p', { class: 'muted small' }, 'Wer mag, sagt der Crew: Figur, Zahl, erster Skill.'),
+    ], { eyebrow: ey + ' · Anwenden', badge: ctx.stufe(3, LEVELS) });
+    await ctx.next(w2, 'Weiter');
+    return fb.ok ? 1 : 0;
+  }
 
   /* Karte auf dem eigenen iPad – Zahl verdeckt oder aufgedeckt */
   function karte(ctx, k, o) {
@@ -51,7 +99,7 @@
   }
 
   /* Eine Reihe: Karte zeigen, ohne Worte legen, aufdecken, Kipper, zählen */
-  async function reihe(ctx, nr, total) {
+  async function reihe(ctx, nr, total, mitAnwenden) {
     const k = karteFuer(ctx, nr);
     const ey = 'Reihe ' + nr + '/' + total;
     const w = ctx.scr([
@@ -59,7 +107,7 @@
       h('div', { class: 'card stack soft' },
         h('b', null, 'Kein Wort. Legt die iPads in eine Reihe: niedrig links, hoch rechts.'),
         h('p', { class: 'muted small' }, 'Wer glaubt, die niedrigste Zahl zu haben, legt zuerst. Zeigen mit Gesicht und Körper ist erlaubt, Reden nicht. Tippt erst „Aufdecken“, wenn die Reihe liegt.')),
-    ], { eyebrow: ey, badge: h('span', { class: 'pill accent' }, 'Platz ' + ctx.seat) });
+    ], { eyebrow: ey + ' · Lesen', badge: h('span', { class: 'pill accent' }, 'Platz ' + ctx.seat) });
     const go = await ctx.ask(w, [{ label: 'Aufdecken', value: 'open', iconRight: 'eye', id: 'btn-open' }]);
     if (go === ctx.SKIP) return null;
     CREW.sound.play('unlock');
@@ -70,6 +118,14 @@
     ], { eyebrow: ey + ' · Aufgedeckt' });
     const kipp = await ctx.ask(w2, [{ label: 'Passt', value: 'ok', variant: 'ghost', icon: 'check' }, { label: 'Falsch sortiert', value: 'kipp', variant: 'ghost', icon: 'bolt' }]);
     if (kipp === ctx.SKIP) return null;
+    // Level 2: Begründen – jede:r für die eigene Karte
+    const liste = kipp === 'kipp' ? TAEUSCHT : ERKANNT;
+    const wb = ctx.scr([
+      karte(ctx, k, { offen: true, eyebrow: 'Deine Karte' }),
+      ctx.say(kipp === 'kipp' ? 'Was hat dich bei ' + CREW.games.figures[k.fig].name + ' getäuscht?' : 'Woran hast du die Zahl erkannt?', { eyebrow: 'Begründen', small: true }),
+    ], { eyebrow: ey + ' · Begründen', badge: ctx.stufe(2, LEVELS) });
+    const grund = await ctx.ask(wb, liste.map((x) => ({ label: x.t, value: x.k, variant: 'ghost', id: 'pr-grund-' + x.k })));
+    const grundT = (liste.find((x) => x.k === grund) || {}).t || null;
     // Leuchten
     const w3 = ctx.scr([
       h('div', { class: 'pegel-light', 'data-kipp': kipp === 'kipp' ? '1' : '0' }, CREW.icon(kipp === 'kipp' ? 'bolt' : 'check', 64), h('b', { class: 'display' }, kipp === 'kipp' ? 'Falsch sortiert' : 'Sitzt'), h('span', null, CREW.games.figures[k.fig].name + ' · ' + k.zahl)),
@@ -82,11 +138,13 @@
     const n = ctx.auto ? Math.floor(ctx.autoRng() * 3) : st.get();
     const w4 = ctx.scr([
       h('div', { class: 'pegel-result' }, h('b', { class: 'display' }, n === 0 ? 'Alle richtig' : n + ' falsch sortiert'), h('span', null, n === 0 ? 'Die Reihe stimmt. Ohne ein Wort.' : 'trotzdem geschafft. Ohne ein Wort.')),
-      ctx.say(k.ruhig ? 'Kurz reden: Eine Figur war außen ruhig und innen hoch. Woran hättet ihr es merken können?' : 'Kurz reden: Welche Karte war am schwersten einzuordnen? Was hat beim Lesen der Zahl geholfen – Gesicht, Hände, Haltung?', { eyebrow: 'Jetzt reden', small: true }),
+      grundT ? h('div', { class: 'row' }, h('span', { class: 'pill' }, 'Dein Grund: ' + grundT)) : null,
+      ctx.say(k.ruhig ? 'Reihum, wer mag: Eine Figur war außen ruhig und innen hoch. Woran hättet ihr es merken können?' : 'Reihum, wer mag: Lies deinen Grund vor. Was hat getäuscht, was hat geholfen?', { eyebrow: 'Jetzt reden', small: true }),
       ctx.safetyLine('figuren'),
-    ], { eyebrow: ey + ' · Ergebnis' });
-    await ctx.next(w4, nr < total ? 'Nächste Reihe' : 'Fertig');
-    return { kipper: n, zahl: k.zahl };
+    ], { eyebrow: ey + ' · Ergebnis', badge: ctx.stufe(2, LEVELS) });
+    await ctx.next(w4, mitAnwenden ? 'Was hilft der Figur?' : nr < total ? 'Nächste Reihe' : 'Weiter');
+    const hilft = mitAnwenden ? await anwenden(ctx, k, ey) : 0;
+    return { kipper: n, zahl: k.zahl, hilft };
   }
 
   /* Variante zu zweit (j1-e11): Innen/Außen – erst die ruhige 85er-Figur, dann zwei weitere */
@@ -102,7 +160,7 @@
       const w = ctx.scr([
         ctx.figureCard({ fig: k.fig, mood: i === 0 ? 'neutral' : k.mood, text: k.text, eyebrow: 'Außen · was man sieht', extra: h('p', null, h('b', null, 'Außen: '), k.aussen.replace(' Innen: Sturm.', '')) }),
         ctx.say('Ihr seht nur das Außen. Wie hoch steht ' + name + ' innen? Einigt euch auf eine Stufe.', { eyebrow: 'Figur ' + (i + 1) + '/3', small: true }),
-      ], { eyebrow: 'Innen/Außen · ' + (i + 1) + '/3' });
+      ], { eyebrow: 'Innen/Außen · ' + (i + 1) + '/3', badge: ctx.stufe(1, LEVELS) });
       const tipp = await ctx.ask(w, STUFEN.map((s) => ({ label: s.label, value: s.id, icon: s.icon, variant: 'ghost' })));
       if (tipp === ctx.SKIP) continue;
       await ctx.T.twoFinger(w, { label: 'Beide: Finger drauf – das ist euer Tipp' });
@@ -112,10 +170,13 @@
       const w2 = ctx.scr([
         karte(ctx, k, { offen: true, eyebrow: 'Innen · aufgedeckt' }),
         ctx.say((hit ? 'Euer Tipp passt. ' : 'Innen sieht es anders aus als außen. ') + nach, { eyebrow: hit ? 'Vorhersage stimmt' : 'Anders als gedacht', small: true }),
-      ], { eyebrow: 'Innen/Außen · Auflösung' });
-      await ctx.next(w2, i + 1 < liste.length ? 'Nächste Figur' : 'Fertig');
+      ], { eyebrow: 'Innen/Außen · Auflösung', badge: ctx.stufe(2, LEVELS) });
+      await ctx.next(w2, i + 1 < liste.length ? 'Nächste Figur' : 'Weiter');
     }
-    return { summary: 'Außen ruhig heißt nicht innen ruhig. Fragen hilft mehr als raten.', stats: [[treffer, 'von 3 Stufen getroffen']] };
+    // Level 3: Was hilft der ruhigen 85er-Figur zuerst?
+    await ctx.T.level({ n: 3, names: LEVELS, text: 'Zurück zu ' + CREW.games.figures[ruhig.fig].name + ': außen ruhig, innen ' + ruhig.zahl + '. Was hilft zuerst? Einigt euch.' });
+    const hilft = await anwenden(ctx, ruhig, 'Innen/Außen');
+    return { summary: 'Außen ruhig heißt nicht innen ruhig. Fragen hilft mehr als raten.', stats: [[treffer, 'von 3 Stufen getroffen'], [hilft, 'passender erster Skill']] };
   }
 
   CREW.registerGame({
@@ -127,10 +188,11 @@
     async run(ctx) {
       await ctx.T.intro({
         rule: 'Jedes iPad hat eine Figur mit versteckter Anspannungszahl. Ohne ein Wort legt ihr die iPads in eine Reihe: niedrig nach hoch.',
+        levels: LEVELS,
         steps: [
-          { icon: 'eyeOff', title: 'Karte lesen', text: 'Nur du siehst deine Zahl.' },
-          { icon: 'users', title: 'Reihe legen', text: 'Kein Wort. Gesicht und Körper sind erlaubt. Die niedrigste legt zuerst.' },
-          { icon: 'eye', title: 'Aufdecken', text: 'Falsch sortierte iPads leuchten. Zählen, kurz reden.' },
+          { icon: 'users', title: 'Lesen', text: 'Kein Wort. Gesicht und Körper sind erlaubt. Die niedrigste legt zuerst.' },
+          { icon: 'eye', title: 'Begründen', text: 'Aufdecken: Was hat getäuscht, was geholfen?' },
+          { icon: 'leaf', title: 'Anwenden', text: 'Was hilft deiner Figur bei ihrer Zahl zuerst?' },
         ],
         probe: async () => {
           const w = ctx.scr([h('div', { class: 'probe-tag' }, 'PROBE · zählt nicht · 10 Sekunden'), karte(ctx, KARTEN[1], { eyebrow: 'Probe-Karte' }), ctx.say('Zeig ohne Worte, wie hoch Luca steht. Die anderen raten: niedrig oder hoch? Liegt ein iPad später an der falschen Stelle, leuchtet es „falsch sortiert“ – kein Fehler, nur ein Zeichen.', { eyebrow: 'Zum Ausprobieren', small: true })], { eyebrow: 'Probe' });
@@ -143,15 +205,16 @@
       const modus = await ctx.ask(wm, [{ label: 'Reihe · ganze Crew', value: 'reihe', variant: 'ghost', icon: 'users' }, { label: 'Zu zweit · Innen/Außen', value: 'paar', variant: 'ghost', icon: 'eye' }]);
       if (modus === 'paar') return innenAussen(ctx);
       const total = 2;
-      let gespielt = 0, kipper = 0;
+      let gespielt = 0, kipper = 0, hilft = 0;
       for (let i = 1; i <= total; i++) {
-        const r = await reihe(ctx, i, total);
+        if (i === 2) await ctx.T.level({ n: 3, names: LEVELS, text: 'Neue Karten, neue Reihe. Nach dem Aufdecken überlegt jede:r: Was hilft meiner Figur bei ihrer Zahl zuerst?' });
+        const r = await reihe(ctx, i, total, i === total);
         if (!r) continue;
-        gespielt++; kipper += r.kipper;
+        gespielt++; kipper += r.kipper; hilft += r.hilft;
       }
       return {
         summary: gespielt ? (kipper === 0 ? 'Alle Reihen richtig sortiert. Ihr lest Signale.' : kipper + ' falsch sortiert – trotzdem geschafft. Ohne ein Wort.') : 'Heute nur reingeschaut.',
-        stats: [[gespielt, 'Reihen gelegt'], [kipper, 'falsch sortiert']],
+        stats: [[gespielt, 'Reihen gelegt'], [kipper, 'falsch sortiert'], [hilft, 'passender erster Skill']],
       };
     },
   });

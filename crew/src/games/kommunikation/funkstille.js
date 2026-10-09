@@ -84,6 +84,7 @@
       ],
       antwort: [{ who: 'Ben', t: 'ok, Oma geht vor. nächstes Turnier dann.' }] },
   ];
+  const LEVELS = ['Pegel niedrig', 'Pegel hoch', 'Laut sagen'];
   const korrekt = (f) => f.msgs.findIndex((m) => m.ich && m.ok && (f.pegel < 80 || m.skill));
 
   const chatBox = (ctx, f, extraLines) => h('div', { class: 'chat-box funk-chat' },
@@ -164,6 +165,7 @@
     async run(ctx) {
       await ctx.T.intro({
         rule: 'Ein Chat kippt. A hat sechs Nachrichten, B die Formel, C die Grenzen, D den Pegel. Nur zusammen findet ihr die eine Nachricht, die alles erfüllt.',
+        levels: LEVELS,
         steps: [
           { icon: 'phone', title: 'A: Chat', text: 'liest Chat und sechs Nachrichten vor' },
           { icon: 'chat', title: 'B + C', text: 'Formel und Grenzen prüfen' },
@@ -179,17 +181,19 @@
       // Stunde: j1-e21 (Ich-Botschaften) oder j1-e23 (Grenzen setzen: Stopp!) – B bekommt die Formel der Stunde
       const wu = ctx.scr([ctx.say('Welche Stunde ist heute?', { eyebrow: 'Vorbereitung', small: true })], { eyebrow: 'Vorbereitung', center: true });
       const unit = await ctx.ask(wu, [{ label: 'Ich-Botschaften und Zuhören (j1-e21)', value: 'e21', variant: 'ghost', icon: 'chat' }, { label: 'Grenzen setzen: Stopp! (j1-e23)', value: 'e23', variant: 'ghost', icon: 'shield' }]);
-      const faelle = ctx.rshuffle(FAELLE).slice(0, 2);
-      let solved = 0, tries = 0, familie = false;
+      // Fall 1: Pegel unter 80 (Formel + Grenzen reichen). Fall 2: Pegel ab 80 (erst Skill, dann Text).
+      const faelle = [ctx.rpick(FAELLE.filter((x) => x.pegel < 80)), ctx.rpick(FAELLE.filter((x) => x.pegel >= 80))];
+      let solved = 0, tries = 0, familie = false, gesagt = 0;
       for (let i = 0; i < faelle.length; i++) {
         const f = faelle[i];
         const name = CREW.games.figures[f.fig].name;
         if (f.familie) familie = true;
+        if (i === 1) await ctx.T.level({ n: 2, names: LEVELS, text: 'Jetzt kocht die Figur: Pegel über 80. D wird wichtig – erst ein Skill, dann der Text.' });
         const w = ctx.scr([
           slice(ctx, role, f, unit),
           h('p', { class: 'muted small' }, 'Redet, fragt nach, bis ihr euch einig seid. Dann tippt jedes iPad „Lösung prüfen“.'),
           f.familie ? ctx.safetyLine('familie') : null,
-        ], { eyebrow: 'Fall ' + (i + 1) + '/' + faelle.length + ' · ' + f.titel, badge: h('span', { class: 'pill accent' }, role === 'X' ? 'Beobachter:in' : 'Rolle ' + role) });
+        ], { eyebrow: 'Level ' + (i + 1) + ' · ' + f.titel, badge: h('span', { class: 'pill accent' }, role === 'X' ? 'Beobachter:in' : 'Rolle ' + role) });
         const go = await ctx.next(w, 'Lösung prüfen');
         if (go === ctx.SKIP) continue;
         const r = await pruefen(ctx, f, role);
@@ -207,14 +211,30 @@
             h('div', { class: 'funk-check' }, CREW.icon('check', 22), h('span', null, h('b', null, 'C: '), 'keine Grenze überschritten')),
             h('div', { class: 'funk-check' }, CREW.icon('check', 22), h('span', null, h('b', null, 'D: '), f.pegel >= 80 ? 'Pegel ' + f.pegel + ' – erst Skill' : 'Pegel ' + f.pegel + ' – Text geht direkt'))),
           ctx.say('Kurz reden: Welche der anderen fünf Nachrichten hätte den Chat am meisten kippen lassen? Warum?', { eyebrow: 'Kurz reden', small: true }),
-        ], { eyebrow: 'Fall ' + (i + 1) + ' · Auflösung' });
-        await ctx.next(w2, i + 1 < faelle.length ? 'Nächster Fall' : 'Fertig');
+        ], { eyebrow: 'Fall ' + (i + 1) + ' · Auflösung', badge: ctx.stufe(i + 1, LEVELS) });
+        await ctx.next(w2, i + 1 < faelle.length ? 'Nächster Fall' : 'Weiter');
       }
-      const w5 = ctx.scr([ctx.say('Beobachter:in zuerst, dann wer will: Welche Rolle hat die Lösung gebracht – Formel, Grenzen oder Pegel?', { eyebrow: 'Kurz reden', small: true }), ctx.safetyLine('freiwillig')], { eyebrow: 'Abschluss' });
-      await ctx.next(w5, 'Fertig');
+      // Level 3: Laut sagen – gleiche Worte, anderer Ton
+      const fl = faelle[faelle.length - 1];
+      const ml = fl.msgs[korrekt(fl)];
+      const nl = CREW.games.figures[fl.fig].name;
+      await ctx.T.level({ n: 3, names: LEVELS, text: 'Im Chat fehlt der Ton. Eine Person sagt die Nachricht laut – einmal genervt, einmal ruhig. Was ändert sich?' });
+      const w3 = ctx.scr([
+        ctx.figureCard({ fig: fl.fig, mood: 'neutral', text: ml.t, eyebrow: nl + ' schreibt', chat: true }),
+        h('div', { class: 'grid two' },
+          h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Versuch 1'), h('b', null, 'Genervt sagen'), h('p', { class: 'muted small' }, 'Augen verdrehen erlaubt.')),
+          h('div', { class: 'card stack regel-plakat' }, h('span', { class: 'eyebrow' }, 'Versuch 2'), h('b', null, 'Ruhig und klar sagen'), h('p', { class: 'muted small' }, 'So, wie ' + nl + ' es meint.'))),
+        h('p', { class: 'muted small' }, 'Wer mag, spricht. Pass ist okay. Die anderen hören nur zu.'),
+      ], { eyebrow: 'Laut sagen', badge: ctx.stufe(3, LEVELS) });
+      const lr = await ctx.ask(w3, [{ label: 'Heute nicht', value: 'pass', variant: 'ghost', icon: 'x', auto: false }, { label: 'Gesagt – Unterschied gehört', value: 'ok', iconRight: 'right', id: 'fs-gesagt' }]);
+      if (lr === 'ok') {
+        gesagt = 1;
+        const w4 = ctx.scr([ctx.say('Gleiche Worte, anderer Ton – ganz andere Wirkung. Im Chat hört man keinen Ton. Darum zählt dort jedes Wort doppelt.', { eyebrow: 'Das habt ihr gehört', small: true }), ctx.safetyLine('freiwillig')], { eyebrow: 'Laut sagen', center: true, badge: ctx.stufe(3, LEVELS) });
+        await ctx.next(w4, 'Weiter');
+      }
       return {
         summary: solved === faelle.length ? 'Funk steht. Ich-Botschaft, Grenze, Pegel – alles drin.' : 'Zusammengelegt. Nachfragen war die Mechanik.',
-        stats: [[solved, 'Chats gerettet'], [tries, 'Versuche']],
+        stats: [[solved, 'Chats gerettet'], [tries, 'Versuche'], [gesagt, 'mal laut gesagt']],
         help: true,
         extra: familie ? h('p', { class: 'muted small' }, 'Ein Fall hatte ein Familien-Thema. Wenn dich das selbst betrifft: Die Nummern unten sind für dich.') : null,
       };

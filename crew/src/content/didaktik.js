@@ -253,7 +253,7 @@
       fragen: ['Welcher Tausch hat am meisten verändert?', 'Welches Gefühl war am schwersten zu steuern?', 'Wer sitzt bei dir diese Woche oft am Pult – und was hilft?'],
       lehrer: {
         ziel: 'Gefühl steuert Handeln (j1-e08 „Alles steht Kopf“), Folgen abschätzen, Perspektivenwechsel, Selbststeuerung.',
-        stufen: 'Level 1 Wer sitzt am Pult? (Gefühl wählen, Handlung, Folge), Level 2 Tausch (anderes Gefühl, neu entscheiden), Level 3 Vergleich (besser oder schlechter – warum?) und Brücke in die Woche.',
+        stufen: 'Level 1 Wer sitzt am Pult? (Gefühl wählen, Handlung, Folge), Level 2 Tausch (anderes Gefühl, neu entscheiden), Level 3 Vergleich (besser oder schlechter – lag es am Gefühl oder am Tun? Auflösung: Jedes Gefühl hatte einen ruhigen und einen wilden Weg) und Brücke in die Woche.',
         achten: 'Alle Gefühle sind okay – nur Handlungen haben Folgen. Die Brücke „Wer saß bei dir am Pult?“ ist freiwillig.',
         impulse: ['„Kann Wut auch etwas Gutes tun?“', '„Was passiert, wenn Angst allein steuert?“', '„Was hilft, bevor ein Gefühl das Steuer übernimmt?“'],
         kippt: 'Kommt eine Szene (Foto ohne Erlaubnis) nah an echte Erfahrungen: X anbieten, Hilfe-Knopf zeigen.',

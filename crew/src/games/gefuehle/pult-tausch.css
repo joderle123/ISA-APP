@@ -18,3 +18,6 @@
 .pult-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .pult-chip { background: color-mix(in srgb, var(--pc) 30%, var(--bg)); align-self: flex-start; }
 @media (max-width: 760px) { .pult-row, .pult-compare { grid-template-columns: 1fr; } }
+.pt-weg { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 8px 10px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); font-size: .92em; }
+.pt-weg.ruhig { border-color: var(--good); }
+.pt-weg .pill { flex: none; }

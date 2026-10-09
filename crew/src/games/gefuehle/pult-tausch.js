@@ -18,6 +18,13 @@
   };
   Object.keys(GEFUEHLE).forEach((k) => { GEFUEHLE[k].id = k; });
   const G = (id) => GEFUEHLE[id];
+  const LEVELS = ['Wer sitzt am Pult?', 'Tausch', 'Vergleich'];
+  /* Level 3: Woran lag es? Danach zeigt das Spiel: Jedes Gefühl hatte einen ruhigen und einen wilden Weg. */
+  const GRUENDE = [
+    { k: 'gefuehl', t: 'Am Gefühl am Pult' },
+    { k: 'handlung', t: 'An dem, was die Figur getan hat' },
+    { k: 'beides', t: 'An beidem' },
+  ];
 
   /* Szenen: Figur, Text, Film-Thema (eine Film-Szene ist immer dabei) und je Gefühl: Pult-Satz + zwei Handlungen.
      Jede Handlung: Text, Ausgang (was passiert), Stimmung danach, Pegel 0–100 (wie angespannt es danach ist). */
@@ -94,7 +101,7 @@
       const w = ctx.scr([
         ctx.figureCard({ fig: sz.fig, mood: sz.mood, text: sz.text, eyebrow: sz.titel }),
         h('div', { class: 'pult-row' }, pultEl(null), ctx.say('Welches Gefühl sitzt bei ' + name + ' gerade am Pult?', { eyebrow: 'Du entscheidest', small: true })),
-      ], { eyebrow: oo.eyebrow, step: oo.step });
+      ], { eyebrow: oo.eyebrow, step: oo.step, badge: oo.badge });
       gef = await ctx.ask(w, Object.values(GEFUEHLE).map((g) => ({ label: g.name, value: g.id, icon: g.icon, variant: 'ghost' })));
       if (gef === ctx.SKIP) return null;
     }
@@ -103,7 +110,7 @@
     for (;;) {
       const w2 = ctx.scr([
         h('div', { class: 'pult-row' }, pultEl(gef, { satz: p.satz }), ctx.figureCard({ fig: sz.fig, mood: sz.mood, text: G(gef).name + ' sitzt am Pult und ' + G(gef).will + '. Was tut ' + name + '?', eyebrow: sz.titel, size: 72 })),
-      ], { eyebrow: oo.eyebrow + ' · ' + G(gef).name + ' am Pult', step: oo.step });
+      ], { eyebrow: oo.eyebrow + ' · ' + G(gef).name + ' am Pult', step: oo.step, badge: oo.badge });
       const tun = await ctx.ask(w2, p.tun.map((t, i) => ({ label: t.t, value: i, variant: 'ghost' })));
       if (tun === ctx.SKIP) return null;
       const a = p.tun[tun];
@@ -112,7 +119,7 @@
         h('div', { class: 'pult-row' }, pultEl(gef, { satz: p.satz, small: true }), ctx.figureCard({ fig: sz.fig, mood: a.mood, text: a.aus, eyebrow: 'So geht es weiter' })),
         m.el,
         h('p', { class: 'muted small' }, 'Zurückspulen heißt: Gleiches Gefühl, andere Handlung. Nichts davon ist falsch – es sind Folgen.'),
-      ], { eyebrow: oo.eyebrow + ' · Ausgang', step: oo.step });
+      ], { eyebrow: oo.eyebrow + ' · Ausgang', step: oo.step, badge: oo.badge });
       const r = await ctx.ask(w3, [{ label: 'Zurückspulen', value: 'rewind', variant: 'ghost', icon: 'undo', auto: false, id: 'btn-rewind' }, { label: 'So bleibt es', value: 'ok', iconRight: 'right', id: 'btn-keep' }]);
       if (r === ctx.SKIP) return null;
       if (r === 'rewind') { rewinds++; CREW.sound.play('tick'); continue; }
@@ -128,11 +135,12 @@
     safety: ['figuren', 'freiwillig'],
     async run(ctx) {
       await ctx.T.intro({
-        rule: 'Du setzt ein Gefühl ans Steuerpult der Figur und wählst, was sie tut. Dann tauscht das iPad das Gefühl – und du schaust, ob es besser läuft.',
+        rule: 'Setz ein Gefühl ans Steuerpult der Figur und wähl, was sie tut. Dann tauscht das iPad das Gefühl. Lief es besser – und warum?',
+        levels: LEVELS,
         steps: [
-          { icon: 'eye', title: 'Szene lesen', text: 'Eine Figur, ein Moment.' },
           { icon: 'bolt', title: 'Gefühl ans Pult', text: 'Wählen, was es tut. Zurückspulen erlaubt.' },
-          { icon: 'shuffle', title: 'Tausch', text: 'Anderes Gefühl, neue Entscheidung. Dann Vergleichskarte.' },
+          { icon: 'shuffle', title: 'Tausch', text: 'Anderes Gefühl, neue Entscheidung.' },
+          { icon: 'bulb', title: 'Vergleich', text: 'Besser oder schlechter – lag es am Gefühl oder am Tun?' },
         ],
         probe: ctx.T.probeCard('Probe: Sam findet einen Zehner auf dem Schulhof. Wer sitzt am Pult? Tippt irgendwas – zählt nicht.', [{ label: 'Freude', value: 1, variant: 'ghost', icon: 'star' }, { label: 'Angst', value: 2, variant: 'ghost', icon: 'shield' }]),
       });
@@ -147,7 +155,7 @@
         const sz = szenen[i];
         const name = CREW.games.figures[sz.fig].name;
         const ey = 'Szene ' + (i + 1) + '/2';
-        const r1 = await runde(ctx, sz, { eyebrow: ey, step: i * 2 + 1 });
+        const r1 = await runde(ctx, sz, { eyebrow: ey, step: i * 2 + 1, badge: ctx.stufe(1, LEVELS) });
         if (!r1) continue;
         rewinds += r1.rewinds;
         // Tausch: das iPad setzt ein anderes Gefühl ans Pult (per Tagescode gleich auf allen iPads der Szene? Nein – abhängig von der ersten Wahl)
@@ -156,10 +164,10 @@
         const wt = ctx.scr([
           h('div', { class: 'pult-tausch-anim' }, pultEl(r1.gefuehl, { small: true }), CREW.icon('shuffle', 40), pultEl(g2, { small: true })),
           ctx.say('Tausch! Das iPad setzt ' + G(g2).name + ' ans Pult. Gleiche Szene, ' + name + ' entscheidet neu.', { eyebrow: 'Pult-Tausch' }),
-        ], { eyebrow: ey + ' · Tausch', center: true, step: i * 2 + 2 });
+        ], { eyebrow: ey + ' · Tausch', center: true, step: i * 2 + 2, badge: ctx.stufe(2, LEVELS) });
         const go = await ctx.next(wt, 'Neu entscheiden');
         if (go === ctx.SKIP) continue;
-        const r2 = await runde(ctx, sz, { gefuehl: g2, eyebrow: ey + ' · Tausch', step: i * 2 + 2 });
+        const r2 = await runde(ctx, sz, { gefuehl: g2, eyebrow: ey + ' · Tausch', step: i * 2 + 2, badge: ctx.stufe(2, LEVELS) });
         if (!r2) continue;
         rewinds += r2.rewinds;
         // Urteil: besser oder schlechter? (die eigene Einschätzung, nicht der Pegel)
@@ -168,22 +176,36 @@
             h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Vorher'), gChip(r1.gefuehl), h('b', null, sz.pult[r1.gefuehl].tun[r1.tun].t), h('span', { class: 'muted small' }, 'Anspannung danach: ' + r1.pegel)),
             h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Nach dem Tausch'), gChip(r2.gefuehl), h('b', null, sz.pult[r2.gefuehl].tun[r2.tun].t), h('span', { class: 'muted small' }, 'Anspannung danach: ' + r2.pegel))),
           ctx.say('Lief es mit dem Tausch für ' + name + ' besser oder schlechter?', { eyebrow: 'Dein Urteil', small: true }),
-        ], { eyebrow: ey + ' · Vergleich' });
+        ], { eyebrow: ey + ' · Vergleich', badge: ctx.stufe(3, LEVELS) });
         const urteil = await ctx.ask(w4, [{ label: 'Besser', value: 'besser', variant: 'ghost', icon: 'check' }, { label: 'Ungefähr gleich', value: 'gleich', variant: 'ghost' }, { label: 'Schlechter', value: 'schlechter', variant: 'ghost', icon: 'x' }]);
         if (urteil === ctx.SKIP) continue;
-        ergebnisse.push({ sz, r1, r2, urteil });
+        // Level 3: Woran lag es? Dann die Auflösung: Jedes Gefühl hatte zwei Wege.
+        const wg = ctx.scr([
+          ctx.say('Woran lag es, dass es ' + (urteil === 'gleich' ? 'ungefähr gleich lief' : urteil + ' lief') + '?', { eyebrow: 'Warum?', small: true }),
+          h('p', { class: 'muted' }, 'Erst kurz überlegen. Es gibt keine falsche Antwort.'),
+        ], { eyebrow: ey + ' · Vergleich', badge: ctx.stufe(3, LEVELS) });
+        const grund = await ctx.ask(wg, GRUENDE.map((g) => ({ label: g.t, value: g.k, variant: 'ghost', id: 'pt-grund-' + g.k })));
+        const wegeCard = (gef) => h('div', { class: 'card stack' }, gChip(gef),
+          sz.pult[gef].tun.map((t) => h('div', { class: 'pt-weg' + (t.pegel <= 40 ? ' ruhig' : '') }, h('span', null, t.t), h('span', { class: 'pill' }, 'Anspannung ' + t.pegel))));
+        const wa = ctx.scr([
+          h('div', { class: 'pult-compare' }, wegeCard(r1.gefuehl), wegeCard(r2.gefuehl)),
+          ctx.say('Jedes Gefühl hatte einen ruhigeren und einen wilderen Weg. Das Gefühl darf am Pult sitzen – was du tust, entscheidest du.', { eyebrow: grund === 'handlung' ? 'Genau das' : 'Schau mal', small: true }),
+        ], { eyebrow: ey + ' · Auflösung', badge: ctx.stufe(3, LEVELS) });
+        await ctx.next(wa, i + 1 < szenen.length ? 'Nächste Szene' : 'Weiter');
+        ergebnisse.push({ sz, r1, r2, urteil, grund });
       }
       // Austausch zu zweit: dieselbe Vergleichskarte wie überall
       if (ergebnisse.length) {
         await ctx.T.pairScreen({});
         const items = [];
         ergebnisse.forEach((e) => {
-          items.push({ label: e.sz.titel + ': ' + G(e.r1.gefuehl).name + ' → ' + G(e.r2.gefuehl).name, icon: G(e.r1.gefuehl).icon, text: 'Tausch war ' + e.urteil + (e.r1.rewinds + e.r2.rewinds ? ' · ' + (e.r1.rewinds + e.r2.rewinds) + '× zurückgespult' : '') });
+          const g = GRUENDE.find((x) => x.k === e.grund);
+          items.push({ label: e.sz.titel + ': ' + G(e.r1.gefuehl).name + ' → ' + G(e.r2.gefuehl).name, icon: G(e.r1.gefuehl).icon, text: 'Tausch war ' + e.urteil + (g ? ' · lag ' + g.t.replace(/^Am /, 'am ').replace(/^An /, 'an ') : '') + (e.r1.rewinds + e.r2.rewinds ? ' · ' + (e.r1.rewinds + e.r2.rewinds) + '× zurückgespult' : '') });
         });
         await ctx.T.vergleich({
           title: 'Pult-Tausch – Vergleichskarte',
           items,
-          questions: ['Welches Gefühl hast du zuerst ans Pult gesetzt – und warum?', 'Lief es mit dem Tausch besser oder schlechter – warum?'],
+          questions: ['Welches Gefühl hast du zuerst ans Pult gesetzt – und warum?', 'Lag es bei dir eher am Gefühl oder an der Handlung?'],
           note: 'Es geht um ' + CREW.games.figures[ergebnisse[0].sz.fig].name + ' und die anderen Figuren. Über dich musst du nichts sagen.',
         });
       }
@@ -196,7 +218,7 @@
       const heute = await ctx.ask(w5, Object.values(GEFUEHLE).map((g) => ({ label: g.name, value: g.id, icon: g.icon, variant: 'ghost' })).concat([{ label: 'Pass', value: 'pass', variant: 'ghost', icon: 'x' }]));
       if (heute !== ctx.SKIP && heute !== 'pass') {
         const w6 = ctx.scr([h('div', { class: 'pult-row' }, pultEl(heute, { satz: G(heute).name + ' ' + G(heute).will + '.' }), ctx.say('Okay. ' + G(heute).name + ' darf da sitzen. Und du entscheidest trotzdem, was du tust.', { eyebrow: 'Nur für dich' }))], { eyebrow: 'Brücke', center: true });
-        await ctx.next(w6, 'Fertig');
+        await ctx.next(w6, 'Weiter');
       }
       const besser = ergebnisse.filter((e) => e.urteil === 'besser').length;
       return {
