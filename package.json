@@ -29,7 +29,9 @@
     "passgenau:pruefen": "tsx --tsconfig tsconfig.scripts.json scripts/passgenau-pruefen.ts",
     "passgenau:test": "tsx --tsconfig tsconfig.scripts.json scripts/passgenau-test.tsx",
     "passgenau:abdeckung": "tsx --tsconfig tsconfig.scripts.json scripts/passgenau-abdeckung.ts",
-    "passgenau:testlauf": "tsx --tsconfig tsconfig.scripts.json scripts/passgenau-testlauf.tsx"
+    "passgenau:testlauf": "tsx --tsconfig tsconfig.scripts.json scripts/passgenau-testlauf.tsx",
+    "passgenau:beschriftung-export": "tsx --tsconfig tsconfig.scripts.json scripts/passgenau-beschriftung-export.tsx",
+    "passgenau:beschriftung-import": "tsx --tsconfig tsconfig.scripts.json scripts/passgenau-beschriftung-import.tsx"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.5.1",

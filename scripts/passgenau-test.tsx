@@ -12,7 +12,7 @@ import type { Auftrag, Ereignis, KatalogEintrag, Plan, PraxisVorlage, Profil, Ru
 import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { BlattDokument } from '../src/blatt/pdf/BlattDokument'
 import { PlanSeite, SitzungDokument, teilPositionen } from '../src/passgenau/pdf/PlanDokument'
-import { aufloesen, intern, zielSatz, type Katalog } from '../src/passgenau/kern/katalog'
+import { aufloesen, intern, textVon, zielSatz, type Katalog } from '../src/passgenau/kern/katalog'
 import { erkundbar, planen, sitzungNeu, type Verlauf } from '../src/passgenau/kern/planer'
 import { alternativen, ersetzen } from '../src/passgenau/kern/alternativen'
 import { kinderblatt } from '../src/passgenau/kern/blatt'
@@ -26,6 +26,8 @@ import { bewerte, kontext, pruefe, rang } from '../src/passgenau/kern/regeln'
 import { layoutAusStufe, stufeAusAlter, stufenAbstand } from '../src/passgenau/kern/hilfen'
 import { KATHARSIS_RE } from '../src/passgenau/kern/vokabular'
 import { ladeKatalogNode, ROOT } from './passgenau-quellen'
+import { pruefeBeschriftung, wendeBeschriftungAn, type Beschriftung, type EintragKontext } from '../src/passgenau/kern/beschriftung'
+import type { SchrittMeta } from '../src/passgenau/kern/format'
 
 const SCHNELL = process.argv.includes('--schnell')
 registriereSchriften((d) => join(ROOT, 'src/assets/fonts/pdf', d))
@@ -125,6 +127,12 @@ function verstoesse(p: Profil, a: Auftrag, plan: Plan): string[] {
   const c = kontext(k, p, a, leer())
   const out: string[] = []
   for (const s of plan.sitzungen) {
+    // Brücken zur letzten Stunde sind erlaubt, wenn ihre Voraussetzung vorher vorkam: in einer gehaltenen Sitzung des
+    // Verlaufs oder einer früheren Sitzung dieser Folge (wie der Planer)
+    const vorher = new Set([
+      ...VERLAUF.plaene.flatMap((pl) => pl.sitzungen.filter((x) => x.status === 'gehalten').flatMap((x) => x.schritte.map((y) => y.ref))),
+      ...plan.sitzungen.filter((x) => x.nr < s.nr).flatMap((x) => x.schritte.map((y) => y.ref)),
+    ])
     const teile: { ref: string; blatt: boolean; ritual: boolean; locker: boolean }[] = [
       ...s.schritte.flatMap((x) => [{ ref: x.ref, blatt: false, ritual: x.rolle === 'ankommen' || x.rolle === 'abschluss', locker: !!x.hinweis }, ...(x.wahl ?? []).map((w) => ({ ref: w.ref, blatt: false, ritual: false, locker: false }))]),
       ...(s.blatt?.bausteine ?? []).map((b) => ({ ref: b.ref, blatt: true, ritual: false, locker: false })),
@@ -156,7 +164,7 @@ function verstoesse(p: Profil, a: Auftrag, plan: Plan): string[] {
       if (e.typ === 'schritt' && e.mehrtaegig && !t.blatt && (s.schritte.find((x) => x.ref === e.id)?.rolle ?? 'transfer') !== 'transfer') w('mehrtägig')
       // und der Planer selbst stimmt zu (gleiche Regeln, ohne Lockerung 4)
       if (!t.locker) {
-        const g = pruefe(e, c, { blatt: t.blatt, ritual: t.ritual })
+        const g = pruefe(e, c, { blatt: t.blatt, ritual: t.ritual, vorher })
         if (g && g !== 'schon in der Folge') w(`pruefe: ${g}`)
       }
     }
@@ -717,6 +725,48 @@ await pruefung('20 erfundene Testkinder × 3 Wege (tests/passgenau): harte Regel
     }
   zeiten.sort((x, y) => x - y)
   info(`${n} Aufträge, ${sitzungen} Sitzungen, ${mitBlatt} Blätter; planen Median ${zeiten[Math.floor(zeiten.length / 2)]} ms, max ${zeiten[zeiten.length - 1]} ms`)
+})
+
+await pruefung('Beschriftung (4.6): Overlay-Prüfung, Sicherungen (Katharsis, akut), ältere Fassung, Einzelvariante im Text', () => {
+  const bank = intern(k).eldib.items
+  const schritt: EintragKontext = { typ: 'schritt', h: 'aaaaaaaa', fr: false, text: 'Alle stehen im Kreis und werfen einen Ball.', dauerTyp: 10 }
+  const gut: Beschriftung = { rolle: ['spiel'], eldib: { primaer: ['SOZ-18'], sekundaer: ['K-21'] }, einzeltauglich: 'angepasst', einzelvariante: { text: 'Die Fachkraft und das Kind werfen sich den Ball zu und sagen dabei ein Wort zum Thema.', sagen: ['Fang!'] }, begruendung: 'Kreis entfällt.', von: 'agent', sicher: 0.9 }
+  soll(pruefeBeschriftung('k:x:1', gut, schritt, bank).length === 0, `gültiges Overlay abgelehnt: ${pruefeBeschriftung('k:x:1', gut, schritt, bank).join(' | ')}`)
+  const falsch: [string, unknown, EintragKontext][] = [
+    ['unbekanntes Feld', { ...gut, reiz: 2 }, schritt],
+    ['Code nicht in der Bank', { ...gut, eldib: { primaer: ['V-99'] } }, schritt],
+    ['angepasst ohne Variante', { ...gut, einzelvariante: undefined }, schritt],
+    ['Variante bei „ja“', { ...gut, einzeltauglich: 'ja' }, schritt],
+    ['Variante zu lang', { ...gut, einzelvariante: { text: 'x'.repeat(301) } }, schritt],
+    ['FR fehlt, obwohl die Quelle FR hat', gut, { ...schritt, fr: true }],
+    ['allgemein am Schritt', { ...gut, allgemein: { '0.text': 'Text' } }, schritt],
+    ['Begründung zu lang', { ...gut, begruendung: 'x'.repeat(121) }, schritt],
+    ['Agent senkt Katharsis', { ...gut, merkmale: {} }, { ...schritt, text: 'Wir lassen die Wut raus und hauen auf ein Kissen.' }],
+    ['Agent senkt „akut“', { ...gut, sensibel: null }, { ...schritt, text: 'Gespräch über Selbstverletzung.' }],
+    ['Werkzeug fürs Kind', { rolle: ['uebung'], zielgruppe: 'kind', begruendung: 'x', von: 'agent', sicher: 0.9 }, { typ: 'baustein', werkzeug: true }],
+    ['Baustein angepasst', { einzeltauglich: 'angepasst', begruendung: 'x', von: 'agent', sicher: 0.9 }, { typ: 'baustein' }],
+    ['Alter ohne Stufe des Blatts', { alter: { von: 3, bis: 5 }, begruendung: 'x', von: 'agent', sicher: 0.9 }, { typ: 'baustein', stufen: ['ES'] }],
+    ['neue Inhalte', gut, schritt],
+  ]
+  for (const [name, b, ctx] of falsch) soll(pruefeBeschriftung(name === 'neue Inhalte' ? 'fb:x' : 'k:x:1', b, ctx, bank).length > 0, `nicht abgelehnt: ${name}`)
+  // Anwenden: Overlay gewinnt, sicher aus dem Overlay; Agent senkt weder Katharsis noch „akut“, Fachkraft schon; ältere Fassung ≤ 0,6
+  const meta = (): SchrittMeta => ({ id: 'k:x:1', h: 'aaaaaaaa', rolle: ['kern'], thema: [], eldib: [], kompetenz: [], alter: { von: 12, bis: 17 }, stufen: ['ES'], dauer: { min: 4, typ: 10, max: 12 }, sozialform: ['gruppe'], einzeltauglich: 'nein', energie: 3, belastung: 0, reiz: 2, format: [], material: [], sprache: { de: true, fr: false }, qualitaet: 'geprueft', sicher: { rolle: 0.5 }, merkmale: { katharsis: true }, sensibel: 'akut' })
+  const m1 = meta()
+  wendeBeschriftungAn(m1, { ...gut, merkmale: {}, sensibel: null, h: 'aaaaaaaa' }, { baustein: false })
+  soll(m1.rolle[0] === 'spiel' && m1.einzeltauglich === 'angepasst' && m1.einzelvariante?.text === gut.einzelvariante!.text && m1.sicher.rolle === 0.9 && m1.sicher.einzelvariante === 0.9, 'Overlay nicht angewandt')
+  soll(!!m1.merkmale?.katharsis && m1.sensibel === 'akut', 'Agent hat Katharsis oder „akut“ gesenkt')
+  const m2 = meta()
+  wendeBeschriftungAn(m2, { ...gut, merkmale: {}, sensibel: null, von: 'fachkraft' }, { baustein: false })
+  soll(!m2.merkmale && m2.sensibel === undefined, 'Fachkraft darf Katharsis/„akut“ senken')
+  const m3 = meta()
+  soll(wendeBeschriftungAn(m3, { ...gut, h: 'bbbbbbbb' }, { baustein: false }).veraltet && m3.sicher.rolle === 0.6, 'ältere Fassung nicht erkannt')
+  // im Katalog: eine beschriftete Einzelvariante ersetzt den Gruppentext (DE und, wo vorhanden, FR)
+  const mitVariante = [...k.eintraege.values()].filter((e): e is Extract<KatalogEintrag, { typ: 'schritt' }> => e.typ === 'schritt' && !!e.einzelvariante && /^[kfms]:/.test(e.id))
+  for (const e of mitVariante.slice(0, 20)) {
+    soll(textVon(e, 'de').text === e.einzelvariante!.text, `${e.id}: textVon zeigt nicht die Einzelvariante`)
+    if (e.fr?.einzelvariante) soll(textVon(e, 'fr').text === e.fr.einzelvariante.text, `${e.id}: FR-Einzelvariante fehlt im Text`)
+  }
+  info(`${falsch.length} Fehlerfälle abgelehnt · ${mitVariante.length} Schritte mit beschrifteter Einzelvariante, ${mitVariante.filter((e) => e.fr?.einzelvariante).length} mit FR`)
 })
 
 await pruefung('Ids (T-M10): auflösen ok / umgezogen / überarbeitet / fehlt – nie ein falscher Baustein', () => {

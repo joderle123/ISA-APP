@@ -7,7 +7,7 @@ import { hash8, hash01, stufeAusAlter, stufenAbstand, istEldib } from './hilfen'
 import { bausteinInhalt, intern, zielSatz as zielSatzVon, type Katalog } from './katalog'
 import { setzeText, texte } from './inhalt'
 import { bewerte, NACHBAR, pruefe, rang, type Bewertet, type Kontext } from './regeln'
-import { seitenMasse, teilHoehe, verteile } from './seiten'
+import { knapp as umbruchKnapp, seitenMasse, teilHoehe, verteile } from './seiten'
 import { BLATT_SYSTEM } from './system'
 import { interesseName, SKILLS_BEREICH, type Kompetenz } from './vokabular'
 
@@ -129,6 +129,8 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
     const alle = [...gewaehlt, ...neu]
     const seiten = verteile(k, refs(alle), layout)
     if (seiten.length > maxSeiten || seiten[seiten.length - 1] > 1) return false
+    // Umbruch auf der Kippe: lieber eine andere Zusammenstellung (Vorhersage = PDF)
+    if (umbruchKnapp(k, refs(alle), layout)) return false
     if (alle.reduce((s, b) => s + b.e.dauer.typ, 0) > budget && (gewaehlt.length || o.min < 6)) return false
     if (alle.filter((b) => (b.e as MikroBaustein).art[0] === 'aufgabe').length > maxAufgaben) return false
     // ein Rückblick (Smileys, Daumen) je Blatt genügt
@@ -225,7 +227,7 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
         .filter((b) => !gebraucht.has(b.e.id) && !(b.e as MikroBaustein).braucht?.length)
         .filter((b) => {
           const ohne = gewaehlt.filter((x) => x !== b)
-          return ohne.length >= 2 && verteile(k, refs(ohne), layout).length === 1
+          return ohne.length >= 2 && verteile(k, refs(ohne), layout).length === 1 && !umbruchKnapp(k, refs(ohne), layout)
         })
         .sort((a, b) => a.s - b.s)[0]
       if (weg) gewaehlt.splice(gewaehlt.indexOf(weg), 1)

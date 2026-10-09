@@ -1,0 +1,1976 @@
+{
+ "c:akku-woche": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "V-29"
+   ],
+   "sekundaer": [
+    "K-29",
+    "V-25"
+   ]
+  },
+  "kompetenz": [
+   "selbstregulation",
+   "alltag"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Figur-Woche mit sichtbarer Wirkung (K-29); Schlaf, Handy, Bewegung als Gewohnheit (V-29); Vergleichskarte mit Pass.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "df1d009f"
+ },
+ "c:ampel-woche": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-25"
+   ],
+   "sekundaer": [
+    "V-21"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Solo: für fünf Szenen Ampel und Skill wählen, Replay; erinnert an die Notfallkarte.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "5082a769"
+ },
+ "c:beweis-jaeger": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "KOG-58"
+   ],
+   "sekundaer": [
+    "SOZ-40",
+    "K-19"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Swipe-Aufgabe zu zweit machbar; Beweis vs. kein Beweis = Fakten prüfen (KOG-58); neuer Satz stärkt das Selbstbild.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "0d3567e5"
+ },
+ "c:blackout": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-25"
+   ],
+   "sekundaer": [
+    "V-18"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Solo: Strategien gegen den Blackout ausprobieren; Vergleichskarte fragt nach eigener Prüfungsangst.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "5081bbcf"
+ },
+ "c:crew-rat": {
+  "rolle": [
+   "kern"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-34"
+   ],
+   "sekundaer": [
+    "SOZ-32"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Echte Gruppenentscheidung im Konsent – braucht eine Crew.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "5deff1ca"
+ },
+ "c:dahinter": {
+  "rolle": [
+   "spiel",
+   "bewegung"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-33"
+   ],
+   "sekundaer": []
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Gruppen antworten, nie Einzelne – schützt in der Crew; zu zweit gibt es den Inhalt als Tank-Detektiv am Tisch.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "06c663dd"
+ },
+ "c:dealoderkein": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-34"
+   ],
+   "sekundaer": [
+    "SOZ-33",
+    "SOZ-31"
+   ]
+  },
+  "kompetenz": [
+   "konflikte",
+   "kooperation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Zwei Figuren wollen Verschiedenes (Musik laut gegen lernen). Das Kind spielt die eine, die Fachkraft die andere; beide lesen verdeckt, was ihre Figur braucht. In 90 Sekunden verhandeln sie, jede Seite fragt mindestens einmal nach, bevor sie den Deal nennt. Zum Schluss: Sind beide Figuren zufrieden?",
+   "sagen": [
+    "Du bist die Figur mit der lauten Musik. Frag mich, was ich brauche, bevor du deinen Deal nennst.",
+    "Wäre das für beide Figuren okay?"
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Zwei Seiten statt Crew-Teams: Kind und Fachkraft spielen je eine Figur mit verdecktem Bedürfnis; Ziel Deal bleibt.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "c2b5c959"
+ },
+ "c:druck-chat": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-39"
+   ],
+   "sekundaer": [
+    "V-26",
+    "V-25"
+   ]
+  },
+  "kompetenz": [
+   "kommunikation",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Solo am iPad, Fachkraft schaut mit; Nein-Arten wählen unter Druck (SOZ-39); Vape, Abschreiben, Auslachen: persönlich.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "fccae5e2"
+ },
+ "c:echter-freund": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "SOZ-21"
+   ],
+   "sekundaer": [
+    "K-35"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Zu zweit grüne und rote Flaggen in Freundschaften bewerten (SOZ-21); Fragen nur über die Figur.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "21d5953a"
+ },
+ "c:erster-eindruck": {
+  "rolle": [
+   "spiel",
+   "einstieg"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-31"
+   ],
+   "sekundaer": [
+    "K-29"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Fakten verteilt auf mehrere iPads, Crew tauscht sie aus. „laute Musik“ ist Inhalt, das Spiel ist nicht laut.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "90382cb7"
+ },
+ "c:familienfunk": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-31"
+   ],
+   "sekundaer": [
+    "SOZ-34",
+    "V-26"
+   ]
+  },
+  "kompetenz": [
+   "konflikte",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": "familie",
+  "begruendung": "Solo am iPad, Fachkraft daneben; Aushandeln mit Elternfigur (K-31); erfundene Familien, aber Zuhause-Thema, Hilfenummer.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "c18fb13a"
+ },
+ "c:frag-weiter": {
+  "rolle": [
+   "spiel",
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-33"
+   ],
+   "sekundaer": [
+    "SOZ-32"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Zu zweit an einem iPad: die Fachkraft ist Partnerin. Nachfragen üben = Interesse an anderen, Grenzen achten.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "ae5594b4"
+ },
+ "c:fruehwarn": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-21"
+   ],
+   "sekundaer": [
+    "V-25"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Zu zweit Körpersignale einer Figur stoppen; „gewonnene Sekunden“ statt Punkte, kein Wettbewerb.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "c505c0bf"
+ },
+ "c:funkstille": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-31"
+   ],
+   "sekundaer": [
+    "K-26",
+    "V-25"
+   ]
+  },
+  "kompetenz": [
+   "konflikte",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Das Kind sieht am iPad den kippenden Chat und sechs mögliche Nachrichten. Die Fachkraft hält die Karten mit Ich-Botschaft-Regel, Grenzen der Figur und Pegel (bei 80: erst Skill, dann Text). Das Kind fragt nach, was die Karten sagen, und sucht mit ihr die eine Nachricht, die alles erfüllt.",
+   "sagen": [
+    "Du siehst den Chat, ich habe die Karten – frag mich, was du wissen willst.",
+    "Frag ruhig nochmal nach, falsch gibt es hier nicht."
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Vier-Rollen-Puzzle: Fachkraft hält Regel-, Grenz- und Pegel-Karten, Kind fragt nach (Keep-Talking-Prinzip bleibt).",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "c324469f"
+ },
+ "c:gedanken-weiche": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "K-29"
+   ],
+   "sekundaer": [
+    "KOG-38",
+    "K-21"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Zu zweit am iPad, Fachkraft als Partnerin; Gedanke-Gefühl-Verhalten = Ursache-Wirkung (K-29); K-26 entfällt (Figur).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "6766ba2e"
+ },
+ "c:gefuehls-funk": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-21"
+   ],
+   "sekundaer": [
+    "SOZ-18"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Vier Rollen-iPads (Szene, Lexikon, Körper, Botschaft) – nur zusammen lösbar.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "d9b68fc7"
+ },
+ "c:gelb-rot": {
+  "rolle": [
+   "bewegung",
+   "kern"
+  ],
+  "eldib": {
+   "primaer": [
+    "V-18"
+   ],
+   "sekundaer": [
+    "V-25"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Aufstellung an zwei Wänden, die kleinere Gruppe erklärt; Beamer-Szenen für die Crew. Zu zweit: Skill-Sprechstunde.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "c89dfa35"
+ },
+ "c:gerecht-oder-gleich": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "SOZ-35"
+   ],
+   "sekundaer": [
+    "SOZ-21",
+    "SOZ-33"
+   ]
+  },
+  "kompetenz": [
+   "kooperation",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Ein Fairness-Dilemma mit Bild (Gruppenarbeit, einer hat alles gemacht, eine Note für alle). Zwei Blätter A und B und „kommt drauf an“ liegen am Boden, das Kind stellt sich 20 Sekunden lang auf eine Seite und sagt, warum. Die Folge-Szene zeigt, wie es den Figuren geht; „Rewind“ zeigt den anderen Weg.",
+   "sagen": [
+    "Stell dich dorthin, wo es für dich am gerechtesten ist – die Mitte geht auch.",
+    "Hier gibt es keine richtige Antwort, nur Folgen."
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Zwei Seiten als Blätter am Boden, Kind wählt A/B/Mitte und begründet; Folge-Szene und Rewind bleiben.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "f0939fd9"
+ },
+ "c:geruecht-staffel": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-39"
+   ],
+   "sekundaer": [
+    "KOG-58",
+    "V-20"
+   ]
+  },
+  "kompetenz": [
+   "kooperation",
+   "lernstrategien"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Reihe mit wanderndem iPad und wachsender Reichweite lebt von vielen Personen; Stopp sagen = nach eigenen Werten handeln.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "8bf19cbc"
+ },
+ "c:haltungs-switch": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-29"
+   ],
+   "sekundaer": [
+    "SOZ-37",
+    "K-23"
+   ]
+  },
+  "kompetenz": [
+   "kommunikation",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Das Kind sieht verdeckt am iPad eine Figur mit altem oder neuem Satz im Kopf und sagt einen neutralen Satz („Ich mach das jetzt.“) mit passender Haltung und Stimme. Die Fachkraft rät alt oder neu und woran sie es merkt (Schultern, Stimme, Tempo, Blick). Danach tauschen sie die Rollen.",
+   "sagen": [
+    "Sag den Satz so, als hättest du den Gedanken der Figur im Kopf.",
+    "Ich glaube: neu – wegen deiner Schultern und deiner Stimme. Stimmt das?"
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Crew-Raten entfällt: Kind spricht in Haltung, Fachkraft rät alt/neu und woran, dann tauschen.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "7cb9aa26"
+ },
+ "c:hitzeecken": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-31"
+   ],
+   "sekundaer": [
+    "SOZ-21",
+    "K-26"
+   ]
+  },
+  "kompetenz": [
+   "konflikte",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Ein Streit-Satz erscheint am iPad („Du hörst mir nie zu!“), vier Karten liegen in den Ecken: Klartext, Angriff, Abgetaucht, Getarnter Angriff. Das Kind geht in die passende Ecke, danach zeigt das iPad die Reaktion der anderen Figur. Bei Angriff hat es 20 Sekunden, den Satz als Klartext neu zu sagen.",
+   "sagen": [
+    "Geh in die Ecke, die zu dem Satz passt.",
+    "Versuch den Satz noch einmal als Klartext – du hast 20 Sekunden."
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Ecken als Karten am Boden, Kind geht hin; Satz einordnen und als Klartext neu sagen (K-31); ohne Gruppe machbar.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "3243dc1f"
+ },
+ "c:hundert-prozent": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "SOZ-21"
+   ],
+   "sekundaer": [
+    "V-27",
+    "SOZ-34"
+   ]
+  },
+  "kompetenz": [
+   "selbstregulation",
+   "konflikte"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Etwas ist schiefgelaufen (Gruppenarbeit ohne Teil 3). Das Kind liest oder hört nacheinander, was jede der vier Figuren getan und gedacht hat, und verteilt mit den Reglern 100 % Verantwortung, niemand 0, niemand 100. Dann wählt es pro Figur einen Wiedergutmach-Zug; die Fachkraft fragt nach.",
+   "sagen": [
+    "Wie viel Prozent hat jede Figur beigetragen? Niemand ist 0, niemand 100.",
+    "Welcher Zug würde bei dieser Figur wirklich etwas wiedergutmachen?"
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Vier iPads entfallen: Kind sieht die vier Figuren nacheinander und verteilt die 100 % allein; Beurteilen steht im Kern.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "22fdc716"
+ },
+ "c:innen-aussen": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "K-21"
+   ],
+   "sekundaer": [
+    "K-29"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Zu zweit: Außen und Innen einer Figur einschätzen und sich einigen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "79f3a9a7"
+ },
+ "c:jahres-quest": {
+  "rolle": [
+   "reflexion",
+   "abschluss"
+  ],
+  "bogen": "reflektieren",
+  "eldib": {
+   "primaer": [
+    "K-24"
+   ],
+   "sekundaer": [
+    "V-22"
+   ]
+  },
+  "kompetenz": [
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "mehrtaegig": false,
+  "begruendung": "Rückblick über die 30 Crew-Einheiten mit Stempeln setzt den Kurs voraus; Fortschritt und mitgenommene Skills.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "bcd5973c"
+ },
+ "c:je-nach-ort": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-19"
+   ],
+   "sekundaer": [
+    "SOZ-31"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Solo plus Vergleich mit der Fachkraft: eigene Art je nach Ort beschreiben.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "35078d77"
+ },
+ "c:kipp-punkt": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-20"
+   ],
+   "sekundaer": [
+    "V-26"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {
+   "gewaltbezug": true
+  },
+  "begruendung": "Gerät weitergeben zu zweit; Wut-Szene mit Zug „draufhalten“ – Gewaltbezug vorsichtshalber markiert.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "bfd06dc7"
+ },
+ "c:kleiner-schritt": {
+  "rolle": [
+   "kern",
+   "transfer"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-29"
+   ],
+   "sekundaer": [
+    "V-25"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Solo: großes Ziel mit Wenn-dann-Satz klein machen, optional fürs eigene Ziel = neue Gewohnheit.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "a84d08ec"
+ },
+ "c:leiter-lauf": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-39"
+   ],
+   "sekundaer": [
+    "SOZ-21",
+    "V-18"
+   ]
+  },
+  "kompetenz": [
+   "kooperation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 1,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Fünf Bodenmarken bilden die Zivilcourage-Leiter (von Hinschauen bis Direkt was sagen). Zur Zuschauer-Szene am iPad stellt sich das Kind innerhalb von 10 Sekunden auf eine Stufe und erklärt, warum. In Runde 2 geht die Fachkraft mit: Wohin gehen sie zu zweit? Am Ende die Hilfenummern.",
+   "sagen": [
+    "Jede Stufe hilft – Stufe 1 ist keine Null.",
+    "Stell dich auf die Stufe, die du wählen würdest. Und jetzt gehe ich mit – wohin gehen wir zu zweit?"
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Stufen als Bodenmarken, Kind wählt allein; in Runde 2 geht die Fachkraft mit ('zu zweit'). Zuschauer-Szene: Mobbing, 1.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "bea4b04a"
+ },
+ "c:mein-ort": {
+  "rolle": [
+   "regulation"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-25"
+   ],
+   "sekundaer": [
+    "K-23"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Solo: eigenen Ruhe-Ort bauen, Zahl vorher und nachher – Regulation, kein Kern.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "ba693043"
+ },
+ "c:mixer": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-23"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Solo-Mix plus Raten beim Partner (Fachkraft): gemischte Gefühle kreativ ausdrücken. Ton leise.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "dc5285b7"
+ },
+ "c:naeher-nicht": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "SOZ-39",
+    "SOZ-31"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 1,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Fünf Bodenmarken liegen vor dem iPad, 1 weit weg, 5 ganz nah. Ein Avatar kommt Schritt für Schritt näher, nacheinander als Freundin, Lehrer, Fremder im Bus, Verwandte zur Begrüßung. Das Kind stellt sich auf die Marke, ab der es „näher nicht“ heißt; die Fachkraft nennt danach ihre eigene.",
+   "sagen": [
+    "Stell dich auf die Marke, ab der es für dich „näher nicht“ heißt.",
+    "Bei mir wäre es die 3 – bei dir darf es eine ganz andere sein."
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": "koerper",
+  "begruendung": "Marken am Boden gehen mit einem Kind, Fachkraft nennt ihre Marke dazu; Nähe/Distanz und Berührung = koerper.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "7ae6d40a"
+ },
+ "c:nein-trainer": {
+  "rolle": [
+   "kern",
+   "transfer"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-39"
+   ],
+   "sekundaer": [
+    "V-26",
+    "V-25"
+   ]
+  },
+  "kompetenz": [
+   "kommunikation",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Kurzes Sparring mit der Figur; am Stundenende oder zu Hause mitnehmbar; Nein-Satz üben, nichts gespeichert.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "e0f997c5"
+ },
+ "c:okayradar": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "SOZ-21"
+   ],
+   "sekundaer": [
+    "SOZ-31",
+    "SOZ-39"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "kooperation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Szenen bewerten (SOZ-21); Umarmung steht nur als Szene, kein Körperkontakt; eigene Grenzen wählen = persönlich.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "1a58a062"
+ },
+ "c:pegel-reihe": {
+  "rolle": [
+   "spiel"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-21"
+   ],
+   "sekundaer": [
+    "K-29"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Stumme Reihe aus vielen iPads – braucht die Crew.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "c48c393a"
+ },
+ "c:pilot-navigator": {
+  "rolle": [
+   "spiel",
+   "einstieg"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-18"
+   ],
+   "sekundaer": [
+    "K-30"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Zu zweit: Fachkraft und Jugendliche:r steuern gemeinsam; genau ansagen und zuhören. Kein Wettbewerb.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "a1245458"
+ },
+ "c:probelauf": {
+  "rolle": [
+   "einstieg"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-32"
+   ],
+   "sekundaer": [
+    "V-22"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Die Crew soll erleben, dass Passen folgenlos ist – lebt von der Gruppe am Beamer.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "ec270e2b"
+ },
+ "c:pult-tausch": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "K-25"
+   ],
+   "sekundaer": [
+    "K-16"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Solo: welches Gefühl am Pult sitzt und was sich ändert = Verhaltensbeeinflussung erklären.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "2d0059d7"
+ },
+ "c:red-flag": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-21"
+   ],
+   "sekundaer": [
+    "V-25",
+    "SOZ-39"
+   ]
+  },
+  "kompetenz": [
+   "alltag",
+   "lernstrategien"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": "kinderschutz",
+  "begruendung": "Paar am iPad; Warnzeichen im DM erkennen und handeln; Grooming-Thema (Fotos, Geheimnisse): kinderschutz, Hilfenummern.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "4ba41541"
+ },
+ "c:regel-radar": {
+  "rolle": [
+   "einstieg"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-27"
+   ],
+   "sekundaer": [
+    "SOZ-21"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Regel-Chips stammen aus dem Crew-Vertrag; ohne Gruppe und Vertrag fehlt die Grundlage.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "05410fe1"
+ },
+ "c:satz-werkstatt": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-40"
+   ],
+   "sekundaer": [
+    "K-30",
+    "KOG-58"
+   ]
+  },
+  "kompetenz": [
+   "selbstbild",
+   "lernstrategien"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Am iPad sieht das Kind die Figur mit ihrem bremsenden Satz, vier Regeln als Icons und zwei Beweis-Karten. Es baut aus den Bausteinen einen neuen Satz und prüft ihn laut an den Regeln; die Fachkraft liest ihn noch einmal vor und zählt mit, wie viele Regeln leuchten. Fehlt eine, wird nachgeschärft.",
+   "sagen": [
+    "Prüf deinen neuen Satz an den vier Regeln – welche leuchtet noch nicht?",
+    "Lies ihn laut vor: Wäre er für die Figur machbar?"
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Rollen-Puzzle entfällt: Kind baut den realistischen Satz allein, Fachkraft prüft mit den vier Regeln; Ziel bleibt.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "476d1d9e"
+ },
+ "c:sinnesjagd": {
+  "rolle": [
+   "spiel",
+   "regulation"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-25"
+   ],
+   "sekundaer": [
+    "V-24"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Fachkraft und Jugendliche:r sind das Paar; der Kern sind Sinnes-Skills für Bus, Schulhof und Bett.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "c5ff15d6"
+ },
+ "c:skill-sprechstunde": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-25"
+   ],
+   "sekundaer": [
+    "V-18"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Gerät weitergeben zu zweit; die Fachkraft hat das Veto. Skill zur Anspannung wählen und begründen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "f422bf04"
+ },
+ "c:sorrywerkstatt": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-27"
+   ],
+   "sekundaer": [
+    "K-31",
+    "SOZ-34"
+   ]
+  },
+  "kompetenz": [
+   "konflikte",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Nach dem Figuren-Streit bauen Kind und Fachkraft abwechselnd eine Entschuldigung: ein Baustein kommt dazu oder fliegt raus, echte („Das war nicht okay von mir“) und Fake-Sorrys („Sorry, aber du hast angefangen“). Die Figur reagiert; wer einen Fake-Baustein entfernt, sagt warum.",
+   "sagen": [
+    "Du darfst einen Baustein dazulegen oder wegnehmen, danach bin ich dran.",
+    "Warum nimmst du den weg? Ein Satz reicht."
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Bausteine reihum entfallen: Kind und Fachkraft bauen abwechselnd; Entschuldigung = Verantwortung übernehmen (V-27).",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "972f661c"
+ },
+ "c:spaeter-monster": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-25"
+   ],
+   "sekundaer": [
+    "V-29",
+    "V-27"
+   ]
+  },
+  "kompetenz": [
+   "selbstregulation",
+   "ausdauer"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "mehrtaegig": false,
+  "begruendung": "Solo am iPad, Fachkraft schaut mit; Loop verlassen über den kleinsten Startschritt = Strategie anwenden (V-25).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "3d422335"
+ },
+ "c:staerke-einsatz": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-19"
+   ],
+   "sekundaer": [
+    "SOZ-34"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Gerät weitergeben geht zu zweit im Wechsel; Hilfe-Hinweis bei der Notfall-Mission, daher Belastung 1.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "af4f1ac8"
+ },
+ "c:staerken-spion": {
+  "rolle": [
+   "spiel"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-20"
+   ],
+   "sekundaer": [
+    "K-28"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Geheime Rollen in einem Gruppenspiel; zu zweit gibt es nichts zu beobachten und zu raten.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "6b7b5c31"
+ },
+ "c:stillepost": {
+  "rolle": [
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-37"
+   ],
+   "sekundaer": [
+    "K-21",
+    "K-23"
+   ]
+  },
+  "kompetenz": [
+   "kommunikation",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Kette in einer Reihe ist der Kern (Stille Post); zu zweit nur Pantomime. Spiel statt Bewegung, kein Körperkontakt.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "a5048dda"
+ },
+ "c:stoppcheck": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-29"
+   ],
+   "sekundaer": [
+    "SOZ-39",
+    "K-26"
+   ]
+  },
+  "kompetenz": [
+   "kommunikation",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Paar am iPad, Fachkraft als Partnerin; Fehler im Stopp suchen und neu bauen = Ursache-Wirkung klarer Signale.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "a2692521"
+ },
+ "c:storystaffel": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-34"
+   ],
+   "sekundaer": [
+    "K-31",
+    "V-26"
+   ]
+  },
+  "kompetenz": [
+   "konflikte",
+   "impulskontrolle"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Am iPad läuft der Streitstart (Kopfhörer, Gruppenarbeit oder Platz im Bus) mit Hitze-Meter. Das Kind wählt Zug für Zug: Klartext, Angriff oder Abtauchen, mit Satzanfang als Tipp. Die Fachkraft liest die Folge vor und fragt, wie es der Figur geht. Ziel ist der Deal in höchstens sechs Zügen.",
+   "sagen": [
+    "Wähl den Zug, den du der Figur zutraust – der Satzanfang hilft dir.",
+    "Wie geht es der Figur jetzt? Und was wäre der nächste Zug?"
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "iPad wandert in der Crew: Kind wählt allein die Züge, Fachkraft liest die Folge vor; Ziel Deal in sechs Zügen bleibt.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "b2f1ab07"
+ },
+ "c:stummer-aufbau": {
+  "rolle": [
+   "spiel"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-18"
+   ],
+   "sekundaer": []
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Puzzle aus vielen iPads, nur mit der Crew lösbar.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "15d474b6"
+ },
+ "c:tank-detektiv": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-33"
+   ],
+   "sekundaer": [
+    "K-21"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Zu zweit: Bedürfnis hinter dem Verhalten einer Figur finden = Motive beschreiben.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "6c8b233d"
+ },
+ "c:tatsache-urteil": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "KOG-58"
+   ],
+   "sekundaer": [
+    "K-19"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Zwei Blätter liegen am Boden, „Tatsache“ und „Urteil“, dazwischen die Mitte. Die Fachkraft liest einen Chat-Satz vor („Ich bin dumm“), das Kind stellt sich 10 Sekunden lang auf ein Blatt. Bei „Urteil“ sagt es, welche Tatsache dahintersteckt. Zum Schluss eine Blitzrunde mit drei Sätzen.",
+   "sagen": [
+    "Stell dich dahin, wo der Satz hinpasst – die Mitte darf auch sein.",
+    "Welche Tatsache steckt hinter diesem Urteil?"
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Zwei Wände gehen mit Kind und zwei Blättern am Boden; Tatsache/Urteil trennen = Fakt/Meinung. Kein Gruppenzwang nötig.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "69a12195"
+ },
+ "c:teilen-oder-nicht": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "KOG-58"
+   ],
+   "sekundaer": [
+    "V-20",
+    "KOG-62"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "impulskontrolle"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Posts prüfen (Quelle, Beleg, Absicht) = Fakten prüfen (KOG-58); dritter Post: gefälschtes Bild einer Mitschülerin, 1.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "fdd1fe72"
+ },
+ "c:trick-erkannt": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "K-29"
+   ],
+   "sekundaer": [
+    "K-26",
+    "KOG-61"
+   ]
+  },
+  "kompetenz": [
+   "aufmerksamkeit",
+   "lernstrategien"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Suchbild abwechselnd mit der Fachkraft; Tricks und ihre Wirkung auf den Kopf = Ursache-Wirkung; kein V-26/K-21.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "2b6c71e5"
+ },
+ "c:uebersetzer": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "SOZ-31"
+   ],
+   "sekundaer": [
+    "SOZ-37",
+    "SOZ-33"
+   ]
+  },
+  "kompetenz": [
+   "kommunikation",
+   "kooperation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Paar-Aufgabe: Fachkraft ist die Partnerin; zwei Lesarten einer Nachricht vergleichen = Verschiedenheit (SOZ-31).",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "02d900fe"
+ },
+ "c:undercover": {
+  "rolle": [
+   "regulation",
+   "spiel"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-25"
+   ],
+   "sekundaer": [
+    "V-21"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Die Fachkraft nennt einen Ort (Test, Bus, Familientisch), der oder die Jugendliche sitzt, als wäre er oder sie dort, zieht verdeckt eine Skill-Karte (Faust anspannen und lösen, Fußdruck, langer Ausatem) und macht den Skill 30 Sekunden. Die Fachkraft rät. Nicht erwischt heißt: alltagstauglich.",
+   "sagen": [
+    "Mach deinen Skill so, dass ich ihn nicht bemerke.",
+    "Hättest du das im Bus auch so machen können?"
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Zu zweit beobachtet die Fachkraft statt der Crew; Skill im Sitzen, daher Energie 1.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "9e852212"
+ },
+ "c:vergleichs-falle": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "SOZ-40"
+   ],
+   "sekundaer": [
+    "KOG-58"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Zu zweit: sich mit Feeds vergleichen, Gestelltes erkennen, Wert jenseits der Likes finden.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "cb43ad72"
+ },
+ "c:vier-zeugen": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "SOZ-21"
+   ],
+   "sekundaer": [
+    "SOZ-37",
+    "SOZ-31"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "kooperation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Dieselbe Pausenhof-Szene aus vier Sichten (Betroffene:r, Clique, Zuschauer:in, Lehrkraft), je zwei Sätze und ein Detail nur dieser Sicht. Die Fachkraft liest sie vor. Erst dann entscheidet das Kind: Spaß, Konflikt oder Mobbing (vier Merkmale als Ampel) und welche Leiter-Stufe sicher ist.",
+   "sagen": [
+    "Ich lese dir vier Sichten auf dieselbe Szene vor – hör erst zu, dann entscheide.",
+    "Spaß, Konflikt oder Mobbing – woran machst du das fest?"
+   ]
+  },
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Vier iPads entfallen: Fachkraft liest die vier Sichten vor, Kind urteilt (Spaß/Konflikt/Mobbing); fiktives Mobbing: 1.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "7997787a"
+ },
+ "c:wer-fehlt": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "SOZ-37"
+   ],
+   "sekundaer": [
+    "SOZ-34",
+    "K-28"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "kooperation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Zeichen leiser Ausgrenzung erkennen (SOZ-37), Mini-Zug wählen; Bonusfrage 'Kennst du das?' ist optional (Pass), daher 1.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "724e55c2"
+ },
+ "c:woher-satz": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "KOG-58"
+   ],
+   "sekundaer": [
+    "SOZ-40",
+    "K-19"
+   ]
+  },
+  "kompetenz": [
+   "lernstrategien",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Quelle der Glaubenssätze prüfen, 'stimmt das heute noch?' = Fakt/Meinung (KOG-58); nur Figuren, daher leicht.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "8260e342"
+ },
+ "c:zuhoerfalle": {
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "SOZ-37"
+   ],
+   "sekundaer": [
+    "K-21",
+    "K-28"
+   ]
+  },
+  "kompetenz": [
+   "kommunikation",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Antwort wählen, die Inhalt und Gefühl trifft = Empathie (SOZ-37); nicht K-26, das Kind drückt kein eigenes Gefühl aus.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "4e4de159"
+ },
+ "c:zwei-brillen": {
+  "rolle": [
+   "kern",
+   "spiel"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-40"
+   ],
+   "sekundaer": [
+    "K-19"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "zielgruppe": "kind",
+  "merkmale": {},
+  "begruendung": "Vier Sichten auf vier iPads, nur gemeinsam lösbar. Ziel: realistischer Blick auf sich.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "d71967c0"
+ }
+}

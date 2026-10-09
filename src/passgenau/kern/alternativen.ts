@@ -2,11 +2,12 @@
 // nie aus einer anderen Sitzung derselben Folge; Suche im Baukasten (7.2).
 import type { Alternative, Auftrag, BlattTeil, KatalogEintrag, Layout, MikroBaustein, Plan, PlanSchritt, Profil, Rolle } from '../typen'
 import { norm } from './hilfen'
-import { bausteinInhalt, textVon, type Katalog } from './katalog'
+import { aktuellerKatalog, bausteinInhalt, intern, textVon, type Katalog } from './katalog'
 import { bewerte, kontext, NACHBAR, pruefe, rang, warum, type Bewertet, type Kontext } from './regeln'
 import { kandidaten } from './planer'
 import { teilHoehe, verteile } from './seiten'
 import { texte } from './inhalt'
+import { BLATT_SYSTEM } from './system'
 import type { Vorlieben } from './vorlieben'
 
 export type Ort = { sitzung: number; schritt?: number; blatt?: number }
@@ -134,6 +135,10 @@ export function ersetzen(plan: Plan, ort: Ort, neu: KatalogEintrag): Plan {
     if (neu.typ === 'baustein')
       for (const d of [...(neu.braucht ?? [])].reverse())
         if (!s.blatt.bausteine.some((t) => t.ref === d)) s.blatt.bausteine.splice(ort.blatt, 0, { ref: d, h: d })
+    // kommt der neue Teil aus einem Blatt mit Hilfe-Zeile, bleibt sie auf dem Kinderblatt (E-M3)
+    const k = aktuellerKatalog()
+    if (neu.typ === 'baustein' && k && intern(k).notfallBlatt.has(neu.quelle.blatt) && !s.blatt.bausteine.some((t) => t.ref === BLATT_SYSTEM.notfall))
+      s.blatt.bausteine.push({ ref: BLATT_SYSTEM.notfall, h: BLATT_SYSTEM.notfall })
   } else if (ort.schritt !== undefined && s.schritte[ort.schritt]) {
     const alt = s.schritte[ort.schritt]
     const x: PlanSchritt = { ref: neu.id, h: neu.h, rolle: alt.rolle, min: alt.min, t: textVon(neu, 'de').titel.slice(0, 60), warum: ['von dir gewählt'] }

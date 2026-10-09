@@ -1,12 +1,14 @@
 // Passgenau – kompaktes Dateiformat für src/data/passgenau/bausteine.json und schritte.json (Konzept 4.4–4.6).
 // Gespeichert sind nur Metadaten (kurze Schlüssel, Standardwerte weggelassen); Texte der Stundenschritte kommen beim
 // Laden aus den Quellen (Kurs, Förderfach, Material, Spielschule, CREW) – so steht kein Inhalt doppelt im Paket.
-import type { Bogen, Dauer, EldibBezug, Einzeltauglich, KatalogZusatz, Layout, Merkmale, MikroBaustein, Rolle, Sozialform, Stufe, Stundenschritt, Tagesform } from '../typen'
+import type { BausteinTexte, Bogen, Dauer, EldibBezug, Einzeltauglich, KatalogZusatz, Layout, Merkmale, MikroBaustein, Rolle, Sozialform, Stufe, Stundenschritt, Tagesform } from '../typen'
 
 /** Reihenfolge der Sicherheitswerte je Feld (Array statt Objekt spart Platz). */
 export const SICHER_FELDER = [
   'eldib', 'thema', 'kompetenz', 'rolle', 'bogen', 'alter', 'lesemenge', 'schreibmenge', 'bildanteil', 'format', 'dauer',
   'sozialform', 'einzeltauglich', 'energie', 'belastung', 'reiz', 'material', 'hoehe', 'braucht', 'sensibel', 'ohneZiel', 'tagesform',
+  // seit der Beschriftung (4.6 Phase 1) – hinten angehängt, ältere Dateien bleiben lesbar
+  'einzelvariante', 'allgemein', 'zielgruppe', 'merkmale', 'mehrtaegig',
 ] as const
 
 export const LAYOUTS: Layout[] = ['bild', 'gross', 'mittel', 'jugend']
@@ -109,6 +111,10 @@ export interface RohBaustein extends RohZusatz {
   /** Stelle in der Tabelle der Sicherheits-Muster (Dateikopf `sicher`) */
   s?: number
   oz?: 1
+  /** Kompetenzfelder aus einer Beschriftung (sonst aus dem Blatt) */
+  k?: string[]
+  /** Variante ohne Figurenbezug (Beschriftung): Text-Pfad im Paket → Text */
+  ag?: BausteinTexte
 }
 
 /** Gleiche Sicherheitswerte kommen oft vor – sie stehen einmal im Dateikopf, die Einträge verweisen darauf. */
@@ -128,7 +134,8 @@ export class SicherTabelle {
   }
 }
 
-export function packeBaustein(b: MikroBaustein, sicher: SicherTabelle): RohBaustein {
+/** `mitKompetenz`: Kompetenzfelder speichern (nur wenn eine Beschriftung sie gesetzt hat – sonst kommen sie aus dem Blatt). */
+export function packeBaustein(b: MikroBaustein, sicher: SicherTabelle, mitKompetenz = false): RohBaustein {
   const r: RohBaustein = {
     id: b.id,
     h: b.h,
@@ -157,9 +164,14 @@ export function packeBaustein(b: MikroBaustein, sicher: SicherTabelle): RohBaust
     qu: b.qualitaet === 'entwurf' ? 'e' : undefined,
     s: sicher.nr(b.sicher),
     oz: b.ohneZiel ? 1 : undefined,
+    k: mitKompetenz ? b.kompetenz : undefined,
+    ag: b.allgemein,
     ...zusatzPack(b),
   }
-  return ohneLeere(r as unknown as Record<string, unknown>) as unknown as RohBaustein
+  const o = ohneLeere(r as unknown as Record<string, unknown>) as unknown as RohBaustein
+  // ausdrücklich keine Kompetenz (Beschriftung) bleibt als leere Liste stehen
+  if (mitKompetenz && !b.kompetenz.length) o.k = []
+  return o
 }
 
 /** Aus dem Blatt abgeleitete Felder eines Bausteins. */
@@ -184,7 +196,7 @@ export function entpackeBaustein(r: RohBaustein, blatt: BlattAngaben, sicher: (n
     rolle: r.r ?? ['uebung'],
     thema: r.t ?? [],
     eldib: eldibAus(r.e),
-    kompetenz: blatt.kompetenz,
+    kompetenz: r.k ?? blatt.kompetenz,
     alter: { von: r.al[0], bis: r.al[1] },
     stufen: blatt.stufen,
     lesemenge: (r.l ?? 0) as MikroBaustein['lesemenge'],
@@ -207,16 +219,20 @@ export function entpackeBaustein(r: RohBaustein, blatt: BlattAngaben, sicher: (n
   if (r.pl) b.platzhalter = r.pl
   if (r.se) b.sensibel = r.se
   if (r.oz) b.ohneZiel = true
+  if (r.ag) b.allgemein = r.ag
   zusatzAus(r, b)
   return b
 }
 
 // --- Stundenschritte (nur Metadaten; Texte aus den Quellen) -------------------------------------------------------
 
-/** Metadaten eines Stundenschritts ohne Texte und Quelle (die kommen beim Laden aus den Quellen). */
-export type SchrittMeta = Omit<Stundenschritt, 'titel' | 'text' | 'sagen' | 'wennEsKippt' | 'tipp' | 'einzelvariante' | 'fr' | 'quelle' | 'achtung' | 'vorbereitung' | 'elternbrief'> & {
+/** Metadaten eines Stundenschritts ohne Texte und Quelle (die kommen beim Laden aus den Quellen). Die Einzelvariante
+ *  stammt aus einer Beschriftung (steht in keiner Quelle) und wird deshalb mitgespeichert. */
+export type SchrittMeta = Omit<Stundenschritt, 'titel' | 'text' | 'sagen' | 'wennEsKippt' | 'tipp' | 'fr' | 'quelle' | 'achtung' | 'vorbereitung' | 'elternbrief'> & {
   /** Stelle in der Quelle, wenn sie von der Nummer in der Id abweicht (stabile Ids) */
   stelle?: number
+  /** französische Einzelvariante (Beschriftung) – landet beim Laden in `fr.einzelvariante` */
+  einzelvarianteFr?: { text: string; sagen?: string[] }
 }
 
 export interface RohSchritt extends RohZusatz {
@@ -249,9 +265,17 @@ export interface RohSchritt extends RohZusatz {
   se?: Stundenschritt['sensibel']
   /** Stelle in der Quelle (Schritt, Ablaufphase, Aktivität), wenn sie von der Nummer in der Id abweicht (stabile Ids, T-M10) */
   p?: number
+  /** Kompetenzfelder aus einer Beschriftung (sonst aus den ELDiB-Codes) */
+  k?: string[]
+  /** Einzelvariante (Beschriftung): Text und Sätze zum Sagen, DE und FR */
+  ev?: { t: string; s?: string[] }
+  evf?: { t: string; s?: string[] }
 }
 
-export function packeSchritt(s: SchrittMeta, sicher: SicherTabelle): RohSchritt {
+const evPack = (v: { text: string; sagen?: string[] } | undefined) => (v ? { t: v.text, ...(v.sagen?.length ? { s: v.sagen } : {}) } : undefined)
+const evAus = (v: { t: string; s?: string[] } | undefined) => (v ? { text: v.t, ...(v.s?.length ? { sagen: v.s } : {}) } : undefined)
+
+export function packeSchritt(s: SchrittMeta, sicher: SicherTabelle, mitKompetenz = false): RohSchritt {
   const r: RohSchritt = {
     id: s.id,
     h: s.h,
@@ -280,9 +304,14 @@ export function packeSchritt(s: SchrittMeta, sicher: SicherTabelle): RohSchritt 
     s: sicher.nr(s.sicher),
     se: s.sensibel,
     p: s.stelle,
+    k: mitKompetenz ? s.kompetenz : undefined,
+    ev: evPack(s.einzelvariante),
+    evf: evPack(s.einzelvarianteFr),
     ...zusatzPack(s),
   }
-  return ohneLeere(r as unknown as Record<string, unknown>) as unknown as RohSchritt
+  const o = ohneLeere(r as unknown as Record<string, unknown>) as unknown as RohSchritt
+  if (mitKompetenz && !s.kompetenz.length) o.k = []
+  return o
 }
 
 export function entpackeSchritt(r: RohSchritt, sicher: (number | null)[][], kompetenz: (codes: string[]) => string[], stufen: (von: number, bis: number) => Stufe[]): SchrittMeta {
@@ -293,7 +322,7 @@ export function entpackeSchritt(r: RohSchritt, sicher: (number | null)[][], komp
     rolle: r.r,
     thema: r.t ?? [],
     eldib,
-    kompetenz: kompetenz(eldib.slice(0, 2).map((x) => x.code)),
+    kompetenz: r.k ?? kompetenz(eldib.slice(0, 2).map((x) => x.code)),
     alter: { von: r.al[0], bis: r.al[1] },
     stufen: stufen(r.al[0], r.al[1]),
     dauer: { min: r.d[0], typ: r.d[1], max: r.d[2] } as Dauer,
@@ -318,6 +347,10 @@ export function entpackeSchritt(r: RohSchritt, sicher: (number | null)[][], komp
   if (r.tf) s.tagesform = r.tf
   if (r.se) s.sensibel = r.se
   if (r.p !== undefined) s.stelle = r.p
+  const ev = evAus(r.ev)
+  if (ev) s.einzelvariante = ev
+  const evf = evAus(r.evf)
+  if (evf) s.einzelvarianteFr = evf
   zusatzAus(r, s)
   return s
 }

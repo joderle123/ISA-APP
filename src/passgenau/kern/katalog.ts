@@ -174,6 +174,21 @@ interface Indizes {
   crew: Map<string, CrewSpiel>
 }
 
+function indizes(q: Quellen): Indizes {
+  return {
+    kurs: new Map(q.kurs.map((e) => [e.id, e])),
+    ff: new Map(q.foerderfach.map((e) => [e.id, e])),
+    material: new Map(q.materialien.map((m) => [m.id, m])),
+    crew: new Map(q.crew.themen.flatMap((t) => t.spiele.map((s) => [s.id, s] as const))),
+  }
+}
+
+/** Texte von Stundenschritten aus den Quellen, ohne den ganzen Katalog zu bauen (Katalog-Skript: Beschriftung prüfen). */
+export function schrittTexteAus(q: Quellen): (m: { id: string; stelle?: number }) => Texte | null {
+  const idx = indizes(q)
+  return (m) => texteAusQuelle(m, q, idx)
+}
+
 // --- neue Inhalte (Freude & Beziehung, Rituale …) -----------------------------------------------------------------------
 
 function stufenAus(von: number, bis: number): Stufe[] {
@@ -278,20 +293,17 @@ export function baueKatalog(q: Quellen, bDatei: BausteineDatei, sDatei: Schritte
   }
 
   // Stundenschritte aus den Quellen
-  const idx: Indizes = {
-    kurs: new Map(q.kurs.map((e) => [e.id, e])),
-    ff: new Map(q.foerderfach.map((e) => [e.id, e])),
-    material: new Map(q.materialien.map((m) => [m.id, m])),
-    crew: new Map(q.crew.themen.flatMap((t) => t.spiele.map((s) => [s.id, s] as const))),
-  }
+  const idx = indizes(q)
   const kompetenz = (codes: string[]) => [...new Set(codes.map(kompetenzAusCode))]
   for (const r of sDatei.schritte) {
     const meta = entpackeSchritt(r, sDatei.sicher, kompetenz, stufenAus)
     const t = texteAusQuelle(meta, q, idx)
     if (!t) continue
-    const { stelle: _s, ...rest } = meta
+    const { stelle: _s, einzelvarianteFr, ...rest } = meta
     void _s
-    add({ typ: 'schritt', ...rest, ...t })
+    // Einzelvariante aus der Beschriftung: DE am Schritt, FR zum französischen Text (nur wo es ihn gibt)
+    const fr = t.fr && einzelvarianteFr ? { ...t.fr, einzelvariante: einzelvarianteFr } : t.fr
+    add({ typ: 'schritt', ...rest, ...t, ...(fr ? { fr } : {}) })
   }
 
   // neue Inhalte: neue Einträge oder Ergänzungen vorhandener (z. B. Einzelvarianten, Beschriftung)

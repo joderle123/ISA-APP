@@ -58,6 +58,31 @@ export function verteile(k: Katalog, refs: string[], layout: Layout): number[] {
   return benutzt.map((x, i) => Math.round((x / (i ? m.folge : m.erste)) * 100) / 100)
 }
 
+/** Liegt ein Seitenumbruch auf der Kippe (ein Teil passt nur um < `rand` · Seite hinein oder fehlt nur so viel)? Gemessene
+ *  Höhen weichen vom echten Satz um wenige Millimeter ab – solche Blätter meidet der Planer, damit Vorhersage = PDF. */
+export function knapp(k: Katalog, refs: string[], layout: Layout, rand = 0.03): boolean {
+  const m = seitenMasse(k, layout)
+  let benutzt = 0
+  let anzahl = 0
+  let seite = 0
+  for (const ref of refs) {
+    const h = teilHoehe(k, ref, layout)
+    const cap = seite ? m.folge : m.erste
+    const gap = anzahl && !mitAufgabe(k, ref) ? m.abstand : anzahl ? m.abstand * 0.4 : 0
+    const neu = benutzt + gap + h
+    if (anzahl && Math.abs(neu - cap) < rand * cap) return true
+    if (anzahl && neu > cap) {
+      seite++
+      benutzt = h
+      anzahl = 1
+    } else {
+      benutzt = neu
+      anzahl++
+    }
+  }
+  return false
+}
+
 export function seitenFuellung(k: Katalog, p: Profil, plan: Plan, nr: number): number[] {
   const s = plan.sitzungen.find((x) => x.nr === nr)
   if (!s?.blatt?.bausteine.length) return []
