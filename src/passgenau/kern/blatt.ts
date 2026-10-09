@@ -4,7 +4,7 @@
 import type { Baustein, Blatt, BlattInhalt, Bereich, Sprache as BlattSprache } from '../../blatt/typen'
 import type { BlattTeil, Bogen, KatalogEintrag, Layout, MikroBaustein, Plan, Profil, Rolle, Sprache } from '../typen'
 import { hash8, hash01, stufeAusAlter, stufenAbstand, istEldib } from './hilfen'
-import { bausteinInhalt, intern, merkmaleVon, zielSatz as zielSatzVon, type Katalog } from './katalog'
+import { bausteinInhalt, intern, merkmaleVon, textVon, zielSatz as zielSatzVon, type Katalog } from './katalog'
 import { setzeText, texte } from './inhalt'
 import { bewerte, NACHBAR, pruefe, rang, type Bewertet, type Kontext } from './regeln'
 import { knapp as umbruchKnapp, seitenMasse, teilHoehe, verteile } from './seiten'
@@ -341,6 +341,75 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   return { teile, titel, hinweise, bewertet: new Map(gewaehlt.map((b) => [b.e.id, b])) }
 }
 
+/** Blatt für Jugendliche aus dem Kern der Stunde (Blind-Bewertung 5, 9.10.: die Blätter aus Kurs- und Kindermaterial
+ *  passten selten zur Übung oder zum Alter – „Anrede-Übung unter ‚Gefühle lesen‘“, „Debatte per Los“, „Kasse: Tüte“ für
+ *  17 Jahre, Verweise auf eine Übung 3 oder ein Wochenprotokoll). Die Gutachter schlugen stattdessen vor, was dieses Blatt
+ *  tut: Fragen zur Übung der Stunde, je nach Stelle im Bogen (erkennen, verstehen, üben, übertragen, zurückschauen). */
+export function kernBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
+  if (!o.kern || o.phase === 'leicht') return null
+  const t = textVon(o.kern, c.sprache).titel
+  const notfall = c.vorsicht.has('heikel') || merkmaleVon(c.k, o.kern).has('belastend')
+  return {
+    teile: [{ ref: BLATT_SYSTEM.kernblatt, h: BLATT_SYSTEM.kernblatt, t: `Fragen zu „${textVon(o.kern, 'de').titel}“` }, ...(notfall ? [{ ref: BLATT_SYSTEM.notfall, h: BLATT_SYSTEM.notfall }] : [])],
+    titel: t,
+    hinweise: [],
+    bewertet: new Map(),
+  }
+}
+
+const KERNBLATT_BEREICH: Record<string, Bereich> = {
+  'gefuehle-erkennen': 'gefuehle', 'gefuehle-ausdruecken': 'gefuehle', impulskontrolle: 'verhalten', selbstregulation: 'verhalten',
+  kooperation: 'miteinander', konflikte: 'miteinander', kommunikation: 'miteinander', aufmerksamkeit: 'lernen', ausdauer: 'lernen',
+  lernstrategien: 'lernen', selbstbild: 'selbstreflexion', alltag: 'alltag',
+}
+
+/** Inhalt des Blatts zur Übung (kernBlatt): kurz, ohne Pflicht, Persönliches aufzuschreiben. */
+function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache: Sprache): Baustein[] {
+  const fr = sprache === 'fr'
+  const t = textVon(kern, sprache)
+  const frage = (t.sagen ?? []).find((x) => /\?\s*[»“"]?$/.test(x.trim()) && x.length <= 140)
+  const liste: Baustein[] = [
+    { art: 'text', klein: true, text: fr ? `Pour l’exercice « ${t.titel} ». Rien n’est obligatoire : tu peux aussi prendre un exemple inventé.` : `Zur Übung „${t.titel}“. Nichts davon ist Pflicht: Ein erfundenes Beispiel geht auch.` },
+  ]
+  const F = (de: string, f: string, linien = 2): Baustein => ({ art: 'frage', text: fr ? f : de, linien })
+  switch (phase) {
+    case 'wahrnehmen':
+      liste.push(
+        F('Eine Situation, in der das vorkommt (echt oder erfunden):', 'Une situation où ça arrive (vraie ou inventée) :'),
+        F('Woran merke ich es als Erstes?', 'À quoi je le remarque en premier ?'),
+        { art: 'skala', frage: fr ? 'Je le remarque déjà …' : 'Ich merke es schon …', von: fr ? 'rarement' : 'selten', bis: fr ? 'tout de suite' : 'sofort', stufen: 5 },
+      )
+      break
+    case 'verstehen':
+      liste.push(
+        { art: 'tabelle', spalten: fr ? ['Situation', 'Ce que je pense', 'Ce que je fais'] : ['Situation', 'Was ich denke', 'Was ich tue'], zeilen: 2 },
+        F('Was würde mir in so einem Moment helfen?', 'Qu’est-ce qui m’aiderait dans un moment pareil ?'),
+      )
+      break
+    case 'uebertragen':
+      liste.push(
+        { art: 'wennDann', zeilen: 2, wenn: fr ? 'Si … (où, quand, avec qui)' : 'Wenn … (wo, wann, mit wem)', dann: fr ? 'alors j’essaie …' : 'dann probiere ich …' },
+        F('Mein kleiner Versuch bis zum nächsten Mal:', 'Mon petit essai d’ici la prochaine fois :'),
+        F('Und wenn es nicht klappt?', 'Et si ça ne marche pas ?', 1),
+      )
+      break
+    case 'reflektieren':
+      liste.push(
+        F('Was hat sich seit der ersten Sitzung verändert?', 'Qu’est-ce qui a changé depuis la première séance ?', 3),
+        { art: 'satzanfaenge', items: fr ? ['Ce qui m’a le plus aidé :', 'Ce que je garde :', 'Ce à quoi je veux continuer à faire attention :'] : ['Am meisten geholfen hat mir:', 'Das nehme ich mit:', 'Darauf will ich weiter achten:'], linien: 2 },
+      )
+      break
+    default:
+      liste.push(
+        ...(frage ? [F(frage, frage)] : []),
+        { art: 'satzanfaenge', items: fr ? ['Ma phrase (ou mon pas) pour la prochaine fois :', 'Ce qui rendrait ça plus facile :'] : ['Mein Satz (oder mein Schritt) für das nächste Mal:', 'Leichter würde es, wenn …'], linien: 2 },
+        F('Wo könnte mir das begegnen (Schule, Freunde, online …)?', 'Où est-ce que ça pourrait m’arriver (école, amis, en ligne …) ?'),
+        { art: 'skala', frage: fr ? 'Je me sens …' : 'Damit fühle ich mich …', von: fr ? 'pas encore sûr·e' : 'noch unsicher', bis: fr ? 'tout à fait sûr·e' : 'ganz sicher', stufen: 5 },
+      )
+  }
+  return liste
+}
+
 /** Teilt ein Blatt-Teil Ziel oder Thema mit dem Kern? (auch für Tests und Testlauf) */
 export function blattTeilKohaerent(e: MikroBaustein, kern: { codes: Set<string>; themen: Set<string>; felder: Set<string>; blatt: Set<string>; kindThemen: { has(k: string): boolean }; streng?: boolean }): boolean {
   if (!kern.codes.size && !kern.themen.size) return true
@@ -453,6 +522,13 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
       markiere(start, 1, teilId)
       continue
     }
+    if (t.ref === BLATT_SYSTEM.kernblatt) {
+      const kr = (s?.schritte ?? []).find((x) => x.rolle === 'kern')?.ref
+      const kern = kr ? k.eintraege.get(kr) : undefined
+      if (kern) bausteine.push(...kernBlattInhalt(kern, s!.phase === 'reflektieren' && plan.n < 2 ? 'ueben' : s!.phase, sprache))
+      markiere(start, bausteine.length - start, teilId)
+      continue
+    }
     if (t.ref === BLATT_SYSTEM.stundenleiste) {
       const schritte = (s?.schritte ?? []).filter((x) => x.min > 0).slice(0, 7)
       if (schritte.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: schritte.map((x) => ({ text: STUNDE_WORT[x.rolle][sprache], bild: STUNDE_WORT[x.rolle].bild, min: x.min })) })
@@ -485,7 +561,9 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
   for (const b of blaetter) zaehl.set(b.id, (zaehl.get(b.id) ?? 0) + 1)
   const haupt = blaetter.length ? intern(k).q.blatt.get([...zaehl.entries()].sort((a, b) => b[1] - a[1])[0][0])! : null
   const alleSpielschule = blaetter.length > 0 && blaetter.every((b) => b.bereich === 'spielschule')
-  const { bereich, thema } = haupt ? (alleSpielschule ? { bereich: 'spielschule' as Bereich, thema: haupt.thema } : bereichFuer(haupt.bereich === 'spielschule' ? { bereich: 'gefuehle', thema: 'erkennen' } : haupt)) : { bereich: 'gefuehle' as Bereich, thema: 'erkennen' }
+  // Blatt zur Übung (Jugendliche): Farbe und Zeichen nach dem Kompetenzfeld des Kerns (nicht immer das Herz)
+  const kernFeld = !haupt && (s?.blatt?.bausteine ?? []).some((t) => t.ref === BLATT_SYSTEM.kernblatt) ? k.eintraege.get((s?.schritte ?? []).find((x) => x.rolle === 'kern')?.ref ?? '')?.kompetenz[0] : undefined
+  const { bereich, thema } = kernFeld ? { bereich: KERNBLATT_BEREICH[kernFeld] ?? ('selbstreflexion' as Bereich), thema: 'erkennen' } : haupt ? (alleSpielschule ? { bereich: 'spielschule' as Bereich, thema: haupt.thema } : bereichFuer(haupt.bereich === 'spielschule' ? { bereich: 'gefuehle', thema: 'erkennen' } : haupt)) : { bereich: 'gefuehle' as Bereich, thema: 'erkennen' }
   const titel = s?.blatt?.titel ?? 'Mein Blatt'
   const zielCode = plan.ziele.find(istEldib)
   const zielSatz = zielCode ? zielSatzVon(k, p, zielCode, sprache) : undefined

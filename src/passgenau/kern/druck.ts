@@ -6,7 +6,7 @@ import type { KatalogEintrag, MikroBaustein, Plan, PlanSchritt, Profil, Rolle, S
 import { bausteinInhalt, eldibKurz, intern, merkmaleVon, quelleText, staemme, textVon, zielSatz, type Katalog } from './katalog'
 import { textMerkmale } from './einzel'
 import { kinderblatt } from './blatt'
-import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME } from './vokabular'
+import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME, WIEDERHOLUNG } from './vokabular'
 import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter } from './hilfen'
 
 export interface DruckSchritt {
@@ -75,6 +75,12 @@ function kurzLabel(t: string, n = 38): string {
 /** Hinweise des Planers, die eine Handlung in der Oberfläche anbieten oder nur die Planung erklären – auf Papier sinnlos */
 const NUR_OBERFLAECHE = /Leichte Stunde zeigen\.$|Mitmach-Seite auf Wunsch\.$|ohne Blatt geplant|nur auf Deutsch\.$|im Baukasten suchen\.$|Im Ergebnis anpassen\.$/
 
+/** Name der Phase; bei Jugendlichen ohne „Feiern“ (Blind-Bewertung 5: angekündigt, aber nie gefeiert). */
+function phasenName(phase: string, sp: Sprache, alter: number): string {
+  if (phase === 'reflektieren' && alter >= 12) return sp === 'fr' ? 'Bilan' : 'Rückblick'
+  return BOGEN_NAME[phase as keyof typeof BOGEN_NAME]?.[sp] ?? phase
+}
+
 /** Hinweise des Planers (deutsch gespeichert) für ein französisches Planblatt. */
 function hinweisFr(h: string): string {
   let m: RegExpExecArray | null
@@ -85,6 +91,7 @@ function hinweisFr(h: string): string {
   if ((m = /^Angepasst an heute: (.+)$/.exec(h))) return `Adapté à aujourd’hui : ${m[1].replace(/ Min\./g, ' min')}`
   if (h === 'Blatt gelockert: Teile aus dem Bereich des Ziels (nächste Stufen), nicht genau zum Ziel.') return 'Fiche élargie : parties du domaine de l’objectif (étapes suivantes), pas exactement l’objectif.'
   if (h === NUR_DEUTSCH) return 'Existe seulement en allemand : pour cet objectif, il n’y a pas encore d’activité en français qui convienne. À dire avec ses propres mots.'
+  if (h === WIEDERHOLUNG) return 'Reprise d’une activité de la série – cette fois avec une nouvelle situation du quotidien, choisie par le ou la jeune.'
   if (h === 'Gruppenaktivität – so mit einem Kind machen') return 'Activité de groupe – à faire ainsi avec un seul enfant'
   if ((m = /^schon vor (\d+) Tagen gemacht – wieder vorgeschlagen, weil sonst wenig passt$/.exec(h))) return `déjà fait il y a ${m[1]} jours – reproposé parce que peu d’autres choses conviennent`
   return h
@@ -229,7 +236,8 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     if ((x.rolle === 'ankommen' || x.rolle === 'abschluss') && nr > 1 && plan.n > 1) continue
     for (const m of e.material) mat.add(materialName(k, m, sp))
     // was der Text nennt, kommt dazu (Ritual-Material einer Folge nur in Sitzung 1, wie oben)
-    const tx = e.typ === 'schritt' ? `${e.titel} ${e.einzelvariante?.text ?? e.text}` : ''
+    // eigener Text des Plans (Rückblick für Jugendliche ohne Sticker) statt des Katalogtexts
+    const tx = e.typ === 'schritt' ? `${e.titel} ${x.ueber?.text ?? e.einzelvariante?.text ?? e.text}` : ''
     for (const [re, wer] of MATERIAL_IM_TEXT) if (re.test(tx)) mat.add(typeof wer === 'string' ? materialName(k, wer, sp) : wer[sp])
     if (e.typ === 'schritt' && !e.id.startsWith('s:')) {
       // Förderfach auf Französisch: die französische Vorbereitung der Einheit (deutsche nur, wo es keine Fassung gibt)
@@ -262,7 +270,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       const qTitel = quelle ? ((sp === 'fr' && quelle.fr) || quelle.de).titel : quelleText(e, sp)
       // der Tipp „leichter“ gilt für das ganze Quellblatt: nur einmal je Blatt
       // … und nicht, wenn er auf Teile des Quellblatts zeigt, die hier fehlen („Aufgabe 3“, „Memory“, „Bildkarten“)
-      const tipp = leichter && !KURSVERWEIS_RE.test(leichter) && !textMerkmale(leichter).has('blattverweis') && !/\b(Aufgabe|Karte|Karten|Memory|Bildkarten|Seite)\b/.test(leichter) && !tippSchon.has(e.quelle.blatt) ? kuerzen(leichter, 160) : undefined
+      const tipp = leichter && p.alterJahre < 12 && !KURSVERWEIS_RE.test(leichter) && !textMerkmale(leichter).has('blattverweis') && !/\b(Aufgabe|Karte|Karten|Memory|Bildkarten|Seite)\b/.test(leichter) && !tippSchon.has(e.quelle.blatt) ? kuerzen(leichter, 160) : undefined
       if (tipp) tippSchon.add(e.quelle.blatt)
       return { titel: textVon(e, sp).titel, quelle: sp === 'fr' ? `de la fiche « ${qTitel} »` : `aus dem Blatt „${qTitel}“`, tipp }
     })
@@ -270,7 +278,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     const satz = zielSatz(k, p, code, sp)
     return { code, text: `${eldibKurz(k, code, sp)}${satz ? ` – ${satz}` : ''}` }
   })
-  const phase = BOGEN_NAME[s.phase]?.[sp] ?? s.phase
+  const phase = phasenName(s.phase, sp, p.alterJahre)
   const zeile =
     sp === 'fr'
       ? `Passgenau · ${plan.n > 1 ? `séance ${nr} sur ${plan.n} · ` : ''}${plan.dauer} min · ${phase}`
@@ -427,7 +435,7 @@ export function druckFolge(k: Katalog, p: Profil, plan: Plan, opt: { sprache: Sp
     bogen: plan.sitzungen.map((s) => {
       const kern = s.schritte.find((x) => x.rolle === 'kern')
       const e = kern ? k.eintraege.get(kern.ref) : undefined
-      return { nr: s.nr, phase: BOGEN_NAME[s.phase]?.[opt.sprache] ?? s.phase, kern: e ? textVon(e, opt.sprache).titel : (kern?.t ?? '') }
+      return { nr: s.nr, phase: phasenName(s.phase, opt.sprache, p.alterJahre), kern: e ? textVon(e, opt.sprache).titel : (kern?.t ?? '') }
     }),
     material,
     datei: `Passgenau-Folge${opt.sprache === 'fr' ? '_FR' : ''}.pdf`,

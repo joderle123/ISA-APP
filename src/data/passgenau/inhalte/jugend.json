@@ -8413,5 +8413,175 @@
   },
   "qualitaet": "entwurf",
   "sicher": {}
+ },
+ {
+  "id": "j:melden-im-gespielten-unterricht",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Melden im gespielten Unterricht",
+  "text": "Die Fachkraft spielt fünf Minuten lang die Person vorne im Unterricht und erklärt etwas aus einem Gebiet, das der oder die Jugendliche mag (Fußball, Autos, ein Spiel). Zwischendurch stellt sie Fragen. Geantwortet wird nur nach Handzeichen und Aufruf mit Namen. Wer reinruft, bekommt ein ruhiges „Gleich“ und die Frage geht weiter. Dann wird getauscht: Der oder die Jugendliche erklärt, die Fachkraft meldet sich – einmal richtig, einmal ruft sie rein, einmal meldet sie sich gar nicht. Zum Schluss: Was war leichter, warten oder sich trauen?",
+  "sagen": [
+   "Ich bin jetzt vorne. Du antwortest, wenn du dich gemeldet hast und ich dich aufrufe.",
+   "Jetzt tauschen wir: Du erklärst, ich melde mich. Achte darauf, was ich falsch mache.",
+   "Was ist für dich schwerer – warten, bis du dran bist, oder überhaupt die Hand heben?"
+  ],
+  "wennEsKippt": "Wird das Rollenspiel peinlich, nur über ein Blatt Papier spielen: Hand heben heißt, das Blatt hochhalten. Ist Tauschen zu viel, bleibt die Fachkraft vorne und stellt nur noch zwei kurze Fragen.",
+  "rolle": [
+   "kern"
+  ],
+  "bogen": "ueben",
+  "thema": [
+   "schule",
+   "regeln"
+  ],
+  "eldib": [
+   {
+    "code": "V-10",
+    "gewicht": 1
+   },
+   {
+    "code": "V-13",
+    "gewicht": 1
+   }
+  ],
+  "kompetenz": [
+   "impulskontrolle",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 16
+  },
+  "dauer": {
+   "min": 10,
+   "typ": 13,
+   "max": 18
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 2,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "rollenspiel",
+   "gespraech"
+  ],
+  "material": [
+   "papier"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Lever la main dans un cours joué",
+   "text": "Pendant cinq minutes, l’adulte joue la personne devant la salle et explique quelque chose d’un domaine que le ou la jeune aime (foot, voitures, un jeu). De temps en temps, il pose des questions. On ne répond qu’après avoir levé la main et avoir été appelé par son prénom. Qui répond sans attendre reçoit un calme « Tout de suite » et la question continue. Ensuite, on échange : le ou la jeune explique, l’adulte lève la main – une fois correctement, une fois en répondant sans attendre, une fois sans lever la main du tout. Pour finir : qu’est-ce qui était plus facile, attendre ou oser ?",
+   "sagen": [
+    "Maintenant, c’est moi qui suis devant. Tu réponds quand tu as levé la main et que je t’appelle.",
+    "On échange : tu expliques, je lève la main. Regarde ce que je fais de travers.",
+    "Qu’est-ce qui est le plus difficile pour toi – attendre ton tour ou lever la main tout court ?"
+   ],
+   "wennEsKippt": "Si le jeu de rôle devient gênant, jouer seulement avec une feuille : lever la main, c’est lever la feuille. Si l’échange est trop, l’adulte reste devant et ne pose plus que deux courtes questions."
+  },
+  "tagesform": [
+   "aufgedreht"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
+ },
+ {
+  "id": "j:eine-meldung-vorbereiten",
+  "quelle": {
+   "art": "praxis",
+   "titel": "Einzelstunde Jugend"
+  },
+  "titel": "Eine Meldung vorbereiten",
+  "text": "Der oder die Jugendliche wählt ein Fach, in dem Melden schwerfällt. Gemeinsam wird genau eine Meldung vorbereitet: eine Frage („Können Sie das Beispiel noch einmal zeigen?“) oder eine kurze Antwort auf etwas, das bald drankommt. Der Satz wird auf eine Karte geschrieben und zweimal laut geübt – einmal leise, einmal in normaler Lautstärke. Dann wird festgelegt, wann: in den ersten zehn Minuten der Stunde. Auf einer Skala von 1 bis 10 sagt der oder die Jugendliche, wie mutig sich das anfühlt; bei über 7 wird die Meldung kleiner gemacht.",
+  "sagen": [
+   "Nur eine einzige Meldung – nicht mehr. Welches Fach nehmen wir?",
+   "Schreib den Satz so auf, wie du ihn wirklich sagen würdest.",
+   "Wie mutig fühlt sich das an, von 1 bis 10? Wir machen es so klein, dass es geht."
+  ],
+  "wennEsKippt": "Ist auch eine Frage zu viel, reicht als Versuch, die Hand kurz zu heben und wieder zu senken, wenn jemand anderes drankommt. Will der oder die Jugendliche kein Fach nennen, wird mit einem erfundenen Fach geübt.",
+  "rolle": [
+   "kern",
+   "transfer"
+  ],
+  "bogen": "uebertragen",
+  "thema": [
+   "schule",
+   "selbstwert"
+  ],
+  "eldib": [
+   {
+    "code": "V-13",
+    "gewicht": 1
+   },
+   {
+    "code": "V-10",
+    "gewicht": 0.5
+   }
+  ],
+  "kompetenz": [
+   "kommunikation",
+   "selbstbild"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "dauer": {
+   "min": 8,
+   "typ": 12,
+   "max": 15
+  },
+  "sozialform": [
+   "einzeln"
+  ],
+  "einzeltauglich": "ja",
+  "energie": 1,
+  "belastung": 0,
+  "reiz": 0,
+  "format": [
+   "plan",
+   "schreiben",
+   "gespraech"
+  ],
+  "material": [
+   "papier",
+   "stifte"
+  ],
+  "ort": "raum",
+  "fr": {
+   "titel": "Préparer une prise de parole",
+   "text": "Le ou la jeune choisit une matière où lever la main est difficile. Ensemble, on prépare exactement une prise de parole : une question (« Vous pouvez remontrer l’exemple ? ») ou une courte réponse à quelque chose qui va bientôt être vu. La phrase est écrite sur une carte et dite deux fois à voix haute – une fois doucement, une fois normalement. Ensuite, on fixe quand : dans les dix premières minutes du cours. Sur une échelle de 1 à 10, le ou la jeune dit à quel point cela demande du courage ; au-dessus de 7, on rend la prise de parole plus petite.",
+   "sagen": [
+    "Une seule prise de parole – pas plus. Quelle matière on prend ?",
+    "Écris la phrase comme tu la dirais vraiment.",
+    "Ça demande combien de courage, de 1 à 10 ? On la rend assez petite pour que ça marche."
+   ],
+   "wennEsKippt": "Si même une question est de trop, l’essai peut être de lever brièvement la main et de la baisser quand quelqu’un d’autre est appelé. Si le ou la jeune ne veut pas nommer de matière, on s’entraîne avec une matière inventée."
+  },
+  "tagesform": [
+   "aengstlich",
+   "rueckzug"
+  ],
+  "merkmale": {
+   "wettbewerb": false,
+   "koerperkontakt": false,
+   "laut": false,
+   "gewaltbezug": false,
+   "katharsis": false
+  },
+  "qualitaet": "entwurf",
+  "sicher": {}
  }
 ]

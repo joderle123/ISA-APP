@@ -49,7 +49,7 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   // Vorsicht familie (und Kinderschutz): Fragen zu Familie oder Zuhause
   familie: /\b(Familie\w*|Zuhause|zu Hause|daheim|Eltern\w*|Mutter|Vater|Mama|Papa|Geschwister|Bruder|Schwester|Herkunft|Heimat\w*)\b|\b(famille|maison|parents|mère|père|maman|papa|frère|sœur|origine)\b/,
   // Vorsicht koerper
-  koerper: /\b(Aussehen|Körperbild|Strand\w*|Bikini|Badeanzug|Gewicht|Figur|dick|dünn|Spiegel\w*|Diät|Kalorien|Körper-Chip|mein Körper verändert)\b|\b(apparence|poids|maillot|plage|régime|miroir)\b/,
+  koerper: /\b(eigenen? Hand|Hand (nach|um)zeichnen|Umriss (deiner|der) Hand|ta propre main|contour de (ta|la) main|Aussehen|Körperbild|Strand\w*|Bikini|Badeanzug|Gewicht|Figur|dick|dünn|Spiegel\w*|Diät|Kalorien|Körper-Chip|mein Körper verändert)\b|\b(apparence|poids|maillot|plage|régime|miroir)\b/,
   // belastende Sätze (nur mit Hilfe-Zeile; bei offener Krise nie)
   belastend: /\b(hilft (mir )?(sowieso )?keiner|alles egal|hoffnungslos|wertlos|niemand mag mich|keiner mag mich|ich hasse mich|nicht mehr leben|sinnlos|am liebsten weg|ich bin (so )?dumm|ich kann nichts|ich bin nichts wert|ich werde nie|ich bin hässlich|ich bin ein Versager|ich schaffe (das|es) nie|alle sind gegen mich)\b|\b(personne ne m['’]aide|je m['’]en fiche de tout|sans espoir|je ne vaux rien)\b/i,
   // heikel ohne Freischaltung (T-M1 – auch ohne Beschriftung „sensibel“)
@@ -63,6 +63,10 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   // Sorgen und Kummer hervorholen (in Krisenlage nicht, A12): Sorgen-Box, Sorgen-Stein, Trost-Koffer für traurige Tage
   sorgen: /\b(Sorge|Sorgen\w*|Kummer\w*|traurige[nr]? Tag\w*|Trost-?Koffer|Trostplan|soucis?|chagrin)\b/i,
   // Gefühle abfragen (in Krisenlage nicht, A12)
+  // Blind-Bewertung 5: Abruftest, Kurztest, Quiz als Leistungsprobe (nicht in Krisenlage)
+  leistung: /\b(gegenseitig abfragen|abfragen lassen|Abfrage\w*|Kurztest|Probetest|Probeklausur|Lücken markieren|se tester|s['’]interroger|interrogation|test blanc)\b/i,
+  // kindliche Elemente (bei Jugendlichen ausgeschlossen)
+  kindlich: /\b(Sticker|Stempel|Smiley\w*|Kuscheltier\w*|Handpuppe\w*|Wachsmal\w*|Löffel-Parcours|Flamingo\w*|Zauberstab|Zauberwort\w*|Ausmalbild\w*|Gummibärchen|autocollants?|peluches?|marionnettes?|craies grasses|flamant\w*|baguette magique|gestrichelten Linien nach|Spure\w* \w+ nach|nachspuren|repasse\w* les pointillés)\b/i,
   gefuehlfrage: /\b(fühle ich mich|Wie bereit fühlst du dich|wo bist du (jetzt|gerade)|Wie fühlst du dich|Wie geht es dir|Was macht dich (traurig|wütend|Angst)|ich bin traurig, weil|Ich fühle mich|Daumen (hoch|runter|hoch oder runter)|wie (traurig|wütend) bist du|Gefühl(e)? (benennen|zeigen|abfragen|erzählen)|Welches Tier bist du|Wie ist das Wetter bei dir|wie es (dir|dem Kind) (heute )?geht|wie (es|er|sie) sich (heute )?fühlt|innen heute anfühlt|eigenen Gefühl\w*|persönlichen Beispiel\w*)\b|\b(Comment te sens-tu|Comment ça va|pouce en (haut|bas)|Je me sens|Quel animal es-tu)\b/i,
   // Wut ausleben (A4, Ergänzung zu KATHARSIS_RE): stampfen, reißen, schlagen, schreien MIT Wut
   wutausleben: /\b(Wut|wütend|Ärger|Zorn)\b[^.!?]{0,80}\b(stampf\w*|zerreiß\w*|reiß\w*|zerknüll\w*|schlag\w*|box\w*|tret\w*|schrei\w*|werf\w*)|\b(stampf\w*|zerreiß\w*|reiß\w*|zerknüll\w*|box\w*|tret\w*|schrei\w*)\b[^.!?]{0,60}\b(Wut|wütend|Ärger|Zorn)\b/i,

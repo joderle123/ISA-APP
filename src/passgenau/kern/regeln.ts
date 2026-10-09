@@ -181,6 +181,9 @@ export function pruefe(e: KatalogEintrag, c: Kontext, o: Pruefung = {}): string 
 }
 
 /** Krisenlage (A12): Stimmung ≤ 2, Vorsicht Trauma oder Trauer, Weg 3 mit belastender Tagesform – keine Gefühle abfragen. */
+/** Themen, die eine Übung nur trägt, wenn das Kind sie hat (nicht allgemein wie Gefühle, Selbstwert, Lernen). */
+const BESONDERE_THEMEN = new Set(['angst', 'schlaf', 'medien', 'mobbing', 'traurig', 'familie', 'gewalt'])
+
 export function krisenlage(c: Kontext): boolean {
   return c.heute.stimmung <= 2 || c.vorsicht.has('trauma') || c.vorsicht.has('trauer') ||
     (c.weg === 'leicht' && c.tagesformen.some((t) => t === 'traurig' || t === 'aengstlich' || t === 'rueckzug' || t === 'aufgewuehlt' || t === 'wuetend'))
@@ -239,6 +242,10 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     if (tm.has('mobbing') && (c.vorsicht.has('trauma') || c.vorsicht.has('heikel'))) return 'Vorsicht Trauma'
     if (tm.has('belastend') && (c.vorsicht.has('heikel') || c.vorsicht.has('trauma') || (c.p.achtung ?? []).length)) return 'belastend'
     if (tm.has('gefuehlfrage') && krisenlage(c)) return 'Gefühle abfragen'
+    // Blind-Bewertung 5: ein Abruftest („gegenseitig abfragen“) bei Stimmung 2 und Prüfungsangst ist Leistungsmessung
+    if (tm.has('leistung') && krisenlage(c)) return 'Leistungsprobe in Krisenlage'
+    // … und Wachsmalkreiden, Löffel-Parcours, Flamingo-Statue, Kuscheltier wirken bei Jugendlichen kindlich
+    if (!eigen && tm.has('kindlich') && c.alter >= 12) return 'kindlich'
     if (tm.has('sorgen') && krisenlage(c)) return 'Gefühle abfragen'
   }
   // Krisenlage: auf dem Blatt keine Skala, kein Check-in, kein Rückblick zu Gefühl oder Stimmung (A12)
@@ -509,7 +516,12 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
   // und Klassenstunden): die Einzelübungen für Jugendliche (j:, inhalte/jugend.json) klar zuerst; Kurs, Förderfach, Material
   // und CREW ohne Einzelvariante nur, wenn nichts anderes passt
   if (c.alter >= 12 && e.typ === 'schritt') {
-    if (e.id.startsWith('j:')) g *= 2.2
+    if (e.id.startsWith('j:')) {
+      g *= 2.2
+      // eine Übung zu einem besonderen Thema (Prüfungsangst, Schlaf, Social Media …) nur, wenn das Kind dieses Thema hat
+      // (Blind-Bewertung 5: „Prüfungssorgen, die nicht im Profil stehen“)
+      if (e.thema[0] && BESONDERE_THEMEN.has(e.thema[0]) && !e.thema.some((t) => c.themen.has(t))) g *= 0.45
+    }
     else if (/^(k|f|m|c):/.test(e.id)) g *= e.einzelvariante ? 0.5 : 0.35
   }
   // Einzelstunde: Schritte, die nur für Gruppen beschrieben sind (ohne Einzelvariante), zählen weniger – die Beschriftung

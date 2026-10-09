@@ -31,13 +31,13 @@ export const SYSTEM: Stundenschritt[] = [
     id: 'pg:da-sein', h: 'pgdasein',
     quelle: { art: 'praxis', titel: 'Passgenau' },
     titel: 'Einfach da sein',
-    text: 'Nebeneinander sitzen, etwas zu trinken anbieten, ruhig bleiben. Nichts muss gesagt oder gemacht werden. Ein Knetball, ein Tuch oder ein Kuscheltier liegt bereit.',
+    text: 'Nebeneinander sitzen, etwas zu trinken anbieten, ruhig bleiben. Nichts muss gesagt oder gemacht werden. Ein Knetball oder ein Tuch liegt bereit.',
     sagen: ['Du musst heute nichts machen. Ich bin da.'],
     rolle: ['spiel', 'regulation'], dauer: { min: 3, typ: 7, max: 20 }, energie: 1, format: ['sinne'], material: ['tuecher'],
     ohneZiel: true, anspruch: 0, tagesform: ['traurig', 'rueckzug', 'will-nicht', 'aengstlich', 'muede', 'aufgewuehlt'],
     fr: {
       titel: 'Simplement être là',
-      text: 'S’asseoir côte à côte, proposer quelque chose à boire, rester calme. Rien ne doit être dit ni fait. Une balle anti-stress, un foulard ou une peluche sont à portée de main.',
+      text: 'S’asseoir côte à côte, proposer quelque chose à boire, rester calme. Rien ne doit être dit ni fait. Une balle anti-stress ou un foulard sont à portée de main.',
       sagen: ['Aujourd’hui, tu n’as rien à faire. Je suis là.'],
     },
   },
@@ -214,5 +214,6 @@ SYSTEM.push(
 
 export const SYSTEM_BY_ID = new Map(SYSTEM.map((s) => [s.id, s]))
 
-/** Blatt-Teile, die keine Katalogeinträge sind: Hilfe-Zeile (E-M3) und Stundenleiste (P11). */
-export const BLATT_SYSTEM = { notfall: 'pg:notfall', stundenleiste: 'pg:stundenleiste' } as const
+/** Blatt-Teile, die keine Katalogeinträge sind: Hilfe-Zeile (E-M3), Stundenleiste (P11) und das Blatt zur Übung der
+ *  Stunde für Jugendliche (aus dem Kern gebaut). */
+export const BLATT_SYSTEM = { notfall: 'pg:notfall', stundenleiste: 'pg:stundenleiste', kernblatt: 'pg:kernblatt' } as const

@@ -548,6 +548,8 @@ async function main() {
       pruefe(await dlg(tb).getByRole('button', { name: /Geprüft – freigeben/ }).isDisabled(), 'Freigabe erst nach vier Häkchen')
       for (const c of await dlg(tb).getByRole('checkbox').all()) await c.check()
       await dlg(tb).getByRole('button', { name: /Geprüft – freigeben/ }).click()
+      // die Antwort an den Hub ist asynchron – erst warten, dann nachsehen (vorher wackelig)
+      await hub.waitForFunction(() => window.__ops.some((o) => o.op === 'praxis-kuratieren'), null, { timeout: 5000 }).catch(() => {})
       const kur = await hub.evaluate(() => window.__ops.filter((o) => o.op === 'praxis-kuratieren').pop())
       pruefe(kur && kur.arg.aktion === 'freigeben' && Object.values(kur.arg.checkliste || {}).filter(Boolean).length === 4, 'Kuratieren an den Hub (vier Häkchen)')
       await tb.close()

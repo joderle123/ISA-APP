@@ -9,6 +9,7 @@ import { LAYOUTS } from './format'
 const FEST_MM: Record<string, Record<Layout, number>> = {
   [BLATT_SYSTEM.notfall]: { bild: 44, gross: 42, mittel: 40, jugend: 38 },
   [BLATT_SYSTEM.stundenleiste]: { bild: 36, gross: 33, mittel: 30, jugend: 24 },
+  [BLATT_SYSTEM.kernblatt]: { bild: 190, gross: 180, mittel: 170, jugend: 160 },
 }
 
 /** Seitenmaße je Gestaltung (mm); Rückfall, wenn der Katalog noch nicht gemessen ist. */

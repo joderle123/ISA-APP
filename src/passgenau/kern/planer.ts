@@ -6,9 +6,10 @@ import type { Auftrag, Bogen, Ereignis, KatalogEintrag, Plan, PlanSchritt, Profi
 import { hash01, hash8, stufeAusAlter, layoutAusStufe, istEldib } from './hilfen'
 import { aktuellerKatalog, ichSatz, intern, kurz, merkmaleVon, textVon, type Katalog } from './katalog'
 import { bewerte, kontext, krisenlage, pruefe, rang, warum, type Bewertet, type Kontext } from './regeln'
-import { baueBlatt } from './blatt'
+import { baueBlatt, kernBlatt } from './blatt'
+import { BLATT_SYSTEM } from './system'
 import { vertrauenKind, vorliebe, type Vorlieben } from './vorlieben'
-import { KOMPETENZ_NAME, NUR_DEUTSCH, themaByKey, type Kompetenz } from './vokabular'
+import { KOMPETENZ_NAME, NUR_DEUTSCH, themaByKey, WIEDERHOLUNG, type Kompetenz } from './vokabular'
 
 export interface Verlauf {
   plaene: Plan[]
@@ -100,11 +101,13 @@ function vorlage(c: Kontext): Slot[] {
   }
   // Blatt ohne: Slot Übung/Blatt wird Spiel, Gespräch oder Bewegung derselben Minuten (P2)
   if (blattModus(c) === 'ohne') for (const s of v) if (s.rolle === 'uebung') s.rolle = 'spiel'
-  if (h.energie >= 6) {
+  // Jugendliche schon ab Energie 5 (Blind-Bewertung 5: „bei Energie 5 komplett im Sitzen und Schreiben“)
+  if (h.energie >= (c.alter >= 12 ? 5 : 6)) {
     const b = idx('bewegung')
     if (b >= 0) v.splice(1, 0, v.splice(b, 1)[0])
     else {
-      const n = nimm('kern', 2, 6) + nimm('einstieg', 1) + (idx('einstieg') < 0 ? nimm('uebung', 1) : 0)
+      // Jugendliche: nicht aus dem Kern (die Einzelübungen brauchen ihre 12–15 Minuten), sondern aus Blatt und Ankommen
+      const n = c.alter >= 12 ? nimm('uebung', 2, 4) + nimm('ankommen', 1, 2) : nimm('kern', 2, 6) + nimm('einstieg', 1) + (idx('einstieg') < 0 ? nimm('uebung', 1) : 0)
       if (n >= 2) v.splice(1, 0, { rolle: 'bewegung', min: n })
     }
   } else if (h.energie <= 2) {
@@ -131,7 +134,7 @@ function vorlage(c: Kontext): Slot[] {
     if (k) k.min += n
   }
   if (h.stimmung <= 2) {
-    const n = nimm('kern', 2, 6)
+    const n = c.alter >= 12 ? nimm('uebung', 2, 4) : nimm('kern', 2, 6)
     const a = v.find((x) => x.rolle === 'ankommen')
     if (a) a.min += n
     for (const s of v) if (s.rolle === 'einstieg') s.rolle = 'spiel'
@@ -370,10 +373,20 @@ function gleichesThema(e: KatalogEintrag, kern: KatalogEintrag): boolean {
 }
 
 /** Eigener Einstieg, der den Kern der Stunde ankündigt (wenn keine Einheit einen passenden hat). */
-function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag): PlanSchritt {
+function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1): PlanSchritt {
   const e = c.k.eintraege.get('pg:einstieg')!
   const de = textVon(kern, 'de').titel
   const fr = kern.typ === 'schritt' && kern.fr ? kern.fr.titel : de
+  // Jugendliche: ohne „Material zeigen“ und „das Kind“; ab Sitzung 2 kurz an die letzte anknüpfen (roter Faden)
+  if (c.alter >= 12)
+    return {
+      ref: e.id, h: e.h, rolle: 'einstieg', min: Math.min(min, 5), t: 'Worum es heute geht',
+      ueber: {
+        text: `${nr > 1 ? 'Zuerst kurz fragen, was seitdem passiert ist und was von der Übung davor hängen geblieben ist – ein Satz reicht, nichts muss. ' : ''}Die Fachkraft sagt in einem Satz, worum es heute geht („${de}“), und nennt ein kurzes Beispiel aus dem Alltag. Der oder die Jugendliche darf nachfragen, widersprechen oder einfach zuhören.`,
+        'fr.text': `${nr > 1 ? 'D’abord demander brièvement ce qui s’est passé depuis et ce qui est resté de l’exercice d’avant – une phrase suffit, rien n’est obligatoire. ' : ''}L’adulte dit en une phrase de quoi il s’agit aujourd’hui (« ${fr} ») et donne un court exemple du quotidien. Le ou la jeune peut poser une question, ne pas être d’accord ou simplement écouter.`,
+      },
+      warum: ['Führt in den Kern der Stunde ein'],
+    }
   return {
     ref: e.id, h: e.h, rolle: 'einstieg', min: Math.min(min, 5), t: 'Worum es heute geht',
     ueber: {
@@ -389,13 +402,15 @@ function rueckblickSchritt(c: Kontext, min: number, kerne: string[]): PlanSchrit
   const e = c.k.eintraege.get('pg:rueckblick')!
   const titel = (sp: 'de' | 'fr') => kerne.map((r) => c.k.eintraege.get(r)).filter((x): x is KatalogEintrag => !!x).map((x) => (sp === 'fr' && x.typ === 'schritt' && x.fr ? x.fr.titel : textVon(x, 'de').titel))
   const liste = (l: string[]) => l.map((t) => `„${t}“`).join(', ')
+  // das Blatt der letzten Sitzung fragt schon „Das nehme ich mit“ – nicht doppelt (Blind-Bewertung 5)
+  const mitBlatt = c.weg !== 'leicht' && blattModus(c) !== 'ohne'
   return {
     ref: e.id, h: e.h, rolle: 'reflexion', min, t: 'Rückblick auf die Folge',
     // ab 12 ohne Abzeichen und Sticker (dritte Blind-Bewertung: „wirkt bei 14 Jahren kindlich“), ohne „noch einmal zeigen“
     ueber: c.alter >= 12
       ? {
-          text: `Gemeinsam auf die letzten Sitzungen schauen: ${liste(titel('de'))}. Der oder die Jugendliche sagt, was davon am meisten gebracht hat und wo es im Alltag schon geholfen hat. Die Fachkraft nennt eine Sache, die sie hat wachsen sehen. Zum Schluss schreibt der oder die Jugendliche einen Satz auf eine Karte: Das nehme ich mit.`,
-          'fr.text': `Regarder ensemble les dernières séances : ${titel('fr').map((t) => `« ${t} »`).join(', ')}. Le ou la jeune dit ce qui lui a le plus apporté et où cela a déjà aidé au quotidien. L’adulte nomme une chose qu’il a vu grandir. Pour finir, le ou la jeune écrit une phrase sur une carte : Ce que je garde.`,
+          text: `Gemeinsam auf die letzten Sitzungen schauen: ${liste(titel('de'))}. Der oder die Jugendliche sagt, was davon am meisten gebracht hat und wo es im Alltag schon geholfen hat. Die Fachkraft nennt eine Sache, die sie hat wachsen sehen.${mitBlatt ? ' Was der oder die Jugendliche mitnimmt, kommt nachher aufs Blatt.' : ' Zum Schluss schreibt der oder die Jugendliche einen Satz auf eine Karte: Das nehme ich mit.'}`,
+          'fr.text': `Regarder ensemble les dernières séances : ${titel('fr').map((t) => `« ${t} »`).join(', ')}. Le ou la jeune dit ce qui lui a le plus apporté et où cela a déjà aidé au quotidien. L’adulte nomme une chose qu’il a vu grandir.${mitBlatt ? ' Ce que le ou la jeune garde sera noté ensuite sur la fiche.' : ' Pour finir, le ou la jeune écrit une phrase sur une carte : Ce que je garde.'}`,
         }
       : {
           text: `Gemeinsam auf die letzten Sitzungen schauen: ${liste(titel('de'))}. Das Kind wählt die Übung, die am meisten geholfen hat, und zeigt sie noch einmal. Die Fachkraft nennt eine Sache, die sie beim Kind hat wachsen sehen. Zum Schluss eine kleine Feier: Das Kind malt ein Abzeichen oder sucht sich einen Sticker aus.`,
@@ -457,6 +472,27 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       }
       continue
     }
+    // Jugendliche, letzte Sitzung einer Folge: kein neues Werkzeug, sondern die wichtigste Übung der Folge noch einmal, in
+    // einer neuen Situation (Blind-Bewertung 5: „die Bilanz-Sitzung führt ein neues Werkzeug ein, obwohl keine folgt“)
+    if (slot.rolle === 'kern' && c.alter >= 12 && c.weg !== 'leicht' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2) {
+      const ziel = new Set(c.ziele.filter((z) => istEldib(z.code)).map((z) => z.code))
+      const beste = [...new Set(o.fruehereKerne)]
+        .map((r) => c.k.eintraege.get(r))
+        .filter((e): e is KatalogEintrag => !!e && pruefe(e, c, { rolle: 'kern' }) === null)
+        .map((e) => bewerte(e, c, { phase: 'ueben' }))
+        .map((b) => ({ b, s: b.s + (b.e.eldib.some((x) => x.gewicht === 1 && ziel.has(x.code)) ? 1 : 0) }))
+        .sort((x, y) => y.s - x.s)[0]?.b
+      if (beste) {
+        const sch = planSchritt(beste, 'kern', slot.min, c, { phase: o.phase, nr: o.nr })
+        sch.hinweis = WIEDERHOLUNG
+        sch.warum = ['Letzte Sitzung: die wichtigste Übung der Folge noch einmal, in einer neuen Situation']
+        ergebnis[i] = sch
+        gewaehlt.push({ b: beste, slot, i })
+        beste.e.format.forEach((f) => formate.add(f))
+        kern = beste.e
+        continue
+      }
+    }
     // roter Faden: Einstieg und Reflexion aus derselben Einheit wie der Kern bevorzugt
     const kernQuelle = kern ? quelleEinheit(kern.id) : null
     const bevorzugt = new Set(o.bevorzugt ?? [])
@@ -473,12 +509,21 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       }
       auswahl = [...auswahl].sort((x, y) => rang(x.b, y.b, `${salz}|${i}`))
     }
+    // Jugendliche: eine Einzelübung für Jugendliche mit Bezug zum Ziel geht immer vor Bruchstücken aus Kurs, Förderfach und
+    // Material (Blind-Bewertung 5: „Kärtchen gestalten und laminieren“, „Erst das Selbstbild, dann die Regeln“)
+    if (slot.rolle === 'kern' && c.alter >= 12 && c.weg !== 'leicht') {
+      const jugend = auswahl.filter((w) => w.b.e.id.startsWith('j:') && w.b.f.ziel >= 0.25)
+      if (jugend.length) auswahl = jugend
+    }
     if (slot.rolle === 'einstieg' || slot.rolle === 'reflexion') {
       // Einstieg und Abschlussphase einer Material-Einheit führen in deren Hauptteil ein – nur zusammen mit ihm
       auswahl = liste.filter((w) => !w.b.e.id.startsWith('m:') || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
       // Blind-Bewertung 9.10.: Einstieg, Kern und Blatt behandelten oft drei Themen. Einstieg und Reflexion nur aus der
       // Einheit des Kerns oder mit demselben Hauptziel und Thema; sonst ein eigener Einstieg, der den Kern ankündigt
       if (kern) auswahl = auswahl.filter((w) => kernQuelle === quelleEinheit(w.b.e.id) || gleichesThema(w.b.e, kern!))
+      // Jugendliche: Einstiege aus Kurs und Förderfach setzen Vorwissen voraus („Neues Thema: …“, „Notbremse und Lenkung“ mit
+      // Skills und Thermometer-Blatt in Sitzung 1) – nur Einzelübungen für Jugendliche oder der eigene Einstieg
+      if (c.alter >= 12) auswahl = auswahl.filter((w) => w.b.e.id.startsWith('j:') || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
       for (const w of auswahl) if (kernQuelle && quelleEinheit(w.b.e.id) === kernQuelle) w.b = { ...w.b, s: w.b.s + 0.25 }
       auswahl.sort((x, y) => rang(x.b, y.b, `${salz}|${i}`))
       // letzte Sitzung einer Folge: ein echter Rückblick auf die Kerne der Folge
@@ -487,7 +532,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
         continue
       }
       if (!auswahl[0] && slot.rolle === 'einstieg' && kern) {
-        ergebnis[i] = einstiegSchritt(c, slot.min, kern)
+        ergebnis[i] = einstiegSchritt(c, slot.min, kern, o.nr)
         continue
       }
     }
@@ -530,7 +575,9 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   const blattIndex = slots.findIndex((x) => x.rolle === 'uebung')
   if (blattIndex >= 0 && ergebnis[blattIndex]) {
     const min = ergebnis[blattIndex]!.min
-    const erg = baueBlatt(c, { phase: o.phase, min, nr: o.nr, salz, gesperrt: benutzt, fokus: o.fokus, kern, optional: c.weg === 'leicht' || min < 6 })
+    const auftrag = { phase: o.phase, min, nr: o.nr, salz, gesperrt: benutzt, fokus: o.fokus, kern, optional: c.weg === 'leicht' || min < 6 }
+    // Jugendliche: das Blatt zur Übung der Stunde statt Teilen aus Kurs- und Kinderblättern (Blind-Bewertung 5)
+    const erg = c.alter >= 12 && c.weg !== 'leicht' && kern ? kernBlatt(c, auftrag) : baueBlatt(c, auftrag)
     if (erg) {
       blatt = { titel: erg.titel, bausteine: erg.teile, ziel: false }
       for (const t of erg.teile) benutzt.add(t.ref)
@@ -538,6 +585,11 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       const gruende = [...erg.bewertet.values()].flatMap((b) => warum(b, c, { phase: o.phase, nr: o.nr }))
       const top = [...new Set(gruende)].slice(0, 2)
       ergebnis[blattIndex] = { ...ergebnis[blattIndex]!, t: erg.titel, warum: top.length ? top : ['Blatt zum Ziel der Stunde'] }
+      if (erg.teile.some((t) => t.ref === BLATT_SYSTEM.kernblatt))
+        ergebnis[blattIndex]!.ueber = {
+          text: 'Das Blatt zur Übung hinlegen. Der oder die Jugendliche schreibt, die Fachkraft bleibt in der Nähe und hilft, wenn gefragt. Was nicht passt, darf leer bleiben; Persönliches muss nicht aufs Blatt – ein erfundenes Beispiel geht auch.',
+          'fr.text': 'Poser la fiche de l’exercice. Le ou la jeune écrit, l’adulte reste à proximité et aide si on le lui demande. Ce qui ne convient pas peut rester vide ; rien de personnel ne doit être écrit – un exemple inventé, ça marche aussi.',
+        }
     } else {
       hinweise.push(c.weg === 'leicht' ? 'Keine passende Mitmach-Seite – ohne Blatt geplant.' : 'Kein passendes Blatt – ohne Blatt geplant: zu wenig passende Blatt-Teile für Ziel, Alter, Lesen und Schreiben.')
       // Slot mit einem Spiel oder Gespräch derselben Minuten füllen
@@ -728,11 +780,8 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
   const sitzungen: Sitzung[] = []
   const zweiZiele = c.ziele.filter((z) => istEldib(z.code)).length >= 2
   bogen.forEach((phase, i) => {
-    // Jugendliche: alle zwei Sitzungen ein anderes Ankommen, Abschluss gleich (S9)
-    if (c.alter >= 12 && i > 0 && i % 2 === 0 && rit.ankommen) {
-      const neu = waehleRitual(c, 'ankommen', 4, `${salz}|r-a${i}`, new Set([rit.ankommen.e.id]))
-      if (neu) rit = { ...rit, ankommen: neu }
-    }
+    // Rituale bleiben die ganze Folge gleich, auch bei Jugendlichen (Blind-Bewertung 5: „das Ankommens-Ritual wechselt
+    // mitten in der Folge“ – früher S9: alle zwei Sitzungen ein anderes Ankommen)
     // letzte Sitzung: kein Abschluss-Ritual, das auf die nächste Sitzung zählt
     if (i === bogen.length - 1 && bogen.length > 1 && rit.abschluss && folgeRitual(rit.abschluss.e)) {
       const e = c.k.eintraege.get('pg:abschluss')

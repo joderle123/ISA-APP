@@ -24,7 +24,7 @@ import { fuerTeam, uebernehmen, vorlageZurueckgezogen } from '../src/passgenau/k
 import { rueckmelden, zuruecksetzen, gelernt, type Vorlieben } from '../src/passgenau/kern/vorlieben'
 import { bewerte, kontext, pruefe, rang } from '../src/passgenau/kern/regeln'
 import { layoutAusStufe, stufeAusAlter, stufenAbstand } from '../src/passgenau/kern/hilfen'
-import { KATHARSIS_RE, KURSVERWEIS_RE, VORB_GRUPPE_RE, VORLAUF_RE } from '../src/passgenau/kern/vokabular'
+import { KATHARSIS_RE, KURSVERWEIS_RE, VORB_GRUPPE_RE, VORLAUF_RE, WIEDERHOLUNG } from '../src/passgenau/kern/vokabular'
 import { ladeKatalogNode, ROOT } from './passgenau-quellen'
 import { pruefeBeschriftung, wendeBeschriftungAn, type Beschriftung, type EintragKontext } from '../src/passgenau/kern/beschriftung'
 import type { SchrittMeta } from '../src/passgenau/kern/format'
@@ -252,12 +252,13 @@ await pruefung('Weg 1/2/3 für 5, 9 und 14 Jahre: Minuten, Bogen, Kern, Blatt, R
     if (plan.sitzungen.length > 1) {
       const ph = plan.sitzungen.map((s) => REIHE.indexOf(s.phase as string))
       soll(ph.every((x, i) => i === 0 || x >= ph[i - 1]), `${name}: Bogen nicht monoton ${plan.sitzungen.map((s) => s.phase).join(',')}`)
-      const teile = plan.sitzungen.flatMap((s) => [...s.schritte.filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss' && !x.ref.startsWith('pg:')).map((x) => x.ref), ...(s.blatt?.bausteine ?? []).filter((b) => !b.ref.startsWith('pg:')).map((b) => b.ref)])
+      // (die letzte Sitzung einer Jugend-Folge wiederholt bewusst die wichtigste Übung – Hinweis WIEDERHOLUNG)
+      const teile = plan.sitzungen.flatMap((s) => [...s.schritte.filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss' && !x.ref.startsWith('pg:') && x.hinweis !== WIEDERHOLUNG).map((x) => x.ref), ...(s.blatt?.bausteine ?? []).filter((b) => !b.ref.startsWith('pg:')).map((b) => b.ref)])
       soll(new Set(teile).size === teile.length, `${name}: Teil doppelt in der Folge`)
       // gleich in allen Sitzungen; die letzte darf ein Ritual, das auf die nächste Sitzung zählt, durch das eigene ersetzen
       const abschluss = new Set(plan.sitzungen.map((s, i) => s.schritte[s.schritte.length - 1].ref).filter((r, i, l) => !(i === l.length - 1 && r === 'pg:abschluss' && l.length > 1)))
       soll(abschluss.size === 1, `${name}: Abschluss-Ritual wechselt`)
-      if (p.alterJahre < 12) soll(new Set(plan.sitzungen.map((s) => s.schritte[0].ref)).size === 1, `${name}: Ankommens-Ritual wechselt`)
+      soll(new Set(plan.sitzungen.map((s) => s.schritte[0].ref)).size === 1, `${name}: Ankommens-Ritual wechselt`)
     }
   }
   // Weg 3: Tagesform „aufgewühlt“ (P8) und 10 Minuten
@@ -700,7 +701,9 @@ await pruefung('Französisch (T-M4): FR-Kinder bekommen ≥ 5 Pakete, Banner „
     // genug Französisches – oder, wo kein Teil zum Kern passt, eine Sitzung ohne Blatt mit Grund (bei Jugendlichen gilt
     // das Blatt nur, wenn Hauptziel oder Hauptthema zum Kern passen; dritte Blind-Bewertung)
     const ohneGrund = plan.sitzungen.filter((s) => !s.blatt && !s.hinweise?.some((h) => /ohne Blatt geplant/.test(h))).length
-    soll(pakete.length >= 5 || (pakete.length >= 3 && ohneGrund === 0), `${p.ref}: nur ${pakete.length} Pakete`)
+    // Jugendliche: das Blatt zur Übung der Stunde (pg:kernblatt) entsteht in der Blattsprache – kein Teil nur auf Deutsch
+    const kernblatt = plan.sitzungen.every((s) => s.blatt?.bausteine.some((b) => b.ref === 'pg:kernblatt'))
+    soll(kernblatt || pakete.length >= 5 || (pakete.length >= 3 && ohneGrund === 0), `${p.ref}: nur ${pakete.length} Pakete`)
     for (const s of plan.sitzungen) {
       const teile = [...s.schritte.map((x) => x.ref), ...(s.blatt?.bausteine ?? []).map((b) => b.ref)].filter((r) => !r.startsWith('pg:')).map((r) => k.eintraege.get(r)!)
       const nurDe = teile.filter((e) => (e.typ === 'schritt' ? !e.fr : !e.sprache.fr)).length
