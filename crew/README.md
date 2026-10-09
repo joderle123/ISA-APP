@@ -27,7 +27,9 @@ Jede Einmal-Erklärung erscheint nur einmal pro Gerät. Im Lehrermodus unter „
    auf Wunsch („genauer zählen“) und erst ab 6 Leuten. Bei Sturm: „1 Minute runterkommen“.
 3. **Mission des Tages (4–5 Min.):** jeden Wochentag ein anderes Spiel. Eine Sitzungs-Uhr kürzt
    Runden, wenn die Zeit knapp wird.
-4. **Nachspielzeit (1–2 Min.):** eine Frage, freiwillig. Passen ist okay.
+4. **Nachspielzeit (1–2 Min.):** „Kurz drüber reden“ mit „Das habt ihr heute geübt“ und drei Fragen
+   (Was habt ihr gemerkt? Was war schwer? Wo braucht ihr das diese Woche?). Freiwillig, Passen ist okay.
+   „Andere Fragen“ zieht drei aus den Fragen-Karten der Mission.
 5. **Belohnung:** Crew-Punkte werden zu Energie. Die Energie wird direkt nach der Mission gespeichert.
 
 Sind alle Karten gezählt, geht das Spiel von allein weiter. Das spart Tipparbeit.
@@ -36,11 +38,11 @@ Sind alle Karten gezählt, geht das Spiel von allein weiter. Das spart Tipparbei
 
 | Tag | Mission | Worum es geht |
 |---|---|---|
-| Montag | **Wer steht?** | „Steh auf, wenn du …“: Zahl tippen und „Fertig“, aufstehen, zeigen. Genau = ★★, 1 daneben = ★. Mit Goldener Karte (×2) und Blitzrunde. |
-| Dienstag | **Gefühls-Radar** | Gleiche Situation, welches Gefühl? Wie stark? Ein Radar-Profi schätzt die Crew. |
-| Mittwoch | **Clash** | Ein Streit zwischen zwei Fantasiefiguren. Zwei Teams bringen sie über 5 Level zum Frieden (nach der Friedenstreppe). |
-| Donnerstag | **Feed-Check** | Echt, Meinung oder Fake? Gerüchte stoppen, Gruppendruck, Zivilcourage online. |
-| Freitag | **Konter-Battle** | Aus einem blöden Spruch wird eine Stärke (Reframing). Der Crew-Tower wächst. |
+| Montag | **Wer steht?** | „Steh auf, wenn du …“: Zahl tippen und „Fertig“, aufstehen, zeigen. Genau = ★★, 1 daneben = ★. Karten steigen an (Aufwärmen, Erlebnis, goldene Stärke ×2), danach ein freiwilliges 20-Sekunden-Mikro und die Blitzrunde. |
+| Dienstag | **Gefühls-Radar** | Gleiche Situation, welches Gefühl? Wie stark? Vorher tippt jede:r im Kopf, was die Person links wählt (Nachbar-Tipp). Ein Radar-Profi schätzt die Crew. |
+| Mittwoch | **Clash** | Ein Streit zwischen zwei Fantasiefiguren. Zwei Teams bringen sie über 5 Level zum Frieden (nach der Friedenstreppe). Vor jedem Zug nennt das andere Team das Gefühl seiner Figur; ab Hitze 95 knallt es – dann nur Zurückspulen. |
+| Donnerstag | **Feed-Check** | Echt, Meinung oder Fake? Gerüchte stoppen, Gruppendruck, Zivilcourage online. Vor dem Auflösen begründet jedes Team in einem Satz. |
+| Freitag | **Konter-Battle** | Aus einem blöden Spruch wird eine Stärke (Reframing). Erst Feedback („Stark an eurem Konter war …“), dann Ja-Karten. Der Crew-Tower wächst. |
 
 **So läuft „Wer steht?“ (pro Karte):**
 
@@ -52,6 +54,20 @@ Sind alle Karten gezählt, geht das Spiel von allein weiter. Das spart Tipparbei
 
 Am Wochenende gibt es „Freie Wahl“: Die Crew wählt aus allen aktiven Missionen. Mit „Andere Mission“ kannst du jederzeit tauschen.
 In der **Solo-Zone** gibt es Spiele für eine Person (z. B. Chill-Zone, Gefühls-Decoder, Clash-Solo).
+
+## Verstehen, was läuft (bei jedem Spiel)
+
+- **Darum geht’s:** Vor jedem Spiel und jeder Mission steht in ein, zwei Sätzen, was die Jugendlichen üben und
+  wofür das im Alltag gut ist – mit Vorlese-Knopf und dem passenden **Skill** bzw. der **Skill-Karte** aus dem Skills-Kurs.
+- **Level statt Wiederholung:** Die Spiele steigen an – meist Erkennen → Begründen → Anwenden/Perspektive.
+  Die Level-Leiste im Intro zeigt den Weg, ein Zwischenbild kündigt jedes neue Level an.
+- **Nachbesprechung:** Nach jedem Spiel „Kurz drüber reden“: „Das habt ihr heute geübt“ und drei Fragen
+  (Gemerkt · Schwer · Diese Woche). Freiwillig, Pass ist okay, Timer optional. Solo-Spiele zeigen „Das hast du geübt“
+  mit zwei Fragen nur für den Kopf. Auf Team- und Rollen-iPads erscheint keine Nachbesprechung.
+- **Hinweise für die Lehrkraft:** Im Lehrermodus hat jedes Spiel, jede Mission und jedes Solo-Spiel den Knopf
+  **„Hinweise“**: Ziel, Aufbau in Stufen, worauf achten, Gesprächsimpulse, wenn es kippt, Nachbesprechung.
+  Die Texte stehen in `src/content/didaktik.js`.
+- **Probelauf** endet mit einem gemeinsamen **Stopp-Zeichen** der Crew (z. B. Hand flach hoch). Es steht danach in der Hilfe.
 
 ## Sicherheit im Spiel
 
@@ -73,6 +89,8 @@ Look, Crew-Name, Ton und Vorlesen einstellen und den Fortschritt sichern.
 - CREW speichert **nichts über einzelne Jugendliche**: keine Namen, keine Antworten, keine Ranglisten.
 - Gespeichert werden nur Crew-Name, Look, Energie, HQ-Teile, gespielte Missionen mit Datum und welche Karten schon dran waren.
 - Der Spielstand liegt **nur auf diesem Gerät** (im Browser). Es gibt keinen Server.
+- Neu gespeichert wird nur das gewählte **Stopp-Zeichen** der Crew (eine Kennung wie `hand`). Eigene Zeichen
+  aus „Stummer Aufbau“, Anspannungs-Zahlen der Chill-Zone, Konter, Gründe und Pläne in den Spielen werden **nicht** gespeichert.
 - **Sichern:** Lehrermodus → „Fortschritt“ → Sicherungscode kopieren oder als Datei speichern.
   Auf einem anderen Gerät unter „Laden“ einfügen.
 
@@ -164,7 +182,8 @@ Alles steckt in dieser einen Datei (auch Schriften und Grafiken).
   Ebenso entsteht `integration/crew-hub.js` aus `integration/src/crew-hub.src.js` + Katalog + QR-Kern (`tools/hub-gen.js`).
 - Tests (Playwright): `node crew/tests/smoke.mjs` (ebenso radar, clash, feed, reframe, solo-test, hq) und
   `node crew/tests/games.mjs` (spielt JEDES registrierte Spiel im Auto-Modus bis zum Ende, prüft Deep-Link und QR);
-  `node crew/tests/hub.mjs` prüft die Klassebuch-Anbindung ohne Browser.
+  `node crew/tests/hub.mjs` prüft die Klassebuch-Anbindung ohne Browser;
+  `node crew/tests/didaktik.mjs` prüft „Darum geht’s“, Level, Nachbesprechung und Hinweise für alle Spiele, Missionen und Solo-Spiele.
   Läuft parallel noch ein anderer Browser-Test: `flock /tmp/crew-chrome.lock node crew/tests/games.mjs`.
 
 ### Ein neues Spiel bauen
@@ -190,5 +209,8 @@ Bausteine: `ctx.scr` (Bildschirm mit Kopfzeile + Pass), `ctx.ask`/`ctx.next` (wa
 `ctx.timer` (nie unter 20 s außer `{movement:true}`), `ctx.rng`/`ctx.rpick`/`ctx.rshuffle` (gleich auf allen iPads),
 `ctx.pair`, `ctx.role`, `ctx.readBtn`, `ctx.say`, `ctx.figureCard`, `ctx.bubble`, `ctx.meter`, `ctx.helpCard`, `ctx.safetyLine`.
 Vorlagen: `ctx.T.intro`, `codeCheck`, `pairScreen`, `vergleich` (T1), `roleSetup`, `checkSolution` (T2), `split`, `twoFinger`,
-`handOn` (T3), `walk` (T4), `cover`, `passOn` (T5), `beamerStep` (T6), `end`. Jede Wartestelle muss über diese Helfer laufen,
+`handOn` (T3), `walk` (T4), `cover`, `passOn` (T5), `beamerStep` (T6), `level`, `nachbesprechung`, `end`.
+Didaktik: Eintrag in `src/content/didaktik.js` (warum ≤ 25 Wörter, skill, karte, geuebt, 3 Fragen, lehrer),
+`ctx.T.intro({ levels: LEVELS })`, `ctx.T.level({ n, names: LEVELS, text })` vor jedem neuen Level,
+`badge: ctx.stufe(n, LEVELS)` in `ctx.scr`. Die Nachbesprechung kommt automatisch (`noNach: true` schaltet sie ab). Jede Wartestelle muss über diese Helfer laufen,
 dann läuft das Spiel im Auto-Modus (`CREW.debug.startGame(id, { auto: true })`) ohne Finger bis zum Ende.
