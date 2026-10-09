@@ -13,9 +13,9 @@ export type Pose = 'stehen' | 'winken' | 'verschraenkt' | 'zeigen' | 'jubeln' | 
 
 export const POSEN: Pose[] = ['stehen', 'winken', 'verschraenkt', 'zeigen', 'jubeln', 'melden', 'stopp', 'haende-gesicht', 'geben']
 
-type Haar = 'kurz' | 'lang' | 'zopf' | 'locken' | 'tuch' | 'kappe' | 'dutt' | 'glatze-bart'
+export type Haar = 'kurz' | 'lang' | 'zopf' | 'locken' | 'tuch' | 'kappe' | 'dutt' | 'glatze-bart'
 
-interface Typ {
+export interface Typ {
   haar: Haar
   haarFarbe: string
   haut: string
@@ -43,7 +43,7 @@ export const FIGUR_NAMEN = Object.keys(FIGUREN)
 
 const T = '#1B2233'
 
-function tube(d: string, farbe: string, dicke: number): Form[] {
+export function tube(d: string, farbe: string, dicke: number): Form[] {
   return [
     { t: 'path', d, s: T, f: 'none', w: dicke + 3 },
     { t: 'path', d, s: farbe, f: 'none', w: dicke },
@@ -54,7 +54,7 @@ function hand(x: number, y: number, haut: string, r = 5): Form {
   return { t: 'circle', cx: x, cy: y, r, f: haut, s: T, w: 2.2 }
 }
 
-interface Mass {
+export interface Mass {
   kx: number
   ky: number
   kr: number
@@ -64,13 +64,13 @@ interface Mass {
   breite: number
 }
 
-function masse(alter: Typ['alter']): Mass {
+export function masse(alter: Typ['alter']): Mass {
   if (alter === 'jugend') return { kx: 50, ky: 30, kr: 19, schulterY: 53, shirtUnten: 106, fussY: 152, breite: 21 }
   if (alter === 'erwachsen') return { kx: 50, ky: 24, kr: 17.5, schulterY: 45, shirtUnten: 102, fussY: 152, breite: 22 }
   return { kx: 50, ky: 36, kr: 23, schulterY: 63, shirtUnten: 112, fussY: 152, breite: 19 }
 }
 
-function haarHinten(t: Typ, m: Mass): Form[] {
+export function haarHinten(t: Typ, m: Mass): Form[] {
   const { kx: x, ky: y, kr: r } = m
   const hf = t.haarFarbe
   switch (t.haar) {
@@ -87,7 +87,7 @@ function haarHinten(t: Typ, m: Mass): Form[] {
   }
 }
 
-function haarVorne(t: Typ, m: Mass): Form[] {
+export function haarVorne(t: Typ, m: Mass): Form[] {
   const { kx: x, ky: y, kr: r } = m
   const hf = t.haarFarbe
   switch (t.haar) {

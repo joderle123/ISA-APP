@@ -230,6 +230,14 @@ Spielecken. Pflicht: `stufen: ["C1"]`, `layout: "bild"`, DE **und** FR, `dauer` 
     kartoffel, blatt-herbst, kresse-1 / kresse-2 / kresse-3 (Tag 1 / 3 / 7), regenschirm, sonnenschirm.
   - Feste und Kirmes: peckvillchen, buergbrennen, lampion, riesenrad, karussell, feuerwerk, fahne-lu
     (rot – weiß – hellblau), kleeschen (ohne Rute), boxemaennchen.
+- **Farbige Motive für die Spielschule** (`src/blatt/motive-dinge.ts`, auf Bildkarten ≈ 18 mm noch erkennbar; statt Piktogrammen nehmen, wo es passt):
+  - Menschen zusammen: freunde, gruppe, familie, baby, oma, opa, kind-troesten, teilen.
+  - Berufe und Rollen: aerztin, arzt, feuerwehrfrau, busfahrer, baeckerin, bauarbeiterin, polizist, verkaeufer, clown, ritterin, magier, schauspieler.
+  - Körper am Kind (Teil gelb hervorgehoben): nase, mund, auge, ohr, haare, bauch, arm, bein, fuss, hand-offen.
+  - Kleidung und Gepäck: winterjacke, pulli, hose, muetze, schal, handschuhe, gummistiefel, socke, schlafanzug, regenjacke, kappe, koffer, rucksack.
+  - Tisch und Küche: becher, teller, tasse, loeffel, kanne, milch, brot, mehl, teig, ofen, ausstechform, topf, kelle, salat.
+  - Bad und Zuhause: seife, handtuch, waschbecken, zahnbuerste, zahnpasta, spiegel, sofa, tisch, stuhl, bett, regal, spielzeugkiste.
+  - Licht, Verkehr, Baustelle, Theater: laterne, taschenlampe, led-kerze, zebrastreifen, bushaltestelle, bus, bagger, kran, helm, buehne, krone, maske.
 
 Figuren-Namen erscheinen **nicht** im Bild – in Geschichten dürfen die Kinder
 anders heißen. Bilder sparsam und gezielt einsetzen, nie als Dekoration.
