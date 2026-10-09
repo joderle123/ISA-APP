@@ -1,0 +1,42 @@
+/* Übersetzer: Chat, zwei verdeckte Lese-Felder, Lesart-Chips, Lese-Test */
+.ue-chat { gap: 8px; }
+.ue-chat-head { display: flex; align-items: center; gap: 8px; padding-bottom: 6px; border-bottom: 2px solid var(--line); flex-wrap: wrap; }
+.ue-chat-head .read-btn { margin-left: auto; }
+.ue-msg { font-size: clamp(1.3em, 1.6vw + 0.7em, 1.9em); font-weight: 700; border-color: var(--yellow); box-shadow: 0 0 0 3px color-mix(in srgb, var(--yellow) 35%, transparent); }
+.ue-narr { margin: 0; align-self: center; text-align: center; font-size: 0.9em; font-style: italic; color: var(--muted); max-width: 52ch; }
+.ue-halves { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.ue-half { display: flex; flex-direction: column; gap: 10px; padding: 14px; border: var(--bw) dashed var(--line); border-radius: var(--radius); background: var(--panel); min-height: 170px; }
+.ue-half[data-side="links"] { border-color: var(--teamA); }
+.ue-half[data-side="rechts"] { border-color: var(--teamB); }
+.ue-half.locked { border-style: solid; background: color-mix(in srgb, var(--good) 14%, var(--panel)); }
+.ue-read-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.ue-read-btn { min-height: 56px; padding: 8px 10px; font-size: 1em; gap: 6px; }
+.ue-emo { font-size: 1.4em; line-height: 1; font-family: system-ui, "Apple Color Emoji", "Segoe UI Emoji", sans-serif; }
+.ue-lock { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; text-align: center; }
+.ue-lock .ic { color: var(--good); }
+.ue-reveal { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; }
+.ue-reveal-side { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.ue-reveal-mid { font-size: 2.6em; color: var(--yellow); }
+.ue-lesart { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 99px; border: 2px solid var(--line); background: var(--panel2); }
+.ue-lesart.big { font-size: 1.35em; padding: 10px 20px; }
+.ue-lesart[data-read="nett"] { background: color-mix(in srgb, var(--good) 40%, var(--panel)); }
+.ue-lesart[data-read="ironisch"] { background: color-mix(in srgb, var(--yellow) 40%, var(--panel)); }
+.ue-lesart[data-read="sauer"] { background: color-mix(in srgb, var(--hot) 40%, var(--panel)); }
+.ue-lesart[data-read="egal"] { background: color-mix(in srgb, var(--muted) 30%, var(--panel)); }
+.ue-clues { gap: 6px; align-items: center; }
+.ue-wahl .chip { justify-content: flex-start; text-align: left; line-height: 1.25; }
+.ue-gemeint { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; padding: 14px 18px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.ue-test { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.ue-test-p { display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; padding: 12px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); }
+@media (max-width: 640px) {
+  .ue-halves { grid-template-columns: 1fr; }
+  .ue-half { min-height: 0; }
+  .ue-gemeint { grid-template-columns: 1fr; }
+  .ue-test { grid-template-columns: 1fr; }
+  .ue-test-p { flex-direction: row; justify-content: flex-start; text-align: left; }
+  .ue-reveal-mid { font-size: 1.8em; }
+  .ue-lesart.big { font-size: 1.1em; padding: 8px 12px; }
+}
+.ue-lage .fig-text { font-size: clamp(1.15em, 1.2vw + 0.7em, 1.6em); }
+.ue-gemeint { grid-template-columns: 1fr; justify-items: start; }
+@media (max-width: 640px) { .ue-chat-head .muted.small { display: none; } }

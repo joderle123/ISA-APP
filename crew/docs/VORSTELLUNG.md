@@ -50,18 +50,18 @@ Körperkontakt; „Minderheit spricht zuerst“ stellt nie jemanden bloß.
 Konter-Battle (Reframing) · Chill-Zone · Gefühls-Decoder · Clash-Solo. Sie wurden nach den Kritik-Runden umgebaut:
 kein Hochhalten und Zählen mehr, dafür Erzählzeit, Gespräch und Bewegung.
 
-**Spielekatalog Jahr 1:** 62 Spiele in 8 Themen, davon **28 gebaut** (Favoriten ★):
+**Spielekatalog Jahr 1:** 62 Spiele in 8 Themen, davon **35 gebaut** (Favoriten ★):
 
 - *Ankommen & Crew:* Probelauf, Regel-Radar, Frag weiter!, Pilot & Navigator ★, Stummer Aufbau, Stärken-Spion ★, Crew-Rat ★, Erster Eindruck ★, Echte Freunde?
 - *Ich: Bedürfnisse & Stärken:* Tank-Detektiv ★, Was steckt dahinter?, Kleiner Schritt ★, Je nach Ort, Zwei Brillen ★, Stärke im Einsatz ★, Vergleichs-Falle
 - *Gefühle verstehen:* Gefühls-Funk, Pult-Tausch ★
 - *Anspannung & Skills:* Pegel-Reihe ★, Skill-Sprechstunde ★
 - *Gedanken & Glaubenssätze:* Gedanken-Weiche ★, Tatsache oder Urteil? ★
-- *Kommunikation & Grenzen:* Funkstille – der Chat kippt ★, Hitze-Ecken ★
+- *Kommunikation & Grenzen:* Übersetzer, Stille Post ohne Worte, Funkstille – der Chat kippt ★, Zuhör-Falle, Okay-Radar ★, Näher nicht, Stopp-Check ★, Hitze-Ecken ★, Familien-Funk
 - *Konflikt, Druck & Mobbing:* Story-Staffel: Der Streit ★, Deal oder kein Deal ★, Druck-Chat ★
 - *Digital, Gesundheit & Abschluss:* Teilen oder nicht? ★
 
-Die übrigen 34 stehen im Katalog (`docs/SPIELEKATALOG.md`) mit Ablauf, ELDiB-Codes und Sicherheitsnotizen und
+Die übrigen 27 stehen im Katalog (`docs/SPIELEKATALOG.md`) mit Ablauf, ELDiB-Codes und Sicherheitsnotizen und
 erscheinen in der App als „bald“. Für jede Einheit gibt es schon heute ein gebautes Spiel: Fehlt das Katalogspiel
 der Einheit, nimmt der Finder automatisch den besten gebauten Ersatz aus demselben Thema mit denselben ELDiB-Codes.
 
@@ -108,6 +108,6 @@ Schriften und Grafiken sind eingebettet, es gibt keine externen Aufrufe und kein
 2. **GitHub Pages einschalten**, damit die QR-Codes auf den Schul-iPads funktionieren (10 Minuten, README).
 3. **Datenschutz-Check** durch die DPO des CDSE für die Klassebuch-Anbindung; danach Elterninformation.
 4. **Klassebuch-Sitzung:** Reiter und Karten in Galileo/Unified einbauen (fertiger Prompt in der Hub-Anleitung).
-5. **Die restlichen 34 Spiele** in Wellen bauen, Thema für Thema; die Favoriten (★) zuerst. Der Katalog ist fertig,
+5. **Die restlichen 27 Spiele** in Wellen bauen, Thema für Thema; die Favoriten (★) zuerst. Der Katalog ist fertig,
    der Baukasten (Vorlagen T1–T6, Auto-Test für jedes Spiel) steht.
 6. **Jahr 2 und 3:** gleiche Einheiten-Logik, neue Katalog-Einträge; kein Umbau der App nötig.

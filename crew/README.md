@@ -109,7 +109,7 @@ nie über die Jugendlichen. Teilen ist freiwillig, **Pass** steht auf jedem Bild
 - Ist das Katalogspiel einer Einheit noch nicht gebaut, zeigt der Finder automatisch den **besten gebauten Ersatz**
   (gleiches Thema, gleiche ELDiB-Codes). Es gibt nie einen toten Link.
 
-### Gebaute Spiele (28 von 62, ★ = Favorit)
+### Gebaute Spiele (35 von 62, ★ = Favorit)
 
 | Thema | Spiele |
 |---|---|
@@ -118,11 +118,16 @@ nie über die Jugendlichen. Teilen ist freiwillig, **Pass** steht auf jedem Bild
 | Gefühle verstehen | Gefühls-Funk · Pult-Tausch ★ |
 | Anspannung & Skills | Pegel-Reihe ★ · Skill-Sprechstunde ★ |
 | Gedanken & Glaubenssätze | Gedanken-Weiche ★ · Tatsache oder Urteil? ★ |
-| Kommunikation & Grenzen | Funkstille – der Chat kippt ★ · Hitze-Ecken ★ |
+| Kommunikation & Grenzen | Übersetzer · Stille Post ohne Worte · Funkstille – der Chat kippt ★ · Zuhör-Falle · Okay-Radar ★ · Näher nicht · Stopp-Check ★ · Hitze-Ecken ★ · Familien-Funk |
 | Konflikt, Druck & Mobbing | Story-Staffel: Der Streit ★ · Deal oder kein Deal ★ · Druck-Chat ★ |
 | Digital, Gesundheit & Abschluss | Teilen oder nicht? ★ |
 
-Die übrigen 34 Spiele stehen mit Ablauf und Kritik-Notizen in `docs/SPIELEKATALOG.md` und erscheinen in der App als „bald“.
+Die übrigen 27 Spiele stehen mit Ablauf und Kritik-Notizen in `docs/SPIELEKATALOG.md` und erscheinen in der App als „bald“.
+
+**Grenzen und Familie:** Okay-Radar, Näher nicht und Stopp-Check bleiben altersgerecht: keine Berührungsaufgaben zwischen
+Jugendlichen, alles über Figuren und Skalen (bei Näher nicht ist die Figur am Beamer das Gegenüber). Stopp-Check sagt
+ausdrücklich: Jedes Stopp gilt, auch ein wackeliges. Familien-Funk (solo, ohne Vergleichskarte) zeigt nur erfundene Familien in
+verschiedenen Formen – keine gilt als „normal“ – und endet mit „Mit jemandem drüber reden“ (116 111).
 Eine Kurzvorstellung für Kollegium und Leitung: `docs/VORSTELLUNG.md`.
 
 ### Sieben Formate
@@ -183,7 +188,8 @@ Alles steckt in dieser einen Datei (auch Schriften und Grafiken).
 - Tests (Playwright): `node crew/tests/smoke.mjs` (ebenso radar, clash, feed, reframe, solo-test, hq) und
   `node crew/tests/games.mjs` (spielt JEDES registrierte Spiel im Auto-Modus bis zum Ende, prüft Deep-Link und QR);
   `node crew/tests/hub.mjs` prüft die Klassebuch-Anbindung ohne Browser;
-  `node crew/tests/didaktik.mjs` prüft „Darum geht’s“, Level, Nachbesprechung und Hinweise für alle Spiele, Missionen und Solo-Spiele.
+  `node crew/tests/didaktik.mjs` prüft „Darum geht’s“, Level, Nachbesprechung und Hinweise für alle Spiele, Missionen und Solo-Spiele;
+  `node crew/tests/kommunikation.mjs` prüft die sieben neuen Spiele aus „Kommunikation & Grenzen“ (Inhalte, iPad quer/hoch und Handy, Hub, Finder).
   Läuft parallel noch ein anderer Browser-Test: `flock /tmp/crew-chrome.lock node crew/tests/games.mjs`.
 
 ### Ein neues Spiel bauen
