@@ -16,11 +16,31 @@ export type Sozialform = 'einzeln' | 'zu-zweit' | 'gruppe' | 'klasse'
 export type Einzeltauglich = 'ja' | 'angepasst' | 'nein'
 export type Stufe03 = 0 | 1 | 2 | 3
 export type Weg = 'gruendlich' | 'schnell' | 'leicht'
-export type Tagesform = 'aufgedreht' | 'muede' | 'traurig' | 'wuetend' | 'aengstlich' | 'rueckzug' | 'will-nicht'
+export type Tagesform = 'aufgedreht' | 'muede' | 'traurig' | 'wuetend' | 'aengstlich' | 'rueckzug' | 'will-nicht' | 'aufgewuehlt'
 export type Schwerpunkt = 'verstehen' | 'ueben' | 'uebertragen' | 'selbstbild' | 'beziehung'
 export type FormatWunsch = 'bewegung' | 'kreativ' | 'gespraech' | 'spiel' | 'wenig-schreiben'
 
 export interface EldibBezug { code: string; gewicht: 1 | 0.5 }
+
+/** Für wen ein Katalogeintrag gedacht ist (P1): 'fachkraft' (z. B. alle „Werkzeuge für Fachkräfte“) kommt nie aufs Blatt des Kindes. */
+export type Zielgruppe = 'kind' | 'fachkraft' | 'eltern'
+
+/** Reiz- und Trauma-Merkmale (P9) – Filter bei `vorsicht` 'reiz'/'trauma', in Weg 3 und bei Stimmung ≤ 2. */
+export interface Merkmale { wettbewerb?: boolean; koerperkontakt?: boolean; laut?: boolean; gewaltbezug?: boolean; katharsis?: boolean }
+
+/** Felder, die Bausteine und Stundenschritte gemeinsam haben (Kritik vom 9.10.: P1, P8, P9, E-M4). Alle optional. */
+export interface KatalogZusatz {
+  zielgruppe?: Zielgruppe
+  /** läuft über Tage (Punkteplan, Wochen-Tracker …) – nur Rolle `transfer`, nie im Kern */
+  mehrtaegig?: boolean
+  merkmale?: Merkmale
+  /** Rituale: 0 = verlangt nichts (Platz, Getränk, Tier), 1 = zeigen oder wählen, 2 = sprechen, Gefühl benennen, bewerten */
+  anspruch?: 0 | 1 | 2
+  /** aus der Quelle übernommen (E-M4): sensible Punkte, Vorbereitung, Hinweis auf einen Elternbrief */
+  achtung?: string
+  vorbereitung?: string
+  elternbrief?: string
+}
 export interface Dauer { min: number; typ: number; max: number }
 export interface Altersband { von: number; bis: number }
 
@@ -32,7 +52,7 @@ export type BausteinTexte = Record<string, string>
 // ---------------------------------------------------------------------------------------------------------------
 
 /** Mikro-Baustein eines Blatts: Aufgabenpaket (aufgabe + folgender Baustein) oder freier Baustein. Id 'b:<blatt>:<n>' */
-export interface MikroBaustein {
+export interface MikroBaustein extends KatalogZusatz {
   id: string
   h: string
   quelle: { blatt: string; nr: string; pfad: number[] }
@@ -64,12 +84,14 @@ export interface MikroBaustein {
   sensibel?: 'kinderschutz' | 'akut' | 'familie' | 'koerper'
   qualitaet: 'geprueft' | 'entwurf'
   sicher: Record<string, number>
+  /** Mitmach-Seite ohne Förderziel (Malvorlage, Spielbrett, Labyrinth …): darf in Weg 3 aufs Blatt */
+  ohneZiel?: boolean
 }
 
 export type SchrittQuelle = 'kurs' | 'foerderfach' | 'material' | 'spielschule' | 'crew' | 'freude' | 'ritual' | 'praxis'
 
 /** Stundenschritt (Kurs 'k:', Förderfach 'f:', Material 'm:', Spielschule 's:', CREW 'c:', Freude 'fb:', Ritual 'r:') */
-export interface Stundenschritt {
+export interface Stundenschritt extends KatalogZusatz {
   id: string
   h: string
   quelle: { art: SchrittQuelle; einheit?: string; titel: string }
@@ -140,7 +162,7 @@ export interface Profil {
   ziele: ProfilZiel[]
   erreicht: string[]
   themen: ProfilThema[]
-  vorsicht: ('familie' | 'trauer' | 'koerper' | 'heikel')[]
+  vorsicht: ('familie' | 'trauer' | 'koerper' | 'heikel' | 'reiz' | 'trauma')[]
   interessen: string[]
   wochenziel: string | null
   gemacht: { id: string; am: string }[]
@@ -150,6 +172,18 @@ export interface Profil {
   /** Quellen für „Das weiß ich schon“ (Anzeige): je Zeile Text, Quelle-Art und Datum – nie Werte oder Notiztexte */
   wissen?: { gruppe: string; text: string; quelle: string; datum?: string }[]
   rechte: { speichern: boolean; rueckmelden: boolean }
+  /** „Was dem Kind hilft“ (P11) – nur die Fachkraft setzt es */
+  hilft?: ('stundenleiste' | 'bewegungspausen' | 'reizarm' | 'bildplan')[]
+  /** offenes heikles Thema – nur die Art, nie Text oder Themenschlüssel (E-M2) */
+  achtung?: ('krise' | 'kinderschutz')[]
+  /** false = „Passgenau lernt bei diesem Kind nicht“ (E-M12): keine Kind-Ereignisse, keine Kind-Vorlieben */
+  lernen?: boolean
+  /** Zugang aus Tests erst nach einmaliger Bestätigung durch die Fachkraft (P4, E-M14) */
+  zugangBestaetigt?: boolean
+  /** stabiler, nicht umkehrbarer Startwert des Kindes für den festen Zufallswert (T-M7) – vom Hub */
+  seed?: string
+  /** Datenlage (T-M5): dünn = keine ELDiB-Ziele und keine Themen der letzten 60 Tage */
+  dichte?: 'duenn' | 'mittel' | 'reich'
 }
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -163,17 +197,26 @@ export interface Auftrag {
   /** Ziel-Codes in Reihenfolge der Priorität (Weg 1/2) */
   ziele: string[]
   n: number
-  dauer: 10 | 20 | 30 | 45 | 60
+  dauer: 10 | 15 | 20 | 30 | 45 | 60
   sozialform: 'einzeln' | 'zu-zweit' | 'kleingruppe'
   schwerpunkt?: Schwerpunkt[]
   formate?: FormatWunsch[]
   heute?: Heute
   tagesform?: Tagesform
+  /** Weg 3: bis zu zwei Tagesformen (P8); `tagesform` bleibt für ältere Aufrufer */
+  tagesformen?: Tagesform[]
+  /** Blatt mit oder ohne (P2); ohne Angabe: bis 5 Jahre ohne, sonst mit */
+  blatt?: 'mit' | 'ohne'
   sprache: Sprache
   /** Datum der Planung (ISO), Teil des festen Zufallswerts */
   datum: string
   /** Ort/Material außerhalb des Standards erlaubt */
   ort?: ('turnhalle' | 'draussen')[]
+  /** „Worum soll es heute gehen?“ (T-M5, S2): Themen-Schlüssel wie material.js und/oder 'kompetenz:<Feld>' – bei dünnen
+   *  Daten statt eines Ziels, sonst als Schwerpunkt für Kern und Blatt */
+  thema?: string[]
+  /** heikle Themen, für diese Stunde ausdrücklich freigeschaltet (T-M1) – nur damit sind Bausteine mit `sensibel` erlaubt */
+  heikel?: ('kinderschutz' | 'sexualitaet' | 'suizid')[]
 }
 
 export interface PlanSchritt {
@@ -185,9 +228,21 @@ export interface PlanSchritt {
   erkundung?: boolean
   gesperrt?: boolean
   ueber?: BausteinTexte
+  /** Herkunft je überschriebenem Pfad (E-M7, E-M9): eigener Text oder Text aus einer Vorlage */
+  ueberHerkunft?: Record<string, 'eigen' | 'vorlage'>
+  /** Titel bzw. Aufgabentext (≤ 60 Zeichen), damit der Plan ohne Katalogtreffer lesbar bleibt (T-M10) */
+  t?: string
 }
 
-export interface BlattTeil { ref: string; h: string; ueber?: BausteinTexte; ausgeblendet?: string[]; gesperrt?: boolean }
+export interface BlattTeil {
+  ref: string
+  h: string
+  ueber?: BausteinTexte
+  ausgeblendet?: string[]
+  gesperrt?: boolean
+  ueberHerkunft?: Record<string, 'eigen' | 'vorlage'>
+  t?: string
+}
 
 export interface Sitzung {
   nr: number
@@ -198,6 +253,10 @@ export interface Sitzung {
   blatt: { titel: string; bausteine: BlattTeil[] } | null
   hinweise?: string[]
   rueckmeldung: Rueckmeldung | null
+  /** Zeitpunkt des Drucks (P7: gedruckt = gespeichert) */
+  gedruckt?: string
+  /** Änderungszähler für gleichzeitiges Speichern (T-M11, S7) */
+  rev?: number
 }
 
 export interface Plan {
@@ -214,13 +273,23 @@ export interface Plan {
   kinder: string[]
   auftrag?: Auftrag
   sitzungen: Sitzung[]
+  /** Zeitpunkt des letzten Drucks (P7) */
+  gedruckt?: string
+  rev?: number
+  /** „Neu vorschlagen“ zählt hoch; sonst liefert derselbe Auftrag denselben Plan (T-M7) */
+  variante?: number
+  /** Stand des Katalogs, mit dem der Plan entstand (T-M10/M11) */
+  katalogStand?: string
 }
 
 export interface Rueckmeldung {
-  ergebnis: 'geklappt' | 'teils' | 'nicht'
+  /** Krisentage und Weg 3 (P10): beruhigt · dabei · nur-da · abgebrochen – nie negative Signale */
+  ergebnis: 'geklappt' | 'teils' | 'nicht' | 'beruhigt' | 'dabei' | 'nur-da' | 'abgebrochen'
   ziele?: { code: string; richtung: 'gelingt' | 'mit-hilfe' | 'noch-nicht' }[]
   chips?: string[]
   am: string
+  /** Stimme des Kindes (E-M15): was es gewählt hat, sein Daumen am Schluss – zwei freiwillige Klicks der Fachkraft */
+  kind?: { wahl?: string; daumen?: 'hoch' | 'runter' }
 }
 
 /** Eine Alternative beim Antippen (5.8) */
@@ -238,7 +307,8 @@ export interface VorliebenTeam { z: Record<string, TeamZaehler>; personen: numbe
 
 export type EreignisArt =
   | 'geklappt' | 'teils' | 'nicht' | 'daumen_hoch' | 'daumen_runter' | 'ersetzt' | 'geloescht' | 'gedruckt' | 'ziel_richtung'
-export type DaumenGrund = 'zu-lang' | 'zu-kindlich' | 'zu-schwer' | 'passt-nicht' | 'mag-nicht' | 'passt-gut'
+  | 'beruhigt' | 'dabei' | 'nur-da' | 'abgebrochen' | 'kind_wahl' | 'kind_daumen'
+export type DaumenGrund = 'zu-lang' | 'zu-kindlich' | 'zu-schwer' | 'passt-nicht' | 'mag-nicht' | 'passt-gut' | 'zu-leicht'
 
 export interface Ereignis {
   id: string
@@ -262,6 +332,10 @@ export interface Ereignis {
   ersatz: string | null
   tagesform: { e: number; k: number; s: number } | null
   altersband: string | null
+  /** Krisentag (Weg 3 oder Stimmung ≤ 2): Signal geht nie negativ an Kind oder Fachkraft (P10) */
+  krisentag?: boolean
+  /** Schritt war ein Erkundungs-Slot (6.6) */
+  erkundung?: boolean
 }
 
 /** Was im Dossier unter d.passgenau steht (9.3) */
@@ -283,7 +357,37 @@ export type HubOp =
 export interface HubFrage { cdsePassgenau: 1; n: number; op: HubOp; arg?: unknown }
 export interface HubAntwort { cdsePassgenau: 1; antwort: true; n: number; ok: boolean; erg?: unknown; grund?: string }
 
-/** Vorlage „Aus der Praxis“ (8) – ein Plan ohne Kind */
+/** Stand eines Partners für den Versionsabgleich in `hallo` (T-M11). */
+export interface PassgenauVersion { build: string; proto: number; planV: number; profilV: number }
+/** `hallo`: Frage der Toolbox … */
+export interface HalloArg { toolbox: PassgenauVersion }
+/** … und Antwort des Hubs. `version`/`schema`: Kurzform (Hub-Build, Protokoll); gleiches `proto` → normal; Hub älter → Speichern aus. */
+export interface HalloErgebnis {
+  version: string
+  schema: number
+  hub?: PassgenauVersion
+  rechte: { planen: boolean; speichern: boolean; rueckmelden: boolean }
+  praxis: boolean
+}
+/** Aktuelle Versionen dieses Vertrags (Toolbox-Seite). */
+export const PASSGENAU_PROTO = 1
+export const PASSGENAU_PLAN_V = 1
+export const PASSGENAU_PROFIL_V = 1
+
+/** Inhalt einer Vorlage „Aus der Praxis“ (E-M5): Whitelist – nur Refs, Prüfsummen, Rollen, Minuten, Phasen, Blatt-Refs und
+ *  geprüfte Überschreibungen. Nie Kind, Fachkraft, Daten, Rückmeldungen, Begründungen oder Plan-Id. */
+export interface VorlagenInhalt {
+  weg: Weg
+  n: number
+  dauer: number
+  sitzungen: {
+    phase: Bogen | 'leicht'
+    schritte: { ref: string; h: string; rolle: Rolle; min: number; ueber?: BausteinTexte; ueberHerkunft?: Record<string, 'eigen' | 'vorlage'> }[]
+    blatt?: { titel: string; bausteine: { ref: string; h: string; ueber?: BausteinTexte; ausgeblendet?: string[]; ueberHerkunft?: Record<string, 'eigen' | 'vorlage'> }[] }
+  }[]
+}
+
+/** Vorlage „Aus der Praxis“ (8) – ein Plan ohne Kind. Altersband in festen Bändern (3–5 · 6–8 · 9–11 · 12–14 · 15+), aus den Bausteinen berechnet. */
 export interface PraxisVorlage {
   id: string
   version: number
@@ -298,7 +402,7 @@ export interface PraxisVorlage {
   dauer: number
   n: number
   sprachen: Sprache[]
-  inhalt: Plan
+  inhalt: VorlagenInhalt
   zaehler?: TeamZaehler
   erstellt: string
 }
