@@ -237,8 +237,8 @@
         const gew = gleise.find((g) => g.art === ehrlich) || gleise[0];
         const andere = gleise.find((g) => g !== gew) || gew;
         const w4 = ctx.scr([ctx.say(ehrlich === 'bremsend'
-          ? 'Ihr sagt: An einem schlechten Tag denkt ' + name + ' „' + gew.gedanke + '“. Das Gleis ist schnell da. Die Weiche liegt direkt nach dem Gedanken: „' + andere.gedanke + '“ wäre das andere Gleis – ' + name + ' kann umstellen, bevor der Zug fährt.'
-          : 'Ihr sagt: ' + name + ' nimmt „' + gew.gedanke + '“. Stark, wenn das klappt. An schlechten Tagen ist „' + andere.gedanke + '“ schneller da. Der Trick: den Gedanken bemerken, bevor der Zug fährt.', { eyebrow: 'Die Weiche' })], { eyebrow: ey, center: true });
+          ? 'Ihr sagt: An einem schlechten Tag denkt ' + name + ' ' + gew.gedanke + ' Das Gleis ist schnell da. Das andere Gleis wäre: ' + andere.gedanke + ' ' + name + ' kann umstellen, bevor der Zug fährt.'
+          : 'Ihr sagt: ' + name + ' nimmt ' + gew.gedanke + ' Stark, wenn das klappt. An schlechten Tagen ist ' + andere.gedanke + ' schneller da. Der Trick: den Gedanken bemerken, bevor der Zug fährt.', { eyebrow: 'Die Weiche' })], { eyebrow: ey, center: true, badge: ctx.stufe(2, LEVELS) });
         await ctx.next(w4, 'Weiter');
       }
       return {
