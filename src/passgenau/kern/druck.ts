@@ -6,7 +6,7 @@ import type { KatalogEintrag, MikroBaustein, Plan, PlanSchritt, Profil, Rolle, S
 import { bausteinInhalt, eldibKurz, intern, merkmaleVon, quelleText, staemme, textVon, zielSatz, type Katalog } from './katalog'
 import { textMerkmale } from './einzel'
 import { kinderblatt } from './blatt'
-import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME, WIEDERHOLUNG } from './vokabular'
+import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME } from './vokabular'
 import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter } from './hilfen'
 
 export interface DruckSchritt {
@@ -91,7 +91,6 @@ function hinweisFr(h: string): string {
   if ((m = /^Angepasst an heute: (.+)$/.exec(h))) return `Adapté à aujourd’hui : ${m[1].replace(/ Min\./g, ' min')}`
   if (h === 'Blatt gelockert: Teile aus dem Bereich des Ziels (nächste Stufen), nicht genau zum Ziel.') return 'Fiche élargie : parties du domaine de l’objectif (étapes suivantes), pas exactement l’objectif.'
   if (h === NUR_DEUTSCH) return 'Existe seulement en allemand : pour cet objectif, il n’y a pas encore d’activité en français qui convienne. À dire avec ses propres mots.'
-  if (h === WIEDERHOLUNG) return 'Reprise d’une activité de la série – cette fois avec une nouvelle situation du quotidien, choisie par le ou la jeune.'
   if (h === 'Gruppenaktivität – so mit einem Kind machen') return 'Activité de groupe – à faire ainsi avec un seul enfant'
   if ((m = /^schon vor (\d+) Tagen gemacht – wieder vorgeschlagen, weil sonst wenig passt$/.exec(h))) return `déjà fait il y a ${m[1]} jours – reproposé parce que peu d’autres choses conviennent`
   return h
@@ -195,7 +194,7 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
   const d: DruckSchritt = {
     min: x.min,
     rolle,
-    titel: x.ref === 'pg:blatt' ? `${sprache === 'fr' ? 'Fiche' : 'Blatt'}: ${blattTitel ?? ''}` : (x.ueber?.titel ?? t.titel),
+    titel: x.ref === 'pg:blatt' ? `${sprache === 'fr' ? 'Fiche' : 'Blatt'}: ${blattTitel ?? ''}` : ((sprache === 'fr' ? x.ueber?.['fr.titel'] : undefined) ?? x.ueber?.titel ?? t.titel),
     text: ueberText ?? t.text,
     sagen: t.sagen ?? [],
     wennEsKippt: t.wennEsKippt,
@@ -255,6 +254,8 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     if (e) for (const m of e.material) mat.add(materialName(k, m, sp))
   }
   if (s.blatt) mat.add(sp === 'fr' ? 'la fiche (imprimée)' : 'das Blatt (gedruckt)')
+  // wer ein Blatt ausfüllt, braucht einen Stift (Blind-Bewertung 6: „Stifte fehlen in der Materialliste“)
+  if (s.blatt) mat.add(materialName(k, 'stifte', sp))
   const matSeite = materialSeite(k, p, plan, nr, sp)
   if (matSeite) mat.add(sp === 'fr' ? 'la page de matériel (imprimée, à découper)' : 'die Materialseite (gedruckt, ausschneiden)')
   const tippSchon = new Set<string>()

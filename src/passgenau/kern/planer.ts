@@ -9,7 +9,7 @@ import { bewerte, kontext, krisenlage, pruefe, rang, warum, type Bewertet, type 
 import { baueBlatt, kernBlatt } from './blatt'
 import { BLATT_SYSTEM } from './system'
 import { vertrauenKind, vorliebe, type Vorlieben } from './vorlieben'
-import { KOMPETENZ_NAME, NUR_DEUTSCH, themaByKey, WIEDERHOLUNG, type Kompetenz } from './vokabular'
+import { KOMPETENZ_NAME, NUR_DEUTSCH, themaByKey, type Kompetenz } from './vokabular'
 
 export interface Verlauf {
   plaene: Plan[]
@@ -142,7 +142,14 @@ function vorlage(c: Kontext): Slot[] {
   // Bewegungspausen (P11): nach jedem Block über 8 Minuten 2 Minuten Pause
   if (c.hilft.has('bewegungspausen'))
     for (let i = v.length - 1; i >= 0; i--)
-      if (v[i].min > 8 && (v[i].rolle === 'kern' || v[i].rolle === 'uebung' || v[i].rolle === 'spiel')) {
+      // Jugendliche: die Pause nach dem Kern geht vom Blatt ab, nicht vom Kern (die Einzelübungen brauchen ihre Minuten)
+      if (c.alter >= 12 && v[i].rolle === 'kern' && v[i].min > 8) {
+        const u = v.find((x) => x.rolle === 'uebung' && x.min >= 6)
+        if (u) {
+          u.min -= 2
+          v.splice(i + 1, 0, { rolle: 'pause', min: 2 })
+        }
+      } else if (v[i].min > 8 && (v[i].rolle === 'kern' || v[i].rolle === 'uebung' || v[i].rolle === 'spiel')) {
         v[i].min -= 2
         v.splice(i + 1, 0, { rolle: 'pause', min: 2 })
       }
@@ -190,7 +197,7 @@ export interface Wahl {
 }
 
 /** Passgenau-eigene Schritte, die nur gezielt eingesetzt werden (Blatt-Slot, Pause, Rituale, „einfach da sein“). */
-const NIE_KANDIDAT = new Set(['pg:blatt', 'pg:pause', 'pg:da-sein', 'pg:ankommen', 'pg:abschluss', 'pg:ankommen-still', 'pg:abschluss-still', 'pg:einstieg', 'pg:rueckblick'])
+const NIE_KANDIDAT = new Set(['pg:blatt', 'pg:pause', 'pg:da-sein', 'pg:ankommen', 'pg:abschluss', 'pg:ankommen-still', 'pg:abschluss-still', 'pg:einstieg', 'pg:rueckblick', 'pg:folge-transfer', 'pg:uebertragen'])
 
 const MINUTEN_RE = /(\d{1,3})\s*(?:Minuten|Min\.|minutes)/g
 const TEXT_MIN = new WeakMap<KatalogEintrag, number>()
@@ -373,10 +380,10 @@ function gleichesThema(e: KatalogEintrag, kern: KatalogEintrag): boolean {
 }
 
 /** Eigener Einstieg, der den Kern der Stunde ankündigt (wenn keine Einheit einen passenden hat). */
-function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1): PlanSchritt {
+function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1, titel?: { de: string; fr: string }): PlanSchritt {
   const e = c.k.eintraege.get('pg:einstieg')!
-  const de = textVon(kern, 'de').titel
-  const fr = kern.typ === 'schritt' && kern.fr ? kern.fr.titel : de
+  const de = titel?.de ?? textVon(kern, 'de').titel
+  const fr = titel?.fr ?? (kern.typ === 'schritt' && kern.fr ? kern.fr.titel : de)
   // Jugendliche: ohne „Material zeigen“ und „das Kind“; ab Sitzung 2 kurz an die letzte anknüpfen (roter Faden)
   if (c.alter >= 12)
     return {
@@ -397,10 +404,45 @@ function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1):
   }
 }
 
+/** Phase „Übertragen“ bei Jugendlichen: eine Übung der Folge in eine Situation der nächsten Tage übertragen. */
+function uebertragenSchritt(c: Kontext, min: number, ref: string, nr: number): PlanSchritt {
+  const e = c.k.eintraege.get('pg:uebertragen')!
+  const q = c.k.eintraege.get(ref)
+  const de = q ? textVon(q, 'de').titel : ''
+  const fr = q && q.typ === 'schritt' && q.fr ? q.fr.titel : de
+  return {
+    ref: e.id, h: e.h, rolle: 'kern', min, t: `Übertragen: ${de}`.slice(0, 60),
+    ueber: {
+      titel: `Übertragen: ${de}`,
+      'fr.titel': `Transférer : ${fr}`,
+      text: `Die Übung „${de}“ aus Sitzung ${nr} kommt heute in den Alltag. Der oder die Jugendliche wählt eine Situation der nächsten Tage aus Schule, Freundeskreis oder Freizeit, in der sie passt (echt oder erfunden). Zuerst wird sie genau beschrieben: wo, wann, wer ist dabei, was ist der schwierige Moment. Dann wird sie zweimal durchgespielt: Die Fachkraft spielt die andere Person, erst leicht, dann etwas schwieriger; ein Stopp ist jederzeit erlaubt. Zum Schluss wird ein kleiner Versuch vereinbart – ohne Bewertung, auch „hat nicht geklappt“ ist eine Information.`,
+      'fr.text': `L’activité « ${fr} » de la séance ${nr} passe aujourd’hui dans le quotidien. Le ou la jeune choisit une situation des prochains jours, à l’école, entre amis ou pendant les loisirs, où elle convient (vraie ou inventée). D’abord, on la décrit précisément : où, quand, qui est là, quel est le moment difficile. Puis on la joue deux fois : l’adulte joue l’autre personne, d’abord facilement, puis un peu plus difficilement ; on peut dire stop à tout moment. Pour finir, on convient d’un petit essai – sans évaluation, « ça n’a pas marché » est aussi une information.`,
+    },
+    warum: ['Übertragen: die geübte Übung in eine kommende Situation bringen'],
+  }
+}
+
+/** Letzte Sitzung einer Jugend-Folge: die Übungen der Folge durchgehen, eine wählen und in eine kommende Situation aus
+ *  Schule, Freundeskreis oder Freizeit übertragen (nie aus der Familie – Vorsicht Familie, Kinderschutz). */
+function folgeTransferSchritt(c: Kontext, min: number, kerne: string[]): PlanSchritt {
+  const e = c.k.eintraege.get('pg:folge-transfer')!
+  const eintraege = [...new Set(kerne)].filter((r) => !r.startsWith('pg:')).map((r) => c.k.eintraege.get(r)).filter((x): x is KatalogEintrag => !!x)
+  const de = eintraege.map((x) => `„${textVon(x, 'de').titel}“`).join(', ')
+  const fr = eintraege.map((x) => `« ${x.typ === 'schritt' && x.fr ? x.fr.titel : textVon(x, 'de').titel} »`).join(', ')
+  return {
+    ref: e.id, h: e.h, rolle: 'kern', min, t: 'Das Wichtigste mitnehmen',
+    ueber: {
+      text: `Zuerst gemeinsam die Übungen der Folge durchgehen: ${de}. Der oder die Jugendliche wählt die, die am meisten gebracht hat, und eine Situation der nächsten Wochen aus Schule, Freundeskreis oder Freizeit, in der sie helfen kann (echt oder erfunden). Die Situation wird zweimal kurz durchgespielt: Die Fachkraft spielt die andere Person, erst leicht, dann etwas schwieriger; ein Stopp ist jederzeit erlaubt. Zum Schluss nennt die Fachkraft eine Sache, die sie seit der ersten Sitzung hat wachsen sehen.`,
+      'fr.text': `D’abord passer en revue ensemble les activités de la série : ${fr}. Le ou la jeune choisit celle qui lui a le plus apporté et une situation des prochaines semaines, à l’école, entre amis ou pendant les loisirs, où elle peut aider (vraie ou inventée). La situation est jouée deux fois brièvement : l’adulte joue l’autre personne, d’abord facilement, puis un peu plus difficilement ; on peut dire stop à tout moment. Pour finir, l’adulte nomme une chose qu’il a vu grandir depuis la première séance.`,
+    },
+    warum: ['Letzte Sitzung: das Wichtigste der Folge in eine kommende Situation übertragen'],
+  }
+}
+
 /** Rückblick der letzten Sitzung: nennt die Kerne der Folge. */
 function rueckblickSchritt(c: Kontext, min: number, kerne: string[]): PlanSchritt {
   const e = c.k.eintraege.get('pg:rueckblick')!
-  const titel = (sp: 'de' | 'fr') => kerne.map((r) => c.k.eintraege.get(r)).filter((x): x is KatalogEintrag => !!x).map((x) => (sp === 'fr' && x.typ === 'schritt' && x.fr ? x.fr.titel : textVon(x, 'de').titel))
+  const titel = (sp: 'de' | 'fr') => [...new Set(kerne)].filter((r) => !r.startsWith('pg:')).map((r) => c.k.eintraege.get(r)).filter((x): x is KatalogEintrag => !!x).map((x) => (sp === 'fr' && x.typ === 'schritt' && x.fr ? x.fr.titel : textVon(x, 'de').titel))
   const liste = (l: string[]) => l.map((t) => `„${t}“`).join(', ')
   // das Blatt der letzten Sitzung fragt schon „Das nehme ich mit“ – nicht doppelt (Blind-Bewertung 5)
   const mitBlatt = c.weg !== 'leicht' && blattModus(c) !== 'ohne'
@@ -428,10 +470,19 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   if (o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2 && !slots.some((x) => x.rolle === 'reflexion')) {
     const ei = slots.findIndex((x) => x.rolle === 'einstieg')
     const ke = slots.find((x) => x.rolle === 'kern')
-    const zeit = ke && ke.min >= 8 ? 4 : 0
-    if (ke) ke.min -= zeit
-    if (ei >= 0) slots[ei] = { ...slots[ei], rolle: 'reflexion', min: slots[ei].min + zeit }
-    else if (zeit) slots.splice(1, 0, { rolle: 'reflexion', min: zeit })
+    // Jugendliche: kein eigener Rückblick-Schritt – der Kern ist der Rückblick mit Übertragung (folgeTransferSchritt), er
+    // bekommt die Minuten des Einstiegs (Blind-Bewertung 6: „Rückblick vor dem wiederholten Kern“, „wortgleiche Wiederholung“)
+    if (c.alter >= 12 && ke) {
+      if (ei >= 0) {
+        ke.min += slots[ei].min
+        slots.splice(ei, 1)
+      }
+    } else {
+      const zeit = ke && ke.min >= 8 ? 4 : 0
+      if (ke) ke.min -= zeit
+      if (ei >= 0) slots[ei] = { ...slots[ei], rolle: 'reflexion', min: slots[ei].min + zeit }
+      else if (zeit) slots.splice(1, 0, { rolle: 'reflexion', min: zeit })
+    }
   }
   const formate = new Set<string>()
   const benutzt = new Set<string>(o.gesperrt)
@@ -439,6 +490,8 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   const ergebnis: (PlanSchritt | null)[] = slots.map(() => null)
   const gewaehlt: { b: Bewertet; slot: Slot; i: number }[] = []
   let kern: KatalogEintrag | undefined
+  // Titel des Kerns, wenn der Plan ihn selbst schreibt (Übertragen), für den Einstieg
+  let kernTitel: { de: string; fr: string } | undefined
   // Reihenfolge des Füllens: erst der Kern (trägt das Ziel), dann der Rest – Einstieg und Reflexion passen sich an
   const reihe = slots.map((_, i) => i).sort((a, b) => (slots[a].rolle === 'kern' ? 0 : 1) - (slots[b].rolle === 'kern' ? 0 : 1) || a - b)
   for (const i of reihe) {
@@ -472,26 +525,32 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       }
       continue
     }
-    // Jugendliche, letzte Sitzung einer Folge: kein neues Werkzeug, sondern die wichtigste Übung der Folge noch einmal, in
-    // einer neuen Situation (Blind-Bewertung 5: „die Bilanz-Sitzung führt ein neues Werkzeug ein, obwohl keine folgt“)
-    if (slot.rolle === 'kern' && c.alter >= 12 && c.weg !== 'leicht' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2) {
-      const ziel = new Set(c.ziele.filter((z) => istEldib(z.code)).map((z) => z.code))
-      const beste = [...new Set(o.fruehereKerne)]
-        .map((r) => c.k.eintraege.get(r))
-        .filter((e): e is KatalogEintrag => !!e && pruefe(e, c, { rolle: 'kern' }) === null)
-        .map((e) => bewerte(e, c, { phase: 'ueben' }))
-        .map((b) => ({ b, s: b.s + (b.e.eldib.some((x) => x.gewicht === 1 && ziel.has(x.code)) ? 1 : 0) }))
-        .sort((x, y) => y.s - x.s)[0]?.b
-      if (beste) {
-        const sch = planSchritt(beste, 'kern', slot.min, c, { phase: o.phase, nr: o.nr })
-        sch.hinweis = WIEDERHOLUNG
-        sch.warum = ['Letzte Sitzung: die wichtigste Übung der Folge noch einmal, in einer neuen Situation']
+    // Jugendliche, Phase „Übertragen“: kein neues Thema, sondern die zuletzt geübte Übung in eine kommende Situation
+    // übertragen (Blind-Bewertungen 5 und 6: „die Übertragen-Sitzungen bringen neue Themen statt Übertragung“)
+    if (slot.rolle === 'kern' && c.alter >= 12 && c.weg !== 'leicht' && o.phase === 'uebertragen') {
+      // zuerst Übungen mit einem Ziel des Kindes, die jüngste zuerst (Blind-Bewertung 6: „Gesprächseinstieg liegt außerhalb
+      // der Ziele“)
+      const ziel = new Set(c.ziele.map((z) => z.code))
+      const mitZiel = (r: string) => !!c.k.eintraege.get(r)?.eldib.some((x) => x.gewicht === 1 && ziel.has(x.code))
+      const frueher = [...new Set((o.fruehereKerne ?? []).filter((r) => !r.startsWith('pg:')))].reverse()
+      const reihe = [...frueher.filter(mitZiel), ...frueher.filter((r) => !mitZiel(r))]
+      const schon = (o.fruehereKerne ?? []).filter((r) => r === 'pg:uebertragen').length
+      const quelle = reihe[schon % Math.max(1, reihe.length)]
+      if (quelle) {
+        const sch = uebertragenSchritt(c, slot.min, quelle, (o.fruehereKerne ?? []).indexOf(quelle) + 1)
         ergebnis[i] = sch
-        gewaehlt.push({ b: beste, slot, i })
-        beste.e.format.forEach((f) => formate.add(f))
-        kern = beste.e
+        kern = c.k.eintraege.get(sch.ref)
+        kernTitel = { de: sch.ueber!.titel, fr: sch.ueber!['fr.titel'] }
         continue
       }
+    }
+    // Jugendliche, letzte Sitzung einer Folge: kein neues Werkzeug und keine wortgleiche Wiederholung, sondern die Übungen
+    // der Folge durchgehen, die hilfreichste wählen und in eine kommende Situation übertragen (Blind-Bewertungen 5 und 6)
+    if (slot.rolle === 'kern' && c.alter >= 12 && c.weg !== 'leicht' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2) {
+      const sch = folgeTransferSchritt(c, slot.min, o.fruehereKerne!)
+      ergebnis[i] = sch
+      kern = c.k.eintraege.get(sch.ref)
+      continue
     }
     // roter Faden: Einstieg und Reflexion aus derselben Einheit wie der Kern bevorzugt
     const kernQuelle = kern ? quelleEinheit(kern.id) : null
@@ -527,14 +586,20 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       for (const w of auswahl) if (kernQuelle && quelleEinheit(w.b.e.id) === kernQuelle) w.b = { ...w.b, s: w.b.s + 0.25 }
       auswahl.sort((x, y) => rang(x.b, y.b, `${salz}|${i}`))
       // letzte Sitzung einer Folge: ein echter Rückblick auf die Kerne der Folge
-      if (slot.rolle === 'reflexion' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2) {
+      if (slot.rolle === 'reflexion' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2 && c.alter < 12) {
         ergebnis[i] = rueckblickSchritt(c, slot.min, o.fruehereKerne!)
         continue
       }
       if (!auswahl[0] && slot.rolle === 'einstieg' && kern) {
-        ergebnis[i] = einstiegSchritt(c, slot.min, kern, o.nr)
+        ergebnis[i] = einstiegSchritt(c, slot.min, kern, o.nr, kernTitel)
         continue
       }
+    }
+    // Jugendliche: im Bewegungs-Slot echte Bewegung, keine Sitzübung (Blind-Bewertung 6: „Atemquadrat, 5-4-3-2-1 und
+    // Punkt im Raum als Bewegung“)
+    if (slot.rolle === 'bewegung' && c.alter >= 12) {
+      const echt = auswahl.filter((w) => w.b.e.format.includes('bewegung'))
+      if (echt.length) auswahl = echt
     }
     // Spiel, Bewegung, Ruhe neben dem Kern: kein fremdes Thema (eine Wut-Übung als Pause in einer Motivations-Stunde)
     if (kern && c.weg !== 'leicht' && (slot.rolle === 'spiel' || slot.rolle === 'bewegung' || slot.rolle === 'regulation')) {

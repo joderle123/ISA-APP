@@ -347,10 +347,17 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
  *  tut: Fragen zur Übung der Stunde, je nach Stelle im Bogen (erkennen, verstehen, üben, übertragen, zurückschauen). */
 export function kernBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   if (!o.kern || o.phase === 'leicht') return null
-  const t = textVon(o.kern, c.sprache).titel
+  const eigen = o.kern.typ === 'schritt' ? o.kern.uebungsblatt?.titel : undefined
+  const t = eigen ? eigen[c.sprache] : textVon(o.kern, c.sprache).titel
   const notfall = c.vorsicht.has('heikel') || merkmaleVon(c.k, o.kern).has('belastend')
+  // Stundenleiste wie beim zusammengesetzten Blatt, wenn sie dem Kind hilft (Blind-Bewertung 6)
+  const leiste = c.hilft.has('stundenleiste') || c.hilft.has('bildplan') || c.p.zugang.struktur === 'hoch'
   return {
-    teile: [{ ref: BLATT_SYSTEM.kernblatt, h: BLATT_SYSTEM.kernblatt, t: `Fragen zu „${textVon(o.kern, 'de').titel}“` }, ...(notfall ? [{ ref: BLATT_SYSTEM.notfall, h: BLATT_SYSTEM.notfall }] : [])],
+    teile: [
+      ...(leiste ? [{ ref: BLATT_SYSTEM.stundenleiste, h: BLATT_SYSTEM.stundenleiste }] : []),
+      { ref: BLATT_SYSTEM.kernblatt, h: BLATT_SYSTEM.kernblatt, t: `Fragen zu „${textVon(o.kern, 'de').titel}“` },
+      ...(notfall ? [{ ref: BLATT_SYSTEM.notfall, h: BLATT_SYSTEM.notfall }] : []),
+    ],
     titel: t,
     hinweise: [],
     bewertet: new Map(),
@@ -364,14 +371,49 @@ const KERNBLATT_BEREICH: Record<string, Bereich> = {
 }
 
 /** Inhalt des Blatts zur Übung (kernBlatt): kurz, ohne Pflicht, Persönliches aufzuschreiben. */
-function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache: Sprache): Baustein[] {
+function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache: Sprache, o: { wenigSchreiben: boolean; nr: number }): Baustein[] {
   const fr = sprache === 'fr'
   const t = textVon(kern, sprache)
   const frage = (t.sagen ?? []).find((x) => /\?\s*[»“"]?$/.test(x.trim()) && x.length <= 140)
   const liste: Baustein[] = [
     { art: 'text', klein: true, text: fr ? `Pour l’exercice « ${t.titel} ». Rien n’est obligatoire : tu peux aussi prendre un exemple inventé.` : `Zur Übung „${t.titel}“. Nichts davon ist Pflicht: Ein erfundenes Beispiel geht auch.` },
   ]
+  // eigenes Blatt der Übung (Blind-Bewertung 6: „das Blatt setzt den Kern nicht fort“); bei wenig Schreiben oder schwerem
+  // Tag nur der Text-Kasten und die ersten zwei Aufgaben (die brauchen wenig Schreiben)
+  const eigen = kern.typ === 'schritt' ? kern.uebungsblatt : undefined
+  if (eigen) {
+    const teile = (fr ? eigen.fr : eigen.de) ?? []
+    let aufgaben = 0
+    for (const b of teile) {
+      if (b.art !== 'text') aufgaben++
+      if (o.wenigSchreiben && aufgaben > 2) break
+      // Zuordnen und Dialog-Lücken tragen keinen eigenen Auftrag – ein kurzer Satz davor
+      if (b.art === 'zuordnen' && !b.titel) liste.push({ art: 'aufgabe', text: fr ? 'Relie ce qui va ensemble.' : 'Verbinde, was zusammengehört.' })
+      if (b.art === 'dialog' && b.zeilen.some((z) => !z.text)) liste.push({ art: 'aufgabe', text: fr ? 'Écris dans les lignes vides ce que tu dirais.' : 'Schreib in die leeren Zeilen, was du sagen würdest.' })
+      liste.push(o.wenigSchreiben && b.art === 'frage' ? { ...b, linien: Math.min(b.linien ?? 2, 2) } : b)
+    }
+    return liste
+  }
   const F = (de: string, f: string, linien = 2): Baustein => ({ art: 'frage', text: fr ? f : de, linien })
+  const sicher: Baustein = { art: 'skala', frage: fr ? 'Je me sens …' : 'Damit fühle ich mich …', von: fr ? 'pas encore sûr·e' : 'noch unsicher', bis: fr ? 'tout à fait sûr·e' : 'ganz sicher', stufen: 5 }
+  // wenig Lesen und Schreiben oder ruhiges Tempo (Blind-Bewertung 6: „drei bis vier offene Schreibfragen bei Schreiben 1“):
+  // zwei kurze Teile, je eine Zeile, eine Skala zum Ankreuzen
+  if (o.wenigSchreiben) {
+    switch (phase) {
+      case 'wahrnehmen':
+        liste.push({ art: 'skala', frage: fr ? 'Je le remarque déjà …' : 'Ich merke es schon …', von: fr ? 'rarement' : 'selten', bis: fr ? 'tout de suite' : 'sofort', stufen: 5 }, F('Woran merke ich es als Erstes?', 'À quoi je le remarque en premier ?', 1))
+        break
+      case 'uebertragen':
+        liste.push(F('Wo probiere ich es aus?', 'Où est-ce que je l’essaie ?', 1), F('Wann?', 'Quand ?', 1))
+        break
+      case 'reflektieren':
+        liste.push(F('Am meisten geholfen hat mir:', 'Ce qui m’a le plus aidé :', 1), { art: 'skala', frage: fr ? 'Maintenant, ça marche …' : 'Jetzt klappt es …', von: fr ? 'pas encore' : 'noch nicht', bis: fr ? 'bien' : 'gut', stufen: 5 })
+        break
+      default:
+        liste.push(F('Mein Satz für das nächste Mal:', 'Ma phrase pour la prochaine fois :', 1), sicher)
+    }
+    return liste
+  }
   switch (phase) {
     case 'wahrnehmen':
       liste.push(
@@ -396,15 +438,25 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
     case 'reflektieren':
       liste.push(
         F('Was hat sich seit der ersten Sitzung verändert?', 'Qu’est-ce qui a changé depuis la première séance ?', 3),
-        { art: 'satzanfaenge', items: fr ? ['Ce qui m’a le plus aidé :', 'Ce que je garde :', 'Ce à quoi je veux continuer à faire attention :'] : ['Am meisten geholfen hat mir:', 'Das nehme ich mit:', 'Darauf will ich weiter achten:'], linien: 2 },
+        { art: 'satzanfaenge', items: fr ? ['Ce qui m’a le plus aidé :', 'Ce à quoi je veux continuer à faire attention :'] : ['Am meisten geholfen hat mir:', 'Darauf will ich weiter achten:'], linien: 2 },
       )
       break
     default:
+      // zwei Üben-Sitzungen hintereinander: nicht zweimal dasselbe Blatt (Blind-Bewertung 6)
+      if (o.nr % 2 === 0) {
+        liste.push(
+          F('Was war in der Übung leicht, was schwer?', 'Qu’est-ce qui était facile dans l’exercice, qu’est-ce qui était difficile ?'),
+          { art: 'wennDann', zeilen: 1, wenn: fr ? 'Si ça m’arrive …' : 'Wenn mir das passiert …', dann: fr ? 'alors je dis ou je fais …' : 'dann sage oder tue ich …' },
+          F('Wer oder was kann mir dabei helfen?', 'Qui ou quoi peut m’aider ?', 1),
+          sicher,
+        )
+        break
+      }
       liste.push(
         ...(frage ? [F(frage, frage)] : []),
         { art: 'satzanfaenge', items: fr ? ['Ma phrase (ou mon pas) pour la prochaine fois :', 'Ce qui rendrait ça plus facile :'] : ['Mein Satz (oder mein Schritt) für das nächste Mal:', 'Leichter würde es, wenn …'], linien: 2 },
         F('Wo könnte mir das begegnen (Schule, Freunde, online …)?', 'Où est-ce que ça pourrait m’arriver (école, amis, en ligne …) ?'),
-        { art: 'skala', frage: fr ? 'Je me sens …' : 'Damit fühle ich mich …', von: fr ? 'pas encore sûr·e' : 'noch unsicher', bis: fr ? 'tout à fait sûr·e' : 'ganz sicher', stufen: 5 },
+        sicher,
       )
   }
   return liste
@@ -525,13 +577,18 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
     if (t.ref === BLATT_SYSTEM.kernblatt) {
       const kr = (s?.schritte ?? []).find((x) => x.rolle === 'kern')?.ref
       const kern = kr ? k.eintraege.get(kr) : undefined
-      if (kern) bausteine.push(...kernBlattInhalt(kern, s!.phase === 'reflektieren' && plan.n < 2 ? 'ueben' : s!.phase, sprache))
+      const h = plan.auftrag?.heute
+      // schwerer Tag (Stimmung oder Konzentration ≤ 2): kurzes Blatt wie bei wenig Schreiben (Blind-Bewertung 6)
+      const schwer = !!h && (h.stimmung <= 2 || h.konzentration <= 2)
+      if (kern) bausteine.push(...kernBlattInhalt(kern, s!.phase === 'reflektieren' && plan.n < 2 ? 'ueben' : s!.phase, sprache, { wenigSchreiben: schwer || p.zugang.schreiben <= 1 || p.zugang.lesen <= 1 || p.zugang.tempo === 'ruhig', nr }))
       markiere(start, bausteine.length - start, teilId)
       continue
     }
     if (t.ref === BLATT_SYSTEM.stundenleiste) {
       const schritte = (s?.schritte ?? []).filter((x) => x.min > 0).slice(0, 7)
-      if (schritte.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: schritte.map((x) => ({ text: STUNDE_WORT[x.rolle][sprache], bild: STUNDE_WORT[x.rolle].bild, min: x.min })) })
+      // Jugendliche: „Schluss“ statt „Tschüss“ (Blind-Bewertung 5: wirkt bei 17 Jahren kindlich)
+      const wort = (r: Rolle) => (alter >= 12 && r === 'abschluss' ? (sprache === 'fr' ? 'Fin' : 'Schluss') : STUNDE_WORT[r][sprache])
+      if (schritte.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: schritte.map((x) => ({ text: wort(x.rolle), bild: STUNDE_WORT[x.rolle].bild, min: x.min })) })
       markiere(start, bausteine.length - start, teilId)
       continue
     }

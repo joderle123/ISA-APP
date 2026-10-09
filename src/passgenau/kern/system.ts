@@ -145,6 +145,38 @@ SYSTEM.push(
       sagen: ['Qu’est-ce qui t’a le plus aidé ?'],
     },
   },
+  {
+    ...basis,
+    id: 'pg:uebertragen', h: 'pguebtr1',
+    quelle: { art: 'praxis', titel: 'Passgenau' },
+    titel: 'In den Alltag übertragen',
+    text: 'Eine Übung dieser Folge wird in eine Situation der nächsten Tage übertragen: Situation genau beschreiben, zweimal durchspielen (die Fachkraft spielt die andere Person), einen kleinen Versuch vereinbaren.',
+    sagen: ['Wo könnte dir das in den nächsten Tagen passieren?'],
+    wennEsKippt: 'Fällt keine Situation ein, schlägt die Fachkraft zwei erfundene vor. Ist Durchspielen zu viel, wird nur besprochen, was der erste Satz wäre.',
+    rolle: ['kern'], dauer: { min: 8, typ: 13, max: 22 }, energie: 1, format: ['gespraech', 'rollenspiel'], bogen: 'uebertragen', alter: { von: 12, bis: 18 },
+    fr: {
+      titel: 'Transférer au quotidien',
+      text: 'Une activité de la série est transférée dans une situation des prochains jours : décrire précisément la situation, la jouer deux fois (l’adulte joue l’autre personne), convenir d’un petit essai.',
+      sagen: ['Où est-ce que ça pourrait t’arriver dans les prochains jours ?'],
+      wennEsKippt: 'Si aucune situation ne vient, l’adulte en propose deux inventées. Si jouer la scène est trop, on parle seulement de la première phrase à dire.',
+    },
+  },
+  {
+    ...basis,
+    id: 'pg:folge-transfer', h: 'pgfolgtr',
+    quelle: { art: 'praxis', titel: 'Passgenau' },
+    titel: 'Das Wichtigste mitnehmen',
+    text: 'Gemeinsam die Übungen der Folge durchgehen. Der oder die Jugendliche wählt die, die am meisten gebracht hat, und eine Situation der nächsten Wochen, in der sie helfen kann. Die Situation wird kurz durchgespielt; die Fachkraft spielt die andere Person.',
+    sagen: ['Welche Übung aus unseren Treffen hat dir am meisten gebracht?'],
+    wennEsKippt: 'Fällt keine Situation ein, schlägt die Fachkraft zwei erfundene vor. Ist Durchspielen zu viel, wird nur besprochen, was der erste Satz wäre.',
+    rolle: ['kern'], dauer: { min: 8, typ: 13, max: 22 }, energie: 1, format: ['gespraech', 'rollenspiel'], bogen: 'reflektieren', alter: { von: 12, bis: 18 },
+    fr: {
+      titel: 'Emporter l’essentiel',
+      text: 'Passer en revue ensemble les activités de la série. Le ou la jeune choisit celle qui lui a le plus apporté et une situation des prochaines semaines où elle peut aider. La situation est jouée brièvement ; l’adulte joue l’autre personne.',
+      sagen: ['Quelle activité de nos séances t’a le plus apporté ?'],
+      wennEsKippt: 'Si aucune situation ne vient, l’adulte en propose deux inventées. Si jouer la scène est trop, on parle seulement de la première phrase à dire.',
+    },
+  },
 )
 
 /** Leichte Aktivitäten ohne Ziel (Weg 3) – Rückfall, bis „Freude & Beziehung“ im Katalog ist. Kein Wettbewerb, kein Körperkontakt. */

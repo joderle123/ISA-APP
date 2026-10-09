@@ -520,7 +520,7 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
       g *= 2.2
       // eine Übung zu einem besonderen Thema (Prüfungsangst, Schlaf, Social Media …) nur, wenn das Kind dieses Thema hat
       // (Blind-Bewertung 5: „Prüfungssorgen, die nicht im Profil stehen“)
-      if (e.thema[0] && BESONDERE_THEMEN.has(e.thema[0]) && !e.thema.some((t) => c.themen.has(t))) g *= 0.45
+      if (e.thema[0] && BESONDERE_THEMEN.has(e.thema[0]) && !c.themen.has(e.thema[0])) g *= 0.25
     }
     else if (/^(k|f|m|c):/.test(e.id)) g *= e.einzelvariante ? 0.5 : 0.35
   }

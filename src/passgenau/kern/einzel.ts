@@ -64,7 +64,7 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   sorgen: /\b(Sorge|Sorgen\w*|Kummer\w*|traurige[nr]? Tag\w*|Trost-?Koffer|Trostplan|soucis?|chagrin)\b/i,
   // Gefühle abfragen (in Krisenlage nicht, A12)
   // Blind-Bewertung 5: Abruftest, Kurztest, Quiz als Leistungsprobe (nicht in Krisenlage)
-  leistung: /\b(gegenseitig abfragen|abfragen lassen|Abfrage\w*|Kurztest|Probetest|Probeklausur|Lücken markieren|se tester|s['’]interroger|interrogation|test blanc)\b/i,
+  leistung: /\b(Timer läuft|Le minuteur tourne|le minuteur tourne|gegenseitig abfragen|abfragen lassen|Abfrage\w*|Kurztest|Probetest|Probeklausur|Lücken markieren|se tester|s['’]interroger|interrogation|test blanc)\b/i,
   // kindliche Elemente (bei Jugendlichen ausgeschlossen)
   kindlich: /\b(Sticker|Stempel|Smiley\w*|Kuscheltier\w*|Handpuppe\w*|Wachsmal\w*|Löffel-Parcours|Flamingo\w*|Zauberstab|Zauberwort\w*|Ausmalbild\w*|Gummibärchen|autocollants?|peluches?|marionnettes?|craies grasses|flamant\w*|baguette magique|gestrichelten Linien nach|Spure\w* \w+ nach|nachspuren|repasse\w* les pointillés)\b/i,
   gefuehlfrage: /\b(fühle ich mich|Wie bereit fühlst du dich|wo bist du (jetzt|gerade)|Wie fühlst du dich|Wie geht es dir|Was macht dich (traurig|wütend|Angst)|ich bin traurig, weil|Ich fühle mich|Daumen (hoch|runter|hoch oder runter)|wie (traurig|wütend) bist du|Gefühl(e)? (benennen|zeigen|abfragen|erzählen)|Welches Tier bist du|Wie ist das Wetter bei dir|wie es (dir|dem Kind) (heute )?geht|wie (es|er|sie) sich (heute )?fühlt|innen heute anfühlt|eigenen Gefühl\w*|persönlichen Beispiel\w*)\b|\b(Comment te sens-tu|Comment ça va|pouce en (haut|bas)|Je me sens|Quel animal es-tu)\b/i,
