@@ -29,6 +29,9 @@ import { THEMEN, themaTreffer, KOMPETENZ_BLATT, KATHARSIS_RE, kompetenzAusCode, 
 import { packeBaustein, packeSchritt, LAYOUTS, SicherTabelle, type BausteineDatei, type SchrittMeta, type SchritteDatei } from '../src/passgenau/kern/format'
 import type { Schritt as KursSchritt } from '../src/kurs/typen'
 import type { Material } from '../src/types/material'
+import { fuehreZusammen, kontextBaustein, kontextSchritt, pruefeBeschriftung, wendeBeschriftungAn, WERKZEUGE_FUERS_KIND, type EintragKontext } from '../src/passgenau/kern/beschriftung'
+import { schrittTexteAus } from '../src/passgenau/kern/katalog'
+import { ladeBeschriftungsDateien } from './passgenau-beschriftung'
 
 const args = process.argv.slice(2)
 const OHNE_HOEHEN = args.includes('--ohne-hoehen')
@@ -113,7 +116,8 @@ const RE = {
   vorher: /\b(letzte[nr]? (einheit|woche|stunde|mal)|vorige[nr]? (einheit|woche)|mission|seit letzter|vom letzten mal|rückblick auf)/i,
   belastung2: /\b(tod|gestorben|verstorben|trauer|trennung|scheidung|missbrauch|gewalt zu hause|selbstverletz|suizid|ritzen|trauma)/i,
   belastung1: /\b(angst|sorge|traurig|wut|scham|peinlich|einsam|ausgeschlossen|mobbing|streit)/i,
-  laut: /\b(laut|schrei|ruf|trommel|klatsch|stampf|wettlauf|rennen|musik)/i,
+  // Lautstärke (Reiz): Schreien, Rufen – nicht „schreiben“, nicht „laut vorlesen“
+  laut: /\b(laut\b(?!\s+(vor|lesen))|lauter\b|schrei(e|en|t|st)?\b|geschrien|ruf(e|en|t)?\b|zuruf|trommel|klatsch|stampf|wettlauf|rennen|musik)/i,
 }
 
 function zaehle(re: RegExp, text: string): number {
@@ -226,7 +230,8 @@ function stufenAus(von: number, bis: number): Stufe[] {
 const MERKMAL_RE: Record<keyof Merkmale, RegExp> = {
   wettbewerb: /\b(gewinnt|gewonnen|gewinner|sieger|verliert|verlierer|wer zuerst|wer als erste|wettlauf|wettrennen|wettbewerb|wettkampf|gegeneinander|meisten punkte|team gegen|um die wette|duell)/i,
   koerperkontakt: /\b(anfass|berühr|rücken an rücken|hände halten|an den händen|massage|massier|huckepack|kitzel|umarm|auf den rücken (malen|zeichnen|schreiben)|hand in hand|kuscheln|abklatschen)/i,
-  laut: /\b(schrei|brüll|trommel|stampf|kreisch|pfeif|lärm|laute musik|ganz laut|so laut wie|lautstärke|krach|jubel)/i,
+  // „schrei“ nur als Schreien (nicht „schreiben“)
+  laut: /\b(schrei(e|en|t|st)?\b|geschrien|anschrei|brüll|trommel|stampf|kreisch|pfeif|lärm|laute musik|ganz laut|so laut wie|lautstärke|krach|jubel)/i,
   gewaltbezug: /\b(schlägt|schlagen|geschlagen|hauen|gehauen|haut (ihn|sie|den|die|mich|ihm|andere)|prügel|getreten|tritt (ihn|sie|gegen)|waffe|schlägerei|würg|schubst|geschubst|verprügel)/i,
   katharsis: KATHARSIS_RE,
 }
@@ -325,8 +330,8 @@ function stabileIds(gruppe: string, teile: { h: string; text: string }[], nummer
   return ids as string[]
 }
 
-/** Werkzeuge, die doch fürs Kind sind (P1); alle anderen „Werkzeuge für Fachkräfte“ kommen nie aufs Blatt. */
-const WERKZEUGE_FUERS_KIND = new Set(['ruhe-ecke-karten', 'tagesplan-bildkarten', 'belohnungs-menue'])
+// Werkzeuge, die doch fürs Kind sind (P1): WERKZEUGE_FUERS_KIND (kern/beschriftung.ts); alle anderen „Werkzeuge für
+// Fachkräfte“ kommen nie aufs Blatt.
 
 // ---------------------------------------------------------------------------------------------------------------
 // 1. Blätter → Mikro-Bausteine (4.2)
@@ -1158,6 +1163,48 @@ for (const thema of q.crew.themen) {
 }
 
 // ---------------------------------------------------------------------------------------------------------------
+// 2b. Beschriftungen (4.6 Phase 1/2): geprüfte Werte aus src/data/passgenau/beschriftung/*.json. Das Overlay gewinnt,
+// `sicher` kommt aus dem Overlay; ungültige Einträge bleiben weg (npm run passgenau:pruefen nennt sie).
+// ---------------------------------------------------------------------------------------------------------------
+
+const mitKompetenz = new Set<string>()
+const beschriftet = { angewandt: 0, ungueltig: 0, ohneEintrag: 0, veraltet: 0, doppelt: 0, dateien: 0 }
+{
+  const bank = (JSON.parse(readFileSync(join(AUS, 'eldib.json'), 'utf8')) as { items: Record<string, unknown> }).items
+  const schrittTexte = schrittTexteAus(q)
+  const { dateien, fehler } = ladeBeschriftungsDateien()
+  const { eintraege, doppelt } = fuehreZusammen(dateien)
+  beschriftet.dateien = dateien.length
+  beschriftet.doppelt = doppelt.length
+  for (const f of fehler) console.warn(`Beschriftung: ${f}`)
+  const nachId = new Map<string, MikroBaustein | SchrittMeta>([...bausteine.map((b) => [b.id, b] as const), ...schritte.map((s) => [s.id, s] as const)])
+  const gezeigt: string[] = []
+  for (const [id, mitDatei] of eintraege) {
+    const { datei, ...b } = mitDatei
+    const e = nachId.get(id)
+    const baustein = id.startsWith('b:')
+    let ctx: EintragKontext | undefined
+    if (e && baustein) ctx = kontextBaustein(e as MikroBaustein, q.blatt.get((e as MikroBaustein).quelle.blatt)!)
+    else if (e) {
+      const t = schrittTexte(e as SchrittMeta)
+      if (t) ctx = kontextSchritt(e as SchrittMeta, t)
+    }
+    const f = pruefeBeschriftung(id, b, ctx, bank)
+    if (f.length) {
+      if (ctx) beschriftet.ungueltig++
+      else beschriftet.ohneEintrag++
+      if (gezeigt.length < 8) gezeigt.push(`${datei}: ${f[0]}`)
+      continue
+    }
+    const r = wendeBeschriftungAn(e!, b, { baustein })
+    beschriftet.angewandt++
+    if (r.veraltet) beschriftet.veraltet++
+    if (r.kompetenz) mitKompetenz.add(id)
+  }
+  for (const g of gezeigt) console.warn(`Beschriftung nicht angewandt – ${g}`)
+}
+
+// ---------------------------------------------------------------------------------------------------------------
 // 3. Höhen messen (react-pdf + PyMuPDF), inkrementell mit Cache
 // ---------------------------------------------------------------------------------------------------------------
 
@@ -1338,8 +1385,8 @@ for (const b of bausteine) {
 mkdirSync(AUS, { recursive: true })
 const sicherB = new SicherTabelle()
 const sicherS = new SicherTabelle()
-const bRoh = bausteine.map((b) => packeBaustein(b, sicherB))
-const sRoh = schritte.map((s) => packeSchritt(s, sicherS))
+const bRoh = bausteine.map((b) => packeBaustein(b, sicherB, mitKompetenz.has(b.id)))
+const sRoh = schritte.map((s) => packeSchritt(s, sicherS, mitKompetenz.has(s.id)))
 const bDatei: BausteineDatei = { v: 1, stand: STAND, stilHash: cache.stilHash, seite: cache.seite ?? {}, sicher: sicherB.muster, bausteine: bRoh }
 const sDatei: SchritteDatei = { v: 1, stand: STAND, sicher: sicherS.muster, schritte: sRoh }
 writeFileSync(join(AUS, 'bausteine.json'), JSON.stringify(bDatei))
@@ -1365,4 +1412,5 @@ console.log('  einzeltauglich:', zaehl(schritte, (s) => s.einzeltauglich), ' ohn
 console.log('  Rollen:', zaehl(schritte.flatMap((s) => s.rolle), (r) => r))
 console.log(`Felder sicher (≥ 0,7): ${sicherFelder} von ${alleFelder} (${Math.round((100 * sicherFelder) / alleFelder)} %)`)
 console.log(`Neue Inhalte (src/data/passgenau/inhalte): ${q.inhalte.length} Dateien`)
+console.log(`Beschriftung (src/data/passgenau/beschriftung, ${beschriftet.dateien} Dateien): ${beschriftet.angewandt} angewandt` + (beschriftet.veraltet ? `, ${beschriftet.veraltet} zu älterer Fassung (Sicherheit ≤ 0,6)` : '') + (beschriftet.ungueltig ? `, ${beschriftet.ungueltig} ungültig` : '') + (beschriftet.ohneEintrag ? `, ${beschriftet.ohneEintrag} ohne Eintrag` : '') + (beschriftet.doppelt ? `, ${beschriftet.doppelt} doppelt` : ''))
 console.log(`Größe: bausteine.json ${Math.round(JSON.stringify(bDatei).length / 1024)} KB, schritte.json ${Math.round(JSON.stringify(sDatei).length / 1024)} KB · ${Math.round((Date.now() - t0) / 1000)} s`)

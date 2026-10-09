@@ -40,18 +40,28 @@ function passtRolle(e: KatalogEintrag, r: AbdeckungRolle): boolean {
   return e.typ === 'schritt' && e.rolle.includes(r) && !(r === 'kern' && e.mehrtaegig)
 }
 
-/** Die häufigsten Ziele: Codes, auf die die meisten Quelleinheiten (Blatt, Kurs-/Förderfach-Einheit, Material) zielen. */
+/** Die häufigsten Ziele: Codes, auf die die meisten Quelleinheiten (Blatt, Kurs-/Förderfach-Einheit, Material) zielen.
+ *  Gezählt wird, was die **Quellen** selbst als erstes Ziel nennen (wie die automatische Vorbefüllung) – nicht die
+ *  Beschriftung einzelner Teile: sonst verschiebt jede präzisere Beschriftung die Liste (4.6 Phase 1). Neue Inhalte
+ *  (fb:, r: …) zählen mit ihren eigenen Hauptzielen. */
 export function haeufigsteZiele(k: Katalog, n = 30): string[] {
+  const q = intern(k).q
   const einheiten = new Map<string, Set<string>>()
-  for (const e of k.eintraege.values()) {
-    const quelle = e.typ === 'baustein' ? `b:${e.quelle.blatt}` : e.id.split(':').slice(0, 2).join(':')
-    for (const z of e.eldib) {
-      if (z.gewicht !== 1) continue
-      let s = einheiten.get(z.code)
-      if (!s) einheiten.set(z.code, (s = new Set()))
-      s.add(quelle)
-    }
+  const add = (code: string | undefined, quelle: string) => {
+    if (!code || !/^(V|K|SOZ|KOG)-\d+$/.test(code)) return
+    let s = einheiten.get(code)
+    if (!s) einheiten.set(code, (s = new Set()))
+    s.add(quelle)
   }
+  // nur Quellen, die im Katalog Einträge haben
+  const da = new Set([...k.eintraege.values()].map((e) => (e.typ === 'baustein' ? `b:${e.quelle.blatt}` : e.id.split(':').slice(0, 2).join(':'))))
+  const wennDa = (code: string | undefined, quelle: string) => da.has(quelle) && add(code, quelle)
+  for (const b of q.blaetter) wennDa(b.eldib[0], `b:${b.id}`)
+  for (const e of q.kurs) for (const s of e.schritte) if (s.blatt && s.phase !== 'pause') wennDa(q.blatt.get(s.blatt)?.eldib[0], `k:${e.id}`)
+  for (const e of q.foerderfach) for (const s of e.de.schritte) if (s.blatt && s.phase !== 'pause') wennDa(q.blatt.get(s.blatt)?.eldib[0], `f:${e.id}`)
+  for (const m of q.materialien) wennDa(m.eldibGoals.find((c) => /^(V|K|SOZ|KOG)-\d+$/.test(c)), `m:${m.id}`)
+  for (const t of q.crew.themen) for (const s of t.spiele) wennDa(/(V|K|SOZ|KOG)-\d+/.exec(s.foerdert)?.[0], `c:${s.id}`)
+  for (const e of k.eintraege.values()) if (!/^[bkfmsc]:/.test(e.id)) for (const z of e.eldib) if (z.gewicht === 1) add(z.code, e.id.split(':').slice(0, 2).join(':'))
   return [...einheiten.entries()].sort((a, b) => b[1].size - a[1].size || (a[0] < b[0] ? -1 : 1)).slice(0, n).map(([c]) => c)
 }
 

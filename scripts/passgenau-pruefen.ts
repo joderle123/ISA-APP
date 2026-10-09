@@ -11,6 +11,8 @@ import { KATHARSIS_RE } from '../src/passgenau/kern/vokabular'
 import { SYSTEM_BY_ID } from '../src/passgenau/kern/system'
 import { ladeKatalogNode, ROOT, stilHash } from './passgenau-quellen'
 import { abdeckung, haeufigsteZiele } from './passgenau-abdeckung'
+import { AKUT_RE, MERKMALE, SCHUTZ_RE, type Beschriftung } from '../src/passgenau/kern/beschriftung'
+import { pruefeBeschriftungen } from './passgenau-beschriftung'
 
 const ALLE = process.argv.includes('--alle')
 const D = join(ROOT, 'src/data/passgenau')
@@ -110,8 +112,8 @@ regel(15, 'sprache.fr ohne französischen Text', 'fehler', [
 
 // 16 heikle Inhalte gekennzeichnet (T-M1): Suizid/Selbstverletzung → akut, Missbrauch/Übergriffe → kinderschutz
 {
-  const AKUT = /(suizid|selbstmord|selbstverletz|sich (selbst )?(ritzen|verletzen)|(nicht mehr|nimmer) leben wollen|sich das leben)/i
-  const SCHUTZ = /(sexuell(e|er|en)? (gewalt|übergriff|missbrauch)|kindesmissbrauch|missbraucht|übergriff(e|ig)? (am|an|gegen) (kind|körper))/i
+  const AKUT = AKUT_RE
+  const SCHUTZ = SCHUTZ_RE
   const text = (e: KatalogEintrag) => (e.typ === 'schritt' ? textVonSchritt(e) : JSON.stringify(bausteinInhalt(k, e, 'de')))
   regel(16, 'Text zu Suizid/Selbstverletzung ohne sensibel „akut“', 'fehler', alle.filter((e) => AKUT.test(text(e)) && e.sensibel !== 'akut').map((e) => e.id))
   regel(16, 'Text zu Übergriffen ohne sensibel „kinderschutz“/„akut“', 'fehler', alle.filter((e) => SCHUTZ.test(text(e)) && e.sensibel !== 'kinderschutz' && e.sensibel !== 'akut').map((e) => e.id))
@@ -218,6 +220,39 @@ regel(22, 'Ritual ohne „anspruch“', 'hinweis', schritte.filter((e) => e.quel
 
 // 23 Stufen und Alter passen zusammen
 regel(23, 'Altersband ohne Überschneidung mit den Stufen', 'fehler', alle.filter((e) => !e.stufen.some((s) => STUFE_ALTER[s][0] <= e.alter.bis + 1 && STUFE_ALTER[s][1] >= e.alter.von - 1) || !e.stufen.every((s) => STUFEN.includes(s))).map((e) => `${e.id} ${e.alter.von}–${e.alter.bis} ${e.stufen.join(',')}`))
+
+// 24 Beschriftungen (4.6 Phase 1/2): Schema, Codes, Vokabular, Längen, Sicherheitsregeln; 25: im Katalog angekommen
+{
+  const r = pruefeBeschriftungen(k)
+  regel(24, `Beschriftung ungültig (${r.dateien.length} Dateien, ${r.gueltig.size} gültige Einträge)`, 'fehler', [...r.fehler, ...r.doppelt.map((d) => `doppelt: ${d}`)])
+  regel(24, 'Beschriftung zu älterer Fassung (Inhalt seither geändert – neu beschriften)', 'hinweis', r.veraltet)
+  const gleich = (a: unknown, b: unknown) => JSON.stringify(a) === JSON.stringify(b)
+  const abweichung = (e: KatalogEintrag, b: Beschriftung): string | null => {
+    if (b.rolle && !gleich(e.rolle, b.rolle)) return 'rolle'
+    if (b.bogen && e.bogen !== b.bogen) return 'bogen'
+    if (b.eldib && !gleich(e.eldib, [...b.eldib.primaer.map((code) => ({ code, gewicht: 1 })), ...(b.eldib.sekundaer ?? []).map((code) => ({ code, gewicht: 0.5 }))])) return 'eldib'
+    if (b.kompetenz && !gleich(e.kompetenz, b.kompetenz)) return 'kompetenz'
+    if (b.alter && !gleich(e.alter, b.alter)) return 'alter'
+    if (b.energie && e.energie !== b.energie) return 'energie'
+    if (b.belastung !== undefined && e.belastung !== b.belastung) return 'belastung'
+    if (b.einzeltauglich && e.einzeltauglich !== b.einzeltauglich) return 'einzeltauglich'
+    if (b.einzelvariante && (e.typ !== 'schritt' || e.einzelvariante?.text !== b.einzelvariante.text || (b.einzelvariante.fr && e.fr?.einzelvariante?.text !== b.einzelvariante.fr.text))) return 'einzelvariante'
+    if (b.allgemein && (e.typ !== 'baustein' || !gleich(e.allgemein, b.allgemein))) return 'allgemein'
+    if (b.zielgruppe && (e.zielgruppe ?? 'kind') !== b.zielgruppe) return 'zielgruppe'
+    // Katharsis, „akut“ und „kinderschutz“ senkt nur eine Fachkraft (Sicherung im Katalog-Skript)
+    if (b.merkmale && MERKMALE.some((m) => m !== 'katharsis' && !!e.merkmale?.[m] !== !!b.merkmale![m])) return 'merkmale'
+    const hart = (x: unknown) => x === 'akut' || x === 'kinderschutz'
+    if ('sensibel' in b && (e.sensibel ?? null) !== (b.sensibel ?? null) && !(b.von !== 'fachkraft' && hart(e.sensibel))) return 'sensibel'
+    return null
+  }
+  const nicht: string[] = []
+  for (const [id, b] of r.gueltig) {
+    const e = k.eintraege.get(id)
+    const ab = e ? abweichung(e, b) : 'fehlt'
+    if (ab) nicht.push(`${id}: ${ab} (${b.datei})`)
+  }
+  regel(25, 'Beschriftung nicht im Katalog – npm run passgenau:katalog -- --ohne-hoehen', 'fehler', nicht)
+}
 
 // Ausgabe
 let fehler = 0
