@@ -109,7 +109,7 @@ nie über die Jugendlichen. Teilen ist freiwillig, **Pass** steht auf jedem Bild
 - Ist das Katalogspiel einer Einheit noch nicht gebaut, zeigt der Finder automatisch den **besten gebauten Ersatz**
   (gleiches Thema, gleiche ELDiB-Codes). Es gibt nie einen toten Link.
 
-### Gebaute Spiele (28 von 62, ★ = Favorit)
+### Gebaute Spiele (38 von 62, ★ = Favorit)
 
 | Thema | Spiele |
 |---|---|
@@ -117,12 +117,19 @@ nie über die Jugendlichen. Teilen ist freiwillig, **Pass** steht auf jedem Bild
 | Ich: Bedürfnisse & Stärken | Tank-Detektiv ★ · Was steckt dahinter? · Kleiner Schritt ★ · Je nach Ort · Zwei Brillen ★ · Stärke im Einsatz ★ · Vergleichs-Falle |
 | Gefühle verstehen | Gefühls-Funk · Pult-Tausch ★ |
 | Anspannung & Skills | Pegel-Reihe ★ · Skill-Sprechstunde ★ |
-| Gedanken & Glaubenssätze | Gedanken-Weiche ★ · Tatsache oder Urteil? ★ |
+| Gedanken & Glaubenssätze | Gedanken-Weiche ★ · Woher kommt der Satz? · Tatsache oder Urteil? ★ · Satz-Werkstatt · Beweis-Jäger ★ · Haltungs-Switch |
 | Kommunikation & Grenzen | Funkstille – der Chat kippt ★ · Hitze-Ecken ★ |
 | Konflikt, Druck & Mobbing | Story-Staffel: Der Streit ★ · Deal oder kein Deal ★ · Druck-Chat ★ |
-| Digital, Gesundheit & Abschluss | Teilen oder nicht? ★ |
+| Digital, Gesundheit & Abschluss | Trick erkannt ★ · Teilen oder nicht? ★ · Gerücht-Staffel ★ · Red Flag · Akku-Woche ★ · Später-Monster · Jahres-Quest |
 
-Die übrigen 34 Spiele stehen mit Ablauf und Kritik-Notizen in `docs/SPIELEKATALOG.md` und erscheinen in der App als „bald“.
+Die übrigen 24 Spiele stehen mit Ablauf und Kritik-Notizen in `docs/SPIELEKATALOG.md` und erscheinen in der App als „bald“.
+
+**Gut zu wissen (Gedanken & Digital):** *Satz-Werkstatt* zeigt die Regel-Lampen auf dem iPad von Rolle D (hochhalten oder an den Beamer).
+Bei der *Gerücht-Staffel* ist ein iPad das Gerücht-Handy, das die Reihe entlangwandert – am besten das Beamer-iPad, dann wächst die
+Punktwolke an der Wand. *Red Flag* endet immer mit BEE SECURE 8002 1234 und 116 111. *Später-Monster* spielt mit Luca
+(im Katalog „Noé“ – CREW nutzt nur Mika, Yara, Luca und Sam). Die *Jahres-Quest* ist das Abschlussspiel des Jahres (j1-e30):
+der Weg über acht Inseln mit den Crew-Stempeln, „Unser Jahr“ in Zahlen, Postkarte aus 2031 mit Sommer-Notfallkarte und ein Abspann
+mit dem Crew-HQ. Postkarten, „Kenne ich“, Flaggen und Pläne werden nicht gespeichert.
 Eine Kurzvorstellung für Kollegium und Leitung: `docs/VORSTELLUNG.md`.
 
 ### Sieben Formate
@@ -183,7 +190,9 @@ Alles steckt in dieser einen Datei (auch Schriften und Grafiken).
 - Tests (Playwright): `node crew/tests/smoke.mjs` (ebenso radar, clash, feed, reframe, solo-test, hq) und
   `node crew/tests/games.mjs` (spielt JEDES registrierte Spiel im Auto-Modus bis zum Ende, prüft Deep-Link und QR);
   `node crew/tests/hub.mjs` prüft die Klassebuch-Anbindung ohne Browser;
-  `node crew/tests/didaktik.mjs` prüft „Darum geht’s“, Level, Nachbesprechung und Hinweise für alle Spiele, Missionen und Solo-Spiele.
+  `node crew/tests/didaktik.mjs` prüft „Darum geht’s“, Level, Nachbesprechung und Hinweise für alle Spiele, Missionen und Solo-Spiele;
+  `node crew/tests/gedanken-digital.mjs` prüft die zehn Spiele aus „Gedanken“ und „Digital“ (Inhalte lösbar und ohne echte Plattformen,
+  Wischen, Pass, X-Karte, Flaggen, Stopp-Satz, Rolle per Link, nur Sticker gespeichert, Layout auf Handy und iPad hoch mit Fotos).
   Läuft parallel noch ein anderer Browser-Test: `flock /tmp/crew-chrome.lock node crew/tests/games.mjs`.
 
 ### Ein neues Spiel bauen
