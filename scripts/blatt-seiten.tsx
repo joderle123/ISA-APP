@@ -2,8 +2,8 @@
 //   • die Seite „Für die Lehrperson“ ist genau EINE Seite,
 //   • der Schülerteil hat höchstens 2 Seiten (C1 und C2: 1 Seite),
 //   • Bereich Spielschule: Schülerteil höchstens 2 Seiten (Bildkarten + Blatt), für die Lehrperson 2 Seiten
-//     (Lehrerseite + „Aktivitäten & Ideen“), mit „Beobachten & Begleiten“ 3 Seiten; jede Zusatzseite
-//     (Klassenraster, Portfolio-Blatt, Elternbrief) genau 1 Seite,
+//     (Lehrerseite + „Aktivitäten & Ideen“), dazu je 1 Seite „Forschen“ (mit `experiment`) und „Beobachten &
+//     Begleiten“; jede Zusatzseite (Klassenraster, Portfolio-Blatt, Elternbrief, Forscherblatt) genau 1 Seite,
 //   • keine leere Seite (nur Kopf/Fußzeile),
 //   • jede Seite trägt den Urheber-Vermerk in der Sprache des Blatts (src/lib/urheber.ts)
 //     und daneben in der Fußzeile das CDSE-Logo (src/lib/cdse-logo.ts).
@@ -22,6 +22,7 @@ import type { Blatt, Sprache } from '../src/blatt/typen'
 import { nummerieren } from '../src/blatt/nummern'
 import { URHEBER } from '../src/lib/urheber'
 import { hatBegleiten, zusaetzeVon, type Zusatz } from '../src/blatt/spielschule'
+import { experimentVon } from '../src/blatt/forschen'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 registriereSchriften((d) => join(ROOT, 'src/assets/fonts/pdf', d))
@@ -84,8 +85,9 @@ for (const a of auftraege) {
   const wo = `${a.blatt.nr} ${a.blatt.id} ${a.sprache.toUpperCase()} ${a.teil === 'lehrer' ? 'Lehrerseite' : a.teil === 'schueler' ? 'Schülerteil' : a.teil}`
   const spielschule = a.blatt.bereich === 'spielschule'
   const begleiten = hatBegleiten(a.blatt, ((a.sprache === 'fr' && a.blatt.fr) || a.blatt.de).lehrer.spielschule)
+  const forschen = experimentVon(a.blatt, a.sprache) ? 1 : 0
   const max =
-    a.teil === 'lehrer' ? (spielschule ? (begleiten ? 3 : 2) : 1) : a.teil !== 'schueler' ? 1 : spielschule ? 2 : a.blatt.stufen.every((s) => s === 'C1' || s === 'C2') ? 1 : 2
+    a.teil === 'lehrer' ? (spielschule ? 2 + (begleiten ? 1 : 0) + forschen : 1) : a.teil !== 'schueler' ? 1 : spielschule ? 2 : a.blatt.stufen.every((s) => s === 'C1' || s === 'C2') ? 1 : 2
   const probleme: string[] = []
   if (seiten.length > max) probleme.push(`${seiten.length} Seiten (erlaubt: ${max})`)
   seiten.forEach(({ inhalt, vermerk, logo }, i) => {

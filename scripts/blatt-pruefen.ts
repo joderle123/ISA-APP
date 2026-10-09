@@ -5,11 +5,13 @@
 // Spielschule: Einheiten ganz ohne „Beobachten & Begleiten“ erscheinen nur in der Zusammenfassung (○, zählt nicht);
 // sobald eine Einheit eines der neuen Felder hat, ist jedes fehlende ein Hinweis. Noch nicht gegengelesenes
 // Luxemburgisch wird je Einheit aufgelistet (○, zählt nicht) – Prüfliste: scripts/lb-liste.ts.
+// Experiment der Woche: Einheiten ohne `experiment` zählen nur in der Zusammenfassung (○); ein vorhandenes Experiment
+// wird streng geprüft (Längen, damit die Seite „Forschen“ nie überläuft, Sicherheit, verbotene Stoffe).
 import { readFileSync, readdirSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { join, dirname, basename } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import type { Baustein, Blatt, BlattInhalt, Brieftext, Spielideen, Sprache } from '../src/blatt/typen'
+import type { Baustein, Bildtext, Blatt, BlattInhalt, Brieftext, Experiment, Forscherblatt, Spielideen, Sprache } from '../src/blatt/typen'
 import { BEREICHE, THEMEN, STUFEN_REIHE } from '../src/blatt/katalog'
 import { hatIcon } from '../src/blatt/zeichnung'
 import { GEFUEHLE } from '../src/blatt/gesichter'
@@ -21,6 +23,7 @@ import { bereichAusDatei } from '../src/blatt/nummern'
 import { flaecheGroesse, geoPunkte, kommaSprung, MM, stuecke, temperaturSkala, wert } from '../src/blatt/pdf/mathe'
 import { SEITE } from '../src/blatt/pdf/stil'
 import { DOMAENEN, SICHERHEIT_STANDARD } from '../src/blatt/spielschule'
+import { GRENZEN, PHAENOMENE, forscherBildGueltig, heissesWasser, textVon, verboteneStoffe } from '../src/blatt/forschen'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const args = process.argv.slice(2)
@@ -44,6 +47,8 @@ const ARTEN = new Set([
   'flaeche', 'temperatur',
   'diagramm', 'strichliste',
 ])
+/** Spielschule: Forscherblatt zum Experiment der Woche (eine ganze Seite) */
+ARTEN.add('forscherblatt')
 
 /** Mathe: Dezimalzahl mit Komma („12,5“) als Zahl – oder NaN */
 const ZAHL = /^\d+(,\d+)?$/
@@ -405,6 +410,12 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
       case 'koerper':
         for (const l of b.legende ?? []) if (!FARBWOERTER.includes(l.farbe)) melde('F', w, `Farbe „${l.farbe}“ gibt es nicht`)
         break
+      case 'forscherblatt':
+        if (tiefe) melde('F', w, 'Forscherblatt braucht die ganze Breite – nicht in Spalten')
+        if (blatt.bereich !== 'spielschule') melde('F', w, 'Forscherblatt gibt es nur im Bereich Spielschule')
+        if (liste[i - 1]?.art !== 'seitenumbruch' || i !== liste.length - 1) melde('H', w, 'Forscherblatt steht allein auf seiner Seite: direkt nach „seitenumbruch“ und als letzter Baustein')
+        pruefeForscherblatt(w, b)
+        break
       case 'ampel':
       case 'vulkan':
         if (b.stufen && b.stufen.length !== 3) melde('F', w, 'genau 3 Stufen nötig')
@@ -609,6 +620,105 @@ function pruefeBegleiten(wo: string, sp: Spielideen | undefined, blatt: Blatt, s
   return true
 }
 
+// --- Spielschule: Experiment der Woche ---------------------------------------------------------------
+
+/** Einheiten ohne Experiment (zählt nicht als Fehler, nur in der Zusammenfassung) */
+const ohneExperiment: string[] = []
+/** Was im Material oder in den Schritten vorkommt → dieser Standardsatz gehört in die Sicherheit (Hinweis) */
+const EXPERIMENT_STANDARD: [RegExp, string][] = [
+  [/wanne|becken|bassine|\bbac\b|baignoire/i, 'wasser'],
+  [/messer|couteau|halbier|coupe en deux/i, 'messer'],
+  [/perle|samen|münze|murmel|knopf|knöpfe|magnet|bohne|linse|graine|pièce|bille|bouton|aimant|haricot|lentille/i, 'kleinteile'],
+  [/strohhalm|paille|\bpust|souffl/i, 'pusten'],
+  [/probier|schmeck|kosten\b|goût|dégust|\bmang(e|er|ez)\b/i, 'allergien'],
+]
+
+/** Text eines Experiments: leer, zu lang (die Seite liefe über), Emoji, fremde Zeichen → Fehler; Floskeln → Hinweis. */
+function expText(wo: string, x: unknown, max: number, was: string) {
+  if (typeof x !== 'string' || !x.trim()) return melde('F', wo, `Experiment: ${was} fehlt`)
+  if (x.length > max) melde('F', wo, `Experiment: ${was} zu lang (${x.length} Zeichen, höchstens ${max} – sonst läuft die Seite über)`)
+  if (EMOJI.test(x)) melde('F', wo, `Experiment: ${was} – Emoji`)
+  if (fremdeZeichen(x)) melde('F', wo, `Experiment: ${was} – Zeichen fehlt in der Schrift: ${fremdeZeichen(x)}`)
+  for (const [re, name] of FLOSKELN) if (re.test(x)) melde('H', wo, `Experiment: ${was} – ${name}: „${x.slice(0, 60)}“`)
+}
+
+/** Bildauswahl des Forscherblatts (Ich vermute / So war es): 2–3 Bilder, Wort ≤ 18 Zeichen. */
+function pruefeWahl(wo: string, liste: unknown, was: string) {
+  if (!Array.isArray(liste) || liste.length < GRENZEN.wahl.min || liste.length > GRENZEN.wahl.max) return melde('F', wo, `Forscherblatt: ${was} mit ${GRENZEN.wahl.min}–${GRENZEN.wahl.max} Bildern`)
+  for (const x of liste as { bild?: string; text?: string }[]) {
+    if (!x?.bild || !forscherBildGueltig(x.bild)) melde('F', wo, `Forscherblatt: Bild „${x?.bild}“ gibt es nicht`)
+    if (x?.text !== undefined) expText(wo, x.text, GRENZEN.wahl.zeichen, `Forscherblatt – Wort unter dem Bild „${x.text}“`)
+  }
+}
+
+function pruefeForscherblatt(wo: string, f: Forscherblatt) {
+  if (f.frage !== undefined) expText(wo, f.frage, GRENZEN.blattFrage, 'Forscherblatt – Frage')
+  if (f.bild !== undefined && !forscherBildGueltig(f.bild)) melde('F', wo, `Forscherblatt: Bild „${f.bild}“ gibt es nicht`)
+  if (f.vermuten !== undefined) pruefeWahl(wo, f.vermuten, '„Ich vermute“')
+  if (f.ergebnis !== undefined && f.ergebnis !== 'gesichter') pruefeWahl(wo, f.ergebnis, '„So war es“')
+  if (f.sehen !== undefined && f.sehen !== 'frei' && f.sehen !== 'vorher-nachher') melde('F', wo, 'Forscherblatt: sehen „frei“ oder „vorher-nachher“')
+  if (f.name !== undefined && typeof f.name !== 'boolean') melde('F', wo, 'Forscherblatt: name true oder false')
+}
+
+const PHAENOMEN_IDS = PHAENOMENE.map((x) => x.id as string)
+
+function pruefeExperiment(wo: string, e: Experiment) {
+  const g = GRENZEN
+  expText(wo, e.titel, g.titel, 'Titel')
+  expText(wo, e.frage, g.frage, 'Forscherfrage')
+  if (typeof e.frage === 'string' && !e.frage.trim().endsWith('?')) melde('H', wo, 'Experiment: Forscherfrage als Frage mit „?“ schreiben')
+  const liste = (x: unknown, was: string, gr: { min: number; max: number; zeichen: number }) => {
+    if (!Array.isArray(x) || x.length < gr.min || x.length > gr.max) {
+      melde('F', wo, `Experiment: ${was} – ${gr.min}–${gr.max} Einträge (jetzt ${Array.isArray(x) ? x.length : 0})`)
+      return [] as (string | Bildtext)[]
+    }
+    for (const y of x as (string | Bildtext)[]) {
+      expText(wo, textVon(y ?? ''), gr.zeichen, was)
+      if (typeof y !== 'string' && !forscherBildGueltig(y?.bild ?? '')) melde('F', wo, `Experiment: ${was} – Bild „${y?.bild}“ gibt es nicht`)
+    }
+    return x as (string | Bildtext)[]
+  }
+  const material = liste(e.material, 'Material', g.material)
+  const schritte = liste(e.schritte, 'Schritt', g.schritte)
+  expText(wo, e.vermutung, g.vermutung, 'Vermuten')
+  expText(wo, e.beobachten, g.beobachten, 'Beobachten')
+  expText(wo, e.warumKind, g.warumKind, 'Warum (für Kinder)')
+  expText(wo, e.hintergrund, g.hintergrund, 'Hintergrund')
+  expText(wo, e.weiter, g.weiter, 'Weiterforschen')
+  expText(wo, e.dauer, g.dauer, 'Dauer')
+  if (!Array.isArray(e.phaenomene) || e.phaenomene.length < g.phaenomene.min || e.phaenomene.length > g.phaenomene.max) melde('F', wo, `Experiment: ${g.phaenomene.min}–${g.phaenomene.max} Phänomene (${PHAENOMEN_IDS.join(', ')})`)
+  for (const id of e.phaenomene ?? []) if (!PHAENOMEN_IDS.includes(id)) melde('F', wo, `Experiment: Phänomen „${id}“ gibt es nicht (${PHAENOMEN_IDS.join(', ')})`)
+  // Sicherheit: 1–3 Zeilen, Standardsätze wo möglich
+  const sicher = Array.isArray(e.sicherheit) ? e.sicherheit : []
+  if (sicher.length < g.sicherheit.min || sicher.length > g.sicherheit.max) melde('F', wo, `Experiment: Sicherheit – ${g.sicherheit.min}–${g.sicherheit.max} Zeilen (jetzt ${sicher.length})`)
+  const standard = new Set<string>()
+  for (const x of sicher) {
+    const m = /^standard:(.*)$/.exec(x ?? '')
+    if (m) {
+      if (!SICHERHEIT_STANDARD[m[1]]) melde('F', wo, `Experiment: Standardsatz „${m[1]}“ gibt es nicht (${Object.keys(SICHERHEIT_STANDARD).join(', ')})`)
+      standard.add(m[1])
+      continue
+    }
+    expText(wo, x, g.sicherheit.zeichen, 'Sicherheit')
+    const thema = STANDARD_THEMEN.find(([re]) => re.test(x ?? ''))
+    if (thema) melde('H', wo, `Experiment: Sicherheit – dafür gibt es den Standardsatz „standard:${thema[1]}“ („${(x ?? '').slice(0, 50)}“)`)
+    if (thema) standard.add(thema[1])
+  }
+  // Verbotene Stoffe (Glitzer, kleine Magnete, Kerze, Alkohol, Trockeneis, heißes Wasser für Kinder)
+  const tun = [...material, ...schritte].map(textVon)
+  for (const x of [...tun, e.weiter ?? '', e.vermutung ?? '', e.beobachten ?? '']) for (const v of verboteneStoffe(x)) melde('F', wo, `Experiment: nicht in der Spielschule – ${v} („${x.slice(0, 50)}“)`)
+  if (tun.some(heissesWasser) && !standard.has('hitze')) melde('H', wo, 'Experiment: heißes Wasser (nur Erwachsene) – „standard:hitze“ in die Sicherheit')
+  for (const [re, key] of EXPERIMENT_STANDARD) if (tun.some((x) => re.test(x)) && !standard.has(key)) melde('H', wo, `Experiment: „standard:${key}“ in die Sicherheit (${SICHERHEIT_STANDARD[key]?.de.slice(0, 50)} …)`)
+  if (e.forscherblatt !== undefined) pruefeForscherblatt(wo, e.forscherblatt)
+}
+
+/** DE und FR: dieselben Phänomene und Standard-Sicherheitssätze. */
+function pruefeExperimentGleich(wo: string, de: Experiment, fr: Experiment) {
+  if ([...(de.phaenomene ?? [])].sort().join() !== [...(fr.phaenomene ?? [])].sort().join()) melde('H', wo, 'Experiment: Phänomene in DE und FR verschieden')
+  const std = (e: Experiment) => (e.sicherheit ?? []).filter((x) => x.startsWith('standard:')).sort().join()
+  if (std(de) !== std(fr)) melde('H', wo, 'Experiment: Standard-Sicherheitssätze in DE und FR verschieden')
+}
+
 function pruefeBrief(wo: string, b: Brieftext | undefined, sprache: string) {
   if (!b) return melde('F', wo, `Elternbrief: Fassung ${sprache.toUpperCase()} fehlt`)
   textCheck(wo, b.woche, 280, `Elternbrief ${sprache.toUpperCase()} „Das machen wir“`)
@@ -780,11 +890,22 @@ for (const datei of liste) {
       pruefeWoche(wo, b, begonnen)
       if (!begonnen && !b.woche) ohneBegleiten.push(b.id)
       else pruefeGleich(wo, b)
+      // Experiment der Woche (je Sprachfassung)
+      const expDe = b.de?.lehrer?.spielschule?.experiment
+      const expFr = b.fr?.lehrer?.spielschule?.experiment
+      if (expDe) pruefeExperiment(wo + ' DE', expDe)
+      if (expFr) pruefeExperiment(wo + ' FR', expFr)
+      if (!expDe && !expFr) {
+        ohneExperiment.push(b.id)
+        if (dateien.length) info(wo, 'noch ohne „Experiment der Woche“')
+      } else if (!expDe || !expFr) melde('F', wo, `Experiment der Woche: Fassung ${expDe ? 'FR' : 'DE'} fehlt`)
+      else pruefeExperimentGleich(wo, expDe, expFr)
     } else if (b.woche) melde('F', wo, '„woche“ gibt es nur im Bereich Spielschule')
   })
   console.log(`${name}: ${blaetter.length} Blätter geprüft`)
 }
 if (ohneBegleiten.length) console.log(`\n○ Spielschule: ${ohneBegleiten.length} Einheiten noch ohne „Beobachten & Begleiten“ (zählt nicht als Fehler)`)
+if (ohneExperiment.length) console.log(`○ Spielschule: ${ohneExperiment.length} Einheiten noch ohne „Experiment der Woche“ (zählt nicht als Fehler)`)
 if (lbOffen) console.log(`○ Luxemburgisch noch nicht gegengelesen: ${lbOffen} Einträge in ${lbEinheiten} Einheiten – Prüfliste: npx tsx --tsconfig tsconfig.scripts.json scripts/lb-liste.ts`)
 console.log(`\n${fehler} Fehler, ${hinweise} Hinweise`)
 process.exit(fehler ? 1 : 0)

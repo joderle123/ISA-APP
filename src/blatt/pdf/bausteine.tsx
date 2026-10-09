@@ -11,6 +11,7 @@ import { bildZeichnung, iconZeichnung, NEUTRAL, type Form, type Palette, type Ze
 import { gefuehlWort, gesichtZeichnung } from '../gesichter'
 import { motivZeichnung, VULKAN, HAND, fingerSpitze, EISBERG } from '../motive'
 import { Zeichnen } from './Zeichnen'
+import { ForscherblattBlock } from './Forscherblatt'
 import { Bruchbilder, Diagramm, Flaeche, Geo, Hunderterfeld, Kommasprung, Paeckchen, Stellentafel, Strichliste, Temperatur, Treppe, Zahlenstrahl, Zeile } from './mathe'
 import { SCHRIFT, TEXTE, typo, type Masse } from './stil'
 
@@ -2284,6 +2285,8 @@ function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
       return <Rueckblick c={c} b={b} />
     case 'notfall':
       return <Notfall c={c} b={b} />
+    case 'forscherblatt':
+      return <ForscherblattBlock c={c} b={b} />
     case 'glaeser':
       return <Glaeser c={c} b={b} />
     case 'netz':

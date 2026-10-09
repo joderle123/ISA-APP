@@ -4,6 +4,7 @@ import type { Material } from '../types/material'
 import { slug } from './slug'
 import { BlattDokument, MappeDokument, type BlattOptionen } from '../blatt/pdf/BlattDokument'
 import { ModulheftDokument } from '../blatt/pdf/Modulheft'
+import { ForscherkarteiDokument, forscherkarteiDateiname, type KarteiQuelle } from '../blatt/pdf/Forscherkartei'
 import { modulheftDateiname, type Modul } from '../blatt/module'
 import { registriereSchriften } from '../blatt/pdf/stil'
 import type { Blatt, Sprache } from '../blatt/typen'
@@ -101,5 +102,14 @@ export async function downloadModulheft(modul: Modul, blaetter: Map<string, Blat
   schriften()
   const name = modulheftDateiname(modul, sprache, loesungen)
   saveBlob(await pdf(<ModulheftDokument modul={modul} blaetter={blaetter} sprache={sprache} loesungen={loesungen} />).toBlob(), name)
+  return name
+}
+
+/** Forscherkartei Spielschule: alle Experimente der Woche (Deckblatt, Inhalt, je Experiment eine Seite, Register).
+ *  Die Blätter kommen vom Aufrufer (wie beim Modulheft). */
+export async function downloadForscherkartei(blaetter: KarteiQuelle[], sprache: Sprache): Promise<string> {
+  schriften()
+  const name = forscherkarteiDateiname(sprache)
+  saveBlob(await pdf(<ForscherkarteiDokument blaetter={blaetter} sprache={sprache} />).toBlob(), name)
   return name
 }

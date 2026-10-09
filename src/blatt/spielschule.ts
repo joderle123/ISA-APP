@@ -7,6 +7,7 @@
 // ---------------------------------------------------------------------------
 
 import type { Baustein, BildId, Blatt, DomaeneId, Freitagskarte, Sprache, Spielideen, WochenWort } from './typen'
+import { experimentVon, hatForscherblattBaustein } from './forschen'
 
 /** Lernbereiche des Plan d'études Cycle 1 (MENFP 2011). Die französischen Bezeichnungen sind die des Dokuments;
  *  die deutschen sind Arbeitsübersetzungen (gegen eine deutsche Fassung prüfen, falls vorhanden). */
@@ -110,11 +111,12 @@ export const BRIEF_TEXT: Record<'de' | 'fr' | 'pt' | 'lb', { sprache: string; an
 }
 
 /** Zusatzseiten, die es einzeln zum Herunterladen gibt (nicht im Lehrerteil). */
-export type Zusatz = 'klassenraster' | 'portfolio' | 'elternbrief'
+export type Zusatz = 'klassenraster' | 'portfolio' | 'elternbrief' | 'forscherblatt'
 export const ZUSAETZE: { id: Zusatz; de: string; fr: string; knopf: string; datei: string }[] = [
   { id: 'klassenraster', de: 'Klassenraster', fr: 'Grille de classe', knopf: 'Klassenraster', datei: 'Klassenraster' },
   { id: 'portfolio', de: 'Portfolio-Blatt', fr: 'Fiche portfolio', knopf: 'Portfolio', datei: 'Portfolio' },
   { id: 'elternbrief', de: 'Elternbrief', fr: 'Lettre aux familles', knopf: 'Elternbrief', datei: 'Elternbrief' },
+  { id: 'forscherblatt', de: 'Forscherblatt', fr: 'Fiche du chercheur', knopf: 'Forscherblatt', datei: 'Forscherblatt' },
 ]
 
 /** Hat die Sprachfassung (oder die Woche) etwas für die Seite „Beobachten & Begleiten“? */
@@ -125,13 +127,15 @@ export function hatBegleiten(blatt: Blatt, sp: Spielideen | undefined): boolean 
 }
 
 /** Welche Zusatzseiten hat dieses Blatt in dieser Sprache? Klassenraster und Portfolio brauchen das
- *  Beobachtungsfenster (3 Punkte), der Elternbrief `woche.elternbrief`. */
+ *  Beobachtungsfenster (3 Punkte), der Elternbrief `woche.elternbrief`, das Forscherblatt ein `experiment`
+ *  (nur wenn es nicht schon im Schülerteil steht). */
 export function zusaetzeVon(blatt: Blatt, sprache: Sprache): Zusatz[] {
   if (blatt.bereich !== 'spielschule') return []
   const sp = ((sprache === 'fr' && blatt.fr) || blatt.de).lehrer.spielschule
   const out: Zusatz[] = []
   if (sp?.beobachtung?.length) out.push('klassenraster', 'portfolio')
   if (blatt.woche?.elternbrief) out.push('elternbrief')
+  if (experimentVon(blatt, sprache) && !hatForscherblattBaustein(blatt, sprache)) out.push('forscherblatt')
   return out
 }
 

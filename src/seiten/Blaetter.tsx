@@ -7,6 +7,7 @@ import type { Baustein, Bereich, NummeriertesBlatt, Sprache, Stufe } from '../bl
 import { BEREICHE, bereichById, STUFEN_REIHE, stufenText, THEMEN, themaLabel } from '../blatt/katalog'
 import { MODULE, lektionenZahl, type Modul } from '../blatt/module'
 import { ZUSAETZE, zusaetzeVon, type Zusatz } from '../blatt/spielschule'
+import { experimentVon } from '../blatt/forschen'
 import { bildZeichnung, iconZeichnung, palette } from '../blatt/zeichnung'
 import { ZeichnungSvg } from '../blatt/ZeichnungSvg'
 import { eldibGoalById } from '../data/taxonomy'
@@ -35,7 +36,7 @@ export const leererBlattFilter: BlattFilter = { suche: '', bereich: '', thema: '
 type Sortierung = 'nummer' | 'bewertung' | 'titel'
 
 const SOZIAL: Record<string, string> = { einzeln: 'Einzeln', gruppe: 'Kleingruppe', klasse: 'Klasse' }
-const ZUSATZ_ICON: Record<Zusatz, IconName> = { klassenraster: 'layers', portfolio: 'user', elternbrief: 'send' }
+const ZUSATZ_ICON: Record<Zusatz, IconName> = { klassenraster: 'layers', portfolio: 'user', elternbrief: 'send', forscherblatt: 'lightbulb' }
 
 /** „1 Blatt“, „3 Blätter“ (auch im Skills-Kurs). */
 export function blaetterText(n: number): string {
@@ -198,6 +199,16 @@ function Vorschau({ b, sprache, lehrer }: { b: NummeriertesBlatt; sprache: Sprac
   return <iframe className="bl-vorschau" src={url + '#toolbar=0&navpanes=0&view=FitH'} title={`Vorschau: ${b.de.titel}`} />
 }
 
+/** „zum Beobachten, zum Forschen und für die Familien“ – je nachdem, welche Zusatzseiten es gibt. */
+function zusatzZweck(ids: Zusatz[]): string {
+  const teile = [
+    ids.includes('klassenraster') || ids.includes('portfolio') ? 'zum Beobachten' : null,
+    ids.includes('forscherblatt') ? 'zum Forschen' : null,
+    ids.includes('elternbrief') ? 'für die Familien' : null,
+  ].filter((x): x is string => !!x)
+  return teile.length > 1 ? `${teile.slice(0, -1).join(', ')} und ${teile[teile.length - 1]}` : (teile[0] ?? '')
+}
+
 /** Detail eines Blatts (Vorschau, Download, Bewertung). Auch vom Skills-Kurs benutzt – dort ohne Mappe. */
 export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehlen }: { b: NummeriertesBlatt; bew: Bewertungen; onSchliessen: () => void; onOeffnen: (id: string) => void; gewaehlt?: boolean; onWaehlen?: (sprache: Sprache) => void }) {
   // gemerkte Sprache (gilt für alle Blätter); ohne französische Fassung Deutsch
@@ -276,7 +287,7 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
             </div>
             {zusaetze.length ? (
               <div>
-                <div className="mb-1.5 text-[12.5px] text-muted">Je 1 Seite zum Beobachten und für die Familien:</div>
+                <div className="mb-1.5 text-[12.5px] text-muted">Je 1 Seite {zusatzZweck(zusaetze.map((z) => z.id))}:</div>
                 <div className="flex flex-wrap gap-2">
                   {zusaetze.map((z) => (
                     <button key={z.id} type="button" className="btn btn-sm" onClick={() => laden(z.id)} disabled={!!laedt} title={`${z.de} als eigenes PDF${sprache === 'fr' ? ' (französisch)' : ''}`}>
@@ -348,6 +359,12 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
                     {a.dauer ? <span className="text-muted"> · {a.dauer}</span> : null}
                   </li>
                 ))}
+                {inhalt.lehrer.spielschule.experiment ? (
+                  <li>
+                    <b>{inhalt.lehrer.spielschule.experiment.titel}</b>
+                    <span className="text-muted"> · {sprache === 'fr' ? 'expérience de la semaine' : 'Experiment der Woche'}</span>
+                  </li>
+                ) : null}
                 {inhalt.lehrer.spielschule.reim ? (
                   <li>
                     <b>{inhalt.lehrer.spielschule.reim.titel}</b>
@@ -417,6 +434,30 @@ function ModulheftLeiste({ modul, sprache, laedt, onLaden }: { modul: Modul; spr
         <button type="button" className="btn btn-sm" disabled={beschaeftigt} onClick={() => onLaden(true)}>
           {laedt === heft + ':loesungen' ? <span className="spin" /> : <Icon name="book" />}
           Lösungsheft{fr}
+        </button>
+      </div>
+    </section>
+  )
+}
+
+/** Spielschule: alle Experimente der Woche als Forscherkartei (Deckblatt, Inhalt, je Experiment eine Seite, Register). */
+function ForscherkarteiLeiste({ anzahl, sprache, laedt, onLaden }: { anzahl: number; sprache: Sprache; laedt: boolean; onLaden: () => void }) {
+  const bereich = bereichById.get('spielschule')!
+  return (
+    <section className="bl-heft" style={{ ['--bc' as string]: bereich.farben.tief }} aria-label="Forscherkartei Spielschule">
+      <span className="bl-bereich-ic" style={{ background: bereich.farben.zart }}>
+        <ZeichnungSvg z={{ ...iconZeichnung('search'), w: 1.6 }} p={{ ...palette(bereich.farben), tinte: bereich.farben.tief }} />
+      </span>
+      <div className="bl-heft-text">
+        <b>Forscherkartei Spielschule</b>
+        <span>
+          {anzahl === 1 ? 'Das Experiment der Woche' : `Alle ${anzahl} Experimente der Woche`} in einem PDF – nach Jahreszeiten und Themen, mit Inhalt und Register nach Phänomenen.
+        </span>
+      </div>
+      <div className="bl-heft-knoepfe">
+        <button type="button" className="btn btn-sm btn-primary" disabled={laedt} onClick={onLaden}>
+          {laedt ? <span className="spin" /> : <Icon name="download" />}
+          Forscherkartei (PDF){sprache === 'fr' ? ' · FR' : ''}
         </button>
       </div>
     </section>
@@ -521,6 +562,21 @@ export function Blaetter({
       toast(`${loesungen ? 'Lösungsheft' : 'Heft'} erstellt: ${name}`, 'ok')
     } catch (e) {
       toast(e instanceof Error ? e.message : 'Das Heft konnte nicht erstellt werden.', 'error')
+    } finally {
+      setLaedt(null)
+    }
+  }
+
+  // Forscherkartei: Einheiten mit Experiment; Französisch nur, wenn jedes Experiment auch eine FR-Fassung hat
+  const mitExperiment = useMemo(() => alleBlaetter.filter((b) => experimentVon(b, 'de')), [])
+  const karteiSprache: Sprache = mitExperiment.every((b) => experimentVon(b, 'fr')) ? gewaehlteSprache : 'de'
+  async function karteiLaden() {
+    setLaedt('kartei')
+    try {
+      const m = await loadPdfModule()
+      toast(`Forscherkartei erstellt: ${await m.downloadForscherkartei(alleBlaetter.map((b) => ({ blatt: b, nr: b.nr })), karteiSprache)}`, 'ok')
+    } catch (e) {
+      toast(e instanceof Error ? e.message : 'Die Forscherkartei konnte nicht erstellt werden.', 'error')
     } finally {
       setLaedt(null)
     }
@@ -673,6 +729,7 @@ export function Blaetter({
             {MODULE.filter((m) => m.bereich === filter.bereich).map((m) => (
               <ModulheftLeiste key={m.id} modul={m} sprache={heftSprache(m)} laedt={laedt} onLaden={(loesungen) => heftLaden(m, loesungen)} />
             ))}
+            {filter.bereich === 'spielschule' && mitExperiment.length ? <ForscherkarteiLeiste anzahl={mitExperiment.length} sprache={karteiSprache} laedt={laedt === 'kartei'} onLaden={karteiLaden} /> : null}
             {treffer.length === 0 ? (
               <div className="panel px-6 py-12 text-center">
                 <h2 className="disp text-[20px] text-ink">Kein passendes Arbeitsblatt</h2>
