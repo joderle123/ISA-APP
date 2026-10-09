@@ -121,7 +121,7 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   const stellen: (Bogen | '*')[] = leicht ? ['*', '*'] : BLATT_BOGEN[o.phase as Bogen]
   const gewaehlt: Bewertet[] = []
   const reserve: string[] = []
-  if (c.hilft.has('stundenleiste') || c.p.zugang.struktur === 'hoch') reserve.push(BLATT_SYSTEM.stundenleiste)
+  if (c.hilft.has('stundenleiste') || c.hilft.has('bildplan') || c.p.zugang.struktur === 'hoch') reserve.push(BLATT_SYSTEM.stundenleiste)
   let gruppe: 'spielschule' | 'toolbox' | null = null
   const notfallNoetig = () => gewaehlt.some((b) => intern(k).notfallBlatt.has((b.e as MikroBaustein).quelle.blatt)) || (c.vorsicht.has('heikel') && c.alter >= 10)
   const refs = (liste: Bewertet[]) => [...reserve, ...liste.map((b) => b.e.id), ...(notfallNoetig() || liste.some((b) => intern(k).notfallBlatt.has((b.e as MikroBaustein).quelle.blatt)) ? [BLATT_SYSTEM.notfall] : [])]
