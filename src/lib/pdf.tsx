@@ -5,6 +5,7 @@ import { slug } from './slug'
 import { BlattDokument, MappeDokument, type BlattOptionen } from '../blatt/pdf/BlattDokument'
 import { ModulheftDokument } from '../blatt/pdf/Modulheft'
 import { ForscherkarteiDokument, forscherkarteiDateiname, type KarteiQuelle } from '../blatt/pdf/Forscherkartei'
+import { JahresplanDokument, jahresplanDateiname } from '../blatt/pdf/Jahresplan'
 import { modulheftDateiname, type Modul } from '../blatt/module'
 import { registriereSchriften } from '../blatt/pdf/stil'
 import type { Blatt, Sprache } from '../blatt/typen'
@@ -111,5 +112,14 @@ export async function downloadForscherkartei(blaetter: KarteiQuelle[], sprache: 
   schriften()
   const name = forscherkarteiDateiname(sprache)
   saveBlob(await pdf(<ForscherkarteiDokument blaetter={blaetter} sprache={sprache} />).toBlob(), name)
+  return name
+}
+
+/** Jahresplan Spielschule: Drei-Jahres-Rad mit Festkalender, Wochenübersicht und Kompetenzlandkarte je Jahr,
+ *  Joker und Register (nur Deutsch). Die Blätter kommen vom Aufrufer (wie bei der Forscherkartei). */
+export async function downloadJahresplan(blaetter: KarteiQuelle[]): Promise<string> {
+  schriften()
+  const name = jahresplanDateiname()
+  saveBlob(await pdf(<JahresplanDokument blaetter={blaetter} />).toBlob(), name)
   return name
 }

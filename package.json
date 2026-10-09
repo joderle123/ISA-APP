@@ -16,6 +16,8 @@
     "blaetter:mappe": "tsx --tsconfig tsconfig.scripts.json scripts/mappe-pruefen.tsx",
     "blaetter:modulheft": "tsx --tsconfig tsconfig.scripts.json scripts/modulheft.tsx",
     "blaetter:forscherkartei": "tsx --tsconfig tsconfig.scripts.json scripts/forscherkartei.tsx",
+    "blaetter:jahresplan": "tsx --tsconfig tsconfig.scripts.json scripts/jahresplan.tsx",
+    "blaetter:jahresplan-daten": "tsx --tsconfig tsconfig.scripts.json scripts/spielschule-jahresplan.ts",
     "blaetter:lb": "tsx --tsconfig tsconfig.scripts.json scripts/lb-liste.ts",
     "kurs:pruefen": "tsx --tsconfig tsconfig.scripts.json scripts/kurs-pruefen.ts",
     "kurs:test": "node scripts/kurs-test.cjs",

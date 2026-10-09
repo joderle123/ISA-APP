@@ -32,6 +32,13 @@ Musterblätter zum Anschauen: `gefuehle.json` (Mein Wutvulkan, Ballon-Atmen) und
    Register nach Phänomenen): `npm run blaetter:forscherkartei -- [ordner] --fr --png` (Entwürfe dazu mit
    `--datei=<entwurf>.json`, nur diese mit `--nur-datei`). Das Skript meldet einen Fehler, wenn eine Seite überläuft.
    In der Toolbox steht die Kartei oben im Bereich Spielschule (Knopf „Forscherkartei (PDF)“, Sprache wie gemerkt).
+9. Jahresplan Spielschule (Drei-Jahres-Rad A/B/C, je 36 Wochen, Festkalender, Kompetenzlandkarte, Joker, Register;
+   nur Deutsch, A4 quer): `npm run blaetter:jahresplan -- [ordner] --png`. Welche Einheit in welcher Woche steht, steht
+   in `src/data/spielschule-jahresplan.json`; neu verteilen mit `npm run blaetter:jahresplan-daten` (Regeln, Zeitfenster
+   und Joker-Kandidaten in `scripts/spielschule-jahresplan.ts`, Ferien und Feste in `src/blatt/jahresplan.ts`;
+   `-- --pruefen` meldet, ob die Datei noch zu den Regeln passt). Neue Spielschul-Einheiten brauchen dort ein
+   Zeitfenster, sonst bricht das Skript ab. Das PDF-Skript meldet einen Fehler, wenn eine Seite überläuft oder eine
+   Einheit im Plan fehlt. In der Toolbox steht der Plan unter der Forscherkartei (Knopf „Jahresplan (PDF)“).
 
 Umfang: Schülerteil **1 Seite** (C1, C2) bzw. **höchstens 2 Seiten** (C3–ES).
 Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen. Ausnahme Bereich `spielschule` (Themenwochen):
