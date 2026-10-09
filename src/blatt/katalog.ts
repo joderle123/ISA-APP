@@ -228,6 +228,9 @@ export const THEMEN: ThemaDef[] = [
   T('spielschule', 'unterwegs', 'Unterwegs und Berufe', 'En route et les métiers'),
   T('spielschule', 'feste', 'Feste im Jahr', 'Les fêtes de l’année'),
   T('spielschule', 'fantasie', 'Geschichten und Fantasie', 'Histoires et imagination'),
+  T('spielschule', 'forschen', 'Forschen, Natur und Technik', 'Explorer, nature et technique'),
+  T('spielschule', 'sprachen', 'Sprachen und Bücher', 'Langues et livres'),
+  T('spielschule', 'kunst', 'Kunst, Musik und Bühne', 'Art, musique et scène'),
 ]
 
 export const themaById = new Map(THEMEN.map((t) => [t.bereich + '/' + t.id, t]))
