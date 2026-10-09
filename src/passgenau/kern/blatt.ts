@@ -93,7 +93,10 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
       continue
     }
     if (pruefe(e, c, { blatt: true, gesperrt: o.gesperrt }) !== null) continue
-    const bonus = (o.kern?.typ === 'schritt' && o.kern.blatt?.includes(e.id) ? 0.1 : 0) + (o.kern && o.kern.eldib.some((x) => x.gewicht === 1 && e.eldib.some((y) => y.code === x.code && y.gewicht === 1)) ? 0.08 : 0)
+    const bonus =
+      (o.kern?.typ === 'schritt' && o.kern.blatt?.includes(e.id) ? 0.1 : 0) +
+      (o.kern && o.kern.eldib.some((x) => x.gewicht === 1 && e.eldib.some((y) => y.code === x.code && y.gewicht === 1)) ? 0.08 : 0) +
+      (o.kern?.thema[0] && e.thema.includes(o.kern.thema[0]) ? 0.05 : 0)
     pool.push(bewerte(e, c, { phase: o.phase, fokus: o.fokus, bonus }))
   }
   const passend = leicht ? pool : pool.filter((b) => relevant(b) || b.e.bogen === 'reflektieren')
@@ -117,7 +120,11 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
     if (alle.filter((b) => (b.e as MikroBaustein).art[0] === 'aufgabe').length > maxAufgaben) return false
     const jeQuelle = new Map<string, number>()
     for (const b of alle) jeQuelle.set((b.e as MikroBaustein).quelle.blatt, (jeQuelle.get((b.e as MikroBaustein).quelle.blatt) ?? 0) + 1)
-    if ([...jeQuelle.values()].some((n) => n > 2 + (neu.length > 1 ? 1 : 0))) return false
+    // höchstens zwei Pakete je Quellblatt; eine Geschichte, die ein Paket braucht, zählt nicht mit
+    const abhaengig = new Set(alle.flatMap((b) => (b.e as MikroBaustein).braucht ?? []))
+    jeQuelle.clear()
+    for (const b of alle) if (!abhaengig.has(b.e.id)) jeQuelle.set((b.e as MikroBaustein).quelle.blatt, (jeQuelle.get((b.e as MikroBaustein).quelle.blatt) ?? 0) + 1)
+    if ([...jeQuelle.values()].some((n) => n > 2)) return false
     return true
   }
   const salz = o.salz + '|blatt'
@@ -128,7 +135,7 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
     kand = kand.filter((b) => !gewaehlt.includes(b) && (!gruppe || urheberGruppe(c, b.e as MikroBaustein) === gruppe))
     // Abwechslung: Format schon auf dem Blatt → weniger; derselbe Bogen wie die Stelle → mehr
     const formate = new Set(gewaehlt.flatMap((b) => b.e.format))
-    kand.sort((a, b) => rang(mitStelle(a, stelle, formate), mitStelle(b, stelle, formate), `${salz}|${i}`))
+    kand.sort((a, b) => rang(mitStelle(a, stelle, formate, gewaehlt), mitStelle(b, stelle, formate, gewaehlt), `${salz}|${i}`))
     for (const b of kand) {
       const e = b.e as MikroBaustein
       const deps = (e.braucht ?? []).filter((d) => !gewaehlt.some((x) => x.e.id === d)).map((d) => nurAbhaengig.get(d) ?? pool.find((x) => x.e.id === d))
@@ -171,14 +178,17 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   for (const b of gewaehlt) jeQuelle.set((b.e as MikroBaustein).quelle.blatt, (jeQuelle.get((b.e as MikroBaustein).quelle.blatt) ?? 0) + 1)
   const [haupt, n] = [...jeQuelle.entries()].sort((a, b) => b[1] - a[1])[0]
   const quelle = intern(k).q.blatt.get(haupt)!
-  const titel = n / gewaehlt.length >= 0.6 && !leicht ? (c.sprache === 'fr' && quelle.fr ? quelle.fr.titel : quelle.de.titel) : blattTitel(c, o.salz, leicht)[c.sprache]
+  const titel = n === gewaehlt.length && !leicht ? (c.sprache === 'fr' && quelle.fr ? quelle.fr.titel : quelle.de.titel) : blattTitel(c, o.salz, leicht)[c.sprache]
   return { teile, titel, hinweise, bewertet: new Map(gewaehlt.map((b) => [b.e.id, b])) }
 }
 
-function mitStelle(b: Bewertet, stelle: Bogen | '*', formate: Set<string>): Bewertet {
+function mitStelle(b: Bewertet, stelle: Bogen | '*', formate: Set<string>, gewaehlt: Bewertet[]): Bewertet {
   let s = b.s
   if (stelle !== '*' && b.e.bogen === stelle) s += 0.05
   if (b.e.format.some((f) => formate.has(f))) s -= 0.04
+  // roter Faden auf dem Blatt: gleiches Thema wie die schon gewählten Teile
+  const themen = new Set(gewaehlt.flatMap((x) => x.e.thema.slice(0, 1)))
+  if (gewaehlt.length && b.e.thema.some((t) => themen.has(t))) s += 0.05
   return { ...b, s }
 }
 

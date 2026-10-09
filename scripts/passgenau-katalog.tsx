@@ -814,7 +814,8 @@ function kursSchritt(art: 'k' | 'f', e: { id: string; blaetter: string[] }, s: K
     case 'aktiv':
       if (formate.includes('bewegung')) rolle.push('bewegung')
       rolle.push('spiel')
-      if (s.dauer >= 10) rolle.push('kern')
+      // Aufwärmen und reine Bewegung tragen kein Ziel – nicht als Kern
+      if (s.dauer >= 10 && !/(aufwärm|warm-up|energizer|lockern|pause)/i.test(s.titel) && (formate.includes('rollenspiel') || formate.includes('gespraech') || formate.includes('denkmodell'))) rolle.push('kern')
       break
     case 'skill':
       rolle.push('regulation')
@@ -826,8 +827,10 @@ function kursSchritt(art: 'k' | 'f', e: { id: string; blaetter: string[] }, s: K
   }
   const einzel = einzelAusText(text)
   const blattIds = s.blatt ? [s.blatt] : []
-  const themen = themenAus([...new Set(e.blaetter.flatMap(blattThemenVon))].slice(0, 2), text)
-  const eldib = eldibBezug(e.blaetter.flatMap((b) => q.blatt.get(b)?.eldib ?? []))
+  const themen = themenAus([...new Set((s.blatt ? [s.blatt] : e.blaetter).flatMap(blattThemenVon))].slice(0, 2), text)
+  // Ziele: das Blatt dieses Schritts trägt sie (primär); sonst nur schwach die Blätter der Einheit
+  const eigenesBlatt = s.blatt ? q.blatt.get(s.blatt) : undefined
+  const eldib = eigenesBlatt ? eldibBezug(eigenesBlatt.eldib) : eldibBezug(e.blaetter.flatMap((b) => q.blatt.get(b)?.eldib ?? []), false)
   const kursBezug = RE.kursBezug.test(text)
   const bogen = s.phase === 'ankommen' || s.phase === 'abschluss' ? undefined : bogenAusText(text, s.phase === 'input' ? 'verstehen' : s.phase === 'bruecke' ? 'reflektieren' : 'ueben')
   const id = `${art}:${e.id}:${i}`

@@ -119,7 +119,10 @@ function texteAusQuelle(m: { id: string; stelle?: number }, q: Quellen, idx: Ind
     const a = mat?.ablauf[i]
     if (!mat || !a) return null
     const roh = (a.title ?? '').replace(/\s*\((ca\.|etwa)?[^)]*Min[^)]*\)\s*$/i, '').trim()
-    const titel = roh.includes(' – ') ? roh.split(' – ').slice(1).join(' – ') : roh.includes(' - ') ? roh.split(' - ').slice(1).join(' - ') : roh || mat.title
+    const nachStrich = roh.includes(' – ') ? roh.split(' – ').slice(1).join(' – ') : roh.includes(' - ') ? roh.split(' - ').slice(1).join(' - ') : roh
+    // „Spielen“, „Durchführung 2“, „Hauptteil“: allein sagt das nichts – dann der Titel des Materials
+    const allgemein = /^(einstieg|spielen|durchführung|üben|übung|hauptteil|hauptphase|erarbeitung|aktivität|vertiefung|phase|einheit|stunde|input|gestalten|auswertung|abschluss|reflexion|transfer)(\s*\d+)?\s*(\(.*\))?$/i.test(nachStrich.trim())
+    const titel = !nachStrich || allgemein ? mat.title : nachStrich
     return {
       quelle: { art: 'material', titel: mat.title },
       titel, text: a.text,

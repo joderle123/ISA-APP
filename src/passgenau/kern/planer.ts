@@ -180,7 +180,9 @@ export function kandidaten(c: Kontext, s: SlotAuftrag): Wahl[] {
       if (!dauerPasst(e, s.min, locker)) continue
       if (s.rolle === 'kern' && s.kernFormate?.length === 2 && s.kernFormate[0] === s.kernFormate[1] && e.format[0] === s.kernFormate[0]) continue
       if (s.rolle === 'bewegung' && c.heute.energie >= 6 && e.energie < 2) continue
-      const b = bewerte(e, c, { phase: s.phase, formate: s.formate, vorigerKern: s.vorigerKern, fokus: s.fokus, locker, bonus: s.bevorzugt?.has(e.id) ? 1 : 0 })
+      // Phasen aus Material-Einheiten sind Teile längerer Stunden: als kurzes Spiel oder Pause weniger passend
+      const malus = e.id.startsWith('m:') && (s.rolle === 'spiel' || s.rolle === 'bewegung' || s.rolle === 'regulation' || s.rolle === 'wahl') ? 0.08 : 0
+      const b = bewerte(e, c, { phase: s.phase, formate: s.formate, vorigerKern: s.vorigerKern, fokus: s.fokus, locker, bonus: (s.bevorzugt?.has(e.id) ? 1 : 0) - malus })
       if (phaseSlot && locker < 1 && e.bogen && s.phase !== 'leicht' && b.f.phase < 0.3) continue
       if (zielSlot && !(b.f.ziel >= (locker >= 2 ? 0.15 : 0.25) || b.f.thema > 0)) continue
       out.push({ b, locker, lockerText: locker >= 3 && e.typ === 'schritt' ? lockerGrund(c, e, locker) : undefined })
@@ -228,7 +230,7 @@ function waehleRitual(c: Kontext, rolle: 'ankommen' | 'abschluss', min: number, 
     if (pruefe(e, c, { ritual: true, rolle }) !== null) continue
     if (!(e.dauer.min <= min + 2)) continue
     // Rituale sollen tragen, nicht lehren: kurze, einzeltaugliche Schritte bevorzugt
-    const b = bewerte(e, c, { phase: c.weg === 'leicht' ? 'leicht' : undefined, bonus: (e.id === gewuenscht ? 0.6 : 0) + (e.einzeltauglich === 'ja' ? 0.05 : 0) + (e.typ === 'schritt' && e.quelle.art === 'ritual' ? 0.1 : 0) - (e.dauer.typ > min * 2 ? 0.08 : 0) })
+    const b = bewerte(e, c, { phase: c.weg === 'leicht' ? 'leicht' : undefined, bonus: (e.id === gewuenscht ? 0.6 : 0) + (e.einzeltauglich === 'ja' ? 0.05 : 0) + (e.typ === 'schritt' && e.quelle.art === 'ritual' ? 0.5 : e.id.endsWith(':reim') ? 0.2 : 0) - (e.dauer.typ > min * 2 ? 0.08 : 0) })
     liste.push(b)
   }
   liste.sort((a, b) => rang(a, b, salz))
@@ -430,6 +432,8 @@ function erkunde(c: Kontext, o: SitzungsAuftrag, schritte: (PlanSchritt | null)[
   const liste = kandidaten(c, { rolle: wahl.slot.rolle, min: wahl.slot.min, phase: o.phase, nr: o.nr, salz: salz + '|erk-k', gesperrt: benutzt, vorher: o.vorher, formate: new Set() })
     .map((w) => w.b)
     .filter((b) => b.e.id !== best.e.id && b.g >= 0.85 * best.g && b.e.format[0] !== best.e.format[0])
+    // Phasen aus Material-Einheiten nur zusammen mit ihrem Kern (roter Faden)
+    .filter((b) => !b.e.id.startsWith('m:') || wahl.slot.rolle === 'kern')
     .filter((b) => vorliebe(c.v, 'kind', `baustein:${b.e.id}`, c.datum).p > -0.3 && vorliebe(c.v, 'ich', `baustein:${b.e.id}`, c.datum).p > -0.5)
   liste.sort((a, b) => vertrauenKind(a.e, c.v, c.datum) - vertrauenKind(b.e, c.v, c.datum) || b.g - a.g || (a.e.id < b.e.id ? -1 : 1))
   const neu = liste[0]
