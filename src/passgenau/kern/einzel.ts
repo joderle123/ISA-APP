@@ -49,6 +49,8 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   mobbing: /\b(Mobbing|gemobbt|Diskriminierung|diskriminier\w*|Rassismus|rassistisch\w*|Forumtheater|Ausgrenzung erleben)\b|\b(harcèlement|discrimination|racisme)\b/i,
   // Notiz für Erwachsene im Text des Kindes (A3)
   fuerleitung: /\b(Für die Leitung|Für die Lehrkraft|Für Lehrpersonen|Hinweis für (die )?(Leitung|Lehrkraft|Fachkraft)|Lehrperson trägt ein|Eltern unterschreiben)\b|\b(pour l['’]enseignant|pour l['’]animateur|à l['’]attention de l['’]enseignant)\b/i,
+  // Sorgen und Kummer hervorholen (in Krisenlage nicht, A12): Sorgen-Box, Sorgen-Stein, Trost-Koffer für traurige Tage
+  sorgen: /\b(Sorge|Sorgen\w*|Kummer\w*|traurige[nr]? Tag\w*|Trost-?Koffer|Trostplan|soucis?|chagrin)\b/i,
   // Gefühle abfragen (in Krisenlage nicht, A12)
   gefuehlfrage: /\b(fühle ich mich|Wie bereit fühlst du dich|wo bist du (jetzt|gerade)|Wie fühlst du dich|Wie geht es dir|Was macht dich (traurig|wütend|Angst)|ich bin traurig, weil|Ich fühle mich|Daumen (hoch|runter|hoch oder runter)|wie (traurig|wütend) bist du|Gefühl(e)? (benennen|zeigen|abfragen|erzählen)|Welches Tier bist du|Wie ist das Wetter bei dir|wie es (dir|dem Kind) (heute )?geht|wie (es|er|sie) sich (heute )?fühlt|innen heute anfühlt|eigenen Gefühl\w*|persönlichen Beispiel\w*)\b|\b(Comment te sens-tu|Comment ça va|pouce en (haut|bas)|Je me sens|Quel animal es-tu)\b/i,
   // Wut ausleben (A4, Ergänzung zu KATHARSIS_RE): stampfen, reißen, schlagen, schreien MIT Wut

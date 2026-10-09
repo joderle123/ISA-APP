@@ -234,9 +234,12 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     if (tm.has('mobbing') && (c.vorsicht.has('trauma') || c.vorsicht.has('heikel'))) return 'Vorsicht Trauma'
     if (tm.has('belastend') && (c.vorsicht.has('heikel') || c.vorsicht.has('trauma') || (c.p.achtung ?? []).length)) return 'belastend'
     if (tm.has('gefuehlfrage') && krisenlage(c)) return 'Gefühle abfragen'
+    if (tm.has('sorgen') && krisenlage(c)) return 'Gefühle abfragen'
   }
   // Krisenlage: auf dem Blatt keine Skala, kein Check-in, kein Rückblick zu Gefühl oder Stimmung (A12)
   if (krisenlage(c) && e.typ === 'baustein' && e.art.some((a) => a === 'skala' || a === 'checkin' || a === 'rueckblick' || a === 'thermometer') && (e.kompetenz.some((x) => x.startsWith('gefuehle')) || e.thema.some((t) => t === 'gefuehle' || t === 'traurig' || t === 'angst' || t === 'wut'))) return 'Gefühle abfragen'
+  // Krisenlage: kein Wut-Material, wenn Wut beim Kind gar kein Thema ist (Wutvulkan bei Trauer)
+  if (krisenlage(c) && e.thema.includes('wut') && !c.themen.has('wut') && !c.ziele.some((z) => z.feld === 'impulskontrolle' || z.feld === 'selbstregulation')) return 'fremdes Thema'
   // Krisenlage: kein Gespräch über Gefühle oder Belastendes (A12) – auch ohne die Wörter oben
   if (krisenlage(c) && e.typ === 'schritt' && e.format[0] === 'gespraech' && (e.belastung >= 1 || e.kompetenz.some((x) => x.startsWith('gefuehle')))) return 'Gefühle abfragen'
   // Stimmung ≤ 2: nichts Lautes, keine Vollgas-Aktivität (A5)
