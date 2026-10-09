@@ -250,6 +250,17 @@ export type Baustein =
   // --- Abschluss -------------------------------------------------------------
   | { art: 'rueckblick'; frage?: string }
   | { art: 'notfall'; eintraege?: { name: string; nummer: string }[]; text?: string }
+  // --- Passgenau: Karten und Hilfen für Einzelstunden (Konzept Passgenau 7.5, 10) ------------------------------------
+  /** Ich-Satz groß, darunter 1–7 Kästchen „geschafft“ (oder je Tag ein Wort in `tage`). */
+  | { art: 'zielkarte'; text: string; titel?: string; kaestchen?: number; tage?: string[] }
+  /** Ankommen: Gesichter (nur bis C4), Wetter oder Zahl 0–10 zum Einkreisen. */
+  | { art: 'checkin'; frage?: string; modus?: 'gesichter' | 'wetter' | 'zahl' }
+  /** Wahl in der Stunde: 2–3 Optionen mit Bild (jugend: ohne Bild) und Kästchen. */
+  | { art: 'wahlkarte'; frage?: string; optionen: { text: string; bild?: BildId; min?: number }[] }
+  /** Ablauf der Stunde fürs Kind: 2–7 Teile mit Piktogramm, Wort und Minuten. */
+  | { art: 'stundenleiste'; titel?: string; schritte: { text: string; bild?: BildId; min?: number }[] }
+  /** Checkliste zum Abhaken. */
+  | { art: 'abhaken'; titel?: string; items: string[] }
 
 export type BausteinArt = Baustein['art']
 
@@ -616,6 +627,10 @@ export interface Blatt {
   kurs?: string[]
   /** Nur Spielschule: Domänen, Wörterstreifen DE/FR/LB/PT, Satz der Woche, Elternbrief (für beide Sprachfassungen). */
   woche?: Themenwoche
+  /** Passgenau: zusammengesetztes Kinderblatt – „Mein Ziel“-Zeile unter dem Titel (statt des Untertitels) und die
+   *  Herkunft der Bausteine im Fuß („Bausteine aus G-01, S-18“). Texte je Sprache. `teile`: je Baustein die Kennung
+   *  des Teils, das dort beginnt (wird als Ziel im PDF gesetzt – für die antippbare Vorschau). */
+  passgenau?: { ziel?: Partial<Record<Sprache, string>>; herkunft?: string; teile?: (string | null)[] }
   de: BlattInhalt
   fr?: BlattInhalt
 }

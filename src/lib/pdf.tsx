@@ -123,3 +123,6 @@ export async function downloadJahresplan(blaetter: KarteiQuelle[]): Promise<stri
   saveBlob(await pdf(<JahresplanDokument blaetter={blaetter} />).toBlob(), name)
   return name
 }
+
+// Passgenau (Planblatt, Blatt, Karten, Mappe) – im PDF-Modul, damit react-pdf nicht ins Hauptbündel kommt
+export { passgenauPdf } from '../passgenau/pdf/ausgabe'

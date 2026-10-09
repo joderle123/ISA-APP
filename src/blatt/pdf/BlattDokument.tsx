@@ -84,8 +84,9 @@ function Kopfzeile({ blatt, nr, sprache, p, m, lehrer, heft }: { blatt: Blatt; n
   const tx = TEXTE[sprache]
   // Im Heft: „Lektion 1“ als Reiter, Modul und Thema daneben, keine Namensfelder (der Name steht auf dem Deckblatt)
   const nummer = heft ? (lehrer ? heft.reiter : '') : [nr ? `${tx.arbeitsblatt} ${nr}` : null, stufenText(blatt.stufen)].filter(Boolean).join('  ·  ')
-  const thema = heft ? heft.meta : themaLabel(blatt.bereich, blatt.thema, sprache)
-  const reiter = lehrer ? tx.lehrer : heft ? heft.reiter : bereich[sprache]
+  // Passgenau: kein Bereichs-Etikett auf dem Blatt des Kindes (Farbe bleibt, Text „Passgenau“)
+  const thema = heft ? heft.meta : blatt.passgenau ? '' : themaLabel(blatt.bereich, blatt.thema, sprache)
+  const reiter = lehrer ? tx.lehrer : heft ? heft.reiter : blatt.passgenau ? 'Passgenau' : bereich[sprache]
   // Passt die Meta-Zeile neben Reiter, Name und Datum? Breiten je Zeichen an Inter 7,4 pt und
   // Manrope 7 pt (Versalien) gemessen – obere Werte, damit nie eine Zeile ungewollt umbricht.
   const felder = lehrer || heft ? 0 : m.layout === 'bild' ? 14 + 27 + 150 : 14 + 27 + 118 + 14 + 27 + 62
@@ -143,7 +144,7 @@ function Fusszeile({ blatt, nr, sprache, heft }: { blatt: Blatt; nr?: string; sp
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>{heft ? heft.fuss : u.marke[sprache]}</Text>
           {/* immer eine Zeile: ein sehr langer Titel endet mit „…“, statt die Fußzeile zu erhöhen */}
           <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, marginLeft: 6, flex: 1, maxLines: 1, textOverflow: 'ellipsis' }}>
-            {[nr && !heft ? `${tx.arbeitsblatt} ${nr}` : null, typo(blattInhalt(blatt, sprache).titel, sprache)].filter(Boolean).join('  ·  ')}
+            {[nr && !heft ? `${tx.arbeitsblatt} ${nr}` : null, typo(blattInhalt(blatt, sprache).titel, sprache), blatt.passgenau?.herkunft ?? null].filter(Boolean).join('  ·  ')}
           </Text>
           {/* Seiten zählen je Blatt (auch in einer Mappe); ein einseitiger Teil braucht keine Seitenzahl.
               Feste Breite: Der Titel wird gesetzt, bevor die Seitenzahl feststeht – so berührt er sie nie. */}
@@ -177,6 +178,12 @@ function Titelblock({ blatt, inhalt, sprache, p, m, heft }: { blatt: Blatt; inha
             <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>
               <Text style={{ fontWeight: m.fett, color: p.tief }}>{heft.zielWort ?? 'Mein Ziel:'} </Text>
               {typo(heft.lernziel, sprache)}
+            </Text>
+          ) : blatt.passgenau?.ziel?.[sprache] ? (
+            // Passgenau: Ich-Satz des Förderziels statt des Untertitels
+            <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>
+              <Text style={{ fontWeight: m.fett, color: p.tief }}>{typo(TEXTE[sprache].meinZiel + ':', sprache)} </Text>
+              {typo(blatt.passgenau.ziel[sprache]!, sprache)}
             </Text>
           ) : inhalt.untertitel ? (
             <Text style={{ fontFamily: m.schrift, fontSize: m.untertitel, lineHeight: 1.4, color: NEUTRAL.leise, marginTop: 5 }}>{typo(inhalt.untertitel, sprache)}</Text>
@@ -542,7 +549,9 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
   const bereich = bereichById.get(blatt.bereich) ?? bereichById.get('werkzeuge')!
   const p = palette(opt?.farben ?? bereich.farben)
   const m = MASSE[blatt.layout ?? (blatt.bereich === 'werkzeuge' ? 'jugend' : layoutFuer(blatt.stufen))]
-  const c: Ctx = { m, p, sprache, nummern: nummerieren(inhalt.bausteine), breite: BREITE }
+  const teile = blatt.passgenau?.teile
+  const ids = teile ? new Map(inhalt.bausteine.flatMap((b, i) => (teile[i] ? [[b, teile[i]!] as const] : []))) : undefined
+  const c: Ctx = { m, p, sprache, nummern: nummerieren(inhalt.bausteine), breite: BREITE, ids }
   const melde = opt?.seite
   // Spielschule: Seite „Beobachten & Begleiten“ und Zusatzseiten mit demselben Kopf und Fuß wie alle Seiten
   const lehrerKopf = <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={LEHRER_MASSE} lehrer heft={opt?.heft} />

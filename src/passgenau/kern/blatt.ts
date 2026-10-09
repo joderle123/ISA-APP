@@ -1,0 +1,420 @@
+// Passgenau – das Blatt der Sitzung: zusammensetzen (5.5, T-M2, P2, E-M3) und als synthetisches Blatt für den
+// vorhandenen Renderer ausgeben (7.5, E-M13). Bausteine aus verschiedenen Blättern, je Quelle höchstens zwei,
+// Seiten- und Zeitbudget, Hilfe-Zeile bleibt, kein Etikett („Passgenau“ statt Bereich, „Mein Ziel“ nur auf Wunsch).
+import type { Baustein, Blatt, BlattInhalt, Bereich, Sprache as BlattSprache } from '../../blatt/typen'
+import type { BlattTeil, Bogen, KatalogEintrag, Layout, MikroBaustein, Plan, Profil, Rolle, Sprache } from '../typen'
+import { hash8, hash01, stufeAusAlter, stufenAbstand, istEldib } from './hilfen'
+import { bausteinInhalt, intern, zielSatz as zielSatzVon, type Katalog } from './katalog'
+import { setzeText, texte } from './inhalt'
+import { bewerte, NACHBAR, pruefe, rang, type Bewertet, type Kontext } from './regeln'
+import { seitenMasse, teilHoehe, verteile } from './seiten'
+import { BLATT_SYSTEM } from './system'
+import { interesseName, SKILLS_BEREICH, type Kompetenz } from './vokabular'
+
+/** Lernbogen des Blatts je Sitzungsphase (5.5 Schritt 1). */
+export const BLATT_BOGEN: Record<Bogen, Bogen[]> = {
+  wahrnehmen: ['wahrnehmen', 'verstehen', 'reflektieren'],
+  verstehen: ['wahrnehmen', 'verstehen', 'ueben', 'reflektieren'],
+  ueben: ['verstehen', 'ueben', 'ueben', 'uebertragen'],
+  uebertragen: ['ueben', 'uebertragen', 'reflektieren'],
+  reflektieren: ['wahrnehmen', 'uebertragen', 'reflektieren'],
+}
+const MITMACH_ARTEN = new Set(['labyrinth', 'suchbild', 'punkte_verbinden', 'laufweg', 'memory', 'klappbild', 'faedelkarte', 'bastelbogen', 'minibuch', 'anziehpuppe', 'schneiden_kleben', 'geo', 'atmen'])
+const BOGEN_REIHE: Bogen[] = ['wahrnehmen', 'verstehen', 'ueben', 'uebertragen', 'reflektieren']
+
+const TITEL: Record<Kompetenz, { kind: [string, string][]; jugend: [string, string][] }> = {
+  impulskontrolle: { kind: [['Mein Stopp-Plan', 'Mon plan stop'], ['Erst stoppen, dann handeln', 'D’abord stop, puis j’agis']], jugend: [['Stopp – denken – handeln', 'Stop – réfléchir – agir'], ['Impulse steuern', 'Gérer ses impulsions']] },
+  selbstregulation: { kind: [['Ruhig werden', 'Retrouver le calme'], ['Mein Ruhe-Plan', 'Mon plan calme']], jugend: [['Runterkommen', 'Redescendre'], ['Mein Plan für schwierige Momente', 'Mon plan pour les moments difficiles']] },
+  'gefuehle-erkennen': { kind: [['Was fühle ich?', 'Qu’est-ce que je ressens ?'], ['Gefühle erkennen', 'Reconnaître les émotions']], jugend: [['Gefühle lesen', 'Lire les émotions']] },
+  'gefuehle-ausdruecken': { kind: [['Meine Gefühle zeigen', 'Montrer mes émotions'], ['Sagen, was in mir los ist', 'Dire ce qui se passe en moi']], jugend: [['Gefühle in Worte fassen', 'Mettre des mots sur ses émotions']] },
+  aufmerksamkeit: { kind: [['Bei der Sache bleiben', 'Rester dans la tâche'], ['Mein Konzentrations-Plan', 'Mon plan concentration']], jugend: [['Fokus halten', 'Garder le cap']] },
+  ausdauer: { kind: [['Schritt für Schritt', 'Pas à pas'], ['Ich bleibe dran', 'Je continue']], jugend: [['Dranbleiben', 'Tenir bon']] },
+  kooperation: { kind: [['Gemeinsam geht es', 'Ensemble, ça marche'], ['Zusammen spielen und arbeiten', 'Jouer et travailler ensemble']], jugend: [['Gemeinsam statt allein', 'Ensemble plutôt que chacun pour soi']] },
+  konflikte: { kind: [['Streit lösen', 'Résoudre une dispute'], ['Meine Brücke im Streit', 'Mon pont dans la dispute']], jugend: [['Konflikte klären', 'Régler un conflit']] },
+  kommunikation: { kind: [['Reden und zuhören', 'Parler et écouter'], ['Ich sage, was ich brauche', 'Je dis ce dont j’ai besoin']], jugend: [['Klar sagen, gut zuhören', 'Dire clairement, bien écouter']] },
+  selbstbild: { kind: [['Das kann ich', 'Ce que je sais faire'], ['Meine Stärken', 'Mes forces']], jugend: [['Was mich ausmacht', 'Ce qui me caractérise']] },
+  lernstrategien: { kind: [['Mein Lern-Trick', 'Mon astuce pour apprendre']], jugend: [['So lerne ich gut', 'Comment j’apprends bien']] },
+  alltag: { kind: [['Ich schaffe das', 'J’y arrive'], ['Mein Alltag', 'Mon quotidien']], jugend: [['Meinen Alltag planen', 'Organiser mon quotidien']] },
+}
+
+export function blattTitel(c: Kontext, salz: string, leicht: boolean, teile: KatalogEintrag[] = []): { de: string; fr: string } {
+  if (leicht) return c.alter >= 12 ? { de: 'Kurze Pause', fr: 'Petite pause' } : c.alter <= 5 ? { de: 'Spielen und malen', fr: 'Jouer et dessiner' } : { de: 'Heute machen wir es uns leicht', fr: 'Aujourd’hui, on y va doucement' }
+  // Titel nach dem, worum es auf dem Blatt wirklich geht: das Kompetenzfeld der meisten Teile (Rückblicke zählen nicht)
+  const zaehl = new Map<Kompetenz, number>()
+  for (const e of teile) if (!(e.typ === 'baustein' && e.art.includes('rueckblick'))) for (const k of e.kompetenz.slice(0, 1) as Kompetenz[]) if (TITEL[k]) zaehl.set(k, (zaehl.get(k) ?? 0) + e.dauer.typ)
+  const haupt = [...zaehl.entries()].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1))[0]?.[0]
+  const feld = haupt ?? c.ziele.find((z) => z.feld)?.feld ?? 'alltag'
+  const liste = TITEL[feld][c.alter >= 12 ? 'jugend' : 'kind']
+  const [de, fr] = liste[Math.floor(hash01(salz + '|titel') * liste.length)]
+  return { de, fr }
+}
+
+export interface BlattErgebnis {
+  teile: BlattTeil[]
+  titel: string
+  hinweise: string[]
+  bewertet: Map<string, Bewertet>
+}
+
+export interface BlattAuftrag {
+  phase: Bogen | 'leicht'
+  min: number
+  nr: number
+  salz: string
+  gesperrt: Set<string>
+  fokus?: Map<string, number>
+  kern?: KatalogEintrag
+  /** keine Untergrenze (Weg 3: Mitmach-Seite) */
+  optional?: boolean
+}
+
+function urheberGruppe(c: Kontext, e: MikroBaustein): 'spielschule' | 'toolbox' {
+  return intern(c.k).q.blatt.get(e.quelle.blatt)?.bereich === 'spielschule' ? 'spielschule' : 'toolbox'
+}
+
+function relevant(b: Bewertet): boolean {
+  return b.f.ziel >= 0.25 || b.f.thema > 0
+}
+
+/** Das Blatt einer Sitzung zusammensetzen. null: zu wenig Passendes – lieber ohne Blatt (P2). */
+export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
+  const k = c.k
+  const leicht = o.phase === 'leicht'
+  const layout: Layout = c.layout
+  const maxSeiten = layout === 'bild' || layout === 'gross' || o.min < 10 ? 1 : 2
+  const knapp = c.p.zugang.tempo === 'ruhig' || c.heute.konzentration <= 3
+  const maxAufgaben = knapp ? 3 : o.min <= 6 ? 2 : o.min <= 10 ? 4 : c.heute.konzentration >= 6 ? 6 : 5
+  const budget = 1.25 * o.min
+  const hinweise: string[] = []
+  // alle erlaubten Bausteine einmal bewerten
+  const pool: Bewertet[] = []
+  const nurAbhaengig = new Map<string, Bewertet>()
+  for (const e of k.eintraege.values()) {
+    if (e.typ !== 'baustein') continue
+    if (!leicht && e.ohneZiel && !e.art.includes('atmen')) continue
+    // Text- und Info-Kästen, Geschichten ohne Frage: nur als Teil eines Pakets, das sie braucht
+    if (e.art[0] !== 'aufgabe' && ['info', 'text', 'geschichte', 'wortspeicher', 'bild'].includes(e.art[0])) {
+      if (pruefe(e, c, { blatt: true, gesperrt: o.gesperrt }) === null) nurAbhaengig.set(e.id, bewerte(e, c, { phase: o.phase, fokus: o.fokus }))
+      continue
+    }
+    if (pruefe(e, c, { blatt: true, gesperrt: o.gesperrt }) !== null) continue
+    const bonus =
+      (o.kern?.typ === 'schritt' && o.kern.blatt?.includes(e.id) ? 0.1 : 0) +
+      (o.kern && o.kern.eldib.some((x) => x.gewicht === 1 && e.eldib.some((y) => y.code === x.code && y.gewicht === 1)) ? 0.08 : 0) +
+      (o.kern?.thema[0] && e.thema.includes(o.kern.thema[0]) ? 0.05 : 0) -
+      // ein ganz anderes Thema als die des Kindes und des Kerns (Verliebtsein, KI …) passt selten aufs Blatt
+      (c.themen.size && e.thema.length && !e.thema.some((t) => c.themen.has(t) || o.kern?.thema.includes(t)) ? 0.06 : 0) +
+      // Mitmach-Seite (Weg 3): Rätsel, Labyrinth, Malen, Muster – nicht Schilder oder Formulare
+      (leicht ? (e.art.some((a) => MITMACH_ARTEN.has(a)) || e.format.includes('malen') ? 0.15 : 0) - (e.art.includes('karten') || e.schreibmenge >= 2 || /formular|schild|deinen namen/i.test(kurzTitel(k, e)) ? 0.15 : 0) : 0)
+    // Ziel ±2 Stufen im selben Bereich mitbewerten (Lockerungsleiter 2) – zählt nur, wenn Engeres fehlt
+    pool.push(bewerte(e, c, { phase: o.phase, fokus: o.fokus, bonus, locker: 2 }))
+  }
+  // Ein Blatt hat mindestens zwei Teile: was allein das Zeit- oder Seitenbudget füllt, kommt nicht in Frage
+  const seite = seitenMasse(k, layout)
+  const allein = (b: Bewertet) => !leicht && !o.optional && (b.e.dauer.typ > budget - 2 || teilHoehe(k, b.e.id, layout) > 0.8 * seite.erste * maxSeiten)
+  // erst das, was klar zum Ziel oder Thema gehört; reicht das nicht für ein Blatt, Stufe für Stufe weiter:
+  // klar passend → passend (Ziel ±1, Thema) → weit (Ziel ±2 im Bereich, Kompetenzfeld; mit Hinweis)
+  const stark = (b: Bewertet) => b.f.ziel >= 0.5 || b.f.thema >= 0.7
+  const weit = (b: Bewertet) => b.f.ziel > 0 || b.f.thema > 0
+  const starkPool = pool.filter((b) => !allein(b) && stark(b))
+  const stufen: [string, (b: Bewertet) => boolean][] = leicht ? [['alle', () => true]] : [['stark', stark], ['relevant', relevant], ['weit', weit]]
+  const stellen: (Bogen | '*')[] = leicht ? ['*', '*'] : BLATT_BOGEN[o.phase as Bogen]
+  const gewaehlt: Bewertet[] = []
+  const reserve: string[] = []
+  if (c.hilft.has('stundenleiste') || c.hilft.has('bildplan') || c.p.zugang.struktur === 'hoch') reserve.push(BLATT_SYSTEM.stundenleiste)
+  let gruppe: 'spielschule' | 'toolbox' | null = null
+  const notfallNoetig = () => gewaehlt.some((b) => intern(k).notfallBlatt.has((b.e as MikroBaustein).quelle.blatt)) || (c.vorsicht.has('heikel') && c.alter >= 10)
+  const refs = (liste: Bewertet[]) => [...reserve, ...liste.map((b) => b.e.id), ...(notfallNoetig() || liste.some((b) => intern(k).notfallBlatt.has((b.e as MikroBaustein).quelle.blatt)) ? [BLATT_SYSTEM.notfall] : [])]
+  const passt = (neu: Bewertet[]): boolean => {
+    const alle = [...gewaehlt, ...neu]
+    const seiten = verteile(k, refs(alle), layout)
+    if (seiten.length > maxSeiten || seiten[seiten.length - 1] > 1) return false
+    if (alle.reduce((s, b) => s + b.e.dauer.typ, 0) > budget && (gewaehlt.length || o.min < 6)) return false
+    if (alle.filter((b) => (b.e as MikroBaustein).art[0] === 'aufgabe').length > maxAufgaben) return false
+    // ein Rückblick (Smileys, Daumen) je Blatt genügt
+    if (alle.filter((b) => (b.e as MikroBaustein).art.includes('rueckblick')).length > 1) return false
+    // Karten zum Ausschneiden: eine Sorte je Blatt
+    if (alle.filter((b) => (b.e as MikroBaustein).art.some((a) => a === 'karten' || a === 'schneiden_kleben' || a === 'memory')).length > 1) return false
+    // höchstens zwei Pakete je Quellblatt; eine Geschichte, die ein Paket braucht, zählt nicht mit
+    const abhaengig = new Set(alle.flatMap((b) => (b.e as MikroBaustein).braucht ?? []))
+    const jeQuelle = new Map<string, number>()
+    for (const b of alle) if (!abhaengig.has(b.e.id)) jeQuelle.set((b.e as MikroBaustein).quelle.blatt, (jeQuelle.get((b.e as MikroBaustein).quelle.blatt) ?? 0) + 1)
+    if ([...jeQuelle.values()].some((n) => n > 2)) return false
+    return true
+  }
+  const salz = o.salz + '|blatt'
+  const ziel = leicht || o.optional ? (o.min >= 6 && !leicht ? 2 : 1) : o.min >= 12 ? 3 : 2
+  const mindest = leicht || o.optional ? 1 : 2
+  let passend: Bewertet[] = []
+  let stufe = ''
+  for (const [name, test] of stufen) {
+    if (name === 'stark' && starkPool.length < 6) continue
+    const kernPassend = pool.filter((b) => test(b) && !allein(b))
+    if (!leicht && !o.optional && kernPassend.length < 3) continue
+    passend = pool.filter((b) => (test(b) || (!leicht && b.e.bogen === 'reflektieren')) && !allein(b))
+    // gierig je Stelle; bleibt nach dem ersten Teil kein Platz (große Bildkarte füllt die Seite), ohne ihn neu versuchen
+    const verboten = new Set<string>()
+    const versuche: { teile: Bewertet[]; gruppe: 'spielschule' | 'toolbox' | null }[] = []
+    for (let versuch = 0; versuch < 5; versuch++) {
+      gewaehlt.length = 0
+      gruppe = null
+      for (const [i, stelle] of stellen.entries()) {
+        const nachbar = stelle === '*' ? [] : NACHBAR[stelle]
+        let kand = passend.filter((b) => !verboten.has(b.e.id) && (stelle === '*' || b.e.bogen === stelle))
+        if (stelle !== '*' && kand.filter((b) => !gewaehlt.includes(b)).length < 3) kand = passend.filter((b) => !verboten.has(b.e.id) && (b.e.bogen === stelle || nachbar.includes(b.e.bogen!)))
+        kand = kand.filter((b) => !gewaehlt.includes(b) && (!gruppe || urheberGruppe(c, b.e as MikroBaustein) === gruppe))
+        // Abwechslung: Format schon auf dem Blatt → weniger; derselbe Bogen wie die Stelle → mehr
+        const formate = new Set(gewaehlt.flatMap((b) => b.e.format))
+        // auf einer Seite (C1/C2, kurze Slots) zählt der Platz: kleinere Teile lassen Raum für einen dritten
+        const mitPlatz = (b: Bewertet) => {
+          const x = mitStelle(b, stelle, formate, gewaehlt)
+          return maxSeiten === 1 ? { ...x, s: x.s - 0.08 * Math.min(1, teilHoehe(k, b.e.id, layout) / seite.erste) } : x
+        }
+        kand.sort((a, b) => rang(mitPlatz(a), mitPlatz(b), `${salz}|${i}`))
+        for (const b of kand) {
+          const e = b.e as MikroBaustein
+          const deps = (e.braucht ?? []).filter((d) => !gewaehlt.some((x) => x.e.id === d)).map((d) => nurAbhaengig.get(d) ?? pool.find((x) => x.e.id === d))
+          if (deps.some((d) => !d)) continue
+          if (!passt([...(deps as Bewertet[]), b])) continue
+          gewaehlt.push(...(deps as Bewertet[]), b)
+          gruppe ??= urheberGruppe(c, e)
+          break
+        }
+      }
+      versuche.push({ teile: [...gewaehlt], gruppe })
+      if (gewaehlt.length >= ziel || !gewaehlt.length) break
+      verboten.add(gewaehlt[0].e.id)
+    }
+    // bester Versuch: mindestens zwei Teile, bei längerem Slot lieber drei; dann die höhere Summe der Werte
+    const guete = (v: (typeof versuche)[number]) => Math.min(ziel, v.teile.length) * 10 + v.teile.reduce((x, b) => x + b.s, 0)
+    const bester = versuche.reduce((a, b) => (guete(b) > guete(a) ? b : a), versuche[0])
+    gewaehlt.splice(0, gewaehlt.length, ...bester.teile)
+    gruppe = bester.gruppe
+    if (gewaehlt.length >= mindest) {
+      stufe = name
+      break
+    }
+  }
+  if (gewaehlt.length < mindest) {
+    gewaehlt.length = 0
+    hinweise.push('Zu wenig passende Blatt-Teile für diese Sitzung – heute ohne Blatt, oder im Baukasten suchen.')
+    return null
+  }
+  if (stufe === 'weit') hinweise.push('Blatt gelockert: Teile aus dem Bereich des Ziels (nächste Stufen), nicht genau zum Ziel.')
+  // zu wenig für den Slot (Σ Minuten < Hälfte): mit passenden Teilen anderer Stellen auffüllen
+  if (!leicht && !o.optional) {
+    const summe = () => gewaehlt.reduce((x, b) => x + b.e.dauer.typ, 0)
+    const rest = passend.filter((b) => !gewaehlt.includes(b) && !(b.e as MikroBaustein).braucht?.length && (!gruppe || urheberGruppe(c, b.e as MikroBaustein) === gruppe)).sort((a, b) => rang(a, b, salz + '|auf'))
+    for (const b of rest) {
+      if (summe() >= 0.5 * o.min) break
+      if (passt([b])) gewaehlt.push(b)
+    }
+  }
+  // keine halbleere zweite Seite: noch ein Übungsteil oder auf eine Seite kürzen
+  let seiten = verteile(k, refs(gewaehlt), layout)
+  if (seiten.length === 2 && seiten[1] < 0.35) {
+    const extra = passend
+      .filter((b) => !gewaehlt.includes(b) && (b.e.bogen === 'ueben' || b.e.bogen === 'uebertragen') && (!gruppe || urheberGruppe(c, b.e as MikroBaustein) === gruppe) && !(b.e as MikroBaustein).braucht?.length)
+      .sort((a, b) => rang(a, b, salz + '|extra'))
+      .find((b) => passt([b]) && verteile(k, refs([...gewaehlt, b]), layout)[1] >= 0.35)
+    if (extra) gewaehlt.push(extra)
+    else {
+      // sonst den schwächsten Teil weglassen, ohne den alles auf eine Seite passt (nie eine gebrauchte Geschichte)
+      const gebraucht = new Set(gewaehlt.flatMap((b) => (b.e as MikroBaustein).braucht ?? []))
+      const weg = gewaehlt
+        .filter((b) => !gebraucht.has(b.e.id) && !(b.e as MikroBaustein).braucht?.length)
+        .filter((b) => {
+          const ohne = gewaehlt.filter((x) => x !== b)
+          return ohne.length >= 2 && verteile(k, refs(ohne), layout).length === 1
+        })
+        .sort((a, b) => a.s - b.s)[0]
+      if (weg) gewaehlt.splice(gewaehlt.indexOf(weg), 1)
+    }
+    seiten = verteile(k, refs(gewaehlt), layout)
+  }
+  // Reihenfolge: Lernbogen, Abhängigkeiten vor dem, was sie braucht, innerhalb eines Blatts wie im Blatt
+  const ordnung = new Map<string, number>()
+  gewaehlt.forEach((b, i) => ordnung.set(b.e.id, BOGEN_REIHE.indexOf(b.e.bogen ?? 'ueben') * 100 + i))
+  for (const b of gewaehlt) for (const d of (b.e as MikroBaustein).braucht ?? []) if (ordnung.has(d)) ordnung.set(d, Math.min(ordnung.get(d)!, ordnung.get(b.e.id)! - 1))
+  gewaehlt.sort((a, b) => ordnung.get(a.e.id)! - ordnung.get(b.e.id)!)
+  const teile: BlattTeil[] = refs(gewaehlt).map((ref) => {
+    const e = k.eintraege.get(ref)
+    return { ref, h: e?.h ?? ref, ...(e ? { t: kurzTitel(k, e) } : {}) }
+  })
+  // Titel: kommt fast alles aus einem Blatt, dessen Titel; sonst ein Muster zum Ziel
+  const jeQuelle = new Map<string, number>()
+  for (const b of gewaehlt) jeQuelle.set((b.e as MikroBaustein).quelle.blatt, (jeQuelle.get((b.e as MikroBaustein).quelle.blatt) ?? 0) + 1)
+  const [haupt, n] = [...jeQuelle.entries()].sort((a, b) => b[1] - a[1])[0]
+  const quelle = intern(k).q.blatt.get(haupt)!
+  const titel = n === gewaehlt.length && !leicht ? (c.sprache === 'fr' && quelle.fr ? quelle.fr.titel : quelle.de.titel) : blattTitel(c, o.salz, leicht, gewaehlt.map((b) => b.e))[c.sprache]
+  return { teile, titel, hinweise, bewertet: new Map(gewaehlt.map((b) => [b.e.id, b])) }
+}
+
+function mitStelle(b: Bewertet, stelle: Bogen | '*', formate: Set<string>, gewaehlt: Bewertet[]): Bewertet {
+  let s = b.s
+  if (stelle !== '*' && b.e.bogen === stelle) s += 0.05
+  if (b.e.format.some((f) => formate.has(f))) s -= 0.04
+  // roter Faden auf dem Blatt: gleiches Thema wie die schon gewählten Teile, lieber aus einem Blatt, das schon dabei ist
+  const themen = new Set(gewaehlt.flatMap((x) => x.e.thema.slice(0, 1)))
+  if (gewaehlt.length && b.e.thema.some((t) => themen.has(t))) s += 0.08
+  const quellen = new Set(gewaehlt.map((x) => (x.e as MikroBaustein).quelle.blatt))
+  if (gewaehlt.length && !quellen.has((b.e as MikroBaustein).quelle.blatt)) s -= 0.04
+  return { ...b, s }
+}
+
+function kurzTitel(k: Katalog, e: KatalogEintrag): string {
+  if (e.typ === 'schritt') return e.titel.slice(0, 60)
+  const liste = bausteinInhalt(k, e, 'de')
+  const a = liste.find((x): x is Extract<Baustein, { art: 'aufgabe' }> => x.art === 'aufgabe')
+  const t = a?.text ?? texte(liste)[0]?.text ?? e.art.join(', ')
+  return t.length > 60 ? t.slice(0, 59).replace(/\s+\S*$/, '') + ' …' : t
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+// Synthetisches Blatt für den Renderer (7.5)
+// ---------------------------------------------------------------------------------------------------------------------
+
+const STUNDE_WORT: Record<Rolle, { de: string; fr: string; bild: string }> = {
+  ankommen: { de: 'Ankommen', fr: 'Arriver', bild: 'icon:door-enter' },
+  einstieg: { de: 'Anfangen', fr: 'Commencer', bild: 'icon:bulb' },
+  kern: { de: 'Üben', fr: 'S’entraîner', bild: 'icon:target' },
+  uebung: { de: 'Blatt', fr: 'Fiche', bild: 'icon:pencil' },
+  bewegung: { de: 'Bewegen', fr: 'Bouger', bild: 'icon:run' },
+  spiel: { de: 'Spielen', fr: 'Jouer', bild: 'icon:dice-5' },
+  regulation: { de: 'Ruhe', fr: 'Calme', bild: 'icon:leaf' },
+  reflexion: { de: 'Zurückschauen', fr: 'Revenir', bild: 'icon:eye' },
+  abschluss: { de: 'Tschüss', fr: 'Au revoir', bild: 'icon:door-exit' },
+  transfer: { de: 'Mitnehmen', fr: 'Emporter', bild: 'icon:star' },
+}
+
+function ersetzePlatzhalter(liste: Baustein[], p: Profil, sprache: Sprache): Baustein[] {
+  const werte: Record<string, string> = {
+    NAME: p.anrede ?? '',
+    INTERESSE: p.interessen[0] ? interesseName(p.interessen[0], sprache) : '',
+    WOCHENZIEL: p.wochenziel ?? '',
+  }
+  const tausche = (x: unknown): unknown => {
+    if (typeof x === 'string') return x.replace(/\{(NAME|INTERESSE|WOCHENZIEL)\}/g, (_, k: string) => werte[k] ?? '').replace(/\s{2,}/g, ' ')
+    if (Array.isArray(x)) return x.map(tausche)
+    if (x && typeof x === 'object') return Object.fromEntries(Object.entries(x).map(([k, v]) => [k, tausche(v)]))
+    return x
+  }
+  return tausche(liste) as Baustein[]
+}
+
+function ausblenden(liste: Baustein[], pfade: string[]): Baustein[] {
+  if (!pfade.length) return liste
+  const kopie = JSON.parse(JSON.stringify(liste)) as Baustein[]
+  // Pfad wie '1.items.2': Element aus einer Liste nehmen (von hinten, damit die Stellen stimmen)
+  for (const pfad of [...pfade].sort().reverse()) {
+    const teile = pfad.split('.')
+    const letzter = Number(teile.pop())
+    let ziel: unknown = kopie
+    for (const t of teile) ziel = (ziel as Record<string, unknown>)?.[t]
+    if (Array.isArray(ziel) && Number.isInteger(letzter)) ziel.splice(letzter, 1)
+  }
+  return kopie
+}
+
+function bereichFuer(blatt: { bereich: Bereich; thema: string }): { bereich: Bereich; thema: string } {
+  if (blatt.bereich === 'skills') {
+    const [b, t] = SKILLS_BEREICH[blatt.thema] ?? ['alltag', 'wohlbefinden']
+    return { bereich: b as Bereich, thema: t }
+  }
+  return { bereich: blatt.bereich, thema: blatt.thema }
+}
+
+/** Das Blatt einer Sitzung als synthetisches `Blatt` (für BlattDokument, Vorschau und PDF). */
+export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: Sprache): Blatt {
+  const s = plan.sitzungen.find((x) => x.nr === nr)
+  const alter = p.alterJahre
+  const stufe = stufenAbstand(stufeAusAlter(alter), [p.stufen[0] ?? stufeAusAlter(alter)]) >= 2 ? stufeAusAlter(alter) : (p.stufen[0] ?? stufeAusAlter(alter))
+  let layout: Layout = p.layout
+  if (alter >= 12 && (layout === 'bild' || layout === 'gross')) layout = 'jugend'
+  const sp: BlattSprache = sprache
+  const bausteine: Baustein[] = []
+  const herkunft: string[] = []
+  const quellen: string[] = []
+  let anleitung: string | undefined
+  let lehrerQuelle: BlattInhalt['lehrer'] | null = null
+  const teileIds: (string | null)[] = []
+  const markiere = (idx: number, n: number, id: string) => {
+    while (teileIds.length < bausteine.length) teileIds.push(null)
+    if (n > 0) teileIds[idx] = id
+  }
+  for (const [ti, t] of (s?.blatt?.bausteine ?? []).entries()) {
+    const start = bausteine.length
+    const teilId = `pg-teil:${nr}:blatt:${ti}`
+    if (t.ref === BLATT_SYSTEM.notfall) {
+      bausteine.push({ art: 'notfall' })
+      markiere(start, 1, teilId)
+      continue
+    }
+    if (t.ref === BLATT_SYSTEM.stundenleiste) {
+      const schritte = (s?.schritte ?? []).filter((x) => x.min > 0).slice(0, 7)
+      if (schritte.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: schritte.map((x) => ({ text: STUNDE_WORT[x.rolle][sprache], bild: STUNDE_WORT[x.rolle].bild, min: x.min })) })
+      markiere(start, bausteine.length - start, teilId)
+      continue
+    }
+    const e = k.eintraege.get(t.ref) ?? intern(k).nachH.get(t.h)
+    if (!e || e.typ !== 'baustein') continue
+    let liste = bausteinInhalt(k, e, sprache)
+    for (const [pfad, text] of Object.entries(t.ueber ?? {})) liste = setzeText(liste, pfad, text)
+    liste = ausblenden(liste, t.ausgeblendet ?? [])
+    bausteine.push(...ersetzePlatzhalter(liste, p, sprache))
+    markiere(start, bausteine.length - start, teilId)
+    const quelle = intern(k).q.blatt.get(e.quelle.blatt)
+    if (quelle) {
+      if (!herkunft.includes(quelle.nr)) herkunft.push(quelle.nr)
+      quellen.push(quelle.id)
+      const inhalt = (sprache === 'fr' && quelle.fr) || quelle.de
+      anleitung ??= inhalt.anleitung
+      lehrerQuelle ??= inhalt.lehrer
+    }
+  }
+  const blaetter = quellen.map((id) => intern(k).q.blatt.get(id)!).filter(Boolean)
+  // Bereich (Farbe) nach dem Blatt mit den meisten Teilen; Spielschule nur, wenn alles aus der Spielschule kommt
+  const zaehl = new Map<string, number>()
+  for (const b of blaetter) zaehl.set(b.id, (zaehl.get(b.id) ?? 0) + 1)
+  const haupt = blaetter.length ? intern(k).q.blatt.get([...zaehl.entries()].sort((a, b) => b[1] - a[1])[0][0])! : null
+  const alleSpielschule = blaetter.length > 0 && blaetter.every((b) => b.bereich === 'spielschule')
+  const { bereich, thema } = haupt ? (alleSpielschule ? { bereich: 'spielschule' as Bereich, thema: haupt.thema } : bereichFuer(haupt.bereich === 'spielschule' ? { bereich: 'gefuehle', thema: 'erkennen' } : haupt)) : { bereich: 'gefuehle' as Bereich, thema: 'erkennen' }
+  const titel = s?.blatt?.titel ?? 'Mein Blatt'
+  const zielCode = plan.ziele.find(istEldib)
+  const zielSatz = zielCode ? zielSatzVon(k, p, zielCode, sprache) : undefined
+  // „Mein Ziel“ nur auf Wunsch und nie bei Jugendlichen (E-M13); ohne Ziel keine Zeile (T-M5)
+  const mitZiel = !!s?.blatt?.ziel && alter < 12 && !!zielSatz
+  const inhalt: BlattInhalt = {
+    titel,
+    ...(layout === 'bild' ? { anleitung: anleitung ?? (sprache === 'fr' ? 'Lire les consignes à voix haute et montrer les images.' : 'Aufgaben vorlesen und die Bilder zeigen.') } : {}),
+    bausteine,
+    lehrer: {
+      ziel: zielSatz ?? lehrerQuelle?.ziel ?? '',
+      ablauf: lehrerQuelle?.ablauf ?? [],
+      hintergrund: lehrerQuelle?.hintergrund ?? '',
+      ...(lehrerQuelle?.quellen ? { quellen: lehrerQuelle.quellen } : {}),
+      ...(lehrerQuelle?.achtung ? { achtung: lehrerQuelle.achtung } : {}),
+    },
+  }
+  const blatt: Blatt = {
+    id: `pg-${hash8(plan.id + '|' + nr + '|' + (s?.blatt?.bausteine.map((b) => b.ref + (b.ueber ? JSON.stringify(b.ueber) : '')).join(',') ?? ''))}`,
+    bereich,
+    thema,
+    stufen: [stufe],
+    layout,
+    sozialform: ['einzeln'],
+    dauer: `${(s?.schritte ?? []).find((x) => x.rolle === 'uebung')?.min ?? 10} Min.`,
+    // keine ELDiB-Codes auf dem Blatt des Kindes (9.6 Punkt 2)
+    eldib: [],
+    schlagworte: [],
+    passgenau: {
+      ...(mitZiel ? { ziel: { [sp]: zielSatz! } } : {}),
+      // ohne Blattnummern: „V-12“ sähe auf dem Blatt des Kindes aus wie ein ELDiB-Code (9.6) – die Quellen stehen im Planblatt
+      herkunft: herkunft.length ? (sprache === 'fr' ? `Passgenau · ${herkunft.length > 1 ? `éléments de ${herkunft.length} fiches` : 'éléments d’une fiche'} de la Toolbox` : `Passgenau · ${herkunft.length > 1 ? `Bausteine aus ${herkunft.length} Blättern` : 'Bausteine aus einem Blatt'} der Toolbox`) : undefined,
+      teile: [...teileIds, ...Array(Math.max(0, bausteine.length - teileIds.length)).fill(null)],
+    },
+    de: sprache === 'de' ? inhalt : { ...inhalt },
+    ...(sprache === 'fr' ? { fr: inhalt } : {}),
+  }
+  return blatt
+}

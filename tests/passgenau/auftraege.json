@@ -1,0 +1,1050 @@
+{
+  "tk-01": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "V-10",
+        "KOG-22"
+      ],
+      "n": 4,
+      "dauer": 15,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "verstehen"
+      ],
+      "formate": [
+        "spiel",
+        "bewegung"
+      ],
+      "blatt": "mit",
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "V-10"
+      ],
+      "n": 1,
+      "dauer": 15,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 3,
+        "konzentration": 2,
+        "stimmung": 2
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 10,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "muede"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-02": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "V-13",
+        "K-12"
+      ],
+      "n": 5,
+      "dauer": 15,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "beziehung"
+      ],
+      "formate": [
+        "kreativ",
+        "spiel"
+      ],
+      "blatt": "ohne",
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "V-13"
+      ],
+      "n": 1,
+      "dauer": 15,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 3,
+        "konzentration": 4,
+        "stimmung": 3
+      },
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 15,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "rueckzug",
+        "muede"
+      ],
+      "blatt": "mit",
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-03": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "SOZ-14",
+        "V-10"
+      ],
+      "n": 6,
+      "dauer": 15,
+      "sozialform": "zu-zweit",
+      "schwerpunkt": [
+        "ueben"
+      ],
+      "formate": [
+        "bewegung",
+        "spiel"
+      ],
+      "heute": {
+        "energie": 6,
+        "konzentration": 3,
+        "stimmung": 4
+      },
+      "sprache": "fr",
+      "datum": "2026-10-12",
+      "ort": [
+        "draussen"
+      ]
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "SOZ-14"
+      ],
+      "n": 1,
+      "dauer": 15,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 7,
+        "konzentration": 2,
+        "stimmung": 5
+      },
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 15,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "aufgewuehlt"
+      ],
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-04": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "K-12",
+        "SOZ-20"
+      ],
+      "n": 4,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "verstehen",
+        "ueben"
+      ],
+      "formate": [
+        "wenig-schreiben",
+        "spiel"
+      ],
+      "blatt": "mit",
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "K-12"
+      ],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 4,
+        "konzentration": 5,
+        "stimmung": 5
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 10,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "will-nicht"
+      ],
+      "blatt": "mit",
+      "sprache": "de",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-05": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "V-15",
+        "KOG-32"
+      ],
+      "n": 5,
+      "dauer": 20,
+      "sozialform": "kleingruppe",
+      "schwerpunkt": [
+        "ueben"
+      ],
+      "formate": [
+        "wenig-schreiben",
+        "bewegung"
+      ],
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "V-15"
+      ],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 5,
+        "konzentration": 2,
+        "stimmung": 4
+      },
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "muede",
+        "will-nicht"
+      ],
+      "blatt": "mit",
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-06": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "K-26",
+        "K-21"
+      ],
+      "n": 6,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "verstehen",
+        "selbstbild"
+      ],
+      "formate": [
+        "kreativ"
+      ],
+      "heute": {
+        "energie": 3,
+        "konzentration": 4,
+        "stimmung": 2
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "K-26"
+      ],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 3,
+        "konzentration": 3,
+        "stimmung": 1
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "traurig"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-07": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "V-21",
+        "K-26",
+        "SOZ-14"
+      ],
+      "n": 6,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "ueben",
+        "uebertragen"
+      ],
+      "formate": [
+        "bewegung",
+        "kreativ",
+        "wenig-schreiben"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "V-21"
+      ],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 6,
+        "konzentration": 3,
+        "stimmung": 4
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "aufgedreht",
+        "wuetend"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-08": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "V-18",
+        "SOZ-32"
+      ],
+      "n": 5,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "verstehen",
+        "ueben"
+      ],
+      "formate": [
+        "bewegung",
+        "gespraech"
+      ],
+      "heute": {
+        "energie": 5,
+        "konzentration": 3,
+        "stimmung": 3
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "V-18"
+      ],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 6,
+        "konzentration": 2,
+        "stimmung": 2
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "aufgewuehlt",
+        "wuetend"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-09": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "K-17",
+        "V-24"
+      ],
+      "n": 5,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "uebertragen"
+      ],
+      "formate": [
+        "gespraech",
+        "kreativ"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "V-24"
+      ],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 4,
+        "konzentration": 5,
+        "stimmung": 3
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "aengstlich"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-10": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "SOZ-32",
+        "SOZ-25"
+      ],
+      "n": 4,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "beziehung",
+        "verstehen"
+      ],
+      "formate": [
+        "spiel",
+        "wenig-schreiben"
+      ],
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "SOZ-32"
+      ],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 4,
+        "konzentration": 4,
+        "stimmung": 4
+      },
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "rueckzug",
+        "aengstlich"
+      ],
+      "blatt": "mit",
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-11": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "V-22",
+        "K-19"
+      ],
+      "n": 8,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "selbstbild"
+      ],
+      "formate": [
+        "wenig-schreiben",
+        "kreativ"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "V-22"
+      ],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 5,
+        "konzentration": 5,
+        "stimmung": 3
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "muede"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-12": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "K-26",
+        "KOG-58"
+      ],
+      "n": 4,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "verstehen",
+        "uebertragen"
+      ],
+      "formate": [
+        "gespraech"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "K-26"
+      ],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 5,
+        "konzentration": 5,
+        "stimmung": 5
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "will-nicht"
+      ],
+      "blatt": "mit",
+      "sprache": "de",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-13": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "V-15",
+        "V-13"
+      ],
+      "n": 6,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "ueben"
+      ],
+      "formate": [
+        "bewegung",
+        "wenig-schreiben"
+      ],
+      "heute": {
+        "energie": 4,
+        "konzentration": 3,
+        "stimmung": 4
+      },
+      "sprache": "fr",
+      "datum": "2026-10-12",
+      "ort": [
+        "turnhalle"
+      ]
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "V-15"
+      ],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 5,
+        "konzentration": 3,
+        "stimmung": 3
+      },
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "aufgedreht"
+      ],
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-14": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "V-22",
+        "SOZ-32"
+      ],
+      "n": 4,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "uebertragen"
+      ],
+      "formate": [
+        "gespraech",
+        "wenig-schreiben"
+      ],
+      "sprache": "fr",
+      "datum": "2026-10-12",
+      "thema": [
+        "angst"
+      ]
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "V-22"
+      ],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 3,
+        "konzentration": 4,
+        "stimmung": 2
+      },
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "aufgewuehlt",
+        "aengstlich"
+      ],
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-15": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "K-26",
+        "SOZ-40"
+      ],
+      "n": 4,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "selbstbild",
+        "beziehung"
+      ],
+      "formate": [
+        "kreativ",
+        "wenig-schreiben"
+      ],
+      "heute": {
+        "energie": 3,
+        "konzentration": 3,
+        "stimmung": 2
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "K-26"
+      ],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 2,
+        "konzentration": 2,
+        "stimmung": 1
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "aufgewuehlt",
+        "rueckzug"
+      ],
+      "blatt": "ohne",
+      "sprache": "de",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-16": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "K-31",
+        "K-34"
+      ],
+      "n": 7,
+      "dauer": 45,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "verstehen",
+        "uebertragen"
+      ],
+      "formate": [
+        "gespraech",
+        "wenig-schreiben"
+      ],
+      "heute": {
+        "energie": 3,
+        "konzentration": 4,
+        "stimmung": 3
+      },
+      "blatt": "mit",
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "K-31"
+      ],
+      "n": 1,
+      "dauer": 45,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 2,
+        "konzentration": 3,
+        "stimmung": 2
+      },
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "muede",
+        "will-nicht"
+      ],
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-17": [
+    {
+      "weg": "gruendlich",
+      "ziele": [],
+      "n": 4,
+      "dauer": 45,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "beziehung"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12",
+      "thema": [
+        "freundschaft"
+      ]
+    },
+    {
+      "weg": "schnell",
+      "ziele": [],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 5,
+        "konzentration": 5,
+        "stimmung": 4
+      },
+      "sprache": "de",
+      "datum": "2026-10-12",
+      "thema": [
+        "gefuehle"
+      ]
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "traurig"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-18": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "V-10",
+        "V-13"
+      ],
+      "n": 6,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "ueben",
+        "uebertragen"
+      ],
+      "formate": [
+        "bewegung",
+        "spiel"
+      ],
+      "heute": {
+        "energie": 5,
+        "konzentration": 3,
+        "stimmung": 4
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "V-10"
+      ],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 4,
+        "konzentration": 3,
+        "stimmung": 3
+      },
+      "sprache": "de",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "aufgewuehlt"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-19": [
+    {
+      "weg": "gruendlich",
+      "ziele": [],
+      "n": 4,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "verstehen"
+      ],
+      "formate": [
+        "spiel",
+        "kreativ"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12",
+      "thema": [
+        "gefuehle"
+      ]
+    },
+    {
+      "weg": "schnell",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 4,
+        "konzentration": 4,
+        "stimmung": 4
+      },
+      "sprache": "de",
+      "datum": "2026-10-12",
+      "thema": [
+        "freundschaft"
+      ]
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 10,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "aengstlich"
+      ],
+      "sprache": "de",
+      "datum": "2026-10-12"
+    }
+  ],
+  "tk-20": [
+    {
+      "weg": "gruendlich",
+      "ziele": [
+        "V-21"
+      ],
+      "n": 5,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "schwerpunkt": [
+        "ueben"
+      ],
+      "formate": [
+        "bewegung",
+        "spiel"
+      ],
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "schnell",
+      "ziele": [
+        "V-21"
+      ],
+      "n": 1,
+      "dauer": 30,
+      "sozialform": "einzeln",
+      "heute": {
+        "energie": 4,
+        "konzentration": 4,
+        "stimmung": 4
+      },
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    },
+    {
+      "weg": "leicht",
+      "ziele": [],
+      "n": 1,
+      "dauer": 20,
+      "sozialform": "einzeln",
+      "tagesformen": [
+        "will-nicht"
+      ],
+      "sprache": "fr",
+      "datum": "2026-10-12"
+    }
+  ]
+}

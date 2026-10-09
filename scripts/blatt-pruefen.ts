@@ -56,6 +56,8 @@ const ARTEN = new Set([
 ])
 /** Spielschule: Forscherblatt zum Experiment der Woche (eine ganze Seite) */
 ARTEN.add('forscherblatt')
+/** Passgenau: Karten und Hilfen für Einzelstunden (src/blatt/pdf/passgenau.tsx) */
+for (const a of ['zielkarte', 'checkin', 'wahlkarte', 'stundenleiste', 'abhaken']) ARTEN.add(a)
 
 /** Mathe: Dezimalzahl mit Komma („12,5“) als Zahl – oder NaN */
 const ZAHL = /^\d+(,\d+)?$/
@@ -612,6 +614,29 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         break
       case 'atmen':
         if (!['quadrat', 'ballon', 'blume', 'fuenf-sinne', 'finger'].includes(b.uebung)) melde('F', w, 'unbekannte Atemübung')
+        break
+      // --- Passgenau ---
+      case 'zielkarte':
+        if (!b.text?.trim()) melde('F', w, 'Zielkarte ohne Ich-Satz')
+        if (b.text.length > 120) melde('H', w, `Ich-Satz zu lang (${b.text.length} Zeichen, max. 120)`)
+        if ((b.kaestchen ?? b.tage?.length ?? 3) > 7) melde('F', w, 'Zielkarte: höchstens 7 Kästchen')
+        break
+      case 'checkin':
+        if (b.modus && !['gesichter', 'wetter', 'zahl'].includes(b.modus)) melde('F', w, 'checkin: gesichter, wetter oder zahl')
+        if (b.modus === 'gesichter' && blatt.stufen.includes('ES')) melde('H', w, 'Gesichter bei Jugendlichen: es wird die Zahl 0–10 gezeigt')
+        break
+      case 'wahlkarte':
+        if (b.optionen.length < 2 || b.optionen.length > 3) melde('F', w, 'Wahlkarte: 2–3 Optionen')
+        b.optionen.forEach((o) => o.text.length > 40 && melde('H', w, `Option „${o.text}“ zu lang (max. 40 Zeichen)`))
+        for (const o of b.optionen) if (o.bild) bilder.push(o.bild)
+        break
+      case 'stundenleiste':
+        if (b.schritte.length < 2 || b.schritte.length > 7) melde('F', w, 'Stundenleiste: 2–7 Teile')
+        b.schritte.forEach((x) => x.text.length > 16 && melde('H', w, `„${x.text}“ ist für die Stundenleiste zu lang (max. 16 Zeichen)`))
+        for (const x of b.schritte) if (x.bild) bilder.push(x.bild)
+        break
+      case 'abhaken':
+        if (!b.items.length || b.items.length > 10) melde('F', w, 'Abhaken: 1–10 Punkte')
         break
       case 'tabelle':
         if (b.spalten.length > 5) melde('H', w, 'mehr als 5 Spalten')
