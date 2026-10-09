@@ -74,10 +74,13 @@ function ersetzeNamen(text: string, p: Profil): string {
  *  sind relativ zur Vorlage (`inhalt.sitzungen.<i>.schritte.<j>.ueber.<textpfad>`, PROTOKOLL.md) – wie im Hub. */
 export function fuerTeam(plan: Plan, p: Profil): { vorlage: Omit<PraxisVorlage, 'id' | 'version' | 'status' | 'erstellt'>; eigeneTexte: { pfad: string; text: string }[] } {
   const eigeneTexte: { pfad: string; text: string }[] = []
-  const ueber = (u: Record<string, string> | undefined, pfad: string) => {
+  // Texte, die der Planer selbst in eigene Schritte (pg:einstieg, pg:rueckblick) schreibt, sind keine eigenen Texte der
+  // Fachkraft: sie bleiben aus der Vorlage (der Schritt nimmt dann seinen festen Text)
+  const ueber = (u: Record<string, string> | undefined, pfad: string, ref = '', herkunft?: Record<string, 'eigen' | 'vorlage'>) => {
     if (!u) return undefined
     const out: Record<string, string> = {}
     for (const [k, v] of Object.entries(u)) {
+      if (ref.startsWith('pg:') && herkunft?.[k] !== 'eigen') continue
       out[k] = ersetzeNamen(v, p)
       eigeneTexte.push({ pfad: `${pfad}.${k}`, text: out[k] })
     }
@@ -90,7 +93,7 @@ export function fuerTeam(plan: Plan, p: Profil): { vorlage: Omit<PraxisVorlage, 
     sitzungen: plan.sitzungen.map((s, si) => ({
       phase: s.phase,
       schritte: s.schritte.map((x, xi) => {
-        const u = ueber(x.ueber, `inhalt.sitzungen.${si}.schritte.${xi}.ueber`)
+        const u = ueber(x.ueber, `inhalt.sitzungen.${si}.schritte.${xi}.ueber`, x.ref, x.ueberHerkunft)
         return { ref: x.ref, h: x.h, rolle: x.rolle, min: x.min, ...(u ? { ueber: u, ueberHerkunft: Object.fromEntries(Object.keys(u).map((k) => [k, 'eigen' as const])) } : {}) }
       }),
       ...(s.blatt
