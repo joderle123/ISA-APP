@@ -152,6 +152,18 @@ function belastend(e?: KatalogEintrag): boolean {
   return !!e && (e.belastung >= 1 || (e.typ === 'baustein' && e.art.includes('leiter')))
 }
 
+/** Basisrate der Daumen einer Fachkraft (Zähler `meta:daumen`, a = hoch, b = runter): Gewicht des nächsten Daumens in
+ *  [0,25; 1] – ein seltenes Signal zählt voll, das übliche wenig. Zählt den Daumen dabei mit. */
+function daumenGewicht(ich: VorliebenFachkraft, richtung: 'hoch' | 'runter', heute: string): number {
+  const z = verblasst(ich.z['meta:daumen'], HALBWERT.ich, heute)
+  const anteil = (z.a + 1) / (z.a + z.b + 2)
+  const w = Math.max(0.25, Math.min(1, 2 * (richtung === 'hoch' ? 1 - anteil : anteil)))
+  if (richtung === 'hoch') z.a += 1
+  else z.b += 1
+  ich.z['meta:daumen'] = { a: runde(z.a, 3), b: runde(z.b, 3), t: heute }
+  return w
+}
+
 function kopie(v: Vorlieben): Vorlieben {
   return JSON.parse(JSON.stringify(v)) as Vorlieben
 }
@@ -227,11 +239,13 @@ export function rueckmelden(v: Vorlieben, e: Ereignis, eintragRef?: KatalogEintr
       break
     }
     case 'daumen_hoch':
-      anIch(1, keys)
+      // Daumen relativ zur eigenen Basisrate (S3d): wer fast nur „hoch“ gibt, sagt mit einem weiteren „hoch“ wenig
+      anIch(daumenGewicht(ich, 'hoch', heute), keys)
       if (e.grund === 'passt-gut') anKind(1, keys)
       if (e.baustein) teamZaehlen(n.team, `baustein:${e.baustein}`, e.art)
       break
     case 'daumen_runter': {
+      daumenGewicht(ich, 'runter', heute)
       const b = e.baustein ? `baustein:${e.baustein}` : null
       const l = eintragRef ? laenge(eintragRef.dauer.typ) : e.tags.laenge
       const lesen = eintragRef?.typ === 'baustein' ? eintragRef.lesemenge : e.tags.lesen
@@ -330,7 +344,7 @@ function schluesselText(k: Katalog, key: string, sprache: Sprache = 'de'): strin
 export function gelernt(v: Vorlieben, ebene: 'kind' | 'ich' | 'team', k: Katalog): { text: string; wert: number; n: number }[] {
   const heute = new Date().toISOString().slice(0, 10)
   const daten: Record<string, unknown> = ebene === 'kind' ? (v.kind?.z ?? {}) : ebene === 'ich' ? v.ich.z : (v.team?.z ?? {})
-  const liste = Object.keys(daten).map((key) => {
+  const liste = Object.keys(daten).filter((key) => !key.startsWith('meta:')).map((key) => {
     const x = vorliebe(v, ebene, key, heute)
     return { key, p: x.p, a: x.a, b: x.b }
   })

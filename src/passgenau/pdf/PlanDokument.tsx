@@ -356,12 +356,15 @@ export function teilPositionen(layout: unknown): TeilPosition[] {
   seiten.forEach((seite, i) => {
     const sb = seite.box?.width ?? 595.28
     const sh = seite.box?.height ?? 841.89
-    const gehe = (k: LayoutKnoten) => {
+    // box.left/top sind relativ zum Elternknoten (Yoga) – für die Seite aufsummieren
+    const gehe = (k: LayoutKnoten, ox: number, oy: number) => {
+      const x = ox + (k.box?.left ?? 0)
+      const y = oy + (k.box?.top ?? 0)
       const id = k.props?.id
-      if (id && id.startsWith('pg-teil:') && k.box) out.push({ id, seite: i + 1, x: k.box.left, y: k.box.top, b: k.box.width, h: k.box.height, seiteB: sb, seiteH: sh })
-      for (const c of k.children ?? []) gehe(c)
+      if (id && id.startsWith('pg-teil:') && k.box) out.push({ id, seite: i + 1, x, y, b: k.box.width, h: k.box.height, seiteB: sb, seiteH: sh })
+      for (const c of k.children ?? []) gehe(c, x, y)
     }
-    for (const c of seite.children ?? []) gehe(c)
+    for (const c of seite.children ?? []) gehe(c, 0, 0)
   })
   return out
 }

@@ -3,7 +3,7 @@
 // Wahl, Erkundung ≈ 20 % reproduzierbar, Lockerungsleiter mit sichtbarem Grund. Deterministisch: gleicher Auftrag,
 // gleiches Kind, gleiche Vorlieben → gleicher Plan (Seed aus Kind, Plan-Id, Sitzung, Variante – kein Datum, kein ref).
 import type { Auftrag, Bogen, Ereignis, KatalogEintrag, Plan, PlanSchritt, Profil, Rolle, Sitzung, Sprache } from '../typen'
-import { hash01, hash8, stufeAusAlter, layoutAusStufe } from './hilfen'
+import { hash01, hash8, stufeAusAlter, layoutAusStufe, istEldib } from './hilfen'
 import { aktuellerKatalog, ichSatz, intern, type Katalog } from './katalog'
 import { bewerte, kontext, pruefe, rang, warum, type Bewertet, type Kontext } from './regeln'
 import { baueBlatt } from './blatt'
@@ -365,6 +365,22 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     }
   }
   const schritte = ergebnis.filter((x): x is PlanSchritt => !!x)
+  // Französisch bevorzugt (T-M4): sagen, wie viele Teile es nur auf Deutsch gibt
+  if (c.sprache === 'fr') {
+    const teile = [...schritte.map((x) => x.ref), ...(blatt?.bausteine ?? []).map((b) => b.ref)]
+      .filter((r) => !r.startsWith('pg:'))
+      .map((r) => c.k.eintraege.get(r))
+      .filter((e): e is KatalogEintrag => !!e)
+    const nurDe = teile.filter((e) => (e.typ === 'schritt' ? !e.fr : !e.sprache.fr)).length
+    if (nurDe) hinweise.push(`${nurDe} von ${teile.length} Teilen nur auf Deutsch.`)
+  }
+  // Dünne Daten (T-M5): ohne ELDiB-Ziel sagen, woran sich die Stunde orientiert
+  if (c.weg !== 'leicht' && !c.ziele.some((z) => istEldib(z.code))) {
+    const feld = c.ziele.find((z) => z.feld && z.quelle !== 'kennenlernen')?.feld
+    const thema = (c.a.thema ?? []).filter((t) => !t.startsWith('kompetenz:')).map((t) => themaByKey.get(t)?.name ?? t)
+    const schwerpunkt = [...(feld ? [KOMPETENZ_NAME[feld]?.de ?? feld] : []), ...thema].join(', ')
+    hinweise.push(schwerpunkt ? `Schwerpunkt: ${schwerpunkt} (noch kein ELDiB-Ziel) – ELDiB-Einschätzung fehlt.` : 'Noch kein ELDiB-Ziel – Stunde zum Kennenlernen. ELDiB-Einschätzung fehlt.')
+  }
   if (c.weg !== 'leicht' && blattModus(c) === 'ohne' && c.alter <= 5) hinweise.push('Ohne Blatt (bis 5 Jahre Vorgabe) – Mitmach-Seite auf Wunsch.')
   if (c.weg !== 'leicht' && [c.heute.energie, c.heute.konzentration, c.heute.stimmung].filter((x) => x <= 2).length >= 2) hinweise.push('Heute geht nicht viel? Leichte Stunde zeigen.')
   minutenAusgleichen(schritte, c.a.dauer)
@@ -422,26 +438,38 @@ function wahlSlot(c: Kontext, slot: Slot, o: SitzungsAuftrag, salz: string, benu
   return { schritt, optionen }
 }
 
+/** Freie Slots für die Erkundung (6.6): Einstieg, Bewegung, Spiel, Ruhe – außer was zur Einheit des Kerns gehört
+ *  (roter Faden). Exportiert für die Tests. */
+export function erkundbar(rolle: string, ref: string, kernRef: string | undefined): boolean {
+  return ['einstieg', 'bewegung', 'spiel', 'regulation'].includes(rolle) && !ref.startsWith('pg:') && !(kernRef && quelleEinheit(ref) === quelleEinheit(kernRef))
+}
+
 function erkunde(c: Kontext, o: SitzungsAuftrag, schritte: (PlanSchritt | null)[], gewaehlt: { b: Bewertet; slot: Slot; i: number }[], benutzt: Set<string>, salz: string): void {
   const rate = c.erkundung
   if (rate <= 0 || c.weg === 'leicht') return
-  const frei = gewaehlt.filter((g) => ['einstieg', 'bewegung', 'spiel', 'regulation'].includes(g.slot.rolle))
-  if (!frei.length || hash01(salz + '|erk') >= Math.min(1, rate * (frei.length + 1))) return
-  const wahl = frei[Math.floor(hash01(salz + '|erk-slot') * frei.length)]
-  const best = wahl.b
-  const liste = kandidaten(c, { rolle: wahl.slot.rolle, min: wahl.slot.min, phase: o.phase, nr: o.nr, salz: salz + '|erk-k', gesperrt: benutzt, vorher: o.vorher, formate: new Set() })
-    .map((w) => w.b)
-    .filter((b) => b.e.id !== best.e.id && b.g >= 0.85 * best.g && b.e.format[0] !== best.e.format[0])
-    // Phasen aus Material-Einheiten nur zusammen mit ihrem Kern (roter Faden)
-    .filter((b) => !b.e.id.startsWith('m:') || wahl.slot.rolle === 'kern')
-    .filter((b) => vorliebe(c.v, 'kind', `baustein:${b.e.id}`, c.datum).p > -0.3 && vorliebe(c.v, 'ich', `baustein:${b.e.id}`, c.datum).p > -0.5)
-  liste.sort((a, b) => vertrauenKind(a.e, c.v, c.datum) - vertrauenKind(b.e, c.v, c.datum) || b.g - a.g || (a.e.id < b.e.id ? -1 : 1))
-  const neu = liste[0]
-  if (!neu) return
-  benutzt.delete(best.e.id)
-  benutzt.add(neu.e.id)
-  schritte[wahl.i] = planSchritt(neu, wahl.slot.rolle as Rolle, wahl.slot.min, c, { phase: o.phase, nr: o.nr, erkundung: true })
-  wahl.b = neu
+  const kern = gewaehlt.find((g) => g.slot.rolle === 'kern')?.b.e.id
+  const frei = gewaehlt.filter((g) => erkundbar(g.slot.rolle, g.b.e.id, kern))
+  // jeder freie Slot mit Wahrscheinlichkeit rate (≈ 20 % der freien Slots), fester Wert aus Seed, Plan, Sitzung und Slot
+  for (const wahl of frei) {
+    if (hash01(`${salz}|erk|${wahl.i}`) >= rate) continue
+    const best = wahl.b
+    const alle = kandidaten(c, { rolle: wahl.slot.rolle, min: wahl.slot.min, phase: o.phase, nr: o.nr, salz: salz + '|erk-k', gesperrt: benutzt, vorher: o.vorher, formate: new Set() })
+      .map((w) => w.b)
+      .filter((b) => b.e.id !== best.e.id && b.g >= 0.8 * best.g)
+      // Phasen aus Material-Einheiten nur zusammen mit ihrem Kern (roter Faden)
+      .filter((b) => !b.e.id.startsWith('m:') || wahl.slot.rolle === 'kern')
+      .filter((b) => vorliebe(c.v, 'kind', `baustein:${b.e.id}`, c.datum).p > -0.3 && vorliebe(c.v, 'ich', `baustein:${b.e.id}`, c.datum).p > -0.5)
+    // erst ein anderes Format (Neues ausprobieren), sonst ein anderer gleichwertiger Teil
+    const anders = alle.filter((b) => b.e.format[0] !== best.e.format[0])
+    const liste = anders.length ? anders : alle
+    liste.sort((a, b) => vertrauenKind(a.e, c.v, c.datum) - vertrauenKind(b.e, c.v, c.datum) || b.g - a.g || (a.e.id < b.e.id ? -1 : 1))
+    const neu = liste[0]
+    if (!neu) continue
+    benutzt.delete(best.e.id)
+    benutzt.add(neu.e.id)
+    schritte[wahl.i] = planSchritt(neu, wahl.slot.rolle as Rolle, wahl.slot.min, c, { phase: o.phase, nr: o.nr, erkundung: true })
+    wahl.b = neu
+  }
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -457,6 +485,7 @@ const FOLGE_TITEL: Record<Kompetenz, string> = {
 
 function planTitel(c: Kontext): string {
   if (c.weg === 'leicht') return 'Beziehungszeit'
+  if (c.ziele[0]?.quelle === 'kennenlernen') return c.weg === 'schnell' ? 'Einzelstunde: Kennenlernen' : 'Kennenlernen'
   const feld = c.ziele.find((z) => z.feld)?.feld
   const thema = [...c.themen.entries()].sort((a, b) => b[1].w - a[1].w)[0]?.[0]
   const t = feld ? FOLGE_TITEL[feld] : thema ? (themaByKey.get(thema)?.name ?? 'Einzelstunde') : 'Kennenlernen'
@@ -486,7 +515,7 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
   for (const pl of verlauf?.plaene ?? []) for (const s of pl.sitzungen) if (s.status === 'gehalten') for (const x of s.schritte) vorher.add(x.ref)
   const kernFormate: string[] = []
   const sitzungen: Sitzung[] = []
-  const zweiZiele = c.ziele.filter((z) => z.code.includes('-')).length >= 2
+  const zweiZiele = c.ziele.filter((z) => istEldib(z.code)).length >= 2
   bogen.forEach((phase, i) => {
     // Jugendliche: alle zwei Sitzungen ein anderes Ankommen, Abschluss gleich (S9)
     if (c.alter >= 12 && i > 0 && i % 2 === 0 && rit.ankommen) {
@@ -507,7 +536,7 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
     weg: c.weg,
     gewichte: 'V1',
     titel: planTitel(c),
-    ziele: c.ziele.filter((z) => z.code.includes('-')).map((z) => z.code),
+    ziele: c.ziele.filter((z) => istEldib(z.code)).map((z) => z.code),
     n: sitzungen.length,
     dauer: c.a.dauer,
     vorlage: null,

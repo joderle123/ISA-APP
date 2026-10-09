@@ -2,7 +2,7 @@
 // Nach den Kritiken vom 9.10.: Zugang streng (P4), Fachkraft-Material nie fürs Kind (P1), Reiz/Trauma-Merkmale (P9),
 // keine Katharsis (E-M16), heikel nur freigeschaltet (T-M1), Französisch als weicher Faktor (T-M4), Lockerungsleiter (T-M3).
 import type { Auftrag, Bogen, Heute, KatalogEintrag, Layout, Plan, Profil, Rolle, Sprache, Stufe, Tagesform, Weg } from '../typen'
-import { hash01, layoutAusStufe, norm, stufeAusAlter, stufenAbstand, tageZwischen } from './hilfen'
+import { hash01, layoutAusStufe, norm, stufeAusAlter, stufenAbstand, tageZwischen, istEldib } from './hilfen'
 import { intern, eldibKurz, eldibStufe, type Katalog } from './katalog'
 import { kaltstart, V, vorliebe, type Vorlieben } from './vorlieben'
 import { FORMAT_NAME, INTERESSEN, KOMPETENZ_NAME, TAGESFORM_FORMATE, TAGESFORM_NAME, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
@@ -85,7 +85,7 @@ export function kontext(k: Katalog, p: Profil, a: Auftrag, v: Vorlieben, verlauf
   const ziele: ZielKontext[] = codes.slice(0, 5).map((code, i) => {
     const pz = p.ziele.find((z) => z.code === code)
     const feld = code.startsWith('kompetenz:') ? (code.slice(10) as Kompetenz) : null
-    return { code, prio: PRIO[i] ?? 0.4, quelle: pz?.quelle, seit: pz?.seit, ich: pz?.ich, feld: feld ?? (code.includes('-') ? kompetenzVonCode(code) : null) }
+    return { code, prio: PRIO[i] ?? 0.4, quelle: pz?.quelle, seit: pz?.seit, ich: pz?.ich, feld: feld ?? (istEldib(code) ? kompetenzVonCode(code) : null) }
   })
   for (const t of a.thema ?? []) if (t.startsWith('kompetenz:') && !ziele.some((z) => z.code === t)) ziele.push({ code: t, prio: ziele.length ? 0.6 : 1, feld: t.slice(10) as Kompetenz })
   const themen = new Map<string, { w: number; art?: string; datum?: string; gewaehlt?: boolean }>()
@@ -97,6 +97,8 @@ export function kontext(k: Katalog, p: Profil, a: Auftrag, v: Vorlieben, verlauf
     if (!alt || alt.w < w || (alt.w === w && (alt.datum ?? '') < t.datum)) themen.set(t.key, { w, art: t.art, datum: t.datum })
   }
   for (const t of a.thema ?? []) if (!t.startsWith('kompetenz:')) themen.set(t, { w: 1.2, gewaehlt: true })
+  // Ganz ohne Ziel und Thema (dünne Daten, keine Wahl): Stunde zum Kennenlernen – Stärken und Vorlieben (T-M5)
+  if (!ziele.length && !themen.size && a.weg !== 'leicht') ziele.push({ code: 'kompetenz:selbstbild', prio: 0.6, quelle: 'kennenlernen', feld: 'selbstbild' })
   const gemacht = new Map<string, number>()
   const merke = (id: string, am: string) => {
     const d = tageZwischen(am, datum)
@@ -128,7 +130,7 @@ function hash01Seed(p: Profil): string {
 }
 
 function kompetenzVonCode(code: string): Kompetenz | null {
-  return code.includes('-') ? kompetenzAusCode(code) : null
+  return istEldib(code) ? kompetenzAusCode(code) : null
 }
 
 function zugangBeschreibung(p: Profil): string {
@@ -408,6 +410,7 @@ const ZIEL_QUELLE: Record<string, string> = { pei: 'Förderziel aus dem PEI', el
 const THEMA_ART: Record<string, string> = { vorfall: 'Vorfall am', notiz: 'Notiz vom', beobachtung: 'Beobachtung vom', gespraech: 'Gespräch am', reunion: 'Réunion am', screening: 'Screening vom', klassenbuch: 'Klassenbuch,' }
 
 export function zielText(c: Kontext, z: ZielKontext, vermutet: boolean): string {
+  if (z.quelle === 'kennenlernen') return 'Zum Kennenlernen: was das Kind mag und gut kann (noch kein Ziel)'
   if (z.code.startsWith('kompetenz:')) return `Schwerpunkt ${KOMPETENZ_NAME[z.feld!]?.de ?? z.feld} – heute gewählt`
   const q = z.quelle ? ZIEL_QUELLE[z.quelle] : 'Ziel der Stunde'
   return `Zu ${z.code} ${eldibKurz(c.k, z.code)}${vermutet ? ' (Zuordnung vermutet)' : ''} – ${q}${z.seit ? ` (${datumKurz(z.seit)})` : ''}`

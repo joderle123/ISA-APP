@@ -1,5 +1,6 @@
-// Passgenau – Schnittstelle Kern → Oberfläche (BAUPLAN.md). Genau diese Exporte; dazu zwei additive:
-// `aufloesen` (stabile Ids, T-M10) und `pdfSitzungMitTeilen` (Lage der Teile für die antippbare Vorschau, T-M8).
+// Passgenau – Schnittstelle Kern → Oberfläche (BAUPLAN.md). Genau diese Exporte; dazu drei additive:
+// `aufloesen` (stabile Ids, T-M10), `pdfSitzungMitTeilen` (Lage der Teile für die antippbare Vorschau, T-M8) und
+// `vorlageZurueckgezogen` (Rückruf von Vorlagen-Texten, E-M9).
 import type { Plan, Profil, Sprache } from '../typen'
 import type { Katalog } from './katalog'
 import { druckFolge, druckSitzung } from './druck'
@@ -17,7 +18,7 @@ export { seitenFuellung } from './seiten'
 export { ereignis } from './ereignis'
 export { rueckmelden, gelernt, zuruecksetzen } from './vorlieben'
 export { notizText } from './notiz'
-export { fuerTeam, uebernehmen } from './team'
+export { fuerTeam, uebernehmen, vorlageZurueckgezogen } from './team'
 export { GEWICHTE_V1 } from './regeln'
 
 /** PDF einer Sitzung: Planblatt (+ Blatt des Kindes, + Karten). Das PDF-Modul wird erst hier nachgeladen. */

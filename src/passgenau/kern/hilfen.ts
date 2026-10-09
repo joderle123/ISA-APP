@@ -66,3 +66,8 @@ export function runde(x: number, stellen = 2): number {
 export function altersband(alter: number): string {
   return alter <= 5 ? '3–5' : alter <= 7 ? '6–7' : alter <= 10 ? '8–10' : alter <= 13 ? '11–13' : '14–16+'
 }
+
+/** ELDiB-Code („V-21“, „SOZ-14“) – nicht „kompetenz:…“ (Schwerpunkt bei dünnen Daten). */
+export function istEldib(code: string): boolean {
+  return /^[A-Z]{1,4}-\d{1,3}$/.test(code)
+}

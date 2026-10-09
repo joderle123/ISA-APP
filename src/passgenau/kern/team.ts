@@ -2,7 +2,7 @@
 // Whitelist (VorlagenInhalt): nur Verweise, Prüfsummen, Rollen, Minuten, Phasen, Blatt-Teile und geprüfte Texte.
 // Alles Abgeleitete (Altersband, Ziele, Themen, Formate, Sprachen) kommt nur aus den Katalog-Metadaten.
 import type { Auftrag, KatalogEintrag, Plan, PlanSchritt, PraxisVorlage, Profil, Sitzung, VorlagenInhalt } from '../typen'
-import { hash8 } from './hilfen'
+import { hash8, norm } from './hilfen'
 import { aktuellerKatalog, textVon, type Katalog } from './katalog'
 import { kontext, pruefe } from './regeln'
 import { alternativen, ersetzen } from './alternativen'
@@ -20,12 +20,46 @@ function band(von: number, bis: number): string {
   return letzte[1] >= 99 ? `${erste[0]}+` : `${erste[0]}–${letzte[1]}`
 }
 
-function ersetzeNamen(text: string, p: Profil): string {
-  let t = text
-  for (const name of [p.anrede, p.vorname].filter((x): x is string => !!x && x.length > 1)) {
-    const re = new RegExp(`(?<![\\p{L}])${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(s|’s|'s)?(?![\\p{L}])`, 'giu')
-    t = t.replace(re, '{NAME}')
+/** Abstand ≤ 1 (eine Einfügung, Auslassung oder Vertauschung eines Zeichens). */
+function fastGleich(a: string, b: string): boolean {
+  if (a === b) return true
+  if (Math.abs(a.length - b.length) > 1) return false
+  let i = 0
+  let j = 0
+  let diff = 0
+  while (i < a.length && j < b.length) {
+    if (a[i] === b[j]) {
+      i++
+      j++
+      continue
+    }
+    if (++diff > 1) return false
+    if (a.length > b.length) i++
+    else if (b.length > a.length) j++
+    else {
+      i++
+      j++
+    }
   }
+  return diff + (a.length - i) + (b.length - j) <= 1
+}
+
+const NAME_ENDUNG = /(s|'s|’s|chen|lein|li|i|y|ie)$/
+
+/** Ist ein Wort der Name (auch Genitiv, Kleinschreibung, Akzente, Verkleinerung, ein Tippfehler bei Namen ab 4 Buchstaben)? */
+function istName(wort: string, name: string): boolean {
+  const w = norm(wort).replace(/[’']/g, "'")
+  const n = norm(name)
+  if (w === n) return true
+  const stamm = w.replace(NAME_ENDUNG, '')
+  if (stamm === n || (w.startsWith(n) && NAME_ENDUNG.test(w.slice(n.length)))) return true
+  if (n.length < 4) return false
+  return fastGleich(w, n) || fastGleich(stamm, n)
+}
+
+function ersetzeNamen(text: string, p: Profil): string {
+  const namen = [p.anrede, p.vorname].filter((x): x is string => !!x && x.length > 1)
+  let t = text.replace(/[\p{L}][\p{L}'’]*/gu, (wort) => (namen.some((n) => istName(wort, n)) ? '{NAME}' : wort))
   for (const i of p.interessen) {
     for (const sp of ['de', 'fr'] as const) {
       const n = interesseName(i, sp)
@@ -85,15 +119,20 @@ export function fuerTeam(plan: Plan, p: Profil): { vorlage: Omit<PraxisVorlage, 
         if (e) eintraege.push(e)
       }
     }
-  const von = Math.max(3, ...eintraege.map((e) => e.alter.von))
-  const bis = Math.min(18, ...eintraege.map((e) => e.alter.bis))
+  // Altersband: die festen Bänder, die die meisten Teile abdecken (Rituale für alle Alter zählen nicht) – nie das Alter des Kindes
+  const mitBand = eintraege.filter((e) => e.alter.bis - e.alter.von < 12)
+  const deckung = BAENDER.map(([a, b]) => mitBand.filter((e) => e.alter.von <= b && e.alter.bis >= a).length)
+  const best = Math.max(0, ...deckung)
+  const baender = BAENDER.filter((_, i) => best > 0 && deckung[i] >= 0.8 * best)
+  const von = baender.length ? baender[0][0] : 3
+  const bis = baender.length ? Math.min(18, baender[baender.length - 1][1]) : 18
   const zaehle = (l: string[]) => [...l.reduce((m, x) => m.set(x, (m.get(x) ?? 0) + 1), new Map<string, number>()).entries()].sort((a, b) => b[1] - a[1]).map(([x]) => x)
   const kindText = eintraege.filter((e) => e.typ === 'baustein')
   return {
     vorlage: {
       titel: ersetzeNamen(plan.titel, p),
       von: null,
-      altersband: eintraege.length && von <= bis ? band(von, bis) : '',
+      altersband: band(von, bis),
       ziele: zaehle(eintraege.flatMap((e) => e.eldib.filter((x) => x.gewicht === 1).map((x) => x.code))).slice(0, 4),
       themen: zaehle(eintraege.flatMap((e) => e.thema)).slice(0, 4),
       formate: zaehle(eintraege.flatMap((e) => e.format)).slice(0, 5),
@@ -205,4 +244,35 @@ export function uebernehmen(k: Katalog, p: Profil, vorlage: PraxisVorlage, v: Vo
   if (p.anrede) angepasst.push('Vorname wird eingesetzt, wo die Vorlage {NAME} hat.')
   if (p.interessen[0]) angepasst.push(`Beispiele mit ${interesseName(p.interessen[0])} (Interesse), wo die Vorlage {INTERESSE} hat.`)
   return { plan, angepasst: [...new Set(angepasst)] }
+}
+
+/** Rückruf (E-M9): Ist die Vorlage eines Plans zurückgezogen oder ausgeblendet (`praxis-liste` → `zurueckgezogen`), gehen alle
+ *  Texte mit Herkunft „vorlage“ auf das Original zurück; eigene Texte bleiben. `geaendert`: Hinweis im Plan zeigen
+ *  („Text aus zurückgezogener Vorlage entfernt“). Gedrucktes lässt sich nicht zurückholen. */
+export function vorlageZurueckgezogen(plan: Plan, zurueckgezogen: string[]): { plan: Plan; geaendert: boolean } {
+  const v = plan.vorlage
+  if (!v || !zurueckgezogen.some((id) => v === id || v.startsWith(id + '@'))) return { plan, geaendert: false }
+  let geaendert = false
+  let hier = false
+  const ohne = <T extends { ueber?: Record<string, string>; ueberHerkunft?: Record<string, 'eigen' | 'vorlage'> }>(t: T): T => {
+    if (!t.ueber || !t.ueberHerkunft || !Object.values(t.ueberHerkunft).includes('vorlage')) return t
+    geaendert = hier = true
+    const ueber: Record<string, string> = {}
+    const herkunft: Record<string, 'eigen' | 'vorlage'> = {}
+    for (const [k, text] of Object.entries(t.ueber))
+      if (t.ueberHerkunft[k] !== 'vorlage') {
+        ueber[k] = text
+        if (t.ueberHerkunft[k]) herkunft[k] = t.ueberHerkunft[k]
+      }
+    const { ueber: _u, ueberHerkunft: _h, ...rest } = t
+    void _u
+    void _h
+    return (Object.keys(ueber).length ? { ...rest, ueber, ueberHerkunft: herkunft } : rest) as T
+  }
+  const sitzungen = plan.sitzungen.map((s): Sitzung => {
+    hier = false
+    const neu: Sitzung = { ...s, schritte: s.schritte.map(ohne), blatt: s.blatt ? { ...s.blatt, bausteine: s.blatt.bausteine.map(ohne) } : null }
+    return hier ? { ...neu, hinweise: [...new Set([...(s.hinweise ?? []), 'Text aus zurückgezogener Vorlage entfernt.'])] } : s
+  })
+  return geaendert ? { plan: { ...plan, sitzungen }, geaendert } : { plan, geaendert }
 }

@@ -221,7 +221,7 @@ export function materialSeite(k: Katalog, p: Profil, plan: Plan, nr: number, spr
     dauer: `${plan.dauer} Min.`,
     eldib: [],
     schlagworte: [],
-    passgenau: { herkunft: [...new Set(pakete.map((b) => b.quelle.nr))].join(', ') },
+    passgenau: { herkunft: fr ? 'Passgenau · matériel de la Toolbox' : 'Passgenau · Material aus der Toolbox' },
     de: inhalt,
     ...(fr ? { fr: inhalt } : {}),
   }
