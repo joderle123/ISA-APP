@@ -380,10 +380,10 @@ function gleichesThema(e: KatalogEintrag, kern: KatalogEintrag): boolean {
 }
 
 /** Eigener Einstieg, der den Kern der Stunde ankündigt (wenn keine Einheit einen passenden hat). */
-function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1): PlanSchritt {
+function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag, nr = 1, titel?: { de: string; fr: string }): PlanSchritt {
   const e = c.k.eintraege.get('pg:einstieg')!
-  const de = textVon(kern, 'de').titel
-  const fr = kern.typ === 'schritt' && kern.fr ? kern.fr.titel : de
+  const de = titel?.de ?? textVon(kern, 'de').titel
+  const fr = titel?.fr ?? (kern.typ === 'schritt' && kern.fr ? kern.fr.titel : de)
   // Jugendliche: ohne „Material zeigen“ und „das Kind“; ab Sitzung 2 kurz an die letzte anknüpfen (roter Faden)
   if (c.alter >= 12)
     return {
@@ -490,6 +490,8 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   const ergebnis: (PlanSchritt | null)[] = slots.map(() => null)
   const gewaehlt: { b: Bewertet; slot: Slot; i: number }[] = []
   let kern: KatalogEintrag | undefined
+  // Titel des Kerns, wenn der Plan ihn selbst schreibt (Übertragen), für den Einstieg
+  let kernTitel: { de: string; fr: string } | undefined
   // Reihenfolge des Füllens: erst der Kern (trägt das Ziel), dann der Rest – Einstieg und Reflexion passen sich an
   const reihe = slots.map((_, i) => i).sort((a, b) => (slots[a].rolle === 'kern' ? 0 : 1) - (slots[b].rolle === 'kern' ? 0 : 1) || a - b)
   for (const i of reihe) {
@@ -526,13 +528,19 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     // Jugendliche, Phase „Übertragen“: kein neues Thema, sondern die zuletzt geübte Übung in eine kommende Situation
     // übertragen (Blind-Bewertungen 5 und 6: „die Übertragen-Sitzungen bringen neue Themen statt Übertragung“)
     if (slot.rolle === 'kern' && c.alter >= 12 && c.weg !== 'leicht' && o.phase === 'uebertragen') {
-      const frueher = (o.fruehereKerne ?? []).filter((r) => !r.startsWith('pg:'))
+      // zuerst Übungen mit einem Ziel des Kindes, die jüngste zuerst (Blind-Bewertung 6: „Gesprächseinstieg liegt außerhalb
+      // der Ziele“)
+      const ziel = new Set(c.ziele.map((z) => z.code))
+      const mitZiel = (r: string) => !!c.k.eintraege.get(r)?.eldib.some((x) => x.gewicht === 1 && ziel.has(x.code))
+      const frueher = [...new Set((o.fruehereKerne ?? []).filter((r) => !r.startsWith('pg:')))].reverse()
+      const reihe = [...frueher.filter(mitZiel), ...frueher.filter((r) => !mitZiel(r))]
       const schon = (o.fruehereKerne ?? []).filter((r) => r === 'pg:uebertragen').length
-      const quelle = [...frueher].reverse()[schon]
+      const quelle = reihe[schon % Math.max(1, reihe.length)]
       if (quelle) {
         const sch = uebertragenSchritt(c, slot.min, quelle, (o.fruehereKerne ?? []).indexOf(quelle) + 1)
         ergebnis[i] = sch
         kern = c.k.eintraege.get(sch.ref)
+        kernTitel = { de: sch.ueber!.titel, fr: sch.ueber!['fr.titel'] }
         continue
       }
     }
@@ -583,7 +591,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
         continue
       }
       if (!auswahl[0] && slot.rolle === 'einstieg' && kern) {
-        ergebnis[i] = einstiegSchritt(c, slot.min, kern, o.nr)
+        ergebnis[i] = einstiegSchritt(c, slot.min, kern, o.nr, kernTitel)
         continue
       }
     }

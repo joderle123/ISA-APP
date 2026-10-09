@@ -387,6 +387,9 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
     for (const b of teile) {
       if (b.art !== 'text') aufgaben++
       if (o.wenigSchreiben && aufgaben > 2) break
+      // Zuordnen und Dialog-Lücken tragen keinen eigenen Auftrag – ein kurzer Satz davor
+      if (b.art === 'zuordnen' && !b.titel) liste.push({ art: 'aufgabe', text: fr ? 'Relie ce qui va ensemble.' : 'Verbinde, was zusammengehört.' })
+      if (b.art === 'dialog' && b.zeilen.some((z) => !z.text)) liste.push({ art: 'aufgabe', text: fr ? 'Écris dans les lignes vides ce que tu dirais.' : 'Schreib in die leeren Zeilen, was du sagen würdest.' })
       liste.push(o.wenigSchreiben && b.art === 'frage' ? { ...b, linien: Math.min(b.linien ?? 2, 2) } : b)
     }
     return liste
@@ -583,7 +586,9 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
     }
     if (t.ref === BLATT_SYSTEM.stundenleiste) {
       const schritte = (s?.schritte ?? []).filter((x) => x.min > 0).slice(0, 7)
-      if (schritte.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: schritte.map((x) => ({ text: STUNDE_WORT[x.rolle][sprache], bild: STUNDE_WORT[x.rolle].bild, min: x.min })) })
+      // Jugendliche: „Schluss“ statt „Tschüss“ (Blind-Bewertung 5: wirkt bei 17 Jahren kindlich)
+      const wort = (r: Rolle) => (alter >= 12 && r === 'abschluss' ? (sprache === 'fr' ? 'Fin' : 'Schluss') : STUNDE_WORT[r][sprache])
+      if (schritte.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: schritte.map((x) => ({ text: wort(x.rolle), bild: STUNDE_WORT[x.rolle].bild, min: x.min })) })
       markiere(start, bausteine.length - start, teilId)
       continue
     }
