@@ -78,11 +78,14 @@ function compactOfflineBundle(): Plugin {
         const dateien: Record<string, unknown> = {}
         for (const d of readdirSync(ordner).sort()) if (d.endsWith('.json')) dateien['./' + d] = JSON.parse(readFileSync(ordner + d, 'utf8'))
         const NUMMERN = fileURLToPath(new URL('./src/blatt/nummern.ts', import.meta.url)).replace(/\\/g, '/')
+        const NUTZER = fileURLToPath(new URL('./src/lib/nutzer.ts', import.meta.url)).replace(/\\/g, '/')
+        // wie src/data/blaetter/index.ts: die Blätter des Skills-Kurses nur, wenn der Kurs frei ist (kursFrei)
         return (
           `import { inflateJson } from ${JSON.stringify(INFLATE)}\n` +
           `import { nummerieren } from ${JSON.stringify(NUMMERN)}\n` +
+          `import { kursFrei } from ${JSON.stringify(NUTZER)}\n` +
           `const dateien = await inflateJson(${JSON.stringify(gzipBase64(JSON.stringify(dateien)))})\n` +
-          `export const alleBlaetter = nummerieren(dateien)\n` +
+          `export const alleBlaetter = nummerieren(dateien).filter((b) => kursFrei() || b.bereich !== 'skills')\n` +
           `export const blattById = new Map(alleBlaetter.map((b) => [b.id, b]))\n`
         )
       }
