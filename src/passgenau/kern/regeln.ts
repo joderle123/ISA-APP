@@ -505,6 +505,13 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
   if (c.sprache === 'fr' && e.typ === 'schritt' && !e.fr && !e.id.startsWith('pg:')) g *= 0.15
   // braucht ein Tablet (CREW-Spiele, Laptop): nur, wenn nichts ohne Gerät gleich gut passt (dritte Blind-Bewertung)
   if (merkmaleVon(c.k, e).has('geraet')) g *= 0.5
+  // Jugendliche (dritte Blind-Bewertung: 5–8 % der Jugend-Stunden „so haltbar“, fast alle Mängel in Bruchstücken aus Gruppen-
+  // und Klassenstunden): die Einzelübungen für Jugendliche (j:, inhalte/jugend.json) klar zuerst; Kurs, Förderfach, Material
+  // und CREW ohne Einzelvariante nur, wenn nichts anderes passt
+  if (c.alter >= 12 && e.typ === 'schritt') {
+    if (e.id.startsWith('j:')) g *= 1.8
+    else if (/^(k|f|m|c):/.test(e.id) && !e.einzelvariante) g *= 0.45
+  }
   // Einzelstunde: Schritte, die nur für Gruppen beschrieben sind (ohne Einzelvariante), zählen weniger – die Beschriftung
   // nennt 1290 solcher Schritte „einzeltauglich“; im Zweifel gewinnt, was für ein Kind geschrieben ist (Testlauf 9.10.)
   if ((c.a.sozialform === 'einzeln' || !c.a.sozialform) && e.typ === 'schritt' && !e.einzelvariante && !e.sozialform.some((x) => x === 'einzeln' || x === 'zu-zweit')) g *= 0.8
