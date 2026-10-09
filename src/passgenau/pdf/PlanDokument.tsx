@@ -26,6 +26,7 @@ const T: Record<Sprache, Record<string, string>> = {
     beachten: 'Beachten', eltern: 'Vorher: Eltern informiert (Hausregel)?', blatt: 'Das Blatt', leichter: 'leichter', wahl: 'Das Kind wählt',
     hinweise: 'Hinweise', neu: 'neu ausprobiert', deckblatt: 'Folge', sitzung: 'Sitzung', phase: 'Phase', kern: 'Kern', alleMaterial: 'Material für die ganze Folge',
     ergebnis: 'Ergebnis', geklappt: 'hat geklappt', teils: 'teils', nicht: 'hat nicht geklappt', quelle: 'Quelle', ankreuzen: 'nach der Stunde ankreuzen',
+    beruhigt: 'hat sich beruhigt', dabei: 'war dabei', nurDa: 'wollte nur da sein', abgebrochen: 'abgebrochen',
   },
   fr: {
     reiter: 'Passgenau', fuer: 'pour', ziele: 'Objectifs', ablauf: 'Déroulement', min: 'min', sagen: 'Dire', kippt: 'Si ça bascule', warum: 'Pourquoi',
@@ -33,6 +34,7 @@ const T: Record<Sprache, Record<string, string>> = {
     beachten: 'Attention', eltern: 'Avant : parents informés (règle de la maison) ?', blatt: 'La fiche', leichter: 'plus simple', wahl: 'L’enfant choisit',
     hinweise: 'Remarques', neu: 'nouvel essai', deckblatt: 'Série', sitzung: 'Séance', phase: 'Phase', kern: 'Cœur', alleMaterial: 'Matériel pour toute la série',
     ergebnis: 'Résultat', geklappt: 'réussi', teils: 'en partie', nicht: 'pas réussi', quelle: 'Source', ankreuzen: 'à cocher après la séance',
+    beruhigt: 's’est calmé·e', dabei: 'était présent·e', nurDa: 'voulait juste être là', abgebrochen: 'interrompu',
   },
 }
 
@@ -231,9 +233,10 @@ export function PlanSeite({ d }: { d: DruckSitzung }) {
         </View>
         <View style={{ flex: 1.2 }}>
           <Absatz titel={tx.notiz}>
-            <View style={{ flexDirection: 'row', marginBottom: 6 }}>
-              {[tx.geklappt, tx.teils, tx.nicht].map((w) => (
-                <View key={w} style={{ flexDirection: 'row', alignItems: 'center', marginRight: 10 }}>
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 3 }}>
+              {/* Krisentag und Weg 3 (P10): nie „hat nicht geklappt“ */}
+              {(d.krisentag ? [tx.beruhigt, tx.dabei, tx.nurDa, tx.abgebrochen] : [tx.geklappt, tx.teils, tx.nicht]).map((w) => (
+                <View key={w} style={{ flexDirection: 'row', alignItems: 'center', marginRight: 10, marginBottom: 3 }}>
                   <Kaestchen />
                   <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, color: NEUTRAL.text, marginLeft: 4 }}>{w}</Text>
                 </View>

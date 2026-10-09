@@ -47,6 +47,8 @@ export interface DruckSitzung {
   n: number
   /** Dateiname ohne Namen (E-M13) */
   datei: string
+  /** Krisentag oder Weg 3 (P10): zum Ankreuzen „hat sich beruhigt · war dabei · …“ statt „hat (nicht) geklappt“ */
+  krisentag?: boolean
 }
 
 export interface DruckFolge {
@@ -59,6 +61,9 @@ export interface DruckFolge {
 }
 
 const KURZ = 240
+
+/** Hinweise des Planers, die eine Handlung in der Oberfläche anbieten – auf Papier sinnlos */
+const NUR_OBERFLAECHE = /Leichte Stunde zeigen\.$|Mitmach-Seite auf Wunsch\.$/
 
 function kuerzen(s: string | undefined, n = KURZ): string | undefined {
   if (!s) return undefined
@@ -156,7 +161,8 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     sp === 'fr'
       ? `Passgenau · ${plan.n > 1 ? `séance ${nr} sur ${plan.n} · ` : ''}${plan.dauer} min · ${phase}`
       : `Passgenau · ${plan.n > 1 ? `Sitzung ${nr} von ${plan.n} · ` : ''}${plan.dauer} Min. · ${phase}`
-  const hinweise = [...(s.hinweise ?? [])]
+  // Hinweise, die nur in der Oberfläche etwas bedeuten (Knopf „Leichte Stunde zeigen“, Wahl des Blatts), nicht drucken
+  const hinweise = (s.hinweise ?? []).filter((h) => !NUR_OBERFLAECHE.test(h))
   if (p.vorsicht.includes('heikel') || (p.achtung ?? []).length)
     hinweise.unshift(sp === 'fr' ? 'Un thème sensible est ouvert pour cet enfant. Passgenau ne remplace pas une évaluation – voir le dossier.' : 'Zu diesem Kind ist ein heikles Thema offen. Passgenau ersetzt keine Abklärung – Hinweise im Dossier.')
   return {
@@ -178,6 +184,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     nr,
     n: plan.n,
     datei: `Passgenau-Sitzung-${nr}${sp === 'fr' ? '_FR' : ''}.pdf`,
+    krisentag: plan.weg === 'leicht' || s.phase === 'leicht' || (plan.auftrag?.heute?.stimmung ?? 4) <= 2,
   }
 }
 

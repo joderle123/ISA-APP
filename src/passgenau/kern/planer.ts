@@ -530,7 +530,22 @@ const FOLGE_TITEL: Record<Kompetenz, string> = {
   lernstrategien: 'Gut lernen', alltag: 'Den Alltag schaffen',
 }
 
+const FOLGE_TITEL_FR: Record<Kompetenz, string> = {
+  impulskontrolle: 'Stop – réfléchir – agir', selbstregulation: 'Se calmer', 'gefuehle-erkennen': 'Reconnaître les émotions',
+  'gefuehle-ausdruecken': 'Montrer et nommer ses émotions', aufmerksamkeit: 'Rester concentré·e', ausdauer: 'Persévérer',
+  kooperation: 'Ensemble plutôt que seul·e', konflikte: 'Résoudre les conflits', kommunikation: 'Parler et écouter', selbstbild: 'Mes forces',
+  lernstrategien: 'Bien apprendre', alltag: 'Gérer le quotidien',
+}
+
+/** Titel des Plans in der Sprache des Blatts (Planblatt, Mappe): sonst stünde „Einzelstunde: …“ auf einem französischen Blatt */
 function planTitel(c: Kontext): string {
+  if (c.sprache === 'fr') {
+    if (c.weg === 'leicht') return 'Temps relationnel'
+    if (c.ziele[0]?.quelle === 'kennenlernen') return c.weg === 'schnell' ? 'Séance individuelle : faire connaissance' : 'Faire connaissance'
+    const f = c.ziele.find((z) => z.feld)?.feld
+    if (c.weg === 'schnell') return `Séance individuelle : ${f ? (KOMPETENZ_NAME[f]?.fr ?? FOLGE_TITEL_FR[f]) : 'à la carte'}`
+    return f ? FOLGE_TITEL_FR[f] : 'Série de séances'
+  }
   if (c.weg === 'leicht') return 'Beziehungszeit'
   if (c.ziele[0]?.quelle === 'kennenlernen') return c.weg === 'schnell' ? 'Einzelstunde: Kennenlernen' : 'Kennenlernen'
   const feld = c.ziele.find((z) => z.feld)?.feld

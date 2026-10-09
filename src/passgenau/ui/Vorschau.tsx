@@ -505,7 +505,7 @@ export function Vorschau() {
           <div className="pg-eyebrow">PDF-Vorschau · Sitzung {s.nr}{s.gedruckt ? ` · gedruckt ${datumKurz(s.gedruckt)}` : ''}</div>
           <h1>Plan und Blatt</h1>
           <p className="pg-lead">
-            {pdf ? 'Das echte PDF – derselbe Renderer wie jedes Toolbox-Blatt. Tippe im PDF (oder rechts in der Liste) auf einen Teil, um ihn zu ersetzen.' : 'Skizze: Tippe auf einen Teil – im Plan oder auf dem Blatt –, um ihn zu ersetzen.'}
+            {pdf ? 'Das echte PDF – derselbe Renderer wie jedes Toolbox-Blatt. Tippe im PDF (oder in der Liste der Teile) auf einen Teil, um ihn zu ersetzen.' : 'Skizze: Tippe auf einen Teil – im Plan oder auf dem Blatt –, um ihn zu ersetzen.'}
           </p>
         </div>
         <div className="pg-btnrow">

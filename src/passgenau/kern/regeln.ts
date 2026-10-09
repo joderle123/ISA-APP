@@ -195,6 +195,9 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   // heikel nur freigeschaltet; Selbstverletzung/Suizid nie als Baustein (T-M1)
   if (e.sensibel === 'akut') return 'heikel'
   if (e.sensibel === 'kinderschutz' && !c.heikelFrei.has('kinderschutz') && !c.heikelFrei.has('sexualitaet')) return 'heikel'
+  // heikle Themen auch ohne `sensibel` (Beschriftung: 78 Einträge mit Thema „sexualitaet“) nur ausdrücklich freigeschaltet
+  if (e.thema.includes('sexualitaet') && !c.heikelFrei.has('sexualitaet') && !c.heikelFrei.has('kinderschutz')) return 'heikel'
+  if ((e.thema.includes('suizid') || e.thema.includes('kinderschutz')) && !c.heikelFrei.has('suizid') && !c.heikelFrei.has('kinderschutz')) return 'heikel'
   if (e.sensibel === 'familie' && (c.vorsicht.has('familie') || c.vorsicht.has('trauer'))) return 'Vorsicht Familie'
   if (e.sensibel === 'koerper' && (c.vorsicht.has('koerper') || c.vorsicht.has('trauma'))) return 'Vorsicht Körper'
   // Vorsicht (3.3, P9, E-M2)
@@ -420,6 +423,9 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
   g += o.bonus ?? 0
   // Französisch: Blatt-Teile ohne FR zählen weniger (T-M4)
   if (c.sprache === 'fr' && e.typ === 'baustein' && !e.sprache.fr && e.lesemenge > 0) g *= 0.7
+  // Einzelstunde: Schritte, die nur für Gruppen beschrieben sind (ohne Einzelvariante), zählen weniger – die Beschriftung
+  // nennt 1290 solcher Schritte „einzeltauglich“; im Zweifel gewinnt, was für ein Kind geschrieben ist (Testlauf 9.10.)
+  if ((c.a.sozialform === 'einzeln' || !c.a.sozialform) && e.typ === 'schritt' && !e.einzelvariante && !e.sozialform.some((x) => x === 'einzeln' || x === 'zu-zweit')) g *= 0.8
   const deckel = leicht ? 0.4 : 0.3
   let vRoh = c.cache.v.get(e)
   if (vRoh === undefined) {

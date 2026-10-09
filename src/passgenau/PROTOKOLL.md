@@ -91,10 +91,12 @@ Stand 2026-10-09 · `proto` 1 · `planV` 1 · `profilV` 1. Gilt für `src/passge
   ```
   - `ergebnis`: `geklappt` · `teils` · `nicht` · Krisentage/Weg 3: `beruhigt` · `dabei` · `nur-da` · `abgebrochen` (nie negativ, P10).
   - `chips`: Schlüssel aus `hallo.chips`. `kind.wahl`: Ref des gewählten Schritts (Weg 3, auch `pg:da-sein`).
-  - `plan`: der aktuelle Plan (P7: „Stunde gehalten“ speichert den Plan mit) – mit Schreibrecht ins Dossier, sonst nur zum Lesen.
+  - `plan`: der aktuelle Plan (P7: „Stunde gehalten“ speichert den Plan mit) – mit Schreibrecht ins Dossier (im selben Stapel,
+    ohne eigene Protokollzeile), sonst nur zum Lesen. `vorlieben` ebenso nur mit Schreibrecht.
   - Nichts ist vorbelegt (P6/E-M1): was nicht geklickt wurde, fehlt.
 - arg (Stapel, optional): `{ ref, liste: [ …wie oben ohne ref… ], ereignisse?: Ereignis[] }` → erg `{ liste: [erg …] }`.
-- erg: `{ notizId: string | null, planId, hinweis?: 'ohne-notiz' }`.
+- erg: `{ notizId: string | null, planId, rev?, hinweis?: 'ohne-notiz' }` (`rev`: Änderungszähler des gespeicherten Plans –
+  die Toolbox übernimmt ihn, sonst hielte der Hub den nächsten Stand für veraltet).
 - Der **Hub** schreibt die Notiz (`d.eintraege`, Art „Beobachtung“ nur mit Ziel-Richtung oder Chip, sonst „Notiz“), setzt die
   Haken `d.material.gemacht['blatt:<id>']` für jede Quelle `b:<id>:<n>` und schreibt eine Protokollzeile ohne Texte.
   Die Toolbox zeigt dieselbe Notiz vorab (`notizText` im Kern = `notizText` im Hub, gleicher Aufbau):

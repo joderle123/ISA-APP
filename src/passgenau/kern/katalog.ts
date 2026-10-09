@@ -307,6 +307,10 @@ export function baueKatalog(q: Quellen, bDatei: BausteineDatei, sDatei: Schritte
   }
   // eigene, feste Schritte (Blatt-Slot, „einfach da sein“, stille Rituale)
   for (const s of SYSTEM) if (!eintraege.has(s.id)) add({ typ: 'schritt', ...s })
+  // Beschriftung nachbessern (Testlauf 9.10.): Schritte, die eine Küche brauchen, tragen das Material „kueche“ – sonst
+  // landete eine Kocheinheit in einer Einzelstunde im Büro (die Prüfregel „Material“ greift dann)
+  for (const e of eintraege.values())
+    if (e.typ === 'schritt' && !e.material.includes('kueche') && KUECHE_RE.test(`${e.quelle.titel} ${e.vorbereitung ?? ''}`)) e.material = [...e.material, 'kueche']
   // Rollenlisten nach Id sortieren: gleiche Reihenfolge, gleicher Plan
   for (const l of nachRolle.values()) l.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
 
@@ -315,6 +319,8 @@ export function baueKatalog(q: Quellen, bDatei: BausteineDatei, sDatei: Schritte
   aktuell = k
   return k
 }
+
+const KUECHE_RE = /(lehrküche|küche reservieren|kochen im team|gemeinsam kochen|backofen|kochplatte)/i
 
 let laden: Promise<Katalog> | null = null
 
