@@ -219,6 +219,17 @@ Spielecken. Pflicht: `stufen: ["C1"]`, `layout: "bild"`, DE **und** FR, `dauer` 
   - Haltungen: stehen, winken, verschraenkt, zeigen, jubeln, melden, stopp, haende-gesicht, geben.
   - Beispiel: `figur:sami:traurig`, `figur:lehrerin:ruhig:zeigen`.
 - **Motive** `motiv:<name>` – vulkan, eisberg, batterie, batterie-leer, batterie-voll, ampel, waage, hand, koerper, schildkroete, schildkroete-panzer, baum, berg, insel, stopp, bruecke, ballon, werkzeugkiste, haus, wasserglas.
+- **Kinder-Motive: Tiere, Natur, Feste** `motiv:<name>` (farbig, für die Spielschule; `src/blatt/motive-tiere.ts`,
+  erkennbar ab ca. 18 mm Bildhöhe, auch als Ausmalbild mit `modus: "anmalen"`):
+  - Bauernhof: kuh, huhn, kueken, ei, ei-im-nest, ei-riss, schaf, ziege, schwein, pferd, esel, hase, katze, hund.
+  - Wald und Vögel: igel, eichhoernchen, fuchs, reh (ohne Geweih), eule, vogel, nest (mit Eiern), vogelhaus, frosch.
+  - Krabbeltiere und Verwandlung: raupe, puppe, schmetterling, biene, ameise, regenwurm, schnecke, marienkaefer
+    (Bildfolgen: ei → ei-riss → kueken, raupe → puppe → schmetterling).
+  - Zoo: elefant, giraffe, loewe, affe, pinguin, zebra, krokodil.
+  - Natur und Wetter: regenbogen, wind, pfuetze, schneeball, schlitten, kastanie, eichel, kuerbis (ohne Gesicht),
+    kartoffel, blatt-herbst, kresse-1 / kresse-2 / kresse-3 (Tag 1 / 3 / 7), regenschirm, sonnenschirm.
+  - Feste und Kirmes: peckvillchen, buergbrennen, lampion, riesenrad, karussell, feuerwerk, fahne-lu
+    (rot – weiß – hellblau), kleeschen (ohne Rute), boxemaennchen.
 
 Figuren-Namen erscheinen **nicht** im Bild – in Geschichten dürfen die Kinder
 anders heißen. Bilder sparsam und gezielt einsetzen, nie als Dekoration.

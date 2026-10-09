@@ -5,6 +5,7 @@
 // ---------------------------------------------------------------------------
 
 import type { Form, Zeichnung } from './zeichnung'
+import { TIERE } from './motive-tiere'
 
 const T = 'tinte'
 const WASSER = '#E3EEF7'
@@ -346,6 +347,7 @@ function wasserglas(): Zeichnung {
 }
 
 const MOTIVE: Record<string, () => Zeichnung> = {
+  ...TIERE,
   wasserglas,
   vulkan,
   eisberg,
