@@ -3,13 +3,16 @@
 //   Arbeitsblätter (neu, professionell gesetzt), Skills-Kurs (Kursjahre mit
 //   Einheiten), Einheiten (Bibliothek) und Team-Material (eigenes Material teilen).
 // Deep-Links: #blatt=<id> · #eldib=V-13 · #eldib=V-13&material=<id> · #team ·
-//   #kurs · #kurs=<einheit-id> · #kurs=grundlagen
+//   #kurs · #kurs=<einheit-id> · #kurs=grundlagen ·
+//   #passgenau · #passgenau=<ref>&weg=schnell|leicht|gruendlich&ziel=V-21
 // ---------------------------------------------------------------------------
 import { useCallback, useEffect, useState } from 'react'
 import { Blaetter, leererBlattFilter, type BlattFilter } from './seiten/Blaetter'
 import { Einheiten } from './seiten/Einheiten'
 import { Team } from './seiten/Team'
 import { Kurs } from './seiten/Kurs'
+import { Passgenau } from './seiten/Passgenau'
+import { startAusHash, type PassgenauStart } from './passgenau/ui/hub'
 import { Toaster } from './components/Toaster'
 import { Icon } from './components/Icon'
 import { teamSync } from './lib/teamSync'
@@ -19,7 +22,7 @@ import type { Material } from './types/material'
 import { normaliseEldibCode } from './lib/deeplink'
 import { kursFrei } from './lib/nutzer'
 
-type Seite = 'blaetter' | 'kurs' | 'einheiten' | 'team'
+type Seite = 'blaetter' | 'kurs' | 'einheiten' | 'team' | 'passgenau'
 
 function hashParameter(hash: string): URLSearchParams {
   return new URLSearchParams(hash.replace(/^#\/?/, ''))
@@ -30,6 +33,7 @@ function seiteAusHash(hash: string): Seite | null {
   const h = hash.replace(/^#\/?/, '')
   if (!h) return null
   if (h === 'team' || h.startsWith('team&')) return 'team'
+  if (h === 'passgenau' || h.startsWith('passgenau=') || h.startsWith('passgenau&')) return 'passgenau'
   // Den Skills-Kurs sehen nur die Konten aus CDSE_SKILLSKURS (lib/nutzer kursFrei) – sonst die Arbeitsblätter
   if (h === 'kurs' || h.startsWith('kurs=') || h.startsWith('kurs&')) return kursFrei() ? 'kurs' : 'blaetter'
   if (h === 'einheiten') return 'einheiten'
@@ -63,6 +67,7 @@ export default function App() {
   const [blattFilter, setBlattFilter] = useState<BlattFilter>(() => filterAusHash(window.location.hash))
   const [startBlatt, setStartBlatt] = useState<{ id: string } | null>(() => blattAusHash(window.location.hash))
   const [teamMaterial, setTeamMaterial] = useState<Material[]>([])
+  const [pgStart, setPgStart] = useState<PassgenauStart | null>(() => (seiteAusHash(window.location.hash) === 'passgenau' ? startAusHash(window.location.hash) : null))
   const bew = useBewertungen()
 
   // Team-Ablage verbinden (falls schon einmal gewählt) und Uploads mitlesen.
@@ -79,6 +84,7 @@ export default function App() {
       const hash = new URL(e.newURL).hash
       const s = seiteAusHash(hash)
       if (s) setSeite(s)
+      if (s === 'passgenau') setPgStart(startAusHash(hash))
       if (s === 'blaetter') {
         setBlattFilter(filterAusHash(hash))
         setStartBlatt(blattAusHash(hash))
@@ -99,6 +105,10 @@ export default function App() {
       setStartBlatt(null)
       // #kurs=… schreibt der Kurs selbst (die zuletzt offene Einheit bleibt)
       if (s === 'team') history.replaceState(null, '', '#team')
+      else if (s === 'passgenau') {
+        if (!window.location.hash.startsWith('#passgenau')) history.replaceState(null, '', '#passgenau')
+        setPgStart((alt) => alt ?? startAusHash('#passgenau'))
+      }
       else if (s === 'blaetter') history.replaceState(null, '', window.location.pathname + window.location.search)
       window.scrollTo({ top: 0 })
     },
@@ -123,6 +133,7 @@ export default function App() {
     ['kurs', 'Skills-Kurs', 'stairs', 0],
     ['einheiten', 'Einheiten', 'book', 0],
     ['team', 'Team-Material', 'folder', teamMaterial.length],
+    ['passgenau', 'Passgenau', 'compass', 0],
   ].filter(([id]) => id !== 'kurs' || kursFrei()) as [Seite, string, string, number][]
 
   return (
@@ -158,6 +169,7 @@ export default function App() {
         {kursFrei() && <Kurs aktiv={seite === 'kurs'} bew={bew} />}
         <Einheiten aktiv={seite === 'einheiten'} bew={bew} teamMaterials={teamMaterial} onBlaetterZuEldib={zuBlaettern} />
         <Team aktiv={seite === 'team'} material={teamMaterial} bew={bew} />
+        <Passgenau aktiv={seite === 'passgenau'} start={pgStart} />
       </div>
       <Toaster />
     </div>
