@@ -1,0 +1,1075 @@
+{
+  "einheiten": [
+    {
+      "id": "ff6-e06",
+      "klasse": "6e",
+      "dauer": 100,
+      "blaetter": [
+        "ff6-stress-barometer"
+      ],
+      "vorlagen": [
+        "ff6-stress-karten"
+      ],
+      "woerter": [
+        {
+          "de": "der Stress",
+          "fr": "le stress"
+        },
+        {
+          "de": "der Druck",
+          "fr": "la pression"
+        },
+        {
+          "de": "das Anzeichen",
+          "fr": "le signe"
+        },
+        {
+          "de": "kippen",
+          "fr": "basculer"
+        },
+        {
+          "de": "der Leerlauf",
+          "fr": "le point mort"
+        },
+        {
+          "de": "die Kraftquelle",
+          "fr": "la ressource"
+        }
+      ],
+      "de": {
+        "titel": "Stress verstehen",
+        "kurz": "Etwas Druck macht wach, zu viel blockiert: Stress-Anzeichen auf dem Barometer einordnen, beim Gruppenjonglieren erleben, wann guter Stress kippt, und volle Tage sortieren.",
+        "ziele": [
+          "unterscheiden Stress-Barometer und Anspannungsskala und ordnen Anzeichen den vier Stufen zu",
+          "erleben beim Gruppenjonglieren, wann guter Stress kippt, und nennen, was geholfen hat",
+          "halten auf der Stress-Waage fest, was sie drückt und was ihnen Kraft gibt",
+          "probieren den Skill „Ein Ball nach dem anderen“ aus"
+        ],
+        "material": [
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Anzeichen-Karten (Vorlage), auf A3",
+          "Magnete oder Klebeband",
+          "12 weiche Bälle oder Papierbälle",
+          "2 Stofftiere als letzter Ball",
+          "Timer, gut sichtbar",
+          "A6-Zettel, einer je Person",
+          "Schülerheft",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Tafel: links das Barometer (unten 1 Leerlauf, oben 4 Zu viel) und das Tafelbild aus Schritt 3, rechts eine Tabelle fürs Jonglieren: Bälle, Stufe, gefallen.",
+          "Karten auf A3 vergrößert kopieren und schneiden; ohne Softbälle zwölf Papierbälle knüllen und mit Klebeband umwickeln.",
+          "Platz für zwei Kreise zu zehn: Tische an die Wände oder Flur, Pausenhalle, Schulhof in Sichtweite."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Punkt, Zahl und ein bisschen Druck"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick, Mission und Start ins Kapitel"
+          },
+          {
+            "min": "15–25",
+            "phase": "input",
+            "titel": "Stress im Körper: Thermometer oder Barometer?"
+          },
+          {
+            "min": "25–45",
+            "phase": "uebung",
+            "titel": "Karten-Barometer: Zeichen einordnen"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Klatschwelle in zwei Kreisen"
+          },
+          {
+            "min": "50–75",
+            "phase": "aktiv",
+            "titel": "Gruppenjonglieren: Wann kippt es?"
+          },
+          {
+            "min": "75–85",
+            "phase": "uebung",
+            "titel": "Ball-Kurve und meine Stress-Waage"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Ein Ball nach dem anderen"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass und Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Punkt, Zahl und ein bisschen Druck",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat (3 Min.). Auf drei zeigen alle ihre Anspannung mit den Fingern (0–10 Finger für 0–100); wer die Zahl heute nicht zeigen möchte, legt die Hand flach auf den Tisch. Die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige nennen ihr Wort (3 Min.). Dann eine Zusatzfrage, die nichts Persönliches verlangt: Wann hat euch ein bisschen Druck schon einmal geholfen – beim Spiel, bei einem Auftritt, beim Packen, wenn der Bus gleich kommt? Die Lehrkraft erzählt zuerst ein eigenes Beispiel, dann folgen zwei, drei Stimmen; die Beispiele kommen in Stichworten an den Rand der Tafel (4 Min.).",
+            "sagen": [
+              "Gefühl, Zahl – und dann eine Frage: Wann hat euch ein bisschen Druck schon einmal geholfen?",
+              "Bei mir: Am Sonntag trödle ich eine Stunde beim Frühstück. Unter der Woche bin ich in zehn Minuten aus dem Haus – und vergesse trotzdem nichts."
+            ],
+            "tipp": "Mit gutem Druck zu beginnen ist Absicht: Viele Jugendliche halten Stress für etwas, das ganz weg muss. Die Stunde zeigt, dass es um das richtige Maß geht.",
+            "wennEsKippt": "Kommen nur Sprüche wie „Mir hilft Druck nie, ich mach dann einfach nichts“, mitlachen und an die Tafel schreiben – das ist der Leerlauf, und er bekommt heute eine eigene Stufe. Zeigt jemand ernsthaft acht Finger oder mehr, nicht vor der Klasse nachfragen, sondern in der nächsten Arbeitsphase leise: Brauchst du gerade etwas?"
+          },
+          {
+            "titel": "Rückblick, Mission und Start ins Kapitel",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor – dort ging es darum, freundlich mit sich selbst zu reden. Kurz nachfragen, welcher Skill im Skills-Kompass unter „2 · Selbstwert und Körper“ steht; zwei Stimmen reichen. Per Daumen nach der Wochen-Mission der letzten Stunde fragen – hoch, Mitte, runter –, eine Stimme erzählt; niemand muss sie geschafft haben. Dann das neue Kapitel öffnen und die Leitfrage an die Tafel schreiben: Wie komme ich gut durch Schule, Lernen und Tests? Die vier Stunden ankündigen: heute Stress verstehen, dann Lernen, Aufschieben und Tests. Klarstellen: Über Noten oder Bulletins muss hier niemand reden.",
+            "sagen": [
+              "Daumen hoch, Mitte oder runter: Wie lief eure Mission aus der letzten Stunde? Wer erzählt in einem Satz?",
+              "Vier Stunden, vier Werkzeuge für die Schule. Eure Noten muss dabei niemand verraten."
+            ],
+            "tipp": "Die freundliche Stimme aus der letzten Stunde passt gut zu diesem Kapitel: Wer unter Druck steht, redet oft besonders streng mit sich. Daran in einem Satz erinnern, ohne es zu vertiefen."
+          },
+          {
+            "titel": "Stress im Körper: Thermometer oder Barometer?",
+            "dauer": 10,
+            "phase": "input",
+            "text": "Zuerst klären, was Stress ist (3 Min.): die Antwort des Körpers auf eine Anforderung – Herz und Atem werden schneller, die Muskeln spannen sich, der Blick wird eng. Das macht bereit; wer aus der 7e den Satz „Mein Körper macht sich bereit“ kennt, sagt ihn den Neuen. Auf die Beispiele vom Check-in zeigen: Ein bisschen Druck macht schneller und wacher. Dann neben das vorbereitete Barometer die Kurve zeichnen – zu wenig, genau richtig, zu viel – und die vier Stufen erklären (3 Min.). Den Unterschied zur Anspannungsskala mit dem Tafelbild klären; eine Person aus der 7e erklärt die Skala in einem Satz (3 Min.). Zum Schluss lesen alle auf dem Blatt den Kasten „Thermometer oder Barometer?“ mit (1 Min.).",
+            "sagen": [
+              "Ein Barometer misst den Luftdruck und zeigt, ob ein Gewitter aufzieht. Unser Barometer misst den Druck, den ihr durch Aufgaben spürt.",
+              "Bei der Anspannungsskala wollt ihr bei hohen Zahlen runter. Beim Barometer wollt ihr in die Mitte: nicht zu wenig Druck, nicht zu viel.",
+              "Ganz ohne Druck fangen die meisten gar nicht erst an. Mit zu viel Druck geht gar nichts mehr."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Anspannungsskala (7e)",
+                "Stress-Barometer (neu)"
+              ],
+              "zeilen": [
+                [
+                  "wie ein Thermometer: Wie laut ist mein Alarm jetzt?",
+                  "wie ein Barometer: Wie viel Druck machen meine Aufgaben diese Woche?"
+                ],
+                [
+                  "0 bis 100, bei jedem Gefühl",
+                  "vier Stufen, bei Schule und vollen Tagen"
+                ],
+                [
+                  "Ziel bei hoher Zahl: runter",
+                  "Ziel: in die Mitte, zum guten Stress"
+                ]
+              ]
+            },
+            "tipp": "Ein Beispiel macht den Unterschied greifbar: ein langweiliger Sonntag – Anspannung bei 10, Barometer auf Leerlauf. Eine Woche mit drei Tests – im Moment vielleicht ruhig bei 20, aber das Barometer steht auf „es kippt“. Die Skala bleibt im Check-in; das Barometer kommt dazu, wenn es um Schule und volle Wochen geht.",
+            "wennEsKippt": "Kommt „Das ist doch dasselbe“, zustimmen, dass beides zusammenhängt, und das Sonntagsbeispiel nennen. Wird es zu theoretisch oder unruhig, sofort zum Karten-Barometer übergehen; das Tafelbild bleibt stehen und wird dort wieder gebraucht.",
+            "blatt": "ff6-stress-barometer"
+          },
+          {
+            "titel": "Karten-Barometer: Zeichen einordnen",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Jede Tischgruppe bekommt zwei Anzeichen-Karten, verteilt die Rollen – lesen, kleben, begründen – und klärt, auf welche Stufe des Tafel-Barometers die Karten gehören (4 Min.). Dann kommen die Gruppen nacheinander nach vorn – die nächste wartet schon an der Seite –, kleben ihre Karten auf und begründen in einem Satz; die Klasse zeigt mit dem Daumen, ob sie zustimmt, und bei Uneinigkeit darf eine Karte zwischen zwei Stufen hängen (6 Min.). Über die zwei Streitfälle stimmt die ganze Klasse per Handzeichen ab (2 Min.). Danach arbeitet jede Person allein auf dem Blatt (Aufgabe 1): zu jeder Stufe ein eigenes Zeichen; von den Karten abschreiben ist erlaubt (6 Min.). Zum Schluss nennen zwei, drei Freiwillige ihr erstes Kipp-Zeichen (2 Min.).",
+            "sagen": [
+              "Fragt bei jeder Karte: Hilft der Druck da noch – oder bremst er schon?",
+              "Dasselbe Zeichen kann auf zwei Stufen passen: Herzklopfen vor dem Spiel ist guter Stress, Herzklopfen seit drei Tagen etwas anderes.",
+              "Welches Zeichen kommt bei euch als Erstes, wenn es kippt?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Stufe",
+                "So kann es aussehen"
+              ],
+              "zeilen": [
+                [
+                  "4 · Zu viel",
+                  "Kopf leer, Bauch- oder Kopfweh, schlecht schlafen, nur noch weg"
+                ],
+                [
+                  "3 · Es kippt",
+                  "gereizt, mehr Fehler, die Gedanken drehen sich im Kreis, ständig am Handy"
+                ],
+                [
+                  "2 · Guter Stress",
+                  "wach, Herz etwas schneller, ganz bei der Sache, die Zeit vergeht schnell"
+                ],
+                [
+                  "1 · Leerlauf",
+                  "langweilig, schlapp, nichts geht voran"
+                ]
+              ]
+            },
+            "tipp": "Uneinigkeit ist erwünscht: Ob ein Zeichen noch zum guten Stress gehört, hängt davon ab, wie lange es dauert und ob man noch vorankommt. Die Karten bleiben bis zum Ende der Stunde hängen – nach dem Jonglieren erkennt die Klasse viele davon wieder.",
+            "wennEsKippt": "Albert eine Gruppe nur herum, die Rollen tauschen: Wer albert, begründet vorn. Wer nichts über sich schreiben will, füllt das Barometer für eine erfundene Person im eigenen Alter. Nennt jemand beim Vorlesen etwas sehr Belastendes – seit Wochen kaum Schlaf, ständig Bauchweh –, kurz würdigen, nicht vor der Klasse nachfragen und nach der Stunde ansprechen.",
+            "blatt": "ff6-stress-karten"
+          },
+          {
+            "titel": "Bewegungspause: Klatschwelle in zwei Kreisen",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Zuerst schiebt die Klasse die Tische an die Wände – in einer Minute und ohne zu sprechen (1 Min.). Dann bilden alle zwei Kreise zu zehn; wer schnell hochdreht, steht neben der Lehrkraft. In jedem Kreis wandert ein Klatscher reihum: Jede Person klatscht einmal, sobald die Person neben ihr geklatscht hat, erst langsam, dann so schnell wie möglich. Dann schickt die Lehrkraft eine zweite Welle in die Gegenrichtung los; wo beide sich treffen, gibt es meist Gelächter (3 Min.). Kurz fragen: Ab wann wurde es zu viel? (1 Min.) Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung; die Kreise werden dann direkt danach gebildet.",
+            "tipp": "Die Klatschwelle ist das Jonglieren im Kleinen: Eine Welle ist leicht, zwei gleichzeitig bringen den Kreis ins Schwimmen – genau das passiert gleich mit den Bällen.",
+            "wennEsKippt": "Wird beim Umbau gerannt oder gerufen, alle anhalten, die Hand heben, still warten und dann weitermachen: Ziel ist ein leiser Umbau, kein schneller. Wer nicht in den Kreis mag, ist Zeitwächter und stoppt, wie lange eine Welle für eine Runde braucht."
+          },
+          {
+            "titel": "Gruppenjonglieren: Wann kippt es?",
+            "dauer": 25,
+            "phase": "aktiv",
+            "text": "Wurfmuster (5 Min.): In jedem Kreis sagt der Ballwart einen Namen und wirft dieser Person von unten zu; jede Person wirft danach an jemanden, der den Ball noch nicht hatte, bis er beim Ballwart zurück ist. Alle merken sich, von wem sie fangen und zu wem sie werfen; das Muster zweimal mit einem Ball üben. Steigerung (10 Min.): Runden zu 40 Sekunden nach Timer mit 1, 2, 3, 4, 5 und 6 Bällen, zuletzt fliegt das Stofftier mit. Nach jeder Runde zeigen alle auf drei ihre Barometer-Stufe; die Lehrkraft trägt die häufigste Stufe ein, die Zähler melden die gefallenen Bälle. Planung (5 Min.): Jeder Kreis hat zwei Minuten, um zu planen, wie er fünf Bälle schafft, dann folgt noch eine Runde. Auswertung im Stehen (3 Min.), danach die Tische zurück (2 Min.).",
+            "sagen": [
+              "Erst den Namen, dann werfen – von unten und weich. Wer einen Ball fallen lässt, hebt ihn auf und spielt weiter. Gezählt werden Bälle, nicht Personen.",
+              "Barometer auf drei: ein Finger Leerlauf, zwei guter Stress, drei es kippt, vier zu viel.",
+              "Bei wie vielen Bällen war es am besten – und wo ist es gekippt? Was hat euch in der Planung geholfen?"
+            ],
+            "punkte": [
+              "Je Kreis ein Ballwart: hält die Bälle und bringt in jeder Runde einen mehr ins Spiel – gut für alle, die nicht stillstehen können.",
+              "Je Kreis ein Zähler außerhalb: zählt laut die gefallenen Bälle – gut für alle, die nicht werfen wollen.",
+              "Erst Blick und Name, dann werfen – von unten und weich. Wer Namen noch nicht kennt, zeigt auf die Person.",
+              "Stopp gilt sofort: Alle halten die Bälle fest.",
+              "Nach jeder Runde Barometer auf drei: ein bis vier Finger."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Bälle",
+                "So läuft es meistens"
+              ],
+              "zeilen": [
+                [
+                  "1 Ball",
+                  "Leerlauf: langweilig, manche gähnen oder albern"
+                ],
+                [
+                  "2–3 Bälle",
+                  "guter Stress: alle sind wach, es wird gelacht"
+                ],
+                [
+                  "4–5 Bälle",
+                  "es kippt: Bälle fallen, Rufen, Hektik"
+                ],
+                [
+                  "6 Bälle und Stofftier",
+                  "zu viel: Chaos, manche hören auf zu werfen"
+                ]
+              ]
+            },
+            "tipp": "Ruhig Zeit für das Chaos lassen, bevor die Planung kommt: Die Kurve von langweilig über wach zu zu viel ist der Kern der Stunde. In der Planung kommen meist Blickkontakt, langsamer und höher werfen, ein Taktgeber, ein Stopp-Ruf oder ein Ball weniger – genau die Hebel der Stress-Waage. Ist nur Platz für einen großen Kreis, spielen alle zusammen; das Chaos kommt dann erst bei sechs bis acht Bällen.",
+            "wennEsKippt": "Wird hart oder gezielt geworfen, sofort „Stopp“ rufen und mit Papierbällen weiterspielen; wer es wiederholt, ist eine Runde lang Zähler. Wer nicht fangen mag, zählt laut die gefallenen Bälle oder bringt als Ballwart neue Bälle ins Spiel. Klappt das Muster in einem Kreis gar nicht, stellt sich die Lehrkraft hinein und spielt eine Runde mit. Ärgert sich jemand, weil viele Bälle bei ihm landen, laut sagen: Bei sechs Bällen lässt jeder fallen – genau darum geht es."
+          },
+          {
+            "titel": "Ball-Kurve und meine Stress-Waage",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Zurück an den Plätzen zeichnet jede Person auf dem Blatt die Ball-Kurve (Aufgabe 2): Wie gut lief es bei 1, 2, 3 … Bällen? Ein Kreuz zeigt, wo es für sie gekippt ist; die Tabelle an der Tafel hilft (3 Min.). Dann die Waage auffrischen: Wer die Test-Waage aus der 7e kennt, erklärt sie in einem Satz – links liegt, was drückt, rechts, was Kraft gibt. Im Spiel lagen die Bälle links, die Ideen aus der Planung rechts (2 Min.). Jede Person füllt allein ihre Waage für diese Woche (Aufgabe 3); sie wird weder vorgelesen noch eingesammelt (4 Min.). Zum Schluss die zwei Hebel aus dem Merke-Kasten zeigen: links leichter machen, rechts schwerer machen (1 Min.).",
+            "sagen": [
+              "Zeichnet die Kurve so, wie das Spiel für euch war. Eine falsche Kurve gibt es nicht.",
+              "Im Alltag sind die Bälle Tests, Training, Nachrichten, Sachen zu Hause. Was liegt bei euch diese Woche links?",
+              "Ihr könnt an beiden Seiten drehen: weniger Bälle gleichzeitig – oder mehr von dem, was mitfängt."
+            ],
+            "tipp": "Viele merken beim Zeichnen, dass ihre Kurve früher oder später kippt als die der Klasse. Genau das ist der Punkt: Wo es kippt, ist bei jeder Person anders – und an beiden Seiten der Waage lässt sich etwas tun.",
+            "wennEsKippt": "Möchte jemand über etwas Schweres auf seiner Waage reden – Streit zu Hause, Krankheit, Geldsorgen –, freundlich auf nach der Stunde verschieben und ein Gespräch anbieten, bei Bedarf mit dem SePAS. Wer sagt, ihn drücke gar nichts, schreibt links hin, was nächste Woche ansteht.",
+            "blatt": "ff6-stress-barometer"
+          },
+          {
+            "titel": "Skill: Ein Ball nach dem anderen",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: ein Skill für Tage, an denen zu viele Bälle gleichzeitig in der Luft sind. Alle zeigen auf drei ihre Barometer-Stufe mit den Fingern; dann machen alle zusammen zwei doppelte Seufzer aus der 7e – bei „zu viel“ gilt: erst runter, dann sortieren (2 Min.). Jede Person bekommt einen A6-Zettel und schreibt in Stichworten alle Bälle auf, die gerade in der Luft sind; die Lehrkraft schreibt ihre eigene Liste an die Tafel (3 Min.). Dann einen Ball einkreisen: den, der zuerst fällig ist – oder, wenn alles gleich drängt, den kleinsten (1 Min.). Den Zettel falten und wegstecken; jede Person überlegt still, wann sie heute oder morgen zehn Minuten nur diesem Ball gibt (1 Min.). Stufe nachher zeigen, dann zwei, drei Rückmeldungen: Wann könnte das helfen? (3 Min.)",
+            "sagen": [
+              "Schreibt alles auf, was gerade in der Luft ist. Nur Stichworte und nur für euch – niemand liest den Zettel.",
+              "Kreist einen Ball ein. Der Rest steht jetzt auf dem Zettel – euer Kopf muss ihn nicht mehr festhalten.",
+              "Wann könnte das helfen – am Sonntagabend, vor einer Testwoche, im Bett, wenn sich alles dreht?"
+            ],
+            "punkte": [
+              "Alle Bälle aufschreiben, die gerade in der Luft sind – Stichworte reichen.",
+              "Einen einkreisen: Was ist als Nächstes dran? Wenn alles gleich drängt: den kleinsten.",
+              "Zettel weg und diesem einen Ball zehn Minuten geben – nur ihm."
+            ],
+            "tipp": "Der Skill macht die linke Seite der Waage leichter, ohne dass eine Aufgabe verschwindet: Der Kopf hört auf, alles gleichzeitig festzuhalten. Wer abends die offenen Aufgaben für morgen aufschreibt, schläft sogar schneller ein. Die Lehrkraft schreibt ihre Liste wirklich an – das zeigt, dass auch Erwachsene jonglieren.",
+            "wennEsKippt": "Fällt jemandem nichts ein, reicht ein Ball für die nächsten Tage. Wird jemand beim Schreiben still oder traurig, nicht vor der Klasse nachfragen, sondern nach der Stunde leise ansprechen. Wer nicht schreiben mag, macht die drei Schritte im Kopf."
+          },
+          {
+            "titel": "Skills-Pass und Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Woran merke ich, dass mein guter Stress kippt – und was mache ich dann? Jede Person schreibt ihren Satz und bekommt den Stempel; wer mag, liest vor, zwei Stimmen reichen (2 Min.). Dann die Wochen-Mission ansagen, die im Heft steht: einmal „Ein Ball nach dem anderen“ ausprobieren (1 Min.). Zum Schluss der Ausblick auf das Lern-Experiment und eine kurze Frage an alle: Spricht oder versteht hier jemand Swahili? (2 Min.)",
+            "sagen": [
+              "Ein Satz für den Skills-Pass: Woran merkt ihr, dass euer guter Stress kippt – und was macht ihr dann?",
+              "Eure Mission bis nächste Woche: Probiert einmal „Ein Ball nach dem anderen“ aus – alles aufschreiben, einen wählen, anfangen."
+            ],
+            "tipp": "Meldet sich jemand für Swahili, wird diese Person nächste Woche Versuchsleitung. Die Tabelle vom Jonglieren abschreiben oder fotografieren: Das Barometer kommt in den nächsten Stunden im Check-in wieder."
+          }
+        ],
+        "bruecke": "Nächste Woche wird experimentiert: Ihr lernt zwanzig Wörter in einer Sprache, die hier niemand spricht, und findet heraus, welche Lernmethode wirklich hängen bleibt.",
+        "mission": "Probier einmal „Ein Ball nach dem anderen“: alles aufschreiben, einen wählen, anfangen.",
+        "hintergrund": "Stress ist die Antwort des Körpers auf eine Anforderung. Ob daraus Ansporn oder Überforderung wird, hängt von der Bewertung ab: Reichen die eigenen Mittel, wirkt eine Lage eher als Herausforderung (Lazarus & Folkman, 1984) – das zeigt die Waage. Die Kurve „zu wenig – genau richtig – zu viel“ geht auf Yerkes und Dodson (1908) zurück; sie vereinfacht stark, beschreibt aber das Ziel: Stress im hilfreichen Bereich halten. Wer vor dem Schlafen die offenen Aufgaben des nächsten Tages aufschrieb, schlief schneller ein als Personen, die Erledigtes notierten (Scullin et al., 2018) – darauf baut der Skill „Ein Ball nach dem anderen“.",
+        "quellen": [
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Yerkes, R. M. & Dodson, J. D. (1908). The relation of strength of stimulus to rapidity of habit-formation. Journal of Comparative Neurology and Psychology, 18(5), 459–482.",
+          "Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146."
+        ],
+        "achtung": "Stress berührt manchmal mehr als Schule: Sorgen zu Hause, Krankheit, Druck von außen. Barometer und Waage bleiben privat, Noten nennt niemand. Beim Jonglieren: weich werfen, Stopp gilt sofort. Wirkt jemand anhaltend überlastet – seit Wochen kaum Schlaf, häufig Bauch- oder Kopfweh, Rückzug –, nicht vor der Klasse nachfragen, sondern nach der Stunde ansprechen und Régent und SePAS einbeziehen. Bei Hinweisen auf Gewalt, Selbstverletzung oder Suizidgedanken: noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112.",
+        "differenzierung": {
+          "leichter": "Wer mühsam liest oder die Unterrichtssprache noch lernt, sortiert die Karten mit einem Tandem, das vorliest, und füllt im Barometer nur zwei Stufen: guter Stress und zu viel – Stichworte oder Wörter von der Tafel reichen. Beim Jonglieren genügen statt des Namens ein Blick und ein Zeigen; die Liste im Skill darf aus gemalten Bällen mit je einem Wort bestehen.",
+          "schwerer": "Bei der Ball-Kurve zusätzlich die Kurve der Klasse aus der Tabelle an der Tafel einzeichnen und erklären, warum die eigene anders aussieht. In der Planung den eigenen Kreis moderieren; auf der Waage zu jedem Ball links notieren, ob er sich kleiner machen lässt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Punkt und Zahl (5 Min.), Thermometer oder Barometer mit dem Tafelbild (8 Min.), Gruppenjonglieren mit der Barometer-Stufe nach jeder Runde, ohne Planung (20 Min.), Aufgabe 1 auf dem Blatt (7 Min.), Ein Ball nach dem anderen mit Skills-Pass und Mission (10 Min.). Karten-Barometer und Stress-Waage entfallen; die Waage lässt sich in der nächsten Stunde nach dem Check-in nachholen."
+      },
+      "fr": {
+        "titel": "Comprendre le stress",
+        "kurz": "Un peu de pression réveille, trop bloque : placer des signes de stress sur le baromètre, sentir au jonglage collectif quand le bon stress bascule et trier les journées trop pleines.",
+        "ziele": [
+          "distinguent le baromètre du stress et l’échelle de tension et placent des signes sur les quatre niveaux",
+          "vivent au jonglage collectif le moment où le bon stress bascule et nomment ce qui a aidé",
+          "notent sur la balance du stress ce qui leur pèse et ce qui leur donne de la force",
+          "essaient le skill « Une balle à la fois »"
+        ],
+        "material": [
+          "Roue des émotions, 20 gommettes",
+          "Cartes des signes (modèle), en A3",
+          "Aimants ou adhésif",
+          "12 balles souples ou en papier",
+          "2 peluches comme dernière balle",
+          "Minuteur bien visible",
+          "Papiers A6, un par jeune",
+          "Cahier de l’élève",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Tableau : à gauche, le baromètre (en bas 1 Point mort, en haut 4 Trop-plein) et la grille de l’étape 3 ; à droite, la grille du jonglage (balles, niveau, tombées).",
+          "Agrandir les cartes en A3 et les découper ; sans balles souples, froisser douze boules de papier et les entourer d’adhésif.",
+          "Place pour deux cercles de dix : tables contre les murs ou couloir, hall, cour en vue."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : gommette, chiffre et un peu de pression"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour, mission et ouverture du chapitre"
+          },
+          {
+            "min": "15–25",
+            "phase": "input",
+            "titel": "Thermomètre ou baromètre ?"
+          },
+          {
+            "min": "25–45",
+            "phase": "uebung",
+            "titel": "Le baromètre en cartes : placer les signes"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : vague de claps en deux cercles"
+          },
+          {
+            "min": "50–75",
+            "phase": "aktiv",
+            "titel": "Jonglage collectif : quand est-ce que ça bascule ?"
+          },
+          {
+            "min": "75–85",
+            "phase": "uebung",
+            "titel": "La courbe des balles et ma balance du stress"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : une balle à la fois"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass et mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : gommette, chiffre et un peu de pression",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions (3 min). À trois, tout le monde montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; qui ne veut pas montrer son chiffre aujourd’hui pose la main à plat sur la table. L’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires disent leur mot (3 min). Puis une question en plus, qui ne demande rien de personnel : quand est-ce qu’un peu de pression vous a déjà aidés – pendant un match, devant un public, en préparant son sac quand le bus arrive ? L’enseignant·e donne d’abord un exemple à soi, puis viennent deux ou trois voix ; les exemples sont notés en mots-clés au bord du tableau (4 min).",
+            "sagen": [
+              "L’émotion, le chiffre – et ensuite une question : quand est-ce qu’un peu de pression vous a déjà aidés ?",
+              "Moi, le dimanche, je traîne une heure au petit-déjeuner. En semaine, je suis dehors en dix minutes – et je n’oublie rien."
+            ],
+            "tipp": "Commencer par la bonne pression est voulu : beaucoup de jeunes pensent que le stress doit disparaître complètement. La séance montre que tout est une question de dose.",
+            "wennEsKippt": "S’il n’y a que des blagues du genre « La pression ne m’aide jamais, je ne fais rien, c’est tout », rire avec la classe et l’écrire au tableau – c’est le point mort, et il a aujourd’hui son propre niveau. Si un jeune montre sérieusement huit doigts ou plus, ne pas l’interroger devant la classe, mais lui demander discrètement pendant le travail suivant : tu as besoin de quelque chose ?"
+          },
+          {
+            "titel": "Retour, mission et ouverture du chapitre",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance – on y parlait de se parler avec bienveillance. Demander brièvement quel skill figure dans la boussole des skills sous « 2 · Estime de soi et corps » ; deux voix suffisent. Demander avec le pouce où en est la mission de la semaine dernière – en haut, au milieu, en bas –, une voix raconte ; personne n’est obligé de l’avoir réussie. Puis ouvrir le nouveau chapitre et écrire la question clé au tableau : comment bien traverser l’école, les révisions et les devoirs en classe ? Annoncer les quatre séances : aujourd’hui comprendre le stress, ensuite apprendre, la procrastination et les devoirs en classe. Préciser : personne n’a à parler de ses notes ou de son bulletin.",
+            "sagen": [
+              "Pouce en haut, au milieu ou en bas : comment s’est passée votre mission de la semaine dernière ? Qui la raconte en une phrase ?",
+              "Quatre séances, quatre outils pour l’école. Personne n’a à dévoiler ses notes."
+            ],
+            "tipp": "La voix bienveillante de la dernière séance va bien avec ce chapitre : sous pression, on se parle souvent très durement. Le rappeler en une phrase, sans s’y attarder."
+          },
+          {
+            "titel": "Thermomètre ou baromètre ?",
+            "dauer": 10,
+            "phase": "input",
+            "text": "D’abord, expliquer ce qu’est le stress (3 min) : la réponse du corps à une exigence – le cœur et la respiration s’accélèrent, les muscles se tendent, le regard se rétrécit. Ça prépare ; un jeune qui connaît depuis la 7e la phrase « Mon corps se prépare » la dit aux nouveaux. Montrer les exemples du tour d’humeur : un peu de pression rend plus rapide et plus éveillé. Puis dessiner, à côté du baromètre préparé, la courbe – trop peu, juste ce qu’il faut, trop – et expliquer les quatre niveaux (3 min). Expliquer la différence avec l’échelle de tension à l’aide du tableau ; un jeune de la 7e explique l’échelle en une phrase (3 min). Pour finir, tout le monde lit l’encadré « Thermomètre ou baromètre ? » sur la fiche (1 min).",
+            "sagen": [
+              "Un baromètre mesure la pression de l’air et annonce l’orage. Notre baromètre mesure la pression que vous ressentez à cause de ce que vous avez à faire.",
+              "Avec l’échelle de tension, quand le chiffre est haut, vous voulez redescendre. Avec le baromètre, vous voulez rester au milieu : ni trop peu de pression, ni trop.",
+              "Sans aucune pression, la plupart ne commencent même pas. Avec trop de pression, plus rien ne marche."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Échelle de tension (7e)",
+                "Baromètre du stress (nouveau)"
+              ],
+              "zeilen": [
+                [
+                  "comme un thermomètre : à quel point mon alarme sonne-t-elle maintenant ?",
+                  "comme un baromètre : quelle pression me mettent mes tâches cette semaine ?"
+                ],
+                [
+                  "de 0 à 100, pour toutes les émotions",
+                  "quatre niveaux, pour l’école et les journées pleines"
+                ],
+                [
+                  "but quand le chiffre est haut : redescendre",
+                  "but : rester au milieu, dans le bon stress"
+                ]
+              ]
+            },
+            "tipp": "Un exemple rend la différence concrète : un dimanche ennuyeux – tension à 10, baromètre au point mort. Une semaine avec trois devoirs en classe – sur le moment, peut-être calme à 20, mais le baromètre indique « ça bascule ». L’échelle reste dans le tour d’humeur ; le baromètre s’y ajoute quand il s’agit d’école et de semaines chargées.",
+            "wennEsKippt": "Si quelqu’un dit « Mais c’est pareil », reconnaître que les deux sont liés et donner l’exemple du dimanche. Si ça devient trop théorique ou agité, passer tout de suite au baromètre en cartes ; le tableau reste en place et y servira à nouveau.",
+            "blatt": "ff6-stress-barometer"
+          },
+          {
+            "titel": "Le baromètre en cartes : placer les signes",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Chaque îlot reçoit deux cartes des signes, répartit les rôles – lire, coller, justifier – et discute du niveau du baromètre où vont les cartes (4 min). Ensuite, les groupes viennent l’un après l’autre au tableau – le suivant attend déjà sur le côté –, collent leurs cartes et justifient en une phrase ; la classe montre avec le pouce si elle est d’accord, et en cas de désaccord, une carte peut rester entre deux niveaux (6 min). Sur les deux cas litigieux, toute la classe vote à main levée (2 min). Puis chacun travaille seul sur sa fiche (exercice 1) : pour chaque niveau, un signe à soi ; recopier les cartes est permis (6 min). Pour finir, deux ou trois volontaires disent leur premier signe de bascule (2 min).",
+            "sagen": [
+              "Pour chaque carte, demandez-vous : est-ce que la pression aide encore – ou est-ce qu’elle freine déjà ?",
+              "Un même signe peut aller sur deux niveaux : le cœur qui bat avant un match, c’est du bon stress ; le cœur qui bat depuis trois jours, c’est autre chose.",
+              "Quel signe arrive en premier chez vous quand ça bascule ?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Niveau",
+                "À quoi ça peut ressembler"
+              ],
+              "zeilen": [
+                [
+                  "4 · Trop-plein",
+                  "tête vide, mal au ventre ou à la tête, mal dormir, envie de tout fuir"
+                ],
+                [
+                  "3 · Ça bascule",
+                  "irritable, plus d’erreurs, pensées qui tournent en rond, sans arrêt sur le portable"
+                ],
+                [
+                  "2 · Bon stress",
+                  "éveillé, cœur un peu plus rapide, à fond dans ce qu’on fait, le temps passe vite"
+                ],
+                [
+                  "1 · Point mort",
+                  "ennui, mollesse, rien n’avance"
+                ]
+              ]
+            },
+            "tipp": "Le désaccord est bienvenu : un signe relève encore du bon stress selon sa durée et selon qu’on avance encore ou non. Les cartes restent affichées jusqu’à la fin de la séance – après le jonglage, la classe en reconnaîtra beaucoup.",
+            "wennEsKippt": "Si un groupe se contente de chahuter, échanger les rôles : celui qui chahute vient justifier au tableau. Qui ne veut rien écrire sur soi remplit le baromètre pour une personne inventée de son âge. Si quelqu’un lit quelque chose de très lourd – presque pas de sommeil depuis des semaines, mal au ventre en permanence –, le reconnaître brièvement, ne pas creuser devant la classe et lui parler après le cours.",
+            "blatt": "ff6-stress-karten"
+          },
+          {
+            "titel": "Pause active : vague de claps en deux cercles",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "D’abord, la classe pousse les tables contre les murs – en une minute et sans parler (1 min). Puis tout le monde forme deux cercles de dix ; ceux qui s’excitent vite se placent à côté de l’enseignant·e. Dans chaque cercle, un clap fait le tour : chacun tape une fois dans ses mains dès que son voisin l’a fait, d’abord lentement, puis le plus vite possible. Ensuite, l’enseignant·e lance une deuxième vague dans l’autre sens ; là où elles se croisent, on rit en général (3 min). Demander brièvement : à partir de quand, c’était trop ? (1 min) Si la grande récréation tombe entre les deux heures, supprimer l’exercice ; les cercles se forment alors juste après.",
+            "tipp": "La vague de claps, c’est le jonglage en miniature : une vague, c’est facile ; deux à la fois, et le cercle perd pied – exactement ce qui va se passer avec les balles.",
+            "wennEsKippt": "Si on court ou crie en déplaçant les tables, tout arrêter, lever la main, attendre en silence, puis continuer : le but est un rangement silencieux, pas rapide. Qui ne veut pas entrer dans le cercle est gardien du temps et chronomètre combien de temps une vague met pour faire le tour."
+          },
+          {
+            "titel": "Jonglage collectif : quand est-ce que ça bascule ?",
+            "dauer": 25,
+            "phase": "aktiv",
+            "text": "Le circuit (5 min) : dans chaque cercle, le gardien des balles dit un prénom et lance la balle par en dessous à cette personne ; chacun lance ensuite à quelqu’un qui ne l’a pas encore eue, jusqu’au retour chez le gardien. Chacun retient de qui il reçoit et à qui il lance ; on fait le circuit deux fois avec une balle. La montée (10 min) : des manches de 40 secondes au minuteur, avec 1, 2, 3, 4, 5 puis 6 balles, la peluche s’ajoutant à la fin. Après chaque manche, à trois, chacun montre son niveau du baromètre ; l’enseignant·e note le niveau le plus fréquent, les compteurs annoncent les balles tombées. La stratégie (5 min) : chaque cercle a deux minutes pour trouver comment réussir avec cinq balles, puis rejoue une manche. Bilan debout (3 min), puis on remet les tables (2 min).",
+            "sagen": [
+              "D’abord le prénom, puis on lance – par en dessous et doucement. Si une balle tombe, on la ramasse et on continue. On compte les balles, pas les personnes.",
+              "Baromètre à trois : un doigt point mort, deux bon stress, trois ça bascule, quatre trop-plein.",
+              "Avec combien de balles c’était le mieux – et où est-ce que ça a basculé ? Qu’est-ce qui vous a aidés pendant la stratégie ?"
+            ],
+            "punkte": [
+              "Dans chaque cercle, un gardien des balles : il tient les balles et en met une de plus en jeu à chaque manche – un bon rôle pour qui ne tient pas en place.",
+              "Dans chaque cercle, un compteur à l’extérieur : il compte à voix haute les balles tombées – un bon rôle pour qui ne veut pas lancer.",
+              "D’abord un regard et un prénom, puis on lance – par en dessous et doucement. Qui ne connaît pas encore les prénoms montre la personne du doigt.",
+              "Le « Stop » vaut tout de suite : tout le monde garde les balles en main.",
+              "Après chaque manche, baromètre à trois : un à quatre doigts."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Balles",
+                "Comment ça se passe le plus souvent"
+              ],
+              "zeilen": [
+                [
+                  "1 balle",
+                  "point mort : on s’ennuie, certains bâillent ou font les clowns"
+                ],
+                [
+                  "2–3 balles",
+                  "bon stress : tout le monde est réveillé, on rit"
+                ],
+                [
+                  "4–5 balles",
+                  "ça bascule : des balles tombent, on crie, ça s’agite"
+                ],
+                [
+                  "6 balles et la peluche",
+                  "trop-plein : le chaos, certains arrêtent de lancer"
+                ]
+              ]
+            },
+            "tipp": "Laisser au chaos le temps de s’installer avant la stratégie : la courbe de l’ennui à l’éveil puis au trop-plein est le cœur de la séance. Pendant la stratégie reviennent le plus souvent le regard, lancer plus lentement et plus haut, quelqu’un qui donne le rythme, un « Stop » ou une balle en moins – exactement les leviers de la balance du stress. S’il n’y a de la place que pour un grand cercle, tout le monde joue ensemble ; le chaos n’arrive alors qu’avec six à huit balles.",
+            "wennEsKippt": "Si quelqu’un lance fort ou vise une personne, crier « Stop » tout de suite et continuer avec les boules de papier ; qui recommence devient compteur pour une manche. Qui ne veut pas attraper compte à voix haute les balles tombées ou, comme gardien des balles, remet les balles en jeu. Si le circuit ne marche pas du tout dans un cercle, l’enseignant·e y entre et joue une manche. Si quelqu’un s’énerve parce que beaucoup de balles arrivent chez lui, dire à voix haute : avec six balles, tout le monde en fait tomber – c’est justement le but."
+          },
+          {
+            "titel": "La courbe des balles et ma balance du stress",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "De retour à sa place, chacun dessine sur sa fiche la courbe des balles (exercice 2) : comment ça s’est passé avec 1, 2, 3 … balles ? Une croix marque l’endroit où ça a basculé pour lui ; la grille au tableau aide (3 min). Puis rafraîchir la balance : un jeune qui connaît la balance du stress de la 7e l’explique en une phrase – à gauche ce qui pèse, à droite ce qui donne de la force. Dans le jeu, les balles étaient à gauche, les idées de la stratégie à droite (2 min). Chacun remplit seul sa balance pour cette semaine (exercice 3) ; elle n’est ni lue à voix haute ni ramassée (4 min). Pour finir, montrer les deux leviers de l’encadré : alléger la gauche, alourdir la droite (1 min).",
+            "sagen": [
+              "Dessinez la courbe comme vous avez vécu le jeu. Il n’y a pas de mauvaise courbe.",
+              "Dans la vie, les balles, ce sont les devoirs en classe, l’entraînement, les messages, les choses à la maison. Qu’est-ce qui est à gauche pour vous cette semaine ?",
+              "Vous pouvez agir des deux côtés : moins de balles en même temps – ou plus de choses qui aident à attraper."
+            ],
+            "tipp": "Beaucoup remarquent en dessinant que leur courbe bascule plus tôt ou plus tard que celle de la classe. C’est justement le point : l’endroit où ça bascule est différent pour chacun – et on peut agir des deux côtés de la balance.",
+            "wennEsKippt": "Si un jeune veut parler de quelque chose de lourd sur sa balance – disputes à la maison, maladie, soucis d’argent –, proposer gentiment d’en parler après le cours, si besoin avec le SePAS. Qui dit que rien ne lui pèse écrit à gauche ce qui l’attend la semaine prochaine.",
+            "blatt": "ff6-stress-barometer"
+          },
+          {
+            "titel": "Skill : une balle à la fois",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : un skill pour les jours où trop de balles sont en l’air en même temps. À trois, chacun montre son niveau du baromètre avec les doigts ; puis tout le monde fait ensemble deux doubles soupirs de la 7e – au trop-plein, la règle est : d’abord redescendre, ensuite trier (2 min). Chacun reçoit un papier A6 et note en mots-clés toutes les balles qui sont en l’air en ce moment ; l’enseignant·e écrit sa propre liste au tableau (3 min). Puis entourer une balle : celle qui doit être faite en premier – ou, si tout presse autant, la plus petite (1 min). Plier le papier et le ranger ; chacun réfléchit en silence au moment où il donnera, aujourd’hui ou demain, dix minutes à cette seule balle (1 min). Montrer le niveau après, puis deux ou trois retours : quand est-ce que ça pourrait aider ? (3 min)",
+            "sagen": [
+              "Notez tout ce qui est en l’air en ce moment. Seulement des mots-clés, seulement pour vous – personne ne lit le papier.",
+              "Entourez une balle. Le reste est maintenant sur le papier – votre tête n’a plus besoin de le retenir.",
+              "Quand est-ce que ça pourrait aider – le dimanche soir, avant une semaine de devoirs en classe, au lit quand tout tourne ?"
+            ],
+            "punkte": [
+              "Noter toutes les balles qui sont en l’air – des mots-clés suffisent.",
+              "En entourer une : qu’est-ce qui vient maintenant ? Si tout presse autant : la plus petite.",
+              "Ranger le papier et donner dix minutes à cette balle – rien qu’à elle."
+            ],
+            "tipp": "Le skill allège la gauche de la balance sans qu’aucune tâche disparaisse : la tête arrête de tout retenir en même temps. Qui note le soir les tâches du lendemain s’endort même plus vite. L’enseignant·e écrit vraiment sa liste au tableau – ça montre que les adultes aussi jonglent.",
+            "wennEsKippt": "Si rien ne vient à quelqu’un, une seule balle pour les jours qui viennent suffit. Si un jeune devient silencieux ou triste en écrivant, ne pas l’interroger devant la classe, mais lui parler discrètement après le cours. Qui ne veut pas écrire fait les trois étapes dans sa tête."
+          },
+          {
+            "titel": "Skills-Pass et mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire au tableau la question du Skills-Pass : à quoi je remarque que mon bon stress bascule – et qu’est-ce que je fais alors ? Chacun écrit sa phrase et reçoit le tampon ; qui veut la lit, deux voix suffisent (2 min). Puis annoncer la mission de la semaine, qui figure dans le cahier : essayer une fois « Une balle à la fois » (1 min). Pour finir, annoncer l’expérience sur l’apprentissage et poser une petite question à tous : est-ce que quelqu’un ici parle ou comprend le swahili ? (2 min)",
+            "sagen": [
+              "Une phrase pour le Skills-Pass : à quoi remarquez-vous que votre bon stress bascule – et qu’est-ce que vous faites alors ?",
+              "Votre mission d’ici la semaine prochaine : essayez une fois « Une balle à la fois » – tout noter, en choisir une, commencer."
+            ],
+            "tipp": "Si quelqu’un parle swahili, il dirigera l’expérience la semaine prochaine. Recopier ou photographier la grille du jonglage : le baromètre reviendra dans le tour d’humeur des prochaines séances."
+          }
+        ],
+        "bruecke": "La semaine prochaine, on fait une expérience : vous apprenez vingt mots d’une langue que personne ici ne parle et vous découvrez quelle méthode permet vraiment de retenir.",
+        "mission": "Essaie une fois « Une balle à la fois » : tout noter, en choisir une, commencer.",
+        "hintergrund": "Le stress est la réponse du corps à une exigence. Qu’il pousse en avant ou qu’il submerge dépend de l’évaluation : si les moyens suffisent, la situation est plutôt vécue comme un défi (Lazarus & Folkman, 1984) – c’est ce que montre la balance. La courbe « trop peu – juste ce qu’il faut – trop » remonte à Yerkes et Dodson (1908) ; elle simplifie beaucoup, mais elle indique le but : garder le stress dans la zone utile. Les personnes qui notaient avant de dormir leurs tâches du lendemain s’endormaient plus vite que celles qui notaient ce qu’elles avaient déjà fait (Scullin et al., 2018) – le skill « Une balle à la fois » repose sur cette idée.",
+        "quellen": [
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Yerkes, R. M. & Dodson, J. D. (1908). The relation of strength of stimulus to rapidity of habit-formation. Journal of Comparative Neurology and Psychology, 18(5), 459–482.",
+          "Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146."
+        ],
+        "achtung": "Le stress touche parfois à bien plus que l’école : soucis à la maison, maladie, pression extérieure. Le baromètre et la balance restent privés, personne ne dit ses notes. Au jonglage : lancer doucement, le « Stop » vaut tout de suite. Si un jeune semble surchargé depuis longtemps – sommeil difficile depuis des semaines, maux de ventre ou de tête fréquents, repli –, ne pas l’interroger devant la classe, lui parler après le cours, impliquer le régent et le SePAS. Signes de violence, d’automutilation ou d’idées suicidaires : informer le SePAS le jour même, suivre le protocole de protection de l’école ; en cas de danger immédiat, 112.",
+        "differenzierung": {
+          "leichter": "Les jeunes qui lisent difficilement ou apprennent encore la langue de la classe trient les cartes avec un binôme qui lit et ne remplissent que deux niveaux du baromètre : bon stress et trop-plein – des mots-clés ou des mots du tableau suffisent. Au jonglage, un regard et un geste remplacent le prénom ; dans le skill, la liste peut être faite de balles dessinées avec un mot chacune.",
+          "schwerer": "Pour la courbe des balles, tracer en plus la courbe de la classe d’après la grille au tableau et expliquer pourquoi la sienne est différente. Animer son cercle pendant la stratégie ; sur la balance, noter pour chaque balle de gauche si on peut la rendre plus petite."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et chiffre (5 min), thermomètre ou baromètre avec le tableau (8 min), jonglage collectif avec le niveau du baromètre après chaque manche, sans la stratégie (20 min), exercice 1 de la fiche (7 min), une balle à la fois avec Skills-Pass et mission (10 min). Le baromètre en cartes et la balance du stress sont supprimés ; la balance peut être rattrapée à la séance suivante après le tour d’humeur."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff6-stress-barometer",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "klasse"
+      ],
+      "dauer": "25 Min., verteilt über die Stunde",
+      "eldib": [],
+      "schlagworte": [
+        "Stress",
+        "Stress-Barometer",
+        "guter Stress",
+        "Stress-Waage",
+        "Förderfach"
+      ],
+      "bild": "icon:cloud-storm",
+      "kurs": [
+        "ff6-e06"
+      ],
+      "de": {
+        "titel": "Mein Stress-Barometer",
+        "untertitel": "Etwas Druck macht wach, zu viel Druck blockiert. Wo stehst du – und woran merkst du, dass es kippt?",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Stress ist die Antwort deines Körpers auf eine Aufgabe: Das Herz schlägt schneller, die Muskeln spannen sich, der Blick wird eng. Das macht dich bereit. Zum Problem wird Stress, wenn er zu stark wird oder zu lange bleibt."
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Thermometer oder Barometer?",
+            "text": "Die Anspannungsskala aus der 7e ist wie ein Thermometer: Sie misst, wie laut dein Alarm gerade ist. Das Stress-Barometer misst den Druck durch deine Aufgaben – heute, diese Woche. Hier willst du nicht ganz nach unten, sondern in die Mitte: zum guten Stress."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Woran merkst du, auf welcher Stufe du bist? Schreib zu jeder Stufe ein Zeichen von dir.",
+            "hinweis": "Die Karten an der Tafel helfen. Denk an Körper, Gedanken und Verhalten."
+          },
+          {
+            "art": "thermometer",
+            "linien": 2,
+            "stufen": [
+              {
+                "titel": "1 · Leerlauf: zu wenig Druck",
+                "text": "Langweilig, schlapp, nichts geht voran. Bei mir:"
+              },
+              {
+                "titel": "2 · Guter Stress: wach und bereit",
+                "text": "Herz etwas schneller, Kopf klar, ganz bei der Sache. Bei mir:"
+              },
+              {
+                "titel": "3 · Es kippt",
+                "text": "Gereizt, mehr Fehler, die Gedanken drehen sich im Kreis. Bei mir:"
+              },
+              {
+                "titel": "4 · Zu viel: nichts geht mehr",
+                "text": "Kopf leer, Bauch- oder Kopfweh, schlecht schlafen, nur noch weg. Bei mir:"
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein erstes Zeichen, dass mein guter Stress kippt: …",
+              "Guten Stress habe ich oft bei: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Die Ball-Kurve: Wie gut lief das Jonglieren bei 1, 2, 3 … Bällen? Zeichne eine Kurve. Mach ein Kreuz, wo es für dich gekippt ist.",
+            "hinweis": "Die Tabelle an der Tafel hilft. Eine falsche Kurve gibt es nicht."
+          },
+          {
+            "art": "kurve",
+            "x": [
+              "1 Ball",
+              "2 Bälle",
+              "3 Bälle",
+              "4 Bälle",
+              "5 Bälle",
+              "6 Bälle"
+            ],
+            "oben": "läuft super",
+            "mitte": "geht so",
+            "unten": "nichts klappt",
+            "hoehe": 150
+          },
+          {
+            "art": "aufgabe",
+            "text": "Deine Stress-Waage für diese Woche: Was drückt? Was gibt dir Kraft?",
+            "hinweis": "Nur für dich. Schreib auf, was du aufschreiben möchtest."
+          },
+          {
+            "art": "waage",
+            "links": "Das drückt",
+            "rechts": "Das gibt mir Kraft",
+            "zeilen": 3
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Zwei Hebel gegen zu viel Stress",
+            "punkte": [
+              "Links leichter machen: alles aufschreiben, einen Ball nach dem anderen, um Hilfe bitten.",
+              "Rechts schwerer machen: Schlaf, Bewegung, Menschen, die mitfangen, deine Skills.",
+              "Bei „zu viel“ zuerst mit einem Körper-Skill runter, zum Beispiel zwei doppelte Seufzer – dann sortieren."
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Das Blatt gehört dir. Steht dein Barometer über Wochen auf „zu viel“, sprich mit jemandem, dem du vertraust, mit dem SePAS oder anonym und kostenlos mit dem Kanner- a Jugendtelefon: 116 111."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen beschreiben ihre Stresszeichen auf vier Stufen von Leerlauf bis zu viel, halten fest, wo guter Stress beim Gruppenjonglieren gekippt ist, und stellen auf der Waage Druck und Kraftquellen gegenüber.",
+          "ablauf": [
+            "Einheit 6, Schritt 3 (10 Min.): den Kasten „Thermometer oder Barometer?“ mitlesen, den Unterschied zur Anspannungsskala klären.",
+            "Schritt 4 (20 Min.): Anzeichen-Karten an das Tafel-Barometer kleben, dann Aufgabe 1 allein.",
+            "Schritt 7 (10 Min.): nach dem Jonglieren die Ball-Kurve (Aufgabe 2) und die eigene Waage (Aufgabe 3); nichts wird vorgelesen oder eingesammelt."
+          ],
+          "hintergrund": "Stress entsteht, wenn eine Anforderung größer wirkt als die eigenen Mittel; reichen sie, wird dieselbe Lage eher als Herausforderung erlebt (Lazarus & Folkman, 1984). Die Kurve „zu wenig – genau richtig – zu viel“ geht auf Yerkes und Dodson (1908) zurück; sie vereinfacht, zeigt aber das Ziel: Stress im hilfreichen Bereich halten.",
+          "quellen": [
+            "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+            "Yerkes, R. M. & Dodson, J. D. (1908). The relation of strength of stimulus to rapidity of habit-formation. Journal of Comparative Neurology and Psychology, 18(5), 459–482."
+          ],
+          "achtung": "Barometer und Waage bleiben privat. Hinweise auf anhaltende Überlastung – Schlafprobleme, Rückzug, häufige Schmerzen, Sorgen zu Hause – nicht vor der Klasse vertiefen, nach der Stunde ansprechen, Régent und SePAS einbeziehen.",
+          "material": "Anzeichen-Karten (Kopiervorlage), Bälle, Timer"
+        }
+      },
+      "fr": {
+        "titel": "Mon baromètre du stress",
+        "untertitel": "Un peu de pression réveille, trop de pression bloque. Où en es-tu – et à quoi remarques-tu que ça bascule ?",
+        "bausteine": [
+          {
+            "art": "text",
+            "text": "Le stress, c’est la réponse de ton corps à une tâche : le cœur bat plus vite, les muscles se tendent, le regard se rétrécit. Ça te prépare. Le stress devient un problème quand il est trop fort ou qu’il dure trop longtemps."
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Thermomètre ou baromètre ?",
+            "text": "L’échelle de tension de la 7e est comme un thermomètre : elle mesure à quel point ton alarme sonne en ce moment. Le baromètre du stress mesure la pression de tes tâches – aujourd’hui, cette semaine. Ici, tu ne veux pas descendre tout en bas, mais rester au milieu : dans le bon stress."
+          },
+          {
+            "art": "aufgabe",
+            "text": "À quoi remarques-tu à quel niveau tu es ? Écris pour chaque niveau un signe à toi.",
+            "hinweis": "Les cartes au tableau t’aident. Pense au corps, aux pensées et au comportement."
+          },
+          {
+            "art": "thermometer",
+            "linien": 2,
+            "stufen": [
+              {
+                "titel": "1 · Point mort : trop peu de pression",
+                "text": "Ennui, mollesse, rien n’avance. Chez moi :"
+              },
+              {
+                "titel": "2 · Bon stress : réveillé et prêt",
+                "text": "Cœur un peu plus rapide, tête claire, à fond dans ce que je fais. Chez moi :"
+              },
+              {
+                "titel": "3 · Ça bascule",
+                "text": "Irritable, plus d’erreurs, les pensées tournent en rond. Chez moi :"
+              },
+              {
+                "titel": "4 · Trop-plein : plus rien ne va",
+                "text": "Tête vide, mal au ventre ou à la tête, mal dormir, envie de tout fuir. Chez moi :"
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Le premier signe que mon bon stress bascule : …",
+              "J’ai souvent du bon stress quand : …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "La courbe des balles : comment s’est passé le jonglage avec 1, 2, 3 … balles ? Dessine une courbe. Fais une croix là où ça a basculé pour toi.",
+            "hinweis": "La grille au tableau t’aide. Il n’y a pas de mauvaise courbe."
+          },
+          {
+            "art": "kurve",
+            "x": [
+              "1 balle",
+              "2 balles",
+              "3 balles",
+              "4 balles",
+              "5 balles",
+              "6 balles"
+            ],
+            "oben": "ça roule",
+            "mitte": "bof",
+            "unten": "rien ne marche",
+            "hoehe": 150
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ta balance du stress pour cette semaine : qu’est-ce qui pèse ? Qu’est-ce qui te donne de la force ?",
+            "hinweis": "Seulement pour toi. Écris ce que tu veux bien écrire."
+          },
+          {
+            "art": "waage",
+            "links": "Ce qui pèse",
+            "rechts": "Ce qui me donne de la force",
+            "zeilen": 3
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Deux leviers contre trop de stress",
+            "punkte": [
+              "Alléger la gauche : tout noter, une balle à la fois, demander de l’aide.",
+              "Alourdir la droite : sommeil, mouvement, des personnes qui aident à attraper, tes skills.",
+              "Au trop-plein, d’abord redescendre avec un skill du corps, par exemple deux doubles soupirs – ensuite trier."
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "Cette fiche t’appartient. Si ton baromètre reste des semaines sur « trop-plein », parles-en à une personne de confiance, au SePAS ou, de façon anonyme et gratuite, au Kanner- a Jugendtelefon : 116 111."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes décrivent leurs signes de stress sur quatre niveaux, du point mort au trop-plein, notent où le bon stress a basculé pendant le jonglage collectif et mettent en regard, sur la balance, la pression et leurs ressources.",
+          "ablauf": [
+            "Séance 6, étape 3 (10 min) : lire l’encadré « Thermomètre ou baromètre ? », expliquer la différence avec l’échelle de tension.",
+            "Étape 4 (20 min) : coller les cartes des signes sur le baromètre au tableau, puis exercice 1 seul.",
+            "Étape 7 (10 min) : après le jonglage, la courbe des balles (exercice 2) et sa propre balance (exercice 3) ; rien n’est lu à voix haute ni ramassé."
+          ],
+          "hintergrund": "Le stress apparaît quand une exigence paraît plus grande que ses propres moyens ; s’ils suffisent, la même situation est plutôt vécue comme un défi (Lazarus & Folkman, 1984). La courbe « trop peu – juste ce qu’il faut – trop » remonte à Yerkes et Dodson (1908) ; elle simplifie, mais montre le but : garder le stress dans la zone utile.",
+          "quellen": [
+            "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+            "Yerkes, R. M. & Dodson, J. D. (1908). The relation of strength of stimulus to rapidity of habit-formation. Journal of Comparative Neurology and Psychology, 18(5), 459–482."
+          ],
+          "achtung": "Le baromètre et la balance restent privés. Les signes de surcharge durable – troubles du sommeil, repli, douleurs fréquentes, soucis à la maison – ne sont pas approfondis devant la classe : en parler après le cours, impliquer le régent et le SePAS.",
+          "material": "Cartes des signes (modèle à photocopier), balles, minuteur"
+        }
+      }
+    },
+    {
+      "id": "ff6-stress-karten",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe",
+        "klasse"
+      ],
+      "dauer": "12 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Stress",
+        "Anzeichen",
+        "Barometer",
+        "Sortierkarten",
+        "Förderfach"
+      ],
+      "bild": "icon:layout-grid",
+      "kurs": [
+        "ff6-e06"
+      ],
+      "de": {
+        "titel": "Anzeichen-Karten für das Barometer",
+        "untertitel": "Kopiervorlage zum Ausschneiden – auf A3 vergrößern, damit man die Karten an der Tafel lesen kann",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So werden die Karten gebraucht",
+            "punkte": [
+              "Auf A3 vergrößert kopieren und schneiden. Unten auf jeder Karte steht, welcher Tisch sie bekommt.",
+              "Die Gruppen kleben ihre Karten an das Tafel-Barometer: 1 Leerlauf, 2 Guter Stress, 3 Es kippt, 4 Zu viel. Die zwei Streitfälle bekommt die ganze Klasse; eine Karte darf zwischen zwei Stufen hängen."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 118,
+            "karten": [
+              {
+                "bild": "icon:hourglass",
+                "titel": "Mir ist langweilig, die Zeit zieht sich.",
+                "text": "Tisch 1"
+              },
+              {
+                "bild": "icon:mood-angry",
+                "titel": "Ich bin gereizt – schon bei Kleinigkeiten.",
+                "text": "Tisch 1"
+              },
+              {
+                "bild": "icon:target",
+                "titel": "Ich bin wach und ganz bei der Sache.",
+                "text": "Tisch 2"
+              },
+              {
+                "bild": "icon:question-mark",
+                "titel": "Mein Kopf ist plötzlich leer.",
+                "text": "Tisch 2"
+              },
+              {
+                "bild": "icon:battery-1",
+                "titel": "Ich bin schlapp und komme nicht in Gang.",
+                "text": "Tisch 3"
+              },
+              {
+                "bild": "icon:pencil",
+                "titel": "Ich mache mehr Fehler als sonst.",
+                "text": "Tisch 3"
+              },
+              {
+                "bild": "icon:rocket",
+                "titel": "Die Zeit vergeht wie im Flug.",
+                "text": "Tisch 4"
+              },
+              {
+                "bild": "icon:mood-sick",
+                "titel": "Bauchweh oder Kopfweh, immer wieder.",
+                "text": "Tisch 4"
+              },
+              {
+                "bild": "icon:bubble",
+                "titel": "Die Gedanken drehen sich im Kreis.",
+                "text": "Tisch 5"
+              },
+              {
+                "bild": "icon:moon",
+                "titel": "Ich schlafe schlecht – seit Tagen.",
+                "text": "Tisch 5"
+              },
+              {
+                "bild": "icon:heart",
+                "titel": "Mein Herz schlägt schneller.",
+                "text": "Streitfall"
+              },
+              {
+                "bild": "icon:device-mobile",
+                "titel": "Ich greife ständig zum Handy.",
+                "text": "Streitfall"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Zwölf Karten mit Stress-Anzeichen, die die Tischgruppen den vier Stufen des Barometers an der Tafel zuordnen, dazu zwei Streitfälle für die ganze Klasse.",
+          "ablauf": [
+            "Einmal auf A3 vergrößert kopieren und ausschneiden; auf jeder Karte steht, welcher Tisch sie bekommt.",
+            "Einheit 6, Schritt 4: zwei Karten je Tischgruppe; die Gruppen kleben sie an das Tafel-Barometer und begründen in einem Satz.",
+            "Die zwei Streitfälle legt die Lehrkraft der Klasse vor; eine Karte darf zwischen zwei Stufen hängen."
+          ],
+          "hintergrund": "Ob ein Zeichen noch zu gutem Stress gehört, hängt davon ab, wie stark und wie lange es auftritt und ob die eigenen Mittel noch reichen (Lazarus & Folkman, 1984). Die Streitfälle zeigen, dass Herzklopfen oder der Griff zum Handy je nach Lage Verschiedenes bedeuten.",
+          "quellen": [
+            "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer."
+          ],
+          "material": "A3-Kopie, Schere, Magnete oder Klebeband"
+        }
+      },
+      "fr": {
+        "titel": "Cartes des signes pour le baromètre",
+        "untertitel": "Modèle à photocopier et à découper – à agrandir en A3 pour qu’on puisse lire les cartes au tableau",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Comment utiliser les cartes",
+            "punkte": [
+              "Agrandir en A3 et découper. En bas de chaque carte figure l’îlot qui la reçoit.",
+              "Les groupes collent leurs cartes sur le baromètre au tableau : 1 Point mort, 2 Bon stress, 3 Ça bascule, 4 Trop-plein. Les deux cas litigieux sont soumis à toute la classe ; une carte peut rester entre deux niveaux."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 118,
+            "karten": [
+              {
+                "bild": "icon:hourglass",
+                "titel": "Je m’ennuie, le temps ne passe pas.",
+                "text": "Îlot 1"
+              },
+              {
+                "bild": "icon:mood-angry",
+                "titel": "Je m’énerve pour un rien.",
+                "text": "Îlot 1"
+              },
+              {
+                "bild": "icon:target",
+                "titel": "Je suis éveillé·e et à fond dans ce que je fais.",
+                "text": "Îlot 2"
+              },
+              {
+                "bild": "icon:question-mark",
+                "titel": "J’ai la tête vide d’un coup.",
+                "text": "Îlot 2"
+              },
+              {
+                "bild": "icon:battery-1",
+                "titel": "Je n’ai pas d’énergie, je n’arrive pas à démarrer.",
+                "text": "Îlot 3"
+              },
+              {
+                "bild": "icon:pencil",
+                "titel": "Je fais plus d’erreurs que d’habitude.",
+                "text": "Îlot 3"
+              },
+              {
+                "bild": "icon:rocket",
+                "titel": "Le temps passe à toute vitesse.",
+                "text": "Îlot 4"
+              },
+              {
+                "bild": "icon:mood-sick",
+                "titel": "Mal au ventre ou à la tête, encore et encore.",
+                "text": "Îlot 4"
+              },
+              {
+                "bild": "icon:bubble",
+                "titel": "Mes pensées tournent en rond.",
+                "text": "Îlot 5"
+              },
+              {
+                "bild": "icon:moon",
+                "titel": "Je dors mal – depuis des jours.",
+                "text": "Îlot 5"
+              },
+              {
+                "bild": "icon:heart",
+                "titel": "Mon cœur bat plus vite.",
+                "text": "Cas litigieux"
+              },
+              {
+                "bild": "icon:device-mobile",
+                "titel": "Je prends sans arrêt mon portable.",
+                "text": "Cas litigieux"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Douze cartes de signes de stress que les îlots placent sur les quatre niveaux du baromètre au tableau, avec deux cas litigieux pour toute la classe.",
+          "ablauf": [
+            "Photocopier une fois en A3 et découper ; chaque carte indique l’îlot qui la reçoit.",
+            "Séance 6, étape 4 : deux cartes par îlot ; les groupes les collent sur le baromètre au tableau et justifient en une phrase.",
+            "Les deux cas litigieux sont soumis à la classe ; une carte peut rester entre deux niveaux."
+          ],
+          "hintergrund": "Qu’un signe relève encore du bon stress dépend de sa force, de sa durée et de la question de savoir si ses propres moyens suffisent encore (Lazarus & Folkman, 1984). Les cas litigieux montrent qu’un cœur qui bat ou le réflexe du portable peuvent signifier des choses différentes selon la situation.",
+          "quellen": [
+            "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer."
+          ],
+          "material": "Copie A3, ciseaux, aimants ou adhésif"
+        }
+      }
+    }
+  ]
+}

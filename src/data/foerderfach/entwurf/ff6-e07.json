@@ -1,0 +1,1551 @@
+{
+  "einheiten": [
+    {
+      "id": "ff6-e07",
+      "klasse": "6e",
+      "dauer": 100,
+      "blaetter": [
+        "ff6-lern-experiment"
+      ],
+      "vorlagen": [
+        "ff6-lern-karten"
+      ],
+      "woerter": [
+        {
+          "de": "wiederlesen",
+          "fr": "relire"
+        },
+        {
+          "de": "sich abfragen",
+          "fr": "se tester"
+        },
+        {
+          "de": "das Gedächtnis",
+          "fr": "la mémoire"
+        },
+        {
+          "de": "verteilen",
+          "fr": "répartir"
+        },
+        {
+          "de": "die Ablenkung",
+          "fr": "la distraction"
+        },
+        {
+          "de": "die Aufmerksamkeit",
+          "fr": "l’attention (f.)"
+        }
+      ],
+      "de": {
+        "titel": "Lernen, das hängen bleibt",
+        "kurz": "Ein echtes Experiment mit Wörtern einer fremden Sprache: Wiederlesen gegen Selbsttest, warum Wiederlesen täuscht – und ein Selbsttest-Werkzeug für ein Fach.",
+        "ziele": [
+          "vergleichen in einem Experiment Wiederlesen und Selbsttest und werten es als Klasse mit einer Strichliste aus",
+          "erklären am Münztest, warum sich Wiederlesen sicherer anfühlt, als es ist, und nennen drei Lernregeln",
+          "wählen für ein Fach ein Selbsttest-Werkzeug und probieren den Skill „Atemzüge zählen“ aus"
+        ],
+        "material": [
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Wortlisten (Vorlage), je Person eine",
+          "Großer Umschlag für die Listen",
+          "Lern-Doktor-Karten (Vorlage)",
+          "Timer, gut sichtbar",
+          "Einige 1-Euro-Münzen, Schmierpapier",
+          "20 kleine Zettel, eine Schachtel",
+          "Schülerheft",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Vorher fragen, ob jemand Swahili spricht oder versteht – diese Person wird Versuchsleitung. Die Wörter einmal selbst laut lesen.",
+          "Wortlisten (S. 1) einseitig kopieren, je Person eine und zwei Reserve, zwischen den Listen schneiden; Lern-Doktor-Karten (S. 2) einmal kopieren und schneiden.",
+          "Tafel: Beispielwörter, Strichliste aus Schritt 8, Wortspeicher; 20 kleine Zettel schneiden."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Punkt, Zahl und Barometer der Woche"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick, Mission und das Experiment"
+          },
+          {
+            "min": "15–20",
+            "phase": "uebung",
+            "titel": "Experiment: Methoden, Gruppen, Vorhersage"
+          },
+          {
+            "min": "20–30",
+            "phase": "uebung",
+            "titel": "Experiment: zwei Listen, zwei Methoden"
+          },
+          {
+            "min": "30–45",
+            "phase": "input",
+            "titel": "Münztest und drei Regeln fürs Lernen"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Bewegungen aus dem Kopf"
+          },
+          {
+            "min": "50–70",
+            "phase": "uebung",
+            "titel": "Lern-Doktor: Rezepte gegen falsches Lernen"
+          },
+          {
+            "min": "70–85",
+            "phase": "uebung",
+            "titel": "Experiment: Test und Strichliste"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Atemzüge zählen"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Mission und Nachtest"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Punkt, Zahl und Barometer der Woche",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat (3 Min.). Auf drei zeigen alle ihre Anspannung mit den Fingern (0–10 Finger für 0–100), die Lehrkraft beginnt, zwei Freiwillige nennen ihr Wort (2 Min.). Dann das Barometer aus der letzten Stunde, diesmal mit der Hand: Wo stand euer Barometer diese Woche meistens? Hand auf Tischhöhe heißt Leerlauf, auf Brusthöhe guter Stress, auf Kopfhöhe es kippt, über dem Kopf zu viel; alle zeigen gleichzeitig, die Lehrkraft fasst ohne Namen zusammen (2 Min.). Zum Schluss eine Umfrage per Handzeichen, mehrfach melden ist erlaubt: Wie lernt ihr meistens für einen Test – durchlesen, abschreiben, Karteikarten, euch abfragen lassen oder eher gar nicht? Die Lehrkraft macht Striche an der Tafel (3 Min.).",
+            "sagen": [
+              "Und euer Barometer der Woche – mit der Hand: Tisch Leerlauf, Brust guter Stress, Kopf es kippt, über dem Kopf zu viel. Auf drei.",
+              "Wie lernt ihr meistens für einen Test? Ihr dürft euch öfter melden – und „eher gar nicht“ ist auch eine ehrliche Antwort."
+            ],
+            "tipp": "Die Striche der Umfrage stehen lassen: Meist liegt Durchlesen weit vorn. Genau diese Methode tritt heute gegen den Selbsttest an.",
+            "wennEsKippt": "Zeigen viele über den Kopf, das kurz aussprechen – bei vielen ist gerade viel los – und ankündigen, dass es heute um eine Methode geht, die Lernzeit spart. Hält jemand die Hand lange über den Kopf und wirkt erschöpft, nach der Stunde leise nachfragen."
+          },
+          {
+            "titel": "Rückblick, Mission und das Experiment",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Per Daumen nach der Wochen-Mission fragen: Wer hat „Ein Ball nach dem anderen“ ausprobiert – alles aufschreiben, einen Ball wählen, anfangen? Eine Stimme erzählt in einem Satz, wann das war; niemand muss es geschafft haben. Dann an die Stress-Waage erinnern: Lernen ist für viele der dickste Ball. Ankündigen, dass die Klasse heute selbst herausfindet, welche Lernmethode mehr bringt – wie in der Forschung: Vorhersage, Versuch, Ergebnis. Wer in der 7e den Skills-Tester benutzt hat, kennt das Prinzip: ausprobieren, messen, vergleichen.",
+            "sagen": [
+              "Daumen hoch, Mitte oder runter: Habt ihr einmal alle Bälle aufgeschrieben und einen gewählt? Wer erzählt, wann das war?",
+              "Wer hat schon mal lange gelernt und im Test trotzdem wenig gewusst? Das liegt selten an euch – oft an der Methode.",
+              "Heute seid ihr Versuchspersonen und Forschungsteam zugleich."
+            ],
+            "tipp": "Wer die Mission nicht gemacht hat, bekommt keine Nachfrage. Hat jemand den Skill an einem vollen Abend ausprobiert, reicht ein Satz – was auf dem Zettel stand, fragt niemand."
+          },
+          {
+            "titel": "Experiment: Methoden, Gruppen, Vorhersage",
+            "dauer": 5,
+            "phase": "uebung",
+            "text": "Die zwei Methoden an drei Beispielwörtern an der Tafel vormachen: simba – Löwe, rafiki – Freund, chai – Tee. Wiederlesen: die Liste immer wieder durchlesen, leise oder halblaut, nichts abdecken, nichts aufschreiben. Selbsttest: die Liste eine halbe Minute lesen, dann die rechte Spalte nach hinten falten, zu jedem Wort die Bedeutung sagen, aufklappen, prüfen, von vorn. Die Gruppen festlegen: An jedem Tisch sind die zwei am Fenster Gruppe A, die zwei an der Tür Gruppe B (oder abzählen: A, B, A, B). Jede Person kreuzt auf dem Blatt ihre Gruppe und ihre Vorhersage an (Aufgaben 1 und 2); dann kommt die Vorhersage per Handzeichen in die erste Zeile der Strichliste an der Tafel.",
+            "sagen": [
+              "Gruppe A lernt Liste 1 mit Wiederlesen und Liste 2 mit Selbsttest, Gruppe B genau andersherum. So bleibt es fair, falls eine Liste leichter ist.",
+              "Selbsttest heißt: falten, erinnern, aufklappen, prüfen. Fehler sind dabei erwünscht – sie zeigen, was noch fehlt.",
+              "Eure Vorhersage: Mit welcher Methode wisst ihr nachher mehr? Hand hoch für Wiederlesen … für Selbsttest … für gleich viel."
+            ],
+            "tipp": "Manche kennen simba und rafiki aus einem Film – gut so: Dann ist klar, dass es eine echte Sprache ist, gesprochen in Ostafrika. In den Listen selbst stehen keine Wörter, die man aus Filmen kennt.",
+            "blatt": "ff6-lern-experiment"
+          },
+          {
+            "titel": "Experiment: zwei Listen, zwei Methoden",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Alle Hefte zu. Liste 1 mit der Schrift nach unten austeilen; auf das Startsignal den Timer auf drei Minuten stellen, jede Person lernt mit der Methode ihrer Gruppe. Nach 30 Sekunden laut ansagen, dass die Selbsttest-Gruppe jetzt faltet, und die letzte Minute ankündigen. Liste 1 einsammeln, Liste 2 austeilen, wieder drei Minuten (8 Min. mit Austeilen). Alle Listen kommen in den Umschlag und bleiben dort bis zum Test. Zum Schluss per Handzeichen fragen, welche Methode sich sicherer angefühlt hat, und die Striche in die zweite Zeile der Strichliste eintragen (2 Min.).",
+            "sagen": [
+              "Drei Minuten, eure Methode – los.",
+              "Was hat sich sicherer angefühlt? Viele sagen: Wiederlesen war angenehm, der Selbsttest anstrengend. Merkt euch das für nachher."
+            ],
+            "tipp": "Das Experiment funktioniert nur, wenn beide Methoden gleich viel Zeit bekommen und niemand eine Liste behält. Die Versuchsleitung – wer Swahili spricht oder heute nicht mitlernen will – stoppt die Zeit, teilt aus und sammelt ein.",
+            "wennEsKippt": "Fragt sich jemand in der Wiederlesen-Zeit selbst ab, freundlich erinnern: Heute bist du Versuchsperson, und die Regeln gelten für alle. Wer mühsam liest, bekommt die Wörter einmal leise vorgesprochen und lernt dann mit seiner Methode weiter. Wird gequatscht oder abgeschrieben, die Zeit kurz anhalten: Ein Experiment ist nur so gut wie seine Regeln.",
+            "blatt": "ff6-lern-karten"
+          },
+          {
+            "titel": "Münztest und drei Regeln fürs Lernen",
+            "dauer": 15,
+            "phase": "input",
+            "text": "Jede Person zeichnet eine Minute lang aus dem Kopf beide Seiten einer 1-Euro-Münze auf Schmierpapier (2 Min.). Dann echte Münzen herumgeben und vergleichen (2 Min.). Auswerten: Die Münze hatten alle schon hundertmal in der Hand und würden sie sofort erkennen – aufzeichnen kann sie kaum jemand. Genau so täuscht Wiederlesen: Alles kommt bekannt vor, im Test muss man es aber selbst hervorholen (3 Min.). Wer aus der 7e „Heft zu und aufschreiben“ kennt, sagt es den Neuen. Dann die drei Regeln aus dem Merke-Kasten an die Tafel schreiben und mit dem Tafelbild füllen: Wie sieht ein Selbsttest in Mathe, Französisch oder Geschichte aus (5 Min.)? Beim Lernort fragen, wo das Handy liegt – nicht, wie es zu Hause aussieht (3 Min.).",
+            "sagen": [
+              "Wiedererkennen fühlt sich an wie Können. Ist es aber nicht – das habt ihr gerade an der Münze gemerkt.",
+              "Jeder Blick aufs Handy kostet mehr als ein paar Sekunden. Danach braucht der Kopf eine Weile, bis er wieder drin ist.",
+              "Wo liegt euer Handy, wenn ihr lernt? Ehrlich – hier bewertet das niemand."
+            ],
+            "punkte": [
+              "Heft zu: abrufen statt wiederlesen – aufschreiben oder erklären, was noch da ist, dann vergleichen.",
+              "Verteilen statt pauken: lieber dreimal 15 Minuten an drei Tagen als eine Stunde am Abend davor.",
+              "Lernen ohne Ablenkung: das Handy in einen anderen Raum, nicht nur stumm daneben."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Fach",
+                "So sieht der Selbsttest aus"
+              ],
+              "zeilen": [
+                [
+                  "Vokabeln",
+                  "Karteikarte: vorne das Wort, hinten die Bedeutung – erst sagen, dann umdrehen"
+                ],
+                [
+                  "Mathe",
+                  "eine Aufgabe ohne Lösung rechnen, erst danach vergleichen"
+                ],
+                [
+                  "Geschichte, Bio, Geo",
+                  "Heft zu, drei Dinge aus dem Kopf aufschreiben oder eine Skizze zeichnen"
+                ],
+                [
+                  "jedes Fach",
+                  "jemandem erklären, was man gelernt hat – notfalls dem Spiegel"
+                ]
+              ]
+            },
+            "tipp": "Statt der Münze geht auch das Logo der Schule oder ein bekanntes Verkehrsschild – Hauptsache, alle haben es oft gesehen und nie bewusst gelernt.",
+            "wennEsKippt": "Sagt jemand, er lerne mit Musik besser, nicht widersprechen, sondern ein eigenes Experiment vorschlagen: eine Woche mit, eine ohne, dann vergleichen. Hat jemand zu Hause keinen ruhigen Platz, sachlich Alternativen nennen – Lernraum oder Bibliothek im Lycée, Hausaufgabenhilfe, Kopfhörer ohne Musik, eine feste ruhige Zeit – und das als Planungsfrage behandeln, nicht als Mangel.",
+            "blatt": "ff6-lern-experiment"
+          },
+          {
+            "titel": "Bewegungspause: Bewegungen aus dem Kopf",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen hinter ihrem Stuhl. Die Lehrkraft macht eine Folge aus drei Bewegungen vor – zum Beispiel klatschen, Schultern hoch, einmal um sich selbst drehen –, alle machen nach. Jede Runde kommt eine Bewegung dazu, bis sieben; eine freiwillige Person darf die siebte erfinden (2 Min.). Dann die Probe: Die Lehrkraft zählt nur noch und macht nichts mehr vor – alle holen die Folge aus dem Kopf (1 Min.). Kurz fragen: Was war leichter – nachmachen oder aus dem Kopf? (1 Min.) Fenster auf, durchatmen (1 Min.). Liegt die große Pause zwischen den beiden Stunden, entfällt die Übung.",
+            "tipp": "Die Übung ist ein Selbsttest mit dem ganzen Körper: Nachmachen fühlt sich leicht an, erst das Abrufen aus dem Kopf zeigt, was sitzt – und macht es fester. Die siebte Bewegung darf erfinden, wer gern im Mittelpunkt steht; so landet die Energie im Spiel.",
+            "wennEsKippt": "Wird es zu wild, die Bewegungen kleiner machen: nur Hände und Kopf, am Platz. Wer die Folge verliert, steigt bei der nächsten Bewegung wieder ein – niemand scheidet aus. Wer nicht mitmachen mag, zählt die Bewegungen mit."
+          },
+          {
+            "titel": "Lern-Doktor: Rezepte gegen falsches Lernen",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Jede Tischgruppe bekommt eine Fallkarte: Eine erfundene Person lernt fleißig, aber mit einer Methode, die wenig bringt. In der Gruppe (7 Min.): den Fall laut lesen, herausfinden, welche Regel fehlt, und auf die Rückseite ein Rezept schreiben – „Statt … lieber …“ – mit einem Selbsttest, der genau zu diesem Fach passt. Dann stellt jede Gruppe ihren Fall in einer Minute vor; die Klasse darf ein zweites Rezept vorschlagen (6 Min.). Zum Schluss arbeitet jede Person allein auf dem Blatt (Aufgabe 4): ein Fach wählen, in dem bald etwas ansteht, und das eigene Selbsttest-Werkzeug eintragen – was, wie, wann (7 Min.). Dabei herumgehen und bei der Wahl des Fachs helfen.",
+            "sagen": [
+              "Ihr seid die Lern-Doktoren: Was macht die Person – und was verschreibt ihr ihr?",
+              "Ein gutes Rezept ist so genau, dass die Person heute Abend damit anfangen kann.",
+              "Jetzt euer eigenes Rezept: Welches Fach, wie testet ihr euch dort – und an welchen Tagen?"
+            ],
+            "punkte": [
+              "Fall 1 · Diogo liest am Abend vor dem Mathe-Test eine Stunde lang seine Lösungen durch und denkt: Ach so, klar. Im Test sitzt er vor der ersten Aufgabe und weiß nicht, wie er anfangen soll.",
+              "Fall 2 · Inês lernt Französisch-Vokabeln mit dem Handy neben dem Heft. Alle paar Minuten leuchtet der Bildschirm auf. Nach einer Stunde kann sie zwölf von vierzig Wörtern.",
+              "Fall 3 · Mathis markiert im Geschichtsbuch fast die ganze Seite gelb. Danach sieht die Seite fertig aus. Als seine Schwester fragt, worum es geht, weiß er es nicht.",
+              "Fall 4 · Aylin lernt für den Bio-Test nur am Sonntag, drei Stunden am Stück. Ab der zweiten Stunde liest sie dieselbe Seite zum vierten Mal.",
+              "Fall 5 · Rafael schreibt jede Vokabel fünfmal ab, ohne sie je zuzudecken. Danach ist er müde und stolz. Am Testtag fehlt ihm die Hälfte.",
+              "Fall 6 (Reserve) · Zoé lernt im Wohnzimmer, der Fernseher läuft, ihre Geschwister spielen. Ein eigenes Zimmer hat sie nicht. Nach zwanzig Minuten gibt sie auf."
+            ],
+            "tipp": "Lösungen, die oft kommen: Diogo rechnet die Aufgaben ohne Lösung neu, Inês legt das Handy in einen anderen Raum und lernt in drei kurzen Runden, Mathis schreibt nach jedem Abschnitt drei Sätze aus dem Kopf, Aylin verteilt auf drei Tage, Rafael deckt ab und fragt sich selbst. Bei Zoé zählen Ideen, die ohne eigenes Zimmer gehen: Lernraum im Lycée, Bibliothek, Kopfhörer ohne Musik, eine feste ruhige Zeit.",
+            "wennEsKippt": "Wird über die Figuren gelacht („Der ist halt dumm“), zurückfragen: Wer hat noch nie am Abend davor alles durchgelesen? Meist gehen viele Hände hoch, auch die der Lehrkraft. Erinnert ein Fall an eine echte Person in der Klasse, den Namen tauschen oder Fall 6 nehmen. Findet jemand für Aufgabe 4 kein Fach, nimmt er die nächsten Vokabeln oder das Fach, in dem am meisten zu lernen ist.",
+            "blatt": "ff6-lern-karten"
+          },
+          {
+            "titel": "Experiment: Test und Strichliste",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Tische leer bis auf Heft und Stift. Alle schreiben in Aufgabe 3 zu jedem der zwanzig Wörter die Bedeutung, vier Minuten lang; raten ist erlaubt (5 Min.). Dann die Listen aus dem Umschlag zum Prüfen austeilen: Jede Person zählt ihre Treffer links (Liste 1) und rechts (Liste 2) und trägt sie für sich ein; danach kommen die Listen zurück in den Umschlag (3 Min.). Auf einen kleinen Zettel schreibt jede Person nur ein Zeichen – S, wenn sie mit dem Selbsttest mehr wusste, W für Wiederlesen, = für gleich viel; welche Liste welche Methode war, steht in Aufgabe 1 –, faltet ihn und wirft ihn in die Schachtel. Zwei Freiwillige ziehen die Zettel und machen die Striche in der dritten Zeile (3 Min.). Auswerten: Vorhersage, Gefühl und Ergebnis vergleichen, die Striche ins Heft übertragen und den Nachtest ankündigen (4 Min.).",
+            "sagen": [
+              "Schreibt alles hin, was euch einfällt. Ein halbes Wort zählt, wenn klar ist, was gemeint ist.",
+              "Auf den Zettel kommt nur ein Zeichen: S, W oder ein Gleichheitszeichen. Eure Treffer bleiben auf eurem Blatt.",
+              "Vergleicht die drei Zeilen: Was habt ihr vorhergesagt, was hat sich sicherer angefühlt – und was ist herausgekommen?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Frage an die Klasse",
+                "Strichliste: S · W · ="
+              ],
+              "zeilen": [
+                [
+                  "Vorhersage (Schritt 3): Womit wisst ihr nachher mehr?",
+                  "S … · W … · = …"
+                ],
+                [
+                  "Gefühl (Schritt 4): Was hat sich sicherer angefühlt?",
+                  "S … · W … · = …"
+                ],
+                [
+                  "Ergebnis heute (Schritt 8): Womit wusstet ihr mehr?",
+                  "S … · W … · = …"
+                ],
+                [
+                  "Nachtest in einer Woche",
+                  "S … · W … · = …"
+                ]
+              ]
+            },
+            "tipp": "Nur Striche an die Tafel, keine Zahlen von Einzelnen; niemand wird gefragt, wer am meisten wusste. Oft liegt der Selbsttest vorn, obwohl sich Wiederlesen sicherer angefühlt hat – genau diesen Widerspruch zwischen der zweiten und der dritten Zeile herausarbeiten.",
+            "wennEsKippt": "Liegt Wiederlesen heute vorn oder gleichauf, das nicht wegreden: Auch in der Forschung war Wiederlesen kurz nach dem Lernen oft gleich gut; der Vorteil des Selbsttests zeigte sich erst nach Tagen – deshalb gibt es den Nachtest. Ärgert sich jemand über wenige Treffer, daran erinnern: Getestet wird die Methode, nicht die Person. Will jemand seine Zahl laut sagen, freundlich stoppen.",
+            "blatt": "ff6-lern-experiment"
+          },
+          {
+            "titel": "Skill: Atemzüge zählen",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: Konzentration ist kein Talent, sondern Übung – der Kopf schweift ab, und dieser Skill trainiert das Zurückkommen. Alle sitzen aufrecht, beide Füße am Boden, Augen zu oder Blick auf einen Punkt am Tisch; die Lehrkraft macht mit (1 Min.). Die ersten drei Atemzüge leise vorzählen: einatmen, ausatmen – eins; bei zehn wieder bei eins beginnen. Dann drei Minuten still weiterzählen; wer merkt, dass er abgeschweift ist oder bei elf landet, fängt ohne Ärger wieder bei eins an (4 Min.). Auswerten per Handzeichen: Wer hat mindestens einmal neu angefangen? Die vielen Hände zeigen, dass Abschweifen allen passiert (2 Min.). Zwei, drei Ideen sammeln, wann der Skill hilft: vor den Hausaufgaben, nach einem Blick aufs Handy, im Test zwischen zwei Aufgaben (3 Min.).",
+            "sagen": [
+              "Einatmen, ausatmen – eins. Einatmen, ausatmen – zwei. Bis zehn, dann wieder von vorn.",
+              "Wer bei elf oder bei der Pizza von gestern gelandet ist: kein Problem, wieder bei eins anfangen. Genau das ist die Übung.",
+              "Abschweifen passiert jedem. Wer immer wieder zurückkommt, trainiert genau das, was man am Schreibtisch braucht."
+            ],
+            "punkte": [
+              "Aufrecht sitzen, Blick auf einen Punkt oder Augen zu.",
+              "Jeden Ausatemzug still zählen: eins bis zehn, dann wieder bei eins.",
+              "Abgeschweift? Freundlich bemerken und wieder bei eins anfangen."
+            ],
+            "tipp": "Atemzüge zählen ist vor allem ein Training der Aufmerksamkeit; deshalb gehört es in diese Stunde. Drei Minuten reichen – lieber kurz und täglich als lang und selten, wie beim Lernen. Gezählt wird in jeder Sprache; viele zählen in ihrer Familiensprache am ruhigsten.",
+            "wennEsKippt": "Wird gekichert, ruhig weiterzählen und selbst sichtbar mitmachen; meist wird es nach einer Minute still. Wer unruhig wird, zählt mit den Fingern auf dem Oberschenkel mit. Wem beim Atmen unwohl wird, atmet normal und zählt nur."
+          },
+          {
+            "titel": "Skills-Pass, Mission und Nachtest",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Welche Lernregel nehme ich mit – und für welches Fach? Jede Person schreibt ihren Satz und bekommt den Stempel; zwei Stimmen reichen (2 Min.). Dann die Wochen-Mission ansagen, die im Heft steht: einmal jemandem aus dem Kopf erklären, was man in einem Fach gelernt hat – Heft zu (1 Min.). Zum Schluss den Nachtest ankündigen – die Listen bleiben im Umschlag, nächste Woche wird ohne Lernen noch einmal getestet – und der Ausblick (2 Min.).",
+            "sagen": [
+              "Ein Satz für den Skills-Pass: Welche Lernregel nehmt ihr mit – und für welches Fach?",
+              "Eure Mission: Erklärt diese Woche einmal jemandem aus dem Kopf, was ihr in einem Fach gelernt habt – einer Freundin, dem Bruder, in der Pause oder dem Spiegel. Heft zu."
+            ],
+            "tipp": "Den Umschlag mit den Listen gut aufbewahren – ohne ihn gibt es keinen Nachtest. Wer sich bis dahin die eigenen Antworten im Heft anschaut, verfälscht das Ergebnis; das offen sagen und darum bitten, die Seite bis zum Nachtest nicht anzuschauen."
+          }
+        ],
+        "bruecke": "Nächste Woche gibt es zuerst den Nachtest – ein paar Minuten, ohne vorher zu lernen. Dann geht es um das, was vor dem Lernen oft am schwersten ist: das Anfangen.",
+        "mission": "Erklär diese Woche jemandem aus dem Kopf, was du in einem Fach gelernt hast – Heft zu.",
+        "hintergrund": "Wiederlesen erzeugt Vertrautheit, die leicht mit Können verwechselt wird. Bei Roediger und Karpicke (2006) lasen Studierende einen Text mehrmals oder schrieben ihn nach dem Lesen aus dem Gedächtnis auf: Nach fünf Minuten lag Wiederlesen vorn, nach einer Woche wussten die Abrufenden deutlich mehr – obwohl sich die Wiederlesenden sicherer fühlten. Deshalb gehört der Nachtest dazu. Von zehn verbreiteten Methoden wirken Abrufen und verteiltes Lernen am besten, Wiederlesen und Markieren wenig (Dunlosky et al., 2013). Atemzüge zählen übt, die Aufmerksamkeit zurückzuholen; Achtsamkeit in Schulen wirkt vor allem auf kognitive Leistungen (Zenner et al., 2014).",
+        "quellen": [
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603."
+        ],
+        "achtung": "Lernen und Noten sind für viele mit Scham verbunden, besonders bei Lese- oder Schreibschwierigkeiten. Einzelergebnisse werden weder vorgelesen noch verglichen; an die Tafel kommen nur Striche. Wer mühsam liest, hört die Wörter vorgesprochen und darf zeichnen. Nicht nach den Verhältnissen zu Hause fragen; wer von fehlendem Platz, Lärm oder Streit erzählt, bekommt ein Gespräch nach der Stunde, bei Bedarf mit Régent und SePAS. Bei Hinweisen auf Gewalt oder Suizidgedanken: noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112.",
+        "differenzierung": {
+          "leichter": "Wer mühsam liest oder die Unterrichtssprache noch lernt, lernt nur die ersten sechs Wörter jeder Liste, hört sie einmal vorgesprochen und darf im Test die Bedeutung zeichnen oder in einer eigenen Sprache schreiben; die französische Fassung der Wortlisten liegt für alle bereit, die Französisch besser verstehen. Beim Lern-Doktor liest eine Person vor, die gut liest; für Aufgabe 4 reicht eine Zeile.",
+          "schwerer": "Für die Klasse ausrechnen, wie viel Prozent mit dem Selbsttest mehr wussten, und eine Säule an die Tafel zeichnen. Beim Lern-Doktor ein zweites Rezept für einen anderen Fall schreiben oder erklären, warum sich Markieren nach Arbeit anfühlt, aber wenig bringt."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Punkt und Zahl (5 Min.), Methoden, Gruppen und Vorhersage (5 Min.), zwei Listen lernen (10 Min.), Münztest und drei Regeln (12 Min.), Test und Strichliste (12 Min.), Atemzüge zählen mit Skills-Pass und Mission (6 Min.). Lern-Doktor und Bewegungspause entfallen; der Abstand zwischen Lernen und Test ist dann kurz – umso wichtiger ist der Nachtest in der nächsten Stunde."
+      },
+      "fr": {
+        "titel": "Apprendre pour retenir",
+        "kurz": "Une vraie expérience avec des mots d’une langue inconnue : relire contre se tester, pourquoi relire trompe – et une façon de se tester pour une matière.",
+        "ziele": [
+          "comparent dans une expérience relire et se tester et analysent le résultat en classe entière avec un comptage en bâtons",
+          "expliquent avec le test de la pièce pourquoi relire donne une fausse impression de savoir et nomment trois règles pour apprendre",
+          "choisissent une façon de se tester dans une matière et essaient le skill « Compter ses respirations »"
+        ],
+        "material": [
+          "Roue des émotions, 20 gommettes",
+          "Listes de mots (modèle), 1 par jeune",
+          "Grande enveloppe pour les listes",
+          "Cartes du docteur (modèle)",
+          "Minuteur bien visible",
+          "Pièces de 1 euro, papier brouillon",
+          "20 petits papiers, une boîte",
+          "Cahier de l’élève",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Demander avant si quelqu’un parle ou comprend le swahili – cette personne dirigera l’expérience. Lire soi-même une fois les mots à voix haute.",
+          "Photocopier les listes (p. 1) en recto, une par jeune et deux de réserve, couper entre les listes ; cartes du docteur (p. 2) : une fois, découpées.",
+          "Tableau : mots d’exemple, grille de comptage de l’étape 8, mots-clés ; découper 20 petits papiers."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : gommette, chiffre et baromètre de la semaine"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour, mission et expérience du jour"
+          },
+          {
+            "min": "15–20",
+            "phase": "uebung",
+            "titel": "Expérience : méthodes, groupes, prédiction"
+          },
+          {
+            "min": "20–30",
+            "phase": "uebung",
+            "titel": "Expérience : deux listes, deux méthodes"
+          },
+          {
+            "min": "30–45",
+            "phase": "input",
+            "titel": "Le test de la pièce et trois règles pour apprendre"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : des gestes de mémoire"
+          },
+          {
+            "min": "50–70",
+            "phase": "uebung",
+            "titel": "Docteur des révisions : des ordonnances"
+          },
+          {
+            "min": "70–85",
+            "phase": "uebung",
+            "titel": "Expérience : le test et le comptage"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : compter ses respirations"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, mission et test de rappel"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : gommette, chiffre et baromètre de la semaine",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions (3 min). À trois, tout le monde montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100), l’enseignant·e commence, deux volontaires disent leur mot (2 min). Puis le baromètre de la dernière séance, cette fois avec la main : où était-il le plus souvent cette semaine ? Main à hauteur de table : point mort ; poitrine : bon stress ; tête : ça bascule ; au-dessus de la tête : trop-plein. Tout le monde montre en même temps, l’enseignant·e résume sans nommer personne (2 min). Pour finir, un sondage à main levée, plusieurs réponses possibles : comment révisez-vous le plus souvent pour un devoir – relire, recopier, fiches, se faire interroger ou plutôt pas du tout ? L’enseignant·e trace des bâtons au tableau (3 min).",
+            "sagen": [
+              "Et maintenant votre baromètre de la semaine – avec la main : table point mort, poitrine bon stress, tête ça bascule, au-dessus de la tête trop-plein. À trois.",
+              "Comment révisez-vous le plus souvent pour un devoir en classe ? Vous pouvez lever la main plusieurs fois – et « plutôt pas du tout », c’est aussi une réponse honnête."
+            ],
+            "tipp": "Laisser les bâtons du sondage au tableau : le plus souvent, relire arrive loin devant. C’est précisément cette méthode qui affronte aujourd’hui l’autre : se tester.",
+            "wennEsKippt": "Si beaucoup montrent au-dessus de la tête, le dire brièvement – beaucoup ont une semaine chargée – et annoncer qu’aujourd’hui, on parle d’une méthode qui fait gagner du temps de révision. Si un jeune garde longtemps la main au-dessus de la tête et semble épuisé, lui demander discrètement après le cours comment il va."
+          },
+          {
+            "titel": "Retour, mission et expérience du jour",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Demander avec le pouce où en est la mission de la semaine : qui a essayé « Une balle à la fois » – tout noter, choisir une balle, commencer ? Une voix raconte en une phrase quand c’était ; personne n’est obligé de l’avoir réussie. Puis rappeler la balance du stress : pour beaucoup, apprendre est la plus grosse balle. Annoncer qu’aujourd’hui, la classe découvre elle-même quelle méthode est la plus efficace – comme dans la recherche : prédiction, expérience, résultat. Ceux qui ont utilisé leur testeur de skills en 7e connaissent le principe : essayer, mesurer, comparer.",
+            "sagen": [
+              "Pouce en haut, au milieu ou en bas : avez-vous noté une fois toutes vos balles et en avez-vous choisi une ? Qui raconte quand c’était ?",
+              "Qui a déjà révisé longtemps et su quand même peu de choses au devoir ? Ça vient rarement de vous – souvent de la méthode.",
+              "Aujourd’hui, vous êtes à la fois les cobayes et l’équipe de recherche."
+            ],
+            "tipp": "Qui n’a pas fait la mission n’est pas questionné. Si quelqu’un a essayé le skill un soir chargé, une phrase suffit – personne ne demande ce qu’il y avait sur le papier."
+          },
+          {
+            "titel": "Expérience : méthodes, groupes, prédiction",
+            "dauer": 5,
+            "phase": "uebung",
+            "text": "Montrer les deux méthodes au tableau avec trois mots d’exemple : simba – lion, rafiki – ami, chai – thé. Relire : lire la liste encore et encore, à voix basse ou à mi-voix, sans rien cacher ni rien écrire. Se tester : lire la liste une demi-minute, puis plier la colonne de droite vers l’arrière, dire le sens de chaque mot, déplier, vérifier, recommencer. Former les groupes : à chaque îlot, les deux côté fenêtre forment le groupe A, les deux côté porte le groupe B (ou compter : A, B, A, B). Chacun coche sur sa fiche son groupe et sa prédiction (exercices 1 et 2) ; puis la prédiction est relevée à main levée dans la première ligne du comptage au tableau.",
+            "sagen": [
+              "Le groupe A apprend la liste 1 en relisant et la liste 2 en se testant, le groupe B fait exactement l’inverse. Comme ça, c’est équitable si une liste est plus facile.",
+              "Se tester, c’est : plier, se rappeler, déplier, vérifier. Les erreurs sont bienvenues – elles montrent ce qui manque encore.",
+              "Votre prédiction : avec quelle méthode saurez-vous le plus de mots tout à l’heure ? Main levée pour relire … pour se tester … pour autant."
+            ],
+            "tipp": "Certains connaissent simba et rafiki grâce à un film – tant mieux : on voit que c’est une vraie langue, parlée en Afrique de l’Est. Les listes elles-mêmes ne contiennent aucun mot connu par les films.",
+            "blatt": "ff6-lern-experiment"
+          },
+          {
+            "titel": "Expérience : deux listes, deux méthodes",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Tous les cahiers fermés. Distribuer la liste 1 face cachée ; au signal, mettre le minuteur sur trois minutes, chacun apprend avec la méthode de son groupe. Au bout de 30 secondes, annoncer à voix haute que ceux qui se testent plient maintenant leur liste, et prévenir pour la dernière minute. Ramasser la liste 1, distribuer la liste 2, encore trois minutes (8 min avec la distribution). Toutes les listes vont dans l’enveloppe et y restent jusqu’au test. Pour finir, demander à main levée quelle méthode a donné le plus d’assurance et noter les bâtons dans la deuxième ligne du comptage (2 min).",
+            "sagen": [
+              "Trois minutes, votre méthode – c’est parti.",
+              "Qu’est-ce qui vous a donné le plus d’assurance ? Beaucoup disent : relire, c’était agréable ; se tester, c’était fatigant. Retenez ça pour tout à l’heure."
+            ],
+            "tipp": "L’expérience ne marche que si les deux méthodes ont exactement le même temps et que personne ne garde de liste. Le responsable de l’expérience – qui parle swahili ou ne veut pas apprendre aujourd’hui – chronomètre, distribue et ramasse.",
+            "wennEsKippt": "Si quelqu’un s’interroge pendant le temps prévu pour relire, lui rappeler gentiment : aujourd’hui, tu es cobaye, et les règles valent pour tout le monde. Un jeune qui lit difficilement entend une fois les mots, prononcés à voix basse, puis continue avec sa méthode. Si on bavarde ou recopie, arrêter un instant le temps : une expérience ne vaut que par ses règles.",
+            "blatt": "ff6-lern-karten"
+          },
+          {
+            "titel": "Le test de la pièce et trois règles pour apprendre",
+            "dauer": 15,
+            "phase": "input",
+            "text": "Chacun dessine de mémoire, en une minute, les deux faces d’une pièce de 1 euro sur un papier brouillon (2 min). Puis faire circuler de vraies pièces et comparer (2 min). Analyser : tout le monde a eu cette pièce cent fois en main et la reconnaîtrait tout de suite – mais presque personne ne sait la dessiner. Relire trompe de la même façon : tout paraît familier, mais au devoir, il faut aller le chercher soi-même (3 min). Qui connaît depuis la 7e « cahier fermé, écrire ce qu’on a retenu » le dit aux nouveaux. Puis écrire au tableau les trois règles de l’encadré et les compléter avec la grille : à quoi ressemble « se tester » en maths, en allemand ou en histoire (5 min) ? Pour le lieu de travail, demander où est le portable – pas comment c’est à la maison (3 min).",
+            "sagen": [
+              "Reconnaître, ça donne l’impression de savoir. Mais ce n’est pas savoir – vous venez de le voir avec la pièce.",
+              "Chaque coup d’œil au portable coûte plus que quelques secondes. Ensuite, la tête a besoin d’un moment pour s’y remettre.",
+              "Où est votre portable quand vous révisez ? Honnêtement – personne ne juge ici."
+            ],
+            "punkte": [
+              "Cahier fermé : aller chercher dans sa mémoire plutôt que relire – écrire ou expliquer ce qui reste, puis comparer.",
+              "Répartir plutôt que bachoter : trois fois 15 minutes sur trois jours plutôt qu’une heure la veille.",
+              "Réviser sans distraction : le portable dans une autre pièce, pas seulement en silencieux à côté."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Matière",
+                "À quoi ressemble « se tester »"
+              ],
+              "zeilen": [
+                [
+                  "Vocabulaire",
+                  "fiche : le mot devant, le sens derrière – d’abord le dire, puis retourner"
+                ],
+                [
+                  "Maths",
+                  "faire un exercice sans la solution, ne comparer qu’après"
+                ],
+                [
+                  "Histoire, bio, géo",
+                  "cahier fermé, écrire trois choses de mémoire ou faire un croquis"
+                ],
+                [
+                  "Toutes les matières",
+                  "expliquer à quelqu’un ce qu’on a appris – au pire, à son miroir"
+                ]
+              ]
+            },
+            "tipp": "À la place de la pièce, on peut prendre le logo de l’école ou un panneau de signalisation connu – l’essentiel est que tout le monde l’ait souvent vu sans jamais l’apprendre.",
+            "wennEsKippt": "Si quelqu’un dit qu’il apprend mieux en musique, ne pas contredire, mais lui proposer sa propre expérience : une semaine avec, une semaine sans, puis comparer. Si un jeune n’a pas d’endroit calme à la maison, citer sobrement des solutions – salle d’étude ou bibliothèque du lycée, aide aux devoirs, casque sans musique, un moment calme fixe – et traiter cela comme une question d’organisation, pas comme un manque.",
+            "blatt": "ff6-lern-experiment"
+          },
+          {
+            "titel": "Pause active : des gestes de mémoire",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève derrière sa chaise. L’enseignant·e montre une suite de trois gestes – par exemple taper dans les mains, hausser les épaules, faire un tour sur soi –, tout le monde imite. À chaque tour, un geste s’ajoute, jusqu’à sept ; un volontaire peut inventer le septième (2 min). Puis l’épreuve : l’enseignant·e ne fait plus que compter, sans montrer – chacun va chercher la suite dans sa mémoire (1 min). Demander brièvement : qu’est-ce qui était plus facile – imiter ou de mémoire ? (1 min) Ouvrir la fenêtre, respirer (1 min). Si la grande récréation tombe entre les deux heures, supprimer l’exercice.",
+            "tipp": "L’exercice, c’est se tester avec tout le corps : imiter paraît facile, mais seul le rappel de mémoire montre ce qui est acquis – et le consolide. Le septième geste peut être inventé par quelqu’un qui aime être au centre ; l’énergie passe ainsi dans le jeu.",
+            "wennEsKippt": "Si ça devient trop agité, faire des gestes plus petits : seulement les mains et la tête, sur place. Qui perd le fil reprend au geste suivant – personne n’est éliminé. Qui ne veut pas participer compte les gestes."
+          },
+          {
+            "titel": "Docteur des révisions : des ordonnances",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Chaque îlot reçoit une carte cas : une personne inventée révise avec beaucoup d’efforts, mais avec une méthode qui rapporte peu. En groupe (7 min) : lire le cas à voix haute, trouver quelle règle manque et écrire au dos une ordonnance – « Au lieu de …, plutôt … » – avec une façon de se tester adaptée à cette matière. Ensuite, chaque groupe présente son cas en une minute ; la classe peut proposer une deuxième ordonnance (6 min). Pour finir, chacun travaille seul sur sa fiche (exercice 4) : choisir une matière où quelque chose arrive bientôt et noter sa propre façon de se tester – quoi, comment, quand (7 min). Passer dans les rangs et aider à choisir la matière.",
+            "sagen": [
+              "Vous êtes les docteurs des révisions : que fait cette personne – et que lui prescrivez-vous ?",
+              "Une bonne ordonnance est si précise que la personne peut commencer ce soir.",
+              "Maintenant, votre propre ordonnance : quelle matière, comment vous testez-vous – et quels jours ?"
+            ],
+            "punkte": [
+              "Cas 1 · La veille du devoir de maths, Diogo relit ses solutions pendant une heure et se dit : ah oui, c’est clair. Au devoir, il est devant le premier exercice et ne sait pas par où commencer.",
+              "Cas 2 · Inês apprend son vocabulaire d’allemand avec le portable à côté du cahier. Toutes les deux minutes, l’écran s’allume. Au bout d’une heure, elle connaît douze mots sur quarante.",
+              "Cas 3 · Mathis surligne en jaune presque toute la page de son livre d’histoire. Ensuite, la page a l’air finie. Quand sa sœur lui demande de quoi ça parle, il ne sait pas.",
+              "Cas 4 · Aylin révise son devoir de bio seulement le dimanche, trois heures d’affilée. À partir de la deuxième heure, elle lit la même page pour la quatrième fois.",
+              "Cas 5 · Rafael recopie chaque mot de vocabulaire cinq fois, sans jamais le cacher. Après, il est fatigué et fier. Le jour du devoir, la moitié lui manque.",
+              "Cas 6 (réserve) · Zoé révise au salon, la télé est allumée, ses frères et sœurs jouent. Elle n’a pas de chambre à elle. Au bout de vingt minutes, elle abandonne."
+            ],
+            "tipp": "Solutions qui reviennent souvent : Diogo refait les exercices sans la solution, Inês met son portable dans une autre pièce et révise en trois courtes séances, Mathis écrit après chaque paragraphe trois phrases de mémoire, Aylin répartit sur trois jours, Rafael cache et s’interroge. Pour Zoé, on retient les idées qui marchent sans chambre à soi : salle d’étude au lycée, bibliothèque, casque sans musique, un moment calme fixe.",
+            "wennEsKippt": "Si on se moque des personnages (« Il est nul, celui-là »), demander : qui n’a jamais tout relu la veille ? En général, beaucoup de mains se lèvent, celle de l’enseignant·e aussi. Si un cas rappelle une vraie personne de la classe, changer le prénom ou prendre le cas 6. Si quelqu’un ne trouve pas de matière pour l’exercice 4, il prend le prochain vocabulaire ou la matière où il y a le plus à apprendre.",
+            "blatt": "ff6-lern-karten"
+          },
+          {
+            "titel": "Expérience : le test et le comptage",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Tables vides, sauf le cahier et un stylo. Chacun écrit à l’exercice 3 le sens de chacun des vingt mots, pendant quatre minutes ; deviner est permis (5 min). Puis distribuer les listes de l’enveloppe pour vérifier : chacun compte ses bonnes réponses à gauche (liste 1) et à droite (liste 2) et les note pour lui ; ensuite, les listes retournent dans l’enveloppe (3 min). Sur un petit papier, chacun écrit un seul signe – S s’il en savait plus en se testant, R pour relire, = pour autant ; quelle liste correspond à quelle méthode figure à l’exercice 1 –, le plie et le met dans la boîte. Deux volontaires tirent les papiers et tracent les bâtons dans la troisième ligne (3 min). Analyser : comparer prédiction, impression et résultat, recopier les bâtons dans le cahier et annoncer le test de rappel (4 min).",
+            "sagen": [
+              "Écrivez tout ce qui vous vient. Un demi-mot compte, si on comprend ce que vous voulez dire.",
+              "Sur le papier, un seul signe : S, R ou le signe égal. Vos bonnes réponses restent sur votre fiche.",
+              "Comparez les trois lignes : qu’aviez-vous prédit, qu’est-ce qui vous a donné le plus d’assurance – et quel est le résultat ?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Question à la classe",
+                "Comptage : S · R · ="
+              ],
+              "zeilen": [
+                [
+                  "Prédiction (étape 3) : avec quoi saurez-vous le plus ?",
+                  "S … · R … · = …"
+                ],
+                [
+                  "Impression (étape 4) : qu’est-ce qui a donné le plus d’assurance ?",
+                  "S … · R … · = …"
+                ],
+                [
+                  "Résultat du jour (étape 8) : avec quoi avez-vous trouvé le plus de mots ?",
+                  "S … · R … · = …"
+                ],
+                [
+                  "Test de rappel dans une semaine",
+                  "S … · R … · = …"
+                ]
+              ]
+            },
+            "tipp": "Au tableau, seulement des bâtons, aucun chiffre individuel ; personne n’est interrogé sur qui en savait le plus. Souvent, se tester arrive devant alors que relire donnait plus d’assurance – faire ressortir précisément cette contradiction entre la deuxième et la troisième ligne.",
+            "wennEsKippt": "Si relire arrive devant ou à égalité aujourd’hui, ne pas le minimiser : dans la recherche aussi, relire était souvent aussi bon juste après l’apprentissage ; l’avantage de se tester n’apparaissait qu’au bout de quelques jours – c’est pour cela qu’il y a le test de rappel. Si quelqu’un s’énerve d’avoir peu de bonnes réponses, rappeler : on teste la méthode, pas la personne. Si un jeune veut dire son score à voix haute, l’arrêter gentiment.",
+            "blatt": "ff6-lern-experiment"
+          },
+          {
+            "titel": "Skill : compter ses respirations",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : la concentration n’est pas un talent, mais un entraînement – la tête s’égare, ce skill entraîne le retour. Tout le monde est assis droit, les deux pieds au sol, les yeux fermés ou fixés sur un point de la table ; l’enseignant·e fait l’exercice avec la classe (1 min). Compter à mi-voix les trois premières respirations : inspirer, expirer – un ; à dix, recommencer à un. Puis continuer en silence pendant trois minutes ; qui remarque qu’il s’est égaré ou qu’il est arrivé à onze recommence à un, sans s’énerver (4 min). Analyser à main levée : qui a recommencé au moins une fois ? Toutes ces mains montrent que s’égarer arrive à tout le monde (2 min). Rassembler deux ou trois idées de moments où il aide : avant les devoirs, après un coup d’œil au portable, entre deux exercices d’un devoir en classe (3 min).",
+            "sagen": [
+              "Inspirer, expirer – un. Inspirer, expirer – deux. Jusqu’à dix, puis on recommence.",
+              "Si vous êtes arrivés à onze ou à la pizza d’hier : pas de problème, on recommence à un. C’est exactement ça, l’exercice.",
+              "Tout le monde s’égare. Revenir, encore et encore, c’est exactement ce qu’il faut à son bureau."
+            ],
+            "punkte": [
+              "S’asseoir droit, le regard sur un point ou les yeux fermés.",
+              "Compter en silence chaque expiration : de un à dix, puis recommencer à un.",
+              "Remarquer gentiment qu’on s’est égaré et recommencer à un."
+            ],
+            "tipp": "Compter ses respirations est avant tout un entraînement de l’attention ; c’est pour cela qu’il a sa place aujourd’hui. Trois minutes suffisent – mieux vaut court et tous les jours que long et rarement, comme pour apprendre. On compte dans la langue de son choix ; beaucoup comptent plus calmement dans leur langue familiale.",
+            "wennEsKippt": "Si on ricane, continuer à compter calmement et faire l’exercice de façon visible ; en général, le calme revient au bout d’une minute. Qui s’agite compte avec les doigts sur sa cuisse. Qui se sent mal en respirant respire normalement et se contente de compter."
+          },
+          {
+            "titel": "Skills-Pass, mission et test de rappel",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire au tableau la question du Skills-Pass : quelle règle pour apprendre est-ce que j’emporte – et pour quelle matière ? Chacun écrit sa phrase et reçoit le tampon ; deux voix suffisent (2 min). Puis annoncer la mission de la semaine, qui figure dans le cahier : expliquer une fois, de mémoire, à quelqu’un ce qu’on a appris dans une matière – cahier fermé (1 min). Pour finir, annoncer le test de rappel – les listes restent dans l’enveloppe, la semaine prochaine on refait le test sans réviser – et la suite (2 min).",
+            "sagen": [
+              "Une phrase pour le Skills-Pass : quelle règle pour apprendre emportez-vous – et pour quelle matière ?",
+              "Votre mission : expliquez une fois cette semaine, de mémoire, ce que vous avez appris dans une matière – à une amie, à votre frère, à la récré ou à votre miroir. Cahier fermé."
+            ],
+            "tipp": "Bien garder l’enveloppe avec les listes – sans elle, pas de test de rappel. Qui regarde d’ici là ses réponses dans le cahier fausse le résultat ; le dire franchement et demander de ne pas rouvrir cette page avant le test."
+          }
+        ],
+        "bruecke": "La semaine prochaine, on commence par le test de rappel – quelques minutes, sans réviser avant. Ensuite, on s’attaque à ce qui est souvent le plus dur avant d’apprendre : commencer.",
+        "mission": "Explique à quelqu’un, de mémoire, ce que tu as appris dans une matière – cahier fermé.",
+        "hintergrund": "Relire crée une impression de familiarité que l’on confond facilement avec le savoir. Chez Roediger et Karpicke (2006), des étudiants relisaient un texte ou l’écrivaient de mémoire : au bout de cinq minutes, relire l’emportait ; après une semaine, ceux qui s’étaient rappelé le texte en savaient nettement plus – alors que les autres se sentaient plus sûrs d’eux. D’où le test de rappel. Sur dix méthodes répandues, le rappel et l’apprentissage réparti sont les plus efficaces, relire et surligner le sont peu (Dunlosky et al., 2013). Compter ses respirations entraîne à ramener l’attention ; à l’école, la pleine conscience agit surtout sur les performances cognitives (Zenner et al., 2014).",
+        "quellen": [
+          "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+          "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58.",
+          "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603."
+        ],
+        "achtung": "Apprendre et les notes sont souvent liés à la honte, surtout en cas de difficultés de lecture ou d’écriture. Les résultats individuels ne sont ni lus ni comparés ; au tableau, seulement des bâtons. Un jeune qui lit difficilement entend les mots et peut dessiner. Ne pas poser de questions sur la maison ; qui parle de manque de place, de bruit ou de disputes se voit proposer un entretien après le cours, si besoin avec le régent et le SePAS. Signes de violence ou d’idées suicidaires : informer le SePAS le jour même, suivre le protocole de protection de l’école ; en cas de danger immédiat, 112.",
+        "differenzierung": {
+          "leichter": "Les jeunes qui lisent difficilement ou apprennent encore la langue de la classe n’apprennent que les six premiers mots de chaque liste, les entendent une fois et peuvent, au test, dessiner le sens ou l’écrire dans leur langue ; la version allemande des listes est prête pour qui comprend mieux l’allemand. Au docteur des révisions, un camarade qui lit bien fait la lecture ; pour l’exercice 4, une ligne suffit.",
+          "schwerer": "Calculer pour la classe quel pourcentage en savait plus en se testant et dessiner une colonne au tableau. Au docteur des révisions, rédiger une deuxième ordonnance pour un autre cas ou expliquer pourquoi surligner donne l’impression de travailler mais rapporte peu."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et chiffre (5 min), méthodes, groupes et prédiction (5 min), apprendre les deux listes (10 min), test de la pièce et trois règles (12 min), test et comptage (12 min), compter ses respirations avec Skills-Pass et mission (6 min). Le docteur des révisions et la pause active sont supprimés ; l’écart entre l’apprentissage et le test est alors court – le test de rappel à la séance suivante n’en est que plus important."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff6-lern-experiment",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "klasse"
+      ],
+      "dauer": "30 Min. in Einheit 7, 5 Min. in Einheit 8",
+      "eldib": [],
+      "schlagworte": [
+        "Lernen",
+        "Selbsttest",
+        "Wiederlesen",
+        "Experiment",
+        "Förderfach"
+      ],
+      "bild": "icon:chart-bar",
+      "kurs": [
+        "ff6-e07",
+        "ff6-e08"
+      ],
+      "de": {
+        "titel": "Das Lern-Experiment",
+        "untertitel": "Wiederlesen oder Selbsttest – was bleibt hängen? Du bist Versuchsperson und Forschungsteam zugleich.",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Deine Gruppe: Kreuz an, wie du die beiden Listen lernst.",
+            "hinweis": "Wiederlesen: immer wieder durchlesen, nichts abdecken. Selbsttest: die rechte Spalte nach hinten falten, erinnern, aufklappen, prüfen."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 1,
+            "items": [
+              "Gruppe A: Liste 1 mit Wiederlesen, Liste 2 mit Selbsttest",
+              "Gruppe B: Liste 1 mit Selbsttest, Liste 2 mit Wiederlesen"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Deine Vorhersage: Mit welcher Methode weißt du mehr Wörter?"
+          },
+          {
+            "art": "einschaetzung",
+            "items": [
+              "nachher, beim Test in dieser Stunde",
+              "in einer Woche, beim Nachtest"
+            ],
+            "optionen": [
+              "Wiederlesen",
+              "Selbsttest",
+              "gleich viel"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Test: Schreib zu jedem Wort die Bedeutung. Raten ist erlaubt.",
+            "hinweis": "Du hast vier Minuten. Du darfst auch zeichnen oder in einer anderen Sprache schreiben."
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "text",
+                "text": "Wörter aus Liste 1",
+                "klein": true
+              },
+              {
+                "art": "satzanfaenge",
+                "items": [
+                  "wingu",
+                  "kiti",
+                  "kisu",
+                  "maziwa",
+                  "mbwa",
+                  "jicho",
+                  "kijiko",
+                  "mlango",
+                  "upepo",
+                  "ndizi"
+                ],
+                "linien": 1
+              }
+            ],
+            "rechts": [
+              {
+                "art": "text",
+                "text": "Wörter aus Liste 2",
+                "klein": true
+              },
+              {
+                "art": "satzanfaenge",
+                "items": [
+                  "paka",
+                  "mkate",
+                  "jiwe",
+                  "nyota",
+                  "sikio",
+                  "barabara",
+                  "mvua",
+                  "chakula",
+                  "viatu",
+                  "mti"
+                ],
+                "linien": 1
+              }
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Meine Treffer",
+              "Liste 1 (links)",
+              "Liste 2 (rechts)"
+            ],
+            "werte": [
+              [
+                "beim Test heute",
+                "… von 10",
+                "… von 10"
+              ],
+              [
+                "beim Nachtest",
+                "… von 10",
+                "… von 10"
+              ]
+            ],
+            "zeilen": 0
+          },
+          {
+            "art": "text",
+            "text": "Welche Liste hast du mit Selbsttest gelernt? Schau bei Aufgabe 1. Auf den Zettel für die Schachtel kommt nur ein Zeichen: S (mehr mit Selbsttest), W (mehr mit Wiederlesen) oder =.",
+            "klein": true
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Die Striche der Klasse: Übertrag die Strichliste von der Tafel."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Die Klasse",
+              "Heute",
+              "Nachtest"
+            ],
+            "werte": [
+              [
+                "S – mehr mit Selbsttest",
+                "",
+                ""
+              ],
+              [
+                "W – mehr mit Wiederlesen",
+                "",
+                ""
+              ],
+              [
+                "= – gleich viel",
+                "",
+                ""
+              ]
+            ],
+            "zeilen": 0
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Drei Regeln, die hängen bleiben",
+            "punkte": [
+              "Heft zu: abrufen statt wiederlesen.",
+              "Verteilen statt pauken: dreimal 15 Minuten an drei Tagen statt einer Stunde am Abend davor.",
+              "Das Handy in einen anderen Raum – nicht nur stumm daneben."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein Selbsttest-Werkzeug: Wähl ein Fach, in dem bald etwas ansteht."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Fach",
+              "So teste ich mich – Heft zu",
+              "Wann? Drei kurze Runden"
+            ],
+            "breiten": [
+              1,
+              2,
+              1.4
+            ],
+            "beispiel": [
+              "Französisch",
+              "Karteikarten: erst sagen, dann umdrehen",
+              "Mo, Mi, Fr je 15 Min."
+            ],
+            "zeilen": 2
+          },
+          {
+            "art": "aufgabe",
+            "text": "Nachtest in einer Woche: Schreib wieder zu jedem Wort die Bedeutung – ohne vorher zu lernen.",
+            "hinweis": "Gleiche Wörter, andere Reihenfolge."
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "text",
+                "text": "Wörter aus Liste 1",
+                "klein": true
+              },
+              {
+                "art": "satzanfaenge",
+                "items": [
+                  "mlango",
+                  "upepo",
+                  "ndizi",
+                  "jicho",
+                  "kiti",
+                  "mbwa",
+                  "kisu",
+                  "wingu",
+                  "kijiko",
+                  "maziwa"
+                ],
+                "linien": 1
+              }
+            ],
+            "rechts": [
+              {
+                "art": "text",
+                "text": "Wörter aus Liste 2",
+                "klein": true
+              },
+              {
+                "art": "satzanfaenge",
+                "items": [
+                  "sikio",
+                  "chakula",
+                  "mvua",
+                  "paka",
+                  "viatu",
+                  "mkate",
+                  "nyota",
+                  "mti",
+                  "jiwe",
+                  "barabara"
+                ],
+                "linien": 1
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein Fazit nach einer Woche: …"
+            ],
+            "linien": 1
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen vergleichen Wiederlesen und Selbsttest in einem echten Experiment, werten es als Klasse mit einer Strichliste aus, prüfen das Ergebnis nach einer Woche und wählen ein Selbsttest-Werkzeug für ein Fach.",
+          "ablauf": [
+            "Einheit 7, Schritte 3 und 4: Gruppe und Vorhersage ankreuzen (Aufgaben 1 und 2), dann mit den Wortlisten lernen; die Hefte bleiben dabei zu.",
+            "Schritt 7: Aufgabe 4 nach dem Lern-Doktor. Schritt 8: Aufgabe 3 in vier Minuten, mit den Listen prüfen; an die Tafel kommen nur Striche.",
+            "Einheit 8, Brücke: Aufgabe 5 ohne vorheriges Lernen, prüfen, Striche ergänzen, Fazit in einem Satz."
+          ],
+          "hintergrund": "Kurz nach dem Lernen ist Wiederlesen oft gleich gut oder besser; nach einer Woche wissen Personen, die sich selbst abgefragt haben, deutlich mehr – obwohl sich die Wiederlesenden sicherer fühlen (Roediger & Karpicke, 2006). Abrufen und verteiltes Lernen gelten als die wirksamsten verbreiteten Methoden (Dunlosky et al., 2013).",
+          "quellen": [
+            "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+            "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58."
+          ],
+          "achtung": "Einzelergebnisse nicht vorlesen oder vergleichen. Lese- und Schreibschwierigkeiten nicht vor der Klasse ansprechen; Wörter vorsprechen, Zeichnen erlauben.",
+          "material": "Wortlisten (Kopiervorlage), Umschlag, Timer, kleine Zettel, Schachtel"
+        }
+      },
+      "fr": {
+        "titel": "L’expérience d’apprentissage",
+        "untertitel": "Relire ou se tester – qu’est-ce qui reste ? Tu es à la fois cobaye et équipe de recherche.",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Ton groupe : coche comment tu apprends les deux listes.",
+            "hinweis": "Relire : lire encore et encore, sans rien cacher. Se tester : plier la colonne de droite vers l’arrière, se rappeler, déplier, vérifier."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 1,
+            "items": [
+              "Groupe A : liste 1 en relisant, liste 2 en me testant",
+              "Groupe B : liste 1 en me testant, liste 2 en relisant"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ta prédiction : avec quelle méthode sauras-tu le plus de mots ?"
+          },
+          {
+            "art": "einschaetzung",
+            "items": [
+              "tout à l’heure, au test de cette séance",
+              "dans une semaine, au test de rappel"
+            ],
+            "optionen": [
+              "relire",
+              "se tester",
+              "autant"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Test : écris le sens de chaque mot. Tu as le droit de deviner.",
+            "hinweis": "Tu as quatre minutes. Tu peux aussi dessiner ou écrire dans une autre langue."
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "text",
+                "text": "Mots de la liste 1",
+                "klein": true
+              },
+              {
+                "art": "satzanfaenge",
+                "items": [
+                  "wingu",
+                  "kiti",
+                  "kisu",
+                  "maziwa",
+                  "mbwa",
+                  "jicho",
+                  "kijiko",
+                  "mlango",
+                  "upepo",
+                  "ndizi"
+                ],
+                "linien": 1
+              }
+            ],
+            "rechts": [
+              {
+                "art": "text",
+                "text": "Mots de la liste 2",
+                "klein": true
+              },
+              {
+                "art": "satzanfaenge",
+                "items": [
+                  "paka",
+                  "mkate",
+                  "jiwe",
+                  "nyota",
+                  "sikio",
+                  "barabara",
+                  "mvua",
+                  "chakula",
+                  "viatu",
+                  "mti"
+                ],
+                "linien": 1
+              }
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Mes bonnes réponses",
+              "Liste 1 (à gauche)",
+              "Liste 2 (à droite)"
+            ],
+            "werte": [
+              [
+                "au test d’aujourd’hui",
+                "… sur 10",
+                "… sur 10"
+              ],
+              [
+                "au test de rappel",
+                "… sur 10",
+                "… sur 10"
+              ]
+            ],
+            "zeilen": 0
+          },
+          {
+            "art": "text",
+            "text": "Quelle liste as-tu apprise en te testant ? Regarde l’exercice 1. Sur le papier pour la boîte, un seul signe : S (plus en me testant), R (plus en relisant) ou =.",
+            "klein": true
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Les bâtons de la classe : recopie le comptage du tableau."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "La classe",
+              "Aujourd’hui",
+              "Test de rappel"
+            ],
+            "werte": [
+              [
+                "S – plus en se testant",
+                "",
+                ""
+              ],
+              [
+                "R – plus en relisant",
+                "",
+                ""
+              ],
+              [
+                "= – autant",
+                "",
+                ""
+              ]
+            ],
+            "zeilen": 0
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Trois règles pour retenir",
+            "punkte": [
+              "Cahier fermé : aller chercher dans sa mémoire plutôt que relire.",
+              "Répartir plutôt que bachoter : trois fois 15 minutes sur trois jours plutôt qu’une heure la veille.",
+              "Le portable dans une autre pièce – pas seulement en silencieux à côté."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ta façon de te tester : choisis une matière où quelque chose arrive bientôt."
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Matière",
+              "Comment je me teste – cahier fermé",
+              "Quand ? Trois courtes séances"
+            ],
+            "breiten": [
+              1,
+              2,
+              1.4
+            ],
+            "beispiel": [
+              "Allemand",
+              "Fiches : d’abord dire, puis retourner",
+              "lun., mer., ven., 15 min"
+            ],
+            "zeilen": 2
+          },
+          {
+            "art": "aufgabe",
+            "text": "Test de rappel dans une semaine : écris à nouveau le sens de chaque mot – sans avoir révisé.",
+            "hinweis": "Mêmes mots, autre ordre."
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "text",
+                "text": "Mots de la liste 1",
+                "klein": true
+              },
+              {
+                "art": "satzanfaenge",
+                "items": [
+                  "mlango",
+                  "upepo",
+                  "ndizi",
+                  "jicho",
+                  "kiti",
+                  "mbwa",
+                  "kisu",
+                  "wingu",
+                  "kijiko",
+                  "maziwa"
+                ],
+                "linien": 1
+              }
+            ],
+            "rechts": [
+              {
+                "art": "text",
+                "text": "Mots de la liste 2",
+                "klein": true
+              },
+              {
+                "art": "satzanfaenge",
+                "items": [
+                  "sikio",
+                  "chakula",
+                  "mvua",
+                  "paka",
+                  "viatu",
+                  "mkate",
+                  "nyota",
+                  "mti",
+                  "jiwe",
+                  "barabara"
+                ],
+                "linien": 1
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ma conclusion après une semaine : …"
+            ],
+            "linien": 1
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes comparent relire et se tester dans une vraie expérience, analysent le résultat en classe entière par un comptage en bâtons, le vérifient une semaine plus tard et choisissent une façon de se tester dans une matière.",
+          "ablauf": [
+            "Séance 7, étapes 3 et 4 : cocher groupe et prédiction (exercices 1 et 2), puis apprendre avec les listes ; les cahiers restent fermés.",
+            "Étape 7 : exercice 4 après le docteur des révisions. Étape 8 : exercice 3 en quatre minutes, vérifier avec les listes ; au tableau, seulement des bâtons.",
+            "Séance 8, lien : exercice 5 sans révision préalable, vérifier, compléter le comptage, une phrase de conclusion."
+          ],
+          "hintergrund": "Juste après l’apprentissage, relire est souvent aussi bon, voire meilleur ; une semaine plus tard, ceux qui se sont interrogés en savent nettement plus – alors que ceux qui ont relu se sentent plus sûrs d’eux (Roediger & Karpicke, 2006). Le rappel et l’apprentissage réparti comptent parmi les méthodes les plus efficaces (Dunlosky et al., 2013).",
+          "quellen": [
+            "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255.",
+            "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58."
+          ],
+          "achtung": "Ne pas lire ni comparer les résultats individuels. Ne pas évoquer les difficultés de lecture ou d’écriture devant la classe ; lire les mots à voix haute, permettre de dessiner.",
+          "material": "Listes de mots (modèle à photocopier), enveloppe, minuteur, petits papiers, boîte"
+        }
+      }
+    },
+    {
+      "id": "ff6-lern-karten",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "6 Min. und 20 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Lernen",
+        "Wortlisten",
+        "Swahili",
+        "Fallkarten",
+        "Förderfach"
+      ],
+      "bild": "icon:alphabet-latin",
+      "kurs": [
+        "ff6-e07",
+        "ff6-e08"
+      ],
+      "de": {
+        "titel": "Wortlisten und Lern-Doktor-Karten",
+        "untertitel": "Kopiervorlage – Seite 1 einseitig für jede Person, Seite 2 einmal für die Klasse",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So werden die Listen gebraucht",
+            "punkte": [
+              "Einseitig kopieren, je Person eine und zwei Reserve, zwischen Liste 1 und Liste 2 durchschneiden.",
+              "Selbsttest: die rechte Spalte nach hinten falten. Wiederlesen: nichts falten, nichts abdecken.",
+              "Nach dem Lernen kommen alle Listen in einen Umschlag – für den Test und den Nachtest."
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "text",
+                "text": "Liste 1"
+              },
+              {
+                "art": "tabelle",
+                "spalten": [
+                  "Swahili",
+                  "Deutsch"
+                ],
+                "werte": [
+                  [
+                    "kisu",
+                    "Messer"
+                  ],
+                  [
+                    "mlango",
+                    "Tür"
+                  ],
+                  [
+                    "jicho",
+                    "Auge"
+                  ],
+                  [
+                    "ndizi",
+                    "Banane"
+                  ],
+                  [
+                    "wingu",
+                    "Wolke"
+                  ],
+                  [
+                    "kiti",
+                    "Stuhl"
+                  ],
+                  [
+                    "maziwa",
+                    "Milch"
+                  ],
+                  [
+                    "upepo",
+                    "Wind"
+                  ],
+                  [
+                    "mbwa",
+                    "Hund"
+                  ],
+                  [
+                    "kijiko",
+                    "Löffel"
+                  ]
+                ],
+                "zeilen": 0
+              }
+            ],
+            "rechts": [
+              {
+                "art": "text",
+                "text": "Liste 2"
+              },
+              {
+                "art": "tabelle",
+                "spalten": [
+                  "Swahili",
+                  "Deutsch"
+                ],
+                "werte": [
+                  [
+                    "viatu",
+                    "Schuhe"
+                  ],
+                  [
+                    "mkate",
+                    "Brot"
+                  ],
+                  [
+                    "sikio",
+                    "Ohr"
+                  ],
+                  [
+                    "nyota",
+                    "Stern"
+                  ],
+                  [
+                    "mvua",
+                    "Regen"
+                  ],
+                  [
+                    "mti",
+                    "Baum"
+                  ],
+                  [
+                    "chakula",
+                    "Essen"
+                  ],
+                  [
+                    "jiwe",
+                    "Stein"
+                  ],
+                  [
+                    "paka",
+                    "Katze"
+                  ],
+                  [
+                    "barabara",
+                    "Straße"
+                  ]
+                ],
+                "zeilen": 0
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Lern-Doktor",
+            "text": "Eine Karte je Tischgruppe, Fall 6 ist Reserve. Auf die Rückseite kommt das Rezept: Statt … lieber … – mit einem Selbsttest, der zu diesem Fach passt."
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 150,
+            "karten": [
+              {
+                "titel": "Fall 1 · Der Mathe-Test",
+                "text": "Diogo liest am Abend vor dem Mathe-Test eine Stunde lang seine Lösungen durch und denkt: Ach so, klar. Im Test sitzt er vor der ersten Aufgabe und weiß nicht, wie er anfangen soll."
+              },
+              {
+                "titel": "Fall 2 · Das Handy",
+                "text": "Inês lernt Französisch-Vokabeln mit dem Handy neben dem Heft. Alle paar Minuten leuchtet der Bildschirm auf. Nach einer Stunde kann sie zwölf von vierzig Wörtern."
+              },
+              {
+                "titel": "Fall 3 · Alles gelb",
+                "text": "Mathis markiert im Geschichtsbuch fast die ganze Seite gelb. Danach sieht die Seite fertig aus. Als seine Schwester fragt, worum es geht, weiß er es nicht."
+              },
+              {
+                "titel": "Fall 4 · Sonntag am Stück",
+                "text": "Aylin lernt für den Bio-Test nur am Sonntag, drei Stunden am Stück. Ab der zweiten Stunde liest sie dieselbe Seite zum vierten Mal."
+              },
+              {
+                "titel": "Fall 5 · Fünfmal abgeschrieben",
+                "text": "Rafael schreibt jede Vokabel fünfmal ab, ohne sie je zuzudecken. Danach ist er müde und stolz. Am Testtag fehlt ihm die Hälfte."
+              },
+              {
+                "titel": "Fall 6 · Das Wohnzimmer",
+                "text": "Zoé lernt im Wohnzimmer, der Fernseher läuft, ihre Geschwister spielen. Ein eigenes Zimmer hat sie nicht. Nach zwanzig Minuten gibt sie auf."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Zwei gleich schwere Listen mit je zehn Wortpaaren Swahili–Deutsch für das Lern-Experiment und sechs erfundene Fälle für den Lern-Doktor.",
+          "ablauf": [
+            "Seite 1 einseitig für jede Person kopieren und zwischen den Listen durchschneiden; nicht vorher austeilen.",
+            "Einheit 7, Schritt 4: Liste 1 drei Minuten, einsammeln, dann Liste 2; alles in einen Umschlag. Schritt 8 und Nachtest: zum Prüfen kurz austeilen, wieder einsammeln.",
+            "Seite 2 einmal kopieren und schneiden: eine Fallkarte je Tischgruppe (Schritt 7)."
+          ],
+          "hintergrund": "Swahili wurde gewählt, weil in der Klasse kaum jemand Vorwissen mitbringt; die Wörter ähneln weder dem Deutschen noch dem Französischen, Portugiesischen oder Englischen. Weil jede Person beide Methoden nutzt und die Gruppen die Listen tauschen, gleichen sich Unterschiede zwischen den Listen aus – wie bei Roediger und Karpicke (2006).",
+          "quellen": [
+            "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255."
+          ],
+          "material": "Schere, großer Umschlag"
+        }
+      },
+      "fr": {
+        "titel": "Listes de mots et cartes du docteur",
+        "untertitel": "Modèle à photocopier – page 1 en recto pour chaque jeune, page 2 une fois pour la classe",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Comment utiliser les listes",
+            "punkte": [
+              "Photocopier en recto, une par jeune et deux de réserve, couper entre la liste 1 et la liste 2.",
+              "Se tester : plier la colonne de droite vers l’arrière. Relire : ne rien plier, ne rien cacher.",
+              "Après l’apprentissage, toutes les listes vont dans une enveloppe – pour le test et le test de rappel."
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "text",
+                "text": "Liste 1"
+              },
+              {
+                "art": "tabelle",
+                "spalten": [
+                  "Swahili",
+                  "Français"
+                ],
+                "werte": [
+                  [
+                    "kisu",
+                    "couteau"
+                  ],
+                  [
+                    "mlango",
+                    "porte"
+                  ],
+                  [
+                    "jicho",
+                    "œil"
+                  ],
+                  [
+                    "ndizi",
+                    "banane"
+                  ],
+                  [
+                    "wingu",
+                    "nuage"
+                  ],
+                  [
+                    "kiti",
+                    "chaise"
+                  ],
+                  [
+                    "maziwa",
+                    "lait"
+                  ],
+                  [
+                    "upepo",
+                    "vent"
+                  ],
+                  [
+                    "mbwa",
+                    "chien"
+                  ],
+                  [
+                    "kijiko",
+                    "cuillère"
+                  ]
+                ],
+                "zeilen": 0
+              }
+            ],
+            "rechts": [
+              {
+                "art": "text",
+                "text": "Liste 2"
+              },
+              {
+                "art": "tabelle",
+                "spalten": [
+                  "Swahili",
+                  "Français"
+                ],
+                "werte": [
+                  [
+                    "viatu",
+                    "chaussures"
+                  ],
+                  [
+                    "mkate",
+                    "pain"
+                  ],
+                  [
+                    "sikio",
+                    "oreille"
+                  ],
+                  [
+                    "nyota",
+                    "étoile"
+                  ],
+                  [
+                    "mvua",
+                    "pluie"
+                  ],
+                  [
+                    "mti",
+                    "arbre"
+                  ],
+                  [
+                    "chakula",
+                    "nourriture"
+                  ],
+                  [
+                    "jiwe",
+                    "pierre"
+                  ],
+                  [
+                    "paka",
+                    "chat"
+                  ],
+                  [
+                    "barabara",
+                    "route"
+                  ]
+                ],
+                "zeilen": 0
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Docteur des révisions",
+            "text": "Une carte par îlot, le cas 6 est une réserve. Au dos, l’ordonnance : Au lieu de …, plutôt … – avec une façon de se tester adaptée à cette matière."
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 150,
+            "karten": [
+              {
+                "titel": "Cas 1 · Le devoir de maths",
+                "text": "La veille du devoir de maths, Diogo relit ses solutions pendant une heure et se dit : ah oui, c’est clair. Au devoir, il est devant le premier exercice et ne sait pas par où commencer."
+              },
+              {
+                "titel": "Cas 2 · Le portable",
+                "text": "Inês apprend son vocabulaire d’allemand avec le portable à côté du cahier. Toutes les deux minutes, l’écran s’allume. Au bout d’une heure, elle connaît douze mots sur quarante."
+              },
+              {
+                "titel": "Cas 3 · Tout en jaune",
+                "text": "Mathis surligne en jaune presque toute la page de son livre d’histoire. Ensuite, la page a l’air finie. Quand sa sœur lui demande de quoi ça parle, il ne sait pas."
+              },
+              {
+                "titel": "Cas 4 · Tout le dimanche",
+                "text": "Aylin révise son devoir de bio seulement le dimanche, trois heures d’affilée. À partir de la deuxième heure, elle lit la même page pour la quatrième fois."
+              },
+              {
+                "titel": "Cas 5 · Cinq fois recopié",
+                "text": "Rafael recopie chaque mot de vocabulaire cinq fois, sans jamais le cacher. Après, il est fatigué et fier. Le jour du devoir, la moitié lui manque."
+              },
+              {
+                "titel": "Cas 6 · Le salon",
+                "text": "Zoé révise au salon, la télé est allumée, ses frères et sœurs jouent. Elle n’a pas de chambre à elle. Au bout de vingt minutes, elle abandonne."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Deux listes de même difficulté, de dix paires de mots swahili–français chacune, pour l’expérience d’apprentissage, et six cas inventés pour le docteur des révisions.",
+          "ablauf": [
+            "Photocopier la page 1 en recto pour chaque jeune et couper entre les listes ; ne pas distribuer à l’avance.",
+            "Séance 7, étape 4 : liste 1 pendant trois minutes, ramasser, puis liste 2 ; tout dans une enveloppe. Étape 8 et test de rappel : distribuer brièvement pour vérifier, puis ramasser.",
+            "Photocopier et découper une fois la page 2 : une carte cas par îlot (étape 7)."
+          ],
+          "hintergrund": "Le swahili a été choisi parce que presque personne en classe ne le connaît ; les mots ne ressemblent ni à l’allemand, ni au français, ni au portugais, ni à l’anglais. Comme chacun utilise les deux méthodes et que les groupes échangent les listes, les différences entre les listes s’équilibrent – comme chez Roediger et Karpicke (2006).",
+          "quellen": [
+            "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249–255."
+          ],
+          "material": "Ciseaux, grande enveloppe"
+        }
+      }
+    }
+  ]
+}

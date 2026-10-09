@@ -1,0 +1,1091 @@
+{
+  "einheiten": [
+    {
+      "id": "ff6-e04",
+      "klasse": "6e",
+      "dauer": 100,
+      "blaetter": [
+        "ff6-mein-koerper-und-ich"
+      ],
+      "vorlagen": [
+        "ff6-koerper-karten"
+      ],
+      "woerter": [
+        {
+          "de": "der Filter",
+          "fr": "le filtre"
+        },
+        {
+          "de": "bearbeiten",
+          "fr": "retoucher"
+        },
+        {
+          "de": "vergleichen",
+          "fr": "comparer"
+        },
+        {
+          "de": "der Spruch",
+          "fr": "la remarque"
+        },
+        {
+          "de": "die Rückendeckung",
+          "fr": "le soutien"
+        },
+        {
+          "de": "respektvoll",
+          "fr": "respectueux, respectueuse"
+        }
+      ],
+      "de": {
+        "titel": "Mein Körper und ich",
+        "kurz": "Perfekte Bilder sind gemacht: Die Klasse baut selbst ein Werbefoto, übt Antworten auf Sprüche über Körper und spürt, was der eigene Körper jeden Tag leistet.",
+        "ziele": [
+          "erklären an einem selbst gebauten Werbefoto, wie Ausschnitt, Licht, Auswahl und Bearbeitung ein Bild verändern",
+          "prüfen harte Gedanken erfundener Figuren mit der Freundesfrage",
+          "üben in Szenen vier Wege, auf Sprüche über Körper zu reagieren",
+          "bemerken im Skill, was ihr Körper im Alltag leistet"
+        ],
+        "material": [
+          "Plakate Gefühlsrad und Skala, Punkte",
+          "Schülerheft, Stempel",
+          "5 Rahmen: A4-Karton mit A5-Fenster",
+          "Trick- und Szenenkarten (Vorlage)",
+          "Plakat „Regeln für heute“",
+          "Schild „Spruch“ (A4)"
+        ],
+        "vorbereitung": [
+          "Rahmen schneiden (festes A4-Blatt, Fenster in A5-Größe), Trick- und Szenenkarten ausschneiden.",
+          "Die Szenenkarte, die einer Lage in der Klasse ähnelt, durch die Reserve ersetzen.",
+          "Mit dem SePAS klären, wie die Schule bei Hinweisen auf Essstörungen vorgeht.",
+          "Regel-Plakat schreiben (Schritt 2), einen ruhigen Platz in Sichtweite festlegen.",
+          "Heute keine Bemerkungen über Körper, Gewicht oder Essen – auch keine lobenden."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Punkt, Zahl und inneres Wetter"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick, Mission und Regeln für heute"
+          },
+          {
+            "min": "15–30",
+            "phase": "input",
+            "titel": "Das Rahmen-Experiment"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Vergleiche und die Freundesfrage"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Klatsch-Echo und Storch"
+          },
+          {
+            "min": "50–80",
+            "phase": "uebung",
+            "titel": "Über Körper reden: vier Wege in Szenen"
+          },
+          {
+            "min": "80–92",
+            "phase": "skill",
+            "titel": "Skill: Was mein Körper kann"
+          },
+          {
+            "min": "92–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Mission und wer zuhört"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Punkt, Zahl und inneres Wetter",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad (3 Min.). Auf drei zeigen alle ihre Anspannung mit den Fingern; die Lehrkraft beginnt (1 Min.). Dazu das innere Wetter in einem Wort – Sonne, Wolken, Regen, Gewitter, Nebel –, zwei, drei Freiwillige, ohne Erklärung (2 Min.). Dann eine Frage, die schon zum Thema führt, aber niemanden persönlich betrifft: Welche Werbung geht euch nicht mehr aus dem Kopf – ein Spruch, eine Melodie, ein Plakat? Drei, vier Stimmen; die Lehrkraft schreibt Stichworte an die Tafel (3 Min.). Zum Schluss ein Satz als Überleitung: Ihr wisst, dass es Werbung ist – und trotzdem wirkt sie (1 Min.).",
+            "sagen": [
+              "Punkt aufs Rad, Zahl mit den Fingern – und euer inneres Wetter in einem Wort. Bei mir: Wolken mit Sonnenlücken.",
+              "Welche Werbung geht euch nicht mehr aus dem Kopf? Ihr wisst, dass es Werbung ist. Und trotzdem sitzt sie da drin."
+            ],
+            "tipp": "Heute keine Frage zu Aussehen, Kleidung oder Körper, auch keine harmlose: Niemand soll schon am Anfang etwas über sich sagen müssen. Auch Komplimente über Frisuren oder Kleidung lässt die Lehrkraft heute weg. Wettersymbole an die Tafel zeichnen – Sonne, Wolke, Regen, Blitz, Nebel –, dann geht es auch ohne Worte.",
+            "wennEsKippt": "Singt die halbe Klasse einen Werbesong, mitlachen, dann das Ruhezeichen. Kommt ein Spruch über das Aussehen von jemandem, sofort freundlich stoppen: Heute redet hier niemand über die Körper von Menschen im Raum – gleich steht das auf dem Plakat."
+          },
+          {
+            "titel": "Rückblick, Mission und Regeln für heute",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Nach der Wochen-Mission fragen: Hat jemand einer Person gesagt, was er an ihr schätzt – und kam ein Danke ohne Aber zurück? Daumen hoch, Mitte, runter; eine Stimme erzählt, ohne Namen (2 Min.). Dann an den Eisberg erinnern: Aussehen stand oben, bei dem, was alle sehen und bewerten. Das Thema nennen, das Plakat mit den Regeln für heute aufhängen, Punkt für Punkt vorlesen und den ruhigen Platz zeigen (3 Min.).",
+            "sagen": [
+              "Daumen hoch, Mitte oder runter: Habt ihr jemandem gesagt, was ihr an der Person schätzt? Kam ein Danke ohne Aber zurück?",
+              "Aussehen stand letzte Woche ganz oben auf dem Eisberg. Heute schauen wir, warum es so viel Macht hat – und was ein Körper eigentlich alles kann.",
+              "Wir reden über Bilder, Figuren und Beispiele. Über eure Körper redet hier niemand – auch nicht nett."
+            ],
+            "punkte": [
+              "Wir reden über Bilder, Figuren und Beispiele – nicht über die Körper von Menschen hier im Raum.",
+              "Keine Zahlen zu Gewicht oder Größe, keine Diät- oder Fitnesstipps.",
+              "Abwertende Wörter über Körper sagen wir nicht – auch nicht als Zitat.",
+              "Keine Kommentare über Aussehen, auch nicht nett gemeinte.",
+              "„Weiter“ ist immer erlaubt, kurz an den ruhigen Platz gehen auch."
+            ],
+            "tipp": "Das Plakat bleibt die ganze Stunde hängen; bei einem Regelverstoß reicht meist ein Fingerzeig darauf."
+          },
+          {
+            "titel": "Das Rahmen-Experiment",
+            "dauer": 15,
+            "phase": "input",
+            "text": "Jede Tischgruppe bekommt einen Rahmen und eine Trickkarte. Das Model ist ein Gegenstand vom eigenen Tisch – Federmäppchen, Trinkflasche, Rucksack, gern einer mit Kratzern –, nie ein Mensch. Auftrag (4 Min.): Macht aus dem Gegenstand das perfekte Werbefoto, nur mit dem Trick auf eurer Karte; der Rahmen ist die Kamera. Dann zeigt jede Gruppe ihr Bild durch den Rahmen (je 1 Min.): Die Klasse sagt, was sie sieht, dann nimmt die Gruppe den Rahmen weg und zeigt, was das Bild versteckt hat. Zum Schluss an der Tafel die Bild-Fabrik ergänzen (6 Min.): Was ein Rahmen nicht kann, beschreibt die Lehrkraft – Filter und Bearbeitung glätten Haut, machen Beine länger oder die Taille schmaler, manche schon beim Fotografieren –, und die Klasse fragt, wer an solchen Bildern verdient.",
+            "sagen": [
+              "Euer Model ist ein Federmäppchen. Macht es zum Star – aber nur mit dem Trick auf eurer Karte.",
+              "Was seht ihr durch den Rahmen? Und jetzt ohne Rahmen: Was hat das Bild verschwiegen?",
+              "Ihr wisst alle, dass Bilder bearbeitet sind. Warum wirken sie trotzdem? Und wer verdient daran, dass ihr euch danach ein bisschen schlechter fühlt?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Trick",
+                "Was das Bild nicht zeigt"
+              ],
+              "zeilen": [
+                [
+                  "Ausschnitt",
+                  "alles außerhalb des Rahmens: Kratzer, Unordnung, den Rest des Tages"
+                ],
+                [
+                  "Licht und Winkel",
+                  "wie es bei normalem Licht und von vorn aussieht"
+                ],
+                [
+                  "Viele Versuche",
+                  "die vielen Bilder, die gelöscht wurden"
+                ],
+                [
+                  "Pose und Kulisse",
+                  "dass Haltung und Hintergrund geplant waren"
+                ],
+                [
+                  "Filter und Bearbeitung",
+                  "glattere Haut, längere Beine, schmalere Taille – oft schon in der Kamera-App"
+                ],
+                [
+                  "Werbung",
+                  "dass jemand dafür bezahlt, dass du etwas kaufst"
+                ]
+              ]
+            },
+            "tipp": "Gegenstände statt Menschen: So sieht die Klasse jeden Trick, ohne dass ein Körper bewertet wird. Fotos von Menschen zeigt die Lehrkraft heute nicht, auch keine aus der Werbung – die Bearbeitung wird beschrieben. Eine Minute vor Ende des Auftrags ansagen: Jetzt entscheiden, welches Bild ihr zeigt.",
+            "wennEsKippt": "Hält jemand den Rahmen vor ein Gesicht und ruft „Model!“, sofort anhalten: Heute sind nur Gegenstände Models – der Rahmen geht an eine andere Person der Gruppe. Werden Handys gezückt, um die Tricks „richtig“ zu zeigen: Handys bleiben heute in der Tasche. Bleibt eine Gruppe ratlos, den ersten Versuch vormachen: den Rahmen so halten, dass nur die neue Ecke des Mäppchens zu sehen ist.",
+            "blatt": "ff6-koerper-karten"
+          },
+          {
+            "titel": "Vergleiche und die Freundesfrage",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Das Blatt aufschlagen und den Kasten „Was ein Bild nicht zeigt“ gemeinsam lesen (2 Min.). Aufgabe 1 füllt jede Person still für sich aus: Wie oft vergleiche ich mich, wie geht es mir nach dem Scrollen? Nicht vorlesen, nicht einsammeln (3 Min.). Dann die Freundesfrage an der Tafel üben, mit der Beispielfigur auf dem Blatt: Aylin löscht jedes Foto von sich, weil sie sich auf keinem gefällt. Was würdet ihr einer Freundin sagen, die so denkt? Die Klasse sammelt; die Lehrkraft streicht, was nur jubelt („Du bist doch wunderschön“), und lässt stehen, was stimmt und freundlich ist (4 Min.). Zu zweit lösen alle Aufgabe 2 für Rafael und Nora (4 Min.). Zwei Paare lesen einen Satz vor (2 Min.).",
+            "sagen": [
+              "Würdet ihr einer Freundin, die jedes Foto löscht, sagen: Stimmt, lösch lieber alles? Was würdet ihr stattdessen sagen?",
+              "Der faire Satz muss nicht jubeln. Er muss stimmen – und so klingen, wie ihr mit einem Freund redet."
+            ],
+            "tipp": "Jungen vergleichen sich genauso, oft mit Muskeln oder Größe statt mit Haut oder Figur, und reden seltener darüber – deshalb steht Rafael auf dem Blatt. Wer mit dem Partner nicht über Körper reden mag, arbeitet allein und liest nicht vor.",
+            "wennEsKippt": "Macht sich jemand über die Gedanken lustig („Nur Mädchen denken so“), sachlich antworten: Rafael auf dem Blatt ist ein Junge – solche Gedanken kennen alle. Schreibt jemand nichts und starrt auf das Blatt, nicht drängen: Aufgabe 1 reicht heute. Fallen beim Sammeln abwertende Wörter, sie nicht an die Tafel schreiben und nicht wiederholen, sondern nachfragen: Was meinst du genau? Kommen Trainings- oder Diättipps („Dann soll er halt pumpen gehen“), freundlich stoppen: Heute keine Tipps zu Training oder Essen – gefragt ist, was ein Freund sagt, der Rafael mag, wie er ist.",
+            "blatt": "ff6-mein-koerper-und-ich"
+          },
+          {
+            "titel": "Bewegungspause: Klatsch-Echo und Storch",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen hinter ihrem Stuhl. Klatsch-Echo: Die Lehrkraft klatscht einen kurzen Rhythmus, alle klatschen ihn nach – vier Runden, jede etwas schwerer. Storch: 15 Sekunden auf einem Bein stehen, dann auf dem anderen; wer wackelt, hält sich an der Stuhllehne. Zum Schluss 20 Sekunden in Zeitlupe auf der Stelle laufen, strecken bis zur Decke, ausschütteln. Danach kurz fragen: Was hat euer Körper gerade alles gemacht, ohne dass ihr nachdenken musstet? Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Jede Person macht, was ihr Körper heute kann – alles geht auch im Sitzen."
+            ],
+            "tipp": "Hören, sich einen Rhythmus merken, das Gleichgewicht halten, das Herz schneller schlagen lassen: Die Antworten auf die letzte Frage sind der erste Baustein für den Skill am Ende der Stunde. Nichts davon wird bewertet, auch nicht, wer am längsten auf einem Bein steht.",
+            "wennEsKippt": "Wird der Storch zum Wettbewerb oder wird geschubst, abbrechen und mit dem Klatsch-Echo weitermachen. Wer nicht aufstehen kann oder mag, macht das Klatsch-Echo im Sitzen."
+          },
+          {
+            "titel": "Über Körper reden: vier Wege in Szenen",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Die vier Wege an die Tafel schreiben und zu jedem einen Satz vormachen (5 Min.). Die Regel für die Szenen erklären: Der Spruch wird nie gespielt und nie zitiert – die Lehrkraft hält im richtigen Moment das Schild „Spruch“ hoch, gespielt wird, was danach passiert. Jede Tischgruppe zieht eine Szenenkarte und bereitet sich vor (5 Min.): Wer spielt die Person, die den Spruch abbekommt, wer die anderen, wer reagiert – und mit welchem Weg? Dann spielen die Gruppen nacheinander vorn, je höchstens eine Minute (15 Min.). Nach jeder Szene zeigen alle mit den Fingern, welcher Weg es war (1 bis 4), und eine Stimme sagt, was noch funktioniert hätte. Zum Schluss alle aus der Rolle holen – Hände ausschütteln, den eigenen Namen sagen – und Aufgabe 3 auf dem Blatt allein: die eigenen Sätze (5 Min.).",
+            "sagen": [
+              "Den Spruch spielen wir nicht. Ich halte das Schild hoch – und ihr zeigt, was danach passiert.",
+              "Ihr müsst nicht die Heldin sein. Manchmal reicht eine private Nachricht: Das war daneben – alles okay bei dir?",
+              "Welcher Weg war das – zeigt es mit den Fingern? Und was hätte noch funktioniert?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Weg",
+                "So kann es klingen"
+              ],
+              "zeilen": [
+                [
+                  "1 · Grenze setzen",
+                  "„Über meinen Körper redest du nicht.“ Kurz, ruhig, ohne Lächeln."
+                ],
+                [
+                  "2 · Nicht mitmachen",
+                  "Nicht mitlachen, nichts dazusagen, das Thema wechseln oder gehen."
+                ],
+                [
+                  "3 · Rückendeckung geben",
+                  "„Hör auf, das ist nicht witzig.“ Oder später privat: „Alles okay?“"
+                ],
+                [
+                  "4 · Nach dem Gefühl fragen",
+                  "Statt „Stimmt doch gar nicht“: „Klingt nach einem miesen Tag. Was ist los?“"
+                ]
+              ]
+            },
+            "tipp": "Mit den Karten beginnen, in denen es um andere geht – Umkleide, Klassenchat, Punkte vergeben: Dann muss niemand für sich selbst antworten. Die Person, die den Spruch abbekommt, darf stumm bleiben; gespielt wird vor allem, was die anderen tun. Wer nicht spielen will, führt Regie. Die Rollen wählt jede Person selbst; niemand wird in die Rolle dessen gedrängt, der den Spruch abbekommt.",
+            "wennEsKippt": "Wird der Spruch doch ausgesprochen oder gegen jemanden im Raum gewendet, sofort „Stopp“ und die Szene abbrechen; die Gruppe spielt sie noch einmal, mit dem Schild. Lacht das Publikum über eine Figur, fragen, welcher der vier Wege jetzt dran wäre. Erzählt jemand, dass ihm so etwas selbst passiert, würdigen, nicht vertiefen und ein Gespräch nach der Stunde anbieten; bei Hinweisen auf Mobbing noch am selben Tag Régent und SePAS informieren.",
+            "blatt": "ff6-koerper-karten"
+          },
+          {
+            "titel": "Skill: Was mein Körper kann",
+            "dauer": 12,
+            "phase": "skill",
+            "text": "Alle sitzen bequem, beide Füße am Boden, Augen offen auf einen Punkt am Tisch oder geschlossen – beides gilt. Die Lehrkraft leitet langsam an und macht mit; bei jedem Körperteil geht es nicht ums Aussehen, sondern darum, was er heute schon getan hat (5 Min.). Danach zwei, drei Stimmen: Was war ungewohnt (2 Min.)? Dann schreibt jede Person Aufgabe 4 auf dem Blatt – Stichworte reichen, nichts wird vorgelesen (4 Min.). Zum Schluss die Kurzform für unterwegs an die Tafel: Füße spüren, Hände öffnen, Atem bemerken (1 Min.).",
+            "sagen": [
+              "Ihr müsst euren Körper nicht toll finden. Es reicht, ihn für einen Moment zu bemerken.",
+              "Eure Füße haben euch heute schon ein paar tausend Schritte getragen. Spürt sie einen Moment."
+            ],
+            "punkte": [
+              "Füße: Sie haben dich heute zum Bus, durch die Schule und hierher getragen. Drück sie kurz in den Boden.",
+              "Beine und Rücken: Sie halten dich aufrecht, ohne dass du daran denkst.",
+              "Hände: Sie haben heute geschrieben, getragen, getippt, gewunken. Öffne sie auf den Oberschenkeln.",
+              "Atem: Er kommt und geht ganz von selbst, auch jetzt. Bemerk drei Atemzüge.",
+              "Gesicht: Es hat heute schon gelacht, gegähnt, gesprochen – vielleicht in zwei Sprachen."
+            ],
+            "tipp": "„Du musst deinen Körper nicht lieben“ entlastet viele mehr als jede Aufforderung, sich schön zu finden; ihn neutral wahrzunehmen, ist ein realistisches Ziel. Wer einen Körperteil nicht bewegen kann oder nicht spüren mag, überspringt ihn. Die Skill-Karte hinten im Heft fasst die Kurzform zusammen.",
+            "wennEsKippt": "Wird jemand unruhig oder wirkt bedrückt, darf er die Augen öffnen, sich strecken oder an den ruhigen Platz gehen; danach unauffällig nachfragen, nicht vor der Klasse. Wird gekichert, ruhig weitersprechen und die Stationen kürzer machen.",
+            "blatt": "ff6-mein-koerper-und-ich"
+          },
+          {
+            "titel": "Skills-Pass, Mission und wer zuhört",
+            "dauer": 8,
+            "phase": "abschluss",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Welcher Satz über Körper – über meinen oder den von anderen – soll bleiben? Jede Person schreibt ihren Satz, Stempel beim Herumgehen (3 Min.). Dann auf den Hilfe-Kasten am Ende des Blatts zeigen: Wenn Gedanken über Aussehen, Essen oder Gewicht viel Raum einnehmen oder jemand wegen seines Körpers fertiggemacht wird, gibt es Menschen, die zuhören – den SePAS, die Lehrkraft, das Kanner- a Jugendtelefon (2 Min.). Die Wochen-Mission im Heft zeigen und in einem Satz ansagen, dann der Ausblick; die Lehrkraft sagt, dass sie nach der Stunde noch ein paar Minuten da ist (3 Min.).",
+            "sagen": [
+              "Ein Satz für den Skills-Pass: Welcher Satz über Körper soll bleiben – über euren oder den von anderen?",
+              "Eure Mission: Sucht euch diese Woche ein Werbeplakat und findet drei Tricks. Ohne Handy – an Bushaltestellen hängen genug.",
+              "Ich bin nach der Stunde noch ein paar Minuten hier, falls jemand etwas loswerden möchte."
+            ],
+            "tipp": "Nach der Stunde kurz notieren, wem es heute schwer zu gehen schien, und das mit dem SePAS besprechen – nicht deuten, nur beobachten.",
+            "blatt": "ff6-mein-koerper-und-ich"
+          }
+        ],
+        "bruecke": "Nächste Woche geht es um die Stimme im Kopf, die oft am härtesten urteilt – eure eigene – und darum, wie man mit sich redet wie mit einem guten Freund.",
+        "mission": "Such dir ein Werbeplakat und finde drei Tricks – Ausschnitt, Licht, Pose oder Bearbeitung.",
+        "hintergrund": "Im Jugendalter hängt das allgemeine Selbstwertgefühl enger mit dem wahrgenommenen Aussehen zusammen als mit jedem anderen Bereich (Harter, 2012). Soziale Medien liefern dafür ständig Vergleichsbilder: In einem Experiment verschlechterte schon ein kurzer Aufenthalt auf Facebook die Stimmung junger Frauen, und wer sich häufig verglich, war danach unzufriedener mit Gesicht, Haaren und Haut (Fardouly et al., 2015). Die Stunde setzt an drei Stellen an: verstehen, wie Bilder gemacht werden; harte Gedanken mit der Freundesfrage prüfen; den Blick auf das lenken, was der Körper kann – kurze Schreibübungen dazu steigerten die Wertschätzung des eigenen Körpers (Alleva et al., 2015).",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
+          "Alleva, J. M., Martijn, C., Van Breukelen, G. J. P., Jansen, A. & Karos, K. (2015). Expand Your Horizon: A programme that improves body image and reduces self-objectification by training women to focus on body functionality. Body Image, 15, 81–89."
+        ],
+        "achtung": "Körperbild berührt Essstörungen, Mobbing und Scham. Über niemandes Körper wird gesprochen; Zahlen zu Gewicht oder Größe, Diät- und Fitnesstipps fallen nicht, abwertende Wörter werden nicht wiederholt – auch nicht von der Lehrkraft. Warnzeichen wie auffälliger Gewichtsverlust, ausgelassene Mahlzeiten, sehr strenge Essensregeln oder ständige Abwertung des eigenen Körpers nie vor der Klasse ansprechen: nach der Stunde ruhig mit einer eigenen Beobachtung, ohne Diagnose, nichts versprechen, noch am selben Tag den SePAS informieren. Bei Hinweisen auf Selbstverletzung oder akute Gefahr nach dem Schutzkonzept handeln, 112.",
+        "differenzierung": {
+          "leichter": "Im Rahmen-Experiment reicht es, den Trick zu zeigen; erklären darf eine andere Person der Gruppe. Wer die Sprache noch lernt, spielt in den Szenen Weg 2 ohne Worte: nicht mitlachen, weggehen. Aufgabe 2 mündlich zu zweit, das Tandem schreibt Stichworte; für die eigenen Sätze genügt einer von der Tafel.",
+          "schwerer": "Eine siebte Trickkarte erfinden. In den Szenen Regie führen und nach jeder Szene fragen, welcher Weg für die Person mit dem Spruch am leichtesten wäre. Für Rafael einen Satz schreiben, der stimmt und ihm trotzdem Mut macht."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in (5 Min.), Regeln für heute (3 Min.), das Rahmen-Experiment mit drei Gruppen und der Bild-Fabrik an der Tafel (12 Min.), vier Wege und drei Szenen (17 Min.), Was mein Körper kann (8 Min.), Skills-Pass und Mission (5 Min.). Die Freundesfrage auf dem Blatt wird in der nächsten Stunde zum Einstieg, denn sie passt zum inneren Kritiker."
+      },
+      "fr": {
+        "titel": "Mon corps et moi",
+        "kurz": "Les images parfaites sont fabriquées : la classe crée une photo publicitaire, s’entraîne à répondre aux remarques sur le corps et sent ce que son corps fait chaque jour.",
+        "ziele": [
+          "expliquent, avec leur propre photo publicitaire, comment cadrage, lumière, sélection et retouche changent une image",
+          "vérifient des pensées dures de personnages inventés avec la question de l’ami",
+          "s’entraînent en scènes à quatre façons de réagir aux remarques sur le corps",
+          "remarquent ce que leur corps accomplit au quotidien"
+        ],
+        "material": [
+          "Affiches roue et échelle, gommettes",
+          "Cahier de l’élève, tampon",
+          "5 cadres : carton A4, fenêtre A5",
+          "Cartes astuces et scènes (modèle)",
+          "Affiche « Règles du jour »",
+          "Panneau « Remarque » (A4)"
+        ],
+        "vorbereitung": [
+          "Découper les cadres (A4 épais, fenêtre A5) ainsi que les cartes astuces et scènes.",
+          "Remplacer par la réserve la carte scène qui ressemble à une situation de la classe.",
+          "Clarifier avec le SePAS la marche à suivre en cas de signes de troubles alimentaires.",
+          "Écrire l’affiche des règles (étape 2), prévoir un coin calme visible.",
+          "Aujourd’hui, aucune remarque sur le corps, le poids ou la nourriture – même flatteuse."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : gommette, chiffre, météo intérieure"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour, mission et règles du jour"
+          },
+          {
+            "min": "15–30",
+            "phase": "input",
+            "titel": "L’expérience du cadre"
+          },
+          {
+            "min": "30–45",
+            "phase": "uebung",
+            "titel": "Comparaisons et la question de l’ami"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : écho de claquements et cigogne"
+          },
+          {
+            "min": "50–80",
+            "phase": "uebung",
+            "titel": "Parler du corps : quatre façons en scènes"
+          },
+          {
+            "min": "80–92",
+            "phase": "skill",
+            "titel": "Skill : ce que mon corps sait faire"
+          },
+          {
+            "min": "92–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, mission et qui écoute"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : gommette, chiffre, météo intérieure",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions (3 min). À trois, tout le monde montre sa tension avec les doigts ; l’enseignant·e commence (1 min). Puis la météo intérieure en un mot – soleil, nuages, pluie, orage, brouillard –, deux ou trois volontaires, sans explication (2 min). Ensuite une question qui mène déjà au thème, mais ne touche personne personnellement : quelle pub vous reste dans la tête – un slogan, une mélodie, une affiche ? Trois ou quatre voix ; noter des mots-clés au tableau (3 min). Pour finir, une phrase de transition : vous savez que c’est de la pub – et pourtant, ça marche (1 min).",
+            "sagen": [
+              "Gommette sur la roue, chiffre avec les doigts – et votre météo intérieure en un mot. Moi : nuageux avec des éclaircies.",
+              "Quelle pub vous reste dans la tête ? Vous savez que c’est de la pub. Et pourtant, elle est là."
+            ],
+            "tipp": "Aujourd’hui, aucune question sur l’apparence, les vêtements ou le corps, même anodine : personne ne doit avoir à parler de soi dès le début. L’enseignant·e évite aussi, aujourd’hui, les compliments sur les coiffures ou les vêtements. Dessiner les symboles météo au tableau – soleil, nuage, pluie, éclair, brouillard –, ainsi ça marche aussi sans mots.",
+            "wennEsKippt": "Si la moitié de la classe chante un jingle, rire avec elle, puis faire le signal de silence. Si une remarque sur l’apparence de quelqu’un tombe, arrêter tout de suite, gentiment : aujourd’hui, personne ici ne parle du corps des personnes présentes – ce sera sur l’affiche dans une minute."
+          },
+          {
+            "titel": "Retour, mission et règles du jour",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Demander où en est la mission de la semaine : quelqu’un a-t-il dit à une personne ce qu’il apprécie chez elle – et un merci sans mais est-il revenu ? Pouce en haut, au milieu, en bas ; une voix raconte, sans nom (2 min). Rappeler ensuite l’iceberg : l’apparence était en haut, avec ce que tout le monde voit et juge. Annoncer le thème, accrocher l’affiche des règles du jour, la lire point par point et montrer le coin calme (3 min).",
+            "sagen": [
+              "Pouce en haut, au milieu ou en bas : avez-vous dit à quelqu’un ce que vous appréciez chez lui ? Un merci sans mais est-il revenu ?",
+              "La semaine dernière, l’apparence était tout en haut de l’iceberg. Aujourd’hui, on regarde pourquoi elle a autant de pouvoir – et tout ce qu’un corps sait faire, au fond.",
+              "On parle d’images, de personnages et d’exemples. De vos corps, ici, personne ne parle – même gentiment."
+            ],
+            "punkte": [
+              "On parle d’images, de personnages et d’exemples – pas du corps des personnes présentes.",
+              "Pas de chiffres sur le poids ou la taille, pas de conseils de régime ni de fitness.",
+              "Les mots blessants sur le corps, on ne les dit pas – même pour citer.",
+              "Pas de commentaire sur l’apparence, même gentil.",
+              "« Je passe » est toujours permis, aller un moment au coin calme aussi."
+            ],
+            "tipp": "L’affiche reste accrochée toute la séance ; en cas d’écart, il suffit souvent de la montrer du doigt."
+          },
+          {
+            "titel": "L’expérience du cadre",
+            "dauer": 15,
+            "phase": "input",
+            "text": "Chaque îlot reçoit un cadre et une carte astuce. Le mannequin est un objet de la table – trousse, gourde, sac à dos, de préférence un peu rayé –, jamais une personne. Consigne (4 min) : faites de cet objet la photo publicitaire parfaite, seulement avec l’astuce de votre carte ; le cadre est l’appareil photo. Puis chaque groupe montre son image à travers le cadre (1 min chacun) : la classe dit ce qu’elle voit, puis le groupe enlève le cadre et montre ce que l’image cachait. Pour finir, compléter au tableau l’usine à images (6 min) : ce qu’un cadre ne peut pas faire, l’enseignant·e le décrit – filtres et retouches lissent la peau, allongent les jambes ou affinent la taille, parfois dès la prise de vue –, et la classe se demande qui gagne de l’argent avec ces images.",
+            "sagen": [
+              "Votre mannequin, c’est une trousse. Faites-en une star – mais seulement avec l’astuce de votre carte.",
+              "Que voyez-vous à travers le cadre ? Et maintenant sans le cadre : qu’est-ce que l’image a passé sous silence ?",
+              "Vous savez tous que les images sont retouchées. Pourquoi est-ce qu’elles marchent quand même ? Et qui gagne de l’argent quand vous vous sentez un peu moins bien après ?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Astuce",
+                "Ce que l’image ne montre pas"
+              ],
+              "zeilen": [
+                [
+                  "Cadrage",
+                  "tout ce qui est hors du cadre : rayures, désordre, le reste de la journée"
+                ],
+                [
+                  "Lumière et angle",
+                  "à quoi ça ressemble avec une lumière normale et de face"
+                ],
+                [
+                  "Plein d’essais",
+                  "toutes les photos qui ont été supprimées"
+                ],
+                [
+                  "Pose et décor",
+                  "que la posture et l’arrière-plan étaient prévus"
+                ],
+                [
+                  "Filtres et retouches",
+                  "peau plus lisse, jambes plus longues, taille plus fine – souvent dès l’appli photo"
+                ],
+                [
+                  "Publicité",
+                  "que quelqu’un paie pour que tu achètes quelque chose"
+                ]
+              ]
+            },
+            "tipp": "Des objets plutôt que des personnes : la classe voit chaque astuce sans qu’aucun corps soit jugé. Aujourd’hui, aucune photo de personne n’est montrée, même publicitaire – la retouche est décrite. Une minute avant la fin de la consigne, annoncer : choisissez maintenant l’image que vous montrez.",
+            "wennEsKippt": "Si quelqu’un met le cadre devant un visage en criant « Mannequin ! », arrêter tout de suite : aujourd’hui, seuls les objets sont mannequins – le cadre passe à une autre personne du groupe. Si des portables sortent pour montrer les astuces « en vrai » : les portables restent dans le sac aujourd’hui. Si un groupe sèche, montrer le premier essai : tenir le cadre pour qu’on ne voie que le coin neuf de la trousse.",
+            "blatt": "ff6-koerper-karten"
+          },
+          {
+            "titel": "Comparaisons et la question de l’ami",
+            "dauer": 15,
+            "phase": "uebung",
+            "text": "Ouvrir la fiche et lire ensemble l’encadré « Ce qu’une image ne montre pas » (2 min). Chacun remplit l’exercice 1 en silence, pour soi : à quelle fréquence je me compare, comment je me sens après avoir scrollé ? On ne lit pas, on ne ramasse pas (3 min). Entraîner ensuite la question de l’ami au tableau, avec le personnage de l’exemple : Aylin supprime toutes ses photos parce qu’elle ne se plaît sur aucune. Que diriez-vous à une amie qui pense ça ? La classe propose ; l’enseignant·e barre ce qui ne fait qu’applaudir (« Mais tu es magnifique ») et garde ce qui est vrai et bienveillant (4 min). À deux, tout le monde fait l’exercice 2 pour Rafael et Nora (4 min). Deux paires lisent une phrase (2 min).",
+            "sagen": [
+              "Diriez-vous à une amie qui supprime toutes ses photos : t’as raison, efface tout ? Que diriez-vous à la place ?",
+              "La phrase juste n’a pas besoin d’applaudir. Elle doit être vraie – et sonner comme quand vous parlez à un ami."
+            ],
+            "tipp": "Les garçons se comparent tout autant, souvent sur les muscles ou la taille plutôt que sur la peau ou la silhouette, et en parlent moins – c’est pour ça que Rafael figure sur la fiche. Qui ne veut pas parler du corps avec son partenaire travaille seul et ne lit pas à voix haute.",
+            "wennEsKippt": "Si quelqu’un se moque des pensées (« Y a que les filles qui pensent comme ça »), répondre calmement : Rafael, sur la fiche, est un garçon – tout le monde connaît ces pensées. Si quelqu’un n’écrit rien et fixe sa fiche, ne pas insister : l’exercice 1 suffit aujourd’hui. Si des mots blessants tombent pendant la mise en commun, ne pas les écrire au tableau ni les répéter, mais demander : que veux-tu dire exactement ? Si des conseils d’entraînement ou de régime tombent (« Il a qu’à aller à la muscu »), arrêter gentiment : aujourd’hui, pas de conseils sur le sport ou la nourriture – la question, c’est ce que dit un ami qui aime Rafael tel qu’il est.",
+            "blatt": "ff6-mein-koerper-und-ich"
+          },
+          {
+            "titel": "Pause active : écho de claquements et cigogne",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève derrière sa chaise. Écho de claquements : frapper un court rythme dans les mains, tout le monde le répète – quatre tours, chacun un peu plus difficile. Cigogne : tenir 15 secondes sur une jambe, puis sur l’autre ; qui vacille se tient au dossier de sa chaise. Pour finir, 20 secondes de course sur place au ralenti, s’étirer jusqu’au plafond, se secouer. Demander ensuite brièvement : qu’est-ce que votre corps vient de faire sans que vous ayez besoin d’y penser ? Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Chacun fait ce que son corps peut faire aujourd’hui – tout est aussi possible assis."
+            ],
+            "tipp": "Entendre, retenir un rythme, garder l’équilibre, faire battre le cœur plus vite : les réponses à la dernière question sont la première pierre du skill de fin de séance. Rien n’est évalué, pas même qui tient le plus longtemps sur une jambe.",
+            "wennEsKippt": "Si la cigogne tourne à la compétition ou si l’on se bouscule, arrêter et continuer avec l’écho de claquements. Qui ne peut pas ou ne veut pas se lever fait l’écho assis."
+          },
+          {
+            "titel": "Parler du corps : quatre façons en scènes",
+            "dauer": 30,
+            "phase": "uebung",
+            "text": "Écrire les quatre façons au tableau et montrer une phrase pour chacune (5 min). Expliquer la règle des scènes : la remarque n’est jamais jouée ni citée – au bon moment, l’enseignant·e lève le panneau « Remarque », et on joue ce qui se passe ensuite. Chaque îlot tire une carte scène et se prépare (5 min) : qui joue la personne visée, qui joue les autres, qui réagit – et de quelle façon ? Puis les groupes jouent l’un après l’autre devant la classe, une minute au plus chacun (15 min). Après chaque scène, tout le monde montre avec les doigts de quelle façon il s’agissait (1 à 4), et une voix dit ce qui aurait aussi marché. Pour finir, sortir tout le monde de son rôle – se secouer les mains, dire son propre prénom – et faire seul l’exercice 3 de la fiche : ses propres phrases (5 min).",
+            "sagen": [
+              "La remarque, on ne la joue pas. Je lève le panneau – et vous montrez ce qui se passe après.",
+              "Pas besoin de jouer les héros. Parfois, un message privé suffit : c’était nul, ça – ça va, toi ?",
+              "Quelle façon était-ce – montrez-le avec les doigts ? Et qu’est-ce qui aurait aussi marché ?"
+            ],
+            "tabelle": {
+              "spalten": [
+                "Façon",
+                "Ce que ça peut donner"
+              ],
+              "zeilen": [
+                [
+                  "1 · Poser une limite",
+                  "« Mon corps, tu n’en parles pas. » Court, calme, sans sourire."
+                ],
+                [
+                  "2 · Ne pas suivre",
+                  "Ne pas rire avec les autres, ne rien ajouter, changer de sujet ou partir."
+                ],
+                [
+                  "3 · Soutenir",
+                  "« Arrête, c’est pas drôle. » Ou plus tard, en privé : « Ça va ? »"
+                ],
+                [
+                  "4 · Demander comment ça va",
+                  "Au lieu de « Mais non, c’est pas vrai » : « T’as l’air d’avoir une sale journée. Qu’est-ce qui se passe ? »"
+                ]
+              ]
+            },
+            "tipp": "Commencer par les cartes où il s’agit des autres – vestiaire, groupe de la classe, notes données aux filles : personne n’a à répondre pour soi. La personne visée peut rester muette ; on joue surtout ce que font les autres. Qui ne veut pas jouer fait la mise en scène. Chacun choisit son rôle ; personne n’est poussé dans le rôle de celui qui reçoit la remarque.",
+            "wennEsKippt": "Si la remarque est quand même prononcée ou tournée contre quelqu’un de la classe, dire « Stop » tout de suite et interrompre la scène ; le groupe la rejoue, avec le panneau. Si le public rit d’un personnage, demander quelle façon serait de mise maintenant. Si un jeune raconte que ça lui est arrivé, le reconnaître, ne pas approfondir et proposer d’en parler après le cours ; en cas de signes de harcèlement, informer le jour même le régent et le SePAS.",
+            "blatt": "ff6-koerper-karten"
+          },
+          {
+            "titel": "Skill : ce que mon corps sait faire",
+            "dauer": 12,
+            "phase": "skill",
+            "text": "Tout le monde est assis confortablement, les deux pieds au sol, les yeux ouverts sur un point de la table ou fermés – les deux sont permis. Guider lentement en faisant l’exercice soi-même ; pour chaque partie du corps, il ne s’agit pas de l’apparence, mais de ce qu’elle a déjà fait aujourd’hui (5 min). Ensuite deux ou trois voix : qu’est-ce qui était inhabituel (2 min) ? Puis chacun écrit l’exercice 4 de la fiche – des mots-clés suffisent, rien n’est lu à voix haute (4 min). Pour finir, la version courte pour la route au tableau : sentir ses pieds, ouvrir les mains, remarquer son souffle (1 min).",
+            "sagen": [
+              "Vous n’avez pas besoin de trouver votre corps génial. Il suffit de le remarquer un moment.",
+              "Vos pieds vous ont déjà porté quelques milliers de pas aujourd’hui. Sentez-les un instant."
+            ],
+            "punkte": [
+              "Pieds : ils t’ont porté jusqu’au bus, à travers l’école et jusqu’ici. Appuie-les un instant dans le sol.",
+              "Jambes et dos : ils te tiennent droit, sans que tu y penses.",
+              "Mains : aujourd’hui, elles ont écrit, porté, tapé, fait signe. Ouvre-les sur tes cuisses.",
+              "Souffle : il va et vient tout seul, même maintenant. Remarque trois respirations.",
+              "Visage : aujourd’hui, il a déjà ri, bâillé, parlé – peut-être en deux langues."
+            ],
+            "tipp": "« Tu n’as pas besoin d’aimer ton corps » soulage beaucoup de jeunes plus que n’importe quel appel à se trouver beau ; le percevoir de façon neutre est un but réaliste. Qui ne peut pas bouger une partie du corps ou ne veut pas la sentir la saute. La carte skill à la fin du cahier résume la version courte.",
+            "wennEsKippt": "Si un jeune s’agite ou semble abattu, il peut ouvrir les yeux, s’étirer ou aller au coin calme ; lui demander ensuite discrètement comment il va, pas devant la classe. Si ça ricane, continuer calmement et raccourcir les étapes.",
+            "blatt": "ff6-mein-koerper-und-ich"
+          },
+          {
+            "titel": "Skills-Pass, mission et qui écoute",
+            "dauer": 8,
+            "phase": "abschluss",
+            "text": "Écrire au tableau la question du Skills-Pass : quelle phrase sur le corps – le mien ou celui des autres – doit rester ? Chacun écrit sa phrase, tampon en passant dans les rangs (3 min). Montrer ensuite l’encadré d’aide en bas de la fiche : quand les pensées sur l’apparence, la nourriture ou le poids prennent beaucoup de place, ou quand quelqu’un est démoli à cause de son corps, il y a des gens qui écoutent – le SePAS, l’enseignant·e, le Kanner- a Jugendtelefon (2 min). Montrer la mission de la semaine dans le cahier, l’annoncer en une phrase, puis annoncer la prochaine séance ; dire qu’on reste quelques minutes après le cours (3 min).",
+            "sagen": [
+              "Une phrase pour le Skills-Pass : quelle phrase sur le corps doit rester – sur le vôtre ou sur celui des autres ?",
+              "Votre mission : trouvez cette semaine une affiche publicitaire et repérez trois astuces. Sans portable – il y en a plein aux arrêts de bus.",
+              "Je reste encore quelques minutes après le cours, si quelqu’un veut dire quelque chose."
+            ],
+            "tipp": "Après le cours, noter brièvement qui semblait avoir du mal aujourd’hui et en parler avec le SePAS – sans interpréter, en observant seulement.",
+            "blatt": "ff6-mein-koerper-und-ich"
+          }
+        ],
+        "bruecke": "La semaine prochaine, on parlera de la voix dans la tête qui juge souvent le plus durement – la vôtre – et de la façon de se parler comme à un bon ami.",
+        "mission": "Repère sur une affiche publicitaire trois astuces : cadrage, lumière, pose ou retouche.",
+        "hintergrund": "À l’adolescence, l’estime de soi globale est plus liée à l’apparence perçue qu’à tout autre domaine (Harter, 2012). Les réseaux sociaux fournissent sans cesse des images de comparaison : dans une expérience, un court passage sur Facebook suffisait à faire baisser l’humeur de jeunes femmes, et celles qui se comparaient souvent étaient ensuite moins satisfaites de leur visage, de leurs cheveux et de leur peau (Fardouly et al., 2015). La séance agit sur trois plans : comprendre comment les images sont fabriquées ; vérifier les pensées dures avec la question de l’ami ; regarder ce que le corps sait faire – de courts exercices d’écriture renforçaient l’appréciation du corps (Alleva et al., 2015).",
+        "quellen": [
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
+          "Alleva, J. M., Martijn, C., Van Breukelen, G. J. P., Jansen, A. & Karos, K. (2015). Expand Your Horizon: A programme that improves body image and reduces self-objectification by training women to focus on body functionality. Body Image, 15, 81–89."
+        ],
+        "achtung": "L’image du corps touche aux troubles alimentaires, au harcèlement et à la honte. On ne parle du corps de personne ; ni chiffres sur le poids ou la taille, ni conseils de régime ou de fitness, et les mots blessants ne sont pas répétés, même par l’enseignant·e. Une perte de poids marquée, des repas sautés, des règles alimentaires très strictes ou un dénigrement constant de son corps ne s’abordent jamais devant la classe : après le cours, calmement, à partir d’une observation, sans diagnostic ni promesse, puis informer le SePAS le jour même. Automutilation ou danger aigu : protocole de protection, 112.",
+        "differenzierung": {
+          "leichter": "Dans l’expérience du cadre, montrer l’astuce suffit ; une autre personne du groupe peut l’expliquer. Qui apprend encore la langue joue dans les scènes la façon 2, sans paroles : ne pas rire, partir. L’exercice 2 à l’oral à deux, le tandem note des mots-clés ; pour ses propres phrases, une phrase du tableau suffit.",
+          "schwerer": "Inventer une septième carte astuce. Dans les scènes, faire la mise en scène et demander après chaque scène quelle façon serait la plus facile pour la personne visée. Écrire pour Rafael une phrase vraie qui lui donne quand même du courage."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur (5 min), règles du jour (3 min), l’expérience du cadre avec trois groupes et l’usine à images au tableau (12 min), quatre façons et trois scènes (17 min), ce que mon corps sait faire (8 min), Skills-Pass et mission (5 min). La question de l’ami de la fiche sert d’entrée en matière à la séance suivante, car elle mène au critique intérieur."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff6-mein-koerper-und-ich",
+      "bereich": "skills",
+      "thema": "ich",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "25 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Körperbild",
+        "Bilder im Netz",
+        "Sprüche über Körper",
+        "Förderfach"
+      ],
+      "bild": "icon:photo",
+      "kurs": [
+        "ff6-e04"
+      ],
+      "de": {
+        "titel": "Mein Körper und ich",
+        "untertitel": "Bilder sind gemacht, Sprüche treffen – und dein Körper kann mehr, als ein Foto zeigt.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Was ein Bild nicht zeigt",
+            "text": "Hinter einem Bild im Netz steckt oft viel Arbeit: Licht, Winkel und Pose sind geplant, aus vielen Versuchen wird das beste ausgewählt. Filter glätten die Haut, machen Beine länger oder die Taille schmaler – manche schon beim Fotografieren. Viele Beiträge sind Werbung. Wer sich damit vergleicht, vergleicht seinen Alltag mit den besten, bearbeiteten Momenten anderer."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wie oft trifft das auf dich zu? Kreuz an.",
+            "hinweis": "Nur für dich – niemand sammelt das ein, niemand muss etwas vorlesen."
+          },
+          {
+            "art": "einschaetzung",
+            "items": [
+              "Ich vergleiche meinen Körper mit Bildern im Netz.",
+              "Nach dem Scrollen fühle ich mich schlechter als vorher.",
+              "Ich lösche Fotos, auf denen ich mir nicht gefalle.",
+              "Sprüche über mein Aussehen gehen mir lange nach.",
+              "Ich folge Kanälen, nach denen es mir gut geht."
+            ],
+            "optionen": [
+              "oft",
+              "manchmal",
+              "selten"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Die Freundesfrage: Was antwortest du Rafael und Nora? Das erste Beispiel zeigt, wie es gemeint ist.",
+            "hinweis": "Dein Satz muss nicht jubeln. Er muss stimmen – und freundlich klingen."
+          },
+          {
+            "art": "dialog",
+            "zeilen": [
+              {
+                "wer": "Aylin",
+                "text": "Auf Fotos gefalle ich mir nie. Ich lösche alle."
+              },
+              {
+                "wer": "Du",
+                "text": "Ein Foto zeigt eine Sekunde. Ich kenne dich seit Jahren – und mag dich nicht wegen eines Fotos."
+              },
+              {
+                "wer": "Rafael",
+                "text": "Die anderen im Verein haben alle mehr Muskeln. Neben denen nimmt mich keiner ernst."
+              },
+              {
+                "wer": "Du"
+              },
+              {
+                "wer": "Nora",
+                "text": "Mit meiner Haut kann ich mich auf der Party nicht zeigen."
+              },
+              {
+                "wer": "Du"
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Vier Wege, wenn jemand über Körper redet. Was sagst oder tust du?"
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 0,
+            "items": [
+              {
+                "titel": "Grenze setzen",
+                "text": "„Über meinen Körper redest du nicht.“ Kurz, ruhig."
+              },
+              {
+                "titel": "Nicht mitmachen",
+                "text": "Nicht mitlachen, Thema wechseln oder gehen."
+              },
+              {
+                "titel": "Rückendeckung geben",
+                "text": "„Hör auf, das ist nicht witzig.“ Oder später: „Alles okay?“"
+              },
+              {
+                "titel": "Nach dem Gefühl fragen",
+                "text": "„Klingt nach einem miesen Tag. Was ist los?“"
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Wenn jemand über meinen Körper redet, sage ich: …",
+              "Wenn jemand über den Körper anderer lästert, sage oder tue ich: …",
+              "Ein Kompliment ohne Körper, das ich verschenken könnte: …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Komplimente gehen auch ohne Körper",
+            "text": "„Mit dir kann man über alles reden.“ „Du bist echt fair.“ Solche Sätze halten länger – und niemand muss sich danach im Spiegel prüfen."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Was dein Körper kann: Schreib auf, was er dir diese Woche möglich gemacht hat."
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Diese Woche hat mein Körper mir möglich gemacht, …",
+              "Ohne dass ich nachdenke, kann mein Körper …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Hier hört dir jemand zu",
+            "text": "Wenn Gedanken über Aussehen, Essen oder Gewicht viel Raum einnehmen oder dich jemand wegen deines Körpers fertigmacht: Sprich mit jemandem, dem du vertraust – beim SePAS oder anonym beim Kanner- a Jugendtelefon (116 111). Ärger im Netz: BEE SECURE Helpline (8002 1234)."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen verstehen, wie Bilder im Netz gemacht werden, prüfen harte Gedanken über den Körper mit der Freundesfrage, legen sich Sätze für Sprüche über Körper zurecht und richten den Blick auf das, was ihr Körper kann.",
+          "ablauf": [
+            "Einheit 4, Schritt 4 (15 Min.): Kasten lesen, Aufgabe 1 still, Freundesfrage an der Tafel üben, Aufgabe 2 zu zweit.",
+            "Schritt 6: nach den Szenen Aufgabe 3 allein – die eigenen Sätze.",
+            "Schritt 7: nach dem Skill Aufgabe 4, Stichworte reichen.",
+            "Schritt 8: auf den Hilfe-Kasten zeigen. Nichts wird eingesammelt oder vorgelesen."
+          ],
+          "hintergrund": "Wer sich häufig mit Bildern im Netz vergleicht, ist danach unzufriedener mit dem eigenen Aussehen (Fardouly et al., 2015). Den Blick auf das zu lenken, was der Körper kann, stärkt die Wertschätzung des eigenen Körpers (Alleva et al., 2015).",
+          "quellen": [
+            "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
+            "Alleva, J. M., Martijn, C., Van Breukelen, G. J. P., Jansen, A. & Karos, K. (2015). Expand Your Horizon: A programme that improves body image and reduces self-objectification by training women to focus on body functionality. Body Image, 15, 81–89."
+          ],
+          "achtung": "Viele Kreuze bei „oft“ in Aufgabe 1 oder sehr harte Sätze sind kein Grund für eine Ansprache vor der Klasse. Bei Sorge nach der Stunde ruhig nachfragen und den SePAS einbeziehen; keine Diagnose.",
+          "material": "Stifte"
+        }
+      },
+      "fr": {
+        "titel": "Mon corps et moi",
+        "untertitel": "Les images sont fabriquées, les remarques blessent – et ton corps sait faire bien plus qu’une photo ne montre.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce qu’une image ne montre pas",
+            "text": "Derrière une image en ligne, il y a souvent beaucoup de travail : la lumière, l’angle et la pose sont prévus, et on choisit la meilleure parmi de nombreux essais. Les filtres lissent la peau, allongent les jambes ou affinent la taille – certains dès la prise de vue. Beaucoup de posts sont de la publicité. Qui s’y compare compare son quotidien avec les meilleurs moments retouchés des autres."
+          },
+          {
+            "art": "aufgabe",
+            "text": "À quelle fréquence est-ce vrai pour toi ? Coche.",
+            "hinweis": "Rien que pour toi – personne ne ramasse la fiche, personne ne doit lire à voix haute."
+          },
+          {
+            "art": "einschaetzung",
+            "items": [
+              "Je compare mon corps aux images en ligne.",
+              "Après avoir scrollé, je me sens moins bien qu’avant.",
+              "Je supprime les photos où je ne me plais pas.",
+              "Les remarques sur mon apparence me restent longtemps en tête.",
+              "Je suis des comptes qui me font du bien."
+            ],
+            "optionen": [
+              "souvent",
+              "parfois",
+              "rarement"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "La question de l’ami : que réponds-tu à Rafael et à Nora ? Le premier exemple montre l’idée.",
+            "hinweis": "Ta phrase n’a pas besoin d’applaudir. Elle doit être vraie – et bienveillante."
+          },
+          {
+            "art": "dialog",
+            "zeilen": [
+              {
+                "wer": "Aylin",
+                "text": "Je ne me plais sur aucune photo. Je les supprime toutes."
+              },
+              {
+                "wer": "Toi",
+                "text": "Une photo montre une seconde. Je te connais depuis des années – et je ne t’aime pas pour une photo."
+              },
+              {
+                "wer": "Rafael",
+                "text": "Au club, les autres ont tous plus de muscles. À côté d’eux, personne ne me prend au sérieux."
+              },
+              {
+                "wer": "Toi"
+              },
+              {
+                "wer": "Nora",
+                "text": "Avec ma peau, je ne peux pas me montrer à la fête."
+              },
+              {
+                "wer": "Toi"
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Quatre façons de réagir quand quelqu’un parle du corps. Que dis-tu ou que fais-tu ?"
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 0,
+            "items": [
+              {
+                "titel": "Poser une limite",
+                "text": "« Mon corps, tu n’en parles pas. » Court, calme."
+              },
+              {
+                "titel": "Ne pas suivre",
+                "text": "Ne pas rire avec eux, changer de sujet ou partir."
+              },
+              {
+                "titel": "Soutenir",
+                "text": "« Arrête, c’est pas drôle. » Ou plus tard : « Ça va ? »"
+              },
+              {
+                "titel": "Demander comment ça va",
+                "text": "« T’as l’air d’avoir une sale journée. Qu’est-ce qui se passe ? »"
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Quand quelqu’un parle de mon corps, je dis : …",
+              "Quand quelqu’un se moque du corps des autres, je dis ou je fais : …",
+              "Un compliment sans le corps que je pourrais offrir : …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Les compliments marchent aussi sans le corps",
+            "text": "« Avec toi, on peut parler de tout. » « T’es vraiment juste. » Ces phrases-là durent plus longtemps – et personne n’a besoin de se vérifier dans le miroir après."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ce que ton corps sait faire : écris ce qu’il t’a permis de faire cette semaine."
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Cette semaine, mon corps m’a permis de …",
+              "Sans que j’y pense, mon corps sait …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Ici, quelqu’un t’écoute",
+            "text": "Si les pensées sur ton apparence, la nourriture ou le poids prennent beaucoup de place, ou si quelqu’un te démolit à cause de ton corps : parles-en à quelqu’un de confiance – au SePAS ou anonymement au Kanner- a Jugendtelefon (116 111). Problèmes en ligne : BEE SECURE Helpline (8002 1234)."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes comprennent comment les images en ligne sont fabriquées, vérifient les pensées dures sur le corps avec la question de l’ami, préparent des phrases face aux remarques sur le corps et tournent le regard vers ce que leur corps sait faire.",
+          "ablauf": [
+            "Séance 4, étape 4 (15 min) : lire l’encadré, exercice 1 en silence, entraîner la question de l’ami au tableau, exercice 2 à deux.",
+            "Étape 6 : après les scènes, exercice 3 seul – ses propres phrases.",
+            "Étape 7 : après le skill, exercice 4, des mots-clés suffisent.",
+            "Étape 8 : montrer l’encadré d’aide. Rien n’est ramassé ni lu à voix haute."
+          ],
+          "hintergrund": "Qui se compare souvent aux images en ligne est ensuite moins satisfait de son apparence (Fardouly et al., 2015). Tourner le regard vers ce que le corps sait faire renforce l’appréciation de son propre corps (Alleva et al., 2015).",
+          "quellen": [
+            "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45.",
+            "Alleva, J. M., Martijn, C., Van Breukelen, G. J. P., Jansen, A. & Karos, K. (2015). Expand Your Horizon: A programme that improves body image and reduces self-objectification by training women to focus on body functionality. Body Image, 15, 81–89."
+          ],
+          "achtung": "Beaucoup de croix à « souvent » dans l’exercice 1 ou des phrases très dures ne justifient jamais d’en parler devant la classe. En cas d’inquiétude, en parler calmement après le cours et associer le SePAS ; pas de diagnostic.",
+          "material": "Stylos"
+        }
+      }
+    },
+    {
+      "id": "ff6-koerper-karten",
+      "bereich": "skills",
+      "thema": "ich",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe",
+        "klasse"
+      ],
+      "dauer": "45 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Körperbild",
+        "Werbefoto",
+        "Szenenkarten",
+        "Förderfach"
+      ],
+      "bild": "icon:camera",
+      "kurs": [
+        "ff6-e04"
+      ],
+      "de": {
+        "titel": "Trick- und Szenenkarten",
+        "untertitel": "Kopiervorlage – für das Rahmen-Experiment und die Szenen; einmal auf festes Papier kopieren und ausschneiden",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So werden die Karten gebraucht",
+            "punkte": [
+              "Trickkarten: je Tischgruppe eine Karte und ein Rahmen. Model ist ein Gegenstand vom Tisch, nie ein Mensch.",
+              "Szenenkarten: eine je Tischgruppe, Karte 6 ist Reserve. Der Spruch wird nie gespielt und nie zitiert – die Lehrkraft hält das Schild „Spruch“ hoch.",
+              "Namen tauschen, falls jemand in der Klasse so heißt; Karten weglassen, die einer echten Lage in der Klasse ähneln."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 140,
+            "karten": [
+              {
+                "titel": "Trick 1 · Ausschnitt",
+                "text": "Zeigt nur das Beste. Alles, was stört – Kratzer, Flecken, Unordnung –, bleibt außerhalb des Rahmens.",
+                "bild": "icon:square"
+              },
+              {
+                "titel": "Trick 2 · Licht",
+                "text": "Dreht den Gegenstand zum Fenster. Sucht das schönste Licht, vertreibt die Schatten, lasst ihn glänzen.",
+                "bild": "icon:sun"
+              },
+              {
+                "titel": "Trick 3 · Winkel",
+                "text": "Von unten, von oben, ganz nah: Aus welcher Richtung wirkt er größer, neuer, wertvoller?",
+                "bild": "icon:angle"
+              },
+              {
+                "titel": "Trick 4 · Viele Versuche",
+                "text": "Probiert zehn Stellungen aus. Wählt eine – die anderen neun „löscht“ ihr. Niemand erfährt davon.",
+                "bild": "icon:photo"
+              },
+              {
+                "titel": "Trick 5 · Kulisse",
+                "text": "Was kommt dazu, damit es nach einem perfekten Leben aussieht? Und was muss aus dem Bild verschwinden?",
+                "bild": "icon:plant"
+              },
+              {
+                "titel": "So geht’s",
+                "text": "1. Gegenstand vom Tisch wählen. 2. Nur euren Trick benutzen (4 Min.). 3. Das Bild durch den Rahmen zeigen. 4. Rahmen weg: Was hat das Bild versteckt?",
+                "bild": "icon:camera"
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 150,
+            "karten": [
+              {
+                "titel": "Szene 1 · Umkleide",
+                "text": "Nach dem Sport macht jemand einen Spruch über Diogos Arme. Zwei lachen. Diogo zieht schnell seinen Pulli an. Du stehst daneben. Was tust du?"
+              },
+              {
+                "titel": "Szene 2 · Klassenchat",
+                "text": "Unter Léas Foto vom Schulfest schreibt jemand einen fiesen Kommentar über ihre Beine. Drei Lach-Reaktionen. Was schreibst du – öffentlich oder privat?"
+              },
+              {
+                "titel": "Szene 3 · Punkte",
+                "text": "In der Pause geben zwei aus deiner Klasse Mädchen aus der Parallelklasse Punkte von 1 bis 10. Sie fragen dich: „Und, welche Zahl?“ Was sagst du?"
+              },
+              {
+                "titel": "Szene 4 · Vor der Party",
+                "text": "Zoé zieht sich zum dritten Mal um. Sie sagt, so könne sie nicht rausgehen, alle würden sie anstarren. Du wartest an der Tür. Was sagst du ihr?"
+              },
+              {
+                "titel": "Szene 5 · Familienfest",
+                "text": "Beim Familienfest macht ein Onkel vor allen eine Bemerkung über Samuels Figur. Alle schauen Samuel an. Was kann Samuel sagen?"
+              },
+              {
+                "titel": "Szene 6 · Reserve: Kompliment gesucht",
+                "text": "Du willst Ana sagen, dass sie dir wichtig ist. Dir fällt nur „coole Schuhe“ ein. Was könntest du stattdessen sagen?"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Trickkarten für das Rahmen-Experiment, in dem Gegenstände statt Menschen zu Models werden, und erfundene Szenen, in denen die Klasse Antworten auf Sprüche über Körper übt, ohne dass ein Spruch ausgesprochen wird.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; dazu fünf Rahmen aus A4-Karton mit einem Fenster in A5-Größe.",
+            "Einheit 4, Schritt 3: je Tischgruppe eine Trickkarte und ein Rahmen; die Karte „So geht’s“ an die Tafel.",
+            "Schritt 6: je Tischgruppe eine Szenenkarte, Szene 6 ist Reserve; die Lehrkraft hält das Schild „Spruch“ hoch."
+          ],
+          "hintergrund": "Wer versteht, wie Bilder gemacht werden, kann sich von ihnen eher abgrenzen; das Vergleichen mit bearbeiteten Bildern drückt Stimmung und Zufriedenheit mit dem eigenen Aussehen (Fardouly et al., 2015). Die Szenen arbeiten mit erfundenen Figuren und lassen den Spruch selbst weg.",
+          "quellen": [
+            "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45."
+          ],
+          "achtung": "Szenen, die einer echten Lage in der Klasse ähneln, weglassen. Bei Hinweisen auf Mobbing noch am selben Tag Régent und SePAS informieren.",
+          "material": "Festes Papier, Schere; fünf A4-Kartons für die Rahmen; Schild „Spruch“"
+        }
+      },
+      "fr": {
+        "titel": "Cartes astuces et scènes",
+        "untertitel": "Modèle à photocopier – pour l’expérience du cadre et les scènes ; à copier une fois sur papier épais et à découper",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Comment utiliser les cartes",
+            "punkte": [
+              "Cartes astuces : une carte et un cadre par îlot. Le mannequin est un objet de la table, jamais une personne.",
+              "Cartes scènes : une par îlot, la carte 6 est une réserve. La remarque n’est jamais jouée ni citée – l’enseignant·e lève le panneau « Remarque ».",
+              "Changer les prénoms si un élève s’appelle ainsi ; laisser de côté les cartes qui ressemblent à une vraie situation de la classe."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 140,
+            "karten": [
+              {
+                "titel": "Astuce 1 · Cadrage",
+                "text": "Ne montrez que le meilleur. Tout ce qui gêne – rayures, taches, désordre – reste hors du cadre.",
+                "bild": "icon:square"
+              },
+              {
+                "titel": "Astuce 2 · Lumière",
+                "text": "Tournez l’objet vers la fenêtre. Cherchez la plus belle lumière, chassez les ombres, faites-le briller.",
+                "bild": "icon:sun"
+              },
+              {
+                "titel": "Astuce 3 · Angle",
+                "text": "D’en bas, d’en haut, de tout près : sous quel angle paraît-il plus grand, plus neuf, plus précieux ?",
+                "bild": "icon:angle"
+              },
+              {
+                "titel": "Astuce 4 · Plein d’essais",
+                "text": "Essayez dix positions. Choisissez-en une – les neuf autres, vous les « supprimez ». Personne ne le saura.",
+                "bild": "icon:photo"
+              },
+              {
+                "titel": "Astuce 5 · Décor",
+                "text": "Qu’ajouter pour que ça ressemble à une vie parfaite ? Et qu’est-ce qui doit disparaître de l’image ?",
+                "bild": "icon:plant"
+              },
+              {
+                "titel": "Mode d’emploi",
+                "text": "1. Choisir un objet sur la table. 2. Utiliser seulement votre astuce (4 min). 3. Montrer l’image à travers le cadre. 4. Enlever le cadre : que cachait l’image ?",
+                "bild": "icon:camera"
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "karten",
+            "spalten": 2,
+            "hoehe": 150,
+            "karten": [
+              {
+                "titel": "Scène 1 · Vestiaire",
+                "text": "Après le sport, quelqu’un fait une remarque sur les bras de Diogo. Deux rient. Diogo enfile vite son pull. Tu es à côté. Que fais-tu ?"
+              },
+              {
+                "titel": "Scène 2 · Groupe de la classe",
+                "text": "Sous la photo de Léa à la fête de l’école, quelqu’un écrit un commentaire méchant sur ses jambes. Trois réactions qui rient. Qu’écris-tu – en public ou en privé ?"
+              },
+              {
+                "titel": "Scène 3 · Des notes",
+                "text": "À la récré, deux élèves de ta classe donnent des notes de 1 à 10 aux filles de la classe d’à côté. Ils te demandent : « Et toi, tu dis combien ? » Que réponds-tu ?"
+              },
+              {
+                "titel": "Scène 4 · Avant la fête",
+                "text": "Zoé se change pour la troisième fois. Elle dit qu’elle ne peut pas sortir comme ça, que tout le monde va la fixer. Tu attends à la porte. Que lui dis-tu ?"
+              },
+              {
+                "titel": "Scène 5 · Fête de famille",
+                "text": "À une fête de famille, un oncle fait devant tout le monde une remarque sur la silhouette de Samuel. Tout le monde regarde Samuel. Que peut dire Samuel ?"
+              },
+              {
+                "titel": "Scène 6 · Réserve : compliment cherché",
+                "text": "Tu veux dire à Ana qu’elle compte pour toi. Tu ne trouves que « jolies baskets ». Que pourrais-tu dire à la place ?"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Des cartes astuces pour l’expérience du cadre, où des objets plutôt que des personnes deviennent mannequins, et des scènes inventées où la classe s’entraîne à répondre aux remarques sur le corps, sans qu’aucune remarque soit prononcée.",
+          "ablauf": [
+            "Photocopier une fois sur papier épais et découper ; préparer en plus cinq cadres en carton A4 avec une fenêtre au format A5.",
+            "Séance 4, étape 3 : une carte astuce et un cadre par îlot ; la carte « Mode d’emploi » au tableau.",
+            "Étape 6 : une carte scène par îlot, la scène 6 est une réserve ; l’enseignant·e lève le panneau « Remarque »."
+          ],
+          "hintergrund": "Qui comprend comment les images sont fabriquées s’en distancie plus facilement ; se comparer à des images retouchées fait baisser l’humeur et la satisfaction de son apparence (Fardouly et al., 2015). Les scènes utilisent des personnages inventés et laissent de côté la remarque elle-même.",
+          "quellen": [
+            "Fardouly, J., Diedrichs, P. C., Vartanian, L. R. & Halliwell, E. (2015). Social comparisons on social media: The impact of Facebook on young women’s body image concerns and mood. Body Image, 13, 38–45."
+          ],
+          "achtung": "Laisser de côté les scènes qui ressemblent à une vraie situation de la classe. En cas de signes de harcèlement, informer le jour même le régent et le SePAS.",
+          "material": "Papier épais, ciseaux ; cinq cartons A4 pour les cadres ; panneau « Remarque »"
+        }
+      }
+    }
+  ]
+}

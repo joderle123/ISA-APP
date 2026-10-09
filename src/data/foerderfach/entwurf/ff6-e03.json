@@ -1,0 +1,1187 @@
+{
+  "einheiten": [
+    {
+      "id": "ff6-e03",
+      "klasse": "6e",
+      "dauer": 100,
+      "blaetter": [
+        "ff6-was-mich-traegt"
+      ],
+      "vorlagen": [
+        "ff6-wert-auktion"
+      ],
+      "woerter": [
+        {
+          "de": "der Selbstwert",
+          "fr": "l’estime de soi (f.)"
+        },
+        {
+          "de": "wertvoll",
+          "fr": "qui a de la valeur"
+        },
+        {
+          "de": "die Versteigerung",
+          "fr": "la vente aux enchères"
+        },
+        {
+          "de": "die Quelle",
+          "fr": "la source"
+        },
+        {
+          "de": "wackelig",
+          "fr": "fragile"
+        },
+        {
+          "de": "das Kompliment",
+          "fr": "le compliment"
+        }
+      ],
+      "de": {
+        "titel": "Was macht mich wertvoll?",
+        "kurz": "Was trägt, wenn Noten, Likes und Aussehen wackeln? Die Klasse verfolgt Noahs Tag, versteigert, was man nicht kaufen kann, und übt, ein Kompliment anzunehmen.",
+        "ziele": [
+          "unterscheiden an Noahs Tag das schwankende Gefühl, wertvoll zu sein, vom Wert eines Menschen, der bleibt",
+          "ordnen Quellen des Selbstwerts in wackelige und tragende und finden drei eigene, die tragen",
+          "entscheiden in der Wert-Auktion im Team, was ihnen wichtig ist, und erkennen, dass man es nicht kaufen kann",
+          "nehmen ein Kompliment mit „Danke ohne Aber“ an"
+        ],
+        "material": [
+          "Plakate Gefühlsrad und Skala, Punkte",
+          "Schülerheft, Stempel",
+          "Lose und Spielgeld (Vorlage)",
+          "5 Umschläge, Schuhkarton als Bank",
+          "Holzlöffel oder Glocke als Hammer",
+          "Magnete oder Klebeband für die Lose",
+          "Kreide oder Marker in zwei Farben"
+        ],
+        "vorbereitung": [
+          "Vorlage kopieren (Lose einmal, Spielgeld fünfmal) und schneiden; je Tischgruppe 1000 Taler und eine Bieterkarte in einen Umschlag.",
+          "Tafel: links eine Achse 0–10 für Noahs Tag, in der Mitte Platz für die zwölf Lose, rechts zwei leere Felder.",
+          "Beim Régent fragen, ob jemand gerade eine Freundschaft verloren hat oder ausgegrenzt wird (Los 7 und 8).",
+          "Heißt jemand in der Klasse Noah, der Figur einen anderen Namen geben."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Punkt, Zahl und ein netter Satz"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick, Joker-Mission und neues Kapitel"
+          },
+          {
+            "min": "15–27",
+            "phase": "input",
+            "titel": "Noahs Achterbahn"
+          },
+          {
+            "min": "27–45",
+            "phase": "uebung",
+            "titel": "Worauf steht mein Selbstwert?"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Alle, die … – unbezahlbar"
+          },
+          {
+            "min": "50–72",
+            "phase": "aktiv",
+            "titel": "Die Wert-Auktion"
+          },
+          {
+            "min": "72–85",
+            "phase": "uebung",
+            "titel": "Was man nicht kaufen kann"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Danke ohne Aber"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass und Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Punkt, Zahl und ein netter Satz",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad (3 Min.). Auf drei zeigen alle ihre Anspannung mit den Fingern, 0 bis 10 Finger für 0 bis 100; die Lehrkraft beginnt mit Gefühl und Zahl (2 Min.). Dazu eine freiwillige Frage: Hat dir diese Woche jemand etwas Nettes gesagt – oder du jemandem? Die Lehrkraft erzählt zuerst ein alltägliches Beispiel, dann sagen zwei, drei Freiwillige je einen Satz; „weiter“ wird nicht kommentiert (4 Min.). Zum Schluss ankündigen, dass solche Sätze am Ende der Stunde wiederkommen: Man kann sie nicht kaufen (1 Min.).",
+            "sagen": [
+              "Punkt aufs Rad, Zahl mit den Fingern – und wer mag: Hat euch diese Woche jemand etwas Nettes gesagt? Oder ihr jemandem?",
+              "Bei mir war es der Busfahrer, der gewartet hat, als ich gerannt bin. Hat mir den Morgen gerettet."
+            ],
+            "tipp": "Kommen kaum Beispiele, ist auch das eine Auskunft: Nette Sätze sind knapp. Nicht bedauern, einfach weitermachen – am Ende der Stunde wird genau das geübt.",
+            "wennEsKippt": "Kommt ein ironisches Beispiel („Meine Mutter hat gesagt, ich soll mein Zimmer aufräumen“), mitlachen und weitermachen. Sagt jemand ernst „Mir sagt nie jemand was Nettes“, nicht widersprechen und nicht vertiefen: kurz danken und nach der Stunde unauffällig fragen, wie es ihm geht."
+          },
+          {
+            "titel": "Rückblick, Joker-Mission und neues Kapitel",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann nach der Wochen-Mission fragen: Hat jemand seinen Joker-Skill gezogen, als die Zahl über 50 ging? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz, was sich an der Zahl bewegt hat – niemand muss die Mission geschafft haben (2 Min.). Dann das Kapitel „Selbstwert und Körper“ öffnen und die Leitfrage an die Tafel schreiben: Was macht mich wertvoll – auch wenn ich mich vergleiche? Die drei Stunden ankündigen: heute der Wert, nächste Woche der Körper, danach der Ton, in dem man mit sich selbst redet. Die Regel für das ganze Kapitel nennen: Niemand muss sagen, was er von sich hält; Persönliches bleibt auf dem eigenen Blatt (3 Min.).",
+            "sagen": [
+              "Daumen hoch, Mitte oder runter: Wer hat seinen Joker gezogen, als die Zahl über 50 ging? Wer erzählt in einem Satz, was sich bewegt hat?",
+              "Drei Wochen lang geht es um eine Frage, die kaum jemand laut stellt: Was macht mich eigentlich wertvoll?",
+              "Ihr müsst hier nicht erzählen, was ihr von euch haltet. Das bleibt auf eurem Blatt."
+            ],
+            "tipp": "Die Leitfrage bleibt drei Wochen an der Tafel oder auf einem Plakat stehen; in der letzten Stunde des Kapitels kommt die Antwort in den Skills-Kompass."
+          },
+          {
+            "titel": "Noahs Achterbahn",
+            "dauer": 12,
+            "phase": "input",
+            "text": "An die linke Tafelseite eine senkrechte Achse von 0 bis 10 zeichnen, darüber: So wertvoll fühlt sich Noah. Die Lehrkraft liest Noahs Tag Uhrzeit für Uhrzeit vor. Nach jeder Uhrzeit zeigen alle auf drei mit den Fingern, wie wertvoll sich Noah gerade fühlt; eine freiwillige Person setzt den Punkt an die Achse, eine zweite sagt, was Noah in diesem Moment über sich denken könnte (8 Min.). Die Punkte zu einer Linie verbinden – das ist die Achterbahn. Dann mit der zweiten Farbe ganz oben eine gerade Linie quer über die Tafel ziehen und fragen: Wie viel war Noah um 7:45 Uhr wert, wie viel um 21:40 Uhr? Daraus das Tafelbild entwickeln: links das Gefühl, das schwankt, rechts der Wert, der bleibt (4 Min.).",
+            "sagen": [
+              "Zeigt mit den Fingern: Wie wertvoll fühlt sich Noah jetzt – und was denkt er gerade über sich?",
+              "Und jetzt die gerade Linie: Wie viel war Noah um 7:45 Uhr wert – und wie viel um 21:40 Uhr?",
+              "Noahs Gefühl ist den ganzen Tag Achterbahn gefahren. Sein Wert hat sich keinen Millimeter bewegt."
+            ],
+            "punkte": [
+              "7:45 Uhr – Der Französisch-Test kommt zurück: 19 von 60.",
+              "10:05 Uhr – Im Sport schießt Noah das entscheidende Tor. Alle jubeln.",
+              "12:30 Uhr – In der Kantine lacht jemand über seine Schuhe, zwei andere lachen mit.",
+              "15:10 Uhr – Sein neues Video hat nach zwei Stunden drei Likes.",
+              "17:30 Uhr – Er hilft seiner kleinen Schwester bei den Hausaufgaben. Sie sagt: Du erklärst besser als meine Lehrerin.",
+              "21:40 Uhr – Im Klassenchat sieht er, dass fast alle zu einem Geburtstag eingeladen sind. Er nicht."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Das Gefühl, wertvoll zu sein",
+                "Der Wert eines Menschen"
+              ],
+              "zeilen": [
+                [
+                  "schwankt mit Noten, Likes, Lob und Spott",
+                  "bleibt gleich – an guten und an schlechten Tagen"
+                ],
+                [
+                  "hängt oft daran, was andere sagen",
+                  "hängt nicht an Leistung, Aussehen oder Beliebtheit"
+                ],
+                [
+                  "lässt sich stärken – mit Quellen, die tragen",
+                  "muss man sich nicht verdienen"
+                ]
+              ]
+            },
+            "tipp": "Neben jeden Punkt ein Stichwort schreiben – Test, Tor, Schuhe, 3 Likes, Schwester, Geburtstag –, dann verstehen auch die, die die Sprache noch lernen; wer schwer stillsitzt, setzt die Punkte. Sagt jemand „Das bin ja ich“, freundlich antworten: Das geht vielen so – genau deshalb reden wir über Noah. Die Achterbahn bleibt stehen; beim Sortieren nach der Auktion wird sie wieder gebraucht.",
+            "wennEsKippt": "Behauptet jemand, der Wert hänge doch an Leistung – wer nichts kann, ist nichts wert –, nicht belehren, sondern zurückfragen: Ist ein Baby weniger wert, weil es noch nichts kann? Und dein Opa, wenn er krank ist? Wird über Noah gelacht, kurz anhalten und fragen, wie es Noah ginge, wenn jetzt auch noch diese Klasse lacht. Werden die Finger zur Spaßnummer, entscheiden nur noch die Freiwilligen an der Tafel."
+          },
+          {
+            "titel": "Worauf steht mein Selbstwert?",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Das Blatt aufschlagen und die Überschrift vorlesen. Aufgabe 1 füllt jede Person still für sich aus: Wie stark hängt mein Gefühl, wertvoll zu sein, an diesen Dingen (4 Min.)? Dann den Kasten „Was wackelt, was trägt?“ lesen und an Noahs Tag prüfen: Welche Uhrzeiten hängen an wackeligen Quellen, welche an tragenden? Zwei, drei Stimmen (3 Min.). Jede Person schaut still auf ihre eigenen Kreuze; niemand zählt laut aus. Dann den Eisberg erklären – oben, was alle sehen und bewerten, unten, was einen Menschen trägt –, und jede Person schreibt unter Wasser mindestens drei eigene Quellen (Aufgabe 2, 8 Min.). Die Lehrkraft geht herum, liest nur, wenn sie darum gebeten wird, und hilft mit Fragen. Zum Schluss nennen zwei, drei Freiwillige eine Quelle aus ihrem unteren Teil, ohne Erklärung (3 Min.).",
+            "sagen": [
+              "Kreuzt ehrlich an – das Blatt sieht niemand außer euch.",
+              "Unter Wasser kommt, was bleibt, wenn die Note schlecht ist und das Video floppt: Menschen, Dinge, die ihr gern tut, wie ihr mit anderen umgeht.",
+              "Wer mag, nennt eine Quelle von unter Wasser – nur das Wort, keine Geschichte dazu. Ich fange an: dass ich mit meinem Bruder über alles lachen kann."
+            ],
+            "tipp": "Wer unter Wasser nichts findet, bekommt Beispiele statt Druck: Humor, Fairness, jemand, bei dem ich so sein darf, wie ich bin, etwas, das ich gern tue, einmal durchgehalten. Wer in der 7e den Baum der Stärke gestaltet hat und das alte Heft noch hat, darf nachschauen: Wurzeln und Stamm sind tragende Quellen. Wer schnell fertig ist, liest die zwölf Lose an der Tafel und überlegt, welche er ersteigern würde.",
+            "wennEsKippt": "Legt jemand den Stift weg und sagt „Bei mir gibt es nichts“, nicht vor der Klasse widersprechen. Kurz danebensetzen, leise nach einer einzigen Sache fragen, die heute gut war, und merken, mit der Person nach der Stunde zu reden. Wer nichts über sich schreiben will, füllt den Eisberg für Noah aus. Wird an einem Tisch auf fremde Blätter geschaut oder vorgelesen, freundlich, aber klar: Jedes Blatt gehört seiner Person – Blätter umdrehen.",
+            "blatt": "ff6-was-mich-traegt"
+          },
+          {
+            "titel": "Bewegungspause: Alle, die … – unbezahlbar",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen hinter ihrem Stuhl. Die Lehrkraft liest Sätze vor; wer sich angesprochen fühlt, setzt sich kurz hin und steht sofort wieder auf – die Lehrkraft macht mit. Die Sätze nennen Dinge, für die es weder Noten noch Likes gibt. Nach dem letzten Satz fragen: Was davon hätte man kaufen können? Fenster auf, einmal strecken. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Setzt euch kurz, wenn der Satz zu euch passt – und steht gleich wieder auf. Ehrlich, nicht höflich."
+            ],
+            "punkte": [
+              "Alle, die heute schon jemandem geholfen haben – auch bei etwas Kleinem.",
+              "Alle, die mehr als zwei Sprachen sprechen.",
+              "Alle, die etwas können, für das es keine Note gibt.",
+              "Alle, die sich um jemanden kümmern – Geschwister, Großeltern, ein Tier.",
+              "Alle, die schon einmal weitergemacht haben, obwohl es schwer war.",
+              "Alle, die schon einmal jemanden zum Lachen gebracht haben, dem es schlecht ging."
+            ],
+            "tipp": "Nach der Runde nur sagen: Jedes Hinsetzen war etwas, das man nicht kaufen kann – gleich wird genau das versteigert.",
+            "wennEsKippt": "Setzt sich jemand bei jedem Satz demonstrativ, mitlachen und weitermachen. Wird über jemanden gelacht, der sitzt, sofort anhalten: Hier wird niemand kommentiert. Wer nicht aufstehen mag, hebt bei passenden Sätzen kurz die Hand."
+          },
+          {
+            "titel": "Die Wert-Auktion",
+            "dauer": 22,
+            "phase": "aktiv",
+            "text": "Die Tischgruppen sind die Teams; jedes bekommt seinen Umschlag mit 1000 Talern und einer Bieterkarte. Die zwölf Lose hängen nummeriert an der Tafel. Zuerst still für sich (2 Min.): In Aufgabe 3 kreuzt jede Person die drei Lose an, die sie selbst am liebsten hätte – das bleibt privat. Dann plant jedes Team (4 Min.): Welche drei Lose wollen wir unbedingt, wie viel bieten wir höchstens, wer hält die Bieterkarte zuerst? Sie wechselt nach jedem dritten Los die Hand; wer nicht bieten mag, gibt sie weiter. Versteigerung (14 Min.): Die Lehrkraft versteigert die Lose einzeln in gemischter Reihenfolge, laut und mit Hammer; Mindestgebot 100 Taler, erhöht wird in 100er-Schritten, geboten wird nur mit erhobener Bieterkarte. Das Team mit dem höchsten Gebot zahlt sofort an die Bank und bekommt das Los. Zum Schluss zählt jedes Team sein Restgeld (2 Min.).",
+            "sagen": [
+              "Los Nummer 2: hunderttausend Follower, die jeden Post liken. Wer bietet hundert? Zweihundert da hinten – zum Ersten, zum Zweiten …",
+              "Geboten wird nur mit der Bieterkarte. Wer ruft, bietet nicht mit.",
+              "Was ihr euch für euch selbst angekreuzt habt, bleibt auf eurem Blatt. Im Team zählt, was ihr gemeinsam entscheidet."
+            ],
+            "tipp": "Den Auktionator mit Lust an der Übertreibung spielen: Hammer, schnelle Sprache, „zum Ersten, zum Zweiten, zum Dritten“. Je lebendiger die Versteigerung, desto ernster wird danach das Gespräch; wird die Zeit knapp, gehen die letzten Lose im Schnellverkauf an das erste Gebot. Wer nicht bieten mag, ist Bank: nimmt das Geld entgegen, gibt das Los heraus und schreibt an die Tafel, welches Los für wie viel weggegangen ist.",
+            "wennEsKippt": "Kauft ein Team nur Follower, Aussehen und Siege, nicht korrigieren und nicht kommentieren – beim Sortieren sieht die Klasse von selbst, was davon wackelt. Wird es zu laut, das Los zurückhalten, bis alle Karten unten sind; ruft ein Team dazwischen, setzt es beim nächsten Los aus. Streiten zwei Teams über ein Gebot, entscheidet die Lehrkraft sofort. Macht sich jemand über die Wahl eines Teams lustig („Ihr kauft Freunde, weil ihr keine habt“), anhalten: Hier wird gekauft, nicht bewertet – wir reden über Lose, nicht über Menschen.",
+            "blatt": "ff6-wert-auktion"
+          },
+          {
+            "titel": "Was man nicht kaufen kann",
+            "dauer": 13,
+            "phase": "uebung",
+            "text": "Alle Lose kommen an die Tafel: Die ersteigerten bringt je eine Person aus dem Team, die unverkauften hängt die Bank um. Die Klasse sortiert sie gemeinsam auf zwei Felder: „Kann mir ein schlechter Tag wegnehmen“ und „Bleibt, auch an einem schlechten Tag“. Bei jedem Los zeigen alle mit dem Daumen, wohin es gehört; nur wo die Daumen auseinandergehen, wird kurz gesprochen (5 Min.). Dann drei Fragen an die Klasse, je zwei, drei Stimmen: Was hat euch beim Bieten überrascht? Welches Los kann man in Wirklichkeit kaufen? Welche Lose haben vielleicht viele hier schon – ohne einen Taler? Wer mag, sagt, warum sein Team ein Los wollte; niemand muss (4 Min.). Zum Schluss allein auf dem Blatt: in Aufgabe 3 die Lose einkreisen, die man vielleicht schon hat, und in Aufgabe 4 den Satz für einen schlechten Tag schreiben, mit der Beispielzeile als Hilfe (4 Min.).",
+            "sagen": [
+              "Daumen hoch: bleibt, auch an einem schlechten Tag. Daumen runter: kann mir ein schlechter Tag wegnehmen.",
+              "Welches dieser Lose kann man in Wirklichkeit kaufen – und macht es einen wertvoller?",
+              "Schaut auf die rechte Seite: Welche davon habt ihr vielleicht schon, ohne einen Taler bezahlt zu haben? Das kreist ihr nur für euch ein."
+            ],
+            "tipp": "Los 5, das neueste Handy und die teuersten Sneaker, ist das einzige, das man wirklich kaufen kann – und oft das erste, das ein schlechter Tag wertlos macht. Noahs Achterbahn an der Tafel zeigt es: Die Lose im linken Feld passen zu den Uhrzeiten, an denen seine Linie abstürzt.",
+            "wennEsKippt": "Will ein Team sein Los nicht hergeben („Wir haben dafür bezahlt“), es behalten lassen und nur die Nummer an die Tafel schreiben. Wird es still oder bedrückt, wenn es um Los 7 und 8 geht – Freundschaft, Menschen, bei denen man so sein darf, wie man ist –, nicht fragen, wer sie hat; zum nächsten Los gehen, beobachten, wer still wird, und nach der Stunde ein kurzes Gespräch anbieten. Behauptet jemand, man könne sich Freunde kaufen, zurückfragen: Bleiben die auch, wenn das Geld weg ist?",
+            "blatt": "ff6-was-mich-traegt"
+          },
+          {
+            "titel": "Skill: Danke ohne Aber",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Ankündigen: Nichts von der Tafel kann man ersteigern – aber man kann lernen, es anzunehmen, wenn es einem jemand schenkt. Vormachen (3 Min.): Eine freiwillige Person liest der Lehrkraft einen Satz aus dem Kasten auf dem Blatt vor, zum Beispiel: Du hörst richtig zu. Die Lehrkraft reagiert dreimal falsch – kleinreden („Ach, das ist mein Job“), zurückwerfen („Du aber auch“), widersprechen („Stimmt nicht, gestern war ich ungeduldig“) –, und die Klasse benennt jedes Mal, was passiert ist. Dann richtig: hinschauen, einmal ausatmen, „Danke“. Die drei Schritte an die Tafel. Üben zu zweit mit der Person daneben (4 Min.): Jede Person wählt aus dem Kasten den Satz, der für den anderen am ehesten stimmt, und sagt ihn; der andere macht die drei Schritte; dann tauschen. Auswertung (3 Min.): Was war schwerer – sagen oder annehmen? Wann wäre „Danke ohne Aber“ im Alltag dran?",
+            "sagen": [
+              "Wer das Kompliment bekommt, sagt nichts außer Danke. Kein „Stimmt doch gar nicht“ – das ist auch eine Antwort, nur keine freundliche.",
+              "Ihr müsst den Satz nicht glauben. Ihr übt nur, ihn ankommen zu lassen.",
+              "Was war schwerer – ein nettes Wort sagen oder eins annehmen?"
+            ],
+            "punkte": [
+              "Hör bis zum Ende zu – nicht abwinken, nicht unterbrechen.",
+              "Lass den Satz ankommen: Schau kurz hin und atme einmal aus.",
+              "Sag „Danke“ – ohne Aber, ohne Kleinreden, ohne schnelles Gegenlob."
+            ],
+            "tipp": "Die Übung ist die Antwort auf die Auktion: Was hier gesagt wird, kann man nicht kaufen. Die Sätze im Kasten sind bewusst ohne Noten, Likes und Aussehen; wer einen eigenen Satz sagen will, hält sich an dieselbe Regel. „Danke“ gilt in jeder Sprache. Die Skill-Karte hinten im Heft fasst die drei Schritte zusammen.",
+            "wennEsKippt": "Kichern gehört dazu – nicht ermahnen, die Paare einfach weitermachen lassen. Kommt ein ironischer Satz oder einer über Aussehen, freundlich umlenken: Nimm einen aus dem Kasten. Ruft jemand „Bist du verliebt?“, gelassen bleiben: Hier geht es um das, was jemand tut – sonst nichts. Wer keinen Partner will oder gar nicht mag, übt mit der Lehrkraft oder liest die Sätze still und wählt einen für sich selbst. Sitzen zwei zusammen, die gerade Streit haben, neue Paare bilden, ohne Begründung.",
+            "blatt": "ff6-was-mich-traegt"
+          },
+          {
+            "titel": "Skills-Pass und Mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Was kann mir niemand abkaufen – und kein schlechter Tag wegnehmen? Jede Person schreibt ihren Satz, Stichworte reichen; Stempel beim Herumgehen (3 Min.). Dann die Wochen-Mission im Heft zeigen und in einem Satz ansagen: einer Person sagen, was man an ihr schätzt – nichts über Noten, Likes oder Aussehen; wer mag, achtet darauf, wie sie reagiert. Zum Schluss der Ausblick auf die nächste Stunde (2 Min.).",
+            "sagen": [
+              "Ein Satz für den Skills-Pass: Was kann euch niemand abkaufen – und kein schlechter Tag wegnehmen?",
+              "Eure Mission: Sagt diese Woche jemandem, was ihr an der Person schätzt. Nichts über Noten, Likes oder Aussehen – und schaut, ob sie Danke ohne Aber sagt."
+            ],
+            "tipp": "Die Lose können an der Tafel hängen bleiben oder in einen Umschlag kommen; in Stunde 5, wenn es um den inneren Kritiker geht, ist Los 12 ein guter Einstieg."
+          }
+        ],
+        "bruecke": "Nächste Woche geht es um das, womit sich viele am häufigsten vergleichen: den Körper – und warum Bilder im Netz dabei so selten die Wahrheit zeigen.",
+        "mission": "Sag diese Woche jemandem, was du an der Person schätzt – ohne Noten, Likes oder Aussehen.",
+        "hintergrund": "Menschen knüpfen ihren Selbstwert an unterschiedliche Bedingungen – an Aussehen, Anerkennung, Schulleistung oder daran, besser zu sein als andere, aber auch an Werte und Rückhalt. Je stärker er an äußeren Bedingungen hängt, desto mehr schwankt er mit jedem Erfolg und Misserfolg (Crocker & Wolfe, 2001). Im Jugendalter gliedert sich das Selbstbild in viele Bereiche, die unterschiedlich wichtig genommen werden (Harter, 2012). Die Stunde trennt deshalb das schwankende Gefühl vom Wert eines Menschen und lenkt den Blick auf tragende Quellen. Die Auktion macht erfahrbar, was Deci und Ryan (2000) für Lebensziele beschreiben: Beziehungen und Gemeinschaft tragen weiter als Ruhm und Image.",
+        "quellen": [
+          "Crocker, J. & Wolfe, C. T. (2001). Contingencies of self-worth. Psychological Review, 108(3), 593–623.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "achtung": "Beim Selbstwert kommen schnell harte Sätze über sich selbst zum Vorschein. Das Blatt bleibt privat; niemand muss sagen, welche Lose er sich wünscht, und die Käufe der Teams werden nicht bewertet. Los 7 und 8 können wehtun: beobachten, wer still wird, und nach der Stunde nachfragen. Sagt jemand, er sei nichts wert oder es wäre besser, es gäbe ihn nicht: nicht vor der Klasse vertiefen, nach der Stunde ruhig ansprechen, nichts versprechen, noch am selben Tag den SePAS informieren, nach dem Schutzkonzept handeln; bei akuter Gefahr nicht allein lassen, 112.",
+        "differenzierung": {
+          "leichter": "Aufgabe 1 zu zweit mit einer Person, die gut liest; beim Eisberg reichen drei Wörter, in jeder Sprache. Die Lose tragen Piktogramme, und im Team liest eine Person, die gut liest, jedes Los vor. Für den Satz für schlechte Tage die Beispielzeile abwandeln; beim Kompliment genügt es, einen Satz aus dem Kasten vorzulesen.",
+          "schwerer": "Die Bank führen und an der Tafel Buch führen, welches Los für wie viel weggegangen ist. Ein dreizehntes Los erfinden, das man nicht kaufen kann, und begründen, auf welches Feld es gehört. Zu einer wackeligen Quelle notieren, welche tragende einspringt, wenn sie an einem Tag wegbricht."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Punkt und Zahl (5 Min.), Noahs Achterbahn an der Tafel (8 Min.), die Wert-Auktion mit acht Losen, 1 bis 4 und 7 bis 10 (20 Min.), Lose sortieren mit drei Fragen (7 Min.), Danke ohne Aber (5 Min.), Skills-Pass und Mission (5 Min.). Das Blatt mit Einschätzung und Eisberg wird in der nächsten Stunde zum Einstieg nachgeholt."
+      },
+      "fr": {
+        "titel": "Qu’est-ce qui fait ma valeur ?",
+        "kurz": "Qu’est-ce qui tient quand notes, likes et apparence vacillent ? La classe suit la journée de Noah, met aux enchères ce qui ne s’achète pas et apprend à accepter un compliment.",
+        "ziele": [
+          "distinguent, avec la journée de Noah, le sentiment de valeur, qui varie, de la valeur d’une personne, qui reste",
+          "classent les sources de l’estime de soi en fragiles et solides et en trouvent trois solides à eux",
+          "décident en équipe, aux enchères, ce qui compte pour eux et constatent que cela ne s’achète pas",
+          "accueillent un compliment avec un « merci sans mais »"
+        ],
+        "material": [
+          "Affiches roue et échelle, gommettes",
+          "Cahier de l’élève, tampon",
+          "Lots et faux billets (modèle)",
+          "5 enveloppes, boîte (la banque)",
+          "Cuillère en bois ou cloche (marteau)",
+          "Aimants ou adhésif pour les lots",
+          "Craie ou feutres de deux couleurs"
+        ],
+        "vorbereitung": [
+          "Photocopier le modèle (lots une fois, billets cinq fois) et découper ; par îlot, 1000 écus et un carton d’enchère dans une enveloppe.",
+          "Au tableau : à gauche un axe de 0 à 10 pour la journée de Noah, au milieu la place des douze lots, à droite deux cases vides.",
+          "Demander au régent si un jeune vient de perdre une amitié ou est mis à l’écart (lots 7 et 8).",
+          "Si un élève s’appelle Noah, donner un autre prénom au personnage."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : gommette, chiffre, mot gentil"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour, mission joker et nouveau chapitre"
+          },
+          {
+            "min": "15–27",
+            "phase": "input",
+            "titel": "Les montagnes russes de Noah"
+          },
+          {
+            "min": "27–45",
+            "phase": "uebung",
+            "titel": "Sur quoi repose mon estime de soi ?"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : Tous ceux qui… – sans prix"
+          },
+          {
+            "min": "50–72",
+            "phase": "aktiv",
+            "titel": "Les enchères des valeurs"
+          },
+          {
+            "min": "72–85",
+            "phase": "uebung",
+            "titel": "Ce qui ne s’achète pas"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : merci sans mais"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass et mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : gommette, chiffre, mot gentil",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions (3 min). À trois, tout le monde montre sa tension avec les doigts, de 0 à 10 doigts pour 0 à 100 ; l’enseignant·e commence avec son émotion et son chiffre (2 min). Puis une question facultative : quelqu’un t’a-t-il dit quelque chose de gentil cette semaine – ou toi à quelqu’un ? Raconter d’abord un exemple du quotidien, puis deux ou trois volontaires disent une phrase chacun ; « je passe » n’est pas commenté (4 min). Pour finir, annoncer que ce genre de phrase reviendra à la fin du cours : ça ne s’achète pas (1 min).",
+            "sagen": [
+              "Gommette sur la roue, chiffre avec les doigts – et si vous voulez : quelqu’un vous a dit quelque chose de gentil cette semaine ? Ou vous à quelqu’un ?",
+              "Moi, c’était le chauffeur de bus : il a attendu en me voyant courir. Ça m’a sauvé la matinée."
+            ],
+            "tipp": "S’il y a peu d’exemples, c’est aussi une information : les mots gentils sont rares. Ne pas s’en désoler, continuer – c’est justement ce qu’on va entraîner à la fin du cours.",
+            "wennEsKippt": "Si un exemple ironique tombe (« Ma mère m’a dit de ranger ma chambre »), rire avec la classe et continuer. Si quelqu’un dit sérieusement « Personne ne me dit jamais rien de gentil », ne pas contredire ni approfondir : remercier brièvement et lui demander discrètement après le cours comment il va."
+          },
+          {
+            "titel": "Retour, mission joker et nouveau chapitre",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Puis demander où en est la mission de la semaine : quelqu’un a-t-il sorti son skill joker quand son chiffre dépassait 50 ? Pouce en haut, au milieu ou en bas ; une voix raconte en une phrase ce qui a bougé dans son chiffre – personne n’est obligé de l’avoir réussie (2 min). Ouvrir ensuite le chapitre « Estime de soi et corps » et écrire la question au tableau : qu’est-ce qui fait ma valeur – même quand je me compare ? Annoncer les trois séances : aujourd’hui la valeur, la semaine prochaine le corps, ensuite le ton sur lequel on se parle à soi-même. Poser la règle pour tout le chapitre : personne n’a à dire ce qu’il pense de lui-même ; ce qui est personnel reste sur sa propre fiche (3 min).",
+            "sagen": [
+              "Pouce en haut, au milieu ou en bas : qui a sorti son joker quand le chiffre dépassait 50 ? Qui raconte en une phrase ce qui a bougé ?",
+              "Pendant trois semaines, on va parler d’une question que presque personne ne pose à voix haute : qu’est-ce qui fait ma valeur, au fond ?",
+              "Vous n’avez pas à raconter ce que vous pensez de vous. Ça reste sur votre fiche."
+            ],
+            "tipp": "La question du chapitre reste trois semaines au tableau ou sur une affiche ; à la dernière séance du chapitre, la réponse passe dans la boussole des skills."
+          },
+          {
+            "titel": "Les montagnes russes de Noah",
+            "dauer": 12,
+            "phase": "input",
+            "text": "Sur la partie gauche du tableau, tracer un axe vertical de 0 à 10, avec au-dessus : ce que Noah sent qu’il vaut. Lire la journée de Noah heure par heure. Après chaque heure, tout le monde montre à trois avec les doigts ce que Noah sent qu’il vaut à ce moment ; un volontaire place le point sur l’axe, un autre dit ce que Noah pourrait penser de lui à cet instant (8 min). Relier les points : ce sont les montagnes russes. Puis, avec la deuxième couleur, tirer tout en haut une ligne droite d’un bout à l’autre du tableau et demander : combien valait Noah à 7 h 45, combien à 21 h 40 ? En tirer le tableau : à gauche le sentiment, qui varie, à droite la valeur, qui reste (4 min).",
+            "sagen": [
+              "Montrez avec les doigts : combien Noah sent-il qu’il vaut maintenant – et qu’est-ce qu’il pense de lui en ce moment ?",
+              "Et maintenant la ligne droite : combien valait Noah à 7 h 45 – et combien à 21 h 40 ?",
+              "Le sentiment de Noah a fait les montagnes russes toute la journée. Sa valeur n’a pas bougé d’un millimètre."
+            ],
+            "punkte": [
+              "7 h 45 – Le devoir de français revient : 19 sur 60.",
+              "10 h 05 – En sport, Noah marque le but décisif. Tout le monde l’acclame.",
+              "12 h 30 – À la cantine, quelqu’un se moque de ses chaussures, deux autres rient avec lui.",
+              "15 h 10 – Sa nouvelle vidéo a trois likes au bout de deux heures.",
+              "17 h 30 – Il aide sa petite sœur à faire ses devoirs. Elle dit : tu expliques mieux que ma prof.",
+              "21 h 40 – Dans le groupe de la classe, il voit que presque tout le monde est invité à un anniversaire. Pas lui."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Le sentiment d’avoir de la valeur",
+                "La valeur d’une personne"
+              ],
+              "zeilen": [
+                [
+                  "varie avec les notes, les likes, les compliments et les moqueries",
+                  "reste la même – les bons comme les mauvais jours"
+                ],
+                [
+                  "dépend souvent de ce que disent les autres",
+                  "ne dépend ni des résultats, ni de l’apparence, ni de la popularité"
+                ],
+                [
+                  "se renforce – avec des sources solides",
+                  "ne se mérite pas"
+                ]
+              ]
+            },
+            "tipp": "Écrire un mot-clé à côté de chaque point – devoir, but, chaussures, 3 likes, petite sœur, anniversaire –, pour que ceux qui apprennent encore la langue suivent aussi ; qui a du mal à rester assis place les points. Si quelqu’un dit « Mais c’est moi », répondre gentiment : ça arrive à beaucoup de monde – c’est justement pour ça qu’on parle de Noah. Les montagnes russes restent au tableau ; on en aura besoin pour trier les lots après les enchères.",
+            "wennEsKippt": "Si quelqu’un affirme que la valeur dépend quand même des résultats – qui ne sait rien faire ne vaut rien –, ne pas faire la leçon, mais renvoyer la question : un bébé vaut-il moins parce qu’il ne sait encore rien faire ? Et ton grand-père, quand il est malade ? Si la classe se moque de Noah, s’arrêter et demander comment se sentirait Noah si, en plus, cette classe riait de lui. Si les doigts tournent au numéro comique, seuls les volontaires au tableau décident."
+          },
+          {
+            "titel": "Sur quoi repose mon estime de soi ?",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Ouvrir la fiche et lire le sous-titre à voix haute. Chacun remplit l’exercice 1 en silence, pour soi : à quel point mon sentiment d’avoir de la valeur dépend-il de ces choses (4 min) ? Lire ensuite l’encadré « Ce qui vacille, ce qui porte » et le vérifier sur la journée de Noah : quelles heures dépendent de sources fragiles, lesquelles de sources solides ? Deux ou trois voix (3 min). Chacun regarde en silence ses propres croix ; personne ne compte à voix haute. Expliquer ensuite l’iceberg – en haut, ce que tout le monde voit et juge, en bas, ce qui porte une personne –, et chacun écrit sous l’eau au moins trois sources à lui (exercice 2, 8 min). Circuler, ne lire que si un jeune le demande et aider par des questions. Pour finir, deux ou trois volontaires nomment une source de leur partie immergée, sans explication (3 min).",
+            "sagen": [
+              "Cochez honnêtement – personne d’autre que vous ne voit cette fiche.",
+              "Sous l’eau, on met ce qui reste quand la note est mauvaise et que la vidéo fait un flop : des personnes, des choses que vous aimez faire, votre façon d’être avec les autres.",
+              "Qui veut nomme une source de sous l’eau – juste le mot, sans histoire. Je commence : pouvoir rire de tout avec mon frère."
+            ],
+            "tipp": "Qui ne trouve rien sous l’eau reçoit des exemples, pas de la pression : l’humour, être juste, quelqu’un avec qui je peux être moi-même, une chose que j’aime faire, avoir tenu bon une fois. Ceux qui ont dessiné l’arbre des forces en 7e et ont encore leur ancien cahier peuvent y jeter un œil : les racines et le tronc sont des sources solides. Qui a fini vite lit les douze lots au tableau et réfléchit à ceux qu’il achèterait.",
+            "wennEsKippt": "Si un jeune pose son stylo et dit « Chez moi, il n’y a rien », ne pas le contredire devant la classe. S’asseoir un instant à côté de lui, lui demander à voix basse une seule chose qui s’est bien passée aujourd’hui, et noter de lui parler après le cours. Qui ne veut rien écrire sur soi remplit l’iceberg pour Noah. Si, à une table, on regarde la fiche des autres ou on la lit à voix haute, dire gentiment mais clairement : chaque fiche appartient à sa personne – on retourne les fiches.",
+            "blatt": "ff6-was-mich-traegt"
+          },
+          {
+            "titel": "Pause active : Tous ceux qui… – sans prix",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève derrière sa chaise. Lire des phrases ; qui se sent concerné s’assoit un instant et se relève aussitôt – l’enseignant·e participe. Les phrases parlent de choses pour lesquelles il n’y a ni note ni like. Après la dernière phrase, demander : laquelle de ces choses aurait-on pu acheter ? Fenêtre ouverte, s’étirer une fois. Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Asseyez-vous un instant si la phrase vous concerne – et relevez-vous tout de suite. Honnêtement, pas par politesse."
+            ],
+            "punkte": [
+              "Tous ceux qui ont déjà aidé quelqu’un aujourd’hui – même pour une petite chose.",
+              "Tous ceux qui parlent plus de deux langues.",
+              "Tous ceux qui savent faire quelque chose pour lequel il n’y a pas de note.",
+              "Tous ceux qui s’occupent de quelqu’un – frères et sœurs, grands-parents, un animal.",
+              "Tous ceux qui ont déjà continué alors que c’était dur.",
+              "Tous ceux qui ont déjà fait rire quelqu’un qui allait mal."
+            ],
+            "tipp": "Après le tour, dire simplement : chaque fois que vous vous êtes assis, c’était quelque chose qui ne s’achète pas – c’est exactement ce qu’on va mettre aux enchères.",
+            "wennEsKippt": "Si quelqu’un s’assoit ostensiblement à chaque phrase, en rire et continuer. Si l’on se moque de quelqu’un qui s’assoit, s’arrêter tout de suite : ici, personne n’est commenté. Qui ne veut pas se lever lève brièvement la main aux phrases qui le concernent."
+          },
+          {
+            "titel": "Les enchères des valeurs",
+            "dauer": 22,
+            "phase": "aktiv",
+            "text": "Les îlots sont les équipes ; chacun reçoit son enveloppe avec 1000 écus et un carton d’enchère. Les douze lots sont affichés et numérotés au tableau. D’abord en silence, chacun pour soi (2 min) : à l’exercice 3, chacun coche les trois lots qu’il aimerait le plus avoir – cela reste privé. Puis chaque équipe planifie (4 min) : quels trois lots voulons-nous absolument, combien offrons-nous au maximum, qui tient le carton en premier ? Il change de main tous les trois lots ; qui ne veut pas enchérir le passe. Enchères (14 min) : vendre les lots un par un, dans le désordre, à voix haute et avec le marteau ; mise de départ 100 écus, on monte de 100 en 100, on enchérit seulement en levant le carton. L’équipe qui fait l’offre la plus haute paie tout de suite à la banque et reçoit le lot. Pour finir, chaque équipe compte l’argent qui lui reste (2 min).",
+            "sagen": [
+              "Lot numéro 2 : cent mille abonnés qui likent chaque post. Qui dit cent ? Deux cents, là-bas au fond – une fois, deux fois…",
+              "On enchérit seulement avec le carton. Qui crie n’enchérit pas.",
+              "Ce que vous avez coché pour vous-mêmes reste sur votre fiche. Dans l’équipe, ce qui compte, c’est ce que vous décidez ensemble."
+            ],
+            "tipp": "Jouer le commissaire-priseur avec un plaisir évident d’exagérer : le marteau, un débit rapide, « une fois, deux fois, trois fois – adjugé ». Plus les enchères sont vivantes, plus la discussion d’après sera sérieuse ; si le temps manque, les derniers lots partent en vente éclair à la première offre. Qui ne veut pas enchérir tient la banque : il encaisse, remet le lot et note au tableau quel lot est parti pour combien.",
+            "wennEsKippt": "Si une équipe n’achète que des abonnés, l’apparence et les victoires, ne pas corriger ni commenter – au moment du tri, la classe voit d’elle-même ce qui vacille. Si le bruit monte, garder le lot jusqu’à ce que tous les cartons soient baissés ; une équipe qui crie passe son tour au lot suivant. Si deux équipes se disputent une offre, trancher tout de suite. Si quelqu’un se moque du choix d’une équipe (« Vous achetez des amis parce que vous n’en avez pas »), arrêter : ici, on achète, on ne juge pas – on parle des lots, pas des personnes.",
+            "blatt": "ff6-wert-auktion"
+          },
+          {
+            "titel": "Ce qui ne s’achète pas",
+            "dauer": 13,
+            "phase": "uebung",
+            "text": "Tous les lots reviennent au tableau : un membre de chaque équipe apporte les lots achetés, la banque déplace les invendus. La classe les trie ensemble dans deux cases : « Une mauvaise journée peut me l’enlever » et « Reste, même un mauvais jour ». Pour chaque lot, tout le monde montre avec le pouce où il va ; on ne discute brièvement que là où les pouces divergent (5 min). Puis trois questions à la classe, deux ou trois voix chacune : qu’est-ce qui vous a surpris pendant les enchères ? Quel lot peut-on vraiment acheter ? Quels lots beaucoup ici ont-ils peut-être déjà – sans un seul écu ? Qui veut dit pourquoi son équipe voulait un lot ; personne n’y est obligé (4 min). Pour finir, seul sur la fiche : à l’exercice 3, entourer les lots qu’on a peut-être déjà, et à l’exercice 4, écrire sa phrase pour un mauvais jour, avec l’exemple comme aide (4 min).",
+            "sagen": [
+              "Pouce en haut : ça reste, même un mauvais jour. Pouce en bas : une mauvaise journée peut me l’enlever.",
+              "Lequel de ces lots peut-on vraiment acheter – et est-ce qu’il donne plus de valeur ?",
+              "Regardez la case de droite : lesquels avez-vous peut-être déjà, sans avoir payé un seul écu ? Ça, vous l’entourez seulement pour vous."
+            ],
+            "tipp": "Le lot 5, le dernier portable et les baskets les plus chères, est le seul qu’on peut vraiment acheter – et souvent le premier qu’une mauvaise journée rend sans valeur. Les montagnes russes de Noah au tableau le montrent : les lots de la case de gauche correspondent aux heures où sa courbe plonge.",
+            "wennEsKippt": "Si une équipe ne veut pas rendre son lot (« On l’a payé »), le lui laisser et écrire seulement le numéro au tableau. Si l’ambiance devient silencieuse ou lourde aux lots 7 et 8 – l’amitié, des gens avec qui on peut être soi-même –, ne pas demander qui les a ; passer au lot suivant, observer qui se tait et proposer un court échange après le cours. Si quelqu’un affirme qu’on peut s’acheter des amis, renvoyer la question : restent-ils quand l’argent n’est plus là ?",
+            "blatt": "ff6-was-mich-traegt"
+          },
+          {
+            "titel": "Skill : merci sans mais",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Annoncer : rien de ce qui est au tableau ne s’achète aux enchères – mais on peut apprendre à l’accepter quand quelqu’un vous l’offre. Démonstration (3 min) : un volontaire lit à l’enseignant·e une phrase de l’encadré de la fiche, par exemple : tu écoutes vraiment. L’enseignant·e réagit trois fois de travers – minimiser (« Bof, c’est mon travail »), renvoyer (« Toi aussi »), contredire (« Pas vrai, hier j’ai perdu patience ») –, et la classe nomme chaque fois ce qui s’est passé. Puis correctement : regarder la personne, expirer une fois, « merci ». Écrire les trois étapes au tableau. Entraînement à deux avec son voisin (4 min) : chacun choisit dans l’encadré la phrase qui correspond le mieux à l’autre et la lui dit ; l’autre fait les trois étapes ; puis on échange. Bilan (3 min) : qu’est-ce qui était le plus difficile – dire ou accepter ? Quand le « merci sans mais » servirait-il au quotidien ?",
+            "sagen": [
+              "Qui reçoit le compliment ne dit rien d’autre que merci. Pas de « C’est même pas vrai » – c’est aussi une réponse, mais pas une gentille.",
+              "Vous n’avez pas besoin de croire la phrase. Vous vous entraînez seulement à la laisser arriver.",
+              "Qu’est-ce qui était le plus dur – dire un mot gentil ou en accepter un ?"
+            ],
+            "punkte": [
+              "Écoute jusqu’au bout – sans balayer d’un geste, sans couper.",
+              "Laisse la phrase arriver : regarde la personne et expire une fois.",
+              "Dis « merci » – sans mais, sans minimiser, sans compliment en retour tout de suite."
+            ],
+            "tipp": "L’exercice répond aux enchères : ce qui se dit ici ne s’achète pas. Les phrases de l’encadré ne parlent volontairement ni de notes, ni de likes, ni d’apparence ; qui veut dire sa propre phrase suit la même règle. « Merci » vaut dans toutes les langues. La carte skill à la fin du cahier résume les trois étapes.",
+            "wennEsKippt": "Les rires gênés en font partie – ne pas gronder, laisser les paires continuer. Si une phrase ironique ou une phrase sur l’apparence tombe, réorienter gentiment : prends-en une dans l’encadré. Si quelqu’un lance « T’es amoureux ? », rester calme : ici, on parle de ce que quelqu’un fait – rien d’autre. Qui ne veut pas de partenaire ou ne veut pas du tout s’entraîne avec l’enseignant·e ou lit les phrases en silence et en choisit une pour soi. Si deux jeunes en froid se retrouvent ensemble, refaire les paires sans explication.",
+            "blatt": "ff6-was-mich-traegt"
+          },
+          {
+            "titel": "Skills-Pass et mission",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire au tableau la question du Skills-Pass : qu’est-ce que personne ne peut m’acheter – et qu’aucun mauvais jour ne peut m’enlever ? Chacun écrit sa phrase, des mots-clés suffisent ; tampon en passant dans les rangs (3 min). Puis montrer la mission de la semaine dans le cahier et l’annoncer en une phrase : dire à une personne ce qu’on apprécie chez elle – rien sur les notes, les likes ou l’apparence ; qui veut observe comment elle réagit. Pour finir, annoncer la prochaine séance (2 min).",
+            "sagen": [
+              "Une phrase pour le Skills-Pass : qu’est-ce que personne ne peut vous acheter – et qu’aucun mauvais jour ne peut vous enlever ?",
+              "Votre mission : dites cette semaine à une personne ce que vous appréciez chez elle. Rien sur les notes, les likes ou l’apparence – et regardez si elle dit merci sans mais."
+            ],
+            "tipp": "Les lots peuvent rester au tableau ou aller dans une enveloppe ; à la séance 5, sur le critique intérieur, le lot 12 fait une bonne entrée en matière."
+          }
+        ],
+        "bruecke": "La semaine prochaine, on parlera de ce à quoi beaucoup se comparent le plus souvent : le corps – et pourquoi les images en ligne montrent si rarement la réalité.",
+        "mission": "Dis à une personne ce que tu apprécies chez elle – ni notes, ni likes, ni apparence.",
+        "hintergrund": "On attache son estime de soi à des conditions diverses – l’apparence, la reconnaissance, les résultats scolaires ou le fait d’être meilleur que les autres, mais aussi des valeurs et du soutien. Plus elle dépend de conditions extérieures, plus elle varie avec chaque réussite et chaque échec (Crocker & Wolfe, 2001). À l’adolescence, l’image de soi se divise en de nombreux domaines qui n’ont pas tous la même importance (Harter, 2012). La séance distingue donc le sentiment, qui varie, de la valeur d’une personne et met en avant les sources solides. Les enchères font vivre ce que Deci et Ryan (2000) décrivent pour les buts de vie : relations et communauté portent plus loin que célébrité et image.",
+        "quellen": [
+          "Crocker, J. & Wolfe, C. T. (2001). Contingencies of self-worth. Psychological Review, 108(3), 593–623.",
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "achtung": "Parler d’estime de soi fait vite remonter des phrases dures sur soi-même. La fiche reste privée ; personne n’a à dire quels lots il souhaite, et on ne juge pas les achats des équipes. Les lots 7 et 8 peuvent faire mal : observer qui se tait et en parler après le cours. Si un jeune dit qu’il ne vaut rien ou qu’il vaudrait mieux qu’il n’existe pas : ne pas approfondir devant la classe, lui parler calmement après le cours, ne rien promettre, informer le SePAS le jour même, suivre le protocole de protection ; en cas de danger aigu, ne pas le laisser seul, 112.",
+        "differenzierung": {
+          "leichter": "L’exercice 1 à deux avec quelqu’un qui lit bien ; pour l’iceberg, trois mots suffisent, dans n’importe quelle langue. Les lots portent des pictogrammes, et dans chaque équipe quelqu’un qui lit bien lit chaque lot à voix haute. Pour la phrase d’un mauvais jour, adapter l’exemple ; pour le compliment, lire une phrase de l’encadré suffit.",
+          "schwerer": "Tenir la banque et noter au tableau quel lot est parti pour combien. Inventer un treizième lot qui ne s’achète pas et justifier dans quelle case il va. Pour une source fragile, noter quelle source solide prend le relais le jour où elle s’effondre."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec gommette et chiffre (5 min), les montagnes russes de Noah au tableau (8 min), les enchères avec huit lots, 1 à 4 et 7 à 10 (20 min), tri des lots avec trois questions (7 min), merci sans mais (5 min), Skills-Pass et mission (5 min). La fiche avec l’auto-évaluation et l’iceberg sert d’entrée en matière à la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff6-was-mich-traegt",
+      "bereich": "skills",
+      "thema": "ich",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "30 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Selbstwert",
+        "Wert-Auktion",
+        "Kompliment annehmen",
+        "Förderfach"
+      ],
+      "bild": "icon:tree",
+      "kurs": [
+        "ff6-e03"
+      ],
+      "de": {
+        "titel": "Was mich trägt",
+        "untertitel": "Dein Wert als Mensch hängt nicht an einer Note. Das Gefühl dafür manchmal schon – je nachdem, worauf es steht.",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Wie stark hängt dein Gefühl, wertvoll zu sein, an diesen Dingen? Kreuz ehrlich an.",
+            "hinweis": "Nur für dich – niemand sammelt das Blatt ein, niemand muss etwas vorlesen."
+          },
+          {
+            "art": "einschaetzung",
+            "items": [
+              "gute Noten und Lob in der Schule",
+              "Likes, Kommentare, Follower",
+              "wie ich aussehe",
+              "ob ich gewinne oder besser bin als andere",
+              "Menschen, bei denen ich so sein darf, wie ich bin",
+              "wie ich mit anderen umgehe – fair, ehrlich, hilfsbereit",
+              "was ich gern mache und worin ich besser werde"
+            ],
+            "optionen": [
+              "stark",
+              "etwas",
+              "kaum"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Was wackelt, was trägt?",
+            "text": "Die ersten vier hängen am Urteil anderer oder am Vergleich – ein einziger Tag kann sie dir nehmen. Die letzten drei hängen mehr an dir. Noten und Siege dürfen dich freuen – sie sollten nur nicht das Einzige sein, worauf du stehst."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein Eisberg: Was trägt dich? Schreib unten mindestens drei Dinge auf."
+          },
+          {
+            "art": "eisberg",
+            "oben": "Das sehen und bewerten alle",
+            "unten": "Das trägt mich – auch an schlechten Tagen",
+            "beispielOben": "Noten, Aussehen, Likes, Siege",
+            "beispielUnten": "mein Humor, meine Oma, dass ich zu Freunden halte, Gitarre spielen"
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wert-Auktion: Kreuze vorher die drei Lose an, die du am liebsten hättest. Kreise nachher die ein, die du vielleicht schon hast.",
+            "hinweis": "Das musst du niemandem zeigen. Im Team zählt, was ihr gemeinsam entscheidet."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 3,
+            "items": [
+              "1 · Nur noch Bestnoten",
+              "2 · 100.000 Follower",
+              "3 · Aussehen wie auf Fotos",
+              "4 · Immer gewinnen",
+              "5 · Neuestes Handy, teure Sneaker",
+              "6 · Alle finden mich cool",
+              "7 · Jemand, der zu mir hält",
+              "8 · So sein dürfen, wie ich bin",
+              "9 · Mut, zu sagen, was ich denke",
+              "10 · Als fair und ehrlich gelten",
+              "11 · Etwas, das ich richtig gern mache",
+              "12 · Freundlich mit mir reden"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein Satz für einen schlechten Tag: Was sagst du dir, wenn eine wackelige Quelle wegbricht?"
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 2,
+            "beispiele": [
+              {
+                "wenn": "Wenn ich 19 von 60 zurückbekomme und denke: „Ich bin einfach zu dumm“,",
+                "dann": "sage ich mir: Die Note bewertet einen Test, nicht mich. Und ich frage Tiago, ob er mir die Aufgabe erklärt."
+              }
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "info",
+                "symbol": "merke",
+                "titel": "Danke ohne Aber",
+                "punkte": [
+                  "Hör bis zum Ende zu – nicht abwinken.",
+                  "Lass den Satz ankommen: kurz hinschauen, einmal ausatmen.",
+                  "Sag „Danke“ – ohne Aber, ohne Kleinreden."
+                ]
+              }
+            ],
+            "rechts": [
+              {
+                "art": "wortspeicher",
+                "titel": "Sätze, die man nicht kaufen kann",
+                "items": [
+                  "Mit dir kann man über alles lachen.",
+                  "Du hältst zu anderen.",
+                  "Du hörst richtig zu.",
+                  "Du bist fair, auch wenn du verlierst.",
+                  "Du hilfst, ohne dass man fragen muss.",
+                  "Du gibst nicht auf."
+                ]
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Du entscheidest, was du teilst.",
+            "text": "Wenn die Gedanken über dich selbst oft sehr hart sind, sprich mit jemandem, dem du vertraust – beim SePAS oder anonym beim Kanner- a Jugendtelefon (116 111)."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen erkennen, woran sie ihr Gefühl, wertvoll zu sein, knüpfen, finden tragende Quellen, halten in der Wert-Auktion privat fest, was ihnen wichtig ist, und schreiben einen Satz für schlechte Tage.",
+          "ablauf": [
+            "Einheit 3, Schritt 4 (18 Min.): Text lesen, Aufgabe 1 still, Kasten an Noahs Tag prüfen, Eisberg mit mindestens drei Quellen.",
+            "Schritt 6: Vor der Auktion in Aufgabe 3 drei Lose ankreuzen – privat.",
+            "Schritt 7: nach dem Sortieren die Lose einkreisen, die man vielleicht schon hat; Aufgabe 4 mit der Beispielzeile.",
+            "Schritt 8: Kasten „Danke ohne Aber“ und Sätze für die Übung zu zweit."
+          ],
+          "hintergrund": "Wer den Selbstwert vor allem an Aussehen, Anerkennung oder Siege knüpft, erlebt ihn schwankender als jemand, dessen Selbstwert auf Werten und tragenden Beziehungen ruht (Crocker & Wolfe, 2001). Das Blatt macht diese Quellen sichtbar, ohne dass jemand über sich sprechen muss.",
+          "quellen": [
+            "Crocker, J. & Wolfe, C. T. (2001). Contingencies of self-worth. Psychological Review, 108(3), 593–623."
+          ],
+          "achtung": "Das Blatt wird weder eingesammelt noch vorgelesen. Bleibt der Eisberg leer oder stehen dort sehr harte Sätze, nach der Stunde behutsam nachfragen und den SePAS einbeziehen.",
+          "material": "Stifte; Lose und Spielgeld aus der Kopiervorlage"
+        }
+      },
+      "fr": {
+        "titel": "Ce qui me porte",
+        "untertitel": "Ta valeur ne dépend pas d’une note. Le sentiment de valeur, parfois si – selon ce sur quoi il repose.",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "À quel point ton sentiment d’avoir de la valeur dépend-il de ces choses ? Coche honnêtement.",
+            "hinweis": "Rien que pour toi – personne ne ramasse la fiche, personne ne doit lire à voix haute."
+          },
+          {
+            "art": "einschaetzung",
+            "items": [
+              "les bonnes notes et les compliments à l’école",
+              "les likes, les commentaires, les abonnés",
+              "mon apparence",
+              "gagner ou être meilleur que les autres",
+              "des gens avec qui je peux être moi-même",
+              "ma façon d’être avec les autres – juste, honnête, serviable",
+              "ce que j’aime faire et où je progresse"
+            ],
+            "optionen": [
+              "beaucoup",
+              "un peu",
+              "à peine"
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Ce qui vacille, ce qui porte",
+            "text": "Les quatre premières dépendent du jugement des autres ou de la comparaison – une seule journée peut te les enlever. Les trois dernières dépendent davantage de toi. Les notes et les victoires peuvent te faire plaisir – elles ne devraient juste pas être ton seul appui."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ton iceberg : qu’est-ce qui te porte ? Écris en bas au moins trois choses."
+          },
+          {
+            "art": "eisberg",
+            "oben": "Ce que tout le monde voit et juge",
+            "unten": "Ce qui me porte – même les mauvais jours",
+            "beispielOben": "notes, apparence, likes, victoires",
+            "beispielUnten": "mon humour, ma grand-mère, je soutiens mes amis, jouer de la guitare"
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Enchères : avant, coche les trois lots que tu aimerais le plus avoir. Après, entoure ceux que tu as peut-être déjà.",
+            "hinweis": "Tu n’as à le montrer à personne. Dans l’équipe, ce qui compte, c’est ce que vous décidez ensemble."
+          },
+          {
+            "art": "ankreuzen",
+            "spalten": 3,
+            "items": [
+              "1 · Que des meilleures notes",
+              "2 · 100 000 abonnés",
+              "3 · Ressembler aux photos",
+              "4 · Gagner toujours",
+              "5 · Dernier portable, baskets chères",
+              "6 · Tout le monde me trouve cool",
+              "7 · Quelqu’un qui me soutient",
+              "8 · Pouvoir être moi-même",
+              "9 · Le courage de dire ce que je pense",
+              "10 · Être connu comme juste et honnête",
+              "11 · Une chose que j’adore faire",
+              "12 · Me parler avec gentillesse"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ta phrase pour un mauvais jour : que te dis-tu quand une source fragile s’effondre ?"
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 2,
+            "beispiele": [
+              {
+                "wenn": "Si je récupère un 19 sur 60 et que je pense : “Je suis vraiment trop nul”,",
+                "dann": "je me dis : la note évalue un devoir, pas moi. Et je demande à Tiago de m’expliquer l’exercice."
+              }
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "info",
+                "symbol": "merke",
+                "titel": "Merci sans mais",
+                "punkte": [
+                  "Écoute jusqu’au bout – sans balayer d’un geste.",
+                  "Laisse la phrase arriver : regarde la personne, expire une fois.",
+                  "Dis « merci » – sans mais, sans minimiser."
+                ]
+              }
+            ],
+            "rechts": [
+              {
+                "art": "wortspeicher",
+                "titel": "Des phrases qui ne s’achètent pas",
+                "items": [
+                  "On peut rire de tout avec toi.",
+                  "Tu soutiens les autres.",
+                  "Tu écoutes vraiment.",
+                  "Tu es juste, même quand tu perds.",
+                  "Tu aides sans qu’on doive demander.",
+                  "Tu ne lâches pas."
+                ]
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Tu décides de ce que tu partages.",
+            "text": "Si tes pensées sur toi-même sont souvent très dures, parles-en à quelqu’un de confiance – au SePAS ou anonymement au Kanner- a Jugendtelefon (116 111)."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes repèrent à quoi ils accrochent leur sentiment de valeur, trouvent des sources solides, notent en privé ce qui compte pour eux lors des enchères et écrivent une phrase pour les mauvais jours.",
+          "ablauf": [
+            "Séance 3, étape 4 (18 min) : lire le texte, exercice 1 en silence, vérifier l’encadré sur la journée de Noah, iceberg avec au moins trois sources.",
+            "Étape 6 : avant les enchères, cocher trois lots à l’exercice 3 – en privé.",
+            "Étape 7 : après le tri, entourer les lots qu’on a peut-être déjà ; exercice 4 avec l’exemple.",
+            "Étape 8 : encadré « Merci sans mais » et phrases pour l’entraînement à deux."
+          ],
+          "hintergrund": "Qui accroche son estime de soi surtout à l’apparence, à la reconnaissance ou aux victoires la vit de façon plus instable que quelqu’un dont l’estime de soi repose sur des valeurs et des relations solides (Crocker & Wolfe, 2001). La fiche rend ces sources visibles sans que personne ait à parler de soi.",
+          "quellen": [
+            "Crocker, J. & Wolfe, C. T. (2001). Contingencies of self-worth. Psychological Review, 108(3), 593–623."
+          ],
+          "achtung": "La fiche n’est ni ramassée ni lue à voix haute. Si l’iceberg reste vide ou contient des phrases très dures, en parler délicatement après le cours et associer le SePAS.",
+          "material": "Stylos ; lots et faux billets du modèle à photocopier"
+        }
+      }
+    },
+    {
+      "id": "ff6-wert-auktion",
+      "bereich": "skills",
+      "thema": "ich",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe",
+        "klasse"
+      ],
+      "dauer": "35 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Wert-Auktion",
+        "Selbstwert",
+        "Spielgeld",
+        "Förderfach"
+      ],
+      "bild": "icon:cash",
+      "kurs": [
+        "ff6-e03"
+      ],
+      "de": {
+        "titel": "Wert-Auktion: Lose und Spielgeld",
+        "untertitel": "Kopiervorlage – die Lose einmal, die Spielgeld-Seite fünfmal auf festes Papier kopieren und ausschneiden",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So werden die Karten gebraucht",
+            "punkte": [
+              "Lose einmal kopieren, nummeriert an die Tafel hängen; nach der Auktion werden sie dort auf zwei Felder sortiert.",
+              "Spielgeld-Seite fünfmal kopieren: je Tischgruppe zehn Scheine zu 100 Talern und eine Bieterkarte; die Regelkarte hängt an der Tafel."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 112,
+            "karten": [
+              {
+                "titel": "Los 1",
+                "text": "Nie wieder eine schlechte Note – in jedem Fach die oder der Beste",
+                "bild": "icon:award"
+              },
+              {
+                "titel": "Los 2",
+                "text": "100.000 Follower, die jeden Post liken",
+                "bild": "icon:thumb-up"
+              },
+              {
+                "titel": "Los 3",
+                "text": "Aussehen wie auf den bearbeiteten Fotos – aber in echt",
+                "bild": "icon:camera"
+              },
+              {
+                "titel": "Los 4",
+                "text": "Immer gewinnen – in jedem Spiel und jedem Wettkampf",
+                "bild": "icon:trophy"
+              },
+              {
+                "titel": "Los 5",
+                "text": "Jedes Jahr das neueste Handy und die teuersten Sneaker",
+                "bild": "icon:device-mobile"
+              },
+              {
+                "titel": "Los 6",
+                "text": "Alle finden dich cool – egal, was du machst",
+                "bild": "icon:sunglasses"
+              },
+              {
+                "titel": "Los 7",
+                "text": "Eine Freundin oder ein Freund, die oder der immer zu dir hält",
+                "bild": "icon:friends"
+              },
+              {
+                "titel": "Los 8",
+                "text": "Menschen, bei denen du so sein darfst, wie du bist",
+                "bild": "icon:users-group"
+              },
+              {
+                "titel": "Los 9",
+                "text": "Den Mut, zu sagen, was du denkst – auch wenn alle anders denken",
+                "bild": "icon:message"
+              },
+              {
+                "titel": "Los 10",
+                "text": "Dass andere dich als fair und ehrlich kennen",
+                "bild": "icon:shield-check"
+              },
+              {
+                "titel": "Los 11",
+                "text": "Etwas, das du richtig gern machst und in dem du immer besser wirst",
+                "bild": "icon:music"
+              },
+              {
+                "titel": "Los 12",
+                "text": "Mit dir selbst so freundlich reden wie mit deinem besten Freund",
+                "bild": "icon:user-heart"
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 118,
+            "karten": [
+              {
+                "titel": "100 Taler",
+                "text": "Spielgeld der Wert-Auktion",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 Taler",
+                "text": "Spielgeld der Wert-Auktion",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 Taler",
+                "text": "Spielgeld der Wert-Auktion",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 Taler",
+                "text": "Spielgeld der Wert-Auktion",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 Taler",
+                "text": "Spielgeld der Wert-Auktion",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 Taler",
+                "text": "Spielgeld der Wert-Auktion",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 Taler",
+                "text": "Spielgeld der Wert-Auktion",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 Taler",
+                "text": "Spielgeld der Wert-Auktion",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 Taler",
+                "text": "Spielgeld der Wert-Auktion",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 Taler",
+                "text": "Spielgeld der Wert-Auktion",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "Bieterkarte",
+                "text": "Team: ______________\nHochhalten heißt bieten. Wer ruft, bietet nicht mit.",
+                "bild": "icon:hand-stop"
+              },
+              {
+                "titel": "Regeln",
+                "text": "Mindestgebot 100 Taler. Erhöhen in 100er-Schritten. Nur mit Bieterkarte. Wer ein Los ersteigert, zahlt sofort an die Bank.",
+                "bild": "icon:hammer"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Zwölf Lose für die Wert-Auktion – sechs, die am Urteil anderer hängen, sechs, die tragen – und Spielgeld, mit dem jedes Team 1000 Taler hat.",
+          "ablauf": [
+            "Die Lose einmal kopieren und ausschneiden; die Spielgeld-Seite fünfmal, je Tischgruppe zehn Scheine und eine Bieterkarte in einen Umschlag.",
+            "Einheit 3, Schritt 6: Lose nummeriert an die Tafel, in gemischter Reihenfolge versteigern; eine Person ist Bank.",
+            "Schritt 7: alle Lose auf die Felder „Kann mir ein schlechter Tag wegnehmen“ und „Bleibt, auch an einem schlechten Tag“ sortieren.",
+            "Nach der Stunde einsammeln; laminiert halten die Karten mehrere Jahre."
+          ],
+          "hintergrund": "Die Auktion macht spielerisch erfahrbar, was Deci und Ryan (2000) für Lebensziele beschreiben: Ziele wie Beziehungen, Wachstum und Gemeinschaft gehen mit mehr Zufriedenheit einher als Ruhm, Image und Reichtum. Die Teams entscheiden gemeinsam; niemand muss sagen, was er sich selbst wünscht.",
+          "quellen": [
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          ],
+          "achtung": "Los 7 und 8 können wehtun, wenn jemand solche Menschen gerade nicht hat. Beobachten, wer still wird, und nach der Stunde nachfragen.",
+          "material": "Festes Papier, Schere, fünf Umschläge; Holzlöffel oder Glocke als Hammer"
+        }
+      },
+      "fr": {
+        "titel": "Enchères des valeurs : lots et faux billets",
+        "untertitel": "Modèle à photocopier – les lots une fois, la page des billets cinq fois, sur papier épais, puis découper",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Comment utiliser les cartes",
+            "punkte": [
+              "Photocopier les lots une fois, les afficher numérotés au tableau ; après les enchères, on les y trie dans deux cases.",
+              "Photocopier la page des billets cinq fois : par îlot dix billets de 100 écus et un carton d’enchère ; la carte des règles est affichée au tableau."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 112,
+            "karten": [
+              {
+                "titel": "Lot 1",
+                "text": "Plus jamais de mauvaise note – le ou la meilleure dans toutes les matières",
+                "bild": "icon:award"
+              },
+              {
+                "titel": "Lot 2",
+                "text": "100 000 abonnés qui likent chaque post",
+                "bild": "icon:thumb-up"
+              },
+              {
+                "titel": "Lot 3",
+                "text": "Ressembler aux photos retouchées – mais en vrai",
+                "bild": "icon:camera"
+              },
+              {
+                "titel": "Lot 4",
+                "text": "Gagner toujours – à chaque jeu, à chaque match",
+                "bild": "icon:trophy"
+              },
+              {
+                "titel": "Lot 5",
+                "text": "Chaque année le dernier portable et les baskets les plus chères",
+                "bild": "icon:device-mobile"
+              },
+              {
+                "titel": "Lot 6",
+                "text": "Tout le monde te trouve cool – quoi que tu fasses",
+                "bild": "icon:sunglasses"
+              },
+              {
+                "titel": "Lot 7",
+                "text": "Une amie ou un ami qui te soutient toujours",
+                "bild": "icon:friends"
+              },
+              {
+                "titel": "Lot 8",
+                "text": "Des gens avec qui tu peux être toi-même",
+                "bild": "icon:users-group"
+              },
+              {
+                "titel": "Lot 9",
+                "text": "Le courage de dire ce que tu penses – même si tous pensent autrement",
+                "bild": "icon:message"
+              },
+              {
+                "titel": "Lot 10",
+                "text": "Que les autres te connaissent comme juste et honnête",
+                "bild": "icon:shield-check"
+              },
+              {
+                "titel": "Lot 11",
+                "text": "Une chose que tu adores faire et où tu progresses sans cesse",
+                "bild": "icon:music"
+              },
+              {
+                "titel": "Lot 12",
+                "text": "Te parler avec autant de gentillesse qu’à ton meilleur ami",
+                "bild": "icon:user-heart"
+              }
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 118,
+            "karten": [
+              {
+                "titel": "100 écus",
+                "text": "Faux billet des enchères des valeurs",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 écus",
+                "text": "Faux billet des enchères des valeurs",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 écus",
+                "text": "Faux billet des enchères des valeurs",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 écus",
+                "text": "Faux billet des enchères des valeurs",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 écus",
+                "text": "Faux billet des enchères des valeurs",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 écus",
+                "text": "Faux billet des enchères des valeurs",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 écus",
+                "text": "Faux billet des enchères des valeurs",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 écus",
+                "text": "Faux billet des enchères des valeurs",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 écus",
+                "text": "Faux billet des enchères des valeurs",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "100 écus",
+                "text": "Faux billet des enchères des valeurs",
+                "bild": "icon:cash"
+              },
+              {
+                "titel": "Carton d’enchère",
+                "text": "Équipe : ______________\nLever le carton, c’est enchérir. Qui crie n’enchérit pas.",
+                "bild": "icon:hand-stop"
+              },
+              {
+                "titel": "Règles",
+                "text": "Mise de départ 100 écus. On monte de 100 en 100. Seulement avec le carton. Qui remporte un lot paie tout de suite à la banque.",
+                "bild": "icon:hammer"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Douze lots pour les enchères des valeurs – six qui dépendent du jugement des autres, six qui portent – et de faux billets pour que chaque équipe dispose de 1000 écus.",
+          "ablauf": [
+            "Photocopier les lots une fois et les découper ; la page des billets cinq fois, dix billets et un carton d’enchère par îlot dans une enveloppe.",
+            "Séance 3, étape 6 : afficher les lots numérotés, les vendre dans le désordre ; un jeune tient la banque.",
+            "Étape 7 : trier tous les lots dans les cases « Une mauvaise journée peut me l’enlever » et « Reste, même un mauvais jour ».",
+            "Ramasser après la séance ; plastifiées, les cartes servent plusieurs années."
+          ],
+          "hintergrund": "Les enchères font vivre de façon ludique ce que Deci et Ryan (2000) décrivent pour les buts de vie : des buts comme les relations, le développement personnel et la communauté vont de pair avec plus de satisfaction que la célébrité, l’image et la richesse. Les équipes décident ensemble ; personne n’a à dire ce qu’il souhaite pour lui-même.",
+          "quellen": [
+            "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+          ],
+          "achtung": "Les lots 7 et 8 peuvent faire mal à quelqu’un qui n’a pas ces personnes en ce moment. Observer qui se tait et en parler après le cours.",
+          "material": "Papier épais, ciseaux, cinq enveloppes ; cuillère en bois ou cloche comme marteau"
+        }
+      }
+    }
+  ]
+}

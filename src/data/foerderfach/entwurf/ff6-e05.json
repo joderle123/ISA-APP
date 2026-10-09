@@ -1,0 +1,852 @@
+{
+  "einheiten": [
+    {
+      "id": "ff6-e05",
+      "klasse": "6e",
+      "dauer": 100,
+      "blaetter": [
+        "ff6-mein-innerer-coach",
+        "ff-skills-kompass"
+      ],
+      "woerter": [
+        {
+          "de": "der innere Kritiker",
+          "fr": "le critique intérieur"
+        },
+        {
+          "de": "die freundliche Stimme",
+          "fr": "la voix bienveillante"
+        },
+        {
+          "de": "der Ton",
+          "fr": "le ton"
+        },
+        {
+          "de": "die Panne",
+          "fr": "le raté"
+        },
+        {
+          "de": "ermutigen",
+          "fr": "encourager"
+        }
+      ],
+      "de": {
+        "titel": "Freundlich mit mir selbst",
+        "kurz": "Die Klasse übersetzt Kritiker-Sätze erfundener Figuren in einen freundlichen Ton, testet im Trainer-Duell zwei Coaches und findet einen Satz für schwere Momente.",
+        "ziele": [
+          "beschreiben an erfundenen Figuren, wie der innere Kritiker spricht",
+          "übersetzen Kritiker-Sätze in die freundliche Stimme, ohne Schönreden",
+          "erleben im Trainer-Duell, wie ein brüllender und ein klarer Ton wirken",
+          "sprechen sich als Coach Klar mit dem eigenen Namen an und füllen den Skills-Kompass"
+        ],
+        "material": [
+          "Plakate Gefühlsrad und Skala, Punkte",
+          "Schülerheft, Stempel, Scheren",
+          "Papierkorb und 4 Kartons als Körbe",
+          "20 Papierbälle aus Altpapier",
+          "Kreppband für die Wurflinien",
+          "Schilder „Coach Brüll“, „Coach Klar“",
+          "Breites Klebeband für die Kärtchen"
+        ],
+        "vorbereitung": [
+          "Fünf Wurfstationen: je ein Korb, eine Wurflinie aus Kreppband zwei bis drei Meter davor, vier Papierbälle.",
+          "Coach Brüll einmal laut üben: übertrieben, nur über Würfe, ohne Schimpfwörter; Nachbarräume vorwarnen.",
+          "Tafel: zwei leere Spalten, die Überschriften kommen erst in Schritt 3; die Sätze von Coach Klar auf ein Plakat.",
+          "Beim Régent fragen, wer viel Abwertung erlebt; diese Person nicht für die Vorführung wählen."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Punkt, Zahl und der Handy-Fall"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick, Mission und die Stimme im Kopf"
+          },
+          {
+            "min": "15–28",
+            "phase": "input",
+            "titel": "Mila und der doppelte Maßstab"
+          },
+          {
+            "min": "28–45",
+            "phase": "uebung",
+            "titel": "Das Übersetzungsbüro"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Zip Zap Boing mit Fehler-Verbeugung"
+          },
+          {
+            "min": "50–78",
+            "phase": "aktiv",
+            "titel": "Trainer-Duell: Coach Brüll gegen Coach Klar"
+          },
+          {
+            "min": "78–90",
+            "phase": "skill",
+            "titel": "Skill: Coach Klar"
+          },
+          {
+            "min": "90–100",
+            "phase": "abschluss",
+            "titel": "Skills-Kompass, Skills-Pass und Mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Punkt, Zahl und der Handy-Fall",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad (3 Min.); auf drei zeigen alle ihre Anspannung mit den Fingern, die Lehrkraft beginnt (1 Min.). Dann lässt die Lehrkraft ein Mäppchen fallen, als wäre es ihr Handy, und fragt: Was sagt man in so einem Moment zu sich selbst? Gesammelt werden typische Sätze, keine eigenen: Die Klasse ruft, die Lehrkraft schreibt fünf, sechs davon in die linke Tafelspalte, ohne Schimpfwörter (4 Min.). Zum Schluss fragen, ob man so auch mit einem Freund reden würde, dem das Handy runterfällt – und die Frage offen stehen lassen (2 Min.).",
+            "sagen": [
+              "Punkt aufs Rad, Zahl mit den Fingern. Bei mir: ein bisschen müde, 30.",
+              "Zack, Handy auf dem Boden. Was sagt man da zu sich selbst – nicht ihr, sondern man? Ich höre: Na toll. Typisch."
+            ],
+            "tipp": "Die gerufenen Sätze kommen oft mit einem Lachen – nicht ernster machen, als es ist, aber merken: Um genau diesen Ton geht es heute. Schimpfwörter nicht an die Tafel, sondern abmildern: Aus einem Schimpfwort wird „beschimpft sich“.",
+            "wennEsKippt": "Wird der Handy-Fall zur Show und alle lassen ihre Mäppchen fallen, mitlachen, Ruhezeichen: Ein Fall reicht. Ruft jemand einen sehr harten Satz, nicht kommentieren, abgemildert notieren und die Person im Blick behalten."
+          },
+          {
+            "titel": "Rückblick, Mission und die Stimme im Kopf",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Nach der Wochen-Mission fragen: Hat jemand an einem Werbeplakat drei Tricks gefunden? Daumen hoch, Mitte, runter; eine Stimme erzählt, welcher Trick am leichtesten zu entdecken war (2 Min.). Dann den Bogen des Kapitels schlagen: Der Wert hängt nicht an Noten, Bilder im Netz sind gemacht – und trotzdem gibt es eine Stimme, die weiter urteilt: die eigene. Wer in der 7e war, kennt den kritischen Detektiv, der prüft, ob ein Gedanke stimmt; heute geht es um den Ton, wenn wirklich etwas schiefgegangen ist (3 Min.).",
+            "sagen": [
+              "Daumen hoch, Mitte oder runter: Habt ihr an einem Plakat drei Tricks gefunden? Welcher war am leichtesten zu entdecken?",
+              "Manchmal stimmt der Gedanke ja: Der Test ist wirklich verhauen. Dann ist die Frage nicht mehr, ob es stimmt, sondern wie ihr mit euch redet."
+            ],
+            "tipp": "Wer in der 7e war, erklärt den Neuen den Detektiv in einem Satz: Er glaubt nichts, nur weil es jemand behauptet – auch nicht der eigenen inneren Stimme. Die Leitfrage des Kapitels steht noch an der Tafel; am Ende der Stunde kommt die Antwort in den Skills-Kompass."
+          },
+          {
+            "titel": "Mila und der doppelte Maßstab",
+            "dauer": 13,
+            "phase": "input",
+            "text": "Die Situation vorlesen: Mila hält in Französisch ein Referat, bleibt nach zwei Sätzen hängen, wird rot, zwei in der letzten Reihe lachen. Die Klasse sammelt, was Milas innere Stimme auf dem Heimweg zu ihr sagen könnte – die Sätze vom Check-in helfen –, und danach, was ihre beste Freundin Chiara ihr sagen würde (5 Min.). Beide Spalten vergleichen: Würdet ihr so mit einer Freundin reden wie Mila mit sich selbst? Dann die Spalten benennen: links der innere Kritiker, rechts die freundliche Stimme (2 Min.). Die freundliche Stimme aus der 7e auffrischen: Wer sie kennt, sagt die drei Sätze vor, die Lehrkraft schreibt sie neben die rechte Spalte (3 Min.). Zum Schluss den Kritiker als übereifrigen Trainer beschreiben, der es gut meint und es schlecht macht (3 Min.).",
+            "sagen": [
+              "Wenn Chiara nach dem Referat so rot geworden wäre: Hättet ihr gesagt, wie peinlich, du kannst nichts?",
+              "Der innere Kritiker will euch oft schützen – vor Blamage, vor Fehlern. Er macht es nur mit den falschen Mitteln.",
+              "Freundlich heißt nicht schönreden. Die freundliche Stimme sagt nicht: Das war perfekt. Sie sagt: Das war schwer, und du hast es versucht."
+            ],
+            "punkte": [
+              "„Das ist gerade schwer.“ – merken, was los ist, nicht wegdrücken, nicht aufbauschen.",
+              "„So geht es vielen. Ich bin damit nicht allein.“ – Pannen gehören zum Leben, nicht nur zu meinem.",
+              "„Was brauche ich jetzt?“ – so freundlich fragen wie bei einem Freund."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Milas innerer Kritiker sagt …",
+                "Die freundliche Stimme sagt …"
+              ],
+              "zeilen": [
+                [
+                  "„Wie peinlich. Alle haben es gesehen.“",
+                  "„Das war ein unangenehmer Moment. Das darf wehtun.“"
+                ],
+                [
+                  "„Du bist die Einzige, die so was nicht kann.“",
+                  "„Hängen bleiben passiert fast allen einmal.“"
+                ],
+                [
+                  "„Nie wieder meldest du dich.“",
+                  "„Was hilft dir beim nächsten Mal? Vorher laut üben, mit Chiara als Publikum?“"
+                ]
+              ]
+            },
+            "tipp": "Den Kritiker nicht zum Feind erklären: Jugendliche können mehr damit anfangen, wenn er ein übereifriger Trainer ist, der es gut meint und schlecht macht – das bereitet das Trainer-Duell vor. Die Tafel bleibt bis zum Skill stehen. Wer schwer stillsitzt, schreibt an der Tafel mit.",
+            "wennEsKippt": "Kommt der Einwand „Wenn ich nett zu mir bin, werde ich faul“, ernst nehmen und zurückfragen: Welcher Trainer holt aus einer Mannschaft mehr heraus – der, der brüllt, oder der, der klar sagt, was besser werden muss? Genau das wird nach der Pause getestet. Erzählt jemand von einer eigenen Blamage, danken, nicht vertiefen und zu Mila zurückkehren."
+          },
+          {
+            "titel": "Das Übersetzungsbüro",
+            "dauer": 17,
+            "phase": "uebung",
+            "text": "Aufgabe 1 auf dem Blatt gemeinsam anschauen: Nora hat zum zweiten Mal ihr Sportzeug vergessen, ihr Kritiker legt los. Jede Person schreibt in die leere Denkblase, was Noras freundliche Stimme sagen würde; zwei, drei lesen freiwillig vor (5 Min.). Dann das Übersetzungsbüro in den Tischgruppen (8 Min.): Aufgabe 2 zeigt am Beispiel von Mathis, wie es geht; danach übersetzt die Gruppe die Kritiker-Sätze von Tiago nach einem verschossenen Elfmeter und von Aylin nach einer Nachricht an die falsche Person in die freundliche Stimme – ehrlich, ohne Schönreden, mit einem nächsten Schritt; jede Person schreibt mit. Jede Gruppe liest eine Übersetzung vor, die Klasse prüft mit dem Daumen: Stimmt es, und klingt es nach einem Freund (4 Min.)? Eigene Kritiker-Sätze werden weder gesammelt noch vorgelesen.",
+            "sagen": [
+              "Schreibt, was eine gute Freundin Nora sagen würde – ehrlich, nicht schönredend.",
+              "Übersetzen heißt nicht: Alles super. Übersetzen heißt: Was stimmt, freundlich gesagt – und was jetzt hilft.",
+              "Daumen hoch, wenn der Satz stimmt und nach einem Freund klingt. Daumen zur Seite, wenn er noch schönredet oder schimpft."
+            ],
+            "tipp": "Die Figuren schaffen Abstand: Viele merken beim Übersetzen, dass sie solche Sätze kennen, ohne es sagen zu müssen. Wer will, schreibt in Aufgabe 4 für sich allein einen eigenen Satz und seine Antwort auf – das wird nie vorgelesen und nicht eingesammelt.",
+            "wennEsKippt": "Findet eine Gruppe keinen freundlichen Satz, die Frage drehen: Was würdet ihr eurem kleinen Bruder, eurer Cousine, eurem besten Kumpel sagen? Wird aus der Übersetzung Schönrederei („Tiago ist der Beste“), zurückfragen: Würde Tiago sich das glauben? Schreibt jemand erschreckend harte Sätze über sich, nicht vor der Klasse reagieren, sondern nach der Stunde behutsam nachfragen. Hält jemand das Ganze für Kitsch, bekommt er die Rolle des Prüfers: Er sagt bei jeder Übersetzung, ob sie stimmt oder schönredet – genau das braucht die Übung.",
+            "blatt": "ff6-mein-innerer-coach"
+          },
+          {
+            "titel": "Bewegungspause: Zip Zap Boing mit Fehler-Verbeugung",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Zwei Kreise zu zehn, stehend, vorn und hinten im Raum. Zip schickt den Impuls mit einer Klatschbewegung zum Nachbarn, Zap quer durch den Kreis zu jemandem, den man anschaut, Boing hält beide Hände wie eine Wand hoch und schickt ihn zurück. Wer sich verhaspelt, macht die Fehler-Verbeugung: einen Schritt in die Mitte, Arme hoch, „Ups“ rufen, verbeugen – und der Kreis applaudiert; niemand scheidet aus (4 Min.). Zum Schluss kurz fragen: Wie fühlt sich ein Fehler an, wenn alle klatschen statt stöhnen (1 Min.)? Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Wer sich verhaspelt, verbeugt sich, und wir klatschen. Hier gibt es für Fehler Applaus statt Stöhnen."
+            ],
+            "tipp": "Die Fehler-Verbeugung stammt aus dem Improvisationstheater: Wer gefeiert wird statt ausgelacht, traut sich mehr. Die Lehrkraft macht den ersten Fehler absichtlich und verbeugt sich als Erste.",
+            "wennEsKippt": "Machen manche absichtlich Fehler für den Applaus, mitlachen und das Tempo erhöhen. Wird jemand beim Fehler ausgelacht, anhalten: Hier wird geklatscht, nicht gelacht. Wer nicht mitspielen mag, steht im Kreis und klatscht nur."
+          },
+          {
+            "titel": "Trainer-Duell: Coach Brüll gegen Coach Klar",
+            "dauer": 28,
+            "phase": "aktiv",
+            "text": "Ankündigen: Coach Brüll ist eine übertriebene Rolle der Lehrkraft; er schimpft über Würfe, nie über Personen, und wer ihn nicht hören will, wirft ohne Coach (1 Min.). Vorführung (9 Min.): Vier Freiwillige werfen vorn je drei Papierbälle in den Korb, zuerst mit Coach Brüll, dann mit Coach Klar – die Lehrkraft wechselt mit dem Schild die Rolle. Die Klasse beobachtet Haltung, Gesicht und Treffer; danach zeigen die vier mit den Fingern, wie viel Lust sie bei jedem Coach hatten weiterzumachen, 0 bis 10. Gruppenrunde (10 Min.): An der Station jeder Tischgruppe wirft jede Person dreimal; eine Person aus der Gruppe ist Coach Klar und nimmt Sätze vom Plakat, beim dritten Wurf coacht sich der Werfer selbst, halblaut oder im Kopf, mit dem eigenen Namen. Coach Brüll spielt in den Gruppen niemand. Auswertung (6 Min.): Bei welchem Coach wart ihr ruhiger, bei welchem würdet ihr weitertrainieren – und welcher redet meistens in eurem Kopf? Zum Schluss das Ergebnis aus der Forschung in einem Satz (2 Min.).",
+            "sagen": [
+              "Coach Brüll ist eine Rolle. Er meckert über den Wurf, nie über euch – und wer ihn nicht hören will, wirft ohne ihn.",
+              "Bei welchem Coach wollt ihr nächste Woche wieder trainieren? Und welcher von beiden redet meistens in eurem Kopf?",
+              "Freundlich heißt nicht weich: Coach Klar sagt auch, was besser werden muss. Er sagt es nur so, dass man weitermachen will."
+            ],
+            "punkte": [
+              "Coach Brüll: „Was war das denn? Das kann meine Oma besser.“ – „Daneben. Wie immer.“ – „Streng dich mal an.“",
+              "Coach Klar: „Knapp. Etwas weniger Kraft.“ – „Passiert. Nächster Wurf.“ – „Den Arm hast du schon besser gestreckt. Genau so.“",
+              "Selbst-Coaching: „Ruhig, Lena. Weniger Kraft. Du hast Zeit.“ – mit dem eigenen Namen, wie mit einem Freund.",
+              "In den Gruppen gilt: nur Coach Klar; Bälle nur in den Korb, nur hinter der Linie, nur wer dran ist."
+            ],
+            "tipp": "Ob mit Coach Klar wirklich mehr Treffer fallen, ist nicht entscheidend; oft ist der Unterschied klein. Wichtig ist, wie es sich angefühlt hat und bei wem man weitermachen will. Die Forschung in einem Satz: Wer nach einem Misserfolg freundlich mit sich umging, übte danach länger – nicht kürzer. Wer viel Bewegung braucht, sammelt die Bälle ein oder zählt an der Vorführstation die Treffer. Wer das Brüllen schon beim Zuschauen nicht mag, setzt sich nach hinten.",
+            "wennEsKippt": "Macht die Klasse Coach Brüll nach und beschimpft sich gegenseitig, sofort stoppen: Brüllen darf nur die Lehrkraft, und nur über Würfe; die Gruppe spielt eine Runde ohne Coach. Wirkt jemand bei Coach Brüll getroffen, die Runde für ihn beenden – er wird Schiedsrichter – und später unter vier Augen nachfragen. Fliegen Bälle auf Menschen, wird der Werfer für eine Runde Balljunge. Bei wenig Platz geht das Spiel im Sitzen, mit einem Eimer auf dem Tisch."
+          },
+          {
+            "titel": "Skill: Coach Klar",
+            "dauer": 12,
+            "phase": "skill",
+            "text": "Alle sitzen, beide Füße am Boden. Ankündigen: Coach Klar geht auch ohne Korb – im Bus, vor dem Test, nach einer blöden Nachricht. Die drei Schritte an die Tafel. Die Lehrkraft leitet zweimal an, mit einer kleinen Panne aus der Liste, die sich jede Person still vorstellt: den Brüller bemerken, sich mit dem eigenen Namen ansprechen, einen klaren, freundlichen Satz sagen – im Kopf oder geflüstert (4 Min.). Danach zwei, drei Stimmen: Wie war es, sich mit dem eigenen Namen anzusprechen (2 Min.)? Dann schreibt jede Person ihren Satz für schwere Momente auf das Kärtchen im Heft, schneidet es aus und steckt es ein; breites Klebeband macht es haltbar (4 Min.). Kurz erklären: Wer mit sich spricht wie mit einer anderen Person, gewinnt Abstand und bleibt ruhiger (2 Min.).",
+            "sagen": [
+              "Stellt euch eine kleine Panne vor – nur eine kleine. Wir üben mit Kleinem, damit es bei Großem klappt.",
+              "Sagt euren Namen im Kopf, so wie ein Coach ihn sagt, der auf eurer Seite steht.",
+              "Euer Satz fürs Kärtchen: Was soll Coach Klar sagen, wenn es richtig schwer wird?"
+            ],
+            "punkte": [
+              "Merk, wann der Brüller loslegt – und sag innerlich: Moment.",
+              "Sprich dich mit deinem Namen an, wie ein Coach, der zu dir hält: „Okay, Lena …“",
+              "Sag klar und freundlich, was war und was jetzt hilft: „Passiert. Jetzt erst die leichte Aufgabe.“",
+              "Pannen zum Üben: Bus verpasst · Heft vergessen · beim Zocken verloren · Nachricht an die falsche Person geschickt."
+            ],
+            "tipp": "Wer sich mit dem eigenen Namen komisch vorkommt, nimmt „du“: „Okay, du schaffst das.“ Die freundliche Stimme aus der 7e und Coach Klar ergänzen sich: Die Stimme tröstet, der Coach zeigt den nächsten Schritt. Die Skill-Karte hinten im Heft fasst Coach Klar in drei Schritten zusammen.",
+            "wennEsKippt": "Wird gekichert, ruhig weitersprechen – Kichern gehört bei Übungen mit sich selbst dazu. Wird jemand von einer Erinnerung überrollt, darf er die Augen öffnen und etwas anderes tun, etwa 5-4-3-2-1 im Raum; nach der Stunde kurz nachfragen. Findet jemand keinen Satz fürs Kärtchen, nimmt er einen von der Tafel.",
+            "blatt": "ff6-mein-innerer-coach"
+          },
+          {
+            "titel": "Skills-Kompass, Skills-Pass und Mission",
+            "dauer": 10,
+            "phase": "abschluss",
+            "text": "Das Kapitel ist geschafft: Den Skills-Kompass aufschlagen und im Skills-Pass zurückblättern – Danke ohne Aber, Was mein Körper kann, Coach Klar, dazu die Skills aus der 7e. Jede Person schreibt ins Feld „2 · Selbstwert und Körper“ den Skill, der ihr hilft, wenn sie an sich zweifelt, und wann sie ihn einsetzt; „noch offen“ ist erlaubt (5 Min.). Dann der Skills-Pass mit der Leitfrage an der Tafel: Was sagt Coach Klar, wenn bei mir etwas schiefgeht? Stempel beim Herumgehen (3 Min.). Zum Schluss die Wochen-Mission in einem Satz ansagen und den Ausblick auf das nächste Kapitel geben (2 Min.).",
+            "sagen": [
+              "Welcher Skill hilft euch, wenn ihr an euch zweifelt – und wann setzt ihr ihn ein? Das kommt ins zweite Feld.",
+              "Eure Mission: Wenn ihr diese Woche mit euch schimpft, sprecht euch einmal an wie Coach Klar – mit eurem Namen."
+            ],
+            "tipp": "Die Leitfrage des Kapitels hängt noch an der Tafel: Was macht mich wertvoll – auch wenn ich mich vergleiche? Wer mag, liest seinen Kompass-Eintrag als Antwort darauf; zwei Stimmen reichen. Den Kompass immer gemeinsam in der Stunde ergänzen, nie als Hausaufgabe.",
+            "wennEsKippt": "Sagt jemand, keiner der Skills habe geholfen, stehen lassen: „Noch offen“ ist ein ehrlicher Eintrag. Wird das Kärtchen belächelt, nicht verteidigen – wer es nicht einstecken mag, klebt es ins Heft.",
+            "blatt": "ff-skills-kompass"
+          }
+        ],
+        "bruecke": "Nächste Woche beginnt das Kapitel Stress und Schule: Ihr ordnet eure Stress-Anzeichen auf einem Barometer ein und spürt, wann guter Stress in zu viel kippt.",
+        "mission": "Schimpfst du diese Woche mit dir, sprich dich einmal an wie Coach Klar – mit deinem Namen.",
+        "hintergrund": "Selbstmitgefühl heißt, sich in schwierigen Momenten so zu begegnen wie einem guten Freund: freundlich statt verurteilend, mit dem Wissen, dass Scheitern zum Menschsein gehört, und achtsam statt grübelnd (Neff, 2003). Bequem macht es nicht: Nach einem Misserfolg übten Studierende, die freundlich mit sich umgingen, sogar länger als andere (Breines & Chen, 2012). Wer mit sich in der zweiten Person oder mit dem eigenen Namen spricht, gewinnt Abstand und reagiert weniger heftig (Kross & Ayduk, 2017) – darauf baut Coach Klar. Die Stunde übt beides zuerst an erfundenen Figuren, bevor jemand es auf sich selbst anwendet.",
+        "quellen": [
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Breines, J. G. & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "achtung": "Ein sehr harter innerer Kritiker kann zu einer Depression gehören. Eigene Kritiker-Sätze werden nie vorgelesen oder eingesammelt; geübt wird an erfundenen Figuren. Coach Brüll ist nur eine Rolle der Lehrkraft: keine Schimpfwörter, nichts über Körper, Herkunft oder Noten, nur Freiwillige werfen vor; wer zu Hause viel Abwertung erlebt, kann stark reagieren. Fallen Sätze wie „Ich bin nichts wert“ oder „Ohne mich wären alle besser dran“: nicht vor der Klasse vertiefen, nach der Stunde ruhig ansprechen, nichts versprechen, noch am selben Tag den SePAS informieren, nach dem Schutzkonzept handeln; bei akuter Gefahr 112.",
+        "differenzierung": {
+          "leichter": "Die Denkblase darf in jeder Sprache gefüllt werden; für das Übersetzungsbüro helfen Satzanfänge an der Tafel („Das war …“, „Beim nächsten Mal …“). Im Trainer-Duell wird mündlich gecoacht, in jeder Sprache; fürs Kärtchen genügt ein Satz von der Tafel, im Kompass der Name des Skills.",
+          "schwerer": "Im Trainer-Duell beobachten: Haltung, Gesicht und Treffer bei beiden Coaches notieren und der Klasse berichten. Einen Satz von Coach Klar für eine schwierige Lage schreiben – nach einem Streit, nach einer schlechten Note – und prüfen, ob er stimmt und weiterhilft."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit dem Handy-Fall (5 Min.), Mila und der doppelte Maßstab mit der freundlichen Stimme (10 Min.), Trainer-Duell nur als Vorführung mit vier Freiwilligen und Auswertung (15 Min.), Coach Klar mit dem Kärtchen (10 Min.), Skills-Kompass, Skills-Pass und Mission (10 Min.). Das Übersetzungsbüro wird zum Einstieg in die nächste Stunde nachgeholt oder entfällt."
+      },
+      "fr": {
+        "titel": "La bienveillance envers soi",
+        "kurz": "La classe traduit sur un ton bienveillant les phrases du critique intérieur, compare deux coachs dans un duel de lancers et trouve une phrase pour les moments durs.",
+        "ziele": [
+          "décrivent, avec des personnages inventés, comment parle le critique intérieur",
+          "traduisent des phrases du critique dans la voix bienveillante, sans enjoliver",
+          "vivent, dans le duel des coachs, l’effet d’un ton qui crie et d’un ton clair",
+          "se parlent avec leur prénom comme Coach Clair et remplissent la boussole des skills"
+        ],
+        "material": [
+          "Affiches roue et échelle, gommettes",
+          "Cahier de l’élève, tampon, ciseaux",
+          "Corbeille et 4 cartons (paniers)",
+          "20 boules de papier recyclé",
+          "Ruban adhésif pour les lignes de tir",
+          "Panneaux Coach Hurle et Coach Clair",
+          "Adhésif large pour les petites cartes"
+        ],
+        "vorbereitung": [
+          "Cinq postes de lancer : un panier, une ligne de tir à deux ou trois mètres, quatre boules de papier.",
+          "S’exercer au rôle de Coach Hurle : exagéré, seulement sur les lancers, sans gros mots ; prévenir les voisins.",
+          "Au tableau, deux colonnes vides, les titres viennent à l’étape 3 ; les phrases de Coach Clair sur une affiche.",
+          "Demander au régent qui vit beaucoup de dévalorisation ; ne pas choisir cette personne pour la démonstration."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : gommette, chiffre, portable qui tombe"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour, mission et la voix dans la tête"
+          },
+          {
+            "min": "15–28",
+            "phase": "input",
+            "titel": "Mila et les deux poids, deux mesures"
+          },
+          {
+            "min": "28–45",
+            "phase": "uebung",
+            "titel": "Le bureau de traduction"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : Zip Zap Boing avec révérence"
+          },
+          {
+            "min": "50–78",
+            "phase": "aktiv",
+            "titel": "Duel des coachs : Coach Hurle contre Coach Clair"
+          },
+          {
+            "min": "78–90",
+            "phase": "skill",
+            "titel": "Skill : Coach Clair"
+          },
+          {
+            "min": "90–100",
+            "phase": "abschluss",
+            "titel": "Boussole, Skills-Pass et mission"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : gommette, chiffre, portable qui tombe",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur la roue des émotions (3 min) ; à trois, tout le monde montre sa tension avec les doigts, l’enseignant·e commence (1 min). Puis laisser tomber une trousse comme si c’était son portable et demander : qu’est-ce qu’on se dit à soi-même dans un moment pareil ? On rassemble des phrases typiques, pas les siennes : la classe les lance, l’enseignant·e en écrit cinq ou six dans la colonne de gauche du tableau, sans gros mots (4 min). Pour finir, demander si l’on parlerait comme ça à un ami qui fait tomber son portable – et laisser la question ouverte (2 min).",
+            "sagen": [
+              "Gommette sur la roue, chiffre avec les doigts. Moi : un peu fatigué·e, 30.",
+              "Paf, le portable par terre. Qu’est-ce qu’on se dit à soi-même – pas vous, mais on ? J’entends : super. Typique."
+            ],
+            "tipp": "Les phrases lancées arrivent souvent avec un rire – ne pas dramatiser, mais noter : c’est exactement ce ton-là qui nous occupe aujourd’hui. Pas de gros mots au tableau, on les adoucit : un gros mot devient « s’insulte ».",
+            "wennEsKippt": "Si la chute du portable tourne au spectacle et que tout le monde lâche sa trousse, en rire, signal de silence : une chute suffit. Si quelqu’un lance une phrase très dure, ne pas commenter, la noter en l’adoucissant et garder la personne à l’œil."
+          },
+          {
+            "titel": "Retour, mission et la voix dans la tête",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Demander où en est la mission de la semaine : quelqu’un a-t-il repéré trois astuces sur une affiche publicitaire ? Pouce en haut, au milieu, en bas ; une voix raconte quelle astuce était la plus facile à repérer (2 min). Faire ensuite le lien du chapitre : la valeur ne dépend pas des notes, les images en ligne sont fabriquées – et pourtant, une voix continue de juger : la sienne. Ceux qui étaient en 7e connaissent le détective critique, qui vérifie si une pensée est vraie ; aujourd’hui, il s’agit du ton quand quelque chose a vraiment raté (3 min).",
+            "sagen": [
+              "Pouce en haut, au milieu ou en bas : avez-vous repéré trois astuces sur une affiche ? Laquelle était la plus facile à trouver ?",
+              "Parfois, la pensée est vraie : le devoir est vraiment raté. Alors la question n’est plus de savoir si c’est vrai, mais comment vous vous parlez."
+            ],
+            "tipp": "Ceux qui étaient en 7e expliquent le détective aux nouveaux en une phrase : il ne croit rien juste parce que quelqu’un l’affirme – pas même sa propre voix intérieure. La question du chapitre est encore au tableau ; à la fin du cours, la réponse passe dans la boussole des skills."
+          },
+          {
+            "titel": "Mila et les deux poids, deux mesures",
+            "dauer": 13,
+            "phase": "input",
+            "text": "Lire la situation : Mila fait un exposé en français, bloque après deux phrases, devient rouge, deux élèves du dernier rang rient. La classe rassemble ce que la voix intérieure de Mila pourrait lui dire sur le chemin du retour – les phrases du tour d’humeur aident –, puis ce que sa meilleure amie Chiara lui dirait (5 min). Comparer les deux colonnes : parleriez-vous à une amie comme Mila se parle à elle-même ? Nommer ensuite les colonnes : à gauche le critique intérieur, à droite la voix bienveillante (2 min). Rafraîchir la voix bienveillante de la 7e : ceux qui la connaissent disent les trois phrases, l’enseignant·e les écrit à côté de la colonne de droite (3 min). Pour finir, décrire le critique comme un entraîneur trop zélé qui veut bien faire, mais s’y prend mal (3 min).",
+            "sagen": [
+              "Si Chiara était devenue toute rouge pendant son exposé : vous lui auriez dit trop la honte, t’es nulle ?",
+              "Le critique intérieur veut souvent vous protéger – de la honte, des erreurs. Il s’y prend juste avec les mauvais moyens.",
+              "Bienveillant ne veut pas dire enjoliver. La voix bienveillante ne dit pas : c’était parfait. Elle dit : c’était dur, et tu as essayé."
+            ],
+            "punkte": [
+              "« C’est difficile en ce moment. » – remarquer ce qui se passe, sans l’écraser ni en rajouter.",
+              "« Ça arrive à beaucoup de monde. Je ne suis pas seul avec ça. » – les ratés font partie de la vie, pas seulement de la mienne.",
+              "« De quoi j’ai besoin ? » – se le demander aussi gentiment qu’à un ami."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Le critique intérieur de Mila dit…",
+                "La voix bienveillante dit…"
+              ],
+              "zeilen": [
+                [
+                  "« Trop la honte. Tout le monde l’a vu. »",
+                  "« C’était un moment pénible. Ça a le droit de faire mal. »"
+                ],
+                [
+                  "« T’es la seule à pas savoir faire ça. »",
+                  "« Avoir un blanc, ça arrive presque à tout le monde une fois. »"
+                ],
+                [
+                  "« Plus jamais tu lèves la main. »",
+                  "« Qu’est-ce qui t’aiderait la prochaine fois ? T’entraîner à voix haute, avec Chiara comme public ? »"
+                ]
+              ]
+            },
+            "tipp": "Ne pas faire du critique un ennemi : les jeunes s’y retrouvent mieux s’il est un entraîneur trop zélé qui veut bien faire et s’y prend mal – cela prépare le duel des coachs. Le tableau reste jusqu’au skill. Qui a du mal à rester assis écrit au tableau.",
+            "wennEsKippt": "Si quelqu’un objecte « Si je suis gentil avec moi, je deviens paresseux », le prendre au sérieux et renvoyer la question : quel entraîneur tire le plus d’une équipe – celui qui hurle ou celui qui dit clairement ce qui doit s’améliorer ? C’est justement ce qu’on teste après la pause. Si un jeune raconte un de ses propres ratés, le remercier, ne pas approfondir et revenir à Mila."
+          },
+          {
+            "titel": "Le bureau de traduction",
+            "dauer": 17,
+            "phase": "uebung",
+            "text": "Regarder ensemble l’exercice 1 de la fiche : Nora a oublié ses affaires de sport pour la deuxième fois, son critique se déchaîne. Chacun écrit dans la bulle de pensée vide ce que dirait la voix bienveillante de Nora ; deux ou trois lisent leur phrase s’ils le veulent (5 min). Puis le bureau de traduction en îlots (8 min) : l’exercice 2 montre avec l’exemple de Mathis comment faire ; ensuite, le groupe traduit dans la voix bienveillante les phrases du critique de Tiago après un penalty raté et d’Aylin après un message envoyé à la mauvaise personne – honnêtement, sans enjoliver, avec un prochain pas ; chacun écrit. Chaque groupe lit une traduction, la classe vérifie avec le pouce : est-ce vrai, et est-ce que ça sonne comme un ami (4 min) ? Les phrases de son propre critique ne sont ni rassemblées ni lues.",
+            "sagen": [
+              "Écrivez ce qu’une bonne amie dirait à Nora – honnêtement, sans enjoliver.",
+              "Traduire, ce n’est pas dire : tout va bien. Traduire, c’est dire ce qui est vrai, gentiment – et ce qui aide maintenant.",
+              "Pouce en haut si la phrase est vraie et sonne comme un ami. Pouce sur le côté si elle enjolive encore ou si elle gronde."
+            ],
+            "tipp": "Les personnages créent de la distance : beaucoup remarquent en traduisant qu’ils connaissent ces phrases, sans avoir à le dire. Qui veut écrit à l’exercice 4, pour soi seul, une de ses phrases et sa réponse – ce n’est jamais lu ni ramassé.",
+            "wennEsKippt": "Si un groupe ne trouve pas de phrase bienveillante, retourner la question : que diriez-vous à votre petit frère, à votre cousine, à votre meilleur pote ? Si la traduction devient de l’enjolivement (« Tiago est le meilleur »), demander : Tiago y croirait-il ? Si quelqu’un écrit sur lui-même des phrases d’une dureté inquiétante, ne pas réagir devant la classe, mais en parler délicatement après le cours. Si quelqu’un trouve tout ça niais, il devient le vérificateur : pour chaque traduction, il dit si elle est vraie ou si elle enjolive – c’est exactement ce dont l’exercice a besoin.",
+            "blatt": "ff6-mein-innerer-coach"
+          },
+          {
+            "titel": "Pause active : Zip Zap Boing avec révérence",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Deux cercles de dix, debout, à l’avant et au fond de la salle. Zip envoie l’impulsion au voisin avec un geste de claquement, Zap la lance en travers du cercle à quelqu’un qu’on regarde, Boing lève les deux mains comme un mur et la renvoie. Qui se trompe fait la révérence de l’erreur : un pas vers le centre, bras en l’air, crier « Oups », s’incliner – et le cercle applaudit ; personne n’est éliminé (4 min). Pour finir, demander brièvement : qu’est-ce que ça fait, une erreur, quand tout le monde applaudit au lieu de soupirer (1 min) ? Si la grande récréation tombe entre les deux heures, supprimer cet exercice.",
+            "sagen": [
+              "Qui se trompe fait la révérence, et on applaudit. Ici, une erreur reçoit des applaudissements, pas des soupirs."
+            ],
+            "tipp": "La révérence de l’erreur vient du théâtre d’improvisation : qui est fêté au lieu d’être moqué ose davantage. L’enseignant·e fait la première erreur exprès et s’incline en premier.",
+            "wennEsKippt": "Si certains se trompent exprès pour les applaudissements, en rire et accélérer le rythme. Si quelqu’un est moqué pour une erreur, arrêter : ici, on applaudit, on ne se moque pas. Qui ne veut pas jouer reste dans le cercle et applaudit seulement."
+          },
+          {
+            "titel": "Duel des coachs : Coach Hurle contre Coach Clair",
+            "dauer": 28,
+            "phase": "aktiv",
+            "text": "Annoncer : Coach Hurle est un rôle exagéré de l’enseignant·e ; il râle sur les lancers, jamais sur les personnes, et qui ne veut pas l’entendre lance sans coach (1 min). Démonstration (9 min) : quatre volontaires lancent devant la classe trois boules de papier chacun dans le panier, d’abord avec Coach Hurle, puis avec Coach Clair – l’enseignant·e change de rôle avec le panneau. La classe observe la posture, le visage et les paniers ; ensuite, les quatre montrent avec les doigts, de 0 à 10, l’envie qu’ils avaient de continuer avec chaque coach. Manche en groupes (10 min) : au poste de chaque îlot, chacun lance trois fois ; un membre du groupe est Coach Clair et prend des phrases sur l’affiche, au troisième lancer le lanceur se coache lui-même, à mi-voix ou dans sa tête, avec son propre prénom. Personne ne joue Coach Hurle dans les groupes. Bilan (6 min) : avec quel coach étiez-vous plus calmes, avec lequel continueriez-vous à vous entraîner – et lequel parle le plus souvent dans votre tête ? Pour finir, le résultat de la recherche en une phrase (2 min).",
+            "sagen": [
+              "Coach Hurle est un rôle. Il râle sur le lancer, jamais sur vous – et qui ne veut pas l’entendre lance sans lui.",
+              "Avec quel coach voulez-vous vous entraîner la semaine prochaine ? Et lequel des deux parle le plus souvent dans votre tête ?",
+              "Bienveillant ne veut pas dire mou : Coach Clair dit aussi ce qui doit s’améliorer. Il le dit seulement de façon qu’on ait envie de continuer."
+            ],
+            "punkte": [
+              "Coach Hurle : « C’était quoi, ça ? Ma grand-mère fait mieux. » – « À côté. Comme d’habitude. » – « Fais un effort, quoi. »",
+              "Coach Clair : « Presque. Un peu moins de force. » – « Ça arrive. Lancer suivant. » – « Ton bras était mieux tendu. Exactement comme ça. »",
+              "Auto-coaching : « Calme, Léa. Moins de force. T’as le temps. » – avec son propre prénom, comme avec un ami.",
+              "Dans les groupes : seulement Coach Clair ; les boules seulement dans le panier, seulement derrière la ligne, seulement à son tour."
+            ],
+            "tipp": "Que Coach Clair fasse vraiment marquer plus de paniers n’est pas décisif ; souvent, la différence est faible. Ce qui compte, c’est ce qu’on a ressenti et avec qui on veut continuer. La recherche en une phrase : qui se traitait avec bienveillance après un échec s’entraînait ensuite plus longtemps – pas moins. Qui a besoin de bouger ramasse les boules ou compte les paniers au poste de démonstration. Qui n’aime pas entendre crier, même en spectateur, s’assoit au fond.",
+            "wennEsKippt": "Si la classe imite Coach Hurle et que les jeunes s’insultent, arrêter tout de suite : seul l’enseignant·e a le droit de hurler, et seulement sur les lancers ; le groupe fait un tour sans coach. Si quelqu’un semble touché par Coach Hurle, arrêter la manche pour lui – il devient arbitre – et lui demander plus tard en tête-à-tête comment il va. Si des boules visent des personnes, le lanceur devient ramasseur pendant un tour. Si la place manque, on joue assis, avec un seau sur la table."
+          },
+          {
+            "titel": "Skill : Coach Clair",
+            "dauer": 12,
+            "phase": "skill",
+            "text": "Tout le monde est assis, les deux pieds au sol. Annoncer : Coach Clair marche aussi sans panier – dans le bus, avant un devoir, après un message pénible. Écrire les trois étapes au tableau. Guider deux fois, avec un petit raté de la liste que chacun s’imagine en silence : remarquer le crieur, s’appeler par son prénom, dire une phrase claire et bienveillante – dans sa tête ou en chuchotant (4 min). Ensuite deux ou trois voix : qu’est-ce que ça fait de s’appeler par son prénom (2 min) ? Puis chacun écrit sa phrase pour les moments durs sur la petite carte du cahier, la découpe et la garde sur soi ; de l’adhésif large la rend solide (4 min). Expliquer brièvement : qui se parle comme à une autre personne prend de la distance et reste plus calme (2 min).",
+            "sagen": [
+              "Imaginez un petit raté – juste un petit. On s’entraîne avec du petit pour que ça marche avec du grand.",
+              "Dites votre prénom dans votre tête, comme le dirait un coach qui est de votre côté.",
+              "Votre phrase pour la carte : que doit dire Coach Clair quand ça devient vraiment dur ?"
+            ],
+            "punkte": [
+              "Remarque quand le crieur se lance – et dis-toi intérieurement : attends.",
+              "Parle-toi avec ton prénom, comme un coach qui est de ton côté : « OK, Léa… »",
+              "Dis clairement et gentiment ce qui s’est passé et ce qui aide maintenant : « Ça arrive. Maintenant, d’abord l’exercice facile. »",
+              "Ratés pour s’entraîner : bus raté · cahier oublié · perdu à un jeu vidéo · message envoyé à la mauvaise personne."
+            ],
+            "tipp": "Qui se trouve bizarre avec son prénom prend le « tu » : « OK, tu vas y arriver. » La voix bienveillante de la 7e et Coach Clair se complètent : la voix console, le coach montre le pas suivant. La carte skill à la fin du cahier résume Coach Clair en trois étapes.",
+            "wennEsKippt": "Si ça ricane, continuer calmement – les rires font partie des exercices où l’on se parle à soi-même. Si un souvenir submerge quelqu’un, il peut ouvrir les yeux et faire autre chose, par exemple le 5-4-3-2-1 dans la salle ; lui demander brièvement après le cours comment il va. Qui ne trouve pas de phrase pour la carte en prend une au tableau.",
+            "blatt": "ff6-mein-innerer-coach"
+          },
+          {
+            "titel": "Boussole, Skills-Pass et mission",
+            "dauer": 10,
+            "phase": "abschluss",
+            "text": "Le chapitre est bouclé : ouvrir la boussole des skills et feuilleter le Skills-Pass – merci sans mais, ce que mon corps sait faire, Coach Clair, et les skills de la 7e. Chacun écrit dans la case « 2 · Estime de soi et corps » le skill qui l’aide quand il doute de lui, et quand il l’utilise ; « encore ouvert » est permis (5 min). Puis le Skills-Pass, avec la question au tableau : que dit Coach Clair quand quelque chose rate pour moi ? Tampon en passant dans les rangs (3 min). Pour finir, annoncer la mission de la semaine en une phrase et le prochain chapitre (2 min).",
+            "sagen": [
+              "Quel skill vous aide quand vous doutez de vous – et quand l’utilisez-vous ? Ça va dans la deuxième case.",
+              "Votre mission : quand vous vous faites des reproches cette semaine, parlez-vous une fois comme Coach Clair – avec votre prénom."
+            ],
+            "tipp": "La question du chapitre est encore au tableau : qu’est-ce qui fait ma valeur – même quand je me compare ? Qui veut lit son entrée de la boussole comme réponse ; deux voix suffisent. Compléter la boussole toujours ensemble, en classe, jamais en devoir à la maison.",
+            "wennEsKippt": "Si quelqu’un dit qu’aucun skill ne l’a aidé, le laisser dire : « encore ouvert » est une entrée honnête. Si la petite carte fait sourire, ne pas la défendre – qui ne veut pas la garder sur soi la colle dans son cahier.",
+            "blatt": "ff-skills-kompass"
+          }
+        ],
+        "bruecke": "La semaine prochaine commence le chapitre Stress et école : vous situerez vos signes de stress sur un baromètre et sentirez quand le bon stress bascule dans le trop.",
+        "mission": "Quand tu te fais des reproches, parle-toi une fois comme Coach Clair, avec ton prénom.",
+        "hintergrund": "L’autocompassion, c’est se traiter dans les moments difficiles comme on traiterait un bon ami : avec bienveillance plutôt qu’en se condamnant, en sachant que l’échec fait partie de la vie, et avec attention plutôt qu’en ruminant (Neff, 2003). Elle ne rend pas paresseux : après un échec, des étudiants bienveillants envers eux-mêmes se sont même entraînés plus longtemps (Breines & Chen, 2012). Qui se parle à la deuxième personne ou avec son prénom prend de la distance et réagit moins vivement (Kross & Ayduk, 2017) – Coach Clair s’appuie là-dessus. La séance exerce tout cela d’abord sur des personnages inventés.",
+        "quellen": [
+          "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+          "Breines, J. G. & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "achtung": "Un critique intérieur très dur peut faire partie d’une dépression. Les phrases de son propre critique ne sont jamais lues ni ramassées ; on s’entraîne sur des personnages inventés. Coach Hurle n’est qu’un rôle de l’enseignant·e : pas de gros mots, rien sur le corps, l’origine ou les notes, seuls des volontaires lancent devant ; qui vit beaucoup de dévalorisation à la maison peut réagir fortement. Si des phrases comme « Je ne vaux rien » ou « Sans moi, tout le monde serait mieux » tombent : ne pas approfondir devant la classe, en parler calmement après le cours, ne rien promettre, informer le SePAS le jour même, suivre le protocole de protection ; danger aigu : 112.",
+        "differenzierung": {
+          "leichter": "La bulle peut être remplie dans n’importe quelle langue ; pour le bureau de traduction, des débuts de phrase au tableau aident (« C’était… », « La prochaine fois… »). Dans le duel, on coache à l’oral, dans n’importe quelle langue ; pour la petite carte, une phrase du tableau suffit, et dans la boussole, le nom du skill.",
+          "schwerer": "Observer pendant le duel : noter la posture, le visage et les paniers avec chaque coach et en rendre compte à la classe. Écrire une phrase de Coach Clair pour une situation difficile – après une dispute, après une mauvaise note – et vérifier qu’elle est vraie et qu’elle aide."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le portable qui tombe (5 min), Mila et les deux poids, deux mesures avec la voix bienveillante (10 min), duel des coachs seulement en démonstration avec quatre volontaires et bilan (15 min), Coach Clair avec la petite carte (10 min), boussole, Skills-Pass et mission (10 min). Le bureau de traduction est rattrapé au début de la séance suivante ou supprimé."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff6-mein-innerer-coach",
+      "bereich": "skills",
+      "thema": "gedanken",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "25 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Innerer Kritiker",
+        "Selbstmitgefühl",
+        "Coach Klar",
+        "Förderfach"
+      ],
+      "bild": "icon:messages",
+      "kurs": [
+        "ff6-e05"
+      ],
+      "de": {
+        "titel": "Mein innerer Coach",
+        "untertitel": "Der Kritiker brüllt. Die freundliche Stimme sagt die Wahrheit – nur so, dass du weitermachen kannst.",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Nora hat zum zweiten Mal ihr Sportzeug vergessen. Was würde ihre freundliche Stimme sagen? Schreib es in die leere Blase."
+          },
+          {
+            "art": "comic",
+            "spalten": 3,
+            "felder": [
+              {
+                "figuren": [
+                  "figur:jana:verlegen",
+                  "figur:lehrer:neutral"
+                ],
+                "sprecher": 1,
+                "text": "Schon wieder ohne Sportzeug, Nora?",
+                "untertitel": "Die Panne"
+              },
+              {
+                "figuren": [
+                  "figur:jana:traurig:haende-gesicht"
+                ],
+                "blase": "denken",
+                "text": "Typisch. Du kriegst echt gar nichts auf die Reihe.",
+                "untertitel": "Der innere Kritiker"
+              },
+              {
+                "figuren": [
+                  "figur:jana:ruhig"
+                ],
+                "blase": "denken",
+                "untertitel": "Die freundliche Stimme"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Übersetzungsbüro: Was sagt die freundliche Stimme statt des Kritikers? Ehrlich, ohne Schönreden – und mit einem nächsten Schritt.",
+            "hinweis": "Das erste Paar zeigt, wie es gemeint ist."
+          },
+          {
+            "art": "dialog",
+            "zeilen": [
+              {
+                "wer": "Mathis’ Kritiker",
+                "text": "Alle anderen haben das kapiert, nur du nicht."
+              },
+              {
+                "wer": "Freundliche Stimme",
+                "text": "Du hast es noch nicht kapiert. Frag Ana oder die Lehrerin – das machen andere auch."
+              },
+              {
+                "wer": "Tiagos Kritiker",
+                "text": "Elfmeter verschossen. Wegen dir verliert die ganze Mannschaft."
+              },
+              {
+                "wer": "Freundliche Stimme"
+              },
+              {
+                "wer": "Aylins Kritiker",
+                "text": "Nachricht an die falsche Person geschickt. Wie peinlich – das vergisst dir keiner."
+              },
+              {
+                "wer": "Freundliche Stimme"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Freundlich heißt nicht schönreden.",
+            "text": "Die freundliche Stimme sagt nicht: „Das war perfekt.“ Sie sagt: „Das war schwer, und du hast es versucht.“ Und sie fragt, was jetzt hilft."
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Coach Klar in drei Schritten. Schreib dann deinen Satz für schwere Momente in den Rahmen, schneide ihn aus und steck ihn ein.",
+            "symbole": [
+              "schreiben",
+              "schneiden"
+            ]
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 0,
+            "items": [
+              {
+                "titel": "Moment.",
+                "text": "Merk, wann der Brüller in dir loslegt."
+              },
+              {
+                "titel": "Okay, (dein Name) …",
+                "text": "Sprich dich mit deinem Namen an – wie ein Coach, der zu dir hält."
+              },
+              {
+                "titel": "Passiert. Jetzt: …",
+                "text": "Sag klar und freundlich, was jetzt hilft."
+              }
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "feld",
+                "label": "Mein Satz für schwere Momente",
+                "hoehe": 4,
+                "zeichnen": true
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "tipp",
+                "titel": "Wo wohnt dein Kärtchen?",
+                "text": "In der Handyhülle, im Federmäppchen, im Portemonnaie. Mit breitem Klebeband überklebt, hält es lange. Wer es nicht einstecken mag, klebt es ins Heft."
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Nur für dich, wenn du magst: ein Satz, den dein Kritiker manchmal sagt – oder einer aus dem Kasten –, und was Coach Klar antwortet.",
+            "hinweis": "Das wird nie vorgelesen und nie eingesammelt."
+          },
+          {
+            "art": "wortspeicher",
+            "titel": "Sätze, die viele Kritiker sagen",
+            "items": [
+              "Typisch du.",
+              "Alle anderen können das.",
+              "Wie peinlich.",
+              "Das wird nie was.",
+              "Stell dich nicht so an.",
+              "Das hättest du wissen müssen."
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein Kritiker sagt manchmal: …",
+              "Coach Klar antwortet: …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Wenn der Kritiker nicht leiser wird",
+            "text": "Manchmal sind die Gedanken über dich selbst so hart und so häufig, dass Freundlichkeit allein nicht reicht. Dann sprich mit jemandem, dem du vertraust – beim SePAS oder anonym beim Kanner- a Jugendtelefon (116 111)."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen übersetzen Kritiker-Sätze erfundener Figuren in die freundliche Stimme, lernen Coach Klar in drei Schritten und nehmen einen eigenen Satz für schwere Momente auf einem Kärtchen mit.",
+          "ablauf": [
+            "Einheit 5, Schritt 4 (17 Min.): Aufgabe 1 allein, dann das Übersetzungsbüro (Aufgabe 2) in Tischgruppen.",
+            "Schritt 7: die drei Schritte von Coach Klar anleiten, dann das Kärtchen schreiben, ausschneiden, mit Klebeband haltbar machen.",
+            "Aufgabe 4 ist freiwillig und privat: nie vorlesen, nie einsammeln."
+          ],
+          "hintergrund": "Selbstmitgefühl heißt, sich in schwierigen Momenten zu begegnen wie einem guten Freund (Neff, 2003). Wer mit sich in der zweiten Person oder mit dem eigenen Namen spricht, gewinnt Abstand und reagiert weniger heftig (Kross & Ayduk, 2017).",
+          "quellen": [
+            "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+            "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+          ],
+          "achtung": "Sehr harte oder häufige Selbstabwertung kann zu einer Depression gehören. Nicht vor der Klasse ansprechen; nach der Stunde behutsam nachfragen und noch am selben Tag den SePAS informieren.",
+          "material": "Scheren, breites Klebeband"
+        }
+      },
+      "fr": {
+        "titel": "Mon coach intérieur",
+        "untertitel": "Le critique crie. La voix bienveillante dit la vérité – mais de façon à ce que tu puisses continuer.",
+        "bausteine": [
+          {
+            "art": "aufgabe",
+            "text": "Nora a oublié ses affaires de sport pour la deuxième fois. Que dirait sa voix bienveillante ? Écris-le dans la bulle vide."
+          },
+          {
+            "art": "comic",
+            "spalten": 3,
+            "felder": [
+              {
+                "figuren": [
+                  "figur:jana:verlegen",
+                  "figur:lehrer:neutral"
+                ],
+                "sprecher": 1,
+                "text": "Encore sans tes affaires de sport, Nora ?",
+                "untertitel": "Le raté"
+              },
+              {
+                "figuren": [
+                  "figur:jana:traurig:haende-gesicht"
+                ],
+                "blase": "denken",
+                "text": "Typique. T’arrives vraiment à rien.",
+                "untertitel": "Le critique intérieur"
+              },
+              {
+                "figuren": [
+                  "figur:jana:ruhig"
+                ],
+                "blase": "denken",
+                "untertitel": "La voix bienveillante"
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Bureau de traduction : que dit la voix bienveillante à la place du critique ? Honnêtement, sans enjoliver – et avec un prochain pas.",
+            "hinweis": "La première paire montre l’idée."
+          },
+          {
+            "art": "dialog",
+            "zeilen": [
+              {
+                "wer": "Critique de Mathis",
+                "text": "Tous les autres ont compris, sauf toi."
+              },
+              {
+                "wer": "Voix bienveillante",
+                "text": "Tu n’as pas encore compris. Demande à Ana ou à la prof – les autres le font aussi."
+              },
+              {
+                "wer": "Critique de Tiago",
+                "text": "Penalty raté. À cause de toi, toute l’équipe perd."
+              },
+              {
+                "wer": "Voix bienveillante"
+              },
+              {
+                "wer": "Critique d’Aylin",
+                "text": "Message envoyé à la mauvaise personne. Trop la honte – personne ne va l’oublier."
+              },
+              {
+                "wer": "Voix bienveillante"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Bienveillant ne veut pas dire enjoliver.",
+            "text": "La voix bienveillante ne dit pas : « C’était parfait. » Elle dit : « C’était dur, et tu as essayé. » Et elle demande ce qui aide maintenant."
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Coach Clair en trois étapes. Écris ensuite ta phrase pour les moments durs dans le cadre, découpe-le et garde-le sur toi.",
+            "symbole": [
+              "schreiben",
+              "schneiden"
+            ]
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 0,
+            "items": [
+              {
+                "titel": "Attends.",
+                "text": "Remarque quand le crieur en toi se lance."
+              },
+              {
+                "titel": "OK, (ton prénom)…",
+                "text": "Parle-toi avec ton prénom – comme un coach qui est de ton côté."
+              },
+              {
+                "titel": "Ça arrive. Là : …",
+                "text": "Dis clairement et gentiment ce qui aide maintenant."
+              }
+            ]
+          },
+          {
+            "art": "spalten",
+            "verhaeltnis": "1:1",
+            "links": [
+              {
+                "art": "feld",
+                "label": "Ma phrase pour les moments durs",
+                "hoehe": 4,
+                "zeichnen": true
+              }
+            ],
+            "rechts": [
+              {
+                "art": "info",
+                "symbol": "tipp",
+                "titel": "Où vit ta petite carte ?",
+                "text": "Dans la coque du portable, la trousse, le porte-monnaie. Recouverte d’adhésif large, elle tient longtemps. Qui ne veut pas la garder sur soi la colle dans son cahier."
+              }
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Rien que pour toi, si tu veux : une phrase que ton critique dit parfois – ou une de l’encadré –, et ce que Coach Clair répond.",
+            "hinweis": "Ce n’est jamais lu à voix haute ni ramassé."
+          },
+          {
+            "art": "wortspeicher",
+            "titel": "Des phrases que disent beaucoup de critiques",
+            "items": [
+              "Typique.",
+              "Tous les autres y arrivent.",
+              "Trop la honte.",
+              "Ça ne marchera jamais.",
+              "Arrête ton cinéma.",
+              "T’aurais dû le savoir."
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mon critique dit parfois : …",
+              "Coach Clair répond : …"
+            ],
+            "linien": 2
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Quand le critique ne se tait pas",
+            "text": "Parfois, les pensées sur toi-même sont si dures et si fréquentes que la gentillesse ne suffit pas. Alors parles-en à quelqu’un de confiance – au SePAS ou anonymement au Kanner- a Jugendtelefon (116 111)."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes traduisent dans la voix bienveillante les phrases du critique de personnages inventés, apprennent Coach Clair en trois étapes et emportent leur propre phrase pour les moments durs sur une petite carte.",
+          "ablauf": [
+            "Séance 5, étape 4 (17 min) : exercice 1 seul, puis le bureau de traduction (exercice 2) en îlots.",
+            "Étape 7 : guider les trois étapes de Coach Clair, puis écrire la petite carte, la découper, la rendre solide avec de l’adhésif.",
+            "L’exercice 4 est facultatif et privé : jamais lu, jamais ramassé."
+          ],
+          "hintergrund": "L’autocompassion, c’est se traiter dans les moments difficiles comme un bon ami (Neff, 2003). Qui se parle à la deuxième personne ou avec son prénom prend de la distance et réagit moins vivement (Kross & Ayduk, 2017).",
+          "quellen": [
+            "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101.",
+            "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+          ],
+          "achtung": "Une dévalorisation de soi très dure ou très fréquente peut faire partie d’une dépression. Ne pas en parler devant la classe ; après le cours, demander délicatement comment ça va et informer le SePAS le jour même.",
+          "material": "Ciseaux, adhésif large"
+        }
+      }
+    }
+  ]
+}

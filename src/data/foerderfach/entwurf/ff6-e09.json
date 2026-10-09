@@ -1,0 +1,1112 @@
+{
+  "einheiten": [
+    {
+      "id": "ff6-e09",
+      "klasse": "6e",
+      "dauer": 100,
+      "blaetter": [
+        "ff6-test-drehbuch",
+        "ff-skills-kompass"
+      ],
+      "vorlagen": [
+        "ff6-test-gedanken-karten"
+      ],
+      "woerter": [
+        {
+          "de": "die Aufregung",
+          "fr": "le trac"
+        },
+        {
+          "de": "die Sorge",
+          "fr": "l’inquiétude (f.)"
+        },
+        {
+          "de": "prüfen",
+          "fr": "vérifier"
+        },
+        {
+          "de": "wahrscheinlich",
+          "fr": "probable"
+        },
+        {
+          "de": "der Energie-Satz",
+          "fr": "la phrase énergie"
+        },
+        {
+          "de": "der Testtag",
+          "fr": "le jour du devoir"
+        }
+      ],
+      "de": {
+        "titel": "Tests ohne Panik",
+        "kurz": "Was Prüfungsangst mit Kopf und Körper macht und was hilft: Sorgen mit drei Fragen prüfen, Herzklopfen als Energie deuten, den Testtag planen – und zum Kapitelende ein Skill in den Skills-Kompass.",
+        "ziele": [
+          "erklären mit einem Versuch, wie Sorgen im Kopf und Aufregung im Körper im Test zusammenwirken",
+          "prüfen Prüfungsgedanken von Figuren mit drei Fragen",
+          "deuten Herzklopfen als Energie und üben ihren Energie-Satz",
+          "planen ihren nächsten Testtag und füllen den Skills-Kompass"
+        ],
+        "material": [
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Gedanken-Karten (Vorlage), Zettel",
+          "5 Plakate (A3) mit den Stationen",
+          "Dicke Stifte, einer je Tischgruppe",
+          "Testtermine der Klasse (Tafel)",
+          "Schülerheft",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Beim Régent Testtermine erfragen, ohne Noten; wer steht unter Druck?",
+          "Mit Fachlehrkräften 30 Sekunden Skill vor dem nächsten Test abmachen.",
+          "Gedanken-Karten ausschneiden; fünf A3-Plakate mit den Stationen aufhängen.",
+          "Tafelbild, die drei Fragen und Beispiel-Sätze anschreiben und abdecken.",
+          "Nach Asthma oder anderen Gründen fragen, die gegen viel Bewegung sprechen."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Gefühlsrad, Zahl und Hand-Barometer"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick: Kam euer Fünf-Minuten-Start?"
+          },
+          {
+            "min": "15–27",
+            "phase": "input",
+            "titel": "Kopf und Körper: das Sorgen-Experiment"
+          },
+          {
+            "min": "27–45",
+            "phase": "uebung",
+            "titel": "Gedanken prüfen mit drei Fragen"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Herzklopfen auf Kommando"
+          },
+          {
+            "min": "50–60",
+            "phase": "uebung",
+            "titel": "Angst oder Energie? Mein Energie-Satz"
+          },
+          {
+            "min": "60–80",
+            "phase": "uebung",
+            "titel": "Mein Drehbuch für den Testtag"
+          },
+          {
+            "min": "80–90",
+            "phase": "skill",
+            "titel": "Skill: Herzklopfen umdeuten"
+          },
+          {
+            "min": "90–95",
+            "phase": "abschluss",
+            "titel": "Skills-Kompass: Stress und Schule"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Mission und Moment"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad, Zahl und Hand-Barometer",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Auf drei zeigen alle ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt, zwei, drei Freiwillige nennen ihr Wort (4 Min.). Dann das Hand-Barometer: Alle schauen auf den Tisch oder schließen die Augen und zeigen mit einer Hand vor dem Körper, wie aufgeregt sie am Morgen eines Tests meistens sind – Hand auf dem Tisch: ruhig, auf Brusthöhe: aufgeregt, über dem Kopf: Panik; die Lehrkraft zeigt die drei Höhen vorher einmal vor. Nur sie schaut hin und beschreibt das Bild ohne Namen (3 Min.). Zum Schluss erzählt sie in zwei, drei Sätzen von einer Prüfung, vor der sie selbst sehr aufgeregt war, und was ihr damals geholfen hat (3 Min.).",
+            "sagen": [
+              "Schaut auf den Tisch und zeigt mit der Hand: Wie aufgeregt seid ihr am Morgen eines Tests? Nur ich sehe es.",
+              "Ich sehe viele Hände auf Brusthöhe, ein paar ganz oben, ein paar unten. Mit der Aufregung ist hier niemand allein."
+            ],
+            "tipp": "Wer nicht wegschauen mag, legt die Hand flach auf den Tisch und zeigt nichts – auch das ist in Ordnung. Die eigene Prüfungsgeschichte der Lehrkraft, etwa von der Führerscheinprüfung, wirkt stärker als jede Erklärung: Auch Erwachsene kennen das.",
+            "wennEsKippt": "Schaut sich jemand um und kommentiert die Hände der anderen, freundlich stoppen und neu beginnen: Die Hände sieht nur die Lehrkraft. Ist eine Hand ganz oben und die Person wirkt angespannt, nicht vor der Klasse nachfragen, sondern in der ersten Arbeitsphase leise: Ist das vor jedem Test so?"
+          },
+          {
+            "titel": "Rückblick: Kam euer Fünf-Minuten-Start?",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann nach der Mission fragen: Kam dein Moment für den Fünf-Minuten-Start – und was hast du gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz, wie es nach den fünf Minuten war. Dann das Thema nennen und drei Wörter an die Tafel schreiben: Kopf – Körper – Plan. Ankündigen, dass die Stunde das Kapitel abschließt: Am Ende kommt ein Skill in den Skills-Kompass. Den Rahmen klären: Über Noten wird heute nicht gesprochen, von niemandem.",
+            "sagen": [
+              "Kam euer Moment für den Fünf-Minuten-Start? Daumen hoch, Mitte oder runter – wer erzählt, wie es nach den fünf Minuten war?",
+              "Heute geht es um den Test selbst: was in Kopf und Körper passiert und was ihr in der Hand habt. Noten sind heute kein Thema."
+            ],
+            "tipp": "Wer den Start geschafft hat, ist ein gutes Beispiel für heute: Zum Testtag gehören auch die Tage davor. Wer ihn nicht geschafft hat, hört: Der nächste Moment kommt bestimmt."
+          },
+          {
+            "titel": "Kopf und Körper: das Sorgen-Experiment",
+            "dauer": 12,
+            "phase": "input",
+            "text": "Ein kurzer Versuch für alle gleichzeitig: Jede Person sagt halblaut Buchstaben und Zahlen im Wechsel – A1, B2, C3 –, so weit sie in 30 Sekunden kommt, und merkt sich still, wo sie aufgehört hat (1 Min.). Zweite Runde, wieder 30 Sekunden: Diesmal geht die Lehrkraft durch die Reihen und spricht halblaut als Sorgen-Stimme in der Ich-Form dazwischen (2 Min.). Fragen, bei wem es diesmal schwerer ging – Hand heben, ohne Zahlen zu nennen – und was passiert ist (2 Min.). Mit dem Tafelbild erklären: Prüfungsangst hat zwei Teile. Die Sorgen im Kopf belegen Platz, der dann für die Aufgabe fehlt; die Aufregung im Körper dagegen macht wach und muss nicht weg (5 Min.). Daraus die zwei Wege für heute: Sorgen prüfen und Aufregung nutzen; der Kasten auf dem Blatt fasst beides zusammen (2 Min.).",
+            "sagen": [
+              "A1, B2, C3 – halblaut, jede Person in ihrem Tempo. Ich rede gleich dazwischen, lasst euch nicht stören.",
+              "Genau das machen Sorgen im Test: Sie reden dazwischen. Was sie belegen, fehlt für die Aufgabe.",
+              "Das Ziel ist nicht null Aufregung. Das Ziel ist: weniger Sorgen."
+            ],
+            "punkte": [
+              "Oh nein, die Zeit läuft.",
+              "Was, wenn ich das nicht schaffe?",
+              "Die anderen sind bestimmt schon viel weiter.",
+              "Gleich merken alle, dass ich hänge."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Sorgen im Kopf",
+                "Aufregung im Körper"
+              ],
+              "zeilen": [
+                [
+                  "„Ich schaff das nie.“ – „Alle anderen können das.“ – Kopf leer",
+                  "Herzklopfen, schneller Atem, feuchte Hände, flauer Magen"
+                ],
+                [
+                  "belegen Platz, der für die Aufgabe fehlt",
+                  "macht wach und schnell – Energie für den Test"
+                ],
+                [
+                  "Was hilft: Gedanken prüfen, ein Satz, den ich glauben kann",
+                  "Was hilft: umdeuten – „Mein Körper macht sich bereit.“"
+                ]
+              ]
+            },
+            "tipp": "Die Unterscheidung entlastet: Viele glauben, sie müssten erst ganz ruhig sein, um einen guten Test zu schreiben. Wer das Herzklopfen nicht mehr bekämpfen muss, hat Kraft für die Sorgen. Wer die Sprache noch lernt, macht den Versuch nur mit Zahlen oder in der eigenen Sprache.",
+            "wennEsKippt": "Macht die Sorgen-Stimme jemanden sichtlich nervös, sofort abbrechen und benennen: Das war Absicht – so fühlt es sich an, wenn Sorgen dazwischenreden. Wer nicht mitsprechen mag, hört zu und beobachtet sich selbst. Ruft jemand laut, wie weit er gekommen ist, oder vergleicht sich mit anderen, freundlich stoppen: Heute vergleicht jede Person nur sich mit sich. Macht jemand die Sorgen-Stimme laut nach, kurz mitlachen: Genau so nervt sie – und weiter.",
+            "blatt": "ff6-test-drehbuch"
+          },
+          {
+            "titel": "Gedanken prüfen mit drei Fragen",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Gemeinsam (5 Min.): den Comic von Inês auf dem Blatt lesen. Inês denkt am Abend vor dem Mathe-Test: Wenn ich den Test verhaue, schaffe ich das Jahr nicht. Die drei Fragen von der Tafel durchgehen und aus den Antworten einen Satz bauen, den Inês am Morgen wirklich glauben kann; jede Person schreibt ihn ins letzte Bild (Aufgabe 1). In den Tischgruppen (7 Min.): Jede Gruppe zieht eine Gedanken-Karte, liest sie laut, beantwortet die drei Fragen für die Figur und schreibt einen Satz, den die Figur glauben kann, auf einen Zettel. Vorstellen (4 Min.): Jede Gruppe liest Gedanke und neuen Satz vor und hängt den Zettel an die Tafel; die Klasse prüft mit dem Daumen: glaubwürdig – oder schöngeredet? Zum Schluss (2 Min.): Wer mag, prüft in Aufgabe 2 still einen eigenen Gedanken; niemand liest vor.",
+            "sagen": [
+              "Nicht schönreden: ‚Ich bin ein Genie‘ glaubt am Morgen vor dem Test niemand. Wir suchen einen Satz, den Inês wirklich glauben kann.",
+              "Was würdet ihr Inês sagen, wenn sie euch das schreibt? Genau das darf sie sich selbst sagen.",
+              "Und wenn mitten im Test keine Zeit für drei Fragen ist? Dann reicht ‚Danke, Kopf‘ aus der 7e: Mein Kopf sagt gerade, dass … – danke, Kopf. Und weiter."
+            ],
+            "punkte": [
+              "Was ist das Schlimmste, das realistisch passieren kann – und wie würde ich damit fertig?",
+              "Was passiert am wahrscheinlichsten?",
+              "Was würde ich einem Freund oder einer Freundin an meiner Stelle sagen?"
+            ],
+            "tipp": "Bei anderen sehen wir klarer als bei uns selbst – deshalb wird an Figuren geübt, und deshalb hilft die Frage nach der Freundin. Wer in der 7e den kritischen Detektiv kennengelernt hat, erkennt die Idee wieder: Die drei Fragen sind die Kurzform für die Testzeit. Die Zettel bleiben bis zum Ende der Stunde an der Tafel.",
+            "wennEsKippt": "Nennt jemand einen Gedanken wie „Wenn ich durchfalle, bringen mich meine Eltern um“, nicht vor der Klasse vertiefen, aber auch nicht übergehen: kurz würdigen, dass der Druck sehr groß klingt, und ein Gespräch nach der Stunde anbieten; deutet etwas auf Angst vor Gewalt hin, noch am selben Tag den SePAS informieren. Steigert sich eine Tischgruppe bei Frage 1 ins Katastrophen-Kino („Dann muss ich auswandern“), mit Humor zurückholen: realistisch, nicht Kino. Klingt ein Satz schöngeredet, hilft die Daumen-Probe der Klasse beim Nachschärfen. Will jemand in der Gruppe nicht mitreden, liest er die Karte vor oder schreibt den Satz der Gruppe auf; Zuhören zählt auch.",
+            "blatt": "ff6-test-gedanken-karten"
+          },
+          {
+            "titel": "Bewegungspause: Herzklopfen auf Kommando",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Fenster auf, alle stehen hinter ihrem Stuhl. Eine Minute Bewegung mit voller Kraft: auf der Stelle laufen, Hampelmann oder Kniebeugen – jede Person wählt, was für ihren Körper geht (1 Min.). Dann sofort stillstehen, eine Hand aufs Herz legen und spüren: Herz, Atem, Wärme (1 Min.). Fragen: Fühlt sich das an wie Angst – oder wie Vorfreude vor einem Spiel? Zwei, drei Stimmen (2 Min.). Wasser trinken, setzen (1 Min.). Liegt die große Pause zwischen den beiden Stunden, die Minute Bewegung zu Beginn von Schritt 6 am Platz nachholen.",
+            "sagen": [
+              "Eine Minute Vollgas – jede Person so, wie es für ihren Körper geht. Los.",
+              "Hand aufs Herz. Was spürt ihr? Kennt ihr das – vor einem Spiel, vor einem Auftritt, vor einem Test?"
+            ],
+            "tipp": "Die Antworten sind meist gemischt: Für die einen fühlt es sich an wie vor einem Spiel, für die anderen wie vor einem Test. Genau das ist der Punkt von Schritt 6: Im Körper sieht beides fast gleich aus. Wer sich beim Springen beobachtet fühlt, dreht sich zum Fenster oder zur Wand.",
+            "wennEsKippt": "Wer wegen Asthma, einer Verletzung oder aus einem anderen Grund nicht mit voller Kraft mitmachen kann, geht zügig auf der Stelle oder stoppt die Zeit; niemand muss erklären, warum. Wird es wild oder laut, nur noch am eigenen Platz und ohne Geräusche weitermachen: stummer Hampelmann."
+          },
+          {
+            "titel": "Angst oder Energie? Mein Energie-Satz",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "An das Herzklopfen von eben anknüpfen: Angst und Vorfreude fühlen sich im Körper fast gleich an – Herz, Atem, Wärme. Was daraus wird, hängt stark davon ab, wie man es nennt (2 Min.). Erklären: In Studien schnitten Menschen, die ihr Herzklopfen vor einer Prüfung als Bereitschaft verstanden – „Mein Körper macht sich bereit“ –, besser ab als Menschen, die versuchten, sich zu beruhigen. Wer den Satz aus der 7e kennt, sagt ihn den anderen (2 Min.). Dann schreibt jede Person in Aufgabe 3 ihren eigenen Energie-Satz, in eigenen Worten, gern auch in der eigenen Sprache; Beispiele stehen an der Tafel (4 Min.). Zum Schluss sagt jede Person ihren Satz einmal leise für sich; drei Freiwillige sagen ihn laut (2 Min.).",
+            "sagen": [
+              "Euer Körper weiß nicht, ob gleich ein Test kommt oder ein Endspiel. Er macht euch bereit – die Frage ist, wie ihr es nennt.",
+              "Ihr müsst nicht ruhig werden. Ihr dürft aufgeregt sein – und die Energie für den Test nutzen."
+            ],
+            "punkte": [
+              "Mein Herz klopft – mein Körper macht sich bereit.",
+              "Das ist Energie, keine Gefahr.",
+              "Wie vor einem Spiel: Ich bin startklar.",
+              "Aufgeregt heißt: Es ist mir wichtig."
+            ],
+            "tipp": "Der Satz wirkt nur, wenn er nicht nach Lehrkraft klingt. Darum eigene Worte, gern mit Humor („Mein Motor läuft“) – Hauptsache, man kann ihn sich im Ernst sagen.",
+            "wennEsKippt": "Sagt jemand „Bei mir ist das echte Panik, kein Motor“, ernst nehmen: Wenn die Angst so groß ist, dass gar nichts mehr geht, braucht es mehr als einen Satz – nach der Stunde ansprechen und den SePAS als Möglichkeit nennen. Wird gekichert, kurz mitlachen und weitermachen; niemand muss seinen Satz laut sagen.",
+            "blatt": "ff6-test-drehbuch"
+          },
+          {
+            "titel": "Mein Drehbuch für den Testtag",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "An den Wänden hängen fünf Plakate, eins je Station: Die Tage davor – Abend und Morgen – Vor der Tür – Im Test – Danach. Expertenrunde (5 Min.): Jede Tischgruppe ist Expertenteam für eine Station und schreibt drei Tipps auf ihr Plakat, die wirklich helfen – keine Ratschläge von Erwachsenen, sondern was sie selbst nehmen würden. Galerie (4 Min.): Alle gehen still herum, lesen die Plakate und setzen einen Haken hinter einen Tipp, den sie übernehmen. Dann allein (9 Min.): Jede Person trägt in Aufgabe 4 ihren nächsten Test ein – nur Fach und Datum – und schreibt in jede Station, was sie selbst tun will – Stichworte reichen; Tipps vom Blatt und von den Plakaten helfen. Zum Schluss (2 Min.): Zwei, drei Freiwillige nennen ihren wichtigsten Punkt.",
+            "sagen": [
+              "Ihr seid die Profis: Was hilft wirklich vor der Tür, wenn alle durcheinanderreden? Schreibt Tipps, die ihr selbst nehmen würdet.",
+              "Welcher Test kommt als Nächstes? Für genau den schreibt ihr euer Drehbuch – Fach und Datum reichen."
+            ],
+            "punkte": [
+              "Die Tage davor: drei kurze Lernrunden mit Selbsttest statt eines langen Abends; jede beginnt mit einem Fünf-Minuten-Start.",
+              "Abend und Morgen: Tasche packen, nichts Neues mehr lernen, rechtzeitig schlafen; frühstücken, was man verträgt, früh genug losgehen.",
+              "Vor der Tür: Abstand zu denen, die alle nervös machen („Hast du Kapitel 4?“); das Herz klopft – Energie-Satz.",
+              "Im Test: alles überfliegen, mit der leichtesten Aufgabe anfangen; Blackout-Plan aus der 7e: merken, zweimal lang ausatmen, „Mein Körper ist bereit“, markieren, weiter.",
+              "Danach: nicht sofort alle Antworten vergleichen, etwas Gutes tun, sich fragen: Was hat geholfen?"
+            ],
+            "tipp": "Die Station „Vor der Tür“ unterschätzen viele. Hier hilft ein ganz konkreter Plan: wo man steht, mit wem man redet – oder eben nicht – und welcher Satz kommt. Die Plakate bleiben bis zur nächsten Testphase hängen.",
+            "wennEsKippt": "Hat jemand keinen Test in Sicht, plant er für den nächsten Vortrag, einen Vokabeltest oder ein Spiel im Verein. Schreibt eine Gruppe Scherztipps („krank melden“), einen stehen lassen und fragen, was er über die Angst verrät – dann einen echten dazu; klingt so ein Tipp bei jemandem ernst gemeint, nach der Stunde nachfragen. Wer mit dem Schreiben nicht mitkommt, füllt drei Stationen; der Rest geht später.",
+            "blatt": "ff6-test-drehbuch"
+          },
+          {
+            "titel": "Skill: Herzklopfen umdeuten",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Generalprobe wie im Test: Taschen unter den Tisch, auf dem Tisch nur ein Stift und das Heft – beim Skills-Kompass aufgeschlagen, mit der Schrift nach unten. Jede Person schätzt still ihre Zahl (1 Min.). Die Lehrkraft spricht wie zu Beginn eines echten Tests und leitet dann die drei Schritte langsam an; alle machen sie still mit, die Lehrkraft auch (3 Min.). Dann ein zweites Mal ohne Ansage, jede Person für sich (2 Min.). Die Zahl neu schätzen und auf drei mit den Fingern zeigen; zwei, drei Rückmeldungen: Hätte man von außen etwas gesehen? Wann im Test würdet ihr das brauchen? (3 Min.) Zum Schluss ankündigen, dass die Klasse vor dem nächsten echten Test 30 Sekunden für den Skill bekommt (1 Min.).",
+            "sagen": [
+              "Handys sind aus, Namen oben rechts, ihr habt 50 Minuten. Bevor ihr umdreht: euer Skill – und niemand soll es merken.",
+              "Dreht um: Das ist kein Test. Das ist euer Skills-Kompass."
+            ],
+            "punkte": [
+              "Merken: Herz klopft, Hände feucht, Bauch flau – das ist normal.",
+              "Umdeuten: still den eigenen Energie-Satz sagen.",
+              "Nutzen: Füße fest in den Boden, einmal lang ausatmen, dann mit der leichtesten Aufgabe anfangen."
+            ],
+            "tipp": "Füße, Atem, Stift aus der 7e passt als dritter Schritt genauso – wer den Skill mag, nimmt ihn. Die 30 Sekunden vor dem nächsten echten Test sind der wichtigste Transfer der Stunde; nach dem Test fragen, ob der Skill geholfen hat, nie nach der Note.",
+            "wennEsKippt": "Wird die Test-Ansage als Theater verlacht, kurz mitlachen und noch einmal ernst beginnen; beim zweiten Durchgang ohne Ansage wird es meist still. Wirkt jemand in der gespielten Testsituation wirklich panisch, sofort aus der Rolle holen: Das ist kein Test, du kannst jederzeit aussteigen. Dann die Füße spüren lassen und nach der Stunde nachfragen.",
+            "blatt": "ff6-test-drehbuch"
+          },
+          {
+            "titel": "Skills-Kompass: Stress und Schule",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Den Skills-Kompass umdrehen. Alle blättern im Skills-Pass zu den Stunden 6 bis 9 zurück und tragen ins Feld „3 · Stress und Schule“ ein, welcher Skill ihnen in diesem Bereich hilft und wann sie ihn einsetzen; „noch offen“ ist erlaubt (3 Min.). Dann nennt jede Tischgruppe reihum nur die Namen ihrer Skills; die Lehrkraft macht eine Strichliste an der Tafel (2 Min.).",
+            "sagen": [
+              "Welcher Skill hilft euch bei Stress und Schule – und wann? Zum Beispiel: Energie-Satz, wenn ich vor der Tür warte.",
+              "In der Runde reicht der Name des Skills."
+            ],
+            "tipp": "Infrage kommen die Skills aus den Stunden 6 und 7, der Fünf-Minuten-Start, die drei Fragen an die Sorge, Herzklopfen umdeuten oder Füße, Atem, Stift aus der 7e. Die Strichliste zeigt, dass es nicht den einen richtigen Skill gibt.",
+            "wennEsKippt": "Fällt jemandem nichts ein, auf die Zettel an der Tafel und den Energie-Satz zeigen: Einer davon reicht. Wer den Kompass nicht ausfüllen mag, schreibt „noch offen“ – auch das ist ein Eintrag.",
+            "blatt": "ff-skills-kompass"
+          },
+          {
+            "titel": "Skills-Pass, Mission und Moment",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Welcher Satz hilft mir am Testtag? Jede Person schreibt ihren Satz, Stempel beim Herumgehen (2 Min.). Dann die Wochen-Mission vorlesen (steht im Heft) und den Moment wählen: Auf drei zeigen alle – ein Finger vor einem Test, zwei vor einem Spiel oder Training, drei vor einem Vortrag oder an der Tafel, die Faust ein eigener Moment – und schreiben ihn in die Spalte „Mein Moment: Wenn …“ (2 Min.). Zum Schluss der Ausblick auf das neue Kapitel (1 Min.).",
+            "sagen": [
+              "Ein Satz für den Skills-Pass: Welcher Satz hilft euch am Testtag?",
+              "Eure Mission: Wenn das Herz das nächste Mal klopft, sagt ihr euch euren Energie-Satz – und schaut, was passiert."
+            ],
+            "tipp": "Das Drehbuch bleibt im Heft. Nach der nächsten Testphase kurz fragen, was geholfen hat – nie nach der Note."
+          }
+        ],
+        "bruecke": "Nächste Woche beginnt ein neues Kapitel: Wut. Ihr schaut, was unter ihr liegt und woran ihr früh merkt, dass sie kommt.",
+        "mission": "Sag dir beim nächsten Herzklopfen deinen Energie-Satz. Was passiert danach?",
+        "hintergrund": "Prüfungsangst hat zwei Seiten: Sorgen im Kopf und Aufregung im Körper. Vor allem die Sorgen senken die Leistung, weil sie Aufmerksamkeit binden, die der Aufgabe fehlt (Zeidner, 1998) – das macht der Versuch mit der Sorgen-Stimme spürbar. Die drei Fragen prüfen Katastrophengedanken auf Wahrscheinlichkeit und Bewältigbarkeit, ohne sie schönzureden (Beck, 2011); geübt wird an Figuren, weil man mit Abstand klarer denkt. Die Aufregung dagegen wird nicht bekämpft, sondern umgedeutet: Wer Herzklopfen als Bereitschaft versteht, schneidet in Prüfungen besser ab (Jamieson et al., 2010). Das Drehbuch bindet die Skills an feste Momente des Testtags.",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212."
+        ],
+        "achtung": "Tests sind für diese Klasse ein wunder Punkt: keine Noten nennen, erfragen oder vergleichen, eigene Gedanken nicht vorlesen lassen; bei der Bewegung gilt das Stopp-Recht. Hinter starker Prüfungsangst können Panik, Schlafprobleme, Schulvermeiden, Druck oder Angst vor Strafe zu Hause stehen: nach der Stunde unter vier Augen aufgreifen, Régent und SePAS einbeziehen. Sagt jemand, er halte den Druck nicht mehr aus, oder deutet an, nicht mehr leben zu wollen: noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112.",
+        "differenzierung": {
+          "leichter": "Den Comic gemeinsam an der Tafel lösen; in der Tischgruppe liest eine Person, die gut liest, die Gedanken-Karte vor, die Antworten kommen mündlich. Beim Energie-Satz reicht ein Wort („bereit“) oder ein Satz in der eigenen Sprache; im Drehbuch genügen drei Stationen.",
+          "schwerer": "Für die eigene Station einen Plan B schreiben: Was tue ich, wenn etwas schiefgeht – der Bus kommt nicht, die erste Aufgabe geht gar nicht? In der Generalprobe die Rolle der Lehrkraft übernehmen und den Test-Start ansagen."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Hand-Barometer (5 Min.), das Sorgen-Experiment mit Tafelbild (8 Min.), eine Minute Bewegung, Hand aufs Herz und Energie-Satz (7 Min.), Drehbuch für den Testtag mit den Tipps vom Blatt, ohne Plakate (12 Min.), Generalprobe: Herzklopfen umdeuten (8 Min.), Skills-Kompass, Skills-Pass und Mission (10 Min.). Gedanken prüfen mit den Karten wird in einer späteren Stunde nachgeholt."
+      },
+      "fr": {
+        "titel": "Des devoirs en classe sans panique",
+        "kurz": "Ce que le trac fait à la tête et au corps, et ce qui aide : vérifier ses inquiétudes avec trois questions, prendre le cœur qui bat pour de l’énergie, préparer le jour du devoir – et un skill pour la boussole.",
+        "ziele": [
+          "expliquent, à partir d’une expérience, comment inquiétudes et trac agissent ensemble pendant un devoir",
+          "vérifient des pensées de personnages avec trois questions",
+          "voient le cœur qui bat comme de l’énergie et l’exercent",
+          "planifient leur jour de devoir et remplissent la boussole"
+        ],
+        "material": [
+          "Roue des émotions, 20 gommettes",
+          "Cartes pensées (modèle), post-it",
+          "5 affiches (A3) avec les étapes",
+          "Gros feutres, un par îlot",
+          "Dates des devoirs (tableau)",
+          "Cahier de l’élève",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Régent : dates des devoirs, élèves sous pression – jamais les notes.",
+          "Obtenir des collègues 30 secondes de skill avant le prochain devoir.",
+          "Découper les cartes pensées ; accrocher cinq affiches A3 avec les étapes.",
+          "Écrire la grille, les trois questions et des phrases énergie, les cacher.",
+          "Demander qui a de l’asthme ou une autre raison d’éviter l’effort."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : roue, chiffre et baromètre de la main"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour : votre démarrage en cinq minutes ?"
+          },
+          {
+            "min": "15–27",
+            "phase": "input",
+            "titel": "Tête et corps : l’expérience des inquiétudes"
+          },
+          {
+            "min": "27–45",
+            "phase": "uebung",
+            "titel": "Vérifier ses pensées avec trois questions"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : le cœur qui bat sur commande"
+          },
+          {
+            "min": "50–60",
+            "phase": "uebung",
+            "titel": "Peur ou énergie ? Ma phrase énergie"
+          },
+          {
+            "min": "60–80",
+            "phase": "uebung",
+            "titel": "Mon scénario pour le jour du devoir"
+          },
+          {
+            "min": "80–90",
+            "phase": "skill",
+            "titel": "Skill : le trac, c’est de l’énergie"
+          },
+          {
+            "min": "90–95",
+            "phase": "abschluss",
+            "titel": "Boussole des skills : stress et école"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, mission et moment"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : roue, chiffre et baromètre de la main",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. À trois, tout le monde montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence, deux ou trois volontaires disent leur mot (4 min). Puis le baromètre de la main : tout le monde regarde la table ou ferme les yeux et montre avec une main devant soi à quel point il a le trac, en général, le matin d’un devoir – main sur la table : calme, à hauteur de poitrine : nerveux, au-dessus de la tête : panique ; montrer d’abord une fois les trois hauteurs. Seul l’enseignant·e regarde, puis décrit ce qu’il ou elle voit, sans nom (3 min). Pour finir, raconter en deux ou trois phrases un examen avant lequel on avait soi-même très peur, et ce qui avait aidé (3 min).",
+            "sagen": [
+              "Regardez la table et montrez avec la main : à quel point avez-vous le trac le matin d’un devoir ? Il n’y a que moi qui vois.",
+              "Je vois beaucoup de mains à hauteur de poitrine, quelques-unes tout en haut, quelques-unes en bas. Avec le trac, personne n’est seul ici."
+            ],
+            "tipp": "Qui ne veut pas baisser les yeux pose la main à plat sur la table et ne montre rien – c’est très bien aussi. L’histoire d’examen de l’enseignant·e, par exemple celle du permis de conduire, porte plus que n’importe quelle explication : les adultes aussi connaissent ça.",
+            "wennEsKippt": "Si quelqu’un se retourne et commente les mains des autres, arrêter gentiment et recommencer : les mains, seul l’enseignant·e les voit. Si une main est tout en haut et que la personne paraît tendue, ne pas poser de question devant la classe, mais demander discrètement pendant la première phase de travail : c’est comme ça avant chaque devoir ?"
+          },
+          {
+            "titel": "Retour : votre démarrage en cinq minutes ?",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Puis demander où en est la mission : ton moment pour le démarrage en cinq minutes est-il venu – et qu’as-tu fait ? Pouce en haut, au milieu ou en bas ; une voix raconte en une phrase comment c’était après les cinq minutes. Ensuite, annoncer le thème et écrire trois mots au tableau : tête – corps – plan. Annoncer que la séance clôt le chapitre : à la fin, un skill entre dans la boussole des skills. Poser le cadre : aujourd’hui, personne ne parle de notes.",
+            "sagen": [
+              "Votre moment pour le démarrage en cinq minutes est-il venu ? Pouce en haut, au milieu ou en bas – qui raconte comment c’était après les cinq minutes ?",
+              "Aujourd’hui, on parle du devoir lui-même : ce qui se passe dans la tête et dans le corps, et ce que vous avez entre les mains. Les notes ne sont pas le sujet."
+            ],
+            "tipp": "Qui a réussi son démarrage est un bon exemple pour aujourd’hui : le jour du devoir commence les jours d’avant. Qui ne l’a pas réussi entend : le prochain moment viendra."
+          },
+          {
+            "titel": "Tête et corps : l’expérience des inquiétudes",
+            "dauer": 12,
+            "phase": "input",
+            "text": "Une courte expérience, tous en même temps : chacun dit à mi-voix lettres et chiffres en alternance – A1, B2, C3 – aussi loin que possible en 30 secondes, et retient en silence où il s’est arrêté (1 min). Deuxième manche, encore 30 secondes : cette fois, l’enseignant·e passe dans les rangs et intervient à mi-voix comme une voix inquiète, à la première personne (2 min). Demander chez qui c’était plus difficile cette fois – lever la main, sans dire de chiffre – et ce qui s’est passé (2 min). Expliquer avec la grille au tableau : le trac a deux parties. Les inquiétudes dans la tête prennent de la place, qui manque ensuite pour l’exercice ; le trac dans le corps, lui, réveille et n’a pas besoin de disparaître (5 min). D’où les deux pistes du jour : vérifier les inquiétudes et utiliser le trac ; l’encadré de la fiche résume les deux (2 min).",
+            "sagen": [
+              "A1, B2, C3 – à mi-voix, chacun à son rythme. Je vais vous interrompre, ne vous laissez pas déranger.",
+              "C’est exactement ce que font les inquiétudes pendant un devoir : elles parlent par-dessus. La place qu’elles prennent manque pour l’exercice.",
+              "Le but, ce n’est pas zéro trac. Le but, c’est moins d’inquiétudes."
+            ],
+            "punkte": [
+              "Oh non, le temps passe.",
+              "Et si je n’y arrive pas ?",
+              "Les autres sont sûrement déjà beaucoup plus loin.",
+              "Tout le monde va voir que je bloque."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Inquiétudes dans la tête",
+                "Trac dans le corps"
+              ],
+              "zeilen": [
+                [
+                  "« Je n’y arriverai jamais. » – « Tous les autres savent le faire. » – tête vide",
+                  "cœur qui bat, souffle rapide, mains moites, ventre noué"
+                ],
+                [
+                  "prennent de la place, qui manque pour l’exercice",
+                  "réveille et rend rapide – de l’énergie pour le devoir"
+                ],
+                [
+                  "Ce qui aide : vérifier ses pensées, une phrase que je peux croire",
+                  "Ce qui aide : recadrer – « Mon corps se prépare. »"
+                ]
+              ]
+            },
+            "tipp": "La distinction soulage : beaucoup croient qu’il faut d’abord être parfaitement calme pour réussir un devoir. Qui n’a plus à combattre son cœur qui bat garde des forces pour les inquiétudes. Qui apprend encore la langue fait l’expérience seulement avec les chiffres, ou dans sa langue.",
+            "wennEsKippt": "Si la voix inquiète rend quelqu’un visiblement nerveux, arrêter tout de suite et le dire : c’était voulu – voilà ce que ça fait quand les inquiétudes s’en mêlent. Qui ne veut pas parler écoute et s’observe. Si quelqu’un crie jusqu’où il est arrivé ou se compare aux autres, l’arrêter avec bienveillance : aujourd’hui, chacun se compare seulement à lui-même. Si quelqu’un imite la voix inquiète à voix haute, en rire un instant : c’est exactement comme ça qu’elle agace – et on continue.",
+            "blatt": "ff6-test-drehbuch"
+          },
+          {
+            "titel": "Vérifier ses pensées avec trois questions",
+            "dauer": 18,
+            "phase": "uebung",
+            "text": "Ensemble (5 min) : lire la BD d’Inês sur la fiche. La veille du devoir de maths, Inês pense : si je rate ce devoir, je ne réussirai pas mon année. Passer les trois questions du tableau en revue et en tirer une phrase qu’Inês peut vraiment croire le lendemain matin ; chacun l’écrit dans la dernière case (exercice 1). En îlots (7 min) : chaque groupe tire une carte pensée, la lit à voix haute, répond aux trois questions pour le personnage et écrit sur un post-it une phrase que le personnage peut croire. Présentation (4 min) : chaque groupe lit la pensée et la nouvelle phrase, puis colle son post-it au tableau ; la classe vérifie avec le pouce : crédible – ou enjolivé ? Pour finir (2 min) : qui veut vérifie en silence une pensée à lui dans l’exercice 2 ; personne ne lit à voix haute.",
+            "sagen": [
+              "Pas d’enjolivement : “Je suis un génie”, personne n’y croit le matin d’un devoir. On cherche une phrase qu’Inês peut vraiment croire.",
+              "Que diriez-vous à Inês si elle vous écrivait ça ? C’est exactement ce qu’elle a le droit de se dire à elle-même.",
+              "Et si, en plein devoir, on n’a pas le temps pour trois questions ? Alors “Merci, ma tête” de la 7e suffit : ma tête me dit que… – merci, ma tête. Et on continue."
+            ],
+            "punkte": [
+              "Quel est le pire qui puisse réellement arriver – et comment je m’en sortirais ?",
+              "Qu’est-ce qui va se passer le plus probablement ?",
+              "Que dirais-je à un ami ou une amie à ma place ?"
+            ],
+            "tipp": "Chez les autres, on voit plus clair que chez soi – c’est pour ça qu’on s’entraîne avec des personnages, et c’est pour ça que la question de l’amie aide. Qui a découvert le détective critique en 7e reconnaît l’idée : les trois questions en sont la version courte pour la période des devoirs. Les post-it restent au tableau jusqu’à la fin de la séance.",
+            "wennEsKippt": "Si quelqu’un cite une pensée comme « Si je rate, mes parents vont me tuer », ne pas approfondir devant la classe, mais ne pas passer dessus non plus : reconnaître brièvement que la pression a l’air énorme et proposer d’en parler après le cours ; si quelque chose laisse penser à une peur de violences, informer le SePAS le jour même. Si un îlot s’emballe sur la question 1 (« Alors je devrai émigrer »), le ramener avec humour : réaliste, pas un film catastrophe. Si une phrase sonne enjolivée, le pouce de la classe aide à la reformuler. Si quelqu’un ne veut pas participer à la discussion, il lit la carte ou écrit la phrase du groupe ; écouter compte aussi.",
+            "blatt": "ff6-test-gedanken-karten"
+          },
+          {
+            "titel": "Pause active : le cœur qui bat sur commande",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Fenêtre ouverte, tout le monde debout derrière sa chaise. Une minute de mouvement à fond : course sur place, jumping jacks ou flexions – chacun choisit ce qui va pour son corps (1 min). Puis s’arrêter net, poser une main sur le cœur et sentir : le cœur, le souffle, la chaleur (1 min). Demander : est-ce que ça ressemble à de la peur – ou à l’impatience avant un match ? Deux ou trois voix (2 min). Boire un peu d’eau, se rasseoir (1 min). Si la grande récréation tombe entre les deux heures, faire la minute de mouvement au début de l’étape 6, à sa place.",
+            "sagen": [
+              "Une minute à fond – chacun comme son corps le permet. C’est parti.",
+              "Main sur le cœur. Qu’est-ce que vous sentez ? Vous connaissez ça – avant un match, avant de monter sur scène, avant un devoir ?"
+            ],
+            "tipp": "Les réponses sont en général mélangées : pour les uns, ça ressemble à l’avant-match, pour les autres à l’avant-devoir. C’est justement le point de l’étape 6 : dans le corps, les deux se ressemblent presque. Qui se sent observé en sautant se tourne vers la fenêtre ou le mur.",
+            "wennEsKippt": "Qui ne peut pas bouger à fond à cause de l’asthme, d’une blessure ou pour une autre raison marche vite sur place ou chronomètre ; personne n’a à expliquer pourquoi. Si ça devient sauvage ou bruyant, continuer seulement à sa place et sans bruit : jumping jacks muets."
+          },
+          {
+            "titel": "Peur ou énergie ? Ma phrase énergie",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Partir du cœur qui bat de tout à l’heure : la peur et l’impatience se ressemblent presque dans le corps – le cœur, le souffle, la chaleur. Ce que ça devient dépend beaucoup du nom qu’on lui donne (2 min). Expliquer : dans des études, les personnes qui voyaient leur cœur battre avant un examen comme un signe qu’elles étaient prêtes – « Mon corps se prépare » – ont mieux réussi que celles qui essayaient de se calmer. Qui connaît la phrase de la 7e la dit aux autres (2 min). Puis chacun écrit dans l’exercice 3 sa propre phrase énergie, avec ses mots, volontiers aussi dans sa langue ; des exemples sont au tableau (4 min). Pour finir, chacun se dit sa phrase une fois à voix basse ; trois volontaires la disent à voix haute (2 min).",
+            "sagen": [
+              "Votre corps ne sait pas si c’est un devoir ou une finale qui arrive. Il vous prépare – la question, c’est comment vous l’appelez.",
+              "Vous n’êtes pas obligés de vous calmer. Vous avez le droit d’avoir le trac – et d’utiliser l’énergie pour le devoir."
+            ],
+            "punkte": [
+              "Mon cœur bat – mon corps se prépare.",
+              "C’est de l’énergie, pas un danger.",
+              "Comme avant un match : je suis prêt·e.",
+              "Avoir le trac, ça veut dire : ça compte pour moi."
+            ],
+            "tipp": "La phrase ne marche que si elle ne sonne pas comme une phrase de prof. D’où des mots à soi, volontiers avec humour (« Mon moteur tourne ») – l’essentiel, c’est de pouvoir se la dire sérieusement.",
+            "wennEsKippt": "Si quelqu’un dit : « Chez moi, c’est de la vraie panique, pas un moteur », le prendre au sérieux : quand la peur est si forte que plus rien ne va, il faut plus qu’une phrase – lui en parler après le cours et lui présenter le SePAS comme une possibilité. Si ça ricane, sourire un instant et continuer ; personne n’est obligé de dire sa phrase à voix haute.",
+            "blatt": "ff6-test-drehbuch"
+          },
+          {
+            "titel": "Mon scénario pour le jour du devoir",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Aux murs, cinq affiches, une par étape : Les jours d’avant – Le soir et le matin – Devant la porte – Pendant le devoir – Après. Tour des experts (5 min) : chaque îlot est l’équipe d’experts d’une étape et écrit sur son affiche trois conseils qui aident vraiment – pas des conseils d’adultes, mais ce qu’ils prendraient eux-mêmes. Galerie (4 min) : tout le monde fait le tour en silence, lit les affiches et coche un conseil à reprendre. Puis seul (9 min) : chacun note dans l’exercice 4 son prochain devoir – seulement la matière et la date – et écrit pour chaque étape ce qu’il compte faire – des mots-clés suffisent ; les conseils de la fiche et des affiches aident. Pour finir (2 min) : deux ou trois volontaires disent leur point le plus important.",
+            "sagen": [
+              "C’est vous les pros : qu’est-ce qui aide vraiment devant la porte, quand tout le monde parle en même temps ? Écrivez des conseils que vous prendriez vous-mêmes.",
+              "Quel est votre prochain devoir ? C’est pour celui-là que vous écrivez votre scénario – la matière et la date suffisent."
+            ],
+            "punkte": [
+              "Les jours d’avant : trois courtes séances de révision où l’on se teste, plutôt qu’une longue soirée ; chacune commence par un démarrage en cinq minutes.",
+              "Le soir et le matin : préparer son sac, ne plus rien apprendre de nouveau, se coucher à temps ; manger ce qui passe, partir assez tôt.",
+              "Devant la porte : s’éloigner de ceux qui stressent tout le monde (« T’as révisé le chapitre 4 ? ») ; le cœur bat – phrase énergie.",
+              "Pendant le devoir : tout survoler, commencer par l’exercice le plus facile ; le plan en cas de trou de mémoire de la 7e : remarquer, expirer longuement deux fois, « Mon corps est prêt », marquer, continuer.",
+              "Après : ne pas comparer tout de suite toutes les réponses, se faire du bien, se demander : qu’est-ce qui a aidé ?"
+            ],
+            "tipp": "Beaucoup sous-estiment l’étape « Devant la porte ». Ce qui aide, c’est un plan très concret : où on se met, à qui on parle – ou pas – et quelle phrase vient. Les affiches restent accrochées jusqu’à la prochaine période de devoirs.",
+            "wennEsKippt": "Si quelqu’un n’a pas de devoir en vue, il planifie son prochain exposé, une interro de vocabulaire ou un match au club. Si un groupe écrit des conseils pour rire (« se faire porter malade »), en garder un et demander ce qu’il dit de la peur – puis en ajouter un vrai ; si ce conseil semble sérieux chez quelqu’un, lui en parler après le cours. Qui ne suit pas à l’écrit remplit trois étapes ; le reste peut attendre.",
+            "blatt": "ff6-test-drehbuch"
+          },
+          {
+            "titel": "Skill : le trac, c’est de l’énergie",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Répétition générale comme pendant un devoir : sacs sous la table, sur la table seulement un stylo et le cahier – ouvert à la boussole des skills, posé face contre la table. Chacun estime son chiffre en silence (1 min). L’enseignant·e parle comme au début d’un vrai devoir, puis guide lentement les trois étapes ; tout le monde les fait en silence, l’enseignant·e aussi (3 min). Puis une deuxième fois sans consigne, chacun pour soi (2 min). Estimer à nouveau son chiffre et le montrer avec les doigts, à trois ; deux ou trois retours : aurait-on vu quelque chose de l’extérieur ? À quel moment d’un devoir en auriez-vous besoin ? (3 min) Pour finir, annoncer qu’avant le prochain vrai devoir, la classe aura 30 secondes pour son skill (1 min).",
+            "sagen": [
+              "Les portables sont éteints, le nom en haut à droite, vous avez 50 minutes. Avant de retourner la feuille : votre skill – et personne ne doit le remarquer.",
+              "Retournez : ce n’est pas un devoir. C’est votre boussole des skills."
+            ],
+            "punkte": [
+              "Repérer : le cœur bat, les mains sont moites, le ventre se noue – c’est normal.",
+              "Recadrer : se dire en silence sa phrase énergie.",
+              "Utiliser : pieds bien au sol, une longue expiration, puis commencer par l’exercice le plus facile."
+            ],
+            "tipp": "« Pieds, souffle, stylo » de la 7e convient tout aussi bien comme troisième étape – qui aime ce skill le prend. Les 30 secondes avant le prochain vrai devoir sont le transfert le plus important de la séance ; après le devoir, demander si le skill a aidé, jamais la note.",
+            "wennEsKippt": "Si l’annonce du devoir fait rire comme du théâtre, sourire un instant et recommencer sérieusement ; au deuxième passage sans consigne, le calme revient souvent. Si quelqu’un panique vraiment dans la situation jouée, le sortir tout de suite du rôle : ce n’est pas un devoir, tu peux arrêter quand tu veux. Puis lui faire sentir ses pieds et lui reparler après le cours.",
+            "blatt": "ff6-test-drehbuch"
+          },
+          {
+            "titel": "Boussole des skills : stress et école",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Retourner la boussole des skills. Tout le monde feuillette le Skills-Pass jusqu’aux séances 6 à 9 et note dans le champ « 3 · Stress et école » quel skill l’aide dans ce domaine et quand il l’utilise ; « encore ouvert » est permis (3 min). Puis chaque îlot dit à tour de rôle seulement le nom de ses skills ; l’enseignant·e fait un tableau de bâtons au tableau (2 min).",
+            "sagen": [
+              "Quel skill vous aide pour le stress et l’école – et quand ? Par exemple : ma phrase énergie, quand j’attends devant la porte.",
+              "Pour le tour, le nom du skill suffit."
+            ],
+            "tipp": "Entrent en ligne de compte les skills des séances 6 et 7, le démarrage en cinq minutes, les trois questions à l’inquiétude, « le trac, c’est de l’énergie » ou « pieds, souffle, stylo » de la 7e. Les bâtons montrent qu’il n’y a pas un seul bon skill.",
+            "wennEsKippt": "Si quelqu’un ne trouve rien, montrer les post-it au tableau et la phrase énergie : un seul suffit. Qui ne veut pas remplir la boussole écrit « encore ouvert » – c’est aussi une réponse.",
+            "blatt": "ff-skills-kompass"
+          },
+          {
+            "titel": "Skills-Pass, mission et moment",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire au tableau la question du Skills-Pass : quelle phrase m’aide le jour du devoir ? Chacun écrit sa phrase, tampon en passant dans les rangs (2 min). Puis lire la mission de la semaine (elle est dans le cahier) et choisir le moment : à trois, tout le monde montre – un doigt avant un devoir, deux avant un match ou un entraînement, trois avant un exposé ou au tableau, le poing pour un moment à soi – et l’écrit dans la colonne « Mon moment : quand … » (2 min). Pour finir, annoncer le nouveau chapitre (1 min).",
+            "sagen": [
+              "Une phrase pour le Skills-Pass : quelle phrase vous aide le jour du devoir ?",
+              "Votre mission : la prochaine fois que votre cœur bat fort, dites-vous votre phrase énergie – et regardez ce qui se passe."
+            ],
+            "tipp": "Le scénario reste dans le cahier. Après la prochaine période de devoirs, demander brièvement ce qui a aidé – jamais la note."
+          }
+        ],
+        "bruecke": "La semaine prochaine commence un nouveau chapitre : la colère. Vous regardez ce qui se cache dessous et à quoi vous la sentez venir tôt.",
+        "mission": "Au prochain cœur qui bat fort, dis-toi ta phrase énergie. Que se passe-t-il ensuite ?",
+        "hintergrund": "Le trac a deux faces : les inquiétudes dans la tête et l’agitation dans le corps. Ce sont surtout les inquiétudes qui font baisser les résultats, car elles accaparent l’attention dont l’exercice a besoin (Zeidner, 1998) – la voix inquiète le rend palpable. Les trois questions vérifient les pensées catastrophes, sans les enjoliver (Beck, 2011) ; on s’exerce sur des personnages, car avec du recul, on pense plus clairement. Le trac, lui, est recadré plutôt que combattu : qui voit son cœur qui bat comme un signe qu’il est prêt réussit mieux aux examens (Jamieson et al., 2010). Le scénario relie les skills à des moments précis du jour du devoir.",
+        "quellen": [
+          "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212."
+        ],
+        "achtung": "Les devoirs en classe sont un point sensible pour cette classe : ne citer, demander ni comparer aucune note, ne pas faire lire les pensées personnelles ; pendant le mouvement, chacun peut dire stop. Derrière un trac très fort peuvent se cacher des crises de panique, des troubles du sommeil, l’évitement de l’école, de la pression ou la peur d’une punition à la maison : en parler après le cours en tête-à-tête, impliquer le régent et le SePAS. Si un jeune dit qu’il ne supporte plus la pression ou laisse entendre qu’il ne veut plus vivre : informer le SePAS le jour même, suivre le protocole de protection de l’école ; en cas de danger immédiat, 112.",
+        "differenzierung": {
+          "leichter": "Faire la BD ensemble au tableau ; dans l’îlot, un jeune qui lit bien lit la carte pensée, les réponses se font à l’oral. Pour la phrase énergie, un mot suffit (« prêt·e ») ou une phrase dans sa langue ; dans le scénario, trois étapes suffisent.",
+          "schwerer": "Écrire un plan B pour sa propre étape : que faire si quelque chose cloche – le bus ne vient pas, le premier exercice ne marche pas du tout ? Lors de la répétition générale, prendre le rôle de l’enseignant·e et annoncer le début du devoir."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec le baromètre de la main (5 min), l’expérience des inquiétudes avec la grille (8 min), une minute de mouvement, main sur le cœur et phrase énergie (7 min), scénario du jour du devoir avec les conseils de la fiche, sans affiches (12 min), répétition générale : le trac, c’est de l’énergie (8 min), boussole des skills, Skills-Pass et mission (10 min). Vérifier ses pensées avec les cartes est rattrapé lors d’une séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff6-test-drehbuch",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "40 Min., verteilt über die Stunde",
+      "eldib": [],
+      "schlagworte": [
+        "Prüfungsangst",
+        "Test",
+        "Gedanken prüfen",
+        "Energie-Satz",
+        "Förderfach"
+      ],
+      "bild": "icon:pencil-check",
+      "kurs": [
+        "ff6-e09"
+      ],
+      "de": {
+        "titel": "Mein Drehbuch für den Testtag",
+        "untertitel": "Aufregung gehört zu Tests dazu. Mit einem Plan wird aus ihr Energie statt Panik.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Kopf und Körper",
+            "text": "Sorgen im Kopf – „Ich schaff das nie“ – belegen Platz, der dann für die Aufgaben fehlt. Aufregung im Körper – Herzklopfen, schneller Atem – macht dich wach. Sie muss nicht weg. Weniger werden sollen die Sorgen."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Prüf den Gedanken von Inês mit den drei Fragen. Schreib ins letzte Bild einen Satz, den sie wirklich glauben kann.",
+            "symbole": [
+              "nachdenken",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "comic",
+            "spalten": 3,
+            "felder": [
+              {
+                "figuren": [
+                  "figur:jana:besorgt:haende-gesicht"
+                ],
+                "blase": "denken",
+                "text": "Wenn ich den Test verhaue, schaffe ich das Jahr nicht.",
+                "untertitel": "Inês am Abend vor dem Mathe-Test"
+              },
+              {
+                "figuren": [
+                  "figur:ben:ruhig",
+                  "figur:jana:besorgt"
+                ],
+                "sprecher": 0,
+                "text": "Und wenn deine beste Freundin das denken würde?",
+                "untertitel": "Die Frage nach der Freundin"
+              },
+              {
+                "figuren": [
+                  "figur:jana:ruhig"
+                ],
+                "blase": "denken",
+                "untertitel": ""
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Drei Fragen an die Sorge",
+            "punkte": [
+              "Was ist das Schlimmste, das realistisch passieren kann – und wie würde ich damit fertig?",
+              "Was passiert am wahrscheinlichsten?",
+              "Was würde ich einem Freund oder einer Freundin an meiner Stelle sagen?"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Wenn du magst: Prüf einen eigenen Gedanken vor Tests genauso.",
+            "hinweis": "Du entscheidest, was du teilst. Niemand liest das vor.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Mein Gedanke vor Tests",
+              "Das passiert am wahrscheinlichsten",
+              "Mein Satz, den ich glauben kann"
+            ],
+            "breiten": [
+              2,
+              2.2,
+              2
+            ],
+            "zeilen": 2,
+            "beispiel": [
+              "„Alle anderen können das besser.“",
+              "Manche können manches besser, ich anderes. Ich schreibe meinen Test, nicht ihren.",
+              "„Ich schaue auf mein Blatt, nicht auf die anderen.“"
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Herzklopfen umdeuten: Schreib deinen Energie-Satz.",
+            "hinweis": "Zum Beispiel: „Mein Herz klopft – mein Körper macht sich bereit.“ Nimm Wörter, die zu dir passen – auch in deiner Sprache.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein Energie-Satz: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Dein Skill im Test: Herzklopfen umdeuten",
+            "punkte": [
+              "Merken: Herz klopft, Hände feucht, Bauch flau – das ist normal.",
+              "Umdeuten: still deinen Energie-Satz sagen.",
+              "Nutzen: Füße fest in den Boden, einmal lang ausatmen, mit der leichtesten Aufgabe anfangen."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein Drehbuch für den nächsten Test: Lies die Tipps und schreib auf, was du selbst tust.",
+            "symbole": [
+              "lesen",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein nächster Test (Fach und Datum): …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "schritte",
+            "stil": "liste",
+            "linien": 2,
+            "items": [
+              {
+                "titel": "Die Tage davor",
+                "text": "Drei kurze Lernrunden mit Selbsttest, jede mit einem Fünf-Minuten-Start. Ich:"
+              },
+              {
+                "titel": "Abend und Morgen",
+                "text": "Tasche packen, nichts Neues mehr lernen, rechtzeitig schlafen. Frühstücken, was du verträgst. Ich:"
+              },
+              {
+                "titel": "Vor der Tür",
+                "text": "Abstand zu denen, die alle nervös machen. Herz klopft? Energie-Satz. Ich:"
+              },
+              {
+                "titel": "Im Test",
+                "text": "Alles überfliegen, mit dem Leichtesten anfangen. Hänger: markieren, weiter, später zurück. Ich:"
+              },
+              {
+                "titel": "Danach",
+                "text": "Nicht sofort alle Antworten vergleichen. Etwas Gutes tun. Was hat geholfen? Ich:"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Wenn die Angst zu groß wird",
+            "text": "Kannst du vor Tests tagelang kaum schlafen oder essen, oder fühlt sich der Druck nicht mehr auszuhalten an, sprich mit dem SePAS oder deinem Régent – oder anonym und kostenlos mit dem Kanner- a Jugendtelefon: 116 111."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen unterscheiden Sorgen und Aufregung, prüfen einen Prüfungsgedanken mit drei Fragen, schreiben ihren Energie-Satz und planen ihren nächsten Testtag in fünf Stationen.",
+          "ablauf": [
+            "Einheit 9, Schritt 3: Kasten „Kopf und Körper“ nach dem Sorgen-Experiment.",
+            "Schritt 4 (18 Min.): Aufgabe 1 gemeinsam, Gedanken-Karten in den Tischgruppen, Aufgabe 2 freiwillig und still.",
+            "Schritt 6: Aufgabe 3, der Energie-Satz nach einer Minute Bewegung.",
+            "Schritt 7 (20 Min.): Expertenplakate, Galerie, dann Aufgabe 4 allein; Schritt 8: der Skill im Kasten, geübt in der Generalprobe."
+          ],
+          "hintergrund": "Prüfungsangst besteht aus Sorgen und körperlicher Aufregung; vor allem die Sorgen binden Aufmerksamkeit, die der Aufgabe fehlt (Zeidner, 1998). Katastrophengedanken werden geprüft, nicht schöngeredet (Beck, 2011); Aufregung als Bereitschaft zu deuten, verbessert die Leistung (Jamieson et al., 2010).",
+          "quellen": [
+            "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+            "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+            "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212."
+          ],
+          "achtung": "Nicht nach Noten fragen, Aufgabe 2 nicht vorlesen lassen. Lähmende Angst über Wochen, Schlafprobleme oder Angst vor Strafe zu Hause: nach der Stunde ansprechen, Régent und SePAS einbeziehen.",
+          "material": "Plakate, Gedanken-Karten, Zettel"
+        }
+      },
+      "fr": {
+        "titel": "Mon scénario pour le jour du devoir",
+        "untertitel": "Le trac fait partie des devoirs en classe. Avec un plan, il devient de l’énergie plutôt que de la panique.",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "wissen",
+            "titel": "Tête et corps",
+            "text": "Les inquiétudes dans la tête – « Je n’y arriverai jamais » – prennent de la place, qui manque ensuite pour les exercices. Le trac dans le corps – le cœur qui bat, le souffle rapide – te réveille. Il n’a pas besoin de disparaître. Ce sont les inquiétudes qui doivent diminuer."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Vérifie la pensée d’Inês avec les trois questions. Écris dans la dernière case une phrase qu’elle peut vraiment croire.",
+            "symbole": [
+              "nachdenken",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "comic",
+            "spalten": 3,
+            "felder": [
+              {
+                "figuren": [
+                  "figur:jana:besorgt:haende-gesicht"
+                ],
+                "blase": "denken",
+                "text": "Si je rate ce devoir, je ne réussirai pas mon année.",
+                "untertitel": "Inês, la veille du devoir de maths"
+              },
+              {
+                "figuren": [
+                  "figur:ben:ruhig",
+                  "figur:jana:besorgt"
+                ],
+                "sprecher": 0,
+                "text": "Et si ta meilleure amie pensait ça ?",
+                "untertitel": "La question de l’amie"
+              },
+              {
+                "figuren": [
+                  "figur:jana:ruhig"
+                ],
+                "blase": "denken",
+                "untertitel": ""
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Trois questions à l’inquiétude",
+            "punkte": [
+              "Quel est le pire qui puisse réellement arriver – et comment je m’en sortirais ?",
+              "Qu’est-ce qui va se passer le plus probablement ?",
+              "Que dirais-je à un ami ou une amie à ma place ?"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Si tu veux : vérifie de la même façon une pensée à toi avant un devoir.",
+            "hinweis": "Tu décides de ce que tu partages. Personne ne lit ça à voix haute.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Ma pensée avant un devoir",
+              "Ce qui arrive le plus probablement",
+              "Ma phrase, que je peux croire"
+            ],
+            "breiten": [
+              2,
+              2.2,
+              2
+            ],
+            "zeilen": 2,
+            "beispiel": [
+              "« Tous les autres sont meilleurs que moi. »",
+              "Certains sont meilleurs en quelque chose, moi en autre chose. Je fais mon devoir, pas le leur.",
+              "« Je regarde ma feuille, pas celle des autres. »"
+            ]
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Le cœur qui bat, c’est de l’énergie : écris ta phrase énergie.",
+            "hinweis": "Par exemple : « Mon cœur bat – mon corps se prépare. » Prends des mots qui te ressemblent – aussi dans ta langue.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ma phrase énergie : …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Ton skill pendant le devoir : le trac, c’est de l’énergie",
+            "punkte": [
+              "Repérer : le cœur bat, les mains sont moites, le ventre se noue – c’est normal.",
+              "Recadrer : te dire en silence ta phrase énergie.",
+              "Utiliser : pieds bien au sol, une longue expiration, commencer par l’exercice le plus facile."
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ton scénario pour le prochain devoir : lis les conseils et écris ce que tu feras, toi.",
+            "symbole": [
+              "lesen",
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mon prochain devoir (matière et date) : …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "schritte",
+            "stil": "liste",
+            "linien": 2,
+            "items": [
+              {
+                "titel": "Les jours d’avant",
+                "text": "Trois courtes séances de révision où tu te testes, chacune avec un démarrage en cinq minutes. Moi :"
+              },
+              {
+                "titel": "Le soir et le matin",
+                "text": "Préparer ton sac, ne plus rien apprendre de nouveau, te coucher à temps. Manger ce qui passe. Moi :"
+              },
+              {
+                "titel": "Devant la porte",
+                "text": "T’éloigner de ceux qui stressent tout le monde. Le cœur bat ? Phrase énergie. Moi :"
+              },
+              {
+                "titel": "Pendant le devoir",
+                "text": "Tout survoler, commencer par le plus facile. Un blanc : marquer, continuer, revenir plus tard. Moi :"
+              },
+              {
+                "titel": "Après",
+                "text": "Ne pas comparer tout de suite toutes les réponses. Te faire du bien. Qu’est-ce qui a aidé ? Moi :"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Quand la peur devient trop forte",
+            "text": "Si, avant un devoir, tu n’arrives presque plus à dormir ou à manger pendant des jours, ou si la pression devient insupportable, parles-en au SePAS ou à ton régent – ou, de façon anonyme et gratuite, au Kanner- a Jugendtelefon : 116 111."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes distinguent les inquiétudes et le trac, vérifient une pensée avec trois questions, écrivent leur phrase énergie et planifient leur prochain jour de devoir en cinq étapes.",
+          "ablauf": [
+            "Séance 9, étape 3 : encadré « Tête et corps » après l’expérience des inquiétudes.",
+            "Étape 4 (18 min) : exercice 1 ensemble, cartes pensées en îlots, exercice 2 facultatif et en silence.",
+            "Étape 6 : exercice 3, la phrase énergie après une minute de mouvement.",
+            "Étape 7 (20 min) : affiches d’experts, galerie, puis exercice 4 seul ; étape 8 : le skill de l’encadré, exercé lors de la répétition générale."
+          ],
+          "hintergrund": "Le trac se compose d’inquiétudes et d’agitation physique ; ce sont surtout les inquiétudes qui accaparent l’attention dont l’exercice a besoin (Zeidner, 1998). Les pensées catastrophes sont vérifiées, pas enjolivées (Beck, 2011) ; voir l’agitation comme un signe qu’on est prêt améliore les résultats (Jamieson et al., 2010).",
+          "quellen": [
+            "Zeidner, M. (1998). Test Anxiety: The State of the Art. New York: Plenum.",
+            "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+            "Jamieson, J. P., Mendes, W. B., Blackstock, E. & Schmader, T. (2010). Turning the knots in your stomach into bows: Reappraising arousal improves performance on the GRE. Journal of Experimental Social Psychology, 46(1), 208–212."
+          ],
+          "achtung": "Ne pas demander de notes, ne pas faire lire l’exercice 2. Peur paralysante depuis des semaines, troubles du sommeil ou peur d’une punition à la maison : en parler après le cours, impliquer le régent et le SePAS.",
+          "material": "Affiches, cartes pensées, post-it"
+        }
+      }
+    },
+    {
+      "id": "ff6-test-gedanken-karten",
+      "bereich": "skills",
+      "thema": "gedanken",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "gruppe"
+      ],
+      "dauer": "15 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Prüfungsangst",
+        "Gedanken prüfen",
+        "Fallkarten",
+        "Förderfach"
+      ],
+      "bild": "icon:bulb",
+      "kurs": [
+        "ff6-e09"
+      ],
+      "de": {
+        "titel": "Gedanken-Karten",
+        "untertitel": "Kopiervorlage zum Ausschneiden – Sorgen vor dem Test, geprüft in den Tischgruppen",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So prüft ihr einen Gedanken",
+            "punkte": [
+              "Lest die Karte laut vor.",
+              "Stellt die drei Fragen: Was ist das Schlimmste, das realistisch passieren kann – und wie würde die Figur damit fertig? Was passiert am wahrscheinlichsten? Was würdet ihr der Figur als Freund oder Freundin sagen?",
+              "Schreibt einen Satz auf, den die Figur wirklich glauben kann – nicht schönreden."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 128,
+            "karten": [
+              {
+                "titel": "Yusuf · Am Abend davor",
+                "text": "Yusuf sitzt am Abend vor dem Mathe-Test über dem Heft. Er denkt: „Ich hab sowieso keine Chance. Ich kann das einfach nicht.“"
+              },
+              {
+                "titel": "Lena · Vor der Tür",
+                "text": "Vor dem Klassenraum reden alle über Kapitel 4. Lena hat es nur kurz angeschaut. Sie denkt: „Alle anderen haben mehr gelernt als ich.“"
+              },
+              {
+                "titel": "Tiago · Im Test",
+                "text": "Bei Aufgabe 2 weiß Tiago plötzlich nichts mehr, sein Kopf ist leer. Er denkt: „Jetzt ist alles vorbei.“"
+              },
+              {
+                "titel": "Amira · Vor dem Vortrag",
+                "text": "Gleich soll Amira vor der Klasse ihren Vortrag halten. Sie denkt: „Wenn ich mich verspreche, lachen alle über mich.“"
+              },
+              {
+                "titel": "Mathis · Beim Austeilen",
+                "text": "Die Lehrerin teilt die Blätter aus und schaut kurz zu Mathis. Er denkt: „Sie denkt bestimmt, dass ich das sowieso nicht kann.“"
+              },
+              {
+                "titel": "Zoé · Danach (Reserve)",
+                "text": "Nach dem Test vergleichen die anderen ihre Antworten. Bei Zoé sind zwei anders. Sie denkt: „Ich hab bestimmt alles falsch. Ich bin so schlecht.“"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Erfundene Prüfungsgedanken für die Tischgruppen: Die Jugendlichen üben die drei Fragen an Figuren, bevor sie – freiwillig und still – einen eigenen Gedanken prüfen.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren und ausschneiden; Namen tauschen, falls jemand in der Klasse so heißt.",
+            "Einheit 9, Schritt 4: eine Karte je Tischgruppe, Karte 6 ist Reserve.",
+            "Die neuen Sätze der Gruppen kommen auf Zetteln an die Tafel und bleiben bis zum Skills-Kompass hängen."
+          ],
+          "hintergrund": "Die drei Fragen prüfen Katastrophengedanken auf Wahrscheinlichkeit und Bewältigbarkeit, ohne sie schönzureden (Beck, 2011). Geübt wird an Figuren, weil man über die Sorgen anderer klarer nachdenkt als über die eigenen.",
+          "quellen": [
+            "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford."
+          ],
+          "material": "Festes Papier, Schere, Zettel"
+        }
+      },
+      "fr": {
+        "titel": "Cartes pensées",
+        "untertitel": "Modèle à photocopier et à découper – des inquiétudes avant un devoir, vérifiées en îlots",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Comment vérifier une pensée",
+            "punkte": [
+              "Lisez la carte à voix haute.",
+              "Posez les trois questions : quel est le pire qui puisse réellement arriver – et comment le personnage s’en sortirait-il ? Qu’est-ce qui va se passer le plus probablement ? Que lui diriez-vous, en ami ou en amie ?",
+              "Écrivez une phrase que le personnage peut vraiment croire – sans enjoliver."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 128,
+            "karten": [
+              {
+                "titel": "Yusuf · La veille",
+                "text": "La veille du devoir de maths, Yusuf est penché sur son cahier. Il pense : « De toute façon, je n’ai aucune chance. Je n’y arrive pas, c’est tout. »"
+              },
+              {
+                "titel": "Lena · Devant la porte",
+                "text": "Devant la salle, tout le monde parle du chapitre 4. Lena l’a juste survolé. Elle pense : « Tous les autres ont plus révisé que moi. »"
+              },
+              {
+                "titel": "Tiago · Pendant le devoir",
+                "text": "À l’exercice 2, Tiago ne sait soudain plus rien, il a la tête vide. Il pense : « Maintenant, tout est fichu. »"
+              },
+              {
+                "titel": "Amira · Avant l’exposé",
+                "text": "Dans un instant, Amira doit présenter son exposé devant la classe. Elle pense : « Si je me trompe, tout le monde va se moquer de moi. »"
+              },
+              {
+                "titel": "Mathis · À la distribution",
+                "text": "La prof distribue les feuilles et jette un coup d’œil à Mathis. Il pense : « Elle se dit sûrement que, de toute façon, je n’y arriverai pas. »"
+              },
+              {
+                "titel": "Zoé · Après (réserve)",
+                "text": "Après le devoir, les autres comparent leurs réponses. Zoé en a deux différentes. Elle pense : « J’ai sûrement tout faux. Je suis vraiment nulle. »"
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Des pensées inventées pour les îlots : les jeunes s’exercent aux trois questions sur des personnages, avant de vérifier – librement et en silence – une pensée à eux.",
+          "ablauf": [
+            "Photocopier une fois sur papier épais et découper ; changer les prénoms si quelqu’un dans la classe s’appelle ainsi.",
+            "Séance 9, étape 4 : une carte par îlot, la carte 6 est une réserve.",
+            "Les nouvelles phrases des groupes vont au tableau sur des post-it et y restent jusqu’à la boussole des skills."
+          ],
+          "hintergrund": "Les trois questions vérifient les pensées catastrophes sous l’angle de la probabilité et de la capacité à faire face, sans les enjoliver (Beck, 2011). On s’exerce sur des personnages, parce qu’on pense plus clairement aux inquiétudes des autres qu’aux siennes.",
+          "quellen": [
+            "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford."
+          ],
+          "material": "Papier épais, ciseaux, post-it"
+        }
+      }
+    }
+  ]
+}

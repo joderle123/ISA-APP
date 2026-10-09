@@ -1,0 +1,1061 @@
+{
+  "einheiten": [
+    {
+      "id": "ff6-e08",
+      "klasse": "6e",
+      "dauer": 100,
+      "blaetter": [
+        "ff6-start-plan"
+      ],
+      "vorlagen": [
+        "ff6-start-karten"
+      ],
+      "woerter": [
+        {
+          "de": "aufschieben",
+          "fr": "remettre à plus tard"
+        },
+        {
+          "de": "keine Lust haben",
+          "fr": "ne pas avoir envie"
+        },
+        {
+          "de": "der Kreislauf",
+          "fr": "le cercle"
+        },
+        {
+          "de": "der erste Schritt",
+          "fr": "le premier pas"
+        },
+        {
+          "de": "der Timer",
+          "fr": "le minuteur"
+        },
+        {
+          "de": "anfangen",
+          "fr": "commencer"
+        }
+      ],
+      "de": {
+        "titel": "Aufschieben überlisten",
+        "kurz": "Aufschieben ist Ausweichen vor einem miesen Gefühl: Die Klasse durchschaut den Kreislauf, schneidet eine Aufgabe auf einen Fünf-Minuten-Schritt zu und erlebt mit dem Timer, wie die Unlust sinkt.",
+        "ziele": [
+          "erklären am Aufschiebe-Kreislauf, warum Ausweichen kurz erleichtert und später mehr Druck macht",
+          "zerlegen eine Schulaufgabe bis zu einem Fünf-Minuten-Schritt",
+          "vergleichen ihre Unlust vor und nach dem Anfangen mit Timer",
+          "legen fest, wann, wo und womit sie diese Woche anfangen"
+        ],
+        "material": [
+          "Gefühlsrad-Plakat, 20 Klebepunkte",
+          "Wörter und Strichliste aus Stunde 7",
+          "Schülerheft, Zettel, eine Schachtel",
+          "Timer, Kiste für Handys",
+          "Start-Karten (Vorlage), 1 Satz",
+          "Eigene aufgeschobene Sache",
+          "Stempel für den Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Die fremden Wörter aus Stunde 7 vorher anschreiben, ebenso das Tafelbild; abdecken.",
+          "Start-Karten ausschneiden; beim Régent anstehende Tests erfragen.",
+          "Klären, wo man im Lycée vor und nach dem Unterricht ruhig arbeiten kann.",
+          "Gewissensgasse planen, je drei Später- und Jetzt-Sätze anschreiben.",
+          "Eine eigene aufgeschobene Sache mitbringen: An ihr wird alles vorgemacht."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Check-in: Gefühlsrad, Zahl und Aufschiebe-Stapel"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Rückblick: Kam euer Moment?"
+          },
+          {
+            "min": "15–23",
+            "phase": "uebung",
+            "titel": "Nachtest: Was ist nach einer Woche noch da?"
+          },
+          {
+            "min": "23–35",
+            "phase": "input",
+            "titel": "Der Aufschiebe-Kreislauf"
+          },
+          {
+            "min": "35–45",
+            "phase": "uebung",
+            "titel": "Der erste Schritt: so klein, dass ihr lacht"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Bewegungspause: Wie lang ist eine Minute?"
+          },
+          {
+            "min": "50–65",
+            "phase": "aktiv",
+            "titel": "Gewissensgasse: später oder jetzt?"
+          },
+          {
+            "min": "65–85",
+            "phase": "uebung",
+            "titel": "Probe-Runde mit Timer"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill: Fünf-Minuten-Start"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, Mission und Moment"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Check-in: Gefühlsrad, Zahl und Aufschiebe-Stapel",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "Beim Hereinkommen klebt jede Person ihren Punkt auf das Gefühlsrad-Plakat. Auf drei zeigen alle ihre Anspannung mit den Fingern (0–10 Finger für 0–100); die Lehrkraft beginnt mit Gefühl und Zahl, zwei, drei Freiwillige nennen ihr Wort (4 Min.). Dann eine zweite Frage, die nur mit Fingern beantwortet wird: Wie viele Sachen schiebt ihr gerade vor euch her – Schule, Zimmer, Nachrichten, Anrufe? Die Lehrkraft nennt ehrlich ihre eigene Zahl und eine Sache, die sie seit Tagen liegen lässt; dann zeigen alle auf drei gleichzeitig (3 Min.). Zum Schluss per Handzeichen: Was schiebt ihr am häufigsten auf – Schulsachen, Aufräumen, Nachrichten beantworten oder etwas Unangenehmes sagen? Grob zählen und das Ergebnis nennen (3 Min.).",
+            "sagen": [
+              "Und jetzt ehrlich, auf drei: Wie viele Sachen schiebt ihr gerade vor euch her?",
+              "Bei mir sind es vier. Eine davon ist ein Formular, das seit zwei Wochen auf meinem Schreibtisch liegt – und jeden Tag finde ich einen guten Grund dagegen."
+            ],
+            "tipp": "Die Runde zeigt, dass alle aufschieben, Erwachsene eingeschlossen. Die Zahlen nicht kommentieren und nicht nachfragen, was genau aufgeschoben wird. Für alle, die die Sprache noch lernen, „aufschieben“ mit einer Geste zeigen – etwas mit beiden Händen von sich wegschieben – und „später machen“ an die Tafel schreiben.",
+            "wennEsKippt": "Zeigt jemand lachend zehn Finger, mitlachen: Willkommen im Club. Zeigt jemand gar nichts, ist das auch eine Antwort. Wirkt eine sehr hohe Anspannung ernst, nicht vor der Klasse nachfragen, sondern in der nächsten Arbeitsphase leise: Brauchst du gerade etwas?"
+          },
+          {
+            "titel": "Rückblick: Kam euer Moment?",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Eine Person liest ihren Satz aus dem Skills-Pass der letzten Stunde vor. Dann nach der Mission der letzten Stunde fragen: Kam dein Moment – und was hast du gemacht? Daumen hoch, Mitte oder runter; eine Stimme erzählt in einem Satz, niemand muss sie geschafft haben. Dann das Thema nennen: Die beste Lernmethode aus der letzten Stunde nützt nichts, wenn man nicht anfängt – heute übt die Klasse das Anfangen. Den Rahmen klären: Niemand muss sagen, was er aufschiebt, und niemand wird dafür schlechtgemacht.",
+            "sagen": [
+              "Kam euer Moment für die Mission – und was habt ihr gemacht? Daumen hoch, Mitte oder runter.",
+              "Heute übt ihr anzufangen, genau dann, wenn ihr keine Lust habt. Aufschieben machen alle Menschen – es hat einen Grund, und den schauen wir uns an."
+            ],
+            "tipp": "Die Mission nur kurz abfragen: ein Daumen, eine Geschichte. Wer sie nicht geschafft hat, bekommt keine Nachfrage, sondern ein Lächeln – er ist heute mitten im Thema."
+          },
+          {
+            "titel": "Nachtest: Was ist nach einer Woche noch da?",
+            "dauer": 8,
+            "phase": "uebung",
+            "text": "Die vor der Stunde angeschriebenen fremden Wörter aus dem Lern-Experiment aufdecken, ohne ihre Bedeutung. Jede Person schreibt auf einen Zettel aus dem Kopf so viele Bedeutungen, wie sie noch weiß; Raten ist erlaubt, Nachschauen nicht (3 Min.). Dann die Lösungen zeigen. Jede Person zählt still ihre Treffer, schreibt nur die Zahl und dazu W (wiedergelesen) oder A (abgefragt) auf den Zettel, faltet ihn und legt ihn in die Schachtel (2 Min.). Zwei Freiwillige zählen am Pult die Treffer je Gruppe zusammen, während die Klasse tippt, welche Gruppe nach einer Woche mehr behalten hat (2 Min.). Die Summen kommen neben die Werte der letzten Woche: Welche Gruppe hat mehr verloren? (1 Min.)",
+            "sagen": [
+              "Kein Lernen, kein Spicken – schreibt einfach auf, was nach einer Woche noch da ist.",
+              "Abfragen fühlt sich anstrengender an als Lesen. Und was anstrengend ist, schieben wir gern auf. Darum geht es heute."
+            ],
+            "tipp": "Meist hat die Abfrage-Gruppe deutlich weniger verloren; sind die Gruppen ungleich groß, die Summe durch die Zahl der Zettel teilen. Zeigt sich kaum ein Unterschied, ehrlich bleiben: In einer Klasse spielt der Zufall mit, die Forschung hat das mit sehr vielen Menschen geprüft. Ist das Experiment ausgefallen, schreiben alle aus dem Kopf auf, was sie letzte Woche über das Lernen herausgefunden haben – auch das ist ein Selbsttest.",
+            "wennEsKippt": "Wer nicht mehr weiß, mit welcher Methode er gelernt hat, schreibt ein Fragezeichen; wer letzte Woche gefehlt hat, zählt am Pult mit – eine gute Rolle auch für alle, die nicht stillsitzen oder nicht mitschreiben wollen. Werden einzelne Trefferzahlen herumgerufen oder belacht, freundlich stoppen: Hier zählt nur die Summe der Klasse, keine einzelne Zahl."
+          },
+          {
+            "titel": "Der Aufschiebe-Kreislauf",
+            "dauer": 12,
+            "phase": "input",
+            "text": "Die Geschichte von Aylin vom Blatt vorlesen, die Klasse liest mit (2 Min.). An der Tafel steht ein Kreis mit vier leeren Stationen: Aufgabe – mieses Gefühl – Ausweichen – kurz besser, dann Druck. Die Klasse füllt ihn mit Aylins Geschichte; bei „mieses Gefühl“ sammeln, welche Gefühle kurz vor dem Anfangen typisch sind – Langeweile, Unsicherheit, Angst, dass es schlecht wird, Überforderung –, und alle an den Kreis schreiben (4 Min.). Dann fragen, was Aylin eigentlich loswerden wollte: die Vokabeln oder das Gefühl? Den Satz groß anschreiben: Aufschieben ist Ausweichen vor einem Gefühl (1 Min.). Mit dem Tafelbild zeigen, wo man den Kreis an jeder Station unterbrechen kann (2 Min.). Zum Schluss Aufgabe 1 allein: den eigenen Kreislauf eintragen, Stichworte reichen, niemand liest vor (3 Min.).",
+            "sagen": [
+              "Warum hat Aylin das Handy genommen? Weil ihr Englisch egal ist – oder weil sich die Liste mies angefühlt hat?",
+              "Das Handy hilft sofort gegen das Gefühl. Die Aufgabe bleibt aber liegen und wird jeden Tag schwerer.",
+              "Keine Lust ist ein Gefühl, kein Befehl. Man kann es spüren und trotzdem anfangen."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Station",
+                "Hier kann ich den Kreis unterbrechen"
+              ],
+              "zeilen": [
+                [
+                  "Aufgabe",
+                  "so klein schneiden, dass der erste Schritt fast nichts kostet"
+                ],
+                [
+                  "Mieses Gefühl",
+                  "es benennen: „Keine Lust ist ein Gefühl, kein Befehl.“"
+                ],
+                [
+                  "Ausweichen",
+                  "Handy außer Reichweite, Platz wechseln, auf die Uhr schauen"
+                ],
+                [
+                  "Kurz besser, dann Druck",
+                  "freundlich neu anfangen, statt sich fertigzumachen"
+                ]
+              ]
+            },
+            "tipp": "Viele Jugendliche halten sich selbst für das Problem. Der Satz „Aufschieben ist Ausweichen vor einem Gefühl – das machen alle Menschen“ entlastet spürbar; er bleibt bis zum Ende der Stunde an der Tafel.",
+            "wennEsKippt": "Sagt jemand „Unter Druck arbeite ich am besten“, ernst nehmen und nachfragen: Wie fühlt sich der Abend vor der Abgabe an – und wie zufrieden bist du danach? Nicht überzeugen wollen; die Gewissensgasse greift den Satz auf. Klingt ein Beispiel nach mehr als Unlust („Dann bleib ich einfach den ganzen Tag im Bett“), nicht vor der Klasse vertiefen, aber nach der Stunde unter vier Augen nachfragen.",
+            "blatt": "ff6-start-plan"
+          },
+          {
+            "titel": "Der erste Schritt: so klein, dass ihr lacht",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Jede Person wählt eine Schulsache, die sie vor sich herschiebt und deren ersten Schritt sie heute in der Stunde machen kann – Vokabeln, Mathe-Aufgaben, ein Heft nachtragen, ein Plakat, ein Text; wer nichts findet, zieht eine Start-Karte (2 Min.). Die Lehrkraft zeigt an der Tafel mit ihrer eigenen Sache, wie man von oben nach unten zerlegt: Geschafft – Formular abgeben – Felder ausfüllen – Formular aus der Tasche holen und den Namen eintragen (1 Min.). Dann füllt jede Person Aufgabe 2 auf dem Blatt aus: oben „Geschafft“, unten ein erster Schritt, der in fünf Minuten erledigt ist (4 Min.). Zu zweit (3 Min.): Die Person daneben liest nur Stufe 1 und prüft: Geht das in fünf Minuten – und muss man fast darüber lachen? Die Lehrkraft geht herum und macht zu große erste Schritte kleiner.",
+            "sagen": [
+              "Macht den ersten Schritt so klein, dass es fast lächerlich ist. Wenn ihr lacht, ist er richtig.",
+              "Mathe lernen ist kein Schritt. Das Heft auf Seite 12 aufschlagen und Aufgabe 1 lesen – das ist einer."
+            ],
+            "tipp": "Die Start-Karten nehmen den Druck raus, wenn jemand „nichts hat“, und sie arbeiten mit dem, was ohnehin in der Schultasche ist. Wer gar keine Schulsachen dabeihat, bekommt eine Seite aus einem Fach, das die Klasse gerade hat.",
+            "wennEsKippt": "Sagt jemand, er schiebe nie etwas auf, nicht diskutieren: Dann such dir etwas, das du heute einfach mal anfangen kannst – oder zieh eine Karte. Bleibt Stufe 1 zu groß, fragen: Was genau machst du in der ersten Minute? Will jemand seine Aufgabe nicht zeigen, prüft die Person daneben nur, ob Stufe 1 in fünf Minuten geht; den Rest muss niemand sehen.",
+            "blatt": "ff6-start-plan"
+          },
+          {
+            "titel": "Bewegungspause: Wie lang ist eine Minute?",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Alle stehen auf; Uhren und Handys bleiben außer Sicht. Runde 1 (2 Min.): Alle gehen langsam und stumm kreuz und quer durch den Raum; wer glaubt, dass eine Minute vorbei ist, bleibt stehen und friert ein. Die Lehrkraft schaut auf die Uhr und ruft nach genau 60 Sekunden „Jetzt!“ – wer steht schon lange, wer geht noch? Runde 2 (2 Min.): 30 Sekunden so schnell wie möglich auf der Stelle laufen, dann 30 Sekunden ganz still stehen; welche halbe Minute war länger? Zum Schluss ein Satz (1 Min.): Das Zeitgefühl täuscht – „nur noch fünf Minuten“ am Handy werden schnell vierzig, deshalb gleich der Timer. Liegt die große Pause zwischen den beiden Stunden, entfällt diese Übung.",
+            "sagen": [
+              "Geht los – stumm und langsam. Wer meint, die Minute ist um, friert ein. Keine Uhr, kein Handy."
+            ],
+            "tipp": "Fast immer frieren die einen viel zu früh ein, während andere weit über die Minute laufen. Genau das ist die Brücke zur Probe-Runde: Auf das Gefühl für Zeit ist kein Verlass, auf einen Timer schon.",
+            "wennEsKippt": "Wird gerannt oder gerempelt, anhalten und langsam neu starten. Wer nicht herumgehen mag, steht am Platz und setzt sich, wenn die Minute für ihn vorbei ist. Ruft jemand die Zeit herein, einfach noch eine Runde."
+          },
+          {
+            "titel": "Gewissensgasse: später oder jetzt?",
+            "dauer": 15,
+            "phase": "aktiv",
+            "text": "Zwei Reihen zu neun oder zehn stellen sich mit etwa 1,5 m Abstand gegenüber: links die Später-Stimmen, rechts die Jetzt-Stimmen (2 Min.). Die Lehrkraft liest eine Lage vor; eine Person geht als diese Figur langsam durch die Gasse, und wer auf ihrer Höhe steht, sagt einen Satz, abwechselnd links und rechts. Am Ende sagt die Figur, ob sie anfängt und welcher Satz am stärksten gezogen hat. In der ersten Runde geht die Lehrkraft selbst durch (2 Min.), dann folgen drei Runden mit Freiwilligen; nach jeder Runde tauschen die Reihen ihre Stimme (8 Min.). Zum Schluss sammelt die Klasse die stärksten Jetzt-Sätze an der Tafel – meist sind sie klein und freundlich (3 Min.).",
+            "sagen": [
+              "Ihr sprecht für die Stimme, nicht für euch. Sagt, was so eine Stimme im Kopf wirklich sagt – über die Aufgabe, nie über die Person.",
+              "Bist du durch? Fängst du an – und welcher Satz hat dich am meisten gezogen?",
+              "Welche Jetzt-Sätze waren stark genug gegen ‚Nur noch ein Video‘?"
+            ],
+            "punkte": [
+              "Aylin, Mittwoch, 19 Uhr: 30 Englisch-Vokabeln für Freitag, das Handy blinkt.",
+              "Noah, Sonntag, 16 Uhr: Das Plakat für Naturwissenschaften ist morgen fällig, das Blatt ist noch leer.",
+              "Ana: Seit einer Woche liegt ihr Französisch-Heft unvollständig im Rucksack, morgen wird es eingesammelt.",
+              "Samuel: Ein Freund hat vor vier Tagen geschrieben, Samuel hat noch nicht geantwortet – mit jedem Tag wird es peinlicher."
+            ],
+            "tipp": "Typische Später-Sätze: „Nur noch eine Folge“, „Unter Druck bin ich besser“, „Morgen hab ich mehr Zeit“. Starke Jetzt-Sätze sind oft klein und freundlich: „Nur fünf Minuten, dann darfst du aufhören“, „Nur die Aufgabe lesen“. Damit nicht zehnmal derselbe Satz fällt: Jeder Satz darf in einer Runde nur einmal kommen. Wer kaum stillstehen kann, ist eine gute erste Figur.",
+            "wennEsKippt": "Werden Sätze persönlich („Du schaffst das eh nie“), sofort anhalten: Die Stimmen reden über die Aufgabe, nie über den Menschen – neuer Satz. Wer nichts sagen mag, nickt der Figur zu und lässt die nächste Person sprechen oder liest einen Satz von der Tafel; wer die Sprache noch lernt, sagt nur „später“ oder „jetzt“. Wer gar nicht in der Gasse stehen will, führt Regie: liest die Lage vor oder schreibt die Jetzt-Sätze an. Ist der Platz zu eng oder die Klasse sehr unruhig, geht die Gasse auch im Sitzen: zwei Stuhlreihen, die Figur geht dazwischen."
+          },
+          {
+            "titel": "Probe-Runde mit Timer",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "Die Klasse prüft selbst, was die Forschung über das Anfangen sagt: Die Unlust vorher ist meist größer als die Arbeit selbst. Zehn Minuten arbeiten alle still an ihrer Schulsache aus Aufgabe 2; vorher und nachher schätzt jede Person ihre Unlust von 0 bis 10 (Aufgabe 3). Die Lehrkraft arbeitet sichtbar an ihrer eigenen Sache mit.",
+            "sagen": [
+              "Zehn Minuten, eine Sache. Wenn euch etwas anderes einfällt: ein Wort auf den Zettel, weiterarbeiten.",
+              "Wie unangenehm war es vorher, wie ist es jetzt? Bei vielen ist die Zahl nach dem Anfangen kleiner als davor."
+            ],
+            "punkte": [
+              "Vorbereiten (3 Min.): die Schulsache vor sich, das Handy in die Tasche oder in die Kiste, auf dem Tisch nur, was für Stufe 1 gebraucht wird, dazu ein Notizzettel; Unlust vorher eintragen.",
+              "Arbeiten (10 Min.): den Timer sichtbar starten; alle beginnen mit Stufe 1 und machen mit Stufe 2 weiter. Fällt einem etwas anderes ein („Ich muss noch …“), kommt es in einem Wort auf den Notizzettel. Nach fünf Minuten ein leises Zeichen: Halbzeit, Zahl merken, weiter.",
+              "Auswerten (5 Min.): Unlust nachher eintragen; auf drei zeigen alle mit dem Daumen: gesunken, gleich oder gestiegen – die Lehrkraft macht eine Strichliste an der Tafel.",
+              "Nachfragen (2 Min.): Was war schwerer – das Anfangen oder das Weitermachen? Wer hätte nach fünf Minuten am liebsten aufgehört, wer war schon drin?"
+            ],
+            "tipp": "Die Stille trägt, wenn die Lehrkraft mitarbeitet, statt aufzupassen. Wer schwer stillsitzt, darf im Stehen an der Fensterbank arbeiten oder einen Knetball in der freien Hand halten; die Halbzeit nach fünf Minuten hilft allen.",
+            "wennEsKippt": "Wird es unruhig, nicht ermahnen, sondern auf den Timer zeigen: noch sechs Minuten. Kann jemand gar nicht anfangen, leise eine noch kleinere Stufe vorschlagen – nur die Überschrift schreiben, nur das Heft aufschlagen. Verweigert jemand ganz, sitzt er still und schätzt trotzdem seine Zahl vorher und nachher: Auch das ist ein Ergebnis. Steigt die Zahl bei jemandem deutlich, nach der Stunde fragen, ob die Aufgabe zu schwer ist – dann braucht es Hilfe beim Inhalt, nicht nur einen Start.",
+            "blatt": "ff6-start-plan"
+          },
+          {
+            "titel": "Skill: Fünf-Minuten-Start",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Die drei Schritte an die Tafel schreiben; die Lehrkraft macht sie einmal laut vor, mit ihrer eigenen Sache: Keine Lust, 7 von 10 – keine Lust ist ein Gefühl, kein Befehl –, einmal lang ausatmen; kleinster Schritt: Formular aus der Tasche, Namen eintragen, Handy in die Jacke, Blick auf die Uhr; los (2 Min.). Dann ein Probelauf im Kopf, Augen offen oder zu (2 Min.): Jede Person stellt sich den Moment vor, in dem sie diese Woche anfängt – wo sie sitzt, wann die Unlust kommt, welcher Satz, welche erste Bewegung. Danach Aufgabe 4 (4 Min.): wann, wo und womit als Wenn-dann-Satz; wer fertig ist, schreibt einen Jetzt-Satz von der Tafel dazu. Zum Schluss mit den Fingern (2 Min.): Wie sicher bist du, dass dein Start passiert, von 0 bis 10? Wer unter 7 liegt, macht den Schritt kleiner oder wählt einen anderen Ort.",
+            "sagen": [
+              "Fünf Minuten schafft man fast immer. Und meistens macht man danach weiter – aber das entscheidet ihr selbst.",
+              "Wie sicher seid ihr, dass euer Start passiert – null bis zehn? Unter sieben: kleiner machen."
+            ],
+            "punkte": [
+              "Unlust merken: „Keine Lust ist ein Gefühl, kein Befehl.“ Einmal lang ausatmen.",
+              "Klein machen: den kleinsten Schritt wählen, Handy außer Reichweite, Blick auf die Uhr – fünf Minuten.",
+              "Anfangen: Nach fünf Minuten entscheidest du – aufhören oder weitermachen."
+            ],
+            "tipp": "Für alle ohne ruhigen Platz zu Hause die Orte nennen, die vorher geklärt wurden: Bibliothek oder Lernraum im Lycée mit Zeiten, die Pause, der Bus für Vokabeln, Kopfhörer am Küchentisch. Fünf Minuten gehen fast überall. Wer das Handy als Timer braucht, legt es mit dem Display nach unten außer Reichweite.",
+            "wennEsKippt": "Wird der Probelauf im Kopf belächelt, auf die erste Bewegung kürzen: Wo liegt deine Hand, wenn du anfängst? Sagt jemand, zu Hause gehe es nicht – zu laut, kein Tisch, keine Ruhe –, nicht nachbohren, sondern einen Ort in der Schule vorschlagen und nach der Stunde unter vier Augen fragen, ob es Unterstützung braucht.",
+            "blatt": "ff6-start-plan"
+          },
+          {
+            "titel": "Skills-Pass, Mission und Moment",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Die Leitfrage für den Skills-Pass an die Tafel schreiben: Was hilft mir, anzufangen? Jede Person schreibt ihren Satz, Stempel beim Herumgehen (2 Min.). Dann die Wochen-Mission vorlesen (steht im Heft) und den Moment festhalten: Jede Person schreibt den Wenn-Teil aus Aufgabe 4 in die Spalte „Mein Moment: Wenn …“ (2 Min.). Zum Schluss der Ausblick auf die nächste Stunde (1 Min.).",
+            "sagen": [
+              "Ein Satz für den Skills-Pass: Was hilft euch, anzufangen?",
+              "Eure Mission: einmal der Fünf-Minuten-Start – genau in dem Moment, den ihr euch eben aufgeschrieben habt. Nächste Woche frage ich nur: Kam euer Moment?"
+            ],
+            "tipp": "Bleiben die Hefte in der Schule, den Wenn-dann-Satz auf einen Zettel abschreiben lassen, der in die Federmappe oder ins Hausaufgabenheft kommt."
+          }
+        ],
+        "bruecke": "Nächste Woche geht es um Tests: was die Aufregung mit Kopf und Körper macht, wie ihr Prüfungsgedanken prüft und wie ihr euren Testtag plant.",
+        "mission": "Mach einmal deinen Fünf-Minuten-Start: Handy weg, Blick auf die Uhr, los.",
+        "hintergrund": "Aufschieben heißt, eine beabsichtigte Handlung zu verschieben, obwohl absehbar ist, dass es schadet. Es hängt vor allem damit zusammen, wie unangenehm eine Aufgabe erscheint und wie weit die Belohnung entfernt liegt (Steel, 2007). Sirois und Pychyl (2013) beschreiben es als kurzfristige Stimmungsreparatur: Das Ausweichen nimmt das miese Gefühl sofort weg, der Preis kommt später – genau das zeigt der Kreislauf. Deshalb helfen weder Vorwürfe noch mehr Druck, sondern ein leichter Einstieg: ein winziger erster Schritt, ein festes Zeitfenster mit Timer und ein Wenn-dann-Plan, der den Start an einen Moment bindet (Gollwitzer, 1999).",
+        "quellen": [
+          "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1), 65–94.",
+          "Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation. Social and Personality Psychology Compass, 7(2), 115–127.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "achtung": "Hinter starkem Aufschieben steckt manchmal mehr als Unlust: Überforderung, Lernschwierigkeiten, Sorgen oder kein ruhiger Platz zu Hause, anhaltende Niedergeschlagenheit. Das nicht vor der Klasse ansprechen, sondern nach der Stunde unter vier Augen; bei Bedarf Régent und SePAS einbeziehen. Niemand muss sagen, was er aufschiebt. Sagt jemand, ihm sei alles egal oder er könne nicht mehr: ernst nehmen, nachfragen, noch am selben Tag den SePAS informieren, nach dem Schutzkonzept der Schule handeln; bei akuter Gefahr 112.",
+        "differenzierung": {
+          "leichter": "Den Kreislauf mündlich an der Tafel mitmachen und in Aufgabe 1 nur eine Station eintragen; für die Stufen und den Wenn-dann-Satz reichen Stichworte oder eine Zeichnung. In der Gewissensgasse darf jede Person einen Satz von der Tafel vorlesen; wer die Unterrichtssprache noch lernt, sagt nur „später“ oder „jetzt“ – auch in der eigenen Sprache – und schreibt den Start-Plan in der Sprache, in der er denkt.",
+          "schwerer": "Für Aylin einen Start-Plan schreiben, der auch ohne ruhigen Platz zu Hause funktioniert. In der Gewissensgasse die Moderation übernehmen: nach jeder Runde fragen, welcher Satz am stärksten gezogen hat – und warum."
+        },
+        "kurzfassung": "Bleibt nur eine Stunde: Check-in mit Zahl und Aufschiebe-Stapel (5 Min.), der Aufschiebe-Kreislauf mit Aylin und Aufgabe 1 (10 Min.), der erste Schritt in Stufen (8 Min.), Probe-Runde mit Timer, fünf Minuten Arbeit und Unlust vorher und nachher (12 Min.), Fünf-Minuten-Start mit Aufgabe 4 (10 Min.), Skills-Pass, Mission und Moment (5 Min.). Nachtest und Gewissensgasse entfallen; der Nachtest lässt sich zu Beginn der nächsten Stunde nachholen."
+      },
+      "fr": {
+        "titel": "Déjouer la procrastination",
+        "kurz": "Remettre à plus tard, c’est fuir une émotion désagréable : la classe comprend le cercle, réduit une tâche à un pas de cinq minutes et constate, minuteur en main, qu’elle pèse moins une fois lancée.",
+        "ziele": [
+          "expliquent, avec le cercle de la procrastination, pourquoi fuir soulage sur le moment puis augmente la pression",
+          "découpent une tâche scolaire jusqu’à un pas de cinq minutes",
+          "comparent, minuteur en main, ce qui pèse avant et après le départ",
+          "décident quand, où et par quoi ils commencent cette semaine"
+        ],
+        "material": [
+          "Roue des émotions, 20 gommettes",
+          "Mots et résultats de la séance 7",
+          "Cahier de l’élève, papiers, une boîte",
+          "Minuteur, boîte à portables",
+          "Cartes de départ (modèle), 1 jeu",
+          "Une tâche à soi, remise à plus tard",
+          "Tampon pour le Skills-Pass"
+        ],
+        "vorbereitung": [
+          "Écrire à l’avance les mots inconnus de la séance 7 et la grille, les cacher.",
+          "Découper les cartes de départ ; demander au régent les dates des devoirs.",
+          "Repérer où l’on peut travailler au calme au lycée, avant ou après les cours.",
+          "Prévoir le couloir des voix, écrire trois phrases de chaque voix.",
+          "Apporter une tâche à soi, remise à plus tard : tout est montré sur elle."
+        ],
+        "ablauf": [
+          {
+            "min": "0–10",
+            "phase": "ankommen",
+            "titel": "Tour d’humeur : roue, chiffre et pile en attente"
+          },
+          {
+            "min": "10–15",
+            "phase": "bruecke",
+            "titel": "Retour : votre moment est-il venu ?"
+          },
+          {
+            "min": "15–23",
+            "phase": "uebung",
+            "titel": "Test de rappel : que reste-t-il après une semaine ?"
+          },
+          {
+            "min": "23–35",
+            "phase": "input",
+            "titel": "Le cercle de la procrastination"
+          },
+          {
+            "min": "35–45",
+            "phase": "uebung",
+            "titel": "Le premier pas : si petit qu’il fait rire"
+          },
+          {
+            "min": "45–50",
+            "phase": "aktiv",
+            "titel": "Pause active : combien dure une minute ?"
+          },
+          {
+            "min": "50–65",
+            "phase": "aktiv",
+            "titel": "Le couloir des voix : plus tard ou maintenant ?"
+          },
+          {
+            "min": "65–85",
+            "phase": "uebung",
+            "titel": "Tour d’essai avec minuteur"
+          },
+          {
+            "min": "85–95",
+            "phase": "skill",
+            "titel": "Skill : démarrer en cinq minutes"
+          },
+          {
+            "min": "95–100",
+            "phase": "abschluss",
+            "titel": "Skills-Pass, mission et moment"
+          }
+        ],
+        "schritte": [
+          {
+            "titel": "Tour d’humeur : roue, chiffre et pile en attente",
+            "dauer": 10,
+            "phase": "ankommen",
+            "text": "En entrant, chaque jeune colle sa gommette sur l’affiche de la roue des émotions. À trois, tout le monde montre sa tension avec les doigts (0 à 10 doigts pour 0 à 100) ; l’enseignant·e commence avec son émotion et son chiffre, deux ou trois volontaires disent leur mot (4 min). Puis une deuxième question, à laquelle on répond seulement avec les doigts : combien de choses êtes-vous en train de repousser en ce moment – école, chambre, messages, coups de fil ? L’enseignant·e donne honnêtement son propre chiffre et une chose qui traîne depuis des jours ; puis tout le monde montre en même temps, à trois (3 min). Pour finir, à main levée : qu’est-ce que vous repoussez le plus souvent – le travail scolaire, le rangement, répondre aux messages ou dire quelque chose de désagréable ? Compter à peu près et annoncer le résultat (3 min).",
+            "sagen": [
+              "Et maintenant, honnêtement, à trois : combien de choses êtes-vous en train de repousser ?",
+              "Moi, j’en ai quatre. L’une d’elles, c’est un formulaire qui traîne sur mon bureau depuis deux semaines – et chaque jour, je trouve une bonne raison de ne pas m’y mettre."
+            ],
+            "tipp": "Ce tour montre que tout le monde remet à plus tard, les adultes compris. Ne pas commenter les chiffres ni demander ce qui est repoussé. Pour ceux qui apprennent encore la langue, montrer « remettre à plus tard » par un geste – repousser quelque chose des deux mains – et écrire « faire plus tard » au tableau.",
+            "wennEsKippt": "Si quelqu’un montre dix doigts en rigolant, rire avec lui : bienvenue au club. Si quelqu’un ne montre rien, c’est aussi une réponse. Si une tension très élevée semble sérieuse, ne pas poser de question devant la classe, mais demander discrètement pendant la phase de travail suivante : tu as besoin de quelque chose ?"
+          },
+          {
+            "titel": "Retour : votre moment est-il venu ?",
+            "dauer": 5,
+            "phase": "bruecke",
+            "text": "Un jeune lit sa phrase du Skills-Pass de la dernière séance. Puis demander où en est la mission de la dernière séance : ton moment est-il venu – et qu’as-tu fait ? Pouce en haut, au milieu ou en bas ; une voix raconte en une phrase, personne n’est obligé de l’avoir réussie. Ensuite, annoncer le thème : la meilleure méthode d’apprentissage de la dernière séance ne sert à rien si l’on ne commence pas – aujourd’hui, la classe s’entraîne à se lancer. Poser le cadre : personne n’a à dire ce qu’il repousse, et personne n’est rabaissé pour ça.",
+            "sagen": [
+              "Votre moment pour la mission est-il venu – et qu’avez-vous fait ? Pouce en haut, au milieu ou en bas.",
+              "Aujourd’hui, vous vous entraînez à vous lancer, justement quand vous n’en avez pas envie. Tout le monde remet à plus tard – il y a une raison à ça, et on va la regarder de près."
+            ],
+            "tipp": "Ne demander la mission que brièvement : un pouce, une histoire. Qui ne l’a pas réussie n’a pas à se justifier et reçoit un sourire : il est en plein dans le sujet du jour."
+          },
+          {
+            "titel": "Test de rappel : que reste-t-il après une semaine ?",
+            "dauer": 8,
+            "phase": "uebung",
+            "text": "Découvrir les mots inconnus de l’expérience, écrits au tableau avant la séance, sans leur sens. Chacun note de mémoire sur un papier autant de significations qu’il en connaît encore ; deviner est permis, regarder non (3 min). Puis montrer les solutions. Chacun compte en silence ses bonnes réponses, n’écrit que le nombre et R (relu) ou T (testé) sur le papier, le plie et le met dans la boîte (2 min). Deux volontaires additionnent au bureau les bonnes réponses de chaque groupe, pendant que la classe parie sur le groupe qui a le mieux retenu après une semaine (2 min). Les totaux s’écrivent à côté de ceux de la semaine dernière : quel groupe a le plus perdu ? (1 min)",
+            "sagen": [
+              "Pas de révision, pas de triche – notez simplement ce qui reste après une semaine.",
+              "Se tester paraît plus fatigant que relire. Et ce qui est fatigant, on le remet volontiers à plus tard. C’est le sujet d’aujourd’hui."
+            ],
+            "tipp": "En général, le groupe qui s’est testé a nettement moins perdu ; si les groupes n’ont pas la même taille, diviser le total par le nombre de papiers. S’il n’y a presque pas de différence, rester honnête : dans une classe, le hasard joue, la recherche l’a vérifié avec un très grand nombre de personnes. Si l’expérience n’a pas eu lieu, chacun note de mémoire ce qu’il a découvert la semaine dernière sur la façon d’apprendre – c’est aussi un test.",
+            "wennEsKippt": "Qui ne sait plus avec quelle méthode il a appris met un point d’interrogation ; qui était absent la semaine dernière compte au bureau – un bon rôle aussi pour ceux qui ont du mal à rester assis ou qui ne veulent pas écrire. Si des scores individuels sont criés ou moqués, arrêter avec bienveillance : ici, seul compte le total de la classe, pas un chiffre personnel."
+          },
+          {
+            "titel": "Le cercle de la procrastination",
+            "dauer": 12,
+            "phase": "input",
+            "text": "Lire à voix haute l’histoire d’Aylin sur la fiche, la classe suit (2 min). Au tableau, un cercle à quatre étapes vides : la tâche – l’émotion désagréable – la fuite – ouf… puis la pression. La classe le remplit avec l’histoire d’Aylin ; pour « l’émotion désagréable », rassembler les émotions typiques juste avant de commencer – l’ennui, l’incertitude, la peur que ce soit raté, le sentiment d’être dépassé – et les écrire toutes autour du cercle (4 min). Puis demander de quoi Aylin voulait vraiment se débarrasser : des mots d’anglais ou de l’émotion ? Écrire en grand : remettre à plus tard, c’est fuir une émotion (1 min). Avec la grille, montrer où l’on peut casser le cercle à chaque étape (2 min). Pour finir, exercice 1 seul : noter son propre cercle, des mots-clés suffisent, personne ne lit à voix haute (3 min).",
+            "sagen": [
+              "Pourquoi Aylin a-t-elle pris son portable ? Parce que l’anglais lui est égal – ou parce que la liste lui a fait un sale effet ?",
+              "Le portable aide tout de suite contre l’émotion. Mais la tâche reste là – et elle devient plus lourde chaque jour.",
+              "Ne pas avoir envie, c’est une émotion, pas un ordre. On peut la sentir et commencer quand même."
+            ],
+            "tabelle": {
+              "spalten": [
+                "Étape",
+                "Ici, je peux casser le cercle"
+              ],
+              "zeilen": [
+                [
+                  "La tâche",
+                  "la découper si petit que le premier pas ne coûte presque rien"
+                ],
+                [
+                  "L’émotion désagréable",
+                  "la nommer : « Ne pas avoir envie, c’est une émotion, pas un ordre. »"
+                ],
+                [
+                  "La fuite",
+                  "portable hors de portée, changer de place, regarder l’heure"
+                ],
+                [
+                  "Ouf… puis la pression",
+                  "recommencer avec bienveillance au lieu de se démolir"
+                ]
+              ]
+            },
+            "tipp": "Beaucoup de jeunes pensent que le problème, c’est eux. La phrase « Remettre à plus tard, c’est fuir une émotion – tout le monde le fait » soulage visiblement ; elle reste au tableau jusqu’à la fin de la séance.",
+            "wennEsKippt": "Si quelqu’un dit : « Moi, je travaille mieux sous pression », le prendre au sérieux et demander : comment se passe la soirée avant la remise – et es-tu content du résultat ? Ne pas chercher à convaincre ; le couloir des voix reprendra la phrase. Si un exemple semble cacher plus qu’un manque d’envie (« Alors je reste au lit toute la journée »), ne pas creuser devant la classe, mais en reparler après le cours, en tête-à-tête.",
+            "blatt": "ff6-start-plan"
+          },
+          {
+            "titel": "Le premier pas : si petit qu’il fait rire",
+            "dauer": 10,
+            "phase": "uebung",
+            "text": "Chacun choisit une tâche scolaire qu’il repousse et dont il peut faire le premier pas aujourd’hui en classe – vocabulaire, exercices de maths, un cahier à compléter, une affiche, un texte ; qui ne trouve rien tire une carte de départ (2 min). Au tableau, l’enseignant·e montre avec sa propre tâche comment découper de haut en bas : terminé – rendre le formulaire – remplir les cases – sortir le formulaire du sac et écrire son nom (1 min). Puis chacun remplit l’exercice 2 de la fiche : en haut « Terminé », en bas un premier pas faisable en cinq minutes (4 min). À deux (3 min) : le voisin lit seulement la marche 1 et vérifie : est-ce faisable en cinq minutes – et est-ce presque ridicule ? L’enseignant·e passe dans les rangs et rapetisse les premiers pas trop grands.",
+            "sagen": [
+              "Rendez le premier pas si petit que c’en est presque ridicule. Si vous riez, c’est qu’il est bon.",
+              "Réviser les maths, ce n’est pas un pas. Ouvrir le cahier à la page 12 et lire l’exercice 1 – ça, c’en est un."
+            ],
+            "tipp": "Les cartes de départ enlèvent la pression quand quelqu’un « n’a rien », et elles utilisent ce qui se trouve de toute façon dans le cartable. Qui n’a aucune affaire scolaire reçoit une page d’une matière que la classe étudie en ce moment.",
+            "wennEsKippt": "Si quelqu’un affirme ne jamais rien remettre à plus tard, ne pas discuter : alors choisis quelque chose que tu peux simplement commencer aujourd’hui – ou tire une carte. Si la marche 1 reste trop grande, demander : qu’est-ce que tu fais exactement pendant la première minute ? Si quelqu’un ne veut pas montrer sa tâche, le voisin vérifie seulement si la marche 1 se fait en cinq minutes ; personne n’a à voir le reste.",
+            "blatt": "ff6-start-plan"
+          },
+          {
+            "titel": "Pause active : combien dure une minute ?",
+            "dauer": 5,
+            "phase": "aktiv",
+            "text": "Tout le monde se lève ; montres et portables restent hors de vue. Manche 1 (2 min) : tout le monde marche lentement et en silence dans la salle ; qui pense qu’une minute est passée s’arrête et se fige. L’enseignant·e regarde l’heure et, après exactement 60 secondes, lance : « Maintenant ! » – qui est arrêté depuis longtemps, qui marche encore ? Manche 2 (2 min) : 30 secondes de course sur place, aussi vite que possible, puis 30 secondes immobile et en silence ; quelle demi-minute a paru la plus longue ? Pour finir, une phrase (1 min) : notre sens du temps nous trompe – « encore cinq minutes » sur le portable deviennent vite quarante, d’où le minuteur tout à l’heure. Si la grande récréation tombe entre les deux heures, cet exercice est supprimé.",
+            "sagen": [
+              "Allez-y – en silence et lentement. Qui pense que la minute est passée se fige. Pas de montre, pas de portable."
+            ],
+            "tipp": "Presque toujours, certains se figent beaucoup trop tôt, tandis que d’autres marchent bien au-delà de la minute. C’est le lien avec le tour d’essai : on ne peut pas se fier à son sens du temps – à un minuteur, si.",
+            "wennEsKippt": "Si ça court ou si ça bouscule, arrêter et recommencer lentement. Qui ne veut pas marcher reste debout à sa place et s’assoit quand, pour lui, la minute est passée. Si quelqu’un annonce le temps à voix haute, on refait simplement une manche."
+          },
+          {
+            "titel": "Le couloir des voix : plus tard ou maintenant ?",
+            "dauer": 15,
+            "phase": "aktiv",
+            "text": "Deux rangées de neuf ou dix se font face, à environ 1,5 m : à gauche les voix du « plus tard », à droite celles du « maintenant » (2 min). L’enseignant·e lit une situation ; un jeune joue ce personnage et traverse lentement le couloir ; qui se trouve à sa hauteur dit une phrase, en alternant gauche et droite. À la sortie, le personnage dit s’il se lance et quelle phrase l’a le plus tiré. Au premier tour, c’est l’enseignant·e qui traverse (2 min), puis trois tours avec des volontaires ; après chaque tour, les rangées échangent leur voix (8 min). Pour finir, la classe rassemble au tableau les phrases « maintenant » les plus fortes – le plus souvent, elles sont petites et bienveillantes (3 min).",
+            "sagen": [
+              "Vous parlez pour la voix, pas pour vous. Dites ce qu’une telle voix dit vraiment dans la tête – sur la tâche, jamais sur la personne.",
+              "Tu es au bout ? Tu te lances – et quelle phrase t’a le plus tiré ?",
+              "Quelles phrases du “maintenant” étaient assez fortes contre “Encore une vidéo” ?"
+            ],
+            "punkte": [
+              "Aylin, mercredi, 19 h : 30 mots d’anglais pour vendredi, le portable clignote.",
+              "Noah, dimanche, 16 h : l’affiche de sciences est à rendre demain, la feuille est encore blanche.",
+              "Ana : depuis une semaine, son cahier de français incomplet traîne dans son sac – demain, il est ramassé.",
+              "Samuel : un ami lui a écrit il y a quatre jours, Samuel n’a toujours pas répondu – et chaque jour, c’est plus gênant."
+            ],
+            "tipp": "Phrases « plus tard » typiques : « Encore un épisode », « Sous pression, je suis meilleur », « Demain, j’aurai plus de temps ». Les phrases « maintenant » fortes sont souvent petites et bienveillantes : « Juste cinq minutes, après tu peux arrêter », « Juste lire la consigne ». Pour éviter d’entendre dix fois la même phrase : chaque phrase ne peut venir qu’une fois par tour. Un jeune qui a du mal à rester immobile fait un bon premier personnage.",
+            "wennEsKippt": "Si les phrases deviennent personnelles (« De toute façon, tu n’y arriveras jamais »), arrêter tout de suite : les voix parlent de la tâche, jamais de la personne – nouvelle phrase. Qui ne veut rien dire fait un signe de tête au personnage et laisse parler le suivant, ou lit une phrase du tableau ; qui apprend encore la langue dit seulement « plus tard » ou « maintenant ». Qui ne veut pas du tout être dans le couloir fait la mise en scène : il lit la situation ou écrit les phrases du « maintenant » au tableau. Si la place manque ou si la classe est très agitée, le couloir marche aussi assis : deux rangées de chaises, le personnage passe entre elles."
+          },
+          {
+            "titel": "Tour d’essai avec minuteur",
+            "dauer": 20,
+            "phase": "uebung",
+            "text": "La classe vérifie elle-même ce que la recherche dit du démarrage : ce qui pèse avant de commencer est souvent plus lourd que le travail lui-même. Pendant dix minutes, tout le monde travaille en silence sur sa tâche de l’exercice 2 ; avant et après, chacun estime de 0 à 10 à quel point la tâche lui paraît pénible (exercice 3). L’enseignant·e travaille visiblement sur sa propre tâche.",
+            "sagen": [
+              "Dix minutes, une seule chose. Si autre chose vous vient en tête : un mot sur le papier, et vous continuez.",
+              "C’était pénible à combien avant, et maintenant ? Chez beaucoup, le chiffre est plus bas une fois qu’on a commencé."
+            ],
+            "punkte": [
+              "Se préparer (3 min) : la tâche devant soi, le portable dans le sac ou dans la boîte, sur la table seulement ce qu’il faut pour la marche 1, plus un papier brouillon ; noter le chiffre « pénible avant ».",
+              "Travailler (10 min) : lancer le minuteur bien en vue ; tout le monde commence par la marche 1 et continue avec la marche 2. Si autre chose vient en tête (« Il faut encore que je… »), un mot sur le papier brouillon. Après cinq minutes, un signal discret : mi-temps, retenir son chiffre, continuer.",
+              "Faire le point (5 min) : noter « pénible après » ; à trois, chacun montre avec le pouce si le chiffre a baissé, n’a pas bougé ou a monté – l’enseignant·e trace les bâtons au tableau.",
+              "Questions (2 min) : qu’est-ce qui était le plus dur – commencer ou continuer ? Qui aurait voulu arrêter après cinq minutes, qui était déjà lancé ?"
+            ],
+            "tipp": "Le silence tient quand l’enseignant·e travaille aussi au lieu de surveiller. Un jeune qui a du mal à rester assis peut travailler debout, au rebord de la fenêtre, ou garder une balle anti-stress dans la main libre ; la mi-temps après cinq minutes aide tout le monde.",
+            "wennEsKippt": "Si ça s’agite, ne pas faire de remarque, mais montrer le minuteur : encore six minutes. Si quelqu’un n’arrive pas du tout à commencer, lui proposer à voix basse une marche encore plus petite – seulement écrire le titre, seulement ouvrir le cahier. Si quelqu’un refuse complètement, il reste assis en silence et estime quand même son chiffre avant et après : c’est aussi un résultat. Si le chiffre monte nettement chez quelqu’un, lui demander après le cours si la tâche est trop difficile : il lui faut alors de l’aide pour le contenu, pas seulement un démarrage.",
+            "blatt": "ff6-start-plan"
+          },
+          {
+            "titel": "Skill : démarrer en cinq minutes",
+            "dauer": 10,
+            "phase": "skill",
+            "text": "Écrire les trois étapes au tableau ; l’enseignant·e les fait une fois à voix haute, avec sa propre tâche : pas envie, 7 sur 10 – ne pas avoir envie, c’est une émotion, pas un ordre –, une longue expiration ; le plus petit pas : sortir le formulaire du sac, écrire son nom, portable dans la veste, un œil sur l’heure ; c’est parti (2 min). Puis une répétition dans la tête, yeux ouverts ou fermés (2 min) : chacun imagine le moment où il se lancera cette semaine – où il est assis, quand le manque d’envie arrive, quelle phrase, quel premier geste. Ensuite l’exercice 4 (4 min) : quand, où et par quoi, sous forme de plan « si… alors » ; qui a fini ajoute une phrase du « maintenant » prise au tableau. Pour finir, avec les doigts (2 min) : à quel point es-tu sûr que ton départ aura lieu, de 0 à 10 ? Sous 7, on rapetisse le pas ou on choisit un autre endroit.",
+            "sagen": [
+              "Cinq minutes, on y arrive presque toujours. Et la plupart du temps, on continue ensuite – mais c’est vous qui décidez.",
+              "À quel point êtes-vous sûrs que votre départ aura lieu – de zéro à dix ? Sous sept : on rapetisse."
+            ],
+            "punkte": [
+              "Repérer : « Ne pas avoir envie, c’est une émotion, pas un ordre. » Une longue expiration.",
+              "Rapetisser : choisir le plus petit pas, portable hors de portée, un œil sur l’heure – cinq minutes.",
+              "Se lancer : après cinq minutes, tu décides – arrêter ou continuer."
+            ],
+            "tipp": "Pour ceux qui n’ont pas de coin calme à la maison, citer les endroits repérés à l’avance : bibliothèque ou salle d’étude du lycée avec les horaires, la récré, le bus pour le vocabulaire, un casque à la table de la cuisine. Cinq minutes, ça marche presque partout. Qui a besoin du portable comme minuteur le pose écran vers le bas, hors de portée.",
+            "wennEsKippt": "Si la répétition dans la tête fait sourire, la réduire au premier geste : où est ta main quand tu commences ? Si quelqu’un dit qu’à la maison, ce n’est pas possible – trop de bruit, pas de table, pas de calme –, ne pas insister, mais proposer un endroit à l’école et lui demander après le cours, en tête-à-tête, s’il a besoin de soutien.",
+            "blatt": "ff6-start-plan"
+          },
+          {
+            "titel": "Skills-Pass, mission et moment",
+            "dauer": 5,
+            "phase": "abschluss",
+            "text": "Écrire au tableau la question du Skills-Pass : qu’est-ce qui m’aide à me lancer ? Chacun écrit sa phrase, tampon en passant dans les rangs (2 min). Puis lire la mission de la semaine (elle est dans le cahier) et noter le moment : chacun recopie la partie « si » de l’exercice 4 dans la colonne « Mon moment : quand … » (2 min). Pour finir, annoncer la prochaine séance (1 min).",
+            "sagen": [
+              "Une phrase pour le Skills-Pass : qu’est-ce qui vous aide à vous lancer ?",
+              "Votre mission : une fois le démarrage en cinq minutes – juste au moment que vous venez de noter. La semaine prochaine, je demanderai seulement : votre moment est-il venu ?"
+            ],
+            "tipp": "Si les cahiers restent à l’école, faire recopier le plan « si… alors » sur un papier qui va dans la trousse ou dans le journal de classe."
+          }
+        ],
+        "bruecke": "La semaine prochaine, on parle des devoirs en classe : ce que le trac fait à la tête et au corps, comment vérifier ses pensées et comment préparer le jour du devoir.",
+        "mission": "Teste une fois le démarrage en cinq minutes : portable rangé, un œil sur l’heure.",
+        "hintergrund": "Remettre à plus tard, c’est repousser une action prévue alors qu’on sait que cela nuira. Cela dépend surtout du caractère désagréable de la tâche et de l’éloignement de la récompense (Steel, 2007). Sirois et Pychyl (2013) y voient une réparation de l’humeur à court terme : la fuite enlève tout de suite l’émotion désagréable, le prix vient plus tard – c’est exactement ce que montre le cercle. Les reproches et la pression n’aident donc pas ; ce qui aide, c’est une entrée facile : un tout petit premier pas, un créneau fixe avec minuteur et un plan « si… alors » qui lie le départ à un moment précis (Gollwitzer, 1999).",
+        "quellen": [
+          "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1), 65–94.",
+          "Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation. Social and Personality Psychology Compass, 7(2), 115–127.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "achtung": "Derrière une forte tendance à tout repousser, il y a parfois plus qu’un manque d’envie : surcharge, difficultés d’apprentissage, soucis ou pas de coin calme à la maison, abattement qui dure. En parler après le cours en tête-à-tête, pas devant la classe ; si besoin, impliquer le régent et le SePAS. Personne n’a à dire ce qu’il repousse. Si un jeune dit que tout lui est égal ou qu’il n’en peut plus : le prendre au sérieux, lui demander comment il va, informer le SePAS le jour même, suivre le protocole de protection de l’école ; en cas de danger immédiat, 112.",
+        "differenzierung": {
+          "leichter": "Suivre le cercle à l’oral au tableau et ne noter qu’une étape dans l’exercice 1 ; pour les marches et le plan « si… alors », des mots-clés ou un dessin suffisent. Dans le couloir des voix, chacun peut lire une phrase du tableau ; qui apprend encore la langue dit seulement « plus tard » ou « maintenant » – aussi dans sa langue – et écrit son plan de départ dans la langue dans laquelle il pense.",
+          "schwerer": "Écrire pour Aylin un plan de départ qui marche aussi sans coin calme à la maison. Dans le couloir des voix, animer : après chaque tour, demander quelle phrase a le plus tiré – et pourquoi."
+        },
+        "kurzfassung": "S’il ne reste qu’une heure : tour d’humeur avec chiffre et pile en attente (5 min), le cercle de la procrastination avec Aylin et l’exercice 1 (10 min), le premier pas en marches (8 min), tour d’essai avec minuteur, cinq minutes de travail et chiffre avant et après (12 min), démarrer en cinq minutes avec l’exercice 4 (10 min), Skills-Pass, mission et moment (5 min). Le test de rappel et le couloir des voix sont supprimés ; le test de rappel peut se faire au début de la séance suivante."
+      }
+    }
+  ],
+  "blaetter": [
+    {
+      "id": "ff6-start-plan",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln",
+        "gruppe"
+      ],
+      "dauer": "40 Min., verteilt über die Stunde",
+      "eldib": [],
+      "schlagworte": [
+        "Aufschieben",
+        "erster Schritt",
+        "Timer",
+        "Wenn-dann-Plan",
+        "Förderfach"
+      ],
+      "bild": "icon:player-play",
+      "kurs": [
+        "ff6-e08"
+      ],
+      "de": {
+        "titel": "Mein Start-Plan",
+        "untertitel": "Aufschieben ist Ausweichen vor einem miesen Gefühl. Ein kleiner Start macht das Gefühl kleiner.",
+        "bausteine": [
+          {
+            "art": "geschichte",
+            "titel": "Mittwoch, 19 Uhr",
+            "bild": "figur:jana:besorgt",
+            "text": "Aylin (13) soll bis Freitag 30 Englisch-Vokabeln lernen. Sie schlägt das Heft auf, sieht die lange Liste und bekommt ein schweres Gefühl im Bauch. „Erst kurz aufs Handy.“ Aus einem Video werden zehn. Um 22 Uhr ist der Druck riesig – und die Liste fühlt sich noch schlimmer an als um 19 Uhr. Im Bett denkt sie: Morgen mache ich es ganz sicher."
+          },
+          {
+            "art": "aufgabe",
+            "text": "So läuft der Aufschiebe-Kreislauf. Trag ein, wie er bei dir aussieht.",
+            "hinweis": "Nach der vierten Station geht es von vorn los – und die Aufgabe wirkt jedes Mal größer. Stichworte reichen.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 1,
+            "items": [
+              {
+                "titel": "Aufgabe",
+                "text": "Aylin: 30 Vokabeln. Bei mir:"
+              },
+              {
+                "titel": "Mieses Gefühl",
+                "text": "Keine Lust, Angst, es nicht zu können. Bei mir:"
+              },
+              {
+                "titel": "Ausweichen",
+                "text": "„Erst kurz aufs Handy.“ Bei mir:"
+              },
+              {
+                "titel": "Kurz besser, dann Druck",
+                "text": "Erleichterung, dann schlechtes Gewissen. Bei mir:"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Keine Lust ist ein Gefühl, kein Befehl.",
+            "text": "Aufschieben nimmt das miese Gefühl kurz weg – dann kommt es mit Zinsen zurück. Das Gefühl vor dem Anfangen ist meist größer als die Arbeit selbst. Darum hilft kein Druck, sondern ein Start, der fast nichts kostet."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Zerleg deine Aufgabe in Stufen. Mach den ersten Schritt so klein, dass er in fünf Minuten erledigt ist.",
+            "hinweis": "Erste Schritte sind zum Beispiel: das Heft aufschlagen und die Aufgabe lesen, fünf Wörter abdecken und dich abfragen, einen Titel schreiben.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Die Schulsache, die ich vor mir herschiebe: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "leiter",
+            "stufen": 4,
+            "unten": "Schritt 1: in fünf Minuten erledigt",
+            "oben": "Geschafft"
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Probe-Runde mit Timer: Wie unangenehm ist die Aufgabe vorher – und wie nachher?",
+            "hinweis": "0 = gar nicht, 10 = kaum auszuhalten. Die freien Zeilen sind für deine nächsten Starts, zu Hause oder in der Schule.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Tag",
+              "Minuten",
+              "Unlust vorher",
+              "Unlust nachher",
+              "Das habe ich geschafft"
+            ],
+            "breiten": [
+              0.8,
+              0.9,
+              1,
+              1.1,
+              2.6
+            ],
+            "zeilen": 4,
+            "beispiel": [
+              "Mo",
+              "10",
+              "7",
+              "3",
+              "12 Wörter abgefragt"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Dein Start: Wann, wo und womit fängst du an? Schreib deinen Plan als Wenn-dann-Satz.",
+            "hinweis": "Nimm dazu einen Jetzt-Satz aus der Gewissensgasse – und einen Satz für den Fall, dass es nicht klappt.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Wenn ich am Mittwoch um 16 Uhr aus dem Bus steige,",
+                "dann": "setze ich mich in die Bibliothek, packe das Handy weg und frage mich fünf Wörter ab."
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Mein Jetzt-Satz: …",
+              "Wenn es doch nicht klappt, sage ich mir: …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Kein ruhiger Platz zu Hause?",
+            "punkte": [
+              "In der Schule: Bibliothek oder ein ruhiger Raum – frag nach, wann er offen ist.",
+              "Vokabeln gehen auch im Bus oder in der Pause.",
+              "Mit Kopfhörern ist es leiser, auch ohne Musik.",
+              "Fünf Minuten gehen fast überall."
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Wenn nichts mehr geht",
+            "text": "Schiebst du über Wochen alles vor dir her oder fühlt sich alles sinnlos an, sprich mit jemandem, dem du vertraust, oder mit dem SePAS. Anonym und kostenlos hilft das Kanner- a Jugendtelefon: 116 111."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Die Jugendlichen verstehen Aufschieben als Ausweichen vor einem Gefühl, zerlegen eine echte Schulaufgabe bis zu einem Fünf-Minuten-Schritt, erproben eine Runde mit Timer und legen ihren Start mit einem Wenn-dann-Plan fest.",
+          "ablauf": [
+            "Einheit 8, Schritt 4 (12 Min.): Geschichte vorlesen, Kreislauf an der Tafel füllen, Aufgabe 1 allein.",
+            "Schritt 5 (10 Min.): Aufgabe 2 mit einer echten Schulsache oder einer Start-Karte; zu zweit Stufe 1 prüfen.",
+            "Schritt 8 (20 Min.): Unlust vorher, zehn Minuten Arbeit mit Timer, Unlust nachher (Aufgabe 3).",
+            "Schritt 9: Fünf-Minuten-Start und Aufgabe 4; der Wenn-Teil wird der Moment der Wochen-Mission."
+          ],
+          "hintergrund": "Aufschieben ist eine kurzfristige Stimmungsreparatur: Das Ausweichen nimmt das unangenehme Gefühl sofort weg, der Preis kommt später (Sirois & Pychyl, 2013). Es hängt vor allem damit zusammen, wie unangenehm eine Aufgabe wirkt und wie weit die Belohnung entfernt ist (Steel, 2007). Ein Wenn-dann-Plan bindet den Start an einen Moment (Gollwitzer, 1999).",
+          "quellen": [
+            "Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation. Social and Personality Psychology Compass, 7(2), 115–127.",
+            "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1), 65–94.",
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          ],
+          "achtung": "Hinter dauerhaftem Aufschieben können Überforderung, Lernschwierigkeiten, Sorgen zu Hause oder Niedergeschlagenheit stehen: nach der Stunde unter vier Augen nachfragen, bei Bedarf Régent und SePAS einbeziehen.",
+          "material": "Timer, Start-Karten, Notizzettel"
+        }
+      },
+      "fr": {
+        "titel": "Mon plan pour me lancer",
+        "untertitel": "Remettre à plus tard, c’est fuir une émotion désagréable. Un petit début rend cette émotion plus petite.",
+        "bausteine": [
+          {
+            "art": "geschichte",
+            "titel": "Mercredi, 19 h",
+            "bild": "figur:jana:besorgt",
+            "text": "Aylin (13 ans) doit apprendre 30 mots d’anglais pour vendredi. Elle ouvre son cahier, voit la longue liste et sent comme un poids dans le ventre. « D’abord, vite fait, le portable. » Une vidéo en devient dix. À 22 h, la pression est énorme – et la liste paraît encore pire qu’à 19 h. Au lit, elle se dit : demain, c’est sûr, je m’y mets."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Voici le cercle de la procrastination. Note à quoi il ressemble chez toi.",
+            "hinweis": "Après la quatrième étape, tout recommence – et la tâche paraît chaque fois plus grosse. Des mots-clés suffisent.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "schritte",
+            "stil": "kette",
+            "linien": 1,
+            "items": [
+              {
+                "titel": "La tâche",
+                "text": "Aylin : 30 mots. Chez moi :"
+              },
+              {
+                "titel": "L’émotion désagréable",
+                "text": "Pas envie, peur de ne pas y arriver. Chez moi :"
+              },
+              {
+                "titel": "La fuite",
+                "text": "« D’abord, le portable. » Chez moi :"
+              },
+              {
+                "titel": "Ouf… puis la pression",
+                "text": "Soulagement, puis mauvaise conscience. Chez moi :"
+              }
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Ne pas avoir envie, c’est une émotion, pas un ordre.",
+            "text": "Remettre à plus tard enlève l’émotion désagréable pour un moment – puis elle revient, avec les intérêts. L’émotion avant de commencer est souvent plus grande que le travail lui-même. Ce qui aide, ce n’est pas la pression, mais un début qui ne coûte presque rien."
+          },
+          {
+            "art": "aufgabe",
+            "text": "Découpe ta tâche en marches. Rends le premier pas si petit qu’il se fait en cinq minutes.",
+            "hinweis": "Des premiers pas, par exemple : ouvrir le cahier et lire la consigne, cacher cinq mots et te tester, écrire un titre.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "La tâche scolaire que je repousse : …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "leiter",
+            "stufen": 4,
+            "unten": "Marche 1 : faite en cinq minutes",
+            "oben": "Terminé"
+          },
+          {
+            "art": "seitenumbruch"
+          },
+          {
+            "art": "aufgabe",
+            "text": "Tour d’essai avec minuteur : à quel point la tâche te paraît pénible avant – et après ?",
+            "hinweis": "0 = pas du tout, 10 = presque insupportable. Les lignes libres sont pour tes prochains départs, à la maison ou à l’école.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "tabelle",
+            "spalten": [
+              "Jour",
+              "Minutes",
+              "Pénible avant",
+              "Pénible après",
+              "Ce que j’ai fait"
+            ],
+            "breiten": [
+              0.8,
+              0.9,
+              1,
+              1.1,
+              2.6
+            ],
+            "zeilen": 4,
+            "beispiel": [
+              "lun.",
+              "10",
+              "7",
+              "3",
+              "12 mots testés"
+            ]
+          },
+          {
+            "art": "aufgabe",
+            "text": "Ton départ : quand, où et par quoi commences-tu ? Écris ton plan sous forme de plan « si… alors ».",
+            "hinweis": "Ajoute une phrase du « maintenant » du couloir des voix – et une phrase pour le cas où ça ne marche pas.",
+            "symbole": [
+              "schreiben"
+            ]
+          },
+          {
+            "art": "wennDann",
+            "zeilen": 1,
+            "beispiele": [
+              {
+                "wenn": "Si je descends du bus mercredi à 16 h,",
+                "dann": "je m’installe à la bibliothèque, je range mon portable et je me teste sur cinq mots."
+              }
+            ]
+          },
+          {
+            "art": "satzanfaenge",
+            "items": [
+              "Ma phrase du « maintenant » : …",
+              "Si ça ne marche pas, je me dis : …"
+            ],
+            "linien": 1
+          },
+          {
+            "art": "info",
+            "symbol": "tipp",
+            "titel": "Pas de coin calme à la maison ?",
+            "punkte": [
+              "À l’école : la bibliothèque ou une salle calme – demande quand elle est ouverte.",
+              "Le vocabulaire, ça marche aussi dans le bus ou à la récré.",
+              "Avec un casque, c’est plus calme, même sans musique.",
+              "Cinq minutes, ça marche presque partout."
+            ]
+          },
+          {
+            "art": "info",
+            "symbol": "hilfe",
+            "titel": "Quand plus rien ne va",
+            "text": "Si tu repousses tout depuis des semaines ou si tout te paraît inutile, parles-en à une personne de confiance ou au SePAS. Anonyme et gratuit : le Kanner- a Jugendtelefon, 116 111."
+          }
+        ],
+        "lehrer": {
+          "ziel": "Les jeunes comprennent la procrastination comme la fuite d’une émotion, découpent une vraie tâche scolaire jusqu’à un pas de cinq minutes, essaient un tour avec minuteur et fixent leur départ avec un plan « si… alors ».",
+          "ablauf": [
+            "Séance 8, étape 4 (12 min) : lire l’histoire, remplir le cercle au tableau, exercice 1 seul.",
+            "Étape 5 (10 min) : exercice 2 avec une vraie tâche scolaire ou une carte de départ ; vérifier la marche 1 à deux.",
+            "Étape 8 (20 min) : « pénible avant », dix minutes de travail avec minuteur, « pénible après » (exercice 3).",
+            "Étape 9 : démarrer en cinq minutes et exercice 4 ; la partie « si » devient le moment de la mission de la semaine."
+          ],
+          "hintergrund": "La procrastination répare l’humeur à court terme : la fuite enlève tout de suite l’émotion désagréable, le prix vient plus tard (Sirois & Pychyl, 2013). Elle dépend surtout du caractère désagréable de la tâche et de l’éloignement de la récompense (Steel, 2007). Un plan « si… alors » lie le départ à un moment précis (Gollwitzer, 1999).",
+          "quellen": [
+            "Sirois, F. & Pychyl, T. (2013). Procrastination and the priority of short-term mood regulation. Social and Personality Psychology Compass, 7(2), 115–127.",
+            "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review of quintessential self-regulatory failure. Psychological Bulletin, 133(1), 65–94.",
+            "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+          ],
+          "achtung": "Derrière une procrastination durable peuvent se cacher une surcharge, des difficultés d’apprentissage, des soucis à la maison ou un abattement : en parler après le cours en tête-à-tête, si besoin impliquer le régent et le SePAS.",
+          "material": "Minuteur, cartes de départ, papier brouillon"
+        }
+      }
+    },
+    {
+      "id": "ff6-start-karten",
+      "bereich": "skills",
+      "thema": "regulieren",
+      "stufen": [
+        "ES"
+      ],
+      "layout": "jugend",
+      "sozialform": [
+        "einzeln"
+      ],
+      "dauer": "20 Min.",
+      "eldib": [],
+      "schlagworte": [
+        "Aufschieben",
+        "Ersatzaufgaben",
+        "Selbsttest",
+        "Förderfach"
+      ],
+      "bild": "icon:checklist",
+      "kurs": [
+        "ff6-e08"
+      ],
+      "de": {
+        "titel": "Start-Karten",
+        "untertitel": "Kopiervorlage zum Ausschneiden – Aufgaben für alle, die in der Probe-Runde „nichts haben“",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "So werden die Karten gebraucht",
+            "punkte": [
+              "Wer keine eigene Schulsache findet, zieht eine Karte und arbeitet mit dem, was in der Schultasche ist.",
+              "Auf jeder Karte steht schon ein erster Schritt für fünf Minuten – er kommt in die unterste Stufe auf dem Blatt.",
+              "Nach der Stunde kommen die Karten zurück in die Schachtel; sie lassen sich in jeder Lernphase wieder nutzen."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 128,
+            "karten": [
+              {
+                "titel": "Vokabeln",
+                "text": "Such in einem Heft oder Buch zehn Wörter, die du noch nicht sicher kannst. Erster Schritt: die Übersetzung abdecken und dich bei den ersten fünf abfragen."
+              },
+              {
+                "titel": "Rechnen",
+                "text": "Such im Mathe-Heft drei Aufgaben, die schon gerechnet sind. Erster Schritt: die Lösung der ersten abdecken und sie noch einmal rechnen."
+              },
+              {
+                "titel": "Lesen",
+                "text": "Nimm ein Schulbuch und such die Seite, die als Nächstes drankommt. Erster Schritt: Überschrift und erste fünf Zeilen lesen, dann zwei Stichpunkte aus dem Kopf."
+              },
+              {
+                "titel": "Heft nachtragen",
+                "text": "Such in einem Heft, was fehlt: Datum, Überschrift, ein Blatt, eine Aufgabe. Erster Schritt: zwei Seiten durchblättern und eine Lücke markieren."
+              },
+              {
+                "titel": "Fragekarten",
+                "text": "Schreib für den nächsten Test Fragen auf Zettel: vorn die Frage, hinten die Antwort. Erster Schritt: eine Seite im Heft aufschlagen und eine Frage schreiben."
+              },
+              {
+                "titel": "Mein Überblick",
+                "text": "Schreib alle Tests und Abgaben der nächsten zwei Wochen mit Datum auf. Erster Schritt: den Stundenplan aufschlagen und den nächsten Test finden."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Ersatzaufgaben für die Probe-Runde mit Timer, die mit dem Material funktionieren, das alle dabeihaben – jede mit einem ersten Schritt für fünf Minuten.",
+          "ablauf": [
+            "Einmal auf festes Papier kopieren, ausschneiden und in eine Schachtel legen.",
+            "Einheit 8, Schritt 5: Wer keine eigene Schulsache findet, zieht eine Karte.",
+            "Die Karten lassen sich vor jeder Testphase wieder nutzen."
+          ],
+          "hintergrund": "Die meisten Karten arbeiten mit Abrufen statt Wiederlesen – der Lernmethode, die sich im Lern-Experiment der Einheit 7 bewährt hat (Dunlosky et al., 2013).",
+          "quellen": [
+            "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58."
+          ],
+          "material": "Festes Papier, Schere, Schachtel"
+        }
+      },
+      "fr": {
+        "titel": "Cartes de départ",
+        "untertitel": "Modèle à photocopier et à découper – des tâches pour ceux qui « n’ont rien » pendant le tour d’essai",
+        "bausteine": [
+          {
+            "art": "info",
+            "symbol": "merke",
+            "titel": "Comment utiliser les cartes",
+            "punkte": [
+              "Qui ne trouve pas de tâche scolaire à soi tire une carte et travaille avec ce qu’il a dans son cartable.",
+              "Chaque carte propose déjà un premier pas de cinq minutes – il va dans la marche du bas de la fiche.",
+              "Après le cours, les cartes retournent dans la boîte ; elles resservent à chaque période de révision."
+            ]
+          },
+          {
+            "art": "karten",
+            "spalten": 3,
+            "hoehe": 128,
+            "karten": [
+              {
+                "titel": "Vocabulaire",
+                "text": "Cherche dans un cahier ou un livre dix mots que tu ne connais pas encore bien. Premier pas : cacher la traduction et te tester sur les cinq premiers."
+              },
+              {
+                "titel": "Calcul",
+                "text": "Cherche dans ton cahier de maths trois exercices déjà faits. Premier pas : cacher la solution du premier et le refaire."
+              },
+              {
+                "titel": "Lecture",
+                "text": "Prends un manuel et cherche la prochaine page au programme. Premier pas : lire le titre et les cinq premières lignes, puis noter deux idées de mémoire."
+              },
+              {
+                "titel": "Cahier à compléter",
+                "text": "Cherche ce qui manque dans un cahier : date, titre, une feuille, un exercice. Premier pas : feuilleter deux pages et marquer un trou."
+              },
+              {
+                "titel": "Cartes questions",
+                "text": "Pour le prochain devoir, écris des questions sur des papiers : la question devant, la réponse derrière. Premier pas : ouvrir le cahier et écrire une question."
+              },
+              {
+                "titel": "Ma vue d’ensemble",
+                "text": "Note tous les devoirs et travaux des deux prochaines semaines, avec la date. Premier pas : ouvrir ton emploi du temps et trouver le prochain devoir."
+              }
+            ]
+          }
+        ],
+        "lehrer": {
+          "ziel": "Des tâches de remplacement pour le tour d’essai avec minuteur, qui marchent avec le matériel que tout le monde a sur soi – chacune avec un premier pas de cinq minutes.",
+          "ablauf": [
+            "Photocopier une fois sur papier épais, découper et ranger dans une boîte.",
+            "Séance 8, étape 5 : qui ne trouve pas de tâche scolaire à soi tire une carte.",
+            "Les cartes resservent avant chaque période de devoirs."
+          ],
+          "hintergrund": "La plupart des cartes misent sur le rappel plutôt que sur la relecture – la méthode qui a fait ses preuves dans l’expérience de la séance 7 (Dunlosky et al., 2013).",
+          "quellen": [
+            "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. & Willingham, D. T. (2013). Improving students’ learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4–58."
+          ],
+          "material": "Papier épais, ciseaux, boîte"
+        }
+      }
+    }
+  ]
+}

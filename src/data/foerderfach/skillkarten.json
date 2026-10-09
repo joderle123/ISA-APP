@@ -369,6 +369,191 @@
       }
     }
   ],
-  "6e": [],
+  "6e": [
+    {
+      "id": "ff6-k-joker",
+      "bild": "icon:star",
+      "einheit": "ff6-e02",
+      "de": {
+        "name": "Mein Joker-Skill",
+        "wann": "Wenn deine Zahl über 50 geht – im Bus, vor dem Test, im Streit",
+        "schritte": [
+          "Schätz deine Zahl von 0 bis 100.",
+          "Zieh drei Minuten deinen Joker, ohne Reden. Mein Joker: ______________",
+          "Schätz neu. Gesunken? Behalte ihn. Gleich? Probier nächstes Mal einen anderen."
+        ]
+      },
+      "fr": {
+        "name": "Mon skill joker",
+        "wann": "Quand ton chiffre passe 50 – dans le bus, avant un devoir, en dispute",
+        "schritte": [
+          "Estime ton chiffre de 0 à 100.",
+          "Sors ton joker trois minutes, sans parler. Mon joker : ______________",
+          "Estime à nouveau. Baissé ? Garde-le. Pareil ? Essaie un autre la prochaine fois."
+        ]
+      }
+    },
+    {
+      "id": "ff6-k-danke",
+      "bild": "icon:gift",
+      "einheit": "ff6-e03",
+      "de": {
+        "name": "Danke ohne Aber",
+        "wann": "Wenn dir jemand etwas Nettes sagt und du abwinken willst",
+        "schritte": [
+          "Hör bis zum Ende zu – nicht abwinken, nicht unterbrechen.",
+          "Lass den Satz ankommen: kurz hinschauen, einmal ausatmen.",
+          "Sag „Danke“ – ohne Aber, ohne Kleinreden, ohne schnelles Gegenlob."
+        ]
+      },
+      "fr": {
+        "name": "Merci sans mais",
+        "wann": "Quand on te dit quelque chose de gentil et que tu veux esquiver",
+        "schritte": [
+          "Écoute jusqu’au bout – sans balayer d’un geste, sans couper.",
+          "Laisse la phrase arriver : regarde la personne, expire une fois.",
+          "Dis « merci » – sans mais, sans minimiser, sans compliment en retour."
+        ]
+      }
+    },
+    {
+      "id": "ff6-k-koerper-kann",
+      "bild": "icon:footsteps",
+      "einheit": "ff6-e04",
+      "de": {
+        "name": "Was mein Körper kann",
+        "wann": "Wenn du dich vergleichst oder dich in deinem Körper unwohl fühlst",
+        "schritte": [
+          "Drück die Füße in den Boden: Wohin haben sie dich heute getragen?",
+          "Öffne die Hände: Was haben sie heute geschrieben, getragen, getippt?",
+          "Bemerk drei Atemzüge: Dein Atem arbeitet ganz von selbst."
+        ]
+      },
+      "fr": {
+        "name": "Ce que mon corps sait faire",
+        "wann": "Quand tu te compares ou que tu te sens mal dans ton corps",
+        "schritte": [
+          "Appuie tes pieds dans le sol : où t’ont-ils porté aujourd’hui ?",
+          "Ouvre les mains : qu’ont-elles écrit, porté, tapé aujourd’hui ?",
+          "Remarque trois respirations : ton souffle travaille tout seul."
+        ]
+      }
+    },
+    {
+      "id": "ff6-k-coach-klar",
+      "bild": "icon:ball-basketball",
+      "einheit": "ff6-e05",
+      "de": {
+        "name": "Coach Klar",
+        "wann": "Wenn etwas schiefgeht und du gerade mit dir schimpfst",
+        "schritte": [
+          "Merk, wann der Brüller in dir loslegt – und sag innerlich: Moment.",
+          "Sprich dich mit deinem Namen an, wie ein Coach, der zu dir hält.",
+          "Sag klar und freundlich, was jetzt hilft: „Passiert. Jetzt: …“"
+        ]
+      },
+      "fr": {
+        "name": "Coach Clair",
+        "wann": "Quand quelque chose rate et que tu te fais des reproches",
+        "schritte": [
+          "Remarque quand le crieur en toi se lance – et dis-toi : « Attends. »",
+          "Parle-toi avec ton prénom, comme un coach qui est de ton côté.",
+          "Dis clairement et gentiment ce qui aide : « Ça arrive. Maintenant : … »"
+        ]
+      }
+    },
+    {
+      "id": "ff6-k-ein-ball",
+      "bild": "icon:ball-tennis",
+      "einheit": "ff6-e06",
+      "de": {
+        "name": "Ein Ball nach dem anderen",
+        "wann": "Wenn alles gleichzeitig kommt und du nicht weißt, wo anfangen",
+        "schritte": [
+          "Schreib alle Bälle auf, die gerade in der Luft sind – Stichworte reichen.",
+          "Kreis einen ein: Was ist als Nächstes dran? Sonst nimm den kleinsten.",
+          "Leg den Zettel weg und gib diesem einen Ball zehn Minuten – nur ihm."
+        ]
+      },
+      "fr": {
+        "name": "Une balle à la fois",
+        "wann": "Quand tout arrive en même temps et que tu ne sais pas par où commencer",
+        "schritte": [
+          "Note toutes les balles qui sont en l’air – des mots-clés suffisent.",
+          "Entoures-en une : qu’est-ce qui vient maintenant ? Sinon, la plus petite.",
+          "Range le papier et donne dix minutes à cette balle – rien qu’à elle."
+        ]
+      }
+    },
+    {
+      "id": "ff6-k-atemzuege-zaehlen",
+      "bild": "icon:tallymarks",
+      "einheit": "ff6-e07",
+      "de": {
+        "name": "Atemzüge zählen",
+        "wann": "Wenn die Gedanken abschweifen – vor dem Lernen oder im Test",
+        "schritte": [
+          "Sitz aufrecht, Blick auf einen Punkt oder Augen zu.",
+          "Zähl jeden Ausatemzug still: eins bis zehn, dann wieder bei eins.",
+          "Abgeschweift? Merk es freundlich und fang wieder bei eins an."
+        ]
+      },
+      "fr": {
+        "name": "Compter ses respirations",
+        "wann": "Quand tes pensées s’égarent – avant d’apprendre ou pendant un devoir",
+        "schritte": [
+          "Assieds-toi droit, regarde un point ou ferme les yeux.",
+          "Compte en silence chaque expiration : de un à dix, puis reprends à un.",
+          "Tu t’es égaré·e ? Remarque-le gentiment et reprends à un."
+        ]
+      }
+    },
+    {
+      "id": "ff6-k-fuenf-minuten-start",
+      "bild": "icon:player-play",
+      "einheit": "ff6-e08",
+      "de": {
+        "name": "Fünf-Minuten-Start",
+        "wann": "Wenn du etwas vor dir herschiebst und einfach nicht anfängst",
+        "schritte": [
+          "Merk die Unlust, atme lang aus: „Keine Lust ist ein Gefühl, kein Befehl.“",
+          "Wähl den kleinsten Schritt. Handy weg, Blick auf die Uhr: fünf Minuten.",
+          "Fang an. Nach fünf Minuten entscheidest du: aufhören oder weitermachen."
+        ]
+      },
+      "fr": {
+        "name": "Démarrer en cinq minutes",
+        "wann": "Quand tu remets à plus tard et que tu n’arrives pas à t’y mettre",
+        "schritte": [
+          "Repère que tu n’as pas envie, expire : « C’est une émotion, pas un ordre. »",
+          "Choisis le plus petit pas. Portable rangé, un œil sur l’heure : cinq minutes.",
+          "Lance-toi. Après cinq minutes, tu décides : arrêter ou continuer."
+        ]
+      }
+    },
+    {
+      "id": "ff6-k-herzklopfen-umdeuten",
+      "bild": "icon:bolt",
+      "einheit": "ff6-e09",
+      "de": {
+        "name": "Herzklopfen umdeuten",
+        "wann": "Vor einem Test, einem Vortrag oder Spiel, wenn das Herz klopft",
+        "schritte": [
+          "Merk die Zeichen: Herz klopft, Hände feucht, Bauch flau. Das ist normal.",
+          "Sag dir still deinen Energie-Satz: „Mein Körper macht sich bereit.“",
+          "Füße fest in den Boden, einmal lang ausatmen – dann das Leichteste zuerst."
+        ]
+      },
+      "fr": {
+        "name": "Le trac, c’est de l’énergie",
+        "wann": "Avant un devoir, un exposé ou un match, quand ton cœur bat fort",
+        "schritte": [
+          "Repère les signes : cœur qui bat, mains moites, ventre noué. C’est normal.",
+          "Dis-toi en silence ta phrase énergie : « Mon corps se prépare. »",
+          "Pieds bien au sol, une longue expiration – puis commence par le plus facile."
+        ]
+      }
+    }
+  ],
   "5e": []
 }
