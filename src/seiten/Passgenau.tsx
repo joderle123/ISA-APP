@@ -6,7 +6,7 @@
 // steckt in src/passgenau/ui/hub.ts.
 // ---------------------------------------------------------------------------
 import '../passgenau/ui/passgenau.css'
-import { useEffect } from 'react'
+import { Component, useEffect, type ReactNode } from 'react'
 import type { PassgenauStart } from '../passgenau/ui/hub'
 import { PgAnbieter, usePg, type Ansicht } from '../passgenau/ui/zustand'
 import { Ic } from '../passgenau/ui/zeichen'
@@ -37,13 +37,13 @@ function Kopfzeile() {
     <div className="pg-leiste">
       <nav className="pg-unterreiter" aria-label="Passgenau">
         {reiter.map(([a, t, icon]) => (
-          <button key={a} type="button" aria-current={aktiv(a) ? 'page' : undefined} disabled={!p && a !== 'praxis'} onClick={() => pg.setAnsicht(a)}>
+          <button key={a} type="button" aria-label={t} aria-current={aktiv(a) ? 'page' : undefined} onClick={() => pg.setAnsicht(a)}>
             <Ic n={icon} />
             <span>{t}</span>
           </button>
         ))}
         {pg.plan && !['ergebnis', 'vorschau', 'baukasten'].includes(pg.ansicht) && (
-          <button type="button" onClick={() => pg.setAnsicht('ergebnis')}>
+          <button type="button" aria-label="Zum Plan" onClick={() => pg.setAnsicht('ergebnis')}>
             <Ic n="liste" />
             <span>Zum Plan</span>
           </button>
@@ -125,13 +125,50 @@ function Inhalt() {
   )
 }
 
+/** Ein Fehler in einer Ansicht soll nicht die ganze Toolbox leeren: Hinweis + zurück zum Plan (der Zustand bleibt). */
+class Auffangen extends Component<{ children: ReactNode; schluessel: string; zurueck: () => void }, { fehler: string | null; bei: string }> {
+  state = { fehler: null as string | null, bei: '' }
+  static getDerivedStateFromError(e: unknown) {
+    return { fehler: e instanceof Error ? e.message : String(e) }
+  }
+  componentDidCatch(e: unknown) {
+    console.error('Passgenau:', e)
+  }
+  static getDerivedStateFromProps(p: { schluessel: string }, s: { fehler: string | null; bei: string }) {
+    return p.schluessel !== s.bei ? { fehler: null, bei: p.schluessel } : null
+  }
+  render() {
+    if (!this.state.fehler) return this.props.children
+    return (
+      <div className="pg-mitte" role="alert">
+        <h1>Das hat nicht geklappt</h1>
+        <p className="pg-lead">Diese Ansicht konnte nicht angezeigt werden. Dein Plan ist nicht verloren.</p>
+        <button type="button" className="pg-btn primaer" onClick={() => { this.setState({ fehler: null }); this.props.zurueck() }}>
+          Zurück
+        </button>
+      </div>
+    )
+  }
+}
+
+function MitAuffangen({ children }: { children: ReactNode }) {
+  const pg = usePg()
+  return (
+    <Auffangen schluessel={pg.ansicht + (pg.dlg?.art ?? '')} zurueck={() => { pg.setDlg(null); pg.setAnsicht(pg.plan ? 'ergebnis' : 'start') }}>
+      {children}
+    </Auffangen>
+  )
+}
+
 export function Passgenau({ aktiv, start }: { aktiv: boolean; start: PassgenauStart | null }) {
   return (
     <div className={aktiv ? 'pg' : 'hidden'}>
       <PgAnbieter startHash={start} aktiv={aktiv}>
         <Kopfzeile />
         <main className="pg-main">
-          <Inhalt />
+          <MitAuffangen>
+            <Inhalt />
+          </MitAuffangen>
         </main>
         <Hinweisleiste />
       </PgAnbieter>

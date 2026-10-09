@@ -13,6 +13,7 @@ import type {
 } from '../typen'
 import type { Baustein, Blatt, Bereich, Symbol as BlattSymbol } from '../../blatt/typen'
 import { loadPdfModule } from '../../lib/loadPdf'
+import { THEMA_NAME } from './texte'
 
 export interface Katalog { eintraege: Map<string, KatalogEintrag>; nachRolle: Map<Rolle, KatalogEintrag[]>; stand: string }
 export interface Vorlieben { kind: VorliebenKind | null; ich: VorliebenFachkraft; team: VorliebenTeam | null }
@@ -748,7 +749,7 @@ function schwerpunktText(a: Auftrag): string {
   const t = a.thema?.[0]
   if (!t) return ''
   const k = t.replace(/^kompetenz:/, '')
-  return ': ' + (({ wut: 'Wut & Impulse', angst: 'Angst & Sorgen', freundschaft: 'Freundschaft & Streit', trauer: 'Trauer & Trost' } as Record<string, string>)[k] ?? k)
+  return ': ' + (THEMA_NAME[k] ?? k)
 }
 function formateAus(a: Auftrag): string[] {
   const r: string[] = []
@@ -1110,7 +1111,7 @@ function schluesselName(key: string): string {
   if (a === 'baustein') { const e = kat().eintraege.get(b); return e ? '„' + textVon(e, 'de').titel + '“' : b }
   if (a === 'stil') return b === 'aelter' ? 'älter gestaltete Blätter' : 'jünger gestaltete Blätter'
   if (a === 'art') return 'Bausteinart ' + (ART_NAME[b] ?? b)
-  if (a === 'thema') return 'Thema ' + b
+  if (a === 'thema') return 'Thema ' + (THEMA_NAME[b] ?? b)
   if (a === 'schreiben') return ['ohne Schreiben', 'Wörter schreiben', 'kurze Sätze schreiben', 'Sätze schreiben'][+b] ?? key
   return key
 }

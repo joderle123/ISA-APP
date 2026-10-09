@@ -170,14 +170,18 @@ async function main() {
   await warteAufServer()
   const browser = await chromium.launch()
   const fotos = []
+  let ctx = null
   try {
     for (const breite of [1366, 390]) {
       console.log(`\n== Breite ${breite}`)
-      const ctx = await browser.newContext({ viewport: { width: breite, height: breite > 500 ? 860 : 844 }, deviceScaleFactor: 1, acceptDownloads: true, hasTouch: breite < 500, isMobile: breite < 500 })
+      ctx = await browser.newContext({ viewport: { width: breite, height: breite > 500 ? 860 : 844 }, deviceScaleFactor: 1, acceptDownloads: true, hasTouch: breite < 500, isMobile: breite < 500 })
       await ctx.route('**/__hub.html*', (r) => r.fulfill({ contentType: 'text/html; charset=utf-8', body: hubSeite() }))
       const hub = await ctx.newPage()
+      ctx.on('page', (pg) => pg.on('pageerror', (e) => console.log('  Seitenfehler: ' + String(e.message || e).slice(0, 300))))
       const s = breite > 500 ? '1366' : '390'
       const foto = async (seite, name, opt = {}) => {
+        // ganze Seite: erst nach oben (sonst steht die klebende Kopfzeile der Toolbox mitten im Bild)
+        if (opt.voll !== false) await seite.evaluate(() => window.scrollTo(0, 0))
         await seite.waitForTimeout(opt.warten ?? 350)
         const datei = path.join(BILDER, `${name}-${s}.png`)
         await seite.screenshot({ path: datei, fullPage: opt.voll !== false })
@@ -263,7 +267,9 @@ async function main() {
       await tb.locator('.pg-weg', { hasText: 'Gründlich planen' }).click()
       await tb.getByRole('heading', { name: 'Eine Folge für Mia' }).waitFor()
       for (const d of ['10 Min.', '15 Min.']) pruefe(await tb.locator('.pg-chip', { hasText: d }).first().isVisible(), `Dauer-Chip ${d}`)
-      pruefe(await tb.locator('.pg-chip.an', { hasText: 'mit Blatt' }).isVisible(), 'Blatt mit vorgewählt (9 J.)')
+      // Mia schreibt ungern (Zähler format:schreiben) → „ohne Blatt“ vorgewählt, mit Begründung; hier bewusst „mit“
+      pruefe(await tb.locator('.pg-chip.an', { hasText: 'ohne Blatt' }).isVisible() && (await tb.getByText(/Schreiben kam bei Mia/).isVisible()), 'ohne Blatt vorgewählt, mit Grund')
+      await tb.locator('.pg-chip', { hasText: 'mit Blatt' }).click()
       await ueberlauf(tb, 'Gründlich')
       await foto(tb, '03-gruendlich')
       const t1 = Date.now()
@@ -275,6 +281,11 @@ async function main() {
       pruefe(!(await tb.locator('.pg-main').innerText()).match(/k:j\d|j1-e\d/), 'keine Kurs-Ids in der Oberfläche')
       await ueberlauf(tb, 'Ergebnis')
       await foto(tb, '06-ergebnis')
+      // Sitzung mit „Vorher klären“: Beachten, Vorbereitung, Druckmaterial je Schritt
+      await tb.locator('.pg-fs', { hasText: 'Vorher klären' }).first().click()
+      pruefe(await tb.getByText(/Vorbereitung:/).first().isVisible(), 'Hinweis „Vorbereitung“')
+      pruefe(await tb.getByText(/druckt mit:/).first().isVisible(), 'Druckmaterial je Schritt')
+      await tb.locator('.pg-fs').first().click()
 
       // 5. Ersetzen im Ablauf
       const kern = tb.locator('.pg-schritt', { has: tb.locator('.r-kern') }).first()
@@ -358,7 +369,7 @@ async function main() {
       const mitText = (await comic.count()) ? comic : tb.locator('.pg-er').nth(1)
       await mitText.locator('button[aria-label^="Text ändern"]').last().click()
       const feld = mitText.locator('.felder input, .felder textarea').last()
-      await feld.fill('Stopp. Ich geh zu Frau Weber.')
+      await feld.fill('Zu Frau Weber.')
       pruefe((await feld.getAttribute('maxlength')) !== null, 'Textfeld mit Längengrenze')
       await mitText.locator('.felder input, .felder textarea').first().click()
       await mitText.locator('button.pg-ph', { hasText: '{INTERESSE}' }).click()
@@ -415,7 +426,7 @@ async function main() {
       if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
       const er = tb.locator('.pg-er').nth(1)
       await er.locator('button[aria-label^="Text ändern"]').last().click()
-      await er.locator('.felder input, .felder textarea').last().fill('Stopp. Ich geh zu Frau Weber.')
+      await er.locator('.felder input, .felder textarea').last().fill('Zu Frau Weber.')
       await tb.getByRole('button', { name: 'Fertig' }).click()
       await tb.getByRole('button', { name: 'Stunde gehalten' }).click()
       await dlg(tb).getByRole('button', { name: 'Hat geklappt' }).click()
@@ -433,11 +444,11 @@ async function main() {
       pruefe((await ops()).includes('praxis-pruefen'), 'praxis-pruefen gefragt')
       const diff = dlg(tb).locator('.pg-diff', { hasText: 'Weber' }).first()
       await diff.getByRole('button', { name: 'meinen Text teilen' }).click()
-      pruefe(await dlg(tb).getByRole('button', { name: 'Teilen' }).isDisabled(), 'ohne Häkchen kein Teilen')
+      pruefe(await dlg(tb).getByRole('button', { name: 'Teilen', exact: true }).isDisabled(), 'ohne Häkchen kein Teilen')
       await diff.getByRole('checkbox', { name: /Kein Kind erkennbar/ }).check()
       await foto(tb, '15-teilen', { voll: false })
       await diff.getByRole('button', { name: 'Originaltext nehmen' }).click()
-      await dlg(tb).getByRole('button', { name: 'Teilen' }).click()
+      await dlg(tb).getByRole('button', { name: 'Teilen', exact: true }).click()
       await tb.waitForTimeout(400)
       const geteilt = await hub.evaluate(() => window.__ops.filter((o) => o.op === 'praxis-teilen').pop())
       const json = JSON.stringify(geteilt ? geteilt.arg : {})
@@ -515,8 +526,10 @@ async function main() {
       await tb.getByRole('button', { name: 'Folge bauen' }).click()
       await tb.locator('.pg-schritt').first().waitFor()
       pruefe(await tb.getByText(/heikles Thema offen/).isVisible(), 'Banner bei heiklem Thema')
-      pruefe(await tb.getByText(/Beachten:/).first().isVisible(), 'Hinweis „Beachten“ aus der Quelle')
       await foto(tb, '18-ilyas-ergebnis')
+      await tb.locator('.pg-fs', { hasText: 'Vorher klären' }).first().click()
+      pruefe(await tb.getByText(/Beachten:/).first().isVisible(), 'Hinweis „Beachten“ aus der Quelle (Sitzung mit „Vorher klären“)')
+      pruefe(await tb.getByText(/Eltern informiert/).first().isVisible(), 'Hinweis Elternbrief (Hausregel)')
       await tb.close()
       tb = await oeffne('pg-noe2b8x1', 'schnell')
       await tb.getByRole('heading', { name: 'Noé heute' }).waitFor({ timeout: 90000 })
@@ -546,6 +559,13 @@ async function main() {
       }
       await ctx.close()
     }
+  } catch (e) {
+    // Bei Abbruch: alle offenen Seiten fotografieren (fehler-*.png), dann weiterwerfen
+    if (ctx) {
+      let i = 0
+      for (const seite of ctx.pages()) await seite.screenshot({ path: path.join(BILDER, `fehler-${i++}.png`), fullPage: true }).catch(() => {})
+    }
+    throw e
   } finally {
     await browser.close()
     stopp()

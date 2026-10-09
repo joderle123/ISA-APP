@@ -428,7 +428,7 @@ export function Teilen() {
             Platzhalter bleiben: <span className="pg-ph">{'{NAME}'}</span> · <span className="pg-ph">{'{INTERESSE}'}</span> · <span className="pg-ph">{'{WOCHENZIEL}'}</span>
           </li>
           <li className="pg-leise">
-            weggelassen: <span className="pg-weg">Begründungen</span>, <span className="pg-weg">Rückmeldungen und Notizen</span>, <span className="pg-weg">Daten und Tagesform</span>, <span className="pg-weg">Vorname und Profil</span>
+            weggelassen: <span className="pg-gestrichen">Begründungen</span>, <span className="pg-gestrichen">Rückmeldungen und Notizen</span>, <span className="pg-gestrichen">Daten und Tagesform</span>, <span className="pg-gestrichen">Vorname und Profil</span>
           </li>
         </ul>
       </div>

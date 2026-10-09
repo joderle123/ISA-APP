@@ -18,6 +18,7 @@ function quelleIcon(e?: KatalogEintrag): string {
 }
 
 function Hinweise({ e }: { e?: KatalogEintrag }) {
+  const pg = usePg()
   const [offen, setOffen] = useState(false)
   if (!e) return null
   const x = e as KatalogEintrag & { achtung?: string; vorbereitung?: string; elternbrief?: string }
@@ -52,7 +53,14 @@ function Hinweise({ e }: { e?: KatalogEintrag }) {
       )}
       {(material.length > 0 || druck.length > 0) && (
         <div className="pg-zeile-klein">
-          <b>Material:</b> {[...material, ...druck.map((r) => 'Druckt mit: ' + (r.includes('stopp-ampel:3') ? 'Stopp-Karten (liegen dem Blatt bei)' : 'Zusatzseite'))].join(' · ')}
+          <b>Material:</b>{' '}
+          {[
+            ...material,
+            ...druck.map((r) => {
+              const d = pg.katalog ? K.eintrag(pg.katalog, r) : undefined
+              return 'druckt mit: ' + (d ? K.textVon(d, 'de').titel : 'Zusatzseite')
+            }),
+          ].join(' · ')}
         </div>
       )}
     </div>
@@ -156,20 +164,20 @@ function BlattKarte({ s, nr }: { s: PlanSchritt; nr: number }) {
   return (
     <article className="pg-schritt blatt">
       <div className="zeit">
-        {s.min}
-        <small>Min.</small>
+        {s.min > 0 ? s.min : '–'}
+        <small>{s.min > 0 ? 'Min.' : 'optional'}</small>
       </div>
       <button type="button" className="pg-schritt-haupt" onClick={() => pg.setAnsicht('baukasten')} aria-label={`Blatt „${bl.titel}“ im Baukasten bearbeiten`}>
         <span className="zeile1">
           <RolleBadge rolle="blatt" />
           <span className="pg-quelle">
             <Ic n="feder" />
-            zusammengesetzt aus {quellen.length || 1} {quellen.length === 1 ? 'Blatt' : 'Blättern'}
+            {quellen.length > 1 ? `zusammengesetzt aus ${quellen.length} Blättern` : quellen.length === 1 ? 'aus einem Blatt der Toolbox' : 'Mitmach-Seite der Toolbox'}
           </span>
         </span>
         <h3>Blatt „{bl.titel}“</h3>
         <span className="text">
-          {bl.bausteine.length} Bausteine: {arten.join(' · ')}
+          {bl.bausteine.length} {bl.bausteine.length === 1 ? 'Baustein' : 'Bausteine'}: {arten.join(' · ')}
         </span>
       </button>
       <div className="aktionen">

@@ -88,6 +88,7 @@ export const TAGESFORM: [Tagesform, string, string][] = [
   ['muede', 'müde', 'wolke'],
   ['traurig', 'traurig', 'herz'],
   ['wuetend', 'wütend', 'blitz'],
+  ['aufgewuehlt', 'aufgewühlt', 'welle'],
   ['aengstlich', 'ängstlich', 'augen'],
   ['rueckzug', 'zieht sich zurück', 'person'],
   ['will-nicht', 'will nicht', 'x'],

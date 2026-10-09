@@ -25,7 +25,7 @@ export function schalterLesen(ausHallo?: Partial<Schalter> | null): Schalter {
     }
   }
   const s = kandidaten.find((x) => x && typeof x === 'object') as Partial<Schalter> | undefined
-  return { ...SCHALTER_VORGABE, ...(s ?? {}) }
+  return { ...SCHALTER_VORGABE, ...s }
 }
 
 /** Kern-Erweiterung des Blatts (im Kern-Branch in src/blatt/typen.ts): „Mein Ziel“ unter dem Titel, Herkunft im Fuß */

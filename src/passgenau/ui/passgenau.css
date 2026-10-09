@@ -608,7 +608,7 @@ button.pg-ph {
   cursor: pointer;
   min-height: max(28px, calc(var(--pg-tipp) - 8px));
 }
-.pg-weg {
+.pg-gestrichen {
   text-decoration: line-through;
   color: var(--muted);
 }
@@ -3246,6 +3246,19 @@ dialog .pg-hinweise {
   }
 }
 @media (max-width: 760px) {
+  /* Filter der Praxis: eine Zeile zum Wischen statt acht Zeilen Chips */
+  .pg-filter {
+    padding: 8px 0;
+  }
+  .pg-filter .pg-chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 2px 12px 6px;
+    scrollbar-width: thin;
+  }
+  .pg-filter .pg-chip {
+    flex: none;
+  }
   .pg-main {
     padding: 14px 16px 96px;
   }
@@ -3262,6 +3275,9 @@ dialog .pg-hinweise {
   .pg-hubchip span,
   .pg-speicher {
     display: none;
+  }
+  .pg-speicher.fehler {
+    display: inline-flex;
   }
   .pg h1 {
     font-size: 22px;
@@ -3356,6 +3372,15 @@ dialog .pg-hinweise {
   }
   .pg-vbalken {
     grid-template-columns: minmax(0, 1fr) auto;
+    gap: 4px 12px;
+  }
+  .pg-vbalken .name {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .pg-vbalken .pg-ibtn {
+    grid-column: 2;
+    grid-row: 1;
   }
   .pg-vbalken .vbahn {
     grid-column: 1 / -1;
@@ -3363,6 +3388,7 @@ dialog .pg-hinweise {
   }
   .pg-vbalken small {
     grid-column: 1 / -1;
+    grid-row: 3;
     text-align: left;
   }
   .pg-gross3,

@@ -535,6 +535,8 @@ export interface A4Props {
   hinweis?: string
   /** „Mein Ziel“-Zeile (nur wenn die Fachkraft es einschaltet, E-M13) */
   ziel?: string | null
+  /** gemessene Füllung je Seite (0–1), nach jeder Messung */
+  onFuellung?: (fuell: number[]) => void
 }
 
 function bereichDef(id: string) {
@@ -588,6 +590,8 @@ function Kopf({ titel, untertitel, bereich, p, kopfzeile, vorname, erste, ziel }
 
 export function A4Blatt(props: A4Props) {
   const { zerlegt, layout, kopfzeile, vorname, quellen, breite, nurErste, onTeil, markiert, teilName, hinweis, ziel } = props
+  const meldeFuellung = useRef(props.onFuellung)
+  meldeFuellung.current = props.onFuellung
   const blatt = zerlegt.blatt
   const bereich = bereichDef(blatt.bereich)
   const p = useMemo(() => palette(bereich.farben), [bereich])
@@ -637,7 +641,9 @@ export function A4Blatt(props: A4Props) {
           used[k] += add
         }
       })
-      setSeiten({ key: schluessel, seiten: s, fuell: used.map((u, i) => u / (i === 0 ? cap1 : capN)) })
+      const fuell = used.map((u, i) => Math.round((u / (i === 0 ? cap1 : capN)) * 100) / 100)
+      setSeiten({ key: schluessel, seiten: s, fuell })
+      meldeFuellung.current?.(fuell)
     }
     messen()
     document.fonts?.ready.then(() => !aus && messen()).catch(() => {})
@@ -647,8 +653,10 @@ export function A4Blatt(props: A4Props) {
   }, [schluessel])
 
   const z = breite / (210 * MM)
-  const n = seiten.seiten.length
-  const zeigen = nurErste ? seiten.seiten.slice(0, 1) : seiten.seiten
+  // bis die neue Messung da ist (gleich nach dem Rendern), gilt die alte Aufteilung nur, wenn sie noch passt
+  const aufteilung = seiten.key === schluessel ? seiten.seiten : seiten.seiten.flat().length === gruppen.length ? seiten.seiten : [gruppen.map((_, i) => i)]
+  const n = aufteilung.length
+  const zeigen = nurErste ? aufteilung.slice(0, 1) : aufteilung
 
   const gruppeHtml = (gi: number, klickbar: boolean) => {
     const g = gruppen[gi]

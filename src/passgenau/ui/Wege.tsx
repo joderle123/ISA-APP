@@ -1,5 +1,5 @@
 // Passgenau – die drei Wege: Gründlich (2.3), Schnell für heute (2.4), Heute geht nicht viel (2.5). Kein Freitext.
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import type { Auftrag, FormatWunsch, Profil, Schwerpunkt, Tagesform } from '../typen'
 import { usePg, useProfil } from './zustand'
 import { Ic } from './zeichen'
@@ -20,10 +20,13 @@ export function dauerVorgabe(p: Profil, funktion?: string, letzte?: number): Dau
 
 /** Blatt mit/ohne (P2): ≤ 5 J. ohne; Kind schreibt ungern (Zähler deutlich negativ) → ohne; sonst mit */
 function blattVorgabe(p: Profil): 'mit' | 'ohne' {
-  if (p.alterJahre <= 5) return 'ohne'
+  return blattGrund(p) ? 'ohne' : 'mit'
+}
+function blattGrund(p: Profil): string | null {
+  if (p.alterJahre <= 5) return 'bis 5 Jahre: ohne Blatt vorgewählt'
   const z = p.vorlieben?.z['format:schreiben']
-  if (z && z.b > z.a * 2 && z.a + z.b >= 3) return 'ohne'
-  return 'mit'
+  if (z && z.b > z.a * 2 && z.a + z.b >= 3) return `ohne vorgewählt: Schreiben kam bei ${p.vorname ?? 'dem Kind'} bisher nicht gut an`
+  return null
 }
 
 /** Schwerpunkt aus den Zielen (2.3 Schritt 3) */
@@ -192,7 +195,7 @@ export function Gruendlich() {
               <Chip an={blatt === 'ohne'} onClick={() => setBlatt('ohne')}>
                 ohne Blatt
               </Chip>
-              {p.alterJahre <= 5 && <span className="pg-leise pg-klein pg-mitte-v">bis 5 Jahre: ohne Blatt vorgewählt</span>}
+              {blattGrund(p) && <span className="pg-leise pg-klein pg-mitte-v">{blattGrund(p)}</span>}
             </div>
             <div className="pg-chips" role="group" aria-label="Sozialform">
               <Chip an onClick={() => {}}>
@@ -388,6 +391,7 @@ export function Schnell() {
           <Chip an={blatt === 'ohne'} onClick={() => setBlatt('ohne')}>
             ohne Blatt
           </Chip>
+          {blattGrund(p) && <span className="pg-leise pg-klein pg-mitte-v">{blattGrund(p)}</span>}
         </div>
         {f && (
           <>
@@ -425,7 +429,7 @@ export function Leicht() {
   const v = pg.vorname
   const [tf, setTf] = useState<Tagesform[]>([])
   const [dauer, setDauer] = useState<Dauer>(() => (p.alterJahre <= 5 ? 10 : 20))
-  const alle = useMemo(() => [...TAGESFORM.slice(0, 4), ['aufgewuehlt', 'aufgewühlt', 'welle'] as [Tagesform, string, string], ...TAGESFORM.slice(4)], [])
+  const alle = TAGESFORM
   const waehle = (t: Tagesform) =>
     setTf((l) => (l.includes(t) ? l.filter((x) => x !== t) : l.length < 2 ? [...l, t] : [l[1], t]))
   const bauen = () =>

@@ -6,7 +6,7 @@ import * as K from './kern'
 import { usePg, useProfil } from './zustand'
 import { Ic } from './zeichen'
 import { Chip, Pill, RolleBadge } from './Teile'
-import { BlattAnsicht, Seitenkontrolle } from './Vorschau'
+import { BlattAnsicht, Seitenkontrolle, useSeitenFuellung } from './Vorschau'
 import { PLATZHALTER, inhaltVon, pfadLabel, wertAnPfad, zerlegen } from './blattTeile'
 import { istBlattSchritt, minutenVon, warumListe } from './anzeige'
 import { PHASE_NAME, ROLLE_NAME, zielKurz } from './texte'
@@ -49,7 +49,8 @@ export function Baukasten() {
   const kleineStufe = p.layout === 'bild' || p.layout === 'gross'
 
   // freier Platz auf dem Blatt (für „passt aufs Blatt“)
-  const fuell = s.blatt ? K.seitenFuellung(k, p, plan, nr) : [0]
+  const fuellung = useSeitenFuellung(plan, nr)
+  const fuell = s.blatt ? fuellung : [0]
   const maxSeiten = kleineStufe ? 1 : 2
   const frei = Math.max(0, Array.from({ length: maxSeiten }, (_, i) => 1 - Math.min(1, fuell[i] ?? 0)).reduce((a, b) => a + b, 0) * 200)
 
@@ -319,7 +320,9 @@ export function Baukasten() {
                     const ist = zerlegt?.teile[i] ?? []
                     const orig = e && t.ueber ? original(e) : ist
                     const istOffen = offen === i
-                    const titel = (t.ueber && Object.values(t.ueber)[0]) || tx?.titel || t.t || t.ref
+                    // Zeilentitel: geänderte Aufgabe (erstes Textfeld), sonst der Titel aus dem Katalog
+                    const erstes = e?.typ === 'baustein' ? e.textfelder[0]?.pfad : undefined
+                    const titel = (erstes && t.ueber?.[erstes]) || tx?.titel || t.t || t.ref
                     return (
                       <div key={i + t.ref}>
                         <EinfuegenHier i={i} />

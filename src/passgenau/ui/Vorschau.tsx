@@ -1,7 +1,7 @@
 // Passgenau – Vorschau aus dem echten Renderer (T-M8): das PDF des Kerns (pdfSitzung → react-pdf) im Rahmen, daneben die
 // Teile zum Antippen. Kann der Browser kein PDF anzeigen (Android, eingebettete Ansichten), zeigt die Seite eine Skizze
 // (HTML) mit denselben Teilen – ausdrücklich als Skizze beschriftet.
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react'
 import type { Plan } from '../typen'
 import * as K from './kern'
 import { usePg, useProfil, type Ort } from './zustand'
@@ -24,6 +24,24 @@ function cacheSetzen(k: string, url: string) {
     URL.revokeObjectURL(u)
     PDF_CACHE.delete(alt)
   }
+}
+
+// In der Skizze gemessene Seitenfüllung (genauer als die Schätzung, solange kein Kern misst). Schlüssel: Blatt + Layout.
+const GEMESSEN = new Map<string, number[]>()
+const MESS_HOERER = new Set<() => void>()
+const messSchluessel = (plan: Plan, nr: number, layout: string, ziel: boolean) => JSON.stringify([nr, plan.sitzungen.find((x) => x.nr === nr)?.blatt ?? null, layout, ziel])
+function gemessenSetzen(key: string, f: number[]) {
+  const alt = GEMESSEN.get(key)
+  if (alt && alt.join() === f.join()) return
+  GEMESSEN.set(key, f)
+  while (GEMESSEN.size > 40) GEMESSEN.delete(GEMESSEN.keys().next().value as string)
+  MESS_HOERER.forEach((h) => h())
+}
+function useGemessen(key: string): number[] | undefined {
+  return useSyncExternalStore(
+    (h) => (MESS_HOERER.add(h), () => MESS_HOERER.delete(h)),
+    () => GEMESSEN.get(key),
+  )
 }
 
 /** Das echte PDF einer Sitzung im Rahmen (entprellt, eine Erzeugung gleichzeitig) */
@@ -109,18 +127,27 @@ export function BlattAnsicht({ plan, nr, breite, nurErste, onTeil, markiert, pdf
         markiert={markiert}
         teilName={teilName}
         ziel={pg.druck.ziel && p.alterJahre < 12 ? (zus?.ziel?.[p.sprache.blatt] ?? zus?.ziel?.de ?? null) : null}
+        onFuellung={(f) => gemessenSetzen(messSchluessel(plan, nr, p.layout, pg.druck.ziel && p.alterJahre < 12), f)}
       />
     </div>
   )
 }
 
-/** Seitenkontrolle als Balken (7.4) */
-export function Seitenkontrolle({ plan, nr }: { plan: Plan; nr: number }) {
+/** Füllung je Seite: in der Skizze gemessen, sonst geschätzt (Kern) */
+export function useSeitenFuellung(plan: Plan, nr: number): number[] {
   const pg = usePg()
   const p = useProfil()
   const s = plan.sitzungen.find((x) => x.nr === nr)
-  if (!pg.katalog || !s?.blatt) return null
-  const fuell = K.seitenFuellung(pg.katalog, p, plan, nr)
+  const gemessen = useGemessen(messSchluessel(plan, nr, p.layout, pg.druck.ziel && p.alterJahre < 12))
+  if (!pg.katalog || !s?.blatt) return []
+  return gemessen ?? K.seitenFuellung(pg.katalog, p, plan, nr)
+}
+
+/** Seitenkontrolle als Balken (7.4) */
+export function Seitenkontrolle({ plan, nr }: { plan: Plan; nr: number }) {
+  const p = useProfil()
+  const fuell = useSeitenFuellung(plan, nr)
+  if (!fuell.length) return null
   const max = p.layout === 'bild' || p.layout === 'gross' ? 1 : 2
   const zuViel = fuell.length > max || fuell.some((f) => f > 1)
   return (

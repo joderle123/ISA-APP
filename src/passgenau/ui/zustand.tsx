@@ -72,7 +72,7 @@ export function mitKorrekturen(p: Profil, k: Korrekturen, vorname: boolean): Pro
   const stufe = k.stufe
   const vorsicht = VORSICHT_ALLE.filter((v) => (k.vorsicht?.[v] !== undefined ? k.vorsicht[v] : p.vorsicht.includes(v)))
   const hilft = HILFT_ALLE.filter((h) => (k.hilft?.[h] !== undefined ? k.hilft[h] : (p.hilft ?? []).includes(h)))
-  const zugang = { ...p.zugang, ...(k.zugang ?? {}) }
+  const zugang = { ...p.zugang, ...k.zugang }
   if (hilft.includes('stundenleiste')) zugang.struktur = 'hoch'
   return {
     ...p,
@@ -174,18 +174,22 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
 
   // --- Start und Verbindung -----------------------------------------------------------------------------------
   const gestartet = useRef<string | null>(null)
+  // hallo, solange es unterwegs ist, nur einmal fragen (ein abgebrochener Start – Reiterwechsel, StrictMode – hängt sich an)
+  const halloLauf = useRef<Promise<hub.Hallo> | null>(null)
   useEffect(() => {
     if (!aktiv) return
     const schluessel = JSON.stringify(startHash ?? {})
     if (gestartet.current === schluessel) return
     gestartet.current = schluessel
     let aus = false
+    let fertig = false
     setStatus('verbinden')
     setFehler(null)
     K.ladeKatalog().then((k) => !aus && setKatalog(k))
     const fenster = hub.hubFenster()
     const ohne = () => {
       if (aus) return
+      fertig = true
       setHallo(null)
       setSchalter(schalterLesen(null))
       setOhneKind(true)
@@ -197,8 +201,16 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       ohne()
       return
     }
-    hub
-      .hallo(1500)
+    let lauf = halloLauf.current
+    if (!lauf) {
+      const neu = hub.hallo(1500)
+      halloLauf.current = lauf = neu
+      neu.then(
+        () => halloLauf.current === neu && (halloLauf.current = null),
+        () => halloLauf.current === neu && (halloLauf.current = null),
+      )
+    }
+    lauf
       .then(async (h) => {
         if (aus) return
         setHallo(h)
@@ -206,6 +218,7 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
         setSchalter(s)
         setVersion(hub.versionAbgleich(h))
         if (!s.an) {
+          fertig = true
           setStatus('abgeschaltet')
           return
         }
@@ -227,6 +240,7 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
           setVor((v) => ({ ...v, kind: p.vorlieben ?? null, team: p.team ?? null }))
           setVerlauf({ plaene: p.verlauf?.plaene ?? [], ereignisse: p.verlauf?.ereignisse ?? [] })
           setStartZiel(startHash?.ziel ?? null)
+          fertig = true
           setStatus('bereit')
           setAnsichtZustand(startHash?.weg ?? 'start')
           if ((p.achtung?.length || p.vorsicht.includes('heikel')) && startHash?.weg !== 'leicht') setDlg(null)
@@ -240,6 +254,8 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       .catch(() => ohne())
     return () => {
       aus = true
+      // mitten im Verbinden abgebrochen: beim nächsten Lauf neu anfangen (sonst bliebe „Verbinde …“ stehen)
+      if (!fertig) gestartet.current = null
     }
   }, [aktiv, startHash])
 

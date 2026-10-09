@@ -2,6 +2,8 @@
 import { useState } from 'react'
 import type { Auftrag, Profil } from '../typen'
 import { usePg, useProfil, type Korrekturen } from './zustand'
+import * as K from './kern'
+import { blattById } from '../../data/blaetter'
 import { Ic } from './zeichen'
 import { Chip, HeikelBanner, Pill, PgDialog, Seg } from './Teile'
 import { BILD, INTERESSEN, LAYOUT_NAME, LESEN, QUELLE_ZIEL, SCHREIBEN, SPRACHE_NAME, STUFEN, THEMA_ART, VORSICHT_NAME, datumKurz, heuteIso, themaName, zielKurz } from './texte'
@@ -152,7 +154,7 @@ export function Wissen() {
             return (
               <Zeile key={z.code} label={<><b>{z.code}</b> {zielKurz(z.code)}</>} unter={`${QUELLE_ZIEL[z.quelle] ?? z.quelle}${z.seit ? ', ' + datumKurz(z.seit) : ''}`}>
                 {i > 0 && (
-                  <button type="button" className="pg-ibtn" aria-label={`${z.code} nach vorn`} title="nach vorn (Priorität)" onClick={() => umschalten((x) => { const r = [...ziele.map((y) => y.code)]; r.splice(i, 1); r.splice(i - 1, 0, z.code); return { ...x, reihe: r } })}>
+                  <button type="button" className="pg-ibtn" aria-label={`${z.code} nach vorn`} title="nach vorn (Priorität)" onClick={() => umschalten((x) => { const r = ziele.map((y) => y.code); r.splice(i, 1); r.splice(i - 1, 0, z.code); return { ...x, reihe: r } })}>
                     <Ic n="auf" />
                   </button>
                 )}
@@ -274,7 +276,7 @@ export function Wissen() {
           {roh.gemacht.map((g) => {
             const frei = !!k.frei?.[g.id]
             return (
-              <Zeile key={g.id} label={g.id.replace(/^blatt:/, '').replace(/-/g, ' ')} unter={`gemacht am ${datumKurz(g.am)} · 42 Tage kein Vorschlag`}>
+              <Zeile key={g.id} label={gemachtTitel(pg.katalog, g.id)} unter={`gemacht am ${datumKurz(g.am)}${frei ? ' · darf wieder vorkommen' : ` · bis ${datumKurz(tagePlus(g.am, 42))} kein Vorschlag`}`}>
                 <Chip an={frei} onClick={() => umschalten((x) => ({ ...x, frei: { ...x.frei, [g.id]: !frei } }))}>
                   {frei ? 'darf wieder' : 'gesperrt'}
                 </Chip>
@@ -341,4 +343,19 @@ export function Wissen() {
       )}
     </>
   )
+}
+
+/** Titel für „schon gemacht“: Katalog, sonst Arbeitsblatt der Toolbox, sonst die lesbar gemachte Kennung */
+function gemachtTitel(k: K.Katalog | null, id: string): string {
+  const e = k ? K.eintrag(k, id) : undefined
+  if (e) return K.textVon(e, 'de').titel
+  const b = blattById.get(id.replace(/^blatt:/, ''))
+  if (b) return `${b.nr} ${b.de.titel}`
+  const t = id.replace(/^[a-z]+:/, '').replace(/[-_]/g, ' ')
+  return t.slice(0, 1).toUpperCase() + t.slice(1)
+}
+function tagePlus(iso: string, tage: number): string {
+  const d = new Date(iso.slice(0, 10) + 'T12:00:00')
+  d.setDate(d.getDate() + tage)
+  return d.toISOString().slice(0, 10)
 }

@@ -117,7 +117,7 @@ export function profil(ref: string): Promise<ProfilVomHub> {
 
 /** Plan speichern. Mit dabei (gebündelt, T-M9): die gesammelten Ereignisse und die Kind-Vorlieben – eine Dossier-Änderung. */
 export function speichern(ref: string, plan: Plan, zusatz?: { ereignisse?: Ereignis[]; vorlieben?: VorliebenKind | null; grund?: 'knopf' | 'druck' | 'gehalten' }): Promise<{ planId: string }> {
-  return frage('speichern', { ref, plan, ...(zusatz ?? {}) })
+  return frage('speichern', { ref, plan, ...zusatz })
 }
 
 export function rueckmeldung(arg: {
