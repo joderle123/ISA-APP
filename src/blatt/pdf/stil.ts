@@ -203,7 +203,7 @@ export const TEXTE: Record<Sprache, Texte> = {
     name: 'Nom',
     datum: 'Date',
     arbeitsblatt: 'Fiche',
-    lehrer: 'Pour l’enseignant·e',
+    lehrer: 'Pour l’équipe pédagogique',
     ziel: 'Objectif',
     ablauf: 'Déroulement',
     hintergrund: 'Repères théoriques',
