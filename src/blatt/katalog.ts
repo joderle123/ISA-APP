@@ -153,6 +153,7 @@ export const THEMEN: ThemaDef[] = [
   T('miteinander', 'empathie', 'Sich einfühlen', 'Se mettre à la place de l’autre'),
   T('miteinander', 'zusammenarbeit', 'Zusammenarbeiten', 'Coopérer'),
   T('miteinander', 'hilfe', 'Hilfe holen', 'Demander de l’aide'),
+  T('miteinander', 'sprechen', 'Sprechen & Kontakt', 'Parler et entrer en contact'),
 
   T('lernen', 'aufmerksamkeit', 'Aufmerksamkeit', 'L’attention'),
   T('lernen', 'ordnung', 'Arbeitsplatz & Material', 'Espace de travail et matériel'),
@@ -161,6 +162,7 @@ export const THEMEN: ThemaDef[] = [
   T('lernen', 'fehler', 'Fehler & Lernhaltung', 'Erreurs et état d’esprit'),
   T('lernen', 'pruefungen', 'Prüfungen & Lernstress', 'Examens et stress'),
   T('lernen', 'strategien', 'Lernstrategien', 'Stratégies d’apprentissage'),
+  T('lernen', 'grundlagen', 'Grundlagen: Muster, Formen, Auge & Hand', 'Bases : suites, formes, œil et main'),
 
   T('alltag', 'uebergaenge', 'Übergänge & Neues', 'Transitions et nouveautés'),
   T('alltag', 'tagesablauf', 'Tagesablauf & Schlaf', 'Journée et sommeil'),
@@ -168,6 +170,7 @@ export const THEMEN: ThemaDef[] = [
   T('alltag', 'koerper', 'Körper & Pubertät', 'Corps et puberté'),
   T('alltag', 'staerken', 'Stärken & Selbstwert', 'Forces et estime de soi'),
   T('alltag', 'wohlbefinden', 'Energie & Wohlbefinden', 'Énergie et bien-être'),
+  T('alltag', 'selbststaendig', 'Selbstständig im Alltag', 'Autonome au quotidien'),
 
   T('werkzeuge', 'verstaerker', 'Verstärkerpläne', 'Systèmes de renforcement'),
   T('werkzeuge', 'beobachtung', 'Beobachtung', 'Observation'),

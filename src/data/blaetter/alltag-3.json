@@ -1,0 +1,4426 @@
+[
+  {
+    "id": "schilder-form-und-farbe",
+    "bereich": "alltag",
+    "thema": "selbststaendig",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "KOG-10",
+      "KOG-23"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Schilder",
+      "Formen",
+      "Farben",
+      "Unterwegs",
+      "Praktikum",
+      "Sicherheit"
+    ],
+    "bild": "icon:road-sign",
+    "verwandt": [
+      "gegensaetze-im-alltag",
+      "bus-linie-und-haltestellen"
+    ],
+    "de": {
+      "titel": "Schilder lesen: Form und Farbe",
+      "untertitel": "Viele Schilder verstehst du ohne Worte. Form und Farbe sagen dir: Stopp, Achtung oder hier entlang.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Auf der Straße, am Bahnhof und in der Werkstatt hängen Schilder. Schau zuerst auf die Form, dann auf die Farbe. So weißt du schnell, was gilt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie heißen die Formen? Schreib den Namen dazu oder sag ihn.",
+          "hinweis": "Kreis – Dreieck – Quadrat – Rechteck"
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:circle",
+              "text": "______________"
+            },
+            {
+              "bild": "icon:triangle",
+              "text": "______________"
+            },
+            {
+              "bild": "icon:square",
+              "text": "______________"
+            },
+            {
+              "bild": "icon:rectangle",
+              "text": "______________"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mal die Schilder mit Buntstiften in der richtigen Farbe an.",
+          "hinweis": "Du brauchst Rot, Gelb, Grün und Blau."
+        },
+        {
+          "art": "bilder",
+          "modus": "anmalen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:circle",
+              "text": "Verboten: roter Rand"
+            },
+            {
+              "bild": "icon:circle",
+              "text": "Das musst du tun: blau"
+            },
+            {
+              "bild": "icon:triangle",
+              "text": "Achtung, Gefahr: roter Rand"
+            },
+            {
+              "bild": "icon:square",
+              "text": "Hinweis, z. B. Parkplatz: blau"
+            },
+            {
+              "bild": "icon:rectangle",
+              "text": "Notausgang: grün"
+            },
+            {
+              "bild": "icon:traffic-lights",
+              "text": "Ampel: rot, gelb, grün"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Erst die Form, dann die Farbe",
+          "punkte": [
+            "Rot: Stopp, verboten oder Gefahr.",
+            "Blau: So musst du es machen – oder ein Hinweis.",
+            "Grün: Rettung – Ausgang, Erste Hilfe.",
+            "Gelbes Dreieck (in der Werkstatt): Achtung, Gefahr.",
+            "Rotes Achteck: Stopp. Ganz anhalten."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Im Praktikum: Was sagt dir das Schild? Verbinde."
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Schild",
+            "Das heißt"
+          ],
+          "links": [
+            "blauer Kreis mit Schutzbrille",
+            "blauer Kreis mit Handschuh",
+            "roter Rand, Zigarette durchgestrichen",
+            "grünes Schild mit Tür und Pfeil",
+            "gelbes Dreieck mit Blitz"
+          ],
+          "rechts": [
+            "Hier geht es raus.",
+            "Schutzbrille tragen.",
+            "Achtung, Strom.",
+            "Handschuhe tragen.",
+            "Rauchen verboten."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Farbe hat das Schild in echt? Kreuze an.",
+          "hinweis": "Denk an die Schilder auf deinem Schulweg."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Stoppschild",
+            "Notausgang",
+            "Parkplatz",
+            "Feuerlöscher",
+            "Erste Hilfe",
+            "Radweg",
+            "Achtung, Kinder"
+          ],
+          "optionen": [
+            "rot",
+            "blau",
+            "grün"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schilder-Suche: Fotografiere drei Schilder in der Schule oder unterwegs. Trag sie hier ein."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wo?",
+            "Form",
+            "Farbe",
+            "Das heißt"
+          ],
+          "beispiel": [
+            "z. B. vor der Schule",
+            "Dreieck",
+            "roter Rand",
+            "Achtung, Kinder"
+          ],
+          "zeilen": 3
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen benennen Kreis, Dreieck, Quadrat und Rechteck, ordnen die Grundfarben zu und nutzen beides, um Verkehrs- und Sicherheitsschilder zu verstehen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Fotos echter Schilder zeigen. „Woran erkennst du ohne Lesen, dass etwas verboten ist?“",
+          "Aufgabe 1 und 2 (15 Min.): benennen, anmalen, Merkkasten lesen. Zeigen und sagen ersetzt Schreiben.",
+          "Aufgabe 3 und 4 (10 Min.): wenn möglich echte Piktogramme aus der Werkstatt dazulegen.",
+          "Aufgabe 5 als Wochenauftrag; Fotos in der nächsten Stunde erklären lassen."
+        ],
+        "hintergrund": "Formen unterscheiden und Farben benennen sind frühe Ziele der ELDiB (Bergsson & Luckfiel, 1998). Fehlen sie mit 13 oder 16 Jahren noch, wird der Alltag schnell riskant: Wer Stoppschild, Notausgang oder Warnzeichen nicht sicher deutet, ist weniger selbstständig unterwegs. Die Entwicklungspädagogik arbeitet am Entwicklungsziel, wählt aber Inhalte, die zum Alter passen (Wood, 1996). Schilder eignen sich dafür: Sie folgen einem festen System aus Form und Farbe und gehören zur Welt der Erwachsenen. Feste visuelle Muster entlasten, wenn Sprache und Lesen schwerfallen (Hodgdon, 1995).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Wood, M. M. (1996). Developmental Therapy – Developmental Teaching (3rd ed.). Austin: Pro-Ed.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Kreis, Dreieck, Viereck sowie Rot, Blau, Grün. Formen aus Karton fühlen und sortieren.",
+          "schwerer": "Die Schilder des eigenen Schulwegs als Plan zeichnen und erklären."
+        },
+        "impulse": [
+          "Welches Schild ist für dich am wichtigsten?",
+          "Warum haben Schilder fast keine Wörter?"
+        ],
+        "tipps": [
+          "Würde wahren: nie vor der Gruppe abfragen, welche Farbe das ist; lieber zu zweit arbeiten.",
+          "Fortschritt beobachten: Benennt die Person Formen und Farben auch an echten Schildern, ohne Hilfe?"
+        ],
+        "achtung": "Werden Farben dauerhaft verwechselt, an eine Farbsehschwäche denken und mit den Eltern eine augenärztliche Abklärung besprechen.",
+        "material": "Buntstifte, Fotos echter Schilder, Handy"
+      }
+    },
+    "fr": {
+      "titel": "Lire les panneaux : forme et couleur",
+      "untertitel": "Beaucoup de panneaux se comprennent sans mots. La forme et la couleur te disent : stop, attention ou par ici.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dans la rue, à la gare et à l’atelier, il y a des panneaux. Regarde d’abord la forme, puis la couleur. Ainsi, tu sais vite ce qui est demandé."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment s’appellent ces formes ? Écris le nom ou dis-le.",
+          "hinweis": "cercle – triangle – carré – rectangle"
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:circle",
+              "text": "______________"
+            },
+            {
+              "bild": "icon:triangle",
+              "text": "______________"
+            },
+            {
+              "bild": "icon:square",
+              "text": "______________"
+            },
+            {
+              "bild": "icon:rectangle",
+              "text": "______________"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Colorie les panneaux avec la bonne couleur.",
+          "hinweis": "Il te faut du rouge, de l’orange, du vert et du bleu."
+        },
+        {
+          "art": "bilder",
+          "modus": "anmalen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:circle",
+              "text": "Interdit : bord rouge"
+            },
+            {
+              "bild": "icon:circle",
+              "text": "Obligation : bleu"
+            },
+            {
+              "bild": "icon:triangle",
+              "text": "Danger : bord rouge"
+            },
+            {
+              "bild": "icon:square",
+              "text": "Information, p. ex. parking : bleu"
+            },
+            {
+              "bild": "icon:rectangle",
+              "text": "Sortie de secours : vert"
+            },
+            {
+              "bild": "icon:traffic-lights",
+              "text": "Feu : rouge, orange, vert"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "D’abord la forme, puis la couleur",
+          "punkte": [
+            "Rouge : stop, interdit ou danger.",
+            "Bleu : c’est comme ça qu’il faut faire – ou une information.",
+            "Vert : secours – sortie, premiers secours.",
+            "Triangle jaune (à l’atelier) : attention, danger.",
+            "Octogone rouge : stop. S’arrêter complètement."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "En stage : que te dit le panneau ? Relie."
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Panneau",
+            "Ça veut dire"
+          ],
+          "links": [
+            "cercle bleu avec des lunettes",
+            "cercle bleu avec un gant",
+            "bord rouge, cigarette barrée",
+            "panneau vert avec une porte et une flèche",
+            "triangle jaune avec un éclair"
+          ],
+          "rechts": [
+            "La sortie est par ici.",
+            "Porter des lunettes de protection.",
+            "Attention, électricité.",
+            "Porter des gants.",
+            "Interdit de fumer."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "De quelle couleur est le panneau en vrai ? Coche.",
+          "hinweis": "Pense aux panneaux sur ton chemin de l’école."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "stop",
+            "sortie de secours",
+            "parking",
+            "extincteur",
+            "premiers secours",
+            "piste cyclable",
+            "attention, enfants"
+          ],
+          "optionen": [
+            "rouge",
+            "bleu",
+            "vert"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Chasse aux panneaux : photographie trois panneaux à l’école ou en route. Note-les ici."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Où ?",
+            "Forme",
+            "Couleur",
+            "Ça veut dire"
+          ],
+          "beispiel": [
+            "p. ex. devant l’école",
+            "triangle",
+            "bord rouge",
+            "attention, enfants"
+          ],
+          "zeilen": 3
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes nomment le cercle, le triangle, le carré et le rectangle, associent les couleurs de base et s’en servent pour comprendre les panneaux de circulation et de sécurité.",
+        "ablauf": [
+          "Entrée (5 min) : montrer des photos de panneaux. « Sans lire, à quoi vois-tu que c’est interdit ? »",
+          "Exercices 1 et 2 (15 min) : nommer, colorier, lire l’encadré. Montrer et dire peut remplacer l’écrit.",
+          "Exercices 3 et 4 (10 min) : si possible, poser à côté de vrais pictogrammes de l’atelier.",
+          "Exercice 5 comme mission de la semaine ; faire expliquer les photos à la séance suivante."
+        ],
+        "hintergrund": "Distinguer les formes et nommer les couleurs sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). S’ils manquent encore à 13 ou 16 ans, le quotidien devient vite risqué : qui ne reconnaît pas sûrement un stop, une sortie de secours ou un avertissement se déplace moins en autonomie. La pédagogie développementale travaille l’objectif de développement avec des contenus adaptés à l’âge (Wood, 1996). Les panneaux s’y prêtent : ils suivent un système fixe de formes et de couleurs et appartiennent au monde des adultes. Des repères visuels stables soulagent quand la langue et la lecture sont difficiles (Hodgdon, 1995).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Wood, M. M. (1996). Developmental Therapy – Developmental Teaching (3rd ed.). Austin: Pro-Ed.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement cercle, triangle, carré et rouge, bleu, vert. Toucher et trier des formes en carton.",
+          "schwerer": "Dessiner les panneaux de son trajet sur un plan et les expliquer."
+        },
+        "impulse": [
+          "Quel panneau est le plus important pour toi ?",
+          "Pourquoi les panneaux n’ont-ils presque pas de mots ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : ne jamais interroger devant le groupe sur une couleur ; travailler plutôt à deux.",
+          "Observer les progrès : la personne nomme-t-elle formes et couleurs sur de vrais panneaux, sans aide ?"
+        ],
+        "achtung": "Si des couleurs sont toujours confondues, penser à un trouble de la vision des couleurs et proposer aux parents un contrôle chez l’ophtalmologue.",
+        "material": "Crayons de couleur, photos de panneaux, téléphone"
+      }
+    }
+  },
+  {
+    "id": "erste-hilfe-wo-tut-es-weh",
+    "bereich": "alltag",
+    "thema": "koerper",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "KOG-11",
+      "KOG-16"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Erste Hilfe",
+      "Körperteile",
+      "Notruf 112",
+      "Schmerzen beschreiben",
+      "Sport"
+    ],
+    "bild": "icon:first-aid-kit",
+    "verwandt": [
+      "sitzen-und-bewegen"
+    ],
+    "de": {
+      "titel": "Erste Hilfe: Wo tut es weh?",
+      "untertitel": "Beim Sport, im Praktikum, unterwegs: Wer die Körperteile zeigen und benennen kann, bekommt schneller die richtige Hilfe.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Nach einem Unfall fragen Helfer zuerst: Wo tut es weh? Dann zählt jedes Wort. Die Stelle genau zeigen und benennen – das ist schon die halbe Hilfe."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mal den Körper in vier Farben an. Sag dabei laut, was du anmalst."
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            {
+              "farbe": "gelb",
+              "text": "Kopf und Hals"
+            },
+            {
+              "farbe": "blau",
+              "text": "Rumpf: Brust, Bauch, Rücken"
+            },
+            {
+              "farbe": "gruen",
+              "text": "Arme und Hände"
+            },
+            {
+              "farbe": "lila",
+              "text": "Beine und Füße"
+            }
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Genauer gesagt – zeig die Stelle an dir",
+          "items": [
+            "die Stirn",
+            "der Nacken",
+            "die Schulter",
+            "der Ellbogen",
+            "das Handgelenk",
+            "der Finger",
+            "die Hüfte",
+            "das Knie",
+            "der Knöchel",
+            "die Ferse"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schmerz in Zahlen: Ärzte fragen oft „Wie stark von 0 bis 10?“ Kreuze an, wie stark ein Wespenstich für dich wäre."
+        },
+        {
+          "art": "skala",
+          "von": "0 = gar nicht",
+          "bis": "10 = sehr stark",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo tut es weh? Verbinde den Unfall mit dem Körperteil."
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Das ist passiert",
+            "Hier tut es weh"
+          ],
+          "links": [
+            "Beim Basketball umgeknickt.",
+            "In der Küche ist das Messer abgerutscht.",
+            "Im Lager eine schwere Kiste falsch gehoben.",
+            "Gegen eine offene Schranktür gelaufen.",
+            "Lange sehr laute Musik gehört."
+          ],
+          "rechts": [
+            "Rücken",
+            "Ohren",
+            "Knöchel",
+            "Kopf",
+            "Finger"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Übt zu zweit einen Notruf. Eine Person ist die Leitstelle, die andere antwortet. Dann tauscht ihr.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "112",
+              "text": "Notruf 112. Wo sind Sie genau?"
+            },
+            {
+              "wer": "Ich"
+            },
+            {
+              "wer": "112",
+              "text": "Was ist passiert?"
+            },
+            {
+              "wer": "Ich"
+            },
+            {
+              "wer": "112",
+              "text": "Wo hat die Person Schmerzen?"
+            },
+            {
+              "wer": "Ich"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Beim Arzt oder in der Notaufnahme",
+          "punkte": [
+            "Zeig genau die Stelle und sag, wie es passiert ist.",
+            "Sag, wie stark es weh tut: von 0 bis 10.",
+            "Bei Gefahr: 112 anrufen. Der Anruf ist kostenlos."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen zeigen und benennen die großen Körperteile (Kopf, Rumpf, Arme, Beine) und genauere Stellen und können in einem Notfall sagen, wo es weh tut.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Du kommst verletzt in die Notaufnahme. Was musst du sagen können?“",
+          "Aufgabe 1 (10 Min.): anmalen und laut benennen; gezeigt wird am eigenen Körper oder am Bild.",
+          "Wortspeicher und Aufgabe 2 (5 Min.): „Zeig mir das Handgelenk.“ Skala kurz besprechen.",
+          "Aufgabe 3 (5 Min.): verbinden, zu zweit vergleichen.",
+          "Aufgabe 4 (10 Min.): Notruf als Rollenspiel; die Lehrperson spielt zuerst die Leitstelle."
+        ],
+        "hintergrund": "Körperteile kennen und benennen gehört zu den frühen Zielen der ELDiB (Bergsson & Luckfiel, 1998). Bei Jugendlichen ist das sehr praktisch: Wer nach einem Sportunfall, im Praktikum oder beim Arzt nicht zeigen und sagen kann, wo es weh tut, bekommt später oder falsche Hilfe. Erste-Hilfe-Leitlinien betonen, dass Ort und Art einer Verletzung schnell erfasst werden müssen (Zideman et al., 2021). Im Rahmen von Notruf und Arztbesuch bleibt die Übung erwachsen. Am Entwicklungsziel arbeiten und im Material das Alter respektieren – so bleibt die Würde gewahrt (Wood, 1996).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Zideman, D. A., Singletary, E. M., Borra, V., Cassan, P., Cimpoesu, C. D., De Buck, E., Djärv, T., Handley, A. J., Klaassen, B., Meyran, D., Oliver, E. & Poole, K. (2021). European Resuscitation Council Guidelines 2021: First aid. Resuscitation, 161, 270–290.",
+          "Wood, M. M. (1996). Developmental Therapy – Developmental Teaching (3rd ed.). Austin: Pro-Ed."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Kopf, Bauch, Rücken, Arme, Beine, Hände, Füße; zeigen statt schreiben.",
+          "schwerer": "Eine kurze Unfallmeldung für den Praktikumsbetrieb schreiben."
+        },
+        "impulse": [
+          "Was passiert, wenn Helfer nicht wissen, wo es weh tut?",
+          "Wann rufst du die 112, wann gehst du zum Arzt?"
+        ],
+        "tipps": [
+          "Würde wahren: am Bild oder an einer Übungspuppe zeigen, nie an anderen. Berührung nur mit Erlaubnis.",
+          "Fortschritt beobachten: Sagt die Person nach einer kleinen Verletzung selbst, wo es weh tut?"
+        ],
+        "achtung": "Intimbereich aussparen; wer ausweicht, arbeitet am Bild. Bei Hinweisen auf Gewalt nach dem internen Ablauf handeln und die Leitung (Responsable) informieren.",
+        "material": "Buntstifte, Erste-Hilfe-Koffer der Schule"
+      }
+    },
+    "fr": {
+      "titel": "Premiers secours : où as-tu mal ?",
+      "untertitel": "Au sport, en stage, dans la rue : si tu sais montrer et nommer les parties du corps, tu reçois plus vite la bonne aide.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Après un accident, les secours demandent d’abord : où avez-vous mal ? Chaque mot compte. Montrer et nommer l’endroit exact, c’est déjà la moitié de l’aide."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Colorie le corps en quatre couleurs. Dis à voix haute ce que tu colories."
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            {
+              "farbe": "gelb",
+              "text": "la tête et le cou"
+            },
+            {
+              "farbe": "blau",
+              "text": "le tronc : poitrine, ventre, dos"
+            },
+            {
+              "farbe": "gruen",
+              "text": "les bras et les mains"
+            },
+            {
+              "farbe": "lila",
+              "text": "les jambes et les pieds"
+            }
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Plus précisément – montre l’endroit sur toi",
+          "items": [
+            "le front",
+            "la nuque",
+            "l’épaule",
+            "le coude",
+            "le poignet",
+            "le doigt",
+            "la hanche",
+            "le genou",
+            "la cheville",
+            "le talon"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "La douleur en chiffres : les médecins demandent souvent « De 0 à 10 ? » Coche la force d’une piqûre de guêpe pour toi."
+        },
+        {
+          "art": "skala",
+          "von": "0 = pas du tout",
+          "bis": "10 = très fort",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où as-tu mal ? Relie l’accident à la partie du corps."
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Ce qui s’est passé",
+            "J’ai mal ici"
+          ],
+          "links": [
+            "Au basket, j’ai fait une mauvaise réception.",
+            "En cuisine, le couteau a glissé.",
+            "Au dépôt, j’ai mal soulevé une caisse lourde.",
+            "Je me suis cogné·e contre une porte d’armoire.",
+            "J’ai écouté de la musique très fort, longtemps."
+          ],
+          "rechts": [
+            "le dos",
+            "les oreilles",
+            "la cheville",
+            "la tête",
+            "le doigt"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entraînez-vous à deux à appeler les secours. L’un·e joue le 112, l’autre répond. Puis échangez.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "112",
+              "text": "Ici le 112. Où êtes-vous exactement ?"
+            },
+            {
+              "wer": "Moi"
+            },
+            {
+              "wer": "112",
+              "text": "Que s’est-il passé ?"
+            },
+            {
+              "wer": "Moi"
+            },
+            {
+              "wer": "112",
+              "text": "Où la personne a-t-elle mal ?"
+            },
+            {
+              "wer": "Moi"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Chez le médecin ou aux urgences",
+          "punkte": [
+            "Montre exactement l’endroit et dis comment c’est arrivé.",
+            "Dis la force de la douleur : de 0 à 10.",
+            "En cas de danger : appeler le 112. L’appel est gratuit."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes montrent et nomment les grandes parties du corps (tête, tronc, bras, jambes) et des endroits plus précis, et savent dire où ça fait mal en cas d’urgence.",
+        "ablauf": [
+          "Entrée (5 min) : « Tu arrives blessé·e aux urgences. Que dois-tu pouvoir dire ? »",
+          "Exercice 1 (10 min) : colorier en nommant ; on montre sur soi ou sur l’image.",
+          "Mots et exercice 2 (5 min) : « Montre-moi le poignet. » Discuter l’échelle.",
+          "Exercice 3 (5 min) : relier, comparer à deux.",
+          "Exercice 4 (10 min) : appel d’urgence en jeu de rôle ; l’adulte joue d’abord le 112."
+        ],
+        "hintergrund": "Connaître et nommer les parties du corps est un objectif précoce de l’ELDiB (Bergsson & Luckfiel, 1998). Chez les jeunes, l’enjeu est concret : qui ne sait pas montrer et dire où ça fait mal après un accident de sport, en stage ou chez le médecin reçoit une aide tardive ou inadaptée. Les recommandations de premiers secours soulignent qu’il faut saisir vite le lieu et le type de blessure (Zideman et al., 2021). Dans le cadre d’un appel d’urgence ou d’une visite médicale, l’exercice reste adulte. Travailler l’objectif de développement en respectant l’âge préserve la dignité (Wood, 1996).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Zideman, D. A., Singletary, E. M., Borra, V., Cassan, P., Cimpoesu, C. D., De Buck, E., Djärv, T., Handley, A. J., Klaassen, B., Meyran, D., Oliver, E. & Poole, K. (2021). European Resuscitation Council Guidelines 2021: First aid. Resuscitation, 161, 270–290.",
+          "Wood, M. M. (1996). Developmental Therapy – Developmental Teaching (3rd ed.). Austin: Pro-Ed."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement tête, ventre, dos, bras, jambes, mains, pieds ; montrer au lieu d’écrire.",
+          "schwerer": "Rédiger une courte déclaration d’accident pour l’entreprise de stage."
+        },
+        "impulse": [
+          "Que se passe-t-il si les secours ne savent pas où tu as mal ?",
+          "Quand appelles-tu le 112, quand vas-tu chez le médecin ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : montrer sur l’image ou un mannequin, jamais sur les autres. Aucun contact sans accord.",
+          "Observer les progrès : après une petite blessure, la personne dit-elle seule où elle a mal ?"
+        ],
+        "achtung": "Ne pas aborder les parties intimes ; qui se dérobe travaille sur l’image. En cas d’indices de violence, suivre la procédure interne et informer la direction (responsable).",
+        "material": "Crayons de couleur, trousse de secours de l’école"
+      }
+    }
+  },
+  {
+    "id": "bus-linie-und-haltestellen",
+    "bereich": "alltag",
+    "thema": "selbststaendig",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–40 Min.",
+    "eldib": [
+      "KOG-22",
+      "KOG-35"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Bus",
+      "Zahlen bis 10",
+      "Zählen",
+      "Unterwegs",
+      "Selbstständigkeit"
+    ],
+    "bild": "icon:bus",
+    "verwandt": [
+      "einkaufen-stueck-fuer-stueck",
+      "warten-bis-ich-aufgerufen-werde"
+    ],
+    "de": {
+      "titel": "Mit dem Bus: Linie und Haltestellen",
+      "untertitel": "Die richtige Nummer finden, die Haltestellen mitzählen, am richtigen Ort aussteigen – so kommst du allein ans Ziel.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Jeder Bus hat eine Nummer: die Linie. Sie steht vorne über der Scheibe. Im Bus zählst du die Haltestellen mit. So weißt du, wann du aussteigen musst."
+        },
+        {
+          "art": "aufgabe",
+          "text": "An der Haltestelle kommen viele Busse. Du nimmst die Linie 7. Kreise jede 7 ein.",
+          "hinweis": "Vorsicht: 1 und 7 sehen sich ähnlich."
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:number-7"
+            },
+            {
+              "bild": "icon:number-1"
+            },
+            {
+              "bild": "icon:number-4"
+            },
+            {
+              "bild": "icon:number-7"
+            },
+            {
+              "bild": "icon:number-9"
+            },
+            {
+              "bild": "icon:number-1"
+            },
+            {
+              "bild": "icon:number-7"
+            },
+            {
+              "bild": "icon:number-2"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Du steigst am Bahnhof ein. Fahr mit dem Finger mit und zähl die Haltestellen. An der 4. steigst du aus. Kreise sie ein."
+        },
+        {
+          "art": "geo",
+          "felder": [
+            {
+              "h": 30,
+              "elemente": [
+                {
+                  "t": "linie",
+                  "von": [
+                    8,
+                    16
+                  ],
+                  "bis": [
+                    174,
+                    16
+                  ],
+                  "stil": "strasse"
+                },
+                {
+                  "t": "punkt",
+                  "x": 14,
+                  "y": 16
+                },
+                {
+                  "t": "text",
+                  "x": 14,
+                  "y": 25,
+                  "text": "Bahnhof",
+                  "mitte": true
+                },
+                {
+                  "t": "punkt",
+                  "x": 52,
+                  "y": 16
+                },
+                {
+                  "t": "text",
+                  "x": 52,
+                  "y": 25,
+                  "text": "Markt",
+                  "mitte": true
+                },
+                {
+                  "t": "punkt",
+                  "x": 90,
+                  "y": 16
+                },
+                {
+                  "t": "text",
+                  "x": 90,
+                  "y": 25,
+                  "text": "Park",
+                  "mitte": true
+                },
+                {
+                  "t": "punkt",
+                  "x": 128,
+                  "y": 16
+                },
+                {
+                  "t": "text",
+                  "x": 128,
+                  "y": 25,
+                  "text": "Schwimmbad",
+                  "mitte": true
+                },
+                {
+                  "t": "punkt",
+                  "x": 166,
+                  "y": 16
+                },
+                {
+                  "t": "text",
+                  "x": 166,
+                  "y": 25,
+                  "text": "Lycée",
+                  "mitte": true
+                },
+                {
+                  "t": "text",
+                  "x": 14,
+                  "y": 6,
+                  "text": "Einsteigen",
+                  "mitte": true,
+                  "klein": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich steige aus an der Haltestelle …",
+            "Vom Bahnhof bis zum Park sind es … Haltestellen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane deine eigene Fahrt, zum Beispiel zum Praktikum oder zum Training."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Von",
+            "Nach",
+            "Linie",
+            "Haltestellen",
+            "Aussteigen an"
+          ],
+          "beispiel": [
+            "z. B. Zuhause",
+            "Training",
+            "4",
+            "3",
+            "Sporthalle"
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Die Anzeige an der Haltestelle: Lies sie und ergänze die Sätze."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Linie",
+            "Richtung",
+            "Abfahrt in"
+          ],
+          "werte": [
+            [
+              "7",
+              "Lycée",
+              "2 Min."
+            ],
+            [
+              "1",
+              "Bahnhof",
+              "4 Min."
+            ],
+            [
+              "4",
+              "Schwimmbad",
+              "6 Min."
+            ],
+            [
+              "7",
+              "Lycée",
+              "9 Min."
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Der nächste Bus zum Lycée fährt in … Minuten.",
+            "Bus verpasst? Die nächste Linie 7 fährt in … Minuten.",
+            "Zum Schwimmbad nimmst du die Linie …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Verzählt? Kein Problem",
+          "punkte": [
+            "Im Bus zeigt ein Bildschirm die nächste Haltestelle.",
+            "Drück den Halteknopf, wenn deine Haltestelle angezeigt wird.",
+            "Frag den Fahrer oder die Fahrerin: „Hält der Bus am Lycée?“",
+            "Zu weit gefahren? An der nächsten Haltestelle aussteigen und zurückfahren. Das passiert jedem mal."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Karte für die Tasche: vorne deine Fahrt, hinten eine Nummer für den Notfall. Ausschneiden, falten, einstecken.",
+          "symbole": [
+            "schreiben",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Vorne: meine Fahrt",
+              "beispiel": "z. B. Linie 7 bis Lycée, 4 Haltestellen, aussteigen nach „Schwimmbad“",
+              "hoehe": 4,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Hinten: Wenn ich nicht weiterweiß, rufe ich an",
+              "beispiel": "Name und Telefonnummer",
+              "hoehe": 4,
+              "zeichnen": true
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erkennen Ziffern bis 10 auf Bussen und Anzeigen und zählen bis zu vier Haltestellen sicher mit.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wie kommst du nach Hause? Mit welcher Linie?“ Die Linien der Schule an die Tafel schreiben.",
+          "Aufgabe 1 (5 Min.): jede 7 einkreisen; auf 1 und 7 achten.",
+          "Aufgabe 2 (10 Min.): mit dem Finger die Linie entlangfahren und laut zählen: „eins, zwei, drei, vier – aussteigen“.",
+          "Aufgabe 3 bis 5 (15 Min.): eigene Fahrt planen, Anzeige lesen, Karte für die Tasche schreiben.",
+          "Transfer: die Strecke einmal gemeinsam fahren. Die Person zählt, die Begleitung hilft nur, wenn nötig."
+        ],
+        "hintergrund": "Bis vier zählen und Ziffern bis zehn erkennen sind frühe Ziele der ELDiB (Bergsson & Luckfiel, 1998). Für Jugendliche hängt daran viel Selbstständigkeit: Bus fahren, im Aufzug das Stockwerk finden, die richtige Hausnummer. Frühe Zahlkompetenz entwickelt sich in festen Schritten – von der Eins-zu-eins-Zuordnung beim Zählen bis zum sicheren Lesen der Ziffern (Clements & Sarama, 2009). Wer diese Schritte mit 15 noch braucht, lernt sie am besten dort, wo sie gebraucht werden. Dass die Aufgabe nach Erwachsenenalltag aussieht, ist kein Detail: Jugendliche lassen sich auf Lernen ein, wenn es ihren Status respektiert (Yeager, Dahl & Dweck, 2018).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Clements, D. H. & Sarama, J. (2009). Learning and Teaching Early Math: The Learning Trajectories Approach. New York: Routledge.",
+          "Yeager, D. S., Dahl, R. E. & Dweck, C. S. (2018). Why interventions to influence adolescent behavior often fail but could succeed. Perspectives on Psychological Science, 13(1), 101–122."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Ziffern 1 bis 5 und zwei Haltestellen. Beim Zählen auf jede Haltestelle tippen.",
+          "schwerer": "Eine Fahrt mit Umsteigen planen: zwei Linien, Haltestellen für beide Teile zählen."
+        },
+        "impulse": [
+          "Was machst du, wenn du dich verzählt hast?",
+          "Woran erkennst du deinen Bus, wenn zwei gleichzeitig kommen?"
+        ],
+        "tipps": [
+          "Würde wahren: Leise oder mit den Fingern zählen ist erlaubt – auch Erwachsene zählen im Bus mit.",
+          "Fortschritt beobachten: Steigt die Person auf einer bekannten Strecke ohne Erinnerung an der richtigen Haltestelle aus?"
+        ],
+        "achtung": "Die ersten allein gefahrenen Strecken mit den Eltern und der zuständigen Leitung (Responsable) absprechen. Eine Karte mit einer Telefonnummer für den Notfall gehört in die Tasche.",
+        "material": "Linienplan oder Fotos der Haltestellen rund um die Schule; für den Transfer eine Begleitperson"
+      }
+    },
+    "fr": {
+      "titel": "En bus : ligne et arrêts",
+      "untertitel": "Trouver le bon numéro, compter les arrêts, descendre au bon endroit – ainsi, tu arrives seul·e à destination.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Chaque bus a un numéro : la ligne. Il est affiché à l’avant, au-dessus du pare-brise. Dans le bus, tu comptes les arrêts. Ainsi, tu sais quand descendre."
+        },
+        {
+          "art": "aufgabe",
+          "text": "À l’arrêt, beaucoup de bus passent. Tu prends la ligne 7. Entoure chaque 7.",
+          "hinweis": "Attention : le 1 et le 7 se ressemblent."
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:number-7"
+            },
+            {
+              "bild": "icon:number-1"
+            },
+            {
+              "bild": "icon:number-4"
+            },
+            {
+              "bild": "icon:number-7"
+            },
+            {
+              "bild": "icon:number-9"
+            },
+            {
+              "bild": "icon:number-1"
+            },
+            {
+              "bild": "icon:number-7"
+            },
+            {
+              "bild": "icon:number-2"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tu montes à la gare. Suis la ligne avec le doigt et compte les arrêts. Tu descends au 4e arrêt. Entoure-le."
+        },
+        {
+          "art": "geo",
+          "felder": [
+            {
+              "h": 30,
+              "elemente": [
+                {
+                  "t": "linie",
+                  "von": [
+                    8,
+                    16
+                  ],
+                  "bis": [
+                    174,
+                    16
+                  ],
+                  "stil": "strasse"
+                },
+                {
+                  "t": "punkt",
+                  "x": 14,
+                  "y": 16
+                },
+                {
+                  "t": "text",
+                  "x": 14,
+                  "y": 25,
+                  "text": "Gare",
+                  "mitte": true
+                },
+                {
+                  "t": "punkt",
+                  "x": 52,
+                  "y": 16
+                },
+                {
+                  "t": "text",
+                  "x": 52,
+                  "y": 25,
+                  "text": "Marché",
+                  "mitte": true
+                },
+                {
+                  "t": "punkt",
+                  "x": 90,
+                  "y": 16
+                },
+                {
+                  "t": "text",
+                  "x": 90,
+                  "y": 25,
+                  "text": "Parc",
+                  "mitte": true
+                },
+                {
+                  "t": "punkt",
+                  "x": 128,
+                  "y": 16
+                },
+                {
+                  "t": "text",
+                  "x": 128,
+                  "y": 25,
+                  "text": "Piscine",
+                  "mitte": true
+                },
+                {
+                  "t": "punkt",
+                  "x": 166,
+                  "y": 16
+                },
+                {
+                  "t": "text",
+                  "x": 166,
+                  "y": 25,
+                  "text": "Lycée",
+                  "mitte": true
+                },
+                {
+                  "t": "text",
+                  "x": 14,
+                  "y": 6,
+                  "text": "Montée",
+                  "mitte": true,
+                  "klein": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je descends à l’arrêt …",
+            "De la gare au parc, il y a … arrêts."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prépare ton propre trajet, par exemple vers ton stage ou ton entraînement."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "De",
+            "À",
+            "Ligne",
+            "Arrêts",
+            "Descendre à"
+          ],
+          "beispiel": [
+            "p. ex. maison",
+            "entraînement",
+            "4",
+            "3",
+            "salle de sport"
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "L’écran à l’arrêt : lis-le et complète les phrases."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ligne",
+            "Direction",
+            "Départ dans"
+          ],
+          "werte": [
+            [
+              "7",
+              "Lycée",
+              "2 min"
+            ],
+            [
+              "1",
+              "Gare",
+              "4 min"
+            ],
+            [
+              "4",
+              "Piscine",
+              "6 min"
+            ],
+            [
+              "7",
+              "Lycée",
+              "9 min"
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Le prochain bus pour le lycée part dans … minutes.",
+            "Bus raté ? La ligne 7 suivante part dans … minutes.",
+            "Pour la piscine, tu prends la ligne …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Tu t’es trompé·e ? Pas de souci",
+          "punkte": [
+            "Dans le bus, un écran affiche le prochain arrêt.",
+            "Appuie sur le bouton d’arrêt quand ton arrêt s’affiche.",
+            "Demande au chauffeur ou à la chauffeuse : « Est-ce que le bus s’arrête au lycée ? »",
+            "Trop loin ? Descends au prochain arrêt et reviens. Ça arrive à tout le monde."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta carte pour la poche : au recto ton trajet, au verso un numéro en cas d’urgence. Découpe, plie, garde-la sur toi.",
+          "symbole": [
+            "schreiben",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "feld",
+              "label": "Recto : mon trajet",
+              "beispiel": "p. ex. ligne 7 jusqu’au lycée, 4 arrêts, descendre après « Piscine »",
+              "hoehe": 4,
+              "zeichnen": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "feld",
+              "label": "Verso : si je suis perdu·e, j’appelle",
+              "beispiel": "nom et numéro de téléphone",
+              "hoehe": 4,
+              "zeichnen": true
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reconnaissent les chiffres jusqu’à 10 sur les bus et les écrans et comptent sûrement jusqu’à quatre arrêts.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Comment rentres-tu chez toi ? Avec quelle ligne ? » Noter au tableau les lignes de l’école.",
+          "Exercice 1 (5 min) : entourer chaque 7 ; attention au 1 et au 7.",
+          "Exercice 2 (10 min) : suivre la ligne avec le doigt et compter à voix haute : « un, deux, trois, quatre – on descend ».",
+          "Exercices 3 à 5 (15 min) : préparer son trajet, lire l’écran, remplir la carte de poche.",
+          "Transfert : faire le trajet ensemble. Le ou la jeune compte, l’accompagnant·e n’aide qu’en cas de besoin."
+        ],
+        "hintergrund": "Compter jusqu’à quatre et reconnaître les chiffres jusqu’à dix sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Pour les jeunes, beaucoup d’autonomie en dépend : prendre le bus, trouver l’étage dans l’ascenseur, le bon numéro de maison. Les compétences numériques précoces se construisent par étapes – de la correspondance terme à terme jusqu’à la lecture sûre des chiffres (Clements & Sarama, 2009). Qui a encore besoin de ces étapes à 15 ans les apprend le mieux là où elles servent. Que l’exercice ressemble au quotidien des adultes n’est pas un détail : les jeunes s’engagent quand l’apprentissage respecte leur statut (Yeager, Dahl & Dweck, 2018).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Clements, D. H. & Sarama, J. (2009). Learning and Teaching Early Math: The Learning Trajectories Approach. New York: Routledge.",
+          "Yeager, D. S., Dahl, R. E. & Dweck, C. S. (2018). Why interventions to influence adolescent behavior often fail but could succeed. Perspectives on Psychological Science, 13(1), 101–122."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les chiffres 1 à 5 et deux arrêts. Toucher chaque arrêt en comptant.",
+          "schwerer": "Préparer un trajet avec correspondance : deux lignes, compter les arrêts des deux parties."
+        },
+        "impulse": [
+          "Que fais-tu si tu t’es trompé·e en comptant ?",
+          "Comment reconnais-tu ton bus si deux arrivent en même temps ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : compter à voix basse ou sur les doigts est permis – les adultes aussi comptent dans le bus.",
+          "Observer les progrès : sur un trajet connu, la personne descend-elle au bon arrêt sans rappel ?"
+        ],
+        "achtung": "Convenir des premiers trajets en autonomie avec les parents et la direction compétente (responsable). Une carte avec un numéro de téléphone d’urgence va dans la poche.",
+        "material": "Plan des lignes ou photos des arrêts autour de l’école ; pour le transfert, un·e accompagnant·e"
+      }
+    }
+  },
+  {
+    "id": "einkaufen-stueck-fuer-stueck",
+    "bereich": "alltag",
+    "thema": "selbststaendig",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "KOG-25",
+      "KOG-29"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Einkaufen",
+      "Zählen bis 10",
+      "Mengen",
+      "Frühstück",
+      "Selbstständigkeit"
+    ],
+    "bild": "icon:shopping-cart",
+    "verwandt": [
+      "bus-linie-und-haltestellen",
+      "kochen-schritt-fuer-schritt"
+    ],
+    "de": {
+      "titel": "Einkaufen: Stück für Stück",
+      "untertitel": "Sechs Eier, drei Äpfel, zehn Brötchen: Wer sicher zählt, kauft genau das, was gebraucht wird.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Kleine Mengen siehst du auf einen Blick – wie beim Würfeln. Bei mehr Dingen zählst du: ein Ding, eine Zahl. Was gezählt ist, schiebst du zur Seite."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "So verzählst du dich nicht",
+          "punkte": [
+            "Zeig auf jedes Ding und sag eine Zahl.",
+            "Gezähltes zur Seite schieben oder abhaken.",
+            "Auf Packungen steht die Zahl oft schon drauf, z. B. „6 Eier“."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie viele Punkte sind es? Schau nur kurz hin und schreib die Zahl darunter.",
+          "hinweis": "Deck danach ab und prüf: Stimmt es?"
+        },
+        {
+          "art": "geo",
+          "spalten": 4,
+          "felder": [
+            {
+              "b": 40,
+              "h": 32,
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      7,
+                      3
+                    ],
+                    [
+                      33,
+                      3
+                    ],
+                    [
+                      33,
+                      29
+                    ],
+                    [
+                      7,
+                      29
+                    ]
+                  ]
+                },
+                {
+                  "t": "flaeche",
+                  "x": 11.5,
+                  "y": 7.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 17.5,
+                  "y": 13.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 23.5,
+                  "y": 19.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                }
+              ]
+            },
+            {
+              "b": 40,
+              "h": 32,
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      7,
+                      3
+                    ],
+                    [
+                      33,
+                      3
+                    ],
+                    [
+                      33,
+                      29
+                    ],
+                    [
+                      7,
+                      29
+                    ]
+                  ]
+                },
+                {
+                  "t": "flaeche",
+                  "x": 11.5,
+                  "y": 7.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 23.5,
+                  "y": 7.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 17.5,
+                  "y": 13.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 11.5,
+                  "y": 19.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 23.5,
+                  "y": 19.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                }
+              ]
+            },
+            {
+              "b": 40,
+              "h": 32,
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      7,
+                      3
+                    ],
+                    [
+                      33,
+                      3
+                    ],
+                    [
+                      33,
+                      29
+                    ],
+                    [
+                      7,
+                      29
+                    ]
+                  ]
+                },
+                {
+                  "t": "flaeche",
+                  "x": 11.5,
+                  "y": 7.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 23.5,
+                  "y": 19.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                }
+              ]
+            },
+            {
+              "b": 40,
+              "h": 32,
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      7,
+                      3
+                    ],
+                    [
+                      33,
+                      3
+                    ],
+                    [
+                      33,
+                      29
+                    ],
+                    [
+                      7,
+                      29
+                    ]
+                  ]
+                },
+                {
+                  "t": "flaeche",
+                  "x": 11.5,
+                  "y": 7.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 23.5,
+                  "y": 7.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 11.5,
+                  "y": 19.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 23.5,
+                  "y": 19.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Eierkartons: Wie viele Eier fehlen? Schreib die Zahl unter jeden Karton.",
+          "hinweis": "Ein ausgefülltes Feld ist ein Ei, ein weißes Feld ist leer."
+        },
+        {
+          "art": "bruchbilder",
+          "spalten": 3,
+          "items": [
+            {
+              "form": "rechteck",
+              "teile": 6,
+              "gefaerbt": 4,
+              "text": ""
+            },
+            {
+              "form": "rechteck",
+              "teile": 10,
+              "gefaerbt": 7,
+              "text": ""
+            },
+            {
+              "form": "rechteck",
+              "teile": 10,
+              "gefaerbt": 2,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Frühstück für die Klasse: Alle haben aufgeschrieben, was sie möchten. Zähl mit Strichen und schreib die Zahl dazu."
+        },
+        {
+          "art": "strichliste",
+          "kopf": [
+            "Was?",
+            "Striche",
+            "Wie viele?"
+          ],
+          "daten": [
+            "Milch",
+            "Brötchen",
+            "Milch",
+            "Äpfel",
+            "Brötchen",
+            "Milch",
+            "Käse",
+            "Brötchen",
+            "Milch",
+            "Äpfel",
+            "Brötchen",
+            "Milch",
+            "Brötchen",
+            "Käse",
+            "Milch",
+            "Brötchen",
+            "Äpfel",
+            "Brötchen"
+          ],
+          "zeilen": [
+            {
+              "text": "Milch"
+            },
+            {
+              "text": "Brötchen"
+            },
+            {
+              "text": "Äpfel"
+            },
+            {
+              "text": "Käse"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Im Lager: Zähl die Kisten und die Flaschen im Regal. Hak jedes gezählte Ding mit einem kleinen Strich ab."
+        },
+        {
+          "art": "geo",
+          "felder": [
+            {
+              "h": 54,
+              "elemente": [
+                {
+                  "t": "linie",
+                  "von": [
+                    4,
+                    24
+                  ],
+                  "bis": [
+                    176,
+                    24
+                  ],
+                  "stil": "dick",
+                  "farbe": "grau"
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    4,
+                    50
+                  ],
+                  "bis": [
+                    176,
+                    50
+                  ],
+                  "stil": "dick",
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      10,
+                      12
+                    ],
+                    [
+                      25,
+                      12
+                    ],
+                    [
+                      25,
+                      24
+                    ],
+                    [
+                      10,
+                      24
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    17.5,
+                    12
+                  ],
+                  "bis": [
+                    17.5,
+                    17
+                  ],
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      34,
+                      24
+                    ],
+                    [
+                      40,
+                      24
+                    ],
+                    [
+                      40,
+                      13
+                    ],
+                    [
+                      38,
+                      11
+                    ],
+                    [
+                      38,
+                      7
+                    ],
+                    [
+                      36,
+                      7
+                    ],
+                    [
+                      36,
+                      11
+                    ],
+                    [
+                      34,
+                      13
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      49,
+                      24
+                    ],
+                    [
+                      55,
+                      24
+                    ],
+                    [
+                      55,
+                      13
+                    ],
+                    [
+                      53,
+                      11
+                    ],
+                    [
+                      53,
+                      7
+                    ],
+                    [
+                      51,
+                      7
+                    ],
+                    [
+                      51,
+                      11
+                    ],
+                    [
+                      49,
+                      13
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      64,
+                      12
+                    ],
+                    [
+                      79,
+                      12
+                    ],
+                    [
+                      79,
+                      24
+                    ],
+                    [
+                      64,
+                      24
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    71.5,
+                    12
+                  ],
+                  "bis": [
+                    71.5,
+                    17
+                  ],
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      88,
+                      24
+                    ],
+                    [
+                      94,
+                      24
+                    ],
+                    [
+                      94,
+                      13
+                    ],
+                    [
+                      92,
+                      11
+                    ],
+                    [
+                      92,
+                      7
+                    ],
+                    [
+                      90,
+                      7
+                    ],
+                    [
+                      90,
+                      11
+                    ],
+                    [
+                      88,
+                      13
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      103,
+                      12
+                    ],
+                    [
+                      118,
+                      12
+                    ],
+                    [
+                      118,
+                      24
+                    ],
+                    [
+                      103,
+                      24
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    110.5,
+                    12
+                  ],
+                  "bis": [
+                    110.5,
+                    17
+                  ],
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      127,
+                      24
+                    ],
+                    [
+                      133,
+                      24
+                    ],
+                    [
+                      133,
+                      13
+                    ],
+                    [
+                      131,
+                      11
+                    ],
+                    [
+                      131,
+                      7
+                    ],
+                    [
+                      129,
+                      7
+                    ],
+                    [
+                      129,
+                      11
+                    ],
+                    [
+                      127,
+                      13
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      10,
+                      50
+                    ],
+                    [
+                      16,
+                      50
+                    ],
+                    [
+                      16,
+                      39
+                    ],
+                    [
+                      14,
+                      37
+                    ],
+                    [
+                      14,
+                      33
+                    ],
+                    [
+                      12,
+                      33
+                    ],
+                    [
+                      12,
+                      37
+                    ],
+                    [
+                      10,
+                      39
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      25,
+                      38
+                    ],
+                    [
+                      40,
+                      38
+                    ],
+                    [
+                      40,
+                      50
+                    ],
+                    [
+                      25,
+                      50
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    32.5,
+                    38
+                  ],
+                  "bis": [
+                    32.5,
+                    43
+                  ],
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      49,
+                      38
+                    ],
+                    [
+                      64,
+                      38
+                    ],
+                    [
+                      64,
+                      50
+                    ],
+                    [
+                      49,
+                      50
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    56.5,
+                    38
+                  ],
+                  "bis": [
+                    56.5,
+                    43
+                  ],
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      73,
+                      50
+                    ],
+                    [
+                      79,
+                      50
+                    ],
+                    [
+                      79,
+                      39
+                    ],
+                    [
+                      77,
+                      37
+                    ],
+                    [
+                      77,
+                      33
+                    ],
+                    [
+                      75,
+                      33
+                    ],
+                    [
+                      75,
+                      37
+                    ],
+                    [
+                      73,
+                      39
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      88,
+                      50
+                    ],
+                    [
+                      94,
+                      50
+                    ],
+                    [
+                      94,
+                      39
+                    ],
+                    [
+                      92,
+                      37
+                    ],
+                    [
+                      92,
+                      33
+                    ],
+                    [
+                      90,
+                      33
+                    ],
+                    [
+                      90,
+                      37
+                    ],
+                    [
+                      88,
+                      39
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      103,
+                      38
+                    ],
+                    [
+                      118,
+                      38
+                    ],
+                    [
+                      118,
+                      50
+                    ],
+                    [
+                      103,
+                      50
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    110.5,
+                    38
+                  ],
+                  "bis": [
+                    110.5,
+                    43
+                  ],
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      127,
+                      50
+                    ],
+                    [
+                      133,
+                      50
+                    ],
+                    [
+                      133,
+                      39
+                    ],
+                    [
+                      131,
+                      37
+                    ],
+                    [
+                      131,
+                      33
+                    ],
+                    [
+                      129,
+                      33
+                    ],
+                    [
+                      129,
+                      37
+                    ],
+                    [
+                      127,
+                      39
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      142,
+                      38
+                    ],
+                    [
+                      157,
+                      38
+                    ],
+                    [
+                      157,
+                      50
+                    ],
+                    [
+                      142,
+                      50
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    149.5,
+                    38
+                  ],
+                  "bis": [
+                    149.5,
+                    43
+                  ],
+                  "farbe": "grau"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Im Regal stehen … Kisten.",
+            "Im Regal stehen … Flaschen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Im Laden: Leg genau so viele in den Korb. Zähl leise mit und mach ein x, wenn es stimmt."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Was?",
+            "Wie viele?",
+            "Im Korb"
+          ],
+          "beispiel": [
+            "z. B. Milch",
+            "6",
+            "x"
+          ],
+          "zeilen": 4,
+          "breiten": [
+            3,
+            2,
+            2
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erfassen kleine Mengen bis fünf auf einen Blick und zählen Dinge bis zehn sicher ab – beim Planen und beim Einkaufen.",
+        "ablauf": [
+          "Einstieg (5 Min.): eine Einkaufstüte mit echten Dingen auspacken. „Wie viele Äpfel sind es? Ohne zu zählen?“",
+          "Aufgabe 1 (5 Min.): Würfelbilder nur kurz zeigen (Blatt umdrehen), dann die Zahl schreiben.",
+          "Aufgabe 2 bis 4 (20 Min.): Eierkartons, Strichliste, Regal; jedes gezählte Ding abhaken.",
+          "Aufgabe 5: die Liste beim echten Einkauf für das Klassenfrühstück benutzen."
+        ],
+        "hintergrund": "Mengen bis fünf auf einen Blick erfassen und bis zehn zählen sind frühe Ziele der ELDiB (Bergsson & Luckfiel, 1998). Beides baut aufeinander auf: Erst wer kleine Mengen sicher sieht, zählt größere ohne Fehler ab (Clements & Sarama, 2009). Im Jugendalter steckt in diesen Zielen viel Alltag – Rezepte, Einkauf, Lieferungen im Praktikum. Übungen mit Würfeln und Eierkartons sind kein Kinderkram, sondern die Bilder, die Erwachsene selbst zum Schätzen nutzen. Wichtig ist der echte Einsatz: Ein Einkauf für die Klasse gibt der Aufgabe Sinn und zeigt, dass die Person gebraucht wird (Yeager, Dahl & Dweck, 2018).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Clements, D. H. & Sarama, J. (2009). Learning and Teaching Early Math: The Learning Trajectories Approach. New York: Routledge.",
+          "Yeager, D. S., Dahl, R. E. & Dweck, C. S. (2018). Why interventions to influence adolescent behavior often fail but could succeed. Perspectives on Psychological Science, 13(1), 101–122."
+        ],
+        "differenzierung": {
+          "leichter": "Mit echten Dingen statt Bildern zählen; Mengen nur bis fünf. Jede gezählte Sache in eine Kiste legen.",
+          "schwerer": "Für das Frühstück einkaufen und vorher mit Preisen rechnen: Wie viel kostet alles zusammen?"
+        },
+        "impulse": [
+          "Wo musst du im Alltag genau zählen?",
+          "Was machst du, wenn du nicht mehr weißt, wo du warst?"
+        ],
+        "tipps": [
+          "Würde wahren: Zählen mit dem Finger oder halblaut ist erlaubt. Beim echten Einkauf zu zweit gehen, damit niemand vor der Kasse unter Druck gerät.",
+          "Fortschritt beobachten: Holt die Person beim nächsten Einkauf oder im Praktikum die verlangte Menge ohne Nachzählen der Begleitung?"
+        ],
+        "material": "Echte Dinge zum Zählen (Äpfel, Eierkarton), Geld für das Klassenfrühstück"
+      }
+    },
+    "fr": {
+      "titel": "Faire les courses : pièce par pièce",
+      "untertitel": "Six œufs, trois pommes, dix petits pains : qui compte sûrement achète exactement ce qu’il faut.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Les petites quantités se voient d’un coup d’œil – comme avec un dé. Quand il y a plus d’objets, tu comptes : un objet, un nombre. Ce qui est compté, tu le pousses de côté."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Pour ne pas te tromper",
+          "punkte": [
+            "Montre chaque objet et dis un nombre.",
+            "Pousse de côté ou coche ce qui est compté.",
+            "Sur les emballages, le nombre est souvent indiqué, p. ex. « 6 œufs »."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Combien de points y a-t-il ? Regarde juste un instant et écris le nombre dessous.",
+          "hinweis": "Ensuite, cache et vérifie : est-ce juste ?"
+        },
+        {
+          "art": "geo",
+          "spalten": 4,
+          "felder": [
+            {
+              "b": 40,
+              "h": 32,
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      7,
+                      3
+                    ],
+                    [
+                      33,
+                      3
+                    ],
+                    [
+                      33,
+                      29
+                    ],
+                    [
+                      7,
+                      29
+                    ]
+                  ]
+                },
+                {
+                  "t": "flaeche",
+                  "x": 11.5,
+                  "y": 7.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 17.5,
+                  "y": 13.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 23.5,
+                  "y": 19.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                }
+              ]
+            },
+            {
+              "b": 40,
+              "h": 32,
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      7,
+                      3
+                    ],
+                    [
+                      33,
+                      3
+                    ],
+                    [
+                      33,
+                      29
+                    ],
+                    [
+                      7,
+                      29
+                    ]
+                  ]
+                },
+                {
+                  "t": "flaeche",
+                  "x": 11.5,
+                  "y": 7.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 23.5,
+                  "y": 7.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 17.5,
+                  "y": 13.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 11.5,
+                  "y": 19.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 23.5,
+                  "y": 19.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                }
+              ]
+            },
+            {
+              "b": 40,
+              "h": 32,
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      7,
+                      3
+                    ],
+                    [
+                      33,
+                      3
+                    ],
+                    [
+                      33,
+                      29
+                    ],
+                    [
+                      7,
+                      29
+                    ]
+                  ]
+                },
+                {
+                  "t": "flaeche",
+                  "x": 11.5,
+                  "y": 7.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 23.5,
+                  "y": 19.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                }
+              ]
+            },
+            {
+              "b": 40,
+              "h": 32,
+              "text": "",
+              "elemente": [
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      7,
+                      3
+                    ],
+                    [
+                      33,
+                      3
+                    ],
+                    [
+                      33,
+                      29
+                    ],
+                    [
+                      7,
+                      29
+                    ]
+                  ]
+                },
+                {
+                  "t": "flaeche",
+                  "x": 11.5,
+                  "y": 7.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 23.5,
+                  "y": 7.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 11.5,
+                  "y": 19.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                },
+                {
+                  "t": "flaeche",
+                  "x": 23.5,
+                  "y": 19.5,
+                  "b": 5,
+                  "h": 5,
+                  "rx": 2.5,
+                  "ton": "grau"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Boîtes d’œufs : combien d’œufs manque-t-il ? Écris le nombre sous chaque boîte.",
+          "hinweis": "Une case remplie est un œuf, une case blanche est vide."
+        },
+        {
+          "art": "bruchbilder",
+          "spalten": 3,
+          "items": [
+            {
+              "form": "rechteck",
+              "teile": 6,
+              "gefaerbt": 4,
+              "text": ""
+            },
+            {
+              "form": "rechteck",
+              "teile": 10,
+              "gefaerbt": 7,
+              "text": ""
+            },
+            {
+              "form": "rechteck",
+              "teile": 10,
+              "gefaerbt": 2,
+              "text": ""
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Petit-déjeuner de la classe : chacun·e a noté ce qu’il ou elle veut. Compte avec des bâtons et écris le nombre."
+        },
+        {
+          "art": "strichliste",
+          "kopf": [
+            "Quoi ?",
+            "Bâtons",
+            "Combien ?"
+          ],
+          "daten": [
+            "lait",
+            "petit pain",
+            "lait",
+            "pommes",
+            "petit pain",
+            "lait",
+            "fromage",
+            "petit pain",
+            "lait",
+            "pommes",
+            "petit pain",
+            "lait",
+            "petit pain",
+            "fromage",
+            "lait",
+            "petit pain",
+            "pommes",
+            "petit pain"
+          ],
+          "zeilen": [
+            {
+              "text": "lait"
+            },
+            {
+              "text": "petit pain"
+            },
+            {
+              "text": "pommes"
+            },
+            {
+              "text": "fromage"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Au dépôt : compte les cartons et les bouteilles sur l’étagère. Coche chaque objet compté d’un petit trait."
+        },
+        {
+          "art": "geo",
+          "felder": [
+            {
+              "h": 54,
+              "elemente": [
+                {
+                  "t": "linie",
+                  "von": [
+                    4,
+                    24
+                  ],
+                  "bis": [
+                    176,
+                    24
+                  ],
+                  "stil": "dick",
+                  "farbe": "grau"
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    4,
+                    50
+                  ],
+                  "bis": [
+                    176,
+                    50
+                  ],
+                  "stil": "dick",
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      10,
+                      12
+                    ],
+                    [
+                      25,
+                      12
+                    ],
+                    [
+                      25,
+                      24
+                    ],
+                    [
+                      10,
+                      24
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    17.5,
+                    12
+                  ],
+                  "bis": [
+                    17.5,
+                    17
+                  ],
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      34,
+                      24
+                    ],
+                    [
+                      40,
+                      24
+                    ],
+                    [
+                      40,
+                      13
+                    ],
+                    [
+                      38,
+                      11
+                    ],
+                    [
+                      38,
+                      7
+                    ],
+                    [
+                      36,
+                      7
+                    ],
+                    [
+                      36,
+                      11
+                    ],
+                    [
+                      34,
+                      13
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      49,
+                      24
+                    ],
+                    [
+                      55,
+                      24
+                    ],
+                    [
+                      55,
+                      13
+                    ],
+                    [
+                      53,
+                      11
+                    ],
+                    [
+                      53,
+                      7
+                    ],
+                    [
+                      51,
+                      7
+                    ],
+                    [
+                      51,
+                      11
+                    ],
+                    [
+                      49,
+                      13
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      64,
+                      12
+                    ],
+                    [
+                      79,
+                      12
+                    ],
+                    [
+                      79,
+                      24
+                    ],
+                    [
+                      64,
+                      24
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    71.5,
+                    12
+                  ],
+                  "bis": [
+                    71.5,
+                    17
+                  ],
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      88,
+                      24
+                    ],
+                    [
+                      94,
+                      24
+                    ],
+                    [
+                      94,
+                      13
+                    ],
+                    [
+                      92,
+                      11
+                    ],
+                    [
+                      92,
+                      7
+                    ],
+                    [
+                      90,
+                      7
+                    ],
+                    [
+                      90,
+                      11
+                    ],
+                    [
+                      88,
+                      13
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      103,
+                      12
+                    ],
+                    [
+                      118,
+                      12
+                    ],
+                    [
+                      118,
+                      24
+                    ],
+                    [
+                      103,
+                      24
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    110.5,
+                    12
+                  ],
+                  "bis": [
+                    110.5,
+                    17
+                  ],
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      127,
+                      24
+                    ],
+                    [
+                      133,
+                      24
+                    ],
+                    [
+                      133,
+                      13
+                    ],
+                    [
+                      131,
+                      11
+                    ],
+                    [
+                      131,
+                      7
+                    ],
+                    [
+                      129,
+                      7
+                    ],
+                    [
+                      129,
+                      11
+                    ],
+                    [
+                      127,
+                      13
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      10,
+                      50
+                    ],
+                    [
+                      16,
+                      50
+                    ],
+                    [
+                      16,
+                      39
+                    ],
+                    [
+                      14,
+                      37
+                    ],
+                    [
+                      14,
+                      33
+                    ],
+                    [
+                      12,
+                      33
+                    ],
+                    [
+                      12,
+                      37
+                    ],
+                    [
+                      10,
+                      39
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      25,
+                      38
+                    ],
+                    [
+                      40,
+                      38
+                    ],
+                    [
+                      40,
+                      50
+                    ],
+                    [
+                      25,
+                      50
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    32.5,
+                    38
+                  ],
+                  "bis": [
+                    32.5,
+                    43
+                  ],
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      49,
+                      38
+                    ],
+                    [
+                      64,
+                      38
+                    ],
+                    [
+                      64,
+                      50
+                    ],
+                    [
+                      49,
+                      50
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    56.5,
+                    38
+                  ],
+                  "bis": [
+                    56.5,
+                    43
+                  ],
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      73,
+                      50
+                    ],
+                    [
+                      79,
+                      50
+                    ],
+                    [
+                      79,
+                      39
+                    ],
+                    [
+                      77,
+                      37
+                    ],
+                    [
+                      77,
+                      33
+                    ],
+                    [
+                      75,
+                      33
+                    ],
+                    [
+                      75,
+                      37
+                    ],
+                    [
+                      73,
+                      39
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      88,
+                      50
+                    ],
+                    [
+                      94,
+                      50
+                    ],
+                    [
+                      94,
+                      39
+                    ],
+                    [
+                      92,
+                      37
+                    ],
+                    [
+                      92,
+                      33
+                    ],
+                    [
+                      90,
+                      33
+                    ],
+                    [
+                      90,
+                      37
+                    ],
+                    [
+                      88,
+                      39
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      103,
+                      38
+                    ],
+                    [
+                      118,
+                      38
+                    ],
+                    [
+                      118,
+                      50
+                    ],
+                    [
+                      103,
+                      50
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    110.5,
+                    38
+                  ],
+                  "bis": [
+                    110.5,
+                    43
+                  ],
+                  "farbe": "grau"
+                },
+                {
+                  "t": "vieleck",
+                  "fuellung": true,
+                  "punkte": [
+                    [
+                      127,
+                      50
+                    ],
+                    [
+                      133,
+                      50
+                    ],
+                    [
+                      133,
+                      39
+                    ],
+                    [
+                      131,
+                      37
+                    ],
+                    [
+                      131,
+                      33
+                    ],
+                    [
+                      129,
+                      33
+                    ],
+                    [
+                      129,
+                      37
+                    ],
+                    [
+                      127,
+                      39
+                    ]
+                  ]
+                },
+                {
+                  "t": "vieleck",
+                  "punkte": [
+                    [
+                      142,
+                      38
+                    ],
+                    [
+                      157,
+                      38
+                    ],
+                    [
+                      157,
+                      50
+                    ],
+                    [
+                      142,
+                      50
+                    ]
+                  ]
+                },
+                {
+                  "t": "linie",
+                  "von": [
+                    149.5,
+                    38
+                  ],
+                  "bis": [
+                    149.5,
+                    43
+                  ],
+                  "farbe": "grau"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Sur l’étagère, il y a … cartons.",
+            "Sur l’étagère, il y a … bouteilles."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Au magasin : mets exactement ce nombre dans le panier. Compte à voix basse et fais une croix quand c’est juste."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quoi ?",
+            "Combien ?",
+            "Dans le panier"
+          ],
+          "beispiel": [
+            "p. ex. lait",
+            "6",
+            "x"
+          ],
+          "zeilen": 4,
+          "breiten": [
+            3,
+            2,
+            2
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes saisissent d’un coup d’œil les petites quantités jusqu’à cinq et dénombrent sûrement jusqu’à dix – pour planifier et pour faire les courses.",
+        "ablauf": [
+          "Entrée en matière (5 min) : vider un sac de courses avec de vrais produits. « Combien de pommes ? Sans compter ? »",
+          "Exercice 1 (5 min) : montrer les dés un court instant (retourner la feuille), puis écrire le nombre.",
+          "Exercices 2 à 4 (20 min) : boîtes d’œufs, bâtons, étagère ; cocher chaque objet compté.",
+          "Exercice 5 : utiliser la liste lors des vraies courses pour le petit-déjeuner."
+        ],
+        "hintergrund": "Saisir d’un coup d’œil les quantités jusqu’à cinq et compter jusqu’à dix sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Les deux se construisent l’un sur l’autre : seul qui voit sûrement les petites quantités dénombre sans erreur les plus grandes (Clements & Sarama, 2009). À l’adolescence, ces objectifs touchent beaucoup au quotidien – recettes, courses, livraisons en stage. Les dés et les boîtes d’œufs ne sont pas des jeux d’enfants, mais les images que les adultes utilisent eux-mêmes pour estimer. L’usage réel compte : des courses pour la classe donnent du sens à la tâche et montrent que la personne est utile (Yeager, Dahl & Dweck, 2018).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Clements, D. H. & Sarama, J. (2009). Learning and Teaching Early Math: The Learning Trajectories Approach. New York: Routledge.",
+          "Yeager, D. S., Dahl, R. E. & Dweck, C. S. (2018). Why interventions to influence adolescent behavior often fail but could succeed. Perspectives on Psychological Science, 13(1), 101–122."
+        ],
+        "differenzierung": {
+          "leichter": "Compter avec de vrais objets plutôt qu’avec des images ; quantités jusqu’à cinq. Mettre chaque objet compté dans une caisse.",
+          "schwerer": "Faire les courses pour le petit-déjeuner et calculer avant avec les prix : combien coûte le tout ?"
+        },
+        "impulse": [
+          "Où dois-tu compter précisément au quotidien ?",
+          "Que fais-tu si tu ne sais plus où tu en étais ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : compter avec le doigt ou à mi-voix est permis. Faire les vraies courses à deux pour que personne ne se sente sous pression à la caisse.",
+          "Observer les progrès : lors des prochaines courses ou en stage, la personne rapporte-t-elle la quantité demandée sans que l’accompagnant·e recompte ?"
+        ],
+        "material": "Objets réels à compter (pommes, boîte d’œufs), argent pour le petit-déjeuner de la classe"
+      }
+    }
+  },
+  {
+    "id": "kochen-schritt-fuer-schritt",
+    "bereich": "alltag",
+    "thema": "selbststaendig",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "KOG-31"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Küche",
+      "Rezept",
+      "Reihenfolge",
+      "Bildfolge",
+      "Selbstständigkeit"
+    ],
+    "bild": "icon:chef-hat",
+    "verwandt": [
+      "einkaufen-stueck-fuer-stueck",
+      "was-ist-das-wofuer-ist-es"
+    ],
+    "de": {
+      "titel": "Kochen: Schritt für Schritt",
+      "untertitel": "Ein Rezept ist eine Reihenfolge. Wer die Schritte richtig ordnet, kocht sicher – und das Essen gelingt.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Erst das eine, dann das andere: Beim Kochen ist die Reihenfolge wichtig. Nudeln in kaltes Wasser? Dann werden sie weich und klebrig."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nudeln kochen: Die Karten sind durcheinander. Schneide sie aus und leg sie in die richtige Reihenfolge.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "karten": [
+            {
+              "bild": "icon:stopwatch",
+              "titel": "Wecker stellen",
+              "text": "10 Minuten kochen lassen."
+            },
+            {
+              "bild": "icon:droplet",
+              "titel": "Wasser in den Topf",
+              "text": "Den Topf halb voll machen."
+            },
+            {
+              "bild": "icon:bowl-spoon",
+              "titel": "Abgießen, Herd aus",
+              "text": "Mit dem Sieb. Vorsicht, heiß."
+            },
+            {
+              "bild": "icon:hand-sanitizer",
+              "titel": "Hände waschen",
+              "text": "Mit Seife, 20 Sekunden."
+            },
+            {
+              "bild": "icon:bowl",
+              "titel": "Nudeln hinein",
+              "text": "Erst, wenn das Wasser kocht."
+            },
+            {
+              "bild": "icon:flame",
+              "titel": "Herd an",
+              "text": "Topf auf die Platte stellen."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib die Schritte in der richtigen Reihenfolge auf."
+        },
+        {
+          "art": "tagesplan",
+          "zeilen": [
+            {
+              "zeit": "1.",
+              "text": "Hände waschen",
+              "bild": "icon:hand-sanitizer"
+            }
+          ],
+          "leer": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nicht nur in der Küche: In welcher Reihenfolge passiert das? Schreib 1, 2 und 3 unter die Bilder."
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:ben:froh"
+              ],
+              "requisit": "icon:battery-4",
+              "text": "100 %. Los geht’s.",
+              "blase": "denken",
+              "untertitel": ""
+            },
+            {
+              "figuren": [
+                "figur:ben:enttaeuscht"
+              ],
+              "requisit": "icon:battery-1",
+              "text": "Akku leer. Mist.",
+              "blase": "denken",
+              "untertitel": ""
+            },
+            {
+              "figuren": [
+                "figur:ben:neutral"
+              ],
+              "requisit": "icon:bolt",
+              "text": "Kabel rein und warten.",
+              "blase": "denken",
+              "untertitel": ""
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Rezept: Wähl ein einfaches Essen, das du magst. Schreib die Schritte der Reihe nach auf."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Schritt",
+            "Was mache ich?",
+            "Was brauche ich?"
+          ],
+          "beispiel": [
+            "1",
+            "Brot toasten",
+            "Toaster, 2 Scheiben Brot"
+          ],
+          "nummern": 2,
+          "zeilen": 4,
+          "breiten": [
+            1,
+            4,
+            4
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Sicher in der Küche",
+          "punkte": [
+            "Topfgriffe nach innen drehen.",
+            "Heißes Wasser vom Körper weg abgießen.",
+            "Herd aus, bevor du die Küche verlässt."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen ordnen eine Bildfolge von vier bis sechs Schritten richtig, erklären die Reihenfolge und übertragen sie auf ein eigenes einfaches Rezept.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was passiert, wenn man Nudeln in kaltes Wasser gibt?“ Kurz erzählen lassen.",
+          "Aufgabe 1 (10 Min.): Karten ausschneiden und legen; die Person erklärt: „Zuerst …, dann …“.",
+          "Aufgabe 2 und 3 (10 Min.): die Reihenfolge abschreiben (Karten dürfen liegen bleiben), dann die Bildfolge nummerieren.",
+          "Aufgabe 4 (10 Min.): eigenes Rezept planen, Achtung-Kasten gemeinsam lesen.",
+          "Transfer: das Rezept in der Schulküche kochen; die Karten liegen als Plan neben dem Herd."
+        ],
+        "hintergrund": "Eine Bildfolge in die richtige Reihenfolge bringen ist ein frühes Ziel der ELDiB (Bergsson & Luckfiel, 1998). Dahinter steckt Planen: verstehen, dass Handlungen aufeinander aufbauen. Jugendliche, die das noch üben, profitieren von festen, sichtbaren Abläufen, wie sie der TEACCH-Ansatz nutzt (Mesibov, Shea & Schopler, 2004). Die Küche bietet dafür einen erwachsenen Rahmen mit echtem Ergebnis. Zugleich lernen die Jugendlichen Hygieneregeln, die zu den Grundlagen sicherer Lebensmittelzubereitung gehören (WHO, 2006). Bildkarten, die nach der Stunde am Herd hängen, machen aus der Übung eine Hilfe für den Alltag.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer.",
+          "World Health Organization (2006). Five Keys to Safer Food Manual. Genf: WHO."
+        ],
+        "differenzierung": {
+          "leichter": "Nur vier Karten (Hände waschen, Wasser, Herd an, Nudeln hinein). Mit echten Gegenständen nachspielen.",
+          "schwerer": "Ein Rezept mit zwei Teilen planen (z. B. Nudeln und Soße): Was läuft gleichzeitig?"
+        },
+        "impulse": [
+          "Welcher Schritt darf auf keinen Fall fehlen?",
+          "Wo brauchst du im Alltag noch eine feste Reihenfolge?"
+        ],
+        "tipps": [
+          "Würde wahren: Die Karten als Arbeitshilfe einführen, wie sie auch in Großküchen hängen – nicht als Nachhilfe.",
+          "Fortschritt beobachten: Kocht die Person das Rezept beim zweiten Mal mit weniger Blicken auf die Karten und ohne Erinnerung an die Hygiene?"
+        ],
+        "achtung": "Beim Kochen immer eine Aufsicht. Allergien und Essensregeln (z. B. Religion, Vegetarisch) vorher klären.",
+        "material": "Scheren; für den Transfer Schulküche, Topf, Sieb, Nudeln"
+      }
+    },
+    "fr": {
+      "titel": "Cuisiner : étape par étape",
+      "untertitel": "Une recette est une suite d’étapes. Qui les met dans le bon ordre cuisine en sécurité – et le plat est réussi.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "D’abord une chose, puis l’autre : en cuisine, l’ordre compte. Des pâtes dans l’eau froide ? Elles deviennent molles et collantes."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cuire des pâtes : les cartes sont mélangées. Découpe-les et remets-les dans le bon ordre.",
+          "symbole": [
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "karten": [
+            {
+              "bild": "icon:stopwatch",
+              "titel": "Régler le minuteur",
+              "text": "Laisser cuire 10 minutes."
+            },
+            {
+              "bild": "icon:droplet",
+              "titel": "De l’eau dans la casserole",
+              "text": "Remplir la casserole à moitié."
+            },
+            {
+              "bild": "icon:bowl-spoon",
+              "titel": "Égoutter, éteindre",
+              "text": "Avec la passoire. Attention, c’est chaud."
+            },
+            {
+              "bild": "icon:hand-sanitizer",
+              "titel": "Se laver les mains",
+              "text": "Avec du savon, 20 secondes."
+            },
+            {
+              "bild": "icon:bowl",
+              "titel": "Ajouter les pâtes",
+              "text": "Seulement quand l’eau bout."
+            },
+            {
+              "bild": "icon:flame",
+              "titel": "Allumer la plaque",
+              "text": "Poser la casserole sur la plaque."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris les étapes dans le bon ordre."
+        },
+        {
+          "art": "tagesplan",
+          "zeilen": [
+            {
+              "zeit": "1.",
+              "text": "Se laver les mains",
+              "bild": "icon:hand-sanitizer"
+            }
+          ],
+          "leer": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pas seulement en cuisine : dans quel ordre cela se passe-t-il ? Écris 1, 2 et 3 sous les images."
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:ben:froh"
+              ],
+              "requisit": "icon:battery-4",
+              "text": "100 %. C’est parti.",
+              "blase": "denken",
+              "untertitel": ""
+            },
+            {
+              "figuren": [
+                "figur:ben:enttaeuscht"
+              ],
+              "requisit": "icon:battery-1",
+              "text": "Plus de batterie. Zut.",
+              "blase": "denken",
+              "untertitel": ""
+            },
+            {
+              "figuren": [
+                "figur:ben:neutral"
+              ],
+              "requisit": "icon:bolt",
+              "text": "Je branche et j’attends.",
+              "blase": "denken",
+              "untertitel": ""
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta recette : choisis un plat simple que tu aimes. Écris les étapes dans l’ordre."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Étape",
+            "Que fais-je ?",
+            "De quoi ai-je besoin ?"
+          ],
+          "beispiel": [
+            "1",
+            "Griller le pain",
+            "grille-pain, 2 tranches de pain"
+          ],
+          "nummern": 2,
+          "zeilen": 4,
+          "breiten": [
+            1,
+            4,
+            4
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "En sécurité dans la cuisine",
+          "punkte": [
+            "Tourner les poignées des casseroles vers l’intérieur.",
+            "Égoutter l’eau chaude loin du corps.",
+            "Éteindre la plaque avant de quitter la cuisine."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes remettent dans l’ordre une suite de quatre à six images, expliquent l’ordre choisi et l’appliquent à une recette simple de leur choix.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Que se passe-t-il si on met les pâtes dans l’eau froide ? » Laisser raconter.",
+          "Exercice 1 (10 min) : découper et poser les cartes ; le ou la jeune explique : « D’abord …, ensuite … ».",
+          "Exercices 2 et 3 (10 min) : recopier l’ordre (les cartes restent sur la table), puis numéroter la suite d’images.",
+          "Exercice 4 (10 min) : préparer sa recette, lire ensemble l’encadré « attention ».",
+          "Transfert : cuisiner la recette dans la cuisine de l’école ; les cartes servent de plan à côté de la plaque."
+        ],
+        "hintergrund": "Remettre une suite d’images dans l’ordre est un objectif précoce de l’ELDiB (Bergsson & Luckfiel, 1998). Il s’agit de planifier : comprendre que les actions s’enchaînent. Les jeunes qui s’y exercent encore profitent de déroulements fixes et visibles, comme dans l’approche TEACCH (Mesibov, Shea & Schopler, 2004). La cuisine offre un cadre adulte avec un vrai résultat. En même temps, les jeunes apprennent des règles d’hygiène qui font partie des bases d’une préparation sûre des aliments (OMS, 2006). Des cartes affichées près de la plaque après la séance font de l’exercice une aide au quotidien.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer.",
+          "World Health Organization (2006). Five Keys to Safer Food Manual. Genf: WHO."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement quatre cartes (mains, eau, plaque, pâtes). Rejouer la suite avec de vrais objets.",
+          "schwerer": "Préparer une recette en deux parties (p. ex. pâtes et sauce) : qu’est-ce qui se fait en même temps ?"
+        },
+        "impulse": [
+          "Quelle étape ne doit surtout pas manquer ?",
+          "Où as-tu besoin d’un ordre fixe au quotidien ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : présenter les cartes comme une aide de travail, comme celles affichées dans les cuisines professionnelles – pas comme du rattrapage.",
+          "Observer les progrès : la deuxième fois, la personne cuisine-t-elle en regardant moins les cartes et sans rappel pour l’hygiène ?"
+        ],
+        "achtung": "Toujours une surveillance pendant la cuisine. Clarifier avant les allergies et les règles alimentaires (p. ex. religion, végétarien).",
+        "material": "Ciseaux ; pour le transfert, cuisine de l’école, casserole, passoire, pâtes"
+      }
+    }
+  },
+  {
+    "id": "was-ist-das-wofuer-ist-es",
+    "bereich": "alltag",
+    "thema": "selbststaendig",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–40 Min.",
+    "eldib": [
+      "KOG-14",
+      "KOG-15"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Werkzeug",
+      "Wortschatz",
+      "Praktikum",
+      "Werkstatt",
+      "Haushalt"
+    ],
+    "bild": "icon:tools",
+    "verwandt": [
+      "kochen-schritt-fuer-schritt",
+      "ordnung-im-lager"
+    ],
+    "de": {
+      "titel": "Was ist das? Wofür ist es?",
+      "untertitel": "Im Praktikum, in der Küche, zu Hause: Wer die Dinge benennen kann und weiß, wofür sie sind, arbeitet sicher und schnell.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Wie heißt das? Schreib das Wort dazu oder sag es.",
+          "hinweis": "Hammer · Schere · Lineal · Pinsel · Eimer · Schlüssel · Taschenrechner · Leiter · Schaufel"
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:hammer",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:scissors",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:ruler",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:brush",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:bucket",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:key",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:calculator",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:ladder",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:shovel",
+              "text": "________________"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wofür braucht man das? Verbinde."
+        },
+        {
+          "art": "zuordnen",
+          "links": [
+            "Hammer",
+            "Schere",
+            "Lineal",
+            "Eimer",
+            "Schlüssel"
+          ],
+          "rechts": [
+            "einen Nagel in die Wand schlagen",
+            "Wasser zum Putzen tragen",
+            "eine gerade Linie ziehen",
+            "eine Tür aufschließen",
+            "Papier schneiden"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was brauchst du für diese Arbeit? Schreib es auf."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Arbeit",
+            "Das brauche ich"
+          ],
+          "beispiel": [
+            "z. B. den Boden wischen",
+            "Eimer, Wasser, Wischmopp"
+          ],
+          "werte": [
+            [
+              "ein Bild aufhängen",
+              ""
+            ],
+            [
+              "ein Paket öffnen",
+              ""
+            ],
+            [
+              "einen Tisch ausmessen",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            2,
+            3
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Sicher arbeiten",
+          "punkte": [
+            "Jedes Werkzeug nur für seine Arbeit benutzen.",
+            "Nicht sicher, wie es geht? Erst fragen, dann anfangen.",
+            "Nach der Arbeit kommt alles an seinen Platz zurück."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen benennen Alltagsgegenstände und Werkzeuge auf Bildern und erklären, wofür man sie braucht.",
+        "ablauf": [
+          "Einstieg (5 Min.): eine Kiste mit echten Gegenständen. Ein Ding herausnehmen: „Was ist das? Wofür ist es?“",
+          "Aufgabe 1 (10 Min.): Bilder benennen; die Wörter im Hinweis dürfen helfen.",
+          "Aufgabe 2 (5 Min.): verbinden und zu zweit vergleichen.",
+          "Aufgabe 3 (10 Min.): Material für Arbeiten planen; danach die Dinge im Raum holen lassen.",
+          "Abschluss: Merkkasten lesen. „Welches Werkzeug möchtest du im Praktikum sicher können?“"
+        ],
+        "hintergrund": "Bilder benennen und den Gebrauchswert von Dingen kennen sind frühe kognitive Ziele der ELDiB (Bergsson & Luckfiel, 1998). Für Jugendliche entscheiden sie im Praktikum oft über den ersten Eindruck: Wer „Hol den Eimer“ nicht umsetzen kann, wirkt unsicher, obwohl nur Wörter fehlen. Wortschatz wächst am besten an echten Gegenständen und in echten Aufgaben; Bildkarten helfen als Brücke (Hodgdon, 1995). Werkzeuge und Küchengeräte sind dafür ideale Inhalte: Sie sind konkret, nützlich und eindeutig erwachsen. So wird an einem frühen Ziel gearbeitet, ohne die Person kleinzumachen (Wood, 1996).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Wood, M. M. (1996). Developmental Therapy – Developmental Teaching (3rd ed.). Austin: Pro-Ed."
+        ],
+        "differenzierung": {
+          "leichter": "Mit sechs echten Gegenständen arbeiten. Die Lehrperson nennt die Arbeit, die Person zeigt das passende Ding.",
+          "schwerer": "Eine Werkzeugliste für einen Arbeitsplatz im Praktikum schreiben: Name, Zweck, Platz."
+        },
+        "impulse": [
+          "Welches Werkzeug benutzt du zu Hause am häufigsten?",
+          "Was machst du, wenn du ein Wort nicht weißt?"
+        ],
+        "tipps": [
+          "Würde wahren: Fehlende Wörter nicht korrigieren, sondern beiläufig richtig wiederholen: „Ah, der Zollstock, genau.“",
+          "Fortschritt beobachten: Holt die Person auf Zuruf das richtige Ding, ohne dass jemand zeigt?"
+        ],
+        "material": "Eine Kiste mit echten Werkzeugen und Küchengeräten"
+      }
+    },
+    "fr": {
+      "titel": "Qu’est-ce que c’est ? À quoi ça sert ?",
+      "untertitel": "En stage, à la cuisine, à la maison : qui sait nommer les objets et à quoi ils servent travaille vite et en sécurité.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Comment ça s’appelle ? Écris le mot ou dis-le.",
+          "hinweis": "marteau · ciseaux · règle · pinceau · seau · clé · calculatrice · échelle · pelle"
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:hammer",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:scissors",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:ruler",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:brush",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:bucket",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:key",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:calculator",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:ladder",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:shovel",
+              "text": "________________"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi ça sert ? Relie."
+        },
+        {
+          "art": "zuordnen",
+          "links": [
+            "le marteau",
+            "les ciseaux",
+            "la règle",
+            "le seau",
+            "la clé"
+          ],
+          "rechts": [
+            "enfoncer un clou dans le mur",
+            "porter de l’eau pour nettoyer",
+            "tracer un trait droit",
+            "ouvrir une porte à clé",
+            "couper du papier"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "De quoi as-tu besoin pour ce travail ? Écris-le."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Travail",
+            "J’ai besoin de"
+          ],
+          "beispiel": [
+            "p. ex. laver le sol",
+            "seau, eau, serpillière"
+          ],
+          "werte": [
+            [
+              "accrocher un tableau",
+              ""
+            ],
+            [
+              "ouvrir un colis",
+              ""
+            ],
+            [
+              "mesurer une table",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            2,
+            3
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Travailler en sécurité",
+          "punkte": [
+            "Utiliser chaque outil seulement pour son travail.",
+            "Pas sûr·e de savoir faire ? D’abord demander, ensuite commencer.",
+            "Après le travail, tout retourne à sa place."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes nomment des objets du quotidien et des outils sur des images et expliquent à quoi ils servent.",
+        "ablauf": [
+          "Entrée en matière (5 min) : une caisse avec de vrais objets. En sortir un : « Qu’est-ce que c’est ? À quoi ça sert ? »",
+          "Exercice 1 (10 min) : nommer les images ; les mots de l’aide peuvent servir.",
+          "Exercice 2 (5 min) : relier et comparer à deux.",
+          "Exercice 3 (10 min) : prévoir le matériel pour des travaux ; ensuite, faire chercher les objets dans la salle.",
+          "Clôture : lire l’encadré. « Quel outil veux-tu maîtriser en stage ? »"
+        ],
+        "hintergrund": "Nommer des images et connaître l’usage des objets sont des objectifs cognitifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Pour les jeunes, ils décident souvent de la première impression en stage : qui ne sait pas répondre à « Va chercher le seau » paraît peu sûr·e, alors qu’il ne manque que des mots. Le vocabulaire se développe le mieux avec de vrais objets et de vraies tâches ; les cartes illustrées servent de pont (Hodgdon, 1995). Outils et ustensiles de cuisine sont des contenus idéaux : concrets, utiles et clairement adultes. On travaille ainsi un objectif précoce sans rabaisser la personne (Wood, 1996).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Wood, M. M. (1996). Developmental Therapy – Developmental Teaching (3rd ed.). Austin: Pro-Ed."
+        ],
+        "differenzierung": {
+          "leichter": "Travailler avec six objets réels. L’adulte nomme le travail, le ou la jeune montre l’objet qui convient.",
+          "schwerer": "Rédiger une liste d’outils pour un poste de stage : nom, usage, emplacement."
+        },
+        "impulse": [
+          "Quel outil utilises-tu le plus souvent à la maison ?",
+          "Que fais-tu si tu ne connais pas un mot ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : ne pas corriger les mots manquants, mais les reprendre naturellement : « Ah, le mètre, exactement. »",
+          "Observer les progrès : la personne rapporte-t-elle le bon objet sur simple demande, sans qu’on le lui montre ?"
+        ],
+        "material": "Une caisse avec de vrais outils et ustensiles de cuisine"
+      }
+    }
+  },
+  {
+    "id": "gegensaetze-im-alltag",
+    "bereich": "alltag",
+    "thema": "selbststaendig",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–40 Min.",
+    "eldib": [
+      "KOG-20"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Gegenteile",
+      "Schilder",
+      "Handy",
+      "Wortschatz",
+      "Selbstständigkeit"
+    ],
+    "bild": "icon:door",
+    "verwandt": [
+      "schilder-form-und-farbe"
+    ],
+    "de": {
+      "titel": "Drücken oder ziehen? Gegensätze im Alltag",
+      "untertitel": "Offen oder geschlossen, voll oder leer, an oder aus: Wer Gegensätze kennt, versteht Schilder, Knöpfe und Anzeigen schneller.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Viele Dinge gibt es als Paar: Das eine ist das Gegenteil vom anderen. An der Tür, am Wasserhahn, am Handy – überall musst du schnell entscheiden."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was ist das Gegenteil? Verbinde."
+        },
+        {
+          "art": "zuordnen",
+          "links": [
+            "offen",
+            "Eingang",
+            "heiß",
+            "voll",
+            "an",
+            "laut",
+            "drücken"
+          ],
+          "rechts": [
+            "leise",
+            "aus",
+            "ziehen",
+            "geschlossen",
+            "kalt",
+            "Ausgang",
+            "leer"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was zeigt das Bild? Kreise das richtige Wort ein."
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:lock-open",
+              "text": "offen – geschlossen"
+            },
+            {
+              "bild": "icon:battery-1",
+              "text": "voll – leer"
+            },
+            {
+              "bild": "icon:door-exit",
+              "text": "Eingang – Ausgang"
+            },
+            {
+              "bild": "icon:temperature-snow",
+              "text": "heiß – kalt"
+            },
+            {
+              "bild": "icon:battery-4",
+              "text": "voll – leer"
+            },
+            {
+              "bild": "icon:lock",
+              "text": "offen – geschlossen"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schau auf dein Handy: Was ist gerade an, was ist aus? Kreuze an."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "WLAN",
+            "Ton",
+            "Taschenlampe",
+            "Bluetooth",
+            "dunkle Anzeige (Dunkelmodus)"
+          ],
+          "optionen": [
+            "an",
+            "aus"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo im Alltag findest du diese Gegensätze? Schreib ein Beispiel."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Gegensatz",
+            "Wo?"
+          ],
+          "beispiel": [
+            "z. B. drücken – ziehen",
+            "an der Tür vom Supermarkt"
+          ],
+          "werte": [
+            [
+              "heiß – kalt",
+              ""
+            ],
+            [
+              "voll – leer",
+              ""
+            ],
+            [
+              "an – aus",
+              ""
+            ],
+            [
+              "schnell – langsam",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            2,
+            3
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ergänze das Gegenteil."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Die Tür ist nicht offen. Sie ist …",
+            "Der Akku ist nicht voll. Er ist …",
+            "Das Wasser ist nicht heiß. Es ist …",
+            "Der Bus fährt nicht schnell. Er fährt …",
+            "Die Musik ist nicht laut. Sie ist …",
+            "Das Licht ist nicht an. Es ist …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "An Türen in Luxemburg",
+          "text": "Oft steht dort Französisch: „poussez“ heißt drücken, „tirez“ heißt ziehen. Auf Luxemburgisch: „drécken“ und „zéien“."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen nennen zu häufigen Eigenschaften das Gegenteil und erkennen Gegensätze auf Schildern, Geräten und Anzeigen.",
+        "ablauf": [
+          "Einstieg (5 Min.): an der Klassentür „drücken“ und „ziehen“ vormachen. „Was ist das Gegenteil von offen?“",
+          "Aufgabe 1 und 2 (10 Min.): verbinden und einkreisen; Wörter dabei laut sagen.",
+          "Aufgabe 3 (5 Min.): am eigenen Handy prüfen; wer keins hat, nimmt das Tablet der Klasse.",
+          "Aufgabe 4 (10 Min.): Beispiele im Schulhaus suchen und fotografieren.",
+          "Aufgabe 5 und Abschluss: Sätze ergänzen; Tipp-Kasten lesen – welche Sprachen stehen an den Türen der Schule?"
+        ],
+        "hintergrund": "Gegenteile verstehen und benennen ist ein frühes Ziel der ELDiB (Bergsson & Luckfiel, 1998). Das Denken in Gegensätzen ordnet die Welt: offen oder zu, an oder aus, sicher oder gefährlich. Für Jugendliche ist das sehr praktisch – an Türen, Geräten, Anzeigen und in Arbeitsanweisungen. In Luxemburg kommt die Mehrsprachigkeit dazu: Das gleiche Paar steht auf Deutsch, Französisch oder Luxemburgisch an der Tür. Wird der eigene Sprachschatz als Stärke behandelt, lernen Jugendliche leichter (Busch, 2012). Bilder und echte Dinge als Stütze helfen denen, die mit Sprache Mühe haben (Hodgdon, 1995).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Busch, B. (2012). The linguistic repertoire revisited. Applied Linguistics, 33(5), 503–523.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Nur vier Paare mit echten Dingen zeigen: Tür auf und zu, Licht an und aus, Glas voll und leer, Wasser heiß und kalt.",
+          "schwerer": "Ein Gegensatz-Plakat in drei Sprachen für die Klasse gestalten."
+        },
+        "impulse": [
+          "Wo hast du schon einmal „drücken“ und „ziehen“ verwechselt?",
+          "Welche Gegensätze sind bei der Arbeit wichtig?"
+        ],
+        "tipps": [
+          "Würde wahren: Verwechslungen mit Humor nehmen – an Türen passiert das allen. Nie vorführen lassen, was jemand nicht kann.",
+          "Fortschritt beobachten: Nennt die Person zu einem Wort spontan das Gegenteil und reagiert sie richtig auf Türschilder und Anzeigen?"
+        ],
+        "material": "Handy oder Tablet für Aufgabe 3 und 4"
+      }
+    },
+    "fr": {
+      "titel": "Pousser ou tirer ? Les contraires au quotidien",
+      "untertitel": "Ouvert ou fermé, plein ou vide, allumé ou éteint : qui connaît les contraires comprend plus vite panneaux, boutons et écrans.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Beaucoup de choses vont par paires : l’une est le contraire de l’autre. À la porte, au robinet, sur le téléphone – partout, tu dois décider vite."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel est le contraire ? Relie."
+        },
+        {
+          "art": "zuordnen",
+          "links": [
+            "ouvert",
+            "entrée",
+            "chaud",
+            "plein",
+            "allumé",
+            "bruyant",
+            "pousser"
+          ],
+          "rechts": [
+            "silencieux",
+            "éteint",
+            "tirer",
+            "fermé",
+            "froid",
+            "sortie",
+            "vide"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que montre l’image ? Entoure le bon mot."
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:lock-open",
+              "text": "ouvert – fermé"
+            },
+            {
+              "bild": "icon:battery-1",
+              "text": "plein – vide"
+            },
+            {
+              "bild": "icon:door-exit",
+              "text": "entrée – sortie"
+            },
+            {
+              "bild": "icon:temperature-snow",
+              "text": "chaud – froid"
+            },
+            {
+              "bild": "icon:battery-4",
+              "text": "plein – vide"
+            },
+            {
+              "bild": "icon:lock",
+              "text": "ouvert – fermé"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Regarde ton téléphone : qu’est-ce qui est allumé, qu’est-ce qui est éteint ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "wifi",
+            "son",
+            "lampe de poche",
+            "Bluetooth",
+            "affichage sombre (mode sombre)"
+          ],
+          "optionen": [
+            "allumé",
+            "éteint"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où trouves-tu ces contraires au quotidien ? Écris un exemple."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Contraire",
+            "Où ?"
+          ],
+          "beispiel": [
+            "p. ex. pousser – tirer",
+            "à la porte du supermarché"
+          ],
+          "werte": [
+            [
+              "chaud – froid",
+              ""
+            ],
+            [
+              "plein – vide",
+              ""
+            ],
+            [
+              "allumé – éteint",
+              ""
+            ],
+            [
+              "rapide – lent",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            2,
+            3
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Complète avec le contraire."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "La porte n’est pas ouverte. Elle est …",
+            "La batterie n’est pas pleine. Elle est …",
+            "L’eau n’est pas chaude. Elle est …",
+            "Le bus ne roule pas vite. Il roule …",
+            "La musique n’est pas forte. Elle est …",
+            "La lumière n’est pas allumée. Elle est …"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Sur les portes au Luxembourg",
+          "text": "On y lit souvent de l’allemand ou du luxembourgeois : « drücken » ou « drécken » veut dire pousser, « ziehen » ou « zéien » veut dire tirer."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes donnent le contraire de qualités courantes et reconnaissent les contraires sur les panneaux, les appareils et les écrans.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer « pousser » et « tirer » à la porte de la classe. « Quel est le contraire d’ouvert ? »",
+          "Exercices 1 et 2 (10 min) : relier et entourer en disant les mots à voix haute.",
+          "Exercice 3 (5 min) : vérifier sur son téléphone ; sinon, sur la tablette de la classe.",
+          "Exercice 4 (10 min) : chercher des exemples dans l’école et les photographier.",
+          "Exercice 5 et clôture : compléter les phrases ; lire l’encadré – quelles langues voit-on sur les portes de l’école ?"
+        ],
+        "hintergrund": "Comprendre et nommer les contraires est un objectif précoce de l’ELDiB (Bergsson & Luckfiel, 1998). Penser en contraires organise le monde : ouvert ou fermé, allumé ou éteint, sûr ou dangereux. Pour les jeunes, c’est très concret – aux portes, sur les appareils, les écrans et dans les consignes de travail. Au Luxembourg s’ajoute le plurilinguisme : la même paire est écrite en allemand, en français ou en luxembourgeois. Quand le répertoire linguistique est traité comme une force, les jeunes apprennent plus facilement (Busch, 2012). Les images et les objets réels aident celles et ceux pour qui la langue est difficile (Hodgdon, 1995).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Busch, B. (2012). The linguistic repertoire revisited. Applied Linguistics, 33(5), 503–523.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement quatre paires montrées avec de vrais objets : porte ouverte et fermée, lumière allumée et éteinte, verre plein et vide, eau chaude et froide.",
+          "schwerer": "Réaliser pour la classe une affiche des contraires en trois langues."
+        },
+        "impulse": [
+          "Où as-tu déjà confondu « pousser » et « tirer » ?",
+          "Quels contraires sont importants au travail ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : prendre les confusions avec humour – aux portes, cela arrive à tout le monde. Ne jamais exposer ce que quelqu’un ne sait pas.",
+          "Observer les progrès : la personne donne-t-elle spontanément le contraire d’un mot et réagit-elle correctement aux panneaux et aux écrans ?"
+        ],
+        "material": "Téléphone ou tablette pour les exercices 3 et 4"
+      }
+    }
+  }
+]

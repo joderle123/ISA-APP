@@ -1,0 +1,2599 @@
+[
+  {
+    "id": "stimme-und-zeichen",
+    "bereich": "miteinander",
+    "thema": "sprechen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "K-1",
+      "SOZ-5"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Gesten",
+      "Laute",
+      "Nonverbale Kommunikation",
+      "Signale",
+      "Werkstatt",
+      "Sport"
+    ],
+    "bild": "icon:thumb-up",
+    "verwandt": [
+      "kurz-fragen-klar-bitten",
+      "warten-bis-ich-aufgerufen-werde"
+    ],
+    "de": {
+      "titel": "Ohne viele Worte: Stimme und Zeichen",
+      "untertitel": "In der lauten Werkstatt, beim Sport, im vollen Bus: Oft reicht ein Zeichen oder ein kurzer Laut. Beides kann man üben.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Nicht alles muss man in ganzen Sätzen sagen. Ein Nicken heißt ja. Ein „Mhm“ heißt: Ich höre zu. Wichtig ist nur, dass der andere dich versteht."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was bedeutet das Zeichen? Schreib es dazu oder mach es vor.",
+          "hinweis": "gut · nicht gut · Stopp · Moment, bitte · zwei, bitte · Ich höre nichts"
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:thumb-up",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:thumb-down",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:hand-stop",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:hand-finger",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:hand-two-fingers",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:ear-off",
+              "text": "________________"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was meint der Laut? Verbinde."
+        },
+        {
+          "art": "zuordnen",
+          "links": [
+            "„Mhm.“",
+            "„Psst.“",
+            "„Aua.“",
+            "„Hä?“",
+            "„Ähm …“",
+            "„Oh.“"
+          ],
+          "rechts": [
+            "Das überrascht mich.",
+            "Ich höre zu, sprich weiter.",
+            "Das tut weh.",
+            "Bitte leise sein.",
+            "Ich habe nicht verstanden.",
+            "Ich denke noch nach."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "„Hä?“ verstehen alle. Bei Erwachsenen und im Praktikum ist „Wie bitte?“ besser."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welches Zeichen oder welcher Laut passt? Schreib es auf."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "Mein Zeichen oder Laut"
+          ],
+          "beispiel": [
+            "z. B. Der Trainer fragt: Alles okay?",
+            "Daumen hoch"
+          ],
+          "werte": [
+            [
+              "In der Werkstatt ist es laut. Du brauchst Hilfe.",
+              ""
+            ],
+            [
+              "Im Bus fragt jemand: Ist der Platz frei?",
+              ""
+            ],
+            [
+              "Beim Fußball willst du den Ball.",
+              ""
+            ],
+            [
+              "Jemand erzählt, und du hörst zu.",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            3,
+            2
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Probiert es zu zweit: Eine Person macht ein Zeichen oder einen Laut, die andere sagt, was es heißt.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Zeichen oder Laut",
+            "Das heißt",
+            "Verstanden?"
+          ],
+          "beispiel": [
+            "z. B. Kopf schütteln",
+            "nein",
+            "ja"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            3,
+            3,
+            2
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein eigenes Zeichen: Sprich es mit deiner Lehrperson ab."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Wenn ich Hilfe brauche, zeige ich …",
+            "Wenn ich eine Pause brauche, zeige ich …",
+            "Wenn mich jemand ruft, antworte ich mit …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen nutzen Laute und Gesten gezielt, um sich mitzuteilen, und verstehen die Zeichen anderer – als Ergänzung zur Sprache, nicht als Ersatz.",
+        "ablauf": [
+          "Einstieg (5 Min.): ohne Worte begrüßen – nur mit Blick, Nicken, Daumen. „Was habt ihr verstanden?“",
+          "Aufgabe 1 und 2 (10 Min.): Zeichen und Laute deuten, dabei vormachen.",
+          "Aufgabe 3 und 4 (15 Min.): Situationen klären, dann zu zweit ausprobieren.",
+          "Aufgabe 5 (5 Min.): ein eigenes Signal für Hilfe und Pause vereinbaren und im Alltag nutzen."
+        ],
+        "hintergrund": "Laute bilden und nonverbal in Kontakt treten gehören zu den ersten Kommunikationszielen der ELDiB (Bergsson & Luckfiel, 1998). Bei Jugendlichen, die wenig sprechen, ist das kein Rückschritt, sondern eine Brücke: Wer gehört und verstanden wird, versucht es öfter. Schon Watzlawick, Beavin und Jackson (1967) zeigten, dass Menschen nicht nicht kommunizieren können – Blick, Haltung und Laut tragen immer eine Botschaft. Vereinbarte Zeichen und Bildkarten senken die Hürde, sich zu melden (Hodgdon, 1995). Ziel bleibt, Zeichen und Worte nach und nach zu verbinden.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Daumen hoch, Stopp und Nicken; zeigen statt schreiben. Die Lehrperson macht vor, die Person macht nach.",
+          "schwerer": "Zeichen aus dem Sport oder der Werkstatt sammeln und der Klasse erklären."
+        },
+        "impulse": [
+          "Wo ist es so laut, dass nur Zeichen helfen?",
+          "Welches Zeichen kann leicht falsch verstanden werden?"
+        ],
+        "tipps": [
+          "Würde wahren: Niemanden zum Sprechen drängen. Jede Antwort zählt, auch ein Nicken.",
+          "Fortschritt beobachten: Nutzt die Person das vereinbarte Zeichen von sich aus und ergänzt sie es mit der Zeit durch ein Wort?"
+        ],
+        "achtung": "Spricht jemand kaum oder gar nicht, Hörvermögen und Sprachentwicklung fachlich abklären lassen und die zuständige Leitung (Responsable) einbeziehen."
+      }
+    },
+    "fr": {
+      "titel": "Sans beaucoup de mots : la voix et les gestes",
+      "untertitel": "À l’atelier bruyant, au sport, dans un bus plein : souvent, un geste ou un petit son suffit. Les deux s’entraînent.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "On n’a pas besoin de tout dire en phrases complètes. Hocher la tête veut dire oui. Un « mmh » veut dire : je t’écoute. L’important, c’est que l’autre te comprenne."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que veut dire ce geste ? Écris-le ou montre-le.",
+          "hinweis": "bien · pas bien · stop · un instant · deux, s’il vous plaît · je n’entends rien"
+        },
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:thumb-up",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:thumb-down",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:hand-stop",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:hand-finger",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:hand-two-fingers",
+              "text": "________________"
+            },
+            {
+              "bild": "icon:ear-off",
+              "text": "________________"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que veut dire ce son ? Relie."
+        },
+        {
+          "art": "zuordnen",
+          "links": [
+            "« Mmh. »",
+            "« Chut. »",
+            "« Aïe. »",
+            "« Hein ? »",
+            "« Euh … »",
+            "« Oh. »"
+          ],
+          "rechts": [
+            "Ça me surprend.",
+            "Je t’écoute, continue.",
+            "Ça fait mal.",
+            "Silence, s’il te plaît.",
+            "Je n’ai pas compris.",
+            "Je réfléchis encore."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "« Hein ? », tout le monde comprend. Avec les adultes et en stage, « Pardon ? » est mieux."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel geste ou quel son convient ? Écris-le."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "Mon geste ou mon son"
+          ],
+          "beispiel": [
+            "p. ex. L’entraîneur demande : ça va ?",
+            "pouce levé"
+          ],
+          "werte": [
+            [
+              "À l’atelier, il y a du bruit. Tu as besoin d’aide.",
+              ""
+            ],
+            [
+              "Dans le bus, on te demande : la place est libre ?",
+              ""
+            ],
+            [
+              "Au foot, tu veux le ballon.",
+              ""
+            ],
+            [
+              "Quelqu’un raconte et tu écoutes.",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            3,
+            2
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Essayez à deux : l’un·e fait un geste ou un son, l’autre dit ce que ça veut dire.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Geste ou son",
+            "Ça veut dire",
+            "Compris ?"
+          ],
+          "beispiel": [
+            "p. ex. secouer la tête",
+            "non",
+            "oui"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            3,
+            3,
+            2
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton propre signal : mets-toi d’accord avec ton enseignant·e."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Quand j’ai besoin d’aide, je montre …",
+            "Quand j’ai besoin d’une pause, je montre …",
+            "Quand quelqu’un m’appelle, je réponds par …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes utilisent des sons et des gestes de manière ciblée pour se faire comprendre et comprennent les signaux des autres – en complément de la parole, pas à sa place.",
+        "ablauf": [
+          "Entrée (5 min) : saluer sans mots – regard, hochement de tête, pouce. « Qu’avez-vous compris ? »",
+          "Exercices 1 et 2 (10 min) : interpréter gestes et sons en les montrant.",
+          "Exercices 3 et 4 (15 min) : clarifier les situations, puis essayer à deux.",
+          "Exercice 5 (5 min) : convenir d’un signal pour l’aide et la pause et l’utiliser au quotidien."
+        ],
+        "hintergrund": "Produire des sons et entrer en contact de manière non verbale font partie des premiers objectifs de communication de l’ELDiB (Bergsson & Luckfiel, 1998). Chez les jeunes qui parlent peu, ce n’est pas un recul, mais un pont : qui est entendu et compris essaie plus souvent. Watzlawick, Beavin et Jackson (1967) ont montré qu’on ne peut pas ne pas communiquer – regard, posture et son portent toujours un message. Des signaux convenus et des cartes illustrées abaissent le seuil pour se manifester (Hodgdon, 1995). Le but reste de relier peu à peu gestes et mots.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Watzlawick, P., Beavin, J. H. & Jackson, D. D. (1967). Pragmatics of Human Communication. New York: Norton.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement pouce levé, stop et hochement de tête ; montrer au lieu d’écrire. L’adulte montre, le ou la jeune imite.",
+          "schwerer": "Recueillir des signaux du sport ou de l’atelier et les expliquer à la classe."
+        },
+        "impulse": [
+          "Où est-ce si bruyant que seuls les gestes aident ?",
+          "Quel geste peut facilement être mal compris ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : ne pousser personne à parler. Chaque réponse compte, même un hochement de tête.",
+          "Observer les progrès : la personne utilise-t-elle d’elle-même le signal convenu et y ajoute-t-elle peu à peu un mot ?"
+        ],
+        "achtung": "Si quelqu’un parle très peu ou pas du tout, faire vérifier l’audition et le langage par des spécialistes et associer la direction compétente (responsable)."
+      }
+    }
+  },
+  {
+    "id": "kurz-fragen-klar-bitten",
+    "bereich": "miteinander",
+    "thema": "sprechen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "K-6",
+      "K-7"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Fragen",
+      "Bitten",
+      "Höflichkeit",
+      "Praktikum",
+      "Freunde"
+    ],
+    "bild": "icon:message-2",
+    "verwandt": [
+      "stimme-und-zeichen",
+      "im-fundbuero-genau-beschreiben",
+      "szenen-proben-im-rollenspiel"
+    ],
+    "de": {
+      "titel": "Kurz fragen, klar bitten",
+      "untertitel": "Beim Chef, an der Kasse, bei Freunden: Wer mit Worten sagt, was er braucht, bekommt es öfter – und schneller.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Zeigen, ziehen oder einfach nehmen klappt oft nicht. Mit Worten geht es besser. Schon ein Wort hilft: „Ladekabel?“ Noch besser ist ein kurzer Satz."
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Bei Erwachsenen",
+              "punkte": [
+                "„Entschuldigung, …“",
+                "„Können Sie mir bitte …?“",
+                "„Ich brauche bitte …“",
+                "„Danke.“"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Bei Freunden",
+              "punkte": [
+                "„Hey, …“",
+                "„Gibst du mir mal …?“",
+                "„Leihst du mir kurz …?“",
+                "„Danke dir.“"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mit wem spricht die Person? Kreuze an."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "„Leihst du mir kurz dein Ladekabel?“",
+            "„Entschuldigung, wo finde ich die Kantine?“",
+            "„Können Sie mir bitte zeigen, wie die Maschine geht?“",
+            "„Gibst du mir mal den Ball?“",
+            "„Ich bräuchte bitte einen neuen Arbeitsplan.“"
+          ],
+          "optionen": [
+            "Erwachsene",
+            "Freunde"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was sagst du? Schreib einen kurzen Satz."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "Mein Satz"
+          ],
+          "beispiel": [
+            "z. B. Praktikum: Du findest den Besen nicht.",
+            "Entschuldigung, wo ist der Besen?"
+          ],
+          "werte": [
+            [
+              "Pause: Du willst beim Kicker mitspielen.",
+              ""
+            ],
+            [
+              "Kasse: Du brauchst eine Tüte.",
+              ""
+            ],
+            [
+              "Unterricht: Du hast die Aufgabe nicht verstanden.",
+              ""
+            ],
+            [
+              "Bus: Dein Freund sitzt auf deiner Jacke.",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            1,
+            1
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Übt zu zweit: Eine Person ist die Chefin im Praktikum, die andere fragt, was sie tun soll.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Ich"
+            },
+            {
+              "wer": "Chefin",
+              "text": "Ja, was gibt’s?"
+            },
+            {
+              "wer": "Ich"
+            },
+            {
+              "wer": "Chefin",
+              "text": "Gute Frage. Komm, ich zeig es dir."
+            },
+            {
+              "wer": "Ich"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Wenn das Wort nicht kommt",
+          "text": "Zeig auf das Ding und sag ein Wort dazu: „Das da, bitte.“ Oder steck dir eine Karte mit „Ich brauche Hilfe“ ein."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Woche: Wen hast du mit Worten gefragt? Schreib es auf."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wann?",
+            "Wen?",
+            "Was habe ich gesagt?",
+            "Hat es geklappt?"
+          ],
+          "beispiel": [
+            "z. B. Montag",
+            "Frau in der Kantine",
+            "„Ein Wasser, bitte.“",
+            "ja"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            2,
+            3,
+            4,
+            2
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen äußern Wünsche und Bitten mit Worten – gegenüber Erwachsenen höflich und gegenüber Gleichaltrigen locker, aber klar.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was machst du, wenn du im Praktikum etwas nicht findest?“ Antworten sammeln.",
+          "Merkkästen lesen und laut ausprobieren (5 Min.): derselbe Wunsch, zwei Tonlagen.",
+          "Aufgabe 1 und 2 (15 Min.): zuordnen, dann eigene Sätze schreiben oder sagen.",
+          "Aufgabe 3 (10 Min.): Rollenspiel; zuerst spielt die Lehrperson die Chefin.",
+          "Aufgabe 4 als Wochenauftrag: im Praktikum, in der Kantine, bei Freunden selbst fragen und notieren."
+        ],
+        "hintergrund": "Mit Wörtern etwas von Erwachsenen und von Gleichaltrigen bekommen sind frühe Ziele der ELDiB (Bergsson & Luckfiel, 1998). Wer stattdessen zieht, nimmt oder wartet, bis jemand es merkt, gerät leicht in Konflikte oder bleibt allein. Jugendliche holen sich oft erst spät Hilfe – auch aus Scham und weil sie nicht wissen, wie sie fragen sollen (Rickwood et al., 2005). Einfache Satzmuster nehmen diese Hürde. Weil es um Praktikum, Kantine und Freunde geht, wirkt das Üben erwachsen und respektiert den Status der Jugendlichen (Yeager, Dahl & Dweck, 2018).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Yeager, D. S., Dahl, R. E. & Dweck, C. S. (2018). Why interventions to influence adolescent behavior often fail but could succeed. Perspectives on Psychological Science, 13(1), 101–122."
+        ],
+        "differenzierung": {
+          "leichter": "Mit einem Wort plus Zeigen beginnen („Kabel?“), dann „bitte“ ergänzen. Satzkarten zum Ablesen bereitlegen.",
+          "schwerer": "Eine schwierige Bitte üben: um eine Verschiebung oder um Hilfe bei einer Aufgabe bitten."
+        },
+        "impulse": [
+          "Wen fragst du leicht, wen schwer – und warum?",
+          "Was passiert, wenn du einfach nimmst, statt zu fragen?"
+        ],
+        "tipps": [
+          "Würde wahren: nicht „Wie sagt man?“ fragen – das klingt nach Kindergarten. Lieber den Satz einmal richtig vormachen.",
+          "Fortschritt beobachten: Fragt die Person im Alltag mit Worten statt zu nehmen oder zu ziehen – bei Erwachsenen und bei Gleichaltrigen?"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Demander simplement, clairement",
+      "untertitel": "Avec la cheffe, à la caisse, entre ami·e·s : qui dit avec des mots ce dont il a besoin l’obtient plus souvent – et plus vite.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Montrer, tirer ou prendre, souvent ça ne marche pas. Avec des mots, ça va mieux. Un seul mot aide déjà : « Chargeur ? » Une courte phrase, c’est encore mieux."
+        },
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Avec les adultes",
+              "punkte": [
+                "« Excusez-moi, … »",
+                "« Pourriez-vous … s’il vous plaît ? »",
+                "« J’aurais besoin de … »",
+                "« Merci. »"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Entre ami·e·s",
+              "punkte": [
+                "« Hé, … »",
+                "« Tu me passes … ? »",
+                "« Tu me prêtes … ? »",
+                "« Merci, c’est sympa. »"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À qui parle la personne ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "« Tu me prêtes ton chargeur ? »",
+            "« Excusez-moi, où est la cantine ? »",
+            "« Pourriez-vous me montrer comment marche la machine ? »",
+            "« Tu me passes le ballon ? »",
+            "« J’aurais besoin d’un nouveau planning, s’il vous plaît. »"
+          ],
+          "optionen": [
+            "adultes",
+            "ami·e·s"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que dis-tu ? Écris une courte phrase."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "Ma phrase"
+          ],
+          "beispiel": [
+            "p. ex. stage : tu ne trouves pas le balai.",
+            "Excusez-moi, où est le balai ?"
+          ],
+          "werte": [
+            [
+              "Récré : tu veux jouer au baby-foot.",
+              ""
+            ],
+            [
+              "Caisse : il te faut un sac.",
+              ""
+            ],
+            [
+              "Cours : tu n’as pas compris l’exercice.",
+              ""
+            ],
+            [
+              "Bus : ton ami est assis sur ta veste.",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            1,
+            1
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entraînez-vous à deux : l’un·e joue la cheffe de stage, l’autre demande ce qu’il faut faire.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Moi"
+            },
+            {
+              "wer": "Cheffe",
+              "text": "Oui, qu’est-ce qu’il y a ?"
+            },
+            {
+              "wer": "Moi"
+            },
+            {
+              "wer": "Cheffe",
+              "text": "Bonne question. Viens, je te montre."
+            },
+            {
+              "wer": "Moi"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Quand le mot ne vient pas",
+          "text": "Montre l’objet et ajoute un mot : « Ça, s’il vous plaît. » Ou garde sur toi une carte « J’ai besoin d’aide »."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta semaine : à qui as-tu demandé avec des mots ? Note-le."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quand ?",
+            "À qui ?",
+            "Qu’ai-je dit ?",
+            "Ça a marché ?"
+          ],
+          "beispiel": [
+            "p. ex. lundi",
+            "dame de la cantine",
+            "« Une eau, s’il vous plaît. »",
+            "oui"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            2,
+            3,
+            4,
+            2
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes expriment souhaits et demandes avec des mots – poliment envers les adultes, de façon détendue mais claire entre pairs.",
+        "ablauf": [
+          "Entrée (5 min) : « Que fais-tu si tu ne trouves pas quelque chose en stage ? » Recueillir les réponses.",
+          "Lire les encadrés et essayer à voix haute (5 min) : la même demande, deux tons.",
+          "Exercices 1 et 2 (15 min) : classer, puis écrire ou dire ses propres phrases.",
+          "Exercice 3 (10 min) : jeu de rôle ; d’abord, l’adulte joue la cheffe.",
+          "Exercice 4 comme mission de la semaine : demander soi-même en stage, à la cantine, entre ami·e·s, et noter."
+        ],
+        "hintergrund": "Obtenir quelque chose des adultes et des pairs avec des mots sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Qui tire, prend ou attend que quelqu’un remarque se retrouve vite en conflit ou seul. Les jeunes demandent souvent de l’aide tard – aussi par honte et parce qu’ils ne savent pas comment demander (Rickwood et al., 2005). Des modèles de phrases simples lèvent cet obstacle. Comme il s’agit du stage, de la cantine et des ami·e·s, l’entraînement reste adulte et respecte le statut des jeunes (Yeager, Dahl & Dweck, 2018).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Rickwood, D., Deane, F. P., Wilson, C. J. & Ciarrochi, J. (2005). Young people’s help-seeking for mental health problems. Australian e-Journal for the Advancement of Mental Health, 4(3), 218–251.",
+          "Yeager, D. S., Dahl, R. E. & Dweck, C. S. (2018). Why interventions to influence adolescent behavior often fail but could succeed. Perspectives on Psychological Science, 13(1), 101–122."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer par un mot et un geste (« Chargeur ? »), puis ajouter « s’il te plaît ». Préparer des cartes-phrases à lire.",
+          "schwerer": "S’entraîner à une demande difficile : demander un report ou de l’aide pour une tâche."
+        },
+        "impulse": [
+          "À qui demandes-tu facilement, à qui difficilement – et pourquoi ?",
+          "Que se passe-t-il si tu prends sans demander ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : ne pas demander « Comment on dit ? » – cela fait maternelle. Plutôt montrer une fois la bonne phrase.",
+          "Observer les progrès : au quotidien, la personne demande-t-elle avec des mots au lieu de prendre – aux adultes comme aux pairs ?"
+        ]
+      }
+    }
+  },
+  {
+    "id": "im-fundbuero-genau-beschreiben",
+    "bereich": "miteinander",
+    "thema": "sprechen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "K-11",
+      "K-13"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Beschreiben",
+      "Merkmale",
+      "Wortschatz",
+      "Telefonieren",
+      "Selbstständigkeit"
+    ],
+    "bild": "icon:backpack",
+    "verwandt": [
+      "kurz-fragen-klar-bitten"
+    ],
+    "de": {
+      "titel": "Im Fundbüro: genau beschreiben",
+      "untertitel": "Rucksack weg, Jacke vergessen: Wer genau beschreibt, wie sie aussehen, bekommt sie eher zurück.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Im Fundbüro, im Sekretariat oder bei der Busfirma fragen sie: Wie sieht es aus? Eine gute Beschreibung hat mehrere Teile. Ein Teil reicht nicht – „schwarzer Rucksack“ gibt es hundertmal."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Was?",
+              "text": "ein Rucksack"
+            },
+            {
+              "titel": "Farbe?",
+              "text": "schwarz mit Grau"
+            },
+            {
+              "titel": "Größe?",
+              "text": "groß"
+            },
+            {
+              "titel": "Besonders?",
+              "text": "grüner Anhänger, Riss unten"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Beschreib zwei Sachen, die dir gehören – zum Beispiel deine Jacke und deine Tasche."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Was?",
+            "Farbe",
+            "Größe",
+            "Was ist besonders?"
+          ],
+          "beispiel": [
+            "z. B. Jacke",
+            "dunkelblau",
+            "M",
+            "Kapuze, Name innen"
+          ],
+          "zeilen": 2,
+          "breiten": [
+            2,
+            2,
+            1,
+            3
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Wörter zum Beschreiben",
+          "items": [
+            "groß",
+            "klein",
+            "lang",
+            "kurz",
+            "weich",
+            "hart",
+            "neu",
+            "alt",
+            "gestreift",
+            "kariert",
+            "mit Reißverschluss",
+            "aus Leder",
+            "aus Stoff",
+            "mit Logo"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ratespiel zu zweit: Beschreib einen Gegenstand im Raum, ohne ihn zu nennen. Die andere Person rät.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Es ist …",
+            "Die Farbe ist …",
+            "Es ist ungefähr so groß wie …",
+            "Man braucht es zum …",
+            "Besonders ist …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Hilft die Beschreibung im Fundbüro? Kreuze an."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "„Ein Rucksack.“",
+            "„Ein schwarzer Rucksack, groß, mit grünem Anhänger.“",
+            "„Meine Jacke.“",
+            "„Eine Jacke, dunkelblau, Größe M, mit Kapuze.“",
+            "„Ein Handy mit roter Hülle und einem Sprung im Glas.“"
+          ],
+          "optionen": [
+            "hilft",
+            "zu ungenau"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ruf beim Fundbüro an. Schreib deine Antworten in die Sprechblasen."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Fundbüro",
+              "text": "Guten Tag. Was haben Sie verloren?"
+            },
+            {
+              "wer": "Ich"
+            },
+            {
+              "wer": "Fundbüro",
+              "text": "Wie sieht es aus?"
+            },
+            {
+              "wer": "Ich"
+            },
+            {
+              "wer": "Fundbüro",
+              "text": "Wo und wann haben Sie es verloren?"
+            },
+            {
+              "wer": "Ich"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen beschreiben Dinge mit mehreren Merkmalen (Art, Farbe, Größe, Besonderes) und verbinden die Wörter zu kurzen Sätzen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Ich habe etwas verloren. Es ist schwarz.“ Die Gruppe rät – zu wenig? Dann Merkmal für Merkmal ergänzen.",
+          "Kette lesen, Aufgabe 1 (10 Min.): zwei eigene Sachen beschreiben; der Wortspeicher hilft.",
+          "Aufgabe 2 (10 Min.): Ratespiel; wer rät, darf nachfragen: „Welche Farbe?“",
+          "Aufgabe 3 und 4 (10 Min.): Beschreibungen bewerten, dann Anruf als Rollenspiel; die Lehrperson spielt das Fundbüro."
+        ],
+        "hintergrund": "Wörter zu Sequenzen verbinden und Merkmale beschreiben sind frühe Kommunikationsziele der ELDiB (Bergsson & Luckfiel, 1998). Für Jugendliche entscheidet diese Fähigkeit über Selbstständigkeit: beim Fundbüro, bei einer Reklamation, am Telefon. Eine feste Reihenfolge (Was – Farbe – Größe – Besonders) und ein sichtbarer Wortspeicher geben Halt, bis die Beschreibung frei gelingt (Hodgdon, 1995). Das Fundbüro ist dafür ein erwachsener, glaubwürdiger Anlass – so wird an einem frühen Ziel gearbeitet, ohne die Person kindlich anzusprechen (Wood, 1996).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Wood, M. M. (1996). Developmental Therapy – Developmental Teaching (3rd ed.). Austin: Pro-Ed."
+        ],
+        "differenzierung": {
+          "leichter": "Echte Gegenstände auf den Tisch legen und zu jedem nur Art und Farbe sagen; die Kette als Karte vor sich.",
+          "schwerer": "Eine schriftliche Verlustmeldung per E-Mail an die Busfirma schreiben."
+        },
+        "impulse": [
+          "Was hast du schon einmal verloren – und wiederbekommen?",
+          "Woran erkennst du deine Sachen sofort?"
+        ],
+        "tipps": [
+          "Würde wahren: Beim Ratespiel bekommen alle Zeit; niemand wird unterbrochen oder ausgelacht.",
+          "Fortschritt beobachten: Nennt die Person ohne Nachfragen mindestens drei Merkmale in einem zusammenhängenden Satz?"
+        ],
+        "material": "Einige Fundsachen oder Alltagsgegenstände für den Einstieg"
+      }
+    },
+    "fr": {
+      "titel": "Aux objets trouvés : bien décrire",
+      "untertitel": "Sac perdu, veste oubliée : qui décrit bien à quoi ils ressemblent a plus de chances de les récupérer.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Aux objets trouvés, au secrétariat ou à la société de bus, on te demande : à quoi ça ressemble ? Une bonne description a plusieurs parties. Une seule ne suffit pas – des « sacs noirs », il y en a des centaines."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Quoi ?",
+              "text": "un sac à dos"
+            },
+            {
+              "titel": "Couleur ?",
+              "text": "noir et gris"
+            },
+            {
+              "titel": "Taille ?",
+              "text": "grand"
+            },
+            {
+              "titel": "Particularité ?",
+              "text": "porte-clés vert, déchirure en bas"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Décris deux objets à toi – par exemple ta veste et ton sac."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quoi ?",
+            "Couleur",
+            "Taille",
+            "Particularité"
+          ],
+          "beispiel": [
+            "p. ex. veste",
+            "bleu foncé",
+            "M",
+            "capuche, nom à l’intérieur"
+          ],
+          "zeilen": 2,
+          "breiten": [
+            2,
+            2,
+            1,
+            3
+          ]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Des mots pour décrire",
+          "items": [
+            "grand",
+            "petit",
+            "long",
+            "court",
+            "doux",
+            "dur",
+            "neuf",
+            "vieux",
+            "à rayures",
+            "à carreaux",
+            "avec fermeture éclair",
+            "en cuir",
+            "en tissu",
+            "avec un logo"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Devinette à deux : décris un objet de la salle sans le nommer. L’autre devine.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "C’est …",
+            "La couleur est …",
+            "C’est à peu près aussi grand que …",
+            "On s’en sert pour …",
+            "La particularité, c’est …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cette description aide-t-elle aux objets trouvés ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "« Un sac à dos. »",
+            "« Un sac à dos noir, grand, avec un porte-clés vert. »",
+            "« Ma veste. »",
+            "« Une veste bleu foncé, taille M, avec capuche. »",
+            "« Un téléphone avec une coque rouge et l’écran fêlé. »"
+          ],
+          "optionen": [
+            "ça aide",
+            "trop vague"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Appelle les objets trouvés. Écris tes réponses dans les bulles."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Objets trouvés",
+              "text": "Bonjour. Qu’avez-vous perdu ?"
+            },
+            {
+              "wer": "Moi"
+            },
+            {
+              "wer": "Objets trouvés",
+              "text": "À quoi ressemble-t-il ?"
+            },
+            {
+              "wer": "Moi"
+            },
+            {
+              "wer": "Objets trouvés",
+              "text": "Où et quand l’avez-vous perdu ?"
+            },
+            {
+              "wer": "Moi"
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes décrivent des objets avec plusieurs caractéristiques (sorte, couleur, taille, particularité) et relient les mots en phrases courtes.",
+        "ablauf": [
+          "Entrée (5 min) : « J’ai perdu quelque chose. C’est noir. » Le groupe devine – pas assez ? Ajouter caractéristique par caractéristique.",
+          "Lire la chaîne, exercice 1 (10 min) : décrire deux objets à soi ; les mots aident.",
+          "Exercice 2 (10 min) : devinette ; qui devine peut demander : « Quelle couleur ? »",
+          "Exercices 3 et 4 (10 min) : évaluer des descriptions, puis appel en jeu de rôle ; l’adulte joue les objets trouvés."
+        ],
+        "hintergrund": "Relier des mots en séquences et décrire des caractéristiques sont des objectifs de communication précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Pour les jeunes, cette capacité décide de l’autonomie : aux objets trouvés, lors d’une réclamation, au téléphone. Un ordre fixe (quoi – couleur – taille – particularité) et des mots visibles donnent un appui jusqu’à ce que la description devienne libre (Hodgdon, 1995). Les objets trouvés sont un prétexte adulte et crédible : on travaille un objectif précoce sans s’adresser à la personne comme à un enfant (Wood, 1996).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Wood, M. M. (1996). Developmental Therapy – Developmental Teaching (3rd ed.). Austin: Pro-Ed."
+        ],
+        "differenzierung": {
+          "leichter": "Poser de vrais objets sur la table et dire seulement la sorte et la couleur ; la chaîne comme carte devant soi.",
+          "schwerer": "Écrire une déclaration de perte par e-mail à la société de bus."
+        },
+        "impulse": [
+          "Qu’as-tu déjà perdu – et retrouvé ?",
+          "À quoi reconnais-tu tout de suite tes affaires ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : pendant la devinette, chacun·e a le temps ; personne n’est interrompu ni moqué.",
+          "Observer les progrès : la personne donne-t-elle sans relance au moins trois caractéristiques dans une phrase suivie ?"
+        ],
+        "material": "Quelques objets du quotidien pour l’entrée en matière"
+      }
+    }
+  },
+  {
+    "id": "teilen-im-team-stolz-sein",
+    "bereich": "miteinander",
+    "thema": "zusammenarbeit",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe",
+      "klasse"
+    ],
+    "dauer": "40–50 Min.",
+    "eldib": [
+      "SOZ-16",
+      "K-22"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Teilen",
+      "Gruppenarbeit",
+      "Team",
+      "Stolz",
+      "Schulfest"
+    ],
+    "bild": "icon:users-group",
+    "verwandt": [
+      "erst-du-dann-ich",
+      "mitspielen-karten-kicker-konsole"
+    ],
+    "de": {
+      "titel": "Teilen im Team – und zusammen stolz sein",
+      "untertitel": "Ein Stand beim Schulfest, ein Plakat, ein Turnier: Wenn alle teilen, schafft das Team mehr. Und am Ende darf das Team stolz sein.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Der Waffelstand",
+          "text": "Die Klasse von Mila und Yusuf verkauft beim Schulfest Waffeln. Es gibt nur ein Waffeleisen und eine Kasse. Zuerst streiten alle um das Waffeleisen. Dann teilen sie: Mila backt, Yusuf kassiert, Inês macht Werbung. Nach einer Stunde wird getauscht. Am Abend sind 120 Waffeln verkauft. Yusuf sagt: „Das haben wir richtig gut gemacht.“",
+          "bild": "figur:jana:stolz"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Teilen oder nicht? Kreuze an. Besprecht die Fälle, bei denen ihr unsicher seid."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ihr habt eine Schere für vier Leute.",
+            "Dein Freund hat Hunger, du hast zwei Brötchen.",
+            "Jemand will dein Handy für ein Video ausleihen.",
+            "In der Gruppe gibt es nur einen Laptop.",
+            "Jemand will deine Hausaufgaben abschreiben.",
+            "Dein Passwort für die Schul-App."
+          ],
+          "optionen": [
+            "teilen",
+            "nicht teilen",
+            "kommt drauf an"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Fair teilen heißt nicht: alles hergeben. Material, Zeit und Arbeit teilen wir. Privates wie Handy und Passwort bleibt bei dir."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fair teilen in eurer Gruppe: Plant, wer was wann benutzt.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Material",
+            "Wer zuerst?",
+            "Wie lange?",
+            "Danach wer?"
+          ],
+          "beispiel": [
+            "z. B. Laptop",
+            "Mila",
+            "10 Min.",
+            "Yusuf"
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Sätze klingen nach Team? Kreuze an."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "„Ich hab eh das meiste gemacht.“",
+            "„Das haben wir gut hingekriegt.“",
+            "„Ohne mich wär das nichts geworden.“",
+            "„Zusammen waren wir richtig schnell.“",
+            "„Danke, dass ihr mitgemacht habt.“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach der Gruppenarbeit: Darauf sind wir stolz."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Wir haben geschafft, dass …",
+            "Am besten war, wie wir …",
+            "Mein Teil war …",
+            "Das sagen wir den anderen: „Wir …“"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jeder hat etwas beigetragen: Schreib zu jeder Person aus deiner Gruppe, was sie gut gemacht hat."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Name",
+            "Das hast du gut gemacht"
+          ],
+          "beispiel": [
+            "z. B. Inês",
+            "Du hast freundlich und laut Werbung gemacht."
+          ],
+          "zeilen": 4,
+          "breiten": [
+            1,
+            3
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen teilen Material, Zeit und Arbeit fair, kennen die Grenze zum Privaten und drücken nach einer gemeinsamen Aufgabe Stolz als Gruppe aus.",
+        "ablauf": [
+          "Geschichte lesen (5 Min.): „Was hat sich verändert, als sie geteilt haben?“",
+          "Aufgabe 1 und Merkkasten (10 Min.): „Kommt drauf an“ ausdrücklich besprechen.",
+          "Aufgabe 2 (5 Min.) vor einer echten Gruppenarbeit; der Plan liegt auf dem Tisch.",
+          "Gruppenarbeit oder Projekt durchführen (z. B. Plakat, Stand, Turnier).",
+          "Aufgabe 3 bis 5 (15 Min.): danach als Gruppe ausfüllen, einander loben und der Klasse einen Wir-Satz sagen."
+        ],
+        "hintergrund": "Material teilen und Stolz auf eine gemeinsame Leistung ausdrücken sind Ziele der ELDiB, die meist früh erreicht werden (Bergsson & Luckfiel, 1998). Fehlen sie im Jugendalter, scheitert Gruppenarbeit oft schon am ersten Laptop. Kooperative Aufgaben mit gemeinsamem Ziel verbessern nachweislich Beziehungen und Leistung unter Jugendlichen (Roseth, Johnson & Johnson, 2008). Wichtig ist, Teilen nicht als Pflicht zur Selbstaufgabe zu vermitteln: Privates darf privat bleiben. Ein echtes Projekt mit sichtbarem Ergebnis gibt dem Wir-Stolz einen Anlass, den Jugendliche ernst nehmen (Yeager, Dahl & Dweck, 2018).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Roseth, C. J., Johnson, D. W. & Johnson, R. T. (2008). Promoting early adolescents’ achievement and peer relationships: The effects of cooperative, competitive, and individualistic goal structures. Psychological Bulletin, 134(2), 223–246.",
+          "Yeager, D. S., Dahl, R. E. & Dweck, C. S. (2018). Why interventions to influence adolescent behavior often fail but could succeed. Perspectives on Psychological Science, 13(1), 101–122."
+        ],
+        "differenzierung": {
+          "leichter": "In Paaren statt in Gruppen; ein einziges Material teilen, mit Sanduhr für die Zeit.",
+          "schwerer": "Die Rollen im Projekt selbst verteilen und nach der Hälfte tauschen."
+        },
+        "impulse": [
+          "Was teilst du gern, was nie?",
+          "Wie fühlt sich „Wir haben es geschafft“ an?"
+        ],
+        "tipps": [
+          "Würde wahren: Niemanden zwingen, Persönliches herzugeben. Teilen wird beim gemeinsamen Material geübt.",
+          "Fortschritt beobachten: Gibt die Person Material von sich aus weiter und spricht nach der Arbeit von „wir“ statt nur von „ich“?"
+        ],
+        "material": "Material für ein kleines Gruppenprojekt, evtl. Sanduhr"
+      }
+    },
+    "fr": {
+      "titel": "Partager en équipe – et être fiers ensemble",
+      "untertitel": "Un stand à la fête de l’école, une affiche, un tournoi : quand tout le monde partage, l’équipe va plus loin. Et à la fin, elle peut être fière.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Le stand de gaufres",
+          "text": "La classe de Mila et Yusuf vend des gaufres à la fête de l’école. Il n’y a qu’un gaufrier et une caisse. D’abord, tout le monde se dispute le gaufrier. Puis ils partagent : Mila fait les gaufres, Yusuf encaisse, Inês fait la publicité. Au bout d’une heure, ils échangent. Le soir, 120 gaufres sont vendues. Yusuf dit : « On a vraiment bien travaillé. »",
+          "bild": "figur:jana:stolz"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Partager ou pas ? Coche. Discutez des cas où vous hésitez."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Vous avez une paire de ciseaux pour quatre.",
+            "Ton ami a faim, tu as deux petits pains.",
+            "Quelqu’un veut emprunter ton téléphone pour une vidéo.",
+            "Dans le groupe, il n’y a qu’un ordinateur.",
+            "Quelqu’un veut copier tes devoirs.",
+            "Ton mot de passe de l’appli de l’école."
+          ],
+          "optionen": [
+            "partager",
+            "ne pas partager",
+            "ça dépend"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Partager équitablement ne veut pas dire tout donner. On partage le matériel, le temps et le travail. Ce qui est privé, comme le téléphone et le mot de passe, reste à toi."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Partager équitablement dans votre groupe : prévoyez qui utilise quoi et quand.",
+          "symbole": [
+            "gruppe"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Matériel",
+            "Qui d’abord ?",
+            "Combien de temps ?",
+            "Ensuite qui ?"
+          ],
+          "beispiel": [
+            "p. ex. ordinateur",
+            "Mila",
+            "10 min",
+            "Yusuf"
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelles phrases sonnent « équipe » ? Coche."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "« De toute façon, c’est moi qui ai tout fait. »",
+            "« On s’en est bien sortis. »",
+            "« Sans moi, ça n’aurait rien donné. »",
+            "« Ensemble, on a été super rapides. »",
+            "« Merci d’avoir participé. »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après le travail de groupe : ce dont nous sommes fiers."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Nous avons réussi à …",
+            "Le mieux, c’était quand nous …",
+            "Ma part, c’était …",
+            "Nous disons aux autres : « Nous … »"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Chacun·e a contribué : écris pour chaque membre de ton groupe ce qu’il ou elle a bien fait."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Prénom",
+            "Ce que tu as bien fait"
+          ],
+          "beispiel": [
+            "p. ex. Inês",
+            "Tu as fait la publicité avec le sourire et à voix haute."
+          ],
+          "zeilen": 4,
+          "breiten": [
+            1,
+            3
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes partagent équitablement matériel, temps et travail, connaissent la limite du privé et expriment après une tâche commune une fierté de groupe.",
+        "ablauf": [
+          "Lire l’histoire (5 min) : « Qu’est-ce qui a changé quand ils ont partagé ? »",
+          "Exercice 1 et encadré (10 min) : discuter en particulier les « ça dépend ».",
+          "Exercice 2 (5 min) avant un vrai travail de groupe ; le plan reste sur la table.",
+          "Réaliser le travail de groupe ou le projet (p. ex. affiche, stand, tournoi).",
+          "Exercices 3 à 5 (15 min) : ensuite, en groupe, remplir, se dire ce qui était bien et dire à la classe une phrase avec « nous »."
+        ],
+        "hintergrund": "Partager le matériel et exprimer de la fierté pour une réussite commune sont des objectifs de l’ELDiB généralement atteints tôt (Bergsson & Luckfiel, 1998). S’ils manquent à l’adolescence, le travail de groupe échoue souvent dès le premier ordinateur. Les tâches coopératives avec un but commun améliorent nettement les relations et les résultats des jeunes (Roseth, Johnson & Johnson, 2008). Il ne faut pas présenter le partage comme un devoir de s’oublier : le privé peut rester privé. Un vrai projet avec un résultat visible donne à la fierté collective une raison que les jeunes prennent au sérieux (Yeager, Dahl & Dweck, 2018).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Roseth, C. J., Johnson, D. W. & Johnson, R. T. (2008). Promoting early adolescents’ achievement and peer relationships: The effects of cooperative, competitive, and individualistic goal structures. Psychological Bulletin, 134(2), 223–246.",
+          "Yeager, D. S., Dahl, R. E. & Dweck, C. S. (2018). Why interventions to influence adolescent behavior often fail but could succeed. Perspectives on Psychological Science, 13(1), 101–122."
+        ],
+        "differenzierung": {
+          "leichter": "En binômes au lieu de groupes ; partager un seul objet, avec un sablier pour le temps.",
+          "schwerer": "Répartir soi-même les rôles du projet et les échanger à mi-parcours."
+        },
+        "impulse": [
+          "Que partages-tu volontiers, que jamais ?",
+          "Que ressens-tu quand tu dis « on a réussi » ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : ne forcer personne à donner ses affaires personnelles. On s’exerce avec le matériel commun.",
+          "Observer les progrès : la personne passe-t-elle le matériel d’elle-même et parle-t-elle de « nous » après le travail, pas seulement de « je » ?"
+        ],
+        "material": "Matériel pour un petit projet de groupe, éventuellement un sablier"
+      }
+    }
+  },
+  {
+    "id": "erst-du-dann-ich",
+    "bereich": "miteinander",
+    "thema": "freundschaft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "SOZ-14",
+      "SOZ-19"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Abwechseln",
+      "Warten",
+      "Chat",
+      "Gespräch",
+      "Handy",
+      "Freundschaft"
+    ],
+    "bild": "icon:messages",
+    "verwandt": [
+      "teilen-im-team-stolz-sein",
+      "warten-bis-ich-aufgerufen-werde"
+    ],
+    "de": {
+      "titel": "Erst du, dann ich: im Gespräch und im Chat",
+      "untertitel": "Ausreden lassen, auf eine Antwort warten, beim Spiel abwechseln – so bleibt es fair, offline und online.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ein Gespräch ist wie Tischtennis: Einer spielt, dann der andere. Wer dauernd dazwischenredet oder zehn Nachrichten hintereinander schickt, nimmt dem anderen den Ball weg."
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Drei Regeln",
+          "punkte": [
+            "Im Gespräch: erst ausreden lassen, dann sprechen.",
+            "Im Chat: eine Nachricht, dann warten.",
+            "Beim Spiel: Wer dran war, gibt weiter."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lies den Chat von Luca und Jil."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Luca",
+              "text": "Kommst du heute zum Training?"
+            },
+            {
+              "wer": "Luca",
+              "text": "Hallo?"
+            },
+            {
+              "wer": "Luca",
+              "text": "Bist du da?"
+            },
+            {
+              "wer": "Luca",
+              "text": "Warum antwortest du nicht?"
+            },
+            {
+              "wer": "Jil",
+              "text": "Sorry, war im Unterricht. Ja, ich komme."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was stimmt? Kreuze an."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Luca hat nicht auf die Antwort gewartet.",
+            "Jil ist unhöflich.",
+            "Jil konnte gerade nicht schreiben.",
+            "Eine Nachricht und dann warten hätte gereicht."
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Abwechseln: Wie macht ihr das fair? Schreib eine Regel."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "So wechseln wir ab"
+          ],
+          "beispiel": [
+            "z. B. ein Controller, drei Leute",
+            "Jeder spielt eine Runde, dann weitergeben."
+          ],
+          "werte": [
+            [
+              "eine Tischtennisplatte in der Pause",
+              ""
+            ],
+            [
+              "ein Lautsprecher – alle wollen ihre Musik",
+              ""
+            ],
+            [
+              "Gruppenarbeit: Wer redet?",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            2,
+            3
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Warten fällt schwer. Was hilft dir? Kreuze an oder ergänze."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "bis drei zählen",
+            "den anderen anschauen und zuhören",
+            "mir merken, was ich sagen will",
+            "das Handy weglegen",
+            "tief ausatmen",
+            "Hände in die Taschen"
+          ],
+          "spalten": 2,
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Plan für schwierige Momente: Was machst du, wenn …?"
+        },
+        {
+          "art": "wennDann",
+          "beispiele": [
+            {
+              "wenn": "mir etwas einfällt, während jemand redet,",
+              "dann": "merke ich es mir und sage es, wenn er fertig ist."
+            }
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Eine Woche testen: Kreuz jeden Tag an, was geklappt hat."
+        },
+        {
+          "art": "plan",
+          "ziel": "Ich lasse ausreden und warte, bis ich dran bin.",
+          "zeilen": [
+            "im Gespräch ausreden lassen",
+            "im Chat auf die Antwort gewartet",
+            "beim Spiel abgewechselt"
+          ],
+          "symbol": "kasten"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen warten, bis sie an der Reihe sind, wechseln sich im Gespräch, im Chat und beim Spiel ab und kennen Strategien gegen das Dazwischenreden.",
+        "ablauf": [
+          "Einstieg (5 Min.): einen Ball im Kreis weitergeben; nur wer ihn hat, spricht.",
+          "Aufgabe 1 und 2 (10 Min.): Chat lesen. „Wie geht es Jil, wie Luca?“",
+          "Aufgabe 3 (10 Min.): Regeln für echte Situationen der Klasse finden.",
+          "Aufgabe 4 bis 6 (15 Min.): Strategie wählen, Wenn-dann-Plan schreiben, eine Woche mit dem Plan testen."
+        ],
+        "hintergrund": "Warten, bis man an der Reihe ist, und sich abwechseln sind frühe soziale Ziele der ELDiB (Bergsson & Luckfiel, 1998). Beides verlangt, einen Impuls zurückzuhalten – eine Leistung der exekutiven Funktionen, die sich bis ins junge Erwachsenenalter entwickelt (Diamond, 2013). Online ist es besonders schwer: Ohne Tonfall und Gesicht wird Schweigen leicht als Ablehnung gelesen, und man überschätzt, wie klar die eigene Nachricht ankommt (Kruger et al., 2005). Chat, Konsole und Tischtennisplatte sind deshalb ideale, erwachsene Übungsfelder für ein frühes Ziel.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936."
+        ],
+        "differenzierung": {
+          "leichter": "Abwechseln zuerst mit einem Gegenstand üben (Ball, Controller); eine Sanduhr zeigt, wie lange.",
+          "schwerer": "Klassenregeln für den Gruppenchat entwerfen und abstimmen lassen."
+        },
+        "impulse": [
+          "Wie fühlt es sich an, wenn dich jemand dauernd unterbricht?",
+          "Wie lange wartest du auf eine Antwort, bevor du nachfragst?"
+        ],
+        "tipps": [
+          "Würde wahren: Dazwischenreden nicht vor der Gruppe kommentieren. Ein vereinbartes stilles Zeichen genügt.",
+          "Fortschritt beobachten: Wie oft wartet die Person im Gespräch oder Spiel, bis sie dran ist? Eine Strichliste über eine Woche zeigt es."
+        ],
+        "material": "Ball oder anderer Gegenstand zum Weitergeben"
+      }
+    },
+    "fr": {
+      "titel": "Toi d’abord, puis moi : en parlant et en ligne",
+      "untertitel": "Laisser finir, attendre une réponse, jouer chacun son tour – c’est ainsi que ça reste juste, hors ligne et en ligne.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Une conversation, c’est comme le ping-pong : l’un joue, puis l’autre. Qui coupe sans arrêt la parole ou envoie dix messages d’affilée prend la balle à l’autre."
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Trois règles",
+          "punkte": [
+            "En parlant : laisser finir, puis parler.",
+            "En ligne : un message, puis attendre.",
+            "En jouant : qui a joué passe la main."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lis la conversation de Luca et Jil."
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            {
+              "wer": "Luca",
+              "text": "Tu viens à l’entraînement aujourd’hui ?"
+            },
+            {
+              "wer": "Luca",
+              "text": "Allô ?"
+            },
+            {
+              "wer": "Luca",
+              "text": "T’es là ?"
+            },
+            {
+              "wer": "Luca",
+              "text": "Pourquoi tu réponds pas ?"
+            },
+            {
+              "wer": "Jil",
+              "text": "Désolée, j’étais en cours. Oui, je viens."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui est vrai ? Coche."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Luca n’a pas attendu la réponse.",
+            "Jil est impolie.",
+            "Jil ne pouvait pas écrire à ce moment-là.",
+            "Un message puis attendre, ça aurait suffi."
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Chacun son tour : comment faire équitablement ? Écris une règle."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "Voilà comment on alterne"
+          ],
+          "beispiel": [
+            "p. ex. une manette, trois personnes",
+            "Chacun joue une partie, puis passe la manette."
+          ],
+          "werte": [
+            [
+              "une table de ping-pong à la récré",
+              ""
+            ],
+            [
+              "une enceinte – chacun veut sa musique",
+              ""
+            ],
+            [
+              "travail de groupe : qui parle ?",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            2,
+            3
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Attendre, c’est difficile. Qu’est-ce qui t’aide ? Coche ou complète."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "compter jusqu’à trois",
+            "regarder l’autre et écouter",
+            "retenir ce que je veux dire",
+            "poser le téléphone",
+            "expirer profondément",
+            "mettre les mains dans les poches"
+          ],
+          "spalten": 2,
+          "frei": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan pour les moments difficiles : que fais-tu si … ?"
+        },
+        {
+          "art": "wennDann",
+          "beispiele": [
+            {
+              "wenn": "une idée me vient pendant que quelqu’un parle,",
+              "dann": "je la garde en tête et je la dis quand il a fini."
+            }
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tester une semaine : coche chaque jour ce qui a marché."
+        },
+        {
+          "art": "plan",
+          "ziel": "Je laisse finir et j’attends mon tour.",
+          "zeilen": [
+            "laissé finir en parlant",
+            "attendu la réponse en ligne",
+            "joué chacun son tour"
+          ],
+          "symbol": "kasten"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes attendent leur tour, alternent en parlant, en ligne et en jouant, et connaissent des stratégies pour ne pas couper la parole.",
+        "ablauf": [
+          "Entrée (5 min) : faire passer une balle en cercle ; seul·e celui ou celle qui l’a parle.",
+          "Exercices 1 et 2 (10 min) : lire la conversation. « Comment se sent Jil, et Luca ? »",
+          "Exercice 3 (10 min) : trouver des règles pour de vraies situations de la classe.",
+          "Exercices 4 à 6 (15 min) : choisir une stratégie, écrire un plan « si … alors », tester une semaine avec le plan."
+        ],
+        "hintergrund": "Attendre son tour et alterner sont des objectifs sociaux précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Les deux demandent de retenir une impulsion – une performance des fonctions exécutives qui se développe jusqu’au début de l’âge adulte (Diamond, 2013). En ligne, c’est encore plus difficile : sans ton ni visage, le silence est vite lu comme un rejet, et on surestime la clarté de son propre message (Kruger et al., 2005). La messagerie, la console et la table de ping-pong sont donc des terrains d’exercice adultes et idéaux pour un objectif précoce.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Kruger, J., Epley, N., Parker, J. & Ng, Z.-W. (2005). Egocentrism over e-mail: Can we communicate as well as we think? Journal of Personality and Social Psychology, 89(6), 925–936."
+        ],
+        "differenzierung": {
+          "leichter": "S’exercer d’abord à alterner avec un objet (balle, manette) ; un sablier montre la durée.",
+          "schwerer": "Rédiger des règles pour le groupe de discussion de la classe et les faire voter."
+        },
+        "impulse": [
+          "Que ressens-tu quand quelqu’un te coupe sans arrêt ?",
+          "Combien de temps attends-tu une réponse avant de relancer ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : ne pas commenter devant le groupe quand quelqu’un coupe la parole. Un signe discret convenu suffit.",
+          "Observer les progrès : combien de fois la personne attend-elle son tour en parlant ou en jouant ? Un relevé sur une semaine le montre."
+        ],
+        "material": "Une balle ou un autre objet à faire passer"
+      }
+    }
+  },
+  {
+    "id": "mitspielen-karten-kicker-konsole",
+    "bereich": "miteinander",
+    "thema": "freundschaft",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–40 Min.",
+    "eldib": [
+      "V-9",
+      "SOZ-17"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Spielen",
+      "Pause",
+      "Mitspielen",
+      "Fair Play",
+      "Freundschaft"
+    ],
+    "bild": "icon:device-gamepad-2",
+    "verwandt": [
+      "erst-du-dann-ich",
+      "teilen-im-team-stolz-sein"
+    ],
+    "de": {
+      "titel": "Mitspielen: Karten, Kicker, Konsole",
+      "untertitel": "Spielen ist nicht nur etwas für Kinder. Beim Spielen lernt man Leute kennen, lacht zusammen und übt, fair zu gewinnen und zu verlieren.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Was spielst du gern – oder möchtest du lernen? Kreuze an."
+        },
+        {
+          "art": "bilder",
+          "modus": "ankreuzen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:dice",
+              "text": "Würfelspiel"
+            },
+            {
+              "bild": "icon:chess",
+              "text": "Schach"
+            },
+            {
+              "bild": "icon:soccer-field",
+              "text": "Kicker"
+            },
+            {
+              "bild": "icon:device-gamepad-2",
+              "text": "Konsole"
+            },
+            {
+              "bild": "icon:ball-tennis",
+              "text": "Tischtennis"
+            },
+            {
+              "bild": "icon:ball-basketball",
+              "text": "Basketball"
+            },
+            {
+              "bild": "icon:ball-football",
+              "text": "Fußball"
+            },
+            {
+              "bild": "icon:puzzle",
+              "text": "Rätsel, Puzzle"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "So kommst du ins Spiel. Welcher Schritt fällt dir am schwersten? Kreis ihn ein."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Zuschauen",
+              "text": "Wie geht das Spiel?"
+            },
+            {
+              "titel": "Fragen",
+              "text": "„Kann ich mitspielen?“"
+            },
+            {
+              "titel": "Regeln klären",
+              "text": "Wer fängt an?"
+            },
+            {
+              "titel": "Dabeibleiben",
+              "text": "auch nach dem Verlieren"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gewinnen und verlieren: Was ist fair? Kreuze an."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Nach dem Verlieren die Karten hinwerfen.",
+            "„Gut gespielt“ sagen.",
+            "Beim Gewinnen den anderen auslachen.",
+            "Noch eine Runde vorschlagen.",
+            "Mitten im Spiel einfach gehen.",
+            "Einem Neuen die Regeln erklären."
+          ],
+          "optionen": [
+            "fair",
+            "unfair"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Gut verlieren",
+          "punkte": [
+            "Kurz durchatmen, dann „Gut gespielt“ sagen.",
+            "Fragen: „Noch eine Runde?“",
+            "Ärger darf sein – aber nicht am Spiel oder an den anderen auslassen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dein Plan für diese Woche: Kreuz jeden Tag an, was geklappt hat."
+        },
+        {
+          "art": "plan",
+          "ziel": "Ich spiele diese Woche in der Pause mit.",
+          "zeilen": [
+            "Ich habe gefragt.",
+            "Ich habe mitgespielt.",
+            "Ich bin bis zum Ende geblieben."
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Erklär einer neuen Person dein Lieblingsspiel – kurz und klar."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Das Spiel heißt …",
+            "Man braucht …",
+            "Ziel ist …",
+            "Wer dran ist, darf …",
+            "Gewonnen hat, wer …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen beschäftigen sich sinnvoll mit einem Spiel, finden Zugang zu einer Spielgruppe und spielen mit anderen – fair beim Gewinnen und Verlieren.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was habt ihr früher gern gespielt, was heute?“",
+          "Aufgabe 1 und 2 (10 Min.): Interessen ankreuzen, schwierigsten Schritt markieren.",
+          "Aufgabe 3 und Tipp-Kasten (10 Min.): fair und unfair besprechen.",
+          "Ein kurzes Spiel in der Gruppe spielen (z. B. Karten); die Lehrperson spielt mit.",
+          "Aufgabe 4 und 5: Wochenplan; das eigene Spiel einer neuen Person erklären. Am Freitag kurz nachfragen, ohne zu bewerten."
+        ],
+        "hintergrund": "Sich sinnvoll mit einem Spiel beschäftigen und mit anderen zusammen spielen sind frühe Ziele der ELDiB (Bergsson & Luckfiel, 1998). Bei Jugendlichen heißt Spielen: Karten, Kicker, Konsole, Sport. Wer hier nicht mitkommt, steht in der Pause oft allein – und Freundschaften im Jugendalter entstehen gerade bei solchen gemeinsamen Aktivitäten (Bagwell & Schmidt, 2011). Programme zur Förderung sozialer Fähigkeiten nutzen das Spiel gezielt, um Mitmachen, Abwechseln und fairen Umgang mit Verlieren zu üben (Webster-Stratton & Reid, 2003). Erwachsene Spiele halten dabei die Würde der Jugendlichen.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Mit einem Spiel zu zweit mit der Lehrperson beginnen (Würfel, Uno), dann eine dritte Person dazuholen.",
+          "schwerer": "Ein Pausenturnier (Kicker, Tischtennis) mit Regeln und Spielplan organisieren."
+        },
+        "impulse": [
+          "Welches Spiel könntest du anderen beibringen?",
+          "Was machst du, wenn du nicht mitspielen darfst?"
+        ],
+        "tipps": [
+          "Würde wahren: Die Klasse nicht zum Mitspielen-Lassen verpflichten. Besser gezielt Spielgruppen mit einer verlässlichen Person bilden.",
+          "Fortschritt beobachten: Spielt die Person in Pausen mit anderen, bleibt sie bis zum Ende und geht sie fair mit Verlieren um?"
+        ],
+        "material": "Kartenspiel oder anderes Spiel für die Gruppe"
+      }
+    },
+    "fr": {
+      "titel": "Jouer ensemble : cartes, baby-foot, console",
+      "untertitel": "Jouer, ce n’est pas que pour les enfants. En jouant, on rencontre des gens, on rit ensemble et on apprend à gagner et à perdre avec fair-play.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "À quoi aimes-tu jouer – ou veux-tu apprendre ? Coche."
+        },
+        {
+          "art": "bilder",
+          "modus": "ankreuzen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:dice",
+              "text": "jeu de dés"
+            },
+            {
+              "bild": "icon:chess",
+              "text": "échecs"
+            },
+            {
+              "bild": "icon:soccer-field",
+              "text": "baby-foot"
+            },
+            {
+              "bild": "icon:device-gamepad-2",
+              "text": "console"
+            },
+            {
+              "bild": "icon:ball-tennis",
+              "text": "ping-pong"
+            },
+            {
+              "bild": "icon:ball-basketball",
+              "text": "basket"
+            },
+            {
+              "bild": "icon:ball-football",
+              "text": "foot"
+            },
+            {
+              "bild": "icon:puzzle",
+              "text": "énigmes, puzzle"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment entrer dans le jeu. Quelle étape est la plus difficile pour toi ? Entoure-la."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Observer",
+              "text": "Comment marche le jeu ?"
+            },
+            {
+              "titel": "Demander",
+              "text": "« Je peux jouer ? »"
+            },
+            {
+              "titel": "Clarifier les règles",
+              "text": "Qui commence ?"
+            },
+            {
+              "titel": "Rester",
+              "text": "même après avoir perdu"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gagner et perdre : qu’est-ce qui est fair-play ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Jeter les cartes après avoir perdu.",
+            "Dire « bien joué ».",
+            "Se moquer de l’autre quand on gagne.",
+            "Proposer une autre partie.",
+            "Partir au milieu de la partie.",
+            "Expliquer les règles à un nouveau."
+          ],
+          "optionen": [
+            "fair-play",
+            "pas fair-play"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Bien perdre",
+          "punkte": [
+            "Respirer un coup, puis dire « bien joué ».",
+            "Demander : « On en refait une ? »",
+            "On a le droit d’être fâché·e – mais pas sur le jeu ni sur les autres."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton plan pour la semaine : coche chaque jour ce qui a marché."
+        },
+        {
+          "art": "plan",
+          "ziel": "Cette semaine, je joue avec les autres à la récré.",
+          "zeilen": [
+            "J’ai demandé.",
+            "J’ai joué.",
+            "Je suis resté·e jusqu’à la fin."
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Explique ton jeu préféré à une nouvelle personne – court et clair."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Le jeu s’appelle …",
+            "Il faut …",
+            "Le but, c’est …",
+            "Quand c’est ton tour, tu peux …",
+            "On gagne quand …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes s’occupent de manière sensée avec un jeu, trouvent l’accès à un groupe de jeu et jouent avec d’autres – avec fair-play qu’ils gagnent ou perdent.",
+        "ablauf": [
+          "Entrée (5 min) : « À quoi aimiez-vous jouer avant, et aujourd’hui ? »",
+          "Exercices 1 et 2 (10 min) : cocher ses intérêts, marquer l’étape la plus difficile.",
+          "Exercice 3 et encadré (10 min) : discuter du fair-play.",
+          "Jouer brièvement en groupe (p. ex. aux cartes) ; l’adulte joue aussi.",
+          "Exercices 4 et 5 : plan de la semaine ; expliquer son jeu à une nouvelle personne. Vendredi, demander brièvement, sans juger."
+        ],
+        "hintergrund": "S’occuper de manière sensée avec un jeu et jouer avec d’autres sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Chez les jeunes, jouer, c’est les cartes, le baby-foot, la console, le sport. Qui n’y arrive pas reste souvent seul à la récré – or les amitiés à l’adolescence naissent justement de ces activités communes (Bagwell & Schmidt, 2011). Les programmes de compétences sociales utilisent le jeu de façon ciblée pour s’exercer à participer, à alterner et à bien perdre (Webster-Stratton & Reid, 2003). Des jeux adultes préservent la dignité des jeunes.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Bagwell, C. L. & Schmidt, M. E. (2011). Friendships in Childhood and Adolescence. New York: Guilford.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer par un jeu à deux avec l’adulte (dés, Uno), puis ajouter une troisième personne.",
+          "schwerer": "Organiser un tournoi de récré (baby-foot, ping-pong) avec règles et calendrier."
+        },
+        "impulse": [
+          "Quel jeu pourrais-tu apprendre aux autres ?",
+          "Que fais-tu si on ne te laisse pas jouer ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : ne pas obliger la classe à faire jouer quelqu’un. Mieux vaut former des groupes de jeu avec une personne fiable.",
+          "Observer les progrès : la personne joue-t-elle avec d’autres à la récré, reste-t-elle jusqu’à la fin et perd-elle avec fair-play ?"
+        ],
+        "material": "Jeu de cartes ou autre jeu pour le groupe"
+      }
+    }
+  },
+  {
+    "id": "szenen-proben-im-rollenspiel",
+    "bereich": "miteinander",
+    "thema": "sprechen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "gruppe"
+    ],
+    "dauer": "40–50 Min.",
+    "eldib": [
+      "SOZ-13",
+      "SOZ-20"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Rollenspiel",
+      "Vorbild",
+      "Nachmachen",
+      "Theater",
+      "Praktikum",
+      "Alltag"
+    ],
+    "bild": "icon:masks-theater",
+    "verwandt": [
+      "kurz-fragen-klar-bitten",
+      "arbeitsauftrag-hoeren-nachfragen-anfangen"
+    ],
+    "de": {
+      "titel": "Szenen proben: Alltag im Rollenspiel",
+      "untertitel": "Schauspieler proben, bevor sie auf die Bühne gehen. Du kannst schwierige Alltagsszenen genauso proben – vorher und ohne Risiko.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Beim Rollenspiel tust du so, als ob. Zuerst schaust du jemandem zu, der es vormacht. Dann machst du es nach. Danach probierst du deine eigene Art."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Zuschauen",
+              "text": "Jemand macht es vor."
+            },
+            {
+              "titel": "Nachmachen",
+              "text": "Du machst es genauso."
+            },
+            {
+              "titel": "Verändern",
+              "text": "Du probierst deine Art."
+            },
+            {
+              "titel": "Echt machen",
+              "text": "im Alltag ausprobieren"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Regeln für die Probe",
+          "punkte": [
+            "Jede Probe darf schiefgehen – dafür ist sie da.",
+            "Stopp heißt Stopp. Wer aussteigen will, darf.",
+            "Wir lachen miteinander, nicht übereinander."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Szene willst du proben? Kreuze an oder schreib eine eigene."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "beim Bäcker bestellen",
+            "im Praktikum „Guten Morgen“ sagen und fragen, was ich tun soll",
+            "beim Arzt anrufen und einen Termin machen",
+            "fragen, ob ich mitspielen darf",
+            "klar sagen: „Stopp, das will ich nicht.“",
+            "im Bus fragen, ob der Platz frei ist"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schau genau zu, wenn jemand die Szene vormacht. Was hast du gesehen?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ich achte auf …",
+            "Das habe ich gesehen"
+          ],
+          "werte": [
+            [
+              "den Blick",
+              ""
+            ],
+            [
+              "die Stimme (laut, leise, freundlich)",
+              ""
+            ],
+            [
+              "die Worte",
+              ""
+            ],
+            [
+              "den Körper (Hände, Abstand)",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            2,
+            3
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Spielt eure Szene zu zweit. Schreibt in die Sprechblasen, was gesagt wird.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:ben:neutral",
+                "figur:lehrerin:ruhig"
+              ],
+              "blase": "sprechen",
+              "sprecher": 0,
+              "untertitel": ""
+            },
+            {
+              "figuren": [
+                "figur:ben:neutral",
+                "figur:lehrerin:froh"
+              ],
+              "blase": "sprechen",
+              "sprecher": 1,
+              "untertitel": ""
+            },
+            {
+              "figuren": [
+                "figur:ben:froh",
+                "figur:lehrerin:froh"
+              ],
+              "blase": "sprechen",
+              "sprecher": 0,
+              "untertitel": ""
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach der Probe: Wie sicher fühlst du dich jetzt für die echte Situation?"
+        },
+        {
+          "art": "skala",
+          "von": "gar nicht sicher",
+          "bis": "ganz sicher",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach dem Echt-Versuch: Wie ist es gelaufen?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ich habe es ausprobiert am … in/im …",
+            "Gut geklappt hat …",
+            "Nächstes Mal mache ich anders: …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen beobachten ein Vorbild genau, ahmen angemessenes Verhalten nach und spielen Alltagsszenen im „So tun als ob“, bevor sie sie echt ausprobieren.",
+        "ablauf": [
+          "Einstieg (5 Min.): Regeln für die Probe vorlesen und zustimmen lassen.",
+          "Aufgabe 1 (5 Min.): Szene wählen; jede Person übt etwas, das sie wirklich braucht.",
+          "Aufgabe 2 (10 Min.): Lehrperson oder Mitschüler macht die Szene vor; alle beobachten.",
+          "Aufgabe 3 (15 Min.): zu zweit nachspielen, dann eine eigene Variante.",
+          "Aufgabe 4 (5 Min.): Skala ausfüllen, Termin für den Echt-Versuch vereinbaren; Aufgabe 5 danach im Einzelgespräch."
+        ],
+        "hintergrund": "Fantasie- und Rollenspiel sowie das Nachahmen angemessenen Verhaltens von Gleichaltrigen sind frühe soziale Ziele der ELDiB (Bergsson & Luckfiel, 1998). Für Jugendliche ist das Rollenspiel die erwachsene Form davon: eine Probe für den Ernstfall. Lernen am Modell und die Erfahrung „Das habe ich schon einmal geschafft“ stärken die Erwartung, es auch echt zu können (Bandura, 1977). Theaterpädagogische Methoden nutzen genau das Spiel als geschützten Raum, um Handeln zu erproben (Boal, 1979). Wichtig ist Freiwilligkeit: Niemand muss vor der Gruppe spielen.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Boal, A. (1979). Theatre of the Oppressed. London: Pluto Press."
+        ],
+        "differenzierung": {
+          "leichter": "Nur zuschauen und nachmachen, mit einem festen Satz auf einer Karte; die Lehrperson ist Spielpartner.",
+          "schwerer": "Die Szene mit einer Schwierigkeit spielen (z. B. die Chefin ist in Eile) und eine Lösung finden."
+        },
+        "impulse": [
+          "Wen findest du in solchen Situationen ein gutes Vorbild – und warum?",
+          "Was war bei der Probe leichter als gedacht?"
+        ],
+        "tipps": [
+          "Würde wahren: In kleinen Gruppen oder zu zweit proben, nicht vor der ganzen Klasse. Nie filmen ohne ausdrückliche Zustimmung.",
+          "Fortschritt beobachten: Gelingt die geprobte Szene im echten Alltag? Die Skala vor und nach dem Echt-Versuch vergleichen."
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Répéter des scènes : le quotidien en jeu de rôle",
+      "untertitel": "Les comédiens répètent avant d’entrer en scène. Tu peux répéter de la même façon des scènes difficiles du quotidien – avant, et sans risque.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "En jeu de rôle, tu fais comme si. D’abord, tu observes quelqu’un qui montre. Puis tu imites. Ensuite, tu essaies à ta façon."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Observer",
+              "text": "Quelqu’un montre."
+            },
+            {
+              "titel": "Imiter",
+              "text": "Tu fais pareil."
+            },
+            {
+              "titel": "Varier",
+              "text": "Tu essaies à ta façon."
+            },
+            {
+              "titel": "En vrai",
+              "text": "essayer au quotidien"
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Règles pour la répétition",
+          "punkte": [
+            "Chaque répétition a le droit de rater – c’est fait pour ça.",
+            "Stop veut dire stop. Qui veut arrêter peut le faire.",
+            "On rit ensemble, pas les uns des autres."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle scène veux-tu répéter ? Coche ou écris la tienne."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "commander à la boulangerie",
+            "dire « bonjour » en stage et demander ce que je dois faire",
+            "appeler le médecin pour prendre rendez-vous",
+            "demander si je peux jouer",
+            "dire clairement : « Stop, je ne veux pas. »",
+            "demander dans le bus si la place est libre"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Observe bien quand quelqu’un montre la scène. Qu’as-tu vu ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Je fais attention à …",
+            "Voilà ce que j’ai vu"
+          ],
+          "werte": [
+            [
+              "le regard",
+              ""
+            ],
+            [
+              "la voix (forte, douce, aimable)",
+              ""
+            ],
+            [
+              "les mots",
+              ""
+            ],
+            [
+              "le corps (mains, distance)",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            2,
+            3
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jouez votre scène à deux. Écrivez dans les bulles ce qui est dit.",
+          "symbole": [
+            "partner"
+          ]
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:ben:neutral",
+                "figur:lehrerin:ruhig"
+              ],
+              "blase": "sprechen",
+              "sprecher": 0,
+              "untertitel": ""
+            },
+            {
+              "figuren": [
+                "figur:ben:neutral",
+                "figur:lehrerin:froh"
+              ],
+              "blase": "sprechen",
+              "sprecher": 1,
+              "untertitel": ""
+            },
+            {
+              "figuren": [
+                "figur:ben:froh",
+                "figur:lehrerin:froh"
+              ],
+              "blase": "sprechen",
+              "sprecher": 0,
+              "untertitel": ""
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après la répétition : à quel point te sens-tu prêt·e pour la vraie situation ?"
+        },
+        {
+          "art": "skala",
+          "von": "pas du tout prêt·e",
+          "bis": "tout à fait prêt·e",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après l’essai en vrai : comment ça s’est passé ?"
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Je l’ai essayé le … à …",
+            "Ce qui a bien marché : …",
+            "La prochaine fois, je ferai autrement : …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes observent attentivement un modèle, imitent un comportement adapté et jouent des scènes du quotidien « pour de faux » avant de les essayer en vrai.",
+        "ablauf": [
+          "Entrée (5 min) : lire les règles de la répétition et les faire accepter.",
+          "Exercice 1 (5 min) : choisir une scène ; chacun·e s’exerce à ce dont il ou elle a vraiment besoin.",
+          "Exercice 2 (10 min) : l’adulte ou un·e camarade montre la scène ; tout le monde observe.",
+          "Exercice 3 (15 min) : rejouer à deux, puis une variante personnelle.",
+          "Exercice 4 (5 min) : remplir l’échelle, fixer une date pour l’essai en vrai ; exercice 5 ensuite en entretien individuel."
+        ],
+        "hintergrund": "Le jeu d’imagination et l’imitation des comportements adaptés des pairs sont des objectifs sociaux précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Pour les jeunes, le jeu de rôle en est la forme adulte : une répétition avant la situation réelle. Apprendre par le modèle et vivre « j’y suis déjà arrivé·e une fois » renforcent l’attente de réussir en vrai (Bandura, 1977). La pédagogie théâtrale utilise justement le jeu comme espace protégé pour essayer d’agir (Boal, 1979). Le volontariat est essentiel : personne n’est obligé de jouer devant le groupe.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Boal, A. (1979). Theatre of the Oppressed. London: Pluto Press."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement observer et imiter, avec une phrase fixe sur une carte ; l’adulte est partenaire de jeu.",
+          "schwerer": "Jouer la scène avec une difficulté (p. ex. la cheffe est pressée) et trouver une solution."
+        },
+        "impulse": [
+          "Qui est un bon modèle pour toi dans ces situations – et pourquoi ?",
+          "Qu’est-ce qui était plus facile que prévu pendant la répétition ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : répéter en petits groupes ou à deux, pas devant toute la classe. Ne jamais filmer sans accord explicite.",
+          "Observer les progrès : la scène répétée réussit-elle dans la vraie vie ? Comparer l’échelle avant et après l’essai en vrai."
+        ]
+      }
+    }
+  }
+]

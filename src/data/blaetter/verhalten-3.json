@@ -1,0 +1,1064 @@
+[
+  {
+    "id": "warten-bis-ich-aufgerufen-werde",
+    "bereich": "verhalten",
+    "thema": "impulse",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "V-10",
+      "SOZ-3"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Warten",
+      "Name",
+      "Aufgerufen werden",
+      "Arztpraxis",
+      "Geduld",
+      "Selbstständigkeit"
+    ],
+    "bild": "icon:hourglass",
+    "verwandt": [
+      "erst-du-dann-ich",
+      "bus-linie-und-haltestellen",
+      "stimme-und-zeichen"
+    ],
+    "de": {
+      "titel": "Warten, bis ich aufgerufen werde",
+      "untertitel": "Beim Arzt, im Sekretariat, an der Theke: Erst warten – dann reagieren, wenn dein Name oder deine Nummer kommt.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Im Wartezimmer",
+          "text": "Tiago hat einen Termin beim Arzt. Im Wartezimmer sitzen schon sechs Leute. Tiago setzt die Kopfhörer auf und spielt am Handy. Nach zwanzig Minuten ruft die Arzthelferin: „Tiago Martins?“ Tiago hört nichts. Sie ruft noch zweimal. Dann nimmt sie die nächste Person dran.",
+          "bild": "figur:ben:gelangweilt"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hätte Tiago geholfen? Kreuze an."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "nur einen Kopfhörer tragen",
+            "den Ton leiser stellen",
+            "am Empfang sagen: „Ich sitze hier. Rufen Sie bitte laut.“",
+            "nach jeder Person kurz hochschauen",
+            "alle fünf Minuten fragen: „Bin ich jetzt dran?“",
+            "einfach wieder gehen"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo musst du warten, bis du aufgerufen wirst? Ergänze."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wo?",
+            "Wie werde ich aufgerufen?",
+            "Was mache ich beim Warten?"
+          ],
+          "beispiel": [
+            "z. B. Arztpraxis",
+            "mit meinem Namen",
+            "Musik leise, ein Ohr frei"
+          ],
+          "werte": [
+            [
+              "an der Fleischtheke",
+              "",
+              ""
+            ],
+            [
+              "im Sekretariat",
+              "",
+              ""
+            ],
+            [
+              "im Praktikum, in der Besprechung",
+              "",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Warten fällt dir schwer? Schreib deine Ideen."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Beim Warten kann ich …",
+            "Wenn es lange dauert, …",
+            "Wenn ich nicht mehr warten kann, sage ich: „…“"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Wenn dein Name kommt",
+          "punkte": [
+            "Kopf hoch und hinschauen.",
+            "Antworten: „Ja, hier.“ – oder die Hand heben.",
+            "Aufstehen, Sachen nehmen, hingehen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Aufgerufen werden: Was machst du? Verbinde."
+        },
+        {
+          "art": "zuordnen",
+          "links": [
+            "Die Arzthelferin ruft deinen Namen.",
+            "Auf dem Bildschirm steht eine Nummer.",
+            "Jemand spricht deinen Namen falsch aus.",
+            "Du warst kurz auf der Toilette."
+          ],
+          "rechts": [
+            "Freundlich sagen: „Ich glaube, Sie meinen mich. Ich heiße …“",
+            "Am Empfang fragen: „Wurde ich schon aufgerufen?“",
+            "Hand heben, „Ja, hier“ sagen, hingehen.",
+            "Mit der Nummer auf deinem Zettel vergleichen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Warten üben: Trag ein, wo du gewartet hast und wie es lief."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wann und wo?",
+            "Wie lange?",
+            "Name gehört?",
+            "Wie ging es? (0–10)"
+          ],
+          "beispiel": [
+            "z. B. Dienstag, Zahnarzt",
+            "25 Min.",
+            "ja",
+            "7"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            3,
+            2,
+            2,
+            2
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen warten ohne Hilfe von außen, bis sie an der Reihe sind, und reagieren sicher, wenn ihr Name (oder ihre Nummer) aufgerufen wird.",
+        "ablauf": [
+          "Geschichte lesen (5 Min.): „Was ist schiefgelaufen? Wer hätte etwas tun können?“",
+          "Aufgabe 1 bis 3 (15 Min.): Ideen für Tiago, eigene Warte-Orte, eigene Strategien.",
+          "Merkkasten und Aufgabe 4 (10 Min.): Aufrufen im Raum nachspielen, auch mit falsch ausgesprochenem Namen.",
+          "Aufgabe 5 als Wochenauftrag; in der nächsten Stunde kurz besprechen."
+        ],
+        "hintergrund": "Warten ohne körperliche Begleitung und auf den eigenen Namen reagieren sind frühe Ziele der ELDiB (Bergsson & Luckfiel, 1998). Im Jugendalter wird daraus Alltag mit Folgen: Wer beim Arzt, auf dem Amt oder im Praktikum den Aufruf verpasst oder nicht warten kann, verliert Termine und Vertrauen. Aufschub aushalten lässt sich lernen – vor allem mit Strategien, die die Wartezeit füllen, statt sie nur zu ertragen (Mischel, 2014). Eine kurze, konkrete Geschichte aus dem Alltag hilft, die Situation vorher durchzudenken; dieses Vorgehen ist aus den Social Stories bekannt (Gray, 2015).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Mischel, W. (2014). The Marshmallow Test. New York: Little, Brown.",
+          "Gray, C. (2015). The New Social Story Book. Arlington, TX: Future Horizons."
+        ],
+        "differenzierung": {
+          "leichter": "Mit kurzen Wartezeiten beginnen (2 Minuten mit Sanduhr) und den Namen leise, aber deutlich rufen.",
+          "schwerer": "Einen echten Termin selbst ausmachen und allein wahrnehmen (Friseur, Bibliothek, Amt)."
+        },
+        "impulse": [
+          "Wo wartest du am wenigsten gern?",
+          "Was hilft dir, die Zeit schneller vergehen zu lassen?"
+        ],
+        "tipps": [
+          "Würde wahren: Das Wartezimmer-Spiel ohne Publikum üben; Namen nie bloßstellend wiederholen.",
+          "Fortschritt beobachten: Reagiert die Person beim ersten Aufruf und wartet sie länger ruhig? Die Werte aus Aufgabe 5 zeigen den Verlauf."
+        ],
+        "achtung": "Reagiert jemand häufig nicht auf den eigenen Namen, an Hörprobleme denken und eine Abklärung anregen."
+      }
+    },
+    "fr": {
+      "titel": "Attendre qu’on m’appelle",
+      "untertitel": "Chez le médecin, au secrétariat, au comptoir : d’abord attendre – puis réagir quand ton nom ou ton numéro est appelé.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Dans la salle d’attente",
+          "text": "Tiago a rendez-vous chez le médecin. Six personnes attendent déjà. Tiago met son casque et joue sur son téléphone. Au bout de vingt minutes, l’assistante appelle : « Tiago Martins ? » Tiago n’entend rien. Elle appelle encore deux fois. Puis elle fait entrer la personne suivante.",
+          "bild": "figur:ben:gelangweilt"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui aurait aidé Tiago ? Coche."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "ne porter qu’un écouteur",
+            "baisser le son",
+            "dire à l’accueil : « Je suis là. Appelez-moi fort, s’il vous plaît. »",
+            "lever les yeux après chaque personne",
+            "demander toutes les cinq minutes : « C’est à moi ? »",
+            "repartir tout simplement"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où dois-tu attendre qu’on t’appelle ? Complète."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Où ?",
+            "Comment m’appelle-t-on ?",
+            "Que fais-je en attendant ?"
+          ],
+          "beispiel": [
+            "p. ex. cabinet médical",
+            "avec mon nom",
+            "musique basse, une oreille libre"
+          ],
+          "werte": [
+            [
+              "au comptoir boucherie",
+              "",
+              ""
+            ],
+            [
+              "au secrétariat",
+              "",
+              ""
+            ],
+            [
+              "en stage, pendant la réunion",
+              "",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Attendre, c’est dur pour toi ? Écris tes idées."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "En attendant, je peux …",
+            "Si ça dure longtemps, …",
+            "Si je n’arrive plus à attendre, je dis : « … »"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Quand on appelle ton nom",
+          "punkte": [
+            "Lever la tête et regarder.",
+            "Répondre : « Oui, je suis là. » – ou lever la main.",
+            "Se lever, prendre ses affaires, y aller."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "On t’appelle : que fais-tu ? Relie."
+        },
+        {
+          "art": "zuordnen",
+          "links": [
+            "L’assistante appelle ton nom.",
+            "Un numéro s’affiche sur l’écran.",
+            "Quelqu’un prononce mal ton nom.",
+            "Tu étais aux toilettes un moment."
+          ],
+          "rechts": [
+            "Dire gentiment : « Je crois que c’est moi. Je m’appelle … »",
+            "Demander à l’accueil : « Est-ce qu’on m’a déjà appelé·e ? »",
+            "Lever la main, dire « Oui, je suis là », y aller.",
+            "Comparer avec le numéro sur ton ticket."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "S’entraîner à attendre : note où tu as attendu et comment ça s’est passé."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quand et où ?",
+            "Combien de temps ?",
+            "Nom entendu ?",
+            "Comment ça s’est passé ? (0–10)"
+          ],
+          "beispiel": [
+            "p. ex. mardi, dentiste",
+            "25 min",
+            "oui",
+            "7"
+          ],
+          "zeilen": 3,
+          "breiten": [
+            3,
+            2,
+            2,
+            2
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes attendent leur tour sans aide extérieure et réagissent sûrement quand leur nom (ou leur numéro) est appelé.",
+        "ablauf": [
+          "Lire l’histoire (5 min) : « Qu’est-ce qui n’a pas marché ? Qui aurait pu faire quelque chose ? »",
+          "Exercices 1 à 3 (15 min) : idées pour Tiago, ses lieux d’attente, ses stratégies.",
+          "Encadré et exercice 4 (10 min) : rejouer l’appel dans la salle, aussi avec un nom mal prononcé.",
+          "Exercice 5 comme mission de la semaine ; en parler brièvement à la séance suivante."
+        ],
+        "hintergrund": "Attendre sans accompagnement physique et réagir à son propre nom sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). À l’adolescence, cela devient un quotidien avec des conséquences : qui rate l’appel chez le médecin, à l’administration ou en stage, ou ne supporte pas l’attente, perd des rendez-vous et de la confiance. Supporter un délai s’apprend – surtout avec des stratégies qui remplissent l’attente au lieu de seulement la subir (Mischel, 2014). Une histoire courte et concrète aide à penser la situation à l’avance ; c’est le principe des Social Stories (Gray, 2015).",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Mischel, W. (2014). The Marshmallow Test. New York: Little, Brown.",
+          "Gray, C. (2015). The New Social Story Book. Arlington, TX: Future Horizons."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer par de courtes attentes (2 minutes avec un sablier) et appeler le prénom doucement mais clairement.",
+          "schwerer": "Prendre seul·e un vrai rendez-vous et s’y rendre (coiffeur, bibliothèque, administration)."
+        },
+        "impulse": [
+          "Où détestes-tu le plus attendre ?",
+          "Qu’est-ce qui t’aide à faire passer le temps plus vite ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : jouer la salle d’attente sans public ; ne jamais répéter un prénom de façon humiliante.",
+          "Observer les progrès : la personne réagit-elle au premier appel et attend-elle plus longtemps au calme ? Les valeurs de l’exercice 5 montrent l’évolution."
+        ],
+        "achtung": "Si quelqu’un réagit souvent mal à son nom, penser à un problème d’audition et proposer un bilan."
+      }
+    }
+  },
+  {
+    "id": "arbeitsauftrag-hoeren-nachfragen-anfangen",
+    "bereich": "verhalten",
+    "thema": "regeln",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "SOZ-7",
+      "V-13"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Arbeitsauftrag",
+      "Anweisungen",
+      "Mitmachen",
+      "Praktikum",
+      "Anfangen"
+    ],
+    "bild": "icon:clipboard-check",
+    "verwandt": [
+      "szenen-proben-im-rollenspiel",
+      "sitzen-und-bewegen"
+    ],
+    "de": {
+      "titel": "Arbeitsauftrag: hören, nachfragen, anfangen",
+      "untertitel": "Im Praktikum sagt die Chefin, was zu tun ist. Wer zuhört, kurz nachfragt und gleich anfängt, macht einen guten Eindruck.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ein Auftrag hat oft drei Teile: Was? Wo? Bis wann? Hör genau hin. Wenn du etwas nicht weißt, frag nach. Dann fang an – nicht erst in zehn Minuten."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Hinhören",
+              "text": "Blick zur Person"
+            },
+            {
+              "titel": "Wiederholen",
+              "text": "„Also: Ich soll …“"
+            },
+            {
+              "titel": "Nachfragen",
+              "text": "„Wo finde ich …?“"
+            },
+            {
+              "titel": "Anfangen",
+              "text": "sofort, mit Schritt 1"
+            }
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Erster Tag im Supermarkt",
+          "text": "Diogo macht ein Praktikum im Supermarkt. Frau Weber sagt: „Bitte stell die Joghurts ins Kühlregal, ganz vorne die mit dem frühesten Datum. Wenn du fertig bist, komm zur Kasse. Um zehn machen wir Pause.“",
+          "bild": "figur:lehrerin:ruhig:zeigen"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was soll Diogo tun? Schreib die Teile des Auftrags auf."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Was?",
+            "Wo?",
+            "Danach?",
+            "Pause um?"
+          ],
+          "zeilen": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Diogo weiß nicht, wo das Datum steht. Welche Fragen sind gut? Kreuze an."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "„Hä?“",
+            "„Wo steht das Datum auf dem Joghurt?“",
+            "„Können Sie es mir einmal zeigen?“",
+            "nichts sagen und irgendwie anfangen",
+            "„Mach ich später.“",
+            "„Also: vorne die alten, hinten die neuen?“"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn das Anfangen schwer ist: Mach dir einen Plan."
+        },
+        {
+          "art": "wennDann",
+          "beispiele": [
+            {
+              "wenn": "ich nicht weiß, womit ich anfangen soll,",
+              "dann": "frage ich: „Was mache ich zuerst?“"
+            }
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zerleg die Aufträge: Was? Wo? Bis wann?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Auftrag",
+            "Was?",
+            "Wo?",
+            "Bis wann?"
+          ],
+          "werte": [
+            [
+              "„Bring bitte die leeren Kisten in den Hof, bevor um elf der Lieferwagen kommt.“",
+              "",
+              "",
+              ""
+            ],
+            [
+              "„Wisch nach dem Mittagessen die Tische in der Kantine ab.“",
+              "",
+              "",
+              ""
+            ],
+            [
+              "„Füll bis Freitag die Seife in den Toiletten auf.“",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Und bei dir? Probier die vier Schritte bei echten Aufträgen aus und kreuze an."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Auftrag",
+            "Wiederholt",
+            "Nachgefragt",
+            "Sofort angefangen"
+          ],
+          "beispiel": [
+            "z. B. Tische abwischen",
+            "x",
+            "",
+            "x"
+          ],
+          "zeilen": 4,
+          "breiten": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "Anfangen ist der schwerste Schritt. Mach den ersten kleinen Teil sofort – zum Beispiel Handschuhe anziehen oder das Material holen."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen nehmen Aufträge von Erwachsenen auf, klären Unklares mit einer passenden Frage und beginnen ohne Aufforderung mit der Tätigkeit.",
+        "ablauf": [
+          "Einstieg (5 Min.): einen Auftrag mit drei Teilen geben. „Wer kann ihn wiederholen?“",
+          "Kette und Geschichte lesen, Aufgabe 1 und 2 (10 Min.).",
+          "Aufgabe 3 (5 Min.): Wenn-dann-Plan für das Anfangen schreiben.",
+          "Aufgabe 4 (10 Min.): Aufträge zerlegen; danach echte kleine Aufträge im Raum geben und die vier Schritte sichtbar üben.",
+          "Aufgabe 5 eine Woche lang führen und gemeinsam auswerten."
+        ],
+        "hintergrund": "Auf Aufforderungen von Erwachsenen reagieren und sich an Aktivitäten beteiligen sind frühe Ziele der ELDiB (Bergsson & Luckfiel, 1998). Bei Jugendlichen zeigen sich Lücken hier oft als „Verweigerung“, obwohl der Auftrag nicht verstanden oder nicht behalten wurde. Mehrteilige Anweisungen belasten das Arbeitsgedächtnis; Wiederholen und Nachfragen entlasten es (Diamond, 2013). Für das Anfangen helfen Wenn-dann-Pläne, die den ersten Schritt vorher festlegen (Gollwitzer, 1999). Der Praktikumsrahmen zeigt, wofür die Übung gut ist: einen guten Eindruck machen und ernst genommen werden.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Aufträge mit einem Teil geben und mit Bild oder Geste unterstützen; nur „Hinhören“ und „Anfangen“ üben.",
+          "schwerer": "Einen Auftrag mit vier Teilen behalten und einer anderen Person korrekt weitergeben."
+        },
+        "impulse": [
+          "Was ist schlimmer: nachfragen oder es falsch machen?",
+          "Welcher der vier Schritte fällt dir am leichtesten?"
+        ],
+        "tipps": [
+          "Würde wahren: Nachfragen ausdrücklich loben; nie „Hast du wieder nicht zugehört?“ sagen.",
+          "Fortschritt beobachten: Wie viele Sekunden vergehen zwischen Auftrag und Anfangen? Ab und zu messen und mit der Person vergleichen."
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Consigne : écouter, demander, commencer",
+      "untertitel": "En stage, la cheffe dit ce qu’il faut faire. Qui écoute, pose une question courte et commence tout de suite fait bonne impression.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Une consigne a souvent trois parties : quoi ? où ? pour quand ? Écoute bien. Si tu ne sais pas quelque chose, demande. Puis commence – pas dans dix minutes."
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "items": [
+            {
+              "titel": "Écouter",
+              "text": "regarder la personne"
+            },
+            {
+              "titel": "Répéter",
+              "text": "« Donc, je dois … »"
+            },
+            {
+              "titel": "Demander",
+              "text": "« Où se trouve … ? »"
+            },
+            {
+              "titel": "Commencer",
+              "text": "tout de suite, étape 1"
+            }
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Premier jour au supermarché",
+          "text": "Diogo fait un stage au supermarché. Madame Weber dit : « Range les yaourts dans le rayon frais, devant ceux qui ont la date la plus proche. Quand tu as fini, viens à la caisse. À dix heures, on fait la pause. »",
+          "bild": "figur:lehrerin:ruhig:zeigen"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que doit faire Diogo ? Écris les parties de la consigne."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quoi ?",
+            "Où ?",
+            "Ensuite ?",
+            "Pause à ?"
+          ],
+          "zeilen": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Diogo ne sait pas où est la date. Quelles questions sont bonnes ? Coche."
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "« Hein ? »",
+            "« Où est la date sur le yaourt ? »",
+            "« Vous pouvez me montrer une fois ? »",
+            "ne rien dire et commencer n’importe comment",
+            "« Je ferai ça plus tard. »",
+            "« Donc : devant les anciens, derrière les nouveaux ? »"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quand c’est dur de commencer : fais-toi un plan."
+        },
+        {
+          "art": "wennDann",
+          "beispiele": [
+            {
+              "wenn": "je ne sais pas par quoi commencer,",
+              "dann": "je demande : « Qu’est-ce que je fais d’abord ? »"
+            }
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Décompose les consignes : quoi ? où ? pour quand ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Consigne",
+            "Quoi ?",
+            "Où ?",
+            "Pour quand ?"
+          ],
+          "werte": [
+            [
+              "« Apporte les caisses vides dans la cour avant l’arrivée de la camionnette à onze heures. »",
+              "",
+              "",
+              ""
+            ],
+            [
+              "« Après le déjeuner, essuie les tables de la cantine. »",
+              "",
+              "",
+              ""
+            ],
+            [
+              "« D’ici vendredi, remplis le savon dans les toilettes. »",
+              "",
+              "",
+              ""
+            ]
+          ],
+          "zeilen": 0,
+          "breiten": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Et toi ? Essaie les quatre étapes avec de vraies consignes et coche."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Consigne",
+            "Répétée",
+            "Question posée",
+            "Commencé tout de suite"
+          ],
+          "beispiel": [
+            "p. ex. essuyer les tables",
+            "x",
+            "",
+            "x"
+          ],
+          "zeilen": 4,
+          "breiten": [
+            4,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "Commencer, c’est l’étape la plus difficile. Fais tout de suite la première petite partie – par exemple mettre les gants ou aller chercher le matériel."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reçoivent les consignes des adultes, clarifient ce qui n’est pas clair par une question adaptée et commencent l’activité sans relance.",
+        "ablauf": [
+          "Entrée (5 min) : donner une consigne en trois parties. « Qui peut la répéter ? »",
+          "Lire la chaîne et l’histoire, exercices 1 et 2 (10 min).",
+          "Exercice 3 (5 min) : écrire un plan « si … alors » pour commencer.",
+          "Exercice 4 (10 min) : décomposer les consignes ; puis donner de petites consignes réelles dans la salle et s’exercer aux quatre étapes.",
+          "Tenir l’exercice 5 pendant une semaine et en faire le bilan ensemble."
+        ],
+        "hintergrund": "Réagir aux demandes des adultes et participer aux activités sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Chez les jeunes, ces lacunes passent souvent pour du « refus », alors que la consigne n’a pas été comprise ou retenue. Les consignes en plusieurs parties chargent la mémoire de travail ; répéter et demander la soulagent (Diamond, 2013). Pour commencer, les plans « si … alors » qui fixent la première étape à l’avance aident (Gollwitzer, 1999). Le cadre du stage montre à quoi sert l’exercice : faire bonne impression et être pris·e au sérieux.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Donner des consignes en une partie, soutenues par une image ou un geste ; s’exercer seulement à « écouter » et « commencer ».",
+          "schwerer": "Retenir une consigne en quatre parties et la transmettre correctement à une autre personne."
+        },
+        "impulse": [
+          "Qu’est-ce qui est pire : demander ou mal faire ?",
+          "Laquelle des quatre étapes est la plus facile pour toi ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : valoriser explicitement les questions ; ne jamais dire « Tu n’as encore pas écouté ? ».",
+          "Observer les progrès : combien de secondes entre la consigne et le début ? Le mesurer de temps en temps et comparer avec la personne."
+        ]
+      }
+    }
+  },
+  {
+    "id": "sitzen-und-bewegen",
+    "bereich": "verhalten",
+    "thema": "pausen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "V-11",
+      "V-12"
+    ],
+    "schlagworte": [
+      "Jugendliche",
+      "Grundlagen",
+      "Sitzen",
+      "Bewegung",
+      "Bewegungspause",
+      "Unruhe",
+      "Sport",
+      "Abmachung"
+    ],
+    "bild": "icon:stretching",
+    "verwandt": [
+      "erste-hilfe-wo-tut-es-weh",
+      "arbeitsauftrag-hoeren-nachfragen-anfangen"
+    ],
+    "de": {
+      "titel": "Sitzen bleiben – und gezielt bewegen",
+      "untertitel": "Im Unterricht, im Kino, im Bus musst du sitzen. Beim Sport und in der Pause darfst du dich bewegen. Beides gehört zusammen.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Lange still sitzen ist für viele Menschen schwer. Das ist normal. Es hilft zu wissen: Wann muss ich sitzen? Wie lange? Und wie bekomme ich Bewegung, ohne zu stören?"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sitzen oder bewegen? Kreuze an."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "im Bus, während er fährt",
+            "im Kino",
+            "in der Pause auf dem Schulhof",
+            "im Unterricht, während jemand erklärt",
+            "beim Training",
+            "beim Warten auf den Bus",
+            "beim Essen in der Kantine"
+          ],
+          "optionen": [
+            "sitzen",
+            "bewegen",
+            "beides geht"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bewegen, ohne aufzustehen: Probier es aus. Was hilft dir?"
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Füße fest auf den Boden drücken, 5 Sekunden",
+            "Schultern hochziehen – und fallen lassen",
+            "Hände fest gegeneinander drücken",
+            "einen Knetball in der Hand",
+            "gerade hinsetzen und tief ausatmen"
+          ],
+          "optionen": [
+            "hilft",
+            "geht so",
+            "hilft nicht"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Bewegung tut auch dem Kopf gut. Für Jugendliche wird im Durchschnitt eine Stunde Bewegung am Tag empfohlen – Rad, Fußweg, Sport, Tanzen, alles zählt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wann wird Sitzen für dich schwer? Zeichne deine Unruhe über einen Schultag als Kurve."
+        },
+        {
+          "art": "kurve",
+          "x": [
+            "8 Uhr",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"
+          ],
+          "oben": "sehr unruhig",
+          "unten": "ganz ruhig"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bewegung mit Erlaubnis: Macht eine Abmachung für den Unterricht."
+        },
+        {
+          "art": "vertrag",
+          "titel": "Unsere Abmachung",
+          "text": "Wenn ich nicht mehr sitzen kann, zeige ich das mit ___. Dann darf ich ___. Nach ___ Minuten bin ich wieder an meinem Platz.",
+          "unterschriften": [
+            "Ich",
+            "Lehrperson"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine Bewegung in dieser Woche: Kreuz an, was du gemacht hast."
+        },
+        {
+          "art": "plan",
+          "ziel": "Jeden Tag etwa eine Stunde Bewegung",
+          "zeilen": [
+            "Sport oder Training",
+            "zu Fuß oder mit dem Rad unterwegs",
+            "Bewegung in der Pause"
+          ],
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "symbol": "kasten"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen bleiben in Sitzphasen länger am Platz, nutzen unauffällige Bewegung im Sitzen und holen sich Bewegung auf vereinbarte Weise – im Unterricht und in der Freizeit.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wo fällt dir Sitzen am schwersten?“ Antworten ohne Bewertung sammeln.",
+          "Aufgabe 1 (5 Min.): ankreuzen und besprechen, was „beides geht“ heißt.",
+          "Aufgabe 2 (10 Min.): alle Übungen gemeinsam ausprobieren, dann bewerten.",
+          "Aufgabe 3 und 4 (15 Min.): Unruhe-Kurve zeichnen, daraus im Einzelgespräch die Abmachung ableiten; das Zeichen bleibt unauffällig.",
+          "Aufgabe 5 als Wochenplan; nach einer Woche die Abmachung gemeinsam prüfen."
+        ],
+        "hintergrund": "Sitzen bleiben und sich an Bewegungsaktivitäten beteiligen sind frühe Ziele der ELDiB (Bergsson & Luckfiel, 1998). Bei Jugendlichen wirkt Unruhe schnell wie Störung oder Respektlosigkeit. Hilfreicher ist es, Sitzen und Bewegen als zwei Seiten zu behandeln: Wer genug Bewegung bekommt, sitzt danach oft ruhiger. Die WHO empfiehlt Kindern und Jugendlichen im Durchschnitt 60 Minuten mäßige bis intensive Bewegung pro Tag (WHO, 2020); körperliche Aktivität hängt zudem mit besserer psychischer Gesundheit zusammen (Biddle & Asare, 2011). Eine klare Abmachung gibt Bewegung einen erlaubten Platz.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "World Health Organization (2020). WHO Guidelines on Physical Activity and Sedentary Behaviour. Genf: WHO.",
+          "Biddle, S. J. H. & Asare, M. (2011). Physical activity and mental health in children and adolescents: A review of reviews. British Journal of Sports Medicine, 45(11), 886–895."
+        ],
+        "differenzierung": {
+          "leichter": "Sitzphasen kurz halten (5–10 Minuten) und mit einer Uhr sichtbar machen; danach eine geplante Bewegungsaufgabe (Blätter austeilen).",
+          "schwerer": "Eine Bewegungspause von zwei Minuten für die ganze Klasse planen und anleiten."
+        },
+        "impulse": [
+          "Welche Bewegung hilft dir, danach ruhiger zu sitzen?",
+          "Wo darfst du dich ohne zu fragen bewegen?"
+        ],
+        "tipps": [
+          "Würde wahren: Bewegungsbedarf nie vor der Klasse kommentieren. Das vereinbarte Zeichen wird still beantwortet.",
+          "Fortschritt beobachten: Wie lange bleibt die Person in einer Sitzphase am Platz? Einmal pro Woche messen; die Abmachung danach anpassen."
+        ],
+        "achtung": "Starke, dauerhafte Unruhe nicht allein pädagogisch deuten: mit der zuständigen Leitung (Responsable) und den Eltern eine fachliche Abklärung besprechen.",
+        "material": "Knetbälle, Uhr oder Sanduhr"
+      }
+    },
+    "fr": {
+      "titel": "Rester assis – et bouger au bon moment",
+      "untertitel": "En cours, au cinéma, dans le bus, il faut rester assis. Au sport et à la récré, tu peux bouger. Les deux vont ensemble.",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Rester longtemps assis sans bouger, c’est difficile pour beaucoup de gens. C’est normal. Ça aide de savoir : quand dois-je rester assis ? Combien de temps ? Et comment bouger sans déranger ?"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Rester assis ou bouger ? Coche."
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "dans le bus, pendant qu’il roule",
+            "au cinéma",
+            "à la récré dans la cour",
+            "en cours, pendant une explication",
+            "à l’entraînement",
+            "en attendant le bus",
+            "au repas à la cantine"
+          ],
+          "optionen": [
+            "assis",
+            "bouger",
+            "les deux"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bouger sans se lever : essaie. Qu’est-ce qui t’aide ?"
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "appuyer fort les pieds au sol, 5 secondes",
+            "monter les épaules – et les relâcher",
+            "presser fort les mains l’une contre l’autre",
+            "une balle anti-stress dans la main",
+            "s’asseoir droit et expirer profondément"
+          ],
+          "optionen": [
+            "ça aide",
+            "moyen",
+            "ça n’aide pas"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Bouger fait aussi du bien à la tête. Pour les jeunes, on recommande en moyenne une heure d’activité physique par jour – vélo, marche, sport, danse, tout compte."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quand est-ce dur de rester assis·e ? Dessine ton agitation pendant une journée d’école."
+        },
+        {
+          "art": "kurve",
+          "x": [
+            "8 h",
+            "9 h",
+            "10 h",
+            "11 h",
+            "12 h",
+            "13 h",
+            "14 h",
+            "15 h",
+            "16 h"
+          ],
+          "oben": "très agité·e",
+          "unten": "très calme"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Bouger avec permission : passez un accord pour les cours."
+        },
+        {
+          "art": "vertrag",
+          "titel": "Notre accord",
+          "text": "Quand je n’arrive plus à rester assis·e, je le montre avec ___. Alors, je peux ___. Après ___ minutes, je suis de retour à ma place.",
+          "unterschriften": [
+            "Moi",
+            "Enseignant·e"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ton activité cette semaine : coche ce que tu as fait."
+        },
+        {
+          "art": "plan",
+          "ziel": "Environ une heure d’activité chaque jour",
+          "zeilen": [
+            "sport ou entraînement",
+            "à pied ou à vélo",
+            "bouger à la récré"
+          ],
+          "tage": [
+            "lu",
+            "ma",
+            "me",
+            "je",
+            "ve",
+            "sa",
+            "di"
+          ],
+          "symbol": "kasten"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes restent plus longtemps à leur place pendant les phases assises, bougent discrètement sur leur chaise et obtiennent du mouvement de manière convenue – en cours et pendant leurs loisirs.",
+        "ablauf": [
+          "Entrée (5 min) : « Où est-ce le plus dur de rester assis ? » Recueillir les réponses sans juger.",
+          "Exercice 1 (5 min) : cocher et discuter ce que veut dire « les deux ».",
+          "Exercice 2 (10 min) : essayer ensemble tous les exercices, puis évaluer.",
+          "Exercices 3 et 4 (15 min) : dessiner la courbe, puis en tirer l’accord en entretien individuel ; le signe reste discret.",
+          "Exercice 5 comme plan de la semaine ; après une semaine, revoir l’accord ensemble."
+        ],
+        "hintergrund": "Rester assis et participer aux activités physiques sont des objectifs précoces de l’ELDiB (Bergsson & Luckfiel, 1998). Chez les jeunes, l’agitation passe vite pour du dérangement ou un manque de respect. Il est plus utile de traiter le fait de rester assis et de bouger comme deux faces d’une même chose : qui bouge assez reste souvent plus calme ensuite. L’OMS recommande aux enfants et aux adolescents en moyenne 60 minutes d’activité physique modérée à intense par jour (OMS, 2020) ; l’activité physique est aussi liée à une meilleure santé mentale (Biddle & Asare, 2011). Un accord clair donne au mouvement une place autorisée.",
+        "quellen": [
+          "Bergsson, M. & Luckfiel, H. (1998). Umgang mit „schwierigen“ Kindern. Berlin: Cornelsen Scriptor.",
+          "World Health Organization (2020). WHO Guidelines on Physical Activity and Sedentary Behaviour. Genf: WHO.",
+          "Biddle, S. J. H. & Asare, M. (2011). Physical activity and mental health in children and adolescents: A review of reviews. British Journal of Sports Medicine, 45(11), 886–895."
+        ],
+        "differenzierung": {
+          "leichter": "Garder des phases assises courtes (5–10 minutes), visibles avec une minuterie ; ensuite, une tâche en mouvement prévue (distribuer des feuilles).",
+          "schwerer": "Préparer et animer une pause active de deux minutes pour toute la classe."
+        },
+        "impulse": [
+          "Quel mouvement t’aide à rester ensuite plus calme ?",
+          "Où as-tu le droit de bouger sans demander ?"
+        ],
+        "tipps": [
+          "Préserver la dignité : ne jamais commenter le besoin de bouger devant la classe. On répond au signe convenu en silence.",
+          "Observer les progrès : combien de temps la personne reste-t-elle à sa place ? Mesurer une fois par semaine ; adapter ensuite l’accord."
+        ],
+        "achtung": "Ne pas interpréter seul·e une agitation forte et durable : envisager un bilan spécialisé avec la direction compétente (responsable) et les parents.",
+        "material": "Balles anti-stress, minuterie ou sablier"
+      }
+    }
+  }
+]
