@@ -114,7 +114,7 @@ export const BEREICHE: BereichDef[] = [
     fr: 'Préscolaire (cycle 1)',
     icon: 'sandbox',
     farben: { tief: '#B5600F', mittel: '#F2CDA2', zart: '#FDF3E7' },
-    beschreibung: 'Themenwochen für die Spielschule (Cycle 1): je Einheit Bildkarten und ein Blatt zum Malen, Zählen oder Zuordnen, dazu Aktivitäten für Kreis, Bewegung, Gestalten, Sprache, Musik und Sinne, ein Reim zum Mitmachen, Ideen für die Spielecken und ein Tipp für zu Hause.',
+    beschreibung: 'Themenwochen für die Spielschule (Cycle 1): je Einheit farbige Bildkarten und ein Blatt zum Tun (schneiden, kleben, falten, spielen, forschen), Aktivitäten für Kreis, Bewegung, Gestalten, Sprache, Musik und Sinne, ein Reim, ein Experiment der Woche, Beobachten & Begleiten, Wörter der Woche in vier Sprachen und ein Elternbrief. Alle Blätter der Spielschule: Michèle Wagner.',
   },
 ]
 

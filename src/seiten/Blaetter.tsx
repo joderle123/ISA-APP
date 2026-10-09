@@ -16,7 +16,7 @@ import { prepareInIdle, searchText, searchTokens, tokenMatch, type SearchToken }
 import { loadPdfModule } from '../lib/loadPdf'
 import { repositionToasts, toast } from '../lib/toast'
 import { setBlattSprache, useBlattSprache } from '../lib/sprache'
-import { URHEBER } from '../lib/urheber'
+import { urheberschaft } from '../lib/urheber'
 import { Urheber } from '../components/Urheber'
 import type { Bewertungen } from '../lib/useBewertungen'
 import { BewertungKurz, BewertungVoll } from '../components/Bewertung'
@@ -403,7 +403,8 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
           )}
         </div>
         {/* Alle Blätter sind mit KI erstellt: Vermerk in der Sprache, in der das Blatt gerade gezeigt wird */}
-        <Urheber text={URHEBER[sprache]} className="urheber bl-detail-urheber" lang={sprache} />
+        {/* Spielschule: Michèle Wagner, ohne CDSE-Logo (lib/urheber.ts) */}
+        <Urheber text={urheberschaft(b.bereich).text[sprache]} logo={urheberschaft(b.bereich).logo} className="urheber bl-detail-urheber" lang={sprache} />
       </div>
     </Dialog>
   )

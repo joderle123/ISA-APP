@@ -12,7 +12,7 @@ import { eldibDomainById, eldibGoalById } from '../../data/taxonomy'
 import { Bausteine, nummerieren, NiveauZeichen, Plakette, Fliess, type Ctx } from './bausteine'
 import { LEHRER_MASSE, MASSE, SCHRIFT, SEITE, TEXTE, dauerText, typo, type Masse } from './stil'
 import { ELDIB_FR } from '../eldib-fr'
-import { URHEBER, URHEBER_NAME } from '../../lib/urheber'
+import { urheberschaft } from '../../lib/urheber'
 import { CDSE_LOGO, CDSE_LOGO_SEITEN } from '../../lib/cdse-logo'
 import { hatBegleiten, zusaetzeVon, type Zusatz } from '../spielschule'
 import { BegleitenSeite, ElternbriefSeite, KlassenrasterSeite, PortfolioSeite } from './Begleiten'
@@ -130,16 +130,17 @@ function Kopfzeile({ blatt, nr, sprache, p, m, lehrer, heft }: { blatt: Blatt; n
 }
 
 /** Fußzeile: links das CDSE-Logo, daneben Marke, Blatt und Seitenzahl, darunter klein der Urheber-Vermerk
- *  in der Sprache des Blatts. Sie steht tiefer als der Inhalt je reicht (SEITE.unten) – auch auf ganz vollen
+ *  in der Sprache des Blatts (Spielschule: Michèle Wagner, ohne Logo – lib/urheber.ts). Sie steht tiefer als der Inhalt je reicht (SEITE.unten) – auch auf ganz vollen
  *  Seiten bleibt Luft. */
 function Fusszeile({ blatt, nr, sprache, heft }: { blatt: Blatt; nr?: string; sprache: Sprache; heft?: HeftAngaben }) {
   const tx = TEXTE[sprache]
+  const u = urheberschaft(blatt.bereich)
   return (
     <View fixed style={{ position: 'absolute', left: SEITE.rand, right: SEITE.rand, bottom: 16, borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 4.5, flexDirection: 'row', alignItems: 'center' }}>
-      <Image src={CDSE_LOGO} style={{ width: LOGO_HOEHE * CDSE_LOGO_SEITEN, height: LOGO_HOEHE, marginRight: 8 }} />
+      {u.logo ? <Image src={CDSE_LOGO} style={{ width: LOGO_HOEHE * CDSE_LOGO_SEITEN, height: LOGO_HOEHE, marginRight: 8 }} /> : null}
       <View style={{ flex: 1 }}>
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>{heft ? heft.fuss : 'CDSE Toolbox'}</Text>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>{heft ? heft.fuss : u.marke[sprache]}</Text>
           {/* immer eine Zeile: ein sehr langer Titel endet mit „…“, statt die Fußzeile zu erhöhen */}
           <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, marginLeft: 6, flex: 1, maxLines: 1, textOverflow: 'ellipsis' }}>
             {[nr && !heft ? `${tx.arbeitsblatt} ${nr}` : null, typo(blattInhalt(blatt, sprache).titel, sprache)].filter(Boolean).join('  ·  ')}
@@ -156,7 +157,7 @@ function Fusszeile({ blatt, nr, sprache, heft }: { blatt: Blatt; nr?: string; sp
             />
           )}
         </View>
-        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6, color: NEUTRAL.sehrLeise, marginTop: 2.5, letterSpacing: 0.15 }}>{URHEBER[sprache]}</Text>
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6, color: NEUTRAL.sehrLeise, marginTop: 2.5, letterSpacing: 0.15 }}>{u.text[sprache]}</Text>
       </View>
     </View>
   )
@@ -591,8 +592,9 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
 
 export function BlattDokument({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen }) {
   const inhalt = blattInhalt(blatt, opt?.sprache ?? 'de')
+  const u = urheberschaft(blatt.bereich)
   return (
-    <Document title={inhalt.titel} author={URHEBER_NAME} creator="CDSE Toolbox" producer="CDSE Toolbox" language={opt?.sprache === 'fr' ? 'fr' : 'de'}>
+    <Document title={inhalt.titel} author={u.name} creator={u.marke.de} producer={u.marke.de} language={opt?.sprache === 'fr' ? 'fr' : 'de'}>
       <BlattSeiten blatt={blatt} opt={opt} />
     </Document>
   )
@@ -601,8 +603,10 @@ export function BlattDokument({ blatt, opt }: { blatt: Blatt; opt?: BlattOptione
 /** Mehrere Blätter in einer Datei (z. B. eine Themenmappe). Jedes Blatt in seiner Sprache (sonst opt.sprache). */
 export function MappeDokument({ blaetter, opt, titel }: { blaetter: { blatt: Blatt; nr?: string; sprache?: Sprache }[]; opt?: BlattOptionen; titel: string }) {
   const fr = blaetter.length > 0 && blaetter.every((x) => (x.sprache ?? opt?.sprache) === 'fr')
+  // eine Mappe nur aus der Spielschule: Michèle Wagner; sonst wie die Toolbox
+  const u = urheberschaft(blaetter.length > 0 && blaetter.every((x) => x.blatt.bereich === 'spielschule') ? 'spielschule' : undefined)
   return (
-    <Document title={titel} author={URHEBER_NAME} creator="CDSE Toolbox" producer="CDSE Toolbox" language={fr ? 'fr' : 'de'}>
+    <Document title={titel} author={u.name} creator={u.marke.de} producer={u.marke.de} language={fr ? 'fr' : 'de'}>
       {blaetter.map(({ blatt, nr, sprache }) => (
         <BlattSeiten key={blatt.id} blatt={blatt} opt={{ ...opt, nr, sprache: sprache ?? opt?.sprache }} />
       ))}

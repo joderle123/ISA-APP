@@ -7,7 +7,7 @@
 // verteilt (feste Zeilenhöhen) – so stehen die Seitenzahlen schon beim Setzen fest.
 // ---------------------------------------------------------------------------
 
-import { Document, Page, View, Text, Svg, G, Rect, Line, Circle, Path, Image } from '@react-pdf/renderer'
+import { Document, Page, View, Text, Svg, G, Rect, Line, Circle, Path } from '@react-pdf/renderer'
 import type { ReactNode } from 'react'
 import type { Blatt, Experiment, PhaenomenId, Sprache } from '../typen'
 import { bereichById, THEMEN, themaLabel } from '../katalog'
@@ -16,8 +16,10 @@ import { experimentVon, KARTEI_THEMEN, PHAENOMENE, THEMA_BILD, forscherZeichnung
 import { Zeichnen } from './Zeichnen'
 import { ForschenSeite } from './Forschen'
 import { SCHRIFT, SEITE, typo } from './stil'
-import { URHEBER, URHEBER_NAME } from '../../lib/urheber'
-import { CDSE_LOGO, CDSE_LOGO_SEITEN } from '../../lib/cdse-logo'
+import { urheberschaft } from '../../lib/urheber'
+
+/** Die Forscherkartei gehört zur Spielschule: Michèle Wagner, ohne CDSE und ohne Logo (lib/urheber.ts). */
+const U = urheberschaft('spielschule')
 
 const SEITE_B = 595.28
 /** Höhe für Inhalt und Register je Seite (A4 minus Ränder, Kopf und Seitentitel, etwas Luft). */
@@ -201,17 +203,15 @@ function KarteiKopf({ reiter, meta, p }: { reiter: string; meta: string; p: Pale
 }
 
 function KarteiFuss({ titel, sprache }: { titel: string; sprache: Sprache }) {
-  const h = 19
   return (
     <View fixed style={{ position: 'absolute', left: SEITE.rand, right: SEITE.rand, bottom: 16, borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 4.5, flexDirection: 'row', alignItems: 'center' }}>
-      <Image src={CDSE_LOGO} style={{ width: h * CDSE_LOGO_SEITEN, height: h, marginRight: 8 }} />
       <View style={{ flex: 1 }}>
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>{`${TX[sprache].kartei} · CDSE Toolbox`}</Text>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7, color: NEUTRAL.marke, letterSpacing: 0.4 }}>{`${TX[sprache].kartei} · ${U.marke[sprache]}`}</Text>
           <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7, color: NEUTRAL.sehrLeise, marginLeft: 6, flex: 1, maxLines: 1, textOverflow: 'ellipsis' }}>{typo(titel, sprache)}</Text>
           <Text style={{ width: 46, marginLeft: 8, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8.5, color: NEUTRAL.text, textAlign: 'right' }} render={({ pageNumber }) => String(pageNumber)} />
         </View>
-        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6, color: NEUTRAL.sehrLeise, marginTop: 2.5, letterSpacing: 0.15 }}>{URHEBER[sprache]}</Text>
+        <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6, color: NEUTRAL.sehrLeise, marginTop: 2.5, letterSpacing: 0.15 }}>{U.text[sprache]}</Text>
       </View>
     </View>
   )
@@ -347,10 +347,9 @@ function Deckblatt({ aufbau, sprache, p }: { aufbau: KarteiAufbau; sprache: Spra
       </View>
 
       <View style={{ position: 'absolute', left: 48, right: 48, bottom: 26, flexDirection: 'row', alignItems: 'center', borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 6 }}>
-        <Image src={CDSE_LOGO} style={{ width: 22 * CDSE_LOGO_SEITEN, height: 22, marginRight: 9 }} />
         <View style={{ flex: 1 }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7.5, color: NEUTRAL.marke, letterSpacing: 0.4 }}>CDSE Toolbox</Text>
-          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6.5, color: NEUTRAL.sehrLeise, marginTop: 2 }}>{URHEBER[sprache]}</Text>
+          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7.5, color: NEUTRAL.marke, letterSpacing: 0.4 }}>{U.marke[sprache]}</Text>
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 6.5, color: NEUTRAL.sehrLeise, marginTop: 2 }}>{U.text[sprache]}</Text>
         </View>
       </View>
     </Page>
@@ -456,7 +455,7 @@ export function ForscherkarteiDokument({ blaetter, sprache = 'de' }: { blaetter:
   const p = palette(bereichById.get('spielschule')!.farben)
   const aufbau = karteiAufbau(karteiEintraege(blaetter, sprache), sprache)
   return (
-    <Document title={`${t.kartei} – ${t.bereich}`} author={URHEBER_NAME} creator="CDSE Toolbox" producer="CDSE Toolbox" language={sprache}>
+    <Document title={`${t.kartei} – ${t.bereich}`} author={U.name} creator={U.marke.de} producer={U.marke.de} language={sprache}>
       <Deckblatt aufbau={aufbau} sprache={sprache} p={p} />
       {aufbau.inhalt.map((teile, i) => (
         <InhaltSeite key={'i' + i} teile={teile} aufbau={aufbau} sprache={sprache} p={p} erste={i === 0} />
