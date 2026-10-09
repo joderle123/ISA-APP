@@ -15,7 +15,7 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
       String.raw`\breihum\b|\bder Reihe nach\b|\bMitschüler\w*|\bKlassenkamerad\w*|\bdie anderen Kinder\b|\bein anderes Kind\b|\bPartnerkind\b|\bin Paaren\b|\bpaarweise\b`,
       String.raw`\ben (petits )?groupes?\b|\bla classe\b|\bles élèves\b|\bchaque élève\b|\bchacun(e)?\b|\bà tour de rôle\b|\ben binômes?\b|\béquipes?\b`,
       // Reste aus Klasse und Kurs (dritte Blind-Bewertung): Gruppentische, Freiwillige, Banknachbar, Lehrperson, Kugellager …
-      String.raw`\bGruppentisch\w*|\bFreiwillige[n]?\b|\bBanknachbar\w*|\bLehrperson\w*|\bKlassen-\w+|\bKugellager\b|\bStammgruppe\w*|\bpro Team\b|\bLerngruppe\w*|\bExpertengruppe\w*|\bvolontaires?\b|\bvoisin(e)? de table\b`,
+      String.raw`\b\w+-Gruppe\b|\bGruppenmitglied\w*|\bunserer Klasse\b|\bStaffel\w*|\bdevant les autres\b|\bconcours de cris\b|\bvote\b|\bAbstimmung\b|\bGruppentisch\w*|\bFreiwillige[n]?\b|\bBanknachbar\w*|\bLehrperson\w*|\bKlassen-\w+|\bKugellager\b|\bStammgruppe\w*|\bpro Team\b|\bLerngruppe\w*|\bExpertengruppe\w*|\bvolontaires?\b|\bvoisin(e)? de table\b`,
       // „Alle stehen hinter ihrem Stuhl“, „eine freiwillige Person“, „Die Kinder …“, „tous les enfants“
       String.raw`\balle (stehen|sitzen|gehen|laufen|machen|bewegen|setzen|legen|zeigen|rufen|schreiben|malen|bekommen|ziehen)\b|\bfreiwillige Person\b|\bdie Kinder (sitzen|stehen|gehen|bilden|bekommen|ziehen|tauschen|stellen)\b|\btous les enfants\b|\btout le monde\b`,
     ].join('|'),
@@ -31,6 +31,11 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   gaeste: /\b(Gäste|Gast|Betriebsbesuch|Besuch(er)?|Bühne|Publikum|Aufführung|filmen|aufnehmen mit dem Handy)\b|\b(invités?|spectateurs|public|scène)\b/,
   // Verweis auf ein Arbeitsblatt der Quelle, das in Passgenau nicht gedruckt wird
   blattverweis: /\b(Aufgabe|Seite|Teil|Schritt|Station|Kapitel) \d\b|\b(Missionen?|Laufzettel|Fallkarten?|Fallakten?|Bodenradar|Forscher-Blatt|Akku-Blatt|Energie-Linie|Skills-Buch|Sinneskiste)\b|\b(Arbeitsblatt|Arbeitsblattes|Schülerblatt|Kopiervorlage|Vorlage|Koffer-Arbeitsblatt|Rückenwind-Blatt|Detektivblatt|Etappen-Karte|Ziel-Kompass|Motivations-Motor|Belohnungs-Baum|Tank-Tabelle)\b|\b(exercice|page|partie) \d\b|\bfiche (de travail|élève)\b/,
+  // setzt eine frühere Stunde der Quelle voraus (dritte Blind-Bewertung: „Retour, mission“, „Kam dein Moment?“, Ferien-
+  // Auftrag, „en cinq séances“, neues Kapitel) – nur für Einheiten aus Kurs, Förderfach, Material und CREW geprüft
+  rueckbezug: /\b[Mm]issions?\b|\bWochenauftrag\w*|\bnach dem Auftrag\b|\bFerien\w*|\bvacances\b|\bletzten? (Stunde|Sitzung|Einheit)\b|\b(in|für) (vier|fünf|sechs|sieben|acht) (Stunden|Sitzungen|Einheiten)\b|\ben (quatre|cinq|six|sept|huit) séances\b|\b(neue[sn]?|diese[sn]?|des) Kapitels?\b|\b(nouveau|ce) chapitre\b|\bdernière séance\b/,
+  // braucht ein Gerät (iPad mit CREW, Tablet, Laptop) – im Einzelzimmer nicht selbstverständlich
+  geraet: /\b(iPads?|CREW|Tagescode|Tablets?|Laptops?|Beamer|Smartboard|tablettes?|ordinateur portable)\b/,
   // läuft über Tage oder findet zu Hause statt
   mehrtag: /\b(eine Woche lang|die ganze Woche|während der Woche|die Woche über|jeden Abend|jeden Tag|täglich|Wochen-?[Tt]racker|Wochenprotokoll|Punkteplan|Punkte-?[Mm]enü|heute Abend|zu Hause ausprobieren|bis zur nächsten Stunde)\b|\b(toute la semaine|chaque soir|chaque jour|ce soir|à la maison)\b/,
   // Wochentabelle (Mo–Fr) auf dem Blatt: ein Tracker über Tage
@@ -65,7 +70,8 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
 
 // \b in JavaScript kennt nur ASCII: „Übergriff“, „Ärger“, „élèves“ hätten keine Wortgrenze. Darum \b durch eine Grenze
 // für lateinische Buchstaben samt Umlauten und Akzenten ersetzen.
-const L = 'A-Za-zÀ-ÖØ-öø-ÿ'
+// Ziffern gehören dazu: „Aufgabe 4“, „Schritt 6“, „A13“ enden auf einer Ziffer (sonst griffe die Grenze dort nie)
+const L = '0-9A-Za-zÀ-ÖØ-öø-ÿ'
 const GRENZE = `(?:(?<![${L}])(?=[${L}])|(?<=[${L}])(?![${L}]))`
 const MIT_GRENZE: Record<string, RegExp> = Object.fromEntries(
   Object.entries(TEXT_MERKMALE).map(([n, re]) => [n, new RegExp(re.source.replace(/\\b/g, GRENZE), re.flags)]),

@@ -6,7 +6,7 @@ import type { KatalogEintrag, MikroBaustein, Plan, PlanSchritt, Profil, Rolle, S
 import { bausteinInhalt, eldibKurz, intern, merkmaleVon, quelleText, staemme, textVon, zielSatz, type Katalog } from './katalog'
 import { textMerkmale } from './einzel'
 import { kinderblatt } from './blatt'
-import { BOGEN_NAME, KURSVERWEIS_RE, ROLLE_NAME } from './vokabular'
+import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME } from './vokabular'
 import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter } from './hilfen'
 
 export interface DruckSchritt {
@@ -83,6 +83,10 @@ function hinweisFr(h: string): string {
   if ((m = /^Sitzung (\d+): Phase von Sitzung (\d+) wiederholt, mit anderen Bausteinen\.$/.exec(h))) return `Séance ${m[1]} : phase de la séance ${m[2]} répétée, avec d’autres activités.`
   if ((m = /^Sitzung (\d+) angepasst, weil Sitzung (\d+) nicht geklappt hat: eine Stufe zurück\./.exec(h))) return `Séance ${m[1]} adaptée parce que la séance ${m[2]} n’a pas marché : un pas en arrière.`
   if ((m = /^Angepasst an heute: (.+)$/.exec(h))) return `Adapté à aujourd’hui : ${m[1].replace(/ Min\./g, ' min')}`
+  if (h === 'Blatt gelockert: Teile aus dem Bereich des Ziels (nächste Stufen), nicht genau zum Ziel.') return 'Fiche élargie : parties du domaine de l’objectif (étapes suivantes), pas exactement l’objectif.'
+  if (h === NUR_DEUTSCH) return 'Existe seulement en allemand : pour cet objectif, il n’y a pas encore d’activité en français qui convienne. À dire avec ses propres mots.'
+  if (h === 'Gruppenaktivität – so mit einem Kind machen') return 'Activité de groupe – à faire ainsi avec un seul enfant'
+  if ((m = /^schon vor (\d+) Tagen gemacht – wieder vorgeschlagen, weil sonst wenig passt$/.exec(h))) return `déjà fait il y a ${m[1]} jours – reproposé parce que peu d’autres choses conviennent`
   return h
 }
 
@@ -94,11 +98,13 @@ const SICHERHEIT_RE = /(Krise|Notfall|SePAS|Hilfe holen|melden|Gefährdung|Suizi
 
 /** Beachten-Hinweis für diesen Schritt: Die Einheit trägt einen Hinweis für alle ihre Schritte – davon bleiben die Sätze
  *  zur Sicherheit und die, die diesen Schritt betreffen (Blind-Bewertung 9.10.: Hinweise zu Übungen, die nicht vorkamen). */
-function achtungFuer(e: KatalogEintrag, schrittText: string, sicherheitImmer = true): string | undefined {
-  if (!e.achtung) return undefined
-  if (e.typ !== 'schritt' || !(e.id.startsWith('k:') || e.id.startsWith('f:') || e.id.startsWith('m:'))) return e.achtung
+function achtungFuer(e: KatalogEintrag, schrittText: string, sicherheitImmer = true, sp: Sprache = 'de'): string | undefined {
+  // auf einem französischen Planblatt der französische Hinweis, wenn die Quelle einen hat (Blind-Bewertung 9.10.)
+  const achtung = sp === 'fr' && e.typ === 'schritt' && e.fr?.achtung ? e.fr.achtung : e.achtung
+  if (!achtung) return undefined
+  if (e.typ !== 'schritt' || !(e.id.startsWith('k:') || e.id.startsWith('f:') || e.id.startsWith('m:'))) return achtung
   const bezug = staemme(schrittText)
-  const saetze = e.achtung.replace(/\s+/g, ' ').trim().split(SATZ_GRENZE_GROSS)
+  const saetze = achtung.replace(/\s+/g, ' ').trim().split(SATZ_GRENZE_GROSS)
   // Sätze über die Gruppe („Für sehr lebhafte Gruppen …“) gelten in der Einzelstunde nicht; ein Schutzsatz bleibt und
   // spricht von der Stunde statt von der Gruppe („nicht in der Gruppe vertiefen, sondern im Einzelgespräch“)
   const bleibt = saetze
@@ -189,8 +195,8 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
     quelle: x.ref.startsWith('pg:') ? '' : t.quelle,
     warum: warum ? (x.warum ?? []).map(warumOhneDatum) : [],
     // Nebenschritte (Ankommen, Bewegung, Spiel, Ruhe, Abschluss) tragen den Hinweis ihrer Einheit nur, wenn er sie betrifft
-    achtung: kuerzen(achtungFuer(e, `${t.titel} ${t.text} ${(t.sagen ?? []).join(' ')}`, x.rolle === 'kern' || x.rolle === 'einstieg' || x.rolle === 'reflexion' || x.rolle === 'transfer'), 320),
-    hinweis: x.hinweis,
+    achtung: kuerzen(achtungFuer(e, `${t.titel} ${t.text} ${(t.sagen ?? []).join(' ')}`, x.rolle === 'kern' || x.rolle === 'einstieg' || x.rolle === 'reflexion' || x.rolle === 'transfer', sprache), 320),
+    hinweis: x.hinweis && sprache === 'fr' ? hinweisFr(x.hinweis) : x.hinweis,
     blatt: x.ref === 'pg:blatt',
     erkundung: x.erkundung,
   }
@@ -225,7 +231,11 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     // was der Text nennt, kommt dazu (Ritual-Material einer Folge nur in Sitzung 1, wie oben)
     const tx = e.typ === 'schritt' ? `${e.titel} ${e.einzelvariante?.text ?? e.text}` : ''
     for (const [re, wer] of MATERIAL_IM_TEXT) if (re.test(tx)) mat.add(typeof wer === 'string' ? materialName(k, wer, sp) : wer[sp])
-    if (e.typ === 'schritt' && e.vorbereitung && !e.id.startsWith('s:')) vorbereitung.add(kuerzen(e.vorbereitung, 200)!)
+    if (e.typ === 'schritt' && !e.id.startsWith('s:')) {
+      // Förderfach auf Französisch: die französische Vorbereitung der Einheit (deutsche nur, wo es keine Fassung gibt)
+      const v = sp === 'fr' && e.fr && e.id.startsWith('f:') ? e.fr.vorbereitung : e.vorbereitung
+      if (v) vorbereitung.add(kuerzen(v, 200)!)
+    }
     // Elternbrief der Einheit nur, wenn er diesen Schritt betrifft – und nie bei offenem Kinderschutz-Thema
     if (e.elternbrief && !(p.achtung ?? []).includes('kinderschutz') && e.typ === 'schritt') {
       const bezug = staemme(`${e.titel} ${e.text}`)

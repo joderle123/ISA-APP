@@ -128,7 +128,7 @@ export interface Stundenschritt extends KatalogZusatz {
   kombinierbar?: { nicht_mit?: string[]; gut_nach?: string[] }
   sprache: { de: true; fr: boolean }
   /** Texte auf Französisch, wo vorhanden */
-  fr?: { titel: string; text: string; sagen?: string[]; wennEsKippt?: string; einzelvariante?: { text: string; sagen?: string[] } }
+  fr?: { titel: string; text: string; sagen?: string[]; wennEsKippt?: string; einzelvariante?: { text: string; sagen?: string[] }; achtung?: string; vorbereitung?: string }
   /** „Freude & Beziehung“, Rituale: darf in Weg 3 (ohne Bezug zu Förderzielen) */
   ohneZiel?: boolean
   /** Tagesform-Chips aus Weg 3, zu denen der Schritt besonders passt */

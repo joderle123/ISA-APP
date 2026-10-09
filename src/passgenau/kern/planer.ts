@@ -8,7 +8,7 @@ import { aktuellerKatalog, ichSatz, intern, kurz, merkmaleVon, textVon, type Kat
 import { bewerte, kontext, krisenlage, pruefe, rang, warum, type Bewertet, type Kontext } from './regeln'
 import { baueBlatt } from './blatt'
 import { vertrauenKind, vorliebe, type Vorlieben } from './vorlieben'
-import { KOMPETENZ_NAME, themaByKey, type Kompetenz } from './vokabular'
+import { KOMPETENZ_NAME, NUR_DEUTSCH, themaByKey, type Kompetenz } from './vokabular'
 
 export interface Verlauf {
   plaene: Plan[]
@@ -257,6 +257,7 @@ function lockerGrund(c: Kontext, e: KatalogEintrag, locker: number): string | un
     const tage = c.gemacht.get(e.id)
     if (tage !== undefined) return `schon vor ${tage} Tagen gemacht – wieder vorgeschlagen, weil sonst wenig passt`
   }
+  if (locker === 4 && c.sprache === 'fr' && e.typ === 'schritt' && !e.fr && !e.id.startsWith('pg:')) return NUR_DEUTSCH
   if (locker === 4 && e.typ === 'schritt' && e.einzeltauglich === 'angepasst') return 'Gruppenaktivität – so mit einem Kind machen'
   return undefined
 }
@@ -379,10 +380,16 @@ function rueckblickSchritt(c: Kontext, min: number, kerne: string[]): PlanSchrit
   const liste = (l: string[]) => l.map((t) => `„${t}“`).join(', ')
   return {
     ref: e.id, h: e.h, rolle: 'reflexion', min, t: 'Rückblick auf die Folge',
-    ueber: {
-      text: `Gemeinsam auf die letzten Sitzungen schauen: ${liste(titel('de'))}. Das Kind wählt die Übung, die am meisten geholfen hat, und zeigt sie noch einmal. Die Fachkraft nennt eine Sache, die sie beim Kind hat wachsen sehen. Zum Schluss eine kleine Feier: Das Kind malt ein Abzeichen oder sucht sich einen Sticker aus.`,
-      'fr.text': `Regarder ensemble les dernières séances : ${titel('fr').map((t) => `« ${t} »`).join(', ')}. L’enfant choisit l’activité qui l’a le plus aidé et la montre encore une fois. L’adulte nomme une chose qu’il a vu grandir chez l’enfant. Pour finir, une petite fête : l’enfant dessine un badge ou choisit un autocollant.`,
-    },
+    // ab 12 ohne Abzeichen und Sticker (dritte Blind-Bewertung: „wirkt bei 14 Jahren kindlich“), ohne „noch einmal zeigen“
+    ueber: c.alter >= 12
+      ? {
+          text: `Gemeinsam auf die letzten Sitzungen schauen: ${liste(titel('de'))}. Der oder die Jugendliche sagt, was davon am meisten gebracht hat und wo es im Alltag schon geholfen hat. Die Fachkraft nennt eine Sache, die sie hat wachsen sehen. Zum Schluss schreibt der oder die Jugendliche einen Satz auf eine Karte: Das nehme ich mit.`,
+          'fr.text': `Regarder ensemble les dernières séances : ${titel('fr').map((t) => `« ${t} »`).join(', ')}. Le ou la jeune dit ce qui lui a le plus apporté et où cela a déjà aidé au quotidien. L’adulte nomme une chose qu’il a vu grandir. Pour finir, le ou la jeune écrit une phrase sur une carte : Ce que je garde.`,
+        }
+      : {
+          text: `Gemeinsam auf die letzten Sitzungen schauen: ${liste(titel('de'))}. Das Kind wählt die Übung, die am meisten geholfen hat, und zeigt sie noch einmal. Die Fachkraft nennt eine Sache, die sie beim Kind hat wachsen sehen. Zum Schluss eine kleine Feier: Das Kind malt ein Abzeichen oder sucht sich einen Sticker aus.`,
+          'fr.text': `Regarder ensemble les dernières séances : ${titel('fr').map((t) => `« ${t} »`).join(', ')}. L’enfant choisit l’activité qui l’a le plus aidé et la montre encore une fois. L’adulte nomme une chose qu’il a vu grandir chez l’enfant. Pour finir, une petite fête : l’enfant dessine un badge ou choisit un autocollant.`,
+        },
     warum: ['Letzte Sitzung: zurückblicken und feiern'],
   }
 }
