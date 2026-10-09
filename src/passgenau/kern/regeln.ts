@@ -192,6 +192,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     if (e.material.includes('vorher')) return 'braucht eine Übung davor'
     if (c.alter >= 12 && e.art.includes('rueckblick')) return 'Smileys'
   }
+  // setzt eine frühere Kursstunde voraus („der Umschlag aus der letzten Stunde“, „nach der Wochen-Mission fragen“)
+  if (e.typ === 'schritt' && intern(c.k).vorlauf.has(e.id)) return 'braucht eine Stunde davor'
   // heikel nur freigeschaltet; Selbstverletzung/Suizid nie als Baustein (T-M1)
   if (e.sensibel === 'akut') return 'heikel'
   if (e.sensibel === 'kinderschutz' && !c.heikelFrei.has('kinderschutz') && !c.heikelFrei.has('sexualitaet')) return 'heikel'

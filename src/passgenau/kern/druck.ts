@@ -62,8 +62,19 @@ export interface DruckFolge {
 
 const KURZ = 240
 
-/** Hinweise des Planers, die eine Handlung in der Oberfläche anbieten – auf Papier sinnlos */
-const NUR_OBERFLAECHE = /Leichte Stunde zeigen\.$|Mitmach-Seite auf Wunsch\.$/
+/** Hinweise des Planers, die eine Handlung in der Oberfläche anbieten oder nur die Planung erklären – auf Papier sinnlos */
+const NUR_OBERFLAECHE = /Leichte Stunde zeigen\.$|Mitmach-Seite auf Wunsch\.$|ohne Blatt geplant|nur auf Deutsch\.$|im Baukasten suchen\.$|Im Ergebnis anpassen\.$/
+
+/** Hinweise des Planers (deutsch gespeichert) für ein französisches Planblatt. */
+function hinweisFr(h: string): string {
+  let m: RegExpExecArray | null
+  if (h === 'Noch kein ELDiB-Ziel – Stunde zum Kennenlernen. ELDiB-Einschätzung fehlt.') return 'Pas encore d’objectif ELDiB – séance pour faire connaissance. Évaluation ELDiB à faire.'
+  if ((m = /^Schwerpunkt: (.+) \(noch kein ELDiB-Ziel\) – ELDiB-Einschätzung fehlt\.$/.exec(h))) return `Thème : ${m[1]} (pas encore d’objectif ELDiB) – évaluation ELDiB à faire.`
+  if ((m = /^Sitzung (\d+): Phase von Sitzung (\d+) wiederholt, mit anderen Bausteinen\.$/.exec(h))) return `Séance ${m[1]} : phase de la séance ${m[2]} répétée, avec d’autres activités.`
+  if ((m = /^Sitzung (\d+) angepasst, weil Sitzung (\d+) nicht geklappt hat: eine Stufe zurück\./.exec(h))) return `Séance ${m[1]} adaptée parce que la séance ${m[2]} n’a pas marché : un pas en arrière.`
+  if ((m = /^Angepasst an heute: (.+)$/.exec(h))) return `Adapté à aujourd’hui : ${m[1].replace(/ Min\./g, ' min')}`
+  return h
+}
 
 function kuerzen(s: string | undefined, n = KURZ): string | undefined {
   if (!s) return undefined
@@ -163,7 +174,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       ? `Passgenau · ${plan.n > 1 ? `séance ${nr} sur ${plan.n} · ` : ''}${plan.dauer} min · ${phase}`
       : `Passgenau · ${plan.n > 1 ? `Sitzung ${nr} von ${plan.n} · ` : ''}${plan.dauer} Min. · ${phase}`
   // Hinweise, die nur in der Oberfläche etwas bedeuten (Knopf „Leichte Stunde zeigen“, Wahl des Blatts), nicht drucken
-  const hinweise = (s.hinweise ?? []).filter((h) => !NUR_OBERFLAECHE.test(h))
+  const hinweise = (s.hinweise ?? []).filter((h) => !NUR_OBERFLAECHE.test(h)).map((h) => (sp === 'fr' ? hinweisFr(h) : h))
   if (p.vorsicht.includes('heikel') || (p.achtung ?? []).length)
     hinweise.unshift(sp === 'fr' ? 'Un thème sensible est ouvert pour cet enfant. Passgenau ne remplace pas une évaluation – voir le dossier.' : 'Zu diesem Kind ist ein heikles Thema offen. Passgenau ersetzt keine Abklärung – Hinweise im Dossier.')
   return {

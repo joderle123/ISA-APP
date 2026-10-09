@@ -7,7 +7,7 @@ import type { Material } from '../../types/material'
 import type { KatalogEintrag, MikroBaustein, Rolle, Sozialform, Stufe, Stundenschritt, Wahlkarte } from '../typen'
 import type { CrewSpiel, FfEinheit, Quellen } from '../quellen'
 import { entpackeBaustein, entpackeSchritt, type BausteineDatei, type SchritteDatei } from './format'
-import { KATHARSIS_RE, KOMPETENZ_BLATT, kompetenzAusCode } from './vokabular'
+import { KATHARSIS_RE, KOMPETENZ_BLATT, kompetenzAusCode, VORB_GRUPPE_RE, VORLAUF_RE } from './vokabular'
 import { hash8, STUFE_ALTER, STUFEN, woerter } from './hilfen'
 import { paketBausteine, setzeText, texte } from './inhalt'
 import { bausteinOhneKursverweis, schrittAllgemein } from './beschriftung'
@@ -35,6 +35,8 @@ export interface KatalogIntern {
   vorlesbar: Set<string>
   /** Blätter, die eine Hilfe-Zeile haben (E-M3) */
   notfallBlatt: Set<string>
+  /** Schritte, die ein Ergebnis einer früheren Kursstunde voraussetzen (VORLAUF_RE) – plant Passgenau nie */
+  vorlauf: Set<string>
   /** Mikro-Bausteine je Quellblatt in Blattreihenfolge */
   bausteineVonBlatt: Map<string, MikroBaustein[]>
   /** Wahlkarten für Weg 3 (neue Inhalte) */
@@ -329,16 +331,86 @@ export function baueKatalog(q: Quellen, bDatei: BausteineDatei, sDatei: Schritte
   // landete eine Kocheinheit in einer Einzelstunde im Büro (die Prüfregel „Material“ greift dann)
   for (const e of eintraege.values())
     if (e.typ === 'schritt' && !e.material.includes('kueche') && KUECHE_RE.test(`${e.quelle.titel} ${e.vorbereitung ?? ''}`)) e.material = [...e.material, 'kueche']
+  // Blind-Bewertung 9.10.: Schritte, die eine frühere Kursstunde voraussetzen, plant Passgenau nie; Sätze in „Sagen“ und
+  // „Wenn es kippt“ mit solchem Bezug fallen weg; die Vorbereitung einer ganzen Einheit wird auf den Schritt zugeschnitten
+  const vorlauf = new Set<string>()
+  for (const e of eintraege.values()) {
+    if (e.typ !== 'schritt') continue
+    ohneVorlaufSaetze(e)
+    if (e.fr) ohneVorlaufSaetze(e.fr)
+    // nur ein Nebensatz mit Kursbezug („Zum Schluss auf dem Skills-Tester ankreuzen.“): der Satz fällt weg, der Schritt bleibt
+    for (const t of [e, e.einzelvariante, e.fr, e.fr?.einzelvariante]) if (t?.text) t.text = ohneVorlaufText(t.text)
+    const de = textVon(e, 'de')
+    const fr = e.fr ? textVon(e, 'fr') : null
+    if (VORLAUF_RE.test(`${de.titel}\n${de.text}`) || (fr && VORLAUF_RE.test(`${fr.titel}\n${fr.text}`))) vorlauf.add(e.id)
+    const v = vorbereitungFuer(e)
+    if (v) e.vorbereitung = v
+    else delete e.vorbereitung
+  }
   // Rollenlisten nach Id sortieren: gleiche Reihenfolge, gleicher Plan
   for (const l of nachRolle.values()) l.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
 
   const k: Katalog = { eintraege, nachRolle, stand: `${bDatei.stand}/${sDatei.stand}` }
-  INTERN.set(k, { q, seite: bDatei.seite, eldib, nachH, vorlesbar, notfallBlatt, bausteineVonBlatt, wahlkarten: inhalte.wahlkarten.sort((a, b) => (a.id < b.id ? -1 : 1)), materialName: inhalte.material })
+  INTERN.set(k, { q, seite: bDatei.seite, eldib, nachH, vorlesbar, notfallBlatt, vorlauf, bausteineVonBlatt, wahlkarten: inhalte.wahlkarten.sort((a, b) => (a.id < b.id ? -1 : 1)), materialName: inhalte.material })
   aktuell = k
   return k
 }
 
 const KUECHE_RE = /(lehrküche|küche reservieren|kochen im team|gemeinsam kochen|backofen|kochplatte)/i
+
+/** Sätze mit Bezug auf eine frühere Kursstunde aus „Sagen“ und „Wenn es kippt“ entfernen (auch in der Einzelvariante). */
+function ohneVorlaufSaetze(t: { sagen?: string[]; wennEsKippt?: string; einzelvariante?: { sagen?: string[] } }): void {
+  const sagen = (l: string[] | undefined) => {
+    const r = (l ?? []).filter((x) => !VORLAUF_RE.test(x))
+    return r.length ? r : undefined
+  }
+  if (t.sagen) t.sagen = sagen(t.sagen)
+  // leer statt weg: sonst nähme textVon die Sätze der Gruppenfassung
+  if (t.einzelvariante?.sagen) t.einzelvariante = { ...t.einzelvariante, sagen: sagen(t.einzelvariante.sagen) ?? [] }
+  if (t.wennEsKippt && VORLAUF_RE.test(t.wennEsKippt)) {
+    const rest = t.wennEsKippt.split(/(?<=[.!?])\s+/).filter((x) => !VORLAUF_RE.test(x)).join(' ').trim()
+    if (rest) t.wennEsKippt = rest
+    else delete t.wennEsKippt
+  }
+}
+
+/** Sätze mit Kursbezug aus einem Text streichen, wenn danach noch mindestens 60 % übrig sind (sonst unverändert: dann
+ *  hängt der Schritt an der früheren Stunde und fällt ganz weg). */
+export function ohneVorlaufText(text: string): string {
+  if (!VORLAUF_RE.test(text)) return text
+  const neu = text
+    .split('\n')
+    .map((z) => z.split(/(?<=[.!?])\s+/).filter((s) => !VORLAUF_RE.test(s)).join(' '))
+    .filter((z) => z.trim())
+    .join('\n')
+  return neu.length >= text.length * 0.6 ? neu : text
+}
+
+/** Wortstämme (6 Zeichen) eines Texts ohne Allerweltswörter – für den Bezug Vorbereitung ↔ Schritt. */
+const STAMM_STOPP = new Set(
+  'vorher bereit legen liegen kopier drucke ausdru schnei aussch stelle vorber minde schrei zeichn große großen kleine kleinen einen einem einer eines jeder jedes jedem dabei sowie damit darauf außerd bitte kinder jugend fachkr leitun schüle person zusamm ersten zweite dritte gemein später danach dafür etwas welche diese dieser dieses wieder immer'.split(' '),
+)
+function staemme(t: string): Set<string> {
+  return new Set((t.toLowerCase().match(/[a-zäöüß][a-zäöüß-]{4,}/g) ?? []).map((w) => w.replace(/-/g, '').slice(0, 6)).filter((w) => w.length >= 5 && !STAMM_STOPP.has(w)))
+}
+
+/** Vorbereitung für diesen Schritt: Kurs- und Förderfach-Einheiten tragen die Vorbereitung der ganzen Stunde – davon bleibt,
+ *  was der Schritt erwähnt; überall fallen Gruppen-Anweisungen („je Tischgruppe“, „Stühle im Halbkreis“) und Mengen
+ *  („fünfmal kopieren“) weg. */
+function vorbereitungFuer(e: Stundenschritt): string | undefined {
+  if (!e.vorbereitung) return undefined
+  const einheit = e.id.startsWith('k:') || e.id.startsWith('f:')
+  const bezug = staemme(`${e.titel} ${e.text} ${(e.sagen ?? []).join(' ')} ${e.einzelvariante?.text ?? ''}`)
+  const teile = e.vorbereitung
+    .split(/\s+·\s+/)
+    .map((x) => x.replace(/\b(zwei|drei|vier|fünf|sechs|zehn|zwanzig|\d+)(mal| ?×| ?x)\s+/gi, '').trim())
+    .flatMap((x) => {
+      const saetze = x.split(/(?<=[.;!?])\s+/).filter((s) => !VORB_GRUPPE_RE.test(s) && !VORLAUF_RE.test(s))
+      return saetze.length ? [saetze.join(' ')] : []
+    })
+    .filter((x) => !einheit || [...staemme(x)].some((w) => bezug.has(w)))
+  return teile.length ? teile.join(' · ') : undefined
+}
 
 let laden: Promise<Katalog> | null = null
 

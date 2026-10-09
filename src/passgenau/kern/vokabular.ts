@@ -278,6 +278,23 @@ export function interesseName(key: string, sprache: Sprache = 'de'): string {
 export const KATHARSIS_RE =
   /(rauslassen|herauslassen|heraus lassen|raus lassen|abreagier|dampf ablassen|so fest wie (die|deine|eure) wut|auf ein kissen|kissen (schlagen|boxen|hauen)|boxsack|wut (an|in|auf) .{0,25}(auslassen|rauslassen)|(se )?défoul|évacuer (la|sa|ta) colère|taper (sur|dans) (un|le) coussin)/i
 
+/** Schritte, die ein Ergebnis einer früheren Kursstunde voraussetzen („der Umschlag aus der letzten Stunde“, „nach der
+ *  Wochen-Mission fragen“, „den Skills-Koffer packen“, „zum letzten Mal in diesem Jahr“): In Passgenau gibt es diese Stunde
+ *  nicht – solche Schritte plant Passgenau nie (Titel oder Text); in `sagen` und „Wenn es kippt“ fällt nur der Satz weg. */
+export const VORLAUF_RE = new RegExp(
+  [
+    String.raw`\b(aus|von|in|seit|nach|an) (der|dem|den) (letzten|vorigen|vergangenen) (Stunden?|Sitzung|Mal)\b`,
+    String.raw`\b(vom|seit dem|beim) letzten Mal\b|\bzum letzten Mal\b|\bdie letzten Stunden\b|\bder letzten Stunden?\b`,
+    String.raw`[Ww]ochen-?[Mm]ission|\bMission der (letzten|vorigen) Stunde|\bSkills?-(Koffer|Karten?|Pass|Tester|Ordner|Heft)\b|\bSkill-Karten?\b`,
+    String.raw`\bTrimester-Einschätzung|\bim Heft unter dem Kasten`,
+    String.raw`\b(lors de|depuis) la (dernière|précédente) séance\b|\bla dernière fois\b|\bmission de la semaine\b|\bmallette (de|des) skills?\b`,
+  ].join('|'),
+)
+
+/** Vorbereitung für eine Gruppe (Teile einer Vorbereitung, die in einer Einzelstunde nicht gelten). */
+export const VORB_GRUPPE_RE =
+  /(\bje (Tisch)?[Gg]ruppe|\bpro (Tisch)?[Gg]ruppe|\bTischgruppen?\b|\bKlassensatz|\bfür (alle|jede[ns]?) (Kinder|Kind|Schüler(innen)?|Jugendlichen?)\b|\bHalbkreis|\bStuhlkreis|\bStühle\b|\bStationsschild|\bdrei Stationen|\bSePAS\b|\bjemand gerade in einer Krise|\bKlassenraum\b|\bin Gruppen\b|\bTeams? (bilden|einteilen)|\bGruppen (bilden|einteilen))/
+
 /** Verweise auf die Struktur der Quelle (Kurs, Förderfach, mehrteilige Materialien): „aus Einheit 20“, „Einheiten 12 und
  *  13“, „letzte Woche ging es um …“, „Modul 3“, „Kursjahr“, „Skills-Kurs“. In Passgenau steht ein Teil allein – solche
  *  Texte bekommen eine Fassung ohne Verweis (Beschriftung `allgemein`); Prüfregel 26 hält sie aus dem PDF. Groß/klein

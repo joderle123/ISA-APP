@@ -24,7 +24,7 @@ import { fuerTeam, uebernehmen, vorlageZurueckgezogen } from '../src/passgenau/k
 import { rueckmelden, zuruecksetzen, gelernt, type Vorlieben } from '../src/passgenau/kern/vorlieben'
 import { bewerte, kontext, pruefe, rang } from '../src/passgenau/kern/regeln'
 import { layoutAusStufe, stufeAusAlter, stufenAbstand } from '../src/passgenau/kern/hilfen'
-import { KATHARSIS_RE, KURSVERWEIS_RE } from '../src/passgenau/kern/vokabular'
+import { KATHARSIS_RE, KURSVERWEIS_RE, VORB_GRUPPE_RE, VORLAUF_RE } from '../src/passgenau/kern/vokabular'
 import { ladeKatalogNode, ROOT } from './passgenau-quellen'
 import { pruefeBeschriftung, wendeBeschriftungAn, type Beschriftung, type EintragKontext } from '../src/passgenau/kern/beschriftung'
 import type { SchrittMeta } from '../src/passgenau/kern/format'
@@ -743,6 +743,11 @@ await pruefung('20 erfundene Testkinder × 3 Wege (tests/passgenau): harte Regel
         const druckText = JSON.stringify([d.titel, d.schritte, d.vorbereitung, d.elternbrief ?? '', d.blattTeile, blattText(d.kinderblatt), blattText(d.materialSeite), blattText(d.karten)])
         const kv = KURSVERWEIS_RE.exec(druckText)
         soll(!kv, `${name} S${s.nr}: Kursverweis im Druck: …${kv ? druckText.slice(Math.max(0, kv.index - 40), kv.index + 40) : ''}…`)
+        // nichts, was eine frühere Kursstunde voraussetzt (Blind-Bewertung 9.10.), keine Vorbereitung für eine Gruppe
+        const vl = VORLAUF_RE.exec(JSON.stringify([d.schritte.map((x) => [x.titel, x.text, x.sagen, x.wennEsKippt]), d.vorbereitung]))
+        soll(!vl, `${name} S${s.nr}: setzt eine frühere Stunde voraus: …${vl ? vl[0] : ''}…`)
+        const vg = d.vorbereitung.find((v) => VORB_GRUPPE_RE.test(v))
+        soll(!vg, `${name} S${s.nr}: Vorbereitung für eine Gruppe: ${vg ?? ''}`)
       }
     }
   zeiten.sort((x, y) => x - y)
