@@ -1,7 +1,7 @@
 // Passgenau – gemeinsame Typen (Vertrag zwischen Katalog, Planer, Oberfläche und Hub-Brücke).
 // Grundlage: Konzept Passgenau, Abschnitte 3.4 (Profil), 4.3–4.5 (Katalog), 5 (Planer), 6.9 (Vorlieben, Ereignisse),
 // 9.2 (Nachrichten), 9.3 (gespeicherter Plan). Änderungen hier nur abwärtsverträglich (neue Felder optional).
-import type { Blatt } from '../blatt/typen'
+import type { Baustein, Blatt } from '../blatt/typen'
 
 export type Stufe = 'C1' | 'C2' | 'C3' | 'C4' | 'ES'
 export type Layout = 'bild' | 'gross' | 'mittel' | 'jugend'
@@ -94,6 +94,8 @@ export type SchrittQuelle = 'kurs' | 'foerderfach' | 'material' | 'spielschule' 
 export interface Stundenschritt extends KatalogZusatz {
   id: string
   h: string
+  /** Blatt zu genau dieser Übung (Jugend-Übungen): 2–4 Aufgaben, die ersten zwei mit wenig Schreiben */
+  uebungsblatt?: { titel?: { de: string; fr: string }; de: Baustein[]; fr: Baustein[] }
   quelle: { art: SchrittQuelle; einheit?: string; titel: string }
   titel: string
   text: string

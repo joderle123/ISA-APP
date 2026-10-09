@@ -1890,13 +1890,13 @@
    "titel": "Einzelstunde Jugend"
   },
   "titel": "Eine Nachricht entschärfen",
-  "text": "Die Fachkraft schreibt eine erfundene Chatnachricht auf ein Blatt: „Danke für nichts. Hast mich schon wieder hängen lassen, war ja klar.“ Gemeinsam wird geklärt: Was fühlt die Person darunter (enttäuscht, allein gelassen, verletzt)? Was wünscht sie sich vom anderen? Dann schreibt der oder die Jugendliche die Nachricht in drei Teilen neu: was passiert ist – wie es mir damit geht – was ich mir wünsche („Ich hab eine Stunde gewartet. Das hat mich echt enttäuscht. Sag mir nächstes Mal bitte vorher Bescheid.“). Die Fachkraft liest beide Versionen als Empfänger und sagt, wie jede ankommt.",
+  "text": "Die Fachkraft schreibt eine erfundene Chatnachricht auf ein Blatt: „Danke für nichts. Mein Ladekabel ist immer noch bei dir, war ja klar.“ Gemeinsam wird geklärt: Was fühlt die Person darunter (genervt, enttäuscht, nicht ernst genommen)? Was wünscht sie sich vom anderen? Dann schreibt der oder die Jugendliche die Nachricht in drei Teilen neu: was passiert ist – wie es mir damit geht – was ich mir wünsche („Ich brauche mein Ladekabel und hab es schon zweimal gesagt. Das nervt mich. Bring es bitte morgen mit.“). Die Fachkraft liest beide Versionen als Empfänger und sagt, wie jede ankommt.",
   "sagen": [
    "Stell dir vor, du bekommst diese Nachricht – was würdest du zurückschreiben?",
    "Ärger darf drinstehen, nur ohne Vorwurf. Was steckt unter dem „Danke für nichts“?",
    "Du musst keine echte Nachricht nehmen – ein erfundenes Beispiel ist völlig okay."
   ],
-  "wennEsKippt": "Erinnert die erfundene Nachricht an einen echten Streit, eine harmlosere nehmen (ein Freund hat das geliehene Ladekabel nicht zurückgegeben). Fällt das Umschreiben schwer, schreibt die Fachkraft den ersten Teil vor und der oder die Jugendliche ergänzt nur das Gefühl.",
+  "wennEsKippt": "Erinnert auch dieses Beispiel an etwas Echtes, eine ganz harmlose Nachricht nehmen (jemand hat beim Spielen den Platz nicht freigehalten). Fällt das Umschreiben schwer, schreibt die Fachkraft den ersten Teil vor und der oder die Jugendliche ergänzt nur das Gefühl.",
   "rolle": [
    "kern"
   ],
@@ -1948,13 +1948,13 @@
   "ort": "raum",
   "fr": {
    "titel": "Désamorcer un message",
-   "text": "L’adulte écrit un message inventé sur une feuille : « Merci pour rien. Tu m’as encore lâché, comme d’habitude. » Ensemble, on clarifie : qu’est-ce que la personne ressent en dessous (déçue, laissée tomber, blessée) ? Qu’attend-elle de l’autre ? Puis le ou la jeune réécrit le message en trois parties : ce qui s’est passé – ce que ça me fait – ce que je souhaite (« J’ai attendu une heure. Ça m’a vraiment déçu. La prochaine fois, préviens-moi avant, s’il te plaît. »). L’adulte lit ensuite les deux versions dans le rôle du destinataire et dit comment chaque version arrive.",
+   "text": "L’adulte écrit un message inventé sur une feuille : « Merci pour rien. Mon chargeur est toujours chez toi, comme d’habitude. » Ensemble, on clarifie : qu’est-ce que la personne ressent en dessous (agacée, déçue, pas prise au sérieux) ? Qu’attend-elle de l’autre ? Puis le ou la jeune réécrit le message en trois parties : ce qui s’est passé – ce que ça me fait – ce que je souhaite (« J’ai besoin de mon chargeur et je te l’ai déjà demandé deux fois. Ça m’énerve. Ramène-le demain, s’il te plaît. »). L’adulte lit ensuite les deux versions dans le rôle du destinataire et dit comment chaque version arrive.",
    "sagen": [
     "Imagine que tu reçois ce message – qu’est-ce que tu répondrais ?",
     "La colère a le droit d’être là, juste sans reproche. Qu’est-ce qui se cache derrière le « Merci pour rien » ?",
     "Pas besoin de prendre un vrai message – un exemple inventé, c’est très bien."
    ],
-   "wennEsKippt": "Si le modèle ressemble trop à une vraie dispute, en prendre un plus anodin (un ami n’a pas rendu le chargeur prêté). Si la réécriture est difficile, l’adulte écrit la première partie et le ou la jeune ajoute seulement l’émotion."
+   "wennEsKippt": "Si même cet exemple est trop proche de quelque chose de vrai, prendre un message tout à fait anodin (quelqu’un n’a pas gardé la place pendant un jeu). Si la réécriture est difficile, l’adulte écrit la première partie et le ou la jeune ajoute seulement l’émotion."
   },
   "tagesform": [
    "wuetend"
@@ -1967,7 +1967,95 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "uebungsblatt": {
+   "titel": {
+    "de": "Eine Nachricht entschärfen",
+    "fr": "Désamorcer un message"
+   },
+   "de": [
+    {
+     "art": "text",
+     "text": "Die Nachricht aus der Übung: „Danke für nichts. Mein Ladekabel ist immer noch bei dir, war ja klar.“"
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Was steckt darunter? Kreuz an, mehrere gehen.",
+     "items": [
+      "genervt",
+      "enttäuscht",
+      "nicht ernst genommen",
+      "traurig",
+      "etwas anderes"
+     ],
+     "spalten": 3
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Das wünscht sich die Person:"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Was passiert ist",
+      "Wie es mir damit geht",
+      "Was ich mir wünsche"
+     ],
+     "zeilen": 2
+    },
+    {
+     "art": "skala",
+     "frage": "Wie kommt meine neue Fassung an?",
+     "von": "noch wie ein Vorwurf",
+     "bis": "klar und ruhig",
+     "stufen": 5
+    }
+   ],
+   "fr": [
+    {
+     "art": "text",
+     "text": "Le message de l’exercice : « Merci pour rien. Mon chargeur est toujours chez toi, comme d’habitude. »"
+    },
+    {
+     "art": "ankreuzen",
+     "titel": "Qu’est-ce qui se cache derrière ? Coche, plusieurs réponses possibles.",
+     "items": [
+      "agacé·e",
+      "déçu·e",
+      "pas pris·e au sérieux",
+      "triste",
+      "autre chose"
+     ],
+     "spalten": 3
+    },
+    {
+     "art": "satzanfaenge",
+     "items": [
+      "Ce que la personne souhaite :"
+     ],
+     "linien": 1
+    },
+    {
+     "art": "tabelle",
+     "spalten": [
+      "Ce qui s’est passé",
+      "Ce que ça me fait",
+      "Ce que je souhaite"
+     ],
+     "zeilen": 2
+    },
+    {
+     "art": "skala",
+     "frage": "Comment ma nouvelle version arrive-t-elle ?",
+     "von": "encore comme un reproche",
+     "bis": "clair et calme",
+     "stufen": 5
+    }
+   ]
+  }
  },
  {
   "id": "j:zwischen-zwei-stuehlen",

@@ -24,7 +24,7 @@ import { fuerTeam, uebernehmen, vorlageZurueckgezogen } from '../src/passgenau/k
 import { rueckmelden, zuruecksetzen, gelernt, type Vorlieben } from '../src/passgenau/kern/vorlieben'
 import { bewerte, kontext, pruefe, rang } from '../src/passgenau/kern/regeln'
 import { layoutAusStufe, stufeAusAlter, stufenAbstand } from '../src/passgenau/kern/hilfen'
-import { KATHARSIS_RE, KURSVERWEIS_RE, VORB_GRUPPE_RE, VORLAUF_RE, WIEDERHOLUNG } from '../src/passgenau/kern/vokabular'
+import { KATHARSIS_RE, KURSVERWEIS_RE, VORB_GRUPPE_RE, VORLAUF_RE } from '../src/passgenau/kern/vokabular'
 import { ladeKatalogNode, ROOT } from './passgenau-quellen'
 import { pruefeBeschriftung, wendeBeschriftungAn, type Beschriftung, type EintragKontext } from '../src/passgenau/kern/beschriftung'
 import type { SchrittMeta } from '../src/passgenau/kern/format'
@@ -252,8 +252,7 @@ await pruefung('Weg 1/2/3 für 5, 9 und 14 Jahre: Minuten, Bogen, Kern, Blatt, R
     if (plan.sitzungen.length > 1) {
       const ph = plan.sitzungen.map((s) => REIHE.indexOf(s.phase as string))
       soll(ph.every((x, i) => i === 0 || x >= ph[i - 1]), `${name}: Bogen nicht monoton ${plan.sitzungen.map((s) => s.phase).join(',')}`)
-      // (die letzte Sitzung einer Jugend-Folge wiederholt bewusst die wichtigste Übung – Hinweis WIEDERHOLUNG)
-      const teile = plan.sitzungen.flatMap((s) => [...s.schritte.filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss' && !x.ref.startsWith('pg:') && x.hinweis !== WIEDERHOLUNG).map((x) => x.ref), ...(s.blatt?.bausteine ?? []).filter((b) => !b.ref.startsWith('pg:')).map((b) => b.ref)])
+      const teile = plan.sitzungen.flatMap((s) => [...s.schritte.filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss' && !x.ref.startsWith('pg:')).map((x) => x.ref), ...(s.blatt?.bausteine ?? []).filter((b) => !b.ref.startsWith('pg:')).map((b) => b.ref)])
       soll(new Set(teile).size === teile.length, `${name}: Teil doppelt in der Folge`)
       // gleich in allen Sitzungen; die letzte darf ein Ritual, das auf die nächste Sitzung zählt, durch das eigene ersetzen
       const abschluss = new Set(plan.sitzungen.map((s, i) => s.schritte[s.schritte.length - 1].ref).filter((r, i, l) => !(i === l.length - 1 && r === 'pg:abschluss' && l.length > 1)))

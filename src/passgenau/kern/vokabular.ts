@@ -327,5 +327,3 @@ export const KURSVERWEIS_RE = new RegExp(
 
 /** Hinweis am Schritt, wenn ein französisches Kind einen Schritt nur auf Deutsch bekommt (planer.ts lockerGrund, druck.ts). */
 export const NUR_DEUTSCH = 'Nur auf Deutsch: Zu diesem Ziel gibt es noch keine passende Übung auf Französisch. In eigenen Worten sagen.'
-/** Hinweis am wiederholten Kern der letzten Sitzung einer Folge (Jugendliche). */
-export const WIEDERHOLUNG = 'Wiederholung aus dieser Folge – diesmal mit einer neuen Situation aus dem Alltag, die der oder die Jugendliche selbst wählt.'
