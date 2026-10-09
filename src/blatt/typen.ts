@@ -157,6 +157,8 @@ export type Baustein =
   | { art: 'plan'; ziel?: string; tage?: string[]; zeilen: string[]; symbol?: 'gesicht' | 'kasten' | 'stern' }
   | { art: 'tagesplan'; zeilen: { zeit?: string; text?: string; bild?: BildId }[]; leer?: number }
   | { art: 'atmen'; uebung: 'quadrat' | 'ballon' | 'blume' | 'fuenf-sinne' | 'finger' }
+  /** Spielschule: Forscherblatt zum Experiment der Woche – „Ich vermute“, „Ich sehe“, „So war es“ (eine ganze Seite). */
+  | ({ art: 'forscherblatt' } & Forscherblatt)
   // --- Selbstreflexion: Grafiken zum Füllen, Ausmalen und Einzeichnen ---------
   /** Gläser mit Beschriftung: Strich = so voll soll es sein, ausmalen = so voll ist es jetzt. `leer` = Gläser zum Selbstbeschriften. */
   | { art: 'glaeser'; items: string[]; leer?: number; spalten?: 3 | 4 | 5 | 6; legende?: [string, string]; skala?: boolean }
@@ -430,6 +432,73 @@ export interface Spielideen {
   /** Freitags-Karte: was man vor dem Start wissen und besorgen muss. Die Angaben ohne Text (Vorlauf, Küche,
    *  Ausflug, Besuch, Material) müssen in DE und FR gleich sein. */
   freitag?: Freitagskarte
+  /** Experiment der Woche: eigene Lehrerseite „Forschen“ (nach „Aktivitäten & Ideen“), Forscherblatt als
+   *  Zusatzseite und eine Seite in der Forscherkartei. */
+  experiment?: Experiment
+}
+
+/** Ein Ding oder ein Schritt mit eigenem Bild (sonst sucht die Seite das Bild über Stichwörter). */
+export interface Bildtext {
+  text: string
+  bild: BildId
+}
+
+/** Phänomene für das Register der Forscherkartei (Bezeichnungen DE/FR in src/blatt/forschen.ts). */
+export type PhaenomenId =
+  | 'farben' | 'wasser-wandert' | 'schwimmen' | 'loesen' | 'waerme' | 'verdunsten' | 'luft' | 'licht' | 'magnet'
+  | 'schall' | 'pflanzen' | 'lebewesen' | 'sinne' | 'kraefte' | 'gewicht' | 'stoffe' | 'oberflaeche' | 'elektrizitaet'
+
+/** Spielschule: Experiment der Woche (je Sprachfassung, in deren Sprache). Längen siehe BLATT-STIL.md –
+ *  das Prüfskript hält sie ein, damit die Seite nie überläuft. */
+export interface Experiment {
+  /** Name des Experiments, z. B. „Der Wattepad-Regenbogen“. */
+  titel: string
+  /** Forscherfrage, wie man sie den Kindern stellt („Wohin wandern die Farben?“). */
+  frage: string
+  /** 3–8 Dinge, mit Menge. Bild per Stichwort (Wattepad, Pipette, Wasser …) oder selbst: { text, bild }. */
+  material: (string | Bildtext)[]
+  /** 3–5 Schritte, je ein Satz oder zwei. Piktogramm per Stichwort (tropfen, legen, warten …) oder { text, bild }. */
+  schritte: (string | Bildtext)[]
+  /** Vermuten: wie die Kinder ihre Vermutung zeigen (Frage, Daumen, Bildkarten) und was sie oft sagen. */
+  vermutung: string
+  /** Beobachten: worauf die Kinder achten, was die Erwachsenen fragen. */
+  beobachten: string
+  /** Erklären: „Warum?“ in Kindersprache, 1–2 kurze Sätze. */
+  warumKind: string
+  /** Fachlicher Hintergrund für Erwachsene, sachlich. */
+  hintergrund: string
+  /** 1–3 Zeilen; Standardsätze als 'standard:<schlüssel>' (src/blatt/spielschule.ts). */
+  sicherheit: string[]
+  /** Weiterforschen: eine Variante oder Frage für die nächsten Tage. */
+  weiter: string
+  /** z. B. '20 Min.' */
+  dauer: string
+  /** 1–2 Phänomene für das Register der Forscherkartei (in DE und FR dieselben). */
+  phaenomene: PhaenomenId[]
+  /** Forscherblatt als Zusatzseite: Bilder für „Ich vermute“ und „So war es“ (ohne: Daumen hoch/runter). */
+  forscherblatt?: Forscherblatt
+}
+
+/** Forscherblatt (Kinderseite): drei große Rahmen mit Piktogrammen, ohne Lesen. */
+export interface Forscherblatt {
+  /** Forscherfrage zum Vorlesen (≤ 60 Zeichen). Auf der Zusatzseite: die Frage des Experiments. */
+  frage?: string
+  /** Bild neben der Frage. */
+  bild?: BildId
+  /** „Ich vermute“: 2–3 Bilder zum Einkreisen; ohne Angabe Daumen hoch / Daumen runter. */
+  vermuten?: ForscherWahl[]
+  /** „Ich sehe“: ein großer Rahmen (frei) oder zwei Rahmen „vorher“ und „nachher“. */
+  sehen?: 'frei' | 'vorher-nachher'
+  /** „So war es“: 2–3 Bilder zum Einkreisen (ohne Angabe dieselben wie bei „Ich vermute“) oder drei Gesichter. */
+  ergebnis?: ForscherWahl[] | 'gesichter'
+  /** Namenszeile oben (Standard: ja; auf Seite 2 nötig, weil dort der Kopf ohne Namen steht). */
+  name?: boolean
+}
+
+export interface ForscherWahl {
+  bild: BildId
+  /** Wort unter dem Bild (≤ 18 Zeichen), für Erwachsene zum Vorlesen. */
+  text?: string
 }
 
 /** Ein Punkt im Beobachtungsfenster, z. B. { text: 'Ich zähle bis 5 und zeige auf jedes Ding.', eldib: 'KOG-22' }. */

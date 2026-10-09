@@ -16,6 +16,8 @@ import { URHEBER, URHEBER_NAME } from '../../lib/urheber'
 import { CDSE_LOGO, CDSE_LOGO_SEITEN } from '../../lib/cdse-logo'
 import { hatBegleiten, zusaetzeVon, type Zusatz } from '../spielschule'
 import { BegleitenSeite, ElternbriefSeite, KlassenrasterSeite, PortfolioSeite } from './Begleiten'
+import { ForschenSeite, ForscherblattSeite } from './Forschen'
+import { experimentVon } from '../forschen'
 
 const BREITE = 595.28 - SEITE.rand * 2
 /** Das Logo in der Fußzeile ist so hoch wie ihre beiden Zeilen – die Fußzeile wird nicht höher. */
@@ -546,6 +548,8 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
   const fuss = <Fusszeile blatt={blatt} nr={opt?.nr} sprache={sprache} heft={opt?.heft} />
   const moeglich = zusaetzeVon(blatt, sprache)
   const zusaetze = (opt?.zusaetze ?? []).filter((z) => moeglich.includes(z))
+  // Spielschule: Experiment der Woche (Seite „Forschen“ und Zusatzseite „Forscherblatt“)
+  const experiment = experimentVon(blatt, sprache)
   return (
     <>
       {opt?.schueler !== false ? (
@@ -568,12 +572,15 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
       ) : null}
       {opt?.lehrer !== false ? <Lehrerseite blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} nr={opt?.nr} heft={opt?.heft} /> : null}
       {opt?.lehrer !== false && inhalt.lehrer.spielschule ? <IdeenSeite blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} nr={opt?.nr} heft={opt?.heft} /> : null}
+      {opt?.lehrer !== false && experiment ? <ForschenSeite exp={experiment} sprache={sprache} p={p} kopf={lehrerKopf} fuss={fuss} unter={inhalt.titel} /> : null}
       {opt?.lehrer !== false && hatBegleiten(blatt, inhalt.lehrer.spielschule) ? <BegleitenSeite blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} kopf={lehrerKopf} fuss={fuss} /> : null}
       {zusaetze.map((z) =>
         z === 'klassenraster' ? (
           <KlassenrasterSeite key={z} inhalt={inhalt} sprache={sprache} p={p} kopf={lehrerKopf} fuss={fuss} />
         ) : z === 'portfolio' ? (
           <PortfolioSeite key={z} blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} kopf={<Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={m} heft={opt?.heft} />} fuss={fuss} />
+        ) : z === 'forscherblatt' ? (
+          experiment ? <ForscherblattSeite key={z} blatt={blatt} exp={experiment} sprache={sprache} p={p} kopf={<Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={m} heft={opt?.heft} />} fuss={fuss} /> : null
         ) : (
           <ElternbriefSeite key={z} blatt={blatt} sprache={sprache} p={p} fuss={fuss} />
         ),

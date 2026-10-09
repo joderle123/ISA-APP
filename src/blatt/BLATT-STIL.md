@@ -28,12 +28,16 @@ Musterblätter zum Anschauen: `gefuehle.json` (Mein Wutvulkan, Ballon-Atmen) und
    Blätter in welcher Reihenfolge ins Heft kommen, dazu „Mein Ziel“ je Lektion und der Wortschatz, steht in
    `src/blatt/module.ts`. Im Heft muss jede Lektion genau 2 Seiten haben, sonst stimmen die Seitenzahlen im Inhalt nicht.
    In der Toolbox steht das Heft oben im Bereich des Moduls (Knöpfe „Heft (PDF)“ und „Lösungsheft“, Sprache wie gemerkt).
+8. Forscherkartei Spielschule (alle Experimente der Woche in einem PDF: Deckblatt, Inhalt, je Experiment eine Seite,
+   Register nach Phänomenen): `npm run blaetter:forscherkartei -- [ordner] --fr --png` (Entwürfe dazu mit
+   `--datei=<entwurf>.json`, nur diese mit `--nur-datei`). Das Skript meldet einen Fehler, wenn eine Seite überläuft.
+   In der Toolbox steht die Kartei oben im Bereich Spielschule (Knopf „Forscherkartei (PDF)“, Sprache wie gemerkt).
 
 Umfang: Schülerteil **1 Seite** (C1, C2) bzw. **höchstens 2 Seiten** (C3–ES).
 Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen. Ausnahme Bereich `spielschule` (Themenwochen):
-Schülerteil 2 Seiten (Bildkarten + Blatt), für die Lehrperson 2 Seiten (Lehrerseite + „Aktivitäten & Ideen“), mit den
-Feldern für „Beobachten & Begleiten“ 3 Seiten; dazu als einzelne Downloads je 1 Seite Klassenraster, Portfolio-Blatt
-und Elternbrief (siehe Spielschule). Seitenzahlen zählen je Blatt („Seite 1 / 2“), auch in
+Schülerteil 2 Seiten (Bildkarten + Blatt), für die Lehrperson 2 Seiten (Lehrerseite + „Aktivitäten & Ideen“), dazu je
+1 Seite „Forschen: Experiment der Woche“ (mit `experiment`) und „Beobachten & Begleiten“ (mit deren Feldern); als
+einzelne Downloads je 1 Seite Klassenraster, Portfolio-Blatt, Elternbrief und Forscherblatt (siehe Spielschule). Seitenzahlen zählen je Blatt („Seite 1 / 2“), auch in
 einer Mappe; ein einseitiger Teil hat keine Seitenzahl. In der Fußzeile jeder Seite steht darunter klein der
 Urheber-Vermerk „© 2026 Joey Guedes, Psychologe · CDSE“ (französische Fassung: „psychologue“); der Text steht nur in
 `src/lib/urheber.ts`. Links neben beiden Zeilen steht das CDSE-Logo (`src/lib/cdse-logo.ts`, aus der Vorlage der
@@ -350,6 +354,110 @@ Prüfskript listet ungeprüftes LB je Einheit (○, zählt nicht als Fehler); di
 (jedes Wort einmal, mit deutscher Bedeutung und Spalte „Korrektur“):
 `npx tsx --tsconfig tsconfig.scripts.json scripts/lb-liste.ts --md=lb-liste.md` (oder `--csv=…`, `--alle`).
 
+#### Experiment der Woche (Lehrerseite „Forschen“, Forscherblatt, Forscherkartei)
+
+Jede Themenwoche bekommt ein kleines Experiment – echtes Material, sicher, in 15–30 Minuten mit der Gruppe zu machen,
+passend zum Thema (Jahreszeit, Tiere, Essen …). `experiment` steht **in jeder Sprachfassung** in
+`lehrer.spielschule` (DE und FR, beide Pflicht, sobald es eines gibt). Daraus entstehen:
+
+- die Lehrerseite **„Forschen: Experiment der Woche“** (nach „Aktivitäten & Ideen“, vor „Beobachten & Begleiten“):
+  Forscherfrage groß, Material mit kleinen Bildern, nummerierte Schritte mit Piktogrammen, *Vermuten – Beobachten –
+  Erklären* mit „Warum? (für Kinder)“ als Sprechblase, „Hintergrund (für Erwachsene)“ klein, Sicherheit mit den
+  Standardsätzen, Weiterforschen;
+- die Zusatzseite **Forscherblatt** für die Kinder (eigener Knopf in der Toolbox, `…_zusatz.pdf` in `blatt-render`) –
+  außer das Forscherblatt steht schon als Baustein im Schülerteil;
+- eine Seite in der **Forscherkartei** (alle Experimente, nach Herbst, Winter, Frühling, Sommer und dann den übrigen
+  Themen, mit Register nach Phänomenen).
+
+Einheiten ohne `experiment` bleiben gültig (das Prüfskript zählt sie nur in der Zusammenfassung, ○). Ein vorhandenes
+Experiment prüft es streng: Die Längen sind **Höchstwerte, damit die Seite nie überläuft** (Fehler, auch FR).
+
+| Feld | Inhalt | Regeln |
+|---|---|---|
+| `titel` | Name des Experiments: „Der Wattepad-Regenbogen“ | ≤ 50 Zeichen |
+| `frage` | Forscherfrage, so wie man sie den Kindern stellt | ≤ 90, endet mit „?“ |
+| `material` | 3–8 Dinge mit Menge | je ≤ 60; Bild per Stichwort (s. u.) oder `{ "text": …, "bild": … }` |
+| `schritte` | 3–5 Schritte, Infinitiv oder „Die Kinder …“ | je ≤ 140; Piktogramm per Stichwort (erstes Verb) oder `{ "text", "bild" }` |
+| `vermutung` | Vermuten: Wie zeigen die Kinder ihre Idee (Daumen, Karte, Stein)? Was sagen sie oft? | ≤ 180 |
+| `beobachten` | Beobachten: worauf achten, welche Fragen stellen | ≤ 180 |
+| `warumKind` | Erklären in Kindersprache, 2–3 kurze Sätze, ohne Fachwörter | ≤ 180 |
+| `hintergrund` | Fachlich für Erwachsene, sachlich, ohne Übertreibung | ≤ 550 |
+| `sicherheit` | 1–3 Zeilen, wo möglich `standard:<schlüssel>` (Liste unten) | freie Zeile ≤ 120 |
+| `weiter` | Weiterforschen: eine Variante für die nächsten Tage | ≤ 200 |
+| `dauer` | „20 Min.“ | ≤ 20 |
+| `phaenomene` | 1–2 ids fürs Register (in DE und FR dieselben) | `farben`, `wasser-wandert`, `schwimmen`, `loesen`, `waerme`, `verdunsten`, `luft`, `licht`, `magnet`, `schall`, `pflanzen`, `lebewesen`, `sinne`, `kraefte`, `gewicht`, `stoffe`, `oberflaeche`, `elektrizitaet` (Bezeichnungen in `src/blatt/forschen.ts`) |
+| `forscherblatt` | optional: Bilder fürs Forscherblatt der Zusatzseite (wie der Baustein unten, ohne `art`) | ohne: Daumen hoch / runter |
+
+**Nicht in der Spielschule** (Fehler, auch in `weiter`): Glitzer, Neodym- und kleine Magnete (Magnetkugeln), Kerzen,
+Teelichter und Streichhölzer (LED-Kerze ist erlaubt), Alkohol/Spiritus, Trockeneis, heißes Wasser für Kinder (bedienen
+Erwachsene heißes Wasser, steht das im Satz – „Eine Erwachsene gießt …“ – und `standard:hitze` gehört in die
+Sicherheit). Verneint („keine Kerze“, « sans paillettes ») zählt nicht. Das Prüfskript schlägt Standardsätze vor:
+Wanne/Becken → `wasser`, Messer/halbieren → `messer`, Samen, Perlen, Bohnen, Magnete → `kleinteile`,
+Strohhalm/pusten → `pusten`, probieren/schmecken → `allergien`.
+
+**Bilder per Stichwort** (`src/blatt/forschen.ts`): Material – Watte/Wattepad, Pipette, Tablett, Lupe, Farbe, Stift,
+Eis, Salz, Zucker, Zitrone, Apfel, Becher, Glas, Teller, Schüssel/Wanne, Löffel, Tuch, Papier, Wasser, Ballon, Feder,
+Samen/Erde, Steine, Sanduhr, Taschenlampe, Spiegel, Magnet … (auch FR). Schritte – das erste passende Verb: tropfen,
+gießen/füllen, mischen, warten, schauen, vermuten, legen/stellen, malen, zählen, wiegen, messen, schneiden/halbieren,
+pusten, einfrieren, einkreisen (Forscherblatt) … Passt nichts, steht ein Punkt (Material) bzw. die Hand (Schritt);
+dann `{ "text": …, "bild": "icon:…" }` angeben. Neben allen Bildern der Toolbox gibt es `forschen:pipette`,
+`forschen:wattepad` und `forschen:tablett`.
+
+**Forscherblatt als Baustein** `forscherblatt` (Kinderseite, eine ganze Seite – steht allein auf Seite 2 nach
+`seitenumbruch`): drei große Rahmen mit Nummer, Piktogramm und Handlungssymbol, ohne Lesen.
+
+| Feld | Inhalt |
+|---|---|
+| `frage`, `bild` | Forscherfrage zum Vorlesen (≤ 60 Zeichen) mit Bild daneben |
+| `vermuten` | „Ich vermute“: 2–3 `{ "bild", "text"? }` zum Einkreisen (Wort ≤ 18 Zeichen); ohne: Daumen hoch / runter |
+| `sehen` | „Ich sehe“: `frei` (ein großes Malfeld, Standard) oder `vorher-nachher` (zwei Felder mit Pfeil) |
+| `ergebnis` | „So war es“: 2–3 Bilder, `"gesichter"` (froh, überrascht, verwirrt) oder ohne Angabe dieselben Bilder wie `vermuten` |
+| `name` | Namenszeile oben (Standard: ja; `false` auf Seite 1, wo der Kopf schon „Name“ hat) |
+
+Muster (DE; die FR-Fassung steht mit eigenen Texten in `fr.lehrer.spielschule.experiment`):
+
+```json
+"experiment": {
+  "titel": "Der Wattepad-Regenbogen",
+  "frage": "Wohin wandern die Farben, wenn wir Wasser auf die Wattepads tropfen?",
+  "material": [
+    "7 Wattepads, in einer Reihe auf einem Tablett",
+    "Lebensmittelfarbe oder Wasserfarbe: Rot, Gelb, Blau",
+    "3 Pipetten (eine je Kind am Tablett)",
+    "Becher mit Wasser",
+    "Küchenpapier für Tropfen daneben",
+    { "text": "Malkittel oder alte T-Shirts", "bild": "icon:shirt" }
+  ],
+  "schritte": [
+    "Sieben Wattepads dicht nebeneinander auf das Tablett legen, so dass sie sich berühren.",
+    "Auf jedes zweite Pad einige Tropfen Farbe geben: Rot, Gelb, Blau, Rot. Die Pads dazwischen bleiben weiß.",
+    "Vermuten: Was passiert mit den weißen Pads, wenn wir Wasser dazugeben? Die Kinder zeigen ihre Idee.",
+    "Mit der Pipette Wasser auf die farbigen Pads tropfen – langsam, Tropfen für Tropfen.",
+    "Fünf Minuten warten und mit der Lupe schauen: Die Farben wandern und mischen sich zu Orange, Grün und Lila."
+  ],
+  "vermutung": "Fragen, bevor das Wasser kommt: Bleiben die weißen Pads weiß? Jedes Kind legt eine Karte: weiß oder bunt. Viele sagen: „Die Farbe bleibt, wo sie ist.“",
+  "beobachten": "Langsam tropfen und schauen: Wohin läuft das Wasser? Was passiert, wo Rot und Gelb sich treffen? Welche neue Farbe entsteht zwischen Gelb und Blau?",
+  "warumKind": "Die Watte trinkt das Wasser – wie ein Schwamm. Das Wasser wandert weiter und nimmt die Farbe mit. Wo zwei Farben sich treffen, entsteht eine neue.",
+  "hintergrund": "Watte besteht aus feinen Fasern mit winzigen Zwischenräumen. Wasser wird in diese engen Räume hineingezogen und breitet sich aus, auch seitwärts und nach oben: Kapillarwirkung. Gelöste Farbstoffe wandern mit. Treffen zwei Grundfarben zusammen, mischen sie sich: Rot und Gelb ergeben Orange, Gelb und Blau Grün, Blau und Rot Lila. So erleben die Kinder zwei Dinge auf einmal: Wasser bewegt sich ohne Hilfe, und aus drei Farben werden sechs. Auf dieselbe Weise steigt Wasser in Pflanzen nach oben.",
+  "sicherheit": ["standard:wasser", "Lebensmittelfarbe färbt Haut und Kleidung: Malkittel anziehen, Tisch abdecken; das Farbwasser nicht trinken."],
+  "weiter": "Am nächsten Tag: die Wattepads im Kreis legen (Farbkreis) oder Küchenpapier statt Watte nehmen. Was geht schneller? Getrocknet werden die Pads zur Regenbogen-Girlande.",
+  "dauer": "20 Min.",
+  "phaenomene": ["wasser-wandert", "farben"],
+  "forscherblatt": {
+    "vermuten": [{ "bild": "forschen:wattepad", "text": "bleibt weiß" }, { "bild": "icon:rainbow", "text": "wird bunt" }],
+    "sehen": "vorher-nachher"
+  }
+}
+```
+
+Als Seite 2 im Schülerteil (dann gibt es keine eigene Zusatzseite):
+`{ "art": "seitenumbruch" }, { "art": "forscherblatt", "frage": "Wohin wandern die Farben?", "bild": "icon:rainbow", "vermuten": […], "sehen": "vorher-nachher" }`.
+
+**Schreibregeln:** Ein Experiment, das wirklich funktioniert (vorher selbst ausprobieren) und das die Kinder selbst tun
+(tropfen, legen, rühren) – die Erwachsenen bereiten vor und fragen. Vermuten immer **vor** dem Tun; beim Erklären keine
+falschen Vereinfachungen („die Farbe ist schwer“), sondern ein Bild aus dem Alltag der Kinder (Schwamm, Schwimmring).
+Hintergrund ohne erfundene Zahlen oder Studien. Ergebnisse der Kinder sind nie „falsch“ – sie werden überprüft.
+
 **Seiten und Downloads:** Der Lehrerteil („Mit Lehrerseite“, „Nur Lehrerseite“, Mappen) bekommt die Seite
 „Beobachten & Begleiten“ automatisch, sobald eines der Felder da ist. **Klassenraster** (quer: 14 Zeilen × 3 Punkte ×
 3 Stufen, Datum eintragen) und **Portfolio-Blatt** (Kinderseite: Bild/Foto, „Das kann ich jetzt“ mit den drei Stufen,
@@ -362,6 +470,7 @@ und Satz der Woche), wenn `woche.elternbrief` da ist. Sie erscheinen in der Tool
 |---|---|---|
 | `comic` | `felder` (1–6), `spalten?` (2/3) | Feld: `figuren` (max. 2), `requisit?`, `text?` (Sprechblase, ≤ 70 Zeichen), `sprecher?` (0/1), `blase?` (sprechen/denken/keine), `untertitel?` ('' = Linie), `leer?` (zum Selbstzeichnen). |
 | `karten` | `karten: [{titel?, text?, bild?}]`, `spalten?` (2–4), `hoehe?` | Karten zum Ausschneiden (Signalkarten, Stärkenkarten, Bildkarten). |
+| `forscherblatt` | `frage?`, `bild?`, `vermuten?`, `sehen?`, `ergebnis?`, `name?` | Spielschule: Forscherblatt zum Experiment der Woche – eine ganze Seite (siehe „Experiment der Woche“). |
 
 ### Abschluss
 | Art | Felder | Wofür |
@@ -466,7 +575,7 @@ Anführungszeichen « … ». Keine Zeichen außerhalb von Latein-1 (z. B. kein 
 
 - [ ] Prüfskript ohne Fehler, Hinweise bewusst entschieden
 - [ ] Alle Seiten als Bild angesehen: nichts abgeschnitten, keine halbleeren Seiten, Umbrüche sinnvoll
-- [ ] Schülerteil 1 Seite (C1/C2) bzw. höchstens 2 Seiten; Lehrerseite genau 1 Seite (Spielschule: 2, mit „Beobachten & Begleiten“ 3)
+- [ ] Schülerteil 1 Seite (C1/C2) bzw. höchstens 2 Seiten; Lehrerseite genau 1 Seite (Spielschule: 2, dazu je 1 für „Forschen“ und „Beobachten & Begleiten“)
 - [ ] Mindestens eine Aufgabe mit Beispiel oder vorgegebenem Anfang
 - [ ] ELDiB-Items passen wirklich zu Inhalt und Alter
 - [ ] Französisch vollständig und natürlich (ES)
