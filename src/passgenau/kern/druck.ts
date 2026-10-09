@@ -3,7 +3,7 @@
 // auf dem Planblatt Vorname, Codes und Quelle-Art, aber keine Daten von Vorfällen oder Notizen; Begründungen nur auf Wunsch.
 import type { Baustein, Blatt } from '../../blatt/typen'
 import type { MikroBaustein, Plan, PlanSchritt, Profil, Rolle, Sprache } from '../typen'
-import { bausteinInhalt, eldibKurz, intern, ichSatz, quelleText, textVon, type Katalog } from './katalog'
+import { bausteinInhalt, eldibKurz, intern, quelleText, textVon, zielSatz, type Katalog } from './katalog'
 import { kinderblatt } from './blatt'
 import { BOGEN_NAME, ROLLE_NAME } from './vokabular'
 import { hash8 } from './hilfen'
@@ -110,7 +110,7 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
     blatt: x.ref === 'pg:blatt',
     erkundung: x.erkundung,
   }
-  if (x.wahl?.length) d.wahl = [{ titel: t.titel, min: x.min }, ...x.wahl.map((w) => ({ titel: (k.eintraege.get(w.ref) ? textVon(k.eintraege.get(w.ref)!, sprache).titel : w.t) ?? w.ref, min: w.min }))]
+  if (x.wahl?.length) d.wahl = [{ titel: t.titel, min: x.min }, ...x.wahl.map((w) => ({ titel: (w.ref === 'pg:blatt' ? (sprache === 'fr' ? 'Page à colorier / à jouer' : w.t) : k.eintraege.get(w.ref) ? textVon(k.eintraege.get(w.ref)!, sprache).titel : w.t) ?? w.ref, min: w.min }))]
   return d
 }
 
@@ -147,7 +147,10 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       const leichter = quelle ? ((sp === 'fr' && quelle.fr) || quelle.de).lehrer.differenzierung?.leichter : undefined
       return { titel: textVon(e, sp).titel, quelle: quelleText(e, sp), tipp: kuerzen(leichter, 160) }
     })
-  const ziele = plan.ziele.map((code) => ({ code, text: `${eldibKurz(k, code)} – ${p.ziele.find((z) => z.code === code)?.ich ?? ichSatz(k, code) ?? ''}` }))
+  const ziele = plan.ziele.map((code) => {
+    const satz = zielSatz(k, p, code, sp)
+    return { code, text: `${eldibKurz(k, code, sp)}${satz ? ` – ${satz}` : ''}` }
+  })
   const phase = BOGEN_NAME[s.phase]?.[sp] ?? s.phase
   const zeile =
     sp === 'fr'
@@ -253,9 +256,9 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
   if (wahl) {
     const optionen = [wahl, ...(wahl.wahl ?? [])].slice(0, 3).map((w) => {
       const e = k.eintraege.get(w.ref)
-      const t = e ? textVon(e, sprache).titel : (('t' in w && w.t) || w.ref)
+      const t = w.ref === 'pg:blatt' ? (sprache === 'fr' ? 'Page à colorier' : 'Mitmach-Seite') : e ? textVon(e, sprache).titel : (('t' in w && w.t) || w.ref)
       const f = e?.format[0]
-      const bild = f === 'bewegung' ? 'icon:run' : f === 'malen' ? 'icon:palette' : f === 'musik' ? 'icon:music' : f === 'spiel' ? 'icon:dice-5' : f === 'basteln' ? 'icon:puzzle' : f === 'sinne' || f === 'atmen' ? 'icon:leaf' : 'icon:armchair'
+      const bild = w.ref === 'pg:blatt' ? 'icon:pencil' : f === 'bewegung' ? 'icon:run' : f === 'malen' ? 'icon:palette' : f === 'musik' ? 'icon:music' : f === 'spiel' ? 'icon:dice-5' : f === 'basteln' ? 'icon:puzzle' : f === 'sinne' || f === 'atmen' ? 'icon:leaf' : 'icon:armchair'
       return { text: t.length > 38 ? t.slice(0, 37) + '…' : t, bild, min: w.min }
     })
     const karte = wahl.wahlkarte ? intern(k).wahlkarten.find((w) => w.id === wahl.wahlkarte) : undefined

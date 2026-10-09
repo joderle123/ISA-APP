@@ -1,6 +1,7 @@
 // Passgenau – Katalog zur Laufzeit: Metadaten (bausteine.json, schritte.json) + Texte aus den Quellen + neue Inhalte
 // (src/data/passgenau/inhalte/*.json), indiziert nach Rolle. Einmal geladen, danach aus dem Speicher.
 import type { Baustein, NummeriertesBlatt, Sprache } from '../../blatt/typen'
+import { ELDIB_FR } from '../../blatt/eldib-fr'
 import type { Einheit as KursEinheit } from '../../kurs/typen'
 import type { Material } from '../../types/material'
 import type { KatalogEintrag, MikroBaustein, Rolle, Sozialform, Stufe, Stundenschritt, Wahlkarte } from '../typen'
@@ -421,8 +422,16 @@ export function ichSatz(k: Katalog, code: string): string | undefined {
   return intern(k).eldib.items[code]?.ich[0]
 }
 
-export function eldibKurz(k: Katalog, code: string): string {
-  return intern(k).eldib.items[code]?.k ?? code
+export function eldibKurz(k: Katalog, code: string, sprache: Sprache = 'de'): string {
+  return (sprache === 'fr' ? ELDIB_FR[code] : undefined) ?? intern(k).eldib.items[code]?.k ?? code
+}
+
+/** Ich-Satz eines Ziels in der Sprache des Blatts: der des Profils, sonst der erste der ELDiB-Bank. Auf Französisch nur ein
+ *  französischer Satz (die Bank hat keine) – sonst keiner, und die Ziel-Zeile entfällt. */
+export function zielSatz(k: Katalog, p: { ziele: { code: string; ich: string }[] }, code: string, sprache: Sprache): string | undefined {
+  const eigen = p.ziele.find((z) => z.code === code)?.ich?.trim()
+  if (sprache === 'fr') return eigen && /^(je|j['’]|moi)\b/i.test(eigen) ? eigen : undefined
+  return eigen || ichSatz(k, code)
 }
 
 export function eldibStufe(k: Katalog, code: string): number {

@@ -3,7 +3,7 @@
 //   npm run passgenau:test            alles
 //   npm run passgenau:test -- --schnell   ohne PDF-Prüfungen
 import { renderToBuffer, Document } from '@react-pdf/renderer'
-import { mkdtempSync, rmSync, writeFileSync } from 'node:fs'
+import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { execFileSync } from 'node:child_process'
@@ -12,7 +12,7 @@ import type { Auftrag, Ereignis, KatalogEintrag, Plan, PraxisVorlage, Profil, Ru
 import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { BlattDokument } from '../src/blatt/pdf/BlattDokument'
 import { PlanSeite, SitzungDokument, teilPositionen } from '../src/passgenau/pdf/PlanDokument'
-import { aufloesen, intern, type Katalog } from '../src/passgenau/kern/katalog'
+import { aufloesen, intern, zielSatz, type Katalog } from '../src/passgenau/kern/katalog'
 import { erkundbar, planen, sitzungNeu, type Verlauf } from '../src/passgenau/kern/planer'
 import { alternativen, ersetzen } from '../src/passgenau/kern/alternativen'
 import { kinderblatt } from '../src/passgenau/kern/blatt'
@@ -140,7 +140,7 @@ function verstoesse(p: Profil, a: Auftrag, plan: Plan): string[] {
       if (stufenAbstand(c.stufe, e.stufen) >= 2) w('Stufe')
       if (p.alterJahre < e.alter.von - 1 || p.alterJahre > e.alter.bis + 1) w('Alter')
       if (p.alterJahre >= 12 && e.stufen.every((x) => x === 'C1' || x === 'C2')) w('für Jüngere')
-      if (e.einzeltauglich === 'nein') w('nur Gruppe')
+      if (e.einzeltauglich === 'nein' && (a.sozialform ?? 'einzeln') === 'einzeln') w('nur Gruppe')
       if (e.zielgruppe === 'fachkraft') w('Werkzeug für Fachkräfte')
       if (e.sensibel === 'akut' || (e.sensibel === 'kinderschutz' && !(a.heikel ?? []).length)) w('heikel')
       if (e.sensibel === 'familie' && p.vorsicht.includes('familie')) w('Vorsicht Familie')
@@ -149,7 +149,7 @@ function verstoesse(p: Profil, a: Auftrag, plan: Plan): string[] {
         const vorlesbar = intern(k).vorlesbar.has(e.id) ? 1 : 0
         if (e.lesemenge > p.zugang.lesen + vorlesbar) w('zu viel Text')
         if (e.schreibmenge > p.zugang.schreiben) w('zu viel Schreiben')
-        if (p.gemacht.some((g) => g.id === `blatt:${e.quelle.blatt}`)) w('Blatt schon gemacht')
+        if (p.gemacht.some((g) => g.id === `blatt:${e.quelle.blatt}` && (Date.parse(a.datum) - Date.parse(g.am)) / 86400000 < 42)) w('Blatt schon gemacht (< 42 Tage)')
       }
       if (plan.weg === 'leicht' && !e.ohneZiel) w('Weg 3 mit Förderziel')
       if (plan.weg === 'leicht' && e.format[0] === 'gespraech' && (a.tagesformen ?? []).some((x) => x === 'traurig' || x === 'rueckzug')) w('Gespräch bei traurig')
@@ -676,6 +676,46 @@ await pruefung('Französisch (T-M4): FR-Kinder bekommen ≥ 5 Pakete, Banner „
     }
     for (const x of verstoesse(p, a, plan)) soll(false, `${p.ref}: ${x}`)
   }
+})
+
+await pruefung('20 erfundene Testkinder × 3 Wege (tests/passgenau): harte Regeln, Minuten, Blatt oder Begründung, Ziel-Satz in der Blattsprache', () => {
+  const kinder: Profil[] = JSON.parse(readFileSync(join(ROOT, 'tests/passgenau/kinder.json'), 'utf8'))
+  const auftraege: Record<string, Auftrag[]> = JSON.parse(readFileSync(join(ROOT, 'tests/passgenau/auftraege.json'), 'utf8'))
+  let n = 0
+  let sitzungen = 0
+  let mitBlatt = 0
+  const zeiten: number[] = []
+  for (const p of kinder)
+    for (const a of auftraege[p.ref] ?? []) {
+      n++
+      const t = Date.now()
+      const plan = planen(k, p, a, leer(), VERLAUF)
+      zeiten.push(Date.now() - t)
+      const name = `${p.ref}/${a.weg}`
+      for (const x of verstoesse(p, a, plan)) soll(false, `${name}: ${x}`)
+      for (const s of plan.sitzungen) {
+        sitzungen++
+        const summe = s.schritte.reduce((x, y) => x + y.min, 0)
+        soll(Math.abs(summe - a.dauer) <= 2, `${name} S${s.nr}: ${summe} statt ${a.dauer} Min.`)
+        // Blatt gewünscht (ausdrücklich oder als Vorgabe): Blatt da – oder ein klarer Grund im Plan
+        const gewuenscht = a.blatt ?? (p.alterJahre <= 5 || a.weg === 'leicht' ? 'ohne' : 'mit')
+        if (gewuenscht === 'mit' && !(a.weg !== 'leicht' && a.dauer <= 10)) {
+          if (s.blatt) mitBlatt++
+          else soll(!!s.hinweise?.some((h) => /ohne Blatt geplant/.test(h)), `${name} S${s.nr}: kein Blatt und kein Grund`)
+        }
+        if (gewuenscht === 'ohne') soll(!s.blatt, `${name} S${s.nr}: Blatt, obwohl ohne gewünscht`)
+        // „Mein Ziel“ nur in der Sprache des Blatts
+        if (s.blatt && plan.ziele[0]) {
+          const satz = zielSatz(k, p, plan.ziele[0], a.sprache)
+          if (a.sprache === 'fr') soll(!satz || /^(je|j['’]|moi)\b/i.test(satz), `${name}: deutscher Ziel-Satz auf französischem Blatt`)
+          const kb = kinderblatt(k, p, { ...plan, sitzungen: plan.sitzungen.map((x) => (x.nr === s.nr && x.blatt ? { ...x, blatt: { ...x.blatt, ziel: true } } : x)) }, s.nr, a.sprache)
+          const z = kb.passgenau?.ziel?.[a.sprache]
+          if (a.sprache === 'fr' && z) soll(/^(je|j['’]|moi)\b/i.test(z), `${name}: „Mein Ziel“ auf Deutsch`)
+        }
+      }
+    }
+  zeiten.sort((x, y) => x - y)
+  info(`${n} Aufträge, ${sitzungen} Sitzungen, ${mitBlatt} Blätter; planen Median ${zeiten[Math.floor(zeiten.length / 2)]} ms, max ${zeiten[zeiten.length - 1]} ms`)
 })
 
 await pruefung('Ids (T-M10): auflösen ok / umgezogen / überarbeitet / fehlt – nie ein falscher Baustein', () => {

@@ -1,0 +1,1768 @@
+[
+  {
+    "v": 1,
+    "ref": "tk-01",
+    "erstellt": "2026-10-09T08:01:00",
+    "anrede": "Lio",
+    "vorname": "Lio",
+    "alterJahre": 3,
+    "stufen": [
+      "C1"
+    ],
+    "layout": "bild",
+    "sprache": {
+      "blatt": "de",
+      "woerter": [
+        "lb"
+      ]
+    },
+    "zugang": {
+      "lesen": 0,
+      "schreiben": 0,
+      "bild": 3,
+      "tempo": "ruhig",
+      "struktur": "hoch",
+      "quelle": [
+        "stufe",
+        "ds:2026-06"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "V-10",
+        "ich": "Ich warte, bis die/der Lehrer:in mich mit meinem Namen ruft.",
+        "quelle": "pei",
+        "seit": "2026-09-14",
+        "prio": 1
+      },
+      {
+        "code": "KOG-22",
+        "ich": "Ich zähle bis 4.",
+        "quelle": "pei",
+        "seit": "2026-09-14",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-3",
+      "V-5",
+      "V-8",
+      "K-4",
+      "SOZ-3",
+      "SOZ-6"
+    ],
+    "themen": [
+      {
+        "key": "familie",
+        "art": "notiz",
+        "datum": "2026-09-30"
+      },
+      {
+        "key": "familie",
+        "art": "reunion",
+        "datum": "2026-10-05"
+      }
+    ],
+    "vorsicht": [
+      "familie"
+    ],
+    "interessen": [
+      "autos",
+      "tiere"
+    ],
+    "wochenziel": null,
+    "gemacht": [
+      {
+        "id": "blatt:ich-bin-dran-du-bist-dran",
+        "am": "2026-09-24"
+      },
+      {
+        "id": "blatt:mein-wetter-heute",
+        "am": "2026-10-01"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rituale": {
+      "ankommen": "r:begruessungsgeste",
+      "abschluss": "r:finger-abschied"
+    },
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "hilft": [
+      "stundenleiste",
+      "bildplan"
+    ],
+    "seed": "9fea40e7",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-02",
+    "erstellt": "2026-10-09T08:02:00",
+    "anrede": null,
+    "vorname": "Ema",
+    "alterJahre": 4,
+    "stufen": [
+      "C1"
+    ],
+    "layout": "bild",
+    "sprache": {
+      "blatt": "fr",
+      "woerter": [
+        "pt"
+      ]
+    },
+    "zugang": {
+      "lesen": 0,
+      "schreiben": 0,
+      "bild": 3,
+      "tempo": "normal",
+      "struktur": "normal",
+      "quelle": [
+        "stufe"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "V-13",
+        "ich": "Ich setze mich in den Morgenkreis, wenn der Tag beginnt.",
+        "quelle": "pei",
+        "seit": "2026-09-14",
+        "prio": 1
+      },
+      {
+        "code": "K-12",
+        "ich": "Wenn ich Hilfe benötige, spreche ich die/den Lehrer:in an.",
+        "quelle": "pei",
+        "seit": "2026-09-14",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-8",
+      "V-10",
+      "K-4",
+      "K-6",
+      "SOZ-6",
+      "SOZ-12"
+    ],
+    "themen": [
+      {
+        "key": "traurig",
+        "art": "beobachtung",
+        "datum": "2026-09-28"
+      },
+      {
+        "key": "traurig",
+        "art": "notiz",
+        "datum": "2026-10-05"
+      }
+    ],
+    "vorsicht": [
+      "reiz"
+    ],
+    "interessen": [
+      "tiere",
+      "basteln"
+    ],
+    "wochenziel": null,
+    "gemacht": [
+      {
+        "id": "blatt:ruhe-ecke",
+        "am": "2026-09-30"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "hilft": [
+      "reizarm"
+    ],
+    "seed": "9e4af415",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-03",
+    "erstellt": "2026-10-09T08:03:00",
+    "anrede": "Noé",
+    "vorname": "Noé",
+    "alterJahre": 5,
+    "stufen": [
+      "C1"
+    ],
+    "layout": "bild",
+    "sprache": {
+      "blatt": "fr",
+      "woerter": [
+        "lb"
+      ]
+    },
+    "zugang": {
+      "lesen": 0,
+      "schreiben": 0,
+      "bild": 3,
+      "tempo": "normal",
+      "struktur": "hoch",
+      "quelle": [
+        "stufe",
+        "ds:2026-05"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "SOZ-14",
+        "ich": "Ich warte bis ich an der Reihe bin.",
+        "quelle": "pei",
+        "seit": "2026-09-14",
+        "prio": 1
+      },
+      {
+        "code": "V-10",
+        "ich": "Ich warte, bis die/der Lehrer:in mich mit meinem Namen ruft.",
+        "quelle": "pei",
+        "seit": "2026-09-14",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-9",
+      "V-11",
+      "K-8",
+      "K-12",
+      "SOZ-10",
+      "SOZ-13"
+    ],
+    "themen": [
+      {
+        "key": "gewalt",
+        "art": "vorfall",
+        "datum": "2026-10-01"
+      },
+      {
+        "key": "gewalt",
+        "art": "vorfall",
+        "datum": "2026-10-07"
+      },
+      {
+        "key": "wut",
+        "art": "notiz",
+        "datum": "2026-10-07"
+      }
+    ],
+    "vorsicht": [],
+    "interessen": [
+      "fussball",
+      "autos",
+      "bauen"
+    ],
+    "wochenziel": "Ich warte bis ich an der Reihe bin.",
+    "gemacht": [
+      {
+        "id": "blatt:meine-stopp-hand",
+        "am": "2026-09-26"
+      },
+      {
+        "id": "blatt:wenn-ich-wuetend-bin",
+        "am": "2026-09-17"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rituale": {
+      "ankommen": "r:klopf-rhythmus",
+      "abschluss": "r:sternenkette"
+    },
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "hilft": [
+      "bewegungspausen",
+      "stundenleiste"
+    ],
+    "seed": "6f05a047",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-04",
+    "erstellt": "2026-10-09T08:04:00",
+    "anrede": null,
+    "vorname": "Saïd",
+    "alterJahre": 6,
+    "stufen": [
+      "C2"
+    ],
+    "layout": "gross",
+    "sprache": {
+      "blatt": "de",
+      "woerter": []
+    },
+    "zugang": {
+      "lesen": 0,
+      "schreiben": 1,
+      "bild": 2,
+      "tempo": "normal",
+      "struktur": "normal",
+      "quelle": [
+        "stufe",
+        "ankunft:2026-02"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "K-12",
+        "ich": "Wenn ich Hilfe benötige, spreche ich die/den Lehrer:in an.",
+        "quelle": "pei",
+        "seit": "2026-09-21",
+        "prio": 1
+      },
+      {
+        "code": "SOZ-20",
+        "ich": "Wenn andere sich gut verhalten, mache ich es auch.",
+        "quelle": "pei",
+        "seit": "2026-09-21",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "K-4",
+      "K-5",
+      "K-9",
+      "SOZ-12",
+      "SOZ-15"
+    ],
+    "themen": [
+      {
+        "key": "freundschaft",
+        "art": "reunion",
+        "datum": "2026-09-29"
+      }
+    ],
+    "vorsicht": [],
+    "interessen": [
+      "fussball",
+      "zeichnen"
+    ],
+    "wochenziel": null,
+    "gemacht": [],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "hilft": [
+      "bildplan"
+    ],
+    "seed": "65b50717",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-05",
+    "erstellt": "2026-10-09T08:05:00",
+    "anrede": "Lucie",
+    "vorname": "Lucie",
+    "alterJahre": 7,
+    "stufen": [
+      "C2"
+    ],
+    "layout": "gross",
+    "sprache": {
+      "blatt": "fr",
+      "woerter": []
+    },
+    "zugang": {
+      "lesen": 1,
+      "schreiben": 0,
+      "bild": 2,
+      "tempo": "ruhig",
+      "struktur": "hoch",
+      "quelle": [
+        "stufe",
+        "test:2026-04",
+        "ds:2026-05"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "V-15",
+        "ich": "Wenn ich eine Aufgabe verstanden habe, löse ich sie alleine.",
+        "quelle": "pei",
+        "seit": "2026-09-15",
+        "prio": 1
+      },
+      {
+        "code": "KOG-32",
+        "ich": "Ich kann präzise mit meinen Händen arbeiten.",
+        "quelle": "eldib",
+        "seit": "2026-09-15",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-10",
+      "V-11",
+      "V-13",
+      "K-12",
+      "SOZ-14",
+      "SOZ-17"
+    ],
+    "themen": [
+      {
+        "key": "aufmerksamkeit",
+        "art": "notiz",
+        "datum": "2026-10-06"
+      },
+      {
+        "key": "aufmerksamkeit",
+        "art": "beobachtung",
+        "datum": "2026-09-30"
+      },
+      {
+        "key": "lernen",
+        "art": "reunion",
+        "datum": "2026-09-25"
+      }
+    ],
+    "vorsicht": [],
+    "interessen": [
+      "pferde",
+      "zeichnen",
+      "tiere"
+    ],
+    "wochenziel": "Eine angefangene Aufgabe bearbeite ich zu Ende.",
+    "gemacht": [
+      {
+        "id": "blatt:konzentrations-tricks",
+        "am": "2026-09-19"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "hilft": [
+      "stundenleiste",
+      "bewegungspausen"
+    ],
+    "zugangBestaetigt": true,
+    "seed": "06cd1e31",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-06",
+    "erstellt": "2026-10-09T08:06:00",
+    "anrede": null,
+    "vorname": "Tomás",
+    "alterJahre": 8,
+    "stufen": [
+      "C3"
+    ],
+    "layout": "mittel",
+    "sprache": {
+      "blatt": "de",
+      "woerter": [
+        "pt"
+      ]
+    },
+    "zugang": {
+      "lesen": 2,
+      "schreiben": 2,
+      "bild": 1,
+      "tempo": "normal",
+      "struktur": "normal",
+      "quelle": [
+        "stufe"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "K-26",
+        "ich": "Ich drücke meine Gefühle mit passenden Worten aus.",
+        "quelle": "pei",
+        "seit": "2026-09-22",
+        "prio": 1
+      },
+      {
+        "code": "K-21",
+        "ich": "Ich erkenne und beschreibe die Gefühle anderer.",
+        "quelle": "vorgemerkt",
+        "seit": "2026-10-02",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-10",
+      "V-15",
+      "K-12",
+      "K-15",
+      "SOZ-17",
+      "SOZ-19"
+    ],
+    "themen": [
+      {
+        "key": "traurig",
+        "art": "notiz",
+        "datum": "2026-09-21"
+      },
+      {
+        "key": "traurig",
+        "art": "beobachtung",
+        "datum": "2026-10-05"
+      },
+      {
+        "key": "familie",
+        "art": "gespraech",
+        "datum": "2026-09-21"
+      }
+    ],
+    "vorsicht": [
+      "trauer",
+      "familie"
+    ],
+    "interessen": [
+      "tiere",
+      "zeichnen"
+    ],
+    "wochenziel": null,
+    "gemacht": [
+      {
+        "id": "blatt:gefuehle-viele-namen",
+        "am": "2026-09-30"
+      },
+      {
+        "id": "blatt:energie-batterie",
+        "am": "2026-10-07"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "seed": "c69b1b0f",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-07",
+    "erstellt": "2026-10-09T08:07:00",
+    "anrede": "Mia",
+    "vorname": "Mia",
+    "alterJahre": 9,
+    "stufen": [
+      "C3"
+    ],
+    "layout": "mittel",
+    "sprache": {
+      "blatt": "de",
+      "woerter": [
+        "pt"
+      ]
+    },
+    "zugang": {
+      "lesen": 1,
+      "schreiben": 1,
+      "bild": 2,
+      "tempo": "ruhig",
+      "struktur": "normal",
+      "quelle": [
+        "test:2026-03",
+        "korrektur:2026-10-01"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "V-21",
+        "ich": "Ich behalte die Kontrolle über mein Verhalten während Gruppenaktivitäten.",
+        "quelle": "pei",
+        "seit": "2026-09-15",
+        "prio": 1
+      },
+      {
+        "code": "K-26",
+        "ich": "Ich drücke meine Gefühle mit passenden Worten aus.",
+        "quelle": "pei",
+        "seit": "2026-09-15",
+        "prio": 2
+      },
+      {
+        "code": "SOZ-14",
+        "ich": "Ich warte bis ich an der Reihe bin.",
+        "quelle": "vorgemerkt",
+        "seit": "2026-09-30",
+        "prio": 3
+      }
+    ],
+    "erreicht": [
+      "V-10",
+      "V-13",
+      "K-12",
+      "SOZ-20"
+    ],
+    "themen": [
+      {
+        "key": "wut",
+        "art": "vorfall",
+        "datum": "2026-10-02"
+      },
+      {
+        "key": "wut",
+        "art": "notiz",
+        "datum": "2026-10-06"
+      },
+      {
+        "key": "freundschaft",
+        "art": "reunion",
+        "datum": "2026-09-29"
+      }
+    ],
+    "vorsicht": [
+      "familie"
+    ],
+    "interessen": [
+      "fussball",
+      "tiere",
+      "zeichnen"
+    ],
+    "wochenziel": "Ich warte, bis ich drankomme.",
+    "gemacht": [
+      {
+        "id": "blatt:wutvulkan",
+        "am": "2026-09-24"
+      },
+      {
+        "id": "blatt:ruhig-werden-drei-uebungen",
+        "am": "2026-10-01"
+      }
+    ],
+    "folge": {
+      "id": "pl-4k2",
+      "titel": "Wut erkennen und stoppen",
+      "n": 6,
+      "gehalten": 2
+    },
+    "vorlieben": null,
+    "rituale": {
+      "ankommen": "r:wetterbericht",
+      "abschluss": "r:stunden-kette"
+    },
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "hilft": [
+      "bewegungspausen"
+    ],
+    "zugangBestaetigt": true,
+    "seed": "bd6ec438",
+    "dichte": "reich"
+  },
+  {
+    "v": 1,
+    "ref": "tk-08",
+    "erstellt": "2026-10-09T08:08:00",
+    "anrede": null,
+    "vorname": "Arda",
+    "alterJahre": 9,
+    "stufen": [
+      "C3"
+    ],
+    "layout": "mittel",
+    "sprache": {
+      "blatt": "de",
+      "woerter": []
+    },
+    "zugang": {
+      "lesen": 2,
+      "schreiben": 2,
+      "bild": 1,
+      "tempo": "normal",
+      "struktur": "hoch",
+      "quelle": [
+        "stufe",
+        "ds:2026-03"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "V-18",
+        "ich": "Ich sage, wie ich mich anders und angemessen verhalten könnte.",
+        "quelle": "pei",
+        "seit": "2026-09-08",
+        "prio": 1
+      },
+      {
+        "code": "SOZ-32",
+        "ich": "Ich höre anderen zu und respektiere ihre Meinung.",
+        "quelle": "vorgemerkt",
+        "seit": "2026-09-29",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-10",
+      "V-15",
+      "V-16",
+      "K-15",
+      "SOZ-19",
+      "SOZ-26"
+    ],
+    "themen": [
+      {
+        "key": "wut",
+        "art": "vorfall",
+        "datum": "2026-09-30"
+      },
+      {
+        "key": "gewalt",
+        "art": "vorfall",
+        "datum": "2026-10-02"
+      },
+      {
+        "key": "wut",
+        "art": "vorfall",
+        "datum": "2026-10-07"
+      },
+      {
+        "key": "regeln",
+        "art": "notiz",
+        "datum": "2026-10-07"
+      }
+    ],
+    "vorsicht": [],
+    "interessen": [
+      "fussball",
+      "basketball"
+    ],
+    "wochenziel": "Ich überlege, wie ich mich friedlicher verhalten kann.",
+    "gemacht": [
+      {
+        "id": "blatt:stopp-denken-handeln",
+        "am": "2026-09-22"
+      },
+      {
+        "id": "blatt:wutvulkan",
+        "am": "2026-09-29"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "hilft": [
+      "bewegungspausen",
+      "stundenleiste"
+    ],
+    "seed": "ba4a926b",
+    "dichte": "reich"
+  },
+  {
+    "v": 1,
+    "ref": "tk-09",
+    "erstellt": "2026-10-09T08:09:00",
+    "anrede": "Nelia",
+    "vorname": "Nelia",
+    "alterJahre": 10,
+    "stufen": [
+      "C4"
+    ],
+    "layout": "mittel",
+    "sprache": {
+      "blatt": "de",
+      "woerter": [
+        "lb"
+      ]
+    },
+    "zugang": {
+      "lesen": 3,
+      "schreiben": 2,
+      "bild": 1,
+      "tempo": "normal",
+      "struktur": "normal",
+      "quelle": [
+        "stufe",
+        "test:2026-01",
+        "korrektur:2026-09-20"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "K-17",
+        "ich": "Ich beteilige mich vernünftig an Klassengesprächen.",
+        "quelle": "pei",
+        "seit": "2026-09-15",
+        "prio": 1
+      },
+      {
+        "code": "V-24",
+        "ich": "Ich probiere neue Aktivitäten aus und bleibe dabei ruhig.",
+        "quelle": "pei",
+        "seit": "2026-09-15",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-15",
+      "V-21",
+      "K-15",
+      "K-18",
+      "K-21",
+      "SOZ-22",
+      "SOZ-24"
+    ],
+    "themen": [
+      {
+        "key": "angst",
+        "art": "notiz",
+        "datum": "2026-09-24"
+      },
+      {
+        "key": "angst",
+        "art": "notiz",
+        "datum": "2026-10-06"
+      },
+      {
+        "key": "lernen",
+        "art": "reunion",
+        "datum": "2026-10-01"
+      }
+    ],
+    "vorsicht": [],
+    "interessen": [
+      "lesen",
+      "musik",
+      "tanzen"
+    ],
+    "wochenziel": "Ich probiere neue Aktivitäten aus und bleibe dabei ruhig.",
+    "gemacht": [
+      {
+        "id": "blatt:mut-leiter",
+        "am": "2026-09-29"
+      },
+      {
+        "id": "blatt:vor-der-probe",
+        "am": "2026-10-06"
+      }
+    ],
+    "folge": {
+      "id": "pl-9h1",
+      "titel": "Mut-Leiter: Schritt für Schritt",
+      "n": 5,
+      "gehalten": 3
+    },
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "zugangBestaetigt": true,
+    "seed": "ff6f4c89",
+    "dichte": "reich"
+  },
+  {
+    "v": 1,
+    "ref": "tk-10",
+    "erstellt": "2026-10-09T08:10:00",
+    "anrede": null,
+    "vorname": "Kofi",
+    "alterJahre": 11,
+    "stufen": [
+      "C4"
+    ],
+    "layout": "mittel",
+    "sprache": {
+      "blatt": "fr",
+      "woerter": []
+    },
+    "zugang": {
+      "lesen": 1,
+      "schreiben": 1,
+      "bild": 2,
+      "tempo": "normal",
+      "struktur": "hoch",
+      "quelle": [
+        "stufe",
+        "ankunft:2026-05",
+        "ds:2026-09"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "SOZ-32",
+        "ich": "Ich höre anderen zu und respektiere ihre Meinung.",
+        "quelle": "pei",
+        "seit": "2026-09-28",
+        "prio": 1
+      },
+      {
+        "code": "SOZ-25",
+        "ich": "Ich nehme Kontakt zu einem Kind auf, das ich besonders mag.",
+        "quelle": "vorgemerkt",
+        "seit": "2026-10-03",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-15",
+      "K-15",
+      "SOZ-19",
+      "SOZ-24"
+    ],
+    "themen": [
+      {
+        "key": "mobbing",
+        "art": "notiz",
+        "datum": "2026-10-01"
+      },
+      {
+        "key": "mobbing",
+        "art": "beobachtung",
+        "datum": "2026-10-06"
+      }
+    ],
+    "vorsicht": [
+      "trauma",
+      "familie"
+    ],
+    "interessen": [
+      "fussball",
+      "musik"
+    ],
+    "wochenziel": null,
+    "gemacht": [
+      {
+        "id": "blatt:freundschafts-rezept",
+        "am": "2026-09-30"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "hilft": [
+      "bildplan",
+      "stundenleiste"
+    ],
+    "seed": "230076fc",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-11",
+    "erstellt": "2026-10-09T08:11:00",
+    "anrede": "Yara",
+    "vorname": "Yara",
+    "alterJahre": 11,
+    "stufen": [
+      "C4"
+    ],
+    "layout": "mittel",
+    "sprache": {
+      "blatt": "de",
+      "woerter": []
+    },
+    "zugang": {
+      "lesen": 3,
+      "schreiben": 1,
+      "bild": 1,
+      "tempo": "ruhig",
+      "struktur": "normal",
+      "quelle": [
+        "stufe",
+        "test:2026-02",
+        "korrektur:2026-09-25"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "V-22",
+        "ich": "Ich erkenne, wenn ich mich verbessert habe.",
+        "quelle": "pei",
+        "seit": "2026-09-15",
+        "prio": 1
+      },
+      {
+        "code": "K-19",
+        "ich": "Ich beschreibe meine Stärken und Schwächen.",
+        "quelle": "vorgemerkt",
+        "seit": "2026-10-01",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-15",
+      "V-21",
+      "K-17",
+      "K-18",
+      "SOZ-22",
+      "SOZ-27"
+    ],
+    "themen": [
+      {
+        "key": "selbstwert",
+        "art": "notiz",
+        "datum": "2026-09-26"
+      },
+      {
+        "key": "selbstwert",
+        "art": "gespraech",
+        "datum": "2026-10-02"
+      }
+    ],
+    "vorsicht": [],
+    "interessen": [
+      "lesen",
+      "zeichnen",
+      "natur"
+    ],
+    "wochenziel": null,
+    "gemacht": [
+      {
+        "id": "blatt:staerken-karten",
+        "am": "2026-09-18"
+      },
+      {
+        "id": "blatt:drei-gute-dinge",
+        "am": "2026-09-25"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": false
+    },
+    "lernen": false,
+    "zugangBestaetigt": true,
+    "seed": "ab9b9976",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-12",
+    "erstellt": "2026-10-09T08:12:00",
+    "anrede": null,
+    "vorname": "Elif",
+    "alterJahre": 12,
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sprache": {
+      "blatt": "de",
+      "woerter": []
+    },
+    "zugang": {
+      "lesen": 3,
+      "schreiben": 3,
+      "bild": 1,
+      "tempo": "normal",
+      "struktur": "normal",
+      "quelle": [
+        "stufe"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "K-26",
+        "ich": "Ich drücke meine Gefühle mit passenden Worten aus.",
+        "quelle": "pei",
+        "seit": "2026-09-16",
+        "prio": 1
+      },
+      {
+        "code": "KOG-58",
+        "ich": "Ich unterscheide Fakten von Meinungen.",
+        "quelle": "eldib",
+        "seit": "2026-09-16",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-21",
+      "V-24",
+      "K-17",
+      "K-21",
+      "SOZ-27",
+      "SOZ-32"
+    ],
+    "themen": [
+      {
+        "key": "medien",
+        "art": "notiz",
+        "datum": "2026-09-27"
+      },
+      {
+        "key": "medien",
+        "art": "notiz",
+        "datum": "2026-10-05"
+      },
+      {
+        "key": "schlaf",
+        "art": "notiz",
+        "datum": "2026-10-05"
+      }
+    ],
+    "vorsicht": [],
+    "interessen": [
+      "gaming",
+      "musik",
+      "tanzen"
+    ],
+    "wochenziel": null,
+    "gemacht": [
+      {
+        "id": "blatt:mein-handy-und-ich",
+        "am": "2026-09-14"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "seed": "c0d83396",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-13",
+    "erstellt": "2026-10-09T08:13:00",
+    "anrede": null,
+    "vorname": "Matteo",
+    "alterJahre": 12,
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sprache": {
+      "blatt": "fr",
+      "woerter": []
+    },
+    "zugang": {
+      "lesen": 2,
+      "schreiben": 2,
+      "bild": 2,
+      "tempo": "normal",
+      "struktur": "normal",
+      "quelle": [
+        "stufe",
+        "test:2026-03"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "V-15",
+        "ich": "Eine angefangene Aufgabe bearbeite ich zu Ende.",
+        "quelle": "pei",
+        "seit": "2026-09-16",
+        "prio": 1
+      },
+      {
+        "code": "V-13",
+        "ich": "Ich melde mich im Unterricht.",
+        "quelle": "pei",
+        "seit": "2026-09-16",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-10",
+      "V-19",
+      "K-17",
+      "SOZ-19",
+      "SOZ-22"
+    ],
+    "themen": [
+      {
+        "key": "lernen",
+        "art": "notiz",
+        "datum": "2026-09-22"
+      },
+      {
+        "key": "lernen",
+        "art": "notiz",
+        "datum": "2026-10-04"
+      },
+      {
+        "key": "aufmerksamkeit",
+        "art": "notiz",
+        "datum": "2026-10-04"
+      }
+    ],
+    "vorsicht": [],
+    "interessen": [
+      "fussball",
+      "gaming",
+      "fahrrad"
+    ],
+    "wochenziel": null,
+    "gemacht": [
+      {
+        "id": "blatt:clever-lernen",
+        "am": "2026-09-21"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "hilft": [
+      "bewegungspausen"
+    ],
+    "zugangBestaetigt": true,
+    "seed": "5c1a4041",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-14",
+    "erstellt": "2026-10-09T08:14:00",
+    "anrede": null,
+    "vorname": "Ilyas",
+    "alterJahre": 14,
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sprache": {
+      "blatt": "fr",
+      "woerter": []
+    },
+    "zugang": {
+      "lesen": 3,
+      "schreiben": 3,
+      "bild": 1,
+      "tempo": "normal",
+      "struktur": "normal",
+      "quelle": [
+        "stufe"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "V-22",
+        "ich": "Ich erkenne, wenn ich mich verbessert habe.",
+        "quelle": "pei",
+        "seit": "2026-09-10",
+        "prio": 1
+      },
+      {
+        "code": "SOZ-32",
+        "ich": "Ich höre anderen zu und respektiere ihre Meinung.",
+        "quelle": "pei",
+        "seit": "2026-09-10",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-21",
+      "V-24",
+      "K-26",
+      "SOZ-34"
+    ],
+    "themen": [
+      {
+        "key": "angst",
+        "art": "notiz",
+        "datum": "2026-10-03"
+      },
+      {
+        "key": "lernen",
+        "art": "reunion",
+        "datum": "2026-10-06"
+      }
+    ],
+    "vorsicht": [],
+    "interessen": [
+      "basketball",
+      "musik"
+    ],
+    "wochenziel": null,
+    "gemacht": [
+      {
+        "id": "blatt:stress-werkzeugkoffer",
+        "am": "2026-10-06"
+      }
+    ],
+    "folge": {
+      "id": "pl-5d8",
+      "titel": "Prüfungsstress im Griff",
+      "n": 4,
+      "gehalten": 1
+    },
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "seed": "e5fde0b4",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-15",
+    "erstellt": "2026-10-09T08:15:00",
+    "anrede": null,
+    "vorname": "Sienna",
+    "alterJahre": 15,
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sprache": {
+      "blatt": "de",
+      "woerter": []
+    },
+    "zugang": {
+      "lesen": 3,
+      "schreiben": 3,
+      "bild": 1,
+      "tempo": "normal",
+      "struktur": "hoch",
+      "quelle": [
+        "stufe",
+        "ds:2026-04"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "K-26",
+        "ich": "Ich drücke meine Gefühle mit passenden Worten aus.",
+        "quelle": "pei",
+        "seit": "2026-09-12",
+        "prio": 1
+      },
+      {
+        "code": "SOZ-40",
+        "ich": "Ich kenne meine Stärken und Schwächen realistisch.",
+        "quelle": "vorgemerkt",
+        "seit": "2026-10-02",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-21",
+      "K-17",
+      "K-21",
+      "SOZ-32"
+    ],
+    "themen": [
+      {
+        "key": "traurig",
+        "art": "notiz",
+        "datum": "2026-09-29"
+      },
+      {
+        "key": "traurig",
+        "art": "notiz",
+        "datum": "2026-10-07"
+      },
+      {
+        "key": "selbstwert",
+        "art": "gespraech",
+        "datum": "2026-10-02"
+      }
+    ],
+    "vorsicht": [
+      "heikel",
+      "koerper"
+    ],
+    "interessen": [
+      "musik",
+      "zeichnen",
+      "tiere"
+    ],
+    "wochenziel": null,
+    "gemacht": [
+      {
+        "id": "blatt:skills-kraftquellen",
+        "am": "2026-09-24"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "hilft": [
+      "stundenleiste"
+    ],
+    "achtung": [
+      "krise"
+    ],
+    "seed": "95de9435",
+    "dichte": "reich"
+  },
+  {
+    "v": 1,
+    "ref": "tk-16",
+    "erstellt": "2026-10-09T08:16:00",
+    "anrede": null,
+    "vorname": "Dario",
+    "alterJahre": 16,
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sprache": {
+      "blatt": "fr",
+      "woerter": [
+        "pt"
+      ]
+    },
+    "zugang": {
+      "lesen": 3,
+      "schreiben": 2,
+      "bild": 1,
+      "tempo": "normal",
+      "struktur": "normal",
+      "quelle": [
+        "stufe"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "K-31",
+        "ich": "Bei Provokationen versuche ich zu schlichten.",
+        "quelle": "pei",
+        "seit": "2026-09-17",
+        "prio": 1
+      },
+      {
+        "code": "K-34",
+        "ich": "Ich beschreibe, was mir wichtig ist im Leben.",
+        "quelle": "vorgemerkt",
+        "seit": "2026-10-01",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-21",
+      "K-17",
+      "K-26",
+      "SOZ-32"
+    ],
+    "themen": [
+      {
+        "key": "schule",
+        "art": "notiz",
+        "datum": "2026-09-17"
+      },
+      {
+        "key": "schule",
+        "art": "notiz",
+        "datum": "2026-10-01"
+      },
+      {
+        "key": "schule",
+        "art": "beobachtung",
+        "datum": "2026-10-06"
+      }
+    ],
+    "vorsicht": [
+      "familie",
+      "heikel"
+    ],
+    "interessen": [
+      "musik",
+      "fahrrad",
+      "autos"
+    ],
+    "wochenziel": null,
+    "gemacht": [
+      {
+        "id": "blatt:neustart",
+        "am": "2026-09-23"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "achtung": [
+      "kinderschutz"
+    ],
+    "seed": "9ee465bc",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-17",
+    "erstellt": "2026-10-09T08:17:00",
+    "anrede": null,
+    "vorname": "Malou",
+    "alterJahre": 17,
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sprache": {
+      "blatt": "de",
+      "woerter": []
+    },
+    "zugang": {
+      "lesen": 3,
+      "schreiben": 3,
+      "bild": 1,
+      "tempo": "normal",
+      "struktur": "normal",
+      "quelle": [
+        "stufe"
+      ]
+    },
+    "ziele": [],
+    "erreicht": [],
+    "themen": [],
+    "vorsicht": [],
+    "interessen": [],
+    "wochenziel": null,
+    "gemacht": [],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "seed": "569d5d2d",
+    "dichte": "duenn"
+  },
+  {
+    "v": 1,
+    "ref": "tk-18",
+    "erstellt": "2026-10-09T08:18:00",
+    "anrede": null,
+    "vorname": "Jona",
+    "alterJahre": 13,
+    "stufen": [
+      "ES"
+    ],
+    "layout": "jugend",
+    "sprache": {
+      "blatt": "de",
+      "woerter": [
+        "lb"
+      ]
+    },
+    "zugang": {
+      "lesen": 1,
+      "schreiben": 1,
+      "bild": 2,
+      "tempo": "ruhig",
+      "struktur": "hoch",
+      "quelle": [
+        "stufe",
+        "korrektur:2026-09-10"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "V-10",
+        "ich": "Ich melde mich und warte, bis ich drankomme.",
+        "quelle": "pei",
+        "seit": "2026-09-14",
+        "prio": 1
+      },
+      {
+        "code": "V-13",
+        "ich": "Ich melde mich im Unterricht.",
+        "quelle": "pei",
+        "seit": "2026-09-14",
+        "prio": 2
+      }
+    ],
+    "erreicht": [
+      "V-6",
+      "V-7",
+      "V-8",
+      "V-9",
+      "K-6",
+      "K-8",
+      "SOZ-8",
+      "SOZ-10"
+    ],
+    "themen": [
+      {
+        "key": "regeln",
+        "art": "notiz",
+        "datum": "2026-09-30"
+      },
+      {
+        "key": "schule",
+        "art": "notiz",
+        "datum": "2026-10-05"
+      }
+    ],
+    "vorsicht": [],
+    "interessen": [
+      "fussball",
+      "autos",
+      "gaming"
+    ],
+    "wochenziel": null,
+    "gemacht": [
+      {
+        "id": "blatt:check-in-check-out",
+        "am": "2026-09-28"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "hilft": [
+      "stundenleiste",
+      "bewegungspausen"
+    ],
+    "seed": "98ddfb4a",
+    "dichte": "mittel"
+  },
+  {
+    "v": 1,
+    "ref": "tk-19",
+    "erstellt": "2026-10-09T08:19:00",
+    "anrede": null,
+    "vorname": "Anouk",
+    "alterJahre": 6,
+    "stufen": [
+      "C2"
+    ],
+    "layout": "gross",
+    "sprache": {
+      "blatt": "de",
+      "woerter": [
+        "lb"
+      ]
+    },
+    "zugang": {
+      "lesen": 1,
+      "schreiben": 1,
+      "bild": 1,
+      "tempo": "normal",
+      "struktur": "normal",
+      "quelle": [
+        "stufe"
+      ]
+    },
+    "ziele": [],
+    "erreicht": [],
+    "themen": [],
+    "vorsicht": [],
+    "interessen": [],
+    "wochenziel": null,
+    "gemacht": [],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "seed": "53fa4f96",
+    "dichte": "duenn"
+  },
+  {
+    "v": 1,
+    "ref": "tk-20",
+    "erstellt": "2026-10-09T08:20:00",
+    "anrede": null,
+    "vorname": "Rayan",
+    "alterJahre": 10,
+    "stufen": [
+      "C3"
+    ],
+    "layout": "mittel",
+    "sprache": {
+      "blatt": "fr",
+      "woerter": []
+    },
+    "zugang": {
+      "lesen": 2,
+      "schreiben": 2,
+      "bild": 1,
+      "tempo": "normal",
+      "struktur": "normal",
+      "quelle": [
+        "stufe",
+        "test:2022-05"
+      ]
+    },
+    "ziele": [
+      {
+        "code": "V-21",
+        "ich": "Ich behalte die Kontrolle über mein Verhalten während Gruppenaktivitäten.",
+        "quelle": "pei",
+        "seit": "2025-11-20",
+        "prio": 1
+      }
+    ],
+    "erreicht": [
+      "V-10",
+      "V-13",
+      "V-15"
+    ],
+    "themen": [
+      {
+        "key": "wut",
+        "art": "notiz",
+        "datum": "2026-08-28"
+      },
+      {
+        "key": "freundschaft",
+        "art": "reunion",
+        "datum": "2026-09-25"
+      },
+      {
+        "key": "regeln",
+        "art": "notiz",
+        "datum": "2026-10-01"
+      }
+    ],
+    "vorsicht": [],
+    "interessen": [
+      "gaming",
+      "fussball"
+    ],
+    "wochenziel": null,
+    "gemacht": [
+      {
+        "id": "blatt:wutvulkan",
+        "am": "2026-07-02"
+      }
+    ],
+    "folge": null,
+    "vorlieben": null,
+    "rechte": {
+      "speichern": true,
+      "rueckmelden": true
+    },
+    "zugangBestaetigt": false,
+    "seed": "20c084fb",
+    "dichte": "mittel"
+  }
+]

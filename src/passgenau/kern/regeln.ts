@@ -67,6 +67,8 @@ export interface Kontext {
   erkundung: number
   /** Gründe mit Datum dürfen nur am Bildschirm stehen (nie im Druck) – die Texte selbst enthalten keine Werte */
   zugangText: string | null
+  /** Zwischenspeicher je Planung (Prüfung, Vorliebe, Zielwert hängen nur vom Kontext ab) – für planen < 200 ms */
+  cache: { pruef: Map<KatalogEintrag, (string | null | undefined)[]>; v: Map<KatalogEintrag, number>; ziel: Map<KatalogEintrag, (ReturnType<typeof zielWert> | undefined)[]> }
 }
 
 const PRIO = [1, 0.8, 0.6, 0.5, 0.4]
@@ -121,6 +123,7 @@ export function kontext(k: Katalog, p: Profil, a: Auftrag, v: Vorlieben, verlauf
     vorsicht: new Set(p.vorsicht), hilft: new Set(p.hilft ?? []), heikelFrei: new Set(a.heikel ?? []), tagesformen,
     prior: kaltstart(p), ohneKind: p.lernen === false || !v.kind, seed, erkundung: v.ich.erkundung ?? 0.2,
     zugangText: zq ? zugangBeschreibung(p) : null,
+    cache: { pruef: new Map(), v: new Map(), ziel: new Map() },
   }
 }
 
@@ -163,6 +166,21 @@ export interface Pruefung {
 
 /** Ist ein Eintrag für dieses Kind und diesen Auftrag erlaubt? null = ja, sonst der Grund. */
 export function pruefe(e: KatalogEintrag, c: Kontext, o: Pruefung = {}): string | null {
+  const locker = o.locker ?? 0
+  const i = (locker >= 4 ? 2 : locker >= 3 ? 1 : 0) * 12 + (o.blatt ? 6 : 0) + (o.ritual ? 3 : 0) + (!o.rolle ? 0 : o.rolle === 'transfer' ? 1 : 2)
+  let fach = c.cache.pruef.get(e)
+  if (!fach) c.cache.pruef.set(e, (fach = []))
+  let r = fach[i]
+  if (r === undefined) r = fach[i] = pruefeBasis(e, c, o)
+  if (r !== null) return r
+  // was von der Folge abhängt, nicht zwischenspeichern
+  const vo = e.typ === 'schritt' ? e.voraussetzungen : undefined
+  if (vo?.schritt?.length && !vo.schritt.some((x) => o.vorher?.has(x))) return 'Brücke ohne letzte Stunde'
+  if (o.gesperrt?.has(e.id)) return 'schon in der Folge'
+  return null
+}
+
+function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null {
   const locker = o.locker ?? 0
   // Alter und Gestaltung – nie gelockert
   if (stufenAbstand(c.stufe, e.stufen) >= 2) return 'Stufe'
@@ -213,17 +231,16 @@ export function pruefe(e: KatalogEintrag, c: Kontext, o: Pruefung = {}): string 
   // Voraussetzungen
   const vo = e.typ === 'schritt' ? e.voraussetzungen : undefined
   if (vo?.eldib?.some((x) => !c.p.erreicht.includes(x) && !c.ziele.some((z) => z.code === x))) return 'Voraussetzung'
-  if (vo?.schritt?.length && !vo.schritt.some((x) => o.vorher?.has(x))) return 'Brücke ohne letzte Stunde'
   // Ort und Material
   if (e.typ === 'schritt' && e.ort && e.ort !== 'raum' && !(c.a.ort ?? []).includes(e.ort)) return 'Ort'
   if (c.weg !== 'gruendlich' && e.material.some((x) => NICHT_STANDARD.has(x))) return 'Material'
-  // schon gemacht / schon in der Folge
-  if (o.gesperrt?.has(e.id)) return 'schon in der Folge'
+  // schon gemacht
   if (!o.ritual) {
     const f = locker >= 3 ? 0.5 : 1
     const tage = gemachtVor(e, c)
     if (tage !== null) {
-      const frist = e.ohneZiel ? 7 : e.typ === 'baustein' ? 42 : e.id.startsWith('c:') ? 14 : 28
+      // Blatt-Teile 6 Wochen (auch Mitmach-Seiten aus einem gemachten Blatt), leichte Schritte 1 Woche, CREW 2, sonst 4
+      const frist = e.typ === 'baustein' ? 42 : e.ohneZiel ? 7 : e.id.startsWith('c:') ? 14 : 28
       if (tage < frist * f) return 'schon gemacht'
     }
   }
@@ -375,7 +392,16 @@ function wunschWert(e: KatalogEintrag, c: Kontext): number {
 export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): Bewertet {
   const leicht = c.weg === 'leicht'
   const W = leicht ? GEWICHTE_LEICHT : GEWICHTE_V1
-  const z = leicht ? { w: 0 } : zielWert(e, c, o)
+  let z: ReturnType<typeof zielWert> | undefined = { w: 0 }
+  if (!leicht) {
+    if (o.fokus) z = zielWert(e, c, o)
+    else {
+      const i = (o.locker ?? 0) >= 2 ? 1 : 0
+      let fach = c.cache.ziel.get(e)
+      if (!fach) c.cache.ziel.set(e, (fach = []))
+      z = fach[i] ??= zielWert(e, c, o)
+    }
+  }
   const phase = o.phase && o.phase !== 'leicht' ? o.phase : null
   const f: Record<string, number> = {
     ziel: z.w,
@@ -393,7 +419,12 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
   // Französisch: Blatt-Teile ohne FR zählen weniger (T-M4)
   if (c.sprache === 'fr' && e.typ === 'baustein' && !e.sprache.fr && e.lesemenge > 0) g *= 0.7
   const deckel = leicht ? 0.4 : 0.3
-  const vorl = Math.max(-1, Math.min(1, V(e, c.v, c.datum, c.prior, c.ohneKind) + wunschWert(e, c)))
+  let vRoh = c.cache.v.get(e)
+  if (vRoh === undefined) {
+    vRoh = V(e, c.v, c.datum, c.prior, c.ohneKind) + wunschWert(e, c)
+    c.cache.v.set(e, vRoh)
+  }
+  const vorl = Math.max(-1, Math.min(1, vRoh))
   return { e, f, g, vorliebe: vorl, s: g * (1 + deckel * vorl), ziel: z.ziel, zielArt: z.art }
 }
 

@@ -61,7 +61,25 @@ function vorlage(c: Kontext): Slot[] {
   const d = c.a.dauer
   const basis = tab[d] ?? (leicht ? tab[d <= 10 ? 10 : d <= 20 ? 20 : 30] : tab[30])
   const v: Slot[] = basis.map(([rolle, min]) => ({ rolle, min }))
-  if (leicht) return v
+  if (leicht) {
+    // Weg 3 mit Blatt (P2): eine Mitmach-Seite statt Spiel bzw. Ruhe; bei 10/15 Min. ist sie eine Option der Wahl
+    if (c.a.blatt === 'mit') {
+      const i = v.findIndex((x) => x.rolle === 'spiel')
+      const j = v.findIndex((x) => x.rolle === 'regulation')
+      if (i >= 0) v[i].rolle = 'uebung'
+      else if (j >= 0) v[j].rolle = 'uebung'
+    }
+    return v
+  }
+  // ausdrücklich mit Blatt, aber 10/15 Min. ohne Blatt-Slot: ein kurzer Slot aus dem Kern („1 Paket als Karte“, T-M2)
+  if (c.a.blatt === 'mit' && !v.some((x) => x.rolle === 'uebung')) {
+    const k = v.find((x) => x.rolle === 'kern')
+    if (k && k.min >= 6) {
+      const n = k.min >= 9 ? 4 : 2
+      k.min -= n
+      v.splice(v.indexOf(k) + 1, 0, { rolle: 'uebung', min: n })
+    }
+  }
   const h = c.heute
   const idx = (r: SlotRolle) => v.findIndex((x) => x.rolle === r)
   const nimm = (r: SlotRolle, n: number, mindest = 3) => {
@@ -344,18 +362,34 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   erkunde(c, o, ergebnis, gewaehlt, benutzt, salz)
   // Blatt (5.5)
   let blatt: Sitzung['blatt'] = null
-  const blattIndex = slots.findIndex((x) => x.rolle === 'uebung')
-  if (blattIndex >= 0 && ergebnis[blattIndex]) {
-    const min = ergebnis[blattIndex]!.min
-    const erg = baueBlatt(c, { phase: o.phase, min, nr: o.nr, salz, gesperrt: benutzt, fokus: o.fokus, kern })
+  // Weg 3 mit Blatt, ohne eigenen Slot (10/15 Min.): die Mitmach-Seite ist eine Option der Wahl (P2, P8)
+  const wahlIndex = slots.findIndex((x) => x.rolle === 'wahl')
+  if (c.weg === 'leicht' && c.a.blatt === 'mit' && !slots.some((x) => x.rolle === 'uebung') && wahlIndex >= 0 && ergebnis[wahlIndex]) {
+    const w = ergebnis[wahlIndex]!
+    const erg = baueBlatt(c, { phase: 'leicht', min: w.min, nr: o.nr, salz, gesperrt: benutzt, optional: true })
     if (erg) {
       blatt = { titel: erg.titel, bausteine: erg.teile, ziel: false }
       for (const t of erg.teile) benutzt.add(t.ref)
+      const da = (w.wahl ?? []).filter((x) => x.ref === 'pg:da-sein')
+      const andere = (w.wahl ?? []).filter((x) => x.ref !== 'pg:da-sein').slice(0, 0)
+      const e = c.k.eintraege.get('pg:blatt')!
+      w.wahl = [...andere, { ref: e.id, h: e.h, min: w.min, t: `Mitmach-Seite: ${erg.titel}` }, ...da]
+      w.warum = [`Das Kind wählt: ${w.t ?? ''}, die Mitmach-Seite oder einfach da sein`, ...(w.warum ?? []).slice(1, 2)]
+    } else hinweise.push('Keine passende Mitmach-Seite – ohne Blatt geplant.')
+  }
+  const blattIndex = slots.findIndex((x) => x.rolle === 'uebung')
+  if (blattIndex >= 0 && ergebnis[blattIndex]) {
+    const min = ergebnis[blattIndex]!.min
+    const erg = baueBlatt(c, { phase: o.phase, min, nr: o.nr, salz, gesperrt: benutzt, fokus: o.fokus, kern, optional: c.weg === 'leicht' || min < 6 })
+    if (erg) {
+      blatt = { titel: erg.titel, bausteine: erg.teile, ziel: false }
+      for (const t of erg.teile) benutzt.add(t.ref)
+      hinweise.push(...erg.hinweise)
       const gruende = [...erg.bewertet.values()].flatMap((b) => warum(b, c, { phase: o.phase, nr: o.nr }))
       const top = [...new Set(gruende)].slice(0, 2)
       ergebnis[blattIndex] = { ...ergebnis[blattIndex]!, t: erg.titel, warum: top.length ? top : ['Blatt zum Ziel der Stunde'] }
     } else {
-      hinweise.push('Heute ohne Blatt: Es gibt zu wenig passende Blatt-Teile (Alter, Lesen, Schreiben).')
+      hinweise.push(c.weg === 'leicht' ? 'Keine passende Mitmach-Seite – ohne Blatt geplant.' : 'Kein passendes Blatt – ohne Blatt geplant: zu wenig passende Blatt-Teile für Ziel, Alter, Lesen und Schreiben.')
       // Slot mit einem Spiel oder Gespräch derselben Minuten füllen
       const liste = kandidaten(c, { rolle: 'spiel', min, phase: o.phase, nr: o.nr, salz: `${salz}|ersatz`, gesperrt: benutzt, vorher: o.vorher, formate })
       if (liste[0]) {

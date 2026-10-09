@@ -4,7 +4,7 @@
 import type { Baustein, Blatt, BlattInhalt, Bereich, Sprache as BlattSprache } from '../../blatt/typen'
 import type { BlattTeil, Bogen, KatalogEintrag, Layout, MikroBaustein, Plan, Profil, Rolle, Sprache } from '../typen'
 import { hash8, hash01, stufeAusAlter, stufenAbstand, istEldib } from './hilfen'
-import { bausteinInhalt, intern, ichSatz, type Katalog } from './katalog'
+import { bausteinInhalt, intern, zielSatz as zielSatzVon, type Katalog } from './katalog'
 import { setzeText, texte } from './inhalt'
 import { bewerte, NACHBAR, pruefe, rang, type Bewertet, type Kontext } from './regeln'
 import { seitenMasse, teilHoehe, verteile } from './seiten'
@@ -19,6 +19,7 @@ export const BLATT_BOGEN: Record<Bogen, Bogen[]> = {
   uebertragen: ['ueben', 'uebertragen', 'reflektieren'],
   reflektieren: ['wahrnehmen', 'uebertragen', 'reflektieren'],
 }
+const MITMACH_ARTEN = new Set(['labyrinth', 'suchbild', 'punkte_verbinden', 'laufweg', 'memory', 'klappbild', 'faedelkarte', 'bastelbogen', 'minibuch', 'anziehpuppe', 'schneiden_kleben', 'geo', 'atmen'])
 const BOGEN_REIHE: Bogen[] = ['wahrnehmen', 'verstehen', 'ueben', 'uebertragen', 'reflektieren']
 
 const TITEL: Record<Kompetenz, { kind: [string, string][]; jugend: [string, string][] }> = {
@@ -102,21 +103,21 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
       (o.kern && o.kern.eldib.some((x) => x.gewicht === 1 && e.eldib.some((y) => y.code === x.code && y.gewicht === 1)) ? 0.08 : 0) +
       (o.kern?.thema[0] && e.thema.includes(o.kern.thema[0]) ? 0.05 : 0) -
       // ein ganz anderes Thema als die des Kindes und des Kerns (Verliebtsein, KI …) passt selten aufs Blatt
-      (c.themen.size && e.thema.length && !e.thema.some((t) => c.themen.has(t) || o.kern?.thema.includes(t)) ? 0.06 : 0)
-    pool.push(bewerte(e, c, { phase: o.phase, fokus: o.fokus, bonus }))
+      (c.themen.size && e.thema.length && !e.thema.some((t) => c.themen.has(t) || o.kern?.thema.includes(t)) ? 0.06 : 0) +
+      // Mitmach-Seite (Weg 3): Rätsel, Labyrinth, Malen, Muster – nicht Schilder oder Formulare
+      (leicht ? (e.art.some((a) => MITMACH_ARTEN.has(a)) || e.format.includes('malen') ? 0.15 : 0) - (e.art.includes('karten') || e.schreibmenge >= 2 || /formular|schild|deinen namen/i.test(kurzTitel(k, e)) ? 0.15 : 0) : 0)
+    // Ziel ±2 Stufen im selben Bereich mitbewerten (Lockerungsleiter 2) – zählt nur, wenn Engeres fehlt
+    pool.push(bewerte(e, c, { phase: o.phase, fokus: o.fokus, bonus, locker: 2 }))
   }
   // Ein Blatt hat mindestens zwei Teile: was allein das Zeit- oder Seitenbudget füllt, kommt nicht in Frage
   const seite = seitenMasse(k, layout)
   const allein = (b: Bewertet) => !leicht && !o.optional && (b.e.dauer.typ > budget - 2 || teilHoehe(k, b.e.id, layout) > 0.8 * seite.erste * maxSeiten)
-  // erst das, was klar zum Ziel oder Thema gehört; nur wenn das zu wenig ist, auch Teile aus dem Bereich des Ziels
+  // erst das, was klar zum Ziel oder Thema gehört; reicht das nicht für ein Blatt, Stufe für Stufe weiter:
+  // klar passend → passend (Ziel ±1, Thema) → weit (Ziel ±2 im Bereich, Kompetenzfeld; mit Hinweis)
   const stark = (b: Bewertet) => b.f.ziel >= 0.5 || b.f.thema >= 0.7
+  const weit = (b: Bewertet) => b.f.ziel > 0 || b.f.thema > 0
   const starkPool = pool.filter((b) => !allein(b) && stark(b))
-  const passend = (leicht ? pool : starkPool.length >= 6 ? pool.filter((b) => stark(b) || b.e.bogen === 'reflektieren') : pool.filter((b) => relevant(b) || b.e.bogen === 'reflektieren')).filter((b) => !allein(b))
-  const kernPassend = leicht ? pool : pool.filter(relevant)
-  if (!o.optional && kernPassend.length < 3) {
-    hinweise.push('Für dieses Ziel gibt es in dieser Stufe kaum passende Blatt-Teile – heute ohne Blatt, oder im Baukasten suchen.')
-    return null
-  }
+  const stufen: [string, (b: Bewertet) => boolean][] = leicht ? [['alle', () => true]] : [['stark', stark], ['relevant', relevant], ['weit', weit]]
   const stellen: (Bogen | '*')[] = leicht ? ['*', '*'] : BLATT_BOGEN[o.phase as Bogen]
   const gewaehlt: Bewertet[] = []
   const reserve: string[] = []
@@ -128,65 +129,78 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
     const alle = [...gewaehlt, ...neu]
     const seiten = verteile(k, refs(alle), layout)
     if (seiten.length > maxSeiten || seiten[seiten.length - 1] > 1) return false
-    if (alle.reduce((s, b) => s + b.e.dauer.typ, 0) > budget && gewaehlt.length) return false
+    if (alle.reduce((s, b) => s + b.e.dauer.typ, 0) > budget && (gewaehlt.length || o.min < 6)) return false
     if (alle.filter((b) => (b.e as MikroBaustein).art[0] === 'aufgabe').length > maxAufgaben) return false
     // ein Rückblick (Smileys, Daumen) je Blatt genügt
     if (alle.filter((b) => (b.e as MikroBaustein).art.includes('rueckblick')).length > 1) return false
     // Karten zum Ausschneiden: eine Sorte je Blatt
     if (alle.filter((b) => (b.e as MikroBaustein).art.some((a) => a === 'karten' || a === 'schneiden_kleben' || a === 'memory')).length > 1) return false
-    const jeQuelle = new Map<string, number>()
-    for (const b of alle) jeQuelle.set((b.e as MikroBaustein).quelle.blatt, (jeQuelle.get((b.e as MikroBaustein).quelle.blatt) ?? 0) + 1)
     // höchstens zwei Pakete je Quellblatt; eine Geschichte, die ein Paket braucht, zählt nicht mit
     const abhaengig = new Set(alle.flatMap((b) => (b.e as MikroBaustein).braucht ?? []))
-    jeQuelle.clear()
+    const jeQuelle = new Map<string, number>()
     for (const b of alle) if (!abhaengig.has(b.e.id)) jeQuelle.set((b.e as MikroBaustein).quelle.blatt, (jeQuelle.get((b.e as MikroBaustein).quelle.blatt) ?? 0) + 1)
     if ([...jeQuelle.values()].some((n) => n > 2)) return false
     return true
   }
   const salz = o.salz + '|blatt'
-  // gierig je Stelle; bleibt nach dem ersten Teil kein Platz (große Bildkarte füllt die Seite), ohne ihn neu versuchen
-  const verboten = new Set<string>()
-  const versuche: { teile: Bewertet[]; gruppe: 'spielschule' | 'toolbox' | null }[] = []
-  const ziel = leicht || o.optional ? 1 : o.min >= 12 ? 3 : 2
-  for (let versuch = 0; versuch < 5; versuch++) {
-    gewaehlt.length = 0
-    gruppe = null
-    for (const [i, stelle] of stellen.entries()) {
-      const nachbar = stelle === '*' ? [] : NACHBAR[stelle]
-      let kand = passend.filter((b) => !verboten.has(b.e.id) && (stelle === '*' || b.e.bogen === stelle))
-      if (stelle !== '*' && kand.filter((b) => !gewaehlt.includes(b)).length < 3) kand = passend.filter((b) => !verboten.has(b.e.id) && (b.e.bogen === stelle || nachbar.includes(b.e.bogen!)))
-      kand = kand.filter((b) => !gewaehlt.includes(b) && (!gruppe || urheberGruppe(c, b.e as MikroBaustein) === gruppe))
-      // Abwechslung: Format schon auf dem Blatt → weniger; derselbe Bogen wie die Stelle → mehr
-      const formate = new Set(gewaehlt.flatMap((b) => b.e.format))
-      // auf einer Seite (C1/C2, kurze Slots) zählt der Platz: kleinere Teile lassen Raum für einen dritten
-      const mitPlatz = (b: Bewertet) => {
-        const x = mitStelle(b, stelle, formate, gewaehlt)
-        return maxSeiten === 1 ? { ...x, s: x.s - 0.08 * Math.min(1, teilHoehe(k, b.e.id, layout) / seite.erste) } : x
+  const ziel = leicht || o.optional ? (o.min >= 6 && !leicht ? 2 : 1) : o.min >= 12 ? 3 : 2
+  const mindest = leicht || o.optional ? 1 : 2
+  let passend: Bewertet[] = []
+  let stufe = ''
+  for (const [name, test] of stufen) {
+    if (name === 'stark' && starkPool.length < 6) continue
+    const kernPassend = pool.filter((b) => test(b) && !allein(b))
+    if (!leicht && !o.optional && kernPassend.length < 3) continue
+    passend = pool.filter((b) => (test(b) || (!leicht && b.e.bogen === 'reflektieren')) && !allein(b))
+    // gierig je Stelle; bleibt nach dem ersten Teil kein Platz (große Bildkarte füllt die Seite), ohne ihn neu versuchen
+    const verboten = new Set<string>()
+    const versuche: { teile: Bewertet[]; gruppe: 'spielschule' | 'toolbox' | null }[] = []
+    for (let versuch = 0; versuch < 5; versuch++) {
+      gewaehlt.length = 0
+      gruppe = null
+      for (const [i, stelle] of stellen.entries()) {
+        const nachbar = stelle === '*' ? [] : NACHBAR[stelle]
+        let kand = passend.filter((b) => !verboten.has(b.e.id) && (stelle === '*' || b.e.bogen === stelle))
+        if (stelle !== '*' && kand.filter((b) => !gewaehlt.includes(b)).length < 3) kand = passend.filter((b) => !verboten.has(b.e.id) && (b.e.bogen === stelle || nachbar.includes(b.e.bogen!)))
+        kand = kand.filter((b) => !gewaehlt.includes(b) && (!gruppe || urheberGruppe(c, b.e as MikroBaustein) === gruppe))
+        // Abwechslung: Format schon auf dem Blatt → weniger; derselbe Bogen wie die Stelle → mehr
+        const formate = new Set(gewaehlt.flatMap((b) => b.e.format))
+        // auf einer Seite (C1/C2, kurze Slots) zählt der Platz: kleinere Teile lassen Raum für einen dritten
+        const mitPlatz = (b: Bewertet) => {
+          const x = mitStelle(b, stelle, formate, gewaehlt)
+          return maxSeiten === 1 ? { ...x, s: x.s - 0.08 * Math.min(1, teilHoehe(k, b.e.id, layout) / seite.erste) } : x
+        }
+        kand.sort((a, b) => rang(mitPlatz(a), mitPlatz(b), `${salz}|${i}`))
+        for (const b of kand) {
+          const e = b.e as MikroBaustein
+          const deps = (e.braucht ?? []).filter((d) => !gewaehlt.some((x) => x.e.id === d)).map((d) => nurAbhaengig.get(d) ?? pool.find((x) => x.e.id === d))
+          if (deps.some((d) => !d)) continue
+          if (!passt([...(deps as Bewertet[]), b])) continue
+          gewaehlt.push(...(deps as Bewertet[]), b)
+          gruppe ??= urheberGruppe(c, e)
+          break
+        }
       }
-      kand.sort((a, b) => rang(mitPlatz(a), mitPlatz(b), `${salz}|${i}`))
-      for (const b of kand) {
-        const e = b.e as MikroBaustein
-        const deps = (e.braucht ?? []).filter((d) => !gewaehlt.some((x) => x.e.id === d)).map((d) => nurAbhaengig.get(d) ?? pool.find((x) => x.e.id === d))
-        if (deps.some((d) => !d)) continue
-        if (!passt([...(deps as Bewertet[]), b])) continue
-        gewaehlt.push(...(deps as Bewertet[]), b)
-        gruppe ??= urheberGruppe(c, e)
-        break
-      }
+      versuche.push({ teile: [...gewaehlt], gruppe })
+      if (gewaehlt.length >= ziel || !gewaehlt.length) break
+      verboten.add(gewaehlt[0].e.id)
     }
-    versuche.push({ teile: [...gewaehlt], gruppe })
-    if (gewaehlt.length >= ziel || !gewaehlt.length) break
-    verboten.add(gewaehlt[0].e.id)
+    // bester Versuch: mindestens zwei Teile, bei längerem Slot lieber drei; dann die höhere Summe der Werte
+    const guete = (v: (typeof versuche)[number]) => Math.min(ziel, v.teile.length) * 10 + v.teile.reduce((x, b) => x + b.s, 0)
+    const bester = versuche.reduce((a, b) => (guete(b) > guete(a) ? b : a), versuche[0])
+    gewaehlt.splice(0, gewaehlt.length, ...bester.teile)
+    gruppe = bester.gruppe
+    if (gewaehlt.length >= mindest) {
+      stufe = name
+      break
+    }
   }
-  // bester Versuch: mindestens zwei Teile, bei längerem Slot lieber drei; dann die höhere Summe der Werte
-  const guete = (v: (typeof versuche)[number]) => Math.min(ziel, v.teile.length) * 10 + v.teile.reduce((x, b) => x + b.s, 0)
-  const bester = versuche.reduce((a, b) => (guete(b) > guete(a) ? b : a), versuche[0])
-  gewaehlt.splice(0, gewaehlt.length, ...bester.teile)
-  gruppe = bester.gruppe
-  if (!gewaehlt.length || (!leicht && gewaehlt.length < 2 && !o.optional)) {
+  if (gewaehlt.length < mindest) {
+    gewaehlt.length = 0
     hinweise.push('Zu wenig passende Blatt-Teile für diese Sitzung – heute ohne Blatt, oder im Baukasten suchen.')
     return null
   }
+  if (stufe === 'weit') hinweise.push('Blatt gelockert: Teile aus dem Bereich des Ziels (nächste Stufen), nicht genau zum Ziel.')
   // zu wenig für den Slot (Σ Minuten < Hälfte): mit passenden Teilen anderer Stellen auffüllen
   if (!leicht && !o.optional) {
     const summe = () => gewaehlt.reduce((x, b) => x + b.e.dauer.typ, 0)
@@ -367,7 +381,7 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
   const { bereich, thema } = haupt ? (alleSpielschule ? { bereich: 'spielschule' as Bereich, thema: haupt.thema } : bereichFuer(haupt.bereich === 'spielschule' ? { bereich: 'gefuehle', thema: 'erkennen' } : haupt)) : { bereich: 'gefuehle' as Bereich, thema: 'erkennen' }
   const titel = s?.blatt?.titel ?? 'Mein Blatt'
   const zielCode = plan.ziele.find(istEldib)
-  const zielSatz = zielCode ? (p.ziele.find((z) => z.code === zielCode)?.ich ?? ichSatz(k, zielCode)) : undefined
+  const zielSatz = zielCode ? zielSatzVon(k, p, zielCode, sprache) : undefined
   // „Mein Ziel“ nur auf Wunsch und nie bei Jugendlichen (E-M13); ohne Ziel keine Zeile (T-M5)
   const mitZiel = !!s?.blatt?.ziel && alter < 12 && !!zielSatz
   const inhalt: BlattInhalt = {
