@@ -5,7 +5,7 @@
 import type { Bogen, Einzeltauglich, Merkmale, MikroBaustein, Rolle, Stufe, Zielgruppe } from '../typen'
 import type { Blatt } from '../../blatt/typen'
 import type { SchrittMeta } from './format'
-import { KATHARSIS_RE, KOMPETENZ_NAME, type Kompetenz } from './vokabular'
+import { KATHARSIS_RE, KOMPETENZ_NAME, KURSVERWEIS_RE, type Kompetenz } from './vokabular'
 import { STUFE_ALTER } from './hilfen'
 import { paketBausteine, texte } from './inhalt'
 
@@ -44,7 +44,9 @@ export interface Beschriftung {
   einzeltauglich?: Einzeltauglich
   /** nur Stundenschritte, nur mit einzeltauglich „angepasst“: so geht es mit einem Kind (DE; FR, wenn die Quelle FR hat) */
   einzelvariante?: Einzelvariante & { fr?: Einzelvariante }
-  /** nur Mikro-Bausteine: Text-Pfad im Paket → Text ohne Figurenbezug */
+  /** Text-Pfad → Text ohne Figuren- oder Kursbezug. Bausteine: Pfade im Paket (`0.text`, `1.items.2`); Schritte: `titel`,
+   *  `text`, `sagen.<n>`, `wennEsKippt`, `achtung`, `vorbereitung`, `elternbrief`, `quelle`, dazu `fr.titel`, `fr.text`,
+   *  `fr.sagen.<n>`, `fr.wennEsKippt` (leer = entfällt; nicht bei Titel und Text) */
   allgemein?: Record<string, string>
   zielgruppe?: Zielgruppe
   /** vollständige Menge: was fehlt, ist false */
@@ -100,9 +102,80 @@ export function kontextBaustein(b: Pick<MikroBaustein, 'h' | 'stufen' | 'sprache
   }
 }
 
+/** Texte eines Stundenschritts, wie sie aus der Quelle kommen (Teil von `Stundenschritt`). */
+export interface SchrittTexte {
+  quelle?: { titel: string }
+  titel: string
+  text: string
+  sagen?: string[]
+  wennEsKippt?: string
+  achtung?: string
+  vorbereitung?: string
+  elternbrief?: string
+  fr?: { titel: string; text: string; sagen?: string[]; wennEsKippt?: string; einzelvariante?: { text: string; sagen?: string[] } }
+}
+
+/** Pfade, die `allgemein` bei einem Stundenschritt ersetzen darf → Originaltext. */
+export function schrittTextPfade(t: SchrittTexte): Map<string, string> {
+  const m = new Map<string, string>()
+  const setze = (pfad: string, x: string | undefined) => {
+    if (x) m.set(pfad, x)
+  }
+  setze('quelle', t.quelle?.titel)
+  setze('titel', t.titel)
+  setze('text', t.text)
+  ;(t.sagen ?? []).forEach((x, i) => setze(`sagen.${i}`, x))
+  setze('wennEsKippt', t.wennEsKippt)
+  setze('achtung', t.achtung)
+  setze('vorbereitung', t.vorbereitung)
+  setze('elternbrief', t.elternbrief)
+  if (t.fr) {
+    setze('fr.titel', t.fr.titel)
+    setze('fr.text', t.fr.text)
+    ;(t.fr.sagen ?? []).forEach((x, i) => setze(`fr.sagen.${i}`, x))
+    setze('fr.wennEsKippt', t.fr.wennEsKippt)
+  }
+  return m
+}
+
+/** `allgemein` auf die Texte eines Stundenschritts anwenden (Katalog): ersetzt die genannten Felder, „“ = entfällt. */
+export function schrittAllgemein<T extends SchrittTexte>(t: T, ag: Record<string, string> | undefined): T {
+  if (!ag || !Object.keys(ag).length) return t
+  const neu: T = { ...t, ...(t.quelle ? { quelle: { ...t.quelle } } : {}), ...(t.sagen ? { sagen: [...t.sagen] } : {}), ...(t.fr ? { fr: { ...t.fr, ...(t.fr.sagen ? { sagen: [...t.fr.sagen] } : {}) } } : {}) }
+  const leerSagen = new Set<string>()
+  for (const [pfad, text] of Object.entries(ag)) {
+    const [a, b, c] = pfad.split('.')
+    const ziel = (a === 'fr' ? neu.fr : neu) as Record<string, unknown> | undefined
+    const feld = a === 'fr' ? b : a
+    const nr = a === 'fr' ? c : b
+    if (!ziel) continue
+    if (feld === 'quelle' && neu.quelle) neu.quelle.titel = text || neu.quelle.titel
+    else if (feld === 'sagen' && nr !== undefined && Array.isArray(ziel.sagen) && typeof ziel.sagen[Number(nr)] === 'string') {
+      ziel.sagen[Number(nr)] = text
+      if (!text) leerSagen.add(a)
+    } else if (['titel', 'text'].includes(feld) && text) ziel[feld] = text
+    else if (['wennEsKippt', 'achtung', 'vorbereitung', 'elternbrief'].includes(feld) && typeof ziel[feld] === 'string') {
+      if (text) ziel[feld] = text
+      else delete ziel[feld]
+    }
+  }
+  for (const a of leerSagen) {
+    const ziel = (a === 'fr' ? neu.fr : neu) as { sagen?: string[] }
+    ziel.sagen = (ziel.sagen ?? []).filter(Boolean)
+    if (!ziel.sagen.length) delete ziel.sagen
+  }
+  return neu
+}
+
+/** `allgemein` eines Bausteins: Pfade, deren Original auf die Kursstruktur verweist, gelten immer (die anderen –
+ *  Fassungen ohne Figurenbezug – nur, wenn die Geschichte fehlt). */
+export function bausteinOhneKursverweis(ag: Record<string, string> | undefined, original: Map<string, string>): [string, string][] {
+  return Object.entries(ag ?? {}).filter(([pfad]) => KURSVERWEIS_RE.test(original.get(pfad) ?? ''))
+}
+
 /** Kontext eines Stundenschritts (Texte aus der Quelle). */
-export function kontextSchritt(s: { h: string; dauer: { typ: number }; mehrtaegig?: boolean; rolle: Rolle[] }, t: { titel: string; text: string; sagen?: string[]; fr?: unknown }): EintragKontext {
-  return { typ: 'schritt', h: s.h, fr: !!t.fr, text: [t.titel, t.text, ...(t.sagen ?? [])].join(' '), dauerTyp: s.dauer.typ, mehrtaegig: !!s.mehrtaegig, rolle: s.rolle }
+export function kontextSchritt(s: { h: string; dauer: { typ: number }; mehrtaegig?: boolean; rolle: Rolle[] }, t: SchrittTexte): EintragKontext {
+  return { typ: 'schritt', h: s.h, fr: !!t.fr, textPfade: schrittTextPfade(t), text: [t.titel, t.text, ...(t.sagen ?? [])].join(' '), dauerTyp: s.dauer.typ, mehrtaegig: !!s.mehrtaegig, rolle: s.rolle }
 }
 
 /** Text zu Suizid/Selbstverletzung bzw. zu Übergriffen (wie Prüfregel 16). */
@@ -132,6 +205,7 @@ function pruefeVariante(v: unknown, wo: string, f: string[]): void {
   const alles = [v.text, ...(Array.isArray(v.sagen) ? v.sagen : [])].join(' ')
   if (KATHARSIS_RE.test(alles)) f.push(`${wo}: Katharsis („Wut rauslassen“ o. Ä.) – auf Regulation umschreiben`)
   if (CODE_RE.test(alles)) f.push(`${wo}: Code oder Etikett im Text`)
+  if (KURSVERWEIS_RE.test(alles)) f.push(`${wo}: Verweis auf die Kursstruktur („Einheit 20“, „letzte Woche ging es um …“) – ohne Verweis formulieren`)
 }
 
 /**
@@ -205,17 +279,19 @@ export function pruefeBeschriftung(id: string, roh: unknown, ctx: EintragKontext
   }
   if ('allgemein' in b) {
     const a = b.allgemein
-    if (ctx.typ !== 'baustein') f.push('allgemein nur für Mikro-Bausteine')
-    else if (!istObjekt(a) || !Object.keys(a).length) f.push('allgemein: { "<pfad>": "Text" }')
+    if (!istObjekt(a) || !Object.keys(a).length) f.push('allgemein: { "<pfad>": "Text" }')
     else
       for (const [pfad, t] of Object.entries(a)) {
         const orig = ctx.textPfade?.get(pfad)
-        if (ctx.textPfade && orig === undefined) f.push(`allgemein: Pfad „${pfad}“ gibt es im Paket nicht`)
-        if (!istText(t)) f.push(`allgemein.${pfad}: leer`)
-        else {
+        if (ctx.textPfade && orig === undefined) f.push(`allgemein: Pfad „${pfad}“ gibt es ${ctx.typ === 'baustein' ? 'im Paket' : 'im Schritt'} nicht`)
+        // bei Schritten darf ein Satz, ein Hinweis oder die Vorbereitung entfallen (leer), Titel und Text nicht
+        const darfLeer = ctx.typ === 'schritt' && !/^(fr\.)?(titel|text|quelle)$/.test(pfad)
+        if (typeof t !== 'string' || (!t.trim() && !(darfLeer && t === ''))) f.push(`allgemein.${pfad}: leer`)
+        else if (t) {
           if (orig !== undefined && t.length > Math.max(60, Math.round(orig.length * 1.5))) f.push(`allgemein.${pfad} zu lang (${t.length} Zeichen, Original ${orig.length})`)
           if (orig !== undefined && t === orig) f.push(`allgemein.${pfad} gleich dem Original`)
           if (KATHARSIS_RE.test(t) || CODE_RE.test(t)) f.push(`allgemein.${pfad}: Katharsis oder Code im Text`)
+          if (KURSVERWEIS_RE.test(t)) f.push(`allgemein.${pfad}: noch ein Verweis auf die Kursstruktur`)
         }
       }
   }
@@ -292,7 +368,7 @@ export function wendeBeschriftungAn(e: MikroBaustein | SchrittMeta, b: Beschrift
     s.einzelvariante = { text: b.einzelvariante.text, ...(b.einzelvariante.sagen ? { sagen: [...b.einzelvariante.sagen] } : {}) }
     if (b.einzelvariante.fr) s.einzelvarianteFr = { text: b.einzelvariante.fr.text, ...(b.einzelvariante.fr.sagen ? { sagen: [...b.einzelvariante.fr.sagen] } : {}) }
   }
-  if (b.allgemein && opt.baustein) (e as MikroBaustein).allgemein = { ...b.allgemein }
+  if (b.allgemein) (e as MikroBaustein | SchrittMeta).allgemein = { ...b.allgemein }
   if (typeof b.mehrtaegig === 'boolean') {
     if (b.mehrtaegig) e.mehrtaegig = true
     else delete e.mehrtaegig

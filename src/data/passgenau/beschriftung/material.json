@@ -5539,6 +5539,9 @@
     "Mir fällt auf, dass du …"
    ]
   },
+  "allgemein": {
+   "achtung": "Differenzierung: Schreibungeübten Jugendlichen Sprach-Memos, Symbole oder Fotos als Belege erlauben - es zählt der Inhalt, nicht die Schreibmenge. Sensibler Punkt Krisen: klar ansagen, dass niemand etwas Belastendes teilen muss; ein 'kleines' Beispiel genügt, und die Leitung achtet darauf, dass keine Selbstoffenbarung im Plenum erzwungen wird. Bei Hinweisen auf ernste Belastungen das Tandem nicht überfordern, sondern Einzelgespräch und ggf. Beratungsstelle anbahnen. Die strenge Regel 'keine Behauptung ohne Beleg' bewusst halten - sie verhindert sowohl Selbstüberhöhung als auch leere Floskeln."
+  },
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,
@@ -17117,5 +17120,312 @@
   "von": "agent",
   "sicher": 0.8,
   "h": "e59493f8"
+ },
+ "m:unsere-klassen-chronik-geschichten-die-uns-verbinden:0": {
+  "allgemein": {
+   "text": "Die Lehrperson bringt ein echtes Buch oder Album mit und stellt das Projekt vor: 'Wir machen unser eigenes Buch - eine Chronik über UNSERE Klasse. Darin kommt jeder vor, und wir halten unsere gemeinsamen Geschichten fest.' Gemeinsam wird überlegt, was in so eine Chronik gehört: ein Porträt von jedem Kind, unsere gemeinsamen Erlebnisse, unsere Erfolge, lustige Momente, vielleicht ein Klassen-Steckbrief. Die Klasse 'gründet' eine Redaktion: Es werden Aufgabenbereiche besprochen (Reporter, Gestalter, Sammler von Wir-Momenten) und ein Buchtitel sowie ein Deckblatt-Entwurf gemeinsam entwickelt. Besonders wichtig ist die Grundregel des Projekts, die hier eingeführt wird: 'Wir schreiben nicht über uns selbst, sondern übereinander - und immer freundlich und wertschätzend.' So wird von Anfang an klar, dass es ums aufmerksame Hinsehen auf den anderen geht. Zum Schluss werden Reporter-Tandems gelost (bewusst gemischt), die sich gegenseitig porträtieren."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "2034ed92"
+ },
+ "m:vertrauens-werkstatt-wir-bauen-die-bruecke-der-klasse:0": {
+  "allgemein": {
+   "text": "Versammelt euch im Kreis. Zeige Bilder von Brücken (Holzsteg, Hängebrücke, Steinbogen) und frage: 'Was passiert, wenn nur ein Brett fehlt? Würdet ihr drübergehen?' Leitet gemeinsam ab: Eine Brücke trägt nur, wenn alle Teile zusammenhalten. Übertragt das auf die Klasse: 'Worauf müssen wir uns bei euch verlassen können, damit die Klasse trägt?' Sammelt erste Ideen (zuhören, helfen, sich an Absprachen halten) auf einem Plakat 'Was uns trägt'. Stelle das Projektziel vor: Ihr baut gemeinsam eine echte, begehbare oder belastbare Brücke aus Material – und nehmt euch dabei selbst unter die Lupe."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "90179a2c"
+ },
+ "m:staerken-tresor-mein-persoenliches-wertvoll-archiv:1": {
+  "allgemein": {
+   "text": "Verteilt das Arbeitsblatt mit vier Lebensbereichen (Schule/Lernen, Freundschaft/Familie, Hobby/Sport/Kunst, Alltag/Verantwortung). Aufgabe: Jede:r notiert in jedem Feld mindestens eine Sache, die ihm gut gelingt oder die andere an ihm schätzen. Anschließend wird daraus eine konkrete Stärke abgeleitet (z. B. 'Ich höre Freund:innen zu, wenn es ihnen schlecht geht' → Stärke: 'verlässlich, einfühlsam'). Gebt als Hausauftrag mit, für mindestens drei Stärken einen echten Beleg in den Tresor zu legen: ein Gegenstand, ein Ausdruck, eine Notiz, eine erinnerte Situation. Betont: Auch kleine, alltägliche Belege zählen – es geht nicht um Pokale."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "8cdf7a00"
+ },
+ "m:wirkungs-spuren-was-ich-fuer-andere-bedeute:0": {
+  "allgemein": {
+   "text": "Startet mit einem Gedankenexperiment im Plenum: 'Stellt euch vor, ihr wärt eine Woche lang nicht da gewesen. Was hätte gefehlt – für die Klasse, für Freund:innen, zu Hause?' Lasst die Lernenden zunächst still nachdenken und dann freiwillig erste Beispiele nennen. Erklärt das Bild der 'Wirkungs-Spuren': Wie Fußspuren im Sand hinterlassen wir bei anderen Spuren – ein Trost, ein gemeinsames Lachen, eine Hilfe, ein verlässliches Dasein. Die meisten dieser Spuren sehen wir selbst gar nicht. Stellt das Projektziel vor: Jede:r macht die eigenen Wirkungs-Spuren sichtbar und erlebt dadurch den eigenen Wert für andere."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "565cd3b3"
+ },
+ "m:die-fuehl-galerie-wir-bauen-einen-tast-pfad-fuer-die-haende:0": {
+  "allgemein": {
+   "text": "Die Klasse sitzt im Kreis. Die Leitung lässt ein einfaches Naturding (z. B. einen Tannenzapfen, einen glatten Stein, ein Stück Moos) langsam herumgehen - mit der klaren Bitte: \"Schließt die Augen und fühlt ganz langsam. Nicht raten, nur spüren. Was fühlt eure Hand?\" Anschließend sammeln die Kinder Wörter fürs Fühlen (rau, weich, kühl, glatt, stachelig, warm) an der Tafel. Die Leitung erklärt das Projekt: \"Wir bauen zusammen eine Fühl-Galerie - einen Weg mit vielen Stationen, an denen man mit den Händen und Füßen Sachen erspüren kann. Aber bei uns geht es nicht um schnell, sondern um ganz genau hinspüren.\" Zum Abschluss überlegt die Klasse gemeinsam, welche Stationen es geben könnte, und die Leitung notiert die Ideen."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "046b2fb0"
+ },
+ "m:stopp-heisst-stopp-eine-aufklaerungs-kampagne-der-klasse-gegen-grenzueberschreitungen:2": {
+  "allgemein": {
+   "text": "Die Klasse teilt sich in Redaktionsteams, jedes wählt ein Kampagnen-Produkt: Plakat-Serie, kurzes Hörspiel oder Erklär-Video, Slogan-/Sticker-Reihe oder ein interaktives Mini-Quiz für die Pausenhalle. Jedes Team plant zuerst mit einem einfachen Steckbrief (Arbeitsblatt): Welche Kernbotschaft transportiert ihr? Wen wollt ihr erreichen? Welche Wirkung soll entstehen? Dann beginnen die Teams mit Entwürfen - Storyboard, Plakat-Skizze, Sprechtext, Quizfragen. Die Leitung coacht jedes Team gezielt: Ist die Botschaft sofort verständlich? Wird niemand vorgeführt oder bloßgestellt? Ist die Darstellung von Übergriffen angemessen (andeutend, nicht reißerisch)? Besonders wird darauf geachtet, dass die Produkte ermutigen und Wege zeigen, statt nur Angst zu machen. Am Ende steht von jedem Team ein klarer Entwurf, der später umgesetzt wird."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "3dfa2591"
+ },
+ "m:begegnungs-tandems-drei-wochen-mit-jemandem-den-ich-kaum-kenne:0": {
+  "allgemein": {
+   "vorbereitung": "Tandem-Pässe (ein Faltheft pro Kind); Interview-Karten mit Kennenlern-Fragen; Material für die Wochen-Werke (Papier, Stifte, Scheren); Anerkennungs-Karten; große 'Verbindungs-Wand' (Plakat) mit Namen/Punkten und Faden oder Klebepunkten für neue Verbindungen; optional ein Soziogramm-Bild für den Einstieg."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "3bc78454"
+ },
+ "m:begegnungs-tandems-drei-wochen-mit-jemandem-den-ich-kaum-kenne:1": {
+  "allgemein": {
+   "vorbereitung": "Tandem-Pässe (ein Faltheft pro Kind); Interview-Karten mit Kennenlern-Fragen; Material für die Wochen-Werke (Papier, Stifte, Scheren); Anerkennungs-Karten; große 'Verbindungs-Wand' (Plakat) mit Namen/Punkten und Faden oder Klebepunkten für neue Verbindungen; optional ein Soziogramm-Bild für den Einstieg."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "f290695e"
+ },
+ "m:begegnungs-tandems-drei-wochen-mit-jemandem-den-ich-kaum-kenne:2": {
+  "allgemein": {
+   "vorbereitung": "Tandem-Pässe (ein Faltheft pro Kind); Interview-Karten mit Kennenlern-Fragen; Material für die Wochen-Werke (Papier, Stifte, Scheren); Anerkennungs-Karten; große 'Verbindungs-Wand' (Plakat) mit Namen/Punkten und Faden oder Klebepunkten für neue Verbindungen; optional ein Soziogramm-Bild für den Einstieg."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "8277d1a7"
+ },
+ "m:begegnungs-tandems-drei-wochen-mit-jemandem-den-ich-kaum-kenne:3": {
+  "allgemein": {
+   "vorbereitung": "Tandem-Pässe (ein Faltheft pro Kind); Interview-Karten mit Kennenlern-Fragen; Material für die Wochen-Werke (Papier, Stifte, Scheren); Anerkennungs-Karten; große 'Verbindungs-Wand' (Plakat) mit Namen/Punkten und Faden oder Klebepunkten für neue Verbindungen; optional ein Soziogramm-Bild für den Einstieg."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "130411ed"
+ },
+ "m:begegnungs-tandems-drei-wochen-mit-jemandem-den-ich-kaum-kenne:4": {
+  "allgemein": {
+   "vorbereitung": "Tandem-Pässe (ein Faltheft pro Kind); Interview-Karten mit Kennenlern-Fragen; Material für die Wochen-Werke (Papier, Stifte, Scheren); Anerkennungs-Karten; große 'Verbindungs-Wand' (Plakat) mit Namen/Punkten und Faden oder Klebepunkten für neue Verbindungen; optional ein Soziogramm-Bild für den Einstieg."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "688d3601"
+ },
+ "m:die-wert-werkstatt-in-sechs-wochen-mein-eigenes-staerken-portfolio-bauen:0": {
+  "allgemein": {
+   "achtung": "Differenzierung: Schreibungeübten Jugendlichen Sprach-Memos, Symbole oder Fotos als Belege erlauben - es zählt der Inhalt, nicht die Schreibmenge. Sensibler Punkt Krisen: klar ansagen, dass niemand etwas Belastendes teilen muss; ein 'kleines' Beispiel genügt, und die Leitung achtet darauf, dass keine Selbstoffenbarung im Plenum erzwungen wird. Bei Hinweisen auf ernste Belastungen das Tandem nicht überfordern, sondern Einzelgespräch und ggf. Beratungsstelle anbahnen. Die strenge Regel 'keine Behauptung ohne Beleg' bewusst halten - sie verhindert sowohl Selbstüberhöhung als auch leere Floskeln."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "ac7c1a14"
+ },
+ "m:die-wert-werkstatt-in-sechs-wochen-mein-eigenes-staerken-portfolio-bauen:2": {
+  "allgemein": {
+   "achtung": "Differenzierung: Schreibungeübten Jugendlichen Sprach-Memos, Symbole oder Fotos als Belege erlauben - es zählt der Inhalt, nicht die Schreibmenge. Sensibler Punkt Krisen: klar ansagen, dass niemand etwas Belastendes teilen muss; ein 'kleines' Beispiel genügt, und die Leitung achtet darauf, dass keine Selbstoffenbarung im Plenum erzwungen wird. Bei Hinweisen auf ernste Belastungen das Tandem nicht überfordern, sondern Einzelgespräch und ggf. Beratungsstelle anbahnen. Die strenge Regel 'keine Behauptung ohne Beleg' bewusst halten - sie verhindert sowohl Selbstüberhöhung als auch leere Floskeln."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "bfb4be8c"
+ },
+ "m:die-wert-werkstatt-in-sechs-wochen-mein-eigenes-staerken-portfolio-bauen:3": {
+  "allgemein": {
+   "achtung": "Differenzierung: Schreibungeübten Jugendlichen Sprach-Memos, Symbole oder Fotos als Belege erlauben - es zählt der Inhalt, nicht die Schreibmenge. Sensibler Punkt Krisen: klar ansagen, dass niemand etwas Belastendes teilen muss; ein 'kleines' Beispiel genügt, und die Leitung achtet darauf, dass keine Selbstoffenbarung im Plenum erzwungen wird. Bei Hinweisen auf ernste Belastungen das Tandem nicht überfordern, sondern Einzelgespräch und ggf. Beratungsstelle anbahnen. Die strenge Regel 'keine Behauptung ohne Beleg' bewusst halten - sie verhindert sowohl Selbstüberhöhung als auch leere Floskeln."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "27d7171a"
+ },
+ "m:die-wert-werkstatt-in-sechs-wochen-mein-eigenes-staerken-portfolio-bauen:4": {
+  "allgemein": {
+   "achtung": "Differenzierung: Schreibungeübten Jugendlichen Sprach-Memos, Symbole oder Fotos als Belege erlauben - es zählt der Inhalt, nicht die Schreibmenge. Sensibler Punkt Krisen: klar ansagen, dass niemand etwas Belastendes teilen muss; ein 'kleines' Beispiel genügt, und die Leitung achtet darauf, dass keine Selbstoffenbarung im Plenum erzwungen wird. Bei Hinweisen auf ernste Belastungen das Tandem nicht überfordern, sondern Einzelgespräch und ggf. Beratungsstelle anbahnen. Die strenge Regel 'keine Behauptung ohne Beleg' bewusst halten - sie verhindert sowohl Selbstüberhöhung als auch leere Floskeln.",
+   "text": "Zum Abschluss wählt jede:r aus dem vollen Portfolio die DREI Belege aus, die am meisten über ihn/sie aussagen - je einen aus den Bereichen Können, Durchhalten und Werte. Diese drei werden auf einer Präsentationsseite zusammengestellt. Die Gruppe baut eine 'Vernissage': Die Hefte liegen aufgeschlagen an Tischen, alle gehen erst still herum und betrachten (Regel: nur wertschätzende Notizzettel hinterlassen, nie abwertende). Dann stellt jede:r seinem Tandem die drei Belege in 2-3 Minuten vor - mit der Übe-Regel: 'sachlich benennen, weder angeben noch kleinreden' ('Ich kann..., das zeigt sich daran, dass...'). Die Leitung schließt mit einer Reflexion im Kreis: 'Was hat sich in deinem Blick auf dich selbst verändert?' und einer Frage in die Zukunft: 'Wann holst du dein Portfolio das nächste Mal hervor - an einem guten oder an einem schlechten Tag?' Jede:r formuliert einen Satz, wie er/sie sich an einem selbstzweifelnden Tag an die eigenen Belege erinnern will."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "26f1153d"
+ },
+ "m:die-gerechtigkeits-waage-der-klasse-wann-ist-gleich-wirklich-gerecht:1": {
+  "allgemein": {
+   "text": "Zunächst klärt die Leitung mit der Klasse drei Begriffe an einem anschaulichen Bild (z. B. drei verschieden große Kinder, die über einen Zaun ein Spiel sehen wollen): GLEICH = jede:r bekommt eine gleich hohe Kiste, aber das kleinste Kind sieht trotzdem nichts. GERECHT = jede:r bekommt so viele Kisten, dass alle gleich gut sehen. FAIR = die Regeln gelten für alle und niemand wird benachteiligt. Diese drei Begriffe werden als feste Karten an der Waage befestigt. Dann bauen oder gestalten die Forscher-Teams ihre eigene kleine Gerechtigkeits-Waage (z. B. ein Kleiderbügel mit zwei Bechern, oder eine gemalte Balkenwaage auf Tonpapier mit zwei Schalen 'gerecht' / 'ungerecht'). Jede Gruppe einigt sich außerdem auf drei Prüf-Fragen, die man an jeden Fall stellt, z. B.: 'Braucht jemand mehr als andere - und warum? Gelten die Regeln für alle? Wer hat einen Nachteil und ist das in Ordnung?' Die Prüf-Fragen werden auf der Gruppentafel notiert und sind das Hauptwerkzeug für die weitere Arbeit."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "772dfea4"
+ },
+ "m:die-gerechtigkeits-waage-der-klasse-wann-ist-gleich-wirklich-gerecht:2": {
+  "allgemein": {
+   "text": "Jede Gruppe zieht zwei bis drei vorbereitete Fallkarten mit echten oder realistischen Klassen-Situationen, z. B.: 'Ein Kind, das schon lesen kann, bekommt schwerere Aufgaben als die anderen.' / 'Beim Geburtstag bringt ein Kind nur für seine drei besten Freunde Süßes mit.' / 'Ein Kind, das die Sprache noch lernt, darf bei einer Prüfung ein Wörterbuch benutzen.' / 'Die schnellsten Kinder dürfen immer zuerst raus in die Pause.' / 'Ein Kind im Rollstuhl bekommt einen extra Platz vorne und mehr Zeit.' Die Gruppe bespricht jeden Fall mit ihren Prüf-Fragen und legt einen Stein oder ein Gewicht auf die Waagschale 'gerecht' oder 'ungerecht' - oder findet heraus, dass es 'kommt darauf an' ist. Wichtig ist nicht das Ja/Nein, sondern die Begründung: Jede Gruppe schreibt zu jedem Fall einen 'Weil-Satz' auf ('Das ist gerecht, weil...' / 'Das ist ungerecht, weil...'). Die Leitung geht herum, hört zu und stellt Nachhakfragen ('Wäre das auch für dich gerecht, wenn du das andere Kind wärst?'), ohne die Lösung vorzugeben. Strittige Fälle werden für eine spätere Diskussion markiert."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "9ba008c9"
+ },
+ "m:spielregeln-auf-dem-pruefstand-wir-machen-unfaire-regeln-gerecht:1": {
+  "allgemein": {
+   "text": "Die Klasse entwickelt gemeinsam vier 'Fairness-Fragen', mit denen man jede Regel prüfen kann - die 'Fairness-Brille'. Die Leitung sichert sie als feste Kriterien: (1) CHANCE FÜR ALLE - hat jedes Kind eine echte Chance, oder gewinnen immer dieselben? (2) NIEMAND DAUERHAFT AUSSEN VOR - muss jemand lange untätig zuschauen oder darf nie mitmachen? (3) GLEICHE REGEL FÜR ALLE - gelten Ausnahmen heimlich nur für bestimmte Kinder? (4) AUCH FÜR DIE SCHWÄCHEREN GUT - funktioniert die Regel auch für die Langsamsten, Jüngsten oder Neuen? Diese vier Fragen werden auf eine große 'Fairness-Brille' geschrieben und sichtbar aufgehängt. Dann sammeln die Kinder in Teams echte Regeln aus ihrem Alltag, die sie untersuchen wollen - z. B. wie Mannschaften gewählt werden, wer zuerst rausdarf, wie der beliebte Platz/das Material vergeben wird, eine Pausenhof-Regel oder eine bestehende Klassenregel. Jede Gruppe wählt eine Regel als 'Fall' für später."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "b8926e6e"
+ },
+ "m:spielregeln-auf-dem-pruefstand-wir-machen-unfaire-regeln-gerecht:4": {
+  "allgemein": {
+   "text": "Die Klasse beschließt demokratisch, welche der überarbeiteten Regeln tatsächlich übernommen werden, und hält sie in einem gemeinsamen 'Fairen Regelbuch' der Klasse fest (Plakat oder kleines Heft), das sichtbar bleibt. Zu jeder neuen Regel wird kurz notiert, warum sie gerechter ist als die alte. Die Klasse vereinbart außerdem, dass Regeln künftig nicht in Stein gemeißelt sind: Wenn eine Regel sich als unfair herausstellt, kann sie mit der Fairness-Brille erneut geprüft und in einer kurzen Regel-Werkstatt geändert werden. Zum Abschluss spielen die Kinder, wenn möglich, ein bekanntes Spiel noch einmal - jetzt mit der fair gemachten Regel - und vergleichen das Gefühl. In einer Schlussrunde sagt jedes Kind, das mag: 'Welche Regel war für mich früher heimlich unfair?' und 'Was hat sich jetzt geändert?'. Die Leitung schließt mit der Kernbotschaft: Gerechtigkeit bedeutet auch, Regeln immer wieder zu prüfen und gemeinsam so zu gestalten, dass alle eine faire Chance haben."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "0c6023cf"
+ },
+ "m:mein-koerper-funkt-mir-was-die-innen-signale-werkstatt:0": {
+  "allgemein": {
+   "text": "Versammeln Sie die Kinder im Sitzkreis und erzählen Sie von einem kleinen Tier, das nie merkt, wenn es Hunger hat - bis ihm der Bauch laut knurrt. Fragen Sie: 'Kennt ihr euren knurrenden Bauch? Was sagt er euch dann?' Sammeln Sie weitere Innen-Signale, die die Kinder kennen: müde Augen, trockener Mund, Zappel-Beine, Pipi-Druck. Machen Sie deutlich: 'Dein Körper kann nicht mit Worten reden - er funkt dir Zeichen von innen. Wir werden Signal-Forscher und lernen, diese Zeichen zu verstehen.' Stellen Sie das Bild eines Funk-Geräts oder Walkie-Talkies vor und kündigen Sie an, dass die Gruppe verschiedene Körper-Signale erkundet und sammelt."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "974b9536"
+ },
+ "m:mein-ich-koffer-was-alles-zu-mir-gehoert:0": {
+  "allgemein": {
+   "text": "Bringen Sie einen echten kleinen Koffer oder eine schön gestaltete Schachtel mit und packen Sie beispielhaft ein paar 'Ich-Sachen' von sich aus (z. B. ein Bild Ihrer Lieblingsfarbe, etwas, das Sie gut können). Erzählen Sie dazu: 'In diesen Koffer kommt, was zu MIR gehört.' Fragen Sie die Kinder: 'Was würde wohl in euren Koffer kommen?' Sammeln Sie erste Ideen im Kreis. Machen Sie staunend deutlich: 'Jeder Koffer wird ganz anders aussehen - weil jedes Kind anders ist und besondere Sachen hat.' Kündigen Sie an, dass jedes Kind seinen eigenen Ich-Koffer gestaltet und nach und nach füllt. Jedes Kind bekommt seine Koffer-Vorlage und darf sie zuerst mit seinem Namen und einem Selbst-Bild verzieren."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "0f981ac4"
+ },
+ "m:der-koop-kompass-wir-vermessen-und-verbessern-unsere-teamarbeit:0": {
+  "allgemein": {
+   "text": "Beginnen Sie mit einer kurzen Kooperationsaufgabe ohne Vorbereitung (z. B. das Team soll sich schweigend nach Geburtsdatum in einer Reihe aufstellen oder gemeinsam einen Becherturm bauen), damit alle ein frisches Erlebnis von Zusammenarbeit haben. Werten Sie nicht das Ergebnis, sondern den Weg aus: 'Wie habt ihr euch abgestimmt? Wer hat geführt, wer ist mitgegangen? Was lief gut, was holprig?' Sammeln Sie an der Tafel Merkmale, an denen man gute Zusammenarbeit erkennt. Verdichten Sie diese gemeinsam zu fünf bis sechs Kompass-Merkmalen (z. B. Aufgaben fair teilen, einander zuhören, alle einbeziehen, Zusagen halten, Konflikte fair klären, am Ziel dranbleiben). Erklären Sie den Projektauftrag: 'Wir testen unsere Teamarbeit an echten Aufgaben und nutzen diesen Kompass, um sie zu vermessen und besser zu machen.' Jede Person erhält ihren Koop-Kompass-Bogen und schätzt sich zum Start selbst ein: Was kann ich im Team schon gut, woran will ich arbeiten?"
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "0975399c"
+ },
+ "m:das-stille-werk-zusammenarbeiten-ganz-ohne-worte:0": {
+  "allgemein": {
+   "text": "Stellen Sie zum Einstieg eine kleine Aufgabe, die das Team schweigend lösen muss (z. B. sich lautlos der Größe nach aufstellen oder gemeinsam eine einfache Figur legen). Lassen Sie das Erlebnis kurz wirken und fragen Sie dann: 'Wie habt ihr euch verständigt, obwohl niemand reden durfte? Was war schwer, was hat überraschend gut geklappt?' Sammeln Sie, auf welchen Wegen Menschen sich ohne Worte verständigen: Blickkontakt, Zeigen, Nicken, Mimik, vormachen, gemeinsamer Rhythmus. Führen Sie den Projektauftrag ein: 'Ihr löst in festen Teams mehrere Aufgaben ganz ohne Worte und werdet zu Experten der stillen Zusammenarbeit.' Klären Sie die Grundregeln (kein Sprechen, kein Flüstern, keine Geräusche als versteckte Worte; nur Körpersprache) und die Stopp-Geste, mit der jede Person die Aufgabe sofort unterbrechen kann. Bilden Sie ausgewogene Teams. Jede Person erhält das Beobachtungsheft und notiert eine erste Vermutung: Welche stillen Zeichen werden uns wohl am meisten helfen?"
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "3c979efe"
+ },
+ "m:die-klassen-streitkarte-wir-erforschen-unsere-konflikte-und-entwerfen-spielregeln:0": {
+  "allgemein": {
+   "text": "Steigen Sie mit einer überraschenden Frage ein: 'Wenn ihr Forscher wärt - wo und worüber würdet ihr bei uns am meisten Streit finden?' Lassen Sie erste Vermutungen sammeln, ohne zu werten. Stellen Sie dann den Projektauftrag vor: 'Wir werden in den nächsten Tagen echte Streit-Forscher und untersuchen unsere eigenen Konflikte - aber ohne zu petzen und ohne Namen.' Machen Sie die Forscher-Haltung stark: Wir suchen keine Schuldigen, wir suchen Muster und Lösungen. Erarbeiten Sie gemeinsam, was untersucht wird (Wo? Wann? Worüber?) und führen Sie eine einfache, anonyme Sammelmethode ein: eine 'Streit-Briefkiste', in die jede Person über die Woche kleine Zettel wirft, wenn sie einen Streit beobachtet oder erlebt hat - mit Ort, Situation und Grund, aber ohne Namen. Üben Sie an einem Beispiel, wie man so einen Zettel ausfüllt, und betonen Sie die Regel: keine Namen, kein Bloßstellen. Verteilen Sie das Forscher-Tagebuch, in dem jede Person zusätzlich eigene Beobachtungen festhält. Vereinbaren Sie einen Sammel-Zeitraum, etwa eine Woche."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "de3b1bfc"
+ },
+ "m:die-klassen-streitkarte-wir-erforschen-unsere-konflikte-und-entwerfen-spielregeln:2": {
+  "allgemein": {
+   "text": "Die Forscher-Teams untersuchen jetzt ihren Hotspot genauer und suchen nach den Ursachen hinter dem Streit. Geben Sie eine Forscher-Leitfrage vor: 'Warum kommt es ausgerechnet hier so oft zu Streit - was fehlt, was ist unklar, was ist unfair geregelt?' Lassen Sie die Teams mit einer einfachen Ursachen-Methode arbeiten: Zu ihrem Hotspot sammeln sie auf Karten mögliche Gründe und sortieren sie (z. B. am Computer: 'zu wenige Geräte', 'keiner weiß, wer wann dran ist', 'keine Zeitregel'). Ermutigen Sie die Teams, zwischen dem äußeren Anlass (es gibt nur einen Ball) und der eigentlichen Ursache (es ist nicht geklärt, wie man sich abwechselt) zu unterscheiden. Wenn möglich, beobachten die Teams ihren Ort kurz gezielt oder befragen Mitschüler, wie sie die Situation erleben. Halten Sie die Teams an, nicht bei 'die anderen sind gemein' stehen zu bleiben, sondern echte, veränderbare Ursachen zu finden. Jedes Team hält seine wichtigsten Ursachen fest und bereitet sich darauf vor, später passende Regeln dagegen zu entwickeln. Im Forscher-Tagebuch notiert jede Person die spannendste Erkenntnis ihres Teams."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "592c209d"
+ },
+ "m:die-pausentaste-werkstatt-ein-projekt-fuer-den-moment-zwischen-ausloeser-und-ausraster:1": {
+  "allgemein": {
+   "text": "Bevor man die Pausentaste drücken kann, muss man merken, dass der Finger gleich danebenliegt - also die ersten Körperzeichen erkennen, bevor man explodiert. Die Leitung sammelt mit der Klasse, woran man bei sich selbst merkt, dass der 'Alarm' anspringt: heißer Kopf, schneller Herzschlag, geballte Fäuste, flacher Atem, Enge in der Brust, 'rot sehen'. Jede:r erstellt im Logbuch sein eigenes 'Frühwarn-Profil': Welche zwei, drei Zeichen kommen bei mir zuerst? An einer Skala (1 = ganz ruhig bis 10 = gleich Explosion) markieren die Jugendlichen, ab welchem Wert es bei ihnen 'kritisch' wird - der Punkt, an dem die Pausentaste gedrückt werden muss, bevor es zu spät ist. Die Leitung betont: Wer seinen eigenen 'kritischen Punkt' kennt, kann eingreifen, solange noch Zeit ist. Wer ihn verpasst, wird vom Alarm überrollt. Als Hausaufgabe beobachten alle ihre Frühwarnzeichen im Alltag und tragen mindestens zwei reale Situationen ins Logbuch ein."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "ed8a9c76"
+ },
+ "m:doomscroll-detox-ein-selbstexperiment-gegen-den-sog-der-endlosen-feeds:0": {
+  "allgemein": {
+   "text": "Die Leitung steigt mit einer Situation ein, die viele kennen: 'Du nimmst das Handy in die Hand, um eine Nachricht zu checken - und wachst eine Stunde später im Feed wieder auf. Wie ist das passiert?' In der Runde wird gesammelt, ohne Schuldzuweisung, denn das Ziel ist Verstehen, nicht Anklagen. Die Leitung führt den Projektbegriff ein: 'Doomscrolling' - das endlose, automatische Weiterwischen, das sich gut anfühlt und gleichzeitig leer macht. Gemeinsam wird die Leitfrage des Projekts formuliert: 'Wer entscheidet eigentlich, wann ich aufhöre - ich oder die App?' Die Leitung macht den entscheidenden Punkt: Es geht in diesem Projekt NICHT darum, Handys schlechtzureden oder die Bildschirmzeit auf null zu bringen - sondern darum, vom Autopiloten zurück ans Steuer zu kommen und selbst zu bestimmen. Als Start des Selbstexperiments bekommt jede:r ein Bildschirm-Tagebuch und die erste Aufgabe: ein paar Tage lang die eigene tatsächliche Bildschirmzeit (über die Handy-Funktion) und das Gefühl direkt nach dem Scrollen notieren - ehrlich, nur für sich selbst."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "ec1633df"
+ },
+ "m:atemfreunde-der-bauch-der-atmet-wie-das-meer:1": {
+  "allgemein": {
+   "text": "Nach und nach lernen die Kinder verschiedene Atem-Tricks kennen und probieren sie gemeinsam aus. Die 'Meeresatmung': langsam einatmen, während eine Welle ans Ufer rollt, langsam ausatmen, während sie zurückfließt (die Leitung zeichnet die Welle mit dem Arm in der Luft, die Kinder atmen mit der Bewegung). Die 'Blumen-und-Kerzen-Atmung': am Daumen wie an einer Blume riechen (einatmen), dann den Zeigefinger wie eine Kerze sanft auspusten (ausatmen). Die 'Hasen-Schnupperatmung' für zwischendurch: dreimal schnell schnuppern wie ein Hase, dann lang ausatmen. Jeder Atem-Trick wird mehrmals geübt und bekommt von den Kindern ein Handzeichen oder Bild, damit man ihn sich gut merkt. Die liebsten Tricks werden auf kleinen Atemkarten festgehalten."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "86a925e7"
+ },
+ "m:der-gerechte-verteilungs-gipfel-sechs-decken-zwoelf-kinder:0": {
+  "allgemein": {
+   "achtung": "Differenzierung: Für C3 mit drei statt vier Regeln (Gleichheit, Bedarf, Los) arbeiten und stärker mit echten Gegenständen statt Planspiel auf Papier; für C4 die Mischung mehrerer Prinzipien und das begründete Abwägen vertiefen. Sicherheits- und Beziehungshinweis: Die erzeugte Knappheit kann echten Frust auslösen - die Leitung muss die Simulation klar als Experiment rahmen, niemanden dauerhaft benachteiligen und am Ende für einen fairen Ausgleich sorgen. Bei der Leistungs-Regel darauf achten, dass langsamere oder leistungsschwächere Kinder nicht bloßgestellt werden; diese Runde besonders sorgfältig nachbesprechen."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "9f627197"
+ },
+ "m:der-gerechte-verteilungs-gipfel-sechs-decken-zwoelf-kinder:1": {
+  "allgemein": {
+   "achtung": "Differenzierung: Für C3 mit drei statt vier Regeln (Gleichheit, Bedarf, Los) arbeiten und stärker mit echten Gegenständen statt Planspiel auf Papier; für C4 die Mischung mehrerer Prinzipien und das begründete Abwägen vertiefen. Sicherheits- und Beziehungshinweis: Die erzeugte Knappheit kann echten Frust auslösen - die Leitung muss die Simulation klar als Experiment rahmen, niemanden dauerhaft benachteiligen und am Ende für einen fairen Ausgleich sorgen. Bei der Leistungs-Regel darauf achten, dass langsamere oder leistungsschwächere Kinder nicht bloßgestellt werden; diese Runde besonders sorgfältig nachbesprechen."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "e272d2e2"
+ },
+ "m:der-gerechte-verteilungs-gipfel-sechs-decken-zwoelf-kinder:2": {
+  "allgemein": {
+   "achtung": "Differenzierung: Für C3 mit drei statt vier Regeln (Gleichheit, Bedarf, Los) arbeiten und stärker mit echten Gegenständen statt Planspiel auf Papier; für C4 die Mischung mehrerer Prinzipien und das begründete Abwägen vertiefen. Sicherheits- und Beziehungshinweis: Die erzeugte Knappheit kann echten Frust auslösen - die Leitung muss die Simulation klar als Experiment rahmen, niemanden dauerhaft benachteiligen und am Ende für einen fairen Ausgleich sorgen. Bei der Leistungs-Regel darauf achten, dass langsamere oder leistungsschwächere Kinder nicht bloßgestellt werden; diese Runde besonders sorgfältig nachbesprechen."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "45b832d4"
+ },
+ "m:der-gerechte-verteilungs-gipfel-sechs-decken-zwoelf-kinder:3": {
+  "allgemein": {
+   "achtung": "Differenzierung: Für C3 mit drei statt vier Regeln (Gleichheit, Bedarf, Los) arbeiten und stärker mit echten Gegenständen statt Planspiel auf Papier; für C4 die Mischung mehrerer Prinzipien und das begründete Abwägen vertiefen. Sicherheits- und Beziehungshinweis: Die erzeugte Knappheit kann echten Frust auslösen - die Leitung muss die Simulation klar als Experiment rahmen, niemanden dauerhaft benachteiligen und am Ende für einen fairen Ausgleich sorgen. Bei der Leistungs-Regel darauf achten, dass langsamere oder leistungsschwächere Kinder nicht bloßgestellt werden; diese Runde besonders sorgfältig nachbesprechen."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "9fe52652"
+ },
+ "m:der-gerechte-verteilungs-gipfel-sechs-decken-zwoelf-kinder:4": {
+  "allgemein": {
+   "achtung": "Differenzierung: Für C3 mit drei statt vier Regeln (Gleichheit, Bedarf, Los) arbeiten und stärker mit echten Gegenständen statt Planspiel auf Papier; für C4 die Mischung mehrerer Prinzipien und das begründete Abwägen vertiefen. Sicherheits- und Beziehungshinweis: Die erzeugte Knappheit kann echten Frust auslösen - die Leitung muss die Simulation klar als Experiment rahmen, niemanden dauerhaft benachteiligen und am Ende für einen fairen Ausgleich sorgen. Bei der Leistungs-Regel darauf achten, dass langsamere oder leistungsschwächere Kinder nicht bloßgestellt werden; diese Runde besonders sorgfältig nachbesprechen."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "ef3e94b8"
+ },
+ "m:der-koop-kompass-wir-vermessen-und-verbessern-unsere-teamarbeit:1": {
+  "allgemein": {
+   "text": "Damit die Selbst- und Fremdeinschätzung gelingt, üben die Lernenden zuerst das Beobachten und Rückmelden. Klären Sie den Unterschied zwischen einer Beobachtung ('Du hast dreimal nachgefragt, was wir genau brauchen') und einer Bewertung ('Du warst nervig'). Führen Sie eine einfache, faire Feedback-Formel ein, z. B.: 'Mir ist aufgefallen, dass... / Das hat bewirkt, dass... / Mein Wunsch wäre...'. Üben Sie diese Formel an unverfänglichen Beispielen im Plenum. Dann erproben die Teams eine erste kurze Kooperationsaufgabe, bei der eine Person pro Team als 'Koop-Beobachter' mitläuft und nur beobachtet, ohne mitzumachen - mit dem Kompass als Beobachtungsraster. Nach der Aufgabe gibt der Beobachter dem Team mit der Formel eine wertschätzende Rückmeldung zu zwei Kompass-Merkmalen. So lernen alle, Zusammenarbeit konkret zu benennen, statt nur 'war gut' oder 'war doof' zu sagen. Die Beobachterrolle wechselt regelmäßig."
+  },
+  "begruendung": "Verweis auf die Kursstruktur durch eine allgemeine Fassung ersetzt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "824cfa2f"
  }
 }

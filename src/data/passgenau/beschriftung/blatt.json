@@ -20474,8 +20474,11 @@
   "energie": 1,
   "belastung": 1,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.hinweis": "Lass am Stamm und oben in der Krone Platz frei – später kommt noch etwas dazu. Rechts daneben ist Platz für einen kleinen Baum."
+  },
   "sensibel": null,
-  "begruendung": "Baum mit Wurzeln, Stamm, Ästen, Früchten füllen: Ressourcen, Stärken, Erfolge; persönlich.",
+  "begruendung": "Baum mit Wurzeln, Stamm, Ästen, Früchten füllen: Ressourcen, Stärken, Erfolge; persönlich. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "dbd3f415"
@@ -20761,9 +20764,15 @@
   "energie": 1,
   "belastung": 1,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.hinweis": "0 = gar nicht, 10 = sehr. Die anderen Spalten füllst du später aus.",
+   "1.spalten.2": "Wie voll? Heute",
+   "1.spalten.3": "Wie voll? Später",
+   "1.spalten.4": "Wie voll? Am Ende"
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Fünf Bedürfnisse nach Wichtigkeit und Füllstand einschätzen; Kursspalten nur Zusatz.",
+  "begruendung": "Fünf Bedürfnisse nach Wichtigkeit und Füllstand einschätzen; Kursspalten nur Zusatz. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "fe789374"
@@ -20794,9 +20803,12 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Heute: Kreis in der Tabelle das Bedürfnis mit der größten Lücke ein. Plane einen kleinen Schritt, der diesen Tank etwas füllt."
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Größte Lücke wählen und kleinen Schritt planen (Ideenliste, Wenn-dann).",
+  "begruendung": "Größte Lücke wählen und kleinen Schritt planen (Ideenliste, Wenn-dann). Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "ffb7bb25"
@@ -20827,10 +20839,14 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Später: Trag in der Tabelle ein, wie voll deine Tanks jetzt sind. Hat dein kleiner Schritt geholfen?",
+   "1.items.0": "Mein kleiner Schritt vom ersten Mal …"
+  },
   "merkmale": {},
   "sensibel": null,
   "mehrtaegig": true,
-  "begruendung": "Spätere Kontrolle der Tanks und des kleinen Schritts: setzt Wochen später voraus, mehrtägig.",
+  "begruendung": "Spätere Kontrolle der Tanks und des kleinen Schritts: setzt Wochen später voraus, mehrtägig. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "e18946e8"
@@ -20894,10 +20910,13 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Zum Schluss: Trag die letzten Werte ein und schau auf die ganze Zeit."
+  },
   "merkmale": {},
   "sensibel": null,
   "mehrtaegig": true,
-  "begruendung": "Letzte Werte und Rückblick aufs Jahr: setzt lange Vorlaufzeit voraus, mehrtägig.",
+  "begruendung": "Letzte Werte und Rückblick aufs Jahr: setzt lange Vorlaufzeit voraus, mehrtägig. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "a46ee2e2"
@@ -22463,8 +22482,11 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "0.text": "Hier probierst du viel aus. In dieses Buch kommt nur, was bei dir wirklich wirkt – in vier Rubriken: Lieblingsskills, Pläne, Sätze, die tragen, und Menschen, die helfen. So findest du es auch später noch: im Lycée, in der Ausbildung, zu Hause."
+  },
   "sensibel": null,
-  "begruendung": "Text zum Skills-Buch mit vier Rubriken: Kurs-Buch über mehrere Module, daher kursgebunden.",
+  "begruendung": "Text zum Skills-Buch mit vier Rubriken: Kurs-Buch über mehrere Module, daher kursgebunden. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.75,
   "h": "24921847"
@@ -22524,6 +22546,11 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "0.text": "Inhalt: Trag jedes Blatt ein, das du in dein Buch aufnimmst.",
+   "0.hinweis": "Die Rubrikenseiten brauchen keinen Eintrag – sie stehen nach Themen sortiert im Buch.",
+   "1.spalten.2": "Thema"
+  },
   "merkmale": {},
   "sensibel": null,
   "begruendung": "Inhaltsverzeichnis der gesammelten Kursblätter: eigene Arbeit würdigen; setzt den Kurs voraus, daher nein.",
@@ -22556,6 +22583,11 @@
   "energie": 1,
   "belastung": 1,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Am Ende eines Themas: Was davon willst du in fünf Jahren noch wissen? Trag es hier ein.",
+   "0.hinweis": "Für jedes Thema gibt es eine neue Seite. Nicht jedes Feld muss voll werden – lieber ein guter Eintrag als vier halbe.",
+   "1.items.0": "Thema: …"
+  },
   "merkmale": {},
   "sensibel": null,
   "begruendung": "Lieblingsskills, tragende Sätze, Pläne, Menschen festhalten; persönlich, daher 1. „kracht“ ist nicht laut.",
@@ -23620,8 +23652,11 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "0.text": "Drei Jahre, viele Stunden, ein Weg. Wenn du später dazugekommen bist, beginnt dein Weg dort, wo du eingestiegen bist."
+  },
   "sensibel": null,
-  "begruendung": "Text zum Rückblick auf drei Jahre Skills-Kurs: kursgebunden.",
+  "begruendung": "Text zum Rückblick auf drei Jahre Skills-Kurs: kursgebunden. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.75,
   "h": "473cfc4e"
@@ -23684,9 +23719,12 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "1.items.0": "Am Anfang dachte ich über mich: …"
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Früher–heute-Vergleich: persönlicher Rückblick, geht auch allein, daher ja.",
+  "begruendung": "Früher–heute-Vergleich: persönlicher Rückblick, geht auch allein, daher ja. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.7,
   "h": "7803fec3"
@@ -23716,6 +23754,9 @@
   "energie": 2,
   "belastung": 0,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "1.karten.0.text": "Das solltet ihr über diese Stunden wissen:"
+  },
   "merkmale": {},
   "sensibel": null,
   "begruendung": "Anonyme Rat-Karten an die neue Gruppe und die Leitung in eine Box werfen: Kurs- und Gruppenbezug, daher nein.",
@@ -25880,8 +25921,11 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "0.text": "Vielleicht hast du schon Ausschnitte aus dem Film gesehen. Jetzt verfolgst du ein Gefühl durch den ganzen Film: dein Paten-Gefühl."
+  },
   "sensibel": null,
-  "begruendung": "Einführung zum Paten-Gefühl im ganzen Film; baut auf Kurs-Einheit 8 auf.",
+  "begruendung": "Einführung zum Paten-Gefühl im ganzen Film; baut auf Kurs-Einheit 8 auf. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.75,
   "h": "f4859e6c"
@@ -30478,9 +30522,12 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.punkte.2": "Gut geeignet: Zeichnungen, Symbole, Wörter, Zeitschriften-Ausschnitte, Fotos von Plakaten und Orten."
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Regeln für die Bilder (keine erkennbaren Personen, nichts ins Netz): Hinweis ohne Lernziel.",
+  "begruendung": "Regeln für die Bilder (keine erkennbaren Personen, nichts ins Netz): Hinweis ohne Lernziel. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "72945ab0"
@@ -31974,9 +32021,12 @@
   "energie": 1,
   "belastung": 1,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.hinweis": "Deine Gefühls-Landkarte hilft dir dabei, wenn du schon eine hast."
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Eigene Warnsignale Richtung Gelb ankreuzen: persönlich, daher 1; nur Beschreibungen, nicht laut.",
+  "begruendung": "Eigene Warnsignale Richtung Gelb ankreuzen: persönlich, daher 1; nur Beschreibungen, nicht laut. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "ade5fa8c"
@@ -32099,9 +32149,12 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Nicht jeder Skill passt überall. Der Kompass zeigt dir, welcher Skill dir wo hilft: in der Schule, bei Wut, in Freundschaften, zu Hause, im Netz. Vielleicht kennst du den Skills-Koffer schon – er sortiert Skills nach der Anspannung. Der Kompass sortiert nach Bereichen deines Alltags."
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Kurztext: Der Kompass ordnet Skills nach Alltagsbereichen; Bezug zu Jahr 1 nur Hinweis.",
+  "begruendung": "Kurztext: Der Kompass ordnet Skills nach Alltagsbereichen; Bezug zu Jahr 1 nur Hinweis. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.75,
   "h": "f411ccae"
@@ -32132,9 +32185,13 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "1.titel": "Skills, die du vielleicht schon kennst – sie zählen auch",
+   "0.text": "Am Ende eines Themas: Welcher Skill hilft dir in diesem Bereich – und wann setzt du ihn ein? Trag beides ins passende Feld ein."
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Pro Bereich einen Skill und den Einsatzzeitpunkt eintragen; Wortspeicher mit Skills.",
+  "begruendung": "Pro Bereich einen Skill und den Einsatzzeitpunkt eintragen; Wortspeicher mit Skills. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.75,
   "h": "ae85dbd8"
@@ -36075,8 +36132,11 @@
   "energie": 1,
   "belastung": 1,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "1.links.0.beispiel": "Klasse im Lycée, Training am Montag"
+  },
   "sensibel": null,
-  "begruendung": "Zwei Ufer: Wo stehe ich, wohin gehe ich nach dem Sommer? „Herausfinden“ ist ein Ziel.",
+  "begruendung": "Zwei Ufer: Wo stehe ich, wohin gehe ich nach dem Sommer? „Herausfinden“ ist ein Ziel. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "1beb83fb"
@@ -39699,6 +39759,10 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Schreib am Ende jeder Stunde einen Satz auf: Was nehme ich heute mit?",
+   "0.hinweis": "Zum Beispiel: „Mit 5-4-3-2-1 werde ich ruhiger.“"
+  },
   "merkmale": {},
   "sensibel": null,
   "begruendung": "Pro Einheit ein Satz „Das nehme ich mit“, Jahresfrage: Fortschritt festhalten; Stempel/Joker nur Kursrahmen.",
@@ -40178,6 +40242,9 @@
   "energie": 1,
   "belastung": 1,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.hinweis": "Die Skala geht so: 0 ist völlig ruhig, 100 ist das Maximum."
+  },
   "merkmale": {},
   "sensibel": null,
   "begruendung": "Je Anspannungsbereich einen Skill eintragen (Start, Lernen, Blackout): Strategie anwenden; Prüfungsangst, daher 1.",
@@ -45475,9 +45542,12 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.hinweis": "Schau dafür auf die Skills, die dir schon einmal geholfen haben."
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Entlastendes sammeln: Skills für akut und für auf Dauer; Kursbezug (Einheit 15) nur Hinweis.",
+  "begruendung": "Entlastendes sammeln: Skills für akut und für auf Dauer; Kursbezug (Einheit 15) nur Hinweis. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "79245cd7"
@@ -45723,9 +45793,12 @@
   "energie": 2,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Körper und Atem"
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Körper- und Atem-Skills testen und bewerten; Vollgas-Bewegung und Anspannen, daher Energie 2.",
+  "begruendung": "Körper- und Atem-Skills testen und bewerten; Vollgas-Bewegung und Anspannen, daher Energie 2. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "043bff4a"
@@ -45754,9 +45827,12 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Sinne"
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Sinnes-Skills testen (Duft, Kneten, Kälte, Klang) und bewerten; Aussetzen erlaubt.",
+  "begruendung": "Sinnes-Skills testen (Duft, Kneten, Kälte, Klang) und bewerten; Aussetzen erlaubt. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "370fc2a4"
@@ -45785,9 +45861,12 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Achtsamkeit und Kopf"
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Achtsamkeits- und Kopf-Skills testen und bewerten (Zählen, Gedankenschiffchen, sicherer Ort).",
+  "begruendung": "Achtsamkeits- und Kopf-Skills testen und bewerten (Zählen, Gedankenschiffchen, sicherer Ort). Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "e414f9ec"
@@ -45853,10 +45932,13 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Test im Alltag: Probier einen Skill bis zum nächsten Mal aus."
+  },
   "merkmale": {},
   "sensibel": null,
   "mehrtaegig": true,
-  "begruendung": "Skill im Alltag zwischen zwei Terminen testen: mehrtägig, daher transfer.",
+  "begruendung": "Skill im Alltag zwischen zwei Terminen testen: mehrtägig, daher transfer. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "46c539b1"
@@ -46422,9 +46504,12 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.hinweis": "Geschwister, Cousins, Jüngere im Verein oder im Bus, Neue in der Gruppe – ob du willst oder nicht."
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Selbst Vorbild sein: wer schaut auf mich, wofür, diese Woche; Plan.",
+  "begruendung": "Selbst Vorbild sein: wer schaut auf mich, wofür, diese Woche; Plan. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "b8246254"
@@ -46454,9 +46539,13 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Post für die Jüngeren: Schreib einen Entwurf für deine Karte an jemanden, der gerade neu anfängt.",
+   "1.beispiel": "Wenn dich etwas nervt, bleib trotzdem dran. Die Kastenatmung fand ich am Anfang peinlich, heute hilft sie mir vor jeder Prüfung. Noah, 16"
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Kartenentwurf für Jüngere mit einem Tipp: andere unterstützen, Vorbild sein.",
+  "begruendung": "Kartenentwurf für Jüngere mit einem Tipp: andere unterstützen, Vorbild sein. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "3f1777d5"
@@ -49328,10 +49417,13 @@
   "energie": 1,
   "belastung": 1,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Wut-Protokoll: Beobachte dich bis zum nächsten Treffen. Eine Zeile reicht."
+  },
   "merkmale": {},
   "sensibel": null,
   "mehrtaegig": true,
-  "begruendung": "Wut-Protokoll bis zur nächsten Einheit: mehrtägig, daher transfer; persönlich, daher 1.",
+  "begruendung": "Wut-Protokoll bis zur nächsten Einheit: mehrtägig, daher transfer; persönlich, daher 1. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "bfffc3da"
@@ -49393,9 +49485,12 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Das Protokoll ist für dich. Beim nächsten Treffen nennst du höchstens dein erstes Zeichen – wenn du willst."
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Hinweis: Das Protokoll ist privat, höchstens das erste Zeichen nennen.",
+  "begruendung": "Hinweis: Das Protokoll ist privat, höchstens das erste Zeichen nennen. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "fbd10139"
@@ -49424,6 +49519,9 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "0.text": "___ hat im Schuljahr ___ ein Jahr lang Skills geübt: für Schule, Wut und Freundschaft, für Familie und Netz, für gute Entscheidungen und die eigene Gesundheit."
+  },
   "merkmale": {},
   "sensibel": null,
   "begruendung": "Kurszertifikat „Stark im Alltag“ mit Unterschrift der Leitung: Kursjahr-Abschluss, nicht für Einzelstunde.",

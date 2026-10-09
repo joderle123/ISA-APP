@@ -57,7 +57,7 @@ Herkunft und Sicherheit:
 | `belastung` | `0` leicht · `1` persönlich · `2` emotional schwer | |
 | `einzeltauglich` | `ja` · `angepasst` · `nein` | Bausteine nur `ja`/`nein`; Schritte: `angepasst` ⇔ `einzelvariante` |
 | `einzelvariante` | `{ "text": 40–300 Zeichen, "sagen"?: 1–3 Sätze ≤ 160, "fr"?: { text, sagen? } }` | nur Stundenschritte, nur mit `angepasst`; `fr` genau dann, wenn die Quelle Französisch hat |
-| `allgemein` | `{ "<pfad>": "Text" }` | nur Bausteine; Pfade wie `texte()` des Pakets (`0.text`, `1.items.2`); höchstens 1,5 × so lang wie das Original |
+| `allgemein` | `{ "<pfad>": "Text" }` | Fassung ohne Figuren- oder Kursbezug, höchstens 1,5 × so lang wie das Original, nie mit Kursverweis. Bausteine: Pfade wie `texte()` des Pakets (`0.text`, `1.items.2`). Schritte: `titel`, `text`, `sagen.<n>`, `wennEsKippt`, `achtung`, `vorbereitung`, `elternbrief`, `quelle`, `fr.titel`, `fr.text`, `fr.sagen.<n>`, `fr.wennEsKippt`; `""` = entfällt (nicht bei Titel, Text, Quelle) |
 | `zielgruppe` | `kind` · `fachkraft` · `eltern` | Werkzeuge für Fachkräfte bleiben `fachkraft` |
 | `merkmale` | `{ "wettbewerb", "koerperkontakt", "laut", "gewaltbezug", "katharsis": true }` | **vollständige Menge**: was fehlt, ist false; `{}` = keins |
 | `sensibel` | `kinderschutz` · `akut` · `familie` · `koerper` · `null` | `null` = ausdrücklich nicht sensibel |
@@ -68,8 +68,19 @@ Herkunft und Sicherheit:
 | `sicher` | 0…1 | Pflicht; gilt für alle Felder des Eintrags |
 | `h` | 8 Hex-Zeichen | Prüfsumme des Eintrags zur Zeit der Beschriftung; setzt der Import |
 
-Unbekannte Felder sind ein Fehler. In Texten (Einzelvariante, `allgemein`) nie ELDiB-Codes, Testkürzel oder
-Katharsis („Wut rauslassen“, auf Kissen schlagen).
+Unbekannte Felder sind ein Fehler. In Texten (Einzelvariante, `allgemein`) nie ELDiB-Codes, Testkürzel,
+Katharsis („Wut rauslassen“, auf Kissen schlagen) oder Verweise auf die Kursstruktur („aus Einheit 20“, „Modul 3“,
+„Kursjahr“, „letzte Woche ging es um …“; `KURSVERWEIS_RE` in `src/passgenau/kern/vokabular.ts`).
+
+### Kursverweise (`allgemein`)
+
+Passgenau nimmt einzelne Teile aus Kurs, Förderfach und mehrteiligen Materialien – ein Verweis auf die Struktur der
+Quelle passt dort nicht. Jeder Text, der in Plan, Blatt oder Oberfläche erscheint und `KURSVERWEIS_RE` trifft, bekommt
+eine Fassung ohne Verweis: bei Schritten über `allgemein` (oder, wenn die Einzelvariante den Verweis enthält, in der
+Einzelvariante selbst), bei Bausteinen über `allgemein` – Pfade, deren Original einen Kursverweis enthält, gelten
+immer (Fassungen ohne Figurenbezug nur, wenn die Geschichte fehlt). Prüfregel 26 hält Kursverweise aus allen
+angezeigten Texten (DE und FR); Titel mehrteiliger Materialien („Hauptteil 2 (Einheit 2–3): …“) kürzt der Katalog
+selbst. Der Import behält `allgemein`, wenn eine neue Beschriftung keine eigene mitbringt.
 
 ## Regeln beim Anwenden
 

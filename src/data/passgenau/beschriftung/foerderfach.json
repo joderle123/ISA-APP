@@ -148,6 +148,9 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "text": "Der Vertrag entsteht aus den Wünschen der Jugendlichen; die Leitung ergänzt nur, was fehlt, und unterschreibt selbst. Zum Vertrag gehören ein Stopp-Plan für Momente, in denen es zu viel wird, und ein offenes Wort dazu, wo die Schweigepflicht endet.\n• Zettel (5 Min.): Jede Person schreibt allein auf zwei Zettel, was sie braucht, damit sie sich hier wohlfühlt, und was hier nie passieren soll.\n• Regeln bauen (10 Min.): Die Zettel hängen an der Wand; die Gruppe formuliert daraus drei bis fünf Regeln, positiv und in ihrer eigenen Sprache, die Leitung ergänzt nur, was fehlt.\n• Stopp-Plan (7 Min.): Die Gruppe legt fest, welches Zeichen „Ich brauche eine Pause“ heißt, wohin man geht (in Sichtweite) und wie man zurückkommt; jede Person schreibt ihn auf.\n• Regel-Test (5 Min.): Die Leitung bricht absichtlich eine Regel, zum Beispiel greift sie mitten im Gespräch zum Handy. Die Jugendlichen zeigen auf den Vertrag und sagen ruhig, was sie stört – so wird der Vertrag zum Werkzeug.\n• Vertraulich und unterschreiben (8 Min.): Die Leitung sagt offen, wo die Schweigepflicht endet, dann unterschreiben alle im Gruppenvertrag, auch die Leitung; er hängt ab jetzt in jeder Stunde im Raum."
+  },
   "merkmale": {},
   "begruendung": "Gruppenvertrag aus den Wünschen aller mit Regelbau und Unterschriften der Gruppe; zu zweit eine andere Vereinbarung.",
   "von": "agent",
@@ -1042,7 +1045,7 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft fragt zur Mission der letzten Woche: Kam der Moment für den Dankbarkeitsblitz, und was wurde gemacht? Daumen hoch, Mitte oder runter; auch „kam nicht“ ist in Ordnung. Dann das Thema: Was kann ich, und was hält mich? Dafür geht es nach draußen.",
+   "text": "Die Fachkraft fragt nach einem Moment der letzten Tage für einen Dankbarkeitsblitz: Was wurde gemacht? Daumen hoch, Mitte oder runter; auch „kam nicht“ ist in Ordnung. Dann das Thema: Was kann ich, und was hält mich? Dafür geht es nach draußen.",
    "sagen": [
     "Letzte Stunde ging es darum, wie du bist. Heute geht es darum, was du kannst und was dich hält, wenn es stürmt."
    ]
@@ -1241,13 +1244,13 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft fragt zur Mission der letzten Woche: Kam der Moment, und wie wurde die Stärke neu eingesetzt? Daumen hoch, Mitte oder runter; auch „kam nicht“ ist in Ordnung. Dann das Thema: Gefühle – was sie sagen wollen und wozu sie gut sind.",
+   "text": "Die Fachkraft fragt nach einem Moment der letzten Tage: Wie wurde eine Stärke neu eingesetzt? Daumen hoch, Mitte oder runter; auch „kam nicht“ ist in Ordnung. Dann das Thema: Gefühle – was sie sagen wollen und wozu sie gut sind.",
    "sagen": [
     "Wenn ein Bedürfnis leer ist, meldet sich ein Gefühl: Wer zu wenig geschlafen hat, ist schneller gereizt – das Gefühl zeigt, dass ein Tank leer ist."
    ]
   },
   "merkmale": {},
-  "begruendung": "Mission der letzten Woche ausgeschrieben; Daumen mit einer Person, dann das Thema Gefühle.",
+  "begruendung": "Mission der letzten Woche ausgeschrieben; Daumen mit einer Person, dann das Thema Gefühle. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "5b26b601"
@@ -1435,13 +1438,13 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft fragt zur Mission der letzten Woche: Kam der Moment für die Farbsuche, und was wollte das Gefühl sagen? Dann stellt sie den Film in zwei Sätzen vor: Riley ist elf und zieht in eine neue Stadt, in ihrem Kopf steuern fünf Gefühle. Auftrag: Wer steht am Pult, und was macht Riley deshalb?",
+   "text": "Die Fachkraft fragt nach einem Gefühl der letzten Tage: Was wollte es sagen? Dann stellt sie den Film in zwei Sätzen vor: Riley ist elf und zieht in eine neue Stadt, in ihrem Kopf steuern fünf Gefühle. Auftrag: Wer steht am Pult, und was macht Riley deshalb?",
    "sagen": [
-    "Letzte Woche hast du herausgefunden, welche Botschaft jedes Gefühl hat. Heute siehst du, was passiert, wenn ein Gefühl das Steuer übernimmt."
+    "Jedes Gefühl hat eine Botschaft. Heute siehst du, was passiert, wenn ein Gefühl das Steuer übernimmt."
    ]
   },
   "merkmale": {},
-  "begruendung": "Mission der Klasse ausgeschrieben; Film kurz vorstellen und Beobachtungsauftrag für die Person.",
+  "begruendung": "Mission der Klasse ausgeschrieben; Film kurz vorstellen und Beobachtungsauftrag für die Person. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "07cc5e4a"
@@ -1623,7 +1626,7 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft fragt zur Mission der letzten Woche: Kam der Moment, wer saß am Steuer, und was wurde danach getan? Daumen hoch, Mitte oder runter; auch „kam nicht“ ist in Ordnung. Dann das Thema: Wo im Körper merkt man, dass ein Gefühl das Steuer übernimmt?",
+   "text": "Die Fachkraft fragt nach einem Moment der letzten Tage: Wer saß am Steuer, und was wurde danach getan? Daumen hoch, Mitte oder runter; auch „kam nicht“ ist in Ordnung. Dann das Thema: Wo im Körper merkt man, dass ein Gefühl das Steuer übernimmt?",
    "sagen": [
     "Riley merkt im Film nicht, wer in ihrem Kopf gerade am Pult steht. Woran merkst du es bei dir?"
    ]
@@ -1830,7 +1833,7 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft fragt zur Mission der letzten Woche: Kam der Moment, wo wurde das erste Warnsignal gespürt, was wurde danach getan? Dann die neue Skala: feiner als die Linie von 0 bis 10, sie zeigt, was man bei welcher Zahl tun kann. Ausblick: am Ende ein Skills-Koffer.",
+   "text": "Die Fachkraft fragt nach einem Moment der letzten Tage: Wo wurde das erste Warnsignal gespürt, was wurde danach getan? Dann die neue Skala: feiner als die Linie von 0 bis 10, sie zeigt, was man bei welcher Zahl tun kann. Ausblick: am Ende ein Skills-Koffer.",
    "sagen": [
     "Bisher ging es darum, wie stark ein Gefühl ist. Ab heute geht es darum, was man macht, wenn es zu stark wird.",
     "Die nächsten Treffen sind ein Trainingslager – am Ende hast du einen Koffer mit Skills, die wirklich passen."
@@ -2399,9 +2402,12 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "vorbereitung": "Gedankenschiffchen und sicheren Ort einmal laut lesen und stoppen: je höchstens drei Minuten. · Allergien und Speisevorschriften für den Imbiss klären, Alternative bereithalten. · Raum abdunkeln können, Schild „Bitte nicht stören“, Ruheplatz mit Kissen. · Elternzettel Kletterhalle: Wer hat ihn abgegeben? Skills-Tester bereitlegen, wenn es sie gibt."
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Halbe Minute Stille, dann Wort und Zahl geht unverändert mit einem Kind; Check-in altersneutral.",
+  "begruendung": "Halbe Minute Stille, dann Wort und Zahl geht unverändert mit einem Kind; Check-in altersneutral. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "67371dcc"
@@ -2433,9 +2439,12 @@
     "Körper und Sinne sind deine Notbremse. Heute trainieren wir das Lenken – für Momente, in denen der Kopf noch mitspielt."
    ]
   },
+  "allgemein": {
+   "vorbereitung": "Gedankenschiffchen und sicheren Ort einmal laut lesen und stoppen: je höchstens drei Minuten. · Allergien und Speisevorschriften für den Imbiss klären, Alternative bereithalten. · Raum abdunkeln können, Schild „Bitte nicht stören“, Ruheplatz mit Kissen. · Elternzettel Kletterhalle: Wer hat ihn abgegeben? Skills-Tester bereitlegen, wenn es sie gibt."
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Mission der letzten Stunde als Frage ausgeschrieben, Daumen zu zweit; Skill im Alltag angewendet.",
+  "begruendung": "Mission der letzten Stunde als Frage ausgeschrieben, Daumen zu zweit; Skill im Alltag angewendet. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "decaab92"
@@ -2463,6 +2472,9 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "vorbereitung": "Gedankenschiffchen und sicheren Ort einmal laut lesen und stoppen: je höchstens drei Minuten. · Allergien und Speisevorschriften für den Imbiss klären, Alternative bereithalten. · Raum abdunkeln können, Schild „Bitte nicht stören“, Ruheplatz mit Kissen. · Elternzettel Kletterhalle: Wer hat ihn abgegeben? Skills-Tester bereitlegen, wenn es sie gibt."
+  },
   "merkmale": {},
   "sensibel": null,
   "begruendung": "Eisbär, Gedankenschiffchen und Kopf-Labor mit Zahl gehen mit einem Kind und der Fachkraft als Mitmacherin.",
@@ -2491,6 +2503,9 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "vorbereitung": "Gedankenschiffchen und sicheren Ort einmal laut lesen und stoppen: je höchstens drei Minuten. · Allergien und Speisevorschriften für den Imbiss klären, Alternative bereithalten. · Raum abdunkeln können, Schild „Bitte nicht stören“, Ruheplatz mit Kissen. · Elternzettel Kletterhalle: Wer hat ihn abgegeben? Skills-Tester bereitlegen, wenn es sie gibt."
+  },
   "merkmale": {},
   "sensibel": null,
   "begruendung": "Achtsames Essen geht unverändert mit einem Kind, die Fachkraft isst mit; Achtsamkeit statt Spiel, Allergien klären.",
@@ -2528,9 +2543,12 @@
     "Ein sicherer Ort darf echt oder erfunden sein – er gehört dir, du musst ihn niemandem zeigen."
    ]
   },
+  "allgemein": {
+   "vorbereitung": "Gedankenschiffchen und sicheren Ort einmal laut lesen und stoppen: je höchstens drei Minuten. · Allergien und Speisevorschriften für den Imbiss klären, Alternative bereithalten. · Raum abdunkeln können, Schild „Bitte nicht stören“, Ruheplatz mit Kissen. · Elternzettel Kletterhalle: Wer hat ihn abgegeben? Skills-Tester bereitlegen, wenn es sie gibt."
+  },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Freiwillige und Tischgruppen entfallen: Fachkraft stört ohne Anfassen. Der Ort ist persönlich.",
+  "begruendung": "Freiwillige und Tischgruppen entfallen: Fachkraft stört ohne Anfassen. Der Ort ist persönlich. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "61ac58f4"
@@ -2563,6 +2581,9 @@
     "Sag dir dein Stichwort oder nimm den Gegenstand in die Hand und geh in Gedanken hin: Was siehst, hörst, spürst du?",
     "Augen auf ist völlig in Ordnung – du entscheidest, wie weit du dich darauf einlässt."
    ]
+  },
+  "allgemein": {
+   "vorbereitung": "Gedankenschiffchen und sicheren Ort einmal laut lesen und stoppen: je höchstens drei Minuten. · Allergien und Speisevorschriften für den Imbiss klären, Alternative bereithalten. · Raum abdunkeln können, Schild „Bitte nicht stören“, Ruheplatz mit Kissen. · Elternzettel Kletterhalle: Wer hat ihn abgegeben? Skills-Tester bereitlegen, wenn es sie gibt."
   },
   "merkmale": {},
   "sensibel": null,
@@ -2976,8 +2997,11 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "vorbereitung": "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln für den neuen Satz groß auf ein Plakat. · Fallakten einmal kopieren und ausschneiden; Kamera-Test und Lösungen behält die Leitung; einen Fall, der einer Lage in der Gruppe ähnelt, durch die Reserve ersetzen. · Zwei Wandseiten beschriften: „Kamera filmt es“ und „Kamera sieht nichts“ (für den Kamera-Test)."
+  },
   "merkmale": {},
-  "begruendung": "Gefühl zeigen, Zahl nennen und die Detektivfrage: geht 1:1, die Fachkraft macht mit und beginnt.",
+  "begruendung": "Gefühl zeigen, Zahl nennen und die Detektivfrage: geht 1:1, die Fachkraft macht mit und beginnt. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "7cfd5c77"
@@ -3006,6 +3030,9 @@
     "Kam dein Moment – und was hast du gemacht: Daumen hoch, Mitte oder runter?",
     "Heute prüfst du, ob deine innere Stimme für ihre Behauptungen auch Beweise hat."
    ]
+  },
+  "allgemein": {
+   "vorbereitung": "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln für den neuen Satz groß auf ein Plakat. · Fallakten einmal kopieren und ausschneiden; Kamera-Test und Lösungen behält die Leitung; einen Fall, der einer Lage in der Gruppe ähnelt, durch die Reserve ersetzen. · Zwei Wandseiten beschriften: „Kamera filmt es“ und „Kamera sieht nichts“ (für den Kamera-Test)."
   },
   "merkmale": {},
   "begruendung": "Wochen-Mission ausgeschrieben; Stimmen der Gruppe entfallen, niemand muss es geschafft haben. Brücke zum Thema.",
@@ -3041,6 +3068,9 @@
     "Beweis oder nicht: Könnte eine Kamera das filmen?"
    ]
   },
+  "allgemein": {
+   "vorbereitung": "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln für den neuen Satz groß auf ein Plakat. · Fallakten einmal kopieren und ausschneiden; Kamera-Test und Lösungen behält die Leitung; einen Fall, der einer Lage in der Gruppe ähnelt, durch die Reserve ersetzen. · Zwei Wandseiten beschriften: „Kamera filmt es“ und „Kamera sieht nichts“ (für den Kamera-Test)."
+  },
   "merkmale": {},
   "begruendung": "Wand-Aufstellung, Fallakten der Gruppe, Geschworene entfallen: Kind zeigt, sortiert, verhört die Fachkraft als Stimme.",
   "von": "agent",
@@ -3073,6 +3103,9 @@
    "sagen": [
     "Stopp! Und jetzt: Was sagst du diesem Satz – glaubhaft, nicht übertrieben?"
    ]
+  },
+  "allgemein": {
+   "vorbereitung": "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln für den neuen Satz groß auf ein Plakat. · Fallakten einmal kopieren und ausschneiden; Kamera-Test und Lösungen behält die Leitung; einen Fall, der einer Lage in der Gruppe ähnelt, durch die Reserve ersetzen. · Zwei Wandseiten beschriften: „Kamera filmt es“ und „Kamera sieht nichts“ (für den Kamera-Test)."
   },
   "merkmale": {},
   "begruendung": "Kreis und Gruppenziel entfallen: Ball zwischen Fachkraft und Kind, gemeinsam zehn glaubhafte Gegensätze in drei Minuten.",
@@ -3108,6 +3141,9 @@
     "Schreib Gegenbeweise auch dann auf, wenn du selbst noch nicht ganz überzeugt bist."
    ]
   },
+  "allgemein": {
+   "vorbereitung": "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln für den neuen Satz groß auf ein Plakat. · Fallakten einmal kopieren und ausschneiden; Kamera-Test und Lösungen behält die Leitung; einen Fall, der einer Lage in der Gruppe ähnelt, durch die Reserve ersetzen. · Zwei Wandseiten beschriften: „Kamera filmt es“ und „Kamera sieht nichts“ (für den Kamera-Test)."
+  },
   "merkmale": {},
   "begruendung": "Daumen-Prüfung der Gruppe entfällt: Fachkraft prüft die drei Regeln mit. Eigener Satz, privat, Kärtchen zum Mitnehmen.",
   "von": "agent",
@@ -3142,6 +3178,9 @@
     "Sag sie so, wie du sie einem guten Freund sagen würdest."
    ]
   },
+  "allgemein": {
+   "vorbereitung": "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln für den neuen Satz groß auf ein Plakat. · Fallakten einmal kopieren und ausschneiden; Kamera-Test und Lösungen behält die Leitung; einen Fall, der einer Lage in der Gruppe ähnelt, durch die Reserve ersetzen. · Zwei Wandseiten beschriften: „Kamera filmt es“ und „Kamera sieht nichts“ (für den Kamera-Test)."
+  },
   "merkmale": {},
   "begruendung": "Skills-Pass und Mission entfallen; drei Sätze der freundlichen Stimme still und laut zu zweit, Moment wählen.",
   "von": "agent",
@@ -3174,8 +3213,12 @@
     "Merk dir deine Zahl: Nach dem Ausflug schätzen wir sie noch einmal."
    ]
   },
+  "allgemein": {
+   "vorbereitung": "Einverständnis der Eltern liegt vor (Elternbrief); Bäckerei und Café vorab informieren. · Weg und Orte abgehen (höchstens 10 Gehminuten); Treffpunkt, Signal, Handynummer der Leitung und 112 auf die Regelkarte. · Aufsicht: Die Leitung bleibt bei jedem Auftrag in Sichtweite. · Regenvariante: Aufträge im Haus spielen, Leitung als Verkäuferin, Stühle als Haltestelle.",
+   "elternbrief": "Einverständnis der Eltern liegt vor (Elternbrief); Bäckerei und Café vorab informieren."
+  },
   "merkmale": {},
-  "begruendung": "Kärtchen aus der letzten Stunde und Ausflug ausgeschrieben; Rad, Zahl und Vorher-Wert zu zweit.",
+  "begruendung": "Kärtchen aus der letzten Stunde und Ausflug ausgeschrieben; Rad, Zahl und Vorher-Wert zu zweit. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "5f3d58eb"
@@ -3204,6 +3247,10 @@
     "Kam dein Moment – und was ist passiert, als du den Satz gelesen hast?",
     "Ein neuer Satz ist wie neue Schuhe: Am Anfang drückt er ein bisschen, heute laufen wir ihn ein."
    ]
+  },
+  "allgemein": {
+   "vorbereitung": "Einverständnis der Eltern liegt vor (Elternbrief); Bäckerei und Café vorab informieren. · Weg und Orte abgehen (höchstens 10 Gehminuten); Treffpunkt, Signal, Handynummer der Leitung und 112 auf die Regelkarte. · Aufsicht: Die Leitung bleibt bei jedem Auftrag in Sichtweite. · Regenvariante: Aufträge im Haus spielen, Leitung als Verkäuferin, Stühle als Haltestelle.",
+   "elternbrief": "Einverständnis der Eltern liegt vor (Elternbrief); Bäckerei und Café vorab informieren."
   },
   "merkmale": {},
   "begruendung": "Wochen-Mission ausgeschrieben; Stimmen der Gruppe entfallen. Brücke vom Prüfen zum Testen im echten Leben.",
@@ -3239,6 +3286,10 @@
     "Auch 90 Prozent sicher heißt nicht, dass es so kommt – das finden wir heraus."
    ]
   },
+  "allgemein": {
+   "vorbereitung": "Einverständnis der Eltern liegt vor (Elternbrief); Bäckerei und Café vorab informieren. · Weg und Orte abgehen (höchstens 10 Gehminuten); Treffpunkt, Signal, Handynummer der Leitung und 112 auf die Regelkarte. · Aufsicht: Die Leitung bleibt bei jedem Auftrag in Sichtweite. · Regenvariante: Aufträge im Haus spielen, Leitung als Verkäuferin, Stühle als Haltestelle.",
+   "elternbrief": "Einverständnis der Eltern liegt vor (Elternbrief); Bäckerei und Café vorab informieren."
+  },
   "merkmale": {},
   "begruendung": "Rollen der Gruppe entfallen: Fachkraft ist Verkäuferin, Kind bestellt und spricht alten und neuen Satz; Karte allein.",
   "von": "agent",
@@ -3271,6 +3322,10 @@
     "Zähl unauffällig, wie viele Menschen dich wirklich ansehen – nicht, wie viele du denkst.",
     "Treffpunkt, Signal, Stopp-Recht: Wer Stopp sagt, bleibt bei mir."
    ]
+  },
+  "allgemein": {
+   "vorbereitung": "Einverständnis der Eltern liegt vor (Elternbrief); Bäckerei und Café vorab informieren. · Weg und Orte abgehen (höchstens 10 Gehminuten); Treffpunkt, Signal, Handynummer der Leitung und 112 auf die Regelkarte. · Aufsicht: Die Leitung bleibt bei jedem Auftrag in Sichtweite. · Regenvariante: Aufträge im Haus spielen, Leitung als Verkäuferin, Stühle als Haltestelle.",
+   "elternbrief": "Einverständnis der Eltern liegt vor (Elternbrief); Bäckerei und Café vorab informieren."
   },
   "merkmale": {},
   "begruendung": "Gruppengang entfällt: Fachkraft und Kind gehen in die Stadt, das Kind zählt drei Minuten unauffällig die Blicke.",
@@ -3306,6 +3361,10 @@
     "Ein unfreundlicher Mensch ist ein Ergebnis, aber kein Beweis, dass dein alter Satz stimmt."
    ]
   },
+  "allgemein": {
+   "vorbereitung": "Einverständnis der Eltern liegt vor (Elternbrief); Bäckerei und Café vorab informieren. · Weg und Orte abgehen (höchstens 10 Gehminuten); Treffpunkt, Signal, Handynummer der Leitung und 112 auf die Regelkarte. · Aufsicht: Die Leitung bleibt bei jedem Auftrag in Sichtweite. · Regenvariante: Aufträge im Haus spielen, Leitung als Verkäuferin, Stühle als Haltestelle.",
+   "elternbrief": "Einverständnis der Eltern liegt vor (Elternbrief); Bäckerei und Café vorab informieren."
+  },
   "merkmale": {},
   "begruendung": "Reihum und Beobachter entfallen: Kind testet an drei Orten, Fachkraft bleibt in Sichtweite. Nur harmlose Aufträge.",
   "von": "agent",
@@ -3339,6 +3398,10 @@
     "Der alte Satz darf kommen – du musst ihm nur nicht mehr gehorchen.",
     "Was denkst du heute ein kleines bisschen anders über dich – nur, wenn du magst?"
    ]
+  },
+  "allgemein": {
+   "vorbereitung": "Einverständnis der Eltern liegt vor (Elternbrief); Bäckerei und Café vorab informieren. · Weg und Orte abgehen (höchstens 10 Gehminuten); Treffpunkt, Signal, Handynummer der Leitung und 112 auf die Regelkarte. · Aufsicht: Die Leitung bleibt bei jedem Auftrag in Sichtweite. · Regenvariante: Aufträge im Haus spielen, Leitung als Verkäuferin, Stühle als Haltestelle.",
+   "elternbrief": "Einverständnis der Eltern liegt vor (Elternbrief); Bäckerei und Café vorab informieren."
   },
   "merkmale": {},
   "begruendung": "Skills-Pass, Gruppenrunde und Mission entfallen; drei Schritte still und laut, Zahl nachher mit Anfang vergleichen.",
@@ -5494,6 +5557,9 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "vorbereitung": "Einverständnis der Eltern für Aufnahmen (Foto, Video, Ton) mit Zweck, Speicherort und Löschfrist einholen; nur Geräte der Einrichtung benutzen. · Mit der Leitung des Hauses klären: Wo bleibt der Clip, wer sieht ihn, wann wird er gelöscht; kein Hochladen, kein Weiterschicken. · Ruhigen Raum, Gerät mit Aufnahme-App, Ständer und die Karten (Vorlage) bereitlegen. · Die Leitung fügt die Aufnahmen nach der Stunde zusammen (höchstens 15 Minuten) und zeigt den Clip beim nächsten Treffen."
+  },
   "merkmale": {},
   "begruendung": "Wort, Zahl und Kamera-Lust mit Fingern gehen wörtlich zu zweit (Fachkraft macht mit). Kamera-Bezug: ab 11.",
   "von": "agent",
@@ -5531,6 +5597,9 @@
     "Du entscheidest selbst, ob du zu sehen oder zu hören bist. Stopp gilt immer, und die Aufnahme wird dann gelöscht."
    ]
   },
+  "allgemein": {
+   "vorbereitung": "Einverständnis der Eltern für Aufnahmen (Foto, Video, Ton) mit Zweck, Speicherort und Löschfrist einholen; nur Geräte der Einrichtung benutzen. · Mit der Leitung des Hauses klären: Wo bleibt der Clip, wer sieht ihn, wann wird er gelöscht; kein Hochladen, kein Weiterschicken. · Ruhigen Raum, Gerät mit Aufnahme-App, Ständer und die Karten (Vorlage) bereitlegen. · Die Leitung fügt die Aufnahmen nach der Stunde zusammen (höchstens 15 Minuten) und zeigt den Clip beim nächsten Treffen."
+  },
   "merkmale": {},
   "begruendung": "Mission der letzten Stunde und Gruppenprojekt ausgeschrieben; Aufnahmeregeln zu zweit. Aufnahmen nur mit Einverständnis.",
   "von": "agent",
@@ -5567,6 +5636,9 @@
     "Der Clip beantwortet drei Fragen: Wann hilft er, wie geht er, und was bringt er?"
    ]
   },
+  "allgemein": {
+   "vorbereitung": "Einverständnis der Eltern für Aufnahmen (Foto, Video, Ton) mit Zweck, Speicherort und Löschfrist einholen; nur Geräte der Einrichtung benutzen. · Mit der Leitung des Hauses klären: Wo bleibt der Clip, wer sieht ihn, wann wird er gelöscht; kein Hochladen, kein Weiterschicken. · Ruhigen Raum, Gerät mit Aufnahme-App, Ständer und die Karten (Vorlage) bereitlegen. · Die Leitung fügt die Aufnahmen nach der Stunde zusammen (höchstens 15 Minuten) und zeigt den Clip beim nächsten Treffen."
+  },
   "merkmale": {},
   "begruendung": "Klebepunkt-Abstimmung entfällt; Skill, Botschaft und Drehplan zu zweit, die Fachkraft übernimmt Ton oder Kamera.",
   "von": "agent",
@@ -5601,6 +5673,9 @@
     "Sag deinen wichtigsten Satz so, dass ihn die Wand ganz hinten versteht.",
     "Beim Gähnen darfst du übertreiben – ich mache mit."
    ]
+  },
+  "allgemein": {
+   "vorbereitung": "Einverständnis der Eltern für Aufnahmen (Foto, Video, Ton) mit Zweck, Speicherort und Löschfrist einholen; nur Geräte der Einrichtung benutzen. · Mit der Leitung des Hauses klären: Wo bleibt der Clip, wer sieht ihn, wann wird er gelöscht; kein Hochladen, kein Weiterschicken. · Ruhigen Raum, Gerät mit Aufnahme-App, Ständer und die Karten (Vorlage) bereitlegen. · Die Leitung fügt die Aufnahmen nach der Stunde zusammen (höchstens 15 Minuten) und zeigt den Clip beim nächsten Treffen."
   },
   "merkmale": {
    "laut": true
@@ -5640,6 +5715,9 @@
     "Stopp gilt immer: Wenn du die Karte hebst, endet die Aufnahme, und sie wird sofort gelöscht."
    ]
   },
+  "allgemein": {
+   "vorbereitung": "Einverständnis der Eltern für Aufnahmen (Foto, Video, Ton) mit Zweck, Speicherort und Löschfrist einholen; nur Geräte der Einrichtung benutzen. · Mit der Leitung des Hauses klären: Wo bleibt der Clip, wer sieht ihn, wann wird er gelöscht; kein Hochladen, kein Weiterschicken. · Ruhigen Raum, Gerät mit Aufnahme-App, Ständer und die Karten (Vorlage) bereitlegen. · Die Leitung fügt die Aufnahmen nach der Stunde zusammen (höchstens 15 Minuten) und zeigt den Clip beim nächsten Treffen."
+  },
   "merkmale": {},
   "begruendung": "Gruppenrollen und gemeinsame Auswahl entfallen; Probe, Dreh und Takes zu zweit, Stopp-Karte bleibt. Kamera: Belastung 1.",
   "von": "agent",
@@ -5676,6 +5754,9 @@
     "Schüttel die Anspannung raus – Hände, Arme, Beine, Schultern – und dann: Wer bist du wirklich?",
     "Sag deinen Namen und etwas, das du wirklich magst."
    ]
+  },
+  "allgemein": {
+   "vorbereitung": "Einverständnis der Eltern für Aufnahmen (Foto, Video, Ton) mit Zweck, Speicherort und Löschfrist einholen; nur Geräte der Einrichtung benutzen. · Mit der Leitung des Hauses klären: Wo bleibt der Clip, wer sieht ihn, wann wird er gelöscht; kein Hochladen, kein Weiterschicken. · Ruhigen Raum, Gerät mit Aufnahme-App, Ständer und die Karten (Vorlage) bereitlegen. · Die Leitung fügt die Aufnahmen nach der Stunde zusammen (höchstens 15 Minuten) und zeigt den Clip beim nächsten Treffen."
   },
   "merkmale": {},
   "begruendung": "Skills-Pass, Mission und Abstimmung über den Lieblingsort der Gruppe entfallen; Abschütteln und Namen zu zweit.",
@@ -6663,18 +6744,18 @@
    "text": "Die Fachkraft fragt nach der Wochen-Mission: Kam der Moment, und hat das Kind jemanden gefragt und nachgefragt? Daumen hoch, Mitte oder runter, ein Satz ist freiwillig. Dann die Leitfrage für heute: Was schaffen wir nur gemeinsam?",
    "sagen": [
     "Kam dein Moment, und hast du jemanden gefragt und nachgefragt – Daumen hoch, Mitte oder runter?",
-    "Letzte Woche ging es darum, was ihr gemeinsam habt – heute darum, was man nur gemeinsam schafft."
+    "Gemeinsamkeiten verbinden – heute geht es darum, was man nur gemeinsam schafft."
    ],
    "fr": {
     "text": "L’adulte demande où en est la mission de la semaine : le moment est-il venu, l’élève a-t-il posé une question puis demandé une précision ? Pouce en haut, au milieu ou en bas, une phrase est facultative. Puis la question du jour : qu’est-ce qu’on ne réussit qu’ensemble ?",
     "sagen": [
      "Ton moment est-il venu, et as-tu posé une question puis demandé une précision – pouce en haut, au milieu ou en bas ?",
-     "La semaine dernière, on a regardé ce qu’on a en commun – aujourd’hui, ce qu’on ne réussit qu’ensemble."
+     "Ce qu’on a en commun nous relie – aujourd’hui, on regarde ce qu’on ne réussit qu’ensemble."
     ]
    }
   },
   "merkmale": {},
-  "begruendung": "Mission der letzten Einheit und Klassenplakat ausgeschrieben; Daumen und ein Satz gehen zu zweit.",
+  "begruendung": "Mission der letzten Einheit und Klassenplakat ausgeschrieben; Daumen und ein Satz gehen zu zweit. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "7cb462f5"
@@ -6901,6 +6982,10 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "sagen.1": "Gemeinsame Regeln brauchen einen festen Platz: euren Klassenrat.",
+   "fr.sagen.1": "Les règles communes ont besoin d’une place fixe: votre conseil."
+  },
   "merkmale": {},
   "begruendung": "Brücke zum Klassenrat: Team-Regeln am Klassenplakat und das Thema „Hier entscheidet die Klasse“ brauchen die Klasse.",
   "von": "agent",
@@ -6979,6 +7064,9 @@
   "energie": 1,
   "belastung": 1,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "fr.text": "D’abord, l’enseignant·e montre la boîte aux lettres, et tous s’exercent à écrire un sujet sans nom; chaque jeune glisse un billet – même vide. Puis la classe tient sa première vraie séance: quatre volontaires prennent les rôles, la classe décide d’une question préparée, le secrétaire note la décision.\n• Boîte aux lettres (3 min): sujets, propositions et félicitations, sans nommer d’autres personnes; seul l’enseignant·e la vide après chaque cours et lit les billets le jour même; les billets avec un prénom ne sont jamais lus. Ce qui est urgent n’attend pas.\n• Écrire un sujet (9 min): exercice 2 – Ça me gêne quand… Je propose que…; transformer ensemble un billet d’exemple (« Le vestiaire, c’est nul »); pour finir, chacun glisse un billet.\n• Préparer (3 min): question et cadre au tableau (Vous décidez aujourd’hui de… Ne sont pas au choix…); quatre volontaires prennent les rôles, l’enseignant·e s’assoit à côté de la présidence.\n• Séance (18 min): la présidence lit sur la carte (sans retour); chaque îlot s’accorde en deux minutes sur une proposition; vote les yeux fermés, second tour s’il y en a plus de deux; puis: tout le monde peut-il vivre avec ? Le secrétaire note la décision dans le cahier du conseil et la lit; chacun la recopie dans l’exercice 3.\n• Clôture (2 min): fixer la date du prochain conseil et la noter dans le cahier du conseil."
+  },
   "merkmale": {},
   "begruendung": "Erste echte Sitzung des Klassenrats mit Vorsitz, Abstimmung und Protokoll; ohne Klasse nicht durchführbar.",
   "von": "agent",
@@ -7095,7 +7183,7 @@
     "Die Frage für heute: Was brauchst du, damit es dir gut geht?"
    ],
    "fr": {
-    "text": "Demander pour la mission de la dernière séance : ton moment est-il arrivé – et qu’as-tu fait ? Pouce en haut, au milieu ou en bas, une phrase si l’élève veut ; sans moment vécu, il le dit simplement. Puis le thème : ce dont chacun a besoin pour aller bien.",
+    "text": "Demander s’il y a eu récemment un moment où ce thème a compté – et ce que l’élève a fait. Pouce en haut, au milieu ou en bas, une phrase si l’élève veut; sans moment vécu, il le dit simplement. Puis le thème: ce dont chacun a besoin pour aller bien.",
     "sagen": [
      "Jusqu’ici, on a parlé du groupe – à partir d’aujourd’hui, tu te regardes toi-même.",
      "La question du jour : de quoi as-tu besoin pour aller bien ?"
@@ -7301,12 +7389,12 @@
   "einzelvariante": {
    "text": "Nach der Mission der letzten Stunde fragen: Kam der Moment, und gab es den kleinen Schritt oder die 4-7-8-Atmung? Daumen hoch, Mitte oder runter, auf Wunsch ein Satz; ein ausgebliebener Moment ist in Ordnung. Dann das Thema: Wie bin ich – und wie sehen mich andere?",
    "sagen": [
-    "Letzte Woche ging es darum, was du brauchst – heute geht es darum, wie du bist, und keine Art ist besser als die andere."
+    "Heute geht es darum, wie du bist – und keine Art ist besser als die andere."
    ],
    "fr": {
-    "text": "Demander pour la mission de la dernière séance : ton moment est-il arrivé – petit pas ou respiration 4-7-8 faits ? Pouce en haut, au milieu ou en bas, une phrase si l’élève veut ; un moment manqué, ce n’est pas grave. Puis le thème : comment suis-je – et comment les autres me voient-ils ?",
+    "text": "Demander s’il y a eu récemment un petit pas ou une respiration 4-7-8 – et comment c’était. Pouce en haut, au milieu ou en bas, une phrase si l’élève veut; un moment manqué, ce n’est pas grave. Puis le thème: comment suis-je – et comment les autres me voient-ils ?",
     "sagen": [
-     "La semaine dernière, on a parlé de ce dont tu as besoin – aujourd’hui, de comment tu es, et aucune manière d’être n’est meilleure que l’autre."
+     "Aujourd’hui, on parle de comment tu es – et aucune manière d’être n’est meilleure que l’autre."
     ]
    }
   },
@@ -7550,17 +7638,17 @@
   "einzelvariante": {
    "text": "Nach der Mission der letzten Stunde fragen: Kam der Moment, und war der oder die Jugendliche dort eher laut oder leise, oder wurde achtsames Hören ausprobiert? Daumen hoch, Mitte oder runter, auf Wunsch ein Satz. Dann das Thema nennen: Was hält mich, und was kann ich?",
    "sagen": [
-    "Letzte Woche ging es darum, wie du bist – heute darum, was du kannst und was dich hält, wenn es stürmt."
+    "Heute geht es darum, was du kannst und was dich hält, wenn es stürmt."
    ],
    "fr": {
-    "text": "Demander pour la mission de la dernière séance : le moment est-il arrivé, l’élève était-il plutôt expansif ou réservé, a-t-il essayé l’écoute attentive ? Pouce en haut, au milieu ou en bas, une phrase si l’élève veut. Puis le thème : ce qui me tient et ce que je sais faire.",
+    "text": "Demander s’il y a eu récemment un moment où l’élève était plutôt expansif ou réservé, et s’il a essayé l’écoute attentive. Pouce en haut, au milieu ou en bas, une phrase si l’élève veut. Puis le thème: ce qui me tient et ce que je sais faire.",
     "sagen": [
-     "La semaine dernière, on a parlé de comment tu es – aujourd’hui, de ce que tu sais faire et de ce qui te tient debout quand il y a de la tempête."
+     "Aujourd’hui, on parle de ce que tu sais faire et de ce qui te tient debout quand il y a de la tempête."
     ]
    }
   },
   "merkmale": {},
-  "begruendung": "Wochen-Mission und Team-Plakate sind Kursstruktur; Rückfrage ans Kind, dann Thema Halt und Können.",
+  "begruendung": "Wochen-Mission und Team-Plakate sind Kursstruktur; Rückfrage ans Kind, dann Thema Halt und Können. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "edd561a1"
@@ -7789,7 +7877,7 @@
     "Ist ein Tank leer, meldet sich oft ein Gefühl – in den nächsten Stunden geht es darum, Gefühle zu verstehen, nicht sie loszuwerden."
    ],
    "fr": {
-    "text": "Demander pour la mission de la dernière séance : le moment est-il venu, la force a-t-elle servi ? Pouce en haut, au milieu ou en bas, une phrase si l’élève veut ; sans moment vécu, l’élève le dit simplement. Puis ouvrir le thème : qu’est-ce que je ressens – et à quoi ça sert ?",
+    "text": "Demander s’il y a eu récemment un moment où une force a servi. Pouce en haut, au milieu ou en bas, une phrase si l’élève veut; sans moment vécu, l’élève le dit simplement. Puis ouvrir le thème: qu’est-ce que je ressens – et à quoi ça sert ?",
     "sagen": [
      "Quand un réservoir est vide, une émotion se manifeste souvent – ces prochaines séances, il s’agit de comprendre les émotions, pas de s’en débarrasser."
     ]
@@ -8039,13 +8127,13 @@
   "einzelvariante": {
    "text": "Zur letzten Mission fragen: Kam der Moment, wurde die Farbsuche gemacht? Daumen hoch, Mitte oder runter. Dann die Geschichte „Jana zieht um“ in drei Sätzen vorstellen: Jana ist zwölf, in ihrem Kopf arbeiten fünf Gefühle am Steuerpult, und wer dort steht, bestimmt mit, was sie tut.",
    "sagen": [
-    "Letzte Woche hast du die Botschaften der Gefühle gefunden – weißt du noch die von Angst und von Wut?",
+    "Jedes Gefühl hat eine Botschaft – weißt du die von Angst und von Wut?",
     "Heute baust du Janas Geschichte selbst – und entscheidest jedes Mal, wer ans Pult muss."
    ],
    "fr": {
     "text": "Demander pour la mission : le moment est-il venu, la chasse aux couleurs faite ? Pouce en haut, au milieu ou en bas. Puis présenter « Jana déménage » en trois phrases : Jana a douze ans, cinq émotions travaillent à la console dans sa tête, et celle aux commandes décide en partie de ce qu’elle fait.",
     "sagen": [
-     "La semaine dernière, tu as trouvé les messages des émotions – te souviens-tu de celui de la peur et de celui de la colère ?",
+     "Chaque émotion a un message – connais-tu celui de la peur et celui de la colère ?",
      "Aujourd’hui, tu construis toi-même l’histoire de Jana – et tu décides chaque fois qui doit aller aux commandes."
     ]
    }
@@ -8278,7 +8366,7 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft fragt zur Mission der letzten Woche: Kam der Moment, und hat der oder die Jugendliche still benannt, wer am Pult stand? Daumen hoch, Mitte oder runter; wer mag, erzählt. Dann das Thema: Gefühle passieren im ganzen Körper, und oft meldet sich der Körper zuerst.",
+   "text": "Die Fachkraft fragt nach einem Moment der letzten Tage: Hat der oder die Jugendliche still benannt, wer am Pult stand? Daumen hoch, Mitte oder runter; wer mag, erzählt. Dann das Thema: Gefühle passieren im ganzen Körper, und oft meldet sich der Körper zuerst.",
    "sagen": [
     "Jana merkt in der Geschichte oft erst spät, wer am Pult steht – woran merkst du es bei dir?",
     "Heute suchst du, wo deine Gefühle im Körper wohnen – und welches Signal als Erstes kommt."
@@ -8492,6 +8580,9 @@
     ]
    }
   },
+  "allgemein": {
+   "vorbereitung": "Entlang der längsten Wand eine Linie aus Malerkrepp kleben, daneben die Zettel 0 bis 10 legen. · Gefühlskarten bereitlegen: je Tischgruppe ein Umschlag mit Seite 1 und 2. · Die Skills des Trimesters an die Tafel schreiben (Skills-Pass, Skill-Karten) – für die Trimester-Einschätzung."
+  },
   "merkmale": {},
   "begruendung": "Freiwillige und Plakatauszählung entfallen; Jugendliche/r klebt zwei Punkte, die Fachkraft macht vor.",
   "von": "agent",
@@ -8520,7 +8611,7 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft fragt zur Mission der letzten Woche: Kam der Moment, und wurde das Warnsignal bemerkt? Daumen hoch, Mitte oder runter; in einem Satz erzählen, wo das war. „Der Moment kam nicht“ ist eine gute Antwort. Dann das Thema nennen: gemischte Gefühle.",
+   "text": "Die Fachkraft fragt nach einem Moment der letzten Tage: Wurde ein Warnsignal bemerkt? Daumen hoch, Mitte oder runter; in einem Satz erzählen, wo das war. „Der Moment kam nicht“ ist eine gute Antwort. Dann das Thema nennen: gemischte Gefühle.",
    "sagen": [
     "Kam dein Moment – und hast du dein Warnsignal bemerkt?",
     "Vorhin hast du vielleicht zwei Gefühle geklebt – geht das überhaupt, zwei auf einmal?"
@@ -8533,8 +8624,11 @@
     ]
    }
   },
+  "allgemein": {
+   "vorbereitung": "Entlang der längsten Wand eine Linie aus Malerkrepp kleben, daneben die Zettel 0 bis 10 legen. · Gefühlskarten bereitlegen: je Tischgruppe ein Umschlag mit Seite 1 und 2. · Die Skills des Trimesters an die Tafel schreiben (Skills-Pass, Skill-Karten) – für die Trimester-Einschätzung."
+  },
   "merkmale": {},
-  "begruendung": "Wochen-Mission und Tafel als Bezug ausgeschrieben; eine Stimme der Klasse wird die Person.",
+  "begruendung": "Wochen-Mission und Tafel als Bezug ausgeschrieben; eine Stimme der Klasse wird die Person. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.8,
   "h": "55499ccf"
@@ -8573,6 +8667,9 @@
      "Même situation – et nous avons coché autre chose. Qu’est-ce que ça nous dit ?"
     ]
    }
+  },
+  "allgemein": {
+   "vorbereitung": "Entlang der längsten Wand eine Linie aus Malerkrepp kleben, daneben die Zettel 0 bis 10 legen. · Gefühlskarten bereitlegen: je Tischgruppe ein Umschlag mit Seite 1 und 2. · Die Skills des Trimesters an die Tafel schreiben (Skills-Pass, Skill-Karten) – für die Trimester-Einschätzung."
   },
   "merkmale": {},
   "begruendung": "Handzeichen-Auszählung der Klasse wird Vergleich zu zweit; eigener Moment ist persönlich, nichts wird vorgelesen.",
@@ -8613,6 +8710,9 @@
      "Moi je suis à 6, toi à 2 – qu’est-ce qui fait la différence ?"
     ]
    }
+  },
+  "allgemein": {
+   "vorbereitung": "Entlang der längsten Wand eine Linie aus Malerkrepp kleben, daneben die Zettel 0 bis 10 legen. · Gefühlskarten bereitlegen: je Tischgruppe ein Umschlag mit Seite 1 und 2. · Die Skills des Trimesters an die Tafel schreiben (Skills-Pass, Skill-Karten) – für die Trimester-Einschätzung."
   },
   "merkmale": {},
   "begruendung": "Aufstellung geht zu zweit: statt zwei Mitschülern vergleichen Kind und Fachkraft. Kurz, also Einstieg mit Bewegung.",
@@ -8657,6 +8757,9 @@
     ]
    }
   },
+  "allgemein": {
+   "vorbereitung": "Entlang der längsten Wand eine Linie aus Malerkrepp kleben, daneben die Zettel 0 bis 10 legen. · Gefühlskarten bereitlegen: je Tischgruppe ein Umschlag mit Seite 1 und 2. · Die Skills des Trimesters an die Tafel schreiben (Skills-Pass, Skill-Karten) – für die Trimester-Einschätzung."
+  },
   "merkmale": {},
   "begruendung": "Tischgruppen und Klassenraten entfallen: Jugendliche/r spielt, Fachkraft rät. Gefühle ohne Worte kreativ ausdrücken.",
   "von": "agent",
@@ -8695,6 +8798,9 @@
      "Et maintenant ? Le chiffre est resté pareil ou il a changé ?"
     ]
    }
+  },
+  "allgemein": {
+   "vorbereitung": "Entlang der längsten Wand eine Linie aus Malerkrepp kleben, daneben die Zettel 0 bis 10 legen. · Gefühlskarten bereitlegen: je Tischgruppe ein Umschlag mit Seite 1 und 2. · Die Skills des Trimesters an die Tafel schreiben (Skills-Pass, Skill-Karten) – für die Trimester-Einschätzung."
   },
   "merkmale": {},
   "begruendung": "Der Schritt bündelt Atemübung und Trimester-Abschluss der Klasse; mit einem Kind taugt nur die Bauchatmung.",
@@ -8736,6 +8842,9 @@
     ]
    }
   },
+  "allgemein": {
+   "vorbereitung": "Anspannungsskala als A3-Plakat zeichnen: Grün 0–30, Gelb 30–70, Rot 70–100; die Zonen bleiben leer. · Skill-Karten fünfmal kopieren und schneiden, je Tischgruppe einen Satz in einen Umschlag. Plakat „Was sind Skills?“ bereitlegen, wenn es eins gibt. · Tafelbilder für Handmodell und Faustregel vorbereiten; die Szene aus Schritt 6 einmal laut lesen."
+  },
   "merkmale": {},
   "begruendung": "Freiwillige entfallen; Fachkraft macht vor, Jugendliche/r zeigt Wort und Zahl. Einführung der Anspannungszahl.",
   "von": "agent",
@@ -8776,6 +8885,9 @@
      "La dernière fois, il s’agissait de la force d’une émotion ; désormais, de ce qui aide quand elle devient trop forte."
     ]
    }
+  },
+  "allgemein": {
+   "vorbereitung": "Anspannungsskala als A3-Plakat zeichnen: Grün 0–30, Gelb 30–70, Rot 70–100; die Zonen bleiben leer. · Skill-Karten fünfmal kopieren und schneiden, je Tischgruppe einen Satz in einen Umschlag. Plakat „Was sind Skills?“ bereitlegen, wenn es eins gibt. · Tafelbilder für Handmodell und Faustregel vorbereiten; die Szene aus Schritt 6 einmal laut lesen."
   },
   "merkmale": {},
   "begruendung": "Wochen-Mission und Kapitelplan der Klasse ausgeschrieben; Rückblick mit Daumen, dann Ausblick auf den Skills-Koffer.",
@@ -8820,8 +8932,11 @@
     ]
    }
   },
+  "allgemein": {
+   "vorbereitung": "Anspannungsskala als A3-Plakat zeichnen: Grün 0–30, Gelb 30–70, Rot 70–100; die Zonen bleiben leer. · Skill-Karten fünfmal kopieren und schneiden, je Tischgruppe einen Satz in einen Umschlag. Plakat „Was sind Skills?“ bereitlegen, wenn es eins gibt. · Tafelbilder für Handmodell und Faustregel vorbereiten; die Szene aus Schritt 6 einmal laut lesen."
+  },
   "merkmale": {},
-  "begruendung": "Zonen und Handmodell gehen zu zweit, Freiwillige entfallen; Merkmal „laut“ trifft nicht zu.",
+  "begruendung": "Zonen und Handmodell gehen zu zweit, Freiwillige entfallen; Merkmal „laut“ trifft nicht zu. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "415abc5b"
@@ -8850,6 +8965,9 @@
   "energie": 2,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "vorbereitung": "Anspannungsskala als A3-Plakat zeichnen: Grün 0–30, Gelb 30–70, Rot 70–100; die Zonen bleiben leer. · Skill-Karten fünfmal kopieren und schneiden, je Tischgruppe einen Satz in einen Umschlag. Plakat „Was sind Skills?“ bereitlegen, wenn es eins gibt. · Tafelbilder für Handmodell und Faustregel vorbereiten; die Szene aus Schritt 6 einmal laut lesen."
+  },
   "merkmale": {},
   "begruendung": "Zahlen-Statuen am Platz: Fachkraft nennt Zahl und Situation, die Person zeigt sie mit dem Körper. Ohne Umbau, Energie 2.",
   "von": "agent",
@@ -8892,6 +9010,9 @@
      "Les désaccords sont bienvenus : la musique calme l’un à 80 et énerve l’autre dès 40."
     ]
    }
+  },
+  "allgemein": {
+   "vorbereitung": "Anspannungsskala als A3-Plakat zeichnen: Grün 0–30, Gelb 30–70, Rot 70–100; die Zonen bleiben leer. · Skill-Karten fünfmal kopieren und schneiden, je Tischgruppe einen Satz in einen Umschlag. Plakat „Was sind Skills?“ bereitlegen, wenn es eins gibt. · Tafelbilder für Handmodell und Faustregel vorbereiten; die Szene aus Schritt 6 einmal laut lesen."
   },
   "merkmale": {},
   "begruendung": "Tischgruppen und Klassenabstimmung entfallen: Jugendliche/r sortiert, die Fachkraft sortiert mit und widerspricht.",
@@ -8936,6 +9057,9 @@
      "Stop : mains à plat sur la table, adosse-toi – et maintenant, on souffle, plus longtemps qu’on inspire."
     ]
    }
+  },
+  "allgemein": {
+   "vorbereitung": "Anspannungsskala als A3-Plakat zeichnen: Grün 0–30, Gelb 30–70, Rot 70–100; die Zonen bleiben leer. · Skill-Karten fünfmal kopieren und schneiden, je Tischgruppe einen Satz in einen Umschlag. Plakat „Was sind Skills?“ bereitlegen, wenn es eins gibt. · Tafelbilder für Handmodell und Faustregel vorbereiten; die Szene aus Schritt 6 einmal laut lesen."
   },
   "merkmale": {},
   "begruendung": "Skills-Pass und Mission der Klasse entfallen; Zahl vorher und nachher, drei Schritte und Momentwahl bleiben.",
@@ -9006,7 +9130,7 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft fragt zur Mission der letzten Woche: Kam der Moment, und wurde „Stopp, zurück, ausatmen“ gemacht? Daumen hoch, Mitte oder runter, Zahl vorher und nachher. Kam er nicht, gibt es keinen Kommentar. Dann das Thema: Heute wird jeder Skill wie in einem Experiment getestet.",
+   "text": "Die Fachkraft fragt nach einem Moment der letzten Tage: Wurde „Stopp, zurück, ausatmen“ gemacht? Daumen hoch, Mitte oder runter, Zahl vorher und nachher. Kam er nicht, gibt es keinen Kommentar. Dann das Thema: Heute wird jeder Skill wie in einem Experiment getestet.",
    "sagen": [
     "Kam dein Moment – und was hast du gemacht, Zahl vorher, Zahl nachher?",
     "Heute bist du Versuchsperson und Forschende zugleich – auch „hilft kaum“ ist ein Ergebnis."
@@ -9226,7 +9350,7 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft fragt zur Mission der letzten Woche: Kam der Moment, und welchen Skill hat der oder die Jugendliche gemacht? Daumen hoch, Mitte oder runter, Zahl vorher und nachher. Dann das Thema: Körper-Skills verbrauchen den Alarm oder bremsen ihn, Sinnes-Skills lenken die Aufmerksamkeit um.",
+   "text": "Die Fachkraft fragt nach einem Moment der letzten Tage: Welchen Skill hat der oder die Jugendliche gemacht? Daumen hoch, Mitte oder runter, Zahl vorher und nachher. Dann das Thema: Körper-Skills verbrauchen den Alarm oder bremsen ihn, Sinnes-Skills lenken die Aufmerksamkeit um.",
    "sagen": [
     "Kam dein Moment – und was hast du gemacht, Zahl vorher, Zahl nachher?",
     "Heute geht es um Skills, die über Hände, Ohren, Augen und Nase funktionieren."
@@ -9729,7 +9853,7 @@
   "einzelvariante": {
    "text": "Die Fachkraft fragt nach der Wochen-Mission: Kam dein Moment, hast du den Ort besucht oder dem Kopf einen Job gegeben? Daumen hoch, Mitte oder runter. Dann das Ziel nennen: Heute packt das Kind aus allem Getesteten den Skills-Koffer und macht einen Plan für Grün, Gelb und Rot.",
    "sagen": [
-    "Du hast in den letzten Wochen viele Skills getestet – heute suchst du die aus, die wirklich zu dir passen.",
+    "Es gibt viele Skills – heute suchst du die aus, die wirklich zu dir passen.",
     "Kam dein Moment – und was hast du gemacht?"
    ],
    "fr": {
@@ -9742,7 +9866,7 @@
   },
   "merkmale": {},
   "sensibel": null,
-  "begruendung": "Mission als Frage ausgeschrieben, Daumen zu zweit; Skill im Alltag angewendet (V-25).",
+  "begruendung": "Mission als Frage ausgeschrieben, Daumen zu zweit; Skill im Alltag angewendet (V-25). Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "731e8b20"
@@ -11863,13 +11987,13 @@
    "text": "Die Fachkraft fragt nach der Wochen-Mission: Kam dein Moment, und was hast du gemacht? Daumen hoch: Plan oder drei Atemzüge probiert; Mitte: etwas anderes gemacht; runter: Moment kam nicht. Erzählen ist freiwillig. Dann das Thema: Echt oder fake – woran erkenne ich das?",
    "sagen": [
     "Kam dein Moment, und was hast du gemacht – Daumen hoch, Mitte oder runter?",
-    "Letzte Woche ging es um perfekte Fotos – heute um Bilder, die es nie gegeben hat."
+    "Perfekte Fotos kennen alle – heute geht es um Bilder, die es nie gegeben hat."
    ],
    "fr": {
     "text": "L’adulte revient sur la mission de la semaine : ton moment est-il venu, et qu’as-tu fait ? Pouce en haut : j’ai essayé mon plan ou les trois respirations ; au milieu : j’ai fait autre chose ; en bas : le moment n’est pas venu. Raconter est facultatif. Puis le thème : vrai ou faux ?",
     "sagen": [
      "Ton moment est-il venu, et qu’as-tu fait – pouce en haut, au milieu ou en bas ?",
-     "La semaine dernière, c’était les photos parfaites – aujourd’hui, des images qui n’ont jamais existé."
+     "Tout le monde connaît les photos parfaites – aujourd’hui, des images qui n’ont jamais existé."
     ]
    }
   },
@@ -12282,6 +12406,9 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "achtung": "Wahlstunde, die persönlichste des Kapitels: nur halten, wenn die Klasse 15 Minuten ruhig für sich schreiben kann. Blätter werden weder eingesammelt noch gelesen, niemand liest vor; die Grenze der Vertraulichkeit vorher offen sagen, nie Geheimhaltung versprechen. Sehr negative Sätze über sich – nichts wert zu sein, ohne einen wäre es besser – oder Hinweise auf Abwertung oder Gewalt zu Hause, gehört oder zufällig gesehen: nicht vor der Klasse vertiefen, die Person nach der Stunde ansprechen, am selben Tag den SePAS informieren, bei akuter Gefahr nicht allein lassen, 112."
+  },
   "merkmale": {},
   "begruendung": "Punkt aufs Gefühlsrad, Zahl und langsame Fingeratmung gehen mit einem Kind; die Fachkraft beginnt und lässt Pausen.",
   "von": "agent",
@@ -12324,6 +12451,9 @@
      "Si je m’inquiète sérieusement pour toi, je cherche de l’aide – et je te le dis avant."
     ]
    }
+  },
+  "allgemein": {
+   "achtung": "Wahlstunde, die persönlichste des Kapitels: nur halten, wenn die Klasse 15 Minuten ruhig für sich schreiben kann. Blätter werden weder eingesammelt noch gelesen, niemand liest vor; die Grenze der Vertraulichkeit vorher offen sagen, nie Geheimhaltung versprechen. Sehr negative Sätze über sich – nichts wert zu sein, ohne einen wäre es besser – oder Hinweise auf Abwertung oder Gewalt zu Hause, gehört oder zufällig gesehen: nicht vor der Klasse vertiefen, die Person nach der Stunde ansprechen, am selben Tag den SePAS informieren, bei akuter Gefahr nicht allein lassen, 112."
   },
   "merkmale": {},
   "begruendung": "Mission nachfragen, privaten Rahmen für das Schreiben nennen: nichts wird gelesen, Grenze der Vertraulichkeit offen.",
@@ -12368,6 +12498,9 @@
     ]
    }
   },
+  "allgemein": {
+   "achtung": "Wahlstunde, die persönlichste des Kapitels: nur halten, wenn die Klasse 15 Minuten ruhig für sich schreiben kann. Blätter werden weder eingesammelt noch gelesen, niemand liest vor; die Grenze der Vertraulichkeit vorher offen sagen, nie Geheimhaltung versprechen. Sehr negative Sätze über sich – nichts wert zu sein, ohne einen wäre es besser – oder Hinweise auf Abwertung oder Gewalt zu Hause, gehört oder zufällig gesehen: nicht vor der Klasse vertiefen, die Person nach der Stunde ansprechen, am selben Tag den SePAS informieren, bei akuter Gefahr nicht allein lassen, 112."
+  },
   "merkmale": {},
   "begruendung": "Tischgruppen und Vorstellen entfallen: eine Figurenkarte, drei Fragen und der Freundes-Satz zu zweit.",
   "von": "agent",
@@ -12390,6 +12523,9 @@
   "energie": 2,
   "belastung": 0,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "achtung": "Wahlstunde, die persönlichste des Kapitels: nur halten, wenn die Klasse 15 Minuten ruhig für sich schreiben kann. Blätter werden weder eingesammelt noch gelesen, niemand liest vor; die Grenze der Vertraulichkeit vorher offen sagen, nie Geheimhaltung versprechen. Sehr negative Sätze über sich – nichts wert zu sein, ohne einen wäre es besser – oder Hinweise auf Abwertung oder Gewalt zu Hause, gehört oder zufällig gesehen: nicht vor der Klasse vertiefen, die Person nach der Stunde ansprechen, am selben Tag den SePAS informieren, bei akuter Gefahr nicht allein lassen, 112."
+  },
   "merkmale": {
    "wettbewerb": true
   },
@@ -12421,8 +12557,11 @@
   "energie": 1,
   "belastung": 1,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "achtung": "Wahlstunde, die persönlichste des Kapitels: nur halten, wenn die Klasse 15 Minuten ruhig für sich schreiben kann. Blätter werden weder eingesammelt noch gelesen, niemand liest vor; die Grenze der Vertraulichkeit vorher offen sagen, nie Geheimhaltung versprechen. Sehr negative Sätze über sich – nichts wert zu sein, ohne einen wäre es besser – oder Hinweise auf Abwertung oder Gewalt zu Hause, gehört oder zufällig gesehen: nicht vor der Klasse vertiefen, die Person nach der Stunde ansprechen, am selben Tag den SePAS informieren, bei akuter Gefahr nicht allein lassen, 112."
+  },
   "merkmale": {},
-  "begruendung": "Allein und privat schreiben, Fachkraft hilft nur auf Nachfrage und liest nicht mit: geht so.",
+  "begruendung": "Allein und privat schreiben, Fachkraft hilft nur auf Nachfrage und liest nicht mit: geht so. Kursverweis ersetzt.",
   "von": "agent",
   "sicher": 0.85,
   "h": "544e73b6"
@@ -12464,6 +12603,9 @@
     ]
    }
   },
+  "allgemein": {
+   "achtung": "Wahlstunde, die persönlichste des Kapitels: nur halten, wenn die Klasse 15 Minuten ruhig für sich schreiben kann. Blätter werden weder eingesammelt noch gelesen, niemand liest vor; die Grenze der Vertraulichkeit vorher offen sagen, nie Geheimhaltung versprechen. Sehr negative Sätze über sich – nichts wert zu sein, ohne einen wäre es besser – oder Hinweise auf Abwertung oder Gewalt zu Hause, gehört oder zufällig gesehen: nicht vor der Klasse vertiefen, die Person nach der Stunde ansprechen, am selben Tag den SePAS informieren, bei akuter Gefahr nicht allein lassen, 112."
+  },
   "merkmale": {},
   "begruendung": "Nur der Skill: drei Schritte, dann eine kleine gute Sache; Skills-Pass, Mission und Moment entfallen.",
   "von": "agent",
@@ -12503,6 +12645,9 @@
      "Seulement raconter, pas expliquer – tu n’as pas à dire si c’était ta propre tête."
     ]
    }
+  },
+  "allgemein": {
+   "vorbereitung": "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln groß auf ein Plakat. · Fallakten kopieren, ausschneiden; einen Fall, der einer Lage in der Klasse ähnelt, durch die Reserve ersetzen. · Glaubenssatz-Karten bereitlegen; nach der Stunde wieder in die Umschläge sortieren."
   },
   "merkmale": {},
   "begruendung": "Detektivfrage bezieht sich auf die Karten der Vorwoche: Kind erzählt kurz, Fachkraft beginnt und erklärt nichts.",
@@ -12546,6 +12691,9 @@
      "Ta voix intérieure affirme parfois « Tu es nul ». Aujourd’hui, tu vérifies si elle a des preuves : un détective veut seulement savoir ce qui est vrai."
     ]
    }
+  },
+  "allgemein": {
+   "vorbereitung": "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln groß auf ein Plakat. · Fallakten kopieren, ausschneiden; einen Fall, der einer Lage in der Klasse ähnelt, durch die Reserve ersetzen. · Glaubenssatz-Karten bereitlegen; nach der Stunde wieder in die Umschläge sortieren."
   },
   "merkmale": {},
   "begruendung": "Wochen-Mission mit Daumen, ohne Klassenstimme; dann das Bild des Detektivs, der nicht einmal der inneren Stimme glaubt.",
@@ -12591,6 +12739,9 @@
     ]
    }
   },
+  "allgemein": {
+   "vorbereitung": "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln groß auf ein Plakat. · Fallakten kopieren, ausschneiden; einen Fall, der einer Lage in der Klasse ähnelt, durch die Reserve ersetzen. · Glaubenssatz-Karten bereitlegen; nach der Stunde wieder in die Umschläge sortieren."
+  },
   "merkmale": {},
   "begruendung": "Waage und eine Fallakte zu zweit statt Tischgruppen; Urteil und neuer Satz nach den drei Regeln. Vorstellen entfällt.",
   "von": "agent",
@@ -12614,6 +12765,9 @@
   "energie": 2,
   "belastung": 0,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "vorbereitung": "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln groß auf ein Plakat. · Fallakten kopieren, ausschneiden; einen Fall, der einer Lage in der Klasse ähnelt, durch die Reserve ersetzen. · Glaubenssatz-Karten bereitlegen; nach der Stunde wieder in die Umschläge sortieren."
+  },
   "merkmale": {},
   "begruendung": "Der Dirigent verschwindet in der Klasse; zu zweit gäbe es nichts zu finden. Merkmal „laut“ war falsch (Klatschen).",
   "von": "agent",
@@ -12645,6 +12799,9 @@
   "energie": 1,
   "belastung": 1,
   "einzeltauglich": "ja",
+  "allgemein": {
+   "vorbereitung": "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln groß auf ein Plakat. · Fallakten kopieren, ausschneiden; einen Fall, der einer Lage in der Klasse ähnelt, durch die Reserve ersetzen. · Glaubenssatz-Karten bereitlegen; nach der Stunde wieder in die Umschläge sortieren."
+  },
   "merkmale": {},
   "begruendung": "Satz prüfen wie ein Detektiv und Kärtchen schreiben geht allein mit der Fachkraft; Satzwahl bleibt privat.",
   "von": "agent",
@@ -12688,6 +12845,9 @@
     ]
    }
   },
+  "allgemein": {
+   "vorbereitung": "Tafelbild: oben der Fall Mathis, darunter eine leere Waage; die drei Regeln groß auf ein Plakat. · Fallakten kopieren, ausschneiden; einen Fall, der einer Lage in der Klasse ähnelt, durch die Reserve ersetzen. · Glaubenssatz-Karten bereitlegen; nach der Stunde wieder in die Umschläge sortieren."
+  },
   "merkmale": {},
   "begruendung": "Skills-Pass, Mission und Moment entfallen; drei Sätze innerlich, dann laut mit der Fachkraft bei einer kleinen Panne.",
   "von": "agent",
@@ -12721,7 +12881,7 @@
     "Kärtchen vergessen – kein Problem, du bekommst gleich ein Ersatzkärtchen."
    ],
    "fr": {
-    "text": "L’élève colle sa gommette sur la roue, puis ils montrent à trois leur tension (0–10 doigts pour 0–100) ; l’adulte commence. Question : as-tu ta petite carte de la dernière séance ? Sans commentaire ; qui l’a oubliée reçoit une carte de remplacement.",
+    "text": "L’élève colle sa gommette sur la roue, puis ils montrent à trois leur tension (0–10 doigts pour 0–100); l’adulte commence. Question: as-tu ta petite carte ? Sans commentaire; qui l’a oubliée reçoit une carte de remplacement.",
     "sagen": [
      "Une gommette pour ton émotion, puis ton chiffre à trois – je commence : 30, je me réjouis d’aujourd’hui.",
      "Carte oubliée – pas de problème, tu en auras tout de suite une de remplacement."
@@ -13688,6 +13848,9 @@
     ]
    }
   },
+  "allgemein": {
+   "vorbereitung": "Wer neu dazukommt, vorher einer Gruppe zuteilen, am besten mit einer Aufgabe hinter der Bühne. · An die Tafel: Plan, Reihenfolge A–E, Paten (B gibt A Rückmeldung … A gibt E) und die vier Schritte der Rückmeldung. · Bühne vorn freiräumen, Tüten auf die Gruppentische; Beamer und Tablet testen, wenn ein Video läuft."
+  },
   "merkmale": {},
   "begruendung": "Reihum und Frage nach fehlenden Gruppenmitgliedern entfallen; Rad und Lampenfieber-Zahl gehen zu zweit.",
   "von": "agent",
@@ -13729,6 +13892,9 @@
      "Aujourd’hui, la phrase « mon corps se prépare » monte sur scène."
     ]
    }
+  },
+  "allgemein": {
+   "vorbereitung": "Wer neu dazukommt, vorher einer Gruppe zuteilen, am besten mit einer Aufgabe hinter der Bühne. · An die Tafel: Plan, Reihenfolge A–E, Paten (B gibt A Rückmeldung … A gibt E) und die vier Schritte der Rückmeldung. · Bühne vorn freiräumen, Tüten auf die Gruppentische; Beamer und Tablet testen, wenn ein Video läuft."
   },
   "merkmale": {},
   "begruendung": "Mission der letzten Einheit und Tafelplan der Klasse ausgeschrieben; Daumen und Plan gehen zu zweit.",
@@ -13773,6 +13939,9 @@
     ]
    }
   },
+  "allgemein": {
+   "vorbereitung": "Wer neu dazukommt, vorher einer Gruppe zuteilen, am besten mit einer Aufgabe hinter der Bühne. · An die Tafel: Plan, Reihenfolge A–E, Paten (B gibt A Rückmeldung … A gibt E) und die vier Schritte der Rückmeldung. · Bühne vorn freiräumen, Tüten auf die Gruppentische; Beamer und Tablet testen, wenn ein Video läuft."
+  },
   "merkmale": {},
   "begruendung": "Partnergruppen und Generalprobe entfallen; Probe mit Regie-Stopps und vier Rückmeldeschritte zu zweit.",
   "von": "agent",
@@ -13815,6 +13984,9 @@
     ]
    }
   },
+  "allgemein": {
+   "vorbereitung": "Wer neu dazukommt, vorher einer Gruppe zuteilen, am besten mit einer Aufgabe hinter der Bühne. · An die Tafel: Plan, Reihenfolge A–E, Paten (B gibt A Rückmeldung … A gibt E) und die vier Schritte der Rückmeldung. · Bühne vorn freiräumen, Tüten auf die Gruppentische; Beamer und Tablet testen, wenn ein Video läuft."
+  },
   "merkmale": {
    "laut": true
   },
@@ -13845,6 +14017,9 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "vorbereitung": "Wer neu dazukommt, vorher einer Gruppe zuteilen, am besten mit einer Aufgabe hinter der Bühne. · An die Tafel: Plan, Reihenfolge A–E, Paten (B gibt A Rückmeldung … A gibt E) und die vier Schritte der Rückmeldung. · Bühne vorn freiräumen, Tüten auf die Gruppentische; Beamer und Tablet testen, wenn ein Video läuft."
+  },
   "merkmale": {},
   "begruendung": "Aufführung vor der Klasse mit Paten, Applaus und Nachgespräch; das Zeigen vor der Fachkraft steht im Schritt davor.",
   "von": "agent",
@@ -13888,6 +14063,9 @@
      "Merci d’avoir pris ce rôle – maintenant, tu es de nouveau toi."
     ]
    }
+  },
+  "allgemein": {
+   "vorbereitung": "Wer neu dazukommt, vorher einer Gruppe zuteilen, am besten mit einer Aufgabe hinter der Bühne. · An die Tafel: Plan, Reihenfolge A–E, Paten (B gibt A Rückmeldung … A gibt E) und die vier Schritte der Rückmeldung. · Bühne vorn freiräumen, Tüten auf die Gruppentische; Beamer und Tablet testen, wenn ein Video läuft."
   },
   "merkmale": {},
   "begruendung": "Skills-Pass, Mission, Dank an die Klasse und Tüten entfallen; Rolle ablegen zu zweit, Video wird gelöscht.",
@@ -13953,6 +14131,9 @@
   "energie": 1,
   "belastung": 1,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "fr.sagen.1": "Aujourd’hui, on regarde en arrière, vous vous écrivez une lettre, et on se dit vraiment au revoir."
+  },
   "merkmale": {},
   "begruendung": "Letzter Punkt am Jahresweg der Klasse und Applaus für die Klasse; Jahresabschluss der Gruppe, zu zweit nicht sinnvoll.",
   "von": "agent",

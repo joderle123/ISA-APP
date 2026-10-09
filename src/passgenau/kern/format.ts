@@ -233,6 +233,8 @@ export type SchrittMeta = Omit<Stundenschritt, 'titel' | 'text' | 'sagen' | 'wen
   stelle?: number
   /** französische Einzelvariante (Beschriftung) – landet beim Laden in `fr.einzelvariante` */
   einzelvarianteFr?: { text: string; sagen?: string[] }
+  /** Texte ohne Kursbezug (Beschriftung `allgemein`): Pfad → Text; ersetzt beim Laden die Texte aus der Quelle */
+  allgemein?: Record<string, string>
 }
 
 export interface RohSchritt extends RohZusatz {
@@ -270,6 +272,8 @@ export interface RohSchritt extends RohZusatz {
   /** Einzelvariante (Beschriftung): Text und Sätze zum Sagen, DE und FR */
   ev?: { t: string; s?: string[] }
   evf?: { t: string; s?: string[] }
+  /** Texte ohne Kursbezug (Beschriftung `allgemein`): Pfad → Text */
+  ag?: Record<string, string>
 }
 
 const evPack = (v: { text: string; sagen?: string[] } | undefined) => (v ? { t: v.text, ...(v.sagen?.length ? { s: v.sagen } : {}) } : undefined)
@@ -307,6 +311,7 @@ export function packeSchritt(s: SchrittMeta, sicher: SicherTabelle, mitKompetenz
     k: mitKompetenz ? s.kompetenz : undefined,
     ev: evPack(s.einzelvariante),
     evf: evPack(s.einzelvarianteFr),
+    ag: s.allgemein,
     ...zusatzPack(s),
   }
   const o = ohneLeere(r as unknown as Record<string, unknown>) as unknown as RohSchritt
@@ -351,6 +356,7 @@ export function entpackeSchritt(r: RohSchritt, sicher: (number | null)[][], komp
   if (ev) s.einzelvariante = ev
   const evf = evAus(r.evf)
   if (evf) s.einzelvarianteFr = evf
+  if (r.ag) s.allgemein = r.ag
   zusatzAus(r, s)
   return s
 }

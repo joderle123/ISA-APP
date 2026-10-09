@@ -109,7 +109,8 @@ for (const [q, liste] of neu) {
       zahl.geschuetzt++
       continue
     }
-    const g = geordnet(b)
+    // Fassungen ohne Kursverweis (`allgemein`) bleiben, wenn die neue Beschriftung keine eigenen mitbringt
+    const g = geordnet(vorher?.allgemein && !b.allgemein ? { ...b, allgemein: vorher.allgemein } : b)
     if (!vorher) zahl.neu++
     else if (JSON.stringify(geordnet(vorher)) === JSON.stringify(g)) zahl.gleich++
     else zahl.geaendert++

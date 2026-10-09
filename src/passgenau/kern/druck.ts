@@ -5,7 +5,7 @@ import type { Baustein, Blatt } from '../../blatt/typen'
 import type { MikroBaustein, Plan, PlanSchritt, Profil, Rolle, Sprache } from '../typen'
 import { bausteinInhalt, eldibKurz, intern, quelleText, textVon, zielSatz, type Katalog } from './katalog'
 import { kinderblatt } from './blatt'
-import { BOGEN_NAME, ROLLE_NAME } from './vokabular'
+import { BOGEN_NAME, KURSVERWEIS_RE, ROLLE_NAME } from './vokabular'
 import { hash8 } from './hilfen'
 
 export interface DruckSchritt {
@@ -150,7 +150,8 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       if (!e) return { titel: b.t ?? b.ref, quelle: '' }
       const quelle = intern(k).q.blatt.get(e.quelle.blatt)
       const leichter = quelle ? ((sp === 'fr' && quelle.fr) || quelle.de).lehrer.differenzierung?.leichter : undefined
-      return { titel: textVon(e, sp).titel, quelle: quelleText(e, sp), tipp: kuerzen(leichter, 160) }
+      // der Tipp kommt aus dem Quellblatt – mit Verweis auf die Kursstruktur („pro Modul“) lieber keiner
+      return { titel: textVon(e, sp).titel, quelle: quelleText(e, sp), tipp: leichter && !KURSVERWEIS_RE.test(leichter) ? kuerzen(leichter, 160) : undefined }
     })
   const ziele = plan.ziele.map((code) => {
     const satz = zielSatz(k, p, code, sp)

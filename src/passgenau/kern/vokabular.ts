@@ -277,3 +277,33 @@ export function interesseName(key: string, sprache: Sprache = 'de'): string {
  *  Gilt für den Katalog (Phase 0), die neuen Inhalte beim Laden und das Prüfskript. */
 export const KATHARSIS_RE =
   /(rauslassen|herauslassen|heraus lassen|raus lassen|abreagier|dampf ablassen|so fest wie (die|deine|eure) wut|auf ein kissen|kissen (schlagen|boxen|hauen)|boxsack|wut (an|in|auf) .{0,25}(auslassen|rauslassen)|(se )?défoul|évacuer (la|sa|ta) colère|taper (sur|dans) (un|le) coussin)/i
+
+/** Verweise auf die Struktur der Quelle (Kurs, Förderfach, mehrteilige Materialien): „aus Einheit 20“, „Einheiten 12 und
+ *  13“, „letzte Woche ging es um …“, „Modul 3“, „Kursjahr“, „Skills-Kurs“. In Passgenau steht ein Teil allein – solche
+ *  Texte bekommen eine Fassung ohne Verweis (Beschriftung `allgemein`); Prüfregel 26 hält sie aus dem PDF. Groß/klein
+ *  bewusst ausgeschrieben: „Vokabeln, Unité 3“ (Schulbuch) ist kein Kursverweis. */
+export const KURSVERWEIS_RE = new RegExp(
+  [
+    // nummerierte Einheiten, Joker, Module, Kursjahre
+    String.raw`\b[Ee]inheit(en)?\s+\d+\b(?!\s*(Minuten|Min\b|Sekunden))`,
+    String.raw`\bJoker(-Einheit)?\s*\d|Joker-Einheit|\bder Joker (ohne Vorlauf|direkt auf|nach)`,
+    String.raw`(?<!Unterricht in )\b[Mm]odul(e|en|s|weg|abschluss|seite)?\b`,
+    String.raw`[Mm]odulabschluss|[Aa]bschlussmodul|[Mm]odulseite|\bnach Modulen\b|\baus den Einheiten\b`,
+    String.raw`[Kk]ursjahr|\bJahr[- ][123]\b|\bJahr-[123]-`,
+    String.raw`\bSkills-Kurs|\b(im|vom|zum|aus dem|nach dem|am|diesen|diesem|über diesen) Kurs\b|\bdes Kurses\b|[Kk]urs(ordner|leitung|woche|stunde)`,
+    String.raw`\b(nächsten|ersten|letzten|vorigen|kommenden|folgenden|zwei|drei|vier|fünf|sechs|vielen?|zwischen zwei)\s+(\w+\s+)?Einheiten\b|\bjede[rn]? Einheit\b`,
+    // relative Einheiten
+    String.raw`\b([Ll]etzte[nrm]?|[Vv]orige[nrm]?|[Vv]orherige[nrm]?|[Nn]ächste[nrm]?|[Kk]ommende[nrm]?|[Ff]rühere[nrm]?)\s+Einheit(en)?\b`,
+    // die Stunde der Vorwoche im Kurs
+    String.raw`\b[Ll]etzte Woche (ging es|haben wir|habt ihr|hast du (die|das|den|herausgefunden|gefunden|getestet))`,
+    String.raw`\b(Mission|Aufgabe|Auftrag|Schritt|Schritts)\s+(aus\s+)?der letzten Woche`,
+    String.raw`\bletzte Woche gefehlt`,
+    String.raw`\bSkills?\b[^.!?]{0,40}\bletzten Wochen\b|\bletzten Wochen\b[^.!?]{0,40}\bSkills\b`,
+    // Wochen eines mehrwöchigen Materials
+    String.raw`\((Woche|Einheit)\s+\d[^)]*\)|\b(seit|für|bis|ab|Punkt)\s+Woche\s+\d`,
+    // Französisch
+    String.raw`\b(dernière|précédente|prochaine) séance\b(?! de travail)|\bséance précédente\b`,
+    String.raw`[Ll]a semaine dernière, (on|vous|tu|c[’']était)`,
+    String.raw`\bunités?\s+\d|\bmodules?\s+\d|\bannée de cours\b`,
+  ].join('|'),
+)

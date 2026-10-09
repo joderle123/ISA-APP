@@ -5,13 +5,14 @@ import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import type { KatalogEintrag, Plan, Stufe } from '../src/passgenau/typen'
 import type { BausteineDatei } from '../src/passgenau/kern/format'
-import { aufloesen, bausteinInhalt, intern } from '../src/passgenau/kern/katalog'
+import { aufloesen, bausteinInhalt, intern, quelleText, textVon } from '../src/passgenau/kern/katalog'
+import { texte } from '../src/passgenau/kern/inhalt'
 import { layoutAusStufe, STUFE_ALTER, STUFEN } from '../src/passgenau/kern/hilfen'
-import { KATHARSIS_RE } from '../src/passgenau/kern/vokabular'
+import { KATHARSIS_RE, KURSVERWEIS_RE } from '../src/passgenau/kern/vokabular'
 import { SYSTEM_BY_ID } from '../src/passgenau/kern/system'
 import { ladeKatalogNode, ROOT, stilHash } from './passgenau-quellen'
 import { abdeckung, haeufigsteZiele } from './passgenau-abdeckung'
-import { AKUT_RE, MERKMALE, SCHUTZ_RE, type Beschriftung } from '../src/passgenau/kern/beschriftung'
+import { AKUT_RE, MERKMALE, SCHUTZ_RE, schrittTextPfade, type Beschriftung } from '../src/passgenau/kern/beschriftung'
 import { pruefeBeschriftungen } from './passgenau-beschriftung'
 
 const ALLE = process.argv.includes('--alle')
@@ -93,7 +94,8 @@ regel(8, 'Dauer fehlt oder min ≤ typ ≤ max verletzt', 'fehler', alle.filter(
   regel(12, 'Kurs-/Förderfach-Schritt ohne „achtung“ der Einheit', 'fehler', schritte.filter((e) => {
     const [p, u] = e.id.split(':')
     const quelle = p === 'k' ? kurs.get(u)?.achtung : p === 'f' ? ff.get(u)?.de.achtung : undefined
-    return !!quelle && e.achtung !== quelle
+    // eine Fassung ohne Kursverweis (Beschriftung `allgemein`) zählt als übernommen
+    return !!quelle && e.achtung !== quelle && !(KURSVERWEIS_RE.test(quelle) && !!e.achtung && !KURSVERWEIS_RE.test(e.achtung))
   }).map((e) => e.id))
   regel(12, 'Baustein ohne „achtung“ des Blatts', 'fehler', bausteine.filter((e) => { const a = ki.q.blatt.get(e.quelle.blatt)?.de.lehrer.achtung; return !!a && e.achtung !== a }).map((e) => e.id))
 }
@@ -237,7 +239,12 @@ regel(23, 'Altersband ohne Überschneidung mit den Stufen', 'fehler', alle.filte
     if (b.belastung !== undefined && e.belastung !== b.belastung) return 'belastung'
     if (b.einzeltauglich && e.einzeltauglich !== b.einzeltauglich) return 'einzeltauglich'
     if (b.einzelvariante && (e.typ !== 'schritt' || e.einzelvariante?.text !== b.einzelvariante.text || (b.einzelvariante.fr && e.fr?.einzelvariante?.text !== b.einzelvariante.fr.text))) return 'einzelvariante'
-    if (b.allgemein && (e.typ !== 'baustein' || !gleich(e.allgemein, b.allgemein))) return 'allgemein'
+    if (b.allgemein && e.typ === 'baustein' && !gleich(e.allgemein, b.allgemein)) return 'allgemein'
+    // Schritte: die Fassung ohne Kursverweis steht im Text des Katalogeintrags („“ = entfallen)
+    if (b.allgemein && e.typ === 'schritt') {
+      const da = new Set(schrittTextPfade(e).values())
+      if (Object.values(b.allgemein).some((t) => t && !da.has(t))) return 'allgemein'
+    }
     if (b.zielgruppe && (e.zielgruppe ?? 'kind') !== b.zielgruppe) return 'zielgruppe'
     // Katharsis, „akut“ und „kinderschutz“ senkt nur eine Fachkraft (Sicherung im Katalog-Skript)
     if (b.merkmale && MERKMALE.some((m) => m !== 'katharsis' && !!e.merkmale?.[m] !== !!b.merkmale![m])) return 'merkmale'
@@ -254,6 +261,35 @@ regel(23, 'Altersband ohne Überschneidung mit den Stufen', 'fehler', alle.filte
     if (ab) nicht.push(`${id}: ${ab} (${b.datei})`)
   }
   regel(25, 'Beschriftung nicht im Katalog – npm run passgenau:katalog -- --ohne-hoehen', 'fehler', nicht)
+}
+
+// 26 Kursstruktur: Passgenau nimmt einzelne Teile – kein „aus Einheit 20“, „Einheiten 12 und 13“, „Modul 3“, „Kursjahr“,
+// „letzte Woche ging es um …“ in Texten, die Planblatt, Kinderblatt oder Oberfläche zeigen (DE und FR). Abhilfe: eine
+// Fassung ohne Verweis in der Beschriftung (`allgemein`, Schritte auch die Einzelvariante); src/passgenau/kern/vokabular.ts
+{
+  const treffer: string[] = []
+  const pr = (id: string, wo: string, t: string | undefined) => {
+    const m = t ? KURSVERWEIS_RE.exec(t) : null
+    if (m && t) treffer.push(`${id} ${wo}: …${t.slice(Math.max(0, m.index - 30), m.index + m[0].length + 20).replace(/\s+/g, ' ')}…`)
+  }
+  for (const sp of ['de', 'fr'] as const) {
+    for (const e of schritte) {
+      if (sp === 'fr' && !e.fr) continue
+      const t = textVon(e, sp)
+      pr(e.id, `${sp}:titel`, t.titel)
+      pr(e.id, `${sp}:text`, t.text)
+      ;(t.sagen ?? []).forEach((x, i) => pr(e.id, `${sp}:sagen.${i}`, x))
+      pr(e.id, `${sp}:wennEsKippt`, t.wennEsKippt)
+      pr(e.id, `${sp}:quelle`, quelleText(e, sp))
+      if (sp === 'de') for (const f of ['achtung', 'vorbereitung', 'elternbrief'] as const) pr(e.id, f, e[f])
+    }
+    for (const e of bausteine) {
+      if (sp === 'fr' && !e.sprache.fr) continue
+      pr(e.id, `${sp}:titel`, textVon(e, sp).titel)
+      for (const t of texte(bausteinInhalt(k, e, sp))) pr(e.id, `${sp}:${t.pfad}`, t.text)
+    }
+  }
+  regel(26, 'Verweis auf die Kursstruktur in einem Text für Plan, Blatt oder Oberfläche („Einheit 20“, „Modul 3“, „Kursjahr“) – Beschriftung `allgemein`', 'fehler', treffer)
 }
 
 // Ausgabe

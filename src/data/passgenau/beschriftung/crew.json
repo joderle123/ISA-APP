@@ -761,6 +761,9 @@
   "energie": 1,
   "belastung": 0,
   "einzeltauglich": "nein",
+  "allgemein": {
+   "text": "Neu (Lücke Rückblick): Die 30 Einheiten als Weg auf einer Karte mit den Crew-Stempeln aus dem HQ. Das Paar läuft ihn ab und tippt pro Thema ein Icon an: ein Moment, ein Spiel oder ein Skill, der hängen geblieben ist (kein neuer Stoff). Ende solo: „Welche drei Skills kommen mit in den Sommer?“ als Postkarte „Grüße aus 2031“ mit Icons, „weiß nicht“ erlaubt, dazu Sommer-Notfallkarte mit Hilfenummern. Nichts wird gespeichert."
+  },
   "zielgruppe": "kind",
   "merkmale": {},
   "sensibel": null,

@@ -4,7 +4,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import type { SchritteDatei } from '../src/passgenau/kern/format'
 import { join } from 'node:path'
 import type { KatalogEintrag } from '../src/passgenau/typen'
-import { intern, type Katalog } from '../src/passgenau/kern/katalog'
+import { intern, schrittTexteAus, type Katalog } from '../src/passgenau/kern/katalog'
 import { fuehreZusammen, kontextBaustein, kontextSchritt, pruefeBeschriftung, type Beschriftung, type BeschriftungDatei, type EintragKontext } from '../src/passgenau/kern/beschriftung'
 import { ROOT } from './passgenau-quellen'
 
@@ -36,8 +36,13 @@ export function kontextAusKatalog(k: Katalog, e: KatalogEintrag | undefined): Ei
     const blatt = intern(k).q.blatt.get(e.quelle.blatt)
     return blatt ? kontextBaustein(e, blatt, (id) => { const x = k.eintraege.get(id); return !x ? undefined : x.typ === 'baustein' ? x.quelle.blatt : 'schritt' }) : undefined
   }
-  return kontextSchritt(e, e)
+  // Texte aus der Quelle (der Katalog zeigt schon die Fassung ohne Kursverweis)
+  let q = QUELLTEXTE.get(k)
+  if (!q) QUELLTEXTE.set(k, (q = { texte: schrittTexteAus(intern(k).q), stelle: stellenAusKatalog() }))
+  const st = q.stelle.get(e.id)
+  return kontextSchritt(e, q.texte({ id: e.id, ...(st !== undefined && st !== Number(/(\d+)$/.exec(e.id)?.[1] ?? NaN) ? { stelle: st } : {}) }) ?? e)
 }
+const QUELLTEXTE = new WeakMap<Katalog, { texte: ReturnType<typeof schrittTexteAus>; stelle: Map<string, number> }>()
 
 /** Alle Overlays gegen den Katalog prüfen: Fehler je Eintrag, gültige Einträge, veraltete (andere Prüfsumme), Doppelungen. */
 export function pruefeBeschriftungen(k: Katalog, ordner = BESCHRIFTUNG_ORDNER) {

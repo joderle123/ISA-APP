@@ -9,7 +9,8 @@ import type { CrewSpiel, FfEinheit, Quellen } from '../quellen'
 import { entpackeBaustein, entpackeSchritt, type BausteineDatei, type SchritteDatei } from './format'
 import { KATHARSIS_RE, KOMPETENZ_BLATT, kompetenzAusCode } from './vokabular'
 import { hash8, STUFE_ALTER, STUFEN, woerter } from './hilfen'
-import { paketBausteine, texte } from './inhalt'
+import { paketBausteine, setzeText, texte } from './inhalt'
+import { bausteinOhneKursverweis, schrittAllgemein } from './beschriftung'
 import { SYSTEM } from './system'
 
 export interface Katalog {
@@ -119,7 +120,10 @@ function texteAusQuelle(m: { id: string; stelle?: number }, q: Quellen, idx: Ind
     const mat = idx.material.get(quelle)
     const a = mat?.ablauf[i]
     if (!mat || !a) return null
-    const roh = (a.title ?? '').replace(/\s*\((ca\.|etwa)?[^)]*Min[^)]*\)\s*$/i, '').trim()
+    // ohne Minuten und ohne den Platz im mehrteiligen Material: „Hauptteil 2 (Einheit 2–3): Das Wappen gestalten“ → „Das
+    // Wappen gestalten“, „Beobachten (Woche 1)“ → „Beobachten“ (in Passgenau steht der Teil allein)
+    const ohneMin = (a.title ?? '').replace(/\s*\((ca\.|etwa)?[^)]*Min[^)]*\)\s*$/i, '').replace(/\s*\((Einheit|Woche|Stunde|Session)\s*\d[^)]*\)/gi, '').trim()
+    const roh = /^(einstieg|hauptteil(\s*\d+)?|abschluss|vertiefung|teil\s*\d+|phase\s*\d+)\s*:\s*(.+)$/i.exec(ohneMin)?.[3] ?? ohneMin
     const nachStrich = roh.includes(' – ') ? roh.split(' – ').slice(1).join(' – ') : roh.includes(' - ') ? roh.split(' - ').slice(1).join(' - ') : roh
     // „Spielen“, „Durchführung 2“, „Hauptteil“: allein sagt das nichts – dann der Titel des Materials
     const allgemein = /^(einstieg|spielen|durchführung|üben( und vertiefen)?|übung(sphase)?|hauptteil|hauptphase|arbeitsphase|erarbeitung|aktivität|vertiefung|vertiefen|anwendung|praxis|phase|einheit|stunde|input|gestalten|auswertung|abschluss|reflexion|transfer|teil)(\s*\d+)?\s*(\(.*\))?$/i.test(nachStrich.trim())
@@ -299,11 +303,13 @@ export function baueKatalog(q: Quellen, bDatei: BausteineDatei, sDatei: Schritte
     const meta = entpackeSchritt(r, sDatei.sicher, kompetenz, stufenAus)
     const t = texteAusQuelle(meta, q, idx)
     if (!t) continue
-    const { stelle: _s, einzelvarianteFr, ...rest } = meta
+    const { stelle: _s, einzelvarianteFr, allgemein, ...rest } = meta
     void _s
+    // Texte ohne Kursbezug aus der Beschriftung („aus Einheit 20“ → ohne Verweis)
+    const ta = schrittAllgemein(t, allgemein)
     // Einzelvariante aus der Beschriftung: DE am Schritt, FR zum französischen Text (nur wo es ihn gibt)
-    const fr = t.fr && einzelvarianteFr ? { ...t.fr, einzelvariante: einzelvarianteFr } : t.fr
-    add({ typ: 'schritt', ...rest, ...t, ...(fr ? { fr } : {}) })
+    const fr = ta.fr && einzelvarianteFr ? { ...ta.fr, einzelvariante: einzelvarianteFr } : ta.fr
+    add({ typ: 'schritt', ...rest, ...ta, ...(fr ? { fr } : {}) })
   }
 
   // neue Inhalte: neue Einträge oder Ergänzungen vorhandener (z. B. Einzelvarianten, Beschriftung)
@@ -405,7 +411,12 @@ export function quelleText(e: KatalogEintrag, sprache: Sprache = 'de'): string {
 /** Inhalt eines Bausteins (Sprache, sonst DE). */
 export function bausteinInhalt(k: Katalog, b: MikroBaustein, sprache: Sprache): Baustein[] {
   const blatt = intern(k).q.blatt.get(b.quelle.blatt)
-  return blatt ? paketBausteine(blatt, b.quelle.pfad, sprache === 'fr' && b.sprache.fr ? 'fr' : 'de') : []
+  if (!blatt) return []
+  const sp = sprache === 'fr' && b.sprache.fr ? 'fr' : 'de'
+  let liste = paketBausteine(blatt, b.quelle.pfad, sp)
+  // Fassung ohne Kursverweis („aus Einheit 20“) aus der Beschriftung – die Pfade gelten für die deutsche Fassung
+  if (sp === 'de' && b.allgemein) for (const [pfad, text] of bausteinOhneKursverweis(b.allgemein, new Map(texte(liste).map((t) => [t.pfad, t.text])))) liste = setzeText(liste, pfad, text)
+  return liste
 }
 
 export function textVon(e: KatalogEintrag, sprache: Sprache): { titel: string; text: string; sagen?: string[]; wennEsKippt?: string; quelle: string } {

@@ -24,7 +24,7 @@ import { fuerTeam, uebernehmen, vorlageZurueckgezogen } from '../src/passgenau/k
 import { rueckmelden, zuruecksetzen, gelernt, type Vorlieben } from '../src/passgenau/kern/vorlieben'
 import { bewerte, kontext, pruefe, rang } from '../src/passgenau/kern/regeln'
 import { layoutAusStufe, stufeAusAlter, stufenAbstand } from '../src/passgenau/kern/hilfen'
-import { KATHARSIS_RE } from '../src/passgenau/kern/vokabular'
+import { KATHARSIS_RE, KURSVERWEIS_RE } from '../src/passgenau/kern/vokabular'
 import { ladeKatalogNode, ROOT } from './passgenau-quellen'
 import { pruefeBeschriftung, wendeBeschriftungAn, type Beschriftung, type EintragKontext } from '../src/passgenau/kern/beschriftung'
 import type { SchrittMeta } from '../src/passgenau/kern/format'
@@ -545,7 +545,8 @@ await pruefung('Ethik 3/E-M4: Planblatt zeigt „achtung“ der Einheit (j2-e33)
   const i = sz.plan.sitzungen[0].schritte.findIndex((x) => x.rolle === 'kern')
   const plan = ersetzen(sz.plan, { sitzung: 1, schritt: i }, schritt)
   const d = druckSitzung(k, sz.p, plan, 1, { sprache: 'de', warum: false })
-  const achtung = intern(k).q.kurs.find((e) => e.id === 'j2-e33')!.achtung!
+  // die „achtung“ des Katalogs: aus der Einheit, bei Kursverweisen die Fassung ohne Verweis (Beschriftung `allgemein`)
+  const achtung = schritt.achtung!
   soll(!!d.schritte[i].achtung && achtung.startsWith(d.schritte[i].achtung!.replace(/ …$/, '').slice(0, 60)), 'achtung fehlt im Druck')
   if (!SCHNELL) {
     const text = await pdfText(<Document><PlanSeite d={d} /></Document>)
@@ -554,7 +555,7 @@ await pruefung('Ethik 3/E-M4: Planblatt zeigt „achtung“ der Einheit (j2-e33)
   for (const e of k.eintraege.values()) {
     const [pre, u] = e.id.split(':')
     const quelle = pre === 'k' ? intern(k).q.kurs.find((x) => x.id === u)?.achtung : pre === 'f' ? intern(k).q.foerderfach.find((x) => x.id === u)?.de.achtung : undefined
-    if (quelle) soll(e.achtung === quelle, `${e.id}: achtung fehlt`)
+    if (quelle) soll(e.achtung === quelle || (KURSVERWEIS_RE.test(quelle) && !!e.achtung && !KURSVERWEIS_RE.test(e.achtung)), `${e.id}: achtung fehlt`)
   }
 })
 
@@ -721,6 +722,13 @@ await pruefung('20 erfundene Testkinder × 3 Wege (tests/passgenau): harte Regel
           const z = kb.passgenau?.ziel?.[a.sprache]
           if (a.sprache === 'fr' && z) soll(/^(je|j['’]|moi)\b/i.test(z), `${name}: „Mein Ziel“ auf Deutsch`)
         }
+        // kein Verweis auf die Kursstruktur im Druck (Planblatt, Kinderblatt, Materialseite) – Prüfregel 26 für den Plan
+        const d = druckSitzung(k, p, plan, s.nr, { sprache: a.sprache, warum: true, karten: true })
+        // gedruckt wird das Blatt ohne Lehrer-Seite (lehrer: false)
+        const blattText = (b: Blatt | null) => { const x = b ? (b[a.sprache] ?? b.de) : null; return x ? [x.titel, x.bausteine] : null }
+        const druckText = JSON.stringify([d.titel, d.schritte, d.vorbereitung, d.elternbrief ?? '', d.blattTeile, blattText(d.kinderblatt), blattText(d.materialSeite), blattText(d.karten)])
+        const kv = KURSVERWEIS_RE.exec(druckText)
+        soll(!kv, `${name} S${s.nr}: Kursverweis im Druck: …${kv ? druckText.slice(Math.max(0, kv.index - 40), kv.index + 40) : ''}…`)
       }
     }
   zeiten.sort((x, y) => x - y)
@@ -739,7 +747,9 @@ await pruefung('Beschriftung (4.6): Overlay-Prüfung, Sicherungen (Katharsis, ak
     ['Variante bei „ja“', { ...gut, einzeltauglich: 'ja' }, schritt],
     ['Variante zu lang', { ...gut, einzelvariante: { text: 'x'.repeat(301) } }, schritt],
     ['FR fehlt, obwohl die Quelle FR hat', gut, { ...schritt, fr: true }],
-    ['allgemein am Schritt', { ...gut, allgemein: { '0.text': 'Text' } }, schritt],
+    ['allgemein am Schritt mit Paket-Pfad', { ...gut, allgemein: { '0.text': 'Text' } }, { ...schritt, textPfade: new Map([['text', schritt.text!]]) }],
+    ['Kursverweis in der Einzelvariante', { ...gut, einzelvariante: { text: 'Wie in Einheit 20: Die Fachkraft und das Kind werfen sich den Ball zu.' } }, schritt],
+    ['allgemein mit Kursverweis', { ...gut, allgemein: { text: 'Wie letzte Woche im Kurs: alle werfen sich den Ball zu.' } }, { ...schritt, textPfade: new Map([['text', 'Wie in Einheit 20: alle werfen sich den Ball zu.']]) }],
     ['Begründung zu lang', { ...gut, begruendung: 'x'.repeat(121) }, schritt],
     ['Agent senkt Katharsis', { ...gut, merkmale: {} }, { ...schritt, text: 'Wir lassen die Wut raus und hauen auf ein Kissen.' }],
     ['Agent senkt „akut“', { ...gut, sensibel: null }, { ...schritt, text: 'Gespräch über Selbstverletzung.' }],
