@@ -516,6 +516,21 @@ und Satz der Woche), wenn `woche.elternbrief` da ist. Sie erscheinen in der Tool
   - Zuhause und Garten: muelltonne (allgemein, ohne Aufdruck), gartenschlauch.
   - Sage von Melusina: fee (Wasserfee mit Fischschwanz, Oberteil mit Ärmeln), ritter (freundliche Ganzfigur; Gegenstück zur
     ritterin). Für Brücke und Ballon gibt es schon `bruecke` und `ballon`, für Spielzeug-Regale `regal`.
+- **Farbige Motive: Alltag, Wetter, Sand, Fahrzeuge** (`src/blatt/motive-alltag.ts`, auf Karten ≈ 18 mm noch erkennbar, im
+  Schwarzweißdruck lesbar, auch als Ausmalbild mit `modus: "anmalen"`; ohne Schrift, Marken und Zeichen):
+  - Obst, Gemüse, Essen: apfel, zitrone (ganz und als Scheibe), mandarine (mit zwei Spalten), karotte, rosine (Schale voller
+    Rosinen), flasche (klare Flasche mit Korken und leerem Etikett, z. B. für Essig), plaetzchen (rund, Stern, Herz).
+  - Wetter und Jahreszeit: sonne, wolke, regen (Regenwolke mit Tropfen), schneemann, blume (Tulpe), eiswuerfel (durchscheinend
+    blau, mit Glanz und Pfütze).
+  - Sand und Garten: giesskanne (Zylinderkanne mit langem Ausguss und Brause, Wasser fließt – keine Teekanne; die Teekanne
+    heißt `kanne`), eimer (Sandeimer mit Bügel und Sandhaufen – kein Becher), schaufel (Sandschaufel), burg (Burg mit drei
+    Türmen und Tor), drache (freundlicher Drache mit kleiner Flamme), rakete.
+  - Tiere und Krabbler: fisch (Goldfisch mit Blasen), kaefer (allgemeiner Käfer, braun – der rote heißt `marienkaefer`),
+    spinne (freundlich, am Faden), gluehwuermchen (leuchtender Hinterleib).
+  - Dinge: schluessel, schatten (Kind winkt, sein Schatten liegt dunkel auf dem Rasen, Sonne links oben), matsch (Pfütze aus
+    Lehm mit Stiefelabdruck; die Wasserpfütze heißt `pfuetze`), warnweste (gelb mit grauen Reflexstreifen), fahrkarte (Karte
+    mit Bus-Zeichen, Strichen und Lochung, ohne Text).
+  - Fahrzeuge: auto, zug (Lok mit Wagen), fahrrad, traktor, flugzeug, schiff (Segelboot), roller (Tretroller; `bus` gibt es schon).
 
 Figuren-Namen erscheinen **nicht** im Bild – in Geschichten dürfen die Kinder
 anders heißen. Bilder sparsam und gezielt einsetzen, nie als Dekoration.
