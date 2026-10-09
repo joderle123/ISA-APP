@@ -3,11 +3,11 @@ import { Svg, Path, Circle, Ellipse, Rect, Line, Polyline, Polygon, G } from '@r
 import type { ReactElement } from 'react'
 import { farbe, type Form, type Palette, type Zeichnung } from '../zeichnung'
 
-function formPdf(f: Form, p: Palette, w: number, key: number): ReactElement {
+function formPdf(f: Form, p: Palette, w: number, key: number, cap: 'round' | 'butt' = 'round'): ReactElement {
   if (f.t === 'g') {
     return (
       <G key={key} transform={f.tf} opacity={f.o}>
-        {f.formen.map((x, i) => formPdf(x, p, w, i))}
+        {f.formen.map((x, i) => formPdf(x, p, w, i, cap))}
       </G>
     )
   }
@@ -17,7 +17,7 @@ function formPdf(f: Form, p: Palette, w: number, key: number): ReactElement {
     fill,
     stroke,
     strokeWidth: stroke === 'none' ? 0 : (f.w ?? w),
-    strokeLinecap: 'round' as const,
+    strokeLinecap: cap,
     strokeLinejoin: 'round' as const,
     strokeDasharray: f.dash,
     opacity: f.o,
@@ -38,6 +38,17 @@ function formPdf(f: Form, p: Palette, w: number, key: number): ReactElement {
     case 'polygon':
       return <Polygon key={key} points={f.p} {...common} />
   }
+}
+
+/** Zeichnung als Gruppe in einem größeren Svg: in die Box (x, y, b, h) eingepasst und zentriert, auf Wunsch um ihre
+ *  Mitte gedreht (Grad, im Uhrzeigersinn). `cap: 'butt'` für gestrichelte Schnittlinien mit klaren Strichen. */
+export function ZeichnungG({ z, p, x, y, b, h, drehung = 0, cap }: { z: Zeichnung; p: Palette; x: number; y: number; b: number; h: number; drehung?: number; cap?: 'round' | 'butt' }) {
+  const [vx, vy, vw, vh] = z.vb
+  const k = Math.min(b / vw, h / vh)
+  const cx = x + b / 2
+  const cy = y + h / 2
+  const tf = `translate(${cx} ${cy})${drehung ? ` rotate(${drehung})` : ''} scale(${k}) translate(${-(vx + vw / 2)} ${-(vy + vh / 2)})`
+  return <G transform={tf}>{z.formen.map((f, i) => formPdf(f, p, z.w ?? 2, i, cap))}</G>
 }
 
 /** Zeichnung in fester Breite (Höhe aus dem Seitenverhältnis) oder in eine Box eingepasst. */

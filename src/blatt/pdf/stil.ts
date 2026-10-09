@@ -65,7 +65,7 @@ export interface Masse {
 }
 
 export const MASSE: Record<Layout, Masse> = {
-  bild: { layout: 'bild', schrift: SCHRIFT.kind, fett: 700, basis: 15, klein: 10, titel: 27, untertitel: 13, zeile: 36, abstand: 16, nummer: 24, lh: 1.3, kaestchen: 17 },
+  bild: { layout: 'bild', schrift: SCHRIFT.kind, fett: 700, basis: 15, klein: 11, titel: 27, untertitel: 13, zeile: 36, abstand: 16, nummer: 24, lh: 1.3, kaestchen: 17 },
   gross: { layout: 'gross', schrift: SCHRIFT.kind, fett: 700, basis: 14, klein: 10, titel: 25, untertitel: 13, zeile: 32, abstand: 14, nummer: 22, lh: 1.34, kaestchen: 15 },
   mittel: { layout: 'mittel', schrift: SCHRIFT.kind, fett: 700, basis: 12, klein: 9.4, titel: 22, untertitel: 11.6, zeile: 26, abstand: 12, nummer: 19, lh: 1.4, kaestchen: 12.5 },
   jugend: { layout: 'jugend', schrift: SCHRIFT.jugend, fett: 600, basis: 10.2, klein: 8.5, titel: 20, untertitel: 10.6, zeile: 23, abstand: 11, nummer: 17, lh: 1.46, kaestchen: 10.5 },
@@ -121,7 +121,20 @@ type Texte = Record<
   | 'schwer'
   | 'loesungen'
   | 'summe'
-  | 'stufen',
+  | 'stufen'
+  | 'meinZeichen'
+  | 'schneidenWort'
+  | 'faltenWort'
+  | 'klebenWort'
+  | 'start'
+  | 'spielziel'
+  | 'wuerfeln'
+  | 'ende'
+  | 'buchVon'
+  | 'finde'
+  | 'erwachsene'
+  | 'niveauStern'
+  | 'niveauEinstieg',
   string
 >
 
@@ -172,6 +185,19 @@ export const TEXTE: Record<Sprache, Texte> = {
     loesungen: 'Lösungen',
     summe: 'Summe',
     stufen: 'Punkte an den Aufgaben: 1 = Basis, 2 = Kern, 3 = Plus',
+    meinZeichen: 'Mein Zeichen',
+    schneidenWort: 'schneiden',
+    faltenWort: 'falten',
+    klebenWort: 'kleben',
+    start: 'Start',
+    spielziel: 'Ziel',
+    wuerfeln: 'Würfeln und gehen',
+    ende: 'Ende',
+    buchVon: 'Das Buch von',
+    finde: 'Finde',
+    erwachsene: 'Erwachsene schneiden',
+    niveauStern: 'Stern-Aufgabe: für ältere oder schnellere Kinder',
+    niveauEinstieg: 'Einstieg: die einfachste Aufgabe – für alle',
   },
   fr: {
     name: 'Nom',
@@ -219,6 +245,19 @@ export const TEXTE: Record<Sprache, Texte> = {
     loesungen: 'Solutions',
     summe: 'Total',
     stufen: 'Points à côté des exercices : 1 = base, 2 = standard, 3 = approfondissement',
+    meinZeichen: 'Mon symbole',
+    schneidenWort: 'découper',
+    faltenWort: 'plier',
+    klebenWort: 'coller',
+    start: 'Départ',
+    spielziel: 'Arrivée',
+    wuerfeln: 'Lancer le dé et avancer',
+    ende: 'Fin',
+    buchVon: 'Le livre de',
+    finde: 'Trouve',
+    erwachsene: 'Découpe par un adulte',
+    niveauStern: 'Tâche étoile : pour les enfants plus grands ou plus rapides',
+    niveauEinstieg: 'Entrée : la tâche la plus simple – pour tous',
   },
 }
 

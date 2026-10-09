@@ -72,8 +72,34 @@ export type Symbol =
   | 'partner'
   | 'gruppe'
 
-/** Farbwörter für Legenden (Körper, Ampel …). */
-export type Farbwort = 'rot' | 'orange' | 'gelb' | 'gruen' | 'blau' | 'lila' | 'grau' | 'braun'
+/** Farbwörter für Legenden (Körper, Ampel …) und Farbpunkte im Text (`{rot}`, siehe BLATT-STIL.md). */
+export type Farbwort = 'rot' | 'orange' | 'gelb' | 'gruen' | 'blau' | 'lila' | 'grau' | 'braun' | 'schwarz' | 'weiss' | 'rosa' | 'hellblau'
+
+/** Spielschule: ein Bild mit kurzem Wort darunter (Karten zum Ausschneiden, Spielfelder …). */
+export interface SpielBild {
+  bild: BildId
+  text?: string
+}
+
+/** Fertige Formen für `punkte_verbinden` (Punkte in fester Reihenfolge, siehe src/blatt/spielschule.ts). */
+export type PunkteForm = 'stern' | 'haus' | 'herz' | 'fisch' | 'boot' | 'ballon' | 'apfel' | 'tanne' | 'drachen' | 'schmetterling'
+
+/** Kleidung für die Anziehpuppe. */
+export type Kleidungsstueck =
+  | 'muetze'
+  | 'sonnenhut'
+  | 'schal'
+  | 'handschuhe'
+  | 'jacke'
+  | 'regenjacke'
+  | 'pulli'
+  | 'tshirt'
+  | 'kleid'
+  | 'hose'
+  | 'kurzehose'
+  | 'stiefel'
+  | 'gummistiefel'
+  | 'sandalen'
 
 export interface Stufentext {
   titel: string
@@ -82,8 +108,10 @@ export interface Stufentext {
 
 export type Baustein =
   // --- Struktur & Text -----------------------------------------------------
-  /** `stufe` (Mathe): kleine Punkte neben der Nummer – 1 Basis, 2 Kern, 3 Plus; unauffällig, nur als Orientierung. */
-  | { art: 'aufgabe'; text: string; hinweis?: string; symbole?: Symbol[]; stufe?: 1 | 2 | 3 }
+  /** `stufe` (Mathe): kleine Punkte neben der Nummer – 1 Basis, 2 Kern, 3 Plus; unauffällig, nur als Orientierung.
+   *  `niveau` (Spielschule): Zeichen neben der Nummer – 'einstieg' (Keimling: die einfachste Aufgabe) oder
+   *  'stern' (Stern-Aufgabe für ältere oder schnellere Kinder). */
+  | { art: 'aufgabe'; text: string; hinweis?: string; symbole?: Symbol[]; stufe?: 1 | 2 | 3; niveau?: 'einstieg' | 'stern' }
   | { art: 'text'; text: string; klein?: boolean }
   | { art: 'info'; titel?: string; text?: string; punkte?: string[]; symbol?: 'tipp' | 'wissen' | 'achtung' | 'merke' | 'hilfe' }
   | { art: 'geschichte'; titel?: string; text: string; bild?: BildId }
@@ -108,7 +136,8 @@ export type Baustein =
   | { art: 'skala'; frage?: string; von: string; bis: string; stufen?: 5 | 10 | 11; gesichter?: boolean }
   | { art: 'einschaetzung'; items: string[]; optionen: string[] }
   | { art: 'zuordnen'; links: string[]; rechts: string[]; titel?: [string, string] }
-  | { art: 'gefuehle'; gefuehle: Gefuehl[]; modus?: 'benennen' | 'einkreisen' | 'nur'; leer?: number; spalten?: number }
+  /** `woerter`: eigene Wörter unter den Gesichtern (statt der Standardwörter, z. B. « content » statt « joyeux·se »). */
+  | { art: 'gefuehle'; gefuehle: Gefuehl[]; modus?: 'benennen' | 'einkreisen' | 'nur'; leer?: number; spalten?: number; woerter?: string[] }
   /** Gefühlsrad nach Willcox: innen Grundgefühle, außen genauere Wörter. Ohne `felder` gelten die
    *  Standardwörter; `aussenLeer` lässt den Außenring zum Selbstausfüllen frei. */
   | { art: 'gefuehlsrad'; felder?: { wort: string; farbe: Farbwort; aussen: string[] }[]; aussenLeer?: boolean; mitte?: string }
@@ -184,6 +213,38 @@ export type Baustein =
   // --- Bildgeschichten & Karten ---------------------------------------------
   | { art: 'comic'; felder: ComicFeld[]; spalten?: 2 | 3 }
   | { art: 'karten'; karten: { titel?: string; text?: string; bild?: BildId }[]; spalten?: 2 | 3 | 4; hoehe?: number }
+  // --- Spielschule: Blätter zum Tun (Schneiden, Kleben, Falten, Spielen) – je eine ganze Seite ----------
+  /** Bildfolge: 3–6 Bilder in der RICHTIGEN Reihenfolge angeben. Auf dem Blatt stehen oben nummerierte Klebefelder
+   *  1, 2, 3 …, unten die Bilder gemischt auf einem Streifen zum Ausschneiden (`gemischt: false` = nicht mischen). */
+  | { art: 'schneiden_kleben'; bilder: SpielBild[]; gemischt?: boolean }
+  /** Memory zum Ausschneiden: jedes Bild ergibt ein Paar (`paar` = anderes Bild als Gegenstück, z. B. das Tierkind).
+   *  4–8 Paare. `rueckseite`: Rückseiten unter einer Faltlinie – Blatt falten, kleben, dann schneiden (bis 6 Paare). */
+  | { art: 'memory'; bilder: (SpielBild & { paar?: BildId })[]; rueckseite?: boolean }
+  /** Labyrinth vom Start- zum Zielbild. Aus `seed` erzeugt (immer lösbar, genau ein Weg), Gänge mindestens 15 mm.
+   *  `stufe` 1 (klein, für 3-Jährige) bis 3. */
+  | { art: 'labyrinth'; start: BildId; ziel: BildId; stufe?: 1 | 2 | 3; seed?: number }
+  /** Würfel-Laufweg: 10–16 Felder (Bild und/oder kurzes Wort/Handlung) als Schlangenweg mit Start und Ziel, darunter
+   *  Spielfiguren zum Ausschneiden (`figuren`, Standard: vier Kinder). */
+  | { art: 'laufweg'; felder: { bild?: BildId; text?: string }[]; start?: BildId; ziel?: BildId; figuren?: BildId[] }
+  /** Mini-Buch aus einem Blatt (einmal schneiden, falten): Titelseite, 6 Innenseiten (Bild oder leerer Malrahmen,
+   *  kurzes Wort), Rückseite „Das Buch von ___“. */
+  | { art: 'minibuch'; titel: string; titelbild?: BildId; seiten: { bild?: BildId; text?: string }[] }
+  /** Punkte verbinden 1–n (4–10 Punkte): fertige `form` oder eigene `punkte` (x, y in 0–100, im Uhrzeigersinn).
+   *  `gruppen`: neben jeder Zahl die Menge als Punkte. */
+  | { art: 'punkte_verbinden'; form?: PunkteForm; punkte?: [number, number][]; gruppen?: boolean }
+  /** Klappbild „Wer versteckt sich?“: 2–6 Fenster mit Bild; Klappen zum Ausschneiden, an der Lasche falten und auf
+   *  den Klebestreifen über dem Fenster kleben. `klappe` = Bild auf allen Klappen (Tür, Busch …). */
+  | { art: 'klappbild'; bilder: SpielBild[]; klappe?: BildId }
+  /** Fädelkarte: große Form mit Lochmarken (Lochzange) am Rand, Motiv in der Mitte. */
+  | { art: 'faedelkarte'; form?: 'kreis' | 'oval' | 'herz' | 'stern' | 'quadrat'; bild?: BildId; loecher?: number; ausmalen?: boolean }
+  /** Bastelbogen: Maske (Augenlöcher, `ohren`), Krone, Stirnband (mit `bild` oder `ohren`) oder Fahne (`farben` als
+   *  Streifen zum Ausmalen, leer = eigene Fahne). Krone und Stirnband mit Streifen zum Verlängern. */
+  | { art: 'bastelbogen'; vorlage: 'maske' | 'krone' | 'stirnband' | 'fahne'; bild?: BildId; ohren?: 'katze' | 'hase' | 'baer' | 'maus'; farben?: Farbwort[] }
+  /** Suchbild: Szene mit verstreuten Bildern; darunter „Finde: 3 ×“ mit Zählkästchen. `suchen` 1–4 Bilder (je 1–6 Mal),
+   *  `ablenker` andere Bilder (je `anzahl`, Standard 2). Lage aus `seed`. */
+  | { art: 'suchbild'; suchen: { bild: BildId; anzahl: number }[]; ablenker?: { bild: BildId; anzahl?: number }[]; szene?: 'wiese' | 'wald' | 'wasser' | 'schnee' | 'zimmer' | 'nacht'; seed?: number }
+  /** Anziehpuppe: Kind (Haare und Haut wie `figur`) und Kleidung zum Ausschneiden in passender Größe. */
+  | { art: 'anziehpuppe'; figur?: string; kleider: Kleidungsstueck[]; ausmalen?: boolean }
   // --- Abschluss -------------------------------------------------------------
   | { art: 'rueckblick'; frage?: string }
   | { art: 'notfall'; eintraege?: { name: string; nummer: string }[]; text?: string }

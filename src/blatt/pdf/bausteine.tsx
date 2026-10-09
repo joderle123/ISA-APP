@@ -13,6 +13,8 @@ import { motivZeichnung, VULKAN, HAND, fingerSpitze, EISBERG } from '../motive'
 import { Zeichnen } from './Zeichnen'
 import { Bruchbilder, Diagramm, Flaeche, Geo, Hunderterfeld, Kommasprung, Paeckchen, Stellentafel, Strichliste, Temperatur, Treppe, Zahlenstrahl, Zeile } from './mathe'
 import { SCHRIFT, TEXTE, typo, type Masse } from './stil'
+import { FARBEN, farbTeile, type FarbTeil } from '../spielschule'
+import { Anziehpuppe, Bastelbogen, Faedelkarte, Klappbild, Labyrinth, Laufweg, Memory, Minibuch, PunkteVerbinden, SchneidenKleben, Suchbild } from './spielschule'
 
 export interface Ctx {
   m: Masse
@@ -30,21 +32,74 @@ const t = (c: Ctx, s: string | undefined) => (s ? typo(s, c.sprache) : '')
 // --- Grundelemente -----------------------------------------------------------
 
 function Fliess({ c, children, klein, fett, farbe, zentriert, groesse, style }: { c: Ctx; children: ReactNode; klein?: boolean; fett?: boolean; farbe?: string; zentriert?: boolean; groesse?: number; style?: Record<string, unknown> }) {
+  const stil = {
+    fontFamily: c.m.schrift,
+    fontSize: groesse ?? (klein ? c.m.klein : c.m.basis),
+    fontWeight: fett ? c.m.fett : 400,
+    lineHeight: c.m.lh,
+    color: farbe ?? NEUTRAL.text,
+    textAlign: (zentriert ? 'center' : 'left') as 'center' | 'left',
+    ...style,
+  }
+  // Farbwort mit Farbpunkt: „Male die Äpfel {rot} an.“
+  const teile = typeof children === 'string' && children.includes('{') ? farbTeile(children) : null
+  if (teile) return <FarbZeile teile={teile} stil={stil} zentriert={zentriert} />
+  return <Text style={stil}>{children}</Text>
+}
+
+const SCHRIFT_STIL = new Set(['fontFamily', 'fontSize', 'fontWeight', 'lineHeight', 'color', 'textAlign', 'letterSpacing', 'fontStyle'])
+
+/** Text mit Farbpunkten: Wörter als Reihe (bricht zwischen Wörtern um), vor jedem Farbwort ein Punkt in der Farbe. */
+function FarbZeile({ teile, stil, zentriert }: { teile: FarbTeil[]; stil: Record<string, unknown>; zentriert?: boolean }) {
+  const schrift: Record<string, unknown> = {}
+  const rahmen: Record<string, unknown> = {}
+  for (const [k, v] of Object.entries(stil)) (SCHRIFT_STIL.has(k) ? schrift : rahmen)[k] = v
+  const groesse = Number(schrift.fontSize ?? 12)
+  // Wörter sammeln: Leerraum trennt, ein Farbwort hängt am Satzzeichen danach („{rot}.“)
+  const woerter: FarbTeil[][] = [[]]
+  for (const t of teile) {
+    if ('farbe' in t) {
+      woerter[woerter.length - 1].push(t)
+      continue
+    }
+    t.text.split(/(\s+)/).forEach((stueck) => {
+      if (!stueck) return
+      if (/^\s+$/.test(stueck)) woerter.push([])
+      else woerter[woerter.length - 1].push({ text: stueck })
+    })
+  }
+  const d = groesse * 0.82
   return (
-    <Text
-      style={{
-        fontFamily: c.m.schrift,
-        fontSize: groesse ?? (klein ? c.m.klein : c.m.basis),
-        fontWeight: fett ? c.m.fett : 400,
-        lineHeight: c.m.lh,
-        color: farbe ?? NEUTRAL.text,
-        textAlign: zentriert ? 'center' : 'left',
-        ...style,
-      }}
-    >
-      {children}
-    </Text>
+    <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: zentriert || schrift.textAlign === 'center' ? 'center' : 'flex-start', ...rahmen }}>
+      {woerter
+        .filter((w) => w.length)
+        .map((w, i) => (
+          <View key={i} style={{ flexDirection: 'row', alignItems: 'center', marginRight: groesse * 0.3 }}>
+            {w.map((t, k) =>
+              'farbe' in t ? (
+                <View key={k} style={{ flexDirection: 'row', alignItems: 'center' }}>
+                  <View style={{ width: d, height: d, borderRadius: d / 2, backgroundColor: FARBEN[t.farbe], borderWidth: 0.9, borderColor: NEUTRAL.tinte, marginRight: groesse * 0.22, marginLeft: k ? groesse * 0.12 : 1 }} />
+                  <Text style={{ ...schrift, textAlign: 'left' }}>{t.wort}</Text>
+                </View>
+              ) : (
+                <Text key={k} style={{ ...schrift, textAlign: 'left' }}>
+                  {t.text}
+                </Text>
+              ),
+            )}
+          </View>
+        ))}
+    </View>
   )
+}
+
+/** Kästchen zum Ankreuzen: in der Spielschule mindestens 10 mm. */
+const kreuzGroesse = (c: Ctx) => (c.m.layout === 'bild' ? 29 : c.m.kaestchen)
+
+/** Schriftgröße, bei der das längste Wort in die Breite passt (Kinderschrift: ca. 0,54 em je Zeichen). */
+function passend(text: string, breite: number, groesse: number, min: number): number {
+  const laengstes = Math.max(1, ...text.split(/\s+/).map((w) => w.length))
+  return Math.max(min, Math.min(groesse, breite / (laengstes * 0.54)))
 }
 
 function Linien({ c, n, hoehe, farbe }: { c: Ctx; n: number; hoehe?: number; farbe?: string }) {
@@ -159,16 +214,7 @@ function SymbolKachel({ c, s }: { c: Ctx; s: Symbol }) {
   )
 }
 
-const FARBWORT: Record<Farbwort, string> = {
-  rot: '#D9523F',
-  orange: '#EE9A3E',
-  gelb: '#EFCB4A',
-  gruen: '#5DAE6B',
-  blau: '#4F86C6',
-  lila: '#8E6CC0',
-  grau: '#9AA2B1',
-  braun: '#8B6443',
-}
+const FARBWORT: Record<Farbwort, string> = FARBEN
 
 /** Zonenfarben ruhig → heiß */
 function zonenFarbe(i: number, n: number): string {
@@ -192,6 +238,28 @@ function StufenPunkte({ c, n }: { c: Ctx; n: 1 | 2 | 3 }) {
   )
 }
 
+/** Spielschule: Zeichen für die Stufe einer Aufgabe – Stern (für ältere/schnellere Kinder) oder Keimling (Einstieg). */
+export function NiveauZeichen({ niveau, g }: { niveau: 'einstieg' | 'stern'; g: number }) {
+  if (niveau === 'stern') {
+    const pkt = Array.from({ length: 10 }, (_, i) => {
+      const r = i % 2 ? 4.4 : 10.6
+      const a = ((-90 + 36 * i) * Math.PI) / 180
+      return `${(12 + r * Math.cos(a)).toFixed(2)},${(12.8 + r * Math.sin(a)).toFixed(2)}`
+    }).join(' ')
+    return (
+      <Svg width={g} height={g} viewBox="0 0 24 24">
+        <Polygon points={pkt} fill="#F2C94C" stroke={NEUTRAL.tinte} strokeWidth={1.3} strokeLinejoin="round" />
+      </Svg>
+    )
+  }
+  return (
+    <View style={{ width: g, height: g, borderRadius: g / 2, backgroundColor: '#E4F2E6', borderWidth: 1.2, borderColor: '#4E9A5C', alignItems: 'center', justifyContent: 'center' }}>
+      <Zeichnen z={iconZeichnung('seedling')} p={PAL_GRUEN} breite={g * 0.64} />
+    </View>
+  )
+}
+const PAL_GRUEN: Palette = { tinte: '#2F6B3A', tief: '#2F6B3A', mittel: '#9CC9A3', zart: '#E4F2E6', grau: '#9AA2B1', hellgrau: '#E4E8EE', papier: '#FFFFFF', haut: '#F3DCC8', haar: '#4A3B33' }
+
 function Aufgabe({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'aufgabe' }> }) {
   const n = c.nummern.get(b)
   return (
@@ -199,6 +267,11 @@ function Aufgabe({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'aufgabe' }> })
       <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
         {n !== undefined && <Nummer c={c} n={n} />}
         {b.stufe ? <StufenPunkte c={c} n={b.stufe} /> : null}
+        {b.niveau ? (
+          <View style={{ marginLeft: 4 }}>
+            <NiveauZeichen niveau={b.niveau} g={c.m.nummer} />
+          </View>
+        ) : null}
         {(b.symbole ?? []).map((s) => (
           <SymbolKachel key={s} c={c} s={s} />
         ))}
@@ -284,19 +357,29 @@ function Einzelbild({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'bild' }> })
   )
 }
 
+/** Bausteine aus Reihen nebeneinander (Bilder, Comic, Gesichter, Karten): Eine Spalte damit kann react-pdf nicht
+ *  sauber über eine Seite teilen – Inhalt lief über die Fußzeile und überlagerte sich. */
+const REIHEN_ARTEN = new Set<Baustein['art']>(['bilder', 'comic', 'gefuehle', 'karten', 'glaeser'])
+
+/** Spalten mit Reihen-Bausteinen (und in der Spielschule immer) brechen als Ganzes nicht um; dann bricht innen nichts um. */
+export function spaltenFest(b: Extract<Baustein, { art: 'spalten' }>, layout: string): boolean {
+  return layout === 'bild' || [...b.links, ...b.rechts].some((x) => REIHEN_ARTEN.has(x.art))
+}
+
 function Spalten({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'spalten' }> }) {
   const [l, r] = b.verhaeltnis === '2:1' ? [2, 1] : b.verhaeltnis === '1:2' ? [1, 2] : [1, 1]
   const luecke = 16
-  const bl = ((c.breite - luecke) * l) / (l + r)
-  const br = c.breite - luecke - bl
+  const bl = Math.floor((((c.breite - luecke) * l) / (l + r)) * 100) / 100
+  const br = Math.floor((c.breite - luecke - bl) * 100) / 100
+  const fest = spaltenFest(b, c.m.layout)
   return (
-    <View style={{ flexDirection: 'row' }}>
+    <View wrap={!fest} style={{ flexDirection: 'row' }}>
       <View style={{ width: bl }}>
-        <Bausteine c={{ ...c, breite: bl }} liste={b.links} />
+        <Bausteine c={{ ...c, breite: bl }} liste={b.links} inSpalte={fest} />
       </View>
       <View style={{ width: luecke }} />
       <View style={{ width: br }}>
-        <Bausteine c={{ ...c, breite: br }} liste={b.rechts} />
+        <Bausteine c={{ ...c, breite: br }} liste={b.rechts} inSpalte={fest} />
       </View>
     </View>
   )
@@ -532,9 +615,9 @@ function Ankreuzen({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'ankreuzen' }
       ) : null}
       <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
         {eintraege.map((x, i) => (
-          <View key={i} wrap={false} style={{ width: `${100 / sp}%`, flexDirection: 'row', alignItems: x === null ? 'flex-end' : 'flex-start', paddingRight: 10, marginBottom: c.m.layout === 'jugend' ? 5 : 7 }}>
-            <View style={{ marginTop: x === null ? 0 : (c.m.basis * c.m.lh - c.m.kaestchen) / 2, marginRight: 8 }}>
-              <Kaestchen c={c} />
+          <View key={i} wrap={false} style={{ width: `${100 / sp}%`, flexDirection: 'row', alignItems: x === null ? 'flex-end' : c.m.layout === 'bild' ? 'center' : 'flex-start', paddingRight: 10, marginBottom: c.m.layout === 'jugend' ? 5 : 7 }}>
+            <View style={{ marginTop: x === null || c.m.layout === 'bild' ? 0 : (c.m.basis * c.m.lh - c.m.kaestchen) / 2, marginRight: 8 }}>
+              <Kaestchen c={c} groesse={kreuzGroesse(c)} />
             </View>
             {x === null ? (
               <View style={{ flex: 1, height: c.m.zeile * 0.9, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
@@ -550,59 +633,75 @@ function Ankreuzen({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'ankreuzen' }
   )
 }
 
+/** In Reihen aufteilen (statt flexWrap: gleich breite Karten, die zusammen genau die Breite füllen, brachen durch
+ *  Rundung manchmal eine Karte zu früh um – vor allem in Spalten). */
+function reihen<T>(liste: T[], sp: number): T[][] {
+  const out: T[][] = []
+  for (let i = 0; i < liste.length; i += sp) out.push(liste.slice(i, i + sp))
+  return out
+}
+
 function Bilder({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'bilder' }> }) {
-  const sp = b.spalten ?? (b.bilder.length <= 4 ? b.bilder.length : 3)
   const luecke = 10
-  const kb = (c.breite - luecke * (sp - 1)) / sp
+  // in schmalen Spalten nicht mehr Bilder nebeneinander, als sinnvoll Platz haben (mind. ca. 70 pt je Karte)
+  const spMax = Math.max(1, Math.floor((c.breite + luecke) / ((b.klein ? 110 : 70) + luecke)))
+  const sp = Math.min(b.spalten ?? (b.bilder.length <= 4 ? b.bilder.length : 3), spMax)
+  const kb = Math.floor(((c.breite - luecke * (sp - 1)) / sp) * 100) / 100
   if (b.klein) {
     const d = c.m.basis * 3.1
     return (
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
-        {b.bilder.map((x, i) => (
-          <View key={i} wrap={false} style={{ width: kb, marginRight: (i + 1) % sp === 0 ? 0 : luecke, marginBottom: 6, flexDirection: 'row', alignItems: 'center' }}>
-            <Plakette c={c} id={x.bild} d={d} />
-            {x.text ? (
-              /[_[{#]/.test(x.text) ? (
-                <View style={{ marginLeft: 8, flex: 1 }}>
-                  <Zeile c={c} s={x.text} />
-                </View>
-              ) : (
-                <Fliess c={c} fett style={{ marginLeft: 8, flex: 1 }}>
-                  {t(c, x.text)}
-                </Fliess>
-              )
-            ) : null}
+      <View>
+        {reihen(b.bilder, sp).map((reihe, k) => (
+          <View key={k} wrap={false} style={{ flexDirection: 'row' }}>
+            {reihe.map((x, i) => (
+              <View key={i} style={{ width: kb, marginRight: i < sp - 1 ? luecke : 0, marginBottom: 6, flexDirection: 'row', alignItems: 'center' }}>
+                <Plakette c={c} id={x.bild} d={d} />
+                {x.text ? (
+                  /[_[{#]/.test(x.text) && !farbTeile(x.text) ? (
+                    <View style={{ marginLeft: 8, flex: 1 }}>
+                      <Zeile c={c} s={x.text} />
+                    </View>
+                  ) : (
+                    <Fliess c={c} fett style={{ marginLeft: 8, flex: 1 }}>
+                      {t(c, x.text)}
+                    </Fliess>
+                  )
+                ) : null}
+              </View>
+            ))}
           </View>
         ))}
       </View>
     )
   }
   const bildB = Math.min(kb * 0.62, 110)
+  const innen = kb - 12
+  const minSchrift = c.m.layout === 'bild' ? 11 : c.m.klein
   return (
-    <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
-      {b.bilder.map((x, i) => (
-        <View
-          key={i}
-          wrap={false}
-          style={{ width: kb, marginRight: (i + 1) % sp === 0 ? 0 : luecke, marginBottom: luecke, borderWidth: 1, borderColor: NEUTRAL.haarlinie, borderRadius: 12, alignItems: 'center', paddingVertical: 10, paddingHorizontal: 6 }}
-        >
-          <View style={{ height: bildB * 0.95, justifyContent: 'center', alignItems: 'center' }}>
-            {x.bild.startsWith('icon:') && b.modus !== 'anmalen' ? (
-              <Plakette c={c} id={x.bild} d={bildB * 0.92} />
-            ) : (
-              <Bild c={c} id={x.bild} breite={bildB} hoehe={bildB * 0.95} ausmalen={b.modus === 'anmalen'} />
-            )}
-          </View>
-          {x.text ? (
-            <Fliess c={c} zentriert style={{ marginTop: 6 }}>
-              {t(c, x.text)}
-            </Fliess>
-          ) : null}
-          {b.modus === 'ankreuzen' ? (
-            <View style={{ marginTop: 6 }}>
-              <Kaestchen c={c} />
+    <View>
+      {reihen(b.bilder, sp).map((reihe, k) => (
+        <View key={k} wrap={false} style={{ flexDirection: 'row' }}>
+          {reihe.map((x, i) => (
+            <View key={i} style={{ width: kb, marginRight: i < sp - 1 ? luecke : 0, marginBottom: luecke, borderWidth: 1, borderColor: NEUTRAL.haarlinie, borderRadius: 12, alignItems: 'center', paddingVertical: 10, paddingHorizontal: 6 }}>
+              <View style={{ height: bildB * 0.95, justifyContent: 'center', alignItems: 'center' }}>
+                {x.bild.startsWith('icon:') && b.modus !== 'anmalen' ? (
+                  <Plakette c={c} id={x.bild} d={bildB * 0.92} />
+                ) : (
+                  <Bild c={c} id={x.bild} breite={bildB} hoehe={bildB * 0.95} ausmalen={b.modus === 'anmalen'} />
+                )}
+              </View>
+              {x.text ? (
+                <Fliess c={c} zentriert groesse={passend(x.text.replace(/[{}]/g, ''), innen, c.m.basis, minSchrift)} style={{ marginTop: 6, maxWidth: innen }}>
+                  {t(c, x.text)}
+                </Fliess>
+              ) : null}
+              {b.modus === 'ankreuzen' ? (
+                <View style={{ marginTop: 6 }}>
+                  <Kaestchen c={c} groesse={kreuzGroesse(c)} />
+                </View>
+              ) : null}
             </View>
-          ) : null}
+          ))}
         </View>
       ))}
     </View>
@@ -756,10 +855,12 @@ function Gefuehle({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'gefuehle' }> 
   const kb = (c.breite - luecke * (sp - 1)) / sp
   const d = Math.min(kb * 0.7, c.m.layout === 'bild' ? 120 : 84)
   const benennen = b.modus === 'benennen'
-  return (
-    <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
-      {alle.map((g, i) => (
-        <View key={i} wrap={false} style={{ width: kb, marginRight: (i + 1) % sp === 0 ? 0 : luecke, alignItems: 'center', marginBottom: 12 }}>
+  const zeile = (reihe: (Gefuehl | null)[], k: number) => (
+    <View key={k} wrap={false} style={{ flexDirection: 'row' }}>
+      {reihe.map((g, j) => {
+        const i = k * sp + j
+        return (
+        <View key={i} style={{ width: kb, marginRight: j < sp - 1 ? luecke : 0, alignItems: 'center', marginBottom: 12 }}>
           {g ? (
             <Zeichnen z={gesichtZeichnung(g)} p={c.p} breite={d} />
           ) : (
@@ -769,15 +870,17 @@ function Gefuehle({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'gefuehle' }> 
           )}
           {g && !benennen ? (
             <Fliess c={c} zentriert style={{ marginTop: 4 }}>
-              {gefuehlWort(g, c.sprache)}
+              {b.woerter?.[i] ? t(c, b.woerter[i]) : gefuehlWort(g, c.sprache)}
             </Fliess>
           ) : (
             <View style={{ width: '86%', height: c.m.zeile * 0.9, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
           )}
         </View>
-      ))}
+        )
+      })}
     </View>
   )
+  return <View>{reihen(alle, sp).map(zeile)}</View>
 }
 
 type RadFeld = { wort: string; farbe: Farbwort; aussen: string[] }
@@ -1560,7 +1663,8 @@ function ComicPanel({ c, f, breite, hoehe }: { c: Ctx; f: ComicFeld; breite: num
       </View>
       {f.untertitel !== undefined ? (
         f.untertitel ? (
-          <Fliess c={c} klein style={{ marginTop: 4 }}>
+          // Spielschule: „zuerst – dann – zum Schluss“ gut lesbar (mind. 11 pt), sonst klein
+          <Fliess c={c} klein groesse={c.m.layout === 'bild' ? 11 : undefined} style={{ marginTop: c.m.layout === 'bild' ? 3 : 4, lineHeight: c.m.layout === 'bild' ? 1.2 : c.m.lh }}>
             {t(c, f.untertitel)}
           </Fliess>
         ) : (
@@ -1572,8 +1676,11 @@ function ComicPanel({ c, f, breite, hoehe }: { c: Ctx; f: ComicFeld; breite: num
 }
 
 function Comic({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'comic' }> }) {
-  const sp = b.spalten ?? (b.felder.length === 3 ? 3 : 2)
   const luecke = 10
+  // Felder unter ca. 118 pt Breite (z. B. drei Felder in einer schmalen Spalte) brachten den Renderer zum Absturz
+  // (negative Innenbreiten der Sprechblase) – dann weniger Felder je Reihe.
+  const spMax = Math.max(1, Math.floor((c.breite + luecke) / (118 + luecke)))
+  const sp = Math.min(b.spalten ?? (b.felder.length === 3 ? 3 : 2), spMax)
   const fb = (c.breite - luecke * (sp - 1)) / sp
   const fh = sp === 3 ? Math.max(150, fb * 1.1) : Math.min(210, fb * 0.8)
   const reihen: ComicFeld[][] = []
@@ -2324,6 +2431,28 @@ function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
       return <Diagramm c={c} b={b} />
     case 'strichliste':
       return <Strichliste c={c} b={b} />
+    case 'schneiden_kleben':
+      return <SchneidenKleben c={c} b={b} />
+    case 'memory':
+      return <Memory c={c} b={b} />
+    case 'labyrinth':
+      return <Labyrinth c={c} b={b} />
+    case 'laufweg':
+      return <Laufweg c={c} b={b} />
+    case 'minibuch':
+      return <Minibuch c={c} b={b} />
+    case 'punkte_verbinden':
+      return <PunkteVerbinden c={c} b={b} />
+    case 'klappbild':
+      return <Klappbild c={c} b={b} />
+    case 'faedelkarte':
+      return <Faedelkarte c={c} b={b} />
+    case 'bastelbogen':
+      return <Bastelbogen c={c} b={b} />
+    case 'suchbild':
+      return <Suchbild c={c} b={b} />
+    case 'anziehpuppe':
+      return <Anziehpuppe c={c} b={b} />
   }
 }
 
@@ -2344,12 +2473,16 @@ const FEST = new Set<Baustein['art']>([
   'stellentafel', 'hunderterfeld', 'zahlenstrahl', 'bruchbilder', 'treppe', 'kommasprung', 'geo',
   'flaeche', 'temperatur',
   'diagramm', 'strichliste',
+  'schneiden_kleben', 'memory', 'labyrinth', 'laufweg', 'minibuch', 'punkte_verbinden', 'klappbild', 'faedelkarte',
+  'bastelbogen', 'suchbild', 'anziehpuppe',
 ])
 
 /** Kleine Bausteine, die nicht umbrechen sollen (auch wenn sie es könnten). */
-function istFest(b: Baustein): boolean {
+function istFest(b: Baustein, layout: string): boolean {
   if (FEST.has(b.art)) return true
   switch (b.art) {
+    case 'spalten':
+      return spaltenFest(b, layout)
     case 'tabelle':
       return b.zeilen + (b.beispiel ? 1 : 0) + (b.werte?.length ?? 0) <= 8
     case 'kaestchen':
@@ -2385,7 +2518,46 @@ function istFest(b: Baustein): boolean {
   }
 }
 
-export function Bausteine({ c, liste }: { c: Ctx; liste: Baustein[] }) {
+/** Bausteine untereinander.
+ *  - `oben` (die Seite selbst, Spielschule): je Abschnitt zwischen zwei `seitenumbruch` eine Hülle; ab dem zweiten
+ *    mit `break`. react-pdf beachtet `break` nur bei Kindern, die es beim Umbrechen einzeln prüft – in einer Hülle, die ganz
+ *    auf die Seite passt, ging ein Seitenumbruch früher verloren. Innerhalb eines Abschnitts bleibt alles wie zuvor.
+ *  - `inSpalte`: Inhalt einer Spalte, die als Ganzes nicht umbricht – innen keine Umbrüche. */
+export function Bausteine({ c, liste, inSpalte, oben }: { c: Ctx; liste: Baustein[]; inSpalte?: boolean; oben?: boolean }) {
+  // nur in der Spielschule (C1): dort ist jeder Abschnitt genau eine Seite. Bei längeren Blättern lief ein zu langer
+  // erster Abschnitt bisher auf Seite 2 weiter, und der Umbruch danach fiel weg – daran hängen deren Seitenzahlen.
+  if (oben && c.m.layout === 'bild') {
+    const abschnitte: Baustein[][] = [[]]
+    for (const b of liste) {
+      if (b.art === 'seitenumbruch') abschnitte.push([])
+      else abschnitte[abschnitte.length - 1].push(b)
+    }
+    return (
+      <>
+        {abschnitte.map((a, i) => (
+          <View key={i} break={i > 0}>
+            {abschnittInhalt(c, a)}
+          </View>
+        ))}
+      </>
+    )
+  }
+  if (inSpalte)
+    return (
+      <View>
+        {liste
+          .filter((b) => b.art !== 'seitenumbruch')
+          .map((b, i, l) => (
+            <View key={i} style={{ marginTop: abstandVor(b, l[i - 1], c) }}>
+              <EinBaustein c={c} b={b} />
+            </View>
+          ))}
+      </View>
+    )
+  return <View>{abschnittInhalt(c, liste)}</View>
+}
+
+function abschnittInhalt(c: Ctx, liste: Baustein[]): ReactNode[] {
   const out: ReactNode[] = []
   let umbruch = false
   for (let i = 0; i < liste.length; i++) {
@@ -2395,7 +2567,7 @@ export function Bausteine({ c, liste }: { c: Ctx; liste: Baustein[] }) {
       continue
     }
     const naechster = liste[i + 1]
-    const gruppe = b.art === 'aufgabe' && naechster && istFest(naechster)
+    const gruppe = b.art === 'aufgabe' && naechster && istFest(naechster, c.m.layout)
     const style = { marginTop: umbruch ? 0 : abstandVor(b, liste[i - 1], c) }
     if (gruppe) {
       out.push(
@@ -2407,14 +2579,14 @@ export function Bausteine({ c, liste }: { c: Ctx; liste: Baustein[] }) {
       i++
     } else {
       out.push(
-        <View key={i} break={umbruch} wrap={!istFest(b)} style={style} minPresenceAhead={b.art === 'aufgabe' ? c.m.zeile * 4 : undefined}>
+        <View key={i} break={umbruch} wrap={!istFest(b, c.m.layout)} style={style} minPresenceAhead={b.art === 'aufgabe' ? c.m.zeile * 4 : undefined}>
           <EinBaustein c={c} b={b} />
         </View>,
       )
     }
     umbruch = false
   }
-  return <View>{out}</View>
+  return out
 }
 
 /** Aufgaben fortlaufend nummerieren (auch in Spalten). */
@@ -2434,4 +2606,4 @@ export function nummerieren(liste: Baustein[]): Map<Baustein, number> {
   return karte
 }
 
-export { FARBWORT, Fliess, Linien, Nummer, Kaestchen }
+export { FARBWORT, Fliess, Linien, Nummer, Kaestchen, kreuzGroesse, passend, EIGENE_SYMBOLE }

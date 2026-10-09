@@ -76,12 +76,12 @@ dem Baustein, zu dem sie gehört, und bleibt mit ihm auf einer Seite.
 ### Text & Struktur
 | Art | Felder | Wofür |
 |---|---|---|
-| `aufgabe` | `text`, `hinweis?`, `symbole?` | Arbeitsauftrag. Kurz, klar, ein Verb. `symbole`: malen, schreiben, lesen, schneiden, kleben, ankreuzen, einkreisen, verbinden, sprechen, zuhoeren, nachdenken, zeigen, partner, gruppe (vor allem C1–C3). |
+| `aufgabe` | `text`, `hinweis?`, `symbole?`, `niveau?` | Arbeitsauftrag. Kurz, klar, ein Verb. `symbole`: malen, schreiben, lesen, schneiden, kleben, ankreuzen, einkreisen, verbinden, sprechen, zuhoeren, nachdenken, zeigen, partner, gruppe (vor allem C1–C3). `niveau` (Spielschule): `einstieg` oder `stern`. |
 | `text` | `text`, `klein?` | Kurzer Sachtext (v. a. ES). |
 | `info` | `titel?`, `text?`, `punkte?`, `symbol?` | Kasten: `wissen` (Gut zu wissen), `tipp`, `merke`, `achtung`, `hilfe`. |
 | `geschichte` | `titel?`, `text`, `bild?` | Kurze Alltagsgeschichte (C2: 3–5 Sätze, C3–C4: 4–7, ES: Fallvignette). Mit Figur links. |
 | `bild` | `bild`, `groesse?` (s/m/l/xl), `text?`, `ausrichtung?` | Einzelnes Bild. |
-| `spalten` | `links`, `rechts`, `verhaeltnis?` ('1:1','2:1','1:2') | Zwei Spalten (nicht verschachteln). |
+| `spalten` | `links`, `rechts`, `verhaeltnis?` ('1:1','2:1','1:2') | Zwei Spalten (nicht verschachteln). Mit `bilder`, `comic`, `gefuehle`, `karten`, `glaeser` (und in der Spielschule immer) brechen sie als Ganzes nicht um – dann nicht höher als eine Seite; kein `seitenumbruch` darin. |
 | `abstand` / `seitenumbruch` | – | Nur wenn wirklich nötig. |
 
 ### Schreiben
@@ -105,7 +105,7 @@ dem Baustein, zu dem sie gehört, und bleibt mit ihm auf einer Seite.
 | `skala` | `frage?`, `von`, `bis`, `stufen?` (5/10/11), `gesichter?` | 5 Stufen mit Gesichtern (C1–C2) oder 0–10. |
 | `einschaetzung` | `items`, `optionen` | Selbsteinschätzung als Raster (stimmt / teils / stimmt nicht). |
 | `zuordnen` | `links`, `rechts`, `titel?` | Verbinden mit Linien (rechts gemischt anordnen!). |
-| `gefuehle` | `gefuehle`, `modus?` (benennen/einkreisen/nur), `leer?`, `spalten?` | Gefühlsgesichter; `benennen` = Linie statt Wort. |
+| `gefuehle` | `gefuehle`, `modus?` (benennen/einkreisen/nur), `leer?`, `spalten?`, `woerter?` | Gefühlsgesichter; `benennen` = Linie statt Wort; `woerter` = eigene Wörter statt der Standardwörter (Pflicht auf französischen C1-Blättern, wo das Standardwort einen Mittelpunkt hat). |
 
 ### Denk- und Bildmodelle
 | Art | Felder | Wofür |
@@ -114,7 +114,7 @@ dem Baustein, zu dem sie gehört, und bleibt mit ihm auf einer Seite.
 | `thermometer` | `stufen` (3–5, **von ruhig nach heiß**), `linien?` | Erregung, Stress, Wut. |
 | `vulkan` | `stufen?` (3: unten → oben) | Auslöser – Anzeichen – Plan. Ohne `stufen` Standardtexte. |
 | `eisberg` | `oben`, `unten`, `beispielOben?`, `beispielUnten?` | Sichtbares Verhalten vs. Gefühle/Bedürfnisse darunter. |
-| `koerper` | `legende?` ([{farbe, text}]), `frage?` | Körperumriss zum Anmalen (farbe: rot, orange, gelb, gruen, blau, lila, grau, braun). |
+| `koerper` | `legende?` ([{farbe, text}]), `frage?` | Körperumriss zum Anmalen (farbe: rot, orange, gelb, gruen, blau, hellblau, lila, rosa, grau, braun, schwarz, weiss). |
 | `batterie` | `laden`, `leeren`, `linien?` | Was gibt/kostet Energie. |
 | `waage` | `links`, `rechts`, `zeilen?` | Vor-/Nachteile, Entscheidungswaage. |
 | `leiter` | `stufen` (3–7), `oben?`, `unten?`, `beispiele?` | Mut-Leiter, Ziel-Treppe (Stufe 1 unten). |
@@ -177,7 +177,26 @@ Spielecken. Pflicht: `stufen: ["C1"]`, `layout: "bild"`, DE **und** FR, `dauer` 
   Dann `seitenumbruch`.
 - **Schülerteil, Seite 2 – ein Blatt zum Tun:** 2–3 `aufgabe` mit Symbolen und dazu `bilder` (anmalen, einkreisen,
   ankreuzen), `gefuehle`, `comic` (Bildfolge „zuerst – dann“), `zuordnen`, `koerper` oder `feld` (`zeichnen: true`,
-  `hoehe` in **Zeilen**, z. B. 8–10). Von Einheit zu Einheit abwechseln. Sätze für Kinder höchstens 10 Wörter.
+  `hoehe` in **Zeilen**, z. B. 8–10) – oder einer der **Bausteine zum Tun** (Schneiden & Kleben, Memory, Labyrinth,
+  Laufweg, Mini-Buch, Punkte verbinden, Klappbild, Fädelkarte, Bastelbogen, Suchbild, Anziehpuppe; siehe unten).
+  Von Einheit zu Einheit abwechseln, nicht jedes Mal „Kreise ein“. Sätze für Kinder höchstens 10 Wörter.
+- **Automatisch auf jeder Kinderseite ab Seite 2:** Kopf mit Name, Datum und „Mein Zeichen“ (Kästchen für das Symbol
+  oder den Aufkleber eines Kindes, das seinen Namen noch nicht schreibt). Kästchen zum Ankreuzen sind 10 mm groß,
+  Bildunterschriften (Comic, Karten) mindestens 11 pt.
+- **Farbwörter immer mit Farbpunkt:** Farbwort in geschweifte Klammern setzen – „Male die Äpfel `{rot}` an.“ druckt
+  einen roten Punkt vor „rot“. Geht in Aufgaben, Bildunterschriften und allen Texten der Seite. Farben: rot, orange,
+  gelb, grün/gruen, blau, hellblau, lila, rosa, braun, grau, schwarz, weiß/weiss – auch gebeugt (`{roten}`) und
+  französisch (`{rouge}`, `{verte}`, `{bleu clair}`, `{violet}`, `{marron}`, `{blanc}` …). Höchstens 2 Farben je
+  Blatt (8 Kinder, nicht 8 Stiftfarben). Ein `{…}`, das kein Farbwort ist, meldet das Prüfskript als Fehler.
+- **Stufung auf dem Kinderblatt:** `"niveau": "einstieg"` an der einfachsten Aufgabe (Keimling neben der Nummer –
+  für alle, auch die Jüngsten), `"niveau": "stern"` an einer Zusatzaufgabe für Ältere/Schnelle (Stern: Ziffern,
+  Name spuren, Muster fortsetzen). Die Lehrerseite erklärt die Zeichen automatisch.
+- **Französisch auf Kinderblättern:** keine inklusiven Formen mit Mittelpunkt (« joyeux·se ») – Kinder und Vorlesende
+  stolpern darüber; das Prüfskript meldet sie als Fehler. Bei `gefuehle` die Wörter mit `woerter` selbst setzen
+  (« content », « triste », « en colère », « j’ai peur » …), sonst stehen die Standardwörter mit Mittelpunkt darunter.
+- **Spalten:** brechen in der Spielschule (und überall, wo `bilder`, `comic`, `gefuehle`, `karten` oder `glaeser`
+  darin stehen) nie über eine Seite – react-pdf kann solche Zeilen nicht sauber teilen. Kein `seitenumbruch` und kein
+  Baustein zum Tun in Spalten; `bilder` und `comic` nehmen in schmalen Spalten von selbst weniger Bilder je Reihe.
 - **Lehrerseite:** `ziel`, `ablauf` als **Wochenplan** (Montag – … bis Freitag – …, je ≤ 170 Zeichen),
   `differenzierung`, 2–3 `impulse` (Fragen im Sitzkreis), 1–2 `tipps` (Sicherheit, Allergien, Vorbereitung),
   `material`, `hintergrund` (400–700 Zeichen; FR wird länger – kürzer halten), Quellen aus der Liste (Spielschule:
@@ -199,6 +218,52 @@ Spielecken. Pflicht: `stufen: ["C1"]`, `layout: "bild"`, DE **und** FR, `dauer` 
   sachlich und einladend, ohne religiöse Pflicht; Familien in allen Formen.
 - Prüfen wie immer, Seiten mit `scripts/blatt-seiten.tsx spielschule --datei=<entwurf>.json` (der Dateiname muss mit
   `spielschule` beginnen, z. B. `spielschule-3.json`).
+
+#### Spielschule: Bausteine zum Tun (Seite 2)
+
+Jeder dieser Bausteine füllt fast eine ganze Seite: davor **eine** `aufgabe` (mit Symbolen), höchstens noch eine kleine
+zweite Aufgabe. Nicht in `spalten`. Die Linien sind auf allen Blättern gleich: **grau gestrichelt mit Schere =
+schneiden**, **Strich-Punkt in der Bereichsfarbe = falten**, **getönte Fläche mit Klebestift = kleben**; eine kleine
+Legende steht darunter. Bilder über dieselben Namen wie überall (`icon:`, `motiv:`, `gesicht:`, `figur:`) – neue
+farbige Motive funktionieren sofort. Das Prüfskript prüft Anzahlen, Größen (Gänge, Kästchen) und ob alles auf die
+Seite passt. Demo aller Bausteine: `tmp/demo-bausteine.json` rendern (falls vorhanden).
+
+| Art | Felder | Wann |
+|---|---|---|
+| `schneiden_kleben` | `bilder` (3–6 × `{bild, text?}`, **richtige Reihenfolge**), `gemischt?` | Abläufe: Händewaschen, Kresse Tag 1/3/7, Ei – Riss – Küken, Brot backen. Bis 4 Bilder in einer Reihe (je ca. 40–55 mm), 5–6 in zwei Reihen. |
+| `memory` | `bilder` (4–8 × `{bild, text?, paar?}`), `rueckseite?` | Wörter der Woche spielen und mitnehmen; `paar` = anderes Gegenstück (Tier – Tierkind, Gegenstand – Schatten). `rueckseite` (bis 6 Paare): Blatt an der Faltlinie falten, kleben, dann schneiden. |
+| `labyrinth` | `start`, `ziel` (Bilder), `stufe?` (1–3), `seed?` | Stiftführung mit Geschichte: Igel zum Käfer, Laterne zum Fest. Immer genau ein Weg, Gänge 15–25 mm. Stufe 1 für 3-Jährige. Anderes `seed` = anderes Labyrinth. |
+| `laufweg` | `felder` (10–16 × `{bild?, text?}`), `start?`, `ziel?`, `figuren?` | Würfelspiel zu den Wörtern der Woche; ein Feld darf eine Handlung tragen („hüpfen“, „2 zurück“, ≤ 14 Zeichen). Spielfiguren zum Ausschneiden darunter. |
+| `minibuch` | `titel` (≤ 28 Zeichen), `titelbild?`, `seiten` (genau 6 × `{bild?, text?}`) | „Mein Tag“, „So geht Händewaschen“, „Mein Kressebuch“. Seite ohne `bild` = Malrahmen. Rückseite „Das Buch von ___“ automatisch. Falten: Rechteck ausschneiden, längs und quer falten, in der Mitte einschneiden, zum Buch falten (Anleitung für Erwachsene). |
+| `punkte_verbinden` | `form` (stern, haus, herz, fisch, boot, ballon, apfel, tanne, drachen, schmetterling) oder `punkte` (4–10 × [x, y] in 0–100), `gruppen?` | Zahlenreihe 1–10 (drachen: 1–4, haus: 1–5). `gruppen` zeigt neben jeder Zahl die Menge als Punkte – für Kinder, die Ziffern noch nicht lesen. |
+| `klappbild` | `bilder` (2–6 × `{bild}`), `klappe?` (Bild auf den Klappen) | „Wer versteckt sich?“: Tiere hinter Türen (`icon:door`), im Busch, unter dem Bett. Klappen ausschneiden, an der Lasche falten, auf den Klebestreifen über dem Fenster kleben. |
+| `faedelkarte` | `form?` (kreis, oval, herz, stern, quadrat), `bild?`, `loecher?` (8–24), `ausmalen?` | Feinmotorik ohne Sprache: auf Karton kopieren, ausschneiden, Löcher mit der Lochzange; grüner Ring = Anfang. |
+| `bastelbogen` | `vorlage` (maske, krone, stirnband, fahne), `ohren?` (katze, hase, baer, maus – Maske/Stirnband), `bild?`, `farben?` (Fahne, 2–4 Streifen) | Fuesend (Maske), Dreikönig/Geburtstag (Krone), Tierwoche (Stirnband mit Ohren), Nationalfeierdag (Fahne `["rot","weiss","hellblau"]`; ohne `farben` = eigene Fahne). Augenlöcher schneiden Erwachsene. |
+| `suchbild` | `suchen` (1–4 × `{bild, anzahl 1–6}`), `ablenker?` (`{bild, anzahl?}`), `szene?` (wiese, wald, wasser, schnee, zimmer, nacht), `seed?` | Wimmelbild light: finden, einkreisen, zählen – unten „Finde: 3 ×“ mit Kästchen zum Abhaken (Selbstkontrolle). Höchstens 30 Bilder. |
+| `anziehpuppe` | `figur?` (mia, noah, lea, sami, amira, tom), `kleider` (2–8 aus muetze, sonnenhut, schal, handschuhe, jacke, regenjacke, pulli, tshirt, kleid, hose, kurzehose, stiefel, gummistiefel, sandalen), `ausmalen?` | Wetter und Kleidung: Kind und Kleidung in passender Größe zum Ausschneiden und Anziehen; `ausmalen` = Kleidung weiß zum Selbstmalen. |
+
+```json
+{ "art": "aufgabe", "text": "Schneide aus. Klebe in der richtigen Reihenfolge.", "symbole": ["schneiden", "kleben"] },
+{ "art": "schneiden_kleben", "bilder": [
+  { "bild": "icon:seedling", "text": "der Keim" }, { "bild": "icon:plant-2", "text": "die Pflanze" },
+  { "bild": "icon:flower", "text": "die Blume" } ] }
+
+{ "art": "memory", "rueckseite": true, "bilder": [ { "bild": "icon:apple", "text": "der Apfel" }, { "bild": "icon:cat", "paar": "icon:paw" }, … ] }
+{ "art": "labyrinth", "start": "icon:bug", "ziel": "icon:leaf", "stufe": 1 }
+{ "art": "laufweg", "felder": [ { "bild": "icon:sun" }, { "bild": "icon:cloud-rain", "text": "hüpfen" }, … ] }
+{ "art": "minibuch", "titel": "Mein Tag", "titelbild": "figur:lea:froh:winken",
+  "seiten": [ { "bild": "icon:sunrise", "text": "aufstehen" }, { "text": "Das mag ich." }, … ] }
+{ "art": "punkte_verbinden", "form": "fisch", "gruppen": true }
+{ "art": "klappbild", "klappe": "icon:door", "bilder": [ { "bild": "icon:cat" }, { "bild": "icon:dog" }, { "bild": "icon:fish" } ] }
+{ "art": "faedelkarte", "form": "herz", "bild": "gesicht:froh", "ausmalen": true }
+{ "art": "bastelbogen", "vorlage": "stirnband", "ohren": "hase" }
+{ "art": "suchbild", "szene": "wiese", "suchen": [ { "bild": "icon:bug", "anzahl": 3 } ],
+  "ablenker": [ { "bild": "icon:leaf", "anzahl": 3 }, { "bild": "icon:flower" } ] }
+{ "art": "anziehpuppe", "figur": "sami", "kleider": ["muetze", "schal", "handschuhe", "jacke", "hose", "stiefel"] }
+```
+
+In der `anleitung` (für Erwachsene) kurz sagen, was vorzubereiten ist: auf Karton kopieren (Memory, Fädelkarte),
+Lochzange und Wollfaden (Fädelkarte), Gummiband (Maske), Würfel und Knöpfe (Laufweg).
 
 #### Beobachten & Begleiten (Lehrerseite 3 und Zusatzseiten)
 
@@ -364,7 +429,7 @@ Anführungszeichen « … ». Keine Zeichen außerhalb von Latein-1 (z. B. kein 
 ## 6. Französisch (ES)
 
 - Vollständige, **natürliche** Übersetzung, kein Wort-für-Wort. So schreiben, wie eine erfahrene Lehrkraft im Lycée spricht.
-- Inklusive Formen sparsam mit Mittelpunkt: « prêt·e », « motivé·e ».
+- Inklusive Formen sparsam mit Mittelpunkt: « prêt·e », « motivé·e ». **Nie auf Kinderblättern der Spielschule (C1)** – dort eine einfache Form oder ein Nomen (Prüfskript: Fehler).
 - Luxemburger Begriffe: « lycée », « classe », « éducateur·rice », « SePAS », « responsable ».
 - Titel kurz, eigenständig formuliert (z. B. „Aufschieben überlisten“ → « Déjouer la procrastination »).
 

@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url'
 import type { Baustein, Blatt, BlattInhalt, Brieftext, Spielideen, Sprache } from '../src/blatt/typen'
 import { BEREICHE, THEMEN, STUFEN_REIHE } from '../src/blatt/katalog'
 import { hatIcon } from '../src/blatt/zeichnung'
-import { GEFUEHLE } from '../src/blatt/gesichter'
+import { GEFUEHLE, gefuehlWort } from '../src/blatt/gesichter'
 import { FIGUREN, POSEN } from '../src/blatt/figuren'
 import { MOTIV_NAMEN } from '../src/blatt/motive'
 import { QUELLEN_TEXTE } from '../src/blatt/quellen'
@@ -20,7 +20,9 @@ import { eldibGoalById } from '../src/data/taxonomy'
 import { bereichAusDatei } from '../src/blatt/nummern'
 import { flaecheGroesse, geoPunkte, kommaSprung, MM, stuecke, temperaturSkala, wert } from '../src/blatt/pdf/mathe'
 import { SEITE } from '../src/blatt/pdf/stil'
-import { DOMAENEN, SICHERHEIT_STANDARD } from '../src/blatt/spielschule'
+import { spaltenFest } from '../src/blatt/pdf/bausteine'
+import { DOMAENEN, FARBWOERTER as ALLE_FARBEN, PUNKTE_FORMEN, SICHERHEIT_STANDARD, fremdeFarbtokens, hashText, labyrinth, labyrinthMasse, labyrinthWeg, MM as MM_SP, spielHoehe, suchbildLage, suchbildMasse } from '../src/blatt/spielschule'
+import { KLEIDER } from '../src/blatt/kleidung'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const args = process.argv.slice(2)
@@ -34,7 +36,11 @@ let hinweise = 0
 const ids = new Map<string, string>()
 
 const SYMBOLE = ['malen', 'schreiben', 'lesen', 'schneiden', 'kleben', 'ankreuzen', 'einkreisen', 'verbinden', 'sprechen', 'zuhoeren', 'nachdenken', 'zeigen', 'partner', 'gruppe']
-const FARBWOERTER = ['rot', 'orange', 'gelb', 'gruen', 'blau', 'lila', 'grau', 'braun']
+const FARBWOERTER: string[] = ALLE_FARBEN
+/** Spielschule: Bausteine zum Tun, die eine ganze Seite brauchen (nicht in Spalten). */
+const SPIEL_ARTEN = ['schneiden_kleben', 'memory', 'labyrinth', 'laufweg', 'minibuch', 'punkte_verbinden', 'klappbild', 'faedelkarte', 'bastelbogen', 'suchbild', 'anziehpuppe']
+/** Französisch auf Kinderblättern (C1): keine inklusiven Formen mit Mittelpunkt (« joyeux·se ») – nicht vorlesbar. */
+const MITTELPUNKT = /\p{L}·\p{L}/u
 const ARTEN = new Set([
   'aufgabe', 'text', 'info', 'geschichte', 'bild', 'spalten', 'abstand', 'seitenumbruch', 'linien', 'frage', 'satzanfaenge', 'feld', 'tabelle',
   'wennDann', 'dialog', 'vertrag', 'ankreuzen', 'bilder', 'wortspeicher', 'skala', 'einschaetzung', 'zuordnen', 'gefuehle', 'ampel', 'thermometer',
@@ -43,6 +49,7 @@ const ARTEN = new Set([
   'paeckchen', 'stellentafel', 'hunderterfeld', 'zahlenstrahl', 'bruchbilder', 'treppe', 'kommasprung', 'geo',
   'flaeche', 'temperatur',
   'diagramm', 'strichliste',
+  ...SPIEL_ARTEN,
 ])
 
 /** Mathe: Dezimalzahl mit Komma („12,5“) als Zahl – oder NaN */
@@ -112,12 +119,13 @@ function bildOk(id: string): string | null {
   return `Unbekannter Bildtyp „${id}“`
 }
 
+const KEINE_TEXTE = new Set(['bild', 'art', 'figuren', 'requisit', 'farbe', 'uebung', 'symbole', 'start', 'ziel', 'klappe', 'titelbild', 'paar', 'figur', 'kleider', 'form', 'vorlage', 'ohren', 'szene', 'farben', 'modus', 'niveau'])
 function texteVon(b: Baustein): string[] {
   const out: string[] = []
   const add = (x: unknown) => {
     if (typeof x === 'string') out.push(x)
     else if (Array.isArray(x)) x.forEach(add)
-    else if (x && typeof x === 'object') Object.entries(x).forEach(([k, v]) => k !== 'bild' && k !== 'art' && k !== 'figuren' && k !== 'requisit' && k !== 'farbe' && k !== 'uebung' && k !== 'symbole' && add(v))
+    else if (x && typeof x === 'object') Object.entries(x).forEach(([k, v]) => !KEINE_TEXTE.has(k) && add(v))
   }
   add(b)
   return out
@@ -125,6 +133,38 @@ function texteVon(b: Baustein): string[] {
 
 /** verfügbare Breite in pt (wie in BlattDokument/Spalten) */
 const BREITE = 595.28 - SEITE.rand * 2
+
+/** Bilder je Reihe und Kartenbreite wie im Baustein „bilder“ (schmale Spalten: weniger je Reihe). */
+function bilderRaster(b: Extract<Baustein, { art: 'bilder' }>, breite: number): { sp: number; kb: number } {
+  const spMax = Math.max(1, Math.floor((breite + 10) / ((b.klein ? 110 : 70) + 10)))
+  const sp = Math.min(b.spalten ?? (b.bilder.length <= 4 ? b.bilder.length : 3), spMax)
+  return { sp, kb: (breite - 10 * (sp - 1)) / sp }
+}
+
+/** Grobe Höhe eines Bausteins in pt – nur, um zu hohe Spalten zu finden (Spalten brechen nicht um). */
+function hoeheGrob(b: Baustein, breite: number, zeile: number): number {
+  switch (b.art) {
+    case 'aufgabe':
+      return 44
+    case 'bilder': {
+      const { sp, kb } = bilderRaster(b, breite)
+      const reihen = Math.ceil(b.bilder.length / sp)
+      if (b.klein) return reihen * 52
+      const bildB = Math.min(kb * 0.62, 110)
+      return reihen * (bildB * 0.95 + 30 + (b.bilder.some((x) => x.text) ? 24 : 0) + (b.modus === 'ankreuzen' ? 36 : 0))
+    }
+    case 'feld':
+      return (b.hoehe ?? 4) * zeile
+    case 'bild':
+      return { s: 60, m: 100, l: 160, xl: 240 }[b.groesse ?? 'm'] * 1.3
+    case 'linien':
+      return b.anzahl * zeile
+    case 'frage':
+      return (b.linien ?? 2) * zeile + 20
+    default:
+      return spielHoehe(b, breite) ?? 90
+  }
+}
 
 function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: Sprache, tiefe = 0, breite = BREITE) {
   let aufgaben = 0
@@ -140,6 +180,7 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         for (const s of b.symbole ?? []) if (!SYMBOLE.includes(s)) melde('F', w, `Symbol „${s}“ gibt es nicht`)
         if (b.stufe !== undefined && ![1, 2, 3].includes(b.stufe)) melde('F', w, 'Stufe 1, 2 oder 3')
         if (b.stufe && blatt.bereich !== 'mathe') melde('H', w, 'Stufen-Punkte sind für Mathe-Blätter gedacht')
+        if (b.niveau !== undefined && !['einstieg', 'stern'].includes(b.niveau)) melde('F', w, 'niveau: „einstieg“ oder „stern“')
         break
       case 'rechnungen':
         if (!b.items?.length || b.items.length > 12) melde('F', w, '1–12 Rechnungen')
@@ -177,9 +218,16 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
       }
       case 'spalten':
         if (tiefe) melde('F', w, 'Spalten dürfen nicht verschachtelt werden')
+        for (const x of [...(b.links ?? []), ...(b.rechts ?? [])]) {
+          if (x.art === 'seitenumbruch') melde('F', w, 'Kein Seitenumbruch in Spalten (Spalten mit Bildern brechen als Ganzes nicht um, dort wirkt er nicht)')
+          if (SPIEL_ARTEN.includes(x.art)) melde('F', w, `„${x.art}“ braucht die ganze Breite – nicht in Spalten`)
+        }
         {
           const [l, r] = b.verhaeltnis === '2:1' ? [2, 1] : b.verhaeltnis === '1:2' ? [1, 2] : [1, 1]
           const bl = ((breite - 16) * l) / (l + r)
+          const zeile = blatt.layout === 'bild' || blatt.stufen.includes('C1') ? 36 : 28
+          const hoch = Math.max(...[b.links ?? [], b.rechts ?? []].map((seite, k) => seite.reduce((a, x) => a + hoeheGrob(x, k ? breite - 16 - bl : bl, zeile) + 12, 0)))
+          if (hoch > 700 && spaltenFest(b, blatt.layout ?? (blatt.stufen.includes('C1') ? 'bild' : ''))) melde('F', w, `Spalten zu hoch für eine Seite (ca. ${Math.round(hoch)} pt) – Spalten brechen nicht um; Inhalt kürzen oder ohne Spalten setzen`)
           pruefeBausteine(w + ' links', b.links ?? [], blatt, sprache, tiefe + 1, bl)
           pruefeBausteine(w + ' rechts', b.rechts ?? [], blatt, sprache, tiefe + 1, breite - 16 - bl)
         }
@@ -370,10 +418,18 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
       case 'bild':
         bilder.push(b.bild)
         break
-      case 'bilder':
+      case 'bilder': {
         b.bilder.forEach((x) => bilder.push(x.bild))
         if (b.bilder.length > 9) melde('H', w, 'mehr als 9 Bilder')
+        // Spielschule: Wort unter dem Bild muss bei mind. 11 pt in die Karte passen (Kinderschrift ca. 0,54 em je Zeichen)
+        if (!b.klein && blatt.stufen.includes('C1')) {
+          const innen = bilderRaster(b, breite).kb - 12
+          for (const wort of new Set(b.bilder.map((x) => (x.text ?? '').replace(/[{}]/g, '').split(/\s+/).reduce((a, y) => (y.length > a.length ? y : a), '')))) {
+            if (wort.length * 11 * 0.54 > innen) melde('H', w, `„${wort}“ ist für die Karte zu lang (Platz für ca. ${Math.floor(innen / (11 * 0.54))} Zeichen) – weniger Spalten oder kürzeres Wort`)
+          }
+        }
         break
+      }
       case 'karten':
         b.karten.forEach((k) => k.bild && bilder.push(k.bild))
         break
@@ -391,6 +447,115 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
         break
       case 'gefuehle':
         for (const g of b.gefuehle) if (!(GEFUEHLE as string[]).includes(g)) melde('F', w, `Gefühl „${g}“ gibt es nicht`)
+        if (b.woerter && b.woerter.length > b.gefuehle.length) melde('F', w, 'gefuehle: mehr Wörter als Gesichter')
+        // Französisch C1: die Standardwörter haben Mittelpunkt-Formen (« joyeux·se ») – eigene Wörter angeben
+        if (sprache === 'fr' && blatt.stufen.includes('C1') && b.modus !== 'benennen') {
+          const fremd = b.gefuehle.filter((g, i) => !b.woerter?.[i] && MITTELPUNKT.test(gefuehlWort(g, 'fr'))).map((g) => gefuehlWort(g, 'fr'))
+          if (fremd.length) melde('F', w, `Kinderblatt (C1): inklusive Form unter dem Gesicht (${fremd.join(', ')}) – mit „woerter“ eigene Wörter angeben, z. B. « content », « surpris »`)
+        }
+        break
+      // --- Spielschule: Bausteine zum Tun ------------------------------------------------------------------
+      case 'schneiden_kleben':
+        if (!b.bilder?.length || b.bilder.length < 3 || b.bilder.length > 6) melde('F', w, 'Schneiden & Kleben: 3–6 Bilder')
+        b.bilder?.forEach((x) => {
+          bilder.push(x.bild)
+          if ((x.text ?? '').length > 16) melde('H', w, `Wort unter der Karte zu lang („${x.text}“, max. 16 Zeichen)`)
+        })
+        break
+      case 'memory': {
+        const n = b.bilder?.length ?? 0
+        if (n < 4 || n > 8) melde('F', w, 'Memory: 4–8 Paare')
+        if (b.rueckseite && n > 6) melde('F', w, 'Memory mit Rückseite: höchstens 6 Paare (sonst zu kleine Karten)')
+        b.bilder?.forEach((x) => {
+          bilder.push(x.bild)
+          if (x.paar) bilder.push(x.paar)
+          if ((x.text ?? '').length > 14) melde('H', w, `Wort auf der Memory-Karte zu lang („${x.text}“, max. 14 Zeichen)`)
+        })
+        break
+      }
+      case 'labyrinth': {
+        bilder.push(b.start, b.ziel)
+        const st = b.stufe ?? 1
+        if (![1, 2, 3].includes(st)) { melde('F', w, 'Labyrinth: stufe 1, 2 oder 3'); break }
+        if (b.seed !== undefined && (!Number.isInteger(b.seed) || b.seed < 0)) melde('F', w, 'Labyrinth: seed als ganze Zahl ≥ 0')
+        const gang = labyrinthMasse(st, breite).zelle / MM_SP
+        if (gang < 10) melde('F', w, `Labyrinth: Gänge nur ${gang.toFixed(1)} mm breit (mind. 10 mm) – kleinere Stufe oder ganze Breite`)
+        // genau das Labyrinth, das gedruckt wird (gleicher Startwert wie im PDF)
+        if (!labyrinthWeg(labyrinth(st, b.seed ?? hashText(b.start + '>' + b.ziel + st)))) melde('F', w, 'Labyrinth ist nicht lösbar (interner Fehler)')
+        break
+      }
+      case 'laufweg':
+        if (!b.felder?.length || b.felder.length < 10 || b.felder.length > 16) melde('F', w, 'Laufweg: 10–16 Felder')
+        for (const f of b.felder ?? []) {
+          if (!f.bild && !f.text) melde('F', w, 'Laufweg: Feld braucht ein Bild oder ein Wort')
+          if (f.bild) bilder.push(f.bild)
+          if ((f.text ?? '').length > 14) melde('H', w, `Laufweg: „${f.text}“ zu lang für ein Feld (max. 14 Zeichen)`)
+        }
+        for (const x of [b.start, b.ziel, ...(b.figuren ?? [])]) if (x) bilder.push(x)
+        if ((b.figuren?.length ?? 0) > 6) melde('F', w, 'Laufweg: höchstens 6 Spielfiguren')
+        break
+      case 'minibuch':
+        if (b.seiten?.length !== 6) melde('F', w, 'Mini-Buch: genau 6 Innenseiten (dazu Titel und Rückseite)')
+        if (!b.titel?.trim()) melde('F', w, 'Mini-Buch: Titel fehlt')
+        else if (b.titel.length > 28) melde('H', w, `Mini-Buch: Titel lang (${b.titel.length} Zeichen, max. 28)`)
+        if (b.titelbild) bilder.push(b.titelbild)
+        for (const x of b.seiten ?? []) {
+          if (x.bild) bilder.push(x.bild)
+          if ((x.text ?? '').length > 18) melde('H', w, `Mini-Buch: „${x.text}“ zu lang für eine Seite (max. 18 Zeichen)`)
+        }
+        break
+      case 'punkte_verbinden': {
+        if (!b.punkte?.length && !(b.form && PUNKTE_FORMEN[b.form])) { melde('F', w, `Punkte verbinden: form (${Object.keys(PUNKTE_FORMEN).join(', ')}) oder punkte angeben`); break }
+        const pk = b.punkte?.length ? b.punkte : PUNKTE_FORMEN[b.form!].punkte
+        if (pk.length < 4 || pk.length > 10) melde('F', w, `Punkte verbinden: 4–10 Punkte (jetzt ${pk.length})`)
+        if (pk.some((q) => !Array.isArray(q) || q.length !== 2 || q.some((v) => typeof v !== 'number' || v < 0 || v > 100))) melde('F', w, 'Punkte verbinden: Punkte als [x, y] mit Werten von 0 bis 100')
+        else
+          for (let i = 0; i < pk.length; i++)
+            for (let j = i + 1; j < pk.length; j++)
+              if (Math.hypot(pk[i][0] - pk[j][0], pk[i][1] - pk[j][1]) < 12) melde('H', w, `Punkte verbinden: Punkt ${i + 1} und ${j + 1} liegen zu nah beieinander (Zahlen überlappen)`)
+        break
+      }
+      case 'klappbild':
+        if (!b.bilder?.length || b.bilder.length < 2 || b.bilder.length > 6) melde('F', w, 'Klappbild: 2–6 Bilder')
+        b.bilder?.forEach((x) => bilder.push(x.bild))
+        if (b.klappe) bilder.push(b.klappe)
+        break
+      case 'faedelkarte':
+        if (b.form && !['kreis', 'oval', 'herz', 'stern', 'quadrat'].includes(b.form)) melde('F', w, 'Fädelkarte: form kreis, oval, herz, stern oder quadrat')
+        if (b.loecher !== undefined && (!Number.isInteger(b.loecher) || b.loecher < 8 || b.loecher > 24)) melde('F', w, 'Fädelkarte: 8–24 Löcher')
+        if (b.bild) bilder.push(b.bild)
+        break
+      case 'bastelbogen':
+        if (!['maske', 'krone', 'stirnband', 'fahne'].includes(b.vorlage)) { melde('F', w, 'Bastelbogen: vorlage maske, krone, stirnband oder fahne'); break }
+        if (b.ohren && !['katze', 'hase', 'baer', 'maus'].includes(b.ohren)) melde('F', w, 'Bastelbogen: ohren katze, hase, baer oder maus')
+        if (b.ohren && !['maske', 'stirnband'].includes(b.vorlage)) melde('F', w, 'Bastelbogen: Ohren nur bei Maske und Stirnband')
+        if (b.farben && b.vorlage !== 'fahne') melde('F', w, 'Bastelbogen: farben nur bei der Fahne')
+        if (b.farben && (b.farben.length < 2 || b.farben.length > 4)) melde('F', w, 'Fahne: 2–4 Streifen')
+        for (const f of b.farben ?? []) if (!FARBWOERTER.includes(f)) melde('F', w, `Farbe „${f}“ gibt es nicht (${FARBWOERTER.join(', ')})`)
+        if (b.bild) bilder.push(b.bild)
+        break
+      case 'suchbild': {
+        if (!b.suchen?.length || b.suchen.length > 4) { melde('F', w, 'Suchbild: 1–4 Bilder zum Suchen'); break }
+        for (const x of b.suchen) {
+          bilder.push(x.bild)
+          if (!Number.isInteger(x.anzahl) || x.anzahl < 1 || x.anzahl > 6) melde('F', w, 'Suchbild: jedes Bild 1–6 Mal (Zählkästchen)')
+        }
+        for (const x of b.ablenker ?? []) {
+          bilder.push(x.bild)
+          if (x.anzahl !== undefined && (!Number.isInteger(x.anzahl) || x.anzahl < 1 || x.anzahl > 6)) melde('F', w, 'Suchbild: Ablenker 1–6 Mal')
+          if (b.suchen.some((y) => y.bild === x.bild)) melde('F', w, `Suchbild: „${x.bild}“ ist gesucht und zugleich Ablenker – Zählen stimmt dann nicht`)
+        }
+        if (b.szene && !['wiese', 'wald', 'wasser', 'schnee', 'zimmer', 'nacht'].includes(b.szene)) melde('F', w, 'Suchbild: szene wiese, wald, wasser, schnee, zimmer oder nacht')
+        const gesamt = b.suchen.reduce((a, x) => a + x.anzahl, 0) + (b.ablenker ?? []).reduce((a, x) => a + (x.anzahl ?? 2), 0)
+        if (gesamt > 30) melde('F', w, `Suchbild: ${gesamt} Bilder – höchstens 30`)
+        else if (!suchbildLage(b, breite, suchbildMasse(b, breite).szeneH).length) melde('F', w, 'Suchbild: Die Bilder passen nicht ohne Überlappung in die Szene – weniger Bilder')
+        break
+      }
+      case 'anziehpuppe':
+        if (b.figur && (!FIGUREN[b.figur] || FIGUREN[b.figur].alter !== 'kind')) melde('F', w, 'Anziehpuppe: figur mia, noah, lea, sami, amira oder tom')
+        if (!b.kleider?.length || b.kleider.length < 2 || b.kleider.length > 8) melde('F', w, 'Anziehpuppe: 2–8 Kleidungsstücke')
+        for (const k of b.kleider ?? []) if (!KLEIDER.includes(k)) melde('F', w, `Kleidungsstück „${k}“ gibt es nicht (${KLEIDER.join(', ')})`)
+        if (new Set(b.kleider ?? []).size !== (b.kleider ?? []).length) melde('F', w, 'Anziehpuppe: ein Kleidungsstück doppelt')
         break
       case 'gefuehlsrad':
         if (b.felder) {
@@ -483,6 +648,8 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
       else if (fremdeZeichen(x)) melde('F', w, `Zeichen fehlt in der Schrift: ${fremdeZeichen(x)} – „${x.slice(0, 40)}“`)
       for (const [re, name] of FLOSKELN) if (re.test(x)) melde(sprache === 'fr' && name.startsWith('gerade') ? 'H' : 'H', w, `${name}: „${x.slice(0, 60)}“`)
       if (blatt.stufen.includes('C1') && blatt.bereich !== 'werkzeuge' && x.length > 90 && b.art !== 'text') melde('H', w, 'Spielschule: Text über 90 Zeichen')
+      if (blatt.stufen.includes('C1') && b.art !== 'paeckchen') for (const f of fremdeFarbtokens(x)) melde('F', w, `„{${f}}“ ist kein Farbwort (Farbpunkt: {rot}, {blau}, {gelb}, {grün}, {orange}, {lila}, {braun}, {schwarz}, {weiß}, {rosa}, {grau}, {hellblau} – auch französisch)`)
+      if (sprache === 'fr' && blatt.stufen.includes('C1') && MITTELPUNKT.test(x)) melde('F', w, `Kinderblatt (C1): inklusive Form mit Mittelpunkt („${x.slice(0, 50)}“) – für Kinder nicht vorlesbar, eine einfache Form wählen`)
     }
   })
   return aufgaben
@@ -544,8 +711,6 @@ const STANDARD_THEMEN: [RegExp, string][] = [
   [/messer|couteau/i, 'messer'],
 ]
 const BEGLEITEN_FELDER = ['beobachtung', 'entscheiden', 'stufen', 'zugang', 'mehrsprachig', 'freitag'] as const
-/** Inklusive Formen mit Mittelpunkt („seul·e“) – auf Kinderseiten im Französischen nicht verwenden */
-const MITTELPUNKT = /\p{L}·\p{L}/u
 
 function textCheck(wo: string, x: string, max: number, was: string) {
   if (!x?.trim()) return melde('F', wo, `${was} ist leer`)
@@ -699,6 +864,32 @@ function pruefeInhalt(wo: string, inh: BlattInhalt | undefined, blatt: Blatt, sp
   if (blatt.stufen.includes('C1') && blatt.bereich !== 'werkzeuge' && !inh.anleitung) melde('F', wo, 'Spielschul-Blatt braucht eine kurze Anleitung für Erwachsene')
   if (!Array.isArray(inh.bausteine) || !inh.bausteine.length) return melde('F', wo, 'keine Bausteine')
   const n = pruefeBausteine(wo, inh.bausteine, blatt, sprache)
+  if (sprache === 'fr' && blatt.stufen.includes('C1'))
+    for (const x of [inh.titel, inh.untertitel ?? '']) if (MITTELPUNKT.test(x)) melde('F', wo, `Kinderblatt (C1): inklusive Form mit Mittelpunkt im Titel („${x.slice(0, 50)}“)`)
+  // Spiel-Bausteine sind groß: je Seite (bis zum Seitenumbruch) grob nachrechnen, ob sie mit den Aufgaben passen
+  {
+    // Platz: Seite 1 hat Kopf, Titel und Anleitung (ca. 600 pt frei), Folgeseiten den kleinen Kopf mit Name (ca. 705 pt)
+    let hoehe = 0
+    let groesster = 0
+    let platz = 600
+    const seiteFertig = (i: number) => {
+      if (groesster && hoehe > platz + 15) melde('F', wo, `Seite bis Baustein ${i}: Spiel-Baustein und Aufgaben brauchen ca. ${Math.round(hoehe)} pt (Platz: ca. ${platz}) – auf zwei Seiten verteilen`)
+      else if (groesster && hoehe > platz - 10) melde('H', wo, `Seite bis Baustein ${i}: sehr voll (ca. ${Math.round(hoehe)} pt von ${platz})`)
+      hoehe = 0
+      groesster = 0
+      platz = 705
+    }
+    inh.bausteine.forEach((x, i) => {
+      if (x.art === 'seitenumbruch') return seiteFertig(i + 1)
+      const h = spielHoehe(x, BREITE)
+      if (h !== null) {
+        groesster = Math.max(groesster, h)
+        hoehe += h
+      } else hoehe += x.art === 'aufgabe' ? 44 : 0
+      if (h === null && x.art !== 'aufgabe' && groesster) hoehe += 150 // anderer Baustein auf derselben Seite: grob
+    })
+    seiteFertig(inh.bausteine.length)
+  }
   if (n === 0) melde('F', wo, 'keine einzige Aufgabe')
   if (n > 6) melde('H', wo, `${n} Aufgaben – eher zu viel für ein Blatt`)
   for (const x of [inh.titel, inh.untertitel ?? '', inh.anleitung ?? '']) {

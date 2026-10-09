@@ -9,7 +9,7 @@ import type { AktivitaetArt, Baustein, Blatt, BlattInhalt, Sprache } from '../ty
 import { bereichById, layoutFuer, stufenText, themaLabel, type Farben } from '../katalog'
 import { NEUTRAL, palette, type Palette } from '../zeichnung'
 import { eldibDomainById, eldibGoalById } from '../../data/taxonomy'
-import { Bausteine, nummerieren, Plakette, Fliess, type Ctx } from './bausteine'
+import { Bausteine, nummerieren, NiveauZeichen, Plakette, Fliess, type Ctx } from './bausteine'
 import { LEHRER_MASSE, MASSE, SCHRIFT, SEITE, TEXTE, dauerText, typo, type Masse } from './stil'
 import { ELDIB_FR } from '../eldib-fr'
 import { URHEBER, URHEBER_NAME } from '../../lib/urheber'
@@ -197,20 +197,38 @@ function Titelblock({ blatt, inhalt, sprache, p, m, heft }: { blatt: Blatt; inha
  *  Dokument; beim Umbrechen kennt react-pdf aber nur pageNumber, noch nicht subPageNumber.
  *  Deshalb merkt sich der Kopf die erste Seite seines Blatts – sonst stünde er auch auf der
  *  ersten Seite jedes weiteren Blatts und schöbe dort Inhalt auf eine neue Seite. */
-function Folgekopf({ inhalt, sprache, p }: { inhalt: BlattInhalt; sprache: Sprache; p: Palette }) {
+function Folgekopf({ inhalt, sprache, p, m }: { inhalt: BlattInhalt; sprache: Sprache; p: Palette; m: Masse }) {
   const start = { seite: Number.POSITIVE_INFINITY }
+  // Spielschule: Auch Seite 2 (das Blatt zum Tun) braucht Name und Datum – Seite 1 wird zerschnitten.
+  // „Mein Zeichen“: Feld für das Symbol oder den Aufkleber des Kindes, das seinen Namen noch nicht schreibt.
+  const bild = m.layout === 'bild'
+  const tx = TEXTE[sprache]
   return (
     <View
       fixed
       render={({ pageNumber, subPageNumber }) => {
         if (subPageNumber === undefined) start.seite = Math.min(start.seite, pageNumber)
         const folgeseite = subPageNumber === undefined ? pageNumber > start.seite : subPageNumber > 1
-        return folgeseite ? (
+        if (!folgeseite) return null
+        return bild ? (
+          <View style={{ flexDirection: 'row', alignItems: 'flex-end', marginBottom: 10, paddingBottom: 6, borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie }}>
+            <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', marginBottom: 2 }}>
+              <View style={{ width: 10, height: 3, borderRadius: 2, backgroundColor: p.tief, marginRight: 6 }} />
+              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9, color: NEUTRAL.text, flex: 1, maxLines: 2 }}>{typo(inhalt.titel, sprache)}</Text>
+            </View>
+            <NameFeld label={tx.name} breite={128} m={m} />
+            <NameFeld label={tx.datum} breite={62} m={m} />
+            <View style={{ flexDirection: 'row', alignItems: 'flex-end', marginLeft: 14 }}>
+              <Text style={{ fontFamily: m.schrift, fontSize: 8.6, color: NEUTRAL.leise, marginRight: 5 }}>{tx.meinZeichen}</Text>
+              <View style={{ width: 34, height: 34, borderRadius: 6, borderWidth: 1, borderColor: p.mittel, borderStyle: 'dashed', backgroundColor: '#FFFFFF' }} />
+            </View>
+          </View>
+        ) : (
           <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 12, paddingBottom: 6, borderBottomWidth: 0.6, borderBottomColor: NEUTRAL.haarlinie }}>
             <View style={{ width: 10, height: 3, borderRadius: 2, backgroundColor: p.tief, marginRight: 6 }} />
             <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9, color: NEUTRAL.text, flex: 1 }}>{typo(inhalt.titel, sprache)}</Text>
           </View>
-        ) : null
+        )
       }}
     />
   )
@@ -312,6 +330,15 @@ function Lehrerseite({ blatt, inhalt, sprache, p, nr, heft }: { blatt: Blatt; in
                 })}
               </View>
             ) : null}
+            {/* Spielschule: Zeichen an den Aufgaben (Einstieg, Stern) – rechts, weil die linke Spalte meist voller ist */}
+            {(['einstieg', 'stern'] as const)
+              .filter((n) => niveaus(inhalt.bausteine).has(n))
+              .map((n, i) => (
+                <View key={n} style={{ flexDirection: 'row', alignItems: 'center', marginTop: i ? 3 : 7 }}>
+                  <NiveauZeichen niveau={n} g={13} />
+                  <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.8, lineHeight: 1.3, color: NEUTRAL.leise, marginLeft: 5, flex: 1 }}>{n === 'stern' ? tx.niveauStern : tx.niveauEinstieg}</Text>
+                </View>
+              ))}
           </View>
           {L.achtung ? (
             <View wrap={false} style={{ borderLeftWidth: 3, borderLeftColor: '#B4533A', backgroundColor: '#FBF1EC', borderRadius: 6, padding: 9, marginBottom: 11 }}>
@@ -489,6 +516,18 @@ function IdeenSeite({ blatt, inhalt, sprache, p, nr, heft }: { blatt: Blatt; inh
   )
 }
 
+/** Spielschule: Welche Zeichen (Einstieg, Stern) kommen an den Aufgaben vor? Die Lehrerseite erklärt sie. */
+function niveaus(liste: Baustein[], out = new Set<'einstieg' | 'stern'>()): Set<'einstieg' | 'stern'> {
+  for (const b of liste) {
+    if (b.art === 'aufgabe' && b.niveau) out.add(b.niveau)
+    if (b.art === 'spalten') {
+      niveaus(b.links, out)
+      niveaus(b.rechts, out)
+    }
+  }
+  return out
+}
+
 /** Haben Aufgaben eine Stufe (Mathe: Punkte an der Nummer)? Dann erklärt die Lehrerseite sie. */
 function mitStufen(liste: Baustein[]): boolean {
   return liste.some((b) => (b.art === 'aufgabe' && !!b.stufe) || (b.art === 'spalten' && (mitStufen(b.links) || mitStufen(b.rechts))))
@@ -520,10 +559,10 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
               }}
             />
           ) : null}
-          <Folgekopf inhalt={inhalt} sprache={sprache} p={p} />
+          <Folgekopf inhalt={inhalt} sprache={sprache} p={p} m={m} />
           <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={m} heft={opt?.heft} />
           <Titelblock blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} m={m} heft={opt?.heft} />
-          <Bausteine c={c} liste={inhalt.bausteine} />
+          <Bausteine c={c} liste={inhalt.bausteine} oben />
           <Fusszeile blatt={blatt} nr={opt?.nr} sprache={sprache} heft={opt?.heft} />
         </Page>
       ) : null}
