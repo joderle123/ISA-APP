@@ -95,7 +95,7 @@ function pruefen(e: KatalogEintrag, p: Prio): BeschriftungFeld[] {
     f.add('merkmale')
   } else {
     f.add('bogen').add('kompetenz').add('sensibel')
-    if (e.braucht?.length) f.add('allgemein')
+    if (e.braucht?.length) f.add('allgemein').add('braucht')
   }
   if (p === 'c') f.add('zielgruppe')
   return BESCHRIFTUNG_FELDER.filter((x) => f.has(x))
@@ -104,6 +104,8 @@ function unsicher(e: KatalogEintrag): BeschriftungFeld[] {
   return BESCHRIFTUNG_FELDER.filter((x) => {
     if (x === 'einzelvariante') return e.typ === 'schritt' && e.einzeltauglich === 'angepasst' && !e.einzelvariante
     if (x === 'allgemein') return e.typ === 'baustein' && !!e.braucht?.length && !e.allgemein
+    if (x === 'braucht') return e.typ === 'baustein' && !!e.braucht?.length && (e.sicher.braucht ?? 0) < 0.7
+    if (x === 'mehrtaegig') return !!e.mehrtaegig && (e.sicher.mehrtaegig ?? 0) < 0.7
     const s = e.sicher[x]
     if (s === undefined) return PFLICHT.includes(x)
     return s < 0.7
@@ -127,14 +129,16 @@ function werte(e: KatalogEintrag) {
     zielgruppe: e.zielgruppe ?? 'kind',
     merkmale: Object.fromEntries(MERKMALE.map((m) => [m, !!e.merkmale?.[m]])),
     sensibel: e.sensibel ?? null,
+    mehrtaegig: !!e.mehrtaegig,
+    ...(e.typ === 'baustein' ? { braucht: e.braucht ?? [] } : {}),
   }
 }
 
 /** Werte zur Information (nicht Teil der Beschriftung). */
 function info(e: KatalogEintrag) {
   const gemeinsam = { stufen: e.stufen, dauer: e.dauer, sozialform: e.sozialform, format: e.format, thema: e.thema, material: e.material }
-  if (e.typ === 'baustein') return { ...gemeinsam, lesemenge: e.lesemenge, schreibmenge: e.schreibmenge, bildanteil: e.bildanteil, ...(e.braucht ? { braucht: e.braucht } : {}), ...(e.mehrtaegig ? { mehrtaegig: true } : {}), ...(e.ohneZiel ? { ohneZiel: true } : {}) }
-  return { ...gemeinsam, phase: phaseAusQuelle(k, e.id, stelleVon), reiz: e.reiz, ...(e.ort ? { ort: e.ort } : {}), ...(e.mehrtaegig ? { mehrtaegig: true } : {}), ...(e.ohneZiel ? { ohneZiel: true } : {}), ...(e.blatt?.length ? { blatt: e.blatt } : {}) }
+  if (e.typ === 'baustein') return { ...gemeinsam, lesemenge: e.lesemenge, schreibmenge: e.schreibmenge, bildanteil: e.bildanteil, ...(e.ohneZiel ? { ohneZiel: true } : {}) }
+  return { ...gemeinsam, phase: phaseAusQuelle(k, e.id, stelleVon), reiz: e.reiz, ...(e.ort ? { ort: e.ort } : {}), ...(e.ohneZiel ? { ohneZiel: true } : {}), ...(e.blatt?.length ? { blatt: e.blatt } : {}) }
 }
 
 const kurz = (s: string, n: number) => {

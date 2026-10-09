@@ -287,7 +287,8 @@
   "belastung": 0,
   "einzeltauglich": "ja",
   "sensibel": null,
-  "begruendung": "Wochenbeobachtung im Alltag: Transfer (läuft über Tage, mehrtägig fehlt im Katalog).",
+  "mehrtaegig": true,
+  "begruendung": "Wochenbeobachtung im Alltag: läuft über Tage, nur als Transfer.",
   "von": "agent",
   "sicher": 0.85,
   "h": "6a7e8be5"
@@ -348,7 +349,10 @@
   "belastung": 0,
   "einzeltauglich": "ja",
   "sensibel": null,
-  "begruendung": "Rückblick auf die Beobachtungswoche; setzt die Wochentabelle voraus.",
+  "braucht": [
+   "b:gefuehle-genau-benennen:3"
+  ],
+  "begruendung": "Rückblick auf die Beobachtungswoche; braucht die Wochentabelle.",
   "von": "agent",
   "sicher": 0.85,
   "h": "36672901"

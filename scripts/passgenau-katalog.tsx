@@ -1184,7 +1184,7 @@ const beschriftet = { angewandt: 0, ungueltig: 0, ohneEintrag: 0, veraltet: 0, d
     const e = nachId.get(id)
     const baustein = id.startsWith('b:')
     let ctx: EintragKontext | undefined
-    if (e && baustein) ctx = kontextBaustein(e as MikroBaustein, q.blatt.get((e as MikroBaustein).quelle.blatt)!)
+    if (e && baustein) ctx = kontextBaustein(e as MikroBaustein, q.blatt.get((e as MikroBaustein).quelle.blatt)!, (x) => { const y = nachId.get(x); return !y ? undefined : 'quelle' in y ? y.quelle.blatt : 'schritt' })
     else if (e) {
       const t = schrittTexte(e as SchrittMeta)
       if (t) ctx = kontextSchritt(e as SchrittMeta, t)

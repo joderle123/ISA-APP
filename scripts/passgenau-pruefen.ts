@@ -243,6 +243,8 @@ regel(23, 'Altersband ohne Überschneidung mit den Stufen', 'fehler', alle.filte
     if (b.merkmale && MERKMALE.some((m) => m !== 'katharsis' && !!e.merkmale?.[m] !== !!b.merkmale![m])) return 'merkmale'
     const hart = (x: unknown) => x === 'akut' || x === 'kinderschutz'
     if ('sensibel' in b && (e.sensibel ?? null) !== (b.sensibel ?? null) && !(b.von !== 'fachkraft' && hart(e.sensibel))) return 'sensibel'
+    if (typeof b.mehrtaegig === 'boolean' && !!e.mehrtaegig !== b.mehrtaegig) return 'mehrtaegig'
+    if (b.braucht && (e.typ !== 'baustein' || !gleich(e.braucht ?? [], b.braucht))) return 'braucht'
     return null
   }
   const nicht: string[] = []

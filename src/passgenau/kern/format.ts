@@ -8,7 +8,7 @@ export const SICHER_FELDER = [
   'eldib', 'thema', 'kompetenz', 'rolle', 'bogen', 'alter', 'lesemenge', 'schreibmenge', 'bildanteil', 'format', 'dauer',
   'sozialform', 'einzeltauglich', 'energie', 'belastung', 'reiz', 'material', 'hoehe', 'braucht', 'sensibel', 'ohneZiel', 'tagesform',
   // seit der Beschriftung (4.6 Phase 1) – hinten angehängt, ältere Dateien bleiben lesbar
-  'einzelvariante', 'allgemein', 'zielgruppe', 'merkmale',
+  'einzelvariante', 'allgemein', 'zielgruppe', 'merkmale', 'mehrtaegig',
 ] as const
 
 export const LAYOUTS: Layout[] = ['bild', 'gross', 'mittel', 'jugend']

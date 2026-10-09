@@ -21,7 +21,7 @@ export type Sensibel = (typeof SENSIBEL)[number]
 /** Felder, die eine Beschriftung setzen darf (in dieser Reihenfolge in README und Anleitung). */
 export const BESCHRIFTUNG_FELDER = [
   'rolle', 'bogen', 'eldib', 'kompetenz', 'alter', 'energie', 'belastung', 'einzeltauglich', 'einzelvariante', 'allgemein',
-  'zielgruppe', 'merkmale', 'sensibel',
+  'zielgruppe', 'merkmale', 'sensibel', 'mehrtaegig', 'braucht',
 ] as const
 export type BeschriftungFeld = (typeof BESCHRIFTUNG_FELDER)[number]
 const META = ['begruendung', 'von', 'sicher', 'h'] as const
@@ -51,6 +51,10 @@ export interface Beschriftung {
   merkmale?: Merkmale
   /** null = ausdrücklich nicht sensibel */
   sensibel?: Sensibel | null
+  /** läuft über Tage (Wochenbeobachtung, Punkteplan) – dann nur Rolle „transfer“ (Bausteine: dazu „uebung“), nie „kern“ */
+  mehrtaegig?: boolean
+  /** nur Mikro-Bausteine: Ids der Bausteine desselben Blatts, ohne die der Teil nicht geht (Geschichte, Tabelle davor); [] = keine */
+  braucht?: string[]
   begruendung: string
   von: 'agent' | 'fachkraft'
   sicher: number
@@ -76,23 +80,29 @@ export interface EintragKontext {
   werkzeug?: boolean
   dauerTyp?: number
   mehrtaegig?: boolean
+  /** aktuelle Rollen (für mehrtaegig ohne eigene Rolle im Overlay) */
+  rolle?: Rolle[]
+  /** Blatt des Bausteins und Auflösung anderer Ids: Blatt eines Bausteins bzw. 'schritt' / undefined (gibt es nicht) */
+  blatt?: string
+  idBlatt?: (id: string) => string | 'schritt' | undefined
 }
 
 /** Werkzeuge für Fachkräfte, die doch fürs Kind sind (P1); alle anderen Blätter im Bereich „werkzeuge“ nie aufs Blatt des Kindes. */
 export const WERKZEUGE_FUERS_KIND = new Set(['ruhe-ecke-karten', 'tagesplan-bildkarten', 'belohnungs-menue'])
 
 /** Kontext eines Mikro-Bausteins (Text-Pfade des Pakets auf Deutsch, Stufen und Bereich des Blatts). */
-export function kontextBaustein(b: Pick<MikroBaustein, 'h' | 'stufen' | 'sprache' | 'quelle' | 'dauer' | 'mehrtaegig'>, blatt: Blatt): EintragKontext {
+export function kontextBaustein(b: Pick<MikroBaustein, 'h' | 'stufen' | 'sprache' | 'quelle' | 'dauer' | 'mehrtaegig' | 'rolle'>, blatt: Blatt, idBlatt?: EintragKontext['idBlatt']): EintragKontext {
   const tp = texte(paketBausteine(blatt, b.quelle.pfad, 'de'))
   return {
     typ: 'baustein', h: b.h, stufen: b.stufen, fr: b.sprache.fr, textPfade: new Map(tp.map((t) => [t.pfad, t.text])), text: tp.map((t) => t.text).join(' '),
     werkzeug: blatt.bereich === 'werkzeuge' && !WERKZEUGE_FUERS_KIND.has(blatt.id), dauerTyp: b.dauer.typ, mehrtaegig: !!b.mehrtaegig,
+    rolle: b.rolle, blatt: blatt.id, idBlatt,
   }
 }
 
 /** Kontext eines Stundenschritts (Texte aus der Quelle). */
-export function kontextSchritt(s: { h: string; dauer: { typ: number }; mehrtaegig?: boolean }, t: { titel: string; text: string; sagen?: string[]; fr?: unknown }): EintragKontext {
-  return { typ: 'schritt', h: s.h, fr: !!t.fr, text: [t.titel, t.text, ...(t.sagen ?? [])].join(' '), dauerTyp: s.dauer.typ, mehrtaegig: !!s.mehrtaegig }
+export function kontextSchritt(s: { h: string; dauer: { typ: number }; mehrtaegig?: boolean; rolle: Rolle[] }, t: { titel: string; text: string; sagen?: string[]; fr?: unknown }): EintragKontext {
+  return { typ: 'schritt', h: s.h, fr: !!t.fr, text: [t.titel, t.text, ...(t.sagen ?? [])].join(' '), dauerTyp: s.dauer.typ, mehrtaegig: !!s.mehrtaegig, rolle: s.rolle }
 }
 
 /** Text zu Suizid/Selbstverletzung bzw. zu Übergriffen (wie Prüfregel 16). */
@@ -148,7 +158,7 @@ export function pruefeBeschriftung(id: string, roh: unknown, ctx: EintragKontext
     if (!Array.isArray(r) || !r.length || r.length > GRENZEN.rolle || !r.every((x) => ROLLEN.includes(x as Rolle)) || new Set(r).size !== r.length) f.push(`rolle: 1–${GRENZEN.rolle} verschiedene aus ${ROLLEN.join(', ')}`)
     else {
       if (r.includes('ankommen') && (ctx.dauerTyp ?? 0) > 12) f.push('rolle „ankommen“ bei mehr als 12 Minuten')
-      if (r.includes('kern') && ctx.mehrtaegig) f.push('mehrtägig nie „kern“ (nur „transfer“)')
+      if (r.includes('kern') && (typeof b.mehrtaegig === 'boolean' ? b.mehrtaegig : ctx.mehrtaegig)) f.push('mehrtägig nie „kern“ (nur „transfer“)')
     }
   }
   if ('bogen' in b && !BOEGEN.includes(b.bogen as Bogen)) f.push(`bogen: eins von ${BOEGEN.join(', ')}`)
@@ -224,6 +234,28 @@ export function pruefeBeschriftung(id: string, roh: unknown, ctx: EintragKontext
     else if (agent && ctx.text && AKUT_RE.test(ctx.text) && s !== 'akut') f.push('sensibel: Text zu Suizid/Selbstverletzung bleibt „akut“')
     else if (agent && ctx.text && SCHUTZ_RE.test(ctx.text) && s !== 'akut' && s !== 'kinderschutz') f.push('sensibel: Text zu Übergriffen bleibt „kinderschutz“')
   }
+  if ('mehrtaegig' in b) {
+    if (typeof b.mehrtaegig !== 'boolean') f.push('mehrtaegig: true oder false')
+    else if (b.mehrtaegig) {
+      const r = (Array.isArray(b.rolle) ? b.rolle : ctx.rolle) ?? []
+      if (!r.includes('transfer')) f.push('mehrtaegig: rolle braucht „transfer“ (Bausteine: ["uebung", "transfer"])')
+      if (ctx.typ === 'schritt' && r.some((x) => x !== 'transfer')) f.push('mehrtaegig: Schritt nur mit rolle ["transfer"]')
+    }
+  }
+  if ('braucht' in b) {
+    const l = b.braucht
+    if (ctx.typ !== 'baustein') f.push('braucht nur für Mikro-Bausteine (Schritte: Voraussetzungen kommen aus der Quelle)')
+    else if (!Array.isArray(l) || !l.every((x) => typeof x === 'string') || new Set(l).size !== l.length) f.push('braucht: Liste verschiedener Ids, [] = keine')
+    else
+      for (const x of l as string[]) {
+        if (x === id) f.push('braucht: verweist auf sich selbst')
+        else if (ctx.idBlatt) {
+          const bl = ctx.idBlatt(x)
+          if (bl === undefined) f.push(`braucht: „${x}“ gibt es im Katalog nicht`)
+          else if (bl === 'schritt' || (ctx.blatt && bl !== ctx.blatt)) f.push(`braucht: „${x}“ ist kein Baustein desselben Blatts`)
+        }
+      }
+  }
   return f.map((x) => `${id}: ${x}`)
 }
 
@@ -231,7 +263,7 @@ export function pruefeBeschriftung(id: string, roh: unknown, ctx: EintragKontext
 const SICHER_SPALTE: Record<BeschriftungFeld, string> = {
   rolle: 'rolle', bogen: 'bogen', eldib: 'eldib', kompetenz: 'kompetenz', alter: 'alter', energie: 'energie', belastung: 'belastung',
   einzeltauglich: 'einzeltauglich', einzelvariante: 'einzelvariante', allgemein: 'allgemein', zielgruppe: 'zielgruppe', merkmale: 'merkmale',
-  sensibel: 'sensibel',
+  sensibel: 'sensibel', mehrtaegig: 'mehrtaegig', braucht: 'braucht',
 }
 
 /** Felder eines Overlays, die tatsächlich gesetzt sind. */
@@ -261,6 +293,14 @@ export function wendeBeschriftungAn(e: MikroBaustein | SchrittMeta, b: Beschrift
     if (b.einzelvariante.fr) s.einzelvarianteFr = { text: b.einzelvariante.fr.text, ...(b.einzelvariante.fr.sagen ? { sagen: [...b.einzelvariante.fr.sagen] } : {}) }
   }
   if (b.allgemein && opt.baustein) (e as MikroBaustein).allgemein = { ...b.allgemein }
+  if (typeof b.mehrtaegig === 'boolean') {
+    if (b.mehrtaegig) e.mehrtaegig = true
+    else delete e.mehrtaegig
+  }
+  if (b.braucht && opt.baustein) {
+    if (b.braucht.length) (e as MikroBaustein).braucht = [...b.braucht]
+    else delete (e as MikroBaustein).braucht
+  }
   if (b.zielgruppe) {
     if (b.zielgruppe === 'kind') delete e.zielgruppe
     else e.zielgruppe = b.zielgruppe

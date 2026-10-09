@@ -61,6 +61,8 @@ Herkunft und Sicherheit:
 | `zielgruppe` | `kind` · `fachkraft` · `eltern` | Werkzeuge für Fachkräfte bleiben `fachkraft` |
 | `merkmale` | `{ "wettbewerb", "koerperkontakt", "laut", "gewaltbezug", "katharsis": true }` | **vollständige Menge**: was fehlt, ist false; `{}` = keins |
 | `sensibel` | `kinderschutz` · `akut` · `familie` · `koerper` · `null` | `null` = ausdrücklich nicht sensibel |
+| `mehrtaegig` | `true` · `false` | läuft über Tage (Wochenbeobachtung, Punkteplan, Tracker); `true` verlangt Rolle `transfer` (Bausteine `["uebung", "transfer"]`, Schritte nur `["transfer"]`), nie `kern` |
+| `braucht` | Liste von Baustein-Ids, `[]` = keine | nur Bausteine; jede Id muss im Katalog existieren und zum selben Blatt gehören, nicht auf sich selbst zeigen |
 | `begruendung` | ≤ 120 Zeichen | Pflicht |
 | `von` | `agent` · `fachkraft` | Pflicht |
 | `sicher` | 0…1 | Pflicht; gilt für alle Felder des Eintrags |
@@ -81,9 +83,10 @@ Katharsis („Wut rauslassen“, auf Kissen schlagen).
 - Ungültige Einträge wendet das Katalog-Skript nicht an; `passgenau:pruefen` nennt sie (Regel 24) und prüft, dass
   alle gültigen im Katalog angekommen sind (Regel 25).
 
-Im Katalog stehen die Werte in den gewohnten Feldern; neu sind `k` (Kompetenzfelder aus einer Beschriftung), `ev`/`evf`
-(Einzelvariante DE/FR, Schritte) und `ag` (`allgemein`, Bausteine) sowie die Sicherheits-Spalten `einzelvariante`,
-`allgemein`, `zielgruppe`, `merkmale` (`src/passgenau/kern/format.ts`).
+Im Katalog stehen die Werte in den gewohnten Feldern (`mehrtaegig` → `mt`, `braucht` → `br`); neu sind `k`
+(Kompetenzfelder aus einer Beschriftung), `ev`/`evf` (Einzelvariante DE/FR, Schritte) und `ag` (`allgemein`, Bausteine)
+sowie die Sicherheits-Spalten `einzelvariante`, `allgemein`, `zielgruppe`, `merkmale`, `mehrtaegig`
+(`src/passgenau/kern/format.ts`).
 
 ## Befehle
 

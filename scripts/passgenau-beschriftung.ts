@@ -34,7 +34,7 @@ export function kontextAusKatalog(k: Katalog, e: KatalogEintrag | undefined): Ei
   if (!e) return undefined
   if (e.typ === 'baustein') {
     const blatt = intern(k).q.blatt.get(e.quelle.blatt)
-    return blatt ? kontextBaustein(e, blatt) : undefined
+    return blatt ? kontextBaustein(e, blatt, (id) => { const x = k.eintraege.get(id); return !x ? undefined : x.typ === 'baustein' ? x.quelle.blatt : 'schritt' }) : undefined
   }
   return kontextSchritt(e, e)
 }
