@@ -200,6 +200,7 @@ export const THEMEN: ThemaDef[] = [
   T('mathe', 'brueche', 'Brüche', 'Fractions'),
   T('mathe', 'groessen', 'Größen & Einheiten', 'Grandeurs et mesures'),
   T('mathe', 'geometrie', 'Geometrie', 'Géométrie'),
+  T('mathe', 'daten', 'Daten & Statistik', 'Données et statistiques'),
 ]
 
 export const themaById = new Map(THEMEN.map((t) => [t.bereich + '/' + t.id, t]))

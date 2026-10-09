@@ -163,10 +163,24 @@ export type Baustein =
   | { art: 'bruchbilder'; items: Bruchbild[]; spalten?: 1 | 2 | 3 | 4 }
   /** Einheiten-Treppe (l – dl – cl – ml, t – kg – g): nach unten malnehmen, nach oben teilen. */
   | { art: 'treppe'; stufen: string[]; runter: string; rauf: string; beispiel?: string }
+  /** Rechtecke und Quadrate auf Zentimeter-Karo in Originalgröße (1 Kästchen = 1 cm²): zum Auszählen, zum Nachmessen
+   *  (`kaestchen: false`) oder als leeres Karo zum Selberzeichnen (`feld`). */
+  | { art: 'flaeche'; felder: FlaecheFeld[]; spalten?: 1 | 2 | 3 | 4 }
+  /** Thermometer (°C) als senkrechter Zahlenstrahl mit Minusgraden: `wert` = rote Säule (ablesen), ohne `wert` zum
+   *  Einfärben; `ziel` = Marke, mit `pfeil` die Änderung als Pfeil (über die 0 in zwei Teilen). */
+  | { art: 'temperatur'; von: number; bis: number; items: TemperaturItem[]; spalten?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 }
   /** Komma-Sprünge bei · und : 10, 100, 1000: Ziffern in Kästchen, Bögen für jeden Sprung. Ohne `ergebnis` zum Einzeichnen. */
   | { art: 'kommasprung'; items: { zahl: string; op: '·' | ':'; faktor: 10 | 100 | 1000; ergebnis?: string; label?: string; boegen?: boolean }[]; spalten?: 1 | 2 | 3 }
   /** Geometrie in Originalgröße: Maße in mm (zum Nachmessen muss das Blatt in 100 % gedruckt werden). */
   | { art: 'geo'; felder: GeoFeld[]; spalten?: 1 | 2 | 3 | 4 }
+  /** Säulendiagramm (`liegend`: Balken nach rechts) mit Achsen, Skala und Gitter. Ohne Wert (`null` oder ohne `werte`)
+   *  kein Balken – zum Selberzeichnen; leere Kategorie '' = Schreiblinie. `achsen`: [Kategorien-Achse, Werte-Achse].
+   *  `zahlen` schreibt die Werte an die Balken, `einheiten` teilt sie in Kästchen (Ausgleichen), `linie` = gestrichelte
+   *  Linie quer mit Legende (z. B. Mittelwert). */
+  | { art: 'diagramm'; kategorien: string[]; werte?: (number | null)[]; max: number; schritt: number; fein?: number; achsen?: [string, string]; titel?: string; liegend?: boolean; zahlen?: boolean; einheiten?: boolean; linie?: { wert: number; text?: string }; hoehe?: number }
+  /** Strichliste mit Häufigkeit: Striche in Fünferbündeln (der fünfte quer). Ohne `striche` bzw. `anzahl` bleibt das Feld
+   *  leer. `kopf`: Spaltentitel, `daten`: Urliste darüber zum Abhaken, `summe`: Zeile „Gesamt“ (true = leer, Zahl = ausgefüllt). */
+  | { art: 'strichliste'; kopf?: [string, string, string]; zeilen: { text: string; striche?: number; anzahl?: number }[]; daten?: string[]; summe?: boolean | number }
   // --- Bildgeschichten & Karten ---------------------------------------------
   | { art: 'comic'; felder: ComicFeld[]; spalten?: 2 | 3 }
   | { art: 'karten'; karten: { titel?: string; text?: string; bild?: BildId }[]; spalten?: 2 | 3 | 4; hoehe?: number }
@@ -205,6 +219,34 @@ export interface Bruchbild {
   text?: string
   label?: string
   ankreuzen?: string[]
+}
+
+/** Ein Rechteck auf Zentimeter-Karo, in Originalgröße (Maße in cm). */
+export interface FlaecheFeld {
+  /** Länge (waagrecht) und Breite (senkrecht) in cm; 0 und 0 = kein Rechteck (leeres Karo, dann `feld` angeben) */
+  l: number
+  b: number
+  /** Karo-Feld in cm [Breite, Höhe] mit Karo auch um das Rechteck (zum Selberzeichnen); das Rechteck liegt mittig */
+  feld?: [number, number]
+  /** cm²-Kästchen im Rechteck (Standard: ja); false = nur der Umriss zum Nachmessen */
+  kaestchen?: boolean
+  /** so viele Kästchen reihenweise färben (z. B. eine Reihe) */
+  gefaerbt?: number
+  /** Seitenlängen anschreiben: [oben, rechts], z. B. ['6 cm', '4 cm'] */
+  masse?: [string, string]
+  label?: string
+  /** Zeile unter der Zeichnung ('' = Schreiblinie) */
+  text?: string
+}
+
+/** Ein Thermometer: `wert` füllt die Säule, `ziel` setzt eine Marke, `pfeil` zeichnet die Änderung von `wert` nach `ziel`. */
+export interface TemperaturItem {
+  wert?: number
+  ziel?: number
+  pfeil?: boolean
+  label?: string
+  /** Zeile darunter ('' = Schreiblinie) */
+  text?: string
 }
 
 /** Ein Feld mit einer Zeichnung in Originalgröße; alle Maße in mm, Ursprung oben links, y nach unten. */

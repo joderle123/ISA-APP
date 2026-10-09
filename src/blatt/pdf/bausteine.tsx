@@ -11,7 +11,7 @@ import { bildZeichnung, iconZeichnung, NEUTRAL, type Form, type Palette, type Ze
 import { gefuehlWort, gesichtZeichnung } from '../gesichter'
 import { motivZeichnung, VULKAN, HAND, fingerSpitze, EISBERG } from '../motive'
 import { Zeichnen } from './Zeichnen'
-import { Bruchbilder, Geo, Hunderterfeld, Kommasprung, Paeckchen, Stellentafel, Treppe, Zahlenstrahl, Zeile } from './mathe'
+import { Bruchbilder, Diagramm, Flaeche, Geo, Hunderterfeld, Kommasprung, Paeckchen, Stellentafel, Strichliste, Temperatur, Treppe, Zahlenstrahl, Zeile } from './mathe'
 import { SCHRIFT, TEXTE, typo, type Masse } from './stil'
 
 export interface Ctx {
@@ -2312,10 +2312,18 @@ function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
       return <Bruchbilder c={c} b={b} />
     case 'treppe':
       return <Treppe c={c} b={b} />
+    case 'flaeche':
+      return <Flaeche c={c} b={b} />
+    case 'temperatur':
+      return <Temperatur c={c} b={b} />
     case 'kommasprung':
       return <Kommasprung c={c} b={b} />
     case 'geo':
       return <Geo c={c} b={b} />
+    case 'diagramm':
+      return <Diagramm c={c} b={b} />
+    case 'strichliste':
+      return <Strichliste c={c} b={b} />
   }
 }
 
@@ -2334,6 +2342,8 @@ const FEST = new Set<Baustein['art']>([
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'plan', 'atmen', 'notfall', 'linien',
   'gefuehlsrad', 'netz', 'kurve', 'tageskreis', 'farbkalender', 'rechnungen', 'bon',
   'stellentafel', 'hunderterfeld', 'zahlenstrahl', 'bruchbilder', 'treppe', 'kommasprung', 'geo',
+  'flaeche', 'temperatur',
+  'diagramm', 'strichliste',
 ])
 
 /** Kleine Bausteine, die nicht umbrechen sollen (auch wenn sie es könnten). */

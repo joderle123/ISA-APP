@@ -6,7 +6,7 @@
 
 import { View, Text, Svg, Path, Circle, Line, Rect, Polygon, G } from '@react-pdf/renderer'
 import type { ReactNode } from 'react'
-import type { Baustein, Bruchbild, GeoElement, GeoFeld, GeoPunkt } from '../typen'
+import type { Baustein, Bruchbild, FlaecheFeld, GeoElement, GeoFeld, GeoPunkt, TemperaturItem } from '../typen'
 import { NEUTRAL } from '../zeichnung'
 import { Fliess, type Ctx } from './bausteine'
 import { SCHRIFT, typo } from './stil'
@@ -623,6 +623,245 @@ export function Treppe({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'treppe' 
   )
 }
 
+// --- Flächen auf Zentimeter-Karo (Originalgröße) --------------------------------------------------------
+
+/** Platz eines Flächen-Feldes in mm: das Karo-Feld oder das Rechteck mit Rand (oben und rechts Platz für die Maße). */
+export function flaecheGroesse(f: FlaecheFeld): { B: number; H: number } {
+  if (f.feld) return { B: f.feld[0] * 10, H: f.feld[1] * 10 }
+  const rechts = f.masse ? Math.max(5, f.masse[1].length * 1.95 + 3.5) : 4
+  return { B: f.l * 10 + 4 + rechts, H: f.b * 10 + (f.masse ? 7.5 : 4) + 4 }
+}
+
+/** Ein Feld (B × H in mm): Karo um das Rechteck nur mit `feld`, cm²-Kästchen im Rechteck, gefärbte Kästchen reihenweise. */
+function FlaecheZeichnung({ c, f, B, H }: { c: Ctx; f: FlaecheFeld; B: number; H: number }) {
+  const L = f.l * 10
+  const T = f.b * 10
+  const rechteck = L > 0 && T > 0
+  const kaestchen = rechteck && f.kaestchen !== false
+  // Lage: auf dem Karo mittig in ganzen Zentimetern, sonst mittig im Feld
+  const g = flaecheGroesse(f)
+  const x = f.feld ? Math.floor((f.feld[0] - f.l) / 2) * 10 : (B - g.B) / 2 + 4
+  const y = f.feld ? Math.floor((f.feld[1] - f.b) / 2) * 10 : (H - g.H) / 2 + (f.masse ? 7.5 : 4)
+  const teile: ReactNode[] = []
+  if (f.feld) {
+    for (let i = 10; i < B - 0.01; i += 10) teile.push(<Line key={'kx' + i} x1={i} y1={0} x2={i} y2={H} stroke={KARO_LINIE} strokeWidth={0.22} />)
+    for (let j = 10; j < H - 0.01; j += 10) teile.push(<Line key={'ky' + j} x1={0} y1={j} x2={B} y2={j} stroke={KARO_LINIE} strokeWidth={0.22} />)
+  }
+  if (rechteck) {
+    teile.push(<Rect key="fl" x={x} y={y} width={L} height={T} fill={kaestchen ? c.p.zart : '#FFFFFF'} />)
+    if (kaestchen) {
+      const proReihe = Math.round(f.l)
+      const n = Math.min(f.gefaerbt ?? 0, proReihe * Math.round(f.b))
+      for (let k = 0; k < n; k++) teile.push(<Rect key={'g' + k} x={x + (k % proReihe) * 10} y={y + Math.floor(k / proReihe) * 10} width={10} height={10} fill={c.p.mittel} />)
+      for (let i = 10; i < L - 0.01; i += 10) teile.push(<Line key={'ix' + i} x1={x + i} y1={y} x2={x + i} y2={y + T} stroke="#8A95A8" strokeWidth={0.2} />)
+      for (let j = 10; j < T - 0.01; j += 10) teile.push(<Line key={'iy' + j} x1={x} y1={y + j} x2={x + L} y2={y + j} stroke="#8A95A8" strokeWidth={0.2} />)
+    }
+    teile.push(<Rect key="rand" x={x} y={y} width={L} height={T} fill="none" stroke={NEUTRAL.tinte} strokeWidth={0.4} />)
+  }
+  const mass = (key: string, text: string, style: Record<string, unknown>) => (
+    <View key={key} style={{ position: 'absolute', height: 14, justifyContent: 'center', ...style }}>
+      <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: 9, lineHeight: 1.2, color: NEUTRAL.text }}>{t(c, text)}</Text>
+    </View>
+  )
+  return (
+    <View style={{ width: B * MM, height: H * MM }}>
+      <Svg width={B * MM} height={H * MM} viewBox={`0 0 ${B} ${H}`}>
+        {teile}
+      </Svg>
+      {rechteck && f.masse ? mass('mo', f.masse[0], { left: (x + L / 2) * MM - 40, top: y * MM - 15, width: 80, alignItems: 'center' }) : null}
+      {rechteck && f.masse ? mass('mr', f.masse[1], { left: (x + L + 1.6) * MM, top: (y + T / 2) * MM - 7, width: 60, alignItems: 'flex-start' }) : null}
+      <View style={{ position: 'absolute', left: 0, top: 0, width: B * MM, height: H * MM, borderWidth: 0.6, borderColor: NEUTRAL.haarlinie, borderRadius: 5 }} />
+    </View>
+  )
+}
+
+export function Flaeche({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'flaeche' }> }) {
+  const sp = b.spalten ?? Math.min(4, b.felder.length)
+  const luecke = 10
+  const spalte = (c.breite - (sp - 1) * luecke) / sp
+  const reihen: FlaecheFeld[][] = []
+  b.felder.forEach((f, i) => {
+    if (i % sp === 0) reihen.push([])
+    reihen[reihen.length - 1].push(f)
+  })
+  return (
+    <View>
+      {reihen.map((r, ri) => {
+        // Felder ohne Karo füllen die Spalte und sind in einer Reihe gleich hoch
+        const hoehe = Math.max(0, ...r.map((f) => (f.feld ? 0 : flaecheGroesse(f).H)))
+        return (
+          <View key={ri} wrap={false} style={{ flexDirection: 'row', marginTop: ri ? 10 : 0 }}>
+            {r.map((f, i) => {
+              const B = f.feld ? f.feld[0] * 10 : spalte / MM
+              const H = f.feld ? f.feld[1] * 10 : hoehe
+              return (
+                <View key={i} style={{ width: spalte, marginLeft: i ? luecke : 0 }}>
+                  {f.label ? (
+                    <Fliess c={c} klein fett farbe={NEUTRAL.leise} style={{ marginBottom: 3 }}>
+                      {t(c, f.label)}
+                    </Fliess>
+                  ) : null}
+                  <FlaecheZeichnung c={c} f={f} B={B} H={H} />
+                  {f.text !== undefined ? (
+                    f.text ? (
+                      <View style={{ marginTop: 4 }}>
+                        <Zeile c={c} s={f.text} />
+                      </View>
+                    ) : (
+                      <View style={{ width: Math.min(B * MM, 120), height: c.m.basis * 1.9, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
+                    )
+                  ) : null}
+                </View>
+              )
+            })}
+          </View>
+        )
+      })}
+    </View>
+  )
+}
+
+// --- Thermometer (°C) mit Minusgraden ------------------------------------------------------------------------
+
+const ROT = '#D9523F'
+const KALT = '#E6EEF8'
+
+/** Maße eines Thermometers in pt (für alle Thermometer eines Bausteins gleich; auch für das Prüfskript). */
+export function temperaturSkala(b: { von: number; bis: number; items: TemperaturItem[] }) {
+  const R = Math.max(1, b.bis - b.von)
+  // pt je Grad: Skala etwa 150 pt hoch, die Grad-Striche mindestens 2,6 pt auseinander
+  const d = Math.min(6, Math.max(2.6, 150 / R))
+  const oben = 16
+  const kugel = 7.5
+  const cx = 32
+  const a = 3.6
+  const pfeil = b.items.some((x) => x.pfeil)
+  const marke = b.items.some((x) => x.ziel !== undefined)
+  return {
+    d,
+    kugel,
+    cx,
+    a,
+    /** Grad → y */
+    y: (v: number) => oben + (b.bis - v) * d,
+    /** Mitte der Kugel */
+    cb: oben + R * d + 5 + kugel,
+    H: oben + R * d + 5 + kugel * 2 + 2,
+    W: cx + a + (pfeil ? 34 : marke ? 9 : 4),
+    /** Zahlen alle 5 (10) Grad, Striche jedes (zweite) Grad */
+    schritt: R > 40 ? 10 : 5,
+    fein: R > 60 ? 2 : 1,
+  }
+}
+
+/** „–5“ mit Gedankenstrich wie im Text */
+const grad = (v: number) => (v < 0 ? '–' + Math.abs(v) : String(v))
+
+function ThermometerSkala({ c, b, x }: { c: Ctx; b: Extract<Baustein, { art: 'temperatur' }>; x: TemperaturItem }) {
+  const s = temperaturSkala(b)
+  const { cx, a, kugel, cb, y } = s
+  const links = cx - a - 0.8
+  const oben = y(b.bis) - 5
+  const yj = cb - Math.sqrt(kugel * kugel - a * a)
+  const roehre = `M${cx - a} ${yj} L${cx - a} ${oben + a} A${a} ${a} 0 0 1 ${cx + a} ${oben + a} L${cx + a} ${yj} A${kugel} ${kugel} 0 1 1 ${cx - a} ${yj} Z`
+  const formen: ReactNode[] = []
+  const texte: ReactNode[] = []
+  if (b.von < 0) formen.push(<Rect key="kalt" x={1} y={y(Math.min(0, b.bis))} width={links - 1.5} height={y(b.von) - y(Math.min(0, b.bis)) + 2} rx={2} ry={2} fill={KALT} />)
+  formen.push(<Path key="r0" d={roehre} fill="#FFFFFF" />)
+  formen.push(<Circle key="kugel" cx={cx} cy={cb} r={kugel - 1.7} fill={ROT} />)
+  const saeule = x.wert !== undefined ? y(x.wert) : y(b.von) + 3
+  formen.push(<Rect key="saeule" x={cx - 1.5} y={saeule} width={3} height={cb - saeule} fill={ROT} />)
+  formen.push(<Path key="r1" d={roehre} fill="none" stroke={NEUTRAL.tinte} strokeWidth={0.8} strokeLinejoin="round" />)
+  for (let v = b.von; v <= b.bis; v += s.fein) {
+    const gross = v % s.schritt === 0
+    const l = v === 0 ? 7.5 : gross ? 5.5 : 3.2
+    formen.push(<Line key={'t' + v} x1={links} y1={y(v)} x2={links - l} y2={y(v)} stroke={NEUTRAL.tinte} strokeWidth={v === 0 ? 0.95 : gross ? 0.7 : 0.4} />)
+    if (gross)
+      texte.push(
+        <View key={'z' + v} style={{ position: 'absolute', left: 0, top: y(v) - 5, width: links - 9, height: 10, alignItems: 'flex-end', justifyContent: 'center' }}>
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.5, fontWeight: v === 0 ? 600 : 400, lineHeight: 1, color: NEUTRAL.text }}>{grad(v)}</Text>
+        </View>,
+      )
+  }
+  texte.push(
+    <View key="einheit" style={{ position: 'absolute', left: 0, top: 0, width: links - 9, height: 10, alignItems: 'flex-end' }}>
+      <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.5, fontWeight: 600, lineHeight: 1, color: NEUTRAL.leise }}>°C</Text>
+    </View>,
+  )
+  if (x.ziel !== undefined) {
+    const yz = y(x.ziel)
+    const xr = cx + a + 1.2
+    formen.push(<Polygon key="ziel" points={`${xr},${yz} ${xr + 4.8},${yz - 2.9} ${xr + 4.8},${yz + 2.9}`} fill={c.p.tief} />)
+  }
+  if (x.pfeil && x.wert !== undefined && x.ziel !== undefined && x.wert !== x.ziel) {
+    const xa = cx + a + 10
+    const ya = y(x.wert)
+    const ye = y(x.ziel)
+    const auf = x.ziel > x.wert
+    const r = auf ? 1 : -1
+    formen.push(<Line key="pa" x1={xa - 2.6} y1={ya} x2={xa + 2.6} y2={ya} stroke={c.p.tief} strokeWidth={0.9} />)
+    formen.push(<Line key="pl" x1={xa} y1={ya} x2={xa} y2={ye + r * 4} stroke={c.p.tief} strokeWidth={1.1} />)
+    formen.push(<Polygon key="pp" points={`${xa},${ye} ${xa - 2.7},${ye + r * 5.5} ${xa + 2.7},${ye + r * 5.5}`} fill={c.p.tief} />)
+    // über die 0: in zwei Teilen
+    const punkte = x.wert * x.ziel < 0 ? [x.wert, 0, x.ziel] : [x.wert, x.ziel]
+    if (punkte.length === 3) formen.push(<Line key="p0" x1={xa - 2.6} y1={y(0)} x2={xa + 2.6} y2={y(0)} stroke={c.p.tief} strokeWidth={0.9} />)
+    for (let i = 0; i < punkte.length - 1; i++) {
+      const mitte = (y(punkte[i]) + y(punkte[i + 1])) / 2
+      texte.push(
+        <View key={'pt' + i} style={{ position: 'absolute', left: xa + 4, top: mitte - 5.5, height: 11, justifyContent: 'center' }}>
+          <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.5, fontWeight: 600, lineHeight: 1, color: c.p.tief }}>{(auf ? '+' : '–') + Math.abs(punkte[i + 1] - punkte[i])}</Text>
+        </View>,
+      )
+    }
+  }
+  return (
+    <View style={{ width: s.W, height: s.H }}>
+      <Svg width={s.W} height={s.H} viewBox={`0 0 ${s.W} ${s.H}`}>
+        {formen}
+      </Svg>
+      {texte}
+    </View>
+  )
+}
+
+export function Temperatur({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'temperatur' }> }) {
+  const sp = b.spalten ?? Math.min(6, b.items.length)
+  const luecke = 10
+  const zelle = (c.breite - (sp - 1) * luecke) / sp
+  const reihen: TemperaturItem[][] = []
+  b.items.forEach((x, i) => {
+    if (i % sp === 0) reihen.push([])
+    reihen[reihen.length - 1].push(x)
+  })
+  return (
+    <View>
+      {reihen.map((r, ri) => (
+        <View key={ri} wrap={false} style={{ flexDirection: 'row', marginTop: ri ? 10 : 0 }}>
+          {r.map((x, i) => (
+            <View key={i} style={{ width: zelle, marginLeft: i ? luecke : 0, alignItems: 'center' }}>
+              {x.label ? (
+                <Fliess c={c} klein fett farbe={NEUTRAL.leise} style={{ marginBottom: 2 }}>
+                  {t(c, x.label)}
+                </Fliess>
+              ) : null}
+              <ThermometerSkala c={c} b={b} x={x} />
+              {x.text !== undefined ? (
+                x.text ? (
+                  <View style={{ marginTop: 3 }}>
+                    <Zeile c={c} s={x.text} />
+                  </View>
+                ) : (
+                  <View style={{ width: Math.min(zelle - 6, 70), height: c.m.basis * 1.9, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
+                )
+              ) : null}
+            </View>
+          ))}
+        </View>
+      ))}
+    </View>
+  )
+}
+
 // --- Komma-Sprünge ---------------------------------------------------------------------------------
 
 interface Sprung {
@@ -740,6 +979,306 @@ export function Kommasprung({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'kom
           ))}
         </View>
       ))}
+    </View>
+  )
+}
+
+// --- Daten: Diagramm und Strichliste -------------------------------------------------------------------
+
+/** grobe Textbreite in pt (für Platz und Umbruch der Beschriftungen) */
+const textBreite = (s: string, g: number) => s.length * g * 0.56
+const GITTER_FEIN = '#E3E7EE'
+const GITTER = '#C4CBD7'
+
+type DiagrammB = Extract<Baustein, { art: 'diagramm' }>
+
+/** Skala (beschriftet, alle `schritt`) und feines Gitter (alle `fein`) */
+function diagrammSkala(b: DiagrammB): { grob: number[]; fein: number[] } {
+  const reihe = (d: number) => Array.from({ length: Math.round(b.max / d) + 1 }, (_, i) => Math.round(i * d * 1e6) / 1e6)
+  return { grob: reihe(b.schritt), fein: b.fein ? reihe(b.fein) : [] }
+}
+
+/** Pfeilspitze der Werte-Achse: nach oben (o) bzw. nach rechts (r), Spitze bei (x, y) */
+function pfeilspitze(x: number, y: number, r: 'o' | 'r') {
+  const p = r === 'o' ? `${x},${y} ${x - 3.2},${y + 6.5} ${x + 3.2},${y + 6.5}` : `${x},${y} ${x - 6.5},${y - 3.2} ${x - 6.5},${y + 3.2}`
+  return <Polygon points={p} fill={NEUTRAL.tinte} />
+}
+
+/** Legende unter dem Diagramm für die gestrichelte Linie (z. B. den Mittelwert) */
+function LinienLegende({ c, text, links }: { c: Ctx; text: string; links: number }) {
+  return (
+    <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 4, marginLeft: links }}>
+      <Svg width={26} height={8} viewBox="0 0 26 8">
+        <Line x1={1} y1={4} x2={25} y2={4} stroke={WARM} strokeWidth={1.5} strokeDasharray="4 2.5" />
+      </Svg>
+      <Text style={{ fontFamily: c.m.schrift, fontWeight: c.m.fett, fontSize: c.m.klein, lineHeight: 1.2, color: WARM, marginLeft: 5 }}>{t(c, text)}</Text>
+    </View>
+  )
+}
+
+function DiagrammStehend({ c, b }: { c: Ctx; b: DiagrammB }) {
+  const g = c.m.klein
+  const n = b.kategorien.length
+  const { grob, fein } = diagrammSkala(b)
+  const ax = Math.max(...grob.map((v) => textBreite(zahlText(v), g + 0.5))) + 12
+  const rechts = 12
+  const s = Math.min(66, (c.breite - ax - rechts) / n)
+  const PW = s * n
+  const oben = b.achsen?.[1] ? 22 : 13
+  const PH = b.hoehe ?? 118
+  const y0 = oben + PH
+  const Y = (v: number) => y0 - (v / b.max) * PH
+  const X = (i: number) => ax + (i + 0.5) * s
+  const bw = Math.min(28, s * 0.55)
+  const zwei = b.kategorien.some((k) => textBreite(k, g) > s - 4)
+  const katH = g * (zwei ? 2.7 : 1.55)
+  const W = ax + PW + rechts
+  const H = y0 + 5 + katH + (b.achsen?.[0] ? g * 1.5 : 0)
+  const werte = b.werte ?? []
+  return (
+    <View wrap={false} style={{ alignSelf: 'flex-start' }}>
+      {b.titel ? (
+        <Fliess c={c} klein fett style={{ marginBottom: 2 }}>
+          {t(c, b.titel)}
+        </Fliess>
+      ) : null}
+      <View style={{ width: W, height: H }}>
+        <Svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
+          {fein.map((v) => (
+            <Line key={'f' + v} x1={ax} y1={Y(v)} x2={ax + PW} y2={Y(v)} stroke={GITTER_FEIN} strokeWidth={0.5} />
+          ))}
+          {grob.map((v) => (v ? <Line key={'g' + v} x1={ax - 3} y1={Y(v)} x2={ax + PW} y2={Y(v)} stroke={GITTER} strokeWidth={0.7} /> : null))}
+          {werte.map((v, i) =>
+            v === null || v === undefined || v <= 0 ? null : (
+              <G key={'b' + i}>
+                <Rect x={X(i) - bw / 2} y={Y(v)} width={bw} height={y0 - Y(v)} fill={c.p.mittel} stroke={c.p.tief} strokeWidth={0.9} />
+                {b.einheiten
+                  ? Array.from({ length: Math.max(0, Math.ceil(v) - 1) }, (_, k) => (
+                      <Line key={k} x1={X(i) - bw / 2} y1={Y(k + 1)} x2={X(i) + bw / 2} y2={Y(k + 1)} stroke={c.p.tief} strokeWidth={0.45} />
+                    ))
+                  : null}
+              </G>
+            ),
+          )}
+          {b.linie ? <Line x1={ax} y1={Y(b.linie.wert)} x2={ax + PW} y2={Y(b.linie.wert)} stroke={WARM} strokeWidth={1.5} strokeDasharray="4 2.5" /> : null}
+          <Line x1={ax} y1={y0} x2={ax} y2={oben - 5} stroke={NEUTRAL.tinte} strokeWidth={1.1} />
+          {pfeilspitze(ax, oben - 10, 'o')}
+          <Line x1={ax} y1={y0} x2={ax + PW + 4} y2={y0} stroke={NEUTRAL.tinte} strokeWidth={1.1} />
+        </Svg>
+        {b.achsen?.[1] ? (
+          <View style={{ position: 'absolute', left: ax + 7, top: oben - 17, width: PW }}>
+            <Text style={{ fontFamily: c.m.schrift, fontWeight: c.m.fett, fontSize: g, lineHeight: 1.2, color: NEUTRAL.leise }}>{t(c, b.achsen[1])}</Text>
+          </View>
+        ) : null}
+        {grob.map((v) => (
+          <View key={'s' + v} style={{ position: 'absolute', left: 0, top: Y(v) - g * 0.68, width: ax - 6 }}>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: g + 0.5, lineHeight: 1.2, color: NEUTRAL.text, textAlign: 'right' }}>{zahlText(v)}</Text>
+          </View>
+        ))}
+        {b.kategorien.map((k, i) => (
+          <View key={'k' + i} style={{ position: 'absolute', left: X(i) - s / 2, top: y0 + 4, width: s, alignItems: 'center' }}>
+            {k ? (
+              <Text style={{ fontFamily: c.m.schrift, fontSize: g, lineHeight: 1.2, color: NEUTRAL.text, textAlign: 'center' }}>{t(c, k)}</Text>
+            ) : (
+              <View style={{ width: s * 0.78, height: g * 1.45, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
+            )}
+          </View>
+        ))}
+        {b.zahlen
+          ? werte.map((v, i) =>
+              v === null || v === undefined ? null : (
+                <View key={'z' + i} style={{ position: 'absolute', left: X(i) - s / 2, top: Y(v) - g * 1.6, width: s, alignItems: 'center' }}>
+                  <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: g + 0.5, lineHeight: 1.2, color: c.p.tief }}>{zahlText(v)}</Text>
+                </View>
+              ),
+            )
+          : null}
+        {b.achsen?.[0] ? (
+          <View style={{ position: 'absolute', left: ax, top: y0 + 5 + katH, width: PW, alignItems: 'flex-end' }}>
+            <Text style={{ fontFamily: c.m.schrift, fontWeight: c.m.fett, fontSize: g, lineHeight: 1.2, color: NEUTRAL.leise }}>{t(c, b.achsen[0])}</Text>
+          </View>
+        ) : null}
+      </View>
+      {b.linie?.text ? <LinienLegende c={c} text={b.linie.text} links={ax} /> : null}
+    </View>
+  )
+}
+
+function DiagrammLiegend({ c, b }: { c: Ctx; b: DiagrammB }) {
+  const g = c.m.klein
+  const n = b.kategorien.length
+  const { grob, fein } = diagrammSkala(b)
+  const lw = Math.min(c.breite * 0.34, Math.max(26, ...b.kategorien.map((k) => textBreite(k, g))) + 12)
+  const rechts = 16
+  const PW = Math.min(c.breite - lw - rechts, 400)
+  const sh = b.hoehe ? b.hoehe / n : 21
+  const oben = b.achsen?.[0] ? 20 : 8
+  const PH = sh * n
+  const yA = oben + PH
+  const X = (v: number) => lw + (v / b.max) * PW
+  const Yc = (i: number) => oben + (i + 0.5) * sh
+  const bh = Math.min(13, sh * 0.62)
+  const W = lw + PW + rechts
+  const H = yA + 5 + g * 1.5 + (b.achsen?.[1] ? g * 1.5 : 0)
+  const werte = b.werte ?? []
+  return (
+    <View wrap={false} style={{ alignSelf: 'flex-start' }}>
+      {b.titel ? (
+        <Fliess c={c} klein fett style={{ marginBottom: 2 }}>
+          {t(c, b.titel)}
+        </Fliess>
+      ) : null}
+      <View style={{ width: W, height: H }}>
+        <Svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
+          {fein.map((v) => (
+            <Line key={'f' + v} x1={X(v)} y1={oben - 3} x2={X(v)} y2={yA} stroke={GITTER_FEIN} strokeWidth={0.5} />
+          ))}
+          {grob.map((v) => (v ? <Line key={'g' + v} x1={X(v)} y1={oben - 3} x2={X(v)} y2={yA + 3} stroke={GITTER} strokeWidth={0.7} /> : null))}
+          {werte.map((v, i) =>
+            v === null || v === undefined || v <= 0 ? null : (
+              <G key={'b' + i}>
+                <Rect x={lw} y={Yc(i) - bh / 2} width={X(v) - lw} height={bh} fill={c.p.mittel} stroke={c.p.tief} strokeWidth={0.9} />
+                {b.einheiten
+                  ? Array.from({ length: Math.max(0, Math.ceil(v) - 1) }, (_, k) => (
+                      <Line key={k} x1={X(k + 1)} y1={Yc(i) - bh / 2} x2={X(k + 1)} y2={Yc(i) + bh / 2} stroke={c.p.tief} strokeWidth={0.45} />
+                    ))
+                  : null}
+              </G>
+            ),
+          )}
+          {b.linie ? <Line x1={X(b.linie.wert)} y1={oben - 3} x2={X(b.linie.wert)} y2={yA} stroke={WARM} strokeWidth={1.5} strokeDasharray="4 2.5" /> : null}
+          <Line x1={lw} y1={oben - 4} x2={lw} y2={yA} stroke={NEUTRAL.tinte} strokeWidth={1.1} />
+          <Line x1={lw} y1={yA} x2={W - 5} y2={yA} stroke={NEUTRAL.tinte} strokeWidth={1.1} />
+          {pfeilspitze(W, yA, 'r')}
+        </Svg>
+        {b.achsen?.[0] ? (
+          <View style={{ position: 'absolute', left: 0, top: 0, width: lw + PW }}>
+            <Text style={{ fontFamily: c.m.schrift, fontWeight: c.m.fett, fontSize: g, lineHeight: 1.2, color: NEUTRAL.leise }}>{t(c, b.achsen[0])}</Text>
+          </View>
+        ) : null}
+        {b.kategorien.map((k, i) => (
+          <View key={'k' + i} style={{ position: 'absolute', left: 0, top: Yc(i) - g * 0.72, width: lw - 7, alignItems: 'flex-end' }}>
+            {k ? (
+              <Text style={{ fontFamily: c.m.schrift, fontSize: g, lineHeight: 1.2, color: NEUTRAL.text, textAlign: 'right' }}>{t(c, k)}</Text>
+            ) : (
+              <View style={{ width: (lw - 7) * 0.85, height: g * 1.3, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
+            )}
+          </View>
+        ))}
+        {grob.map((v) => (
+          <View key={'s' + v} style={{ position: 'absolute', left: X(v) - 20, top: yA + 4, width: 40, alignItems: 'center' }}>
+            <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: g + 0.5, lineHeight: 1.2, color: NEUTRAL.text }}>{zahlText(v)}</Text>
+          </View>
+        ))}
+        {b.zahlen
+          ? werte.map((v, i) =>
+              v === null || v === undefined ? null : (
+                <View key={'z' + i} style={{ position: 'absolute', left: X(v) + 4, top: Yc(i) - g * 0.72, width: 40 }}>
+                  <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: g + 0.5, lineHeight: 1.2, color: c.p.tief }}>{zahlText(v)}</Text>
+                </View>
+              ),
+            )
+          : null}
+        {b.achsen?.[1] ? (
+          <View style={{ position: 'absolute', left: lw, top: yA + 5 + g * 1.5, width: PW + rechts, alignItems: 'flex-end' }}>
+            <Text style={{ fontFamily: c.m.schrift, fontWeight: c.m.fett, fontSize: g, lineHeight: 1.2, color: NEUTRAL.leise }}>{t(c, b.achsen[1])}</Text>
+          </View>
+        ) : null}
+      </View>
+      {b.linie?.text ? <LinienLegende c={c} text={b.linie.text} links={lw} /> : null}
+    </View>
+  )
+}
+
+/** Säulen- bzw. Balkendiagramm mit Achsen, Skala und Gitter – ausgefüllt zum Ablesen oder leer zum Zeichnen. */
+export function Diagramm({ c, b }: { c: Ctx; b: DiagrammB }) {
+  return b.liegend ? <DiagrammLiegend c={c} b={b} /> : <DiagrammStehend c={c} b={b} />
+}
+
+const STRICH_KOPF: Record<string, [string, string, string]> = { de: ['Wert', 'Strichliste', 'Häufigkeit'], fr: ['Valeur', 'Liste de comptage', 'Effectif'] }
+const GESAMT: Record<string, string> = { de: 'Gesamt', fr: 'Total' }
+
+/** Striche in Fünferbündeln: vier senkrecht, der fünfte quer darüber. */
+export function Striche({ n, h, farbe }: { n: number; h: number; farbe: string }) {
+  const d = 3.7
+  const bund = 3 * d + 8.5
+  const voll = Math.floor(n / 5)
+  const rest = n % 5
+  const W = Math.max(6, 3 + voll * bund + rest * d + 2)
+  const linien: ReactNode[] = []
+  const strich = (key: string, x: number) => <Line key={key} x1={x} y1={1} x2={x} y2={h - 1} stroke={farbe} strokeWidth={1.15} strokeLinecap="round" />
+  for (let k = 0; k < voll; k++) {
+    const x = 3 + k * bund
+    for (let j = 0; j < 4; j++) linien.push(strich(`${k}-${j}`, x + j * d))
+    linien.push(<Line key={`${k}q`} x1={x - 2} y1={h - 2.4} x2={x + 3 * d + 2} y2={2.4} stroke={farbe} strokeWidth={1.15} strokeLinecap="round" />)
+  }
+  for (let j = 0; j < rest; j++) linien.push(strich(`r${j}`, 3 + voll * bund + j * d))
+  return (
+    <Svg width={W} height={h} viewBox={`0 0 ${W} ${h}`}>
+      {linien}
+    </Svg>
+  )
+}
+
+export function Strichliste({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'strichliste' }> }) {
+  const g = c.m.klein
+  const kopf = b.kopf ?? STRICH_KOPF[c.sprache]
+  const mitSumme = b.summe !== undefined && b.summe !== false
+  const texte = [kopf[0], ...b.zeilen.map((z) => z.text), mitSumme ? GESAMT[c.sprache] : '']
+  const w1 = Math.min(c.breite * 0.36, Math.max(34, ...texte.map((s) => textBreite(s, g) + 16)))
+  const w3 = Math.min(96, Math.max(56, textBreite(kopf[2], g) + 18))
+  const w2 = Math.min(c.breite - w1 - w3, 210)
+  const H = 20
+  const rahmen = NEUTRAL.rahmen
+  const zelle = (key: string, w: number, inhalt: ReactNode, opt: { mitte?: boolean; letzte?: boolean; ton?: string; kopf?: boolean } = {}) => (
+    <View
+      key={key}
+      style={{ width: w, minHeight: H, justifyContent: 'center', alignItems: opt.mitte ? 'center' : 'flex-start', paddingHorizontal: 7, paddingVertical: opt.kopf ? 3 : 0, borderRightWidth: opt.letzte ? 0 : 0.8, borderRightColor: rahmen, backgroundColor: opt.ton }}
+    >
+      {inhalt}
+    </View>
+  )
+  const text = (s: string, fett?: boolean) => (
+    <Fliess c={c} klein fett={fett}>
+      {t(c, s)}
+    </Fliess>
+  )
+  // Gezählte Häufigkeit (Zeile mit Strichen) in der Akzentfarbe wie ein Beispiel-Ergebnis, vorgegebene Zahlen in Tinte
+  const zahl = (x: number | undefined, ergebnis: boolean) =>
+    x === undefined ? null : <Text style={{ fontFamily: SCHRIFT.jugend, fontWeight: 600, fontSize: c.m.basis, lineHeight: 1.2, color: ergebnis ? c.p.tief : NEUTRAL.tinte }}>{String(x)}</Text>
+  const alleGezaehlt = b.zeilen.every((z) => z.striche !== undefined && z.anzahl !== undefined)
+  return (
+    <View wrap={false} style={{ alignSelf: 'flex-start' }}>
+      {b.daten?.length ? (
+        <View style={{ flexDirection: 'row', flexWrap: 'wrap', width: c.breite, marginBottom: 6 }}>
+          {b.daten.map((d, i) => (
+            <View key={i} style={{ minWidth: 20, height: 16, paddingHorizontal: 5, marginRight: 4, marginBottom: 3, borderWidth: 0.7, borderColor: rahmen, borderRadius: 3, alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: g + 0.8, lineHeight: 1, color: NEUTRAL.text }}>{t(c, d)}</Text>
+            </View>
+          ))}
+        </View>
+      ) : null}
+      <View style={{ width: w1 + w2 + w3, borderWidth: 0.8, borderColor: rahmen, borderRadius: 8 }}>
+        <View style={{ flexDirection: 'row', backgroundColor: c.p.zart, borderTopLeftRadius: 8, borderTopRightRadius: 8, borderBottomWidth: 0.8, borderBottomColor: rahmen }}>
+          {zelle('k1', w1, text(kopf[0], true), { kopf: true })}
+          {zelle('k2', w2, text(kopf[1], true), { kopf: true })}
+          {zelle('k3', w3, text(kopf[2], true), { kopf: true, mitte: true, letzte: true })}
+        </View>
+        {b.zeilen.map((z, i) => (
+          <View key={i} style={{ flexDirection: 'row', borderTopWidth: i ? 0.8 : 0, borderTopColor: rahmen }}>
+            {zelle('a', w1, text(z.text))}
+            {zelle('b', w2, z.striche ? <Striche n={z.striche} h={12.5} farbe={NEUTRAL.tinte} /> : null)}
+            {zelle('c', w3, zahl(z.anzahl, z.striche !== undefined), { mitte: true, letzte: true })}
+          </View>
+        ))}
+        {mitSumme ? (
+          <View style={{ flexDirection: 'row', borderTopWidth: 1.1, borderTopColor: NEUTRAL.linie }}>
+            {zelle('a', w1, text(GESAMT[c.sprache], true))}
+            {zelle('b', w2, null, { ton: '#F7F8FB' })}
+            {zelle('c', w3, zahl(typeof b.summe === 'number' ? b.summe : undefined, alleGezaehlt), { mitte: true, letzte: true })}
+          </View>
+        ) : null}
+      </View>
     </View>
   )
 }

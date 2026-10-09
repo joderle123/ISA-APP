@@ -150,14 +150,18 @@ Stage, Küche, Werkstatt) – nie kindlich. Pro Lektion ein Blatt: Regel, Beispi
 | `hunderterfeld` | `felder: [{gefaerbt?, text?, label?}]`, `spalten?` | 10 × 10 = 1 Ganzes; `gefaerbt` Kästchen spaltenweise (Zehntel zuerst). Ohne `text` eine Schreiblinie darunter. |
 | `zahlenstrahl` | `von`, `bis`, `schritt`, `fein?`, `zahlen?`, `punkte?: [{wert, name?}]` | Werte als Text mit Komma. Punkte ohne `name` bekommen einen leeren Kasten zum Eintragen. |
 | `bruchbilder` | `items: [{form, teile?, gefaerbt?, ungleich?, anzahl?, gruppen?, nenner?, bruch?, text?, label?, ankreuzen?}]`, `spalten?` | `kreis`, `rechteck`, `streifen`, `menge` (Punkte, in `gruppen` eingekreist), `wand` (Bruchstreifen). `ungleich` = absichtlich ungleiche Teile. `bruch: "3/4"` oder `""` (leerer Bruch). |
-| `treppe` | `stufen`, `runter`, `rauf`, `beispiel?` | Einheiten-Treppe (l – dl – cl – ml, t – kg – g): nach unten malnehmen, nach oben teilen. |
+| `treppe` | `stufen`, `runter`, `rauf`, `beispiel?` | Einheiten-Treppe (l – dl – cl – ml, t – kg – g; Flächen m² – dm² – cm² – mm² bzw. ha – a – m² mit „· 100“): nach unten malnehmen, nach oben teilen. |
+| `flaeche` | `felder: [{l, b, feld?, kaestchen?, gefaerbt?, masse?, label?, text?}]`, `spalten?` | Rechteck/Quadrat (`l` × `b` in cm) in **Originalgröße**: cm²-Kästchen zum Auszählen, `gefaerbt` färbt reihenweise (z. B. eine Reihe), `masse: ["6 cm", "4 cm"]` beschriftet oben und rechts, `kaestchen: false` = nur Umriss zum Nachmessen. `feld: [17, 4]` = Zentimeter-Karo (cm) zum Selberzeichnen, mit `l: 0, b: 0` leer. Das Prüfskript prüft die Breite. |
+| `temperatur` | `von`, `bis` (ganze °C, Spanne ≤ 60), `items: [{wert?, ziel?, pfeil?, label?, text?}]`, `spalten?` | Thermometer als senkrechter Zahlenstrahl mit Minusgraden (Bereich unter 0 hellblau). `wert` = rote Säule zum Ablesen, ohne `wert` zum Einfärben; `ziel` = Marke; `pfeil` zeichnet die Änderung (über die 0 in zwei Teilen, z. B. +3 und +5). Endet `text` auf „+8 °C“, rechnet das Prüfskript nach. |
 | `kommasprung` | `items: [{zahl, op ("·" / ":"), faktor (10/100/1000), ergebnis?, label?}]`, `spalten?` | Mit `ergebnis`: Bögen für jeden Sprung, neue Nullen farbig (Beispiel). Ohne: Zahl mit leeren Kästchen zum Einzeichnen. Das Prüfskript rechnet nach. |
 | `geo` | `felder: [{b?, h, label?, text?, raster?, elemente}]`, `spalten?` | Geometrie in **Originalgröße** (mm, Ursprung oben links): `punkt` (Kreuz + Name), `linie` (`strecke`, `halbgerade`, `gerade`; `stil` strasse/dick/gestrichelt; `mass`), `winkel` (Grad gegen den Uhrzeigersinn, Bogen bzw. Quadrat bei 90°), `vieleck` (`seiten`, `ecken`, `rechte`), `lineal`, `uhr`, `laptop`, `flaeche`, `text`. Das Prüfskript prüft Feldbreite und Lage. |
+| `diagramm` | `kategorien`, `werte?` (Zahl oder `null`), `max`, `schritt`, `fein?`, `achsen?` ([Kategorien, Werte]), `liegend?`, `zahlen?`, `einheiten?`, `linie?: {wert, text?}`, `hoehe?`, `titel?` | Säulendiagramm mit Achsen, Skala (`schritt`) und Gitter (`fein`); `liegend` = Balken nach rechts. Ohne Wert kein Balken (zum Selberzeichnen), Kategorie `''` = Schreiblinie. `zahlen` schreibt die Werte an (Beispiel), `einheiten` teilt die Säulen in Kästchen (Ausgleichen), `linie` = gestrichelte Linie mit Legende (Mittelwert). Werte auf Gitterlinien legen – das Prüfskript meldet Werte dazwischen. |
+| `strichliste` | `zeilen: [{text, striche?, anzahl?}]`, `kopf?` (3 Spaltentitel), `daten?`, `summe?` (true / Zahl) | Strichliste in Fünferbündeln (der fünfte Strich quer) mit Häufigkeit. Ohne `striche`/`anzahl` leer zum Ausfüllen; gezählte Häufigkeiten erscheinen in der Akzentfarbe, vorgegebene in Tinte. `daten` = Urliste zum Abhaken darüber, `summe` = Zeile „Gesamt“. Das Prüfskript zählt die Urliste nach und prüft Striche, Häufigkeit und Gesamt. |
 
 Lehrerseite: `loesungen` ist Pflicht (kurz, eine Zeile je Aufgabe). ELDiB-Ziele und Quellen braucht ein Mathe-Blatt nicht.
 Minuszeichen im Text als Gedankenstrich „–“, in Rechnungen `"op": "-"`. Mal „·“, geteilt „:“. Zahlen bis 9999 ohne
 Trennzeichen (1000 ml), größere mit geschütztem Leerzeichen. Brüche im Fließtext als „3/4“, in Päckchen als `#3/4#`.
-Blätter mit Messaufgaben (`geo`) auf der Lehrerseite daran erinnern, in Originalgröße (100 %) zu drucken.
+Blätter mit Messaufgaben (`geo`, `flaeche`) auf der Lehrerseite daran erinnern, in Originalgröße (100 %) zu drucken.
 
 ### Bildgeschichten & Karten
 | Art | Felder | Wofür |
@@ -173,7 +177,7 @@ Blätter mit Messaufgaben (`geo`) auf der Lehrerseite daran erinnern, in Origina
 
 ## 4. Bilder
 
-- **Piktogramme** `icon:<name>` – Liste in `src/blatt/bilder/icons.json` (268 Stück, z. B. angle, backpack, bed, book, bulb, clock, device-mobile, friends, heart, hourglass, lifebuoy, moon, music, palette, pillow, school, shield, sun, target, traffic-lights, volcano …).
+- **Piktogramme** `icon:<name>` – Liste in `src/blatt/bilder/icons.json` (274 Stück, z. B. angle, backpack, bed, book, bulb, clock, device-mobile, friends, heart, hourglass, lifebuoy, moon, music, palette, pillow, school, shield, sun, target, traffic-lights, volcano …).
 - **Gefühlsgesichter** `gesicht:<gefühl>` – froh, traurig, wuetend, aengstlich, ueberrascht, angeekelt, ruhig, stolz, verlegen, muede, nervoes, enttaeuscht, gelangweilt, verwirrt, aufgeregt, besorgt, neutral.
 - **Figuren** `figur:<name>[:<gefühl>[:<haltung>]]`
   - Kinder: mia, noah, lea, sami, amira (Kopftuch), tom (Kappe); Jugendliche: jana, ben; Erwachsene: lehrerin, lehrer.

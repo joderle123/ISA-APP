@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------------------
-// Module als Heft: Mathe-Modul 2 (5e) aus den Blättern MA-01 bis MA-12.
+// Module als Heft: Mathe-Modul 2 (5e, MA-01 bis MA-12) und Modul 3 (5e, MA-13 bis MA-21).
 // Themen und Reihenfolge, Lernziele („Mein Ziel“) und der Wortschatz
 // Deutsch – Französisch für Deckblatt, Inhalt und Anhang des Modulhefts.
 // ---------------------------------------------------------------------------
@@ -108,7 +108,68 @@ export const MATHE_MODUL_2: Modul = {
   ],
 }
 
-export const MODULE: Modul[] = [MATHE_MODUL_2]
+export const MATHE_MODUL_3: Modul = {
+  id: 'mathe-m3',
+  nr: 3,
+  bereich: 'mathe',
+  fach: { de: 'Mathe', fr: 'Mathématiques' },
+  klasse: '5e',
+  titel: { de: 'Dezimalzahlen, Fläche, Temperatur und Statistik', fr: 'Nombres décimaux, aire, température et statistique' },
+  untertitel: { de: '9 Lektionen mit Regel, Beispiel und Übungen in drei Stufen – runden, rechnen, messen und Daten auswerten.', fr: '9 leçons avec règle, exemple et exercices sur trois niveaux – arrondir, calculer, mesurer et analyser des données.' },
+  themen: [
+    { titel: { de: 'Dezimalzahlen weiterrechnen', fr: 'Calculer avec les nombres décimaux' }, bild: 'icon:receipt', lektionen: ['mathe-m3-runden', 'mathe-m3-mal-ganze-zahl', 'mathe-m3-geteilt-ganze-zahl'] },
+    { titel: { de: 'Flächeninhalt', fr: 'Aire' }, bild: 'icon:layout-grid', lektionen: ['mathe-m3-flaecheninhalt', 'mathe-m3-flaecheneinheiten'] },
+    { titel: { de: 'Temperatur', fr: 'Température' }, bild: 'icon:temperature', lektionen: ['mathe-m3-temperatur'] },
+    { titel: { de: 'Daten und Statistik', fr: 'Données et statistique' }, bild: 'icon:chart-bar', lektionen: ['mathe-m3-diagramme-lesen', 'mathe-m3-strichliste', 'mathe-m3-mittelwert'] },
+  ],
+  lernziele: {
+    'mathe-m3-runden': { de: 'Ich runde Dezimalzahlen auf die Einheit.', fr: 'J’arrondis des nombres décimaux à l’unité.' },
+    'mathe-m3-mal-ganze-zahl': { de: 'Ich multipliziere eine Dezimalzahl mit einer ganzen Zahl.', fr: 'Je multiplie un nombre décimal par un nombre entier.' },
+    'mathe-m3-geteilt-ganze-zahl': { de: 'Ich dividiere eine Dezimalzahl durch eine ganze Zahl.', fr: 'Je divise un nombre décimal par un nombre entier.' },
+    'mathe-m3-flaecheninhalt': { de: 'Ich berechne den Flächeninhalt von Rechteck und Quadrat.', fr: 'Je calcule l’aire du rectangle et du carré.' },
+    'mathe-m3-flaecheneinheiten': { de: 'Ich kenne die Flächeneinheiten und wandle benachbarte Einheiten um.', fr: 'Je connais les unités d’aire et je convertis des unités voisines.' },
+    'mathe-m3-temperatur': { de: 'Ich lese Temperaturen ab, auch unter null, und berechne Änderungen.', fr: 'Je lis des températures, aussi au-dessous de zéro, et je calcule des variations.' },
+    'mathe-m3-diagramme-lesen': { de: 'Ich lese Informationen aus einem Balkendiagramm ab.', fr: 'Je lis des informations dans un diagramme en bâtons.' },
+    'mathe-m3-strichliste': { de: 'Ich führe eine Strichliste und bestimme die Häufigkeit.', fr: 'Je tiens une liste de comptage et je détermine l’effectif.' },
+    'mathe-m3-mittelwert': { de: 'Ich berechne den Mittelwert einer Datenreihe.', fr: 'Je calcule la moyenne d’une série de données.' },
+  },
+  wortschatz: [
+    { thema: 0, de: 'runden', fr: 'arrondir' },
+    { thema: 0, de: 'ungefähr', fr: 'environ' },
+    { thema: 0, de: 'aufrunden, abrunden', fr: 'arrondir à l’unité supérieure, inférieure' },
+    { thema: 0, de: 'die Einheit (ganze Zahl)', fr: 'l’unité (nombre entier)' },
+    { thema: 0, de: 'multiplizieren, malnehmen', fr: 'multiplier' },
+    { thema: 0, de: 'die Nachkommastelle', fr: 'la décimale' },
+    { thema: 0, de: 'der Überschlag', fr: 'l’estimation' },
+    { thema: 0, de: 'dividieren, teilen', fr: 'diviser' },
+    { thema: 0, de: 'der Rest', fr: 'le reste' },
+    { thema: 0, de: 'gerecht teilen', fr: 'partager équitablement' },
+    { thema: 1, de: 'der Flächeninhalt', fr: 'l’aire' },
+    { thema: 1, de: 'die Länge, die Breite', fr: 'la longueur, la largeur' },
+    { thema: 1, de: 'das Rechteck, das Quadrat', fr: 'le rectangle, le carré' },
+    { thema: 1, de: 'der Quadratzentimeter (cm²)', fr: 'le centimètre carré (cm²)' },
+    { thema: 1, de: 'der Quadratmeter (m²)', fr: 'le mètre carré (m²)' },
+    { thema: 1, de: 'die Flächeneinheit', fr: 'l’unité d’aire' },
+    { thema: 1, de: 'das Ar, das Hektar', fr: 'l’are, l’hectare' },
+    { thema: 1, de: 'umwandeln', fr: 'convertir' },
+    { thema: 2, de: 'die Temperatur', fr: 'la température' },
+    { thema: 2, de: 'das Thermometer', fr: 'le thermomètre' },
+    { thema: 2, de: 'Grad Celsius (°C)', fr: 'degré Celsius (°C)' },
+    { thema: 2, de: 'die Minusgrade', fr: 'les températures négatives' },
+    { thema: 2, de: 'der Gefrierpunkt (0 °C)', fr: 'le point de congélation (0 °C)' },
+    { thema: 2, de: 'steigen, sinken', fr: 'monter, baisser' },
+    { thema: 3, de: 'das Balkendiagramm', fr: 'le diagramme en bâtons' },
+    { thema: 3, de: 'die Achse', fr: 'l’axe' },
+    { thema: 3, de: 'die Häufigkeit', fr: 'l’effectif' },
+    { thema: 3, de: 'die Strichliste', fr: 'la liste de comptage' },
+    { thema: 3, de: 'das Bündel zu 5', fr: 'le paquet de 5' },
+    { thema: 3, de: 'der Mittelwert, der Durchschnitt', fr: 'la moyenne' },
+    { thema: 3, de: 'die Summe', fr: 'la somme' },
+    { thema: 3, de: 'die Anzahl der Werte', fr: 'le nombre de valeurs' },
+  ],
+}
+
+export const MODULE: Modul[] = [MATHE_MODUL_2, MATHE_MODUL_3]
 
 /** Anzahl der Lektionen (Blätter) eines Moduls */
 export function lektionenZahl(modul: Modul): number {

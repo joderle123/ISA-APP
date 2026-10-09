@@ -264,38 +264,6 @@ function SkillKartenSeiten({ plan, karten, text, sprache, marken, luecke }: { pl
   )
 }
 
-/** „Meine Wörter“: der Wortspeicher jeder Einheit, in der Sprache des Hefts zuerst. */
-function WoerterSeiten({ plan, einheiten, text, sprache, marken }: { plan: Jahresplan; einheiten: Einheit[]; text: HandbuchText; sprache: Sprache; marken?: Marken }) {
-  const t = TX[sprache]
-  const p = stufenPalette(plan.klasse)
-  const andere: Sprache = sprache === 'fr' ? 'de' : 'fr'
-  const liste = plan.einheiten.map((pe) => ({ pe, e: einheiten.find((x) => x.id === pe.id) })).filter((x) => x.e?.woerter?.length)
-  return (
-    <Page size="A4" style={seitenStil}>
-      <Marke id="w" marken={marken} />
-      <Kopf reiter={text.heft.woerter} meta={`${FACH.name}  ·  ${plan.klasse}`} p={p} />
-      <SeitenTitel titel={text.heft.woerter} unter={text.heft.woerterText} p={p} sprache={sprache} />
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginHorizontal: -6 }}>
-        {liste.map(({ pe, e }) => (
-          <View key={pe.id} wrap={false} style={{ width: '50%', paddingHorizontal: 6, marginBottom: 9 }}>
-            <View style={{ flexDirection: 'row', alignItems: 'center', borderBottomWidth: 0.8, borderBottomColor: p.mittel, paddingBottom: 2, marginBottom: 2 }}>
-              <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8, color: p.tief, marginRight: 5 }}>{String(pe.nr)}</Text>
-              <Text style={{ flex: 1, fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 8, color: NEUTRAL.text, maxLines: 1, textOverflow: 'ellipsis' }}>{ty(pe.titel[sprache], sprache)}</Text>
-            </View>
-            {e!.woerter.map((w, i) => (
-              <Text key={i} style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, lineHeight: 1.4, color: NEUTRAL.text }}>
-                {ty(w[sprache], sprache)}
-                <Text style={{ color: NEUTRAL.leise }}>{` – ${ty(w[andere], andere)}`}</Text>
-              </Text>
-            ))}
-          </View>
-        ))}
-      </View>
-      <Fuss links={FACH.name} titel={`${text.heft.woerter} · ${t.schuelerheft} ${plan.klasse}`} sprache={sprache} />
-    </Page>
-  )
-}
-
 function NotizSeite({ plan, text, sprache }: { plan: Jahresplan; text: HandbuchText; sprache: Sprache }) {
   const p = stufenPalette(plan.klasse)
   return (

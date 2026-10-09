@@ -1,0 +1,5886 @@
+[
+  {
+    "id": "mathe-m3-runden",
+    "bereich": "mathe",
+    "thema": "dezimalzahlen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Dezimalzahlen",
+      "Runden",
+      "Einheit",
+      "Überschlagen",
+      "Zahlenstrahl",
+      "Preise",
+      "Modul 3"
+    ],
+    "bild": "icon:receipt",
+    "de": {
+      "titel": "Ungefähr wie viel?",
+      "untertitel": "Dezimalzahlen auf die Einheit runden – Modul 3, Lektion 1",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:receipt",
+              "text": "An der Kasse: 4,87 €"
+            },
+            {
+              "bild": "icon:help-circle",
+              "text": "Eher 4 € oder 5 €?"
+            },
+            {
+              "bild": "icon:coin-euro",
+              "text": "Ungefähr 5 €"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Runden heißt: Du ersetzt eine Zahl durch eine nahe, glatte Zahl. Rundest du auf die Einheit, bleibt eine ganze Zahl übrig – alles hinter dem Komma fällt weg."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Die Regel",
+              "punkte": [
+                "Schau nur auf die erste Ziffer nach dem Komma. Sie entscheidet.",
+                "0, 1, 2, 3, 4 → abrunden: Die ganze Zahl bleibt. 7,4 → 7",
+                "5, 6, 7, 8, 9 → aufrunden: Die ganze Zahl wird um 1 größer. 12,68 → 13 und 8,5 → 9"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "zahlenstrahl",
+              "von": "4",
+              "bis": "5",
+              "schritt": "0,5",
+              "fein": "0,1",
+              "zahlen": [
+                "4",
+                "4,5",
+                "5"
+              ],
+              "punkte": [
+                {
+                  "wert": "4,7",
+                  "name": "4,7"
+                }
+              ]
+            },
+            {
+              "art": "text",
+              "text": "4,7 liegt näher bei 5 als bei 4.\nAlso: 4,7 → 5",
+              "klein": true
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Welche Zahlen zeigen die Pfeile (von links nach rechts)? Schreib sie in die Kästchen. Runde sie dann auf die Einheit."
+        },
+        {
+          "art": "zahlenstrahl",
+          "von": "6",
+          "bis": "8",
+          "schritt": "0,5",
+          "fein": "0,1",
+          "zahlen": [
+            "6",
+            "7",
+            "8"
+          ],
+          "punkte": [
+            {
+              "wert": "6,2"
+            },
+            {
+              "wert": "6,7"
+            },
+            {
+              "wert": "7,5"
+            },
+            {
+              "wert": "7,9"
+            }
+          ]
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "buchstaben": true,
+          "items": [
+            "___ → ___",
+            "___ → ___",
+            "___ → ___",
+            "___ → ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Runde auf die Einheit.",
+          "hinweis": "Tipp: Kreise zuerst die erste Ziffer nach dem Komma ein."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "buchstaben": true,
+          "items": [
+            "3,4 → ___",
+            "5,2 → ___",
+            "6,9 → ___",
+            "1,5 → ___",
+            "8,1 → ___",
+            "0,7 → ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Runde auf die Einheit. Achtung: Nur die erste Ziffer nach dem Komma zählt."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "buchstaben": true,
+          "items": [
+            "7,49 → ___",
+            "9,81 → ___",
+            "12,5 → ___",
+            "3,05 → ___",
+            "19,62 → ___",
+            "99,5 → ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Einkauf für den Filmabend: Runde jeden Preis auf ganze Euro und überschlage die Summe. Du hast 15 € dabei. Reicht das?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Artikel",
+            "Preis",
+            "gerundet"
+          ],
+          "breiten": [
+            2.4,
+            1.5,
+            1.5
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "Nachos",
+              "2,49 €",
+              ""
+            ],
+            [
+              "Eistee",
+              "1,85 €",
+              ""
+            ],
+            [
+              "Popcorn",
+              "3,20 €",
+              ""
+            ],
+            [
+              "Eis",
+              "4,75 €",
+              ""
+            ],
+            [
+              "Zusammen ungefähr",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Reicht das?   ja []   nein []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Fehler finden: Nora hat gerundet. Stimmt das? Kreuze an und korrigiere."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Rundung",
+            "stimmt",
+            "stimmt nicht",
+            "richtig wäre"
+          ],
+          "breiten": [
+            3,
+            1.1,
+            1.4,
+            2.1
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "4,6 → 4",
+              "",
+              "",
+              ""
+            ],
+            [
+              "7,49 → 8",
+              "",
+              "",
+              ""
+            ],
+            [
+              "12,5 → 13",
+              "",
+              "",
+              ""
+            ],
+            [
+              "9,72 → 10",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Rückwärts denken."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "buchstaben": true,
+          "items": [
+            "Welche Zahlen ergeben gerundet 3? Kreise sie ein.      2,4      2,5      2,99      3,49      3,5",
+            "Die kleinste und die größte Zahl mit einer Nachkommastelle, die gerundet 8 ergeben:\t___ und ___",
+            "Ein Fahrrad kostet 199,50 €. Auf ganze Euro gerundet sind das ___ €."
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Kurz-Check: Wie sicher bist du?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich finde die erste Ziffer nach dem Komma.",
+            "Ich weiß: 0 bis 4 abrunden, 5 bis 9 aufrunden.",
+            "Ich überschlage Preise mit gerundeten Zahlen."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen runden Dezimalzahlen auf die Einheit: Sie schauen auf die erste Ziffer nach dem Komma, runden bei 0 bis 4 ab und bei 5 bis 9 auf und überschlagen Einkäufe mit gerundeten Preisen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „An der Kasse stehen 4,87 €. Sind das eher 4 € oder eher 5 €?“ Begründungen sammeln.",
+          "Regel (10 Min.): 4,7 am Zahlenstrahl zwischen 4 und 5 zeigen und die Mitte 4,5 markieren. Das Zeichen für „ungefähr gleich“ (zwei Wellenlinien) an die Tafel schreiben; auf dem Blatt steht dafür der Pfeil →. Den Kasten „Die Regel“ gemeinsam lesen.",
+          "Gemeinsam an der Tafel (5 Min.): 3,2 und 8,5 runden – jeweils zuerst die entscheidende Ziffer einkreisen lassen.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket: 4,6 auf die Einheit runden. Danach den Kurz-Check ausfüllen lassen."
+        ],
+        "hintergrund": "Runden ersetzt eine Zahl durch eine nahe, glatte Zahl. Beim Runden auf die Einheit ist das eine der beiden ganzen Nachbarzahlen; entscheidend ist allein die erste wegfallende Ziffer, die Zehntelziffer. Dass bei 5 aufgerundet wird, ist eine Vereinbarung: 4,5 liegt genau in der Mitte zwischen 4 und 5. Typische Fehler sind das schrittweise Runden von hinten (7,49 → 7,5 → 8), das bloße Abschneiden der Nachkommastellen (4,6 → 4) und Unsicherheit beim Übergang zum nächsten Zehner oder Hunderter (9,72 → 10, 99,5 → 100). Der Zahlenstrahl zeigt, welcher Nachbar näher liegt. Gerundete Zahlen sind die Grundlage für den Überschlag, mit dem in den Lektionen 2 und 3 jedes Ergebnis kontrolliert wird.",
+        "differenzierung": {
+          "leichter": "Zu jeder Zahl die beiden ganzen Nachbarn aufschreiben und am Zahlenstrahl prüfen, welcher näher liegt. Preise in Euro und Cent lesen (4,87 € sind 4 € und 87 Cent).",
+          "schwerer": "Aufgabe 6 und eigene Kassenbons erfinden, bei denen die gerundete Summe um mehr als 1 € von der genauen Summe abweicht."
+        },
+        "impulse": [
+          "Warum wird 7,49 zu 7 und nicht zu 8?",
+          "Wann ist ein gerundeter Preis praktischer als der genaue?"
+        ],
+        "tipps": [
+          "Immer die zwei glatten Nachbarn notieren lassen: „Liegt 4,7 näher bei 4 oder bei 5?“",
+          "Runde-Bingo: Preiskarten ziehen (z. B. 3,80 €) und auf ganze Euro runden; wer die Zahl auf dem eigenen Feld hat, kreuzt an."
+        ],
+        "material": "Zahlenstrahl (Tafel oder Kreppband am Boden), Kassenbons oder Preisschilder",
+        "loesungen": [
+          "1) 6,2 → 6 · 6,7 → 7 · 7,5 → 8 · 7,9 → 8",
+          "2) 3 · 5 · 7 · 2 · 8 · 1",
+          "3) 7 · 10 · 13 · 3 · 20 · 100",
+          "4) 2 € · 2 € · 3 € · 5 € · zusammen ungefähr 12 € (genau 12,29 €) · 15 € reichen",
+          "5) stimmt nicht (5) · stimmt nicht (7) · stimmt · stimmt",
+          "6) a) 2,5 · 2,99 · 3,49 · b) 7,5 und 8,4 · c) 200 €",
+          "Exit-Ticket: 4,6 → 5"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Environ combien ?",
+      "untertitel": "Arrondir des nombres décimaux à l’unité – module 3, leçon 1",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:receipt",
+              "text": "À la caisse : 4,87 €"
+            },
+            {
+              "bild": "icon:help-circle",
+              "text": "Plutôt 4 € ou 5 € ?"
+            },
+            {
+              "bild": "icon:coin-euro",
+              "text": "Environ 5 €"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Arrondir, c’est remplacer un nombre par un nombre rond tout proche. Si tu arrondis à l’unité, il reste un nombre entier : tout ce qui est après la virgule disparaît."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "La règle",
+              "punkte": [
+                "Regarde seulement le premier chiffre après la virgule. C’est lui qui décide.",
+                "0, 1, 2, 3, 4 → arrondir en dessous : l’entier reste le même. 7,4 → 7",
+                "5, 6, 7, 8, 9 → arrondir au-dessus : l’entier augmente d’une unité. 12,68 → 13 et 8,5 → 9"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "zahlenstrahl",
+              "von": "4",
+              "bis": "5",
+              "schritt": "0,5",
+              "fein": "0,1",
+              "zahlen": [
+                "4",
+                "4,5",
+                "5"
+              ],
+              "punkte": [
+                {
+                  "wert": "4,7",
+                  "name": "4,7"
+                }
+              ]
+            },
+            {
+              "art": "text",
+              "text": "4,7 est plus proche de 5 que de 4.\nDonc : 4,7 → 5",
+              "klein": true
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Quels nombres les flèches indiquent-elles (de gauche à droite) ? Écris-les dans les cases. Arrondis-les ensuite à l’unité."
+        },
+        {
+          "art": "zahlenstrahl",
+          "von": "6",
+          "bis": "8",
+          "schritt": "0,5",
+          "fein": "0,1",
+          "zahlen": [
+            "6",
+            "7",
+            "8"
+          ],
+          "punkte": [
+            {
+              "wert": "6,2"
+            },
+            {
+              "wert": "6,7"
+            },
+            {
+              "wert": "7,5"
+            },
+            {
+              "wert": "7,9"
+            }
+          ]
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "buchstaben": true,
+          "items": [
+            "___ → ___",
+            "___ → ___",
+            "___ → ___",
+            "___ → ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Arrondis à l’unité.",
+          "hinweis": "Astuce : entoure d’abord le premier chiffre après la virgule."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "buchstaben": true,
+          "items": [
+            "3,4 → ___",
+            "5,2 → ___",
+            "6,9 → ___",
+            "1,5 → ___",
+            "8,1 → ___",
+            "0,7 → ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Arrondis à l’unité. Attention : seul le premier chiffre après la virgule compte."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "buchstaben": true,
+          "items": [
+            "7,49 → ___",
+            "9,81 → ___",
+            "12,5 → ___",
+            "3,05 → ___",
+            "19,62 → ___",
+            "99,5 → ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Courses pour la soirée cinéma : arrondis chaque prix à l’euro près et estime le total. Tu as 15 € sur toi. Est-ce que ça suffit ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Article",
+            "Prix",
+            "arrondi"
+          ],
+          "breiten": [
+            2.4,
+            1.5,
+            1.5
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "Nachos",
+              "2,49 €",
+              ""
+            ],
+            [
+              "Thé glacé",
+              "1,85 €",
+              ""
+            ],
+            [
+              "Pop-corn",
+              "3,20 €",
+              ""
+            ],
+            [
+              "Glace",
+              "4,75 €",
+              ""
+            ],
+            [
+              "Total environ",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Ça suffit ?   oui []   non []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Trouve l’erreur : Nora a arrondi. Est-ce juste ? Coche et corrige."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Arrondi",
+            "vrai",
+            "faux",
+            "correct serait"
+          ],
+          "breiten": [
+            3,
+            1.1,
+            1.4,
+            2.1
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "4,6 → 4",
+              "",
+              "",
+              ""
+            ],
+            [
+              "7,49 → 8",
+              "",
+              "",
+              ""
+            ],
+            [
+              "12,5 → 13",
+              "",
+              "",
+              ""
+            ],
+            [
+              "9,72 → 10",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Penser à l’envers."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "buchstaben": true,
+          "items": [
+            "Quels nombres donnent 3 une fois arrondis ? Entoure-les.      2,4      2,5      2,99      3,49      3,5",
+            "Le plus petit et le plus grand nombre à un chiffre après la virgule qui donnent 8 une fois arrondis :\t___ et ___",
+            "Un vélo coûte 199,50 €. Arrondi à l’euro près, cela fait ___ €."
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Je trouve le premier chiffre après la virgule.",
+            "Je sais : de 0 à 4 en dessous, de 5 à 9 au-dessus.",
+            "J’estime des prix avec des nombres arrondis."
+          ],
+          "optionen": [
+            "sûr·e",
+            "à peu près",
+            "pas encore"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes arrondissent des nombres décimaux à l’unité : ils regardent le premier chiffre après la virgule, arrondissent en dessous de 0 à 4 et au-dessus de 5 à 9, et estiment des achats avec des prix arrondis.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « À la caisse, on lit 4,87 €. C’est plutôt 4 € ou plutôt 5 € ? » Recueillir les justifications.",
+          "Règle (10 min) : montrer 4,7 sur la droite graduée entre 4 et 5 et marquer le milieu 4,5. Écrire au tableau le signe « environ égal » (deux vagues) ; sur la fiche, la flèche → le remplace. Lire ensemble l’encadré « La règle ».",
+          "Ensemble au tableau (5 min) : arrondir 3,2 et 8,5 – faire d’abord entourer le chiffre qui décide.",
+          "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
+          "Clôture (5 min) : ticket de sortie : arrondir 4,6 à l’unité. Puis le petit bilan."
+        ],
+        "hintergrund": "Arrondir, c’est remplacer un nombre par un nombre rond tout proche. Arrondi à l’unité, c’est l’un des deux entiers voisins ; seul compte le premier chiffre supprimé, celui des dixièmes. Arrondir au-dessus à partir de 5 est une convention : 4,5 se trouve exactement au milieu entre 4 et 5. Erreurs typiques : arrondir par étapes en partant de la fin (7,49 → 7,5 → 8), couper simplement les décimales (4,6 → 4) et hésiter au passage à la dizaine ou à la centaine suivante (9,72 → 10, 99,5 → 100). La droite graduée montre quel voisin est le plus proche. Les nombres arrondis sont la base de l’estimation qui contrôle chaque résultat dans les leçons 2 et 3.",
+        "differenzierung": {
+          "leichter": "Noter pour chaque nombre les deux entiers voisins et vérifier sur la droite graduée lequel est le plus proche. Lire les prix en euros et en centimes (4,87 €, c’est 4 € et 87 centimes).",
+          "schwerer": "Exercice 6 et inventer des tickets de caisse dont le total arrondi s’écarte de plus de 1 € du total exact."
+        },
+        "impulse": [
+          "Pourquoi 7,49 devient-il 7 et pas 8 ?",
+          "Quand un prix arrondi est-il plus pratique que le prix exact ?"
+        ],
+        "tipps": [
+          "Faire toujours noter les deux voisins ronds : « 4,7 est-il plus proche de 4 ou de 5 ? »",
+          "Bingo des arrondis : tirer des cartes-prix (p. ex. 3,80 €) et les arrondir à l’euro près ; qui a ce nombre sur sa grille le coche."
+        ],
+        "material": "Droite graduée (au tableau ou au sol avec du ruban adhésif), tickets de caisse ou étiquettes de prix",
+        "loesungen": [
+          "1) 6,2 → 6 · 6,7 → 7 · 7,5 → 8 · 7,9 → 8",
+          "2) 3 · 5 · 7 · 2 · 8 · 1",
+          "3) 7 · 10 · 13 · 3 · 20 · 100",
+          "4) 2 € · 2 € · 3 € · 5 € · total environ 12 € (exactement 12,29 €) · 15 € suffisent",
+          "5) faux (5) · faux (7) · vrai · vrai",
+          "6) a) 2,5 · 2,99 · 3,49 · b) 7,5 et 8,4 · c) 200 €",
+          "Ticket de sortie : 4,6 → 5"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m3-mal-ganze-zahl",
+    "bereich": "mathe",
+    "thema": "dezimalzahlen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Dezimalzahlen",
+      "Multiplizieren",
+      "Malnehmen",
+      "Nachkommastellen",
+      "Überschlag",
+      "Einkaufen",
+      "Modul 3"
+    ],
+    "bild": "icon:shopping-cart",
+    "de": {
+      "titel": "Viermal 2,30 €",
+      "untertitel": "Dezimalzahl mal ganze Zahl – Modul 3, Lektion 2",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:notebook",
+              "text": "1 Heft: 2,30 €"
+            },
+            {
+              "bild": "icon:shopping-cart",
+              "text": "Du brauchst 4 Hefte."
+            },
+            {
+              "bild": "icon:calculator",
+              "text": "2,30 · 4 = ?"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Malnehmen ist mehrmals dasselbe addieren: Statt 2,30 + 2,30 + 2,30 + 2,30 rechnest du schneller 2,30 · 4. Das geht fast wie mit ganzen Zahlen."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Die Regel",
+              "punkte": [
+                "Rechne zuerst ohne Komma: 2,4 · 3 → 24 · 3 = 72.",
+                "Zähl die Nachkommastellen der Dezimalzahl: 2,4 hat eine.",
+                "Das Ergebnis bekommt gleich viele, von rechts gezählt: 2,4 · 3 = 7,2. Überschlag: 2 · 3 = 6 – passt."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "zahlenstrahl",
+              "von": "0",
+              "bis": "6",
+              "schritt": "1",
+              "fein": "0,5",
+              "punkte": [
+                {
+                  "wert": "1,5",
+                  "name": "1,5"
+                },
+                {
+                  "wert": "3",
+                  "name": "3"
+                },
+                {
+                  "wert": "4,5",
+                  "name": "4,5"
+                }
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Drei gleiche Sprünge:\n1,5 · 3 = 1,5 + 1,5 + 1,5 = 4,5",
+              "klein": true
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne zuerst ohne Komma. Setz dann das Komma."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Beispiel:   1,5 · 4      15 · 4 = {60}      1,5 · 4 = {6,0} = {6}",
+            "a)   1,2 · 2      12 · 2 = ___      1,2 · 2 = ___",
+            "b)   2,1 · 3      21 · 3 = ___      2,1 · 3 = ___",
+            "c)   0,5 · 6        5 · 6 = ___      0,5 · 6 = ___",
+            "d)   0,2 · 4        2 · 4 = ___      0,2 · 4 = ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne im Kopf."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "buchstaben": true,
+          "items": [
+            "1,3 · 3 = ___",
+            "0,6 · 3 = ___",
+            "2,5 · 2 = ___",
+            "1,1 · 7 = ___",
+            "0,3 · 5 = ___",
+            "4,2 · 2 = ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Überschlage zuerst mit gerundeten Zahlen. Rechne dann genau – schriftlich in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Beispiel:   2,8 · 4        Überschlag: {3} · 4 = {12}      genau: {11,2}",
+            "a)   3,4 · 5        Überschlag: ___ · 5 = ___      genau: ___",
+            "b)   2,25 · 4      Überschlag: ___ · 4 = ___      genau: ___",
+            "c)   1,85 · 6      Überschlag: ___ · 6 = ___      genau: ___",
+            "d)   4,75 · 3      Überschlag: ___ · 3 = ___      genau: ___"
+          ]
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Stage in der Kantine: Du stellst die Bestellung für einen Ausflug zusammen. Rechne jede Zeile und die Summe aus. Reichen 30 €?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Artikel",
+            "Stückpreis",
+            "Anzahl",
+            "Betrag"
+          ],
+          "breiten": [
+            2.2,
+            1.5,
+            1.1,
+            1.6
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "Wasser",
+              "0,85 €",
+              "6",
+              ""
+            ],
+            [
+              "Sandwich",
+              "3,40 €",
+              "5",
+              ""
+            ],
+            [
+              "Apfel",
+              "0,45 €",
+              "8",
+              ""
+            ],
+            [
+              "Joghurt",
+              "1,25 €",
+              "4",
+              ""
+            ],
+            [
+              "Summe",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Reichen 30 €?   ja []   nein []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Fehler finden: Sofia hat gerechnet. Stimmt das? Kreuze an und korrigiere."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Rechnung",
+            "stimmt",
+            "stimmt nicht",
+            "richtig wäre"
+          ],
+          "breiten": [
+            3,
+            1.1,
+            1.4,
+            2.1
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "2,4 · 3 = 72",
+              "",
+              "",
+              ""
+            ],
+            [
+              "1,6 · 5 = 8",
+              "",
+              "",
+              ""
+            ],
+            [
+              "0,3 · 3 = 0,09",
+              "",
+              "",
+              ""
+            ],
+            [
+              "2,30 · 4 = 9,20",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Rechne und prüfe mit einem Überschlag."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "buchstaben": true,
+          "items": [
+            "Lina läuft 6 Runden zu je 1,25 km. Wie weit läuft sie?   ___ km",
+            "8 Kinotickets zu je 12,50 €. Was kosten sie zusammen?   ___ €",
+            "Welche Zahl fehlt?      ___ · 4 = 9,6        0,25 · ___ = 2"
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Kurz-Check: Wie sicher bist du?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich rechne zuerst ohne Komma.",
+            "Ich setze gleich viele Nachkommastellen wie in der Aufgabe.",
+            "Ich prüfe mit einem Überschlag."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen multiplizieren Dezimalzahlen mit ganzen Zahlen: zuerst ohne Komma rechnen, dann im Ergebnis so viele Nachkommastellen setzen wie in der Dezimalzahl und das Ergebnis mit einem Überschlag prüfen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „4 Hefte zu je 2,30 € – was kosten sie?“ Zuerst addieren lassen (2,30 + 2,30 + 2,30 + 2,30), dann die kürzere Schreibweise 2,30 · 4 zeigen.",
+          "Regel (10 Min.): 2,4 · 3 vorrechnen: 24 · 3 = 72, eine Nachkommastelle, also 7,2; Überschlag 2 · 3 = 6. Die Nachkommastellen farbig markieren. Den Kasten „Die Regel“ gemeinsam lesen.",
+          "Gemeinsam an der Tafel (5 Min.): 1,5 · 4 (6,0 = 6) und 0,2 · 3 (0,6) – jeweils zuerst überschlagen lassen.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket: 1,5 · 2. Danach den Kurz-Check ausfüllen lassen."
+        ],
+        "hintergrund": "Das Produkt aus Dezimalzahl und ganzer Zahl lässt sich als wiederholte Addition deuten: 1,5 · 3 = 1,5 + 1,5 + 1,5. Zum Rechnen wird die Dezimalzahl als ganze Zahl von Zehnteln oder Hundertsteln gelesen: 2,4 sind 24 Zehntel, 24 Zehntel · 3 = 72 Zehntel = 7,2. Darum hat das Ergebnis so viele Nachkommastellen wie die Dezimalzahl. Endnullen dürfen danach wegfallen (6,0 = 6); bei Geld schreibt man zwei Stellen (9,20 €). Typische Fehler: das Komma vergessen (2,4 · 3 = 72), die Stellen von links statt von rechts abzählen und 0,3 · 3 = 0,09 (Verwechslung mit 0,3 · 0,3). Der Überschlag mit den gerundeten Zahlen aus Lektion 1 deckt diese Fehler zuverlässig auf. Schriftlich wird wie bei ganzen Zahlen multipliziert; das Komma wird erst am Schluss gesetzt.",
+        "differenzierung": {
+          "leichter": "Aufgaben 1 und 2 mit Geld: 1,20 € als 120 Cent rechnen und das Ergebnis wieder in Euro schreiben. Die Nachkommastellen farbig markieren.",
+          "schwerer": "Aufgabe 6 und eine eigene Bestellliste mit Budget erstellen (z. B. für ein Klassenfest), die jemand anderes nachrechnet."
+        },
+        "impulse": [
+          "Warum hat 2,4 · 3 genauso viele Nachkommastellen wie 2,4?",
+          "Wie zeigt dir der Überschlag, dass 72 nicht stimmen kann?"
+        ],
+        "tipps": [
+          "Die Nachkommastellen der Aufgabe farbig markieren und im Ergebnis gleich viele von rechts abzählen.",
+          "Spiel „Einkaufswagen“: Kärtchen mit Stückpreis (z. B. 1,40 €) und Anzahl ziehen und den Gesamtpreis ausrechnen."
+        ],
+        "material": "Karopapier, eventuell Preiskärtchen",
+        "loesungen": [
+          "1) 24 → 2,4 · 63 → 6,3 · 30 → 3 · 8 → 0,8",
+          "2) 3,9 · 1,8 · 5 · 7,7 · 1,5 · 8,4",
+          "3) Überschlag 15 · 8 · 12 · 15 – genau 17 · 9 · 11,1 · 14,25",
+          "4) 5,10 € · 17,00 € · 3,60 € · 5,00 € · Summe 30,70 € – 30 € reichen nicht (0,70 € fehlen)",
+          "5) stimmt nicht (7,2) · stimmt · stimmt nicht (0,9) · stimmt",
+          "6) 7,5 km (Überschlag 6 km) · 100 € (Überschlag 8 · 13 = 104 €) · 2,4 und 8",
+          "Exit-Ticket: 3"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Quatre fois 2,30 €",
+      "untertitel": "Multiplier un nombre décimal par un nombre entier – module 3, leçon 2",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:notebook",
+              "text": "1 cahier : 2,30 €"
+            },
+            {
+              "bild": "icon:shopping-cart",
+              "text": "Il te faut 4 cahiers."
+            },
+            {
+              "bild": "icon:calculator",
+              "text": "2,30 · 4 = ?"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Multiplier, c’est additionner plusieurs fois la même chose : au lieu de 2,30 + 2,30 + 2,30 + 2,30, tu calcules plus vite 2,30 · 4. Ça marche presque comme avec les nombres entiers."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "La règle",
+              "punkte": [
+                "Calcule d’abord sans la virgule : 2,4 · 3 → 24 · 3 = 72.",
+                "Compte les chiffres après la virgule du nombre décimal : 2,4 en a un.",
+                "Le résultat en a autant, comptés depuis la droite : 2,4 · 3 = 7,2. Estimation : 2 · 3 = 6 – c’est cohérent."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "zahlenstrahl",
+              "von": "0",
+              "bis": "6",
+              "schritt": "1",
+              "fein": "0,5",
+              "punkte": [
+                {
+                  "wert": "1,5",
+                  "name": "1,5"
+                },
+                {
+                  "wert": "3",
+                  "name": "3"
+                },
+                {
+                  "wert": "4,5",
+                  "name": "4,5"
+                }
+              ]
+            },
+            {
+              "art": "text",
+              "text": "Trois sauts égaux :\n1,5 · 3 = 1,5 + 1,5 + 1,5 = 4,5",
+              "klein": true
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule d’abord sans la virgule. Place ensuite la virgule."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Exemple :   1,5 · 4      15 · 4 = {60}      1,5 · 4 = {6,0} = {6}",
+            "a)   1,2 · 2      12 · 2 = ___      1,2 · 2 = ___",
+            "b)   2,1 · 3      21 · 3 = ___      2,1 · 3 = ___",
+            "c)   0,5 · 6        5 · 6 = ___      0,5 · 6 = ___",
+            "d)   0,2 · 4        2 · 4 = ___      0,2 · 4 = ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule de tête."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "buchstaben": true,
+          "items": [
+            "1,3 · 3 = ___",
+            "0,6 · 3 = ___",
+            "2,5 · 2 = ___",
+            "1,1 · 7 = ___",
+            "0,3 · 5 = ___",
+            "4,2 · 2 = ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Fais d’abord une estimation avec des nombres arrondis. Calcule ensuite le résultat exact – par écrit dans les cases."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Exemple :   2,8 · 4        estimation : {3} · 4 = {12}      exact : {11,2}",
+            "a)   3,4 · 5        estimation : ___ · 5 = ___      exact : ___",
+            "b)   2,25 · 4      estimation : ___ · 4 = ___      exact : ___",
+            "c)   1,85 · 6      estimation : ___ · 6 = ___      exact : ___",
+            "d)   4,75 · 3      estimation : ___ · 3 = ___      exact : ___"
+          ]
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 5
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Stage à la cantine : tu prépares la commande pour une sortie. Calcule chaque ligne et le total. Est-ce que 30 € suffisent ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Article",
+            "Prix unitaire",
+            "Nombre",
+            "Montant"
+          ],
+          "breiten": [
+            2.2,
+            1.5,
+            1.1,
+            1.6
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "Eau",
+              "0,85 €",
+              "6",
+              ""
+            ],
+            [
+              "Sandwich",
+              "3,40 €",
+              "5",
+              ""
+            ],
+            [
+              "Pomme",
+              "0,45 €",
+              "8",
+              ""
+            ],
+            [
+              "Yaourt",
+              "1,25 €",
+              "4",
+              ""
+            ],
+            [
+              "Total",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "30 € suffisent ?   oui []   non []"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Trouve l’erreur : Sofia a calculé. Est-ce juste ? Coche et corrige."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Calcul",
+            "vrai",
+            "faux",
+            "correct serait"
+          ],
+          "breiten": [
+            3,
+            1.1,
+            1.4,
+            2.1
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "2,4 · 3 = 72",
+              "",
+              "",
+              ""
+            ],
+            [
+              "1,6 · 5 = 8",
+              "",
+              "",
+              ""
+            ],
+            [
+              "0,3 · 3 = 0,09",
+              "",
+              "",
+              ""
+            ],
+            [
+              "2,30 · 4 = 9,20",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Calcule et vérifie avec une estimation."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "buchstaben": true,
+          "items": [
+            "Lina court 6 tours de 1,25 km chacun. Quelle distance parcourt-elle ?   ___ km",
+            "8 places de cinéma à 12,50 € chacune. Combien coûtent-elles en tout ?   ___ €",
+            "Quel nombre manque ?      ___ · 4 = 9,6        0,25 · ___ = 2"
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Je calcule d’abord sans la virgule.",
+            "Je mets autant de chiffres après la virgule que dans l’opération.",
+            "Je vérifie avec une estimation."
+          ],
+          "optionen": [
+            "sûr·e",
+            "à peu près",
+            "pas encore"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes multiplient des nombres décimaux par des nombres entiers : ils calculent d’abord sans la virgule, donnent ensuite au résultat autant de chiffres après la virgule que le nombre décimal et le vérifient par une estimation.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « 4 cahiers à 2,30 € chacun – combien ça coûte ? » Faire d’abord additionner (2,30 + 2,30 + 2,30 + 2,30), puis montrer l’écriture plus courte 2,30 · 4.",
+          "Règle (10 min) : calculer 2,4 · 3 : 24 · 3 = 72, un chiffre après la virgule, donc 7,2 ; estimation 2 · 3 = 6. Marquer les décimales en couleur. Lire ensemble l’encadré « La règle ».",
+          "Ensemble au tableau (5 min) : 1,5 · 4 (6,0 = 6) et 0,2 · 3 (0,6) – faire d’abord estimer à chaque fois.",
+          "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
+          "Clôture (5 min) : ticket de sortie : 1,5 · 2. Puis le petit bilan."
+        ],
+        "hintergrund": "Le produit d’un nombre décimal par un entier peut se lire comme une addition répétée : 1,5 · 3 = 1,5 + 1,5 + 1,5. Pour calculer, on lit le nombre décimal comme un nombre entier de dixièmes ou de centièmes : 2,4, ce sont 24 dixièmes ; 24 dixièmes · 3 = 72 dixièmes = 7,2. C’est pourquoi le résultat a autant de chiffres après la virgule que le nombre décimal. Les zéros de fin peuvent ensuite tomber (6,0 = 6) ; pour l’argent, on écrit deux chiffres (9,20 €). Erreurs typiques : oublier la virgule (2,4 · 3 = 72), compter les rangs depuis la gauche au lieu de la droite et écrire 0,3 · 3 = 0,09 (confusion avec 0,3 · 0,3). L’estimation avec les nombres arrondis de la leçon 1 révèle ces erreurs de façon fiable. Par écrit, on multiplie comme avec les entiers ; la virgule n’est placée qu’à la fin.",
+        "differenzierung": {
+          "leichter": "Exercices 1 et 2 avec de l’argent : calculer 1,20 € comme 120 centimes, puis réécrire le résultat en euros. Marquer les décimales en couleur.",
+          "schwerer": "Exercice 6 et établir sa propre liste de commande avec un budget (p. ex. pour une fête de classe), qu’un camarade recalcule."
+        },
+        "impulse": [
+          "Pourquoi 2,4 · 3 a-t-il autant de chiffres après la virgule que 2,4 ?",
+          "Comment l’estimation te montre-t-elle que 72 ne peut pas être juste ?"
+        ],
+        "tipps": [
+          "Marquer en couleur les décimales de l’opération et en compter autant depuis la droite dans le résultat.",
+          "Jeu « Caddie » : tirer une carte prix unitaire (p. ex. 1,40 €) et une carte quantité, puis calculer le prix total."
+        ],
+        "material": "Papier quadrillé, éventuellement des cartes de prix",
+        "loesungen": [
+          "1) 24 → 2,4 · 63 → 6,3 · 30 → 3 · 8 → 0,8",
+          "2) 3,9 · 1,8 · 5 · 7,7 · 1,5 · 8,4",
+          "3) estimation 15 · 8 · 12 · 15 – exact 17 · 9 · 11,1 · 14,25",
+          "4) 5,10 € · 17,00 € · 3,60 € · 5,00 € · total 30,70 € – 30 € ne suffisent pas (il manque 0,70 €)",
+          "5) faux (7,2) · vrai · faux (0,9) · vrai",
+          "6) 7,5 km (estimation 6 km) · 100 € (estimation 8 · 13 = 104 €) · 2,4 et 8",
+          "Ticket de sortie : 3"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m3-geteilt-ganze-zahl",
+    "bereich": "mathe",
+    "thema": "dezimalzahlen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Dezimalzahlen",
+      "Dividieren",
+      "Teilen",
+      "Rest",
+      "Probe",
+      "Geld teilen",
+      "Modul 3"
+    ],
+    "bild": "icon:friends",
+    "de": {
+      "titel": "4,50 € für drei",
+      "untertitel": "Dezimalzahl geteilt durch ganze Zahl – Modul 3, Lektion 3",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:bottle",
+              "text": "Pfand: 4,50 €"
+            },
+            {
+              "bild": "icon:friends",
+              "text": "3 Freunde teilen"
+            },
+            {
+              "bild": "icon:coin-euro",
+              "text": "Jeder bekommt: ?"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Gerecht teilen heißt: Jeder bekommt gleich viel. Mit Dezimalzahlen teilst du wie mit ganzen Zahlen – du musst nur im richtigen Moment das Komma setzen."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Die Regel",
+              "punkte": [
+                "Teile von links nach rechts, Stelle für Stelle – wie bei ganzen Zahlen.",
+                "Erreichst du das Komma, setz es sofort auch im Ergebnis.",
+                "Bleibt ein Rest, nimm die nächste Ziffer dazu. Ist keine mehr da, häng eine 0 an. Probe: Ergebnis · Teiler."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "text",
+              "text": "Beispiel: 4,50 € : 3",
+              "klein": true
+            },
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "4 : 3 = {1}, Rest {1}",
+                "Komma setzen: {1,}",
+                "15 : 3 = {5}   →   {1,5}",
+                "0 : 3 = {0}   →   {1,50}",
+                "Probe: 1,50 · 3 = {4,50}"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Teile zuerst die Ganzen, dann die Zehntel."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Beispiel:   6,9 : 3     Ganze: 6 : 3 = {2}     Zehntel: 9 : 3 = {3}     Ergebnis: {2,3}",
+            "a)   8,6 : 2     Ganze: 8 : 2 = ___     Zehntel: 6 : 2 = ___     Ergebnis: ___",
+            "b)   9,3 : 3     Ganze: 9 : 3 = ___     Zehntel: 3 : 3 = ___     Ergebnis: ___",
+            "c)   4,8 : 4     Ganze: 4 : 4 = ___     Zehntel: 8 : 4 = ___     Ergebnis: ___",
+            "d)   6,8 : 2     Ganze: 6 : 2 = ___     Zehntel: 8 : 2 = ___     Ergebnis: ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Rechne im Kopf. Denk an das Komma."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "buchstaben": true,
+          "items": [
+            "2,6 : 2 = ___",
+            "6,3 : 3 = ___",
+            "9,6 : 3 = ___",
+            "3,6 : 3 = ___",
+            "0,9 : 3 = ___",
+            "5,5 : 5 = ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Rechne schriftlich in den Kästchen und mach die Probe.",
+          "hinweis": "a) 7,5 : 5     b) 5,4 : 3     c) 2,8 : 4     d) 9 : 4 (schreib 9,00)"
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 8
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Gerecht teilen im Alltag: Rechne in den Kästchen."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "buchstaben": true,
+              "items": [
+                "Eine Schnur von 4,5 m wird in 3 gleiche Stücke geschnitten. Wie lang ist ein Stück?\t___ m",
+                "4 Freundinnen teilen eine Pizza für 13,60 €. Wie viel zahlt jede?\t___ €",
+                "Ein Sechserpack Wasser kostet 3,30 €. Was kostet eine Flasche?\t___ €"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "kaestchen",
+              "zeilen": 7
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Fehler finden: Elias hat gerechnet. Stimmt das? Kreuze an und korrigiere.",
+          "hinweis": "Tipp: Mach die Probe – Ergebnis · Teiler."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Rechnung",
+            "stimmt",
+            "stimmt nicht",
+            "richtig wäre"
+          ],
+          "breiten": [
+            3,
+            1.1,
+            1.4,
+            2.1
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "8,4 : 2 = 4,2",
+              "",
+              "",
+              ""
+            ],
+            [
+              "6,3 : 3 = 21",
+              "",
+              "",
+              ""
+            ],
+            [
+              "4,5 : 3 = 1,5",
+              "",
+              "",
+              ""
+            ],
+            [
+              "3,6 : 4 = 9",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Teilen und vergleichen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "buchstaben": true,
+          "items": [
+            "Fünf Freunde teilen 63,50 € gerecht. Jeder bekommt ___ €.\tProbe: ________",
+            "12,6 : 4 = ___",
+            "6 Brötchen kosten 2,70 €, 4 Brötchen 1,96 €. Welche Packung ist pro Brötchen günstiger?\t_______"
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Kurz-Check: Wie sicher bist du?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich teile von links nach rechts.",
+            "Ich setze das Komma, sobald ich es erreiche.",
+            "Ich mache die Probe mit Malnehmen."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen dividieren Dezimalzahlen durch ganze Zahlen: Sie teilen von links, setzen das Komma im Ergebnis, sobald sie es im Dividenden erreichen, hängen bei einem Rest Nullen an und prüfen mit der Umkehraufgabe.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Drei Freunde bringen Pfandflaschen zurück und bekommen 4,50 €. Wie viel bekommt jeder?“ Schätzen lassen (etwas mehr als 1 €).",
+          "Regel (10 Min.): 6,9 : 3 und 4,50 : 3 schriftlich vorrechnen; das Komma im Dividenden und im Ergebnis in derselben Farbe schreiben. Den Kasten „Die Regel“ gemeinsam lesen.",
+          "Gemeinsam an der Tafel (5 Min.): 8,4 : 2 und 6 : 4 (6,0 : 4 = 1,5) – jeweils mit Probe.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket: 4,8 : 2. Danach den Kurz-Check ausfüllen lassen."
+        ],
+        "hintergrund": "Beim Teilen einer Dezimalzahl durch eine ganze Zahl wird wie bei ganzen Zahlen Stelle für Stelle von links geteilt. Ein Rest wird in die nächstkleinere Einheit umgewandelt: 1 Ganzes Rest sind 10 Zehntel, zusammen mit den 5 Zehnteln aus 4,50 also 15 Zehntel. Darum steht das Komma im Ergebnis genau dort, wo man von den Ganzen zu den Zehnteln übergeht. Geht die Rechnung nicht auf, werden Nullen angehängt (9 = 9,00), ohne den Wert zu ändern. Typische Fehler: das Komma vergessen (6,3 : 3 = 21), die Null vor dem Komma weglassen (2,8 : 4 = 7 statt 0,7) und Reste am Ende stehen lassen. Überschlag vorher und Probe nachher (Ergebnis · Teiler = Dividend) verbinden die Lektion mit den Lektionen 1 und 2. Alle Aufgaben gehen auf; Divisionen ohne Ende wie 10 : 3 kommen später.",
+        "differenzierung": {
+          "leichter": "Mit Spielgeld legen: 4,50 € auf drei Personen verteilen; übrige Euro in 10-Cent-Stücke wechseln. Aufgaben 1 und 2 zuerst.",
+          "schwerer": "Aufgabe 6 und Preisvergleiche aus einem Supermarkt-Prospekt: den Preis pro Stück ausrechnen und das günstigere Angebot finden."
+        },
+        "impulse": [
+          "Was bedeutet der Rest 1 bei 4 : 3, wenn es um Euro geht?",
+          "Wie findest du mit der Probe einen Kommafehler?"
+        ],
+        "tipps": [
+          "Das Komma im Dividenden und im Ergebnis in derselben Farbe schreiben lassen.",
+          "Spiel „Fair teilen“: Geldbetrag (z. B. 7,50 €) und Anzahl Personen ziehen – wer zuerst den gerechten Anteil nennt, gewinnt."
+        ],
+        "material": "Karopapier, eventuell Spielgeld (Münzen)",
+        "loesungen": [
+          "1) 4,3 · 3,1 · 1,2 · 3,4",
+          "2) 1,3 · 2,1 · 3,2 · 1,2 · 0,3 · 1,1",
+          "3) 1,5 · 1,8 · 0,7 · 2,25 (Probe z. B. 2,25 · 4 = 9)",
+          "4) 1,5 m · 3,40 € · 0,55 €",
+          "5) stimmt · stimmt nicht (2,1) · stimmt · stimmt nicht (0,9)",
+          "6) 12,70 € (Probe: 12,70 · 5 = 63,50) · 3,15 · 6 Brötchen: 0,45 € pro Stück, 4 Brötchen: 0,49 € – die 6er-Packung ist günstiger",
+          "Exit-Ticket: 2,4"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "4,50 € pour trois",
+      "untertitel": "Diviser un nombre décimal par un nombre entier – module 3, leçon 3",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:bottle",
+              "text": "Consigne : 4,50 €"
+            },
+            {
+              "bild": "icon:friends",
+              "text": "3 amis partagent"
+            },
+            {
+              "bild": "icon:coin-euro",
+              "text": "Chacun reçoit : ?"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Partager équitablement, c’est donner la même chose à chacun. Avec les nombres décimaux, tu divises comme avec les nombres entiers – il faut juste placer la virgule au bon moment."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "La règle",
+              "punkte": [
+                "Divise de gauche à droite, chiffre par chiffre – comme avec les nombres entiers.",
+                "Quand tu arrives à la virgule, place-la tout de suite aussi dans le résultat.",
+                "S’il y a un reste, abaisse le chiffre suivant. S’il n’y en a plus, ajoute un 0. Vérification : résultat · diviseur."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "text",
+              "text": "Exemple : 4,50 € : 3",
+              "klein": true
+            },
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "4 : 3 = {1}, reste {1}",
+                "Placer la virgule : {1,}",
+                "15 : 3 = {5}   →   {1,5}",
+                "0 : 3 = {0}   →   {1,50}",
+                "Vérification : 1,50 · 3 = {4,50}"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Divise d’abord les unités, puis les dixièmes."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Exemple :   6,9 : 3     unités : 6 : 3 = {2}     dixièmes : 9 : 3 = {3}     résultat : {2,3}",
+            "a)   8,6 : 2     unités : 8 : 2 = ___     dixièmes : 6 : 2 = ___     résultat : ___",
+            "b)   9,3 : 3     unités : 9 : 3 = ___     dixièmes : 3 : 3 = ___     résultat : ___",
+            "c)   4,8 : 4     unités : 4 : 4 = ___     dixièmes : 8 : 4 = ___     résultat : ___",
+            "d)   6,8 : 2     unités : 6 : 2 = ___     dixièmes : 8 : 2 = ___     résultat : ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule de tête. Pense à la virgule."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "buchstaben": true,
+          "items": [
+            "2,6 : 2 = ___",
+            "6,3 : 3 = ___",
+            "9,6 : 3 = ___",
+            "3,6 : 3 = ___",
+            "0,9 : 3 = ___",
+            "5,5 : 5 = ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Pose les divisions dans les cases et fais la vérification.",
+          "hinweis": "a) 7,5 : 5     b) 5,4 : 3     c) 2,8 : 4     d) 9 : 4 (écris 9,00)"
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 8
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Partager au quotidien : calcule dans les cases."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "buchstaben": true,
+              "items": [
+                "On coupe une ficelle de 4,5 m en 3 morceaux égaux. Combien mesure un morceau ?\t___ m",
+                "4 amies partagent une pizza à 13,60 €. Combien paie chacune ?\t___ €",
+                "Un pack de 6 bouteilles d’eau coûte 3,30 €. Combien coûte une bouteille ?\t___ €"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "kaestchen",
+              "zeilen": 7
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Trouve l’erreur : Elias a calculé. Est-ce juste ? Coche et corrige.",
+          "hinweis": "Astuce : fais la vérification – résultat · diviseur."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Calcul",
+            "vrai",
+            "faux",
+            "correct serait"
+          ],
+          "breiten": [
+            3,
+            1.1,
+            1.4,
+            2.1
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "8,4 : 2 = 4,2",
+              "",
+              "",
+              ""
+            ],
+            [
+              "6,3 : 3 = 21",
+              "",
+              "",
+              ""
+            ],
+            [
+              "4,5 : 3 = 1,5",
+              "",
+              "",
+              ""
+            ],
+            [
+              "3,6 : 4 = 9",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Diviser et comparer."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "buchstaben": true,
+          "items": [
+            "Cinq amis partagent 63,50 € à parts égales : ___ € chacun.\tVérification : ________",
+            "12,6 : 4 = ___",
+            "6 petits pains coûtent 2,70 €, 4 petits pains 1,96 €. Quel paquet est le moins cher par petit pain ?\t_______"
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Je divise de gauche à droite.",
+            "Je place la virgule dès que je l’atteins.",
+            "Je fais la vérification par la multiplication."
+          ],
+          "optionen": [
+            "sûr·e",
+            "à peu près",
+            "pas encore"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes divisent des nombres décimaux par des nombres entiers : ils divisent depuis la gauche, placent la virgule dans le résultat dès qu’ils l’atteignent dans le dividende, ajoutent des zéros s’il reste quelque chose et vérifient par l’opération inverse.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Trois amis rapportent des bouteilles consignées et reçoivent 4,50 €. Combien pour chacun ? » Faire estimer (un peu plus de 1 €).",
+          "Règle (10 min) : poser 6,9 : 3 et 4,50 : 3 au tableau ; écrire la virgule du dividende et celle du résultat de la même couleur. Lire ensemble l’encadré « La règle ».",
+          "Ensemble au tableau (5 min) : 8,4 : 2 et 6 : 4 (6,0 : 4 = 1,5) – à chaque fois avec la vérification.",
+          "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
+          "Clôture (5 min) : ticket de sortie : 4,8 : 2. Puis le petit bilan."
+        ],
+        "hintergrund": "Pour diviser un nombre décimal par un entier, on divise rang par rang à partir de la gauche, comme avec les entiers. Un reste est converti dans l’unité inférieure : 1 unité de reste, ce sont 10 dixièmes, donc avec les 5 dixièmes de 4,50, 15 dixièmes. C’est pourquoi la virgule du résultat se place exactement au passage des unités aux dixièmes. Si la division ne tombe pas juste, on ajoute des zéros (9 = 9,00) sans changer la valeur. Erreurs typiques : oublier la virgule (6,3 : 3 = 21), omettre le zéro devant la virgule (2,8 : 4 = 7 au lieu de 0,7) et laisser un reste à la fin. L’estimation avant et la vérification après (résultat · diviseur = dividende) relient cette leçon aux leçons 1 et 2. Toutes les divisions tombent juste ; les divisions sans fin comme 10 : 3 viendront plus tard.",
+        "differenzierung": {
+          "leichter": "Manipuler de la monnaie fictive : répartir 4,50 € entre trois personnes ; échanger les euros qui restent contre des pièces de 10 centimes. Commencer par les exercices 1 et 2.",
+          "schwerer": "Exercice 6 et comparaisons de prix à partir d’un prospectus de supermarché : calculer le prix à l’unité et trouver l’offre la moins chère."
+        },
+        "impulse": [
+          "Que signifie le reste 1 dans 4 : 3 quand il s’agit d’euros ?",
+          "Comment la vérification t’aide-t-elle à trouver une erreur de virgule ?"
+        ],
+        "tipps": [
+          "Faire écrire la virgule du dividende et celle du résultat de la même couleur.",
+          "Jeu « Partage équitable » : tirer une somme (p. ex. 7,50 €) et un nombre de personnes – le premier qui donne la part juste gagne."
+        ],
+        "material": "Papier quadrillé, éventuellement de la monnaie fictive (pièces)",
+        "loesungen": [
+          "1) 4,3 · 3,1 · 1,2 · 3,4",
+          "2) 1,3 · 2,1 · 3,2 · 1,2 · 0,3 · 1,1",
+          "3) 1,5 · 1,8 · 0,7 · 2,25 (vérification p. ex. 2,25 · 4 = 9)",
+          "4) 1,5 m · 3,40 € · 0,55 €",
+          "5) vrai · faux (2,1) · vrai · faux (0,9)",
+          "6) 12,70 € (vérification : 12,70 · 5 = 63,50) · 3,15 · 6 petits pains : 0,45 € l’un, 4 petits pains : 0,49 € l’un – le paquet de 6 est le moins cher",
+          "Ticket de sortie : 2,4"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m3-flaecheninhalt",
+    "bereich": "mathe",
+    "thema": "geometrie",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Geometrie",
+      "Flächeninhalt",
+      "Rechteck",
+      "Quadrat",
+      "cm²",
+      "m²",
+      "Fliesen",
+      "Umfang",
+      "Modul 3"
+    ],
+    "bild": "icon:layout-grid",
+    "de": {
+      "titel": "Länge mal Breite",
+      "untertitel": "Flächeninhalt von Rechteck und Quadrat – Modul 3, Lektion 4",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:layout-grid",
+              "text": "Fliesen im Bad"
+            },
+            {
+              "bild": "icon:bed",
+              "text": "Teppich im Zimmer"
+            },
+            {
+              "bild": "icon:plant",
+              "text": "Rasen im Garten"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Der Umfang ist einmal rundherum. Der Flächeninhalt sagt, wie viel Platz das Innere einer Figur bedeckt. Man misst ihn in Quadraten: 1 cm² ist ein Kästchen mit 1 cm Seite."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Die Regel",
+              "punkte": [
+                "Rechteck: A = Länge · Breite.",
+                "Quadrat: Alle Seiten sind gleich lang, also A = Seite · Seite.",
+                "Einheit: cm · cm = cm² und m · m = m².",
+                "Länge und Breite immer in derselben Einheit."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "flaeche",
+              "spalten": 1,
+              "felder": [
+                {
+                  "l": 6,
+                  "b": 4,
+                  "gefaerbt": 6,
+                  "masse": [
+                    "6 cm",
+                    "4 cm"
+                  ],
+                  "text": "A = 6 · 4 = 24 cm²"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Jedes Kästchen ist 1 cm². Zähle die Kästchen und prüfe mit der Formel."
+        },
+        {
+          "art": "flaeche",
+          "spalten": 3,
+          "felder": [
+            {
+              "l": 5,
+              "b": 2,
+              "label": "a) Rechteck",
+              "text": "A = ___ cm²"
+            },
+            {
+              "l": 3,
+              "b": 3,
+              "label": "b) Quadrat",
+              "text": "A = ___ cm²"
+            },
+            {
+              "l": 4,
+              "b": 3,
+              "label": "c) Rechteck",
+              "text": "A = ___ cm²"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Berechne den Flächeninhalt."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Rechteck 6 cm × 3 cm:   A = ___ cm²",
+            "Quadrat mit 6 cm Seite:   A = ___ cm²",
+            "Rechteck 7 cm × 2 cm:   A = ___ cm²",
+            "Rechteck 8 cm × 5 cm:   A = ___ cm²",
+            "Quadrat mit 10 cm Seite:   A = ___ cm²",
+            "Rechteck 9 m × 5 m:   A = ___ m²"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Miss Länge und Breite in Originalgröße. Berechne den Umfang und den Flächeninhalt."
+        },
+        {
+          "art": "flaeche",
+          "spalten": 2,
+          "felder": [
+            {
+              "l": 7,
+              "b": 3,
+              "kaestchen": false,
+              "text": "a)  U = ___ cm      A = ___ cm²"
+            },
+            {
+              "l": 3,
+              "b": 3,
+              "kaestchen": false,
+              "text": "b)  U = ___ cm      A = ___ cm²"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Leas Zimmer ist 4 m lang und 3 m breit. Sie legt neuen Boden und eine Leiste rundherum. Ein Paket Laminat reicht für 2 m²."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "flaeche",
+              "spalten": 1,
+              "felder": [
+                {
+                  "l": 4,
+                  "b": 3,
+                  "masse": [
+                    "4 m",
+                    "3 m"
+                  ],
+                  "label": "Plan: 1 Kästchen = 1 m²"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "Bodenfläche: ___ m²",
+                "Pakete Laminat: ___",
+                "Leiste rundherum: ___ m"
+              ],
+              "buchstaben": true
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Umfang oder Fläche? Kreuze an, was du ausrechnen musst."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Zaun um den Garten\t[] Umfang      [] Fläche",
+            "Rasen für den Garten säen\t[] Umfang      [] Fläche",
+            "Teppich für das Zimmer kaufen\t[] Umfang      [] Fläche",
+            "Lichterkette rund um das Fenster\t[] Umfang      [] Fläche",
+            "Eine Wand streichen\t[] Umfang      [] Fläche",
+            "Rahmen um ein Poster\t[] Umfang      [] Fläche"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Rückwärts denken."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Ein Rechteck hat 24 cm² und ist 6 cm lang. Wie breit ist es?\t___ cm",
+            "Ein Quadrat hat 49 cm². Wie lang ist eine Seite?\t___ cm",
+            "Zeichne zwei verschiedene Rechtecke mit je 12 cm² auf das Karo."
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "flaeche",
+          "spalten": 1,
+          "felder": [
+            {
+              "l": 0,
+              "b": 0,
+              "feld": [
+                17,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Kurz-Check: Wie sicher bist du?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich weiß, was der Flächeninhalt ist.",
+            "Ich rechne Länge · Breite und Seite · Seite.",
+            "Ich unterscheide Umfang (cm) und Fläche (cm²)."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen bestimmen den Flächeninhalt von Rechteck und Quadrat durch Auszählen von cm²-Kästchen und mit der Formel A = Länge · Breite, schreiben die Quadrat-Einheit dazu und unterscheiden Fläche und Umfang.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wie viele Fliesen bedecken diesen Boden?“ Ein Rechteck auf Karopapier zeigen und schätzen lassen. Den Unterschied zum Umfang (Modul 2) klären: Zaun = Umfang, Rasen = Fläche.",
+          "Regel (10 Min.): Das Rechteck 6 cm × 4 cm auszählen, dann zeigen: 6 Kästchen in einer Reihe, 4 Reihen, also 6 · 4 = 24 cm². Den Kasten „Die Regel“ gemeinsam lesen.",
+          "Gemeinsam an der Tafel (5 Min.): Rechteck 3 cm × 2 cm; Quadrat mit 4 cm Seite.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket: Rechteck 5 cm × 3 cm – wie groß ist der Flächeninhalt? Danach den Kurz-Check ausfüllen lassen."
+        ],
+        "hintergrund": "Der Flächeninhalt gibt an, wie viele Einheitsquadrate (z. B. 1 cm²) eine Figur bedecken. Beim Rechteck liegen sie in Reihen: Die Länge ist die Zahl der Kästchen pro Reihe, die Breite die Zahl der Reihen – daraus folgt A = Länge · Breite; das Quadrat ist der Sonderfall A = Seite · Seite. Die Formel sollte aus dem Auszählen entstehen, nicht umgekehrt. Weil zwei Längen malgenommen werden, ist die Einheit ein Quadrat (cm · cm = cm²). Häufige Fehler: Fläche und Umfang verwechseln, cm statt cm² schreiben, Länge und Breite in verschiedenen Einheiten malnehmen. Aufgabe 3 zeigt, dass dieselbe Figur für Umfang und Fläche ganz verschiedene Zahlen liefert. Aufgaben 1, 3 und 6 nur in Originalgröße (100 %) drucken.",
+        "differenzierung": {
+          "leichter": "Rechtecke auf Karopapier zeichnen oder ausschneiden und die Kästchen zählen; die Formel erst danach.",
+          "schwerer": "Aufgabe 6 und: Alle Rechtecke mit 24 cm² (ganze cm) in einer Tabelle sammeln. Welches hat den kleinsten Umfang?"
+        },
+        "impulse": [
+          "Warum ist die Einheit cm² und nicht cm?",
+          "Woran erkennst du, ob nach dem Umfang oder nach der Fläche gefragt ist?"
+        ],
+        "tipps": [
+          "„Fliesenleger“: Rechtecke auf Karopapier legen, Kästchen zählen und mit der Formel prüfen.",
+          "Umfang und Fläche an derselben Figur zeigen: den Rand farbig nachfahren, das Innere ausmalen."
+        ],
+        "material": "Lineal, Karopapier (1 cm), Buntstifte",
+        "loesungen": [
+          "1) a) 10 cm² · b) 9 cm² · c) 12 cm²",
+          "2) 18 cm² · 36 cm² · 14 cm² · 40 cm² · 100 cm² · 45 m²",
+          "3) a) 7 cm und 3 cm: U = 20 cm, A = 21 cm² · b) 3 cm: U = 12 cm, A = 9 cm²",
+          "4) 4 · 3 = 12 m² · 12 : 2 = 6 Pakete · Leiste 2 · (4 + 3) = 14 m",
+          "5) Umfang: Zaun, Lichterkette, Rahmen · Fläche: Rasen, Teppich, Wand",
+          "6) a) 4 cm · b) 7 cm · c) zwei von 4 × 3, 6 × 2 und 12 × 1 Kästchen",
+          "Exit-Ticket: 15 cm²"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Longueur fois largeur",
+      "untertitel": "Aire du rectangle et du carré – module 3, leçon 4",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:layout-grid",
+              "text": "Carrelage au sol"
+            },
+            {
+              "bild": "icon:bed",
+              "text": "Tapis dans la chambre"
+            },
+            {
+              "bild": "icon:plant",
+              "text": "Pelouse du jardin"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Le périmètre, c’est le tour de la figure. L’aire indique la place que couvre l’intérieur d’une figure. On la mesure en carrés : 1 cm² est un carreau de 1 cm de côté."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "La règle",
+              "punkte": [
+                "Rectangle : A = longueur · largeur.",
+                "Carré : tous les côtés ont la même longueur, donc A = côté · côté.",
+                "Unité : cm · cm = cm² et m · m = m².",
+                "Longueur et largeur toujours dans la même unité."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "flaeche",
+              "spalten": 1,
+              "felder": [
+                {
+                  "l": 6,
+                  "b": 4,
+                  "gefaerbt": 6,
+                  "masse": [
+                    "6 cm",
+                    "4 cm"
+                  ],
+                  "text": "A = 6 · 4 = 24 cm²"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Chaque carreau mesure 1 cm². Compte les carreaux et vérifie avec la formule."
+        },
+        {
+          "art": "flaeche",
+          "spalten": 3,
+          "felder": [
+            {
+              "l": 5,
+              "b": 2,
+              "label": "a) Rectangle",
+              "text": "A = ___ cm²"
+            },
+            {
+              "l": 3,
+              "b": 3,
+              "label": "b) Carré",
+              "text": "A = ___ cm²"
+            },
+            {
+              "l": 4,
+              "b": 3,
+              "label": "c) Rectangle",
+              "text": "A = ___ cm²"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule l’aire."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "items": [
+            "Rectangle 6 cm × 3 cm :   A = ___ cm²",
+            "Carré de 6 cm de côté :   A = ___ cm²",
+            "Rectangle 7 cm × 2 cm :   A = ___ cm²",
+            "Rectangle 8 cm × 5 cm :   A = ___ cm²",
+            "Carré de 10 cm de côté :   A = ___ cm²",
+            "Rectangle 9 m × 5 m :   A = ___ m²"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Mesure la longueur et la largeur en taille réelle. Calcule le périmètre et l’aire."
+        },
+        {
+          "art": "flaeche",
+          "spalten": 2,
+          "felder": [
+            {
+              "l": 7,
+              "b": 3,
+              "kaestchen": false,
+              "text": "a)  P = ___ cm      A = ___ cm²"
+            },
+            {
+              "l": 3,
+              "b": 3,
+              "kaestchen": false,
+              "text": "b)  P = ___ cm      A = ___ cm²"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "La chambre de Léa mesure 4 m sur 3 m. Elle pose un nouveau sol et une plinthe tout autour. Un paquet de stratifié couvre 2 m²."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "flaeche",
+              "spalten": 1,
+              "felder": [
+                {
+                  "l": 4,
+                  "b": 3,
+                  "masse": [
+                    "4 m",
+                    "3 m"
+                  ],
+                  "label": "Plan : 1 carreau = 1 m²"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "Surface du sol : ___ m²",
+                "Paquets de stratifié : ___",
+                "Plinthe tout autour : ___ m"
+              ],
+              "buchstaben": true
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Périmètre ou aire ? Coche ce que tu dois calculer."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Clôture autour du jardin\t[] périmètre      [] aire",
+            "Semer du gazon dans le jardin\t[] périmètre      [] aire",
+            "Acheter un tapis pour la chambre\t[] périmètre      [] aire",
+            "Guirlande lumineuse autour de la fenêtre\t[] périmètre      [] aire",
+            "Peindre un mur\t[] périmètre      [] aire",
+            "Cadre autour d’un poster\t[] périmètre      [] aire"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Penser à l’envers."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Un rectangle a une aire de 24 cm² et une longueur de 6 cm. Quelle est sa largeur ?\t___ cm",
+            "Un carré a une aire de 49 cm². Combien mesure un côté ?\t___ cm",
+            "Dessine sur le quadrillage deux rectangles différents de 12 cm² chacun."
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "flaeche",
+          "spalten": 1,
+          "felder": [
+            {
+              "l": 0,
+              "b": 0,
+              "feld": [
+                17,
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Je sais ce qu’est l’aire.",
+            "Je calcule longueur · largeur et côté · côté.",
+            "Je distingue le périmètre (cm) et l’aire (cm²)."
+          ],
+          "optionen": [
+            "sûr·e",
+            "à peu près",
+            "pas encore"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes déterminent l’aire du rectangle et du carré en comptant les carreaux de 1 cm² et avec la formule A = longueur · largeur, notent l’unité au carré et distinguent aire et périmètre.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Combien de carreaux couvrent ce sol ? » Montrer un rectangle sur papier quadrillé et faire estimer. Clarifier la différence avec le périmètre (module 2) : clôture = périmètre, gazon = aire.",
+          "Règle (10 min) : compter les carreaux du rectangle de 6 cm sur 4 cm, puis montrer : 6 carreaux par rangée, 4 rangées, donc 6 · 4 = 24 cm². Lire ensemble l’encadré « La règle ».",
+          "Ensemble au tableau (5 min) : rectangle de 3 cm sur 2 cm ; carré de 4 cm de côté.",
+          "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
+          "Clôture (5 min) : ticket de sortie : rectangle de 5 cm sur 3 cm – quelle est son aire ? Puis le petit bilan."
+        ],
+        "hintergrund": "L’aire indique combien de carrés unités (par ex. 1 cm²) couvrent une figure. Dans un rectangle, ils sont rangés en lignes : la longueur donne le nombre de carreaux par rangée, la largeur le nombre de rangées – d’où A = longueur · largeur ; le carré est le cas particulier A = côté · côté. La formule devrait naître du comptage, et non l’inverse. Comme on multiplie deux longueurs, l’unité est un carré (cm · cm = cm²). Erreurs fréquentes : confondre aire et périmètre, écrire cm au lieu de cm², multiplier une longueur et une largeur dans des unités différentes. L’exercice 3 montre qu’une même figure donne des nombres très différents pour le périmètre et l’aire. Imprimer les exercices 1, 3 et 6 en taille réelle (100 %).",
+        "differenzierung": {
+          "leichter": "Dessiner ou découper des rectangles sur papier quadrillé et compter les carreaux ; la formule seulement ensuite.",
+          "schwerer": "Exercice 6 et : rassembler dans un tableau tous les rectangles de 24 cm² (en cm entiers). Lequel a le plus petit périmètre ?"
+        },
+        "impulse": [
+          "Pourquoi l’unité est-elle cm² et non cm ?",
+          "Comment sais-tu si on te demande le périmètre ou l’aire ?"
+        ],
+        "tipps": [
+          "« Carreleur » : poser des rectangles sur papier quadrillé, compter les carreaux et vérifier avec la formule.",
+          "Montrer périmètre et aire sur la même figure : repasser le bord en couleur, colorier l’intérieur."
+        ],
+        "material": "Règle, papier quadrillé (1 cm), crayons de couleur",
+        "loesungen": [
+          "1) a) 10 cm² · b) 9 cm² · c) 12 cm²",
+          "2) 18 cm² · 36 cm² · 14 cm² · 40 cm² · 100 cm² · 45 m²",
+          "3) a) 7 cm et 3 cm : P = 20 cm, A = 21 cm² · b) 3 cm : P = 12 cm, A = 9 cm²",
+          "4) 4 · 3 = 12 m² · 12 : 2 = 6 paquets · plinthe 2 · (4 + 3) = 14 m",
+          "5) Périmètre : clôture, guirlande, cadre · Aire : gazon, tapis, mur",
+          "6) a) 4 cm · b) 7 cm · c) deux parmi 4 × 3, 6 × 2 et 12 × 1 carreaux",
+          "Ticket de sortie : 15 cm²"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m3-flaecheneinheiten",
+    "bereich": "mathe",
+    "thema": "groessen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Flächeneinheiten",
+      "Umwandeln",
+      "cm²",
+      "m²",
+      "Ar",
+      "Hektar",
+      "Faktor 100",
+      "Modul 3"
+    ],
+    "bild": "icon:soccer-field",
+    "de": {
+      "titel": "Von cm² bis Hektar",
+      "untertitel": "Flächeneinheiten umwandeln – Modul 3, Lektion 5",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:device-mobile",
+              "text": "Handy-Display: 100 cm²"
+            },
+            {
+              "bild": "icon:bed",
+              "text": "Zimmer: 12 m²"
+            },
+            {
+              "bild": "icon:soccer-field",
+              "text": "Fußballfeld: etwa 70 a"
+            },
+            {
+              "bild": "icon:plant",
+              "text": "Feld: 3 ha"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Für kleine Flächen nimmt man cm², für Zimmer m², für Grundstücke und Felder Ar (a) und Hektar (ha). Beim Umwandeln gilt immer der Faktor 100 – nicht 10."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Die Regel",
+              "punkte": [
+                "mm² – cm² – dm² – m² – a – ha – km²: von einer Einheit zur nächsten immer · 100 oder : 100.",
+                "Groß → klein: malnehmen (3 m² = 300 dm²). Klein → groß: teilen (200 cm² = 2 dm²).",
+                "1 a = 100 m² und 1 ha = 100 a = 10 000 m²."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "treppe",
+              "stufen": [
+                "m²",
+                "dm²",
+                "cm²",
+                "mm²"
+              ],
+              "runter": "· 100",
+              "rauf": ": 100",
+              "beispiel": "Nach unten: mal. Nach oben: geteilt."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Warum · 100? Das Quadrat ist 1 dm lang und 1 dm breit (Originalgröße), also 1 dm². Zähle die cm²-Kästchen."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "flaeche",
+              "spalten": 1,
+              "felder": [
+                {
+                  "l": 10,
+                  "b": 10,
+                  "gefaerbt": 10,
+                  "masse": [
+                    "1 dm",
+                    "1 dm"
+                  ]
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "In einer Reihe: ___",
+                "Anzahl Reihen: ___",
+                "1 dm² = ___ cm²",
+                "1 m² = ___ dm²",
+                "1 cm² = ___ mm²"
+              ],
+              "buchstaben": true
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Groß → klein: Rechne um."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "1 m² = ___ dm²",
+            "2 dm² = ___ cm²",
+            "4 m² = ___ dm²",
+            "6 cm² = ___ mm²",
+            "1 ha = ___ a",
+            "7 a = ___ m²"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Klein → groß: Rechne um."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "300 cm² = ___ dm²",
+            "500 dm² = ___ m²",
+            "800 mm² = ___ cm²",
+            "1200 cm² = ___ dm²",
+            "900 m² = ___ a",
+            "400 a = ___ ha"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Ein Bauernhof im Ösling: Rechne die Flächen um."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "Weide: 3 ha = ___ a",
+                "Gemüsegarten: 5 a = ___ m²",
+                "Stall: 400 m² = ___ a",
+                "Wald: 2 ha = ___ a"
+              ],
+              "buchstaben": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "treppe",
+              "stufen": [
+                "ha",
+                "a",
+                "m²"
+              ],
+              "runter": "· 100",
+              "rauf": ": 100"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Fehler finden: Stimmt das? Kreuze an und korrigiere."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Umwandlung",
+            "stimmt",
+            "stimmt nicht",
+            "richtig wäre"
+          ],
+          "breiten": [
+            3,
+            1.1,
+            1.4,
+            2.1
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "3 m² = 30 dm²",
+              "",
+              "",
+              ""
+            ],
+            [
+              "400 cm² = 4 dm²",
+              "",
+              "",
+              ""
+            ],
+            [
+              "5 ha = 50 a",
+              "",
+              "",
+              ""
+            ],
+            [
+              "2 a = 200 m²",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Zwei Stufen auf einmal."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "1 m² = ___ dm² = ___ cm²",
+            "1 ha = ___ a = ___ m²",
+            "Ein Bad hat 6 m² Boden. Wie viele Fliesen zu 1 dm² braucht man?\t___ Fliesen",
+            "Ein Feld hat 3 ha, ein zweites 250 a. Wie viele Ar sind das zusammen?\t___ a"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "text",
+          "text": "Kurz-Check: Wie sicher bist du?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich kenne die Flächeneinheiten von mm² bis km².",
+            "Ich weiß: von Einheit zu Einheit · 100 oder : 100.",
+            "Ich weiß: 1 a = 100 m² und 1 ha = 100 a."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen kennen die Flächeneinheiten mm², cm², dm², m², a, ha und km², begründen am 1-dm²-Quadrat den Faktor 100 und wandeln zwischen benachbarten Einheiten um.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Worin misst man ein Handy-Display, ein Zimmer, ein Feld?“ Die Antworten den Einheiten cm², m² und ha zuordnen.",
+          "Regel (10 Min.): Aufgabe 1 gemeinsam beginnen: 10 Kästchen in einer Reihe, 10 Reihen, also 1 dm² = 100 cm². Die Treppe an die Tafel zeichnen und mit der Längen-Treppe (· 10) vergleichen.",
+          "Gemeinsam an der Tafel (5 Min.): 1 dm² = ___ cm² und 200 cm² = ___ dm².",
+          "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket: 2 m² = ___ dm². Danach den Kurz-Check ausfüllen lassen."
+        ],
+        "hintergrund": "Eine Flächeneinheit ist ein Quadrat mit der Seitenlänge der passenden Längeneinheit: 1 dm² ist ein Quadrat mit 1 dm = 10 cm Seite und enthält deshalb 10 · 10 = 100 cm². Weil Länge und Breite umgerechnet werden, ist der Faktor zwischen benachbarten Flächeneinheiten immer 100 und nicht 10 – das ist der häufigste Fehler (3 m² = 30 dm²). Ar und Hektar sind Einheiten für Grundstücke: 1 a ist ein Quadrat mit 10 m Seite (100 m²), 1 ha eines mit 100 m Seite (10 000 m²). Mit 100 malnehmen oder durch 100 teilen heißt: das Komma springt zwei Stellen (Modul 2, Lektion 4). Aufgabe 1 nur in Originalgröße (100 %) drucken.",
+        "differenzierung": {
+          "leichter": "Ein 1-dm²-Quadrat aus Papier mit aufgemaltem 100er-Feld neben sich legen; die Treppe als Karte auf dem Tisch.",
+          "schwerer": "Aufgabe 6 und die Treppe bis km² verlängern: Wie viele Ar hat 1 km²?"
+        },
+        "impulse": [
+          "Warum ist der Faktor bei Flächen 100 und bei Längen nur 10?",
+          "Was ist größer: 1 ha oder ein Fußballfeld?"
+        ],
+        "tipps": [
+          "Ein 1-m²-Quadrat aus Zeitungspapier legen und schätzen, wie viele Jugendliche darauf stehen können.",
+          "„Einheiten-Treppe“: Karten mit Flächen auf die richtige Stufe legen und in die Nachbarstufen umrechnen."
+        ],
+        "material": "Lineal, Zeitungspapier, Klebeband, eventuell 100er-Feld",
+        "loesungen": [
+          "1) 10 Kästchen · 10 Reihen · 1 dm² = 100 cm² · 1 m² = 100 dm² · 1 cm² = 100 mm²",
+          "2) 100 dm² · 200 cm² · 400 dm² · 600 mm² · 100 a · 700 m²",
+          "3) 3 dm² · 5 m² · 8 cm² · 12 dm² · 9 a · 4 ha",
+          "4) 300 a · 500 m² · 4 a · 200 a",
+          "5) stimmt nicht (300 dm²) · stimmt · stimmt nicht (500 a) · stimmt",
+          "6) 100 dm² = 10 000 cm² · 100 a = 10 000 m² · 600 Fliesen · 300 a + 250 a = 550 a",
+          "Exit-Ticket: 200 dm² · schwerer: 1 km² = 100 ha = 10 000 a"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Du cm² à l’hectare",
+      "untertitel": "Convertir des unités d’aire – module 3, leçon 5",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:device-mobile",
+              "text": "Écran : 100 cm²"
+            },
+            {
+              "bild": "icon:bed",
+              "text": "Chambre : 12 m²"
+            },
+            {
+              "bild": "icon:soccer-field",
+              "text": "Terrain de foot : environ 70 a"
+            },
+            {
+              "bild": "icon:plant",
+              "text": "Champ : 3 ha"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Pour les petites surfaces, on utilise le cm², pour une chambre le m², pour les terrains et les champs l’are (a) et l’hectare (ha). Pour convertir, le facteur est toujours 100 – pas 10."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "La règle",
+              "punkte": [
+                "mm² – cm² – dm² – m² – a – ha – km² : d’une unité à la suivante, toujours · 100 ou : 100.",
+                "Grande → petite : on multiplie (3 m² = 300 dm²). Petite → grande : on divise (200 cm² = 2 dm²).",
+                "1 a = 100 m² et 1 ha = 100 a = 10 000 m²."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "treppe",
+              "stufen": [
+                "m²",
+                "dm²",
+                "cm²",
+                "mm²"
+              ],
+              "runter": "· 100",
+              "rauf": ": 100",
+              "beispiel": "Vers le bas : fois. Vers le haut : divisé."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Pourquoi · 100 ? Le carré mesure 1 dm sur 1 dm (taille réelle) : c’est 1 dm². Compte les carreaux de 1 cm²."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "flaeche",
+              "spalten": 1,
+              "felder": [
+                {
+                  "l": 10,
+                  "b": 10,
+                  "gefaerbt": 10,
+                  "masse": [
+                    "1 dm",
+                    "1 dm"
+                  ]
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "Par rangée : ___",
+                "Rangées : ___",
+                "1 dm² = ___ cm²",
+                "1 m² = ___ dm²",
+                "1 cm² = ___ mm²"
+              ],
+              "buchstaben": true
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "De la grande à la petite unité : convertis."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "1 m² = ___ dm²",
+            "2 dm² = ___ cm²",
+            "4 m² = ___ dm²",
+            "6 cm² = ___ mm²",
+            "1 ha = ___ a",
+            "7 a = ___ m²"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "De la petite à la grande unité : convertis."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 3,
+          "items": [
+            "300 cm² = ___ dm²",
+            "500 dm² = ___ m²",
+            "800 mm² = ___ cm²",
+            "1200 cm² = ___ dm²",
+            "900 m² = ___ a",
+            "400 a = ___ ha"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Une ferme dans l’Oesling : convertis les surfaces."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "Pâturage : 3 ha = ___ a",
+                "Potager : 5 a = ___ m²",
+                "Étable : 400 m² = ___ a",
+                "Forêt : 2 ha = ___ a"
+              ],
+              "buchstaben": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "treppe",
+              "stufen": [
+                "ha",
+                "a",
+                "m²"
+              ],
+              "runter": "· 100",
+              "rauf": ": 100"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Trouve l’erreur : est-ce juste ? Coche et corrige."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Conversion",
+            "vrai",
+            "faux",
+            "correct serait"
+          ],
+          "breiten": [
+            3,
+            1.1,
+            1.4,
+            2.1
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "3 m² = 30 dm²",
+              "",
+              "",
+              ""
+            ],
+            [
+              "400 cm² = 4 dm²",
+              "",
+              "",
+              ""
+            ],
+            [
+              "5 ha = 50 a",
+              "",
+              "",
+              ""
+            ],
+            [
+              "2 a = 200 m²",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Deux marches d’un coup."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "1 m² = ___ dm² = ___ cm²",
+            "1 ha = ___ a = ___ m²",
+            "Une salle de bain a 6 m² de sol. Combien de carreaux de 1 dm² faut-il ?\t___ carreaux",
+            "Un champ mesure 3 ha, un deuxième 250 a. Combien d’ares en tout ?\t___ a"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "text",
+          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Je connais les unités d’aire du mm² au km².",
+            "Je sais : d’une unité à l’autre, · 100 ou : 100.",
+            "Je sais : 1 a = 100 m² et 1 ha = 100 a."
+          ],
+          "optionen": [
+            "sûr·e",
+            "à peu près",
+            "pas encore"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes connaissent les unités d’aire mm², cm², dm², m², a, ha et km², justifient le facteur 100 avec le carré de 1 dm² et convertissent entre unités voisines.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « En quelle unité mesure-t-on un écran de portable, une chambre, un champ ? » Associer les réponses aux unités cm², m² et ha.",
+          "Règle (10 min) : commencer ensemble l’exercice 1 : 10 carreaux par rangée, 10 rangées, donc 1 dm² = 100 cm². Dessiner l’escalier au tableau et le comparer à celui des longueurs (· 10).",
+          "Ensemble au tableau (5 min) : 1 dm² = ___ cm² et 200 cm² = ___ dm².",
+          "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
+          "Clôture (5 min) : ticket de sortie : 2 m² = ___ dm². Puis le petit bilan."
+        ],
+        "hintergrund": "Une unité d’aire est un carré dont le côté mesure l’unité de longueur correspondante : 1 dm² est un carré de 1 dm = 10 cm de côté et contient donc 10 · 10 = 100 cm². Comme on convertit la longueur et la largeur, le facteur entre unités d’aire voisines est toujours 100 et non 10 – c’est l’erreur la plus fréquente (3 m² = 30 dm²). L’are et l’hectare servent pour les terrains : 1 a est un carré de 10 m de côté (100 m²), 1 ha un carré de 100 m de côté (10 000 m²). Multiplier ou diviser par 100, c’est déplacer la virgule de deux rangs (module 2, leçon 4). Imprimer l’exercice 1 en taille réelle (100 %).",
+        "differenzierung": {
+          "leichter": "Poser à côté de soi un carré de 1 dm² en papier avec une grille de 100 carreaux ; l’escalier sur une carte posée sur la table.",
+          "schwerer": "Exercice 6 et prolonger l’escalier jusqu’au km² : combien d’ares fait 1 km² ?"
+        },
+        "impulse": [
+          "Pourquoi le facteur est-il 100 pour les aires, mais seulement 10 pour les longueurs ?",
+          "Qu’est-ce qui est plus grand : 1 ha ou un terrain de foot ?"
+        ],
+        "tipps": [
+          "Poser au sol un carré de 1 m² en papier journal et estimer combien de jeunes peuvent s’y tenir debout.",
+          "« Escalier des unités » : poser des cartes avec des aires sur la bonne marche et les convertir dans les marches voisines."
+        ],
+        "material": "Règle, papier journal, ruban adhésif, éventuellement une grille de 100",
+        "loesungen": [
+          "1) 10 carreaux · 10 rangées · 1 dm² = 100 cm² · 1 m² = 100 dm² · 1 cm² = 100 mm²",
+          "2) 100 dm² · 200 cm² · 400 dm² · 600 mm² · 100 a · 700 m²",
+          "3) 3 dm² · 5 m² · 8 cm² · 12 dm² · 9 a · 4 ha",
+          "4) 300 a · 500 m² · 4 a · 200 a",
+          "5) faux (300 dm²) · vrai · faux (500 a) · vrai",
+          "6) 100 dm² = 10 000 cm² · 100 a = 10 000 m² · 600 carreaux · 300 a + 250 a = 550 a",
+          "Ticket de sortie : 200 dm² · plus difficile : 1 km² = 100 ha = 10 000 a"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m3-temperatur",
+    "bereich": "mathe",
+    "thema": "groessen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Temperatur",
+      "Thermometer",
+      "Grad Celsius",
+      "Minusgrade",
+      "Temperaturänderung",
+      "Wetter",
+      "Modul 3"
+    ],
+    "bild": "icon:temperature",
+    "de": {
+      "titel": "Über und unter null",
+      "untertitel": "Temperatur, Thermometer und Temperaturänderung – Modul 3, Lektion 6",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:snowman",
+              "text": "Wintermorgen:\n–3 °C"
+            },
+            {
+              "bild": "icon:sun",
+              "text": "Sommertag:\n28 °C"
+            },
+            {
+              "bild": "icon:fridge",
+              "text": "Kühlschrank:\n4 °C"
+            },
+            {
+              "bild": "icon:snowflake",
+              "text": "Gefrierfach:\n–18 °C"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Das Thermometer ist ein senkrechter Zahlenstrahl: Über der 0 liegen die Plusgrade, unter der 0 die Minusgrade. Bei 0 °C gefriert Wasser."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Die Regel",
+              "punkte": [
+                "Je tiefer unter 0, desto kälter: –7 °C ist kälter als –2 °C.",
+                "Temperaturänderung = Schritte auf der Skala. Wärmer: +, kälter: –.",
+                "Über die 0 in zwei Teilen: von –3 °C bis 0 sind es 3 Schritte, dann bis 5 °C noch 5. Zusammen: +8 °C."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "temperatur",
+              "von": -10,
+              "bis": 10,
+              "items": [
+                {
+                  "wert": -3,
+                  "ziel": 5,
+                  "pfeil": true,
+                  "text": "von –3 °C auf 5 °C: +8 °C"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "aufgabe",
+              "stufe": 1,
+              "text": "Lies die Temperatur ab."
+            },
+            {
+              "art": "temperatur",
+              "von": -10,
+              "bis": 20,
+              "items": [
+                {
+                  "wert": 13,
+                  "label": "a)",
+                  "text": "___ °C"
+                },
+                {
+                  "wert": -4,
+                  "label": "b)",
+                  "text": "___ °C"
+                },
+                {
+                  "wert": -9,
+                  "label": "c)",
+                  "text": "___ °C"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "stufe": 1,
+              "text": "Färbe die Säule rot bis zur Temperatur."
+            },
+            {
+              "art": "temperatur",
+              "von": -10,
+              "bis": 20,
+              "items": [
+                {
+                  "label": "d) 6 °C"
+                },
+                {
+                  "label": "e) –7 °C"
+                },
+                {
+                  "label": "f) –1 °C"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Vergleiche: Setze < oder > ein. Ordne dann von kalt nach warm."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 4,
+          "items": [
+            "2 °C [] –2 °C",
+            "–5 °C [] –1 °C",
+            "0 °C [] –3 °C",
+            "–8 °C [] –6 °C"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "–3 °C    0 °C    –8 °C    4 °C\t___ < ___ < ___ < ___",
+            "2 °C    –1 °C    –12 °C    –5 °C\t___ < ___ < ___ < ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Wärmer oder kälter? Berechne die neue Temperatur. Das Thermometer hilft beim Zählen."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "Von 3 °C um 5 Grad wärmer:\t___ °C",
+                "Von 1 °C um 4 Grad kälter:\t___ °C",
+                "Von 2 °C um 7 Grad kälter:\t___ °C",
+                "Von –6 °C um 4 Grad wärmer:\t___ °C",
+                "Von –3 °C um 6 Grad kälter:\t___ °C",
+                "Von –5 °C um 9 Grad wärmer:\t___ °C"
+              ],
+              "buchstaben": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "temperatur",
+              "von": -10,
+              "bis": 10,
+              "items": [
+                {}
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Wetterwoche in Clervaux: Wie ändert sich die Temperatur? Schreib + (wärmer) oder – (kälter) und die Gradzahl."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wann?",
+            "vorher",
+            "nachher",
+            "Änderung"
+          ],
+          "breiten": [
+            2.8,
+            1.1,
+            1.1,
+            1.4
+          ],
+          "zeilen": 0,
+          "beispiel": [
+            "Montag, 7 Uhr → 14 Uhr",
+            "–3 °C",
+            "5 °C",
+            "+8 °C"
+          ],
+          "werte": [
+            [
+              "Dienstag, 7 Uhr → 14 Uhr",
+              "–4 °C",
+              "6 °C",
+              ""
+            ],
+            [
+              "Dienstag, 18 Uhr → 23 Uhr",
+              "4 °C",
+              "–5 °C",
+              ""
+            ],
+            [
+              "Mittwoch, 7 Uhr → 14 Uhr",
+              "–6 °C",
+              "–1 °C",
+              ""
+            ],
+            [
+              "Donnerstag, 14 Uhr → 23 Uhr",
+              "0 °C",
+              "–7 °C",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Denk genau nach."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "Nachts –6 °C, am Tag 9 °C. Wie groß ist der Unterschied?\t___ Grad",
+            "Gefrierfach –18 °C, Kühlschrank 4 °C. Um wie viel ist der Kühlschrank wärmer?\t___ Grad",
+            "Mittags 3 °C, das sind 7 Grad mehr als am Morgen. Wie kalt war es am Morgen?\t___ °C"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "text",
+          "text": "Kurz-Check: Wie sicher bist du?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich lese Plus- und Minusgrade am Thermometer ab.",
+            "Ich weiß: Je tiefer unter 0, desto kälter.",
+            "Ich zähle über die 0 in zwei Teilen."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen lesen Temperaturen über und unter 0 °C am Thermometer ab, vergleichen und ordnen Minusgrade und berechnen Temperaturänderungen – auch über die 0 hinweg.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Morgens –3 °C, mittags 5 °C. Um wie viel ist es wärmer geworden?“ Schätzen lassen; die häufige Antwort „2 Grad“ an der Tafel festhalten.",
+          "Regel (10 Min.): Ein großes senkrechtes Thermometer an die Tafel zeichnen; mit dem Finger von –3 bis 0 und von 0 bis 5 zählen. Den Kasten „Die Regel“ gemeinsam lesen.",
+          "Gemeinsam an der Tafel (5 Min.): Was ist wärmer: –5 °C oder –1 °C? Von 0 °C um 6 Grad kälter?",
+          "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket: Von –2 °C um 5 Grad wärmer? Danach den Kurz-Check ausfüllen lassen."
+        ],
+        "hintergrund": "Die Celsius-Skala legt 0 °C auf den Gefrierpunkt von Wasser; kältere Temperaturen werden mit Minuszeichen geschrieben. Das Thermometer ist ein senkrechter Zahlenstrahl und ein gutes erstes Bild für negative Zahlen. Zwei Fehler sind typisch: Minusgrade werden wie positive Zahlen verglichen (–7 °C sei wärmer als –2 °C), und bei Änderungen über die 0 wird einfach subtrahiert (von –3 °C auf 5 °C seien es 2 Grad). Das Zählen in zwei Teilen – erst bis 0, dann weiter – macht die Rechnung sichtbar und kommt ohne Rechenregeln für negative Zahlen aus, die erst später folgen. Guthaben und Schulden sind ein zweites hilfreiches Bild.",
+        "differenzierung": {
+          "leichter": "Mit dem Finger am Thermometer zählen; zuerst nur Änderungen über 0, dann über die 0 hinweg.",
+          "schwerer": "Aufgabe 6 und eine eigene Wetterwoche aus dem Wetterbericht mit fünf Änderungen erstellen."
+        },
+        "impulse": [
+          "Warum ist –7 °C kälter als –2 °C, obwohl 7 größer ist als 2?",
+          "Wie zählst du, wenn die Temperatur über die 0 geht?"
+        ],
+        "tipps": [
+          "„Wetterfrosch“: Zwei Temperaturkarten ziehen und sagen, ob es wärmer oder kälter wird und um wie viel.",
+          "Den Wetterbericht der Woche mitbringen und die Änderungen von Tag zu Tag ausrechnen."
+        ],
+        "material": "Thermometer, Wetterbericht, roter Buntstift",
+        "loesungen": [
+          "1) a) 13 °C · b) –4 °C · c) –9 °C",
+          "2) Säule bis 6 °C, –7 °C und –1 °C",
+          "3) > · < · > · < · –8 < –3 < 0 < 4 · –12 < –5 < –1 < 2",
+          "4) 8 °C · –3 °C · –5 °C · –2 °C · –9 °C · 4 °C",
+          "5) +10 °C · –9 °C · +5 °C · –7 °C",
+          "6) 15 Grad · 22 Grad · –4 °C",
+          "Exit-Ticket: 3 °C"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Au-dessus et au-dessous de zéro",
+      "untertitel": "Température, thermomètre et variation de température – module 3, leçon 6",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:snowman",
+              "text": "Matin d’hiver :\n–3 °C"
+            },
+            {
+              "bild": "icon:sun",
+              "text": "Journée d’été :\n28 °C"
+            },
+            {
+              "bild": "icon:fridge",
+              "text": "Réfrigérateur :\n4 °C"
+            },
+            {
+              "bild": "icon:snowflake",
+              "text": "Congélateur :\n–18 °C"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Le thermomètre est une droite graduée verticale : au-dessus de 0, les températures positives, au-dessous de 0, les températures négatives. À 0 °C, l’eau gèle."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "La règle",
+              "punkte": [
+                "Plus on descend sous 0, plus il fait froid : –7 °C est plus froid que –2 °C.",
+                "Variation de température = nombre de pas sur l’échelle. Plus chaud : +, plus froid : –.",
+                "En passant par 0, compte en deux parties : de –3 °C à 0, 3 pas, puis jusqu’à 5 °C encore 5. En tout : +8 °C."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "temperatur",
+              "von": -10,
+              "bis": 10,
+              "items": [
+                {
+                  "wert": -3,
+                  "ziel": 5,
+                  "pfeil": true,
+                  "text": "de –3 °C à 5 °C : +8 °C"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "aufgabe",
+              "stufe": 1,
+              "text": "Lis la température."
+            },
+            {
+              "art": "temperatur",
+              "von": -10,
+              "bis": 20,
+              "items": [
+                {
+                  "wert": 13,
+                  "label": "a)",
+                  "text": "___ °C"
+                },
+                {
+                  "wert": -4,
+                  "label": "b)",
+                  "text": "___ °C"
+                },
+                {
+                  "wert": -9,
+                  "label": "c)",
+                  "text": "___ °C"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "stufe": 1,
+              "text": "Colorie jusqu’à la température."
+            },
+            {
+              "art": "temperatur",
+              "von": -10,
+              "bis": 20,
+              "items": [
+                {
+                  "label": "d) 6 °C"
+                },
+                {
+                  "label": "e) –7 °C"
+                },
+                {
+                  "label": "f) –1 °C"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Compare : écris < ou >. Puis range du plus froid au plus chaud."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 4,
+          "items": [
+            "2 °C [] –2 °C",
+            "–5 °C [] –1 °C",
+            "0 °C [] –3 °C",
+            "–8 °C [] –6 °C"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "–3 °C    0 °C    –8 °C    4 °C\t___ < ___ < ___ < ___",
+            "2 °C    –1 °C    –12 °C    –5 °C\t___ < ___ < ___ < ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Plus chaud ou plus froid ? Calcule la nouvelle température. Le thermomètre t’aide à compter."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "2:1",
+          "links": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "3 °C, puis 5 degrés de plus :\t___ °C",
+                "1 °C, puis 4 degrés de moins :\t___ °C",
+                "2 °C, puis 7 degrés de moins :\t___ °C",
+                "–6 °C, puis 4 degrés de plus :\t___ °C",
+                "–3 °C, puis 6 degrés de moins :\t___ °C",
+                "–5 °C, puis 9 degrés de plus :\t___ °C"
+              ],
+              "buchstaben": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "temperatur",
+              "von": -10,
+              "bis": 10,
+              "items": [
+                {}
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Météo de la semaine à Clervaux : comment varie la température ? Écris + (plus chaud) ou – (plus froid) et le nombre de degrés."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quand ?",
+            "avant",
+            "après",
+            "variation"
+          ],
+          "breiten": [
+            2.8,
+            1.1,
+            1.1,
+            1.4
+          ],
+          "zeilen": 0,
+          "beispiel": [
+            "lundi, 7 h → 14 h",
+            "–3 °C",
+            "5 °C",
+            "+8 °C"
+          ],
+          "werte": [
+            [
+              "mardi, 7 h → 14 h",
+              "–4 °C",
+              "6 °C",
+              ""
+            ],
+            [
+              "mardi, 18 h → 23 h",
+              "4 °C",
+              "–5 °C",
+              ""
+            ],
+            [
+              "mercredi, 7 h → 14 h",
+              "–6 °C",
+              "–1 °C",
+              ""
+            ],
+            [
+              "jeudi, 14 h → 23 h",
+              "0 °C",
+              "–7 °C",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Réfléchis bien."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "items": [
+            "La nuit –6 °C, le jour 9 °C. Quel est l’écart ?\t___ degrés",
+            "Congélateur –18 °C, réfrigérateur 4 °C. De combien le réfrigérateur est-il plus chaud ?\t___ degrés",
+            "À midi 3 °C, soit 7 degrés de plus que le matin. Quelle température faisait-il le matin ?\t___ °C"
+          ],
+          "buchstaben": true
+        },
+        {
+          "art": "text",
+          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Je lis les températures positives et négatives sur le thermomètre.",
+            "Je sais : plus on descend sous 0, plus il fait froid.",
+            "En passant par 0, je compte en deux parties."
+          ],
+          "optionen": [
+            "sûr·e",
+            "à peu près",
+            "pas encore"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes lisent des températures au-dessus et au-dessous de 0 °C sur le thermomètre, comparent et rangent des températures négatives et calculent des variations de température – aussi en passant par 0.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Le matin –3 °C, à midi 5 °C. De combien fait-il plus chaud ? » Faire estimer ; noter au tableau la réponse fréquente « 2 degrés ».",
+          "Règle (10 min) : dessiner un grand thermomètre vertical au tableau ; compter avec le doigt de –3 à 0, puis de 0 à 5. Lire ensemble l’encadré « La règle ».",
+          "Ensemble au tableau (5 min) : qu’est-ce qui est plus chaud, –5 °C ou –1 °C ? 0 °C, puis 6 degrés de moins ?",
+          "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
+          "Clôture (5 min) : ticket de sortie : –2 °C, puis 5 degrés de plus ? Puis le petit bilan."
+        ],
+        "hintergrund": "L’échelle Celsius place 0 °C au point de congélation de l’eau ; les températures plus froides s’écrivent avec un signe moins. Le thermomètre est une droite graduée verticale et une bonne première image des nombres négatifs. Deux erreurs sont typiques : comparer les températures négatives comme des nombres positifs (–7 °C serait plus chaud que –2 °C) et, en passant par 0, simplement soustraire (de –3 °C à 5 °C, il y aurait 2 degrés). Compter en deux parties – d’abord jusqu’à 0, puis plus loin – rend le calcul visible et se passe des règles de calcul sur les nombres négatifs, qui viennent plus tard. Avoir et dettes sont une deuxième image utile.",
+        "differenzierung": {
+          "leichter": "Compter avec le doigt sur le thermomètre ; d’abord des variations au-dessus de 0, puis en passant par 0.",
+          "schwerer": "Exercice 6 et créer sa propre semaine météo à partir du bulletin, avec cinq variations."
+        },
+        "impulse": [
+          "Pourquoi –7 °C est-il plus froid que –2 °C, alors que 7 est plus grand que 2 ?",
+          "Comment comptes-tu quand la température passe par 0 ?"
+        ],
+        "tipps": [
+          "« Grenouille météo » : tirer deux cartes de température et dire s’il fait plus chaud ou plus froid, et de combien.",
+          "Apporter le bulletin météo de la semaine et calculer les variations d’un jour à l’autre."
+        ],
+        "material": "Thermomètre, bulletin météo, crayon de couleur rouge",
+        "loesungen": [
+          "1) a) 13 °C · b) –4 °C · c) –9 °C",
+          "2) colonne jusqu’à 6 °C, –7 °C et –1 °C",
+          "3) > · < · > · < · –8 < –3 < 0 < 4 · –12 < –5 < –1 < 2",
+          "4) 8 °C · –3 °C · –5 °C · –2 °C · –9 °C · 4 °C",
+          "5) +10 °C · –9 °C · +5 °C · –7 °C",
+          "6) 15 degrés · 22 degrés · –4 °C",
+          "Ticket de sortie : 3 °C"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m3-diagramme-lesen",
+    "bereich": "mathe",
+    "thema": "daten",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Statistik",
+      "Daten",
+      "Balkendiagramm",
+      "Achse",
+      "Häufigkeit",
+      "Umfrage",
+      "Modul 3"
+    ],
+    "bild": "icon:chart-bar",
+    "de": {
+      "titel": "Was das Diagramm zeigt",
+      "untertitel": "Daten in Diagrammen lesen – Modul 3, Lektion 7",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:users-group",
+              "text": "Umfrage in der 5e: 17 Jugendliche"
+            },
+            {
+              "bild": "icon:device-mobile",
+              "text": "Was machst du am liebsten am Handy?"
+            },
+            {
+              "bild": "icon:chart-bar",
+              "text": "Die Antworten als Diagramm"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Statt einer langen Liste zeigt ein Balkendiagramm die Antworten auf einen Blick: Je höher der Balken, desto mehr Jugendliche haben das gewählt."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "So liest du ein Balkendiagramm",
+              "punkte": [
+                "Unten stehen die Kategorien (was gezählt wird), links die Anzahl (Häufigkeit).",
+                "Ablesen: vom oberen Ende des Balkens waagrecht zur Anzahl-Achse – am besten mit dem Lineal.",
+                "Höchster Balken = am häufigsten. Alle Balken zusammen = Gesamtzahl: 6 + 4 + 2 + 5 = 17."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Videos",
+                "Chatten",
+                "Spiele",
+                "Musik"
+              ],
+              "werte": [
+                6,
+                4,
+                2,
+                5
+              ],
+              "max": 8,
+              "schritt": 2,
+              "fein": 1,
+              "zahlen": true,
+              "hoehe": 96,
+              "achsen": [
+                "Am Handy",
+                "Anzahl"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Freizeitsport in der 5e: Lies ab und ergänze."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Fußball",
+                "Tennis",
+                "Schwimmen",
+                "Tanzen"
+              ],
+              "werte": [
+                9,
+                4,
+                6,
+                7
+              ],
+              "max": 10,
+              "schritt": 2,
+              "fein": 1,
+              "hoehe": 104,
+              "achsen": [
+                "Sportart",
+                "Anzahl"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "buchstaben": true,
+              "items": [
+                "Wie viele wählen Tennis? ___",
+                "Wie viele wählen Schwimmen? ___",
+                "Am beliebtesten ist ________.",
+                "7 Jugendliche wählen ________."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Welche Frage passt zu welchem Vorgehen? Verbinde."
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Frage",
+            "So gehst du vor"
+          ],
+          "links": [
+            "Wie viele mögen Tennis?",
+            "Was ist am beliebtesten?",
+            "Wie viele wurden befragt?",
+            "Wie viel mehr Fußball als Tennis?"
+          ],
+          "rechts": [
+            "alle Balken addieren",
+            "zwei Balken subtrahieren",
+            "einen Balken ablesen",
+            "den höchsten Balken suchen"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Lieblingsmusik: Trag die Werte in die Tabelle ein und beantworte die Fragen."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Pop",
+                "Rap",
+                "Rock",
+                "Electro"
+              ],
+              "werte": [
+                7,
+                5,
+                3,
+                5
+              ],
+              "max": 8,
+              "schritt": 2,
+              "fein": 1,
+              "hoehe": 88,
+              "achsen": [
+                "Musik",
+                "Anzahl"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "tabelle",
+              "spalten": [
+                "",
+                "Pop",
+                "Rap",
+                "Rock",
+                "Electro"
+              ],
+              "breiten": [
+                1.5,
+                1,
+                1,
+                1,
+                1.3
+              ],
+              "zeilen": 0,
+              "werte": [
+                [
+                  "Anzahl",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "buchstaben": true,
+              "items": [
+                "Gleich beliebt: ____ und ____",
+                "Pop hat ___ Stimmen mehr als Rock.",
+                "Befragt wurden ___ Jugendliche."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Der Schulkiosk zählt die verkauften Croissants. Hier liegen die Balken: Lies unten ab. Stimmt das? Kreuze an."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "diagramm",
+              "liegend": true,
+              "kategorien": [
+                "Montag",
+                "Dienstag",
+                "Mittwoch",
+                "Donnerstag",
+                "Freitag"
+              ],
+              "werte": [
+                25,
+                15,
+                35,
+                20,
+                30
+              ],
+              "max": 40,
+              "schritt": 10,
+              "fein": 5,
+              "hoehe": 100,
+              "achsen": [
+                "Tag",
+                "Croissants"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "tabelle",
+              "spalten": [
+                "Aussage",
+                "stimmt",
+                "stimmt nicht"
+              ],
+              "breiten": [
+                3.4,
+                1.1,
+                1.3
+              ],
+              "zeilen": 0,
+              "werte": [
+                [
+                  "Am Mittwoch wurden die meisten verkauft.",
+                  "",
+                  ""
+                ],
+                [
+                  "Am Montag waren es 20.",
+                  "",
+                  ""
+                ],
+                [
+                  "Am Freitag waren es doppelt so viele wie am Dienstag.",
+                  "",
+                  ""
+                ],
+                [
+                  "In der ganzen Woche waren es 100.",
+                  "",
+                  ""
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Die 5e2 hat 24 Jugendliche. Das Diagramm zeigt ihren Schulweg, aber ein Balken fehlt. Berechne ihn und zeichne ihn ein."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Bus",
+                "zu Fuß",
+                "Fahrrad",
+                "Auto"
+              ],
+              "werte": [
+                10,
+                5,
+                3,
+                null
+              ],
+              "max": 12,
+              "schritt": 2,
+              "fein": 1,
+              "hoehe": 96,
+              "achsen": [
+                "Schulweg",
+                "Anzahl"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "kaestchen",
+              "zeilen": 4
+            },
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "Mit dem Auto kommen ___ Jugendliche."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Kurz-Check: Wie sicher bist du?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich weiß, was auf den beiden Achsen steht.",
+            "Ich lese einen Wert genau ab, auch zwischen zwei Zahlen der Skala.",
+            "Ich vergleiche Balken und berechne die Gesamtzahl."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen lesen Werte aus Balkendiagrammen ab – auch bei Skalen in Zweier- oder Fünferschritten und bei liegenden Balken –, vergleichen Kategorien und bestimmen die Gesamtzahl.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was machst du am liebsten am Handy?“ Die Antworten per Handzeichen zählen und an der Tafel als Liste notieren.",
+          "Regel (10 Min.): Aus der Liste gemeinsam ein Balkendiagramm zeichnen; Kategorien-Achse und Anzahl-Achse benennen. Den Kasten „So liest du ein Balkendiagramm“ lesen und das Ablesen mit dem Lineal zeigen.",
+          "Gemeinsam an der Tafel (5 Min.): Haustiere – Hund 8, Katze 5, Vogel 3: Welches Tier ist am beliebtesten? Wie viele wurden gefragt?",
+          "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 4, Aufgabe 5 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket: „Der Balken ‚Hund‘ ist am höchsten. Was bedeutet das?“ Danach den Kurz-Check ausfüllen lassen."
+        ],
+        "hintergrund": "Ein Balkendiagramm zeigt Häufigkeiten von Kategorien: Auf der einen Achse stehen die Kategorien (z. B. Sportarten), auf der anderen die Anzahl. Die Länge des Balkens entspricht dem Wert; deshalb beginnt die Anzahl-Achse bei 0 und ist gleichmäßig eingeteilt. Ob die Balken stehen (Säulen) oder liegen, ändert am Lesen nichts. Typische Fehler: nur beschriftete Skalenwerte ablesen (bei Zweier- oder Fünferschritten liegen viele Werte dazwischen), ungenau ablesen ohne Lineal, Kategorie und Anzahl verwechseln, beim Addieren eine Kategorie vergessen. Die Summe aller Balken ist die Zahl der Befragten; sie dient als Kontrolle und wird in Lektion 8 (Strichliste) und Lektion 9 (Mittelwert) wieder gebraucht.",
+        "differenzierung": {
+          "leichter": "Ein Lineal oder einen Papierstreifen waagrecht anlegen; die Skala zuerst gemeinsam in Einerschritten mit Bleistift ergänzen.",
+          "schwerer": "Aufgabe 5 und eine eigene Klassenumfrage (z. B. Lieblingsfach) als Diagramm darstellen und drei Fragen dazu für die Nachbarin oder den Nachbarn schreiben."
+        },
+        "impulse": [
+          "Woran erkennst du im Diagramm sofort, was am beliebtesten ist?",
+          "Wie liest du einen Wert ab, der zwischen zwei Zahlen der Skala liegt?"
+        ],
+        "tipps": [
+          "Das Diagramm zuerst „vorlesen“ lassen: Worum geht es? Was steht auf den Achsen? Erst dann die Fragen beantworten.",
+          "Bei Fünferschritten die Zwischenlinien laut mitzählen: 20, 25, 30 …"
+        ],
+        "material": "Lineal",
+        "loesungen": [
+          "1) a) 4 · b) 6 · c) Fußball (9) · d) Tanzen",
+          "2) Tennis → einen Balken ablesen · am beliebtesten → den höchsten Balken suchen · befragt → alle Balken addieren · mehr als → zwei Balken subtrahieren",
+          "3) Pop 7, Rap 5, Rock 3, Electro 5 · a) Rap und Electro · b) 4 (7 – 3) · c) 20",
+          "4) stimmt · stimmt nicht (25) · stimmt (30 = 2 · 15) · stimmt nicht (125)",
+          "5) 10 + 5 + 3 = 18, 24 – 18 = 6: Balken „Auto“ bis 6",
+          "Exit-Ticket: Hund wurde am häufigsten genannt, er ist am beliebtesten."
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Ce que montre le diagramme",
+      "untertitel": "Lire des données dans un diagramme – module 3, leçon 7",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:users-group",
+              "text": "Sondage en 5e : 17 jeunes"
+            },
+            {
+              "bild": "icon:device-mobile",
+              "text": "Que fais-tu le plus sur ton portable ?"
+            },
+            {
+              "bild": "icon:chart-bar",
+              "text": "Les réponses en diagramme"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Au lieu d’une longue liste, un diagramme en bâtons montre les réponses d’un seul coup d’œil : plus le bâton est haut, plus les jeunes ont été nombreux à faire ce choix."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Lire un diagramme en bâtons",
+              "punkte": [
+                "En bas, les catégories (ce qu’on compte) ; à gauche, l’effectif (combien de fois).",
+                "Lire une valeur : du haut du bâton, aller à l’horizontale jusqu’à l’axe des effectifs – de préférence avec la règle.",
+                "Bâton le plus haut = le plus fréquent. Tous les bâtons ensemble = effectif total : 6 + 4 + 2 + 5 = 17."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Vidéos",
+                "Chat",
+                "Jeux",
+                "Musique"
+              ],
+              "werte": [
+                6,
+                4,
+                2,
+                5
+              ],
+              "max": 8,
+              "schritt": 2,
+              "fein": 1,
+              "zahlen": true,
+              "hoehe": 96,
+              "achsen": [
+                "Sur le portable",
+                "Effectif"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Sport de loisir en 5e : lis le diagramme et complète."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Football",
+                "Tennis",
+                "Natation",
+                "Danse"
+              ],
+              "werte": [
+                9,
+                4,
+                6,
+                7
+              ],
+              "max": 10,
+              "schritt": 2,
+              "fein": 1,
+              "hoehe": 104,
+              "achsen": [
+                "Sport",
+                "Effectif"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "buchstaben": true,
+              "items": [
+                "Combien choisissent le tennis ? ___",
+                "Combien choisissent la natation ? ___",
+                "Le sport préféré est ________.",
+                "7 jeunes choisissent ________."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Quelle question va avec quelle démarche ? Relie."
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Question",
+            "Démarche"
+          ],
+          "links": [
+            "Combien aiment le tennis ?",
+            "Qu’est-ce qui est le plus apprécié ?",
+            "Combien de jeunes en tout ?",
+            "Écart entre football et tennis ?"
+          ],
+          "rechts": [
+            "additionner tous les bâtons",
+            "soustraire deux bâtons",
+            "lire un bâton",
+            "chercher le bâton le plus haut"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Musique préférée : reporte les valeurs dans le tableau et réponds aux questions."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Pop",
+                "Rap",
+                "Rock",
+                "Électro"
+              ],
+              "werte": [
+                7,
+                5,
+                3,
+                5
+              ],
+              "max": 8,
+              "schritt": 2,
+              "fein": 1,
+              "hoehe": 88,
+              "achsen": [
+                "Musique",
+                "Effectif"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "tabelle",
+              "spalten": [
+                "",
+                "Pop",
+                "Rap",
+                "Rock",
+                "Électro"
+              ],
+              "breiten": [
+                1.5,
+                1,
+                1,
+                1,
+                1.3
+              ],
+              "zeilen": 0,
+              "werte": [
+                [
+                  "Effectif",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "buchstaben": true,
+              "items": [
+                "Aussi appréciés : ____ et ____",
+                "Le pop a ___ voix de plus que le rock.",
+                "On a interrogé ___ jeunes."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Le kiosque de l’école compte les croissants vendus. Ici, les bâtons sont couchés : lis en bas. Vrai ou faux ? Coche."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "diagramm",
+              "liegend": true,
+              "kategorien": [
+                "Lundi",
+                "Mardi",
+                "Mercredi",
+                "Jeudi",
+                "Vendredi"
+              ],
+              "werte": [
+                25,
+                15,
+                35,
+                20,
+                30
+              ],
+              "max": 40,
+              "schritt": 10,
+              "fein": 5,
+              "hoehe": 100,
+              "achsen": [
+                "Jour",
+                "Croissants"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "tabelle",
+              "spalten": [
+                "Affirmation",
+                "vrai",
+                "faux"
+              ],
+              "breiten": [
+                3.8,
+                1,
+                1
+              ],
+              "zeilen": 0,
+              "werte": [
+                [
+                  "C’est mercredi qu’on en a vendu le plus.",
+                  "",
+                  ""
+                ],
+                [
+                  "Lundi, on en a vendu 20.",
+                  "",
+                  ""
+                ],
+                [
+                  "Vendredi, on en a vendu deux fois plus que mardi.",
+                  "",
+                  ""
+                ],
+                [
+                  "Sur toute la semaine, on en a vendu 100.",
+                  "",
+                  ""
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "La 5e2 compte 24 jeunes. Le diagramme montre comment ils viennent à l’école, mais un bâton manque. Calcule-le et dessine-le."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Bus",
+                "À pied",
+                "Vélo",
+                "Voiture"
+              ],
+              "werte": [
+                10,
+                5,
+                3,
+                null
+              ],
+              "max": 12,
+              "schritt": 2,
+              "fein": 1,
+              "hoehe": 96,
+              "achsen": [
+                "Trajet",
+                "Effectif"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "kaestchen",
+              "zeilen": 4
+            },
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "En voiture : ___ jeunes."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Je sais ce qui figure sur les deux axes.",
+            "Je lis une valeur avec précision, même entre deux nombres de l’échelle.",
+            "Je compare des bâtons et je calcule l’effectif total."
+          ],
+          "optionen": [
+            "sûr·e",
+            "à peu près",
+            "pas encore"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes lisent des valeurs dans des diagrammes en bâtons – y compris avec une graduation de 2 en 2 ou de 5 en 5 et avec des bâtons couchés –, comparent des catégories et déterminent l’effectif total.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Que fais-tu le plus sur ton portable ? » Compter les réponses à main levée et les noter au tableau sous forme de liste.",
+          "Règle (10 min) : à partir de la liste, dessiner ensemble un diagramme en bâtons ; nommer l’axe des catégories et l’axe des effectifs. Lire l’encadré « Lire un diagramme en bâtons » et montrer la lecture avec la règle.",
+          "Ensemble au tableau (5 min) : animaux – chien 8, chat 5, oiseau 3 : quel animal est le plus apprécié ? Combien de personnes ont été interrogées ?",
+          "Travail individuel (20–25 min) : exercices 1 à 4, l’exercice 5 pour ceux qui ont fini. Les points indiquent le niveau.",
+          "Clôture (5 min) : ticket de sortie : « Le bâton “chien” est le plus haut. Qu’est-ce que cela signifie ? » Puis le petit bilan."
+        ],
+        "hintergrund": "Un diagramme en bâtons représente les effectifs de différentes catégories : un axe porte les catégories (p. ex. les sports), l’autre l’effectif. La longueur du bâton correspond à la valeur ; l’axe des effectifs commence donc à 0 et est gradué régulièrement. Que les bâtons soient debout ou couchés ne change rien à la lecture. Erreurs typiques : ne lire que les valeurs écrites (avec une graduation de 2 en 2 ou de 5 en 5, beaucoup de valeurs se trouvent entre deux nombres), lire sans règle, confondre catégorie et effectif, oublier une catégorie en additionnant. La somme de tous les bâtons est le nombre de personnes interrogées ; elle sert de contrôle et sera réutilisée aux leçons 8 (liste de comptage) et 9 (moyenne).",
+        "differenzierung": {
+          "leichter": "Poser une règle ou une bande de papier à l’horizontale ; compléter d’abord ensemble l’échelle de 1 en 1 au crayon.",
+          "schwerer": "Exercice 5 et représenter un sondage de la classe (p. ex. la matière préférée) par un diagramme, puis écrire trois questions pour le voisin ou la voisine."
+        },
+        "impulse": [
+          "À quoi vois-tu tout de suite ce qui est le plus apprécié ?",
+          "Comment lis-tu une valeur qui se trouve entre deux nombres de l’échelle ?"
+        ],
+        "tipps": [
+          "Faire d’abord « lire » le diagramme à voix haute : de quoi s’agit-il ? Qu’y a-t-il sur les axes ? Ensuite seulement, répondre aux questions.",
+          "Avec une graduation de 5 en 5, compter les lignes intermédiaires à voix haute : 20, 25, 30 …"
+        ],
+        "material": "Règle",
+        "loesungen": [
+          "1) a) 4 · b) 6 · c) football (9) · d) danse",
+          "2) tennis → lire un bâton · le plus apprécié → chercher le bâton le plus haut · interrogés → additionner tous les bâtons · de plus → soustraire deux bâtons",
+          "3) Pop 7, Rap 5, Rock 3, Électro 5 · a) rap et électro · b) 4 (7 – 3) · c) 20",
+          "4) vrai · faux (25) · vrai (30 = 2 · 15) · faux (125)",
+          "5) 10 + 5 + 3 = 18, 24 – 18 = 6 : bâton « voiture » jusqu’à 6",
+          "Ticket de sortie : le chien a été cité le plus souvent, il est le plus apprécié."
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m3-strichliste",
+    "bereich": "mathe",
+    "thema": "daten",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Statistik",
+      "Daten",
+      "Strichliste",
+      "Häufigkeit",
+      "Fünferbündel",
+      "Würfel",
+      "Modul 3"
+    ],
+    "bild": "icon:tallymarks",
+    "de": {
+      "titel": "Strich für Strich",
+      "untertitel": "Häufigkeit und Strichliste – Modul 3, Lektion 8",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:dice-5",
+              "text": "20-mal gewürfelt"
+            },
+            {
+              "bild": "icon:tallymarks",
+              "text": "Für jeden Wurf ein Strich"
+            },
+            {
+              "bild": "icon:help-circle",
+              "text": "Wie oft kam jede Zahl?"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Damit du dich nicht verzählst, führst du eine Strichliste: Jeder fünfte Strich geht quer über die vier davor. So siehst du die Fünferbündel sofort."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Die Regel",
+              "punkte": [
+                "Für jeden Fall ein Strich in die passende Zeile.",
+                "Den 5. Strich quer über die vier davor ziehen: ein Fünferbündel.",
+                "Die Häufigkeit ist die Anzahl der Striche: 1 Bündel und 2 Striche = 7.",
+                "Kontrolle: Alle Häufigkeiten zusammen ergeben die Anzahl aller Daten."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "strichliste",
+              "kopf": [
+                "Augenzahl",
+                "Strichliste",
+                "Häufigkeit"
+              ],
+              "zeilen": [
+                {
+                  "text": "1",
+                  "striche": 3,
+                  "anzahl": 3
+                },
+                {
+                  "text": "2",
+                  "striche": 5,
+                  "anzahl": 5
+                },
+                {
+                  "text": "3",
+                  "striche": 2,
+                  "anzahl": 2
+                },
+                {
+                  "text": "4",
+                  "striche": 4,
+                  "anzahl": 4
+                },
+                {
+                  "text": "5",
+                  "striche": 3,
+                  "anzahl": 3
+                },
+                {
+                  "text": "6",
+                  "striche": 3,
+                  "anzahl": 3
+                }
+              ],
+              "summe": 20
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "aufgabe",
+              "stufe": 1,
+              "text": "Wie groß ist die Häufigkeit?"
+            },
+            {
+              "art": "strichliste",
+              "kopf": [
+                "",
+                "Strichliste",
+                "Häufigkeit"
+              ],
+              "zeilen": [
+                {
+                  "text": "a)",
+                  "striche": 6
+                },
+                {
+                  "text": "b)",
+                  "striche": 10
+                },
+                {
+                  "text": "c)",
+                  "striche": 8
+                },
+                {
+                  "text": "d)",
+                  "striche": 13
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "stufe": 1,
+              "text": "Zeichne die Striche."
+            },
+            {
+              "art": "strichliste",
+              "kopf": [
+                "",
+                "Strichliste",
+                "Häufigkeit"
+              ],
+              "zeilen": [
+                {
+                  "text": "a)",
+                  "anzahl": 4
+                },
+                {
+                  "text": "b)",
+                  "anzahl": 7
+                },
+                {
+                  "text": "c)",
+                  "anzahl": 12
+                },
+                {
+                  "text": "d)",
+                  "anzahl": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Umfrage in der 5e: Wie kommst du zur Schule? Führe die Strichliste. Streich jede Antwort ab, die du gezählt hast."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "strichliste",
+              "kopf": [
+                "Schulweg",
+                "Strichliste",
+                "Häufigkeit"
+              ],
+              "daten": [
+                "Bus",
+                "zu Fuß",
+                "Bus",
+                "Auto",
+                "Bus",
+                "Fahrrad",
+                "zu Fuß",
+                "Bus",
+                "Bus",
+                "Auto",
+                "zu Fuß",
+                "Bus",
+                "Fahrrad",
+                "Auto",
+                "Bus",
+                "zu Fuß",
+                "Bus",
+                "Auto",
+                "zu Fuß",
+                "Bus",
+                "Fahrrad",
+                "Bus",
+                "zu Fuß",
+                "Auto"
+              ],
+              "zeilen": [
+                {
+                  "text": "Bus"
+                },
+                {
+                  "text": "zu Fuß"
+                },
+                {
+                  "text": "Fahrrad"
+                },
+                {
+                  "text": "Auto"
+                }
+              ],
+              "summe": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "stufe": 2,
+              "text": "Zeichne zu deiner Strichliste ein Balkendiagramm."
+            },
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Bus",
+                "zu Fuß",
+                "Fahrrad",
+                "Auto"
+              ],
+              "max": 12,
+              "schritt": 2,
+              "fein": 1,
+              "hoehe": 116,
+              "achsen": [
+                "Schulweg",
+                "Anzahl"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Eine neue App wurde mit 1 bis 5 Sternen bewertet. Lies die Strichliste und beantworte die Fragen."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "strichliste",
+              "kopf": [
+                "Bewertung",
+                "Strichliste",
+                "Häufigkeit"
+              ],
+              "zeilen": [
+                {
+                  "text": "1 Stern",
+                  "striche": 2
+                },
+                {
+                  "text": "2 Sterne",
+                  "striche": 6
+                },
+                {
+                  "text": "3 Sterne",
+                  "striche": 8
+                },
+                {
+                  "text": "4 Sterne",
+                  "striche": 3
+                },
+                {
+                  "text": "5 Sterne",
+                  "striche": 1
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "buchstaben": true,
+              "items": [
+                "Am häufigsten: ___ Sterne",
+                "Bewertet haben ___ Personen.",
+                "4 oder 5 Sterne gaben ___ Personen."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Rückwärts denken: Luca hat 30-mal gewürfelt. Eine Zeile fehlt. Ergänze die Häufigkeiten und die fehlende Zeile."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "strichliste",
+              "kopf": [
+                "Augenzahl",
+                "Strichliste",
+                "Häufigkeit"
+              ],
+              "zeilen": [
+                {
+                  "text": "1",
+                  "striche": 4
+                },
+                {
+                  "text": "2",
+                  "striche": 6
+                },
+                {
+                  "text": "3",
+                  "striche": 5
+                },
+                {
+                  "text": "4",
+                  "striche": 3
+                },
+                {
+                  "text": "5",
+                  "striche": 7
+                },
+                {
+                  "text": "6"
+                }
+              ],
+              "summe": 30
+            }
+          ],
+          "rechts": [
+            {
+              "art": "kaestchen",
+              "zeilen": 4
+            },
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "Die 6 kam ___-mal."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Kurz-Check: Wie sicher bist du?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich mache für jeden Fall einen Strich und bündle zu fünft.",
+            "Ich lese die Häufigkeit aus einer Strichliste ab.",
+            "Ich prüfe: Alle Häufigkeiten zusammen ergeben die Anzahl aller Daten."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen führen eine Strichliste mit Fünferbündeln, bestimmen daraus die Häufigkeiten, kontrollieren sie mit der Gesamtzahl und stellen sie als Balkendiagramm dar.",
+        "ablauf": [
+          "Einstieg (5 Min.): Zu zweit 20-mal würfeln. Frage: „Wie behaltet ihr den Überblick, wie oft jede Zahl kam?“",
+          "Regel (10 Min.): Würfe an der Tafel live als Strichliste mitschreiben, beim fünften Strich quer bündeln. Den Kasten „Die Regel“ lesen; die Summe der Häufigkeiten mit der Zahl der Würfe vergleichen.",
+          "Gemeinsam an der Tafel (5 Min.): Ein Bündel und 3 Striche – welche Häufigkeit? Häufigkeiten 6, 4 und 2 – wie viele Daten insgesamt?",
+          "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket: ein Fünferbündel und 4 Striche – welche Häufigkeit? Danach den Kurz-Check ausfüllen lassen."
+        ],
+        "hintergrund": "Die Strichliste ist das einfachste Werkzeug, um Daten zu erfassen: Jede Beobachtung wird sofort als Strich in ihre Kategorie eingetragen, die Daten müssen also nicht erst sortiert werden. Das Bündeln zu fünft macht das Auszählen sicher: Fünferbündel und kleine Reste erkennt man auf einen Blick, statt jeden Strich einzeln zu zählen. Die Anzahl der Striche einer Kategorie ist ihre (absolute) Häufigkeit; im Französischen heißt sie „effectif“, während „fréquence“ meist den Anteil an allen Daten meint. Die Summe aller Häufigkeiten muss die Zahl der Daten ergeben – das ist die wichtigste Kontrolle. Typische Fehler: fünf senkrechte Striche plus Querstrich (= 6), Daten doppelt oder gar nicht zählen (deshalb in der Urliste abstreichen) und Bündel als 4 zählen.",
+        "differenzierung": {
+          "leichter": "Mit echtem Würfel arbeiten und jeden Wurf sofort eintragen; in Aufgabe 3 die Urliste vor dem Zählen mit einer Farbe pro Schulweg markieren.",
+          "schwerer": "Aufgabe 6 und eine eigene Umfrage in der Klasse (z. B. Lieblingsfach) mit Strichliste und Diagramm auswerten."
+        },
+        "impulse": [
+          "Warum zieht man den fünften Strich quer und nicht einfach senkrecht?",
+          "Woran merkst du, dass du dich verzählt hast?"
+        ],
+        "tipps": [
+          "Wirklich würfeln lassen: Das Bündeln wird beim Tun begriffen.",
+          "In der Urliste jede gezählte Antwort abstreichen – so wird nichts doppelt gezählt."
+        ],
+        "material": "Würfel (einer pro Paar), Lineal",
+        "loesungen": [
+          "1) a) 6 · b) 10 · c) 8 · d) 13",
+          "2) a) 4 Striche · b) 1 Bündel und 2 · c) 2 Bündel und 2 · d) 3 Bündel",
+          "3) Bus 10 · zu Fuß 6 · Fahrrad 3 · Auto 5 · Gesamt 24",
+          "4) Balken bis 10, 6, 3 und 5",
+          "5) a) 3 Sterne (8-mal) · b) 20 · c) 4 (3 + 1)",
+          "6) Häufigkeiten 4, 6, 5, 3, 7 – zusammen 25; die 6 kam 30 – 25 = 5-mal (1 Bündel)",
+          "Exit-Ticket: 9"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "Trait par trait",
+      "untertitel": "Effectif et liste de comptage – module 3, leçon 8",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:dice-5",
+              "text": "20 lancers de dé"
+            },
+            {
+              "bild": "icon:tallymarks",
+              "text": "Un trait pour chaque lancer"
+            },
+            {
+              "bild": "icon:help-circle",
+              "text": "Combien de fois chaque nombre ?"
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Pour ne pas te tromper en comptant, tu tiens une liste de comptage : chaque cinquième trait barre les quatre précédents. Ainsi, tu vois tout de suite les paquets de 5."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "La règle",
+              "punkte": [
+                "Pour chaque cas, un trait dans la bonne ligne.",
+                "Le 5e trait barre les quatre précédents : un paquet de 5.",
+                "L’effectif est le nombre de traits : 1 paquet et 2 traits = 7.",
+                "Contrôle : la somme des effectifs donne le nombre total de données."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "strichliste",
+              "kopf": [
+                "Résultat",
+                "Liste de comptage",
+                "Effectif"
+              ],
+              "zeilen": [
+                {
+                  "text": "1",
+                  "striche": 3,
+                  "anzahl": 3
+                },
+                {
+                  "text": "2",
+                  "striche": 5,
+                  "anzahl": 5
+                },
+                {
+                  "text": "3",
+                  "striche": 2,
+                  "anzahl": 2
+                },
+                {
+                  "text": "4",
+                  "striche": 4,
+                  "anzahl": 4
+                },
+                {
+                  "text": "5",
+                  "striche": 3,
+                  "anzahl": 3
+                },
+                {
+                  "text": "6",
+                  "striche": 3,
+                  "anzahl": 3
+                }
+              ],
+              "summe": 20
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "aufgabe",
+              "stufe": 1,
+              "text": "Quel est l’effectif ?"
+            },
+            {
+              "art": "strichliste",
+              "kopf": [
+                "",
+                "Liste de comptage",
+                "Effectif"
+              ],
+              "zeilen": [
+                {
+                  "text": "a)",
+                  "striche": 6
+                },
+                {
+                  "text": "b)",
+                  "striche": 10
+                },
+                {
+                  "text": "c)",
+                  "striche": 8
+                },
+                {
+                  "text": "d)",
+                  "striche": 13
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "stufe": 1,
+              "text": "Dessine les traits."
+            },
+            {
+              "art": "strichliste",
+              "kopf": [
+                "",
+                "Liste de comptage",
+                "Effectif"
+              ],
+              "zeilen": [
+                {
+                  "text": "a)",
+                  "anzahl": 4
+                },
+                {
+                  "text": "b)",
+                  "anzahl": 7
+                },
+                {
+                  "text": "c)",
+                  "anzahl": 12
+                },
+                {
+                  "text": "d)",
+                  "anzahl": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Sondage en 5e : comment viens-tu à l’école ? Tiens la liste de comptage. Barre chaque réponse que tu as comptée."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "strichliste",
+              "kopf": [
+                "Trajet",
+                "Liste de comptage",
+                "Effectif"
+              ],
+              "daten": [
+                "Bus",
+                "À pied",
+                "Bus",
+                "Voiture",
+                "Bus",
+                "Vélo",
+                "À pied",
+                "Bus",
+                "Bus",
+                "Voiture",
+                "À pied",
+                "Bus",
+                "Vélo",
+                "Voiture",
+                "Bus",
+                "À pied",
+                "Bus",
+                "Voiture",
+                "À pied",
+                "Bus",
+                "Vélo",
+                "Bus",
+                "À pied",
+                "Voiture"
+              ],
+              "zeilen": [
+                {
+                  "text": "Bus"
+                },
+                {
+                  "text": "À pied"
+                },
+                {
+                  "text": "Vélo"
+                },
+                {
+                  "text": "Voiture"
+                }
+              ],
+              "summe": true
+            }
+          ],
+          "rechts": [
+            {
+              "art": "aufgabe",
+              "stufe": 2,
+              "text": "Dessine le diagramme en bâtons de ta liste de comptage."
+            },
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Bus",
+                "À pied",
+                "Vélo",
+                "Voiture"
+              ],
+              "max": 12,
+              "schritt": 2,
+              "fein": 1,
+              "hoehe": 116,
+              "achsen": [
+                "Trajet",
+                "Effectif"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Une nouvelle appli a été notée de 1 à 5 étoiles. Lis la liste de comptage et réponds aux questions."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "strichliste",
+              "kopf": [
+                "Note",
+                "Liste de comptage",
+                "Effectif"
+              ],
+              "zeilen": [
+                {
+                  "text": "1 étoile",
+                  "striche": 2
+                },
+                {
+                  "text": "2 étoiles",
+                  "striche": 6
+                },
+                {
+                  "text": "3 étoiles",
+                  "striche": 8
+                },
+                {
+                  "text": "4 étoiles",
+                  "striche": 3
+                },
+                {
+                  "text": "5 étoiles",
+                  "striche": 1
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "buchstaben": true,
+              "items": [
+                "La plus fréquente : ___ étoiles",
+                "Nombre de personnes : ___",
+                "4 ou 5 étoiles : ___ personnes"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Raisonne à l’envers : Luca a lancé le dé 30 fois. Une ligne manque. Complète les effectifs et la ligne qui manque."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "strichliste",
+              "kopf": [
+                "Résultat",
+                "Liste de comptage",
+                "Effectif"
+              ],
+              "zeilen": [
+                {
+                  "text": "1",
+                  "striche": 4
+                },
+                {
+                  "text": "2",
+                  "striche": 6
+                },
+                {
+                  "text": "3",
+                  "striche": 5
+                },
+                {
+                  "text": "4",
+                  "striche": 3
+                },
+                {
+                  "text": "5",
+                  "striche": 7
+                },
+                {
+                  "text": "6"
+                }
+              ],
+              "summe": 30
+            }
+          ],
+          "rechts": [
+            {
+              "art": "kaestchen",
+              "zeilen": 4
+            },
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "Le 6 est sorti ___ fois."
+              ]
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Je fais un trait pour chaque cas et je regroupe par paquets de 5.",
+            "Je lis l’effectif dans une liste de comptage.",
+            "Je vérifie : la somme des effectifs donne le nombre total de données."
+          ],
+          "optionen": [
+            "sûr·e",
+            "à peu près",
+            "pas encore"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes tiennent une liste de comptage par paquets de 5, en déduisent les effectifs, les contrôlent avec l’effectif total et les représentent par un diagramme en bâtons.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lancer le dé 20 fois à deux. Question : « Comment savoir combien de fois chaque nombre est sorti ? »",
+          "Règle (10 min) : noter les lancers en direct au tableau dans une liste de comptage, barrer au cinquième trait. Lire l’encadré « La règle » ; comparer la somme des effectifs avec le nombre de lancers.",
+          "Ensemble au tableau (5 min) : un paquet et 3 traits – quel effectif ? Effectifs 6, 4 et 2 – combien de données en tout ?",
+          "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
+          "Clôture (5 min) : ticket de sortie : un paquet de 5 et 4 traits – quel effectif ? Puis le petit bilan."
+        ],
+        "hintergrund": "La liste de comptage est l’outil le plus simple pour relever des données : chaque observation est notée tout de suite par un trait dans sa catégorie, sans devoir trier les données au préalable. Le regroupement par 5 rend le dénombrement sûr : on reconnaît d’un coup d’œil les paquets de 5 et les petits restes, au lieu de compter chaque trait. Le nombre de traits d’une catégorie est son effectif ; en français, la « fréquence » désigne en général la part de cet effectif dans l’ensemble des données. La somme de tous les effectifs doit donner le nombre de données – c’est le contrôle le plus important. Erreurs typiques : cinq traits verticaux plus un trait en travers (= 6), compter une donnée deux fois ou l’oublier (d’où l’intérêt de barrer dans la liste) et compter un paquet comme 4.",
+        "differenzierung": {
+          "leichter": "Travailler avec un vrai dé et noter chaque lancer tout de suite ; dans l’exercice 3, surligner la liste avant de compter, une couleur par trajet.",
+          "schwerer": "Exercice 6 et exploiter un sondage de la classe (p. ex. la matière préférée) avec une liste de comptage et un diagramme."
+        },
+        "impulse": [
+          "Pourquoi trace-t-on le cinquième trait en travers et pas simplement à la verticale ?",
+          "À quoi remarques-tu que tu t’es trompé·e en comptant ?"
+        ],
+        "tipps": [
+          "Faire vraiment lancer le dé : le regroupement par 5 se comprend en le faisant.",
+          "Barrer dans la liste chaque réponse comptée – ainsi, rien n’est compté deux fois."
+        ],
+        "material": "Dés (un par binôme), règle",
+        "loesungen": [
+          "1) a) 6 · b) 10 · c) 8 · d) 13",
+          "2) a) 4 traits · b) 1 paquet et 2 · c) 2 paquets et 2 · d) 3 paquets",
+          "3) Bus 10 · À pied 6 · Vélo 3 · Voiture 5 · Total 24",
+          "4) Bâtons jusqu’à 10, 6, 3 et 5",
+          "5) a) 3 étoiles (8 fois) · b) 20 · c) 4 (3 + 1)",
+          "6) Effectifs 4, 6, 5, 3, 7 – en tout 25 ; le 6 est sorti 30 – 25 = 5 fois (1 paquet)",
+          "Ticket de sortie : 9"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mathe-m3-mittelwert",
+    "bereich": "mathe",
+    "thema": "daten",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "klasse"
+    ],
+    "dauer": "45–60 Min.",
+    "eldib": [],
+    "schlagworte": [
+      "Statistik",
+      "Mittelwert",
+      "Durchschnitt",
+      "Summe",
+      "Anzahl",
+      "Modul 3"
+    ],
+    "bild": "icon:math-avg",
+    "de": {
+      "titel": "Im Durchschnitt",
+      "untertitel": "Der Mittelwert (Durchschnitt) – Modul 3, Lektion 9",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:coin-euro",
+              "text": "Flohmarkt: Noah 4 €, Inês 6 €, Ben 8 €"
+            },
+            {
+              "bild": "icon:users",
+              "text": "Sie teilen gerecht."
+            },
+            {
+              "bild": "icon:scale",
+              "text": "Jeder bekommt 6 €."
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Ben gibt Noah 2 €, dann haben alle gleich viel. Diese ausgeglichene Zahl heißt Mittelwert oder Durchschnitt: (4 + 6 + 8) : 3 = 18 : 3 = 6."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "Die Regel",
+              "punkte": [
+                "Alle Werte addieren: die Summe.",
+                "Zählen, wie viele Werte es sind: die Anzahl.",
+                "Mittelwert = Summe : Anzahl.",
+                "Kontrolle: Der Mittelwert liegt zwischen dem kleinsten und dem größten Wert."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Noah",
+                "Inês",
+                "Ben"
+              ],
+              "werte": [
+                4,
+                6,
+                8
+              ],
+              "max": 10,
+              "schritt": 2,
+              "fein": 1,
+              "einheiten": true,
+              "hoehe": 100,
+              "achsen": [
+                "",
+                "Euro"
+              ],
+              "linie": {
+                "wert": 6,
+                "text": "Mittelwert: 6 €"
+              }
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Berechne den Mittelwert wie im Beispiel."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Werte",
+            "Summe",
+            "Anzahl",
+            "Mittelwert"
+          ],
+          "breiten": [
+            2,
+            1.3,
+            1.3,
+            2
+          ],
+          "zeilen": 0,
+          "beispiel": [
+            "4, 6, 8",
+            "18",
+            "3",
+            "18 : 3 = 6"
+          ],
+          "werte": [
+            [
+              "3 und 7",
+              "",
+              "",
+              ""
+            ],
+            [
+              "2, 4 und 6",
+              "",
+              "",
+              ""
+            ],
+            [
+              "5, 5 und 5",
+              "",
+              "",
+              ""
+            ],
+            [
+              "10 und 20",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Yusuf übt Freiwürfe. Gleiche die Säulen aus: Wie viele Treffer sind es im Durchschnitt pro Tag? Zeichne die Linie ein und rechne nach."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Mo",
+                "Di",
+                "Mi",
+                "Do"
+              ],
+              "werte": [
+                3,
+                7,
+                5,
+                1
+              ],
+              "max": 8,
+              "schritt": 2,
+              "fein": 1,
+              "einheiten": true,
+              "hoehe": 96,
+              "achsen": [
+                "",
+                "Treffer"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "Summe: 3 + 7 + 5 + 1 = ___",
+                "Anzahl: ___ Tage",
+                "Mittelwert: ___ : ___ = ___"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Rechne mit Summe und Anzahl."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "buchstaben": true,
+          "items": [
+            "4, 8, 6, 2 → Mittelwert ___",
+            "7, 9, 11, 13 → Mittelwert ___",
+            "12, 15, 18 → Mittelwert ___",
+            "20, 30, 40, 50, 60 → Mittelwert ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Durchschnitt im Alltag: Rechne in den Kästchen."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "buchstaben": true,
+          "items": [
+            "Punkte in vier Tests: 12, 15, 11 und 14. Durchschnitt: ___ Punkte",
+            "Bildschirmzeit: 90, 60, 75, 45 und 80 Minuten. Im Schnitt: ___ Minuten pro Tag",
+            "Temperatur um 12 Uhr: 14 °C, 17 °C, 15 °C und 18 °C. Mittelwert: ___ °C"
+          ]
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Fehler finden: Stimmt das? Kreuze an und korrigiere."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Rechnung",
+            "stimmt",
+            "stimmt nicht",
+            "richtig wäre"
+          ],
+          "breiten": [
+            3.6,
+            1.1,
+            1.4,
+            1.9
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "Mittelwert von 4, 6 und 8 = 18 : 2 = 9",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Mittelwert von 10 und 20 = 30 : 2 = 15",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Mittelwert von 5, 7 und 9 = 12",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Mittelwert von 2, 3 und 10 = 15 : 3 = 5",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Weiterdenken."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "buchstaben": true,
+          "items": [
+            "Ein Team schießt in vier Spielen 2, 0, 3 und 1 Tore. Im Schnitt: ___ Tore pro Spiel",
+            "Der Mittelwert von 6 und einer zweiten Zahl ist 10. Die zweite Zahl ist ___.",
+            "Nach vier Tests willst du im Schnitt 13 Punkte. Bisher: 12, 15 und 11. Im vierten Test brauchst du ___ Punkte."
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Kurz-Check: Wie sicher bist du?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "Ich addiere alle Werte und zähle, wie viele es sind.",
+            "Ich teile die Summe durch die Anzahl.",
+            "Ich prüfe: Der Mittelwert liegt zwischen dem kleinsten und dem größten Wert."
+          ],
+          "optionen": [
+            "sicher",
+            "geht so",
+            "noch nicht"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen den Mittelwert als gerechtes Ausgleichen, berechnen ihn als Summe geteilt durch die Anzahl und prüfen das Ergebnis: Es liegt zwischen dem kleinsten und dem größten Wert.",
+        "ablauf": [
+          "Einstieg (5 Min.): Drei Türme aus Plättchen (4, 6 und 8) legen: „Wie werden die Türme gleich hoch, ohne dass ein Plättchen wegkommt?“",
+          "Regel (10 Min.): Umschichten zeigen (2 Plättchen vom Achterturm zum Viererturm), dann rechnen: (4 + 6 + 8) : 3 = 6. Den Kasten „Die Regel“ gemeinsam lesen.",
+          "Gemeinsam an der Tafel (5 Min.): Mittelwert von 2, 4 und 6; Mittelwert von 10 und 20 – jeweils zuerst schätzen, dann rechnen.",
+          "Einzelarbeit (20–25 Min.): Aufgaben 1 bis 5, Aufgabe 6 für alle, die fertig sind. Die Punkte an der Nummer zeigen die Stufe.",
+          "Abschluss (5 Min.): Exit-Ticket: Mittelwert von 2, 4 und 6? Danach den Kurz-Check ausfüllen lassen."
+        ],
+        "hintergrund": "Der (arithmetische) Mittelwert ist die Summe aller Werte geteilt durch ihre Anzahl. Anschaulich ist er der Wert, den jeder hätte, wenn man alles gleichmäßig verteilt: Was über dem Mittelwert liegt, füllt genau auf, was darunter fehlt. Daraus folgt die Kontrolle: Der Mittelwert liegt immer zwischen dem kleinsten und dem größten Wert. Er muss selbst kein Wert der Liste und keine ganze Zahl sein (1,5 Tore pro Spiel). Typische Fehler: durch die falsche Anzahl teilen (vor allem, wenn ein Wert 0 ist oder doppelt vorkommt), nur addieren oder einfach den mittleren Wert der Liste nehmen. Rückwärtsaufgaben nutzen die Umkehrung: Summe = Mittelwert · Anzahl. Ein einzelner sehr großer oder sehr kleiner Wert verschiebt den Mittelwert stark – ein guter Anlass für ein Gespräch über Durchschnittsangaben.",
+        "differenzierung": {
+          "leichter": "Mit Plättchen oder Würfeln Türme bauen und ausgleichen, erst dann rechnen; in Aufgabe 2 die Kästchen in den Säulen abzählen und umfärben.",
+          "schwerer": "Aufgabe 6 und eine Woche lang die Temperatur um 12 Uhr notieren und den Durchschnitt berechnen."
+        },
+        "impulse": [
+          "Warum kann der Mittelwert nicht größer sein als der größte Wert?",
+          "Was ändert sich am Mittelwert, wenn ein Wert 0 ist?"
+        ],
+        "tipps": [
+          "Erst schätzen lassen: „Ungefähr wie viel?“ – das macht grobe Fehler sichtbar.",
+          "Die Anzahl der Werte vor dem Rechnen zählen und notieren, auch Nullen."
+        ],
+        "material": "Plättchen, Muggelsteine oder Würfel",
+        "loesungen": [
+          "1) 10 : 2 = 5 · 12 : 3 = 4 · 15 : 3 = 5 · 30 : 2 = 15",
+          "2) 3 + 7 + 5 + 1 = 16, 16 : 4 = 4 Treffer; Linie bei 4",
+          "3) a) 5 · b) 10 · c) 15 · d) 40",
+          "4) a) 52 : 4 = 13 Punkte · b) 350 : 5 = 70 Minuten · c) 64 : 4 = 16 °C",
+          "5) stimmt nicht (18 : 3 = 6) · stimmt · stimmt nicht (7) · stimmt",
+          "6) a) 6 : 4 = 1,5 Tore · b) 14 (Summe 20) · c) 4 · 13 = 52, 52 – 38 = 14 Punkte",
+          "Exit-Ticket: 4"
+        ]
+      }
+    },
+    "fr": {
+      "titel": "En moyenne",
+      "untertitel": "La moyenne – module 3, leçon 9",
+      "bausteine": [
+        {
+          "art": "bilder",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:coin-euro",
+              "text": "Brocante : Noah 4 €, Inês 6 €, Ben 8 €"
+            },
+            {
+              "bild": "icon:users",
+              "text": "Ils partagent équitablement."
+            },
+            {
+              "bild": "icon:scale",
+              "text": "Chacun reçoit 6 €."
+            }
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Ben donne 2 € à Noah : tous ont alors la même somme. Ce nombre équilibré s’appelle la moyenne : (4 + 6 + 8) : 3 = 18 : 3 = 6."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "info",
+              "symbol": "merke",
+              "titel": "La règle",
+              "punkte": [
+                "Additionner toutes les valeurs : la somme.",
+                "Compter combien il y a de valeurs : le nombre de valeurs.",
+                "Moyenne = somme : nombre de valeurs.",
+                "Contrôle : la moyenne se situe entre la plus petite et la plus grande valeur."
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Noah",
+                "Inês",
+                "Ben"
+              ],
+              "werte": [
+                4,
+                6,
+                8
+              ],
+              "max": 10,
+              "schritt": 2,
+              "fein": 1,
+              "einheiten": true,
+              "hoehe": 100,
+              "achsen": [
+                "",
+                "Euros"
+              ],
+              "linie": {
+                "wert": 6,
+                "text": "Moyenne : 6 €"
+              }
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Calcule la moyenne comme dans l’exemple."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Valeurs",
+            "Somme",
+            "Nombre de valeurs",
+            "Moyenne"
+          ],
+          "breiten": [
+            2,
+            1.3,
+            1.3,
+            2
+          ],
+          "zeilen": 0,
+          "beispiel": [
+            "4, 6, 8",
+            "18",
+            "3",
+            "18 : 3 = 6"
+          ],
+          "werte": [
+            [
+              "3 et 7",
+              "",
+              "",
+              ""
+            ],
+            [
+              "2, 4 et 6",
+              "",
+              "",
+              ""
+            ],
+            [
+              "5, 5 et 5",
+              "",
+              "",
+              ""
+            ],
+            [
+              "10 et 20",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 1,
+          "text": "Yusuf s’entraîne aux lancers francs. Égalise les colonnes : combien de paniers en moyenne par jour ? Trace la ligne et vérifie par le calcul."
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [
+            {
+              "art": "diagramm",
+              "kategorien": [
+                "Lu",
+                "Ma",
+                "Me",
+                "Je"
+              ],
+              "werte": [
+                3,
+                7,
+                5,
+                1
+              ],
+              "max": 8,
+              "schritt": 2,
+              "fein": 1,
+              "einheiten": true,
+              "hoehe": 96,
+              "achsen": [
+                "",
+                "Paniers"
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "paeckchen",
+              "spalten": 1,
+              "items": [
+                "Somme : 3 + 7 + 5 + 1 = ___",
+                "Nombre : ___ jours",
+                "Moyenne : ___ : ___ = ___"
+              ]
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Calcule avec la somme et le nombre de valeurs."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 2,
+          "buchstaben": true,
+          "items": [
+            "4, 8, 6, 2 → moyenne ___",
+            "7, 9, 11, 13 → moyenne ___",
+            "12, 15, 18 → moyenne ___",
+            "20, 30, 40, 50, 60 → moyenne ___"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "La moyenne au quotidien : calcule dans les cases."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "buchstaben": true,
+          "items": [
+            "Résultats de quatre tests : 12, 15, 11 et 14 points. Moyenne : ___ points",
+            "Temps d’écran : 90, 60, 75, 45 et 80 minutes. En moyenne : ___ minutes par jour",
+            "Température à midi : 14 °C, 17 °C, 15 °C et 18 °C. Moyenne : ___ °C"
+          ]
+        },
+        {
+          "art": "kaestchen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 2,
+          "text": "Trouve l’erreur : est-ce juste ? Coche et corrige."
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Calcul",
+            "vrai",
+            "faux",
+            "correct serait"
+          ],
+          "breiten": [
+            3.6,
+            1.1,
+            1.4,
+            1.9
+          ],
+          "zeilen": 0,
+          "werte": [
+            [
+              "Moyenne de 4, 6 et 8 = 18 : 2 = 9",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Moyenne de 10 et 20 = 30 : 2 = 15",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Moyenne de 5, 7 et 9 = 12",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Moyenne de 2, 3 et 10 = 15 : 3 = 5",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "stufe": 3,
+          "text": "Va plus loin."
+        },
+        {
+          "art": "paeckchen",
+          "spalten": 1,
+          "buchstaben": true,
+          "items": [
+            "Une équipe marque 2, 0, 3 et 1 buts en quatre matchs. En moyenne : ___ buts par match",
+            "La moyenne de 6 et d’un deuxième nombre est 10. Le deuxième nombre est ___.",
+            "Après quatre tests, tu veux 13 points de moyenne. Jusqu’ici : 12, 15 et 11. Au quatrième test, il te faut ___ points."
+          ]
+        },
+        {
+          "art": "text",
+          "text": "Petit bilan : à quel point es-tu sûr·e de toi ?",
+          "klein": true
+        },
+        {
+          "art": "einschaetzung",
+          "items": [
+            "J’additionne toutes les valeurs et je compte combien il y en a.",
+            "Je divise la somme par le nombre de valeurs.",
+            "Je vérifie : la moyenne se situe entre la plus petite et la plus grande valeur."
+          ],
+          "optionen": [
+            "sûr·e",
+            "à peu près",
+            "pas encore"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent la moyenne comme un partage équitable, la calculent en divisant la somme par le nombre de valeurs et vérifient le résultat : il se situe entre la plus petite et la plus grande valeur.",
+        "ablauf": [
+          "Entrée en matière (5 min) : poser trois tours de jetons (4, 6 et 8) : « Comment rendre les tours égales sans enlever de jeton ? »",
+          "Règle (10 min) : montrer le transfert (2 jetons de la tour de 8 vers la tour de 4), puis calculer : (4 + 6 + 8) : 3 = 6. Lire ensemble l’encadré « La règle ».",
+          "Ensemble au tableau (5 min) : moyenne de 2, 4 et 6 ; moyenne de 10 et 20 – d’abord estimer, puis calculer.",
+          "Travail individuel (20–25 min) : exercices 1 à 5, l’exercice 6 pour ceux qui ont fini. Les points indiquent le niveau.",
+          "Clôture (5 min) : ticket de sortie : moyenne de 2, 4 et 6 ? Puis le petit bilan."
+        ],
+        "hintergrund": "La moyenne (arithmétique) est la somme de toutes les valeurs divisée par leur nombre. Concrètement, c’est la valeur que chacun aurait si l’on partageait tout de manière égale : ce qui dépasse la moyenne comble exactement ce qui manque en dessous. D’où le contrôle : la moyenne se situe toujours entre la plus petite et la plus grande valeur. Elle n’est pas forcément une valeur de la liste ni un nombre entier (1,5 but par match). Erreurs typiques : diviser par un mauvais nombre de valeurs (surtout quand une valeur vaut 0 ou apparaît deux fois), seulement additionner, ou prendre simplement la valeur du milieu de la liste. Les exercices à l’envers utilisent la relation inverse : somme = moyenne · nombre de valeurs. Une seule valeur très grande ou très petite déplace fortement la moyenne – une bonne occasion de discuter des moyennes annoncées.",
+        "differenzierung": {
+          "leichter": "Construire des tours avec des jetons ou des dés et les égaliser avant de calculer ; dans l’exercice 2, compter les cases dans les colonnes et les colorier autrement.",
+          "schwerer": "Exercice 6 et relever pendant une semaine la température à midi, puis calculer la moyenne."
+        },
+        "impulse": [
+          "Pourquoi la moyenne ne peut-elle pas être plus grande que la plus grande valeur ?",
+          "Que devient la moyenne quand une valeur vaut 0 ?"
+        ],
+        "tipps": [
+          "Faire d’abord estimer : « À peu près combien ? » – cela révèle les grosses erreurs.",
+          "Compter et noter le nombre de valeurs avant de calculer, zéros compris."
+        ],
+        "material": "Jetons, billes ou dés",
+        "loesungen": [
+          "1) 10 : 2 = 5 · 12 : 3 = 4 · 15 : 3 = 5 · 30 : 2 = 15",
+          "2) 3 + 7 + 5 + 1 = 16, 16 : 4 = 4 paniers ; ligne à 4",
+          "3) a) 5 · b) 10 · c) 15 · d) 40",
+          "4) a) 52 : 4 = 13 points · b) 350 : 5 = 70 minutes · c) 64 : 4 = 16 °C",
+          "5) faux (18 : 3 = 6) · vrai · faux (7) · vrai",
+          "6) a) 6 : 4 = 1,5 but · b) 14 (somme 20) · c) 4 · 13 = 52, 52 – 38 = 14 points",
+          "Ticket de sortie : 4"
+        ]
+      }
+    }
+  }
+]

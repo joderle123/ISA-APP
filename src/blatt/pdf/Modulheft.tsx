@@ -253,6 +253,105 @@ function Deko({ p }: { p: Palette }) {
   )
 }
 
+function DekoText2() {
+  return (
+    <>
+          <View style={{ position: 'absolute', left: 519, top: 306 }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 17, color: '#FFFFFF' }}>0,45</Text>
+          </View>
+          <View style={{ position: 'absolute', left: 460, top: 350, alignItems: 'center' }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 14, color: WARM, lineHeight: 1 }}>3</Text>
+            <View style={{ width: 14, height: 1.6, backgroundColor: WARM, marginVertical: 2 }} />
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 14, color: WARM, lineHeight: 1 }}>4</Text>
+          </View>
+          <View style={{ position: 'absolute', left: 418, top: 100 }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 12, color: '#FFFFFF' }}>A</Text>
+          </View>
+          <View style={{ position: 'absolute', left: 548, top: 46 }}>
+            <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 12, color: '#FFFFFF' }}>B</Text>
+          </View>
+    </>
+  )
+}
+
+const ROT = '#E8735A'
+
+/** Modul 3: Balkendiagramm mit Mittelwert, Thermometer, Flächen-Karo und Runden am Zahlenstrahl */
+function Deko3({ p }: { p: Palette }) {
+  const basis = 262
+  const balken = [72, 114, 54, 96]
+  const mittel = balken.reduce((a, b) => a + b, 0) / balken.length
+  const k = 16
+  const fx = 380
+  const fy = 300
+  const nx0 = 392
+  const nx1 = 552
+  const ny = 424
+  const px = nx0 + 0.7 * (nx1 - nx0)
+  return (
+    <Svg width={SEITE_B} height={470} style={{ position: 'absolute', left: 0, top: 0 }}>
+      {Array.from({ length: 28 }, (_, i) => (
+        <Line key={'x' + i} x1={i * 22} y1={0} x2={i * 22} y2={470} stroke="#FFFFFF" strokeWidth={0.5} strokeOpacity={0.07} />
+      ))}
+      {Array.from({ length: 22 }, (_, i) => (
+        <Line key={'y' + i} x1={0} y1={i * 22} x2={SEITE_B} y2={i * 22} stroke="#FFFFFF" strokeWidth={0.5} strokeOpacity={0.07} />
+      ))}
+      {/* Balkendiagramm */}
+      <Line x1={376} y1={basis} x2={512} y2={basis} stroke="#FFFFFF" strokeWidth={1.8} strokeLinecap="round" />
+      <Line x1={376} y1={basis} x2={376} y2={120} stroke="#FFFFFF" strokeWidth={1.8} strokeLinecap="round" />
+      {[30, 60, 90, 120].map((h) => (
+        <Line key={'g' + h} x1={376} y1={basis - h} x2={512} y2={basis - h} stroke="#FFFFFF" strokeWidth={0.6} strokeOpacity={0.25} />
+      ))}
+      {balken.map((h, i) => (
+        <Rect key={'b' + i} x={386 + i * 31} y={basis - h} width={21} height={h} fill={i === 1 ? WARM : p.mittel} stroke="#FFFFFF" strokeWidth={1.2} />
+      ))}
+      <Line x1={378} y1={basis - mittel} x2={512} y2={basis - mittel} stroke={WARM} strokeWidth={2} strokeDasharray="5 4" />
+      {/* Thermometer */}
+      <Rect x={537} y={62} width={16} height={186} rx={8} fill="#FFFFFF" fillOpacity={0.12} stroke="#FFFFFF" strokeWidth={1.6} />
+      <Rect x={541} y={176} width={8} height={78} fill={ROT} />
+      <Path d={`M545 248 m-14 0 a14 14 0 1 0 28 0 a14 14 0 1 0 -28 0`} fill={ROT} stroke="#FFFFFF" strokeWidth={1.6} />
+      {Array.from({ length: 8 }, (_, i) => (
+        <Line key={'t' + i} x1={529} y1={80 + i * 20} x2={i % 2 ? 534 : 536} y2={80 + i * 20} stroke="#FFFFFF" strokeWidth={1} strokeOpacity={0.8} />
+      ))}
+      <Line x1={553} y1={160} x2={563} y2={160} stroke="#FFFFFF" strokeWidth={1.8} />
+      {/* Fläche 6 × 4 */}
+      <Rect x={fx} y={fy} width={6 * k} height={4 * k} fill={p.mittel} />
+      {Array.from({ length: 5 }, (_, i) => (
+        <Line key={'fv' + i} x1={fx + (i + 1) * k} y1={fy} x2={fx + (i + 1) * k} y2={fy + 4 * k} stroke="#FFFFFF" strokeWidth={0.8} strokeOpacity={0.6} />
+      ))}
+      {Array.from({ length: 3 }, (_, i) => (
+        <Line key={'fh' + i} x1={fx} y1={fy + (i + 1) * k} x2={fx + 6 * k} y2={fy + (i + 1) * k} stroke="#FFFFFF" strokeWidth={0.8} strokeOpacity={0.6} />
+      ))}
+      <Rect x={fx} y={fy} width={6 * k} height={4 * k} fill="none" stroke="#FFFFFF" strokeWidth={1.6} />
+      {/* Zahlenstrahl: 4,7 → 5 */}
+      <Line x1={nx0 - 12} y1={ny} x2={nx1 + 16} y2={ny} stroke="#FFFFFF" strokeWidth={1.8} strokeLinecap="round" />
+      {Array.from({ length: 11 }, (_, i) => (
+        <Line key={'z' + i} x1={nx0 + (i * (nx1 - nx0)) / 10} y1={ny - (i % 5 ? 4 : 7)} x2={nx0 + (i * (nx1 - nx0)) / 10} y2={ny + (i % 5 ? 4 : 7)} stroke="#FFFFFF" strokeWidth={i % 5 ? 1 : 1.6} />
+      ))}
+      <Path d={`M${px} ${ny - 10} Q${(px + nx1) / 2} ${ny - 40} ${nx1 - 2} ${ny - 12}`} fill="none" stroke={WARM} strokeWidth={2} strokeLinecap="round" />
+      <Path d={`M${nx1 - 10} ${ny - 18} L${nx1 - 2} ${ny - 12} L${nx1 - 11} ${ny - 8}`} fill="none" stroke={WARM} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+      <Path d={`M${px} ${ny} m-4.5 0 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0`} fill={WARM} />
+    </Svg>
+  )
+}
+
+function DekoText3() {
+  const t = (x: number, y: number, s: string, farbe = '#FFFFFF', gr = 12) => (
+    <View style={{ position: 'absolute', left: x, top: y }}>
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: gr, color: farbe }}>{s}</Text>
+    </View>
+  )
+  return (
+    <>
+      {t(486, 323, '24 cm²', '#FFFFFF', 15)}
+      {t(566, 154, '0 °C', '#FFFFFF', 8)}
+      {t(386, 434, '4')}
+      {t(548, 434, '5')}
+      {t(494, 393, '4,7', WARM)}
+    </>
+  )
+}
+
 function Deckblatt({ modul, sprache, p, loesungen }: { modul: Modul; sprache: Sprache; p: Palette; loesungen: boolean }) {
   const t: Tx = TX[sprache]
   const band = loesungen ? '#1F2A44' : p.tief
@@ -266,7 +365,7 @@ function Deckblatt({ modul, sprache, p, loesungen }: { modul: Modul; sprache: Sp
   return (
     <Page size="A4" style={{ padding: 0 }}>
       <View style={{ height: 470, backgroundColor: band }}>
-        <Deko p={p} />
+        {modul.nr === 3 ? <Deko3 p={p} /> : <Deko p={p} />}
         <View style={{ position: 'absolute', left: 48, top: 56, width: 300 }}>
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.5, letterSpacing: 1.6, color: p.mittel }}>{`${modul.fach[sprache].toUpperCase()} · ${modul.klasse}`}</Text>
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 54, lineHeight: 1.05, color: '#FFFFFF', marginTop: 10, letterSpacing: -1 }}>{`${t.modul} ${modul.nr}`}</Text>
@@ -278,20 +377,7 @@ function Deckblatt({ modul, sprache, p, loesungen }: { modul: Modul; sprache: Sp
             </View>
           ) : null}
         </View>
-        <View style={{ position: 'absolute', left: 519, top: 306 }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 17, color: '#FFFFFF' }}>0,45</Text>
-        </View>
-        <View style={{ position: 'absolute', left: 460, top: 350, alignItems: 'center' }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 14, color: WARM, lineHeight: 1 }}>3</Text>
-          <View style={{ width: 14, height: 1.6, backgroundColor: WARM, marginVertical: 2 }} />
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 14, color: WARM, lineHeight: 1 }}>4</Text>
-        </View>
-        <View style={{ position: 'absolute', left: 418, top: 100 }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 12, color: '#FFFFFF' }}>A</Text>
-        </View>
-        <View style={{ position: 'absolute', left: 548, top: 46 }}>
-          <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 12, color: '#FFFFFF' }}>B</Text>
-        </View>
+        {modul.nr === 3 ? <DekoText3 /> : <DekoText2 />}
       </View>
 
       <View style={{ paddingHorizontal: 48, paddingTop: 24 }}>

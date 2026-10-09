@@ -15,7 +15,7 @@ import { MOTIV_NAMEN } from '../src/blatt/motive'
 import { QUELLEN_TEXTE } from '../src/blatt/quellen'
 import { eldibGoalById } from '../src/data/taxonomy'
 import { bereichAusDatei } from '../src/blatt/nummern'
-import { geoPunkte, kommaSprung, MM, stuecke, wert } from '../src/blatt/pdf/mathe'
+import { flaecheGroesse, geoPunkte, kommaSprung, MM, stuecke, temperaturSkala, wert } from '../src/blatt/pdf/mathe'
 import { SEITE } from '../src/blatt/pdf/stil'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
@@ -37,6 +37,8 @@ const ARTEN = new Set([
   'vulkan', 'eisberg', 'koerper', 'batterie', 'waage', 'leiter', 'zielscheibe', 'hand', 'mindmap', 'schritte', 'plan', 'tagesplan', 'atmen', 'comic',
   'karten', 'rueckblick', 'notfall', 'gefuehlsrad', 'glaeser', 'netz', 'kurve', 'tageskreis', 'farbkalender', 'rechnungen', 'kaestchen', 'bon',
   'paeckchen', 'stellentafel', 'hunderterfeld', 'zahlenstrahl', 'bruchbilder', 'treppe', 'kommasprung', 'geo',
+  'flaeche', 'temperatur',
+  'diagramm', 'strichliste',
 ])
 
 /** Mathe: Dezimalzahl mit Komma („12,5“) als Zahl – oder NaN */
@@ -226,6 +228,44 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
       case 'treppe':
         if (b.stufen.length < 2 || b.stufen.length > 5) melde('F', w, 'Treppe: 2–5 Stufen')
         break
+      case 'flaeche': {
+        if (!b.felder?.length || b.felder.length > 8) melde('F', w, 'Fläche: 1–8 Felder')
+        if (b.spalten && ![1, 2, 3, 4].includes(b.spalten)) melde('F', w, 'Fläche: 1–4 Spalten')
+        const sp = b.spalten ?? Math.min(4, b.felder?.length ?? 1)
+        const spalteMm = (breite - (sp - 1) * 10) / sp / MM
+        for (const f of b.felder ?? []) {
+          if (!(f.l >= 0 && f.b >= 0)) { melde('F', w, 'Fläche: Länge und Breite in cm angeben'); continue }
+          const leer = !f.l || !f.b
+          if (leer && !f.feld) melde('F', w, 'Fläche ohne Rechteck braucht ein Karo-Feld (feld)')
+          if (!leer && f.kaestchen !== false && (!Number.isInteger(f.l) || !Number.isInteger(f.b))) melde('F', w, `Fläche ${f.l} × ${f.b}: Kästchen nur bei ganzen Zentimetern (sonst kaestchen: false)`)
+          if (f.feld && (!f.feld.every(Number.isInteger) || f.feld[0] < f.l || f.feld[1] < f.b)) melde('F', w, 'Fläche: Karo-Feld in ganzen cm und nicht kleiner als das Rechteck')
+          if (f.feld && f.masse && !leer && (f.feld[0] - f.l < 2 || f.feld[1] - f.b < 2)) melde('F', w, 'Fläche: für die Maße mindestens 1 cm Karo um das Rechteck')
+          if ((f.gefaerbt ?? 0) > f.l * f.b) melde('F', w, 'Fläche: mehr Kästchen gefärbt als vorhanden')
+          const g = flaecheGroesse(f)
+          if (g.B > spalteMm + 0.01) melde('F', w, `Fläche: Feld ${g.B.toFixed(0)} mm breit, Platz ist nur ${spalteMm.toFixed(1)} mm`)
+          if (g.H > 200) melde('F', w, 'Fläche: Feld höchstens 20 cm hoch')
+        }
+        break
+      }
+      case 'temperatur': {
+        if (![b.von, b.bis].every(Number.isInteger) || b.bis <= b.von || b.bis - b.von > 60) { melde('F', w, 'Thermometer: von < bis in ganzen Grad, Spanne höchstens 60'); break }
+        if (!b.items?.length || b.items.length > 8) melde('F', w, 'Thermometer: 1–8 Stück')
+        const sp = b.spalten ?? Math.min(6, b.items?.length ?? 1)
+        const zelle = (breite - (sp - 1) * 10) / sp
+        const W = temperaturSkala(b).W
+        if (zelle < W) melde('F', w, `Thermometer: ${sp} Spalten zu eng (${zelle.toFixed(0)} pt Platz, ${W.toFixed(0)} pt nötig)`)
+        for (const x of b.items ?? []) {
+          for (const v of [x.wert, x.ziel]) if (v !== undefined && (!Number.isInteger(v) || v < b.von || v > b.bis)) melde('F', w, `Thermometer: ${v} °C liegt nicht auf der Skala (${b.von} bis ${b.bis})`)
+          if (x.pfeil && (x.wert === undefined || x.ziel === undefined)) melde('F', w, 'Thermometer: Pfeil braucht wert und ziel')
+          // Änderung unter dem Pfeil nachrechnen: Text endet mit „+8 °C“ bzw. „–9 °C“
+          const m = /([+–-])[  ]?(\d+)[  ]?°C\}?$/.exec(x.text ?? '')
+          if (x.pfeil && m && x.wert !== undefined && x.ziel !== undefined) {
+            const aenderung = (m[1] === '+' ? 1 : -1) * Number(m[2])
+            if (aenderung !== x.ziel - x.wert) melde('F', w, `Thermometer: von ${x.wert} °C nach ${x.ziel} °C ist ${x.ziel - x.wert}, nicht „${x.text}“`)
+          }
+        }
+        break
+      }
       case 'kommasprung':
         if (!b.items?.length || b.items.length > 9) melde('F', w, 'Kommasprung: 1–9 Aufgaben')
         for (const x of b.items ?? []) {
@@ -254,6 +294,60 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
             if (e.t === 'lineal' && (e.x0 - 4 < 0 || e.x0 + e.cm * 10 + 4 > B || e.y + 11 > f.h)) melde('F', w, 'Lineal ragt aus dem Feld')
             if (e.t === 'uhr' && (e.x - e.r < 0 || e.x + e.r > B || e.y - e.r < 0 || e.y + e.r > f.h)) melde('F', w, 'Uhr ragt aus dem Feld')
           }
+        }
+        break
+      }
+      case 'diagramm': {
+        const n = b.kategorien?.length ?? 0
+        if (n < 2 || n > 12) melde('F', w, 'Diagramm: 2–12 Kategorien')
+        const teilt = (a: number, d: number) => Math.abs(a / d - Math.round(a / d)) < 1e-6
+        if (!(b.max > 0) || !(b.schritt > 0) || !teilt(b.max, b.schritt) || b.max / b.schritt > 20) { melde('F', w, 'Diagramm: max > 0 und ein Vielfaches von schritt (höchstens 20 Schritte)'); break }
+        if (b.fein !== undefined && (!(b.fein > 0) || !teilt(b.schritt, b.fein) || b.max / b.fein > 60)) melde('F', w, 'Diagramm: fein muss den Schritt teilen (höchstens 60 Linien)')
+        if (b.werte && b.werte.length !== n) melde('F', w, `Diagramm: ${b.werte.length} Werte für ${n} Kategorien`)
+        for (const v of b.werte ?? []) {
+          if (v === null) continue
+          if (typeof v !== 'number' || !Number.isFinite(v) || v < 0 || v > b.max) melde('F', w, `Diagramm: Wert ${v} liegt nicht zwischen 0 und ${b.max}`)
+          else if (!teilt(v, b.fein ?? b.schritt)) melde('H', w, `Diagramm: Wert ${v} liegt nicht auf einer Gitterlinie – kaum genau abzulesen`)
+        }
+        if (b.linie && !(b.linie.wert >= 0 && b.linie.wert <= b.max)) melde('F', w, 'Diagramm: Linie außerhalb der Skala')
+        if (b.einheiten && (b.max > 30 || (b.werte ?? []).some((v) => v !== null && !Number.isInteger(v)))) melde('H', w, 'Diagramm: Kästchen (einheiten) nur bei ganzen Werten bis 30')
+        // Beschriftung: stehend höchstens zwei Zeilen unter der Säule, liegend links (ein Drittel der Breite)
+        const zeichen = (pt: number) => Math.floor(pt / (8.5 * 0.56))
+        const platz = b.liegend ? zeichen(breite * 0.34 - 12) : zeichen(Math.min(66, (breite - 40) / Math.max(1, n)) - 4)
+        for (const k of b.kategorien ?? []) {
+          const wortZuLang = k.split(/\s+/).some((x) => x.length > platz)
+          if (wortZuLang || k.length > (b.liegend ? platz : platz * 2)) melde('H', w, `Diagramm: „${k}“ ist als Beschriftung zu lang (Platz für etwa ${platz} Zeichen je Zeile)`)
+        }
+        for (const a of b.achsen ?? []) if (a.length > 30) melde('H', w, `Diagramm: Achsentitel „${a}“ zu lang (max. 30 Zeichen)`)
+        break
+      }
+      case 'strichliste': {
+        const z = b.zeilen ?? []
+        if (!z.length || z.length > 12) melde('F', w, 'Strichliste: 1–12 Zeilen')
+        if (b.kopf && b.kopf.length !== 3) melde('F', w, 'Strichliste: kopf mit genau 3 Spaltentiteln')
+        for (const x of z) {
+          for (const v of [x.striche, x.anzahl]) if (v !== undefined && (!Number.isInteger(v) || v < 0 || v > 40)) melde('F', w, `Strichliste: „${x.text}“ – Striche und Häufigkeit als ganze Zahl von 0 bis 40`)
+          if (x.striche !== undefined && x.anzahl !== undefined && x.striche !== x.anzahl) melde('F', w, `Strichliste: „${x.text}“ hat ${x.striche} Striche, aber die Häufigkeit ${x.anzahl}`)
+        }
+        const zahlen = z.map((x) => x.anzahl ?? x.striche)
+        if (typeof b.summe === 'number' && zahlen.every((v) => v !== undefined)) {
+          const s = zahlen.reduce((a: number, v) => a + (v ?? 0), 0)
+          if (s !== b.summe) melde('F', w, `Strichliste: Gesamt ${b.summe} stimmt nicht (Summe der Häufigkeiten: ${s})`)
+        }
+        if (b.daten?.length) {
+          // Urliste nachzählen, wenn die Zeilen die Werte der Daten tragen
+          const norm = (s: string) => s.trim().toLowerCase()
+          const zaehlung = new Map<string, number>()
+          for (const d of b.daten) zaehlung.set(norm(d), (zaehlung.get(norm(d)) ?? 0) + 1)
+          if (z.some((x) => zaehlung.has(norm(x.text)))) {
+            for (const d of zaehlung.keys()) if (!z.some((x) => norm(x.text) === d)) melde('H', w, `Strichliste: „${d}“ aus den Daten hat keine Zeile`)
+            for (const x of z) {
+              const soll = zaehlung.get(norm(x.text)) ?? 0
+              const ist = x.anzahl ?? x.striche
+              if (ist !== undefined && ist !== soll) melde('F', w, `Strichliste: „${x.text}“ kommt ${soll}-mal in den Daten vor, nicht ${ist}-mal`)
+            }
+          }
+          if (typeof b.summe === 'number' && b.summe !== b.daten.length) melde('F', w, `Strichliste: ${b.daten.length} Daten, Gesamt ist aber ${b.summe}`)
         }
         break
       }

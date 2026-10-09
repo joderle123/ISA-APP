@@ -17,20 +17,20 @@ abacus alarm alert-triangle alphabet-latin angle apple armchair arrow-big-right 
 award baby-bottle baby-carriage backpack ball-basketball ball-football balloon bandage basket bath battery battery-1
 battery-4 bed bell bike bolt bone book book-2 bookmark books bottle brain bread brush bubble bucket building-community
 bulb bus butterfly cactus cake calculator calendar calendar-event camera candle car carrot cash cat chalkboard
-chart-pie checkbox checklist chess circle-check clipboard-check clipboard-list clock cloud cloud-rain cloud-storm
+chart-bar chart-pie checkbox checklist chess circle-check clipboard-check clipboard-list clock cloud cloud-rain cloud-storm
 coffee coin coin-euro compass confetti cookie crown cup decimal device-desktop device-gamepad-2 device-laptop
 device-mobile device-mobile-message device-tv dice-5 dog door door-enter door-exit droplet ear ear-off eye eye-off
-feather fence file-text fish flag flame flower friends gas-station ghost gift glass-full hand-click hand-finger
+feather fence file-text fish flag flame flower fridge friends gas-station ghost gift glass-full hand-click hand-finger
 hand-grab hand-love-you hand-move hand-off hand-stop hand-three-fingers hand-two-fingers hanger headphones headset
-heart heart-broken heart-handshake hearts help-circle home horse hourglass ice-cream info-circle key ladder lamp leaf
-lifebuoy line list-check lock lock-open mail map map-pin mask masks-theater math math-greater math-symbols medal
+heart heart-broken heart-handshake hearts help-circle home horse hourglass ice-cream info-circle key ladder lamp layout-grid leaf
+lifebuoy line list-check lock lock-open mail map map-pin mask masks-theater math math-avg math-greater math-symbols medal
 message message-2 message-circle messages microphone microscope milk mood-angry mood-cry mood-happy mood-nervous
 mood-sad mood-smile mood-surprised moon moon-stars mountain mushroom music notebook notes package paint palette
 paper-bag paperclip paw pencil pencil-check pencil-plus phone photo piano pig pig-money pill pillow pizza plane plant
 player-pause player-play player-stop podium pool puzzle question-mark rainbow receipt road road-sign robot rocket
 route ruler ruler-2 ruler-measure run run-sprint salt scale school scissors search seedling send shield shield-check
-shirt shoe shopping-bag shopping-cart sign-left sign-right skateboarding snowflake snowman soup sparkles speakerphone
-spray square-check stairs stairs-up star stopwatch stretching sun sunrise sunset swimming table target temperature
+shirt shoe shopping-bag shopping-cart sign-left sign-right skateboarding snowflake snowman soccer-field soup sparkles speakerphone
+spray square-check stairs stairs-up star stopwatch stretching sun sunrise sunset swimming table tallymarks target temperature
 temperature-plus tent thumb-down thumb-up timeline tir toilet-paper tools tools-kitchen-2 traffic-lights trash tree
 trees trophy truck umbrella user user-heart users users-group volcano walk wall wallet wand weight wind world writing
 yoga zzz
