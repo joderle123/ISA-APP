@@ -143,6 +143,71 @@
         "achtung": "Wenn ein Kind in Konflikten regelmäßig handgreiflich wird oder die Kontrolle ganz verliert, reicht das Blatt allein nicht aus: Beobachtungen festhalten und mit der zuständigen Leitung (Responsable) das weitere Vorgehen besprechen.",
         "material": "Stifte; optional rote, gelbe und grüne Karten für das Rollenspiel"
       }
+    },
+    "fr": {
+      "titel": "Le feu dans la tête",
+      "untertitel": "Rouge : s’arrêter. Orange : réfléchir. Vert : agir.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "À la balançoire",
+          "text": "Emma attend depuis longtemps à la balançoire. Soudain, Diogo passe devant elle sans attendre. Le ventre d’Emma devient chaud. Elle voudrait le pousser. Mais elle pense à son feu dans la tête.",
+          "bild": "figur:lea:wuetend"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Aide Emma. Que peut-elle faire à l’orange et au vert ?",
+          "hinweis": "Le rouge est déjà rempli.",
+          "symbole": ["lesen", "schreiben"]
+        },
+        {
+          "art": "ampel",
+          "linien": 1,
+          "stufen": [
+            { "titel": "Rouge : s’arrêter", "text": "Emma reste immobile. Elle souffle longuement." },
+            { "titel": "Orange : réfléchir", "text": "Que pourrait faire Emma ?" },
+            { "titel": "Vert : agir", "text": "Quelle idée Emma essaie-t-elle ?" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Quand as-tu besoin de ton feu dans la tête ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": ["Quelqu’un passe devant moi.", "Je perds au jeu.", "Quelqu’un rit de moi.", "Je veux que ce soit mon tour."],
+          "frei": 2
+        },
+        { "art": "aufgabe", "text": "Jouez une situation à deux. Montrez le rouge, l’orange et le vert.", "symbole": ["partner", "sprechen"] }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants connaissent les trois étapes du feu (s’arrêter – réfléchir – agir), les appliquent à une situation du quotidien et reconnaissent leurs propres situations où le feu aide.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer un feu tricolore. Question : « Que se passe-t-il si tout le monde passe au rouge ? » Puis : « Il peut aussi y avoir un feu dans la tête. »",
+          "Lire l’histoire (5 min). Questions : « Que se passe-t-il si Emma pousse ? Que pourrait-elle faire à la place ? » Noter les idées au tableau.",
+          "Exercice 1 (10 min) : chaque enfant écrit une idée pour l’orange et choisit la meilleure pour le vert. Question de contrôle : « L’idée est-elle sûre et juste ? »",
+          "Exercice 2 (5 min) : cocher ses propres situations ; deux enfants racontent, s’ils le veulent.",
+          "Jeu de rôle (10 min) : jouer une situation à deux. Les autres montrent avec des cartes rouges, orange et vertes où en sont les acteurs."
+        ],
+        "hintergrund": "L’image du feu tricolore vient de programmes de soutien à la compétence socio-émotionnelle comme PATHS : le rouge signifie s’arrêter et se calmer, l’orange réfléchir aux possibilités, le vert essayer un plan (Greenberg et al., 1995). À l’école primaire, les enfants agissent souvent dans un conflit avant d’avoir réfléchi. Le feu glisse une courte pause entre le déclencheur et l’action. La phase orange est décisive : les enfants qui trouvent plusieurs solutions et évaluent leurs conséquences réagissent moins souvent par la violence (Shure, 1992). L’image n’aide que si on l’exerce souvent, dans des moments calmes.",
+        "quellen": [
+          "Greenberg, M. T., Kusché, C. A., Cook, E. T. & Quamma, J. P. (1995). Promoting emotional competence in school-aged children: The effects of the PATHS curriculum. Development and Psychopathology, 7(1), 117–136.",
+          "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press."
+        ],
+        "differenzierung": {
+          "leichter": "Proposer les idées en cartes images (dire quelque chose, chercher de l’aide, jouer ailleurs). L’enfant en choisit une et la dessine.",
+          "schwerer": "Trouver deux idées pour l’orange et se demander pour chacune : « Que se passe-t-il alors ? »"
+        },
+        "impulse": [
+          "À quoi remarques-tu que ton feu doit passer au rouge ?",
+          "Quelle idée pour l’orange t’a déjà aidé ?",
+          "Qui peut te rappeler ton feu ?"
+        ],
+        "tipps": [
+          "Afficher un grand feu dans la classe et le montrer au quotidien : « Où en est ton feu ? »",
+          "Nommer les réussites : « Tu t’es arrêté, tu as réfléchi, puis tu as demandé. »"
+        ],
+        "achtung": "Si un enfant en vient régulièrement aux mains ou perd tout contrôle, la fiche ne suffit pas : noter ses observations et discuter de la suite avec la direction compétente (responsable).",
+        "material": "Crayons ; en option, des cartes rouges, orange et vertes pour le jeu de rôle"
+      }
     }
   },
   {
@@ -254,6 +319,107 @@
         ],
         "achtung": "Wenn ein Kind trotz Übung häufig die Kontrolle verliert, sich oder andere verletzt oder sehr belastet wirkt: das Gespräch mit den Eltern suchen und die zuständige Leitung (Responsable) informieren.",
         "material": "Schere; Klebestreifen zum Befestigen der Karten"
+      }
+    },
+    "fr": {
+      "titel": "Stop – réfléchir – agir",
+      "untertitel": "Quand on est en colère ou très excité, on agit souvent trop vite. Trois courtes phrases dans la tête aident à bien décider.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Lis les trois étapes. Dis les phrases d’abord à voix haute, puis en chuchotant, puis seulement dans ta tête.",
+          "symbole": ["lesen", "sprechen"]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Stop", "text": "« Stop. Que se passe-t-il ? Comment je me sens ? »" },
+            { "titel": "Réfléchir", "text": "« Que puis-je faire ? Que se passera-t-il alors ? »" },
+            { "titel": "Agir", "text": "« J’essaie la meilleure idée. Est-ce que ça a marché ? »" }
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "La tour",
+          "text": "À la Maison Relais, Rafael construit une tour depuis une demi-heure. Pendant le jeu du chat, Mathis passe en courant et la heurte. La tour s’écroule avec fracas. Rafael bondit, son visage devient brûlant. Il serre les poings. Mathis dit vite : « Oh non, je ne l’ai pas fait exprès. »",
+          "bild": "figur:sami:wuetend"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Exprès ou par accident ?",
+          "text": "Tout ce qui te fâche n’arrive pas exprès. Demande-toi aussi, en réfléchissant : était-ce peut-être un accident ?"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment l’histoire continue-t-elle pour Rafael ? Écris ce qu’il peut se dire.",
+          "hinweis": "Il a déjà réussi l’étape Stop : « Stop. Ma tour est cassée. Je suis vraiment en colère. »",
+          "symbole": ["schreiben"]
+        },
+        { "art": "satzanfaenge", "linien": 2, "items": ["Réfléchir : « Je pourrais …", "« Si je fais ça, alors …", "Agir : « Je …"] },
+        {
+          "art": "aufgabe",
+          "text": "Pense à une situation que tu connais. Parcours les étapes.",
+          "hinweis": "Par exemple à la récré, à la cantine, dans le bus scolaire ou pendant les devoirs.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        {
+          "art": "schritte",
+          "linien": 1,
+          "items": [
+            { "titel": "Voilà ce qui s’est passé :", "text": "Exemple : Dans le bus scolaire, quelqu’un est assis sur ma place." },
+            { "titel": "Stop – voilà ce que je ressens :", "text": "Exemple : Je suis en colère et je veux le tirer de là." },
+            {
+              "titel": "Réfléchir – mes idées et ce qui se passe ensuite :",
+              "text": "Exemple : Le tirer, ça fait une dispute. Demander ou m’asseoir ailleurs, c’est mieux."
+            },
+            { "titel": "Agir – voilà ce que je fais :", "text": "Exemple : Je demande : « Tu peux te pousser, s’il te plaît ? »" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Découpe les trois cartes. Pose-les à ta place.", "symbole": ["schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 112,
+          "karten": [
+            { "titel": "Stop", "text": "Que se passe-t-il ?", "bild": "motiv:stopp" },
+            { "titel": "Réfléchir", "text": "Que puis-je faire ? Que se passe-t-il alors ?", "bild": "icon:bulb" },
+            { "titel": "Agir", "text": "J’essaie. Est-ce que ça a marché ?", "bild": "icon:player-play" }
+          ]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants apprennent trois consignes à soi-même (Stop – Réfléchir – Agir), les exercent de la parole à haute voix jusqu’à la parole intérieure et les appliquent à une histoire et à une situation personnelle.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer les étapes à voix haute sur un exemple personnel : « Je sens que je m’impatiente. Stop. Que se passe-t-il ? … »",
+          "Exercice 1 (5 min) : dire les phrases ensemble – à voix haute, en chuchotant, seulement dans la tête. La parole forte devient ainsi parole intérieure.",
+          "Lire l’histoire, exercice 2 en travail individuel (10 min). Questions : « Était-ce exprès ? Qu’est-ce que cela change pour Rafael ? »",
+          "Exercice 3 (10 min) : parcourir une situation personnelle. Des volontaires la présentent ; le groupe cherche d’autres idées pour l’étape Réfléchir.",
+          "Découper les cartes et les fixer à la place. Les jours suivants, rappeler : « Pense à tes cartes. »"
+        ],
+        "hintergrund": "Les enfants impulsifs agissent souvent avant d’avoir évalué la situation. L’entraînement à l’autoinstruction de Meichenbaum et Goodman (1971) part de là : un adulte montre la démarche en parlant à voix haute, l’enfant dit les consignes d’abord à voix haute, puis en chuchotant, enfin seulement dans la tête. Le contrôle venu de l’extérieur devient ainsi maîtrise de soi. Les entraînements pour enfants au comportement agressif combinent ces autoconsignes avec des étapes de résolution de problèmes : bien percevoir la situation, envisager aussi un accident, chercher des solutions, peser les conséquences, agir et vérifier le résultat (Petermann & Petermann, 2012).",
+        "quellen": [
+          "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126.",
+          "Petermann, F. & Petermann, U. (2012). Training mit aggressiven Kindern (13. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Parcourir les étapes à l’oral ; l’enfant dicte, un adulte écrit avec lui.",
+          "schwerer": "Trouver trois idées pour l’étape Réfléchir et les tester : est-elle juste ? est-elle sûre ? aide-t-elle ?"
+        },
+        "impulse": [
+          "À quoi remarques-tu que tu vas agir trop vite ?",
+          "Laquelle des trois étapes est la plus difficile pour toi ?",
+          "Comment sonne ta phrase Stop quand tu la penses seulement ?"
+        ],
+        "tipps": [
+          "Montrer l’exemple : penser à voix haute au quotidien quand quelque chose tourne mal.",
+          "Au début, les cartes rappellent ; plus tard, un signe convenu avec l’adulte suffit."
+        ],
+        "achtung": "Si, malgré l’entraînement, un enfant perd souvent le contrôle, se blesse ou blesse les autres, ou semble très chargé : chercher le dialogue avec les parents et informer la direction compétente (responsable).",
+        "material": "Ciseaux ; ruban adhésif pour fixer les cartes"
       }
     }
   },
@@ -543,6 +709,85 @@
         "achtung": "Wenn ein Kind häufig ausbricht und dabei sich oder andere verletzt, reicht eine Übung allein nicht: mit den Eltern sprechen und die zuständige Leitung (Responsable) einbeziehen.",
         "material": "Optional: Handpuppe oder Plüschtier Schildkröte"
       }
+    },
+    "fr": {
+      "titel": "L’astuce de la tortue",
+      "untertitel": "Une tortue se retire dans sa carapace. Tu peux le faire aussi quand tu es en colère.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Lis la bande dessinée. Fais chaque étape avec ton corps.", "symbole": ["lesen", "zeigen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": ["figur:tom:froh:zeigen", "figur:noah:wuetend"],
+              "text": "T’es éliminé !",
+              "sprecher": 0,
+              "untertitel": "Au jeu du chat, Elias est éliminé."
+            },
+            { "figuren": ["figur:noah:wuetend"], "blase": "denken", "text": "Stop. Je fais la tortue.", "untertitel": "1. S’arrêter." },
+            {
+              "figuren": ["figur:noah:wuetend:verschraenkt"],
+              "requisit": "motiv:schildkroete-panzer",
+              "blase": "denken",
+              "text": "Bras serrés, tête basse.",
+              "untertitel": "2. Rentrer dans la carapace."
+            },
+            {
+              "figuren": ["figur:noah:ruhig:verschraenkt"],
+              "requisit": "motiv:schildkroete-panzer",
+              "blase": "denken",
+              "text": "J’inspire, j’expire.",
+              "untertitel": "3. Respirer lentement trois fois."
+            },
+            { "figuren": ["figur:noah:neutral"], "blase": "denken", "text": "Que puis-je faire maintenant ?", "untertitel": "4. Réfléchir." },
+            {
+              "figuren": ["figur:noah:froh", "figur:tom:froh"],
+              "requisit": "motiv:schildkroete",
+              "text": "À mon tour d’attraper.",
+              "sprecher": 0,
+              "untertitel": "5. Sortir avec une solution."
+            }
+          ]
+        },
+        { "art": "aufgabe", "text": "Quand l’astuce de la tortue t’aide-t-elle ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": ["Je perds au jeu.", "Quelqu’un m’embête.", "Quelque chose ne marche pas.", "Je dois attendre longtemps."],
+          "frei": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent l’astuce de la tortue en cinq étapes et la répètent assez souvent pour pouvoir l’utiliser en cas de colère ou de forte excitation.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer ou décrire une tortue. Question : « Que fait une tortue quand un danger menace ? »",
+          "Lire la bande dessinée ensemble (10 min). Faire chaque étape tout de suite avec le corps : bras près du corps, tête en bas, yeux fermés, trois respirations.",
+          "Convenir d’un mot-signal, par exemple « tortue ». L’adulte le dit, tout le monde fait l’astuce.",
+          "Exercice 2 (5 min) : cocher ses propres situations. Question : « Quand l’astuce t’aurait-elle déjà aidé ? »",
+          "Dans les semaines suivantes, s’exercer une fois par jour dans des moments calmes et nommer les « moments tortue » réussis."
+        ],
+        "hintergrund": "L’astuce de la tortue a été conçue pour des classes primaires où les enfants en venaient vite aux mains en cas de colère (Robin, Schneider & Dolnick, 1976). Les enfants apprennent à se retirer comme une tortue face à un déclencheur : bras contre le corps, tête vers le bas, muscles détendus. Ensuite, ils cherchent une solution et « sortent de la carapace ». L’image est facile à retenir et relie apaisement et résolution de problèmes. Le programme Dina Dinosaur utilise lui aussi une tortue pour apprendre aux plus jeunes à gérer la colère, avec en plus des jeux de rôle et des félicitations pour les essais réussis (Webster-Stratton & Reid, 2003).",
+        "quellen": [
+          "Robin, A., Schneider, M. & Dolnick, M. (1976). The turtle technique: An extended case study of self-control in the classroom. Psychology in the Schools, 13(4), 449–453.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Montrer les étapes avec une marionnette ; l’enfant fait seulement les mouvements.",
+          "schwerer": "L’enfant dessine une situation à lui en bande dessinée et y montre les cinq étapes."
+        },
+        "impulse": [
+          "Quand aurais-tu aimé être une tortue ?",
+          "Comment ton corps se sent-il dans la carapace ?",
+          "Quelle solution as-tu trouvée dans la carapace ?"
+        ],
+        "tipps": [
+          "Ne jamais utiliser l’astuce comme punition (« Va dans ta carapace »). C’est une proposition.",
+          "Féliciter tout de suite et concrètement les enfants qui l’utilisent d’eux-mêmes."
+        ],
+        "achtung": "Si un enfant explose souvent et se blesse ou blesse les autres, un seul exercice ne suffit pas : parler avec les parents et associer la direction compétente (responsable).",
+        "material": "En option : marionnette ou peluche tortue"
+      }
     }
   },
   {
@@ -669,6 +914,62 @@
         ],
         "material": "Buntstifte; für den Einstieg ein kurzes Spiel, z. B. Memory"
       }
+    },
+    "fr": {
+      "titel": "Pourquoi y a-t-il des règles ?",
+      "untertitel": "Les règles aident à ce que ce soit juste et sûr.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Un jeu sans règles",
+          "text": "À la récré, tout le monde joue au foot – aujourd’hui sans règles. Mehmet porte simplement le ballon dans ses mains. Personne ne compte les buts. Après cinq minutes, tout le monde se dispute. Nora reste sur le côté, elle n’a pas le droit de jouer.",
+          "bild": "figur:mia:traurig"
+        },
+        { "art": "aufgabe", "text": "Quelles règles auraient aidé ? Coche.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": ["Pas de mains, sauf le gardien.", "Nous comptons les buts.", "Tout le monde peut jouer.", "Celui qui crie le plus fort décide."]
+        },
+        { "art": "aufgabe", "text": "Il y a des règles partout. À quoi sert la règle ? Relie.", "symbole": ["verbinden"] },
+        {
+          "art": "zuordnen",
+          "titel": ["Règle", "Pourquoi ?"],
+          "links": ["Attendre au rouge.", "Faire la queue à la cantine.", "Silence à la bibliothèque."],
+          "rechts": ["Pour que tous puissent lire.", "Pour éviter les blessures.", "Pour que ce soit juste."]
+        },
+        { "art": "aufgabe", "text": "Quelle règle est importante pour toi en classe ? Dessine-la.", "symbole": ["malen"] },
+        { "art": "feld", "label": "Ma règle de classe :", "zeichnen": true, "hoehe": 4.5 }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent à quoi servent les règles (sécurité, justice, respect), trouvent des règles dans leur quotidien et illustrent une règle de classe importante pour eux.",
+        "ablauf": [
+          "Entrée en matière (5 min) : essayer un jeu sans règles, par exemple un memory où chacun retourne autant de cartes qu’il veut. Arrêter après une minute. Question : « Comment c’était ? »",
+          "Lire l’histoire (5 min). Questions : « Pourquoi tout le monde se dispute-t-il ? Comment va Nora ? »",
+          "Exercices 1 et 2 (10 min). Écrire les trois raisons au tableau : les règles protègent, les règles sont justes, les règles respectent les autres.",
+          "Exercice 3 (10 min) : chaque enfant dessine une règle. Question : « Pourquoi cette règle est-elle importante pour toi ? »",
+          "Afficher les dessins et choisir ensemble les trois à cinq règles les plus importantes pour la classe."
+        ],
+        "hintergrund": "Les plus jeunes suivent souvent les règles parce que les adultes les posent. Au fil de l’école primaire, ils les comprennent de plus en plus comme des accords qui protègent la vie commune, qu’on peut justifier et modifier. Les règles de classe agissent le mieux quand elles sont peu nombreuses, formulées positivement, discutées avec les enfants et comprises (Nolting, 2002). Vivre soi-même un jeu qui finit en dispute faute de règles rend ce sens plus concret que toute explication. Les programmes scolaires d’apprentissage socio-émotionnel améliorent de façon démontrée le comportement social et réduisent les problèmes de comportement (Durlak et al., 2011).",
+        "quellen": [
+          "Nolting, H.-P. (2002). Störungen in der Schulklasse. Weinheim: Beltz.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Résoudre l’association à l’oral ; l’enfant dessine sa règle, un adulte écrit la phrase.",
+          "schwerer": "Inventer une deuxième règle pour la récré et la justifier : « Cette règle protège … »"
+        },
+        "impulse": [
+          "Quelle règle trouves-tu difficile – et pourquoi existe-t-elle quand même ?",
+          "Y a-t-il des règles qui ne sont pas justes ?",
+          "Que se passe-t-il quand quelqu’un ne respecte pas une règle ?"
+        ],
+        "tipps": [
+          "Formuler les règles positivement : « Nous marchons dans le couloir » plutôt que « Ne pas courir ».",
+          "Afficher les règles de classe bien visibles et les revoir régulièrement au conseil de classe."
+        ],
+        "material": "Crayons de couleur ; pour l’entrée en matière, un court jeu, par exemple un memory"
+      }
     }
   },
   {
@@ -759,6 +1060,97 @@
           "Die Lehrperson unterschreibt mit und hält sich an die Regeln, die auch sie betreffen."
         ],
         "material": "Plakat, dicke Stifte; optional Klebepunkte zum Abstimmen"
+      }
+    },
+    "fr": {
+      "titel": "Notre accord de classe",
+      "untertitel": "Les règles que nous négocions ensemble, nous les respectons mieux. Voici où naît votre accord.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Qu’est-ce qui est le plus important pour toi en classe ? Coche trois choses.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Je peux travailler au calme.",
+            "On ne se moque de personne.",
+            "Tout le monde peut participer.",
+            "Nos affaires restent intactes.",
+            "Chacun peut s’exprimer.",
+            "Les disputes se règlent de façon juste."
+          ],
+          "frei": 2
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Voilà à quoi ressemble une bonne règle",
+          "punkte": ["Elle dit ce que nous faisons – pas ce qui est interdit.", "Elle est courte et claire.", "Tout le monde sait à quoi elle sert."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Les interdictions deviennent des règles. Écris les phrases de façon positive.",
+          "hinweis": "Exemple : au lieu de « Ne pas couper la parole » : Nous levons la main et nous attendons notre tour.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Au lieu de « Ne pas pousser » : Nous …",
+            "Au lieu de « Ne pas se moquer » : Nous …",
+            "Au lieu de « Ne rien laisser traîner » : Nous …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisissez trois règles dans le groupe. Écrivez pourquoi elles sont importantes.",
+          "symbole": ["gruppe", "schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Notre règle", "Pourquoi est-elle importante ?"],
+          "breiten": [1, 1.15],
+          "zeilen": 3,
+          "beispiel": ["Nous écoutons quand quelqu’un parle.", "Ainsi, chacun est compris et pris au sérieux."]
+        },
+        { "art": "aufgabe", "text": "Signez votre accord.", "symbole": ["schreiben"] },
+        {
+          "art": "vertrag",
+          "titel": "Notre accord de classe",
+          "text": "Nous, la classe ___, avons négocié nos règles ensemble. Nous les respectons et nous nous le rappelons gentiment. Si une règle ne marche pas, nous en parlons au conseil de classe. Nous réexaminons l’accord le ___.",
+          "unterschriften": ["Signature", "Enseignant·e"]
+        },
+        { "art": "aufgabe", "text": "Après deux semaines : notre accord fonctionne-t-il bien ?", "symbole": ["nachdenken"] },
+        { "art": "skala", "von": "pas du tout bien", "bis": "très bien", "stufen": 5, "gesichter": true },
+        { "art": "frage", "text": "Que devrions-nous discuter au conseil de classe ?", "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants formulent ensemble quelques règles de classe positives, les justifient et les scellent dans un accord qui est réexaminé après deux semaines.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Comment doit être notre classe pour que vous veniez avec plaisir ? » Exercice 1 en travail individuel, puis compter les croix au tableau.",
+          "Lire l’encadré, exercice 2 (10 min) : transformer ensemble les interdictions en phrases avec « nous ».",
+          "Exercice 3 en groupes (15 min) : chaque groupe propose trois règles avec justification. En classe, se mettre d’accord sur trois à cinq règles, par exemple avec des gommettes.",
+          "Écrire les règles en grand sur une affiche. Tous signent l’affiche et la fiche (exercice 4).",
+          "Après deux semaines, traiter l’exercice 5 au conseil de classe et adapter les règles si besoin."
+        ],
+        "hintergrund": "Les règles auxquelles les enfants ont participé, ils les vivent plus facilement comme les leurs et les respectent mieux. Cela correspond à la théorie de l’autodétermination : celui qui peut codécider et comprend le sens d’une règle agit plus par conviction que sous la pression extérieure (Deci & Ryan, 2000). Pour la gestion de classe : peu de règles, formulées positivement et justifiées, qui restent visibles et sont régulièrement revues (Nolting, 2002). La signature rend l’accord contraignant. Le réexamen après deux semaines montre que les règles sont prises au sérieux et qu’on peut les modifier.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Nolting, H.-P. (2002). Störungen in der Schulklasse. Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Choisir les règles dans une sélection donnée et n’écrire qu’une seule justification.",
+          "schwerer": "Proposer pour chaque règle une conséquence juste si elle n’est pas respectée."
+        },
+        "impulse": [
+          "Quelle règle est la plus importante pour toi – et pourquoi ?",
+          "Que faisons-nous quand quelqu’un ne respecte pas l’accord ?",
+          "À quoi voyons-nous qu’une règle fonctionne bien ?"
+        ],
+        "tipps": [
+          "Pas plus de cinq règles : mieux vaut peu de règles que tout le monde connaît qu’une longue liste.",
+          "L’adulte signe aussi et respecte les règles qui le concernent."
+        ],
+        "material": "Affiche, gros feutres ; en option, des gommettes pour voter"
       }
     }
   },
@@ -1053,6 +1445,70 @@
         "achtung": "Wenn trotz passendem Ziel und erreichbarer Schwelle über Wochen kaum Sterne gelingen: das Ziel überprüfen und mit der zuständigen Leitung (Responsable) über weitere Unterstützung sprechen.",
         "material": "Buntstifte oder Stempel; die vereinbarte Belohnung"
       }
+    },
+    "fr": {
+      "titel": "Mon étoile du jour",
+      "untertitel": "Un objectif pour toute la semaine. Chaque étoile montre : tu as réussi.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Choisis un objectif pour cette semaine. Coches-en un.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Je lève la main avant de parler.",
+            "Je reste sur mon travail.",
+            "J’attends mon tour.",
+            "Je range ma place.",
+            "En cas de dispute, je cherche de l’aide."
+          ],
+          "frei": 1
+        },
+        { "art": "aufgabe", "text": "Écris ton objectif. Ça a marché ? Colorie une étoile.", "symbole": ["schreiben", "malen"] },
+        { "art": "plan", "ziel": "", "zeilen": ["Jusqu’à la récré", "Après la récré"], "symbol": "stern" },
+        {
+          "art": "aufgabe",
+          "text": "Qu’obtiens-tu pour tes étoiles ? Faites un accord.",
+          "hinweis": "Idées : choisir un jeu, choisir la tâche de classe, s’asseoir à côté d’un ami.",
+          "symbole": ["sprechen", "schreiben"]
+        },
+        {
+          "art": "vertrag",
+          "titel": "Notre accord",
+          "text": "Si je gagne ___ étoiles cette semaine, je peux ___.",
+          "unterschriften": ["Mon nom", "Maître ou maîtresse"]
+        },
+        { "art": "frage", "text": "Vendredi : qu’est-ce qui t’a aidé cette semaine ?", "linien": 1 }
+      ],
+      "lehrer": {
+        "ziel": "L’enfant choisit un objectif concret formulé positivement, reçoit deux fois par jour un retour sous forme d’étoiles et échange ses étoiles contre une récompense selon une règle convenue.",
+        "ablauf": [
+          "Entretien préalable (10 min) avec l’enfant seul : « Qu’est-ce qui marche déjà bien ? Qu’est-ce qui est le prochain pas ? » Formuler l’objectif de façon à ce qu’on puisse le voir.",
+          "Fixer le seuil pour qu’il soit sûrement atteignable la première semaine, par exemple 6 étoiles sur 10.",
+          "Choisir ensemble la récompense : de préférence une activité (choisir un jeu, choisir la tâche de classe) plutôt que des bonbons ou des cadeaux.",
+          "Avant la récré et à la fin de la matinée, faire le point : « Ça a marché ? » Associer l’étoile à un compliment concret : « Tu as levé la main et tu as attendu. »",
+          "Faire le bilan après une semaine ; en cas de réussite, relever légèrement le seuil ou choisir un nouvel objectif. Après quelques semaines, réduire peu à peu les étoiles."
+        ],
+        "hintergrund": "Les plans d’étoiles sont une forme simple de renforcement positif. Ils agissent quand l’objectif est petit, concret et positif, que le retour est rapide et que la récompense est vraiment attrayante pour l’enfant (Kazdin, 2008). Les activités appréciées conviennent particulièrement : une activité qu’un enfant aime faire peut renforcer un comportement moins apprécié (Premack, 1959). L’étoile est plus qu’un signe : elle rend le progrès visible et donne l’occasion d’un compliment court et concret. Un plan d’étoiles ne sert jamais à punir – les étoiles gagnées ne sont pas retirées.",
+        "quellen": [
+          "Kazdin, A. E. (2008). The Kazdin Method for Parenting the Defiant Child. Boston: Houghton Mifflin.",
+          "Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. Psychological Review, 66(4), 219–233."
+        ],
+        "differenzierung": {
+          "leichter": "N’utiliser qu’une ligne et fixer un seuil bas, par exemple 3 étoiles sur 5.",
+          "schwerer": "L’enfant s’évalue d’abord lui-même puis compare avec l’évaluation de l’adulte."
+        },
+        "impulse": [
+          "Qu’est-ce qui t’a aidé aujourd’hui à atteindre ton objectif ?",
+          "Qu’est-ce qui était difficile – et que vas-tu essayer demain ?",
+          "Quel objectif veux-tu aborder ensuite ?"
+        ],
+        "tipps": [
+          "Ne jamais retirer d’étoiles : un plan qui punit perd son effet.",
+          "Associer les parents : une photo du plan le vendredi permet de féliciter aussi à la maison."
+        ],
+        "achtung": "Si, malgré un objectif adapté et un seuil atteignable, presque aucune étoile n’est obtenue pendant des semaines : revoir l’objectif et discuter d’un autre soutien avec la direction compétente (responsable).",
+        "material": "Crayons de couleur ou tampons ; la récompense convenue"
+      }
     }
   },
   {
@@ -1160,6 +1616,107 @@
         ],
         "achtung": "Die Strichliste ersetzt keine Abklärung. Kann sich ein Kind über längere Zeit und in vielen Situationen kaum konzentrieren: mit den Eltern sprechen und die zuständige Leitung (Responsable) einbeziehen.",
         "material": "Klangschale, Gong oder Timer"
+      }
+    },
+    "fr": {
+      "titel": "Mon attention est-elle là ?",
+      "untertitel": "Les pensées s’envolent – ça arrive à tout le monde. Celui qui le remarque peut les ramener.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Comment marche le tableau de traits",
+          "text": "Pendant que tu travailles, un signal retentit de temps en temps. Ce peut être un son doux ou un geste de l’adulte. Alors tu te demandes un instant : suis-je sur ma tâche en ce moment ? Tu fais un trait sous « Oui » ou sous « Non ». Ensuite, tu continues tout de suite à travailler."
+        },
+        { "art": "aufgabe", "text": "Sur ma tâche ou ailleurs ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["sur ma tâche", "ailleurs"],
+          "items": [
+            "Mes yeux sont sur la tâche.",
+            "Je joue avec mon stylo.",
+            "Je relis la consigne parce que je ne la comprends pas.",
+            "Je pense à la récré.",
+            "Je sais ce que je dois faire en ce moment.",
+            "Je regarde ce que fait mon voisin."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tiens ton tableau de traits pendant une semaine. Fais un trait à chaque signal.",
+          "hinweis": "La première ligne est un exemple.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Jour et matière", "Oui, sur ma tâche", "Non, ailleurs", "Ce qui m’a distrait"],
+          "breiten": [1, 1, 1, 1.5],
+          "zeilen": 5,
+          "beispiel": ["Lu, maths", "|||| |", "||", "Conversation à la table voisine"]
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce qui t’aide à revenir à ta tâche ? Coche ou complète.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Je relis la consigne.",
+            "Je range ce qui me dérange.",
+            "Je me dis doucement : « C’est reparti. »",
+            "Je demande quand je suis bloqué.",
+            "Je me fixe un petit objectif : encore trois exercices.",
+            "Je bois une gorgée d’eau."
+          ],
+          "frei": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "À la fin de la semaine, compte tes traits. Qu’est-ce que tu remarques ?",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        { "art": "satzanfaenge", "items": ["Traits Oui : ______   Traits Non : ______"] },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": ["J’étais le mieux sur ma tâche quand …", "Ce qui m’a surtout distrait : …", "La semaine prochaine, j’essaie …"]
+        },
+        {
+          "art": "skala",
+          "frage": "À quel point ta semaine te satisfait-elle ?",
+          "von": "pas du tout",
+          "bis": "beaucoup",
+          "stufen": 5,
+          "gesichter": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants apprennent à vérifier eux-mêmes leur attention lors d’un signal, tiennent un tableau de traits pendant une semaine et en tirent leurs propres stratégies.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Où vont vos pensées quand vous travaillez ? » Insister : se laisser distraire est normal – ce qui compte, c’est de les ramener.",
+          "Discuter l’exercice 1 (5 min), surtout les cas limites : relire fait partie du travail, jouer avec le stylo non.",
+          "Convenir d’un signal et l’essayer (10 min), par exemple un gong doux toutes les cinq à dix minutes en travail individuel. Après le signal : vérifier brièvement, faire un trait, continuer à travailler.",
+          "Tenir le tableau de traits pendant une semaine, dans une ou deux phases de travail par jour.",
+          "En fin de semaine, traiter les exercices 3 et 4 et en parler en entretien individuel : « Qu’est-ce qui t’a aidé ? »"
+        ],
+        "hintergrund": "L’auto-observation est un élément central de l’autogestion : celui qui observe régulièrement un comportement et le note le modifie souvent déjà dans le sens voulu (Kanfer, Reinecker & Schmelzer, 2012). Les programmes thérapeutiques pour enfants ayant des problèmes d’attention utilisent des cartes-signaux et de simples fiches d’observation dont les résultats sont d’abord comparés à l’évaluation de l’adulte (Döpfner, Schürmann & Frölich, 2019). Une attitude sans jugement est importante : chaque trait Non est une information, pas un échec.",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "N’observer qu’une phase de travail par jour ; l’adulte donne le signal en tapotant doucement à la place.",
+          "schwerer": "Le vendredi, dessiner les traits Oui en colonnes pour chaque jour et comparer les jours."
+        },
+        "impulse": [
+          "Quand es-tu le plus facilement sur ta tâche – le matin, après la récré, seul, avec d’autres ?",
+          "Qu’est-ce qui te ramène le plus vite ?",
+          "Que pourrait faire l’adulte pour que ce soit plus facile ?"
+        ],
+        "tipps": [
+          "Garder le signal doux et neutre : c’est un rappel, pas un reproche.",
+          "Féliciter expressément le comptage honnête – des traits Oui récompensés mènent facilement à des listes embellies."
+        ],
+        "achtung": "Le tableau de traits ne remplace pas un bilan. Si un enfant arrive à peine à se concentrer longtemps et dans de nombreuses situations : parler avec les parents et associer la direction compétente (responsable).",
+        "material": "Bol tibétain, gong ou minuteur"
       }
     }
   },

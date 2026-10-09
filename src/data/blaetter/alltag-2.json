@@ -431,6 +431,68 @@
         "achtung": "Wenn ein Kind keine Stärke nennen kann oder Rückmeldungen abwehrt: nicht drängen, sondern im Einzelgespräch konkrete Beobachtungen nennen. Bei anhaltend negativem Selbstbild die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte (Gelb für die Sterne)"
       }
+    },
+    "fr": {
+      "titel": "Mes étoiles : mes points forts",
+      "untertitel": "Chacun sait bien faire quelque chose. Certains points forts se voient tout de suite. D’autres se découvrent en regardant de plus près.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Qu’est-ce que tu sais bien faire ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "bilder",
+          "modus": "ankreuzen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:heart-handshake", "text": "aider" },
+            { "bild": "icon:ear", "text": "écouter" },
+            { "bild": "icon:shield", "text": "avoir du courage" },
+            { "bild": "icon:bulb", "text": "avoir des idées" },
+            { "bild": "icon:hourglass", "text": "savoir attendre" },
+            { "bild": "icon:mood-happy", "text": "faire rire" },
+            { "bild": "icon:palette", "text": "dessiner" },
+            { "bild": "icon:run", "text": "courir vite" }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Demande à un autre enfant : qu’est-ce que je sais bien faire ?",
+          "hinweis": "Ensuite, dis aussi un point fort à l’autre enfant.",
+          "symbole": ["partner", "schreiben"]
+        },
+        { "art": "satzanfaenge", "items": ["L’autre enfant dit : Tu sais bien …"], "linien": 2 },
+        { "art": "aufgabe", "text": "Écris un point fort sur la ligne. Si tu le montres, colorie une étoile.", "symbole": ["schreiben", "malen"] },
+        { "art": "plan", "zeilen": [""], "symbol": "stern" },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants nomment leurs propres points forts, découvrent ce que les autres apprécient chez eux et montrent consciemment un point fort pendant une semaine.",
+        "ablauf": [
+          "Entrée en matière (5 min) : dessiner une étoile au tableau. Question : « Que savent bien faire les gens, sans que ça se voie tout de suite ? » Recueillir : écouter, attendre, consoler.",
+          "Exercice 1 (5 min) : nommer les images ensemble, puis chaque enfant coche.",
+          "Exercice 2 (10 min) : former des binômes. Chaque enfant dit un point fort à l’autre. Début de phrase au tableau : « Je trouve que tu sais bien … »",
+          "Exercice 3 : chaque enfant choisit un point fort ; l’adulte aide à l’écrire.",
+          "Pendant la semaine, demander : « Où as-tu montré ton point fort aujourd’hui ? » Le vendredi, regarder les étoiles ensemble."
+        ],
+        "hintergrund": "Peterson et Seligman (2004) décrivent 24 forces de caractère, comme la gentillesse, le courage, l’humour ou la maîtrise de soi, appréciées dans de nombreuses cultures. Les enfants citent d’abord surtout des capacités visibles, comme dessiner ou courir ; la fiche attire aussi l’attention sur les forces de caractère. Les retours des pairs ont ici un poids particulier. Connaître ses forces et les mettre en œuvre au quotidien donne le sentiment d’être efficace – une base importante pour l’estime de soi et la résilience (Masten, 2014).",
+        "quellen": [
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Dessiner le point fort sur la ligne du plan au lieu de l’écrire ; exercice 2 seulement à l’oral.",
+          "schwerer": "Choisir deux points forts et noter où on peut les montrer : à la récréation, à la Maison Relais, à la maison."
+        },
+        "impulse": [
+          "Quel point fort chez toi ne se voit pas tout de suite ?",
+          "Comment te sens-tu quand quelqu’un dit quelque chose de gentil sur toi ?",
+          "Où as-tu le plus besoin de ton point fort ?"
+        ],
+        "tipps": [
+          "Former les binômes avec soin pour que chaque enfant reçoive un retour sincère ; intervenir soi-même si nécessaire.",
+          "Rediriger avec bienveillance les retours sur l’apparence (« Tu as de beaux cheveux ») : « Et qu’est-ce que cet enfant sait bien faire ? »"
+        ],
+        "achtung": "Si un enfant ne trouve aucun point fort ou repousse les retours positifs : ne pas insister, mais citer des observations concrètes lors d’un entretien individuel. En cas d’image de soi durablement négative, informer la direction compétente (responsable).",
+        "material": "Crayons de couleur (jaune pour les étoiles)"
+      }
     }
   },
   {
@@ -529,6 +591,103 @@
         ],
         "achtung": "Wenn Karten spöttisch verschenkt werden oder ein Kind leer ausgeht, sofort eingreifen. Kinder mit sehr negativem Selbstbild nicht vor der Gruppe drängen, sondern im Einzelgespräch begleiten; bei Bedarf die zuständige Leitung (Responsable) informieren.",
         "material": "Schere, festes Papier für Seite 2, Umschläge"
+      }
+    },
+    "fr": {
+      "titel": "Cartes des forces",
+      "untertitel": "Une force, ce n’est pas que des buts ou de bonnes notes. Courage, patience ou humour en sont aussi – et chacun a son propre mélange.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Des chercheurs et des chercheuses ont observé, dans de nombreuses cultures, quelles qualités les gens apprécient les uns chez les autres. Ils décrivent 24 forces de ce genre. Tu en trouves 16 sur les cartes de la page 2."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découpe les cartes. Cherche les trois qui te correspondent le mieux.",
+          "hinweis": "Écris un exemple pour chaque force : quand la montres-tu ?",
+          "symbole": ["schneiden", "schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Ma force", "Quand je la montre"],
+          "breiten": [1, 2.6],
+          "zeilen": 3,
+          "beispiel": ["La persévérance", "À la corde à sauter, je m’entraîne jusqu’à ce que ça marche."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Détective des forces : offre à deux enfants une carte qui leur correspond bien.",
+          "hinweis": "Dis aussi quand tu as vu cette force chez cet enfant.",
+          "symbole": ["gruppe", "sprechen"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Pour qui ?", "Quelle force ?", "Quand je l’ai vue"],
+          "breiten": [1, 1.2, 2.4],
+          "zeilen": 2,
+          "beispiel": ["Chiara", "La gentillesse", "Elle m’a prêté sa veste à la récréation."]
+        },
+        { "art": "aufgabe", "text": "Quelle force veux-tu montrer plus souvent cette semaine ? Fais un plan.", "symbole": ["schreiben"] },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [{ "wenn": "Si quelqu’un reste seul à la récréation,", "dann": "je demande : « Tu veux jouer avec nous ? » (gentillesse)" }]
+        },
+        { "art": "seitenumbruch" },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 136,
+          "karten": [
+            { "titel": "Courage", "text": "J’ose, même quand j’ai peur.", "bild": "icon:shield" },
+            { "titel": "Persévérance", "text": "Je n’abandonne pas vite.", "bild": "icon:mountain" },
+            { "titel": "Honnêteté", "text": "Je suis honnête, même si c’est difficile.", "bild": "icon:circle-check" },
+            { "titel": "Gentillesse", "text": "Je suis aimable avec les autres et j’aide volontiers.", "bild": "icon:heart" },
+            { "titel": "Équité", "text": "Je veille à ce que tous puissent jouer.", "bild": "motiv:waage" },
+            { "titel": "Esprit d’équipe", "text": "Je participe bien dans un groupe.", "bild": "icon:users-group" },
+            { "titel": "Curiosité", "text": "Je veux savoir comment les choses fonctionnent.", "bild": "icon:search" },
+            { "titel": "Créativité", "text": "J’ai mes propres idées et je les essaie.", "bild": "icon:bulb" },
+            { "titel": "Humour", "text": "Je fais des blagues, mais je ne me moque de personne.", "bild": "icon:mood-happy" },
+            { "titel": "Gratitude", "text": "Je remarque quand on est gentil avec moi.", "bild": "icon:gift" },
+            { "titel": "Pardon", "text": "Je sais pardonner quand quelqu’un s’excuse.", "bild": "icon:heart-handshake" },
+            { "titel": "Maîtrise de soi", "text": "Je sais attendre et me retenir.", "bild": "motiv:schildkroete" },
+            { "titel": "Empathie", "text": "Je remarque comment vont les autres.", "bild": "icon:user-heart" },
+            { "titel": "Enthousiasme", "text": "Je fais les choses avec beaucoup d’élan.", "bild": "icon:rocket" },
+            { "titel": "Optimisme", "text": "Je crois que ça va bien se passer.", "bild": "icon:rainbow" },
+            { "titel": "Sens du beau", "text": "Je m’émerveille devant la nature, la musique et les images.", "bild": "icon:flower" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent les forces de caractère dans un langage d’enfant, illustrent leurs trois forces principales par des exemples du quotidien et découvrent des forces chez les autres.",
+        "ablauf": [
+          "Préparation : copier la page 2 en recto seul, si possible sur papier épais.",
+          "Entrée en matière (5 min) : « Qu’est-ce qu’une force ? » Compléter : les forces se voient aussi dans la façon de se comporter avec les autres.",
+          "Découper les cartes et les lire ensemble (10 min) ; clarifier des mots comme optimisme ou maîtrise de soi.",
+          "Exercice 1 (10 min) : trois piles (« C’est tout à fait moi », « parfois », « je m’y exerce encore »), puis écrire les trois forces principales avec un exemple.",
+          "Exercice 2 en cercle (15 min) : offrir des cartes avec « Je t’offre …, parce que j’ai vu comment tu … » Chaque enfant doit recevoir des cartes.",
+          "Exercice 3 : plan pour la semaine ; point au conseil de classe le vendredi."
+        ],
+        "hintergrund": "Peterson et Seligman (2004) décrivent 24 forces de caractère, rattachées à six vertus, comme le courage, l’humanité et la justice. Les cartes en présentent 16, dans un langage d’enfant. Dans une étude auprès d’adultes, mettre consciemment en œuvre ses principales forces d’une manière nouvelle a augmenté le bien-être pendant des mois (Seligman et al., 2005). Pour les enfants, il est essentiel que les forces s’appuient sur un comportement concret : non pas « Tu es gentil », mais « Tu as aidé Jang quand il avait oublié son cahier ».",
+        "quellen": [
+          "Peterson, C. & Seligman, M. E. P. (2004). Character Strengths and Virtues. New York: Oxford University Press.",
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement huit cartes, lues à voix haute ; coller les trois forces au lieu de les écrire.",
+          "schwerer": "Pour chaque force principale, noter quand elle peut devenir excessive (courage → imprudence) et ce qui aide alors."
+        },
+        "impulse": [
+          "Quelle force as-tu découverte chez quelqu’un, sans l’avoir remarquée avant ?",
+          "De quelles forces notre classe a-t-elle besoin pour que tout le monde se sente bien ?"
+        ],
+        "tipps": [
+          "À la fin, offrir soi-même des cartes – surtout aux enfants qui en ont reçu peu.",
+          "Ranger les cartes dans une enveloppe ; utiles aussi pour le conseil de classe ou les entretiens avec les parents."
+        ],
+        "achtung": "Cartes offertes de façon moqueuse ou enfant sans aucune carte : intervenir tout de suite. Ne pas presser devant le groupe les enfants à l’image de soi très négative : entretien individuel, si besoin informer la direction compétente (responsable).",
+        "material": "Ciseaux, papier épais, enveloppes"
       }
     }
   },
@@ -774,6 +933,65 @@
         "achtung": "Wenn ein Kind kaum etwas findet, das ihm guttut, oft müde oder hungrig wirkt oder von Sorgen zu Hause erzählt: nicht im Plenum vertiefen, sondern im Einzelgespräch nachfragen und die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte"
       }
+    },
+    "fr": {
+      "titel": "Qu’est-ce qui me fait du bien ?",
+      "untertitel": "Tout le monde a besoin de choses qui font du bien. Certaines rendent joyeux. D’autres apaisent.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Qu’est-ce qui te fait du bien ? Entoure.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:run", "text": "courir" },
+            { "bild": "icon:tree", "text": "être dehors" },
+            { "bild": "icon:pillow", "text": "se reposer" },
+            { "bild": "icon:bed", "text": "dormir" },
+            { "bild": "icon:puzzle", "text": "jouer" },
+            { "bild": "icon:friends", "text": "des amis" },
+            { "bild": "icon:apple", "text": "manger des fruits" },
+            { "bild": "icon:bottle", "text": "boire de l’eau" }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta main du bien-être : qu’est-ce qui te fait du bien ?",
+          "hinweis": "Écris ou dessine quelque chose pour chaque doigt. Entoure ensuite ce que tu fais encore aujourd’hui.",
+          "symbole": ["schreiben", "malen"]
+        },
+        { "art": "hand", "finger": ["Bouger", "Se reposer", "Les gens", "Manger et boire", "Jouer"] }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent cinq domaines qui contribuent au bien-être – bouger, se reposer, les gens, manger et boire, jouer – et dressent leur propre liste de ce qui leur fait du bien.",
+        "ablauf": [
+          "Entrée en matière en cercle (5 min) : « Pense à un bel après-midi. Qu’est-ce qui t’a fait du bien ? » Recueillir quelques réponses.",
+          "Exercice 1 : nommer les images ensemble ; chaque enfant entoure ce qui lui fait du bien. Demander : « Quand est-ce que ça te fait du bien – après l’école, le week-end, quand tu es triste ? »",
+          "Écrire les cinq domaines au tableau et noter pour chacun un exemple de la classe.",
+          "Exercice 2 (10 min) : chaque enfant remplit sa main du bien-être – en écrivant ou en dessinant.",
+          "Conclusion : chaque enfant entoure un doigt qu’il met en pratique aujourd’hui. Le lendemain, demander brièvement des nouvelles."
+        ],
+        "hintergrund": "Le bien-être ne naît pas seulement de l’absence de contraintes, mais aussi de ressources que l’on connaît et que l’on peut utiliser – une idée de base de la salutogenèse (Antonovsky, 1987). Pour les enfants de l’école primaire, ce sont surtout le mouvement, le jeu, des relations fiables et assez de sommeil : les enfants de 6 à 12 ans ont besoin de 9 à 12 heures par nuit (Paruthi et al., 2016). Apprendre tôt à nommer ses propres ressources permet de s’en servir plus sciemment plus tard, quand c’est difficile.",
+        "quellen": [
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786."
+        ],
+        "differenzierung": {
+          "leichter": "Dessiner une petite image pour chaque doigt ; l’adulte écrit un mot à côté.",
+          "schwerer": "Noter pour chaque doigt quand cela aide particulièrement, par exemple « courir quand je suis en colère »."
+        },
+        "impulse": [
+          "Qu’est-ce qui te fait du bien quand tu es triste ?",
+          "Qu’est-ce qui te fait du bien quand tu es en colère ?",
+          "Que peux-tu faire à la récréation pour te sentir bien ?"
+        ],
+        "tipps": [
+          "Accrocher la main dans la classe et la montrer dans les moments difficiles : « De quoi as-tu besoin maintenant ? »",
+          "Ne pas juger ce qui fait du bien à un enfant (par exemple la télévision), mais ajouter ensemble des idées sans écran."
+        ],
+        "achtung": "Si un enfant ne trouve presque rien qui lui fait du bien, paraît souvent fatigué ou affamé ou parle de soucis à la maison : ne pas approfondir en grand groupe, mais poser des questions en entretien individuel et informer la direction compétente (responsable).",
+        "material": "Crayons de couleur"
+      }
     }
   },
   {
@@ -868,6 +1086,103 @@
         ],
         "achtung": "Wenn ein Kind dauerhaft erschöpft wirkt oder von zu wenig Schlaf, Hunger oder großen Belastungen zu Hause erzählt: nicht im Plenum vertiefen, sondern das Einzelgespräch suchen und die zuständige Leitung (Responsable) informieren.",
         "material": "Rote und grüne Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Ma batterie d’énergie",
+      "untertitel": "Comme un téléphone, ton corps a besoin d’énergie. Certaines choses te rechargent, d’autres te fatiguent. Qui connaît les deux prend mieux soin de soi.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Lis l’histoire. Souligne en rouge ce qui prend de la force à Diogo et en vert ce qui le recharge.",
+          "symbole": ["lesen"]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Un long lundi",
+          "text": "Le lundi, Diogo a école jusqu’à 16 h, puis entraînement de foot. Le soir, il joue longtemps sur la tablette et ne s’endort qu’à dix heures. Le mardi, il est déjà fatigué à la première heure. À la récréation, il se dispute avec Luca pour un rien. Après l’école, il va dans la forêt avec son chien. Le soir, il lit une BD et se couche tôt. Le mercredi, il se sent de nouveau en forme.",
+          "bild": "figur:noah:muede"
+        },
+        { "art": "aufgabe", "text": "À quel point ta batterie est-elle pleine aujourd’hui ? Entoure.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            { "bild": "motiv:batterie-leer", "text": "presque vide" },
+            { "bild": "motiv:batterie", "text": "à moitié pleine" },
+            { "bild": "motiv:batterie-voll", "text": "pleine" }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te recharge ? Qu’est-ce qui te prend de la force ?",
+          "hinweis": "Pense à l’école, à la récréation, à la Maison Relais, à la maison et aux loisirs.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "batterie", "laden": "Ça me recharge", "leeren": "Ça me prend de la force", "linien": 4 },
+        { "art": "aufgabe", "text": "Recharge rapide : qu’est-ce qui t’aide quand ta batterie est presque vide ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "boire un verre d’eau",
+            "sortir un moment prendre l’air",
+            "ne rien faire pendant cinq minutes",
+            "manger un petit quelque chose, par exemple une pomme",
+            "parler ou rire avec quelqu’un",
+            "m’étirer et bouger",
+            "écouter de la musique",
+            "aller me coucher plus tôt aujourd’hui"
+          ],
+          "frei": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifie ta semaine : où est-ce que ça devient fatigant ? Qu’est-ce qui te recharge ensuite ?",
+          "hinweis": "Note d’abord les choses fatigantes, puis ce qui compense.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Jour", "Ce sera fatigant", "Ce qui me recharge ensuite"],
+          "breiten": [0.8, 2, 2],
+          "zeilen": 5,
+          "beispiel": ["Lundi", "École jusqu’à 16 h, puis entraînement", "Poser la tablette à 19 h, au lit à 20 h 30"]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent ce qui leur donne de l’énergie et ce qui leur en prend, connaissent des moyens rapides de se recharger et planifient pour une semaine une compensation après les journées fatigantes.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer un téléphone presque déchargé. « À quoi remarques-tu que ta propre batterie se vide ? » Recueillir : fatigue, irritabilité, manque de concentration, mal de tête.",
+          "Lire l’histoire, exercice 1 (5 min). Discuter : l’entraînement peut donner de l’énergie et en prendre.",
+          "Exercices 2 et 3 en individuel (10 min).",
+          "Exercice 4 : comparer les idées ; chacun reprend une idée d’un autre.",
+          "Exercice 5 (10 min) : plan de la semaine – d’abord les moments fatigants, puis la compensation.",
+          "Une semaine plus tard : qu’est-ce qui a marché ? Qui a changé son plan ?"
+        ],
+        "hintergrund": "L’image de la batterie rend concrète une idée de base de la salutogenèse : notre état dépend des contraintes, mais aussi des ressources qui les compensent (Antonovsky, 1987). Pour les enfants, ce sont surtout le sommeil, le mouvement, le jeu et de bonnes relations. Les enfants de 6 à 12 ans ont besoin de 9 à 12 heures de sommeil (Paruthi et al., 2016) ; jouer tard sur un écran peut retarder l’endormissement. Planifier consciemment des activités agréables, au lieu d’attendre la bonne humeur, fait aussi partie de la thérapie comportementale dialectique (Linehan, 2015).",
+        "quellen": [
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Remplir la batterie avec des images plutôt qu’avec des mots ; ne remplir le plan de la semaine que pour deux jours.",
+          "schwerer": "Noter en plus à quoi remarquer tôt que la batterie se vide : corps, humeur, pensées."
+        },
+        "impulse": [
+          "Une chose peut-elle donner et prendre de l’énergie ?",
+          "Qu’est-ce qui te recharge vite ? Qu’est-ce qui demande tout un après-midi ?",
+          "Qu’est-ce qui te recharge sans écran ?"
+        ],
+        "tipps": [
+          "Petit rituel : le matin et après la récréation, montrer avec les doigts à quel point la batterie est pleine (de 1 à 5).",
+          "Ne pas diaboliser les écrans : il s’agit de compensation, pas d’interdictions."
+        ],
+        "achtung": "Enfant durablement épuisé, ou qui parle de manque de sommeil, de faim ou de grandes difficultés à la maison : ne pas approfondir en grand groupe, chercher l’entretien individuel, informer la direction compétente (responsable).",
+        "material": "Crayons rouges et verts"
       }
     }
   },

@@ -75,6 +75,79 @@
         "achtung": "Wirkt ein Kind über längere Zeit traurig oder zurückgezogen oder erzählt es von Verlust, Trennung oder Belastungen in der Familie: nicht im Plenum vertiefen, ein Einzelgespräch anbieten und die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte"
       }
+    },
+    "fr": {
+      "titel": "Quand je suis triste",
+      "untertitel": "Tout le monde est parfois triste. Avec du réconfort, c’est plus léger.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Mamie rentre chez elle",
+          "text": "La mamie de Diogo est venue pendant trois semaines. Ce matin, elle est repartie en avion pour le Portugal. À l’école, Diogo est tout silencieux. Il a une boule dans la gorge. À la récréation, il ne veut pas jouer au foot.",
+          "bild": "figur:noah:traurig"
+        },
+        { "art": "aufgabe", "text": "À quoi vois-tu que tu es triste ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "J’ai envie de pleurer.",
+            "J’ai une boule dans la gorge.",
+            "Je ne dis plus rien.",
+            "Je veux qu’on me laisse tranquille.",
+            "Je n’ai pas envie de jouer.",
+            "Mon ventre est lourd."
+          ],
+          "spalten": 2
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce qui te réconforte ? Entoure.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:hearts", "text": "câlin" },
+            { "bild": "icon:message-circle", "text": "parler" },
+            { "bild": "icon:headphones", "text": "musique" },
+            { "bild": "icon:palette", "text": "dessiner" },
+            { "bild": "icon:paw", "text": "caresser un chat" },
+            { "bild": "icon:trees", "text": "aller dehors" },
+            { "bild": "icon:coffee", "text": "chocolat chaud" },
+            { "bild": "icon:book", "text": "regarder un livre" }
+          ]
+        },
+        { "art": "aufgabe", "text": "À qui peux-tu dire que tu es triste ?", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["À la maison :", "À l’école :"] }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent les signes de la tristesse chez eux et chez les autres, choisissent ce qui les réconforte et nomment des personnes à qui ils peuvent se confier.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. Questions : « À quoi voit-on que Diogo est triste ? » « Qu’est-ce qui pourrait le réconforter ? »",
+          "Exercice 1 (5 min) : chaque enfant coche pour soi. Recueillir les signes au tableau ; personne n’a à raconter ce qu’il a vécu.",
+          "Exercice 2 (10 min) : entourer les images. En cercle : « Qu’est-ce qui te réconforte le plus ? » La même chose n’aide pas tout le monde.",
+          "Exercice 3 (5 min) : noter les personnes de confiance. Qui n’en trouve aucune reçoit de l’aide discrètement.",
+          "Conserver la feuille et la regarder ensemble dans les moments tristes : « Qu’est-ce qui t’aide maintenant ? »"
+        ],
+        "hintergrund": "La tristesse est une réaction à une perte, une séparation ou une déception. Elle ralentit, tourne l’attention vers l’intérieur et montre à l’entourage que quelqu’un a besoin de proximité. À l’école fondamentale, les enfants apprennent peu à peu à reconnaître les émotions à l’expression et à la situation, et à choisir des moyens de régulation adaptés ; le réconfort apporté par des adultes familiers reste une aide centrale (Petermann & Wiedebusch, 2016). Les adultes soutiennent le mieux quand ils perçoivent l’émotion, la nomment et l’accueillent, au lieu de la minimiser vite – ce n’est qu’ensuite qu’on cherche des solutions ensemble (Gottman, 1997).",
+        "quellen": [
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe.",
+          "Gottman, J. (1997). Raising an Emotionally Intelligent Child. New York: Simon & Schuster."
+        ],
+        "differenzierung": {
+          "leichter": "Lire les signes à voix haute et les mimer. L’enfant montre des images ; l’adulte écrit les noms.",
+          "schwerer": "Écrire en plus : « Que puis-je faire quand un autre enfant est triste ? »"
+        },
+        "impulse": [
+          "Qu’est-ce qui t’aide le plus : être seul ou être avec quelqu’un ?",
+          "À quoi remarques-tu que la tristesse devient plus petite ?",
+          "Que dis-tu quand quelqu’un de ta classe est triste ?"
+        ],
+        "tipps": [
+          "Ne pas consoler pour faire disparaître la tristesse (« Ce n’est pas grave »), mais la nommer : « Tu es triste parce que mamie est repartie. »",
+          "Afficher les images de l’exercice 2 comme cartes de réconfort dans le coin calme."
+        ],
+        "achtung": "Si un enfant paraît triste ou renfermé pendant longtemps, ou parle de perte, de séparation ou de difficultés dans la famille : ne pas approfondir en grand groupe, proposer un entretien individuel et informer la direction compétente (responsable).",
+        "material": "Crayons de couleur"
+      }
     }
   },
   {
@@ -174,6 +247,103 @@
         ],
         "achtung": "Manche Kinder denken dabei an Todesfälle, eine Trennung der Eltern oder einen Umzug. Nicht im Plenum vertiefen, ein Einzelgespräch anbieten. Bei anhaltender Traurigkeit die zuständige Leitung (Responsable) informieren.",
         "material": "Schere, Briefumschlag oder kleine Schachtel, Buntstifte"
+      }
+    },
+    "fr": {
+      "titel": "Ma valise de réconfort",
+      "untertitel": "Le réconfort ne fait pas disparaître la tristesse. Mais il la rend plus facile à porter. Prépare-toi une valise pour les jours difficiles.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Zoé est partie",
+          "text": "Nora et Zoé sont meilleures amies depuis le Précoce. Il y a deux semaines, Zoé a déménagé au Canada avec sa famille. Depuis, Nora est souvent seule à la récréation et triste le soir. Ce soir, elle sort le bracelet d’amitié que Zoé lui a offert. Elle raconte à maman tout ce qu’elle a vécu avec Zoé. Maman la prend dans ses bras et dit : « L’amitié ne s’arrête pas comme ça. » Nora est encore triste – mais elle ne se sent plus aussi seule.",
+          "bild": "figur:mia:traurig"
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce qui a réconforté Nora ? Relie avec le bon compartiment de la valise.", "symbole": ["lesen", "verbinden"] },
+        {
+          "art": "zuordnen",
+          "titel": ["Dans l’histoire", "Compartiment de la valise"],
+          "links": ["Maman", "le bracelet d’amitié", "parler de Zoé", "« L’amitié ne s’arrête pas comme ça. »"],
+          "rechts": ["une phrase", "une personne", "faire quelque chose", "un objet"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prépare ta propre valise de réconfort. Écris ou dessine dans chaque compartiment.",
+          "hinweis": "Deux ou trois idées par compartiment suffisent. Seul ce qui t’aide vraiment y entre.",
+          "symbole": ["schreiben", "malen"]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            { "art": "feld", "label": "Personnes qui me réconfortent", "beispiel": "Mamie, mon frère, ma maîtresse", "hoehe": 3.5 },
+            { "art": "feld", "label": "Objets qui me réconfortent", "beispiel": "ma couverture, une photo", "hoehe": 3.5 }
+          ],
+          "rechts": [
+            { "art": "feld", "label": "Ce que je fais quand je suis triste", "beispiel": "écouter de la musique, sortir avec le chien", "hoehe": 3.5 },
+            { "art": "feld", "label": "Phrases qui me font du bien", "beispiel": "« Ça va passer. »", "hoehe": 3.5 }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cartes de réconfort : découpe les phrases qui te font du bien. Écris les tiennes sur les cartes vides.",
+          "symbole": ["schneiden", "schreiben"]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 96,
+          "karten": [
+            { "bild": "icon:heart", "titel": "J’ai le droit d’être triste." },
+            { "bild": "icon:rainbow", "titel": "Ça va passer." },
+            { "bild": "icon:friends", "titel": "Je ne suis pas seul·e." },
+            { "bild": "icon:sunrise", "titel": "Demain est un nouveau jour." },
+            { "bild": "icon:lifebuoy", "titel": "Je peux demander de l’aide." },
+            { "bild": "icon:droplet", "titel": "C’est normal de pleurer." },
+            {  },
+            {  },
+            {  }
+          ]
+        },
+        { "art": "aufgabe", "text": "Mon plan pour les jours tristes", "symbole": ["schreiben"] },
+        {
+          "art": "schritte",
+          "items": [
+            { "titel": "Je remarque : je suis triste.", "text": "À quoi est-ce que je le remarque ?" },
+            { "titel": "J’ouvre ma valise de réconfort.", "text": "Qu’est-ce que je sors en premier ?" },
+            { "titel": "Si ça ne va pas mieux, je parle avec …", "text": "Nom de la personne" }
+          ]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent différentes sources de réconfort – personnes, objets, activités et phrases utiles – et composent une valise de réconfort personnelle avec un plan pour les jours tristes.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. Questions : « Qu’est-ce qui a aidé Nora ? Sa tristesse a-t-elle disparu maintenant ? »",
+          "Exercice 1 (5 min) : relier et discuter : le réconfort peut être une personne, un objet, une activité ou une phrase.",
+          "Exercice 2 (10 min) : préparer la valise en individuel. Dessiner est expressément permis.",
+          "Exercice 3 (10 min) : choisir les cartes de réconfort, en ajouter, les découper et les mettre dans une enveloppe.",
+          "Exercice 4 (5 min) : remplir le plan. Souligner : quand la valise ne suffit pas, demander de l’aide est la bonne étape."
+        ],
+        "hintergrund": "La tristesse est une réaction à une perte ou à une déception et signale à l’entourage que quelqu’un a besoin de proximité. À l’école fondamentale, les enfants élargissent leur répertoire de régulation : à côté du réconfort de personnes familières, ils utilisent de plus en plus la distraction, des activités agréables ou un dialogue intérieur apaisant (Petermann & Wiedebusch, 2016). Être compétent sur le plan émotionnel, ce n’est pas ne ressentir aucune tristesse, c’est disposer de plusieurs moyens de la gérer (Saarni, 1999). La valise de réconfort rend ces moyens visibles : elle ne fait pas disparaître la tristesse, elle la rend supportable.",
+        "quellen": [
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe.",
+          "Saarni, C. (1999). The Development of Emotional Competence. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Ne remplir que deux compartiments. Créer les cartes de réconfort avec des images plutôt qu’avec des phrases.",
+          "schwerer": "Écrire une lettre à Nora : « Que lui dirais-tu pour qu’elle se sente moins seule ? »"
+        },
+        "impulse": [
+          "Qu’est-ce qui te réconforte quand personne n’est là ?",
+          "Quelle phrase de réconfort te semble vraie, laquelle non ?",
+          "Pour qui pourrais-tu être un réconfort ?"
+        ],
+        "tipps": [
+          "Encourager les enfants à préparer une vraie valise de réconfort à la maison (boîte à chaussures : photo, peluche, cartes).",
+          "Ne jamais imposer de phrases de réconfort : ce qui sonne faux peut être laissé de côté."
+        ],
+        "achtung": "Certains enfants pensent à un décès, à une séparation ou à un déménagement. Ne pas approfondir en grand groupe, proposer un entretien individuel ; si la tristesse persiste, informer la direction compétente (responsable).",
+        "material": "Ciseaux, enveloppe ou petite boîte, crayons de couleur"
       }
     }
   },
@@ -517,6 +687,57 @@
         "achtung": "Wird ein Kind während der Übung unruhig, ängstlich oder traurig: die Übung für dieses Kind beenden, die Augen öffnen lassen, im Raum orientieren („Was siehst du hier?“) und in Ruhe nachfragen. Bei starken oder wiederholten Reaktionen die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte; optional ruhige Musik"
       }
+    },
+    "fr": {
+      "titel": "Mon île de calme",
+      "untertitel": "Ton île de calme est dans ta tête. Tu peux l’emporter partout.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Imagine ton île de calme. Dessine-la.",
+          "hinweis": "Seul ce qui te fait du bien a le droit d’aller sur ton île.",
+          "symbole": ["zuhoeren", "malen"]
+        },
+        { "art": "feld", "zeichnen": true, "hoehe": 8.5 },
+        { "art": "aufgabe", "text": "Décris ton île et donne-lui un nom.", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Je vois …", "J’entends …", "Je ressens …", "Mon île s’appelle …"] },
+        { "art": "aufgabe", "text": "Quand penses-tu à ton île ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "avant de m’endormir",
+            "quand je dois attendre",
+            "quand je ne tiens pas en place",
+            "quand il y a trop de bruit",
+            "quand j’ai du chagrin",
+            "avant un contrôle"
+          ],
+          "spalten": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants imaginent un lieu calme et sûr, le fixent en image et avec tous leurs sens, et savent quand ils peuvent s’y rendre en pensée.",
+        "ablauf": [
+          "Mise en condition (3 min) : s’asseoir confortablement, fermer les yeux ou regarder la table, prendre trois respirations calmes.",
+          "Lire lentement (5 min) : « Imagine une île, rien que pour toi. Que vois-tu ? Qu’entends-tu ? Comment est le sol sous tes pieds ? Ici, tout est calme. Reste encore un moment. Puis ouvre doucement les yeux. »",
+          "Exercice 1 (10 min) : dessiner l’île. Questionner plutôt qu’évaluer : « Raconte-moi ton île. »",
+          "Exercice 2 (5 min) : noter les sens et le nom ; aider à écrire.",
+          "Exercice 3 (5 min) : quand l’île aide-t-elle ? Répéter brièvement l’exercice les jours suivants, p. ex. après la récréation."
+        ],
+        "hintergrund": "S’imaginer un lieu calme et sûr est un exercice d’apaisement répandu ; les images mentales font aussi partie des compétences qui permettent de traverser des moments éprouvants (Linehan, 2015). À l’école fondamentale, les enfants utilisent aussi des stratégies intérieures pour réguler leurs émotions, par exemple penser à quelque chose d’agréable (Petermann & Wiedebusch, 2016). Plus l’image est reliée à des sensations et à un nom, plus elle se rappelle facilement. L’exercice agit par la répétition dans des moments calmes.",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe."
+        ],
+        "differenzierung": { "leichter": "Dessiner seulement. L’adulte écrit ce que l’enfant raconte.", "schwerer": "Écrire un court texte : « Un après-midi sur mon île »." },
+        "impulse": ["Qu’y a-t-il de plus beau sur ton île ?", "Comment ton corps se sent-il quand tu y es ?", "Quand pourrais-tu déjà penser à ton île aujourd’hui ?"],
+        "tipps": [
+          "Les yeux peuvent rester ouverts : certains enfants se sentent mal à l’aise les yeux fermés.",
+          "Sur l’île, il n’y a que des personnes, des animaux ou des êtres imaginaires qui font du bien. Ce qui inquiète reste dehors."
+        ],
+        "achtung": "Enfant agité, anxieux ou triste pendant l’exercice : l’arrêter pour cet enfant, lui faire ouvrir les yeux, l’aider à se réorienter (« Que vois-tu ici ? ») et lui parler calmement. Réactions fortes ou répétées : informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ; en option, musique calme"
+      }
     }
   },
   {
@@ -593,6 +814,85 @@
         ],
         "achtung": "Bei Kindern mit Asthma oder anderen Atemwegserkrankungen die Atmung nicht forcieren und die Luft nur kurz anhalten lassen. Wird ein Kind bei einer Übung unruhig oder ängstlich, abbrechen und eine andere anbieten.",
         "material": "Optional: Sanduhr oder Uhr mit Sekundenzeiger"
+      }
+    },
+    "fr": {
+      "titel": "Retrouver le calme : trois exercices",
+      "untertitel": "Quand le corps est agité, la tête a du mal à réfléchir. Essaie les trois exercices et trouve celui qui t’aide le mieux.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Respiration en carré : suis les côtés avec ton doigt.",
+          "hinweis": "Compte lentement jusqu’à quatre sur chaque côté. Fais trois tours.",
+          "symbole": ["zeigen"]
+        },
+        { "art": "atmen", "uebung": "quadrat" },
+        {
+          "art": "aufgabe",
+          "text": "5-4-3-2-1 : regarde autour de toi et écris.",
+          "hinweis": "L’exercice ramène tes pensées dans l’instant présent.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "atmen", "uebung": "fuenf-sinne" },
+        {
+          "art": "aufgabe",
+          "text": "Contracter et relâcher",
+          "hinweis": "Contracte chaque endroit pendant cinq secondes. Puis relâche et sens ce qui change."
+        },
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            { "titel": "Mains : presser un citron", "text": "Serre les deux poings, comme si tu pressais un citron. Tiens – puis relâche." },
+            { "titel": "Épaules : la tortue", "text": "Monte les épaules jusqu’aux oreilles. Tiens – puis laisse-les tomber." },
+            { "titel": "Visage : chasser une mouche", "text": "Fronce le nez et ferme fort les yeux. Tiens – puis relâche." },
+            { "titel": "Pieds : orteils dans le sable", "text": "Enfonce fort les orteils dans le sol. Tiens – puis détends-toi." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Dans quelle mesure chaque exercice t’a-t-il aidé ?", "symbole": ["ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["aide bien", "aide un peu", "aide à peine"],
+          "items": ["Respiration en carré", "5-4-3-2-1", "Contracter et relâcher"]
+        },
+        { "art": "aufgabe", "text": "Ton plan : quand utilises-tu ton meilleur exercice ?", "symbole": ["schreiben"] },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [{ "wenn": "Si j’ai le trac avant la dictée,", "dann": "je fais deux tours de respiration en carré sous la table." }]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent trois exercices d’apaisement, les essaient, évaluent leur effet et planifient quand utiliser leur meilleur exercice.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « À quoi ton corps remarque-t-il que tu es agité ? » Recueillir brièvement : cœur qui bat, respiration rapide, épaules tendues.",
+          "Respiration en carré (5 min) ensemble ; l’adulte compte doucement à voix basse. Trois tours.",
+          "5-4-3-2-1 (8 min) en individuel, puis faire lire quelques exemples.",
+          "Guider la contraction et le relâchement (5 min) : chaque endroit deux fois, parler lentement, laisser des pauses.",
+          "Exercices 4 et 5 (10 min) : évaluer, écrire le plan, présenter les plans à deux.",
+          "Les semaines suivantes, répéter un exercice chaque jour, p. ex. après la récréation."
+        ],
+        "hintergrund": "L’agitation se manifeste d’abord dans le corps : le cœur et la respiration s’accélèrent, les muscles se tendent, penser clairement devient difficile. Selon le modèle des processus de la régulation émotionnelle, on peut intervenir notamment par l’attention et par la réaction corporelle (Gross, 1998). C’est là que les exercices agissent : respirer lentement et régulièrement apaise, 5-4-3-2-1 dirige l’attention vers l’environnement, contracter puis relâcher rend la détente perceptible. Les exercices de relaxation font partie des programmes cognitivo-comportementaux pour enfants anxieux (Kendall & Hedtke, 2006). L’essentiel est de s’exercer dans des moments calmes.",
+        "quellen": [
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "N’introduire qu’un exercice par jour. Pour 5-4-3-2-1, laisser répondre à l’oral.",
+          "schwerer": "Inventer sa propre variante et la guider devant la classe."
+        },
+        "impulse": [
+          "Avec quel exercice ton corps est-il devenu le plus calme ?",
+          "Quel exercice est possible en classe sans que personne ne le remarque ?",
+          "Qu’est-ce qui pourrait te rappeler ton exercice ?"
+        ],
+        "tipps": [
+          "Ne pas l’introduire seulement dans l’agitation : les exercices n’agissent que s’ils ont été souvent exercés auparavant.",
+          "Contracter fermement, mais sans douleur – pas jusqu’à trembler."
+        ],
+        "achtung": "Chez les enfants asthmatiques ou souffrant d’autres maladies respiratoires, ne pas forcer la respiration et ne faire retenir l’air que brièvement. Si un enfant devient agité ou anxieux pendant un exercice, l’arrêter et en proposer un autre.",
+        "material": "En option : sablier ou montre avec trotteuse"
       }
     }
   },
@@ -860,6 +1160,63 @@
         "achtung": "Findet ein Kind über längere Zeit nichts, was ihm Freude macht, oder wirkt es oft bedrückt: aufmerksam beobachten, ein Einzelgespräch anbieten und bei Bedarf die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte; optional Glas und Zettel für ein Freude-Glas"
       }
+    },
+    "fr": {
+      "titel": "Ce qui me donne de la joie",
+      "untertitel": "La joie est souvent petite et vite passée. Quand on regarde bien, on en trouve chaque jour.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Qu’est-ce qui te donne de la joie ? Entoure.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:friends", "text": "amis" },
+            { "bild": "icon:dog", "text": "animaux" },
+            { "bild": "icon:music", "text": "musique" },
+            { "bild": "icon:sun", "text": "soleil" },
+            { "bild": "icon:ball-football", "text": "jouer" },
+            { "bild": "icon:cake", "text": "gâteau" },
+            { "bild": "icon:bike", "text": "faire du vélo" },
+            { "bild": "icon:palette", "text": "dessiner" }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine quelque chose qui t’a fait plaisir aujourd’hui.",
+          "hinweis": "Même les petites choses comptent : une blague, un rayon de soleil, un bon jeu.",
+          "symbole": ["malen"]
+        },
+        { "art": "feld", "zeichnen": true, "hoehe": 5 },
+        { "art": "aufgabe", "text": "Montre ton dessin à un autre enfant. Demande : qu’est-ce qui te donne de la joie ?", "symbole": ["partner", "sprechen"] },
+        { "art": "satzanfaenge", "items": ["L’enfant s’appelle :", "Ce qui lui fait plaisir :"] }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants nomment ce qui leur donne de la joie, fixent un moment joyeux de la journée et en parlent avec un autre enfant.",
+        "ablauf": [
+          "Entrée en matière (5 min) : l’adulte raconte un petit moment joyeux d’aujourd’hui. Question : « Qu’est-ce qui était déjà beau aujourd’hui ? »",
+          "Exercice 1 (5 min) : entourer les images ; les enfants peuvent dessiner leurs propres idées en marge.",
+          "Exercice 2 (10 min) : dessiner un moment joyeux d’aujourd’hui. Qui n’a pas d’idée peut dessiner quelque chose d’hier.",
+          "Exercice 3 (5 min) : à deux, montrer les dessins et raconter. En cercle : « Qu’a raconté l’autre enfant ? »",
+          "Poursuivre comme rituel : en fin de journée, chacun nomme à tour de rôle un moment joyeux."
+        ],
+        "hintergrund": "Les moments agréables se perdent facilement dans le quotidien. Mais la joie peut être perçue et retenue consciemment : dans des études auprès d’adultes, le simple fait de noter régulièrement de bonnes expériences a augmenté le bien-être pendant des mois (Seligman et al., 2005). Les enfants en profitent particulièrement quand les adultes reprennent aussi les émotions agréables, les nomment et posent des questions. Le vocabulaire des émotions s’enrichit ainsi et la joie devient communicable (Brackett, 2019). La feuille traduit cette idée sous une forme adaptée aux enfants : collecter, dessiner un moment joyeux, en parler.",
+        "quellen": [
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement entourer et dessiner. L’adulte aide pour raconter et pour écrire.",
+          "schwerer": "Écrire une phrase pour trois images : « Ça me fait plaisir quand … »"
+        },
+        "impulse": ["Comment la joie se sent-elle dans ton corps ?", "Qu’est-ce qui t’a fait rire aujourd’hui ?", "Comment peux-tu faire plaisir à un autre enfant ?"],
+        "tipps": [
+          "Un bocal de la joie dans la classe : chaque jour, un papier avec un moment joyeux y entre, le vendredi on lit.",
+          "Ne jamais exiger de la joie. Un « Aujourd’hui, rien » peut aussi rester."
+        ],
+        "achtung": "Si un enfant ne trouve longtemps rien qui lui donne de la joie, ou paraît souvent abattu : observer attentivement, proposer un entretien individuel et, si besoin, informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ; en option, un bocal et des papiers pour un bocal de la joie"
+      }
     }
   },
   {
@@ -926,6 +1283,66 @@
           "Das Blatt am Platz oder im Hausaufgabenheft aufbewahren, damit es täglich griffbereit ist."
         ],
         "achtung": "Schreibt ein Kind wiederholt, dass nichts gut war, oder tauchen belastende Erlebnisse auf: behutsam im Einzelgespräch nachfragen und bei Bedarf die zuständige Leitung (Responsable) informieren."
+      }
+    },
+    "fr": {
+      "titel": "Trois bonnes choses",
+      "untertitel": "Chaque jour, il arrive quelque chose de bien – souvent tout petit. Quand on le note pendant une semaine, on le remarque de plus en plus facilement.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Pendant une semaine, note chaque soir trois bonnes choses – et comment elles sont arrivées.",
+          "hinweis": "Les petites choses comptent aussi : une blague, un but à la récré, une bonne discussion.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Lundi – c’était bien", "Comment est-ce arrivé ?"],
+          "breiten": [1.1, 1],
+          "zeilen": 3,
+          "beispiel": ["À la dictée, je n’ai fait que deux fautes.", "J’ai révisé avec ma sœur pendant le week-end."]
+        },
+        { "art": "tabelle", "spalten": ["Mardi – c’était bien", "Comment est-ce arrivé ?"], "breiten": [1.1, 1], "zeilen": 3 },
+        { "art": "tabelle", "spalten": ["Mercredi – c’était bien", "Comment est-ce arrivé ?"], "breiten": [1.1, 1], "zeilen": 3 },
+        { "art": "tabelle", "spalten": ["Jeudi – c’était bien", "Comment est-ce arrivé ?"], "breiten": [1.1, 1], "zeilen": 3 },
+        { "art": "tabelle", "spalten": ["Vendredi – c’était bien", "Comment est-ce arrivé ?"], "breiten": [1.1, 1], "zeilen": 3 },
+        { "art": "tabelle", "spalten": ["Samedi – c’était bien", "Comment est-ce arrivé ?"], "breiten": [1.1, 1], "zeilen": 3 },
+        { "art": "tabelle", "spalten": ["Dimanche – c’était bien", "Comment est-ce arrivé ?"], "breiten": [1.1, 1], "zeilen": 3 },
+        { "art": "aufgabe", "text": "À la fin de la semaine : regarde en arrière.", "symbole": ["nachdenken", "schreiben"] },
+        {
+          "art": "satzanfaenge",
+          "linien": 2,
+          "items": ["Ce qui m’a fait le plus plaisir, c’est …", "J’y ai moi-même contribué : …", "Voici ce que j’ai remarqué cette semaine : …"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants dirigent pendant une semaine leur attention sur de bonnes expériences, en nomment les causes et reconnaissent aussi leur propre part.",
+        "ablauf": [
+          "Introduction (10 min) : l’adulte cite trois bonnes choses de la veille et explique chaque fois comment elles sont arrivées.",
+          "Remplir le lundi ensemble. Questions : « Qui ou quoi y a contribué ? Qu’as-tu fait toi-même ? »",
+          "Les jours d’école, faire écrire 5 minutes chaque jour à la fin des cours ; le week-end à la maison.",
+          "Après une semaine (15 min) : remplir l’exercice 2, présenter volontairement une bonne chose en cercle.",
+          "Évaluer : « À la fin de la semaine, as-tu trouvé plus facilement de bonnes choses ? »"
+        ],
+        "hintergrund": "L’exercice « Trois bonnes choses » vient de la psychologie positive : des adultes qui ont noté chaque soir pendant une semaine trois bonnes expériences et leurs causes ont déclaré, six mois plus tard encore, davantage de bien-être et moins de plaintes dépressives (Seligman et al., 2005). Deux mécanismes sont considérés comme efficaces : l’attention est dirigée vers ce qui a réussi, et la question de la cause relie les bonnes expériences à sa propre action et à d’autres personnes. Qui fait l’expérience que son action a un effet renforce son sentiment d’efficacité personnelle (Bandura, 1977). Pour les enfants, la forme est simplifiée ; la régularité et le caractère volontaire du partage sont décisifs.",
+        "quellen": [
+          "Seligman, M. E. P., Steen, T. A., Park, N. & Peterson, C. (2005). Positive psychology progress: Empirical validation of interventions. American Psychologist, 60(5), 410–421.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Une bonne chose par jour suffit ; la cause peut être racontée à l’oral.",
+          "schwerer": "Noter en plus quelle émotion la bonne chose a déclenchée."
+        },
+        "impulse": [
+          "Quelle a été la plus petite bonne chose de la semaine ?",
+          "Pour quelle bonne chose as-tu toi-même donné un coup de main ?",
+          "À qui voudrais-tu dire merci pour quelque chose ?"
+        ],
+        "tipps": [
+          "Ne pas corriger les notes et ne les lire qu’avec la permission de l’enfant.",
+          "Garder la feuille à sa place ou dans l’agenda, pour l’avoir sous la main chaque jour."
+        ],
+        "achtung": "Si un enfant écrit à plusieurs reprises que rien n’était bien, ou si des expériences pénibles apparaissent : demander avec délicatesse en entretien individuel et, si besoin, informer la direction compétente (responsable)."
       }
     }
   },

@@ -143,6 +143,72 @@
         "achtung": "Wenn ein Kind sagt, dass es keine Freunde hat oder nie mitspielen darf: nicht im Plenum vertiefen, sondern im Einzelgespräch nachfragen, die Pausen beobachten und bei Bedarf die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte; Tafel oder Plakat"
       }
+    },
+    "fr": {
+      "titel": "Un bon ami, une bonne amie",
+      "untertitel": "Les bons amis jouent ensemble et se soutiennent. Après une dispute, ils se réconcilient.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Que fait un bon ami ? Coche.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "titel": "Un bon ami, une bonne amie …",
+          "spalten": 2,
+          "items": [
+            "m’écoute.",
+            "se moque de moi.",
+            "m’aide quand je n’y arrive pas.",
+            "décide toujours à quoi on joue.",
+            "me console quand je suis triste.",
+            "dit : “Sinon, tu n’es plus mon ami.”",
+            "joue parfois à ce que je veux.",
+            "se réconcilie avec moi après une dispute."
+          ]
+        },
+        { "art": "aufgabe", "text": "Pense à un enfant avec qui tu aimes jouer. Dessine-vous deux, puis écris.", "symbole": ["malen", "schreiben"] },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:1",
+          "links": [{ "art": "feld", "zeichnen": true, "hoehe": 4.2 }],
+          "rechts": [{ "art": "satzanfaenge", "items": ["On aime jouer à …", "Ce que j’aime chez toi : …"], "linien": 2 }]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment es-tu un bon ami, une bonne amie ?",
+          "hinweis": "Par exemple : Je partage mes crayons. Je laisse les autres jouer avec moi.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        { "art": "satzanfaenge", "items": ["Ça, je sais déjà le faire : je …", "Ça, je veux encore m’y entraîner : je …"], "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants distinguent ce qui fait du bien à une amitié et ce qui lui nuit, décrivent une de leurs amitiés et nomment ce qu’ils font bien en tant qu’ami ou amie.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « À quoi remarques-tu que quelqu’un est ton ami ou ton amie ? » Noter les réponses au tableau.",
+          "Exercice 1 (5 min) : lire les phrases ensemble, cocher seul. Demander : qu’est-ce que ça fait d’entendre « Sinon, tu n’es plus mon ami » ?",
+          "Exercice 2 (10 min) : dessiner et compléter les phrases. Qui le souhaite présente son dessin.",
+          "Exercice 3 (5 min) : recueillir des exemples au tableau, puis chaque enfant écrit pour soi.",
+          "Une semaine plus tard : « Quand as-tu été un bon ami ou une bonne amie ? »"
+        ],
+        "hintergrund": "À l’entrée à l’école, la façon dont les enfants comprennent l’amitié change : à côté du jeu commun, l’aide, la consolation et la fiabilité prennent de l’importance. À cet âge, les enfants savent nommer ces qualités, mais réagissent encore souvent de façon impulsive en cas de dispute, par exemple par « Alors tu n’es plus mon ami ». La fiche relie donc la reconnaissance des bonnes qualités à un regard sur son propre comportement. Se sentir lié aux autres est un besoin psychologique fondamental (Deci & Ryan, 2000) ; les programmes scolaires d’apprentissage socio-émotionnel renforcent de façon démontrée les compétences relationnelles (Durlak et al., 2011).",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Lire les phrases à voix haute ; l’enfant montre pouce en haut ou pouce en bas. Faire les exercices 2 et 3 par le dessin ou à l’oral.",
+          "schwerer": "Pour les phrases non cochées, écrire ce qu’un bon ami ferait à la place."
+        },
+        "impulse": [
+          "Qu’est-ce qui est parfois difficile quand on est un bon ami ?",
+          "Peut-on être amis quand l’un est parfois méchant ?",
+          "Comment peux-tu être un bon ami pour un nouvel enfant ?"
+        ],
+        "tipps": [
+          "Si un enfant ne trouve personne, il dessine quelqu’un de la famille ou du voisinage, ou il dessine à quoi ressemblerait un bon ami.",
+          "Afficher les qualités sur une affiche « Comment sont les bons amis »."
+        ],
+        "achtung": "Si un enfant dit qu’il n’a pas d’amis ou qu’on ne le laisse jamais jouer : ne pas approfondir devant la classe, mais poser des questions en entretien individuel, observer les récréations et, si nécessaire, informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ; tableau ou affiche"
+      }
     }
   },
   {
@@ -258,6 +324,114 @@
         ],
         "achtung": "Wenn ein Kind von dauerhaftem Ausschluss, Drohungen oder Auslachen erzählt, kann Mobbing dahinterstehen: im Einzelgespräch nachfragen und die zuständige Leitung (Responsable) informieren.",
         "material": "Optional ein Rezept oder Kochbuch"
+      }
+    },
+    "fr": {
+      "titel": "La recette de l’amitié",
+      "untertitel": "Une amitié ne naît pas toute seule. Il lui faut de bons ingrédients, des soins – et parfois une réparation après une dispute.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Quels ingrédients faut-il pour une bonne amitié ? Choisis-en quatre et note-les dans la recette.",
+          "hinweis": "Écris combien il en faut (une pincée, deux cuillères, une grosse part …) et à quoi on reconnaît l’ingrédient.",
+          "symbole": ["lesen", "schreiben"]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Ingrédients",
+          "items": [
+            "la confiance",
+            "l’écoute",
+            "l’honnêteté",
+            "l’humour",
+            "l’entraide",
+            "la patience",
+            "le pardon",
+            "du temps ensemble",
+            "le respect",
+            "le partage",
+            "la solidarité"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Ingrédient", "Combien ?", "À quoi on le reconnaît"],
+          "breiten": [1.1, 1.2, 2.9],
+          "zeilen": 4,
+          "beispiel": ["l’écoute", "une grosse part", "Diogo me laisse finir quand je parle de mon chien."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prendre soin d’une amitié : tu le fais souvent ?",
+          "hinweis": "Entoure ensuite une chose que tu veux faire plus souvent cette semaine.",
+          "symbole": ["ankreuzen", "einkreisen"]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["souvent", "parfois", "rarement"],
+          "items": [
+            "Je demande à mes amis comment ils vont.",
+            "Je tiens mes promesses.",
+            "Je me réjouis avec mes amis quand quelque chose leur réussit.",
+            "Je reste de leur côté quand d’autres se moquent d’eux.",
+            "Je ne répète pas les secrets.",
+            "Il m’arrive de dire merci."
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Ça a brûlé",
+          "text": "Chiara et Inês sont les meilleures amies du monde. À la Maison Relais, elles bricolent ensemble presque tous les jours. Aujourd’hui, Chiara préfère jouer au foot avec Aylin. Inês est blessée et crie : « Eh bien, tu n’es plus mon amie. » Chiara se détourne sans un mot. Le lendemain matin, elles sont assises loin l’une de l’autre dans le bus scolaire.",
+          "bild": "figur:mia:traurig"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment Chiara et Inês peuvent-elles se retrouver ? Écris pour chaque étape.",
+          "symbole": ["lesen", "schreiben"]
+        },
+        {
+          "art": "schritte",
+          "linien": 2,
+          "items": [
+            { "titel": "Se calmer", "text": "D’abord retrouver son calme. Que peut faire Inês avant de parler à Chiara ?" },
+            { "titel": "Écouter", "text": "Chacune raconte comment elle s’est sentie. Que pourrait dire Chiara ?" },
+            { "titel": "S’excuser", "text": "De quoi Inês peut-elle s’excuser ? Et Chiara ?" },
+            { "titel": "Prévoir la suite", "text": "Comment feront-elles la prochaine fois ?" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Pense à une dispute que tu as eue avec un ami ou une amie.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "frage", "text": "Qu’est-ce qui vous a aidés à vous réconcilier – ou qu’est-ce qui aurait aidé ?", "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants nomment ce qui fait tenir une amitié, évaluent comment ils entretiennent eux-mêmes leurs amitiés et connaissent quatre étapes pour se réconcilier après une dispute.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer une vraie recette. Demander : « Si l’amitié était un plat, qu’est-ce qu’on y mettrait ? »",
+          "Exercice 1 (10 min) : choisir les ingrédients et remplir la recette. Comparer les quantités : de quoi faut-il beaucoup, de quoi seulement une pincée ?",
+          "Exercice 2 (5 min) : auto-évaluation individuelle ; chaque enfant entoure une résolution pour la semaine.",
+          "Lire l’histoire. Demander : « Qu’est-ce qui a brûlé ici ? Comment vont Inês et Chiara ? »",
+          "Exercice 3 (15 min) à deux : remplir les quatre étapes et montrer brièvement la réconciliation en jeu de rôle.",
+          "Exercice 4 : noter une expérience personnelle ; échange uniquement sur base volontaire."
+        ],
+        "hintergrund": "À l’école primaire, les amitiés deviennent plus stables et plus réciproques : la confiance, le soutien et la fiabilité prennent du poids. Se sentir lié aux autres est un besoin psychologique fondamental (Deci & Ryan, 2000). Les disputes font aussi partie des amitiés proches – l’essentiel est que les enfants connaissent des moyens de se réconcilier. Les approches restauratives ne placent pas la question de la faute au centre, mais demandent : que s’est-il passé, qui est concerné et que faut-il pour réparer (Wachtel, 2016) ? L’image de la recette rend concrètes des qualités relationnelles abstraites et invite à regarder son propre comportement sans reproche.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices."
+        ],
+        "differenzierung": {
+          "leichter": "N’inscrire que deux ingrédients et omettre la colonne « Combien ? ». Discuter les quatre étapes à l’oral, n’écrire que sur une étape.",
+          "schwerer": "Écrire une recette d’amitié complète avec sa préparation (« Prenez … ») et la mettre en page pour un livre de cuisine de la classe."
+        },
+        "impulse": [
+          "Quel ingrédient est le plus difficile à trouver ?",
+          "Une amitié peut-elle résister à une dispute ?",
+          "Est-ce que « pardon » suffit – ou faut-il plus ?"
+        ],
+        "tipps": [
+          "Le jeu de rôle de la réconciliation reste volontaire : personne n’est obligé de se réconcilier tout de suite.",
+          "Rassembler les recettes dans un livre de cuisine de la classe et y revenir en cas de dispute."
+        ],
+        "achtung": "Si un enfant parle d’exclusion durable, de menaces ou de moqueries, il peut s’agir de harcèlement : poser des questions en entretien individuel et informer la direction compétente (responsable).",
+        "material": "En option : une recette ou un livre de cuisine"
       }
     }
   },
@@ -581,6 +755,100 @@
         "achtung": "Wenn Streit regelmäßig in Gewalt endet oder immer dasselbe Kind trifft, genauer hinschauen: Es kann sich um Mobbing handeln. Dann die zuständige Leitung (Responsable) informieren.",
         "material": "Optional ein Ball und eine Sanduhr zum Nachspielen"
       }
+    },
+    "fr": {
+      "titel": "Dispute : et maintenant ?",
+      "untertitel": "Il y a des disputes dans chaque classe. Avec quatre étapes, vous trouvez une solution.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Que se passe-t-il ? Regarde bien les images.", "symbole": ["lesen", "nachdenken"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": ["figur:tom:wuetend", "figur:sami:wuetend"],
+              "requisit": "icon:ball-football",
+              "text": "Le ballon est à moi.",
+              "sprecher": 0,
+              "untertitel": "Luca et Yusuf veulent tous les deux le ballon."
+            },
+            {
+              "figuren": ["figur:tom:ruhig", "figur:sami:wuetend:verschraenkt"],
+              "text": "Stop. On respire d’abord.",
+              "sprecher": 0,
+              "untertitel": "Luca s’arrête."
+            },
+            {
+              "figuren": ["figur:tom:froh", "figur:sami:froh"],
+              "requisit": "icon:ball-football",
+              "sprecher": 1,
+              "untertitel": "Les deux se mettent d’accord."
+            }
+          ]
+        },
+        { "art": "aufgabe", "text": "Lis les quatre étapes à voix haute.", "symbole": ["lesen", "sprechen"] },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "S’arrêter", "text": "Dire stop. Respirer à fond." },
+            { "titel": "Dire ce qui se passe", "text": "« Je veux …, parce que … »" },
+            { "titel": "Chercher des idées", "text": "À tour de rôle ? Jouer ensemble ?" },
+            { "titel": "Se mettre d’accord", "text": "Essayer une idée." }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelles idées sont justes pour les deux ? Coche.",
+          "hinweis": "Écris une idée dans la bulle vide.",
+          "symbole": ["ankreuzen", "schreiben"]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "chacun son tour",
+            "enlever le ballon à l’autre",
+            "jouer ensemble",
+            "crier très fort",
+            "tirer au sort qui commence",
+            "demander à un adulte"
+          ]
+        },
+        { "art": "aufgabe", "text": "Et toi ? Pense à une de tes disputes.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "satzanfaenge", "items": ["On s’est disputés à cause de …", "La prochaine fois, je fais d’abord : …"] }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent une dispute typique dans une bande dessinée, apprennent quatre étapes simples pour la résoudre et choisissent des idées justes.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « À propos de quoi vous disputez-vous le plus souvent à la récré ? » Recueillir des exemples sans nommer personne.",
+          "Regarder la bande dessinée (5 min) : « Quel est le problème ? Comment se sentent les deux ? »",
+          "Lire les quatre étapes à voix haute et les associer à des gestes : main levée (s’arrêter), main sur la poitrine (dire ce qui se passe), compter sur les doigts (idées), poignée de main (se mettre d’accord).",
+          "Exercice 3 (10 min) : cocher les idées, écrire un accord dans la bulle et comparer : est-ce juste pour les deux ?",
+          "Exercice 4 (5 min) : penser à une dispute personnelle. Pour finir, rejouer une scène à deux – une fois sans, une fois avec les quatre étapes."
+        ],
+        "hintergrund": "Les enfants de six à huit ans se disputent souvent à propos d’objets, de places et de règles du jeu. En cas de dispute, ils ont besoin d’étapes simples, toujours les mêmes, qu’ils peuvent retrouver même dans l’agitation. Les programmes de prévention de la violence exercent donc une courte suite de résolution de problèmes : nommer le problème, rassembler des solutions, choisir une solution juste et l’essayer (Cierpka, 2005). Le programme Dina Dinosaur, destiné aux jeunes enfants, entraîne lui aussi ces étapes avec des images et des jeux de rôle et renforce ainsi les capacités de résolution sociale de problèmes (Webster-Stratton & Reid, 2003). S’arrêter est volontairement la première étape : ce n’est que lorsque l’agitation retombe que les enfants peuvent écouter et chercher des idées.",
+        "quellen": [
+          "Cierpka, M. (Hrsg.) (2005). Faustlos – Wie Kinder Konflikte gewaltfrei lösen lernen. Freiburg: Herder.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Parler des images et des étapes à l’oral ; lire les idées à voix haute, l’enfant montre celles qui conviennent.",
+          "schwerer": "Dessiner sa propre bande dessinée sur une dispute et écrire en dessous les quatre étapes."
+        },
+        "impulse": [
+          "Qu’est-ce qui t’aide à te calmer pendant une dispute ?",
+          "À quoi vois-tu qu’une solution est juste ?",
+          "Quand vas-tu chercher un adulte ?"
+        ],
+        "tipps": [
+          "Afficher les quatre étapes avec les gestes en classe et à la Maison Relais.",
+          "Lors de la prochaine vraie dispute, demander : « À quelle étape en êtes-vous ? »"
+        ],
+        "achtung": "Si les disputes finissent régulièrement en violence ou touchent toujours le même enfant, regarder de plus près : il peut s’agir de harcèlement. Informer alors la direction compétente (responsable).",
+        "material": "En option : un ballon et un sablier pour rejouer la scène"
+      }
     }
   },
   {
@@ -681,6 +949,103 @@
         ],
         "achtung": "Wenn ein Konflikt immer wieder dieselben Kinder trifft oder mit Drohungen und Gewalt verbunden ist, reicht Problemlösen nicht: die zuständige Leitung (Responsable) informieren und das weitere Vorgehen gemeinsam klären.",
         "material": "Tafel oder Plakat mit dem Brückenbild"
+      }
+    },
+    "fr": {
+      "titel": "Le pont des conflits",
+      "untertitel": "Dans une dispute, deux côtés s’opposent. Une bonne solution est comme un pont : les deux peuvent le traverser.",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bild",
+              "bild": "motiv:bruecke",
+              "groesse": "l",
+              "text": "À gauche et à droite se tiennent les deux côtés. Le pont, c’est votre solution."
+            }
+          ],
+          "rechts": [
+            {
+              "art": "schritte",
+              "linien": 0,
+              "items": [
+                { "titel": "Comprendre les deux côtés", "text": "Que veulent-ils ? Comment vont-ils ?" },
+                { "titel": "Chercher des idées", "text": "Autant que possible – sans les juger pour l’instant." },
+                { "titel": "Penser aux conséquences", "text": "Que se passe-t-il alors ? Pour qui est-ce bien ?" },
+                { "titel": "Choisir l’idée la plus juste", "text": "Avec quelle idée les deux peuvent-ils vivre ?" }
+              ]
+            }
+          ]
+        },
+        {
+          "art": "geschichte",
+          "titel": "Un ballon, deux groupes",
+          "text": "À la récré, il ne reste qu’un ballon de basket. Kim, Mathis et Nora veulent lancer des paniers. Robin, Ana et Elias veulent un match à deux équipes. Les deux groupes tirent sur le ballon. Kim crie : « On était là les premiers. » Robin répond : « Mais vous l’avez tous les jours. » Puis la sonnerie retentit, et tous retournent en classe, furieux.",
+          "bild": "figur:lea:wuetend"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Étape 1 : que veulent les deux groupes – et pourquoi ? Comment se sentent-ils ?",
+          "symbole": ["lesen", "schreiben"]
+        },
+        {
+          "art": "spalten",
+          "links": [{ "art": "satzanfaenge", "items": ["Le groupe de Kim veut …", "parce que …", "Il se sent …"], "linien": 2 }],
+          "rechts": [{ "art": "satzanfaenge", "items": ["Le groupe de Robin veut …", "parce que …", "Il se sent …"], "linien": 2 }]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Étapes 2 et 3 : trouve au moins quatre ponts. Que se passe-t-il à chaque fois ? Est-ce juste pour les deux ?",
+          "hinweis": "Écris « oui », « en partie » ou « non » dans la dernière colonne.",
+          "symbole": ["gruppe", "schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Idée de pont", "Que se passe-t-il alors ?", "Juste pour les deux ?"],
+          "breiten": [2.3, 2.3, 1],
+          "zeilen": 4,
+          "beispiel": [
+            "Chacun son tour : dix minutes de paniers, puis dix minutes de match.",
+            "Les deux ont leur tour, mais personne n’a toute la récré.",
+            "oui"
+          ]
+        },
+        { "art": "aufgabe", "text": "Étape 4 : quel pont est le plus juste ? Explique pourquoi.", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "linien", "anzahl": 3 },
+        { "art": "aufgabe", "text": "Pense à une de tes disputes. À quoi pourrait ressembler votre pont ?", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "satzanfaenge", "items": ["Je voulais …", "L’autre côté voulait …", "Notre pont pourrait être : …"], "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent un modèle de résolution de problèmes en quatre étapes, se mettent à la place des deux côtés d’un conflit, rassemblent des solutions, estiment leurs conséquences et choisissent une solution juste.",
+        "ablauf": [
+          "Entrée en matière (5 min) : montrer l’image du pont : « Deux groupes se tiennent sur deux rives. De quoi ont-ils besoin pour se rejoindre ? »",
+          "Lire l’histoire, exercice 1 à deux (10 min). Demander : « Pourquoi est-ce si important pour le groupe de Kim ? Et pour celui de Robin ? »",
+          "Exercice 2 en petits groupes (15 min) : d’abord rassembler les idées sans les juger, puis examiner conséquences et équité.",
+          "Exercice 3 : chaque groupe présente son pont le plus juste. La classe vérifie : les deux côtés peuvent-ils vivre avec ?",
+          "Exercice 4 en travail individuel, échange volontaire. Réutiliser l’image du pont pour de vrais conflits, par exemple au conseil de classe."
+        ],
+        "hintergrund": "Le programme « I Can Problem Solve » montre que, dès l’école primaire, les enfants peuvent apprendre à réfléchir aux conflits : trouver plusieurs solutions, estimer les conséquences et tenir compte des sentiments des autres (Shure, 1992). L’enseignant ne donne pas de bonne solution toute faite, il stimule la réflexion – les enfants apprennent comment penser, pas quoi penser. Le programme PATHS contient des étapes de résolution de problèmes semblables et renforce de façon démontrée les compétences émotionnelles et sociales des enfants scolarisés (Greenberg et al., 1995). L’image du pont montre qu’une solution solide doit relier les deux côtés.",
+        "quellen": [
+          "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press.",
+          "Greenberg, M. T., Kusché, C. A., Cook, E. T. & Quamma, J. P. (1995). Promoting emotional competence in school-aged children: The effects of the PATHS curriculum. Development and Psychopathology, 7(1), 117–136."
+        ],
+        "differenzierung": {
+          "leichter": "N’écrire que deux idées dans le tableau ; discuter la colonne « Que se passe-t-il alors ? » à l’oral.",
+          "schwerer": "Concevoir un pont pour un conflit qui concerne toute la classe (p. ex. l’utilisation du terrain de foot) et le proposer au conseil de classe."
+        },
+        "impulse": [
+          "Y a-t-il des disputes où aucun pont n’est possible ? Que faire alors ?",
+          "Pourquoi « Le premier arrivé gagne » n’est-il pas toujours juste ?",
+          "Qui peut aider à construire un pont ?"
+        ],
+        "tipps": [
+          "En rassemblant les idées, ne pas juger tout de suite : même des idées inhabituelles mènent souvent à de bonnes solutions.",
+          "Afficher les quatre étapes avec l’image du pont."
+        ],
+        "achtung": "Si un conflit touche toujours les mêmes enfants ou s’accompagne de menaces et de violence, la résolution de problèmes ne suffit pas : informer la direction compétente (responsable) et clarifier ensemble la suite.",
+        "material": "Tableau ou affiche avec l’image du pont"
       }
     }
   },
@@ -996,6 +1361,76 @@
         "achtung": "Wenn ein Kind in den Sätzen von Angst, Gewalt oder großen Sorgen zu Hause schreibt: nicht im Plenum vertiefen, später im Einzelgespräch nachfragen und die zuständige Leitung (Responsable) informieren.",
         "material": "Optional Gefühlsgesichter als Bildkarten"
       }
+    },
+    "fr": {
+      "titel": "Je dis ce que je ressens",
+      "untertitel": "Les autres ne peuvent pas voir dans ta tête. Quand tu dis ce que tu ressens, ils te comprennent mieux.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Lis les phrases avec « je ». Répète-les à voix haute.", "symbole": ["lesen", "sprechen"] },
+        {
+          "art": "comic",
+          "spalten": 2,
+          "felder": [
+            {
+              "figuren": ["figur:sami:wuetend", "figur:tom:ueberrascht"],
+              "requisit": "icon:puzzle",
+              "text": "Je suis en colère, parce que tu as cassé mon puzzle.",
+              "sprecher": 0
+            },
+            {
+              "figuren": ["figur:amira:traurig", "figur:noah:neutral"],
+              "text": "Je suis triste, parce que je ne peux pas jouer avec vous.",
+              "sprecher": 0
+            }
+          ]
+        },
+        { "art": "aufgabe", "text": "Et toi ? Complète les phrases.", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Je suis en colère, parce que …", "Je suis triste, parce que …", "Ça me fait plaisir, parce que …"] },
+        {
+          "art": "aufgabe",
+          "text": "Entraînez-vous à deux. Que répond Diogo ? Que dit ensuite Emma ?",
+          "hinweis": "Par exemple : « Je ne le savais pas. Tu joues avec moi demain ? »",
+          "symbole": ["partner", "sprechen"]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [
+            { "wer": "Emma", "text": "Je suis triste, parce que tu ne joues pas avec moi à la récré." },
+            { "wer": "Diogo" },
+            { "wer": "Emma" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants expriment leurs sentiments avec de simples phrases en « je » (« Je suis …, parce que … ») et s’exercent à répondre gentiment à une phrase en « je ».",
+        "ablauf": [
+          "Entrée en matière (5 min) : un enfant mime un sentiment, les autres devinent. Demander : « Qu’est-ce qui aide le plus – deviner ou dire ? »",
+          "Bande dessinée (5 min) : lire les phrases en « je » ensemble et les répéter avec la voix qui convient.",
+          "Exercice 2 (10 min) : les enfants complètent les phrases. Lire à voix haute seulement si l’on a envie.",
+          "Exercice 3 à deux (10 min) : lire la phrase d’Emma, écrire la suite de la conversation, puis la jouer en échangeant les rôles.",
+          "Reprendre dans le quotidien : en cas de dispute, demander : « Peux-tu le dire avec une phrase en je ? »"
+        ],
+        "hintergrund": "Celui qui sait nommer ses sentiments les régule plus facilement et peut les communiquer aux autres. La compétence émotionnelle comprend, outre la reconnaissance des sentiments, leur expression appropriée ; elle est étroitement liée à de bonnes relations avec les camarades du même âge (Petermann & Wiedebusch, 2016). À l’école primaire, le vocabulaire des sentiments s’enrichit fortement – surtout lorsque les adultes nomment les sentiments et invitent à en parler. Brackett (2019) décrit la reconnaissance, la désignation et l’expression des sentiments comme des capacités qui s’apprennent et se consolident par la pratique au quotidien. La phrase « Je suis …, parce que … » relie sentiment et motif et prépare le message je.",
+        "quellen": [
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "Compléter les phrases à l’oral, l’adulte écrit. Proposer les visages de sentiments sous forme de cartes illustrées.",
+          "schwerer": "Collecter d’autres mots de sentiments (déçu, fier, excité, vexé) et former avec eux ses propres phrases en « je »."
+        },
+        "impulse": [
+          "À qui dis-tu que tu es triste ?",
+          "Qu’est-ce qui est plus facile : dire que tu es content ou dire que tu es en colère ?",
+          "Qu’est-ce que ça fait quand quelqu’un prend ta phrase en « je » au sérieux ?"
+        ],
+        "tipps": [
+          "Montrer l’exemple avec ses propres phrases en « je » : « Je m’impatiente en ce moment, parce qu’il y a tant de bruit. »",
+          "Ne forcer aucun enfant à parler : certains ont besoin de temps avant de parler de leurs sentiments."
+        ],
+        "achtung": "Si un enfant écrit dans ses phrases sur la peur, la violence ou de gros soucis à la maison : ne pas approfondir devant la classe, poser des questions plus tard en entretien individuel et informer la direction compétente (responsable).",
+        "material": "En option : visages de sentiments sous forme de cartes illustrées"
+      }
     }
   },
   {
@@ -1110,6 +1545,119 @@
           "Nicht auf dem genauen Wortlaut bestehen: Es geht um die Haltung, nicht um eine Formel."
         ],
         "achtung": "Ich-Botschaften helfen nicht gegen Mobbing oder Gewalt. Wird ein Kind wiederholt angegriffen, braucht es den Schutz Erwachsener: die zuständige Leitung (Responsable) informieren."
+      }
+    },
+    "fr": {
+      "titel": "Le message je en trois parties",
+      "untertitel": "Les reproches aggravent presque toujours une dispute. Un message je dit clairement ce qui te dérange – sans attaquer l’autre.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "À l’aide aux devoirs",
+          "text": "À l’aide aux devoirs, Nora fait ses maths. Liam prend sa règle pour la troisième fois sans demander. Nora s’écrie : « Tu m’énerves. Tu prends toujours mes affaires. » Liam répond en criant : « Ne fais pas tant d’histoires. » Maintenant, les deux sont fâchés, et plus personne ne fait de maths.",
+          "bild": "figur:mia:wuetend"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Voilà comment Nora aurait pu le dire avec un message je. Lis les trois parties.",
+          "hinweis": "Dis exactement ce qui s’est passé : sans insultes, sans « toujours » ni « jamais ».",
+          "symbole": ["lesen"]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Comportement", "text": "« Quand tu prends ma règle sans demander, … »" },
+            { "titel": "Sentiment", "text": "« … ça m’énerve. »" },
+            { "titel": "Souhait", "text": "« Je voudrais que tu demandes avant. »" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Message tu ou message je ? Coche.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["message tu", "message je"],
+          "items": [
+            "Tu es tellement méchant.",
+            "Quand tu m’interromps, je perds le fil. Laisse-moi finir, s’il te plaît.",
+            "Tu passes toujours devant tout le monde.",
+            "Je suis triste quand tu te moques de moi. Je voudrais que tu arrêtes.",
+            "Tu ne m’écoutes jamais.",
+            "Quand vous êtes si bruyants, je n’arrive pas à me concentrer. Pouvez-vous faire moins de bruit ?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Transforme ces deux messages tu en messages je.",
+          "symbole": ["schreiben"],
+          "hinweis": "Les mots de sentiments t’aident."
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Mots de sentiments",
+          "items": [
+            "en colère",
+            "énervé / énervée",
+            "déçu / déçue",
+            "triste",
+            "blessé / blessée",
+            "pas sûr / pas sûre",
+            "stressé / stressée",
+            "impatient / impatiente",
+            "impuissant / impuissante"
+          ]
+        },
+        {
+          "art": "spalten",
+          "links": [
+            { "art": "text", "text": "« Tu passes toujours devant tout le monde. »" },
+            { "art": "satzanfaenge", "linien": 2, "items": ["Quand tu …", "je suis …", "Je voudrais que …"] }
+          ],
+          "rechts": [
+            { "art": "text", "text": "« Tu ne m’écoutes jamais. »" },
+            { "art": "satzanfaenge", "linien": 2, "items": ["Quand tu …", "je suis …", "Je voudrais que …"] }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pense à une vraie situation qui te dérange. Écris ton message je et entraîne-toi avec un camarade.",
+          "symbole": ["schreiben", "partner"]
+        },
+        { "art": "satzanfaenge", "items": ["Quand tu …", "je suis …", "Je voudrais que …", "Mon camarade répond : …"] },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "text": "La voix parle aussi. Dis ton message je calmement et clairement, et regarde l’autre personne en le disant."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants distinguent messages tu et messages je, connaissent les trois parties d’un message je (comportement, sentiment, souhait) et reformulent des reproches en messages je.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. Demander : « Qu’a dit Nora ? Comment Liam a-t-il réagi ? Pourquoi est-ce devenu pire ? »",
+          "Montrer les trois parties au tableau et dire à voix haute le message je de Nora – une fois en colère, une fois calmement. Lequel marche mieux ?",
+          "Exercice 2 seul (5 min), puis comparer. Relever les traits des messages tu : insultes, « toujours », « jamais ».",
+          "Exercice 3 à deux (10 min) : transformer les messages tu, lire quelques résultats à voix haute.",
+          "Exercice 4 (10 min) : écrire son propre message je et le répéter en jeu de rôle. Le camarade écoute et répond."
+        ],
+        "hintergrund": "Thomas Gordon (1972) a décrit le message je comme le contraire du message tu : les messages tu (« Tu es tellement méchant ») contiennent des jugements et des reproches et provoquent souvent la défense ou la contre-attaque. Les messages je, eux, décrivent le comportement sans le juger, nomment son propre sentiment et disent clairement ce dont on a besoin. Dans la forme originale de Gordon, l’effet concret du comportement en fait aussi partie ; à l’école, la forme simple en trois temps comportement – sentiment – souhait a fait ses preuves. La condition est que les enfants sachent reconnaître et nommer leurs sentiments (Petermann & Wiedebusch, 2016).",
+        "quellen": [
+          "Gordon, T. (1972). Familienkonferenz. Hamburg: Hoffmann und Campe.",
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Écrire au tableau les mots de sentiments et la phrase « Je voudrais que … ». Ne transformer qu’un seul message tu.",
+          "schwerer": "Noter ce que l’autre pourrait répondre – et comment réagir s’il ne prend pas le message je au sérieux."
+        },
+        "impulse": [
+          "Pourquoi « toujours » et « jamais » sont-ils dangereux dans une dispute ?",
+          "Quand est-ce difficile pour toi de dire un message je ?",
+          "Que peux-tu faire si l’autre continue quand même ?"
+        ],
+        "tipps": [
+          "Utiliser soi-même des messages je : « Quand tout le monde parle en même temps, je ne comprends personne. Je voudrais que vous leviez la main. »",
+          "Ne pas insister sur la formulation exacte : ce qui compte, c’est l’attitude, pas une formule."
+        ],
+        "achtung": "Les messages je n’aident pas contre le harcèlement ou la violence. Si un enfant est attaqué à plusieurs reprises, il a besoin de la protection d’adultes : informer la direction compétente (responsable)."
       }
     }
   },
@@ -1537,6 +2085,75 @@
         ],
         "achtung": "Erzählt ein Kind von einem schlechten Geheimnis, von Berührungen oder Gewalt: ruhig zuhören, nicht ausfragen, nichts versprechen. Bei Hinweisen auf Gefährdung sofort nach dem internen Ablauf handeln, das Kind nicht allein lassen und die zuständige Leitung (Responsable) informieren."
       }
+    },
+    "fr": {
+      "titel": "Mon non, c’est OK",
+      "untertitel": "Ton corps t’appartient. Tu as le droit de dire non – même aux adultes.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "C’est vrai ? Coche.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["vrai", "faux"],
+          "items": [
+            "J’ai le droit de dire non quand quelque chose ne me plaît pas.",
+            "Je n’ai jamais le droit de dire non aux adultes.",
+            "Quand je dis non, je suis désagréable.",
+            "Si quelqu’un n’entend pas mon non, je vais chercher de l’aide."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "C’est un bon ou un mauvais secret ? Coche.",
+          "hinweis": "Les bons secrets font plaisir. Les mauvais font mal au ventre. Ceux-là, tu peux toujours les raconter.",
+          "symbole": ["lesen", "ankreuzen"]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["bon", "mauvais"],
+          "items": [
+            "On prépare une surprise pour la maîtresse.",
+            "Un enfant dit : “Ne dis à personne que je t’ai frappé.”",
+            "Tu sais ce que Mila va recevoir pour son anniversaire.",
+            "Quelqu’un dit : “Si tu racontes ça, tu n’es plus mon ami.”"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À qui peux-tu le raconter ? Écris des noms.",
+          "hinweis": "Tu peux aussi appeler le Kanner- a Jugendtelefon : 116 111.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "satzanfaenge", "items": ["À la maison : …", "À l’école : …", "Autre : …"] }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants savent qu’ils ont le droit de dire non – même aux adultes –, distinguent les bons des mauvais secrets et nomment des personnes à qui se confier.",
+        "ablauf": [
+          "Entrée en matière (5 min) : faire un non faible (à voix basse, en riant) et un non fort (voix forte, regard ferme). « Lequel marche ? » Tous s’entraînent au non fort.",
+          "Exercice 1 (5 min) : lire et discuter les phrases. Clarifier : dire non n’est pas impoli ; on peut aussi saluer autrement, par exemple d’un signe de la main.",
+          "Exercice 2 (10 min) : les surprises sont de bons secrets, elles seront bientôt révélées. Les mauvais secrets peuvent toujours être racontés – même si l’on a promis quelque chose.",
+          "Exercice 3 (5 min) : noter les personnes de confiance, lire ensemble le numéro 116 111.",
+          "Conclusion : « Cafter ou chercher de l’aide ? » Chercher de l’aide est juste quand quelqu’un va mal."
+        ],
+        "hintergrund": "Les offres de prévention destinées aux enfants du primaire transmettent l’autodétermination sur son propre corps, le droit de dire non et la différence entre bons et mauvais secrets. Cette distinction est importante, car en cas d’abus les enfants sont souvent réduits au silence par le secret, la culpabilité ou des menaces. Les enfants ont besoin de mots pour leurs sentiments ; un « mal de ventre » est un signal à prendre au sérieux (Petermann & Wiedebusch, 2016). Tout aussi importants sont des adultes fiables vers lesquels l’enfant peut se tourner – ils comptent parmi les plus puissants facteurs de protection (Masten, 2014). Les contenus sont transmis sans détails anxiogènes.",
+        "quellen": [
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Lire toutes les phrases ; l’enfant montre pouce en haut ou pouce en bas. Dessiner les personnes de confiance au lieu de les écrire.",
+          "schwerer": "Trouver ses propres exemples de bons et de mauvais secrets et les justifier."
+        },
+        "impulse": [
+          "À quoi remarques-tu qu’un secret est mauvais ?",
+          "Que peux-tu faire si quelqu’un ne te croit pas ?",
+          "Comment peux-tu saluer quelqu’un sans le serrer dans tes bras ?"
+        ],
+        "tipps": [
+          "Dire aux enfants : « Si quelqu’un ne t’écoute pas, raconte-le à un autre adulte – jusqu’à ce que quelqu’un t’aide. »",
+          "Informer les parents à l’avance que le droit de dire non et les secrets seront abordés en classe."
+        ],
+        "achtung": "Si un enfant parle d’un mauvais secret, de contacts ou de violence : écouter calmement, ne pas poser de questions insistantes, ne rien promettre. En cas d’indices de danger, agir immédiatement selon la procédure interne, ne pas laisser l’enfant seul et informer la direction compétente (responsable)."
+      }
     }
   },
   {
@@ -1634,6 +2251,95 @@
         "tipps": ["Die Kreise nicht einsammeln oder vorlesen lassen.", "Auch die Grenzen anderer üben: Wer Stopp hört, hört auf."],
         "achtung": "Deutet ein Kind belastende Berührungen, Geheimnisse oder Gewalt an: ruhig zuhören, nicht ausfragen. Bei Hinweisen auf Gefährdung sofort nach dem internen Ablauf handeln, das Kind nicht allein lassen und die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte"
+      }
+    },
+    "fr": {
+      "titel": "Sentir et montrer ses limites",
+      "untertitel": "Chaque personne a des limites invisibles. Ton corps remarque souvent le premier quand quelque chose est trop proche ou trop fort.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Trop fort",
+          "text": "Zoé et Aylin sont de bonnes amies. Chaque matin, Zoé serre Aylin dans ses bras pour dire bonjour – très fort et longtemps. Aylin aime beaucoup Zoé. Mais ces câlins, c’est trop pour elle. Son corps se raidit, et elle retient son souffle. Elle ne sait pas comment le dire sans blesser Zoé.",
+          "bild": "figur:amira:verlegen"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où le sens-tu quand c’est trop proche ou trop fort pour toi ? Colorie les endroits avec la bonne couleur.",
+          "hinweis": "Chacun le sent à sa façon. Il n’y a pas de bonne ou de mauvaise réponse.",
+          "symbole": ["nachdenken", "malen"]
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            { "farbe": "rot", "text": "Mon cœur bat vite." },
+            { "farbe": "orange", "text": "Mon ventre se serre." },
+            { "farbe": "blau", "text": "Mon corps se raidit." },
+            { "farbe": "lila", "text": "Je retiens mon souffle." },
+            { "farbe": "gelb", "text": "J’ai chaud au visage." },
+            { "farbe": "gruen", "text": "Mes jambes veulent s’enfuir." }
+          ]
+        },
+        { "art": "satzanfaenge", "items": ["Un autre signe chez moi : …"] },
+        {
+          "art": "aufgabe",
+          "text": "Qui peut s’approcher de toi, et jusqu’où ? Écris des noms ou des groupes dans les cercles.",
+          "hinweis": "Tes cercles t’appartiennent et peuvent changer. Même une personne très proche doit respecter ton non.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "zielscheibe", "ringe": ["faire coucou, dire bonjour", "serrer la main, se taper dans la main", "faire un câlin"], "mitte": "Moi" },
+        {
+          "art": "aufgabe",
+          "text": "Montrer ses limites : que peux-tu dire et faire ? Écris des phrases claires.",
+          "hinweis": "Situations : Dans le bus scolaire, quelqu’un est assis tout contre toi. – Quelqu’un continue à te chatouiller alors que tu as dit stop.",
+          "symbole": ["schreiben", "partner"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Situation", "Voilà ce que je dis", "Voilà ce que je fais"],
+          "breiten": [1.4, 2, 1.6],
+          "zeilen": 2,
+          "beispiel": [
+            "Zoé serre Aylin trop fort dans ses bras.",
+            "« Je t’aime bien, mais c’est trop fort pour moi. On se tape dans la main ? »",
+            "Je recule d’un pas et je lève la main."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "text": "Si quelqu’un ne respecte pas ta limite – même après un stop clair –, va chercher de l’aide auprès d’un adulte. Ce n’est pas cafter. Anonyme et gratuit : Kanner- a Jugendtelefon 116 111."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants perçoivent les signaux du corps comme indices de leurs propres limites, distinguent des degrés de proximité et s’exercent à des phrases claires et aimables pour montrer leurs limites.",
+        "ablauf": [
+          "Entrée en matière (5 min) : exercice de distance à deux : un enfant avance lentement vers l’autre jusqu’à ce que celui-ci dise « stop ». La distance était-elle la même pour tous ?",
+          "Lire l’histoire : « Pourquoi Aylin ne dit-elle rien ? Qu’est-ce qu’elle ressent ? »",
+          "Exercice 1 (10 min) : colorier, puis recueillir : quels signes connaissent tous les enfants, lesquels seulement certains ?",
+          "Exercice 2 (10 min) : remplir les cercles de proximité ; ils sont privés et ne sont pas montrés.",
+          "Exercice 3 à deux (10 min) : écrire des phrases et les répéter en jeu de rôle – d’une voix ferme."
+        ],
+        "hintergrund": "Pour protéger ses propres limites, il faut d’abord les percevoir. Les signaux du corps comme la tension, les battements de cœur ou une sensation de creux au ventre montrent souvent en premier que quelque chose est de trop ; les reconnaître et les nommer fait partie de la compétence émotionnelle (Petermann & Wiedebusch, 2016). La fiche montre volontairement des limites au sein d’une amitié : dire non fait partie des bonnes relations et ne rejette pas la personne. Des phrases claires n’agissent que lorsqu’elles ont été exercées ; les jeux de rôle accompagnés de réussites renforcent la confiance de pouvoir les utiliser en situation réelle (Bandura, 1977).",
+        "quellen": [
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les exercices 1 et 2 ; des symboles ou des initiales suffisent dans les cercles.",
+          "schwerer": "Écrire une phrase pour le cas où quelqu’un ne respecte pas sa limite."
+        },
+        "impulse": [
+          "Pourquoi est-il souvent difficile de dire non à des amis ?",
+          "À quoi remarques-tu que c’est trop proche pour les autres ?",
+          "Cafter ou chercher de l’aide – quelle est la différence ?"
+        ],
+        "tipps": [
+          "Ne pas ramasser les cercles ni les faire lire à voix haute.",
+          "S’exercer aussi aux limites des autres : celui qui entend stop s’arrête."
+        ],
+        "achtung": "Si un enfant laisse entendre des contacts pénibles, des secrets ou de la violence : écouter calmement, ne pas poser de questions insistantes. En cas d’indices de danger, agir immédiatement selon la procédure interne, ne pas laisser l’enfant seul et informer la direction compétente (responsable).",
+        "material": "Crayons de couleur"
       }
     }
   },
