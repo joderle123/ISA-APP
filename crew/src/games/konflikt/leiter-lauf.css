@@ -1,0 +1,27 @@
+/* Leiter-Lauf: die Leiter (5 oben, 1 unten), Bodenmarken, „Petzen oder Hilfe holen?“ */
+.ll-vorab { text-align: center; font-size: clamp(1.4em, 3.2vw, 2.4em); color: var(--yellow); line-height: 1.15; text-wrap: balance; }
+.ll-start { display: grid; gap: 16px; grid-template-columns: minmax(240px, 1fr) 1.2fr; align-items: start; }
+.ll-leiter { display: flex; flex-direction: column; gap: 6px; padding: 10px 14px; border-left: 8px solid var(--line); border-right: 8px solid var(--line); border-radius: 6px; background: color-mix(in srgb, var(--panel) 60%, transparent); }
+.ll-sprosse { display: flex; align-items: center; gap: 12px; padding: 8px 12px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--panel); }
+.ll-sprosse .ll-n { flex: none; width: 1.8em; height: 1.8em; display: grid; place-items: center; border-radius: 50%; border: 2px solid var(--line); background: var(--sc); color: #0e0a26; font-size: 1.15em; }
+.ll-sprosse .ll-ic { flex: none; color: var(--sc); }
+.ll-sprosse.stark { border-color: var(--good); box-shadow: 0 0 0 3px color-mix(in srgb, var(--good) 45%, transparent); }
+.ll-sprosse[data-pos="s1"], .walk-p[data-pos="s1"] { --sc: #9fd8ff; }
+.ll-sprosse[data-pos="s2"], .walk-p[data-pos="s2"] { --sc: #7ee0c3; }
+.ll-sprosse[data-pos="s3"], .walk-p[data-pos="s3"] { --sc: #ffd166; }
+.ll-sprosse[data-pos="s4"], .walk-p[data-pos="s4"] { --sc: #ff9f6b; }
+.ll-sprosse[data-pos="s5"], .walk-p[data-pos="s5"] { --sc: #ff6f91; }
+.game-screen[data-game="leiter-lauf"] .walk-pos { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.game-screen[data-game="leiter-lauf"] .walk-p { min-height: 92px; padding: 8px 6px; border-top: 8px solid var(--sc, var(--line)); }
+.game-screen[data-game="leiter-lauf"] .walk-p .muted { color: var(--text); opacity: .85; }
+.ll-szene-body { display: flex; align-items: center; gap: 16px; }
+.ll-figs { display: flex; gap: 4px; flex: none; }
+.ll-petzen .card { gap: 4px; }
+.ll-hilfe { border-color: var(--good); box-shadow: 0 0 0 3px color-mix(in srgb, var(--good) 40%, transparent), 0 var(--lift) 0 var(--line); }
+@media (max-width: 760px) {
+  .ll-start { grid-template-columns: 1fr; }
+  .game-screen[data-game="leiter-lauf"] .walk-pos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .ll-szene-body { flex-direction: column; align-items: flex-start; }
+}

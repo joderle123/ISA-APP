@@ -4284,6 +4284,188 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 .dc-ende .ic { color: var(--good); flex: none; }
 .dc-ende h2 { margin: 0; }
 
+/* ---- games/konflikt/gerecht-oder-gleich.css ---- */
+/* Gerecht oder gleich?: Dilemma-Karte mit Bild, zwei Seiten, Folgen und Rewind */
+.gg-karte { gap: 12px; }
+.gg-oben { display: flex; align-items: center; gap: 18px; }
+.gg-oben .lead { flex: 1; min-width: 0; }
+.gg-seiten { display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+.gg-seite { display: flex; flex-direction: column; gap: 4px; padding: 10px 14px; border: 2px solid var(--line); border-radius: var(--radius-sm); }
+.gg-seite[data-pos="a"] { background: color-mix(in srgb, var(--teamA) 28%, var(--panel)); }
+.gg-seite[data-pos="b"] { background: color-mix(in srgb, var(--teamB) 28%, var(--panel)); }
+.gg-seite b { font-size: 1.15em; }
+.gg-bild { display: flex; align-items: center; gap: 14px; flex: none; }
+.gg-pizza svg { display: block; }
+.gg-legende { display: grid; grid-template-columns: repeat(2, auto); gap: 6px 14px; }
+.gg-leg { display: inline-flex; align-items: center; gap: 6px; border-left: 5px solid var(--fc); padding-left: 6px; }
+.gg-leg b { font-family: var(--font-display); font-size: 1.3em; }
+.gg-arbeit { flex-direction: column; align-items: stretch; gap: 6px; min-width: 260px; }
+.gg-zeile { display: grid; grid-template-columns: auto 3.4em 1fr 3.6em 2.2em; gap: 8px; align-items: center; }
+.gg-balken { height: 14px; border: 2px solid var(--line); border-radius: 99px; overflow: hidden; background: var(--bg); }
+.gg-balken i { display: block; height: 100%; }
+.gg-note { text-align: center; font-size: 1.3em; border: 2px solid var(--line); border-radius: 8px; background: var(--bg); }
+.gg-tor { position: relative; flex-direction: column; padding: 10px 14px 6px; border: 3px solid var(--line); border-bottom: none; border-radius: 12px 12px 0 0; background: repeating-linear-gradient(90deg, transparent 0 14px, color-mix(in srgb, var(--text) 10%, transparent) 14px 16px), repeating-linear-gradient(0deg, transparent 0 14px, color-mix(in srgb, var(--text) 10%, transparent) 14px 16px); }
+.gg-schuetze { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 4px 6px; border-bottom: 5px solid var(--fc); min-width: 64px; text-align: center; }
+.gg-schuetze.bank { opacity: .55; border-bottom-style: dashed; }
+.gg-folge { gap: 10px; }
+.gg-reakt { gap: 8px; }
+.gg-r { display: flex; align-items: center; gap: 10px; padding: 6px 10px; border-radius: var(--radius-sm); background: var(--bg); border: 2px solid var(--line); }
+.gg-folge[data-weg="a"] { border-top: 8px solid var(--teamA); }
+.gg-folge[data-weg="b"] { border-top: 8px solid var(--teamB); }
+.gg-folge[data-weg="mitte"] { border-top: 8px solid var(--yellow); }
+.gg-folge.klein { font-size: .92em; }
+.gg-wege { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.gg-rewind { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 2.2em; color: var(--yellow); }
+@media (max-width: 640px) {
+  .gg-oben { flex-direction: column; align-items: flex-start; }
+  .gg-seiten { grid-template-columns: 1fr; }
+  .gg-arbeit { min-width: 0; width: 100%; }
+  .gg-zeile { grid-template-columns: auto 3em 1fr 3.2em 2em; gap: 6px; }
+  .gg-bild { flex-wrap: wrap; }
+}
+
+/* ---- games/konflikt/hundert-prozent.css ---- */
+/* 100 Prozent: Fall-Karte, Erzähl-Kacheln, Regler für 100 %, Aufdecken (Crew vs. Selbstsicht), Wiedergutmach-Züge */
+.hp-fall { display: flex; align-items: center; gap: 16px; padding: 14px 18px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.hp-fall > .ic { color: var(--yellow); flex: none; }
+.hp-fall > .stack { flex: 1; min-width: 0; }
+.hp-tiles { display: grid; gap: 12px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.hp-tile { display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 2px solid var(--line); border-top: 8px solid var(--fc); border-radius: var(--radius-sm); background: var(--panel); }
+.hp-tile .btn { width: 100%; }
+.hp-gedacht { display: flex; align-items: flex-start; gap: 8px; padding: 8px 10px; border-radius: var(--radius-sm); background: var(--bg); border: 2px dashed var(--line); }
+.hp-detail { border-left: 8px solid var(--yellow); }
+.hp-regler { gap: 10px; }
+.hp-reg { display: grid; grid-template-columns: minmax(120px, auto) 1fr 4.6em auto; gap: 12px; align-items: center; padding: 8px 12px; border: 2px solid var(--line); border-left: 8px solid var(--fc); border-radius: var(--radius-sm); background: var(--panel); }
+.hp-bar { height: 24px; border: 2px solid var(--line); border-radius: 99px; overflow: hidden; background: var(--bg); }
+.hp-bar i { display: block; height: 100%; background: var(--fc); transition: width 220ms ease; }
+.hp-wert { font-size: 1.5em; text-align: right; }
+.hp-reg .icon-btn[disabled] { opacity: .4; }
+.hp-aufdeck { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.hp-auf { display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 2px solid var(--line); border-top: 8px solid var(--fc); border-radius: var(--radius-sm); background: var(--panel); }
+.hp-vgl { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.hp-vgl-z { display: flex; flex-direction: column; gap: 2px; padding: 6px 8px; border-radius: 10px; background: var(--bg); border: 2px solid var(--line); }
+.hp-vgl-z b { font-size: 1.5em; }
+.hp-vgl-z.selbst { border-style: dashed; }
+.hp-rest { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; padding: 12px 16px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: color-mix(in srgb, var(--hot) 18%, var(--panel)); }
+.hp-rest b { font-size: 1.3em; color: var(--yellow); }
+.hp-zugrow { display: flex; flex-direction: column; gap: 8px; padding: 10px 12px; border: 2px solid var(--line); border-left: 8px solid var(--fc); border-radius: var(--radius-sm); background: var(--panel); }
+.hp-zuege { display: grid; gap: 8px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.hp-zug { border-radius: var(--radius-sm); text-align: left; line-height: 1.25; align-items: flex-start; }
+.hp-ergebnis { display: flex; align-items: flex-start; gap: 12px; padding: 10px 12px; border: 2px solid var(--line); border-left: 8px solid var(--fc); border-radius: var(--radius-sm); background: var(--panel); }
+.hp-zugtag[data-zug="passt"] { background: var(--good); color: var(--good-ink); }
+.hp-zugtag[data-zug="klein"] { background: var(--yellow); color: var(--yellow-ink); }
+.hp-zugtag[data-zug="gross"] { background: var(--teamB); color: var(--teamB-ink); }
+@media (max-width: 900px) { .hp-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .hp-zuege { grid-template-columns: 1fr; } }
+@media (max-width: 560px) {
+  .hp-reg { grid-template-columns: 1fr auto; }
+  .hp-reg .hp-bar { grid-column: 1; grid-row: 2; }
+  .hp-fall { flex-direction: column; align-items: flex-start; }
+}
+
+/* ---- games/konflikt/leiter-lauf.css ---- */
+/* Leiter-Lauf: die Leiter (5 oben, 1 unten), Bodenmarken, „Petzen oder Hilfe holen?“ */
+.ll-vorab { text-align: center; font-size: clamp(1.4em, 3.2vw, 2.4em); color: var(--yellow); line-height: 1.15; text-wrap: balance; }
+.ll-start { display: grid; gap: 16px; grid-template-columns: minmax(240px, 1fr) 1.2fr; align-items: start; }
+.ll-leiter { display: flex; flex-direction: column; gap: 6px; padding: 10px 14px; border-left: 8px solid var(--line); border-right: 8px solid var(--line); border-radius: 6px; background: color-mix(in srgb, var(--panel) 60%, transparent); }
+.ll-sprosse { display: flex; align-items: center; gap: 12px; padding: 8px 12px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--panel); }
+.ll-sprosse .ll-n { flex: none; width: 1.8em; height: 1.8em; display: grid; place-items: center; border-radius: 50%; border: 2px solid var(--line); background: var(--sc); color: #0e0a26; font-size: 1.15em; }
+.ll-sprosse .ll-ic { flex: none; color: var(--sc); }
+.ll-sprosse.stark { border-color: var(--good); box-shadow: 0 0 0 3px color-mix(in srgb, var(--good) 45%, transparent); }
+.ll-sprosse[data-pos="s1"], .walk-p[data-pos="s1"] { --sc: #9fd8ff; }
+.ll-sprosse[data-pos="s2"], .walk-p[data-pos="s2"] { --sc: #7ee0c3; }
+.ll-sprosse[data-pos="s3"], .walk-p[data-pos="s3"] { --sc: #ffd166; }
+.ll-sprosse[data-pos="s4"], .walk-p[data-pos="s4"] { --sc: #ff9f6b; }
+.ll-sprosse[data-pos="s5"], .walk-p[data-pos="s5"] { --sc: #ff6f91; }
+.game-screen[data-game="leiter-lauf"] .walk-pos { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.game-screen[data-game="leiter-lauf"] .walk-p { min-height: 92px; padding: 8px 6px; border-top: 8px solid var(--sc, var(--line)); }
+.game-screen[data-game="leiter-lauf"] .walk-p .muted { color: var(--text); opacity: .85; }
+.ll-szene-body { display: flex; align-items: center; gap: 16px; }
+.ll-figs { display: flex; gap: 4px; flex: none; }
+.ll-petzen .card { gap: 4px; }
+.ll-hilfe { border-color: var(--good); box-shadow: 0 0 0 3px color-mix(in srgb, var(--good) 40%, transparent), 0 var(--lift) 0 var(--line); }
+@media (max-width: 760px) {
+  .ll-start { grid-template-columns: 1fr; }
+  .game-screen[data-game="leiter-lauf"] .walk-pos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .ll-szene-body { flex-direction: column; align-items: flex-start; }
+}
+
+/* ---- games/konflikt/nein-trainer.css ---- */
+/* Nein-Trainer: Sprachnachrichten im Handy-Look, Anker-Kreis, „Sag es“-Karte */
+.nt-phone { background: #fff; color: #111; border: var(--bw) solid var(--line); border-radius: 22px; box-shadow: 0 var(--lift) 0 var(--line); display: flex; flex-direction: column; overflow: hidden; font-family: system-ui, -apple-system, sans-serif; }
+.nt-phone .muted { color: #666; }
+.nt-kopf { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid #e5e5e5; background: #f7f7f9; }
+.nt-chat { display: flex; flex-direction: column; gap: 10px; padding: 12px 14px; max-height: 38dvh; overflow-y: auto; background: #eef1f5; }
+.nt-msg { display: flex; align-items: flex-end; gap: 8px; max-width: 92%; }
+.nt-msg.me { align-self: flex-end; }
+.nt-msg .bubble { background: #dcf8c6; color: #111; border-color: #b6e3a3; }
+.nt-msg .bubble-who { color: #2b7a0b; }
+.nt-voice { display: flex; flex-direction: column; gap: 6px; background: #fff; border: 2px solid #dcdfe4; border-radius: 18px 18px 18px 4px; padding: 8px 12px; min-width: 0; }
+.nt-voice-row { display: flex; align-items: center; gap: 10px; }
+.nt-play { width: 44px; height: 44px; border-radius: 50%; background: #7a3ff2; color: #fff; border-color: #4b1fa8; box-shadow: none; }
+.nt-wave { display: flex; align-items: center; gap: 2px; height: 30px; flex: 1; min-width: 90px; }
+.nt-wave i { display: block; width: 4px; border-radius: 2px; background: #b9a3f0; }
+.nt-msg.playing .nt-wave i { background: #7a3ff2; animation: nt-wave 700ms ease-in-out infinite alternate; }
+.nt-msg.playing .nt-wave i:nth-child(3n) { animation-delay: 120ms; }
+.nt-msg.playing .nt-wave i:nth-child(3n+1) { animation-delay: 260ms; }
+@keyframes nt-wave { from { transform: scaleY(.45); } to { transform: scaleY(1); } }
+.nt-dauer { color: #666; font-variant-numeric: tabular-nums; }
+.nt-trans { font-size: .95em; line-height: 1.3; color: #222; }
+.nt-foot { padding: 10px 14px; border-top: 1px solid #e5e5e5; background: #fff; }
+.nt-foot .meter-label { color: #111; }
+.nt-foot .meter-bar { background: #eee; }
+.nt-anker { display: flex; align-items: center; gap: 22px; padding: 18px 22px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.nt-anker-kreis { flex: none; width: 110px; height: 110px; border-radius: 50%; display: grid; place-items: center; color: var(--good-ink); background: radial-gradient(circle, var(--good) 0%, color-mix(in srgb, var(--good) 40%, transparent) 70%); animation: breathe 6s ease-in-out infinite; }
+.nt-sag { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 22px 26px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); max-width: 760px; width: 100%; }
+.nt-sag-satz { font-size: clamp(1.6em, 4vw, 2.6em); line-height: 1.15; text-wrap: balance; text-align: center; text-transform: none; }
+.nt-ende[data-vertagt="1"] .ic { color: var(--yellow); }
+@media (max-width: 560px) {
+  .nt-anker { flex-direction: column; text-align: center; }
+  .nt-anker-kreis { width: 84px; height: 84px; }
+}
+@media (prefers-reduced-motion: reduce) { .nt-anker-kreis, .nt-msg.playing .nt-wave i { animation: none; } }
+.nt-tipp { display: flex; align-items: center; gap: 12px; padding: 8px 12px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--panel); }
+.nt-tipp b { flex: 1; min-width: 0; }
+@media (min-height: 700px) and (min-width: 900px) { .nt-chat { max-height: 30dvh; } }
+
+/* ---- games/konflikt/sorrywerkstatt.css ---- */
+/* Sorry-Werkstatt: das Sorry als Kette von Bausteinen, die eigene Hand, Aufdecken beim Weitergeben */
+.sw-kette { gap: 8px; }
+.sw-teil { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); min-width: 0; }
+.sw-teil .sw-text { flex: 1; min-width: 0; font-weight: 600; text-wrap: pretty; }
+.sw-teil .btn { flex: none; }
+.sw-teil.leer { border-style: dashed; background: transparent; min-height: 48px; }
+.sw-teil.hand { background: color-mix(in srgb, var(--yellow) 14%, var(--bg)); }
+.sw-teil.echt { border-left: 8px solid var(--good); }
+.sw-teil.fake { border-left: 8px solid var(--hot); }
+.sw-n { font-family: var(--font-display); min-width: 1.8em; text-align: center; border-radius: 99px; background: var(--panel2); padding: 2px 6px; flex: none; }
+.sw-label { display: inline-flex; align-items: center; gap: 4px; font-weight: 700; color: var(--muted); }
+.sw-teil.echt .sw-label .ic { color: var(--good); }
+.sw-teil.fake .sw-label .ic { color: var(--hot); }
+.sw-kopf { display: flex; align-items: center; gap: 14px; padding: 10px 14px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); }
+.sw-kern { gap: 6px; }
+.sw-kern .chip { min-height: 40px; padding: 6px 12px; cursor: default; }
+.sw-said[data-kind="dazu"] { --tc: var(--teamA); }
+.sw-said[data-kind="weg"] { --tc: var(--yellow); }
+.sw-aber { border-left: 8px solid var(--hot); }
+.sw-warum { border-left: 8px solid var(--yellow); }
+.sw-auf { display: flex; align-items: center; gap: 8px; max-width: 640px; padding: 10px 14px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--panel); text-align: left; }
+.sw-auf[data-echt="1"] .ic { color: var(--good); }
+.sw-auf[data-echt="0"] .ic { color: var(--hot); }
+@media (max-width: 560px) {
+  .sw-teil { flex-wrap: wrap; }
+  .sw-teil > .stack { flex-basis: calc(100% - 3em) !important; }
+  .sw-teil .btn { margin-left: auto; }
+}
+/* Breit: Sorry links, eigene Bausteine rechts */
+.sw-arbeit { display: grid; gap: 16px; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 900px) { .sw-arbeit { grid-template-columns: 1.15fr 1fr; } }
+.sw-hand .sw-teil { flex-wrap: wrap; }
+.sw-hand .sw-teil .sw-text { flex-basis: 12em; }
+.sw-hand .sw-teil .btn { margin-left: auto; }
+
 /* ---- games/konflikt/storystaffel.css ---- */
 /* Story-Staffel: Verlauf, Zug-Tipps, „Das hat die Figur gesagt“ */
 .ss-log { gap: 6px; }
@@ -4297,6 +4479,104 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 
 /* Weitergabe: Platznummer groß, damit klar ist, wer dran ist */
 .ss-seat-big { font-size: 2.6em; line-height: 1; color: var(--accent); }
+
+/* ---- games/konflikt/vier-zeugen.css ---- */
+/* Vier Zeugen: Szene, vier Sicht-Kacheln, Ampel-Checkliste, Auflösung, Leiter-Stufe */
+.vz-szene { display: flex; align-items: center; gap: 16px; padding: 14px 18px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.vz-szene > .ic { color: var(--yellow); flex: none; }
+.vz-tiles { display: grid; gap: 12px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.vz-tile { display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 2px solid var(--line); border-top: 8px solid var(--rc, var(--accent)); border-radius: var(--radius-sm); background: var(--panel); }
+.vz-tile .btn { width: 100%; }
+.vz-tile[data-role="A"], .vz-sicht[data-role="A"] { --rc: var(--teamB); }
+.vz-tile[data-role="B"], .vz-sicht[data-role="B"] { --rc: var(--yellow); }
+.vz-tile[data-role="C"], .vz-sicht[data-role="C"] { --rc: var(--teamA); }
+.vz-tile[data-role="D"], .vz-sicht[data-role="D"] { --rc: var(--good); }
+.vz-sicht { border-left: 10px solid var(--rc, var(--accent)); }
+.vz-detail { display: flex; flex-direction: column; gap: 4px; padding: 10px 12px; border-radius: var(--radius-sm); border: 2px dashed var(--line); background: var(--bg); }
+.vz-lk { display: grid; place-items: center; width: 56px; height: 56px; flex: none; border-radius: 50%; border: 3px solid var(--line); background: var(--panel2); color: var(--text); }
+.vz-ampel { display: flex; flex-direction: column; gap: 10px; }
+.vz-merkmal { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; padding: 10px 14px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--panel); }
+.vz-lichter { display: flex; gap: 8px; }
+.vz-licht { appearance: none; font: inherit; font-weight: 700; color: var(--text); min-height: 48px; padding: 8px 14px; border-radius: 99px; border: var(--bw) solid var(--line); background: var(--bg); cursor: pointer; touch-action: manipulation; }
+.vz-licht[data-licht="ja"][aria-pressed="true"] { background: var(--hot); color: #fff; }
+.vz-licht[data-licht="unklar"][aria-pressed="true"] { background: var(--yellow); color: var(--yellow-ink); }
+.vz-licht[data-licht="nein"][aria-pressed="true"] { background: var(--good); color: var(--good-ink); }
+.vz-licht:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+.vz-urteil { display: flex; align-items: center; gap: 16px; padding: 16px 20px; border: var(--bw) solid var(--line); border-left: 12px solid var(--uc); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.vz-urteil .ic { color: var(--uc); flex: none; }
+.vz-urteil b.display { font-size: 2em; color: var(--uc); }
+.vz-urteil[data-urteil="mobbing"] { --uc: var(--hot); }
+.vz-urteil[data-urteil="konflikt"] { --uc: var(--yellow); }
+.vz-urteil[data-urteil="spass"] { --uc: var(--good); }
+.vz-aufl { gap: 8px; }
+.vz-aufl-z { display: flex; align-items: flex-start; gap: 10px; padding: 8px 12px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--panel); }
+.vz-dot { flex: none; width: 18px; height: 18px; margin-top: 3px; border-radius: 50%; border: 2px solid var(--line); background: var(--good); }
+.vz-aufl-z[data-ja="1"] .vz-dot { background: var(--hot); }
+.vz-stufe { display: flex; flex-direction: column; gap: 8px; padding: 16px 20px; border: var(--bw) solid var(--line); border-left: 12px solid var(--good); border-radius: var(--radius); background: var(--panel); }
+.vz-stufe[data-wert="mutig"] { border-left-color: var(--yellow); }
+.vz-stufe .pill { align-self: flex-start; }
+@media (max-width: 900px) { .vz-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) {
+  .vz-merkmal { grid-template-columns: 1fr; }
+  .vz-lichter { flex-wrap: wrap; }
+  .vz-licht { flex: 1; padding: 8px 10px; }
+  .vz-szene { flex-direction: column; align-items: flex-start; }
+}
+
+/* ---- games/konflikt/wer-fehlt.css ---- */
+/* Wer fehlt?: Bild mit antippbaren Stellen (Mensa, Flur), Chat im Handy-Look, Auflösung, großer Pass bei der Bonusfrage */
+.wf-bild { position: relative; width: 100%; aspect-ratio: 16 / 7; min-height: 330px; border: var(--bw) solid var(--line); border-radius: var(--radius); overflow: hidden; background: linear-gradient(180deg, color-mix(in srgb, var(--panel2) 80%, var(--bg)) 0%, var(--panel) 100%); box-shadow: 0 var(--lift) 0 var(--line); }
+.wf-tisch { position: absolute; left: 24%; top: 34%; width: 44%; height: 28%; border-radius: 18px; border: 3px solid var(--line); background: repeating-linear-gradient(90deg, #a8743f 0 22px, #b98149 22px 44px); box-shadow: 0 6px 0 var(--line); }
+.wf-flur { position: absolute; left: 0; right: 0; bottom: 0; height: 30%; background: repeating-linear-gradient(90deg, color-mix(in srgb, var(--text) 8%, transparent) 0 40px, transparent 40px 80px); border-top: 3px solid color-mix(in srgb, var(--text) 18%, transparent); }
+.wf-spot { position: absolute; width: 20%; min-width: 120px; max-width: 200px; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 6px 8px 8px; border: 2px dashed color-mix(in srgb, var(--text) 35%, transparent); border-radius: var(--radius-sm); background: color-mix(in srgb, var(--bg) 70%, transparent); color: var(--text); font: inherit; text-align: center; cursor: pointer; touch-action: manipulation; }
+.wf-spot:hover { border-color: var(--yellow); }
+.wf-spot:focus-visible { outline: 3px solid var(--yellow); outline-offset: 2px; }
+.wf-cap { font-size: .86em; line-height: 1.2; font-weight: 600; }
+.wf-emo { font-size: 2.2em; line-height: 1; }
+.wf-mark { position: absolute; top: -10px; right: -10px; width: 28px; height: 28px; border-radius: 50%; display: none; place-items: center; font-weight: 900; border: 2px solid var(--line); }
+.wf-spot[data-done="zeichen"] { border: 3px solid var(--good); background: color-mix(in srgb, var(--good) 22%, var(--bg)); }
+.wf-spot[data-done="zeichen"] .wf-mark { display: grid; background: var(--good); color: var(--good-ink); }
+.wf-spot[data-done="zeichen"] .wf-mark::after { content: "✓"; }
+.wf-spot[data-done="nein"] { opacity: .6; border-style: solid; animation: shake 380ms ease both; }
+.wf-spot[data-done="nein"] .wf-mark { display: grid; background: var(--panel2); color: var(--text); }
+.wf-spot[data-done="nein"] .wf-mark::after { content: "–"; }
+.wf-info { display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 8px 12px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--panel); }
+.wf-info-tag { display: inline-flex; align-items: center; gap: 4px; flex: none; font-weight: 800; padding: 3px 10px; border-radius: 99px; background: var(--panel2); }
+.wf-info-tag.ja { background: var(--good); color: var(--good-ink); }
+.wf-zaehler.good { background: var(--good); color: var(--good-ink); }
+/* Chat */
+.wf-chat { display: grid; gap: 14px; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); align-items: start; }
+.wf-phone { background: #fff; color: #111; border: var(--bw) solid var(--line); border-radius: 22px; overflow: hidden; box-shadow: 0 var(--lift) 0 var(--line); font-family: system-ui, -apple-system, sans-serif; }
+.wf-msgs { display: flex; flex-direction: column; gap: 8px; padding: 12px; background: #eef1f5; }
+.wf-chat .wf-spot { position: relative; width: auto; max-width: none; min-width: 0; color: #111; }
+.wf-chat .wf-spot.kopf { width: 100%; flex-direction: row; justify-content: flex-start; border: none; border-bottom: 1px solid #e5e5e5; border-radius: 0; background: #f7f7f9; padding: 12px 14px; }
+.wf-chat .wf-spot.kopf .wf-cap { font-size: 1em; font-weight: 800; text-align: left; }
+.wf-chat .wf-spot.msg { align-self: flex-start; align-items: flex-start; text-align: left; background: #fff; border: 2px solid #dcdfe4; border-radius: 16px 16px 16px 4px; padding: 8px 12px; max-width: 85%; }
+.wf-chat .wf-spot.msg .bubble-who { color: #7a3ff2; font-size: .78em; font-weight: 800; }
+.wf-chat .wf-spot.extra { background: #fff; border: 2px dashed #b9b9c9; padding: 12px; align-items: flex-start; text-align: left; }
+.wf-chat .wf-spot[data-done="zeichen"] { border: 3px solid #12a58a; background: #d8fbf2; }
+.wf-chat .wf-spot[data-done="nein"] { opacity: .55; }
+/* Auflösung, Zug */
+.wf-aufl { gap: 8px; }
+.wf-z { display: flex; align-items: flex-start; gap: 8px; padding: 6px 10px; border-radius: var(--radius-sm); background: var(--bg); border: 2px dashed var(--line); }
+.wf-z.ja { border-style: solid; border-color: var(--good); }
+.wf-z.ja .ic { color: var(--good); }
+.wf-zugtag { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 12px 16px; border: var(--bw) solid var(--line); border-left-width: 10px; border-radius: var(--radius-sm); background: var(--panel); }
+.wf-zugtag[data-k="mini"] { border-left-color: var(--good); }
+.wf-zugtag[data-k="gross"] { border-left-color: var(--yellow); }
+.wf-zugtag[data-k="nichts"], .wf-zugtag[data-k="hart"] { border-left-color: var(--hot); }
+.wf-bonus #wf-bonus-pass { font-size: 1.8em; min-height: 96px; min-width: min(320px, 100%); }
+@media (max-width: 760px) {
+  .wf-chat { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .wf-bild { aspect-ratio: auto; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 12px; }
+  .wf-bild .wf-spot { position: relative; left: auto !important; top: auto !important; width: auto; min-width: 0; max-width: none; }
+  .wf-tisch, .wf-flur { display: none; }
+}
+.wf-kopf { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--panel); }
+.game-screen[data-game="wer-fehlt"] .wf-kopf + .row.end { margin-top: -8px; margin-bottom: -8px; }
+@media (min-width: 641px) { .wf-bild { aspect-ratio: 16 / 6.4; min-height: 300px; } }
 
 /* ---- games/skills/pegel-reihe.css ---- */
 /* Pegel-Reihe: Karte mit verdeckter Zahl, Kipper-Leuchten, Ergebnis */
@@ -8840,6 +9120,99 @@ var qrcode = function() {
         achten: '„Mitmachen“ ist nie rot – es zeigt nur ruhig den Preis. Vape- und Auslach-Chat können nah sein: Die Hilfe-Karte steht direkt danach.',
         impulse: ['„Was macht Emoji-Schweigen mit einem?“', '„Welches Nein lässt dich in der Gruppe?“', '„Was ist der Preis von Mitmachen – und von Nein?“'],
         kippt: 'Erzählt jemand, gerade so einen Chat zu haben: ernst nehmen, Einzelgespräch, ggf. BEE SECURE oder 116 111. Die Vergleichskarte darf ausfallen.',
+      },
+    },
+    sorrywerkstatt: {
+      warum: 'Ein Sorry kann heilen – oder alles schlimmer machen. Ihr baut zusammen eine Entschuldigung und merkt, welche Teile echt sind und welche nur so klingen.',
+      skill: 'Echt entschuldigen',
+      geuebt: 'Echte Entschuldigungen von Fake-Sorrys unterscheiden und ein Sorry mit Wiedergutmachung bauen.',
+      fragen: ['Welcher Fake-Baustein klang am echtesten?', 'Was ist schwerer: dazu stehen oder wieder gutmachen?', 'Wo wäre diese Woche ein echtes Sorry dran?'],
+      lehrer: {
+        ziel: 'Echte Entschuldigung von Rechtfertigung unterscheiden (Sorry-aber, Falls-Sorry, Kleinreden, Schlussstrich-Druck, Ausrede), die Teile eines echten Sorrys kennen (sagen, was war – dazu stehen – Wirkung sehen – wieder gutmachen – nächstes Mal) und Wiedergutmachung aus Sicht der verletzten Figur wählen.',
+        stufen: 'Level 1 Fake finden (der erste Versuch der Figur enthält ein „aber“; wer einen Fake wegnimmt, sagt in einem Satz, warum – aufgedeckt wird beim Weitergeben), Level 2 Sorry bauen (das iPad wandert, jede:r legt einen Baustein dazu oder nimmt einen weg, bis die Hitze unter 30 ist und „Sagen, was war“, „Dazu stehen“ und „Wieder gutmachen“ drin sind), Level 3 Wieder gutmachen (was braucht die verletzte Figur wirklich?).',
+        achten: 'Alle Bausteine sind ähnlich lang – nicht der längste ist der echte. Begründungen beim Wegnehmen nicht korrigieren, die Aufdeckung übernimmt das. Pass gibt einfach weiter. Es geht um die Figuren, nicht um die Person, die getippt hat.',
+        impulse: ['„Warum macht ein „aber“ das ganze Sorry kaputt?“', '„Muss die andere Person ein Sorry annehmen?“', '„Was ist der Unterschied zwischen Erklären und Ausreden?“'],
+        kippt: 'Wird ein echter Streit hineingetragen („Du sagst auch immer Sorry-aber!“): stoppen, „Wir bauen das Sorry der Figur, nicht eures“, X. Echte Entschuldigungen in der Gruppe nie erzwingen – ein Sorry auf Befehl ist ein Fake-Sorry. Bei Bedarf später zu zweit mit der Lehrkraft.',
+      },
+    },
+    'hundert-prozent': {
+      warum: 'Wenn etwas schiefgeht, zeigen alle auf andere. Ihr hört vier Sichten und verteilt 100 Prozent Verantwortung – nicht „Wer war’s?“, sondern „Wie viel war’s?“',
+      skill: 'Meinen Anteil sehen',
+      geuebt: 'Verantwortung fair verteilen, den eigenen Anteil sehen und passend wieder gutmachen.',
+      fragen: ['Wer hat sich selbst am kleinsten gerechnet?', 'Was war schwer: verteilen oder den Zug wählen?', 'Wo siehst du diese Woche deinen Anteil an einem Problem?'],
+      lehrer: {
+        ziel: 'Verantwortung teilen statt Schuld schieben: Anteile mehrerer Beteiligter abwägen (niemand 0, niemand 100), die eigene Verzerrung erkennen (jede Figur rechnet sich klein) und Wiedergutmachung passend zum Anteil wählen (nicht zu klein, nicht zu groß).',
+        stufen: 'Level 1 Hören (jede Rolle erzählt Tat und Gedanken ihrer Figur; ein Detail kommt nur auf Nachfrage – der Beamer geht erst weiter, wenn alle vier erzählt haben), Level 2 Verteilen (100 % mit Reglern, Start bei 25 % für alle; danach die Selbstsicht der Figuren aufdecken: zusammen deutlich unter 100 %), Level 3 Wiedergutmachen (pro Figur: passt / zu klein / zu groß).',
+        achten: 'Rollen per Los (Tagescode + Platz), jede Rolle erzählt über eine Figur. „Zu groß“ (alles auf sich nehmen) nicht loben – es nimmt anderen ihren Teil weg. Kein Fall soll einem echten Vorfall der Klasse ähneln; dann lieber einen anderen Tagescode wählen.',
+        impulse: ['„Warum rechnet sich jede Figur so klein?“', '„Hat Schweigen auch einen Anteil?“', '„Was ist der Unterschied zwischen Schuld und Verantwortung?“'],
+        kippt: 'Wird ein echter Vorfall aus der Klasse verhandelt („Das war doch wie bei …“): stoppen, „Wir bleiben beim Fall der Figuren“, X. Schuldzuweisungen an Mitschüler:innen nicht im Spiel klären, sondern später mit den Beteiligten einzeln.',
+      },
+    },
+    'gerecht-oder-gleich': {
+      warum: 'Gleich ist nicht immer gerecht – und gerecht nicht immer gleich. Ihr stellt euch auf eine Seite, hört die andere an und seht die Folgen.',
+      skill: 'Fair abwägen, andere Meinung aushalten',
+      geuebt: 'Gleich und gerecht unterscheiden, eine Meinung mit „weil“ begründen und die andere Seite aushalten.',
+      fragen: ['Welche Folge hat euch überrascht?', 'Wie war es, das Argument der anderen Seite zu wiederholen?', 'Wo ist diese Woche etwas gleich, aber nicht gerecht?'],
+      lehrer: {
+        ziel: 'Fairness und Gleichheit unterscheiden (gleich verteilen, nach Bedarf, nach Leistung), eine Meinung begründen, eine andere Meinung aushalten und die Perspektive wechseln. Es gibt keine richtige Antwort – jeder Weg hat Folgen.',
+        stufen: 'Level 1 Erkennen (Pizza: gleich oder nach Hunger? – 20 Sekunden gehen, kleinere Seite zuerst, Folge-Szene, „Rewind“ zeigt die anderen Wege), Level 2 Begründen (Gruppennote: mit „weil“; die andere Seite wiederholt das Argument, bevor sie widerspricht), Level 3 Perspektive (Elfmeterschießen: einmal als Sam gehen, einmal als Luca – wer bewegt sich?).',
+        achten: 'Gruppen antworten, nie Einzelne. Wer allein steht, darf schweigen. Die Mitte ist ausdrücklich erlaubt. Keine Seite bewerten – die Folgen sprechen. Kein Körperkontakt, gehen statt rennen. Beim Weg-Antippen nicht zählen.',
+        impulse: ['„Ist gleich verteilen immer fair?“', '„Wer entscheidet, wer mehr braucht?“', '„Was hat sich verändert, als ihr als Sam gegangen seid?“'],
+        kippt: 'Wird ein Dilemma auf echte Ungerechtigkeiten in der Klasse bezogen (Noten, Nachteilsausgleich, Strafen): ernst nehmen, aber nicht im Spiel klären – „Das schauen wir uns später an“. Wird gerannt oder gedrängelt: Gehzeit verlängern oder im Sitzen mit Handzeichen weiterspielen.',
+      },
+    },
+    'nein-trainer': {
+      solo: true,
+      warum: 'Nein sagen ist leichter, wenn man es geübt hat. Hier übst du allein, ohne Publikum: Anker, Nein, und beim Nachhaken dabei bleiben.',
+      skill: 'Beim Nein bleiben',
+      karte: 'Anker vor dem Nein',
+      geuebt: 'Vor dem Nein ankern, eine Nein-Art wählen und beim Nachhaken ruhig dabei bleiben.',
+      fragen: ['Welches Nein hat sich am stärksten angefühlt?', 'Was war schwerer: das erste oder das dritte Nein?', 'Wo brauchst du diese Woche ein Nein, das bleibt?'],
+      lehrer: {
+        ziel: 'Nein sagen ohne Publikum üben (Sparring): Anker vor dem Nein (Füße fest, ausatmen), vier Nein-Arten, das zweite und dritte Nein beim Nachhaken, Wenn-dann-Plan. Gut als Hausaufgabe nach j1-e25 oder als Stopp-Training nach j1-e23 (dort kommt die Handy-Grenze zuerst).',
+        stufen: 'Level 1 Anker (Skill-Karte, dann das erste Nein), Level 2 Nachhaken („Nur dieses eine Mal“ – das zweite Nein darf kürzer sein), Level 3 Dabei bleiben (Schweigen oder „Dachte, du bist …“ – das dritte Nein, danach ein Wenn-dann-Satz). Das Ausweich-Nein wirkt kurz, holt den Druck aber zurück („Druck vertagt“).',
+        achten: 'Solo-Spiel: Nichts wird gespeichert oder aufgenommen, laut sprechen ist nur eine Option. Gut mit Kopfhörern oder als Station. Das Spiel bewertet keine Person, nur die Wirkung der Nein-Art bei der Figur.',
+        impulse: ['„Welches Nein lässt am wenigsten Hintertür?“', '„Warum kommt der Druck nach einem Ausweich-Nein wieder?“', '„Wie fühlt sich der Anker im Körper an?“'],
+        kippt: 'Erzählt jemand von echtem Druck (Schwänzen, Mutprobe, Passwort): ernst nehmen, später unter vier Augen. Bei Erpressung oder Drohungen online: BEE SECURE Helpline 8002 1234 bzw. 116 111 zeigen. Wer beim Üben blockiert: „Im Kopf“ reicht völlig.',
+      },
+    },
+    'vier-zeugen': {
+      warum: 'Spaß, Streit oder Mobbing? Von außen sieht das oft gleich aus. Erst vier Sichten zusammen zeigen das ganze Bild – und was Zuschauende tun können.',
+      skill: 'Mobbing erkennen, sicher handeln',
+      geuebt: 'Spaß, Konflikt und Mobbing an vier Merkmalen unterscheiden und eine sichere Leiter-Stufe wählen.',
+      fragen: ['Welche Sicht hat das Bild am meisten verändert?', 'Warum sieht Mobbing von außen oft wie Spaß aus?', 'Welche Leiter-Stufe traust du dir diese Woche zu?'],
+      lehrer: {
+        ziel: 'Spaß, Konflikt und Mobbing unterscheiden (immer wieder · ungleiche Kraft · mit Absicht · kann sich nicht wehren), Perspektiven zusammenführen und die Macht der Zuschauenden erkennen (Zivilcourage-Leiter). Nicht jeder Fall ist Mobbing – auch Spaß und Konflikt kommen vor.',
+        stufen: 'Level 1 Hören (vier Sichten erzählen, jede kennt ein Detail; der Beamer nimmt erst Antworten an, wenn alle vier gesprochen haben), Level 2 Prüfen (Ampel-Checkliste, dann Urteil; „Noch nicht“ nennt nur die Sicht, die man nochmal fragen sollte), Level 3 Handeln (welche Leiter-Stufe ist für die Zuschauer-Figur sicher?). Hilfenummern am Ende des Falls.',
+        achten: 'Die Sichten werden ausgelost (Tagescode + Platz) und gehören immer Figuren. Niemand spielt sich selbst oder Mitschüler:innen; nie Rollen nach „passt zu dir“ verteilen. Wer eine Sicht nicht lesen mag, wird ohne Begründung Beobachter:in – die Lehrkraft liest diese Sicht am Beamer vor. Auf Blicke und Lacher in Richtung einer Person achten.',
+        impulse: ['„Woran merkt man, dass jemand nur mitlacht?“', '„Welches Merkmal ist von außen am schwersten zu sehen?“', '„Warum ist Hilfe holen kein Petzen?“'],
+        kippt: 'Wird echtes Mobbing in der Gruppe sichtbar (jemand erkennt sich, Blicke, Sprüche, „Das ist ja wie bei …“): Spiel ruhig mit X beenden, nichts vor der Gruppe klären, niemanden befragen oder bloßstellen. Die betroffene Person nach der Stunde allein ansprechen – Schutz geht vor. Nach dem Schulkonzept die Klassenleitung bzw. den Régent informieren und den SePAS einbinden; Hilfenummern 116 111 und BEE SECURE 8002 1234 mitgeben. Mobbende Jugendliche getrennt und ohne Publikum ansprechen.',
+      },
+    },
+    'leiter-lauf': {
+      warum: 'Wenn jemand fertiggemacht wird, kann jede:r etwas tun – vom Hinschauen bis Hilfe holen. Ihr probiert im Raum, welche Stufe allein und zu zweit geht.',
+      skill: 'Hinschauen und Hilfe holen',
+      geuebt: 'Die fünf Stufen der Zivilcourage kennen, realistisch einschätzen und Hilfe holen als Stärke sehen.',
+      fragen: ['Welche Stufe hat euch überrascht?', 'Warum ist man zu zweit mutiger?', 'Welche Stufe traust du dir diese Woche zu?'],
+      lehrer: {
+        ziel: 'Zivilcourage realistisch einschätzen (Leiter: Hinschauen – Nicht mitlachen – Mit Betroffenen weggehen – Erwachsene holen – Direkt was sagen), erleben, dass man zu zweit mutiger ist, und Hilfe holen als Stärke statt Petzen verstehen.',
+        stufen: 'Level 1 Allein (Szene an der Bushaltestelle, 10 Sekunden gehen, die größte Gruppe zuerst: „Warum hier?“, dann die Folgen jeder Stufe), Level 2 Zu zweit (dieselbe Szene mit Verbündeten – wer geht höher?), Level 3 Sicher handeln (Drohung im Chat: hier ist „Erwachsene holen“ die stärkste Stufe; Petzen vs. Hilfe holen). Vorab: „Jede Stufe hilft. Stufe 1 ist keine Null.“',
+        achten: 'Die Crew läuft immer für eine Figur (Yara, Yara + Mika, Luca), nie für sich. Gruppen antworten, nie Einzelne; niemand wird für eine niedrige Stufe kritisiert. Kein Körperkontakt beim Zu-zweit-Gehen. Keine echten Fälle nachspielen.',
+        impulse: ['„Was bringt Hinschauen, wenn man sonst nichts macht?“', '„Was ist der Unterschied zwischen Petzen und Hilfe holen?“', '„Wann ist „Direkt was sagen“ zu gefährlich?“'],
+        kippt: 'Wird sichtbar, dass jemand aus der Gruppe selbst gemobbt wird oder mobbt (Blicke, Sprüche, „Das ist ja wie bei …“): Spiel ruhig beenden (X), nicht vor der Gruppe nachfragen, die betroffene Person nach der Stunde allein ansprechen. Schutz geht vor. Nach dem Schulkonzept die Klassenleitung bzw. den Régent informieren und den SePAS einbinden; Hilfenummern 116 111 und BEE SECURE 8002 1234 mitgeben.',
+      },
+    },
+    'wer-fehlt': {
+      warum: 'Ausgrenzung ist oft leise: ein Chat ohne eine Person, ein Platz mit Tasche drauf. Ihr lernt die Zeichen sehen und jemanden reinholen – ohne großes Drama.',
+      skill: 'Leise Ausgrenzung sehen, reinholen',
+      geuebt: 'Leise Zeichen von Ausgrenzung erkennen und mit einem Mini-Zug jemanden reinholen.',
+      fragen: ['Welches Zeichen war am leisesten?', 'Warum ist ein großes Ding manchmal schlimmer als nichts?', 'Welcher Mini-Zug passt diese Woche zu dir?'],
+      lehrer: {
+        ziel: 'Leise Ausgrenzung früh erkennen (nicht erwähnt, weggeschaut, Platz blockiert, Insider), Mini-Züge zum Einbeziehen ohne Bloßstellen kennen und Empathie für die ausgegrenzte Figur entwickeln.',
+        stufen: 'Level 1 Zeichen sehen (Chat: die Anzahl der Zeichen wird angezeigt), Level 2 Reinholen (Mensa: Ablenker im Bild, ein Zug, der nicht bloßstellt), Level 3 Ohne Drama (Insider-Witz: kein Hinweis, wie viele Zeichen; der leiseste wirksame Zug). Danach Vergleichskarte zu zweit („Wäre dein Zug bei uns machbar?“) und eine freiwillige Bonusfrage mit großem Pass.',
+        achten: 'Die Bonusfrage ist freiwillig – Pass nie kommentieren, nicht nachfragen. Keine Namen aus der Klasse, auch nicht im Austausch. Paare (Farben) im Blick behalten: Sitzen Jugendliche zusammen, zwischen denen gerade Ausgrenzung läuft, über den Tagescode neu mischen.',
+        impulse: ['„Woran merkt man, dass jemand nur mitlacht?“', '„Warum kann „Ihr grenzt sie aus!“ schaden?“', '„Was ist der kleinste Zug, der wirklich hilft?“'],
+        kippt: 'Berichtet jemand von echter Ausgrenzung in der Klasse oder schaut die Crew auffällig auf eine Person: Austausch beenden, nicht vor der Gruppe nachfragen, später allein mit der betroffenen Person sprechen. Bei wiederholter Ausgrenzung nach dem Schulkonzept die Klassenleitung bzw. den Régent informieren und den SePAS einbinden. Hilfenummern stehen am Ende des Spiels.',
       },
     },
 
@@ -21839,6 +22212,1292 @@ var qrcode = function() {
   });
 })();
 
+/* ---- games/konflikt/gerecht-oder-gleich.js ---- */
+/* Spiel „Gerecht oder gleich?“ (Thema: Konflikt, Druck & Mobbing) · Vorlage T4 Bewegung im Raum · j1-e01, j1-e24
+   Fairness-Dilemma mit Bild (Pizza für vier, Luca hat seit dem Frühstück nichts gegessen; Gruppenarbeit, Yara hat fast
+   alles gemacht, eine Note für alle; Elfmeterschießen, Sam ist neu). Zwei Seiten im Raum: A „Alle gleich“ (Wand links),
+   B „Je nach Lage“ (Wand rechts), Mitte „Kommt drauf an“. 20 Sekunden gehen, die kleinere Seite spricht zuerst.
+   Die Folge-Szene zeigt, wie es den Figuren geht; „Rewind“ zeigt die anderen Wege. Keine richtige Antwort, nur Folgen.
+   In drei Level: 1) Erkennen (Pizza), 2) Begründen (Gruppennote: mit „weil“, die andere Seite wiederholt das Argument,
+   bevor sie widerspricht), 3) Perspektive (Elfmeter: einmal als Sam gehen, einmal als Luca – wer bewegt sich?).
+   Nur die Lehrkraft tippt: „Stopp!“, „Weiter“ und welcher Weg zuerst gezeigt wird. Niemand wird gezählt. */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h } = CREW.util;
+
+  const POS = [
+    { id: 'a', label: 'A', where: 'Wand links' },
+    { id: 'mitte', label: 'Mitte', where: 'Kommt drauf an' },
+    { id: 'b', label: 'B', where: 'Wand rechts' },
+  ];
+  const WEG_NAME = { a: 'Weg A', mitte: 'Mitte', b: 'Weg B' };
+
+  /* Dilemmata: a/b/mitte = die drei Wege. Jeder Weg hat ein Bild (verteilung) und drei Figuren-Reaktionen.
+     Jeder Weg hat mindestens eine Figur, die nicht froh ist: Es gibt keinen Weg ohne Preis. */
+  const DILEMMATA = [
+    {
+      id: 'pizza', titel: 'Die Pizza', bild: 'pizza',
+      text: 'Vier Freunde, eine Pizza mit 12 Stücken. Luca hat seit dem Frühstück nichts gegessen. Die anderen hatten Mittagessen.',
+      a: { kurz: 'Alle gleich', lang: 'Jede:r bekommt 3 Stücke.', vert: { mika: 3, yara: 3, luca: 3, sam: 3 },
+        react: [['luca', 'neutral', 'Drei Stücke. Ich hab immer noch Hunger, aber okay.'], ['sam', 'froh', 'Easy. Keiner kann meckern.'], ['yara', 'neutral', 'Ich hätte eh nur zwei geschafft.']] },
+      b: { kurz: 'Je nach Hunger', lang: 'Luca bekommt 6 Stücke, die anderen je 2.', vert: { mika: 2, yara: 2, luca: 6, sam: 2 },
+        react: [['luca', 'froh', 'Danke. Jetzt kann ich wieder denken.'], ['mika', 'genervt', 'Und wenn ich morgen Hunger hab – krieg ich dann auch sechs?'], ['sam', 'neutral', 'Zwei Stücke … okay, ich hatte ja Mittag.']] },
+      mitte: { kurz: 'Erst fragen', lang: 'Erst fragen, wer wie viel Hunger hat. Dann verteilen.', vert: { mika: 2, yara: 2, luca: 5, sam: 3 },
+        react: [['yara', 'froh', 'Ich hab eh keinen Hunger mehr. Luca, nimm eins von mir.'], ['sam', 'genervt', 'Fragen dauert. Die Pizza wird kalt.'], ['luca', 'froh', 'Fünf Stücke. Danke, dass ihr gefragt habt.']] },
+    },
+    {
+      id: 'note', titel: 'Die Gruppennote', bild: 'note',
+      text: 'Gruppenarbeit: Yara hat fast alles gemacht. Sam war zwei Wochen krank. Mika und Luca hatten wenig Lust. Die Lehrerin gibt eine 2.',
+      arbeit: { yara: 60, mika: 15, luca: 15, sam: 10 },
+      a: { kurz: 'Alle gleich', lang: 'Alle vier bekommen die 2.', noten: { yara: '2', mika: '2', luca: '2', sam: '2' },
+        react: [['yara', 'wut', 'Ich hab die Arbeit gemacht, ihr habt die Note.'], ['luca', 'froh', 'Glück gehabt. Eine 2!'], ['sam', 'neutral', 'Ich war krank. Gut, dass ich nicht bestraft werde.']] },
+      b: { kurz: 'Je nach Arbeit', lang: 'Yara bekommt eine 1, die anderen eine 3.', noten: { yara: '1', mika: '3', luca: '3', sam: '3' },
+        react: [['yara', 'froh', 'Endlich sieht jemand, wer was gemacht hat.'], ['mika', 'wut', 'Jetzt streiten wir, wer wie viel gemacht hat.'], ['sam', 'traurig', 'Ich war krank! Dafür kann ich nichts.']] },
+      mitte: { kurz: 'Kommt drauf an', lang: 'Krank zählt anders als keine Lust: Yara 1, Sam 2, Mika und Luca 3.', noten: { yara: '1', mika: '3', luca: '3', sam: '2' },
+        react: [['sam', 'froh', 'Danke, dass Kranksein nicht zählt wie keine Lust.'], ['mika', 'genervt', 'Und wer entscheidet, wer keine Lust hatte?'], ['yara', 'neutral', 'Besser. Aber eigentlich wollte ich, dass die anderen mitmachen.']] },
+    },
+    {
+      id: 'elfmeter', titel: 'Das Elfmeterschießen', bild: 'elfmeter',
+      text: 'Schulturnier, Elfmeterschießen. Sam ist neu, hat noch nie im Turnier geschossen und will unbedingt. Luca trifft fast immer.',
+      a: { kurz: 'Alle gleich', lang: 'Alle schießen der Reihe nach – auch Sam.', schuetzen: ['luca', 'mika', 'yara', 'sam'],
+        react: [['sam', 'froh', 'Ich hab verschossen. Aber ich war dabei!'], ['luca', 'genervt', 'Wir sind raus. Hätte ich zweimal geschossen …'], ['yara', 'neutral', 'Wenigstens saß keiner auf der Bank.']] },
+      b: { kurz: 'Die Sichersten', lang: 'Die Sichersten schießen, damit das Team eine Chance hat.', schuetzen: ['luca', 'mika', 'yara'],
+        react: [['luca', 'froh', 'Weiter! Halbfinale!'], ['sam', 'traurig', 'Ich bin mal wieder nur Zuschauer.'], ['mika', 'neutral', 'Gewonnen – aber Sam ist still.']] },
+      mitte: { kurz: 'Kommt drauf an', lang: 'Sam schießt im Training mit, im Turnier die Sichersten – beim nächsten Turnier ist Sam dran.', schuetzen: ['luca', 'mika', 'yara'],
+        react: [['sam', 'neutral', 'Training ist okay. Aber einmal will ich im echten Spiel schießen.'], ['luca', 'froh', 'Fairer Plan: Sam übt, und nächstes Mal ist Sam dran.'], ['yara', 'froh', 'Dann hat jede:r was davon.']] },
+      sicht: [{ fig: 'sam', text: 'Ihr seid jetzt Sam: neu, will unbedingt schießen, hat Angst zu verschießen.' }, { fig: 'luca', text: 'Ihr seid jetzt Luca: trifft fast immer, will unbedingt ins Halbfinale.' }],
+    },
+  ];
+
+  const LEVELS = ['Erkennen', 'Begründen', 'Perspektive'];
+
+  // Bild zum Dilemma: Pizza (Stücke in Figurenfarben), Arbeit + Noten, Schützen
+  function bild(ctx, d, weg) {
+    const F = ctx.figures;
+    if (d.bild === 'pizza') {
+      const vert = weg ? d[weg].vert : null;
+      const order = ['mika', 'yara', 'luca', 'sam'];
+      const stuecke = [];
+      if (vert) order.forEach((f) => { for (let i = 0; i < vert[f]; i++) stuecke.push(F[f].colour); });
+      while (stuecke.length < 12) stuecke.push('#f5c26b');
+      const R = 60, C = 70;
+      const paths = stuecke.map((col, i) => {
+        const a0 = (i / 12) * Math.PI * 2 - Math.PI / 2, a1 = ((i + 1) / 12) * Math.PI * 2 - Math.PI / 2;
+        const x0 = C + R * Math.cos(a0), y0 = C + R * Math.sin(a0), x1 = C + R * Math.cos(a1), y1 = C + R * Math.sin(a1);
+        return '<path d="M' + C + ' ' + C + ' L' + x0.toFixed(1) + ' ' + y0.toFixed(1) + ' A' + R + ' ' + R + ' 0 0 1 ' + x1.toFixed(1) + ' ' + y1.toFixed(1) + ' Z" fill="' + col + '" stroke="#0e0a26" stroke-width="2.5"/>';
+      }).join('');
+      const svg = h('span', { class: 'gg-pizza', 'aria-label': vert ? 'Pizza verteilt' : 'Pizza mit 12 Stücken', html: '<svg viewBox="0 0 140 140" width="140" height="140" aria-hidden="true"><circle cx="70" cy="70" r="66" fill="#c98a3a" stroke="#0e0a26" stroke-width="3"/>' + paths + '</svg>' });
+      return h('div', { class: 'gg-bild' }, svg, vert ? h('div', { class: 'gg-legende' }, order.map((f) => h('span', { class: 'gg-leg', style: { '--fc': F[f].colour } }, ctx.avatar(f, 'neutral', 30), h('b', null, vert[f]), h('span', { class: 'small muted' }, 'Stücke')))) : h('span', { class: 'muted small' }, '12 Stücke für 4 Leute'));
+    }
+    if (d.bild === 'note') {
+      const noten = weg ? d[weg].noten : null;
+      return h('div', { class: 'gg-bild gg-arbeit' }, ['yara', 'mika', 'luca', 'sam'].map((f) => h('div', { class: 'gg-zeile' },
+        ctx.avatar(f, 'neutral', 30), h('b', { class: 'small' }, F[f].name),
+        h('div', { class: 'gg-balken', title: 'Arbeit' }, h('i', { style: { width: d.arbeit[f] + '%', background: F[f].colour } })),
+        h('span', { class: 'small muted' }, f === 'sam' ? 'krank' : d.arbeit[f] + ' %'),
+        h('span', { class: 'gg-note display' }, noten ? noten[f] : '?'))));
+    }
+    const sch = weg ? d[weg].schuetzen : null;
+    return h('div', { class: 'gg-bild gg-tor' }, h('span', { class: 'gg-tornetz', 'aria-hidden': 'true' }),
+      h('div', { class: 'row center', style: { gap: '10px' } }, ['luca', 'mika', 'yara', 'sam'].map((f) => h('span', { class: 'gg-schuetze' + (sch && !sch.includes(f) ? ' bank' : ''), style: { '--fc': F[f].colour } }, ctx.avatar(f, sch && !sch.includes(f) ? 'traurig' : 'neutral', 40), h('span', { class: 'small' }, F[f].name), h('span', { class: 'small muted' }, sch ? (sch.includes(f) ? 'schießt' : 'Bank') : (f === 'sam' ? 'neu' : f === 'luca' ? 'trifft fast immer' : ''))))));
+  }
+
+  // Beamer-Karte: Bild, Situation, die zwei Seiten
+  function karte(ctx, d, extra) {
+    return h('div', { class: 'card stack gg-karte' },
+      h('div', { class: 'row between', style: { flexWrap: 'nowrap', gap: '8px' } }, h('span', { class: 'eyebrow' }, d.titel), ctx.readBtn(d.text + ' Weg A: ' + d.a.lang + ' Weg B: ' + d.b.lang + ' Mitte: kommt drauf an.')),
+      h('div', { class: 'gg-oben' }, bild(ctx, d, null), h('p', { class: 'lead', style: { margin: 0 } }, d.text)),
+      h('div', { class: 'gg-seiten' },
+        h('div', { class: 'gg-seite', 'data-pos': 'a' }, h('b', { class: 'display' }, 'A · ' + d.a.kurz), h('span', null, d.a.lang)),
+        h('div', { class: 'gg-seite', 'data-pos': 'b' }, h('b', { class: 'display' }, 'B · ' + d.b.kurz), h('span', null, d.b.lang))),
+      extra || null);
+  }
+
+  // Folge-Szene eines Weges: Bild + drei Figuren
+  function folge(ctx, d, weg, o) {
+    const oo = o || {};
+    const w = d[weg];
+    return h('div', { class: 'card stack gg-folge' + (oo.klein ? ' klein' : ''), 'data-weg': weg },
+      h('div', { class: 'row between', style: { flexWrap: 'nowrap', gap: '8px' } }, h('span', { class: 'eyebrow' }, WEG_NAME[weg] + ' · ' + w.kurz), ctx.readBtn(w.lang + ' ' + w.react.map(([f, , t]) => ctx.figures[f].name + ': ' + t).join(' '))),
+      h('b', null, w.lang),
+      oo.klein ? null : bild(ctx, d, weg),
+      h('div', { class: 'stack gg-reakt' }, w.react.map(([f, mood, t]) => h('div', { class: 'gg-r' }, ctx.avatar(f, mood, oo.klein ? 34 : 44), h('span', null, h('b', null, ctx.figures[f].name + ': '), t)))));
+  }
+
+  CREW.registerGame({
+    id: 'gerecht-oder-gleich',
+    template: 'T4',
+    icon: 'users',
+    themen: ['Fairness', 'Gleichheit', 'Argumentieren', 'Perspektive'],
+    safety: ['figuren', 'koerper', 'raum'],
+    help: false,
+    dilemmata: DILEMMATA, // für den Test
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Ein Dilemma am Beamer. Geh zur Seite, die du fairer findest: A, B oder Mitte. Die kleinere Seite spricht zuerst. Dann zeigt der Beamer die Folgen.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'users', title: 'Gehen', text: '20 Sekunden: A, B oder Mitte.' },
+          { icon: 'chat', title: 'Reden', text: 'Die kleinere Seite zuerst. Mit „weil“.' },
+          { icon: 'undo', title: 'Folgen + Rewind', text: 'Jeder Weg hat einen Preis. Rewind zeigt die anderen.' },
+        ],
+        probe: async () => {
+          await ctx.T.walk({ card: ctx.say('PROBE · zählt nicht: Zwei Kekse, zwei Leute. A: jede:r einen. B: wer zuerst kommt. Geh kurz hin – nur zum Ausprobieren.', { eyebrow: 'Probe' }), positions: POS, seconds: 10, question: 'Probe vorbei. So geht’s: gehen, Stopp, reden.', step: 'Probe', minorityFirst: false });
+        },
+      });
+      // Raum vorbereiten (einmal am Beamer)
+      const wR = ctx.scr([
+        ctx.say('Zwei Seiten im Raum: A an der linken Wand, B an der rechten. Wer unsicher ist, geht in die Mitte. Es gibt keine richtige Seite – nur Folgen.', { eyebrow: 'Der Raum', small: true }),
+        h('div', { class: 'walk-pos' }, POS.map((p) => h('div', { class: 'walk-p', 'data-pos': p.id }, h('b', { class: 'display' }, p.label), h('span', { class: 'muted small' }, p.where)))),
+        h('div', { class: 'row' }, ctx.safetyLine('koerper'), ctx.safetyLine('raum')),
+      ], { eyebrow: 'Vorbereitung' });
+      if ((await ctx.next(wR, 'Los')) === ctx.SKIP) return { summary: 'Heute nicht gegangen. Nächstes Mal.' };
+
+      let gegangen = 0, rewinds = 0, sichtWechsel = null;
+      for (let i = 0; i < DILEMMATA.length; i++) {
+        const d = DILEMMATA[i];
+        const L = i + 1;
+        if (i > 0) await ctx.T.level({ n: L, names: LEVELS, text: L === 2 ? 'Jetzt mit „weil“: Die kleinere Seite begründet zuerst. Dann wiederholt die andere Seite das Argument, bevor sie widerspricht.' : 'Jetzt geht ihr nicht für euch, sondern als Figur: erst als Sam, dann als Luca. Wer bewegt sich?' });
+
+        if (L < 3) {
+          const r = await ctx.T.walk({
+            card: karte(ctx, d), positions: POS, seconds: 20, step: d.titel, badge: ctx.stufe(L, LEVELS),
+            question: L === 1 ? 'Die kleinere Seite zuerst: Warum steht ihr hier?' : 'Die kleinere Seite zuerst, mit „weil“. Dann wiederholt die andere Seite das Argument – erst dann widersprechen.',
+            nextLabel: 'Zu den Folgen',
+          });
+          if (r === ctx.SKIP) continue;
+          gegangen++;
+        } else {
+          // Level 3: zweimal gehen – als Sam, dann als Luca
+          for (const s of d.sicht) {
+            const r = await ctx.T.walk({
+              card: karte(ctx, d, ctx.figureCard({ fig: s.fig, mood: s.fig === 'sam' ? 'angst' : 'froh', text: s.text, eyebrow: 'Perspektive', size: 64 })),
+              positions: POS, seconds: 20, step: d.titel + ' · als ' + ctx.figures[s.fig].name, badge: ctx.stufe(3, LEVELS),
+              question: s.fig === 'sam' ? 'Als Sam: Warum steht ihr hier? Die kleinere Seite zuerst.' : 'Als Luca: Wer hat sich bewegt – und warum?',
+              nextLabel: 'Weiter',
+            });
+            if (r !== ctx.SKIP) gegangen++;
+          }
+          const wS = ctx.scr([
+            ctx.say('Habt ihr euch bewegt, als ihr Luca wart? Fair hängt davon ab, wo man steht.', { eyebrow: 'Perspektive', small: true }),
+          ], { eyebrow: d.titel, center: true, badge: ctx.stufe(3, LEVELS) });
+          const sw = await ctx.ask(wS, [{ label: 'Ja, viele sind gewechselt', value: 'ja', variant: 'ghost', id: 'gg-sicht-ja' }, { label: 'Kaum jemand', value: 'kaum', variant: 'ghost', id: 'gg-sicht-kaum' }]);
+          if (sw !== ctx.SKIP) sichtWechsel = sw;
+          // Alle drei Wege nebeneinander: Jeder Weg hat einen Preis
+          const wAll = ctx.scr([
+            ctx.say('Drei Wege, drei Folgen. Gibt es einen Weg, mit dem Sam UND Luca leben können? Worauf kommt es an?', { eyebrow: 'Kommt drauf an', small: true }),
+            h('div', { class: 'gg-wege' }, ['a', 'mitte', 'b'].map((w) => folge(ctx, d, w, { klein: true }))),
+            h('p', { class: 'muted small' }, 'Keine Seite ist falsch. Jeder Weg hat einen Preis – die Frage ist, wer ihn zahlt.'),
+          ], { eyebrow: d.titel + ' · alle Wege', badge: ctx.stufe(3, LEVELS) });
+          await ctx.next(wAll, 'Weiter');
+          continue;
+        }
+
+        // Welcher Weg wird zuerst gezeigt? (z. B. der der größeren Gruppe – nicht zählen, nur zeigen)
+        const wW = ctx.scr([
+          ctx.say('Welchen Weg spielen wir zuerst durch? Zum Beispiel den der größeren Gruppe.', { eyebrow: d.titel, small: true }),
+          CREW.ui.teacherLine('Einen Weg antippen. Niemand wird gezählt.'),
+        ], { eyebrow: d.titel, center: true, badge: ctx.stufe(L, LEVELS) });
+        const weg = await ctx.ask(wW, [{ label: 'A · ' + d.a.kurz, value: 'a', variant: 'teamA', id: 'gg-weg-a' }, { label: 'Mitte · ' + d.mitte.kurz, value: 'mitte', variant: 'ghost', id: 'gg-weg-mitte' }, { label: 'B · ' + d.b.kurz, value: 'b', variant: 'teamB', id: 'gg-weg-b' }]);
+        if (weg === ctx.SKIP) continue;
+        const wF = ctx.scr([
+          folge(ctx, d, weg),
+          ctx.say(L === 1 ? 'Wem geht es gut, wem nicht? War das fair – und für wen?' : 'Wer zahlt hier den Preis? Was würde die andere Seite sagen?', { eyebrow: 'Kurz reden', small: true }),
+        ], { eyebrow: d.titel + ' · Folge', badge: ctx.stufe(L, LEVELS) });
+        const rw = await ctx.ask(wF, [{ label: 'Rewind: die anderen Wege', value: 'rewind', variant: 'ghost', icon: 'undo', id: 'gg-rewind' }, { label: 'Weiter', value: 'weiter', iconRight: 'right', id: 'gg-weiter' }]);
+        if (rw === 'rewind') {
+          rewinds++;
+          CREW.sound.play('tap');
+          const andere = ['a', 'mitte', 'b'].filter((w) => w !== weg);
+          const wRw = ctx.scr([
+            h('div', { class: 'gg-rewind display' }, CREW.icon('undo', 34), 'Rewind'),
+            h('div', { class: 'gg-wege zwei' }, andere.map((w) => folge(ctx, d, w, { klein: true }))),
+            h('p', { class: 'muted small' }, 'Kein Weg ohne Preis. Gleich ist nicht immer gerecht – und gerecht nicht immer gleich.'),
+          ], { eyebrow: d.titel + ' · Rewind', badge: ctx.stufe(L, LEVELS) });
+          await ctx.next(wRw, i + 1 < DILEMMATA.length ? 'Nächstes Dilemma' : 'Weiter');
+        }
+      }
+      return {
+        summary: 'Gleich ist nicht immer gerecht. Ihr habt Seiten gewählt, begründet – und gesehen, dass jeder Weg einen Preis hat.',
+        stats: [[gegangen, 'mal gegangen'], [rewinds, 'mal Rewind']].concat(sichtWechsel ? [[sichtWechsel === 'ja' ? 'viele' : 'kaum', 'Seitenwechsel als Luca']] : []),
+      };
+    },
+  });
+})();
+
+/* ---- games/konflikt/hundert-prozent.js ---- */
+/* Spiel „100 Prozent“ (Thema: Konflikt, Druck & Mobbing) · Vorlage T2 Rollen-Puzzle · j1-e26, j1-e24
+   Etwas ist schiefgelaufen (Gruppenarbeit ohne Teil 3, Screenshot bei der Lehrkraft, Fenster kaputt). Jedes
+   Rollen-iPad zeigt, was EINE der vier Figuren getan und gedacht hat – plus ein Detail, das nur diese Rolle kennt
+   und erst sagt, wenn jemand fragt. Der Beamer (Lehrer-iPad) nimmt erst Antworten an, wenn alle vier erzählt haben.
+   Dann verteilt die Crew 100 % Verantwortung mit Reglern – niemand 0, niemand 100. Beim Aufdecken zeigt sich:
+   Jede Figur rechnet sich selbst klein, zusammen fehlt ein großer Rest. Danach wählt die Crew pro Figur einen
+   Wiedergutmach-Zug (passt / zu klein / zu groß). Kein „Wer war’s?“, sondern „Wie viel war’s?“.
+   Ohne Rollen-iPads: „Am Lehrer-iPad zeigen“ – jede Rolle schaut nacheinander allein.
+   In drei Level: 1) Hören (jede Rolle erzählt, Details erfragen), 2) Verteilen (100 %, dann Selbstsicht aufdecken),
+   3) Wiedergutmachen (pro Figur der Zug, der zum eigenen Anteil passt). */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h, clear } = CREW.util;
+
+  const MIN = 5, STEP = 5;
+  const ROLLEN = ['A', 'B', 'C', 'D'];
+
+  /* Fälle: rollen A–D = vier Figuren (getan, gedacht, detail = nur diese Rolle kennt es, selbst = so viel % gibt
+     sich die Figur selbst). zuege: passt (zum eigenen Anteil) / klein (Ausrede) / gross (übernimmt alles oder
+     bestraft sich). Die Selbstsicht ergibt zusammen deutlich unter 100 %. */
+  const FAELLE = [
+    {
+      id: 'gruppe', titel: 'Teil 3 fehlt', icon: 'users',
+      was: 'Die Präsentation wurde ohne Teil 3 abgegeben. Die ganze Gruppe bekommt eine 4.',
+      rollen: {
+        A: { fig: 'mika', getan: 'Mika hat die Gruppe geleitet und am Montag die Teile verteilt – in einer Chat-Nachricht zwischen vielen Memes.', gedacht: 'Ich hab’s doch klar geschrieben. Wer nicht liest, ist selbst schuld.', detail: 'Mika hat am Donnerstag gemerkt, dass Teil 3 fehlt – und nichts gesagt, um keinen Stress zu machen.', selbst: 10,
+          zuege: { passt: 'Mika fragt die Lehrkraft, ob die Gruppe Teil 3 nachreichen darf, und verteilt Aufgaben ab jetzt mit Namen und Rückfrage.', klein: 'Mika schreibt: „Nächstes Mal lest halt den Chat.“', gross: 'Mika macht Teil 3 heute Nacht ganz allein und sagt niemandem etwas.' } },
+        B: { fig: 'yara', getan: 'Yara sollte Teil 3 machen. Yara hat die Nachricht nie gesehen – der Gruppenchat war stumm geschaltet.', gedacht: 'Woher soll ich das wissen? Mir hat das keiner direkt gesagt.', detail: 'Yara hat am Freitag früh gesehen, dass alle anderen ihre Teile hochgeladen hatten – und gedacht: passt schon.', selbst: 15,
+          zuege: { passt: 'Yara macht Teil 3 bis morgen und stellt den Gruppenchat für Projekte auf laut.', klein: 'Yara sagt: „Hat mir ja keiner gesagt.“', gross: 'Yara steigt aus der Gruppe aus, damit die anderen eine bessere Note bekommen.' } },
+        C: { fig: 'luca', getan: 'Luca hat die Folien zusammengefügt und abgegeben – ohne sie einmal durchzuklicken.', gedacht: 'Ich hab nur hochgeladen. Ich bin doch nicht der Kontrolleur.', detail: 'Luca hat gesehen, dass die Folien nur bis 8 gingen statt bis 12 – und gedacht: kurz und knackig.', selbst: 5,
+          zuege: { passt: 'Luca hilft Yara, Teil 3 einzufügen, und klickt vor jeder Abgabe alle Folien einmal durch.', klein: 'Luca sagt: „Ich hab nur hochgeladen.“', gross: 'Luca übernimmt ab jetzt jede Abgabe für die ganze Klasse.' } },
+        D: { fig: 'sam', getan: 'Sam hat den eigenen Teil fertig gemacht und Yara gefragt: „Alles klar bei dir?“ Yara hat mit 👍 geantwortet.', gedacht: 'Ich hab ja nachgefragt. Mehr geht nicht.', detail: 'Sam wusste, dass Yara den Gruppenchat stumm hat – und hat trotzdem nur dort geschrieben.', selbst: 5,
+          zuege: { passt: 'Sam fragt nächstes Mal direkt nach, was fertig ist – statt sich mit einem 👍 zufriedenzugeben.', klein: 'Sam sagt: „Mein Teil war fertig. Rest ist nicht mein Problem.“', gross: 'Sam bietet an, die 4 allein auf die eigene Kappe zu nehmen.' } },
+      },
+    },
+    {
+      id: 'screenshot', titel: 'Der Screenshot', icon: 'phone',
+      was: 'Ein Screenshot aus einem privaten Chat zu viert ist bei der Mathe-Lehrkraft gelandet. Darauf: ein fieser Witz über sie und ein Meme mit ihrem Gesicht.',
+      rollen: {
+        A: { fig: 'luca', getan: 'Luca hat im Chat zu viert den fiesen Witz über die Mathe-Lehrkraft geschrieben.', gedacht: 'War ein Witz unter Freunden. Privat ist privat.', detail: 'Luca hat den Witz geschrieben, kurz nachdem die Lehrkraft Luca vor der Klasse ermahnt hatte – Luca war richtig sauer.', selbst: 30,
+          zuege: { passt: 'Luca entschuldigt sich bei der Lehrkraft persönlich und sagt ehrlich, was Luca geärgert hat – ohne Witz.', klein: 'Luca sagt: „War doch privat.“', gross: 'Luca behauptet, alles allein gemacht zu haben, damit die anderen raus sind.' } },
+        B: { fig: 'mika', getan: 'Mika hat 😂 drunter gesetzt und noch einen draufgelegt: ein Meme mit dem Gesicht der Lehrkraft.', gedacht: 'Ich hab nur mitgemacht. Angefangen hat Luca.', detail: 'Das Meme hat Mika selbst gebastelt – mit einem Foto von der Schul-Website.', selbst: 10,
+          zuege: { passt: 'Mika löscht das Meme überall und sagt der Lehrkraft, dass das Meme von Mika war.', klein: 'Mika sagt: „Ich hab ja nur ein Emoji gemacht.“', gross: 'Mika verlässt alle Gruppenchats für immer.' } },
+        C: { fig: 'sam', getan: 'Sam hat einen Screenshot gemacht und ihn dem eigenen Cousin geschickt, „weil der das lustig findet“.', gedacht: 'Mein Cousin kennt die doch gar nicht. Was soll da passieren?', detail: 'Sams Cousin geht in die Parallelklasse – und hat den Screenshot in seine Klassengruppe gestellt.', selbst: 10,
+          zuege: { passt: 'Sam bittet den Cousin, den Screenshot überall zu löschen, und fragt nach, wem er ihn gezeigt hat.', klein: 'Sam sagt: „Ich hab nur einen Screenshot gemacht, das ist ja nicht verboten.“', gross: 'Sam gibt freiwillig das Handy für einen ganzen Monat ab.' } },
+        D: { fig: 'yara', getan: 'Yara hat alles gelesen und nichts geschrieben.', gedacht: 'Ich hab ja nichts gemacht. Ich war nur in der Gruppe.', detail: 'Yara hat kurz überlegt, „Leute, lasst das“ zu schreiben – und es gelassen, um nicht die Spaßbremse zu sein.', selbst: 0,
+          zuege: { passt: 'Yara sagt im Gespräch ehrlich, dass Yara „Lasst das“ schreiben wollte – und es nächstes Mal tut.', klein: 'Yara sagt: „Ich hab gar nichts gemacht.“', gross: 'Yara entschuldigt sich für alle und sagt, Yara hätte alles verhindern müssen.' } },
+      },
+    },
+    {
+      id: 'fenster', titel: 'Das Fenster', icon: 'base',
+      was: 'In der Regenpause ist im Klassenraum ein Fenster kaputtgegangen. Ein Ball ist durchgeflogen.',
+      rollen: {
+        A: { fig: 'sam', getan: 'Sam hat den Ball geschossen – fest, in Richtung Mika.', gedacht: 'Mika hätte halt fangen müssen. Ich hab nur gepasst.', detail: 'Sam hat vorher gesehen, dass das Fenster gekippt war, und gedacht: trifft eh nicht.', selbst: 30,
+          zuege: { passt: 'Sam geht zum Hausmeister, sagt, dass Sam geschossen hat, und fragt, was jetzt zu tun ist.', klein: 'Sam sagt: „Mika hätte fangen müssen.“', gross: 'Sam verspricht, das ganze Fenster allein zu bezahlen – mit Geld, das Sam nicht hat.' } },
+        B: { fig: 'mika', getan: 'Mika hat sich weggeduckt, statt zu fangen.', gedacht: 'Ich duck mich doch nicht in einen Ball rein. Das ist ein Reflex.', detail: 'Mika hatte vorher gerufen: „Schieß ruhig fest, ich krieg den!“', selbst: 5,
+          zuege: { passt: 'Mika sagt ehrlich, dass Mika „Schieß fest!“ gerufen hat.', klein: 'Mika sagt: „Ich hab mich nur geduckt.“', gross: 'Mika sagt, Mika hätte geschossen, damit Sam keinen Ärger kriegt.' } },
+        C: { fig: 'luca', getan: 'Luca hat den Ball mitgebracht und vorgeschlagen, drinnen zu spielen, weil es regnet.', gedacht: 'Ich hab ja nicht geschossen.', detail: 'An der Tür hängt die Regel „Kein Ball im Klassenraum“. Luca hat gesagt: „Merkt eh keiner.“', selbst: 5,
+          zuege: { passt: 'Luca sagt, dass Ball und Idee von Luca waren – und lässt den Ball ab jetzt im Spind.', klein: 'Luca sagt: „Ich hab ja nicht geschossen.“', gross: 'Luca verspricht, nie wieder Fußball zu spielen.' } },
+        D: { fig: 'yara', getan: 'Yara stand an der Tür Schmiere und hat „Lehrer kommt!“ gerufen.', gedacht: 'Ich hab nur aufgepasst. Ich hab den Ball nicht mal angefasst.', detail: 'Genau beim Schuss kam Yaras Ruf. Sam hat sich erschrocken umgedreht und schief geschossen.', selbst: 5,
+          zuege: { passt: 'Yara erzählt, dass Yara genau beim Schuss „Lehrer kommt!“ gerufen hat.', klein: 'Yara sagt: „Ich stand nur an der Tür.“', gross: 'Yara sagt, an allem sei nur Yara schuld, weil Yara gerufen hat.' } },
+      },
+    },
+  ];
+
+  const LEVELS = ['Hören', 'Verteilen', 'Wiedergutmachen'];
+  const ZUG = {
+    passt: { label: 'passt zum Anteil', fb: 'Macht den eigenen Teil wieder gut – nicht mehr, nicht weniger.', mood: 'froh' },
+    klein: { label: 'zu klein', fb: 'Eine Ausrede. Der eigene Anteil bleibt liegen – und landet bei den anderen.', mood: 'genervt' },
+    gross: { label: 'zu groß', fb: 'Nimmt alles auf sich. Klingt edel, nimmt den anderen aber ihren Teil weg.', mood: 'traurig' },
+  };
+  const verteilOk = (w) => w.reduce((a, b) => a + b, 0) === 100 && w.every((x) => x >= MIN && x < 100);
+  const fallFuer = (ctx) => CREW.seed.pick(FAELLE, CREW.seed.rng(ctx.code, 'hundert-prozent', 'fall'));
+
+  // Rollen-Karte: was die Figur getan und gedacht hat, plus „Nur du weißt“
+  function rolleKarte(ctx, fall, r, o) {
+    const oo = o || {};
+    const R = fall.rollen[r], F = ctx.figures[R.fig];
+    return h('div', { class: 'stack hp-rolle', 'data-role': r },
+      ctx.figureCard({ fig: R.fig, mood: 'neutral', text: R.getan, eyebrow: 'Rolle ' + r + ' · Das hat ' + F.name + ' getan', speakText: R.getan + ' ' + F.name + ' denkt: ' + R.gedacht, size: 80,
+        extra: h('div', { class: 'hp-gedacht' }, CREW.icon('chat', 18), h('span', null, h('b', null, F.name + ' denkt: '), '„' + R.gedacht + '“')) }),
+      h('div', { class: 'card stack hp-detail' }, h('div', { class: 'row between', style: { flexWrap: 'nowrap', gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Nur du weißt'), ctx.readBtn(R.detail)), h('b', null, R.detail), h('span', { class: 'muted small' }, 'Sag das erst, wenn jemand fragt: „Gibt’s noch was, das wir nicht wissen?“')),
+      oo.hinweis === false ? null : h('p', { class: 'muted small' }, 'Erzähl mit deinen Worten, was ' + F.name + ' getan und gedacht hat. Du bist nicht ' + F.name + ' – du erzählst nur.'));
+  }
+
+  CREW.registerGame({
+    id: 'hundert-prozent',
+    template: 'T2',
+    icon: 'target',
+    themen: ['Verantwortung', 'Schuld schieben', 'Fairness', 'Wiedergutmachung'],
+    safety: ['figuren', 'freiwillig'],
+    help: false,
+    // für den Test
+    faelle: FAELLE, verteilOk,
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Etwas ist schiefgelaufen. Jedes Rollen-iPad kennt eine Figur. Erzählt, fragt nach, dann verteilt ihr 100 % – niemand 0, niemand 100.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'users', title: 'Hören', text: 'Jede Rolle erzählt. Ein Detail kommt nur auf Nachfrage.' },
+          { icon: 'target', title: '100 % verteilen', text: 'Nicht „Wer war’s?“, sondern „Wie viel war’s?“' },
+          { icon: 'heart', title: 'Wiedergutmachen', text: 'Pro Figur ein Zug, der zum Anteil passt.' },
+        ],
+        probe: ctx.T.probeCard('Probe: Zwei haben einen Kuchen fallen lassen. Wie viel ist fair, wenn beide gerannt sind? Tippt eins – zählt nicht.', [{ label: '50 / 50', value: 1, variant: 'ghost' }, { label: '100 / 0', value: 2, variant: 'ghost' }]),
+      });
+
+      // Welches Gerät? Rollen-iPad (per QR mit Rolle, oder im Spiel wählen) – oder Beamer
+      let geraet = ctx.role ? 'rolle' : null;
+      if (!geraet) {
+        const wG = ctx.scr([ctx.say('Ist das hier der Beamer oder ein Rollen-iPad?', { eyebrow: 'Welches Gerät?', small: true }), h('p', { class: 'muted small' }, 'Der Beamer zeigt den Fall und die Regler. Die Rollen-iPads zeigen je eine Figur.')], { eyebrow: 'Vorbereitung', center: true });
+        const g = await ctx.ask(wG, [{ label: 'Beamer · Lehrkraft', value: 'beamer', icon: 'eye', id: 'hp-beamer' }, { label: 'Rollen-iPad · Platz ' + ctx.seat, value: 'rolle', variant: 'ghost', icon: 'phone', id: 'hp-rolle' }], { autoPick: () => 'beamer' });
+        geraet = g === 'rolle' ? 'rolle' : 'beamer';
+      }
+
+      /* ---------- Rollen-iPad: nur die eigene Figur ---------- */
+      if (geraet === 'rolle') {
+        await ctx.T.codeCheck();
+        const fall = fallFuer(ctx);
+        const roles = {};
+        ROLLEN.forEach((r) => { const R = fall.rollen[r]; roles[r] = { name: ctx.figures[R.fig].name, desc: 'Du erzählst, was ' + ctx.figures[R.fig].name + ' getan und gedacht hat.' }; });
+        const role = await ctx.T.roleSetup({ roles, observer: { name: 'Beobachter:in', desc: 'Keine Figur. Du achtest darauf, dass alle vier erzählen – und dass niemand 0 oder 100 % bekommt.' } });
+        const w = role === 'X'
+          ? ctx.scr([h('div', { class: 'slice' }, h('b', null, 'Beobachter:in'), h('p', null, 'Fall: ' + fall.was),
+            h('ul', { class: 'stack', style: { margin: 0, paddingLeft: '1.2em' } }, h('li', null, 'Achte, dass jede Rolle erzählt – auch das Detail.'), h('li', null, 'Frag beim Verteilen: „Warum so viel? Warum so wenig?“'), h('li', null, 'Am Ende: Wer hat sich selbst am kleinsten gemacht?')))], { eyebrow: fall.titel, badge: h('span', { class: 'pill accent' }, 'Beobachter:in') })
+          : ctx.scr([h('div', { class: 'card soft' }, h('b', null, fall.was)), rolleKarte(ctx, fall, role)], { eyebrow: fall.titel, badge: h('span', { class: 'pill accent' }, 'Rolle ' + role) });
+        await ctx.next(w, 'Erzählt – zum Beamer schauen');
+        return { summary: 'Deine Rolle ist erzählt. Der Rest läuft am Beamer.', noSticker: true };
+      }
+
+      /* ---------- Beamer ---------- */
+      const fall = fallFuer(ctx);
+      const figs = ROLLEN.map((r) => fall.rollen[r].fig);
+      const F = (r) => ctx.figures[fall.rollen[r].fig];
+      // Rollen verteilen: QR (je Rolle) oder nacheinander am Lehrer-iPad
+      const wQ = ctx.scr([
+        ctx.say('Vier Rollen-iPads, je eine Figur. Scannen – oder im Spiel „Rollen-iPad“ wählen. Tagescode am Beamer: ' + ctx.code + '.', { eyebrow: 'Rollen verteilen', small: true }),
+        h('div', { class: 'card' }, CREW.games.qrPanel('hundert-prozent', { size: 130 })),
+        h('p', { class: 'muted small' }, 'Ohne Rollen-iPads: „Am Lehrer-iPad zeigen“ – jede Rolle schaut nacheinander allein.'),
+      ], { eyebrow: 'Vorbereitung', badge: ctx.stufe(1, LEVELS) });
+      const how = await ctx.ask(wQ, [{ label: 'Am Lehrer-iPad zeigen', value: 'here', variant: 'ghost', icon: 'eyeOff', id: 'hp-here' }, { label: 'Rollen-iPads sind bereit', value: 'qr', iconRight: 'right', id: 'hp-qr' }]);
+      if (how === ctx.SKIP) return { summary: 'Heute kein Fall. Nächstes Mal.' };
+      if (how === 'here') {
+        for (const r of ROLLEN) {
+          const c = await ctx.T.cover({ who: 'Nur Rolle ' + r + ' schaut', hint: 'Die anderen schauen weg. Rolle ' + r + ' erzählt gleich von ' + F(r).name + '.', eyebrow: 'Rolle ' + r });
+          if (c === ctx.SKIP) continue;
+          const w = ctx.scr([rolleKarte(ctx, fall, r)], { eyebrow: 'Rolle ' + r + ' · ' + fall.titel, badge: h('span', { class: 'pill accent' }, 'Rolle ' + r) });
+          await ctx.next(w, 'Gelesen, wegdrehen');
+        }
+      }
+
+      // Level 1: Hören – erst wenn alle vier erzählt haben, geht es weiter
+      const erzaehlt = new Set(), details = new Set();
+      const weiterId = 'hp-zum-verteilen';
+      const tile = (r) => {
+        const b1 = CREW.ui.btn('Erzählt', () => { erzaehlt.add(r); b1.classList.add('good'); b1.disabled = true; check(); }, { small: true, variant: 'ghost', icon: 'check', id: 'hp-erzaehlt-' + r });
+        const b2 = CREW.ui.btn('Detail gefragt', () => { details.add(r); b2.classList.add('good'); b2.disabled = true; }, { small: true, variant: 'ghost', icon: 'bulb', id: 'hp-detail-' + r });
+        return h('div', { class: 'hp-tile', style: { '--fc': F(r).colour } }, h('div', { class: 'row', style: { gap: '8px', flexWrap: 'nowrap' } }, ctx.avatar(fall.rollen[r].fig, 'neutral', 52), h('div', { class: 'stack', style: { gap: 0 } }, h('b', null, F(r).name), h('span', { class: 'muted small' }, 'Rolle ' + r))), b1, b2);
+      };
+      const w1 = ctx.scr([
+        h('div', { class: 'hp-fall' }, CREW.icon(fall.icon, 40), h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Was ist passiert?'), h('b', { class: 'lead' }, fall.was)), ctx.readBtn(fall.was)),
+        h('div', { class: 'hp-tiles' }, ROLLEN.map(tile)),
+        ctx.say('Jede Rolle erzählt, was ihre Figur getan und gedacht hat. Jede Rolle kennt noch ein Detail – fragt: „Gibt’s noch was, das wir nicht wissen?“', { eyebrow: 'Erzählrunde', small: true }),
+        CREW.ui.teacherLine('„Erzählt“ antippen, wenn eine Rolle gesprochen hat. Erst dann geht es zum Verteilen.'),
+      ], { eyebrow: fall.titel + ' · Hören', badge: ctx.stufe(1, LEVELS) });
+      const p1 = ctx.next(w1, 'Zum Verteilen', { id: weiterId });
+      const weiterBtn = w1.querySelector('#' + weiterId);
+      function check() { if (weiterBtn) weiterBtn.disabled = erzaehlt.size < ROLLEN.length; }
+      check();
+      if (ctx.auto) ROLLEN.forEach((r) => { w1.querySelector('#hp-erzaehlt-' + r).click(); if (ctx.autoRng() < 0.6) w1.querySelector('#hp-detail-' + r).click(); });
+      if ((await p1) === ctx.SKIP) return { summary: 'Heute nur reingeschaut.' };
+
+      // Level 2: Verteilen – 100 %, niemand 0, niemand 100
+      await ctx.T.level({ n: 2, names: LEVELS, text: 'Verteilt 100 % Verantwortung auf die vier. Niemand bekommt 0, niemand 100. Wer mehr bekommt, nimmt es jemand anderem weg.' });
+      const werte = [25, 25, 25, 25];
+      const rows = h('div', { class: 'stack hp-regler' });
+      const summe = h('span', { class: 'pill' });
+      const doneId = 'hp-verteilt';
+      let doneBtn = null;
+      const rest = () => 100 - werte.reduce((a, b) => a + b, 0);
+      const zeichne = () => {
+        clear(rows);
+        ROLLEN.forEach((r, i) => {
+          const minus = CREW.ui.iconBtn('minus', () => { if (werte[i] > MIN) { werte[i] -= STEP; zeichne(); } }, { label: F(r).name + ' weniger', id: 'hp-minus-' + r });
+          const plus = CREW.ui.iconBtn('plus', () => { if (rest() >= STEP) { werte[i] += STEP; zeichne(); } }, { label: F(r).name + ' mehr', id: 'hp-plus-' + r });
+          minus.disabled = werte[i] <= MIN;
+          plus.disabled = rest() < STEP;
+          rows.appendChild(h('div', { class: 'hp-reg', style: { '--fc': F(r).colour } },
+            h('div', { class: 'row', style: { gap: '8px', flexWrap: 'nowrap', minWidth: 0 } }, ctx.avatar(figs[i], 'neutral', 40), h('b', null, F(r).name)),
+            h('div', { class: 'hp-bar' }, h('i', { style: { width: werte[i] + '%' } })),
+            h('b', { class: 'hp-wert display' }, werte[i] + ' %'),
+            h('div', { class: 'row', style: { gap: '6px', flexWrap: 'nowrap' } }, minus, plus)));
+        });
+        const r = rest();
+        summe.textContent = r === 0 ? '100 % verteilt' : 'Noch ' + r + ' % zu verteilen';
+        summe.className = 'pill ' + (r === 0 ? 'good' : 'accent');
+        if (doneBtn) doneBtn.disabled = r !== 0;
+      };
+      zeichne();
+      const w2 = ctx.scr([
+        h('div', { class: 'row between' }, h('b', null, 'Wie viel war’s? Erst reden, dann Regler.'), summe),
+        rows,
+        h('p', { class: 'muted small' }, 'Startet bei 25 % für alle. Wer mehr bekommen soll: erst bei jemand anderem runter. Minimum 5 % – niemand ist ganz raus.'),
+      ], { eyebrow: fall.titel + ' · Verteilen', badge: ctx.stufe(2, LEVELS) });
+      if (ctx.auto) for (let k = 0; k < 4; k++) { const a = Math.floor(ctx.autoRng() * 4), b = Math.floor(ctx.autoRng() * 4); if (a !== b && werte[a] > MIN + STEP) { werte[a] -= STEP * 2; werte[b] += STEP * 2; } }
+      zeichne();
+      const p2 = ctx.next(w2, 'Verteilt – aufdecken', { id: doneId });
+      doneBtn = w2.querySelector('#' + doneId);
+      zeichne();
+      if ((await p2) === ctx.SKIP) return { summary: 'Heute nur reingeschaut.' };
+      const ok = verteilOk(werte);
+
+      // Aufdecken: So sieht sich jede Figur selbst – zusammen fehlt ein großer Rest
+      const selbstSumme = ROLLEN.reduce((a, r) => a + fall.rollen[r].selbst, 0);
+      const w3 = ctx.scr([
+        h('div', { class: 'hp-aufdeck' }, ROLLEN.map((r, i) => {
+          const R = fall.rollen[r];
+          return h('div', { class: 'hp-auf', style: { '--fc': F(r).colour } },
+            h('div', { class: 'row', style: { gap: '8px', flexWrap: 'nowrap' } }, ctx.avatar(R.fig, R.selbst < werte[i] ? 'ueberrascht' : 'neutral', 44), h('b', null, F(r).name)),
+            h('div', { class: 'hp-vgl' },
+              h('span', { class: 'hp-vgl-z' }, h('span', { class: 'small muted' }, 'Crew'), h('b', { class: 'display' }, werte[i] + ' %')),
+              h('span', { class: 'hp-vgl-z selbst' }, h('span', { class: 'small muted' }, 'sieht sich selbst bei'), h('b', { class: 'display' }, R.selbst + ' %'))),
+            h('span', { class: 'small' }, h('b', null, 'Nur ' + F(r).name + ' wusste: '), R.detail));
+        })),
+        h('div', { class: 'hp-rest' }, h('b', { class: 'display' }, 'Selbstsicht zusammen: ' + selbstSumme + ' %'), h('span', null, 'Es fehlen ' + (100 - selbstSumme) + ' %. Wenn jede:r sich klein rechnet, landet der Rest beim Streit.')),
+        ctx.say('Wer hat sich selbst am kleinsten gemacht? Wo lag die Crew weit drüber – und warum?', { eyebrow: 'Kurz reden', small: true }),
+      ], { eyebrow: fall.titel + ' · Aufdecken', badge: ctx.stufe(2, LEVELS) });
+      CREW.sound.play('reveal');
+      await ctx.next(w3, 'Weiter');
+
+      // Level 3: Wiedergutmachen – pro Figur ein Zug
+      await ctx.T.level({ n: 3, names: LEVELS, text: 'Jede Figur macht ihren Teil wieder gut. Wählt pro Figur den Zug, der zum Anteil passt – nicht zu klein, nicht zu groß.' });
+      const wahl = {};
+      const zugRows = ROLLEN.map((r) => {
+        const R = fall.rollen[r];
+        const opts = ctx.rshuffle(['passt', 'klein', 'gross']);
+        const chips = h('div', { class: 'hp-zuege' }, opts.map((k) => {
+          const c = h('button', { type: 'button', class: 'chip hp-zug', 'data-zug': k, 'data-role': r }, R.zuege[k]);
+          c.addEventListener('click', () => { CREW.sound.play('tap'); wahl[r] = k; chips.querySelectorAll('.chip').forEach((x) => x.classList.toggle('sel', x === c)); pruefe(); });
+          return c;
+        }));
+        return h('div', { class: 'hp-zugrow', style: { '--fc': F(r).colour } }, h('div', { class: 'row', style: { gap: '8px', flexWrap: 'nowrap' } }, ctx.avatar(R.fig, 'neutral', 40), h('b', null, F(r).name), h('span', { class: 'pill' }, werte[ROLLEN.indexOf(r)] + ' %')), chips);
+      });
+      const zugId = 'hp-zuege-fertig';
+      const w4 = ctx.scr([
+        ctx.say('Was macht jede Figur jetzt? Redet kurz, dann tippt die Lehrkraft pro Figur einen Zug.', { eyebrow: 'Wiedergutmachen', small: true }),
+        h('div', { class: 'stack' }, zugRows),
+      ], { eyebrow: fall.titel + ' · Wiedergutmachen', badge: ctx.stufe(3, LEVELS) });
+      const p4 = ctx.next(w4, 'Züge stehen', { id: zugId });
+      const zugBtn = w4.querySelector('#' + zugId);
+      function pruefe() { if (zugBtn) zugBtn.disabled = Object.keys(wahl).length < ROLLEN.length; }
+      pruefe();
+      if (ctx.auto) w4.querySelectorAll('.hp-zuege').forEach((row) => { const cs = row.querySelectorAll('.chip'); cs[Math.floor(ctx.autoRng() * cs.length)].click(); });
+      const z = await p4;
+      let passend = 0;
+      if (z !== ctx.SKIP) {
+        passend = ROLLEN.filter((r) => wahl[r] === 'passt').length;
+        if (passend === ROLLEN.length) CREW.sound.play('great');
+        const w5 = ctx.scr([
+          passend === ROLLEN.length ? h('div', { class: 'stop-big display', style: { color: 'var(--good)' } }, '100 % repariert!') : null,
+          h('div', { class: 'stack' }, ROLLEN.map((r) => {
+            const R = fall.rollen[r], k = wahl[r];
+            return h('div', { class: 'hp-ergebnis', 'data-zug': k, style: { '--fc': F(r).colour } },
+              ctx.avatar(R.fig, ZUG[k].mood, 48),
+              h('div', { class: 'stack', style: { gap: '2px', minWidth: 0 } },
+                h('div', { class: 'row', style: { gap: '8px' } }, h('b', null, F(r).name), h('span', { class: 'pill hp-zugtag', 'data-zug': k }, ZUG[k].label)),
+                h('span', null, R.zuege[k]),
+                k === 'passt' ? null : h('span', { class: 'small muted' }, ZUG[k].fb + ' Passender: ' + R.zuege.passt)));
+          })),
+          h('p', { class: 'muted small' }, 'Kein „Wer war’s?“, sondern „Wie viel war’s?“. Jede:r macht den eigenen Teil wieder gut.'),
+        ], { eyebrow: fall.titel + ' · Ergebnis', badge: ctx.stufe(3, LEVELS) });
+        await ctx.next(w5, 'Weiter');
+      }
+      return {
+        summary: passend === ROLLEN.length ? '100 % verteilt und 100 % repariert. Jede:r hat den eigenen Teil getragen.' : 'Verantwortung teilen statt Schuld schieben: Jede Figur hatte einen Anteil – keine 0, keine 100.',
+        stats: [[erzaehlt.size, 'Rollen erzählt'], [details.size, 'Details erfragt'], [ok ? 100 : 100 - rest(), '% verteilt'], [passend, 'passende Züge']],
+      };
+    },
+  });
+})();
+
+/* ---- games/konflikt/leiter-lauf.js ---- */
+/* Spiel „Leiter-Lauf“ (Thema: Konflikt, Druck & Mobbing) · Vorlage T4 Bewegung im Raum · j1-e26, j1-e25
+   Fünf Bodenmarken = Zivilcourage-Leiter (1 Hinschauen · 2 Nicht mitlachen · 3 Weggehen mit Betroffenen ·
+   4 Erwachsene holen · 5 Direkt was sagen) plus Mitte („weiß noch nicht“). Vorab: „Jede Stufe hilft. Stufe 1 ist
+   keine Null.“ Zuschauer-Szene am Beamer, 10 Sekunden gehen, Stopp, die größte Gruppe zuerst: „Warum hier?“
+   Danach zeigt die Leiter, was jede Stufe in dieser Szene bewirkt. Runde 2 derselben Szene: „Jetzt zu zweit“ –
+   wer geht höher? Runde 3: eine Drohung im Chat – hier ist „Erwachsene holen“ die stärkste Stufe (Hilfe holen ist
+   kein Petzen). Die Crew läuft als Figur (Yara, dann Yara + Mika, dann Luca), nie als sie selbst.
+   Hilfenummern (116 111, BEE SECURE, Schule) am Ende. Nur die Lehrkraft tippt. */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h } = CREW.util;
+
+  const STUFEN = [
+    { n: 1, id: 's1', label: 'Hinschauen', icon: 'eye' },
+    { n: 2, id: 's2', label: 'Nicht mitlachen', icon: 'x' },
+    { n: 3, id: 's3', label: 'Mit Betroffenen weggehen', icon: 'users' },
+    { n: 4, id: 's4', label: 'Erwachsene holen', icon: 'shield' },
+    { n: 5, id: 's5', label: 'Direkt was sagen', icon: 'chat' },
+  ];
+  const POS = STUFEN.map((s) => ({ id: s.id, label: String(s.n), where: s.label })).concat([{ id: 'mitte', label: '?', where: 'Weiß noch nicht' }]);
+
+  /* Szenen: was am Beamer steht (wer schaut zu), und was jede Stufe dort bewirkt.
+     stark = die Stufe, die in dieser Szene am meisten schützt. zuzweit = was sich zu zweit ändert. */
+  const SZENEN = {
+    bus: {
+      titel: 'An der Bushaltestelle', zuschauer: 'yara', betroffen: 'sam',
+      text: 'Nach der Schule. Luca und zwei aus der 8. nehmen Sam die Mütze weg und werfen sie hin und her. Sam lacht nicht. Yara wartet drei Meter daneben auf denselben Bus.',
+      folgen: {
+        s1: 'Yara schaut hin statt aufs Handy. Sam merkt: Jemand sieht das. Und Yara kann später genau erzählen, was war.',
+        s2: 'Yara lacht nicht mit. Ein Lacher weniger – Luca merkt, dass das Publikum fehlt.',
+        s3: 'Yara sagt zu Sam: „Komm, wir stellen uns da vorne hin.“ Sam ist nicht mehr allein.',
+        s4: 'Yara erzählt es am nächsten Morgen der Klassenlehrkraft. Die kümmert sich – ohne Yaras Namen zu nennen.',
+        s5: 'Yara sagt: „Gebt die Mütze zurück.“ Allein gegen drei Ältere – mutig, aber riskant.',
+        mitte: 'Unsicher sein ist okay. Wer hinschaut, ist schon auf Stufe 1.',
+      },
+      stark: 's3',
+      zuzweit: { s5: 'Yara und Mika sagen zusammen: „Lasst das. Gebt die Mütze zurück.“ Zu zweit wirkt es – Luca wirft die Mütze zurück.', s3: 'Yara und Mika nehmen Sam in die Mitte und gehen zum Bus. Drei sind eine Gruppe.' },
+    },
+    chat: {
+      titel: 'Die Drohung im Chat', zuschauer: 'luca', betroffen: 'mika',
+      text: 'Im Gruppenchat schreiben drei aus der 9. an Mika: „Morgen nach der Schule bist du dran.“ Daneben Lach-Emojis. Luca liest mit.',
+      folgen: {
+        s1: 'Luca liest genau und merkt: Das ist kein Witz, das ist eine Drohung.',
+        s2: 'Luca setzt kein Emoji drunter. Kein Applaus für die Drohung.',
+        s3: 'Luca schreibt Mika privat: „Hab’s gesehen. Ich geh morgen mit dir raus.“',
+        s4: 'Luca macht einen Screenshot und zeigt ihn noch heute einer erwachsenen Person. Bei Drohungen ist das die stärkste Stufe.',
+        s5: 'Luca schreibt in den Chat: „Hört auf.“ Gut gemeint – aber gegen drei aus der 9. kann Luca selbst zum Ziel werden.',
+        mitte: 'Unsicher ist okay. Bei Drohungen gilt: Erwachsene dazuholen ist nie falsch.',
+      },
+      stark: 's4',
+    },
+  };
+
+  const LEVELS = ['Allein', 'Zu zweit', 'Sicher handeln'];
+
+  // Die Leiter als Bild: Stufe 5 oben, Stufe 1 unten. o.folgen = Text je Stufe, o.stark = hervorgehoben
+  function leiter(ctx, o) {
+    const oo = o || {};
+    return h('div', { class: 'll-leiter' + (oo.folgen ? ' mit-folgen' : '') },
+      STUFEN.slice().reverse().map((s) => h('div', { class: 'll-sprosse' + (oo.stark === s.id ? ' stark' : ''), 'data-pos': s.id },
+        h('span', { class: 'll-n display' }, String(s.n)),
+        h('span', { class: 'll-ic' }, CREW.icon(s.icon, 22)),
+        h('div', { class: 'stack', style: { gap: '2px', minWidth: 0 } },
+          h('b', null, s.label + (oo.stark === s.id ? ' · ' + (oo.starkText || 'passt hier besonders') : '')),
+          oo.folgen ? h('span', { class: 'small' }, oo.folgen[s.id]) : null))));
+  }
+  const szeneKarte = (ctx, sz, eyebrow, extra) => h('div', { class: 'card stack ll-szene' },
+    h('div', { class: 'row between', style: { flexWrap: 'nowrap', gap: '8px' } }, h('span', { class: 'eyebrow' }, eyebrow), ctx.readBtn(sz.text)),
+    h('div', { class: 'll-szene-body' },
+      h('div', { class: 'll-figs' }, ctx.avatar(sz.betroffen, 'angst', 56), ctx.avatar(sz.zuschauer, 'ueberrascht', 56)),
+      h('p', { class: 'lead', style: { margin: 0 } }, sz.text)),
+    extra || null);
+
+  CREW.registerGame({
+    id: 'leiter-lauf',
+    template: 'T4',
+    icon: 'steps',
+    themen: ['Zivilcourage', 'Zuschauen', 'Hilfe holen', 'Zu zweit'],
+    safety: ['figuren', 'koerper', 'raum'],
+    help: true,
+    szenen: SZENEN, stufen: STUFEN, // für den Test
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Fünf Marken am Boden sind eine Leiter: von Hinschauen bis Direkt was sagen. Eine Szene, 10 Sekunden gehen – auf die Stufe, die die Figur schafft.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'steps', title: 'Allein', text: 'Welche Stufe schafft Yara allein?' },
+          { icon: 'users', title: 'Zu zweit', text: 'Dieselbe Szene, jetzt mit Mika. Wer geht höher?' },
+          { icon: 'shield', title: 'Sicher handeln', text: 'Bei Drohungen: Hilfe holen ist die stärkste Stufe.' },
+        ],
+        probe: ctx.T.probeCard('Probe: Auf welcher Stufe steht „Einer Lehrkraft Bescheid sagen“? Tippt eins – zählt nicht.', [{ label: 'Stufe 2', value: 2, variant: 'ghost' }, { label: 'Stufe 4', value: 4, variant: 'ghost' }]),
+      });
+
+      // Bodenmarken legen + der wichtigste Satz vorab
+      const wB = ctx.scr([
+        h('div', { class: 'll-vorab display' }, 'Jede Stufe hilft. Stufe 1 ist keine Null.'),
+        h('div', { class: 'll-start' },
+          leiter(ctx),
+          h('div', { class: 'stack' },
+            ctx.say('Legt fünf Zettel 1–5 in eine Reihe auf den Boden, von der Tür bis zur Tafel. Daneben ein Zettel „?“ für „weiß noch nicht“.', { eyebrow: 'Bodenmarken', small: true }),
+            h('div', { class: 'row' }, ctx.safetyLine('koerper'), ctx.safetyLine('raum'), ctx.safetyLine('figuren')))),
+        CREW.ui.teacherLine('Marken liegen? Dann Weiter. Ihr lauft immer für eine Figur, nie für euch.'),
+      ], { eyebrow: 'Vorbereitung' });
+      if ((await ctx.next(wB, 'Marken liegen')) === ctx.SKIP) return { summary: 'Heute keine Leiter. Nächstes Mal.', help: true };
+
+      const bus = SZENEN.bus, chat = SZENEN.chat;
+      const Y = ctx.figures[bus.zuschauer], S = ctx.figures[bus.betroffen], L = ctx.figures[chat.zuschauer];
+      let gelaufen = 0, hoeher = null;
+
+      // Level 1: allein – Yara an der Bushaltestelle
+      const r1 = await ctx.T.walk({
+        card: szeneKarte(ctx, bus, bus.titel + ' · Was macht ' + Y.name + '?'),
+        positions: POS, seconds: 10, step: bus.titel, badge: ctx.stufe(1, LEVELS),
+        question: 'Die größte Gruppe zuerst: Warum hier? Was traut sich ' + Y.name + ' – ehrlich?',
+        minorityFirst: false, nextLabel: 'Was bringt jede Stufe?',
+      });
+      if (r1 !== ctx.SKIP) {
+        gelaufen++;
+        const wF = ctx.scr([
+          ctx.say('So hilft jede Stufe ' + S.name + ' an der Bushaltestelle:', { eyebrow: 'Die Leiter', small: true }),
+          leiter(ctx, { folgen: bus.folgen, stark: bus.stark }),
+          h('p', { class: 'muted small' }, 'Auf „?“ gestanden? ' + bus.folgen.mitte),
+        ], { eyebrow: bus.titel + ' · Folgen', badge: ctx.stufe(1, LEVELS) });
+        await ctx.next(wF, 'Weiter');
+      }
+
+      // Level 2: zu zweit – dieselbe Szene, Mika ist auch da
+      await ctx.T.level({ n: 2, names: LEVELS, text: 'Dieselbe Szene. Jetzt steht Mika neben ' + Y.name + '. Geht zu zweit – nebeneinander, ohne Anfassen. Wer geht höher?' });
+      const r2 = await ctx.T.walk({
+        card: szeneKarte(ctx, bus, bus.titel + ' · zu zweit', h('div', { class: 'row', style: { gap: '10px' } }, ctx.avatar(bus.zuschauer, 'neutral', 40), ctx.avatar('mika', 'neutral', 40), h('b', null, Y.name + ' und Mika gehen zusammen.'))),
+        positions: POS, seconds: 10, step: bus.titel + ' · zu zweit', badge: ctx.stufe(2, LEVELS),
+        question: 'Die größte Gruppe zuerst: Wer ist höher gegangen als allein? Was macht zu zweit leichter?',
+        minorityFirst: false, nextLabel: 'Weiter',
+      });
+      if (r2 !== ctx.SKIP) {
+        gelaufen++;
+        const wH = ctx.scr([ctx.say('Ist die Crew zu zweit höher gegangen als allein?', { eyebrow: 'Zu zweit', small: true }), CREW.ui.teacherLine('Einmal antippen, was ihr seht. Niemand wird gezählt.')], { eyebrow: 'Zu zweit', center: true, badge: ctx.stufe(2, LEVELS) });
+        const hh = await ctx.ask(wH, [{ label: 'Höher', value: 'hoeher', icon: 'steps', id: 'll-hoeher' }, { label: 'Gleich', value: 'gleich', variant: 'ghost', id: 'll-gleich' }, { label: 'Tiefer', value: 'tiefer', variant: 'ghost', id: 'll-tiefer' }]);
+        if (hh !== ctx.SKIP) hoeher = hh;
+        const wZ = ctx.scr([
+          hh === 'hoeher' ? h('div', { class: 'stop-big display', style: { color: 'var(--good)' } }, 'Zu zweit höher!') : null,
+          h('div', { class: 'grid two' },
+            ctx.figureCard({ fig: bus.zuschauer, mood: 'froh', text: bus.zuzweit.s5, eyebrow: 'Stufe 5 · zu zweit', size: 64 }),
+            ctx.figureCard({ fig: 'mika', mood: 'neutral', text: bus.zuzweit.s3, eyebrow: 'Stufe 3 · zu zweit', size: 64 })),
+          h('div', { class: 'card stack soft' }, h('b', null, 'Zu zweit ist man mutiger – und sicherer.'), h('span', { class: 'muted small' }, hh === 'tiefer' ? 'Tiefer ist auch eine Antwort: Manchmal verlässt man sich auf die andere Person. Fragt euch: Wer macht den ersten Schritt?' : 'Darum: Such dir Verbündete. Ein Blick, ein „Kommst du mit?“ reicht oft.')),
+        ], { eyebrow: bus.titel + ' · zu zweit', badge: ctx.stufe(2, LEVELS) });
+        if (hh === 'hoeher') CREW.sound.play('great');
+        await ctx.next(wZ, 'Weiter');
+      }
+
+      // Level 3: sicher handeln – eine Drohung im Chat
+      await ctx.T.level({ n: 3, names: LEVELS, text: 'Neue Szene, online. Jetzt seid ihr ' + L.name + '. Welche Stufe ist hier sicher – und welche am stärksten?' });
+      const r3 = await ctx.T.walk({
+        card: szeneKarte(ctx, chat, chat.titel + ' · Was macht ' + L.name + '?'),
+        positions: POS, seconds: 10, step: chat.titel, badge: ctx.stufe(3, LEVELS),
+        question: 'Die größte Gruppe zuerst: Was ist hier sicher? Was wäre gefährlich?',
+        minorityFirst: false, nextLabel: 'Was bringt jede Stufe?',
+      });
+      if (r3 !== ctx.SKIP) {
+        gelaufen++;
+        const wF3 = ctx.scr([
+          leiter(ctx, { folgen: chat.folgen, stark: chat.stark, starkText: 'hier am stärksten' }),
+          h('div', { class: 'grid two ll-petzen' },
+            h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Petzen'), h('b', null, 'will jemandem schaden.'), h('span', { class: 'muted small' }, '„Die soll Ärger kriegen.“')),
+            h('div', { class: 'card stack ll-hilfe' }, h('span', { class: 'eyebrow' }, 'Hilfe holen'), h('b', null, 'will jemanden schützen.'), h('span', { class: 'muted small' }, '„Mika ist in Gefahr. Allein schaff ich das nicht.“'))),
+        ], { eyebrow: chat.titel + ' · Folgen', badge: ctx.stufe(3, LEVELS) });
+        await ctx.next(wF3, 'Weiter');
+      }
+
+      return {
+        summary: 'Jede Stufe hilft. Zu zweit geht man höher – und Hilfe holen ist kein Petzen, sondern die stärkste Stufe, wenn es gefährlich wird.',
+        stats: [[gelaufen, 'mal gelaufen']].concat(hoeher ? [[hoeher === 'hoeher' ? 'ja' : hoeher === 'gleich' ? 'gleich' : 'nein', 'zu zweit höher']] : []),
+        help: true,
+      };
+    },
+  });
+})();
+
+/* ---- games/konflikt/nein-trainer.js ---- */
+/* Spiel „Nein-Trainer“ (Thema: Konflikt, Druck & Mobbing) · Vorlage T0 Solo · j1-e25, j1-e23
+   Sparring-Partner fürs Stundenende oder zu Hause: Eine Figur setzt per Sprachnachricht Druck („Nur dieses eine Mal“).
+   Erst der Anker (Füße fest, ausatmen), dann wählst du eine Nein-Art und sagst den Satz – im Kopf, geflüstert oder
+   (nur wenn du willst) laut – und tippst „Gesagt“. Die Figur hakt zweimal nach. Dreimal beim Nein geblieben =
+   „Druck beendet“ plus Anker-Tipp. Das Ausweich-Nein wirkt kurz, holt den Druck aber zurück. Nichts wird gespeichert.
+   In drei Level: 1) Anker (Skill-Karte, erstes Nein), 2) Nachhaken (das zweite Nein darf kürzer sein),
+   3) Dabei bleiben (Schweigen, „Dachte, du bist …“ – das dritte Nein, dann ein Wenn-dann-Plan). */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h } = CREW.util;
+
+  const ARTEN = {
+    klar: { id: 'klar', label: 'Klares Nein', icon: 'x', wirkung: -20 },
+    grund: { id: 'grund', label: 'Nein mit Grund', icon: 'chat', wirkung: -18 },
+    ausweich: { id: 'ausweich', label: 'Ausweich-Nein', icon: 'shuffle', wirkung: -5 },
+    alternativ: { id: 'alternativ', label: 'Nein + Alternative', icon: 'sparkle', wirkung: -24 },
+  };
+  const ORDER = ['klar', 'grund', 'ausweich', 'alternativ'];
+  const MODI = [{ id: 'kopf', label: 'Im Kopf' }, { id: 'fluestern', label: 'Flüstern' }, { id: 'laut', label: 'Laut (wenn du willst)' }];
+
+  /* Druck-Situationen: start = erste Sprachnachricht. Pro Stufe die vier Nein-Sätze (ähnlich lang),
+     nach1/nach2 = Nachhaken der Figur je nach deiner letzten Nein-Art, ende = stark | ausweich. */
+  const DRUCK = [
+    {
+      id: 'schwaenzen', fig: 'luca', titel: 'Schwänzen', teaser: 'Luca will, dass du mit schwänzt.',
+      start: 'Ey, nach der Pause hauen wir ab. Mathe ist eh langweilig. Kommst du mit?',
+      nein: [
+        { klar: 'Nein, ich komm nicht mit.', grund: 'Nein. Ich will keinen Ärger mit der Schule.', ausweich: 'Heute passt’s irgendwie nicht.', alternativ: 'Nein. Aber nach der Schule bin ich dabei.' },
+        { klar: 'Nein. Bleibt dabei.', grund: 'Nein. Wenn’s auffällt, ruft die Schule zu Hause an.', ausweich: 'Vielleicht. Mal sehen.', alternativ: 'Nein. Um vier im Park – da bin ich.' },
+        { klar: 'Nein.', grund: 'Nein. Das hat mit Streber nichts zu tun.', ausweich: 'Ich muss los, bis später.', alternativ: 'Nein. Park um vier, ich bring den Ball.' },
+      ],
+      nach1: { klar: 'Komm schon, nur dieses eine Mal. Merkt doch keiner.', grund: 'Ärger? Die checken das nie. Nur dieses eine Mal.', ausweich: '„Irgendwie nicht“ heißt ja. Komm, nur dieses eine Mal.', alternativ: 'Nach der Schule ist doch langweilig. Nur dieses eine Mal!' },
+      nach2: { klar: '… … Okay. Dachte, du bist nicht so ein Streber.', grund: '… … Wow. Dachte, du bist cooler.', ausweich: 'Mal sehen? Ich wart am Tor auf dich. 😏', alternativ: '… Park ist für Babys. Letzte Chance: Kommst du mit?' },
+      ende: { stark: 'Okay, okay. Bis um vier dann.', ausweich: 'Na gut … ich frag dich morgen nochmal.' },
+    },
+    {
+      id: 'passwort', fig: 'sam', titel: 'Das Passwort', teaser: 'Sam will dein Passwort vom Game.',
+      start: 'Gib mir mal dein Passwort vom Game. Ich zock dir heute Nacht dein Level hoch, versprochen.',
+      nein: [
+        { klar: 'Nein, mein Passwort geb ich nicht raus.', grund: 'Nein. Passwörter geb ich niemandem, auch Freunden nicht.', ausweich: 'Weiß ich grad nicht auswendig.', alternativ: 'Nein. Aber wir können morgen zusammen zocken.' },
+        { klar: 'Nein. Hat mit Vertrauen nichts zu tun.', grund: 'Nein. Wenn was passiert, ist mein Account weg.', ausweich: 'Ich schau später mal.', alternativ: 'Nein. Ich zock das Event selbst – hilf mir per Call.' },
+        { klar: 'Nein. Bleibt so.', grund: 'Nein. Mein Account, meine Regel.', ausweich: 'Mein Akku ist gleich leer.', alternativ: 'Nein. 20 Uhr Call, wir machen das Event zusammen.' },
+      ],
+      nach1: { klar: 'Vertraust du mir etwa nicht? Nur dieses eine Mal.', grund: 'Auch Freunden nicht? Ich dachte, wir sind Freunde.', ausweich: 'Dann schau halt nach. Ich warte. 😏', alternativ: 'Morgen ist zu spät, das Event endet heute.' },
+      nach2: { klar: '… … Echt jetzt? Alle anderen machen das.', grund: '… Als ob ich deinen Account klaue. 🙄', ausweich: 'Später ist zu spät. Schick’s jetzt.', alternativ: '… Per Call ist voll umständlich. Schick einfach.' },
+      ende: { stark: 'Okay, okay. 20 Uhr Call.', ausweich: 'Dann lad halt auf. Ich frag gleich nochmal.' },
+    },
+    {
+      id: 'mutprobe', fig: 'mika', titel: 'Die Mutprobe', teaser: 'Mika will eine Mutprobe am Kiosk.',
+      start: 'Mutprobe! Steck am Kiosk einen Kaugummi ein, ohne zu zahlen. Alle haben’s schon gemacht.',
+      nein: [
+        { klar: 'Nein, das mach ich nicht.', grund: 'Nein. Das ist Klauen, da hab ich keinen Bock drauf.', ausweich: 'Hab grad keine Zeit.', alternativ: 'Nein. Aber ich mach eine andere Mutprobe.' },
+        { klar: 'Nein. Auch nicht ein Kaugummi.', grund: 'Nein. Wenn ich erwischt werde, darf ich da nie wieder hin.', ausweich: 'Vielleicht morgen.', alternativ: 'Nein. Ich spring dafür vom Dreier im Freibad.' },
+        { klar: 'Nein. Und ich bin trotzdem nicht raus.', grund: 'Nein. Feige ist was anderes.', ausweich: 'Ich muss heim.', alternativ: 'Nein. Samstag, Freibad, Dreier. Kommt mit.' },
+      ],
+      nach1: { klar: 'Komm, ist doch nur ein Kaugummi. Nur dieses eine Mal.', grund: 'Klauen, pff. Das ist doch kein echtes Klauen.', ausweich: 'Dauert zehn Sekunden. Zeit hast du.', alternativ: 'Andere Mutprobe ist langweilig. Kaugummi oder nix.' },
+      nach2: { klar: '… … Okay. Dann bist du halt raus aus der Gruppe.', grund: '… … Feigling. 🐔', ausweich: 'Morgen? Ich erinner dich. 😏', alternativ: '… Vom Dreier springt jeder. Kaugummi oder du bist raus.' },
+      ende: { stark: 'Okay … Samstag Freibad.', ausweich: 'Na gut. Morgen dann.' },
+    },
+    {
+      id: 'handy', fig: 'yara', titel: 'Das Handy', teaser: 'Yara will durch deine Fotos scrollen.', grenze: true,
+      start: 'Gib mal dein Handy, ich will die Fotos vom Ausflug sehen. Ich scroll nur kurz durch.',
+      nein: [
+        { klar: 'Nein, mein Handy bleibt bei mir.', grund: 'Nein. Da sind auch private Sachen drauf.', ausweich: 'Akku ist fast leer, sorry.', alternativ: 'Nein. Aber ich schick dir die Ausflug-Fotos.' },
+        { klar: 'Nein. Stopp.', grund: 'Nein. Ich versteck nichts – es ist trotzdem meins.', ausweich: 'Später vielleicht.', alternativ: 'Nein. Ich schick sie dir jetzt sofort, guck.' },
+        { klar: 'Nein. Frag bitte nicht nochmal.', grund: 'Nein. Mein Handy, meine Grenze.', ausweich: 'Ich muss jetzt echt los.', alternativ: 'Nein. Aber die fünf besten hast du jetzt.' },
+      ],
+      nach1: { klar: 'Boah, nur kurz! Ich schau auch nur die vom Ausflug.', grund: 'Private Sachen? Was versteckst du denn? 😏', ausweich: 'Für zwei Minuten reicht’s noch.', alternativ: 'Schicken dauert. Gib einfach kurz her.' },
+      nach2: { klar: '… … Echt jetzt? Freunde teilen alles.', grund: '… Du bist so komisch heute.', ausweich: 'Später sagst du immer. Jetzt!', alternativ: 'Schick alle, nicht nur die vom Ausflug. 😏' },
+      ende: { stark: 'Okay. Hab’s kapiert.', ausweich: 'Na gut. Nächstes Mal dann.' },
+    },
+  ];
+
+  const LEVELS = ['Anker', 'Nachhaken', 'Dabei bleiben'];
+  const TIPP = [
+    'Erstes Nein: kurz und klar. Du musst nichts beweisen.',
+    'Das zweite Nein darf kürzer sein als das erste. Wiederholen ist erlaubt.',
+    'Schweigen und Sprüche aushalten. Du musst nichts erklären.',
+  ];
+  const PLAENE = [
+    'Wenn jemand „Nur dieses eine Mal“ sagt, dann sage ich: „Auch nicht einmal.“',
+    'Wenn ich wackle, dann stelle ich erst die Füße fest und atme aus.',
+    'Wenn der Druck nicht aufhört, dann gehe ich – und rede mit jemandem, dem ich vertraue.',
+    'Wenn „Dachte, du bist cool“ kommt, dann sage ich: „Bin ich. Trotzdem nein.“',
+  ];
+
+  // Sprachnachricht: Play-Knopf, Wellenform, Dauer, Abschrift (zum Mitlesen, immer sichtbar)
+  function voice(ctx, fig, text) {
+    const bars = h('span', { class: 'nt-wave', 'aria-hidden': 'true' }, Array.from({ length: 24 }, (_, i) => h('i', { style: { height: (25 + Math.round(70 * Math.abs(Math.sin(i * 1.7 + text.length)))) + '%' } })));
+    const secs = Math.max(3, Math.round(text.length / 12));
+    const el = h('div', { class: 'nt-msg' },
+      ctx.avatar(fig, 'neutral', 36),
+      h('div', { class: 'nt-voice' },
+        h('div', { class: 'nt-voice-row' },
+          CREW.ui.iconBtn('play', () => {
+            el.classList.remove('playing'); void el.offsetWidth; el.classList.add('playing');
+            setTimeout(() => el.classList.remove('playing'), Math.min(secs, 6) * 1000);
+            if (CREW.canSpeak() && CREW.state.settings.speech) CREW.speak(ctx.figures[fig].name + ': ' + text);
+          }, { label: 'Sprachnachricht abspielen', cls: 'nt-play' }),
+          bars,
+          h('span', { class: 'nt-dauer small' }, '0:' + String(secs).padStart(2, '0'))),
+        h('span', { class: 'nt-trans' }, text)));
+    return el;
+  }
+  const meinNein = (text, modus) => h('div', { class: 'nt-msg me' }, h('div', { class: 'bubble me' }, h('span', { class: 'bubble-who' }, 'Du · ' + modus), h('span', null, text)));
+
+  CREW.registerGame({
+    id: 'nein-trainer',
+    template: 'T0',
+    icon: 'shield',
+    themen: ['Nein sagen', 'Nachhaken', 'Anker', 'Wenn-dann'],
+    safety: ['figuren', 'freiwillig'],
+    help: true,
+    druck: DRUCK, // für den Test
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Eine Figur schickt Sprachnachrichten und macht Druck. Du ankerst, wählst ein Nein und sagst es – im Kopf, geflüstert oder laut. Dreimal dabei bleiben.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'leaf', title: 'Anker', text: 'Füße fest, einmal lang ausatmen.' },
+          { icon: 'x', title: 'Nein sagen', text: 'Vier Arten. Sagen, dann „Gesagt“.' },
+          { icon: 'shield', title: 'Dabei bleiben', text: 'Die Figur hakt zweimal nach.' },
+        ],
+        probe: ctx.T.probeCard('Probe: „Komm, nur einmal!“ – welches Nein lässt am wenigsten Hintertür? Tipp eins, zählt nicht.', [{ label: 'Klares Nein', value: 'k', variant: 'ghost', icon: 'x' }, { label: 'Ausweich-Nein', value: 'a', variant: 'ghost', icon: 'shuffle' }]),
+      });
+
+      // Wer macht heute Druck? (j1-e23: die Grenzen-Situation zuerst)
+      const unit = (CREW.games.FILTER && CREW.games.FILTER.einheit) || '';
+      const liste = unit === 'j1-e23' ? DRUCK.filter((d) => d.grenze).concat(DRUCK.filter((d) => !d.grenze)) : DRUCK.slice();
+      const wS = ctx.scr([
+        ctx.say('Wer macht dir heute Druck? Such dir eine Situation aus. Alles erfunden, nichts wird gespeichert.', { eyebrow: 'Sparring wählen', small: true }),
+        CREW.ui.xHint('Mit dem X oben rechts kannst du jederzeit aufhören. Ohne Grund.'),
+      ], { eyebrow: 'Sparring', center: true });
+      const wahl = await ctx.ask(wS, liste.map((d) => ({ label: d.teaser, value: d.id, variant: 'ghost', icon: 'phone', id: 'nt-sit-' + d.id })).concat([{ label: 'Zufall', value: 'zufall', icon: 'shuffle', id: 'nt-sit-zufall' }]));
+      if (wahl === ctx.SKIP) return { summary: 'Heute nur reingeschaut. Auch okay.', help: true };
+      const sit = wahl === 'zufall' ? liste[Math.floor(Math.random() * liste.length)] : DRUCK.find((d) => d.id === wahl);
+      const F = ctx.figures[sit.fig];
+
+      // Level 1: Anker vor dem Nein (Skill-Karte)
+      const wA = ctx.scr([
+        h('div', { class: 'nt-anker' },
+          h('div', { class: 'nt-anker-kreis', 'aria-hidden': 'true' }, CREW.icon('leaf', 46)),
+          h('div', { class: 'stack', style: { gap: '6px' } },
+            h('span', { class: 'skill-chip karte', style: { alignSelf: 'flex-start' } }, CREW.icon('star', 16), 'Skill-Karte „Anker vor dem Nein“'),
+            h('b', { class: 'lead' }, 'Füße fest auf den Boden. Schultern locker. Einmal lang ausatmen.'),
+            h('span', { class: 'muted small' }, 'Der Anker kommt vor dem Nein – dann wackelt es weniger.'))),
+        ctx.say(F.name + ' schickt dir gleich eine Sprachnachricht. Erst der Anker, dann hörst du rein.', { eyebrow: 'Bevor es losgeht', small: true }),
+      ], { eyebrow: sit.titel + ' · Anker', badge: ctx.stufe(1, LEVELS) });
+      if ((await ctx.next(wA, 'Anker steht', { id: 'nt-anker' })) === ctx.SKIP) return { summary: 'Heute nur reingeschaut. Auch okay.', help: true };
+
+      const chat = h('div', { class: 'nt-chat', role: 'log', 'aria-live': 'polite' });
+      const kopf = h('div', { class: 'nt-kopf' }, ctx.avatar(sit.fig, 'neutral', 40), h('div', { class: 'stack', style: { gap: 0, minWidth: 0 } }, h('b', null, F.name), h('span', { class: 'muted small' }, 'Sprachnachrichten · erfunden')));
+      const meter = ctx.meter({ value: 40, label: 'Druck' });
+      const phone = h('div', { class: 'nt-phone' }, kopf, chat, h('div', { class: 'nt-foot' }, meter.el));
+      const scrollEnd = () => requestAnimationFrame(() => { chat.scrollTop = chat.scrollHeight; });
+      let druck = 40, modus = MODI[0];
+      const gewaehlt = [];
+      let letzte = null;
+
+      for (let k = 0; k < 3; k++) {
+        if (k > 0) await ctx.T.level({ n: k + 1, names: LEVELS, text: k === 1 ? F.name + ' hakt nach: „Nur dieses eine Mal.“ Dein zweites Nein darf kürzer sein als das erste.' : 'Jetzt kommt Schweigen – oder ein Spruch. Dabei bleiben. Du musst nichts erklären.' });
+        const msg = k === 0 ? sit.start : (k === 1 ? sit.nach1 : sit.nach2)[letzte || 'klar'];
+        chat.appendChild(voice(ctx, sit.fig, msg));
+        druck = Math.min(100, druck + (k === 0 ? 20 : 15) + (letzte === 'ausweich' ? 10 : 0));
+        meter.set(druck);
+        // Nein-Art wählen
+        const wN = ctx.scr([
+          phone,
+          h('div', { class: 'nt-tipp' }, h('span', { class: 'pill accent' }, 'Nein ' + (k + 1) + ' von 3'), h('b', null, TIPP[k]), ctx.readBtn(TIPP[k])),
+        ], { eyebrow: sit.titel + ' · ' + (k + 1) + '/3', badge: ctx.stufe(k + 1, LEVELS) });
+        scrollEnd();
+        const art = await ctx.ask(wN, ORDER.map((id) => ({ label: ARTEN[id].label + ' · „' + sit.nein[k][id] + '“', value: id, icon: ARTEN[id].icon, variant: 'ghost', id: 'nt-art-' + id })));
+        if (art === ctx.SKIP) { gewaehlt.push(null); continue; }
+        // Sagen: im Kopf, flüstern oder laut – dann „Gesagt“
+        const satz = sit.nein[k][art];
+        const chips = h('div', { class: 'row center', style: { gap: '8px' } }, MODI.map((m) => {
+          const c = h('button', { type: 'button', class: 'chip' + (m === modus ? ' sel' : ''), 'data-modus': m.id }, m.label);
+          c.addEventListener('click', () => { CREW.sound.play('tap'); modus = m; chips.querySelectorAll('.chip').forEach((x) => x.classList.toggle('sel', x === c)); });
+          return c;
+        }));
+        const wG = ctx.scr([
+          h('div', { class: 'nt-sag' }, h('span', { class: 'eyebrow' }, ARTEN[art].label), h('div', { class: 'nt-sag-satz display' }, '„' + satz + '“'), ctx.readBtn(satz)),
+          chips,
+          h('p', { class: 'muted small', style: { textAlign: 'center' } }, 'Blick hoch, Füße fest. Sag den Satz einmal ganz – wie du willst. Niemand hört mit, nichts wird aufgenommen.'),
+        ], { eyebrow: 'Sag es', center: true, badge: ctx.stufe(k + 1, LEVELS) });
+        const g = await ctx.next(wG, 'Gesagt', { id: 'nt-gesagt' });
+        if (g === ctx.SKIP) { gewaehlt.push(null); continue; }
+        gewaehlt.push(art);
+        letzte = art;
+        chat.appendChild(meinNein(satz, modus.label.replace(' (wenn du willst)', '')));
+        druck = Math.max(0, druck + ARTEN[art].wirkung);
+        meter.set(druck);
+        CREW.sound.play(art === 'ausweich' ? 'soft' : 'good');
+      }
+
+      // Ende: die Figur gibt auf – oder vertagt (Ausweich-Nein holt den Druck zurück)
+      const vertagt = letzte === 'ausweich';
+      chat.appendChild(voice(ctx, sit.fig, vertagt ? sit.ende.ausweich : sit.ende.stark));
+      const neins = gewaehlt.filter(Boolean).length;
+      if (!vertagt && neins === 3) { druck = 0; meter.set(0); }
+      const wE = ctx.scr([
+        h('div', { class: 'dc-ende nt-ende', 'data-vertagt': vertagt ? '1' : '0' }, CREW.icon(vertagt ? 'timer' : 'shield', 40), h('h2', null, vertagt ? 'Druck vertagt – für heute.' : neins === 3 ? 'Druck beendet.' : 'Durchgehalten.')),
+        phone,
+        h('div', { class: 'card stack soft' },
+          h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, 'Anker-Tipp'), ctx.readBtn('Anker-Tipp: Füße fest, ausatmen, dann das Nein. Kurz und ruhig. Das zweite Nein darf kürzer sein als das erste.')),
+          h('b', null, 'Füße fest, ausatmen, dann das Nein. Kurz und ruhig.'),
+          h('span', { class: 'muted small' }, vertagt ? 'Das Ausweich-Nein wirkt kurz – aber es lässt eine Hintertür offen. Morgen kommt die Frage wieder.' : 'Das zweite Nein darf kürzer sein als das erste. Wiederholen ist keine Schwäche.')),
+        h('div', { class: 'row center', style: { gap: '8px' } }, gewaehlt.map((a, i) => h('span', { class: 'pill' + (a && a !== 'ausweich' ? ' good' : '') }, (i + 1) + '. ' + (a ? ARTEN[a].label : 'Pass')))),
+      ], { eyebrow: sit.titel + ' · Ende', badge: ctx.stufe(3, LEVELS) });
+      scrollEnd();
+      CREW.sound.play(vertagt ? 'soft' : 'great');
+      await ctx.next(wE, 'Weiter');
+
+      // Wenn-dann-Plan (j1-e25 Hausaufgabe): nur für den Kopf, nichts wird gespeichert
+      const wP = ctx.scr([ctx.say('Welcher Wenn-dann-Satz hilft dir beim nächsten Mal? Nur für dich, nichts wird gespeichert.', { eyebrow: 'Wenn-dann', small: true })], { eyebrow: 'Wenn-dann', badge: ctx.stufe(3, LEVELS) });
+      const p = await ctx.ask(wP, PLAENE.map((t, i) => ({ label: t, value: i, variant: 'ghost', id: 'nt-plan-' + i })).concat([{ label: 'Heute nicht', value: 'nein', variant: 'ghost', icon: 'x', auto: false }]));
+      const plan = typeof p === 'number' ? PLAENE[p] : null;
+      return {
+        summary: vertagt ? 'Dreimal Nein – das letzte war ein Ausweich-Nein. Nächstes Mal: kurz und klar.' : neins === 3 ? 'Druck beendet. Dreimal beim Nein geblieben.' : 'Jedes Nein zählt – auch eins von dreien.',
+        stats: [[neins, 'mal Nein gesagt'], [gewaehlt.filter((a) => a && a !== 'ausweich').length, 'Neins ohne Hintertür']],
+        help: true,
+        again: true,
+        extra: plan ? h('p', { class: 'muted small' }, 'Dein Wenn-dann (nur im Kopf): „' + plan + '“') : null,
+      };
+    },
+  });
+})();
+
+/* ---- games/konflikt/sorrywerkstatt.js ---- */
+/* Spiel „Sorry-Werkstatt“ (Thema: Konflikt, Druck & Mobbing) · Vorlage T5 Gerät weitergeben · j1-e24
+   Nach einem Figuren-Streit wird eine Entschuldigung gebaut. Das iPad wandert im Kreis: „Nur du schaust“ auf
+   drei Bausteine – echte („Das war nicht okay von mir“) und Fake-Sorrys („Sorry, aber du hast angefangen“).
+   Jede Person legt einen Baustein dazu oder nimmt einen weg. Die verletzte Figur reagiert sofort mit Stimmung
+   und Hitze; wer einen Fake wegnimmt, sagt in einem Satz, warum (aufgedeckt wird beim Weitergeben).
+   Ein „aber“ im Sorry – und die Hitze ist wieder auf 80.
+   In drei Level: 1) Fake finden (der erste Versuch der Figur enthält ein „aber“), 2) Sorry bauen (bis die Hitze
+   unter 30 ist und die drei Kernteile drin sind), 3) Wieder gutmachen (was braucht die verletzte Figur wirklich?). */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h } = CREW.util;
+
+  const START = 80;        // Hitze nach dem Streit
+  const ANGENOMMEN = 30;   // darunter, ohne Fake und mit den drei Kernteilen, kommt das Sorry an
+  const MAX_ZUEGE = 7;
+  const PLAETZE = 5;       // so viele Bausteine passen in ein Sorry
+
+  /* Bausteine: Jede echte Art senkt die Hitze (einmal – „Sorry, sorry, sorry“ hilft nicht mehr),
+     jede Fake-Art treibt sie hoch. Ein „aber“ setzt die Hitze wieder auf 80. */
+  const ARTEN = {
+    tat: { echt: true, label: 'Sagen, was war', kurz: 'Sagt genau, was passiert ist.', delta: -14 },
+    verantwortung: { echt: true, label: 'Dazu stehen', kurz: 'Kein Schönreden: Das war ich.', delta: -16 },
+    wirkung: { echt: true, label: 'Wirkung sehen', kurz: 'Zeigt: Ich seh, was das mit dir gemacht hat.', delta: -12 },
+    wieder: { echt: true, label: 'Wieder gutmachen', kurz: 'Bietet an, etwas wieder gutzumachen.', delta: -14 },
+    zukunft: { echt: true, label: 'Nächstes Mal', kurz: 'Sagt, was sich ab jetzt ändert.', delta: -10 },
+    aber: { echt: false, label: 'Sorry-aber', kurz: 'Das „aber“ schiebt die Schuld zurück. Hitze wieder auf 80.', delta: 0 },
+    falls: { echt: false, label: 'Falls-Sorry', kurz: '„Falls“ heißt: Vielleicht war ja gar nichts.', delta: 10 },
+    klein: { echt: false, label: 'Kleinreden', kurz: 'Macht das Problem klein – und die Person gleich mit.', delta: 15 },
+    druck: { echt: false, label: 'Schlussstrich-Druck', kurz: 'Verlangt Verzeihen, statt es anzubieten.', delta: 12 },
+    ausrede: { echt: false, label: 'Ausrede', kurz: 'Erklärt sich selbst, statt die andere Person zu sehen.', delta: 8 },
+  };
+  const KERN = ['tat', 'verantwortung', 'wieder'];
+  const REAKT = {
+    tat: 'Okay. Wenigstens sagst du, was war.',
+    verantwortung: 'Hm. Das hab ich jetzt nicht erwartet.',
+    wirkung: 'Ja. Genau so hat sich das angefühlt.',
+    wieder: 'Und wie genau?',
+    zukunft: 'Mal sehen, ob das stimmt.',
+    aber: 'ABER? Echt jetzt? Dann lass es.',
+    falls: 'Falls?! Es HAT mich gestört.',
+    klein: 'Für dich vielleicht.',
+    druck: 'Ich entscheide selbst, wann alles gut ist.',
+    ausrede: 'Und ich? Geht’s jetzt nur um dich?',
+  };
+
+  /* Szenen: A entschuldigt sich bei B. teile[art] = Satz (alle ähnlich lang, damit „lang und höflich“ nichts verrät).
+     start = der erste Versuch von A (immer mit „aber“). wieder = drei Wiedergutmach-Züge (einer passt zu B). */
+  const SZENEN = [
+    {
+      id: 'story', title: 'Das Video', A: 'luca', B: 'sam',
+      story: 'Luca hat ein Video gepostet, wie Sam in der Pause über die eigene Tasche stolpert. 40 Leute haben es gesehen. Sam hat es von Yara erfahren.',
+      teile: {
+        tat: 'Ich hab das Video von dir ohne Fragen in meine Story gestellt.',
+        verantwortung: 'Das war nicht okay von mir. Da gibt’s nichts zu erklären.',
+        wirkung: 'Vor 40 Leuten – das war bestimmt richtig peinlich für dich.',
+        wieder: 'Ich will das wieder gutmachen. Sag mir, was du brauchst.',
+        zukunft: 'Ab jetzt frag ich, bevor ich irgendwas von dir poste.',
+        aber: 'Sorry, aber du hast letzte Woche auch über mein Foto gelacht.',
+        falls: 'Sorry, falls dich das irgendwie gestört hat oder so.',
+        klein: 'War doch nur ein Witz, morgen hat das eh jeder vergessen.',
+        druck: 'Ich hab Sorry gesagt. Jetzt ist aber wieder alles gut, oder?',
+        ausrede: 'Ich hab gar nicht nachgedacht, ich war so müde gestern.',
+      },
+      start: ['tat', 'aber'],
+      braucht: 'Sam braucht, dass das Video überall weg ist – und dass die anderen hören: Das war nicht okay.',
+      wieder: [
+        { k: 'passt', t: 'Luca löscht das Video, fragt, wer es gespeichert hat, und schreibt in die Story: „Das war nicht okay von mir.“', fb: 'Genau das. Jetzt hört es auf – und alle wissen, dass es nicht okay war.' },
+        { k: 'nett', t: 'Luca kauft Sam morgen in der Pause ein Eis.', fb: 'Nett gemeint. Aber das Video ist immer noch auf 40 Handys.' },
+        { k: 'daneben', t: 'Luca postet ein peinliches Video von sich selbst – dann ist es fair.', fb: 'Davon wird nichts besser. Sam will kein „fair“, Sam will, dass das Video weg ist.' },
+      ],
+    },
+    {
+      id: 'geheimnis', title: 'Das Geheimnis', A: 'yara', B: 'mika',
+      story: 'Mika hat Yara erzählt, dass Mika in jemanden aus der Parallelklasse verknallt ist. Yara hat es Luca weitererzählt. Jetzt tuscheln alle.',
+      teile: {
+        tat: 'Ich hab Luca dein Geheimnis erzählt. Das war deins, nicht meins.',
+        verantwortung: 'Das war mein Fehler. Da will ich gar nichts schönreden.',
+        wirkung: 'Du hast mir vertraut, und jetzt tuscheln alle. Das tut weh.',
+        wieder: 'Ich will das wieder gutmachen. Was würde dir jetzt helfen?',
+        zukunft: 'Was du mir erzählst, bleibt ab jetzt bei mir. Versprochen.',
+        aber: 'Sorry, aber du hättest es mir dann halt nicht erzählen dürfen.',
+        falls: 'Sorry, falls das jetzt irgendwie ein Problem für dich ist.',
+        klein: 'Ist doch nicht schlimm, verknallt sein ist doch voll süß.',
+        druck: 'Ich hab mich entschuldigt. Mehr kann ich echt nicht machen.',
+        ausrede: 'Ich dachte, Luca weiß das sowieso schon von jemand anders.',
+      },
+      start: ['tat', 'aber'],
+      braucht: 'Mika braucht, dass das Tuscheln aufhört – und dass Mika Yara wieder etwas anvertrauen kann.',
+      wieder: [
+        { k: 'passt', t: 'Yara sagt Luca: „Das war nicht meins zu erzählen – bitte gib es nicht weiter.“ Und fragt Mika, ob noch was hilft.', fb: 'Das stoppt das Weitererzählen – und Mika entscheidet mit.' },
+        { k: 'nett', t: 'Yara schenkt Mika ihren besten Sticker.', fb: 'Lieb gemeint. Aber das Tuscheln geht weiter.' },
+        { k: 'daneben', t: 'Yara erzählt Mika dafür ein Geheimnis über Luca.', fb: 'Noch ein verratenes Geheimnis. Jetzt haben zwei Leute ein Problem.' },
+      ],
+    },
+    {
+      id: 'controller', title: 'Der Controller', A: 'sam', B: 'luca',
+      story: 'Sam hat bei Luca gezockt, verloren und den Controller auf den Boden geknallt. Jetzt klemmt die A-Taste.',
+      teile: {
+        tat: 'Ich hab deinen Controller hingeknallt. Jetzt klemmt die Taste.',
+        verantwortung: 'Das war nicht okay. Ich war sauer, aber das ist mein Ding.',
+        wirkung: 'Das ist dein Controller, den du selbst bezahlt hast. Mies.',
+        wieder: 'Ich will das wieder gutmachen. Was kostet die Reparatur?',
+        zukunft: 'Wenn ich merk, dass ich kippe, mach ich ab jetzt Pause.',
+        aber: 'Sorry, aber das Spiel war auch unfair, da wär jeder ausgerastet.',
+        falls: 'Sorry, falls der jetzt wirklich kaputt sein sollte.',
+        klein: 'Der war doch eh schon alt. Chill mal, ist nur ein Controller.',
+        druck: 'Sorry, okay? Zocken wir jetzt weiter oder was?',
+        ausrede: 'Ich bin halt so, wenn ich verliere. Kann ich nichts dafür.',
+      },
+      start: ['tat', 'aber'],
+      braucht: 'Luca braucht einen Controller, der wieder geht – und das Gefühl, dass Sam beim nächsten Mal nicht ausrastet.',
+      wieder: [
+        { k: 'passt', t: 'Sam zahlt die Reparatur in drei Raten vom Taschengeld und sagt, was Sam beim nächsten Mal macht, bevor es kippt.', fb: 'Das repariert den Controller – und das Vertrauen.' },
+        { k: 'nett', t: 'Sam lädt Luca auf eine Pizza ein.', fb: 'Lecker. Aber die A-Taste klemmt immer noch.' },
+        { k: 'daneben', t: 'Sam schenkt Luca seinen eigenen alten Controller, der auch wackelt.', fb: 'Kaputt gegen kaputt – das ist kein Ausgleich.' },
+      ],
+    },
+    {
+      id: 'vortrag', title: 'Der Vortrag', A: 'mika', B: 'yara',
+      story: 'Mika hat beim Vortrag Yaras Teil vorgestellt, als wäre er von Mika. Die Lehrerin hat Mika gelobt. Yara saß daneben.',
+      teile: {
+        tat: 'Ich hab deinen Teil vorgestellt, als wär er von mir.',
+        verantwortung: 'Das war unfair von mir. Das Lob gehört eigentlich dir.',
+        wirkung: 'Du hast lange dran gesessen, und ich hab den Applaus gekriegt.',
+        wieder: 'Ich will das wieder gutmachen – und zwar heute noch.',
+        zukunft: 'Nächstes Mal sagen wir vorher, wer welchen Teil vorstellt.',
+        aber: 'Sorry, aber du hättest dich ja auch selbst melden können.',
+        falls: 'Sorry, falls das irgendwie komisch rübergekommen ist.',
+        klein: 'Ist doch nur eine Note. Ist doch egal, wer was gemacht hat.',
+        druck: 'Ich hab Sorry gesagt. Kannst du jetzt aufhören, so zu gucken?',
+        ausrede: 'Ich war so nervös, ich wusste gar nicht mehr, was ich sag.',
+      },
+      start: ['tat', 'aber'],
+      braucht: 'Yara braucht, dass die Lehrerin weiß, von wem der Teil war.',
+      wieder: [
+        { k: 'passt', t: 'Mika geht nach der Stunde mit Yara zur Lehrerin und sagt: „Der Teil war von Yara.“', fb: 'Jetzt bekommt Yara das Lob, das Yara gehört.' },
+        { k: 'nett', t: 'Mika gibt Yara die Hälfte von den Gummibärchen ab.', fb: 'Süß. Aber die Lehrerin denkt immer noch, der Teil war von Mika.' },
+        { k: 'daneben', t: 'Mika sagt, Yara darf beim nächsten Mal Mikas Teil vorstellen.', fb: 'Dann ist es nur andersrum unfair. Yara will das eigene Lob.' },
+      ],
+    },
+  ];
+
+  const LEVELS = ['Fake finden', 'Sorry bauen', 'Wieder gutmachen'];
+
+  // Hitze bei der verletzten Figur: aus den Bausteinen im Sorry berechnet (Wegnehmen wirkt sofort)
+  function hitzeVon(teile) {
+    const arten = new Set(teile.map((t) => t.art));
+    let v = START;
+    arten.forEach((a) => { v += ARTEN[a].delta; });
+    if (arten.has('aber')) v = Math.max(v, START);
+    return Math.max(0, Math.min(100, v));
+  }
+  const fakeDrin = (teile) => teile.some((t) => !ARTEN[t.art].echt);
+  const kernFehlt = (teile) => KERN.filter((k) => !teile.some((t) => t.art === k));
+  const angenommen = (teile) => !fakeDrin(teile) && !kernFehlt(teile).length && hitzeVon(teile) < ANGENOMMEN;
+  const moodVon = (v, ok) => (ok ? 'froh' : v >= 70 ? 'wut' : v >= 45 ? 'genervt' : 'neutral');
+  const dreh = (z, n) => (z % Math.max(1, n)) + 1;
+
+  // Auf einen von mehreren eigenen Knöpfen warten (X/Pass → ctx.SKIP). Auto-Modus: pick() wählt.
+  function waitBtns(ctx, items, pick) {
+    return ctx.waitFor(new Promise((resolve) => {
+      items.forEach((it) => it.el.addEventListener('click', () => { items.forEach((x) => { x.el.disabled = true; }); resolve(it.value); }));
+      if (ctx.auto) setTimeout(() => { const it = items[pick()]; if (it && it.el.isConnected && !it.el.disabled) it.el.click(); }, Math.max(40, window.__crewAutoDelay || 0));
+    }));
+  }
+
+  // Das Sorry als Kette von Bausteinen (offen = ohne Etikett; aufgedeckt = mit echt/fake)
+  function sorryBox(ctx, A, teile, o) {
+    const oo = o || {};
+    const slots = [];
+    teile.forEach((t, i) => {
+      const art = ARTEN[t.art];
+      slots.push(h('div', { class: 'sw-teil' + (oo.offen ? (art.echt ? ' echt' : ' fake') : ''), 'data-art': oo.offen ? t.art : '' },
+        h('span', { class: 'sw-n' }, String(i + 1)),
+        h('div', { class: 'stack', style: { gap: '2px', minWidth: 0, flex: '1' } },
+          h('span', { class: 'sw-text' }, '„' + t.text + '“'),
+          oo.offen ? h('span', { class: 'small sw-label' }, CREW.icon(art.echt ? 'check' : 'x', 14), (art.echt ? 'echt · ' : 'Fake · ') + art.label) : null),
+        oo.weg ? oo.weg(t, i) : null));
+    });
+    const frei = PLAETZE - teile.length;
+    if (frei > 0 && !oo.offen) slots.push(h('div', { class: 'sw-teil leer' }, h('span', { class: 'sw-n' }, '+'), h('span', { class: 'muted small' }, frei === 1 ? 'Noch 1 Platz frei' : 'Noch ' + frei + ' Plätze frei')));
+    return h('div', { class: 'card stack sw-sorry' },
+      h('div', { class: 'row between', style: { flexWrap: 'nowrap', gap: '8px' } }, h('span', { class: 'eyebrow' }, oo.title || ('Das Sorry von ' + A.name)), ctx.readBtn(A.name + ' sagt: ' + (teile.map((t) => t.text).join(' ') || 'noch nichts'))),
+      h('div', { class: 'stack sw-kette' }, slots));
+  }
+
+  CREW.registerGame({
+    id: 'sorrywerkstatt',
+    template: 'T5',
+    icon: 'heart',
+    themen: ['Entschuldigung', 'Rechtfertigung', 'Wiedergutmachung', 'Verantwortung'],
+    safety: ['figuren', 'freiwillig'],
+    help: false,
+    // für den Test: CREW.games.get('sorrywerkstatt').logik
+    logik: { hitzeVon, angenommen, ARTEN, SZENEN, START, ANGENOMMEN },
+    async run(ctx) {
+      const szene = ctx.rpick(SZENEN);
+      const A = ctx.figures[szene.A], B = ctx.figures[szene.B];
+      const n = Math.max(2, ctx.n || 5);
+      const block = (art) => ({ art, text: szene.teile[art] });
+
+      await ctx.T.intro({
+        rule: 'Eine Figur will sich entschuldigen. Das iPad wandert: Jede Person legt einen Baustein dazu oder nimmt einen weg. Echte Teile kühlen, Fakes heizen.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'x', title: 'Fake finden', text: 'Im ersten Versuch steckt ein „aber“. Weg damit – und sagen, warum.' },
+          { icon: 'eyeOff', title: 'Sorry bauen', text: 'Nur du schaust auf drei Bausteine. Einer rein oder einer raus.' },
+          { icon: 'heart', title: 'Wieder gutmachen', text: 'Was braucht die andere Figur wirklich?' },
+        ],
+        probe: ctx.T.probeCard('Probe: Echt oder Fake? „Sorry, falls du dich angegriffen fühlst.“ Tippt eins – zählt nicht.', [{ label: 'Echt', value: 'e', variant: 'ghost', icon: 'check' }, { label: 'Fake', value: 'f', variant: 'ghost', icon: 'x' }]),
+      });
+
+      // Die Szene: Was ist passiert? Der erste Versuch von A (mit „aber“)
+      let teile = szene.start.map(block);
+      const meter = ctx.meter({ value: hitzeVon(teile), label: 'Hitze bei ' + B.name });
+      const w0 = ctx.scr([
+        h('div', { class: 'grid two' },
+          ctx.figureCard({ fig: szene.A, mood: 'traurig', text: A.name + ' will sich entschuldigen.', eyebrow: 'Entschuldigt sich', size: 72 }),
+          ctx.figureCard({ fig: szene.B, mood: 'wut', text: B.name + ' ist verletzt und sauer.', eyebrow: 'Ist verletzt', size: 72 })),
+        ctx.say(szene.story, { eyebrow: szene.title + ' · Was passiert ist', small: true }),
+        sorryBox(ctx, A, teile, { title: 'Erster Versuch von ' + A.name }),
+        meter.el,
+        h('p', { class: 'muted small' }, B.name + ' sagt: „' + REAKT.aber + '“ Ein „aber“ im Sorry – und die Hitze steht wieder auf ' + START + '.'),
+      ], { eyebrow: szene.title, badge: ctx.stufe(1, LEVELS) });
+      if ((await ctx.next(w0, 'Werkstatt öffnen')) === ctx.SKIP) return { summary: 'Heute keine Werkstatt. Nächstes Mal.' };
+
+      const raus = new Set();   // weggenommene Fakes bleiben draußen
+      let seat = 1, level = 1, zuege = 0;
+      let fakesRaus = 0, gesagt = 0, echtRein = 0, fakeRein = 0;
+      let ok = false;
+      let aufgedeckt = null;    // was beim Weitergeben aufgedeckt wird
+
+      // Erste Person: Deckblatt. X/Pass gibt gleich weiter.
+      const weiter = (text) => ctx.T.passOn({ text, label: 'Ich bin Platz ' + seat, extra: h('div', { class: 'display ss-seat-big' }, 'Platz ' + seat) });
+      let passNow = (await ctx.T.cover({ who: 'Nur du schaust', eyebrow: 'Zug 1 · Platz ' + seat, hint: 'Du bekommst drei Bausteine. Leg einen dazu – oder nimm einen weg.', extra: h('span', { class: 'pill accent' }, 'Platz ' + seat) })) === ctx.SKIP;
+      for (let zug = 1; zug <= MAX_ZUEGE && !ok; zug++) {
+        if (passNow) {
+          passNow = false;
+          seat = dreh(seat, n);
+          if (zug < MAX_ZUEGE) await weiter('Pass ist okay. Gib das iPad nach links an Platz ' + seat + '. Nur Platz ' + seat + ' schaut auf die Bausteine.');
+          continue;
+        }
+        // Ab dem ersten weggenommenen Fake (spätestens ab Zug 3): Level 2
+        if (level === 1 && (fakesRaus > 0 || zug >= 3)) {
+          level = 2;
+          await ctx.T.level({ n: 2, names: LEVELS, text: 'Jetzt wird gebaut: Ein echtes Sorry braucht „Sagen, was war“, „Dazu stehen“ und „Wieder gutmachen“. Und die Hitze muss unter ' + ANGENOMMEN + '.' });
+        }
+        // Drei Bausteine für diese Person: mindestens ein echter und ein Fake, wenn es noch welche gibt
+        const frei = Object.keys(szene.teile).filter((a) => !raus.has(a) && !teile.some((t) => t.art === a));
+        const echte = ctx.rshuffle(frei.filter((a) => ARTEN[a].echt)), fakes = ctx.rshuffle(frei.filter((a) => !ARTEN[a].echt));
+        const hand = ctx.rshuffle([].concat(echte.slice(0, 1), fakes.slice(0, 1), ctx.rshuffle(echte.slice(1).concat(fakes.slice(1))).slice(0, 1))).slice(0, 3).map(block);
+        const voll = teile.length >= PLAETZE;
+
+        // Arbeits-Bildschirm: Sorry (mit „Weg“), Hitze, drei Bausteine (mit „Dazu“)
+        const items = [];
+        const wegBtn = (t) => { const b = CREW.ui.btn('Weg', null, { small: true, variant: 'ghost', icon: 'x', id: 'sw-weg-' + t.art, aria: 'Baustein wegnehmen' }); items.push({ el: b, value: { kind: 'weg', t } }); return b; };
+        const handEls = hand.map((t, i) => {
+          const b = CREW.ui.btn('Dazu', null, { small: true, icon: 'plus', id: 'sw-dazu-' + i, disabled: voll });
+          items.push({ el: b, value: { kind: 'dazu', t } });
+          return h('div', { class: 'sw-teil hand' }, h('span', { class: 'sw-text' }, '„' + t.text + '“'), b);
+        });
+        const wZ = ctx.scr([
+          h('div', { class: 'sw-kopf' }, ctx.avatar(szene.B, moodVon(hitzeVon(teile)), 64), h('div', { class: 'stack', style: { gap: '4px', flex: '1', minWidth: 0 } }, h('b', null, B.name + ' hört zu'), meter.el)),
+          h('div', { class: 'sw-arbeit' },
+          sorryBox(ctx, A, teile, { weg: wegBtn }),
+          h('div', { class: 'card stack sw-hand' },
+            h('div', { class: 'row between', style: { flexWrap: 'nowrap', gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Deine Bausteine · nur du siehst sie'), ctx.readBtn('Deine Bausteine: ' + hand.map((t) => t.text).join(' '))),
+            handEls,
+            voll ? h('p', { class: 'muted small' }, 'Das Sorry ist voll. Erst einen Baustein wegnehmen.') : null)),
+          level === 1
+            ? h('p', { class: 'muted small' }, 'Tipp: Im ersten Versuch steckt ein Fake. Findest du ihn?')
+            : h('div', { class: 'row sw-kern' }, h('span', { class: 'muted small' }, 'Ein echtes Sorry braucht:'), KERN.map((k) => h('span', { class: 'chip small' }, ARTEN[k].label))),
+        ], { eyebrow: 'Zug ' + zug + ' von ' + MAX_ZUEGE + ' · Platz ' + seat, badge: ctx.stufe(level, LEVELS) });
+        // Auto-Modus: meistens sinnvoll (Fake raus, echten Baustein rein), manchmal daneben
+        const pick = () => {
+          const r = ctx.autoRng();
+          const iFakeWeg = items.findIndex((x) => x.value.kind === 'weg' && !ARTEN[x.value.t.art].echt);
+          const iEchtDazu = items.findIndex((x) => x.value.kind === 'dazu' && ARTEN[x.value.t.art].echt && !x.el.disabled);
+          if (iFakeWeg >= 0 && r < 0.75) return iFakeWeg;
+          if (iEchtDazu >= 0 && r < 0.85) return iEchtDazu;
+          const offen = items.map((x, i) => (x.el.disabled ? -1 : i)).filter((i) => i >= 0);
+          return offen[Math.floor(ctx.autoRng() * offen.length)];
+        };
+        const wahl = await waitBtns(ctx, items, pick);
+        if (wahl === ctx.SKIP) {
+          seat = dreh(seat, n);
+          if (zug < MAX_ZUEGE) await weiter('Pass ist okay. Gib das iPad nach links an Platz ' + seat + '. Nur Platz ' + seat + ' schaut auf die Bausteine.');
+          continue;
+        }
+        zuege++;
+        const t = wahl.t, art = ARTEN[t.art];
+        const vorher = hitzeVon(teile);
+        if (wahl.kind === 'dazu') {
+          teile = teile.concat([t]);
+          if (art.echt) echtRein++; else fakeRein++;
+        } else {
+          teile = teile.filter((x) => x !== t);
+          if (!art.echt) { raus.add(t.art); fakesRaus++; }
+        }
+        const jetzt = hitzeVon(teile);
+        ok = angenommen(teile);
+        meter.set(jetzt);
+        CREW.sound.play(jetzt < vorher ? 'good' : jetzt > vorher ? 'soft' : 'tap');
+
+        // Reaktion der verletzten Figur – für alle sichtbar
+        const fehlt = kernFehlt(teile);
+        const line = ok ? 'Okay. Das kommt an. Ich nehm dein Sorry an.'
+          : wahl.kind === 'dazu' ? REAKT[t.art]
+            : art.echt ? 'Hm. Jetzt fehlt was.' : 'Ohne das klingt’s ehrlicher.';
+        const fakeWeg = wahl.kind === 'weg' && !art.echt;
+        const wR = ctx.scr([
+          h('div', { class: 'ss-said sw-said', 'data-kind': wahl.kind }, CREW.icon(wahl.kind === 'dazu' ? 'plus' : 'x', 22),
+            h('div', { class: 'stack', style: { gap: '2px' } }, h('span', { class: 'eyebrow' }, wahl.kind === 'dazu' ? 'Dazugelegt' : 'Weggenommen'), h('b', null, '„' + t.text + '“'))),
+          ctx.figureCard({ fig: szene.B, mood: moodVon(jetzt, ok), text: line, eyebrow: B.name + ' reagiert' }),
+          meter.el,
+          !ok && wahl.kind === 'dazu' && t.art === 'aber' ? h('div', { class: 'card soft sw-aber' }, h('b', null, 'Ein „aber“ im Sorry – und die Hitze ist wieder auf ' + START + '.')) : null,
+          !ok && level === 2 && !fakeDrin(teile) && jetzt < ANGENOMMEN && fehlt.length ? h('p', { class: 'muted small' }, 'Die Hitze ist unten, aber ' + B.name + ' glaubt es noch nicht ganz. Es fehlt: ' + fehlt.map((k) => ARTEN[k].label).join(', ') + '.') : null,
+          fakeWeg ? h('div', { class: 'card stack sw-warum' }, h('b', null, 'Du hast einen Baustein weggenommen. Sag in einem Satz, warum der nicht ins Sorry gehört.'), h('span', { class: 'muted small' }, 'Pass ist okay. Aufgedeckt wird beim Weitergeben.')) : h('p', { class: 'muted small' }, 'Zeig die Karte allen oder lies sie vor.'),
+        ], { eyebrow: 'Zug ' + zug + ' · Reaktion', badge: ctx.stufe(level, LEVELS) });
+        if (fakeWeg) {
+          const s = await ctx.ask(wR, [{ label: 'Pass', value: 'pass', variant: 'ghost', icon: 'x', id: 'sw-warum-pass' }, { label: 'Gesagt', value: 'ok', icon: 'chat', id: 'sw-warum-ok' }]);
+          if (s === 'ok') gesagt++;
+        } else {
+          await ctx.next(wR, ok ? 'Sorry angekommen!' : 'Allen gezeigt');
+        }
+        aufgedeckt = wahl.kind === 'weg' ? { t, art } : null;
+        if (ok) { CREW.sound.play('great'); break; }
+        if (zug < MAX_ZUEGE) {
+          seat = dreh(seat, n);
+          await ctx.T.passOn({
+            text: 'Gib das iPad nach links an Platz ' + seat + '. Nur Platz ' + seat + ' schaut auf die Bausteine. Pass ist okay.',
+            label: 'Ich bin Platz ' + seat,
+            extra: h('div', { class: 'stack', style: { alignItems: 'center', gap: '8px' } },
+              h('div', { class: 'display ss-seat-big' }, 'Platz ' + seat),
+              aufgedeckt ? h('div', { class: 'sw-auf', 'data-echt': aufgedeckt.art.echt ? '1' : '0' }, CREW.icon(aufgedeckt.art.echt ? 'check' : 'x', 20),
+                h('span', null, h('b', null, aufgedeckt.art.echt ? 'Das war echt: ' : 'Aufgedeckt – Fake: '), aufgedeckt.art.label + '. ' + aufgedeckt.art.kurz)) : null,
+              h('span', { class: 'pill' }, 'Hitze ' + jetzt)),
+          });
+        }
+      }
+
+      // Level 3: Wieder gutmachen – was braucht B wirklich? (Perspektive)
+      await ctx.T.level({ n: 3, names: LEVELS, text: ok ? 'Das Sorry ist angekommen. Ein Sorry ist ein Anfang – jetzt kommt die Tat. Was braucht ' + B.name + ' wirklich?' : 'Ein Sorry ist ein Anfang – egal, wie weit ihr gekommen seid. Was braucht ' + B.name + ' wirklich?' });
+      const optionen = ctx.rshuffle(szene.wieder);
+      const wW = ctx.scr([
+        ctx.figureCard({ fig: szene.B, mood: moodVon(hitzeVon(teile), ok), text: 'Was würde mir jetzt wirklich helfen?', eyebrow: B.name, size: 72 }),
+        ctx.say('Redet kurz: Was braucht ' + B.name + '? Dann tippt eine Person den Zug, den ' + A.name + ' macht.', { eyebrow: 'Wieder gutmachen', small: true }),
+      ], { eyebrow: 'Wieder gutmachen', badge: ctx.stufe(3, LEVELS) });
+      const wk = await ctx.ask(wW, optionen.map((o, i) => ({ label: o.t, value: i, variant: 'ghost', id: 'sw-wieder-' + o.k })), { autoPick: () => optionen.findIndex((o) => o.k === 'passt') });
+      const wo = wk === ctx.SKIP ? null : optionen[wk];
+      if (wo) {
+        if (wo.k === 'passt') CREW.sound.play('great');
+        const wF = ctx.scr([
+          ctx.figureCard({ fig: szene.B, mood: wo.k === 'passt' ? 'froh' : 'genervt', text: wo.fb, eyebrow: wo.k === 'passt' ? 'Passt zu ' + B.name : 'Hm, hilft das ' + B.name + '?' }),
+          h('div', { class: 'card stack soft' }, h('span', { class: 'eyebrow' }, 'Das braucht ' + B.name), h('p', { style: { margin: 0 } }, szene.braucht),
+            wo.k === 'passt' ? null : h('p', { class: 'muted small', style: { margin: 0 } }, 'Besser: ' + szene.wieder.find((x) => x.k === 'passt').t)),
+        ], { eyebrow: 'Wieder gutmachen', badge: ctx.stufe(3, LEVELS) });
+        await ctx.next(wF, 'Zum Ergebnis');
+      }
+
+      // Ergebnis: das Sorry mit aufgedeckten Etiketten
+      const wE = ctx.scr([
+        ok ? h('div', { class: 'stop-big display', style: { color: 'var(--good)' } }, 'Sorry angekommen!') : null,
+        ctx.figureCard({ fig: szene.B, mood: ok ? 'froh' : moodVon(hitzeVon(teile)), text: ok ? 'Ich bin noch nicht wieder ganz okay. Aber ich glaub dir, dass du es ernst meinst.' : 'Noch nicht. Da war zu viel „aber“ und zu wenig „das war ich“.', eyebrow: B.name, size: 72 }),
+        sorryBox(ctx, A, teile, { offen: true, title: 'Das Sorry – aufgedeckt' }),
+        h('p', { class: 'muted small' }, 'Es geht um ' + A.name + ' und ' + B.name + ', nicht um die Person, die getippt hat.'),
+      ], { eyebrow: 'Ergebnis' });
+      if (ok && !ctx.fast) CREW.ui.confetti(110);
+      await ctx.next(wE, 'Weiter');
+      return {
+        summary: ok ? 'Sorry angekommen. Ohne „aber“, mit „das war ich“ und einem Plan zum Wiedergutmachen.' : 'Noch kein Sorry, das ankommt. Ein „aber“ reicht, und alles ist wieder auf 80.',
+        stats: [[fakesRaus, 'Fakes rausgeworfen'], [gesagt, 'mal gesagt, warum'], [teile.filter((x) => ARTEN[x.art].echt).length, 'echte Bausteine'], [zuege, 'Züge']].concat(wo ? [[wo.k === 'passt' ? 1 : 0, 'Wiedergutmachung passt']] : []),
+        again: true,
+      };
+    },
+  });
+})();
+
 /* ---- games/konflikt/storystaffel.js ---- */
 /* Spiel „Story-Staffel: Der Streit“ (Thema: Konflikt, Druck & Mobbing) · Vorlage T5 Gerät weitergeben · j1-e24
    Ein Alltagsstreit zwischen zwei Figuren startet mit Hitze-Meter. Das iPad wandert im Kreis: „Nur du schaust“ –
@@ -22258,6 +23917,523 @@ var qrcode = function() {
         summary: deal ? 'Deal in ' + log.length + (log.length === 1 ? ' Zug' : ' Zügen') + '. Klartext senkt die Hitze, die Crew hat’s gemeinsam geschafft.' : 'Kein Deal diesmal. Klartext senkt die Hitze, Angriff treibt sie hoch – nächste Staffel anders.',
         stats: [[count.klartext, 'Klartext'], [count.angriff, 'Angriff'], [count.abtauchen, 'Abtauchen'], [rewinds, 'zurückgespult']].concat(dealArt ? [[dealArt === 'eule' ? 1 : 0, 'fairer Deal für beide']] : []),
         again: true,
+      };
+    },
+  });
+})();
+
+/* ---- games/konflikt/vier-zeugen.js ---- */
+/* Spiel „Vier Zeugen“ (Thema: Konflikt, Druck & Mobbing) · Vorlage T2 Rollen-Puzzle · j1-e26, j1-e28
+   Dieselbe Pausenhof- oder Chat-Szene aus vier Sichten (A Betroffen, B Clique, C Zuschauer:in, D Lehrkraft) auf vier
+   iPads: je zwei Sätze mit Vorlese-Knopf und ein Detail, das nur diese Sicht kennt („zum vierten Mal diese Woche“).
+   Erst wenn jede Sicht gesprochen hat, nimmt der Beamer die Antwort an: vier Merkmale als Ampel-Checkliste
+   (immer wieder · ungleiche Kraft · mit Absicht · kann sich nicht wehren), dann Spaß, Konflikt oder Mobbing.
+   „Noch nicht“ nennt nur die Sicht, die man nochmal fragen sollte. Danach: Welche Leiter-Stufe wäre für die
+   Zuschauer-Figur sicher? Hilfenummern am Ende des Falls.
+   Sicherheit: Die Sichten werden ausgelost (Tagescode + Platz) und gehören immer Figuren (Mika, Yara, Luca, Sam).
+   Niemand spielt sich selbst oder eine:n Mitschüler:in; wer eine Sicht nicht lesen mag, wird Beobachter:in, und
+   die Lehrkraft liest diese Sicht am Beamer vor. Nicht jeder Fall ist Mobbing – auch Spaß und Konflikt kommen vor.
+   In drei Level: 1) Hören (vier Sichten, Details erfragen), 2) Prüfen (Ampel + Urteil), 3) Handeln (Leiter-Stufe). */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h } = CREW.util;
+
+  const SICHTEN = {
+    A: { name: 'Betroffen', icon: 'heart', desc: 'Du liest vor, wie es die Figur erlebt, mit der etwas gemacht wird.' },
+    B: { name: 'Clique', icon: 'users', desc: 'Du liest vor, wie es die Figur sieht, die mitmacht.' },
+    C: { name: 'Zuschauer:in', icon: 'eye', desc: 'Du liest vor, was eine Figur gesehen hat, die daneben stand.' },
+    D: { name: 'Lehrkraft', icon: 'user', desc: 'Du liest vor, was die Lehrkraft weiß.' },
+  };
+  const MERKMALE = [
+    { id: 'oft', label: 'Immer wieder', frage: 'Passiert das öfter, über längere Zeit?' },
+    { id: 'macht', label: 'Ungleiche Kraft', frage: 'Mehrere gegen eine:n – oder Stärkere gegen Schwächere?' },
+    { id: 'absicht', label: 'Mit Absicht', frage: 'Soll es weh tun oder bloßstellen?' },
+    { id: 'wehrlos', label: 'Kann sich nicht wehren', frage: 'Kommt die Person allein raus – oder leidet sie still?' },
+  ];
+  const URTEILE = {
+    spass: { label: 'Spaß', icon: 'sparkle', text: 'Alle lachen, es geht hin und her, ein Stopp wirkt sofort.' },
+    konflikt: { label: 'Konflikt', icon: 'bolt', text: 'Zwei Seiten auf Augenhöhe streiten um etwas – beide können sich wehren.' },
+    mobbing: { label: 'Mobbing', icon: 'shield', text: 'Immer wieder, ungleiche Kraft, mit Absicht – und die Person kommt allein nicht raus.' },
+  };
+  const STUFEN = [
+    { n: 1, id: 's1', label: 'Hinschauen' }, { n: 2, id: 's2', label: 'Nicht mitlachen' }, { n: 3, id: 's3', label: 'Mit Betroffenen weggehen' },
+    { n: 4, id: 's4', label: 'Erwachsene holen' }, { n: 5, id: 's5', label: 'Direkt was sagen' },
+  ];
+  const BEWERTUNG = { top: 'Passt hier am besten', gut: 'Hilft – sicher', mutig: 'Mutig – besser zu zweit', reicht: 'Reicht hier völlig' };
+
+  /* Fälle: alle = was jede:r sieht. sichten[A–D] = { fig (D: Lehrkraft ohne Figur), sagt, detail, merkmal }.
+     Jedes Detail gehört zu genau einem Merkmal (so muss jede Sicht gefragt werden). ja = Merkmale, die zutreffen.
+     leiter = was jede Stufe für die Zuschauer-Figur (C) in diesem Fall bedeutet. */
+  const FAELLE = [
+    {
+      id: 'muetze', titel: 'Die Mütze', ort: 'Pausenhof', urteil: 'mobbing', ja: ['oft', 'macht', 'absicht', 'wehrlos'],
+      alle: 'Große Pause. Sams Mütze fliegt von Hand zu Hand. Luca und Mika werfen, ein paar andere lachen. Sam steht in der Mitte.',
+      sichten: {
+        A: { fig: 'sam', sagt: 'Sam sagt: „Ich hab mitgelacht, damit es schneller vorbei ist. Ich will einfach meine Mütze.“', detail: 'Es ist das vierte Mal diese Woche. Gestern war es der Rucksack.', merkmal: 'oft' },
+        B: { fig: 'luca', sagt: 'Luca sagt: „Ist doch nur Spaß, Sam lacht ja mit. Wir machen das mit jedem.“', detail: 'Die Idee kam aus einem Chat namens „Sam-Show“. Sam ist da nicht drin.', merkmal: 'absicht' },
+        C: { fig: 'yara', sagt: 'Yara sagt: „Ich stand daneben. Ich hab nicht mitgelacht, aber auch nichts gesagt.“', detail: 'Sam wollte weggehen. Mika hat sich in den Weg gestellt.', merkmal: 'wehrlos' },
+        D: { fig: null, sagt: 'Die Pausenaufsicht sagt: „Von Weitem sah es aus wie ein Spiel. Alle haben gelacht.“', detail: 'Es sind immer dieselben gegen Sam. Und Sam hat sich diese Woche zweimal krankgemeldet.', merkmal: 'macht' },
+      },
+      leiter: {
+        s1: ['gut', 'Hinschauen ist der Anfang: Yara kann später genau erzählen, was war.'],
+        s2: ['gut', 'Nicht mitlachen nimmt der Clique das Publikum.'],
+        s3: ['gut', 'Yara holt Sam raus: „Komm, wir gehen zum Kiosk.“ Sam ist nicht mehr allein.'],
+        s4: ['top', 'Bei Mobbing gehört eine erwachsene Person dazu. Das ist kein Petzen – das schützt Sam.'],
+        s5: ['mutig', 'Allein gegen eine Gruppe ist riskant. Zu zweit oder mit Erwachsenen im Rücken: ja.'],
+      },
+    },
+    {
+      id: 'platz', titel: 'Der Fußballplatz', ort: 'Pausenhof', urteil: 'konflikt', ja: [],
+      alle: 'Große Pause. Mika und Luca schreien sich auf dem Fußballplatz an. Luca hat den Ball unterm Arm. Ein paar schauen zu.',
+      sichten: {
+        A: { fig: 'mika', sagt: 'Mika sagt: „Luca hat einfach unseren Ball genommen. Wir waren zuerst da!“', detail: 'Mika hat zurückgeschrien – und Luca am Ärmel gezogen.', merkmal: 'wehrlos' },
+        B: { fig: 'luca', sagt: 'Luca sagt: „Die haben jeden Tag den Platz. Wir wollen auch mal spielen.“', detail: 'Laut Plan an der Tür ist heute Lucas Klasse dran. Es geht nur um den Platz.', merkmal: 'absicht' },
+        C: { fig: 'sam', sagt: 'Sam sagt: „Beide haben geschrien. Keiner hat nachgegeben.“', detail: 'Auf beiden Seiten stehen gleich viele. Keiner ist allein.', merkmal: 'macht' },
+        D: { fig: null, sagt: 'Die Pausenaufsicht sagt: „Ich kenne die beiden. Sonst spielen sie oft zusammen.“', detail: 'Es ist das erste Mal, dass es zwischen den beiden so knallt.', merkmal: 'oft' },
+      },
+      leiter: {
+        s1: ['gut', 'Hinschauen hilft: Wird es körperlich, merkt Sam es sofort.'],
+        s2: ['gut', 'Keiner lacht – gut so. Ein Streit braucht kein Publikum.'],
+        s3: ['gut', 'Sam kann einen der beiden kurz rausholen: „Komm, erst mal Luft holen.“'],
+        s4: ['gut', 'Wenn es körperlich wird: sofort die Pausenaufsicht holen.'],
+        s5: ['top', 'Bei einem Streit auf Augenhöhe kann ein Satz von außen helfen: „Schaut doch auf den Plan an der Tür.“'],
+      },
+    },
+    {
+      id: 'meme', titel: 'Das Meme', ort: 'Klassenchat', urteil: 'mobbing', ja: ['oft', 'macht', 'absicht', 'wehrlos'], online: true,
+      alle: 'Im Klassenchat taucht ein Bild auf: Yaras Gesicht auf einem Hundekörper, mit einer App gemacht. Darunter 23 Lach-Emojis.',
+      sichten: {
+        A: { fig: 'yara', sagt: 'Yara sagt: „Ich hab auch ein 😂 drunter gesetzt, damit keiner merkt, wie sehr es mich trifft.“', detail: 'Es gab schon drei andere Bilder. Seitdem schreibt Yara nichts mehr im Chat.', merkmal: 'oft' },
+        B: { fig: 'mika', sagt: 'Mika sagt: „Das ist ein Meme. Memes macht man über alle.“', detail: 'Die Bilder kommen alle aus derselben kleinen Gruppe – und es geht immer um Yara.', merkmal: 'absicht' },
+        C: { fig: 'luca', sagt: 'Luca sagt: „Ich hab’s gesehen und weitergescrollt. Was soll ich da machen?“', detail: 'Yara hat einmal „Lasst das“ geschrieben. Antwort: „Humor ist nicht deins, oder?“ – mit 12 Likes.', merkmal: 'wehrlos' },
+        D: { fig: null, sagt: 'Die Lehrkraft sagt: „Ich bin nicht im Klassenchat. Ich sehe nur, dass Yara sehr still geworden ist.“', detail: '23 Leute im Chat, Yara allein dagegen. Yara hat gefragt, ob sie die Gruppe für Projekte wechseln darf.', merkmal: 'macht' },
+      },
+      leiter: {
+        s1: ['gut', 'Hinschauen heißt hier: Screenshot als Beweis sichern – nicht weiterleiten.'],
+        s2: ['gut', 'Kein Emoji drunter. Jedes Lachen macht das Bild größer.'],
+        s3: ['gut', 'Luca schreibt Yara privat: „Ich find das nicht okay. Bist du okay?“'],
+        s4: ['top', 'Bei Mobbing im Chat: Screenshot einer erwachsenen Person zeigen. Bilder wie dieses können sogar strafbar sein.'],
+        s5: ['mutig', '„Hört auf“ in den Chat schreiben ist stark – zu zweit noch stärker, sonst wird Luca selbst zum Ziel.'],
+      },
+    },
+    {
+      id: 'keks', titel: 'Keks und Krümel', ort: 'Pausenhof', urteil: 'spass', ja: ['oft'],
+      alle: 'Pause. Sam und Luca nennen sich gegenseitig „Keks“ und „Krümel“. Beide lachen, Mika und Yara auch.',
+      sichten: {
+        A: { fig: 'sam', sagt: 'Sam sagt: „Ich bin Keks, Luca ist Krümel. Das ist unser Ding.“', detail: 'Als Sam letzten Monat „heute nicht“ gesagt hat, hat Luca sofort aufgehört.', merkmal: 'wehrlos' },
+        B: { fig: 'luca', sagt: 'Luca sagt: „Sam hat sich Keks selbst ausgesucht. Ich bin der Krümel.“', detail: 'Sam nennt Luca genauso oft „Krümel“. Es geht hin und her.', merkmal: 'macht' },
+        C: { fig: 'mika', sagt: 'Mika sagt: „Alle lachen. Auch Sam – richtig, nicht gezwungen.“', detail: 'Als ein Neuer „Keks“ zu Sam sagen wollte, haben beide gesagt: „Nur wir.“', merkmal: 'absicht' },
+        D: { fig: null, sagt: 'Die Lehrkraft sagt: „Die beiden sitzen nebeneinander und helfen sich oft.“', detail: 'Das geht schon seit der Grundschule so. Immer wieder – und immer gegenseitig.', merkmal: 'oft' },
+      },
+      leiter: {
+        s1: ['reicht', 'Hinschauen reicht hier völlig. Ein Spaß, bei dem alle lachen und ein Stopp wirkt.'],
+        s2: ['reicht', 'Mitlachen ist hier okay – alle lachen gern.'],
+        s3: ['reicht', 'Nicht nötig. Niemand will hier weg.'],
+        s4: ['reicht', 'Nicht nötig – solange keiner aufhört zu lachen.'],
+        s5: ['reicht', 'Nicht nötig. Aber: Wenn einer nicht mehr lacht, wird es ein anderes Spiel.'],
+      },
+    },
+  ];
+
+  const LEVELS = ['Hören', 'Prüfen', 'Handeln'];
+  // Fall per Tagescode: Beamer und Sicht-iPads sehen denselben (j1-e28: der Chat-Fall)
+  const fallFuer = (ctx) => {
+    const unit = (CREW.games.FILTER && CREW.games.FILTER.einheit) || '';
+    if (unit === 'j1-e28') return FAELLE.find((f) => f.online);
+    return CREW.seed.pick(FAELLE, CREW.seed.rng(ctx.code, 'vier-zeugen', 'fall'));
+  };
+  const lehrkraftBild = () => h('span', { class: 'vz-lk', 'aria-label': 'Lehrkraft' }, CREW.icon('user', 34));
+
+  // Eine Sicht: was die Figur sagt + Detail, das nur diese Sicht kennt
+  function sichtKarte(ctx, fall, r, o) {
+    const oo = o || {};
+    const S = fall.sichten[r], Z = SICHTEN[r];
+    return h('div', { class: 'card stack vz-sicht', 'data-role': r },
+      h('div', { class: 'row between', style: { flexWrap: 'nowrap', gap: '8px' } },
+        h('div', { class: 'row', style: { gap: '10px', flexWrap: 'nowrap' } }, S.fig ? ctx.avatar(S.fig, r === 'A' ? 'traurig' : 'neutral', 56) : lehrkraftBild(), h('div', { class: 'stack', style: { gap: 0 } }, h('span', { class: 'eyebrow' }, 'Sicht ' + r + ' · ' + Z.name), h('b', null, fall.titel))),
+        ctx.readBtn(S.sagt + ' ' + (oo.detail === false ? '' : 'Nur diese Sicht weiß: ' + S.detail))),
+      h('p', { class: 'lead', style: { margin: 0 } }, S.sagt),
+      oo.detail === false ? null : h('div', { class: 'vz-detail' }, h('span', { class: 'eyebrow' }, 'Nur diese Sicht weiß'), h('b', null, S.detail)),
+      oo.hinweis ? h('p', { class: 'muted small', style: { margin: 0 } }, 'Lies vor wie eine Reporterin: „' + (S.fig ? ctx.figures[S.fig].name : 'Die Lehrkraft') + ' sagt …“ Du bist nicht diese Figur. Das Detail sagst du, wenn jemand fragt.') : null);
+  }
+
+  // Sicht per Los (Tagescode + Platz). Wer nicht mag: Beobachter:in – ohne Begründung.
+  async function sichtLos(ctx) {
+    let role = ctx.role && 'ABCDX'.includes(ctx.role) ? ctx.role : CREW.seed.roleOf(ctx.code, ctx.n, ctx.seat);
+    if (ctx.auto && !ctx.role) role = 'ABCDX'[Math.floor(ctx.autoRng() * 5)];
+    const info = role === 'X' ? { name: 'Beobachter:in', desc: 'Keine Sicht. Du achtest darauf, dass alle vier Sichten gehört werden.' } : SICHTEN[role];
+    const w = ctx.scr([
+      h('div', { class: 'role-card', 'data-role': role }, h('span', { class: 'role-letter display' }, role === 'X' ? '👁' : role), h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Ausgelost'), h('h2', null, role === 'X' ? info.name : 'Sicht ' + role + ' · ' + info.name), h('p', { class: 'muted' }, info.desc)), ctx.readBtn('Ausgelost: ' + info.name + '. ' + info.desc)),
+      h('div', { class: 'card stack soft' }, h('b', null, 'Ausgelost über Tagescode und Platz ' + ctx.seat + '. Jede Sicht gehört einer Figur – niemand spielt sich selbst.'), h('p', { class: 'muted small', style: { margin: 0 } }, 'Diese Sicht ist dir zu nah? Dann wirst du Beobachter:in. Kein Grund nötig – die Lehrkraft liest die Sicht vor.')),
+    ], { eyebrow: 'Sicht per Los', badge: h('span', { class: 'pill accent' }, 'Platz ' + ctx.seat) });
+    const r = await ctx.ask(w, role === 'X' ? [{ label: 'Okay, los', value: 'ok', iconRight: 'right', id: 'vz-los-ok' }] : [{ label: 'Lieber Beobachter:in', value: 'X', variant: 'ghost', icon: 'eye', id: 'vz-los-x', auto: false }, { label: 'Okay, los', value: 'ok', iconRight: 'right', id: 'vz-los-ok' }]);
+    return r === 'X' ? 'X' : role;
+  }
+
+  CREW.registerGame({
+    id: 'vier-zeugen',
+    template: 'T2',
+    icon: 'eye',
+    themen: ['Mobbing erkennen', 'Spaß, Konflikt, Mobbing', 'Perspektivenwechsel', 'Zuschauende'],
+    safety: ['figuren', 'freiwillig'],
+    help: true,
+    // für den Test
+    faelle: FAELLE, merkmale: MERKMALE,
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Eine Szene, vier Sichten auf vier iPads. Erst wenn alle erzählt haben, prüft ihr: Spaß, Konflikt oder Mobbing? Und was kann die Zuschauer-Figur tun?',
+        levels: LEVELS,
+        steps: [
+          { icon: 'users', title: 'Hören', text: 'Vier Sichten erzählen. Jede kennt ein Detail.' },
+          { icon: 'shield', title: 'Prüfen', text: 'Ampel mit vier Merkmalen, dann das Urteil.' },
+          { icon: 'steps', title: 'Handeln', text: 'Welche Leiter-Stufe wäre sicher?' },
+        ],
+        probe: ctx.T.probeCard('Probe: Zwei Freunde ärgern sich gegenseitig, beide lachen, einer sagt „Stopp“ und es hört auf. Was ist das? Tippt eins – zählt nicht.', [{ label: 'Spaß', value: 's', variant: 'ghost', icon: 'sparkle' }, { label: 'Mobbing', value: 'm', variant: 'ghost', icon: 'shield' }]),
+      });
+
+      let geraet = ctx.role ? 'sicht' : null;
+      if (!geraet) {
+        const wG = ctx.scr([ctx.say('Ist das hier der Beamer oder ein Sicht-iPad?', { eyebrow: 'Welches Gerät?', small: true }), h('p', { class: 'muted small' }, 'Der Beamer zeigt die Szene und die Ampel. Die Sicht-iPads zeigen je eine Sicht.')], { eyebrow: 'Vorbereitung', center: true });
+        const g = await ctx.ask(wG, [{ label: 'Beamer · Lehrkraft', value: 'beamer', icon: 'eye', id: 'vz-beamer' }, { label: 'Sicht-iPad · Platz ' + ctx.seat, value: 'sicht', variant: 'ghost', icon: 'phone', id: 'vz-sicht' }], { autoPick: () => 'beamer' });
+        geraet = g === 'sicht' ? 'sicht' : 'beamer';
+      }
+
+      /* ---------- Sicht-iPad: nur die eigene Sicht ---------- */
+      if (geraet === 'sicht') {
+        await ctx.T.codeCheck();
+        const fall = fallFuer(ctx);
+        const role = await sichtLos(ctx);
+        const w = role === 'X'
+          ? ctx.scr([h('div', { class: 'slice' }, h('b', null, 'Beobachter:in'), h('p', null, 'Szene: ' + fall.alle),
+            h('ul', { class: 'stack', style: { margin: 0, paddingLeft: '1.2em' } }, h('li', null, 'Achte, dass alle vier Sichten erzählen – auch das Detail.'), h('li', null, 'Frag bei der Ampel: „Welche Sicht weiß dazu was?“'), h('li', null, 'Am Ende: Welche Sicht hat das Bild am meisten verändert?')))], { eyebrow: 'Vier Zeugen', badge: h('span', { class: 'pill accent' }, 'Beobachter:in') })
+          : ctx.scr([sichtKarte(ctx, fall, role, { hinweis: true })], { eyebrow: 'Sicht ' + role, badge: h('span', { class: 'pill accent' }, 'Sicht ' + role) });
+        await ctx.next(w, 'Erzählt – zum Beamer schauen');
+        return { summary: 'Deine Sicht ist erzählt. Der Rest läuft am Beamer.', noSticker: true, help: true };
+      }
+
+      /* ---------- Beamer ---------- */
+      const fall = fallFuer(ctx);
+      const C = fall.sichten.C, CF = ctx.figures[C.fig];
+      const wQ = ctx.scr([
+        ctx.say('Vier Sicht-iPads: scannen – oder im Spiel „Sicht-iPad“ wählen. Die Sichten werden ausgelost. Tagescode am Beamer: ' + ctx.code + '.', { eyebrow: 'Sichten verteilen', small: true }),
+        h('div', { class: 'card' }, CREW.games.qrPanel('vier-zeugen', { size: 130 })),
+        h('p', { class: 'muted small' }, 'Ohne Sicht-iPads: „Am Lehrer-iPad zeigen“ – jede Sicht schaut nacheinander allein. Wer nicht lesen mag: Die Lehrkraft liest vor.'),
+      ], { eyebrow: 'Vorbereitung', badge: ctx.stufe(1, LEVELS) });
+      const how = await ctx.ask(wQ, [{ label: 'Am Lehrer-iPad zeigen', value: 'here', variant: 'ghost', icon: 'eyeOff', id: 'vz-here' }, { label: 'Sicht-iPads sind bereit', value: 'qr', iconRight: 'right', id: 'vz-qr' }]);
+      if (how === ctx.SKIP) return { summary: 'Heute kein Fall. Nächstes Mal.', help: true };
+      if (how === 'here') {
+        for (const r of ['A', 'B', 'C', 'D']) {
+          const c = await ctx.T.cover({ who: 'Nur Sicht ' + r + ' schaut', hint: 'Die anderen schauen weg. Sicht ' + r + ': ' + SICHTEN[r].name + '.', eyebrow: 'Sicht ' + r });
+          if (c === ctx.SKIP) continue;
+          const w = ctx.scr([sichtKarte(ctx, fall, r, { hinweis: true })], { eyebrow: 'Sicht ' + r, badge: h('span', { class: 'pill accent' }, 'Sicht ' + r) });
+          await ctx.next(w, 'Gelesen, wegdrehen');
+        }
+      }
+
+      // Level 1: Hören. Erst wenn alle vier gesprochen haben, nimmt der Beamer die Antwort an.
+      const gehoert = new Set();
+      const weiterId = 'vz-zur-ampel';
+      let weiterBtn = null;
+      const pruefeWeiter = () => { if (weiterBtn) weiterBtn.disabled = gehoert.size < 4; };
+      const tiles = ['A', 'B', 'C', 'D'].map((r) => {
+        const S = fall.sichten[r];
+        const ok = CREW.ui.btn('Hat erzählt', () => { gehoert.add(r); ok.classList.add('good'); ok.disabled = true; pruefeWeiter(); }, { small: true, variant: 'ghost', icon: 'check', id: 'vz-gehoert-' + r });
+        const vor = CREW.ui.btn('Lehrkraft liest vor', () => { CREW.ui.modal({ title: 'Sicht ' + r + ' · ' + SICHTEN[r].name, body: sichtKarte(ctx, fall, r), actions: [{ label: 'Vorgelesen', value: true, icon: 'check' }] }).then(() => ok.click()); }, { small: true, variant: 'ghost', icon: 'speaker', id: 'vz-vorlesen-' + r });
+        return h('div', { class: 'vz-tile', 'data-role': r }, h('div', { class: 'row', style: { gap: '8px', flexWrap: 'nowrap' } }, S.fig ? ctx.avatar(S.fig, 'neutral', 44) : lehrkraftBild(), h('div', { class: 'stack', style: { gap: 0 } }, h('b', null, 'Sicht ' + r), h('span', { class: 'muted small' }, SICHTEN[r].name))), ok, vor);
+      });
+      const w1 = ctx.scr([
+        h('div', { class: 'vz-szene' }, CREW.icon(fall.online ? 'phone' : 'users', 36), h('div', { class: 'stack', style: { gap: '4px', flex: '1', minWidth: 0 } }, h('span', { class: 'eyebrow' }, fall.ort + ' · Das sehen alle'), h('b', { class: 'lead' }, fall.alle)), ctx.readBtn(fall.alle)),
+        h('div', { class: 'vz-tiles' }, tiles),
+        ctx.say('Jede Sicht erzählt in zwei Sätzen. Jede kennt ein Detail – fragt: „Weißt du noch was, das wir nicht wissen?“', { eyebrow: 'Vier Sichten', small: true }),
+        CREW.ui.teacherLine('„Hat erzählt“ antippen. Fehlt eine Sicht: „Lehrkraft liest vor“. Erst dann geht es zur Ampel.'),
+      ], { eyebrow: fall.titel + ' · Hören', badge: ctx.stufe(1, LEVELS) });
+      const p1 = ctx.next(w1, 'Zur Ampel', { id: weiterId });
+      weiterBtn = w1.querySelector('#' + weiterId);
+      pruefeWeiter();
+      if (ctx.auto) ['A', 'B', 'C', 'D'].forEach((r) => w1.querySelector('#vz-gehoert-' + r).click());
+      if ((await p1) === ctx.SKIP) return { summary: 'Heute nur reingeschaut.', help: true };
+
+      // Level 2: Prüfen – Ampel mit vier Merkmalen, dann das Urteil
+      await ctx.T.level({ n: 2, names: LEVELS, text: 'Jetzt prüft ihr: Vier Merkmale als Ampel. Rot heißt „trifft zu“. Dann euer Urteil: Spaß, Konflikt oder Mobbing?' });
+      const ampel = {};
+      let versuche = 0, richtig = false;
+      for (;;) {
+        versuche++;
+        const urteilId = 'vz-urteil';
+        const rows = MERKMALE.map((m) => {
+          const btns = [['ja', 'trifft zu'], ['unklar', 'unklar'], ['nein', 'trifft nicht zu']].map(([v, l]) => {
+            const b = h('button', { type: 'button', class: 'vz-licht', 'data-licht': v, 'data-merkmal': m.id, 'aria-pressed': ampel[m.id] === v ? 'true' : 'false' }, l);
+            b.addEventListener('click', () => { CREW.sound.play('tap'); ampel[m.id] = v; row.querySelectorAll('.vz-licht').forEach((x) => x.setAttribute('aria-pressed', x === b ? 'true' : 'false')); pruefeAmpel(); });
+            return b;
+          });
+          const row = h('div', { class: 'vz-merkmal' }, h('div', { class: 'stack', style: { gap: '2px', minWidth: 0 } }, h('b', null, m.label), h('span', { class: 'muted small' }, m.frage)), h('div', { class: 'vz-lichter' }, btns));
+          return row;
+        });
+        const w2 = ctx.scr([
+          h('div', { class: 'vz-ampel' }, rows),
+          ctx.say('Erst die Ampel, dann das Urteil: Was ist das?', { eyebrow: 'Versuch ' + versuche, small: true }),
+        ], { eyebrow: fall.titel + ' · Prüfen', badge: ctx.stufe(2, LEVELS) });
+        const p2 = ctx.ask(w2, Object.keys(URTEILE).map((k) => ({ label: URTEILE[k].label, value: k, icon: URTEILE[k].icon, variant: k === 'mobbing' ? 'teamB' : k === 'konflikt' ? 'yellow' : 'good', id: urteilId + '-' + k })), { autoPick: ctx.auto && versuche >= 2 ? () => fall.urteil : undefined });
+        const urteilBtns = Object.keys(URTEILE).map((k) => w2.querySelector('#' + urteilId + '-' + k));
+        function pruefeAmpel() { const voll = MERKMALE.every((m) => ampel[m.id]); urteilBtns.forEach((b) => { if (b) b.disabled = !voll; }); }
+        pruefeAmpel();
+        if (ctx.auto) rows.forEach((row) => { const ls = row.querySelectorAll('.vz-licht'); ls[Math.floor(ctx.autoRng() * 3)].click(); });
+        const u = await p2;
+        if (u === ctx.SKIP) break;
+        if (u === fall.urteil) { richtig = true; CREW.sound.play('great'); break; }
+        // Noch nicht: nur die Sicht nennen, die man nochmal fragen sollte
+        CREW.sound.play('soft');
+        const falsch = MERKMALE.filter((m) => (fall.ja.includes(m.id) ? 'ja' : 'nein') !== ampel[m.id]);
+        const m = falsch[0] || MERKMALE.find((x) => fall.ja.includes(x.id)) || MERKMALE[0];
+        const wer = Object.keys(fall.sichten).find((r) => fall.sichten[r].merkmal === m.id);
+        const wN = ctx.scr([ctx.say('Noch nicht. Fragt nochmal Sicht ' + wer + ' (' + SICHTEN[wer].name + '): Was weißt du zu „' + m.label + '“?', { eyebrow: 'Fragt nochmal nach' }), versuche >= 3 ? h('p', { class: 'muted small' }, 'Dritter Versuch – gleich kommt die Auflösung.') : null], { eyebrow: fall.titel + ' · Prüfen', center: true, badge: ctx.stufe(2, LEVELS) });
+        await ctx.next(wN, versuche >= 3 ? 'Auflösung' : 'Nochmal prüfen');
+        if (versuche >= 3) break;
+      }
+
+      // Auflösung: Urteil, Merkmale und welche Sicht was wusste
+      const U = URTEILE[fall.urteil];
+      const w3 = ctx.scr([
+        h('div', { class: 'vz-urteil', 'data-urteil': fall.urteil }, CREW.icon(U.icon, 40), h('div', { class: 'stack', style: { gap: '2px' } }, h('span', { class: 'eyebrow' }, richtig ? 'Richtig erkannt' : 'Auflösung'), h('b', { class: 'display' }, U.label), h('span', null, U.text))),
+        h('div', { class: 'stack vz-aufl' }, MERKMALE.map((m) => {
+          const r = Object.keys(fall.sichten).find((k) => fall.sichten[k].merkmal === m.id);
+          const ja = fall.ja.includes(m.id);
+          return h('div', { class: 'vz-aufl-z', 'data-ja': ja ? '1' : '0' }, h('span', { class: 'vz-dot', 'aria-hidden': 'true' }), h('div', { class: 'stack', style: { gap: '2px', minWidth: 0 } }, h('b', null, m.label + ': ' + (ja ? 'trifft zu' : 'trifft nicht zu')), h('span', { class: 'small' }, 'Das wusste nur Sicht ' + r + ' (' + SICHTEN[r].name + '): ' + fall.sichten[r].detail)));
+        })),
+        fall.urteil === 'spass' ? h('p', { class: 'muted small' }, '„Immer wieder“ allein ist noch kein Mobbing. Es kommt auf alle vier Merkmale an.') : fall.urteil === 'konflikt' ? h('p', { class: 'muted small' }, 'Ein Konflikt ist laut – aber beide stehen auf Augenhöhe. Nicht jeder Streit ist Mobbing.') : h('p', { class: 'muted small' }, 'Von außen sah es nach Spaß aus. Erst alle vier Sichten zusammen zeigen: Das ist Mobbing.'),
+      ], { eyebrow: fall.titel + ' · Auflösung', badge: ctx.stufe(2, LEVELS) });
+      await ctx.next(w3, 'Was kann ' + CF.name + ' tun?');
+
+      // Level 3: Handeln – welche Leiter-Stufe wäre für die Zuschauer-Figur sicher?
+      await ctx.T.level({ n: 3, names: LEVELS, text: CF.name + ' hat zugeschaut. Welche Stufe der Leiter wäre für ' + CF.name + ' sicher – und hilft am meisten?' });
+      const wL = ctx.scr([
+        ctx.figureCard({ fig: C.fig, mood: 'ueberrascht', text: 'Was kann ich tun – ohne mich selbst in Gefahr zu bringen?', eyebrow: CF.name + ' · Zuschauer:in', size: 72 }),
+        h('p', { class: 'muted small' }, 'Jede Stufe hilft. Stufe 1 ist keine Null. Redet kurz, dann tippt eine Person.'),
+      ], { eyebrow: fall.titel + ' · Handeln', badge: ctx.stufe(3, LEVELS) });
+      const st = await ctx.ask(wL, STUFEN.map((s) => ({ label: s.n + ' · ' + s.label, value: s.id, variant: 'ghost', id: 'vz-stufe-' + s.id })), { autoPick: () => Object.keys(fall.leiter).find((k) => fall.leiter[k][0] === 'top') || 's1' });
+      let stufeTop = false;
+      if (st !== ctx.SKIP) {
+        const [wert, text] = fall.leiter[st];
+        stufeTop = wert === 'top' || wert === 'reicht';
+        const top = Object.keys(fall.leiter).find((k) => fall.leiter[k][0] === 'top');
+        const wF = ctx.scr([
+          h('div', { class: 'vz-stufe', 'data-wert': wert }, h('span', { class: 'pill' }, BEWERTUNG[wert]), h('b', { class: 'lead' }, 'Stufe ' + st.slice(1) + ' · ' + STUFEN.find((s) => s.id === st).label), h('span', null, text)),
+          top && top !== st ? h('div', { class: 'card stack soft' }, h('span', { class: 'eyebrow' }, 'Hier am stärksten'), h('b', null, 'Stufe ' + top.slice(1) + ' · ' + STUFEN.find((s) => s.id === top).label), h('span', { class: 'small' }, fall.leiter[top][1])) : null,
+          ctx.helpCard({ title: 'Wenn du so etwas erlebst oder siehst', text: 'Erfundener Fall – echte Hilfe. Anonym und kostenlos:' }),
+        ], { eyebrow: fall.titel + ' · Handeln', badge: ctx.stufe(3, LEVELS) });
+        if (stufeTop) CREW.sound.play('good');
+        await ctx.next(wF, 'Weiter');
+      }
+      return {
+        summary: richtig ? U.label + ' – erkannt mit allen vier Sichten. Erst zusammen sieht man das ganze Bild.' : 'Erst alle vier Sichten zeigen das ganze Bild. Spaß, Konflikt und Mobbing sehen von außen oft gleich aus.',
+        stats: [[gehoert.size, 'Sichten gehört'], [versuche, versuche === 1 ? 'Versuch' : 'Versuche'], [stufeTop ? 1 : 0, 'starke Leiter-Stufe']],
+        help: true,
+      };
+    },
+  });
+})();
+
+/* ---- games/konflikt/wer-fehlt.js ---- */
+/* Spiel „Wer fehlt?“ (Thema: Konflikt, Druck & Mobbing) · Vorlage T1 Solo + Austausch · j1-e26, j1-e02
+   Drei Szenen als Bild, in denen eine Figur leise ausgegrenzt wird (Gruppenchat ohne Sam, Tisch mit Tasche auf dem
+   freien Platz, Insider-Witz). Erst die Zeichen antippen (wer schaut weg, wer wird nicht erwähnt) – es gibt auch
+   Ablenker, die nur auffällig aussehen. Dann einen Mini-Zug wählen, der die Figur reinholt, ohne ein großes Ding
+   daraus zu machen. Vergleichskarte zu zweit: „Wäre dein Zug bei uns machbar?“ Die Bonusfrage „Kennst du so einen
+   Moment?“ hat einen großen Pass-Knopf. Alles über Figuren, keine Namen aus der Klasse, nichts wird gespeichert.
+   In drei Level: 1) Zeichen sehen (Chat, Anzahl wird angezeigt), 2) Reinholen (Mensa mit Ablenkern),
+   3) Ohne Drama (Insider-Witz, ohne Hinweis, wie viele Zeichen es gibt). */
+(function () {
+  'use strict';
+  const CREW = window.CREW;
+  const { h } = CREW.util;
+
+  const ZUG = {
+    mini: { label: 'Mini-Zug', icon: 'check', fb: 'Leise reingeholt – ohne großes Ding.' },
+    gross: { label: 'Großes Ding', icon: 'bolt', fb: 'Gut gemeint. Aber jetzt steht die Person vor allen im Rampenlicht.' },
+    nichts: { label: 'Nichts', icon: 'eyeOff', fb: 'Die Person merkt es trotzdem – nur später und allein.' },
+    hart: { label: 'Ehrlich, aber hart', icon: 'x', fb: 'Das grenzt noch mehr aus – auch wenn es ehrlich gemeint ist.' },
+  };
+
+  /* Szenen: fig = die Figur, die leise ausgegrenzt wird. spots = antippbare Stellen im Bild (sign = echtes Zeichen).
+     typ 'chat': Handy mit Nachrichten; typ 'bild': Figuren und Dinge mit Position (x/y in % der Bildfläche). */
+  const SZENEN = [
+    {
+      id: 'chat', titel: 'Der Ausflug', typ: 'chat', fig: 'sam',
+      intro: 'Mika, Yara, Luca und Sam sitzen in der Pause immer zusammen. Am Samstag ist ein Ausflug. Das ist der Chat dazu.',
+      spots: [
+        { id: 'mitglieder', sign: true, kind: 'kopf', text: 'Samstag 🌲 · 3 Mitglieder: Mika, Yara, Luca', why: 'Drei Mitglieder – die vier sitzen aber immer zusammen. Sam fehlt.' },
+        { id: 'chips', sign: false, who: 'mika', text: 'ich bring chips 🥔', why: 'Eine normale Absprache.' },
+        { id: 'zeit', sign: false, who: 'luca', text: '10 uhr am bahnhof?', why: 'Eine normale Absprache.' },
+        { id: 'pssst', sign: true, who: 'yara', text: 'aber sam nix sagen 🤫', why: '🤫 – Sam soll es gar nicht erfahren.' },
+        { id: 'gif', sign: false, who: 'luca', text: '(GIF: tanzender Pinguin)', why: 'Nur ein GIF.' },
+        { id: 'frage', sign: true, kind: 'extra', text: 'Klassenchat, 16:02 · Sam: „macht ihr was am samstag?“ · gesehen von 3 · keine Antwort', why: 'Sams Frage wird gelesen – und keiner antwortet.' },
+      ],
+      zuege: [
+        { k: 'mini', t: 'Sam in die Gruppe holen und schreiben: „Bringst du deine Musikbox mit?“', react: 'Oh, cool – klar, ich bring die Box mit!' },
+        { k: 'gross', t: 'In den Klassenchat: „Warum ladet ihr Sam nicht ein?? Voll gemein!“', react: 'Jetzt weiß die ganze Klasse, dass ich nicht eingeladen war.' },
+        { k: 'nichts', t: 'Nichts machen. Sam kriegt das eh nicht mit.', react: 'Am Montag zeigen alle Fotos vom Ausflug. Ich war nicht dabei.' },
+        { k: 'hart', t: 'Sam privat: „Die anderen wollen dich halt nicht dabeihaben.“', react: 'Danke für die Ehrlichkeit … glaube ich.' },
+      ],
+    },
+    {
+      id: 'mensa', titel: 'Der freie Platz', typ: 'bild', fig: 'yara',
+      intro: 'Mittagspause in der Mensa. Mika, Luca und Sam sitzen an einem Vierertisch. Yara kommt mit dem Tablett.',
+      spots: [
+        { id: 'mika', sign: false, x: 22, y: 2, fig: 'mika', mood: 'froh', text: 'Mika erzählt vom Training', why: 'Ein normales Gespräch.' },
+        { id: 'weg', sign: true, x: 50, y: 2, fig: 'luca', mood: 'neutral', text: 'Luca schaut aufs Handy, als Yara kommt', why: 'Wegschauen heißt: Ich hab dich nicht gesehen.' },
+        { id: 'pommes', sign: false, x: 22, y: 64, fig: 'sam', mood: 'froh', text: 'Sam isst Pommes', why: 'Nur Essen.' },
+        { id: 'tasche', sign: true, x: 50, y: 64, emo: '🎒', text: 'Tasche auf dem freien Stuhl', why: 'Der Platz ist frei – die Tasche sagt: besetzt.' },
+        { id: 'yara', sign: true, x: 78, y: 32, fig: 'yara', mood: 'traurig', text: 'Yara steht mit dem Tablett da', why: 'Yara wartet, ob jemand was sagt.' },
+        { id: 'fenster', sign: false, x: 1, y: 32, emo: '🪟', text: 'Das Fenster ist offen', why: 'Nichts Besonderes.' },
+      ],
+      tisch: true,
+      zuege: [
+        { k: 'mini', t: 'Tasche runter, ein Stück rutschen: „Hier ist noch Platz.“', react: 'Danke. Ich dachte schon, ich ess wieder allein.' },
+        { k: 'gross', t: 'Laut zum Tisch: „Leute, ihr grenzt Yara voll aus!“', react: 'Alle schauen her. Am liebsten wär ich jetzt weg.' },
+        { k: 'nichts', t: 'Weiteressen. Yara findet schon einen Platz.', react: 'Yara isst allein am Fenster.' },
+        { k: 'hart', t: 'Zu Yara: „Setz dich lieber woanders hin, die wollen unter sich sein.“', react: 'Okay … dann weiß ich ja Bescheid.' },
+      ],
+    },
+    {
+      id: 'witz', titel: 'Der Insider-Witz', typ: 'bild', fig: 'luca',
+      intro: 'Im Flur nach dem Wochenende. Mika, Yara und Sam waren zusammen im Zoo. Luca war nicht dabei.',
+      spots: [
+        { id: 'kopfhoerer', sign: false, x: 2, y: 4, fig: 'mika', mood: 'froh', text: 'Mika hat Kopfhörer um den Hals', why: 'Nur Kopfhörer.' },
+        { id: 'pinguin', sign: false, x: 26, y: 4, fig: 'yara', mood: 'froh', text: 'Yara macht den Pinguin nach', why: 'Spaß unter Freunden – das allein ist kein Zeichen.' },
+        { id: 'satz', sign: true, x: 50, y: 4, fig: 'sam', mood: 'froh', text: 'Sam: „Du hättest dabei sein müssen! 🐧“', why: 'Der Satz schließt Luca aus, statt den Witz zu erklären.' },
+        { id: 'lachen', sign: true, x: 78, y: 34, fig: 'luca', mood: 'ueberrascht', text: 'Luca lacht unsicher mit', why: 'Luca lacht mit, versteht aber nichts – damit es nicht auffällt.' },
+        { id: 'kreis', sign: true, x: 30, y: 64, emo: '◠', text: 'Der Kreis ist zu – keine Lücke für Luca', why: 'Drei Rücken, keine Lücke. Wer dazukommen will, steht außen.' },
+        { id: 'laut', sign: false, x: 2, y: 64, emo: '📢', text: 'Es ist laut im Flur', why: 'Flure sind laut.' },
+      ],
+      zuege: [
+        { k: 'mini', t: 'Einen Schritt zur Seite und zu Luca: „Das war im Zoo – ich erzähl’s dir kurz, war echt witzig.“', react: 'Ah, ein Pinguin! Okay, jetzt check ich’s.' },
+        { k: 'gross', t: 'Laut: „Hört auf mit dem Witz, Luca versteht das eh nicht!“', react: 'Jetzt bin ich der, der es nicht versteht. Vor allen.' },
+        { k: 'nichts', t: 'Weiterlachen. Luca kennt das ja.', react: 'Luca geht zur Toilette und kommt erst zum Klingeln wieder.' },
+        { k: 'hart', t: 'Zu Luca: „Ist ein Insider, das kannst du nicht verstehen.“', react: 'Okay. Dann bin ich halt draußen.' },
+      ],
+    },
+  ];
+
+  const LEVELS = ['Zeichen sehen', 'Reinholen', 'Ohne Drama'];
+  const LEVEL_TEXT = {
+    2: 'Jetzt ein Bild mit Ablenkern: Nicht alles, was auffällt, ist ein Zeichen. Und welcher Zug holt Yara rein, ohne sie bloßzustellen?',
+    3: 'Ganz leise Zeichen – diesmal sagen wir nicht, wie viele es sind. Welcher Zug holt Luca rein, ohne Drama?',
+  };
+
+  /* Bild mit antippbaren Stellen. Rückgabe { el, found() }. */
+  function szeneBild(ctx, sz, onTap) {
+    const spotEl = (s) => {
+      const b = h('button', { type: 'button', class: 'wf-spot' + (s.kind === 'kopf' ? ' kopf' : s.kind === 'extra' ? ' extra' : s.who ? ' msg' : ''), 'data-spot': s.id, style: s.x != null ? { left: s.x + '%', top: s.y + '%' } : null, 'aria-label': s.text },
+        s.fig ? ctx.avatar(s.fig, s.mood, 52) : s.emo ? h('span', { class: 'wf-emo', 'aria-hidden': 'true' }, s.emo) : null,
+        s.who ? h('span', { class: 'bubble-who' }, ctx.figures[s.who].name) : null,
+        h('span', { class: 'wf-cap' }, s.text),
+        h('span', { class: 'wf-mark', 'aria-hidden': 'true' }));
+      b.addEventListener('click', () => onTap(s, b));
+      return b;
+    };
+    if (sz.typ === 'chat') {
+      const kopf = sz.spots.filter((s) => s.kind === 'kopf'), msgs = sz.spots.filter((s) => s.who), extra = sz.spots.filter((s) => s.kind === 'extra');
+      return h('div', { class: 'wf-chat' },
+        h('div', { class: 'wf-phone' }, kopf.map(spotEl), h('div', { class: 'wf-msgs' }, msgs.map(spotEl))),
+        h('div', { class: 'wf-extra' }, extra.map(spotEl)));
+    }
+    return h('div', { class: 'wf-bild', 'data-szene': sz.id }, sz.tisch ? h('span', { class: 'wf-tisch', 'aria-hidden': 'true' }) : h('span', { class: 'wf-flur', 'aria-hidden': 'true' }), sz.spots.map(spotEl));
+  }
+
+  CREW.registerGame({
+    id: 'wer-fehlt',
+    template: 'T1',
+    icon: 'users',
+    themen: ['Ausgrenzung', 'Einbeziehen', 'Empathie', 'Mini-Zug'],
+    safety: ['figuren', 'freiwillig'],
+    help: true,
+    szenen: SZENEN, // für den Test
+    async run(ctx) {
+      await ctx.T.intro({
+        rule: 'Drei Bilder, in jedem wird jemand leise ausgegrenzt. Tipp die Zeichen an, dann wähl einen Mini-Zug, der die Figur reinholt – ohne Drama.',
+        levels: LEVELS,
+        steps: [
+          { icon: 'eye', title: 'Zeichen sehen', text: 'Wer schaut weg? Wer wird nicht erwähnt?' },
+          { icon: 'users', title: 'Mini-Zug', text: 'Reinholen, ohne ein großes Ding draus zu machen.' },
+          { icon: 'chat', title: 'Vergleichen', text: 'Zu zweit: Wäre dein Zug bei uns machbar?' },
+        ],
+        probe: ctx.T.probeCard('Probe: In der Gruppe „Kino 🍿“ sind 4 von 5 Freunden. Ist das ein Zeichen? Tipp eins – zählt nicht.', [{ label: 'Zeichen', value: 'z', variant: 'ghost', icon: 'eye' }, { label: 'Kein Zeichen', value: 'k', variant: 'ghost', icon: 'x' }]),
+      });
+      await ctx.T.codeCheck();
+
+      const ergebnis = [];
+      let gefundenGesamt = 0, minis = 0;
+      for (let i = 0; i < SZENEN.length; i++) {
+        const sz = SZENEN[i];
+        const L = i + 1;
+        const F = ctx.figures[sz.fig];
+        if (i > 0) await ctx.T.level({ n: L, names: LEVELS, text: LEVEL_TEXT[L] });
+        const zeichen = sz.spots.filter((s) => s.sign);
+        const gefunden = new Set();
+        const zaehler = h('span', { class: 'pill accent wf-zaehler' }, L < 3 ? '0 von ' + zeichen.length + ' Zeichen' : 'Wie viele? Sagen wir nicht.');
+        const info = h('div', { class: 'wf-info', role: 'status', 'aria-live': 'polite' }, h('span', { class: 'muted small' }, 'Tipp auf eine Stelle im Bild.'));
+        const onTap = (s, b) => {
+          if (b.dataset.done) return;
+          b.dataset.done = s.sign ? 'zeichen' : 'nein';
+          CREW.sound.play(s.sign ? 'good' : 'tap');
+          if (s.sign) gefunden.add(s.id);
+          info.replaceChildren(h('span', { class: 'wf-info-tag' + (s.sign ? ' ja' : '') }, CREW.icon(s.sign ? 'eye' : 'x', 16), s.sign ? 'Zeichen' : 'Kein Zeichen'), h('span', null, s.why));
+          if (L < 3) zaehler.textContent = gefunden.size + ' von ' + zeichen.length + ' Zeichen';
+          if (L < 3 && gefunden.size === zeichen.length) { zaehler.classList.add('good'); CREW.sound.play('great'); }
+        };
+        const bildEl = szeneBild(ctx, sz, onTap);
+        const wS = ctx.scr([
+          h('div', { class: 'wf-kopf' }, ctx.avatar(sz.fig, 'traurig', 44), h('div', { class: 'stack', style: { gap: '4px', flex: '1', minWidth: 0 } }, h('span', null, sz.intro), h('b', null, 'Wo siehst du, dass ' + F.name + ' draußen ist?')), ctx.readBtn(sz.intro + ' Wo siehst du, dass ' + F.name + ' draußen ist?')),
+          h('div', { class: 'row end' }, zaehler),
+          bildEl,
+          info,
+        ], { eyebrow: 'Bild ' + L + ' von ' + SZENEN.length + ' · ' + sz.titel, badge: ctx.stufe(L, LEVELS) });
+        if (ctx.auto) { const spots = [...bildEl.querySelectorAll('.wf-spot')]; ctx.rshuffle(spots).slice(0, 4).forEach((b) => b.click()); }
+        const go = await ctx.next(wS, 'Fertig gesucht', { id: 'wf-fertig' });
+        if (go === ctx.SKIP) { ergebnis.push({ sz, zug: null, n: gefunden.size }); continue; }
+        gefundenGesamt += gefunden.size;
+
+        // Auflösung der Zeichen + Mini-Zug wählen
+        const optionen = ctx.rshuffle(sz.zuege);
+        const wZ = ctx.scr([
+          h('div', { class: 'card stack wf-aufl' },
+            h('div', { class: 'row between', style: { gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Die Zeichen · ' + gefunden.size + ' von ' + zeichen.length + ' gefunden'), ctx.readBtn(zeichen.map((s) => s.why).join(' '))),
+            zeichen.map((s) => h('div', { class: 'wf-z' + (gefunden.has(s.id) ? ' ja' : '') }, CREW.icon(gefunden.has(s.id) ? 'check' : 'eye', 18), h('span', null, h('b', null, s.text + ': '), s.why)))),
+          ctx.say('Was machst du, damit ' + F.name + ' dazugehört – ohne ein großes Ding draus zu machen?', { eyebrow: L === 3 ? 'Ohne Drama' : 'Dein Zug', small: true }),
+        ], { eyebrow: sz.titel + ' · Zug', badge: ctx.stufe(L, LEVELS) });
+        const zk = await ctx.ask(wZ, optionen.map((z, j) => ({ label: z.t, value: j, variant: 'ghost', id: 'wf-zug-' + z.k })));
+        if (zk === ctx.SKIP) { ergebnis.push({ sz, zug: null, n: gefunden.size }); continue; }
+        const z = optionen[zk];
+        if (z.k === 'mini') { minis++; CREW.sound.play('great'); } else CREW.sound.play('soft');
+        ergebnis.push({ sz, zug: z, n: gefunden.size });
+        const wR = ctx.scr([
+          h('div', { class: 'wf-zugtag', 'data-k': z.k }, CREW.icon(ZUG[z.k].icon, 22), h('b', null, ZUG[z.k].label), h('span', null, ZUG[z.k].fb)),
+          ctx.figureCard({ fig: sz.fig, mood: z.k === 'mini' ? 'froh' : z.k === 'gross' ? 'angst' : 'traurig', text: z.react, eyebrow: F.name + ' erlebt das so' }),
+          z.k === 'mini' ? null : h('div', { class: 'card stack soft' }, h('span', { class: 'eyebrow' }, 'Mini-Zug wäre'), h('p', { style: { margin: 0 } }, sz.zuege.find((x) => x.k === 'mini').t)),
+        ], { eyebrow: sz.titel + ' · ' + F.name, badge: ctx.stufe(L, LEVELS) });
+        await ctx.next(wR, i + 1 < SZENEN.length ? 'Nächstes Bild' : 'Zum Austausch');
+      }
+
+      // Austausch zu zweit: die EINE Vergleichskarte
+      await ctx.T.pairScreen();
+      await ctx.T.vergleich({
+        title: 'Wer fehlt?',
+        items: ergebnis.map((e) => ({ label: e.sz.titel, icon: e.zug ? ZUG[e.zug.k].icon : 'x', text: e.n + ' Zeichen · ' + (e.zug ? ZUG[e.zug.k].label : 'gepasst') })),
+        questions: ['Wäre dein Zug bei uns machbar?', 'Welches Zeichen hättest du in echt übersehen?'],
+        note: 'Es geht um Sam, Yara und Luca – nicht um euch. Keine Namen aus der Klasse. Pass ist okay.',
+      });
+      // Bonusfrage mit großem Pass-Knopf
+      const wB = ctx.scr([
+        ctx.say('Bonusfrage, nur wenn du magst: Kennst du so einen Moment – von außen oder von innen? Erzähl es deinem Partner nur, wenn du willst. Ohne Namen aus der Klasse.', { eyebrow: 'Bonus · freiwillig', small: true }),
+        ctx.safetyLine('freiwillig'),
+      ], { eyebrow: 'Bonus', center: true });
+      wB.classList.add('wf-bonus');
+      await ctx.ask(wB, [{ label: 'Pass', value: 'pass', variant: 'ghost', icon: 'x', id: 'wf-bonus-pass' }, { label: 'Erzählt', value: 'ok', variant: 'ghost', icon: 'chat', id: 'wf-bonus-ok', auto: false }]);
+      return {
+        summary: minis === SZENEN.length ? 'Drei Mini-Züge. Reinholen geht leise – und wirkt.' : 'Ausgrenzung ist oft leise. Ein kleiner Zug holt mehr rein als ein großes Ding.',
+        stats: [[gefundenGesamt, 'Zeichen gefunden'], [minis, 'Mini-Züge']],
+        help: true,
       };
     },
   });

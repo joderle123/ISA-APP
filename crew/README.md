@@ -74,6 +74,9 @@ In der **Solo-Zone** gibt es Spiele für eine Person (z. B. Chill-Zone, Gefühls
 - **X-Karte** (oben rechts): Jede Karte darf ohne Begründung übersprungen werden. Auch während einer Animation.
 - **Pause** mit Atemkreis und **Hilfe** mit Kanner- a Jugendtelefon (116 111), BEE SECURE Helpline (8002 1234), Notruf 112, Polizei 113.
 - **Heikle Karten** (Familie, Geld, Körper, Verlust …) sind aus, bis du sie im Lehrermodus einschaltest.
+- **Mobbing und Ausgrenzung** (Vier Zeugen, Leiter-Lauf, Wer fehlt?): Rollen und Sichten kommen per Los (Tagescode + Platz) und gehören
+  immer den Figuren. Wer eine Sicht nicht lesen mag, wird ohne Grund Beobachter:in. Was tun, wenn echtes Mobbing sichtbar wird
+  (Klassenleitung/Régent, SePAS), steht im Lehrermodus unter „Hinweise“ → „Wenn es kippt“.
 
 ## Lehrermodus
 
@@ -109,7 +112,7 @@ nie über die Jugendlichen. Teilen ist freiwillig, **Pass** steht auf jedem Bild
 - Ist das Katalogspiel einer Einheit noch nicht gebaut, zeigt der Finder automatisch den **besten gebauten Ersatz**
   (gleiches Thema, gleiche ELDiB-Codes). Es gibt nie einen toten Link.
 
-### Gebaute Spiele (28 von 62, ★ = Favorit)
+### Gebaute Spiele (35 von 62, ★ = Favorit)
 
 | Thema | Spiele |
 |---|---|
@@ -119,10 +122,10 @@ nie über die Jugendlichen. Teilen ist freiwillig, **Pass** steht auf jedem Bild
 | Anspannung & Skills | Pegel-Reihe ★ · Skill-Sprechstunde ★ |
 | Gedanken & Glaubenssätze | Gedanken-Weiche ★ · Tatsache oder Urteil? ★ |
 | Kommunikation & Grenzen | Funkstille – der Chat kippt ★ · Hitze-Ecken ★ |
-| Konflikt, Druck & Mobbing | Story-Staffel: Der Streit ★ · Deal oder kein Deal ★ · Druck-Chat ★ |
+| Konflikt, Druck & Mobbing | Story-Staffel: Der Streit ★ · Sorry-Werkstatt ★ · Deal oder kein Deal ★ · 100 Prozent ★ · Gerecht oder gleich? · Druck-Chat ★ · Nein-Trainer · Vier Zeugen ★ · Leiter-Lauf ★ · Wer fehlt? |
 | Digital, Gesundheit & Abschluss | Teilen oder nicht? ★ |
 
-Die übrigen 34 Spiele stehen mit Ablauf und Kritik-Notizen in `docs/SPIELEKATALOG.md` und erscheinen in der App als „bald“.
+Die übrigen 27 Spiele stehen mit Ablauf und Kritik-Notizen in `docs/SPIELEKATALOG.md` und erscheinen in der App als „bald“.
 Eine Kurzvorstellung für Kollegium und Leitung: `docs/VORSTELLUNG.md`.
 
 ### Sieben Formate
@@ -183,7 +186,8 @@ Alles steckt in dieser einen Datei (auch Schriften und Grafiken).
 - Tests (Playwright): `node crew/tests/smoke.mjs` (ebenso radar, clash, feed, reframe, solo-test, hq) und
   `node crew/tests/games.mjs` (spielt JEDES registrierte Spiel im Auto-Modus bis zum Ende, prüft Deep-Link und QR);
   `node crew/tests/hub.mjs` prüft die Klassebuch-Anbindung ohne Browser;
-  `node crew/tests/didaktik.mjs` prüft „Darum geht’s“, Level, Nachbesprechung und Hinweise für alle Spiele, Missionen und Solo-Spiele.
+  `node crew/tests/didaktik.mjs` prüft „Darum geht’s“, Level, Nachbesprechung und Hinweise für alle Spiele, Missionen und Solo-Spiele;
+  `node crew/tests/konflikt.mjs` prüft die Konflikt-Spiele (Logik, Sicht per Los, Beamer-Regeln, Deep-Links, Layout Handy/iPad hoch).
   Läuft parallel noch ein anderer Browser-Test: `flock /tmp/crew-chrome.lock node crew/tests/games.mjs`.
 
 ### Ein neues Spiel bauen
