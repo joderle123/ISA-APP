@@ -38,6 +38,8 @@ export interface KatalogIntern {
   notfallBlatt: Set<string>
   /** Schritte, die ein Ergebnis einer früheren Kursstunde voraussetzen (VORLAUF_RE) – plant Passgenau nie */
   vorlauf: Set<string>
+  /** Material-Einheit → kleinste Stelle eines Kern-Schritts (spätere Teile bauen oft auf ihm auf) */
+  ersterKern: Map<string, number>
   /** Textmerkmale je Eintrag (einzel.ts), beim ersten Zugriff berechnet */
   merkmale: Map<string, Set<string>>
   /** Mikro-Bausteine je Quellblatt in Blattreihenfolge */
@@ -354,7 +356,15 @@ export function baueKatalog(q: Quellen, bDatei: BausteineDatei, sDatei: Schritte
   for (const l of nachRolle.values()) l.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
 
   const k: Katalog = { eintraege, nachRolle, stand: `${bDatei.stand}/${sDatei.stand}` }
-  INTERN.set(k, { q, seite: bDatei.seite, eldib, nachH, vorlesbar, notfallBlatt, vorlauf, merkmale: new Map(), bausteineVonBlatt, wahlkarten: inhalte.wahlkarten.sort((a, b) => (a.id < b.id ? -1 : 1)), materialName: inhalte.material })
+  const ersterKern = new Map<string, number>()
+  for (const e of nachRolle.get('kern') ?? []) {
+    const t = e.id.split(':')
+    if (t[0] !== 'm' || t.length < 3) continue
+    const n = Number(t[2])
+    const key = `${t[0]}:${t[1]}`
+    if (!ersterKern.has(key) || n < ersterKern.get(key)!) ersterKern.set(key, n)
+  }
+  INTERN.set(k, { q, seite: bDatei.seite, eldib, nachH, vorlesbar, notfallBlatt, vorlauf, ersterKern, merkmale: new Map(), bausteineVonBlatt, wahlkarten: inhalte.wahlkarten.sort((a, b) => (a.id < b.id ? -1 : 1)), materialName: inhalte.material })
   aktuell = k
   return k
 }

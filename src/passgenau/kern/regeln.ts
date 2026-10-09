@@ -476,6 +476,13 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
   g += o.bonus ?? 0
   // Französisch: Blatt-Teile ohne FR zählen weniger (T-M4)
   if (c.sprache === 'fr' && e.typ === 'baustein' && !e.sprache.fr && e.lesemenge > 0) g *= 0.7
+  // Material mit mehreren Teilen: spätere Teile setzen oft voraus, was im ersten entstand („seine Treppe“, „das Barometer“)
+  // – als Kern zählt der erste Teil mehr (Blind-Bewertung 9.10.)
+  if (e.typ === 'schritt' && e.id.startsWith('m:') && e.rolle.includes('kern')) {
+    const t = e.id.split(':')
+    const erst = intern(c.k).ersterKern.get(`${t[0]}:${t[1]}`)
+    if (erst !== undefined && Number(t[2]) > erst) g *= 0.82
+  }
   // Schritte für ein französisches Kind: mit französischem Text klar bevorzugt (Blind-Bewertung 9.10.: deutsche Sagen-Sätze
   // und Kerne auf französischen Planblättern); ohne FR nur, wenn nichts Französisches passt
   if (c.sprache === 'fr' && e.typ === 'schritt' && !e.fr && !e.id.startsWith('pg:')) g *= 0.65
