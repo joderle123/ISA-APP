@@ -6,7 +6,7 @@ import type { Material } from '../../types/material'
 import type { KatalogEintrag, MikroBaustein, Rolle, Sozialform, Stufe, Stundenschritt, Wahlkarte } from '../typen'
 import type { CrewSpiel, FfEinheit, Quellen } from '../quellen'
 import { entpackeBaustein, entpackeSchritt, type BausteineDatei, type SchritteDatei } from './format'
-import { KOMPETENZ_BLATT, kompetenzAusCode } from './vokabular'
+import { KATHARSIS_RE, KOMPETENZ_BLATT, kompetenzAusCode } from './vokabular'
 import { hash8, STUFE_ALTER, STUFEN, woerter } from './hilfen'
 import { paketBausteine, texte } from './inhalt'
 import { SYSTEM } from './system'
@@ -200,6 +200,9 @@ export function inhaltSchritt(roh: Partial<Stundenschritt> & { id: string }): St
     h: roh.h || hash8(JSON.stringify([roh.titel, roh.text, roh.sagen ?? null, roh.fr ?? null])),
   }
   if (s.ohneZiel === undefined && (art === 'freude' || art === 'ritual')) s.ohneZiel = true
+  // Sicherung (E-M16): auch neue Inhalte mit „Wut rauslassen“ o. Ä. fallen heraus
+  const alles = [s.titel, s.text, ...(s.sagen ?? []), s.wennEsKippt ?? '', s.fr?.text ?? ''].join(' ')
+  if (KATHARSIS_RE.test(alles)) s.merkmale = { ...s.merkmale, katharsis: true }
   return s
 }
 

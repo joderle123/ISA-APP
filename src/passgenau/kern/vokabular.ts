@@ -272,3 +272,8 @@ export function interesseName(key: string, sprache: Sprache = 'de'): string {
   const i = INTERESSEN[key]
   return i ? i[sprache] : key.charAt(0).toUpperCase() + key.slice(1)
 }
+
+/** Wortliste Katharsis (E-M16): „Wut rauslassen“, auf Kissen schlagen u. Ä. – solche Schritte schlägt Passgenau nie vor.
+ *  Gilt für den Katalog (Phase 0), die neuen Inhalte beim Laden und das Prüfskript. */
+export const KATHARSIS_RE =
+  /(rauslassen|herauslassen|heraus lassen|raus lassen|abreagier|dampf ablassen|so fest wie (die|deine|eure) wut|auf ein kissen|kissen (schlagen|boxen|hauen)|boxsack|wut (an|in|auf) .{0,25}(auslassen|rauslassen)|(se )?défoul|évacuer (la|sa|ta) colère|taper (sur|dans) (un|le) coussin)/i

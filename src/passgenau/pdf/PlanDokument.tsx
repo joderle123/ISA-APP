@@ -257,6 +257,7 @@ export function SitzungSeiten({ d }: { d: DruckSitzung }) {
       <PlanSeite d={d} />
       {d.kinderblatt ? <BlattSeiten blatt={d.kinderblatt} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
       {d.karten ? <BlattSeiten blatt={d.karten} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
+      {d.materialSeite ? <BlattSeiten blatt={d.materialSeite} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
     </>
   )
 }

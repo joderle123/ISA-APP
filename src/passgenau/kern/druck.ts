@@ -3,7 +3,7 @@
 // auf dem Planblatt Vorname, Codes und Quelle-Art, aber keine Daten von Vorfällen oder Notizen; Begründungen nur auf Wunsch.
 import type { Baustein, Blatt } from '../../blatt/typen'
 import type { MikroBaustein, Plan, PlanSchritt, Profil, Rolle, Sprache } from '../typen'
-import { eldibKurz, intern, ichSatz, quelleText, textVon, type Katalog } from './katalog'
+import { bausteinInhalt, eldibKurz, intern, ichSatz, quelleText, textVon, type Katalog } from './katalog'
 import { kinderblatt } from './blatt'
 import { BOGEN_NAME, ROLLE_NAME } from './vokabular'
 import { hash8 } from './hilfen'
@@ -38,6 +38,8 @@ export interface DruckSitzung {
   blattTeile: { titel: string; quelle: string; tipp?: string }[]
   kinderblatt: Blatt | null
   karten: Blatt | null
+  /** Druckmaterial der Schritte (T-M12): Bildkarten, Memory, Bastelbogen … aus dem verknüpften Blatt */
+  materialSeite: Blatt | null
   sprache: Sprache
   warum: boolean
   /** Seitenkopf: „Sitzung 3 von 6“ */
@@ -134,6 +136,8 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     if (e) for (const m of e.material) mat.add(materialName(k, m, sp))
   }
   if (s.blatt) mat.add(sp === 'fr' ? 'la fiche (imprimée)' : 'das Blatt (gedruckt)')
+  const matSeite = materialSeite(k, p, plan, nr, sp)
+  if (matSeite) mat.add(sp === 'fr' ? 'la page de matériel (imprimée, à découper)' : 'die Materialseite (gedruckt, ausschneiden)')
   const blattTeile = (s.blatt?.bausteine ?? [])
     .filter((b) => !b.ref.startsWith('pg:'))
     .map((b) => {
@@ -165,11 +169,61 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     blattTeile,
     kinderblatt: s.blatt ? kinderblatt(k, p, plan, nr, sp) : null,
     karten: opt.karten ? karten(k, p, plan, nr, sp) : null,
+    materialSeite: matSeite,
     sprache: sp,
     warum: opt.warum,
     nr,
     n: plan.n,
     datei: `Passgenau-Sitzung-${nr}${sp === 'fr' ? '_FR' : ''}.pdf`,
+  }
+}
+
+/** Bausteinarten, die Druckmaterial sind (ausschneiden, legen, spielen) – nicht Aufgaben zum Ausfüllen */
+const DRUCK_ARTEN = new Set(['karten', 'memory', 'suchbild', 'schneiden_kleben', 'bastelbogen', 'minibuch', 'faedelkarte', 'klappbild', 'anziehpuppe', 'laufweg', 'bilder'])
+
+/** Pakete, die ein Schritt der Sitzung als Druckmaterial braucht (verknüpftes Blatt, T-M12) – ohne die, die schon auf dem
+ *  Blatt des Kindes stehen; je Schritt höchstens zwei. */
+export function druckPakete(k: Katalog, plan: Plan, nr: number): MikroBaustein[] {
+  const s = plan.sitzungen.find((x) => x.nr === nr)
+  if (!s) return []
+  const aufDemBlatt = new Set((s.blatt?.bausteine ?? []).map((b) => b.ref))
+  const out = new Map<string, MikroBaustein>()
+  for (const x of s.schritte)
+    for (const ref of [x.ref, ...(x.wahl ?? []).map((w) => w.ref)]) {
+      const e = k.eintraege.get(ref)
+      if (!e || e.typ !== 'schritt' || !e.blatt?.length) continue
+      let n = 0
+      for (const id of e.blatt) {
+        const b = k.eintraege.get(id)
+        if (!b || b.typ !== 'baustein' || aufDemBlatt.has(id) || out.has(id) || !b.art.some((a) => DRUCK_ARTEN.has(a))) continue
+        out.set(id, b)
+        if (++n >= 2) break
+      }
+    }
+  return [...out.values()]
+}
+
+/** Materialseite zur Stunde: die Druckpakete als eigenes Blatt (gleiche Gestaltung wie ihr Quellblatt). */
+export function materialSeite(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: Sprache): Blatt | null {
+  const pakete = druckPakete(k, plan, nr)
+  if (!pakete.length) return null
+  const quelle = intern(k).q.blatt.get(pakete[0].quelle.blatt)
+  const fr = sprache === 'fr' && pakete.every((b) => b.sprache.fr)
+  const bausteine = pakete.flatMap((b) => bausteinInhalt(k, b, fr ? 'fr' : 'de'))
+  const inhalt = { titel: fr ? 'Matériel pour la séance' : 'Material zur Stunde', bausteine, lehrer: { ziel: '', ablauf: [], hintergrund: '' } }
+  return {
+    id: `pg-material-${hash8(plan.id + '|' + nr + '|' + pakete.map((b) => b.id).join(','))}`,
+    bereich: quelle?.bereich ?? 'gefuehle',
+    thema: quelle?.thema ?? 'erkennen',
+    stufen: quelle?.stufen ?? [p.stufen[0] ?? 'C3'],
+    layout: quelle?.layout ?? p.layout,
+    sozialform: ['einzeln'],
+    dauer: `${plan.dauer} Min.`,
+    eldib: [],
+    schlagworte: [],
+    passgenau: { herkunft: [...new Set(pakete.map((b) => b.quelle.nr))].join(', ') },
+    de: inhalt,
+    ...(fr ? { fr: inhalt } : {}),
   }
 }
 

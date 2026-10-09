@@ -7,6 +7,7 @@ import type { Blatt } from '../src/blatt/typen'
 import type { Einheit as KursEinheit } from '../src/kurs/typen'
 import { quellenAus, type CrewKatalog, type FfEinheit, type Quellen } from '../src/passgenau/quellen'
 import { allMaterials } from '../src/data/materials'
+import { hash8 } from '../src/passgenau/kern/hilfen'
 
 export const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -36,4 +37,16 @@ export function ladeQuellenNode(root = ROOT): Quellen {
     crew: json<CrewKatalog>(join(root, 'src/data/passgenau/crew.json')),
     inhalte,
   })
+}
+
+/** Prüfsumme der Gestaltung, mit der die Höhen gemessen wurden (S13): stil.ts und BLATT-STIL.md. */
+export function stilHash(root = ROOT): string {
+  return hash8(['src/blatt/pdf/stil.ts', 'src/blatt/BLATT-STIL.md'].map((d) => (existsSync(join(root, d)) ? readFileSync(join(root, d), 'utf8') : '')).join('\n'))
+}
+
+/** Katalog in Node (Prüfskript, Abdeckung, Tests): dieselbe Funktion wie im Browser, Dateien direkt gelesen. */
+export async function ladeKatalogNode(root = ROOT) {
+  const { baueKatalog } = await import('../src/passgenau/kern/katalog')
+  const d = join(root, 'src/data/passgenau')
+  return baueKatalog(ladeQuellenNode(root), json(join(d, 'bausteine.json')), json(join(d, 'schritte.json')), json(join(d, 'eldib.json')))
 }

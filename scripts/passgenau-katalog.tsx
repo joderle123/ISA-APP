@@ -22,12 +22,12 @@ import { Bausteine, nummerieren as nummernVon, type Ctx } from '../src/blatt/pdf
 import { BlattDokument } from '../src/blatt/pdf/BlattDokument'
 import { MASSE, SEITE, registriereSchriften } from '../src/blatt/pdf/stil'
 import { palette } from '../src/blatt/zeichnung'
-import { ladeQuellenNode, ROOT } from './passgenau-quellen'
+import { ladeQuellenNode, ROOT, stilHash } from './passgenau-quellen'
 import { frParallel, inhaltsStellen, paketBausteine, texte } from '../src/passgenau/kern/inhalt'
 import { hash8, norm, woerter, STUFE_ALTER, layoutAusStufe, STUFEN } from '../src/passgenau/kern/hilfen'
-import { THEMEN, themaTreffer, KOMPETENZ_BLATT, kompetenzAusCode, type Kompetenz } from '../src/passgenau/kern/vokabular'
+import { THEMEN, themaTreffer, KOMPETENZ_BLATT, KATHARSIS_RE, kompetenzAusCode, type Kompetenz } from '../src/passgenau/kern/vokabular'
 import { packeBaustein, packeSchritt, LAYOUTS, SicherTabelle, type BausteineDatei, type SchrittMeta, type SchritteDatei } from '../src/passgenau/kern/format'
-import type { Einheit as KursEinheit, Schritt as KursSchritt } from '../src/kurs/typen'
+import type { Schritt as KursSchritt } from '../src/kurs/typen'
 import type { Material } from '../src/types/material'
 
 const args = process.argv.slice(2)
@@ -228,7 +228,7 @@ const MERKMAL_RE: Record<keyof Merkmale, RegExp> = {
   koerperkontakt: /\b(anfass|berühr|rücken an rücken|hände halten|an den händen|massage|massier|huckepack|kitzel|umarm|auf den rücken (malen|zeichnen|schreiben)|hand in hand|kuscheln|abklatschen)/i,
   laut: /\b(schrei|brüll|trommel|stampf|kreisch|pfeif|lärm|laute musik|ganz laut|so laut wie|lautstärke|krach|jubel)/i,
   gewaltbezug: /\b(schlägt|schlagen|geschlagen|hauen|gehauen|haut (ihn|sie|den|die|mich|ihm|andere)|prügel|getreten|tritt (ihn|sie|gegen)|waffe|schlägerei|würg|schubst|geschubst|verprügel)/i,
-  katharsis: /(rauslassen|herauslassen|heraus lassen|raus lassen|abreagier|dampf ablassen|so fest wie (die|deine|eure) wut|auf ein kissen|kissen (schlagen|boxen|hauen)|wut (an|in|auf) .{0,25}(auslassen|rauslassen))/i,
+  katharsis: KATHARSIS_RE,
 }
 
 function merkmaleAusText(t: string): Merkmale | undefined {
@@ -800,7 +800,8 @@ function kursSchritt(art: 'k' | 'f', e: { id: string; blaetter: string[] }, s: K
   const rolle: Rolle[] = []
   switch (s.phase) {
     case 'ankommen':
-      rolle.push('ankommen')
+      // ein Ankommen über 12 Minuten (Ausflug, langer Kreis) ist für eine Einzelstunde ein Einstieg
+      rolle.push(s.dauer > 12 ? 'einstieg' : 'ankommen')
       break
     case 'bruecke':
       rolle.push('einstieg')
@@ -834,7 +835,7 @@ function kursSchritt(art: 'k' | 'f', e: { id: string; blaetter: string[] }, s: K
   const kursBezug = RE.kursBezug.test(text)
   const bogen = s.phase === 'ankommen' || s.phase === 'abschluss' ? undefined : bogenAusText(text, s.phase === 'input' ? 'verstehen' : s.phase === 'bruecke' ? 'reflektieren' : 'ueben')
   const id = `${art}:${e.id}:${i}`
-  const nurSchritt = [s.titel, s.text, ...(s.sagen ?? []), ...(s.punkte ?? [])].join(' ')
+  const nurSchritt = [s.titel, s.text, ...(s.sagen ?? []), ...(s.punkte ?? []), ...(s.tabelle?.zeilen.flat() ?? [])].join(' ')
   const m: SchrittMeta = {
     id,
     h: hash8(JSON.stringify(s) + (fr ? JSON.stringify(fr) : '')),
@@ -923,6 +924,7 @@ for (const e of q.foerderfach) {
 }
 
 // Spielschule: Aktivitäten und Reime der Themenwochen
+const DRUCK_ARTEN = new Set(['karten', 'memory', 'suchbild', 'schneiden_kleben', 'bastelbogen', 'minibuch', 'faedelkarte', 'klappbild', 'anziehpuppe', 'laufweg'])
 const SP_ROLLE: Record<string, Rolle[]> = {
   kreis: ['einstieg'], bewegung: ['bewegung', 'spiel'], draussen: ['bewegung', 'spiel'], spiel: ['spiel', 'kern'], gestalten: ['kern', 'spiel'],
   ruhe: ['regulation'], sinne: ['regulation', 'kern'], musik: ['spiel', 'bewegung'], sprache: ['kern', 'einstieg'], zaehlen: ['kern'],
@@ -978,6 +980,14 @@ for (const blatt of q.blaetter) {
       m.tagesform = tagesformAus(formate, energie)
     }
     if (kartenDerWoche.length && /(bildkarte|karten|kärtchen|memory|suchbild|wimmelbild)/i.test(text)) m.blatt = kartenDerWoche
+    else if (/(seite \d|ausschneid|ausdruck)/i.test(text)) {
+      // „Seite 2 ausschneiden“: die Pakete dieser Seite des Wochenblatts (Druckmaterial, T-M12)
+      const seite = Number(/seite (\d)/i.exec(text)?.[1] ?? 0)
+      const umbrueche = blatt.de.bausteine.flatMap((b, i) => (b.art === 'seitenumbruch' ? [i] : []))
+      const seiteVon = (i: number) => 1 + umbrueche.filter((u) => u < i).length
+      const pakete = (blattEinheiten.get(blatt.id) ?? []).filter((x) => (seite ? seiteVon(x.e.pfad[0]) === seite : x.e.arts.some((a) => DRUCK_ARTEN.has(a))))
+      if (pakete.length) m.blatt = pakete.map((x) => x.id)
+    }
     zusatzSchritt(m, text)
     spListe.push({ m, text: `${a.titel} ${a.text}`, i })
   })
@@ -1136,8 +1146,16 @@ const PT_MM = 25.4 / 72
 const OBEN = 20
 const SEITE_UNTEN = 841.89 - (SEITE.unten + 6)
 
-type Cache = { v: 1; hoehen: Record<string, number>; seite?: BausteineDatei['seite'] }
-const cache: Cache = existsSync(CACHE) ? (JSON.parse(readFileSync(CACHE, 'utf8')) as Cache) : { v: 1, hoehen: {} }
+type Cache = { v: 1; hoehen: Record<string, number>; seite?: BausteineDatei['seite']; stilHash?: string }
+const STIL = stilHash()
+const cache: Cache = existsSync(CACHE) ? (JSON.parse(readFileSync(CACHE, 'utf8')) as Cache) : { v: 1, hoehen: {}, stilHash: STIL }
+// Gestaltung geändert (S13): alte Höhen gelten nicht mehr
+if (cache.stilHash && cache.stilHash !== STIL) {
+  console.log('Gestaltung geändert (stil.ts/BLATT-STIL.md) – Höhen werden neu gemessen.')
+  cache.hoehen = {}
+  delete cache.seite
+}
+cache.stilHash ??= STIL
 const speichereCache = () => {
   mkdirSync(join(ROOT, 'tmp'), { recursive: true })
   writeFileSync(CACHE, JSON.stringify(cache))
@@ -1301,11 +1319,12 @@ const sicherB = new SicherTabelle()
 const sicherS = new SicherTabelle()
 const bRoh = bausteine.map((b) => packeBaustein(b, sicherB))
 const sRoh = schritte.map((s) => packeSchritt(s, sicherS))
-const bDatei: BausteineDatei = { v: 1, stand: STAND, seite: cache.seite ?? {}, sicher: sicherB.muster, bausteine: bRoh }
+const bDatei: BausteineDatei = { v: 1, stand: STAND, stilHash: cache.stilHash, seite: cache.seite ?? {}, sicher: sicherB.muster, bausteine: bRoh }
 const sDatei: SchritteDatei = { v: 1, stand: STAND, sicher: sicherS.muster, schritte: sRoh }
 writeFileSync(join(AUS, 'bausteine.json'), JSON.stringify(bDatei))
 writeFileSync(REGISTER, JSON.stringify(register))
 writeFileSync(join(AUS, 'schritte.json'), JSON.stringify(sDatei))
+speichereCache()
 
 // Felder: automatisch sicher (1) / vorbefüllt (< 1) – je Einheit 24 Felder wie im Konzept
 const FELDER_B = 24
