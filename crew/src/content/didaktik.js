@@ -1,0 +1,573 @@
+/* Didaktik je Spiel – damit die Jugendlichen verstehen, was läuft, und die Lehrkraft weiß, worauf sie achtet.
+   CREW.didaktik.games[id] · CREW.didaktik.missions[id] · CREW.didaktik.solo[id]
+   Felder:
+     warum   – „Darum geht's“ für die Jugendlichen: 1–2 kurze Sätze, worum es geht und wozu es im echten Leben hilft.
+               Jugendsprache, keine Fachwörter, höchstens ~25 Wörter (tests/didaktik.mjs prüft das).
+     skill   – der Skill in Jugendsprache · karte – passende Skill-Karte aus dem Skills-Kurs Jahr 1 (optional)
+     geuebt  – „Das habt ihr heute geübt: …“ (ein Satz)
+     fragen  – Nachbesprechung: gemerkt · schwer · diese Woche (Solo: zwei Fragen nur für den Kopf)
+     lehrer  – nur im Lehrermodus: ziel, stufen (Aufbau), achten, impulse [..], kippt (wenn es kippt)
+     einheit – Bezug zum Skills-Kurs (für Missionen und Solo; Spiele holen ihre Einheiten aus dem Katalog)
+   Alle Texte reden über Figuren, nie über die Jugendlichen selbst. Teilen ist freiwillig, Passen ist okay. */
+(function () {
+  'use strict';
+  const CREW = (window.CREW = window.CREW || {});
+
+  const games = {
+    /* ---------------- Ankommen & Crew ---------------- */
+    probelauf: {
+      warum: 'Ihr testet Pass, X und Stopp – und es passiert nichts. So wisst ihr: Hier darf jede:r Nein sagen. Auch draußen hilft ein klares Stopp.',
+      skill: 'Stopp sagen ohne Angst',
+      geuebt: 'Pass, X und Stopp benutzen – ohne Grund und ohne Ärger.',
+      fragen: ['Was ist passiert, als jemand Stopp gesagt hat?', 'Was war schwerer: Pass, X oder Stopp?', 'Wo wäre ein Stopp diese Woche nützlich?'],
+      lehrer: {
+        ziel: 'Die Crew erlebt, dass Pass, X und Stopp wirklich folgenlos sind – Grundlage für alle Spiele. Dazu: Wann ist ein Stopp im Alltag dran, und welches Stopp-Zeichen gilt bei uns?',
+        stufen: 'Level 1 Ausprobieren (harmlose Fragen, jede:r passt einmal), Level 2 Stopp oder okay? (zwei Figuren-Szenen, die Crew begründet), Level 3 Unser Zeichen (die Crew wählt ein gemeinsames Stopp-Zeichen).',
+        achten: 'Pass und Stopp nie kommentieren, auch nicht loben. Niemand muss etwas ausprobieren. Wer viel passt, wird nicht angesprochen.',
+        impulse: ['„Wie fühlt es sich an, wenn nach einem Stopp wirklich nichts passiert?“', '„Woran merkt man, dass jemand Stopp meint, es aber nicht sagt?“', '„Wo im Alltag ist Stopp sagen schwer?“'],
+        kippt: 'Wird Stopp als Witz ständig gedrückt: ruhig sagen „Stopp gilt auch, wenn es oft kommt“, kurz Pause, dann weiter. Nicht sanktionieren – das Ausprobieren ist das Ziel.',
+      },
+    },
+    'regel-radar': {
+      warum: 'Regeln stehen nicht nur auf dem Plakat. Ihr prüft echte Szenen aus Chat, Bus und Pause: Welche Regel schützt hier – und wo fehlt eine?',
+      skill: 'Regeln im Alltag anwenden',
+      geuebt: 'Regeln auf echte Situationen übertragen und eine Lücke in eine neue Regel verwandeln.',
+      fragen: ['Welche Szene hat euch überrascht?', 'Wo war es schwer, die passende Regel zu finden?', 'Welche Regel braucht ihr diese Woche am meisten?'],
+      lehrer: {
+        ziel: 'Die Regeln des Crew-Vertrags auf Alltagsszenen (Chat, Bus, Pause, online) übertragen und Lücken als Chance sehen, den Vertrag gemeinsam zu ergänzen.',
+        stufen: 'Level 1 Erkennen: allein 1–2 Regeln je Szene tippen (leichte Szene zuerst, knifflige zuletzt). Level 2 Begründen: Vergleichskarte zu zweit („Warum diese Regel?“). Level 3 Anwenden: Eine Lücke wird am Beamer als neuer Regel-Satz gebaut und kommt aufs Plakat.',
+        achten: 'Szenen sind über Figuren erzählt. Bezieht jemand eine Szene auf die Gruppe, zurück zur Figur lenken. Lücken loben, nicht „richtige“ Antworten.',
+        impulse: ['„Gilt der Vertrag auch abends im Chat?“', '„Wo endet „Was hier gesagt wird, bleibt hier“?“', '„Woran merkt man, dass ein Spaß kein Spaß mehr ist?“'],
+        kippt: 'Wird über eine echte Situation aus der Gruppe gestritten: Szene mit X weg, „Das klären wir nicht im Spiel“, später unter vier Augen. Die Regel-Lücke trotzdem notieren.',
+      },
+    },
+    'frag-weiter': {
+      warum: 'Eine Figur antwortet knapp. Ihr findet Fragen, bei denen sie mehr erzählt. Gute Nachfragen machen aus „Ja.“ ein echtes Gespräch – beim Kennenlernen und unter Freunden.',
+      skill: 'Nachfragen statt Ja/Nein',
+      geuebt: 'Offene Fragen stellen, beim Gefühl dranbleiben und Grenzen beim Fragen respektieren.',
+      fragen: ['Welche Frage hat die Tür am weitesten geöffnet?', 'Was war schwer: offen fragen oder beim Gefühl bleiben?', 'Wen könntest du diese Woche mal genauer fragen?'],
+      lehrer: {
+        ziel: 'Offene Fragen von Ja/Nein-Fragen unterscheiden, beim Gefühl einer Antwort dranbleiben (statt Thema klauen oder Ratschläge) und Grenzen beim Nachfragen respektieren.',
+        stufen: 'Level 1 Tür öffnen: drei Nachfragen wählen (offen vs. Ja/Nein). Level 2 Dranbleiben: Die Figur sagt etwas Persönliches – das Paar wählt die Antwort, die beim Gefühl bleibt. Level 3 Live: harmlose echte Antworten, Tausch, Grenzen-Frage zum Schluss.',
+        achten: 'In der Live-Runde nur harmlose Themen (Essen, Spiel, Musik). Wer nicht antworten will, nennt ein Lieblingsessen – oder passt.',
+        impulse: ['„Woran merkt man, dass jemand mehr erzählen will?“', '„Welche Frage nervt, auch wenn sie offen ist?“', '„Was ist der Unterschied zwischen Interesse und Ausfragen?“'],
+        kippt: 'Werden Fragen in der Live-Runde zu privat: „Stopp, das ist eine Grenze“ vormachen und auf die Grenzen-Frage hinweisen. Paare tauschen, wenn es knirscht.',
+      },
+    },
+    'pilot-navigator': {
+      warum: 'Einer sieht den Weg, der andere steuert blind. Ihr merkt, wie wichtig klare Ansagen und Nachfragen sind – im Sport, in der Gruppenarbeit, beim Weg erklären.',
+      skill: 'Klar ansagen, genau nachfragen',
+      geuebt: 'Klar ansagen, nachfragen und Stopp sagen, wenn es zu schnell geht.',
+      fragen: ['Was war anders, als ihr nachfragen durftet?', 'Was war schwerer: führen oder sich führen lassen?', 'Wo braucht ihr diese Woche eine klare Ansage?'],
+      lehrer: {
+        ziel: 'Kooperation zu zweit: präzise Sprache, Rückfragen als Stärke, Stopp-Recht. Erleben, dass Missverständnisse zwei Bilder im Kopf sind – ohne Schuld.',
+        stufen: 'Level 1 Ansagen (ohne Rückfragen), Level 2 Nachfragen (mit Rückfragen, Rollen getauscht), Level 3 Übertragen (Was hat geholfen – und wo im Alltag braucht ihr das?).',
+        achten: 'Paare so bilden, dass niemand dauernd dominiert. Auf Schuld-Sätze („Du bist zu blöd“) achten und auf das Bild „zwei Köpfe, zwei Bilder“ umlenken.',
+        impulse: ['„Ab welchem Zug gingen die Bilder auseinander?“', '„Was hat „deine linke“ verändert?“', '„Wie fühlt sich Stopp drücken an, wenn man selbst führt?“'],
+        kippt: 'Bei Frust nach dem Crash: Stopp-Knopf, zwei Atemzüge, Rollen tauschen. Streitet ein Paar: neues Paar oder Beobachter-Rolle anbieten.',
+      },
+    },
+    'stummer-aufbau': {
+      warum: 'Jedes iPad hat ein Stück vom Bild. Erst ohne Worte, dann mit. Ihr merkt: Teams verstehen sich auch über Blicke und Zeichen.',
+      skill: 'Ohne Worte zusammenarbeiten',
+      geuebt: 'Ohne Worte zusammenarbeiten und gemeinsame Crew-Zeichen finden.',
+      fragen: ['Woran hast du gemerkt, wo dein Teil hingehört?', 'Was war ohne Worte am schwersten?', 'Wo könnt ihr eure Crew-Zeichen diese Woche nutzen?'],
+      lehrer: {
+        ziel: 'Kooperation ohne Absprache, nonverbale Abstimmung (warten, zeigen, nicken) und gemeinsame Zeichen für die Gruppe vereinbaren.',
+        stufen: 'Level 1 Ohne Worte (Bild legen), Level 2 Mit Worten (neues Bild, Vergleich schneller/entspannter), Level 3 Unsere Zeichen (die Crew wählt zwei Zeichen, die ab jetzt gelten).',
+        achten: 'Kein Körperkontakt beim Legen. Wer drängelt, wird nicht vorgeführt – die Beobachter:in berichtet nur Verhalten, keine Namen.',
+        impulse: ['„Wer hat gewartet – und wie hat das geholfen?“', '„Welche Runde war entspannter? Warum?“', '„Welches Zeichen versteht jede:r sofort?“'],
+        kippt: 'Wird es in Runde 1 laut oder ruppig: Stoppuhr laufen lassen, „Hände auf den Tisch“, 10 Sekunden still, dann weiter. Notfalls direkt zu Runde 2 mit Worten.',
+      },
+    },
+    'staerken-spion': {
+      warum: 'Spione achten heimlich darauf, was jemand gut macht. Danach wird daraus ein echtes Kompliment. So lernt ihr, Stärken zu sehen – und ein Lob anzunehmen.',
+      skill: 'Stärken sehen, Lob annehmen',
+      karte: 'Komplimente',
+      geuebt: 'Gutes Verhalten bemerken, eine Stärke benennen und ein Kompliment annehmen.',
+      fragen: ['Welche Beobachtung hat euch gefreut?', 'Was ist schwerer: ein Kompliment geben oder annehmen?', 'Wem kannst du diese Woche sagen, was er oder sie gut gemacht hat?'],
+      lehrer: {
+        ziel: 'Fremdwahrnehmung schärfen: Stärken am konkreten Verhalten erkennen, als Kompliment formulieren (Verhalten statt Aussehen) und Rückmeldung annehmen („Danke“).',
+        stufen: 'Level 1 Beobachten (der Spion sagt nur, WAS er gesehen hat), Level 2 Benennen (die Crew rät die Stärke), Level 3 Kompliment (Satz „Du hast … – das war …“, die Person sagt nur „Danke“).',
+        achten: 'Komplimente nur über Verhalten, nie über Aussehen. Wer nicht genannt werden will, bleibt anonym. Achten, dass nicht immer dieselben gelobt werden – der Schutzengel-Auftrag hilft.',
+        impulse: ['„Woran genau hast du die Stärke erkannt?“', '„Wie fühlt sich ein Lob an, das konkret ist?“', '„Warum ist „Danke“ so schwer?“'],
+        kippt: 'Werden Beobachtungen zu Spott: ruhig umlenken „Was hat sie GUT gemacht?“ oder X. Will niemand Spion sein: Die Lehrkraft übernimmt.',
+      },
+    },
+    'crew-rat': {
+      warum: 'Ihr entscheidet etwas Echtes – nicht per Mehrheit, sondern so, dass alle damit leben können. Das hilft überall, wo Gruppen etwas planen.',
+      skill: 'Gemeinsam entscheiden',
+      geuebt: 'Vorschläge abwägen, Einwände mit Grund sagen und eine Lösung finden, mit der alle leben können.',
+      fragen: ['Was hat euch zum Beschluss gebracht?', 'Wie war es, wenn der eigene Vorschlag nicht gewonnen hat?', 'Wo könnt ihr diese Woche fragen: „Wer kann damit leben?“'],
+      lehrer: {
+        ziel: 'Mitbestimmung erleben: Vorschläge sammeln, Einwände formulieren, Konsent statt Mehrheit, Veto nur mit Grund, verlieren können.',
+        stufen: 'Level 1 Sammeln (2–4 Vorschläge), Level 2 Abwägen (Was spricht dagegen? Für wen wäre es schwer?), Level 3 Entscheiden (Konsent, Veto mit Grund, Vorschlag anpassen).',
+        achten: 'Nur tippen, was die Crew sagt. Stille Stimmen ermöglichen (Zettel, Einwand-Chip per QR). Dominante Jugendliche nicht abwürgen, aber fragen: „Was sagen die anderen?“',
+        impulse: ['„Kann jemand damit NICHT leben?“', '„Für wen wäre das schwer?“', '„Was müsste sich ändern, damit dein Veto wegfällt?“'],
+        kippt: 'Bilden sich Lager: Pause, Vorschläge neu vorlesen, nur noch Einwände sammeln. Kein Beschluss ist auch ein Ergebnis – das ausdrücklich sagen.',
+      },
+    },
+    'erster-eindruck': {
+      warum: 'Ihr seht nur eine Silhouette und denkt sofort etwas. Dann kommen Fakten. Ihr merkt, wie schnell man falsch liegt – und was eine Frage ändert.',
+      skill: 'Zweiter Blick statt schnelles Urteil',
+      geuebt: 'Den ersten Gedanken bemerken, Fakten sammeln und nachfragen statt urteilen.',
+      fragen: ['Welcher Fakt hat euren Blick am meisten verändert?', 'Warum ist der erste Gedanke so schnell da?', 'Bei wem lohnt sich diese Woche ein zweiter Blick?'],
+      lehrer: {
+        ziel: 'Vorurteile ohne Scham bemerken, Perspektiven zusammentragen und vom Urteil zur Nachfrage kommen.',
+        stufen: 'Level 1 Erster Blick (heimlich zwei Chips), Level 2 Zweiter Blick (jede Rolle kennt einen Fakt, die Crew tippt neu), Level 3 Nachfragen (welche Frage hilft der Figur – sie antwortet).',
+        achten: 'Erste Gedanken bleiben anonym (Wolke) – niemand muss sagen, was er dachte. Fiese Chips sind absichtlich dabei; nicht moralisieren.',
+        impulse: ['„Welchen Fakt hätte man von außen sehen können?“', '„Was passiert, wenn man nach dem ersten Gedanken handelt?“', '„Welche Frage hätte geholfen?“'],
+        kippt: 'Erkennt sich jemand in einer Figur (Umzug, Trauer): kurz anhalten, Hilfe-Knopf zeigen, später Einzelgespräch. Fall mit X überspringen.',
+      },
+    },
+    'echter-freund': {
+      warum: 'Was macht einen echten Freund aus? Ihr sortiert, was Freund-Figuren tun, und übt, was man sagt, wenn eine Grenze überschritten wird.',
+      skill: 'Vertrauen an Taten erkennen',
+      geuebt: 'Freundschaft am Verhalten erkennen und bei einer roten Flagge klar reagieren.',
+      fragen: ['Welche Szene war eindeutig – welche nicht?', 'Worauf kommt es bei „kommt drauf an“ an?', 'Woran merkst du diese Woche, wem du etwas Großes erzählen kannst?'],
+      lehrer: {
+        ziel: 'Vertrauen einschätzen (grüne/rote Flaggen), Freundschaft an Verhalten statt Worten erkennen, eigene Grenzen beim Erzählen, klare Reaktion auf Grenzverletzungen.',
+        stufen: 'Level 1 Erkennen (Flaggen sortieren), Level 2 Begründen (bei „kommt drauf an“: worauf?), Level 3 Reagieren (Was sagt Mika bei einer roten Flagge?). Danach Vertrauensfragen über Mika.',
+        achten: 'Die Familien-Szene (Trennung) steht am Ende und ist markiert. Nur über Figuren reden. Hilfenummern stehen am Schluss.',
+        impulse: ['„Ist ein Fehler eine rote Flagge – oder erst ein Muster?“', '„Was ist der Unterschied zwischen ehrlich und gemein?“', '„Wem würde Mika was erzählen – warum?“'],
+        kippt: 'Werden echte Freundschaften aus der Klasse bewertet: stoppen („Wir bleiben bei Mika“). Bei Betroffenheit (Geheimnis verraten, Trennung): Einzelgespräch anbieten, 116 111 zeigen.',
+      },
+    },
+
+    /* ---------------- Ich: Bedürfnisse & Stärken ---------------- */
+    'tank-detektiv': {
+      warum: 'Hinter blödem Verhalten steckt oft ein leerer Tank: Schlaf, Freunde, Ruhe. Ihr ermittelt, was fehlt – und welcher kleine Schritt hilft.',
+      skill: 'Bedürfnisse hinter Verhalten erkennen',
+      karte: 'Energie-Check',
+      geuebt: 'Verhalten als Signal lesen, Wunsch und Bedürfnis trennen und einen kleinen Schritt planen.',
+      fragen: ['Welches Signal hat euch auf die Spur gebracht?', 'Was war schwer: Wunsch oder Bedürfnis zu unterscheiden?', 'Welcher Tank braucht bei dir diese Woche einen kleinen Schritt?'],
+      lehrer: {
+        ziel: 'Verhalten als Signal für ein Bedürfnis lesen (sechs Tanks), Wunsch vs. Bedürfnis unterscheiden (Rückfrage) und kleine, machbare Schritte planen.',
+        stufen: 'Je Fall drei Schritte: Signal lesen (welcher Tank?), Nachfragen (bei Wünschen: Rückfrage an die Figur), kleinster Schritt (zu groß / anderer Tank / passt). Fall 3 ist immer ein Wunsch – die schwerste Stufe.',
+        achten: '„Detektiv, nicht Patient“: Es geht nur um Figuren. Bei Schlaf- und Essensthemen keine Bewertung echter Gewohnheiten.',
+        impulse: ['„Kann ein Verhalten zu zwei Tanks passen?“', '„Warum ist der kleinste Schritt oft der beste?“', '„Was wäre anders, wenn die Figur den Wunsch bekommt?“'],
+        kippt: 'Sagt jemand „Das bin ja ich“: ernst nehmen, kurz bestätigen, ins Einzelgespräch verlagern. Bei Albernheit: Fall laut vorlesen lassen und die Rückfrage stellen.',
+      },
+    },
+    dahinter: {
+      warum: 'Figuren sagen, was sie wollen. Ihr findet raus, was sie wirklich brauchen. Wer das Bedürfnis kennt, findet bessere Lösungen – auch für sich.',
+      skill: 'Wunsch und Bedürfnis trennen',
+      geuebt: 'Hinter einem Wunsch das Bedürfnis finden – und einen anderen Weg, es zu füllen.',
+      fragen: ['Welcher Wunsch hatte das überraschendste Bedürfnis?', 'Wo wart ihr euch uneinig – und warum?', 'Welcher Wunsch kommt diese Woche bei dir – und was steckt dahinter?'],
+      lehrer: {
+        ziel: 'Wunsch und Bedürfnis unterscheiden, Meinung in der Gruppe begründen, Bedürfnisse auf andere Wege erfüllen.',
+        stufen: 'Level 1 Erkennen (Wunsch oder Bedürfnis? – gehen), Level 2 Begründen (welcher Tank – woran erkennt ihr das?), Level 3 Anwenden (ein kleiner Schritt, der den Tank ohne den Wunsch füllt).',
+        achten: 'Gruppen antworten, nie Einzelne. Wer allein steht, darf schweigen. Wünsche sind nicht „falsch“ – nur oft nicht der ganze Grund.',
+        impulse: ['„Was wäre anders, wenn die Figur es bekommt?“', '„Gibt es einen Wunsch ohne Bedürfnis dahinter?“', '„Wie kann man den Tank füllen, ohne Geld?“'],
+        kippt: 'Wird gerannt oder geschubst: Gehzeit verlängern, „Gehen, nicht rennen“, notfalls im Sitzen mit Handzeichen weiterspielen.',
+      },
+    },
+    'kleiner-schritt': {
+      solo: true,
+      warum: 'Zu große Ziele bleiben liegen. Du machst ein Riesen-Ziel so klein, dass man heute anfangen kann – mit einem Wenn-dann-Plan.',
+      skill: 'Große Ziele klein machen',
+      geuebt: 'Ein großes Ziel in einen winzigen Schritt mit Wann, Wo und Wie verwandeln.',
+      fragen: ['Welcher Teil war am schwersten klein zu machen?', 'Woran merkst du, dass ein Schritt klein genug ist?', 'Welcher winzige Schritt passt diese Woche zu dir?'],
+      lehrer: {
+        ziel: 'Ziele zerlegen, Wenn-dann-Pläne formulieren, kleine Erfolge planen (Selbstwirksamkeit).',
+        stufen: 'Level 1 Mit Meter (der Machbar-Meter zeigt nach jedem Tipp, wie groß das Ziel noch ist), Level 2 Selbst prüfen (der Meter kommt erst am Ende), Level 3 Für dich (freiwillig, nichts wird gespeichert).',
+        achten: 'Solo-Spiel: gut als Station oder Hausaufgabe. Eigene Ziele werden nicht gespeichert; X löscht.',
+        impulse: ['„Was ist an „irgendwann“ so gefährlich?“', '„Wann ist ein Schritt zu klein?“', '„Was machst du, wenn der Wenn-dann-Plan nicht klappt?“'],
+        kippt: 'Blockiert jemand beim eigenen Ziel: „Lieber nicht“ ist okay. Ein Figuren-Ziel reicht für heute.',
+      },
+    },
+    'je-nach-ort': {
+      warum: 'Niemand ist überall gleich. Ihr stellt ein, wie eine Figur an verschiedenen Orten ist. So versteht ihr, warum Leute mal laut, mal leise sind.',
+      skill: 'Je nach Ort anders – und das ist okay',
+      geuebt: 'Verstehen, dass Menschen je nach Ort anders sind – und nicht vorschnell urteilen.',
+      fragen: ['Wo war die Figur am meisten anders?', 'Was war schwer: einschätzen oder vergleichen?', 'Wo bist du diese Woche anders als sonst – und warum?'],
+      lehrer: {
+        ziel: 'Selbstbild je nach Situation (laut/leise, schnell/langsam, nah/Abstand), Vielfalt ohne Bewertung, Missverständnisse über Verhalten erklären.',
+        stufen: 'Level 1 Einschätzen (drei Regler pro Ort, für eine Figur), Level 2 Vergleichen (der Partner rät, wo ihr am weitesten auseinander lagt), Level 3 Perspektive (andere urteilen über die Figur – was wisst ihr, was die nicht wissen?).',
+        achten: '„Anders, nie richtiger.“ Über sich erzählen ist ausdrücklich freiwillig. Der Ort „Zuhause“ ist ein Familien-Thema.',
+        impulse: ['„Warum ist man in einer neuen Klasse oft leiser?“', '„Ist laut am Fußballplatz und leise beim Arzt „falsch“?“', '„Was denken andere, wenn sie nur einen Ort kennen?“'],
+        kippt: 'Wird über echte Mitschüler:innen geurteilt („Der ist arrogant“): zurück zur Figur, die Level-3-Frage als Brücke nutzen.',
+      },
+    },
+    'zwei-brillen': {
+      warum: 'Eine Szene, vier Blicke: die Figur selbst, Freundin, Lehrkraft, Tatsachen. Ihr merkt: Die eigene Brille ist oft die strengste – und findet einen faireren Satz.',
+      skill: 'Mich fair sehen',
+      karte: 'Die freundliche Stimme',
+      geuebt: 'Selbstbild mit Fremdbild und Tatsachen vergleichen und einen faireren Satz finden.',
+      fragen: ['Was wusste die eigene Brille nicht?', 'Warum ist man zu sich selbst oft so streng?', 'Welcher faire Satz könnte dir diese Woche helfen?'],
+      lehrer: {
+        ziel: 'Selbst- und Fremdbild vergleichen, Tatsache vs. Urteil anbahnen, zuhören, eine realistische freundliche innere Stimme bilden.',
+        stufen: 'Level 1 Hören (jede Rolle liest ihre Brille vor), Level 2 Abgleichen (zwei Sätze finden, die zu allen vier Brillen passen), Level 3 Fairer Satz (welcher Satz wäre für die Figur fair und wahr – nicht schöngeredet?).',
+        achten: 'Rolle A liest den strengen Satz so, wie er dasteht – nicht verstärken. Niemand muss über sich reden.',
+        impulse: ['„Welche Brille war am gnädigsten – war sie falsch?“', '„Was ist der Unterschied zwischen fair und schönreden?“', '„Was würde eine Freundin dir jetzt sagen?“'],
+        kippt: 'Rutscht Rolle A in die Ich-Form und wirkt betroffen: Rolle tauschen, Beobachter-Rolle anbieten, später nachfragen.',
+      },
+    },
+    'staerke-einsatz': {
+      warum: 'Stärken sind Werkzeuge, keine Etiketten. Ihr findet für eine schwierige Lage die passende Stärke – und verbindet zwei zu einem Plan.',
+      skill: 'Stärken gezielt einsetzen',
+      geuebt: 'Stärken als Werkzeug einsetzen, Ideen anderer aufgreifen und zu einem Plan verbinden.',
+      fragen: ['Welche Stärke hätte keiner erwartet?', 'Was war schwer: eine andere Stärke finden als die anderen?', 'Welche Stärke von dir brauchst du diese Woche?'],
+      lehrer: {
+        ziel: 'Stärken als Werkzeug statt Etikett, konkrete Anwendung in einem Satz, Ideen anderer aufgreifen (Turm), Stärken kombinieren.',
+        stufen: 'Level 1 Wählen (eine Stärke + ein Satz „wie genau“), Level 2 Andere Stärke (die nächste Person muss neu denken), Level 3 Kombi-Plan (zwei Stärken aus dem Turm: „Erst …, dann …“).',
+        achten: 'Die Nacht-Nachricht („Alles scheiße“) löst den Hilfe-Hinweis aus – dort klar sagen: Eine erwachsene Person holen ist die stärkste Stärke.',
+        impulse: ['„Wie genau sieht Mut in dieser Lage aus?“', '„Welche Stärke wirkt zusammen mit einer anderen besser?“', '„Wann ist Hilfe holen eine Stärke?“'],
+        kippt: 'Findet jemand nichts: Pass ist okay, Satzanfänge zeigen. Wird über eine Wahl gelacht: „Jede Stärke kommt in den Turm.“',
+      },
+    },
+    'vergleichs-falle': {
+      warum: 'Feeds zeigen eine Bühne, nicht das echte Leben. Ihr dreht Posts um und findet, was eine Figur wertvoll macht – ohne Likes.',
+      skill: 'Mich nicht mit Feeds vergleichen',
+      karte: 'Drei Atemzüge vorm Handy',
+      geuebt: 'Vergleiche mit Feeds erkennen, Tricks durchschauen und Wert ohne Likes sehen.',
+      fragen: ['Welche Rückseite hat euch überrascht?', 'Warum vergleicht man sich trotzdem?', 'Was machst du diese Woche, wenn ein Feed dich runterzieht?'],
+      lehrer: {
+        ziel: 'Selbstwert ohne Vergleich, Social Media als Bühne (gestellt, gefiltert, Streit danach) und eine eigene Strategie beim Scrollen.',
+        stufen: 'Level 1 Erkennen (womit vergleicht sich die Figur?), Level 2 Durchschauen (Posts umdrehen), Level 3 Anwenden (Wert ohne Feed + was die Figur beim nächsten Scrollen tut).',
+        achten: 'Körper- und Aussehens-Themen nicht vertiefen. Die Profile sind erfunden. Hilfenummern am Ende.',
+        impulse: ['„Was sieht man auf keinem Profil?“', '„Wer verdient daran, dass wir uns vergleichen?“', '„Was hilft dir nach 20 Minuten Scrollen?“'],
+        kippt: 'Nennt jemand echte Accounts aus der Klasse: stoppen, zurück zur Figur. Bei Abwertung von Aussehen: klar begrenzen.',
+      },
+    },
+
+    /* ---------------- Gefühle verstehen ---------------- */
+    'gefuehls-funk': {
+      warum: 'Jede:r hat ein Puzzle-Teil: Szene, Wörter, Körper oder Botschaft. Nur zusammen findet ihr das Gefühl. Wer Gefühle genau benennt, versteht sich und andere besser.',
+      skill: 'Gefühle genau benennen',
+      geuebt: 'Ein Gefühl erkennen, genau benennen, seine Botschaft verstehen und passend handeln.',
+      fragen: ['Welches Puzzle-Teil hat am meisten geholfen?', 'Was war schwer: das genaue Wort oder die Handlung?', 'Welches Gefühl willst du diese Woche genauer benennen?'],
+      lehrer: {
+        ziel: 'Gefühlswörter zuordnen (Familien, Feinabstufung), Körper-Signale und Botschaft eines Gefühls verstehen, nachfragen statt raten.',
+        stufen: 'Fall 1 klares Gefühl, Fall 2 verstecktes Gefühl (außen Wut oder Witze, innen Scham, Trauer oder Angst). Je Fall drei Schritte: Erkennen (Familie), Genau benennen (Wort), Handeln (Botschaft und passende Handlung).',
+        achten: 'Rolle A nennt das Gefühl nicht. Die Beobachter:in achtet aufs Nachfragen. „Noch nicht“ statt falsch.',
+        impulse: ['„Woran hast du gemerkt, dass es Scham ist und nicht Angst?“', '„Was will dieses Gefühl der Figur sagen?“', '„Welche Handlung hört auf das Gefühl, ohne ihm blind zu folgen?“'],
+        kippt: 'Wird geraten statt gefragt: Beobachter:in ruft „Stopp – fragt B, C, D“. Bei Streit über die Lösung: alle Rollen nochmal vorlesen.',
+      },
+    },
+    'pult-tausch': {
+      warum: 'Wer sitzt bei der Figur am Steuer: Wut, Angst, Freude? Ihr tauscht das Gefühl und seht, wie sich alles ändert. Und merkt: Ihr entscheidet trotzdem selbst.',
+      skill: 'Merken, wer am Pult sitzt',
+      karte: 'Wer steht am Pult?',
+      geuebt: 'Merken, welches Gefühl gerade steuert – und trotzdem selbst entscheiden, was man tut.',
+      fragen: ['Welcher Tausch hat am meisten verändert?', 'Welches Gefühl war am schwersten zu steuern?', 'Wer sitzt bei dir diese Woche oft am Pult – und was hilft?'],
+      lehrer: {
+        ziel: 'Gefühl steuert Handeln (j1-e08 „Alles steht Kopf“), Folgen abschätzen, Perspektivenwechsel, Selbststeuerung.',
+        stufen: 'Level 1 Wer sitzt am Pult? (Gefühl wählen, Handlung, Folge), Level 2 Tausch (anderes Gefühl, neu entscheiden), Level 3 Vergleich (besser oder schlechter – warum?) und Brücke in die Woche.',
+        achten: 'Alle Gefühle sind okay – nur Handlungen haben Folgen. Die Brücke „Wer saß bei dir am Pult?“ ist freiwillig.',
+        impulse: ['„Kann Wut auch etwas Gutes tun?“', '„Was passiert, wenn Angst allein steuert?“', '„Was hilft, bevor ein Gefühl das Steuer übernimmt?“'],
+        kippt: 'Kommt eine Szene (Foto ohne Erlaubnis) nah an echte Erfahrungen: X anbieten, Hilfe-Knopf zeigen.',
+      },
+    },
+
+    /* ---------------- Anspannung & Skills ---------------- */
+    'pegel-reihe': {
+      warum: 'Jede Figur hat eine geheime Anspannungs-Zahl. Ohne Worte legt ihr eine Reihe. Ihr übt, Anspannung zu lesen – bei anderen und bei euch.',
+      skill: 'Anspannung von 0 bis 100 einschätzen',
+      karte: 'Spaziergang ohne Worte',
+      geuebt: 'Anspannung einschätzen, Signale lesen und wissen, was bei welcher Zahl hilft.',
+      fragen: ['Welche Figur war schwer einzuordnen?', 'Woran sieht man Anspannung – und woran nicht?', 'Wann warst du diese Woche über 70 – und was hätte geholfen?'],
+      lehrer: {
+        ziel: 'Anspannungsskala 0–100 auf den Alltag anwenden, nonverbale Signale lesen, innen/außen unterscheiden, passende Skills nach Zahl wählen.',
+        stufen: 'Level 1 Lesen (Reihe ohne Worte legen), Level 2 Begründen (falsch sortiert: Was hat getäuscht?), Level 3 Anwenden (Was hilft der eigenen Figur bei ihrer Zahl zuerst?).',
+        achten: 'Die Zahlen gehören den Figuren. „Falsch sortiert“ ist kein Fehler, sondern ein Gesprächsanlass. Die Familien-Karte (Trennung) kann nah gehen.',
+        impulse: ['„Außen ruhig, innen 85 – woran merkt man das?“', '„Ab welcher Zahl hilft Reden nicht mehr?“', '„Was hilft bei Gelb, was bei Rot?“'],
+        kippt: 'Wird beim Legen geredet oder gedrängelt: „Zeigen ist erlaubt, Reden nicht“, Reihe neu starten. Bei Unruhe: 30 Sekunden gemeinsam atmen.',
+      },
+    },
+    'skill-sprechstunde': {
+      warum: 'Figuren kommen mit ihrer Anspannungs-Zahl in die Sprechstunde. Ihr wählt den passenden Skill und sagt, warum. So wisst ihr: Bei 80 hilft anderes als bei 30.',
+      skill: 'Den Skill zur Zahl wählen',
+      karte: 'Runter unter 70',
+      geuebt: 'Den passenden Skill zur Anspannungs-Zahl und zum Ort wählen und begründen.',
+      fragen: ['Welcher Fall war am kniffligsten?', 'Warum hilft der Kopf bei 80 oft nicht?', 'Welcher Skill passt diese Woche in deinen Alltag?'],
+      lehrer: {
+        ziel: 'Skills-Koffer und Ampelplan anwenden: Skill passend zur Zahl (erst Körper/Sinne, dann Kopf/Reden), begründen, Kritik (Veto) annehmen.',
+        stufen: 'Die Fälle steigen an: Level 1 Grün (fast alles geht), Level 2 Gelb (Grund nennen: Zahl, Ort, unauffällig?), Level 3 Rot (Kopf-Skills ziehen nicht – Veto-Moment).',
+        achten: 'Pass gibt weiter, ohne Kommentar. Ein Veto ist Hilfe für die Figur, keine Kritik an der Person.',
+        impulse: ['„Was macht man bei 90 im Gruppenchat?“', '„Wann ist eine erwachsene Person der beste Skill?“', '„Welcher Skill geht unauffällig im Unterricht?“'],
+        kippt: 'Wird das Veto zum Auslachen: Veto nur gemeinsam, die Lehrkraft entscheidet. Fühlt sich jemand blamiert: Pass anbieten.',
+      },
+    },
+
+    /* ---------------- Gedanken & Glaubenssätze ---------------- */
+    'gedanken-weiche': {
+      warum: 'Gleiche Situation, zwei Gedanken – und ganz andere Folgen. Ihr sagt voraus, wohin der Zug fährt, und stellt am Ende selbst die Weiche.',
+      skill: 'Gedanken bemerken, bevor sie steuern',
+      karte: 'Gedankenschiffchen',
+      geuebt: 'Die Kette Situation – Gedanke – Gefühl – Verhalten erkennen und einen hilfreichen Gedanken wählen.',
+      fragen: ['Welche Vorhersage hat gestimmt – welche nicht?', 'Warum ist der bremsende Gedanke oft schneller?', 'In welcher Situation lohnt sich diese Woche ein zweites Gleis?'],
+      lehrer: {
+        ziel: 'SGGV-Kette (Situation–Gedanke–Gefühl–Verhalten), hilfreiche vs. bremsende Gedanken, Gedanken als veränderbar erleben.',
+        stufen: 'Level 1 Vorhersagen (Gefühl und Verhalten je Gleis), Level 2 Vergleichen (der Zug fährt, der Comic zeigt die Folgen), Level 3 Weiche stellen (in der letzten Situation wählt das Paar selbst den hilfreichen Gedanken – realistisch, nicht schöngefärbt).',
+        achten: 'Nur über Figuren. „Vorhersage stimmt“ statt richtig/falsch. Hilfreich heißt realistisch, nicht „Alles ist toll“.',
+        impulse: ['„Was ist der Unterschied zwischen hilfreich und schöngeredet?“', '„Wer stellt die Weiche – und wann?“', '„Woran merkt man, dass ein Gedanke bremst?“'],
+        kippt: 'Die Eltern-Situation (Vergleich mit dem Bruder) kann persönlich werden: X anbieten, nicht nachbohren.',
+      },
+    },
+    'tatsache-urteil': {
+      warum: '„Ich bin dumm“ klingt wie eine Tatsache – ist aber ein Urteil. Ihr lernt den Unterschied und baut fairere Sätze. Das bremst die gemeine innere Stimme.',
+      skill: 'Tatsache und Urteil trennen',
+      karte: 'Die freundliche Stimme',
+      geuebt: 'Tatsachen von Urteilen trennen und ein Urteil in einen fairen Satz umbauen.',
+      fragen: ['Welcher Satz war am schwersten einzuordnen?', 'Warum fühlen sich Urteile so wahr an?', 'Welchen fairen Satz sagst du dir diese Woche?'],
+      lehrer: {
+        ziel: 'Tatsache von Urteil trennen, die Tatsache hinter einem Urteil finden, realistische Gegen-Sätze bilden (kritischer Detektiv, j1-e18).',
+        stufen: 'Level 1 Einordnen (Wand Tatsache/Urteil), Level 2 Dahinter (welche Tatsache steckt im Urteil?), Level 3 Umbauen (drei Ecken: fairer Satz / immer noch Urteil / schöngeredet). Zum Schluss eine Blitzrunde.',
+        achten: 'Gruppen antworten, nie Einzelne. Wer allein steht, darf schweigen. Die Mitte wird zuerst gefragt.',
+        impulse: ['„Woran erkennt man ein Urteil – an Wörtern wie immer, nie, alle?“', '„Ist „Ich bin toll“ auch ein Urteil?“', '„Wie klingt ein fairer Satz nach einer schlechten Note?“'],
+        kippt: 'Bezieht jemand einen Satz auf sich („Bin ich ja auch“): ruhig zur Figur zurück, den fairen Satz als Angebot vorlesen, später Einzelgespräch.',
+      },
+    },
+
+    /* ---------------- Kommunikation & Grenzen ---------------- */
+    funkstille: {
+      warum: 'Ein Gruppenchat kippt. Jede:r hat ein Teil: Chat, Formel, Grenzen, Pegel. Nur zusammen findet ihr die Nachricht, die klar ist, ohne anzugreifen.',
+      skill: 'Klar schreiben, ohne anzugreifen',
+      karte: 'Runter unter 70',
+      geuebt: 'Eine Ich-Botschaft schreiben, Grenzen achten und bei hoher Anspannung erst runterkommen.',
+      fragen: ['Welche Nachricht hätte den Chat am meisten kippen lassen?', 'Was war schwer: Formel, Grenze oder Pegel?', 'Wo hilft dir diese Woche: erst atmen, dann schreiben?'],
+      lehrer: {
+        ziel: 'Ich-Botschaften anwenden, Grenzen erkennen (auch die eigenen), Anspannung einschätzen (ab 80 erst Skill), Team-Entscheidung im Rollen-Puzzle.',
+        stufen: 'Level 1 Fall mit niedrigem Pegel (Formel + Grenzen reichen), Level 2 Fall mit hohem Pegel (erst Skill, dann Text), Level 3 Laut sagen (eine Person sagt die Nachricht so, wie die Figur sie meint).',
+        achten: 'Die Vater-Szene ist ein Familien-Thema (Hilfe-Hinweis). „Fragt nochmal nach“ statt falsch – der Hinweis nennt nur die Rolle.',
+        impulse: ['„Warum reicht ein „Ich“ am Anfang nicht?“', '„Welche Grenze hat die Figur selbst – nicht nur die anderen?“', '„Was macht ein Pegel von 85 mit einer Nachricht?“'],
+        kippt: 'Spiegelt eine Szene einen echten Chat-Streit: X, später in Ruhe. Wird über „Opfer“-Nachrichten gelacht: kurz benennen, was das Wort mit Leuten macht.',
+      },
+    },
+    hitzeecken: {
+      warum: 'Ein Streit-Satz – welche Ecke passt: Klartext, Angriff, Abgetaucht oder getarnt? Ihr erkennt, was die Hitze hochtreibt, und baut Sätze, die sie senken.',
+      skill: 'Klartext statt Angriff',
+      karte: 'Runter unter 70',
+      geuebt: 'Angriffe und getarnte Vorwürfe erkennen und einen Satz in Klartext umbauen.',
+      fragen: ['Welcher Satz hat euch getäuscht?', 'Warum ist ein getarnter Angriff so schwer zu erkennen?', 'Welchen Satz würdest du diese Woche lieber als Klartext sagen?'],
+      lehrer: {
+        ziel: 'Du- und Ich-Botschaften unterscheiden, getarnte Vorwürfe erkennen, umformulieren (Gefühl, Grund, Wunsch).',
+        stufen: 'Level 1 Erkennen (klare Fälle: Angriff oder Klartext), Level 2 Begründen (getarnt und abgetaucht: Welches Wort verrät es?), Level 3 Umbauen (die Ecke baut den Satz in 20 Sekunden als Klartext um).',
+        achten: 'Ecken werden gefragt, nicht Einzelne. Nicht zählen, wer wo steht. Beim Umbauen darf die ganze Crew helfen.',
+        impulse: ['„Welches Wort war der Hinweis?“', '„Wie klingt Klartext in eurer Sprache?“', '„Was macht „Mach doch, was du willst“ mit der Hitze?“'],
+        kippt: 'Wird ein Streit-Satz gegen jemanden im Raum gesagt: stoppen, „Wir sagen Figuren-Sätze“, X. Wird getobt: Gehzeit verlängern.',
+      },
+    },
+
+    /* ---------------- Konflikt, Druck & Mobbing ---------------- */
+    storystaffel: {
+      warum: 'Ein Streit, ein iPad, die ganze Crew. Ihr erlebt Zug für Zug, wie ein Satz die Hitze hochtreibt oder senkt – bis zum Deal.',
+      skill: 'Streit runterkühlen',
+      karte: 'Runter unter 70',
+      geuebt: 'Erst runterkommen, dann Klartext reden und gemeinsam einen Deal finden.',
+      fragen: ['Welcher Zug hat die Hitze am meisten gesenkt?', 'Wann war es am schwersten, ruhig zu bleiben?', 'Wo könnt ihr diese Woche „erst unter 70, dann reden“ ausprobieren?'],
+      lehrer: {
+        ziel: 'Konflikt-Treppe anwenden: erst Anspannung senken (unter 70), dann Klartext, Eskalation erkennen, gemeinsam Verantwortung für einen Deal.',
+        stufen: 'Level 1 Runterkommen (Skill-Zug unter 70), Level 2 Klartext (Züge im Kreis, jede:r baut auf dem vorigen auf; vor dem Zug: Wie geht es der anderen Figur?), Level 3 Deal (Hitze unter 35 und Klartext). Ab 95 knallt es: Zurückspulen statt falsch.',
+        achten: 'Es geht um die Figur, nicht um die Person, die getippt hat. Keine Kommentare zu einzelnen Zügen („Wer war das?“).',
+        impulse: ['„Welches Tier hat heute gespielt?“', '„Was macht Abtauchen bei hoher Hitze?“', '„Was braucht die andere Figur?“'],
+        kippt: 'Werden Angriffe absichtlich gewählt, um zu provozieren: Zurückspulen nutzen, „Wir testen, was passiert – jetzt den anderen Weg“. Bei echtem Ärger: Pause, gemeinsam atmen.',
+      },
+    },
+    dealoderkein: {
+      warum: 'Zwei Figuren wollen Verschiedenes. Jedes Team kennt heimlich, was seine Figur wirklich braucht. Wer fragt, findet den Deal, mit dem beide okay sind.',
+      skill: 'Fragen, was der andere braucht',
+      geuebt: 'Nach dem Bedürfnis hinter dem Wunsch fragen und einen Deal finden, der für beide passt.',
+      fragen: ['Welche Frage hat den Deal möglich gemacht?', 'Wie war es, das eigene Bedürfnis nicht direkt zu verraten?', 'Wo braucht ihr diese Woche einen Deal statt eines Streits?'],
+      lehrer: {
+        ziel: 'Kompromisse aushandeln, das Bedürfnis hinter dem Wunsch erfragen, die Sicht der anderen Seite wiedergeben, verlieren können.',
+        stufen: 'Level 1 Wissen (Geheim-Karte: Was braucht unsere Figur?), Level 2 Fragen (90 Sekunden, jede Seite mindestens eine Frage – Fragehilfen stehen am Beamer), Level 3 Perspektive (jedes Team sagt das Bedürfnis der ANDEREN Figur, dann erst der Deal).',
+        achten: 'Teams nicht nach Freundschaften bilden. Häkchen nur setzen, wenn wirklich gefragt wurde. „Beide okay“ feiern, „Gewinner-Deals“ nicht abwerten, sondern die Folgen zeigen.',
+        impulse: ['„Was hat eure Figur WIRKLICH gebraucht?“', '„Welche Frage hätte schneller geholfen?“', '„Ist ein Deal, bei dem einer verliert, ein Deal?“'],
+        kippt: 'Wird gefeilscht statt gefragt: Timer anhalten, Fragehilfen vorlesen. Wird ein Team laut: Team-Sprecher:in bestimmen, die anderen flüstern zu.',
+      },
+    },
+    'druck-chat': {
+      warum: 'Ein Gruppenchat macht leise Druck. Du steuerst Mika und probierst verschiedene Arten Nein. Ihr übt: Auch das zweite Nein zählt – und du bleibst du.',
+      skill: 'Nein sagen – auch beim zweiten Mal',
+      karte: 'Anker vor dem Nein',
+      geuebt: 'Leisen Gruppendruck erkennen, verschiedene Arten Nein sagen und beim Nein bleiben.',
+      fragen: ['Wann war der Druck am stärksten?', 'Welches Nein fiel dir am schwersten?', 'Welcher Wenn-dann-Satz hilft dir diese Woche?'],
+      lehrer: {
+        ziel: 'Leisen Gruppendruck erkennen (Emoji-Schweigen, „Dachte, du bist cool“), vier Arten Nein, das zweite Nein, Wenn-dann-Plan.',
+        stufen: 'Je Chat drei Stellen mit steigendem Druck: Level 1 Erstes Nein, Level 2 Nachhaken (zweites Nein), Level 3 Dabei bleiben (Schweigen aushalten). Danach Wenn-dann-Plan und Vergleichskarte zu zweit.',
+        achten: '„Mitmachen“ ist nie rot – es zeigt nur ruhig den Preis. Vape- und Auslach-Chat können nah sein: Die Hilfe-Karte steht direkt danach.',
+        impulse: ['„Was macht Emoji-Schweigen mit einem?“', '„Welches Nein lässt dich in der Gruppe?“', '„Was ist der Preis von Mitmachen – und von Nein?“'],
+        kippt: 'Erzählt jemand, gerade so einen Chat zu haben: ernst nehmen, Einzelgespräch, ggf. BEE SECURE oder 116 111. Die Vergleichskarte darf ausfallen.',
+      },
+    },
+
+    /* ---------------- Digital, Gesundheit & Abschluss ---------------- */
+    'teilen-oder-nicht': {
+      warum: 'Ein Post macht neugierig, der Daumen liegt auf Senden. Ihr prüft mit drei Fragen und seht die Folgen. So stoppt ihr Fakes und Mobbing.',
+      skill: 'Erst prüfen, dann teilen',
+      karte: 'Teilen-Bremse',
+      geuebt: 'Posts mit drei Fragen prüfen, die Folgen abschätzen und bei Fälschungen eingreifen.',
+      fragen: ['Welche Prüffrage hat euch am meisten gebremst?', 'Warum will man manche Posts sofort teilen?', 'Wann ziehst du diese Woche die Teilen-Bremse?'],
+      lehrer: {
+        ziel: 'Checkliste anwenden (Wer? Woanders? Will mich wütend machen?), Teilen-Bremse, Folgen abschätzen, Grenze: gefälschte Bilder = Mobbing, kann strafbar sein.',
+        stufen: 'Level 1 Prüfen (alle drei Karten kippen, dann entscheiden), Level 2 Vorhersagen (erst die Ampel tippen, dann kippen), Level 3 Eingreifen (gefälschtes Bild: stoppen, Beweis sichern, Bescheid sagen, Hilfe holen).',
+        achten: 'Post 3 (gefälschtes Bild einer Mitschülerin) kommt immer – auf Betroffenheit achten. Hilfenummern am Ende. Keine echten Personen nennen.',
+        impulse: ['„Was will der Post, dass du fühlst?“', '„Wer ist verantwortlich: wer fälscht oder wer weiterleitet?“', '„Was machst du, wenn das Bild schon überall ist?“'],
+        kippt: 'Erzählt jemand von einem echten Fall: stoppen, Einzelgespräch, BEE SECURE 8002 1234, ggf. Schulleitung informieren.',
+      },
+    },
+  };
+
+  const missions = {
+    stehauf: {
+      warum: 'Steht auf, wenn ein Satz für euch stimmt, und schätzt vorher, wie viele es sind. Ihr entdeckt, was ihr gemeinsam habt – und was niemand ahnt.',
+      skill: 'Sich zeigen und andere entdecken',
+      einheit: 'passt zu j1-e02 Kennenlernen in Bewegung',
+      geuebt: 'Etwas von sich zeigen, andere einschätzen und neugierig nachfragen.',
+      fragen: ['Was hat euch heute überrascht?', 'Wie fühlt es sich an, aufzustehen, wenn nur wenige stehen?', 'Wen fragst du diese Woche mal genauer nach?'],
+      lehrer: {
+        ziel: 'Sich zeigen (freiwillig), andere einschätzen (Schätzung), Gemeinsamkeiten entdecken, nachfragen.',
+        stufen: 'Karte 1 Aufwärmen (Spaß), Karte 2 Erlebnis (Gefühle), Karte 3 golden (Stärke). Nach dem Aufstehen 20 Sekunden Mikro: Wer steht, darf einen Satz erzählen – die Sitzenden dürfen eine Wie- oder Was-Frage stellen.',
+        achten: 'Aufstehen ist freiwillig. Wer als Einzige:r steht, wird nicht hervorgehoben. Heikle Karten (Familie, Geld) sind aus.',
+        impulse: ['„Was hat dich überrascht?“', '„Warum schätzen wir andere manchmal falsch ein?“', '„Wie fragt man nach, ohne auszufragen?“'],
+        kippt: 'Wird über jemanden gelacht, der steht: Karte sofort mit X weg, ruhig „Hier wird niemand ausgelacht“. Das Mikro dann auslassen.',
+      },
+    },
+    radar: {
+      warum: 'Gleiche Situation – fühlt jede:r dasselbe? Ihr ratet, was euer Nachbar fühlt, und vergleicht. So lernt ihr, Gefühle bei anderen zu lesen, bevor ein Streit entsteht.',
+      skill: 'Gefühle bei anderen lesen',
+      karte: 'Wer steht am Pult?',
+      einheit: 'passt zu j1-e07 Was sind Gefühle? und j1-e10 Gemischte Gefühle',
+      geuebt: 'Gefühle bei anderen einschätzen und verstehen, dass dieselbe Situation verschieden wirkt.',
+      fragen: ['Wie gut habt ihr euren Nachbarn eingeschätzt?', 'Was war schwer: das Gefühl oder die Stärke zu schätzen?', 'Woran merkst du diese Woche, wie es jemandem geht?'],
+      lehrer: {
+        ziel: 'Gefühle benennen, Stärke einschätzen, Perspektivenwechsel (Nachbar-Tipp), erleben: gleiche Situation – verschiedene Gefühle.',
+        stufen: 'Level 1 Fühlen (eigenes Gefühl geheim wählen), Level 2 Perspektive (Nachbar-Tipp: Was hat mein Nachbar wohl gewählt?), Level 3 Einschätzen (der Radar-Profi schätzt die Stärke der Crew).',
+        achten: 'Es gibt keine falschen Gefühle. Der Nachbar-Tipp ist geflüstert und freiwillig. Der Radar-Profi darf weitergeben.',
+        impulse: ['„Warum fühlen Menschen in der gleichen Situation so verschieden?“', '„Woran hast du das Gefühl deines Nachbarn erkannt?“', '„Was hilft, wenn jemand bei 9 steht?“'],
+        kippt: 'Trifft eine Situation jemanden: X ersetzt sie durch eine neue. Spott über ein Gefühl sofort stoppen: „Jedes Gefühl ist okay.“',
+      },
+    },
+    clash: {
+      warum: 'Ein Streit, zwei Figuren. Ihr sprecht für beide Seiten und bringt sie Level für Level zum Frieden – ohne dass einer verliert.',
+      skill: 'Streit fair lösen',
+      karte: 'Runter unter 70',
+      einheit: 'passt zu j1-e24 Konflikte lösen',
+      geuebt: 'Im Streit Klartext reden, die andere Seite verstehen und einen fairen Deal finden.',
+      fragen: ['Welches Level war am schwersten?', 'Wie war es, für die andere Figur zu sprechen?', 'Bei welchem Streit hilft dir diese Woche ein Level der Treppe?'],
+      lehrer: {
+        ziel: 'Friedenstreppe: Sicht, Gefühl, Bedürfnis, Versöhnen, Deal. Klartext statt Angriff, getarnte Vorwürfe erkennen, Perspektivenwechsel.',
+        stufen: 'Level 1–3 je ein Team (Sicht, Gefühl, Bedürfnis); vorher sagt das andere Team in einem Wort, wie sich seine Figur gerade fühlt. Nach einer guten Antwort: Sprecher-Modus (Satz laut in der Rolle). Level 4–5 alle zusammen. Ab Hitze 95: Eskalation, Zurückspulen.',
+        achten: 'Teams nicht nach Freundschaften. Satzanfänge liegen hinter „Tipp“. Zurückspulen ist kein Fehler.',
+        impulse: ['„Wie fühlt sich eure Figur gerade?“', '„Wie klingt eine Entschuldigung, die man glaubt?“', '„Was braucht die andere Seite?“'],
+        kippt: 'Spiegelt die Szene einen echten Streit in der Gruppe: „Andere Szene“ oder X. Werden Angriffe zur Provokation gewählt: Zurückspulen als Regel.',
+      },
+    },
+    feed: {
+      warum: 'Posts, Chats, Gerüchte: Was ist echt, was tut ihr? Ihr begründet eure Wahl und seht die Folgen. So fallt ihr online weniger rein.',
+      skill: 'Erst prüfen, dann handeln',
+      karte: 'Teilen-Bremse',
+      einheit: 'passt zu j1-e27 Social Media und j1-e28 Echt oder fake?',
+      geuebt: 'Online prüfen, begründet entscheiden und die Folgen für andere mitdenken.',
+      fragen: ['Welche Folge hat euch überrascht?', 'Wo war es schwer, sich als Team zu einigen?', 'Was machst du diese Woche, wenn ein Gerücht kommt?'],
+      lehrer: {
+        ziel: 'Echt/Meinung/Fake unterscheiden, Handlungen begründen, Folgen online abschätzen, Gruppendruck im Chat.',
+        stufen: 'Jede Runde: Erkennen (Post oder Chat lesen), Begründen (jedes Team sagt EINEN Satz, warum – bevor aufgelöst wird), Folgen (was passiert, „Alle Wege“).',
+        achten: 'Vapes, Familie und Geld sind heikel markiert. Kein „falsch“, nur Folgen. Am Ende steht BEE SECURE.',
+        impulse: ['„Was hättet ihr gebraucht, um sicher zu sein?“', '„Wer ist betroffen, wenn ihr weiterleitet?“', '„Welche Antwort war mutig?“'],
+        kippt: 'Wird ein echtes Gerücht aus der Schule genannt: stoppen, nicht wiederholen, später klären. Bei Streit im Team: Team-Sprecher:in bestimmen.',
+      },
+    },
+    reframe: {
+      warum: 'Aus einem blöden Spruch wird eine Stärke. Ihr kontert im Team und sagt euch, was stark war. Das hilft, wenn ein Spruch dich trifft.',
+      skill: 'Aus einem Spruch eine Stärke machen',
+      karte: 'Die freundliche Stimme',
+      einheit: 'passt zu j1-e06 Mein Baum der Stärke und j1-e18/e19 (Gedanken)',
+      geuebt: 'Einen blöden Spruch umdrehen, die Stärke darin finden und anderen sagen, was gut war.',
+      fragen: ['Welcher Konter hat euch überrascht?', 'War es leichter, selbst zu kontern oder zu sagen, was stark war?', 'Welche Stärke aus dem Turm nimmst du diese Woche mit?'],
+      lehrer: {
+        ziel: 'Reframing (Etikett → Stärke), Selbstwert, Stärken bei anderen sehen und benennen – statt gegeneinander abzustimmen.',
+        stufen: 'Level 1 Umdrehen (das Team findet die Stärke im Spruch), Level 2 Feedback (das andere Team sagt, was am Konter stark war – jeder Satz zählt), Level 3 Profi-Vergleich und Speed-Match.',
+        achten: 'Die Sprüche sind allgemein – nicht auf Personen im Raum beziehen. Kein Abstimmen gegeneinander: Feedback ist immer eine Stärke.',
+        impulse: ['„Woher kommen solche Sprüche?“', '„Was ist an eurem Konter stark?“', '„Wie sagt man Kritik, ohne einen Stempel zu verpassen?“'],
+        kippt: 'Wird ein Spruch gegen jemanden im Raum benutzt: X, ruhig benennen. Kommt kein Feedback: Satzanfang „Stark fand ich …“ vorgeben, die Lehrkraft beginnt.',
+      },
+    },
+  };
+
+  const solo = {
+    chill: {
+      solo: true,
+      warum: 'Wenn alles zu viel ist: Atmen, Glitzerglas oder Sinne. Du schätzt deine Zahl vorher und nachher – und merkst, was dir wirklich hilft.',
+      skill: 'Runterkommen, wenn es zu viel wird',
+      karte: 'Luftballon-Atem',
+      einheit: 'passt zu j1-e11 bis j1-e14 (Skills)',
+      geuebt: 'Die eigene Anspannung einschätzen und mit einem Skill bewusst senken.',
+      fragen: ['Was hat dir gerade am meisten geholfen?', 'Wo kannst du das diese Woche unauffällig machen?'],
+      lehrer: {
+        ziel: 'Selbstregulation: Anspannung einschätzen (0–100 vorher/nachher), Atem- und Sinnes-Skills ausprobieren, Wirkung erleben („von 70 auf 45“).',
+        stufen: 'Vorher-Zahl → Übung (Atem-Welle mit Ruhig-, Box-, 4-7-8- oder Luftballon-Takt; Glitzerglas; 5-4-3-2-1) → Nachher-Zahl.',
+        achten: 'Nichts wird gespeichert. Pause hält die Atem-Welle an. 5-4-3-2-1 ist auch Notfall-Tool.',
+        impulse: ['„Von welcher Zahl auf welche?“', '„Welche Übung geht unauffällig im Bus?“'],
+        kippt: 'Wird jemand unruhiger: andere Übung anbieten oder mit einer vertrauten Person reden; Hilfe-Knopf zeigen.',
+      },
+    },
+    decoder: {
+      solo: true,
+      warum: 'Kurze Szenen: Welches Gefühl steckt dahinter? Je weniger Hinweise du brauchst, desto mehr Punkte. So lernst du, Gefühle an kleinen Zeichen zu erkennen.',
+      skill: 'Gefühle an kleinen Zeichen erkennen',
+      einheit: 'passt zu j1-e07 bis j1-e10 (Gefühle)',
+      geuebt: 'Gefühle an Situation, Worten und Körpersprache erkennen und genau benennen.',
+      fragen: ['Welcher Hinweis hat dir am meisten geholfen?', 'Bei wem achtest du diese Woche auf die kleinen Zeichen?'],
+      lehrer: {
+        ziel: 'Gefühle an Situation, Satz und Körpersprache erkennen; nahe Gefühle unterscheiden (z. B. Enttäuschung/Kränkung).',
+        stufen: 'Hinweise Stufe für Stufe: erst nur die Situation (3 Punkte), dann der Satz (2), dann der Körper (1).',
+        achten: 'Der Bestwert liegt nur auf dem Gerät. Gut als Station oder zum Runterkommen.',
+        impulse: ['„Welcher Hinweis war entscheidend?“', '„Woran unterscheidest du Enttäuschung und Wut?“'],
+        kippt: 'Ist jemand frustriert: „Mehr Hinweise“ ist okay – die Punkte sind egal.',
+      },
+    },
+    clash: {
+      solo: true,
+      warum: 'Ein Streit, zwei Seiten – und du sprichst für beide. So verstehst du, wie die andere Seite fühlt, und findest Sätze, die einen Streit beenden.',
+      skill: 'Beide Seiten sehen',
+      karte: 'Runter unter 70',
+      einheit: 'passt zu j1-e24 Konflikte lösen',
+      geuebt: 'Beide Seiten eines Streits verstehen und Klartext statt Angriff wählen.',
+      fragen: ['Welche Seite war schwerer zu spielen?', 'Hattest du mal so einen Streit? Was hätte geholfen?'],
+      lehrer: {
+        ziel: 'Perspektivenwechsel: allein für beide Seiten sprechen; Klartext, Angriff und getarnte Vorwürfe erkennen.',
+        stufen: 'Level 1–3 abwechselnd für beide Figuren, Level 4–5 gemeinsam. Zurückspulen zeigt Folgen ohne Fehler.',
+        achten: 'Die Frage nach eigenen Streits ist nur ein Denkanstoß – mit Hinweis auf 116 111.',
+        impulse: ['„Welche Seite war schwerer?“', '„Welcher Satz hat die Hitze am meisten gesenkt?“'],
+        kippt: 'Belastet ein echter Streit: Gespräch anbieten, Hilfe-Knopf.',
+      },
+    },
+    feed: {
+      solo: true,
+      warum: 'Posts und Chats wie im echten Feed: Was ist echt, was machst du? Du siehst die Folgen, bevor sie in echt passieren.',
+      skill: 'Erst prüfen, dann teilen',
+      karte: 'Teilen-Bremse',
+      einheit: 'passt zu j1-e27 und j1-e28',
+      geuebt: 'Posts prüfen und Folgen abschätzen, bevor du teilst oder antwortest.',
+      fragen: ['Welche Folge hat dich überrascht?', 'Was prüfst du ab jetzt, bevor du etwas teilst?'],
+      lehrer: {
+        ziel: 'Online-Situationen allein durchspielen: Echt/Meinung/Fake, Handlungsfolgen, Gruppendruck.',
+        stufen: 'Erkennen (Post oder Chat lesen) → Wählen → Folgen sehen („Alle Wege“).',
+        achten: 'Heikle Karten (Vapes, Familie, Geld) sind in der Solo-Zone aus, solange die Lehrkraft sie nicht freigibt.',
+        impulse: ['„Was hättest du gebraucht, um sicher zu sein?“', '„Wer ist betroffen, wenn du weiterleitest?“'],
+        kippt: 'Bei Betroffenheit (echtes Gerücht, Chat-Druck): Gespräch anbieten, BEE SECURE 8002 1234.',
+      },
+    },
+    reframe: {
+      solo: true,
+      warum: 'Erst erkennst du, welcher Spruch hinter einer Stärke steckt. Dann konterst du selbst. Das hilft, wenn dich ein Spruch im Alltag trifft.',
+      skill: 'Konter finden',
+      karte: 'Die freundliche Stimme',
+      einheit: 'passt zu j1-e19 Neue Gedanken ausprobieren',
+      geuebt: 'In einem blöden Spruch die Stärke sehen und einen eigenen Konter finden.',
+      fragen: ['Welcher Konter hat dir am besten gefallen?', 'Welchen Satz sagst du dir, wenn dich ein Spruch trifft?'],
+      lehrer: {
+        ziel: 'Reframing üben: erst erkennen (welcher Spruch steckt hinter einer Stärke), dann selbst kontern und mit Profi-Kontern vergleichen.',
+        stufen: 'Level 1 Erkennen (Stärke → Spruch), Level 2 Selbst kontern (Spruch → eigener Konter im Kopf, dann Profi-Konter).',
+        achten: 'Eigene Konter werden nicht eingegeben und nicht gespeichert – nur gedacht oder geflüstert.',
+        impulse: ['„Welcher Profi-Konter klang nach dir?“', '„Welcher Spruch ist am schwersten zu drehen?“'],
+        kippt: 'Trifft ein Spruch zu sehr: X, Gespräch anbieten.',
+      },
+    },
+  };
+
+  CREW.didaktik = { games, missions, solo };
+})();

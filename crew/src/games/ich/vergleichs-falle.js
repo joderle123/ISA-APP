@@ -43,6 +43,16 @@
       wert: ['bleibt beim Freund, der verloren hat', 'trainiert weiter, auch ohne Pokal', 'kann Streit schlichten', 'hilft dem Nachbarn mit den Einkäufen', 'sagt „sorry“, wenn es nötig ist', 'kann zuhören, ohne zu unterbrechen', 'baut Dinge, die funktionieren', 'lacht über sich selbst'] },
   ];
 
+  const LEVELS = ['Erkennen', 'Durchschauen', 'Anwenden'];
+  /* Level 3: Was macht die Figur beim nächsten Scrollen? */
+  const PLAENE = [
+    { k: 'atem', t: 'Drei Atemzüge, bevor die App aufgeht – und kurz fragen: Was will ich hier?', ok: true, fb: 'Genau. Drei Atemzüge sind die Lücke zwischen Daumen und Feed. Darin entscheidest du selbst.' },
+    { k: 'entfolgen', t: 'Profilen entfolgen oder stumm schalten, nach denen es mir schlechter geht.', ok: true, fb: 'Stark. Dein Feed ist dein Zimmer – du entscheidest, wer drin hängt.' },
+    { k: 'timer', t: 'Timer stellen: nach 15 Minuten raus und etwas Echtes machen.', ok: true, fb: 'Gut. Nach 20 Minuten Vergleichen geht es fast allen schlechter. Ein Timer hilft.' },
+    { k: 'mehr', t: 'Mehr posten und filtern, damit meine Zahlen auch steigen.', ok: false, fb: 'Das ist die Falle von innen: Dann vergleicht sich bald jemand mit deiner Bühne.' },
+    { k: 'weiter', t: 'Weiterscrollen, bis es irgendwann besser wird.', ok: false, fb: 'Leider wird es meistens schlimmer. Der Feed hört nie auf – du musst aufhören.' },
+  ];
+
   /* Der Handy-Look: Profilkopf und drei Posts (Vorder-/Rückseite) */
   function phone(ctx, p, o) {
     const oo = o || {};
@@ -92,11 +102,12 @@
     help: true,
     async run(ctx) {
       await ctx.T.intro({
-        rule: 'Zu zweit: Ein Fake-Profil, eine Figur, die es anschaut. Findet, womit sie sich vergleicht, dreht die Posts um und sucht, was in keinem Feed steht.',
+        rule: 'Zu zweit: Eine Figur scrollt durch ein Fake-Profil. Findet die Falle, dreht die Posts um und plant das nächste Scrollen.',
+        levels: LEVELS,
         steps: [
-          { icon: 'phone', title: 'Profil anschauen', text: 'Glimmr-Look. Alles fake.' },
-          { icon: 'undo', title: 'Posts umdrehen', text: 'Gestellt, gefiltert, der Streit danach.' },
-          { icon: 'star', title: 'Drei Dinge', text: 'die zählen und in keinem Feed stehen.' },
+          { icon: 'phone', title: 'Erkennen', text: 'Womit vergleicht sich die Figur?' },
+          { icon: 'undo', title: 'Durchschauen', text: 'Posts umdrehen: gestellt, gefiltert, Streit.' },
+          { icon: 'star', title: 'Anwenden', text: 'Was zählt – und was hilft beim nächsten Scrollen?' },
         ],
         probe: async () => {
           const w = ctx.scr([h('div', { class: 'probe-tag' }, 'PROBE · zählt nicht · 10 Sekunden'), ctx.say('Probe: Legt beide einen Finger auf die Fläche. Kurz halten.', { eyebrow: 'Zum Ausprobieren' })], { eyebrow: 'Probe' });
@@ -116,7 +127,7 @@
         h('div', { class: 'vf-layout' }, phone(ctx, p), h('div', { class: 'stack' },
           ctx.figureCard({ fig: p.fig, mood: p.mood, text: fig.name + ' scrollt seit zwanzig Minuten durch dieses Profil. Eigene Follower: ' + p.zahl + '.', eyebrow: 'Schaut sich das an', extra: glaub ? h('span', { class: 'pill' }, 'Bremsender Satz: ' + p.satz) : null }),
           h('p', { class: 'muted small' }, 'Schaut euch das Profil an. Dann weiter.'))),
-      ], { eyebrow: 'Das Profil' });
+      ], { eyebrow: 'Das Profil', badge: ctx.stufe(1, LEVELS) });
       if ((await ctx.next(w1, 'Angeschaut')) === ctx.SKIP) return { summary: 'Heute nur reingeschaut.' };
 
       // 2) Womit vergleicht sich die Figur? (bis zu drei Chips, zwei Finger)
@@ -125,14 +136,14 @@
       const w2 = ctx.scr([
         ctx.figureCard({ fig: p.fig, mood: p.mood, text: p.gedanke, eyebrow: 'Was ' + fig.name + ' denkt', chat: true }),
         h('div', { class: 'card stack' }, h('div', { class: 'row between' }, h('b', null, 'Womit vergleicht sich ' + fig.name + '? Bis zu drei.'), c1), m1.el),
-      ], { eyebrow: 'Vergleich' });
+      ], { eyebrow: 'Vergleich', badge: ctx.stufe(1, LEVELS) });
       if (ctx.auto) m1.pickAuto(2);
       if ((await ctx.T.twoFinger(w2, { label: 'Beide: Finger drauf', hint: 'Erst Chips antippen, dann zwei Finger.' })) === ctx.SKIP) return { summary: 'Abgebrochen. Auch okay.' };
       stats.schritte++;
       const w2b = ctx.scr([
         ctx.say(fig.name + ' vergleicht sich mit ' + (m1.picked.length ? m1.picked.map((x) => '„' + x + '“').join(', ') : 'allem') + '. Und zwar mit der VORDERSEITE von Posts. Dreht sie um.', { eyebrow: 'Die Falle', small: true }),
         h('p', { class: 'muted' }, 'Ein Vergleich mit einem Feed ist ein Vergleich mit einer Bühne. Hinter der Bühne sieht es anders aus.'),
-      ], { eyebrow: 'Vergleich', center: true });
+      ], { eyebrow: 'Vergleich', center: true, badge: ctx.stufe(2, LEVELS) });
       await ctx.next(w2b, 'Posts umdrehen');
 
       // 3) Posts umdrehen: alle drei, dann zwei Finger
@@ -143,7 +154,7 @@
         h('div', { class: 'vf-layout' }, ph, h('div', { class: 'stack' },
           h('div', { class: 'card stack' }, h('div', { class: 'row between' }, h('b', null, 'Tippt jeden Post an. Er dreht sich um.'), status), h('p', { class: 'muted small' }, 'Lest die Rückseite laut vor. Erst wenn alle drei umgedreht sind: zwei Finger.')),
           ctx.readBtn('Rückseiten: ' + p.posts3.map((x) => x.back).join(' ')))),
-      ], { eyebrow: 'Rückseite' });
+      ], { eyebrow: 'Rückseite', badge: ctx.stufe(2, LEVELS) });
       if (ctx.auto) ph.querySelectorAll('.gl-post').forEach((c) => c.click());
       if ((await ctx.T.twoFinger(w3, { label: 'Alle drei umgedreht: Finger drauf' })) === ctx.SKIP) return { summary: 'Abgebrochen. Auch okay.' };
       stats.schritte++;
@@ -152,6 +163,7 @@
         h('div', { class: 'row' }, p.posts3.map((x) => h('span', { class: 'chip small' }, x.trick))),
       ], { eyebrow: 'Rückseite' });
       await ctx.next(w3b, 'Weiter');
+      await ctx.T.level({ n: 3, names: LEVELS, text: 'Ihr habt die Bühne durchschaut. Jetzt: Was macht ' + fig.name + ' wertvoll – und was tut ' + fig.name + ' beim nächsten Scrollen?' });
 
       // 4) Drei Dinge, die die Figur wertvoll machen und in keinem Feed stehen
       const c2 = h('span', { class: 'pill' }, '0 von 3');
@@ -159,7 +171,7 @@
       const w4 = ctx.scr([
         ctx.say('Wählt drei Dinge, die ' + fig.name + ' wertvoll machen – und die in keinem Feed stehen.', { eyebrow: 'Kein Feed', small: true }),
         h('div', { class: 'card stack' }, h('div', { class: 'row between' }, h('b', null, 'Acht Dinge, drei wählen'), c2), m2.el, h('p', { class: 'muted small' }, 'Es gibt keine falschen drei. Redet, warum ihr die nehmt.')),
-      ], { eyebrow: 'Wertvoll' });
+      ], { eyebrow: 'Wertvoll', badge: ctx.stufe(3, LEVELS) });
       if (ctx.auto) m2.pickAuto(3);
       if ((await ctx.T.twoFinger(w4, { label: 'Beide: Finger drauf', hint: 'Drei Chips, dann zwei Finger.' })) === ctx.SKIP) return { summary: 'Abgebrochen. Auch okay.' };
       stats.schritte++;
@@ -173,12 +185,33 @@
           h('div', { class: 'stack' },
             ctx.figureCard({ fig: p.fig, mood: 'froh', text: glaub ? 'Mein Satz war: ' + p.satz + ' Der passt nicht zu diesen drei Dingen. Neuer Satz: „Ich habe Dinge, die in keinem Feed stehen.“' : 'Drei Dinge, null Likes. Und trotzdem mehr wert als ' + p.follower + ' Follower.', eyebrow: fig.name }),
             !glaub ? h('div', { class: 'card stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Trick-Namen für euren Social-Media-Plan'), h('div', { class: 'row' }, p.posts3.map((x) => h('span', { class: 'chip small' }, x.trick)), h('span', { class: 'chip small' }, 'Zahlen-Vergleich'))) : null,
-            h('p', { class: 'muted small' }, 'Kurz reden: Welches dieser drei Dinge hättet ihr in einem Feed nie gesehen?'),
             ctx.safetyLine('freiwillig'))),
-      ], { eyebrow: 'Kein Feed' });
+      ], { eyebrow: 'Kein Feed', badge: ctx.stufe(3, LEVELS) });
       CREW.sound.play('great');
-      await ctx.ask(w5, [{ label: 'Pass', value: 'pass', variant: 'ghost', icon: 'x' }, { label: 'Fertig geredet', value: 'done', iconRight: 'right' }]);
-      return { summary: 'Vergleich mit einem Feed ist ein Vergleich mit einer Bühne. Was zählt, steht in keinem Feed.', stats: [[3, 'Posts umgedreht'], [picked.length, 'Dinge ohne Feed']], help: true };
+      await ctx.next(w5, 'Und beim nächsten Scrollen?');
+
+      // 5) Anwenden: Was macht die Figur beim nächsten Scrollen? (gemeinsam entscheiden)
+      const w6 = ctx.scr([
+        ctx.figureCard({ fig: p.fig, mood: 'neutral', text: 'Morgen Abend, 22 Uhr. Das Handy liegt neben mir. Was mache ich, bevor ich wieder in die Falle tappe?', eyebrow: fig.name + ' plant', chat: true }),
+        h('div', { class: 'card stack' }, h('div', { class: 'row between' }, h('b', null, 'Einigt euch: Was hilft ' + fig.name + ' am meisten?'), ctx.readBtn('Was macht ' + fig.name + ' beim nächsten Scrollen? ' + PLAENE.map((x) => x.t).join(' '))),
+          h('p', { class: 'muted small' }, 'Erst kurz reden, dann eine Person tippt.')),
+      ], { eyebrow: 'Nächstes Scrollen', badge: ctx.stufe(3, LEVELS) });
+      const planK = await ctx.ask(w6, ctx.rshuffle(PLAENE).map((x) => ({ label: x.t, value: x.k, variant: 'ghost', id: 'vf-plan-' + x.k, auto: x.k === 'atem' })), { autoPick: () => 'atem' });
+      let planOk = 0;
+      if (planK !== ctx.SKIP) {
+        const pl = PLAENE.find((x) => x.k === planK);
+        if (pl) {
+          planOk = pl.ok ? 1 : 0;
+          CREW.sound.play(pl.ok ? 'good' : 'tap');
+          const w7 = ctx.scr([
+            ctx.figureCard({ fig: p.fig, mood: pl.ok ? 'froh' : 'neutral', text: pl.fb, eyebrow: pl.ok ? 'Guter Plan' : 'Hm, Moment' }),
+            pl.ok ? null : h('p', { class: 'muted' }, 'Besser: ' + PLAENE.filter((x) => x.ok).map((x) => x.t.split(' – ')[0].replace(/[.:].*$/, '')).join(' · ')),
+            h('div', { class: 'row' }, h('span', { class: 'skill-chip karte' }, CREW.icon('sparkle', 14), 'Skill-Karte „Drei Atemzüge vorm Handy“')),
+          ], { eyebrow: 'Nächstes Scrollen', badge: ctx.stufe(3, LEVELS) });
+          await ctx.next(w7, 'Weiter');
+        }
+      }
+      return { summary: 'Vergleich mit einem Feed ist ein Vergleich mit einer Bühne. Was zählt, steht in keinem Feed.', stats: [[3, 'Posts umgedreht'], [picked.length, 'Dinge ohne Feed'], [planOk, 'Plan fürs nächste Scrollen']], help: true };
     },
   });
 })();

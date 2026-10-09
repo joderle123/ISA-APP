@@ -10,3 +10,5 @@
 .ks-input { font: inherit; font-size: 1.05em; padding: 12px 14px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); color: inherit; width: 100%; box-sizing: border-box; }
 .ks-input:focus { outline: 3px solid var(--accent); outline-offset: 2px; }
 @media (max-width: 640px) { .ks-taps { grid-template-columns: 1fr; } }
+/* Level 2: Meter verdeckt */
+.ks-blind-bar { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 44px; border: 2px dashed var(--line); border-radius: 99px; color: var(--muted); background: color-mix(in srgb, var(--panel2) 60%, transparent); }

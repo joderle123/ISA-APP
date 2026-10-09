@@ -14,3 +14,5 @@
 @keyframes turmDrop { from { transform: translateY(-30px); opacity: 0; } to { transform: none; opacity: 1; } }
 .turm-boden { border-top: 4px solid var(--line); margin-top: 8px; padding-top: 6px; text-align: center; }
 @media (max-width: 760px) { .se-layout { grid-template-columns: 1fr; } .turm { min-height: 120px; } .turm-stack { flex-direction: row; flex-wrap: wrap; } }
+.se-card .se-nr { min-height: 1em; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
+.se-card.sel .se-nr { color: var(--yellow-ink); opacity: .85; }

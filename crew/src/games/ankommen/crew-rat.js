@@ -2,7 +2,8 @@
    Die Crew entscheidet etwas Echtes (nächstes Pausen-Spiel, Imbiss, Vertrags-Ergänzung …): Vorschläge sammeln,
    Runde „Was spricht dagegen?“, dann Konsent statt Abstimmung – „Wer kann damit leben?“, Veto nur mit Grund.
    Stille tippen „Einwand“ per Chip (auf dem eigenen iPad per QR oder am Beamer). Der Beschluss landet als Karte
-   im Crew-HQ (unter der Sticker-Wand, ohne Namen). Keine Hände zählen, die Lehrkraft tippt nur, was die Crew sagt. */
+   im Crew-HQ (unter der Sticker-Wand, ohne Namen). Keine Hände zählen, die Lehrkraft tippt nur, was die Crew sagt.
+   In drei Level: 1) Sammeln, 2) Abwägen (Was spricht dagegen? Für wen wäre es schwer?), 3) Entscheiden (Konsent). */
 (function () {
   'use strict';
   const CREW = window.CREW;
@@ -23,7 +24,8 @@
     { id: 'kosten', text: 'Kostet zu viel Geld oder Zeit', icon: 'timer' },
     { id: 'unsicher', text: 'Das ist nicht sicher', icon: 'lock' },
   ];
-  const DAGEGEN = ['Zu teuer', 'Zu lang', 'Nicht alle können mit', 'Langweilig nach 10 Minuten', 'Braucht Erlaubnis', 'Unfair für manche', 'Wetter-abhängig', 'Zu laut'];
+  const LEVELS = ['Sammeln', 'Abwägen', 'Entscheiden'];
+  const DAGEGEN = ['Zu teuer', 'Zu lang', 'Nicht alle können mit', 'Langweilig nach 10 Minuten', 'Braucht Erlaubnis', 'Unfair für manche', 'Wetter-abhängig', 'Zu laut', 'Schwer für Stille', 'Schwer für Neue'];
 
   /* ---- Beschlüsse: im Spielstand (ohne Namen), als Karten im HQ unter der Sticker-Wand ---- */
   const deDatum = (iso) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || ''); return m ? m[3] + '.' + m[2] + '.' + m[1] : iso || ''; };
@@ -83,6 +85,7 @@
       if (ctx.opts.platz || ctx.role) return stillesIpad(ctx);
       await ctx.T.intro({
         rule: 'Die Crew entscheidet etwas Echtes. Nicht die Mehrheit gewinnt – ihr sucht den Vorschlag, mit dem ALLE leben können. Veto nur mit Grund.',
+        levels: LEVELS,
         steps: [
           { icon: 'plus', title: 'Vorschläge sammeln', text: 'Zwei bis vier Ideen.' },
           { icon: 'chat', title: 'Was spricht dagegen?', text: 'Jeder Vorschlag bekommt eine Runde.' },
@@ -115,7 +118,7 @@
             h('div', { class: 'row' }, inp, CREW.ui.btn('Dazu', () => { add(inp.value); inp.value = ''; }, { small: true, icon: 'plus', id: 'cr-add' }))),
           h('div', { class: 'card stack' }, h('b', null, 'Auf dem Tisch'), listBox, h('p', { class: 'muted small' }, 'Antippen entfernt. Wer still ist, darf einen Vorschlag auf einen Zettel schreiben.'))),
         CREW.ui.teacherLine('Nur tippen, was die Crew sagt. Keine eigenen Vorschläge.'),
-      ], { eyebrow: 'Vorschläge' });
+      ], { eyebrow: 'Vorschläge', badge: ctx.stufe(1, LEVELS) });
       if (ctx.auto) { thema.vorschlaege.slice(0, 2 + Math.floor(ctx.autoRng() * 3)).forEach(add); }
       for (;;) {
         const r = await ctx.next(w2, 'Vorschläge stehen');
@@ -130,10 +133,11 @@
         const slot = h('div', { class: 'row center' });
         const w3 = ctx.scr([
           h('div', { class: 'row between' }, h('h2', null, (i + 1) + '. ' + vs[i]), slot),
-          ctx.say('Was spricht dagegen? Nur Einwände, keine Verteidigung. Wer den Vorschlag gemacht hat, hört zu.', { eyebrow: 'Was spricht dagegen? · ' + (i + 1) + ' von ' + vs.length, small: true }),
+          ctx.say('Was spricht dagegen? Und: Für wen wäre das schwer? Nur Einwände, keine Verteidigung.', { eyebrow: 'Was spricht dagegen? · ' + (i + 1) + ' von ' + vs.length, small: true }),
           h('div', { class: 'card stack' }, h('b', null, 'Gedächtnis-Chips (optional)'), box),
+          h('p', { class: 'muted small' }, 'Wer den Vorschlag gemacht hat, hört zu. Perspektive wechseln: Wer kann nicht mit, wem fällt es schwer?'),
           CREW.ui.teacherLine('30 Sekunden pro Vorschlag. „Weiter“, wenn nichts mehr kommt.'),
-        ], { eyebrow: 'Dagegen ' + (i + 1) + '/' + vs.length });
+        ], { eyebrow: 'Dagegen ' + (i + 1) + '/' + vs.length, badge: ctx.stufe(2, LEVELS) });
         if (ctx.auto && ctx.autoRng() < 0.6) box.querySelector('button').click();
         const r = await ctx.timerOrButton(w3, 30, [{ label: i + 1 < vs.length ? 'Nächster Vorschlag' : 'Zum Konsent', value: 'next', iconRight: 'right', id: 'btn-next' }], { slot });
         if (r === ctx.SKIP) continue;
@@ -152,7 +156,7 @@
                 h('div', { class: 'card stack soft' }, h('b', null, 'Stille Stimmen'), h('p', { class: 'muted small' }, 'Wer nicht laut reden will: „Einwand“ am eigenen iPad zeigen oder einen Zettel geben. Die Lehrkraft liest ihn vor – ohne Namen.'))),
               h('div', { class: 'card stack' }, h('b', null, 'Vorschläge'), liste(vs, status))),
             CREW.ui.teacherLine('Fragen: „Kann jemand damit NICHT leben?“ Wenn niemand: alle können leben. Sonst: Veto mit Grund.'),
-          ], { eyebrow: 'Konsent' });
+          ], { eyebrow: 'Konsent', badge: ctx.stufe(3, LEVELS) });
           const r = await ctx.ask(w4, [{ label: 'Veto mit Grund', value: 'veto', variant: 'teamB', icon: 'x' }, { label: 'Alle können damit leben', value: 'ok', variant: 'good', icon: 'check' }]);
           if (r === ctx.SKIP) continue;
           if (r === 'ok') { status[i] = 'ok'; beschluss = i; break; }

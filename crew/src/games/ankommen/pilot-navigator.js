@@ -3,7 +3,9 @@
    Hindernissen. Unten steuert der Pilot nach Ansage – ohne den Weg und ohne die Hindernisse zu sehen.
    Ein großer Stopp-Knopf stoppt sofort, egal wer drückt. Runde 1 ohne Rückfragen, Runde 2 mit Rückfragen und
    getauschten Rollen. Danach liegen geplanter und gefahrener Weg übereinander: Ab welchem Zug ging es auseinander?
-   Ohne Schuld – Ansage und Hören sind zwei Bilder. Variante j1-e03: Frage „Was hat beim Führen geholfen?“ */
+   Ohne Schuld – Ansage und Hören sind zwei Bilder. Variante j1-e03: Frage „Was hat beim Führen geholfen?“
+   In drei Level: 1) Ansagen (ohne Rückfragen), 2) Nachfragen (mit Rückfragen, getauscht), 3) Übertragen
+   (Was hat geholfen – und wo im Alltag braucht ihr klare Ansagen?). */
 (function () {
   'use strict';
   const CREW = window.CREW;
@@ -111,7 +113,7 @@
             h('p', { class: 'muted small' }, mitFragen ? 'Kein Weg sichtbar. Hör zu – und frag nach: „Meinst du meine linke?“' : 'Kein Weg sichtbar. Nur hören, nicht fragen. Tipp den Pfeil, den du verstanden hast.'),
             stopBtn, h('span', { class: 'muted small' }, 'Stopp darf jede:r drücken. Sofort.')),
           pad));
-      const wrap = ctx.scr([ctx.T.split({ top, bottom })], { eyebrow: 'Runde ' + nr });
+      const wrap = ctx.scr([ctx.T.split({ top, bottom })], { eyebrow: 'Runde ' + nr, badge: ctx.stufe(nr, LEVELS) });
       draw();
       // Zwei-Finger-Zone liegt in der Mitte? Nein – hier reicht der Stopp-Knopf. Auto-Modus: Züge simulieren.
       if (ctx.auto) {
@@ -153,6 +155,8 @@
     ], { eyebrow: 'Runde ' + nr });
   }
 
+  const LEVELS = ['Ansagen', 'Nachfragen', 'Übertragen'];
+  const ALLTAG = ['Weg erklären', 'Gruppenarbeit', 'Sport-Training', 'Zocken im Team', 'Zuhause beim Kochen', 'Jemandem am Handy helfen'];
   const HILFEN = ['Kurze Ansagen', 'Nachfragen erlaubt', 'Stopp sagen dürfen', 'Langsam, ein Zug nach dem anderen', '„Deine linke“ statt „links“', 'Ruhige Stimme', 'Erst schauen, dann sagen'];
 
   CREW.registerGame({
@@ -164,7 +168,8 @@
     help: false,
     async run(ctx) {
       await ctx.T.intro({
-        rule: 'Zu zweit, gegenüber. Der Navigator sieht den Weg und sagt an, der Pilot steuert blind. Stopp darf jede:r drücken – sofort.',
+        rule: 'Zu zweit, gegenüber. Der Navigator sieht den Weg und sagt an, der Pilot steuert blind. Erst ohne, dann mit Nachfragen. Stopp darf jede:r drücken.',
+        levels: LEVELS,
         steps: [
           { icon: 'eye', title: 'Navigator oben', text: 'Sieht Weg und Hindernisse – auf dem Kopf.' },
           { icon: 'bolt', title: 'Pilot unten', text: 'Hört zu, tippt Pfeile. Runde 1 ohne Fragen.' },
@@ -182,7 +187,7 @@
       const ergebnisse = [];
       // Runde 1: ohne Rückfragen
       const k1 = kurs(ctx);
-      const w1 = ctx.scr([ctx.say('Runde 1: Der Pilot darf NICHT nachfragen. Navigator: ein Wort pro Zug. Los.', { eyebrow: 'Runde 1 · ohne Rückfragen', small: true }), h('div', { class: 'row' }, h('span', { class: 'pill accent' }, 'Pilot: ' + p1), h('span', { class: 'pill' }, 'Navigator: ' + n1))], { eyebrow: 'Runde 1', center: true });
+      const w1 = ctx.scr([ctx.stufenLeiste(1, LEVELS), ctx.say('Level 1: Der Pilot darf NICHT nachfragen. Navigator: ein Wort pro Zug. Los.', { eyebrow: 'Runde 1 · ohne Rückfragen', small: true }), h('div', { class: 'row' }, h('span', { class: 'pill accent' }, 'Pilot: ' + p1), h('span', { class: 'pill' }, 'Navigator: ' + n1))], { eyebrow: 'Runde 1', center: true });
       if ((await ctx.next(w1, 'Start')) !== ctx.SKIP) {
         const r1 = await runde(ctx, k1, 1, false, { pilot: p1, nav: n1 });
         ergebnisse.push(r1);
@@ -192,7 +197,7 @@
       await ctx.T.passOn({ title: 'Tauschen', text: 'Dreht das iPad um. Jetzt ist ' + n1 + ' Pilot und ' + p1 + ' Navigator.', eyebrow: 'Runde 2', label: 'Getauscht' });
       // Runde 2: mit Rückfragen, neuer Kurs
       const k2 = kurs(ctx);
-      const w2 = ctx.scr([ctx.say('Runde 2: Jetzt darf der Pilot nachfragen. „Meinst du meine linke?“ ist erlaubt und schlau.', { eyebrow: 'Runde 2 · mit Rückfragen', small: true }), h('div', { class: 'row' }, h('span', { class: 'pill accent' }, 'Pilot: ' + n1), h('span', { class: 'pill' }, 'Navigator: ' + p1))], { eyebrow: 'Runde 2', center: true });
+      const w2 = ctx.scr([ctx.stufenLeiste(2, LEVELS), ctx.say('Level 2: Jetzt darf der Pilot nachfragen. „Meinst du meine linke?“ ist erlaubt und schlau.', { eyebrow: 'Runde 2 · mit Rückfragen', small: true }), h('div', { class: 'row' }, h('span', { class: 'pill accent' }, 'Pilot: ' + n1), h('span', { class: 'pill' }, 'Navigator: ' + p1))], { eyebrow: 'Runde 2', center: true });
       if ((await ctx.next(w2, 'Start')) !== ctx.SKIP) {
         const r2 = await runde(ctx, k2, 2, true, { pilot: n1, nav: p1 });
         ergebnisse.push(r2);
@@ -208,13 +213,24 @@
           h('div', { class: 'card stack' }, h('b', null, 'Beide Runden'), ergebnisse.length ? ergebnisse.map(row) : h('p', { class: 'muted' }, 'Keine Runde gefahren.')),
           h('div', { class: 'card stack' }, h('b', null, 'Was hat beim Führen geholfen? Wählt zu zweit zwei Dinge.'), h('div', { class: 'row', style: { gap: '8px' } }, chips))),
         ctx.safetyLine('freiwillig'),
-      ], { eyebrow: 'Vergleich' });
+      ], { eyebrow: 'Vergleich', badge: ctx.stufe(3, LEVELS) });
       await ctx.T.twoFinger(w3, { label: 'Beide einig: Finger drauf' });
+      // Level 3: Übertragen – wo im Alltag braucht ihr genau das?
+      let alltag = null;
+      const ach = ALLTAG.map((t) => { const b = h('button', { type: 'button', class: 'chip', 'data-alltag': t }, t); b.addEventListener('click', () => { CREW.sound.play('tap'); alltag = t; ach.forEach((x) => x.classList.toggle('sel', x === b)); }); return b; });
+      if (ctx.auto) ach[0].click();
+      const w4 = ctx.scr([
+        ctx.say('Wo im echten Leben braucht ihr ' + (picked.length ? '„' + picked[0] + '“' : 'klare Ansagen und Nachfragen') + '? Wählt einen Ort und sagt euch ein Beispiel.', { eyebrow: 'Übertragen', small: true }),
+        h('div', { class: 'card' }, h('div', { class: 'row', style: { gap: '8px' } }, ach)),
+        h('p', { class: 'muted small' }, 'Zum Beispiel: „Beim Weg erklären sag ich „an der Bäckerei links“ statt „da vorne“.“'),
+      ], { eyebrow: 'Übertragen', badge: ctx.stufe(3, LEVELS) });
+      await ctx.T.twoFinger(w4, { label: 'Beide ein Beispiel gesagt: Finger drauf' });
       const reached = ergebnisse.filter((r) => r.reached).length;
       const stops = ergebnisse.reduce((a, r) => a + r.stops, 0);
       return {
         summary: reached === 2 ? 'Zweimal am Ziel. Ansage, Hören, Nachfragen – das war Teamarbeit.' : reached === 1 ? 'Einmal am Ziel. Ein Crash ist kein Fehler, sondern zwei Bilder im Kopf.' : 'Keine Runde am Ziel – und trotzdem viel gelernt: Rückfragen gleichen Bilder ab.',
         stats: [[reached, 'mal am Ziel'], [stops, 'mal Stopp'], [picked.length, 'Helfer gewählt']],
+        extra: alltag ? h('p', { class: 'muted small' }, 'Euer Alltag dafür: ' + alltag + '.') : null,
       };
     },
   });

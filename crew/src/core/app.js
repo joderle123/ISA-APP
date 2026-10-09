@@ -161,6 +161,7 @@
   }
 
   /* Hilfe: immer erreichbar */
+  const STOPP_ZEICHEN = { hand: 'Hand flach hoch', wort: 'Das Wort „Stopp“', x: 'X mit den Armen', tisch: 'Zweimal auf den Tisch klopfen' };
   function showHelp() {
     const nums = [
       ['Kanner- a Jugendtelefon', '116 111', 'anonym und kostenlos'],
@@ -172,6 +173,8 @@
       h('p', { class: 'lead' }, 'Wenn dich etwas belastet: Sprich mit einer erwachsenen Person, der du vertraust. Zum Beispiel hier in der Annexe.'),
       h('div', { class: 'list' }, nums.map(([n, t, d]) => h('div', { class: 'li' }, h('div', null, h('b', null, n), d ? h('div', { class: 'muted small' }, d) : null), h('span', { class: 'display selectable', style: { fontSize: '1.4em' } }, t)))),
       h('div', { class: 'stack', style: { gap: '8px' } }, h('span', { class: 'eyebrow' }, 'Die Knöpfe oben'), safetyRows()),
+      // Stopp-Zeichen der Crew (aus dem Spiel „Probelauf“, ohne Namen gespeichert)
+      STOPP_ZEICHEN[S.stoppZeichen] ? h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Euer Stopp-Zeichen'), h('p', null, h('b', null, STOPP_ZEICHEN[S.stoppZeichen]), ' – wer es zeigt, muss nichts erklären.')) : null,
       h('p', { class: 'muted small' }, 'Antwort-Karte: Deine Wahl wird nirgends gespeichert.'));
     closeCoach();
     const actions = [{ label: 'Schließen', value: true }];
@@ -627,12 +630,15 @@
     }
     for (;;) {
       if (!m) m = await pickMissionList(ms, t, !missionForToday());
+      // „Darum geht's“: worum es geht und wozu es im echten Leben hilft
+      const warum = CREW.games && CREW.games.warumCard ? CREW.games.warumCard(CREW.games.didaktik('missions', m.id), { cls: 'enter-2 mission-warum' }) : null;
       const wrap = ui.screen([
         h('div', { class: 'stack enter', style: { alignItems: 'center', textAlign: 'center' } },
           h('span', { class: 'eyebrow' }, 'Mission des Tages'),
           h('h1', { class: 'outline-text' }, m.title),
           m.tagline ? h('p', { class: 'lead' }, m.tagline) : null,
           h('div', { class: 'row center' }, h('span', { class: 'pill accent' }, 'ca. ' + (m.minutes || 5) + ' Min'), m.hook ? h('span', { class: 'pill' }, m.hook) : null)),
+        warum,
       ], { center: true });
       if (m.color) wrap.style.setProperty('--mc', m.color);
       CREW.sound.play('reveal');
@@ -657,25 +663,48 @@
     }), t);
   }
 
-  /* Nachspielzeit: kurz, freiwillig */
+  /* Nachspielzeit: kurz, freiwillig. „Das habt ihr heute geübt“ + drei Fragen (gemerkt, schwer, diese Woche).
+     „Andere Fragen“ zieht drei aus dem Fragen-Pool der Mission. */
   async function doDebrief(mission, ctx) {
     const t = guard();
-    const qs = mission.debrief && mission.debrief.length ? mission.debrief : ['Was nehmt ihr aus der Runde mit?'];
-    let q = pick(qs);
-    const card = ui.say(q, { eyebrow: 'Nachspielzeit', speakText: () => q });
+    const G = CREW.games || {};
+    const e = G.didaktik ? G.didaktik('missions', mission.id) : null;
+    const pool = mission.debrief && mission.debrief.length ? mission.debrief : ['Was nehmt ihr aus der Runde mit?'];
+    const first = e && e.fragen && e.fragen.length ? e.fragen.slice(0, 3) : CREW.util.shuffle(pool).slice(0, 3);
+    let qs = first;
+    let fromPool = !(e && e.fragen && e.fragen.length);
+    const ICONS = ['eye', 'mountain', 'calendar'];
+    const TAGS = ['Gemerkt', 'Schwer', 'Diese Woche'];
+    const rb = (txt) => (G.readBtn ? G.readBtn(txt) : null);
+    const qBox = h('div', { class: 'nach-qs' });
+    const draw = () => {
+      clear(qBox);
+      qs.forEach((q, i) => qBox.appendChild(h('div', { class: 'nach-q pop', style: { animationDelay: i * 90 + 'ms' } },
+        h('span', { class: 'nach-q-ic', 'aria-hidden': 'true' }, CREW.icon(fromPool ? 'chat' : ICONS[i], 24)),
+        h('div', { class: 'stack', style: { gap: '2px', minWidth: 0 } }, h('span', { class: 'nach-q-tag' }, fromPool ? 'Frage ' + (i + 1) : TAGS[i]), h('span', { class: 'nach-q-t' }, q)),
+        rb(q))));
+    };
+    draw();
     const tm = ui.timer(90, { autostart: false });
     const wrap = ui.screen([
-      card,
+      h('div', { class: 'stack enter', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Nachspielzeit'), h('h2', null, 'Kurz drüber reden')),
+      e ? h('div', { class: 'nach-geuebt enter' },
+        h('span', { class: 'nach-geuebt-ic', 'aria-hidden': 'true' }, CREW.icon('check', 30)),
+        h('div', { class: 'stack', style: { gap: '4px', flex: '1' } }, h('span', { class: 'eyebrow' }, 'Das habt ihr heute geübt'), h('b', { class: 'nach-geuebt-t' }, e.geuebt), G.skillRow ? G.skillRow(e) : null),
+        rb('Das habt ihr heute geübt: ' + e.geuebt)) : null,
+      qBox,
       h('div', { class: 'row between' },
         h('p', { class: 'muted', style: { maxWidth: '46ch' } }, 'Wer will, sagt was. Passen ist okay.'),
         h('div', { class: 'row' }, tm.el, ui.btn('Timer', () => tm.start(), { variant: 'ghost', small: true, icon: 'timer' }))),
     ]);
+    wrap.classList.add('nach-screen');
     for (;;) {
-      const r = await waitX(ui.choice(wrap, [{ label: 'Andere Frage', value: 'other', variant: 'ghost', icon: 'shuffle' }, { label: 'Fertig', value: 'done', iconRight: 'right' }]), t, 'done');
+      const r = await waitX(ui.choice(wrap, [{ label: 'Andere Fragen', value: 'other', variant: 'ghost', icon: 'shuffle' }, { label: 'Fertig', value: 'done', iconRight: 'right' }]), t, 'done');
       if (r === 'done') break;
-      const rest = qs.filter((x) => x !== q);
-      q = rest.length ? pick(rest) : q;
-      card.querySelector('.say').textContent = q;
+      const rest = pool.filter((x) => !qs.includes(x));
+      qs = (rest.length >= 3 ? CREW.util.shuffle(rest) : CREW.util.shuffle(pool)).slice(0, 3);
+      fromPool = true;
+      draw();
       wrap.lastChild.remove();
     }
     tm.stop();
@@ -1050,7 +1079,9 @@
       return h('div', { class: 'li', style: { flexDirection: 'column', alignItems: 'stretch' } },
         h('div', { class: 'row between' },
           h('div', null, h('h3', null, m.title), h('div', { class: 'muted small' }, (m.day ? WEEKDAYS[m.day] : 'frei') + ' · ca. ' + (m.minutes || 5) + ' Min' + (m.etep ? ' · ETEP-Stufe ' + m.etep : ''))),
-          h('div', { class: 'row' }, toggle, ui.btn('Jetzt spielen', () => { startSession(m); }, { small: true, icon: 'play' }))),
+          h('div', { class: 'row' }, toggle,
+            CREW.games && CREW.games.didaktik('missions', m.id) ? ui.btn('Hinweise', () => CREW.games.showHinweise('missions', m.id, m.title), { small: true, variant: 'ghost', icon: 'bulb', id: 'tips-m-' + m.id }) : null,
+            ui.btn('Jetzt spielen', () => { startSession(m); }, { small: true, icon: 'play' }))),
         m.teacherNote ? h('p', { class: 'small' }, m.teacherNote) : null,
         m.themes ? h('div', { class: 'row' }, m.themes.map((x) => h('span', { class: 'pill' }, x))) : null,
         m.eldib && m.eldib.length ? h('div', { class: 'small muted' }, h('b', null, 'ELDiB-Bezug (Vorschlag): '), m.eldib.map((e) => e.code + ' ' + e.text).join(' · ')) : null);
@@ -1061,7 +1092,9 @@
     return h('div', { class: 'stack' },
       h('h3', null, 'Solo-Spiele (alleine auf dem iPad)'),
       h('div', { class: 'list' }, CREW.soloGames.map((g) => h('div', { class: 'li', style: { flexDirection: 'column', alignItems: 'stretch' } },
-        h('div', { class: 'row between' }, h('b', null, g.title), ui.btn('Ausprobieren', () => startSolo(g), { small: true, icon: 'play' })),
+        h('div', { class: 'row between' }, h('b', null, g.title), h('div', { class: 'row' },
+          CREW.games && CREW.games.didaktik('solo', g.id) ? ui.btn('Hinweise', () => CREW.games.showHinweise('solo', g.id, g.title), { small: true, variant: 'ghost', icon: 'bulb', id: 'tips-s-' + g.id }) : null,
+          ui.btn('Ausprobieren', () => startSolo(g), { small: true, icon: 'play' }))),
         g.desc ? h('p', { class: 'small muted' }, g.desc) : null,
         g.themes ? h('div', { class: 'row' }, g.themes.map((x) => h('span', { class: 'pill' }, x))) : null,
         g.eldib && g.eldib.length ? h('div', { class: 'small muted' }, h('b', null, 'ELDiB-Bezug (Vorschlag): '), g.eldib.map((e) => e.code + ' ' + e.text).join(' · ')) : null))));
@@ -1139,6 +1172,12 @@
         h('ol', { class: 'stack', style: { margin: 0, paddingLeft: '1.2em' } },
           GUIDE_STEPS.map(([title, text], i) => h('li', null, i === 0 || i === 4 ? text : title + ': ' + text)))),
       h('div', { class: 'card stack' }, h('h3', null, 'Wochenplan'), h('div', { class: 'list' }, byDay)),
+      h('div', { class: 'card stack' }, h('h3', null, 'Verstehen, was läuft'),
+        h('ul', { class: 'stack', style: { margin: 0, paddingLeft: '1.2em' } },
+          h('li', null, 'Vor jedem Spiel steht „Darum geht’s“: ein, zwei Sätze für die Jugendlichen, worum es geht und wozu es im echten Leben hilft, dazu der Skill (oft mit Skill-Karte aus dem Skills-Kurs).'),
+          h('li', null, 'Viele Spiele steigen in Level auf: erst erkennen, dann begründen, dann anwenden oder die Perspektive wechseln.'),
+          h('li', null, 'Am Ende kommt die Nachbesprechung: „Das habt ihr heute geübt“ und drei Fragen (gemerkt, schwer, diese Woche). Freiwillig, Passen ist okay.'),
+          h('li', null, 'Hinweise für dich (Ziel, worauf achten, Gesprächsimpulse, wenn es kippt): Lehrermodus → „Missionen“ oder „Spiele“ → Knopf „Hinweise“.'))),
       h('div', { class: 'card stack' }, h('h3', null, 'Sicherheitsregeln im Spiel'),
         h('ul', { class: 'stack', style: { margin: 0, paddingLeft: '1.2em' } },
           h('li', null, 'X-Karte (oben rechts): Jede:r darf jede Karte ohne Begründung überspringen. Auch während Animationen: Dann wird die nächste Karte übersprungen.'),

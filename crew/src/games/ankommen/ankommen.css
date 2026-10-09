@@ -96,3 +96,11 @@
 /* Frag weiter: Chips in zwei Spalten, kleiner */
 .fw-chips { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 .fw-chips .chip { font-size: .9em; padding: 6px 10px; white-space: normal; text-align: left; justify-content: flex-start; }
+
+/* ---------- Level-Bausteine (Regel bauen, Kompliment, Crew-Zeichen) ---------- */
+.regel-plakat { border-color: var(--yellow); background: color-mix(in srgb, var(--yellow) 10%, var(--panel)); }
+.regel-preview { font-family: var(--font-display); }
+.sp-kompliment { border-color: var(--yellow); text-align: center; align-items: center; }
+.sa-zeichen { align-items: center; text-align: center; min-height: 120px; }
+.sa-zeichen .t-title { font-size: 1.05em; }
+.opt-grid .sa-zeichen.sel { background: var(--yellow); color: var(--yellow-ink); }

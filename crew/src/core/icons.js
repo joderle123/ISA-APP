@@ -38,6 +38,12 @@
     shield: '<path d="M12 3 4.5 6v6c0 4.5 3.2 7.8 7.5 9 4.3-1.2 7.5-4.5 7.5-9V6z"/>',
     copy: '<rect x="8.5" y="8.5" width="12" height="12" rx="2"/><path d="M15.5 8.5v-3a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/>',
     download: '<path d="M12 4v11M7 10.5l5 5 5-5M4.5 20h15"/>',
+    // Für „Darum geht's“, Stufen und Nachbesprechung
+    target: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/>',
+    steps: '<path d="M3 20.5h5v-5h5v-5h5v-5h3"/><path d="M3 20.5h18"/>',
+    calendar: '<rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M8 14h2M12 14h2M8 17h2"/>',
+    bulb: '<path d="M9 17.5h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.4 1.1 2.2v1.5h5V16c0-.8.4-1.6 1.1-2.2A6 6 0 0 0 12 3z"/>',
+    mountain: '<path d="M2.5 19.5 9 8l4 6.5 2.5-3.5 6 8.5z"/><path d="m7.4 10.8 1.6 1.4 1.6-1.6"/>',
   };
 
   function icon(name, size) {

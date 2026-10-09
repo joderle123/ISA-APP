@@ -2,7 +2,10 @@
    Eine Figur hat ein zu großes Ziel („besser in Mathe“). Der Machbar-Meter steht auf Rot. Mit drei Taps
    (Wann? Wo? Wie klein?) schrumpft das Ziel; der Meter wird erst grün, wenn der Schritt winzig ist –
    dann entsteht ein Wenn-dann-Satz. Danach optional das Gleiche für dich: nur auf dem Bildschirm,
-   nichts wird gespeichert, X löscht. */
+   nichts wird gespeichert, X löscht.
+   In drei Level: 1) Mit Meter (Ziel 1: der Meter zeigt nach jedem Tipp, wie groß es noch ist),
+   2) Selbst prüfen (Ziel 2: kein Meter – du schätzt selbst, ob der Schritt winzig ist, dann kommt die Auflösung),
+   3) Für dich (freiwillig, nur auf dem Bildschirm). */
 (function () {
   'use strict';
   const CREW = window.CREW;
@@ -53,27 +56,31 @@
       wie: [{ t: 'nie wieder Energy', s: 3 }, { t: 'nur noch einer am Tag', s: 2 }, { t: 'einmal Wasser statt Energy kaufen', s: 1 }] },
   ];
   const FRAGEN = [{ id: 'wann', q: 'Wann?', icon: 'timer' }, { id: 'wo', q: 'Wo?', icon: 'base' }, { id: 'wie', q: 'Wie klein?', icon: 'leaf' }];
+  const LEVELS = ['Mit Meter', 'Selbst prüfen', 'Für dich'];
 
   // Größe (3–9) → Meter-Wert: 3 = winzig (grün), 9 = riesig (rot)
   const meterValue = (sum) => Math.round(10 + ((sum - 3) / 6) * 85);
   const wennDann = (a) => 'Wenn ich ' + a.wann.t + ' ' + a.wo.t + ' bin, dann: ' + a.wie.t + '.';
 
   /* Ziel-Karte mit Machbar-Meter und den drei Taps */
-  function zielCard(ctx, z, i, total, answers, m) {
+  function zielCard(ctx, z, i, total, answers, m, blind) {
     const name = CREW.games.figures[z.fig].name;
     return h('div', { class: 'stack' },
       ctx.figureCard({ fig: z.fig, mood: z.mood, text: '„' + z.ziel + '“', eyebrow: 'Ziel ' + (i + 1) + ' von ' + total + ' · ' + name + ' nimmt sich vor', speakText: name + ' nimmt sich vor: ' + z.ziel }),
-      h('div', { class: 'card stack ks-meter' }, h('div', { class: 'row between' }, h('b', null, 'Machbar-Meter'), h('span', { class: 'muted small' }, 'Rot = zu groß. Grün = winzig und machbar.')), m.el),
+      blind
+        ? h('div', { class: 'card stack ks-meter ks-blind' }, h('div', { class: 'row between' }, h('b', null, 'Machbar-Meter'), h('span', { class: 'muted small' }, 'Diesmal verdeckt. Du prüfst selbst.')), h('div', { class: 'ks-blind-bar' }, CREW.icon('eyeOff', 22), h('span', null, 'kommt am Ende')))
+        : h('div', { class: 'card stack ks-meter' }, h('div', { class: 'row between' }, h('b', null, 'Machbar-Meter'), h('span', { class: 'muted small' }, 'Rot = zu groß. Grün = winzig und machbar.')), m.el),
       h('div', { class: 'ks-taps' }, FRAGEN.map((f) => h('div', { class: 'ks-tap', 'data-size': answers[f.id] ? String(answers[f.id].s) : '0' }, h('span', { class: 'ks-tap-ic' }, CREW.icon(f.icon, 20)), h('b', null, f.q), h('span', { class: 'small' }, answers[f.id] ? answers[f.id].t : '– noch offen –')))));
   }
 
   /* Ein Ziel schrumpfen: drei Taps, danach so lange nachbessern, bis der Meter grün ist (max. 3 Nachbesserungen) */
-  async function schrumpfen(ctx, z, i, total) {
+  async function schrumpfen(ctx, z, i, total, blind) {
     const answers = {};
     const m = ctx.meter({ value: 95, label: 'Größe' });
+    const lv = blind ? 2 : 1;
     let taps = 0;
     for (const f of FRAGEN) {
-      const w = ctx.scr([zielCard(ctx, z, i, total, answers, m), ctx.say(f.q + ' Tipp an, was das Ziel kleiner macht.', { eyebrow: 'Tap ' + (FRAGEN.indexOf(f) + 1) + ' von 3', small: true })], { eyebrow: 'Ziel ' + (i + 1) + ' · ' + f.q });
+      const w = ctx.scr([zielCard(ctx, z, i, total, answers, m, blind), ctx.say(f.q + ' Tipp an, was das Ziel kleiner macht.', { eyebrow: 'Tap ' + (FRAGEN.indexOf(f) + 1) + ' von 3', small: true })], { eyebrow: 'Ziel ' + (i + 1) + ' · ' + f.q, badge: ctx.stufe(lv, LEVELS) });
       const r = await ctx.ask(w, ctx.rshuffle(z[f.id]).map((o) => ({ label: o.t, value: o.t, variant: 'ghost' })));
       if (r === ctx.SKIP) return null;
       answers[f.id] = z[f.id].find((o) => o.t === r);
@@ -82,14 +89,24 @@
     }
     let sum = answers.wann.s + answers.wo.s + answers.wie.s;
     let fixes = 0;
+    let selbst = null;
+    if (blind) {
+      // Level 2: Erst selbst einschätzen, dann zeigt der Meter die Wahrheit
+      const wS = ctx.scr([zielCard(ctx, z, i, total, answers, m, true), ctx.say('Lies deine drei Taps. Ist der Schritt jetzt so winzig, dass ' + CREW.games.figures[z.fig].name + ' heute anfängt?', { eyebrow: 'Selbst prüfen', small: true })], { eyebrow: 'Ziel ' + (i + 1) + ' · Prüfen', badge: ctx.stufe(2, LEVELS) });
+      selbst = await ctx.ask(wS, [{ label: 'Noch zu groß', value: 'gross', variant: 'ghost' }, { label: 'Ja, winzig', value: 'winzig', variant: 'good', icon: 'check' }]);
+      const stimmt = (selbst === 'winzig') === (sum === 3);
+      const wR = ctx.scr([zielCard(ctx, z, i, total, answers, m, false), ctx.say(selbst === ctx.SKIP ? 'Hier ist der Meter.' : stimmt ? 'Gut geprüft! ' + (sum === 3 ? 'Der Meter ist grün.' : 'Der Meter sagt auch: noch zu groß.') : (sum === 3 ? 'Strenger als nötig: Der Meter ist schon grün.' : 'Fast: Der Meter ist noch nicht grün. Ein Teil ist noch groß.'), { eyebrow: 'Der Meter', small: true })], { eyebrow: 'Ziel ' + (i + 1) + ' · Meter', badge: ctx.stufe(2, LEVELS) });
+      if (stimmt) CREW.sound.play('good');
+      await ctx.next(wR, sum === 3 ? 'Weiter' : 'Kleiner machen');
+    }
     while (sum > 3 && fixes < 3) {
       // Noch nicht grün: Welcher Tap ist noch zu groß?
       const big = FRAGEN.filter((f) => answers[f.id].s > 1);
-      const w = ctx.scr([zielCard(ctx, z, i, total, answers, m), ctx.say('Noch nicht grün. ' + (sum >= 7 ? 'Das ist noch ein Berg.' : 'Fast.') + ' Welcher Teil ist noch zu groß? Tipp ihn an und mach ihn kleiner.', { eyebrow: 'Noch zu groß', small: true })], { eyebrow: 'Ziel ' + (i + 1) + ' · Kleiner' });
+      const w = ctx.scr([zielCard(ctx, z, i, total, answers, m), ctx.say('Noch nicht grün. ' + (sum >= 7 ? 'Das ist noch ein Berg.' : 'Fast.') + ' Welcher Teil ist noch zu groß? Tipp ihn an und mach ihn kleiner.', { eyebrow: 'Noch zu groß', small: true })], { eyebrow: 'Ziel ' + (i + 1) + ' · Kleiner', badge: ctx.stufe(lv, LEVELS) });
       const which = await ctx.ask(w, big.map((f) => ({ label: f.q + ' · ' + answers[f.id].t, value: f.id, variant: 'ghost', icon: f.icon })).concat([{ label: 'So lassen', value: 'keep', variant: 'ghost', auto: false }]));
       if (which === ctx.SKIP || which === 'keep') break;
       const f = FRAGEN.find((x) => x.id === which);
-      const w2 = ctx.scr([zielCard(ctx, z, i, total, answers, m), ctx.say(f.q + ' Noch kleiner.', { eyebrow: 'Nachbessern', small: true })], { eyebrow: 'Ziel ' + (i + 1) + ' · ' + f.q });
+      const w2 = ctx.scr([zielCard(ctx, z, i, total, answers, m), ctx.say(f.q + ' Noch kleiner.', { eyebrow: 'Nachbessern', small: true })], { eyebrow: 'Ziel ' + (i + 1) + ' · ' + f.q, badge: ctx.stufe(lv, LEVELS) });
       const r = await ctx.ask(w2, ctx.rshuffle(z[f.id].filter((o) => o.s < answers[f.id].s)).map((o) => ({ label: o.t, value: o.t, variant: 'ghost' })));
       if (r === ctx.SKIP) break;
       answers[f.id] = z[f.id].find((o) => o.t === r);
@@ -106,9 +123,9 @@
         h('div', { class: 'row between' }, h('span', { class: 'eyebrow' }, green ? 'Grün: Wenn-dann-Satz' : 'Noch gelb: Wenn-dann-Satz, erster Versuch'), ctx.readBtn(satz)),
         h('p', { class: 'say small-say' }, satz),
         h('p', { class: 'muted small' }, green ? 'So klein, dass ' + CREW.games.figures[z.fig].name + ' heute noch anfängt. Danach kommt Schritt zwei von allein.' : 'Ein Berg bleibt liegen. Ein Krümel wird gegessen. Nächstes Mal noch kleiner.')),
-    ], { eyebrow: 'Ziel ' + (i + 1) + ' · Satz' });
+    ], { eyebrow: 'Ziel ' + (i + 1) + ' · Satz', badge: ctx.stufe(lv, LEVELS) });
     await ctx.next(w3, i + 1 < total ? 'Nächstes Ziel' : 'Weiter');
-    return { green, taps };
+    return { green, taps, selbst };
   }
 
   /* Optional: das Gleiche für dich. Nur auf dem Bildschirm, nichts wird gespeichert, X löscht. */
@@ -134,7 +151,7 @@
         h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Dein Ziel'), ziel, h('span', { class: 'eyebrow' }, 'Drei Taps'), wann, wo, wie),
         h('div', { class: 'card stack' }, m.el, h('span', { class: 'eyebrow' }, 'Dein Wenn-dann-Satz'), satz, h('p', { class: 'muted small' }, 'Der Meter wird grün, wenn alle drei Felder stehen. Ob der Schritt winzig ist, weißt nur du.'))),
       ctx.safetyLine('freiwillig'),
-    ], { eyebrow: 'Für dich' });
+    ], { eyebrow: 'Für dich', badge: ctx.stufe(3, LEVELS) });
     const r = await ctx.ask(w, [{ label: 'Lieber nicht', value: 'no', variant: 'ghost', icon: 'x' }, { label: 'Satz gelesen, fertig', value: 'ok', iconRight: 'right' }]);
     // Alles vergessen: Felder leeren, bevor der Bildschirm verschwindet
     [ziel, wann, wo, wie].forEach((x) => { x.value = ''; });
@@ -149,7 +166,8 @@
     safety: ['figuren', 'freiwillig'],
     async run(ctx) {
       await ctx.T.intro({
-        rule: 'Ein Ziel ist zu groß. Drei Taps machen es klein: Wann? Wo? Wie klein? Grün heißt: so winzig, dass die Figur heute anfängt.',
+        rule: 'Ein Ziel ist zu groß. Drei Taps machen es klein: Wann? Wo? Wie klein? Erst mit Meter, dann prüfst du selbst.',
+        levels: LEVELS,
         steps: [
           { icon: 'star', title: 'Ziel ist rot', text: 'Zu groß, um anzufangen.' },
           { icon: 'leaf', title: 'Drei Taps', text: 'Wann, wo, wie klein.' },
@@ -162,10 +180,12 @@
       const ziele = ctx.rshuffle(ZIELE.filter((z) => z.set === (set === 'gesund' ? 'gesund' : 'basis'))).slice(0, 2);
       let green = 0, taps = 0, played = 0;
       for (let i = 0; i < ziele.length; i++) {
-        const r = await schrumpfen(ctx, ziele[i], i, ziele.length);
+        if (i === 1) await ctx.T.level({ n: 2, names: LEVELS, text: 'Jetzt ohne Meter: Du entscheidest selbst, ob der Schritt winzig genug ist. Dann kommt die Auflösung.' });
+        const r = await schrumpfen(ctx, ziele[i], i, ziele.length, i === 1);
         if (!r) continue;
         played++; taps += r.taps; if (r.green) green++;
       }
+      await ctx.T.level({ n: 3, names: LEVELS, text: 'Freiwillig: dasselbe für dich. Nur auf dem Bildschirm, nichts wird gespeichert.', label: 'Weiter' });
       const mine = await fuerDich(ctx);
       return {
         summary: played ? (green === played ? 'Alle Ziele grün. Ein Krümel heute schlägt einen Berg irgendwann.' : 'Ziele geschrumpft. Grün wird es erst, wenn der Schritt winzig ist.') : 'Heute nur reingeschaut. Auch okay.',

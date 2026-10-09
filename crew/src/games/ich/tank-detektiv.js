@@ -4,7 +4,9 @@
    Schritt, der ihn füllt. Bei einem Wunsch statt Bedürfnis („neue Sneaker“) bleibt der Tank leer –
    „Rückfrage nötig“, nie „falsch“. Detektiv, nicht Patient: Es geht immer um die Figur.
    Variante j1-e04: Fall 3 ist der Sneaker-Wunsch, Schlussrunde mit zwei Chips aus „Was steckt dahinter?“.
-   Variante j1-e29: Fälle rund um Schlaf, Essen, Bewegung, Bildschirm (Gesund-Plan). */
+   Variante j1-e29: Fälle rund um Schlaf, Essen, Bewegung, Bildschirm (Gesund-Plan).
+   Stufen je Fall: 1) Signal lesen (welcher Tank?), 2) Nachfragen (nur bei Wünschen: Rückfrage an die Figur),
+   3) Kleiner Schritt. Der Wunsch-Fall kommt zuletzt – davor ein Level-Hinweis. */
 (function () {
   'use strict';
   const CREW = window.CREW;
@@ -20,6 +22,7 @@
     { id: 'frei', name: 'Selbst bestimmen', icon: 'star', colour: '#3da5ff', desc: 'selbst entscheiden, nicht nur Regeln' },
   ];
   const tank = (id) => TANKS.find((t) => t.id === id);
+  const LEVELS = ['Signal lesen', 'Nachfragen', 'Kleiner Schritt'];
   // Eigene CSS-Variable setzen (h() kennt keine --Variablen)
   const cv = (el, k, v) => { el.style.setProperty(k, v); return el; };
 
@@ -91,7 +94,7 @@
     const w1 = ctx.scr([
       fallCard(ctx, f, i, total),
       h('div', { class: 'card stack' }, h('div', { class: 'row between' }, h('b', null, 'Welcher Tank ist bei ' + name + ' leer? Einigt euch.'), ctx.readBtn('Welcher Tank ist leer? ' + TANKS.map((t) => t.name + ': ' + t.desc).join('. '))), grid.el),
-    ], { eyebrow: 'Fall ' + (i + 1) + ' · Tank' });
+    ], { eyebrow: 'Fall ' + (i + 1) + ' · Tank', badge: ctx.stufe(1, LEVELS) });
     const ok = await ctx.T.twoFinger(w1, { label: 'Beide: Finger drauf, wenn ihr euch einig seid', hint: 'Erst einen Tank antippen. Dann zwei Finger, kurz halten.' });
     if (ok === ctx.SKIP) return;
     if (!picked) { picked = f.tank || (f.dahinter && f.dahinter[0]); }
@@ -105,7 +108,7 @@
         h('div', { class: 'row center' }, h('span', { class: 'pill teamB', style: { fontSize: '1.1em' } }, 'Rückfrage nötig')),
         ctx.figureCard({ fig: f.fig, mood: 'neutral', text: '„' + f.wunsch + '“ ist ein Wunsch. Ein Wunsch füllt keinen Tank von allein. Fragt ' + name + ' nach: „' + f.rueckfrage + '“', eyebrow: 'Der Tank bleibt leer' }),
         h('div', { class: 'card stack' }, h('b', null, 'Eine Person liest die Rückfrage laut vor. Dann tippt auf „' + name + ' antwortet“.'), h('p', { class: 'muted small' }, 'Nicht falsch – nur noch nicht fertig ermittelt.')),
-      ], { eyebrow: 'Fall ' + (i + 1) + ' · Rückfrage' });
+      ], { eyebrow: 'Fall ' + (i + 1) + ' · Rückfrage', badge: ctx.stufe(2, LEVELS) });
       const r2 = await ctx.next(w2, name + ' antwortet');
       if (r2 === ctx.SKIP) return;
       // Nach der Antwort: Welcher Tank steckt dahinter? (mehrere passen)
@@ -115,7 +118,7 @@
       const w3 = ctx.scr([
         ctx.figureCard({ fig: f.fig, mood: 'traurig', text: f.antwort, eyebrow: 'Antwort auf die Rückfrage' }),
         h('div', { class: 'card stack' }, h('b', null, 'Jetzt nochmal: Welcher Tank steckt dahinter?'), g3.el),
-      ], { eyebrow: 'Fall ' + (i + 1) + ' · Dahinter' });
+      ], { eyebrow: 'Fall ' + (i + 1) + ' · Dahinter', badge: ctx.stufe(2, LEVELS) });
       const ok3 = await ctx.T.twoFinger(w3, { label: 'Beide: Finger drauf' });
       if (ok3 === ctx.SKIP) return;
       picked = picked2 || f.dahinter[0];
@@ -131,7 +134,7 @@
     const w4 = ctx.scr([
       h('div', { class: 'row', style: { gap: '10px', alignItems: 'center' } }, cv(h('span', { class: 'tank mini' }, h('span', { class: 'tank-glass' }, h('i')), h('span', { class: 'tank-ic' }, CREW.icon(t.icon, 18))), '--tk', t.colour), h('div', { class: 'stack', style: { gap: '2px' } }, h('span', { class: 'eyebrow' }, 'Euer Tank'), h('b', null, t.name)), h('span', { class: 'muted small' }, spur)),
       ctx.say('Welcher Schritt füllt den Tank „' + t.name + '“ – und ist so klein, dass ' + name + ' ihn heute noch schafft?', { eyebrow: 'Der kleinste Schritt', small: true }),
-    ], { eyebrow: 'Fall ' + (i + 1) + ' · Schritt' });
+    ], { eyebrow: 'Fall ' + (i + 1) + ' · Schritt', badge: ctx.stufe(3, LEVELS) });
     let stepPick = null;
     const row = h('div', { class: 'stack' }, steps.map((s) => { const b = h('button', { type: 'button', class: 'chip', style: { justifyContent: 'flex-start', textAlign: 'left' } }, s.label); b.addEventListener('click', () => { CREW.sound.play('tap'); stepPick = s; row.querySelectorAll('.chip').forEach((x) => x.classList.toggle('sel', x === b)); }); return b; }));
     w4.appendChild(h('div', { class: 'card' }, row));
@@ -151,7 +154,7 @@
       g5.el,
       ctx.figureCard({ fig: f.fig, mood: level === 3 ? 'froh' : level === 1 ? 'neutral' : 'genervt', text: fb, eyebrow: level === 3 ? 'Tank voll' : level === 1 ? 'Ein paar Tropfen' : 'Tank bleibt leer' }),
       level < 3 ? h('p', { class: 'muted small' }, 'Der kleinste Schritt wäre: „' + f.steps.find((s) => s.best).label + '“') : null,
-    ], { eyebrow: 'Fall ' + (i + 1) + ' · Ergebnis' });
+    ], { eyebrow: 'Fall ' + (i + 1) + ' · Ergebnis', badge: ctx.stufe(3, LEVELS) });
     if (level === 3) CREW.sound.play('great');
     await ctx.next(w5, i + 1 < total ? 'Nächster Fall' : 'Weiter');
   }
@@ -165,7 +168,8 @@
     help: false,
     async run(ctx) {
       await ctx.T.intro({
-        rule: 'Zu zweit: Eine Figur zeigt Verhalten. Findet den leeren Tank und den kleinsten Schritt, der ihn füllt. Bestätigt mit zwei Fingern.',
+        rule: 'Zu zweit: Eine Figur zeigt Verhalten. Findet den leeren Tank und den kleinsten Schritt, der ihn füllt. Beim Wunsch: erst nachfragen.',
+        levels: LEVELS,
         steps: [
           { icon: 'eye', title: 'Signal lesen', text: 'Verhalten ist eine Spur, keine Diagnose.' },
           { icon: 'users', title: 'Tank wählen', text: 'Sechs Tanks. Einigt euch, zwei Finger drauf.' },
@@ -183,14 +187,18 @@
       const which = set === 'gesund' ? 'gesund' : 'basis';
       let pool;
       if (which === 'gesund') {
-        pool = ctx.rshuffle(FAELLE.filter((f) => f.set === 'gesund')).slice(0, 3);
+        // Wunsch-Fall zuletzt: erst Bedürfnisse lesen, dann die schwerere Rückfrage
+        pool = ctx.rshuffle(FAELLE.filter((f) => f.set === 'gesund')).slice(0, 3).sort((a, b) => (a.wunsch ? 1 : 0) - (b.wunsch ? 1 : 0));
       } else {
         // j1-e04: zwei Bedürfnis-Fälle, Fall 3 ist der Sneaker-Wunsch
         const needs = ctx.rshuffle(FAELLE.filter((f) => f.set === 'basis' && !f.wunsch)).slice(0, 2);
         pool = needs.concat([FAELLE.find((f) => f.id === 'sneaker')]);
       }
       const stats = { faelle: 0, treffer: 0, klein: 0, wuensche: 0 };
-      for (let i = 0; i < pool.length; i++) await fall(ctx, pool[i], i, pool.length, stats);
+      for (let i = 0; i < pool.length; i++) {
+        if (pool[i].wunsch) await ctx.T.level({ n: 2, names: LEVELS, text: 'Dieser Fall ist ein Wunsch. Ein Wunsch füllt keinen Tank von allein – erst nachfragen, dann ermitteln.', eyebrow: 'Jetzt wird’s kniffliger' });
+        await fall(ctx, pool[i], i, pool.length, stats);
+      }
 
       // Schlussrunde: zwei Chips aus „Was steckt dahinter?“ – Wunsch oder Bedürfnis? (nur reden, kein Zählen)
       const dahinter = ctx.rshuffle([

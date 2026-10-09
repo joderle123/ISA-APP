@@ -31,6 +31,42 @@
     { fig: 'luca', mood: 'neutral', text: 'Beim Schulfest soll Luca den Stand mit drei Jüngeren leiten. Die hören nicht zu.', satz: '„Auf mich hört keiner.“' },
   ];
   const SATZANFAENGE = ['… setzt [Stärke] ein, indem …', 'Mit [Stärke] würde … zuerst …', '[Stärke] heißt hier: …'];
+  const LEVELS = ['Wählen', 'Andere Stärke', 'Kombi-Plan'];
+
+  /* Level 3: zwei Stärken aus dem Turm zu einem Plan verbinden – „Erst X, dann Y.“ */
+  async function kombiPlan(ctx, m, blocks, karten) {
+    const name = CREW.games.figures[m.fig].name;
+    const seen = new Set();
+    let pool = blocks.filter((b) => (seen.has(b.name) ? false : seen.add(b.name)));
+    if (pool.length < 2) pool = karten.map((k) => ({ name: k.name, icon: k.icon }));
+    const wahl = [];
+    const preview = h('p', { class: 'say small-say regel-preview muted' }, 'Erst … , dann … .');
+    const upd = () => {
+      preview.textContent = 'Erst ' + (wahl[0] ? wahl[0].name : '…') + ', dann ' + (wahl[1] ? wahl[1].name : '…') + '.';
+      preview.classList.toggle('muted', wahl.length < 2);
+    };
+    const grid = h('div', { class: 'se-grid' }, pool.map((k) => {
+      const b = h('button', { type: 'button', class: 'se-card', 'data-kombi': k.name }, CREW.icon(k.icon, 22), h('b', null, k.name), h('span', { class: 'se-nr muted small' }, ''));
+      b.addEventListener('click', () => {
+        CREW.sound.play('tap');
+        const i = wahl.indexOf(k);
+        if (i >= 0) wahl.splice(i, 1); else { if (wahl.length >= 2) wahl.shift(); wahl.push(k); }
+        grid.querySelectorAll('.se-card').forEach((x, j) => { const w = wahl.indexOf(pool[j]); x.classList.toggle('sel', w >= 0); x.querySelector('.se-nr').textContent = w === 0 ? 'Erst' : w === 1 ? 'Dann' : ''; });
+        upd();
+      });
+      return b;
+    }));
+    const w = ctx.scr([
+      missionCard(ctx, m, 'Kombi-Plan für ' + name, false),
+      h('div', { class: 'card stack' }, h('div', { class: 'row between' }, h('b', null, 'Welche zwei Blöcke helfen zusammen? Tippt in der Reihenfolge.'), ctx.readBtn('Welche zwei Stärken helfen ' + name + ' zusammen? Erst die eine, dann die andere.')), grid),
+      h('div', { class: 'card stack regel-plakat' }, h('span', { class: 'eyebrow' }, 'Plan von ' + name), preview, h('p', { class: 'muted small' }, 'Eine Person sagt laut, wie das aussieht. Die anderen ergänzen.')),
+    ], { eyebrow: 'Kombi-Plan', badge: ctx.stufe(3, LEVELS) });
+    if (ctx.auto) { grid.querySelectorAll('.se-card')[0].click(); grid.querySelectorAll('.se-card')[1].click(); }
+    const r = await ctx.ask(w, [{ label: 'Ohne Plan weiter', value: 'pass', variant: 'ghost', icon: 'x', auto: false }, { label: 'Plan steht', value: 'ok', iconRight: 'right', id: 'btn-kombi' }]);
+    if (r !== 'ok' || wahl.length < 2) return null;
+    CREW.sound.play('good');
+    return name + ': Erst ' + wahl[0].name + ', dann ' + wahl[1].name + '.';
+  }
 
   /* Stärken-Turm: ein Block pro gesetzter Stärke, von unten nach oben */
   function turm(blocks) {
@@ -49,11 +85,12 @@
     help: false,
     async run(ctx) {
       await ctx.T.intro({
-        rule: 'Das iPad wandert. Wer dran ist, wählt eine Stärke und sagt in einem Satz, wie genau die Figur sie einsetzt. Die nächste Person braucht eine andere Stärke.',
+        rule: 'Das iPad wandert. Wähle eine Stärke und sag in einem Satz, wie die Figur sie einsetzt. Die nächste Person braucht eine andere.',
+        levels: LEVELS,
         steps: [
           { icon: 'eye', title: 'Mini-Mission', text: 'Eine Figur steckt in einer Situation.' },
           { icon: 'bolt', title: 'Stärke wählen', text: 'Zwölf Karten. Jede nur einmal pro Mission.' },
-          { icon: 'base', title: 'Block in den Turm', text: 'Jede Stärke baut den Turm höher.' },
+          { icon: 'base', title: 'Kombi-Plan', text: 'Am Ende: zwei Blöcke verbinden – „Erst …, dann …“.' },
         ],
         probe: ctx.T.probeCard('Probe: Sam hat den Schlüssel verloren. Welche Stärke? Tippt irgendwas – zählt nicht.', [{ label: 'Ruhe bewahren', value: 1, variant: 'ghost', icon: 'pause' }, { label: 'Hilfe holen', value: 2, variant: 'ghost', icon: 'phone' }]),
       });
@@ -99,11 +136,11 @@
                 h('div', { class: 'card stack' }, h('div', { class: 'row between' }, h('b', null, p === 0 ? 'Welche Stärke hilft ' + name + ' hier?' : 'Eine ANDERE Stärke für dieselbe Mission.'), ctx.readBtn('Stärken: ' + karten.map((k) => k.name).join(', '))), grid),
                 h('div', { class: 'card soft stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, beweis ? 'Sag in einem Satz, warum die Stärke den bremsenden Satz widerlegt' : 'Sag in einem Satz, wie genau'), h('div', { class: 'row', style: { gap: '6px' } }, satzAnf.map((s) => h('span', { class: 'chip small' }, s))))),
               turm(blocks)),
-          ], { eyebrow: label });
+          ], { eyebrow: label, badge: ctx.stufe(p === 0 ? 1 : 2, LEVELS) });
           const r = await ctx.ask(wrap, [{ label: 'Pass, weitergeben', value: 'pass', variant: 'ghost', icon: 'x', auto: false }, { label: 'Gesagt – Block setzen', value: 'ok', iconRight: 'right', id: 'btn-block' }]);
           if (r === 'ok' && pick) {
             used.push(pick.id);
-            blocks.push({ name: pick.name, icon: pick.icon, colour: CREW.games.figures[m.fig].colour });
+            blocks.push({ name: pick.name, icon: pick.icon, colour: CREW.games.figures[m.fig].colour, mi });
             CREW.sound.play('good');
           } else {
             passed++;
@@ -122,16 +159,22 @@
           if (!last) await ctx.T.passOn({ direction: 'links', extra: h('div', { class: 'row center' }, h('span', { class: 'pill' }, 'Turm: ' + blocks.length + (blocks.length === 1 ? ' Block' : ' Blöcke')), p + 1 < perMission ? h('span', { class: 'pill accent' }, 'Gleiche Mission, andere Stärke') : h('span', { class: 'pill accent' }, 'Neue Mission')) });
         }
       }
+      // Level 3: Kombi-Plan für die letzte Mission (mit allen Blöcken aus dem Turm)
+      await ctx.T.level({ n: 3, names: LEVELS, text: 'Eine Stärke allein reicht oft nicht. Verbindet zwei Blöcke aus dem Turm zu einem Plan: „Erst …, dann …“.' });
+      const plan = await kombiPlan(ctx, missionen[missionen.length - 1], blocks, karten);
       // Turm fertig: Zahl in den Crew-Stand (nur die Zahl, keine Namen) – fürs HQ
       try { const st = CREW.state; st.staerkenTurm = (st.staerkenTurm || 0) + blocks.length; CREW.save(); } catch (e) { /* egal */ }
       const wt = ctx.scr([
         h('div', { class: 'se-layout' },
-          h('div', { class: 'stack' }, ctx.say('Euer Stärken-Turm. Eine Mission, viele Werkzeuge. Welche Stärke hättet ihr nicht gedacht?', { eyebrow: 'Turm fertig', small: true }), h('p', { class: 'muted small' }, 'Kurz reden, wer will. Die Blöcke zählen für den Stärken-Turm im HQ.'), ctx.safetyLine('freiwillig')),
+          h('div', { class: 'stack' },
+            ctx.say('Euer Stärken-Turm. Eine Lage, viele Werkzeuge – und zusammen werden sie stärker.', { eyebrow: 'Turm fertig', small: true }),
+            plan ? h('div', { class: 'card stack regel-plakat' }, h('span', { class: 'eyebrow' }, 'Kombi-Plan'), h('p', { class: 'say small-say' }, plan)) : null,
+            h('p', { class: 'muted small' }, 'Die Blöcke zählen für den Stärken-Turm im HQ.')),
           turm(blocks)),
       ], { eyebrow: 'Turm' });
       if (blocks.length >= 4 && !ctx.fast) CREW.ui.confetti(80);
-      await ctx.next(wt, 'Fertig');
-      return { summary: blocks.length ? 'Turm mit ' + blocks.length + ' Blöcken. Stärken sind Werkzeuge, keine Etiketten.' : 'Heute nur reingeschaut. Auch okay.', stats: [[blocks.length, 'Blöcke'], [passed, 'mal gepasst']], help: helpShown };
+      await ctx.next(wt, 'Weiter');
+      return { summary: blocks.length ? 'Turm mit ' + blocks.length + ' Blöcken. Stärken sind Werkzeuge, keine Etiketten.' : 'Heute nur reingeschaut. Auch okay.', stats: [[blocks.length, 'Blöcke'], [plan ? 1 : 0, 'Kombi-Plan'], [passed, 'mal gepasst']], help: helpShown, extra: plan ? h('p', { class: 'lead' }, '„' + plan + '“') : null };
     },
   });
 })();

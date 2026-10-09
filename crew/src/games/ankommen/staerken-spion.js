@@ -4,7 +4,10 @@
    („Achte, dass jede:r einmal drankommt“). Teil 2 (nach dem Spiel, 3 Min): „Spione, aufdecken!“ – der Spion sagt
    nur, WAS er gesehen hat, die Crew rät das Stärke-Wort. Werwolf-Gefühl ohne Verräter.
    Rollen kommen aus Tagescode + Platz (gleich auf allen iPads) – per QR auf dem eigenen iPad oder am Lehrer-iPad
-   mit „Nur du schaust“ reihum. Variante j1-e06: Stärken-Wörter aus den Bäumen der Crew (eigene Wörter sagen). */
+   mit „Nur du schaust“ reihum. Variante j1-e06: Stärken-Wörter aus den Bäumen der Crew (eigene Wörter sagen).
+   Teil 2 in drei Level: 1) Beobachten – der Spion sagt nur, WAS er gesehen hat, 2) Benennen – die Crew rät die
+   Stärke und sagt, woran sie es erkennt, 3) Kompliment – Satz „Du hast … – das war …“, die Person sagt nur „Danke“
+   (Skill-Karte „Komplimente“). */
 (function () {
   'use strict';
   const CREW = window.CREW;
@@ -21,6 +24,7 @@
     'Achte darauf, dass niemand ausgelacht wird. Wenn doch: Thema wechseln oder „Lass gut sein“.',
     'Achte darauf, dass die Stillen Platz bekommen. Ein Blick, ein Nicken reicht manchmal.',
   ];
+  const LEVELS = ['Beobachten', 'Benennen', 'Kompliment'];
   const STAERKEN = ['Geduld', 'Mut', 'Humor', 'Fairness', 'Ruhe', 'Ausdauer', 'Hilfsbereitschaft', 'Ehrlichkeit', 'Kreativität', 'Teamgeist', 'Genauigkeit', 'Zuhören', 'Überblick', 'Anpacken'];
 
   /* Geheime Verteilung: 1 Spion bei ≤4, sonst 2; 1 Schutzengel. Gleich auf allen iPads (Tagescode). */
@@ -97,22 +101,33 @@
     if ((await ctx.next(w0, 'Erster Spion')) === ctx.SKIP) return gefunden;
     for (let s = 0; s < v.spione.length; s++) {
       // Der Spion sagt nur, WAS er gesehen hat – die Crew rät das Wort
+      // Level 1: Beobachten – nur das Verhalten, keine Bewertung
+      const w0b = ctx.scr([
+        ctx.say('Spion ' + (s + 1) + ': Sag nur, WAS du gesehen hast. Zum Beispiel: „Jemand hat gewartet, bis alle fertig waren.“ Kein Urteil, kein Name nötig.', { eyebrow: 'Spion ' + (s + 1) + ' von ' + v.spione.length }),
+        h('div', { class: 'card stack soft' }, h('b', null, 'Verhalten statt Aussehen'), h('p', { class: 'muted small' }, '„Hat geholfen, den Tisch aufzuräumen“ – ja. „Hat coole Schuhe“ – das ist keine Stärke.')),
+        ctx.safetyLine('freiwillig'),
+      ], { eyebrow: 'Spion ' + (s + 1), badge: ctx.stufe(1, LEVELS) });
+      if ((await ctx.next(w0b, 'Gesagt – jetzt raten')) === ctx.SKIP) continue;
+      // Level 2: Benennen – die Crew rät das Stärke-Wort und sagt, woran sie es erkennt
       const w1 = ctx.scr([
-        ctx.say('Spion ' + (s + 1) + ': Sag nur, WAS du gesehen hast. Zum Beispiel: „Jemand hat gewartet, bis alle fertig waren.“ Keine Bewertung, kein Name nötig.', { eyebrow: 'Spion ' + (s + 1) + ' von ' + v.spione.length }),
-        h('div', { class: 'card stack soft' }, h('b', null, 'Die Crew rät: Welche Stärke steckt dahinter?'), h('p', { class: 'muted small' }, unit === 'j1-e06' ? 'Nehmt die Stärken aus euren Bäumen – oder ein Wort von der Wand.' : 'Wort von der Wand – oder ein eigenes.')),
+        ctx.say('Welche Stärke steckt dahinter? Und woran erkennt man sie?', { eyebrow: 'Die Crew rät', small: true }),
+        h('p', { class: 'muted small' }, unit === 'j1-e06' ? 'Nehmt die Stärken aus euren Bäumen – oder ein Wort von der Wand.' : 'Wort von der Wand – oder ein eigenes.'),
         h('div', { class: 'sp-words' }, STAERKEN.map((x) => h('span', { class: 'chip' }, x))),
         CREW.ui.teacherLine('Wenn die Crew sich auf ein Wort geeinigt hat, einmal antippen. Nicht abstimmen.'),
-        ctx.safetyLine('freiwillig'),
-      ], { eyebrow: 'Spion ' + (s + 1) });
+      ], { eyebrow: 'Spion ' + (s + 1), badge: ctx.stufe(2, LEVELS) });
       const word = await ctx.ask(w1, STAERKEN.map((x) => ({ label: x, value: x, variant: 'ghost' })).concat([{ label: 'Eigenes Wort', value: 'eigen', variant: 'ghost', icon: 'plus' }, { label: 'Kein Spion hat sich gemeldet', value: 'keiner', variant: 'ghost', icon: 'x' }]));
       if (word === ctx.SKIP || word === 'keiner') continue;
       gefunden.push(word === 'eigen' ? 'eigenes Wort' : word);
-      // Annehmen: Die Person, die gemeint war, darf „Danke“ sagen – oder nichts. Beides okay.
+      // Level 3: Kompliment – aus Beobachtung und Stärke wird ein Satz. Annehmen heißt: nur „Danke“.
+      const wort = word === 'eigen' ? '[euer Wort]' : word;
       const w2 = ctx.scr([
         h('div', { class: 'row center' }, h('span', { class: 'pill accent', style: { fontSize: '1.4em' } }, CREW.icon('star', 20), word === 'eigen' ? 'Eigenes Wort' : word)),
-        ctx.say('Wenn die Person, die gemeint war, möchte: Sie darf jetzt „Danke“ sagen – oder einfach nicken. Rückmeldung annehmen ist auch eine Stärke.', { eyebrow: 'Annehmen', small: true }),
-        h('p', { class: 'muted small' }, 'Wer nicht genannt werden will, sagt es – dann bleibt es beim WAS.'),
-      ], { eyebrow: 'Spion ' + (s + 1), center: true });
+        h('div', { class: 'card stack sp-kompliment' },
+          h('span', { class: 'eyebrow' }, 'Als Kompliment sagen'),
+          h('p', { class: 'say small-say' }, '„Du hast … – das war ' + wort + '.“'),
+          h('p', { class: 'muted small' }, 'Der Spion sagt den Satz zur Person – wenn sie genannt werden will. Sonst an die ganze Crew.')),
+        ctx.say('Die Person sagt nur: „Danke.“ Nicht kleinreden, nicht „ach, war nix“. Annehmen ist auch eine Stärke.', { eyebrow: 'Annehmen', small: true }),
+      ], { eyebrow: 'Spion ' + (s + 1), center: true, badge: ctx.stufe(3, LEVELS) });
       await ctx.next(w2, s + 1 < v.spione.length ? 'Nächster Spion' : 'Zum Schutzengel');
     }
     // Schutzengel: Hat es geklappt?
@@ -147,7 +162,8 @@
         return { summary: n ? 'Rolle gezogen. Der Rest läuft am Beamer.' : 'Keine Rolle gezogen. Du bist Crew.', noSticker: true };
       }
       await ctx.T.intro({
-        rule: 'Vor dem Spiel zieht jede:r geheim eine Rolle. Spione merken sich, was jemand gut macht. Nach dem Spiel: aufdecken – die Crew rät die Stärke.',
+        rule: 'Vor dem Spiel zieht jede:r geheim eine Rolle. Spione merken sich, was jemand gut macht. Danach: aufdecken, Stärke raten, Kompliment sagen.',
+        levels: LEVELS,
         steps: [
           { icon: 'eyeOff', title: 'Teil 1: Rolle ziehen', text: 'Geheim. Crew, Spion oder Schutzengel.' },
           { icon: 'play', title: 'Anderes Spiel spielen', text: 'Spione schauen genau hin.' },
@@ -167,7 +183,7 @@
       if (teil === 1) {
         gezogen = await teil1(ctx, v);
         // Auto-Modus (Test): beide Teile hintereinander, damit alles einmal läuft
-        if (!ctx.auto) return { summary: 'Rollen verteilt. Nach dem Spiel: Teil 2 „Aufdecken“.', stats: [[v.spione.length, 'Spione'], [1, 'Schutzengel']], noSticker: true };
+        if (!ctx.auto) return { summary: 'Rollen verteilt. Nach dem Spiel: Teil 2 „Aufdecken“.', stats: [[v.spione.length, 'Spione'], [1, 'Schutzengel']], noSticker: true, noNach: true };
       }
       gefunden = await teil2(ctx, v);
       return { summary: gefunden.length ? gefunden.length + ' Stärke' + (gefunden.length > 1 ? 'n' : '') + ' am Verhalten erkannt. Spione, gute Arbeit.' : 'Aufgedeckt. Beim nächsten Mal schauen die Spione noch genauer.', stats: [[gefunden.length, 'Stärken erkannt'], [v.spione.length, 'Spione']] };

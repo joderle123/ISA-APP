@@ -2,7 +2,9 @@
    Jedes iPad zeigt per Tagescode ein Stück eines Bildes (Crew-Logo, Skyline des HQ). Ohne ein Wort legt die Crew
    die iPads so auf den Tisch, dass das Bild entsteht; der Beamer (Lehrer-iPad) zählt die Sekunden.
    Durchgang 2 mit Worten und neuem Bild – welcher war schneller, welcher entspannter?
-   Bei ungerader Crew-Größe wird der letzte Platz Beobachter:in (achtet auf Ruhe und Tempo). */
+   Bei ungerader Crew-Größe wird der letzte Platz Beobachter:in (achtet auf Ruhe und Tempo).
+   In drei Level: 1) Ohne Worte, 2) Mit Worten (Vergleich: schneller oder entspannter?), 3) Unsere Zeichen –
+   die Crew wählt zwei Zeichen ohne Worte, die ab jetzt in der Gruppe gelten. */
 (function () {
   'use strict';
   const CREW = window.CREW;
@@ -44,6 +46,16 @@
     },
   ];
 
+  const LEVELS = ['Ohne Worte', 'Mit Worten', 'Unsere Zeichen'];
+  const ZEICHEN = [
+    { id: 'fertig', t: 'Daumen hoch = fertig', icon: 'check' },
+    { id: 'warte', t: 'Hand flach = warte kurz', icon: 'pause' },
+    { id: 'hier', t: 'Auf den Platz zeigen = leg es hierhin', icon: 'right' },
+    { id: 'hilfe', t: 'Hand heben = ich brauch Hilfe', icon: 'user' },
+    { id: 'okay', t: 'Nicken = passt für mich', icon: 'heart' },
+    { id: 'leise', t: 'Finger an den Mund = leiser bitte', icon: 'speakerOff' },
+  ];
+
   /* Teile-Raster: 2 Reihen × (pieces/2) Spalten. Teil-Nummer 0 … pieces-1, links oben zuerst */
   function raster(pieces) { const cols = Math.max(1, pieces / 2); return { cols, rows: pieces > 1 ? 2 : 1, w: 800 / cols, hgt: pieces > 1 ? 200 : 400 }; }
   function pieceSvg(bild, pieces, idx) {
@@ -77,7 +89,7 @@
         h('div', { class: 'card stack', style: { alignItems: 'center' } }, h('span', { class: 'eyebrow' }, 'Sekunden'), clock),
         h('div', { class: 'card stack' }, h('b', null, pieces + ' Teile · ' + R.rows + ' Reihe' + (R.rows > 1 ? 'n' : '') + ' × ' + R.cols), layout, h('p', { class: 'muted small' }, 'So viele iPads liegen am Ende nebeneinander. Was drauf ist, sieht nur die Crew.'))),
       CREW.ui.teacherLine('Nur zuschauen. „Fertig!“ tippen, wenn die Crew das Bild gelegt hat – oder wenn sie es sagt.'),
-    ], { eyebrow: titel });
+    ], { eyebrow: titel, badge: ctx.stufe(/Runde 2/.test(titel) ? 2 : 1, LEVELS) });
     const r = await ctx.ask(wrap, [{ label: 'Fertig!', value: 'ok', variant: 'good', icon: 'check', id: 'btn-fertig' }]);
     clearInterval(iv);
     return r === ctx.SKIP ? null : Math.round((Date.now() - t0) / 100) / 10;
@@ -92,7 +104,8 @@
     help: false,
     async run(ctx) {
       await ctx.T.intro({
-        rule: 'Jedes iPad zeigt ein Stück eines Bildes. Legt die iPads ohne ein Wort so zusammen, dass das Bild entsteht. Runde 2: mit Worten.',
+        rule: 'Jedes iPad zeigt ein Stück eines Bildes. Legt die iPads ohne ein Wort zusammen. Runde 2 mit Worten. Dann wählt ihr eure Zeichen.',
+        levels: LEVELS,
         steps: [
           { icon: 'eyeOff', title: 'Dein Teil', text: 'Nur du siehst dein Stück.' },
           { icon: 'users', title: 'Ohne Worte', text: 'Zeigen, nicken, warten. Kein Wort.' },
@@ -133,7 +146,7 @@
           const n = await ctx.next(w, r === 0 ? 'Bild liegt · Runde 2' : 'Fertig');
           if (n !== ctx.SKIP) shown++;
         }
-        return { summary: shown ? 'Dein Teil war dabei. Der Rest steht am Beamer.' : 'Heute nur reingeschaut.', stats: [[shown, 'Runden']] };
+        return { summary: shown ? 'Dein Teil war dabei. Der Rest steht am Beamer.' : 'Heute nur reingeschaut.', stats: [[shown, 'Runden']], noNach: true };
       }
 
       /* ---- Beamer / Lehrer-iPad: zählt, deckt auf, vergleicht ---- */
@@ -169,17 +182,33 @@
       ], { eyebrow: 'Vergleich' });
       const s = await ctx.ask(w3, [{ label: 'Ohne Worte entspannter', value: 'ohne', variant: 'ghost' }, { label: 'Mit Worten entspannter', value: 'mit', variant: 'ghost' }, { label: 'Beide gleich', value: 'gleich', variant: 'ghost' }]);
       if (s !== ctx.SKIP) stimmung.push(s);
-      // Was hat ohne Worte geholfen? (Gesprächs-Chips, kein Tippen nötig)
+      // Level 3: Unsere Zeichen – zwei Zeichen ohne Worte, die ab jetzt in der Crew gelten
+      const gewaehlt = [];
+      const zch = ZEICHEN.map((z) => {
+        const b = h('button', { type: 'button', class: 'tile sa-zeichen', 'data-zeichen': z.id }, h('span', { class: 't-icon' }, CREW.icon(z.icon, 28)), h('span', { class: 't-title' }, z.t));
+        b.addEventListener('click', () => { CREW.sound.play('tap'); const k = gewaehlt.indexOf(z); if (k >= 0) gewaehlt.splice(k, 1); else if (gewaehlt.length < 2) gewaehlt.push(z); else return; b.classList.toggle('sel', gewaehlt.includes(z)); });
+        return b;
+      });
+      if (ctx.auto) { zch[0].click(); zch[1].click(); }
       const w4 = ctx.scr([
-        ctx.say('Was hat ohne Worte geholfen? Jede:r, der mag, zeigt auf einen Chip.', { eyebrow: 'Abschluss', small: true }),
-        h('div', { class: 'row', style: { gap: '8px' } }, ['Zeigen', 'Warten', 'Blickkontakt', 'Nicken', 'Hinlegen und schauen', 'Jemand hat angefangen', 'Platz machen'].map((x) => h('span', { class: 'chip' }, x))),
-        ctx.safetyLine('freiwillig'),
-      ], { eyebrow: 'Abschluss' });
-      await ctx.next(w4, 'Fertig');
+        ctx.say('Ohne Worte hat geklappt, weil ihr Zeichen benutzt habt. Welche zwei Zeichen sollen ab jetzt in der Crew gelten?', { eyebrow: 'Unsere Zeichen', small: true }),
+        h('div', { class: 'opt-grid' }, zch),
+        CREW.ui.teacherLine('Die Crew zeigt die Zeichen kurz vor und einigt sich. Tippe die zwei, mit denen alle leben können.'),
+      ], { eyebrow: 'Zeichen', badge: ctx.stufe(3, LEVELS) });
+      await ctx.next(w4, 'Das sind unsere Zeichen');
+      if (gewaehlt.length) {
+        const w5 = ctx.scr([
+          h('div', { class: 'stop-big display', style: { color: 'var(--good)' } }, 'Unsere Zeichen'),
+          h('div', { class: 'grid two' }, gewaehlt.map((z) => h('div', { class: 'card stack', style: { alignItems: 'center', textAlign: 'center' } }, h('span', { class: 'game-ic', style: { width: '64px', height: '64px' } }, CREW.icon(z.icon, 34)), h('b', null, z.t)))),
+          ctx.say('Probiert sie gleich aus: im nächsten Spiel, in der Gruppenarbeit, wenn es laut ist.', { eyebrow: 'Ab jetzt', small: true }),
+        ], { eyebrow: 'Zeichen', center: true, badge: ctx.stufe(3, LEVELS) });
+        CREW.sound.play('great');
+        await ctx.next(w5, 'Weiter');
+      }
       // Nur bei klarem Unterschied (ab 2 s) vergleichen – die Zeit hängt am Tippen der Lehrkraft
       const faster = zeiten.length === 2 ? (Math.abs(zeiten[1] - zeiten[0]) < 2 ? 'Beide Runden gleich schnell' : zeiten[1] < zeiten[0] ? 'Mit Worten war es schneller' : 'Ohne Worte war es schneller') : 'Bild gelegt';
       const calm = stimmung[0] === 'ohne' ? ', ohne Worte entspannter.' : stimmung[0] === 'mit' ? ', mit Worten entspannter.' : '.';
-      return { summary: faster + calm + ' Ein Team braucht beides.', stats: zeiten.map((t, i) => [t.toFixed(1).replace('.', ','), 's Runde ' + (i + 1)]) };
+      return { summary: faster + calm + ' Ein Team braucht beides.', stats: zeiten.map((t, i) => [t.toFixed(1).replace('.', ','), 's Runde ' + (i + 1)]), extra: gewaehlt.length ? h('p', { class: 'muted small' }, 'Eure Zeichen: ' + gewaehlt.map((z) => z.t).join(' · ')) : null };
     },
   });
 })();
