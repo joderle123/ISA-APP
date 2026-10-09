@@ -365,6 +365,16 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     }
   }
   const schritte = ergebnis.filter((x): x is PlanSchritt => !!x)
+  // Kern aus einer Material-Einheit ohne deren Einstieg (kurze Stunde): den Einstieg als Hinweis davor (roter Faden)
+  const kernSchritt = schritte.find((x) => x.rolle === 'kern')
+  if (kernSchritt?.ref.startsWith('m:') && !kernSchritt.hinweis && !schritte.some((x) => x !== kernSchritt && quelleEinheit(x.ref) === quelleEinheit(kernSchritt.ref))) {
+    const einheit = quelleEinheit(kernSchritt.ref)
+    const einstieg = (c.k.nachRolle.get('einstieg') ?? []).find((e) => quelleEinheit(e.id) === einheit && e.typ === 'schritt' && Number(e.id.split(':')[2] ?? 0) < Number(kernSchritt.ref.split(':')[2] ?? 0))
+    if (einstieg?.typ === 'schritt') {
+      const t = einstieg.text.replace(/\s+/g, ' ').trim()
+      kernSchritt.hinweis = `Erst kurz einführen: ${t.length > 160 ? t.slice(0, 159).replace(/\s+\S*$/, '') + ' …' : t}`
+    }
+  }
   // Französisch bevorzugt (T-M4): sagen, wie viele Teile es nur auf Deutsch gibt
   if (c.sprache === 'fr') {
     const teile = [...schritte.map((x) => x.ref), ...(blatt?.bausteine ?? []).map((b) => b.ref)]

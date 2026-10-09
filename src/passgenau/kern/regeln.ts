@@ -171,6 +171,7 @@ export function pruefe(e: KatalogEintrag, c: Kontext, o: Pruefung = {}): string 
   if (e.typ === 'baustein') {
     if (e.zielgruppe === 'fachkraft' || e.zielgruppe === 'eltern') return 'für Erwachsene'
     if (e.material.includes('film')) return 'braucht einen Film'
+    if (e.material.includes('vorher')) return 'braucht eine Übung davor'
     if (c.alter >= 12 && e.art.includes('rueckblick')) return 'Smileys'
   }
   // heikel nur freigeschaltet; Selbstverletzung/Suizid nie als Baustein (T-M1)
@@ -317,8 +318,13 @@ function zielWert(e: KatalogEintrag, c: Kontext, o: BewertungsOpt): { w: number;
 function themaWert(e: KatalogEintrag, c: Kontext): number {
   let w = 0
   for (const t of e.thema) w = Math.max(w, Math.min(1, c.themen.get(t)?.w ?? 0))
+  // hat das Kind Themen und der Eintrag ein ganz anderes (Trennung, Verliebtsein …), etwas weniger
+  if (!w && c.themen.size && e.thema.length && !e.thema.some((t) => ALLGEMEINE_THEMEN.has(t))) w = -0.25
   return w
 }
+
+/** Themen, die zu fast allem passen – kein „fremdes Thema“ */
+const ALLGEMEINE_THEMEN = new Set(['gefuehle', 'selbstwert', 'regeln'])
 
 function tagesformWert(e: KatalogEintrag, c: Kontext): number {
   if (c.weg === 'leicht') {

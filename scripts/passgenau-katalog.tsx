@@ -89,7 +89,7 @@ function themenAus(fest: string[], text: string, max = 3): string[] {
 // ---------------------------------------------------------------------------------------------------------------
 
 const RE = {
-  bewegungStark: /\b(lauf|laufen|renn|rennt|spring|springt|hüpf|tanz|werf|wirft|fang|klatsch|stampf|balancier|rück(en)? an rücken|wand schieben|zeitungsball|schüttel|sprint|staffel|fangspiel|platzwechsel)/i,
+  bewegungStark: /\b(lauf|laufen|renn|rennt|spring|springt|hüpf|tanz|zuwerf|zuwirft|(ball|bälle|kugel\w*|säckchen) (zu)?werf|werf\w* (den|einen|die) (ball|kugel|säckchen)|fang|klatsch|stampf|balancier|rück(en)? an rücken|wand schieben|zeitungsball|schüttel|sprint|staffel|fangspiel|platzwechsel)/i,
   bewegung: /\b(beweg|aufsteh|steht auf|stehen auf|stellt sich|stellen sich|im raum|durch den raum|gehen|geht herum|ball|strecken|dehnen|positionslinie|auf der linie|ecke des raums|ecken)/i,
   spiel: /\b(spiel|würfel|raten|rät|quiz|memory|bingo|runde[n]?\b|punkte sammeln|gewinnt|wettbewerb)/i,
   gespraech: /\b(gespräch|erzähl|besprech|fragen|frage|reden|austausch|tauschen sich|berichte|sagt|sagen|nennt|nennen|diskutier|unterhalt)/i,
@@ -108,7 +108,7 @@ const RE = {
   digital: /\b(ipad|beamer|handy|app\b|video|film|tablet)/i,
   /** Arbeit, die nur mit einer Gruppe geht */
   gruppeStark: /\b(kleingruppe|tischgruppe|teams?\b|mannschaft|plenum|in gruppen|gruppenarbeit|die (ganze )?klasse|ganze gruppe|hälfte der|zwei gruppen|drei gruppen|vier gruppen|stationen|abstimm|gruppenfoto|alle anderen|im stuhlkreis|innen- und außenkreis|kugellager|stille post|jede gruppe|gruppen bilden|paare bilden|partnerwechsel|im kreis herum|reihum)/gi,
-  gruppeSchwach: /\b(gruppe|klasse|paar|paare|zu zweit|partner|mitschüler|die anderen|alle kinder|alle jugendlichen|jede person|jedes kind|jede[rs]? jugendliche|sitzkreis|kreis)/gi,
+  gruppeSchwach: /\b(gruppe|klasse|paar|paare|zu zweit|partner|mitschüler|die anderen|alle kinder|alle jugendlichen|jede person|jedes kind|jede[rs]? jugendliche|sitzkreis|kreis|alle (stehen|sitzen|schreiben|zeigen|stellen|gehen|halten|legen)|wer sich|nebeneinander|jede\/r|jede:r|niemand erklärt|die runde|in der runde)/gi,
   kursBezug: /\b(einheit \d|letzte[nr]? (einheit|woche|stunde|mal)|vorige[nr]? (einheit|woche)|skills-pass|mission|plakat aus|aus einheit|kursjahr|wochen-mission|im heft)/i,
   vorher: /\b(letzte[nr]? (einheit|woche|stunde|mal)|vorige[nr]? (einheit|woche)|mission|seit letzter|vom letzten mal|rückblick auf)/i,
   belastung2: /\b(tod|gestorben|verstorben|trauer|trennung|scheidung|missbrauch|gewalt zu hause|selbstverletz|suizid|ritzen|trauma)/i,
@@ -154,7 +154,7 @@ function einzelAusText(text: string): { wert: Einzeltauglich; sicher: number } {
   const stark = zaehle(RE.gruppeStark, text)
   const schwach = zaehle(RE.gruppeSchwach, text)
   if (stark >= 1) return { wert: 'nein', sicher: 0.6 }
-  if (schwach >= 3) return { wert: 'angepasst', sicher: 0.4 }
+  if (schwach >= 2) return { wert: 'angepasst', sicher: 0.4 }
   return { wert: 'ja', sicher: schwach ? 0.4 : 0.6 }
 }
 
@@ -765,6 +765,8 @@ for (const blatt of q.blaetter) {
     if (zielgruppe) b.zielgruppe = zielgruppe
     // Blätter zu Filmen brauchen den Film (und seine Szenen) – Material „film“, nie allein aufs Blatt
     if (/\bfilm/i.test(blatt.id + ' ' + blatt.schlagworte.join(' ') + ' ' + blatt.de.titel)) b.material = [...new Set([...b.material, 'film'])]
+    // Aufgaben, die eine Übung davor voraussetzen („wie in der Traumreise“, „vorhin“) – nie allein aufs Passgenau-Blatt
+    if (/(traumreise|fantasiereise|phantasiereise|im video|im film|im clip|vorhin|eben gehört|eben gesehen|letzte[nr]? (stunde|woche|einheit)|in der gruppe besprochen|wie besprochen)/i.test(aufgaben) || /\b(aus|in|von|wie in) aufgabe \d|\baufgabe \d (oben|vorher)/i.test(deText)) b.material = [...new Set([...b.material, 'vorher'])]
     const merkmale = merkmaleAusText(deText)
     if (merkmale) b.merkmale = merkmale
     // mehrtägig nur die Teile, die über Tage laufen (Wochenplan, Tracker, „jeden Tag“)
@@ -792,6 +794,13 @@ const blattThemenVon = (id: string): string[] => {
   return b ? (themenNachBlatt.get(`${b.bereich}/${b.thema}`) ?? []) : []
 }
 
+/** Bewegung als Slot „Bewegung“: der Titel sagt es, oder der Text – aber keine Traumreise, Atem- oder Ruheübung, kein Gespräch
+ *  im Stehen („Vier Ecken“, „Linie von 0 bis 10“ sind Aufstellungen, keine Bewegungspause). */
+function echteBewegung(titel: string, text: string): boolean {
+  if (/(traumreise|fantasiereise|bodyscan|body-scan|atem|atmung|achtsam|ruhig|entspann|abkühl|stille|skalier|linie|ecken|aufstellung|parcours)/i.test(titel)) return /(tanz|lauf|spring|jonglier|sport|bewegungspause|gangart)/i.test(titel)
+  return RE.bewegungStark.test(titel) || RE.bewegungStark.test(text)
+}
+
 function kursSchritt(art: 'k' | 'f', e: { id: string; blaetter: string[] }, s: KursSchritt, i: number, alter: [number, number], _vorige: null, fr: KursSchritt | null): SchrittMeta | null {
   if (s.phase === 'pause') return null
   const text = [s.titel, s.text, ...(s.sagen ?? []), ...(s.punkte ?? []), s.tipp ?? '', s.wennEsKippt ?? ''].join(' ')
@@ -813,14 +822,14 @@ function kursSchritt(art: 'k' | 'f', e: { id: string; blaetter: string[] }, s: K
       rolle.push('kern')
       break
     case 'aktiv':
-      if (formate.includes('bewegung')) rolle.push('bewegung')
+      if (formate.includes('bewegung') && echteBewegung(s.titel, text)) rolle.push('bewegung')
       rolle.push('spiel')
       // Aufwärmen und reine Bewegung tragen kein Ziel – nicht als Kern
       if (s.dauer >= 10 && !/(aufwärm|warm-up|energizer|lockern|pause)/i.test(s.titel) && (formate.includes('rollenspiel') || formate.includes('gespraech') || formate.includes('denkmodell'))) rolle.push('kern')
       break
     case 'skill':
       rolle.push('regulation')
-      if (energie >= 2) rolle.push('bewegung')
+      if (energie >= 2 && echteBewegung(s.titel, text)) rolle.push('bewegung')
       break
     case 'abschluss':
       rolle.push('abschluss', 'reflexion')
@@ -1024,6 +1033,9 @@ for (const blatt of q.blaetter) {
 }
 
 // Materialien: jede Ablaufphase ein Schritt
+const MAT_WOCHEN = /(über wochen|über mehrere (tage|wochen)|einmal pro woche|jede woche|wöchentlich|im laufe der woche|während der woche)/i
+/** Text spricht eine Gruppe an („die Kinder“, „jede/r“, „die Lehrperson“) – mit einem Kind nur angepasst */
+const MAT_PLURAL = /\b(die kinder|die jugendlichen|die schüler(innen|:innen)?|jede\/r|jede:r|jede\*r|alle kinder|alle jugendlichen|die lehrperson|die lehrkraft|in der klasse|der klasse|mitschüler|klassenkamerad)/i
 function materialRolle(titel: string, text: string, typ: number): Rolle[] | null {
   const t = norm(titel)
   if (/(vorbereitung|projektrahmen|material|vorab|organisation)/.test(t)) return null
@@ -1031,8 +1043,10 @@ function materialRolle(titel: string, text: string, typ: number): Rolle[] | null
   if (/(einstieg|auftakt|hinfuhrung|ankommen|warm|einfuhrung)/.test(t)) return ['einstieg']
   if (/(transfer)/.test(t)) return ['reflexion', 'transfer']
   if (/(abschluss|reflexion|ruckblick|feedback|auswertung|ausklang)/.test(t)) return ['reflexion']
+  // über Wochen in der Klasse (Kompliment-Box, Wochenplan): nur als Transfer, nie im Kern
+  if (MAT_WOCHEN.test(text)) return ['transfer']
   const r: Rolle[] = ['kern']
-  if (RE.bewegungStark.test(text) && typ <= 10) r.push('bewegung')
+  if (RE.bewegungStark.test(text) && formateAusText(text).includes('bewegung') && typ <= 10) r.push('bewegung')
   if (/(entspann|ruhe|atem|fantasiereise|traumreise|achtsam)/i.test(text) && typ <= 10) r.push('regulation')
   return r
 }
@@ -1054,7 +1068,8 @@ for (const mat of q.materialien as Material[]) {
     const formate = formateAusText(text)
     const energie = energieAusText(text, formate)
     const einzel = einzelAusText(a.text)
-    const ez: Einzeltauglich = einzel.wert === 'nein' ? 'nein' : individuell ? 'ja' : einzel.wert
+    // Gruppenmaterial ohne Einzelvariante: spricht der Text die Gruppe an, nur „angepasst“ (fällt in Weg 1–3 heraus)
+    const ez: Einzeltauglich = einzel.wert === 'nein' ? 'nein' : individuell ? 'ja' : MAT_PLURAL.test(a.text) ? 'angepasst' : einzel.wert
     const m: SchrittMeta = {
       id: `m:${mat.id}:${i}`,
       h: hash8(JSON.stringify(a)),
@@ -1063,8 +1078,9 @@ for (const mat of q.materialien as Material[]) {
       thema: themenAus(fest, text + ' ' + mat.title),
       eldib: eldibBezug(mat.eldibGoals),
       kompetenz: [...new Set(mat.eldibGoals.slice(0, 2).map(kompetenzAusCode))],
-      alter: { von: alterVon, bis: alterBis },
-      stufen: mat.ageLevels,
+      // „die Jugendlichen“: nicht für Kinder unter 11, auch wenn das Material C3 nennt
+      alter: { von: /jugendliche/i.test(a.text) ? Math.max(alterVon, 11) : alterVon, bis: alterBis },
+      stufen: /jugendliche/i.test(a.text) ? mat.ageLevels.filter((x) => x !== 'C1' && x !== 'C2' && x !== 'C3').concat(mat.ageLevels.every((x) => ['C1', 'C2', 'C3'].includes(x)) ? mat.ageLevels : []) : mat.ageLevels,
       dauer: dauer(typ, 0.5, 1.3),
       sozialform: [...new Set(mat.participants.map((p) => (p.mode === 'Individuel' ? 'einzeln' : p.mode === 'Grupp' ? 'gruppe' : 'klasse') as Sozialform))],
       einzeltauglich: ez,
@@ -1081,6 +1097,7 @@ for (const mat of q.materialien as Material[]) {
     if (bogen) m.bogen = bogen
     const ort = ortAusText(a.text)
     if (ort) m.ort = ort
+    if (MAT_WOCHEN.test(a.text)) m.mehrtaegig = true
     zusatzSchritt(m, text)
     // leichte Aktivität ohne Förderziel (Weg 3): Spiel, Bewegung, Kreatives, Sinne – ohne Belastung, Wettbewerb, Gruppe
     const leichtesThema = mat.themes.some((x) => ['spiel-spass', 'bewegung', 'kreativitaet', 'achtsamkeit'].includes(x))
@@ -1093,6 +1110,10 @@ for (const mat of q.materialien as Material[]) {
     mListe.push({ m, text, i })
   })
   schritteMitIds(`m:${mat.id}`, mListe, (n) => `m:${mat.id}:${n}`)
+  // „ein zweites Mal“, „erneut“: setzt die Phase davor voraus (in einer früheren Sitzung der Folge)
+  mListe.forEach((x, j) => {
+    if (j > 0 && /(zweites mal|ein zweites|erneut|wiederhol|noch einmal durch|wie (beim|im|in der) (ersten|letzten|vorigen))/i.test(x.text)) x.m.voraussetzungen = { ...x.m.voraussetzungen, schritt: [mListe[j - 1].m.id] }
+  })
 }
 
 // CREW-Spiele (Jugendliche, iPad/Beamer)

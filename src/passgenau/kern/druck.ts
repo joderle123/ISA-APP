@@ -245,14 +245,17 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
   if (leiste.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: leiste })
   const ritual = k.eintraege.get(s.schritte.find((x) => x.rolle === 'ankommen')?.ref ?? '')
   const anspruch = ritual?.anspruch ?? 1
-  if (anspruch >= 1 && !(plan.weg === 'leicht' && anspruch === 0)) bausteine.push({ art: 'checkin', modus: jugend ? 'zahl' : alter <= 7 ? 'gesichter' : 'wetter' })
+  // ist das Ankommens-Ritual selbst schon ein Check-in (Gefühlstiere, Wetter, Zahl), keine zweite Karte dafür
+  const ritualText = ritual ? textVon(ritual, 'de').titel + ' ' + textVon(ritual, 'de').text : ''
+  const selbstCheckin = /(gefühl|wie geht|stimmung|wetter|heute zu (ihm|ihr|dir) passt|zahl von|skala|daumen)/i.test(ritualText)
+  if (anspruch >= 1 && !selbstCheckin) bausteine.push({ art: 'checkin', modus: jugend ? 'zahl' : alter <= 7 ? 'gesichter' : 'wetter' })
   const wahl = s.schritte.find((x) => x.wahl?.length)
   if (wahl) {
     const optionen = [wahl, ...(wahl.wahl ?? [])].slice(0, 3).map((w) => {
       const e = k.eintraege.get(w.ref)
       const t = e ? textVon(e, sprache).titel : (('t' in w && w.t) || w.ref)
       const f = e?.format[0]
-      const bild = f === 'bewegung' ? 'icon:run' : f === 'malen' ? 'icon:palette' : f === 'musik' ? 'icon:music' : f === 'spiel' ? 'icon:dice-5' : f === 'basteln' ? 'icon:puzzle' : f === 'sinne' ? 'icon:leaf' : 'icon:armchair'
+      const bild = f === 'bewegung' ? 'icon:run' : f === 'malen' ? 'icon:palette' : f === 'musik' ? 'icon:music' : f === 'spiel' ? 'icon:dice-5' : f === 'basteln' ? 'icon:puzzle' : f === 'sinne' || f === 'atmen' ? 'icon:leaf' : 'icon:armchair'
       return { text: t.length > 38 ? t.slice(0, 37) + '…' : t, bild, min: w.min }
     })
     const karte = wahl.wahlkarte ? intern(k).wahlkarten.find((w) => w.id === wahl.wahlkarte) : undefined

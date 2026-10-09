@@ -36,9 +36,13 @@ const TITEL: Record<Kompetenz, { kind: [string, string][]; jugend: [string, stri
   alltag: { kind: [['Ich schaffe das', 'J’y arrive'], ['Mein Alltag', 'Mon quotidien']], jugend: [['Meinen Alltag planen', 'Organiser mon quotidien']] },
 }
 
-export function blattTitel(c: Kontext, salz: string, leicht: boolean): { de: string; fr: string } {
+export function blattTitel(c: Kontext, salz: string, leicht: boolean, teile: KatalogEintrag[] = []): { de: string; fr: string } {
   if (leicht) return c.alter >= 12 ? { de: 'Kurze Pause', fr: 'Petite pause' } : c.alter <= 5 ? { de: 'Spielen und malen', fr: 'Jouer et dessiner' } : { de: 'Heute machen wir es uns leicht', fr: 'Aujourd’hui, on y va doucement' }
-  const feld = c.ziele.find((z) => z.feld)?.feld ?? 'alltag'
+  // Titel nach dem, worum es auf dem Blatt wirklich geht: das Kompetenzfeld der meisten Teile (Rückblicke zählen nicht)
+  const zaehl = new Map<Kompetenz, number>()
+  for (const e of teile) if (!(e.typ === 'baustein' && e.art.includes('rueckblick'))) for (const k of e.kompetenz.slice(0, 1) as Kompetenz[]) if (TITEL[k]) zaehl.set(k, (zaehl.get(k) ?? 0) + e.dauer.typ)
+  const haupt = [...zaehl.entries()].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1))[0]?.[0]
+  const feld = haupt ?? c.ziele.find((z) => z.feld)?.feld ?? 'alltag'
   const liste = TITEL[feld][c.alter >= 12 ? 'jugend' : 'kind']
   const [de, fr] = liste[Math.floor(hash01(salz + '|titel') * liste.length)]
   return { de, fr }
@@ -96,13 +100,18 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
     const bonus =
       (o.kern?.typ === 'schritt' && o.kern.blatt?.includes(e.id) ? 0.1 : 0) +
       (o.kern && o.kern.eldib.some((x) => x.gewicht === 1 && e.eldib.some((y) => y.code === x.code && y.gewicht === 1)) ? 0.08 : 0) +
-      (o.kern?.thema[0] && e.thema.includes(o.kern.thema[0]) ? 0.05 : 0)
+      (o.kern?.thema[0] && e.thema.includes(o.kern.thema[0]) ? 0.05 : 0) -
+      // ein ganz anderes Thema als die des Kindes und des Kerns (Verliebtsein, KI …) passt selten aufs Blatt
+      (c.themen.size && e.thema.length && !e.thema.some((t) => c.themen.has(t) || o.kern?.thema.includes(t)) ? 0.06 : 0)
     pool.push(bewerte(e, c, { phase: o.phase, fokus: o.fokus, bonus }))
   }
   // Ein Blatt hat mindestens zwei Teile: was allein das Zeit- oder Seitenbudget füllt, kommt nicht in Frage
   const seite = seitenMasse(k, layout)
   const allein = (b: Bewertet) => !leicht && !o.optional && (b.e.dauer.typ > budget - 2 || teilHoehe(k, b.e.id, layout) > 0.8 * seite.erste * maxSeiten)
-  const passend = (leicht ? pool : pool.filter((b) => relevant(b) || b.e.bogen === 'reflektieren')).filter((b) => !allein(b))
+  // erst das, was klar zum Ziel oder Thema gehört; nur wenn das zu wenig ist, auch Teile aus dem Bereich des Ziels
+  const stark = (b: Bewertet) => b.f.ziel >= 0.5 || b.f.thema >= 0.7
+  const starkPool = pool.filter((b) => !allein(b) && stark(b))
+  const passend = (leicht ? pool : starkPool.length >= 6 ? pool.filter((b) => stark(b) || b.e.bogen === 'reflektieren') : pool.filter((b) => relevant(b) || b.e.bogen === 'reflektieren')).filter((b) => !allein(b))
   const kernPassend = leicht ? pool : pool.filter(relevant)
   if (!o.optional && kernPassend.length < 3) {
     hinweise.push('Für dieses Ziel gibt es in dieser Stufe kaum passende Blatt-Teile – heute ohne Blatt, oder im Baukasten suchen.')
@@ -123,6 +132,8 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
     if (alle.filter((b) => (b.e as MikroBaustein).art[0] === 'aufgabe').length > maxAufgaben) return false
     // ein Rückblick (Smileys, Daumen) je Blatt genügt
     if (alle.filter((b) => (b.e as MikroBaustein).art.includes('rueckblick')).length > 1) return false
+    // Karten zum Ausschneiden: eine Sorte je Blatt
+    if (alle.filter((b) => (b.e as MikroBaustein).art.some((a) => a === 'karten' || a === 'schneiden_kleben' || a === 'memory')).length > 1) return false
     const jeQuelle = new Map<string, number>()
     for (const b of alle) jeQuelle.set((b.e as MikroBaustein).quelle.blatt, (jeQuelle.get((b.e as MikroBaustein).quelle.blatt) ?? 0) + 1)
     // höchstens zwei Pakete je Quellblatt; eine Geschichte, die ein Paket braucht, zählt nicht mit
@@ -176,6 +187,15 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
     hinweise.push('Zu wenig passende Blatt-Teile für diese Sitzung – heute ohne Blatt, oder im Baukasten suchen.')
     return null
   }
+  // zu wenig für den Slot (Σ Minuten < Hälfte): mit passenden Teilen anderer Stellen auffüllen
+  if (!leicht && !o.optional) {
+    const summe = () => gewaehlt.reduce((x, b) => x + b.e.dauer.typ, 0)
+    const rest = passend.filter((b) => !gewaehlt.includes(b) && !(b.e as MikroBaustein).braucht?.length && (!gruppe || urheberGruppe(c, b.e as MikroBaustein) === gruppe)).sort((a, b) => rang(a, b, salz + '|auf'))
+    for (const b of rest) {
+      if (summe() >= 0.5 * o.min) break
+      if (passt([b])) gewaehlt.push(b)
+    }
+  }
   // keine halbleere zweite Seite: noch ein Übungsteil oder auf eine Seite kürzen
   let seiten = verteile(k, refs(gewaehlt), layout)
   if (seiten.length === 2 && seiten[1] < 0.35) {
@@ -185,8 +205,16 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
       .find((b) => passt([b]) && verteile(k, refs([...gewaehlt, b]), layout)[1] >= 0.35)
     if (extra) gewaehlt.push(extra)
     else {
-      const ohne = gewaehlt.slice(0, -1)
-      if (ohne.length >= 2 && verteile(k, refs(ohne), layout).length === 1 && !gewaehlt[gewaehlt.length - 1].e.id.includes('notfall')) gewaehlt.pop()
+      // sonst den schwächsten Teil weglassen, ohne den alles auf eine Seite passt (nie eine gebrauchte Geschichte)
+      const gebraucht = new Set(gewaehlt.flatMap((b) => (b.e as MikroBaustein).braucht ?? []))
+      const weg = gewaehlt
+        .filter((b) => !gebraucht.has(b.e.id) && !(b.e as MikroBaustein).braucht?.length)
+        .filter((b) => {
+          const ohne = gewaehlt.filter((x) => x !== b)
+          return ohne.length >= 2 && verteile(k, refs(ohne), layout).length === 1
+        })
+        .sort((a, b) => a.s - b.s)[0]
+      if (weg) gewaehlt.splice(gewaehlt.indexOf(weg), 1)
     }
     seiten = verteile(k, refs(gewaehlt), layout)
   }
@@ -204,7 +232,7 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   for (const b of gewaehlt) jeQuelle.set((b.e as MikroBaustein).quelle.blatt, (jeQuelle.get((b.e as MikroBaustein).quelle.blatt) ?? 0) + 1)
   const [haupt, n] = [...jeQuelle.entries()].sort((a, b) => b[1] - a[1])[0]
   const quelle = intern(k).q.blatt.get(haupt)!
-  const titel = n === gewaehlt.length && !leicht ? (c.sprache === 'fr' && quelle.fr ? quelle.fr.titel : quelle.de.titel) : blattTitel(c, o.salz, leicht)[c.sprache]
+  const titel = n === gewaehlt.length && !leicht ? (c.sprache === 'fr' && quelle.fr ? quelle.fr.titel : quelle.de.titel) : blattTitel(c, o.salz, leicht, gewaehlt.map((b) => b.e))[c.sprache]
   return { teile, titel, hinweise, bewertet: new Map(gewaehlt.map((b) => [b.e.id, b])) }
 }
 
@@ -212,9 +240,11 @@ function mitStelle(b: Bewertet, stelle: Bogen | '*', formate: Set<string>, gewae
   let s = b.s
   if (stelle !== '*' && b.e.bogen === stelle) s += 0.05
   if (b.e.format.some((f) => formate.has(f))) s -= 0.04
-  // roter Faden auf dem Blatt: gleiches Thema wie die schon gewählten Teile
+  // roter Faden auf dem Blatt: gleiches Thema wie die schon gewählten Teile, lieber aus einem Blatt, das schon dabei ist
   const themen = new Set(gewaehlt.flatMap((x) => x.e.thema.slice(0, 1)))
-  if (gewaehlt.length && b.e.thema.some((t) => themen.has(t))) s += 0.05
+  if (gewaehlt.length && b.e.thema.some((t) => themen.has(t))) s += 0.08
+  const quellen = new Set(gewaehlt.map((x) => (x.e as MikroBaustein).quelle.blatt))
+  if (gewaehlt.length && !quellen.has((b.e as MikroBaustein).quelle.blatt)) s -= 0.04
   return { ...b, s }
 }
 
