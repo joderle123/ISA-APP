@@ -617,22 +617,26 @@ function Ankreuzen({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'ankreuzen' }
           {t(c, b.titel)}
         </Fliess>
       ) : null}
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
-        {eintraege.map((x, i) => (
-          <View key={i} wrap={false} style={{ width: `${100 / sp}%`, flexDirection: 'row', alignItems: x === null ? 'flex-end' : c.m.layout === 'bild' ? 'center' : 'flex-start', paddingRight: 10, marginBottom: c.m.layout === 'jugend' ? 5 : 7 }}>
-            <View style={{ marginTop: x === null || c.m.layout === 'bild' ? 0 : (c.m.basis * c.m.lh - c.m.kaestchen) / 2, marginRight: 8 }}>
-              <Kaestchen c={c} groesse={kreuzGroesse(c)} />
+      {/* in Reihen statt flexWrap: bei ungerader Zahl in zwei Spalten lag die letzte Zeile sonst über dem nächsten Baustein
+          (Blind-Bewertung 7, übereinander gedruckter Text) */}
+      {Array.from({ length: Math.ceil(eintraege.length / sp) }, (_, ri) => eintraege.slice(ri * sp, ri * sp + sp)).map((reihe, ri) => (
+        <View key={ri} wrap={false} style={{ flexDirection: 'row' }}>
+          {reihe.map((x, i) => (
+            <View key={i} wrap={false} style={{ width: `${100 / sp}%`, flexDirection: 'row', alignItems: x === null ? 'flex-end' : c.m.layout === 'bild' ? 'center' : 'flex-start', paddingRight: 10, marginBottom: c.m.layout === 'jugend' ? 5 : 7 }}>
+              <View style={{ marginTop: x === null || c.m.layout === 'bild' ? 0 : (c.m.basis * c.m.lh - c.m.kaestchen) / 2, marginRight: 8 }}>
+                <Kaestchen c={c} groesse={kreuzGroesse(c)} />
+              </View>
+              {x === null ? (
+                <View style={{ flex: 1, height: c.m.zeile * 0.9, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
+              ) : (
+                <Fliess c={c} style={{ flex: 1 }}>
+                  {t(c, x)}
+                </Fliess>
+              )}
             </View>
-            {x === null ? (
-              <View style={{ flex: 1, height: c.m.zeile * 0.9, borderBottomWidth: 0.8, borderBottomColor: NEUTRAL.linie }} />
-            ) : (
-              <Fliess c={c} style={{ flex: 1 }}>
-                {t(c, x)}
-              </Fliess>
-            )}
-          </View>
-        ))}
-      </View>
+          ))}
+        </View>
+      ))}
     </View>
   )
 }

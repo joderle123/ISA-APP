@@ -390,7 +390,9 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
       // Zuordnen und Dialog-Lücken tragen keinen eigenen Auftrag – ein kurzer Satz davor
       if (b.art === 'zuordnen' && !b.titel) liste.push({ art: 'aufgabe', text: fr ? 'Relie ce qui va ensemble.' : 'Verbinde, was zusammengehört.' })
       if (b.art === 'dialog' && b.zeilen.some((z) => !z.text)) liste.push({ art: 'aufgabe', text: fr ? 'Écris dans les lignes vides ce que tu dirais.' : 'Schreib in die leeren Zeilen, was du sagen würdest.' })
-      liste.push(o.wenigSchreiben && b.art === 'frage' ? { ...b, linien: Math.min(b.linien ?? 2, 2) } : b)
+      // Feldhöhe kommt in Millimetern (Übungsblätter), der Renderer rechnet in Zeilen
+      if (b.art === 'feld') liste.push({ ...b, hoehe: Math.max(b.zeichnen ? 6 : 3, Math.min(9, Math.round((b.hoehe ?? 36) / 8))) })
+      else liste.push(o.wenigSchreiben && b.art === 'frage' ? { ...b, linien: Math.min(b.linien ?? 2, 2) } : b)
     }
     return liste
   }
