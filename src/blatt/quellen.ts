@@ -339,6 +339,16 @@ export const QUELLEN: Record<string, string> = {
   hbscLuxemburg2024: 'Catunda, C., Goedert Mendes, F. & Lopes Ferreira, J. (2024). Risk Behaviours in School-aged Children in Luxembourg: Report on the Luxembourg HBSC Survey 2022. Esch-sur-Alzette: Université du Luxembourg.',
   wyman2010: 'Wyman, P. A., Brown, C. H., LoMurray, M., Schmeelk-Cone, K., Petrova, M., Yu, Q. et al. (2010). An outcome evaluation of the Sources of Strength suicide prevention program delivered by adolescent peer leaders in high schools. American Journal of Public Health, 100(9), 1653–1661.',
   robinson2018: 'Robinson, J., Bailey, E., Witt, K., Stefanac, N., Milner, A., Currier, D., Pirkis, J., Condron, P. & Hetrick, S. (2018). What works in youth suicide prevention? A systematic review and meta-analysis. EClinicalMedicine, 4–5, 52–91.',
+  // Spielschule: Lernen im Spiel, frühe Sprache und frühe Mathematik
+  hirshPasek2009: 'Hirsh-Pasek, K., Golinkoff, R. M., Berk, L. E. & Singer, D. G. (2009). A Mandate for Playful Learning in Preschool: Presenting the Evidence. New York: Oxford University Press.',
+  bodrovaLeong2007: 'Bodrova, E. & Leong, D. J. (2007). Tools of the Mind: The Vygotskian Approach to Early Childhood Education (2nd ed.). Upper Saddle River, NJ: Pearson.',
+  vygotsky1978: 'Vygotsky, L. S. (1978). Mind in Society: The Development of Higher Psychological Processes. Cambridge, MA: Harvard University Press.',
+  sylva2004: 'Sylva, K., Melhuish, E., Sammons, P., Siraj-Blatchford, I. & Taggart, B. (2004). The Effective Provision of Pre-School Education (EPPE) Project: Final Report. London: DfES / Institute of Education.',
+  clementsSarama2009: 'Clements, D. H. & Sarama, J. (2009). Learning and Teaching Early Math: The Learning Trajectories Approach. New York: Routledge.',
+  whitehurstLonigan1998: 'Whitehurst, G. J. & Lonigan, C. J. (1998). Child development and emergent literacy. Child Development, 69(3), 848–872.',
+  whitehurst1988: 'Whitehurst, G. J., Falco, F. L., Lonigan, C. J., Fischel, J. E., DeBaryshe, B. D., Valdez-Menchaca, M. C. & Caulfield, M. (1988). Accelerating language development through picture book reading. Developmental Psychology, 24(4), 552–559.',
+  goswamiBryant1990: 'Goswami, U. & Bryant, P. (1990). Phonological Skills and Learning to Read. Hove: Lawrence Erlbaum.',
+  menfp2011: 'Ministère de l’Éducation nationale et de la Formation professionnelle (2011). Plan d’études – École fondamentale. Luxembourg: MENFP.',
 }
 
 export const QUELLEN_TEXTE = new Set(Object.values(QUELLEN))

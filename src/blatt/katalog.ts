@@ -105,7 +105,16 @@ export const BEREICHE: BereichDef[] = [
     fr: 'Mathématiques',
     icon: 'math',
     farben: { tief: '#3F46A8', mittel: '#C5C8EE', zart: '#EEEFFB' },
-    beschreibung: 'Mathe für die Voie préparatoire (5e PF), Modul für Modul: Dezimalzahlen, Brüche, Größen und Geometrie mit Aufgaben aus dem Alltag Jugendlicher – Regel, Beispiel, Übungen in drei Stufen und Lösungen für die Lehrperson.',
+    beschreibung: 'Mathe für die Voie préparatoire (5e PF), Modul für Modul: Dezimalzahlen, Brüche, Größen, Geometrie und Statistik mit Aufgaben aus dem Alltag Jugendlicher – Regel, Beispiel, Übungen in drei Stufen und Lösungen für die Lehrperson.',
+  },
+  {
+    id: 'spielschule',
+    kuerzel: 'SP',
+    de: 'Spielschule',
+    fr: 'Préscolaire (cycle 1)',
+    icon: 'sandbox',
+    farben: { tief: '#B5600F', mittel: '#F2CDA2', zart: '#FDF3E7' },
+    beschreibung: 'Themenwochen für die Spielschule (Cycle 1): je Einheit Bildkarten und ein Blatt zum Malen, Zählen oder Zuordnen, dazu Aktivitäten für Kreis, Bewegung, Gestalten, Sprache, Musik und Sinne, ein Reim zum Mitmachen, Ideen für die Spielecken und ein Tipp für zu Hause.',
   },
 ]
 
@@ -201,6 +210,21 @@ export const THEMEN: ThemaDef[] = [
   T('mathe', 'groessen', 'Größen & Einheiten', 'Grandeurs et mesures'),
   T('mathe', 'geometrie', 'Geometrie', 'Géométrie'),
   T('mathe', 'daten', 'Daten & Statistik', 'Données et statistiques'),
+
+  T('spielschule', 'ich', 'Ich und die Gruppe', 'Moi et le groupe'),
+  T('spielschule', 'gefuehle', 'Gefühle', 'Les émotions'),
+  T('spielschule', 'koerper', 'Mein Körper und die Sinne', 'Mon corps et les sens'),
+  T('spielschule', 'familie', 'Familie und Zuhause', 'La famille et la maison'),
+  T('spielschule', 'herbst', 'Herbst', 'L’automne'),
+  T('spielschule', 'winter', 'Winter', 'L’hiver'),
+  T('spielschule', 'fruehling', 'Frühling', 'Le printemps'),
+  T('spielschule', 'sommer', 'Sommer', 'L’été'),
+  T('spielschule', 'tiere', 'Tiere', 'Les animaux'),
+  T('spielschule', 'essen', 'Essen und gesund bleiben', 'Manger et rester en forme'),
+  T('spielschule', 'farben', 'Farben, Formen und Zahlen', 'Couleurs, formes et nombres'),
+  T('spielschule', 'unterwegs', 'Unterwegs und Berufe', 'En route et les métiers'),
+  T('spielschule', 'feste', 'Feste im Jahr', 'Les fêtes de l’année'),
+  T('spielschule', 'fantasie', 'Geschichten und Fantasie', 'Histoires et imagination'),
 ]
 
 export const themaById = new Map(THEMEN.map((t) => [t.bereich + '/' + t.id, t]))

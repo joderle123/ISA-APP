@@ -309,6 +309,34 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
             </div>
           </dl>
 
+          {inhalt.lehrer.spielschule ? (
+            // Spielschule: die Woche auf einen Blick (alles Weitere auf der Seite „Aktivitäten & Ideen“ im PDF)
+            <section className="bl-woche">
+              <h3 className="bew-label mb-2">{sprache === 'fr' ? 'La semaine en un coup d’œil' : 'Die Woche auf einen Blick'}</h3>
+              <div className="mb-2 flex flex-wrap gap-1.5">
+                {inhalt.lehrer.spielschule.wortschatz.map((w) => (
+                  <span key={w} className="tag">
+                    {w}
+                  </span>
+                ))}
+              </div>
+              <ul className="bl-woche-liste">
+                {inhalt.lehrer.spielschule.aktivitaeten.map((a) => (
+                  <li key={a.titel}>
+                    <b>{a.titel}</b>
+                    {a.dauer ? <span className="text-muted"> · {a.dauer}</span> : null}
+                  </li>
+                ))}
+                {inhalt.lehrer.spielschule.reim ? (
+                  <li>
+                    <b>{inhalt.lehrer.spielschule.reim.titel}</b>
+                    <span className="text-muted"> · {sprache === 'fr' ? 'comptine' : 'Reim'}</span>
+                  </li>
+                ) : null}
+              </ul>
+            </section>
+          ) : null}
+
           <BewertungVoll
             titel={b.de.titel}
             gesamt={bew.gesamt.get(b.id)}

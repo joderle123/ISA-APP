@@ -1,10 +1,13 @@
 // Seitenprüfung aller Arbeitsblätter (Deutsch und – wo vorhanden – Französisch):
 //   • die Seite „Für die Lehrperson“ ist genau EINE Seite,
-//   • der Schülerteil hat höchstens 2 Seiten (Spielschule und C2: 1 Seite),
+//   • der Schülerteil hat höchstens 2 Seiten (C1 und C2: 1 Seite),
+//   • Bereich Spielschule: Schülerteil höchstens 2 Seiten (Bildkarten + Blatt), für die Lehrperson genau
+//     2 Seiten (Lehrerseite + „Aktivitäten & Ideen“),
 //   • keine leere Seite (nur Kopf/Fußzeile),
 //   • jede Seite trägt den Urheber-Vermerk in der Sprache des Blatts (src/lib/urheber.ts)
 //     und daneben in der Fußzeile das CDSE-Logo (src/lib/cdse-logo.ts).
-//   npx tsx --tsconfig tsconfig.scripts.json scripts/blatt-seiten.tsx [id|bereich …]
+//   npx tsx --tsconfig tsconfig.scripts.json scripts/blatt-seiten.tsx [id|bereich …] [--datei=tmp/…/x.json]
+//   (--datei: zusätzlich Blätter aus einer Datei außerhalb von src/data/blaetter prüfen, z. B. Entwürfe)
 // Braucht python3 mit PyMuPDF für die Textprüfung. Fehler → Exit-Code 1.
 import { renderToBuffer } from '@react-pdf/renderer'
 import { mkdtempSync, readFileSync, readdirSync, writeFileSync, rmSync } from 'node:fs'
@@ -25,6 +28,7 @@ const auswahl = process.argv.slice(2).filter((a) => !a.startsWith('--'))
 const ordner = join(ROOT, 'src/data/blaetter')
 const dateien: Record<string, Blatt[]> = {}
 for (const d of readdirSync(ordner)) if (d.endsWith('.json')) dateien[d] = JSON.parse(readFileSync(join(ordner, d), 'utf8'))
+for (const a of process.argv.slice(2)) if (a.startsWith('--datei=')) dateien[a.slice(8)] = JSON.parse(readFileSync(a.slice(8), 'utf8')) // Name wie spielschule-3.json → Bereich und Nummer
 const alle = nummerieren(dateien)
 const liste = auswahl.length ? alle.filter((b) => auswahl.some((a) => a === b.id || a === b.bereich || a === b.nr)) : alle
 
@@ -70,7 +74,8 @@ let fehler = 0
 for (const a of auftraege) {
   const seiten = ergebnis[a.datei] ?? []
   const wo = `${a.blatt.nr} ${a.blatt.id} ${a.sprache.toUpperCase()} ${a.teil === 'lehrer' ? 'Lehrerseite' : 'Schülerteil'}`
-  const max = a.teil === 'lehrer' ? 1 : a.blatt.stufen.every((s) => s === 'C1' || s === 'C2') ? 1 : 2
+  const spielschule = a.blatt.bereich === 'spielschule'
+  const max = a.teil === 'lehrer' ? (spielschule ? 2 : 1) : spielschule ? 2 : a.blatt.stufen.every((s) => s === 'C1' || s === 'C2') ? 1 : 2
   const probleme: string[] = []
   if (seiten.length > max) probleme.push(`${seiten.length} Seiten (erlaubt: ${max})`)
   seiten.forEach(({ inhalt, vermerk, logo }, i) => {

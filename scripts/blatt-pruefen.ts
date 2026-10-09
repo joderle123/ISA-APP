@@ -6,7 +6,7 @@ import { readFileSync, readdirSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { join, dirname, basename } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import type { Baustein, Blatt, BlattInhalt, Sprache } from '../src/blatt/typen'
+import type { Baustein, Blatt, BlattInhalt, Spielideen, Sprache } from '../src/blatt/typen'
 import { BEREICHE, THEMEN, STUFEN_REIHE } from '../src/blatt/katalog'
 import { hatIcon } from '../src/blatt/zeichnung'
 import { GEFUEHLE } from '../src/blatt/gesichter'
@@ -476,6 +476,48 @@ function pruefeBausteine(wo: string, liste: Baustein[], blatt: Blatt, sprache: S
   return aufgaben
 }
 
+/** Spielschule: die Seite „Aktivitäten & Ideen“ muss auf eine Seite passen und abwechslungsreich sein. */
+const AKTIVITAET_ARTEN = ['kreis', 'bewegung', 'gestalten', 'sprache', 'musik', 'sinne', 'zaehlen', 'spiel', 'draussen', 'ruhe', 'kochen', 'theater']
+function pruefeSpielschule(wo: string, sp: Spielideen | undefined) {
+  if (!sp) return melde('F', wo, 'Spielschule: Seite „Aktivitäten & Ideen“ (lehrer.spielschule) fehlt')
+  const texte: string[] = []
+  if (!Array.isArray(sp.wortschatz) || sp.wortschatz.length < 6 || sp.wortschatz.length > 10) melde('F', wo, 'Spielschule: 6–10 Wörter der Woche')
+  for (const w of sp.wortschatz ?? []) {
+    if (w.length > 28) melde('H', wo, `Spielschule: Wort sehr lang („${w}“)`)
+    texte.push(w)
+  }
+  const akt = sp.aktivitaeten ?? []
+  if (akt.length < 5 || akt.length > 6) melde('F', wo, `Spielschule: 5–6 Aktivitäten (jetzt ${akt.length})`)
+  if (new Set(akt.map((a) => a.art)).size < 4) melde('H', wo, 'Spielschule: weniger als 4 verschiedene Arten von Aktivitäten')
+  for (const a of akt) {
+    if (!AKTIVITAET_ARTEN.includes(a.art)) melde('F', wo, `Spielschule: Art „${a.art}“ gibt es nicht (${AKTIVITAET_ARTEN.join(', ')})`)
+    if (!a.titel?.trim() || !a.text?.trim()) melde('F', wo, 'Spielschule: Aktivität ohne Titel oder Text')
+    if ((a.titel ?? '').length > 42) melde('H', wo, `Spielschule: Titel der Aktivität lang („${a.titel}“)`)
+    if ((a.text ?? '').length > 360) melde('F', wo, `Spielschule: Aktivität „${a.titel}“ zu lang (${a.text.length} Zeichen, höchstens 360)`)
+    else if ((a.text ?? '').length < 80) melde('H', wo, `Spielschule: Aktivität „${a.titel}“ sehr knapp`)
+    if ((a.material ?? '').length > 100) melde('H', wo, `Spielschule: Material zu „${a.titel}“ lang`)
+    texte.push(a.titel ?? '', a.text ?? '', a.material ?? '', a.dauer ?? '')
+  }
+  if (!sp.reim) melde('H', wo, 'Spielschule: kein Reim oder Fingerspiel')
+  else {
+    if (!Array.isArray(sp.reim.zeilen) || sp.reim.zeilen.length < 4 || sp.reim.zeilen.length > 8) melde('F', wo, 'Spielschule: Reim mit 4–8 Zeilen')
+    for (const z of sp.reim.zeilen ?? []) if (z.length > 52) melde('H', wo, `Spielschule: Reimzeile lang („${z}“)`)
+    if ((sp.reim.gesten ?? '').length > 220) melde('H', wo, 'Spielschule: Bewegungen zum Reim über 220 Zeichen')
+    texte.push(sp.reim.titel ?? '', ...(sp.reim.zeilen ?? []), sp.reim.gesten ?? '')
+  }
+  if (sp.ecken && (sp.ecken.length < 2 || sp.ecken.length > 4)) melde('F', wo, 'Spielschule: 2–4 Ideen für die Spielecken')
+  for (const e of sp.ecken ?? []) {
+    if (e.length > 140) melde('H', wo, `Spielschule: Idee für die Spielecke lang (${e.length} Zeichen)`)
+    texte.push(e)
+  }
+  if (sp.eltern && sp.eltern.length > 240) melde('H', wo, 'Spielschule: Tipp für zu Hause über 240 Zeichen')
+  texte.push(sp.eltern ?? '')
+  for (const x of texte) {
+    if (EMOJI.test(x)) melde('F', wo, 'Spielschule: Emoji auf „Aktivitäten & Ideen“')
+    if (fremdeZeichen(x)) melde('F', wo, `Spielschule: Zeichen fehlt in der Schrift: ${fremdeZeichen(x)}`)
+  }
+}
+
 function pruefeInhalt(wo: string, inh: BlattInhalt | undefined, blatt: Blatt, sprache: Sprache) {
   if (!inh) return melde('F', wo, `Sprachfassung ${sprache} fehlt`)
   if (!inh.titel?.trim()) melde('F', wo, 'Titel fehlt')
@@ -502,6 +544,9 @@ function pruefeInhalt(wo: string, inh: BlattInhalt | undefined, blatt: Blatt, sp
   if (!(L.quellen ?? []).length && blatt.bereich !== 'mathe') melde('H', wo, 'Lehrerseite ohne Quelle')
   const alle = [L.ziel, ...(L.ablauf ?? []), L.hintergrund, ...(L.impulse ?? []), ...(L.tipps ?? []), L.achtung ?? '', L.material ?? '', L.differenzierung?.leichter ?? '', L.differenzierung?.schwerer ?? '', ...(L.loesungen ?? [])]
   if (blatt.bereich === 'mathe' && !(L.loesungen ?? []).length) melde('F', wo, 'Mathe-Blatt: Lösungen für die Lehrperson fehlen')
+  if (blatt.bereich === 'spielschule') pruefeSpielschule(wo, L.spielschule)
+  else if (L.spielschule) melde('F', wo, '„spielschule“ (Aktivitäten & Ideen) gibt es nur im Bereich Spielschule')
+  for (const x of inh.bausteine) if (x.art === 'feld' && (x.hoehe ?? 4) > 20) melde('F', wo, `Feld: hoehe zählt in Zeilen (höchstens 20, jetzt ${x.hoehe})`)
   for (const x of [...alle, inh.titel, inh.untertitel ?? '', inh.anleitung ?? '']) {
     if (fremdeZeichen(x)) melde('F', wo, `Zeichen fehlt in der Schrift: ${fremdeZeichen(x)}`)
   }
@@ -536,6 +581,11 @@ for (const datei of liste) {
     const werkzeug = b.bereich === 'werkzeuge'
     if (!werkzeug && b.stufen?.includes('C1') && b.stufen.some((s) => s !== 'C1' && s !== 'C2')) melde('F', wo, 'Spielschul-Blätter nur für C1 (höchstens C1–C2)')
     if (!werkzeug && b.bereich !== 'skills' && b.stufen?.includes('ES') && !b.fr) melde('F', wo, 'Sekundarschul-Blatt braucht eine französische Fassung (fr)')
+    if (b.bereich === 'spielschule') {
+      if (!b.fr) melde('F', wo, 'Spielschule: französische Fassung (fr) fehlt')
+      if (b.stufen?.length !== 1 || b.stufen[0] !== 'C1') melde('F', wo, 'Spielschule: stufen ["C1"]')
+      if (b.layout && b.layout !== 'bild') melde('F', wo, 'Spielschule: layout „bild“ (oder weglassen)')
+    }
     if (!Array.isArray(b.sozialform) || !b.sozialform.length || b.sozialform.some((s) => !['einzeln', 'gruppe', 'klasse'].includes(s))) melde('F', wo, 'sozialform ungültig')
     if (!b.dauer) melde('F', wo, 'dauer fehlt')
     /* Mathe übt Rechnen und Messen – dafür gibt es keine ELDiB-Ziele */

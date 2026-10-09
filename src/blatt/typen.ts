@@ -12,7 +12,7 @@ import type { AgeLevel } from '../types/material'
 export type Stufe = AgeLevel
 
 /** Themenbereiche der Blätter (bewusst keine Schulfächer). */
-export type Bereich = 'gefuehle' | 'verhalten' | 'miteinander' | 'lernen' | 'alltag' | 'werkzeuge' | 'skills' | 'selbstreflexion' | 'mathe'
+export type Bereich = 'gefuehle' | 'verhalten' | 'miteinander' | 'lernen' | 'alltag' | 'werkzeuge' | 'skills' | 'selbstreflexion' | 'mathe' | 'spielschule'
 
 /**
  * Gestaltung nach Alter:
@@ -321,6 +321,35 @@ export interface Lehrerseite {
   material?: string
   /** Lösungen (Mathe), kurz je Aufgabe: „1) 6,8 · 8,75 …“. */
   loesungen?: string[]
+  /** Spielschule: zweite Seite „Aktivitäten & Ideen“ für die ganze Themenwoche. */
+  spielschule?: Spielideen
+}
+
+/** Spielschule: Art einer Aktivität (Symbol und Farbe auf der Seite „Aktivitäten & Ideen“). */
+export type AktivitaetArt = 'kreis' | 'bewegung' | 'gestalten' | 'sprache' | 'musik' | 'sinne' | 'zaehlen' | 'spiel' | 'draussen' | 'ruhe' | 'kochen' | 'theater'
+
+export interface Aktivitaet {
+  art: AktivitaetArt
+  titel: string
+  /** 2–3 Sätze: was die Kinder tun, wie die Erwachsenen es anleiten. */
+  text: string
+  /** z. B. '10 Min.' */
+  dauer?: string
+  material?: string
+}
+
+/** Alles für eine Themenwoche in der Spielschule (Seite „Aktivitäten & Ideen“). */
+export interface Spielideen {
+  /** Wörter der Woche mit Artikel: „der Igel“, « le hérisson » (6–10). */
+  wortschatz: string[]
+  /** 5–6 Aktivitäten, verschiedene Arten. */
+  aktivitaeten: Aktivitaet[]
+  /** Eigener Reim oder Fingerspiel (selbst geschrieben, keine geschützten Lieder), mit Bewegungen. */
+  reim?: { titel: string; zeilen: string[]; gesten?: string }
+  /** Ideen für die Spielecken (Bauecke, Puppenecke, Malatelier, Lese-Ecke …), 2–4. */
+  ecken?: string[]
+  /** Ein Tipp für zu Hause, 1–2 Sätze (für den Elternbrief). */
+  eltern?: string
 }
 
 export interface BlattInhalt {

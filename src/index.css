@@ -1293,6 +1293,19 @@
     border-color: var(--line-2);
     background: var(--surface-2);
   }
+  .bl-woche-liste {
+    display: grid;
+    gap: 3px;
+    margin: 0;
+    padding-left: 18px;
+    font-size: 13.5px;
+    line-height: 1.45;
+    color: var(--ink-2);
+  }
+  .bl-woche-liste b {
+    font-weight: 600;
+    color: var(--ink);
+  }
   .bl-detail-urheber {
     grid-column: 1 / -1;
   }

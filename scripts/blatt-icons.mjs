@@ -13,27 +13,34 @@ const ZIEL = join(ROOT, 'src/blatt/bilder/icons.json')
 
 // Auswahl (alphabetisch). Neue Namen hier ergänzen und das Skript erneut ausführen.
 export const AUSWAHL = `
-abacus alarm alert-triangle alphabet-latin angle apple armchair arrow-big-right arrow-fork arrow-right arrows-shuffle
-award baby-bottle baby-carriage backpack ball-basketball ball-football balloon bandage basket bath battery battery-1
-battery-4 bed bell bike bolt bone book book-2 bookmark books bottle brain bread brush bubble bucket building-community
-bulb bus butterfly cactus cake calculator calendar calendar-event camera candle car carrot cash cat chalkboard
-chart-bar chart-pie checkbox checklist chess circle-check clipboard-check clipboard-list clock cloud cloud-rain cloud-storm
-coffee coin coin-euro compass confetti cookie crown cup decimal device-desktop device-gamepad-2 device-laptop
-device-mobile device-mobile-message device-tv dice-5 dog door door-enter door-exit droplet ear ear-off eye eye-off
-feather fence file-text fish flag flame flower fridge friends gas-station ghost gift glass-full hand-click hand-finger
-hand-grab hand-love-you hand-move hand-off hand-stop hand-three-fingers hand-two-fingers hanger headphones headset
-heart heart-broken heart-handshake hearts help-circle home horse hourglass ice-cream info-circle key ladder lamp layout-grid leaf
-lifebuoy line list-check lock lock-open mail map map-pin mask masks-theater math math-avg math-greater math-symbols medal
-message message-2 message-circle messages microphone microscope milk mood-angry mood-cry mood-happy mood-nervous
-mood-sad mood-smile mood-surprised moon moon-stars mountain mushroom music notebook notes package paint palette
-paper-bag paperclip paw pencil pencil-check pencil-plus phone photo piano pig pig-money pill pillow pizza plane plant
-player-pause player-play player-stop podium pool puzzle question-mark rainbow receipt road road-sign robot rocket
-route ruler ruler-2 ruler-measure run run-sprint salt scale school scissors search seedling send shield shield-check
-shirt shoe shopping-bag shopping-cart sign-left sign-right skateboarding snowflake snowman soccer-field soup sparkles speakerphone
-spray square-check stairs stairs-up star stopwatch stretching sun sunrise sunset swimming table tallymarks target temperature
-temperature-plus tent thumb-down thumb-up timeline tir toilet-paper tools tools-kitchen-2 traffic-lights trash tree
-trees trophy truck umbrella user user-heart users users-group volcano walk wall wallet wand weight wind world writing
-yoga zzz
+abacus acorn alarm alert-triangle alphabet-latin ambulance angle apple armchair arrow-big-right arrow-fork arrow-right
+arrows-shuffle award baby-bottle baby-carriage backpack ball-basketball ball-football ball-tennis ball-volleyball
+balloon banana bandage basket bath battery battery-1 battery-4 beach bed bell bell-ringing bell-school bike bolt bone
+book book-2 bookmark books bottle bowl bowl-spoon brain bread brush bubble bucket bug building-castle building-community
+building-cottage bulb bus butterfly cactus cake calculator calendar calendar-event camera campfire candle candy car
+car-crane carrot cash cat chalkboard chart-bar chart-pie checkbox checklist cheese chef-hat cherry chess christmas-ball
+christmas-tree circle circle-check clipboard-check clipboard-list clock clothes-rack cloud cloud-rain cloud-snow
+cloud-storm coffee coin coin-euro compass confetti cookie cookie-man crown cube cup decimal deer dental device-desktop
+device-gamepad-2 device-laptop device-mobile device-mobile-message device-tv dice dice-3 dice-5 dog door door-enter
+door-exit dragon droplet ear ear-off egg egg-fried eggs eye eye-off eyeglass feather fence file-text firetruck
+first-aid-kit fish flag flame flower footsteps fridge friends gas-station ghost gift gift-card glass-full globe grape
+hammer hand-click hand-finger hand-grab hand-love-you hand-move hand-off hand-sanitizer hand-stop hand-three-fingers
+hand-two-fingers hanger headphones headset heart heart-broken heart-handshake hearts helicopter help-circle hexagon home
+horse hourglass ice-cream info-circle jacket key ladder lamp layout-grid leaf leaf-2 lemon lifebuoy line list-check lock
+lock-open lollipop magnet mail mailbox map map-2 map-pin mask masks-theater math math-avg math-greater math-symbols
+medal melon message message-2 message-circle messages microphone microscope milk mood-angry mood-cry mood-happy mood-kid
+mood-nervous mood-sad mood-sick mood-smile mood-surprised mood-tongue mood-wink moon moon-stars mountain mug mushroom
+music music-heart needle-thread notebook notes number-0 number-1 number-10 number-2 number-3 number-4 number-5 number-6
+number-7 number-8 number-9 nurse oval package paint palette paper-bag paperclip paw pencil pencil-check pencil-plus
+pepper phone photo piano pig pig-money pill pillow pizza plane plant plant-2 player-pause player-play player-stop podium
+pool pumpkin-scary puzzle question-mark rainbow receipt rectangle road road-sign robot rocket route ruler ruler-2
+ruler-measure run run-sprint sailboat salad salt sandbox scale school scissors scooter search seedling send shape
+shape-2 shield shield-check ship shirt shirt-sport shoe shopping-bag shopping-cart shovel sign-left sign-right
+skateboard skateboarding ski-jumping snowboarding snowflake snowman soccer-field soup sparkles speakerphone spider spray
+square square-check stairs stairs-up star stars stethoscope stopwatch stretching sun sun-high sunglasses sunrise sunset
+swimming table tallymarks target temperature temperature-plus temperature-snow temperature-sun tent thumb-down thumb-up
+timeline tir toilet-paper tools tools-kitchen-2 tower tractor traffic-lights train trash tree trees triangle trophy
+truck umbrella user user-heart users users-group volcano walk wall wallet wand weight wind world writing yoga zzz
 `.trim().split(/\s+/)
 
 function attrs(s) {

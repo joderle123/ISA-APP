@@ -29,8 +29,9 @@ Musterblätter zum Anschauen: `gefuehle.json` (Mein Wutvulkan, Ballon-Atmen) und
    `src/blatt/module.ts`. Im Heft muss jede Lektion genau 2 Seiten haben, sonst stimmen die Seitenzahlen im Inhalt nicht.
    In der Toolbox steht das Heft oben im Bereich des Moduls (Knöpfe „Heft (PDF)“ und „Lösungsheft“, Sprache wie gemerkt).
 
-Umfang: Schülerteil **1 Seite** (Spielschule, C2) bzw. **höchstens 2 Seiten** (C3–ES).
-Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen. Seitenzahlen zählen je Blatt („Seite 1 / 2“), auch in
+Umfang: Schülerteil **1 Seite** (C1, C2) bzw. **höchstens 2 Seiten** (C3–ES).
+Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen. Ausnahme Bereich `spielschule` (Themenwochen):
+Schülerteil 2 Seiten (Bildkarten + Blatt), für die Lehrperson 2 Seiten (Lehrerseite + „Aktivitäten & Ideen“). Seitenzahlen zählen je Blatt („Seite 1 / 2“), auch in
 einer Mappe; ein einseitiger Teil hat keine Seitenzahl. In der Fußzeile jeder Seite steht darunter klein der
 Urheber-Vermerk „© 2026 Joey Guedes, Psychologe · CDSE“ (französische Fassung: „psychologue“); der Text steht nur in
 `src/lib/urheber.ts`. Links neben beiden Zeilen steht das CDSE-Logo (`src/lib/cdse-logo.ts`, aus der Vorlage der
@@ -163,6 +164,40 @@ Minuszeichen im Text als Gedankenstrich „–“, in Rechnungen `"op": "-"`. Ma
 Trennzeichen (1000 ml), größere mit geschütztem Leerzeichen. Brüche im Fließtext als „3/4“, in Päckchen als `#3/4#`.
 Blätter mit Messaufgaben (`geo`, `flaeche`) auf der Lehrerseite daran erinnern, in Originalgröße (100 %) zu drucken.
 
+### Spielschule (Bereich `spielschule`, Themenwochen für Cycle 1)
+
+Muster: `sp-apfelzeit` („Apfelzeit“, Thema Herbst). Eine Einheit ist **eine Themenwoche** für die ganze Gruppe
+(3–5 Jahre), sehr praktisch: echtes Material, Bewegung, Sinne, Sprache, Zählen, Gestalten, ein Reim, Ideen für die
+Spielecken. Pflicht: `stufen: ["C1"]`, `layout: "bild"`, DE **und** FR, `dauer` z. B. „1 Woche (täglich 20–30 Min.)“.
+
+- **Schülerteil, Seite 1 – Bildkarten:** `aufgabe` + `karten` (6–9 Karten, `spalten` 3, je `bild` + `titel` mit
+  Artikel: „der Apfel“ / « la pomme »). Dienen für Sitzkreis, Memory (zweimal drucken), Lotto, Wörterspiele.
+  Dann `seitenumbruch`.
+- **Schülerteil, Seite 2 – ein Blatt zum Tun:** 2–3 `aufgabe` mit Symbolen und dazu `bilder` (anmalen, einkreisen,
+  ankreuzen), `gefuehle`, `comic` (Bildfolge „zuerst – dann“), `zuordnen`, `koerper` oder `feld` (`zeichnen: true`,
+  `hoehe` in **Zeilen**, z. B. 8–10). Von Einheit zu Einheit abwechseln. Sätze für Kinder höchstens 10 Wörter.
+- **Lehrerseite:** `ziel`, `ablauf` als **Wochenplan** (Montag – … bis Freitag – …, je ≤ 170 Zeichen),
+  `differenzierung`, 2–3 `impulse` (Fragen im Sitzkreis), 1–2 `tipps` (Sicherheit, Allergien, Vorbereitung),
+  `material`, `hintergrund` (400–700 Zeichen; FR wird länger – kürzer halten), Quellen aus der Liste (Spielschule:
+  hirshPasek2009, bodrovaLeong2007, vygotsky1978, sylva2004, clementsSarama2009, whitehurstLonigan1998,
+  whitehurst1988, goswamiBryant1990, menfp2011, dazu je nach Thema z. B. denham1998, websterStratton2003, who2019).
+- **`lehrer.spielschule` – Seite „Aktivitäten & Ideen“:**
+  - `wortschatz`: 6–10 Wörter der Woche, Nomen mit Artikel.
+  - `aktivitaeten`: 5–6 Karten `{art, titel, dauer, text, material?}`, mindestens 4 verschiedene Arten aus
+    kreis, bewegung, gestalten, sprache, musik, sinne, zaehlen, spiel, draussen, ruhe, kochen, theater.
+    `text` 120–330 Zeichen: was die Kinder tun und wie die Erwachsenen anleiten – so konkret, dass man es morgen
+    ohne Vorbereitung machen kann.
+  - `reim`: **selbst geschriebener** Reim oder Fingerspiel (4–8 Zeilen, ≤ 48 Zeichen je Zeile), reimt sauber, mit
+    `gesten`. Keine bekannten Lieder abschreiben (Urheberrecht). Auf Französisch eine eigene Comptine, keine
+    Übersetzung Zeile für Zeile.
+  - `ecken`: 2–4 Ideen für Spielecken (Puppenecke, Bauecke, Malatelier, Lese-Ecke, Sand/Wasser …).
+  - `eltern`: 1–2 Sätze für zu Hause, alltagsnah, ohne Kosten.
+- **Sicherheit und Vielfalt:** Messer, Hitze, Kleinteile (Verschlucken), Allergien, Draußen-Regeln immer auf der
+  Lehrerseite. Feste in Luxemburg (Kleeschen, Buergbrennen, Fuesend, Éimaischen, Nationalfeierdag, Schueberfouer)
+  sachlich und einladend, ohne religiöse Pflicht; Familien in allen Formen.
+- Prüfen wie immer, Seiten mit `scripts/blatt-seiten.tsx spielschule --datei=<entwurf>.json` (der Dateiname muss mit
+  `spielschule` beginnen, z. B. `spielschule-3.json`).
+
 ### Bildgeschichten & Karten
 | Art | Felder | Wofür |
 |---|---|---|
@@ -177,7 +212,7 @@ Blätter mit Messaufgaben (`geo`, `flaeche`) auf der Lehrerseite daran erinnern,
 
 ## 4. Bilder
 
-- **Piktogramme** `icon:<name>` – Liste in `src/blatt/bilder/icons.json` (274 Stück, z. B. angle, backpack, bed, book, bulb, clock, device-mobile, friends, heart, hourglass, lifebuoy, moon, music, palette, pillow, school, shield, sun, target, traffic-lights, volcano …).
+- **Piktogramme** `icon:<name>` – Liste in `src/blatt/bilder/icons.json` (375 Stück, z. B. angle, backpack, bed, book, bulb, clock, device-mobile, friends, heart, hourglass, lifebuoy, moon, music, palette, pillow, school, shield, sun, target, traffic-lights, volcano …).
 - **Gefühlsgesichter** `gesicht:<gefühl>` – froh, traurig, wuetend, aengstlich, ueberrascht, angeekelt, ruhig, stolz, verlegen, muede, nervoes, enttaeuscht, gelangweilt, verwirrt, aufgeregt, besorgt, neutral.
 - **Figuren** `figur:<name>[:<gefühl>[:<haltung>]]`
   - Kinder: mia, noah, lea, sami, amira (Kopftuch), tom (Kappe); Jugendliche: jana, ben; Erwachsene: lehrerin, lehrer.
