@@ -30,9 +30,9 @@
     ],
     "bild": "motiv:gruppe",
     "de": {
-      "titel": "Kinderkonferenz: Das entscheiden wir!",
-      "untertitel": "Ideen sagen, abstimmen, zählen – und umsetzen, was die Gruppe beschließt",
-      "anleitung": "Die Karten zweimal drucken: für die Konferenz, für Memory und als Bilder zum Abstimmen. Blatt 2 gehört zum Experiment am Mittwoch: Das Kind kreist seinen Ball ein, malt, was es sieht, und kreist das Ergebnis ein.",
+      "titel": "Kinderkonferenz",
+      "untertitel": "Das entscheiden wir! Mitreden, abstimmen, umsetzen – und wer verliert, wird nicht vergessen",
+      "anleitung": "Die Karten zweimal drucken: für die Konferenz, für Memory und als Bilder zum Abstimmen. Seite 2 begleitet eine Konferenz: Das Kind kreist seine Wahl ein und malt eine eigene Idee, die in die Ideen-Schachtel kommt. Das Forscherblatt zum Ball-Test gibt es als Zusatzseite.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -80,7 +80,7 @@
               "titel": "der Gummiball"
             },
             {
-              "bild": "icon:circle",
+              "bild": "motiv:knete",
               "titel": "die Knetkugel"
             }
           ]
@@ -89,25 +89,46 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "frage": "Welcher Ball springt am höchsten?",
-          "bild": "icon:ball-basketball",
-          "name": false,
-          "vermuten": [
-            {
-              "bild": "icon:ball-tennis",
-              "text": "der Tennisball"
-            },
-            {
-              "bild": "icon:ball-basketball",
-              "text": "der Gummiball"
-            },
-            {
-              "bild": "icon:circle",
-              "text": "die Knetkugel"
-            }
+          "art": "aufgabe",
+          "text": "Heute wählen wir. Kreise deine Wahl ein.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
           ],
-          "sehen": "frei"
+          "niveau": "einstieg"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:music",
+              "text": "das Lied"
+            },
+            {
+              "bild": "motiv:buch",
+              "text": "das Buch"
+            },
+            {
+              "bild": "icon:ball-football",
+              "text": "das Spiel"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Male deine Idee für die Ideen-Schachtel.",
+          "symbole": [
+            "malen",
+            "sprechen"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 9
         }
       ],
       "lehrer": {
@@ -115,7 +136,7 @@
         "ablauf": [
           "Montag – Erste Konferenz: Welches Lied singen wir zum Abschluss? Stimmen-Türme bauen und zählen; das Lied gilt die ganze Woche.",
           "Dienstag – Der Bär bestimmt alles allein (Theater). Danach legen wir die Regeln unserer Konferenz fest.",
-          "Mittwoch – Experiment: Welcher Ball springt am höchsten? Erst abstimmen, dann testen; Forscherblatt (Blatt 2).",
+          "Mittwoch – Experiment: Welcher Ball springt am höchsten? Erst abstimmen, dann testen; Forscherblatt (Zusatzseite).",
           "Donnerstag – Ja-Seite, Nein-Seite; Konferenz über eine Regel für die Bauecke; Reim mit Ruf und Antwort.",
           "Freitag – Beschluss-Buch: Was haben wir entschieden? Eine Karte aus der Ideen-Schachtel für nächste Woche ziehen."
         ],
@@ -271,7 +292,7 @@
               },
               {
                 "text": "1 Kugel aus Knete, so groß wie der Tennisball",
-                "bild": "icon:circle"
+                "bild": "motiv:knete"
               },
               {
                 "text": "Kreppband: 1 Strich in 1 m Höhe an der Wand",
@@ -316,15 +337,33 @@
             "dauer": "25 Min.",
             "phaenomene": [
               "kraefte"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Welcher Ball springt am höchsten?",
+              "vermuten": [
+                {
+                  "bild": "icon:ball-tennis",
+                  "text": "der Tennisball"
+                },
+                {
+                  "bild": "icon:ball-basketball",
+                  "text": "der Gummiball"
+                },
+                {
+                  "bild": "motiv:knete",
+                  "text": "die Knetkugel"
+                }
+              ],
+              "sehen": "frei"
+            }
           }
         }
       }
     },
     "fr": {
-      "titel": "Conseil d’enfants : c’est nous qui décidons !",
-      "untertitel": "Proposer, voter, compter – et faire ce que le groupe a décidé",
-      "anleitung": "Imprimer les cartes deux fois : pour le conseil, le memory et comme images de vote. La fiche 2 accompagne l’expérience du mercredi : l’enfant entoure sa balle, dessine ce qu’il voit et entoure le résultat.",
+      "titel": "Conseil d’enfants",
+      "untertitel": "C’est nous qui décidons ! Donner son avis, voter, réaliser – et personne n’est oublié",
+      "anleitung": "Imprimer les cartes deux fois : pour le conseil, le memory et comme images de vote. La page 2 accompagne un conseil : l’enfant entoure son choix et dessine une idée qui va dans la boîte à idées. La fiche du chercheur sur les balles est une page à part.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -372,7 +411,7 @@
               "titel": "le ballon"
             },
             {
-              "bild": "icon:circle",
+              "bild": "motiv:knete",
               "titel": "la boule de pâte"
             }
           ]
@@ -381,25 +420,46 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "frage": "Quelle balle rebondit le plus haut ?",
-          "bild": "icon:ball-basketball",
-          "name": false,
-          "vermuten": [
-            {
-              "bild": "icon:ball-tennis",
-              "text": "la balle de tennis"
-            },
-            {
-              "bild": "icon:ball-basketball",
-              "text": "le ballon"
-            },
-            {
-              "bild": "icon:circle",
-              "text": "la boule de pâte"
-            }
+          "art": "aufgabe",
+          "text": "Aujourd’hui, on vote. Entoure ton choix.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
           ],
-          "sehen": "frei"
+          "niveau": "einstieg"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:music",
+              "text": "la chanson"
+            },
+            {
+              "bild": "motiv:buch",
+              "text": "le livre"
+            },
+            {
+              "bild": "icon:ball-football",
+              "text": "le jeu"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine ton idée pour la boîte à idées.",
+          "symbole": [
+            "malen",
+            "sprechen"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 9
         }
       ],
       "lehrer": {
@@ -407,7 +467,7 @@
         "ablauf": [
           "Lundi – Premier conseil : quelle chanson pour finir la journée ? Tours de vote, on compte ; la chanson vaut toute la semaine.",
           "Mardi – L’ours décide tout seul (théâtre). Puis on fixe les règles de notre conseil.",
-          "Mercredi – Expérience : quelle balle rebondit le plus haut ? Voter, puis tester ; fiche du chercheur (fiche 2).",
+          "Mercredi – Expérience : quelle balle rebondit le plus haut ? Voter, puis tester ; fiche du chercheur (page à part).",
           "Jeudi – Côté oui, côté non ; conseil sur une règle du coin construction ; comptine en appel et réponse.",
           "Vendredi – Livre des décisions : qu’avons-nous décidé ? Tirer une carte de la boîte à idées pour la semaine suivante."
         ],
@@ -448,42 +508,42 @@
             {
               "art": "kreis",
               "titel": "Notre conseil d’enfants",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Chaque jour à la même heure, sur le tapis : la clochette sonne, voici la question du jour. Qui tient le micro dit son idée ; l’enseignante pose une carte-image à côté. Trois idées au plus sont soumises au vote – le résultat compte.",
               "material": "micro ou cuillère en bois, clochette, cartes-images"
             },
             {
               "art": "zaehlen",
               "titel": "Les tours de vote",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Devant chaque carte grandit une tour : chacun pose sa brique sur la tour de son choix. Laquelle est la plus haute ? On compte ensemble ; les petits montrent « plus », les grands disent combien de plus.",
               "material": "grosses briques, une par enfant"
             },
             {
               "art": "bewegung",
               "titel": "Côté oui, côté non",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Une corde partage la salle : à gauche pouce levé, à droite pouce baissé. À une question comme « Vous aimez la pluie ? », les enfants courent de leur côté. Qui hésite reste sur la corde – c’est aussi une réponse.",
               "material": "corde, deux cartes pouce"
             },
             {
               "art": "theater",
               "titel": "L’ours qui décide de tout",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’ours (marionnette) choisit seul la chanson, le jeu et la place. Les enfants disent ce qu’ils ressentent et lui expliquent le conseil. Puis l’ours vote avec eux – et cette fois, son idée ne gagne pas.",
               "material": "marionnette ou peluche"
             },
             {
               "art": "gestalten",
               "titel": "Notre livre des décisions",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Chaque décision a sa page : dessin ou photo, date, la phrase « Nous avons décidé … ». Les enfants dessinent, collent et dictent. Le livre montre aux familles ce que la classe décide elle-même.",
               "material": "classeur, photos, crayons, colle"
             },
             {
               "art": "sprache",
               "titel": "La boîte à idées",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les idées sans majorité ne se perdent pas : dessinées, elles vont dans la boîte à idées. Le vendredi, un enfant tire une carte : quand le ferons-nous ? Les enfants vivent ainsi : perdre n’est pas être oublié.",
               "material": "boîte à chaussures, petites cartes, crayons"
             }
@@ -563,7 +623,7 @@
               },
               {
                 "text": "1 boule de pâte à modeler, grande comme la balle",
-                "bild": "icon:circle"
+                "bild": "motiv:knete"
               },
               {
                 "text": "ruban de masquage : 1 trait à 1 m sur le mur",
@@ -605,10 +665,28 @@
               "Remettre la pâte dans sa boîte ; ne pas la mettre en bouche."
             ],
             "weiter": "Les enfants choisissent la prochaine question : le ballon rebondit-il plus haut sur le tapis ou sur le carrelage ? D’abord on vote, puis on teste.",
-            "dauer": "25 Min.",
+            "dauer": "25 min",
             "phaenomene": [
               "kraefte"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Quelle balle rebondit le plus haut ?",
+              "vermuten": [
+                {
+                  "bild": "icon:ball-tennis",
+                  "text": "la balle de tennis"
+                },
+                {
+                  "bild": "icon:ball-basketball",
+                  "text": "le ballon"
+                },
+                {
+                  "bild": "motiv:knete",
+                  "text": "la boule de pâte"
+                }
+              ],
+              "sehen": "frei"
+            }
           }
         }
       }
@@ -664,7 +742,7 @@
         "satz": {
           "de": "Ich bin für …, weil …",
           "fr": "Je suis pour …, parce que …",
-          "lb": "Ech sinn fir …, well …",
+          "lb": "Ech si fir …, well …",
           "pt": "Eu sou a favor de …, porque …"
         },
         "geprueft": false
@@ -721,7 +799,7 @@
     "de": {
       "titel": "Große Fragen für kleine Köpfe",
       "untertitel": "Philosophieren im Denkkreis: Wo ist der Wind? Was ist Mut? Was ist ein Traum?",
-      "anleitung": "Die Karten zweimal drucken; sie liegen im Denkkreis als Anstoß. Das Mini-Buch auf Blatt 2 wird ausgeschnitten und gefaltet: Das Kind malt auf die leeren Seiten, was es denkt; die Erwachsene schreibt seine Worte dazu.",
+      "anleitung": "Die Karten zweimal drucken; sie liegen im Denkkreis als Anstoß. Das Mini-Buch auf Seite 2 wird ausgeschnitten und gefaltet: Das Kind malt auf die leeren Seiten, was es denkt; die Erwachsene schreibt seine Worte dazu.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -822,7 +900,7 @@
           "Dienstag – Was ist Mut? Impuls: Bilderbuchseite oder Foto eines Kindes auf dem Klettergerüst; Gedankenwand beginnen.",
           "Mittwoch – Darf man schwindeln, damit niemand traurig ist? Die Puppe bekommt ein Geschenk, das ihr nicht gefällt.",
           "Donnerstag – Experiment: Warum ist der Himmel blau? Danach Fragen sortieren: Forscherfrage oder Denkfrage?",
-          "Freitag – Was ist ein Traum? Gedankenbuch (Blatt 2) falten und mit nach Hause nehmen; die Familien fragen weiter."
+          "Freitag – Was ist ein Traum? Gedankenbuch (Seite 2) falten und mit nach Hause nehmen; die Familien fragen weiter."
         ],
         "differenzierung": {
           "leichter": "Mit einem Gegenstand in der Hand antworten; zeigen und ein Wort genügen.",
@@ -1024,7 +1102,7 @@
     "fr": {
       "titel": "Grandes questions pour petites têtes",
       "untertitel": "Philosopher en cercle : où est le vent ? C’est quoi, oser ? Pourquoi rêve-t-on ?",
-      "anleitung": "Imprimer les cartes deux fois ; elles servent de point de départ au cercle de réflexion. Le mini-livre de la fiche 2 se découpe et se plie : l’enfant dessine ce qu’il pense, l’adulte écrit ses mots.",
+      "anleitung": "Imprimer les cartes deux fois ; elles servent de point de départ au cercle de réflexion. Le mini-livre de la page 2 se découpe et se plie : l’enfant dessine ce qu’il pense, l’adulte écrit ses mots.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -1125,7 +1203,7 @@
           "Mardi – C’est quoi, le courage ? Point de départ : une page d’album ou la photo d’un enfant qui grimpe ; début du mur des pensées.",
           "Mercredi – A-t-on le droit de mentir pour ne pas faire de peine ? La marionnette reçoit un cadeau qu’elle n’aime pas.",
           "Jeudi – Expérience : pourquoi le ciel est-il bleu ? Puis trier les questions : question à chercher ou à penser ?",
-          "Vendredi – C’est quoi, un rêve ? Plier le livre des pensées (fiche 2) et l’emporter ; les familles continuent à questionner."
+          "Vendredi – C’est quoi, un rêve ? Plier le livre des pensées (page 2) et l’emporter ; les familles continuent à questionner."
         ],
         "differenzierung": {
           "leichter": "Répondre avec un objet en main ; montrer et dire un mot suffit.",
@@ -1163,41 +1241,41 @@
             {
               "art": "kreis",
               "titel": "Le cercle de réflexion",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Une question tirée du bocal, avec un objet à toucher. Qui tient le galet dit ce qu’il pense ; l’enseignante relance : « Pourquoi penses-tu cela ? » À la fin, elle résume sans juger.",
               "material": "bocal, galet de parole, objet"
             },
             {
               "art": "sprache",
               "titel": "Les signes de pensée",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Trois signes sans paroles : doigt sur la tempe « Je réfléchis », pouce levé « Je suis d’accord », main en vague « Je pense autre chose ». On s’entraîne avec des phrases drôles : « Les chats savent voler. »"
             },
             {
               "art": "draussen",
               "titel": "Où est le vent ?",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Avec des rubans de papier crépon et des plumes, chercher le vent dehors : où souffle-t-il fort, où pas du tout ? À l’intérieur, la grande question : où est le vent quand il ne souffle pas ? Les réponses vont au mur.",
               "material": "rubans de crépon, plumes"
             },
             {
               "art": "theater",
               "titel": "Le cadeau qui ne plaît pas",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "La marionnette reçoit de sa grand-mère une écharpe qui gratte. Que doit-elle dire ? Les enfants jouent plusieurs réponses et réfléchissent : a-t-on le droit de mentir pour ne pas faire de peine ? Il n’y a pas de bonne solution.",
               "material": "marionnette, écharpe"
             },
             {
               "art": "spiel",
               "titel": "Chercher ou penser ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "On trie les questions des enfants : dans le panier à loupe si l’on peut essayer ou vérifier ; dans le panier à ampoule s’il faut y réfléchir ensemble.",
               "material": "deux paniers, loupe, carte ampoule"
             },
             {
               "art": "ruhe",
               "titel": "La minute pour penser",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Tout le monde s’allonge et regarde le plafond ou les nuages. Le sablier coule, personne ne parle. Ensuite, chaque enfant peut dire une phrase : « J’ai pensé à … »",
               "material": "sablier, couvertures"
             }
@@ -1303,7 +1381,7 @@
               "Ne jamais diriger la lampe vers les yeux ; ne pas boire l’eau au lait."
             ],
             "weiter": "Ajouter beaucoup de lait : l’eau devient blanche comme un nuage. Pourquoi un nuage est-il blanc et le ciel bleu ? Une nouvelle grande question pour le bocal à questions.",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "licht"
             ],
@@ -1429,7 +1507,7 @@
     "de": {
       "titel": "Willkommen in der Spillschoul",
       "untertitel": "Ankommen in den ersten Wochen: Orte, Zeichen, Abschied an der Tür und Freunde finden",
-      "anleitung": "Die Karten zweimal drucken und neben echte Fotos der Räume legen. Für Blatt 2 die Klappen ausschneiden, an der Linie falten und über die Bilder kleben; dahinter warten die Orte unserer Spillschoul.",
+      "anleitung": "Die Karten zweimal drucken und neben echte Fotos der Räume legen. Für Seite 2 die Klappen ausschneiden, an der Linie falten und über die Bilder kleben; dahinter warten die Orte unserer Spillschoul.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -1461,15 +1539,15 @@
               "titel": "die Garderobe"
             },
             {
-              "bild": "icon:toilet-paper",
-              "titel": "die Toilette"
+              "bild": "motiv:waschbecken",
+              "titel": "das Bad"
             },
             {
               "bild": "motiv:teller",
               "titel": "die Kantine"
             },
             {
-              "bild": "icon:ball-basketball",
+              "bild": "motiv:turnmatte",
               "titel": "die Turnhalle"
             },
             {
@@ -1487,7 +1565,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Schneide die Türen aus und klebe sie auf. Wer wohnt dahinter?",
+          "text": "Schneide die Türen aus und klebe sie auf. Was ist dahinter?",
           "symbole": [
             "schneiden",
             "kleben",
@@ -1499,19 +1577,19 @@
           "klappe": "icon:door",
           "bilder": [
             {
-              "bild": "icon:hanger"
+              "bild": "motiv:winterjacke"
             },
             {
-              "bild": "icon:toilet-paper"
+              "bild": "motiv:waschbecken"
             },
             {
               "bild": "motiv:teller"
             },
             {
-              "bild": "icon:ball-basketball"
+              "bild": "motiv:turnmatte"
             },
             {
-              "bild": "icon:sandbox"
+              "bild": "motiv:schaufel"
             },
             {
               "bild": "motiv:buecherregal"
@@ -1525,7 +1603,7 @@
           "Montag – Ankommen am Winke-Fenster; jedes Kind wählt sein Zeichen für Garderobe und Becher. Samen ins Willkommens-Fenster.",
           "Dienstag – Haus-Entdecker: Rundgang mit der Handpuppe zu Garderobe, Toilette, Kantine, Turnhalle und Hof; Fotos für den Wegplan.",
           "Mittwoch – Kuscheltier-Bank und Ruhe-Ecke; Experiment: jeden Morgen am Fenster nachschauen, was der Samen macht.",
-          "Donnerstag – Der Weg zur Maison relais mit jemandem aus ihrem Team; Blatt 2 (Klappbild); Reim mit Gesten.",
+          "Donnerstag – Der Weg zur Maison relais mit jemandem aus ihrem Team; Seite 2 (Klappbild); Reim mit Gesten.",
           "Freitag – Ältere führen Neue durch die Klasse; Forscherblatt vorher – nachher; Familien sehen das Willkommens-Fenster."
         ],
         "differenzierung": {
@@ -1705,14 +1783,14 @@
               "Unbehandeltes Saatgut kaufen; rohe Bohnen nicht essen, danach Hände waschen."
             ],
             "weiter": "Wenn Blätter kommen: die Keimlinge in Joghurtbecher mit Erde pflanzen und mit nach Hause geben. Oder einen Beutel in einen dunklen Schrank legen: Keimt er auch?",
-            "dauer": "2 Wochen, je 3 Min.",
+            "dauer": "1 Woche, je 3 Min.",
             "phaenomene": [
               "pflanzen"
             ],
             "forscherblatt": {
               "vermuten": [
                 {
-                  "bild": "icon:circle",
+                  "bild": "icon:paper-bag",
                   "text": "bleibt so"
                 },
                 {
@@ -1733,7 +1811,7 @@
     "fr": {
       "titel": "Bienvenue à la Spillschoul",
       "untertitel": "Arriver dans les premières semaines : lieux, symboles, au revoir à la porte et nouveaux amis",
-      "anleitung": "Imprimer les cartes deux fois et les poser à côté de vraies photos des lieux. Pour la fiche 2, découper les volets, les plier sur la ligne et les coller au-dessus des images : derrière se cachent les lieux de notre Spillschoul.",
+      "anleitung": "Imprimer les cartes deux fois et les poser à côté de vraies photos des lieux. Pour la page 2, découper les volets, les plier sur la ligne et les coller au-dessus des images : derrière se cachent les lieux de notre Spillschoul.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -1765,15 +1843,15 @@
               "titel": "le portemanteau"
             },
             {
-              "bild": "icon:toilet-paper",
-              "titel": "les toilettes"
+              "bild": "motiv:waschbecken",
+              "titel": "la salle de bain"
             },
             {
               "bild": "motiv:teller",
               "titel": "la cantine"
             },
             {
-              "bild": "icon:ball-basketball",
+              "bild": "motiv:turnmatte",
               "titel": "la salle de sport"
             },
             {
@@ -1791,7 +1869,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Découpe les portes et colle-les. Qui habite derrière ?",
+          "text": "Découpe les portes et colle-les. Qu’y a-t-il derrière ?",
           "symbole": [
             "schneiden",
             "kleben",
@@ -1803,19 +1881,19 @@
           "klappe": "icon:door",
           "bilder": [
             {
-              "bild": "icon:hanger"
+              "bild": "motiv:winterjacke"
             },
             {
-              "bild": "icon:toilet-paper"
+              "bild": "motiv:waschbecken"
             },
             {
               "bild": "motiv:teller"
             },
             {
-              "bild": "icon:ball-basketball"
+              "bild": "motiv:turnmatte"
             },
             {
-              "bild": "icon:sandbox"
+              "bild": "motiv:schaufel"
             },
             {
               "bild": "motiv:buecherregal"
@@ -1829,7 +1907,7 @@
           "Lundi – Arrivée à la fenêtre des au revoir ; chacun choisit son symbole pour le portemanteau et le gobelet. Graines à la fenêtre.",
           "Mardi – Les explorateurs : visite avec la marionnette au vestiaire, aux toilettes, à la cantine, à la salle de sport et à la cour.",
           "Mercredi – Banc des doudous et coin calme ; expérience : chaque matin, regarder à la fenêtre ce que fait la graine.",
-          "Jeudi – Le chemin vers la Maison relais avec quelqu’un de son équipe ; fiche 2 (volets) ; comptine avec gestes.",
+          "Jeudi – Le chemin vers la Maison relais avec quelqu’un de son équipe ; page 2 (volets) ; comptine avec gestes.",
           "Vendredi – Les grands guident les nouveaux ; fiche du chercheur avant – après ; les familles voient la fenêtre."
         ],
         "differenzierung": {
@@ -1868,40 +1946,40 @@
             {
               "art": "spiel",
               "titel": "Les explorateurs de l’école",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "La marionnette est nouvelle et ne connaît rien. Les enfants la guident de porte en porte : ici les manteaux, ici les toilettes, ici on mange. À chaque porte, un enfant colle la photo du lieu sur le grand plan.",
               "material": "marionnette, photos, grand plan"
             },
             {
               "art": "gestalten",
               "titel": "Mon symbole",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Chaque enfant choisit son symbole parmi des autocollants : étoile, poisson, fleur … Il le colle au portemanteau, sur son gobelet et sur son portfolio. Ainsi, même sans savoir lire, il retrouve sa place.",
               "material": "autocollants-symboles"
             },
             {
               "art": "kreis",
               "titel": "La fenêtre des au revoir",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Chaque matin, le même au revoir : l’enfant accompagne sa famille à la porte, fait coucou à la fenêtre et dit « Äddi, bis gläich ». Puis il prend son doudou sur le banc et rejoint le cercle."
             },
             {
               "art": "ruhe",
               "titel": "Le banc des doudous",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les doudous apportés s’assoient sur leur propre banc et regardent. Qui s’ennuie de la maison peut aller au coin calme avec son doudou, sans devoir expliquer pourquoi.",
               "material": "banc, couvertures"
             },
             {
               "art": "draussen",
               "titel": "Le chemin de la Maison relais",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Avec quelqu’un de l’équipe de la Maison relais, les enfants font le chemin jusque-là, voient les salles et les personnes qui les accueillent après l’école. De retour en classe, une photo du chemin rejoint le plan."
             },
             {
               "art": "sprache",
               "titel": "Nous montrons notre classe",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Des grands deviennent parrains et marraines : ils montrent trois lieux à un nouvel enfant et disent ce qu’on y fait. L’enseignante écoute et nomme ce qui réussit : « Tu lui as montré les toilettes. »"
             }
           ],
@@ -2009,14 +2087,14 @@
               "Acheter des semences non traitées ; ne pas manger les haricots crus ; se laver les mains."
             ],
             "weiter": "Quand les feuilles arrivent : planter les pousses dans des pots de yaourt avec de la terre et les donner aux familles. Ou mettre un sachet dans un placard sombre : germe-t-il aussi ?",
-            "dauer": "2 semaines, 3 Min.",
+            "dauer": "1 semaine, 3 min",
             "phaenomene": [
               "pflanzen"
             ],
             "forscherblatt": {
               "vermuten": [
                 {
-                  "bild": "icon:circle",
+                  "bild": "icon:paper-bag",
                   "text": "reste pareille"
                 },
                 {
@@ -2061,10 +2139,11 @@
             "pt": "o cabide"
           },
           {
-            "de": "die Toilette",
-            "fr": "les toilettes",
-            "lb": "d’Toilett",
-            "pt": "a casa de banho"
+            "de": "das Bad",
+            "fr": "la salle de bain",
+            "lb": "d’Buedzëmmer",
+            "pt": "a casa de banho",
+            "bild": "motiv:waschbecken"
           },
           {
             "de": "die Kantine",
@@ -2139,7 +2218,7 @@
     "de": {
       "titel": "Alle Kinder haben Rechte",
       "untertitel": "Spielen, satt werden, gesund und sicher sein, lernen und mitreden – und Nein sagen",
-      "anleitung": "Die Karten zweimal drucken. Das Memory auf Blatt 2 auf Karton kopieren: falten, kleben, dann schneiden. Beim Aufdecken sagen die Kinder: „Jedes Kind darf …“",
+      "anleitung": "Die Karten zweimal drucken. Das Memory auf Seite 2 auf Karton kopieren: falten, kleben, dann schneiden. Beim Aufdecken sagen die Kinder: „Jedes Kind darf …“",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -2240,7 +2319,7 @@
         "ablauf": [
           "Montag – Der Rechte-Koffer: Was braucht jedes Kind, was wünschen wir uns? Bildkarten einführen.",
           "Dienstag – Theater: Leo darf nie spielen. Was ist hier nicht gerecht? Danach das Rechte-Spiel in vier Ecken.",
-          "Mittwoch – Experiment: die gerechte Wippe. Gleich viel oder gerecht? Danach das Memory (Blatt 2).",
+          "Mittwoch – Experiment: die gerechte Wippe. Gleich viel oder gerecht? Danach das Memory (Seite 2).",
           "Donnerstag – Stopp sagen und Hilfe holen in kleinen Szenen; Reim mit Lücke; Hände für den Rechte-Baum drucken.",
           "Freitag – Der Rechte-Baum ist fertig; jedes Kind sagt seinen Satz „Jedes Kind darf …“; Memory nach Hause."
         ],
@@ -2426,7 +2505,7 @@
     "fr": {
       "titel": "Tous les enfants ont des droits",
       "untertitel": "Jouer, manger, être soigné et protégé, apprendre, donner son avis – et dire non",
-      "anleitung": "Imprimer les cartes deux fois. Photocopier le memory de la fiche 2 sur du carton : plier, coller, puis découper. En retournant les cartes, les enfants disent : « Chaque enfant a le droit de … »",
+      "anleitung": "Imprimer les cartes deux fois. Photocopier le memory de la page 2 sur du carton : plier, coller, puis découper. En retournant les cartes, les enfants disent : « Chaque enfant a le droit de … »",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -2527,7 +2606,7 @@
         "ablauf": [
           "Lundi – La valise des droits : de quoi chaque enfant a-t-il besoin, que désirons-nous ? Présenter les cartes.",
           "Mardi – Théâtre : Léo n’a jamais le droit de jouer. Qu’est-ce qui n’est pas juste ? Puis le jeu des quatre coins.",
-          "Mercredi – Expérience : la balançoire juste. Pareil ou juste ? Ensuite le memory (fiche 2).",
+          "Mercredi – Expérience : la balançoire juste. Pareil ou juste ? Ensuite le memory (page 2).",
           "Jeudi – Dire stop et chercher de l’aide en petites scènes ; comptine à trous ; mains pour l’arbre des droits.",
           "Vendredi – L’arbre des droits est fini ; chacun dit sa phrase « Chaque enfant a le droit de … » ; memory à la maison."
         ],
@@ -2568,35 +2647,35 @@
             {
               "art": "kreis",
               "titel": "La valise des droits",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Dans la valise : ballon, pain, pansement, livre, micro, mais aussi bonbon et faux téléphone. Les enfants trient sur deux tissus : ce dont chaque enfant a besoin – ce qu’on désire. L’enseignante demande : pourquoi ?",
               "material": "valise, objets, deux tissus"
             },
             {
               "art": "theater",
               "titel": "Léo n’a jamais le droit de jouer",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "La marionnette Léo doit toujours ranger et ne joue jamais. Les enfants remarquent : ce n’est pas juste. Ils cherchent avec Léo à qui le dire et rejouent la scène : maintenant, Léo joue aussi.",
               "material": "marionnette"
             },
             {
               "art": "bewegung",
               "titel": "Le jeu des quatre coins",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Quatre cartes aux quatre coins : jeu, repas, médecin, micro. La musique joue ; quand elle s’arrête, l’enseignante raconte : « Mira a mal au ventre. » Les enfants courent au bon coin et disent le droit.",
               "material": "quatre cartes, musique"
             },
             {
               "art": "gestalten",
               "titel": "Notre arbre des droits",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Un tronc en papier kraft au mur. Chaque enfant imprime sa main en vert comme une feuille ; l’enseignante y écrit sa phrase : « Chaque enfant a le droit de … ». Les familles ajoutent le mot « enfant » dans leur langue.",
               "material": "papier kraft, peinture verte"
             },
             {
               "art": "sprache",
               "titel": "Dire stop, chercher de l’aide",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Petites scènes avec des poupées : quelqu’un prend toujours le jouet, quelqu’un chatouille alors que l’enfant dit non. Les enfants s’exercent à la main stop d’une voix ferme et vont vers un adulte : « J’ai besoin d’aide. »",
               "material": "deux poupées"
             }
@@ -2698,7 +2777,7 @@
               "Règle en bois sans échardes ; ne pas lancer les cubes, ne pas pencher le visage au-dessus."
             ],
             "weiter": "Essayer sur la vraie bascule de la cour : où s’assoit l’enfant le plus léger pour qu’elle soit droite ? Un adulte la tient pendant l’essai.",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "gewicht",
               "kraefte"
@@ -2818,7 +2897,7 @@
     "de": {
       "titel": "Familiencafé: Wir sind Gastgeber",
       "untertitel": "Die Kinder planen ein Café für ihre Familien – bezahlt wird mit einem Wort aus der Familiensprache",
-      "anleitung": "Die Karten zweimal drucken; sie werden auch zur Bildspeisekarte. Auf Blatt 2 kreist das Kind ein, was es anbieten möchte, schneidet die vier Bilder aus und klebt sie in der richtigen Reihenfolge auf.",
+      "anleitung": "Die Karten zweimal drucken; sie werden auch zur Bildspeisekarte. Auf Seite 2 kreist das Kind ein, was es anbieten möchte, schneidet die vier Bilder aus und klebt sie in der richtigen Reihenfolge auf.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -2934,13 +3013,26 @@
               "text": "abräumen"
             }
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mein Wort für die Wort-Kasse: Sag es. Ein Erwachsener schreibt es auf.",
+          "symbole": [
+            "sprechen",
+            "zuhoeren"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "hoehe": 3
         }
       ],
       "lehrer": {
         "ziel": "Die Kinder planen und gestalten ein Café für ihre Familien: Sie wählen das Angebot, laden ein, decken für jeden Gast, begrüßen in mehreren Sprachen und übernehmen eine Rolle bis zum Schluss.",
         "ablauf": [
-          "Montag – Konferenz: Was gibt es in unserem Café? Bildspeisekarte gestalten; Einladungen malen und mitgeben.",
-          "Dienstag – Rollen wählen und proben: begrüßen, Platz zeigen, Tee bringen, abräumen; Blatt 2.",
+          "Montag – Konferenz: Was gibt es in unserem Café? Bildspeisekarte; Einladungen malen (der Elternbrief mit Datum ging 3 Wochen vorher hinaus).",
+          "Dienstag – Rollen wählen und proben: begrüßen, Platz zeigen, Tee bringen, abräumen; Seite 2.",
           "Mittwoch – Experiment: Wo zieht der Tee schneller? Danach Tisch decken üben: für jeden Gast ein Teller, ein Becher.",
           "Donnerstag – Kalten Früchtetee ansetzen, Äpfel waschen; Begrüßungen in vielen Sprachen; Zählreim.",
           "Freitag – Familiencafé (45 Min.): Gäste „zahlen“ mit einem Wort; danach die Wort-Kasse leeren und die Wörter zählen."
@@ -2975,7 +3067,7 @@
             "das Brot",
             "Moien",
             "Wëllkomm",
-            "Danke"
+            "Merci"
           ],
           "aktivitaeten": [
             {
@@ -3097,7 +3189,10 @@
                 "bild": "motiv:tasse"
               },
               "1 Blatt weißes Papier hinter den Gläsern",
-              "Sanduhr oder Küchenwecker (5 Minuten)"
+              {
+                "text": "Sanduhr oder Küchenwecker (5 Minuten)",
+                "bild": "motiv:sanduhr"
+              }
             ],
             "schritte": [
               "Die Lehrperson füllt ein Glas mit kaltem, eines mit lauwarmem Wasser aus dem Hahn und prüft es mit der Hand.",
@@ -3149,7 +3244,7 @@
     "fr": {
       "titel": "Café des familles : nous recevons",
       "untertitel": "Les enfants préparent un café pour leurs familles – on paie avec un mot de sa langue",
-      "anleitung": "Imprimer les cartes deux fois ; elles servent aussi de menu en images. Sur la fiche 2, l’enfant entoure ce qu’il veut servir, découpe les quatre images et les colle dans le bon ordre.",
+      "anleitung": "Imprimer les cartes deux fois ; elles servent aussi de menu en images. Sur la page 2, l’enfant entoure ce qu’il veut servir, découpe les quatre images et les colle dans le bon ordre.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -3265,13 +3360,26 @@
               "text": "débarrasser"
             }
           ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mon mot pour la caisse à mots : dis-le. Un adulte l’écrit.",
+          "symbole": [
+            "sprechen",
+            "zuhoeren"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "hoehe": 3
         }
       ],
       "lehrer": {
         "ziel": "Les enfants préparent un café pour leurs familles : ils choisissent l’offre, invitent, mettent la table pour chaque invité, saluent en plusieurs langues et tiennent un rôle jusqu’au bout.",
         "ablauf": [
-          "Lundi – Conseil : que servons-nous au café ? Faire le menu en images ; dessiner les invitations et les donner.",
-          "Mardi – Choisir et répéter les rôles : accueillir, montrer la place, servir, débarrasser ; fiche 2.",
+          "Lundi – Conseil : que servons-nous au café ? Menu en images ; dessiner les invitations (la lettre avec la date est partie 3 semaines avant).",
+          "Mardi – Choisir et répéter les rôles : accueillir, montrer la place, servir, débarrasser ; page 2.",
           "Mercredi – Expérience : où le thé infuse-t-il plus vite ? Puis mettre la table : une assiette, un gobelet par invité.",
           "Jeudi – Préparer la tisane froide, laver les pommes ; salutations en plusieurs langues ; comptine à compter.",
           "Vendredi – Café des familles (45 min) : les invités « paient » avec un mot ; puis vider la caisse à mots et compter."
@@ -3312,42 +3420,42 @@
             {
               "art": "kreis",
               "titel": "Notre menu en images",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Au conseil, les enfants choisissent ce que propose le café : thé, eau, pomme, pain. Chacun dessine une image pour le menu ; l’enseignante écrit les mots dans les langues de la classe.",
               "material": "grand papier, crayons"
             },
             {
               "art": "gestalten",
               "titel": "L’invitation",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Chaque enfant plie une carte, y imprime sa main et se dessine en hôte. Il décide lui-même qui il invite : famille, voisine, grande sœur. L’enseignante ajoute le jour et l’heure.",
               "material": "carton, peinture au doigt"
             },
             {
               "art": "zaehlen",
               "titel": "Un gobelet par invité",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Cinq chaises, cinq invités (des peluches) : les enfants posent à chaque place une assiette, un gobelet et une cuillère. Manque-t-il quelque chose ? En reste-t-il ? Puis avec plus de places et de vraies chaises.",
               "material": "assiettes, gobelets, cuillères, peluches"
             },
             {
               "art": "theater",
               "titel": "La répétition du café",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "On choisit les rôles : accueillir, montrer la place, servir, musique, débarrasser. Les enfants s’exercent : « Moien, bienvenue », « Tu veux du thé ou de l’eau ? », « Merci, au revoir ». Puis on change.",
               "material": "plateau, tasses"
             },
             {
               "art": "kochen",
               "titel": "Tisane froide et quartiers de pomme",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "La veille, mettre les sachets de tisane dans l’eau froide au réfrigérateur. Les enfants lavent les pommes et disposent joliment sur les assiettes les quartiers coupés par les adultes.",
               "material": "tisane, théière, pommes, assiettes"
             },
             {
               "art": "sprache",
               "titel": "La caisse à mots",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Au café, personne ne paie avec de l’argent : chaque invité dit un mot de sa langue, un enfant le répète, l’enseignante l’écrit sur une petite carte. À la fin, on compte les mots de la caisse.",
               "material": "boîte, petites cartes"
             }
@@ -3426,7 +3534,10 @@
                 "bild": "motiv:tasse"
               },
               "1 feuille de papier blanc derrière les verres",
-              "sablier ou minuteur (5 minutes)"
+              {
+                "text": "sablier ou minuteur (5 minutes)",
+                "bild": "motiv:sanduhr"
+              }
             ],
             "schritte": [
               "L’enseignante remplit un verre d’eau froide, un autre d’eau tiède du robinet, et vérifie avec la main.",
@@ -3453,7 +3564,7 @@
               "Seulement de l’eau tiède du robinet ; l’enseignante la vérifie avant avec la main."
             ],
             "weiter": "Mettre un sucre dans l’eau froide et dans l’eau tiède : où disparaît-il en premier ? Ou laisser infuser une tisane à froid toute une nuit au réfrigérateur.",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "loesen",
               "waerme"
@@ -3530,17 +3641,17 @@
       },
       "elternbrief": {
         "de": {
-          "woche": "Die Kinder laden Sie zu ihrem Familiencafé ein. Diese Woche planen sie das Angebot, malen Einladungen, decken Tische und üben ihre Rollen. Am Freitag sind Sie unsere Gäste – Geld brauchen Sie keins.",
+          "woche": "Die Kinder laden Sie zu ihrem Familiencafé ein: am Freitag, ______ von ____ bis ____ Uhr, Raum ______. Diese Woche planen sie das Angebot, decken Tische und üben ihre Rollen. Geld brauchen Sie keins.",
           "idee": "Lassen Sie Ihr Kind zu Hause den Tisch decken: für jede Person ein Teller, ein Becher. Fragen Sie: Fehlt noch etwas?",
           "bitte": "Bezahlt wird mit einem Wort aus Ihrer Familiensprache. Wer nicht kommen kann, schickt ein Wort, ein Lied oder ein Foto des Lieblingsessens."
         },
         "fr": {
-          "woche": "Les enfants vous invitent à leur café des familles. Cette semaine, ils choisissent le menu, dessinent les invitations, mettent la table et répètent leurs rôles. Vendredi, vous êtes nos invités – pas besoin d’argent.",
+          "woche": "Les enfants vous invitent à leur café des familles : vendredi ______, de ____ à ____ h, salle ______. Cette semaine, ils choisissent le menu, mettent la table et répètent leurs rôles. Pas besoin d’argent.",
           "idee": "Laissez votre enfant mettre la table à la maison : pour chaque personne une assiette, un gobelet. Demandez : manque-t-il quelque chose ?",
           "bitte": "On paie avec un mot de votre langue. Si vous ne pouvez pas venir, envoyez un mot, une chanson ou la photo d’un plat que vous aimez."
         },
         "pt": {
-          "woche": "As crianças convidam-vos para o seu café das famílias. Esta semana escolhem o menu, desenham convites, põem a mesa e ensaiam os papéis. Na sexta-feira, são os nossos convidados – não é preciso dinheiro.",
+          "woche": "As crianças convidam-vos para o seu café das famílias: sexta-feira, ______, das ____ às ____ h, sala ______. Esta semana escolhem o menu, põem a mesa e ensaiam os papéis. Não é preciso dinheiro.",
           "idee": "Deixe a criança pôr a mesa em casa: para cada pessoa um prato, um copo. Pergunte: falta alguma coisa?",
           "bitte": "Paga-se com uma palavra da vossa língua. Quem não puder vir, envia uma palavra, uma canção ou a foto de um prato preferido."
         }
@@ -3580,7 +3691,7 @@
     "de": {
       "titel": "Abschied und Wiedersehen",
       "untertitel": "Wenn jemand geht, wenn etwas zu Ende ist – und was bleibt: Erinnerungen, Trost und gemischte Gefühle",
-      "anleitung": "Die Karten zweimal drucken. Blatt 2 auf Karton kopieren: Das Kind kreist seine Gefühle ein (das leere Gesicht malt es selbst), malt ins Herz, an wen es denkt; die Erwachsene schneidet aus und locht, dann wird mit Wolle gefädelt.",
+      "anleitung": "Die Karten zweimal drucken. Seite 2 auf Karton kopieren: Das Kind kreist seine Gefühle ein (das leere Gesicht malt es selbst), malt ins Herz, an wen es denkt; die Erwachsene schneidet aus und locht, dann wird mit Wolle gefädelt.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -3679,7 +3790,7 @@
           "Montag – Tschüss und Hallo (Bewegung); Bildkarten; Bilderbuch „Leb wohl, lieber Dachs“ von Susan Varley vorlesen.",
           "Dienstag – Zwei Gefühle auf einmal: traurig und froh. Experiment: Wasser-Beutel ans Fenster kleben.",
           "Mittwoch – Die Erinnerungsschachtel der Klasse gestalten; jeden Tag am Fenster nach dem Wasser schauen.",
-          "Donnerstag – Eine Blume für alle Abschiede pflanzen; Blatt 2: Erinnerungsherz malen und fädeln; Reim.",
+          "Donnerstag – Eine Blume für alle Abschiede pflanzen; Seite 2: Erinnerungsherz malen und fädeln; Reim.",
           "Freitag – Was hilft, wenn ich jemanden vermisse? Ideen sammeln; ist das Wasser im Beutel weg?"
         ],
         "differenzierung": {
@@ -3697,11 +3808,11 @@
         ],
         "achtung": "Ist ein Kind betroffen: vorher mit der Familie sprechen. Bleibt es lange sehr traurig oder ängstlich: I-EBS bzw. ESEB; bei akuter Gefahr 112/113.",
         "material": "Bilderbuch, Schuhkarton, Pflanze und Erde, Karton, Lochzange, Wolle, Zip-Beutel",
-        "hintergrund": "Abschiede gehören zum Leben der Kinder: Freunde ziehen weg, ein Tier stirbt, das Schuljahr endet. Trauer verläuft nicht in Stufen; Menschen pendeln zwischen Trauer und Alltag (Stroebe & Schut, 1999) – Kinder weinen und spielen kurz darauf weiter. Hilfreich sind Rituale, klare Worte, Erinnerungen und Erwachsene, die Fragen aushalten (Worden, 2009). Zwei Gefühle zugleich, etwa Vorfreude und Traurigkeit, sind normal (Larsen et al., 2001); sie zu benennen entlastet.",
+        "hintergrund": "Abschiede gehören zum Leben der Kinder: Freunde ziehen weg, ein Tier stirbt, das Schuljahr endet. Trauer verläuft nicht in Stufen; Menschen pendeln zwischen Trauer und Alltag (Stroebe & Schut, 1999) – Kinder weinen und spielen kurz darauf weiter. Hilfreich sind Rituale, klare Worte, Erinnerungen und Erwachsene, die Fragen aushalten (Worden, 2009). Dass man zwei Gefühle zugleich haben kann, verstehen Kinder meist erst im Grundschulalter (Harter, 2012); jüngeren hilft es, Gefühle nacheinander zu benennen.",
         "quellen": [
           "Worden, J. W. (2009). Grief Counseling and Grief Therapy (4th ed.). New York: Springer.",
           "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
-          "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696."
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford."
         ],
         "spielschule": {
           "wortschatz": [
@@ -3725,9 +3836,9 @@
             },
             {
               "art": "kreis",
-              "titel": "Zwei Gefühle auf einmal",
+              "titel": "Erst traurig, dann froh",
               "dauer": "10 Min.",
-              "text": "Jedes Kind hat ein trauriges und ein frohes Gesicht. Die Lehrperson erzählt: „Mira zieht um. Sie freut sich auf ihr Zimmer und vermisst ihre Freundin.“ Die Kinder zeigen beide Gesichter zugleich – das geht.",
+              "text": "Jedes Kind hat ein trauriges und ein frohes Gesicht. Die Lehrperson erzählt: „Mira zieht um. Erst ist sie traurig, weil sie ihre Freundin vermisst. Dann freut sie sich auf ihr neues Zimmer.“ Die Kinder zeigen die Gesichter nacheinander.",
               "material": "Gefühlsgesichter"
             },
             {
@@ -3755,7 +3866,7 @@
               "art": "ruhe",
               "titel": "Das Erinnerungsherz",
               "dauer": "15 Min.",
-              "text": "Am ruhigen Tisch malen die Kinder in das Herz von Blatt 2 und fädeln Wolle durch die Löcher. Beim Fädeln wird leise erzählt oder geschwiegen. Das Herz darf mit nach Hause.",
+              "text": "Am ruhigen Tisch malen die Kinder in das Herz von Seite 2 und fädeln Wolle durch die Löcher. Beim Fädeln wird leise erzählt oder geschwiegen. Das Herz darf mit nach Hause.",
               "material": "Fädelkarte, Wolle"
             }
           ],
@@ -3779,11 +3890,11 @@
           "eltern": "Sagen Sie bei jedem Abschied, wann Sie sich wiedersehen. Bei einem Todesfall: klare, ruhige Worte und Zeit für Fragen – auch immer wieder dieselben.",
           "beobachtung": [
             {
-              "text": "Ich sage, wie ich mich fühle – auch zwei Gefühle zugleich.",
+              "text": "Ich sage, wie ich mich fühle: erst traurig, dann froh.",
               "eldib": "K-26"
             },
             {
-              "text": "Ich erzähle von jemandem, an den ich denke, wenn ich mag.",
+              "text": "Ich lege ein Ding in die Erinnerungsschachtel.",
               "eldib": "K-15"
             },
             {
@@ -3798,7 +3909,7 @@
           "stufen": {
             "precoce": "Weg-und-wieder-da-Spiele, winken, traurig und froh am Gesicht zeigen.",
             "p1": "Vom eigenen Abschied erzählen, wenn das Kind mag; ein Bild malen.",
-            "p2": "Zwei Gefühle zugleich benennen, Trost anbieten, die Geschichte nacherzählen."
+            "p2": "Gefühle nacheinander benennen, Trost anbieten, die Geschichte nacherzählen."
           },
           "zugang": [
             "Gefühlsgesichter zum Zeigen statt Sprechen; Zuhören ist genug.",
@@ -3814,8 +3925,9 @@
             "material": "besorgen",
             "planB": "Kein Garten: Die Blume kommt in einen großen Topf auf die Fensterbank.",
             "sicherheit": [
-              "Vorher mit Familien betroffener Kinder sprechen; niemand muss erzählen.",
-              "Sorge um ein Kind: I-EBS bzw. ESEB; bei akuter Gefahr 112/113."
+              "Vorher mit betroffenen Familien sprechen, erst dann den Elternbrief verteilen; niemand muss erzählen.",
+              "Sorge um ein Kind: I-EBS bzw. ESEB; bei akuter Gefahr 112/113.",
+              "standard:fotos"
             ]
           },
           "experiment": {
@@ -3878,7 +3990,7 @@
     "fr": {
       "titel": "Se quitter et se retrouver",
       "untertitel": "Quand quelqu’un part, quand quelque chose finit – et ce qui reste : souvenirs, réconfort et émotions mêlées",
-      "anleitung": "Imprimer les cartes deux fois. Copier la fiche 2 sur du carton : l’enfant entoure ses émotions (il dessine lui-même le visage vide), dessine dans le cœur à qui il pense ; l’adulte découpe et perce, puis on enfile la laine.",
+      "anleitung": "Imprimer les cartes deux fois. Copier la page 2 sur du carton : l’enfant entoure ses émotions (il dessine lui-même le visage vide), dessine dans le cœur à qui il pense ; l’adulte découpe et perce, puis on enfile la laine.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -3977,7 +4089,7 @@
           "Lundi – Au revoir et bonjour (mouvement) ; lire « Au revoir Blaireau » (Susan Varley).",
           "Mardi – Deux émotions à la fois. Expérience : le sachet d’eau à la fenêtre.",
           "Mercredi – La boîte à souvenirs de la classe ; regarder l’eau chaque jour.",
-          "Jeudi – Planter une fleur ; fiche 2 : le cœur souvenir ; comptine.",
+          "Jeudi – Planter une fleur ; page 2 : le cœur souvenir ; comptine.",
           "Vendredi – Qu’est-ce qui aide quand quelqu’un me manque ? L’eau a-t-elle disparu ?"
         ],
         "differenzierung": {
@@ -3995,11 +4107,11 @@
         ],
         "achtung": "Si un enfant vit une perte : en parler d’abord avec la famille. S’il reste longtemps très triste ou anxieux : I-EBS ou ESEB ; danger immédiat : 112/113.",
         "material": "Album, boîte à chaussures, plante et terre, carton, perforatrice, laine, sachet zip",
-        "hintergrund": "Les au revoir font partie de la vie des enfants : un ami déménage, un animal meurt, l’année finit. Le deuil ne suit pas des étapes ; on oscille entre chagrin et quotidien (Stroebe & Schut, 1999) – l’enfant pleure, puis rejoue. Ce qui aide : rituels, mots clairs, souvenirs et adultes qui supportent les questions (Worden, 2009). Deux émotions à la fois sont normales (Larsen et al., 2001) ; les nommer soulage.",
+        "hintergrund": "Les au revoir font partie de la vie des enfants : un ami déménage, un animal meurt, l’année finit. Le deuil ne suit pas des étapes ; on oscille entre chagrin et quotidien (Stroebe & Schut, 1999) – l’enfant pleure, puis rejoue. Ce qui aide : rituels, mots clairs, souvenirs et adultes qui supportent les questions (Worden, 2009). Ressentir deux émotions à la fois, les enfants le comprennent souvent seulement à l’école primaire (Harter, 2012) ; les plus jeunes nomment les émotions l’une après l’autre.",
         "quellen": [
           "Worden, J. W. (2009). Grief Counseling and Grief Therapy (4th ed.). New York: Springer.",
           "Stroebe, M. & Schut, H. (1999). The dual process model of coping with bereavement: Rationale and description. Death Studies, 23(3), 197–224.",
-          "Larsen, J. T., McGraw, A. P. & Cacioppo, J. T. (2001). Can people feel happy and sad at the same time? Journal of Personality and Social Psychology, 81(4), 684–696."
+          "Harter, S. (2012). The Construction of the Self (2nd ed.). New York: Guilford."
         ],
         "spielschule": {
           "wortschatz": [
@@ -4017,43 +4129,43 @@
             {
               "art": "sprache",
               "titel": "Ce que le blaireau a offert",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Lecture dialoguée : « Au revoir Blaireau ». Le vieux blaireau meurt ; ses amis se souviennent de ce qu’il leur a appris. Les enfants racontent : qu’est-ce que quelqu’un m’a appris ? L’enseignante note.",
               "material": "album"
             },
             {
               "art": "kreis",
-              "titel": "Deux émotions à la fois",
-              "dauer": "10 Min.",
-              "text": "Chaque enfant a un visage triste et un visage content. L’enseignante raconte : « Mira déménage. Elle se réjouit de sa chambre et son amie lui manque. » Les enfants montrent les deux visages à la fois – c’est possible.",
+              "titel": "D’abord triste, puis content",
+              "dauer": "10 min",
+              "text": "Chaque enfant a un visage triste et un visage content. L’enseignante raconte : « Mira déménage. D’abord elle est triste, son amie lui manque. Puis elle se réjouit de sa nouvelle chambre. » Les enfants montrent les visages l’un après l’autre.",
               "material": "visages des émotions"
             },
             {
               "art": "bewegung",
               "titel": "Au revoir – et bonjour",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "En musique, les enfants s’éloignent deux par deux en faisant signe : « Äddi ! » Quand la musique s’arrête, ils reviennent et se saluent : mains, coudes, pieds. Musique lente, musique rapide.",
               "material": "musique"
             },
             {
               "art": "gestalten",
               "titel": "La boîte à souvenirs",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "On peint une boîte à chaussures. Dedans : ce qui rappelle les bons moments – dessins, photo de la classe, chanson sur un papier. Quand un enfant quitte la classe, il emporte une boîte.",
               "material": "boîte à chaussures, crayons, images"
             },
             {
               "art": "draussen",
               "titel": "Une fleur pour tous les au revoir",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Au jardin ou dans un pot, les enfants plantent ensemble une fleur. Qui veut chuchote à qui il pense. On arrose la fleur, elle devient un lieu de souvenir.",
               "material": "plante, terre, pelle, arrosoir"
             },
             {
               "art": "ruhe",
               "titel": "Le cœur souvenir",
-              "dauer": "15 Min.",
-              "text": "À une table calme, les enfants dessinent dans le cœur de la fiche 2 et enfilent la laine dans les trous. En enfilant, on raconte doucement ou on se tait. Le cœur peut aller à la maison.",
+              "dauer": "15 min",
+              "text": "À une table calme, les enfants dessinent dans le cœur de la page 2 et enfilent la laine dans les trous. En enfilant, on raconte doucement ou on se tait. Le cœur peut aller à la maison.",
               "material": "carte à enfiler, laine"
             }
           ],
@@ -4077,11 +4189,11 @@
           "eltern": "À chaque au revoir, dites quand vous vous reverrez. En cas de décès : des mots clairs et calmes, et du temps pour les questions – même toujours les mêmes.",
           "beobachtung": [
             {
-              "text": "Je dis ce que je ressens – même deux émotions à la fois.",
+              "text": "Je dis ce que je ressens : d’abord triste, puis content.",
               "eldib": "K-26"
             },
             {
-              "text": "Je parle de quelqu’un à qui je pense, si je veux.",
+              "text": "Je mets un objet dans la boîte à souvenirs.",
               "eldib": "K-15"
             },
             {
@@ -4096,7 +4208,7 @@
           "stufen": {
             "precoce": "Jeux de « parti, revenu », faire au revoir, triste et content sur le visage.",
             "p1": "Raconter son propre au revoir s’il le veut ; faire un dessin.",
-            "p2": "Nommer deux émotions à la fois, consoler, raconter l’histoire."
+            "p2": "Nommer les émotions l’une après l’autre, consoler, raconter l’histoire."
           },
           "zugang": [
             "Visages des émotions à montrer ; écouter suffit.",
@@ -4112,8 +4224,9 @@
             "material": "besorgen",
             "planB": "Pas de jardin : la fleur va dans un grand pot sur le rebord de la fenêtre.",
             "sicherheit": [
-              "Parler avant avec les familles des enfants concernés ; personne ne doit raconter.",
-              "Inquiétude pour un enfant : I-EBS ou ESEB ; danger immédiat 112/113."
+              "D’abord parler aux familles concernées, puis donner la lettre ; personne ne doit raconter.",
+              "Inquiétude : I-EBS ou ESEB ; danger immédiat 112/113.",
+              "standard:fotos"
             ]
           },
           "experiment": {
@@ -4152,7 +4265,7 @@
               "Le colorant tache : couvrir la table, ne pas boire l’eau."
             ],
             "weiter": "Coller un deuxième sachet sur une fenêtre à l’ombre : où « pleut-il » le plus ? Après la semaine, vider le sachet et le réutiliser.",
-            "dauer": "1 semaine, 5 Min.",
+            "dauer": "1 semaine, 5 min",
             "phaenomene": [
               "verdunsten"
             ],
@@ -4279,7 +4392,7 @@
     "de": {
       "titel": "Bald bin ich ein Schulkind",
       "untertitel": "Übergang in den Cycle 2: Was ich schon kann, was ich noch lerne – und wie die große Schule aussieht",
-      "anleitung": "Die Karten zweimal drucken. Auf Blatt 2 malt das Kind an, was es schon kann – der Rest ist „lerne ich noch“ – und fährt im Labyrinth mit dem Stift den Weg vom Bleistift zum Heft nach.",
+      "anleitung": "Die Karten zweimal drucken. Auf Seite 2 malt das Kind an, was es schon kann – der Rest ist „lerne ich noch“ – und fährt im Labyrinth mit dem Stift den Weg vom Bleistift zum Heft nach.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -4395,7 +4508,7 @@
           "Montag – Ich kann schon – ich lerne noch; Fragenplakat: Was wollen wir über die Schule wissen? Bildkarten.",
           "Dienstag – Besuch in einer Klasse des Cycle 2 mit Patenkindern; die Fragen vom Montag mitnehmen.",
           "Mittwoch – Experiment: Was kann der Radiergummi? Danach große Bögen an der Tafel (Stift-Parcours).",
-          "Donnerstag – Ranzen-Packtest mit Bildplan; Blatt 2; Reim im Rap-Rhythmus.",
+          "Donnerstag – Ranzen-Packtest mit Bildplan; Seite 2; Reim im Rap-Rhythmus.",
           "Freitag – Meine Mappe für die Schule: drei Portfolio-Seiten wählen; Pausenspiel mit den Paten im Hof."
         ],
         "differenzierung": {
@@ -4541,7 +4654,10 @@
                 "bild": "icon:rectangle"
               },
               "weißes Papier, in vier Streifen geteilt",
-              "1 Lupe je Paar"
+              {
+                "text": "1 Lupe je Paar",
+                "bild": "motiv:lupe"
+              }
             ],
             "schritte": [
               "Jedes Paar malt mit jedem Stift einen dicken Strich nebeneinander auf das Papier.",
@@ -4586,7 +4702,7 @@
     "fr": {
       "titel": "Bientôt à la grande école",
       "untertitel": "Passage au cycle 2 : ce que je sais déjà, ce que j’apprends encore – et à quoi ressemble la grande école",
-      "anleitung": "Imprimer les cartes deux fois. Sur la fiche 2, l’enfant colorie ce qu’il sait déjà faire – le reste, il l’apprendra – puis suit au crayon le chemin du labyrinthe, du crayon au cahier.",
+      "anleitung": "Imprimer les cartes deux fois. Sur la page 2, l’enfant colorie ce qu’il sait déjà faire – le reste, il l’apprendra – puis suit au crayon le chemin du labyrinthe, du crayon au cahier.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -4702,7 +4818,7 @@
           "Lundi – Je sais déjà – j’apprends encore ; affiche à questions : que voulons-nous savoir sur l’école ? Cartes-images.",
           "Mardi – Visite d’une classe du cycle 2 avec des parrains ; emporter les questions de lundi.",
           "Mercredi – Expérience : que peut faire la gomme ? Puis grands arcs au tableau (parcours du crayon).",
-          "Jeudi – Test du cartable avec plan en images ; fiche 2 ; comptine en rythme de rap.",
+          "Jeudi – Test du cartable avec plan en images ; page 2 ; comptine en rythme de rap.",
           "Vendredi – Ma pochette pour l’école : choisir trois pages du portfolio ; jeu de récré avec les parrains."
         ],
         "differenzierung": {
@@ -4740,40 +4856,40 @@
             {
               "art": "kreis",
               "titel": "Je sais déjà – j’apprends encore",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Deux paniers : dans l’un, les enfants posent les cartes de ce qu’ils savent déjà faire (mettre sa veste, découper), dans l’autre, ce qu’ils veulent apprendre. L’enseignante dit : « Pas encore veut dire : bientôt. »",
               "material": "deux paniers, cartes-images"
             },
             {
               "art": "draussen",
               "titel": "Visite chez les grands",
-              "dauer": "45 Min.",
+              "dauer": "45 min",
               "text": "Les enfants visitent une classe du cycle 2 : s’asseoir sur les chaises, entendre la cloche, regarder dans les cartables. Les parrains répondent aux questions de l’affiche. Ensuite, chacun raconte ce qu’il a vu."
             },
             {
               "art": "gestalten",
               "titel": "Le parcours du crayon",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Au tableau ou sur de grandes feuilles au mur, les enfants tracent des arcs, des vagues et des boucles avec de petits morceaux de craie. Les crayons courts aident la prise en pince ; sur une surface verticale, le poignet travaille bien.",
               "material": "tableau, morceaux de craie, grandes feuilles"
             },
             {
               "art": "spiel",
               "titel": "Le test du cartable",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Un plan en images montre : trousse, cahier, boîte à goûter, gourde. Par deux, les enfants remplissent le cartable et se vérifient avec le plan. Ensuite : qui sait ouvrir et fermer sa gourde tout seul ?",
               "material": "cartable, plan en images, affaires d’école"
             },
             {
               "art": "sprache",
               "titel": "Questions à l’école",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants recueillent des questions : y a-t-il des jouets ? Combien de temps dure la récré ? L’enseignante les note sur l’affiche. Les parrains du cycle 2 répondent lors de la visite ou par une petite lettre."
             },
             {
               "art": "bewegung",
               "titel": "Le jeu de récré des parrains",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Les parrains apportent un jeu de récré du cycle 2, par exemple un jeu de sauts ou un chat perché. Ils expliquent les règles, tout le monde joue ensemble dans la cour."
             }
           ],
@@ -4846,7 +4962,10 @@
                 "bild": "icon:rectangle"
               },
               "papier blanc partagé en quatre bandes",
-              "1 loupe par paire"
+              {
+                "text": "1 loupe par paire",
+                "bild": "motiv:lupe"
+              }
             ],
             "schritte": [
               "Chaque paire trace un gros trait avec chaque outil, côte à côte sur le papier.",
@@ -4867,7 +4986,7 @@
               "Ne pas mettre crayons et gommes en bouche ; balayer les miettes."
             ],
             "weiter": "Gommer avec de la pâte à modeler ou un bout de tissu : est-ce que ça marche ? Ou estomper un trait de crayon avec le doigt et comparer.",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "stoffe"
             ],
@@ -4993,7 +5112,7 @@
     "de": {
       "titel": "Mélusina und das Wasser",
       "untertitel": "Eine Luxemburger Sage, sanft erzählt: von der Alzette, einem Versprechen und Wasser, das bergauf fließt",
-      "anleitung": "Die Karten zweimal drucken; mit ihnen erzählen die Kinder die Sage nach. Blatt 2 gehört zum Experiment: Das Kind kreist seine Vermutung ein, malt vorher und nachher und kreist ein, was passiert ist.",
+      "anleitung": "Die Karten zweimal drucken; mit ihnen erzählen die Kinder die Sage nach. Auf Seite 2 klebt das Kind die vier Bilder der Sage in die richtige Reihenfolge und malt ein eigenes Ende – für die Konferenz am Freitag. Das Forscherblatt zum Wasserweg gibt es als Zusatzseite.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -5017,7 +5136,7 @@
               "titel": "Siegfried"
             },
             {
-              "bild": "icon:building-castle",
+              "bild": "motiv:burg",
               "titel": "die Burg"
             },
             {
@@ -5050,21 +5169,48 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "frage": "Fließt das Wasser über den Rand?",
-          "bild": "motiv:eimer",
-          "name": false,
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Schneide aus. Klebe die Sage in der richtigen Reihenfolge.",
+          "symbole": [
+            "schneiden",
+            "kleben"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "schneiden_kleben",
+          "bilder": [
             {
-              "bild": "motiv:eimer",
-              "text": "bleibt oben"
+              "bild": "motiv:fee",
+              "text": "am Fluss"
             },
             {
-              "bild": "icon:droplet",
-              "text": "fließt hinunter"
+              "bild": "icon:heart-handshake",
+              "text": "versprechen"
+            },
+            {
+              "bild": "motiv:ritter",
+              "text": "der Blick"
+            },
+            {
+              "bild": "motiv:fisch",
+              "text": "ins Wasser"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie soll die Sage enden? Male dein Ende.",
+          "symbole": [
+            "malen",
+            "sprechen"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 7
         }
       ],
       "lehrer": {
@@ -5072,7 +5218,7 @@
         "ablauf": [
           "Montag – Die Sage am Tuch-Fluss erzählen; Bildkarten; Fotos von Bockfelsen und Alzette zeigen.",
           "Dienstag – Was ist ein Versprechen? Kleine Versprechen für morgen geben; Wellen mit dem Schwungtuch.",
-          "Mittwoch – Experiment: Mélusinas Wasserweg über den Rand; Forscherblatt (Blatt 2).",
+          "Mittwoch – Experiment: Mélusinas Wasserweg über den Rand; Forscherblatt (Zusatzseite); Sage kleben (Seite 2).",
           "Donnerstag – Hat das Versprechen geklappt? Die Sage in Rollen spielen; Gemeinschaftsbild der Alzette.",
           "Freitag – Konferenz: Wie soll die Sage bei uns enden? Das neue Ende spielen; Wasserwege im Hof."
         ],
@@ -5087,7 +5233,8 @@
         ],
         "tipps": [
           "Nur die sanfte Fassung erzählen, ohne versinkende Stadt; die Fassung vorher mit einer Quelle prüfen (Bibliothek, Stadtmuseum).",
-          "Fischschwanz-Tücher nur im Sitzen oder Liegen – im Gehen stolpert man."
+          "Fischschwanz-Tücher nur im Sitzen oder Liegen – im Gehen stolpert man.",
+          "Keine Schuldfrage („Siegfried war schuld“): Er war neugierig, sie war traurig – beides darf man verstehen."
         ],
         "material": "Langes blaues Tuch, Bausteine für Felsen und Burg, Figuren, Fotos der Alzette, Schwungtuch, Schlauch, zwei Eimer, Wanne",
         "hintergrund": "Die Sage von Mélusina gehört zum bekanntesten Erzählgut Luxemburgs. Sie ist mit Graf Siegfried verbunden, der 963 den Bockfelsen über der Alzette erwarb – der Anfang der Stadt Luxemburg. Es gibt viele Fassungen, manche düster. Hier wird eine sanfte erzählt: Mélusina bittet Siegfried, sie samstags allein zu lassen; aus Neugier schaut er doch und sieht sie mit einem Fischschwanz im Bad; traurig gleitet sie in die Alzette. Bilder zum Nacherzählen fördern Wortschatz und Erzählen (Whitehurst et al., 1988); im Rollenspiel üben Kinder, Regeln und Versprechen einzuhalten (Bodrova & Leong, 2007).",
@@ -5216,7 +5363,10 @@
             "titel": "Mélusinas Wasserweg über den Rand",
             "frage": "Kann Wasser durch einen Schlauch über den Eimerrand nach oben und dann hinunter fließen?",
             "material": [
-              "1 m durchsichtiger Schlauch (Baumarkt oder Aquarienbedarf)",
+              {
+                "text": "1 m durchsichtiger Schlauch (Baumarkt oder Aquarienbedarf)",
+                "bild": "motiv:gartenschlauch"
+              },
               {
                 "text": "2 Eimer und 1 stabiler Hocker",
                 "bild": "motiv:eimer"
@@ -5262,7 +5412,21 @@
             "dauer": "25 Min.",
             "phaenomene": [
               "kraefte"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Fließt das Wasser über den Rand?",
+              "vermuten": [
+                {
+                  "bild": "motiv:eimer",
+                  "text": "bleibt oben"
+                },
+                {
+                  "bild": "icon:droplet",
+                  "text": "fließt hinunter"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -5270,7 +5434,7 @@
     "fr": {
       "titel": "Mélusine et l’eau",
       "untertitel": "Une légende luxembourgeoise racontée en douceur : l’Alzette, une promesse et de l’eau qui monte",
-      "anleitung": "Imprimer les cartes deux fois ; les enfants racontent la légende avec elles. La fiche 2 accompagne l’expérience : l’enfant entoure son hypothèse, dessine avant et après et entoure ce qui s’est passé.",
+      "anleitung": "Imprimer les cartes deux fois ; les enfants racontent la légende avec elles. Page 2 : l’enfant colle les quatre images de la légende dans l’ordre et dessine sa propre fin – pour le conseil du vendredi. La fiche du chercheur est une page à part.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -5294,7 +5458,7 @@
               "titel": "Sigefroi"
             },
             {
-              "bild": "icon:building-castle",
+              "bild": "motiv:burg",
               "titel": "le château"
             },
             {
@@ -5327,21 +5491,48 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "frage": "L’eau passe-t-elle par-dessus le bord ?",
-          "bild": "motiv:eimer",
-          "name": false,
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Découpe. Colle la légende dans le bon ordre.",
+          "symbole": [
+            "schneiden",
+            "kleben"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "schneiden_kleben",
+          "bilder": [
             {
-              "bild": "motiv:eimer",
-              "text": "reste en haut"
+              "bild": "motiv:fee",
+              "text": "au bord de l’eau"
             },
             {
-              "bild": "icon:droplet",
-              "text": "coule en bas"
+              "bild": "icon:heart-handshake",
+              "text": "la promesse"
+            },
+            {
+              "bild": "motiv:ritter",
+              "text": "le regard"
+            },
+            {
+              "bild": "motiv:fisch",
+              "text": "dans l’eau"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment la légende doit-elle finir ? Dessine ta fin.",
+          "symbole": [
+            "malen",
+            "sprechen"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 7
         }
       ],
       "lehrer": {
@@ -5349,7 +5540,7 @@
         "ablauf": [
           "Lundi – Raconter la légende au bord de la rivière en tissu ; cartes-images ; photos du Bock et de l’Alzette.",
           "Mardi – Qu’est-ce qu’une promesse ? Se faire de petites promesses pour demain ; vagues au parachute.",
-          "Mercredi – Expérience : le chemin d’eau de Mélusine ; fiche du chercheur (fiche 2).",
+          "Mercredi – Expérience : le chemin d’eau de Mélusine ; fiche du chercheur (page à part) ; coller la légende (page 2).",
           "Jeudi – La promesse a-t-elle été tenue ? Jouer la légende ; grande fresque de l’Alzette.",
           "Vendredi – Conseil : comment la légende doit-elle finir chez nous ? Jouer la nouvelle fin ; chemins d’eau dans la cour."
         ],
@@ -5364,7 +5555,8 @@
         ],
         "tipps": [
           "Ne raconter que la version douce, sans ville engloutie ; vérifier la version avec une source (bibliothèque, musée de la ville).",
-          "Tissus en queue de poisson seulement assis ou couché – en marchant, on trébuche."
+          "Tissus en queue de poisson seulement assis ou couché – en marchant, on trébuche.",
+          "Pas de coupable (« c’est la faute de Sigefroi ») : il était curieux, elle était triste – on peut comprendre les deux."
         ],
         "material": "Long tissu bleu, briques pour le rocher et le château, figurines, photos de l’Alzette, parachute, tuyau, deux seaux, bac",
         "hintergrund": "La légende de Mélusine fait partie des récits les plus connus du Luxembourg. Elle est liée au comte Sigefroi, qui acquit en 963 le rocher du Bock au-dessus de l’Alzette – le début de la ville de Luxembourg. Il en existe beaucoup de versions, certaines sombres. Ici, une version douce : Mélusine demande à Sigefroi de la laisser seule le samedi ; par curiosité, il regarde quand même et la voit dans son bain avec une queue de poisson ; triste, elle glisse dans l’Alzette. Raconter avec des images enrichit le vocabulaire et le récit (Whitehurst et al., 1988) ; le jeu de rôle exerce le respect des règles et des promesses (Bodrova & Leong, 2007).",
@@ -5388,41 +5580,41 @@
             {
               "art": "theater",
               "titel": "La légende au bord de la rivière",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Un tissu bleu devient l’Alzette, des briques le rocher et le château. L’enseignante raconte en quatre images : la rencontre, la promesse, le regard curieux, Mélusine qui glisse dans l’eau. Puis les enfants rejouent.",
               "material": "tissu bleu, briques, figurines"
             },
             {
               "art": "kreis",
               "titel": "Qu’est-ce qu’une promesse ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants racontent : qui t’a déjà promis quelque chose ? Puis chacun fait une petite promesse à un autre pour demain (« Je t’apporte un dessin »). Le lendemain : est-ce que ça a marché ? Qu’est-ce qu’on ressent ?"
             },
             {
               "art": "bewegung",
               "titel": "Sous l’Alzette",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Le parachute est la rivière : petites vagues, grosses vagues, tout calme. Quand l’enseignante dit un prénom, cet enfant passe sous le tissu comme Mélusine, de l’autre côté.",
               "material": "parachute"
             },
             {
               "art": "draussen",
               "titel": "Chemins d’eau dans la cour",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Avec des gouttières, des entonnoirs, des tuyaux et des gobelets, les enfants construisent des chemins d’eau : comment l’eau va-t-elle du seau au bac ? Peut-elle aussi monter ? Une préparation à l’expérience.",
               "material": "gouttières, entonnoirs, tuyaux, seaux"
             },
             {
               "art": "gestalten",
               "titel": "La rivière de Mélusine",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Sur une longue bande de papier, les enfants peignent l’Alzette bleue, des poissons, le pont, le rocher. Chacun ajoute sa propre Mélusine – comme il l’imagine.",
               "material": "rouleau de papier, peinture bleue, pinceaux"
             },
             {
               "art": "sprache",
               "titel": "Où habite Mélusine ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Photos du rocher du Bock, de l’Alzette et du Grund, à Luxembourg-ville. Qui y est déjà allé ? Les enfants cherchent sur les photos l’eau, le pont et le mur du château et disent les mots dans leurs langues.",
               "material": "photos"
             }
@@ -5493,7 +5685,10 @@
             "titel": "Le chemin d’eau de Mélusine",
             "frage": "L’eau peut-elle passer par un tuyau au-dessus du bord du seau, puis redescendre ?",
             "material": [
-              "1 m de tuyau transparent (bricolage ou aquariophilie)",
+              {
+                "text": "1 m de tuyau transparent (bricolage ou aquariophilie)",
+                "bild": "motiv:gartenschlauch"
+              },
               {
                 "text": "2 seaux et 1 tabouret solide",
                 "bild": "motiv:eimer"
@@ -5533,10 +5728,24 @@
               "Ne jamais aspirer au tuyau ; ne pas le mettre autour du cou ou du bras."
             ],
             "weiter": "Dehors, vider la pataugeoire vers une plate-bande avec le tuyau. Ou tester : l’eau coule-t-elle plus vite si le seau du bas est plus bas ?",
-            "dauer": "25 Min.",
+            "dauer": "25 min",
             "phaenomene": [
               "kraefte"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "L’eau passe-t-elle par-dessus le bord ?",
+              "vermuten": [
+                {
+                  "bild": "motiv:eimer",
+                  "text": "reste en haut"
+                },
+                {
+                  "bild": "icon:droplet",
+                  "text": "coule en bas"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }

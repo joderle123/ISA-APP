@@ -106,7 +106,7 @@
     "de": {
       "titel": "Gut sehen – hell und dunkel",
       "untertitel": "Augen, Licht und Schatten: suchen, finden, staunen",
-      "anleitung": "Karten zweimal drucken (Sitzkreis, Memory, „Ich sehe was“). Seite 2: Das Kind sucht Sterne und Monde in der Nachtszene und malt, was es am Tag und in der Nacht sieht.",
+      "anleitung": "Karten zweimal drucken (Sitzkreis, Memory, „Ich sehe was“). Seite 2: Das Kind sucht Sterne, Monde und Glühwürmchen in der Nachtszene und malt, was es am Tag und in der Nacht sieht.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -160,7 +160,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Finde die Sterne und die Monde. Kreise sie ein.",
+          "text": "Finde Sterne, Monde und Glühwürmchen. Kreise ein.",
           "symbole": [
             "zeigen",
             "einkreisen"
@@ -178,12 +178,16 @@
             {
               "bild": "icon:moon",
               "anzahl": 2
+            },
+            {
+              "bild": "motiv:gluehwuermchen",
+              "anzahl": 3
             }
           ],
           "ablenker": [
             {
               "bild": "motiv:wolke",
-              "anzahl": 3
+              "anzahl": 6
             }
           ]
         },
@@ -221,7 +225,7 @@
         "ablauf": [
           "Montag – Sitzkreis: Fragenplakat anlegen, Bildkarten einführen, „Ich sehe was“ mit Farben.",
           "Dienstag – Dunkelkiste: mit der Taschenlampe durchs Guckloch leuchten und raten; Kim-Spiel „Was fehlt?“.",
-          "Mittwoch – Experiment „Der schwarze Punkt im Auge“; danach Seite 2: Sterne und Monde suchen, Tag und Nacht malen.",
+          "Mittwoch – Experiment „Der schwarze Punkt im Auge“; danach Seite 2: Sterne, Monde und Glühwürmchen suchen, Tag und Nacht malen.",
           "Donnerstag – Tag und Nacht mit Kreide; der Reim als Ruf und Antwort; die Kinder wählen ihr Abschlussspiel.",
           "Freitag – das gewählte Spiel und Sterne im Raum suchen; Rückblick am Fragenplakat."
         ],
@@ -239,7 +243,7 @@
           "Angst vor Dunkelheit: nicht drängen, Lampe in Reichweite."
         ],
         "achtung": "Kind kneift oft die Augen zusammen: Eltern ansprechen. Sorgen um ein Kind: mit der I-EBS der Schule bzw. dem ESEB sprechen; bei akuter Gefahr 112/113.",
-        "material": "LED-Taschenlampen, Handspiegel, Schuhkartons, Tücher, Papier (gelb, schwarz, blau), weiße Kreide, Steine",
+        "material": "LED-Taschenlampen, Handspiegel, Schuhkartons, Tücher, Papier (gelb, schwarz, blau), weiße Kreide, große Bausteine",
         "hintergrund": "Genaues Hinschauen ist eine Lernleistung: Kinder halten die Aufmerksamkeit, erkennen Unterschiede und vergleichen Einzelheiten. Such- und Merkspiele üben das mit klarer Rückmeldung (Hirsh-Pasek u. a., 2009). Antippen und Zählen kleiner Mengen festigt die Zahlwortreihe (Clements & Sarama, 2009). Dass sich die Pupille im Dunkeln weitet, sehen die Kinder im Spiegel selbst – und lernen dabei hell, dunkel, groß und klein.",
         "quellen": [
           "Hirsh-Pasek, K., Golinkoff, R. M., Berk, L. E. & Singer, D. G. (2009). A Mandate for Playful Learning in Preschool: Presenting the Evidence. New York: Oxford University Press.",
@@ -269,8 +273,8 @@
               "art": "sinne",
               "titel": "Der schwarze Punkt im Auge",
               "dauer": "15 Min.",
-              "text": "Das Experiment der Woche: Zu zweit in die Augen oder in den Spiegel schauen, den Raum abdunkeln, bis zehn zählen, Licht an. Was passiert mit dem Punkt in der Mitte? Die Kinder zeigen mit den Händen: groß – klein.",
-              "material": "Handspiegel, abdunkelbarer Raum"
+              "text": "Das Experiment der Woche: Im hellen Raum ein Auge zehn Sekunden mit der hohlen Hand abdecken, dann die Hand weg und sofort in den Spiegel schauen. Was macht der Punkt in der Mitte? Die Kinder zeigen mit den Händen: groß – klein.",
+              "material": "Handspiegel, heller Raum"
             },
             {
               "art": "spiel",
@@ -333,7 +337,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Jedes Kind legt einen Stein zu seinem Lieblingsspiel – Kim-Spiel, Dunkelkiste oder Sternensuche. Das Spiel mit den meisten Steinen spielen alle am Freitag.",
+            "text": "Donnerstag: Jedes Kind legt einen Baustein zu seinem Lieblingsspiel – Kim-Spiel, Dunkelkiste oder Sternensuche. Das Spiel mit den meisten spielen alle am Freitag.",
             "frage": "Was wollen wir über Augen und Licht wissen?"
           },
           "stufen": {
@@ -353,7 +357,7 @@
             "ausflug": false,
             "besuch": false,
             "material": "besorgen",
-            "planB": "Kein abdunkelbarer Raum: Alle halten sich 10 Sekunden die Augen zu (Handschalen), dann Spiegel und Augen öffnen.",
+            "planB": "Zu wenige Spiegel: zu zweit arbeiten – ein Kind deckt ab, das andere schaut ihm in die Augen.",
             "sicherheit": [
               "Lupe nie in die Sonne halten oder liegen lassen (Brandgefahr).",
               "Keine Taschenlampe in die Augen richten; Kim-Spiel nur mit großen Dingen."
@@ -361,32 +365,37 @@
           },
           "experiment": {
             "titel": "Der schwarze Punkt im Auge",
-            "frage": "Was passiert mit dem schwarzen Punkt im Auge, wenn es dunkel und wieder hell wird?",
+            "frage": "Was macht der schwarze Punkt im Auge, wenn wir die Hand wegnehmen?",
             "material": [
-              "1 bruchsicherer Handspiegel für je zwei Kinder",
+              "1 bruchsicherer Handspiegel je Kind oder Paar",
               {
-                "text": "Raum, den man abdunkeln kann",
-                "bild": "icon:moon"
+                "text": "Heller Platz am Fenster oder unter der Deckenlampe",
+                "bild": "motiv:sonne"
               },
               {
-                "text": "Lichtschalter (nur Erwachsene)",
-                "bild": "icon:bulb"
+                "text": "Bildkarte „das Auge“",
+                "bild": "motiv:auge"
               },
-              "Steine oder Karten zum Vermuten"
+              {
+                "text": "Große Bausteine zum Abstimmen",
+                "bild": "icon:cube"
+              }
             ],
             "schritte": [
-              "Zu zweit sitzen: Ein Kind schaut dem anderen in die Augen oder in den Spiegel. Wo ist die schwarze Mitte?",
-              "Vermuten: Was macht der Punkt, wenn es dunkel wird? Die Kinder zeigen mit den Händen: größer, kleiner oder gleich.",
-              "Eine erwachsene Person dunkelt den Raum ab. Alle zählen bis zehn und lassen die Augen offen.",
-              "Licht an – sofort in die Augen schauen: Der Punkt war groß und wird schnell klein. Dann tauschen und noch einmal."
+              "Im hellen Raum in den Spiegel schauen: Wo ist der schwarze Punkt in der Mitte des Auges? Wie groß ist er?",
+              "Vermuten: Was macht der Punkt, wenn das Auge kurz im Dunkeln war? Die Kinder zeigen mit den Händen: größer, kleiner oder gleich.",
+              {
+                "text": "Ein Auge mit der hohlen Hand abdecken, beide Augen offen lassen und langsam bis zehn zählen.",
+                "bild": "motiv:hand-offen"
+              },
+              "Hand weg und sofort in den Spiegel schauen: Der Punkt ist erst groß und wird schnell kleiner. Zu zweit geht es auch."
             ],
-            "vermutung": "Vor dem Abdunkeln zeigt jedes Kind mit den Händen: größer, kleiner oder gleich. Viele sagen: „Der Punkt bleibt immer gleich.“",
-            "beobachten": "Im Dunkeln wird der schwarze Punkt groß, bei Licht schnell wieder klein. Fragen: Wann ist er größer? Was macht er, wenn die Lampe angeht?",
-            "warumKind": "Im Dunkeln macht das Auge sein Fenster ganz weit auf, damit viel Licht hereinkommt. Wenn es hell ist, macht es das Fenster klein.",
-            "hintergrund": "Die Iris regelt die Weite der Pupille über zwei kleine Muskeln (Pupillenreflex): Im Dunkeln weitet sie sich und lässt mehr Licht auf die Netzhaut, bei Helligkeit verengt sie sich und schützt das Auge. Die Reaktion läuft in Sekundenbruchteilen und von allein ab. Kinder sehen sie im Spiegel selbst.",
+            "vermutung": "Vor dem Abdecken zeigt jedes Kind mit den Händen: größer, kleiner oder gleich. Viele sagen: „Der Punkt bleibt immer gleich.“",
+            "beobachten": "Gleich nach dem Wegnehmen der Hand ist der Punkt groß und wird in einem Augenblick kleiner. Fragen: Wann ist er groß, wann klein? Und beim anderen Auge?",
+            "warumKind": "Der schwarze Punkt ist das Fenster des Auges. Im Dunkeln macht das Auge es weit auf, damit viel Licht hereinkommt. Wird es hell, macht es das Fenster klein.",
+            "hintergrund": "Die Pupille ist die Öffnung in der Mitte der Iris. Zwei kleine Muskeln der Iris verengen sie bei Helligkeit und weiten sie bei wenig Licht (Pupillenreflex) – das läuft von allein ab. Unter der hohlen Hand wird es für das Auge dunkel, die Pupille weitet sich; fällt wieder Licht hinein, wird sie in Sekundenbruchteilen enger. Im hellen Raum mit Spiegel gelingt der Versuch zuverlässig, ganz ohne Abdunkeln – auch für Kinder, die Dunkelheit nicht mögen.",
             "sicherheit": [
-              "Nie mit einer Taschenlampe in die Augen leuchten: Nur das Raumlicht wird geschaltet.",
-              "Bruchsichere Spiegel aus Kunststoff; im abgedunkelten Raum bleiben alle sitzen."
+              "Nur bruchsichere Spiegel; nie in die Sonne oder in eine Lampe schauen."
             ],
             "weiter": "Mit Fotos von Katzenaugen vergleichen: Wie sieht die Pupille bei Tag und bei Nacht aus? Wer findet Tiere mit besonderen Augen?",
             "dauer": "15 Min.",
@@ -397,12 +406,16 @@
             "forscherblatt": {
               "vermuten": [
                 {
-                  "bild": "icon:circle",
+                  "bild": "motiv:auge",
                   "text": "bleibt gleich"
                 },
                 {
                   "bild": "icon:moon",
                   "text": "im Dunkeln groß"
+                },
+                {
+                  "bild": "motiv:sonne",
+                  "text": "im Hellen groß"
                 }
               ],
               "sehen": "vorher-nachher"
@@ -468,7 +481,7 @@
         },
         {
           "art": "aufgabe",
-          "text": "Trouve les étoiles et les lunes. Entoure-les.",
+          "text": "Trouve étoiles, lunes et lucioles. Entoure.",
           "symbole": [
             "zeigen",
             "einkreisen"
@@ -486,12 +499,16 @@
             {
               "bild": "icon:moon",
               "anzahl": 2
+            },
+            {
+              "bild": "motiv:gluehwuermchen",
+              "anzahl": 3
             }
           ],
           "ablenker": [
             {
               "bild": "motiv:wolke",
-              "anzahl": 3
+              "anzahl": 6
             }
           ]
         },
@@ -529,7 +546,7 @@
         "ablauf": [
           "Lundi – cercle : lancer l’affiche des questions, présenter les cartes, « Je vois quelque chose… » avec les couleurs.",
           "Mardi – boîte noire : éclairer par le trou avec la lampe de poche et deviner ; jeu de Kim « Qu’est-ce qui manque ? ».",
-          "Mercredi – expérience « Le petit rond noir de l’œil » ; puis la page 2 : chercher étoiles et lunes, dessiner jour et nuit.",
+          "Mercredi – expérience « Le petit rond noir de l’œil » ; puis la page 2 : chercher étoiles, lunes et lucioles, dessiner jour et nuit.",
           "Jeudi – le jour et la nuit à la craie ; la comptine en appel et réponse ; les enfants choisissent leur jeu de clôture.",
           "Vendredi – le jeu choisi et la chasse aux étoiles dans la classe ; bilan devant l’affiche des questions."
         ],
@@ -570,41 +587,41 @@
             {
               "art": "kreis",
               "titel": "Je vois quelque chose…",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante commence : « Je vois quelque chose que tu ne vois pas, et c’est jaune. » Les enfants regardent autour d’eux et devinent. Celui qui trouve pose la devinette suivante. Pour les plus jeunes, seules les cartes sont au milieu."
             },
             {
               "art": "sinne",
               "titel": "Le petit rond noir de l’œil",
-              "dauer": "15 Min.",
-              "text": "L’expérience de la semaine : à deux, regarder les yeux ou le miroir, assombrir la pièce, compter jusqu’à dix, rallumer. Que devient le rond au milieu ? Les enfants montrent avec les mains : grand – petit.",
-              "material": "miroirs, salle assombrissable"
+              "dauer": "15 min",
+              "text": "L’expérience de la semaine : dans la salle claire, couvrir un œil dix secondes avec la main en creux, puis enlever la main et regarder tout de suite dans le miroir. Que fait le rond du milieu ? Les enfants montrent avec les mains : grand – petit.",
+              "material": "miroirs, salle claire"
             },
             {
               "art": "spiel",
               "titel": "Le jeu de Kim : qu’est-ce qui manque ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Cinq gros objets sont posés sur un tissu. Les enfants regardent bien, ferment les yeux, et l’enseignante en retire un. Qu’est-ce qui manque ? Avec le temps, ajouter des objets ou en retirer deux d’un coup.",
               "material": "tissu, 5 à 8 gros objets"
             },
             {
               "art": "sinne",
               "titel": "La boîte noire",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Dans des boîtes à chaussures percées d’un trou se cache un objet. Les enfants éclairent avec la lampe de poche par le trou et devinent – d’abord avec lumière, puis sans. Qui préfère regarder de l’extérieur peut le faire.",
               "material": "boîtes à chaussures percées, lampes de poche, objets"
             },
             {
               "art": "gestalten",
               "titel": "Le jour et la nuit à la craie",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Sur du papier noir, les enfants dessinent la nuit à la craie blanche ; sur du papier bleu, le jour à la craie jaune et blanche. Deux images côte à côte : qu’est-ce qui change quand il fait sombre ?",
               "material": "papier noir et bleu, craies"
             },
             {
               "art": "zaehlen",
               "titel": "Chercher des étoiles",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Des étoiles en papier jaune sont cachées dans la classe. Qui en trouve une la pose au milieu. À la fin, tout le monde compte et range les étoiles par cinq. Pour les plus jeunes, cacher seulement trois étoiles.",
               "material": "étoiles en papier jaune"
             }
@@ -641,7 +658,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : chaque enfant pose un caillou près de son jeu préféré – jeu de Kim, boîte noire ou étoiles. Le jeu élu est joué par tous vendredi.",
+            "text": "Jeudi : chaque enfant pose un cube près de son jeu préféré – jeu de Kim, boîte noire ou étoiles. Le jeu élu est joué par tous vendredi.",
             "frage": "Que voulons-nous savoir sur les yeux et la lumière ?"
           },
           "stufen": {
@@ -661,7 +678,7 @@
             "ausflug": false,
             "besuch": false,
             "material": "besorgen",
-            "planB": "Pas de salle à assombrir : tous se couvrent les yeux 10 secondes (mains en coquille), puis regardent le miroir.",
+            "planB": "Pas assez de miroirs : à deux – un enfant couvre son œil, l’autre le regarde.",
             "sicherheit": [
               "Ne jamais tenir ni laisser une loupe au soleil (risque d’incendie).",
               "Pas de lampe de poche dans les yeux ; jeu de Kim seulement avec de gros objets."
@@ -669,32 +686,37 @@
           },
           "experiment": {
             "titel": "Le petit rond noir de l’œil",
-            "frage": "Que devient le petit rond noir de l’œil quand il fait sombre, puis de nouveau clair ?",
+            "frage": "Que fait le petit rond noir de l’œil quand on enlève la main ?",
             "material": [
-              "1 miroir incassable pour deux enfants",
+              "1 miroir incassable par enfant ou par deux",
               {
-                "text": "salle qu’on peut assombrir",
-                "bild": "icon:moon"
+                "text": "Place claire près de la fenêtre ou sous le plafonnier",
+                "bild": "motiv:sonne"
               },
               {
-                "text": "interrupteur (adultes seulement)",
-                "bild": "icon:bulb"
+                "text": "Carte-image « l’œil »",
+                "bild": "motiv:auge"
               },
-              "cailloux ou cartes pour deviner"
+              {
+                "text": "Gros cubes pour voter",
+                "bild": "icon:cube"
+              }
             ],
             "schritte": [
-              "À deux : un enfant regarde les yeux de l’autre ou le miroir. Où est le milieu noir ?",
-              "Deviner : que fait le rond quand il fait sombre ? Les enfants montrent avec les mains : plus grand, plus petit ou pareil.",
-              "Un adulte assombrit la salle. Tout le monde compte jusqu’à dix, les yeux ouverts.",
-              "Lumière : regarder tout de suite les yeux. Le rond était grand, il rapetisse vite. Puis on échange et on recommence."
+              "Dans la salle claire, regarder dans le miroir : où est le rond noir au milieu de l’œil ? Il est grand comment ?",
+              "Deviner : que fait le rond quand l’œil a été un moment dans le noir ? Les enfants montrent : plus grand, plus petit ou pareil.",
+              {
+                "text": "Couvrir un œil avec la main en creux, garder les deux yeux ouverts et compter lentement jusqu’à dix.",
+                "bild": "motiv:hand-offen"
+              },
+              "Enlever la main et regarder tout de suite dans le miroir : le rond est grand, puis rapetisse vite. À deux, c’est possible aussi."
             ],
-            "vermutung": "Avant d’assombrir, chaque enfant montre avec les mains : plus grand, plus petit ou pareil. Beaucoup disent : « Le rond reste toujours pareil. »",
-            "beobachten": "Dans le noir, le rond noir devient grand ; avec la lumière, il rapetisse vite. Questions : quand est-il plus grand ? Que fait-il quand on allume ?",
-            "warumKind": "Dans le noir, l’œil ouvre grand sa fenêtre pour laisser entrer la lumière. Quand il fait clair, il la referme un peu.",
-            "hintergrund": "L’iris règle l’ouverture de la pupille grâce à deux petits muscles (réflexe pupillaire) : dans le noir elle s’agrandit et laisse passer plus de lumière vers la rétine ; à la lumière elle se resserre et protège l’œil. La réaction est très rapide et automatique. Les enfants la voient eux-mêmes dans le miroir.",
+            "vermutung": "Avant de couvrir l’œil, chaque enfant montre avec les mains : plus grand, plus petit ou pareil. Beaucoup disent : « Le rond reste toujours pareil. »",
+            "beobachten": "Juste après avoir enlevé la main, le rond est grand et rapetisse en un instant. Questions : quand est-il grand, quand petit ? Et l’autre œil ?",
+            "warumKind": "Le rond noir est la fenêtre de l’œil. Dans le noir, l’œil l’ouvre grand pour laisser entrer la lumière. Quand il fait clair, il la rend petite.",
+            "hintergrund": "La pupille est l’ouverture au centre de l’iris. Deux petits muscles de l’iris la resserrent à la lumière et l’agrandissent quand il fait sombre (réflexe pupillaire) – cela se fait tout seul. Sous la main en creux, l’œil est dans le noir et la pupille s’agrandit ; dès que la lumière revient, elle se resserre en une fraction de seconde. Dans une salle claire, avec un miroir, l’expérience réussit sans assombrir la pièce – aussi pour les enfants qui n’aiment pas le noir.",
             "sicherheit": [
-              "Ne jamais éclairer les yeux avec une lampe de poche : seul l’interrupteur de la pièce est utilisé.",
-              "Miroirs incassables en plastique ; dans la pièce sombre, tout le monde reste assis."
+              "Miroirs incassables ; ne jamais regarder le soleil ni une lampe."
             ],
             "weiter": "Comparer avec des photos d’yeux de chat : à quoi ressemble la pupille le jour et la nuit ? Qui trouve d’autres animaux aux yeux particuliers ?",
             "dauer": "15 min",
@@ -705,12 +727,16 @@
             "forscherblatt": {
               "vermuten": [
                 {
-                  "bild": "icon:circle",
+                  "bild": "motiv:auge",
                   "text": "reste pareil"
                 },
                 {
                   "bild": "icon:moon",
                   "text": "grand dans le noir"
+                },
+                {
+                  "bild": "motiv:sonne",
+                  "text": "grand à la lumière"
                 }
               ],
               "sehen": "vorher-nachher"
@@ -1094,8 +1120,8 @@
               "Wattestäbchen, 2 je Kind und Partner",
               "2 Wattestäbchen an einer Wäscheklammer (2 cm Abstand)",
               {
-                "text": "Steine oder Karten zum Vermuten",
-                "bild": "icon:circle"
+                "text": "Bausteine oder Karten zum Vermuten",
+                "bild": "icon:cube"
               }
             ],
             "schritte": [
@@ -1300,42 +1326,42 @@
             {
               "art": "kreis",
               "titel": "Devinettes avec la boîte à toucher",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Dans une boîte percée d’un trou pour la main se cache un objet : cuillère, brosse, éponge ou pomme de pin. Un enfant y glisse la main sans regarder et décrit : doux, dur, rond, piquant. La classe devine, puis on sort l’objet.",
               "material": "boîte à chaussures percée, gros objets du quotidien"
             },
             {
               "art": "bewegung",
               "titel": "Le chemin pieds nus",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Au sol : coussins, tapis, serviette et bacs plats avec du sable et des bouchons. Les enfants marchent pieds nus et disent ce qu’ils sentent. Qui veut peut fermer les yeux, la main dans celle d’un adulte. Ensuite, laver les pieds.",
               "material": "coussins, tapis, bacs avec sable et bouchons"
             },
             {
               "art": "sinne",
               "titel": "Un ou deux ? L’expérience",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "À deux : avec un ou deux cotons-tiges, un enfant touche doucement le bout du doigt, l’avant-bras et le dos de l’autre – après « Je peux ? ». L’enfant montre avec les doigts s’il sent un ou deux points. Où est-ce le plus facile ?",
               "material": "cotons-tiges, pince à linge"
             },
             {
               "art": "sinne",
               "titel": "Chaud ou froid ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Deux bouteilles : l’une d’eau tiède, l’autre d’eau froide. Les enfants touchent avec les mains et la joue et disent : chaud ou froid. Puis ils cherchent dans la classe des choses fraîches : vitre, cuillère, pied de table.",
               "material": "2 bouteilles, eau tiède et eau froide"
             },
             {
               "art": "gestalten",
               "titel": "Images à toucher",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Les enfants collent du coton, du papier de verre, de l’alu, des chutes de tissu et du carton ondulé sur du carton. Puis, les yeux fermés, ils touchent les images des autres et devinent la matière.",
               "material": "carton, colle, coton, papier de verre, alu, tissu"
             },
             {
               "art": "ruhe",
               "titel": "Massage avec une balle",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "À deux : un enfant est couché sur le ventre, l’autre fait rouler lentement une balle douce sur le dos et les bras. On demande d’abord : « Je peux ? » – et « Stop » est respecté tout de suite. Puis on échange.",
               "material": "balles douces, tapis"
             }
@@ -1404,8 +1430,8 @@
               "cotons-tiges, 2 par enfant et partenaire",
               "2 cotons-tiges sur une pince à linge (2 cm d’écart)",
               {
-                "text": "cailloux ou cartes pour deviner",
-                "bild": "icon:circle"
+                "text": "cubes ou cartes pour deviner",
+                "bild": "icon:cube"
               }
             ],
             "schritte": [
@@ -1662,7 +1688,7 @@
         "ablauf": [
           "Montag – Sitzkreis: Fragenplakat anlegen; Bildkarten einführen; an Blume, Orange und Seife riechen.",
           "Dienstag – Riechdosen: Gerüche raten und den Bildkarten zuordnen; Duftbilder streuen.",
-          "Mittwoch – Experiment „Nase zu – Apfel oder Birne?“; danach Seite 2; Kinder wählen die Quark-Kräuter (Steine).",
+          "Mittwoch – Experiment „Nase zu – Apfel oder Birne?“; danach Seite 2; Kinder wählen die Quark-Kräuter (Bausteine).",
           "Donnerstag – Süß, sauer, salzig probieren; Geschmacks-Gesichter; der Zählreim.",
           "Freitag – Kräuterquark zubereiten und probieren; Rückblick: Was hat dir geschmeckt, was nicht?"
         ],
@@ -1773,7 +1799,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Die Kinder riechen an Schnittlauch, Petersilie und Dill und legen einen Stein zu ihrem Lieblingsduft. Die zwei häufigsten kommen am Freitag in den Quark.",
+            "text": "Mittwoch: Die Kinder riechen an Schnittlauch, Petersilie und Dill und legen einen Baustein zu ihrem Lieblingsduft. Die zwei häufigsten kommen am Freitag in den Quark.",
             "frage": "Was wollen wir über Nase und Zunge wissen?"
           },
           "stufen": {
@@ -1803,9 +1829,15 @@
             "titel": "Nase zu – Apfel oder Birne?",
             "frage": "Was passiert, wenn wir die Nase zuhalten und ein Stück Apfel und ein Stück Birne essen?",
             "material": [
-              "Apfel und Birne, geschält, in kleinen weichen Stücken",
+              {
+                "text": "Apfel und Birne, geschält, in kleinen weichen Stücken",
+                "bild": "motiv:apfel"
+              },
               "zwei Teller (ein Stück je Kind und Sorte)",
-              "Bildkarten Apfel und Birne zum Zeigen",
+              {
+                "text": "Bildkarten Apfel und Birne zum Zeigen",
+                "bild": "motiv:apfel"
+              },
               "Augenbinde oder Augen zu (nach Wahl)"
             ],
             "schritte": [
@@ -1998,42 +2030,42 @@
             {
               "art": "kreis",
               "titel": "Que sait faire le nez ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Dans le cercle circulent une orange, une fleur et un morceau de savon. Chaque enfant sent les yeux fermés et dit comment ça sent : frais, sucré, la fleur. Y a-t-il des odeurs que tu n’aimes pas ? Chacun peut le dire.",
               "material": "orange, fleur, savon"
             },
             {
               "art": "sinne",
               "titel": "Boîtes à odeurs",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Dans des petites boîtes opaques au couvercle percé : cannelle, grains de café, zeste d’orange, menthe, oignon. Les enfants sentent, devinent et montrent la carte ou l’échantillon. Les boîtes restent fermées.",
               "material": "boîtes à couvercle percé, cannelle, café, zeste, menthe"
             },
             {
               "art": "sinne",
               "titel": "Nez bouché : pomme ou poire ?",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "L’expérience de la semaine : le nez bouché, mâcher un morceau de pomme et un de poire et deviner. Puis lâcher le nez et mâcher encore. Qu’est-ce qui change ? Les enfants montrent d’abord leur idée avec le pouce.",
               "material": "pomme, poire, assiettes, cartes"
             },
             {
               "art": "kochen",
               "titel": "Sucré, acide, salé",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Trois bols : eau sucrée, eau citronnée, eau salée. Chaque enfant trempe une cuillère propre, goûte et dit le goût. Les visages en disent long. Ensuite, tout le monde boit une gorgée d’eau.",
               "material": "sucre, citron, sel, eau, une cuillère par enfant"
             },
             {
               "art": "gestalten",
               "titel": "Images à sentir",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Les enfants étalent de la colle sur du carton et saupoudrent cannelle, marc de café et herbes séchées. Une fois sèches, tout le monde sent les images et devine ce qui s’y trouve. Elles sont accrochées au coin lecture.",
               "material": "carton, colle, cannelle, marc de café, herbes"
             },
             {
               "art": "kochen",
               "titel": "Fromage blanc aux herbes",
-              "dauer": "25 Min.",
+              "dauer": "25 min",
               "text": "Les enfants sentent ciboulette, persil et aneth, effilochent leurs herbes préférées et les mélangent au fromage blanc avec une pincée de sel. On goûte avec des bâtonnets de légumes. Qui veut goûte – personne n’y est obligé.",
               "material": "fromage blanc, herbes, sel, bâtonnets de légumes"
             }
@@ -2069,7 +2101,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : les enfants sentent ciboulette, persil et aneth et posent un caillou près de leur odeur préférée. Les deux plus choisies vont dans le fromage blanc vendredi.",
+            "text": "Mercredi : les enfants sentent ciboulette, persil et aneth et posent un cube près de leur odeur préférée. Les deux plus choisies vont dans le fromage blanc vendredi.",
             "frage": "Que voulons-nous savoir sur le nez et la langue ?"
           },
           "stufen": {
@@ -2099,9 +2131,15 @@
             "titel": "Nez bouché : pomme ou poire ?",
             "frage": "Que se passe-t-il si on se bouche le nez et qu’on mange de la pomme puis de la poire ?",
             "material": [
-              "pomme et poire pelées, en petits morceaux tendres",
+              {
+                "text": "pomme et poire pelées, en petits morceaux tendres",
+                "bild": "motiv:apfel"
+              },
               "deux assiettes (un morceau par enfant et par sorte)",
-              "cartes pomme et poire pour montrer",
+              {
+                "text": "cartes pomme et poire pour montrer",
+                "bild": "motiv:apfel"
+              },
               "bandeau ou yeux fermés (au choix)"
             ],
             "schritte": [
@@ -2256,7 +2294,7 @@
     "de": {
       "titel": "Meine Familie",
       "untertitel": "Familien sind verschieden – und jede ist richtig",
-      "anleitung": "Karten zweimal drucken (Sitzkreis, Memory). Seite 2 ist das Forscherblatt zum Experiment: Das Kind vermutet, malt vorher und nachher und kreist ein, wie es war. Niemand muss von der eigenen Familie erzählen.",
+      "anleitung": "Karten zweimal drucken (Sitzkreis, Memory). Auf Seite 2 kreist das Kind ein, was es mit seinen Menschen gern tut, und malt, wenn es mag, sich und die Seinen. Niemand muss von der eigenen Familie erzählen. Das Forscherblatt zur schwarzen Farbe gibt es als Zusatzseite.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -2309,29 +2347,65 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "frage": "Wer wohnt in der schwarzen Farbe?",
-          "bild": "icon:palette",
-          "name": false,
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Was macht ihr zusammen? Kreise ein.",
+          "symbole": [
+            "einkreisen",
+            "sprechen"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
             {
-              "bild": "icon:circle",
-              "text": "bleibt schwarz"
+              "bild": "motiv:teller",
+              "text": "essen"
             },
             {
-              "bild": "motiv:regenbogen",
-              "text": "wird bunt"
+              "bild": "motiv:buch",
+              "text": "lesen"
+            },
+            {
+              "bild": "icon:ball-football",
+              "text": "spielen"
+            },
+            {
+              "bild": "icon:walk",
+              "text": "spazieren"
+            },
+            {
+              "bild": "motiv:topf",
+              "text": "kochen"
+            },
+            {
+              "bild": "icon:music",
+              "text": "singen"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Male dich und deine Menschen – wenn du magst.",
+          "symbole": [
+            "malen"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 8
         }
       ],
       "lehrer": {
         "ziel": "Die Kinder erleben, dass Familien verschieden sind und jede richtig ist. Sie erzählen, wenn sie mögen, was sie mit ihren Menschen gern tun, hören anderen zu und erforschen, was im Schwarz steckt.",
         "ablauf": [
-          "Montag – Sitzkreis: Fragenplakat; Bilderbücher zur Wahl (Steine); Bildkarten einführen. Erzählt wird nur, wer mag.",
+          "Montag – Sitzkreis: Fragenplakat; Bilderbücher zur Wahl (Bausteine); Bildkarten einführen. Erzählt wird nur, wer mag.",
           "Dienstag – Familien in der Puppenecke; die Kinder geben den Figuren Namen und Sprachen.",
-          "Mittwoch – Experiment „Wer wohnt in der schwarzen Farbe?“ mit dem Forscherblatt (Seite 2); Hände-Baum.",
+          "Mittwoch – Experiment „Wer wohnt in der schwarzen Farbe?“ mit dem Forscherblatt (Zusatzseite); Hände-Baum; Seite 2.",
           "Donnerstag – das gewählte Bilderbuch lesen und darüber sprechen; der Zählreim mit Fingern.",
           "Freitag – Sprachen-Kreis: „Hallo“, „Danke“, „Moien“ in den Familiensprachen; gute Gedanken."
         ],
@@ -2442,7 +2516,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Montag: Drei Bilderbücher über Familien liegen aus. Jedes Kind legt einen Stein zu seinem Lieblingsbuch; das Buch mit den meisten Steinen lesen wir am Donnerstag.",
+            "text": "Montag: Drei Bilderbücher über Familien liegen aus. Jedes Kind legt einen Baustein zu seinem Lieblingsbuch; das Buch mit den meisten Bausteinen lesen wir am Donnerstag.",
             "frage": "Was machen Familien alles zusammen?"
           },
           "stufen": {
@@ -2452,7 +2526,7 @@
           },
           "zugang": [
             "Puppen und Tierfiguren in die Hand geben; die Gebärde „Familie“ zum Wort.",
-            "Bildplan der Woche an der Tür: Buch, Spielen, Farben, Hände, Sprachen.",
+            "Bildplan der Woche aus den Bildkarten an der Tür: Buch, Spielen, Farben, Hände, Sprachen.",
             "Wer nicht erzählen mag, zeigt ein Bild oder hört nur zu."
           ],
           "mehrsprachig": "Familien schicken „Hallo“ und „Danke“ in ihrer Sprache; die Karten hängen als Sprachenbaum in der Klasse.",
@@ -2495,7 +2569,21 @@
             "phaenomene": [
               "farben",
               "wasser-wandert"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Wer wohnt in der schwarzen Farbe?",
+              "vermuten": [
+                {
+                  "bild": "icon:pencil",
+                  "text": "bleibt schwarz"
+                },
+                {
+                  "bild": "motiv:regenbogen",
+                  "text": "wird bunt"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -2503,7 +2591,7 @@
     "fr": {
       "titel": "Ma famille",
       "untertitel": "Les familles sont différentes – et chacune est bien",
-      "anleitung": "Imprimer les cartes deux fois (cercle, memory). La page 2 est la fiche du chercheur : l’enfant devine, dessine avant et après et entoure ce qui s’est passé. Personne n’a à parler de sa propre famille.",
+      "anleitung": "Imprimer les cartes deux fois (cercle, memory). Page 2 : l’enfant entoure ce qu’il aime faire avec ses proches et, s’il le veut, se dessine avec eux. Personne n’a à parler de sa propre famille. La fiche du chercheur sur le noir est une page à part.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -2556,29 +2644,65 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "frage": "Qui se cache dans le noir ?",
-          "bild": "icon:palette",
-          "name": false,
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Que faites-vous ensemble ? Entoure.",
+          "symbole": [
+            "einkreisen",
+            "sprechen"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
             {
-              "bild": "icon:circle",
-              "text": "reste noir"
+              "bild": "motiv:teller",
+              "text": "manger"
             },
             {
-              "bild": "motiv:regenbogen",
-              "text": "devient coloré"
+              "bild": "motiv:buch",
+              "text": "lire"
+            },
+            {
+              "bild": "icon:ball-football",
+              "text": "jouer"
+            },
+            {
+              "bild": "icon:walk",
+              "text": "se promener"
+            },
+            {
+              "bild": "motiv:topf",
+              "text": "cuisiner"
+            },
+            {
+              "bild": "icon:music",
+              "text": "chanter"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine-toi avec tes proches, si tu veux.",
+          "symbole": [
+            "malen"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 8
         }
       ],
       "lehrer": {
         "ziel": "Les enfants vivent que les familles sont différentes et que chacune est bien. Ils racontent, s’ils le veulent, ce qu’ils aiment faire avec leurs proches, écoutent les autres et cherchent ce qui se cache dans le noir.",
         "ablauf": [
-          "Lundi – cercle : affiche des questions ; albums au choix (cailloux) ; présenter les cartes. Raconte qui veut.",
+          "Lundi – cercle : affiche des questions ; albums au choix (cubes) ; présenter les cartes. Raconte qui veut.",
           "Mardi – les familles au coin poupées ; les enfants donnent noms et langues aux figurines.",
-          "Mercredi – expérience « Qui se cache dans le noir ? » avec la fiche du chercheur (page 2) ; arbre des mains.",
+          "Mercredi – expérience « Qui se cache dans le noir ? » avec la fiche du chercheur (page à part) ; arbre des mains ; page 2.",
           "Jeudi – lire l’album choisi et en parler ; la comptine à compter avec les doigts.",
           "Vendredi – cercle des langues : « bonjour », « merci », « moien » dans les langues des familles ; bonnes pensées."
         ],
@@ -2595,7 +2719,7 @@
           "Pas de consigne « Apporte une photo de maman et papa » : demander ouvertement.",
           "Choisir livres et poupées avec beaucoup de formes de familles et de langues."
         ],
-        "achtung": "Séparation, deuil ou soucis : ne pas approfondir au cercle, accueillir l’enfant seul. Inquiétude pour un enfant : en parler avec l’I-EBS de l’école ou l’ESEB ; danger immédiat : 112/113.",
+        "achtung": "Séparation, deuil ou soucis : ne pas approfondir au cercle, accueillir l’enfant seul. Inquiétude : en parler avec l’I-EBS ou l’ESEB ; danger immédiat : 112/113.",
         "material": "Albums sur les familles, poupées, figurines, filtres à café, feutres, peinture, papier",
         "hintergrund": "Pour l’enfant, sa famille va de soi ; il découvre souvent dans le groupe qu’il existe d’autres formes : un seul parent, grands-parents, familles d’accueil, deux mamans ou deux papas, plusieurs langues. Chaque enfant a droit à la protection de sa vie privée (Nations unies, 1989) ; cette semaine invite donc au lieu d’interroger. Les échanges autour d’un album enrichissent le vocabulaire de façon particulièrement efficace (Whitehurst et al., 1988).",
         "quellen": [
@@ -2618,41 +2742,41 @@
             {
               "art": "kreis",
               "titel": "Beaucoup de familles",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "L’enseignante montre un album avec des familles très différentes : grandes, petites, avec un seul parent, avec des grands-parents, avec deux mamans, avec un enfant accueilli. Que font ces familles ensemble ? Raconte seulement qui veut.",
               "material": "album choisi par les enfants"
             },
             {
               "art": "theater",
               "titel": "Les familles au coin poupées",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Poupées, peluches et figurines deviennent des familles : qui vit ensemble ? Que cuisinent-ils ? Où vont-ils ? Les enfants jouent librement, l’enseignante accompagne avec des mots : « La famille Lapin prend le petit-déjeuner. »",
               "material": "poupées, peluches, figurines"
             },
             {
               "art": "sinne",
               "titel": "Qui se cache dans le noir ?",
-              "dauer": "25 Min.",
+              "dauer": "25 min",
               "text": "L’expérience de la semaine : un point noir sur un filtre à café, le bout dans l’eau – et du noir sortent des couleurs. Les enfants devinent d’abord, regardent et dessinent sur la fiche du chercheur ce qu’ils voient.",
               "material": "filtres à café, feutres, gobelets, pinces"
             },
             {
               "art": "gestalten",
               "titel": "Notre arbre des mains",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Sur un grand papier se dresse un tronc peint. Chaque enfant imprime sa main à la peinture comme une feuille. L’arbre de toute la classe naît : nous sommes tous différents et nous allons ensemble.",
               "material": "grand papier, peinture au doigt, chiffon"
             },
             {
               "art": "sprache",
               "titel": "Moien, Salut, Olá",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants disent « bonjour » et « merci » dans les langues de leurs familles : luxembourgeois, portugais, français, arabe… La classe répète, une affiche rassemble les mots. Qui ne veut pas écoute."
             },
             {
               "art": "ruhe",
               "titel": "Bonnes pensées",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Pour finir, tous sont assis en cercle et pensent à quelqu’un qu’ils aiment. Chaque enfant « envoie » un salut : mains sur le cœur, puis ouvertes vers l’air. Personne n’a à dire à qui il pense."
             }
           ],
@@ -2687,7 +2811,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Lundi : trois albums sur les familles sont exposés. Chaque enfant pose un caillou près de son album préféré ; celui qui en a le plus est lu jeudi.",
+            "text": "Lundi : trois albums sur les familles sont exposés. Chaque enfant pose un cube près de son album préféré ; celui qui en a le plus est lu jeudi.",
             "frage": "Que font les familles ensemble ?"
           },
           "stufen": {
@@ -2740,7 +2864,21 @@
             "phaenomene": [
               "farben",
               "wasser-wandert"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Qui se cache dans le noir ?",
+              "vermuten": [
+                {
+                  "bild": "icon:pencil",
+                  "text": "reste noir"
+                },
+                {
+                  "bild": "motiv:regenbogen",
+                  "text": "devient coloré"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -2791,7 +2929,7 @@
           {
             "de": "die Tür",
             "fr": "la porte",
-            "lb": "d’Dir",
+            "lb": "d’Dier",
             "pt": "a porta",
             "bild": null
           },
@@ -2819,7 +2957,7 @@
           {
             "de": "die Treppe",
             "fr": "l’escalier",
-            "lb": "d’Trapp",
+            "lb": "d’Trap",
             "pt": "a escada",
             "bild": "icon:stairs"
           }
@@ -3090,7 +3228,7 @@
           "zugang": [
             "Echte Möbel und Puppenmöbel anfassen lassen; die Gebärde „Haus“ zum Wort.",
             "Stromkreis: eine Schaltung je Zweiergruppe, ruhiger Tisch, ein Handgriff nach dem anderen.",
-            "Bildplan der Woche an der Tür: Zimmer, Teddy, Licht, bauen, umziehen."
+            "Bildplan der Woche aus den Bildkarten an der Tür: Zimmer, Teddy, Licht, bauen, umziehen."
           ],
           "mehrsprachig": "Familien nennen „Haus“ und „Tür“ in ihrer Sprache; die Wörter hängen an der Schachtel-Wohnung.",
           "freitag": {
@@ -3112,15 +3250,18 @@
               "4,5-V-Flachbatterie (nur diese)",
               "LED-Lämpchen in Fassung",
               "zwei Kabel mit Krokodilklemmen",
-              "zum Testen: Alufolie, Holzlöffel, Metalllöffel, Radiergummi"
+              {
+                "text": "zum Testen: Alufolie, Holzlöffel, Metalllöffel, Radiergummi",
+                "bild": "motiv:radiergummi"
+              }
             ],
             "schritte": [
               "Die Lehrperson zeigt Batterie, Kabel und Lämpchen. Gemeinsam überlegen: Wie kommt der Strom ins Lämpchen?",
-              "Vermuten: Geht das Licht an, wenn nur ein Kabel dranhängt? Die Kinder legen einen Stein: „Licht an“ oder „Licht aus“.",
+              "Vermuten: Geht das Licht an, wenn nur ein Kabel dranhängt? Die Kinder legen einen Baustein: „Licht an“ oder „Licht aus“.",
               "Die Kinder verbinden Batterie – Kabel – Lämpchen – Kabel – Batterie. Licht an! Dann ein Kabel lösen: Was passiert?",
               "In die Lücke legen sie Löffel, Holz, Alufolie, Radiergummi und sortieren: Licht an – Licht aus."
             ],
-            "vermutung": "Je ein Stein in „Licht an“ oder „Licht aus“. Viele sagen: „Es reicht, wenn ein Kabel an der Batterie hängt.“",
+            "vermutung": "Je ein Baustein in „Licht an“ oder „Licht aus“. Viele sagen: „Es reicht, wenn ein Kabel an der Batterie hängt.“",
             "beobachten": "Das Lämpchen leuchtet nur, wenn der Kreis geschlossen ist. Löffel und Alufolie lassen es leuchten, Holz und Radiergummi nicht.",
             "warumKind": "Der Strom muss im Kreis laufen können. Eine Lücke ist wie ein offener Lichtschalter: Dann bleibt es dunkel.",
             "hintergrund": "Strom fließt nur in einem geschlossenen Stromkreis. Metalle leiten ihn, Holz, Kunststoff und Gummi sind Isolatoren. Ein Lichtschalter öffnet und schließt den Kreis. Mit der Flachbatterie (4,5 V) ist der Versuch ungefährlich; Steckdosen sind tabu.",
@@ -3306,41 +3447,41 @@
             {
               "art": "kreis",
               "titel": "Quoi dans quelle pièce ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Au milieu, quatre tissus pour cuisine, salle de bain, chambre et couloir. Les enfants tirent une carte ou un vrai objet (cuillère, brosse à dents, coussin, chaussure) et le posent sur le bon tissu. Certains objets vont dans deux pièces.",
               "material": "4 tissus, cartes, objets du quotidien"
             },
             {
               "art": "spiel",
               "titel": "Où est l’ours en peluche ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un ours se cache dans la classe : sur la chaise, sous la table, à côté de l’étagère, dans la caisse. Les enfants cherchent et disent l’endroit : « L’ours est sous la table. » Puis un enfant cache l’ours.",
               "material": "ours ou peluche"
             },
             {
               "art": "sinne",
               "titel": "Quand la lumière s’allume-t-elle ?",
-              "dauer": "25 Min.",
+              "dauer": "25 min",
               "text": "L’expérience de la semaine : relier pile, fils et ampoule – comme pour un interrupteur. Que se passe-t-il s’il y a un trou ? Quels objets ferment le trou : cuillère, bois, alu ? Les enfants trient et racontent.",
               "material": "pile plate 4,5 V, LED, fils, objets à tester"
             },
             {
               "art": "gestalten",
               "titel": "L’appartement en boîtes",
-              "dauer": "30 Min.",
+              "dauer": "30 min",
               "text": "Les boîtes à chaussures deviennent des pièces : les enfants y collent des meubles faits de petites boîtes, de chutes de tissu et de papier. Côte à côte, les boîtes forment un appartement où habitent des figurines.",
               "material": "boîtes à chaussures, boîtes, tissus, colle"
             },
             {
               "art": "bewegung",
               "titel": "Pantomime des meubles",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante nomme un meuble, les enfants le deviennent : un lit (couché à plat), une chaise (accroupi), une lampe (grand et brillant), une porte (bras qui s’ouvrent et se ferment). Plus tard, un enfant mime, les autres devinent."
             },
             {
               "art": "theater",
               "titel": "Le déménagement au coin poupées",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "La famille de poupées déménage. Les enfants emballent vaisselle, vêtements et literie dans des cartons, les portent dans le nouveau coin et rangent. Ils disent ce qui va où : « Les tasses vont dans l’armoire. »",
               "material": "cartons, vaisselle, vêtements de poupées"
             }
@@ -3413,15 +3554,18 @@
               "pile plate 4,5 V (seulement celle-ci)",
               "ampoule LED sur douille",
               "deux fils à pinces crocodile",
-              "à tester : papier alu, cuillère en bois et en métal, gomme"
+              {
+                "text": "à tester : papier alu, cuillère en bois et en métal, gomme",
+                "bild": "motiv:radiergummi"
+              }
             ],
             "schritte": [
               "L’enseignante montre pile, fils et ampoule. Réfléchir ensemble : comment le courant arrive-t-il à l’ampoule ?",
-              "Deviner : la lumière s’allume-t-elle avec un seul fil ? Les enfants posent un caillou : « allumé » ou « éteint ».",
+              "Deviner : la lumière s’allume-t-elle avec un seul fil ? Les enfants posent un cube : « allumé » ou « éteint ».",
               "Les enfants relient pile – fil – ampoule – fil – pile. Lumière ! Puis on détache un fil : que se passe-t-il ?",
               "Dans le trou, ils posent cuillère, bois, alu, gomme et trient : allumé – éteint."
             ],
-            "vermutung": "Un caillou dans « allumé » ou « éteint ». Beaucoup disent : « Il suffit d’un fil à la pile. »",
+            "vermutung": "Un cube dans « allumé » ou « éteint ». Beaucoup disent : « Il suffit d’un fil à la pile. »",
             "beobachten": "L’ampoule ne brille que si le circuit est fermé. Cuillère en métal et alu l’allument, bois et gomme non.",
             "warumKind": "Le courant doit pouvoir faire le tour. Un trou, c’est comme un interrupteur ouvert : alors il fait noir.",
             "hintergrund": "Le courant ne circule que dans un circuit fermé. Les métaux le conduisent, le bois, le plastique et le caoutchouc sont isolants. Un interrupteur ouvre et ferme le circuit. Avec la pile plate (4,5 V) l’expérience est sans danger ; les prises de courant sont interdites.",
@@ -3511,9 +3655,9 @@
           },
           {
             "de": "der Becher",
-            "fr": "le gobelet",
+            "fr": "la tasse",
             "lb": "de Becher",
-            "pt": "o copo",
+            "pt": "a caneca",
             "bild": null
           },
           {
@@ -3534,7 +3678,7 @@
         "satz": {
           "de": "Ich bin gewachsen.",
           "fr": "J’ai grandi.",
-          "lb": "Ech sinn gewuess.",
+          "lb": "Ech si gewuess.",
           "pt": "Eu cresci."
         },
         "geprueft": false
@@ -3763,7 +3907,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Dienstag: Die Kinder stimmen mit Steinen ab, was die Puppenecke braucht: Wickeltisch, Badewanne oder Bettchen. Das Gewählte wird bis Donnerstag gebaut.",
+            "text": "Dienstag: Die Kinder stimmen mit Bausteinen ab, was die Puppenecke braucht: Wickeltisch, Badewanne oder Bettchen. Das Gewählte wird bis Donnerstag gebaut.",
             "frage": "Was konnte ich als Baby noch nicht?"
           },
           "stufen": {
@@ -3793,7 +3937,10 @@
             "titel": "Kleine Erbsen werden groß",
             "frage": "Was passiert, wenn trockene Kichererbsen über Nacht im Wasser liegen?",
             "material": [
-              "getrocknete Kichererbsen oder Bohnen",
+              {
+                "text": "getrocknete Kichererbsen oder Bohnen",
+                "bild": "motiv:knete"
+              },
               "zwei durchsichtige Gläser",
               "Wasser",
               "Gummiband oder Papierstreifen zum Messen"
@@ -3878,7 +4025,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "le gobelet"
+              "titel": "la tasse"
             },
             {
               "bild": "motiv:hand-offen",
@@ -3971,40 +4118,40 @@
             {
               "art": "kreis",
               "titel": "La caisse des bébés",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Dans une caisse : affaires de bébé, biberon, body, petites chaussettes, hochet. Les enfants en sortent un objet, le nomment et comparent : est-ce que ça me va encore ? Qui veut raconte ce que sa famille dit de sa vie de bébé. Pas besoin de photos.",
               "material": "caisse, affaires propres de bébé ou de poupée"
             },
             {
               "art": "zaehlen",
               "titel": "Combien je mesure ?",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Au mur, une toise en papier. Qui veut s’y place, un trait avec son nom est tracé. On compare avec des cubes : combien de cubes mesure la poupée-bébé, combien mesures-tu ? Personne n’est « trop petit » ou « trop grand ».",
               "material": "bande de papier, crayon, cubes"
             },
             {
               "art": "sinne",
               "titel": "Les pois chiches qui grandissent",
-              "dauer": "2 × 10 Min.",
+              "dauer": "2 × 10 min",
               "text": "L’expérience de la semaine : des pois chiches secs passent la nuit dans l’eau. Le lendemain, les enfants comparent : grosseur, hauteur, douceur ? Comme les bébés grandissent en buvant et en mangeant.",
               "material": "pois chiches, 2 verres, eau"
             },
             {
               "art": "bewegung",
               "titel": "De bébé à enfant",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants rejouent la croissance : couchés en gigotant, à quatre pattes, se hisser, marcher en vacillant, courir sûrement, sauter. L’enseignante raconte lentement, les enfants montrent chaque étape."
             },
             {
               "art": "sprache",
               "titel": "Ça, je sais déjà",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Chaque enfant montre quelque chose qu’un bébé ne sait pas encore : enfiler ses chaussures, tenir sur un pied, chanter. La classe dit ensemble : « Ça, tu sais déjà. » Qui ne veut rien montrer peut chercher un camarade pour l’aider."
             },
             {
               "art": "theater",
               "titel": "Soins du bébé",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Au coin poupées, on change, nourrit, baigne et berce les poupées-bébés. L’enseignante accompagne avec des mots : doucement, tout bas, soutenir la tête. Les grands montrent aux plus petits comment faire.",
               "material": "poupées, tissus, biberons, bassine"
             }
@@ -4041,7 +4188,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mardi : les enfants votent avec des cailloux pour ce dont le coin poupées a besoin : table à langer, baignoire ou lit. Ce qui est choisi est construit jusqu’à jeudi.",
+            "text": "Mardi : les enfants votent avec des cubes pour ce dont le coin poupées a besoin : table à langer, baignoire ou lit. Ce qui est choisi est construit jusqu’à jeudi.",
             "frage": "Que ne savais-je pas faire bébé ?"
           },
           "stufen": {
@@ -4417,7 +4564,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Die Kinder stimmen mit Steinen ab, wem sie die Fädel-Herzen schenken: älteren Menschen, die sie kennen, oder dem Seniorenheim im Ort. Die Mehrheit entscheidet.",
+            "text": "Mittwoch: Die Kinder stimmen mit Bausteinen ab, wem sie die Fädel-Herzen schenken: Menschen, die sie kennen, oder dem Seniorenheim im Ort. Die Mehrheit entscheidet.",
             "frage": "Was können ältere Menschen besonders gut?"
           },
           "stufen": {
@@ -4617,40 +4764,40 @@
             {
               "art": "kreis",
               "titel": "Qui est déjà plus âgé ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants parlent de personnes âgées qu’ils connaissent : mamie, papi, la voisine, le monsieur de la boulangerie. L’enseignante pose des cartes : ce que ces personnes aiment faire. Tous n’ont pas de grands-parents près d’eux – toutes les personnes âgées comptent."
             },
             {
               "art": "draussen",
               "titel": "Jeux d’autrefois",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Dans la cour, l’enseignante montre des jeux que les grands-parents jouaient déjà : marelle à la craie, rondes, corde à sauter. Les enfants essaient et inventent leurs règles. Dehors, tous restent dans la zone convenue.",
               "material": "craies de rue, corde à sauter"
             },
             {
               "art": "sinne",
               "titel": "Au frais comme chez papi et mamie",
-              "dauer": "2 × 10 Min.",
+              "dauer": "2 × 10 min",
               "text": "L’expérience de la semaine : une bouteille dans un linge mouillé, une dans un linge sec, au chaud. Après une heure, toucher : laquelle est plus fraîche ? C’est ainsi qu’on gardait les boissons au frais avant les frigos.",
               "material": "2 bouteilles, 2 torchons"
             },
             {
               "art": "sprache",
               "titel": "Un invité raconte",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Une personne âgée – grand-parent, voisin ou ancienne enseignante – vient dans la classe, raconte comment l’école était autrefois ou lit une histoire. Avant, la classe prépare deux questions ; après, on reraconte ensemble."
             },
             {
               "art": "bewegung",
               "titel": "Le parcours lent",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants essaient ce que c’est quand le corps devient plus lent : fermer un bouton avec de gros gants, marcher avec une canne, monter lentement des marches. Puis : comment aider ? Tenir la porte, attendre, porter quelque chose.",
               "material": "gros gants, veste à boutons, canne"
             },
             {
               "art": "gestalten",
               "titel": "Cœurs à enfiler à offrir",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Les enfants enfilent le cœur de la page 2 avec un fil de laine, colorient le milieu et l’offrent à une personne âgée : grands-parents, voisine ou – après accord – la maison de retraite du village.",
               "material": "page 2 sur carton, perforatrice (adultes), laine"
             }
@@ -4686,7 +4833,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : les enfants votent avec des cailloux : offrir les cœurs aux personnes âgées qu’ils connaissent ou à la maison de retraite du village. La majorité décide.",
+            "text": "Mercredi : les enfants votent avec des cubes : offrir les cœurs aux personnes âgées qu’ils connaissent ou à la maison de retraite du village. La majorité décide.",
             "frage": "Que savent bien faire les personnes âgées ?"
           },
           "stufen": {
@@ -4810,9 +4957,9 @@
           },
           {
             "de": "der Becher",
-            "fr": "le gobelet",
+            "fr": "la tasse",
             "lb": "de Becher",
-            "pt": "o copo",
+            "pt": "a caneca",
             "bild": null
           },
           {
@@ -5204,7 +5351,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "le gobelet"
+              "titel": "la tasse"
             },
             {
               "bild": "motiv:socke",
@@ -5334,7 +5481,7 @@
           "wortschatz": [
             "l’assiette",
             "la cuillère",
-            "le gobelet",
+            "la tasse",
             "la chaussette",
             "les gants",
             "les bottes",
@@ -5347,41 +5494,41 @@
             {
               "art": "kreis",
               "titel": "Nos responsabilités",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Au tableau, des images pour les tâches de la semaine : mettre la table, arroser les fleurs, ranger le vestiaire, ranger les livres. Chaque enfant choisit avec un partenaire une tâche et accroche sa pince. En fin de journée, ils racontent comment ça s’est passé.",
               "material": "images des tâches, pinces à linge avec prénoms"
             },
             {
               "art": "zaehlen",
               "titel": "La montagne de chaussettes",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "On verse un panier de chaussettes. Les enfants trouvent les paires et comptent : combien de paires ? Une chaussette reste-t-elle seule ? Puis les vêtements sont triés par couleur dans des paniers : tout le rouge ici, tout le bleu là.",
               "material": "chaussettes, vêtements, trois paniers"
             },
             {
               "art": "sinne",
               "titel": "Pourquoi trier le linge ?",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "L’expérience de la semaine : un tissu blanc et du papier crépon rouge trempent ensemble. Les enfants pétrissent, attendent, regardent : que devient le tissu ? Ensuite, ils trient le linge de poupée par couleur.",
               "material": "papier crépon, tissu blanc, saladiers, tabliers"
             },
             {
               "art": "draussen",
               "titel": "Jour de lessive dans la cour",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Dans des bacs d’eau savonneuse tiède, les enfants lavent des vêtements de poupée, les rincent, les essorent et les pincent sur une corde. Presser et pincer fortifie les doigts.",
               "material": "bacs, savon, vêtements de poupée, corde, pinces"
             },
             {
               "art": "bewegung",
               "titel": "Pantomime des aides",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un enfant mime sans mots un travail de la maison : balayer, étendre le linge, essuyer la table, porter les courses. Les autres devinent et miment avec lui. Qui devine mime le suivant."
             },
             {
               "art": "theater",
               "titel": "La poupée a son anniversaire",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Au coin poupées, les enfants préparent une fête : mettre la table, plier les serviettes, poser des fleurs, accueillir les invités. Après la fête, on débarrasse et on lave ensemble – cela aussi fait partie du jeu.",
               "material": "vaisselle de poupée, serviettes, fleurs"
             }
@@ -5804,7 +5951,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Dienstag: Die Kinder stimmen mit Steinen ab, welches Schlaflied oder welche Gutenachtgeschichte die Ruhezeit am Donnerstag begleitet. Das Gewählte wird gespielt.",
+            "text": "Dienstag: Die Kinder stimmen mit Bausteinen ab, welches Schlaflied oder welche Gutenachtgeschichte die Ruhezeit am Donnerstag begleitet. Das Gewählte wird gespielt.",
             "frage": "Was hilft uns beim Einschlafen?"
           },
           "stufen": {
@@ -6017,41 +6164,41 @@
             {
               "art": "kreis",
               "titel": "Avant de dormir",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Dans la salle un peu assombrie, les enfants posent les cartes en rangée : se laver, brosser les dents, histoire, lumière éteinte. Qui veut raconte ce qui s’y ajoute chez lui – une chanson, une peluche, une veilleuse."
             },
             {
               "art": "theater",
               "titel": "Les poupées vont dormir",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Au coin poupées, les enfants couchent poupées et peluches : mettre le pyjama, brosser les dents, lire, border, parler tout bas. L’enseignante chuchote avec eux et nomme chaque étape.",
               "material": "poupées, lits, couvertures, album"
             },
             {
               "art": "ruhe",
               "titel": "Respirer comme un ballon",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Les enfants sont couchés sur le dos, une peluche sur le ventre. À l’inspiration, elle monte comme un ballon, à l’expiration, elle redescend. Après cinq respirations calmes, chacun chuchote « bonne nuit » à sa peluche.",
               "material": "tapis, peluches"
             },
             {
               "art": "sinne",
               "titel": "Où fait-il nuit maintenant ?",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "L’expérience de la semaine : une lampe est le soleil, la balle la Terre, une gommette notre maison. Les enfants tournent la balle et crient « jour ! » ou « nuit ! ». Où dorment les proches quand nous jouons ?",
               "material": "balle ou globe, lampe LED, gommette"
             },
             {
               "art": "gestalten",
               "titel": "Le lit de l’ours",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Une boîte à chaussures devient un lit pour la peluche : les enfants la garnissent de chutes de tissu, collent un coussin en coton ou tissu et dessinent une couverture. L’ours y dort pendant le temps calme.",
               "material": "boîtes à chaussures, tissus, coton, crayons"
             },
             {
               "art": "musik",
               "titel": "Une berceuse tout doux",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "La classe chante la comptine très doucement sur une mélodie simple et berçante, en se balançant. Les enfants peuvent proposer une berceuse dans leur langue ; les autres fredonnent."
             }
           ],
@@ -6086,7 +6233,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mardi : les enfants votent avec des cailloux pour la berceuse ou l’histoire du soir qui accompagne le temps calme jeudi. Ce qui est choisi est joué.",
+            "text": "Mardi : les enfants votent avec des cubes pour la berceuse ou l’histoire du soir qui accompagne le temps calme jeudi. Ce qui est choisi est joué.",
             "frage": "Qu’est-ce qui nous aide à nous endormir ?"
           },
           "stufen": {
@@ -6338,7 +6485,7 @@
         "ziel": "Die Kinder lernen den Apfel mit allen Sinnen kennen, erforschen, warum er braun wird, zählen kleine Mengen bis 6 und üben beim gemeinsamen Zubereiten, abzuwarten, sich abzuwechseln und gerecht zu teilen.",
         "ablauf": [
           "Montag – Sitzkreis: Fragenplakat; Fühlkorb mit Apfel unter dem Tuch; Bildkarten einführen.",
-          "Dienstag – drei Apfelsorten ansehen, riechen, wählen (Steine); Äpfel in den Korb zählen, nach Farben sortieren.",
+          "Dienstag – drei Apfelsorten ansehen, riechen, wählen (Bausteine); Äpfel in den Korb zählen, nach Farben sortieren.",
           "Mittwoch – Experiment „Warum wird der Apfel braun?“ mit dem Forscherblatt (Seite 2); Apfelernte als Bewegungsspiel.",
           "Donnerstag – Apfeldruck für das Wandbild; der Fingerreim mit Zählen; die Scheiben vergleichen.",
           "Freitag – Apfelmus aus der gewählten Sorte kochen und teilen; Rückblick am Fragenplakat."
@@ -6387,7 +6534,7 @@
               "art": "sinne",
               "titel": "Warum wird der Apfel braun?",
               "dauer": "3 × 5 Min.",
-              "text": "Das Experiment der Woche: Apfelscheiben auf drei Tellern – offen, mit Zitronensaft, in der Dose. Die Kinder vermuten mit Steinen, schauen nach dem Kreis und nach dem Spielen nach und malen vorher und nachher.",
+              "text": "Das Experiment der Woche: Apfelscheiben auf drei Tellern – offen, mit Zitronensaft, in der Dose. Die Kinder vermuten mit Bausteinen, schauen nach dem Kreis und nach dem Spielen nach und malen vorher und nachher.",
               "material": "Apfel, Zitronensaft, 3 Teller, Dose"
             },
             {
@@ -6449,7 +6596,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Jedes Kind legt einen Stein zu seiner Lieblingssorte. Aus der Sorte mit den meisten Steinen wird am Freitag das Apfelmus.",
+            "text": "Mittwoch: Jedes Kind legt einen Baustein zu seiner Lieblingssorte. Aus der Sorte mit den meisten Bausteinen wird am Freitag das Apfelmus.",
             "frage": "Was wollen wir über Äpfel wissen?"
           },
           "stufen": {
@@ -6459,7 +6606,7 @@
           },
           "zugang": [
             "Echter Apfel in der Hand statt Bildkarte; die Gebärde „Apfel“ zum Wort.",
-            "Bildplan der Woche an der Tür: tasten, forschen, zählen, drucken, kochen.",
+            "Bildplan der Woche aus den Bildkarten an der Tür: tasten, forschen, zählen, drucken, kochen.",
             "Beim Kochen: kleine Gruppe, ruhiger Platz, laute Geräte vorher ankündigen."
           ],
           "mehrsprachig": "Familien schicken das Wort „Apfel“ in ihrer Sprache; alle Wörter hängen am Apfelbaum der Klasse.",
@@ -6480,18 +6627,24 @@
             "titel": "Warum wird der Apfel braun?",
             "frage": "Was passiert mit Apfelscheiben, die einfach daliegen – und mit denen mit Zitronensaft?",
             "material": [
-              "ein Apfel in Scheiben (Erwachsene schneiden)",
-              "Zitronensaft",
+              {
+                "text": "ein Apfel in Scheiben (Erwachsene schneiden)",
+                "bild": "motiv:apfel"
+              },
+              {
+                "text": "Zitronensaft",
+                "bild": "motiv:zitrone"
+              },
               "drei Teller",
               "Frischhaltedose mit Deckel"
             ],
             "schritte": [
               "Teller 1: Die Apfelscheiben einfach hinlegen.",
               "Teller 2: Die Kinder beträufeln die Scheiben mit Zitronensaft.",
-              "Teller 3: Scheiben in die geschlossene Dose legen. Vermuten: Welche bleiben am längsten hell? Jedes Kind legt einen Stein.",
+              "Teller 3: Scheiben in die geschlossene Dose legen. Vermuten: Welche bleiben am längsten hell? Jedes Kind legt einen Baustein.",
               "Nach dem Kreis und nach dem Spielen vergleichen. Die Kinder malen vorher und nachher auf dem Forscherblatt – dann wird alles gegessen."
             ],
-            "vermutung": "Jedes Kind legt einen Stein zu dem Teller, auf dem die Scheiben am längsten hell bleiben. Viele sagen: „Alle werden gleich braun.“",
+            "vermutung": "Jedes Kind legt einen Baustein zu dem Teller, auf dem die Scheiben am längsten hell bleiben. Viele sagen: „Alle werden gleich braun.“",
             "beobachten": "Die offenen Scheiben werden braun, die mit Zitrone bleiben hell, die in der Dose fast auch. Fragen: Was haben Zitrone und Deckel gemeinsam?",
             "warumKind": "Die Luft macht das Innere des Apfels braun. Zitrone und Deckel schützen die Scheiben vor der Luft.",
             "hintergrund": "Beim Schneiden kommen Enzyme (Polyphenoloxidasen) mit Sauerstoff in Kontakt und bilden braune Farbstoffe. Säure und Vitamin C bremsen die Reaktion, ein Deckel hält Luft fern. Braune Stücke sind unbedenklich und noch essbar.",
@@ -6585,7 +6738,7 @@
         "ziel": "Les enfants découvrent la pomme avec tous leurs sens, cherchent pourquoi elle brunit, comptent de petites quantités jusqu’à 6 et s’exercent, en cuisinant ensemble, à attendre, à jouer chacun son tour et à partager équitablement.",
         "ablauf": [
           "Lundi – cercle : affiche des questions ; panier à toucher avec une pomme sous le tissu ; présenter les cartes.",
-          "Mardi – regarder, sentir trois variétés, choisir (cailloux) ; compter des pommes dans le panier, trier par couleur.",
+          "Mardi – regarder, sentir trois variétés, choisir (cubes) ; compter des pommes dans le panier, trier par couleur.",
           "Mercredi – expérience « Pourquoi la pomme brunit-elle ? » avec la fiche du chercheur (page 2) ; la cueillette en mouvement.",
           "Jeudi – impressions de pommes pour la fresque ; la comptine à compter ; comparer les tranches.",
           "Vendredi – compote avec la variété choisie, à partager ; bilan devant l’affiche."
@@ -6626,41 +6779,41 @@
             {
               "art": "kreis",
               "titel": "Le panier à toucher",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Une pomme est cachée sous un tissu dans le panier. Chaque enfant à son tour la touche, la décrit (ronde, lisse, dure) et devine. Puis on découvre et tout le monde dit le mot ensemble. Ensuite, sentir trois variétés.",
               "material": "panier, tissu, une pomme"
             },
             {
               "art": "sinne",
               "titel": "Pourquoi la pomme brunit-elle ?",
-              "dauer": "3 × 5 Min.",
-              "text": "L’expérience de la semaine : des tranches de pomme sur trois assiettes – à l’air, au citron, en boîte. Les enfants devinent avec des cailloux, regardent après le cercle et après le jeu, et dessinent avant et après.",
+              "dauer": "3 × 5 min",
+              "text": "L’expérience de la semaine : des tranches de pomme sur trois assiettes – à l’air, au citron, en boîte. Les enfants devinent avec des cubes, regardent après le cercle et après le jeu, et dessinent avant et après.",
               "material": "pomme, jus de citron, 3 assiettes, boîte"
             },
             {
               "art": "zaehlen",
               "titel": "Des pommes dans le panier",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante dit un nombre de 1 à 6. Un enfant met autant de pommes dans le panier, la classe compte à voix haute. Ensuite, tout le monde trie par couleur : rouge, vert, jaune.",
               "material": "pommes ou cartes, panier"
             },
             {
               "art": "bewegung",
               "titel": "La cueillette",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants cueillent les pommes en haut sur la pointe des pieds, se baissent pour ramasser celles tombées et portent ensemble le lourd panier. Au signal, le vent secoue l’arbre : tout le monde bouge – puis s’immobilise."
             },
             {
               "art": "gestalten",
               "titel": "Impressions de pommes",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Tremper des demi-pommes dans la peinture et les imprimer sur du papier. Toutes les impressions forment un grand pommier pour le mur ; chaque enfant retrouve sa pomme.",
               "material": "demi-pommes, peinture au doigt, grand papier"
             },
             {
               "art": "kochen",
               "titel": "Une compote pour tous",
-              "dauer": "30 Min.",
+              "dauer": "30 min",
               "text": "Les enfants lavent les pommes de la variété choisie, les adultes les coupent. On remue ensemble, on attend, on laisse refroidir. Au moment de servir, on parle du partage : chaque enfant reçoit la même quantité.",
               "material": "pommes, casserole, plaque de cuisson, petits bols"
             }
@@ -6696,7 +6849,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : chaque enfant pose un caillou devant sa variété préférée. Avec la variété qui a le plus de cailloux, on fait la compote du vendredi.",
+            "text": "Mercredi : chaque enfant pose un cube devant sa variété préférée. Avec la variété qui a le plus de cubes, on fait la compote du vendredi.",
             "frage": "Que voulons-nous savoir sur les pommes ?"
           },
           "stufen": {
@@ -6727,18 +6880,24 @@
             "titel": "Pourquoi la pomme brunit-elle ?",
             "frage": "Que deviennent les tranches de pomme laissées là – et celles avec du jus de citron ?",
             "material": [
-              "une pomme en tranches (coupée par l’adulte)",
-              "jus de citron",
+              {
+                "text": "une pomme en tranches (coupée par l’adulte)",
+                "bild": "motiv:apfel"
+              },
+              {
+                "text": "jus de citron",
+                "bild": "motiv:zitrone"
+              },
               "trois assiettes",
               "boîte hermétique avec couvercle"
             ],
             "schritte": [
               "Assiette 1 : poser les tranches telles quelles.",
               "Assiette 2 : les enfants arrosent les tranches de jus de citron.",
-              "Assiette 3 : tranches dans la boîte fermée. Deviner : lesquelles restent claires le plus longtemps ? Chacun pose un caillou.",
+              "Assiette 3 : tranches dans la boîte fermée. Deviner : lesquelles restent claires le plus longtemps ? Chacun pose un cube.",
               "Comparer après le cercle et après le jeu. Les enfants dessinent avant et après sur la fiche du chercheur – puis tout est mangé."
             ],
-            "vermutung": "Chaque enfant pose un caillou près de l’assiette où les tranches restent claires le plus longtemps. Beaucoup disent : « Toutes brunissent pareil. »",
+            "vermutung": "Chaque enfant pose un cube près de l’assiette où les tranches restent claires le plus longtemps. Beaucoup disent : « Toutes brunissent pareil. »",
             "beobachten": "Les tranches à l’air brunissent, celles au citron restent claires, celles dans la boîte presque aussi. Questions : que partagent citron et couvercle ?",
             "warumKind": "L’air fait brunir l’intérieur de la pomme. Le citron et le couvercle protègent les tranches de l’air.",
             "hintergrund": "À la coupe, des enzymes (polyphénoloxydases) entrent en contact avec l’oxygène et forment des pigments bruns. L’acidité et la vitamine C freinent la réaction, un couvercle éloigne l’air. Les morceaux bruns se mangent sans problème.",
@@ -6990,7 +7149,7 @@
               "art": "sinne",
               "titel": "Welches Blatt fällt am langsamsten?",
               "dauer": "20 Min.",
-              "text": "Das Experiment der Woche: Flaches Blatt, Blatt-Kugel und Kastanie fallen aus Armhöhe. Die Kinder vermuten mit Steinen, schauen genau hin und rufen „Erster!“. Was bremst das Blatt?",
+              "text": "Das Experiment der Woche: Flaches Blatt, Blatt-Kugel und Kastanie fallen aus Armhöhe. Die Kinder vermuten mit Bausteinen, schauen genau hin und rufen „Erster!“. Was bremst das Blatt?",
               "material": "Blätter, Kastanien, Steine"
             },
             {
@@ -7046,11 +7205,11 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Die Kinder stimmen mit Steinen ab, was aus den Blättern entsteht – Rubbelbild-Wald, Blätterdruck oder Mobile. Die Mehrheit gestaltet am Freitag das Bild.",
+            "text": "Donnerstag: Die Kinder stimmen mit Bausteinen ab, was aus den Blättern entsteht – Rubbelbild-Wald, Blätterdruck oder Mobile. Die Mehrheit gestaltet am Freitag das Bild.",
             "frage": "Warum werden die Blätter bunt und fallen ab?"
           },
           "stufen": {
-            "precoce": "Zwei Sorten Blätter sortieren; beim Fallversuch zuschauen und Steine legen.",
+            "precoce": "Zwei Sorten Blätter sortieren; beim Fallversuch zuschauen und Bausteine legen.",
             "p1": "Nach Farbe sortieren; ein Muster aus zwei Farben fortsetzen; die Vermutung zeigen.",
             "p2": "Muster mit drei Farben; erklären, warum das flache Blatt langsam fällt."
           },
@@ -7077,16 +7236,19 @@
             "frage": "Was passiert, wenn Blatt, zerknülltes Blatt und Kastanie gleichzeitig fallen?",
             "material": [
               "große trockene Herbstblätter",
-              "Kastanien",
+              {
+                "text": "Kastanien",
+                "bild": "motiv:kastanie"
+              },
               "Stuhl oder Bank (nur Erwachsene steigen hinauf)"
             ],
             "schritte": [
               "Zwei gleiche Blätter aussuchen; ein Kind zerknüllt eines zu einer Kugel.",
-              "Vermuten: Was ist zuerst unten – Blatt, Blatt-Kugel oder Kastanie? Die Kinder legen Steine auf die Bildkarten.",
+              "Vermuten: Was ist zuerst unten – Blatt, Blatt-Kugel oder Kastanie? Die Kinder legen Bausteine auf die Bildkarten.",
               "Eine erwachsene Person lässt flaches Blatt und Kastanie gleichzeitig aus derselben Höhe fallen. Dann flaches und zerknülltes Blatt.",
               "Die Kinder lassen selbst aus Armhöhe fallen und rufen „Erster!“. Ergebnis auf dem Forscherblatt (Seite 2)."
             ],
-            "vermutung": "Steine auf die Bildkarten: Wer ist zuerst unten? Viele sagen: „Die Kastanie, weil sie schwer ist – alle anderen gleich.“",
+            "vermutung": "Bausteine auf die Bildkarten: Wer ist zuerst unten? Viele sagen: „Die Kastanie, weil sie schwer ist – alle anderen gleich.“",
             "beobachten": "Die Kastanie und das zerknüllte Blatt fallen schnell, das flache Blatt schaukelt langsam hin und her. Fragen: Was ist beim flachen Blatt anders?",
             "warumKind": "Das flache Blatt muss viel Luft zur Seite schieben – die Luft bremst es. Die Kugel hat weniger Fläche und fällt schneller.",
             "hintergrund": "Auf fallende Körper wirkt neben der Schwerkraft der Luftwiderstand; er hängt stark von der Fläche ab. Das flache Blatt hat bei gleichem Gewicht viel mehr Fläche als die Kugel und segelt. Ohne Luft würden alle gleich schnell fallen – für Kinder genügt: Luft bremst.",
@@ -7218,41 +7380,41 @@
             {
               "art": "draussen",
               "titel": "Promenade aux feuilles",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Chaque enfant reçoit un sac en papier et ramasse trois feuilles qui lui plaisent, seulement au sol. En chemin, s’arrêter et demander : de quel arbre est ta feuille ? En classe, chacun pose ses trouvailles sur un tissu et raconte.",
               "material": "sacs en papier, tissu"
             },
             {
               "art": "zaehlen",
               "titel": "Trier les feuilles",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Toutes les feuilles sont au milieu, à côté des bols pour rouge, jaune et brun. À tour de rôle, chaque enfant met une feuille dans le bon bol. Puis on compte : dans quel bol y a-t-il le plus de feuilles ? Regarder les nervures à la loupe.",
               "material": "feuilles, 3 bols, loupes"
             },
             {
               "art": "sinne",
               "titel": "Quelle feuille tombe le plus lentement ?",
-              "dauer": "20 Min.",
-              "text": "L’expérience de la semaine : feuille plate, feuille en boule et marron tombent de la hauteur du bras. Les enfants devinent avec des cailloux, regardent bien et crient « premier ! ». Qu’est-ce qui freine la feuille ?",
+              "dauer": "20 min",
+              "text": "L’expérience de la semaine : feuille plate, feuille en boule et marron tombent de la hauteur du bras. Les enfants devinent avec des cubes, regardent bien et crient « premier ! ». Qu’est-ce qui freine la feuille ?",
               "material": "feuilles, marrons, cailloux"
             },
             {
               "art": "bewegung",
               "titel": "Pluie de feuilles",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants sont des feuilles dans l’arbre et se balancent doucement. Au mot « vent », ils dansent dans la salle ; au mot « pluie », ils descendent lentement et restent couchés sans bouger. À la fin, on balaie : toutes les feuilles roulent vers le milieu."
             },
             {
               "art": "gestalten",
               "titel": "Frottages",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Poser une feuille, nervures vers le haut, sous du papier fin. Frotter avec le côté d’une craie grasse jusqu’à ce que tige et nervures apparaissent. Plusieurs couleurs superposées donnent une forêt d’automne.",
               "material": "feuilles, papier fin, craies grasses sans papier"
             },
             {
               "art": "sprache",
               "titel": "Je vois une feuille qui…",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un enfant décrit une feuille du milieu : « Ma feuille est jaune et a des pointes. » Les autres la montrent. Qui montre juste décrit la suivante. Les plus jeunes disent seulement la couleur."
             }
           ],
@@ -7287,11 +7449,11 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : vote avec des cailloux – forêt en frottage, impression ou mobile. La majorité crée la fresque vendredi.",
+            "text": "Jeudi : vote avec des cubes – forêt en frottage, impression ou mobile. La majorité crée la fresque vendredi.",
             "frage": "Pourquoi les feuilles tombent-elles ?"
           },
           "stufen": {
-            "precoce": "Trier deux sortes de feuilles ; regarder l’essai de chute et poser des cailloux.",
+            "precoce": "Trier deux sortes de feuilles ; regarder l’essai de chute et poser des cubes.",
             "p1": "Trier par couleur ; continuer un motif de deux couleurs ; montrer son idée.",
             "p2": "Motif à trois couleurs ; expliquer pourquoi la feuille plate tombe lentement."
           },
@@ -7318,16 +7480,19 @@
             "frage": "Que se passe-t-il si feuille, feuille froissée et marron tombent en même temps ?",
             "material": [
               "grandes feuilles mortes sèches",
-              "marrons",
+              {
+                "text": "marrons",
+                "bild": "motiv:kastanie"
+              },
               "chaise ou banc (seuls les adultes y montent)"
             ],
             "schritte": [
               "Choisir deux feuilles pareilles ; un enfant en froisse une en boule.",
-              "Deviner : qu’est-ce qui arrive en bas en premier ? Les enfants posent des cailloux sur les cartes.",
+              "Deviner : qu’est-ce qui arrive en bas en premier ? Les enfants posent des cubes sur les cartes.",
               "Un adulte lâche en même temps la feuille plate et le marron, de la même hauteur. Puis la feuille plate et la feuille froissée.",
               "Les enfants essaient eux-mêmes à hauteur de bras et crient « premier ! ». Noter le résultat sur la fiche (page 2)."
             ],
-            "vermutung": "Des cailloux sur les cartes : qui arrive en premier ? Beaucoup disent : « Le marron, il est lourd – les autres pareil. »",
+            "vermutung": "Des cubes sur les cartes : qui arrive en premier ? Beaucoup disent : « Le marron, il est lourd – les autres pareil. »",
             "beobachten": "Le marron et la feuille froissée tombent vite, la feuille plate se balance lentement. Questions : qu’est-ce qui est différent pour la feuille plate ?",
             "warumKind": "La feuille plate doit pousser beaucoup d’air de côté : l’air la freine. La boule a moins de surface et tombe plus vite.",
             "hintergrund": "Un objet qui tombe subit, en plus de la pesanteur, la résistance de l’air, qui dépend surtout de la surface. À poids égal, la feuille plate offre bien plus de surface que la boule et plane. Sans air, tout tomberait aussi vite – pour les enfants : l’air freine.",
@@ -7385,7 +7550,7 @@
           {
             "de": "der Igel",
             "fr": "le hérisson",
-            "lb": "den Igel",
+            "lb": "de Kéiseker",
             "pt": "o ouriço",
             "bild": "motiv:igel"
           },
@@ -7399,7 +7564,7 @@
           {
             "de": "die Schnecke",
             "fr": "l’escargot",
-            "lb": "d’Schleck",
+            "lb": "d’Schleek",
             "pt": "o caracol",
             "bild": "motiv:schnecke"
           },
@@ -7428,7 +7593,7 @@
         "satz": {
           "de": "Der Igel schläft.",
           "fr": "Le hérisson dort.",
-          "lb": "Den Igel schléift.",
+          "lb": "De Kéiseker schléift.",
           "pt": "O ouriço dorme."
         },
         "geprueft": false
@@ -7674,7 +7839,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Die Kinder stimmen mit Steinen ab, wo das Laubhaus für den Igel stehen soll: unter der Hecke, am Zaun oder hinter dem Schuppen. Dort wird es gebaut.",
+            "text": "Mittwoch: Die Kinder stimmen mit Bausteinen ab, wo das Laubhaus für den Igel stehen soll: unter der Hecke, am Zaun oder hinter dem Schuppen. Dort wird es gebaut.",
             "frage": "Was wollen wir über den Igel wissen?"
           },
           "stufen": {
@@ -7706,7 +7871,10 @@
             "material": [
               "zwei gleiche kleine Flaschen",
               "lauwarmes Leitungswasser (Erwachsene füllen)",
-              "zwei Kartons",
+              {
+                "text": "zwei Kartons",
+                "bild": "icon:package"
+              },
               "viel trockenes Laub"
             ],
             "schritte": [
@@ -7897,41 +8065,41 @@
             {
               "art": "kreis",
               "titel": "Le hérisson dans l’album",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Regarder ensemble un album ou une photo et demander : que vois-tu ? Où est le nez ? Que fait le hérisson ? Reprendre et élargir les réponses des enfants (« Oui, il renifle – il cherche des scarabées »).",
               "material": "album ou photos du hérisson"
             },
             {
               "art": "bewegung",
               "titel": "Hérisson, roule-toi en boule",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants marchent à quatre pattes comme des hérissons et reniflent le sol. Quand l’enseignante crie « renard », tous se roulent en boule et ne bougent plus. À « lune », ils repartent. Plus tard, un enfant peut crier."
             },
             {
               "art": "sinne",
               "titel": "Au chaud comme le hérisson",
-              "dauer": "2 × 10 Min.",
+              "dauer": "2 × 10 min",
               "text": "L’expérience de la semaine : deux bouteilles d’eau tiède, l’une dans les feuilles, l’autre dans un carton vide. Après 45 minutes, les enfants touchent : laquelle est encore tiède ? Ainsi dort le hérisson l’hiver dans son nid.",
               "material": "2 bouteilles, carton, feuilles sèches"
             },
             {
               "art": "draussen",
               "titel": "Construire un abri de feuilles",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "À l’endroit choisi par les enfants, empiler branches et feuilles. Réfléchir ensemble : où est l’entrée ? Reste-t-il au sec ? Laisser le tas jusqu’au printemps et observer seulement de loin.",
               "material": "feuilles, branches, râteau"
             },
             {
               "art": "gestalten",
               "titel": "Hérisson en argile",
-              "dauer": "25 Min.",
+              "dauer": "25 min",
               "text": "Chaque enfant forme une boule et étire un nez pointu. De courtes pâtes servent de piquants ; deux yeux sont creusés au doigt. Les hérissons sèchent sur un lit de vraies feuilles.",
               "material": "argile ou pâte à modeler, pâtes courtes, feuilles"
             },
             {
               "art": "zaehlen",
               "titel": "Des scarabées pour le hérisson",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Des scarabées en papier sont dispersés. Un enfant lance le dé et ramasse autant de scarabées que le dé indique ; la classe compte à voix haute. À la fin, on compte tous les scarabées ensemble.",
               "material": "scarabées en papier, dé de 1 à 3 points"
             }
@@ -7967,7 +8135,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : les enfants votent avec des cailloux où mettre l’abri du hérisson : sous la haie, près de la clôture ou derrière le cabanon. On le construit là.",
+            "text": "Mercredi : les enfants votent avec des cubes où mettre l’abri du hérisson : sous la haie, près de la clôture ou derrière le cabanon. On le construit là.",
             "frage": "Que voulons-nous savoir sur le hérisson ?"
           },
           "stufen": {
@@ -7999,7 +8167,10 @@
             "material": [
               "deux petites bouteilles identiques",
               "eau tiède du robinet (remplie par l’adulte)",
-              "deux cartons",
+              {
+                "text": "deux cartons",
+                "bild": "icon:package"
+              },
               "beaucoup de feuilles mortes sèches"
             ],
             "schritte": [
@@ -8148,7 +8319,7 @@
     "de": {
       "titel": "Kastanien und Eicheln",
       "untertitel": "Herbst: sammeln, zählen, rollen lassen und schwimmen",
-      "anleitung": "Karten zweimal drucken und im Sitzkreis mit echten Kastanien und Eicheln nutzen. Seite 2 ist das Forscherblatt zum Wasserversuch: Das Kind vermutet, malt, was es sieht, und kreist das Ergebnis ein.",
+      "anleitung": "Karten zweimal drucken und im Sitzkreis mit echten Kastanien und Eicheln nutzen. Auf Seite 2 sucht das Kind Kastanien und Eicheln im Wald, kreist sie ein und zählt; unten hakt es die Zahl ab. Das Forscherblatt zum Wasserversuch gibt es als Zusatzseite.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -8193,29 +8364,58 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "frage": "Welche Kastanie schwimmt?",
-          "bild": "motiv:kastanie",
-          "name": false,
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Finde die Kastanien und die Eicheln. Kreise ein und zähle.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "suchbild",
+          "szene": "wald",
+          "suchen": [
             {
-              "bild": "icon:thumb-up",
-              "text": "schwimmt"
+              "bild": "motiv:kastanie",
+              "anzahl": 5
             },
             {
-              "bild": "icon:thumb-down",
-              "text": "sinkt"
+              "bild": "motiv:eichel",
+              "anzahl": 3
             }
           ],
-          "sehen": "frei"
+          "ablenker": [
+            {
+              "bild": "motiv:blatt-herbst",
+              "anzahl": 4
+            },
+            {
+              "bild": "motiv:igel",
+              "anzahl": 1
+            },
+            {
+              "bild": "motiv:eichhoernchen",
+              "anzahl": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo sind mehr: Kastanien oder Eicheln? Zeig es.",
+          "symbole": [
+            "zeigen",
+            "sprechen"
+          ],
+          "niveau": "stern"
         }
       ],
       "lehrer": {
         "ziel": "Die Kinder sammeln Kastanien und Eicheln, zählen kleine Mengen bis 10, vergleichen (schwer – leicht, schwimmt – sinkt) und erforschen, warum manche Kastanien auf dem Wasser schwimmen.",
         "ablauf": [
           "Montag – Sammelgang unter Bäumen; Fragenplakat; Bildkarten einführen; Funde vergleichen.",
-          "Dienstag – Zählen: Kastanien in Eierkartons legen (bis 5, dann bis 10); Würfelspiel „Füll die Schachtel“.",
-          "Mittwoch – Experiment „Welche Kastanie schwimmt?“ mit dem Forscherblatt (Seite 2).",
+          "Dienstag – Suchbild (Seite 2); Kastanien in Eierkartons legen (bis 5, dann bis 10); Würfelspiel „Füll die Schachtel“.",
+          "Mittwoch – Experiment „Welche Kastanie schwimmt?“ mit dem Forscherblatt (Zusatzseite).",
           "Donnerstag – Kastanienbahn bauen und rollen lassen; Abstimmung über den Freitag; der Reim mit Geräuschen.",
           "Freitag – nach der Abstimmung: Bahn ausbauen, Ketten fädeln oder Kaufladen; Rückblick am Fragenplakat."
         ],
@@ -8350,7 +8550,10 @@
             "frage": "Was passiert, wenn wir gesammelte Kastanien und Eicheln ins Wasser legen?",
             "material": [
               "Wanne oder großes Glas mit Wasser",
-              "gesammelte Kastanien und Eicheln",
+              {
+                "text": "gesammelte Kastanien und Eicheln",
+                "bild": "motiv:kastanie"
+              },
               {
                 "text": "zwei Tücher: „schwimmt“ und „sinkt“",
                 "bild": "motiv:handtuch"
@@ -8360,7 +8563,7 @@
             "schritte": [
               "Jedes Kind wählt eine Kastanie oder Eichel und legt sie auf das Tuch „schwimmt“ oder „sinkt“ – das ist die Vermutung.",
               "Nacheinander ins Wasser legen: Schwimmt sie oder sinkt sie? Dann auf das passende Tuch sortieren.",
-              "Die Schwimmer genau ansehen: Löcher? Leicht? Schrumpelig? Ergebnis auf dem Forscherblatt (Seite 2) ankreuzen.",
+              "Die Schwimmer genau ansehen: Löcher? Leicht? Schrumpelig? Ergebnis auf dem Forscherblatt ankreuzen.",
               "Eine erwachsene Person schneidet einen Schwimmer und einen Sinker auf: Was ist innen?"
             ],
             "vermutung": "Jedes Kind legt seine Kastanie vorher auf das Tuch „schwimmt“ oder „sinkt“. Viele sagen: „Alle sinken, weil sie schwer sind.“",
@@ -8377,7 +8580,21 @@
             "phaenomene": [
               "schwimmen",
               "gewicht"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Welche Kastanie schwimmt?",
+              "vermuten": [
+                {
+                  "bild": "icon:thumb-up",
+                  "text": "schwimmt"
+                },
+                {
+                  "bild": "icon:thumb-down",
+                  "text": "sinkt"
+                }
+              ],
+              "sehen": "frei"
+            }
           }
         }
       }
@@ -8385,7 +8602,7 @@
     "fr": {
       "titel": "Marrons et glands",
       "untertitel": "Automne : ramasser, compter, faire rouler et flotter",
-      "anleitung": "Imprimer les cartes deux fois et les utiliser au cercle avec de vrais marrons et glands. La page 2 est la fiche du chercheur pour l’expérience dans l’eau : l’enfant devine, dessine ce qu’il voit et entoure le résultat.",
+      "anleitung": "Imprimer les cartes deux fois et les utiliser en cercle avec de vrais marrons et glands. Page 2 : l’enfant cherche les marrons et les glands dans la forêt, les entoure et compte ; en bas, il coche le nombre. La fiche du chercheur sur l’eau est une page à part.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -8430,29 +8647,58 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "frage": "Quel marron flotte ?",
-          "bild": "motiv:kastanie",
-          "name": false,
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Trouve les marrons et les glands. Entoure et compte.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "suchbild",
+          "szene": "wald",
+          "suchen": [
             {
-              "bild": "icon:thumb-up",
-              "text": "flotte"
+              "bild": "motiv:kastanie",
+              "anzahl": 5
             },
             {
-              "bild": "icon:thumb-down",
-              "text": "coule"
+              "bild": "motiv:eichel",
+              "anzahl": 3
             }
           ],
-          "sehen": "frei"
+          "ablenker": [
+            {
+              "bild": "motiv:blatt-herbst",
+              "anzahl": 4
+            },
+            {
+              "bild": "motiv:igel",
+              "anzahl": 1
+            },
+            {
+              "bild": "motiv:eichhoernchen",
+              "anzahl": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où y en a-t-il plus : marrons ou glands ? Montre.",
+          "symbole": [
+            "zeigen",
+            "sprechen"
+          ],
+          "niveau": "stern"
         }
       ],
       "lehrer": {
         "ziel": "Les enfants ramassent marrons et glands, comptent de petites quantités jusqu’à 10, comparent (lourd – léger, flotte – coule) et cherchent pourquoi certains marrons flottent.",
         "ablauf": [
           "Lundi – récolte sous les arbres ; affiche des questions ; présenter les cartes ; comparer les trouvailles.",
-          "Mardi – compter : marrons dans des boîtes à œufs (jusqu’à 5, puis 10) ; jeu de dé « Remplis la boîte ».",
-          "Mercredi – expérience « Quel marron flotte ? » avec la fiche du chercheur (page 2).",
+          "Mardi – image à chercher (page 2) ; compter : marrons dans des boîtes à œufs (jusqu’à 5, puis 10) ; jeu de dé « Remplis la boîte ».",
+          "Mercredi – expérience « Quel marron flotte ? » avec la fiche du chercheur (page à part).",
           "Jeudi – construire le circuit des marrons ; vote pour vendredi ; la comptine à bruitages.",
           "Vendredi – selon le vote : agrandir la piste, enfiler des colliers ou épicerie ; bilan devant l’affiche."
         ],
@@ -8492,35 +8738,35 @@
             {
               "art": "draussen",
               "titel": "Récolte sous les arbres",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Sous les marronniers et les chênes, les enfants ramassent dans des seaux. L’enseignante montre la bogue piquante et la cupule du gland. De retour, on trie en deux tas : marrons ici, glands là.",
               "material": "seaux, éventuellement gants"
             },
             {
               "art": "zaehlen",
               "titel": "Remplis la boîte",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Chaque enfant a une boîte à œufs. À tour de rôle, on lance le dé ; l’enfant y met autant de marrons que le dé indique et compte à voix haute. Qui a rempli sa boîte aide son voisin à compter.",
               "material": "boîtes à œufs, dé, marrons"
             },
             {
               "art": "sinne",
               "titel": "Quel marron flotte ?",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "L’expérience de la semaine : les enfants devinent et mettent marrons et glands dans l’eau. Ceux qui flottent et ceux qui coulent vont sur deux tissus. Qu’est-ce qui est différent à l’intérieur ? Un adulte en coupe un.",
               "material": "bac, marrons, glands, 2 tissus, loupe-boîte"
             },
             {
               "art": "spiel",
               "titel": "Le circuit des marrons",
-              "dauer": "25 Min.",
+              "dauer": "25 min",
               "text": "Avec des tubes en carton, des gouttières et des cubes, les enfants construisent une piste en pente. Ils font rouler les marrons l’un après l’autre : lequel va le plus loin ? Qui attend compte jusqu’à trois – puis c’est au suivant.",
               "material": "tubes en carton, gouttières, cubes"
             },
             {
               "art": "gestalten",
               "titel": "Colliers de marrons",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Les adultes percent d’abord des marrons frais. Les enfants les enfilent avec un fil à bout adhésif, en alternance avec de courtes pâtes. Les colliers finis sont accrochés dans la classe.",
               "material": "marrons percés, cordelette, pâtes"
             }
@@ -8587,17 +8833,23 @@
             "frage": "Que se passe-t-il si on met dans l’eau nos marrons et nos glands ramassés ?",
             "material": [
               "bac ou grand bocal d’eau",
-              "marrons et glands ramassés",
+              {
+                "text": "marrons et glands ramassés",
+                "bild": "motiv:kastanie"
+              },
               {
                 "text": "deux tissus : « flotte » et « coule »",
                 "bild": "motiv:handtuch"
               },
-              "loupe-boîte"
+              {
+                "text": "loupe-boîte",
+                "bild": "motiv:lupe"
+              }
             ],
             "schritte": [
               "Chaque enfant choisit un marron ou un gland et le pose sur le tissu « flotte » ou « coule » – c’est son idée.",
               "Les mettre un par un dans l’eau : flotte-t-il ou coule-t-il ? Puis le trier sur le bon tissu.",
-              "Observer ceux qui flottent : des trous ? légers ? ridés ? Noter le résultat sur la fiche (page 2).",
+              "Observer ceux qui flottent : des trous ? légers ? ridés ? Noter le résultat sur la fiche du chercheur.",
               "Un adulte coupe un marron qui flotte et un qui coule : qu’y a-t-il dedans ?"
             ],
             "vermutung": "Chaque enfant pose d’abord son marron sur « flotte » ou « coule ». Beaucoup disent : « Tous coulent, ils sont lourds. »",
@@ -8614,7 +8866,21 @@
             "phaenomene": [
               "schwimmen",
               "gewicht"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Quel marron flotte ?",
+              "vermuten": [
+                {
+                  "bild": "icon:thumb-up",
+                  "text": "flotte"
+                },
+                {
+                  "bild": "icon:thumb-down",
+                  "text": "coule"
+                }
+              ],
+              "sehen": "frei"
+            }
           }
         }
       }
@@ -8702,7 +8968,7 @@
         "satz": {
           "de": "Ich esse gern Kartoffeln.",
           "fr": "J’aime manger des pommes de terre.",
-          "lb": "Ech iessen gär Gromperen.",
+          "lb": "Ech iesse gär Gromperen.",
           "pt": "Gosto de comer batatas."
         },
         "geprueft": false
@@ -8934,7 +9200,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Dienstag: Die Kinder stimmen mit Steinen ab: Kartoffelsuppe oder Ofenkartoffeln mit Quark. Das Gewählte wird am Freitag zubereitet.",
+            "text": "Dienstag: Die Kinder stimmen mit Bausteinen ab: Kartoffelsuppe oder Ofenkartoffeln mit Quark. Das Gewählte wird am Freitag zubereitet.",
             "frage": "Was wollen wir über Kartoffeln wissen?"
           },
           "stufen": {
@@ -8965,7 +9231,10 @@
             "titel": "Fest oder flüssig? Der Stärkebrei",
             "frage": "Was passiert, wenn wir auf Stärkebrei klopfen – und wenn wir langsam hineingreifen?",
             "material": [
-              "Kartoffelstärke (ca. 1 Tasse je Schale)",
+              {
+                "text": "Kartoffelstärke (ca. 1 Tasse je Schale)",
+                "bild": "motiv:kartoffel"
+              },
               "etwas über eine halbe Tasse Wasser",
               "flache Schalen",
               "Schürzen"
@@ -9145,41 +9414,41 @@
             {
               "art": "sinne",
               "titel": "Déterrer des pommes de terre",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Dans une caisse de terre sont cachées des pommes de terre. Les enfants creusent avec les mains, tâtent les tubercules et les mettent dans le panier. Puis comparer : grandes, petites, rondes, ridées. À la fin, tout le monde se lave les mains.",
               "material": "caisse de terre, pommes de terre, panier"
             },
             {
               "art": "zaehlen",
               "titel": "Du plus petit au plus grand",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants rangent les pommes de terre en une rangée – de la plus petite à la plus grande. Puis on compte : combien dans la rangée ? Qui montre la plus grande, la plus petite ? Une pomme de terre disparaît : laquelle manque ?",
               "material": "8 à 10 pommes de terre"
             },
             {
               "art": "sinne",
               "titel": "Solide ou liquide ? La bouillie de fécule",
-              "dauer": "30 Min.",
+              "dauer": "30 min",
               "text": "L’expérience de la semaine : mélanger fécule et eau. Taper vite dessus – la bouillie durcit. Y plonger la main lentement – elle est liquide. Les enfants devinent d’abord et racontent ensuite ce qu’ils ont senti.",
               "material": "fécule, eau, plats creux, tabliers"
             },
             {
               "art": "gestalten",
               "titel": "Impressions à la pomme de terre",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Les adultes taillent rond, triangle et étoile dans des demi-pommes de terre. Les enfants trempent les tampons dans la peinture et impriment des motifs sur du papier ou un vieux sac en tissu. Nommer souvent les formes.",
               "material": "demi-pommes de terre taillées, peinture au doigt, papier"
             },
             {
               "art": "bewegung",
               "titel": "La récolte",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants sont des pommes de terre sous la terre. L’enseignante creuse et touche un enfant à l’épaule : il roule dehors et aide à creuser. À la fin, tous roulent dans le grand panier – un cercle de cordes."
             },
             {
               "art": "kochen",
               "titel": "Soupe ou pommes de terre au four",
-              "dauer": "40 Min.",
+              "dauer": "40 min",
               "text": "Les enfants lavent et brossent les pommes de terre, les adultes épluchent, coupent et cuisent – selon le vote. Les enfants sentent, attendent, mettent la table et mangent ensemble. Qui veut goûte.",
               "material": "pommes de terre, bouillon ou fromage blanc, casserole, plaque ou four"
             }
@@ -9215,7 +9484,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mardi : les enfants votent avec des cailloux : soupe ou pommes de terre au four avec fromage blanc. Le choix est préparé vendredi.",
+            "text": "Mardi : les enfants votent avec des cubes : soupe ou pommes de terre au four avec fromage blanc. Le choix est préparé vendredi.",
             "frage": "Que voulons-nous savoir sur les pommes de terre ?"
           },
           "stufen": {
@@ -9246,7 +9515,10 @@
             "titel": "Solide ou liquide ? La bouillie de fécule",
             "frage": "Que se passe-t-il si on tape sur la bouillie – et si on y plonge la main doucement ?",
             "material": [
-              "fécule de pomme de terre (env. 1 tasse par plat)",
+              {
+                "text": "fécule de pomme de terre (env. 1 tasse par plat)",
+                "bild": "motiv:kartoffel"
+              },
               "un peu plus d’une demi-tasse d’eau",
               "plats creux",
               "tabliers"
@@ -9560,7 +9832,7 @@
               "art": "sinne",
               "titel": "Welcher Stoff hält den Regen ab?",
               "dauer": "20 Min.",
-              "text": "Das Experiment der Woche: Fünf Becher mit fünf Stoffen bekommen zehn Tropfen Regen. Die Kinder vermuten mit Steinen, schauen nach und entscheiden, welcher Stoff an die Regenpuppe gehört.",
+              "text": "Das Experiment der Woche: Fünf Becher mit fünf Stoffen bekommen zehn Tropfen Regen. Die Kinder vermuten mit Bausteinen, schauen nach und entscheiden, welcher Stoff an die Regenpuppe gehört.",
               "material": "Becher, Stoffe, Pipetten, Wasser"
             },
             {
@@ -9643,16 +9915,19 @@
             "material": [
               "5 Becher, je mit einem Stoffstück und Gummiband bespannt",
               "Stoffe: Baumwolle, Wolle, Regenjacke, Papier, Alufolie",
-              "Pipetten oder Gießkanne mit feiner Brause",
+              {
+                "text": "Pipetten oder Gießkanne mit feiner Brause",
+                "bild": "motiv:giesskanne"
+              },
               "Wasser"
             ],
             "schritte": [
               "Die Kinder fühlen die Stoffe und benennen sie: Baumwolle, Wolle, Regenjacke, Papier, Alufolie.",
-              "Vermuten: Welcher Stoff hält den Regen ab? Jedes Kind legt einen Stein zu seinem Favoriten.",
+              "Vermuten: Welcher Stoff hält den Regen ab? Jedes Kind legt einen Baustein zu seinem Favoriten.",
               "Auf jeden Becher gleich viele Tropfen geben (zehn zählen) oder mit der Gießkanne regnen lassen.",
               "Stoff abnehmen: Ist Wasser im Becher? Welcher Stoff gehört an die Regenpuppe?"
             ],
-            "vermutung": "Jedes Kind legt einen Stein zu dem Stoff, der den Regen abhält. Viele sagen: „Die dicke Wolle, die ist warm.“",
+            "vermutung": "Jedes Kind legt einen Baustein zu dem Stoff, der den Regen abhält. Viele sagen: „Die dicke Wolle, die ist warm.“",
             "beobachten": "Durch Baumwolle, Wolle und Papier läuft das Wasser; Regenjackenstoff und Alufolie lassen die Tropfen abperlen. Fragen: Welcher Stoff bleibt trocken?",
             "warumKind": "Manche Stoffe haben kleine Löcher, durch die das Wasser schlüpft; die Regenjacke ist dicht – deshalb trägt man sie im Regen.",
             "hintergrund": "Gewebte Naturfasern saugen Wasser auf und lassen es durch; beschichtete oder dicht gewebte Kunststoffe sind wasserabweisend. Regenjacken verbinden eine dichte Schicht mit abgedichteten Nähten. Kinder verstehen so, warum es Regenkleidung gibt und woraus sie gemacht ist.",
@@ -9690,7 +9965,7 @@
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Montre la carte du temps d’aujourd’hui et dis-le.",
+          "text": "Montre la carte du temps d’aujourd’hui. Dis-le.",
           "symbole": [
             "zeigen",
             "sprechen"
@@ -9833,35 +10108,35 @@
             {
               "art": "kreis",
               "titel": "Le tableau de la météo",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Chaque matin, un enfant regarde par la fenêtre et accroche la carte du temps : soleil, nuage, pluie ou vent. La classe réfléchit : comment sent-on le temps ? Vendredi, on compte quel temps a été le plus fréquent.",
               "material": "cartes, tableau avec les jours"
             },
             {
               "art": "draussen",
               "titel": "Qu’est-ce que le vent déplace ?",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Dans la cour, les enfants tiennent foulards, plumes, bandes de papier et moulins à vent dans le vent. Ils observent : qu’est-ce qui s’envole, qu’est-ce qui reste ? À la fin, tous soufflent des bulles et regardent où le vent les emporte.",
               "material": "foulards, plumes, bandes de papier, moulins, bulles"
             },
             {
               "art": "sinne",
               "titel": "Quel tissu arrête la pluie ?",
-              "dauer": "20 Min.",
-              "text": "L’expérience de la semaine : cinq gobelets avec cinq tissus reçoivent dix gouttes de pluie. Les enfants devinent avec des cailloux, regardent et décident quel tissu va à la poupée de pluie.",
+              "dauer": "20 min",
+              "text": "L’expérience de la semaine : cinq gobelets avec cinq tissus reçoivent dix gouttes de pluie. Les enfants devinent avec des cubes, regardent et décident quel tissu va à la poupée de pluie.",
               "material": "gobelets, tissus, pipettes, eau"
             },
             {
               "art": "musik",
               "titel": "Musique de pluie",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants font un orage avec le corps : taper du bout des doigts (bruine), frotter les mains (pluie), claquer sur les cuisses (averse) – puis tout à l’envers jusqu’au silence. Ajouter du riz secoué dans des boîtes.",
               "material": "boîtes avec du riz"
             },
             {
               "art": "bewegung",
               "titel": "Sauter dans les flaques",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "En pantalon de pluie et bottes, les enfants sautent dans les flaques : petits sauts, grands sauts, sur un pied. Puis ils cherchent leur reflet dans l’eau. Prévoir des vêtements de rechange ; en cas d’orage ou de tempête, tous restent à l’intérieur.",
               "material": "pantalons de pluie, bottes"
             }
@@ -9931,16 +10206,19 @@
             "material": [
               "5 gobelets couverts d’un tissu tenu par un élastique",
               "tissus : coton, laine, veste de pluie, papier, papier alu",
-              "pipettes ou arrosoir à pomme fine",
+              {
+                "text": "pipettes ou arrosoir à pomme fine",
+                "bild": "motiv:giesskanne"
+              },
               "eau"
             ],
             "schritte": [
               "Les enfants touchent les tissus et les nomment : coton, laine, veste de pluie, papier, papier alu.",
-              "Deviner : quel tissu arrête la pluie ? Chaque enfant pose un caillou près de son favori.",
+              "Deviner : quel tissu arrête la pluie ? Chaque enfant pose un cube près de son favori.",
               "Mettre le même nombre de gouttes sur chaque gobelet (compter jusqu’à dix) ou faire pleuvoir avec l’arrosoir.",
               "Retirer le tissu : y a-t-il de l’eau dans le gobelet ? Quel tissu met-on à la poupée sous la pluie ?"
             ],
-            "vermutung": "Chaque enfant pose un caillou près du tissu qui arrête la pluie. Beaucoup disent : « La laine épaisse, elle est chaude. »",
+            "vermutung": "Chaque enfant pose un cube près du tissu qui arrête la pluie. Beaucoup disent : « La laine épaisse, elle est chaude. »",
             "beobachten": "L’eau traverse coton, laine et papier ; le tissu de la veste de pluie et l’alu font perler les gouttes. Questions : quel tissu reste sec ?",
             "warumKind": "Certains tissus ont de petits trous où l’eau se glisse ; la veste de pluie est étanche – c’est pour ça qu’on la porte sous la pluie.",
             "hintergrund": "Les fibres naturelles tissées absorbent l’eau et la laissent passer ; les matières synthétiques enduites ou très serrées sont déperlantes. Les vestes de pluie associent une couche étanche à des coutures scellées. Les enfants comprennent pourquoi il existe des vêtements de pluie et de quoi ils sont faits.",
@@ -10259,7 +10537,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Die Kinder stimmen mit Steinen ab, welches Gesicht der große Kürbis bekommt: froh, überrascht oder müde. Das Gewählte malen sie mit Filzstift auf.",
+            "text": "Mittwoch: Die Kinder stimmen mit Bausteinen ab, welches Gesicht der große Kürbis bekommt: froh, überrascht oder müde. Das Gewählte malen sie mit Filzstift auf.",
             "frage": "Was steckt im Kürbis?"
           },
           "stufen": {
@@ -10428,41 +10706,41 @@
             {
               "art": "sinne",
               "titel": "Qu’y a-t-il dans la courge ?",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Après que les adultes ont coupé le chapeau, les enfants regardent dedans et sentent. À la cuillère et aux mains, ils sortent chair et graines : glissant, ferme, humide. Tout va dans des bols – pour la soupe et pour compter.",
               "material": "courge, cuillères, bols, couteau (adultes)"
             },
             {
               "art": "zaehlen",
               "titel": "Compter les graines",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Les graines lavées sont sur un plateau. Chaque enfant remplit une boîte à œufs : dans chaque case autant de graines que le dé indique. Les plus grands font des tas de dix. À la fin : combien de tas à nous tous ?",
               "material": "graines de courge, boîtes à œufs, dé"
             },
             {
               "art": "sinne",
               "titel": "Le sel fait sortir l’eau",
-              "dauer": "30 Min.",
+              "dauer": "30 min",
               "text": "L’expérience de la semaine : deux assiettes de morceaux de courge, sur l’une une pincée de sel. Les enfants devinent, attendent et regardent après 20 minutes : où est-ce mouillé ? Les morceaux salés vont dans la soupe.",
               "material": "morceaux de courge, sel, 2 assiettes"
             },
             {
               "art": "kreis",
               "titel": "Visages de courges",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante montre de petites courges aux visages dessinés : content, triste, en colère, surpris. Les enfants imitent le visage et disent quand ils se sentent ainsi. Qui veut raconte – personne n’y est obligé. La grosse courge reçoit le visage choisi par la majorité.",
               "material": "petites courges, feutres"
             },
             {
               "art": "bewegung",
               "titel": "La courge grandit",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants sont des graines, couchées toutes petites dans la terre. Avec la pluie et le soleil, elles grandissent : les tiges rampent, la courge devient grosse et ronde – les bras forment un grand cercle. À la fin, toutes les courges mûres roulent vers la récolte."
             },
             {
               "art": "kochen",
               "titel": "Partager la soupe de courge",
-              "dauer": "40 Min.",
+              "dauer": "40 min",
               "text": "Cuire la chair avec carotte et bouillon (adultes au feu), mixer et laisser refroidir. Les enfants mettent la table et servent à la louche : chaque enfant reçoit la même quantité. Qui veut goûte.",
               "material": "courge, carotte, bouillon, casserole, louche, petits bols"
             }
@@ -10500,7 +10778,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : les enfants votent avec des cailloux le visage de la grosse courge : content, surpris ou fatigué. Ils le dessinent au feutre.",
+            "text": "Mercredi : les enfants votent avec des cubes le visage de la grosse courge : content, surpris ou fatigué. Ils le dessinent au feutre.",
             "frage": "Qu’y a-t-il dans la courge ?"
           },
           "stufen": {
@@ -10668,7 +10946,7 @@
     "de": {
       "titel": "Laternen und Lichter",
       "untertitel": "Herbst: eine Laterne basteln und gemeinsam im Dunkeln gehen",
-      "anleitung": "Karten zweimal drucken; im Sitzkreis liegt eine echte LED-Laterne dabei. Seite 2: Das Kind fährt den Weg zum Fest mit dem Stift nach und malt seine Laterne an. Papier für die Laternen im Experiment aussuchen.",
+      "anleitung": "Karten zweimal drucken; im Sitzkreis liegt eine echte LED-Laterne dabei. Seite 2: Das Kind fährt den Weg zum Fest nach und kreist ein, was im Dunkeln leuchtet; ältere Kinder malen Laterne und Lampion mit einem Muster aus zwei Farben.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -10687,7 +10965,7 @@
               "titel": "die Laterne"
             },
             {
-              "bild": "motiv:led-kerze",
+              "bild": "icon:bulb",
               "titel": "das Licht"
             },
             {
@@ -10732,14 +11010,46 @@
           "art": "labyrinth",
           "start": "figur:mia:froh:stehen",
           "ziel": "motiv:laterne",
-          "stufe": 2
+          "stufe": 1
         },
         {
           "art": "aufgabe",
-          "text": "Male deine Laterne bunt an.",
+          "text": "Was leuchtet im Dunkeln? Kreise ein.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "motiv:laterne",
+              "text": "die Laterne"
+            },
+            {
+              "bild": "motiv:gluehwuermchen",
+              "text": "das Glühwürmchen"
+            },
+            {
+              "bild": "icon:moon",
+              "text": "der Mond"
+            },
+            {
+              "bild": "motiv:buch",
+              "text": "das Buch"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Male ein Muster: zwei Farben im Wechsel.",
           "symbole": [
             "malen"
-          ]
+          ],
+          "niveau": "stern"
         },
         {
           "art": "bilder",
@@ -10750,7 +11060,7 @@
               "bild": "motiv:laterne"
             },
             {
-              "bild": "motiv:laterne"
+              "bild": "motiv:lampion"
             }
           ]
         }
@@ -10873,7 +11183,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Dienstag: Die Kinder stimmen mit Steinen ab, wo der Lichterweg am Freitag verläuft: durch den abgedunkelten Flur, den Turnraum oder den Hof.",
+            "text": "Dienstag: Die Kinder stimmen mit Bausteinen ab, wo der Lichterweg am Freitag verläuft: durch den abgedunkelten Flur, den Turnraum oder den Hof.",
             "frage": "Was wollen wir über Licht wissen?"
           },
           "stufen": {
@@ -10888,7 +11198,7 @@
           ],
           "mehrsprachig": "Familien erzählen von Lichterfesten in ihrer Sprache und bringen ein Lichterwort mit; es hängt an der Laterne.",
           "freitag": {
-            "vorlauf": 0,
+            "vorlauf": 1,
             "kueche": false,
             "ausflug": false,
             "besuch": false,
@@ -10946,7 +11256,7 @@
     "fr": {
       "titel": "Lanternes et lumières",
       "untertitel": "Automne : fabriquer une lanterne et marcher ensemble dans le noir",
-      "anleitung": "Imprimer les cartes deux fois ; au cercle, une vraie lanterne LED est présente. Page 2 : l’enfant suit au crayon le chemin vers la fête et colorie sa lanterne. Choisir dans l’expérience le papier des lanternes.",
+      "anleitung": "Imprimer les cartes deux fois ; au cercle, une vraie lanterne LED est présente. Page 2 : l’enfant suit le chemin vers la fête et entoure ce qui brille dans le noir ; les plus grands décorent lanterne et lampion d’un motif à deux couleurs.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -10965,7 +11275,7 @@
               "titel": "la lanterne"
             },
             {
-              "bild": "motiv:led-kerze",
+              "bild": "icon:bulb",
               "titel": "la lumière"
             },
             {
@@ -11010,14 +11320,46 @@
           "art": "labyrinth",
           "start": "figur:mia:froh:stehen",
           "ziel": "motiv:laterne",
-          "stufe": 2
+          "stufe": 1
         },
         {
           "art": "aufgabe",
-          "text": "Colorie ta lanterne.",
+          "text": "Qu’est-ce qui brille dans le noir ? Entoure.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "motiv:laterne",
+              "text": "la lanterne"
+            },
+            {
+              "bild": "motiv:gluehwuermchen",
+              "text": "la luciole"
+            },
+            {
+              "bild": "icon:moon",
+              "text": "la lune"
+            },
+            {
+              "bild": "motiv:buch",
+              "text": "le livre"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine un motif : deux couleurs qui alternent.",
           "symbole": [
             "malen"
-          ]
+          ],
+          "niveau": "stern"
         },
         {
           "art": "bilder",
@@ -11028,7 +11370,7 @@
               "bild": "motiv:laterne"
             },
             {
-              "bild": "motiv:laterne"
+              "bild": "motiv:lampion"
             }
           ]
         }
@@ -11078,42 +11420,42 @@
             {
               "art": "kreis",
               "titel": "La lumière en classe",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Assombrir la salle. Au milieu brille une lanterne LED. Les enfants chuchotent ce qu’ils voient et nomment d’autres lumières : lune, étoiles, lampe, lampe de poche. Puis lumière : qu’est-ce qui est différent ?",
               "material": "lanterne LED, tissus pour assombrir"
             },
             {
               "art": "sinne",
               "titel": "Quel papier laisse passer la lumière ?",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "L’expérience de la semaine : tenir papier de soie, sulfurisé, cartonné et carton devant la lampe LED. Les enfants devinent et trient en « clair », « un peu », « sombre » – et choisissent les papiers de leur lanterne.",
               "material": "lampe LED, 4 papiers, 3 cerceaux"
             },
             {
               "art": "gestalten",
               "titel": "Ma lanterne",
-              "dauer": "2 × 30 Min.",
+              "dauer": "2 × 30 min",
               "text": "Chaque enfant choisit une forme : lune, étoile ou cœur. L’enseignante découpe la forme dans une assiette en carton ou une boîte à fromage. Les enfants déchirent le papier choisi en morceaux et le collent derrière la forme. Enfin anse et bâton LED.",
               "material": "assiettes en carton, papier, colle, bâtons LED"
             },
             {
               "art": "musik",
               "titel": "Notre vers de lanterne",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Dire la comptine en rythme ou la chanter sur une mélodie simple. Les enfants marchent en cercle, lèvent la lanterne et s’arrêtent à « Stop ». Un enfant peut ouvrir la marche et crier « Stop ».",
               "material": "lanternes"
             },
             {
               "art": "spiel",
               "titel": "Règles du chemin",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Essai de défilé dans le couloir : les enfants marchent à deux, lentement, derrière l’enseignante. Quand elle montre la carte stop, tous s’arrêtent. Puis on échange : un enfant montre la carte, les autres marchent.",
               "material": "carte stop"
             },
             {
               "art": "draussen",
               "titel": "Le chemin des lumières",
-              "dauer": "30 Min.",
+              "dauer": "30 min",
               "text": "Dans le couloir assombri, la salle de motricité ou – avec les familles, facultatif – au crépuscule, tous font avec leurs lanternes un court trajet connu. Un adulte devant et un derrière, dehors avec un gilet. En chemin, s’arrêter et dire la comptine.",
               "material": "lanternes, gilets de sécurité"
             }
@@ -11151,7 +11493,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mardi : les enfants votent avec des cailloux où passe le chemin des lumières vendredi : couloir assombri, salle de motricité ou cour.",
+            "text": "Mardi : les enfants votent avec des cubes où passe le chemin des lumières vendredi : couloir assombri, salle de motricité ou cour.",
             "frage": "Que voulons-nous savoir sur la lumière ?"
           },
           "stufen": {
@@ -11166,7 +11508,7 @@
           ],
           "mehrsprachig": "Les familles racontent leurs fêtes de lumière dans leur langue et apportent un mot ; il est accroché à la lanterne.",
           "freitag": {
-            "vorlauf": 0,
+            "vorlauf": 1,
             "kueche": false,
             "ausflug": false,
             "besuch": false,
@@ -11264,14 +11606,14 @@
             "fr": "la neige",
             "lb": "de Schnéi",
             "pt": "a neve",
-            "bild": null
+            "bild": "icon:snowflake"
           },
           {
             "de": "das Eis",
             "fr": "la glace",
             "lb": "den Äis",
             "pt": "o gelo",
-            "bild": null
+            "bild": "motiv:eiswuerfel"
           },
           {
             "de": "die Schneeflocke",
@@ -11358,7 +11700,7 @@
               "titel": "die Schneeflocke"
             },
             {
-              "bild": "icon:cube",
+              "bild": "motiv:eiswuerfel",
               "titel": "der Eiswürfel"
             },
             {
@@ -11465,7 +11807,7 @@
             },
             {
               "art": "sprache",
-              "titel": "Kalt oder warm?",
+              "titel": "Der Kalt-warm-Korb",
               "dauer": "10 Min.",
               "text": "In einem Korb liegen Dinge: ein Eiswürfel im Beutel, ein kalter Löffel, ein Wollhandschuh, eine lauwarme Wärmflasche. Ein Kind zieht etwas, beschreibt es und legt es auf das blaue (kalt) oder das rote Tuch (warm).",
               "material": "Korb, Dinge, blaues und rotes Tuch"
@@ -11504,7 +11846,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Montag: Die Kinder stimmen mit Steinen ab, welcher Schatz eingefroren wird: Tierfigur, Plastikente oder Holzauto.",
+            "text": "Montag: Die Kinder stimmen mit Bausteinen ab, welcher Schatz eingefroren wird: Tierfigur, Plastikente oder Holzauto.",
             "frage": "Wie kommt der Schatz aus dem Eis?"
           },
           "stufen": {
@@ -11541,11 +11883,11 @@
             ],
             "schritte": [
               "Den Eisblock aufs Tablett stürzen. Alle fühlen und schauen: Wo ist der Schatz?",
-              "Vermuten: Wird der Schatz mit oder ohne Salz schneller frei? Steine in zwei Becher legen.",
+              "Vermuten: Wird der Schatz mit oder ohne Salz schneller frei? Bausteine in zwei Becher legen.",
               "Auf eine Seite Salz streuen, die andere bleibt ohne. Farbwasser auf die Salzseite tropfen: Rillen werden sichtbar.",
               "Weiter streuen und tropfen, bis der Schatz frei ist. Beide Seiten vergleichen."
             ],
-            "vermutung": "Steine in zwei Becher: „mit Salz schneller frei“ oder „ohne Salz schneller“. Viele denken: „Salz macht das Eis noch kälter.“",
+            "vermutung": "Bausteine in zwei Becher: „mit Salz schneller frei“ oder „ohne Salz schneller“. Viele denken: „Salz macht das Eis noch kälter.“",
             "beobachten": "Wo Salz liegt, bekommt das Eis Rillen und Löcher, das Farbwasser zeigt sie. Die Seite ohne Salz bleibt glatt.",
             "warumKind": "Salz macht, dass Eis schon bei Kälte schmilzt. Darum wird im Winter Salz auf die Straße gestreut.",
             "hintergrund": "Salz löst sich im dünnen Wasserfilm auf dem Eis. Salzwasser gefriert erst unter 0 °C (Gefrierpunktserniedrigung), deshalb schmilzt es weiteres Eis, auch wenn es kalt bleibt. Dabei wird dem Eis Wärme entzogen: Die Mischung wird sogar kälter. Bei sehr starkem Frost wirkt Salz kaum. Es belastet außerdem Pflanzen und Boden, darum spart man es.",
@@ -11610,7 +11952,7 @@
               "titel": "le flocon"
             },
             {
-              "bild": "icon:cube",
+              "bild": "motiv:eiswuerfel",
               "titel": "le glaçon"
             },
             {
@@ -11690,35 +12032,35 @@
             {
               "art": "sinne",
               "titel": "Toucher la neige et la glace",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un bol de neige ou de glaçons passe de main en main. Les enfants touchent d’abord du doigt, puis avec un gant : froid, mouillé, dur. À la loupe, regarder des flocons sur un tissu sombre. Ensuite, se frotter les mains.",
               "material": "neige ou glaçons, bol, loupes, tissu sombre"
             },
             {
               "art": "kreis",
               "titel": "On libère le trésor de glace",
-              "dauer": "30 Min.",
+              "dauer": "30 min",
               "text": "L’expérience de la semaine : lundi, les enfants choisissent le trésor à congeler. Mardi, ils saupoudrent un côté du bloc de sel, font couler de l’eau colorée dessus et regardent où le trésor sort d’abord.",
               "material": "bloc de glace avec trésor, sel, pipettes, eau colorée"
             },
             {
               "art": "gestalten",
               "titel": "Tableaux de glace",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Dans de petits moules, les enfants posent feuilles et brins de laine, puis versent de l’eau colorée ; une ficelle trempe dedans. Laisser geler une nuit dehors ou au congélateur, puis suspendre à une branche.",
               "material": "moules, eau, colorant alimentaire, feuilles, laine, ficelle"
             },
             {
               "art": "bewegung",
               "titel": "Statues de glace",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "En musique, les enfants dansent comme des gouttes d’eau. Quand la musique s’arrête, l’enseignante dit « gel » : tous se figent en statue de glace. Au mot « soleil », ils fondent lentement jusqu’au sol. Ensuite, un enfant peut appeler.",
               "material": "musique"
             },
             {
               "art": "sprache",
-              "titel": "Froid ou chaud ?",
-              "dauer": "10 Min.",
+              "titel": "Le panier froid-chaud",
+              "dauer": "10 min",
               "text": "Dans un panier : un glaçon dans un sachet, une cuillère froide, un gant de laine, une bouillotte tiède. Un enfant tire un objet, le décrit et le pose sur le tissu bleu (froid) ou sur le tissu rouge (chaud).",
               "material": "panier, objets, tissu bleu et tissu rouge"
             }
@@ -11756,7 +12098,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Lundi : les enfants votent avec des cailloux quel trésor sera congelé : petit animal, canard en plastique ou voiture en bois.",
+            "text": "Lundi : les enfants votent avec des cubes quel trésor sera congelé : petit animal, canard en plastique ou voiture en bois.",
             "frage": "Comment sortir le trésor de la glace ?"
           },
           "stufen": {
@@ -11793,11 +12135,11 @@
             ],
             "schritte": [
               "Démouler le bloc sur le plateau. Tous touchent et regardent : où est le trésor ?",
-              "Deviner : le trésor sort-il plus vite avec ou sans sel ? Poser des cailloux dans deux gobelets.",
+              "Deviner : le trésor sort-il plus vite avec ou sans sel ? Poser des cubes dans deux gobelets.",
               "Saupoudrer un côté de sel, l’autre reste sans. Faire couler de l’eau colorée sur le sel : des sillons apparaissent.",
               "Continuer jusqu’à libérer le trésor. Comparer les deux côtés."
             ],
-            "vermutung": "Des cailloux dans deux gobelets : « plus vite avec du sel » ou « plus vite sans sel ». Beaucoup pensent : « Le sel rend la glace encore plus froide. »",
+            "vermutung": "Des cubes dans deux gobelets : « plus vite avec du sel » ou « plus vite sans sel ». Beaucoup pensent : « Le sel rend la glace encore plus froide. »",
             "beobachten": "Là où il y a du sel, la glace se creuse de sillons et de trous, l’eau colorée les montre. Le côté sans sel reste lisse.",
             "warumKind": "Le sel fait fondre la glace même quand il fait froid. C’est pour ça qu’on sale les routes en hiver.",
             "hintergrund": "Le sel se dissout dans le fin film d’eau sur la glace. L’eau salée ne gèle qu’en dessous de 0 °C (abaissement du point de congélation) : elle fait donc fondre encore de la glace, même par temps froid. La glace perd de la chaleur : le mélange devient même plus froid. Par grand gel, le sel agit à peine. Il abîme aussi plantes et sol : on l’économise.",
@@ -11910,13 +12252,13 @@
             "fr": "la laine",
             "lb": "d’Woll",
             "pt": "a lã",
-            "bild": null
+            "bild": "motiv:schal"
           }
         ],
         "satz": {
           "de": "Ich ziehe mich warm an.",
           "fr": "Je m’habille chaudement.",
-          "lb": "Ech zéien mech waarm un.",
+          "lb": "Ech zéie mech waarm un.",
           "pt": "Eu visto-me com roupa quente."
         },
         "geprueft": false
@@ -12128,7 +12470,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Die Kinder stimmen mit Steinen ab, welches Anzieh-Foto an die Garderobe kommt: erst der Pulli oder erst die Jacke?",
+            "text": "Mittwoch: Die Kinder stimmen mit Bausteinen ab, welches Anzieh-Foto an die Garderobe kommt: erst der Pulli oder erst die Jacke?",
             "frage": "Warum wärmt Wolle?"
           },
           "stufen": {
@@ -12151,7 +12493,8 @@
             "planB": "Starker Regen oder Sturm: Anziehen üben und nur kurz in den überdachten Eingang gehen.",
             "sicherheit": [
               "standard:draussen",
-              "Schlauchschal statt langem Schal; keine Kordeln an Kapuzen."
+              "Schlauchschal statt langem Schal; keine Kordeln an Kapuzen.",
+              "standard:fotos"
             ]
           },
           "experiment": {
@@ -12310,35 +12653,35 @@
             {
               "art": "kreis",
               "titel": "Le panier à vêtements",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Le panier contient bonnet, écharpe, gants, veste et bottes. Un enfant sort un vêtement, le nomme et montre où il va : tête, cou, mains, pieds. Qui veut l’enfile un instant.",
               "material": "panier de vêtements d’hiver"
             },
             {
               "art": "sinne",
               "titel": "La laine devient feutre",
-              "dauer": "35 Min.",
+              "dauer": "35 min",
               "text": "L’expérience de la semaine : les enfants effilochent la laine, la mouillent d’eau savonneuse et la roulent dans la natte jusqu’à obtenir un morceau solide. Puis ils sentent : pourquoi la laine réchauffe-t-elle ?",
               "material": "laine à feutrer, bol, eau savonneuse, natte, serviettes"
             },
             {
               "art": "spiel",
               "titel": "La chaîne de l’habillage",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Les cartes sont mélangées au milieu. Ensemble, les enfants posent l’ordre : qu’est-ce qui vient d’abord, qu’est-ce qui vient à la fin ? Puis on habille une poupée selon cette chaîne. Les erreurs sont permises : la poupée dit quand ça ne va pas.",
               "material": "cartes-images, poupée, vêtements de poupée"
             },
             {
               "art": "theater",
               "titel": "La poupée qui a froid",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Une marionnette arrive en grelottant dans le cercle : elle ne porte qu’un t-shirt. Les enfants cherchent ce qui lui manque et lui tendent les vêtements dans le bon ordre. Bien emmitouflée, elle remercie tout le monde.",
               "material": "marionnette, vêtements de poupée"
             },
             {
               "art": "draussen",
               "titel": "Dehors dans le froid",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Chacun s’habille seul ; ceux qui ont fini aident les autres. Dehors, les enfants sentent : où ai-je chaud, où ai-je froid ? Au retour, chaque enfant suspend ses affaires à son crochet.",
               "material": "vêtements d’hiver"
             }
@@ -12376,7 +12719,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : les enfants votent avec des cailloux quelle photo d’habillage ira au portemanteau : d’abord le pull ou d’abord la veste ?",
+            "text": "Mercredi : les enfants votent avec des cubes quelle photo d’habillage ira au portemanteau : d’abord le pull ou d’abord la veste ?",
             "frage": "Pourquoi la laine réchauffe-t-elle ?"
           },
           "stufen": {
@@ -12396,10 +12739,11 @@
             "ausflug": false,
             "besuch": false,
             "material": "besorgen",
-            "planB": "Forte pluie ou tempête : s’exercer à s’habiller et sortir un instant sous l’entrée couverte.",
+            "planB": "Forte pluie ou tempête : s’habiller et sortir un instant sous l’entrée couverte.",
             "sicherheit": [
               "standard:draussen",
-              "Tour de cou plutôt qu’écharpe longue ; pas de cordons aux capuches."
+              "Tour de cou plutôt qu’écharpe ; pas de cordons.",
+              "standard:fotos"
             ]
           },
           "experiment": {
@@ -12772,7 +13116,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Dienstag: Die Kinder stimmen mit Steinen ab: Soll Kleeschen zu Besuch kommen – oder nur Spuren und einen Brief hinterlassen?",
+            "text": "Dienstag: Die Kinder stimmen mit Bausteinen ab: Soll Kleeschen zu Besuch kommen – oder nur Spuren und einen Brief hinterlassen?",
             "frage": "Was möchten wir Kleeschen fragen?"
           },
           "stufen": {
@@ -12803,7 +13147,10 @@
             "titel": "Kleeschens Mandarine mit Schwimmweste",
             "frage": "Was passiert, wenn wir eine Mandarine mit und eine ohne Schale ins Wasser legen?",
             "material": [
-              "zwei Mandarinen",
+              {
+                "text": "zwei Mandarinen",
+                "bild": "motiv:mandarine"
+              },
               "große Schüssel mit Wasser",
               "Teller zum Teilen"
             ],
@@ -12987,42 +13334,42 @@
             {
               "art": "kreis",
               "titel": "Qui est Saint-Nicolas ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Montrer un album ou des photos : Saint-Nicolas porte un long manteau, une mitre et une crosse, son âne l’aide. L’enseignante explique avec bienveillance : le 6 décembre, il apporte de petits cadeaux. Qui se réjouit, qui est excité ? Toutes les émotions sont permises.",
               "material": "album ou photos"
             },
             {
               "art": "zaehlen",
               "titel": "Le calendrier d’attente",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Sur une ficelle, autant de pinces à linge que de jours jusqu’au 6 décembre. Chaque matin, un enfant enlève une pince et tous comptent celles qui restent : encore quatre jours, encore trois … L’attente devient visible.",
               "material": "ficelle, pinces à linge"
             },
             {
               "art": "kochen",
               "titel": "Des Boxemännchen",
-              "dauer": "40 Min.",
+              "dauer": "40 min",
               "text": "Avec une pâte levée simple, les enfants façonnent de petits bonshommes : une boule pour la tête, un boudin pour le corps, des bras et des jambes. Des raisins secs font les yeux et les boutons. Les adultes font cuire, puis on partage. En pâte à sel : ne pas manger.",
               "material": "pâte levée, raisins secs, plaque, four (adultes seulement)"
             },
             {
               "art": "sinne",
               "titel": "La mandarine et son gilet",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "L’expérience de la semaine : une mandarine avec et une sans peau vont dans l’eau. Les enfants devinent, épluchent la deuxième eux-mêmes et voient : la peau flotte comme un gilet. À la fin, on partage.",
               "material": "deux mandarines, saladier d’eau, assiette"
             },
             {
               "art": "gestalten",
               "titel": "Décorer les bottes",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Chaque enfant apporte une botte ou un chausson, ou décore une assiette en carton avec son prénom et des motifs. Qui veut ajoute une carotte pour l’âne. La veille de la fête, tout est aligné devant la porte.",
               "material": "bottes, chaussons ou assiettes en carton, feutres, gommettes"
             },
             {
               "art": "musik",
               "titel": "La cloche sonne",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un enfant fait sonner doucement une cloche ; les autres ferment les yeux et montrent d’où vient le son. Puis tout le monde dit la comptine ; à « ding, dong », l’enfant suivant fait sonner la cloche.",
               "material": "petite cloche"
             }
@@ -13060,7 +13407,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mardi : les enfants votent avec des cailloux : Saint-Nicolas vient-il en visite ou laisse-t-il seulement des traces et une lettre ?",
+            "text": "Mardi : les enfants votent avec des cubes : Saint-Nicolas vient-il en visite ou laisse-t-il seulement des traces et une lettre ?",
             "frage": "Que voulons-nous demander à Saint-Nicolas ?"
           },
           "stufen": {
@@ -13091,7 +13438,10 @@
             "titel": "La mandarine de Saint-Nicolas et son gilet",
             "frage": "Que se passe-t-il si on met une mandarine avec peau et une sans peau dans l’eau ?",
             "material": [
-              "deux mandarines",
+              {
+                "text": "deux mandarines",
+                "bild": "motiv:mandarine"
+              },
               "grand saladier d’eau",
               "assiette pour partager"
             ],

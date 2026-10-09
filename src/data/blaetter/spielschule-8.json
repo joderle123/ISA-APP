@@ -74,7 +74,7 @@
           {
             "de": "der Stift",
             "fr": "le crayon",
-            "lb": "de Bläistëft",
+            "lb": "de Stëft",
             "pt": "o lápis"
           }
         ],
@@ -219,7 +219,7 @@
           "Flaschen vorher testen, fast randvoll füllen und mit den Bildern vom Forscherblatt bekleben.",
           "Worte der Kinder wörtlich ins Buch schreiben: ein Beleg fürs Portfolio."
         ],
-        "material": "3 gleiche kleine PET-Flaschen, Wasser, Öl, Spülmittel, 3 Glasmurmeln, Klebeband, Steine, Becher, Schachtel, Küchenpapier, Lappen",
+        "material": "3 gleiche kleine PET-Flaschen, Wasser, Öl, Spülmittel, 3 Glasmurmeln, Klebeband, Bausteine, Becher, Schachtel, Küchenpapier, Lappen",
         "hintergrund": "Drei- bis Sechsjährige stellen von sich aus Fragen und bilden Vermutungen. Begleitet lernen sie die Schritte des Forschens: fragen, vermuten, fair testen (nur eine Sache ändern), genau hinsehen, festhalten. Das Forscherbuch macht die Schritte sichtbar und ist ein Beleg fürs Portfolio. Entscheidend ist das gemeinsame Nachdenken: nachfragen, Begründungen hören, vergleichen – ohne die Antwort vorwegzunehmen (Sylva et al., 2004). Eine Vermutung, die nicht stimmt, ist kein Fehler, sondern der Anfang einer neuen Frage.",
         "quellen": [
           "Sylva, K., Melhuish, E., Sammons, P., Siraj-Blatchford, I. & Taggart, B. (2004). The Effective Provision of Pre-School Education (EPPE) Project: Final Report. London: DfES / Institute of Education.",
@@ -261,10 +261,10 @@
             },
             {
               "art": "zaehlen",
-              "titel": "Steine zählen",
+              "titel": "Bausteine zählen",
               "dauer": "10 Min.",
-              "text": "Vor jedem Test legt jedes Kind seinen Stein in einen Becher: Wasser, Öl oder Spülmittel. Wo liegen die meisten? Danach vergleichen wir mit dem Ergebnis – jede Vermutung war wichtig.",
-              "material": "Steine, 3 Becher mit Bild"
+              "text": "Vor jedem Test legt jedes Kind seinen Baustein in einen Becher: Wasser, Öl oder Spülmittel. Wo liegen die meisten? Danach vergleichen wir mit dem Ergebnis – jede Vermutung war wichtig.",
+              "material": "Bausteine, 3 Becher mit Bild"
             },
             {
               "art": "sinne",
@@ -303,7 +303,7 @@
           "eltern": "Probieren Sie eine „Was passiert, wenn …?“-Frage Ihres Kindes zusammen aus: Schwimmt der Korken? Fragen Sie zuerst: Was glaubst du?",
           "beobachtung": [
             {
-              "text": "Ich zeige meine Vermutung mit einem Stein, bevor wir testen.",
+              "text": "Ich zeige meine Vermutung mit einem Baustein, bevor wir testen.",
               "eldib": "KOG-58"
             },
             {
@@ -321,7 +321,7 @@
           },
           "stufen": {
             "precoce": "Zwei Flaschen vergleichen, mit dem Daumen vermuten, das Ergebnis zeigen.",
-            "p1": "Drei Flaschen, Stein legen, erster – zweiter – dritter sagen, zwei Seiten malen.",
+            "p1": "Drei Flaschen, Baustein legen, erster – zweiter – dritter sagen, zwei Seiten malen.",
             "p2": "Erklären, was beim fairen Test gleich bleibt; eigene Frage vorschlagen."
           },
           "zugang": [
@@ -357,14 +357,14 @@
               },
               "Breites Klebeband für die Deckel",
               {
-                "text": "Steine und 3 Becher zum Vermuten",
+                "text": "Bausteine und 3 Becher zum Vermuten",
                 "bild": "motiv:becher"
               },
               "Forscherbuch und Stifte"
             ],
             "schritte": [
               "Die Kinder schauen die Flaschen an: Was ist gleich, was ist anders? Gleiche Flasche, gleiche Murmel – nur die Flüssigkeit ist anders.",
-              "Vermuten: Jedes Kind legt seinen Stein vor die Flasche, die gewinnt. Gemeinsam die Steine zählen.",
+              "Vermuten: Jedes Kind legt seinen Baustein vor die Flasche, die gewinnt. Gemeinsam die Bausteine zählen.",
               {
                 "text": "„Drei, zwei, eins – los!“ Drei Kinder drehen die Flaschen gleichzeitig um, alle anderen schauen genau hin.",
                 "bild": "icon:hand-grab"
@@ -375,7 +375,7 @@
               },
               "Das Ergebnis ins Forscherbuch malen: erster, zweiter, dritter. Erwachsene schreiben die Worte der Kinder dazu."
             ],
-            "vermutung": "Vor dem Umdrehen legt jedes Kind seinen Stein vor eine Flasche. Oft hört man: „Im Öl rutscht sie schneller, das ist so glatt.“",
+            "vermutung": "Vor dem Umdrehen legt jedes Kind seinen Baustein vor eine Flasche. Oft hört man: „Im Öl rutscht sie schneller, das ist so glatt.“",
             "beobachten": "Im Wasser fällt die Murmel blitzschnell, im Öl langsamer, im Spülmittel schleicht sie. Fragen: Woran siehst du, wer gewinnt? Was macht die Luftblase?",
             "warumKind": "Wasser ist dünn, da saust die Murmel durch. Öl und Spülmittel sind dick wie Honig: Sie halten die Murmel fest und lassen sie nur langsam durch.",
             "hintergrund": "Flüssigkeiten fließen unterschiedlich leicht. Diese Zähflüssigkeit (Viskosität) beschreibt den inneren Widerstand gegen das Fließen: Eine Murmel, die durch eine zähe Flüssigkeit sinkt, wird stärker gebremst. Spülmittel ist meist deutlich zäher als Speiseöl, Öl zäher als Wasser; kalt werden Öle noch zäher. Der Test ist fair, weil nur eine Bedingung verändert wird – die Flüssigkeit –, während Flasche, Murmel, Füllmenge und Start gleich bleiben.",
@@ -525,7 +525,7 @@
           "Tester les bouteilles avant, les remplir presque à ras bord, coller les images de la fiche.",
           "Noter les mots des enfants tels quels : une trace pour le portfolio."
         ],
-        "material": "3 petites bouteilles PET identiques, eau, huile, liquide vaisselle, 3 billes en verre, ruban adhésif, cailloux, gobelets, boîte, essuie-tout, chiffon",
+        "material": "3 petites bouteilles PET identiques, eau, huile, liquide vaisselle, 3 billes en verre, ruban adhésif, cubes, gobelets, boîte, essuie-tout, chiffon",
         "hintergrund": "Entre trois et six ans, les enfants posent spontanément des questions et font des hypothèses. Accompagnés, ils apprennent les étapes de la recherche : questionner, supposer, tester de façon juste (ne changer qu’une chose), bien observer, garder une trace. Le cahier rend ces étapes visibles et sert de trace pour le portfolio. L’essentiel est de réfléchir ensemble : relancer, écouter les raisons, comparer – sans donner la réponse (Sylva et al., 2004). Une hypothèse fausse n’est pas une erreur, mais le début d’une nouvelle question.",
         "quellen": [
           "Sylva, K., Melhuish, E., Sammons, P., Siraj-Blatchford, I. & Taggart, B. (2004). The Effective Provision of Pre-School Education (EPPE) Project: Final Report. London: DfES / Institute of Education.",
@@ -548,41 +548,41 @@
             {
               "art": "kreis",
               "titel": "La boîte à questions",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Chaque enfant glisse une question dans la boîte : « Et si… ? » L’enseignante l’écrit et fait un petit dessin. Chaque matin, on en tire une : peut-on la tester ? Alors elle va sur l’affiche.",
               "material": "boîte, papiers, affiche"
             },
             {
               "art": "bewegung",
               "titel": "La course injuste",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Deux enfants font la course – l’un part plus près ou porte un sac à dos plein de cubes. Tous crient : « Pas juste ! » Que faut-il de pareil ? Même départ, même chemin, même signal.",
               "material": "ruban adhésif, sac à dos, cubes"
             },
             {
               "art": "sprache",
               "titel": "Les gestes du chercheur",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Chaque étape a son geste : se demander (main au menton), supposer (doigt sur le front), tester (se frotter les mains), voir (mains en jumelles), savoir (pouce levé). Puis un enfant montre, les autres disent le mot."
             },
             {
               "art": "zaehlen",
-              "titel": "On compte les cailloux",
-              "dauer": "10 Min.",
-              "text": "Avant chaque test, chaque enfant pose son caillou dans un gobelet : eau, huile ou liquide vaisselle. Où y en a-t-il le plus ? Ensuite on compare avec le résultat – chaque hypothèse comptait.",
-              "material": "cailloux, 3 gobelets avec image"
+              "titel": "On compte les cubes",
+              "dauer": "10 min",
+              "text": "Avant chaque test, chaque enfant pose son cube dans un gobelet : eau, huile ou liquide vaisselle. Où y en a-t-il le plus ? Ensuite on compare avec le résultat – chaque hypothèse comptait.",
+              "material": "cubes, 3 gobelets avec image"
             },
             {
               "art": "sinne",
               "titel": "Essuie-tout ou chiffon ?",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "L’essuie-tout boit-il plus que le chiffon ? Morceaux de même taille, même quantité d’eau. Supposer, tremper en même temps, essorer au-dessus de gobelets vides, comparer ; un trait garde la trace.",
               "material": "essuie-tout, chiffon, 4 gobelets"
             },
             {
               "art": "gestalten",
               "titel": "Mon cahier de recherche",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Découper la page 2 et la plier ensemble. Pour chaque étape, l’enfant dessine, l’adulte écrit ses mots. Vendredi, le cahier part à la maison.",
               "material": "page 2, ciseaux, crayons"
             }
@@ -609,7 +609,7 @@
           "eltern": "Essayez ensemble une question « Et si… ? » de votre enfant : le bouchon flotte-t-il ? Demandez d’abord : qu’est-ce que tu crois ?",
           "beobachtung": [
             {
-              "text": "Je montre mon hypothèse avec un caillou avant le test.",
+              "text": "Je montre mon hypothèse avec un cube avant le test.",
               "eldib": "KOG-58"
             },
             {
@@ -627,7 +627,7 @@
           },
           "stufen": {
             "precoce": "Comparer deux bouteilles, supposer avec le pouce, montrer le résultat.",
-            "p1": "Trois bouteilles, poser son caillou, dire premier – deuxième – troisième.",
+            "p1": "Trois bouteilles, poser son cube, dire premier – deuxième – troisième.",
             "p2": "Expliquer ce qui reste pareil dans un test juste ; proposer sa question."
           },
           "zugang": [
@@ -663,14 +663,14 @@
               },
               "Ruban adhésif large pour les bouchons",
               {
-                "text": "Cailloux et 3 gobelets pour les hypothèses",
+                "text": "Cubes et 3 gobelets pour les hypothèses",
                 "bild": "motiv:becher"
               },
               "Cahier de recherche et crayons"
             ],
             "schritte": [
               "Les enfants regardent les bouteilles : qu’est-ce qui est pareil, qu’est-ce qui change ? Même bouteille, même bille – seul le liquide change.",
-              "Supposer : chaque enfant pose son caillou devant la bouteille gagnante. On compte les cailloux ensemble.",
+              "Supposer : chaque enfant pose son cube devant la bouteille gagnante. On compte les cubes ensemble.",
               {
                 "text": "« Trois, deux, un, partez ! » Trois enfants retournent les bouteilles en même temps, les autres regardent bien.",
                 "bild": "icon:hand-grab"
@@ -681,7 +681,7 @@
               },
               "Dessiner le résultat dans le cahier : premier, deuxième, troisième. L’adulte écrit les mots des enfants."
             ],
-            "vermutung": "Avant de retourner, chaque enfant pose son caillou devant une bouteille. On entend souvent : « Dans l’huile, elle glisse plus vite, c’est tout lisse. »",
+            "vermutung": "Avant de retourner, chaque enfant pose son cube devant une bouteille. On entend souvent : « Dans l’huile, elle glisse plus vite, c’est tout lisse. »",
             "beobachten": "Dans l’eau, la bille tombe en un éclair ; dans l’huile, plus lentement ; dans le liquide vaisselle, elle se traîne. Demander : à quoi vois-tu qui gagne ? Et la bulle d’air ?",
             "warumKind": "L’eau est fluide, la bille file. L’huile et le liquide vaisselle sont épais comme du miel : ils retiennent la bille et la laissent passer lentement.",
             "hintergrund": "Les liquides ne coulent pas tous aussi facilement. La viscosité décrit leur résistance interne à l’écoulement : une bille qui descend dans un liquide épais est davantage freinée. Le liquide vaisselle est souvent bien plus visqueux que l’huile, l’huile plus que l’eau ; au froid, les huiles deviennent encore plus épaisses. Le test est juste parce qu’on ne change qu’une condition – le liquide – tandis que bouteille, bille, remplissage et départ restent identiques.",
@@ -690,7 +690,7 @@
               "Seuls les adultes remplissent et scotchent les bouteilles ; les enfants ne les ouvrent jamais."
             ],
             "weiter": "Le lendemain : mettre les bouteilles une nuit au frigo et refaire la course. L’huile froide est-elle plus lente ? Ou ajouter une quatrième bouteille avec du shampooing.",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "kraefte"
             ],
@@ -861,8 +861,8 @@
               "titel": "die Feder"
             },
             {
-              "bild": "icon:leaf",
-              "titel": "das Blatt"
+              "bild": "motiv:kompass",
+              "titel": "der Kompass"
             },
             {
               "bild": "icon:file-text",
@@ -1073,7 +1073,10 @@
             "titel": "Wirkt der Magnet durch Papier und Wasser?",
             "frage": "Was passiert, wenn Papier, Pappe, ein Buch oder Wasser zwischen Magnet und Klammer sind?",
             "material": [
-              "1 großer Hufeisen- oder Stabmagnet",
+              {
+                "text": "1 großer Hufeisen- oder Stabmagnet",
+                "bild": "motiv:magnet"
+              },
               {
                 "text": "5 große Büroklammern",
                 "bild": "icon:paperclip"
@@ -1170,8 +1173,8 @@
               "titel": "la plume"
             },
             {
-              "bild": "icon:leaf",
-              "titel": "la feuille"
+              "bild": "motiv:kompass",
+              "titel": "la boussole"
             },
             {
               "bild": "icon:file-text",
@@ -1278,42 +1281,42 @@
             {
               "art": "kreis",
               "titel": "La valise du détective",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Dans la valise : un grand aimant, une loupe et un sac d’objets. Un enfant tire un objet, tous supposent avec le pouce, puis on teste : cerceau « ça tient » ou « ça ne tient pas ». Surprise : tout le métal ne tient pas.",
               "material": "caisse, aimant, loupe, sac, 2 cerceaux"
             },
             {
               "art": "spiel",
               "titel": "La tournée des détectives",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "À deux, les enfants cherchent avec un aimant et des gommettes : tient-il sur la porte, le radiateur, le pied de chaise, le tableau ? Chaque réussite reçoit une gommette. À la fin, chaque paire montre ses trouvailles.",
               "material": "grands aimants, gommettes"
             },
             {
               "art": "bewegung",
               "titel": "Aimant et fer",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un enfant est l’aimant, les autres portent une carte : trombone ou plume. Quand l’aimant crie « Fer ! », les trombones courent lui tenir les mains ; les plumes ne bougent pas. Puis on change de rôle.",
               "material": "cartes-images sur un cordon"
             },
             {
               "art": "draussen",
               "titel": "La barbe de fer",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Glisser l’aimant dans un sachet de congélation et le tirer dans le sable. Souvent, de petits grains noirs s’y accrochent : une barbe de grains de fer. Au-dessus d’une feuille blanche, retirer l’aimant et observer les grains à la loupe.",
               "material": "aimant, sachet, papier, loupe"
             },
             {
               "art": "zaehlen",
               "titel": "La chaîne de trombones",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un enfant accroche des trombones en chaîne sous l’aimant, tous comptent à voix haute. À combien tombe-t-elle ? Puis le deuxième aimant : lequel en porte le plus ? Une rangée de trombones garde le nombre.",
               "material": "2 aimants, trombones"
             },
             {
               "art": "gestalten",
               "titel": "Le labyrinthe magnétique",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Coller le labyrinthe de la page 2 sur un carton. Un trombone au départ, l’aimant glisse sous le carton – le trombone avance dans les couloirs. Qui y arrive sans toucher un mur ?",
               "material": "page 2, carton, colle, aimant"
             }
@@ -1382,7 +1385,10 @@
             "titel": "L’aimant agit-il à travers le papier et l’eau ?",
             "frage": "Et si du papier, un carton, un livre ou de l’eau séparent l’aimant du trombone ?",
             "material": [
-              "1 grand aimant en U ou aimant droit",
+              {
+                "text": "1 grand aimant en U ou aimant droit",
+                "bild": "motiv:magnet"
+              },
               {
                 "text": "5 gros trombones",
                 "bild": "icon:paperclip"
@@ -1415,7 +1421,7 @@
               "Uniquement de grands aimants : les mini-aimants au néodyme et les billes aimantées sont mortels pour les enfants."
             ],
             "weiter": "Fabriquer un labyrinthe magnétique : coller la page 2 sur un carton, poser un trombone au départ et le guider avec l’aimant par-dessous dans les couloirs.",
-            "dauer": "25 Min.",
+            "dauer": "25 min",
             "phaenomene": [
               "magnet"
             ],
@@ -1588,8 +1594,8 @@
               "titel": "der Löffel"
             },
             {
-              "bild": "motiv:schluessel",
-              "titel": "der Schlüssel"
+              "bild": "motiv:fallschirm",
+              "titel": "der Fallschirm"
             },
             {
               "bild": "motiv:kastanie",
@@ -1770,7 +1776,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Mit Steinen wählen die Kinder, was die Klasse am Freitag baut: Fallschirme, Papierflieger oder Fächer. Gebaut wird, was die meisten Steine hat.",
+            "text": "Mittwoch: Mit Bausteinen wählen die Kinder, was die Klasse am Freitag baut: Fallschirme, Papierflieger oder Fächer. Gebaut wird, was die meisten Bausteine hat.",
             "frage": "Was wollen wir über die Luft wissen?"
           },
           "stufen": {
@@ -1809,7 +1815,7 @@
               "1 große durchsichtige Wanne mit Wasser",
               "1 Handtuch für den Tisch",
               {
-                "text": "Steine und 2 Becher zum Vermuten",
+                "text": "Bausteine und 2 Becher zum Vermuten",
                 "bild": "motiv:becher"
               }
             ],
@@ -1818,7 +1824,7 @@
                 "text": "Die Kinder fühlen das Taschentuch: trocken. Dann stopfen sie es fest unten ins Glas, damit es nicht herausfällt.",
                 "bild": "icon:hand-grab"
               },
-              "Vermuten: Wird das Tuch nass? Jedes Kind legt seinen Stein in den Becher „nass“ oder „trocken“.",
+              "Vermuten: Wird das Tuch nass? Jedes Kind legt seinen Baustein in den Becher „nass“ oder „trocken“.",
               {
                 "text": "Ein Kind drückt das Glas mit der Öffnung nach unten gerade ins Wasser, bis ganz unten – nicht kippen.",
                 "bild": "icon:droplet"
@@ -1829,7 +1835,7 @@
                 "bild": "motiv:auge"
               }
             ],
-            "vermutung": "Steine in zwei Becher: „Das Tuch wird nass“ oder „Es bleibt trocken“. Die meisten Kinder sind sicher: „Im Wasser wird alles nass.“",
+            "vermutung": "Bausteine in zwei Becher: „Das Tuch wird nass“ oder „Es bleibt trocken“. Die meisten Kinder sind sicher: „Im Wasser wird alles nass.“",
             "beobachten": "Das Tuch bleibt trocken. Genau hinschauen: Steigt das Wasser ein kleines Stück ins Glas? Beim Kippen blubbert eine große Blase heraus, und Wasser strömt hinein.",
             "warumKind": "Das Glas ist gar nicht leer, es ist voll Luft. Die Luft braucht Platz und kann nicht raus – so kommt das Wasser nicht hinein. Erst wenn die Luft rausblubbert, kommt Wasser.",
             "hintergrund": "Luft ist ein Stoff: Sie nimmt Raum ein und hat eine Masse, auch wenn man sie nicht sieht. Im umgedrehten Glas kann sie nicht entweichen, weil sie leichter ist als Wasser und nach oben drückt. Sie hält das Wasser fern und wird dabei nur wenig zusammengedrückt – deshalb steigt das Wasser ein kleines Stück ins Glas. Kippt man das Glas, entweicht die Luft als Blase, und Wasser nimmt ihren Platz ein. Nach diesem Prinzip arbeiten Taucherglocken.",
@@ -1895,8 +1901,8 @@
               "titel": "la cuillère"
             },
             {
-              "bild": "motiv:schluessel",
-              "titel": "la clé"
+              "bild": "motiv:fallschirm",
+              "titel": "le parachute"
             },
             {
               "bild": "motiv:kastanie",
@@ -2004,42 +2010,42 @@
             {
               "art": "kreis",
               "titel": "La bouteille vide",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Une bouteille « vide » passe de main en main : y a-t-il quelque chose dedans ? Un enfant l’enfonce dans le bac et la penche : bloup, des bulles montent. Qu’y avait-il dedans ? De l’air ! Chacun peut faire des bulles.",
               "material": "bouteille, bac d’eau, serviette"
             },
             {
               "art": "bewegung",
               "titel": "Le champignon d’air",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Tout le monde tient le parachute. À « trois », on le lève et on fait un pas en avant : il se gonfle en champignon, l’air le tient en haut. L’enfant appelé passe dessous en courant.",
               "material": "parachute de jeu"
             },
             {
               "art": "sinne",
               "titel": "Sentir l’air",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Avec un papier plié, les enfants s’éventent le visage, soufflent sur leur main, courent avec un grand carton devant le ventre : l’air pousse contre. Où le sens-tu ? Chaud ou frais ?",
               "material": "papier, grands cartons"
             },
             {
               "art": "zaehlen",
               "titel": "La piste d’atterrissage",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "L’adulte plie des avions en papier simples, les enfants les décorent. Trois cerceaux au sol, chaque enfant lance trois fois. Combien d’avions atterrissent dans un cerceau ? On compte avec des traits au tableau.",
               "material": "papier, cerceaux, craie"
             },
             {
               "art": "gestalten",
               "titel": "Dessins soufflés",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Une goutte de peinture liquide sur le papier, puis souffler avec la paille : l’air pousse la couleur, des branches et des rayons apparaissent. D’abord fort, puis doucement – quelle différence ?",
               "material": "pailles, peinture liquide, papier"
             },
             {
               "art": "draussen",
               "titel": "Le test du parachute",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Avec un tissu, quatre ficelles et une pince à linge, on fait un parachute (l’adulte noue). Un enfant lâche la pince à hauteur de bras : une fois avec, une fois sans parachute. Laquelle arrive le plus lentement ?",
               "material": "tissu, ficelle, pinces à linge"
             }
@@ -2077,7 +2083,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : avec des cailloux, les enfants choisissent ce que la classe fabrique vendredi : parachutes, avions ou éventails. On fait ce qui a le plus de cailloux.",
+            "text": "Mercredi : avec des cubes, les enfants choisissent ce que la classe fabrique vendredi : parachutes, avions ou éventails. On fait ce qui a le plus de cubes.",
             "frage": "Que voulons-nous savoir sur l’air ?"
           },
           "stufen": {
@@ -2116,7 +2122,7 @@
               "1 grand bac transparent rempli d’eau",
               "1 serviette pour la table",
               {
-                "text": "Cailloux et 2 gobelets pour les hypothèses",
+                "text": "Cubes et 2 gobelets pour les hypothèses",
                 "bild": "motiv:becher"
               }
             ],
@@ -2125,7 +2131,7 @@
                 "text": "Les enfants touchent le mouchoir : il est sec. Puis ils le tassent bien au fond du verre pour qu’il ne tombe pas.",
                 "bild": "icon:hand-grab"
               },
-              "Supposer : le mouchoir sera-t-il mouillé ? Chaque enfant pose son caillou dans le gobelet « mouillé » ou « sec ».",
+              "Supposer : le mouchoir sera-t-il mouillé ? Chaque enfant pose son cube dans le gobelet « mouillé » ou « sec ».",
               {
                 "text": "Un enfant enfonce le verre bien droit, ouverture en bas, jusqu’au fond – sans le pencher.",
                 "bild": "icon:droplet"
@@ -2144,7 +2150,7 @@
               "standard:wasser"
             ],
             "weiter": "Sous l’eau, « verser » de l’air : tenir un verre plein d’air incliné sous un deuxième verre rempli d’eau – les bulles passent d’un verre à l’autre.",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "luft"
             ],
@@ -2324,10 +2330,24 @@
         },
         {
           "art": "forscherblatt",
-          "frage": "Trägt das gefaltete Blatt mehr Steine?",
+          "frage": "Welches Blatt trägt mehr Würfel?",
           "bild": "motiv:bruecke",
           "sehen": "vorher-nachher",
-          "name": false
+          "name": false,
+          "vermuten": [
+            {
+              "bild": "icon:file-text",
+              "text": "das flache Blatt"
+            },
+            {
+              "bild": "motiv:bruecke",
+              "text": "das gefaltete"
+            },
+            {
+              "bild": "icon:scale",
+              "text": "beide gleich"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -2395,7 +2415,7 @@
             },
             {
               "art": "sprache",
-              "titel": "Unser Bauplan",
+              "titel": "Unser Brückenplan",
               "dauer": "10 Min.",
               "text": "Vor dem Bauen malt jede Gruppe ihren Plan auf ein großes Blatt. Danach vergleichen: Was war anders als geplant? Satzmuster: „Zuerst …, dann …, zum Schluss …“",
               "material": "großes Papier, Stifte"
@@ -2435,7 +2455,7 @@
           "eltern": "Suchen Sie auf dem Weg Brücken: über einen Bach, über die Straße, für den Zug. Fragen Sie: Woraus ist sie gebaut? Was fährt darüber?",
           "beobachtung": [
             {
-              "text": "Ich zähle, wie viele Steine meine Brücke trägt.",
+              "text": "Ich zähle, wie viele Würfel meine Brücke trägt.",
               "eldib": "KOG-25"
             },
             {
@@ -2448,12 +2468,12 @@
             }
           ],
           "entscheiden": {
-            "text": "Montag: Mit Steinen wählen die Kinder, was am Freitag über alle Brücken fährt: Spielzeugauto, Holzzug oder Kuscheltier.",
+            "text": "Montag: Mit Bausteinen wählen die Kinder, was am Freitag über alle Brücken fährt: Spielzeugauto, Holzzug oder Kuscheltier.",
             "frage": "Was wollen wir über Brücken wissen?"
           },
           "stufen": {
             "precoce": "Mit großen Bausteinen eine Brücke über das Tuch legen, ein Auto hinüberfahren.",
-            "p1": "Papierbrücke flach und gefaltet testen, Steine bis 10 zählen, Bauplan malen.",
+            "p1": "Papierbrücke flach und gefaltet testen, Würfel bis 10 zählen, Bauplan malen.",
             "p2": "Verbesserung planen und begründen; die Lücke messen; Aufgaben verteilen."
           },
           "zugang": [
@@ -2488,26 +2508,26 @@
                 "bild": "icon:cup"
               },
               {
-                "text": "20 kleine Bausteine als Last",
+                "text": "40 Steckwürfel als Last",
                 "bild": "icon:cube"
               },
               "Forscherblatt und Stifte"
             ],
             "schritte": [
               "Ein flaches Blatt über die Lücke legen, den Becher in die Mitte stellen.",
-              "Vermuten: Wie viele Steine trägt das Blatt? Die Kinder zeigen es mit den Fingern.",
+              "Vermuten: Wie viele Würfel trägt das Blatt? Die Kinder zeigen es mit den Fingern.",
               {
-                "text": "Steine einzeln in den Becher legen und laut zählen, bis die Brücke durchhängt.",
+                "text": "Würfel einzeln in den Becher legen und laut zählen, bis die Brücke durchhängt.",
                 "bild": "icon:abacus"
               },
               {
-                "text": "Ein zweites Blatt wie eine Ziehharmonika falten, über die Lücke legen und genauso testen.",
+                "text": "Ein Seite 2 wie eine Ziehharmonika falten, über die Lücke legen und genauso testen.",
                 "bild": "icon:file-text"
               },
               "Ideen der Kinder testen: gerollt, doppelt, Ränder hochgeknickt. Welche Brücke trägt am meisten?"
             ],
-            "vermutung": "Jedes Kind zeigt mit den Fingern, wie viele Steine das flache und das gefaltete Blatt tragen. Oft hört man: „Papier ist Papier – beide gleich.“",
-            "beobachten": "Das flache Blatt knickt sofort ein, die gefaltete Brücke trägt viele Steine. Fragen: Wo biegt sie sich zuerst? Was passiert, wenn die Falten flacher werden?",
+            "vermutung": "Jedes Kind zeigt mit den Fingern, wie viele Würfel das flache und das gefaltete Blatt tragen. Oft hört man: „Papier ist Papier – beide gleich.“",
+            "beobachten": "Das flache Blatt knickt sofort ein, die gefaltete Brücke trägt viele Würfel. Fragen: Wo biegt sie sich zuerst? Was passiert, wenn die Falten flacher werden?",
             "warumKind": "Beim Falten stellt sich das Papier hochkant auf, wie viele kleine Wände. Hochkant ist Papier viel steifer – darum trägt die Falt-Brücke mehr.",
             "hintergrund": "Wie stark sich ein Träger durchbiegt, hängt vor allem von der Höhe seines Querschnitts ab, weniger von der Menge des Materials. Ein flaches Blatt ist sehr dünn und biegt sich sofort; gefaltet steht dasselbe Papier hochkant, der Querschnitt wird viel höher und die Brücke viel steifer. Dieses Prinzip nutzen Wellpappe, Wellblech und die Träger echter Brücken: wenig Material, große Steifigkeit. Für die Kinder zählt die Erfahrung: Eine andere Form macht stark.",
             "sicherheit": [
@@ -2520,7 +2540,7 @@
               "gewicht"
             ],
             "forscherblatt": {
-              "frage": "Trägt das gefaltete Blatt mehr Steine?",
+              "frage": "Trägt das gefaltete Blatt mehr Würfel?",
               "sehen": "vorher-nachher"
             }
           }
@@ -2587,10 +2607,24 @@
         },
         {
           "art": "forscherblatt",
-          "frage": "La feuille pliée porte-t-elle plus de cubes ?",
+          "frage": "Quelle feuille porte le plus de cubes ?",
           "bild": "motiv:bruecke",
           "sehen": "vorher-nachher",
-          "name": false
+          "name": false,
+          "vermuten": [
+            {
+              "bild": "icon:file-text",
+              "text": "la feuille plate"
+            },
+            {
+              "bild": "motiv:bruecke",
+              "text": "la feuille pliée"
+            },
+            {
+              "bild": "icon:scale",
+              "text": "pareil"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -2638,42 +2672,42 @@
             {
               "art": "kreis",
               "titel": "Les ponts du Luxembourg",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Montrer des photos : le pont Adolphe et sa grande arche de pierre, le pont Rouge vers le Kirchberg. Qui est déjà passé dessus ? Avec les bras, former une arche, puis un pont tout droit.",
               "material": "photos de ponts"
             },
             {
               "art": "bewegung",
               "titel": "Ponts humains",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "À deux, les enfants forment un pont : à quatre pattes ou en arche, bras levés. Les autres rampent dessous ou y font rouler un ballon. Combien de temps ton pont reste-t-il immobile ?",
               "material": "ballon souple"
             },
             {
               "art": "spiel",
               "titel": "Le chantier des ponts",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Entre deux piles de caisses, un tissu bleu fait la rivière. En petits groupes, les enfants construisent des ponts en carton, planchettes et cubes. Une voiture teste : passe-t-elle au sec ? Ce qui plie est reconstruit.",
               "material": "caisses, tissu, carton, planchettes"
             },
             {
               "art": "sprache",
-              "titel": "Notre plan",
-              "dauer": "10 Min.",
+              "titel": "Le plan du pont",
+              "dauer": "10 min",
               "text": "Avant de construire, chaque groupe dessine son plan sur une grande feuille. Ensuite on compare : qu’est-ce qui a changé ? Phrase modèle : « D’abord…, ensuite…, à la fin… »",
               "material": "grand papier, crayons"
             },
             {
               "art": "sinne",
               "titel": "Le secret du carton ondulé",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "On déchire un morceau de carton ondulé : dedans se cache une vague ! Les enfants touchent les rainures et plient d’abord une feuille plate, puis le carton ondulé. Lequel est le plus rigide ? Pourquoi ?",
               "material": "carton ondulé, papier"
             },
             {
               "art": "zaehlen",
               "titel": "Quelle largeur a la rivière ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Avec des cubes, les enfants mesurent l’écart entre les piles : combien de cubes y entrent ? Si l’écart grandit, le pont doit être plus long. Les grands notent le nombre avec des points au tableau.",
               "material": "cubes"
             }
@@ -2711,7 +2745,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Lundi : avec des cailloux, les enfants choisissent ce qui passera vendredi sur tous les ponts : petite voiture, train en bois ou doudou.",
+            "text": "Lundi : avec des cubes, les enfants choisissent ce qui passera vendredi sur tous les ponts : petite voiture, train en bois ou doudou.",
             "frage": "Que voulons-nous savoir sur les ponts ?"
           },
           "stufen": {
@@ -2751,7 +2785,7 @@
                 "bild": "icon:cup"
               },
               {
-                "text": "20 petits cubes comme charge",
+                "text": "40 cubes emboîtables comme charge",
                 "bild": "icon:cube"
               },
               "Fiche du chercheur et crayons"
@@ -2764,7 +2798,7 @@
                 "bild": "icon:abacus"
               },
               {
-                "text": "Plier une deuxième feuille en accordéon, la poser sur le vide et tester de la même façon.",
+                "text": "Plier une page 2 en accordéon, la poser sur le vide et tester de la même façon.",
                 "bild": "icon:file-text"
               },
               "Essayer les idées des enfants : roulée, double, bords relevés. Quel pont porte le plus ?"
@@ -2777,7 +2811,7 @@
               "standard:kleinteile"
             ],
             "weiter": "Élargir l’écart pas à pas : le pont en accordéon tient-il toujours ? Ou superposer deux feuilles pliées.",
-            "dauer": "30 Min.",
+            "dauer": "30 min",
             "phaenomene": [
               "kraefte",
               "gewicht"
@@ -2844,7 +2878,8 @@
             "de": "der Weg",
             "fr": "le chemin",
             "lb": "de Wee",
-            "pt": "o caminho"
+            "pt": "o caminho",
+            "bild": "icon:route"
           },
           {
             "de": "der Start",
@@ -2892,9 +2927,9 @@
       }
     },
     "de": {
-      "titel": "Bodenroboter: Programmieren ohne Bildschirm",
-      "untertitel": "Befehle geben, Wege planen, Fehler finden – Schritt für Schritt",
-      "anleitung": "Die Karten zweimal drucken: einmal als Bildkarten, einmal als Befehlskarten für das Raster am Boden (Schritt, links, rechts, stopp, Start). Seite 2: erst mit dem Finger, dann mit dem Stift; ältere Kinder sagen beim zweiten Labyrinth den Weg als Befehle.",
+      "titel": "Bodenroboter",
+      "untertitel": "Programmieren ohne Bildschirm: Befehle geben, Wege planen, Fehler finden – Schritt für Schritt",
+      "anleitung": "Die Karten zweimal drucken: als Bildkarten und für das Raster am Boden. Seite 2: Das Kind führt den Roboter durch das Labyrinth (erst Finger, dann Stift); unten die Befehlskarten (vor, links, rechts, stopp, Start, Ziel) – ausschneiden und als Programm legen.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -2917,8 +2952,8 @@
               "titel": "der Schatz"
             },
             {
-              "bild": "icon:route",
-              "titel": "der Weg"
+              "bild": "motiv:rad",
+              "titel": "das Rad"
             },
             {
               "bild": "icon:flag",
@@ -2967,19 +3002,51 @@
         },
         {
           "art": "aufgabe",
-          "text": "Ein langer Weg: Sag ihn als Befehle – Schritt, links, rechts.",
+          "text": "Befehlskarten: Schneide aus. Leg dem Roboter einen Weg.",
           "symbole": [
-            "sprechen",
-            "malen"
+            "schneiden",
+            "zeigen"
           ],
           "niveau": "stern"
         },
         {
-          "art": "labyrinth",
-          "start": "icon:robot",
-          "ziel": "icon:flag",
-          "stufe": 2,
-          "seed": 5
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 115,
+          "karten": [
+            {
+              "bild": "icon:footsteps",
+              "titel": "vor"
+            },
+            {
+              "bild": "icon:footsteps",
+              "titel": "vor"
+            },
+            {
+              "bild": "icon:footsteps",
+              "titel": "vor"
+            },
+            {
+              "bild": "icon:sign-left",
+              "titel": "links"
+            },
+            {
+              "bild": "icon:sign-right",
+              "titel": "rechts"
+            },
+            {
+              "bild": "motiv:stopp",
+              "titel": "stopp"
+            },
+            {
+              "bild": "icon:flag",
+              "titel": "Start"
+            },
+            {
+              "bild": "icon:gift",
+              "titel": "Ziel"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -2987,7 +3054,7 @@
         "ablauf": [
           "Montag – Die Lehrperson ist der Roboter: Sie macht nur, was die Karten sagen. Bildkarten einführen.",
           "Dienstag – Links, rechts, vor: alle sind Roboter. Danach das Schatzraster aus Kreppband am Boden.",
-          "Mittwoch – Experiment der Woche: Großes Rad, kleines Rad. Dann Seite 2 (Labyrinthe).",
+          "Mittwoch – Experiment der Woche: Großes Rad, kleines Rad. Dann Seite 2 (Labyrinth, Befehlskarten).",
           "Donnerstag – Fehler-Detektive: Ein Programm hat einen Fehler; die Kinder finden und tauschen die Karte.",
           "Freitag – Schatzsuche im Raster mit unserer Schatzkarte; falls vorhanden, ein echter Bodenroboter."
         ],
@@ -3091,7 +3158,7 @@
               "eldib": "KOG-31"
             },
             {
-              "text": "Ich zeige links und rechts an meinem Körper.",
+              "text": "Ich gehe bei „vor“ einen Schritt und halte bei „stopp“ an.",
               "eldib": "KOG-1"
             },
             {
@@ -3100,11 +3167,11 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Mit Steinen bestimmen die Kinder, wo der Schatz im Raster liegt und welches Hindernis dazukommt: Fluss, Berg oder Wald.",
+            "text": "Mittwoch: Mit Bausteinen bestimmen die Kinder, wo der Schatz im Raster liegt und welches Hindernis dazukommt: Fluss, Berg oder Wald.",
             "frage": "Was wollen wir über Roboter wissen?"
           },
           "stufen": {
-            "precoce": "Roboter spielen: bei „Schritt“ einen Schritt gehen; den Weg mit dem Finger zeigen.",
+            "precoce": "Roboter spielen nur mit „vor“ und „stopp“; den Weg mit dem Finger zeigen.",
             "p1": "Programm aus 3–4 Karten legen und laufen; Schritte zählen; links und rechts zeigen.",
             "p2": "Programm mit Drehungen planen, Fehler finden; den Weg als Befehle sagen."
           },
@@ -3140,13 +3207,13 @@
               },
               "Kreide oder Stift für Striche",
               {
-                "text": "Steine und 2 Becher zum Vermuten",
+                "text": "Bausteine und 2 Becher zum Vermuten",
                 "bild": "motiv:becher"
               }
             ],
             "schritte": [
               "Auf jeden Deckel einen Klebepunkt kleben. Den Punkt nach unten drehen und das Rad an den Start stellen.",
-              "Vermuten: Welches Rad dreht sich öfter? Jedes Kind legt seinen Stein in einen Becher.",
+              "Vermuten: Welches Rad dreht sich öfter? Jedes Kind legt seinen Baustein in einen Becher.",
               {
                 "text": "Das große Rad langsam die Strecke entlangrollen. Jedes Mal, wenn der Punkt unten ist, zählen alle laut.",
                 "bild": "icon:abacus"
@@ -3157,7 +3224,7 @@
                 "bild": "icon:robot"
               }
             ],
-            "vermutung": "Steine in zwei Becher: „Das große Rad dreht sich öfter“ oder „das kleine“. Viele Kinder sagen: „Das große, es ist ja größer.“",
+            "vermutung": "Bausteine in zwei Becher: „Das große Rad dreht sich öfter“ oder „das kleine“. Viele Kinder sagen: „Das große, es ist ja größer.“",
             "beobachten": "Das kleine Rad dreht sich viel öfter als das große. Fragen: Wie weit kommt jedes Rad mit einer Drehung? Wo ist der Punkt nach einer Drehung?",
             "warumKind": "Das große Rad hat einen langen Rand. Bei einer Drehung rollt der ganze Rand ab – so kommt es weiter. Das kleine Rad braucht mehr Drehungen für denselben Weg.",
             "hintergrund": "Bei einer ganzen Umdrehung legt ein Rad genau die Länge seines Umfangs zurück, und der Umfang wächst mit dem Durchmesser. Ein Rad mit doppeltem Durchmesser braucht für dieselbe Strecke nur halb so viele Drehungen. Bodenroboter und Fahrzeuge nutzen das: Sie zählen die Umdrehungen ihrer Räder, um eine bestimmte Strecke weit zu fahren. Der Versuch verbindet Zählen, Vergleichen und Messen.",
@@ -3171,16 +3238,30 @@
             ],
             "forscherblatt": {
               "frage": "Dreht sich das kleine Rad öfter?",
-              "sehen": "frei"
+              "sehen": "frei",
+              "vermuten": [
+                {
+                  "bild": "motiv:rad",
+                  "text": "das große Rad"
+                },
+                {
+                  "bild": "motiv:rad",
+                  "text": "das kleine Rad"
+                },
+                {
+                  "bild": "icon:scale",
+                  "text": "beide gleich"
+                }
+              ]
             }
           }
         }
       }
     },
     "fr": {
-      "titel": "Robot de sol : programmer sans écran",
-      "untertitel": "Donner des ordres, planifier un chemin, trouver l’erreur – pas à pas",
-      "anleitung": "Imprimer les cartes deux fois : une fois comme cartes-images, une fois comme cartes d’ordres pour la grille au sol (pas, à gauche, à droite, stop, départ). Page 2 : d’abord avec le doigt, puis au crayon ; au deuxième labyrinthe, les plus grands disent le chemin en ordres.",
+      "titel": "Robot de sol",
+      "untertitel": "Programmer sans écran : donner des ordres, planifier un chemin, trouver l’erreur – pas à pas",
+      "anleitung": "Imprimer les cartes deux fois : comme cartes-images et pour la grille au sol. Page 2 : l’enfant guide le robot dans le labyrinthe (doigt, puis crayon) ; en bas, les cartes d’ordres (avance, gauche, droite, stop, départ, arrivée) – découper et poser comme programme.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -3203,8 +3284,8 @@
               "titel": "le trésor"
             },
             {
-              "bild": "icon:route",
-              "titel": "le chemin"
+              "bild": "motiv:rad",
+              "titel": "la roue"
             },
             {
               "bild": "icon:flag",
@@ -3253,19 +3334,51 @@
         },
         {
           "art": "aufgabe",
-          "text": "Un long chemin : dis-le en ordres – pas, gauche, droite.",
+          "text": "Cartes d’ordres : découpe. Pose un chemin pour le robot.",
           "symbole": [
-            "sprechen",
-            "malen"
+            "schneiden",
+            "zeigen"
           ],
           "niveau": "stern"
         },
         {
-          "art": "labyrinth",
-          "start": "icon:robot",
-          "ziel": "icon:flag",
-          "stufe": 2,
-          "seed": 5
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 115,
+          "karten": [
+            {
+              "bild": "icon:footsteps",
+              "titel": "avance"
+            },
+            {
+              "bild": "icon:footsteps",
+              "titel": "avance"
+            },
+            {
+              "bild": "icon:footsteps",
+              "titel": "avance"
+            },
+            {
+              "bild": "icon:sign-left",
+              "titel": "à gauche"
+            },
+            {
+              "bild": "icon:sign-right",
+              "titel": "à droite"
+            },
+            {
+              "bild": "motiv:stopp",
+              "titel": "stop"
+            },
+            {
+              "bild": "icon:flag",
+              "titel": "départ"
+            },
+            {
+              "bild": "icon:gift",
+              "titel": "arrivée"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -3273,7 +3386,7 @@
         "ablauf": [
           "Lundi – L’enseignante est le robot : elle ne fait que ce que disent les cartes. Présenter les cartes.",
           "Mardi – Gauche, droite, avance : tout le monde est robot. Puis la grille au trésor en ruban au sol.",
-          "Mercredi – Expérience de la semaine : grande roue, petite roue. Puis la page 2 (labyrinthes).",
+          "Mercredi – Expérience de la semaine : grande roue, petite roue. Puis la page 2 (labyrinthe, cartes d’ordres).",
           "Jeudi – Les détectives d’erreurs : un programme a une erreur ; les enfants trouvent et changent la carte.",
           "Vendredi – Chasse au trésor sur la grille avec notre carte ; s’il y en a un, un vrai robot de sol."
         ],
@@ -3313,42 +3426,42 @@
             {
               "art": "kreis",
               "titel": "Le robot fait ce qui est écrit",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante joue le robot. Les enfants posent des cartes d’ordres, elle les exécute exactement – même si elle fonce dans la chaise. Les enfants comprennent : le robot ne réfléchit pas, le programme doit être juste.",
               "material": "cartes d’ordres"
             },
             {
               "art": "bewegung",
               "titel": "Gauche, droite, avance",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Tous les enfants sont des robots, un ruban rouge au poignet droit aide. Sur carte ou à la voix : un pas en avant, un quart de tour à droite ou à gauche, stop. Qui se trompe se retourne, tout simplement.",
               "material": "rubans rouges, cartes"
             },
             {
               "art": "spiel",
               "titel": "La grille au trésor",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Au sol, une grille de 4 sur 4 cases, un trésor dans une case, une rivière en tissu barre deux cases. À deux : l’un pose le programme avec les cartes, l’autre le suit comme robot. Le trésor est-il atteint ?",
               "material": "ruban, cartes, coffre, tissu"
             },
             {
               "art": "sprache",
               "titel": "Les détectives d’erreurs",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante pose un programme avec une erreur. Le robot avance – et tombe dans la rivière. Les enfants cherchent la mauvaise carte, la changent et testent à nouveau. Phrase : « L’erreur est ici, parce que… »",
               "material": "cartes, grille"
             },
             {
               "art": "gestalten",
               "titel": "Notre carte au trésor",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Sur une grande feuille, les enfants redessinent la grille, ajoutent rivière, arbre et trésor, et collent des flèches pour le chemin. Vendredi, la carte sert de plan pour la chasse au trésor.",
               "material": "grand papier, crayons, colle"
             },
             {
               "art": "zaehlen",
               "titel": "Combien de pas ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Avant que le robot parte, tout le monde estime : combien de pas jusqu’au trésor ? Puis le groupe compte chaque pas à voix haute. Les grands posent une carte par pas et comptent les cartes.",
               "material": "cartes d’ordres"
             }
@@ -3377,7 +3490,7 @@
               "eldib": "KOG-31"
             },
             {
-              "text": "Je montre la gauche et la droite sur mon corps.",
+              "text": "Je fais un pas à « avance » et je m’arrête à « stop ».",
               "eldib": "KOG-1"
             },
             {
@@ -3386,11 +3499,11 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : avec des cailloux, les enfants décident où est caché le trésor et quel obstacle s’ajoute : rivière, montagne ou forêt.",
+            "text": "Mercredi : avec des cubes, les enfants décident où est caché le trésor et quel obstacle s’ajoute : rivière, montagne ou forêt.",
             "frage": "Que voulons-nous savoir sur les robots ?"
           },
           "stufen": {
-            "precoce": "Jouer au robot : au « pas », faire un pas ; montrer le chemin avec le doigt.",
+            "precoce": "Jouer au robot seulement avec « avance » et « stop » ; montrer le chemin du doigt.",
             "p1": "Poser un programme de 3–4 cartes et le suivre ; compter les pas ; gauche et droite.",
             "p2": "Planifier un programme avec virages, trouver l’erreur ; dire le chemin en ordres."
           },
@@ -3426,13 +3539,13 @@
               },
               "Craie ou crayon pour les traits",
               {
-                "text": "Cailloux et 2 gobelets pour les hypothèses",
+                "text": "Cubes et 2 gobelets pour les hypothèses",
                 "bild": "motiv:becher"
               }
             ],
             "schritte": [
               "Coller une gommette sur chaque couvercle. Tourner la gommette vers le bas et placer la roue au départ.",
-              "Supposer : quelle roue tourne le plus ? Chaque enfant pose son caillou dans un gobelet.",
+              "Supposer : quelle roue tourne le plus ? Chaque enfant pose son cube dans un gobelet.",
               {
                 "text": "Faire rouler lentement la grande roue ; chaque fois que la gommette touche le sol, tout le monde compte.",
                 "bild": "icon:abacus"
@@ -3451,13 +3564,27 @@
               "Choisir des couvercles sans bords coupants ; garder le parcours libre de tout obstacle."
             ],
             "weiter": "Mesurer le parcours avec les pieds, des cubes et la grande roue : combien de pieds ? Combien de tours ? Puis ajouter une troisième roue, moyenne.",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "kraefte"
             ],
             "forscherblatt": {
               "frage": "La petite roue tourne-t-elle plus souvent ?",
-              "sehen": "frei"
+              "sehen": "frei",
+              "vermuten": [
+                {
+                  "bild": "motiv:rad",
+                  "text": "la grande roue"
+                },
+                {
+                  "bild": "motiv:rad",
+                  "text": "la petite roue"
+                },
+                {
+                  "bild": "icon:scale",
+                  "text": "pareil"
+                }
+              ]
             }
           }
         }
@@ -3681,7 +3808,7 @@
         ],
         "tipps": [
           "Den Platz vorher allein ablaufen: Wege, Gefahren, Toilette, Sammelpunkt.",
-          "Jeden Waldtag vom selben Stein aus fotografieren – das wird die Jahresreihe."
+          "Jeden Waldtag vom selben Stein aus fotografieren, ohne Kinder im Bild – das wird die Jahresreihe."
         ],
         "material": "Rucksack mit Erste-Hilfe-Set, Wasser, Sitzkissen, farbiges Band, Lupen, weißes Tuch, Wollknäuel, Becher ohne Boden, Sanduhr, Kamera, Jahreskarte",
         "hintergrund": "Ein fester Naturplatz, der übers Jahr immer wieder besucht wird, macht Zeit und Veränderung erlebbar: Laub fällt, Knospen öffnen sich, der Boden ist mal nass, mal gefroren. Kinder bauen dabei Ortskenntnis und Sicherheit auf, bewegen sich auf unebenem Boden und nehmen mit allen Sinnen wahr. Aufenthalte in der Natur können Aufmerksamkeit und Erholung fördern (Kaplan, 1995); Bewegung im Freien gehört zu den Empfehlungen für Kinder unter fünf Jahren (WHO, 2019). Die Absprache mit Gemeinde oder Forstrevier gehört zur Vorbereitung.",
@@ -3707,7 +3834,7 @@
               "art": "draussen",
               "titel": "Mein Sitzplatz",
               "dauer": "15 Min.",
-              "text": "Jedes Kind wählt am Waldplatz einen eigenen Sitzplatz mit Blick auf unseren Baum und markiert ihn mit einem Stein. Bei jedem Waldtag kommt es dorthin zurück: Was ist neu, was fehlt? Wer mag, erzählt.",
+              "text": "Jedes Kind wählt am Waldplatz einen eigenen Sitzplatz mit Blick auf unseren Baum und markiert ihn mit einem Baustein. Bei jedem Waldtag kommt es dorthin zurück: Was ist neu, was fehlt? Wer mag, erzählt.",
               "material": "Sitzkissen, Steine"
             },
             {
@@ -3817,7 +3944,10 @@
                 "bild": "icon:cup"
               },
               "1 Flasche Wasser und 1 Messbecher",
-              "1 Sanduhr (1 Minute)",
+              {
+                "text": "1 Sanduhr (1 Minute)",
+                "bild": "motiv:sanduhr"
+              },
               "Jahreskarte des Waldplatzes und Stifte"
             ],
             "schritte": [
@@ -3995,42 +4125,42 @@
             {
               "art": "draussen",
               "titel": "Ma place",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Chaque enfant choisit dans le coin forêt sa propre place, avec vue sur notre arbre, et la marque d’une pierre. À chaque sortie, il y revient : qu’est-ce qui est nouveau, qu’est-ce qui manque ? Qui veut raconte.",
               "material": "coussins, pierres"
             },
             {
               "art": "zaehlen",
               "titel": "Notre arbre",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Combien d’enfants faut-il pour entourer notre arbre ? Puis on mesure son tour avec de la laine, on coupe et on l’accroche en classe. Au printemps, on mesure à nouveau.",
               "material": "pelote de laine, ciseaux"
             },
             {
               "art": "gestalten",
               "titel": "Le canapé forestier",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Avec des branches tombées, les enfants construisent un cercle pour s’asseoir ; les adultes portent les grosses branches. Règle : on ne prend que ce qui est par terre. À chaque sortie, on continue.",
               "material": "gants"
             },
             {
               "art": "bewegung",
               "titel": "L’appel de la forêt",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Quand une adulte crie « Coucou ! », tous répondent « Coucou ! » et viennent à l’arbre de rassemblement. D’abord de près, puis de plus loin. Qui arrive pose une pomme de pin dans le panier : on voit si quelqu’un manque.",
               "material": "panier, pommes de pin"
             },
             {
               "art": "kreis",
               "titel": "La carte de l’année",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "En classe, une carte à quatre cases : automne, hiver, printemps, été. On y ajoute la photo du point photo et les dessins des enfants. Qu’est-ce qui a changé depuis la dernière fois ?",
               "material": "grand papier, photos"
             },
             {
               "art": "sinne",
               "titel": "Le sol à la loupe",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Une poignée de feuilles et de terre sur un drap blanc. Avec des loupes, les enfants cherchent : qui rampe là ? Cloportes, scarabées, vers sont comptés, puis remis doucement à leur place.",
               "material": "drap blanc, loupes"
             }
@@ -4106,7 +4236,10 @@
                 "bild": "icon:cup"
               },
               "1 bouteille d’eau et 1 verre mesureur",
-              "1 sablier (1 minute)",
+              {
+                "text": "1 sablier (1 minute)",
+                "bild": "motiv:sanduhr"
+              },
               "Carte de l’année du coin forêt et crayons"
             ],
             "schritte": [
@@ -4125,7 +4258,7 @@
               "Respecter les accords avec la commune ou le triage forestier pour le lieu fixe ; ne rien déterrer."
             ],
             "weiter": "Tester sur la pelouse, sous une haie et en hiver quand le sol est gelé : où l’eau s’infiltre-t-elle le plus vite ?",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "wasser-wandert",
               "lebewesen"
@@ -4190,7 +4323,7 @@
           {
             "de": "der Müll",
             "fr": "les déchets",
-            "lb": "den Dreck",
+            "lb": "den Offall",
             "pt": "o lixo"
           },
           {
@@ -4257,8 +4390,8 @@
       }
     },
     "de": {
-      "titel": "Müll-Detektive und Recycling-Werkstatt",
-      "untertitel": "Sortieren, zählen, weniger wegwerfen – und schauen, was in der Erde verschwindet",
+      "titel": "Müll-Detektive",
+      "untertitel": "Sammeln, sortieren, wiederverwenden – mit Recycling-Werkstatt und einer Erde-Box über vier Wochen",
       "anleitung": "Die Karten zweimal drucken: für Sitzkreis und Memory und als Schilder für die Sortierkisten. Seite 2 ist das Forscherblatt zum Langzeit-Experiment: am Starttag vermuten und „vorher“ malen; nach 3–4 Wochen „nachher“ malen und einkreisen, was verschwunden ist.",
       "bausteine": [
         {
@@ -4325,7 +4458,7 @@
             },
             {
               "bild": "icon:file-text",
-              "text": "das Papier"
+              "text": "das Küchenpapier"
             },
             {
               "bild": "icon:shopping-bag",
@@ -4340,7 +4473,7 @@
         "ziel": "Die Kinder sortieren Abfall nach dem System der Gemeinde, vergleichen Mengen, bauen aus Verpackungen Neues und beobachten über Wochen, was in der Erde verrottet und was bleibt.",
         "ablauf": [
           "Montag – Detektiv-Auftrag: Sammelsack aufstellen, Kisten mit Bildschildern; Bildkarten und Fragenplakat.",
-          "Dienstag – Starttag des Langzeit-Experiments: Erde-Box anlegen, Nachschau-Tage im Kalender eintragen.",
+          "Dienstag – Starttag des Langzeit-Experiments: Erde-Box draußen anlegen, Nachschau-Tage im Kalender eintragen.",
           "Mittwoch – Der Müllberg: sortieren, gleiche Dinge in Reihen legen, zählen; Hof-Detektive.",
           "Donnerstag – Recycling-Werkstatt: die Müll-Band baut Instrumente; das Spiel „Müllabfuhr“.",
           "Freitag – Müllarmes Frühstück und Konzert der Müll-Band; erste Nachschau an der Erde-Box."
@@ -4359,7 +4492,7 @@
           "Nachschau-Tage (jeden Dienstag) in den Klassenkalender malen; nach 3–4 Wochen ausgraben."
         ],
         "material": "durchsichtiger Sack, 4 Kisten mit Bildschildern, Plane, Balkenwaage, große Box mit Erde, Handschuhe, Lupen, Verpackungen für die Werkstatt, Klebeband",
-        "hintergrund": "Nachhaltigkeit wird für Kinder greifbar, wenn sie ihren eigenen Abfall sehen, ordnen und zählen. Sortieren nach Merkmalen und Vergleichen von Mengen sind dabei Kernideen der frühen Mathematik (Clements & Sarama, 2009). Das Langzeit-Experiment zeigt über Wochen, dass Bodenlebewesen Obstreste und Papier zersetzen, Kunststoff und Alufolie aber liegen bleiben. Gezählt wird für die Klasse, nicht für das einzelne Kind: Niemand wird für das Pausenbrot von zu Hause bewertet.",
+        "hintergrund": "Nachhaltigkeit wird für Kinder greifbar, wenn sie ihren eigenen Abfall sehen, ordnen und zählen. Sortieren nach Merkmalen und Vergleichen von Mengen sind dabei Kernideen der frühen Mathematik (Clements & Sarama, 2009). Das Langzeit-Experiment zeigt über Wochen, dass Bodenlebewesen Obstreste und Papier zersetzen, Kunststoff und Alufolie aber liegen bleiben. Gezählt wird für die Klasse, nicht für das einzelne Kind: Niemand wird für das Pausenbrot von zu Hause bewertet. In Luxemburg kommen Plastikflaschen, Dosen und Getränkekartons in den blauen Valorlux-Sack; Papier, Glas und Bioabfall sammelt die Gemeinde getrennt.",
         "quellen": [
           "Clements, D. H. & Sarama, J. (2009). Learning and Teaching Early Math: The Learning Trajectories Approach. New York: Routledge.",
           "Hirsh-Pasek, K., Golinkoff, R. M., Berk, L. E. & Singer, D. G. (2009). A Mandate for Playful Learning in Preschool: Presenting the Evidence. New York: Oxford University Press."
@@ -4422,7 +4555,7 @@
             }
           ],
           "reim": {
-            "titel": "Wohin damit?",
+            "titel": "Wohin mit dem Müll?",
             "zeilen": [
               "Papier, Papier – wohin damit?",
               "In die Papierkiste, Schritt für Schritt!",
@@ -4434,7 +4567,7 @@
             "gesten": "Ruf und Antwort: Die Lehrperson fragt mit offenen Händen, die Kinder antworten, zeigen zur passenden Kiste und stapfen hin. Zum Schluss alle Kisten antippen."
           },
           "ecken": [
-            "Forscherecke: die Erde-Box mit Lupe, Kalender und Bildschildern; jede Woche ein Foto daneben.",
+            "Forscherecke: Lupe, Kalender und Bildschilder zur Erde-Box (sie steht draußen); jede Woche ein Foto daneben.",
             "Puppenecke als Laden: leere, saubere Verpackungen kaufen und danach in die Kisten sortieren.",
             "Malatelier: Recycling-Werkstatt mit Kartons, Bechern, Deckeln, Korken und Klebeband."
           ],
@@ -4454,7 +4587,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Mit Steinen wählen die Kinder, welches Instrument die Müll-Band baut: Rassel, Trommel oder Gummi-Gitarre. Gebaut wird, was die meisten Steine hat.",
+            "text": "Donnerstag: Mit Bausteinen wählen die Kinder, welches Instrument die Müll-Band baut: Rassel, Trommel oder Gummi-Gitarre. Gebaut wird, was die meisten Bausteine hat.",
             "frage": "Was wollen wir über Müll herausfinden?"
           },
           "stufen": {
@@ -4474,7 +4607,7 @@
             "ausflug": false,
             "besuch": false,
             "material": "besorgen",
-            "planB": "Regen: Detektive in Flur und Klasse; die Erde-Box steht am Fenster der Klasse.",
+            "planB": "Regen: Detektive in Flur und Klasse; die Erde-Box bleibt draußen, geschaut wird durchs Fenster.",
             "sicherheit": [
               "Nur saubere Verpackungen ohne scharfe Kanten; Scherben und Kippen fassen nur Erwachsene an.",
               "standard:allergien",
@@ -4483,19 +4616,25 @@
           },
           "experiment": {
             "titel": "Was verschwindet in der Erde?",
-            "frage": "Was passiert mit Apfel, Papier, Plastik und Alufolie, wenn sie Wochen in der Erde liegen?",
+            "frage": "Was passiert mit Apfel, Küchenpapier, Plastik und Alufolie nach Wochen in der Erde?",
             "material": [
               {
-                "text": "1 große durchsichtige Box mit feuchter Gartenerde",
+                "text": "1 große durchsichtige Box mit Deckel und feuchter Gartenerde",
                 "bild": "icon:package"
               },
-              "Apfelrest und Bananenschale",
-              "1 Stück Papier, 1 Stück Plastiktüte, 1 Stück Alufolie",
+              {
+                "text": "Apfelrest und Bananenschale",
+                "bild": "motiv:apfel"
+              },
+              "1 Stück Küchenpapier, 1 Stück Plastiktüte, 1 Stück Alufolie",
               {
                 "text": "5 Stöcke mit Bildschildern",
                 "bild": "icon:flag"
               },
-              "Lupe und Handschuhe",
+              {
+                "text": "Lupe und Handschuhe",
+                "bild": "motiv:lupe"
+              },
               {
                 "text": "Kalender mit den Nachschau-Tagen",
                 "bild": "icon:calendar"
@@ -4503,26 +4642,26 @@
             ],
             "schritte": [
               {
-                "text": "Starttag in dieser Woche: Die Kinder wählen aus dem Klassenmüll fünf Dinge: Apfelrest, Bananenschale, Papier, Plastik, Alufolie.",
+                "text": "Starttag draußen (Hof oder Fensterbank außen): Die Kinder wählen fünf Dinge: Apfelrest, Bananenschale, Küchenpapier, Plastik, Alufolie.",
                 "bild": "icon:hand-grab"
               },
-              "Vermuten: Was verschwindet? Bei jedem Ding legen die Kinder Steine in den Becher „weg“ oder „bleibt“.",
+              "Vermuten: Was verschwindet? Bei jedem Ding legen die Kinder Bausteine in den Becher „weg“ oder „bleibt“.",
               {
                 "text": "Jedes Ding dicht an der Wand der Box eingraben, damit man es sieht; ein Bildschild daneben stecken.",
                 "bild": "motiv:schaufel"
               },
-              "Nachschau jede Woche am selben Tag: durch die Wand schauen, ein Foto machen, die Erde feucht halten.",
+              "Nachschau jede Woche am selben Tag, draußen: nur durch die Wand schauen, der Deckel bleibt zu; ein Foto machen.",
               {
-                "text": "Nach drei bis vier Wochen mit Handschuhen ausgraben und vergleichen: Was ist weg, was ist noch da?",
+                "text": "Nach drei bis vier Wochen draußen ausgraben (eine Erwachsene öffnet, alle mit Handschuhen) und vergleichen: Was ist weg?",
                 "bild": "motiv:lupe"
               }
             ],
-            "vermutung": "Bei jedem Ding legen die Kinder einen Stein in den Becher „weg“ oder „bleibt“. Oft hört man: „Papier bleibt, das ist hart“ oder „Alles wird Erde.“",
-            "beobachten": "Jede Woche vergleichen: Wird der Apfel braun und weich? Wächst weißer Flaum? Apfel und Schale sind bald fast weg, Papier zerfällt, Plastik und Alufolie bleiben gleich.",
+            "vermutung": "Bei jedem Ding legen die Kinder einen Baustein in den Becher „weg“ oder „bleibt“. Oft hört man: „Papier bleibt, das ist hart“ oder „Alles wird Erde.“",
+            "beobachten": "Jede Woche vergleichen: Wird der Apfel braun und weich? Wächst weißer Flaum? Apfel und Schale sind bald fast weg, Küchenpapier zerfällt, Plastik und Alufolie bleiben gleich.",
             "warumKind": "In der Erde wohnen winzige Tiere und Pilze. Sie fressen Apfel und Papier, langsam, Stück für Stück. Plastik und Alufolie mag niemand – die bleiben liegen.",
             "hintergrund": "Bodenlebewesen – Bakterien, Pilze, Asseln, Würmer – zersetzen Obstreste und Papier und machen daraus Humus; das ist Kompostieren. Sie brauchen Feuchtigkeit, Luft und Zeit; in einer kleinen Box dauert es Wochen. Kunststoff und Aluminium werden in dieser Zeit praktisch nicht abgebaut und bleiben über Jahre erhalten. Deshalb gehören sie nicht in die Natur, sondern getrennt in die Sammlung der Gemeinde. Weißer Flaum auf dem Apfel zeigt, dass Pilze arbeiten.",
             "sicherheit": [
-              "Box geschlossen halten; Schimmel nur anschauen, nicht daran riechen.",
+              "Box draußen und geschlossen; Schimmel nur durch die Wand ansehen. Kinder mit Asthma graben nicht aus.",
               "Beim Ausgraben Handschuhe tragen; danach gründlich Hände waschen."
             ],
             "weiter": "Den Inhalt der Box in die Biotonne oder den Schulkompost bringen und dort weiter beobachten: Wer krabbelt im Kompost?",
@@ -4540,7 +4679,7 @@
                 },
                 {
                   "bild": "icon:file-text",
-                  "text": "das Papier"
+                  "text": "das Küchenpapier"
                 },
                 {
                   "bild": "icon:shopping-bag",
@@ -4554,8 +4693,8 @@
       }
     },
     "fr": {
-      "titel": "Détectives des déchets et atelier recyclage",
-      "untertitel": "Trier, compter, jeter moins – et observer ce qui disparaît dans la terre",
+      "titel": "Détectives des déchets",
+      "untertitel": "Collecter, trier, réutiliser – avec un atelier recyclage et une boîte de terre sur quatre semaines",
       "anleitung": "Imprimer les cartes deux fois : pour le cercle et le memory, et comme étiquettes des caisses de tri. La page 2 est la fiche du chercheur de l’expérience longue : le jour du départ, supposer et dessiner « avant » ; après 3–4 semaines, dessiner « après » et entourer ce qui a disparu.",
       "bausteine": [
         {
@@ -4622,7 +4761,7 @@
             },
             {
               "bild": "icon:file-text",
-              "text": "le papier"
+              "text": "l’essuie-tout"
             },
             {
               "bild": "icon:shopping-bag",
@@ -4637,7 +4776,7 @@
         "ziel": "Les enfants trient les déchets selon le système de la commune, comparent des quantités, fabriquent du neuf avec des emballages et observent pendant des semaines ce qui se décompose dans la terre et ce qui reste.",
         "ablauf": [
           "Lundi – Mission détective : sac de collecte, caisses avec étiquettes-images ; cartes et affiche des questions.",
-          "Mardi – Jour de départ de l’expérience longue : préparer la boîte de terre, noter les jours d’observation.",
+          "Mardi – Jour de départ de l’expérience longue : préparer la boîte de terre dehors, noter les jours d’observation.",
           "Mercredi – La montagne de déchets : trier, aligner les mêmes objets, compter ; détectives de la cour.",
           "Jeudi – Atelier recyclage : l’orchestre des déchets fabrique ses instruments ; le jeu « Camion poubelle ».",
           "Vendredi – Petit-déjeuner sans emballages et concert ; première observation de la boîte de terre."
@@ -4656,7 +4795,7 @@
           "Dessiner les jours d’observation (chaque mardi) dans le calendrier ; déterrer après 3–4 semaines."
         ],
         "material": "sac transparent, 4 caisses avec étiquettes-images, bâche, balance à plateaux, grande boîte de terre, gants, loupes, emballages pour l’atelier, ruban adhésif",
-        "hintergrund": "La durabilité devient concrète quand les enfants voient, trient et comptent leurs propres déchets. Trier selon des critères et comparer des quantités sont des idées clés des mathématiques précoces (Clements & Sarama, 2009). L’expérience longue montre sur plusieurs semaines que les êtres vivants du sol décomposent restes de fruits et papier, mais que plastique et papier alu restent. On compte pour la classe, jamais pour un enfant : personne n’est jugé pour le goûter apporté de la maison.",
+        "hintergrund": "La durabilité devient concrète quand les enfants voient, trient et comptent leurs propres déchets. Trier selon des critères et comparer des quantités sont des idées clés des mathématiques précoces (Clements & Sarama, 2009). L’expérience longue montre sur plusieurs semaines que les êtres vivants du sol décomposent restes de fruits et papier, mais que plastique et papier alu restent. On compte pour la classe, jamais pour un enfant : personne n’est jugé pour le goûter apporté de la maison. Au Luxembourg, bouteilles en plastique, canettes et briques vont dans le sac bleu Valorlux ; papier, verre et biodéchets sont collectés à part par la commune.",
         "quellen": [
           "Clements, D. H. & Sarama, J. (2009). Learning and Teaching Early Math: The Learning Trajectories Approach. New York: Routledge.",
           "Hirsh-Pasek, K., Golinkoff, R. M., Berk, L. E. & Singer, D. G. (2009). A Mandate for Playful Learning in Preschool: Presenting the Evidence. New York: Oxford University Press."
@@ -4678,42 +4817,42 @@
             {
               "art": "kreis",
               "titel": "La montagne de déchets",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Pendant trois jours, la classe récolte ses déchets propres dans un sac transparent. Puis tout va sur une bâche : qu’est-ce que c’est ? En quoi c’est fait ? Les enfants trient dans les caisses selon le système de la commune.",
               "material": "sac, bâche, caisses étiquetées"
             },
             {
               "art": "zaehlen",
               "titel": "Gobelets contre papiers",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "On aligne les mêmes objets : tous les gobelets, tous les papiers, toutes les bouteilles. Quelle rangée est la plus longue ? Les grands pèsent deux caisses sur la balance : laquelle est la plus lourde ?",
               "material": "déchets triés, balance"
             },
             {
               "art": "musik",
               "titel": "L’orchestre des déchets",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Avec des boîtes en plastique et du riz (couvercle bien scotché), une boîte à chaussures, des élastiques et des gobelets, les enfants fabriquent des instruments. L’orchestre joue : doux comme la pluie, fort comme le camion poubelle.",
               "material": "boîtes en plastique, riz, boîte à chaussures, élastiques"
             },
             {
               "art": "bewegung",
               "titel": "Camion poubelle",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Des cartes-images sont éparpillées, quatre cerceaux sont les caisses. Tous courent en musique ; quand elle s’arrête, l’enseignante crie « Papier ! » ou « Emballage ! » – les enfants apportent vite le bon objet.",
               "material": "cartes, 4 cerceaux, musique"
             },
             {
               "art": "kochen",
               "titel": "Le petit-déjeuner sans emballages",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Vendredi, la classe déjeune sans emballages jetables : fruits dans un panier, pain dans un torchon, eau dans une carafe. La classe fournit tout, personne n’apporte rien. Ensuite on compte : combien de déchets restent ?",
               "material": "fruits, pain, carafe, gobelets, assiettes"
             },
             {
               "art": "draussen",
               "titel": "Les détectives de la cour",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Avec gants et pince, les enfants font le tour de la cour avec une adulte : qu’est-ce qui n’a rien à faire ici ? On compte et on trie les trouvailles. Les débris de verre et les mégots, seuls les adultes les touchent.",
               "material": "gants, pince, seau"
             }
@@ -4731,7 +4870,7 @@
             "gesten": "Appel et réponse : l’enseignante demande, mains ouvertes ; les enfants répondent, montrent la bonne caisse et y marchent. Pour finir, toucher toutes les caisses."
           },
           "ecken": [
-            "Coin des chercheurs : la boîte de terre avec loupe, calendrier et étiquettes ; chaque semaine une photo.",
+            "Coin des chercheurs : loupe, calendrier et étiquettes de la boîte de terre (elle reste dehors) ; une photo par semaine.",
             "Coin poupées en magasin : emballages vides et propres à acheter, puis à trier dans les caisses.",
             "Atelier : recyclage avec cartons, gobelets, couvercles, bouchons et ruban adhésif."
           ],
@@ -4751,7 +4890,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : avec des cailloux, les enfants choisissent l’instrument de l’orchestre : maracas, tambour ou guitare à élastiques. On fabrique celui qui a le plus de cailloux.",
+            "text": "Jeudi : avec des cubes, les enfants choisissent l’instrument de l’orchestre : maracas, tambour ou guitare à élastiques. On fabrique celui qui a le plus de cubes.",
             "frage": "Que voulons-nous découvrir sur les déchets ?"
           },
           "stufen": {
@@ -4771,7 +4910,7 @@
             "ausflug": false,
             "besuch": false,
             "material": "besorgen",
-            "planB": "S’il pleut : détectives dans le couloir et la classe ; la boîte de terre reste près de la fenêtre.",
+            "planB": "S’il pleut : détectives dans le couloir et la classe ; la boîte reste dehors, on regarde par la fenêtre.",
             "sicherheit": [
               "Emballages propres sans bords coupants ; débris de verre et mégots : seuls les adultes les touchent.",
               "standard:allergien",
@@ -4780,19 +4919,25 @@
           },
           "experiment": {
             "titel": "Qu’est-ce qui disparaît dans la terre ?",
-            "frage": "Que deviennent pomme, papier, plastique et papier alu après des semaines dans la terre ?",
+            "frage": "Que deviennent pomme, essuie-tout, plastique et alu après des semaines dans la terre ?",
             "material": [
               {
-                "text": "1 grande boîte transparente de terre humide",
+                "text": "1 grande boîte transparente à couvercle, terre humide",
                 "bild": "icon:package"
               },
-              "Un trognon de pomme et une peau de banane",
-              "1 bout de papier, de sac plastique et de papier alu",
+              {
+                "text": "Un trognon de pomme et une peau de banane",
+                "bild": "motiv:apfel"
+              },
+              "1 bout d’essuie-tout, de sac plastique et de papier alu",
               {
                 "text": "5 bâtons avec étiquette-image",
                 "bild": "icon:flag"
               },
-              "Loupe et gants",
+              {
+                "text": "Loupe et gants",
+                "bild": "motiv:lupe"
+              },
               {
                 "text": "Calendrier avec les jours d’observation",
                 "bild": "icon:calendar"
@@ -4800,26 +4945,26 @@
             ],
             "schritte": [
               {
-                "text": "Jour de départ, cette semaine : les enfants choisissent cinq déchets de la classe : trognon, peau de banane, papier, plastique, alu.",
+                "text": "Départ dehors (cour ou rebord extérieur) : les enfants choisissent cinq déchets : trognon, peau de banane, essuie-tout, plastique, alu.",
                 "bild": "icon:hand-grab"
               },
-              "Supposer : qu’est-ce qui disparaît ? Pour chaque objet, des cailloux dans le gobelet « parti » ou « reste ».",
+              "Supposer : qu’est-ce qui disparaît ? Pour chaque objet, des cubes dans le gobelet « parti » ou « reste ».",
               {
                 "text": "Enterrer chaque objet contre la paroi de la boîte pour le voir ; planter une étiquette à côté.",
                 "bild": "motiv:schaufel"
               },
-              "Observation chaque semaine le même jour : regarder à travers la paroi, prendre une photo, garder la terre humide.",
+              "Observation chaque semaine le même jour, dehors : regarder à travers la paroi, le couvercle reste fermé ; une photo.",
               {
-                "text": "Après trois à quatre semaines, déterrer avec des gants et comparer : qu’est-ce qui a disparu, qu’est-ce qui reste ?",
+                "text": "Après trois à quatre semaines, déterrer dehors (un adulte ouvre, gants pour tous) et comparer : qu’est-ce qui a disparu ?",
                 "bild": "motiv:lupe"
               }
             ],
-            "vermutung": "Pour chaque objet, les enfants posent un caillou dans le gobelet « parti » ou « reste ». On entend souvent : « Le papier reste, c’est dur » ou « Tout devient de la terre. »",
-            "beobachten": "Chaque semaine, comparer : la pomme brunit-elle ? Un duvet blanc pousse-t-il ? Pomme et peau disparaissent presque, le papier s’effrite, plastique et alu restent pareils.",
+            "vermutung": "Pour chaque objet, les enfants posent un cube dans le gobelet « parti » ou « reste ». On entend souvent : « Le papier reste, c’est dur » ou « Tout devient de la terre. »",
+            "beobachten": "Chaque semaine, comparer : la pomme brunit-elle ? Un duvet blanc pousse-t-il ? Pomme et peau disparaissent presque, l’essuie-tout s’effrite, plastique et alu restent pareils.",
             "warumKind": "Dans la terre vivent de toutes petites bêtes et des champignons. Ils mangent la pomme et le papier, morceau par morceau. Le plastique et l’alu, personne n’en veut : ils restent.",
             "hintergrund": "Les êtres vivants du sol – bactéries, champignons, cloportes, vers – décomposent restes de fruits et papier en humus : c’est le compostage. Il leur faut de l’humidité, de l’air et du temps ; dans une petite boîte, cela prend des semaines. Plastique et aluminium ne se dégradent pratiquement pas pendant ce temps et restent des années. Ils ne vont donc pas dans la nature, mais dans la collecte séparée de la commune. Le duvet blanc sur la pomme montre que les champignons travaillent.",
             "sicherheit": [
-              "Garder la boîte fermée ; la moisissure se regarde, on ne la sent pas.",
+              "Boîte dehors et fermée ; la moisissure se regarde à travers la paroi. Enfants asthmatiques : pas de déterrage.",
               "Porter des gants pour déterrer ; ensuite bien se laver les mains."
             ],
             "weiter": "Mettre le contenu de la boîte à la poubelle bio ou au compost de l’école et continuer d’observer : qui rampe dans le compost ?",
@@ -4837,7 +4982,7 @@
                 },
                 {
                   "bild": "icon:file-text",
-                  "text": "le papier"
+                  "text": "l’essuie-tout"
                 },
                 {
                   "bild": "icon:shopping-bag",
@@ -4964,13 +5109,13 @@
       }
     },
     "de": {
-      "titel": "Bewegungsbaustelle: Wir bauen einen Parcours",
-      "untertitel": "Planen, bauen, ausprobieren: klettern, balancieren, kriechen, springen, rollen",
+      "titel": "Bewegungsbaustelle",
+      "untertitel": "Wir bauen einen Parcours: planen, bauen, ausprobieren – klettern, balancieren, kriechen, springen",
       "anleitung": "Die Karten zweimal drucken: als Bildkarten und als Stationsschilder für den Parcours. Seite 2 ist ein Würfelspiel: Spielfiguren ausschneiden, ein Würfel; wer auf ein Feld mit Bild kommt, macht die Bewegung fünfmal, alle zählen mit.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Mach die Bewegung von der Karte nach.",
+          "text": "Zeig die Karte und sag das Wort. Was machst du dort?",
           "symbole": [
             "zeigen",
             "zuhoeren"
@@ -4985,28 +5130,32 @@
               "titel": "der Parcours"
             },
             {
+              "bild": "motiv:turnmatte",
+              "titel": "die Matte"
+            },
+            {
+              "bild": "figur:noah:froh:jubeln",
+              "titel": "springen"
+            },
+            {
+              "bild": "icon:package",
+              "titel": "der Kasten"
+            },
+            {
+              "bild": "icon:circle",
+              "titel": "der Reifen"
+            },
+            {
+              "bild": "icon:line",
+              "titel": "das Seil"
+            },
+            {
               "bild": "icon:ladder",
               "titel": "klettern"
             },
             {
-              "bild": "icon:stairs-up",
-              "titel": "steigen"
-            },
-            {
-              "bild": "icon:yoga",
-              "titel": "balancieren"
-            },
-            {
               "bild": "icon:run",
               "titel": "rennen"
-            },
-            {
-              "bild": "icon:footsteps",
-              "titel": "schleichen"
-            },
-            {
-              "bild": "icon:ball-basketball",
-              "titel": "werfen"
             },
             {
               "bild": "motiv:bein",
@@ -5096,7 +5245,7 @@
           "Wie können wir die Station schwerer machen?"
         ],
         "tipps": [
-          "Großgeräte tragen die Kinder immer zu zweit; Erwachsene sichern Kästen und Bänke.",
+          "Bänke und Kästen tragen und stellen nur Erwachsene; die Kinder tragen Reifen, Seile und Kissen.",
           "Fotos vom Bauplan und vom fertigen Parcours dokumentieren den Weg der Klasse."
         ],
         "material": "Turnbänke, Kästen, Matten, Reifen, Seile, Tunnel oder Tücher, Gerätekarten, großes Papier, Kreppband, Knete, Würfel",
@@ -5121,7 +5270,7 @@
           "aktivitaeten": [
             {
               "art": "kreis",
-              "titel": "Unser Bauplan",
+              "titel": "Unser Parcours-Plan",
               "dauer": "15 Min.",
               "text": "Gerätekarten liegen auf großem Papier. Die Kinder legen und malen, wie der Parcours aussehen soll: Wo fängt er an? Wo braucht es eine Matte? Jede Gruppe stellt ihren Plan vor; die Pläne werden fotografiert.",
               "material": "Gerätekarten, Papier, Stifte"
@@ -5130,7 +5279,7 @@
               "art": "bewegung",
               "titel": "Die Bewegungsbaustelle",
               "dauer": "30 Min.",
-              "text": "Nach dem gewählten Plan bauen die Kinder in kleinen Teams auf – zu zweit tragen, gemeinsam absetzen. Dann ausprobieren, umbauen, wieder ausprobieren. Jede Station hat einen leichten und einen schweren Weg.",
+              "text": "Nach dem gewählten Plan bauen die Kinder in kleinen Teams auf – leichte Teile zu zweit tragen; Bänke und Kästen stellen Erwachsene. Dann ausprobieren, umbauen, wieder ausprobieren. Jede Station hat einen leichten und einen schweren Weg.",
               "material": "Großgeräte, Matten"
             },
             {
@@ -5195,12 +5344,12 @@
             }
           ],
           "entscheiden": {
-            "text": "Dienstag: Jedes Kind legt seinen Stein auf einen Bauplan. Der Plan mit den meisten Steinen wird zuerst gebaut, die anderen folgen an den nächsten Tagen.",
+            "text": "Dienstag: Jedes Kind legt seinen Baustein auf einen Bauplan. Der Plan mit den meisten Bausteinen wird zuerst gebaut, die anderen folgen an den nächsten Tagen.",
             "frage": "Was möchtet ihr im Parcours können?"
           },
           "stufen": {
             "precoce": "Über die breite Bank gehen, durch den Tunnel kriechen, vom niedrigen Kasten springen.",
-            "p1": "Leichten oder schweren Weg wählen, zu zweit tragen, Schritte zählen.",
+            "p1": "Leichten oder schweren Weg wählen; Reifen und Kissen tragen, Bänke und Kästen nur Erwachsene; Schritte zählen.",
             "p2": "Bauplan zeichnen und erklären, den Wackel-Test machen, Regeln vorschlagen."
           },
           "zugang": [
@@ -5218,57 +5367,67 @@
             "planB": "Keine Halle frei: Parcours im Flur oder Hof aus Kissen, Stühlen, Reifen und Klebeband-Linien.",
             "sicherheit": [
               "Matten unter jede Station, von der man herunterkommt; jedes Gerät vorher auf Wackeln prüfen.",
-              "Einer nach dem anderen: Abstand halten, das Ende der Station frei machen."
+              "Einer nach dem anderen: Abstand halten, das Ende der Station frei machen.",
+              "standard:fotos"
             ]
           },
           "experiment": {
             "titel": "Warum springen wir auf die Matte?",
-            "frage": "Was passiert mit einer Knetkugel, wenn sie auf den Boden und auf die Matte fällt?",
+            "frage": "Wo springt ein Ball höher zurück: vom Hallenboden oder von der dicken Matte?",
             "material": [
               {
-                "text": "2 gleich große Kugeln aus Knete",
-                "bild": "icon:circle"
+                "text": "1 Gummiball (Spielplatzball)",
+                "bild": "icon:ball-basketball"
               },
               {
-                "text": "1 dicke Turnmatte",
-                "bild": "icon:rectangle"
+                "text": "1 dicke Weichbodenmatte",
+                "bild": "motiv:turnmatte"
               },
               {
                 "text": "Kreppband als Markierung in Hüfthöhe",
                 "bild": "icon:ruler-measure"
               },
               {
-                "text": "Steine und 2 Becher zum Vermuten",
-                "bild": "motiv:becher"
+                "text": "Große Bausteine zum Abstimmen, einer je Kind",
+                "bild": "icon:cube"
               }
             ],
             "schritte": [
+              "Vermuten: Wo springt der Ball höher – vom Boden oder von der Matte? Jedes Kind setzt seinen Baustein auf einen der zwei Türme.",
+              "Ein Kind hält den Ball an die Markierung und lässt ihn auf den Hallenboden fallen – nicht werfen.",
               {
-                "text": "Die Kinder rollen zwei gleich große, runde Kugeln aus Knete.",
-                "bild": "icon:circle"
-              },
-              "Vermuten: Wo bleibt die Kugel rund – auf dem Boden oder auf der Matte? Steine in die Becher.",
-              "Ein Kind lässt die erste Kugel von der Markierung auf den Hallenboden fallen.",
-              "Ein anderes Kind lässt die zweite Kugel aus derselben Höhe auf die Matte fallen.",
-              {
-                "text": "Beide Kugeln vergleichen und gemeinsam entscheiden: Wo im Parcours brauchen wir Matten?",
+                "text": "Zwei Kinder hocken daneben und zeigen mit der Hand, wie hoch der Ball zurückspringt.",
                 "bild": "motiv:auge"
+              },
+              "Aus derselben Höhe auf die Matte fallen lassen und wieder zeigen.",
+              {
+                "text": "Vergleichen und gemeinsam entscheiden: Wo im Parcours brauchen wir Matten?",
+                "bild": "icon:message-circle"
               }
             ],
-            "vermutung": "Jedes Kind legt einen Stein zu „bleibt rund“ oder „wird platt“ – für Boden und Matte. Viele sagen: „Knete ist weich, die bleibt immer rund.“",
-            "beobachten": "Auf dem Boden ist die Kugel unten platt gedrückt, auf der Matte bleibt sie fast rund. Fragen: Was macht die Matte, wenn die Kugel landet? Wie klingt es?",
-            "warumKind": "Der harte Boden bremst die Kugel ganz plötzlich – plumps, sie wird platt. Die weiche Matte gibt nach und bremst langsam. So schützt sie auch unseren Körper.",
-            "hintergrund": "Beim Aufprall muss ein fallender Körper abgebremst werden. Auf hartem Boden geschieht das auf sehr kurzem Weg und in sehr kurzer Zeit – die Kraft ist groß, die Knetkugel verformt sich. Eine weiche Matte gibt nach, verlängert Bremsweg und Bremszeit und verringert so die Kraft. So wirken auch Fallschutzböden unter Klettergeräten und der Schaumstoff in Fahrradhelmen. Die Kinder leiten daraus selbst eine Regel ab: Wo man herunterkommt, liegt eine Matte.",
+            "vermutung": "Die Kinder bauen zwei Stimmen-Türme: „Boden“ und „Matte“. Viele sagen: „Auf der Matte springt er höher, die ist weich wie ein Trampolin.“",
+            "beobachten": "Vom Boden springt der Ball fast bis zur Markierung zurück, von der dicken Matte nur ein kleines Stück. Fragen: Was macht die Matte, wenn der Ball landet? Wie klingt es?",
+            "warumKind": "Die weiche Matte gibt nach und schluckt den Schwung. Darum springt der Ball kaum zurück – und darum landen auch wir weich auf der Matte.",
+            "hintergrund": "Beim Aufprall wird ein fallender Körper abgebremst. Ein Gummiball wird auf hartem Boden kurz zusammengedrückt und gibt die Energie fast ganz zurück – er springt hoch. Eine dicke Weichbodenmatte gibt nach, verlängert Bremsweg und Bremszeit und nimmt Energie auf: Der Ball springt kaum, die Kraft beim Landen ist kleiner. So wirken auch Fallschutzböden unter Klettergeräten. Vorher einmal selbst testen – auf dünnen Gymnastikmatten ist der Unterschied kleiner.",
             "sicherheit": [
-              "Knete nur fallen lassen, nicht werfen; danach Hände waschen."
+              "Den Ball nur fallen lassen, nie werfen; niemand steht unter dem Ball."
             ],
-            "weiter": "Auf Teppich, Sand, Kissen und Rasen testen: Welche Unterlage schützt am besten? Die Kinder ordnen die Unterlagen von hart nach weich.",
+            "weiter": "Auf Teppich, Sand, Kissen und Rasen testen: Wo springt der Ball am wenigsten? Die Kinder ordnen die Unterlagen von hart nach weich.",
             "dauer": "15 Min.",
             "phaenomene": [
               "kraefte"
             ],
             "forscherblatt": {
-              "frage": "Bleibt die Kugel auf der Matte rund?",
+              "vermuten": [
+                {
+                  "bild": "icon:ball-basketball",
+                  "text": "vom Boden"
+                },
+                {
+                  "bild": "motiv:turnmatte",
+                  "text": "von der Matte"
+                }
+              ],
               "sehen": "vorher-nachher"
             }
           }
@@ -5276,13 +5435,13 @@
       }
     },
     "fr": {
-      "titel": "Chantier de mouvement : on construit un parcours",
-      "untertitel": "Prévoir, construire, essayer : grimper, tenir l’équilibre, ramper, sauter, rouler",
+      "titel": "Chantier de mouvement",
+      "untertitel": "On construit un parcours : prévoir, construire, essayer – grimper, tenir l’équilibre, ramper, sauter",
       "anleitung": "Imprimer les cartes deux fois : comme cartes-images et comme panneaux des postes du parcours. La page 2 est un jeu de dé : découper les pions, un dé ; qui arrive sur une case avec image fait le mouvement cinq fois, tous comptent.",
       "bausteine": [
         {
           "art": "aufgabe",
-          "text": "Fais le mouvement montré sur la carte.",
+          "text": "Montre la carte et dis le mot. Que fais-tu là ?",
           "symbole": [
             "zeigen",
             "zuhoeren"
@@ -5297,28 +5456,32 @@
               "titel": "le parcours"
             },
             {
+              "bild": "motiv:turnmatte",
+              "titel": "le tapis"
+            },
+            {
+              "bild": "figur:noah:froh:jubeln",
+              "titel": "sauter"
+            },
+            {
+              "bild": "icon:package",
+              "titel": "le caisson"
+            },
+            {
+              "bild": "icon:circle",
+              "titel": "le cerceau"
+            },
+            {
+              "bild": "icon:line",
+              "titel": "la corde"
+            },
+            {
               "bild": "icon:ladder",
               "titel": "grimper"
             },
             {
-              "bild": "icon:stairs-up",
-              "titel": "monter"
-            },
-            {
-              "bild": "icon:yoga",
-              "titel": "en équilibre"
-            },
-            {
               "bild": "icon:run",
               "titel": "courir"
-            },
-            {
-              "bild": "icon:footsteps",
-              "titel": "à pas de loup"
-            },
-            {
-              "bild": "icon:ball-basketball",
-              "titel": "lancer"
             },
             {
               "bild": "motiv:bein",
@@ -5408,7 +5571,7 @@
           "Comment rendre ce poste plus difficile ?"
         ],
         "tipps": [
-          "Les enfants portent le grand matériel toujours à deux ; les adultes assurent caisses et bancs.",
+          "Seuls les adultes portent et installent bancs et caissons ; les enfants portent cerceaux, cordes et coussins.",
           "Les photos du plan et du parcours terminé gardent la trace du chemin de la classe."
         ],
         "material": "bancs, caisses, tapis, cerceaux, cordes, tunnel ou tissus, cartes du matériel, grand papier, ruban adhésif, pâte à modeler, dé",
@@ -5433,43 +5596,43 @@
           "aktivitaeten": [
             {
               "art": "kreis",
-              "titel": "Notre plan",
-              "dauer": "15 Min.",
+              "titel": "Le plan du parcours",
+              "dauer": "15 min",
               "text": "Les cartes du matériel sont posées sur une grande feuille. Les enfants posent et dessinent leur parcours : où commence-t-il ? Où faut-il un tapis ? Chaque groupe présente son plan ; on photographie les plans.",
               "material": "cartes du matériel, papier, crayons"
             },
             {
               "art": "bewegung",
               "titel": "Le chantier de mouvement",
-              "dauer": "30 Min.",
-              "text": "Selon le plan choisi, les enfants montent le parcours en petites équipes – porter à deux, poser ensemble. Puis essayer, transformer, réessayer. Chaque poste a un chemin facile et un chemin difficile.",
+              "dauer": "30 min",
+              "text": "Selon le plan choisi, les enfants montent le parcours en petites équipes – porter à deux les objets légers ; bancs et caissons : adultes. Puis essayer, transformer, réessayer. Chaque poste a un chemin facile et un chemin difficile.",
               "material": "grand matériel, tapis"
             },
             {
               "art": "spiel",
               "titel": "Le test « ça bouge ? »",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Avant le départ, deux enfants contrôleurs vérifient chaque poste avec une adulte : quelque chose bouge-t-il ? Y a-t-il un tapis là où on descend ? Assez de place ? Quand tous les pouces sont levés, le poste est ouvert.",
               "material": "carte pouce"
             },
             {
               "art": "sprache",
               "titel": "Sur, sous, à travers",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante dit : « sur le banc », « sous la corde », « dans le cerceau », « sur la caisse ». Les enfants le font et répètent. Puis un enfant donne la consigne à tous.",
               "material": "banc, corde, cerceau"
             },
             {
               "art": "zaehlen",
               "titel": "Les pas sur le banc",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Pendant l’équilibre, le groupe compte les pas : qui fait de petits pas, qui de grands ? On note les nombres en traits au tableau et on compare : plus ou moins ?",
               "material": "banc, craie"
             },
             {
               "art": "ruhe",
               "titel": "Sentir son cœur",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Après le parcours, tout le monde s’allonge sur les tapis. Main sur le cœur : bat-il vite ? Expirer lentement jusqu’à ce qu’il se calme. Qui veut dit : où sens-tu tes muscles ?",
               "material": "tapis"
             }
@@ -5507,12 +5670,12 @@
             }
           ],
           "entscheiden": {
-            "text": "Mardi : chaque enfant pose son caillou sur un plan. Le plan qui a le plus de cailloux est construit d’abord, les autres les jours suivants.",
+            "text": "Mardi : chaque enfant pose son cube sur un plan. Le plan qui a le plus de cubes est construit d’abord, les autres les jours suivants.",
             "frage": "Que voulez-vous savoir faire dans le parcours ?"
           },
           "stufen": {
             "precoce": "Marcher sur le banc large, ramper dans le tunnel, sauter d’une caisse basse.",
-            "p1": "Choisir le chemin facile ou difficile, porter à deux, compter les pas.",
+            "p1": "Chemin facile ou difficile ; porter cerceaux et coussins (bancs, caissons : adultes) ; compter les pas.",
             "p2": "Dessiner et expliquer le plan, faire le test « ça bouge ? », proposer des règles."
           },
           "zugang": [
@@ -5530,57 +5693,67 @@
             "planB": "Pas de gymnase libre : parcours dans le couloir ou la cour avec coussins, chaises, cerceaux et lignes au sol.",
             "sicherheit": [
               "Un tapis sous chaque poste d’où l’on descend ; vérifier avant que rien ne bouge.",
-              "Chacun son tour : garder ses distances, libérer la fin du poste."
+              "Chacun son tour : garder ses distances, libérer la fin du poste.",
+              "standard:fotos"
             ]
           },
           "experiment": {
             "titel": "Pourquoi saute-t-on sur le tapis ?",
-            "frage": "Que devient une boule de pâte à modeler qui tombe sur le sol puis sur le tapis ?",
+            "frage": "Où une balle rebondit-elle plus haut : sur le sol du gymnase ou sur le gros tapis ?",
             "material": [
               {
-                "text": "2 boules de pâte à modeler de même taille",
-                "bild": "icon:circle"
+                "text": "1 balle en caoutchouc (ballon de cour)",
+                "bild": "icon:ball-basketball"
               },
               {
-                "text": "1 tapis de gym épais",
-                "bild": "icon:rectangle"
+                "text": "1 gros tapis de réception",
+                "bild": "motiv:turnmatte"
               },
               {
                 "text": "Ruban adhésif comme repère à hauteur des hanches",
                 "bild": "icon:ruler-measure"
               },
               {
-                "text": "Cailloux et 2 gobelets pour les hypothèses",
-                "bild": "motiv:becher"
+                "text": "Gros cubes pour voter, un par enfant",
+                "bild": "icon:cube"
               }
             ],
             "schritte": [
+              "Supposer : où la balle rebondit-elle plus haut – sur le sol ou sur le tapis ? Chaque enfant pose son cube sur l’une des deux tours.",
+              "Un enfant tient la balle au repère et la lâche sur le sol du gymnase – sans la lancer.",
               {
-                "text": "Les enfants roulent deux boules de pâte à modeler bien rondes et de même taille.",
-                "bild": "icon:circle"
-              },
-              "Supposer : où la boule reste-t-elle ronde – sur le sol ou sur le tapis ? Cailloux dans les gobelets.",
-              "Un enfant lâche la première boule depuis le repère sur le sol du gymnase.",
-              "Un autre enfant lâche la deuxième boule de la même hauteur sur le tapis.",
-              {
-                "text": "Comparer les deux boules et décider ensemble : où faut-il des tapis dans le parcours ?",
+                "text": "Deux enfants accroupis à côté montrent avec la main jusqu’où elle rebondit.",
                 "bild": "motiv:auge"
+              },
+              "La lâcher de la même hauteur sur le tapis et montrer de nouveau.",
+              {
+                "text": "Comparer et décider ensemble : où faut-il des tapis dans le parcours ?",
+                "bild": "icon:message-circle"
               }
             ],
-            "vermutung": "Chaque enfant pose un caillou sur « reste ronde » ou « devient plate » – pour le sol et pour le tapis. Beaucoup disent : « La pâte est molle, elle reste ronde. »",
-            "beobachten": "Sur le sol, la boule est aplatie en dessous ; sur le tapis, elle reste presque ronde. Demander : que fait le tapis quand la boule arrive ? Quel bruit entend-on ?",
-            "warumKind": "Le sol dur arrête la boule d’un coup – plouf, elle s’aplatit. Le tapis mou s’enfonce et freine doucement. Il protège aussi notre corps.",
-            "hintergrund": "À l’impact, un corps qui tombe doit être freiné. Sur un sol dur, cela se fait sur une très courte distance et en très peu de temps – la force est grande, la boule se déforme. Un tapis mou s’enfonce, allonge la distance et le temps de freinage et diminue ainsi la force. Les sols amortissants sous les jeux d’escalade et la mousse des casques de vélo fonctionnent ainsi. Les enfants en tirent eux-mêmes une règle : là où l’on descend, on met un tapis.",
+            "vermutung": "Les enfants construisent deux tours de vote : « sol » et « tapis ». Beaucoup disent : « Sur le tapis, elle rebondit plus haut, il est mou comme un trampoline. »",
+            "beobachten": "Sur le sol, la balle remonte presque jusqu’au repère ; sur le gros tapis, à peine. Demander : que fait le tapis quand la balle arrive ? Quel bruit entend-on ?",
+            "warumKind": "Le tapis mou s’enfonce et avale l’élan. La balle rebondit à peine – et c’est pour cela que nous atterrissons en douceur sur le tapis.",
+            "hintergrund": "À l’impact, un corps qui tombe est freiné. Sur un sol dur, une balle en caoutchouc s’écrase un instant et rend presque toute l’énergie : elle rebondit haut. Un gros tapis s’enfonce, allonge la distance et le temps de freinage et absorbe de l’énergie : la balle rebondit à peine, la force à l’atterrissage est plus faible. Les sols amortissants sous les jeux d’escalade fonctionnent ainsi. Tester une fois avant : sur un tapis fin, la différence est plus petite.",
             "sicherheit": [
-              "Laisser tomber la pâte, ne pas la lancer ; se laver les mains ensuite."
+              "Lâcher la balle, ne jamais la lancer ; personne sous la balle."
             ],
-            "weiter": "Tester sur la moquette, le sable, un coussin et la pelouse : quelle surface protège le mieux ? Les enfants les rangent de la plus dure à la plus molle.",
-            "dauer": "15 Min.",
+            "weiter": "Tester sur la moquette, le sable, un coussin et la pelouse : où rebondit-elle le moins ? Les enfants rangent les surfaces de la plus dure à la plus molle.",
+            "dauer": "15 min",
             "phaenomene": [
               "kraefte"
             ],
             "forscherblatt": {
-              "frage": "La boule reste-t-elle ronde sur le tapis ?",
+              "vermuten": [
+                {
+                  "bild": "icon:ball-basketball",
+                  "text": "sur le sol"
+                },
+                {
+                  "bild": "motiv:turnmatte",
+                  "text": "sur le tapis"
+                }
+              ],
               "sehen": "vorher-nachher"
             }
           }
@@ -5676,7 +5849,7 @@
         ],
         "satz": {
           "de": "Gestern war …, heute ist …, morgen ist …",
-          "fr": "Hier, c’était…, aujourd’hui, c’est…, demain, ce sera…",
+          "fr": "Hier…, aujourd’hui…, demain…",
           "lb": "Gëschter war …, haut ass …, muer ass …",
           "pt": "Ontem foi …, hoje é …, amanhã é …"
         },
@@ -5701,9 +5874,9 @@
       }
     },
     "de": {
-      "titel": "Gestern, heute, morgen: Zeit erleben",
-      "untertitel": "Sanduhr, Wochenband und Jahreszeiten – Zeit sehen, fühlen und zählen",
-      "anleitung": "Die Karten zweimal drucken (Sitzkreis, Memory, Wochenband). Seite 2 ist das Wochenbuch: am Montag ausschneiden und falten; jeden Tag malt das Kind ein Bild vom Tag, Erwachsene schreiben ein Wort dazu. Die letzte Seite malt das Kind am Wochenende zu Hause.",
+      "titel": "Gestern, heute, morgen",
+      "untertitel": "Zeit erleben: Sanduhr, Wochenband und Jahreszeiten – Zeit sehen, fühlen und zählen",
+      "anleitung": "Die Karten zweimal drucken (Sitzkreis, Memory). Unten die Tageskarten fürs Wochenband (die Karte „heute“ kommt an die Klammer). Seite 2 ist das Wochenbuch: am Montag ausschneiden und falten; jeden Tag malt das Kind ein Bild, Erwachsene schreiben ein Wort dazu.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -5742,7 +5915,7 @@
               "titel": "der Herbst"
             },
             {
-              "bild": "motiv:schneeball",
+              "bild": "motiv:schneemann",
               "titel": "der Winter"
             },
             {
@@ -5752,6 +5925,46 @@
             {
               "bild": "motiv:sonnenschirm",
               "titel": "der Sommer"
+            }
+          ],
+          "hoehe": 118
+        },
+        {
+          "art": "aufgabe",
+          "text": "Tageskarten: Schneide aus. Male jede Karte an.",
+          "symbole": [
+            "schneiden",
+            "malen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 46,
+          "karten": [
+            {
+              "titel": "Montag"
+            },
+            {
+              "titel": "Dienstag"
+            },
+            {
+              "titel": "Mittwoch"
+            },
+            {
+              "titel": "Donnerstag"
+            },
+            {
+              "titel": "Freitag"
+            },
+            {
+              "titel": "Samstag"
+            },
+            {
+              "titel": "Sonntag"
+            },
+            {
+              "titel": "heute"
             }
           ]
         },
@@ -5845,8 +6058,8 @@
               "art": "zaehlen",
               "titel": "Eine Minute ist so lang",
               "dauer": "10 Min.",
-              "text": "Die Sanduhr läuft eine Minute: Wie oft kannst du klatschen, hüpfen, Steine stapeln? Erst vermuten, dann zählen. Danach eine Minute still sitzen: War das kürzer oder länger?",
-              "material": "Sanduhr, Steine"
+              "text": "Die Sanduhr läuft eine Minute: Wie oft kannst du klatschen, hüpfen, Bausteine stapeln? Erst vermuten, dann zählen. Danach eine Minute still sitzen: War das kürzer oder länger?",
+              "material": "Sanduhr, Bausteine"
             },
             {
               "art": "bewegung",
@@ -5910,7 +6123,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Mit Steinen wählen die Kinder, was die Klasse tut, während die Wasseruhr läuft: singen, tanzen oder Türme bauen. Es gilt die Wahl mit den meisten Steinen.",
+            "text": "Mittwoch: Mit Bausteinen wählen die Kinder, was die Klasse tut, während die Wasseruhr läuft: singen, tanzen oder Türme bauen. Es gilt die Wahl mit den meisten Bausteinen.",
             "frage": "Was wollen wir über die Zeit wissen?"
           },
           "stufen": {
@@ -5933,7 +6146,8 @@
             "planB": "Keine Sanduhr im Haus: einen Küchenwecker oder die Wasseruhr vom Mittwoch nehmen.",
             "sicherheit": [
               "standard:wasser",
-              "Löcher in die Becher sticht nur eine Erwachsene; spitzes Werkzeug sofort wegräumen."
+              "Löcher in die Becher sticht nur eine Erwachsene; spitzes Werkzeug sofort wegräumen.",
+              "standard:fotos"
             ]
           },
           "experiment": {
@@ -5942,20 +6156,23 @@
             "material": [
               {
                 "text": "2 gleiche Joghurtbecher mit Loch: klein und groß",
-                "bild": "icon:cup"
+                "bild": "motiv:wasseruhr"
               },
               {
                 "text": "2 Gläser als Auffang",
                 "bild": "motiv:wasserglas"
               },
               "1 Kanne mit Wasser",
-              "1 Sanduhr (1 Minute)",
+              {
+                "text": "1 Sanduhr (1 Minute)",
+                "bild": "motiv:sanduhr"
+              },
               "1 Tablett und 1 Handtuch",
               "1 wasserfester Stift"
             ],
             "schritte": [
               "Die Becher auf die Gläser setzen; die Kinder halten die Löcher mit dem Finger zu.",
-              "Vermuten: Welcher Becher ist zuerst leer? Jedes Kind legt seinen Stein vor einen Becher.",
+              "Vermuten: Welcher Becher ist zuerst leer? Jedes Kind legt seinen Baustein vor einen Becher.",
               "Beide Becher gleich voll füllen. „Los!“ – alle Finger weg.",
               {
                 "text": "Währenddessen singen alle das Lied der Woche: Wie weit kommen wir, bis der Becher leer ist?",
@@ -5963,7 +6180,7 @@
               },
               "Am Becher mit kleinem Loch Striche malen: „ein Lied“, „zwei Lieder“ – das ist unsere Uhr."
             ],
-            "vermutung": "Jedes Kind legt seinen Stein vor den Becher, der zuerst leer ist. Manche sagen: „Gleich schnell, es ist ja gleich viel Wasser.“",
+            "vermutung": "Jedes Kind legt seinen Baustein vor den Becher, der zuerst leer ist. Manche sagen: „Gleich schnell, es ist ja gleich viel Wasser.“",
             "beobachten": "Der Becher mit großem Loch ist schnell leer, der mit kleinem tropft lange. Genau hinsehen: Läuft es am Ende langsamer? Wie weit kamen wir im Lied?",
             "warumKind": "Durch ein großes Loch passt viel Wasser auf einmal, durch ein kleines nur wenig. Darum braucht der Becher mit dem kleinen Loch länger – so können wir Zeit messen.",
             "hintergrund": "Wie schnell Wasser ausläuft, hängt von der Größe des Lochs und von der Höhe des Wassers darüber ab. Sinkt der Wasserspiegel, nimmt der Druck ab, und der Strahl wird schwächer – darum läuft es am Ende langsamer. Wasseruhren gehören zu den ältesten Zeitmessern der Menschen; wie die Sanduhr messen sie eine Zeitspanne, nicht die Uhrzeit. Für Kinder wird Zeit so sichtbar: Ein Lied dauert so viel Wasser.",
@@ -5985,9 +6202,9 @@
       }
     },
     "fr": {
-      "titel": "Hier, aujourd’hui, demain : vivre le temps",
-      "untertitel": "Sablier, ruban de la semaine et saisons – voir, sentir et compter le temps",
-      "anleitung": "Imprimer les cartes deux fois (cercle, memory, ruban de la semaine). La page 2 est le livre de la semaine : le découper et le plier lundi ; chaque jour, l’enfant dessine un moment, l’adulte écrit un mot. La dernière page se dessine à la maison pendant le week-end.",
+      "titel": "Hier, aujourd’hui, demain",
+      "untertitel": "Vivre le temps : sablier, ruban de la semaine et saisons – voir, sentir et compter le temps",
+      "anleitung": "Imprimer les cartes deux fois (cercle, memory). En bas, les cartes des jours pour le ruban (la carte « aujourd’hui » va sur la pince). La page 2 est le livre de la semaine : le découper et le plier lundi ; chaque jour, l’enfant dessine, l’adulte écrit un mot.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -6026,7 +6243,7 @@
               "titel": "l’automne"
             },
             {
-              "bild": "motiv:schneeball",
+              "bild": "motiv:schneemann",
               "titel": "l’hiver"
             },
             {
@@ -6036,6 +6253,46 @@
             {
               "bild": "motiv:sonnenschirm",
               "titel": "l’été"
+            }
+          ],
+          "hoehe": 118
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cartes des jours : découpe. Colorie chaque carte.",
+          "symbole": [
+            "schneiden",
+            "malen"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 46,
+          "karten": [
+            {
+              "titel": "lundi"
+            },
+            {
+              "titel": "mardi"
+            },
+            {
+              "titel": "mercredi"
+            },
+            {
+              "titel": "jeudi"
+            },
+            {
+              "titel": "vendredi"
+            },
+            {
+              "titel": "samedi"
+            },
+            {
+              "titel": "dimanche"
+            },
+            {
+              "titel": "aujourd’hui"
             }
           ]
         },
@@ -6121,42 +6378,42 @@
             {
               "art": "kreis",
               "titel": "La pince du jour",
-              "dauer": "10 Min.",
-              "text": "Sept cartes des jours pendent au ruban de la semaine. Chaque matin, un enfant avance la grande pince et tous disent : « Hier, c’était…, aujourd’hui, c’est…, demain, ce sera… » Puis un enfant raconte un moment d’hier.",
+              "dauer": "10 min",
+              "text": "Sept cartes des jours pendent au ruban de la semaine. Chaque matin, un enfant avance la grande pince et tous disent : « Hier, c’était…, aujourd’hui, c’est…, demain… » Puis un enfant raconte un moment d’hier.",
               "material": "ruban, cartes des jours, grande pince"
             },
             {
               "art": "zaehlen",
               "titel": "Une minute, c’est long comment ?",
-              "dauer": "10 Min.",
-              "text": "Le sablier coule une minute : combien de fois peux-tu taper des mains, sauter, empiler des cailloux ? D’abord supposer, puis compter. Ensuite, rester assis une minute en silence : plus court ou plus long ?",
-              "material": "sablier, cailloux"
+              "dauer": "10 min",
+              "text": "Le sablier coule une minute : combien de fois peux-tu taper des mains, sauter, empiler des cubes ? D’abord supposer, puis compter. Ensuite, rester assis une minute en silence : plus court ou plus long ?",
+              "material": "sablier, cubes"
             },
             {
               "art": "bewegung",
               "titel": "Matin, midi, soir et nuit",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Au « matin », tous s’étirent et bâillent ; à « midi », ils forment le soleil avec les bras ; au « soir », ils marchent lentement ; à la « nuit », ils s’allongent sans bouger. D’abord l’enseignante appelle, puis un enfant.",
               "material": "musique"
             },
             {
               "art": "sprache",
               "titel": "Les jours dans plusieurs langues",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Lundi, Montag, Méindeg, segunda-feira : les enfants écoutent les jours dans les langues de la classe et tapent les syllabes. Quel jour a le plus de syllabes ? Les familles ajoutent leur langue.",
               "material": "cartes des jours"
             },
             {
               "art": "gestalten",
               "titel": "La chaîne des dodos",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Jusqu’au prochain événement de la classe, les enfants font une chaîne en papier : un anneau par nuit. Chaque matin, un enfant en retire un. Combien en reste-t-il – plus ou moins qu’hier ?",
               "material": "bandes de papier, colle"
             },
             {
               "art": "kreis",
               "titel": "La ronde des saisons",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les cartes automne, hiver, printemps, été forment un cercle. Où sommes-nous ? Qu’est-ce qui vient ensuite ? Les enfants ajoutent trouvailles et images : feuille, bonnet, fleur, chapeau de soleil.",
               "material": "cartes, trouvailles"
             }
@@ -6194,7 +6451,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : avec des cailloux, les enfants choisissent ce que fait la classe pendant que coule l’horloge à eau : chanter, danser ou construire des tours.",
+            "text": "Mercredi : avec des cubes, les enfants choisissent ce que fait la classe pendant que coule l’horloge à eau : chanter, danser ou construire des tours.",
             "frage": "Que voulons-nous savoir sur le temps ?"
           },
           "stufen": {
@@ -6217,7 +6474,8 @@
             "planB": "Pas de sablier : prendre un minuteur de cuisine ou l’horloge à eau de mercredi.",
             "sicherheit": [
               "standard:wasser",
-              "Seule une adulte perce les pots ; ranger tout de suite l’outil pointu."
+              "Seule une adulte perce les pots ; ranger tout de suite l’outil pointu.",
+              "standard:fotos"
             ]
           },
           "experiment": {
@@ -6226,20 +6484,23 @@
             "material": [
               {
                 "text": "2 pots de yaourt identiques percés : petit et grand trou",
-                "bild": "icon:cup"
+                "bild": "motiv:wasseruhr"
               },
               {
                 "text": "2 verres pour recueillir l’eau",
                 "bild": "motiv:wasserglas"
               },
               "1 carafe d’eau",
-              "1 sablier (1 minute)",
+              {
+                "text": "1 sablier (1 minute)",
+                "bild": "motiv:sanduhr"
+              },
               "1 plateau et 1 serviette",
               "1 feutre indélébile"
             ],
             "schritte": [
               "Poser les pots sur les verres ; les enfants bouchent les trous avec le doigt.",
-              "Supposer : quel pot sera vide en premier ? Chaque enfant pose son caillou devant un pot.",
+              "Supposer : quel pot sera vide en premier ? Chaque enfant pose son cube devant un pot.",
               "Remplir les deux pots autant. « Partez ! » – on retire les doigts.",
               {
                 "text": "Pendant ce temps, tout le monde chante la chanson de la semaine : jusqu’où arrive-t-on ?",
@@ -6247,7 +6508,7 @@
               },
               "Sur le pot au petit trou, dessiner des traits : « une chanson », « deux chansons » – voilà notre horloge."
             ],
-            "vermutung": "Chaque enfant pose son caillou devant le pot qui sera vide en premier. Certains disent : « Pareil, il y a autant d’eau. »",
+            "vermutung": "Chaque enfant pose son cube devant le pot qui sera vide en premier. Certains disent : « Pareil, il y a autant d’eau. »",
             "beobachten": "Le pot au grand trou se vide vite, celui au petit trou goutte longtemps. Bien regarder : ça coule plus lentement à la fin ? Jusqu’où sommes-nous arrivés dans la chanson ?",
             "warumKind": "Par un grand trou, beaucoup d’eau passe à la fois ; par un petit, seulement un peu. Le pot au petit trou met donc plus longtemps – on peut mesurer le temps avec.",
             "hintergrund": "La vitesse d’écoulement dépend de la taille du trou et de la hauteur d’eau au-dessus. Quand le niveau baisse, la pression diminue et le jet faiblit – c’est pourquoi l’eau coule plus lentement à la fin. Les horloges à eau sont parmi les plus anciens instruments de mesure du temps ; comme le sablier, elles mesurent une durée, pas l’heure. Le temps devient visible pour les enfants : une chanson dure tant d’eau.",
@@ -6256,7 +6517,7 @@
               "Seule une adulte perce les pots ; ranger tout de suite l’outil pointu."
             ],
             "weiter": "Lancer en même temps l’horloge à eau et le sablier : lequel dure le plus ? Puis essayer un troisième trou, moyen.",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "kraefte"
             ],

@@ -48,6 +48,10 @@
           "spalten": 3,
           "karten": [
             {
+              "bild": "motiv:leuchttisch",
+              "titel": "der Leuchttisch"
+            },
+            {
               "bild": "icon:bulb",
               "titel": "das Licht"
             },
@@ -87,9 +91,19 @@
         {
           "art": "forscherblatt",
           "frage": "Zwei Farben übereinander: Gibt es eine neue Farbe?",
-          "bild": "icon:palette",
+          "bild": "motiv:leuchttisch",
           "sehen": "vorher-nachher",
-          "name": false
+          "name": false,
+          "vermuten": [
+            {
+              "bild": "motiv:leuchttisch",
+              "text": "bleibt gelb, blau"
+            },
+            {
+              "bild": "icon:palette",
+              "text": "neue Farbe"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -151,7 +165,7 @@
               "art": "gestalten",
               "titel": "Lichtbilder legen",
               "dauer": "25 Min.",
-              "text": "Leitaktivität: Die Kinder legen frei Bilder aus Folienstücken, Blättern, Deckeln und Muscheln. Die Lehrperson fotografiert jedes Bild von oben und schreibt den Satz des Kindes wörtlich auf. Fotos und Sätze werden zum Lichtbuch der Klasse.",
+              "text": "Die Kinder legen frei Bilder aus Folienstücken, Blättern, Deckeln und Muscheln. Die Lehrperson fotografiert jedes Bild von oben und schreibt den Satz des Kindes wörtlich auf. Fotos und Sätze werden zum Lichtbuch der Klasse.",
               "material": "Folienstücke, Naturmaterial, Deckel, Kamera"
             },
             {
@@ -295,6 +309,10 @@
           "spalten": 3,
           "karten": [
             {
+              "bild": "motiv:leuchttisch",
+              "titel": "la table lumineuse"
+            },
+            {
               "bild": "icon:bulb",
               "titel": "la lumière"
             },
@@ -334,9 +352,19 @@
         {
           "art": "forscherblatt",
           "frage": "Deux couleurs l’une sur l’autre : une nouvelle couleur ?",
-          "bild": "icon:palette",
+          "bild": "motiv:leuchttisch",
           "sehen": "vorher-nachher",
-          "name": false
+          "name": false,
+          "vermuten": [
+            {
+              "bild": "motiv:leuchttisch",
+              "text": "reste jaune, bleu"
+            },
+            {
+              "bild": "icon:palette",
+              "text": "nouvelle couleur"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -383,42 +411,42 @@
             {
               "art": "kreis",
               "titel": "Allumez ! – Le temps du chuchotement",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Pénombre. À « Allumez ! », tous répondent « Allumez ! », puis on chuchote. Chaque enfant pose un objet sur la lumière et dit tout bas ce qu’il voit : « La feuille a des lignes. » Qui ne veut pas parler montre.",
               "material": "table lumineuse, panier avec feuilles, plumes, coquillages"
             },
             {
               "art": "sinne",
               "titel": "La lumière passe-t-elle ?",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Les enfants tiennent des objets devant la lampe et les posent sur un plateau : « la lumière passe » ou « la lumière reste dehors ». Pour les cas discutés, comme la plume, un troisième plateau : « un peu ».",
               "material": "lampes de poche, plateaux, verre, caillou, cube en bois, plume"
             },
             {
               "art": "gestalten",
               "titel": "Des images de lumière",
-              "dauer": "25 Min.",
-              "text": "Activité phare : les enfants composent des images avec des morceaux de film, des feuilles, des couvercles. L’adulte photographie chaque image et note mot pour mot la phrase de l’enfant : c’est le livre de lumière.",
+              "dauer": "25 min",
+              "text": "Les enfants composent des images avec des morceaux de film, des feuilles, des couvercles. L’adulte photographie chaque image et note mot pour mot la phrase de l’enfant : c’est le livre de lumière.",
               "material": "morceaux de films, matériaux naturels, couvercles, appareil photo"
             },
             {
               "art": "zaehlen",
               "titel": "Des motifs sur la lumière",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "L’adulte pose un motif de pastilles : jaune, bleu, jaune, bleu … Les enfants le continuent. Puis on glisse une erreur, et les enfants la trouvent. Les grands inventent des motifs ABC et comptent les jaunes.",
               "material": "pastilles transparentes de couleur ou morceaux de film"
             },
             {
               "art": "spiel",
               "titel": "Qu’y a-t-il sous le papier ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants ferment les yeux. L’adulte pose un objet sur la table – cuillère, clé, peigne – et une feuille blanche dessus. Le contour apparaît à travers le papier : qu’est-ce que c’est ? Puis on découvre l’objet.",
               "material": "cuillère, clé, peigne, pince à linge, papier blanc"
             },
             {
               "art": "bewegung",
               "titel": "Attrape le point de lumière",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Deux lampes, l’une avec un film jaune, l’autre avec un film bleu, projettent des points au sol. Ils bougent lentement, les enfants essaient de marcher dessus. Jaune : on saute ; bleu : pas de loup. Jamais vers le visage.",
               "material": "deux lampes de poche, films colorés, ruban adhésif"
             }
@@ -514,7 +542,7 @@
               "Les bords des films peuvent couper : arrondir les coins ou les border de ruban adhésif."
             ],
             "weiter": "Le lendemain : poser sur la table lumineuse des gobelets transparents d’eau colorée et les glisser l’un derrière l’autre. Les mêmes nouvelles couleurs apparaissent-elles ?",
-            "dauer": "25 Min.",
+            "dauer": "25 min",
             "phaenomene": [
               "licht",
               "farben"
@@ -674,6 +702,10 @@
             {
               "bild": "icon:bowl",
               "titel": "die Schale"
+            },
+            {
+              "bild": "motiv:rad",
+              "titel": "das Rad"
             }
           ]
         },
@@ -784,7 +816,7 @@
               "art": "gestalten",
               "titel": "Mein Quadrat mit Ringen",
               "dauer": "25 Min.",
-              "text": "Leitaktivität: Auf einem quadratischen Papier malt jedes Kind einen Kreis in die Mitte und Ring um Ring nach außen, mit Wachsmalkreide oder Fingerfarbe. Die Farben wählt es selbst. Alle Quadrate zusammen ergeben ein großes Klassenbild.",
+              "text": "Auf einem quadratischen Papier malt jedes Kind einen Kreis in die Mitte und Ring um Ring nach außen, mit Wachsmalkreide oder Fingerfarbe. Die Farben wählt es selbst. Alle Quadrate zusammen ergeben ein großes Klassenbild.",
               "material": "quadratische Papiere, Wachsmalkreiden, Fingerfarbe"
             },
             {
@@ -842,7 +874,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Mit Steinen entscheiden die Kinder, ob das Klassenbild in Reihen hängt wie bei Kandinsky oder als großer Kreis. So wird es aufgehängt.",
+            "text": "Donnerstag: Mit Bausteinen entscheiden die Kinder, ob das Klassenbild in Reihen hängt wie bei Kandinsky oder als großer Kreis. So wird es aufgehängt.",
             "frage": "Was wollen wir über Kandinsky und seine Bilder wissen?"
           },
           "stufen": {
@@ -891,7 +923,7 @@
               "Zwei Kinder tropfen zugleich an zwei Stellen. Was passiert, wo sich die Ringe treffen?",
               "Mit der Lampe schräg leuchten: Die Ringe werfen helle und dunkle Kreise auf den Boden der Schale."
             ],
-            "vermutung": "Bildkarten legen: ein Kreis – viele Kreise ineinander – ein Durcheinander. Jedes Kind legt seinen Stein dazu. Oft hört man: „Der Tropfen macht ein Loch.“",
+            "vermutung": "Bildkarten legen: ein Kreis – viele Kreise ineinander – ein Durcheinander. Jedes Kind legt seinen Baustein dazu. Oft hört man: „Der Tropfen macht ein Loch.“",
             "beobachten": "Wie viele Ringe zählst du? Werden sie größer oder kleiner, stärker oder schwächer? Was passiert, wenn zwei Ringgruppen sich treffen – halten sie an oder laufen sie weiter?",
             "warumKind": "Der Tropfen schubst das Wasser an. Das Wasser gibt den Schubs weiter, nach allen Seiten gleich – darum entstehen runde Ringe.",
             "hintergrund": "Der Aufprall drückt die Wasseroberfläche ein; sie schwingt zurück und erzeugt Wellen, die sich in alle Richtungen gleich schnell ausbreiten – so entstehen konzentrische Ringe. Je weiter sie laufen, desto flacher werden sie, weil sich die Energie auf einen immer größeren Kreis verteilt. Treffen zwei Wellen aufeinander, überlagern sie sich zu einem Muster (Interferenz) und laufen danach unverändert weiter. Kandinsky malte keine Wellen – aber die Kinder finden seine Form hier in der Natur wieder.",
@@ -956,6 +988,10 @@
             {
               "bild": "icon:bowl",
               "titel": "le bac"
+            },
+            {
+              "bild": "motiv:rad",
+              "titel": "la roue"
             }
           ]
         },
@@ -1051,42 +1087,42 @@
             {
               "art": "kreis",
               "titel": "Le tableau sous le tissu",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "La reproduction est cachée sous un tissu qu’on retire peu à peu. Les enfants gardent les « mains de musée » dans le dos et regardent une minute en silence. Puis chacun dit : « Je vois … » L’adulte note les phrases mot pour mot.",
               "material": "reproduction, tissu, crayon et papier"
             },
             {
               "art": "bewegung",
               "titel": "Des anneaux au sol",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Avec cordes et cerceaux, les enfants posent de grands anneaux emboîtés. Ils sautent d’anneau en anneau vers l’intérieur ; à « Au milieu ! », tous vont dans le plus petit. En petits groupes, pour éviter les chocs.",
               "material": "cordes, cerceaux"
             },
             {
               "art": "gestalten",
               "titel": "Mon carré aux anneaux",
-              "dauer": "25 Min.",
-              "text": "Activité phare : sur un papier carré, chaque enfant peint un cercle au centre, puis anneau après anneau vers l’extérieur, aux couleurs qu’il choisit. Tous les carrés forment un grand tableau de classe.",
+              "dauer": "25 min",
+              "text": "Sur un papier carré, chaque enfant peint un cercle au centre, puis anneau après anneau vers l’extérieur, aux couleurs qu’il choisit. Tous les carrés forment un grand tableau de classe.",
               "material": "papiers carrés, craies grasses, peinture au doigt"
             },
             {
               "art": "sprache",
               "titel": "Les couleurs ont des émotions",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Trois mots au milieu : joyeux, calme, sauvage. Chaque enfant pose une carte de couleur et dit pourquoi. Pas de mauvaise réponse : pour Lina, le bleu est calme, pour Diogo, il est joyeux. Chacun voit les couleurs à sa façon.",
               "material": "cartes de couleurs, trois cartes-mots"
             },
             {
               "art": "zaehlen",
               "titel": "Des anneaux dans la nature",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Une rondelle de bois et un demi-oignon (coupé par l’adulte) sont sur la table. À la loupe, les enfants comptent les anneaux : combien en trouves-tu ? Où sont-ils serrés, où espacés ? Puis on compare avec les carrés de Kandinsky.",
               "material": "rondelle de bois, oignon, loupes"
             },
             {
               "art": "theater",
               "titel": "Notre exposition",
-              "dauer": "30 Min.",
+              "dauer": "30 min",
               "text": "Les familles arrivent. Deux enfants accueillent, d’autres guident de petits groupes : « Voici mon tableau. Au milieu, il y a du rouge. » Qui ne veut pas parler montre avec la baguette. Pour finir, on applaudit tout le monde.",
               "material": "œuvres, ruban adhésif, baguette"
             }
@@ -1124,7 +1160,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : avec des cailloux, les enfants décident si le tableau de classe est accroché en rangées, comme chez Kandinsky, ou en grand cercle. On l’accroche ainsi.",
+            "text": "Jeudi : avec des cubes, les enfants décident si le tableau de classe est accroché en rangées, comme chez Kandinsky, ou en grand cercle. On l’accroche ainsi.",
             "frage": "Que voulons-nous savoir sur Kandinsky et ses tableaux ?"
           },
           "stufen": {
@@ -1173,7 +1209,7 @@
               "Deux enfants lâchent une goutte en même temps à deux endroits. Que se passe-t-il quand les anneaux se rencontrent ?",
               "Éclairer de biais avec la lampe : les anneaux dessinent des cercles clairs et sombres au fond du bac."
             ],
-            "vermutung": "Poser les cartes : un cercle – des cercles emboîtés – un fouillis. Chaque enfant y met son caillou. Souvent : « La goutte fait un trou. »",
+            "vermutung": "Poser les cartes : un cercle – des cercles emboîtés – un fouillis. Chaque enfant y met son cube. Souvent : « La goutte fait un trou. »",
             "beobachten": "Combien d’anneaux comptes-tu ? Grandissent-ils ou rapetissent-ils ? Que se passe-t-il quand deux groupes d’anneaux se croisent – s’arrêtent-ils ou continuent-ils ?",
             "warumKind": "La goutte bouscule l’eau. L’eau transmet la poussée de tous les côtés pareil : c’est pour ça que les anneaux sont ronds.",
             "hintergrund": "Le choc enfonce la surface de l’eau ; elle rebondit et crée des ondes qui partent dans toutes les directions à la même vitesse : d’où les anneaux concentriques. Plus elles s’éloignent, plus elles s’aplatissent, car l’énergie se répartit sur un cercle toujours plus grand. Quand deux ondes se rencontrent, elles se superposent (interférence) puis continuent inchangées. Kandinsky n’a pas peint des vagues, mais les enfants retrouvent ici sa forme dans la nature.",
@@ -1182,7 +1218,7 @@
               "Essuyer tout de suite l’eau renversée : on glisse."
             ],
             "weiter": "Le lendemain : peindre des cercles à l’aquarelle sur du papier mouillé. Les anneaux de couleur se mélangent-ils ? Dehors, après la pluie, lâcher un caillou dans une flaque et compter les anneaux.",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "kraefte"
             ]
@@ -1218,7 +1254,7 @@
           {
             "de": "der Pinsel",
             "fr": "le pinceau",
-            "lb": "de Pinsel",
+            "lb": "de Pënsel",
             "pt": "o pincel"
           },
           {
@@ -1478,7 +1514,7 @@
           "aktivitaeten": [
             {
               "art": "kreis",
-              "titel": "Wie klingt das?",
+              "titel": "Welches Gesicht hat die Musik?",
               "dauer": "10 Min.",
               "text": "Drei kurze Stücke: ruhig, stürmisch, hüpfend. Nach jedem Stück hält jedes Kind die Gesichtskarte hoch, die für es passt. Die Lehrperson fragt nach: „Woran hast du das gehört?“ Verschiedene Karten sind erwünscht.",
               "material": "Abspielgerät, Gesichtskarten"
@@ -1494,7 +1530,7 @@
               "art": "gestalten",
               "titel": "Die Gefühle-Partitur",
               "dauer": "25 Min.",
-              "text": "Leitaktivität: Eine lange Papierbahn liegt am Boden. Zu jedem Stück malen die Kinder Streifen, Linien und Punkte in Farben ihrer Wahl; die Lehrperson schreibt Kinderworte dazu („Das ist der Sturm“). Dann wird die Partitur mit Instrumenten gespielt.",
+              "text": "Eine lange Papierbahn liegt am Boden. Zu jedem Stück malen die Kinder Streifen, Linien und Punkte in Farben ihrer Wahl; die Lehrperson schreibt Kinderworte dazu („Das ist der Sturm“). Dann wird die Partitur mit Instrumenten gespielt.",
               "material": "Papierbahn, Wachsmalkreiden, Instrumente"
             },
             {
@@ -1552,7 +1588,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Mit Steinen wählen die Kinder, welches der drei Stücke beim Konzert erklingt und mit welchen Instrumenten.",
+            "text": "Donnerstag: Mit Bausteinen wählen die Kinder, welches der drei Stücke beim Konzert erklingt und mit welchen Instrumenten.",
             "frage": "Was wollen wir über Musik und Gefühle wissen?"
           },
           "stufen": {
@@ -1817,42 +1853,42 @@
           "aktivitaeten": [
             {
               "art": "kreis",
-              "titel": "Comment ça sonne ?",
-              "dauer": "10 Min.",
+              "titel": "Quel visage a la musique ?",
+              "dauer": "10 min",
               "text": "Trois courts morceaux : calme, orageux, sautillant. Après chacun, chaque enfant lève la carte visage qui lui va. L’adulte demande : « À quoi l’as-tu entendu ? » Des cartes différentes sont bienvenues.",
               "material": "lecteur audio, cartes visages"
             },
             {
               "art": "bewegung",
               "titel": "Statues des émotions",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "La musique joue, chacun bouge à son rythme : à pas de loup, en sautant, en tapant du pied. Quand elle s’arrête, l’adulte montre une carte visage et tous se figent en statue. Un enfant passe et devine.",
               "material": "lecteur audio, cartes visages"
             },
             {
               "art": "gestalten",
               "titel": "La partition des émotions",
-              "dauer": "25 Min.",
-              "text": "Activité phare : un long papier au sol. Pour chaque morceau, les enfants peignent bandes, lignes et points aux couleurs choisies ; l’adulte note leurs mots (« C’est l’orage »). Puis on joue la partition avec des instruments.",
+              "dauer": "25 min",
+              "text": "Un long papier au sol. Pour chaque morceau, les enfants peignent bandes, lignes et points aux couleurs choisies ; l’adulte note leurs mots (« C’est l’orage »). Puis on joue la partition avec des instruments.",
               "material": "long papier, craies grasses, instruments"
             },
             {
               "art": "musik",
               "titel": "Chante ton prénom",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’adulte chante une courte mélodie vite et aigu, puis lentement et grave : comment ça sonne ? Ensuite, chaque enfant qui le veut chante son prénom – joyeux, fatigué, fâché – et le groupe le répète."
             },
             {
               "art": "sprache",
               "titel": "Les chansons de la maison",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Les familles envoient une chanson de leur langue, enregistrée ou par son titre. Les enfants écoutent, devinent l’ambiance et bougent. L’enfant de la famille peut raconter quand on la chante – sans obligation.",
               "material": "enregistrements des familles"
             },
             {
               "art": "ruhe",
               "titel": "De la musique pour se reposer",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Les enfants sont couchés sur le dos, une main sur le ventre ; un morceau calme passe. Ensuite, chacun dit un mot : comment te sens-tu ? Qui veut dessine l’émotion en l’air avec le doigt."
             }
           ],
@@ -1891,7 +1927,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : avec des cailloux, les enfants choisissent lequel des trois morceaux sera joué au concert, et avec quels instruments.",
+            "text": "Jeudi : avec des cubes, les enfants choisissent lequel des trois morceaux sera joué au concert, et avec quels instruments.",
             "frage": "Que voulons-nous savoir sur la musique et les émotions ?"
           },
           "stufen": {
@@ -1956,7 +1992,7 @@
               "Ne pas faire claquer les élastiques ni viser les autres ; garder le visage à distance en tendant."
             ],
             "weiter": "Appuyer le doigt sur l’élastique pour le raccourcir : que devient le son ? Puis inventer une petite mélodie « joyeuse » et une « triste ».",
-            "dauer": "25 Min.",
+            "dauer": "25 min",
             "phaenomene": [
               "schall"
             ]
@@ -2072,7 +2108,7 @@
     "de": {
       "titel": "Zirkus Spillschoul",
       "untertitel": "Jonglieren, balancieren, auftreten: Jede Rolle zählt",
-      "anleitung": "Karten für den Sitzkreis und als Rollenkarten zum Wählen. Seite 2 ist das Forscherblatt zum Balancier-Clown: vermuten, ohne und mit Knete malen, dann zeigen, wie es war. Den Pappclown schneidet vorher eine Lehrperson aus.",
+      "anleitung": "Karten für den Sitzkreis und als Rollenkarten zum Wählen. Auf Seite 2 kreist das Kind seine Rolle ein (auch Licht, Musik und Kasse sind Rollen) und malt sich in der Manege. Das Forscherblatt zum Balancier-Clown gibt es als Zusatzseite; den Pappclown schneidet vorher eine Lehrperson aus.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -2128,12 +2164,57 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "frage": "Bleibt der Clown auf dem Finger stehen?",
-          "bild": "motiv:clown",
-          "sehen": "vorher-nachher",
-          "ergebnis": "gesichter",
-          "name": false
+          "art": "aufgabe",
+          "text": "Welche Rolle spielst du im Zirkus? Kreise ein.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "motiv:clown",
+              "text": "der Clown"
+            },
+            {
+              "bild": "motiv:magier",
+              "text": "der Magier"
+            },
+            {
+              "bild": "icon:feather",
+              "text": "die Artistin"
+            },
+            {
+              "bild": "motiv:trommel",
+              "text": "die Musik"
+            },
+            {
+              "bild": "motiv:taschenlampe",
+              "text": "das Licht"
+            },
+            {
+              "bild": "motiv:fahrkarte",
+              "text": "die Kasse"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Male dich in der Manege.",
+          "symbole": [
+            "malen"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 8
         }
       ],
       "lehrer": {
@@ -2141,8 +2222,8 @@
         "ablauf": [
           "Montag – Manege frei: Trommelwirbel, Rollenkarten (Clown, Artistin, Magier, Licht, Musik, Kasse); Fragenplakat.",
           "Dienstag – Stationen: Tücher jonglieren, Feder balancieren, Seiltanz am Boden, Clownsgesichter.",
-          "Mittwoch – Rollenwahl mit Steinen, Proben in kleinen Gruppen; Zählreim mit Trommel.",
-          "Donnerstag – Experiment: der Balancier-Clown, danach das Forscherblatt; Generalprobe mit Licht und Musik.",
+          "Mittwoch – Rollenwahl mit Bausteinen und Seite 2, Proben in kleinen Gruppen; Zählreim mit Trommel.",
+          "Donnerstag – Experiment: der Balancier-Clown, danach das Forscherblatt (Zusatzseite); Generalprobe mit Licht und Musik.",
           "Freitag – Vorstellung für eine Nachbarklasse: Begrüßung, drei Nummern, Verbeugung, Applaus."
         ],
         "differenzierung": {
@@ -2158,8 +2239,8 @@
           "Die Raubtiernummer spielen die Stofftiere der Klasse – kein Kind muss in den Käfig.",
           "Seiltanz nur am Boden auf Seil oder Klebeband; Matten unter die Stationen."
         ],
-        "achtung": "Auftreten darf, muss aber nicht: Wer nicht auf die Bühne will, macht Licht, Musik oder Kasse – eine vollwertige Rolle. Druck oder Vergleiche vermeiden.",
-        "material": "Chiffontücher, lange Federn, Seil oder Klebeband, Matten, Reifen, Stofftiere, Trommel, Taschenlampen, Pappe, Knete",
+        "achtung": "Auftreten ist freiwillig: Licht, Musik oder Kasse sind vollwertige Rollen. Keinen Druck, keine Vergleiche.",
+        "material": "Chiffontücher, Federn, Seil, Matten, Reifen, Stofftiere, Trommel, Taschenlampen, Pappe, Knete",
         "hintergrund": "Zirkuskünste verbinden Bewegung mit sozialem Lernen: Tücher jonglieren (sie fallen langsam) und Balancieren fordern Auge-Hand-Koordination, Gleichgewicht und Konzentration. Weil es viele Rollen gibt, findet jedes Kind seinen Platz, auch hinter der Bühne. Proben, Warten und Applaus für andere üben Selbststeuerung im Rollenspiel (Bodrova & Leong, 2007). Die WHO empfiehlt Drei- bis Vierjährigen täglich mindestens 180 Minuten Bewegung, davon 60 kräftige (WHO, 2019). Mut wird nie erzwungen; gelungene Versuche werden benannt und gewürdigt.",
         "quellen": [
           "Bodrova, E. & Leong, D. J. (2007). Tools of the Mind: The Vygotskian Approach to Early Childhood Education (2nd ed.). Upper Saddle River, NJ: Pearson.",
@@ -2255,7 +2336,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Jedes Kind legt seinen Stein zu einer Rollenkarte. Die Rollen werden nach diesen Wünschen verteilt; jede Rolle wird beklatscht.",
+            "text": "Mittwoch: Jedes Kind legt seinen Baustein zu einer Rollenkarte. Die Rollen werden nach diesen Wünschen verteilt; jede Rolle wird beklatscht.",
             "frage": "Was wollen wir über den Zirkus wissen?"
           },
           "stufen": {
@@ -2292,7 +2373,7 @@
               },
               {
                 "text": "Knete: zwei gleich große Kugeln je Clown (walnussgroß)",
-                "bild": "icon:circle"
+                "bild": "motiv:knete"
               },
               "Buntstifte zum Anmalen",
               {
@@ -2322,7 +2403,21 @@
             "phaenomene": [
               "kraefte",
               "gewicht"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Bleibt der Clown auf dem Finger stehen?",
+              "sehen": "vorher-nachher",
+              "vermuten": [
+                {
+                  "bild": "motiv:clown",
+                  "text": "ohne Knete"
+                },
+                {
+                  "bild": "motiv:knete",
+                  "text": "mit Knete"
+                }
+              ]
+            }
           }
         }
       }
@@ -2330,7 +2425,7 @@
     "fr": {
       "titel": "Cirque Spillschoul",
       "untertitel": "Jongler, garder l’équilibre, entrer en piste : chaque rôle compte",
-      "anleitung": "Cartes pour le cercle et comme cartes de rôles à choisir. La page 2 est la fiche du chercheur du clown équilibriste : supposer, dessiner sans et avec pâte, puis montrer comment c’était. L’adulte découpe le clown en carton avant.",
+      "anleitung": "Cartes pour le cercle et comme cartes de rôles. Page 2 : l’enfant entoure son rôle (la lumière, la musique et la caisse sont aussi des rôles) et se dessine sur la piste. La fiche du chercheur sur le clown équilibriste est une page à part ; l’adulte découpe le clown avant.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -2386,12 +2481,57 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "frage": "Le clown tient-il debout sur le doigt ?",
-          "bild": "motiv:clown",
-          "sehen": "vorher-nachher",
-          "ergebnis": "gesichter",
-          "name": false
+          "art": "aufgabe",
+          "text": "Quel rôle joues-tu au cirque ? Entoure.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "motiv:clown",
+              "text": "le clown"
+            },
+            {
+              "bild": "motiv:magier",
+              "text": "le magicien"
+            },
+            {
+              "bild": "icon:feather",
+              "text": "l’acrobate"
+            },
+            {
+              "bild": "motiv:trommel",
+              "text": "la musique"
+            },
+            {
+              "bild": "motiv:taschenlampe",
+              "text": "la lumière"
+            },
+            {
+              "bild": "motiv:fahrkarte",
+              "text": "la caisse"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine-toi sur la piste.",
+          "symbole": [
+            "malen"
+          ],
+          "niveau": "stern"
+        },
+        {
+          "art": "feld",
+          "zeichnen": true,
+          "hoehe": 8
         }
       ],
       "lehrer": {
@@ -2399,8 +2539,8 @@
         "ablauf": [
           "Lundi – En piste : roulement de tambour, cartes de rôles (clown, acrobate, magicien, lumière, musique, caisse) ; affiche à questions.",
           "Mardi – Ateliers : jongler avec des foulards, garder une plume en équilibre, funambule au sol, grimaces de clown.",
-          "Mercredi – Choix des rôles avec des cailloux, répétitions en petits groupes ; comptine avec le tambour.",
-          "Jeudi – Expérience : le clown équilibriste, puis la fiche ; répétition générale avec lumière et musique.",
+          "Mercredi – Choix des rôles avec des cubes, répétitions en petits groupes ; comptine avec le tambour.",
+          "Jeudi – Expérience : le clown équilibriste, puis la fiche du chercheur (page à part) ; répétition générale avec lumière et musique.",
           "Vendredi – Spectacle pour une classe voisine : accueil, trois numéros, salut, applaudissements."
         ],
         "differenzierung": {
@@ -2416,8 +2556,8 @@
           "Le numéro des fauves est joué par les peluches de la classe : aucun enfant dans une cage.",
           "Funambule seulement au sol, sur une corde ou du ruban adhésif ; tapis sous les ateliers."
         ],
-        "achtung": "Entrer en piste est permis, pas obligatoire : qui ne veut pas monter sur scène fait la lumière, la musique ou la caisse – un vrai rôle. Éviter pression et comparaisons.",
-        "material": "Foulards de jonglage, longues plumes, corde ou ruban adhésif, tapis, cerceaux, peluches, tambour, lampes de poche, carton, pâte à modeler",
+        "achtung": "Entrer en piste n’est pas obligatoire : lumière, musique ou caisse sont de vrais rôles. Ni pression ni comparaison.",
+        "material": "Foulards, plumes, corde, tapis, cerceaux, peluches, tambour, lampes de poche, carton, pâte à modeler",
         "hintergrund": "Les arts du cirque relient mouvement et apprentissage social : jongler avec des foulards (ils tombent lentement) et garder l’équilibre exercent coordination œil-main, équilibre et concentration. Comme il y a beaucoup de rôles, chacun trouve sa place, même en coulisse. Répéter, attendre et applaudir les autres exerce l’autorégulation dans le jeu de rôle (Bodrova & Leong, 2007). L’OMS recommande aux 3–4 ans au moins 180 minutes d’activité par jour, dont 60 soutenues (OMS, 2019). Le courage ne se force jamais ; chaque réussite est nommée et reconnue.",
         "quellen": [
           "Bodrova, E. & Leong, D. J. (2007). Tools of the Mind: The Vygotskian Approach to Early Childhood Education (2nd ed.). Upper Saddle River, NJ: Pearson.",
@@ -2440,42 +2580,42 @@
             {
               "art": "kreis",
               "titel": "En piste !",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Une corde posée en rond : c’est la piste. Roulement de tambour : l’adulte présente les rôles avec les cartes. Chaque enfant entre une fois en piste, salue et reçoit des applaudissements.",
               "material": "corde, tambour, cartes"
             },
             {
               "art": "bewegung",
               "titel": "Jongler avec des foulards",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Chaque enfant lance un foulard en l’air, tape dans ses mains et le rattrape. Puis : avec l’autre main, sous le genou, avec deux foulards. Les foulards tombent lentement : même les petits réussissent.",
               "material": "foulards de jonglage"
             },
             {
               "art": "zaehlen",
               "titel": "L’épreuve de la plume",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Une longue plume tient sur la main ouverte, puis sur le doigt. Astuce : regarder le haut de la plume, pas la main. Le groupe compte à voix haute : qui arrive à cinq, qui à dix ?",
               "material": "longues plumes"
             },
             {
               "art": "theater",
               "titel": "Être clown",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Devant le miroir, les enfants essaient des têtes de clown : étonné, joyeux, vexé. Puis un jeu de clown : trébucher doucement, perdre son chapeau, s’étonner. Le clown a le droit de se tromper – on rit du jeu, jamais d’un enfant.",
               "material": "miroir, chapeaux, nez en mousse"
             },
             {
               "art": "musik",
               "titel": "Roulement et lumière",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Le groupe musique répète le roulement de tambour (doux, puis fort) et l’accord final aux couvercles. Le groupe lumière s’exerce : projecteur allumé quand le tambour commence, éteint au salut.",
               "material": "tambour, couvercles, lampes de poche"
             },
             {
               "art": "gestalten",
               "titel": "Billets et affiche",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Le groupe caisse tamponne des billets et y écrit des numéros de 1 à 20. Tous décorent l’affiche avec des empreintes de mains. Pour finir, on compte : combien d’invités dans notre cirque ?",
               "material": "carton, tampons, peinture, grand papier"
             }
@@ -2513,7 +2653,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : chaque enfant pose son caillou sur une carte de rôle. Les rôles sont répartis selon ces souhaits ; chaque rôle est applaudi.",
+            "text": "Mercredi : chaque enfant pose son cube sur une carte de rôle. Les rôles sont répartis selon ces souhaits ; chaque rôle est applaudi.",
             "frage": "Que voulons-nous savoir sur le cirque ?"
           },
           "stufen": {
@@ -2550,7 +2690,7 @@
               },
               {
                 "text": "Pâte à modeler : deux boules égales par clown (une noix)",
-                "bild": "icon:circle"
+                "bild": "motiv:knete"
               },
               "Crayons de couleur pour décorer",
               {
@@ -2576,11 +2716,25 @@
               "Les adultes découpent le clown dans du carton rigide ; la pâte reste sur la table et ne va pas à la bouche."
             ],
             "weiter": "Pâte d’un seul côté : où penche le clown ? Ensuite, les enfants marchent eux-mêmes sur une corde au sol, bras écartés, un sachet dans chaque main.",
-            "dauer": "25 Min.",
+            "dauer": "25 min",
             "phaenomene": [
               "kraefte",
               "gewicht"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Le clown tient-il debout sur le doigt ?",
+              "sehen": "vorher-nachher",
+              "vermuten": [
+                {
+                  "bild": "motiv:clown",
+                  "text": "sans pâte"
+                },
+                {
+                  "bild": "motiv:knete",
+                  "text": "avec pâte"
+                }
+              ]
+            }
           }
         }
       }
@@ -2757,19 +2911,19 @@
           "art": "koerper",
           "legende": [
             {
-              "farbe": "weiss",
+              "farbe": "rot",
               "text": "_______________"
             },
             {
-              "farbe": "weiss",
+              "farbe": "blau",
               "text": "_______________"
             },
             {
-              "farbe": "weiss",
+              "farbe": "gruen",
               "text": "_______________"
             },
             {
-              "farbe": "weiss",
+              "farbe": "gelb",
               "text": "_______________"
             }
           ]
@@ -2855,7 +3009,7 @@
               "art": "sprache",
               "titel": "Eine Geschichte, viele Sprachen",
               "dauer": "15 Min.",
-              "text": "Leitaktivität: Die Lehrperson erzählt mit den Dingen: „Lilo, die Katze, sucht ihren Ball. Ist er im Bett? – Nein! Im Becher? – Nein! Unter dem Schirm? – Nein! Im Stiefel? – Ja!“ Jeden Tag in einer anderen Sprache; die Kinder rufen mit.",
+              "text": "Die Lehrperson erzählt mit den Dingen: „Lilo, die Katze, sucht ihren Ball. Ist er im Bett? – Nein! Im Becher? – Nein! Im Stiefel? – Ja!“ Jeden Tag in einer anderen Sprache, z. B. LB „Am Bett? – Neen!“, FR « Dans le lit ? – Non ! », PT „Na cama? – Não!“ Die Kinder rufen mit.",
               "material": "Stoffkatze, Ball, Bett, Becher, Schirm, Stiefel"
             },
             {
@@ -2919,7 +3073,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Freitag: Mit Steinen wählen die Kinder, welches neue Ding in den Sack kommt und in welcher Sprache die Geschichte nächste Woche beginnt.",
+            "text": "Freitag: Mit Bausteinen wählen die Kinder, welches neue Ding in den Sack kommt und in welcher Sprache die Geschichte nächste Woche beginnt.",
             "frage": "Was wollen wir über die Sprachen unserer Klasse wissen?"
           },
           "stufen": {
@@ -3057,19 +3211,19 @@
           "art": "koerper",
           "legende": [
             {
-              "farbe": "weiss",
+              "farbe": "rot",
               "text": "_______________"
             },
             {
-              "farbe": "weiss",
+              "farbe": "blau",
               "text": "_______________"
             },
             {
-              "farbe": "weiss",
+              "farbe": "gruen",
               "text": "_______________"
             },
             {
-              "farbe": "weiss",
+              "farbe": "gelb",
               "text": "_______________"
             }
           ]
@@ -3147,41 +3301,41 @@
             {
               "art": "kreis",
               "titel": "Qu’y a-t-il dans le sac ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Le sac passe de main en main. Chaque enfant y plonge la main sans regarder, touche et devine : « C’est rond ! » Puis on déballe ; chaque objet reçoit deux noms : en luxembourgeois et dans une langue proposée par un enfant.",
               "material": "sac en tissu, objets de l’histoire"
             },
             {
               "art": "sprache",
               "titel": "Une histoire, plusieurs langues",
-              "dauer": "15 Min.",
-              "text": "Activité phare : l’adulte raconte avec les objets : Lilo le chat cherche sa balle. Dans le lit ? – Non ! Dans la tasse ? – Non ! Sous le parapluie ? – Non ! Dans la botte ? – Oui ! Chaque jour une autre langue.",
+              "dauer": "15 min",
+              "text": "L’adulte raconte avec les objets : Lilo le chat cherche sa balle. Dans le lit ? – Non ! Dans la tasse ? – Non ! Dans la botte ? – Oui ! Chaque jour une autre langue, p. ex. LB « Am Bett? – Neen! », DE « Im Bett? – Nein! », PT « Na cama? – Não! ». Les enfants répondent en chœur.",
               "material": "chat en peluche, balle, lit, tasse, parapluie, botte"
             },
             {
               "art": "musik",
               "titel": "Taper les syllabes",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Taper un mot dans plusieurs langues : Kat-ze, chat, ga-to, Kaz. Quel mot a le plus de frappes ? Les enfants proposent des mots de leurs langues, et tout le monde les tape."
             },
             {
               "art": "gestalten",
               "titel": "La fleur des langues",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Au centre d’une grande feuille : notre classe. Chaque enfant peint un pétale pour chaque langue qu’il parle ou entend ; l’adulte écrit le nom. Pour finir, on compte : combien de langues dans notre classe ?",
               "material": "grande feuille, couleurs"
             },
             {
               "art": "spiel",
               "titel": "Où est la balle ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un enfant cache la balle dans, sous ou derrière un objet. Les autres demandent dans la langue de leur choix : « Elle est dans la botte ? » L’enfant répond oui ou non jusqu’à ce qu’on la trouve.",
               "material": "les objets du sac"
             },
             {
               "art": "sinne",
               "titel": "Qui parle ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Des familles ont enregistré un court bonjour. Les enfants écoutent les yeux fermés : quelle langue est-ce ? Entends-tu un mot connu ? L’enfant de la famille peut le dire, s’il le souhaite.",
               "material": "enregistrements des familles"
             }
@@ -3219,7 +3373,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Vendredi : avec des cailloux, les enfants choisissent le nouvel objet du sac et la langue dans laquelle l’histoire commencera la semaine prochaine.",
+            "text": "Vendredi : avec des cubes, les enfants choisissent le nouvel objet du sac et la langue dans laquelle l’histoire commencera la semaine prochaine.",
             "frage": "Que voulons-nous savoir sur les langues de notre classe ?"
           },
           "stufen": {
@@ -3277,7 +3431,7 @@
               "Chaque enfant tient seulement sa bande ; un bras de distance avec le voisin."
             ],
             "weiter": "Apporter un mot de sa famille et le tester : le papier danse-t-il ? Les mots qui dansent vont sur la fleur des langues.",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "luft",
               "schall"
@@ -3390,7 +3544,7 @@
     "de": {
       "titel": "Hände sprechen",
       "untertitel": "Erste Gebärden für alle – im Morgenkreis, beim Essen, im Reim",
-      "anleitung": "Die Karten zeigen, was die Gebärden bedeuten – die Gebärden selbst lernen Sie aus einer geprüften Sammlung (Video oder Karten), nicht aus dem Gedächtnis. Seite 2: Memory auf Karton kopieren, an der Faltlinie falten, kleben, dann schneiden.",
+      "anleitung": "Die Karten zeigen, was die Gebärden bedeuten – die Gebärden selbst lernen Sie aus einer geprüften Sammlung, nicht aus dem Gedächtnis. Seite 2: Memory auf Karton kopieren, falten, kleben; Erwachsene schneiden aus. Auf jede Kamera-Karte kommt ein Foto der Gebärde (Lehrperson), dann wird gespielt.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -3447,9 +3601,9 @@
         },
         {
           "art": "aufgabe",
-          "text": "Schneide aus und spiel Memory. Zeig bei jedem Paar die Gebärde.",
+          "text": "Klebe auf jede Kamera-Karte das Foto der Gebärde. Dann spiel Memory.",
           "symbole": [
-            "schneiden",
+            "kleben",
             "zeigen"
           ]
         },
@@ -3459,27 +3613,33 @@
           "bilder": [
             {
               "bild": "icon:bowl-spoon",
-              "text": "essen"
+              "text": "essen",
+              "paar": "icon:camera"
             },
             {
               "bild": "motiv:becher",
-              "text": "trinken"
+              "text": "trinken",
+              "paar": "icon:camera"
             },
             {
               "bild": "motiv:bett",
-              "text": "schlafen"
+              "text": "schlafen",
+              "paar": "icon:camera"
             },
             {
               "bild": "motiv:spielzeugkiste",
-              "text": "spielen"
+              "text": "spielen",
+              "paar": "icon:camera"
             },
             {
               "bild": "motiv:kind-troesten",
-              "text": "helfen"
+              "text": "helfen",
+              "paar": "icon:camera"
             },
             {
               "bild": "icon:heart-handshake",
-              "text": "danke"
+              "text": "danke",
+              "paar": "icon:camera"
             }
           ]
         }
@@ -3503,12 +3663,12 @@
           "Wie erleben gehörlose Menschen Musik?"
         ],
         "tipps": [
-          "Gebärden aus einer geprüften Sammlung lernen (DGS-Wörterbuch, GuK-Karten), nie erfinden.",
+          "Gebärden nur aus einer geprüften Sammlung lernen (am besten über eine Gehörlosenorganisation in Luxemburg), nie erfinden.",
           "Die Gebärde immer mit dem Wort: Sie stützt das Sprechen, statt es zu ersetzen."
         ],
         "achtung": "Fragt ein Kind oft nach oder reagiert kaum auf Ansprache: mit der Familie eine Hörprüfung anregen; Unterstützung bei I-EBS bzw. ESEB.",
         "material": "Geprüfte Gebärdensammlung (Videos oder Karten), Handtrommel, Lautsprecher, Pappschachtel, Luftballons, Karton, Schere",
-        "hintergrund": "Gebärden helfen nicht nur gehörlosen Kindern. Wer ein Wort zugleich hört, sieht und mit den Händen macht, merkt es sich leichter; Kinder, die noch wenig sprechen, neu zugewanderte und schüchterne Kinder bekommen ein zweites Ausdrucksmittel. Sichtbare Hilfen – Bilder, Gesten, Gebärden – stützen Verstehen und Mitmachen (Hodgdon, 1995). Gehörlose Menschen in Luxemburg nutzen vor allem die Deutsche Gebärdensprache, eine eigene Sprache mit eigener Grammatik. Die Klasse lernt einzelne Gebärden, keine Gebärdensprache.",
+        "hintergrund": "Gebärden helfen nicht nur gehörlosen Kindern. Wer ein Wort zugleich hört, sieht und mit den Händen macht, merkt es sich leichter; Kinder, die noch wenig sprechen, neu zugewanderte und schüchterne Kinder bekommen ein zweites Ausdrucksmittel. Sichtbare Hilfen – Bilder, Gesten, Gebärden – stützen Verstehen und Mitmachen (Hodgdon, 1995). In Luxemburg ist die Gebärdensprache gehörloser Menschen seit 2018 gesetzlich anerkannt; sie ist eng mit der Deutschen Gebärdensprache verwandt, wird oft Lëtzebuerger Gebäerdesprooch (LGS) genannt und ist eine eigene Sprache mit eigener Grammatik. Die Klasse lernt einzelne Gebärden, keine Gebärdensprache.",
         "quellen": [
           "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
         ],
@@ -3536,7 +3696,7 @@
               "art": "sprache",
               "titel": "Gebärde des Tages",
               "dauer": "10 Min.",
-              "text": "Leitaktivität: Jeden Morgen kommen zwei Gebärden dazu – Wort, Bildkarte, Gebärde. Ein Foto der Lehrperson mit der Gebärde hängt an der Gebärdenwand; benutzt wird sie den ganzen Tag: beim Essen, Aufräumen, Trösten.",
+              "text": "Jeden Morgen kommen zwei Gebärden dazu – Wort, Bildkarte, Gebärde. Ein Foto der Lehrperson mit der Gebärde hängt an der Gebärdenwand; benutzt wird sie den ganzen Tag: beim Essen, Aufräumen, Trösten.",
               "material": "Bildkarten, Fotos, Gebärdensammlung"
             },
             {
@@ -3599,7 +3759,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeden Morgen wählen die Kinder mit Steinen aus drei Bildkarten die Gebärde des Tages; die Wahl gilt den ganzen Tag.",
+            "text": "Jeden Morgen wählen die Kinder mit Bausteinen aus drei Bildkarten die Gebärde des Tages; die Wahl gilt den ganzen Tag.",
             "frage": "Was wollen wir über Gebärden und gehörlose Menschen wissen?"
           },
           "stufen": {
@@ -3656,7 +3816,7 @@
                 "bild": "icon:messages"
               }
             ],
-            "vermutung": "Bildkarten legen: Die Hand spürt nichts – die Hand kribbelt. Jedes Kind legt seinen Stein. Oft hört man: „Musik hört man nur mit den Ohren.“",
+            "vermutung": "Bildkarten legen: Die Hand spürt nichts – die Hand kribbelt. Jedes Kind legt seinen Baustein. Oft hört man: „Musik hört man nur mit den Ohren.“",
             "beobachten": "Wo kribbelt es: beim Summen am Hals, beim Flüstern? Wann zittert die Trommel am stärksten? Bei tiefen oder hohen Tönen? Spürt der Ballon die Musik?",
             "warumKind": "Töne sind ganz schnelles Zittern. Die Ohren hören es, aber auch Hände und Bauch können es fühlen – besonders tiefe Töne.",
             "hintergrund": "Schall entsteht, wenn etwas schwingt: beim Summen die Stimmlippen im Kehlkopf, beim Flüstern schwingen sie nicht. Die Schwingungen übertragen sich auf feste Körper wie Trommelfell, Schachtel oder Ballon und lassen sich über die Haut wahrnehmen, tiefe Töne besonders gut. Viele gehörlose Menschen erleben Musik so: Sie spüren Bass und Rhythmus über den Boden, die Hände oder einen Ballon. Hören ist ein Weg, Klang zu erleben – nicht der einzige.",
@@ -3677,7 +3837,7 @@
     "fr": {
       "titel": "Les mains parlent",
       "untertitel": "Premiers signes pour tous – au cercle, au repas, dans la comptine",
-      "anleitung": "Les cartes montrent le sens des signes – les signes eux-mêmes s’apprennent dans un recueil vérifié (vidéo ou cartes), jamais de mémoire. Page 2 : copier le memory sur du carton, plier à la ligne, coller, puis découper.",
+      "anleitung": "Les cartes montrent le sens des signes – les signes eux-mêmes s’apprennent dans un recueil vérifié, jamais de mémoire. Page 2 : copier le memory sur du carton, plier, coller ; l’adulte découpe. Sur chaque carte appareil photo, coller une photo du signe (adulte), puis jouer.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -3734,9 +3894,9 @@
         },
         {
           "art": "aufgabe",
-          "text": "Découpe et joue au memory. À chaque paire, fais le signe.",
+          "text": "Colle sur chaque carte appareil photo la photo du signe. Puis joue.",
           "symbole": [
-            "schneiden",
+            "kleben",
             "zeigen"
           ]
         },
@@ -3746,27 +3906,33 @@
           "bilder": [
             {
               "bild": "icon:bowl-spoon",
-              "text": "manger"
+              "text": "manger",
+              "paar": "icon:camera"
             },
             {
               "bild": "motiv:becher",
-              "text": "boire"
+              "text": "boire",
+              "paar": "icon:camera"
             },
             {
               "bild": "motiv:bett",
-              "text": "dormir"
+              "text": "dormir",
+              "paar": "icon:camera"
             },
             {
               "bild": "motiv:spielzeugkiste",
-              "text": "jouer"
+              "text": "jouer",
+              "paar": "icon:camera"
             },
             {
               "bild": "motiv:kind-troesten",
-              "text": "aider"
+              "text": "aider",
+              "paar": "icon:camera"
             },
             {
               "bild": "icon:heart-handshake",
-              "text": "merci"
+              "text": "merci",
+              "paar": "icon:camera"
             }
           ]
         }
@@ -3790,12 +3956,12 @@
           "Comment les personnes sourdes vivent-elles la musique ?"
         ],
         "tipps": [
-          "Apprendre les signes dans un recueil vérifié (dictionnaire de DGS, cartes GuK), ne jamais les inventer.",
+          "Apprendre les signes seulement dans un recueil vérifié (de préférence via une association de personnes sourdes au Luxembourg), jamais les inventer.",
           "Toujours le signe avec le mot : il soutient la parole au lieu de la remplacer."
         ],
         "achtung": "Un enfant fait souvent répéter ou réagit peu quand on lui parle : proposer à la famille un test auditif ; soutien de l’I-EBS ou de l’ESEB.",
         "material": "Recueil de signes vérifié (vidéos ou cartes), tambourin, haut-parleur, boîte en carton, ballons, carton, ciseaux",
-        "hintergrund": "Les signes n’aident pas que les enfants sourds. Entendre, voir et faire un mot avec les mains aide à le retenir ; les enfants qui parlent encore peu, nouvellement arrivés ou timides gagnent un second moyen d’expression. Les aides visibles – images, gestes, signes – soutiennent la compréhension et la participation (Hodgdon, 1995). Au Luxembourg, les personnes sourdes utilisent surtout la langue des signes allemande (DGS), une langue à part entière. La classe apprend des signes isolés, pas une langue des signes.",
+        "hintergrund": "Les signes n’aident pas que les enfants sourds. Entendre, voir et faire un mot avec les mains aide à le retenir ; les enfants qui parlent encore peu, nouvellement arrivés ou timides gagnent un second moyen d’expression. Les aides visibles – images, gestes, signes – soutiennent la compréhension et la participation (Hodgdon, 1995). Au Luxembourg, la langue des signes des personnes sourdes est reconnue par la loi depuis 2018 ; proche de la langue des signes allemande, souvent appelée Lëtzebuerger Gebäerdesprooch (LGS), c’est une langue à part entière. La classe apprend des signes isolés, pas une langue des signes.",
         "quellen": [
           "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
         ],
@@ -3816,40 +3982,40 @@
             {
               "art": "kreis",
               "titel": "Un bonjour silencieux",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’adulte accueille sans voix : fait signe, sourit, regarde chaque enfant et montre le signe « bonjour » du recueil. Les enfants répondent de même. Puis : qu’avons-nous compris – et à quoi ?"
             },
             {
               "art": "sprache",
               "titel": "Le signe du jour",
-              "dauer": "10 Min.",
-              "text": "Activité phare : chaque matin, deux signes s’ajoutent – mot, carte, signe. Une photo de l’adulte faisant le signe va au mur des signes ; on l’utilise toute la journée : au repas, au rangement, pour consoler.",
+              "dauer": "10 min",
+              "text": "Chaque matin, deux signes s’ajoutent – mot, carte, signe. Une photo de l’adulte faisant le signe va au mur des signes ; on l’utilise toute la journée : au repas, au rangement, pour consoler.",
               "material": "cartes-images, photos, recueil de signes"
             },
             {
               "art": "spiel",
               "titel": "La matinée silencieuse",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Un minuteur tourne 15 minutes. Pendant ce temps, tous jouent dans les coins sans voix – signes, gestes, visage. Ensuite : qu’est-ce qui était difficile ? Facile ? Comment c’était, ce silence ?",
               "material": "minuteur ou sablier"
             },
             {
               "art": "gestalten",
               "titel": "Mon signe-prénom",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Chaque enfant choisit un petit geste qui lui ressemble (sauter, tourner une boucle) – rien sur l’apparence. Les vrais signes-noms sont donnés par la communauté sourde ; ici, on dit signe-prénom. L’enfant se dessine avec.",
               "material": "papier, crayons"
             },
             {
               "art": "musik",
               "titel": "Une chanson avec les mains",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Dire la comptine en signant, puis seulement signer en fredonnant doucement. Pour finir, applaudir comme dans la communauté sourde : les deux mains levées qu’on agite."
             },
             {
               "art": "sinne",
               "titel": "Passe le signe",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "En cercle, un enfant montre un signe à son voisin, qui le transmet – sans voix. Le dernier enfant reçoit-il le même signe ? Tous regardent bien les mains et le visage."
             }
           ],
@@ -3886,7 +4052,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Chaque matin, avec des cailloux, les enfants choisissent parmi trois cartes le signe du jour ; ce choix vaut pour toute la journée.",
+            "text": "Chaque matin, avec des cubes, les enfants choisissent parmi trois cartes le signe du jour ; ce choix vaut pour toute la journée.",
             "frage": "Que voulons-nous savoir sur les signes et les personnes sourdes ?"
           },
           "stufen": {
@@ -3943,7 +4109,7 @@
                 "bild": "icon:messages"
               }
             ],
-            "vermutung": "Poser les cartes : la main ne sent rien – la main chatouille. Chaque enfant y met son caillou. Souvent : « La musique, on l’entend seulement avec les oreilles. »",
+            "vermutung": "Poser les cartes : la main ne sent rien – la main chatouille. Chaque enfant y met son cube. Souvent : « La musique, on l’entend seulement avec les oreilles. »",
             "beobachten": "Où ça chatouille : au cou en fredonnant, en chuchotant ? Quand le tambour vibre-t-il le plus ? Avec les sons graves ou aigus ? Le ballon sent-il la musique ?",
             "warumKind": "Les sons sont des tremblements très rapides. Les oreilles les entendent, mais les mains et le ventre peuvent aussi les sentir – surtout les sons graves.",
             "hintergrund": "Le son naît d’une vibration : en fredonnant, les cordes vocales vibrent ; en chuchotant, non. Les vibrations passent dans les corps solides – peau du tambour, boîte, ballon – et la peau les perçoit, surtout les graves. Beaucoup de personnes sourdes vivent la musique ainsi : elles sentent basses et rythme par le sol, les mains ou un ballon. Entendre est une façon de vivre le son – pas la seule.",
@@ -3952,7 +4118,7 @@
               "Ballons seulement sous surveillance ; ramasser tout de suite les restes. Intolérance au latex : ballon alu."
             ],
             "weiter": "Apprendre les signes « fort » et « doux » du recueil et jouer du tambour : le groupe suit seulement les mains de la cheffe d’orchestre, sans voix.",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "schall",
               "sinne"
@@ -3983,9 +4149,9 @@
           },
           {
             "de": "der Becher",
-            "fr": "le gobelet",
+            "fr": "la tasse",
             "lb": "de Becher",
-            "pt": "o copo",
+            "pt": "a caneca",
             "bild": "motiv:becher"
           },
           {
@@ -4022,17 +4188,17 @@
         "de": {
           "woche": "Diese Woche lernen wir erste Gebärden: essen, trinken, mehr, helfen, danke und andere. Die Kinder nutzen sie im Morgenkreis und beim Essen, fühlen im Experiment Töne mit den Händen und spielen einen leisen Vormittag ohne Stimme.",
           "idee": "Lassen Sie sich von Ihrem Kind die Gebärde für „trinken“ zeigen und nutzen Sie sie beim Essen – immer mit dem Wort zusammen.",
-          "bitte": "Gibt es in Ihrer Familie eine Geste, die „danke“ oder „komm her“ bedeutet? Zeigen Sie sie uns. Kennen Sie gehörlose Menschen, die uns besuchen möchten?"
+          "bitte": "Gibt es in Ihrer Familie eine Geste, die „danke“ oder „komm her“ bedeutet? Zeigen Sie sie uns. Können Sie uns einen Besuch einer gehörlosen Person vermitteln? Sagen Sie es uns gern."
         },
         "fr": {
           "woche": "Cette semaine, nous apprenons nos premiers signes : manger, boire, encore, aider, merci… Les enfants les utilisent au cercle et au repas, sentent les sons avec les mains et vivent une matinée silencieuse.",
           "idee": "Demandez à votre enfant le signe pour « boire » et utilisez-le au repas – toujours avec le mot.",
-          "bitte": "Y a-t-il chez vous un geste qui veut dire « merci » ou « viens » ? Montrez-le-nous. Connaissez-vous des personnes sourdes qui aimeraient nous rendre visite ?"
+          "bitte": "Y a-t-il chez vous un geste qui veut dire « merci » ou « viens » ? Montrez-le-nous. Pouvez-vous nous mettre en contact avec une personne sourde pour une visite ? Dites-le-nous."
         },
         "pt": {
           "woche": "Esta semana aprendemos os primeiros gestos: comer, beber, mais, ajudar, obrigado… As crianças usam-nos na roda e às refeições, sentem os sons com as mãos e vivem uma manhã silenciosa.",
           "idee": "Peçam à vossa criança o gesto para «beber» e usem-no às refeições – sempre com a palavra.",
-          "bitte": "Há na vossa família um gesto que quer dizer «obrigado» ou «vem cá»? Mostrem-no-nos. Conhecem pessoas surdas que gostariam de nos visitar?"
+          "bitte": "Há na vossa família um gesto que quer dizer «obrigado» ou «vem cá»? Mostrem-no-nos. Podem pôr-nos em contacto com uma pessoa surda para uma visita?"
         }
       }
     }
@@ -4217,7 +4383,7 @@
               "art": "musik",
               "titel": "Die Geräuschewerkstatt",
               "dauer": "20 Min.",
-              "text": "Leitaktivität: Auf Tischen liegen Alltagsdinge. In kleinen Gruppen erfinden die Kinder Regen (Reis in der Dose), Donner (Backblech schütteln), Schritte (Hände auf dem Tisch), Wind (huuu) und eine knarrende Tür. Dann stimmen alle ab.",
+              "text": "Auf Tischen liegen Alltagsdinge. In kleinen Gruppen erfinden die Kinder Regen (Reis in der Dose), Donner (Backblech schütteln), Schritte (Hände auf dem Tisch), Wind (huuu) und eine knarrende Tür. Dann stimmen alle ab.",
               "material": "Dose mit Reis, Backblech, Schuhe, Tücher"
             },
             {
@@ -4237,7 +4403,7 @@
               "art": "theater",
               "titel": "Rote Karte: Aufnahme!",
               "dauer": "15 Min.",
-              "text": "Ritual: Hebt die Lehrperson die rote Karte, sind alle still – die Aufnahme läuft. Nacheinander spricht jedes Kind seinen Satz oder macht sein Geräusch. Sofort anhören; wer will, nimmt noch einmal auf.",
+              "text": "Hebt die Lehrperson die rote Karte, sind alle still – die Aufnahme läuft. Nacheinander spricht jedes Kind seinen Satz oder macht sein Geräusch. Sofort anhören; wer will, nimmt noch einmal auf.",
               "material": "Tablet, roter Karton"
             },
             {
@@ -4268,7 +4434,7 @@
           "eltern": "Erzählen Sie Ihrem Kind eine kurze Geschichte und lassen Sie es die Geräusche dazu machen: Tür, Schritte, Regen.",
           "beobachtung": [
             {
-              "text": "Ich erkenne ein Geräusch mit geschlossenen Augen und zeige die Karte.",
+              "text": "Ich höre ein Geräusch mit geschlossenen Augen und zeige die Karte.",
               "eldib": "V-1"
             },
             {
@@ -4281,7 +4447,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Dienstag: Mit Steinen wählen die Kinder für jedes Geräusch die beste Variante, etwa Reis-Dose oder Fingerregen. Was gewinnt, kommt ins Hörspiel.",
+            "text": "Dienstag: Mit Bausteinen wählen die Kinder für jedes Geräusch die beste Variante, etwa Reis-Dose oder Fingerregen. Was gewinnt, kommt ins Hörspiel.",
             "frage": "Wie kommt eine Geschichte in den Lautsprecher?"
           },
           "stufen": {
@@ -4300,12 +4466,12 @@
             "kueche": false,
             "ausflug": false,
             "besuch": false,
-            "material": "standard",
+            "material": "besorgen",
             "planB": "Kein Tablet: das Hörspiel live hinter einem Vorhang spielen, die Zuhörer schließen die Augen.",
             "sicherheit": [
               "standard:fotos",
               "Finger nur außen auf den Ohreingang legen, nichts ins Ohr stecken.",
-              "Kopfhörer nur kurz und leise."
+              "Kopfhörer nur kurz und leise; Tondateien am Schuljahresende löschen."
             ]
           },
           "experiment": {
@@ -4338,7 +4504,7 @@
               },
               "Den Löffel an der Schnur gegen den Tisch schwingen lassen, die Schnurenden mit den Fingern an die Ohren halten."
             ],
-            "vermutung": "Bildkarten: lauter – leiser – gleich. Jedes Kind legt seinen Stein. Oft hört man: „Mit zugehaltenen Ohren höre ich gar nichts mehr.“",
+            "vermutung": "Bildkarten: lauter – leiser – gleich. Jedes Kind legt seinen Baustein. Oft hört man: „Mit zugehaltenen Ohren höre ich gar nichts mehr.“",
             "beobachten": "Klingt das Summen mit zugehaltenen Ohren lauter, dumpfer? Klingt die Aufnahme höher als die eigene Stimme? Und der Löffel an der Schnur – wie eine Glocke?",
             "warumKind": "Wir hören uns selbst auf zwei Wegen: durch die Luft und durch die Knochen im Kopf. Die Aufnahme hört nur die Luft – darum klingt die Stimme fremd.",
             "hintergrund": "Die eigene Stimme erreicht das Innenohr auf zwei Wegen: als Luftschall von außen und als Knochenschall über den Schädel. Der Knochenschall betont tiefe Töne; darum klingt die eigene Stimme für uns voller als für andere. Ein Mikrofon nimmt nur Luftschall auf – die Aufnahme wirkt fremd und höher. Hält man die Ohren zu, wird der Knochenschall stärker wahrgenommen (Verschlusseffekt). Der Löffel leitet seine Schwingung über Schnur und Finger direkt zum Ohr und klingt wie eine Glocke.",
@@ -4498,41 +4664,41 @@
             {
               "art": "kreis",
               "titel": "C’est quoi, une histoire sonore ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants écoutent les yeux fermés une très courte histoire sonore (deux minutes environ). Puis : que s’est-il passé ? Comment le sais-tu, sans images ? Ensemble, on pose au milieu les cartes des bruits.",
               "material": "courte histoire sonore, cartes"
             },
             {
               "art": "musik",
               "titel": "L’atelier des bruits",
-              "dauer": "20 Min.",
-              "text": "Activité phare : des objets du quotidien sur les tables. En petits groupes, les enfants inventent la pluie (riz dans une boîte), le tonnerre (plaque secouée), les pas (mains sur la table), le vent (houuu). Puis on vote.",
+              "dauer": "20 min",
+              "text": "Des objets du quotidien sur les tables. En petits groupes, les enfants inventent la pluie (riz dans une boîte), le tonnerre (plaque secouée), les pas (mains sur la table), le vent (houuu). Puis on vote.",
               "material": "boîte de riz, plaque, chaussures, foulards"
             },
             {
               "art": "gestalten",
               "titel": "Notre histoire",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Avec les cartes, le groupe pose l’histoire : la porte s’ouvre, des pas, le vent, la pluie, le tonnerre – vite à la maison, chez le chat. L’adulte demande « Et puis ? » et note les phrases. Les images manquantes, on les dessine.",
               "material": "cartes, papier, crayons"
             },
             {
               "art": "sprache",
               "titel": "Changer de voix",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "La même phrase – « Où est mon chat ? » – dite comme un géant, une souris, tout fatigué, tout content. Un enfant se retourne et devine la voix. Qui veut la dit dans sa langue."
             },
             {
               "art": "theater",
               "titel": "Carton rouge : on enregistre !",
-              "dauer": "15 Min.",
-              "text": "Rituel : quand l’adulte lève le carton rouge, tout le monde se tait – on enregistre. Chaque enfant dit sa phrase ou fait son bruit. On réécoute tout de suite ; qui veut recommence.",
+              "dauer": "15 min",
+              "text": "Quand l’adulte lève le carton rouge, tout le monde se tait – on enregistre. Chaque enfant dit sa phrase ou fait son bruit. On réécoute tout de suite ; qui veut recommence.",
               "material": "tablette, carton rouge"
             },
             {
               "art": "ruhe",
               "titel": "Le cinéma des oreilles",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Pénombre, coussins : les enfants sont allongés, yeux fermés, l’histoire passe. Ensuite, ils racontent : quel bruit as-tu reconnu ? Qui faisait le tonnerre ?",
               "material": "coussins, lecteur"
             }
@@ -4557,7 +4723,7 @@
           "eltern": "Racontez une courte histoire à votre enfant et laissez-le faire les bruits : porte, pas, pluie.",
           "beobachtung": [
             {
-              "text": "Je reconnais un bruit les yeux fermés et je montre la carte.",
+              "text": "J’entends un bruit les yeux fermés et je montre la carte.",
               "eldib": "V-1"
             },
             {
@@ -4570,7 +4736,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mardi : avec des cailloux, les enfants choisissent pour chaque bruit la meilleure version, riz ou doigts pour la pluie. Le gagnant entre dans l’histoire.",
+            "text": "Mardi : avec des cubes, les enfants choisissent pour chaque bruit la meilleure version, riz ou doigts pour la pluie. Le gagnant entre dans l’histoire.",
             "frage": "Comment une histoire arrive-t-elle dans le haut-parleur ?"
           },
           "stufen": {
@@ -4589,12 +4755,12 @@
             "kueche": false,
             "ausflug": false,
             "besuch": false,
-            "material": "standard",
+            "material": "besorgen",
             "planB": "Pas de tablette : jouer l’histoire en direct derrière un rideau, le public ferme les yeux.",
             "sicherheit": [
               "standard:fotos",
               "Doigts seulement à l’entrée de l’oreille, ne rien y enfoncer.",
-              "Casques seulement peu de temps et doucement."
+              "Casques peu de temps et doucement ; effacer les fichiers audio en fin d’année."
             ]
           },
           "experiment": {
@@ -4627,7 +4793,7 @@
               },
               "Balancer la cuillère contre la table, les bouts de la ficelle tenus contre les oreilles avec les doigts."
             ],
-            "vermutung": "Cartes : plus fort – moins fort – pareil. Chaque enfant pose son caillou. Souvent : « Oreilles bouchées, je n’entends plus rien. »",
+            "vermutung": "Cartes : plus fort – moins fort – pareil. Chaque enfant pose son cube. Souvent : « Oreilles bouchées, je n’entends plus rien. »",
             "beobachten": "Le fredonnement est-il plus fort, plus sourd, oreilles bouchées ? L’enregistrement sonne-t-il plus aigu que sa voix ? Et la cuillère – comme une cloche ?",
             "warumKind": "On s’entend de deux façons : par l’air et par les os de la tête. L’enregistrement n’entend que l’air : c’est pour ça que la voix sonne bizarre.",
             "hintergrund": "Notre voix atteint l’oreille interne par deux chemins : par l’air, et par les os du crâne. Cette conduction osseuse renforce les graves : notre voix nous paraît plus pleine qu’aux autres. Un micro ne capte que le son aérien : l’enregistrement semble étrange et plus aigu. Oreilles bouchées, on perçoit davantage la conduction osseuse (effet d’occlusion). La cuillère transmet sa vibration par la ficelle et les doigts jusqu’à l’oreille et sonne comme une cloche.",
@@ -4636,7 +4802,7 @@
               "Doigts seulement à l’entrée de l’oreille, ne rien y enfoncer."
             ],
             "weiter": "Pour l’histoire sonore, écouter des objets par la ficelle-cuillère : lesquels sonnent comme des cloches, lesquels comme le tonnerre ? Le plus beau bruit entre dans l’histoire.",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "schall",
               "sinne"
@@ -4701,17 +4867,17 @@
         "de": {
           "woche": "Diese Woche machen wir ein Hörspiel. Die Kinder erfinden Geräusche mit Alltagsdingen, planen eine kleine Geschichte, nehmen ihre Stimmen auf und hören das Ergebnis am Freitag im „Hörkino“. Die Aufnahmen bleiben in der Klasse.",
           "idee": "Erzählen Sie eine kurze Geschichte und lassen Sie Ihr Kind die Geräusche machen: Tür, Schritte, Regen.",
-          "bitte": "Bitte geben Sie die Einwilligung für Tonaufnahmen zurück. Leere Dosen mit Deckel helfen uns bei Regen und Donner."
+          "bitte": "Tonaufnahmen nur für die Klasse, am Schuljahresende gelöscht – einverstanden? Ja / Nein (einkreisen), Unterschrift: ________. Leere Dosen mit Deckel helfen uns bei Regen und Donner."
         },
         "fr": {
           "woche": "Cette semaine, nous faisons une histoire sonore. Les enfants inventent des bruits avec des objets du quotidien, préparent une petite histoire, enregistrent leurs voix et l’écoutent vendredi. Les enregistrements restent en classe.",
           "idee": "Racontez une courte histoire et laissez votre enfant faire les bruits : porte, pas, pluie.",
-          "bitte": "Merci de rendre l’accord pour les enregistrements sonores. Des boîtes vides avec couvercle nous aident pour la pluie et le tonnerre."
+          "bitte": "Enregistrements pour la classe seulement, effacés en fin d’année – d’accord ? Oui / Non (entourer), signature : ________. Des boîtes vides avec couvercle nous aident pour la pluie."
         },
         "pt": {
           "woche": "Esta semana fazemos uma história sonora. As crianças inventam sons com objetos do dia a dia, preparam uma pequena história, gravam as vozes e ouvem o resultado na sexta-feira. As gravações ficam na turma.",
           "idee": "Contem uma pequena história e deixem a vossa criança fazer os sons: porta, passos, chuva.",
-          "bitte": "Por favor, devolvam a autorização para gravações de som. Latas vazias com tampa ajudam-nos a fazer chuva e trovão."
+          "bitte": "Gravações só para a turma, apagadas no fim do ano – concordam? Sim / Não (assinalar), assinatura: ________. Latas vazias com tampa ajudam-nos a fazer chuva e trovão."
         }
       }
     }
@@ -4794,6 +4960,10 @@
             {
               "bild": "icon:file-text",
               "titel": "die Seite"
+            },
+            {
+              "bild": "motiv:fahrkarte",
+              "titel": "der Ausweis"
             }
           ]
         },
@@ -4894,7 +5064,7 @@
               "art": "draussen",
               "titel": "Besuch in der Bibliothek",
               "dauer": "45 Min.",
-              "text": "Leitaktivität: Die Klasse besucht die Bibliothek der Gemeinde. Wo stehen die Bilderbücher? Was macht die Bibliothekarin oder der Bibliothekar? Zuhören, sich umsehen und ein Buch für die Klasse ausleihen.",
+              "text": "Die Klasse besucht die Bibliothek der Gemeinde. Wo stehen die Bilderbücher? Was macht die Bibliothekarin oder der Bibliothekar? Zuhören, sich umsehen und ein Buch für die Klasse ausleihen.",
               "material": "Warnwesten, Liste der Kinder"
             },
             {
@@ -4952,7 +5122,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Jedes Kind legt einen Stein zu seinem Lieblingsbuch. Das Buch mit den meisten Steinen reist als Erstes im Bücherrucksack.",
+            "text": "Donnerstag: Jedes Kind legt einen Baustein zu seinem Lieblingsbuch. Das Buch mit den meisten Bausteinen reist als Erstes im Bücherrucksack.",
             "frage": "Was wollen wir über die Bibliothek wissen?"
           },
           "stufen": {
@@ -4985,7 +5155,10 @@
             "material": [
               "Alte Zeitungsseiten, eine je Kind",
               "Altpapier: aussortierte Prospekte, keine Bücher",
-              "Lupen, eine für zwei Kinder",
+              {
+                "text": "Lupen, eine für zwei Kinder",
+                "bild": "motiv:lupe"
+              },
               "Flache Schale mit Wasser"
             ],
             "schritte": [
@@ -5001,7 +5174,7 @@
               "Die Ränder mit der Lupe ansehen: Was steht heraus?",
               "Ein kleines Papierstück auf das Wasser legen und warten: Wie rollt es sich?"
             ],
-            "vermutung": "Bildkarten legen: beide Risse gleich – einer gerade, einer krumm. Jedes Kind legt seinen Stein. Oft hört man: „Wenn ich vorsichtig bin, reißt es immer gerade.“",
+            "vermutung": "Bildkarten legen: beide Risse gleich – einer gerade, einer krumm. Jedes Kind legt seinen Baustein. Oft hört man: „Wenn ich vorsichtig bin, reißt es immer gerade.“",
             "beobachten": "In welche Richtung reißt es lang und gerade, in welche zackig? Was siehst du mit der Lupe am Rand? Wohin rollt sich das nasse Papier?",
             "warumKind": "Papier ist aus ganz vielen winzigen Holzfasern gemacht. Fast alle liegen in dieselbe Richtung – entlang dieser Richtung reißt es leicht und gerade.",
             "hintergrund": "Papier besteht aus Pflanzenfasern, meist aus Holz. In der Papiermaschine fließt der Faserbrei auf ein schnell laufendes Sieb; dabei richten sich die Fasern vor allem in Laufrichtung aus. Entlang dieser Richtung reißt Papier gerade und lässt sich leichter falten, quer dazu reißt es zackig. Nass quillt Papier quer zur Faser stärker und rollt sich ein. Das erklärt, warum Bücher trocken bleiben müssen – ein guter Anlass für die Regeln unserer Klassenbibliothek.",
@@ -5067,6 +5240,10 @@
             {
               "bild": "icon:file-text",
               "titel": "la page"
+            },
+            {
+              "bild": "motiv:fahrkarte",
+              "titel": "la carte"
             }
           ]
         },
@@ -5152,42 +5329,42 @@
             {
               "art": "kreis",
               "titel": "Un livre se présente",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’adulte montre un livre : couverture, dos, première page. Les enfants supposent : « Je crois que ça parle de …, parce que … » Puis on lit la première page. Le lendemain, un enfant présente son livre préféré.",
               "material": "un album"
             },
             {
               "art": "sprache",
               "titel": "Lecture dialoguée",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Par groupes de quatre : montrer une image, poser une question ouverte (« Que se passe-t-il ? »), reprendre et enrichir la réponse (« Oui, le chien court – il court vers la balle »). Les enfants tournent les pages.",
               "material": "albums aux images claires"
             },
             {
               "art": "draussen",
               "titel": "Visite à la bibliothèque",
-              "dauer": "45 Min.",
-              "text": "Activité phare : la classe visite la bibliothèque de la commune. Où sont les albums ? Que fait la ou le bibliothécaire ? Écouter, regarder, emprunter un livre pour la classe.",
+              "dauer": "45 min",
+              "text": "La classe visite la bibliothèque de la commune. Où sont les albums ? Que fait la ou le bibliothécaire ? Écouter, regarder, emprunter un livre pour la classe.",
               "material": "gilets, liste des enfants"
             },
             {
               "art": "spiel",
               "titel": "Jouer à la bibliothèque",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Au comptoir, les enfants tamponnent les cartes, prêtent les livres et les reprennent : « À rendre dans une semaine, s’il te plaît. » On change les rôles : aujourd’hui bibliothécaire, demain lecteur.",
               "material": "cartes d’emprunt, tampons, livres"
             },
             {
               "art": "zaehlen",
               "titel": "Ranger les livres",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants trient les livres de la classe par taille, par couleur du dos ou par animaux et personnes. Avec des bâtons, on compte : combien de livres dans notre bibliothèque ?",
               "material": "caisse de livres, papier, crayon"
             },
             {
               "art": "gestalten",
               "titel": "Mon marque-page",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Chaque enfant décore un marque-page en carton avec son prénom et un motif. Nouvelle règle : un livre ouvert ne se retourne jamais, il reçoit un marque-page.",
               "material": "bandes de carton, crayons, laine"
             }
@@ -5225,7 +5402,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : chaque enfant pose un caillou devant son livre préféré. Celui qui a le plus de cailloux part en premier dans le sac à livres.",
+            "text": "Jeudi : chaque enfant pose un cube devant son livre préféré. Celui qui a le plus de cubes part en premier dans le sac à livres.",
             "frage": "Que voulons-nous savoir sur la bibliothèque ?"
           },
           "stufen": {
@@ -5258,7 +5435,10 @@
             "material": [
               "Vieilles pages de journal, une par enfant",
               "Papier de récupération : prospectus, jamais de livres",
-              "Loupes, une pour deux enfants",
+              {
+                "text": "Loupes, une pour deux enfants",
+                "bild": "motiv:lupe"
+              },
               "Bol plat avec de l’eau"
             ],
             "schritte": [
@@ -5274,7 +5454,7 @@
               "Regarder les bords à la loupe : qu’est-ce qui dépasse ?",
               "Poser un petit morceau de papier sur l’eau et attendre : comment s’enroule-t-il ?"
             ],
-            "vermutung": "Poser les cartes : les deux déchirures pareilles – une droite, une de travers. Chaque enfant pose son caillou. Souvent : « Si je fais attention, ça se déchire toujours droit. »",
+            "vermutung": "Poser les cartes : les deux déchirures pareilles – une droite, une de travers. Chaque enfant pose son cube. Souvent : « Si je fais attention, ça se déchire toujours droit. »",
             "beobachten": "Dans quel sens le papier se déchire-t-il long et droit, dans quel sens en zigzag ? Que vois-tu au bord avec la loupe ? Comment s’enroule le papier mouillé ?",
             "warumKind": "Le papier est fait de minuscules fibres de bois. Presque toutes sont couchées dans le même sens : dans ce sens-là, il se déchire facilement et droit.",
             "hintergrund": "Le papier est fait de fibres végétales, souvent de bois. Dans la machine, la pâte coule sur une toile qui avance vite ; les fibres s’alignent surtout dans ce sens. Dans ce sens, le papier se déchire droit et se plie plus facilement ; en travers, il se déchire en zigzag. Mouillé, il gonfle davantage en travers des fibres et s’enroule. Voilà pourquoi les livres doivent rester au sec – une bonne occasion de poser les règles de notre bibliothèque.",
@@ -5283,7 +5463,7 @@
               "standard:wasser"
             ],
             "weiter": "Avec des bouts de papier trempés, un tamis et un cadre, fabriquer du papier recyclé et le faire sécher – il devient des marque-pages pour la bibliothèque de classe.",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "stoffe",
               "wasser-wandert"

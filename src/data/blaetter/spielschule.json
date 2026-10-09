@@ -50,8 +50,8 @@
               "titel": "das Kind"
             },
             {
-              "bild": "gesicht:neutral",
-              "titel": "das Gesicht"
+              "bild": "icon:hand-finger",
+              "titel": "der Finger"
             },
             {
               "bild": "motiv:auge",
@@ -231,17 +231,17 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Jedes Kind legt einen Stein zu seinem Lieblingsspiel der Woche. Das Spiel mit den meisten Steinen wird am Freitag gespielt.",
+            "text": "Donnerstag: Jedes Kind legt einen Baustein zu seinem Lieblingsspiel der Woche. Das Spiel mit den meisten Bausteinen wird am Freitag gespielt.",
             "frage": "Was wollen wir über uns wissen?"
           },
           "stufen": {
-            "precoce": "Körperteile am Spiegel zeigen, den eigenen Namen hören; das Ich-Buch bunt bekritzeln.",
+            "precoce": "Körperteile am Spiegel zeigen; beim Fingerabdruck klebt eine Erwachsene den Streifen ab; Ich-Buch bekritzeln.",
             "p1": "Haar- und Augenfarbe beschreiben, das Alter an den Fingern zeigen, den Namen sagen.",
             "p2": "Sich mit einem Kind vergleichen (gleich, anders) und in ganzen Sätzen erzählen."
           },
           "zugang": [
             "Echter Spiegel und echte Hand statt Bildkarte; die Gebärde „ich“: auf sich zeigen.",
-            "Bildplan der Woche an der Tür: Spiegel, Körper, Fingerabdruck, Buch.",
+            "Bildplan der Woche aus den Bildkarten an der Tür: Spiegel, Körper, Fingerabdruck, Buch.",
             "Wer Berührung nicht mag, zeigt am Spiegel statt am Körper; die Ruhe-Ecke bleibt offen."
           ],
           "mehrsprachig": "Familien schicken „Ich heiße …“ in ihrer Sprache; jedes Kind begrüßt den Spiegel in zwei Sprachen.",
@@ -264,17 +264,23 @@
               "weicher Bleistift (6B)",
               "weißes Papier, ein Blatt je Kind",
               "durchsichtiger Klebestreifen",
-              "Lupen, eine für zwei Kinder",
-              "Steine zum Abstimmen: gleich oder anders"
+              {
+                "text": "Lupen, eine für zwei Kinder",
+                "bild": "motiv:lupe"
+              },
+              {
+                "text": "Bausteine zum Abstimmen: gleich oder anders",
+                "bild": "icon:cube"
+              }
             ],
             "schritte": [
-              "Vermuten: Jedes Kind legt einen Stein in den Becher „gleich“ oder „anders“.",
+              "Vermuten: Jedes Kind legt einen Baustein in den Becher „gleich“ oder „anders“.",
               "Auf einem Blatt mit dem Bleistift eine dicke, dunkle Fläche malen.",
-              "Die Fingerkuppe darin reiben, bis sie grau glänzt; einen Klebestreifen andrücken und abziehen.",
+              "Die Fingerkuppe darin reiben, bis sie grau glänzt; einen Klebestreifen andrücken und abziehen (bei den Jüngsten hilft eine Erwachsene).",
               "Den Streifen auf weißes Papier kleben und mit der Lupe ansehen: Bögen, Schleifen, Wirbel.",
               "Den eigenen Abdruck neben den eines anderen Kindes legen und vergleichen."
             ],
-            "vermutung": "Jedes Kind legt einen Stein in den Becher „gleich“ oder „anders“, bevor es seinen Abdruck macht. Viele denken: Hände sind gleich, also auch die Abdrücke.",
+            "vermutung": "Jedes Kind legt einen Baustein in den Becher „gleich“ oder „anders“, bevor es seinen Abdruck macht. Viele denken: Hände sind gleich, also auch die Abdrücke.",
             "beobachten": "Mit der Lupe schauen: Wo sind Bögen, Schleifen, Wirbel? Wo enden Linien, wo teilen sie sich? Kein Abdruck gleicht genau einem anderen.",
             "warumKind": "Auf jeder Fingerkuppe sind ganz feine Linien. Bei jedem Menschen liegen sie ein bisschen anders – darum gibt es deinen Abdruck nur einmal.",
             "hintergrund": "Die Hautleisten der Fingerkuppen bilden sich vor der Geburt und bleiben ein Leben lang gleich; ihr genaues Muster ist auch bei eineiigen Zwillingen verschieden. Grundformen sind Bogen, Schleife und Wirbel. Der Bleistiftstaub bleibt in den feinen Rillen haften, der Klebestreifen nimmt ihn mit. Für die Kinder zählt die Beobachtung: Alle haben Abdrücke, und alle sehen ein wenig anders aus – Verschiedenheit ist normal.",
@@ -285,7 +291,20 @@
             "dauer": "20 Min.",
             "phaenomene": [
               "sinne"
-            ]
+            ],
+            "forscherblatt": {
+              "vermuten": [
+                {
+                  "bild": "motiv:hand-offen",
+                  "text": "gleich"
+                },
+                {
+                  "bild": "motiv:auge",
+                  "text": "anders"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -312,8 +331,8 @@
               "titel": "l’enfant"
             },
             {
-              "bild": "gesicht:neutral",
-              "titel": "le visage"
+              "bild": "icon:hand-finger",
+              "titel": "le doigt"
             },
             {
               "bild": "motiv:auge",
@@ -428,33 +447,33 @@
             {
               "art": "kreis",
               "titel": "Le miroir voyage",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un miroir à main passe d’enfant en enfant. Celui qui le tient s’y regarde et dit : « Je m’appelle … Mes cheveux sont … » La classe répond en chœur : « Bonjour, … » Qui ne veut pas parler montre ses cheveux et passe le miroir.",
               "material": "miroir à main incassable"
             },
             {
               "art": "spiel",
               "titel": "Qui est-ce ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un enfant décrit, sans le montrer, un autre enfant de la classe : « Il a les cheveux bouclés et une veste bleue. » Les autres devinent. Celui qui a été deviné décrit à son tour. On décrit seulement, on ne juge jamais."
             },
             {
               "art": "sinne",
               "titel": "Qu’est-ce qui a changé ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un enfant se tient devant, tout le monde l’observe puis ferme les yeux. L’enfant change une chose : enlever une barrette, remonter une manche, mettre des lunettes. La classe ouvre les yeux et devine."
             },
             {
               "art": "zaehlen",
               "titel": "Quel âge as-tu ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Chaque enfant montre son âge avec les doigts et emboîte autant de cubes en tour. Les tours se placent côte à côte : lesquelles sont aussi hautes, laquelle est plus haute ? Tout le monde compte à voix haute.",
               "material": "cubes emboîtables"
             },
             {
               "art": "gestalten",
               "titel": "Mon livre sur moi",
-              "dauer": "25 Min.",
+              "dauer": "25 min",
               "text": "La page 2 est pliée et coupée (les adultes aident). Chaque enfant dessine dans les pages, aussi un autoportrait devant le miroir ; l’enseignante écrit ce qu’il raconte. L’empreinte va à la page 3.",
               "material": "page 2, crayons, bâton de colle"
             }
@@ -493,11 +512,11 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : chaque enfant pose un caillou sur son jeu préféré de la semaine. Le jeu qui a le plus de cailloux sera joué vendredi.",
+            "text": "Jeudi : chaque enfant pose un cube sur son jeu préféré de la semaine. Le jeu qui a le plus de cubes sera joué vendredi.",
             "frage": "Que voulons-nous savoir sur nous ?"
           },
           "stufen": {
-            "precoce": "Montrer les parties du corps dans le miroir, entendre son prénom ; gribouiller son livre en couleurs.",
+            "precoce": "Montrer les parties du corps au miroir ; pour l’empreinte, l’adulte colle le ruban ; gribouiller le livre.",
             "p1": "Décrire la couleur des cheveux et des yeux, montrer son âge avec les doigts, dire son prénom.",
             "p2": "Se comparer à un autre enfant (pareil, différent) et raconter en phrases entières."
           },
@@ -526,17 +545,23 @@
               "crayon à papier tendre (6B)",
               "papier blanc, une feuille par enfant",
               "ruban adhésif transparent",
-              "loupes, une pour deux enfants",
-              "cailloux pour voter : pareilles ou différentes"
+              {
+                "text": "loupes, une pour deux enfants",
+                "bild": "motiv:lupe"
+              },
+              {
+                "text": "cubes pour voter : pareilles ou différentes",
+                "bild": "icon:cube"
+              }
             ],
             "schritte": [
-              "Supposer : chaque enfant pose un caillou dans le gobelet « pareilles » ou « différentes ».",
+              "Supposer : chaque enfant pose un cube dans le gobelet « pareilles » ou « différentes ».",
               "Colorier au crayon une grande tache bien foncée sur une feuille.",
               "Frotter le bout du doigt dedans jusqu’à ce qu’il brille ; presser un ruban adhésif puis le retirer.",
               "Coller le ruban sur du papier blanc et l’observer à la loupe : arcs, boucles, tourbillons.",
               "Poser son empreinte à côté de celle d’un autre enfant et comparer."
             ],
-            "vermutung": "Chaque enfant pose un caillou « pareilles » ou « différentes » avant de faire son empreinte. Beaucoup pensent : les mains se ressemblent, donc les empreintes aussi.",
+            "vermutung": "Chaque enfant pose un cube « pareilles » ou « différentes » avant de faire son empreinte. Beaucoup pensent : les mains se ressemblent, donc les empreintes aussi.",
             "beobachten": "Regarder à la loupe : où sont les arcs, les boucles, les tourbillons ? Où les lignes s’arrêtent-elles ? Aucune empreinte n’est exactement comme une autre.",
             "warumKind": "Au bout de chaque doigt, il y a de très fines lignes. Chez chacun, elles sont un peu différentes : ton empreinte n’existe qu’une fois.",
             "hintergrund": "Les crêtes papillaires du bout des doigts se forment avant la naissance et ne changent plus ; leur dessin précis diffère même chez de vrais jumeaux. On distingue l’arc, la boucle et le tourbillon. La poudre de graphite reste dans les sillons de la peau, le ruban l’emporte. Pour les enfants, l’observation compte : tous ont des empreintes, et toutes sont un peu différentes – la différence est normale.",
@@ -544,10 +569,23 @@
               "Se laver les mains ensuite ; les empreintes restent en classe."
             ],
             "weiter": "Prendre les dix doigts d’un même enfant : sont-ils pareils ? Qui veut peut rapporter de chez lui des empreintes de personnes de sa famille.",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "sinne"
-            ]
+            ],
+            "forscherblatt": {
+              "vermuten": [
+                {
+                  "bild": "motiv:hand-offen",
+                  "text": "pareil"
+                },
+                {
+                  "bild": "motiv:auge",
+                  "text": "différent"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -714,6 +752,10 @@
             {
               "bild": "motiv:hand-offen",
               "titel": "die Hand"
+            },
+            {
+              "bild": "icon:pencil",
+              "titel": "der Stift"
             }
           ],
           "hoehe": 175
@@ -755,7 +797,7 @@
           "Montag – Namenskreis: Jedes Kind sagt seinen Namen, alle klatschen ihn in Silben. Fragenplakat starten, Namenskarten einführen.",
           "Dienstag – Laut-Detektiv: Wessen Name beginnt wie …? Wer so anfängt, steht auf. Wer mag, nennt auch den Rufnamen von zu Hause.",
           "Mittwoch – Forschen: Namen mit weißer Wachskreide schreiben, mit Wasserfarbe überstreichen und zusehen, wie er auftaucht.",
-          "Donnerstag – Namensband gestalten (Seite 2); die Klasse wählt mit Steinen, wie sie ab jetzt die Namen im Morgenkreis klatscht.",
+          "Donnerstag – Namensband gestalten (Seite 2); die Klasse wählt mit Bausteinen, wie sie ab jetzt die Namen im Morgenkreis klatscht.",
           "Freitag – Namen-Memory mit Fotos und Namenskarten; jedes Kind findet seine Karte und die eines Freundes."
         ],
         "hintergrund": "Der eigene Name ist für viele Kinder das erste Wort, das sie als Schrift wiedererkennen. Namen zu klatschen übt die Gliederung in Silben, den ersten Laut herauszuhören die Anlautbewusstheit. Beides gehört zur phonologischen Bewusstheit, die das spätere Lesen- und Schreibenlernen deutlich erleichtert (Goswami & Bryant, 1990). Wer seinen Namen wiedererkennt und Buchstaben darin entdeckt, sammelt erste Erfahrungen mit Schrift (Whitehurst & Lonigan, 1998). In mehrsprachigen Klassen zeigt der Name zudem: Jede Sprache und jeder Name hat hier Platz.",
@@ -860,7 +902,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Jedes Kind legt einen Stein zu laut, leise oder geflüstert. So begrüßt die Klasse ab Donnerstag jeden Namen im Morgenkreis.",
+            "text": "Mittwoch: Jedes Kind legt einen Baustein zu laut, leise oder geflüstert. So begrüßt die Klasse ab Donnerstag jeden Namen im Morgenkreis.",
             "frage": "Was wollen wir über Namen wissen?"
           },
           "stufen": {
@@ -892,7 +934,10 @@
             "material": [
               "weiße Wachsmalkreide",
               "weißes Zeichenpapier, ein Blatt je Kind",
-              "Wasserfarben, dicke Pinsel",
+              {
+                "text": "Wasserfarben, dicke Pinsel",
+                "bild": "motiv:pinsel"
+              },
               "Becher mit Wasser",
               "Namenskarte als Vorlage",
               "Malkittel oder alte Hemden"
@@ -981,6 +1026,10 @@
             {
               "bild": "motiv:hand-offen",
               "titel": "la main"
+            },
+            {
+              "bild": "icon:pencil",
+              "titel": "le crayon"
             }
           ],
           "hoehe": 175
@@ -1022,7 +1071,7 @@
           "Lundi – cercle des prénoms : chacun dit le sien, tous le tapent en syllabes. Lancer l’affiche des questions, présenter les cartes.",
           "Mardi – détectives des sons : qui commence comme … ? Ceux dont le prénom débute pareil se lèvent ; on peut dire comment on est appelé à la maison.",
           "Mercredi – chercheurs : écrire un prénom à la craie grasse blanche, peindre par-dessus et regarder le prénom apparaître.",
-          "Jeudi – décorer le bandeau (page 2) ; la classe vote avec des cailloux comment elle tape les prénoms au cercle du matin.",
+          "Jeudi – décorer le bandeau (page 2) ; la classe vote avec des cubes comment elle tape les prénoms au cercle du matin.",
           "Vendredi – memory des prénoms avec photos et cartes ; chacun retrouve sa carte et celle d’un copain."
         ],
         "hintergrund": "Pour beaucoup d’enfants, leur prénom est le premier mot qu’ils reconnaissent à l’écrit. Taper les prénoms entraîne le découpage en syllabes ; repérer le premier son développe la conscience des sons. Ces deux habiletés de conscience phonologique facilitent nettement l’apprentissage de la lecture et de l’écriture (Goswami & Bryant, 1990). Reconnaître son prénom et y découvrir des lettres, c’est une première rencontre avec l’écrit (Whitehurst & Lonigan, 1998). Dans une classe plurilingue, le prénom montre aussi que chaque langue a sa place.",
@@ -1061,34 +1110,34 @@
             {
               "art": "kreis",
               "titel": "Taper les prénoms",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "En cercle, chaque enfant dit son prénom et tous le tapent en syllabes : « Mi-a », « Ra-fa-el ». Puis on frappe du pied, sur les genoux ou on chuchote. Chaque enfant choisit comment la classe dit son prénom."
             },
             {
               "art": "spiel",
               "titel": "Le détective des sons",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante prononce longuement le premier son d’un prénom : « Mmmia ». Tous les enfants dont le prénom commence pareil se lèvent et font coucou. Pour les sons difficiles, tout le monde répète le prénom deux fois lentement.",
               "material": "cartes de prénoms"
             },
             {
               "art": "gestalten",
               "titel": "Mon bandeau",
-              "dauer": "25 Min.",
+              "dauer": "25 min",
               "text": "Un adulte écrit chaque prénom en grand sur le bandeau. L’enfant suit les lettres du doigt, colorie le bandeau et colle du sable ou du tissu sur la première lettre. Le bandeau est porté toute la semaine.",
               "material": "page 2, crayons, sable, chutes de tissu, bâton de colle"
             },
             {
               "art": "bewegung",
               "titel": "Qui est appelé ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants se déplacent en musique. Quand elle s’arrête, l’enseignante tape un prénom seulement en rythme, sans mots : deux coups, trois coups. Tous les enfants dont le prénom a autant de syllabes sautent au milieu.",
               "material": "musique"
             },
             {
               "art": "sprache",
               "titel": "Memory des prénoms",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Les photos des enfants et leurs cartes de prénoms sont posées face cachée. Qui trouve une paire dit : « C’est Tiago, son prénom commence par T. » Ceux qui ne lisent pas encore regardent la première lettre et la longueur.",
               "material": "photos, cartes de prénoms"
             }
@@ -1127,7 +1176,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : chaque enfant pose un caillou sur fort, doucement ou chuchoté. Dès jeudi, la classe salue ainsi chaque prénom au cercle du matin.",
+            "text": "Mercredi : chaque enfant pose un cube sur fort, doucement ou chuchoté. Dès jeudi, la classe salue ainsi chaque prénom au cercle du matin.",
             "frage": "Que voulons-nous savoir sur les prénoms ?"
           },
           "stufen": {
@@ -1159,7 +1208,10 @@
             "material": [
               "craie grasse blanche",
               "papier à dessin blanc, une feuille par enfant",
-              "peinture à l’eau, gros pinceaux",
+              {
+                "text": "peinture à l’eau, gros pinceaux",
+                "bild": "motiv:pinsel"
+              },
               "gobelet d’eau",
               "carte de prénom comme modèle",
               "blouses ou vieilles chemises"
@@ -1178,7 +1230,7 @@
               "Mettre des blouses, protéger la table ; ne pas boire l’eau colorée."
             ],
             "weiter": "Dessiner une image secrète pour un copain et le laisser la faire apparaître. Que se passe-t-il avec un feutre à la place de la peinture ?",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "farben",
               "stoffe"
@@ -1722,41 +1774,41 @@
             {
               "art": "kreis",
               "titel": "La chaîne des Moien",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants sont assis en cercle. Un enfant regarde son voisin et dit : « Moien, Noah. » Noah répond et salue le suivant. Les enfants d’une autre langue de famille disent le salut dans leur langue (Bonjour, Olá, Bom dia) ; la classe le répète."
             },
             {
               "art": "spiel",
               "titel": "Quelle carte manque ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Quatre à six cartes de la journée sont posées dans l’ordre. Tous ferment les yeux, l’enseignante retire une carte ou en échange deux. Qui le remarque le dit : « Le repas manque, il vient après le jeu. »",
               "material": "cartes de la journée"
             },
             {
               "art": "musik",
               "titel": "Le chant « Moien »",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Chaque matin, tous disent le même court chant en rythme, avec un hochet ou en frappant des mains : « Moien, Moien, qui est là ? Ana est là aujourd’hui. » L’enfant nommé fait coucou. Les adultes sont aussi dans le chant.",
               "material": "hochet"
             },
             {
               "art": "gestalten",
               "titel": "Notre journée au mur",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Chaque enfant colorie en grand une carte de la journée, les cartes de la page 1 servent de modèle. Elles vont dans l’ordre sur un tableau ; l’enfant du jour retourne une carte après chaque activité.",
               "material": "carton, crayons, tableau d’affichage"
             },
             {
               "art": "bewegung",
               "titel": "Salut dans toute la salle",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "En musique, tout le monde se déplace. Quand elle s’arrête, l’enseignante annonce une façon de saluer : faire coucou, toucher les coudes, toucher les pieds, s’incliner. Les enfants saluent celui qui est le plus près et disent son prénom.",
               "material": "musique"
             },
             {
               "art": "sprache",
               "titel": "Et maintenant ?",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Avant chaque changement dans la journée, l’enseignante demande : « Qu’avons-nous fait ? Qu’est-ce qui vient maintenant ? » Un enfant montre la carte sur le planning et dit la phrase. Après quelques jours, les enfants font l’annonce eux-mêmes."
             }
           ],
@@ -1847,7 +1899,7 @@
               "standard:kleinteile"
             ],
             "weiter": "Remplacer la ficelle par de la laine ou du fil de cerf-volant : quelle « ligne » marche le mieux ? Marche-t-elle aussi dans un virage ?",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "schall"
             ],
@@ -2210,7 +2262,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Die Kinder legen Steine zu den Regelkarten, die ihnen am wichtigsten sind. Die Karten mit den meisten Steinen, höchstens vier, kommen an die Wand.",
+            "text": "Mittwoch: Die Kinder legen Bausteine zu den Regelkarten, die ihnen am wichtigsten sind. Die Karten mit den meisten Bausteinen, höchstens vier, kommen an die Wand.",
             "frage": "Was brauchen wir, damit es allen gut geht?"
           },
           "stufen": {
@@ -2256,15 +2308,18 @@
                 "text": "Kissen",
                 "bild": "icon:pillow"
               },
-              "Steine zum Abstimmen, einer je Kind"
+              {
+                "text": "Bausteine zum Abstimmen, einer je Kind",
+                "bild": "icon:cube"
+              }
             ],
             "schritte": [
-              "Vermuten: Jedes Kind legt einen Stein auf den Untergrund, auf dem es am leisesten sein wird.",
+              "Vermuten: Jedes Kind legt einen Baustein auf den Untergrund, auf dem es am leisesten sein wird.",
               "Alle schließen die Augen. Ein Kind lässt den Klotz aus Kniehöhe auf den glatten Boden fallen.",
               "Dasselbe auf dem Teppich und auf dem Kissen – alle lauschen genau.",
               "Die Kinder ordnen die drei Untergründe von laut nach leise."
             ],
-            "vermutung": "Jedes Kind legt seinen Stein zu Boden, Teppich oder Kissen – dorthin, wo es am leisesten wird. Viele sagen: „Ein Klotz ist immer laut.“",
+            "vermutung": "Jedes Kind legt seinen Baustein zu Boden, Teppich oder Kissen – dorthin, wo es am leisesten wird. Viele sagen: „Ein Klotz ist immer laut.“",
             "beobachten": "Auf dem harten Boden knallt es, auf dem Teppich klingt es dumpf, auf dem Kissen hört man fast nichts. Was ist weich, was ist hart?",
             "warumKind": "Weiche Dinge schlucken das Geräusch. Darum ist unsere Teppich-Ecke ein leiser Platz.",
             "hintergrund": "Beim Aufprall wird Bewegungsenergie in Schall umgesetzt. Weiche, poröse Materialien verformen sich, verlängern den Aufprall und wandeln einen Teil der Energie in Wärme um – es entsteht weniger Schall. Darum dämpfen Teppiche, Vorhänge und Kissen den Lärm in Räumen.",
@@ -2454,34 +2509,34 @@
             {
               "art": "kreis",
               "titel": "Trouver nos règles",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Une marionnette demande : « De quoi avons-nous besoin pour que tout le monde se sente bien ? » Les enfants donnent des idées, l’enseignante pose la carte qui convient. Les enfants peuvent inventer et dessiner une règle eux-mêmes ; elle est affichée à côté des cartes.",
               "material": "marionnette, cartes de règles"
             },
             {
               "art": "spiel",
               "titel": "Cloche – statue",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants bougent librement et peuvent parler. Quand la cloche sonne, tous restent immobiles comme des statues et se taisent. Après trois respirations, un enfant donne le signal de reprise. Toujours utiliser le signal de la même façon, gentiment.",
               "material": "cloche ou baguette sonore"
             },
             {
               "art": "theater",
               "titel": "La marionnette ne connaît pas les règles",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "La marionnette est nouvelle dans la classe : elle court, coupe la parole, laisse tout traîner. Les enfants lui montrent la carte qui convient et expliquent. Elle réessaie et remercie. Ainsi, les enfants restent des aides, pas des accusateurs.",
               "material": "marionnette, cartes de règles"
             },
             {
               "art": "bewegung",
               "titel": "Stop, c’est stop",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Par deux : un enfant avance doucement vers l’autre. Le second tend la main et dit fort : « Stop. » Le premier s’arrête tout de suite. Puis on change. Important : chaque stop est respecté, même dans le jeu."
             },
             {
               "art": "gestalten",
               "titel": "Notre affiche des règles",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Les cartes de règles choisies sont collées sur une grande affiche. Chaque enfant appuie sa main dans la peinture à côté : « Je participe. » L’affiche est accrochée à hauteur des yeux près du cercle et montrée au besoin, au lieu de réprimander.",
               "material": "affiche, peinture au doigt, colle"
             }
@@ -2519,7 +2574,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : les enfants posent des cailloux sur leurs cartes de règles préférées. Les quatre cartes qui en ont le plus vont au mur.",
+            "text": "Mercredi : les enfants posent des cubes sur leurs cartes de règles préférées. Les quatre cartes qui en ont le plus vont au mur.",
             "frage": "Que faut-il pour bien vivre ensemble ?"
           },
           "stufen": {
@@ -2565,15 +2620,18 @@
                 "text": "coussin",
                 "bild": "icon:pillow"
               },
-              "cailloux pour voter, un par enfant"
+              {
+                "text": "cubes pour voter, un par enfant",
+                "bild": "icon:cube"
+              }
             ],
             "schritte": [
-              "Supposer : chaque enfant pose un caillou sur le support où ce sera le plus silencieux.",
+              "Supposer : chaque enfant pose un cube sur le support où ce sera le plus silencieux.",
               "Tous ferment les yeux. Un enfant laisse tomber le cube à hauteur de genou sur le sol lisse.",
               "Pareil sur le tapis et sur le coussin – tous écoutent bien.",
               "Les enfants rangent les trois supports du plus bruyant au plus silencieux."
             ],
-            "vermutung": "Chaque enfant pose son caillou sur sol, tapis ou coussin – là où ce sera le plus silencieux. Beaucoup disent : « Un cube fait toujours du bruit. »",
+            "vermutung": "Chaque enfant pose son cube sur sol, tapis ou coussin – là où ce sera le plus silencieux. Beaucoup disent : « Un cube fait toujours du bruit. »",
             "beobachten": "Sur le sol dur, ça claque ; sur le tapis, ça sonne sourd ; sur le coussin, on n’entend presque rien. Qu’est-ce qui est mou, qu’est-ce qui est dur ?",
             "warumKind": "Les choses molles avalent le bruit. C’est pour ça que notre coin tapis est un coin calme.",
             "hintergrund": "Au choc, l’énergie du mouvement devient du son. Les matières molles et poreuses se déforment, allongent le choc et transforment une partie de l’énergie en chaleur : il y a moins de bruit. C’est pourquoi tapis, rideaux et coussins atténuent le bruit dans une pièce.",
@@ -2581,7 +2639,7 @@
               "Laisser tomber le cube seulement à hauteur de genou ; les autres restent assis à un pas."
             ],
             "weiter": "Marcher en chaussettes puis en chaussures : quels pieds sont les plus silencieux ? Où est-ce le plus calme dans la classe ?",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "schall"
             ],
@@ -2760,6 +2818,10 @@
             {
               "bild": "motiv:handtuch",
               "titel": "das Handtuch"
+            },
+            {
+              "bild": "motiv:schal",
+              "titel": "der Schal"
             }
           ],
           "hoehe": 175
@@ -2928,7 +2990,8 @@
             "planB": "Keine Leine: Die Handtücher über zwei Stuhllehnen hängen, eines ausgebreitet, eines geknüllt.",
             "sicherheit": [
               "Schnürsenkel und Bänder nie um Hals oder Hände wickeln.",
-              "Nasser Boden ist rutschig: Tropfen sofort aufwischen."
+              "Nasser Boden ist rutschig: Tropfen sofort aufwischen.",
+              "standard:fotos"
             ]
           },
           "experiment": {
@@ -2939,15 +3002,18 @@
               "Schüssel mit Wasser",
               "Wäscheleine oder Haken, Klammern",
               "Schale für das geknüllte Tuch",
-              "Steine zum Abstimmen"
+              {
+                "text": "Bausteine zum Abstimmen",
+                "bild": "icon:cube"
+              }
             ],
             "schritte": [
-              "Vermuten: Jedes Kind legt einen Stein zu dem Tuch, das zuerst trocken wird.",
+              "Vermuten: Jedes Kind legt einen Baustein zu dem Tuch, das zuerst trocken wird.",
               "Beide Handtücher ins Wasser tauchen und zu zweit kräftig auswringen.",
               "Ein Tuch ausgebreitet aufhängen, das andere geknüllt in eine Schale legen.",
               "Nach dem Mittag und am Nachmittag fühlen: nass, feucht oder trocken? Das Ergebnis mit Bildern aufhängen."
             ],
-            "vermutung": "Jedes Kind legt einen Stein zu dem Tuch, das zuerst trocken wird. Viele sagen: „Das geknüllte, es ist ja klein.“",
+            "vermutung": "Jedes Kind legt einen Baustein zu dem Tuch, das zuerst trocken wird. Viele sagen: „Das geknüllte, es ist ja klein.“",
             "beobachten": "Das ausgebreitete Tuch ist viel schneller trocken; das geknüllte ist innen noch lange nass. Wo ist es am nassesten, wo am trockensten?",
             "warumKind": "Das Wasser fliegt ganz fein in die Luft. Wenn das Tuch ausgebreitet ist, hat es mehr Platz dafür.",
             "hintergrund": "Wasser verdunstet an der Oberfläche; eine große, luftumspülte Fläche gibt mehr Wasserdampf ab als ein Knäuel, in dem feuchte Luft stehen bleibt. Darum hängen wir Handtücher nach dem Händewaschen auf. Wärme und Wind beschleunigen das Verdunsten zusätzlich.",
@@ -3024,6 +3090,10 @@
             {
               "bild": "motiv:handtuch",
               "titel": "la serviette"
+            },
+            {
+              "bild": "motiv:schal",
+              "titel": "l’écharpe"
             }
           ],
           "hoehe": 175
@@ -3098,41 +3168,41 @@
             {
               "art": "spiel",
               "titel": "Le truc de la veste",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "La veste est posée doublure vers le haut devant l’enfant, le col vers ses pieds. L’enfant glisse les deux bras dans les manches et passe la veste par-dessus la tête. Qui y arrive le montre à l’enfant suivant."
             },
             {
               "art": "kreis",
               "titel": "Mon crochet, ma place",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Chaque enfant choisit un signe pour son crochet (photo, animal, couleur) et l’accroche. Puis il montre comment il suspend sa veste. Qui a besoin d’aide demande à un autre enfant ou à l’enseignante.",
               "material": "signes, ruban adhésif"
             },
             {
               "art": "bewegung",
               "titel": "Relais d’habillage",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Deux paniers de grands vêtements (chapeau, gilet, écharpe) attendent au fond de la salle. Les enfants courent, enfilent une pièce, reviennent et touchent le suivant. Ce n’est pas la vitesse qui compte, mais que tous y arrivent.",
               "material": "déguisements, deux paniers"
             },
             {
               "art": "gestalten",
               "titel": "La chaussure à lacer",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Dans du carton épais, l’enseignante découpe une grande chaussure et la perfore. Les enfants la colorient et passent un lacet dans les trous – d’abord en désordre, puis dans l’ordre. Cela entraîne les doigts à nouer plus tard.",
               "material": "carton épais, perforatrice, lacets, couleurs"
             },
             {
               "art": "theater",
               "titel": "La poupée sort dehors",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants habillent une grande poupée dans l’ordre, de ce qu’il lui faut dehors, en racontant : « D’abord le pantalon, puis les chaussures, à la fin le bonnet. » La poupée se trompe exprès (bonnet sur le pied) – les enfants l’aident.",
               "material": "grande poupée habillée"
             },
             {
               "art": "spiel",
               "titel": "À la recherche des chaussures",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Toutes les chaussures de la classe sont mélangées dans un coin. Chaque enfant cherche ses deux chaussures, les enfile et va au but. Qui a fini aide un enfant qui cherche encore : gauche et droite vont-elles ensemble ?"
             }
           ],
@@ -3192,7 +3262,8 @@
             "planB": "Pas de corde : suspendre les serviettes sur deux dossiers de chaise, l’une étalée, l’autre en boule.",
             "sicherheit": [
               "Ne jamais enrouler lacets ou rubans autour du cou ou des mains.",
-              "Sol mouillé glissant : essuyer les gouttes tout de suite."
+              "Sol mouillé glissant : essuyer les gouttes tout de suite.",
+              "standard:fotos"
             ]
           },
           "experiment": {
@@ -3203,15 +3274,18 @@
               "bol d’eau",
               "corde à linge ou crochet, pinces",
               "coupelle pour la serviette en boule",
-              "cailloux pour voter"
+              {
+                "text": "cubes pour voter",
+                "bild": "icon:cube"
+              }
             ],
             "schritte": [
-              "Supposer : chaque enfant pose un caillou près de la serviette qui séchera d’abord.",
+              "Supposer : chaque enfant pose un cube près de la serviette qui séchera d’abord.",
               "Tremper les deux serviettes et les essorer fort à deux.",
               "Étendre l’une bien étalée, poser l’autre en boule dans une coupelle.",
               "Toucher après midi et l’après-midi : mouillée, humide ou sèche ? Afficher le résultat en images."
             ],
-            "vermutung": "Chaque enfant pose un caillou près de la serviette qui séchera d’abord. Beaucoup disent : « Celle en boule, elle est petite. »",
+            "vermutung": "Chaque enfant pose un cube près de la serviette qui séchera d’abord. Beaucoup disent : « Celle en boule, elle est petite. »",
             "beobachten": "La serviette étalée sèche bien plus vite ; celle en boule reste mouillée à l’intérieur. Où est-ce le plus mouillé, le plus sec ?",
             "warumKind": "L’eau s’envole en toutes petites gouttes dans l’air. Quand la serviette est étalée, elle a plus de place pour ça.",
             "hintergrund": "L’eau s’évapore par la surface ; une grande surface bien aérée libère plus de vapeur qu’une boule où l’air humide stagne. Voilà pourquoi on suspend les serviettes après le lavage des mains. La chaleur et le vent accélèrent encore l’évaporation.",
@@ -3219,7 +3293,7 @@
               "Sol mouillé glissant : essuyer les gouttes tout de suite."
             ],
             "weiter": "Suspendre une serviette au soleil, une à l’ombre : laquelle sèche plus vite ? Et près de la fenêtre ou dans le couloir ?",
-            "dauer": "1 Tag, 3 × 5 Min.",
+            "dauer": "1 Tag, 3 × 5 min",
             "phaenomene": [
               "verdunsten"
             ],
@@ -3775,42 +3849,42 @@
             {
               "art": "theater",
               "titel": "Je peux jouer ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Deux marionnettes jouent aux cubes, une troisième regarde. Les enfants devinent ce qu’elle ressent et donnent des conseils : aller vers eux, demander, offrir quelque chose. La marionnette essaie. Puis des enfants rejouent la scène avec elles.",
               "material": "trois marionnettes, cubes"
             },
             {
               "art": "spiel",
               "titel": "Le sablier décide",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Chaque duo reçoit un jouet apprécié et un sablier. Un enfant joue, l’autre retourne le sablier et regarde ou construit à côté. Quand le sable est écoulé, il dit : « Maintenant, c’est mon tour. » Puis on échange.",
               "material": "sabliers (1–2 min), jouets"
             },
             {
               "art": "kreis",
               "titel": "Je t’invite",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un ballon est posé au milieu. Un enfant le prend, le fait rouler vers un autre et dit : « Lena, tu joues avec moi ? » Lena répond et invite le suivant. L’enseignante veille à ce que chaque enfant soit invité une fois.",
               "material": "ballon mou"
             },
             {
               "art": "bewegung",
               "titel": "La balle sur le foulard",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Deux enfants portent ensemble un foulard avec une balle légère à travers la salle sans la faire tomber. Ils doivent s’entendre : « Doucement », « Maintenant à droite ». Puis changer de partenaire et essayer à trois.",
               "material": "foulards, balles légères"
             },
             {
               "art": "gestalten",
               "titel": "Le dessin des copains",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Deux enfants dessinent sur la même grande feuille : chacun commence dans un coin, les dessins se rejoignent au milieu. Ils discutent des couleurs et échangent les crayons. Les dessins sont affichés par deux.",
               "material": "grand papier, crayons gras"
             },
             {
               "art": "draussen",
               "titel": "Qui joue avec moi ?",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Dans la cour, l’enseignante présente trois jeux : marelle à la craie, faire rouler le ballon, faire des gâteaux de sable. Chaque enfant en choisit un et demande à un autre s’il vient. Toutes les cinq minutes, on peut changer et inviter de nouveaux partenaires.",
               "material": "craie de rue, ballon, jouets de sable"
             }
@@ -3901,7 +3975,7 @@
               "Suspendre le sac juste au-dessus du sol ; pieds à l’écart s’il tombe."
             ],
             "weiter": "Essayer avec de la laine, des bandes de journal ou des brins d’herbe tressés : quelle tresse porte le plus ?",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "kraefte"
             ],
@@ -3960,7 +4034,7 @@
           {
             "de": "die Sanduhr",
             "fr": "le sablier",
-            "lb": "d’Sanduer",
+            "lb": "d’Sandauer",
             "pt": "a ampulheta",
             "bild": "motiv:sanduhr"
           },
@@ -4249,7 +4323,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Dienstag: Die Kinder legen Steine zu dem Zeichen, das jede Kiste bekommen soll: Foto, Bild oder Farbe. Das Ergebnis wird sofort an die Kisten geklebt.",
+            "text": "Dienstag: Die Kinder legen Bausteine zu dem Zeichen, das jede Kiste bekommen soll: Foto, Bild oder Farbe. Das Ergebnis wird sofort an die Kisten geklebt.",
             "frage": "Woher wissen wir, wohin was gehört?"
           },
           "stufen": {
@@ -4355,7 +4429,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "le gobelet"
+              "titel": "la tasse"
             },
             {
               "bild": "motiv:teller",
@@ -4459,7 +4533,7 @@
             "l’étagère",
             "la table",
             "la chaise",
-            "le gobelet",
+            "la tasse",
             "l’assiette",
             "la place",
             "ranger",
@@ -4470,40 +4544,40 @@
             {
               "art": "spiel",
               "titel": "Où habite-t-il ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "On vide un sac de jouets. À tour de rôle, les enfants tirent un objet et le portent à sa place : « La voiture habite dans la caisse des voitures. » La classe vérifie avec le pouce levé si c’est juste.",
               "material": "sac, jouets de différents coins"
             },
             {
               "art": "zaehlen",
               "titel": "Trier et compter",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Des cubes de quatre couleurs sont mélangés. Chaque enfant prend une couleur et la ramasse dans son panier. Puis on compte : qui en a combien ? Les tours côte à côte montrent où il y en a plus et où il y en a moins.",
               "material": "cubes, quatre paniers"
             },
             {
               "art": "musik",
               "titel": "Le chant du rangement",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "En rythme, tous disent le même chant : « C’est l’heure de ranger, tout le monde va aider. » On frappe sur les cuisses. Le chant annonce la fin du jeu ; quand il est fini, tout est à sa place."
             },
             {
               "art": "bewegung",
               "titel": "Robots rangeurs",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants sont des robots et se déplacent raides dans la salle. L’enseignante donne des ordres : « Robot, mets un cube rouge dans la caisse. » « Robot, range deux livres sur l’étagère. » Ranger devient un jeu de mouvement avec nombres et couleurs."
             },
             {
               "art": "gestalten",
               "titel": "Étiquettes pour les caisses",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Les enfants dessinent ou collent des images pour les caisses : cubes, voitures, animaux. L’enseignante écrit le mot. Ensemble, on fixe les étiquettes – maintenant chaque enfant sait où va quoi.",
               "material": "carton, images, colle, crayons"
             },
             {
               "art": "kreis",
               "titel": "Détectives du rangement",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un enfant pose trois objets au mauvais endroit, les autres les trouvent et les rapportent. Qui a trouvé quelque chose raconte où cela va et comment il le sait."
             }
           ],
@@ -4541,7 +4615,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mardi : les enfants posent des cailloux sur le signe que chaque caisse doit recevoir : photo, image ou couleur. Le résultat est collé aussitôt sur les caisses.",
+            "text": "Mardi : les enfants posent des cubes sur le signe que chaque caisse doit recevoir : photo, image ou couleur. Le résultat est collé aussitôt sur les caisses.",
             "frage": "Comment savoir où va chaque chose ?"
           },
           "stufen": {
@@ -4591,7 +4665,7 @@
               "Seulement des bouts de papier ; les ramasser ensuite, ne pas les mettre en bouche."
             ],
             "weiter": "Approcher la cuillère frottée d’un mince filet d’eau du robinet : il se courbe vers la cuillère.",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "elektrizitaet"
             ],
@@ -4642,9 +4716,9 @@
           },
           {
             "de": "der Becher",
-            "fr": "le gobelet",
+            "fr": "la tasse",
             "lb": "de Becher",
-            "pt": "o copo",
+            "pt": "a caneca",
             "bild": "motiv:becher"
           },
           {
@@ -4931,7 +5005,8 @@
             "planB": "Kein Brett: Einen langen Besenstiel oder ein Lineal-Brett nehmen, die Kiste mit weniger Büchern.",
             "sicherheit": [
               "Beim Hebel: Füße weg unter der Kiste; nur eine Handbreit anheben.",
-              "Handabdrücke mit abwaschbarer Fingerfarbe; danach Hände waschen."
+              "Handabdrücke mit abwaschbarer Fingerfarbe; danach Hände waschen.",
+              "standard:fotos"
             ]
           },
           "experiment": {
@@ -5106,35 +5181,35 @@
             {
               "art": "kreis",
               "titel": "Le panneau des services",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Sur un panneau sont accrochées les cartes des services, avec de la place pour des photos dessous. Chaque enfant choisit un service pour la semaine et accroche sa photo. Chaque matin, l’enfant de service regarde ce qu’il y a à faire.",
               "material": "panneau, cartes, photos, pinces"
             },
             {
               "art": "theater",
               "titel": "Demander de l’aide – mais comment ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "La marionnette n’arrive pas à son livre sur l’étagère et pleure. Les enfants réfléchissent : que peut-elle faire ? On s’exerce ensemble : aller voir, dire son prénom, dire le problème : « Je n’arrive pas. » Plusieurs enfants le jouent.",
               "material": "marionnette"
             },
             {
               "art": "bewegung",
               "titel": "La chaîne d’entraide",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants sont en ligne et se passent des objets : une balle, un coussin, un gobelet d’eau. En prenant, chacun dit « merci », en donnant « s’il te plaît ». À la fin, toute la classe porte ensemble un lourd panier.",
               "material": "balle, coussin, panier"
             },
             {
               "art": "kochen",
               "titel": "Nous mettons la table",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Avant le petit-déjeuner, les enfants de service mettent la table : une assiette, un gobelet, une cuillère pour chacun. Ils comptent les places et vérifient. Les autres disent merci en s’asseyant. Vaisselle incassable seulement.",
               "material": "assiettes, gobelets, cuillères"
             },
             {
               "art": "gestalten",
               "titel": "Les mains de merci",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Chaque enfant imprime sa main sur du papier. La main devient une carte de remerciement pour quelqu’un qui a aidé ; l’enseignante écrit pourquoi. Les cartes sont offertes vendredi au cercle des mercis.",
               "material": "papier, peinture au doigt, crayons"
             }
@@ -5196,7 +5271,8 @@
             "planB": "Pas de planche : prendre un long manche à balai ou une règle-planche, la caisse avec moins de livres.",
             "sicherheit": [
               "Levier : pieds à l’écart sous la caisse ; soulever d’une main de haut seulement.",
-              "Peinture au doigt lavable pour les empreintes ; se laver les mains ensuite."
+              "Peinture au doigt lavable pour les empreintes ; se laver les mains ensuite.",
+              "standard:fotos"
             ]
           },
           "experiment": {
@@ -5227,7 +5303,7 @@
               "Pieds à l’écart sous la caisse ; soulever d’une main de haut seulement."
             ],
             "weiter": "Sur la bascule de la cour : où doit s’asseoir l’enfant léger pour soulever le plus lourd ?",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "kraefte"
             ],
@@ -5357,7 +5433,7 @@
     "de": {
       "titel": "Wenn ich froh bin",
       "untertitel": "Freude erkennen, zeigen und mit anderen teilen",
-      "anleitung": "Die Karten zweimal drucken und für Gespräche und Memory nutzen: Was macht dich froh? Seite 2 ist das Forscherblatt zum Rosinen-Versuch: vermuten, Gläser malen, Ergebnis einkreisen.",
+      "anleitung": "Die Karten zweimal drucken und für Gespräche und Memory nutzen: Was macht dich froh? Auf Seite 2 kreist das Kind ein, was es froh macht, erzählt die Bildgeschichte und malt das Ende. Das Forscherblatt zu den Rosinen gibt es als Zusatzseite.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -5392,7 +5468,7 @@
               "titel": "der Regenbogen"
             },
             {
-              "bild": "icon:grape",
+              "bild": "motiv:rosine",
               "titel": "die Rosine"
             },
             {
@@ -5402,6 +5478,10 @@
             {
               "bild": "motiv:freunde",
               "titel": "die Freunde"
+            },
+            {
+              "bild": "motiv:sonne",
+              "titel": "die Sonne"
             }
           ],
           "hoehe": 175
@@ -5410,21 +5490,80 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "name": false,
-          "frage": "Tanzen Rosinen im Sprudelwasser?",
-          "bild": "motiv:wasserglas",
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Was macht dich froh? Kreise ein.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
             {
-              "bild": "icon:music",
-              "text": "tanzt"
+              "bild": "motiv:ballon",
+              "text": "der Luftballon"
             },
             {
-              "bild": "icon:zzz",
-              "text": "bleibt unten"
+              "bild": "motiv:freunde",
+              "text": "die Freunde"
+            },
+            {
+              "bild": "icon:music",
+              "text": "die Musik"
+            },
+            {
+              "bild": "motiv:sonne",
+              "text": "die Sonne"
+            },
+            {
+              "bild": "icon:gift",
+              "text": "das Geschenk"
+            },
+            {
+              "bild": "motiv:buch",
+              "text": "das Buch"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Noah ist traurig. Wie wird er wieder froh? Male das Ende.",
+          "symbole": [
+            "malen",
+            "sprechen"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:noah:traurig"
+              ],
+              "requisit": "icon:cube",
+              "blase": "keine",
+              "untertitel": "zuerst"
+            },
+            {
+              "figuren": [
+                "figur:noah:traurig",
+                "figur:mia:froh:geben"
+              ],
+              "text": "Komm, wir bauen!",
+              "sprecher": 1,
+              "untertitel": "dann"
+            },
+            {
+              "leer": true,
+              "untertitel": "zum Schluss"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -5432,8 +5571,8 @@
         "ablauf": [
           "Montag – Sitzkreis: Ein frohes Gesicht liegt in der Mitte. „Woran sieht man Freude?“ Fragenplakat starten, Karten einführen.",
           "Dienstag – Freude im Körper: Freudentanz zur Musik und das Spiel „Das Lächeln wandert“ im Kreis.",
-          "Mittwoch – Forschen: Tanzen Rosinen im Sprudelwasser? Danach Seite 2: Forscherblatt mit Vermuten und Malen.",
-          "Donnerstag – Freude-Glas beginnen; die Kinder wählen mit Steinen das Abschlussfest; der Reim mit Gesten.",
+          "Mittwoch – Forschen: Tanzen Rosinen im Sprudelwasser? Danach das Forscherblatt (Zusatzseite); Seite 2: Was macht froh?",
+          "Donnerstag – Freude-Glas beginnen; die Kinder wählen mit Bausteinen das Abschlussfest; der Reim mit Gesten.",
           "Freitag – Freude schenken: Jedes Kind macht einem anderen eine kleine Freude (Bild, Lied, Hilfe); das gewählte Fest."
         ],
         "hintergrund": "Freude ist für Kinder leicht zu erkennen – und gerade deshalb ein guter Einstieg in die Welt der Gefühle. Wer froh benennen kann, unterscheidet später auch schwierigere Gefühle leichter. Vorschulkinder, die Gefühle bei sich und anderen erkennen und benennen, kommen besser mit anderen Kindern zurecht und werden eher als Spielpartner gewählt (Denham, 1998). Positive Gefühle erweitern zudem Denken und Handeln: Wer froh ist, probiert eher Neues aus und geht auf andere zu (Fredrickson, 2001). Darum lohnt es sich, Freude im Alltag bewusst zu bemerken und zu teilen.",
@@ -5544,7 +5683,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Jedes Kind legt einen Stein in eines von drei Gläsern: Freudentanz, Seifenblasen oder Trommeln. Das Glas mit den meisten Steinen bestimmt das Fest am Freitag.",
+            "text": "Donnerstag: Jedes Kind legt einen Baustein in eines von drei Gläsern: Freudentanz, Seifenblasen oder Trommeln. Das vollste Glas bestimmt das Fest am Freitag.",
             "frage": "Was macht uns froh?"
           },
           "stufen": {
@@ -5578,7 +5717,10 @@
               "2 hohe, durchsichtige Becher",
               "Sprudelwasser, frisch geöffnet",
               "Leitungswasser",
-              "eine Handvoll frische Rosinen",
+              {
+                "text": "eine Handvoll frische Rosinen",
+                "bild": "motiv:rosine"
+              },
               "Tablett"
             ],
             "schritte": [
@@ -5599,7 +5741,21 @@
             "dauer": "15 Min.",
             "phaenomene": [
               "schwimmen"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Tanzen Rosinen im Sprudelwasser?",
+              "vermuten": [
+                {
+                  "bild": "motiv:rosine",
+                  "text": "tanzt"
+                },
+                {
+                  "bild": "icon:zzz",
+                  "text": "bleibt unten"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -5607,7 +5763,7 @@
     "fr": {
       "titel": "Quand la joie est là",
       "untertitel": "Reconnaître la joie, la montrer et la partager avec les autres",
-      "anleitung": "Imprimer les cartes deux fois pour les discussions et le memory : qu’est-ce qui te rend joyeux ? La page 2 est la fiche du chercheur pour l’expérience des raisins secs : supposer, dessiner les verres, entourer le résultat.",
+      "anleitung": "Imprimer les cartes deux fois pour les discussions et le memory : qu’est-ce qui te rend joyeux ? Page 2 : l’enfant entoure ce qui le rend joyeux, raconte la bande dessinée et dessine la fin. La fiche du chercheur sur les raisins secs est une page à part.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -5642,7 +5798,7 @@
               "titel": "l’arc-en-ciel"
             },
             {
-              "bild": "icon:grape",
+              "bild": "motiv:rosine",
               "titel": "les raisins secs"
             },
             {
@@ -5652,6 +5808,10 @@
             {
               "bild": "motiv:freunde",
               "titel": "les copains"
+            },
+            {
+              "bild": "motiv:sonne",
+              "titel": "le soleil"
             }
           ],
           "hoehe": 175
@@ -5660,21 +5820,80 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "name": false,
-          "frage": "Les raisins secs dansent-ils ?",
-          "bild": "motiv:wasserglas",
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te rend joyeux ? Entoure.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
             {
-              "bild": "icon:music",
-              "text": "danse"
+              "bild": "motiv:ballon",
+              "text": "le ballon"
             },
             {
-              "bild": "icon:zzz",
-              "text": "reste en bas"
+              "bild": "motiv:freunde",
+              "text": "les copains"
+            },
+            {
+              "bild": "icon:music",
+              "text": "la musique"
+            },
+            {
+              "bild": "motiv:sonne",
+              "text": "le soleil"
+            },
+            {
+              "bild": "icon:gift",
+              "text": "le cadeau"
+            },
+            {
+              "bild": "motiv:buch",
+              "text": "le livre"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Noah est triste. Comment retrouve-t-il la joie ? Dessine la fin.",
+          "symbole": [
+            "malen",
+            "sprechen"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:noah:traurig"
+              ],
+              "requisit": "icon:cube",
+              "blase": "keine",
+              "untertitel": "d’abord"
+            },
+            {
+              "figuren": [
+                "figur:noah:traurig",
+                "figur:mia:froh:geben"
+              ],
+              "text": "Viens, on construit !",
+              "sprecher": 1,
+              "untertitel": "ensuite"
+            },
+            {
+              "leer": true,
+              "untertitel": "à la fin"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -5682,8 +5901,8 @@
         "ablauf": [
           "Lundi – cercle : un visage joyeux est posé au milieu. « À quoi voit-on la joie ? » Lancer l’affiche des questions, présenter les cartes.",
           "Mardi – la joie dans le corps : danse de la joie en musique et jeu « Le sourire voyage » en cercle.",
-          "Mercredi – chercheurs : les raisins secs dansent-ils dans l’eau gazeuse ? Puis page 2 : fiche pour supposer et dessiner.",
-          "Jeudi – lancer le bocal de la joie ; les enfants votent avec des cailloux pour la fête ; la comptine avec gestes.",
+          "Mercredi – chercheurs : les raisins secs dansent-ils dans l’eau gazeuse ? Puis la fiche du chercheur ; page 2 : ce qui rend joyeux.",
+          "Jeudi – lancer le bocal de la joie ; les enfants votent avec des cubes pour la fête ; la comptine avec gestes.",
           "Vendredi – offrir de la joie : chaque enfant fait un petit plaisir à un autre (dessin, chant, aide) ; la fête choisie."
         ],
         "hintergrund": "La joie est facile à reconnaître pour les enfants – c’est donc une bonne porte d’entrée dans le monde des émotions. Savoir nommer la joie aide ensuite à distinguer des émotions plus difficiles. Les enfants d’âge préscolaire qui reconnaissent et nomment les émotions chez eux et chez les autres s’entendent mieux avec leurs camarades et sont plus souvent choisis pour jouer (Denham, 1998). Les émotions positives élargissent aussi la pensée et l’action : quand on est joyeux, on ose davantage et on va vers les autres (Fredrickson, 2001).",
@@ -5722,41 +5941,41 @@
             {
               "art": "kreis",
               "titel": "Le sourire voyage",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Tous sont assis en cercle avec un visage sérieux. Un enfant sourit à son voisin, qui passe le sourire – un tour complet. Puis l’enseignante demande : « Comment était-ce d’être regardé en souriant ? » Qui doit rire peut rire."
             },
             {
               "art": "bewegung",
               "titel": "Danse de la joie",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "En musique joyeuse, les enfants dansent comme la joie se ressent : sauter, tourner, bras en l’air. Quand la musique s’arrête, tous se figent et montrent un visage joyeux. L’enseignante décrit : « Je vois de très larges bouches. »",
               "material": "musique"
             },
             {
               "art": "sinne",
               "titel": "Un plateau de joie",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Sur un plateau : des choses qui font plaisir à beaucoup d’enfants – bulles de savon, hochet, tissu doux, un morceau de fruit. Les enfants essaient et racontent ce qui leur fait le plus plaisir. Vérifier les allergies avant.",
               "material": "bulles de savon, hochet, tissu, fruit"
             },
             {
               "art": "gestalten",
               "titel": "Notre bocal de la joie",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Un grand bocal est décoré ensemble. Chaque fois qu’un enfant vit quelque chose de joyeux, il y met un gros jeton en bois et le raconte brièvement. Vendredi, on compte : voilà toute la joie que nous avons eue.",
               "material": "grand bocal, gros jetons en bois, papier, colle"
             },
             {
               "art": "musik",
               "titel": "Rythme de la joie",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants frappent un rythme joyeux : rapide, sautillant, fort. Puis un rythme fatigué : lent et doux. Qui devine quelle émotion est frappée ? À la fin, ils inventent leurs propres rythmes sur tambours ou casseroles.",
               "material": "tambours ou casseroles et cuillères en bois"
             },
             {
               "art": "sprache",
               "titel": "Ça m’a fait plaisir quand …",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Chaque enfant tire une carte et raconte quand il s’est réjoui ainsi : « Ça m’a fait plaisir quand j’ai eu un ballon. » Ceux qui parlent peu montrent la carte et répondent par oui ou non de la tête à des questions simples.",
               "material": "cartes"
             }
@@ -5794,7 +6013,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : chaque enfant pose un caillou dans l’un des trois bocaux : danse, bulles de savon ou tambours. Le bocal avec le plus de cailloux décide de la fête de vendredi.",
+            "text": "Jeudi : chaque enfant pose un cube dans l’un des trois bocaux : danse, bulles de savon ou tambours. Le bocal avec le plus de cubes décide de la fête de vendredi.",
             "frage": "Qu’est-ce qui nous rend joyeux ?"
           },
           "stufen": {
@@ -5828,7 +6047,10 @@
               "2 grands gobelets transparents",
               "eau gazeuse, fraîchement ouverte",
               "eau du robinet",
-              "une poignée de raisins secs frais",
+              {
+                "text": "une poignée de raisins secs frais",
+                "bild": "motiv:rosine"
+              },
               "plateau"
             ],
             "schritte": [
@@ -5846,10 +6068,24 @@
               "Ne pas manger les raisins de l’expérience ; des frais ensuite."
             ],
             "weiter": "Essayer avec des lentilles, des bouts de pâtes ou une boulette de pâte à modeler : qui danse aussi ?",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "schwimmen"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Les raisins secs dansent-ils ?",
+              "vermuten": [
+                {
+                  "bild": "motiv:rosine",
+                  "text": "danse"
+                },
+                {
+                  "bild": "icon:zzz",
+                  "text": "reste au fond"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -5879,7 +6115,7 @@
           {
             "de": "das Geschenk",
             "fr": "le cadeau",
-            "lb": "d’Cadeau",
+            "lb": "de Kaddo",
             "pt": "a prenda",
             "bild": "icon:gift"
           },
@@ -5908,7 +6144,7 @@
         "satz": {
           "de": "Ich bin froh.",
           "fr": "Ça me fait plaisir.",
-          "lb": "Ech sinn frou.",
+          "lb": "Ech si frou.",
           "pt": "Estou feliz."
         },
         "geprueft": false
@@ -5964,7 +6200,7 @@
     "de": {
       "titel": "Wenn ich traurig bin",
       "untertitel": "Traurigkeit erkennen, trösten und herausfinden, was hilft",
-      "anleitung": "Die Karten zweimal drucken und im Sitzkreis besprechen: Was macht traurig, was tröstet? Seite 2 ist das Forscherblatt zur traurigen Pflanze: vermuten, vorher und nachher malen.",
+      "anleitung": "Die Karten zweimal drucken und im Sitzkreis besprechen: Was macht traurig, was tröstet? Auf Seite 2 kreist das Kind ein, was es tröstet, und malt, wie die Geschichte von Mia gut weitergeht. Das Forscherblatt zur durstigen Pflanze gibt es als Zusatzseite.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -6009,29 +6245,88 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "name": false,
-          "frage": "Wird die traurige Pflanze wieder stark?",
-          "bild": "motiv:kresse-3",
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Was tröstet dich? Kreise ein.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
             {
-              "bild": "gesicht:traurig",
-              "text": "bleibt schlapp"
+              "bild": "motiv:kind-troesten",
+              "text": "die Umarmung"
             },
             {
-              "bild": "gesicht:froh",
-              "text": "steht wieder auf"
+              "bild": "icon:pillow",
+              "text": "das Kissen"
+            },
+            {
+              "bild": "icon:bandage",
+              "text": "das Pflaster"
+            },
+            {
+              "bild": "motiv:buch",
+              "text": "das Buch"
+            },
+            {
+              "bild": "icon:music",
+              "text": "ein Lied"
+            },
+            {
+              "bild": "motiv:regenschirm",
+              "text": "der Schirm"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mia ist traurig. Was machst du? Male das Ende.",
+          "symbole": [
+            "malen",
+            "sprechen"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:mia:traurig"
+              ],
+              "requisit": "icon:ice-cream",
+              "blase": "keine",
+              "untertitel": "zuerst"
+            },
+            {
+              "figuren": [
+                "figur:sami:ruhig",
+                "figur:mia:traurig"
+              ],
+              "text": "Bist du traurig?",
+              "sprecher": 0,
+              "untertitel": "dann"
+            },
+            {
+              "leer": true,
+              "untertitel": "zum Schluss"
+            }
+          ]
         }
       ],
       "lehrer": {
         "ziel": "Die Kinder erkennen Traurigkeit bei sich und anderen, dürfen sie zeigen und lernen Wege kennen, die trösten: Nähe, reden, ausruhen, etwas Schönes tun. Sie üben, ein trauriges Kind anzusprechen.",
         "ablauf": [
           "Montag – Sitzkreis: Eine Handpuppe ist traurig, weil ihr Turm umgefallen ist; die Kinder sagen, woran sie das sehen. Karten einführen.",
-          "Dienstag – Was hilft? Ideen sammeln, mit Steinen drei Dinge für die Trostkiste wählen; die schlappe Pflanze ansehen.",
-          "Mittwoch – Forschen: Die Pflanze trinkt – wird sie wieder stark? Vermuten, gießen, nach 1–3 Stunden schauen; Forscherblatt.",
+          "Dienstag – Was hilft? Ideen sammeln, mit Bausteinen drei Dinge für die Trostkiste wählen; die schlappe Pflanze ansehen.",
+          "Mittwoch – Forschen: Die Pflanze trinkt – wird sie wieder stark? Vermuten, gießen, nach 1–3 Stunden schauen; Forscherblatt (Zusatzseite).",
           "Donnerstag – Trösten im Rollenspiel üben: hingehen, fragen, etwas anbieten; der Reim mit Bewegungen.",
           "Freitag – eine ruhige Geschichte über Traurigkeit vorlesen; jedes Kind sagt, was ihm guttut, wenn es traurig ist."
         ],
@@ -6053,8 +6348,8 @@
           "Traurigkeit benennen statt wegreden: „Du bist traurig, weil …“ – das tröstet oft schon.",
           "Die Trostkiste an einen ruhigen Platz stellen; jedes Kind darf sie nutzen, ohne zu erklären."
         ],
-        "achtung": "Bei anhaltender Traurigkeit oder belastenden Erzählungen: nicht im Kreis vertiefen, allein nachfragen und mit der I-EBS der Schule bzw. dem ESEB sprechen; bei akuter Gefahr 112/113.",
-        "material": "Handpuppe, Trostkiste mit Kissen und Tuch, Karten, Bilderbuch, Wasserfarben, Topfpflanze (zwei Tage nicht gegossen), Gießkanne, Seite 2",
+        "achtung": "Anhaltende Traurigkeit: nicht im Kreis vertiefen, allein nachfragen; I-EBS bzw. ESEB einbeziehen; akute Gefahr: 112/113.",
+        "material": "Handpuppe, Trostkiste (Kissen, Tuch), Bilderbuch, Wasserfarben, durstige Topfpflanze, Gießkanne",
         "spielschule": {
           "wortschatz": [
             "die Traurigkeit",
@@ -6130,7 +6425,7 @@
           "eltern": "Wenn Ihr Kind traurig ist, benennen Sie das Gefühl („Du bist traurig, weil …“) und bleiben Sie in der Nähe. Fragen Sie danach gemeinsam: Was hat dir geholfen?",
           "beobachtung": [
             {
-              "text": "Ich erkenne: Jemand ist traurig.",
+              "text": "Ich zeige das traurige Gesicht und sage, was fehlt.",
               "eldib": "K-21"
             },
             {
@@ -6143,7 +6438,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Dienstag: Die Kinder legen Steine zu den Dingen für die Trostkiste (sechs Vorschläge). Die drei mit den meisten Steinen kommen hinein.",
+            "text": "Dienstag: Die Kinder legen Bausteine zu den Dingen für die Trostkiste (sechs Vorschläge). Die drei mit den meisten Bausteinen kommen hinein.",
             "frage": "Was tröstet uns, wenn wir traurig sind?"
           },
           "stufen": {
@@ -6174,7 +6469,10 @@
             "frage": "Was passiert, wenn eine schlappe, durstige Pflanze Wasser bekommt?",
             "material": [
               "Topfpflanze, etwas zu trocken (z. B. Basilikum)",
-              "Gießkanne mit Wasser",
+              {
+                "text": "Gießkanne mit Wasser",
+                "bild": "motiv:giesskanne"
+              },
               "Zeichenblock und Stifte",
               {
                 "text": "Foto vorher, ohne Kinder darauf",
@@ -6189,7 +6487,7 @@
             ],
             "vermutung": "Traurig: Die Pflanze bleibt schlapp. Froh: Sie steht wieder auf. Viele sagen: „Die ist kaputt, die wird nicht mehr gesund.“",
             "beobachten": "Nach ein bis drei Stunden richten sich Stängel und Blätter wieder auf. Wer sieht es zuerst? Was ist anders als auf dem Bild von vorher?",
-            "warumKind": "Die Pflanze hat getrunken und ist wieder prall. So wie ein Trost uns wieder stark machen kann.",
+            "warumKind": "Die Pflanze hat getrunken. Das Wasser füllt sie von innen wieder prall, und sie steht wieder auf.",
             "hintergrund": "Pflanzenzellen werden durch Wasser von innen gespannt (Turgor). Fehlt Wasser, sinkt der Druck und die Pflanze welkt; nach dem Gießen füllen sich die Zellen, und sie wird wieder fest. Ist die Pflanze schon länger vertrocknet, erholt sie sich nicht mehr – darum die Pflanze nur kurz durstig lassen.",
             "sicherheit": [
               "Zimmerpflanzen nicht probieren; danach Hände waschen."
@@ -6199,7 +6497,21 @@
             "phaenomene": [
               "pflanzen",
               "wasser-wandert"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Wird die traurige Pflanze wieder stark?",
+              "vermuten": [
+                {
+                  "bild": "gesicht:traurig",
+                  "text": "bleibt schlapp"
+                },
+                {
+                  "bild": "gesicht:froh",
+                  "text": "steht wieder auf"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -6207,7 +6519,7 @@
     "fr": {
       "titel": "Quand je suis triste",
       "untertitel": "Reconnaître la tristesse, consoler et trouver ce qui aide",
-      "anleitung": "Imprimer les cartes deux fois et en parler en cercle : qu’est-ce qui rend triste, qu’est-ce qui console ? La page 2 est la fiche du chercheur sur la plante triste : supposer, dessiner avant et après.",
+      "anleitung": "Imprimer les cartes deux fois et en parler en cercle : qu’est-ce qui rend triste, qu’est-ce qui console ? Page 2 : l’enfant entoure ce qui le console et dessine une bonne suite pour Mia. La fiche du chercheur sur la plante qui a soif est une page à part.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -6252,29 +6564,88 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "name": false,
-          "frage": "La plante triste va-t-elle mieux ?",
-          "bild": "motiv:kresse-3",
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te console ? Entoure.",
+          "symbole": [
+            "einkreisen",
+            "zeigen"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
             {
-              "bild": "gesicht:traurig",
-              "text": "reste molle"
+              "bild": "motiv:kind-troesten",
+              "text": "le câlin"
             },
             {
-              "bild": "gesicht:froh",
-              "text": "se redresse"
+              "bild": "icon:pillow",
+              "text": "le coussin"
+            },
+            {
+              "bild": "icon:bandage",
+              "text": "le pansement"
+            },
+            {
+              "bild": "motiv:buch",
+              "text": "le livre"
+            },
+            {
+              "bild": "icon:music",
+              "text": "une chanson"
+            },
+            {
+              "bild": "motiv:regenschirm",
+              "text": "le parapluie"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mia est triste. Que fais-tu ? Dessine la fin.",
+          "symbole": [
+            "malen",
+            "sprechen"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            {
+              "figuren": [
+                "figur:mia:traurig"
+              ],
+              "requisit": "icon:ice-cream",
+              "blase": "keine",
+              "untertitel": "d’abord"
+            },
+            {
+              "figuren": [
+                "figur:sami:ruhig",
+                "figur:mia:traurig"
+              ],
+              "text": "Tu es triste ?",
+              "sprecher": 0,
+              "untertitel": "ensuite"
+            },
+            {
+              "leer": true,
+              "untertitel": "à la fin"
+            }
+          ]
         }
       ],
       "lehrer": {
         "ziel": "Les enfants reconnaissent la tristesse chez eux et chez les autres, ont le droit de la montrer et découvrent ce qui console : la présence, la parole, le repos, une activité agréable. Ils s’exercent à aller vers un enfant triste.",
         "ablauf": [
           "Lundi – cercle : une marionnette est triste, sa tour est tombée ; les enfants disent à quoi ils le voient. Présenter les cartes.",
-          "Mardi – qu’est-ce qui aide ? Recueillir les idées, choisir avec des cailloux trois objets pour la boîte à consoler ; regarder la plante molle.",
-          "Mercredi – chercheurs : la plante boit – ira-t-elle mieux ? Supposer, arroser, regarder après 1 à 3 heures ; fiche du chercheur.",
+          "Mardi – qu’est-ce qui aide ? Recueillir les idées, choisir avec des cubes trois objets pour la boîte à consoler ; regarder la plante molle.",
+          "Mercredi – chercheurs : la plante boit – ira-t-elle mieux ? Supposer, arroser, regarder après 1 à 3 heures ; fiche du chercheur (page à part).",
           "Jeudi – s’exercer à consoler en jeu de rôle : aller vers, demander, proposer ; la comptine avec gestes.",
           "Vendredi – lire une histoire calme sur la tristesse ; chacun dit ce qui lui fait du bien quand il est triste."
         ],
@@ -6296,8 +6667,8 @@
           "Nommer la tristesse au lieu de la minimiser : « Tu es triste parce que … » console déjà souvent.",
           "Mettre la boîte à consoler dans un endroit calme ; chacun peut la prendre sans expliquer."
         ],
-        "achtung": "Tristesse persistante ou récit pesant : ne pas approfondir en cercle, demander en tête-à-tête, en parler avec l’I-EBS de l’école ou l’ESEB ; danger immédiat : 112/113.",
-        "material": "Marionnette, boîte à consoler avec coussin et tissu, cartes, album, peinture à l’eau, plante en pot (non arrosée deux jours), arrosoir, page 2",
+        "achtung": "Tristesse persistante : ne pas approfondir en cercle, demander en tête-à-tête ; I-EBS ou ESEB ; danger immédiat : 112/113.",
+        "material": "Marionnette, boîte à consoler (coussin, tissu), album, peinture à l’eau, plante assoiffée, arrosoir",
         "spielschule": {
           "wortschatz": [
             "la tristesse",
@@ -6315,40 +6686,40 @@
             {
               "art": "theater",
               "titel": "La marionnette triste",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "La marionnette est assise, la tête basse : sa tour est tombée. Les enfants décrivent à quoi ils voient la tristesse. Puis elle demande : « Qu’est-ce qui peut m’aider ? » Les enfants essaient leurs idées jusqu’à ce qu’elle sourie de nouveau.",
               "material": "marionnette, cubes"
             },
             {
               "art": "ruhe",
               "titel": "La boîte à consoler",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Les enfants choisissent les objets d’une boîte qui console : coussin doux, tissu, album, peluche. La boîte est dans le coin calme. Chacun peut la prendre quand il est triste – sans devoir expliquer pourquoi.",
               "material": "boîte, coussin, tissu, album"
             },
             {
               "art": "sprache",
               "titel": "Triste ou joyeux ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante raconte de courtes scènes : « La glace tombe par terre. » « Un copain vient jouer. » Les enfants montrent le pouce vers le bas (triste) ou vers le haut (joyeux) et disent ce que ressent l’enfant et ce qui pourrait l’aider."
             },
             {
               "art": "musik",
               "titel": "Un chant pour les jours tristes",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "La classe fredonne un chant doux et lent en se balançant. Puis le même chant, vite et gai. Discussion : comment la musique change-t-elle ce que nous ressentons ? Certains aiment qu’on leur fredonne tout bas."
             },
             {
               "art": "gestalten",
               "titel": "Image de pluie – image de soleil",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Sur une moitié de feuille, les enfants peignent la pluie en bleu, sur l’autre le soleil en jaune. Ils racontent : qu’est-ce qui est comme la pluie pour moi, comme le soleil ? L’enseignante écrit les phrases.",
               "material": "peinture à l’eau, pinceaux, papier"
             },
             {
               "art": "kreis",
               "titel": "Je te console",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Par deux : un enfant joue le triste et baisse la tête. L’autre vient, s’assoit à côté et demande : « Tu es triste ? De quoi as-tu besoin ? » Il propose : tenir la main, apporter un coussin, jouer ensemble. Puis on échange."
             }
           ],
@@ -6373,7 +6744,7 @@
           "eltern": "Quand votre enfant est triste, nommez l’émotion (« Tu es triste parce que … ») et restez près de lui. Demandez ensuite ensemble : qu’est-ce qui t’a aidé ?",
           "beobachtung": [
             {
-              "text": "Je reconnais : quelqu’un est triste.",
+              "text": "Je montre le visage triste et je dis ce qui ne va pas.",
               "eldib": "K-21"
             },
             {
@@ -6386,7 +6757,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mardi : les enfants posent des cailloux sur les objets de la boîte à consoler (six propositions). Les trois qui en ont le plus y entrent.",
+            "text": "Mardi : les enfants posent des cubes sur les objets de la boîte à consoler (six propositions). Les trois qui en ont le plus y entrent.",
             "frage": "Qu’est-ce qui nous console quand on est triste ?"
           },
           "stufen": {
@@ -6417,7 +6788,10 @@
             "frage": "Que se passe-t-il quand une plante molle et assoiffée reçoit de l’eau ?",
             "material": [
               "plante en pot un peu trop sèche (ex. basilic)",
-              "arrosoir avec de l’eau",
+              {
+                "text": "arrosoir avec de l’eau",
+                "bild": "motiv:giesskanne"
+              },
               "bloc à dessin et crayons",
               {
                 "text": "photo d’avant, sans enfants dessus",
@@ -6432,17 +6806,31 @@
             ],
             "vermutung": "Triste : la plante reste molle. Joyeux : elle se redresse. Beaucoup disent : « Elle est cassée, elle ne guérira plus. »",
             "beobachten": "Après une à trois heures, tiges et feuilles se redressent. Qui le voit en premier ? Qu’est-ce qui a changé par rapport à l’image d’avant ?",
-            "warumKind": "La plante a bu et elle est de nouveau bien gonflée. Comme une consolation peut nous redonner des forces.",
+            "warumKind": "La plante a bu. L’eau la remplit de l’intérieur, elle redevient ferme et se redresse.",
             "hintergrund": "L’eau met les cellules végétales sous tension (turgescence). Quand l’eau manque, la pression baisse et la plante fane ; après l’arrosage, les cellules se remplissent et elle se redresse. Si elle est desséchée depuis longtemps, elle ne se remet plus – ne la laisser assoiffée que peu de temps.",
             "sicherheit": [
               "Ne pas goûter les plantes d’intérieur ; se laver les mains ensuite."
             ],
             "weiter": "Mettre une carotte molle ou une branche de céleri dans l’eau pendant la nuit : redevient-elle croquante ?",
-            "dauer": "1 Tag, 4 × 5 Min.",
+            "dauer": "1 Tag, 4 × 5 min",
             "phaenomene": [
               "pflanzen",
               "wasser-wandert"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "La plante triste va-t-elle mieux ?",
+              "vermuten": [
+                {
+                  "bild": "gesicht:traurig",
+                  "text": "reste molle"
+                },
+                {
+                  "bild": "gesicht:froh",
+                  "text": "se redresse"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -6556,7 +6944,7 @@
     "de": {
       "titel": "Wenn ich wütend bin",
       "untertitel": "Wut spüren, Stopp sagen, atmen – und wieder ruhig werden",
-      "anleitung": "Die Karten zweimal drucken und im Sitzkreis besprechen: Was hilft, wenn die Wut kommt? Seite 2 ist das Forscherblatt zum Wut-Vulkan: vermuten, vorher und nachher malen.",
+      "anleitung": "Die Karten zweimal drucken und im Sitzkreis besprechen: Was hilft, wenn die Wut kommt? Auf Seite 2 erzählt das Kind die Bildgeschichte Stopp – atmen – sagen und kreist ein, was ihm hilft. Das Forscherblatt zum Wut-Vulkan gibt es als Zusatzseite.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -6601,6 +6989,10 @@
             {
               "bild": "figur:lehrerin:ruhig",
               "titel": "die Lehrperson"
+            },
+            {
+              "bild": "motiv:trommel",
+              "titel": "die Trommel"
             }
           ],
           "hoehe": 175
@@ -6609,21 +7001,84 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "name": false,
-          "frage": "Was passiert im Vulkan, wenn Essig kommt?",
-          "bild": "motiv:vulkan",
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Erzähl die Geschichte: Stopp – atmen – sagen.",
+          "symbole": [
+            "sprechen",
+            "zeigen"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
             {
-              "bild": "icon:thumb-up",
-              "text": "es schäumt"
+              "figuren": [
+                "figur:noah:wuetend:stopp"
+              ],
+              "text": "Stopp!",
+              "sprecher": 0,
+              "untertitel": "Stopp"
             },
             {
-              "bild": "icon:thumb-down",
-              "text": "nichts passiert"
+              "figuren": [
+                "figur:noah:ruhig"
+              ],
+              "requisit": "icon:wind",
+              "blase": "keine",
+              "untertitel": "atmen"
+            },
+            {
+              "figuren": [
+                "figur:noah:ruhig",
+                "figur:mia:neutral"
+              ],
+              "text": "Ich bin wütend, weil …",
+              "sprecher": 0,
+              "untertitel": "sagen"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hilft dir, wenn die Wut kommt? Kreise ein.",
+          "symbole": [
+            "einkreisen",
+            "nachdenken"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "motiv:stopp",
+              "text": "Stopp sagen"
+            },
+            {
+              "bild": "icon:wind",
+              "text": "tief atmen"
+            },
+            {
+              "bild": "icon:pillow",
+              "text": "das Kissen"
+            },
+            {
+              "bild": "motiv:schildkroete",
+              "text": "die Schildkröte"
+            },
+            {
+              "bild": "icon:run",
+              "text": "stampfen"
+            },
+            {
+              "bild": "figur:lehrerin:ruhig",
+              "text": "die Lehrerin"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -6631,8 +7086,8 @@
         "ablauf": [
           "Montag – Sitzkreis: Karten einführen, Fragenplakat starten. „Woran merkst du, dass du wütend wirst?“ Körperzeichen sammeln.",
           "Dienstag – Stopp, atmen, sagen: den Ablauf mit Bewegung üben, dazu der Schildkröten-Trick (in den Panzer, drei Atemzüge).",
-          "Mittwoch – Forschen: der echte Wut-Vulkan mit Natron und Essig; danach Seite 2: Forscherblatt.",
-          "Donnerstag – Wut-Ecke einrichten: Die Kinder wählen mit Steinen, was hineinkommt; der Reim mit Fingerspiel.",
+          "Mittwoch – Forschen: der echte Wut-Vulkan mit Natron und Essig; danach das Forscherblatt (Zusatzseite) und Seite 2.",
+          "Donnerstag – Wut-Ecke einrichten: Die Kinder wählen mit Bausteinen, was hineinkommt; der Reim mit Fingerspiel.",
           "Freitag – Rückblick: Wer hat Stopp gesagt oder geatmet? Kurz erzählen, ohne Schuld und ohne Namen anderer Kinder."
         ],
         "hintergrund": "Wut ist ein normales, wichtiges Gefühl: Sie zeigt, dass etwas nicht stimmt. Drei- bis Fünfjährige erleben Wut oft heftig, weil die Fähigkeit, Impulse zu bremsen, erst heranreift. Ein einfacher, immer gleicher Ablauf hilft: anhalten, atmen, sagen, was los ist. Beim Schildkröten-Trick ziehen sich Kinder kurz in ihren „Panzer“ zurück, atmen und denken nach (Robin u. a., 1976). Kinder lernen, Gefühle zu regulieren, vor allem durch Erwachsene, die ruhig bleiben, benennen und Wege zeigen (Petermann & Wiedebusch, 2016).",
@@ -6654,7 +7109,7 @@
           "In akuter Wut wenig reden, ruhig bleiben, für Sicherheit sorgen; sprechen erst danach."
         ],
         "achtung": "Bei sehr häufiger oder heftiger Wut: beobachten, mit der Familie und mit der I-EBS der Schule bzw. dem ESEB sprechen; bei akuter Gefahr 112/113.",
-        "material": "Karten, Kissen, Knautschbälle, Handpuppe, Glocke, Strohhalme, Watte, Natron, Essig, Lebensmittelfarbe, Seite 2",
+        "material": "Kissen, Knautschbälle, Handpuppe, Glocke, Strohhalme, Watte, Natron, Essig, Lebensmittelfarbe",
         "spielschule": {
           "wortschatz": [
             "die Wut",
@@ -6743,7 +7198,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Die Kinder wählen mit Steinen drei Dinge für die Wut-Ecke aus sechs Vorschlägen (Kissen, Knautschball, Knete, Papier, Bild, Wasser).",
+            "text": "Donnerstag: Die Kinder wählen mit Bausteinen drei Dinge für die Wut-Ecke aus sechs Vorschlägen (Kissen, Knautschball, Knete, Papier, Bild, Wasser).",
             "frage": "Was hilft uns, wenn die Wut kommt?"
           },
           "stufen": {
@@ -6798,7 +7253,21 @@
             "dauer": "15 Min.",
             "phaenomene": [
               "stoffe"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Was passiert im Vulkan, wenn Essig kommt?",
+              "vermuten": [
+                {
+                  "bild": "motiv:vulkan",
+                  "text": "es schäumt"
+                },
+                {
+                  "bild": "motiv:flasche",
+                  "text": "nichts passiert"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -6806,7 +7275,7 @@
     "fr": {
       "titel": "Quand je suis en colère",
       "untertitel": "Sentir la colère, dire stop, respirer – et se calmer",
-      "anleitung": "Imprimer les cartes deux fois et en parler en cercle : qu’est-ce qui aide quand la colère monte ? La page 2 est la fiche du chercheur sur le volcan de colère : supposer, dessiner avant et après.",
+      "anleitung": "Imprimer les cartes deux fois et en parler en cercle : qu’est-ce qui aide quand la colère monte ? Page 2 : l’enfant raconte la bande dessinée stop – respirer – dire et entoure ce qui l’aide. La fiche du chercheur sur le volcan est une page à part.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -6851,6 +7320,10 @@
             {
               "bild": "figur:lehrerin:ruhig",
               "titel": "l’enseignante"
+            },
+            {
+              "bild": "motiv:trommel",
+              "titel": "le tambour"
             }
           ],
           "hoehe": 175
@@ -6859,21 +7332,84 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "name": false,
-          "frage": "Que fait le volcan quand le vinaigre arrive ?",
-          "bild": "motiv:vulkan",
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Raconte l’histoire : stop – respirer – dire.",
+          "symbole": [
+            "sprechen",
+            "zeigen"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
             {
-              "bild": "icon:thumb-up",
-              "text": "ça mousse"
+              "figuren": [
+                "figur:noah:wuetend:stopp"
+              ],
+              "text": "Stop !",
+              "sprecher": 0,
+              "untertitel": "stop"
             },
             {
-              "bild": "icon:thumb-down",
-              "text": "rien ne se passe"
+              "figuren": [
+                "figur:noah:ruhig"
+              ],
+              "requisit": "icon:wind",
+              "blase": "keine",
+              "untertitel": "respirer"
+            },
+            {
+              "figuren": [
+                "figur:noah:ruhig",
+                "figur:mia:neutral"
+              ],
+              "text": "Je suis en colère parce que …",
+              "sprecher": 0,
+              "untertitel": "dire"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui t’aide quand la colère monte ? Entoure.",
+          "symbole": [
+            "einkreisen",
+            "nachdenken"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "motiv:stopp",
+              "text": "dire stop"
+            },
+            {
+              "bild": "icon:wind",
+              "text": "bien respirer"
+            },
+            {
+              "bild": "icon:pillow",
+              "text": "le coussin"
+            },
+            {
+              "bild": "motiv:schildkroete",
+              "text": "la tortue"
+            },
+            {
+              "bild": "icon:run",
+              "text": "taper du pied"
+            },
+            {
+              "bild": "figur:lehrerin:ruhig",
+              "text": "l’enseignante"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -6881,8 +7417,8 @@
         "ablauf": [
           "Lundi – cercle : présenter les cartes, lancer l’affiche des questions. « À quoi remarques-tu que la colère monte ? » Recueillir les signes du corps.",
           "Mardi – stop, respirer, dire : s’exercer avec mouvements, plus le truc de la tortue (dans la carapace, trois respirations).",
-          "Mercredi – chercheurs : le vrai volcan de colère avec bicarbonate et vinaigre ; puis page 2 : fiche du chercheur.",
-          "Jeudi – installer le coin colère : les enfants choisissent avec des cailloux ce qu’il contient ; la comptine avec les doigts.",
+          "Mercredi – chercheurs : le vrai volcan de colère avec bicarbonate et vinaigre ; puis la fiche du chercheur et la page 2.",
+          "Jeudi – installer le coin colère : les enfants choisissent avec des cubes ce qu’il contient ; la comptine avec les doigts.",
           "Vendredi – bilan : qui a dit stop ou respiré ? Raconter brièvement, sans faute et sans nommer d’autres enfants."
         ],
         "hintergrund": "La colère est une émotion normale et utile : elle signale que quelque chose ne va pas. Entre trois et cinq ans, les enfants la vivent souvent avec force, car la capacité à freiner leurs impulsions est encore en train de mûrir. Un enchaînement simple, toujours le même, aide : s’arrêter, respirer, dire ce qui se passe. Avec l’astuce de la tortue, l’enfant se retire un instant dans sa « carapace », respire et réfléchit (Robin et al., 1976). Les enfants apprennent à réguler leurs émotions surtout grâce à des adultes qui restent calmes, nomment et montrent des chemins (Petermann & Wiedebusch, 2016).",
@@ -6903,8 +7439,8 @@
           "Le coin colère n’est pas une punition : on y va librement ou accompagné gentiment.",
           "En pleine colère, peu parler, rester calme, assurer la sécurité ; parler seulement après."
         ],
-        "achtung": "Colère très fréquente ou violente : observer, en parler avec la famille et avec l’I-EBS de l’école ou l’ESEB ; danger immédiat : 112/113.",
-        "material": "Cartes, coussins, balles anti-stress, marionnette, cloche, pailles, coton, bicarbonate, vinaigre, colorant, page 2",
+        "achtung": "Colère très fréquente ou violente : observer, en parler avec la famille et l’I-EBS ou l’ESEB ; danger : 112/113.",
+        "material": "Coussins, balles anti-stress, marionnette, cloche, pailles, coton, bicarbonate, vinaigre, colorant",
         "spielschule": {
           "wortschatz": [
             "la colère",
@@ -6921,41 +7457,41 @@
             {
               "art": "kreis",
               "titel": "Le volcan de colère",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante raconte comment la colère peut grandir : d’abord ça bout dans le ventre, puis la tête chauffe, puis le volcan éclate. Les enfants le montrent avec le corps : s’accroupir, se redresser lentement, bras en l’air. Discussion : que faire avant que le volcan éclate ?"
             },
             {
               "art": "bewegung",
               "titel": "Stop – respirer – dire",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants tapent des pieds en colère à travers la salle. Au signal de la cloche, tous tendent la main stop, respirent trois fois profondément et disent fort : « Je suis en colère. » Répéter plusieurs fois jusqu’à ce que ça devienne facile.",
               "material": "cloche"
             },
             {
               "art": "theater",
               "titel": "La tortue",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Une marionnette tortue raconte : « Quand la colère monte, je rentre dans ma carapace, je respire trois fois et je réfléchis. » Les enfants l’imitent : s’accroupir, bras autour des genoux, rentrer la tête, respirer – puis sortir lentement.",
               "material": "marionnette tortue ou tissu"
             },
             {
               "art": "gestalten",
               "titel": "Dessins de colère",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Sur une musique de tambour forte, les enfants dessinent avec de gros crayons gras sur grand papier : gribouiller, appuyer, faire des cercles. Puis la musique devient douce et les traits calmes. Ensuite ils racontent : comment était-ce ?",
               "material": "papier kraft, gros crayons gras, tambour ou musique"
             },
             {
               "art": "ruhe",
               "titel": "Notre coin colère",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Les enfants choisissent ce qui va dans le coin : coussins à serrer, balles anti-stress, papier à déchirer, images du déroulement stop – respirer – dire. La règle : ici, je peux être en colère sans faire mal. Le coin n’est pas une punition.",
               "material": "coussins, balles anti-stress, papier, images"
             },
             {
               "art": "sinne",
               "titel": "Souffler la colère",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Avec sa propre paille, chaque enfant souffle des boules de coton sur la table : d’abord vite et en colère, puis lentement et longtemps. Ils sentent : expirer longtemps calme. Seulement souffler, jamais aspirer – s’exercer avant.",
               "material": "pailles, boules de coton"
             }
@@ -6993,7 +7529,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : les enfants choisissent avec des cailloux trois objets pour le coin colère parmi six (coussin, balle, pâte, papier, image, eau). Les gagnants sont installés.",
+            "text": "Jeudi : les enfants choisissent avec des cubes trois objets pour le coin colère parmi six (coussin, balle, pâte, papier, image, eau). Les gagnants sont installés.",
             "frage": "Qu’est-ce qui nous aide quand la colère monte ?"
           },
           "stufen": {
@@ -7045,10 +7581,24 @@
               "Le colorant tache la peau et les vêtements : mettre des blouses."
             ],
             "weiter": "Du jus de citron à la place du vinaigre : ça mousse aussi ? Avec quelle quantité est-ce le plus grand ?",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "stoffe"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Que fait le volcan quand le vinaigre arrive ?",
+              "vermuten": [
+                {
+                  "bild": "motiv:vulkan",
+                  "text": "ça mousse"
+                },
+                {
+                  "bild": "motiv:flasche",
+                  "text": "rien ne se passe"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -7063,7 +7613,7 @@
           {
             "de": "die Wut",
             "fr": "la colère",
-            "lb": "d’Wut",
+            "lb": "d’Roserei",
             "pt": "a raiva",
             "bild": "gesicht:wuetend"
           },
@@ -7106,7 +7656,7 @@
         "satz": {
           "de": "Stopp, ich bin wütend.",
           "fr": "Stop, je suis en colère.",
-          "lb": "Stopp, ech sinn rosen.",
+          "lb": "Stopp, ech si rosen.",
           "pt": "Pára, estou com raiva."
         },
         "geprueft": false
@@ -7162,7 +7712,7 @@
     "de": {
       "titel": "Angst und Mut",
       "untertitel": "Kleine Mutproben und das, was uns stark macht",
-      "anleitung": "Die Karten zweimal drucken und im Sitzkreis besprechen: Was macht Mut? Seite 2 ist das Forscherblatt zur Mutprobe mit dem Wasserbecher: vermuten, vorher und nachher malen.",
+      "anleitung": "Die Karten zweimal drucken und im Sitzkreis besprechen: Was macht Mut? Auf Seite 2 klebt das Kind seine Mut-Treppe (ansehen – zuschauen – mit Hand – allein; Bildplan beim Parcours) und kreist ein, wie es sich fühlt, wenn es sich traut. Das Forscherblatt zum Wasserbecher gibt es als Zusatzseite.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -7207,6 +7757,10 @@
             {
               "bild": "icon:heart",
               "titel": "das Herz"
+            },
+            {
+              "bild": "motiv:turnmatte",
+              "titel": "die Matte"
             }
           ],
           "hoehe": 175
@@ -7215,21 +7769,60 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "name": false,
-          "frage": "Bleibt das Wasser im Becher?",
-          "bild": "motiv:wasserglas",
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Schneide aus. Klebe die Mut-Treppe: Schritt für Schritt.",
+          "symbole": [
+            "schneiden",
+            "kleben"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "schneiden_kleben",
+          "bilder": [
             {
-              "bild": "motiv:wasserglas",
-              "text": "bleibt drin"
+              "bild": "motiv:auge",
+              "text": "ansehen"
             },
             {
-              "bild": "motiv:regen",
-              "text": "alles nass"
+              "bild": "motiv:gruppe",
+              "text": "zuschauen"
+            },
+            {
+              "bild": "motiv:kind-troesten",
+              "text": "mit Hand"
+            },
+            {
+              "bild": "figur:lea:stolz:jubeln",
+              "text": "allein"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie fühlst du dich, wenn du dich traust? Kreise ein.",
+          "symbole": [
+            "einkreisen",
+            "nachdenken"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "gefuehle",
+          "gefuehle": [
+            "aengstlich",
+            "aufgeregt",
+            "stolz",
+            "froh"
+          ],
+          "modus": "einkreisen",
+          "spalten": 4,
+          "woerter": [
+            "ängstlich",
+            "aufgeregt",
+            "stolz",
+            "froh"
+          ]
         }
       ],
       "lehrer": {
@@ -7237,8 +7830,8 @@
         "ablauf": [
           "Montag – Sitzkreis: Karten einführen, Fragenplakat starten. Die Lehrperson erzählt von einer eigenen kleinen Angst.",
           "Dienstag – Angst im Körper: Das Herz klopft, der Bauch kribbelt. Mutmacher sammeln: Hand halten, Licht, atmen.",
-          "Mittwoch – Forschen: Traust du dich? Becher randvoll, Karte drauf, umdrehen. Danach Seite 2: Forscherblatt.",
-          "Donnerstag – Mut-Parcours: Jedes Kind wählt freiwillig eine Station; der Reim als Ruf und Antwort.",
+          "Mittwoch – Forschen: Traust du dich? Becher randvoll, Karte drauf, umdrehen. Danach das Forscherblatt (Zusatzseite).",
+          "Donnerstag – Mut-Parcours mit der Mut-Treppe (Seite 2): Jedes Kind wählt freiwillig eine Station; der Reim als Ruf und Antwort.",
           "Freitag – Mut-Kreis: Wer mag, erzählt von einem kleinen Mut-Moment und bekommt einen Mut-Stein, den es selbst bemalt hat."
         ],
         "hintergrund": "Ängste gehören zur normalen Entwicklung: Im Vorschulalter fürchten sich viele Kinder vor Dunkelheit, Tieren, Fantasiewesen oder dem Alleinsein. Ängste werden kleiner, wenn Kinder ernst genommen werden und sich ihnen in kleinen, machbaren Schritten nähern dürfen – Vermeiden lässt Angst dagegen oft wachsen (Rapee u. a., 2008). Erwachsene helfen, indem sie das Gefühl benennen, Sicherheit geben und Mut anerkennen, statt Angst auszureden. Das Erleben „Ich habe es geschafft“ stärkt die Widerstandskraft (Masten, 2014).",
@@ -7260,7 +7853,7 @@
           "Beim Parcours Matten unterlegen, Höhen niedrig halten, jede Station sichern."
         ],
         "achtung": "Bei Ängsten, die ein Kind lange einschränken: allein nachfragen, die Familie einbeziehen, mit der I-EBS der Schule bzw. dem ESEB sprechen; bei akuter Gefahr 112/113.",
-        "material": "Karten, Matten, Bank, Tunnel, niedriger Kasten, glatte Steine, Farben, Plastikbecher, Karte, Wanne, Seite 2",
+        "material": "Matten, Bank, Tunnel, niedriger Kasten, glatte Steine, Farben, Plastikbecher, Postkarte, Wanne",
         "spielschule": {
           "wortschatz": [
             "die Angst",
@@ -7381,12 +7974,12 @@
               "Handtuch zum Abtrocknen"
             ],
             "schritte": [
-              "Vermuten: Bleibt das Wasser im Becher? Jedes Kind legt einen Stein auf „bleibt drin“ oder „alles nass“.",
+              "Vermuten: Bleibt das Wasser im Becher? Jedes Kind legt einen Baustein auf „bleibt drin“ oder „alles nass“.",
               "Über der Wanne den Becher randvoll füllen.",
               "Die Karte flach auflegen und mit der Hand andrücken.",
               "Mutig umdrehen – über der Wanne! – und die Hand langsam wegnehmen."
             ],
-            "vermutung": "Jedes Kind legt einen Stein auf „bleibt drin“ oder „alles nass“. Viele sagen: „Die Karte ist nur Papier, das Wasser fällt heraus.“",
+            "vermutung": "Jedes Kind legt einen Baustein auf „bleibt drin“ oder „alles nass“. Viele sagen: „Die Karte ist nur Papier, das Wasser fällt heraus.“",
             "beobachten": "Die Karte bleibt kleben, das Wasser bleibt im Becher. Mit wenig Wasser klappt es oft nicht. Was ist anders, wenn der Becher randvoll ist?",
             "warumKind": "Die Luft draußen drückt von unten gegen die Karte und hält sie fest. Mut zahlt sich aus.",
             "hintergrund": "Der Luftdruck von außen ist größer als der Druck des Wassers im Becher; zusätzlich hält die Oberflächenspannung die Karte am Rand. Ist viel Luft im Becher, dehnt sie sich aus, und das Wasser läuft aus. Darum den Becher randvoll füllen, die Karte glatt andrücken und zügig, aber ruhig umdrehen.",
@@ -7397,7 +7990,21 @@
             "dauer": "20 Min.",
             "phaenomene": [
               "luft"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Bleibt das Wasser im Becher?",
+              "vermuten": [
+                {
+                  "bild": "motiv:wasserglas",
+                  "text": "bleibt drin"
+                },
+                {
+                  "bild": "motiv:regen",
+                  "text": "alles nass"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -7405,7 +8012,7 @@
     "fr": {
       "titel": "Peur et courage",
       "untertitel": "Petits défis et ce qui nous rend forts",
-      "anleitung": "Imprimer les cartes deux fois et en parler en cercle : qu’est-ce qui donne du courage ? La page 2 est la fiche du chercheur sur le défi du gobelet d’eau : supposer, dessiner avant et après.",
+      "anleitung": "Imprimer les cartes deux fois et en parler en cercle : qu’est-ce qui donne du courage ? Page 2 : l’enfant colle son escalier du courage (plan imagé au parcours) et entoure ce qu’il ressent quand il ose. La fiche du chercheur sur le gobelet est une page à part.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -7429,7 +8036,7 @@
             },
             {
               "bild": "motiv:becher",
-              "titel": "le gobelet"
+              "titel": "la tasse"
             },
             {
               "bild": "motiv:bett",
@@ -7450,6 +8057,10 @@
             {
               "bild": "icon:heart",
               "titel": "le cœur"
+            },
+            {
+              "bild": "motiv:turnmatte",
+              "titel": "le tapis"
             }
           ],
           "hoehe": 175
@@ -7458,21 +8069,60 @@
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "name": false,
-          "frage": "L’eau reste-t-elle dans le gobelet ?",
-          "bild": "motiv:wasserglas",
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Découpe. Colle l’escalier du courage, pas à pas.",
+          "symbole": [
+            "schneiden",
+            "kleben"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "schneiden_kleben",
+          "bilder": [
             {
-              "bild": "motiv:wasserglas",
-              "text": "reste dedans"
+              "bild": "motiv:auge",
+              "text": "regarder"
             },
             {
-              "bild": "motiv:regen",
-              "text": "tout mouillé"
+              "bild": "motiv:gruppe",
+              "text": "voir les autres"
+            },
+            {
+              "bild": "motiv:kind-troesten",
+              "text": "avec la main"
+            },
+            {
+              "bild": "figur:lea:stolz:jubeln",
+              "text": "tout seul"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que ressens-tu quand tu oses ? Entoure.",
+          "symbole": [
+            "einkreisen",
+            "nachdenken"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "gefuehle",
+          "gefuehle": [
+            "aengstlich",
+            "aufgeregt",
+            "stolz",
+            "froh"
+          ],
+          "modus": "einkreisen",
+          "spalten": 4,
+          "woerter": [
+            "j’ai peur",
+            "excité",
+            "fier",
+            "content"
+          ]
         }
       ],
       "lehrer": {
@@ -7480,8 +8130,8 @@
         "ablauf": [
           "Lundi – cercle : présenter les cartes, lancer l’affiche des questions. L’enseignante raconte une petite peur à elle.",
           "Mardi – la peur dans le corps : le cœur bat, le ventre picote. Chercher des aides : tenir la main, lumière, respirer.",
-          "Mercredi – chercheurs : tu oses ? Gobelet plein à ras bord, carte dessus, retourner. Puis page 2 : fiche du chercheur.",
-          "Jeudi – parcours du courage : chacun choisit librement une station ; la comptine en appel et réponse.",
+          "Mercredi – chercheurs : tu oses ? Gobelet plein à ras bord, carte dessus, retourner. Puis la fiche du chercheur (page à part).",
+          "Jeudi – parcours du courage avec l’escalier du courage (page 2) : chacun choisit librement une station ; la comptine en appel et réponse.",
           "Vendredi – cercle du courage : qui veut raconte un petit moment de courage et reçoit une pierre qu’il a peinte lui-même."
         ],
         "hintergrund": "Les peurs font partie du développement normal : à l’âge préscolaire, beaucoup d’enfants ont peur du noir, des animaux, des créatures imaginaires ou d’être seuls. Elles diminuent quand on les prend au sérieux et que l’enfant peut s’en approcher par petites étapes ; l’évitement, au contraire, les fait souvent grandir (Rapee et al., 2008). L’adulte aide en nommant l’émotion, en rassurant et en valorisant le courage plutôt qu’en niant la peur. Vivre « j’y suis arrivé » renforce la résilience (Masten, 2014).",
@@ -7502,8 +8152,8 @@
           "Les défis sont libres ; regarder est aussi un pas. Ne jamais forcer, ne jamais laisser se moquer.",
           "Pour le parcours, poser des tapis, garder les hauteurs basses, sécuriser chaque station."
         ],
-        "achtung": "Peurs qui limitent longtemps un enfant ou récits angoissants : demander en tête-à-tête, associer la famille, en parler avec l’I-EBS de l’école ou l’ESEB ; danger immédiat : 112/113.",
-        "material": "Cartes, tapis, banc, tunnel, caisson bas, galets lisses (plus gros qu’une noix), couleurs, gobelets rigides, carte, bac, cruche, page 2",
+        "achtung": "Peurs durables ou récits angoissants : en tête-à-tête, avec la famille, l’I-EBS ou l’ESEB ; danger : 112/113.",
+        "material": "Tapis, banc, tunnel, caisson bas, galets (plus gros qu’une noix), couleurs, gobelets, carte postale, bac",
         "spielschule": {
           "wortschatz": [
             "la peur",
@@ -7521,34 +8171,34 @@
             {
               "art": "kreis",
               "titel": "Les grands aussi ont peur",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante raconte une petite peur à elle et ce qui l’aide. Puis les enfants qui veulent racontent. Chaque peur est prise au sérieux : « Je peux comprendre. » Ensemble, on cherche ce qui aide ; les idées de courage sont dessinées et accrochées."
             },
             {
               "art": "bewegung",
               "titel": "Parcours du courage",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Petites stations : marcher en équilibre sur un banc, ramper dans un tunnel, sauter d’un caisson bas sur un tapis. Chaque enfant choisit jusqu’où il va – avec la main ou seul. Chaque essai est reconnu.",
               "material": "banc, tunnel, caisson bas, tapis mous"
             },
             {
               "art": "gestalten",
               "titel": "Ma pierre du courage",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Chaque enfant peint un galet lisse avec un signe qui lui donne du courage. La pierre va dans la poche ou reste dans le casier – pour la tenir quand c’est difficile. Choisir des galets plus gros qu’une noix.",
               "material": "galets lisses, peinture acrylique, pinceaux"
             },
             {
               "art": "theater",
               "titel": "Le hérisson n’ose pas",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Une marionnette hérisson se roule en boule et n’ose pas sortir du tas de feuilles. Les enfants l’encouragent : respirer profondément, tendre la main, pas à pas. À la fin, le hérisson sort le nez et ose jouer avec eux.",
               "material": "marionnette hérisson, tissu"
             },
             {
               "art": "sprache",
               "titel": "J’ose …",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "En cercle, chaque enfant complète : « J’ose … » (sauter, glisser seul, dire bonjour). Les autres répondent : « Tu y arrives. » Qui ne sait pas encore dit : « Je m’exerce. » Toutes les réponses comptent."
             }
           ],
@@ -7624,12 +8274,12 @@
               "serviette pour essuyer"
             ],
             "schritte": [
-              "Supposer : l’eau reste-t-elle dans le gobelet ? Chaque enfant pose un caillou sur « reste dedans » ou « tout mouillé ».",
+              "Supposer : l’eau reste-t-elle dans le gobelet ? Chaque enfant pose un cube sur « reste dedans » ou « tout mouillé ».",
               "Au-dessus du bac, remplir le gobelet à ras bord.",
               "Poser la carte à plat et appuyer avec la main.",
               "Retourner courageusement – au-dessus du bac ! – et retirer la main doucement."
             ],
-            "vermutung": "Chaque enfant pose un caillou sur « reste dedans » ou « tout mouillé ». Beaucoup disent : « La carte, c’est juste du papier, l’eau va tomber. »",
+            "vermutung": "Chaque enfant pose un cube sur « reste dedans » ou « tout mouillé ». Beaucoup disent : « La carte, c’est juste du papier, l’eau va tomber. »",
             "beobachten": "La carte reste collée, l’eau reste dans le gobelet. Avec peu d’eau, ça ne marche souvent pas. Qu’est-ce qui change quand le gobelet est plein à ras bord ?",
             "warumKind": "L’air dehors pousse sous la carte et la tient en place. Oser peut payer.",
             "hintergrund": "La pression de l’air extérieur est plus grande que celle de l’eau dans le gobelet ; la tension superficielle colle en plus la carte au bord. S’il y a beaucoup d’air dedans, il se dilate et l’eau s’échappe. Il faut donc remplir à ras bord, bien lisser la carte et retourner vite mais calmement.",
@@ -7637,10 +8287,24 @@
               "standard:wasser"
             ],
             "weiter": "Essayer avec un tissu fin ou une moustiquaire à la place de la carte : l’eau reste-t-elle aussi ?",
-            "dauer": "20 Min.",
+            "dauer": "20 min",
             "phaenomene": [
               "luft"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "L’eau reste-t-elle dans le gobelet ?",
+              "vermuten": [
+                {
+                  "bild": "motiv:wasserglas",
+                  "text": "reste dedans"
+                },
+                {
+                  "bild": "motiv:regen",
+                  "text": "tout mouillé"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -7690,9 +8354,9 @@
           },
           {
             "de": "der Becher",
-            "fr": "le gobelet",
+            "fr": "la tasse",
             "lb": "de Becher",
-            "pt": "o copo",
+            "pt": "a caneca",
             "bild": "motiv:becher"
           }
         ],
@@ -7968,7 +8632,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Jedes Kind legt einen Stein zu seinem Lieblingsspiel: Spiegelspiel, Pantomime oder Gefühle-Würfel. Das Spiel mit den meisten Steinen wird am Freitag gespielt.",
+            "text": "Donnerstag: Jedes Kind legt einen Baustein zu seinem Lieblingsspiel: Spiegelspiel, Pantomime oder Gefühle-Würfel. Das Spiel mit den meisten wird am Freitag gespielt.",
             "frage": "Welche Gefühle kennen wir schon?"
           },
           "stufen": {
@@ -7991,7 +8655,8 @@
             "planB": "Zu wenige Spiegel und Löffel: in Paaren schauen oder die Karten von Seite 2 als Memory spielen.",
             "sicherheit": [
               "Nur bruchsichere Spiegel verwenden.",
-              "Kinderscheren mit runden Spitzen; Schneiden nur mit Aufsicht."
+              "Kinderscheren mit runden Spitzen; Schneiden nur mit Aufsicht.",
+              "standard:fotos"
             ]
           },
           "experiment": {
@@ -8001,7 +8666,10 @@
               "große, blanke Esslöffel, einer je Kind",
               "bruchsicherer Handspiegel zum Vergleich",
               "Gefühlskarten",
-              "Steine zum Abstimmen"
+              {
+                "text": "Bausteine zum Abstimmen",
+                "bild": "icon:cube"
+              }
             ],
             "schritte": [
               "Vermuten: Wie sieht mein Gesicht im Löffel aus? Jedes Kind wählt ein Bild: normal, auf dem Kopf oder dick.",
@@ -8190,34 +8858,34 @@
             {
               "art": "spiel",
               "titel": "Miroir, miroir",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Des paires s’assoient face à face. Un enfant tire une carte de visage en cachette et fait ce visage. L’autre le reflète et demande : « Tu es surpris ? » Le premier répond : « Oui » ou « Non, je suis … ». Puis on échange.",
               "material": "cartes de visages"
             },
             {
               "art": "theater",
               "titel": "Pantomime des émotions",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un enfant va au milieu et montre une émotion avec son corps seulement : laisser tomber les épaules, sauter, serrer les poings. La classe devine et imite. Puis l’enseignante montre la même émotion, une fois faible, une fois forte."
             },
             {
               "art": "sprache",
               "titel": "Les émotions dans l’album",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Pendant la lecture, l’enseignante s’arrête : « Regarde son visage. Comment se sent l’ours ? » Les enfants posent la carte de visage qui convient sur la page et disent : « L’ours est triste, parce que … »",
               "material": "album, cartes de visages"
             },
             {
               "art": "gestalten",
               "titel": "Collage de visages",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Dans des magazines, les enfants découpent des visages avec des ciseaux d’enfants et les collent sur des affiches : une pour joyeux, une pour triste, une pour en colère. On vérifie ensemble : le visage va-t-il ? À quoi le voit-on ?",
               "material": "magazines, ciseaux d’enfants, colle, trois affiches"
             },
             {
               "art": "zaehlen",
               "titel": "Le dé des émotions",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Sur un grand dé en mousse, on met six visages. Un enfant lance, tous imitent le visage, un trait s’ajoute au tableau. À la fin, tous comptent : quelle émotion est sortie le plus souvent ?",
               "material": "grand dé, cartes de visages, tableau"
             }
@@ -8258,7 +8926,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : chaque enfant pose un caillou sur son jeu préféré : miroir, pantomime ou dé des émotions. Le jeu avec le plus de cailloux est joué vendredi.",
+            "text": "Jeudi : chaque enfant pose un cube sur son jeu préféré : miroir, pantomime ou dé des émotions. Le jeu avec le plus de cubes est joué vendredi.",
             "frage": "Quelles émotions connaissons-nous déjà ?"
           },
           "stufen": {
@@ -8281,7 +8949,8 @@
             "planB": "Pas assez de miroirs et de cuillères : regarder à deux ou jouer au memory de la page 2.",
             "sicherheit": [
               "Utiliser uniquement des miroirs incassables.",
-              "Ciseaux d’enfants à bouts ronds ; découper sous surveillance."
+              "Ciseaux d’enfants à bouts ronds ; découper sous surveillance.",
+              "standard:fotos"
             ]
           },
           "experiment": {
@@ -8291,7 +8960,10 @@
               "grandes cuillères à soupe brillantes, une par enfant",
               "miroir à main incassable pour comparer",
               "cartes des émotions",
-              "cailloux pour voter"
+              {
+                "text": "cubes pour voter",
+                "bild": "icon:cube"
+              }
             ],
             "schritte": [
               "Supposer : à quoi ressemble mon visage dans la cuillère ? Chaque enfant choisit : normal, à l’envers ou gros.",
@@ -8307,7 +8979,7 @@
               "Utiliser uniquement des miroirs incassables."
             ],
             "weiter": "Chercher d’autres objets brillants : couvercle, boule, robinet – à quoi ressemble-t-on dedans ?",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "licht"
             ],
@@ -8357,7 +9029,7 @@
           {
             "de": "die Wut",
             "fr": "la colère",
-            "lb": "d’Wut",
+            "lb": "d’Roserei",
             "pt": "a raiva",
             "bild": "gesicht:wuetend"
           },
@@ -8611,7 +9283,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mittwoch: Die Klasse stimmt mit Steinen ab, wie lang die Stilleminute am Morgen ist: 20 Sekunden, eine oder drei Minuten (Sanduhr). Ab Donnerstag gilt das Ergebnis.",
+            "text": "Mittwoch: Die Klasse stimmt mit Bausteinen ab, wie lang die Stilleminute am Morgen ist: 20 Sekunden, eine oder drei Minuten (Sanduhr). Ab Donnerstag gilt das Ergebnis.",
             "frage": "Was macht uns ruhig?"
           },
           "stufen": {
@@ -8645,7 +9317,10 @@
               "Schraubglas oder Flasche mit Deckel",
               "zwei Löffel Gartenerde, ein Löffel Sand",
               "Wasser",
-              "Sanduhr, 3 Minuten"
+              {
+                "text": "Sanduhr, 3 Minuten",
+                "bild": "motiv:sanduhr"
+              }
             ],
             "schritte": [
               "Erde und Sand ins Glas geben, Wasser bis fast oben, Deckel fest zudrehen.",
@@ -8788,34 +9463,34 @@
             {
               "art": "kreis",
               "titel": "Notre coin calme",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Les enfants proposent : de quoi un endroit pour se reposer a-t-il besoin ? Ensemble, on apporte coussins, couverture, albums et casques. Trois règles : ici c’est doux, ici je peux être seul, ici personne ne me dérange.",
               "material": "coussins, couverture, albums, casques"
             },
             {
               "art": "sinne",
               "titel": "Écouter le son",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "L’enseignante frappe un bol sonore. Tous ferment les yeux et écoutent jusqu’à ce que le son s’éteigne. Qui n’entend plus lève lentement la main. Ensuite, les enfants racontent ce qu’ils ont entendu en plus.",
               "material": "bol sonore"
             },
             {
               "art": "ruhe",
               "titel": "La météo dans le dos",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Par deux : un enfant est assis, l’autre dessine avec les mains dans son dos ce que raconte l’enseignante : le soleil brille (cercles), la pluie tombe (taper du bout des doigts), le vent souffle (effleurer). Demander d’abord : « Je peux ? » Un non est respecté."
             },
             {
               "art": "bewegung",
               "titel": "Vite – lentement – immobile",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants bougent au tambour : coups rapides – courir, lents – ramper comme des escargots, pas un son – se figer. À la fin, le tambour devient de plus en plus doux et lent, jusqu’à ce que tous soient couchés et respirent calmement.",
               "material": "tambour"
             },
             {
               "art": "ruhe",
               "titel": "Respirer avec la peluche",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Les enfants sont couchés sur le dos, une peluche sur le ventre. À l’inspiration, elle monte, à l’expiration, elle descend – comme sur un bateau. L’enseignante compte tout bas. Après cinq respirations, tous s’assoient lentement.",
               "material": "peluches, couvertures"
             }
@@ -8855,7 +9530,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Mercredi : la classe vote avec des cailloux la durée de la minute de silence du matin : 20 secondes, une minute ou trois minutes (sablier). Dès jeudi, le résultat vaut.",
+            "text": "Mercredi : la classe vote avec des cubes la durée de la minute de silence du matin : 20 secondes, une minute ou trois minutes (sablier). Dès jeudi, le résultat vaut.",
             "frage": "Qu’est-ce qui nous apaise ?"
           },
           "stufen": {
@@ -8889,7 +9564,10 @@
               "bocal ou bouteille avec bouchon",
               "deux cuillères de terre, une de sable",
               "eau",
-              "sablier, 3 minutes"
+              {
+                "text": "sablier, 3 minutes",
+                "bild": "motiv:sanduhr"
+              }
             ],
             "schritte": [
               "Mettre terre et sable dans le bocal, de l’eau presque jusqu’en haut, bien fermer.",
@@ -8905,7 +9583,7 @@
               "Bien visser le bouchon ; secouer le bocal seulement à table ou prendre une bouteille incassable."
             ],
             "weiter": "Remplir la bouteille calme de la semaine : sable, riz et herbes séchées sans paillettes. Combien de temps met chaque remplissage à descendre ?",
-            "dauer": "20 Min. + später",
+            "dauer": "20 min + plus tard",
             "phaenomene": [
               "gewicht"
             ],
@@ -8980,7 +9658,7 @@
         "satz": {
           "de": "Ich atme ganz langsam.",
           "fr": "Je respire doucement.",
-          "lb": "Ech otmen ganz lues.",
+          "lb": "Ech otme ganz lues.",
           "pt": "Respiro devagar."
         },
         "geprueft": false
@@ -9276,7 +9954,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Die Kinder legen Steine zur liebsten Streit-Lösung: Sanduhr, teilen oder Hilfe holen. Das Ergebnis hängt als Bild am Friedenstisch.",
+            "text": "Donnerstag: Die Kinder legen Bausteine zur liebsten Streit-Lösung: Sanduhr, teilen oder Hilfe holen. Das Ergebnis hängt als Bild am Friedenstisch.",
             "frage": "Was hilft, wenn wir streiten?"
           },
           "stufen": {
@@ -9306,11 +9984,17 @@
             "titel": "Magnete streiten und vertragen sich",
             "frage": "Was passiert, wenn wir zwei Magnete einmal so und einmal andersherum zueinander schieben?",
             "material": [
-              "zwei große Stabmagnete aus dem Lehrmittelhandel",
+              {
+                "text": "zwei große Stabmagnete aus dem Lehrmittelhandel",
+                "bild": "motiv:magnet"
+              },
               "zwei Spielzeugautos",
               "Klebeband",
               "glatter Tisch",
-              "Steine zum Abstimmen"
+              {
+                "text": "Bausteine zum Abstimmen",
+                "bild": "icon:cube"
+              }
             ],
             "schritte": [
               "Vermuten: Was machen die Autos, wenn sie sich treffen? Jedes Kind zeigt Daumen hoch (zusammen) oder runter (weg).",
@@ -9507,41 +10191,41 @@
             {
               "art": "theater",
               "titel": "Deux marionnettes, une pelle",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Deux marionnettes veulent la même pelle et la tirent. L’enseignante arrête : « Stop. Qu’est-ce qui se passe ? Que ressent le chat, que ressent le chien ? » Les enfants proposent des solutions, les marionnettes les essaient et disent si elles sont contentes.",
               "material": "deux marionnettes, pelle"
             },
             {
               "art": "kreis",
               "titel": "La table de la paix",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Une petite table, deux chaises, un sablier. Qui se dispute s’y assoit. Un enfant dit : « Je suis en colère parce que … », l’autre écoute, puis on échange. Ensuite, tous deux cherchent une solution. D’abord avec des marionnettes, puis avec accompagnement.",
               "material": "table, deux chaises, sablier"
             },
             {
               "art": "spiel",
               "titel": "Une balle pour deux",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Il y a exprès une seule balle pour deux enfants. Les duos cherchent comment jouer tous les deux : alterner, se la lancer, la rouler ensemble. Puis chaque duo montre sa solution et la classe l’essaie.",
               "material": "balles (une par duo)"
             },
             {
               "art": "bewegung",
               "titel": "Dos à dos",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Deux enfants sont assis dos à dos et essaient de se lever ensemble sans les mains. Cela ne marche que si les deux poussent aussi fort. Discussion : qu’a-t-il fallu pour que ça marche ?"
             },
             {
               "art": "gestalten",
               "titel": "Notre chaîne de la paix",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Chaque fois que des enfants se sont réconciliés après une dispute, ils enfilent ensemble une grosse perle en bois sur une ficelle. La chaîne est accrochée à la table de la paix et s’allonge de semaine en semaine.",
               "material": "grosses perles en bois, ficelle"
             },
             {
               "art": "sprache",
               "titel": "S’exercer aux phrases en « je »",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Avec des cartes, les enfants s’exercent à des phrases simples : « Stop, je ne veux pas. » « Je suis en colère parce que … » « Je voudrais aussi. » L’enseignante dit, la classe répète – tantôt fort, tantôt doucement. Ceux qui parlent peu utilisent la main stop."
             }
           ],
@@ -9578,7 +10262,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : les enfants posent des cailloux sur leur solution préférée : sablier, partager ou chercher de l’aide. Le résultat est affiché à la table de la paix.",
+            "text": "Jeudi : les enfants posent des cubes sur leur solution préférée : sablier, partager ou chercher de l’aide. Le résultat est affiché à la table de la paix.",
             "frage": "Qu’est-ce qui aide quand on se dispute ?"
           },
           "stufen": {
@@ -9608,11 +10292,17 @@
             "titel": "Les aimants se fâchent et se réconcilient",
             "frage": "Que se passe-t-il si on approche deux aimants d’un côté, puis de l’autre ?",
             "material": [
-              "deux gros aimants droits de matériel scolaire",
+              {
+                "text": "deux gros aimants droits de matériel scolaire",
+                "bild": "motiv:magnet"
+              },
               "deux petites voitures",
               "ruban adhésif",
               "table lisse",
-              "cailloux pour voter"
+              {
+                "text": "cubes pour voter",
+                "bild": "icon:cube"
+              }
             ],
             "schritte": [
               "Supposer : que font les voitures quand elles se rencontrent ? Pouce en haut (ensemble) ou en bas (s’éloignent).",
@@ -9629,7 +10319,7 @@
               "Aimants jamais à la bouche ou au nez ; pas de doigts entre deux aimants."
             ],
             "weiter": "Enfiler des aimants-anneaux sur une tige : l’un flotte au-dessus de l’autre. Que l’aimant attire-t-il encore ?",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "magnet"
             ]
@@ -9654,14 +10344,14 @@
           {
             "de": "die Wut",
             "fr": "la colère",
-            "lb": "d’Wut",
+            "lb": "d’Roserei",
             "pt": "a raiva",
             "bild": "gesicht:wuetend"
           },
           {
             "de": "die Sanduhr",
             "fr": "le sablier",
-            "lb": "d’Sanduer",
+            "lb": "d’Sandauer",
             "pt": "a ampulheta",
             "bild": "motiv:sanduhr"
           },
@@ -9894,7 +10584,7 @@
             "gesten": "Fingerspiel: Bei jeder Zahl einen Finger hochhalten und die Bewegung dazu zeigen (bauen, zählen, hüpfen, helfen, strahlen)."
           },
           "ecken": [
-            "Bauecke: Bauwerke malen oder bauen und mit Namen an die Ich-kann-Wand stellen; Fotos nur mit Einverständnis.",
+            "Bauecke: Bauwerke malen oder bauen und mit Namen an die Ich-kann-Wand stellen; Fotos nur mit schriftlicher Einwilligung der Familien.",
             "Malatelier: Kronen verzieren – jedes Kind malt fünf Dinge, die es kann.",
             "Bewegungsecke: Balancierseil, Sprungmatte und Bälle zum Üben; jedes Kind darf zeigen, was es heute geschafft hat."
           ],
@@ -9914,7 +10604,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Die Kinder legen Steine zu dem, was in die Ausstellung kommt: Kronen, Bauwerke oder Bilder. Sie hängen und stellen alles selbst auf.",
+            "text": "Donnerstag: Die Kinder legen Bausteine zu dem, was in die Ausstellung kommt: Kronen, Bauwerke oder Bilder. Sie hängen und stellen alles selbst auf.",
             "frage": "Was können wir schon?"
           },
           "stufen": {
@@ -10099,35 +10789,35 @@
             {
               "art": "kreis",
               "titel": "Avant et aujourd’hui",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante montre des photos de bébés dans un album : « Que ne sait pas encore faire un bébé ? » Les enfants énumèrent ce qu’ils savent aujourd’hui : marcher, parler, manger seul. Chaque enfant montre une chose, la classe applaudit.",
               "material": "album avec photos de bébés"
             },
             {
               "art": "bewegung",
               "titel": "Parcours de fierté",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Plusieurs stations : tenir sur un pied, lancer une balle dans un but, marcher en équilibre sur une ligne, faire une roulade. Chaque enfant choisit une station et s’y exerce plusieurs fois. À la fin, il montre ce qu’il a réussi. Poser des tapis mous.",
               "material": "balles, craie, tapis"
             },
             {
               "art": "gestalten",
               "titel": "Le mur « Je sais faire »",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Pour chaque chose qu’un enfant a réussie cette semaine, l’enseignante écrit une carte : « Lina sait tenir sur un pied. » L’enfant la colle au mur. On nomme, on ne compte pas et on ne compare pas.",
               "material": "cartes, crayons, ruban adhésif"
             },
             {
               "art": "sprache",
               "titel": "Je suis fier parce que …",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un bâton de parole circule en cercle. Qui le tient dit : « Je suis fier parce que j’ai … » Les autres répondent : « Tu as réussi. » Ensuite, on peut aussi dire de quoi on est fier chez un autre enfant.",
               "material": "bâton de parole"
             },
             {
               "art": "draussen",
               "titel": "Regarde ce que je sais faire",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Sur l’aire de jeux, chaque enfant montre à un adulte quelque chose qu’il sait faire : grimper, glisser, se balancer, faire des gâteaux de sable. Qui veut le dessine ensuite pour l’exposition. Rappeler d’abord les règles du dehors.",
               "material": "papier, crayons"
             }
@@ -10145,7 +10835,7 @@
             "gesten": "Jeu de doigts : à chaque chiffre, lever un doigt et montrer le geste (construire, compter, sauter, aider, briller)."
           },
           "ecken": [
-            "Coin construction : construire et poser avec son nom au mur « Je sais faire » ; photos avec accord.",
+            "Coin construction : construire et poser avec son nom au mur « Je sais faire » ; photos seulement avec l’accord écrit des familles.",
             "Atelier de dessin : décorer des couronnes – chacun dessine cinq choses qu’il sait faire.",
             "Coin motricité : corde d’équilibre, tapis de saut et balles pour s’exercer ; chacun peut montrer ce qu’il a réussi aujourd’hui."
           ],
@@ -10165,7 +10855,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : les enfants posent des cailloux sur ce qui ira à l’exposition : couronnes, constructions ou dessins. Ils accrochent et installent tout eux-mêmes.",
+            "text": "Jeudi : les enfants posent des cubes sur ce qui ira à l’exposition : couronnes, constructions ou dessins. Ils accrochent et installent tout eux-mêmes.",
             "frage": "Que savons-nous déjà faire ?"
           },
           "stufen": {
@@ -10220,7 +10910,7 @@
               "Essuyer tout de suite l’eau renversée."
             ],
             "weiter": "Ajouter une goutte de liquide vaisselle sur la montagne : que devient la « peau » ?",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "oberflaeche"
             ],
@@ -10572,7 +11262,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Die Kinder legen Steine zu ihrer liebsten Körper-Musik: klatschen, patschen, stampfen oder schnalzen. Die drei beliebtesten kommen am Freitag dran.",
+            "text": "Donnerstag: Die Kinder legen Bausteine zu ihrer liebsten Körper-Musik: klatschen, patschen, stampfen oder schnalzen. Die drei beliebtesten kommen am Freitag dran.",
             "frage": "Was kann unser Körper für Musik?"
           },
           "stufen": {
@@ -10627,7 +11317,7 @@
               "Dieselben Dinge noch einmal versuchen und den Reißverschluss ziehen.",
               "Nach fünf Minuten den Kleber lösen und erzählen: Was war schwer?"
             ],
-            "vermutung": "Daumen hoch: „Geht genauso gut.“ Daumen runter: „Wird schwer.“ Jedes Kind legt einen Stein in einen von zwei Bechern.",
+            "vermutung": "Daumen hoch: „Geht genauso gut.“ Daumen runter: „Wird schwer.“ Jedes Kind legt einen Baustein in einen von zwei Bechern.",
             "beobachten": "Ohne Daumen rutscht der Stift weg, der Becher wackelt und der Reißverschluss geht kaum auf.",
             "warumKind": "Der Daumen kann sich den anderen Fingern gegenüberstellen – so wird die Hand zur Zange.",
             "hintergrund": "Der opponierbare Daumen ermöglicht Pinzetten- und Kraftgriff; ohne ihn bleibt nur ein Hakengriff. Diese Fähigkeit ist für Feinmotorik und Werkzeuggebrauch zentral. Für die Kinder zählt die eigene Erfahrung: Sie erleben, wie viel eine Hand kann – und dass jeder Körper anders ist. Manche Kinder greifen mit Hilfsmitteln oder auf ihre Weise, und das ist in Ordnung.",
@@ -10794,40 +11484,40 @@
             {
               "art": "kreis",
               "titel": "Mon contour sur papier",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Un enfant s’allonge sur du papier kraft, un adulte trace son contour au gros feutre – seulement s’il le veut. La classe nomme les parties du corps et pose les cartes au bon endroit. Le contour reste affiché toute la semaine.",
               "material": "papier kraft, gros feutre, cartes"
             },
             {
               "art": "bewegung",
               "titel": "Montre-moi …",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "L’enseignante dit : « Montre-moi ton nez – tes genoux – tes coudes. » Les enfants touchent la partie nommée. D’abord lentement, puis plus vite, puis deux parties à la fois. Ensuite, un enfant donne les consignes."
             },
             {
               "art": "sinne",
               "titel": "Mon cœur bat",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Tout le monde saute une minute sur place. Puis chacun pose une main sur sa poitrine et sent : le cœur bat vite. Après un moment allongé, on écoute encore – il bat plus lentement. Ceux qui veulent le décrivent avec leurs mots."
             },
             {
               "art": "gestalten",
               "titel": "Bonshommes en pâte",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Les enfants modèlent un bonhomme : une tête, un ventre, deux bras, deux jambes. Pour compter : combien de bras a ton bonhomme ? Combien de doigts as-tu à une main ? Ensuite, tous les bonshommes sont alignés.",
               "material": "pâte à modeler, planchettes"
             },
             {
               "art": "theater",
               "titel": "Le docteur des poupées",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Au coin poupées, les enfants soignent les poupées : ils montrent où elles ont mal et collent un pansement sur un genou, un bras ou une main. Avant, ils demandent : « Je peux ? » Ainsi, chacun apprend qu’il décide pour son corps.",
               "material": "poupées, pansements, mallette de docteur"
             },
             {
               "art": "musik",
               "titel": "La musique du corps",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Faire des sons avec le corps : taper des mains, frapper les cuisses, taper des pieds, claquer la langue. L’enseignante montre une courte suite (clap – clap – boum), la classe la répète."
             }
           ],
@@ -10864,7 +11554,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : les enfants posent des cailloux sur leur musique du corps préférée : mains, cuisses, pieds ou langue. Les trois premières sont jouées vendredi.",
+            "text": "Jeudi : les enfants posent des cubes sur leur musique du corps préférée : mains, cuisses, pieds ou langue. Les trois premières sont jouées vendredi.",
             "frage": "Quelle musique fait notre corps ?"
           },
           "stufen": {
@@ -10919,7 +11609,7 @@
               "Refaire les mêmes gestes et tirer une fermeture éclair.",
               "Après cinq minutes, retirer le ruban et raconter : qu’est-ce qui était dur ?"
             ],
-            "vermutung": "Pouce en haut : « Ça marche pareil. » Pouce en bas : « Ce sera dur. » Chacun pose un caillou dans l’un de deux gobelets.",
+            "vermutung": "Pouce en haut : « Ça marche pareil. » Pouce en bas : « Ce sera dur. » Chacun pose un cube dans l’un de deux gobelets.",
             "beobachten": "Sans pouce, le crayon glisse, le gobelet vacille et la fermeture éclair s’ouvre à peine.",
             "warumKind": "Le pouce peut se placer en face des autres doigts : la main devient une pince.",
             "hintergrund": "Le pouce opposable permet la pince fine et la prise de force ; sans lui, il ne reste qu’une prise en crochet. C’est essentiel pour la motricité fine et l’usage des outils. Pour les enfants, ce qui compte est leur propre expérience : ils sentent tout ce que fait une main, et que chaque corps est différent.",
@@ -10927,7 +11617,7 @@
               "Coller très légèrement et retirer après 5 minutes ; personne n’est obligé."
             ],
             "weiter": "Empiler des cubes avec des chaussettes sur les mains : que font les doigts tout seuls ?",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "sinne",
               "kraefte"
@@ -11237,7 +11927,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Die Kinder legen Steine zu dem, was am Waschbecken hängen soll: die Bildfolge, eine Sanduhr oder das Reim-Plakat. Das Gewählte hängt ab Freitag dort.",
+            "text": "Donnerstag: Die Kinder legen Bausteine zu dem, was am Waschbecken hängen soll: die Bildfolge, eine Sanduhr oder das Reim-Plakat. Das Gewählte hängt ab Freitag dort.",
             "frage": "Was hilft uns am Waschbecken?"
           },
           "stufen": {
@@ -11431,33 +12121,33 @@
             {
               "art": "kreis",
               "titel": "Que font nos mains ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Chaque enfant montre ce que font les mains : saluer, applaudir, construire, caresser. Puis l’enseignante demande : qu’ont déjà touché nos mains aujourd’hui ? La poignée, le ballon, le nez … On comprend pourquoi on les lave."
             },
             {
               "art": "gestalten",
               "titel": "De la peinture comme du savon",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Les enfants frottent leurs mains avec un peu de peinture au doigt comme si c’était du savon, puis les impriment sur du papier. Où n’y a-t-il pas de couleur ? Le pouce, le bout des doigts, le dos de la main : on les oublie souvent.",
               "material": "peinture au doigt, papier, tabliers"
             },
             {
               "art": "zaehlen",
               "titel": "Frotter jusqu’à 20",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Pendant le savonnage, la classe compte lentement jusqu’à 20 ou dit la comptine. Les plus jeunes comptent jusqu’à 10 et recommencent. Un petit sablier près du lavabo montre combien de temps frotter.",
               "material": "sablier"
             },
             {
               "art": "bewegung",
               "titel": "La danse du lavage",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "En musique, les enfants dansent les étapes : ouvrir le robinet, savonner, frotter, croiser les doigts, tourner le pouce, secouer les mains. Quand la musique s’arrête, tout le monde se fige comme une statue."
             },
             {
               "art": "draussen",
               "titel": "Bulles de savon dans la cour",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Dehors, les enfants font des bulles avec de grands anneaux et les attrapent avec les mains mouillées. Qu’est-ce qui fait les bulles ? Le savon – et il rend aussi nos mains propres. Ensuite, tout le monde se lave les mains.",
               "material": "bulles de savon, anneaux"
             }
@@ -11495,7 +12185,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : les enfants posent des cailloux sur ce qui sera affiché au lavabo : la suite d’images, un sablier ou la comptine. Le choix est affiché dès vendredi.",
+            "text": "Jeudi : les enfants posent des cubes sur ce qui sera affiché au lavabo : la suite d’images, un sablier ou la comptine. Le choix est affiché dès vendredi.",
             "frage": "Qu’est-ce qui nous aide au lavabo ?"
           },
           "stufen": {
@@ -11557,7 +12247,7 @@
               "standard:wasser"
             ],
             "weiter": "Toucher la poignée de porte avec de la cannelle : qui l’a sur les mains plus tard ?",
-            "dauer": "25 Min.",
+            "dauer": "25 min",
             "phaenomene": [
               "loesen"
             ]
@@ -11610,7 +12300,7 @@
           {
             "de": "die Sanduhr",
             "fr": "le sablier",
-            "lb": "d’Sanduer",
+            "lb": "d’Sandauer",
             "pt": "a ampulheta",
             "bild": "motiv:sanduhr"
           }
@@ -11672,7 +12362,7 @@
     "de": {
       "titel": "Zähne putzen",
       "untertitel": "Kleine Kreise, starke Zähne: putzen, kauen und Zahnarztpraxis spielen",
-      "anleitung": "Die Karten zweimal drucken und für Sitzkreis und Memory nutzen. Seite 2 ist das Forscherblatt zur Eierschale im Essig: vermuten, vorher und nachher malen. Die Kinder sagen, was sie sehen.",
+      "anleitung": "Die Karten zweimal drucken und für Sitzkreis und Memory nutzen. Auf Seite 2 klebt das Kind die vier Schritte des Zähneputzens in die richtige Reihenfolge (Bildplan fürs Waschbecken) und kreist ein, was gut für die Zähne ist. Das Forscherblatt zur Eierschale gibt es als Zusatzseite.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -11723,36 +12413,81 @@
               "titel": "der Essig"
             }
           ],
-          "hoehe": 175
+          "hoehe": 165
         },
         {
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "name": false,
-          "frage": "Wird die Eierschale im Essig weich?",
-          "bild": "motiv:ei",
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Schneide aus. Klebe: So putze ich meine Zähne.",
+          "symbole": [
+            "schneiden",
+            "kleben"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "schneiden_kleben",
+          "bilder": [
             {
-              "bild": "motiv:ei",
-              "text": "bleibt hart"
+              "bild": "motiv:zahnpasta",
+              "text": "Zahnpasta"
             },
             {
-              "bild": "icon:pillow",
-              "text": "wird weich"
+              "bild": "motiv:zahnbuerste",
+              "text": "putzen"
+            },
+            {
+              "bild": "motiv:becher",
+              "text": "ausspülen"
+            },
+            {
+              "bild": "motiv:mund",
+              "text": "lachen"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was ist gut für die Zähne? Kreise ein.",
+          "symbole": [
+            "einkreisen",
+            "nachdenken"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "motiv:karotte",
+              "text": "die Karotte"
+            },
+            {
+              "bild": "motiv:wasserglas",
+              "text": "das Wasser"
+            },
+            {
+              "bild": "icon:candy",
+              "text": "das Bonbon"
+            },
+            {
+              "bild": "icon:lollipop",
+              "text": "der Lutscher"
+            }
+          ]
         }
       ],
       "lehrer": {
         "ziel": "Die Kinder wissen, wie und wann man Zähne putzt, kennen zahnfreundliche Lebensmittel und üben die Putzbewegungen so, dass sie sie zu Hause mit den Eltern weiterführen können.",
         "ablauf": [
           "Montag – Sitzkreis: Ein Handspiegel geht herum, alle zeigen ihre Zähne. Karten einführen: Wofür brauchen wir Zähne?",
-          "Dienstag – Gebiss aus Eierkarton bauen und mit alten Zahnbürsten putzen: kleine Kreise, oben, unten, innen; dazu der Reim.",
-          "Mittwoch – Forschen: Eierschale in Essig legen (Ergebnis am Donnerstag); Seite 2: Forscherblatt; Karotte kauen und hören, was knackt.",
-          "Donnerstag – Schale herausnehmen, Forscherblatt fertig malen; Zahnarztpraxis spielen; Ängste vor dem Zahnarztbesuch ruhig aufgreifen.",
+          "Dienstag – Seite 2 kleben; Gebiss aus Eierkarton bauen und mit alten Zahnbürsten putzen: kleine Kreise, oben, unten, innen; dazu der Reim.",
+          "Mittwoch – Forschen: Eierschale in Essig legen (Ergebnis am Donnerstag); Forscherblatt (Zusatzseite); Karotte kauen und hören, was knackt.",
+          "Donnerstag – Schale herausnehmen, Forscherblatt (Zusatzseite) fertig malen; Zahnarztpraxis spielen; Ängste vor dem Zahnarztbesuch ruhig aufgreifen.",
           "Freitag – Zahnbürsten-Tanz; die Kinder stimmen über den Imbiss ab; Abschlusskreis mit Reim und Sanduhr."
         ],
         "hintergrund": "Zähneputzen gehört zu den ersten Routinen, die Kinder selbst übernehmen möchten. Für gründliches Putzen fehlt ihnen aber noch die Feinmotorik; das Nachputzen durch Erwachsene bleibt bis ins Schulalter nötig. Gewohnheiten entstehen durch Wiederholung in immer gleichen Situationen: morgens und abends, mit demselben Reim (Lally u. a., 2010). Im Rollenspiel verlieren Kinder die Scheu vor der Zahnarztpraxis: Wer selbst „behandelt“ hat, weiß, was geschieht (Hirsh-Pasek u. a., 2009).",
@@ -11863,7 +12598,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Die Kinder legen Steine zum Imbiss für Freitag: Karotte, Apfel oder Käse. Das Essen mit den meisten Steinen gibt es beim Abschlusskreis.",
+            "text": "Donnerstag: Die Kinder legen Bausteine zum Imbiss für Freitag: Karotte, Apfel oder Käse. Das Essen mit den meisten Bausteinen gibt es beim Abschlusskreis.",
             "frage": "Was tut unseren Zähnen gut?"
           },
           "stufen": {
@@ -11901,7 +12636,10 @@
               "3 Gläser",
               "Haushaltsessig",
               "Wasser",
-              "Zahnpasta",
+              {
+                "text": "Zahnpasta",
+                "bild": "motiv:zahnpasta"
+              },
               "Löffel zum Herausnehmen"
             ],
             "schritte": [
@@ -11910,7 +12648,7 @@
               "Sofort schauen: Wo steigen Bläschen auf?",
               "Am nächsten Tag die Stücke mit dem Löffel herausnehmen und vorsichtig drücken."
             ],
-            "vermutung": "Bild wählen: Die Schale bleibt hart oder sie wird weich. Jedes Kind legt einen Stein zu seinem Bild.",
+            "vermutung": "Bild wählen: Die Schale bleibt hart oder sie wird weich. Jedes Kind legt einen Baustein zu seinem Bild.",
             "beobachten": "Im Essig perlen sofort Bläschen; am nächsten Tag ist die Schale weich. Im Wasser bleibt sie hart, mit Zahnpasta ist sie weniger angegriffen.",
             "warumKind": "Saures macht die harte Schale weich. Darum putzen wir Süßes und Saures von den Zähnen.",
             "hintergrund": "Eierschale besteht wie Zahnschmelz vor allem aus Calciumverbindungen; Säure löst sie unter Bildung von Kohlendioxid (die Bläschen). Im Mund entsteht Säure, wenn Bakterien Zucker abbauen; Fluorid macht den Schmelz widerstandsfähiger. Das Modell ist grob: Zahnschmelz ist viel härter und wird über Monate und Jahre angegriffen, nicht in Tagen.",
@@ -11922,7 +12660,21 @@
             "dauer": "2 Tage, je 10 Min.",
             "phaenomene": [
               "stoffe"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "Wird die Eierschale im Essig weich?",
+              "vermuten": [
+                {
+                  "bild": "motiv:ei",
+                  "text": "bleibt hart"
+                },
+                {
+                  "bild": "icon:pillow",
+                  "text": "wird weich"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -11930,7 +12682,7 @@
     "fr": {
       "titel": "Je me brosse les dents",
       "untertitel": "Des petits ronds pour des dents solides : brosser, croquer et jouer au cabinet dentaire",
-      "anleitung": "Imprimer les cartes deux fois pour le cercle et le memory. Page 2 : feuille de chercheur sur la coquille d’œuf dans le vinaigre : supposer, dessiner avant et après. Les enfants disent ce qu’ils voient.",
+      "anleitung": "Imprimer les cartes deux fois (cercle, memory). Page 2 : coller les quatre étapes du brossage dans l’ordre (plan imagé au lavabo) et entourer ce qui est bon pour les dents. Fiche du chercheur : page à part.",
       "bausteine": [
         {
           "art": "aufgabe",
@@ -11981,27 +12733,72 @@
               "titel": "le vinaigre"
             }
           ],
-          "hoehe": 175
+          "hoehe": 165
         },
         {
           "art": "seitenumbruch"
         },
         {
-          "art": "forscherblatt",
-          "name": false,
-          "frage": "La coquille devient-elle molle ?",
-          "bild": "motiv:ei",
-          "vermuten": [
+          "art": "aufgabe",
+          "text": "Découpe. Colle : comment je me brosse les dents.",
+          "symbole": [
+            "schneiden",
+            "kleben"
+          ],
+          "niveau": "einstieg"
+        },
+        {
+          "art": "schneiden_kleben",
+          "bilder": [
             {
-              "bild": "motiv:ei",
-              "text": "reste dure"
+              "bild": "motiv:zahnpasta",
+              "text": "le dentifrice"
             },
             {
-              "bild": "icon:pillow",
-              "text": "devient molle"
+              "bild": "motiv:zahnbuerste",
+              "text": "brosser"
+            },
+            {
+              "bild": "motiv:becher",
+              "text": "rincer"
+            },
+            {
+              "bild": "motiv:mund",
+              "text": "sourire"
             }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui est bon pour les dents ? Entoure.",
+          "symbole": [
+            "einkreisen",
+            "nachdenken"
           ],
-          "sehen": "vorher-nachher"
+          "niveau": "stern"
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "motiv:karotte",
+              "text": "la carotte"
+            },
+            {
+              "bild": "motiv:wasserglas",
+              "text": "l’eau"
+            },
+            {
+              "bild": "icon:candy",
+              "text": "le bonbon"
+            },
+            {
+              "bild": "icon:lollipop",
+              "text": "la sucette"
+            }
+          ]
         }
       ],
       "lehrer": {
@@ -12009,7 +12806,7 @@
         "ablauf": [
           "Lundi – cercle : un miroir circule, chacun montre ses dents. Cartes : à quoi servent les dents ?",
           "Mardi – construire une mâchoire en boîte à œufs et la brosser avec de vieilles brosses : petits ronds, en haut, en bas, dedans ; la comptine.",
-          "Mercredi – chercheurs : coquille d’œuf dans le vinaigre (résultat jeudi) ; page 2 : feuille de chercheur ; croquer une carotte.",
+          "Mercredi – chercheurs : coquille d’œuf dans le vinaigre (résultat jeudi) ; fiche du chercheur (page à part) ; croquer une carotte.",
           "Jeudi – sortir la coquille, finir la feuille de chercheur ; jouer au cabinet dentaire ; parler calmement de la peur du dentiste.",
           "Vendredi – danse de la brosse à dents ; les enfants votent pour la collation ; cercle final avec comptine et sablier."
         ],
@@ -12049,42 +12846,42 @@
             {
               "art": "kreis",
               "titel": "Mes dents dans le miroir",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Un miroir à main circule dans le cercle. Chaque enfant regarde ses dents et les décrit : devant, elles sont fines et coupantes, au fond, larges. Une dent bouge déjà ? Celui qui ne veut pas passe simplement le miroir.",
               "material": "miroir à main"
             },
             {
               "art": "gestalten",
               "titel": "Une mâchoire en boîte à œufs",
-              "dauer": "20 Min.",
+              "dauer": "20 min",
               "text": "Les enfants peignent une boîte à œufs en blanc : chaque creux est une dent. Une fois sèche, l’adulte y tamponne de la peinture brune comme « restes de repas ». Les enfants les enlèvent avec une brosse et de l’eau, en petits ronds.",
               "material": "boîtes à œufs, peinture blanche et brune, vieilles brosses"
             },
             {
               "art": "sinne",
               "titel": "Ça croque ou c’est mou ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants croquent un morceau de carotte, puis de banane. Qu’entend-on ? Avec quoi les dents travaillent-elles plus ? Ensuite, tout le monde boit une gorgée d’eau et sent la bouche devenir propre.",
               "material": "bâtonnets de carotte, banane, gobelets, eau"
             },
             {
               "art": "zaehlen",
               "titel": "Le dé des dents",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Sur une grande bouche en papier, dix gros blocs blancs font les dents. On lance le dé, on « brosse » autant de dents et on compte à voix haute. Quand toutes sont propres, la bouche sourit. Pour les petits, un dé de 1 à 3.",
               "material": "bouche en papier, 10 gros blocs, dé, brosse"
             },
             {
               "art": "theater",
               "titel": "Au cabinet dentaire",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Un enfant joue le dentiste ou la dentiste, un autre s’assoit sur la chaise, les poupées attendent. Avec un miroir et une lampe de poche, on regarde et on compte. L’enseignante accompagne : « Ouvre grand – ah – c’est bien. » La visite fait moins peur.",
               "material": "chaise, miroir, lampe de poche, poupées"
             },
             {
               "art": "bewegung",
               "titel": "La danse de la brosse à dents",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Les enfants sont des brosses à dents : ils tournent avec tout le corps, brossent en haut (bras levés), en bas (accroupis) et dedans (bras devant le ventre). Au signal « on rince », tout le monde se secoue et s’assoit."
             }
           ],
@@ -12121,7 +12918,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : les enfants posent des cailloux sur la collation de vendredi : carotte, pomme ou fromage. Elle est servie au cercle final.",
+            "text": "Jeudi : les enfants posent des cubes sur la collation de vendredi : carotte, pomme ou fromage. Elle est servie au cercle final.",
             "frage": "Qu’est-ce qui fait du bien aux dents ?"
           },
           "stufen": {
@@ -12159,7 +12956,10 @@
               "3 verres",
               "vinaigre blanc",
               "eau",
-              "dentifrice",
+              {
+                "text": "dentifrice",
+                "bild": "motiv:zahnpasta"
+              },
               "cuillère pour sortir"
             ],
             "schritte": [
@@ -12168,7 +12968,7 @@
               "Regarder tout de suite : où montent des bulles ?",
               "Le lendemain, sortir les morceaux à la cuillère et appuyer doucement."
             ],
-            "vermutung": "Choisir une image : la coquille reste dure ou devient molle. Chacun pose un caillou sur son image.",
+            "vermutung": "Choisir une image : la coquille reste dure ou devient molle. Chacun pose un cube sur son image.",
             "beobachten": "Dans le vinaigre, des bulles tout de suite ; le lendemain, la coquille est molle. Dans l’eau, elle reste dure ; avec le dentifrice, elle est moins attaquée.",
             "warumKind": "L’acide ramollit la coquille dure : c’est pour ça qu’on brosse le sucré et l’acide sur nos dents.",
             "hintergrund": "La coquille, comme l’émail, est surtout faite de composés de calcium ; l’acide la dissout en libérant du gaz carbonique (les bulles). Dans la bouche, les bactéries transforment le sucre en acide ; le fluor rend l’émail plus résistant. Le modèle est grossier : l’émail est bien plus dur et s’abîme en mois et en années, pas en jours.",
@@ -12177,10 +12977,24 @@
               "standard:allergien"
             ],
             "weiter": "Mettre une coquille dans du jus de pomme : ça fait aussi des bulles ? Qu’est-ce que cela veut dire pour les dents ?",
-            "dauer": "2 jours, 10 Min.",
+            "dauer": "2 jours, 10 min",
             "phaenomene": [
               "stoffe"
-            ]
+            ],
+            "forscherblatt": {
+              "frage": "La coquille devient-elle molle ?",
+              "vermuten": [
+                {
+                  "bild": "motiv:ei",
+                  "text": "reste dure"
+                },
+                {
+                  "bild": "icon:pillow",
+                  "text": "devient molle"
+                }
+              ],
+              "sehen": "vorher-nachher"
+            }
           }
         }
       }
@@ -12238,7 +13052,7 @@
         "satz": {
           "de": "Ich putze meine Zähne.",
           "fr": "Je me brosse les dents.",
-          "lb": "Ech botzen meng Zänn.",
+          "lb": "Ech botze meng Zänn.",
           "pt": "Eu lavo os dentes."
         },
         "geprueft": false
@@ -12496,7 +13310,7 @@
               "eldib": "V-3"
             },
             {
-              "text": "Ich erkenne ein Geräusch und zeige die Karte.",
+              "text": "Ich höre ein Geräusch und zeige die passende Karte.",
               "eldib": "KOG-20"
             },
             {
@@ -12505,7 +13319,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Donnerstag: Die Kinder legen Steine zur Füllung der Dosen-Paare: Reis, Nudeln oder Sand. Die drei beliebtesten kommen am Freitag ins Dosen-Memory.",
+            "text": "Donnerstag: Die Kinder legen Bausteine zur Füllung der Dosen-Paare: Reis, Nudeln oder Sand. Die drei beliebtesten kommen am Freitag ins Dosen-Memory.",
             "frage": "Was rasselt am schönsten?"
           },
           "stufen": {
@@ -12712,40 +13526,40 @@
             {
               "art": "ruhe",
               "titel": "Une minute de silence",
-              "dauer": "5 Min.",
+              "dauer": "5 min",
               "text": "Tout le monde ferme les yeux ou regarde le sol et écoute : l’horloge, le chauffage, une voiture, un oiseau. Ensuite, chaque enfant nomme un bruit. Avec les plus petits, commencer par 20 secondes et allonger un peu chaque jour."
             },
             {
               "art": "spiel",
               "titel": "Qu’est-ce qui sonne ?",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Derrière un tissu, l’adulte fait des bruits : sonner une cloche, froisser du papier, verser de l’eau, secouer des clés. Les enfants devinent et montrent la bonne carte. Puis un enfant passe derrière le tissu.",
               "material": "tissu, cloche, papier, clés, gobelet"
             },
             {
               "art": "sinne",
               "titel": "Le memory des boîtes",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Deux boîtes opaques ont chaque fois le même contenu, choisi par les enfants : riz, pâtes, sable. Bien fermer les couvercles. Les enfants secouent, écoutent et cherchent les paires. À la fin, on ouvre pour vérifier.",
               "material": "6 boîtes, contenus, ruban adhésif"
             },
             {
               "art": "bewegung",
               "titel": "L’éléphant et le chat",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Au son du tambour, les enfants bougent : coups forts – ils marchent lourdement comme des éléphants, coups doux – ils se faufilent comme des chats. Quand le tambour s’arrête, tout le monde s’immobilise et écoute.",
               "material": "tambour ou casserole et cuillère en bois"
             },
             {
               "art": "draussen",
               "titel": "La promenade des bruits",
-              "dauer": "15 Min.",
+              "dauer": "15 min",
               "text": "Dans la cour, tout le monde s’arrête, met les mains derrière les oreilles et écoute : qu’est-ce qui est près, qu’est-ce qui est loin ? Chaque enfant retient un bruit et le raconte au cercle. Dehors : rester groupés, un adulte devant et un derrière."
             },
             {
               "art": "sprache",
               "titel": "Cris d’animaux en plusieurs langues",
-              "dauer": "10 Min.",
+              "dauer": "10 min",
               "text": "Que fait le chien ? En allemand : wau, en français : ouaf, en portugais : au au. Le coq : kikeriki, cocorico, cocorocó. Les enfants apportent les cris de leurs langues de famille ; chacun sonne autrement et est juste."
             }
           ],
@@ -12773,7 +13587,7 @@
               "eldib": "V-3"
             },
             {
-              "text": "Je reconnais un bruit et montre la carte.",
+              "text": "J’entends un bruit et je montre la bonne carte.",
               "eldib": "KOG-20"
             },
             {
@@ -12782,7 +13596,7 @@
             }
           ],
           "entscheiden": {
-            "text": "Jeudi : les enfants posent des cailloux sur le contenu des paires de boîtes : riz, pâtes ou sable. Les trois préférés vont au memory de vendredi.",
+            "text": "Jeudi : les enfants posent des cubes sur le contenu des paires de boîtes : riz, pâtes ou sable. Les trois préférés vont au memory de vendredi.",
             "frage": "Qu’est-ce qui sonne le mieux ?"
           },
           "stufen": {
@@ -12836,7 +13650,7 @@
               "L’enseignante tend le film ; jeter les restes tout de suite."
             ],
             "weiter": "Remplacer le riz par du sel ou des bouts de papier : qu’est-ce qui saute le plus haut ?",
-            "dauer": "15 Min.",
+            "dauer": "15 min",
             "phaenomene": [
               "schall"
             ]
