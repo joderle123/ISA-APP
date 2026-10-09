@@ -13,7 +13,7 @@ import type {
 } from '../typen'
 import type { Baustein, Blatt, Bereich, Symbol as BlattSymbol } from '../../blatt/typen'
 import { loadPdfModule } from '../../lib/loadPdf'
-import { THEMA_NAME } from './texte'
+import { ROLLE_NAME, THEMA_NAME } from './texte'
 
 export interface Katalog { eintraege: Map<string, KatalogEintrag>; nachRolle: Map<Rolle, KatalogEintrag[]>; stand: string }
 export interface Vorlieben { kind: VorliebenKind | null; ich: VorliebenFachkraft; team: VorliebenTeam | null }
@@ -654,6 +654,7 @@ function stundePlanen(c: Ctx, rituale: { ankommen?: string; abschluss?: string }
   const schritte: PlanSchritt[] = []
   const inStunde: KatalogEintrag[] = []
   const gesperrt = new Set(c.gesperrt)
+  const luecken: string[] = []
   for (const sl of slots) {
     if (sl.rolle === 'blatt') { schritte.push({ ref: 'blatt:' + c.nr, h: '', rolle: 'uebung', min: sl.min }); continue }
     if (sl.rolle === 'ankommen' || sl.rolle === 'abschluss') {
@@ -666,13 +667,21 @@ function stundePlanen(c: Ctx, rituale: { ankommen?: string; abschluss?: string }
       const e = kat().eintraege.get('fb:wahlkarte')!
       schritte.push({ ref: e.id, h: e.h, rolle: 'einstieg', min: sl.min, warum: ['wahl'] }); inStunde.push(e); continue
     }
-    const l = kandidaten(sl.rolle, { ...c, gesperrt }).map((e) => ({ e, ...wert(e, c, inStunde) }))
+    let l = kandidaten(sl.rolle, { ...c, gesperrt }).map((e) => ({ e, ...wert(e, c, inStunde) }))
+    // Lockerungsleiter (T-M3), hier nur die Stufe „Wiederholung in der Folge“; Alter/Layout/Vorsicht nie
+    let gelockert: string | null = null
+    if (l.length < 3) {
+      const mehr = kandidaten(sl.rolle, { ...c, gesperrt: new Set(inStunde.map((x) => x.id)) }).filter((e) => !l.some((x) => x.e === e)).map((e) => ({ e, ...wert(e, c, inStunde) }))
+      if (mehr.length) { l = [...l, ...mehr.map((x) => ({ ...x, s: x.s * 0.8 }))]; gelockert = 'gelockert:wiederholt' }
+    }
     const w = waehle(l, (c.salz ?? c.p.seed ?? c.p.ref) + c.nr + sl.rolle)
-    if (!w) continue
+    if (!w) { luecken.push(sl.rolle); continue }
+    const warLocker = gelockert && gesperrt.has(w.e.id)
     gesperrt.add(w.e.id); inStunde.push(w.e)
     const g = l.find((x) => x.e === w.e)!.gruende
     const min = Math.max(w.e.dauer.min, Math.min(w.e.dauer.max, sl.min))
-    schritte.push({ ref: w.e.id, h: w.e.h, rolle: sl.rolle, min, warum: warumKeys(w.e, c, g, sl.rolle), t: kurz(textVon(w.e, 'de').titel) })
+    const warum = warumKeys(w.e, c, g, sl.rolle)
+    schritte.push({ ref: w.e.id, h: w.e.h, rolle: sl.rolle, min, warum: warLocker ? [gelockert!, ...warum.slice(0, 1)] : warum, t: kurz(textVon(w.e, 'de').titel) })
   }
   // Erkundung (6.6): neben dem Kern, reproduzierbar
   const rate = c.v.ich.erkundung ?? 0.2
@@ -696,6 +705,7 @@ function stundePlanen(c: Ctx, rituale: { ankommen?: string; abschluss?: string }
   const blatt = (ohne || !blattSlot) && c.phase !== 'leicht' ? { titel: '', bausteine: [] } : blattBauen(c, inStunde)
   const hinweise: string[] = []
   if (!ohne && blattSlot && c.phase !== 'leicht' && blatt.bausteine.length < 2) hinweise.push('Wenig passendes Material fürs Blatt – ohne Blatt planen oder im Baukasten suchen.')
+  if (luecken.length) hinweise.push(`Lücke: für ${luecken.map((r) => ROLLE_NAME[r as Rolle] ?? r).join(', ')} passt nichts zu Alter und Vorsicht – lieber eine Lücke als etwas Unpassendes. Im Baukasten selbst ergänzen.`)
   return { nr: c.nr, phase: c.phase, status: 'geplant', datum: null, schritte, blatt: blatt.bausteine.length ? blatt : null, rueckmeldung: null, ...(hinweise.length ? { hinweise } : {}) }
 }
 

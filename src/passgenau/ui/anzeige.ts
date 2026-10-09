@@ -23,6 +23,9 @@ export function warumText(w: string, c: WarumKontext, druck = false): string {
       return `${v} wählt in der Stunde – keine Befragung`
     case 'leicht':
       return 'leicht und ohne Förderziel – für die Beziehung'
+    case 'gelockert':
+      // Lockerungsleiter des Planers (T-M3): Alter, Layout und Vorsicht werden nie gelockert
+      return 'gelockert: ' + (({ phase: 'aus der Nachbarphase', ziel: 'Ziel aus demselben Bereich', wiederholt: 'kommt in der Folge schon vor', gemacht: 'kürzlich gemacht (Sperre 21 statt 42 Tage)', gruppe: 'Gruppenaktivität, so mit einem Kind' } as Record<string, string>)[rest[0]] ?? rest[0]) + ' – zu wenig anderes Passendes'
     case 'ziel': {
       const z = c.profil.ziele.find((x) => x.code === rest[0])
       const q = z ? QUELLE_ZIEL[z.quelle] ?? '' : ''
@@ -63,8 +66,6 @@ export function warumText(w: string, c: WarumKontext, druck = false): string {
     }
     case 'erkundung':
       return `Neu ausprobiert – mal etwas anderes, damit ${v} nicht immer dasselbe bekommt`
-    case 'gelockert':
-      return 'Gelockert: ' + rest.join(':')
     case 'praxis':
       return 'Aus der Praxis'
     default:

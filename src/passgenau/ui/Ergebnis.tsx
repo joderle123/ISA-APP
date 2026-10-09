@@ -117,6 +117,7 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
           {s.erkundung && <Pill art="erk">neu ausprobiert</Pill>}
           {ritual && <Pill>Ritual</Pill>}
           {nurDe && <Pill art="warn">nur DE</Pill>}
+          {s.warum?.some((w) => w.startsWith('gelockert:')) && <Pill art="warn">gelockert</Pill>}
           {ueberarbeitet && <Pill art="warn">überarbeitet</Pill>}
         </span>
         <h3>{titel}</h3>
