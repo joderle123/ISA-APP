@@ -7,7 +7,7 @@ import { teilenErlaubt, usePg, useProfil, type Ort } from './zustand'
 import { Ic } from './zeichen'
 import { Daumen, FettCodes, HeikelBanner, Pill, RolleBadge, VersionsBanner, Warum } from './Teile'
 import { BlattAnsicht } from './Vorschau'
-import { istBlattSchritt, minutenVon, warumListe } from './anzeige'
+import { istBlattSchritt, minutenVon, teilText, warumListe } from './anzeige'
 import { PHASE_NAME, TF_NAME, datumKurz } from './texte'
 import { ergebnisText } from './Start'
 
@@ -117,7 +117,7 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
           {s.erkundung && <Pill art="erk">neu ausprobiert</Pill>}
           {ritual && <Pill>Ritual</Pill>}
           {nurDe && <Pill art="warn">nur DE</Pill>}
-          {s.warum?.some((w) => w.startsWith('gelockert:')) && <Pill art="warn">gelockert</Pill>}
+          {s.gelockert && <Pill art="warn">gelockert</Pill>}
           {ueberarbeitet && <Pill art="warn">überarbeitet</Pill>}
         </span>
         <h3>{titel}</h3>
@@ -143,6 +143,7 @@ function SchrittKarte({ s, i, nr }: { s: PlanSchritt; i: number; nr: number }) {
           </div>
         )}
         <Warum texte={warumListe(s.warum, wc)} />
+        {s.hinweis && !(s.warum ?? []).includes(s.hinweis) && <p className="pg-leise pg-klein pg-m0">{s.hinweis}</p>}
         <Hinweise e={e} />
       </div>
     </article>
@@ -161,7 +162,7 @@ function BlattKarte({ s, nr }: { s: PlanSchritt; nr: number }) {
   if (!bl) return null
   const eintraege = bl.bausteine.map((b) => (pg.katalog ? K.eintrag(pg.katalog, b.ref) : undefined))
   const quellen = [...new Set(eintraege.map((e) => (e?.typ === 'baustein' ? e.quelle.nr : '')).filter((x) => x && !/^[PWF]-/.test(x)))]
-  const arten = eintraege.map((e) => (e ? K.textVon(e, p.sprache.blatt).text : '?'))
+  const arten = bl.bausteine.map((b) => teilText(pg.katalog, b.ref, p.sprache.blatt, b.t).titel)
   return (
     <article className="pg-schritt blatt">
       <div className="zeit">
@@ -426,15 +427,15 @@ export function Ergebnis() {
               <ul className="pg-bliste">
                 {s.blatt.bausteine.map((b, i) => {
                   const e = pg.katalog ? K.eintrag(pg.katalog, b.ref) : undefined
-                  const tx = e ? K.textVon(e, p.sprache.blatt) : null
-                  const titel = tx?.titel ?? b.t ?? b.ref
+                  const tx = teilText(pg.katalog, b.ref, p.sprache.blatt, b.t)
+                  const titel = tx.titel
                   return (
                     <li key={i + b.ref}>
                       <button type="button" className="haupt" onClick={() => pg.setDlg({ art: 'ersetzen', ort: { sitzung: s.nr, blatt: i } })} aria-label={`Blatt-Teil ${i + 1}: ${titel} – antippen für Alternativen`}>
-                        <span className="art">{tx?.text}</span>
+                        {tx.art && <span className="art">{tx.art}</span>}
                         <span className="bt">
                           <FettCodes t={titel} />
-                          <small>aus „{tx?.quelle}“{p.sprache.blatt === 'fr' && e && !e.sprache.fr ? ' · nur DE' : ''}</small>
+                          <small>{tx.quelle ? `aus „${tx.quelle}“` : tx.text}{p.sprache.blatt === 'fr' && e && !e.sprache.fr ? ' · nur DE' : ''}</small>
                         </span>
                       </button>
                       <Daumen schluessel={`${plan.id}:${s.nr}:b${i}:${b.ref}`} titel={titel} eintrag={e} ort={{ sitzung: s.nr }} onErsetzen={() => pg.setDlg({ art: 'ersetzen', ort: { sitzung: s.nr, blatt: i } })} />

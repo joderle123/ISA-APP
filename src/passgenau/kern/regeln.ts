@@ -248,6 +248,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
 }
 
 export function gemachtVor(e: KatalogEintrag, c: Kontext): number | null {
+  // eigene Schritte des Kerns (Platz des Blatts, Pause, „einfach da sein“) sind nie „schon gemacht“
+  if (e.id.startsWith('pg:')) return null
   const ids = e.typ === 'baustein' ? [`blatt:${e.quelle.blatt}`, e.id] : e.id.startsWith('m:') ? [e.id, `material:${e.id.split(':')[1]}`] : e.id.startsWith('c:') ? [e.id, `crew:${e.id.slice(2)}`] : [e.id]
   let best: number | null = null
   for (const id of ids) {

@@ -87,7 +87,8 @@ export function V(e: KatalogEintrag, v: Vorlieben, heute: string, prior?: Record
     const k = ohneKind ? null : vorliebe(v, 'kind', key, heute, prior)
     const i = vorliebe(v, 'ich', key, heute)
     // Team nur für Bausteine und Vorlagen (6.9 speichert nur diese Zähler)
-    const t = key.startsWith('baustein:') ? vorliebe(v, 'team', key, heute) : null
+    // Team: der Hub zählt hub-weit nur Merkmale (format:…, E-M10), Bausteine nur in alten Zählern
+    const t = key.startsWith('baustein:') || key.startsWith('format:') ? vorliebe(v, 'team', key, heute) : null
     const zaehler = EBENE_GEWICHT.kind * (k?.c ?? 0) * (k?.roh ?? 0) + EBENE_GEWICHT.ich * i.c * i.roh + EBENE_GEWICHT.team * (t?.c ?? 0) * (t?.roh ?? 0)
     const nenner = EBENE_GEWICHT.kind * (k?.c ?? 0) + EBENE_GEWICHT.ich * i.c + EBENE_GEWICHT.team * (t?.c ?? 0) + 0.1
     summe += g * (zaehler / nenner)
@@ -341,7 +342,8 @@ function schluesselText(k: Katalog, key: string, sprache: Sprache = 'de'): strin
 
 /** Die stärksten Merkmale einer Ebene in Alltagssprache (fünf positive, fünf negative). Unter fünf Rückmeldungen
  *  „noch unklar“, nie „eher nicht“, sondern „braucht Unterstützung“ (P10, T-S3f). */
-export function gelernt(v: Vorlieben, ebene: 'kind' | 'ich' | 'team', k: Katalog): { text: string; wert: number; n: number }[] {
+/** „Was Passgenau gelernt hat“ (6.7): die stärksten Merkmale in Alltagssprache; `schluessel` zum Zurücksetzen je Merkmal. */
+export function gelernt(v: Vorlieben, ebene: 'kind' | 'ich' | 'team', k: Katalog): { text: string; wert: number; n: number; schluessel: string }[] {
   const heute = new Date().toISOString().slice(0, 10)
   const daten: Record<string, unknown> = ebene === 'kind' ? (v.kind?.z ?? {}) : ebene === 'ich' ? v.ich.z : (v.team?.z ?? {})
   const liste = Object.keys(daten).filter((key) => !key.startsWith('meta:')).map((key) => {
@@ -355,7 +357,7 @@ export function gelernt(v: Vorlieben, ebene: 'kind' | 'ich' | 'team', k: Katalog
     const gut = Math.round(x.a)
     const urteil = n < 5 ? 'noch unklar' : x.p > 0 ? 'klappt meistens' : 'braucht Unterstützung'
     const text = ebene === 'ich' ? `${schluesselText(k, x.key)}: ${x.p > 0 ? 'nimmst du oft' : 'nimmst du selten'}` : `${schluesselText(k, x.key)}: ${urteil}${n >= 5 ? ` – ${gut} von ${n}` : ''}`
-    return { text, wert: runde(x.p, 2), n }
+    return { text, wert: runde(x.p, 2), n, schluessel: x.key }
   })
 }
 

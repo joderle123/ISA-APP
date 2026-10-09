@@ -2,8 +2,8 @@
 // Passgenau: Einzelstunden für ein Kind, aus dem, was der Hub schon weiß.
 //   #passgenau=<ref>[&weg=gruendlich|schnell|leicht][&ziel=V-21]
 // Ohne Antwort des Hubs (1,5 s): „Ohne Kind planen“. Rechnen tut der Kern
-// (src/passgenau/ui/kern.ts → bis zum Einbau die Attrappe), die Brücke zum Hub
-// steckt in src/passgenau/ui/hub.ts.
+// (src/passgenau/kern über src/passgenau/ui/kern.ts), die Brücke zum Hub steckt in
+// src/passgenau/ui/hub.ts (Protokoll: src/passgenau/PROTOKOLL.md).
 // ---------------------------------------------------------------------------
 import '../passgenau/ui/passgenau.css'
 import { Component, useEffect, type ReactNode } from 'react'

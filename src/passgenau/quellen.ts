@@ -84,30 +84,27 @@ export function quellenAus(roh: {
 
 let laden: Promise<Quellen> | null = null
 
-/** Alle Quellen (einmal geladen, danach aus dem Speicher). */
+/** Alle Quellen (einmal geladen, danach aus dem Speicher). Die Blätter kommen ungefiltert aus src/data/blaetter/dateien.ts
+ *  (dieselben Rohdaten, die die Toolbox ohnehin entpackt), die übrigen Passgenau-Daten aus ./daten (komprimiert, erst jetzt). */
 export function ladeQuellen(): Promise<Quellen> {
   laden ??= (async () => {
     // die Globs stehen hier (nicht oben im Modul), damit Node-Skripte die Typen und quellenAus nutzen können
-    const BLATT_DATEIEN = import.meta.glob<Blatt[]>('../data/blaetter/*.json', { import: 'default' })
     const KURS_DATEIEN = import.meta.glob<{ einheiten?: KursEinheit[] }>('../data/kurs/*.json', { import: 'default' })
-    const INHALT_DATEIEN = import.meta.glob<unknown>('../data/passgenau/inhalte/*.json', { import: 'default' })
-    const name = (pfad: string) => pfad.split('/').pop() ?? pfad
-    const [blattDateien, kursDateien, inhalte, ff, ffAnnexe, materialien, crew] = await Promise.all([
-      Promise.all(Object.entries(BLATT_DATEIEN).map(async ([p, lade]) => [name(p), await lade()] as const)).then((l) => Object.fromEntries(l)),
+    const [blattDateien, kursDateien, daten, materialien] = await Promise.all([
+      import('../data/blaetter/dateien').then((m) => m.blattDateien),
       Promise.all(Object.values(KURS_DATEIEN).map((lade) => lade())),
-      Promise.all(Object.entries(INHALT_DATEIEN).map(async ([p, lade]) => ({ datei: name(p), daten: await lade() }))),
-      import('../data/foerderfach/einheiten-7e.json').then((m) => (m.default as unknown as { einheiten: FfEinheit[] }).einheiten),
-      import('../data/foerderfach/annexe/einheiten-7e.json').then((m) => (m.default as unknown as { einheiten: FfEinheit[] }).einheiten),
+      import('./daten').then((m) => m.ladeDaten()),
       import('../data/materials').then((m) => m.allMaterials),
-      import('../data/passgenau/crew.json').then((m) => m.default as unknown as CrewKatalog),
     ])
+    const ff = (daten.ff as { einheiten: FfEinheit[] }).einheiten
+    const ffAnnexe = (daten.ffAnnexe as { einheiten: FfEinheit[] }).einheiten
     return quellenAus({
       blattDateien,
       kurs: kursDateien.flatMap((d) => d.einheiten ?? []),
       foerderfach: [...ff, ...ffAnnexe.map((e) => ({ ...e, annexe: true }))],
       materialien,
-      crew,
-      inhalte: inhalte.sort((a, b) => a.datei.localeCompare(b.datei)),
+      crew: daten.crew as CrewKatalog,
+      inhalte: daten.inhalte,
     })
   })()
   laden.catch(() => {

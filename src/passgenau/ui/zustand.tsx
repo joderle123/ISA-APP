@@ -1,7 +1,7 @@
 // Passgenau – Zustand der Oberfläche: Verbindung zum Hub, Profil mit Korrekturen, Plan, Vorlieben, Ereignisse,
 // Dialoge. Alle Ansichten lesen ihn über usePg(). Rechnen tut der Kern (./kern), speichern der Hub (./hub).
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
-import type { Auftrag, Ereignis, KatalogEintrag, Plan, PraxisVorlage, Profil, Rueckmeldung, Sprache, Stufe, VorliebenKind, VorliebenTeam } from '../typen'
+import type { Auftrag, Ereignis, KatalogEintrag, Plan, PraxisVorlage, Profil, Rueckmeldung, Sprache, Stufe, VorliebenKind } from '../typen'
 import * as K from './kern'
 import * as hub from './hub'
 import { laden as vorliebenLaden, sichern as vorliebenSichern, type FachkraftVorlieben, alsVorlage } from './vorlieben'
@@ -20,8 +20,6 @@ export interface Korrekturen {
   zugang?: Partial<Pick<Profil['zugang'], 'lesen' | 'schreiben' | 'bild' | 'tempo' | 'struktur'>>
   stufe?: Stufe
   sprache?: Sprache
-  /** „nur Französisch“ statt „Französisch bevorzugt, Deutsch möglich“ (T-M4) */
-  nurFr?: boolean
   woerter?: boolean
   interessen?: string[]
   frei?: Record<string, boolean>
@@ -57,7 +55,7 @@ export interface Hinweis {
   knopf?: { label: string; aktion: () => void }
 }
 
-type ProfilRoh = hub.ProfilVomHub & { team?: VorliebenTeam | null }
+type ProfilRoh = hub.ProfilVomHub
 
 const VORSICHT_ALLE = ['familie', 'trauer', 'koerper', 'heikel', 'reiz', 'trauma'] as const
 const HILFT_ALLE = ['stundenleiste', 'bewegungspausen', 'reizarm', 'bildplan'] as const
@@ -132,7 +130,7 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
   const [startZiel, setStartZiel] = useState<string | null>(null)
   const [dlg, setDlg] = useState<Dialog | null>(null)
   const [hinweis, setHinweisZustand] = useState<Hinweis | null>(null)
-  const [praxis, setPraxis] = useState<{ laedt: boolean; liste: PraxisVorlage[]; fehler: string | null; geladen: boolean }>({ laedt: false, liste: [], fehler: null, geladen: false })
+  const [praxis, setPraxis] = useState<{ laedt: boolean; liste: PraxisVorlage[]; zurueckgezogen: string[]; fehler: string | null; geladen: boolean }>({ laedt: false, liste: [], zurueckgezogen: [], fehler: null, geladen: false })
   const [rueckgaengig, setRueckgaengig] = useState<Plan[]>([])
   const offen = useRef<Ereignis[]>([])
   const letzterFlush = useRef(0)
@@ -146,9 +144,13 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
   const darfRueckmelden = hubDa && !!ref && !!profil?.rechte.rueckmelden && version.speichern
   const lernenKind = schalter.lernen && !ohneKind && profil?.lernen !== false
   const ich = { name: hallo?.ich?.name ?? (nutzer.name || 'ich'), team: hallo?.ich?.team ?? '' }
-  const kuratieren = !!hallo?.rechte.kuratieren || nutzer.rolle === 'admin' || nutzer.rolle === 'responsable'
+  const kuratieren = !!hallo?.rechte.kuratieren
+  /** gedruckt ohne Schreibrecht: der Hub legt den Plan in den persönlichen Tresor (P7) */
+  const darfTresor = hubDa && !!ref && !!profil?.rechte.rueckmelden && version.speichern
 
-  const refs = useWert({ vor, ref, plan, profil, katalog, darfSpeichern, gespeichert, lernenKind })
+  const refs = useWert({ vor, ref, plan, profil, roh, katalog, darfSpeichern, darfTresor, gespeichert, lernenKind })
+  /** zuletzt an den Hub geschickter Stand der Korrekturen (nur Geändertes wird gesendet) */
+  const korrGesendet = useRef<Korrekturen>({})
   const druckRef = useWert(druck)
   const [daumenStand, setDaumenStand] = useState<Record<string, 'hoch' | 'runter'>>({})
 
@@ -234,11 +236,14 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
           setRef(r)
           setOhneKind(false)
           setRoh(p)
-          const k = (p.kind?.korrekturen ?? {}) as Korrekturen
+          // gespeicherte Korrekturen (PROTOKOLL.md, profil.kind): der Hub hat sie schon angewandt – außer der Abwahl von
+          // Zielen und Themen, die gilt erst hier
+          const k = hub.korrekturenAusHub(p.kind)
+          korrGesendet.current = k
           setKorr(k)
           setDruck((d) => ({ ...d, vorname: !!p.kind?.vorname }))
-          setVor((v) => ({ ...v, kind: p.vorlieben ?? null, team: p.team ?? null }))
-          setVerlauf({ plaene: p.verlauf?.plaene ?? [], ereignisse: p.verlauf?.ereignisse ?? [] })
+          setVor((v) => ({ ...v, kind: p.lernen === false ? null : (p.vorlieben ?? null), team: p.team ?? null }))
+          setVerlauf({ plaene: Array.isArray(p.verlauf?.plaene) ? p.verlauf!.plaene! : [], ereignisse: [] })
           setStartZiel(startHash?.ziel ?? null)
           fertig = true
           setStatus('bereit')
@@ -268,14 +273,17 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
         if (korrTimer.current) window.clearTimeout(korrTimer.current)
         korrTimer.current = window.setTimeout(() => {
           const r = refs.current
-          if (!r.ref || !r.darfSpeichern) return
-          hub.vorlieben(r.ref, { kind: { korrekturen: neu as Record<string, unknown>, interessen: neu.interessen, vorname: druckRef.current.vorname } }).catch(() => {})
+          if (!r.ref || !r.darfSpeichern || !r.roh) return
+          const aenderungen = hub.korrekturenFuerHub(korrGesendet.current, neu, r.roh)
+          if (!Object.keys(aenderungen).length) return
+          korrGesendet.current = neu
+          hub.vorlieben(r.ref, aenderungen).catch(() => hinweisZeigen('Korrektur nicht beim Kind gespeichert – sie gilt für diese Planung.', 'warn'))
         }, 700)
         return neu
       })
       if (meldung) hinweisZeigen(meldung + (refs.current.darfSpeichern ? '' : ohneKind ? '' : ' (gilt nur für diese Planung – kein Schreibrecht)'))
     },
-    [druckRef, hinweisZeigen, ohneKind, refs],
+    [hinweisZeigen, ohneKind, refs],
   )
 
   // --- Ereignisse sammeln, gebündelt schreiben (T-M9) ---------------------------------------------------------
@@ -402,31 +410,35 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
   const planSichern = useCallback(
     async (p: Plan, grund: 'knopf' | 'druck' | 'gehalten', still = false): Promise<boolean> => {
       const r = refs.current
-      if (!r.ref || ohneKind || !hallo) {
+      const tresor = grund === 'druck' && !r.darfSpeichern && r.darfTresor
+      if (!r.ref || ohneKind || !hallo || (!r.darfSpeichern && !tresor)) {
         if (grund === 'knopf') {
           textDatei(JSON.stringify({ v: 1, passgenau: 'plan', plan: p }, null, 1), `Passgenau-Plan-${p.n}-Sitzungen.json`)
-          hinweisZeigen('Ohne Hub: Plan als Datei gesichert (nur Verweise, ohne Kinddaten).')
+          hinweisZeigen(r.ref && !ohneKind ? 'Kein Schreibrecht: Plan als Datei gesichert (nur Verweise, ohne Kinddaten).' : 'Ohne Hub: Plan als Datei gesichert (nur Verweise, ohne Kinddaten).')
         }
         return false
       }
-      if (!r.darfSpeichern) {
-        // Ohne Schreibrecht: Plan im persönlichen Tresor (localStorage der Toolbox)
-        setVor((v) => {
-          const ich = v.ich as FachkraftVorlieben & { plaene?: Plan[] }
-          return { ...v, ich: { ...ich, plaene: [p, ...(ich.plaene ?? []).filter((x) => x.id !== p.id)].slice(0, 10) } as FachkraftVorlieben }
-        })
-        if (!still) hinweisZeigen('Kein Schreibrecht im Dossier: Plan in deinem persönlichen Tresor gesichert.', 'info')
-        return false
-      }
-      const stapel = r.lernenKind ? offen.current.splice(0) : []
+      // Ereignisse und Kind-Vorlieben nur mit Schreibrecht (eine Dossier-Änderung, T-M9)
+      const stapel = r.lernenKind && r.darfSpeichern ? offen.current.splice(0) : []
       setSpeicherStatus({ art: 'laeuft', text: 'wird gespeichert …' })
       try {
-        await hub.speichern(r.ref, p, { ereignisse: stapel, vorlieben: r.lernenKind ? r.vor.kind : undefined, grund })
+        const erg = await hub.speichern(r.ref, p, { gedruckt: grund === 'druck', ...(stapel.length ? { ereignisse: stapel } : {}), ...(r.lernenKind && r.darfSpeichern ? { vorlieben: r.vor.kind } : {}) })
         letzterFlush.current = Date.now()
         setGespeichert((g) => ({ ...g, [p.id]: uhrzeit() }))
-        setVerlauf((v) => ({ ...v, plaene: [p, ...v.plaene.filter((x) => x.id !== p.id)] }))
-        setSpeicherStatus({ art: 'ok', text: 'Gespeichert ' + uhrzeit() })
-        if (!still) hinweisZeigen(grund === 'druck' ? 'Gedruckt und beim Kind gespeichert.' : 'Beim Kind gespeichert (verschlüsselt im Dossier).')
+        // Änderungszähler des Hubs übernehmen (sonst hält der Hub den nächsten Stand für veraltet: „konflikt“)
+        const mitRev = typeof erg.rev === 'number' ? { ...p, rev: erg.rev } : p
+        if (typeof erg.rev === 'number') setPlanZustand((alt) => (alt && alt.id === p.id ? { ...alt, rev: erg.rev } : alt))
+        setVerlauf((v) => ({ ...v, plaene: [mitRev, ...v.plaene.filter((x) => x.id !== p.id)] }))
+        setSpeicherStatus({ art: 'ok', text: (erg.ort === 'tresor' ? 'Im Tresor ' : 'Gespeichert ') + uhrzeit() })
+        if (!still)
+          hinweisZeigen(
+            erg.ort === 'tresor'
+              ? 'Gedruckt – ohne Schreibrecht liegt der Plan in deinem persönlichen Tresor im Hub.'
+              : grund === 'druck'
+                ? 'Gedruckt und beim Kind gespeichert.'
+                : 'Beim Kind gespeichert (verschlüsselt im Dossier).',
+            erg.ort === 'tresor' ? 'info' : 'ok',
+          )
         return true
       } catch (e) {
         offen.current.unshift(...stapel)
@@ -442,16 +454,19 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
     async (nr: number | 'folge') => {
       const r = refs.current
       if (!r.plan || !r.katalog || !r.profil) return
-      const opt = { sprache: r.profil.sprache.blatt, warum: !druckRef.current.ohneWarum, karten: true, ziel: druckRef.current.ziel && r.profil.alterJahre < 12, vorname: druckRef.current.vorname }
+      // „Mein Ziel“ aufs Blatt (E-M13: Vorgabe aus, bei Jugendlichen nie) steht im Plan; der Vorname kommt über profil.anrede
+      const mitZiel = druckRef.current.ziel && r.profil.alterJahre < 12
+      const plan: Plan = { ...r.plan, sitzungen: r.plan.sitzungen.map((s) => (s.blatt && (nr === 'folge' || s.nr === nr) ? { ...s, blatt: { ...s.blatt, ziel: mitZiel } } : s)) }
+      const opt = { sprache: r.profil.sprache.blatt, warum: !druckRef.current.ohneWarum, karten: true }
       hinweisZeigen('PDF wird erstellt …', 'info')
       try {
-        const blob = nr === 'folge' ? await K.pdfFolge(r.katalog, r.profil, r.plan, opt) : await K.pdfSitzung(r.katalog, r.profil, r.plan, nr, opt)
-        blobSpeichern(blob, dateiname(r.plan, nr === 'folge' ? undefined : nr))
+        const blob = nr === 'folge' ? await K.pdfFolge(r.katalog, r.profil, plan, opt) : await K.pdfSitzung(r.katalog, r.profil, plan, nr, opt)
+        blobSpeichern(blob, dateiname(plan, nr === 'folge' ? undefined : nr))
         const jetzt = new Date().toISOString().slice(0, 16)
         const neu: Plan = {
-          ...r.plan,
+          ...plan,
           gedruckt: jetzt,
-          sitzungen: r.plan.sitzungen.map((s) => (nr === 'folge' || s.nr === nr ? { ...s, gedruckt: jetzt } : s)),
+          sitzungen: plan.sitzungen.map((s) => (nr === 'folge' || s.nr === nr ? { ...s, gedruckt: jetzt } : s)),
         }
         setPlanZustand(neu)
         melde('gedruckt', { sitzung: nr === 'folge' ? null : nr, wert: 0 })
@@ -475,24 +490,33 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
   // --- Praxis ----------------------------------------------------------------------------------------------------
   const praxisLaden = useCallback(async () => {
     if (!hallo?.praxis || !schalter.teilen) {
-      setPraxis({ laedt: false, liste: [], fehler: hallo ? null : 'ohne-hub', geladen: true })
+      setPraxis({ laedt: false, liste: [], zurueckgezogen: [], fehler: hallo ? null : 'ohne-hub', geladen: true })
       return
     }
     setPraxis((p) => ({ ...p, laedt: true, fehler: null }))
     try {
       const l = await hub.praxisListe()
-      setPraxis({ laedt: false, liste: Array.isArray(l) ? l : [], fehler: null, geladen: true })
+      const zurueck = Array.isArray(l?.zurueckgezogen) ? l.zurueckgezogen : []
+      setPraxis({ laedt: false, liste: Array.isArray(l?.vorlagen) ? l.vorlagen : [], zurueckgezogen: zurueck, fehler: null, geladen: true })
+      // Rückruf (E-M9): Texte aus zurückgezogenen Vorlagen im offenen Plan zurück auf das Original
+      if (zurueck.length)
+        setPlanZustand((alt) => {
+          if (!alt) return alt
+          const x = K.vorlageZurueckgezogen(alt, zurueck)
+          if (x.geaendert) hinweisZeigen('Die Vorlage wurde zurückgezogen – ihre Texte sind wieder die Originale.', 'info')
+          return x.plan
+        })
     } catch (e) {
-      setPraxis({ laedt: false, liste: [], fehler: e instanceof Error ? e.message : 'nicht erreichbar', geladen: true })
+      setPraxis({ laedt: false, liste: [], zurueckgezogen: [], fehler: e instanceof Error ? e.message : 'nicht erreichbar', geladen: true })
     }
-  }, [hallo, schalter.teilen])
+  }, [hallo, hinweisZeigen, schalter.teilen])
 
   return {
     // Verbindung
     status, hallo, hubDa, version, schalter, fehler, ref, ohneKind, setOhneKind, kuratieren, ich, nutzer,
     speicherStatus, setSpeicherStatus, flush, stapelNehmen, stapelZurueck, setGespeichert,
     // Kind
-    katalog, roh, setRoh, profil, korr, korrektur, vorname, darfSpeichern, darfRueckmelden, lernenKind, druck, setDruck,
+    katalog, roh, setRoh, profil, korr, korrektur, vorname, darfSpeichern, darfRueckmelden, darfTresor, lernenKind, druck, setDruck,
     heikel, setHeikel, startZiel,
     // Vorlieben, Ereignisse
     vor, setVor, melde, verlauf, setVerlauf,

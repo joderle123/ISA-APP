@@ -282,7 +282,10 @@ function planSchritt(b: Bewertet, rolle: Rolle, min: number, c: Kontext, o: { ph
   const t = e.typ === 'schritt' ? e.titel : e.id
   const s: PlanSchritt = { ref: e.id, h: e.h, rolle, min, t: t.length > 60 ? t.slice(0, 59) + '…' : t, warum: warum(b, c, { phase: o.phase, nr: o.nr, ritual: o.ritual, erkundung: o.erkundung, locker: o.lockerText, rolle }) }
   if (o.erkundung) s.erkundung = true
-  if (o.lockerText) s.hinweis = o.lockerText
+  if (o.lockerText) {
+    s.hinweis = o.lockerText
+    s.gelockert = true
+  }
   else if (e.typ === 'schritt' && e.einzeltauglich === 'angepasst' && !e.einzelvariante) s.hinweis = 'Gruppenaktivität – so mit einem Kind machen'
   return s
 }

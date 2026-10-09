@@ -321,14 +321,9 @@ let laden: Promise<Katalog> | null = null
 /** Katalog laden (einmal; danach sofort aus dem Speicher). */
 export function ladeKatalog(): Promise<Katalog> {
   laden ??= (async () => {
-    const [{ ladeQuellen }, b, s, e] = await Promise.all([
-      import('../quellen'),
-      import('../../data/passgenau/bausteine.json'),
-      import('../../data/passgenau/schritte.json'),
-      import('../../data/passgenau/eldib.json'),
-    ])
-    const q = await ladeQuellen()
-    return baueKatalog(q, b.default as unknown as BausteineDatei, s.default as unknown as SchritteDatei, e.default as unknown as EldibBank)
+    const [{ ladeQuellen }, { ladeDaten }] = await Promise.all([import('../quellen'), import('../daten')])
+    const [q, d] = await Promise.all([ladeQuellen(), ladeDaten()])
+    return baueKatalog(q, d.bausteine as BausteineDatei, d.schritte as SchritteDatei, d.eldib as EldibBank)
   })()
   laden.catch(() => {
     laden = null

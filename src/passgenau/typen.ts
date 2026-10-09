@@ -257,6 +257,8 @@ export interface PlanSchritt {
   wahlkarte?: string
   /** Lockerung (T-M3) oder Hinweis zur Einzelstunde („Gruppenaktivität, so mit einem Kind“) */
   hinweis?: string
+  /** Teil wurde über die Lockerungsleiter gewählt (T-M3); der Grund steht in `hinweis` */
+  gelockert?: boolean
 }
 
 export interface BlattTeil {
@@ -431,6 +433,13 @@ export interface PraxisVorlage {
   inhalt: VorlagenInhalt
   zaehler?: TeamZaehler
   erstellt: string
+  /** höchste Belastung der Bausteine (0–2) und ob heikle Bausteine dabei sind – Freigabe bei 2/heikel nur Psychologin oder
+   *  Responsable (E-M8); vom Kern aus dem Katalog abgeleitet */
+  belastung?: 0 | 1 | 2
+  sensibel?: boolean
+  /** vom Hub: eigene Vorlage der angemeldeten Person; darf freigeben (Kuratorin) */
+  eigen?: boolean
+  darfFreigeben?: boolean
 }
 
 /** Kinderblatt, wie es der Renderer bekommt: ein synthetisches Blatt (7.5) */

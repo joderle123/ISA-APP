@@ -1,5 +1,6 @@
-// Browser-Test der Oberfläche „Passgenau“ (Toolbox, Reiter #passgenau) mit der Attrappe des Kerns und einem
-// simulierten Hub (Elternseite, die das Protokoll aus Konzept 9.2 beantwortet und jede Frage mitschreibt).
+// Browser-Test der Oberfläche „Passgenau“ (Toolbox, Reiter #passgenau) mit dem echten Kern und einem simulierten Hub
+// (Elternseite, die das Protokoll src/passgenau/PROTOKOLL.md beantwortet, Pläne merkt und jede Frage mitschreibt).
+// Die laufende Folge von Mia plant vorab der echte Kern (scripts/passgenau-ui-folge.ts), wie sie der Hub mitschickt.
 //   node scripts/passgenau-ui-test.cjs            (startet `npx vite` auf Port 5181)
 //   PG_PORT=5182 PG_BILDER=/pfad node scripts/passgenau-ui-test.cjs
 // Prüft: ohne Hub („Ohne Kind planen“, auch nach 1,5 s ohne Antwort), Start mit Kind, „Das weiß ich schon“ mit
@@ -11,7 +12,7 @@
 const path = require('path')
 const fs = require('fs')
 const http = require('http')
-const { spawn } = require('child_process')
+const { spawn, execFileSync } = require('child_process')
 process.env.PLAYWRIGHT_BROWSERS_PATH = process.env.PLAYWRIGHT_BROWSERS_PATH || '/opt/pw-browsers'
 let chromium
 try {
@@ -52,9 +53,11 @@ const PROFILE = {
     gemacht: [{ id: 'blatt:wutvulkan', am: '2026-09-24' }, { id: 'blatt:ruhig-werden-drei-uebungen', am: '2026-10-01' }],
     folge: { id: 'pl-4k2', titel: 'Wut erkennen und stoppen', n: 6, gehalten: 2 },
     vorlieben: { v: 1, prior: { 'format:bewegung': [2, 1] }, z: { 'format:bewegung': { a: 6, b: 1, t: '2026-10-02' }, 'format:comic': { a: 3, b: 0.5, t: '2026-09-25' }, 'format:schreiben': { a: 1, b: 3, t: '2026-10-02' }, 'laenge:lang': { a: 0.6, b: 2.4, t: '2026-10-02' }, 'format:rollenspiel': { a: 2, b: 1, t: '2026-09-25' }, 'format:atmen': { a: 0.4, b: 1.6, t: '2026-09-18' } }, zurueckgesetzt: null },
-    rituale: { ankommen: 'r:wetterbericht', abschluss: 'r:daumen-stern' },
+    rituale: { ankommen: 'r:wetterbericht', abschluss: 'r:staerken-stein' },
     wissen: [{ gruppe: 'alter', text: 'Klasse C3.2', quelle: 'Fiche de renseignement' }, { gruppe: 'sprache', text: 'Erstsprache Portugiesisch', quelle: 'Fiche 26-27' }, { gruppe: 'zugang', text: 'aus dem Testergebnis der Diagnostique – die Werte bleiben im Hub', quelle: 'Test', datum: '2026-03-12' }],
     rechte: { speichern: true, rueckmelden: true }, lernen: true, zugangBestaetigt: false, seed: 'kp-mia', dichte: 'reich',
+    kind: { korrekturen: {}, interessen: ['fussball', 'tiere', 'zeichnen'], vorname: false, lernen: true },
+    verlauf: { plaene: [] },
     team: { personen: 5, z: { 'baustein:k:j1-e11:4': { n: 12, hoch: 7, runter: 1, geklappt: 10, teils: 1, nicht: 1 }, 'baustein:fb:ampel-lauf': { n: 9, hoch: 5, runter: 0, geklappt: 8, teils: 0, nicht: 1 }, 'baustein:b:erst-stopp:2': { n: 15, hoch: 9, runter: 2, geklappt: 12, teils: 0, nicht: 3 } } },
   },
   'pg-noe2b8x1': {
@@ -62,7 +65,7 @@ const PROFILE = {
     sprache: { blatt: 'de', woerter: ['lb'] }, zugang: { lesen: 0, schreiben: 0, bild: 3, tempo: 'normal', struktur: 'hoch', quelle: ['alter'] },
     ziele: [{ code: 'SOZ-14', ich: 'Ich warte, bis ich an der Reihe bin.', quelle: 'pei', seit: '2026-09-22', prio: 1 }, { code: 'V-10', ich: 'Ich melde mich und warte, bis ich drankomme.', quelle: 'pei', seit: '2026-09-22', prio: 2 }],
     erreicht: ['V-1', 'V-2', 'K-3'], themen: [{ key: 'wut', art: 'vorfall', datum: '2026-10-03' }], vorsicht: [], interessen: ['autos', 'bauen', 'tiere'], wochenziel: 'Ich warte in der Reihe.', gemacht: [], folge: null,
-    vorlieben: { v: 1, z: { 'format:bewegung': { a: 3, b: 0.5, t: '2026-10-03' } }, zurueckgesetzt: null }, rituale: { ankommen: 'r:lumi-hallo', abschluss: 'r:abschiedsreim' }, rechte: { speichern: true, rueckmelden: true }, hilft: ['stundenleiste'],
+    vorlieben: { v: 1, z: { 'format:bewegung': { a: 3, b: 0.5, t: '2026-10-03' } }, zurueckgesetzt: null }, rituale: {}, rechte: { speichern: true, rueckmelden: true }, hilft: ['stundenleiste'],
   },
   'pg-ily5q0w3': {
     v: 1, ref: 'pg-ily5q0w3', erstellt: '2026-10-09T09:12:00', anrede: null, vorname: 'Ilyas', alterJahre: 14, stufen: ['ES'], layout: 'jugend',
@@ -81,20 +84,20 @@ const PROFILE = {
 const sitzung = (phase, schritte, blatt) => ({ phase, schritte, blatt })
 const PRAXIS = [
   {
-    id: 'pv-8h2', version: 2, status: 'freigegeben', titel: 'Wut stoppen mit Ampel und Bewegung', fuerWen: 'für Kinder, die in der Pause schnell explodieren', von: 'Jo · ISA', altersband: '9-11', ziele: ['V-21', 'K-26'], themen: ['wut'], formate: ['bewegung', 'denkmodell', 'comic'], dauer: 30, n: 2, sprachen: ['de'], erstellt: '2026-09',
+    id: 'pv-8h2', version: 2, status: 'freigegeben', titel: 'Wut stoppen mit Ampel und Bewegung', fuerWen: 'für Kinder, die in der Pause schnell explodieren', von: 'Jo · Annexe', altersband: '9–11', ziele: ['V-21', 'K-26'], themen: ['wut'], formate: ['bewegung', 'denkmodell', 'comic'], dauer: 30, n: 2, sprachen: ['de'], erstellt: '',
     zaehler: { n: 14, hoch: 9, runter: 1, geklappt: 7, teils: 2, nicht: 0 },
     inhalt: { weg: 'gruendlich', n: 2, dauer: 30, sitzungen: [
-      sitzung('verstehen', [{ ref: 'r:wetterbericht', h: '', rolle: 'ankommen', min: 4 }, { ref: 'm:stopp-ampel-bild:1', h: '', rolle: 'einstieg', min: 4 }, { ref: 'k:j1-e11:4', h: '', rolle: 'kern', min: 10 }, { ref: 'blatt:1', h: '', rolle: 'uebung', min: 8 }, { ref: 'r:daumen-stern', h: '', rolle: 'abschluss', min: 4 }],
-        { titel: 'Mein Stopp-Plan', bausteine: [{ ref: 'b:erst-stopp:2', h: '', ueber: { '1.felder.1.text': 'Stopp. Ich zähle bis drei.' }, ueberHerkunft: { '1.felder.1.text': 'eigen' } }, { ref: 'b:stopp-ampel:1', h: '' }, { ref: 'b:rueckblick:1', h: '' }] }),
-      sitzung('ueben', [{ ref: 'r:wetterbericht', h: '', rolle: 'ankommen', min: 4 }, { ref: 'fb:ampel-lauf', h: '', rolle: 'bewegung', min: 5 }, { ref: 'k:j1-e12:3', h: '', rolle: 'kern', min: 12 }, { ref: 'blatt:2', h: '', rolle: 'uebung', min: 5 }, { ref: 'r:daumen-stern', h: '', rolle: 'abschluss', min: 4 }],
-        { titel: 'Mein Stopp-Plan', bausteine: [{ ref: 'b:stopp-ampel:3', h: '' }, { ref: 'b:stopp-plan-pause:3', h: '' }] }),
+      sitzung('verstehen', [{ ref: 'r:wetterbericht', h: '6bf63f9f', rolle: 'ankommen', min: 4 }, { ref: 'm:alles-eine-frage-der-perspektive:0', h: '1458d604', rolle: 'einstieg', min: 5 }, { ref: 'm:die-schatztruhe-der-ruhe:1', h: '817f066c', rolle: 'kern', min: 9 }, { ref: 'pg:blatt', h: 'pgblatt1', rolle: 'uebung', min: 8 }, { ref: 'r:staerken-stein', h: '2323a34d', rolle: 'abschluss', min: 4 }],
+        { titel: 'Mein Stopp-Plan', bausteine: [{ ref: 'b:wutvulkan:1', h: '1af6f69d', ueber: { '1.items.1': 'Stopp. Ich zähle bis drei.' }, ueberHerkunft: { '1.items.1': 'eigen' } }, { ref: 'b:wutvulkan:2', h: 'e6a9d578' }, { ref: 'b:ruhig-werden-drei-uebungen:0', h: '3aa22f38' }] }),
+      sitzung('ueben', [{ ref: 'r:wetterbericht', h: '6bf63f9f', rolle: 'ankommen', min: 4 }, { ref: 'fb:wandschieben', h: '13609089', rolle: 'bewegung', min: 5 }, { ref: 'm:die-schatztruhe-der-ruhe:2', h: 'eafeefb1', rolle: 'kern', min: 12 }, { ref: 'pg:blatt', h: 'pgblatt1', rolle: 'uebung', min: 5 }, { ref: 'r:staerken-stein', h: '2323a34d', rolle: 'abschluss', min: 4 }],
+        { titel: 'Mein Stopp-Plan', bausteine: [{ ref: 'b:wutvulkan:3', h: 'ad830e23' }, { ref: 'b:ruhig-werden-drei-uebungen:1', h: '75ee5290' }] }),
     ] },
   },
-  { id: 'pv-a01', version: 1, status: 'freigegeben', titel: 'Ankommen nach einem schweren Morgen', fuerWen: 'wenn heute nichts geht', von: 'Kim · Annexe', altersband: '6-8', ziele: [], themen: [], formate: ['spiel', 'malen', 'bewegung'], dauer: 20, n: 1, sprachen: ['de'], erstellt: '2026-09', zaehler: { n: 21, hoch: 12, runter: 0, geklappt: 10, teils: 1, nicht: 1 }, inhalt: { weg: 'leicht', n: 1, dauer: 20, sitzungen: [] } },
-  { id: 'pv-c33', version: 1, status: 'freigegeben', titel: 'Gefühle benennen mit Comics', fuerWen: 'für Kinder, die lieber zeigen als reden', von: 'Lou · ISA', altersband: '9-11', ziele: ['K-26'], themen: ['wut'], formate: ['comic', 'malen'], dauer: 30, n: 1, sprachen: ['de'], erstellt: '2026-08', zaehler: { n: 11, hoch: 8, runter: 1, geklappt: 8, teils: 1, nicht: 1 }, inhalt: { weg: 'schnell', n: 1, dauer: 30, sitzungen: [] } },
-  { id: 'pv-2kd', version: 1, status: 'freigegeben', titel: 'Warten lernen mit dem Warte-Turm', fuerWen: 'für die Spielschule, Einzel oder zu zweit', von: null, altersband: '3-5', ziele: ['SOZ-14'], themen: [], formate: ['spiel', 'bewegung'], dauer: 20, n: 1, sprachen: ['de'], erstellt: '2026-09', zaehler: { n: 9, hoch: 5, runter: 0, geklappt: 6, teils: 1, nicht: 0 }, inhalt: { weg: 'schnell', n: 1, dauer: 20, sitzungen: [] } },
-  { id: 'pv-q71', version: 1, status: 'eingereicht', titel: 'Prüfungsangst: Anspannung sehen und senken', fuerWen: 'für Jugendliche vor Proben', von: 'Sam · Diagnostique', altersband: '12-14', ziele: ['K-26', 'V-22'], themen: ['angst'], formate: ['denkmodell', 'atmen', 'plan'], dauer: 45, n: 3, sprachen: ['de'], erstellt: '2026-10', zaehler: { n: 6, hoch: 3, runter: 1, geklappt: 4, teils: 1, nicht: 1 }, inhalt: { weg: 'gruendlich', n: 3, dauer: 45, sitzungen: [] } },
-  { id: 'pv-f55', version: 1, status: 'freigegeben', titel: 'Streit in der Pause klären', fuerWen: 'Konflikt-Brücke in kleinen Schritten', von: null, altersband: '9-11', ziele: ['V-18', 'SOZ-32'], themen: ['freundschaft'], formate: ['spiel', 'gespraech', 'rollenspiel'], dauer: 45, n: 6, sprachen: ['de'], erstellt: '2026-07', zaehler: { n: 4, hoch: 2, runter: 0, geklappt: 3, teils: 1, nicht: 0 }, inhalt: { weg: 'gruendlich', n: 6, dauer: 45, sitzungen: [] } },
+  { id: 'pv-a01', version: 1, status: 'freigegeben', titel: 'Ankommen nach einem schweren Morgen', fuerWen: 'wenn heute nichts geht', von: 'Kim · Annexe', altersband: '6–8', ziele: [], themen: [], formate: ['spiel', 'malen', 'bewegung'], dauer: 20, n: 1, sprachen: ['de'], erstellt: '2026-09', zaehler: { n: 21, hoch: 12, runter: 0, geklappt: 10, teils: 1, nicht: 1 }, inhalt: { weg: 'leicht', n: 1, dauer: 20, sitzungen: [] } },
+  { id: 'pv-c33', version: 1, status: 'freigegeben', titel: 'Gefühle benennen mit Comics', fuerWen: 'für Kinder, die lieber zeigen als reden', von: 'Lou · ISA', altersband: '9–11', ziele: ['K-26'], themen: ['wut'], formate: ['comic', 'malen'], dauer: 30, n: 1, sprachen: ['de'], erstellt: '2026-08', zaehler: { n: 11, hoch: 8, runter: 1, geklappt: 8, teils: 1, nicht: 1 }, inhalt: { weg: 'schnell', n: 1, dauer: 30, sitzungen: [] } },
+  { id: 'pv-2kd', version: 1, status: 'freigegeben', titel: 'Warten lernen mit dem Warte-Turm', fuerWen: 'für die Spielschule, Einzel oder zu zweit', von: null, altersband: '3–5', ziele: ['SOZ-14'], themen: [], formate: ['spiel', 'bewegung'], dauer: 20, n: 1, sprachen: ['de'], erstellt: '2026-09', zaehler: { n: 9, hoch: 5, runter: 0, geklappt: 6, teils: 1, nicht: 0 }, inhalt: { weg: 'schnell', n: 1, dauer: 20, sitzungen: [] } },
+  { id: 'pv-q71', version: 1, status: 'eingereicht', titel: 'Prüfungsangst: Anspannung sehen und senken', fuerWen: 'für Jugendliche vor Proben', von: 'Sam · Diagnostique', altersband: '12–14', ziele: ['K-26', 'V-22'], themen: ['angst'], formate: ['denkmodell', 'atmen', 'plan'], dauer: 45, n: 3, sprachen: ['de'], erstellt: '2026-10', zaehler: { n: 6, hoch: 3, runter: 1, geklappt: 4, teils: 1, nicht: 1 }, inhalt: { weg: 'gruendlich', n: 3, dauer: 45, sitzungen: [] } },
+  { id: 'pv-f55', version: 1, status: 'freigegeben', titel: 'Streit in der Pause klären', fuerWen: 'Konflikt-Brücke in kleinen Schritten', von: null, altersband: '9–11', ziele: ['V-18', 'SOZ-32'], themen: ['freundschaft'], formate: ['spiel', 'gespraech', 'rollenspiel'], dauer: 45, n: 6, sprachen: ['de'], erstellt: '2026-07', zaehler: { n: 4, hoch: 2, runter: 0, geklappt: 3, teils: 1, nicht: 0 }, inhalt: { weg: 'gruendlich', n: 6, dauer: 45, sitzungen: [] } },
 ]
 
 // Der simulierte Hub: öffnet die Toolbox (Rahmen oder eigener Tab) und beantwortet ihre Fragen.
@@ -106,9 +109,11 @@ const PROFILE = ${JSON.stringify(PROFILE)};
 const PRAXIS = ${JSON.stringify(PRAXIS)};
 const q = new URLSearchParams(location.search);
 window.__ops = [];
+window.__plaene = {};
 let ziel = null;
-function antwort(quelle, n, ok, erg, grund) {
-  quelle.postMessage({ cdsePassgenau: 1, antwort: true, n, ok, erg, grund }, location.origin);
+let rev = 0;
+function antwort(quelle, n, ok, erg, grund, text) {
+  quelle.postMessage({ cdsePassgenau: 1, antwort: true, n, ok, erg, grund, text }, location.origin);
 }
 window.addEventListener('message', (ev) => {
   const d = ev.data;
@@ -117,22 +122,26 @@ window.addEventListener('message', (ev) => {
   window.__ops.push({ op: d.op, arg: d.arg });
   const a = d.arg || {};
   switch (d.op) {
-    case 'hallo': return antwort(ev.source, d.n, true, { version: '2026-10-09', schema: 1, hub: { build: '2026-10-09', proto: 1, planV: 1, profilV: 1 }, rechte: { planen: true, speichern: true, rueckmelden: true, kuratieren: true }, praxis: true, ich: { name: 'Nele', team: 'ISA', funktion: 'Psychologin' } });
-    case 'profil': return PROFILE[a.ref] ? antwort(ev.source, d.n, true, PROFILE[a.ref]) : antwort(ev.source, d.n, false, null, 'unbekannte ref');
-    case 'speichern': return antwort(ev.source, d.n, true, { planId: a.plan && a.plan.id });
-    case 'rueckmeldung': return antwort(ev.source, d.n, true, { notizId: 'n-' + window.__ops.length });
+    case 'hallo': return antwort(ev.source, d.n, true, { version: '2026-10-09', schema: 1, hub: { build: '2026-10-09', proto: 1, planV: 1, profilV: 1 }, rechte: { planen: true, speichern: true, rueckmelden: true, kuratieren: true }, praxis: true,
+      schalter: { an: true, lernen: true, teilen: true, freigabe: true, loeschenNachMonaten: 24 }, ich: { name: 'Nele', team: 'Annexe', funktion: 'Psychologin' },
+      chips: [['mitgemacht', 'Hat mitgemacht'], ['pause', 'Brauchte eine Pause'], ['unruhig', 'War unruhig'], ['erzaehlt', 'Hat von sich erzählt'], ['neues', 'Hat etwas Neues ausprobiert'], ['hilfe', 'Hat Hilfe angenommen'], ['freude', 'Hatte sichtlich Freude'], ['konzentriert', 'War konzentriert dabei'], ['muede', 'War müde'], ['abgebrochen', 'Hat eine Aufgabe abgebrochen'], ['rueckzug', 'Hat sich zurückgezogen'], ['streit', 'Hatte Streit mit anderen']].map(([key, text]) => ({ key, text })),
+      interessen: [], hilft: ['stundenleiste', 'bewegungspausen', 'reizarm', 'bildplan'] });
+    case 'profil': return PROFILE[a.ref] ? antwort(ev.source, d.n, true, PROFILE[a.ref]) : antwort(ev.source, d.n, false, null, 'ref', 'Die Verknüpfung zum Kind ist abgelaufen.');
+    case 'speichern': window.__plaene[a.plan.id] = a.plan; return antwort(ev.source, d.n, true, { planId: a.plan && a.plan.id, rev: ++rev, ort: 'dossier' });
+    case 'rueckmeldung': if (a.plan) window.__plaene[a.plan.id] = a.plan; return antwort(ev.source, d.n, true, { notizId: 'n' + window.__ops.length, planId: a.planId, rev: ++rev });
     case 'vorlieben': return antwort(ev.source, d.n, true, { ok: true });
-    case 'praxis-liste': return antwort(ev.source, d.n, true, PRAXIS);
+    case 'praxis-liste': return antwort(ev.source, d.n, true, { vorlagen: PRAXIS, zurueckgezogen: [] });
     case 'praxis-pruefen': {
       const treffer = [];
-      (a.entwurf.inhalt.sitzungen || []).forEach((s, si) => (s.blatt ? s.blatt.bausteine : []).forEach((b, bi) => Object.entries(b.ueber || {}).forEach(([pf, t]) => {
-        const i = t.indexOf('Weber'); if (i >= 0) treffer.push({ pfad: 's' + (si + 1) + '.b' + bi + '.' + pf, von: Math.max(0, i - 5), bis: i + 5, art: 'name' });
-      })));
+      (a.entwurf.inhalt.sitzungen || []).forEach((s, si) => {
+        (s.schritte || []).forEach((x, xi) => Object.entries(x.ueber || {}).forEach(([pf, t]) => { const i = t.indexOf('Weber'); if (i >= 0) treffer.push({ pfad: 'inhalt.sitzungen.' + si + '.schritte.' + xi + '.ueber.' + pf, von: i, bis: i + 5, art: 'person' }); }));
+        (s.blatt ? s.blatt.bausteine : []).forEach((b, bi) => Object.entries(b.ueber || {}).forEach(([pf, t]) => { const i = t.indexOf('Weber'); if (i >= 0) treffer.push({ pfad: 'inhalt.sitzungen.' + si + '.blatt.bausteine.' + bi + '.ueber.' + pf, von: i, bis: i + 5, art: 'person' }); }));
+      });
       return antwort(ev.source, d.n, true, { treffer });
     }
     case 'praxis-teilen': return antwort(ev.source, d.n, true, { id: 'pv-neu1', version: 1, status: 'eingereicht' });
     case 'praxis-signal': return antwort(ev.source, d.n, true, { ok: true });
-    case 'praxis-kuratieren': return antwort(ev.source, d.n, true, { status: a.aktion === 'freigeben' ? 'freigegeben' : a.aktion === 'ausblenden' ? 'ausgeblendet' : 'offiziell' });
+    case 'praxis-kuratieren': return antwort(ev.source, d.n, true, { status: a.aktion === 'freigeben' || a.aktion === 'einblenden' ? 'freigegeben' : a.aktion === 'ablehnen' ? 'abgelehnt' : 'ausgeblendet' });
     default: return antwort(ev.source, d.n, false, null, 'unbekannt');
   }
 });
@@ -155,6 +164,11 @@ async function warteAufServer() {
 }
 
 async function main() {
+  // Mias laufende Folge (6 Sitzungen, 2 gehalten) – geplant vom echten Kern, wie der Hub sie in profil.verlauf schickt
+  const mia = PROFILE['pg-mia7f3k9q2m']
+  const folge = JSON.parse(execFileSync('npx', ['tsx', '--tsconfig', 'tsconfig.scripts.json', 'scripts/passgenau-ui-folge.ts', JSON.stringify({ profil: mia, n: 6, gehalten: 2, id: 'pl-4k2', datum: '2026-10-02' })], { cwd: path.join(__dirname, '..'), encoding: 'utf8', maxBuffer: 1 << 26 }))
+  mia.verlauf = { plaene: [folge] }
+  mia.folge = { id: folge.id, titel: folge.titel, n: folge.n, gehalten: 2 }
   const server = spawn('npx', ['vite', '--port', String(PORT), '--strictPort', '--host', '127.0.0.1'], { cwd: path.join(__dirname, '..'), stdio: ['ignore', 'pipe', 'pipe'], detached: true })
   let log = ''
   server.stdout.on('data', (d) => (log += d))
@@ -251,8 +265,10 @@ async function main() {
       await dlg(tb).getByRole('button', { name: 'Abbrechen' }).click()
       await ueberlauf(tb, 'Das weiß ich schon')
       await tb.waitForTimeout(900)
-      const korr = await hub.evaluate(() => window.__ops.filter((o) => o.op === 'vorlieben').map((o) => o.arg.aenderungen.kind && o.arg.aenderungen.kind.korrekturen).filter(Boolean).pop())
-      pruefe(korr && korr.zugangBestaetigt && korr.hilft && korr.hilft.stundenleiste === true && korr.vorsicht && korr.vorsicht.reiz === true, 'Korrekturen gehen gebündelt an den Hub')
+      const vorlOps = await hub.evaluate(() => window.__ops.filter((o) => o.op === 'vorlieben').map((o) => o.arg.aenderungen))
+      const korr = Object.assign({}, ...vorlOps.map((x) => x.korrekturen || {}))
+      pruefe(korr.zugangBestaetigt === true && Array.isArray(korr.hilft) && korr.hilft.includes('stundenleiste') && korr.vorsicht && korr.vorsicht.an.includes('reiz') && (!korr.ziele || korr.ziele.aus.length === 0), 'Korrekturen gehen gebündelt an den Hub (gespeicherte Form, nur Geändertes)')
+      pruefe(vorlOps.some((x) => Array.isArray(x.interessen) && x.interessen.includes('pferde')), 'Interessen gehen an den Hub')
       pruefe(!(await tb.content()).includes('test:2026'), 'keine Rohquelle im Text')
 
       // 4. Weg 1: gründlich
@@ -284,7 +300,9 @@ async function main() {
       // Sitzung mit „Vorher klären“: Beachten, Vorbereitung, Druckmaterial je Schritt
       await tb.locator('.pg-fs', { hasText: 'Vorher klären' }).first().click()
       pruefe(await tb.getByText(/Vorbereitung:/).first().isVisible(), 'Hinweis „Vorbereitung“')
-      pruefe(await tb.getByText(/druckt mit:/).first().isVisible(), 'Druckmaterial je Schritt')
+      // Druckmaterial je Schritt (T-M12) gibt es nur, wenn ein Schritt der Folge Bildkarten o. Ä. mitbringt
+      const druckt = await tb.getByText(/druckt mit:/).count()
+      console.log(`  (Sitzung mit „Vorher klären“: ${druckt ? 'mit' : 'ohne'} Druckmaterial)`)
       await tb.locator('.pg-fs').first().click()
 
       // 5. Ersetzen im Ablauf
@@ -312,7 +330,7 @@ async function main() {
       await tb.locator('.pg-schritt').nth(2).locator('button[aria-label^="Daumen hoch"]').click()
 
       // 7. Blatt-Teil ersetzen (Liste)
-      const bl0 = tb.locator('.pg-bliste li').first()
+      const bl0 = tb.locator('.pg-bliste li').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ }).first()
       const bl0t = await bl0.locator('.bt').innerText()
       await bl0.locator('.haupt').click()
       await dlg(tb).waitFor()
@@ -321,7 +339,7 @@ async function main() {
       if (await blAlt.count()) {
         await blAlt.first().click()
         await tb.waitForTimeout(200)
-        pruefe((await tb.locator('.pg-bliste li').first().locator('.bt').innerText()) !== bl0t, 'Blatt-Teil ersetzt (Liste)')
+        pruefe(!(await tb.locator('.pg-bliste li .bt').allInnerTexts()).includes(bl0t), 'Blatt-Teil ersetzt (Liste)')
       } else {
         await dlg(tb).getByRole('button', { name: 'Behalten' }).click()
         pruefe(false, 'keine Alternative für Blatt-Teil')
@@ -333,21 +351,29 @@ async function main() {
       await tb.waitForTimeout(600)
       pruefe(await tb.locator('.pg-sbar').first().isVisible(), 'Seitenkontrolle als Balken')
       await foto(tb, '10-vorschau-plan-und-blatt')
-      const teil = tb.locator('.pga-huelle .pga-b.klick').first()
-      if (await teil.count()) {
-        await teil.click()
-        await dlg(tb).waitFor()
-        await foto(tb, '11-ersetzen-in-vorschau', { voll: false })
-        const e2 = dlg(tb).locator('.pg-alt:not(.jetzt) button', { hasText: 'Ersetzen' })
-        if (await e2.count()) await e2.first().click()
-        else await dlg(tb).getByRole('button', { name: 'Behalten' }).click()
-        pruefe(true, 'Antippen in der Vorschau')
-      } else {
-        await tb.locator('.pg-teileliste button').first().click()
-        await dlg(tb).waitFor()
-        await dlg(tb).getByRole('button', { name: 'Behalten' }).click()
-        pruefe(true, 'Antippen in der Teileliste (PDF-Vorschau)')
-      }
+      // das echte PDF (pdf.js), darüber die Tippflächen aus den Layoutdaten des Kerns
+      await tb.locator('.pg-pdfseite img').first().waitFor({ timeout: 60000 })
+      const nSeiten = await tb.locator('.pg-pdfseite').count()
+      const nPlan = await tb.locator('.pg-tippflaeche[aria-label^="Plan:"]').count()
+      const nBlatt = await tb.locator('.pg-tippflaeche[aria-label^="Blatt:"]').count()
+      pruefe(nSeiten >= 2 && nPlan >= 3 && nBlatt >= 1, `PDF-Seiten mit Tippflächen (${nSeiten} Seiten, ${nPlan} Plan, ${nBlatt} Blatt)`)
+      await foto(tb, '10-vorschau-plan-und-blatt')
+      const vorherT = await tb.locator('.pg-tippflaeche[aria-label^="Blatt:"]').first().getAttribute('aria-label')
+      await tb.locator('.pg-tippflaeche[aria-label^="Blatt:"]').first().click()
+      await dlg(tb).waitFor()
+      pruefe(await dlg(tb).getByRole('heading', { name: 'Baustein ersetzen' }).isVisible(), 'Antippen im PDF öffnet „Baustein ersetzen“')
+      await foto(tb, '11-ersetzen-in-vorschau', { voll: false })
+      const e2 = dlg(tb).locator('.pg-alt:not(.jetzt) button', { hasText: 'Ersetzen' })
+      if (await e2.count()) {
+        await e2.first().click()
+        await tb.locator('.pg-pdfseite img').first().waitFor()
+        await tb.waitForFunction((v) => { const b = document.querySelector('.pg-tippflaeche[aria-label^="Blatt:"]'); return b && b.getAttribute('aria-label') !== v }, vorherT, { timeout: 60000 }).catch(() => {})
+        pruefe((await tb.locator('.pg-tippflaeche[aria-label^="Blatt:"]').first().getAttribute('aria-label')) !== vorherT, 'ersetzt – das PDF zeigt den neuen Teil')
+      } else await dlg(tb).getByRole('button', { name: 'Behalten' }).click()
+      await tb.locator('.pg-tippflaeche[aria-label^="Plan:"]').first().click()
+      await dlg(tb).waitFor()
+      pruefe(await dlg(tb).isVisible(), 'Antippen einer Plan-Zeile im PDF')
+      await dlg(tb).getByRole('button', { name: 'Behalten' }).click()
       await ueberlauf(tb, 'Vorschau')
       await tb.getByRole('button', { name: 'Zurück' }).click()
 
@@ -365,8 +391,9 @@ async function main() {
       if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
       pruefe((await tb.locator('.pg-ed-liste .pg-er').count()) === vorher + 1, 'Baustein eingefügt')
       // Text ändern im Comic-Baustein (oder im ersten mit Feldern)
-      const comic = tb.locator('.pg-er', { hasText: 'Comic' }).first()
-      const mitText = (await comic.count()) ? comic : tb.locator('.pg-er').nth(1)
+      const teileListe = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ })
+      const comic = teileListe.filter({ hasText: 'Comic' }).first()
+      const mitText = (await comic.count()) ? comic : teileListe.first()
       await mitText.locator('button[aria-label^="Text ändern"]').last().click()
       const feld = mitText.locator('.felder input, .felder textarea').last()
       await feld.fill('Zu Frau Weber.')
@@ -407,7 +434,7 @@ async function main() {
       const notiz1 = await dlg(tb).locator('.pg-notizvorschau').innerText()
       pruefe(!/gelingt|mitgemacht/.test(notiz1), 'Notiz enthält nur Geklicktes')
       await dlg(tb).locator('.pg-zielreihe', { hasText: 'V-21' }).getByRole('button', { name: 'mit Hilfe' }).click()
-      await dlg(tb).locator('.pg-chip', { hasText: 'brauchte eine Pause' }).click()
+      await dlg(tb).locator('.pg-chip', { hasText: 'Brauchte eine Pause' }).click()
       await dlg(tb).locator('.pg-zielreihe', { hasText: 'Daumen von Mia' }).getByRole('button', { name: 'hoch' }).click()
       pruefe((await dlg(tb).locator('.pg-notizvorschau').innerText()).includes('gelingt mit Unterstützung'), 'Ziel-Richtung in der Notiz')
       await foto(tb, '12-stunde-gehalten', { voll: false })
@@ -415,7 +442,7 @@ async function main() {
       await tb.waitForTimeout(400)
       const rm = await hub.evaluate(() => window.__ops.filter((o) => o.op === 'rueckmeldung').pop())
       pruefe(rm && rm.arg.ergebnis === 'geklappt' && rm.arg.plan && rm.arg.kind && rm.arg.kind.daumen === 'hoch', 'Rückmeldung mit Plan und Stimme des Kindes')
-      pruefe(rm && rm.arg.notiz && !rm.arg.notiz.includes('mitgemacht'), 'Notiz ohne Unangeklicktes')
+      pruefe(rm && !('notiz' in rm.arg) && rm.arg.chips.join() === 'pause' && rm.arg.ziele.length === 1 && rm.arg.ziele[0].richtung === 'mit-hilfe', 'Rückmeldung nur mit Geklicktem (Chip-Schlüssel), die Notiz baut der Hub')
 
       // 12. Weg 2: weiter mit Sitzung 3 der Folge, eigener Text, gehalten → Teilen
       await tb.locator('.pg-unterreiter button', { hasText: 'Planen' }).click()
@@ -424,7 +451,7 @@ async function main() {
       pruefe(await tb.getByRole('heading', { name: /Sitzung 3 von 6/ }).isVisible(), 'Weiter mit Sitzung 3 von 6')
       await tb.locator('.pg-ekopf').getByRole('button', { name: 'Baukasten' }).click()
       if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
-      const er = tb.locator('.pg-er').nth(1)
+      const er = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ }).first()
       await er.locator('button[aria-label^="Text ändern"]').last().click()
       await er.locator('.felder input, .felder textarea').last().fill('Zu Frau Weber.')
       await tb.getByRole('button', { name: 'Fertig' }).click()
@@ -451,9 +478,11 @@ async function main() {
       await dlg(tb).getByRole('button', { name: 'Teilen', exact: true }).click()
       await tb.waitForTimeout(400)
       const geteilt = await hub.evaluate(() => window.__ops.filter((o) => o.op === 'praxis-teilen').pop())
-      const json = JSON.stringify(geteilt ? geteilt.arg : {})
-      pruefe(geteilt && !json.includes('Weber') && !json.includes('Mia') && !json.includes('pg-mia') && !json.includes('"kinder"'), 'Entwurf ohne Kinddaten und ohne Namen')
-      pruefe(geteilt && geteilt.arg.entwurf.altersband === '9-11', 'Altersband aus festen Bändern')
+      const json = JSON.stringify(geteilt ? geteilt.arg.entwurf : {})
+      pruefe(geteilt && !json.includes('Weber') && !json.includes('Mia') && !json.includes('pg-mia') && !json.includes('"kinder"') && !json.includes('"warum"'), 'Entwurf ohne Kinddaten und ohne Namen: ' + json.slice(0, 300))
+      pruefe(geteilt && geteilt.arg.ref === 'pg-mia7f3k9q2m' && geteilt.arg.planId === 'pl-4k2', 'Teilen mit ref und planId (Sperrliste des Dossiers und Angebot prüft der Hub)')
+      pruefe(geteilt && /^(\d{1,2}–\d{1,2}|\d{1,2}\+)$/.test(geteilt.arg.entwurf.altersband), 'Altersband aus festen Bändern: ' + (geteilt && geteilt.arg.entwurf.altersband))
+      pruefe(geteilt && Array.isArray(geteilt.arg.entwurf.bestaetigt) && geteilt.arg.entwurf.anonym === true && typeof geteilt.arg.entwurf.belastung === 'number' , 'Entwurf mit Häkchen-Pfaden, anonym und Belastung')
 
       // 13. Weg 3: heute geht nicht viel
       await tb.locator('.pg-unterreiter button', { hasText: 'Planen' }).click()
@@ -502,7 +531,8 @@ async function main() {
       await foto(tb, '14-aus-der-praxis')
       await tb.locator('.pg-pr', { hasText: 'Wut stoppen' }).getByRole('button', { name: 'Übernehmen' }).click()
       await dlg(tb).waitFor()
-      pruefe(await dlg(tb).getByText('Texte der Autorin (1)').isVisible(), 'Übernehmen zeigt Texte der Autorin')
+      // Mia hat „Vorsicht“ gesetzt: die Texte der Autorin kommen nicht mit (E-M7) – das steht im Dialog
+      pruefe(await dlg(tb).getByText(/Texte der Autorin (nicht übernommen|\(1\))/).first().isVisible(), 'Übernehmen: Texte der Autorin gezeigt bzw. bei Vorsicht gesperrt')
       await foto(tb, '16-uebernehmen', { voll: false })
       await dlg(tb).getByRole('button', { name: 'Im Baukasten öffnen' }).click()
       await tb.getByRole('heading', { name: 'Bausteine kombinieren' }).waitFor()
@@ -511,13 +541,15 @@ async function main() {
       await tb.locator('.pg-pr').first().locator('button[aria-label^="Melden"]').click()
       await dlg(tb).locator('.pg-chip', { hasText: 'fachlich falsch' }).click()
       await dlg(tb).getByRole('button', { name: 'Melden' }).click()
-      pruefe((await ops()).includes('praxis-signal'), 'Melden als Signal an den Hub')
+      const melden = await hub.evaluate(() => window.__ops.filter((o) => o.op === 'praxis-signal').pop())
+      pruefe(melden && melden.arg.art === 'melden' && melden.arg.grund === 'fachlich', 'Melden als Signal an den Hub (art melden, grund)')
       await tb.locator('.pg-filter .pg-chip', { hasText: 'noch nicht geprüft' }).click()
       await tb.locator('.pg-pr', { hasText: 'Prüfungsangst' }).getByRole('button', { name: 'Prüfen' }).click()
       pruefe(await dlg(tb).getByRole('button', { name: /Geprüft – freigeben/ }).isDisabled(), 'Freigabe erst nach vier Häkchen')
       for (const c of await dlg(tb).getByRole('checkbox').all()) await c.check()
       await dlg(tb).getByRole('button', { name: /Geprüft – freigeben/ }).click()
-      pruefe((await ops()).includes('praxis-kuratieren'), 'Kuratieren an den Hub')
+      const kur = await hub.evaluate(() => window.__ops.filter((o) => o.op === 'praxis-kuratieren').pop())
+      pruefe(kur && kur.arg.aktion === 'freigeben' && Object.values(kur.arg.checkliste || {}).filter(Boolean).length === 4, 'Kuratieren an den Hub (vier Häkchen)')
       await tb.close()
 
       // 16. Ilyas (14 J., heikles Thema, ohne Recht zur Rückmeldung) und Noé (5 J.)

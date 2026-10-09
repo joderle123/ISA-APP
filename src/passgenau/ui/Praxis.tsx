@@ -270,14 +270,19 @@ export function Teilen() {
   const [laeuft, setLaeuft] = useState(false)
   const eigene = ft.eigeneTexte
 
-  // Original eines eigenen Texts (Pfad „s<nr>.b<i>.<pfad>“)
+  // Original eines eigenen Texts – Pfade wie im Hub (PROTOKOLL.md): inhalt.sitzungen.<i>.(schritte|blatt.bausteine).<j>.ueber.<textpfad>
   const original = (pfad: string): string => {
-    const m = /^s(\d+)\.b(\d+)\.(.+)$/.exec(pfad)
+    const m = /^inhalt\.sitzungen\.(\d+)\.(schritte|blatt\.bausteine)\.(\d+)\.ueber\.(.+)$/.exec(pfad)
     if (!m) return ''
-    const s = plan.sitzungen.find((x) => x.nr === +m[1])
-    const t = s?.blatt?.bausteine[+m[2]]
+    const s = plan.sitzungen[+m[1]]
+    const t = m[2] === 'schritte' ? s?.schritte[+m[3]] : s?.blatt?.bausteine[+m[3]]
     const e = t ? K.eintrag(k, t.ref) : undefined
-    return e ? wertAnPfad(inhaltVon(k, p, plan, +m[1], e, p.sprache.blatt), m[3]) ?? '' : ''
+    if (!e || !s) return ''
+    if (m[2] === 'schritte') {
+      const tx = K.textVon(e, p.sprache.blatt) as unknown as Record<string, unknown>
+      return typeof tx[m[4]] === 'string' ? (tx[m[4]] as string) : ''
+    }
+    return wertAnPfad(inhaltVon(k, p, plan, s.nr, e, p.sprache.blatt), m[4]) ?? ''
   }
   useEffect(() => {
     if (nurOriginal || !eigene.length || treffer || !pg.ref) return
@@ -292,28 +297,46 @@ export function Teilen() {
     }).catch(() => setTreffer([]))
   }, [nurOriginal, eigene.length, treffer, pg.ref, ft.vorlage])
 
-  const entw = (): Omit<PraxisVorlage, 'id' | 'version' | 'status' | 'erstellt'> => {
+  const entscheid = (pfad: string): Entscheidung => (nurOriginal ? 'original' : entscheidung[pfad] ?? 'eigen')
+  const zuTeilen = nurOriginal ? [] : eigene.filter((t) => entscheid(t.pfad) === 'eigen')
+  const entw = (): hub.PraxisEntwurf => {
     const inhalt: VorlagenInhalt = structuredClone(ft.vorlage.inhalt)
+    const bestaetigt: string[] = []
+    const behandeln = (x: { ueber?: Record<string, string>; ueberHerkunft?: Record<string, 'eigen' | 'vorlage'> }, basis: string) => {
+      if (!x.ueber) return
+      for (const pf of Object.keys(x.ueber)) {
+        const pfad = `${basis}.ueber.${pf}`
+        const e = entscheid(pfad)
+        if (e === 'original') {
+          delete x.ueber[pf]
+          if (x.ueberHerkunft) delete x.ueberHerkunft[pf]
+          continue
+        }
+        if (e === 'weg') x.ueber[pf] = ''
+        x.ueberHerkunft = { ...x.ueberHerkunft, [pf]: 'eigen' }
+        // Häkchen „Kein Kind erkennbar“ (E-M6); ein entfernter (leerer) Text braucht keins
+        if (e === 'weg' || haken[pfad]) bestaetigt.push(pfad)
+      }
+      if (!Object.keys(x.ueber).length) {
+        delete x.ueber
+        delete x.ueberHerkunft
+      }
+    }
     inhalt.sitzungen.forEach((s, si) => {
-      const nr = plan.sitzungen[si]?.nr ?? si + 1
-      s.blatt?.bausteine.forEach((b, bi) => {
-        if (!b.ueber) return
-        for (const pf of Object.keys(b.ueber)) {
-          const key = `s${nr}.b${bi}.${pf}`
-          const e = nurOriginal ? 'original' : entscheidung[key] ?? 'eigen'
-          if (e === 'original') delete b.ueber[pf]
-          else if (e === 'weg') b.ueber[pf] = ''
-          else b.ueberHerkunft = { ...b.ueberHerkunft, [pf]: 'eigen' }
-        }
-        if (!Object.keys(b.ueber).length) {
-          delete b.ueber
-          delete b.ueberHerkunft
-        }
-      })
+      s.schritte.forEach((x, xi) => behandeln(x, `inhalt.sitzungen.${si}.schritte.${xi}`))
+      s.blatt?.bausteine.forEach((b, bi) => behandeln(b, `inhalt.sitzungen.${si}.blatt.bausteine.${bi}`))
     })
-    return { ...ft.vorlage, titel: titel.trim() || vorschlaege[0], fuerWen: satz || undefined, von: urheber === 'anonym' ? null : `${pg.ich.name}${pg.ich.team ? ' · ' + pg.ich.team : ''}`, inhalt }
+    return {
+      ...ft.vorlage,
+      titel: titel.trim() || vorschlaege[0],
+      fuerWen: satz || undefined,
+      von: null,
+      inhalt,
+      bestaetigt,
+      anonym: urheber === 'anonym',
+      eigenerTausch: (pg.getauscht[plan.id] ?? 0) > 0,
+    }
   }
-  const zuTeilen = nurOriginal ? [] : eigene.filter((t) => (entscheidung[t.pfad] ?? 'eigen') === 'eigen')
   const ok = !!titel.trim() && zuTeilen.every((t) => haken[t.pfad])
   const nBausteine = refsVon(ft.vorlage.inhalt).length
   const aehnlich = pg.praxis.liste.find((x) => {
@@ -323,12 +346,23 @@ export function Teilen() {
   const teilen = async () => {
     setLaeuft(true)
     try {
-      const r = await hub.praxisTeilen(entw())
+      const e = entw()
+      const r = await hub.praxisTeilen(e, pg.ref, plan.id)
       pg.setVor((v) => ({ ...v, ich: { ...(v.ich as FachkraftVorlieben), geteilt: geteilt + 1 } }))
-      pg.setPraxis((x) => ({ ...x, liste: [{ ...entw(), id: r.id, version: r.version, status: r.status, erstellt: new Date().toISOString().slice(0, 7) }, ...x.liste] }))
+      pg.setPraxis((x) => ({ ...x, liste: [{ ...e, von: e.anonym ? null : `${pg.ich.name}${pg.ich.team ? ' · ' + pg.ich.team : ''}`, id: r.id, version: r.version, status: r.status, erstellt: new Date().toISOString().slice(0, 7), eigen: true }, ...x.liste] }))
       pg.setDlg(null)
       pg.hinweisZeigen(r.status === 'eingereicht' ? 'Eingereicht – sichtbar nach der Prüfung durch die Kuratorin. Anonymisiert, ohne Kinddaten.' : 'Geteilt – für alle am Hub sichtbar.')
     } catch (e) {
+      const tr = (e as hub.HubFehler)?.treffer
+      if (tr?.length) {
+        setNurOriginal(false)
+        setTreffer(tr)
+        setEntscheidung((alt) => {
+          const n = { ...alt }
+          for (const t of tr) if (!n[t.pfad] && t.art !== 'eigen') n[t.pfad] = 'original'
+          return n
+        })
+      }
       pg.hinweisZeigen('Teilen nicht möglich: ' + (e instanceof Error ? e.message : 'Hub antwortet nicht'), 'warn')
     } finally {
       setLaeuft(false)
@@ -590,7 +624,7 @@ export function Melden({ vorlage }: { vorlage: PraxisVorlage }) {
   const [grund, setGrund] = useState<'' | 'datenschutz' | 'fachlich' | 'unpassend'>('')
   const melden = () => {
     if (!grund) return
-    hub.praxisSignal(vorlage.id, ('melden-' + grund) as hub.PraxisSignalArt).catch(() => {})
+    hub.praxisSignal(vorlage.id, 'melden', grund).catch(() => {})
     if (grund === 'datenschutz') pg.setPraxis((x) => ({ ...x, liste: x.liste.map((v) => (v.id === vorlage.id ? { ...v, status: 'ausgeblendet' } : v)) }))
     pg.setDlg(null)
     pg.hinweisZeigen(grund === 'datenschutz' ? 'Gemeldet – sofort ausgeblendet, Responsable und Datenschutz-Ansprechperson werden informiert.' : 'Gemeldet – die Kuratorin prüft.')
@@ -633,17 +667,20 @@ export function Kuratieren({ vorlage }: { vorlage: PraxisVorlage }) {
   const pg = usePg()
   const k = pg.katalog!
   const [haken, setHaken] = useState<Record<string, boolean>>({})
-  const PUNKTE = ['Datenschutz (Texte gelesen)', 'Alter und Belastung stimmig', 'roter Faden', 'keine Wirksamkeitsbehauptung']
+  // die vier Häkchen des Hubs (checkliste: datenschutz, alter, faden, wirksamkeit)
+  const PUNKTE: [string, 'datenschutz' | 'alter' | 'faden' | 'wirksamkeit'][] = [['Datenschutz (Texte gelesen)', 'datenschutz'], ['Alter und Belastung stimmig', 'alter'], ['roter Faden', 'faden'], ['keine Wirksamkeitsbehauptung', 'wirksamkeit']]
   const eintraege = refsVon(vorlage.inhalt).map((r) => K.eintrag(k, r)).filter((e): e is KatalogEintrag => !!e)
   const schwer = eintraege.some((e) => e.belastung >= 2 || (e.typ === 'baustein' && !!e.sensibel))
-  const darf = !schwer || pg.nutzer.rolle === 'responsable' || pg.nutzer.rolle === 'admin' || /psycholog/i.test(pg.hallo?.ich?.funktion ?? '')
+  const darf = vorlage.darfFreigeben ?? (!schwer || /psycholog/i.test(pg.hallo?.ich?.funktion ?? ''))
   const texte = (vorlage.inhalt?.sitzungen ?? []).flatMap((s, si) => (s.blatt?.bausteine ?? []).flatMap((b) => Object.entries(b.ueber ?? {}).map(([pf, t]) => ({ key: `${si}.${b.ref}.${pf}`, t, ref: b.ref, pf }))))
-  const aktion = async (a: 'freigeben' | 'ausblenden' | 'offiziell') => {
+  const aktion = async (a: 'freigeben' | 'einblenden' | 'ausblenden' | 'ablehnen') => {
     try {
-      const r = await hub.praxisKuratieren(vorlage.id, a)
-      pg.setPraxis((x) => ({ ...x, liste: x.liste.map((v) => (v.id === vorlage.id ? { ...v, status: r.status } : v)) }))
+      const checkliste = Object.fromEntries(PUNKTE.map(([t, key]) => [key, !!haken[t]])) as Record<'datenschutz' | 'alter' | 'faden' | 'wirksamkeit', boolean>
+      const r = await hub.praxisKuratieren(`${vorlage.id}@${vorlage.version}`, a, a === 'freigeben' || a === 'einblenden' ? { checkliste } : {})
+      const status: PraxisVorlage['status'] = r.status === 'abgelehnt' ? 'ausgeblendet' : r.status
+      pg.setPraxis((x) => ({ ...x, liste: x.liste.map((v) => (v.id === vorlage.id ? { ...v, status } : v)) }))
       pg.setDlg(null)
-      pg.hinweisZeigen(a === 'freigeben' ? 'Geprüft – für alle sichtbar (diese Version).' : a === 'ausblenden' ? 'Ausgeblendet.' : 'Als offiziell vorgeschlagen.')
+      pg.hinweisZeigen(a === 'freigeben' || a === 'einblenden' ? 'Geprüft – für alle sichtbar (diese Version).' : a === 'ausblenden' ? 'Ausgeblendet.' : 'Abgelehnt – die Urheberin kann eine neue Version teilen.')
     } catch (e) {
       pg.hinweisZeigen('Nicht möglich: ' + (e instanceof Error ? e.message : 'Hub antwortet nicht'), 'warn')
     }
@@ -659,12 +696,12 @@ export function Kuratieren({ vorlage }: { vorlage: PraxisVorlage }) {
           <button type="button" className="pg-btn" onClick={() => aktion('ausblenden')}>
             Ausblenden
           </button>
-          {vorlage.status === 'freigegeben' && (
-            <button type="button" className="pg-btn" onClick={() => aktion('offiziell')}>
-              Als offiziell vorschlagen
+          {vorlage.status !== 'freigegeben' && vorlage.status !== 'ausgeblendet' && (
+            <button type="button" className="pg-btn" onClick={() => aktion('ablehnen')}>
+              Ablehnen
             </button>
           )}
-          <button type="button" className="pg-btn primaer" disabled={!darf || PUNKTE.some((x) => !haken[x])} onClick={() => aktion('freigeben')}>
+          <button type="button" className="pg-btn primaer" disabled={!darf || PUNKTE.some(([x]) => !haken[x])} onClick={() => aktion(vorlage.status === 'ausgeblendet' ? 'einblenden' : 'freigeben')}>
             <Ic n="check" />
             Geprüft – freigeben
           </button>
@@ -704,7 +741,7 @@ export function Kuratieren({ vorlage }: { vorlage: PraxisVorlage }) {
         </ul>
       </div>
       <div className="pg-chips">
-        {PUNKTE.map((x) => (
+        {PUNKTE.map(([x]) => (
           <label key={x} className="pg-check">
             <input type="checkbox" checked={!!haken[x]} onChange={(ev) => setHaken((h) => ({ ...h, [x]: ev.target.checked }))} />
             {x}

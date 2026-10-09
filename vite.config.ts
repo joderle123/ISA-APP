@@ -1,4 +1,4 @@
-import { build, defineConfig, type Plugin } from 'vite'
+import { build, defineConfig, type Plugin, type PluginOption } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { viteSingleFile } from 'vite-plugin-singlefile'
@@ -12,6 +12,7 @@ import { fileURLToPath } from 'node:url'
 
 const INFLATE = fileURLToPath(new URL('./src/lib/inflate.ts', import.meta.url)).replace(/\\/g, '/')
 const PDF_ENTRY = fileURLToPath(new URL('./src/lib/pdf.tsx', import.meta.url))
+const PDFJS_ENTRY = fileURLToPath(new URL('./src/lib/pdfjs-modul.ts', import.meta.url))
 
 const gzipBase64 = (text: string) => gzipSync(text, { level: 9 }).toString('base64')
 
@@ -24,31 +25,61 @@ const gzipBase64 = (text: string) => gzipSync(text, { level: 9 }).toString('base
  *     to load than parsing the literals, and ~2 MB smaller.
  *  2. The PDF renderer (@react-pdf, ~1.5 MB) is built separately and embedded
  *     compressed; it is unpacked and run only on the first PDF download.
+ *  3. Passgenau: the worksheets are shared with the toolbox (one compressed
+ *     block, src/data/blaetter/dateien.ts); its own data (catalogue, contents)
+ *     is a second compressed block, unpacked only when Passgenau opens.
+ *  4. pdf.js (legacy build, worker in the main thread) for the tappable
+ *     Passgenau preview: built separately, embedded compressed, unpacked on
+ *     the first preview only.
  */
+/** Ein Modul getrennt als IIFE bauen (für window[name]) und gzip/base64 zurückgeben. */
+async function iifeGz(entry: string, name: string, plugins: PluginOption[] = []): Promise<string> {
+  const out = await build({
+    configFile: false,
+    logLevel: 'warn',
+    plugins,
+    define: { 'process.env.NODE_ENV': JSON.stringify('production'), 'import.meta.url': 'document.baseURI' },
+    build: { write: false, emptyOutDir: false, minify: true, lib: { entry, formats: ['iife'], name, fileName: () => name + '.js' } },
+  })
+  const outputs = (Array.isArray(out) ? out : [out]).flatMap((o) => ('output' in o ? o.output : []))
+  const chunk = outputs.find((o) => o.type === 'chunk')
+  if (!chunk || chunk.type !== 'chunk') throw new Error(`Modul ${name} konnte nicht gebaut werden`)
+  return gzipBase64(chunk.code)
+}
+
+/** Lädt ein eingebettetes, komprimiertes IIFE-Modul beim ersten Aufruf (Quelltext für loadPdf.ts / pdfjs.ts). */
+function ladeCode(fn: string, name: string, code: string, fehler: string): string {
+  return (
+    `import { inflateText } from ${JSON.stringify(INFLATE)}\n` +
+    `const CODE = ${JSON.stringify(code)}\n` +
+    `let ready = null\n` +
+    `export function ${fn}() {\n` +
+    `  ready = ready || inflateText(CODE).then((code) => {\n` +
+    `    const s = document.createElement('script')\n` +
+    `    s.textContent = code\n` +
+    `    document.head.appendChild(s)\n` +
+    `    s.remove()\n` +
+    `    if (!window.${name}) throw new Error(${JSON.stringify(fehler)})\n` +
+    `    return window.${name}${name === '__isaPdfjs' ? '.pdfjs' : ''}\n` +
+    `  })\n` +
+    `  ready.catch(() => { ready = null })\n` +
+    `  return ready\n` +
+    `}\n`
+  )
+}
+
 function compactOfflineBundle(): Plugin {
   let pdfBundle = ''
+  let pdfjsBundle = ''
   return {
     name: 'isa-compact-offline-bundle',
     apply: 'build',
     enforce: 'pre',
     async buildStart() {
-      const out = await build({
-        configFile: false,
-        logLevel: 'warn',
-        plugins: [react()],
-        // import.meta.url (yoga-layout) wie im Hauptbundle: die Adresse der Seite
-        define: { 'process.env.NODE_ENV': JSON.stringify('production'), 'import.meta.url': 'document.baseURI' },
-        build: {
-          write: false,
-          emptyOutDir: false,
-          minify: true,
-          lib: { entry: PDF_ENTRY, formats: ['iife'], name: '__isaPdf', fileName: () => 'isa-pdf.js' },
-        },
-      })
-      const outputs = (Array.isArray(out) ? out : [out]).flatMap((o) => ('output' in o ? o.output : []))
-      const chunk = outputs.find((o) => o.type === 'chunk')
-      if (!chunk || chunk.type !== 'chunk') throw new Error('PDF-Modul konnte nicht gebaut werden')
-      pdfBundle = gzipBase64(chunk.code)
+      // 4. pdf.js (Passgenau-Vorschau, T-M8): eigenes Modul, erst bei der ersten Vorschau entpackt
+      pdfjsBundle = await iifeGz(PDFJS_ENTRY, '__isaPdfjs')
+      // 2. PDF renderer (react-pdf)
+      pdfBundle = await iifeGz(PDF_ENTRY, '__isaPdf', [react()])
     },
     load(id) {
       const file = id.split('?')[0].replace(/\\/g, '/')
@@ -71,44 +102,40 @@ function compactOfflineBundle(): Plugin {
           `export const ${name} = await inflateJson(${JSON.stringify(gzipBase64(JSON.stringify(list)))})\n`
         )
       }
-      // 1b. Arbeitsblätter (src/data/blaetter/*.json): alle Dateien zusammen
-      //     komprimiert einbetten, beim Start entpacken und nummerieren.
-      if (file.endsWith('/src/data/blaetter/index.ts')) {
-        const ordner = file.slice(0, -'index.ts'.length)
+      // 1b. Arbeitsblätter (src/data/blaetter/*.json): alle Dateien zusammen komprimiert einbetten und beim Start
+      //     entpacken – UNGEFILTERT (index.ts filtert die Skills-Blätter nach kursFrei, Passgenau nutzt alle Teile).
+      if (file.endsWith('/src/data/blaetter/dateien.ts')) {
+        const ordner = file.slice(0, -'dateien.ts'.length)
         const dateien: Record<string, unknown> = {}
         for (const d of readdirSync(ordner).sort()) if (d.endsWith('.json')) dateien['./' + d] = JSON.parse(readFileSync(ordner + d, 'utf8'))
-        const NUMMERN = fileURLToPath(new URL('./src/blatt/nummern.ts', import.meta.url)).replace(/\\/g, '/')
-        const NUTZER = fileURLToPath(new URL('./src/lib/nutzer.ts', import.meta.url)).replace(/\\/g, '/')
-        // wie src/data/blaetter/index.ts: die Blätter des Skills-Kurses nur, wenn der Kurs frei ist (kursFrei)
         return (
           `import { inflateJson } from ${JSON.stringify(INFLATE)}\n` +
-          `import { nummerieren } from ${JSON.stringify(NUMMERN)}\n` +
-          `import { kursFrei } from ${JSON.stringify(NUTZER)}\n` +
-          `const dateien = await inflateJson(${JSON.stringify(gzipBase64(JSON.stringify(dateien)))})\n` +
-          `export const alleBlaetter = nummerieren(dateien).filter((b) => kursFrei() || b.bereich !== 'skills')\n` +
-          `export const blattById = new Map(alleBlaetter.map((b) => [b.id, b]))\n`
+          `export const blattDateien = await inflateJson(${JSON.stringify(gzipBase64(JSON.stringify(dateien)))})\n`
         )
       }
-      // 2. PDF renderer on demand instead of the dynamic import.
-      if (file.endsWith('/src/lib/loadPdf.ts')) {
+      // 1c. Passgenau (src/passgenau/daten.ts): Katalog, ELDiB-Bank, CREW, neue Inhalte als EIN komprimierter Block,
+      //     Einheiten des Förderfachs (7e, Annexe); entpackt erst beim ersten Öffnen von Passgenau (nicht beim Start der Toolbox).
+      if (file.endsWith('/src/passgenau/daten.ts')) {
+        const pg = fileURLToPath(new URL('./src/data/passgenau/', import.meta.url))
+        const json = (f: string) => JSON.parse(readFileSync(pg + f, 'utf8'))
+        const inhalte = readdirSync(pg + 'inhalte').filter((d) => d.endsWith('.json')).sort().map((d) => ({ datei: d, daten: json('inhalte/' + d) }))
+        const ff = (f: string) => JSON.parse(readFileSync(fileURLToPath(new URL('./src/data/foerderfach/' + f, import.meta.url)), 'utf8'))
+        const daten = { bausteine: json('bausteine.json'), schritte: json('schritte.json'), eldib: json('eldib.json'), crew: json('crew.json'), ff: ff('einheiten-7e.json'), ffAnnexe: ff('annexe/einheiten-7e.json'), inhalte }
         return (
-          `import { inflateText } from ${JSON.stringify(INFLATE)}\n` +
-          `const CODE = ${JSON.stringify(pdfBundle)}\n` +
-          `let ready = null\n` +
-          `export function loadPdfModule() {\n` +
-          `  ready = ready || inflateText(CODE).then((code) => {\n` +
-          `    const s = document.createElement('script')\n` +
-          `    s.textContent = code\n` +
-          `    document.head.appendChild(s)\n` +
-          `    s.remove()\n` +
-          `    if (!window.__isaPdf) throw new Error('PDF-Modul konnte nicht geladen werden.')\n` +
-          `    return window.__isaPdf\n` +
-          `  })\n` +
-          `  ready.catch(() => { ready = null })\n` +
-          `  return ready\n` +
+          `import { inflateJson } from ${JSON.stringify(INFLATE)}\n` +
+          `const CODE = ${JSON.stringify(gzipBase64(JSON.stringify(daten)))}\n` +
+          `let laden = null\n` +
+          `export function ladeDaten() {\n` +
+          `  laden = laden || inflateJson(CODE)\n` +
+          `  laden.catch(() => { laden = null })\n` +
+          `  return laden\n` +
           `}\n`
         )
       }
+      // 2. PDF renderer on demand instead of the dynamic import.
+      if (file.endsWith('/src/lib/loadPdf.ts')) return ladeCode('loadPdfModule', '__isaPdf', pdfBundle, 'PDF-Modul konnte nicht geladen werden.')
+      // 4. pdf.js for the tappable Passgenau preview, also on demand.
+      if (file.endsWith('/src/lib/pdfjs.ts')) return ladeCode('ladePdfjs', '__isaPdfjs', pdfjsBundle, 'pdf.js konnte nicht geladen werden.')
       return null
     },
   }

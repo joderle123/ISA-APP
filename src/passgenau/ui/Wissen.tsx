@@ -93,11 +93,6 @@ export function Wissen() {
           <Zeile label="Sprache des Blatts" unter={quelle('sprache') ?? 'Fiche'}>
             <Seg label="Sprache des Blatts" wert={p.sprache.blatt} optionen={[['de', 'DE'], ['fr', 'FR']]} onWahl={(s) => umschalten((x) => ({ ...x, sprache: s }), s === 'fr' ? 'Französisch bevorzugt – wo es kein FR gibt, Abzeichen „nur DE“.' : 'Blatt auf Deutsch.')} />
           </Zeile>
-          {p.sprache.blatt === 'fr' && (
-            <Zeile label="Französisch" unter="„bevorzugt“: Bausteine nur auf Deutsch zählen weniger">
-              <Seg label="Französisch" wert={k.nurFr ? 'nur' : 'bevorzugt'} optionen={[['bevorzugt', 'bevorzugt'], ['nur', 'nur FR']]} onWahl={(w) => umschalten((x) => ({ ...x, nurFr: w === 'nur' }))} />
-            </Zeile>
-          )}
           {roh.sprache.woerter.length > 0 && (
             <Zeile label="Wörterstreifen" unter="Wortspeicher auch in der Familiensprache">
               <Chip an={k.woerter !== false} onClick={() => umschalten((x) => ({ ...x, woerter: x.woerter === false }))}>

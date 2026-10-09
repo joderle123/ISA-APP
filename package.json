@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && npm run index",
+    "build": "tsc -b && npm run passgenau:pruefen && vite build && npm run index",
     "index": "tsx --tsconfig tsconfig.scripts.json scripts/toolbox-index.mjs",
     "lint": "oxlint",
     "preview": "vite preview",
@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.5.1",
+    "pdfjs-dist": "4.10.38",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },

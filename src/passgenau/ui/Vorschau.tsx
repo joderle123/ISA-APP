@@ -1,6 +1,6 @@
-// Passgenau – Vorschau aus dem echten Renderer (T-M8): das PDF des Kerns (pdfSitzung → react-pdf) im Rahmen, daneben die
-// Teile zum Antippen. Kann der Browser kein PDF anzeigen (Android, eingebettete Ansichten), zeigt die Seite eine Skizze
-// (HTML) mit denselben Teilen – ausdrücklich als Skizze beschriftet.
+// Passgenau – Vorschau aus dem echten Renderer (T-M8): das PDF des Kerns (pdfSitzungMitTeilen → react-pdf), mit pdf.js als
+// Bild gezeichnet; darüber je Teil (Plan-Zeile, Blatt-Teil) eine antippbare Fläche aus den Layoutdaten des Kerns.
+// Geht pdf.js nicht (sehr alter Browser), zeigt die Seite eine Skizze (HTML) mit denselben Teilen – als Skizze beschriftet.
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react'
 import type { Plan } from '../typen'
 import * as K from './kern'
@@ -9,24 +9,49 @@ import { Ic } from './zeichen'
 import { A4Blatt, MM } from './A4'
 import { zerlegen } from './blattTeile'
 import { blattZusatz } from './erweitert'
-import { istBlattSchritt, minutenVon, warumListe } from './anzeige'
+import { istBlattSchritt, minutenVon, teilText, warumListe } from './anzeige'
 import { Chip, HeikelBanner, Pill } from './Teile'
 import { PHASE_NAME, ROLLE_NAME, datumKurz, zielKurz } from './texte'
+import { ladePdfjs } from '../../lib/pdfjs'
 
-export const pdfAnzeigbar = (): boolean => (navigator as Navigator & { pdfViewerEnabled?: boolean }).pdfViewerEnabled !== false
+/** pdf.js zeichnet das PDF selbst – nur ohne Canvas (sehr alte Browser) bleibt die Skizze */
+export const pdfAnzeigbar = (): boolean => typeof document !== 'undefined' && !!document.createElement('canvas').getContext
 
-// Zwischenspeicher der erzeugten PDFs (Schlüssel aus Plan-Sitzung und Druckoptionen)
-const PDF_CACHE = new Map<string, string>()
-function cacheSetzen(k: string, url: string) {
-  PDF_CACHE.set(k, url)
-  while (PDF_CACHE.size > 8) {
-    const [alt, u] = PDF_CACHE.entries().next().value as [string, string]
-    URL.revokeObjectURL(u)
+/** Plan, wie er gedruckt wird: „Mein Ziel“ aufs Blatt nur mit Haken und unter 12 Jahren (E-M13) */
+export function druckPlan(plan: Plan, mitZiel: boolean): Plan {
+  return { ...plan, sitzungen: plan.sitzungen.map((s) => (s.blatt ? { ...s, blatt: { ...s.blatt, ziel: mitZiel } } : s)) }
+}
+
+interface Seite {
+  url: string
+  b: number
+  h: number
+}
+interface Teilflaeche {
+  id: string
+  seite: number
+  x: number
+  y: number
+  b: number
+  h: number
+}
+interface Gezeichnet {
+  seiten: Seite[]
+  teile: Teilflaeche[]
+}
+
+// Zwischenspeicher der gezeichneten PDFs (Schlüssel aus Plan-Sitzung und Druckoptionen)
+const PDF_CACHE = new Map<string, Gezeichnet>()
+function cacheSetzen(k: string, g: Gezeichnet) {
+  PDF_CACHE.set(k, g)
+  while (PDF_CACHE.size > 6) {
+    const [alt, x] = PDF_CACHE.entries().next().value as [string, Gezeichnet]
+    x.seiten.forEach((s) => URL.revokeObjectURL(s.url))
     PDF_CACHE.delete(alt)
   }
 }
 
-// In der Skizze gemessene Seitenfüllung (genauer als die Schätzung, solange kein Kern misst). Schlüssel: Blatt + Layout.
+// In der Skizze gemessene Seitenfüllung (genauer als die Schätzung des Kerns). Schlüssel: Blatt + Layout.
 const GEMESSEN = new Map<string, number[]>()
 const MESS_HOERER = new Set<() => void>()
 const messSchluessel = (plan: Plan, nr: number, layout: string, ziel: boolean) => JSON.stringify([nr, plan.sitzungen.find((x) => x.nr === nr)?.blatt ?? null, layout, ziel])
@@ -44,48 +69,147 @@ function useGemessen(key: string): number[] | undefined {
   )
 }
 
-/** Das echte PDF einer Sitzung im Rahmen (entprellt, eine Erzeugung gleichzeitig) */
-function PdfRahmen({ plan, nr, hoehe, titel }: { plan: Plan; nr: number; hoehe: number; titel: string }) {
+/** PDF (Blob) mit pdf.js in Bilder zeichnen – je Seite eins, `px` breit */
+async function zeichnen(blob: Blob, px: number): Promise<Seite[]> {
+  const pdfjs = await ladePdfjs()
+  const doc = await pdfjs.getDocument({ data: new Uint8Array(await blob.arrayBuffer()), isEvalSupported: false, useSystemFonts: true }).promise
+  const seiten: Seite[] = []
+  try {
+    for (let i = 1; i <= doc.numPages; i++) {
+      const page = await doc.getPage(i)
+      const v1 = page.getViewport({ scale: 1 })
+      const vp = page.getViewport({ scale: px / v1.width })
+      const c = document.createElement('canvas')
+      c.width = Math.round(vp.width)
+      c.height = Math.round(vp.height)
+      const ctx = c.getContext('2d')!
+      ctx.fillStyle = '#ffffff'
+      ctx.fillRect(0, 0, c.width, c.height)
+      await page.render({ canvasContext: ctx, viewport: vp }).promise
+      const bild = await new Promise<Blob>((ok, fehler) => c.toBlob((b) => (b ? ok(b) : fehler(new Error('Bild nicht möglich'))), 'image/png'))
+      seiten.push({ url: URL.createObjectURL(bild), b: v1.width, h: v1.height })
+      page.cleanup()
+    }
+  } finally {
+    doc.destroy()
+  }
+  return seiten
+}
+
+/** Rechtecke je Teil und Seite vereinigen (ein Teil kann aus mehreren Bausteinen bestehen) */
+function vereinigen(l: { id: string; seite: number; x: number; y: number; b: number; h: number }[]): Teilflaeche[] {
+  const m = new Map<string, Teilflaeche>()
+  for (const t of l) {
+    const k = t.id + '|' + t.seite
+    const a = m.get(k)
+    if (!a) m.set(k, { ...t })
+    else {
+      const x2 = Math.max(a.x + a.b, t.x + t.b)
+      const y2 = Math.max(a.y + a.h, t.y + t.h)
+      a.x = Math.min(a.x, t.x)
+      a.y = Math.min(a.y, t.y)
+      a.b = x2 - a.x
+      a.h = y2 - a.y
+    }
+  }
+  return [...m.values()]
+}
+
+/** Ort im Plan aus der Kennung eines Teils („pg-teil:<nr>:schritt:<i>“ / „pg-teil:<nr>:blatt:<i>“) */
+function ortVon(id: string): Ort | null {
+  const m = /^pg-teil:(\d+):(schritt|blatt):(\d+)$/.exec(id)
+  if (!m) return null
+  return m[2] === 'schritt' ? { sitzung: +m[1], schritt: +m[3] } : { sitzung: +m[1], blatt: +m[3] }
+}
+
+/** Das echte PDF einer Sitzung als Bild, jeder Teil antippbar. `nurBlatt`: nur die Seiten des Blatts (eine bei `nurErste`). */
+export function PdfSeiten({ plan, nr, breite, nurBlatt, nurErste, onOrt, markiert, titel }: { plan: Plan; nr: number; breite: number; nurBlatt?: boolean; nurErste?: boolean; onOrt?: (o: Ort) => void; markiert?: Ort | null; titel: string }) {
   const pg = usePg()
   const p = useProfil()
   const sitzung = plan.sitzungen.find((s) => s.nr === nr)
-  const opt = { sprache: p.sprache.blatt, warum: !pg.druck.ohneWarum, karten: true, ziel: pg.druck.ziel && p.alterJahre < 12, vorname: pg.druck.vorname }
-  const key = JSON.stringify([plan.id, nr, sitzung?.schritte.map((s) => [s.ref, s.min, s.ueber]), sitzung?.blatt, opt, p.anrede, p.layout, p.stufen])
-  const [url, setUrl] = useState<string | null>(PDF_CACHE.get(key) ?? null)
+  const mitZiel = pg.druck.ziel && p.alterJahre < 12
+  const opt = { sprache: p.sprache.blatt, warum: !pg.druck.ohneWarum, karten: true }
+  const px = Math.min(1600, Math.round(Math.max(breite, 320) * Math.min(2, window.devicePixelRatio || 1) * 1.25))
+  const key = JSON.stringify([plan.id, nr, sitzung?.schritte.map((s) => [s.ref, s.min, s.ueber]), sitzung?.blatt, opt, mitZiel, p.anrede, p.layout, p.stufen, px])
+  const [erg, setErg] = useState<Gezeichnet | null>(PDF_CACHE.get(key) ?? null)
   const [laedt, setLaedt] = useState(!PDF_CACHE.has(key))
   const [fehler, setFehler] = useState<string | null>(null)
   const lauf = useRef(0)
   useEffect(() => {
-    if (PDF_CACHE.has(key)) {
-      setUrl(PDF_CACHE.get(key)!)
+    const da = PDF_CACHE.get(key)
+    if (da) {
+      setErg(da)
       setLaedt(false)
       return
     }
     const id = ++lauf.current
     setLaedt(true)
-    const t = window.setTimeout(() => {
+    const t = window.setTimeout(async () => {
       if (!pg.katalog) return
-      K.pdfSitzung(pg.katalog, p, plan, nr, opt)
-        .then((blob) => {
-          const u = URL.createObjectURL(blob)
-          cacheSetzen(key, u)
-          if (id === lauf.current) {
-            setUrl(u)
-            setLaedt(false)
-            setFehler(null)
-          }
-        })
-        .catch((e) => id === lauf.current && (setFehler(e instanceof Error ? e.message : 'PDF nicht möglich'), setLaedt(false)))
-    }, 450)
+      try {
+        const r = await K.pdfSitzungMitTeilen(pg.katalog, p, druckPlan(plan, mitZiel), nr, opt)
+        const seiten = await zeichnen(r.blob, px)
+        const g: Gezeichnet = { seiten, teile: vereinigen(r.teile) }
+        cacheSetzen(key, g)
+        if (id === lauf.current) {
+          setErg(g)
+          setLaedt(false)
+          setFehler(null)
+        }
+      } catch (e) {
+        if (id === lauf.current) {
+          setFehler(e instanceof Error ? e.message : 'PDF nicht möglich')
+          setLaedt(false)
+        }
+      }
+    }, 400)
     return () => window.clearTimeout(t)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key])
+  const blattSeiten = useMemo(() => new Set((erg?.teile ?? []).filter((t) => t.id.includes(':blatt:')).map((t) => t.seite)), [erg])
+  let nummern = (erg?.seiten ?? []).map((_, i) => i + 1)
+  if (nurBlatt) nummern = nummern.filter((n) => blattSeiten.has(n))
+  if (nurErste) nummern = nummern.slice(0, 1)
+  const name = (o: Ort): string => {
+    const s = plan.sitzungen.find((x) => x.nr === o.sitzung)
+    const t = o.schritt !== undefined ? s?.schritte[o.schritt] : o.blatt !== undefined ? s?.blatt?.bausteine[o.blatt] : undefined
+    return t ? teilText(pg.katalog, t.ref, p.sprache.blatt, t.t).titel : 'Teil'
+  }
+  const gleich = (a?: Ort | null, b?: Ort | null) => !!a && !!b && a.sitzung === b.sitzung && a.schritt === b.schritt && a.blatt === b.blatt
   return (
-    <div className="pg-pdfrahmen" style={{ height: hoehe }}>
-      {url && <iframe src={url + '#toolbar=0&navpanes=0&view=FitH'} title={titel} />}
+    <div className="pg-pdfseiten" aria-label={titel} aria-busy={laedt}>
+      {nummern.map((n) => {
+        const seite = erg!.seiten[n - 1]
+        return (
+          <div key={n} className="pg-pdfseite" style={{ aspectRatio: `${seite.b} / ${seite.h}` }}>
+            <img src={seite.url} alt={`${titel} – Seite ${n}`} draggable={false} />
+            {onOrt &&
+              erg!.teile
+                .filter((t) => t.seite === n)
+                .map((t) => {
+                  const o = ortVon(t.id)
+                  if (!o) return null
+                  // der Platz des Blatts im Ablauf ist kein eigener Teil (das Blatt steht darunter)
+                  if (o.schritt !== undefined && sitzung?.schritte[o.schritt] && istBlattSchritt(sitzung.schritte[o.schritt])) return null
+                  return (
+                    <button
+                      key={t.id + n}
+                      type="button"
+                      className={'pg-tippflaeche' + (gleich(o, markiert) ? ' an' : '')}
+                      style={{ left: `${(100 * t.x) / seite.b}%`, top: `${(100 * t.y) / seite.h}%`, width: `${(100 * t.b) / seite.b}%`, height: `${(100 * t.h) / seite.h}%` }}
+                      aria-label={`${o.blatt !== undefined ? 'Blatt' : 'Plan'}: ${name(o)} – antippen zum Ersetzen`}
+                      title={`${name(o)} – antippen zum Ersetzen`}
+                      onClick={() => onOrt(o)}
+                    />
+                  )
+                })}
+          </div>
+        )
+      })}
+      {!erg && laedt && <div className="pg-pdfplatz" style={{ aspectRatio: '595 / 842' }} />}
       {laedt && (
         <div className="pg-pdflaedt" role="status">
-          <span className="pg-spin" /> {url ? 'wird aktualisiert …' : 'PDF wird erstellt …'}
+          <span className="pg-spin" /> {erg ? 'wird aktualisiert …' : 'PDF wird erstellt …'}
         </div>
       )}
       {fehler && <div className="pg-pdflaedt">{fehler}</div>}
@@ -100,12 +224,23 @@ export function BlattAnsicht({ plan, nr, breite, nurErste, onTeil, markiert, pdf
   const s = plan.sitzungen.find((x) => x.nr === nr)
   const zerlegt = useMemo(() => (pg.katalog && s?.blatt ? zerlegen(pg.katalog, p, plan, nr, p.sprache.blatt) : null), [pg.katalog, p, plan, nr, s?.blatt])
   if (!s?.blatt || !zerlegt) return <p className="pg-leise">Diese Sitzung hat kein Blatt.</p>
-  if (pdf && pdfAnzeigbar()) return <PdfRahmen plan={plan} nr={nr} hoehe={Math.round(breite * 1.414 * (nurErste ? 1 : 1.02)) + (nurErste ? 0 : 40)} titel={`Blatt „${s.blatt.titel}“`} />
+  if (pdf && pdfAnzeigbar())
+    return (
+      <PdfSeiten
+        plan={plan}
+        nr={nr}
+        breite={breite}
+        nurBlatt
+        nurErste={nurErste}
+        titel={`Blatt „${s.blatt.titel}“`}
+        onOrt={onTeil ? (o) => o.blatt !== undefined && onTeil(o.blatt) : undefined}
+        markiert={markiert !== undefined && markiert >= 0 ? { sitzung: nr, blatt: markiert } : null}
+      />
+    )
   const zus = blattZusatz(zerlegt.blatt)
   const teilName = (i: number) => {
     const t = s.blatt!.bausteine[i]
-    const e = pg.katalog && t ? K.eintrag(pg.katalog, t.ref) : undefined
-    return e ? K.textVon(e, p.sprache.blatt).titel : t?.t ?? `Teil ${i + 1}`
+    return t ? teilText(pg.katalog, t.ref, p.sprache.blatt, t.t).titel : `Teil ${i + 1}`
   }
   return (
     <div className="pg-skizze">
@@ -328,12 +463,11 @@ export function TeileListe({ plan, nr, onOrt }: { plan: Plan; nr: number; onOrt:
           <h3>Auf dem Blatt</h3>
           <ul>
             {s.blatt.bausteine.map((b, i) => {
-              const e = k ? K.eintrag(k, b.ref) : undefined
               return (
                 <li key={i}>
                   <button type="button" onClick={() => onOrt({ sitzung: nr, blatt: i })}>
                     <span className="pg-pill">S. {seiteVon(i)}</span>
-                    <span className="t">{e ? K.textVon(e, p.sprache.blatt).titel : b.t}</span>
+                    <span className="t">{teilText(k, b.ref, p.sprache.blatt, b.t).titel}</span>
                     <Ic n="tausch" />
                   </button>
                 </li>
@@ -371,7 +505,7 @@ export function Vorschau() {
           <div className="pg-eyebrow">PDF-Vorschau · Sitzung {s.nr}{s.gedruckt ? ` · gedruckt ${datumKurz(s.gedruckt)}` : ''}</div>
           <h1>Plan und Blatt</h1>
           <p className="pg-lead">
-            {pdf ? 'Das PDF entsteht mit demselben Renderer wie jedes Toolbox-Blatt. Tippe rechts auf einen Teil, um ihn zu ersetzen.' : 'Tippe auf einen Teil – im Plan oder auf dem Blatt –, um ihn zu ersetzen.'}
+            {pdf ? 'Das echte PDF – derselbe Renderer wie jedes Toolbox-Blatt. Tippe im PDF (oder rechts in der Liste) auf einen Teil, um ihn zu ersetzen.' : 'Skizze: Tippe auf einen Teil – im Plan oder auf dem Blatt –, um ihn zu ersetzen.'}
           </p>
         </div>
         <div className="pg-btnrow">
@@ -400,7 +534,7 @@ export function Vorschau() {
         {pdf ? (
           <>
             <div className="pg-vorschau-pdf">
-              <BlattAnsicht plan={plan} nr={s.nr} breite={Math.min(760, breite * 1.35)} />
+              <PdfSeiten plan={plan} nr={s.nr} breite={Math.min(760, breite * 1.35)} titel={`Plan und Blatt, Sitzung ${s.nr}`} onOrt={(o) => pg.setDlg({ art: 'ersetzen', ort: o })} markiert={pg.dlg?.art === 'ersetzen' ? pg.dlg.ort : null} />
             </div>
             <aside className="pg-card">
               <TeileListe plan={plan} nr={s.nr} onOrt={(o) => pg.setDlg({ art: 'ersetzen', ort: o })} />

@@ -338,9 +338,10 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
   let anleitung: string | undefined
   let lehrerQuelle: BlattInhalt['lehrer'] | null = null
   const teileIds: (string | null)[] = []
+  // jeden Baustein eines Teils mit der Kennung des Teils markieren: die Vorschau vereinigt ihre Rechtecke (T-M8)
   const markiere = (idx: number, n: number, id: string) => {
     while (teileIds.length < bausteine.length) teileIds.push(null)
-    if (n > 0) teileIds[idx] = id
+    for (let i = idx; i < idx + n; i++) teileIds[i] = id
   }
   for (const [ti, t] of (s?.blatt?.bausteine ?? []).entries()) {
     const start = bausteine.length

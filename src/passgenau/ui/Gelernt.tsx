@@ -16,13 +16,13 @@ export function Gelernt() {
   const [frage, setFrage] = useState(false)
   const k = pg.katalog
   if (!k) return null
-  const zeilen = K.gelernt(pg.vor, ebene, k) as { text: string; wert: number; n: number; schluessel?: string }[]
+  const zeilen = K.gelernt(pg.vor, ebene, k)
   const zuruecksetzen = (schluessel?: string) => {
     if (ebene === 'team') return
     const neu = K.zuruecksetzen(pg.vor, ebene, schluessel)
     pg.setVor(neu)
     if (ebene === 'kind' && pg.ref && pg.darfSpeichern) {
-      hub.vorlieben(pg.ref, { vorlieben: neu.kind, protokoll: schluessel ? undefined : 'Passgenau: Vorlieben zurückgesetzt' }).catch(() => pg.hinweisZeigen('Zurücksetzen im Dossier nicht gespeichert.', 'warn'))
+      hub.vorlieben(pg.ref, { vorlieben: neu.kind, zuruecksetzen: schluessel ?? true }).catch(() => pg.hinweisZeigen('Zurücksetzen im Dossier nicht gespeichert.', 'warn'))
     }
     pg.hinweisZeigen(schluessel ? 'Merkmal zurückgesetzt.' : `Zurückgesetzt${ebene === 'kind' ? ' – Zeile im Protokoll des Dossiers' : ''}. Ab jetzt wieder Kaltstart.`)
   }

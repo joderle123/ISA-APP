@@ -264,7 +264,7 @@ export const INTERESSEN: Record<string, { de: string; fr: string; woerter: strin
   weltall: { de: 'Weltall', fr: 'l’espace', woerter: ['weltall', 'rakete', 'planet', 'stern'] },
   lesen: { de: 'Lesen', fr: 'la lecture', woerter: ['buch', 'lesen'] },
   basteln: { de: 'Basteln', fr: 'le bricolage', woerter: ['basteln', 'schneid', 'kleb'] },
-  fahrrad: { de: 'Fahrrad', fr: 'le vélo', woerter: ['fahrrad', 'rad '] },
+  radfahren: { de: 'Radfahren', fr: 'le vélo', woerter: ['fahrrad', 'rad '] },
 }
 
 /** Name eines Interessen-Chips (unbekannte Schlüssel: der Schlüssel selbst, groß geschrieben). */

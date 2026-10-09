@@ -8,7 +8,7 @@ import { Ic } from './zeichen'
 import { Chip, Pill, RolleBadge } from './Teile'
 import { BlattAnsicht, Seitenkontrolle, useSeitenFuellung } from './Vorschau'
 import { PLATZHALTER, inhaltVon, pfadLabel, wertAnPfad, zerlegen } from './blattTeile'
-import { istBlattSchritt, minutenVon, warumListe } from './anzeige'
+import { istBlattSchritt, minutenVon, teilText, warumListe } from './anzeige'
 import { PHASE_NAME, ROLLE_NAME, zielKurz } from './texte'
 
 type Tab = 'blatt' | 'ablauf'
@@ -57,8 +57,8 @@ export function Baukasten() {
   const treffer = useMemo(() => {
     const filter =
       tab === 'blatt'
-        ? { bogen, format: format || undefined, ziel: ziel || undefined, text: text || undefined, passtHoehe: nurPasst ? frei : undefined }
-        : { rolle, ziel: ziel || undefined, quelle: quelle || undefined, text: text || undefined }
+        ? { typ: 'baustein' as const, bogen, format: format || undefined, ziel: ziel || undefined, text: text || undefined, passtHoehe: nurPasst ? frei : undefined }
+        : { typ: 'schritt' as const, rolle, ziel: ziel || undefined, quelle: quelle || undefined, text: text || undefined }
     const imPlan = new Set([...s.schritte.map((x) => x.ref), ...teile.map((t) => t.ref)])
     return K.suchen(k, p, filter, 40).filter((a) => !imPlan.has(a.eintrag.id))
   }, [tab, bogen, format, ziel, text, nurPasst, frei, rolle, quelle, k, p, s.schritte, teile])
@@ -316,13 +316,13 @@ export function Baukasten() {
                   {teile.length === 0 && <p className="pg-leise">Noch keine Bausteine – links suchen und mit „+“ einfügen.</p>}
                   {teile.map((t, i) => {
                     const e = K.eintrag(k, t.ref)
-                    const tx = e ? K.textVon(e, p.sprache.blatt) : null
+                    const tx = teilText(k, t.ref, p.sprache.blatt, t.t)
                     const ist = zerlegt?.teile[i] ?? []
                     const orig = e && t.ueber ? original(e) : ist
                     const istOffen = offen === i
                     // Zeilentitel: geänderte Aufgabe (erstes Textfeld), sonst der Titel aus dem Katalog
                     const erstes = e?.typ === 'baustein' ? e.textfelder[0]?.pfad : undefined
-                    const titel = (erstes && t.ueber?.[erstes]) || tx?.titel || t.t || t.ref
+                    const titel = (erstes && t.ueber?.[erstes]) || tx.titel || t.t || t.ref
                     return (
                       <div key={i + t.ref}>
                         <EinfuegenHier i={i} />
@@ -331,7 +331,7 @@ export function Baukasten() {
                             <button type="button" className="ertitel" onClick={() => setOffen(istOffen ? -1 : i)} aria-expanded={istOffen} aria-label={`Text ändern: ${titel}`}>
                               <b>{titel}</b>
                               <small>
-                                {tx?.text} · aus „{tx?.quelle}“{t.ueber ? ' · ' : ''}
+                                {tx.text}{tx.quelle ? ` · aus „${tx.quelle}“` : ''}{t.ueber ? ' · ' : ''}
                                 {t.ueber && <span className="geaendert">geändert</span>}
                                 {e?.typ === 'baustein' && p.sprache.blatt === 'fr' && !e.sprache.fr ? ' · nur DE' : ''}
                               </small>

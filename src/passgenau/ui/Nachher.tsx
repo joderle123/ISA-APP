@@ -8,7 +8,7 @@ import { teilenErlaubt, usePg, useProfil } from './zustand'
 import { Ic, type Zeichen } from './zeichen'
 import { Chip, PgDialog, Seg } from './Teile'
 import { istBlattSchritt, uhrzeit } from './anzeige'
-import { BEOBACHTUNGEN, heuteIso, zielKurz } from './texte'
+import { heuteIso, zielKurz } from './texte'
 
 type Ergebnis = Rueckmeldung['ergebnis']
 const WERT: Record<Ergebnis, number> = { geklappt: 3, teils: 0, nicht: -3, beruhigt: 1, dabei: 1, 'nur-da': 0, abgebrochen: 0 }
@@ -43,10 +43,7 @@ export function useRueckmeldung() {
     for (const z of r.ziele ?? []) {
       pg.melde('ziel_richtung', { sitzung: nr, ziel: z.code, richtung: z.richtung, baustein: kern?.ref ?? null, wert: RICHTUNG_WERT[z.richtung] }, kern ? K.eintrag(k, kern.ref) : undefined)
     }
-    if (r.kind?.wahl) {
-      const gewaehlt = s.schritte.find((x) => K.eintrag(k, x.ref) && K.textVon(K.eintrag(k, x.ref)!, p.sprache.blatt).titel === r.kind!.wahl)
-      pg.melde('kind_wahl', { sitzung: nr, baustein: gewaehlt?.ref ?? null, wert: 1.5 }, gewaehlt ? K.eintrag(k, gewaehlt.ref) : undefined)
-    }
+    if (r.kind?.wahl) pg.melde('kind_wahl', { sitzung: nr, baustein: r.kind.wahl, wert: 1.5 }, K.eintrag(k, r.kind.wahl))
     if (r.kind?.daumen) pg.melde('kind_daumen', { sitzung: nr, wert: r.kind.daumen === 'hoch' ? 1 : -1 })
 
     // Plan fortschreiben; nicht gehaltene Folgesitzung passt sich an (5.6) – Zugang ändert sich nur per Klick (E-M14)
@@ -60,17 +57,24 @@ export function useRueckmeldung() {
     }
     if (pg.plan?.id === plan.id) pg.setPlan(neu)
     pg.setVerlauf((v) => ({ ...v, plaene: [neu, ...v.plaene.filter((x) => x.id !== neu.id)] }))
-    const notiz = K.notizText(p, neu, nr, r)
-    const quellen = [...new Set((s.blatt?.bausteine ?? []).map((b) => K.eintrag(k, b.ref)).flatMap((e) => (e?.typ === 'baustein' ? ['blatt:' + e.quelle.blatt] : [])))]
     let gespeichert = false
+    let notizId: string | null = null
     if (pg.darfRueckmelden && pg.ref) {
       const stapel = pg.stapelNehmen()
       pg.setSpeicherStatus({ art: 'laeuft', text: 'wird gespeichert …' })
       try {
-        await hub.rueckmeldung({
-          ref: pg.ref, planId: neu.id, sitzung: nr, ergebnis: r.ergebnis, ziele: r.ziele ?? [], chips: r.chips ?? [], ereignisse: stapel, notiz, gemacht: quellen,
-          plan: neu, vorlieben: pg.lernenKind ? pg.vor.kind : undefined, kind: r.kind,
+        // Notiz, Haken und Protokoll schreibt der Hub (nur aus Geklicktem); der Plan geht mit (P7)
+        const erg = await hub.rueckmeldung({
+          ref: pg.ref, planId: neu.id, sitzung: nr, ergebnis: r.ergebnis, ziele: r.ziele ?? [], chips: r.chips ?? [], ...(r.kind ? { kind: r.kind } : {}),
+          ereignisse: stapel, plan: neu, ...(pg.lernenKind && pg.darfSpeichern ? { vorlieben: pg.vor.kind } : {}), am: r.am,
         })
+        notizId = erg?.notizId ?? null
+        if (typeof erg?.rev === 'number') {
+          const rev = erg.rev
+          neu = { ...neu, rev }
+          if (pg.plan?.id === neu.id) pg.setPlan(neu)
+          pg.setVerlauf((v) => ({ ...v, plaene: v.plaene.map((x) => (x.id === neu.id ? { ...x, rev } : x)) }))
+        }
         gespeichert = true
         pg.setGespeichert((g) => ({ ...g, [neu.id]: uhrzeit() }))
         pg.setSpeicherStatus({ art: 'ok', text: 'Gespeichert ' + uhrzeit() })
@@ -84,7 +88,7 @@ export function useRueckmeldung() {
     const weiter = naechste ? (angepasst ? ` · Sitzung ${nr + 1} wurde angepasst` : ` · Sitzung ${nr + 1} baut darauf auf`) : ''
     const teilen = r.ergebnis === 'geklappt' && pg.schalter.teilen && pg.hubDa && teilenErlaubt(neu, pg.getauscht[neu.id] ?? 0)
     pg.hinweisZeigen(
-      (gespeichert ? 'Notiz im Dossier gespeichert' : pg.ohneKind ? 'Ohne Hub: Rückmeldung nur in dieser Planung' : 'Rückmeldung vermerkt (ohne Schreibrecht keine Notiz)') + weiter + '.',
+      (gespeichert ? (notizId ? 'Notiz im Dossier gespeichert' : 'Rückmeldung gespeichert (ohne Schreibrecht keine Notiz)') : pg.ohneKind ? 'Ohne Hub: Rückmeldung nur in dieser Planung' : 'Rückmeldung nur in dieser Planung (kein Recht zur Rückmeldung)') + weiter + '.',
       'ok',
       teilen ? { label: 'Fürs Team teilen', aktion: () => pg.setDlg({ art: 'teilen' }) } : undefined,
     )
@@ -108,12 +112,14 @@ export function Nachher({ nr }: { nr: number }) {
   const [wahl, setWahl] = useState<string | undefined>()
   const [daumen, setDaumen] = useState<'hoch' | 'runter' | undefined>()
   const rm = useRueckmeldung()
-  const k = pg.katalog!
-  const titel = (ref: string) => {
-    const e = K.eintrag(k, ref)
-    return e ? K.textVon(e, p.sprache.blatt).titel : ref
-  }
-  const wahlOptionen = leicht ? [...s.schritte.filter((x) => x.rolle === 'spiel' || x.rolle === 'bewegung').map((x) => titel(x.ref)), 'einfach da sein'] : []
+  const titel = (ref: string) => K.schrittTitel(plan, nr, ref) || ref
+  // Stimme des Kindes (E-M15): Weg 3 – die Optionen der Wahl (Schritt + `wahl`), sonst Spiel und Bewegung; Wert = Ref
+  const mitWahl = s.schritte.filter((x) => x.wahl?.length)
+  const wahlRefs = leicht
+    ? [...new Set(mitWahl.length ? mitWahl.flatMap((x) => [x.ref, ...x.wahl!.map((w) => w.ref)]) : s.schritte.filter((x) => x.rolle === 'spiel' || x.rolle === 'bewegung').map((x) => x.ref))].filter((x) => x !== 'pg:blatt')
+    : []
+  const wahlOptionen = wahlRefs.length ? [...wahlRefs.filter((x) => x !== 'pg:da-sein'), 'pg:da-sein'] : []
+  const chipListe: [string, string][] = pg.hallo?.chips?.length ? pg.hallo.chips.map((c) => [c.key, c.text]) : K.BEOBACHTUNG_CHIPS
   const r: Rueckmeldung | null = ergebnis
     ? {
         ergebnis,
@@ -124,7 +130,8 @@ export function Nachher({ nr }: { nr: number }) {
       }
     : null
   const notiz = r ? K.notizText(p, plan, nr, r) : ''
-  const quellen = new Set((s.blatt?.bausteine ?? []).map((b) => K.eintrag(k, b.ref)).filter((e) => e?.typ === 'baustein' && !/^[PWF]-/.test(e.quelle.nr)).map((e) => e!.id.split(':')[1]))
+  // Haken „gemacht“ setzt der Hub für jede Quelle b:<blatt>:<n> der Sitzung (Blatt und Schritte)
+  const quellen = new Set([...(s.blatt?.bausteine ?? []), ...s.schritte].map((b) => /^b:([^:]+):\d+$/.exec(b.ref)?.[1]).filter(Boolean))
   const beobachtung = !!r && ((r.ziele?.length ?? 0) > 0 || chips.length > 0)
   const ERG: [Ergebnis, string, Zeichen][] = krise
     ? [['beruhigt', 'Hat sich beruhigt', 'welle'], ['dabei', 'War dabei', 'person'], ['nur-da', 'Wollte nur da sein', 'herz'], ['abgebrochen', 'Abgebrochen', 'x']]
@@ -192,9 +199,9 @@ export function Nachher({ nr }: { nr: number }) {
       <div>
         <b className="pg-klein-titel">Beobachtet (optional)</b>
         <div className="pg-chips pg-mt">
-          {BEOBACHTUNGEN.map((c) => (
+          {chipListe.map(([c, text]) => (
             <Chip key={c} an={chips.includes(c)} onClick={() => setChips((l) => (l.includes(c) ? l.filter((x) => x !== c) : [...l, c]))}>
-              {c}
+              {text}
             </Chip>
           ))}
         </div>
@@ -207,7 +214,7 @@ export function Nachher({ nr }: { nr: number }) {
             <div className="pg-chips">
               {wahlOptionen.map((w) => (
                 <Chip key={w} an={wahl === w} onClick={() => setWahl(wahl === w ? undefined : w)}>
-                  {w}
+                  {titel(w)}
                 </Chip>
               ))}
             </div>

@@ -144,6 +144,8 @@ export function ersetzen(plan: Plan, ort: Ort, neu: KatalogEintrag): Plan {
 }
 
 export interface SuchFilter {
+  /** nur Blatt-Bausteine (Baukasten, Blatt) oder nur Stundenschritte (Baukasten, Ablauf) */
+  typ?: 'baustein' | 'schritt'
   rolle?: Rolle
   bogen?: string
   ziel?: string
@@ -164,6 +166,7 @@ export function suchen(k: Katalog, p: Profil, filter: SuchFilter, anzahl = 30): 
   const out: Bewertet[] = []
   for (const e of k.eintraege.values()) {
     if (e.id.startsWith('pg:')) continue
+    if (filter.typ && e.typ !== filter.typ) continue
     if (filter.rolle && !e.rolle.includes(filter.rolle)) continue
     if (filter.bogen && e.bogen !== filter.bogen) continue
     if (filter.ziel && !e.eldib.some((x) => x.code === filter.ziel) && !(filter.ziel.startsWith('kompetenz:') && e.kompetenz.includes(filter.ziel.slice(10)))) continue

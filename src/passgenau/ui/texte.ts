@@ -114,16 +114,17 @@ export function zugangText(z: Profil['zugang']): string {
   )
 }
 
-/** Feste Interessen-Liste (Konzept 3.2: 40 Chips, einmal angeklickt bleiben sie beim Kind) */
+/** Feste Interessen-Liste (Konzept 3.2: 40 Chips, einmal angeklickt bleiben sie beim Kind) – Schlüssel wie im Hub
+ *  (hub-quellen/passgenau.js INTERESSEN, `hallo.interessen`) */
 export const INTERESSEN: [string, string][] = [
-  ['fussball', 'Fußball'], ['basketball', 'Basketball'], ['tiere', 'Tiere'], ['pferde', 'Pferde'], ['hunde', 'Hunde'],
-  ['katzen', 'Katzen'], ['dinosaurier', 'Dinosaurier'], ['zeichnen', 'Zeichnen'], ['malen', 'Malen'], ['basteln', 'Basteln'],
-  ['bauen', 'Bauen / Lego'], ['autos', 'Autos'], ['zuege', 'Züge'], ['musik', 'Musik'], ['singen', 'Singen'],
-  ['tanzen', 'Tanzen'], ['gaming', 'Gaming'], ['natur', 'Natur'], ['garten', 'Garten'], ['kochen', 'Kochen'],
-  ['backen', 'Backen'], ['weltall', 'Weltall'], ['lesen', 'Lesen'], ['comics', 'Comics'], ['filme', 'Filme'],
-  ['fahrrad', 'Fahrrad'], ['schwimmen', 'Schwimmen'], ['turnen', 'Turnen'], ['kampfsport', 'Kampfsport'], ['klettern', 'Klettern'],
-  ['ritter', 'Ritter & Burgen'], ['prinzessin', 'Märchen'], ['superhelden', 'Superhelden'], ['technik', 'Technik'], ['experimente', 'Experimente'],
-  ['mode', 'Mode'], ['fotos', 'Fotos'], ['theater', 'Theater'], ['wasser', 'Wasser & Meer'], ['reisen', 'Länder & Reisen'],
+  ['fussball', 'Fußball'], ['tiere', 'Tiere'], ['pferde', 'Pferde'], ['hunde', 'Hunde'], ['katzen', 'Katzen'],
+  ['zeichnen', 'Zeichnen'], ['basteln', 'Basteln'], ['bauen', 'Bauen & Lego'], ['musik', 'Musik'], ['singen', 'Singen'],
+  ['tanzen', 'Tanzen'], ['gaming', 'Gaming'], ['natur', 'Natur'], ['kochen', 'Kochen & Backen'], ['autos', 'Autos & Fahrzeuge'],
+  ['weltall', 'Weltall'], ['dinosaurier', 'Dinosaurier'], ['superhelden', 'Superhelden'], ['lesen', 'Bücher & Geschichten'], ['comics', 'Comics'],
+  ['sport', 'Sport'], ['schwimmen', 'Schwimmen'], ['radfahren', 'Radfahren'], ['klettern', 'Klettern'], ['basketball', 'Basketball'],
+  ['theater', 'Theater'], ['fotografieren', 'Fotografieren'], ['technik', 'Technik'], ['roboter', 'Roboter'], ['experimente', 'Experimente'],
+  ['meer', 'Meer & Fische'], ['insekten', 'Insekten'], ['garten', 'Garten'], ['mode', 'Mode'], ['zaubern', 'Zaubern'],
+  ['puzzles', 'Puzzles & Rätsel'], ['brettspiele', 'Brettspiele'], ['feuerwehr', 'Feuerwehr'], ['ritter', 'Ritter & Burgen'], ['filme', 'Filme & Serien'],
 ]
 export const INTERESSE_NAME = Object.fromEntries(INTERESSEN) as Record<string, string>
 export function interesseName(k: string): string {
@@ -183,7 +184,6 @@ export const DAUMEN_GRUENDE: [import('../typen').DaumenGrund, string][] = [
   ['mag-nicht', 'mag ich nicht'],
 ]
 
-export const BEOBACHTUNGEN = ['hat mitgemacht', 'brauchte eine Pause', 'war unruhig', 'hat von sich erzählt', 'hat etwas Neues ausprobiert', 'wollte aufhören']
 
 /** Häufige Förderziele für „Ohne Kind planen“ (Codes aus dem ELDiB-Katalog) */
 export const ZIELE_OHNE_KIND = ['V-10', 'V-15', 'V-18', 'V-21', 'V-22', 'K-12', 'K-17', 'K-26', 'K-31', 'SOZ-14', 'SOZ-19', 'SOZ-32', 'SOZ-34', 'SOZ-37']

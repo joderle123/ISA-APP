@@ -497,10 +497,11 @@ await pruefung('Ethik 1/E-M1: Notiz enthält nur Angeklicktes; ohne Ziel-Richtun
   const t = notizText(sz.p, sz.plan, 1, r)
   soll(!/gelingt|Unterstützung/.test(t), `„gelingt“ ohne Klick: ${t}`)
   soll(!/,\s*\./.test(t) && t.includes('Hat geklappt.'), `Notiz: ${t}`)
-  const t2 = notizText(sz.p, sz.plan, 1, { ...r, ziele: [{ code: 'V-21', richtung: 'mit-hilfe' }], chips: ['war müde'] })
+  const t2 = notizText(sz.p, sz.plan, 1, { ...r, ziele: [{ code: 'V-21', richtung: 'mit-hilfe' }], chips: ['muede', 'gibt-es-nicht'] })
   soll(t2.includes('V-21') && t2.includes('gelingt mit Unterstützung') && t2.includes('War müde'), `Notiz mit Klicks: ${t2}`)
   const t3 = notizText(sz.p, PLAENE.find((x) => x.kind === 'mia' && x.weg === 'leicht')!.plan, 1, { ergebnis: 'beruhigt', am: '2026-10-09', ziele: [{ code: 'V-21', richtung: 'gelingt' }] })
-  soll(t3.startsWith('Passgenau – Beziehungszeit') && !t3.includes('gelingt'), `Weg 3: ${t3}`)
+  soll(/^Passgenau \(\d+ Min\.\) – Beziehungszeit/.test(t3) && !t3.includes('gelingt'), `Weg 3: ${t3}`)
+  soll(!t2.includes('gibt-es-nicht') && /^Passgenau( \d+\/\d+)? \(\d+ Min\.\)/.test(t), `Aufbau wie im Hub (nur bekannte Chips): ${t2}`)
   soll(!/2026|Mia/.test(t + t2 + t3), 'Notiz mit Datum oder Namen')
 })
 

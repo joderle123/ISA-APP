@@ -70,7 +70,8 @@ function ersetzeNamen(text: string, p: Profil): string {
   return t
 }
 
-/** Plan → Vorlage ohne Kind (E-M5). Eigene Texte werden gelistet (die Oberfläche lässt sie einzeln bestätigen). */
+/** Plan → Vorlage ohne Kind (E-M5). Eigene Texte werden gelistet (die Oberfläche lässt sie einzeln bestätigen); ihre Pfade
+ *  sind relativ zur Vorlage (`inhalt.sitzungen.<i>.schritte.<j>.ueber.<textpfad>`, PROTOKOLL.md) – wie im Hub. */
 export function fuerTeam(plan: Plan, p: Profil): { vorlage: Omit<PraxisVorlage, 'id' | 'version' | 'status' | 'erstellt'>; eigeneTexte: { pfad: string; text: string }[] } {
   const eigeneTexte: { pfad: string; text: string }[] = []
   const ueber = (u: Record<string, string> | undefined, pfad: string) => {
@@ -89,7 +90,7 @@ export function fuerTeam(plan: Plan, p: Profil): { vorlage: Omit<PraxisVorlage, 
     sitzungen: plan.sitzungen.map((s, si) => ({
       phase: s.phase,
       schritte: s.schritte.map((x, xi) => {
-        const u = ueber(x.ueber, `sitzungen.${si}.schritte.${xi}.ueber`)
+        const u = ueber(x.ueber, `inhalt.sitzungen.${si}.schritte.${xi}.ueber`)
         return { ref: x.ref, h: x.h, rolle: x.rolle, min: x.min, ...(u ? { ueber: u, ueberHerkunft: Object.fromEntries(Object.keys(u).map((k) => [k, 'eigen' as const])) } : {}) }
       }),
       ...(s.blatt
@@ -97,7 +98,7 @@ export function fuerTeam(plan: Plan, p: Profil): { vorlage: Omit<PraxisVorlage, 
             blatt: {
               titel: ersetzeNamen(s.blatt.titel, p),
               bausteine: s.blatt.bausteine.map((b, bi) => {
-                const u = ueber(b.ueber, `sitzungen.${si}.blatt.bausteine.${bi}.ueber`)
+                const u = ueber(b.ueber, `inhalt.sitzungen.${si}.blatt.bausteine.${bi}.ueber`)
                 return { ref: b.ref, h: b.h, ...(u ? { ueber: u, ueberHerkunft: Object.fromEntries(Object.keys(u).map((k) => [k, 'eigen' as const])) } : {}), ...(b.ausgeblendet?.length ? { ausgeblendet: b.ausgeblendet } : {}) }
               }),
             },
@@ -140,6 +141,9 @@ export function fuerTeam(plan: Plan, p: Profil): { vorlage: Omit<PraxisVorlage, 
       n: inhalt.n,
       sprachen: kindText.length && kindText.every((e) => e.sprache.fr) ? ['de', 'fr'] : ['de'],
       inhalt,
+      // Freigabe (E-M8): Belastung 2 oder heikle Bausteine → nur Psychologin oder Responsable
+      belastung: eintraege.reduce<0 | 1 | 2>((m, e) => (e.belastung > m ? e.belastung : m), 0),
+      sensibel: eintraege.some((e) => !!e.sensibel),
     },
     eigeneTexte,
   }
