@@ -30,6 +30,7 @@
     klar: { label: 'Deal', line: 'Konkret und fair. Das kann klappen.', good: true },
     vage: { label: 'Luftnummer', line: 'Klingt nett. Hilft beim nächsten Mal aber nicht.' },
   };
+  const KNALL_AB = 95; // ab hier eskaliert der Streit: nur Zurückspulen
   const DEFAULT_HEAT = { ich: -12, du: 14, weg: 6, fake: 10, echt: -15, halb: 10, klar: -15, vage: 6 };
   const LETTERS = ['A', 'B', 'C', 'D'];
   // Reihenfolge auf Stufe 1–3: abwechselnd, wer zuerst spricht (fair für beide Teams)
@@ -300,6 +301,7 @@
       cm.el,
       h('div', { class: 'row between clash-foot' }, h('p', { class: 'muted' }, 'Wie schaukelt sich der Streit hoch?'), ui.speakBtn(readAll)),
       G.solo ? ui.xHint('Mit dem X oben rechts kannst du jede Szene und jede Stufe überspringen. Ohne Grund.') : null,
+      G.solo && CREW.games && CREW.games.warumCard ? CREW.games.warumCard(CREW.games.didaktik('solo', 'clash'), { compact: true }) : null,
     ]);
     wrap.dataset.clash = 'intro';
     const n = sc.intro.length;
@@ -412,6 +414,8 @@
       joint ? duo(G) : makeAvatar(speaker, moodFor(G.heat), cfg.side === 'B').el,
       h('div', { class: 'clash-q-main' },
         h('div', { class: 'row clash-q-top' }, h('span', { class: 'eyebrow' }, 'Level ' + cfg.step + ' · ' + st.lang), tag),
+        // Perspektive zuerst: Das andere Team sagt in einem Wort, wie sich seine Figur gerade fühlt
+        !joint && !G.solo ? h('p', { class: 'clash-persp' }, CREW.icon('eye', 18), h('span', null, h('b', null, 'Erst: '), ctx.teams[cfg.side === 'A' ? 'B' : 'A'].name + ' sagt in einem Wort, wie sich ' + person(G, cfg.side === 'A' ? 'B' : 'A').name + ' gerade fühlt.')) : null,
         h('h2', null, q),
         G.solo ? starters : null),
       ui.speakBtn(readAll, { cls: 'clash-speak' }));
@@ -436,6 +440,7 @@
     const listenSide = speakSide === 'A' ? 'B' : 'A';
     const info = KIND[opt.kind] || KIND.weg;
     const delta = typeof opt.heat === 'number' ? opt.heat : DEFAULT_HEAT[opt.kind] || 0;
+    const knall = !info.good && clamp(G.heat + delta, 5, 100) >= KNALL_AB; // Eskalation: nur Zurückspulen
     const meter = heatMeter(G.heat);
     const cm = comic(G);
     // Tipp aus der Friedenstreppe: „Auch dem anderen gut zuhören und wiederholen.“
@@ -448,6 +453,9 @@
         h('span', { class: 'clash-delta ' + (delta <= 0 ? 'down' : 'up') }, 'Hitze ' + (delta <= 0 ? '−' : '+') + Math.abs(delta))),
       h('p', { class: 'lead' }, info.line),
       listenTip,
+      // Sprecher-Modus: Nach einer guten Antwort sagt eine Person den Satz laut, in der Rolle
+      info.good && !G.solo ? h('p', { class: 'muted small clash-sprecher' }, CREW.icon('speaker', 16), h('span', null, h('b', null, 'Sprecher-Modus: '), 'Eine Person sagt den Satz laut – so, wie ' + person(G, speakSide).name + ' ihn meint.')) : null,
+      knall ? h('p', { class: 'clash-knall' }, h('b', null, 'Es knallt! '), 'Hitze über ' + (KNALL_AB - 1) + '. Hier geht nur noch Zurückspulen.') : null,
       info.good ? null : h('p', { class: 'clash-rw-hint' }, ownIcon('rewind', 20), h('span', null, h('b', null, 'Zurückspulen: '), 'Nochmal probieren. Die Antwort zählt dann nicht.')));
     fb.style.visibility = 'hidden';
     const wrap = ctx.screen([hud(G, meter), cm.el, fb]);
@@ -473,7 +481,7 @@
     await ctx.sleep(300);
     const opts = info.good
       ? [{ label: 'Weiter', value: 'next', iconRight: 'right' }]
-      : [{ label: 'Trotzdem weiter', value: 'next', variant: 'ghost' }, { label: 'Zurückspulen', value: 'rewind', icon: 'undo', variant: 'yellow', id: 'clash-rewind' }];
+      : (knall ? [] : [{ label: 'Trotzdem weiter', value: 'next', variant: 'ghost' }]).concat([{ label: 'Zurückspulen', value: 'rewind', icon: 'undo', variant: 'yellow', id: 'clash-rewind' }]);
     const r = await ask(G, wrap, opts, 'end', true);
     return r === ctx.SKIP ? 'skip' : r;
   }
@@ -608,7 +616,7 @@
       { code: 'K-31', text: 'wählt im Streit beruhigende, versöhnliche Worte' },
       { code: 'SOZ-34', text: 'schlägt bei Streit faire Lösungen vor' },
     ],
-    teacherNote: 'Nach der ISA-Friedenstreppe. Eine Streit-Szene pro Session (Comic mit zwei Fantasiefiguren). Teilt die Crew in zwei Teams: Team A spricht für die linke Person, Team B für die rechte. In der Gruppe drei Züge auf Level 1–3 (Sicht, Gefühl, Bedürfnis; im Spiel „Replay“, „Innen drin“, „Was ich brauch“), abwechselnd Team A, B, A. Das Team einigt sich leise auf A–D und zeigt es mit der Antwort-Karte; du tippst die Antwort an. Pro Level gibt es vier Antworten: Ich-Botschaft („Klartext“), Vorwurf („Angriff“), Ausweichen („Abgetaucht“) und einen getarnten Vorwurf, der wie eine Ich-Botschaft klingt („Getarnter Angriff“). Die Satzanfänge liegen hinter dem Knopf „Tipp“. Es gibt kein Falsch: Nach einer schwachen Antwort könnt ihr zurückspulen. Level 4 (Versöhnen) und 5 (Deal) wählt die ganze Crew, die Mehrheit zählt. Tipp aus dem Material: Das andere Team wiederholt kurz, was es gehört hat. Satzanfänge für echte Streits: „Aus meiner Sicht …“, „Ich habe mich … gefühlt“, „Ich brauche …“, „Wäre es okay für dich, wenn …“, „Können wir uns darauf einigen, dass …“. Passt eine Szene gerade nicht (z. B. echter Streit in der Gruppe): „Andere Szene“ oder X-Karte auf dem ersten Bild.',
+    teacherNote: 'Nach der Friedenstreppe. Eine Streit-Szene pro Session (Comic mit zwei Fantasiefiguren). Teilt die Crew in zwei Teams: Team A spricht für die linke Person, Team B für die rechte. In der Gruppe drei Züge auf Level 1–3 (Sicht, Gefühl, Bedürfnis; im Spiel „Replay“, „Innen drin“, „Was ich brauch“), abwechselnd Team A, B, A. Das Team einigt sich leise auf A–D und zeigt es mit der Antwort-Karte; du tippst die Antwort an. Pro Level gibt es vier Antworten: Ich-Botschaft („Klartext“), Vorwurf („Angriff“), Ausweichen („Abgetaucht“) und einen getarnten Vorwurf, der wie eine Ich-Botschaft klingt („Getarnter Angriff“). Die Satzanfänge liegen hinter dem Knopf „Tipp“. Es gibt kein Falsch: Nach einer schwachen Antwort könnt ihr zurückspulen. Level 4 (Versöhnen) und 5 (Deal) wählt die ganze Crew, die Mehrheit zählt. Tipp aus dem Material: Das andere Team wiederholt kurz, was es gehört hat. Satzanfänge für echte Streits: „Aus meiner Sicht …“, „Ich habe mich … gefühlt“, „Ich brauche …“, „Wäre es okay für dich, wenn …“, „Können wir uns darauf einigen, dass …“. Passt eine Szene gerade nicht (z. B. echter Streit in der Gruppe): „Andere Szene“ oder X-Karte auf dem ersten Bild. Vertiefung: Vor jedem Team-Zug sagt das andere Team in einem Wort, wie sich seine Figur gerade fühlt. Nach einer guten Antwort sagt eine Person den Satz laut in der Rolle (Sprecher-Modus). Ab Hitze 95 knallt es – dann geht nur Zurückspulen.',
     debrief: [
       'Welches Level war heute am schwierigsten? Warum?',
       'Was hilft dir, erst mal runterzukommen, bevor du redest?',
@@ -645,6 +653,8 @@
         h('div', { class: 'row center' }, num, h('span', { class: 'display', style: { fontSize: '2em' } }, 'von ' + total)),
         best.isNew && cool > 0 ? h('span', { class: 'pill good' }, 'Neuer Bestwert!') : h('span', { class: 'pill' }, 'Dein Bestwert: ' + best.best),
         h('p', { class: 'muted' }, 'Zurückspulen ist kein Fehler. So findest du raus, was wirkt.')),
+      CREW.games && CREW.games.soloNach ? CREW.games.soloNach(CREW.games.didaktik('solo', 'clash')) : null,
+      h('p', { class: 'muted small', style: { textAlign: 'center' } }, 'Belastet dich gerade ein echter Streit? Rede mit jemandem, dem du vertraust – oder ruf 116 111 an (kostenlos, anonym).'),
     ], { center: true, narrow: true });
     wrap.dataset.clash = 'solo-end';
     CREW.sound.play('good');

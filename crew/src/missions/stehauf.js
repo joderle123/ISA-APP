@@ -22,7 +22,7 @@
       { code: 'SOZ-31', text: 'merkt, dass er/sie anders handelt als andere' },
       { code: 'SOZ-32', text: 'hört zu und respektiert andere Meinungen' },
     ],
-    teacherNote: '3 Karten, die dritte ist golden (Sterne ×2), danach eine Blitzrunde ohne Schätzen. Pro Karte: 1) Alle tippen geheim auf der Antwort-Karte (Zahl 0–10) ein, wie viele gleich aufstehen, und drücken „Fertig“. Die Zahl ist dann gesperrt und verdeckt. 2) Auf „Aufstehen!“ steht auf, für wen der Satz stimmt – nicht wegen der eigenen Schätzung. Du tippst die Zahl an, wie viele stehen (keine Namen). Die Zahl erscheint groß. 3) Auf „Zeigt her!“ tippen alle auf ZEIGEN. Du zählst nur zwei Dinge: Volltreffer (genau richtig) und 1 daneben. Genau = ★★, 1 daneben = ★. Alle Sterne gehören der Crew. Aufstehen ist freiwillig. Wer steht, darf etwas erzählen, muss aber nicht.',
+    teacherNote: '3 Karten, die dritte ist golden (Sterne ×2), danach eine Blitzrunde ohne Schätzen. Pro Karte: 1) Alle tippen geheim auf der Antwort-Karte (Zahl 0–10) ein, wie viele gleich aufstehen, und drücken „Fertig“. Die Zahl ist dann gesperrt und verdeckt. 2) Auf „Aufstehen!“ steht auf, für wen der Satz stimmt – nicht wegen der eigenen Schätzung. Du tippst die Zahl an, wie viele stehen (keine Namen). Die Zahl erscheint groß. 3) Auf „Zeigt her!“ tippen alle auf ZEIGEN. Du zählst nur zwei Dinge: Volltreffer (genau richtig) und 1 daneben. Genau = ★★, 1 daneben = ★. Alle Sterne gehören der Crew. Aufstehen ist freiwillig. Wer steht, darf etwas erzählen, muss aber nicht. Die Karten steigen an: Karte 1 Aufwärmen (Spaß), Karte 2 Erlebnis (Gefühle), Karte 3 golden (Stärke). Nach der Auflösung gibt es ein freiwilliges Mikro (20 Sekunden): Wer stand, erzählt einen Satz, die Sitzenden dürfen eine Wie- oder Was-Frage stellen.',
     debrief: [
       'Was hat euch heute überrascht?',
       'Mit wem hattest du heute etwas gemeinsam, das du nicht erwartet hast?',
@@ -36,9 +36,12 @@
       const { h, ui } = ctx;
       const N = ctx.crewSize;
       const ROUNDS = 3;
-      const cards = ctx.pick('stehauf', ROUNDS + 3);
-      const main = cards.slice(0, ROUNDS);
-      const blitz = cards.slice(ROUNDS);
+      // Karten steigen an: 1 Aufwärmen (Spaß), 2 Erlebnis (Gefühle), 3 golden (Stärke). Blitzrunde: Spaß/Zukunft.
+      const pickK = (kats, n) => ctx.pick('stehauf', n, (it) => kats.includes(it.kat));
+      const STUFEN = [{ kats: ['spass'], name: 'Aufwärmen' }, { kats: ['gefuehl'], name: 'Erlebnis' }, { kats: ['stark'], name: 'Stärke' }];
+      let main = STUFEN.map((st) => { const c = pickK(st.kats, 1)[0]; return c ? Object.assign({ stufe: st.name }, c) : null; }).filter(Boolean);
+      if (main.length < ROUNDS) main = main.concat(ctx.pick('stehauf', ROUNDS - main.length));
+      const blitz = pickK(['spass', 'zukunft'], 3);
       let pts = 0;
       let maxPts = 0;
       let played = 0;
@@ -70,7 +73,7 @@
         // 1) Karte + „So geht's“: schätzen, Fertig drücken
         if (gold) CREW.sound.play('unlock');
         const w1 = ctx.screen([
-          ui.say(h('span', null, h('span', { class: 'muted' }, 'Steh auf, wenn du '), clean(card.text)), { speakText: full, eyebrow: gold ? 'Goldene Karte · Sterne ×2' : 'Karte ' + (i + 1) + ' von ' + main.length, cls: 'sa-card' + (gold ? ' sa-gold' : '') }),
+          ui.say(h('span', null, h('span', { class: 'muted' }, 'Steh auf, wenn du '), clean(card.text)), { speakText: full, eyebrow: (gold ? 'Goldene Karte' : 'Karte ' + (i + 1) + ' von ' + main.length) + (card.stufe ? ' · ' + card.stufe : '') + (gold ? ' · Sterne ×2' : ''), cls: 'sa-card' + (gold ? ' sa-gold' : '') }),
           h('div', { class: 'sa-how' }, ui.steps([
             { icon: 'phone', title: 'Schätzen', text: 'Wie viele von euch ' + N + ' stehen gleich auf? Tipp deine Schätzung auf deinem iPad ein und drück Fertig.', extra: ui.paddleHint('zahl') },
             { icon: 'users', title: 'Aufstehen', text: 'Auf „Aufstehen!“ steht auf, für wen der Satz stimmt.' },
@@ -165,11 +168,24 @@
             h('span', { class: 'pill' }, near + ' × 1 daneben'),
             h('span', { class: 'pill accent' }, '+' + got + ' Crew-Punkte' + (gold ? ' (×2)' : ''))),
           h('p', { class: 'lead' }, standing === 0 ? 'Niemand. Auch das sagt etwas über die Crew.' : standing === N ? 'Alle! Da habt ihr etwas gemeinsam.' : 'Wer steht, darf was sagen. Muss aber nicht.'));
+        // Mikro: 20 Sekunden – wer stand, darf erzählen; die Sitzenden dürfen eine Wie- oder Was-Frage stellen
+        let mikro = null;
+        if (standing > 0) {
+          const t = ui.timer(20, { autostart: false });
+          const startBtn = ui.btn('Mikro an', () => { t.start(); startBtn.disabled = true; CREW.sound.play('go'); }, { small: true, variant: 'ghost', icon: 'speaker', id: 'sa-mikro' });
+          mikro = h('div', { class: 'card sa-mikro' },
+            h('div', { class: 'stack', style: { gap: '4px' } },
+              h('span', { class: 'eyebrow' }, 'Mikro · 20 Sekunden · freiwillig'),
+              h('b', null, 'Wer stand, darf einen Satz erzählen.'),
+              h('span', { class: 'muted' }, 'Die Sitzenden dürfen eine Wie- oder Was-Frage stellen.')),
+            h('div', { class: 'row', style: { gap: '10px', alignItems: 'center' } }, t.el, startBtn));
+        }
         const w5 = ctx.screen([
           h('span', { class: 'eyebrow' }, 'Auflösung'),
           h('h2', null, standing + ' von ' + N + ' standen'),
           got ? starRow : h('p', { class: 'lead muted' }, 'Diesmal keine Sterne. Nächste Karte!'),
           verdict,
+          mikro,
         ], { center: true });
         CREW.sound.play('reveal');
         if (exact) { CREW.sound.play('great'); ui.confetti(exact * 40); }

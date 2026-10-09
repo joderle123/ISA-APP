@@ -178,7 +178,7 @@
     },
     'je-nach-ort': {
       warum: 'Niemand ist überall gleich. Ihr stellt ein, wie eine Figur an verschiedenen Orten ist. So versteht ihr, warum Leute mal laut, mal leise sind.',
-      skill: 'Je nach Ort anders – und das ist okay',
+      skill: 'Je nach Ort anders sein dürfen',
       geuebt: 'Verstehen, dass Menschen je nach Ort anders sind – und nicht vorschnell urteilen.',
       fragen: ['Wo war die Figur am meisten anders?', 'Was war schwer: einschätzen oder vergleichen?', 'Wo bist du diese Woche anders als sonst – und warum?'],
       lehrer: {

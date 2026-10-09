@@ -1023,6 +1023,11 @@ select.sel { font: inherit; color: var(--text); background: var(--panel); border
 .game-screen .row > .btn { max-width: 100%; }
 .game-screen .row > .btn.big { white-space: normal; text-align: center; line-height: 1.2; }
 
+/* Mission „Wer steht?“: freiwilliges Mikro nach der Auflösung */
+.sa-mikro { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; width: 100%; max-width: 760px; margin: 0 auto; text-align: left; }
+.sa-mikro .timer { width: 72px; height: 72px; }
+.sa-mikro .timer .num { font-size: 1.4em; }
+
 /* ---- missions/clash.css ---- */
 /* =========================================================
    Mission „Clash“ – Friedenstreppe
@@ -1452,6 +1457,9 @@ select.sel { font: inherit; color: var(--text); background: var(--panel); border
 .clash-heat-hint { display: flex; align-items: center; gap: 10px; flex: 1 1 320px; padding: 10px 14px; border-radius: var(--radius-sm); background: color-mix(in srgb, var(--clash-warm) 20%, transparent); border: 2px solid var(--clash-warm); font-weight: 600; }
 .clash-heat-hint .clash-flame { color: var(--clash-hot); }
 .clash-rw-hint { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 0.92em; color: var(--muted); }
+.clash-persp { display: flex; gap: 8px; align-items: center; margin: 2px 0 4px; font-size: .95em; }
+.clash-sprecher { display: flex; gap: 6px; align-items: center; }
+.clash-knall { color: var(--hot); font-weight: 800; }
 
 /* ---- missions/feed.css ---- */
 /* =========================================================
@@ -2014,6 +2022,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
 }
 .feed-res-row.other { color: var(--muted); font-weight: 500; }
 .feed-res-row .pill { flex: none; white-space: nowrap; }
+.feed-why { display: flex; gap: 8px; align-items: center; margin: 4px 0; }
 
 /* ---- missions/radar.css ---- */
 /* Mission „Gefühls-Radar“ – alle Klassen mit Präfix radar- */
@@ -2340,6 +2349,7 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   .radar-tally .t-item.radar-titem .icon-btn { width: 48px; height: 48px; }
   .radar-tally .t-item.radar-titem { grid-template-columns: 48px minmax(0, 1fr) 48px; padding: 16px 8px 10px; gap: 8px 4px; }
 }
+.radar-nachbar { gap: 12px; align-items: center; padding: 10px 14px; }
 
 /* ---- missions/reframe.css ---- */
 /* =========================================================
@@ -2857,6 +2867,8 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   .reframe-result { grid-template-columns: minmax(0, 1fr) auto; }
   .reframe-result-msg { display: none; }
 }
+.reframe-feedback { gap: 10px; align-items: center; padding: 10px 14px; }
+.reframe-l2-teaser { display: flex; flex-direction: column; gap: 2px; padding: 10px 14px; }
 
 /* ---- solo/solo-zone.css ---- */
 /* Solo-Zone: „Chill-Zone“ und „Gefühls-Decoder“ – alle Klassen mit Präfix solo- */
@@ -3445,6 +3457,13 @@ button.feed-opt[disabled]:not(.picked) { opacity: 0.55; }
   .solo-sense-mini { min-width: 0; flex: 1 1 56px; padding: 10px 6px; font-size: 0.85em; }
   .solo-seg-btn b { font-size: 1.8em; }
 }
+
+/* Chill-Zone: Anspannung vorher/nachher (nur im Speicher der Sitzung) */
+.solo-pegel-card { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.solo-pegel-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.solo-pegel { min-width: 56px; min-height: 48px; padding: 8px 12px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--bg); color: inherit; font: inherit; font-weight: 800; cursor: pointer; }
+.solo-pegel.sel { background: var(--yellow); color: var(--yellow-ink); }
+.solo-screen .warum-card { text-align: left; }
 
 /* ---- base/hq.css ---- */
 /* Crew-HQ – Szene als Inline-SVG. Alle Klassen mit Präfix hq-.
@@ -8609,7 +8628,7 @@ var qrcode = function() {
     },
     'je-nach-ort': {
       warum: 'Niemand ist überall gleich. Ihr stellt ein, wie eine Figur an verschiedenen Orten ist. So versteht ihr, warum Leute mal laut, mal leise sind.',
-      skill: 'Je nach Ort anders – und das ist okay',
+      skill: 'Je nach Ort anders sein dürfen',
       geuebt: 'Verstehen, dass Menschen je nach Ort anders sind – und nicht vorschnell urteilen.',
       fragen: ['Wo war die Figur am meisten anders?', 'Was war schwer: einschätzen oder vergleichen?', 'Wo bist du diese Woche anders als sonst – und warum?'],
       lehrer: {
@@ -11839,6 +11858,7 @@ var qrcode = function() {
     klar: { label: 'Deal', line: 'Konkret und fair. Das kann klappen.', good: true },
     vage: { label: 'Luftnummer', line: 'Klingt nett. Hilft beim nächsten Mal aber nicht.' },
   };
+  const KNALL_AB = 95; // ab hier eskaliert der Streit: nur Zurückspulen
   const DEFAULT_HEAT = { ich: -12, du: 14, weg: 6, fake: 10, echt: -15, halb: 10, klar: -15, vage: 6 };
   const LETTERS = ['A', 'B', 'C', 'D'];
   // Reihenfolge auf Stufe 1–3: abwechselnd, wer zuerst spricht (fair für beide Teams)
@@ -12109,6 +12129,7 @@ var qrcode = function() {
       cm.el,
       h('div', { class: 'row between clash-foot' }, h('p', { class: 'muted' }, 'Wie schaukelt sich der Streit hoch?'), ui.speakBtn(readAll)),
       G.solo ? ui.xHint('Mit dem X oben rechts kannst du jede Szene und jede Stufe überspringen. Ohne Grund.') : null,
+      G.solo && CREW.games && CREW.games.warumCard ? CREW.games.warumCard(CREW.games.didaktik('solo', 'clash'), { compact: true }) : null,
     ]);
     wrap.dataset.clash = 'intro';
     const n = sc.intro.length;
@@ -12221,6 +12242,8 @@ var qrcode = function() {
       joint ? duo(G) : makeAvatar(speaker, moodFor(G.heat), cfg.side === 'B').el,
       h('div', { class: 'clash-q-main' },
         h('div', { class: 'row clash-q-top' }, h('span', { class: 'eyebrow' }, 'Level ' + cfg.step + ' · ' + st.lang), tag),
+        // Perspektive zuerst: Das andere Team sagt in einem Wort, wie sich seine Figur gerade fühlt
+        !joint && !G.solo ? h('p', { class: 'clash-persp' }, CREW.icon('eye', 18), h('span', null, h('b', null, 'Erst: '), ctx.teams[cfg.side === 'A' ? 'B' : 'A'].name + ' sagt in einem Wort, wie sich ' + person(G, cfg.side === 'A' ? 'B' : 'A').name + ' gerade fühlt.')) : null,
         h('h2', null, q),
         G.solo ? starters : null),
       ui.speakBtn(readAll, { cls: 'clash-speak' }));
@@ -12245,6 +12268,7 @@ var qrcode = function() {
     const listenSide = speakSide === 'A' ? 'B' : 'A';
     const info = KIND[opt.kind] || KIND.weg;
     const delta = typeof opt.heat === 'number' ? opt.heat : DEFAULT_HEAT[opt.kind] || 0;
+    const knall = !info.good && clamp(G.heat + delta, 5, 100) >= KNALL_AB; // Eskalation: nur Zurückspulen
     const meter = heatMeter(G.heat);
     const cm = comic(G);
     // Tipp aus der Friedenstreppe: „Auch dem anderen gut zuhören und wiederholen.“
@@ -12257,6 +12281,9 @@ var qrcode = function() {
         h('span', { class: 'clash-delta ' + (delta <= 0 ? 'down' : 'up') }, 'Hitze ' + (delta <= 0 ? '−' : '+') + Math.abs(delta))),
       h('p', { class: 'lead' }, info.line),
       listenTip,
+      // Sprecher-Modus: Nach einer guten Antwort sagt eine Person den Satz laut, in der Rolle
+      info.good && !G.solo ? h('p', { class: 'muted small clash-sprecher' }, CREW.icon('speaker', 16), h('span', null, h('b', null, 'Sprecher-Modus: '), 'Eine Person sagt den Satz laut – so, wie ' + person(G, speakSide).name + ' ihn meint.')) : null,
+      knall ? h('p', { class: 'clash-knall' }, h('b', null, 'Es knallt! '), 'Hitze über ' + (KNALL_AB - 1) + '. Hier geht nur noch Zurückspulen.') : null,
       info.good ? null : h('p', { class: 'clash-rw-hint' }, ownIcon('rewind', 20), h('span', null, h('b', null, 'Zurückspulen: '), 'Nochmal probieren. Die Antwort zählt dann nicht.')));
     fb.style.visibility = 'hidden';
     const wrap = ctx.screen([hud(G, meter), cm.el, fb]);
@@ -12282,7 +12309,7 @@ var qrcode = function() {
     await ctx.sleep(300);
     const opts = info.good
       ? [{ label: 'Weiter', value: 'next', iconRight: 'right' }]
-      : [{ label: 'Trotzdem weiter', value: 'next', variant: 'ghost' }, { label: 'Zurückspulen', value: 'rewind', icon: 'undo', variant: 'yellow', id: 'clash-rewind' }];
+      : (knall ? [] : [{ label: 'Trotzdem weiter', value: 'next', variant: 'ghost' }]).concat([{ label: 'Zurückspulen', value: 'rewind', icon: 'undo', variant: 'yellow', id: 'clash-rewind' }]);
     const r = await ask(G, wrap, opts, 'end', true);
     return r === ctx.SKIP ? 'skip' : r;
   }
@@ -12417,7 +12444,7 @@ var qrcode = function() {
       { code: 'K-31', text: 'wählt im Streit beruhigende, versöhnliche Worte' },
       { code: 'SOZ-34', text: 'schlägt bei Streit faire Lösungen vor' },
     ],
-    teacherNote: 'Nach der ISA-Friedenstreppe. Eine Streit-Szene pro Session (Comic mit zwei Fantasiefiguren). Teilt die Crew in zwei Teams: Team A spricht für die linke Person, Team B für die rechte. In der Gruppe drei Züge auf Level 1–3 (Sicht, Gefühl, Bedürfnis; im Spiel „Replay“, „Innen drin“, „Was ich brauch“), abwechselnd Team A, B, A. Das Team einigt sich leise auf A–D und zeigt es mit der Antwort-Karte; du tippst die Antwort an. Pro Level gibt es vier Antworten: Ich-Botschaft („Klartext“), Vorwurf („Angriff“), Ausweichen („Abgetaucht“) und einen getarnten Vorwurf, der wie eine Ich-Botschaft klingt („Getarnter Angriff“). Die Satzanfänge liegen hinter dem Knopf „Tipp“. Es gibt kein Falsch: Nach einer schwachen Antwort könnt ihr zurückspulen. Level 4 (Versöhnen) und 5 (Deal) wählt die ganze Crew, die Mehrheit zählt. Tipp aus dem Material: Das andere Team wiederholt kurz, was es gehört hat. Satzanfänge für echte Streits: „Aus meiner Sicht …“, „Ich habe mich … gefühlt“, „Ich brauche …“, „Wäre es okay für dich, wenn …“, „Können wir uns darauf einigen, dass …“. Passt eine Szene gerade nicht (z. B. echter Streit in der Gruppe): „Andere Szene“ oder X-Karte auf dem ersten Bild.',
+    teacherNote: 'Nach der Friedenstreppe. Eine Streit-Szene pro Session (Comic mit zwei Fantasiefiguren). Teilt die Crew in zwei Teams: Team A spricht für die linke Person, Team B für die rechte. In der Gruppe drei Züge auf Level 1–3 (Sicht, Gefühl, Bedürfnis; im Spiel „Replay“, „Innen drin“, „Was ich brauch“), abwechselnd Team A, B, A. Das Team einigt sich leise auf A–D und zeigt es mit der Antwort-Karte; du tippst die Antwort an. Pro Level gibt es vier Antworten: Ich-Botschaft („Klartext“), Vorwurf („Angriff“), Ausweichen („Abgetaucht“) und einen getarnten Vorwurf, der wie eine Ich-Botschaft klingt („Getarnter Angriff“). Die Satzanfänge liegen hinter dem Knopf „Tipp“. Es gibt kein Falsch: Nach einer schwachen Antwort könnt ihr zurückspulen. Level 4 (Versöhnen) und 5 (Deal) wählt die ganze Crew, die Mehrheit zählt. Tipp aus dem Material: Das andere Team wiederholt kurz, was es gehört hat. Satzanfänge für echte Streits: „Aus meiner Sicht …“, „Ich habe mich … gefühlt“, „Ich brauche …“, „Wäre es okay für dich, wenn …“, „Können wir uns darauf einigen, dass …“. Passt eine Szene gerade nicht (z. B. echter Streit in der Gruppe): „Andere Szene“ oder X-Karte auf dem ersten Bild. Vertiefung: Vor jedem Team-Zug sagt das andere Team in einem Wort, wie sich seine Figur gerade fühlt. Nach einer guten Antwort sagt eine Person den Satz laut in der Rolle (Sprecher-Modus). Ab Hitze 95 knallt es – dann geht nur Zurückspulen.',
     debrief: [
       'Welches Level war heute am schwierigsten? Warum?',
       'Was hilft dir, erst mal runterzukommen, bevor du redest?',
@@ -12454,6 +12481,8 @@ var qrcode = function() {
         h('div', { class: 'row center' }, num, h('span', { class: 'display', style: { fontSize: '2em' } }, 'von ' + total)),
         best.isNew && cool > 0 ? h('span', { class: 'pill good' }, 'Neuer Bestwert!') : h('span', { class: 'pill' }, 'Dein Bestwert: ' + best.best),
         h('p', { class: 'muted' }, 'Zurückspulen ist kein Fehler. So findest du raus, was wirkt.')),
+      CREW.games && CREW.games.soloNach ? CREW.games.soloNach(CREW.games.didaktik('solo', 'clash')) : null,
+      h('p', { class: 'muted small', style: { textAlign: 'center' } }, 'Belastet dich gerade ein echter Streit? Rede mit jemandem, dem du vertraust – oder ruf 116 111 an (kostenlos, anonym).'),
     ], { center: true, narrow: true });
     wrap.dataset.clash = 'solo-end';
     CREW.sound.play('good');
@@ -12838,7 +12867,10 @@ var qrcode = function() {
     clear(holder);
     holder.appendChild(h('div', { class: 'card feed-call enter' },
       h('div', { class: 'feed-call-h' }, CREW.icon('eye', 22), h('b', null, 'Was zeigen die Teams?')),
-      rows, h('div', { class: 'row end' }, reveal)));
+      rows,
+      // Begründen vor dem Auflösen: ein Satz pro Team
+      h('p', { class: 'feed-why' }, CREW.icon('chat', 18), h('span', null, h('b', null, 'Vor dem Auflösen: '), 'Jedes Team sagt in einem Satz, warum.')),
+      h('div', { class: 'row end' }, reveal)));
     mark(G, cfg.stage + '-call');
     scrollIn(reveal);
     return ctx.waitFor(p2);
@@ -13329,6 +13361,7 @@ var qrcode = function() {
       kinds,
       h('p', { class: 'muted' }, G.solo ? 'Tippe an, was du machen würdest. Du siehst sofort, was passiert.' : 'Teilt euch in zwei Teams. Jedes Team einigt sich leise und zeigt es.'),
       G.solo ? ui.xHint('Mit dem X oben rechts kannst du jeden Post und jede Runde überspringen. Ohne Grund.') : null,
+      G.solo && CREW.games && CREW.games.warumCard ? CREW.games.warumCard(CREW.games.didaktik('solo', 'feed'), { compact: true }) : null,
       formula);
     G.wrap = ctx.screen([h('div', { class: 'feed-main feed-intro' }, h('div', { class: 'feed-left' }, lock.el), side)]);
     lock.run();
@@ -13372,6 +13405,7 @@ var qrcode = function() {
         h('div', { class: 'feed-endrow' }, CREW.icon('star', 48), num, h('span', { class: 'display feed-endlbl' }, 'von ' + G.max.solo)),
         best.isNew && G.pts.solo > 0 ? h('span', { class: 'pill good' }, 'Neuer Bestwert!') : h('span', { class: 'pill' }, 'Dein Bestwert: ' + best.best)),
       tipCard(),
+      CREW.games && CREW.games.soloNach ? CREW.games.soloNach(CREW.games.didaktik('solo', 'feed')) : null,
     ], { center: true, narrow: true });
     G.wrap = wrap;
     CREW.sound.play('good');
@@ -13426,7 +13460,7 @@ var qrcode = function() {
       { code: 'SOZ-37', text: 'versteht, wie es anderen geht, und nimmt Rücksicht' },
       { code: 'SOZ-39', text: 'entscheidet nach eigenen Werten, auch unter Druck' },
     ],
-    teacherNote: 'Zwei Teams, drei schnelle Runden auf einem erfundenen Handy („Glimmr“). Rundentypen: Echt, Meinung oder Fake? (Antwort-Karte A = Echt, B = Meinung, C = Fake; Fake erwischt = 2 Punkte), Was machst du? (A–D), Gerücht-Kette (bei jedem Schritt: Ja = wir stoppen hier), Gruppendruck (A–D). Jedes Team einigt sich leise. Auf „Zeigt her!“ hält pro Team eine Person die Karte hoch (oder alle, dann zählt die Mehrheit). Du tippst an, was jedes Team zeigt. Punkte: stark 3, gut 2, okay 1, riskant 0; Echt/Meinung 1 pro Kommentar, Fake 2; Kette: früh gestoppt 2, später 1, plus 1 für einen starken Weg. Beide Teamkonten zählen am Ende zusammen für die Crew. Es gibt kein „Falsch“: Die Folgen werden nur sichtbar. „Alle Wege“ zeigt, was die anderen Antworten bewirkt hätten – gut zum Nachfragen. Vapes, Familie und Geld sind als heikel markiert. Die X-Karte überspringt einen Kommentar oder eine Runde. Am Ende steht die BEE SECURE Helpline (8002 1234).',
+    teacherNote: 'Zwei Teams, drei schnelle Runden auf einem erfundenen Handy („Glimmr“). Rundentypen: Echt, Meinung oder Fake? (Antwort-Karte A = Echt, B = Meinung, C = Fake; Fake erwischt = 2 Punkte), Was machst du? (A–D), Gerücht-Kette (bei jedem Schritt: Ja = wir stoppen hier), Gruppendruck (A–D). Jedes Team einigt sich leise. Auf „Zeigt her!“ hält pro Team eine Person die Karte hoch (oder alle, dann zählt die Mehrheit). Du tippst an, was jedes Team zeigt. Punkte: stark 3, gut 2, okay 1, riskant 0; Echt/Meinung 1 pro Kommentar, Fake 2; Kette: früh gestoppt 2, später 1, plus 1 für einen starken Weg. Beide Teamkonten zählen am Ende zusammen für die Crew. Es gibt kein „Falsch“: Die Folgen werden nur sichtbar. „Alle Wege“ zeigt, was die anderen Antworten bewirkt hätten – gut zum Nachfragen. Vapes, Familie und Geld sind als heikel markiert. Die X-Karte überspringt einen Kommentar oder eine Runde. Am Ende steht die BEE SECURE Helpline (8002 1234). Vertiefung: Bevor du auflöst, sagt jedes Team einen Satz, warum es das gezeigt hat (Begründen).',
     debrief: [
       'Warum leiten Leute Gerüchte weiter, obwohl sie nicht wissen, ob es stimmt?',
       'Hast du schon mal erlebt, dass online etwas ganz anders war als in echt?',
@@ -13690,7 +13724,7 @@ var qrcode = function() {
       h('div', { class: 'radar-intro enter-2' },
         h('div', { class: 'radar-dialbox' }, d.el),
         h('div', { class: 'stack' },
-          step(1, 'Gefühl wählen', 'Lies die Situation. Wähl geheim ein Gefühl.', ui.paddleHint('emo')),
+          step(1, 'Gefühl wählen', 'Lies die Situation. Wähl geheim ein Gefühl – und tipp im Kopf, was die Person links wählt.', ui.paddleHint('emo')),
           step(2, 'Radar-Profi schätzt', 'Eine Person tippt: Wie stark fühlt die Crew das?'),
           step(3, 'Stärke zeigen', 'Alle zeigen 0 bis 10. Trifft der Tipp?', ui.paddleHint('zahl')))),
     ]);
@@ -13706,6 +13740,7 @@ var qrcode = function() {
       ui.say(card.text, { eyebrow: 'Situation', cls: 'radar-sitcard' }),
       h('div', { class: 'radar-legend enter-2', 'aria-hidden': 'true' }, EMOS.map((e) => h('span', { class: 'radar-lg' }, emoBadge(e.id, 30), h('span', null, e.id)))),
       h('p', { class: 'lead enter-3' }, 'Welches Gefühl kommt bei dir zuerst? Wähl es geheim.'),
+      h('div', { class: 'card row radar-nachbar enter-3' }, CREW.icon('users', 24), h('span', null, h('b', null, 'Nachbar-Tipp: '), 'Welches Gefühl wählt wohl die Person links von dir? Merk es dir.')),
     ]);
     const a1 = await ctx.waitFor(ui.choice(w1, [{ label: 'Alle bereit', value: 'go', iconRight: 'right' }], { align: 'end' }));
     if (a1 === ctx.SKIP) return { skip: 'replace' };
@@ -13742,7 +13777,7 @@ var qrcode = function() {
       bar,
       h('div', { class: 'row center radar-legend2' }, shown.map((e, i) => h('span', { class: 'radar-lchip pop', style: { animationDelay: 300 + i * 90 + 'ms' } }, emoBadge(e.id, 34), h('span', null, e.id), h('b', null, '× ' + counts[e.id])))),
       h('p', { class: 'lead enter-3', style: { textAlign: 'center' } }, line),
-      h('p', { class: 'muted enter-3', style: { textAlign: 'center' } }, 'Wer mag: Warum gerade dieses Gefühl?'),
+      h('p', { class: 'muted enter-3', style: { textAlign: 'center' } }, 'Nachbar-Tipp: Lag dein Tipp für links richtig? Wer mag, fragt: „Warum gerade dieses Gefühl?“'),
     ], { center: true });
     CREW.sound.play('reveal');
     requestAnimationFrame(() => requestAnimationFrame(() => {
@@ -13913,7 +13948,7 @@ var qrcode = function() {
       { code: 'SOZ-31', text: 'merkt, dass andere in derselben Situation anders reagieren' },
       { code: 'SOZ-37', text: 'versteht die Gefühle anderer und nimmt sie ernst' },
     ],
-    teacherNote: 'Zwei Antwort-Karten: „Gefühl“ und „Zahl 0–10“. 2 Runden. Situation vorlesen, alle wählen geheim ein Gefühl und halten auf „Zeigt her!“ hoch. Du zählst mit. Dann schätzt der Radar-Profi laut den Crew-Schnitt (0–10). Der Radar-Profi wechselt reihum, beginnend links von dir. Du stellst den Tipp ein, alle zeigen ihre Stärke, du tippst die Zahlen ein. ±0,5 = Volltreffer, ±1,5 = knapp. Sind alle Karten eingetippt, geht es von allein weiter. Das Wort-Upgrade (nur Runde 1) ist freiwillig und nur zum Reden. Es gibt keine falschen Gefühle. X-Karte beim Lesen = neue Situation.',
+    teacherNote: 'Zwei Antwort-Karten: „Gefühl“ und „Zahl 0–10“. 2 Runden. Situation vorlesen, alle wählen geheim ein Gefühl und halten auf „Zeigt her!“ hoch. Du zählst mit. Dann schätzt der Radar-Profi laut den Crew-Schnitt (0–10). Der Radar-Profi wechselt reihum, beginnend links von dir. Du stellst den Tipp ein, alle zeigen ihre Stärke, du tippst die Zahlen ein. ±0,5 = Volltreffer, ±1,5 = knapp. Sind alle Karten eingetippt, geht es von allein weiter. Das Wort-Upgrade (nur Runde 1) ist freiwillig und nur zum Reden. Es gibt keine falschen Gefühle. X-Karte beim Lesen = neue Situation. Nachbar-Tipp: Vor „Zeigt her!“ schätzt jede:r im Kopf, welches Gefühl die Person links wählt – danach kurz vergleichen und nachfragen (Perspektive, nichts wird gezählt).',
     debrief: [
       'Warum fühlen Menschen in der gleichen Situation so verschieden?',
       'Welche Situation hat die meisten verschiedenen Gefühle ausgelöst? Warum wohl?',
@@ -14176,7 +14211,7 @@ var qrcode = function() {
         h('div', { class: 'reframe-steps' },
           step(1, 'Spruch', 'Jemand bekommt einen blöden Spruch gesagt.'),
           step(2, 'Kontern', 'Euer Team macht in 30 Sekunden eine Stärke daraus.'),
-          step(3, 'Überzeugt?', 'Das andere Team stimmt ab. Jedes Ja = 1 Punkt.'))),
+          step(3, 'Feedback', 'Das andere Team sagt, was stark war – dann Ja-Karten. Jedes Ja = 1 Punkt.'))),
     ]);
     await ctx.waitFor(ui.choice(acts, [{ label: 'Battle starten', value: 'go', iconRight: 'play', id: 'rf-start' }]));
   }
@@ -14226,7 +14261,7 @@ var qrcode = function() {
         flipTag(card, { small: true }).el),
       h('div', { class: 'reframe-duo enter-2' }, panel(first, 0), panel(second, 1)),
       h('div', { class: 'row between enter-3' },
-        h('p', { class: 'muted' }, 'Gleich bewertet jedes Team das andere.'),
+        h('p', { class: 'muted' }, 'Gleich gibt jedes Team dem anderen Feedback: Was war stark?'),
         ui.paddleHint('janein', 'Überzeugt?')),
     ]);
     const r2 = await ctx.waitFor(ui.choice(v2.acts, [{ label: 'Abstimmen', value: 'go', iconRight: 'right', id: 'rf-vote-go' }]));
@@ -14242,7 +14277,8 @@ var qrcode = function() {
       steppers[t].el);
     const v3 = view(ctx, [
       hud(G, label),
-      h('div', { class: 'stack enter', style: { gap: '6px' } }, h('h2', null, 'Wie viele Ja?'), h('p', { class: 'muted' }, 'Tippt die Ja-Karten ein. Jedes Ja bringt auch Crew-Energie.')),
+      h('div', { class: 'card row reframe-feedback enter' }, CREW.icon('star', 22), h('span', null, h('b', null, 'Erst Feedback: '), 'Jedes Team sagt dem anderen einen Satz: „Stark an eurem Konter war …“')),
+      h('div', { class: 'stack enter', style: { gap: '6px' } }, h('h2', null, 'Wie viele Ja?'), h('p', { class: 'muted' }, 'Dann die Ja-Karten. Tippt sie ein – jedes Ja bringt auch Crew-Energie.')),
       h('div', { class: 'reframe-duo enter-2' }, votePanel(first), votePanel(second)),
     ]);
     const r3 = await ctx.waitFor(ui.choice(v3.acts, [{ label: 'Auswerten', value: 'go', iconRight: 'right', id: 'rf-vote-done' }]));
@@ -14479,7 +14515,7 @@ var qrcode = function() {
       { code: 'K-28', text: 'macht anderen mit Worten Mut und lobt sie' },
       { code: 'K-32', text: 'würdigt Beiträge anderer und baut auf ihren Ideen auf' },
     ],
-    teacherNote: 'Im Spiel heißt die Mission „Konter-Battle“, das Etikett „Spruch“ und der Stärken-Turm „Crew-Tower“. Zwei Teams. Battle (2 Runden): Ein Etikett erscheint („Du bist zu laut.“). 30 Sekunden überlegt jedes Team einen Reframe („Wer laut ist, …“). Beide Teams sagen ihren Satz laut. Dann bewertet jedes Team das ANDERE Team mit der Ja/Nein-Karte, du stimmst immer mit. Tippe die Ja-Stimmen ein: Jedes Ja ist ein Punkt, bei Mehrheit wächst der Stärken-Turm. Danach zeigt das Spiel zwei Profi-Reframes. Speed-Match (1 Runde, nur wenn die Zeit reicht): Ein Profi-Reframe erscheint, die Teams halten die passende Buchstaben-Karte (A–D) hoch. Du tippst, welches Team zuerst war und welche Karte es zeigt. Bei guter Begründung für eine andere Karte kannst du trotzdem +2 geben. Die Etiketten sind allgemein. Bitte darauf achten, dass niemand sie auf eine Person im Raum bezieht. Eigene Etiketten nennen ist in der Nachbesprechung freiwillig.',
+    teacherNote: 'Im Spiel heißt die Mission „Konter-Battle“, das Etikett „Spruch“ und der Stärken-Turm „Crew-Tower“. Zwei Teams. Battle (2 Runden): Ein Etikett erscheint („Du bist zu laut.“). 30 Sekunden überlegt jedes Team einen Reframe („Wer laut ist, …“). Beide Teams sagen ihren Satz laut. Dann sagt jedes Team dem ANDEREN zuerst einen Feedback-Satz („Stark an eurem Konter war …“) und bewertet es danach mit der Ja/Nein-Karte, du stimmst immer mit. Tippe die Ja-Stimmen ein: Jedes Ja ist ein Punkt, bei Mehrheit wächst der Stärken-Turm. Danach zeigt das Spiel zwei Profi-Reframes. Speed-Match (1 Runde, nur wenn die Zeit reicht): Ein Profi-Reframe erscheint, die Teams halten die passende Buchstaben-Karte (A–D) hoch. Du tippst, welches Team zuerst war und welche Karte es zeigt. Bei guter Begründung für eine andere Karte kannst du trotzdem +2 geben. Die Etiketten sind allgemein. Bitte darauf achten, dass niemand sie auf eine Person im Raum bezieht. Eigene Etiketten nennen ist in der Nachbesprechung freiwillig.',
     debrief: [
       'Welcher Konter hat dich heute überrascht?',
       'Kennst du einen Spruch, den du selbst schon gehört hast? Welche Stärke steckt darin? (Nur wenn du magst.)',
@@ -14546,7 +14582,8 @@ var qrcode = function() {
         h('span', { class: 'eyebrow' }, 'Solo · Stärken-Training'),
         h('h1', { class: 'outline-text' }, 'Konter-Rush'),
         h('p', { class: 'lead' }, 'Du siehst eine Stärke. Welcher Spruch steckt dahinter?'),
-        h('p', { class: 'muted' }, SOLO_CARDS + ' Karten. Kein Zeitdruck. Jeder Treffer baut deinen Turm.'),
+        h('p', { class: 'muted' }, SOLO_CARDS + ' Karten. Kein Zeitdruck. Jeder Treffer baut deinen Turm. Danach: Level 2 – selbst kontern.'),
+        CREW.games && CREW.games.warumCard ? CREW.games.warumCard(CREW.games.didaktik('solo', 'reframe'), { compact: true }) : null,
         ui.xHint()),
       h('div', { class: 'reframe-solo-demo enter-2' }, flipTag(demoCard, { demo: true, small: true }).el),
     ]);
@@ -14602,12 +14639,72 @@ var qrcode = function() {
           h('span', { class: 'eyebrow enter' }, 'Dein Tower'),
           h('h2', { class: 'enter' }, hits + ' von ' + cards.length + ' Treffern'),
           best ? h('p', { class: 'lead enter-2' }, best.isNew && hits > 0 ? 'Neuer Bestwert!' : 'Dein Bestwert: ' + best.best) : null,
-          h('p', { class: 'muted enter-3' }, hits ? 'Jede Stärke im Turm war vorher ein blöder Spruch.' : 'Knifflig heute. Beim nächsten Mal wächst der Turm.')),
+          h('p', { class: 'muted enter-3' }, hits ? 'Jede Stärke im Turm war vorher ein blöder Spruch.' : 'Knifflig heute. Beim nächsten Mal wächst der Turm.'),
+          h('div', { class: 'card reframe-l2-teaser enter-3' }, h('b', null, 'Level 2: Selbst kontern'), h('span', { class: 'muted small' }, 'Jetzt kommt der Spruch – und du findest den Konter.'))),
         h('div', { class: 'reframe-tower-slot' }, tower(G, { roof: true, roofFresh: true }))),
     ]);
     CREW.sound.play(hits >= cards.length / 2 ? 'great' : 'good');
     if (best && best.isNew && hits > 0) ui.confetti(90);
-    const r = await ctx.waitFor(ui.choice(v.acts, [{ label: 'Nochmal', value: 'again', variant: 'ghost', icon: 'shuffle', id: 'rf-solo-again' }, { label: 'Fertig', value: 'done', iconRight: 'right', id: 'rf-solo-done' }]));
+    const r = await ctx.waitFor(ui.choice(v.acts, [{ label: 'Nochmal', value: 'again', variant: 'ghost', icon: 'shuffle', id: 'rf-solo-again' }, { label: 'Level 2', value: 'level2', variant: 'ghost', icon: 'sparkle', id: 'rf-solo-level2' }, { label: 'Fertig', value: 'done', iconRight: 'right', id: 'rf-solo-done' }]));
+    return r === 'again' ? 'again' : r === 'level2' ? 'level2' : 'done';
+  }
+
+  /* ---------- Solo Level 2: Selbst kontern (Spruch → eigener Konter im Kopf → Profi-Konter) ---------- */
+  const L2_CARDS = 3;
+  async function soloKontern(ctx) {
+    const { ui, SKIP } = ctx;
+    const cards = ctx.pick('reframe', L2_CARDS);
+    let eigene = 0;
+    for (let i = 0; i < cards.length; i++) {
+      const card = cards[i];
+      const label = 'Level 2 · Spruch ' + (i + 1) + ' von ' + cards.length;
+      // a) Spruch + Satzanfang: Konter im Kopf (wird nirgends eingegeben)
+      const v1 = view(ctx, [
+        h('div', { class: 'reframe-center enter' },
+          h('span', { class: 'eyebrow' }, label),
+          h('div', { class: 'reframe-kicker' }, h('span', null, 'Jemand bekommt gesagt:'), ui.speakBtn('Jemand bekommt gesagt: ' + card.satz + ' Dein Konter: ' + card.wer + ', …')),
+          flipTag(card).el),
+        h('div', { class: 'reframe-think enter-2' },
+          h('div', { class: 'reframe-think-txt' },
+            h('h2', null, 'Dein Konter?'),
+            h('p', { class: 'lead' }, 'Denk ihn dir – oder flüster ihn. Startet so:'),
+            h('div', { class: 'reframe-starter' }, card.wer + ', …'),
+            h('p', { class: 'muted small' }, 'Nichts wird eingetippt oder gespeichert.'))),
+      ]);
+      const r1 = await ctx.waitFor(ui.choice(v1.acts, [{ label: 'Keine Idee', value: 'none', variant: 'ghost', id: 'rf-l2-none' }, { label: 'Hab einen', value: 'got', iconRight: 'right', id: 'rf-l2-got' }]));
+      if (r1 === SKIP) continue;
+      if (r1 === 'got') eigene++;
+      // b) Profi-Konter zum Vergleichen: Welcher klingt nach dir?
+      const tag = flipTag(card, { small: true });
+      const list = h('div', { class: 'stack' }, card.reframes.map((t, k) => {
+        const b = h('button', { type: 'button', class: 'reframe-opt as-btn', 'data-profi': String(k) }, h('span', { class: 'reframe-opt-text' }, card.wer + ' ' + t));
+        b.addEventListener('click', () => { CREW.sound.play('tap'); list.querySelectorAll('button').forEach((x) => x.classList.toggle('ok', x === b)); });
+        return b;
+      }));
+      const v2 = view(ctx, [
+        h('div', { class: 'reframe-split' },
+          h('div', { class: 'stack' },
+            h('span', { class: 'eyebrow enter' }, label),
+            h('h2', { class: 'enter' }, r1 === 'got' ? 'Vergleich: So kontern Profis' : 'So kontern Profis'),
+            h('p', { class: 'muted enter' }, 'Welcher klingt am meisten nach dir? Tippen ist freiwillig.'),
+            h('div', { class: 'enter-2' }, list)),
+          h('div', { class: 'reframe-tower-slot' }, tag.el)),
+      ]);
+      await ctx.sleep(300);
+      tag.flip();
+      const r2 = await ctx.waitFor(ui.choice(v2.acts, [{ label: i < cards.length - 1 ? 'Nächster Spruch' : 'Fertig', value: 'next', iconRight: 'right', id: 'rf-l2-next' }]));
+      if (r2 === SKIP) continue;
+    }
+    // Ende Level 2: Das hast du geübt
+    const v = view(ctx, [
+      h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center', gap: '8px' } },
+        h('span', { class: 'eyebrow enter' }, 'Level 2 geschafft'),
+        h('h2', { class: 'enter' }, eigene ? eigene + ' von ' + cards.length + ' Kontern selbst gefunden' : 'Profi-Konter gesammelt'),
+        h('p', { class: 'muted enter-2' }, 'Wenn dich ein Spruch trifft: erst atmen, dann denken „Wer so ist, …“.')),
+      CREW.games && CREW.games.soloNach ? CREW.games.soloNach(CREW.games.didaktik('solo', 'reframe')) : null,
+    ]);
+    CREW.sound.play('good');
+    const r = await ctx.waitFor(ui.choice(v.acts, [{ label: 'Nochmal', value: 'again', variant: 'ghost', icon: 'shuffle', id: 'rf-l2-again' }, { label: 'Fertig', value: 'done', iconRight: 'right', id: 'rf-l2-done' }]));
     return r === 'again' ? 'again' : 'done';
   }
 
@@ -14618,7 +14715,8 @@ var qrcode = function() {
     icon: 'sparkle',
     async run(ctx) {
       for (;;) {
-        const r = await soloRound(ctx);
+        let r = await soloRound(ctx);
+        if (r === 'level2') r = await soloKontern(ctx);
         if (r !== 'again') return;
       }
     },
@@ -14653,7 +14751,7 @@ var qrcode = function() {
       { code: 'SOZ-31', text: 'merkt, dass er/sie anders handelt als andere' },
       { code: 'SOZ-32', text: 'hört zu und respektiert andere Meinungen' },
     ],
-    teacherNote: '3 Karten, die dritte ist golden (Sterne ×2), danach eine Blitzrunde ohne Schätzen. Pro Karte: 1) Alle tippen geheim auf der Antwort-Karte (Zahl 0–10) ein, wie viele gleich aufstehen, und drücken „Fertig“. Die Zahl ist dann gesperrt und verdeckt. 2) Auf „Aufstehen!“ steht auf, für wen der Satz stimmt – nicht wegen der eigenen Schätzung. Du tippst die Zahl an, wie viele stehen (keine Namen). Die Zahl erscheint groß. 3) Auf „Zeigt her!“ tippen alle auf ZEIGEN. Du zählst nur zwei Dinge: Volltreffer (genau richtig) und 1 daneben. Genau = ★★, 1 daneben = ★. Alle Sterne gehören der Crew. Aufstehen ist freiwillig. Wer steht, darf etwas erzählen, muss aber nicht.',
+    teacherNote: '3 Karten, die dritte ist golden (Sterne ×2), danach eine Blitzrunde ohne Schätzen. Pro Karte: 1) Alle tippen geheim auf der Antwort-Karte (Zahl 0–10) ein, wie viele gleich aufstehen, und drücken „Fertig“. Die Zahl ist dann gesperrt und verdeckt. 2) Auf „Aufstehen!“ steht auf, für wen der Satz stimmt – nicht wegen der eigenen Schätzung. Du tippst die Zahl an, wie viele stehen (keine Namen). Die Zahl erscheint groß. 3) Auf „Zeigt her!“ tippen alle auf ZEIGEN. Du zählst nur zwei Dinge: Volltreffer (genau richtig) und 1 daneben. Genau = ★★, 1 daneben = ★. Alle Sterne gehören der Crew. Aufstehen ist freiwillig. Wer steht, darf etwas erzählen, muss aber nicht. Die Karten steigen an: Karte 1 Aufwärmen (Spaß), Karte 2 Erlebnis (Gefühle), Karte 3 golden (Stärke). Nach der Auflösung gibt es ein freiwilliges Mikro (20 Sekunden): Wer stand, erzählt einen Satz, die Sitzenden dürfen eine Wie- oder Was-Frage stellen.',
     debrief: [
       'Was hat euch heute überrascht?',
       'Mit wem hattest du heute etwas gemeinsam, das du nicht erwartet hast?',
@@ -14667,9 +14765,12 @@ var qrcode = function() {
       const { h, ui } = ctx;
       const N = ctx.crewSize;
       const ROUNDS = 3;
-      const cards = ctx.pick('stehauf', ROUNDS + 3);
-      const main = cards.slice(0, ROUNDS);
-      const blitz = cards.slice(ROUNDS);
+      // Karten steigen an: 1 Aufwärmen (Spaß), 2 Erlebnis (Gefühle), 3 golden (Stärke). Blitzrunde: Spaß/Zukunft.
+      const pickK = (kats, n) => ctx.pick('stehauf', n, (it) => kats.includes(it.kat));
+      const STUFEN = [{ kats: ['spass'], name: 'Aufwärmen' }, { kats: ['gefuehl'], name: 'Erlebnis' }, { kats: ['stark'], name: 'Stärke' }];
+      let main = STUFEN.map((st) => { const c = pickK(st.kats, 1)[0]; return c ? Object.assign({ stufe: st.name }, c) : null; }).filter(Boolean);
+      if (main.length < ROUNDS) main = main.concat(ctx.pick('stehauf', ROUNDS - main.length));
+      const blitz = pickK(['spass', 'zukunft'], 3);
       let pts = 0;
       let maxPts = 0;
       let played = 0;
@@ -14701,7 +14802,7 @@ var qrcode = function() {
         // 1) Karte + „So geht's“: schätzen, Fertig drücken
         if (gold) CREW.sound.play('unlock');
         const w1 = ctx.screen([
-          ui.say(h('span', null, h('span', { class: 'muted' }, 'Steh auf, wenn du '), clean(card.text)), { speakText: full, eyebrow: gold ? 'Goldene Karte · Sterne ×2' : 'Karte ' + (i + 1) + ' von ' + main.length, cls: 'sa-card' + (gold ? ' sa-gold' : '') }),
+          ui.say(h('span', null, h('span', { class: 'muted' }, 'Steh auf, wenn du '), clean(card.text)), { speakText: full, eyebrow: (gold ? 'Goldene Karte' : 'Karte ' + (i + 1) + ' von ' + main.length) + (card.stufe ? ' · ' + card.stufe : '') + (gold ? ' · Sterne ×2' : ''), cls: 'sa-card' + (gold ? ' sa-gold' : '') }),
           h('div', { class: 'sa-how' }, ui.steps([
             { icon: 'phone', title: 'Schätzen', text: 'Wie viele von euch ' + N + ' stehen gleich auf? Tipp deine Schätzung auf deinem iPad ein und drück Fertig.', extra: ui.paddleHint('zahl') },
             { icon: 'users', title: 'Aufstehen', text: 'Auf „Aufstehen!“ steht auf, für wen der Satz stimmt.' },
@@ -14796,11 +14897,24 @@ var qrcode = function() {
             h('span', { class: 'pill' }, near + ' × 1 daneben'),
             h('span', { class: 'pill accent' }, '+' + got + ' Crew-Punkte' + (gold ? ' (×2)' : ''))),
           h('p', { class: 'lead' }, standing === 0 ? 'Niemand. Auch das sagt etwas über die Crew.' : standing === N ? 'Alle! Da habt ihr etwas gemeinsam.' : 'Wer steht, darf was sagen. Muss aber nicht.'));
+        // Mikro: 20 Sekunden – wer stand, darf erzählen; die Sitzenden dürfen eine Wie- oder Was-Frage stellen
+        let mikro = null;
+        if (standing > 0) {
+          const t = ui.timer(20, { autostart: false });
+          const startBtn = ui.btn('Mikro an', () => { t.start(); startBtn.disabled = true; CREW.sound.play('go'); }, { small: true, variant: 'ghost', icon: 'speaker', id: 'sa-mikro' });
+          mikro = h('div', { class: 'card sa-mikro' },
+            h('div', { class: 'stack', style: { gap: '4px' } },
+              h('span', { class: 'eyebrow' }, 'Mikro · 20 Sekunden · freiwillig'),
+              h('b', null, 'Wer stand, darf einen Satz erzählen.'),
+              h('span', { class: 'muted' }, 'Die Sitzenden dürfen eine Wie- oder Was-Frage stellen.')),
+            h('div', { class: 'row', style: { gap: '10px', alignItems: 'center' } }, t.el, startBtn));
+        }
         const w5 = ctx.screen([
           h('span', { class: 'eyebrow' }, 'Auflösung'),
           h('h2', null, standing + ' von ' + N + ' standen'),
           got ? starRow : h('p', { class: 'lead muted' }, 'Diesmal keine Sterne. Nächste Karte!'),
           verdict,
+          mikro,
         ], { center: true });
         CREW.sound.play('reveal');
         if (exact) { CREW.sound.play('great'); ui.confetti(exact * 40); }
@@ -14921,6 +15035,11 @@ var qrcode = function() {
     return span;
   }
 
+  // Anspannung vorher/nachher (0–100): nur für diese Sitzung im Speicher, wird nirgends gespeichert
+  const PEGEL = [20, 40, 60, 80, 100];
+  const sess = { vorher: null };
+  const didaktik = () => (CREW.games && CREW.games.didaktik ? CREW.games.didaktik('solo', 'chill') : null);
+
   /* =========================================================
      Menü
      ========================================================= */
@@ -14938,11 +15057,21 @@ var qrcode = function() {
       b.addEventListener('click', () => { CREW.sound.play('tap'); choose(id); });
       return b;
     };
+    const vRow = h('div', { class: 'solo-pegel-row', role: 'group', 'aria-label': 'Anspannung vorher' }, PEGEL.map((v) => {
+      const b = h('button', { type: 'button', class: 'solo-pegel' + (sess.vorher === v ? ' sel' : ''), 'data-vorher': String(v), 'aria-pressed': String(sess.vorher === v) }, String(v));
+      b.addEventListener('click', () => { CREW.sound.play('tap'); sess.vorher = sess.vorher === v ? null : v; vRow.querySelectorAll('.solo-pegel').forEach((x) => { const on = Number(x.dataset.vorher) === sess.vorher; x.classList.toggle('sel', on); x.setAttribute('aria-pressed', String(on)); }); });
+      return b;
+    }));
+    const warum = CREW.games && CREW.games.warumCard ? CREW.games.warumCard(didaktik(), { compact: true, cls: 'enter' }) : null;
     scr(ctx, [
       h('div', { class: 'stack enter', style: { gap: '6px' } },
         h('span', { class: 'eyebrow' }, 'Solo-Zone'),
         h('h1', { class: 'outline-text' }, 'Chill-Zone'),
         h('p', { class: 'lead muted' }, 'Such dir etwas aus. Keine Punkte, kein Druck.')),
+      warum,
+      h('div', { class: 'card solo-pegel-card enter-2' },
+        h('div', { class: 'stack', style: { gap: '2px' } }, h('b', null, 'Wie angespannt bist du gerade?'), h('span', { class: 'muted small' }, '0 = ganz ruhig, 100 = gleich platzt es. Freiwillig, nur für dich.')),
+        vRow),
       h('div', { class: 'solo-ex-grid enter-2' },
         card('welle', ART.welle, 'Atem-Welle', 'Atme mit der Welle. Ein, halten, aus.', '1–3 Min'),
         card('glas', ART.glas, 'Glitzerglas', 'Wirbel den Glitzer auf. Schau zu, wie er sinkt.', 'So lange du willst'),
@@ -14977,6 +15106,25 @@ var qrcode = function() {
       });
       return b;
     }));
+    // Nachher-Zahl (nur wenn vorher eine Zahl gewählt wurde)
+    let nachRow = null;
+    if (sess.vorher != null) {
+      const base = sess.vorher;
+      const diffTxt = h('p', { class: 'solo-feel-answer', 'aria-live': 'polite' }, 'Vorher: ' + base + '. Und jetzt?');
+      const r2 = h('div', { class: 'solo-pegel-row' }, [0, 20, 40, 60, 80, 100].map((v) => {
+        const b = h('button', { type: 'button', class: 'solo-pegel', 'data-nachher': String(v) }, String(v));
+        b.addEventListener('click', () => {
+          CREW.sound.play('tap');
+          r2.querySelectorAll('.solo-pegel').forEach((x) => x.classList.toggle('sel', x === b));
+          const d = base - v;
+          diffTxt.textContent = d > 0 ? 'Von ' + base + ' auf ' + v + '. Das hat gewirkt – merk dir diese Übung.' : d === 0 ? 'Gleich geblieben. Probier eine andere Übung – jede:r braucht etwas anderes.' : 'Höher als vorher. Das ist okay. Andere Übung oder mit jemandem reden.';
+          diffTxt.classList.add('on');
+          sess.vorher = v; // neue Ausgangszahl für die nächste Übung
+        });
+        return b;
+      }));
+      nachRow = h('div', { class: 'stack', style: { gap: '6px' } }, h('span', { class: 'eyebrow' }, 'Deine Zahl jetzt'), r2, diffTxt);
+    }
     scr(ctx, [
       h('div', { class: 'solo-done-badge pop' }, CREW.icon('leaf', 46)),
       h('div', { class: 'stack', style: { gap: '8px', alignItems: 'center' } },
@@ -14984,7 +15132,8 @@ var qrcode = function() {
         h('p', { class: 'lead muted' }, o.text)),
       h('div', { class: 'card stack solo-checkout enter-2' },
         h('h3', null, 'Und, wie ist es jetzt?'),
-        row, answer),
+        row, answer, nachRow),
+      CREW.games && CREW.games.soloNach ? CREW.games.soloNach(didaktik()) : null,
       h('div', { class: 'row center enter-3' },
         ui.btn(o.again || 'Nochmal', () => done('again'), { variant: 'ghost', icon: 'undo', id: 'chill-again' }),
         ui.btn('Zur Chill-Zone', () => done('menu'), { variant: 'good', icon: 'leaf', id: 'chill-menu' })),
@@ -15000,6 +15149,8 @@ var qrcode = function() {
   const RHYTHMS = [
     { id: 'ruhig', title: 'Ruhig-Atmung', nums: '4 · 4 · 6', desc: 'Länger ausatmen beruhigt den Körper.', phases: [['in', 4], ['hold', 4], ['out', 6]] },
     { id: 'box', title: 'Box-Atmung', nums: '4 · 4 · 4 · 4', desc: 'Wie ein Quadrat. Nutzen auch Profis im Sport.', phases: [['in', 4], ['hold', 4], ['out', 4], ['rest', 4]] },
+    { id: 'ballon', title: 'Luftballon-Atem', nums: '3 · 5', desc: 'Bauch wie ein Ballon: 3 ein, 5 aus. Merkt keiner.', phases: [['in', 3], ['out', 5]] },
+    { id: '478', title: 'Atem 4-7-8', nums: '4 · 7 · 8', desc: 'Vor Prüfungen oder zum Einschlafen. Sehr lang aus.', phases: [['in', 4], ['hold', 7], ['out', 8]] },
   ];
   const PHASE = {
     in: { label: 'Einatmen', hint: 'Langsam durch die Nase.', short: 'Ein' },
@@ -15013,6 +15164,8 @@ var qrcode = function() {
   // Kleines Bild vom Takt (Kurve bzw. Quadrat)
   function rhythmArt(id) {
     if (id === 'box') return '<svg viewBox="0 0 64 40" aria-hidden="true"><rect x="14" y="4" width="32" height="32" rx="3" class="solo-rh-line"/><circle cx="14" cy="36" r="4" class="solo-rh-dot"/></svg>';
+    if (id === 'ballon') return '<svg viewBox="0 0 64 40" aria-hidden="true"><ellipse cx="32" cy="17" rx="12" ry="14" class="solo-rh-line"/><path d="M32 31 q-3 4 0 7" class="solo-rh-line"/><circle cx="32" cy="31" r="3" class="solo-rh-dot"/></svg>';
+    if (id === '478') return '<svg viewBox="0 0 64 40" aria-hidden="true"><path d="M4 34 L14 8 L38 8 L60 34" class="solo-rh-line"/><circle cx="4" cy="34" r="4" class="solo-rh-dot"/></svg>';
     return '<svg viewBox="0 0 64 40" aria-hidden="true"><path d="M4 34 L18 8 L32 8 L60 34" class="solo-rh-line"/><circle cx="4" cy="34" r="4" class="solo-rh-dot"/></svg>';
   }
 
@@ -15861,6 +16014,7 @@ var qrcode = function() {
           h('div', { class: 'solo-dec-hero-bubble' }, '„Passt schon.“'),
           h('div', { class: 'solo-dec-hero-ava', html: avatarSvg('Mia') }, h('span', { class: 'solo-scanline' }), h('span', { class: 'solo-brackets' })),
           h('span', { class: 'solo-dec-hero-q' }, '?'))),
+      CREW.games && CREW.games.warumCard ? CREW.games.warumCard(CREW.games.didaktik('solo', 'decoder'), { compact: true, cls: 'enter-2' }) : null,
       h('div', { class: 'solo-signs-grid enter-2' }, Object.values(SIGNS).map((s) =>
         h('div', { class: 'card solo-sign-card' }, h('span', { class: 'solo-sign-ic' }, s.icon()), h('div', null, h('b', null, s.label), h('div', { class: 'muted small' }, s.q))))),
       h('div', { class: 'solo-dec-start enter-3' },
@@ -16054,6 +16208,7 @@ var qrcode = function() {
         h('div', { class: 'card solo-dec-tile' }, h('b', { class: 'display' }, String(run.maxStreak)), h('span', { class: 'muted small' }, 'Beste Serie'))),
       h('div', { class: 'card soft row solo-dec-tip', style: { flexWrap: 'nowrap' } }, CREW.icon('chat', 26),
         h('p', null, (topSign ? 'Oft half der Blick auf: ' + SIGNS[topSign[0]].label + '. ' : '') + 'Im echten Leben kannst du auch einfach fragen: „Alles okay?“')),
+      CREW.games && CREW.games.soloNach ? CREW.games.soloNach(CREW.games.didaktik('solo', 'decoder')) : null,
       h('p', { class: 'muted small', style: { textAlign: 'center' } }, 'Punkte und Rekord sieht nur dieses Gerät. Ohne Namen.'),
     ], { center: true, narrow: true });
     CREW.sound.play(b.isNew ? 'great' : 'good');
@@ -22464,7 +22619,7 @@ var qrcode = function() {
 /* Danke & Lizenzen – wird im Lehrermodus unter „Anleitung“ angezeigt. */
 (function () {
   window.CREW.CREDITS = [
-    'Spielideen nach Materialien der ISA-Toolbox (AGISA, CDSE), u. a. „Steh auf, wenn …“, Friedenstreppe, Reframing, Stärken-Turm, Perspektivwechsel. Alle Karten- und Szenentexte in CREW sind neu geschrieben.',
+    'Spielideen nach Toolbox-Materialien des CDSE, u. a. „Steh auf, wenn …“, Friedenstreppe, Reframing, Stärken-Turm, Perspektivwechsel. Alle Karten- und Szenentexte in CREW sind neu geschrieben.',
     'Pädagogischer Rahmen: ETEP / ELDiB. Im Spiel stehen nur Kürzel mit eigenen Kurzbeschreibungen, keine Katalogtexte.',
     'Schriften: Lilita One, Rubik, Pixelify Sans, Chakra Petch – SIL Open Font License 1.1.',
     'Töne und Grafiken: selbst erzeugt (WebAudio, SVG). Keine fremden Bild- oder Tondateien.',

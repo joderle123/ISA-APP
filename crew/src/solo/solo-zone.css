@@ -584,3 +584,10 @@
   .solo-sense-mini { min-width: 0; flex: 1 1 56px; padding: 10px 6px; font-size: 0.85em; }
   .solo-seg-btn b { font-size: 1.8em; }
 }
+
+/* Chill-Zone: Anspannung vorher/nachher (nur im Speicher der Sitzung) */
+.solo-pegel-card { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.solo-pegel-row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.solo-pegel { min-width: 56px; min-height: 48px; padding: 8px 12px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--bg); color: inherit; font: inherit; font-weight: 800; cursor: pointer; }
+.solo-pegel.sel { background: var(--yellow); color: var(--yellow-ink); }
+.solo-screen .warum-card { text-align: left; }

@@ -188,6 +188,7 @@
           h('div', { class: 'solo-dec-hero-bubble' }, '„Passt schon.“'),
           h('div', { class: 'solo-dec-hero-ava', html: avatarSvg('Mia') }, h('span', { class: 'solo-scanline' }), h('span', { class: 'solo-brackets' })),
           h('span', { class: 'solo-dec-hero-q' }, '?'))),
+      CREW.games && CREW.games.warumCard ? CREW.games.warumCard(CREW.games.didaktik('solo', 'decoder'), { compact: true, cls: 'enter-2' }) : null,
       h('div', { class: 'solo-signs-grid enter-2' }, Object.values(SIGNS).map((s) =>
         h('div', { class: 'card solo-sign-card' }, h('span', { class: 'solo-sign-ic' }, s.icon()), h('div', null, h('b', null, s.label), h('div', { class: 'muted small' }, s.q))))),
       h('div', { class: 'solo-dec-start enter-3' },
@@ -381,6 +382,7 @@
         h('div', { class: 'card solo-dec-tile' }, h('b', { class: 'display' }, String(run.maxStreak)), h('span', { class: 'muted small' }, 'Beste Serie'))),
       h('div', { class: 'card soft row solo-dec-tip', style: { flexWrap: 'nowrap' } }, CREW.icon('chat', 26),
         h('p', null, (topSign ? 'Oft half der Blick auf: ' + SIGNS[topSign[0]].label + '. ' : '') + 'Im echten Leben kannst du auch einfach fragen: „Alles okay?“')),
+      CREW.games && CREW.games.soloNach ? CREW.games.soloNach(CREW.games.didaktik('solo', 'decoder')) : null,
       h('p', { class: 'muted small', style: { textAlign: 'center' } }, 'Punkte und Rekord sieht nur dieses Gerät. Ohne Namen.'),
     ], { center: true, narrow: true });
     CREW.sound.play(b.isNew ? 'great' : 'good');

@@ -513,3 +513,5 @@
   .reframe-result { grid-template-columns: minmax(0, 1fr) auto; }
   .reframe-result-msg { display: none; }
 }
+.reframe-feedback { gap: 10px; align-items: center; padding: 10px 14px; }
+.reframe-l2-teaser { display: flex; flex-direction: column; gap: 2px; padding: 10px 14px; }

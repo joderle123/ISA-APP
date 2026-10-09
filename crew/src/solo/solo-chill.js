@@ -76,6 +76,11 @@
     return span;
   }
 
+  // Anspannung vorher/nachher (0–100): nur für diese Sitzung im Speicher, wird nirgends gespeichert
+  const PEGEL = [20, 40, 60, 80, 100];
+  const sess = { vorher: null };
+  const didaktik = () => (CREW.games && CREW.games.didaktik ? CREW.games.didaktik('solo', 'chill') : null);
+
   /* =========================================================
      Menü
      ========================================================= */
@@ -93,11 +98,21 @@
       b.addEventListener('click', () => { CREW.sound.play('tap'); choose(id); });
       return b;
     };
+    const vRow = h('div', { class: 'solo-pegel-row', role: 'group', 'aria-label': 'Anspannung vorher' }, PEGEL.map((v) => {
+      const b = h('button', { type: 'button', class: 'solo-pegel' + (sess.vorher === v ? ' sel' : ''), 'data-vorher': String(v), 'aria-pressed': String(sess.vorher === v) }, String(v));
+      b.addEventListener('click', () => { CREW.sound.play('tap'); sess.vorher = sess.vorher === v ? null : v; vRow.querySelectorAll('.solo-pegel').forEach((x) => { const on = Number(x.dataset.vorher) === sess.vorher; x.classList.toggle('sel', on); x.setAttribute('aria-pressed', String(on)); }); });
+      return b;
+    }));
+    const warum = CREW.games && CREW.games.warumCard ? CREW.games.warumCard(didaktik(), { compact: true, cls: 'enter' }) : null;
     scr(ctx, [
       h('div', { class: 'stack enter', style: { gap: '6px' } },
         h('span', { class: 'eyebrow' }, 'Solo-Zone'),
         h('h1', { class: 'outline-text' }, 'Chill-Zone'),
         h('p', { class: 'lead muted' }, 'Such dir etwas aus. Keine Punkte, kein Druck.')),
+      warum,
+      h('div', { class: 'card solo-pegel-card enter-2' },
+        h('div', { class: 'stack', style: { gap: '2px' } }, h('b', null, 'Wie angespannt bist du gerade?'), h('span', { class: 'muted small' }, '0 = ganz ruhig, 100 = gleich platzt es. Freiwillig, nur für dich.')),
+        vRow),
       h('div', { class: 'solo-ex-grid enter-2' },
         card('welle', ART.welle, 'Atem-Welle', 'Atme mit der Welle. Ein, halten, aus.', '1–3 Min'),
         card('glas', ART.glas, 'Glitzerglas', 'Wirbel den Glitzer auf. Schau zu, wie er sinkt.', 'So lange du willst'),
@@ -132,6 +147,25 @@
       });
       return b;
     }));
+    // Nachher-Zahl (nur wenn vorher eine Zahl gewählt wurde)
+    let nachRow = null;
+    if (sess.vorher != null) {
+      const base = sess.vorher;
+      const diffTxt = h('p', { class: 'solo-feel-answer', 'aria-live': 'polite' }, 'Vorher: ' + base + '. Und jetzt?');
+      const r2 = h('div', { class: 'solo-pegel-row' }, [0, 20, 40, 60, 80, 100].map((v) => {
+        const b = h('button', { type: 'button', class: 'solo-pegel', 'data-nachher': String(v) }, String(v));
+        b.addEventListener('click', () => {
+          CREW.sound.play('tap');
+          r2.querySelectorAll('.solo-pegel').forEach((x) => x.classList.toggle('sel', x === b));
+          const d = base - v;
+          diffTxt.textContent = d > 0 ? 'Von ' + base + ' auf ' + v + '. Das hat gewirkt – merk dir diese Übung.' : d === 0 ? 'Gleich geblieben. Probier eine andere Übung – jede:r braucht etwas anderes.' : 'Höher als vorher. Das ist okay. Andere Übung oder mit jemandem reden.';
+          diffTxt.classList.add('on');
+          sess.vorher = v; // neue Ausgangszahl für die nächste Übung
+        });
+        return b;
+      }));
+      nachRow = h('div', { class: 'stack', style: { gap: '6px' } }, h('span', { class: 'eyebrow' }, 'Deine Zahl jetzt'), r2, diffTxt);
+    }
     scr(ctx, [
       h('div', { class: 'solo-done-badge pop' }, CREW.icon('leaf', 46)),
       h('div', { class: 'stack', style: { gap: '8px', alignItems: 'center' } },
@@ -139,7 +173,8 @@
         h('p', { class: 'lead muted' }, o.text)),
       h('div', { class: 'card stack solo-checkout enter-2' },
         h('h3', null, 'Und, wie ist es jetzt?'),
-        row, answer),
+        row, answer, nachRow),
+      CREW.games && CREW.games.soloNach ? CREW.games.soloNach(didaktik()) : null,
       h('div', { class: 'row center enter-3' },
         ui.btn(o.again || 'Nochmal', () => done('again'), { variant: 'ghost', icon: 'undo', id: 'chill-again' }),
         ui.btn('Zur Chill-Zone', () => done('menu'), { variant: 'good', icon: 'leaf', id: 'chill-menu' })),
@@ -155,6 +190,8 @@
   const RHYTHMS = [
     { id: 'ruhig', title: 'Ruhig-Atmung', nums: '4 · 4 · 6', desc: 'Länger ausatmen beruhigt den Körper.', phases: [['in', 4], ['hold', 4], ['out', 6]] },
     { id: 'box', title: 'Box-Atmung', nums: '4 · 4 · 4 · 4', desc: 'Wie ein Quadrat. Nutzen auch Profis im Sport.', phases: [['in', 4], ['hold', 4], ['out', 4], ['rest', 4]] },
+    { id: 'ballon', title: 'Luftballon-Atem', nums: '3 · 5', desc: 'Bauch wie ein Ballon: 3 ein, 5 aus. Merkt keiner.', phases: [['in', 3], ['out', 5]] },
+    { id: '478', title: 'Atem 4-7-8', nums: '4 · 7 · 8', desc: 'Vor Prüfungen oder zum Einschlafen. Sehr lang aus.', phases: [['in', 4], ['hold', 7], ['out', 8]] },
   ];
   const PHASE = {
     in: { label: 'Einatmen', hint: 'Langsam durch die Nase.', short: 'Ein' },
@@ -168,6 +205,8 @@
   // Kleines Bild vom Takt (Kurve bzw. Quadrat)
   function rhythmArt(id) {
     if (id === 'box') return '<svg viewBox="0 0 64 40" aria-hidden="true"><rect x="14" y="4" width="32" height="32" rx="3" class="solo-rh-line"/><circle cx="14" cy="36" r="4" class="solo-rh-dot"/></svg>';
+    if (id === 'ballon') return '<svg viewBox="0 0 64 40" aria-hidden="true"><ellipse cx="32" cy="17" rx="12" ry="14" class="solo-rh-line"/><path d="M32 31 q-3 4 0 7" class="solo-rh-line"/><circle cx="32" cy="31" r="3" class="solo-rh-dot"/></svg>';
+    if (id === '478') return '<svg viewBox="0 0 64 40" aria-hidden="true"><path d="M4 34 L14 8 L38 8 L60 34" class="solo-rh-line"/><circle cx="4" cy="34" r="4" class="solo-rh-dot"/></svg>';
     return '<svg viewBox="0 0 64 40" aria-hidden="true"><path d="M4 34 L18 8 L32 8 L60 34" class="solo-rh-line"/><circle cx="4" cy="34" r="4" class="solo-rh-dot"/></svg>';
   }
 

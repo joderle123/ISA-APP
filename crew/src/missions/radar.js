@@ -222,7 +222,7 @@
       h('div', { class: 'radar-intro enter-2' },
         h('div', { class: 'radar-dialbox' }, d.el),
         h('div', { class: 'stack' },
-          step(1, 'Gefühl wählen', 'Lies die Situation. Wähl geheim ein Gefühl.', ui.paddleHint('emo')),
+          step(1, 'Gefühl wählen', 'Lies die Situation. Wähl geheim ein Gefühl – und tipp im Kopf, was die Person links wählt.', ui.paddleHint('emo')),
           step(2, 'Radar-Profi schätzt', 'Eine Person tippt: Wie stark fühlt die Crew das?'),
           step(3, 'Stärke zeigen', 'Alle zeigen 0 bis 10. Trifft der Tipp?', ui.paddleHint('zahl')))),
     ]);
@@ -238,6 +238,7 @@
       ui.say(card.text, { eyebrow: 'Situation', cls: 'radar-sitcard' }),
       h('div', { class: 'radar-legend enter-2', 'aria-hidden': 'true' }, EMOS.map((e) => h('span', { class: 'radar-lg' }, emoBadge(e.id, 30), h('span', null, e.id)))),
       h('p', { class: 'lead enter-3' }, 'Welches Gefühl kommt bei dir zuerst? Wähl es geheim.'),
+      h('div', { class: 'card row radar-nachbar enter-3' }, CREW.icon('users', 24), h('span', null, h('b', null, 'Nachbar-Tipp: '), 'Welches Gefühl wählt wohl die Person links von dir? Merk es dir.')),
     ]);
     const a1 = await ctx.waitFor(ui.choice(w1, [{ label: 'Alle bereit', value: 'go', iconRight: 'right' }], { align: 'end' }));
     if (a1 === ctx.SKIP) return { skip: 'replace' };
@@ -274,7 +275,7 @@
       bar,
       h('div', { class: 'row center radar-legend2' }, shown.map((e, i) => h('span', { class: 'radar-lchip pop', style: { animationDelay: 300 + i * 90 + 'ms' } }, emoBadge(e.id, 34), h('span', null, e.id), h('b', null, '× ' + counts[e.id])))),
       h('p', { class: 'lead enter-3', style: { textAlign: 'center' } }, line),
-      h('p', { class: 'muted enter-3', style: { textAlign: 'center' } }, 'Wer mag: Warum gerade dieses Gefühl?'),
+      h('p', { class: 'muted enter-3', style: { textAlign: 'center' } }, 'Nachbar-Tipp: Lag dein Tipp für links richtig? Wer mag, fragt: „Warum gerade dieses Gefühl?“'),
     ], { center: true });
     CREW.sound.play('reveal');
     requestAnimationFrame(() => requestAnimationFrame(() => {
@@ -445,7 +446,7 @@
       { code: 'SOZ-31', text: 'merkt, dass andere in derselben Situation anders reagieren' },
       { code: 'SOZ-37', text: 'versteht die Gefühle anderer und nimmt sie ernst' },
     ],
-    teacherNote: 'Zwei Antwort-Karten: „Gefühl“ und „Zahl 0–10“. 2 Runden. Situation vorlesen, alle wählen geheim ein Gefühl und halten auf „Zeigt her!“ hoch. Du zählst mit. Dann schätzt der Radar-Profi laut den Crew-Schnitt (0–10). Der Radar-Profi wechselt reihum, beginnend links von dir. Du stellst den Tipp ein, alle zeigen ihre Stärke, du tippst die Zahlen ein. ±0,5 = Volltreffer, ±1,5 = knapp. Sind alle Karten eingetippt, geht es von allein weiter. Das Wort-Upgrade (nur Runde 1) ist freiwillig und nur zum Reden. Es gibt keine falschen Gefühle. X-Karte beim Lesen = neue Situation.',
+    teacherNote: 'Zwei Antwort-Karten: „Gefühl“ und „Zahl 0–10“. 2 Runden. Situation vorlesen, alle wählen geheim ein Gefühl und halten auf „Zeigt her!“ hoch. Du zählst mit. Dann schätzt der Radar-Profi laut den Crew-Schnitt (0–10). Der Radar-Profi wechselt reihum, beginnend links von dir. Du stellst den Tipp ein, alle zeigen ihre Stärke, du tippst die Zahlen ein. ±0,5 = Volltreffer, ±1,5 = knapp. Sind alle Karten eingetippt, geht es von allein weiter. Das Wort-Upgrade (nur Runde 1) ist freiwillig und nur zum Reden. Es gibt keine falschen Gefühle. X-Karte beim Lesen = neue Situation. Nachbar-Tipp: Vor „Zeigt her!“ schätzt jede:r im Kopf, welches Gefühl die Person links wählt – danach kurz vergleichen und nachfragen (Perspektive, nichts wird gezählt).',
     debrief: [
       'Warum fühlen Menschen in der gleichen Situation so verschieden?',
       'Welche Situation hat die meisten verschiedenen Gefühle ausgelöst? Warum wohl?',

@@ -188,7 +188,7 @@
         h('div', { class: 'reframe-steps' },
           step(1, 'Spruch', 'Jemand bekommt einen blöden Spruch gesagt.'),
           step(2, 'Kontern', 'Euer Team macht in 30 Sekunden eine Stärke daraus.'),
-          step(3, 'Überzeugt?', 'Das andere Team stimmt ab. Jedes Ja = 1 Punkt.'))),
+          step(3, 'Feedback', 'Das andere Team sagt, was stark war – dann Ja-Karten. Jedes Ja = 1 Punkt.'))),
     ]);
     await ctx.waitFor(ui.choice(acts, [{ label: 'Battle starten', value: 'go', iconRight: 'play', id: 'rf-start' }]));
   }
@@ -238,7 +238,7 @@
         flipTag(card, { small: true }).el),
       h('div', { class: 'reframe-duo enter-2' }, panel(first, 0), panel(second, 1)),
       h('div', { class: 'row between enter-3' },
-        h('p', { class: 'muted' }, 'Gleich bewertet jedes Team das andere.'),
+        h('p', { class: 'muted' }, 'Gleich gibt jedes Team dem anderen Feedback: Was war stark?'),
         ui.paddleHint('janein', 'Überzeugt?')),
     ]);
     const r2 = await ctx.waitFor(ui.choice(v2.acts, [{ label: 'Abstimmen', value: 'go', iconRight: 'right', id: 'rf-vote-go' }]));
@@ -254,7 +254,8 @@
       steppers[t].el);
     const v3 = view(ctx, [
       hud(G, label),
-      h('div', { class: 'stack enter', style: { gap: '6px' } }, h('h2', null, 'Wie viele Ja?'), h('p', { class: 'muted' }, 'Tippt die Ja-Karten ein. Jedes Ja bringt auch Crew-Energie.')),
+      h('div', { class: 'card row reframe-feedback enter' }, CREW.icon('star', 22), h('span', null, h('b', null, 'Erst Feedback: '), 'Jedes Team sagt dem anderen einen Satz: „Stark an eurem Konter war …“')),
+      h('div', { class: 'stack enter', style: { gap: '6px' } }, h('h2', null, 'Wie viele Ja?'), h('p', { class: 'muted' }, 'Dann die Ja-Karten. Tippt sie ein – jedes Ja bringt auch Crew-Energie.')),
       h('div', { class: 'reframe-duo enter-2' }, votePanel(first), votePanel(second)),
     ]);
     const r3 = await ctx.waitFor(ui.choice(v3.acts, [{ label: 'Auswerten', value: 'go', iconRight: 'right', id: 'rf-vote-done' }]));
@@ -491,7 +492,7 @@
       { code: 'K-28', text: 'macht anderen mit Worten Mut und lobt sie' },
       { code: 'K-32', text: 'würdigt Beiträge anderer und baut auf ihren Ideen auf' },
     ],
-    teacherNote: 'Im Spiel heißt die Mission „Konter-Battle“, das Etikett „Spruch“ und der Stärken-Turm „Crew-Tower“. Zwei Teams. Battle (2 Runden): Ein Etikett erscheint („Du bist zu laut.“). 30 Sekunden überlegt jedes Team einen Reframe („Wer laut ist, …“). Beide Teams sagen ihren Satz laut. Dann bewertet jedes Team das ANDERE Team mit der Ja/Nein-Karte, du stimmst immer mit. Tippe die Ja-Stimmen ein: Jedes Ja ist ein Punkt, bei Mehrheit wächst der Stärken-Turm. Danach zeigt das Spiel zwei Profi-Reframes. Speed-Match (1 Runde, nur wenn die Zeit reicht): Ein Profi-Reframe erscheint, die Teams halten die passende Buchstaben-Karte (A–D) hoch. Du tippst, welches Team zuerst war und welche Karte es zeigt. Bei guter Begründung für eine andere Karte kannst du trotzdem +2 geben. Die Etiketten sind allgemein. Bitte darauf achten, dass niemand sie auf eine Person im Raum bezieht. Eigene Etiketten nennen ist in der Nachbesprechung freiwillig.',
+    teacherNote: 'Im Spiel heißt die Mission „Konter-Battle“, das Etikett „Spruch“ und der Stärken-Turm „Crew-Tower“. Zwei Teams. Battle (2 Runden): Ein Etikett erscheint („Du bist zu laut.“). 30 Sekunden überlegt jedes Team einen Reframe („Wer laut ist, …“). Beide Teams sagen ihren Satz laut. Dann sagt jedes Team dem ANDEREN zuerst einen Feedback-Satz („Stark an eurem Konter war …“) und bewertet es danach mit der Ja/Nein-Karte, du stimmst immer mit. Tippe die Ja-Stimmen ein: Jedes Ja ist ein Punkt, bei Mehrheit wächst der Stärken-Turm. Danach zeigt das Spiel zwei Profi-Reframes. Speed-Match (1 Runde, nur wenn die Zeit reicht): Ein Profi-Reframe erscheint, die Teams halten die passende Buchstaben-Karte (A–D) hoch. Du tippst, welches Team zuerst war und welche Karte es zeigt. Bei guter Begründung für eine andere Karte kannst du trotzdem +2 geben. Die Etiketten sind allgemein. Bitte darauf achten, dass niemand sie auf eine Person im Raum bezieht. Eigene Etiketten nennen ist in der Nachbesprechung freiwillig.',
     debrief: [
       'Welcher Konter hat dich heute überrascht?',
       'Kennst du einen Spruch, den du selbst schon gehört hast? Welche Stärke steckt darin? (Nur wenn du magst.)',
@@ -558,7 +559,8 @@
         h('span', { class: 'eyebrow' }, 'Solo · Stärken-Training'),
         h('h1', { class: 'outline-text' }, 'Konter-Rush'),
         h('p', { class: 'lead' }, 'Du siehst eine Stärke. Welcher Spruch steckt dahinter?'),
-        h('p', { class: 'muted' }, SOLO_CARDS + ' Karten. Kein Zeitdruck. Jeder Treffer baut deinen Turm.'),
+        h('p', { class: 'muted' }, SOLO_CARDS + ' Karten. Kein Zeitdruck. Jeder Treffer baut deinen Turm. Danach: Level 2 – selbst kontern.'),
+        CREW.games && CREW.games.warumCard ? CREW.games.warumCard(CREW.games.didaktik('solo', 'reframe'), { compact: true }) : null,
         ui.xHint()),
       h('div', { class: 'reframe-solo-demo enter-2' }, flipTag(demoCard, { demo: true, small: true }).el),
     ]);
@@ -614,12 +616,72 @@
           h('span', { class: 'eyebrow enter' }, 'Dein Tower'),
           h('h2', { class: 'enter' }, hits + ' von ' + cards.length + ' Treffern'),
           best ? h('p', { class: 'lead enter-2' }, best.isNew && hits > 0 ? 'Neuer Bestwert!' : 'Dein Bestwert: ' + best.best) : null,
-          h('p', { class: 'muted enter-3' }, hits ? 'Jede Stärke im Turm war vorher ein blöder Spruch.' : 'Knifflig heute. Beim nächsten Mal wächst der Turm.')),
+          h('p', { class: 'muted enter-3' }, hits ? 'Jede Stärke im Turm war vorher ein blöder Spruch.' : 'Knifflig heute. Beim nächsten Mal wächst der Turm.'),
+          h('div', { class: 'card reframe-l2-teaser enter-3' }, h('b', null, 'Level 2: Selbst kontern'), h('span', { class: 'muted small' }, 'Jetzt kommt der Spruch – und du findest den Konter.'))),
         h('div', { class: 'reframe-tower-slot' }, tower(G, { roof: true, roofFresh: true }))),
     ]);
     CREW.sound.play(hits >= cards.length / 2 ? 'great' : 'good');
     if (best && best.isNew && hits > 0) ui.confetti(90);
-    const r = await ctx.waitFor(ui.choice(v.acts, [{ label: 'Nochmal', value: 'again', variant: 'ghost', icon: 'shuffle', id: 'rf-solo-again' }, { label: 'Fertig', value: 'done', iconRight: 'right', id: 'rf-solo-done' }]));
+    const r = await ctx.waitFor(ui.choice(v.acts, [{ label: 'Nochmal', value: 'again', variant: 'ghost', icon: 'shuffle', id: 'rf-solo-again' }, { label: 'Level 2', value: 'level2', variant: 'ghost', icon: 'sparkle', id: 'rf-solo-level2' }, { label: 'Fertig', value: 'done', iconRight: 'right', id: 'rf-solo-done' }]));
+    return r === 'again' ? 'again' : r === 'level2' ? 'level2' : 'done';
+  }
+
+  /* ---------- Solo Level 2: Selbst kontern (Spruch → eigener Konter im Kopf → Profi-Konter) ---------- */
+  const L2_CARDS = 3;
+  async function soloKontern(ctx) {
+    const { ui, SKIP } = ctx;
+    const cards = ctx.pick('reframe', L2_CARDS);
+    let eigene = 0;
+    for (let i = 0; i < cards.length; i++) {
+      const card = cards[i];
+      const label = 'Level 2 · Spruch ' + (i + 1) + ' von ' + cards.length;
+      // a) Spruch + Satzanfang: Konter im Kopf (wird nirgends eingegeben)
+      const v1 = view(ctx, [
+        h('div', { class: 'reframe-center enter' },
+          h('span', { class: 'eyebrow' }, label),
+          h('div', { class: 'reframe-kicker' }, h('span', null, 'Jemand bekommt gesagt:'), ui.speakBtn('Jemand bekommt gesagt: ' + card.satz + ' Dein Konter: ' + card.wer + ', …')),
+          flipTag(card).el),
+        h('div', { class: 'reframe-think enter-2' },
+          h('div', { class: 'reframe-think-txt' },
+            h('h2', null, 'Dein Konter?'),
+            h('p', { class: 'lead' }, 'Denk ihn dir – oder flüster ihn. Startet so:'),
+            h('div', { class: 'reframe-starter' }, card.wer + ', …'),
+            h('p', { class: 'muted small' }, 'Nichts wird eingetippt oder gespeichert.'))),
+      ]);
+      const r1 = await ctx.waitFor(ui.choice(v1.acts, [{ label: 'Keine Idee', value: 'none', variant: 'ghost', id: 'rf-l2-none' }, { label: 'Hab einen', value: 'got', iconRight: 'right', id: 'rf-l2-got' }]));
+      if (r1 === SKIP) continue;
+      if (r1 === 'got') eigene++;
+      // b) Profi-Konter zum Vergleichen: Welcher klingt nach dir?
+      const tag = flipTag(card, { small: true });
+      const list = h('div', { class: 'stack' }, card.reframes.map((t, k) => {
+        const b = h('button', { type: 'button', class: 'reframe-opt as-btn', 'data-profi': String(k) }, h('span', { class: 'reframe-opt-text' }, card.wer + ' ' + t));
+        b.addEventListener('click', () => { CREW.sound.play('tap'); list.querySelectorAll('button').forEach((x) => x.classList.toggle('ok', x === b)); });
+        return b;
+      }));
+      const v2 = view(ctx, [
+        h('div', { class: 'reframe-split' },
+          h('div', { class: 'stack' },
+            h('span', { class: 'eyebrow enter' }, label),
+            h('h2', { class: 'enter' }, r1 === 'got' ? 'Vergleich: So kontern Profis' : 'So kontern Profis'),
+            h('p', { class: 'muted enter' }, 'Welcher klingt am meisten nach dir? Tippen ist freiwillig.'),
+            h('div', { class: 'enter-2' }, list)),
+          h('div', { class: 'reframe-tower-slot' }, tag.el)),
+      ]);
+      await ctx.sleep(300);
+      tag.flip();
+      const r2 = await ctx.waitFor(ui.choice(v2.acts, [{ label: i < cards.length - 1 ? 'Nächster Spruch' : 'Fertig', value: 'next', iconRight: 'right', id: 'rf-l2-next' }]));
+      if (r2 === SKIP) continue;
+    }
+    // Ende Level 2: Das hast du geübt
+    const v = view(ctx, [
+      h('div', { class: 'stack', style: { alignItems: 'center', textAlign: 'center', gap: '8px' } },
+        h('span', { class: 'eyebrow enter' }, 'Level 2 geschafft'),
+        h('h2', { class: 'enter' }, eigene ? eigene + ' von ' + cards.length + ' Kontern selbst gefunden' : 'Profi-Konter gesammelt'),
+        h('p', { class: 'muted enter-2' }, 'Wenn dich ein Spruch trifft: erst atmen, dann denken „Wer so ist, …“.')),
+      CREW.games && CREW.games.soloNach ? CREW.games.soloNach(CREW.games.didaktik('solo', 'reframe')) : null,
+    ]);
+    CREW.sound.play('good');
+    const r = await ctx.waitFor(ui.choice(v.acts, [{ label: 'Nochmal', value: 'again', variant: 'ghost', icon: 'shuffle', id: 'rf-l2-again' }, { label: 'Fertig', value: 'done', iconRight: 'right', id: 'rf-l2-done' }]));
     return r === 'again' ? 'again' : 'done';
   }
 
@@ -630,7 +692,8 @@
     icon: 'sparkle',
     async run(ctx) {
       for (;;) {
-        const r = await soloRound(ctx);
+        let r = await soloRound(ctx);
+        if (r === 'level2') r = await soloKontern(ctx);
         if (r !== 'again') return;
       }
     },

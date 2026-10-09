@@ -355,7 +355,10 @@
     clear(holder);
     holder.appendChild(h('div', { class: 'card feed-call enter' },
       h('div', { class: 'feed-call-h' }, CREW.icon('eye', 22), h('b', null, 'Was zeigen die Teams?')),
-      rows, h('div', { class: 'row end' }, reveal)));
+      rows,
+      // Begründen vor dem Auflösen: ein Satz pro Team
+      h('p', { class: 'feed-why' }, CREW.icon('chat', 18), h('span', null, h('b', null, 'Vor dem Auflösen: '), 'Jedes Team sagt in einem Satz, warum.')),
+      h('div', { class: 'row end' }, reveal)));
     mark(G, cfg.stage + '-call');
     scrollIn(reveal);
     return ctx.waitFor(p2);
@@ -846,6 +849,7 @@
       kinds,
       h('p', { class: 'muted' }, G.solo ? 'Tippe an, was du machen würdest. Du siehst sofort, was passiert.' : 'Teilt euch in zwei Teams. Jedes Team einigt sich leise und zeigt es.'),
       G.solo ? ui.xHint('Mit dem X oben rechts kannst du jeden Post und jede Runde überspringen. Ohne Grund.') : null,
+      G.solo && CREW.games && CREW.games.warumCard ? CREW.games.warumCard(CREW.games.didaktik('solo', 'feed'), { compact: true }) : null,
       formula);
     G.wrap = ctx.screen([h('div', { class: 'feed-main feed-intro' }, h('div', { class: 'feed-left' }, lock.el), side)]);
     lock.run();
@@ -889,6 +893,7 @@
         h('div', { class: 'feed-endrow' }, CREW.icon('star', 48), num, h('span', { class: 'display feed-endlbl' }, 'von ' + G.max.solo)),
         best.isNew && G.pts.solo > 0 ? h('span', { class: 'pill good' }, 'Neuer Bestwert!') : h('span', { class: 'pill' }, 'Dein Bestwert: ' + best.best)),
       tipCard(),
+      CREW.games && CREW.games.soloNach ? CREW.games.soloNach(CREW.games.didaktik('solo', 'feed')) : null,
     ], { center: true, narrow: true });
     G.wrap = wrap;
     CREW.sound.play('good');
@@ -943,7 +948,7 @@
       { code: 'SOZ-37', text: 'versteht, wie es anderen geht, und nimmt Rücksicht' },
       { code: 'SOZ-39', text: 'entscheidet nach eigenen Werten, auch unter Druck' },
     ],
-    teacherNote: 'Zwei Teams, drei schnelle Runden auf einem erfundenen Handy („Glimmr“). Rundentypen: Echt, Meinung oder Fake? (Antwort-Karte A = Echt, B = Meinung, C = Fake; Fake erwischt = 2 Punkte), Was machst du? (A–D), Gerücht-Kette (bei jedem Schritt: Ja = wir stoppen hier), Gruppendruck (A–D). Jedes Team einigt sich leise. Auf „Zeigt her!“ hält pro Team eine Person die Karte hoch (oder alle, dann zählt die Mehrheit). Du tippst an, was jedes Team zeigt. Punkte: stark 3, gut 2, okay 1, riskant 0; Echt/Meinung 1 pro Kommentar, Fake 2; Kette: früh gestoppt 2, später 1, plus 1 für einen starken Weg. Beide Teamkonten zählen am Ende zusammen für die Crew. Es gibt kein „Falsch“: Die Folgen werden nur sichtbar. „Alle Wege“ zeigt, was die anderen Antworten bewirkt hätten – gut zum Nachfragen. Vapes, Familie und Geld sind als heikel markiert. Die X-Karte überspringt einen Kommentar oder eine Runde. Am Ende steht die BEE SECURE Helpline (8002 1234).',
+    teacherNote: 'Zwei Teams, drei schnelle Runden auf einem erfundenen Handy („Glimmr“). Rundentypen: Echt, Meinung oder Fake? (Antwort-Karte A = Echt, B = Meinung, C = Fake; Fake erwischt = 2 Punkte), Was machst du? (A–D), Gerücht-Kette (bei jedem Schritt: Ja = wir stoppen hier), Gruppendruck (A–D). Jedes Team einigt sich leise. Auf „Zeigt her!“ hält pro Team eine Person die Karte hoch (oder alle, dann zählt die Mehrheit). Du tippst an, was jedes Team zeigt. Punkte: stark 3, gut 2, okay 1, riskant 0; Echt/Meinung 1 pro Kommentar, Fake 2; Kette: früh gestoppt 2, später 1, plus 1 für einen starken Weg. Beide Teamkonten zählen am Ende zusammen für die Crew. Es gibt kein „Falsch“: Die Folgen werden nur sichtbar. „Alle Wege“ zeigt, was die anderen Antworten bewirkt hätten – gut zum Nachfragen. Vapes, Familie und Geld sind als heikel markiert. Die X-Karte überspringt einen Kommentar oder eine Runde. Am Ende steht die BEE SECURE Helpline (8002 1234). Vertiefung: Bevor du auflöst, sagt jedes Team einen Satz, warum es das gezeigt hat (Begründen).',
     debrief: [
       'Warum leiten Leute Gerüchte weiter, obwohl sie nicht wissen, ob es stimmt?',
       'Hast du schon mal erlebt, dass online etwas ganz anders war als in echt?',
