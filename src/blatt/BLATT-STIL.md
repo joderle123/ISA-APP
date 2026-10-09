@@ -506,6 +506,16 @@ und Satz der Woche), wenn `woche.elternbrief` da ist. Sie erscheinen in der Tool
   - Tisch und Küche: becher, teller, tasse, loeffel, kanne, milch, brot, mehl, teig, ofen, ausstechform, topf, kelle, salat.
   - Bad und Zuhause: seife, handtuch, waschbecken, zahnbuerste, zahnpasta, spiegel, sofa, tisch, stuhl, bett, regal, spielzeugkiste.
   - Licht, Verkehr, Baustelle, Theater: laterne, taschenlampe, led-kerze, zebrastreifen, bushaltestelle, bus, bagger, kran, helm, buehne, krone, maske.
+- **Farbige Motive: Forschen, Schule, Bewegung, Sage** (`src/blatt/motive-lernen.ts`, auf Karten ≈ 18 mm noch erkennbar, im
+  Schwarzweißdruck lesbar, auch als Ausmalbild mit `modus: "anmalen"`; ohne Schrift, Marken und Zeichen):
+  - Forschen und Entdecken: leuchttisch (mit bunten, durchscheinenden Formen), lupe, magnet (rot-blauer Hufeisenmagnet),
+    kompass (ohne Buchstaben), knete (Kugel, Rolle, Stern), sanduhr, wasseruhr.
+  - Schule, Bücher, Malen: schule (Gebäude mit Uhr im Giebel), buch (aufgeschlagenes Bilderbuch), buecherregal
+    (nur Bücher; auch für „Bibliothek“), pinsel, radiergummi.
+  - Bewegung, Musik, Zirkus: mikrofon, trommel, zirkuszelt, turnmatte (Matte und Bank), rad (Holzrad), fallschirm (Spielfigur am Schirm).
+  - Zuhause und Garten: muelltonne (allgemein, ohne Aufdruck), gartenschlauch.
+  - Sage von Melusina: fee (Wasserfee mit Fischschwanz, Oberteil mit Ärmeln), ritter (freundliche Ganzfigur; Gegenstück zur
+    ritterin). Für Brücke und Ballon gibt es schon `bruecke` und `ballon`, für Spielzeug-Regale `regal`.
 
 Figuren-Namen erscheinen **nicht** im Bild – in Geschichten dürfen die Kinder
 anders heißen. Bilder sparsam und gezielt einsetzen, nie als Dekoration.

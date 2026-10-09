@@ -11,49 +11,49 @@ import { gesichtsZuege } from './gesichter'
 import { haarHinten, haarVorne, masse, tube, type Mass, type Typ } from './figuren'
 
 const T = 'tinte'
-type VB = [number, number, number, number]
+export type VB = [number, number, number, number]
 
 // --- Farben ------------------------------------------------------------------
-const ROT = '#D9574A'
-const ROT_D = '#A9423A'
-const ORANGE = '#EE9A4D'
-const GELB = '#F2C94C'
-const GELB_D = '#D9A62E'
-const GRUEN = '#7DB46C'
-const GRUEN_D = '#4F8A45'
-const HELLGRUEN = '#B9DC9A'
-const BLAU = '#5B8BD0'
-const BLAU_D = '#34507F'
-const HELLBLAU = '#A9D2EE'
-const GLAS = '#E3EEF7'
-const LILA = '#9B7FC8'
-const ROSA = '#EFA7B6'
-const BRAUN = '#9A6A44'
-const HOLZ = '#DDB27A'
-const HOLZ_D = '#B07D4A'
-const CREME = '#FFF4DC'
-const GRAU = '#A8B0BD'
-const DUNKEL = '#4A5262'
-const METALL = '#CDD5DE'
-const WANGE = '#F4A9A0'
-const LICHT = '#FFD34D'
+export const ROT = '#D9574A'
+export const ROT_D = '#A9423A'
+export const ORANGE = '#EE9A4D'
+export const GELB = '#F2C94C'
+export const GELB_D = '#D9A62E'
+export const GRUEN = '#7DB46C'
+export const GRUEN_D = '#4F8A45'
+export const HELLGRUEN = '#B9DC9A'
+export const BLAU = '#5B8BD0'
+export const BLAU_D = '#34507F'
+export const HELLBLAU = '#A9D2EE'
+export const GLAS = '#E3EEF7'
+export const LILA = '#9B7FC8'
+export const ROSA = '#EFA7B6'
+export const BRAUN = '#9A6A44'
+export const HOLZ = '#DDB27A'
+export const HOLZ_D = '#B07D4A'
+export const CREME = '#FFF4DC'
+export const GRAU = '#A8B0BD'
+export const DUNKEL = '#4A5262'
+export const METALL = '#CDD5DE'
+export const WANGE = '#F4A9A0'
+export const LICHT = '#FFD34D'
 
 // Hauttöne (wie die Figuren, dazu ein dunklerer)
-const H1 = '#F6DDC8'
-const H2 = '#F0CDAD'
-const H3 = '#DDB08A'
-const H4 = '#C58C66'
-const H5 = '#9C6A48'
-const H6 = '#74472E'
+export const H1 = '#F6DDC8'
+export const H2 = '#F0CDAD'
+export const H3 = '#DDB08A'
+export const H4 = '#C58C66'
+export const H5 = '#9C6A48'
+export const H6 = '#74472E'
 
 // --- Bausteine ------------------------------------------------------------------
-const z = (vb: VB, formen: Form[], w = 2.4): Zeichnung => ({ vb, formen, w })
-const g = (tf: string, formen: Form[], o?: number): Form => ({ t: 'g', tf, formen, o })
-const glanz = (d: string, w = 3, o = 0.85): Form => ({ t: 'path', d, s: 'papier', f: 'none', w, o })
-const linie = (d: string, w = 2, s = T): Form => ({ t: 'path', d, s, f: 'none', w })
+export const z = (vb: VB, formen: Form[], w = 2.4): Zeichnung => ({ vb, formen, w })
+export const g = (tf: string, formen: Form[], o?: number): Form => ({ t: 'g', tf, formen, o })
+export const glanz = (d: string, w = 3, o = 0.85): Form => ({ t: 'path', d, s: 'papier', f: 'none', w, o })
+export const linie = (d: string, w = 2, s = T): Form => ({ t: 'path', d, s, f: 'none', w })
 
 /** Saubere Gesamtsilhouette: erst dick umranden, dann ohne Rand füllen (wie motive.ts). */
-function silhouette(formen: Form[], fuellung: string, strich = 4.4): Form[] {
+export function silhouette(formen: Form[], fuellung: string, strich = 4.4): Form[] {
   const mit = (f: Form, extra: { s: string; w?: number; f: string }): Form =>
     f.t === 'g' ? { ...f, formen: f.formen.map((x) => mit(x, extra)) } : ({ ...f, ...extra } as Form)
   return [...formen.map((f) => mit(f, { s: T, w: strich, f: T })), ...formen.map((f) => mit(f, { s: 'none', f: fuellung }))]
@@ -66,7 +66,7 @@ function schein(formen: Form[], breite = 9): Form[] {
 }
 
 // --- Gesichter (Raster 100 × 100 wie gesichter.ts) ---------------------------------
-type Ausdruck = 'lacht' | 'laechelt' | 'sanft' | 'traurig'
+export type Ausdruck = 'lacht' | 'laechelt' | 'sanft' | 'traurig'
 
 const WANGEN: Form[] = [
   { t: 'ellipse', cx: 26, cy: 60, rx: 7, ry: 4.5, f: WANGE, s: 'none', o: 0.85 },
@@ -83,7 +83,7 @@ const LACHMUND: Form[] = [
   { t: 'path', d: 'M40 76 Q50 70 60 76 Q56 81 50 81 Q44 81 40 76 Z', f: '#E8837A', s: 'none' },
 ]
 
-function zuege(a: Ausdruck): Form[] {
+export function zuege(a: Ausdruck): Form[] {
   switch (a) {
     case 'lacht':
       return [...WANGEN, ...BRAUEN, ...AUGEN, ...LACHMUND]
@@ -97,7 +97,7 @@ function zuege(a: Ausdruck): Form[] {
 }
 
 /** Gesichtszüge (100er-Raster) auf einen Kopf setzen – wie figuren.ts. */
-function aufKopf(formen: Form[], kx: number, ky: number, kr: number): Form {
+export function aufKopf(formen: Form[], kx: number, ky: number, kr: number): Form {
   const k = (kr * 0.96) / 43
   return g(`translate(${(kx - 50 * k).toFixed(2)} ${(ky + 2 - 52 * k).toFixed(2)}) scale(${k.toFixed(4)})`, formen)
 }
@@ -113,12 +113,12 @@ const BRILLE: Form[] = [
 
 // --- Ganze Figur (Raster 100 × 160 wie figuren.ts) -----------------------------------
 type P = [number, number]
-interface Arm {
+export interface Arm {
   /** Kontrollpunkt (Ellbogen) und Hand */
   c: P
   h: P
 }
-interface FigurPlan {
+export interface FigurPlan {
   t: Typ
   gesicht?: Form[]
   armL?: Arm | null
@@ -133,12 +133,12 @@ interface FigurPlan {
   schatten?: boolean
 }
 
-function schuh(x: number, y: number, rechts: boolean, winkel = 0): Form {
+export function schuh(x: number, y: number, rechts: boolean, winkel = 0): Form {
   const d = rechts ? `M10 5 Q10 -3 1 -3 Q-5 -3 -5 5 Z` : `M-10 5 Q-10 -3 -1 -3 Q5 -3 5 5 Z`
   return g(`translate(${x} ${y}) rotate(${winkel})`, [{ t: 'path', d, f: T, s: T, w: 1.5 }])
 }
 
-function figur(p: FigurPlan): Form[] {
+export function figur(p: FigurPlan): Form[] {
   const t = p.t
   const m = masse(t.alter)
   const { kx, ky, kr, schulterY: sY, shirtUnten: sU, fussY, breite: b } = m
@@ -185,9 +185,9 @@ function figur(p: FigurPlan): Form[] {
   return out
 }
 
-const kind = (haar: Typ['haar'], haarFarbe: string, haut: string, shirt: string, hose = '#3E4A60', extra?: string): Typ => ({ haar, haarFarbe, haut, shirt, hose, alter: 'kind', extra })
-const hand = (x: number, y: number, haut: string, r = 5): Form => ({ t: 'circle', cx: x, cy: y, r, f: haut, s: T, w: 2.2 })
-const herz = (x: number, y: number, s = 1, f = ROT): Form =>
+export const kind = (haar: Typ['haar'], haarFarbe: string, haut: string, shirt: string, hose = '#3E4A60', extra?: string): Typ => ({ haar, haarFarbe, haut, shirt, hose, alter: 'kind', extra })
+export const hand = (x: number, y: number, haut: string, r = 5): Form => ({ t: 'circle', cx: x, cy: y, r, f: haut, s: T, w: 2.2 })
+export const herz = (x: number, y: number, s = 1, f = ROT): Form =>
   g(`translate(${x} ${y}) scale(${s})`, [{ t: 'path', d: 'M0 6 Q-10 -1 -7 -6 Q-4 -10 0 -5 Q4 -10 7 -6 Q10 -1 0 6 Z', f, s: T, w: 1.8 }])
 
 // --- 1. Menschen zusammen ---------------------------------------------------------------
@@ -264,7 +264,7 @@ function babyMotiv(): Zeichnung {
 }
 
 /** Brustbild (Raster 120 breit, Kopf bei 60/50, Rumpf bis 124). */
-interface BrustPlan {
+export interface BrustPlan {
   t: Typ
   gesicht?: Form[]
   kleid?: string
@@ -278,9 +278,9 @@ interface BrustPlan {
   oben?: number
   vb?: VB
 }
-const BK: Mass = { kx: 60, ky: 50, kr: 25, schulterY: 82, shirtUnten: 124, fussY: 124, breite: 36 }
+export const BK: Mass = { kx: 60, ky: 50, kr: 25, schulterY: 82, shirtUnten: 124, fussY: 124, breite: 36 }
 
-function brust(p: BrustPlan): Zeichnung {
+export function brust(p: BrustPlan): Zeichnung {
   const t = p.t
   const kleid = p.kleid ?? t.shirt
   const { kx, ky, kr } = BK
@@ -308,7 +308,7 @@ function brust(p: BrustPlan): Zeichnung {
   return z(p.vb ?? [0, oben, 120, 128 - oben], out)
 }
 
-const erw = (haar: Typ['haar'], haarFarbe: string, haut: string, shirt: string, extra?: string): Typ => ({ haar, haarFarbe, haut, shirt, hose: '#3E4A60', alter: 'erwachsen', extra })
+export const erw = (haar: Typ['haar'], haarFarbe: string, haut: string, shirt: string, extra?: string): Typ => ({ haar, haarFarbe, haut, shirt, hose: '#3E4A60', alter: 'erwachsen', extra })
 
 function oma(): Zeichnung {
   const t = erw('dutt', '#D3D6DB', H4, '#B57BA8')
@@ -797,7 +797,7 @@ function handOffen(): Zeichnung {
 }
 
 // --- 4. Kleidung und Gepäck -----------------------------------------------------------------------
-const tropfen = (x: number, y: number, s = 1): Form =>
+export const tropfen = (x: number, y: number, s = 1): Form =>
   g(`translate(${x} ${y}) scale(${s})`, [{ t: 'path', d: 'M0 -7 Q-5 -1 -5 2.5 Q-5 7 0 7 Q5 7 5 2.5 Q5 -1 0 -7 Z', f: HELLBLAU, s: T, w: 1.8 }])
 
 function rippen(x1: number, x2: number, y1: number, y2: number, abstand: number, farbe: string): Form[] {
@@ -1182,7 +1182,7 @@ function ofen(): Zeichnung {
   ])
 }
 
-function sternPfad(cx: number, cy: number, R: number, r: number): string {
+export function sternPfad(cx: number, cy: number, R: number, r: number): string {
   const p: string[] = []
   for (let i = 0; i < 10; i++) {
     const a = -Math.PI / 2 + (Math.PI * i) / 5
