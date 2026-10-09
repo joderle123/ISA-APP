@@ -301,7 +301,8 @@ function Deckblatt({ aufbau, sprache, p }: { aufbau: KarteiAufbau; sprache: Spra
   const weiss = (o: number) => `rgba(255,255,255,${o})`
   return (
     <Page size="A4" style={{ padding: 0 }}>
-      <View style={{ height: 470, backgroundColor: p.tief }}>
+      {/* ab 16 Themen (6 Reihen) braucht die Themenliste mehr Platz */}
+      <View style={{ height: themen.length > 15 ? 372 : 470, backgroundColor: p.tief }}>
         <Deko p={p} />
         <View style={{ position: 'absolute', left: 48, top: 56, width: 290 }}>
           <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.5, letterSpacing: 1.6, color: p.mittel }}>{t.bereich.toUpperCase()}</Text>

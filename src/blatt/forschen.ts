@@ -51,6 +51,9 @@ export const THEMA_BILD: Record<string, BildId> = {
   unterwegs: 'icon:bus',
   feste: 'icon:confetti',
   fantasie: 'icon:wand',
+  forschen: 'icon:microscope',
+  sprachen: 'icon:books',
+  kunst: 'icon:masks-theater',
 }
 
 /** Höchstlängen (Zeichen) – so passt die Seite „Forschen“ immer auf eine Seite, auch auf Französisch. */
