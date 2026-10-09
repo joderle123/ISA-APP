@@ -1,0 +1,110 @@
+{
+ "alltagsdinge": {
+  "de": "Alltagsgegenstände",
+  "fr": "objets du quotidien"
+ },
+ "ball": {
+  "de": "weicher Ball",
+  "fr": "balle molle"
+ },
+ "becher": {
+  "de": "Becher",
+  "fr": "gobelets"
+ },
+ "buecher": {
+  "de": "Bücher",
+  "fr": "livres"
+ },
+ "decke": {
+  "de": "Decke",
+  "fr": "couverture"
+ },
+ "glas": {
+  "de": "Glas",
+  "fr": "verre"
+ },
+ "heft": {
+  "de": "kleines Heft",
+  "fr": "petit carnet"
+ },
+ "kissen": {
+  "de": "Kissen",
+  "fr": "coussins"
+ },
+ "klebeband": {
+  "de": "Klebeband",
+  "fr": "ruban adhésif"
+ },
+ "kleber": {
+  "de": "Kleber",
+  "fr": "colle"
+ },
+ "korb": {
+  "de": "Papierkorb oder Eimer",
+  "fr": "corbeille ou seau"
+ },
+ "lampe": {
+  "de": "kühle Tischlampe",
+  "fr": "lampe de bureau froide"
+ },
+ "lineal": {
+  "de": "Lineal",
+  "fr": "règle"
+ },
+ "loeffel": {
+  "de": "Löffel",
+  "fr": "cuillère"
+ },
+ "papier": {
+  "de": "Papier",
+  "fr": "papier"
+ },
+ "radiergummi": {
+  "de": "Radiergummi",
+  "fr": "gomme"
+ },
+ "schere": {
+  "de": "Schere",
+  "fr": "ciseaux"
+ },
+ "schuhkarton": {
+  "de": "Schuhkarton",
+  "fr": "boîte à chaussures"
+ },
+ "socke": {
+  "de": "Socke oder Stoffbeutel",
+  "fr": "chaussette ou sac en tissu"
+ },
+ "spielkarten": {
+  "de": "Spielkarten",
+  "fr": "cartes à jouer"
+ },
+ "stifte": {
+  "de": "Stifte",
+  "fr": "crayons"
+ },
+ "stuhl": {
+  "de": "Stuhl",
+  "fr": "chaise"
+ },
+ "tuch": {
+  "de": "Tuch",
+  "fr": "foulard"
+ },
+ "uhr": {
+  "de": "Uhr oder Timer",
+  "fr": "montre ou minuteur"
+ },
+ "wuerfel": {
+  "de": "Würfel",
+  "fr": "dé"
+ },
+ "zeitschrift": {
+  "de": "Zeitschrift",
+  "fr": "magazine"
+ },
+ "zeitung": {
+  "de": "Zeitung",
+  "fr": "journal"
+ }
+}
