@@ -71,3 +71,11 @@ export function altersband(alter: number): string {
 export function istEldib(code: string): boolean {
   return /^[A-Z]{1,4}-\d{1,3}$/.test(code)
 }
+
+/** Satzgrenze ohne Abkürzungen („z. B.“, „d. h.“, „u. a.“, „ca.“, „bzw.“, „Nr.“, „S.“, „p. ex.“): Blind-Bewertung 9.10. –
+ *  „(z.“ stand als abgeschnittener Satz im Planblatt. */
+export const SATZ_GRENZE = /(?<!(?:^|[\s(„«])(?:[A-Za-zäöüÄÖÜ]|ca|bzw|vgl|ggf|usw|etc|evtl|inkl|Nr|Min|max|min|bspw|ex|cf|env|Mme|ev|resp)\.)(?<=[.!?])\s+/
+/** Wie SATZ_GRENZE, aber nur vor einem Satzanfang (Großbuchstabe, Anführungszeichen, Klammer). */
+export const SATZ_GRENZE_GROSS = /(?<!(?:^|[\s(„«])(?:[A-Za-zäöüÄÖÜ]|ca|bzw|vgl|ggf|usw|etc|evtl|inkl|Nr|Min|max|min|bspw|ex|cf|env|Mme|ev|resp)\.)(?<=[.!?])\s+(?=[A-ZÄÖÜ„«(])/
+/** Wie SATZ_GRENZE, trennt zusätzlich nach „;“ (Listen in der Vorbereitung). */
+export const SATZ_GRENZE_SEMI = /(?<!(?:^|[\s(„«])(?:[A-Za-zäöüÄÖÜ]|ca|bzw|vgl|ggf|usw|etc|evtl|inkl|Nr|Min|max|min|bspw|ex|cf|env|Mme|ev|resp)\.)(?<=[.;!?])\s+/

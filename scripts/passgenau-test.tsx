@@ -177,7 +177,8 @@ function verstoesse(p: Profil, a: Auftrag, plan: Plan): string[] {
       // und der Planer selbst stimmt zu (gleiche Regeln, ohne Lockerung 4)
       if (!t.locker) {
         const g = pruefe(e, c, { blatt: t.blatt, ritual: t.ritual, vorher })
-        if (g && g !== 'schon in der Folge') w(`pruefe: ${g}`)
+        // „nur auf Deutsch“ gibt die Lockerungsleiter frei, wenn Französisches fehlt
+        if (g && g !== 'schon in der Folge' && g !== 'nur auf Deutsch') w(`pruefe: ${g}`)
       }
     }
   }
@@ -253,7 +254,8 @@ await pruefung('Weg 1/2/3 für 5, 9 und 14 Jahre: Minuten, Bogen, Kern, Blatt, R
       soll(ph.every((x, i) => i === 0 || x >= ph[i - 1]), `${name}: Bogen nicht monoton ${plan.sitzungen.map((s) => s.phase).join(',')}`)
       const teile = plan.sitzungen.flatMap((s) => [...s.schritte.filter((x) => x.rolle !== 'ankommen' && x.rolle !== 'abschluss' && !x.ref.startsWith('pg:')).map((x) => x.ref), ...(s.blatt?.bausteine ?? []).filter((b) => !b.ref.startsWith('pg:')).map((b) => b.ref)])
       soll(new Set(teile).size === teile.length, `${name}: Teil doppelt in der Folge`)
-      const abschluss = new Set(plan.sitzungen.map((s) => s.schritte[s.schritte.length - 1].ref))
+      // gleich in allen Sitzungen; die letzte darf ein Ritual, das auf die nächste Sitzung zählt, durch das eigene ersetzen
+      const abschluss = new Set(plan.sitzungen.map((s, i) => s.schritte[s.schritte.length - 1].ref).filter((r, i, l) => !(i === l.length - 1 && r === 'pg:abschluss' && l.length > 1)))
       soll(abschluss.size === 1, `${name}: Abschluss-Ritual wechselt`)
       if (p.alterJahre < 12) soll(new Set(plan.sitzungen.map((s) => s.schritte[0].ref)).size === 1, `${name}: Ankommens-Ritual wechselt`)
     }
@@ -463,6 +465,8 @@ await pruefung('Lern-Simulation: Kind „liebt Bewegung, schreibt ungern“ übe
       if (art) v = rueckmelden(v, ereignis(art, { t: `${tag}T11:00`, baustein: e.id, grund: art === 'daumen_runter' ? 'mag-nicht' : 'passt-gut', tags: { rolle: x.rolle }, erkundung: x.erkundung }), e)
       gemacht.push({ id: e.id, am: tag })
     }
+    // Formate auch aus dem Blatt (seit Einstieg und Nebenschritte an den Kern gebunden sind, trägt der Kern allein wenig Vielfalt)
+    for (const b of s.blatt?.bausteine ?? []) k.eintraege.get(b.ref)?.format.forEach((f) => formate.add(f))
     anteil.push(gezaehlt ? passend / gezaehlt : 1)
   }
   const spaet = anteil.slice(5)

@@ -7,7 +7,7 @@ import { bausteinInhalt, eldibKurz, intern, merkmaleVon, quelleText, staemme, te
 import { textMerkmale } from './einzel'
 import { kinderblatt } from './blatt'
 import { BOGEN_NAME, KURSVERWEIS_RE, ROLLE_NAME } from './vokabular'
-import { hash8 } from './hilfen'
+import { hash8, SATZ_GRENZE_GROSS } from './hilfen'
 
 export interface DruckSchritt {
   min: number
@@ -98,7 +98,7 @@ function achtungFuer(e: KatalogEintrag, schrittText: string, sicherheitImmer = t
   if (!e.achtung) return undefined
   if (e.typ !== 'schritt' || !(e.id.startsWith('k:') || e.id.startsWith('f:') || e.id.startsWith('m:'))) return e.achtung
   const bezug = staemme(schrittText)
-  const saetze = e.achtung.replace(/\s+/g, ' ').trim().split(/(?<=[.!?])\s+(?=[A-ZÄÖÜ„«(])/)
+  const saetze = e.achtung.replace(/\s+/g, ' ').trim().split(SATZ_GRENZE_GROSS)
   // Sätze über die Gruppe („Für sehr lebhafte Gruppen …“) gelten in der Einzelstunde nicht; ein Schutzsatz bleibt und
   // spricht von der Stunde statt von der Gruppe („nicht in der Gruppe vertiefen, sondern im Einzelgespräch“)
   const bleibt = saetze
@@ -114,7 +114,7 @@ function kuerzen(s: string | undefined, n = KURZ): string | undefined {
   if (!s) return undefined
   const t = s.replace(/\s+/g, ' ').trim()
   if (t.length <= n) return t
-  const saetze = t.split(/(?<=[.!?])\s+(?=[A-ZÄÖÜ„«(])/)
+  const saetze = t.split(SATZ_GRENZE_GROSS)
   let r = saetze[0]
   for (const x of saetze.slice(1)) {
     if (r.length + 1 + x.length > n) break
@@ -142,6 +142,32 @@ const MATERIAL_STANDARD: Record<string, { de: string; fr: string }> = {
   spiegel: { de: 'Spiegel', fr: 'miroir' }, kueche: { de: 'Kochplatte', fr: 'plaque de cuisson' }, schwungtuch: { de: 'Schwungtuch', fr: 'parachute' },
   sanduhr: { de: 'Sanduhr oder Timer', fr: 'sablier ou minuteur' }, lochzange: { de: 'Lochzange', fr: 'perforatrice' }, wolle: { de: 'Wollfaden', fr: 'fil de laine' },
 }
+
+/** Material, das im Text eines Schritts vorkommt, aber nicht beschriftet ist (Blind-Bewertung 9.10.: „Handpuppe,
+ *  Wetterkarte, Sticker fehlen im Material“) – Wort im Text → Schlüssel oder Bezeichnung DE/FR. */
+const MATERIAL_IM_TEXT: [RegExp, string | { de: string; fr: string }][] = [
+  [/Handpuppe|Fingerpuppe|marionnette/i, 'handpuppe'],
+  [/Würfel|\bdé\b/i, 'wuerfel'],
+  [/\bBall\b|Bälle|\bballe\b/i, 'ball'],
+  [/Tücher|Tuch\b|foulard/i, 'tuecher'],
+  [/Knete|pâte à modeler/i, 'knete'],
+  [/Klangschale|bol chantant/i, 'klangschale'],
+  [/Sanduhr|Timer|sablier|minuteur/i, 'sanduhr'],
+  [/Spiegel|miroir/i, 'spiegel'],
+  [/Bauklötze|Bausteine aus Holz|cubes/i, 'bausteine'],
+  [/Wetterkarte|carte météo/i, { de: 'Wetterkarte (Sonne, Wolke, Regen, Gewitter)', fr: 'carte météo (soleil, nuage, pluie, orage)' }],
+  [/Sticker|Aufkleber|autocollant/i, { de: 'Sticker', fr: 'autocollants' }],
+  [/Decke\b|couverture/i, { de: 'Decke', fr: 'couverture' }],
+  [/Kreppband|Klebeband|ruban adhésif/i, { de: 'Kreppband', fr: 'ruban adhésif' }],
+  [/Schachtel|Karton\b|boîte/i, { de: 'Schachtel', fr: 'boîte' }],
+  [/Stofftier|peluche/i, { de: 'Stofftier', fr: 'peluche' }],
+  [/Glas\b|Gläser|bocal/i, { de: 'Glas', fr: 'bocal' }],
+  [/Steine?\b|pierres?\b/i, { de: 'kleine Steine', fr: 'petites pierres' }],
+  [/Seifenblasen|bulles de savon/i, { de: 'Seifenblasen', fr: 'bulles de savon' }],
+  [/Luftballon|ballon de baudruche/i, { de: 'Luftballon', fr: 'ballon de baudruche' }],
+  [/Strohhalm|paille/i, { de: 'Strohhalme', fr: 'pailles' }],
+  [/Wäscheklammer|pince à linge/i, { de: 'Wäscheklammern', fr: 'pinces à linge' }],
+]
 
 function materialName(k: Katalog, m: string, sprache: Sprache): string {
   return intern(k).materialName[m]?.[sprache] ?? MATERIAL_STANDARD[m]?.[sprache] ?? m
@@ -196,6 +222,9 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     if (!e) continue
     if ((x.rolle === 'ankommen' || x.rolle === 'abschluss') && nr > 1 && plan.n > 1) continue
     for (const m of e.material) mat.add(materialName(k, m, sp))
+    // was der Text nennt, kommt dazu (Ritual-Material einer Folge nur in Sitzung 1, wie oben)
+    const tx = e.typ === 'schritt' ? `${e.titel} ${e.einzelvariante?.text ?? e.text}` : ''
+    for (const [re, wer] of MATERIAL_IM_TEXT) if (re.test(tx)) mat.add(typeof wer === 'string' ? materialName(k, wer, sp) : wer[sp])
     if (e.typ === 'schritt' && e.vorbereitung && !e.id.startsWith('s:')) vorbereitung.add(kuerzen(e.vorbereitung, 200)!)
     // Elternbrief der Einheit nur, wenn er diesen Schritt betrifft – und nie bei offenem Kinderschutz-Thema
     if (e.elternbrief && !(p.achtung ?? []).includes('kinderschutz') && e.typ === 'schritt') {
@@ -222,7 +251,8 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       // Herkunft in Worten statt Katalog-Nummer („S-57 · …“ las sich wie ein Code)
       const qTitel = quelle ? ((sp === 'fr' && quelle.fr) || quelle.de).titel : quelleText(e, sp)
       // der Tipp „leichter“ gilt für das ganze Quellblatt: nur einmal je Blatt
-      const tipp = leichter && !KURSVERWEIS_RE.test(leichter) && !tippSchon.has(e.quelle.blatt) ? kuerzen(leichter, 160) : undefined
+      // … und nicht, wenn er auf Teile des Quellblatts zeigt, die hier fehlen („Aufgabe 3“, „Memory“, „Bildkarten“)
+      const tipp = leichter && !KURSVERWEIS_RE.test(leichter) && !textMerkmale(leichter).has('blattverweis') && !/\b(Aufgabe|Karte|Karten|Memory|Bildkarten|Seite)\b/.test(leichter) && !tippSchon.has(e.quelle.blatt) ? kuerzen(leichter, 160) : undefined
       if (tipp) tippSchon.add(e.quelle.blatt)
       return { titel: textVon(e, sp).titel, quelle: sp === 'fr' ? `de la fiche « ${qTitel} »` : `aus dem Blatt „${qTitel}“`, tipp }
     })

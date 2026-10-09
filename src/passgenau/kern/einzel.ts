@@ -40,15 +40,17 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   // Vorsicht koerper
   koerper: /\b(Aussehen|Körperbild|Strand\w*|Bikini|Badeanzug|Gewicht|Figur|dick|dünn|Spiegel\w*|Diät|Kalorien|Körper-Chip|mein Körper verändert)\b|\b(apparence|poids|maillot|plage|régime|miroir)\b/,
   // belastende Sätze (nur mit Hilfe-Zeile; bei offener Krise nie)
-  belastend: /\b(hilft (mir )?(sowieso )?keiner|alles egal|hoffnungslos|wertlos|niemand mag mich|ich hasse mich|nicht mehr leben|sinnlos|am liebsten weg)\b|\b(personne ne m['’]aide|je m['’]en fiche de tout|sans espoir|je ne vaux rien)\b/i,
+  belastend: /\b(hilft (mir )?(sowieso )?keiner|alles egal|hoffnungslos|wertlos|niemand mag mich|keiner mag mich|ich hasse mich|nicht mehr leben|sinnlos|am liebsten weg|ich bin (so )?dumm|ich kann nichts|ich bin nichts wert|ich werde nie|ich bin hässlich|ich bin ein Versager|ich schaffe (das|es) nie|alle sind gegen mich)\b|\b(personne ne m['’]aide|je m['’]en fiche de tout|sans espoir|je ne vaux rien)\b/i,
   // heikel ohne Freischaltung (T-M1 – auch ohne Beschriftung „sensibel“)
   heikel: /\b(Körpergrenze\w*|Körper-Grenze\w*|zu nah|Nähe und Distanz|Grenzen spüren|Körperabstand|Grenzverletzung\w*|Übergriff\w*|Garten-Übung|Selbstverletzung|selbstverletz\w*|Suizid\w*|ritzen|sexuell\w*|Missbrauch|Gewalt zu Hause)\b|\b(automutilation|suicide|abus|agression sexuelle)\b/i,
+  // Themen für Ältere (A10): Dating, Party, Alkohol, Drogen
+  aelter: /\b(Dating|Date|verliebt\w*|Verliebtsein|Liebeskummer|Korb bekommen|einen Korb|Party|Partys|Alkohol|betrunken|Zigarette\w*|Rauchen|Drogen|Kiffen|Joint|Konsum|Vape\w*)\b|\b(amoureux|amoureuse|soirée|alcool|drogue\w*|cigarette\w*)\b/i,
   // Belastendes direkt bearbeiten (bei Vorsicht Trauma nicht)
   mobbing: /\b(Mobbing|gemobbt|Diskriminierung|diskriminier\w*|Rassismus|rassistisch\w*|Forumtheater|Ausgrenzung erleben)\b|\b(harcèlement|discrimination|racisme)\b/i,
   // Notiz für Erwachsene im Text des Kindes (A3)
   fuerleitung: /\b(Für die Leitung|Für die Lehrkraft|Für Lehrpersonen|Hinweis für (die )?(Leitung|Lehrkraft|Fachkraft)|Lehrperson trägt ein|Eltern unterschreiben)\b|\b(pour l['’]enseignant|pour l['’]animateur|à l['’]attention de l['’]enseignant)\b/i,
   // Gefühle abfragen (in Krisenlage nicht, A12)
-  gefuehlfrage: /\b(Wie fühlst du dich|Wie geht es dir|Was macht dich (traurig|wütend|Angst)|ich bin traurig, weil|Ich fühle mich|Daumen (hoch|runter|hoch oder runter)|wie (traurig|wütend) bist du|Gefühl(e)? (benennen|zeigen|abfragen|erzählen)|Welches Tier bist du|Wie ist das Wetter bei dir|wie es (dir|dem Kind) (heute )?geht|wie (es|er|sie) sich (heute )?fühlt|innen heute anfühlt|eigenen Gefühl\w*|persönlichen Beispiel\w*)\b|\b(Comment te sens-tu|Comment ça va|pouce en (haut|bas)|Je me sens|Quel animal es-tu)\b/i,
+  gefuehlfrage: /\b(fühle ich mich|Wie bereit fühlst du dich|wo bist du (jetzt|gerade)|Wie fühlst du dich|Wie geht es dir|Was macht dich (traurig|wütend|Angst)|ich bin traurig, weil|Ich fühle mich|Daumen (hoch|runter|hoch oder runter)|wie (traurig|wütend) bist du|Gefühl(e)? (benennen|zeigen|abfragen|erzählen)|Welches Tier bist du|Wie ist das Wetter bei dir|wie es (dir|dem Kind) (heute )?geht|wie (es|er|sie) sich (heute )?fühlt|innen heute anfühlt|eigenen Gefühl\w*|persönlichen Beispiel\w*)\b|\b(Comment te sens-tu|Comment ça va|pouce en (haut|bas)|Je me sens|Quel animal es-tu)\b/i,
   // Wut ausleben (A4, Ergänzung zu KATHARSIS_RE): stampfen, reißen, schlagen, schreien MIT Wut
   wutausleben: /\b(Wut|wütend|Ärger|Zorn)\b[^.!?]{0,80}\b(stampf\w*|zerreiß\w*|reiß\w*|zerknüll\w*|schlag\w*|box\w*|tret\w*|schrei\w*|werf\w*)|\b(stampf\w*|zerreiß\w*|reiß\w*|zerknüll\w*|box\w*|tret\w*|schrei\w*)\b[^.!?]{0,60}\b(Wut|wütend|Ärger|Zorn)\b/i,
 }

@@ -190,8 +190,26 @@ function textMinuten(e: KatalogEintrag): number {
   return m
 }
 
+const JUNGE_FORMATE = new WeakMap<Kontext, Map<string, number>>()
+/** Formate der Kerne, die das Kind in den letzten 21 Tagen hatte (aus „gemacht“). */
+function jungeKernFormate(c: Kontext): Map<string, number> {
+  let m = JUNGE_FORMATE.get(c)
+  if (m) return m
+  m = new Map()
+  for (const [id, tage] of c.gemacht) {
+    if (tage > 21) continue
+    const e = c.k.eintraege.get(id)
+    if (e && e.typ === 'schritt' && e.rolle.includes('kern') && e.format[0]) m.set(e.format[0], (m.get(e.format[0]) ?? 0) + 1)
+  }
+  JUNGE_FORMATE.set(c, m)
+  return m
+}
+
 function dauerPasst(e: KatalogEintrag, min: number, locker: number): boolean {
   const t = locker >= 1 ? 3 : 1
+  // Blind-Bewertung 9.10.: mehrstufige Kerne in 4–8 Minuten waren nicht machbar – der Slot hat mindestens drei Viertel
+  // der üblichen Dauer (ohne Lockerung)
+  if (locker < 2 && e.typ === 'schritt' && min < 0.75 * e.dauer.typ) return false
   return e.dauer.min <= min + t && e.dauer.max >= min - t
 }
 
@@ -213,10 +231,16 @@ export function kandidaten(c: Kontext, s: SlotAuftrag): Wahl[] {
       if (s.rolle === 'kern' && s.kernFormate?.length === 2 && s.kernFormate[0] === s.kernFormate[1] && e.format[0] === s.kernFormate[0]) continue
       if (s.rolle === 'bewegung' && c.heute.energie >= 6 && e.energie < 2) continue
       // Phasen aus Material-Einheiten sind Teile längerer Stunden: als kurzes Spiel oder Pause weniger passend
-      const malus = e.id.startsWith('m:') && (s.rolle === 'spiel' || s.rolle === 'bewegung' || s.rolle === 'regulation' || s.rolle === 'wahl') ? 0.08 : 0
+      const malus = (e.id.startsWith('m:') && (s.rolle === 'spiel' || s.rolle === 'bewegung' || s.rolle === 'regulation' || s.rolle === 'wahl') ? 0.08 : 0) +
+        // Abwechslung über die Wochen: ein Kern im selben Format wie die Kerne der letzten drei Wochen zählt etwas weniger
+        (s.rolle === 'kern' ? Math.min(0.1, 0.04 * (jungeKernFormate(c).get(e.format[0] ?? '') ?? 0)) : 0)
       const b = bewerte(e, c, { phase: s.phase, formate: s.formate, vorigerKern: s.vorigerKern, fokus: s.fokus, locker, bonus: (s.bevorzugt?.has(e.id) ? 1 : 0) - malus })
       if (phaseSlot && locker < 1 && e.bogen && s.phase !== 'leicht' && b.f.phase < 0.3) continue
-      if (zielSlot && !(b.f.ziel >= (locker >= 2 ? 0.15 : 0.25) || b.f.thema > 0)) continue
+      // Kern: genau das Ziel (ELDiB-Code des Ziels, primär oder sekundär) – ein Nachbar-Code im selben Bereich erst bei
+      // Lockerung (Blind-Bewertung 9.10.: Kerne einer Folge drifteten zu Chat-Ton, Schulden, Gaming bei Ziel „warten“)
+      if (zielSlot && s.rolle === 'kern' && c.ziele.length) {
+        if (!(b.f.ziel >= (locker >= 2 ? 0.25 : 0.4) || (locker >= 3 && b.f.thema > 0))) continue
+      } else if (zielSlot && !(b.f.ziel >= (locker >= 2 ? 0.15 : 0.25) || b.f.thema > 0)) continue
       out.push({ b, locker, lockerText: locker >= 3 && e.typ === 'schritt' ? lockerGrund(c, e, locker) : undefined })
     }
     out.sort((x, y) => rang(x.b, y.b, s.salz))
@@ -241,8 +265,17 @@ function lockerGrund(c: Kontext, e: KatalogEintrag, locker: number): string | un
 // Rituale (5.6): einmal je Folge, Vorlieben des Kindes zuerst; Weg 3: nur, was nichts verlangt (P8)
 // ---------------------------------------------------------------------------------------------------------------------
 
+/** Rituale, die auf eine nächste Sitzung der Folge zählen („In der nächsten Stunde wird zuerst hineingeschaut“) */
+const FOLGE_RITUAL_RE = /(in der nächsten Stunde|nächste[ns]? Mal (wird|ist|liegt|bereit)|über die Folge|der Folge\b|fürs nächste Mal|zur nächsten Stunde|séance suivante|la prochaine fois|de la série|au fil de la série|pour la prochaine fois)/i
+function folgeRitual(e: KatalogEintrag): boolean {
+  if (e.typ !== 'schritt') return false
+  return FOLGE_RITUAL_RE.test(`${e.titel} ${e.text} ${(e.sagen ?? []).join(' ')} ${e.fr?.text ?? ''} ${e.fr?.titel ?? ''}`)
+}
+
 function ritualErlaubt(c: Kontext, e: KatalogEintrag, rolle: 'ankommen' | 'abschluss'): boolean {
   if (e.typ !== 'schritt') return false
+  // Blind-Bewertung 9.10.: Schatz-Schachtel und „Wunsch fürs nächste Mal“ in Einzelstunden versprachen eine nächste Sitzung
+  if (c.weg !== 'gruendlich' && folgeRitual(e)) return false
   const anspruch = e.anspruch ?? 1
   if (c.weg === 'leicht') {
     const still = c.tagesformen.some((t) => ['traurig', 'aengstlich', 'rueckzug', 'will-nicht', 'aufgewuehlt'].includes(t))
@@ -319,7 +352,9 @@ function gleichesThema(e: KatalogEintrag, kern: KatalogEintrag): boolean {
   const codes = new Set(kern.eldib.filter((x) => x.gewicht === 1).map((x) => x.code))
   const ziel = e.eldib.some((x) => x.gewicht === 1 && codes.has(x.code))
   const thema = !e.thema.length || !kern.thema.length || e.thema.some((t) => kern.thema.includes(t))
-  return ziel && thema
+  // dasselbe Hauptziel (Thema nicht fremd) – oder dasselbe Thema im selben Kompetenzfeld
+  const gemeinsamesThema = e.thema.some((t) => kern.thema.includes(t)) && e.kompetenz.some((x) => kern.kompetenz.includes(x))
+  return (ziel && thema) || gemeinsamesThema
 }
 
 /** Eigener Einstieg, der den Kern der Stunde ankündigt (wenn keine Einheit einen passenden hat). */
@@ -409,6 +444,17 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     const bevorzugt = new Set(o.bevorzugt ?? [])
     const liste = kandidaten(c, { rolle: slot.rolle, min: slot.min, phase: o.phase, nr: o.nr, salz: `${salz}|${i}`, gesperrt: benutzt, vorher: o.vorher, formate, vorigerKern: o.kernFormate[o.kernFormate.length - 1], kernFormate: o.kernFormate.slice(-2), fokus: slot.rolle === 'kern' ? undefined : o.fokus, bevorzugt })
     let auswahl = liste
+    // roter Faden der Folge: ein Kern, der Ziel-Code oder Thema mit den Kernen davor teilt, zählt mehr
+    if (slot.rolle === 'kern' && (o.fruehereKerne ?? []).length) {
+      const frueher = (o.fruehereKerne ?? []).map((r) => c.k.eintraege.get(r)).filter((x): x is KatalogEintrag => !!x)
+      const codes = new Set(frueher.flatMap((x) => x.eldib.filter((y) => y.gewicht === 1).map((y) => y.code)))
+      const themen = new Set(frueher.flatMap((x) => x.thema))
+      for (const w of auswahl) {
+        const passt = w.b.e.eldib.some((y) => y.gewicht === 1 && codes.has(y.code)) || w.b.e.thema.some((t) => themen.has(t))
+        if (passt) w.b = { ...w.b, s: w.b.s + 0.06 }
+      }
+      auswahl = [...auswahl].sort((x, y) => rang(x.b, y.b, `${salz}|${i}`))
+    }
     if (slot.rolle === 'einstieg' || slot.rolle === 'reflexion') {
       // Einstieg und Abschlussphase einer Material-Einheit führen in deren Hauptteil ein – nur zusammen mit ihm
       auswahl = liste.filter((w) => !w.b.e.id.startsWith('m:') || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
@@ -668,6 +714,11 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
     if (c.alter >= 12 && i > 0 && i % 2 === 0 && rit.ankommen) {
       const neu = waehleRitual(c, 'ankommen', 4, `${salz}|r-a${i}`, new Set([rit.ankommen.e.id]))
       if (neu) rit = { ...rit, ankommen: neu }
+    }
+    // letzte Sitzung: kein Abschluss-Ritual, das auf die nächste Sitzung zählt
+    if (i === bogen.length - 1 && bogen.length > 1 && rit.abschluss && folgeRitual(rit.abschluss.e)) {
+      const e = c.k.eintraege.get('pg:abschluss')
+      if (e) rit = { ...rit, abschluss: bewerte(e, c, {}) }
     }
     const fokus = zweiZiele && i % 2 === 1 ? new Map([[c.ziele[0].code, 0.8], [c.ziele[1].code, 1]]) : undefined
     const s = fuelleSitzung(c, { plan: id, nr: i + 1, phase, rituale: rit, gesperrt, vorher, kernFormate, variante, fokus, fruehereKerne: sitzungen.flatMap((x) => x.schritte.filter((y) => y.rolle === 'kern').map((y) => y.ref)) })

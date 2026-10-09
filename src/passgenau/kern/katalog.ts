@@ -8,7 +8,7 @@ import type { KatalogEintrag, MikroBaustein, Rolle, Sozialform, Stufe, Stundensc
 import type { CrewSpiel, FfEinheit, Quellen } from '../quellen'
 import { entpackeBaustein, entpackeSchritt, type BausteineDatei, type SchritteDatei } from './format'
 import { KATHARSIS_RE, KOMPETENZ_BLATT, kompetenzAusCode, VORB_GRUPPE_RE, VORLAUF_RE } from './vokabular'
-import { hash8, STUFE_ALTER, STUFEN, woerter } from './hilfen'
+import { hash8, SATZ_GRENZE, SATZ_GRENZE_SEMI, STUFE_ALTER, STUFEN, woerter } from './hilfen'
 import { paketBausteine, setzeText, texte } from './inhalt'
 import { bausteinOhneKursverweis, schrittAllgemein } from './beschriftung'
 import { SYSTEM } from './system'
@@ -87,7 +87,7 @@ function kursText(s: { text: string; punkte?: string[]; tabelle?: { spalten: str
 
 function satzMit(text: string | undefined, wort: RegExp): string | undefined {
   if (!text) return undefined
-  const s = text.split(/(?<=[.!?])\s+/).find((x) => wort.test(x))
+  const s = text.split(SATZ_GRENZE).find((x) => wort.test(x))
   return s ? s.trim() : undefined
 }
 
@@ -381,7 +381,7 @@ function ohneVorlaufSaetze(t: { sagen?: string[]; wennEsKippt?: string; einzelva
   // leer statt weg: sonst nähme textVon die Sätze der Gruppenfassung
   if (t.einzelvariante?.sagen) t.einzelvariante = { ...t.einzelvariante, sagen: sagen(t.einzelvariante.sagen) ?? [] }
   if (t.wennEsKippt && VORLAUF_RE.test(t.wennEsKippt)) {
-    const rest = t.wennEsKippt.split(/(?<=[.!?])\s+/).filter((x) => !VORLAUF_RE.test(x)).join(' ').trim()
+    const rest = t.wennEsKippt.split(SATZ_GRENZE).filter((x) => !VORLAUF_RE.test(x)).join(' ').trim()
     if (rest) t.wennEsKippt = rest
     else delete t.wennEsKippt
   }
@@ -393,7 +393,7 @@ export function ohneVorlaufText(text: string): string {
   if (!VORLAUF_RE.test(text)) return text
   const neu = text
     .split('\n')
-    .map((z) => z.split(/(?<=[.!?])\s+/).filter((s) => !VORLAUF_RE.test(s)).join(' '))
+    .map((z) => z.split(SATZ_GRENZE).filter((s) => !VORLAUF_RE.test(s)).join(' '))
     .filter((z) => z.trim())
     .join('\n')
   return neu.length >= text.length * 0.6 ? neu : text
@@ -418,7 +418,13 @@ function vorbereitungFuer(e: Stundenschritt): string | undefined {
     .split(/\s+·\s+/)
     .map((x) => x.replace(/\b(zwei|drei|vier|fünf|sechs|zehn|zwanzig|\d+)(mal| ?×| ?x)\s+/gi, '').trim())
     .flatMap((x) => {
-      const saetze = x.split(/(?<=[.;!?])\s+/).filter((s) => !VORB_GRUPPE_RE.test(s) && !VORLAUF_RE.test(s))
+      // Sätze ohne Gruppe, ohne frühere Stunde und ohne Dinge, die eine Einzelstunde nicht hat (Ausflug, Küche, Film,
+      // Gäste, Arbeitsblatt der Quelle) – getrennt an Satzgrenzen, nicht an „z. B.“
+      const saetze = x.split(SATZ_GRENZE_SEMI).filter((s) => {
+        if (VORB_GRUPPE_RE.test(s) || VORLAUF_RE.test(s)) return false
+        const m = textMerkmale(s)
+        return !['gruppe', 'ihr', 'draussen', 'kueche', 'film', 'gaeste', 'blattverweis', 'mehrtag', 'heikel'].some((x) => m.has(x))
+      })
       return saetze.length ? [saetze.join(' ')] : []
     })
     // Reste wie „ruhiger Moment“ (aus „Keine; ruhiger Moment“) sagen nichts
@@ -482,7 +488,7 @@ export function artName(art: string): string {
 export function kurz(s: string, n = 90): string {
   const t = s.replace(/\s+/g, ' ').trim()
   if (t.length <= n) return t
-  const saetze = t.split(/(?<=[.!?])\s+/)
+  const saetze = t.split(SATZ_GRENZE)
   let r = ''
   for (const x of saetze) {
     if ((r ? r.length + 1 : 0) + x.length > n) break

@@ -4,7 +4,7 @@
 import type { Baustein, Blatt, BlattInhalt, Bereich, Sprache as BlattSprache } from '../../blatt/typen'
 import type { BlattTeil, Bogen, KatalogEintrag, Layout, MikroBaustein, Plan, Profil, Rolle, Sprache } from '../typen'
 import { hash8, hash01, stufeAusAlter, stufenAbstand, istEldib } from './hilfen'
-import { bausteinInhalt, intern, zielSatz as zielSatzVon, type Katalog } from './katalog'
+import { bausteinInhalt, intern, merkmaleVon, zielSatz as zielSatzVon, type Katalog } from './katalog'
 import { setzeText, texte } from './inhalt'
 import { bewerte, NACHBAR, pruefe, rang, type Bewertet, type Kontext } from './regeln'
 import { knapp as umbruchKnapp, seitenMasse, teilHoehe, verteile } from './seiten'
@@ -133,8 +133,8 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   const reserve: string[] = []
   if (c.hilft.has('stundenleiste') || c.hilft.has('bildplan') || c.p.zugang.struktur === 'hoch') reserve.push(BLATT_SYSTEM.stundenleiste)
   let gruppe: 'spielschule' | 'toolbox' | null = null
-  const notfallNoetig = () => gewaehlt.some((b) => intern(k).notfallBlatt.has((b.e as MikroBaustein).quelle.blatt)) || (c.vorsicht.has('heikel') && c.alter >= 10)
-  const refs = (liste: Bewertet[]) => [...reserve, ...liste.map((b) => b.e.id), ...(notfallNoetig() || liste.some((b) => intern(k).notfallBlatt.has((b.e as MikroBaustein).quelle.blatt)) ? [BLATT_SYSTEM.notfall] : [])]
+  const notfallNoetig = () => gewaehlt.some((b) => intern(k).notfallBlatt.has((b.e as MikroBaustein).quelle.blatt) || merkmaleVon(k, b.e).has('belastend')) || (c.vorsicht.has('heikel') && c.alter >= 10)
+  const refs = (liste: Bewertet[]) => [...reserve, ...liste.map((b) => b.e.id), ...(notfallNoetig() || liste.some((b) => intern(k).notfallBlatt.has((b.e as MikroBaustein).quelle.blatt) || merkmaleVon(k, b.e).has('belastend')) ? [BLATT_SYSTEM.notfall] : [])]
   const passt = (neu: Bewertet[], einQuelle = false): boolean => {
     const alle = [...gewaehlt, ...neu]
     const seiten = verteile(k, refs(alle), layout)
@@ -182,7 +182,12 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
         const tragend = liste.filter((b) => pool.includes(b) && (leicht || relevant(b)))
         if (!tragend.length) return null
         const zumKern = liste.some((b) => kernBlatt.has(b.e.id))
-        const wert = Math.max(...tragend.map((b) => b.s)) + (zumKern ? 0.3 : 0) + 0.03 * Math.min(4, tragend.length)
+        // Blind-Bewertung 9.10.: Blatt und Kern hatten oft verschiedene Themen – dasselbe Hauptziel wie der Kern zählt viel
+        const kernPrimaer = new Set(!leicht && o.kern ? o.kern.eldib.filter((x) => x.gewicht === 1).map((x) => x.code) : [])
+        const gleichesZiel = tragend.some((b) => b.e.eldib.some((x) => x.gewicht === 1 && kernPrimaer.has(x.code)))
+        const gleichesThema = !!o.kern?.thema.length && tragend.some((b) => b.e.thema.some((t) => o.kern!.thema.includes(t)))
+        if (!leicht && o.kern && kernPrimaer.size && !zumKern && !gleichesZiel && !gleichesThema) return null
+        const wert = Math.max(...tragend.map((b) => b.s)) + (zumKern ? 0.3 : 0) + (gleichesZiel ? 0.15 : 0) + (gleichesThema ? 0.05 : 0) + 0.03 * Math.min(4, tragend.length)
         return { q, liste, wert }
       })
       .filter((x): x is { q: string; liste: Bewertet[]; wert: number } => !!x)

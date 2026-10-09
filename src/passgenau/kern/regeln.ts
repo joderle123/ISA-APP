@@ -191,7 +191,9 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   // Alter und Gestaltung – nie gelockert
   if (stufenAbstand(c.stufe, e.stufen) >= 2) return 'Stufe'
   if (c.alter < e.alter.von - 1 || c.alter > e.alter.bis + 1) return 'Alter'
-  if (c.alter >= 12 && e.stufen.every((s) => s === 'C1' || s === 'C2')) return 'für Jüngere'
+  if (c.alter >= 10 && e.stufen.every((s) => s === 'C1' || s === 'C2')) return 'für Jüngere'
+  // Nachfahren, Punkte verbinden, Fädeln, Anziehpuppe: Vorschul-Formate, nicht ab 10 (A10: „Linien nachfahren“ mit 12)
+  if (c.alter >= 10 && e.typ === 'baustein' && e.art.some((a) => a === 'laufweg' || a === 'punkte_verbinden' || a === 'faedelkarte' || a === 'anziehpuppe' || a === 'klappbild')) return 'für Jüngere'
   if (e.typ === 'baustein') {
     if (e.zielgruppe === 'fachkraft' || e.zielgruppe === 'eltern') return 'für Erwachsene'
     if (e.material.includes('film')) return 'braucht einen Film'
@@ -201,6 +203,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   // Spielschule (Vorschule) nur für die, für die sie gemacht ist (A10: kein Spielschul-Blatt über 5 Jahren)
   if (e.typ === 'baustein' && c.alter > 5 && intern(c.k).q.blatt.get(e.quelle.blatt)?.bereich === 'spielschule') return 'Spielschule'
   if (e.typ === 'schritt' && c.alter > 6 && e.quelle.art === 'spielschule') return 'Spielschule'
+  // französisches Kind: Schritte ohne französischen Text erst, wenn sonst zu wenig passt (Lockerung ab Stufe 2)
+  if (c.sprache === 'fr' && e.typ === 'schritt' && !e.fr && !e.id.startsWith('pg:') && locker < 2) return 'nur auf Deutsch'
   // setzt eine frühere Kursstunde voraus („der Umschlag aus der letzten Stunde“, „nach der Wochen-Mission fragen“)
   if (e.typ === 'schritt' && intern(c.k).vorlauf.has(e.id)) return 'braucht eine Stunde davor'
   // Textmerkmale (Blind-Bewertung 9.10., einzel.ts): was gedruckt wird, muss in eine Einzelstunde für dieses Kind passen
@@ -211,6 +215,9 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     const kinderschutz = (c.p.achtung ?? []).includes('kinderschutz')
     if (einzeln && !eigen && (tm.has('gruppe') || tm.has('ihr'))) return 'Gruppe'
     if (tm.has('jugend') && c.alter < 12) return 'für Jugendliche'
+    if (tm.has('aelter') && c.alter < 13) return 'für Ältere'
+    // belastende Sätze („Ich bin dumm“, „Keiner mag mich“) nicht in Krisenlage
+    if (tm.has('belastend') && krisenlage(c)) return 'belastend'
     if (tm.has('film')) return 'braucht einen Film'
     if (tm.has('draussen') && !(c.a.ort ?? []).includes('draussen')) return 'Ort'
     if (tm.has('kueche')) return 'Küche'
@@ -228,6 +235,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     if (tm.has('belastend') && (c.vorsicht.has('heikel') || c.vorsicht.has('trauma') || (c.p.achtung ?? []).length)) return 'belastend'
     if (tm.has('gefuehlfrage') && krisenlage(c)) return 'Gefühle abfragen'
   }
+  // Krisenlage: auf dem Blatt keine Skala, kein Check-in, kein Rückblick zu Gefühl oder Stimmung (A12)
+  if (krisenlage(c) && e.typ === 'baustein' && e.art.some((a) => a === 'skala' || a === 'checkin' || a === 'rueckblick' || a === 'thermometer') && (e.kompetenz.some((x) => x.startsWith('gefuehle')) || e.thema.some((t) => t === 'gefuehle' || t === 'traurig' || t === 'angst' || t === 'wut'))) return 'Gefühle abfragen'
   // Krisenlage: kein Gespräch über Gefühle oder Belastendes (A12) – auch ohne die Wörter oben
   if (krisenlage(c) && e.typ === 'schritt' && e.format[0] === 'gespraech' && (e.belastung >= 1 || e.kompetenz.some((x) => x.startsWith('gefuehle')))) return 'Gefühle abfragen'
   // Stimmung ≤ 2: nichts Lautes, keine Vollgas-Aktivität (A5)
