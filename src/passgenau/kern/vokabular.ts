@@ -293,7 +293,7 @@ export const VORLAUF_RE = new RegExp(
 
 /** Vorbereitung für eine Gruppe (Teile einer Vorbereitung, die in einer Einzelstunde nicht gelten). */
 export const VORB_GRUPPE_RE =
-  /(\bje (Tisch)?[Gg]ruppe|\bpro (Kind|Person|Schüler\w*|Paar|Team)\b|\bfür jede[ns]? (Kind|Person|Paar|Team)\b|^\s*[Kk]eine?\b|\bpro (Tisch)?[Gg]ruppe|\bTischgruppen?\b|\bKlassensatz|\bfür (alle|jede[ns]?) (Kinder|Kind|Schüler(innen)?|Jugendlichen?)\b|\bHalbkreis|\bStuhlkreis|\bStühle\b|\bStationsschild|\bdrei Stationen|\bSePAS\b|\bjemand gerade in einer Krise|\bKlassenraum\b|\bin Gruppen\b|\bTeams? (bilden|einteilen)|\bGruppen (bilden|einteilen))/
+  /(\bje (Tisch)?[Gg]ruppe|\bpro (Kind|Person|Schüler\w*|Paar|Team)\b|\bfür jede[ns]? (Kind|Person|Paar|Team)\b|\bfür (die|jede) Gruppe\b|^\s*[Kk]eine?\b|\bpro (Tisch)?[Gg]ruppe|\bTischgruppen?\b|\bKlassensatz|\bfür (alle|jede[ns]?) (Kinder|Kind|Schüler(innen)?|Jugendlichen?)\b|\bHalbkreis|\bStuhlkreis|\bStühle\b|\bStationsschild|\bdrei Stationen|\bSePAS\b|\bjemand gerade in einer Krise|\bKlassenraum\b|\bin Gruppen\b|\bTeams? (bilden|einteilen)|\bGruppen (bilden|einteilen))/i
 
 /** Verweise auf die Struktur der Quelle (Kurs, Förderfach, mehrteilige Materialien): „aus Einheit 20“, „Einheiten 12 und
  *  13“, „letzte Woche ging es um …“, „Modul 3“, „Kursjahr“, „Skills-Kurs“. In Passgenau steht ein Teil allein – solche

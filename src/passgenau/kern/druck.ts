@@ -3,7 +3,8 @@
 // auf dem Planblatt Vorname, Codes und Quelle-Art, aber keine Daten von Vorfällen oder Notizen; Begründungen nur auf Wunsch.
 import type { Baustein, Blatt } from '../../blatt/typen'
 import type { KatalogEintrag, MikroBaustein, Plan, PlanSchritt, Profil, Rolle, Sprache } from '../typen'
-import { bausteinInhalt, eldibKurz, intern, quelleText, staemme, textVon, zielSatz, type Katalog } from './katalog'
+import { bausteinInhalt, eldibKurz, intern, merkmaleVon, quelleText, staemme, textVon, zielSatz, type Katalog } from './katalog'
+import { textMerkmale } from './einzel'
 import { kinderblatt } from './blatt'
 import { BOGEN_NAME, KURSVERWEIS_RE, ROLLE_NAME } from './vokabular'
 import { hash8 } from './hilfen'
@@ -85,6 +86,9 @@ function hinweisFr(h: string): string {
   return h
 }
 
+/** Schutzsätze, die auch dann bleiben, wenn sie von einer Gruppe sprechen. */
+const SCHUTZ_RE = /(Missbrauch|Selbstverletz|Suizid|Gefährdung|Kinderschutz|Gewalt zu Hause|Einzelgespräch|SePAS|abus|suicide|danger)/
+
 /** Sätze, die immer bleiben: Sicherheit, Krise, Freiwilligkeit (E-M4). */
 const SICHERHEIT_RE = /(Krise|Notfall|SePAS|Hilfe holen|melden|Gefährdung|Suizid|Selbstverletz|Kinderschutz|Gewalt|vertraulich|nicht vorlesen|Stopp|freiwillig|Freiwillig|niemand muss|keiner muss|Hilfe-Zeile|Notruf|Trauma|traumat|Übergriff|danach (kurz )?(mit|nach)|crise|urgence|confidentiel|volontaire|personne n['’]est obligé)/
 
@@ -95,7 +99,12 @@ function achtungFuer(e: KatalogEintrag, schrittText: string, sicherheitImmer = t
   if (e.typ !== 'schritt' || !(e.id.startsWith('k:') || e.id.startsWith('f:') || e.id.startsWith('m:'))) return e.achtung
   const bezug = staemme(schrittText)
   const saetze = e.achtung.replace(/\s+/g, ' ').trim().split(/(?<=[.!?])\s+(?=[A-ZÄÖÜ„«(])/)
-  const bleibt = saetze.filter((x: string) => (sicherheitImmer && SICHERHEIT_RE.test(x)) || [...staemme(x)].some((w) => bezug.has(w)))
+  // Sätze über die Gruppe („Für sehr lebhafte Gruppen …“) gelten in der Einzelstunde nicht; ein Schutzsatz bleibt und
+  // spricht von der Stunde statt von der Gruppe („nicht in der Gruppe vertiefen, sondern im Einzelgespräch“)
+  const bleibt = saetze
+    .filter((x: string) => (sicherheitImmer && SICHERHEIT_RE.test(x)) || [...staemme(x)].some((w) => bezug.has(w)))
+    .filter((x: string) => !textMerkmale(x).has('gruppe') || SCHUTZ_RE.test(x))
+    .map((x: string) => x.replace(/\b(in|vor|mit) der (ganzen )?Gruppe\b/g, '$1 der Stunde').replace(/\bdans le groupe\b/g, 'pendant la séance'))
   return bleibt.length ? bleibt.join(' ') : undefined
 }
 
@@ -271,6 +280,9 @@ export function druckPakete(k: Katalog, plan: Plan, nr: number): MikroBaustein[]
       for (const id of e.blatt) {
         const b = k.eintraege.get(id)
         if (!b || b.typ !== 'baustein' || aufDemBlatt.has(id) || out.has(id) || !b.art.some((a) => DRUCK_ARTEN.has(a))) continue
+        // Spielkarten einer Gruppe („Werft einen Ball im Kreis“) nicht als Material der Einzelstunde drucken
+        const bm = merkmaleVon(k, b)
+        if (bm.has('gruppe') || bm.has('ihr') || bm.has('fuerleitung') || bm.has('heikel')) continue
         out.set(id, b)
         if (++n >= 2) break
       }
