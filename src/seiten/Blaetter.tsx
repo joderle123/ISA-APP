@@ -465,6 +465,28 @@ function ForscherkarteiLeiste({ anzahl, sprache, laedt, onLaden }: { anzahl: num
   )
 }
 
+/** Spielschule: Jahresplan als Drei-Jahres-Rad (Festkalender, 36 Wochen je Jahr, Kompetenzlandkarte, Joker). Nur Deutsch. */
+function JahresplanLeiste({ laedt, onLaden }: { laedt: boolean; onLaden: () => void }) {
+  const bereich = bereichById.get('spielschule')!
+  return (
+    <section className="bl-heft" style={{ ['--bc' as string]: bereich.farben.tief }} aria-label="Jahresplan Spielschule">
+      <span className="bl-bereich-ic" style={{ background: bereich.farben.zart }}>
+        <ZeichnungSvg z={{ ...iconZeichnung('calendar'), w: 1.6 }} p={{ ...palette(bereich.farben), tinte: bereich.farben.tief }} />
+      </span>
+      <div className="bl-heft-text">
+        <b>Jahresplan Spielschule</b>
+        <span>Drei-Jahres-Rad: je Jahr 36 Themenwochen mit Luxemburger Festkalender und Ferienrhythmus, Kompetenzlandkarte nach dem Plan d’études und Joker für besondere Wochen.</span>
+      </div>
+      <div className="bl-heft-knoepfe">
+        <button type="button" className="btn btn-sm btn-primary" disabled={laedt} onClick={onLaden}>
+          {laedt ? <span className="spin" /> : <Icon name="download" />}
+          Jahresplan (PDF)
+        </button>
+      </div>
+    </section>
+  )
+}
+
 export function Blaetter({
   aktiv,
   bew,
@@ -578,6 +600,18 @@ export function Blaetter({
       toast(`Forscherkartei erstellt: ${await m.downloadForscherkartei(alleBlaetter.map((b) => ({ blatt: b, nr: b.nr })), karteiSprache)}`, 'ok')
     } catch (e) {
       toast(e instanceof Error ? e.message : 'Die Forscherkartei konnte nicht erstellt werden.', 'error')
+    } finally {
+      setLaedt(null)
+    }
+  }
+
+  async function jahresplanLaden() {
+    setLaedt('jahresplan')
+    try {
+      const m = await loadPdfModule()
+      toast(`Jahresplan erstellt: ${await m.downloadJahresplan(alleBlaetter.map((b) => ({ blatt: b, nr: b.nr })))}`, 'ok')
+    } catch (e) {
+      toast(e instanceof Error ? e.message : 'Der Jahresplan konnte nicht erstellt werden.', 'error')
     } finally {
       setLaedt(null)
     }
@@ -731,6 +765,7 @@ export function Blaetter({
               <ModulheftLeiste key={m.id} modul={m} sprache={heftSprache(m)} laedt={laedt} onLaden={(loesungen) => heftLaden(m, loesungen)} />
             ))}
             {filter.bereich === 'spielschule' && mitExperiment.length ? <ForscherkarteiLeiste anzahl={mitExperiment.length} sprache={karteiSprache} laedt={laedt === 'kartei'} onLaden={karteiLaden} /> : null}
+            {filter.bereich === 'spielschule' ? <JahresplanLeiste laedt={laedt === 'jahresplan'} onLaden={jahresplanLaden} /> : null}
             {treffer.length === 0 ? (
               <div className="panel px-6 py-12 text-center">
                 <h2 className="disp text-[20px] text-ink">Kein passendes Arbeitsblatt</h2>

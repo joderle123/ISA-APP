@@ -1,0 +1,260 @@
+{
+  "hinweis": "Erzeugt von scripts/spielschule-jahresplan.ts (npm run blaetter:jahresplan-daten) – nicht von Hand ändern.",
+  "wochen": 36,
+  "jahre": {
+    "A": [
+      "sp-willkommen",
+      "sp-schueberfouer",
+      "sp-guten-morgen",
+      "sp-oma-opa-und-wir",
+      "sp-das-bin-ich",
+      "sp-von-kopf-bis-fuss",
+      "sp-bunte-blaetter",
+      "sp-unser-waldplatz",
+      "sp-kinderrechte",
+      "sp-igel",
+      "sp-kleeschen",
+      "sp-bus",
+      "sp-gefuehle-in-gesichtern",
+      "sp-schnee-und-eis",
+      "sp-tiere-wer-wohnt-wo",
+      "sp-leuchttisch-werkstatt",
+      "sp-zaehne-putzen",
+      "sp-farben-zaehlen-bis-5",
+      "sp-tiere-im-winter",
+      "sp-buergbrennen",
+      "sp-luft-ist-nicht-nichts",
+      "sp-ei-kueken",
+      "sp-musik-malt-gefuehle",
+      "sp-grosse-fragen",
+      "sp-tiere-im-gras",
+      "sp-fuehlen-und-tasten",
+      "sp-theater",
+      "sp-im-garten",
+      "sp-wir-machen-ein-hoerspiel",
+      "sp-sand-matsch",
+      "sp-wasser-trinken",
+      "sp-tiere-wald",
+      "sp-farben-muster",
+      "sp-wir-verreisen",
+      "sp-bald-schulkind",
+      "sp-darauf-bin-ich-stolz"
+    ],
+    "B": [
+      "sp-willkommen",
+      "sp-sprachen-geschichtensack",
+      "sp-mein-name",
+      "sp-kartoffelzeit",
+      "sp-obst-und-gemuese",
+      "sp-kinderkonferenz",
+      "sp-kuerbis",
+      "sp-meine-familie",
+      "sp-farben-rot-gelb-blau",
+      "sp-bewegungsbaustelle",
+      "sp-kleeschen",
+      "sp-schon-allein",
+      "sp-kreise-wie-kandinsky",
+      "sp-brueckenbauer",
+      "sp-warm-angezogen",
+      "sp-wenn-ich-wuetend-bin",
+      "sp-haende-sprechen",
+      "sp-laternen",
+      "sp-magnet-detektive",
+      "sp-beim-arzt",
+      "sp-ohren-auf",
+      "sp-geburtstag",
+      "sp-geschichten-erfinden",
+      "sp-familiencafe",
+      "sp-blumen-bluehen",
+      "sp-tiere-haustiere",
+      "sp-farben-formen",
+      "sp-ganz-ruhig-werden",
+      "sp-vogelnest",
+      "sp-tiere-bauernhof",
+      "sp-farben-zaehlen-bis-10",
+      "sp-wasser-marsch",
+      "sp-nationalfeierdag",
+      "sp-angst-und-mut",
+      "sp-bald-schulkind",
+      "sp-sommernacht"
+    ],
+    "C": [
+      "sp-willkommen",
+      "sp-apfelzeit",
+      "sp-forscherbuch",
+      "sp-unsere-regeln",
+      "sp-kastanien-eicheln",
+      "sp-strasse-sicher",
+      "sp-mitspielen",
+      "sp-tiere-spuren",
+      "sp-wind-und-wetter",
+      "sp-alles-an-seinem-platz",
+      "sp-kleeschen",
+      "sp-melusina",
+      "sp-plaetzchen-backen",
+      "sp-gestern-heute-morgen",
+      "sp-riechen-und-schmecken",
+      "sp-gute-nacht",
+      "sp-bodenroboter",
+      "sp-hell-und-dunkel",
+      "sp-fuesend",
+      "sp-gemeinsam-am-tisch",
+      "sp-kresse-saeen",
+      "sp-ich-helfe-dir",
+      "sp-wenn-ich-froh-bin",
+      "sp-eimaischen",
+      "sp-buecherreise",
+      "sp-wenn-ich-traurig-bin",
+      "sp-muell-detektive",
+      "sp-regen-regenbogen",
+      "sp-streiten-und-vertragen",
+      "sp-sonne-schatten",
+      "sp-raupe-schmetterling",
+      "sp-zirkus-spillschoul",
+      "sp-farben-mischen",
+      "sp-picknick",
+      "sp-bald-schulkind",
+      "sp-abschied-wiedersehen"
+    ]
+  },
+  "joker": [
+    {
+      "einheit": "sp-haende-waschen",
+      "art": "vertiefung",
+      "grund": "Vertieft Schon allein ({sp-schon-allein}) in der Erkältungszeit.",
+      "passt": "Okt. – März"
+    },
+    {
+      "einheit": "sp-bei-uns-zu-hause",
+      "art": "vertiefung",
+      "grund": "Vertieft Meine Familie ({sp-meine-familie}): Räume, Möbel, Wege.",
+      "passt": "jederzeit"
+    },
+    {
+      "einheit": "sp-als-ich-baby-war",
+      "art": "gelegenheit",
+      "grund": "Wenn in einer Familie ein Baby geboren wird.",
+      "passt": "Okt. – Juni"
+    },
+    {
+      "einheit": "sp-ich-helfe-mit",
+      "art": "vertiefung",
+      "grund": "Vertieft Ich helfe dir ({sp-ich-helfe-dir}): Dienste in Klasse und Familie.",
+      "passt": "jederzeit"
+    },
+    {
+      "einheit": "sp-licht-und-schatten",
+      "art": "vertiefung",
+      "grund": "Vertieft Hell und Dunkel ({sp-hell-und-dunkel}) in der dunklen Jahreszeit.",
+      "passt": "Nov. – Feb."
+    },
+    {
+      "einheit": "sp-schneemann",
+      "art": "wetter",
+      "grund": "Nur, wenn Schnee liegt – dann sofort einschieben.",
+      "passt": "Jan. – März"
+    },
+    {
+      "einheit": "sp-spass-im-schnee",
+      "art": "wetter",
+      "grund": "Nur, wenn Schnee liegt: Schlitten, Spuren, Rutschen.",
+      "passt": "Jan. – März"
+    },
+    {
+      "einheit": "sp-kuehles-heisse-tage",
+      "art": "wetter",
+      "grund": "An heißen Tagen im Juni oder Juli.",
+      "passt": "Juni – Juli"
+    },
+    {
+      "einheit": "sp-tiere-zoo",
+      "art": "wunsch",
+      "grund": "Wenn Kinder vom Zoo oder von fernen Tieren erzählen.",
+      "passt": "jederzeit"
+    },
+    {
+      "einheit": "sp-tiere-fische",
+      "art": "wunsch",
+      "grund": "Wenn Wasser und Fische die Kinder neugierig machen.",
+      "passt": "Apr. – Juli"
+    },
+    {
+      "einheit": "sp-tiere-tierkinder",
+      "art": "gelegenheit",
+      "grund": "Wenn im Frühling Tierkinder zu sehen sind (Hof, Park, Bauernhof).",
+      "passt": "März – Juni"
+    },
+    {
+      "einheit": "sp-gutes-fruehstueck",
+      "art": "gelegenheit",
+      "grund": "Wenn die Klasse ein gemeinsames Frühstück einführt.",
+      "passt": "jederzeit"
+    },
+    {
+      "einheit": "sp-wir-backen-brot",
+      "art": "gelegenheit",
+      "grund": "Wenn eine Küche oder Bäckerei mitmacht (Ofen).",
+      "passt": "jederzeit"
+    },
+    {
+      "einheit": "sp-auf-dem-markt",
+      "art": "gelegenheit",
+      "grund": "Wenn im Ort Markttag ist und ein Gang dorthin möglich ist.",
+      "passt": "Sept. – Nov. oder Apr. – Juni"
+    },
+    {
+      "einheit": "sp-gemuesesuppe",
+      "art": "gelegenheit",
+      "grund": "Wenn eine Küche mitmacht (Herd) – am besten in der kalten Zeit.",
+      "passt": "Nov. – Feb."
+    },
+    {
+      "einheit": "sp-farben-gross-klein",
+      "art": "vertiefung",
+      "grund": "Vergleichen und Messen – nach den Zähl-Wochen.",
+      "passt": "jederzeit"
+    },
+    {
+      "einheit": "sp-farben-sortieren",
+      "art": "vertiefung",
+      "grund": "Vertieft Ordnen ({sp-alles-an-seinem-platz}) mit Mengen und Merkmalen.",
+      "passt": "jederzeit"
+    },
+    {
+      "einheit": "sp-fahrzeuge",
+      "art": "wunsch",
+      "grund": "Wenn die Bauecke voller Autos und Bagger ist.",
+      "passt": "jederzeit"
+    },
+    {
+      "einheit": "sp-feuerwehr",
+      "art": "gelegenheit",
+      "grund": "Wenn die Feuerwehr einen Besuch anbietet (3 Wochen Vorlauf).",
+      "passt": "Okt. – Juni"
+    },
+    {
+      "einheit": "sp-berufe-im-ort",
+      "art": "gelegenheit",
+      "grund": "Wenn Familien oder Nachbarn ihren Beruf zeigen möchten.",
+      "passt": "jederzeit"
+    },
+    {
+      "einheit": "sp-baustelle",
+      "art": "gelegenheit",
+      "grund": "Wenn in der Nähe der Schule gebaut wird.",
+      "passt": "März – Juni"
+    },
+    {
+      "einheit": "sp-drachen-ritter",
+      "art": "wunsch",
+      "grund": "Wenn Drachen, Burgen und Mut die Kinder beschäftigen.",
+      "passt": "jederzeit"
+    },
+    {
+      "einheit": "sp-hokuspokus",
+      "art": "wunsch",
+      "grund": "Wenn Zaubern und Verwandeln die Kinder packt.",
+      "passt": "jederzeit"
+    }
+  ]
+}
