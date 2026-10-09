@@ -3,6 +3,7 @@
 // ---------------------------------------------------------------------------
 import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { alleBlaetter, blattById } from '../data/blaetter'
+import { kursFrei } from '../lib/nutzer'
 import type { Baustein, Bereich, NummeriertesBlatt, Sprache, Stufe } from '../blatt/typen'
 import { BEREICHE, bereichById, STUFEN_REIHE, stufenText, THEMEN, themaLabel } from '../blatt/katalog'
 import { MODULE, lektionenZahl, type Modul } from '../blatt/module'
@@ -675,7 +676,7 @@ export function Blaetter({
               <span>{blaetterText(zaehle({ bereich: '', thema: '' }))}</span>
             </span>
           </button>
-          {BEREICHE.map((br) => {
+          {BEREICHE.filter((br) => br.id !== 'skills' || kursFrei()).map((br) => {
             const an = filter.bereich === br.id
             return (
               <button key={br.id} type="button" className={`bl-bereich-kachel ${an ? 'an' : ''}`} style={{ ['--bc' as string]: br.farben.tief, ['--bz' as string]: br.farben.zart }} onClick={() => set({ bereich: an ? '' : br.id, thema: '' })} aria-pressed={an}>

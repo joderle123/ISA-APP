@@ -17,6 +17,7 @@ import { useBewertungen } from './lib/useBewertungen'
 import { alleBlaetter } from './data/blaetter'
 import type { Material } from './types/material'
 import { normaliseEldibCode } from './lib/deeplink'
+import { kursFrei } from './lib/nutzer'
 
 type Seite = 'blaetter' | 'kurs' | 'einheiten' | 'team'
 
@@ -29,7 +30,8 @@ function seiteAusHash(hash: string): Seite | null {
   const h = hash.replace(/^#\/?/, '')
   if (!h) return null
   if (h === 'team' || h.startsWith('team&')) return 'team'
-  if (h === 'kurs' || h.startsWith('kurs=') || h.startsWith('kurs&')) return 'kurs'
+  // Den Skills-Kurs sehen nur die Konten aus CDSE_SKILLSKURS (lib/nutzer kursFrei) – sonst die Arbeitsblätter
+  if (h === 'kurs' || h.startsWith('kurs=') || h.startsWith('kurs&')) return kursFrei() ? 'kurs' : 'blaetter'
   if (h === 'einheiten') return 'einheiten'
   if (h === 'blaetter') return 'blaetter'
   const p = hashParameter(hash)
@@ -121,7 +123,7 @@ export default function App() {
     ['kurs', 'Skills-Kurs', 'stairs', 0],
     ['einheiten', 'Einheiten', 'book', 0],
     ['team', 'Team-Material', 'folder', teamMaterial.length],
-  ]
+  ].filter(([id]) => id !== 'kurs' || kursFrei()) as [Seite, string, string, number][]
 
   return (
     <div className="min-h-screen">
@@ -153,7 +155,7 @@ export default function App() {
 
       <div id="inhalt" tabIndex={-1} className="outline-none">
         <Blaetter aktiv={seite === 'blaetter'} bew={bew} startFilter={blattFilter} startBlatt={startBlatt} onEinheitenZuEldib={zuEinheiten} />
-        <Kurs aktiv={seite === 'kurs'} bew={bew} />
+        {kursFrei() && <Kurs aktiv={seite === 'kurs'} bew={bew} />}
         <Einheiten aktiv={seite === 'einheiten'} bew={bew} teamMaterials={teamMaterial} onBlaetterZuEldib={zuBlaettern} />
         <Team aktiv={seite === 'team'} material={teamMaterial} bew={bew} />
       </div>

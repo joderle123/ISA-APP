@@ -59,3 +59,15 @@ export function geraeteId(): string {
 export function darfVerwalten(n: Nutzer): boolean {
   return n.rolle === 'admin' || n.rolle === 'responsable'
 }
+
+/** Skills-Kurs sichtbar? Den Kurs (Reiter „Skills-Kurs“ und die Kursblätter, Bereich skills) sehen nur die Konten
+ *  in CDSE_SKILLSKURS (hub-apps.js); der Hub setzt dafür beim Anmelden „cdse_hub_skillskurs“ und entfernt es beim
+ *  Abmelden. Ohne Hub bleibt der Kurs verborgen; Skripte (Node) und der Entwicklungsserver sehen alles. */
+export function kursFrei(): boolean {
+  if (typeof window === 'undefined' || import.meta.env?.DEV) return true
+  try {
+    return localStorage.getItem('cdse_hub_skillskurs') === '1'
+  } catch {
+    return false
+  }
+}
