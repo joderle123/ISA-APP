@@ -790,7 +790,17 @@ await pruefung('Beschriftung (4.6): Overlay-Prüfung, Sicherungen (Katharsis, ak
     soll(textVon(e, 'de').text === e.einzelvariante!.text, `${e.id}: textVon zeigt nicht die Einzelvariante`)
     if (e.fr?.einzelvariante) soll(textVon(e, 'fr').text === e.fr.einzelvariante.text, `${e.id}: FR-Einzelvariante fehlt im Text`)
   }
-  info(`${falsch.length} Fehlerfälle abgelehnt · ${mitVariante.length} Schritte mit beschrifteter Einzelvariante, ${mitVariante.filter((e) => e.fr?.einzelvariante).length} mit FR`)
+  // Alter aus der Beschriftung vor der Stufe der Quelle: Material, das die Quelle „ES“ nennt, das Overlay aber 3–7 Jahre
+  // (Spiel-Parcours, Schwungtuch …), hat die Stufen der Jüngeren – und kommt nie zu einem 14-Jährigen
+  const ov = JSON.parse(readFileSync(join(ROOT, 'src/data/passgenau/beschriftung/material.json'), 'utf8')) as Record<string, Beschriftung>
+  const jung = [...k.eintraege.values()].filter((e) => e.typ === 'schritt' && e.id.startsWith('m:') && (ov[e.id]?.alter?.bis ?? 99) <= 8)
+  for (const e of jung) soll(e.alter.bis === ov[e.id].alter!.bis && !e.stufen.some((x) => x === 'ES' || x === 'C4'), `${e.id}: Alter/Stufe aus der Quelle statt aus der Beschriftung`)
+  const teen = kind({ ref: 't-teen', alterJahre: 14, ziele: [z('SOZ-18', 'Ich arbeite mit anderen zusammen.', 1)] })
+  for (const weg of ['gruendlich', 'schnell', 'leicht'] as const) {
+    const plan = planen(k, teen, auftrag(teen, weg, weg === 'leicht' ? { tagesformen: ['aufgedreht'] } : {}), leer(), VERLAUF)
+    for (const r of alleTeile(plan)) { const e = k.eintraege.get(r); if (e && !r.startsWith('pg:')) soll(e.alter.bis >= 13, `14 Jahre, ${weg}: ${r} ist für ${e.alter.von}–${e.alter.bis}`) }
+  }
+  info(`${falsch.length} Fehlerfälle abgelehnt · ${mitVariante.length} Schritte mit beschrifteter Einzelvariante, ${mitVariante.filter((e) => e.fr?.einzelvariante).length} mit FR · ${jung.length} Material-Schritte mit Overlay-Alter ≤ 8`)
 })
 
 await pruefung('Ids (T-M10): auflösen ok / umgezogen / überarbeitet / fehlt – nie ein falscher Baustein', () => {
