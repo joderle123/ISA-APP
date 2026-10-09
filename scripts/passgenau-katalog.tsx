@@ -656,7 +656,8 @@ for (const blatt of q.blaetter) {
   const typ = blattDauer(blatt.dauer)
   const roh = einheiten.map((e) => e.arts.filter((a) => a !== 'spalten' && a !== 'aufgabe').reduce((s, a) => s + (SPIEL_ARTEN.has(a) ? 10 : (DAUER_ART[a] ?? 4)), 0) || DAUER_ART.aufgabe)
   const summe = roh.reduce((a, b) => a + b, 0)
-  const faktor = Math.min(1.6, Math.max(0.6, typ / Math.max(1, summe)))
+  // Einzelarbeit geht schneller als die Blattdauer einer Gruppenstunde: nur nach unten angleichen
+  const faktor = Math.min(1, Math.max(0.6, typ / Math.max(1, summe)))
   const blattThemen = themenNachBlatt.get(`${blatt.bereich}/${blatt.thema}`) ?? []
   const blattText = [blatt.de.titel, blatt.de.untertitel ?? '', blatt.schlagworte.join(' ')].join(' ')
   const nurBild = blatt.stufen.every((s) => s === 'C1')
@@ -762,6 +763,8 @@ for (const blatt of q.blaetter) {
     if (sensibel) b.sensibel = sensibel
     if (ohneZiel) b.ohneZiel = true
     if (zielgruppe) b.zielgruppe = zielgruppe
+    // Blätter zu Filmen brauchen den Film (und seine Szenen) – Material „film“, nie allein aufs Blatt
+    if (/\bfilm/i.test(blatt.id + ' ' + blatt.schlagworte.join(' ') + ' ' + blatt.de.titel)) b.material = [...new Set([...b.material, 'film'])]
     const merkmale = merkmaleAusText(deText)
     if (merkmale) b.merkmale = merkmale
     // mehrtägig nur die Teile, die über Tage laufen (Wochenplan, Tracker, „jeden Tag“)
@@ -1011,9 +1014,10 @@ for (const blatt of q.blaetter) {
 function materialRolle(titel: string, text: string, typ: number): Rolle[] | null {
   const t = norm(titel)
   if (/(vorbereitung|projektrahmen|material|vorab|organisation)/.test(t)) return null
-  if (/(einstieg|auftakt|hinfuhrung|ankommen|warm|einfuhrung)/.test(t)) return typ <= 6 ? ['einstieg', 'ankommen'] : ['einstieg']
-  if (/(transfer)/.test(t)) return ['reflexion', 'abschluss', 'transfer']
-  if (/(abschluss|reflexion|ruckblick|feedback|auswertung|ausklang)/.test(t)) return ['abschluss', 'reflexion']
+  // Einstieg und Abschluss einer Material-Einheit gehören zu deren Inhalt – keine Rituale
+  if (/(einstieg|auftakt|hinfuhrung|ankommen|warm|einfuhrung)/.test(t)) return ['einstieg']
+  if (/(transfer)/.test(t)) return ['reflexion', 'transfer']
+  if (/(abschluss|reflexion|ruckblick|feedback|auswertung|ausklang)/.test(t)) return ['reflexion']
   const r: Rolle[] = ['kern']
   if (RE.bewegungStark.test(text) && typ <= 10) r.push('bewegung')
   if (/(entspann|ruhe|atem|fantasiereise|traumreise|achtsam)/i.test(text) && typ <= 10) r.push('regulation')
@@ -1065,6 +1069,14 @@ for (const mat of q.materialien as Material[]) {
     const ort = ortAusText(a.text)
     if (ort) m.ort = ort
     zusatzSchritt(m, text)
+    // leichte Aktivität ohne Förderziel (Weg 3): Spiel, Bewegung, Kreatives, Sinne – ohne Belastung, Wettbewerb, Gruppe
+    const leichtesThema = mat.themes.some((x) => ['spiel-spass', 'bewegung', 'kreativitaet', 'achtsamkeit'].includes(x))
+    const leichtesFormat = formate.some((f) => ['spiel', 'bewegung', 'malen', 'basteln', 'musik', 'sinne', 'atmen'].includes(f)) && !formate.includes('schreiben')
+    if (leichtesThema && leichtesFormat && rolle.includes('kern') && m.belastung === 0 && ez === 'ja' && !m.merkmale?.wettbewerb && !m.merkmale?.katharsis && typ <= 20) {
+      m.ohneZiel = true
+      m.tagesform = tagesformAus(formate, energie)
+      if (!m.rolle.includes('spiel')) m.rolle = [...m.rolle, 'spiel']
+    }
     mListe.push({ m, text, i })
   })
   schritteMitIds(`m:${mat.id}`, mListe, (n) => `m:${mat.id}:${n}`)

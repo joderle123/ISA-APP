@@ -141,6 +141,22 @@ export interface Stundenschritt extends KatalogZusatz {
 
 export type KatalogEintrag = ({ typ: 'baustein' } & MikroBaustein) | ({ typ: 'schritt' } & Stundenschritt)
 
+/** Wahlkarte für Weg 3 (src/data/passgenau/inhalte/wahlkarten.json): drei Aktivitäten und „einfach da sein“ – das Kind
+ *  wählt in der Stunde (P8). Der Planer nimmt davon die passenden Optionen (höchstens zwei plus „da sein“). */
+export interface Wahlkarte {
+  id: string
+  titel: { de: string; fr: string }
+  tagesform: Tagesform[]
+  alter: Altersband
+  stufen: Stufe[]
+  dauer: Dauer
+  kopf: { de: string; fr: string }
+  optionen: ({ ref: string; label: { de: string; fr: string } } | { ref: null; art: 'da-sein'; label: { de: string; fr: string }; text?: { de: string; fr: string } })[]
+  sagen?: { de: string[]; fr: string[] }
+  wennEsKippt?: { de: string; fr: string }
+  merkmale?: Merkmale
+}
+
 // ---------------------------------------------------------------------------------------------------------------
 // Profil (3.4) – Hub → Toolbox, nur abgeleitete Merkmale
 // ---------------------------------------------------------------------------------------------------------------
@@ -237,6 +253,8 @@ export interface PlanSchritt {
   /** Wahl (Weg 3, P8): weitere Optionen, aus denen das Kind in der Stunde wählt; der Schritt selbst ist Option 1.
    *  Die Minuten gelten für die gewählte Option – die Summe der Stunde zählt nur eine. */
   wahl?: { ref: string; h: string; min: number; t?: string }[]
+  /** Wahlkarte (Weg 3), aus der die Optionen stammen */
+  wahlkarte?: string
   /** Lockerung (T-M3) oder Hinweis zur Einzelstunde („Gruppenaktivität, so mit einem Kind“) */
   hinweis?: string
 }

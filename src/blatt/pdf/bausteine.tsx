@@ -16,6 +16,7 @@ import { Bruchbilder, Diagramm, Flaeche, Geo, Hunderterfeld, Kommasprung, Paeckc
 import { SCHRIFT, TEXTE, typo, type Masse } from './stil'
 import { FARBEN, farbTeile, type FarbTeil } from '../spielschule'
 import { Anziehpuppe, Bastelbogen, Faedelkarte, Klappbild, Labyrinth, Laufweg, Memory, Minibuch, PunkteVerbinden, SchneidenKleben, Suchbild } from './spielschule'
+import { Abhaken, Checkin, Stundenleiste, Wahlkarte, Zielkarte } from './passgenau'
 
 export interface Ctx {
   m: Masse
@@ -24,6 +25,8 @@ export interface Ctx {
   nummern: Map<Baustein, number>
   /** verfügbare Breite in pt */
   breite: number
+  /** Passgenau: Kennung des Teils, das mit diesem Baustein beginnt (Ziel im PDF für die antippbare Vorschau) */
+  ids?: Map<Baustein, string>
 }
 
 type Tx = (typeof TEXTE)['de']
@@ -2456,6 +2459,16 @@ function EinBaustein({ c, b }: { c: Ctx; b: Baustein }) {
       return <Suchbild c={c} b={b} />
     case 'anziehpuppe':
       return <Anziehpuppe c={c} b={b} />
+    case 'zielkarte':
+      return <Zielkarte c={c} b={b} />
+    case 'checkin':
+      return <Checkin c={c} b={b} />
+    case 'wahlkarte':
+      return <Wahlkarte c={c} b={b} />
+    case 'stundenleiste':
+      return <Stundenleiste c={c} b={b} />
+    case 'abhaken':
+      return <Abhaken c={c} b={b} />
   }
 }
 
@@ -2478,6 +2491,7 @@ const FEST = new Set<Baustein['art']>([
   'diagramm', 'strichliste',
   'schneiden_kleben', 'memory', 'labyrinth', 'laufweg', 'minibuch', 'punkte_verbinden', 'klappbild', 'faedelkarte',
   'bastelbogen', 'suchbild', 'anziehpuppe',
+  'zielkarte', 'checkin', 'wahlkarte', 'stundenleiste', 'abhaken',
 ])
 
 /** Kleine Bausteine, die nicht umbrechen sollen (auch wenn sie es könnten). */
@@ -2574,7 +2588,7 @@ function abschnittInhalt(c: Ctx, liste: Baustein[]): ReactNode[] {
     const style = { marginTop: umbruch ? 0 : abstandVor(b, liste[i - 1], c) }
     if (gruppe) {
       out.push(
-        <View key={i} break={umbruch} wrap={false} style={style}>
+        <View key={i} id={c.ids?.get(b)} break={umbruch} wrap={false} style={style}>
           <EinBaustein c={c} b={b} />
           <EinBaustein c={c} b={naechster} />
         </View>,
@@ -2582,7 +2596,7 @@ function abschnittInhalt(c: Ctx, liste: Baustein[]): ReactNode[] {
       i++
     } else {
       out.push(
-        <View key={i} break={umbruch} wrap={!istFest(b, c.m.layout)} style={style} minPresenceAhead={b.art === 'aufgabe' ? c.m.zeile * 4 : undefined}>
+        <View key={i} id={c.ids?.get(b)} break={umbruch} wrap={!istFest(b, c.m.layout)} style={style} minPresenceAhead={b.art === 'aufgabe' ? c.m.zeile * 4 : undefined}>
           <EinBaustein c={c} b={b} />
         </View>,
       )
