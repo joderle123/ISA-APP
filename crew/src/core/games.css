@@ -242,3 +242,7 @@ select.sel { font: inherit; color: var(--text); background: var(--panel); border
 
 /* Beamer: große Schrift für die Vorlagen-Karten */
 @media (min-width: 1400px) { .fig-text { font-size: 2.3em; } .vk-qt { font-size: 1.45em; } }
+
+/* Lange Antwort-Knöpfe dürfen umbrechen statt aus dem Bild zu ragen */
+.game-screen .row > .btn { max-width: 100%; }
+.game-screen .row > .btn.big { white-space: normal; text-align: center; line-height: 1.2; }

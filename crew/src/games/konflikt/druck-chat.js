@@ -100,6 +100,8 @@
     },
   ];
 
+  const LEVELS = ['Erstes Nein', 'Nachhaken', 'Dabei bleiben'];
+
   // Wenn-dann-Pläne (Einheit j1-e25)
   const PLAENE = [
     'Wenn jemand nachhakt, dann sage ich mein Nein nochmal – kürzer.',
@@ -141,6 +143,7 @@
     async run(ctx) {
       await ctx.T.intro({
         rule: 'Du steuerst Mika in einem Gruppenchat. Der Druck steigt leise. Dreimal wählst du: Welches Nein – oder mitmachen.',
+        levels: LEVELS,
         steps: [
           { icon: 'phone', title: 'Allein tippen', text: 'Drei Chats, je drei Stellen. Nichts wird gespeichert.' },
           { icon: 'x', title: 'Vier Arten Nein', text: 'Klar · mit Grund · Ausweich · Nein + Alternative.' },
@@ -183,9 +186,9 @@
           druck = Math.min(100, druck + (k === 0 ? 20 : k === 1 ? 25 : 30));
           chat.meter.set(druck);
           const wK = ctx.scr([
-            ctx.say(k === 0 ? 'Was antwortet Mika?' : k === 1 ? 'Der Chat hakt nach. Zweites Nein – oder?' : 'Emoji-Schweigen. Letzte Stelle: Was schreibt Mika?', { eyebrow: 'Stelle ' + (k + 1) + ' von 3', small: true }),
+            ctx.say(k === 0 ? 'Was antwortet Mika?' : k === 1 ? 'Der Chat hakt nach. Zweites Nein – oder?' : 'Emoji-Schweigen. Anker: Füße fest, einmal ausatmen. Was schreibt Mika?', { eyebrow: 'Stelle ' + (k + 1) + ' von 3', small: true }),
             chat.el,
-          ], { eyebrow: sit.title + ' · ' + (k + 1) + '/3' });
+          ], { eyebrow: sit.title + ' · ' + (k + 1) + '/3', badge: ctx.stufe(k + 1, LEVELS) });
           chat.scrollEnd();
           const art = await ctx.ask(wK, ORDER.map((id) => ({ label: ARTEN[id].label + ' · „' + st.antworten[id] + '“', value: id, icon: ARTEN[id].icon, variant: 'ghost', id: 'art-' + id })));
           if (art === ctx.SKIP) { wahl[sit.id].push(null); continue; }
@@ -200,7 +203,7 @@
             art === 'mit'
               ? h('div', { class: 'card stack soft dc-preis' }, h('span', { class: 'eyebrow' }, 'Leise, ohne Alarm'), h('p', null, st.preis))
               : h('div', { class: 'card stack soft' }, h('span', { class: 'eyebrow' }, ARTEN[art].label), h('p', null, k < 2 ? 'Mika hat Nein gesagt. Der Chat lässt nicht locker – gleich kommt das Nachhaken.' : 'Dreimal Nein. Das war der schwere Teil.')),
-          ], { eyebrow: sit.title + ' · ' + (k + 1) + '/3' });
+          ], { eyebrow: sit.title + ' · ' + (k + 1) + '/3', badge: ctx.stufe(k + 1, LEVELS) });
           chat.scrollEnd();
           if ((await ctx.next(wR, k < 2 ? 'Weiter im Chat' : 'Chat beenden')) === ctx.SKIP) break;
         }

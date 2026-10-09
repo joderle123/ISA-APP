@@ -403,7 +403,7 @@
       lehrer: {
         ziel: 'Checkliste anwenden (Wer? Woanders? Will mich wütend machen?), Teilen-Bremse, Folgen abschätzen, Grenze: gefälschte Bilder = Mobbing, kann strafbar sein.',
         stufen: 'Level 1 Prüfen (alle drei Karten kippen, dann entscheiden), Level 2 Vorhersagen (erst die Ampel tippen, dann kippen), Level 3 Eingreifen (gefälschtes Bild: stoppen, Beweis sichern, Bescheid sagen, Hilfe holen).',
-        achten: 'Post 3 (gefälschtes Bild einer Mitschülerin) kommt immer – auf Betroffenheit achten. Hilfenummern am Ende. Keine echten Personen nennen.',
+        achten: 'Der letzte Post (gefälschtes Bild einer Mitschülerin) kommt immer – auf Betroffenheit achten. Hilfenummern am Ende. Keine echten Personen nennen.',
         impulse: ['„Was will der Post, dass du fühlst?“', '„Wer ist verantwortlich: wer fälscht oder wer weiterleitet?“', '„Was machst du, wenn das Bild schon überall ist?“'],
         kippt: 'Erzählt jemand von einem echten Fall: stoppen, Einzelgespräch, BEE SECURE 8002 1234, ggf. Schulleitung informieren.',
       },

@@ -168,10 +168,10 @@
         klartext: [
           { say: 'Ich hab wegen dir das Training verpasst. Ich bin echt sauer. Was war los?', react: 'Mein Handy war leer und ich hab die Zeit vergessen. Das war Mist von mir. Sorry.' },
           { say: 'Ich brauch, dass sowas nicht nochmal passiert. Was schlägst du vor?', react: 'Nächstes Mal stell ich einen Wecker. Und wenn’s knapp wird, komm ich vorher.' },
-          { say: 'Okay. Und für heute: Fahrst du mich morgen zur Schule, als Ausgleich?', react: 'Klar, hol ich dich ab. Danke, dass du’s mir so sagst.' },
+          { say: 'Okay. Und für heute: Fährst du mich morgen zur Schule, als Ausgleich?', react: 'Klar, hol ich dich ab. Danke, dass du’s mir so sagst.' },
         ],
         angriff: [
-          { say: 'Auf dich ist einfach kein Verlass. Nie wieder krieg du was von mir.', react: 'Dann frag ich halt jemand anders. Kein Problem.' },
+          { say: 'Auf dich ist einfach kein Verlass. Nie wieder kriegst du was von mir.', react: 'Dann frag ich halt jemand anders. Kein Problem.' },
           { say: 'Du bist so egoistisch. Du denkst nur an dich.', react: 'Und du machst aus allem ein Drama.' },
           { say: 'Gib das Rad her und hau ab.', react: 'Mika wirft das Rad hin und geht.' },
         ],
@@ -211,6 +211,11 @@
     },
   ];
 
+  const LEVELS = ['Runterkommen', 'Klartext', 'Deal'];
+  // Perspektive vor jedem Zug: Wie geht es der anderen Figur gerade?
+  const SICHT = ['wütend', 'verletzt', 'unsicher', 'genervt', 'ruhiger'];
+  const sichtPasst = (hz) => (hz >= 70 ? ['wütend', 'verletzt', 'genervt'] : hz >= 40 ? ['genervt', 'unsicher', 'verletzt'] : ['ruhiger', 'unsicher']);
+
   // Nächster Platz im Kreis (1→2→…→n→1): jeder Platz ist genau einmal dran, bevor es von vorn geht
   const dreh = (z, n) => (z % Math.max(1, n)) + 1;
 
@@ -241,10 +246,11 @@
 
       await ctx.T.intro({
         rule: 'Ein Streit, ein iPad, die ganze Crew: Jede Person macht einen Zug und baut auf dem Zug davor auf. In sechs Zügen zum Deal.',
+        levels: LEVELS,
         steps: [
-          { icon: 'eyeOff', title: 'Nur du schaust', text: 'Drei Züge: Klartext, Angriff, Abtauchen.' },
-          { icon: 'undo', title: 'Weitergeben', text: 'Nach dem Zug zeigst du allen die Reaktion. Dann nach links.' },
-          { icon: 'trophy', title: 'Deal', text: 'Hitze unter ' + DEAL_UNTER + ' und Klartext – fertig.' },
+          { icon: 'leaf', title: 'Runterkommen', text: 'Erst ein Skill: unter 70, bevor geredet wird.' },
+          { icon: 'eyeOff', title: 'Klartext', text: 'Nur du schaust: Wie geht es der anderen Figur? Dann dein Zug.' },
+          { icon: 'trophy', title: 'Deal', text: 'Hitze unter ' + DEAL_UNTER + ' und Klartext – dann wählt ihr den fairen Deal.' },
         ],
         probe: ctx.T.probeCard('Probe: ' + A.name + ' sagt „Du bist schuld!“ – welcher Zug ist das? Tippt einen, zählt nicht.', [
           { label: 'Klartext', value: 'k', variant: 'ghost', icon: 'chat' }, { label: 'Angriff', value: 'a', variant: 'ghost', icon: 'bolt' }, { label: 'Abtauchen', value: 'b', variant: 'ghost', icon: 'eyeOff' }]),
@@ -273,11 +279,12 @@
 
       // Regel aus der Stunde: unter 70, bevor geredet wird – ein Skill-Zug für die Figur
       let skillUsed = null;
-      if (hitze >= 70) {
+      {
         const wS = ctx.scr([
-          ctx.figureCard({ fig: szene.A, mood: 'wut', text: A.name + ' ist bei ' + hitze + '. Über 70 redet niemand gut. Erst ein Skill, dann der erste Zug.', eyebrow: 'Unter 70, bevor geredet wird' }),
+          ctx.figureCard({ fig: szene.A, mood: hitze >= 70 ? 'wut' : 'genervt', text: hitze >= 70 ? A.name + ' ist bei ' + hitze + '. Über 70 redet niemand gut. Erst ein Skill, dann der erste Zug.' : A.name + ' ist bei ' + hitze + ' – knapp unter 70. Ein Skill macht den Kopf noch freier.', eyebrow: 'Unter 70, bevor geredet wird' }),
           meter.el,
-        ], { eyebrow: 'Skill-Zug' });
+          h('div', { class: 'row' }, h('span', { class: 'skill-chip karte' }, CREW.icon('sparkle', 14), 'Skill-Karte „Runter unter 70“')),
+        ], { eyebrow: 'Skill-Zug', badge: ctx.stufe(1, LEVELS) });
         const s = await ctx.ask(wS, SKILLS.map((x) => ({ label: x.label, value: x.id, variant: 'ghost', icon: 'leaf' })));
         if (s !== ctx.SKIP) {
           skillUsed = SKILLS.find((x) => x.id === s);
@@ -300,13 +307,21 @@
         });
         if (c === ctx.SKIP) { seat = dreh(seat, n); continue; }
 
-        // Zug wählen: drei Icons mit Satzanfang als Tipp, Verlauf sichtbar
+        // Zug wählen: erst Perspektive (Wie geht es B?), dann drei Icons mit Satzanfang als Tipp, Verlauf sichtbar
         const vorher = hitze;
+        let sicht = null;
+        const sichtRow = h('div', { class: 'row', style: { gap: '8px' } }, SICHT.map((x) => {
+          const b = h('button', { type: 'button', class: 'chip', 'data-sicht': x }, x);
+          b.addEventListener('click', () => { CREW.sound.play('tap'); sicht = x; sichtRow.querySelectorAll('.chip').forEach((y) => y.classList.toggle('sel', y === b)); });
+          return b;
+        }));
+        if (ctx.auto) sichtRow.querySelectorAll('.chip')[Math.floor(ctx.autoRng() * SICHT.length)].click();
         const wZ = ctx.scr([
           verlauf(ctx, szene, log),
           meter.el,
-          ctx.say(log.length ? 'Bau auf dem letzten Zug auf. Was sagt ' + A.name + ' jetzt? Der Satzanfang ist dein Tipp.' : 'Der erste Zug. Was sagt ' + A.name + '? Der Satzanfang ist dein Tipp.', { eyebrow: 'Dein Zug', small: true }),
-        ], { eyebrow: 'Zug ' + zug });
+          h('div', { class: 'card stack' }, h('b', null, 'Erst: Wie geht es ' + B.name + ' gerade?'), sichtRow),
+          ctx.say(log.length ? 'Dann: Bau auf dem letzten Zug auf. Was sagt ' + A.name + ' jetzt?' : 'Dann: Der erste Zug. Was sagt ' + A.name + '?', { eyebrow: 'Dein Zug', small: true }),
+        ], { eyebrow: 'Zug ' + zug, badge: ctx.stufe(2, LEVELS) });
         const typ = await ctx.ask(wZ, Object.values(ZUEGE).map((z) => ({ label: z.label + ' · ' + z.tipp, value: z.id, icon: z.icon, variant: z.variant, id: 'zug-' + z.id })));
         if (typ === ctx.SKIP) { seat = dreh(seat, n); continue; }
         const vars = szene.zuege[typ];
@@ -346,16 +361,43 @@
         const wR = ctx.scr([
           h('div', { class: 'ss-said', 'data-zug': typ }, CREW.icon(ZUEGE[typ].icon, 22), h('div', { class: 'stack', style: { gap: '2px' } }, h('span', { class: 'eyebrow' }, A.name + ' · ' + ZUEGE[typ].label), h('b', null, v.say))),
           ctx.figureCard({ fig: szene.B, mood, text: react, eyebrow: B.name + ' reagiert' }),
+          sicht ? h('p', { class: 'muted small' }, 'Vermutet: ' + B.name + ' ist ' + sicht + '. ' + (sichtPasst(vorher).includes(sicht) ? 'Passt zur Hitze von ' + vorher + '.' : 'Bei Hitze ' + vorher + ' eher: ' + sichtPasst(vorher).join(' oder ') + '.')) : null,
           meter.el,
           h('div', { class: 'row between' },
             h('span', { class: 'pill' + (delta < 0 ? ' good' : delta > 0 ? ' teamB' : '') }, 'Hitze ' + (delta > 0 ? '+' : '') + delta),
             h('span', { class: 'muted small' }, deal ? 'Deal in Reichweite!' : zug < MAX_ZUEGE ? 'Noch ' + (MAX_ZUEGE - zug) + (MAX_ZUEGE - zug === 1 ? ' Zug' : ' Züge') : 'Letzter Zug')),
           h('p', { class: 'muted small' }, 'Zeig die Karte allen oder lies sie vor. Dann weitergeben.'),
-        ], { eyebrow: 'Zug ' + zug + ' · Reaktion' });
+        ], { eyebrow: 'Zug ' + zug + ' · Reaktion', badge: ctx.stufe(2, LEVELS) });
         await ctx.next(wR, deal ? 'Zum Deal' : 'Allen gezeigt');
         if (!deal && zug < MAX_ZUEGE) {
           seat = dreh(seat, n);
           await ctx.T.passOn({ direction: 'links', text: 'Gib das iPad nach links. Die nächste Person baut auf diesem Zug auf. Pass ist okay: einfach weitergeben.', extra: h('div', { class: 'stack', style: { alignItems: 'center', gap: '6px' } }, h('div', { class: 'display ss-seat-big' }, 'Platz ' + seat), h('span', { class: 'muted small' }, 'Die Person links von dir. Platznummer steht auf dem iPad.'), h('span', { class: 'pill' }, 'Hitze ' + hitze)) });
+        }
+      }
+
+      // Level 3: Deal – welcher Deal ist fair für beide? (Konflikt-Tiere aus der Stunde)
+      let dealArt = null;
+      if (deal) {
+        await ctx.T.level({ n: 3, names: LEVELS, text: 'Deal in Reichweite! Jetzt entscheidet die ganze Crew: Welcher Deal ist fair für beide?' });
+        const DEALS = ctx.rshuffle([
+          { k: 'eule', t: szene.deal, fb: 'Eulen-Deal: Beide bekommen, was sie brauchen. So hält ein Deal auch morgen noch.' },
+          { k: 'hai', t: A.name + ' setzt sich durch. ' + B.name + ' muss es schlucken.', fb: 'Hai-Deal: Einer gewinnt, einer verliert. Der nächste Streit ist schon vorprogrammiert.' },
+          { k: 'teddy', t: A.name + ' gibt einfach nach, damit Ruhe ist.', fb: 'Teddybär-Deal: Ruhe ja – aber ' + A.name + ' schluckt den Ärger. Der kommt später wieder hoch.' },
+        ]);
+        const wD = ctx.scr([
+          ctx.say('Welcher Deal ist fair für ' + A.name + ' UND ' + B.name + '? Redet kurz, dann tippt eine Person.', { eyebrow: 'Der Deal', small: true }),
+          meter.el,
+        ], { eyebrow: 'Deal', badge: ctx.stufe(3, LEVELS) });
+        const dk = await ctx.ask(wD, DEALS.map((d) => ({ label: d.t, value: d.k, variant: 'ghost', id: 'ss-deal-' + d.k })), { autoPick: () => 'eule' });
+        const d = DEALS.find((x) => x.k === dk);
+        if (d) {
+          dealArt = d.k;
+          CREW.sound.play(d.k === 'eule' ? 'good' : 'tap');
+          const wDf = ctx.scr([
+            ctx.figureCard({ fig: d.k === 'eule' ? szene.B : szene.A, mood: d.k === 'eule' ? 'froh' : 'neutral', text: d.fb, eyebrow: d.k === 'eule' ? 'Fair für beide' : 'Hm, für wen ist das fair?' }),
+            d.k === 'eule' ? null : h('p', { class: 'muted' }, 'Fairer wäre: ' + szene.deal),
+          ], { eyebrow: 'Deal', badge: ctx.stufe(3, LEVELS) });
+          await ctx.next(wDf, 'Weiter');
         }
       }
 
@@ -366,15 +408,13 @@
           ctx.figureCard({ fig: szene.A, mood: deal ? 'froh' : hitze >= 70 ? 'wut' : 'traurig', text: deal ? szene.deal : 'Kein Deal in ' + MAX_ZUEGE + ' Zügen. Hitze am Ende: ' + hitze + '. Der Streit geht morgen weiter.', eyebrow: deal ? 'So endet es' : 'Noch offen' }),
           ctx.figureCard({ fig: szene.B, mood: deal ? 'froh' : hitze >= 70 ? 'wut' : 'genervt', text: deal ? 'Danke, dass ihr geredet habt statt zu schießen.' : 'Ich hätte zugehört. Aber dafür hätte jemand Klartext reden müssen.', eyebrow: B.name })),
         verlauf(ctx, szene, log),
-        h('div', { class: 'card stack soft' },
-          h('b', null, 'Kurz reden, als Crew:'),
-          h('p', { class: 'muted' }, 'Welcher Zug hat die Hitze am meisten gesenkt? Wo wurde es brenzlig? Es geht um ' + A.name + ', nicht um die Person, die getippt hat.')),
+        h('p', { class: 'muted small' }, 'Es geht um ' + A.name + ', nicht um die Person, die getippt hat.'),
       ], { eyebrow: 'Ergebnis' });
       if (deal) { CREW.sound.play('great'); if (!ctx.fast) CREW.ui.confetti(120); }
-      await ctx.next(wE, 'Fertig');
+      await ctx.next(wE, 'Weiter');
       return {
         summary: deal ? 'Deal in ' + log.length + (log.length === 1 ? ' Zug' : ' Zügen') + '. Klartext senkt die Hitze, die Crew hat’s gemeinsam geschafft.' : 'Kein Deal diesmal. Klartext senkt die Hitze, Angriff treibt sie hoch – nächste Staffel anders.',
-        stats: [[count.klartext, 'Klartext'], [count.angriff, 'Angriff'], [count.abtauchen, 'Abtauchen'], [rewinds, 'zurückgespult']],
+        stats: [[count.klartext, 'Klartext'], [count.angriff, 'Angriff'], [count.abtauchen, 'Abtauchen'], [rewinds, 'zurückgespult']].concat(dealArt ? [[dealArt === 'eule' ? 1 : 0, 'fairer Deal für beide']] : []),
         again: true,
       };
     },

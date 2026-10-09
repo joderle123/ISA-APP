@@ -1019,6 +1019,10 @@ select.sel { font: inherit; color: var(--text); background: var(--panel); border
 /* Beamer: große Schrift für die Vorlagen-Karten */
 @media (min-width: 1400px) { .fig-text { font-size: 2.3em; } .vk-qt { font-size: 1.45em; } }
 
+/* Lange Antwort-Knöpfe dürfen umbrechen statt aus dem Bild zu ragen */
+.game-screen .row > .btn { max-width: 100%; }
+.game-screen .row > .btn.big { white-space: normal; text-align: center; line-height: 1.2; }
+
 /* ---- missions/clash.css ---- */
 /* =========================================================
    Mission „Clash“ – Friedenstreppe
@@ -8830,7 +8834,7 @@ var qrcode = function() {
       lehrer: {
         ziel: 'Checkliste anwenden (Wer? Woanders? Will mich wütend machen?), Teilen-Bremse, Folgen abschätzen, Grenze: gefälschte Bilder = Mobbing, kann strafbar sein.',
         stufen: 'Level 1 Prüfen (alle drei Karten kippen, dann entscheiden), Level 2 Vorhersagen (erst die Ampel tippen, dann kippen), Level 3 Eingreifen (gefälschtes Bild: stoppen, Beweis sichern, Bescheid sagen, Hilfe holen).',
-        achten: 'Post 3 (gefälschtes Bild einer Mitschülerin) kommt immer – auf Betroffenheit achten. Hilfenummern am Ende. Keine echten Personen nennen.',
+        achten: 'Der letzte Post (gefälschtes Bild einer Mitschülerin) kommt immer – auf Betroffenheit achten. Hilfenummern am Ende. Keine echten Personen nennen.',
         impulse: ['„Was will der Post, dass du fühlst?“', '„Wer ist verantwortlich: wer fälscht oder wer weiterleitet?“', '„Was machst du, wenn das Bild schon überall ist?“'],
         kippt: 'Erzählt jemand von einem echten Fall: stoppen, Einzelgespräch, BEE SECURE 8002 1234, ggf. Schulleitung informieren.',
       },
@@ -18510,7 +18514,7 @@ var qrcode = function() {
    Kein weiteres Real-or-Fake: Ein aufregender Post, der Daumen liegt auf Senden. Das Paar kippt die drei Prüffragen
    gemeinsam (Wer sagt das? Gibt’s das woanders? Will mich der Post wütend machen?) – jede Karte dreht sich und zeigt,
    was man bei diesem Post sieht. Dann entscheiden beide mit zwei Fingern: Teilen / Nachfragen / Löschen – und sehen
-   die Folge nach 24 Stunden. Post 3 ist immer das gefälschte Bild einer Mitschülerin, aus der Klasse geschickt:
+   die Folge nach 24 Stunden. Der letzte Post (4) ist immer das gefälschte Bild einer Mitschülerin, aus der Klasse geschickt:
    klare Grenze Mobbing / kann strafbar sein, plus Hilfe. Es geht um Figuren, nie um echte Personen. */
 (function () {
   'use strict';
@@ -18526,7 +18530,20 @@ var qrcode = function() {
     teilen: { id: 'teilen', label: 'Teilen', icon: 'right', variant: 'ghost' },
     nachfragen: { id: 'nachfragen', label: 'Nachfragen', icon: 'chat', variant: 'ghost' },
     loeschen: { id: 'loeschen', label: 'Löschen', icon: 'x', variant: 'ghost' },
+    eingreifen: { id: 'eingreifen', label: 'Stoppen und eingreifen', icon: 'shield', variant: 'ghost' },
   };
+  const LEVELS = ['Prüfen', 'Vorhersagen', 'Eingreifen'];
+  const AMPEL = { gruen: 'Grün · passt', gelb: 'Gelb · unklar', rot: 'Rot · Stopp' };
+  const gesamtAmpel = (p) => { const a = Object.values(p.hint).map((x) => x.ampel); return a.includes('rot') ? 'rot' : a.includes('gelb') ? 'gelb' : 'gruen'; };
+  /* Level 3: Eingreifen – was hilft wirklich? (vier helfen, zwei klingen gut, machen es aber schlimmer) */
+  const SCHRITTE = [
+    { k: 'stopp', t: 'Nicht weiterleiten', ok: true },
+    { k: 'beweis', t: 'Screenshot als Beweis behalten', ok: true },
+    { k: 'yara', t: 'Yara Bescheid sagen', ok: true },
+    { k: 'hilfe', t: 'Einer erwachsenen Person zeigen', ok: true },
+    { k: 'gruppe', t: 'In die Gruppe schicken: „Ist fake!“', ok: false, warum: 'Dann sehen noch mehr Leute das Bild.' },
+    { k: 'zurueck', t: 'Ein peinliches Bild von Sam posten', ok: false, warum: 'Rache macht aus einem Mobbing zwei.' },
+  ];
 
   /* Posts: acc = Absender, bg = Bild-Stil, text = Post, hint[frage] = {text, ampel: gruen|gelb|rot},
      folge[zug] = { text, mood }. gut = Züge, die zur Teilen-Bremse passen. */
@@ -18581,13 +18598,13 @@ var qrcode = function() {
       gut: ['teilen', 'nachfragen'],
     },
   ];
-  // Post 3 – immer: gefälschtes Bild einer Mitschülerin, aus der Klasse geschickt
+  // Letzter Post – immer: gefälschtes Bild einer Mitschülerin, aus der Klasse geschickt
   const POST_FAKE = {
     id: 'fake-bild', acc: 'sam', fig: true, seit: 'Sam an Mika · privat', bg: 'party', bild: 'Bild wird nicht gezeigt', likes: '🙈 nur Mika', fixed: true,
     text: 'omg schau dir Yara an 😂😂 (Bild: ein peinliches Sportfoto von Yara) – schick weiter, die Gruppe muss das sehen',
     hint: { wer: { text: 'Sam aus der Klasse. Aber Yara war an dem Tag gar nicht beim Sport – das weiß Mika.', ampel: 'rot' }, wo: { text: 'Das Bild gibt es nirgends sonst. Schau genau: sechs Finger an einer Hand, die Schrift im Hintergrund ist Brei. KI-Fälschung.', ampel: 'rot' }, wut: { text: 'Es will, dass Mika lacht – über Yara. Das ist der Haken: Lachen fühlt sich nicht wie Mobbing an. Ist es aber.', ampel: 'rot' } },
-    folge: { teilen: { text: 'Yara sieht das Bild am nächsten Tag. Yara kommt drei Tage nicht zur Schule. In der Weiterleitungs-Liste steht auch Mika.', mood: 'traurig' }, nachfragen: { text: 'Mika fragt Sam: „Ist das echt?“ Sam: „Nein lol, KI. Ist nur Spaß.“ Für Yara ist es kein Spaß. Und das Bild ist noch bei Sam.', mood: 'neutral' }, loeschen: { text: 'Gelöscht bei Mika. Bei Sam ist es noch. Und Yara weiß von nichts. Löschen allein reicht hier nicht.', mood: 'neutral' } },
-    gut: [],
+    folge: { eingreifen: { text: 'Mika leitet nicht weiter, behält einen Screenshot, sagt Yara Bescheid und zeigt es der Klassenlehrerin. Zwei Tage später ist das Bild überall gelöscht.', mood: 'froh' }, teilen: { text: 'Yara sieht das Bild am nächsten Tag. Yara kommt drei Tage nicht zur Schule. In der Weiterleitungs-Liste steht auch Mika.', mood: 'traurig' }, nachfragen: { text: 'Mika fragt Sam: „Ist das echt?“ Sam: „Nein lol, KI. Ist nur Spaß.“ Für Yara ist es kein Spaß. Und das Bild ist noch bei Sam.', mood: 'neutral' }, loeschen: { text: 'Gelöscht bei Mika. Bei Sam ist es noch. Und Yara weiß von nichts. Löschen allein reicht hier nicht.', mood: 'neutral' } },
+    gut: ['eingreifen'],
   };
 
   // Post-Karte im Glimmr-Look: Absender, Bild, Text, Daumen auf Senden
@@ -18629,10 +18646,11 @@ var qrcode = function() {
     async run(ctx) {
       await ctx.T.intro({
         rule: 'Ein Post, der Daumen liegt auf Senden. Kippt zu zweit die drei Prüffragen – dann entscheidet ihr mit zwei Fingern: Teilen, Nachfragen, Löschen.',
+        levels: LEVELS,
         steps: [
-          { icon: 'users', title: 'Zu zweit', text: 'Ein iPad in der Mitte. Abwechselnd eine Karte kippen.' },
-          { icon: 'eye', title: 'Drei Fragen', text: 'Wer sagt das? Gibt’s das woanders? Will mich der Post wütend machen?' },
-          { icon: 'timer', title: '24 Stunden später', text: 'Ihr seht, was aus eurer Entscheidung wird.' },
+          { icon: 'eye', title: 'Prüfen', text: 'Wer sagt das? Gibt’s das woanders? Will mich der Post wütend machen?' },
+          { icon: 'bolt', title: 'Vorhersagen', text: 'Erst schätzen: Grün, Gelb oder Rot? Dann kippen.' },
+          { icon: 'shield', title: 'Eingreifen', text: 'Beim letzten Post reicht Löschen nicht. Was hilft wirklich?' },
         ],
         probe: async () => {
           const w = ctx.scr([h('div', { class: 'probe-tag' }, 'PROBE · zählt nicht · 10 Sekunden'),
@@ -18642,13 +18660,26 @@ var qrcode = function() {
         },
       });
 
-      // Reihenfolge: zwei Posts aus dem Pool, dann IMMER das gefälschte Bild als Post 3, dann noch einer
+      // Reihenfolge: Level 1 ein Post, Level 2 zwei Posts mit Vorhersage, Level 3 IMMER das gefälschte Bild
       const pool = ctx.rshuffle(POSTS);
-      const posts = [pool[0], pool[1], POST_FAKE, pool[2]];
-      let bremse = 0, gespielt = 0;
+      const posts = [pool[0], pool[1], pool[2], POST_FAKE];
+      const lvlOf = (i) => (i === 0 ? 1 : posts[i].fixed ? 3 : 2);
+      let bremse = 0, gespielt = 0, treffer = 0, geholfen = 0;
       const wahl = [];
       for (let i = 0; i < posts.length; i++) {
         const p = posts[i];
+        const L = lvlOf(i);
+        if (i > 0 && lvlOf(i - 1) !== L) await ctx.T.level({ n: L, names: LEVELS, text: L === 2 ? 'Jetzt schätzt ihr zuerst: Ist der Post grün, gelb oder rot? Dann kippt ihr die Karten und vergleicht.' : 'Letzter Post. Er kommt aus der Klasse – und hier reicht Löschen nicht. Ihr greift ein.' });
+        // Level 2: Vorhersage vor dem Kippen
+        let tipp = null;
+        if (L === 2) {
+          const wV = ctx.scr([
+            postCard(ctx, p, i + 1, posts.length),
+            ctx.say('Erst schätzen, ohne Karten: Grün, Gelb oder Rot? Einigt euch.', { eyebrow: 'Vorhersage', small: true }),
+          ], { eyebrow: 'Post ' + (i + 1) + ' · Vorhersage', badge: ctx.stufe(2, LEVELS) });
+          tipp = await ctx.ask(wV, ['gruen', 'gelb', 'rot'].map((a) => ({ label: AMPEL[a], value: a, variant: 'ghost', id: 'ton-tipp-' + a })));
+          if (tipp === ctx.SKIP) tipp = null;
+        }
         const flipped = new Set();
         const card = postCard(ctx, p, i + 1, posts.length);
         const checks = checkCards(ctx, p, (id) => { flipped.add(id); if (flipped.size === FRAGEN.length) { btnSlot.classList.add('ready'); decide.disabled = false; CREW.sound.play('unlock'); } });
@@ -18657,18 +18688,22 @@ var qrcode = function() {
         const decided = new Promise((res) => { decide = CREW.ui.btn('Entscheiden', () => res(true), { iconRight: 'right', id: 'btn-decide', disabled: true }); });
         const btnSlot = h('div', { class: 'ton-ready row between' }, h('span', { class: 'muted small ton-ready-hint' }, 'Erst alle drei Karten kippen.'), decide);
         const w1 = ctx.scr([
-          T3Pair(card, h('div', { class: 'stack' }, ctx.say('Kippt abwechselnd die drei Prüffragen. Dann redet: Senden oder nicht?', { eyebrow: 'Teilen-Bremse', small: true }), checks, btnSlot)),
-        ], { eyebrow: 'Post ' + (i + 1) });
+          T3Pair(card, h('div', { class: 'stack' }, ctx.say('Kippt abwechselnd die drei Prüffragen. Dann redet: Senden oder nicht?', { eyebrow: 'Teilen-Bremse', small: true }), tipp ? h('div', { class: 'row' }, h('span', { class: 'pill' }, 'Eure Vorhersage: ' + AMPEL[tipp])) : null, checks, btnSlot)),
+        ], { eyebrow: 'Post ' + (i + 1), badge: ctx.stufe(L, LEVELS) });
         if (ctx.auto) setTimeout(() => { checks.querySelectorAll('.ton-check').forEach((c) => c.click()); decide.click(); }, 40);
         const r = await ctx.waitFor(decided);
         if (r === ctx.SKIP) { wahl.push(null); continue; }
 
         // Entscheidung: Teilen / Nachfragen / Löschen, dann beide Finger drauf
+        const ist = gesamtAmpel(p);
+        if (tipp && tipp === ist) treffer++;
         const w2 = ctx.scr([
           postCard(ctx, p, i + 1, posts.length),
+          tipp ? h('div', { class: 'card row', style: { gap: '10px', alignItems: 'center' } }, CREW.icon(tipp === ist ? 'check' : 'shuffle', 22), h('span', null, 'Vorhersage: ' + AMPEL[tipp] + ' · Karten: ' + AMPEL[ist] + (tipp === ist ? ' – Vorhersage stimmt.' : ' – anders als gedacht.'))) : null,
           ctx.say('Der Daumen liegt auf Senden. Was macht ihr?', { eyebrow: 'Entscheidung', small: true }),
-        ], { eyebrow: 'Post ' + (i + 1) + ' · Entscheidung' });
-        const z = await ctx.ask(w2, Object.values(ZUEGE).map((x) => ({ label: x.label, value: x.id, icon: x.icon, variant: x.variant, id: 'zug-' + x.id })));
+        ], { eyebrow: 'Post ' + (i + 1) + ' · Entscheidung', badge: ctx.stufe(L, LEVELS) });
+        const zuege = Object.values(ZUEGE).filter((x) => x.id !== 'eingreifen' || p.fixed);
+        const z = await ctx.ask(w2, zuege.map((x) => ({ label: x.label, value: x.id, icon: x.icon, variant: x.variant, id: 'zug-' + x.id })), p.fixed ? { autoPick: () => 'eingreifen' } : undefined);
         if (z === ctx.SKIP) { wahl.push(null); continue; }
         const w3 = ctx.scr([
           h('div', { class: 'ton-decision' }, CREW.icon(ZUEGE[z].icon, 28), h('b', null, ZUEGE[z].label)),
@@ -18685,10 +18720,10 @@ var qrcode = function() {
           h('div', { class: 'ton-later' }, CREW.icon('timer', 22), h('b', null, '24 Stunden später')),
           ctx.figureCard({ fig: p.fig ? 'yara' : 'mika', mood: f.mood, text: f.text, eyebrow: ZUEGE[z].label + ' · die Folge' }),
           p.fixed ? null : h('p', { class: 'muted small' }, p.gut.includes(z) ? 'Teilen-Bremse gezogen. Prüfen vor Senden – das war’s.' : 'Kein „falsch“. Schaut nochmal auf die drei Karten: Welche hätte euch gebremst?'),
-        ], { eyebrow: 'Post ' + (i + 1) + ' · Folge' });
-        await ctx.next(w4, p.fixed ? 'Weiter' : i + 1 < posts.length ? 'Nächster Post' : 'Fertig');
+        ], { eyebrow: 'Post ' + (i + 1) + ' · Folge', badge: ctx.stufe(L, LEVELS) });
+        await ctx.next(w4, p.fixed ? 'Weiter' : i + 1 < posts.length ? 'Nächster Post' : 'Weiter');
 
-        // Post 3: die Grenze – Fälschung ist Mobbing und kann strafbar sein
+        // Letzter Post: die Grenze – Fälschung ist Mobbing und kann strafbar sein
         if (p.fixed) {
           const w5 = ctx.scr([
             h('div', { class: 'ton-redflag' }, CREW.icon('shield', 36), h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Red Flag · klare Grenze'), h('h2', null, 'Gefälschtes Bild = Mobbing. Und es kann strafbar sein.'))),
@@ -18697,18 +18732,45 @@ var qrcode = function() {
               h('div', { class: 'card stack' }, h('b', null, 'Der starke Zug'), h('p', { class: 'muted' }, 'Nicht weiterleiten. Screenshot als Beweis behalten. Yara Bescheid sagen. Einer erwachsenen Person zeigen – Lehrkraft oder BEE SECURE.'))),
             h('p', { class: 'muted small' }, 'Wenn dich das gerade selbst betrifft: X-Karte oder Hilfe oben. Erfundener Post, echte Hilfe.'),
             ctx.helpCard({ title: 'Wenn so etwas bei euch passiert', text: 'Du musst das nicht allein lösen. Anonym und kostenlos:' }),
-          ], { eyebrow: 'Post 3 · Grenze' });
+          ], { eyebrow: 'Post ' + (i + 1) + ' · Grenze', badge: ctx.stufe(3, LEVELS) });
           await ctx.next(w5, 'Verstanden');
+          geholfen = await eingreifen(ctx);
         }
       }
 
       return {
         summary: bremse >= 3 ? 'Teilen-Bremse funktioniert: Drei Fragen, dann erst der Daumen.' : 'Drei Fragen vor dem Senden. Jeder Post, der nicht weitergeht, ist ein Gewinn.',
-        stats: [[gespielt, 'Posts geprüft'], [bremse, 'mal Bremse gezogen']],
+        stats: [[gespielt, 'Posts geprüft'], [bremse, 'mal Bremse gezogen'], [treffer, 'Vorhersagen stimmten'], [geholfen, 'von 4 Hilfe-Schritten gefunden']],
         help: true,
       };
     },
   });
+
+  /* Level 3: Was hilft Yara wirklich? Mehrfach wählen, zwei Finger, dann Auflösung */
+  async function eingreifen(ctx) {
+    const sel = new Set();
+    const row = h('div', { class: 'row', style: { gap: '8px' } }, ctx.rshuffle(SCHRITTE).map((x) => {
+      const b = h('button', { type: 'button', class: 'chip', 'data-eingreifen': x.k }, x.t);
+      b.addEventListener('click', () => { CREW.sound.play('tap'); if (sel.has(x.k)) sel.delete(x.k); else sel.add(x.k); b.classList.toggle('sel', sel.has(x.k)); });
+      return b;
+    }));
+    const w = ctx.scr([
+      ctx.say('Mika will Yara helfen. Was hilft wirklich? Wählt alles, was passt.', { eyebrow: 'Eingreifen', small: true }),
+      h('div', { class: 'card stack' }, row, h('p', { class: 'muted small' }, 'Redet kurz: Was macht es besser – und was nur lauter?')),
+    ], { eyebrow: 'Eingreifen', badge: ctx.stufe(3, LEVELS) });
+    if (ctx.auto) SCHRITTE.filter((x) => x.ok).forEach((x) => row.querySelector('[data-eingreifen="' + x.k + '"]').click());
+    if ((await ctx.T.twoFinger(w, { label: 'Beide: Finger drauf', hint: 'Erst wählen, dann zwei Finger.' })) === ctx.SKIP) return 0;
+    const gut = SCHRITTE.filter((x) => x.ok && sel.has(x.k)).length;
+    const w2 = ctx.scr([
+      h('div', { class: 'stack' }, SCHRITTE.map((x) => h('div', { class: 'card row', style: { gap: '10px', alignItems: 'center' } },
+        CREW.icon(x.ok ? 'check' : 'x', 22),
+        h('span', null, h('b', null, x.t), x.ok ? (sel.has(x.k) ? ' – gewählt. Stark.' : ' – hilft auch.') : ' – ' + x.warum)))),
+      h('div', { class: 'row' }, h('span', { class: 'skill-chip karte' }, CREW.icon('sparkle', 14), 'Skill-Karte „Teilen-Bremse“')),
+    ], { eyebrow: 'Eingreifen', badge: ctx.stufe(3, LEVELS) });
+    CREW.sound.play(gut >= 3 ? 'great' : 'good');
+    await ctx.next(w2, 'Weiter');
+    return gut;
+  }
 
   // Zwei Spalten für ein iPad in der Mitte (nebeneinander sitzen, nicht gegenüber)
   function T3Pair(left, right) {
@@ -21252,6 +21314,9 @@ var qrcode = function() {
     },
   ];
 
+  const LEVELS = ['Wissen', 'Fragen', 'Perspektive'];
+  const FRAGEHILFEN = ['„Warum ist dir das wichtig?“', '„Was wäre das Schlimmste für dich?“', '„Ab wann wäre es okay?“', '„Was brauchst du mindestens?“'];
+
   // Geheim-Karte eines Teams: nur für dieses Team
   function needCard(ctx, side, team) {
     return ctx.figureCard({ fig: side.fig, mood: 'neutral', text: side.braucht, eyebrow: 'Geheim · nur Team ' + team + ' · Das braucht ' + CREW.games.figures[side.fig].name + ' wirklich', extra: h('p', { class: 'muted small' }, 'Verratet es nicht direkt. Lasst das andere Team FRAGEN.') });
@@ -21277,10 +21342,11 @@ var qrcode = function() {
 
       await ctx.T.intro({
         rule: 'Zwei Figuren, zwei Teams. Jedes Team kennt heimlich, was seine Figur braucht. Fragt, bevor ihr einen Deal nennt.',
+        levels: LEVELS,
         steps: [
-          { icon: 'users', title: 'Zwei Teams', text: 'Team A spricht für ' + A.name + ', Team B für ' + B.name + '.' },
-          { icon: 'eyeOff', title: 'Geheim-Karte', text: 'Was braucht eure Figur wirklich?' },
-          { icon: 'chat', title: '90 Sekunden', text: 'Mindestens eine Frage pro Team, dann der Deal.' },
+          { icon: 'eyeOff', title: 'Wissen', text: 'Geheim-Karte: Was braucht eure Figur wirklich?' },
+          { icon: 'chat', title: 'Fragen', text: '90 Sekunden. Mindestens eine Frage pro Team.' },
+          { icon: 'users', title: 'Perspektive', text: 'Sagt, was die ANDERE Figur braucht. Dann der Deal.' },
         ],
         probe: ctx.T.probeCard('Probe: Team A will Pizza, Team B will Pasta. Eine Frage, die hilft? Tippt eine – zählt nicht.', [{ label: '„Warum Pasta?“', value: 1, variant: 'ghost' }, { label: '„Pizza ist besser!“', value: 2, variant: 'ghost' }]),
       });
@@ -21298,13 +21364,13 @@ var qrcode = function() {
         ctx.say('Jedes Team bekommt eine Geheim-Karte: Was braucht eure Figur wirklich?', { eyebrow: 'Geheim-Karten', small: true }),
         h('div', { class: 'card' }, qr),
         h('p', { class: 'muted small' }, 'Ohne Team-iPads: „Am Lehrer-iPad zeigen“ – erst schaut nur Team A, dann nur Team B.'),
-      ], { eyebrow: 'Geheim-Karten' });
+      ], { eyebrow: 'Geheim-Karten', badge: ctx.stufe(1, LEVELS) });
       const how = await ctx.ask(w2, [{ label: 'Am Lehrer-iPad zeigen', value: 'here', variant: 'ghost', icon: 'eyeOff' }, { label: 'Teams haben gescannt', value: 'qr', iconRight: 'right' }]);
       if (how === 'here') {
         for (const team of ['A', 'B']) {
           const c = await ctx.T.cover({ who: 'Nur Team ' + team + ' schaut', hint: 'Team ' + (team === 'A' ? 'B' : 'A') + ' dreht sich um. Dann tippen.', eyebrow: 'Geheim-Karte ' + team });
           if (c === ctx.SKIP) continue;
-          const w3 = ctx.scr([needCard(ctx, fall[team], team)], { eyebrow: 'Geheim-Karte ' + team });
+          const w3 = ctx.scr([needCard(ctx, fall[team], team)], { eyebrow: 'Geheim-Karte ' + team, badge: ctx.stufe(1, LEVELS) });
           await ctx.next(w3, 'Gelesen, wegdrehen');
         }
       }
@@ -21317,17 +21383,38 @@ var qrcode = function() {
           h('div', { class: 'fig-card', style: { '--fc': A.colour } }, h('div', { class: 'fig-side' }, CREW.games.avatar(A, 'neutral', 72), h('b', { class: 'fig-name' }, 'Team A')), h('div', { class: 'fig-body' }, h('b', null, A.name + ' ' + fall.A.will), askBtn('A'))),
           h('div', { class: 'fig-card', style: { '--fc': B.colour } }, h('div', { class: 'fig-side' }, CREW.games.avatar(B, 'neutral', 72), h('b', { class: 'fig-name' }, 'Team B')), h('div', { class: 'fig-body' }, h('b', null, B.name + ' ' + fall.B.will), askBtn('B')))),
         h('div', { class: 'row between' }, ctx.say('Verhandelt. Jede Seite stellt mindestens eine Frage, bevor sie den Deal nennt.', { eyebrow: '90 Sekunden', small: true }), slot),
-        CREW.ui.teacherLine('Häkchen setzen, sobald ein Team gefragt hat. Dann „Deal nennen“.'),
-      ], { eyebrow: 'Verhandlung' });
+        h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Fragehilfen'), h('div', { class: 'row', style: { gap: '8px' } }, FRAGEHILFEN.map((x) => h('span', { class: 'chip' }, x)))),
+        CREW.ui.teacherLine('Häkchen setzen, sobald ein Team gefragt hat. Dann „Weiter“.'),
+      ], { eyebrow: 'Verhandlung', badge: ctx.stufe(2, LEVELS) });
       if (ctx.auto) { asked.A = true; asked.B = true; }
-      const r = await ctx.timerOrButton(w4, 90, [{ label: 'Deal nennen', value: 'deal', iconRight: 'right', id: 'btn-deal' }], { slot });
+      const r = await ctx.timerOrButton(w4, 90, [{ label: 'Weiter', value: 'deal', iconRight: 'right', id: 'btn-deal' }], { slot });
       if (r === ctx.SKIP) return { summary: 'Abgebrochen. Auch okay.' };
       if (!asked.A || !asked.B) {
         const w5 = ctx.scr([ctx.say('Halt: ' + (!asked.A && !asked.B ? 'Beide Teams' : 'Team ' + (!asked.A ? 'A' : 'B')) + ' haben noch nicht gefragt. Eine Frage, dann der Deal.', { eyebrow: 'Erst fragen' })], { eyebrow: 'Verhandlung', center: true });
         await ctx.next(w5, 'Gefragt, weiter');
       }
+      // Level 3: Perspektive – jedes Team sagt, was die ANDERE Figur braucht. Dann aufdecken.
+      await ctx.T.level({ n: 3, names: LEVELS, text: 'Bevor der Deal kommt: Jedes Team sagt in einem Satz, was die ANDERE Figur wirklich braucht.' });
+      const gesagt = { A: false, B: false };
+      const sagBtn = (team) => { const b = CREW.ui.btn('Gesagt', () => { gesagt[team] = true; b.classList.add('good'); b.disabled = true; }, { small: true, variant: 'ghost', icon: 'check', id: 'persp-' + team }); return b; };
+      const wP = ctx.scr([
+        h('div', { class: 'grid two' },
+          h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Team A sagt'), h('b', { class: 'lead' }, '„' + B.name + ' braucht eigentlich …“'), sagBtn('A')),
+          h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Team B sagt'), h('b', { class: 'lead' }, '„' + A.name + ' braucht eigentlich …“'), sagBtn('B'))),
+        h('p', { class: 'muted small' }, 'Nicht was die Figur WILL – was sie BRAUCHT. Raten ist erlaubt.'),
+      ], { eyebrow: 'Perspektive', badge: ctx.stufe(3, LEVELS) });
+      if (ctx.auto) { gesagt.A = true; gesagt.B = true; }
+      await ctx.next(wP, 'Aufdecken', { id: 'btn-aufdecken' });
+      const wA = ctx.scr([
+        h('div', { class: 'grid two' },
+          ctx.figureCard({ fig: fall.A.fig, mood: 'neutral', text: fall.A.braucht, eyebrow: 'Das braucht ' + A.name + ' wirklich' }),
+          ctx.figureCard({ fig: fall.B.fig, mood: 'neutral', text: fall.B.braucht, eyebrow: 'Das braucht ' + B.name + ' wirklich' })),
+        ctx.say('Lag das andere Team nah dran? Mit beiden Bedürfnissen auf dem Tisch: Welcher Deal passt?', { eyebrow: 'Aufgedeckt', small: true }),
+      ], { eyebrow: 'Perspektive', badge: ctx.stufe(3, LEVELS) });
+      await ctx.next(wA, 'Deal nennen');
+
       // Der Deal (Lehrkraft tippt einmal), beide Figuren reagieren
-      const w6 = ctx.scr([ctx.say('Welcher Deal steht?', { eyebrow: 'Deal' }), CREW.ui.teacherLine('Den Deal der Crew einmal antippen.')], { eyebrow: 'Deal' });
+      const w6 = ctx.scr([ctx.say('Welcher Deal steht?', { eyebrow: 'Deal' }), CREW.ui.teacherLine('Den Deal der Crew einmal antippen.')], { eyebrow: 'Deal', badge: ctx.stufe(3, LEVELS) });
       const d = await ctx.ask(w6, fall.deals.map((x) => ({ label: x.label, value: x.id, variant: x.both ? 'good' : 'ghost' })));
       const deal = fall.deals.find((x) => x.id === d) || fall.deals[3];
       const moodA = deal.both ? 'froh' : deal.winner === 'A' ? 'froh' : deal.winner === 'B' ? 'traurig' : 'wut';
@@ -21340,8 +21427,8 @@ var qrcode = function() {
         h('p', { class: 'muted' }, deal.both ? 'Beide Bedürfnisse drin. Das ist ein Deal.' : 'Kurz reden: Welche Frage hätte den „Beide okay“-Deal gefunden? Verlieren gehört dazu – beim nächsten Fall tauschen die Teams.'),
       ], { eyebrow: 'Reaktion' });
       if (deal.both) { CREW.sound.play('great'); if (!ctx.fast) CREW.ui.confetti(120); }
-      await ctx.next(w7, 'Fertig');
-      return { summary: deal.both ? 'Beide okay. Ihr habt das Bedürfnis hinter dem Wunsch gefunden.' : 'Ein Deal ist erst gut, wenn beide damit leben können.', stats: [[(asked.A ? 1 : 0) + (asked.B ? 1 : 0), 'Teams haben gefragt']] };
+      await ctx.next(w7, 'Weiter');
+      return { summary: deal.both ? 'Beide okay. Ihr habt das Bedürfnis hinter dem Wunsch gefunden.' : 'Ein Deal ist erst gut, wenn beide damit leben können.', stats: [[(asked.A ? 1 : 0) + (asked.B ? 1 : 0), 'Teams haben gefragt'], [(gesagt.A ? 1 : 0) + (gesagt.B ? 1 : 0), 'Teams haben die andere Seite benannt']] };
     },
   });
 })();
@@ -21449,6 +21536,8 @@ var qrcode = function() {
     },
   ];
 
+  const LEVELS = ['Erstes Nein', 'Nachhaken', 'Dabei bleiben'];
+
   // Wenn-dann-Pläne (Einheit j1-e25)
   const PLAENE = [
     'Wenn jemand nachhakt, dann sage ich mein Nein nochmal – kürzer.',
@@ -21490,6 +21579,7 @@ var qrcode = function() {
     async run(ctx) {
       await ctx.T.intro({
         rule: 'Du steuerst Mika in einem Gruppenchat. Der Druck steigt leise. Dreimal wählst du: Welches Nein – oder mitmachen.',
+        levels: LEVELS,
         steps: [
           { icon: 'phone', title: 'Allein tippen', text: 'Drei Chats, je drei Stellen. Nichts wird gespeichert.' },
           { icon: 'x', title: 'Vier Arten Nein', text: 'Klar · mit Grund · Ausweich · Nein + Alternative.' },
@@ -21532,9 +21622,9 @@ var qrcode = function() {
           druck = Math.min(100, druck + (k === 0 ? 20 : k === 1 ? 25 : 30));
           chat.meter.set(druck);
           const wK = ctx.scr([
-            ctx.say(k === 0 ? 'Was antwortet Mika?' : k === 1 ? 'Der Chat hakt nach. Zweites Nein – oder?' : 'Emoji-Schweigen. Letzte Stelle: Was schreibt Mika?', { eyebrow: 'Stelle ' + (k + 1) + ' von 3', small: true }),
+            ctx.say(k === 0 ? 'Was antwortet Mika?' : k === 1 ? 'Der Chat hakt nach. Zweites Nein – oder?' : 'Emoji-Schweigen. Anker: Füße fest, einmal ausatmen. Was schreibt Mika?', { eyebrow: 'Stelle ' + (k + 1) + ' von 3', small: true }),
             chat.el,
-          ], { eyebrow: sit.title + ' · ' + (k + 1) + '/3' });
+          ], { eyebrow: sit.title + ' · ' + (k + 1) + '/3', badge: ctx.stufe(k + 1, LEVELS) });
           chat.scrollEnd();
           const art = await ctx.ask(wK, ORDER.map((id) => ({ label: ARTEN[id].label + ' · „' + st.antworten[id] + '“', value: id, icon: ARTEN[id].icon, variant: 'ghost', id: 'art-' + id })));
           if (art === ctx.SKIP) { wahl[sit.id].push(null); continue; }
@@ -21549,7 +21639,7 @@ var qrcode = function() {
             art === 'mit'
               ? h('div', { class: 'card stack soft dc-preis' }, h('span', { class: 'eyebrow' }, 'Leise, ohne Alarm'), h('p', null, st.preis))
               : h('div', { class: 'card stack soft' }, h('span', { class: 'eyebrow' }, ARTEN[art].label), h('p', null, k < 2 ? 'Mika hat Nein gesagt. Der Chat lässt nicht locker – gleich kommt das Nachhaken.' : 'Dreimal Nein. Das war der schwere Teil.')),
-          ], { eyebrow: sit.title + ' · ' + (k + 1) + '/3' });
+          ], { eyebrow: sit.title + ' · ' + (k + 1) + '/3', badge: ctx.stufe(k + 1, LEVELS) });
           chat.scrollEnd();
           if ((await ctx.next(wR, k < 2 ? 'Weiter im Chat' : 'Chat beenden')) === ctx.SKIP) break;
         }
@@ -21765,10 +21855,10 @@ var qrcode = function() {
         klartext: [
           { say: 'Ich hab wegen dir das Training verpasst. Ich bin echt sauer. Was war los?', react: 'Mein Handy war leer und ich hab die Zeit vergessen. Das war Mist von mir. Sorry.' },
           { say: 'Ich brauch, dass sowas nicht nochmal passiert. Was schlägst du vor?', react: 'Nächstes Mal stell ich einen Wecker. Und wenn’s knapp wird, komm ich vorher.' },
-          { say: 'Okay. Und für heute: Fahrst du mich morgen zur Schule, als Ausgleich?', react: 'Klar, hol ich dich ab. Danke, dass du’s mir so sagst.' },
+          { say: 'Okay. Und für heute: Fährst du mich morgen zur Schule, als Ausgleich?', react: 'Klar, hol ich dich ab. Danke, dass du’s mir so sagst.' },
         ],
         angriff: [
-          { say: 'Auf dich ist einfach kein Verlass. Nie wieder krieg du was von mir.', react: 'Dann frag ich halt jemand anders. Kein Problem.' },
+          { say: 'Auf dich ist einfach kein Verlass. Nie wieder kriegst du was von mir.', react: 'Dann frag ich halt jemand anders. Kein Problem.' },
           { say: 'Du bist so egoistisch. Du denkst nur an dich.', react: 'Und du machst aus allem ein Drama.' },
           { say: 'Gib das Rad her und hau ab.', react: 'Mika wirft das Rad hin und geht.' },
         ],
@@ -21808,6 +21898,11 @@ var qrcode = function() {
     },
   ];
 
+  const LEVELS = ['Runterkommen', 'Klartext', 'Deal'];
+  // Perspektive vor jedem Zug: Wie geht es der anderen Figur gerade?
+  const SICHT = ['wütend', 'verletzt', 'unsicher', 'genervt', 'ruhiger'];
+  const sichtPasst = (hz) => (hz >= 70 ? ['wütend', 'verletzt', 'genervt'] : hz >= 40 ? ['genervt', 'unsicher', 'verletzt'] : ['ruhiger', 'unsicher']);
+
   // Nächster Platz im Kreis (1→2→…→n→1): jeder Platz ist genau einmal dran, bevor es von vorn geht
   const dreh = (z, n) => (z % Math.max(1, n)) + 1;
 
@@ -21838,10 +21933,11 @@ var qrcode = function() {
 
       await ctx.T.intro({
         rule: 'Ein Streit, ein iPad, die ganze Crew: Jede Person macht einen Zug und baut auf dem Zug davor auf. In sechs Zügen zum Deal.',
+        levels: LEVELS,
         steps: [
-          { icon: 'eyeOff', title: 'Nur du schaust', text: 'Drei Züge: Klartext, Angriff, Abtauchen.' },
-          { icon: 'undo', title: 'Weitergeben', text: 'Nach dem Zug zeigst du allen die Reaktion. Dann nach links.' },
-          { icon: 'trophy', title: 'Deal', text: 'Hitze unter ' + DEAL_UNTER + ' und Klartext – fertig.' },
+          { icon: 'leaf', title: 'Runterkommen', text: 'Erst ein Skill: unter 70, bevor geredet wird.' },
+          { icon: 'eyeOff', title: 'Klartext', text: 'Nur du schaust: Wie geht es der anderen Figur? Dann dein Zug.' },
+          { icon: 'trophy', title: 'Deal', text: 'Hitze unter ' + DEAL_UNTER + ' und Klartext – dann wählt ihr den fairen Deal.' },
         ],
         probe: ctx.T.probeCard('Probe: ' + A.name + ' sagt „Du bist schuld!“ – welcher Zug ist das? Tippt einen, zählt nicht.', [
           { label: 'Klartext', value: 'k', variant: 'ghost', icon: 'chat' }, { label: 'Angriff', value: 'a', variant: 'ghost', icon: 'bolt' }, { label: 'Abtauchen', value: 'b', variant: 'ghost', icon: 'eyeOff' }]),
@@ -21870,11 +21966,12 @@ var qrcode = function() {
 
       // Regel aus der Stunde: unter 70, bevor geredet wird – ein Skill-Zug für die Figur
       let skillUsed = null;
-      if (hitze >= 70) {
+      {
         const wS = ctx.scr([
-          ctx.figureCard({ fig: szene.A, mood: 'wut', text: A.name + ' ist bei ' + hitze + '. Über 70 redet niemand gut. Erst ein Skill, dann der erste Zug.', eyebrow: 'Unter 70, bevor geredet wird' }),
+          ctx.figureCard({ fig: szene.A, mood: hitze >= 70 ? 'wut' : 'genervt', text: hitze >= 70 ? A.name + ' ist bei ' + hitze + '. Über 70 redet niemand gut. Erst ein Skill, dann der erste Zug.' : A.name + ' ist bei ' + hitze + ' – knapp unter 70. Ein Skill macht den Kopf noch freier.', eyebrow: 'Unter 70, bevor geredet wird' }),
           meter.el,
-        ], { eyebrow: 'Skill-Zug' });
+          h('div', { class: 'row' }, h('span', { class: 'skill-chip karte' }, CREW.icon('sparkle', 14), 'Skill-Karte „Runter unter 70“')),
+        ], { eyebrow: 'Skill-Zug', badge: ctx.stufe(1, LEVELS) });
         const s = await ctx.ask(wS, SKILLS.map((x) => ({ label: x.label, value: x.id, variant: 'ghost', icon: 'leaf' })));
         if (s !== ctx.SKIP) {
           skillUsed = SKILLS.find((x) => x.id === s);
@@ -21897,13 +21994,21 @@ var qrcode = function() {
         });
         if (c === ctx.SKIP) { seat = dreh(seat, n); continue; }
 
-        // Zug wählen: drei Icons mit Satzanfang als Tipp, Verlauf sichtbar
+        // Zug wählen: erst Perspektive (Wie geht es B?), dann drei Icons mit Satzanfang als Tipp, Verlauf sichtbar
         const vorher = hitze;
+        let sicht = null;
+        const sichtRow = h('div', { class: 'row', style: { gap: '8px' } }, SICHT.map((x) => {
+          const b = h('button', { type: 'button', class: 'chip', 'data-sicht': x }, x);
+          b.addEventListener('click', () => { CREW.sound.play('tap'); sicht = x; sichtRow.querySelectorAll('.chip').forEach((y) => y.classList.toggle('sel', y === b)); });
+          return b;
+        }));
+        if (ctx.auto) sichtRow.querySelectorAll('.chip')[Math.floor(ctx.autoRng() * SICHT.length)].click();
         const wZ = ctx.scr([
           verlauf(ctx, szene, log),
           meter.el,
-          ctx.say(log.length ? 'Bau auf dem letzten Zug auf. Was sagt ' + A.name + ' jetzt? Der Satzanfang ist dein Tipp.' : 'Der erste Zug. Was sagt ' + A.name + '? Der Satzanfang ist dein Tipp.', { eyebrow: 'Dein Zug', small: true }),
-        ], { eyebrow: 'Zug ' + zug });
+          h('div', { class: 'card stack' }, h('b', null, 'Erst: Wie geht es ' + B.name + ' gerade?'), sichtRow),
+          ctx.say(log.length ? 'Dann: Bau auf dem letzten Zug auf. Was sagt ' + A.name + ' jetzt?' : 'Dann: Der erste Zug. Was sagt ' + A.name + '?', { eyebrow: 'Dein Zug', small: true }),
+        ], { eyebrow: 'Zug ' + zug, badge: ctx.stufe(2, LEVELS) });
         const typ = await ctx.ask(wZ, Object.values(ZUEGE).map((z) => ({ label: z.label + ' · ' + z.tipp, value: z.id, icon: z.icon, variant: z.variant, id: 'zug-' + z.id })));
         if (typ === ctx.SKIP) { seat = dreh(seat, n); continue; }
         const vars = szene.zuege[typ];
@@ -21943,16 +22048,43 @@ var qrcode = function() {
         const wR = ctx.scr([
           h('div', { class: 'ss-said', 'data-zug': typ }, CREW.icon(ZUEGE[typ].icon, 22), h('div', { class: 'stack', style: { gap: '2px' } }, h('span', { class: 'eyebrow' }, A.name + ' · ' + ZUEGE[typ].label), h('b', null, v.say))),
           ctx.figureCard({ fig: szene.B, mood, text: react, eyebrow: B.name + ' reagiert' }),
+          sicht ? h('p', { class: 'muted small' }, 'Vermutet: ' + B.name + ' ist ' + sicht + '. ' + (sichtPasst(vorher).includes(sicht) ? 'Passt zur Hitze von ' + vorher + '.' : 'Bei Hitze ' + vorher + ' eher: ' + sichtPasst(vorher).join(' oder ') + '.')) : null,
           meter.el,
           h('div', { class: 'row between' },
             h('span', { class: 'pill' + (delta < 0 ? ' good' : delta > 0 ? ' teamB' : '') }, 'Hitze ' + (delta > 0 ? '+' : '') + delta),
             h('span', { class: 'muted small' }, deal ? 'Deal in Reichweite!' : zug < MAX_ZUEGE ? 'Noch ' + (MAX_ZUEGE - zug) + (MAX_ZUEGE - zug === 1 ? ' Zug' : ' Züge') : 'Letzter Zug')),
           h('p', { class: 'muted small' }, 'Zeig die Karte allen oder lies sie vor. Dann weitergeben.'),
-        ], { eyebrow: 'Zug ' + zug + ' · Reaktion' });
+        ], { eyebrow: 'Zug ' + zug + ' · Reaktion', badge: ctx.stufe(2, LEVELS) });
         await ctx.next(wR, deal ? 'Zum Deal' : 'Allen gezeigt');
         if (!deal && zug < MAX_ZUEGE) {
           seat = dreh(seat, n);
           await ctx.T.passOn({ direction: 'links', text: 'Gib das iPad nach links. Die nächste Person baut auf diesem Zug auf. Pass ist okay: einfach weitergeben.', extra: h('div', { class: 'stack', style: { alignItems: 'center', gap: '6px' } }, h('div', { class: 'display ss-seat-big' }, 'Platz ' + seat), h('span', { class: 'muted small' }, 'Die Person links von dir. Platznummer steht auf dem iPad.'), h('span', { class: 'pill' }, 'Hitze ' + hitze)) });
+        }
+      }
+
+      // Level 3: Deal – welcher Deal ist fair für beide? (Konflikt-Tiere aus der Stunde)
+      let dealArt = null;
+      if (deal) {
+        await ctx.T.level({ n: 3, names: LEVELS, text: 'Deal in Reichweite! Jetzt entscheidet die ganze Crew: Welcher Deal ist fair für beide?' });
+        const DEALS = ctx.rshuffle([
+          { k: 'eule', t: szene.deal, fb: 'Eulen-Deal: Beide bekommen, was sie brauchen. So hält ein Deal auch morgen noch.' },
+          { k: 'hai', t: A.name + ' setzt sich durch. ' + B.name + ' muss es schlucken.', fb: 'Hai-Deal: Einer gewinnt, einer verliert. Der nächste Streit ist schon vorprogrammiert.' },
+          { k: 'teddy', t: A.name + ' gibt einfach nach, damit Ruhe ist.', fb: 'Teddybär-Deal: Ruhe ja – aber ' + A.name + ' schluckt den Ärger. Der kommt später wieder hoch.' },
+        ]);
+        const wD = ctx.scr([
+          ctx.say('Welcher Deal ist fair für ' + A.name + ' UND ' + B.name + '? Redet kurz, dann tippt eine Person.', { eyebrow: 'Der Deal', small: true }),
+          meter.el,
+        ], { eyebrow: 'Deal', badge: ctx.stufe(3, LEVELS) });
+        const dk = await ctx.ask(wD, DEALS.map((d) => ({ label: d.t, value: d.k, variant: 'ghost', id: 'ss-deal-' + d.k })), { autoPick: () => 'eule' });
+        const d = DEALS.find((x) => x.k === dk);
+        if (d) {
+          dealArt = d.k;
+          CREW.sound.play(d.k === 'eule' ? 'good' : 'tap');
+          const wDf = ctx.scr([
+            ctx.figureCard({ fig: d.k === 'eule' ? szene.B : szene.A, mood: d.k === 'eule' ? 'froh' : 'neutral', text: d.fb, eyebrow: d.k === 'eule' ? 'Fair für beide' : 'Hm, für wen ist das fair?' }),
+            d.k === 'eule' ? null : h('p', { class: 'muted' }, 'Fairer wäre: ' + szene.deal),
+          ], { eyebrow: 'Deal', badge: ctx.stufe(3, LEVELS) });
+          await ctx.next(wDf, 'Weiter');
         }
       }
 
@@ -21963,15 +22095,13 @@ var qrcode = function() {
           ctx.figureCard({ fig: szene.A, mood: deal ? 'froh' : hitze >= 70 ? 'wut' : 'traurig', text: deal ? szene.deal : 'Kein Deal in ' + MAX_ZUEGE + ' Zügen. Hitze am Ende: ' + hitze + '. Der Streit geht morgen weiter.', eyebrow: deal ? 'So endet es' : 'Noch offen' }),
           ctx.figureCard({ fig: szene.B, mood: deal ? 'froh' : hitze >= 70 ? 'wut' : 'genervt', text: deal ? 'Danke, dass ihr geredet habt statt zu schießen.' : 'Ich hätte zugehört. Aber dafür hätte jemand Klartext reden müssen.', eyebrow: B.name })),
         verlauf(ctx, szene, log),
-        h('div', { class: 'card stack soft' },
-          h('b', null, 'Kurz reden, als Crew:'),
-          h('p', { class: 'muted' }, 'Welcher Zug hat die Hitze am meisten gesenkt? Wo wurde es brenzlig? Es geht um ' + A.name + ', nicht um die Person, die getippt hat.')),
+        h('p', { class: 'muted small' }, 'Es geht um ' + A.name + ', nicht um die Person, die getippt hat.'),
       ], { eyebrow: 'Ergebnis' });
       if (deal) { CREW.sound.play('great'); if (!ctx.fast) CREW.ui.confetti(120); }
-      await ctx.next(wE, 'Fertig');
+      await ctx.next(wE, 'Weiter');
       return {
         summary: deal ? 'Deal in ' + log.length + (log.length === 1 ? ' Zug' : ' Zügen') + '. Klartext senkt die Hitze, die Crew hat’s gemeinsam geschafft.' : 'Kein Deal diesmal. Klartext senkt die Hitze, Angriff treibt sie hoch – nächste Staffel anders.',
-        stats: [[count.klartext, 'Klartext'], [count.angriff, 'Angriff'], [count.abtauchen, 'Abtauchen'], [rewinds, 'zurückgespult']],
+        stats: [[count.klartext, 'Klartext'], [count.angriff, 'Angriff'], [count.abtauchen, 'Abtauchen'], [rewinds, 'zurückgespult']].concat(dealArt ? [[dealArt === 'eule' ? 1 : 0, 'fairer Deal für beide']] : []),
         again: true,
       };
     },

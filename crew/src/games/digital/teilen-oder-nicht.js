@@ -2,7 +2,7 @@
    Kein weiteres Real-or-Fake: Ein aufregender Post, der Daumen liegt auf Senden. Das Paar kippt die drei Prüffragen
    gemeinsam (Wer sagt das? Gibt’s das woanders? Will mich der Post wütend machen?) – jede Karte dreht sich und zeigt,
    was man bei diesem Post sieht. Dann entscheiden beide mit zwei Fingern: Teilen / Nachfragen / Löschen – und sehen
-   die Folge nach 24 Stunden. Post 3 ist immer das gefälschte Bild einer Mitschülerin, aus der Klasse geschickt:
+   die Folge nach 24 Stunden. Der letzte Post (4) ist immer das gefälschte Bild einer Mitschülerin, aus der Klasse geschickt:
    klare Grenze Mobbing / kann strafbar sein, plus Hilfe. Es geht um Figuren, nie um echte Personen. */
 (function () {
   'use strict';
@@ -18,7 +18,20 @@
     teilen: { id: 'teilen', label: 'Teilen', icon: 'right', variant: 'ghost' },
     nachfragen: { id: 'nachfragen', label: 'Nachfragen', icon: 'chat', variant: 'ghost' },
     loeschen: { id: 'loeschen', label: 'Löschen', icon: 'x', variant: 'ghost' },
+    eingreifen: { id: 'eingreifen', label: 'Stoppen und eingreifen', icon: 'shield', variant: 'ghost' },
   };
+  const LEVELS = ['Prüfen', 'Vorhersagen', 'Eingreifen'];
+  const AMPEL = { gruen: 'Grün · passt', gelb: 'Gelb · unklar', rot: 'Rot · Stopp' };
+  const gesamtAmpel = (p) => { const a = Object.values(p.hint).map((x) => x.ampel); return a.includes('rot') ? 'rot' : a.includes('gelb') ? 'gelb' : 'gruen'; };
+  /* Level 3: Eingreifen – was hilft wirklich? (vier helfen, zwei klingen gut, machen es aber schlimmer) */
+  const SCHRITTE = [
+    { k: 'stopp', t: 'Nicht weiterleiten', ok: true },
+    { k: 'beweis', t: 'Screenshot als Beweis behalten', ok: true },
+    { k: 'yara', t: 'Yara Bescheid sagen', ok: true },
+    { k: 'hilfe', t: 'Einer erwachsenen Person zeigen', ok: true },
+    { k: 'gruppe', t: 'In die Gruppe schicken: „Ist fake!“', ok: false, warum: 'Dann sehen noch mehr Leute das Bild.' },
+    { k: 'zurueck', t: 'Ein peinliches Bild von Sam posten', ok: false, warum: 'Rache macht aus einem Mobbing zwei.' },
+  ];
 
   /* Posts: acc = Absender, bg = Bild-Stil, text = Post, hint[frage] = {text, ampel: gruen|gelb|rot},
      folge[zug] = { text, mood }. gut = Züge, die zur Teilen-Bremse passen. */
@@ -73,13 +86,13 @@
       gut: ['teilen', 'nachfragen'],
     },
   ];
-  // Post 3 – immer: gefälschtes Bild einer Mitschülerin, aus der Klasse geschickt
+  // Letzter Post – immer: gefälschtes Bild einer Mitschülerin, aus der Klasse geschickt
   const POST_FAKE = {
     id: 'fake-bild', acc: 'sam', fig: true, seit: 'Sam an Mika · privat', bg: 'party', bild: 'Bild wird nicht gezeigt', likes: '🙈 nur Mika', fixed: true,
     text: 'omg schau dir Yara an 😂😂 (Bild: ein peinliches Sportfoto von Yara) – schick weiter, die Gruppe muss das sehen',
     hint: { wer: { text: 'Sam aus der Klasse. Aber Yara war an dem Tag gar nicht beim Sport – das weiß Mika.', ampel: 'rot' }, wo: { text: 'Das Bild gibt es nirgends sonst. Schau genau: sechs Finger an einer Hand, die Schrift im Hintergrund ist Brei. KI-Fälschung.', ampel: 'rot' }, wut: { text: 'Es will, dass Mika lacht – über Yara. Das ist der Haken: Lachen fühlt sich nicht wie Mobbing an. Ist es aber.', ampel: 'rot' } },
-    folge: { teilen: { text: 'Yara sieht das Bild am nächsten Tag. Yara kommt drei Tage nicht zur Schule. In der Weiterleitungs-Liste steht auch Mika.', mood: 'traurig' }, nachfragen: { text: 'Mika fragt Sam: „Ist das echt?“ Sam: „Nein lol, KI. Ist nur Spaß.“ Für Yara ist es kein Spaß. Und das Bild ist noch bei Sam.', mood: 'neutral' }, loeschen: { text: 'Gelöscht bei Mika. Bei Sam ist es noch. Und Yara weiß von nichts. Löschen allein reicht hier nicht.', mood: 'neutral' } },
-    gut: [],
+    folge: { eingreifen: { text: 'Mika leitet nicht weiter, behält einen Screenshot, sagt Yara Bescheid und zeigt es der Klassenlehrerin. Zwei Tage später ist das Bild überall gelöscht.', mood: 'froh' }, teilen: { text: 'Yara sieht das Bild am nächsten Tag. Yara kommt drei Tage nicht zur Schule. In der Weiterleitungs-Liste steht auch Mika.', mood: 'traurig' }, nachfragen: { text: 'Mika fragt Sam: „Ist das echt?“ Sam: „Nein lol, KI. Ist nur Spaß.“ Für Yara ist es kein Spaß. Und das Bild ist noch bei Sam.', mood: 'neutral' }, loeschen: { text: 'Gelöscht bei Mika. Bei Sam ist es noch. Und Yara weiß von nichts. Löschen allein reicht hier nicht.', mood: 'neutral' } },
+    gut: ['eingreifen'],
   };
 
   // Post-Karte im Glimmr-Look: Absender, Bild, Text, Daumen auf Senden
@@ -121,10 +134,11 @@
     async run(ctx) {
       await ctx.T.intro({
         rule: 'Ein Post, der Daumen liegt auf Senden. Kippt zu zweit die drei Prüffragen – dann entscheidet ihr mit zwei Fingern: Teilen, Nachfragen, Löschen.',
+        levels: LEVELS,
         steps: [
-          { icon: 'users', title: 'Zu zweit', text: 'Ein iPad in der Mitte. Abwechselnd eine Karte kippen.' },
-          { icon: 'eye', title: 'Drei Fragen', text: 'Wer sagt das? Gibt’s das woanders? Will mich der Post wütend machen?' },
-          { icon: 'timer', title: '24 Stunden später', text: 'Ihr seht, was aus eurer Entscheidung wird.' },
+          { icon: 'eye', title: 'Prüfen', text: 'Wer sagt das? Gibt’s das woanders? Will mich der Post wütend machen?' },
+          { icon: 'bolt', title: 'Vorhersagen', text: 'Erst schätzen: Grün, Gelb oder Rot? Dann kippen.' },
+          { icon: 'shield', title: 'Eingreifen', text: 'Beim letzten Post reicht Löschen nicht. Was hilft wirklich?' },
         ],
         probe: async () => {
           const w = ctx.scr([h('div', { class: 'probe-tag' }, 'PROBE · zählt nicht · 10 Sekunden'),
@@ -134,13 +148,26 @@
         },
       });
 
-      // Reihenfolge: zwei Posts aus dem Pool, dann IMMER das gefälschte Bild als Post 3, dann noch einer
+      // Reihenfolge: Level 1 ein Post, Level 2 zwei Posts mit Vorhersage, Level 3 IMMER das gefälschte Bild
       const pool = ctx.rshuffle(POSTS);
-      const posts = [pool[0], pool[1], POST_FAKE, pool[2]];
-      let bremse = 0, gespielt = 0;
+      const posts = [pool[0], pool[1], pool[2], POST_FAKE];
+      const lvlOf = (i) => (i === 0 ? 1 : posts[i].fixed ? 3 : 2);
+      let bremse = 0, gespielt = 0, treffer = 0, geholfen = 0;
       const wahl = [];
       for (let i = 0; i < posts.length; i++) {
         const p = posts[i];
+        const L = lvlOf(i);
+        if (i > 0 && lvlOf(i - 1) !== L) await ctx.T.level({ n: L, names: LEVELS, text: L === 2 ? 'Jetzt schätzt ihr zuerst: Ist der Post grün, gelb oder rot? Dann kippt ihr die Karten und vergleicht.' : 'Letzter Post. Er kommt aus der Klasse – und hier reicht Löschen nicht. Ihr greift ein.' });
+        // Level 2: Vorhersage vor dem Kippen
+        let tipp = null;
+        if (L === 2) {
+          const wV = ctx.scr([
+            postCard(ctx, p, i + 1, posts.length),
+            ctx.say('Erst schätzen, ohne Karten: Grün, Gelb oder Rot? Einigt euch.', { eyebrow: 'Vorhersage', small: true }),
+          ], { eyebrow: 'Post ' + (i + 1) + ' · Vorhersage', badge: ctx.stufe(2, LEVELS) });
+          tipp = await ctx.ask(wV, ['gruen', 'gelb', 'rot'].map((a) => ({ label: AMPEL[a], value: a, variant: 'ghost', id: 'ton-tipp-' + a })));
+          if (tipp === ctx.SKIP) tipp = null;
+        }
         const flipped = new Set();
         const card = postCard(ctx, p, i + 1, posts.length);
         const checks = checkCards(ctx, p, (id) => { flipped.add(id); if (flipped.size === FRAGEN.length) { btnSlot.classList.add('ready'); decide.disabled = false; CREW.sound.play('unlock'); } });
@@ -149,18 +176,22 @@
         const decided = new Promise((res) => { decide = CREW.ui.btn('Entscheiden', () => res(true), { iconRight: 'right', id: 'btn-decide', disabled: true }); });
         const btnSlot = h('div', { class: 'ton-ready row between' }, h('span', { class: 'muted small ton-ready-hint' }, 'Erst alle drei Karten kippen.'), decide);
         const w1 = ctx.scr([
-          T3Pair(card, h('div', { class: 'stack' }, ctx.say('Kippt abwechselnd die drei Prüffragen. Dann redet: Senden oder nicht?', { eyebrow: 'Teilen-Bremse', small: true }), checks, btnSlot)),
-        ], { eyebrow: 'Post ' + (i + 1) });
+          T3Pair(card, h('div', { class: 'stack' }, ctx.say('Kippt abwechselnd die drei Prüffragen. Dann redet: Senden oder nicht?', { eyebrow: 'Teilen-Bremse', small: true }), tipp ? h('div', { class: 'row' }, h('span', { class: 'pill' }, 'Eure Vorhersage: ' + AMPEL[tipp])) : null, checks, btnSlot)),
+        ], { eyebrow: 'Post ' + (i + 1), badge: ctx.stufe(L, LEVELS) });
         if (ctx.auto) setTimeout(() => { checks.querySelectorAll('.ton-check').forEach((c) => c.click()); decide.click(); }, 40);
         const r = await ctx.waitFor(decided);
         if (r === ctx.SKIP) { wahl.push(null); continue; }
 
         // Entscheidung: Teilen / Nachfragen / Löschen, dann beide Finger drauf
+        const ist = gesamtAmpel(p);
+        if (tipp && tipp === ist) treffer++;
         const w2 = ctx.scr([
           postCard(ctx, p, i + 1, posts.length),
+          tipp ? h('div', { class: 'card row', style: { gap: '10px', alignItems: 'center' } }, CREW.icon(tipp === ist ? 'check' : 'shuffle', 22), h('span', null, 'Vorhersage: ' + AMPEL[tipp] + ' · Karten: ' + AMPEL[ist] + (tipp === ist ? ' – Vorhersage stimmt.' : ' – anders als gedacht.'))) : null,
           ctx.say('Der Daumen liegt auf Senden. Was macht ihr?', { eyebrow: 'Entscheidung', small: true }),
-        ], { eyebrow: 'Post ' + (i + 1) + ' · Entscheidung' });
-        const z = await ctx.ask(w2, Object.values(ZUEGE).map((x) => ({ label: x.label, value: x.id, icon: x.icon, variant: x.variant, id: 'zug-' + x.id })));
+        ], { eyebrow: 'Post ' + (i + 1) + ' · Entscheidung', badge: ctx.stufe(L, LEVELS) });
+        const zuege = Object.values(ZUEGE).filter((x) => x.id !== 'eingreifen' || p.fixed);
+        const z = await ctx.ask(w2, zuege.map((x) => ({ label: x.label, value: x.id, icon: x.icon, variant: x.variant, id: 'zug-' + x.id })), p.fixed ? { autoPick: () => 'eingreifen' } : undefined);
         if (z === ctx.SKIP) { wahl.push(null); continue; }
         const w3 = ctx.scr([
           h('div', { class: 'ton-decision' }, CREW.icon(ZUEGE[z].icon, 28), h('b', null, ZUEGE[z].label)),
@@ -177,10 +208,10 @@
           h('div', { class: 'ton-later' }, CREW.icon('timer', 22), h('b', null, '24 Stunden später')),
           ctx.figureCard({ fig: p.fig ? 'yara' : 'mika', mood: f.mood, text: f.text, eyebrow: ZUEGE[z].label + ' · die Folge' }),
           p.fixed ? null : h('p', { class: 'muted small' }, p.gut.includes(z) ? 'Teilen-Bremse gezogen. Prüfen vor Senden – das war’s.' : 'Kein „falsch“. Schaut nochmal auf die drei Karten: Welche hätte euch gebremst?'),
-        ], { eyebrow: 'Post ' + (i + 1) + ' · Folge' });
-        await ctx.next(w4, p.fixed ? 'Weiter' : i + 1 < posts.length ? 'Nächster Post' : 'Fertig');
+        ], { eyebrow: 'Post ' + (i + 1) + ' · Folge', badge: ctx.stufe(L, LEVELS) });
+        await ctx.next(w4, p.fixed ? 'Weiter' : i + 1 < posts.length ? 'Nächster Post' : 'Weiter');
 
-        // Post 3: die Grenze – Fälschung ist Mobbing und kann strafbar sein
+        // Letzter Post: die Grenze – Fälschung ist Mobbing und kann strafbar sein
         if (p.fixed) {
           const w5 = ctx.scr([
             h('div', { class: 'ton-redflag' }, CREW.icon('shield', 36), h('div', { class: 'stack', style: { gap: '4px' } }, h('span', { class: 'eyebrow' }, 'Red Flag · klare Grenze'), h('h2', null, 'Gefälschtes Bild = Mobbing. Und es kann strafbar sein.'))),
@@ -189,18 +220,45 @@
               h('div', { class: 'card stack' }, h('b', null, 'Der starke Zug'), h('p', { class: 'muted' }, 'Nicht weiterleiten. Screenshot als Beweis behalten. Yara Bescheid sagen. Einer erwachsenen Person zeigen – Lehrkraft oder BEE SECURE.'))),
             h('p', { class: 'muted small' }, 'Wenn dich das gerade selbst betrifft: X-Karte oder Hilfe oben. Erfundener Post, echte Hilfe.'),
             ctx.helpCard({ title: 'Wenn so etwas bei euch passiert', text: 'Du musst das nicht allein lösen. Anonym und kostenlos:' }),
-          ], { eyebrow: 'Post 3 · Grenze' });
+          ], { eyebrow: 'Post ' + (i + 1) + ' · Grenze', badge: ctx.stufe(3, LEVELS) });
           await ctx.next(w5, 'Verstanden');
+          geholfen = await eingreifen(ctx);
         }
       }
 
       return {
         summary: bremse >= 3 ? 'Teilen-Bremse funktioniert: Drei Fragen, dann erst der Daumen.' : 'Drei Fragen vor dem Senden. Jeder Post, der nicht weitergeht, ist ein Gewinn.',
-        stats: [[gespielt, 'Posts geprüft'], [bremse, 'mal Bremse gezogen']],
+        stats: [[gespielt, 'Posts geprüft'], [bremse, 'mal Bremse gezogen'], [treffer, 'Vorhersagen stimmten'], [geholfen, 'von 4 Hilfe-Schritten gefunden']],
         help: true,
       };
     },
   });
+
+  /* Level 3: Was hilft Yara wirklich? Mehrfach wählen, zwei Finger, dann Auflösung */
+  async function eingreifen(ctx) {
+    const sel = new Set();
+    const row = h('div', { class: 'row', style: { gap: '8px' } }, ctx.rshuffle(SCHRITTE).map((x) => {
+      const b = h('button', { type: 'button', class: 'chip', 'data-eingreifen': x.k }, x.t);
+      b.addEventListener('click', () => { CREW.sound.play('tap'); if (sel.has(x.k)) sel.delete(x.k); else sel.add(x.k); b.classList.toggle('sel', sel.has(x.k)); });
+      return b;
+    }));
+    const w = ctx.scr([
+      ctx.say('Mika will Yara helfen. Was hilft wirklich? Wählt alles, was passt.', { eyebrow: 'Eingreifen', small: true }),
+      h('div', { class: 'card stack' }, row, h('p', { class: 'muted small' }, 'Redet kurz: Was macht es besser – und was nur lauter?')),
+    ], { eyebrow: 'Eingreifen', badge: ctx.stufe(3, LEVELS) });
+    if (ctx.auto) SCHRITTE.filter((x) => x.ok).forEach((x) => row.querySelector('[data-eingreifen="' + x.k + '"]').click());
+    if ((await ctx.T.twoFinger(w, { label: 'Beide: Finger drauf', hint: 'Erst wählen, dann zwei Finger.' })) === ctx.SKIP) return 0;
+    const gut = SCHRITTE.filter((x) => x.ok && sel.has(x.k)).length;
+    const w2 = ctx.scr([
+      h('div', { class: 'stack' }, SCHRITTE.map((x) => h('div', { class: 'card row', style: { gap: '10px', alignItems: 'center' } },
+        CREW.icon(x.ok ? 'check' : 'x', 22),
+        h('span', null, h('b', null, x.t), x.ok ? (sel.has(x.k) ? ' – gewählt. Stark.' : ' – hilft auch.') : ' – ' + x.warum)))),
+      h('div', { class: 'row' }, h('span', { class: 'skill-chip karte' }, CREW.icon('sparkle', 14), 'Skill-Karte „Teilen-Bremse“')),
+    ], { eyebrow: 'Eingreifen', badge: ctx.stufe(3, LEVELS) });
+    CREW.sound.play(gut >= 3 ? 'great' : 'good');
+    await ctx.next(w2, 'Weiter');
+    return gut;
+  }
 
   // Zwei Spalten für ein iPad in der Mitte (nebeneinander sitzen, nicht gegenüber)
   function T3Pair(left, right) {

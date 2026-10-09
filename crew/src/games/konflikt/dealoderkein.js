@@ -45,6 +45,9 @@
     },
   ];
 
+  const LEVELS = ['Wissen', 'Fragen', 'Perspektive'];
+  const FRAGEHILFEN = ['„Warum ist dir das wichtig?“', '„Was wäre das Schlimmste für dich?“', '„Ab wann wäre es okay?“', '„Was brauchst du mindestens?“'];
+
   // Geheim-Karte eines Teams: nur für dieses Team
   function needCard(ctx, side, team) {
     return ctx.figureCard({ fig: side.fig, mood: 'neutral', text: side.braucht, eyebrow: 'Geheim · nur Team ' + team + ' · Das braucht ' + CREW.games.figures[side.fig].name + ' wirklich', extra: h('p', { class: 'muted small' }, 'Verratet es nicht direkt. Lasst das andere Team FRAGEN.') });
@@ -70,10 +73,11 @@
 
       await ctx.T.intro({
         rule: 'Zwei Figuren, zwei Teams. Jedes Team kennt heimlich, was seine Figur braucht. Fragt, bevor ihr einen Deal nennt.',
+        levels: LEVELS,
         steps: [
-          { icon: 'users', title: 'Zwei Teams', text: 'Team A spricht für ' + A.name + ', Team B für ' + B.name + '.' },
-          { icon: 'eyeOff', title: 'Geheim-Karte', text: 'Was braucht eure Figur wirklich?' },
-          { icon: 'chat', title: '90 Sekunden', text: 'Mindestens eine Frage pro Team, dann der Deal.' },
+          { icon: 'eyeOff', title: 'Wissen', text: 'Geheim-Karte: Was braucht eure Figur wirklich?' },
+          { icon: 'chat', title: 'Fragen', text: '90 Sekunden. Mindestens eine Frage pro Team.' },
+          { icon: 'users', title: 'Perspektive', text: 'Sagt, was die ANDERE Figur braucht. Dann der Deal.' },
         ],
         probe: ctx.T.probeCard('Probe: Team A will Pizza, Team B will Pasta. Eine Frage, die hilft? Tippt eine – zählt nicht.', [{ label: '„Warum Pasta?“', value: 1, variant: 'ghost' }, { label: '„Pizza ist besser!“', value: 2, variant: 'ghost' }]),
       });
@@ -91,13 +95,13 @@
         ctx.say('Jedes Team bekommt eine Geheim-Karte: Was braucht eure Figur wirklich?', { eyebrow: 'Geheim-Karten', small: true }),
         h('div', { class: 'card' }, qr),
         h('p', { class: 'muted small' }, 'Ohne Team-iPads: „Am Lehrer-iPad zeigen“ – erst schaut nur Team A, dann nur Team B.'),
-      ], { eyebrow: 'Geheim-Karten' });
+      ], { eyebrow: 'Geheim-Karten', badge: ctx.stufe(1, LEVELS) });
       const how = await ctx.ask(w2, [{ label: 'Am Lehrer-iPad zeigen', value: 'here', variant: 'ghost', icon: 'eyeOff' }, { label: 'Teams haben gescannt', value: 'qr', iconRight: 'right' }]);
       if (how === 'here') {
         for (const team of ['A', 'B']) {
           const c = await ctx.T.cover({ who: 'Nur Team ' + team + ' schaut', hint: 'Team ' + (team === 'A' ? 'B' : 'A') + ' dreht sich um. Dann tippen.', eyebrow: 'Geheim-Karte ' + team });
           if (c === ctx.SKIP) continue;
-          const w3 = ctx.scr([needCard(ctx, fall[team], team)], { eyebrow: 'Geheim-Karte ' + team });
+          const w3 = ctx.scr([needCard(ctx, fall[team], team)], { eyebrow: 'Geheim-Karte ' + team, badge: ctx.stufe(1, LEVELS) });
           await ctx.next(w3, 'Gelesen, wegdrehen');
         }
       }
@@ -110,17 +114,38 @@
           h('div', { class: 'fig-card', style: { '--fc': A.colour } }, h('div', { class: 'fig-side' }, CREW.games.avatar(A, 'neutral', 72), h('b', { class: 'fig-name' }, 'Team A')), h('div', { class: 'fig-body' }, h('b', null, A.name + ' ' + fall.A.will), askBtn('A'))),
           h('div', { class: 'fig-card', style: { '--fc': B.colour } }, h('div', { class: 'fig-side' }, CREW.games.avatar(B, 'neutral', 72), h('b', { class: 'fig-name' }, 'Team B')), h('div', { class: 'fig-body' }, h('b', null, B.name + ' ' + fall.B.will), askBtn('B')))),
         h('div', { class: 'row between' }, ctx.say('Verhandelt. Jede Seite stellt mindestens eine Frage, bevor sie den Deal nennt.', { eyebrow: '90 Sekunden', small: true }), slot),
-        CREW.ui.teacherLine('Häkchen setzen, sobald ein Team gefragt hat. Dann „Deal nennen“.'),
-      ], { eyebrow: 'Verhandlung' });
+        h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Fragehilfen'), h('div', { class: 'row', style: { gap: '8px' } }, FRAGEHILFEN.map((x) => h('span', { class: 'chip' }, x)))),
+        CREW.ui.teacherLine('Häkchen setzen, sobald ein Team gefragt hat. Dann „Weiter“.'),
+      ], { eyebrow: 'Verhandlung', badge: ctx.stufe(2, LEVELS) });
       if (ctx.auto) { asked.A = true; asked.B = true; }
-      const r = await ctx.timerOrButton(w4, 90, [{ label: 'Deal nennen', value: 'deal', iconRight: 'right', id: 'btn-deal' }], { slot });
+      const r = await ctx.timerOrButton(w4, 90, [{ label: 'Weiter', value: 'deal', iconRight: 'right', id: 'btn-deal' }], { slot });
       if (r === ctx.SKIP) return { summary: 'Abgebrochen. Auch okay.' };
       if (!asked.A || !asked.B) {
         const w5 = ctx.scr([ctx.say('Halt: ' + (!asked.A && !asked.B ? 'Beide Teams' : 'Team ' + (!asked.A ? 'A' : 'B')) + ' haben noch nicht gefragt. Eine Frage, dann der Deal.', { eyebrow: 'Erst fragen' })], { eyebrow: 'Verhandlung', center: true });
         await ctx.next(w5, 'Gefragt, weiter');
       }
+      // Level 3: Perspektive – jedes Team sagt, was die ANDERE Figur braucht. Dann aufdecken.
+      await ctx.T.level({ n: 3, names: LEVELS, text: 'Bevor der Deal kommt: Jedes Team sagt in einem Satz, was die ANDERE Figur wirklich braucht.' });
+      const gesagt = { A: false, B: false };
+      const sagBtn = (team) => { const b = CREW.ui.btn('Gesagt', () => { gesagt[team] = true; b.classList.add('good'); b.disabled = true; }, { small: true, variant: 'ghost', icon: 'check', id: 'persp-' + team }); return b; };
+      const wP = ctx.scr([
+        h('div', { class: 'grid two' },
+          h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Team A sagt'), h('b', { class: 'lead' }, '„' + B.name + ' braucht eigentlich …“'), sagBtn('A')),
+          h('div', { class: 'card stack' }, h('span', { class: 'eyebrow' }, 'Team B sagt'), h('b', { class: 'lead' }, '„' + A.name + ' braucht eigentlich …“'), sagBtn('B'))),
+        h('p', { class: 'muted small' }, 'Nicht was die Figur WILL – was sie BRAUCHT. Raten ist erlaubt.'),
+      ], { eyebrow: 'Perspektive', badge: ctx.stufe(3, LEVELS) });
+      if (ctx.auto) { gesagt.A = true; gesagt.B = true; }
+      await ctx.next(wP, 'Aufdecken', { id: 'btn-aufdecken' });
+      const wA = ctx.scr([
+        h('div', { class: 'grid two' },
+          ctx.figureCard({ fig: fall.A.fig, mood: 'neutral', text: fall.A.braucht, eyebrow: 'Das braucht ' + A.name + ' wirklich' }),
+          ctx.figureCard({ fig: fall.B.fig, mood: 'neutral', text: fall.B.braucht, eyebrow: 'Das braucht ' + B.name + ' wirklich' })),
+        ctx.say('Lag das andere Team nah dran? Mit beiden Bedürfnissen auf dem Tisch: Welcher Deal passt?', { eyebrow: 'Aufgedeckt', small: true }),
+      ], { eyebrow: 'Perspektive', badge: ctx.stufe(3, LEVELS) });
+      await ctx.next(wA, 'Deal nennen');
+
       // Der Deal (Lehrkraft tippt einmal), beide Figuren reagieren
-      const w6 = ctx.scr([ctx.say('Welcher Deal steht?', { eyebrow: 'Deal' }), CREW.ui.teacherLine('Den Deal der Crew einmal antippen.')], { eyebrow: 'Deal' });
+      const w6 = ctx.scr([ctx.say('Welcher Deal steht?', { eyebrow: 'Deal' }), CREW.ui.teacherLine('Den Deal der Crew einmal antippen.')], { eyebrow: 'Deal', badge: ctx.stufe(3, LEVELS) });
       const d = await ctx.ask(w6, fall.deals.map((x) => ({ label: x.label, value: x.id, variant: x.both ? 'good' : 'ghost' })));
       const deal = fall.deals.find((x) => x.id === d) || fall.deals[3];
       const moodA = deal.both ? 'froh' : deal.winner === 'A' ? 'froh' : deal.winner === 'B' ? 'traurig' : 'wut';
@@ -133,8 +158,8 @@
         h('p', { class: 'muted' }, deal.both ? 'Beide Bedürfnisse drin. Das ist ein Deal.' : 'Kurz reden: Welche Frage hätte den „Beide okay“-Deal gefunden? Verlieren gehört dazu – beim nächsten Fall tauschen die Teams.'),
       ], { eyebrow: 'Reaktion' });
       if (deal.both) { CREW.sound.play('great'); if (!ctx.fast) CREW.ui.confetti(120); }
-      await ctx.next(w7, 'Fertig');
-      return { summary: deal.both ? 'Beide okay. Ihr habt das Bedürfnis hinter dem Wunsch gefunden.' : 'Ein Deal ist erst gut, wenn beide damit leben können.', stats: [[(asked.A ? 1 : 0) + (asked.B ? 1 : 0), 'Teams haben gefragt']] };
+      await ctx.next(w7, 'Weiter');
+      return { summary: deal.both ? 'Beide okay. Ihr habt das Bedürfnis hinter dem Wunsch gefunden.' : 'Ein Deal ist erst gut, wenn beide damit leben können.', stats: [[(asked.A ? 1 : 0) + (asked.B ? 1 : 0), 'Teams haben gefragt'], [(gesagt.A ? 1 : 0) + (gesagt.B ? 1 : 0), 'Teams haben die andere Seite benannt']] };
     },
   });
 })();
