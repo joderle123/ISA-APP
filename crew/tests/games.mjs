@@ -147,6 +147,86 @@ for (const [vpName, vp] of [['ipadLandscape', VIEWPORTS.ipadLandscape], ['beamer
     // Zwei Brillen: jeder richtige Chip (ABCD) steht wörtlich in mindestens zwei Quellen (q), jede Szene hat mindestens zwei
     const zbOk = await page.evaluate(() => { const g = window.CREW.games.get('zwei-brillen'); if (!g || !g.szenen) return 'fehlt'; const bad = []; g.szenen.forEach((sz) => { const ok = sz.chips.filter((c) => c.fits === 'ABCD'); if (ok.length < 2) bad.push(sz.id + ': <2 richtige'); ok.forEach((c) => { if (!c.q || c.q.length < 2) bad.push(sz.id + ': „' + c.t + '“ ohne zwei Quellen'); }); sz.chips.filter((c) => c.fits !== 'ABCD').forEach((c) => { if (c.q) bad.push(sz.id + ': „' + c.t + '“ hat q, ist aber nicht ABCD'); }); }); return bad.length ? bad.join('; ') : 'ok'; });
     expect(zbOk === 'ok' || (ONLY && zbOk === 'fehlt'), 'zwei-brillen: ' + zbOk);
+    // Gefühle verstehen + Anspannung & Skills: Inhalte passen zur Spielidee (Daten, die die Spiele für den Test zeigen)
+    const skillsOk = await page.evaluate(() => {
+      const G = (id) => window.CREW.games.get(id);
+      const bad = [];
+      const fw = G('fruehwarn');
+      if (fw) {
+        ['wut', 'angst', 'schnell'].forEach((gr) => { if (!fw.szenen.some((s) => s.gruppe === gr)) bad.push('fruehwarn: keine Szene „' + gr + '“'); });
+        fw.szenen.forEach((s) => {
+          s.beats.forEach((b, i) => { if (!fw.signale[b.s]) bad.push('fruehwarn ' + s.id + ': Signal ' + b.s + ' fehlt'); if (i && b.p <= s.beats[i - 1].p) bad.push('fruehwarn ' + s.id + ': Balken steigt nicht'); });
+          if (fw.signale[s.beats[0].s] && fw.signale[s.beats[0].s].laut) bad.push('fruehwarn ' + s.id + ': erstes Signal ist laut (erst leise, dann laut)');
+          if (s.gruppe === 'schnell' && s.beats[0].p < 40) bad.push('fruehwarn ' + s.id + ': Level 3 startet nicht bei Gelb');
+        });
+        if (fw.moveFit('reden', 75) !== 'nein' || fw.moveFit('koerper', 80) !== 'gut' || fw.moveFit('kopf', 30) !== 'gut') bad.push('fruehwarn: Mini-Moves passen nicht zur Zahl');
+      }
+      const mx = G('mixer');
+      if (mx) {
+        const ids = mx.gefuehle.map((g) => g.id);
+        if (new Set(mx.gefuehle.map((g) => g.col)).size !== ids.length) bad.push('mixer: Farben doppelt');
+        mx.situationen.forEach((s) => s.hoch.concat(s.runter).forEach((id) => { if (!ids.includes(id)) bad.push('mixer ' + s.id + ': unbekanntes Gefühl ' + id); }));
+      }
+      const ia = G('innen-aussen');
+      if (ia) {
+        const f85 = ia.figuren.find((f) => f.id === 'chat85');
+        if (!f85 || f85.zahl !== 85 || f85.typ !== 'versteckt') bad.push('innen-aussen: die ruhige 85er-Figur fehlt');
+        ia.figuren.filter((f) => f.typ === 'versteckt').forEach((f) => { if (f.zahl < 70 || !f.zeichen || f.zeichen.length < 2 || !f.falsch) bad.push('innen-aussen ' + f.id + ': versteckt braucht Zahl ≥ 70, Zeichen und ein falsches Zeichen'); });
+        ia.figuren.filter((f) => f.typ === 'laut').forEach((f) => { if (f.zahl >= 40) bad.push('innen-aussen ' + f.id + ': laut, aber innen hoch'); });
+      }
+      const uc = G('undercover');
+      if (uc) {
+        ['b40', 'b70', 'ue70'].forEach((k) => { if (!uc.skills.some((s) => s.reicht === k)) bad.push('undercover: kein Skill „' + k + '“'); });
+        if (uc.skills.filter((s) => s.leicht).length < 2 || uc.orte.length < 3) bad.push('undercover: zu wenig leichte Skills oder Orte');
+      }
+      const sj = G('sinnesjagd');
+      if (sj) {
+        sj.faecher.forEach((f) => { if (!sj.auftraege[f.id] || sj.auftraege[f.id].length < 3) bad.push('sinnesjagd: Fach ' + f.id + ' hat zu wenig Aufträge'); });
+        sj.orte.forEach((o) => { if (o.opts.length !== 4 || !o.opts.some((x) => x.fit === 'gut') || !o.opts.some((x) => x.fit === 'schwierig')) bad.push('sinnesjagd ' + o.id + ': braucht 4 Optionen, mindestens eine gute und eine schwierige'); });
+      }
+      const gr = G('gelb-rot');
+      if (gr) {
+        gr.lagen.forEach((l) => { if (!gr.kopf[l.skill]) bad.push('gelb-rot ' + l.id + ': Kopf-Skill fehlt'); if (l.zahl >= 70 && !l.danach) bad.push('gelb-rot ' + l.id + ': Rot ohne „erst Körper, dann Kopf“'); });
+        if (!gr.lagen.some((l) => l.zahl < 70 && l.zahl >= 62) || !gr.lagen.some((l) => l.zahl >= 70 && l.zahl <= 78)) bad.push('gelb-rot: keine knappen Lagen an 70');
+      }
+      const aw = G('ampel-woche');
+      if (aw) {
+        if (aw.tage.length !== 5 || !aw.tage[4].ernst || aw.tage[4].zahl < 70) bad.push('ampel-woche: Freitag muss rot und ernst sein');
+        if (aw.wirkung('kopf', { zahl: 80 }, 'X').fit !== 'zufrueh' || aw.wirkung('erwachsen', aw.tage[4], 'X').fit !== 'best') bad.push('ampel-woche: Wirkung passt nicht zum Ampelplan');
+      }
+      const kp = G('kipp-punkt');
+      if (kp) {
+        kp.szenen.forEach((s) => { if (s.ausloeser.length !== 6 || s.braucht.length !== 2) bad.push('kipp-punkt ' + s.id + ': 6 Auslöser und 2 Bedürfnisse erwartet'); });
+        if (kp.zugWirkung('satz', 75).d <= 0 || kp.zugWirkung('satz', 50).d >= 0 || kp.zugWirkung('skill', 60).d >= 0) bad.push('kipp-punkt: „Satz“ muss unter 60 bremsen und über 70 anheizen');
+        for (let n = 4; n <= 6; n++) { let z = 1; const seen = []; for (let i = 0; i < n; i++) { seen.push(z); z = kp.dreh(z, n); } if (z !== 1 || new Set(seen).size !== n) bad.push('kipp-punkt: Weitergabe bei n=' + n); }
+      }
+      const bo = G('blackout');
+      if (bo) {
+        if (bo.lesbar(35) !== 100 || bo.lesbar(90) > 15 || !bo.stellen[3].blackout) bad.push('blackout: Lesbarkeit oder Blackout-Stelle falsch');
+        if (bo.wirkung('leicht', 80).d < -5 || bo.wirkung('fuss', 90).d >= 0 || bo.wirkung('zuende', 60).d >= 0) bad.push('blackout: Züge wirken nicht je nach Zahl');
+      }
+      const mo = G('mein-ort');
+      if (mo) {
+        const B = Object.fromEntries(mo.bausteine.map((b) => [b.id, b.opts.map((o) => o.id)]));
+        B.ort.forEach((ort) => B.licht.forEach((licht) => B.wetter.forEach((wetter) => {
+          const svg = mo.szeneSvg({ ort, licht, wetter, temp: 'warm', klang: [], ding: B.ding[0] });
+          if (!/^<svg/.test(svg) || /undefined|NaN/.test(svg)) bad.push('mein-ort: Szene ' + [ort, licht, wetter].join('/') + ' kaputt');
+        })));
+        if (mo.gueltig({ ort: 'mond', licht: 'nacht', wetter: 'klar', temp: 'warm', klang: [], ding: 'tasse' }) || mo.gueltig({ ort: 'strand', licht: 'nacht', wetter: 'klar', temp: 'warm', klang: ['meer', 'zug', 'wind', 'regen'], ding: 'tasse' })) bad.push('mein-ort: ungültiges Rezept wird angenommen');
+      }
+      if (!fw && !mx && !ia && !uc && !sj && !gr && !aw && !kp && !bo && !mo) return 'fehlt';
+      return bad.length ? bad.join('; ') : 'ok';
+    });
+    expect(skillsOk === 'ok' || (ONLY && skillsOk === 'fehlt'), 'gefuehle/skills: ' + skillsOk);
+    // Finder: Einheiten, deren Katalog-Spiel jetzt gebaut ist, zeigen es oben – ohne Ersatz-Variante
+    for (const [unit, gid] of [['j1-e09', 'fruehwarn'], ['j1-e10', 'mixer'], ['j1-e12', 'undercover'], ['j1-e13', 'sinnesjagd'], ['j1-e14', 'gelb-rot']]) {
+      if (ONLY && !ONLY.includes(gid)) continue;
+      await page.selectOption('#finder-unit', unit);
+      await page.waitForTimeout(120);
+      expect((await page.locator('.game-row').first().getAttribute('data-game')) === gid, `finder: ${unit} zeigt ${gid} nicht oben`);
+      expect((await page.locator('.unit-card').getAttribute('data-alt')) === '', `finder: ${unit} zeigt noch eine Ersatz-Variante`);
+      expect(await page.locator('#play-' + gid + ':enabled').count() === 1, `finder: ${unit} Spielen-Knopf für ${gid} fehlt`);
+    }
     await page.selectOption('#finder-unit', '');
     await page.locator('[data-chip="format-bewegung"]').click();
     await page.waitForTimeout(150);

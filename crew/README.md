@@ -91,6 +91,9 @@ Look, Crew-Name, Ton und Vorlesen einstellen und den Fortschritt sichern.
 - Der Spielstand liegt **nur auf diesem Gerät** (im Browser). Es gibt keinen Server.
 - Neu gespeichert wird nur das gewählte **Stopp-Zeichen** der Crew (eine Kennung wie `hand`). Eigene Zeichen
   aus „Stummer Aufbau“, Anspannungs-Zahlen der Chill-Zone, Konter, Gründe und Pläne in den Spielen werden **nicht** gespeichert.
+  Auch der Skills-Koffer der „Ampel-Woche“ und die Zahlen vorher/nachher bleiben nur auf dem Bildschirm.
+- „Mein Ort“: Das Rezept (nur Bausteine wie `strand`, `abend`, `meer`) wird **nur auf Wunsch** auf diesem Gerät gemerkt
+  („Auf diesem iPad merken“) und mit „Vergessen“ gelöscht. Auf geteilten iPads lieber nicht merken.
 - **Sichern:** Lehrermodus → „Fortschritt“ → Sicherungscode kopieren oder als Datei speichern.
   Auf einem anderen Gerät unter „Laden“ einfügen.
 
@@ -109,20 +112,20 @@ nie über die Jugendlichen. Teilen ist freiwillig, **Pass** steht auf jedem Bild
 - Ist das Katalogspiel einer Einheit noch nicht gebaut, zeigt der Finder automatisch den **besten gebauten Ersatz**
   (gleiches Thema, gleiche ELDiB-Codes). Es gibt nie einen toten Link.
 
-### Gebaute Spiele (28 von 62, ★ = Favorit)
+### Gebaute Spiele (38 von 62, ★ = Favorit)
 
 | Thema | Spiele |
 |---|---|
 | Ankommen & Crew | Probelauf · Regel-Radar · Frag weiter! · Pilot & Navigator ★ · Stummer Aufbau · Stärken-Spion ★ · Crew-Rat ★ · Erster Eindruck ★ · Echte Freunde? |
 | Ich: Bedürfnisse & Stärken | Tank-Detektiv ★ · Was steckt dahinter? · Kleiner Schritt ★ · Je nach Ort · Zwei Brillen ★ · Stärke im Einsatz ★ · Vergleichs-Falle |
-| Gefühle verstehen | Gefühls-Funk · Pult-Tausch ★ |
-| Anspannung & Skills | Pegel-Reihe ★ · Skill-Sprechstunde ★ |
+| Gefühle verstehen | Gefühls-Funk · Pult-Tausch ★ · Frühwarn-Radar ★ · Gefühls-Mixer |
+| Anspannung & Skills | Pegel-Reihe ★ · Innen/Außen ★ · Undercover-Skill ★ · Sinnes-Jagd · Gelb oder Rot? · Skill-Sprechstunde ★ · Ampel-Woche · Kipp-Punkt ★ · Blackout · Mein Ort |
 | Gedanken & Glaubenssätze | Gedanken-Weiche ★ · Tatsache oder Urteil? ★ |
 | Kommunikation & Grenzen | Funkstille – der Chat kippt ★ · Hitze-Ecken ★ |
 | Konflikt, Druck & Mobbing | Story-Staffel: Der Streit ★ · Deal oder kein Deal ★ · Druck-Chat ★ |
 | Digital, Gesundheit & Abschluss | Teilen oder nicht? ★ |
 
-Die übrigen 34 Spiele stehen mit Ablauf und Kritik-Notizen in `docs/SPIELEKATALOG.md` und erscheinen in der App als „bald“.
+Die übrigen 24 Spiele stehen mit Ablauf und Kritik-Notizen in `docs/SPIELEKATALOG.md` und erscheinen in der App als „bald“.
 Eine Kurzvorstellung für Kollegium und Leitung: `docs/VORSTELLUNG.md`.
 
 ### Sieben Formate
@@ -190,6 +193,9 @@ Alles steckt in dieser einen Datei (auch Schriften und Grafiken).
 
 Eine Datei `src/games/<thema>/<id>.js` (optional `<id>.css`) – build.js bindet alles unter `src/games/**` automatisch ein.
 Themen-Ordner: ankommen, ich, gefuehle, skills, gedanken, kommunikation, konflikt, digital. Die `id` ist die aus dem Katalog.
+Gemeinsame Bausteine für Gefühle- und Skills-Spiele (kein eigenes Spiel): `src/games/skills/skills-kit.js` mit
+`CREW.skillsKit` – Ampel (`stufe`, `AMPEL`), Körper-Silhouette mit leuchtenden Zonen (`koerper`), Zahl vorher/nachher
+(`pegelWahl`) und ein kleines WebAudio-Mischpult (`klang.mixer`, hält bei Pause an, räumt sich beim Spielende selbst auf).
 
 ```js
 CREW.registerGame({

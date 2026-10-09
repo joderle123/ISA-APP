@@ -1,0 +1,23 @@
+/* Gelb oder Rot?: Lage-Karte mit Zahl und Kopf-Skill, Wände, Treppe „erst Körper, dann Kopf“ */
+.gr-karte { display: grid; grid-template-columns: 1fr minmax(190px, 260px); gap: 12px; align-items: stretch; }
+.gr-karte > .fig-card { margin: 0; }
+.gr-seite { display: flex; flex-direction: column; gap: 10px; }
+.gr-zahl { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 12px; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--amp, var(--panel)); color: var(--amp-ink, var(--text)); box-shadow: 0 var(--lift) 0 var(--line); }
+.gr-zahl .eyebrow { color: inherit; opacity: .8; }
+.gr-zahl b.display { font-size: clamp(2.6em, 6vw, 4em); line-height: 1; }
+.gr-zahl.verdeckt { flex-direction: row; gap: 8px; color: var(--muted); background: repeating-linear-gradient(135deg, var(--panel2) 0 8px, var(--bg) 8px 16px); min-height: 90px; }
+.gr-skill { display: flex; flex-direction: column; gap: 4px; padding: 12px; border-radius: var(--radius); border: var(--bw) solid var(--line); background: color-mix(in srgb, var(--accent) 18%, var(--panel)); flex: 1; }
+.gr-skill b { font-family: var(--font-display); font-size: 1.25em; }
+.gr-signale { display: flex; gap: 8px; align-items: flex-start; margin: 0; padding: 10px 12px; border-radius: var(--radius-sm); background: color-mix(in srgb, var(--yellow) 15%, var(--bg)); border: 2px solid var(--line); }
+.gr-signale .ic { color: var(--yellow); flex: none; margin-top: 2px; }
+.gr-waende { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.gr-wand { display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; padding: 22px 16px; border-radius: calc(var(--radius) + 6px); border: var(--bw) solid var(--line); background: var(--amp); color: var(--amp-ink); box-shadow: 0 var(--lift) 0 var(--line); }
+.gr-wand b.display { font-size: clamp(2.4em, 6vw, 4em); line-height: 1; }
+.gr-wand p { margin: 0; font-weight: 600; }
+.amp-pill.gr-big { font-size: 1.3em; padding: 8px 22px; }
+.gr-treppe { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; }
+.gr-stufe { display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 120px; max-width: 220px; padding: 10px 14px; text-align: center; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--amp); color: var(--amp-ink); box-shadow: 0 var(--lift) 0 var(--line); }
+.gr-stufe b { font-family: var(--font-display); font-size: 2em; line-height: 1; }
+.gr-stufe span { font-size: .85em; font-weight: 700; }
+@media (max-width: 760px) { .gr-karte { grid-template-columns: 1fr; } .gr-seite { flex-direction: row; } .gr-seite > * { flex: 1; } }
+@media (max-width: 480px) { .gr-seite { flex-direction: column; } .gr-waende { grid-template-columns: 1fr; } }

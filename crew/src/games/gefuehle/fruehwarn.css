@@ -1,0 +1,32 @@
+/* Frühwarn-Radar: Bühne mit Körper, Story, Signal-Log, Stopp-Zahl und Streifen */
+.fw-stage { display: grid; grid-template-columns: minmax(110px, 170px) 1fr; gap: 16px; align-items: start; background: var(--panel); border: var(--bw) solid var(--line); border-radius: calc(var(--radius) + 6px); box-shadow: 0 var(--lift) 0 var(--line); padding: clamp(12px, 2vw, 22px); }
+.fw-stage.small { grid-template-columns: minmax(80px, 120px) 1fr; background: transparent; border: 0; box-shadow: none; padding: 0; align-items: center; }
+.fw-stage .kk-body { width: 100%; }
+.fw-bodycol { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.fw-main { min-width: 0; }
+.fw-storyrow { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: center; }
+.fw-fig { line-height: 0; }
+.fw-story { font-family: var(--font-display); font-size: clamp(1.2em, 1.6vw + 0.6em, 1.9em); line-height: 1.2; text-wrap: balance; min-height: 2.4em; }
+.fw-siglog { display: flex; flex-wrap: wrap; gap: 6px; }
+.fw-sig { cursor: default; }
+.fw-sig .ic { color: var(--yellow); }
+.fw-sig.laut { background: color-mix(in srgb, var(--hot) 30%, var(--panel)); }
+.fw-sig.laut .ic { color: var(--hot); }
+.fw-verdeckt { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border: 2px dashed var(--line); border-radius: 99px; color: var(--muted); background: repeating-linear-gradient(135deg, var(--panel2) 0 8px, var(--bg) 8px 16px); }
+.fw-stopbig { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 18px 28px; border-radius: var(--radius); border: var(--bw) solid var(--line); background: var(--amp, var(--panel)); color: var(--amp-ink, var(--text)); box-shadow: 0 var(--lift) 0 var(--line); min-width: min(100%, 360px); }
+.fw-stopbig .eyebrow { color: inherit; opacity: .8; }
+.fw-stopbig b.display { font-size: clamp(3em, 8vw, 5em); line-height: 1; }
+.fw-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); gap: 6px; width: 100%; }
+.fw-step { display: flex; flex-direction: column; gap: 2px; padding: 8px 10px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--bg); opacity: .55; font-size: .85em; text-align: left; }
+.fw-step b { font-family: var(--font-display); font-size: 1.3em; color: var(--amp, var(--text)); }
+.fw-step.seen { opacity: .85; }
+.fw-step.stop { opacity: 1; background: var(--amp, var(--hot)); color: var(--amp-ink, #fff); transform: translateY(-3px); box-shadow: 0 4px 0 var(--line); }
+.fw-step.stop b { color: inherit; }
+.fw-step.kipp { --amp: var(--hot); }
+.fw-result .meter { width: 100%; }
+.fw-sek { font-size: clamp(2.2em, 5vw, 3.4em); color: var(--good); line-height: 1; }
+@media (max-width: 560px) {
+  .fw-stage { grid-template-columns: 90px 1fr; gap: 10px; }
+  .fw-storyrow { grid-template-columns: 1fr; }
+  .fw-fig { display: none; }
+}

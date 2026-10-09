@@ -1,0 +1,35 @@
+/* Mein Ort: Szene (SVG), Baukasten, Eintauchen mit Impulsen, Rezept */
+.mo-szene { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: calc(var(--radius) + 6px); border: var(--bw) solid var(--line); overflow: hidden; box-shadow: 0 var(--lift) 0 var(--line); background: #1d2a5a; }
+.mo-szene svg { width: 100%; height: 100%; display: block; }
+.mo-szene.klein { max-width: 520px; margin: 0 auto; }
+.mo-szene.gross { max-height: 56vh; }
+.mo-szene .mo-regen { animation: mo-regen .7s linear infinite; }
+.mo-szene .mo-schnee { animation: mo-schnee 6s linear infinite; }
+.mo-szene .mo-wolken { animation: mo-wolken 30s ease-in-out infinite alternate; }
+.mo-szene .mo-welle { animation: mo-welle 5s ease-in-out infinite alternate; }
+.mo-szene .mo-stern { animation: mo-stern 3s ease-in-out infinite alternate; }
+.mo-szene .mo-dampf { animation: mo-dampf 2.4s ease-in-out infinite; }
+@keyframes mo-regen { from { transform: translate(0, -40px); } to { transform: translate(-12px, 40px); } }
+@keyframes mo-schnee { from { transform: translateY(-60px); } to { transform: translateY(60px); } }
+@keyframes mo-wolken { to { transform: translateX(40px); } }
+@keyframes mo-welle { to { transform: translateX(-40px); } }
+@keyframes mo-stern { to { opacity: .3; } }
+@keyframes mo-dampf { 50% { transform: translateY(-6px); opacity: .4; } }
+@media (prefers-reduced-motion: reduce) { .mo-szene * { animation: none !important; } }
+.mo-bau { display: grid; grid-template-columns: minmax(280px, 1fr) minmax(320px, 1.1fr); gap: 14px; align-items: start; }
+.mo-kasten { gap: 10px; }
+.mo-zeile { display: grid; grid-template-columns: 112px 1fr; gap: 8px; align-items: center; }
+.mo-zlabel { font-weight: 800; font-size: .9em; color: var(--muted); }
+.mo-rtext { margin: 0; flex: 1 1 200px; }
+.mo-ein { display: flex; flex-direction: column; gap: 12px; align-items: center; position: relative; }
+.mo-impuls { font-family: var(--font-display); font-size: clamp(1.3em, 2.4vw, 2em); text-align: center; line-height: 1.2; padding: 12px 20px; border-radius: var(--radius); background: var(--panel); border: var(--bw) solid var(--line); box-shadow: 0 var(--lift) 0 var(--line); max-width: 780px; }
+.mo-impuls.neu { animation: pop-in 400ms ease-out both; }
+.mo-timer { position: absolute; top: 12px; right: 12px; }
+.mo-timer .timer { width: 74px; height: 74px; background: color-mix(in srgb, var(--panel) 80%, transparent); border-radius: 50%; }
+.mo-timer .timer .num { font-size: 1.3em; }
+.mo-diff { text-align: center; font-weight: 700; margin: 0; }
+.mo-rezept { display: grid; grid-template-columns: minmax(180px, 280px) 1fr; gap: 14px; align-items: center; padding: 14px; border-radius: calc(var(--radius) + 6px); border: var(--bw) solid var(--line); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.mo-rezept .mo-szene { box-shadow: none; }
+.mo-rezept b { font-size: 1.15em; line-height: 1.3; }
+@media (max-width: 860px) { .mo-bau { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .mo-zeile { grid-template-columns: 1fr; } .mo-rezept { grid-template-columns: 1fr; } }
