@@ -142,7 +142,7 @@ regel(15, 'sprache.fr ohne französischen Text', 'fehler', [
         for (const o of opt) if (o.ref && !k.eintraege.has(o.ref)) f.push(`${id}: Option ${o.ref} fehlt im Katalog`)
         continue
       }
-      if (!/^(fb|r|pa):[a-z0-9-]+$/.test(id)) f.push(`${d}: Id „${id}“`)
+      if (!/^(fb|r|pa|j):[a-z0-9-]+$/.test(id)) f.push(`${d}: Id „${id}“`)
       if (!x.titel || !x.text || !Array.isArray(x.rolle) || !(x.rolle as unknown[]).length) f.push(`${id}: titel/text/rolle fehlt`)
       const a = x.alter as { von: number; bis: number } | undefined
       if (!a || a.von > a.bis || a.von < 3) f.push(`${id}: Altersband`)

@@ -696,8 +696,11 @@ await pruefung('Französisch (T-M4): FR-Kinder bekommen ≥ 5 Pakete, Banner „
     const a = auftrag(p, 'gruendlich', { n: 3, dauer: 45 })
     const plan = planen(k, p, a, leer(), VERLAUF)
     const pakete = plan.sitzungen.flatMap((s) => (s.blatt?.bausteine ?? []).filter((b) => !b.ref.startsWith('pg:')))
-    info(`${p.ref}: ${pakete.length} Pakete`)
-    soll(pakete.length >= 5, `${p.ref}: nur ${pakete.length} Pakete`)
+    info(`${p.ref}: ${pakete.length} Pakete (${plan.sitzungen.map((s) => `${s.schritte.find((x) => x.rolle === 'kern' || x.rolle === 'reflexion')?.ref ?? '?'} → ${(s.blatt?.bausteine ?? []).map((b) => b.ref).join('+') || '–'}`).join(' / ')})`)
+    // genug Französisches – oder, wo kein Teil zum Kern passt, eine Sitzung ohne Blatt mit Grund (bei Jugendlichen gilt
+    // das Blatt nur, wenn Hauptziel oder Hauptthema zum Kern passen; dritte Blind-Bewertung)
+    const ohneGrund = plan.sitzungen.filter((s) => !s.blatt && !s.hinweise?.some((h) => /ohne Blatt geplant/.test(h))).length
+    soll(pakete.length >= 5 || (pakete.length >= 3 && ohneGrund === 0), `${p.ref}: nur ${pakete.length} Pakete`)
     for (const s of plan.sitzungen) {
       const teile = [...s.schritte.map((x) => x.ref), ...(s.blatt?.bausteine ?? []).map((b) => b.ref)].filter((r) => !r.startsWith('pg:')).map((r) => k.eintraege.get(r)!)
       const nurDe = teile.filter((e) => (e.typ === 'schritt' ? !e.fr : !e.sprache.fr)).length

@@ -50,6 +50,16 @@ export const SLOTS: Record<'normal' | 'leicht', Record<number, [SlotRolle, numbe
   },
 }
 
+/** Jugendliche (ab 12): weniger, längere Teile – ein Kern von 15–20 Minuten statt 8–12 (dritte Blind-Bewertung: „in
+ *  8 Minuten nicht machbar“, „zu viele kurze Wechsel“). */
+export const SLOTS_JUGEND: Record<number, [SlotRolle, number][]> = {
+  15: [['ankommen', 2], ['kern', 11], ['abschluss', 2]],
+  20: [['ankommen', 2], ['kern', 12], ['uebung', 4], ['abschluss', 2]],
+  30: [['ankommen', 3], ['einstieg', 3], ['kern', 13], ['uebung', 8], ['abschluss', 3]],
+  45: [['ankommen', 4], ['einstieg', 4], ['kern', 18], ['bewegung', 4], ['uebung', 11], ['abschluss', 4]],
+  60: [['ankommen', 4], ['einstieg', 4], ['kern', 22], ['bewegung', 5], ['uebung', 14], ['reflexion', 6], ['abschluss', 5]],
+}
+
 const KANDIDAT_ROLLEN: Record<SlotRolle, Rolle[]> = {
   ankommen: ['ankommen'], einstieg: ['einstieg'], kern: ['kern'], uebung: ['kern', 'spiel'], bewegung: ['bewegung'], spiel: ['spiel', 'bewegung'],
   regulation: ['regulation'], reflexion: ['reflexion'], abschluss: ['abschluss'], transfer: ['transfer'], wahl: ['spiel', 'bewegung', 'regulation'], pause: ['bewegung'],
@@ -59,7 +69,7 @@ function vorlage(c: Kontext): Slot[] {
   const leicht = c.weg === 'leicht'
   const tab = SLOTS[leicht ? 'leicht' : 'normal']
   const d = c.a.dauer
-  const basis = tab[d] ?? (leicht ? tab[d <= 10 ? 10 : d <= 20 ? 20 : 30] : tab[30])
+  const basis = (!leicht && c.alter >= 12 ? SLOTS_JUGEND[d] : undefined) ?? tab[d] ?? (leicht ? tab[d <= 10 ? 10 : d <= 20 ? 20 : 30] : tab[30])
   const v: Slot[] = basis.map(([rolle, min]) => ({ rolle, min }))
   if (leicht) {
     // Weg 3 mit Blatt (P2): eine Mitmach-Seite statt Spiel bzw. Ruhe; bei 10/15 Min. ist sie eine Option der Wahl
@@ -108,9 +118,10 @@ function vorlage(c: Kontext): Slot[] {
   }
   if (h.konzentration <= 3) {
     const i = idx('kern')
-    if (i >= 0 && v[i].min > 8) {
-      const rest = v[i].min - 8
-      v[i].min = 8
+    const kurz = c.alter >= 12 ? 12 : 8
+    if (i >= 0 && v[i].min > kurz) {
+      const rest = v[i].min - kurz
+      v[i].min = kurz
       if (rest >= 2) v.splice(i + 1, 0, { rolle: h.energie >= 4 ? 'bewegung' : 'regulation', min: rest })
       else v[i].min += rest
     }

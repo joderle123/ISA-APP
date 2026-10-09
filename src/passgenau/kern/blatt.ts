@@ -93,7 +93,7 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   const kernThemen = new Set(!leicht && o.kern ? o.kern.thema : [])
   const kernFeld = new Set(!leicht && o.kern ? o.kern.kompetenz : [])
   const kernBlatt = new Set(o.kern?.typ === 'schritt' ? (o.kern.blatt ?? []) : [])
-  const kohaerent = (e: MikroBaustein) => blattTeilKohaerent(e, { codes: kernCodes, themen: kernThemen, felder: kernFeld, blatt: kernBlatt, kindThemen: c.themen })
+  const kohaerent = (e: MikroBaustein) => blattTeilKohaerent(e, { codes: kernCodes, themen: kernThemen, felder: kernFeld, blatt: kernBlatt, kindThemen: c.themen, streng: !leicht && !!o.kern?.id.startsWith('j:') })
   // alle erlaubten Bausteine einmal bewerten
   const pool: Bewertet[] = []
   const nurAbhaengig = new Map<string, Bewertet>()
@@ -342,8 +342,12 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
 }
 
 /** Teilt ein Blatt-Teil Ziel oder Thema mit dem Kern? (auch für Tests und Testlauf) */
-export function blattTeilKohaerent(e: MikroBaustein, kern: { codes: Set<string>; themen: Set<string>; felder: Set<string>; blatt: Set<string>; kindThemen: { has(k: string): boolean } }): boolean {
+export function blattTeilKohaerent(e: MikroBaustein, kern: { codes: Set<string>; themen: Set<string>; felder: Set<string>; blatt: Set<string>; kindThemen: { has(k: string): boolean }; streng?: boolean }): boolean {
   if (!kern.codes.size && !kern.themen.size) return true
+  // streng (Einzelübung für Jugendliche als Kern): das Hauptziel oder das Hauptthema des Teils gehört zum Kern – dritte
+  // Blind-Bewertung: „das Blatt zu Prüfungsstress hat mit dem Kern nichts zu tun“ (ein Nebenziel oder dasselbe
+  // Kompetenzfeld mit einem Thema des Kindes reichte bisher)
+  if (kern.streng) return kern.blatt.has(e.id) || e.eldib.some((x) => x.gewicht === 1 && kern.codes.has(x.code)) || (!!e.thema[0] && kern.themen.has(e.thema[0])) || (e.art.includes('rueckblick') && !e.thema.length)
   if (kern.blatt.has(e.id) || e.eldib.some((x) => kern.codes.has(x.code)) || e.thema.some((t) => kern.themen.has(t))) return true
   if (e.kompetenz.some((x) => kern.felder.has(x)) && (!e.thema.length || e.thema.some((t) => kern.kindThemen.has(t)))) return true
   return e.art.includes('rueckblick') && !e.thema.length
