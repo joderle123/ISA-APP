@@ -1,0 +1,938 @@
+{
+ "b:ballon-atmen:0": {
+  "rolle": [
+   "uebung",
+   "regulation"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "KOG-5"
+   ],
+   "sekundaer": [
+    "V-3"
+   ]
+  },
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 6
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "„Schau zu und mach mit“: Bauchatmung durch Nachahmen (KOG-5), Aufmerksamkeit halten.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "dab387e0"
+ },
+ "b:ballon-atmen:1": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "KOG-18"
+   ],
+   "sekundaer": [
+    "KOG-20"
+   ]
+  },
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 6
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Anmalen übt Feinmotorik; groß/klein = Gegenteile, passend zu 3–5 Jahren.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "db72ae21"
+ },
+ "b:gefuehle-detektiv:0": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-21"
+   ],
+   "sekundaer": []
+  },
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 8
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Wut an Gesicht, Körper, Stimme erkennen; nur ankreuzen am Bild, daher keine Belastung.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "0a67f3b4"
+ },
+ "b:gefuehle-detektiv:1": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "K-21"
+   ],
+   "sekundaer": [
+    "KOG-38"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 8
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {
+   "gewaltbezug": true
+  },
+  "sensibel": null,
+  "begruendung": "Situation und Gefühl verbinden; „schubst“ als Inhalt bleibt Gewaltbezug (vorsichtig).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "4c183cc7"
+ },
+ "b:gefuehle-detektiv:2": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-21"
+   ],
+   "sekundaer": [
+    "K-23"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 8
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Pantomime zu zweit: Fachkraft ist Partner (ja). Zeigen und raten = Gefühle ausdrücken und erkennen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "6fbc48df"
+ },
+ "b:gefuehle-detektiv:3": {
+  "rolle": [
+   "reflexion",
+   "abschluss"
+  ],
+  "bogen": "reflektieren",
+  "eldib": {
+   "primaer": [
+    "K-18"
+   ],
+   "sekundaer": [
+    "K-21"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 8
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Rückblick mit Smileys für 6–7 Jahre: Stolz auf das Geschaffte.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "b4f5137b"
+ },
+ "b:gefuehle-genau-benennen:0": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": []
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Info zum Vier-Felder-Modell (Energie × angenehm).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "a54d3ad9"
+ },
+ "b:gefuehle-genau-benennen:1": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": []
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Wörter in die vier Felder einordnen und ergänzen: Modell anwenden.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "4d0080ba"
+ },
+ "b:gefuehle-genau-benennen:2": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": []
+  },
+  "kompetenz": [
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Eigenes Gefühl gerade benennen und einordnen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "abb35b11"
+ },
+ "b:gefuehle-genau-benennen:3": {
+  "rolle": [
+   "uebung",
+   "transfer"
+  ],
+  "bogen": "uebertragen",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "SOZ-40"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Wochenbeobachtung im Alltag: Transfer (läuft über Tage, mehrtägig fehlt im Katalog).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "6a7e8be5"
+ },
+ "b:gefuehle-genau-benennen:4": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "V-18"
+   ],
+   "sekundaer": [
+    "K-26"
+   ]
+  },
+  "kompetenz": [
+   "selbstregulation",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Info: was in welchem Feld hilft = Handlungsmöglichkeiten beschreiben (V-18).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "0acc562e"
+ },
+ "b:gefuehle-genau-benennen:5": {
+  "rolle": [
+   "uebung",
+   "reflexion"
+  ],
+  "bogen": "reflektieren",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "SOZ-40"
+   ]
+  },
+  "kompetenz": [
+   "selbstregulation",
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Rückblick auf die Beobachtungswoche; setzt die Wochentabelle voraus.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "36672901"
+ },
+ "b:gefuehle-genau-benennen:6": {
+  "rolle": [
+   "uebung",
+   "reflexion"
+  ],
+  "bogen": "reflektieren",
+  "eldib": {
+   "primaer": [
+    "K-24"
+   ],
+   "sekundaer": [
+    "K-26"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 12,
+   "bis": 18
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Selbsteinschätzung am Ende: Fortschritt beim Benennen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "e33522bf"
+ },
+ "b:gefuehle-gesichter:0": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-10"
+   ],
+   "sekundaer": [
+    "KOG-5"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 6
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Auf das genannte Gesicht zeigen (Wortverständnis) und nachmachen (Imitation).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "9bd8913b"
+ },
+ "b:gefuehle-gesichter:1": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "uebertragen",
+  "eldib": {
+   "primaer": [
+    "K-15"
+   ],
+   "sekundaer": [
+    "K-13"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 6
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Eigene frohe und traurige Momente malen = eigene Erfahrungen beschreiben; ab 4 Jahren.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "25df444b"
+ },
+ "b:gefuehle-gesichter:2": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "KOG-17"
+   ],
+   "sekundaer": [
+    "K-10"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 4,
+   "bis": 6
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Memory: gleiche Gefühlsbilder zuordnen (KOG-17); Fachkraft spielt mit. Schneiden ab 4.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "84fb7bed"
+ },
+ "b:gefuehle-viele-namen:0": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "KOG-21"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Gefühlswörter nach Familie und Stärke ordnen: genauer ausdrücken (K-26), kategorisieren.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "6e14554b"
+ },
+ "b:gefuehle-viele-namen:1": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "uebertragen",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-15"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Eigene Situationen der letzten Tage benennen und einschätzen: Übertrag auf den Alltag, persönlich.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "978a7ea9"
+ },
+ "b:gefuehle-viele-namen:2": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-23"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Körpersignale der Gefühle mit Farben einzeichnen; kein Körperthema im Sinn von sensibel.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "1abd4bcc"
+ },
+ "b:gefuehle-viele-namen:3": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-15"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Satzanfänge mit genauem Gefühlswort ergänzen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "cd61960e"
+ },
+ "b:gefuehle-viele-namen:4": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": []
+  },
+  "kompetenz": [
+   "gefuehle-erkennen"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Info: Gefühle haben Namen und Stärken, zwei zugleich sind möglich.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "4861c551"
+ },
+ "b:gefuehle-viele-namen:5": {
+  "rolle": [
+   "reflexion",
+   "abschluss"
+  ],
+  "bogen": "reflektieren",
+  "eldib": {
+   "primaer": [
+    "K-24"
+   ],
+   "sekundaer": [
+    "K-26"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-ausdruecken"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Rückblick: eigenen Fortschritt einschätzen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "b4f5137b"
+ },
+ "b:mein-wetter-heute:0": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-12"
+   ],
+   "sekundaer": [
+    "SOZ-9"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 6
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Stimmung als Wetterbild der Fachkraft mitteilen; Routine-Code V-8 passt nicht zum Teil.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "3156b1fc"
+ },
+ "b:mein-wetter-heute:1": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-12"
+   ],
+   "sekundaer": [
+    "SOZ-9"
+   ]
+  },
+  "kompetenz": [
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 3,
+   "bis": 6
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Bedürfnis zeigen; „kuscheln“ ist nur eine Bildoption, die Aufgabe verlangt keinen Kontakt.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "e290511c"
+ },
+ "b:was-hilft-bei-angst:2": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-18"
+   ],
+   "sekundaer": [
+    "K-16"
+   ]
+  },
+  "kompetenz": [
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 8
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Was kannst du zu dir sagen, wenn du Angst hast? Kreuze die Mut-Sätze an, die dir helfen."
+  },
+  "sensibel": null,
+  "begruendung": "Mut-Sätze wählen heißt eine hilfreiche Alternative zur Angst finden; allgemeine Fassung ohne Emma.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "fe554ced"
+ },
+ "b:wie-geht-es-mir:0": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-12"
+   ],
+   "sekundaer": []
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "kommunikation"
+  ],
+  "alter": {
+   "von": 6,
+   "bis": 8
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Befinden auf der Gesichterskala zeigen und der Fachkraft mitteilen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "84392d5b"
+ },
+ "b:wutvulkan:0": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "K-21"
+   ],
+   "sekundaer": [
+    "K-29"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "impulskontrolle"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Geschichte: Lucas Wut steigt in Stufen – Gefühle anderer erkennen, Ursache und Wirkung. Mäppchen werfen ≠ Gewalt.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "3c049e4f"
+ },
+ "b:wutvulkan:1": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-21"
+   ],
+   "sekundaer": [
+    "V-21"
+   ]
+  },
+  "kompetenz": [
+   "gefuehle-erkennen",
+   "impulskontrolle"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Woran kann man merken, dass bei jemandem die Wut steigt? Kreuze an.",
+   "1.items.0": "Das Gesicht wird heiß.",
+   "1.items.1": "Die Hände werden zu Fäusten.",
+   "1.items.2": "Man gähnt.",
+   "1.items.3": "Man atmet schneller.",
+   "1.items.4": "Man will nur noch weg.",
+   "1.items.5": "Man lacht mit."
+  },
+  "sensibel": null,
+  "begruendung": "Frühwarnzeichen bei anderen erkennen (wahrnehmen); allgemeine Fassung ohne Luca für Blätter ohne Geschichte.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "1af6f69d"
+ },
+ "b:wutvulkan:2": {
+  "rolle": [
+   "uebung"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "V-18",
+    "V-21"
+   ]
+  },
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Eigener Vulkan: eigene Auslöser und Zeichen benennen (K-26), Handlungen davor finden (V-18).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "e6a9d578"
+ },
+ "b:wutvulkan:3": {
+  "rolle": [
+   "uebung",
+   "transfer"
+  ],
+  "bogen": "uebertragen",
+  "eldib": {
+   "primaer": [
+    "V-18"
+   ],
+   "sekundaer": [
+    "V-21"
+   ]
+  },
+  "kompetenz": [
+   "impulskontrolle",
+   "selbstregulation"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "allgemein": {
+   "0.text": "Was hilft dir, wenn die Wut in dir brodelt? Wähle zwei Ideen aus oder schreibe eigene."
+  },
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Zwei Ideen für den Alltag wählen = Alternativen; Hände drücken und loslassen ist Regulation, keine Katharsis.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "ad830e23"
+ },
+ "b:wutvulkan:4": {
+  "rolle": [
+   "reflexion",
+   "abschluss"
+  ],
+  "bogen": "reflektieren",
+  "eldib": {
+   "primaer": [
+    "K-24"
+   ],
+   "sekundaer": [
+    "V-21"
+   ]
+  },
+  "kompetenz": [
+   "impulskontrolle"
+  ],
+  "alter": {
+   "von": 8,
+   "bis": 11
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "sensibel": null,
+  "begruendung": "Rückblick: eigenen Lernfortschritt einschätzen.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "b4f5137b"
+ }
+}

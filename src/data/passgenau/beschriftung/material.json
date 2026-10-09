@@ -1,0 +1,36 @@
+{
+ "m:de-faire-schiri-streit-gerecht-leisen:1": {
+  "rolle": [
+   "kern"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-21"
+   ],
+   "sekundaer": [
+    "SOZ-34",
+    "SOZ-27",
+    "K-21"
+   ]
+  },
+  "alter": {
+   "von": 6,
+   "bis": 10
+  },
+  "energie": 2,
+  "belastung": 1,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Die Fachkraft spielt mit zwei Handpuppen einen kleinen, harmlosen Streit (wer zuerst schaukeln darf). Das Kind ist der faire Schiri: hört beide an („Erzähl du – jetzt du“), fragt nach und schlägt eine gerechte Lösung vor. Danach tauschen: Das Kind führt eine Puppe, die Fachkraft ist Schiri.",
+   "sagen": [
+    "Du bist heute der Schiri. Du hörst beide an, bevor du entscheidest.",
+    "Was wäre für beide gerecht?"
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Dreiergruppe ersetzt: die Fachkraft spielt beide Streitenden mit Puppen. „schlägt vor“ ist kein Gewaltbezug.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "7d18648c"
+ }
+}

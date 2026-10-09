@@ -1,0 +1,66 @@
+{
+ "s:sp-haende-sprechen:a5": {
+  "rolle": [
+   "spiel"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-2"
+   ],
+   "sekundaer": [
+    "KOG-5"
+   ]
+  },
+  "alter": {
+   "von": 4,
+   "bis": 6
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "merkmale": {},
+  "begruendung": "Lebt von der Kette vieler Kinder; zu zweit bleibt nur Nachmachen, das leisten die anderen Gebärden-Spiele.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "e8756a83"
+ },
+ "s:sp-riechen-und-schmecken:a0": {
+  "rolle": [
+   "einstieg"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-11"
+   ],
+   "sekundaer": [
+    "V-24"
+   ]
+  },
+  "alter": {
+   "von": 3,
+   "bis": 6
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Orange, Blume und Seife liegen in einer Kiste. Das Kind schließt die Augen, die Fachkraft hält ihm eins nach dem anderen unter die Nase. Es sagt, wie es riecht (frisch, süß, nach Blume), und rät, was es ist. Mag es einen Geruch nicht, darf es das sagen.",
+   "sagen": [
+    "Augen zu – ich halte dir etwas unter die Nase. Wie riecht das?",
+    "Magst du das, oder lieber nicht? Beides ist in Ordnung."
+   ],
+   "fr": {
+    "text": "Une orange, une fleur et du savon dans une boîte. L’enfant ferme les yeux, l’adulte lui fait sentir un objet après l’autre. Il dit comment ça sent (frais, sucré, la fleur) et devine ce que c’est. S’il n’aime pas une odeur, il peut le dire.",
+    "sagen": [
+     "Ferme les yeux – je te fais sentir quelque chose. Ça sent comment ?",
+     "Tu aimes, ou pas trop ? Les deux, c’est d’accord."
+    ]
+   }
+  },
+  "merkmale": {},
+  "begruendung": "Kreis entfällt: die Fachkraft reicht die Dinge, das Kind riecht und benennt; Raten macht es zum kleinen Spiel.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "8ddf088f"
+ }
+}

@@ -1,0 +1,948 @@
+{
+ "k:j1-e01:0": {
+  "rolle": [
+   "ankommen"
+  ],
+  "eldib": {
+   "primaer": [],
+   "sekundaer": []
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "merkmale": {},
+  "begruendung": "Namensrunde zum Kennenlernen einer Gruppe; Fachkraft und Kind kennen sich. Ritual ohne Förderziel.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "0c48701b"
+ },
+ "k:j1-e01:1": {
+  "rolle": [
+   "einstieg"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "V-18"
+   ],
+   "sekundaer": []
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "„Skills“ steht in der Mitte eines Blatts. Der oder die Jugendliche sammelt Ideen, was man können muss, um mit Gefühlen, Stress und anderen gut klarzukommen; die Fachkraft schreibt alles auf, auch Scherzantworten. Dann erklärt sie: Skills lernt man wie einen Sport – durch Üben.",
+   "sagen": [
+    "Was könnte man lernen, das man im Alltag wirklich braucht?",
+    "Was machst du, wenn du richtig sauer bist – und was davon hilft dir hinterher wirklich?"
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Jahresweg und Plakat sind Kursstruktur und entfallen; die Frage nach Skills geht zu zweit. Einstieg, kein Kern.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "31797fd4"
+ },
+ "k:j1-e01:2": {
+  "rolle": [
+   "kern"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-27"
+   ],
+   "sekundaer": [
+    "SOZ-32"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "merkmale": {},
+  "begruendung": "Gruppenvertrag: Regeln aus der Gruppe, alle unterschreiben – lebt von der Gruppe.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "5d3c7db2"
+ },
+ "k:j1-e01:3": {
+  "rolle": [
+   "kern",
+   "einstieg"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-10"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Das Gefühlsrad liegt auf dem Tisch. Die Fachkraft erklärt: innen die Grundgefühle, außen genauere Wörter. Dann zeigt sie selbst auf ein Wort und sagt einen Satz dazu; danach zeigt der oder die Jugendliche auf ein Wort, ein Satz dazu ist freiwillig.",
+   "sagen": [
+    "Ich fühle mich gerade …, weil … – das „weil“ ist freiwillig.",
+    "Es gibt keine falschen Gefühle. Müde zählt auch."
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Reihum und „ab heute jede Einheit“ entfallen; Rad erklären und ein erstes Gefühl benennen geht zu zweit.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "5494ca7e"
+ },
+ "k:j1-e01:4": {
+  "rolle": [
+   "regulation"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "V-24"
+   ],
+   "sekundaer": []
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Draußen sucht sich der oder die Jugendliche einen Platz in Sichtweite und sitzt fünf bis zehn Minuten allein, ohne Handy: nur schauen und hören. Die Fachkraft bleibt auf Abstand. Danach kurz erzählen, was zu sehen, zu hören und zu riechen war. Bei Regen am offenen Fenster.",
+   "sagen": [
+    "Was hast du gesehen, gehört, gerochen?",
+    "Wie waren die Minuten ohne Handy – lang, kurz, komisch?"
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Stilles Sitzen und Wahrnehmen ist Ruhe, kein Spiel; Austausch im Kreis wird ein kurzes Gespräch.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "ff162446"
+ },
+ "k:j1-e01:5": {
+  "rolle": [
+   "regulation"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-25"
+   ],
+   "sekundaer": []
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "begruendung": "5-4-3-2-1 geht wörtlich mit einem Kind („im Kreis“ ist nur Sitzordnung); Skill anwenden, altersneutral.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "eae778ca"
+ },
+ "k:j1-e01:6": {
+  "rolle": [
+   "abschluss",
+   "reflexion"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-24"
+   ],
+   "sekundaer": [
+    "V-22"
+   ]
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Zum Schluss sagt der oder die Jugendliche ein Wort zu heute und, wer mag, einen Satz: Das nehme ich heute mit. Die Fachkraft sagt auch ein Wort.",
+   "sagen": [
+    "Ein Wort zu heute – was fällt dir als Erstes ein?",
+    "Was nimmst du heute mit?"
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Skills-Pass, Stempel und Box sind Kursstruktur; das Blitzlicht bleibt.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "3890f6bd"
+ },
+ "k:j1-e02:0": {
+  "rolle": [
+   "ankommen"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-10"
+   ]
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Das Gefühlsrad liegt auf dem Tisch. Die Fachkraft steckt ihre Klammer zuerst an ein Wort, dann steckt der oder die Jugendliche eine Klammer an das Wort, das gerade am besten passt; ein Satz dazu ist freiwillig. Die Klammer bleibt bis zum Schluss am Rad.",
+   "sagen": [
+    "Steck deine Klammer dahin, wo du gerade bist – nicht dahin, wo du gern wärst.",
+    "Ein Satz reicht. Du kannst auch nur die Klammer anstecken."
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Reihum und Namensklammern für die Gruppe entfallen; Gefühl am Rad zeigen geht zu zweit, altersneutral.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "7247930f"
+ },
+ "k:j1-e02:1": {
+  "rolle": [
+   "einstieg"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-27"
+   ],
+   "sekundaer": []
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "merkmale": {},
+  "begruendung": "Brücke zur letzten Einheit über den Gruppenvertrag – setzt Kurs und Gruppe voraus.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "8ee01785"
+ },
+ "k:j1-e02:2": {
+  "rolle": [
+   "einstieg",
+   "spiel"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-15"
+   ],
+   "sekundaer": [
+    "SOZ-31"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Der oder die Jugendliche und die Fachkraft stehen nebeneinander an einer Linie. Die Fachkraft liest Sätze vor („Mach einen Schritt nach vorn, wenn du …“); wer sich angesprochen fühlt, tritt vor und geht zurück, ohne zu erklären. Stehenbleiben ist immer erlaubt.",
+   "sagen": [
+    "Stehenbleiben ist immer okay, und niemand fragt nach.",
+    "Bei welchem Satz hättest du gedacht, dass du allein vorne stehst?"
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Zu zweit wird es eine Kennenlern-Aufstellung mit der Fachkraft; harmlose Sätze, daher Belastung 0.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "b39da221"
+ },
+ "k:j1-e02:3": {
+  "rolle": [
+   "spiel",
+   "einstieg"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-15"
+   ],
+   "sekundaer": [
+    "K-19"
+   ]
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Der oder die Jugendliche und die Fachkraft schreiben je drei kurze Sätze über sich auf eine Karte: zwei stimmen, einer ist erfunden. Die Fachkraft liest zuerst vor, der oder die Jugendliche zeigt mit Fingern, welcher Satz erfunden ist. Dann auflösen und tauschen.",
+   "sagen": [
+    "Nimm Dinge, die man dir nicht ansieht: ein komisches Talent, ein Missgeschick, ein seltsames Lieblingsessen.",
+    "Die Lüge darf ruhig glaubwürdig sein."
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Ratespiel geht zu zweit gut und stärkt die Beziehung; Spiel und Einstieg, nicht Kern.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "ad124e92"
+ },
+ "k:j1-e02:4": {
+  "rolle": [
+   "spiel"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-33"
+   ],
+   "sekundaer": [
+    "K-14"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "merkmale": {
+   "wettbewerb": true
+  },
+  "begruendung": "„Finde jemanden, der …“ braucht viele Leute zum Fragen; Bingo-Ruf ist ein kleiner Wettlauf.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "fe48631c"
+ },
+ "k:j1-e02:5": {
+  "rolle": [
+   "abschluss",
+   "reflexion"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "K-28",
+    "V-14"
+   ],
+   "sekundaer": [
+    "K-20"
+   ]
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Die Fachkraft sagt zuerst, was ihr heute am oder an der Jugendlichen aufgefallen ist – etwas, das er oder sie getan hat, nicht wie er oder sie aussieht; die Antwort ist nur „Danke“. Dann macht der oder die Jugendliche der Fachkraft ein Kompliment. Kurz besprechen: Was war schwerer?",
+   "sagen": [
+    "Mir ist heute aufgefallen, dass du … Darauf sagst du nur: Danke.",
+    "Was war schwerer: ein Kompliment geben oder eins annehmen?"
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Komplimente im Kreis werden ein Austausch zu zweit; sozialer Skill am Stundenende, keine Regulation.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "7e6050e1"
+ },
+ "k:j1-e02:6": {
+  "rolle": [
+   "abschluss",
+   "reflexion"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-24"
+   ]
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Der oder die Jugendliche zeigt am Gefühlsrad, wie es jetzt geht, und schaut, ob sich seit dem Anfang der Stunde etwas verändert hat; ein Wort dazu ist freiwillig. Zum Schluss ein Satz: Was nehme ich heute mit?",
+   "sagen": [
+    "Stimmt dein Wort vom Anfang noch – oder hat sich etwas verändert?",
+    "Was nimmst du heute mit?"
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Skills-Pass und Klammern der Gruppe entfallen; Gefühl jetzt mit dem Anfang vergleichen geht zu zweit.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "567eb8cc"
+ },
+ "k:j1-e03:0": {
+  "rolle": [
+   "ankommen"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-10"
+   ]
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Das Gefühlsrad liegt auf dem Tisch. Die Fachkraft beschreibt zuerst ihr inneres Wetter in einem Satz (sonnig, bewölkt, Nebel, Gewitter, Sturm) und nennt ein Wort aus dem Rad, dann der oder die Jugendliche. Am Ende der Stunde kurz schauen, ob sich das Wetter geändert hat.",
+   "sagen": [
+    "Mein inneres Wetter ist heute … – und im Gefühlsrad wäre das am ehesten …",
+    "Wetter ändert sich. Am Ende schauen wir, ob sich bei dir etwas getan hat."
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Kreis am Treffpunkt entfällt; Wetterbild als Check-in geht zu zweit und ist altersneutral.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "4af00a4d"
+ },
+ "k:j1-e03:1": {
+  "rolle": [
+   "einstieg"
+  ],
+  "eldib": {
+   "primaer": [
+    "V-16"
+   ],
+   "sekundaer": []
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "merkmale": {},
+  "begruendung": "Anknüpfen an Einheit 2 und Geländeregeln für die Gruppe; „niemand gewinnt“ ist kein Wettbewerb.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "b463bd6f"
+ },
+ "k:j1-e03:2": {
+  "rolle": [
+   "spiel"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-18"
+   ],
+   "sekundaer": [
+    "SOZ-29"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "merkmale": {},
+  "begruendung": "Team-Challenges mit Spalte „alle dabei“ – das Ziel ist Zusammenarbeit in der Gruppe.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "821b2050"
+ },
+ "k:j1-e03:3": {
+  "rolle": [
+   "spiel",
+   "bewegung"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-18"
+   ],
+   "sekundaer": [
+    "K-27"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 1,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Der oder die Jugendliche schließt die Augen, die Fachkraft führt nur mit der Stimme langsam durch Raum oder Hof; dann wird getauscht. „Stopp!“ heißt: sofort stehen bleiben, Augen auf. Wer nicht blind gehen mag, führt nur. Danach: Wie war es, geführt zu werden – und zu führen?",
+   "sagen": [
+    "Du entscheidest: Augen zu oder heute nur führen. Beides ist in Ordnung.",
+    "Wie war es, geführt zu werden? Und wie war es, mich zu führen?"
+   ]
+  },
+  "merkmale": {
+   "koerperkontakt": true
+  },
+  "begruendung": "Blind führen geht zu zweit, nur mit der Stimme; Körperkontakt bleibt markiert (Original), Augen zu kann belasten.",
+  "von": "agent",
+  "sicher": 0.8,
+  "h": "813b4112"
+ },
+ "k:j1-e03:4": {
+  "rolle": [
+   "reflexion"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-29"
+   ],
+   "sekundaer": [
+    "SOZ-27"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "merkmale": {},
+  "begruendung": "Auswertung der Gruppenerfahrung und Ergänzung des Gruppenvertrags – geht nur mit der Gruppe.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "781c8396"
+ },
+ "k:j1-e03:5": {
+  "rolle": [
+   "regulation"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-25"
+   ],
+   "sekundaer": []
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Beide sitzen, die Füße auf dem Boden. Die Fachkraft zählt leise den Takt – vier Sekunden ein, vier aus –, der oder die Jugendliche atmet im selben Takt mit. Nach einer Minute übernimmt er oder sie das Zählen. Zum Schluss kurz nachspüren: Wie fühlt sich der Körper jetzt an?",
+   "sagen": [
+    "Ein – zwei – drei – vier. Aus – zwei – drei – vier.",
+    "Jetzt zählst du, ich atme mit."
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Gemeinsam atmen geht zu zweit; statt Freiwilliger übernimmt der oder die Jugendliche das Zählen.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "dd5b9525"
+ },
+ "k:j1-e03:6": {
+  "rolle": [
+   "abschluss",
+   "reflexion"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-24"
+   ],
+   "sekundaer": [
+    "SOZ-18"
+   ]
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Daumenbarometer: Der oder die Jugendliche zeigt mit dem Daumen, wie gut die Zusammenarbeit heute geklappt hat – nach oben, zur Seite oder nach unten; die Fachkraft zeigt ihren Daumen auch. Wer mag, sagt einen Satz dazu.",
+   "sagen": [
+    "Daumen: Wie gut haben wir heute zusammengearbeitet?",
+    "Was hat dir geholfen – oder was hättest du gebraucht?"
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Team-Daumen wird ein Daumen für die Zusammenarbeit zu zweit; Skills-Pass entfällt.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "fe3c9a91"
+ },
+ "k:j1-e04:0": {
+  "rolle": [
+   "ankommen"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-10"
+   ]
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Die Fachkraft beginnt: Sie zeigt auf ein Wort im Gefühlsrad und mit den Fingern, wie voll ihr Tank heute ist – null heißt leer, zehn randvoll. Dann zeigt der oder die Jugendliche Wort und Tank. Ein Satz dazu ist freiwillig; die Zahl wird nicht kommentiert.",
+   "sagen": [
+    "Zeig auf dein Wort und mit den Fingern, wie voll dein Tank heute ist.",
+    "Null heißt leer, zehn heißt randvoll."
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Reihum entfällt; Gefühl und Tank-Finger gehen zu zweit, das Bild versteht man ohne Input.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "e9571a6e"
+ },
+ "k:j1-e04:1": {
+  "rolle": [
+   "einstieg"
+  ],
+  "eldib": {
+   "primaer": [],
+   "sekundaer": []
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "nein",
+  "merkmale": {},
+  "begruendung": "Rückblick auf drei Kurseinheiten und Ankündigung eines Moduls – reine Kursstruktur.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "d7d5d2bf"
+ },
+ "k:j1-e04:2": {
+  "rolle": [
+   "kern",
+   "einstieg"
+  ],
+  "bogen": "verstehen",
+  "eldib": {
+   "primaer": [
+    "K-33"
+   ],
+   "sekundaer": [
+    "SOZ-40",
+    "K-29"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "begruendung": "Sammeln, Zuordnen und Tank-Bild gehen wörtlich zu zweit; Bedürfnis hinter dem Wunsch = Motive (K-33).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "8422896a"
+ },
+ "k:j1-e04:3": {
+  "rolle": [
+   "kern"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-40"
+   ],
+   "sekundaer": []
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "nein",
+  "merkmale": {},
+  "begruendung": "Lebt von anonymen Zetteln vieler und dem Glas fürs Kursjahr; zu zweit gibt es keine Anonymität.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "84f43774"
+ },
+ "k:j1-e04:4": {
+  "rolle": [
+   "einstieg",
+   "bewegung"
+  ],
+  "bogen": "wahrnehmen",
+  "eldib": {
+   "primaer": [
+    "K-19"
+   ],
+   "sekundaer": [
+    "SOZ-31"
+   ]
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "In vier Raumecken hängen Schilder: Ruhe, Bewegung, Leute, Essen und Schlaf. Die Fachkraft liest eine Frage vor (Was brauchst du nach einem langen Schultag?), der oder die Jugendliche geht in die passende Ecke und sagt kurz, warum. Die Fachkraft wählt auch eine Ecke.",
+   "sagen": [
+    "Es gibt keine richtige Ecke. Geh dahin, wo du ehrlich hingehörst.",
+    "Warum diese Ecke?"
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Ecken-Aufstellung geht zu zweit; Gehen statt Rennen (Energie 2), kurzer Einstieg statt Spiel.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "5487c29d"
+ },
+ "k:j1-e04:5": {
+  "rolle": [
+   "kern",
+   "transfer"
+  ],
+  "bogen": "uebertragen",
+  "eldib": {
+   "primaer": [
+    "SOZ-40"
+   ],
+   "sekundaer": [
+    "V-32"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Die Fachkraft liest mit dem oder der Jugendlichen die Geschichte und bespricht die Beispielzeile. Dann wählt er oder sie fünf Bedürfnisse, schätzt Wichtigkeit und Füllstand ein, kreist die größte Lücke ein und plant einen kleinen Schritt für diese Woche.",
+   "sagen": [
+    "Sehr wichtig und wenig voll – da ist die Lücke. Dort lohnt sich ein kleiner Schritt am meisten.",
+    "Klein heißt: Du schaffst ihn diese Woche, ohne dass jemand anderes mitspielen muss."
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Mappe und Einheit 15/30 sind Kursbezug; Lücke finden und Schritt planen geht zu zweit (Transfer).",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "e8606070"
+ },
+ "k:j1-e04:6": {
+  "rolle": [
+   "regulation"
+  ],
+  "bogen": "ueben",
+  "eldib": {
+   "primaer": [
+    "V-25"
+   ],
+   "sekundaer": []
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "ja",
+  "merkmale": {},
+  "begruendung": "Atemübung 4-7-8 geht wörtlich mit einem Kind; Skill anwenden, altersneutral.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "7b7db815"
+ },
+ "k:j1-e04:7": {
+  "rolle": [
+   "abschluss",
+   "transfer"
+  ],
+  "eldib": {
+   "primaer": [
+    "V-29"
+   ],
+   "sekundaer": [
+    "K-24"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Zum Schluss nennt der oder die Jugendliche eine Idee zum Auftanken, die er oder sie diese Woche ausprobieren will; die Fachkraft nennt auch eine. Wer mag, schreibt sie auf eine Karte zum Mitnehmen.",
+   "sagen": [
+    "Welche Idee zum Auftanken willst du diese Woche ausprobieren?"
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Ideen der anderen und Skills-Pass entfallen; eigene Auftank-Idee für die Woche bleibt.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "af24c1ec"
+ },
+ "k:j1-e05:0": {
+  "rolle": [
+   "ankommen"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-10"
+   ]
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Die Fachkraft beginnt: ein Wort im Gefühlsrad und mit der Hand, wie laut oder leise sie sich heute fühlt – Hand am Boden flüsterleise, über dem Kopf Lautsprecher. Dann der oder die Jugendliche. Die Handhöhe wird nicht gedeutet, nur wahrgenommen.",
+   "sagen": [
+    "Zeig dein Wort – und mit der Hand, wie laut du heute drauf bist.",
+    "Leise heißt nicht schlecht gelaunt."
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Reihum entfällt; Gefühl und Lautstärke zeigen geht zu zweit, altersneutral.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "8dbe8966"
+ },
+ "k:j2-e16:0": {
+  "rolle": [
+   "ankommen"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-10"
+   ]
+  },
+  "alter": {
+   "von": 10,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Gefühlsrad und Anspannungsskala liegen auf dem Tisch. Die Fachkraft beginnt mit einem Gefühlswort und ihrer Zahl, dann zeigt der oder die Jugendliche ein Wort und nennt die eigene Zahl. Nicht kommentieren, nicht nachfragen; die Zahl für den Abschluss merken.",
+   "sagen": [
+    "Bei mir ist es heute „müde“, und meine Anspannung ist eine 3. Und bei dir?",
+    "Ein Wort und eine Zahl reichen."
+   ]
+  },
+  "merkmale": {},
+  "begruendung": "Kurs-Ritual „wie gewohnt“ ausgeschrieben, Bezug aufs Kursthema weggelassen; Check-in ist altersneutral.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "f2b24f15"
+ },
+ "k:j2-e16:4": {
+  "rolle": [
+   "kern"
+  ],
+  "eldib": {
+   "primaer": [
+    "SOZ-21"
+   ],
+   "sekundaer": [
+    "SOZ-32",
+    "K-21"
+   ]
+  },
+  "alter": {
+   "von": 12,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 1,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Drei Karten liegen auf dem Tisch: grün „okay“, gelb „erst fragen“, rot „Stopp“. Die Fachkraft liest sechs bis acht Situationen vor, der oder die Jugendliche legt eine Klammer auf eine Farbe und begründet. Bei Gelb zusammen eine Frage finden. Zum Schluss: Welche Karte war am schwersten?",
+   "sagen": [
+    "Hier gibt es kein Gewinnen – mich interessiert, wie du entscheidest.",
+    "Ein Schritt zurück ist auch ein Nein. Dafür braucht es keine Worte."
+   ]
+  },
+  "merkmale": {},
+  "sensibel": null,
+  "begruendung": "Teams und Lauf entfallen, am Tisch mit drei Karten: Energie 1, kein Wettbewerb; Umarmen nur im Text, kein Kontakt.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "40483892"
+ }
+}

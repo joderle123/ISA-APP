@@ -1,0 +1,81 @@
+{
+ "f:ff7-e12:3": {
+  "rolle": [
+   "einstieg",
+   "bewegung"
+  ],
+  "eldib": {
+   "primaer": [
+    "K-26"
+   ],
+   "sekundaer": [
+    "K-29"
+   ]
+  },
+  "alter": {
+   "von": 11,
+   "bis": 15
+  },
+  "energie": 2,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Eine Linie aus Krepp am Boden, links 0, rechts 10. Die Fachkraft nennt eine Situation und ein Gefühl (der Bus fährt weg – wie genervt?), das Kind stellt sich auf seine Zahl und sagt, was sie so hoch oder niedrig macht. Bei der nächsten Situation stellt sich die Fachkraft dazu.",
+   "sagen": [
+    "Stell dich dahin, wo es für dich passt – es gibt keine richtige Zahl.",
+    "Ich stehe bei 6, du bei 2 – was macht den Unterschied?"
+   ],
+   "fr": {
+    "text": "Une ligne en ruban au sol, 0 à gauche, 10 à droite. L’adulte annonce une situation et une émotion (le bus part – à quel point es-tu agacé·e ?), l’élève se place sur son chiffre et dit ce qui le rend haut ou bas. À la situation suivante, l’adulte se place aussi.",
+    "sagen": [
+     "Place-toi là où ça te correspond – il n’y a pas de bon chiffre.",
+     "Moi je suis à 6, toi à 2 – qu’est-ce qui fait la différence ?"
+    ]
+   }
+  },
+  "merkmale": {},
+  "begruendung": "Aufstellung geht zu zweit: statt zwei Mitschülern vergleichen Kind und Fachkraft. Kurz, also Einstieg mit Bewegung.",
+  "von": "agent",
+  "sicher": 0.85,
+  "h": "97c769c1"
+ },
+ "f:ff7-e12:5": {
+  "rolle": [
+   "regulation"
+  ],
+  "eldib": {
+   "primaer": [
+    "V-25"
+   ],
+   "sekundaer": [
+    "K-26"
+   ]
+  },
+  "alter": {
+   "von": 9,
+   "bis": 17
+  },
+  "energie": 1,
+  "belastung": 0,
+  "einzeltauglich": "angepasst",
+  "einzelvariante": {
+   "text": "Nur der Atem-Teil: Hand auf den Bauch, die Unruhe still von 0 bis 10 schätzen. Durch die Nase einatmen bis vier, durch den Mund ausatmen bis sechs, fünfmal; die Fachkraft atmet mit. Dann die Zahl neu schätzen: Was hat sich verändert?",
+   "sagen": [
+    "Nur du kennst deine Zahl – du musst sie mir nicht sagen.",
+    "Und jetzt? Ist die Zahl gleich geblieben oder anders?"
+   ],
+   "fr": {
+    "text": "Seulement la respiration : une main sur le ventre, estimer en silence son agitation de 0 à 10. Inspirer par le nez jusqu’à quatre, expirer par la bouche jusqu’à six, cinq fois ; l’adulte respire avec l’élève. Puis estimer de nouveau : qu’est-ce qui a changé ?",
+    "sagen": [
+     "Toi seul·e connais ton chiffre – tu n’as pas à me le dire.",
+     "Et maintenant ? Le chiffre est resté pareil ou il a changé ?"
+    ]
+   }
+  },
+  "merkmale": {},
+  "begruendung": "Der Schritt bündelt Atemübung und Trimester-Abschluss der Klasse; mit einem Kind taugt nur die Bauchatmung.",
+  "von": "agent",
+  "sicher": 0.9,
+  "h": "4dd99d84"
+ }
+}
