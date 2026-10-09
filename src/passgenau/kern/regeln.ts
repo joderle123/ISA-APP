@@ -224,6 +224,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     if (tm.has('gaeste')) return 'Gäste'
     if (tm.has('blattverweis') && e.typ === 'schritt') return 'Blatt der Quelle'
     if (tm.has('fuerleitung')) return 'für Erwachsene'
+    if (tm.has('kuerzel')) return 'Platzhalter'
+    if (tm.has('aktivierend') && c.heute.energie >= 4) return 'Energie'
     if (tm.has('wochentage') && e.typ === 'baustein') return 'mehrtägig'
     if (tm.has('mehrtag') && ((o.rolle !== 'transfer' || o.blatt) || c.vorsicht.has('familie') || kinderschutz)) return 'mehrtägig'
     if (tm.has('heikel') && !c.heikelFrei.size) return 'heikel'

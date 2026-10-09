@@ -7,7 +7,7 @@ import { bausteinInhalt, eldibKurz, intern, merkmaleVon, quelleText, staemme, te
 import { textMerkmale } from './einzel'
 import { kinderblatt } from './blatt'
 import { BOGEN_NAME, KURSVERWEIS_RE, ROLLE_NAME } from './vokabular'
-import { hash8, SATZ_GRENZE_GROSS } from './hilfen'
+import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter } from './hilfen'
 
 export interface DruckSchritt {
   min: number
@@ -281,7 +281,9 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     hinweise,
     blattTeile,
     kinderblatt: s.blatt ? kinderblatt(k, p, plan, nr, sp) : null,
-    karten: opt.karten ? karten(k, p, plan, nr, sp) : null,
+    // C1/C2: höchstens eine Seite fürs Kind (A11) – gibt es ein Blatt, keine zusätzliche Kartenseite (die Stundenleiste
+    // steht oben auf dem Blatt, die Wahl im Planblatt)
+    karten: opt.karten && !(s.blatt && ['C1', 'C2'].includes(stufeAusAlter(p.alterJahre))) ? karten(k, p, plan, nr, sp) : null,
     materialSeite: matSeite,
     sprache: sp,
     warum: opt.warum,
