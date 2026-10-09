@@ -115,6 +115,40 @@ export const SYSTEM: Stundenschritt[] = [
   },
 ]
 
+/** Einstieg und Rückblick, die der Planer an den Kern bzw. an die Folge bindet (Blind-Bewertung 9.10.: Einstiege aus
+ *  anderen Einheiten führten in ein anderes Thema; „Rückblick & Feiern“ blickte nicht zurück). Der Planer setzt den
+ *  konkreten Text über `ueber` (Titel des Kerns, Kerne der Folge); dies hier ist die Fassung ohne Bezug. */
+SYSTEM.push(
+  {
+    ...basis,
+    id: 'pg:einstieg', h: 'pgeinst1',
+    quelle: { art: 'ritual', titel: 'Passgenau' },
+    titel: 'Worum es heute geht',
+    text: 'Die Fachkraft sagt in einem Satz, worum es heute geht, und zeigt das Material der Übung. Sie erzählt ein kurzes Beispiel aus ihrem eigenen Alltag. Das Kind darf eine Frage stellen oder einfach zuhören.',
+    sagen: ['Heute geht es um …', 'Mir passiert das manchmal so: …'],
+    rolle: ['einstieg'], dauer: { min: 2, typ: 3, max: 5 }, energie: 1, format: ['gespraech'], anspruch: 0, bogen: 'wahrnehmen',
+    fr: {
+      titel: 'De quoi on parle aujourd’hui',
+      text: 'L’adulte dit en une phrase de quoi il s’agit aujourd’hui et montre le matériel de l’activité. Il raconte un court exemple de son propre quotidien. L’enfant peut poser une question ou simplement écouter.',
+      sagen: ['Aujourd’hui, on parle de …', 'Moi, ça m’arrive parfois comme ça : …'],
+    },
+  },
+  {
+    ...basis,
+    id: 'pg:rueckblick', h: 'pgrueck1',
+    quelle: { art: 'ritual', titel: 'Passgenau' },
+    titel: 'Rückblick auf die Folge',
+    text: 'Gemeinsam auf die letzten Sitzungen schauen. Das Kind wählt die Übung, die am meisten geholfen hat, und zeigt sie noch einmal. Die Fachkraft nennt eine Sache, die sie beim Kind hat wachsen sehen. Zum Schluss eine kleine Feier: Das Kind malt ein Abzeichen oder sucht sich einen Sticker aus.',
+    sagen: ['Was davon hat dir am meisten geholfen?', 'Mir ist aufgefallen, dass du jetzt …'],
+    rolle: ['reflexion'], dauer: { min: 4, typ: 6, max: 12 }, energie: 1, format: ['gespraech', 'malen'], anspruch: 1, bogen: 'reflektieren',
+    fr: {
+      titel: 'Retour sur les séances',
+      text: 'Regarder ensemble les dernières séances. L’enfant choisit l’activité qui l’a le plus aidé et la montre encore une fois. L’adulte nomme une chose qu’il a vu grandir chez l’enfant. Pour finir, une petite fête : l’enfant dessine un badge ou choisit un autocollant.',
+      sagen: ['Qu’est-ce qui t’a le plus aidé ?', 'J’ai remarqué que maintenant tu …'],
+    },
+  },
+)
+
 /** Leichte Aktivitäten ohne Ziel (Weg 3) – Rückfall, bis „Freude & Beziehung“ im Katalog ist. Kein Wettbewerb, kein Körperkontakt. */
 const leichtBasis = { ...basis, quelle: { art: 'freude' as const, titel: 'Passgenau' }, ohneZiel: true, belastung: 0 as const }
 SYSTEM.push(

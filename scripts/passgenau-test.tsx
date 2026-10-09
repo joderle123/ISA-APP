@@ -244,7 +244,8 @@ await pruefung('Weg 1/2/3 für 5, 9 und 14 Jahre: Minuten, Bogen, Kern, Blatt, R
       }
       // Blatt: bis 5 Jahre ohne (Vorgabe), sonst mit; Weg 3 ohne
       if (sz.weg === 'leicht' || p.alterJahre <= 5) soll(!s.blatt, `${name} S${s.nr}: Blatt, obwohl ohne vorgesehen`)
-      else soll(!!s.blatt && s.blatt.bausteine.filter((b) => !b.ref.startsWith('pg:')).length >= 2, `${name} S${s.nr}: Blatt fehlt oder zu dünn`)
+      // ein einzelner Teil genügt, wenn er die Seite mindestens zur Hälfte füllt (Blatt aus einer Quelle, kurzer Slot)
+      else soll(!!s.blatt && (s.blatt.bausteine.filter((b) => !b.ref.startsWith('pg:')).length >= 2 || (seitenFuellung(k, p, sz.plan, s.nr)[0] ?? 0) >= 0.5), `${name} S${s.nr}: Blatt fehlt oder zu dünn`)
     }
     // Folge: Bogen monoton, kein Teil doppelt (außer Rituale), Rituale konstant
     if (plan.sitzungen.length > 1) {
@@ -311,7 +312,8 @@ await pruefung('Alternativen: ≥ 3 gültige in ≥ 95 % der Slots, nie aus eine
         for (const x of alt) {
           soll(!folge.has(x.eintrag.id), `${sz.kind}/${sz.weg}: Alternative ${x.eintrag.id} steht schon in der Folge`)
           const g = pruefe(x.eintrag, c, { blatt: o.ort.blatt !== undefined, ritual: true })
-          soll(!g || g === 'schon gemacht', `${sz.kind}/${sz.weg}: Alternative ${x.eintrag.id} verletzt „${g}“`)
+          // ohne den Verlauf der Folge geprüft: eine Brücke zur Sitzung davor ist dort erlaubt
+          soll(!g || g === 'schon gemacht' || g === 'Brücke ohne letzte Stunde', `${sz.kind}/${sz.weg}: Alternative ${x.eintrag.id} verletzt „${g}“`)
         }
       }
     }

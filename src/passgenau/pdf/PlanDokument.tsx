@@ -39,7 +39,7 @@ const zeilen = (t: string, size: number, breite: number) =>
 function schrittHoehe(x: DruckSchritt, d: DruckSitzung, m: PlanMasse): number {
   const tx = T[d.sprache]
   let h = m.titel * 1.25 + 2
-  if (x.wahl?.length) h += m.basis * m.lh + x.wahl.reduce((n, w) => n + 2 + zeilen(`${w.titel} (${w.min} ${tx.min})`, 9, SPALTE - 14) * 9 * 1.25, 0) + 3
+  if (x.wahl?.length) h += m.basis * m.lh + x.wahl.reduce((n, w) => n + 2 + zeilen(`${w.titel} (${w.min} ${tx.min})`, 9, SPALTE - 14) * 9 * 1.25 + (w.kurz ? zeilen(w.kurz, m.klein, SPALTE - 14) * m.klein * m.lh : 0), 0) + 3
   h += zeilen(x.text, m.basis, SPALTE) * m.basis * m.lh
   if (x.sagen.length) h += 3 + x.sagen.slice(0, 3).reduce((n, s, i) => n + zeilen(`${i ? '' : tx.sagen + ': '}„${s}“`, m.sagen, SPALTE - 8) * m.sagen * 1.4, 0)
   if (x.wennEsKippt) h += 3 + zeilen(`${tx.kippt}: ${x.wennEsKippt}`, m.kippt, SPALTE) * m.kippt * 1.4
@@ -187,9 +187,12 @@ function SchrittZeile({ x, i, d, m }: { x: DruckSchritt; i: number; d: DruckSitz
           <View style={{ marginBottom: 3 }}>
             <LText fett m={m}>{`${tx.wahl}:`}</LText>
             {x.wahl.map((w, k) => (
-              <View key={k} style={{ flexDirection: 'row', alignItems: 'center', marginTop: 2 }}>
-                <Kaestchen />
-                <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9, color: NEUTRAL.text, marginLeft: 5 }}>{ty(`${w.titel} (${w.min} ${tx.min})`, sp)}</Text>
+              <View key={k} style={{ marginTop: 2 }}>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                  <Kaestchen />
+                  <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 9, color: NEUTRAL.text, marginLeft: 5 }}>{ty(`${w.titel} (${w.min} ${tx.min})`, sp)}</Text>
+                </View>
+                {w.kurz ? <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: m.klein, lineHeight: m.lh, color: NEUTRAL.leise, marginLeft: 14 }}>{ty(w.kurz, sp)}</Text> : null}
               </View>
             ))}
           </View>

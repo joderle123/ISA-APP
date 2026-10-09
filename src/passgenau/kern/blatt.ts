@@ -135,7 +135,7 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   let gruppe: 'spielschule' | 'toolbox' | null = null
   const notfallNoetig = () => gewaehlt.some((b) => intern(k).notfallBlatt.has((b.e as MikroBaustein).quelle.blatt)) || (c.vorsicht.has('heikel') && c.alter >= 10)
   const refs = (liste: Bewertet[]) => [...reserve, ...liste.map((b) => b.e.id), ...(notfallNoetig() || liste.some((b) => intern(k).notfallBlatt.has((b.e as MikroBaustein).quelle.blatt)) ? [BLATT_SYSTEM.notfall] : [])]
-  const passt = (neu: Bewertet[]): boolean => {
+  const passt = (neu: Bewertet[], einQuelle = false): boolean => {
     const alle = [...gewaehlt, ...neu]
     const seiten = verteile(k, refs(alle), layout)
     if (seiten.length > maxSeiten || seiten[seiten.length - 1] > 1) return false
@@ -145,6 +145,7 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
     if (alle.filter((b) => (b.e as MikroBaustein).art[0] === 'aufgabe').length > maxAufgaben) return false
     // ein Rückblick (Smileys, Daumen) je Blatt genügt
     if (alle.filter((b) => (b.e as MikroBaustein).art.includes('rueckblick')).length > 1) return false
+    if (einQuelle) return true
     // Karten zum Ausschneiden: eine Sorte je Blatt
     if (alle.filter((b) => (b.e as MikroBaustein).art.some((a) => a === 'karten' || a === 'schneiden_kleben' || a === 'memory')).length > 1) return false
     // höchstens zwei Pakete je Quellblatt; eine Geschichte, die ein Paket braucht, zählt nicht mit
@@ -159,7 +160,65 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   const mindest = leicht || o.optional ? 1 : 2
   let passend: Bewertet[] = []
   let stufe = ''
-  for (const [name, test] of stufen) {
+  // Blind-Bewertung 9.10.: Blätter aus Teilen vieler Quellen wirkten zusammengewürfelt (Titel passt nicht, Aufgabe ohne
+  // Vorlage, Seite halb leer). Zuerst ein Blatt aus EINER Quelle: deren Teile in ihrer Reihenfolge, so viele, wie Zeit und
+  // Seite erlauben – am liebsten das Blatt, das zum Kern gehört. Erst wenn keine Quelle trägt, die Zusammenstellung.
+  const ganz = einQuelleBlatt()
+  if (ganz) {
+    gewaehlt.splice(0, gewaehlt.length, ...ganz.teile)
+    stufe = 'quelle'
+  }
+  function einQuelleBlatt(): { teile: Bewertet[] } | null {
+    const jeBlatt = new Map<string, Bewertet[]>()
+    for (const b of [...pool, ...nurAbhaengig.values()]) {
+      const q = (b.e as MikroBaustein).quelle.blatt
+      const l = jeBlatt.get(q)
+      if (l) l.push(b)
+      else jeBlatt.set(q, [b])
+    }
+    const reihe = intern(k).bausteineVonBlatt
+    const kandidatenBlaetter = [...jeBlatt.entries()]
+      .map(([q, liste]) => {
+        const tragend = liste.filter((b) => pool.includes(b) && (leicht || relevant(b)))
+        if (!tragend.length) return null
+        const zumKern = liste.some((b) => kernBlatt.has(b.e.id))
+        const wert = Math.max(...tragend.map((b) => b.s)) + (zumKern ? 0.3 : 0) + 0.03 * Math.min(4, tragend.length)
+        return { q, liste, wert }
+      })
+      .filter((x): x is { q: string; liste: Bewertet[]; wert: number } => !!x)
+      .sort((a, b) => b.wert - a.wert || (a.q < b.q ? -1 : 1))
+    for (const kand of kandidatenBlaetter.slice(0, 12)) {
+      const ordnung = (reihe.get(kand.q) ?? []).map((x) => x.id)
+      const nach = new Map(kand.liste.map((b) => [b.e.id, b]))
+      const folge = ordnung.filter((id) => nach.has(id)).map((id) => nach.get(id)!)
+      gewaehlt.length = 0
+      for (const [i, b] of folge.entries()) {
+        if (gewaehlt.includes(b)) continue
+        const e = b.e as MikroBaustein
+        // Text- und Info-Kästen nur, wenn ein späterer gewählter Teil sie braucht (unten über `braucht`)
+        if (!pool.includes(b)) continue
+        const deps = (e.braucht ?? []).filter((d) => !gewaehlt.some((x) => x.e.id === d)).map((d) => nach.get(d) ?? nurAbhaengig.get(d) ?? pool.find((x) => x.e.id === d))
+        if (deps.some((d) => !d)) continue
+        // eine reine Arbeitsanweisung („Schneide die Krone aus“) nur mit dem Teil, der danach kommt (Vorlage, Bild)
+        const nurAnweisung = e.art.every((a) => a === 'aufgabe')
+        const danach = nurAnweisung ? folge[i + 1] : undefined
+        if (nurAnweisung && (!danach || !pool.includes(danach))) continue
+        const neu = [...(deps as Bewertet[]), b, ...(danach ? [danach] : [])]
+        if (!passt(neu, true)) continue
+        gewaehlt.push(...neu)
+        if (gewaehlt.reduce((x, y) => x + y.e.dauer.typ, 0) >= 0.9 * o.min) break
+      }
+      const summe = gewaehlt.reduce((x, y) => x + y.e.dauer.typ, 0)
+      const aufgaben = gewaehlt.filter((x) => (x.e as MikroBaustein).art.includes('aufgabe') || (x.e as MikroBaustein).art.some((a) => MITMACH_ARTEN.has(a))).length
+      // kurzer Slot oder Bild-Layout: ein einziger, ausreichend großer Teil ist auch ein Blatt (Labyrinth, Suchbild)
+      const einerGross = gewaehlt.length === 1 && (layout === 'bild' || teilHoehe(k, gewaehlt[0].e.id, layout) >= 0.5 * seite.erste)
+      const genug = gewaehlt.length >= mindest || ((o.min <= 8 || layout === 'bild') && einerGross)
+      if (genug && aufgaben >= 1 && (leicht || o.optional || summe >= 0.5 * o.min)) return { teile: [...gewaehlt] }
+    }
+    gewaehlt.length = 0
+    return null
+  }
+  for (const [name, test] of ganz ? [] : stufen) {
     if (name === 'stark' && starkPool.length < 6) continue
     const kernPassend = pool.filter((b) => test(b) && !allein(b))
     if (!leicht && !o.optional && kernPassend.length < 3) continue
@@ -185,6 +244,8 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
         kand.sort((a, b) => rang(mitPlatz(a), mitPlatz(b), `${salz}|${i}`))
         for (const b of kand) {
           const e = b.e as MikroBaustein
+          // eine reine Arbeitsanweisung ohne ihre Vorlage nie allein (Blind-Bewertung: „Schneide die Maske aus“ ohne Maske)
+          if (e.art.every((a) => a === 'aufgabe') && !e.braucht?.length) continue
           const deps = (e.braucht ?? []).filter((d) => !gewaehlt.some((x) => x.e.id === d)).map((d) => nurAbhaengig.get(d) ?? pool.find((x) => x.e.id === d))
           if (deps.some((d) => !d)) continue
           if (!passt([...(deps as Bewertet[]), b])) continue
@@ -207,14 +268,14 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
       break
     }
   }
-  if (gewaehlt.length < mindest) {
+  if (gewaehlt.length < mindest && stufe !== 'quelle') {
     gewaehlt.length = 0
     hinweise.push('Zu wenig passende Blatt-Teile für diese Sitzung – heute ohne Blatt, oder im Baukasten suchen.')
     return null
   }
   if (stufe === 'weit') hinweise.push('Blatt gelockert: Teile aus dem Bereich des Ziels (nächste Stufen), nicht genau zum Ziel.')
   // zu wenig für den Slot (Σ Minuten < Hälfte): mit passenden Teilen anderer Stellen auffüllen
-  if (!leicht && !o.optional) {
+  if (!leicht && !o.optional && stufe !== 'quelle') {
     const summe = () => gewaehlt.reduce((x, b) => x + b.e.dauer.typ, 0)
     const rest = passend.filter((b) => !gewaehlt.includes(b) && !(b.e as MikroBaustein).braucht?.length && (!gruppe || urheberGruppe(c, b.e as MikroBaustein) === gruppe)).sort((a, b) => rang(a, b, salz + '|auf'))
     for (const b of rest) {
@@ -224,7 +285,7 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   }
   // keine halbleere zweite Seite: noch ein Übungsteil oder auf eine Seite kürzen
   let seiten = verteile(k, refs(gewaehlt), layout)
-  if (seiten.length === 2 && seiten[1] < 0.35) {
+  if (seiten.length === 2 && seiten[1] < 0.35 && stufe !== 'quelle') {
     const extra = passend
       .filter((b) => !gewaehlt.includes(b) && (b.e.bogen === 'ueben' || b.e.bogen === 'uebertragen') && (!gruppe || urheberGruppe(c, b.e as MikroBaustein) === gruppe) && !(b.e as MikroBaustein).braucht?.length)
       .sort((a, b) => rang(a, b, salz + '|extra'))
@@ -244,9 +305,22 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
     }
     seiten = verteile(k, refs(gewaehlt), layout)
   }
-  // Reihenfolge: Lernbogen, Abhängigkeiten vor dem, was sie braucht, innerhalb eines Blatts wie im Blatt
+  // ein Blatt aus einer Quelle: halbleere zweite Seite → hintere Teile weglassen, solange genug bleibt
+  if (stufe === 'quelle') {
+    while (seiten.length === 2 && seiten[1] < 0.35 && gewaehlt.length > mindest) {
+      const letzter = gewaehlt[gewaehlt.length - 1]
+      if (gewaehlt.some((b) => (b.e as MikroBaustein).braucht?.includes(letzter.e.id))) break
+      gewaehlt.pop()
+      // eine reine Anweisung bleibt nicht ohne ihre Vorlage stehen
+      const vorletzt = gewaehlt[gewaehlt.length - 1]
+      if (vorletzt && (vorletzt.e as MikroBaustein).art.every((a) => a === 'aufgabe') && gewaehlt.length > mindest) gewaehlt.pop()
+      seiten = verteile(k, refs(gewaehlt), layout)
+    }
+  }
+  // Reihenfolge: Lernbogen, Abhängigkeiten vor dem, was sie braucht, innerhalb eines Blatts wie im Blatt (aus einer
+  // Quelle: wie in der Quelle)
   const ordnung = new Map<string, number>()
-  gewaehlt.forEach((b, i) => ordnung.set(b.e.id, BOGEN_REIHE.indexOf(b.e.bogen ?? 'ueben') * 100 + i))
+  gewaehlt.forEach((b, i) => ordnung.set(b.e.id, stufe === 'quelle' ? i : BOGEN_REIHE.indexOf(b.e.bogen ?? 'ueben') * 100 + i))
   for (const b of gewaehlt) for (const d of (b.e as MikroBaustein).braucht ?? []) if (ordnung.has(d)) ordnung.set(d, Math.min(ordnung.get(d)!, ordnung.get(b.e.id)! - 1))
   gewaehlt.sort((a, b) => ordnung.get(a.e.id)! - ordnung.get(b.e.id)!)
   const teile: BlattTeil[] = refs(gewaehlt).map((ref) => {

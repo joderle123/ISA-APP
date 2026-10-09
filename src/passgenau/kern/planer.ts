@@ -4,8 +4,8 @@
 // gleiches Kind, gleiche Vorlieben → gleicher Plan (Seed aus Kind, Plan-Id, Sitzung, Variante – kein Datum, kein ref).
 import type { Auftrag, Bogen, Ereignis, KatalogEintrag, Plan, PlanSchritt, Profil, Rolle, Sitzung, Sprache } from '../typen'
 import { hash01, hash8, stufeAusAlter, layoutAusStufe, istEldib } from './hilfen'
-import { aktuellerKatalog, ichSatz, intern, type Katalog } from './katalog'
-import { bewerte, kontext, pruefe, rang, warum, type Bewertet, type Kontext } from './regeln'
+import { aktuellerKatalog, ichSatz, intern, kurz, merkmaleVon, textVon, type Katalog } from './katalog'
+import { bewerte, kontext, krisenlage, pruefe, rang, warum, type Bewertet, type Kontext } from './regeln'
 import { baueBlatt } from './blatt'
 import { vertrauenKind, vorliebe, type Vorlieben } from './vorlieben'
 import { KOMPETENZ_NAME, themaByKey, type Kompetenz } from './vokabular'
@@ -176,7 +176,19 @@ export interface Wahl {
 }
 
 /** Passgenau-eigene Schritte, die nur gezielt eingesetzt werden (Blatt-Slot, Pause, Rituale, „einfach da sein“). */
-const NIE_KANDIDAT = new Set(['pg:blatt', 'pg:pause', 'pg:da-sein', 'pg:ankommen', 'pg:abschluss', 'pg:ankommen-still', 'pg:abschluss-still'])
+const NIE_KANDIDAT = new Set(['pg:blatt', 'pg:pause', 'pg:da-sein', 'pg:ankommen', 'pg:abschluss', 'pg:ankommen-still', 'pg:abschluss-still', 'pg:einstieg', 'pg:rueckblick'])
+
+const MINUTEN_RE = /(\d{1,3})\s*(?:Minuten|Min\.|minutes)/g
+const TEXT_MIN = new WeakMap<KatalogEintrag, number>()
+/** Größte Minutenzahl, die der Text eines Schritts nennt (0: keine). */
+function textMinuten(e: KatalogEintrag): number {
+  let m = TEXT_MIN.get(e)
+  if (m !== undefined) return m
+  m = 0
+  if (e.typ === 'schritt') for (const x of (e.einzelvariante?.text ?? e.text).matchAll(MINUTEN_RE)) m = Math.max(m, Number(x[1]))
+  TEXT_MIN.set(e, m)
+  return m
+}
 
 function dauerPasst(e: KatalogEintrag, min: number, locker: number): boolean {
   const t = locker >= 1 ? 3 : 1
@@ -196,6 +208,8 @@ export function kandidaten(c: Kontext, s: SlotAuftrag): Wahl[] {
     for (const e of roh.values()) {
       if (pruefe(e, c, { locker, gesperrt: s.gesperrt, rolle: s.rolle === 'pause' ? 'bewegung' : (s.rolle as Rolle), vorher: s.vorher }) !== null) continue
       if (!dauerPasst(e, s.min, locker)) continue
+      // der Text nennt selbst eine längere Zeit („30 Minuten Ruhezeit“, „20 Minuten backen“) als der Slot hat
+      if (textMinuten(e) > s.min + 5) continue
       if (s.rolle === 'kern' && s.kernFormate?.length === 2 && s.kernFormate[0] === s.kernFormate[1] && e.format[0] === s.kernFormate[0]) continue
       if (s.rolle === 'bewegung' && c.heute.energie >= 6 && e.energie < 2) continue
       // Phasen aus Material-Einheiten sind Teile längerer Stunden: als kurzes Spiel oder Pause weniger passend
@@ -236,6 +250,8 @@ function ritualErlaubt(c: Kontext, e: KatalogEintrag, rolle: 'ankommen' | 'absch
     if (rolle === 'abschluss' && anspruch > 1) return false
   }
   if (c.heute.stimmung <= 2 && anspruch > 1) return false
+  // Krisenlage (Stimmung ≤ 2, Trauer, Trauma): das Ankommen fragt nichts ab (A12) – nur Rituale ohne Anspruch
+  if (rolle === 'ankommen' && krisenlage(c) && anspruch > 0) return false
   return true
 }
 
@@ -275,6 +291,8 @@ export interface SitzungsAuftrag {
   bevorzugt?: Set<string>
   /** zweites Ziel trägt das Blatt (A · B · A · B) */
   fokus?: Map<string, number>
+  /** Kerne der früheren Sitzungen dieser Folge (für den Rückblick der letzten Sitzung) */
+  fruehereKerne?: string[]
 }
 
 function planSchritt(b: Bewertet, rolle: Rolle, min: number, c: Kontext, o: { phase: Bogen | 'leicht'; nr: number; ritual?: boolean; erkundung?: boolean; lockerText?: string }): PlanSchritt {
@@ -294,6 +312,44 @@ function planSchritt(b: Bewertet, rolle: Rolle, min: number, c: Kontext, o: { ph
 export function quelleEinheit(id: string): string {
   const t = id.split(':')
   return t.length >= 3 ? `${t[0]}:${t[1]}` : id
+}
+
+/** Teilt ein Eintrag Hauptziel oder Thema mit dem Kern (für Einstieg, Reflexion und Nebenschritte)? */
+function gleichesThema(e: KatalogEintrag, kern: KatalogEintrag): boolean {
+  const codes = new Set(kern.eldib.filter((x) => x.gewicht === 1).map((x) => x.code))
+  const ziel = e.eldib.some((x) => x.gewicht === 1 && codes.has(x.code))
+  const thema = !e.thema.length || !kern.thema.length || e.thema.some((t) => kern.thema.includes(t))
+  return ziel && thema
+}
+
+/** Eigener Einstieg, der den Kern der Stunde ankündigt (wenn keine Einheit einen passenden hat). */
+function einstiegSchritt(c: Kontext, min: number, kern: KatalogEintrag): PlanSchritt {
+  const e = c.k.eintraege.get('pg:einstieg')!
+  const de = textVon(kern, 'de').titel
+  const fr = kern.typ === 'schritt' && kern.fr ? kern.fr.titel : de
+  return {
+    ref: e.id, h: e.h, rolle: 'einstieg', min: Math.min(min, 5), t: 'Worum es heute geht',
+    ueber: {
+      text: `Die Fachkraft sagt in einem Satz, worum es heute geht („${de}“), und zeigt das Material der Übung. Sie erzählt ein kurzes Beispiel aus ihrem eigenen Alltag. Das Kind darf eine Frage stellen oder einfach zuhören.`,
+      'fr.text': `L’adulte dit en une phrase de quoi il s’agit aujourd’hui (« ${fr} ») et montre le matériel de l’activité. Il raconte un court exemple de son propre quotidien. L’enfant peut poser une question ou simplement écouter.`,
+    },
+    warum: ['Führt in den Kern der Stunde ein'],
+  }
+}
+
+/** Rückblick der letzten Sitzung: nennt die Kerne der Folge. */
+function rueckblickSchritt(c: Kontext, min: number, kerne: string[]): PlanSchritt {
+  const e = c.k.eintraege.get('pg:rueckblick')!
+  const titel = (sp: 'de' | 'fr') => kerne.map((r) => c.k.eintraege.get(r)).filter((x): x is KatalogEintrag => !!x).map((x) => (sp === 'fr' && x.typ === 'schritt' && x.fr ? x.fr.titel : textVon(x, 'de').titel))
+  const liste = (l: string[]) => l.map((t) => `„${t}“`).join(', ')
+  return {
+    ref: e.id, h: e.h, rolle: 'reflexion', min, t: 'Rückblick auf die Folge',
+    ueber: {
+      text: `Gemeinsam auf die letzten Sitzungen schauen: ${liste(titel('de'))}. Das Kind wählt die Übung, die am meisten geholfen hat, und zeigt sie noch einmal. Die Fachkraft nennt eine Sache, die sie beim Kind hat wachsen sehen. Zum Schluss eine kleine Feier: Das Kind malt ein Abzeichen oder sucht sich einen Sticker aus.`,
+      'fr.text': `Regarder ensemble les dernières séances : ${titel('fr').map((t) => `« ${t} »`).join(', ')}. L’enfant choisit l’activité qui l’a le plus aidé et la montre encore une fois. L’adulte nomme une chose qu’il a vu grandir chez l’enfant. Pour finir, une petite fête : l’enfant dessine un badge ou choisit un autocollant.`,
+    },
+    warum: ['Letzte Sitzung: zurückblicken und feiern'],
+  }
 }
 
 export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
@@ -346,8 +402,25 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     if (slot.rolle === 'einstieg' || slot.rolle === 'reflexion') {
       // Einstieg und Abschlussphase einer Material-Einheit führen in deren Hauptteil ein – nur zusammen mit ihm
       auswahl = liste.filter((w) => !w.b.e.id.startsWith('m:') || (kernQuelle !== null && quelleEinheit(w.b.e.id) === kernQuelle))
+      // Blind-Bewertung 9.10.: Einstieg, Kern und Blatt behandelten oft drei Themen. Einstieg und Reflexion nur aus der
+      // Einheit des Kerns oder mit demselben Hauptziel und Thema; sonst ein eigener Einstieg, der den Kern ankündigt
+      if (kern) auswahl = auswahl.filter((w) => kernQuelle === quelleEinheit(w.b.e.id) || gleichesThema(w.b.e, kern!))
       for (const w of auswahl) if (kernQuelle && quelleEinheit(w.b.e.id) === kernQuelle) w.b = { ...w.b, s: w.b.s + 0.25 }
       auswahl.sort((x, y) => rang(x.b, y.b, `${salz}|${i}`))
+      // letzte Sitzung einer Folge: ein echter Rückblick auf die Kerne der Folge
+      if (slot.rolle === 'reflexion' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2) {
+        ergebnis[i] = rueckblickSchritt(c, slot.min, o.fruehereKerne!)
+        continue
+      }
+      if (!auswahl[0] && slot.rolle === 'einstieg' && kern) {
+        ergebnis[i] = einstiegSchritt(c, slot.min, kern)
+        continue
+      }
+    }
+    // Spiel, Bewegung, Ruhe neben dem Kern: kein fremdes Thema (eine Wut-Übung als Pause in einer Motivations-Stunde)
+    if (kern && c.weg !== 'leicht' && (slot.rolle === 'spiel' || slot.rolle === 'bewegung' || slot.rolle === 'regulation')) {
+      const ohneFremd = auswahl.filter((w) => !w.b.e.thema.length || w.b.e.ohneZiel || gleichesThema(w.b.e, kern!))
+      if (ohneFremd.length) auswahl = ohneFremd
     }
     const w = auswahl[0]
     if (!w) {
@@ -407,9 +480,11 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   if (kernSchritt?.ref.startsWith('m:') && !kernSchritt.hinweis && !schritte.some((x) => x !== kernSchritt && quelleEinheit(x.ref) === quelleEinheit(kernSchritt.ref))) {
     const einheit = quelleEinheit(kernSchritt.ref)
     const einstieg = (c.k.nachRolle.get('einstieg') ?? []).find((e) => quelleEinheit(e.id) === einheit && e.typ === 'schritt' && Number(e.id.split(':')[2] ?? 0) < Number(kernSchritt.ref.split(':')[2] ?? 0))
-    if (einstieg?.typ === 'schritt') {
+    // ohne Gruppen-Einführung („Beginnt im Sitzkreis“) und ohne Gefühle abzufragen in Krisenlage
+    const em = einstieg ? merkmaleVon(c.k, einstieg) : new Set<string>()
+    if (einstieg?.typ === 'schritt' && !em.has('gruppe') && !em.has('ihr') && !em.has('jugend') && !(em.has('gefuehlfrage') && krisenlage(c))) {
       const t = einstieg.text.replace(/\s+/g, ' ').trim()
-      kernSchritt.hinweis = `Erst kurz einführen: ${t.length > 160 ? t.slice(0, 159).replace(/\s+\S*$/, '') + ' …' : t}`
+      kernSchritt.hinweis = `Erst kurz einführen: ${kurz(t, 200)}`
     }
   }
   // Französisch bevorzugt (T-M4): sagen, wie viele Teile es nur auf Deutsch gibt
@@ -585,7 +660,7 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
       if (neu) rit = { ...rit, ankommen: neu }
     }
     const fokus = zweiZiele && i % 2 === 1 ? new Map([[c.ziele[0].code, 0.8], [c.ziele[1].code, 1]]) : undefined
-    const s = fuelleSitzung(c, { plan: id, nr: i + 1, phase, rituale: rit, gesperrt, vorher, kernFormate, variante, fokus })
+    const s = fuelleSitzung(c, { plan: id, nr: i + 1, phase, rituale: rit, gesperrt, vorher, kernFormate, variante, fokus, fruehereKerne: sitzungen.flatMap((x) => x.schritte.filter((y) => y.rolle === 'kern').map((y) => y.ref)) })
     for (const x of s.schritte) vorher.add(x.ref)
     const k = s.schritte.find((x) => x.rolle === 'kern')
     const ke = k ? c.k.eintraege.get(k.ref) : undefined

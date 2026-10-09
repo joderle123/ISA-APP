@@ -83,7 +83,8 @@ function Kopfzeile({ blatt, nr, sprache, p, m, lehrer, heft }: { blatt: Blatt; n
   const bereich = bereichById.get(blatt.bereich)!
   const tx = TEXTE[sprache]
   // Im Heft: „Lektion 1“ als Reiter, Modul und Thema daneben, keine Namensfelder (der Name steht auf dem Deckblatt)
-  const nummer = heft ? (lehrer ? heft.reiter : '') : [nr ? `${tx.arbeitsblatt} ${nr}` : null, stufenText(blatt.stufen)].filter(Boolean).join('  ·  ')
+  // Passgenau: auch kein Stufenkürzel („C3“, „ES“) – auf dem Blatt eines Kindes wirkt es wie die Klasse im Klartext
+  const nummer = heft ? (lehrer ? heft.reiter : '') : [nr ? `${tx.arbeitsblatt} ${nr}` : null, blatt.passgenau ? null : stufenText(blatt.stufen)].filter(Boolean).join('  ·  ')
   // Passgenau: kein Bereichs-Etikett auf dem Blatt des Kindes (Farbe bleibt, Text „Passgenau“)
   const thema = heft ? heft.meta : blatt.passgenau ? '' : themaLabel(blatt.bereich, blatt.thema, sprache)
   const reiter = lehrer ? tx.lehrer : heft ? heft.reiter : blatt.passgenau ? 'Passgenau' : bereich[sprache]

@@ -14,8 +14,8 @@ import { SCHRIFT, typo } from './stil'
 import { Fliess, Kaestchen, Plakette, type Ctx } from './bausteine'
 
 const T: Record<Sprache, { meinZiel: string; geschafft: string; wahl: string; heute: string; checkin: string; min: string; erledigt: string; wetter: string[] }> = {
-  de: { meinZiel: 'Mein Ziel', geschafft: 'geschafft', wahl: 'Heute möchte ich zuerst …', heute: 'Das machen wir heute', checkin: 'So bin ich heute da:', min: 'Min.', erledigt: 'Heute', wetter: ['sonnig', 'wolkig', 'Regen', 'Gewitter'] },
-  fr: { meinZiel: 'Mon objectif', geschafft: 'réussi', wahl: 'Aujourd’hui, je voudrais d’abord …', heute: 'Ce qu’on fait aujourd’hui', checkin: 'Comment je suis là aujourd’hui :', min: 'min', erledigt: 'Aujourd’hui', wetter: ['soleil', 'nuages', 'pluie', 'orage'] },
+  de: { meinZiel: 'Mein Ziel', geschafft: 'geschafft', wahl: 'Heute suche ich mir aus:', heute: 'Das machen wir heute', checkin: 'So bin ich heute da:', min: 'Min.', erledigt: 'Heute', wetter: ['sonnig', 'wolkig', 'Regen', 'Gewitter'] },
+  fr: { meinZiel: 'Mon objectif', geschafft: 'réussi', wahl: 'Aujourd’hui, je choisis :', heute: 'Ce qu’on fait aujourd’hui', checkin: 'Comment je suis là aujourd’hui :', min: 'min', erledigt: 'Aujourd’hui', wetter: ['soleil', 'nuages', 'pluie', 'orage'] },
 }
 
 const ty = (c: Ctx, s: string) => typo(s, c.sprache)

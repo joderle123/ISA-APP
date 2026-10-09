@@ -12,6 +12,7 @@ import { hash8, STUFE_ALTER, STUFEN, woerter } from './hilfen'
 import { paketBausteine, setzeText, texte } from './inhalt'
 import { bausteinOhneKursverweis, schrittAllgemein } from './beschriftung'
 import { SYSTEM } from './system'
+import { textMerkmale } from './einzel'
 
 export interface Katalog {
   eintraege: Map<string, KatalogEintrag>
@@ -37,6 +38,8 @@ export interface KatalogIntern {
   notfallBlatt: Set<string>
   /** Schritte, die ein Ergebnis einer früheren Kursstunde voraussetzen (VORLAUF_RE) – plant Passgenau nie */
   vorlauf: Set<string>
+  /** Textmerkmale je Eintrag (einzel.ts), beim ersten Zugriff berechnet */
+  merkmale: Map<string, Set<string>>
   /** Mikro-Bausteine je Quellblatt in Blattreihenfolge */
   bausteineVonBlatt: Map<string, MikroBaustein[]>
   /** Wahlkarten für Weg 3 (neue Inhalte) */
@@ -351,7 +354,7 @@ export function baueKatalog(q: Quellen, bDatei: BausteineDatei, sDatei: Schritte
   for (const l of nachRolle.values()) l.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
 
   const k: Katalog = { eintraege, nachRolle, stand: `${bDatei.stand}/${sDatei.stand}` }
-  INTERN.set(k, { q, seite: bDatei.seite, eldib, nachH, vorlesbar, notfallBlatt, vorlauf, bausteineVonBlatt, wahlkarten: inhalte.wahlkarten.sort((a, b) => (a.id < b.id ? -1 : 1)), materialName: inhalte.material })
+  INTERN.set(k, { q, seite: bDatei.seite, eldib, nachH, vorlesbar, notfallBlatt, vorlauf, merkmale: new Map(), bausteineVonBlatt, wahlkarten: inhalte.wahlkarten.sort((a, b) => (a.id < b.id ? -1 : 1)), materialName: inhalte.material })
   aktuell = k
   return k
 }
@@ -390,7 +393,7 @@ export function ohneVorlaufText(text: string): string {
 const STAMM_STOPP = new Set(
   'vorher bereit legen liegen kopier drucke ausdru schnei aussch stelle vorber minde schrei zeichn große großen kleine kleinen einen einem einer eines jeder jedes jedem dabei sowie damit darauf außerd bitte kinder jugend fachkr leitun schüle person zusamm ersten zweite dritte gemein später danach dafür etwas welche diese dieser dieses wieder immer'.split(' '),
 )
-function staemme(t: string): Set<string> {
+export function staemme(t: string): Set<string> {
   return new Set((t.toLowerCase().match(/[a-zäöüß][a-zäöüß-]{4,}/g) ?? []).map((w) => w.replace(/-/g, '').slice(0, 6)).filter((w) => w.length >= 5 && !STAMM_STOPP.has(w)))
 }
 
@@ -408,6 +411,8 @@ function vorbereitungFuer(e: Stundenschritt): string | undefined {
       const saetze = x.split(/(?<=[.;!?])\s+/).filter((s) => !VORB_GRUPPE_RE.test(s) && !VORLAUF_RE.test(s))
       return saetze.length ? [saetze.join(' ')] : []
     })
+    // Reste wie „ruhiger Moment“ (aus „Keine; ruhiger Moment“) sagen nichts
+    .filter((x) => x.split(/\s+/).length >= 3)
     .filter((x) => !einheit || [...staemme(x)].some((w) => bezug.has(w)))
   return teile.length ? teile.join(' · ') : undefined
 }
@@ -463,9 +468,20 @@ export function artName(art: string): string {
   return ART_NAME[art] ?? art
 }
 
-function kurz(s: string, n = 90): string {
+/** Kurzfassung ohne Schnitt mitten im Satz, wo es geht: ganze Sätze bis n, sonst bis zum letzten Komma, sonst Wortgrenze. */
+export function kurz(s: string, n = 90): string {
   const t = s.replace(/\s+/g, ' ').trim()
-  return t.length <= n ? t : t.slice(0, n - 1).replace(/\s+\S*$/, '') + ' …'
+  if (t.length <= n) return t
+  const saetze = t.split(/(?<=[.!?])\s+/)
+  let r = ''
+  for (const x of saetze) {
+    if ((r ? r.length + 1 : 0) + x.length > n) break
+    r = r ? `${r} ${x}` : x
+  }
+  if (r) return r
+  const komma = t.slice(0, n).lastIndexOf(', ')
+  if (komma > n * 0.5) return t.slice(0, komma)
+  return t.slice(0, n - 1).replace(/\s+\S*$/, '') + ' …'
 }
 
 /** Quelle als Text für Plan und Karte: „Skills · Die Stopp-Ampel“, „G-01 · Mein Wutvulkan“ (nie Kurs-Ids). */
@@ -489,6 +505,28 @@ export function bausteinInhalt(k: Katalog, b: MikroBaustein, sprache: Sprache): 
   // Fassung ohne Kursverweis („aus Einheit 20“) aus der Beschriftung – die Pfade gelten für die deutsche Fassung
   if (sp === 'de' && b.allgemein) for (const [pfad, text] of bausteinOhneKursverweis(b.allgemein, new Map(texte(liste).map((t) => [t.pfad, t.text])))) liste = setzeText(liste, pfad, text)
   return liste
+}
+
+/** Textmerkmale (einzel.ts) des gedruckten Texts eines Eintrags, DE und FR zusammen; Schritte: Titel, Text (bei Einzelvariante
+ *  deren Text), Sagen; Bausteine: aller Text des Pakets. */
+export function merkmaleVon(k: Katalog, e: KatalogEintrag): Set<string> {
+  const cache = intern(k).merkmale
+  let m = cache.get(e.id)
+  if (m) return m
+  const teile: string[] = []
+  for (const sp of ['de', 'fr'] as const) {
+    if (e.typ === 'schritt') {
+      if (sp === 'fr' && !e.fr) continue
+      const t = textVon(e, sp)
+      teile.push(t.titel, t.text, ...(t.sagen ?? []))
+    } else {
+      if (sp === 'fr' && !e.sprache.fr) continue
+      teile.push(...texte(bausteinInhalt(k, e, sp)).map((x) => x.text))
+    }
+  }
+  m = textMerkmale(teile.join('\n'))
+  cache.set(e.id, m)
+  return m
 }
 
 export function textVon(e: KatalogEintrag, sprache: Sprache): { titel: string; text: string; sagen?: string[]; wennEsKippt?: string; quelle: string } {

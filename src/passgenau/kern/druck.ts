@@ -2,8 +2,8 @@
 // keinen Katalog – so landen Blätter und Metadaten nicht ein zweites Mal im PDF-Modul. Datenschutz (9.6 Punkt 3, E-M13):
 // auf dem Planblatt Vorname, Codes und Quelle-Art, aber keine Daten von Vorfällen oder Notizen; Begründungen nur auf Wunsch.
 import type { Baustein, Blatt } from '../../blatt/typen'
-import type { MikroBaustein, Plan, PlanSchritt, Profil, Rolle, Sprache } from '../typen'
-import { bausteinInhalt, eldibKurz, intern, quelleText, textVon, zielSatz, type Katalog } from './katalog'
+import type { KatalogEintrag, MikroBaustein, Plan, PlanSchritt, Profil, Rolle, Sprache } from '../typen'
+import { bausteinInhalt, eldibKurz, intern, quelleText, staemme, textVon, zielSatz, type Katalog } from './katalog'
 import { kinderblatt } from './blatt'
 import { BOGEN_NAME, KURSVERWEIS_RE, ROLLE_NAME } from './vokabular'
 import { hash8 } from './hilfen'
@@ -19,7 +19,8 @@ export interface DruckSchritt {
   warum: string[]
   achtung?: string
   hinweis?: string
-  wahl?: { titel: string; min: number }[]
+  /** Optionen der Wahl; ab der zweiten mit einer kurzen Anleitung (die erste steht im Text des Schritts) */
+  wahl?: { titel: string; min: number; kurz?: string }[]
   /** der Slot „Übung/Blatt“ */
   blatt?: boolean
   erkundung?: boolean
@@ -62,6 +63,14 @@ export interface DruckFolge {
 
 const KURZ = 240
 
+/** Kurzer Titel für eine Wahlkarte ohne „…“: Teil vor „ – “ oder „:“, sonst bis zur letzten Wortgrenze. */
+function kurzLabel(t: string, n = 38): string {
+  if (t.length <= n) return t
+  const vorne = t.split(/\s+[–-]\s+|:\s+/)[0]
+  if (vorne.length <= n && vorne.length >= 8) return vorne
+  return t.slice(0, n).replace(/\s+\S*$/, '').replace(/[,;:–-]$/, '')
+}
+
 /** Hinweise des Planers, die eine Handlung in der Oberfläche anbieten oder nur die Planung erklären – auf Papier sinnlos */
 const NUR_OBERFLAECHE = /Leichte Stunde zeigen\.$|Mitmach-Seite auf Wunsch\.$|ohne Blatt geplant|nur auf Deutsch\.$|im Baukasten suchen\.$|Im Ergebnis anpassen\.$/
 
@@ -76,10 +85,33 @@ function hinweisFr(h: string): string {
   return h
 }
 
+/** Sätze, die immer bleiben: Sicherheit, Krise, Freiwilligkeit (E-M4). */
+const SICHERHEIT_RE = /(Krise|Notfall|SePAS|Hilfe holen|melden|Gefährdung|Suizid|Selbstverletz|Kinderschutz|Gewalt|vertraulich|nicht vorlesen|Stopp|freiwillig|Freiwillig|niemand muss|keiner muss|Hilfe-Zeile|Notruf|Trauma|traumat|Übergriff|danach (kurz )?(mit|nach)|crise|urgence|confidentiel|volontaire|personne n['’]est obligé)/
+
+/** Beachten-Hinweis für diesen Schritt: Die Einheit trägt einen Hinweis für alle ihre Schritte – davon bleiben die Sätze
+ *  zur Sicherheit und die, die diesen Schritt betreffen (Blind-Bewertung 9.10.: Hinweise zu Übungen, die nicht vorkamen). */
+function achtungFuer(e: KatalogEintrag, schrittText: string, sicherheitImmer = true): string | undefined {
+  if (!e.achtung) return undefined
+  if (e.typ !== 'schritt' || !(e.id.startsWith('k:') || e.id.startsWith('f:') || e.id.startsWith('m:'))) return e.achtung
+  const bezug = staemme(schrittText)
+  const saetze = e.achtung.replace(/\s+/g, ' ').trim().split(/(?<=[.!?])\s+(?=[A-ZÄÖÜ„«(])/)
+  const bleibt = saetze.filter((x: string) => (sicherheitImmer && SICHERHEIT_RE.test(x)) || [...staemme(x)].some((w) => bezug.has(w)))
+  return bleibt.length ? bleibt.join(' ') : undefined
+}
+
+/** Kürzen nur an Satzgrenzen (Blind-Bewertung 9.10.: „…“ mitten im Satz wirkt abgeschnitten, gerade bei Sicherheits-
+ *  hinweisen): ganze Sätze bis zur Länge n, mindestens der erste Satz ganz. */
 function kuerzen(s: string | undefined, n = KURZ): string | undefined {
   if (!s) return undefined
   const t = s.replace(/\s+/g, ' ').trim()
-  return t.length <= n ? t : t.slice(0, n - 1).replace(/\s+\S*$/, '') + ' …'
+  if (t.length <= n) return t
+  const saetze = t.split(/(?<=[.!?])\s+(?=[A-ZÄÖÜ„«(])/)
+  let r = saetze[0]
+  for (const x of saetze.slice(1)) {
+    if (r.length + 1 + x.length > n) break
+    r += ' ' + x
+  }
+  return r
 }
 
 /** Begründung ohne Datum für den Druck (E-M13: kein Vorfall- oder Notizdatum auf Papier). */
@@ -111,7 +143,7 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
   const rolle = ROLLE_NAME[x.rolle]?.[sprache] ?? x.rolle
   if (!e) return { min: x.min, rolle, titel: x.t ?? x.ref, text: sprache === 'fr' ? 'Plus dans le catalogue – à remplacer.' : 'Nicht mehr im Katalog – bitte ersetzen.', sagen: [], quelle: '', warum: [] }
   const t = textVon(e, sprache)
-  const ueberText = x.ueber?.text
+  const ueberText = (sprache === 'fr' ? x.ueber?.['fr.text'] : undefined) ?? x.ueber?.text
   const d: DruckSchritt = {
     min: x.min,
     rolle,
@@ -121,12 +153,23 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
     wennEsKippt: t.wennEsKippt,
     quelle: x.ref.startsWith('pg:') ? '' : t.quelle,
     warum: warum ? (x.warum ?? []).map(warumOhneDatum) : [],
-    achtung: kuerzen(e.achtung),
+    // Nebenschritte (Ankommen, Bewegung, Spiel, Ruhe, Abschluss) tragen den Hinweis ihrer Einheit nur, wenn er sie betrifft
+    achtung: kuerzen(achtungFuer(e, `${t.titel} ${t.text} ${(t.sagen ?? []).join(' ')}`, x.rolle === 'kern' || x.rolle === 'einstieg' || x.rolle === 'reflexion' || x.rolle === 'transfer'), 320),
     hinweis: x.hinweis,
     blatt: x.ref === 'pg:blatt',
     erkundung: x.erkundung,
   }
-  if (x.wahl?.length) d.wahl = [{ titel: t.titel, min: x.min }, ...x.wahl.map((w) => ({ titel: (w.ref === 'pg:blatt' ? (sprache === 'fr' ? 'Page à colorier / à jouer' : w.t) : k.eintraege.get(w.ref) ? textVon(k.eintraege.get(w.ref)!, sprache).titel : w.t) ?? w.ref, min: w.min }))]
+  // Blind-Bewertung 9.10.: Optionen ohne Anleitung („Carte au trésor“ – und dann?) – jede Option mit einem Satz
+  if (x.wahl?.length)
+    d.wahl = [
+      { titel: t.titel, min: x.min },
+      ...x.wahl.map((w) => {
+        const we = k.eintraege.get(w.ref)
+        const titel = (w.ref === 'pg:blatt' ? (sprache === 'fr' ? 'Page à colorier / à jouer' : w.t) : we ? textVon(we, sprache).titel : w.t) ?? w.ref
+        const kurzText = we && w.ref !== 'pg:blatt' ? kuerzen(textVon(we, sprache).text, 170) : undefined
+        return { titel, min: w.min, ...(kurzText ? { kurz: kurzText } : {}) }
+      }),
+    ]
   return d
 }
 
@@ -162,7 +205,9 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       const quelle = intern(k).q.blatt.get(e.quelle.blatt)
       const leichter = quelle ? ((sp === 'fr' && quelle.fr) || quelle.de).lehrer.differenzierung?.leichter : undefined
       // der Tipp kommt aus dem Quellblatt – mit Verweis auf die Kursstruktur („pro Modul“) lieber keiner
-      return { titel: textVon(e, sp).titel, quelle: quelleText(e, sp), tipp: leichter && !KURSVERWEIS_RE.test(leichter) ? kuerzen(leichter, 160) : undefined }
+      // Herkunft in Worten statt Katalog-Nummer („S-57 · …“ las sich wie ein Code)
+      const qTitel = quelle ? ((sp === 'fr' && quelle.fr) || quelle.de).titel : quelleText(e, sp)
+      return { titel: textVon(e, sp).titel, quelle: sp === 'fr' ? `de la fiche « ${qTitel} »` : `aus dem Blatt „${qTitel}“`, tipp: leichter && !KURSVERWEIS_RE.test(leichter) ? kuerzen(leichter, 160) : undefined }
     })
   const ziele = plan.ziele.map((code) => {
     const satz = zielSatz(k, p, code, sp)
@@ -227,11 +272,14 @@ export function druckPakete(k: Katalog, plan: Plan, nr: number): MikroBaustein[]
 
 /** Materialseite zur Stunde: die Druckpakete als eigenes Blatt (gleiche Gestaltung wie ihr Quellblatt). */
 export function materialSeite(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: Sprache): Blatt | null {
-  const pakete = druckPakete(k, plan, nr)
+  // für ein französisches Kind nur Material mit französischem Text (A6: keine deutsche Seite fürs Kind)
+  const pakete = druckPakete(k, plan, nr).filter((b) => sprache !== 'fr' || b.sprache.fr || !b.textfelder.length)
   if (!pakete.length) return null
   const quelle = intern(k).q.blatt.get(pakete[0].quelle.blatt)
-  const fr = sprache === 'fr' && pakete.every((b) => b.sprache.fr)
+  const fr = sprache === 'fr'
   const bausteine = pakete.flatMap((b) => bausteinInhalt(k, b, fr ? 'fr' : 'de'))
+  // E-M3 auch hier: kommt Material aus einem Blatt mit Hilfe-Zeile (oder ist ein heikles Thema offen), steht sie darunter
+  if (pakete.some((b) => intern(k).notfallBlatt.has(b.quelle.blatt)) || p.vorsicht.includes('heikel') || (p.achtung ?? []).length) bausteine.push({ art: 'notfall' } as Baustein)
   const inhalt = { titel: fr ? 'Matériel pour la séance' : 'Material zur Stunde', bausteine, lehrer: { ziel: '', ablauf: [], hintergrund: '' } }
   return {
     id: `pg-material-${hash8(plan.id + '|' + nr + '|' + pakete.map((b) => b.id).join(','))}`,
@@ -270,7 +318,10 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
   // ist das Ankommens-Ritual selbst schon ein Check-in (Gefühlstiere, Wetter, Zahl), keine zweite Karte dafür
   const ritualText = ritual ? textVon(ritual, 'de').titel + ' ' + textVon(ritual, 'de').text : ''
   const selbstCheckin = /(gefühl|wie geht|stimmung|wetter|heute zu (ihm|ihr|dir) passt|zahl von|skala|daumen)/i.test(ritualText)
-  if (anspruch >= 1 && !selbstCheckin) bausteine.push({ art: 'checkin', modus: jugend ? 'zahl' : alter <= 7 ? 'gesichter' : 'wetter' })
+  // in Krisenlage keine Gefühle abfragen (A12): Stimmung ≤ 2, Weg 3 mit belastender Tagesform, Vorsicht Trauma/Trauer
+  const krise = (plan.auftrag?.heute?.stimmung ?? 4) <= 2 || p.vorsicht.includes('trauma') || p.vorsicht.includes('trauer') ||
+    (plan.weg === 'leicht' && (plan.auftrag?.tagesformen ?? []).some((t) => ['traurig', 'aengstlich', 'rueckzug', 'aufgewuehlt', 'wuetend'].includes(t)))
+  if (anspruch >= 1 && !selbstCheckin && !krise) bausteine.push({ art: 'checkin', modus: jugend ? 'zahl' : alter <= 7 ? 'gesichter' : 'wetter' })
   const wahl = s.schritte.find((x) => x.wahl?.length)
   if (wahl) {
     const optionen = [wahl, ...(wahl.wahl ?? [])].slice(0, 3).map((w) => {
@@ -278,16 +329,17 @@ export function karten(k: Katalog, p: Profil, plan: Plan, nr: number, sprache: S
       const t = w.ref === 'pg:blatt' ? (sprache === 'fr' ? 'Page à colorier' : 'Mitmach-Seite') : e ? textVon(e, sprache).titel : (('t' in w && w.t) || w.ref)
       const f = e?.format[0]
       const bild = w.ref === 'pg:blatt' ? 'icon:pencil' : f === 'bewegung' ? 'icon:run' : f === 'malen' ? 'icon:palette' : f === 'musik' ? 'icon:music' : f === 'spiel' ? 'icon:dice-5' : f === 'basteln' ? 'icon:puzzle' : f === 'sinne' || f === 'atmen' ? 'icon:leaf' : 'icon:armchair'
-      return { text: t.length > 38 ? t.slice(0, 37) + '…' : t, bild, min: w.min }
+      return { text: kurzLabel(t), bild, min: w.min }
     })
     const karte = wahl.wahlkarte ? intern(k).wahlkarten.find((w) => w.id === wahl.wahlkarte) : undefined
     bausteine.push({ art: 'wahlkarte', frage: karte?.kopf[sprache], optionen })
   }
-  if (p.wochenziel && plan.weg !== 'leicht') bausteine.push({ art: 'zielkarte', titel: sprache === 'fr' ? 'Mon objectif de la semaine' : 'Mein Wochenziel', text: p.wochenziel, tage: sprache === 'fr' ? ['lun', 'mar', 'mer', 'jeu', 'ven'] : ['Mo', 'Di', 'Mi', 'Do', 'Fr'] })
+  // keine Wochenziel-Karte mehr (Blind-Bewertung 9.10., A9): der Ich-Satz des Förderziels gehört nicht aufs Papier des Kindes
   if (bausteine.length < 2) return null
   const kb = s.blatt ? kinderblatt(k, p, plan, nr, sprache) : null
   const titel = sprache === 'fr' ? 'Cartes pour la séance' : 'Karten zur Stunde'
-  const inhalt = { titel, ...(p.layout === 'bild' && !jugend ? { anleitung: sprache === 'fr' ? 'Découper les cartes et les poser sur la table.' : 'Karten ausschneiden und auf den Tisch legen.' } : {}), bausteine, lehrer: { ziel: '', ablauf: [], hintergrund: '' } }
+  // keine Anweisung für Erwachsene auf dem Papier des Kindes (A3) – „ausschneiden“ steht im Planblatt
+  const inhalt = { titel, bausteine, lehrer: { ziel: '', ablauf: [], hintergrund: '' } }
   return {
     id: `pg-karten-${hash8(plan.id + nr)}`,
     bereich: kb?.bereich ?? 'gefuehle',

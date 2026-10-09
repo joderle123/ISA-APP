@@ -3,7 +3,7 @@
 // keine Katharsis (E-M16), heikel nur freigeschaltet (T-M1), Französisch als weicher Faktor (T-M4), Lockerungsleiter (T-M3).
 import type { Auftrag, Bogen, Heute, KatalogEintrag, Layout, Plan, Profil, Rolle, Sprache, Stufe, Tagesform, Weg } from '../typen'
 import { hash01, layoutAusStufe, norm, stufeAusAlter, stufenAbstand, tageZwischen, istEldib } from './hilfen'
-import { intern, eldibKurz, eldibStufe, type Katalog } from './katalog'
+import { intern, eldibKurz, eldibStufe, merkmaleVon, type Katalog } from './katalog'
 import { kaltstart, V, vorliebe, type Vorlieben } from './vorlieben'
 import { FORMAT_NAME, INTERESSEN, KOMPETENZ_NAME, TAGESFORM_FORMATE, TAGESFORM_NAME, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
 
@@ -180,6 +180,12 @@ export function pruefe(e: KatalogEintrag, c: Kontext, o: Pruefung = {}): string 
   return null
 }
 
+/** Krisenlage (A12): Stimmung ≤ 2, Vorsicht Trauma oder Trauer, Weg 3 mit belastender Tagesform – keine Gefühle abfragen. */
+export function krisenlage(c: Kontext): boolean {
+  return c.heute.stimmung <= 2 || c.vorsicht.has('trauma') || c.vorsicht.has('trauer') ||
+    (c.weg === 'leicht' && c.tagesformen.some((t) => t === 'traurig' || t === 'aengstlich' || t === 'rueckzug' || t === 'aufgewuehlt' || t === 'wuetend'))
+}
+
 function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null {
   const locker = o.locker ?? 0
   // Alter und Gestaltung – nie gelockert
@@ -192,8 +198,38 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     if (e.material.includes('vorher')) return 'braucht eine Übung davor'
     if (c.alter >= 12 && e.art.includes('rueckblick')) return 'Smileys'
   }
+  // Spielschule (Vorschule) nur für die, für die sie gemacht ist (A10: kein Spielschul-Blatt über 5 Jahren)
+  if (e.typ === 'baustein' && c.alter > 5 && intern(c.k).q.blatt.get(e.quelle.blatt)?.bereich === 'spielschule') return 'Spielschule'
+  if (e.typ === 'schritt' && c.alter > 6 && e.quelle.art === 'spielschule') return 'Spielschule'
   // setzt eine frühere Kursstunde voraus („der Umschlag aus der letzten Stunde“, „nach der Wochen-Mission fragen“)
   if (e.typ === 'schritt' && intern(c.k).vorlauf.has(e.id)) return 'braucht eine Stunde davor'
+  // Textmerkmale (Blind-Bewertung 9.10., einzel.ts): was gedruckt wird, muss in eine Einzelstunde für dieses Kind passen
+  const tm = merkmaleVon(c.k, e)
+  if (tm.size) {
+    const einzeln = c.a.sozialform === 'einzeln' || !c.a.sozialform
+    const eigen = e.id.startsWith('pg:')
+    const kinderschutz = (c.p.achtung ?? []).includes('kinderschutz')
+    if (einzeln && !eigen && (tm.has('gruppe') || tm.has('ihr'))) return 'Gruppe'
+    if (tm.has('jugend') && c.alter < 12) return 'für Jugendliche'
+    if (tm.has('film')) return 'braucht einen Film'
+    if (tm.has('draussen') && !(c.a.ort ?? []).includes('draussen')) return 'Ort'
+    if (tm.has('kueche')) return 'Küche'
+    if (tm.has('gaeste')) return 'Gäste'
+    if (tm.has('blattverweis') && e.typ === 'schritt') return 'Blatt der Quelle'
+    if (tm.has('fuerleitung')) return 'für Erwachsene'
+    if (tm.has('wochentage') && e.typ === 'baustein') return 'mehrtägig'
+    if (tm.has('mehrtag') && ((o.rolle !== 'transfer' || o.blatt) || c.vorsicht.has('familie') || kinderschutz)) return 'mehrtägig'
+    if (tm.has('heikel') && !c.heikelFrei.size) return 'heikel'
+    if (tm.has('wutausleben')) return 'Katharsis'
+    if (tm.has('trauer') && c.vorsicht.has('trauer')) return 'Vorsicht Trauer'
+    if (tm.has('familie') && (c.vorsicht.has('familie') || kinderschutz)) return 'Vorsicht Familie'
+    if (tm.has('koerper') && c.vorsicht.has('koerper')) return 'Vorsicht Körper'
+    if (tm.has('mobbing') && (c.vorsicht.has('trauma') || c.vorsicht.has('heikel'))) return 'Vorsicht Trauma'
+    if (tm.has('belastend') && (c.vorsicht.has('heikel') || c.vorsicht.has('trauma') || (c.p.achtung ?? []).length)) return 'belastend'
+    if (tm.has('gefuehlfrage') && krisenlage(c)) return 'Gefühle abfragen'
+  }
+  // Stimmung ≤ 2: nichts Lautes, keine Vollgas-Aktivität (A5)
+  if (c.heute.stimmung <= 2 && (e.energie === 3 || e.merkmale?.laut)) return 'Stimmung'
   // heikel nur freigeschaltet; Selbstverletzung/Suizid nie als Baustein (T-M1)
   if (e.sensibel === 'akut') return 'heikel'
   if (e.sensibel === 'kinderschutz' && !c.heikelFrei.has('kinderschutz') && !c.heikelFrei.has('sexualitaet')) return 'heikel'
@@ -438,6 +474,9 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
   g += o.bonus ?? 0
   // Französisch: Blatt-Teile ohne FR zählen weniger (T-M4)
   if (c.sprache === 'fr' && e.typ === 'baustein' && !e.sprache.fr && e.lesemenge > 0) g *= 0.7
+  // Schritte für ein französisches Kind: mit französischem Text klar bevorzugt (Blind-Bewertung 9.10.: deutsche Sagen-Sätze
+  // und Kerne auf französischen Planblättern); ohne FR nur, wenn nichts Französisches passt
+  if (c.sprache === 'fr' && e.typ === 'schritt' && !e.fr && !e.id.startsWith('pg:')) g *= 0.65
   // Einzelstunde: Schritte, die nur für Gruppen beschrieben sind (ohne Einzelvariante), zählen weniger – die Beschriftung
   // nennt 1290 solcher Schritte „einzeltauglich“; im Zweifel gewinnt, was für ein Kind geschrieben ist (Testlauf 9.10.)
   if ((c.a.sozialform === 'einzeln' || !c.a.sozialform) && e.typ === 'schritt' && !e.einzelvariante && !e.sozialform.some((x) => x === 'einzeln' || x === 'zu-zweit')) g *= 0.8
