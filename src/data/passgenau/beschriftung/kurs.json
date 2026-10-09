@@ -21580,15 +21580,16 @@
   "belastung": 0,
   "einzeltauglich": "angepasst",
   "einzelvariante": {
-   "text": "Die Fachkraft sagt offen, dass der geplante Inhalt heute nicht passt und stattdessen Spiele kommen, die nur zu zweit gelingen; das Thema wird nachgeholt. Drei Regeln: den Plan kritisieren, nicht die Person; Stopp gilt sofort; Ideen ausreden lassen. Nach jedem Spiel drei Fragen.",
+   "text": "Die Fachkraft kündigt an: Heute kommen Spiele, die nur zu zweit gelingen. Drei Regeln: den Plan kritisieren, nicht die Person; Stopp gilt sofort; Ideen ausreden lassen. Nach jedem Spiel drei Fragen.",
    "sagen": [
-    "Heute ändern wir den Plan, nicht dich.",
+    "Heute spielen wir – und es klappt nur zu zweit.",
     "Nach jedem Spiel drei Fragen: Was lief gut? Wo hat es gehakt? Was machen wir beim nächsten Versuch anders?"
    ]
   },
   "allgemein": {
    "achtung": "Unruhe oder Gereiztheit einer ganzen Gruppe hat manchmal einen Grund: ein Streit, ein Vorfall in der Schule, eine schlechte Nachricht. Vor dem Spielen kurz nachfragen; steckt ein belastendes Ereignis dahinter, lieber zuerst darüber sprechen. Beim Fluss und beim Stab gibt es Nähe und leichte Berührung: vorher ankündigen, das Stopp-Recht betonen, kontaktarme Varianten anbieten. Nur weiche Bälle, genug Platz, keine rutschigen Böden; Luftballons nur, wenn niemand eine Latexallergie hat. Darauf achten, dass niemand zum Sündenbock wird, weil die Gruppe angeblich seinetwegen verliert. Wirkt eine einzelne Person über Wochen gereizt oder erschöpft, das im Einzelgespräch aufgreifen und mit der zuständigen Leitung (Responsable) besprechen; bei Hinweisen auf eine Gefährdung nach dem internen Schutzkonzept handeln.",
-   "vorbereitung": "Eine Kooperationskiste mit allem Material fertig gepackt im Raum lagern, damit sie ohne Vorlauf einsetzbar ist. · Einen freien Raum, den Flur, die Turnhalle oder eine Wiese in der Nähe im Blick haben; Stühle und Tische an die Wand. · Wissen, wer in der Gruppe Berührungen schwer aushält; für diese Jugendlichen kontaktarme Spiele wählen oder eine andere Rolle vorsehen."
+   "vorbereitung": "Eine Kooperationskiste mit allem Material fertig gepackt im Raum lagern, damit sie ohne Vorlauf einsetzbar ist. · Einen freien Raum, den Flur, die Turnhalle oder eine Wiese in der Nähe im Blick haben; Stühle und Tische an die Wand. · Wissen, wer in der Gruppe Berührungen schwer aushält; für diese Jugendlichen kontaktarme Spiele wählen oder eine andere Rolle vorsehen.",
+   "titel": "Heute gewinnen wir zu zweit oder gar nicht"
   },
   "merkmale": {},
   "begruendung": "Rollen für Nichtmitspielende entfallen; Planwechsel und Regeln zu zweit. „Gewinnt die Gruppe“ ist kein Wettbewerb.",

@@ -102,7 +102,8 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
     if (!leicht && e.ohneZiel && !e.art.includes('atmen')) continue
     if (!kohaerent(e)) continue
     // Text- und Info-Kästen, Geschichten ohne Frage: nur als Teil eines Pakets, das sie braucht
-    if (e.art[0] !== 'aufgabe' && ['info', 'text', 'geschichte', 'wortspeicher', 'bild'].includes(e.art[0])) {
+    // (auch Schrittketten, Spalten und Dialoge ohne Aufgabe: allein stehen sie ohne Auftrag auf dem Blatt – Testlauf 9.10.)
+    if (e.art[0] !== 'aufgabe' && ['info', 'text', 'geschichte', 'wortspeicher', 'bild', 'schritte', 'spalten', 'dialog'].includes(e.art[0])) {
       if (pruefe(e, c, { blatt: true, gesperrt: o.gesperrt }) === null) nurAbhaengig.set(e.id, bewerte(e, c, { phase: o.phase, fokus: o.fokus }))
       continue
     }
@@ -354,7 +355,6 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
   const bausteine: Baustein[] = []
   const herkunft: string[] = []
   const quellen: string[] = []
-  let anleitung: string | undefined
   let lehrerQuelle: BlattInhalt['lehrer'] | null = null
   const teileIds: (string | null)[] = []
   // jeden Baustein eines Teils mit der Kennung des Teils markieren: die Vorschau vereinigt ihre Rechtecke (T-M8)
@@ -388,11 +388,15 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
       if (!herkunft.includes(quelle.nr)) herkunft.push(quelle.nr)
       quellen.push(quelle.id)
       const inhalt = (sprache === 'fr' && quelle.fr) || quelle.de
-      anleitung ??= inhalt.anleitung
       lehrerQuelle ??= inhalt.lehrer
     }
   }
   const blaetter = quellen.map((id) => intern(k).q.blatt.get(id)!).filter(Boolean)
+  // Anleitung des Quellblatts nur, wenn das ganze Blatt dabei ist – sonst spricht sie von Seiten und Aufgaben, die hier
+  // fehlen („Seite 2: … in Vierergruppen“, Testlauf 9.10.)
+  const einQuellblatt = blaetter.length > 0 && new Set(quellen).size === 1 ? blaetter[0] : null
+  const allesDabei = !!einQuellblatt && (intern(k).bausteineVonBlatt.get(einQuellblatt.id) ?? []).every((b) => (s?.blatt?.bausteine ?? []).some((t) => t.ref === b.id))
+  const anleitung = allesDabei ? ((sprache === 'fr' && einQuellblatt!.fr) || einQuellblatt!.de).anleitung : undefined
   // Bereich (Farbe) nach dem Blatt mit den meisten Teilen; Spielschule nur, wenn alles aus der Spielschule kommt
   const zaehl = new Map<string, number>()
   for (const b of blaetter) zaehl.set(b.id, (zaehl.get(b.id) ?? 0) + 1)

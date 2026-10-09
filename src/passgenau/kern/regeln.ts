@@ -223,6 +223,9 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     // seit der Beschriftung hart: ein Gruppenschritt kommt nur mit beschriebener Einzelvariante in eine Einzelstunde
     if (e.einzeltauglich === 'angepasst' && !(e.typ === 'schritt' && e.einzelvariante)) return 'Gruppe (ohne Einzelvariante)'
   }
+  // Blatt des Kindes in einer Sprache (Testlauf 9.10., A6): auf einem französischen Blatt kein Teil mit deutschem Text –
+  // Schritte für die Fachkraft dürfen deutsch sein (Hinweis „nur auf Deutsch“)
+  if (o.blatt && e.typ === 'baustein' && c.sprache === 'fr' && !e.sprache.fr && e.textfelder.length) return 'nur auf Deutsch'
   // Zugang (P4): Lesemenge ≤ Kind (vorlesbar: + 1), Schreibmenge ≤ Kind
   if (e.typ === 'baustein') {
     const lesen = c.p.zugang.lesen + (intern(c.k).vorlesbar.has(e.id) ? 1 : 0)
@@ -261,6 +264,15 @@ export function gemachtVor(e: KatalogEintrag, c: Kontext): number | null {
     if (t !== undefined && (best === null || t < best)) best = t
   }
   return best
+}
+
+const GRUPPE_RE = /\b(jedes Kind|alle Kinder|die Kinder (bilden|stellen|sitzen|gehen|setzen)|in (Klein)?gruppen|Kleingruppen?|paarweise|Teams?|reihum|im (Sitz|Stuhl)?kreis|die Klasse|der Klasse|im Plenum|jede Gruppe|jede:r|alle Schüler(innen)?|die ganze Gruppe)\b/i
+const GRUPPE = new WeakMap<KatalogEintrag, boolean>()
+/** Erzählt der Text des Schritts von einer Gruppe? (zwischengespeichert) */
+function gruppenSprache(e: KatalogEintrag & { typ: 'schritt' }): boolean {
+  let g = GRUPPE.get(e)
+  if (g === undefined) GRUPPE.set(e, (g = GRUPPE_RE.test(`${e.titel} ${e.text}`)))
+  return g
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -427,6 +439,9 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
   // Einzelstunde: Schritte, die nur für Gruppen beschrieben sind (ohne Einzelvariante), zählen weniger – die Beschriftung
   // nennt 1290 solcher Schritte „einzeltauglich“; im Zweifel gewinnt, was für ein Kind geschrieben ist (Testlauf 9.10.)
   if ((c.a.sozialform === 'einzeln' || !c.a.sozialform) && e.typ === 'schritt' && !e.einzelvariante && !e.sozialform.some((x) => x === 'einzeln' || x === 'zu-zweit')) g *= 0.8
+  // noch nicht beschriftete Schritte (Material, Phase 0), die von einer Gruppe erzählen („Jedes Kind …“, „im Sitzkreis“):
+  // im Zweifel gewinnt, was für die Einzelstunde geprüft ist (Testlauf 9.10.: „Meine Sorge in die Box“ mit vier Jahren)
+  if ((c.a.sozialform === 'einzeln' || !c.a.sozialform) && e.typ === 'schritt' && !e.einzelvariante && (e.sicher.einzeltauglich ?? 1) < 0.7 && gruppenSprache(e)) g *= 0.7
   const deckel = leicht ? 0.4 : 0.3
   let vRoh = c.cache.v.get(e)
   if (vRoh === undefined) {
