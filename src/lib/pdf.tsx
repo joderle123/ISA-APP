@@ -7,6 +7,7 @@ import { ModulheftDokument } from '../blatt/pdf/Modulheft'
 import { modulheftDateiname, type Modul } from '../blatt/module'
 import { registriereSchriften } from '../blatt/pdf/stil'
 import type { Blatt, Sprache } from '../blatt/typen'
+import { ZUSAETZE } from '../blatt/spielschule'
 import kinderRegular from '../assets/fonts/pdf/Kinderschrift-Regular.ttf?url'
 import kinderBold from '../assets/fonts/pdf/Kinderschrift-Bold.ttf?url'
 import interRegular from '../assets/fonts/pdf/Inter-Regular.ttf?url'
@@ -64,7 +65,9 @@ function schriften() {
 }
 
 export function blattDateiname(blatt: Blatt, opt: BlattOptionen = {}): string {
-  const teil = opt.schueler === false ? '_Lehrerseite' : opt.lehrer === false ? '' : '_mit-Lehrerseite'
+  // nur Zusatzseiten (Spielschule): „…_Klassenraster.pdf“, „…_Elternbrief.pdf“
+  const zusatz = opt.schueler === false && opt.lehrer === false && opt.zusaetze?.length ? '_' + opt.zusaetze.map((z) => ZUSAETZE.find((x) => x.id === z)?.datei ?? z).join('-') : null
+  const teil = zusatz ?? (opt.schueler === false ? '_Lehrerseite' : opt.lehrer === false ? '' : '_mit-Lehrerseite')
   return `${opt.nr ? opt.nr + '_' : ''}${slug(blatt.de.titel)}${opt.sprache === 'fr' ? '_FR' : ''}${teil}.pdf`
 }
 

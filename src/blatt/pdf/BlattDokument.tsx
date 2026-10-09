@@ -14,6 +14,8 @@ import { LEHRER_MASSE, MASSE, SCHRIFT, SEITE, TEXTE, dauerText, typo, type Masse
 import { ELDIB_FR } from '../eldib-fr'
 import { URHEBER, URHEBER_NAME } from '../../lib/urheber'
 import { CDSE_LOGO, CDSE_LOGO_SEITEN } from '../../lib/cdse-logo'
+import { hatBegleiten, zusaetzeVon, type Zusatz } from '../spielschule'
+import { BegleitenSeite, ElternbriefSeite, KlassenrasterSeite, PortfolioSeite } from './Begleiten'
 
 const BREITE = 595.28 - SEITE.rand * 2
 /** Das Logo in der Fußzeile ist so hoch wie ihre beiden Zeilen – die Fußzeile wird nicht höher. */
@@ -33,6 +35,9 @@ export interface BlattOptionen {
   farben?: Farben
   /** Meldet die Seitenzahl der ersten Schülerseite im Dokument (für Verweise aus einem anderen Heft) */
   seite?: (n: number) => void
+  /** Spielschule: Zusatzseiten (Klassenraster, Portfolio-Blatt, Elternbrief) – kommen nach Schüler- und Lehrerteil,
+   *  nur wenn das Blatt die Daten dafür hat (siehe zusaetzeVon). Standard: keine. */
+  zusaetze?: Zusatz[]
 }
 
 export interface HeftAngaben {
@@ -497,6 +502,11 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
   const m = MASSE[blatt.layout ?? (blatt.bereich === 'werkzeuge' ? 'jugend' : layoutFuer(blatt.stufen))]
   const c: Ctx = { m, p, sprache, nummern: nummerieren(inhalt.bausteine), breite: BREITE }
   const melde = opt?.seite
+  // Spielschule: Seite „Beobachten & Begleiten“ und Zusatzseiten mit demselben Kopf und Fuß wie alle Seiten
+  const lehrerKopf = <Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={LEHRER_MASSE} lehrer heft={opt?.heft} />
+  const fuss = <Fusszeile blatt={blatt} nr={opt?.nr} sprache={sprache} heft={opt?.heft} />
+  const moeglich = zusaetzeVon(blatt, sprache)
+  const zusaetze = (opt?.zusaetze ?? []).filter((z) => moeglich.includes(z))
   return (
     <>
       {opt?.schueler !== false ? (
@@ -519,6 +529,16 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
       ) : null}
       {opt?.lehrer !== false ? <Lehrerseite blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} nr={opt?.nr} heft={opt?.heft} /> : null}
       {opt?.lehrer !== false && inhalt.lehrer.spielschule ? <IdeenSeite blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} nr={opt?.nr} heft={opt?.heft} /> : null}
+      {opt?.lehrer !== false && hatBegleiten(blatt, inhalt.lehrer.spielschule) ? <BegleitenSeite blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} kopf={lehrerKopf} fuss={fuss} /> : null}
+      {zusaetze.map((z) =>
+        z === 'klassenraster' ? (
+          <KlassenrasterSeite key={z} inhalt={inhalt} sprache={sprache} p={p} kopf={lehrerKopf} fuss={fuss} />
+        ) : z === 'portfolio' ? (
+          <PortfolioSeite key={z} blatt={blatt} inhalt={inhalt} sprache={sprache} p={p} kopf={<Kopfzeile blatt={blatt} nr={opt?.nr} sprache={sprache} p={p} m={m} heft={opt?.heft} />} fuss={fuss} />
+        ) : (
+          <ElternbriefSeite key={z} blatt={blatt} sprache={sprache} p={p} fuss={fuss} />
+        ),
+      )}
     </>
   )
 }

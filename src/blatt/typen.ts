@@ -338,7 +338,10 @@ export interface Aktivitaet {
   material?: string
 }
 
-/** Alles für eine Themenwoche in der Spielschule (Seite „Aktivitäten & Ideen“). */
+/** Alles für eine Themenwoche in der Spielschule (Seite „Aktivitäten & Ideen“).
+ *  Die Felder ab `beobachtung` sind optional und füllen die Seite „Beobachten & Begleiten“ – sie stehen in jeder
+ *  Sprachfassung (de/fr) in deren Sprache. Was für beide Fassungen gleich ist oder mehrere Sprachen nebeneinander
+ *  zeigt (Domänen, Wörterstreifen, Satz der Woche, Elternbrief), steht einmal in `Blatt.woche`. */
 export interface Spielideen {
   /** Wörter der Woche mit Artikel: „der Igel“, « le hérisson » (6–10). */
   wortschatz: string[]
@@ -348,8 +351,108 @@ export interface Spielideen {
   reim?: { titel: string; zeilen: string[]; gesten?: string }
   /** Ideen für die Spielecken (Bauecke, Puppenecke, Malatelier, Lese-Ecke …), 2–4. */
   ecken?: string[]
-  /** Ein Tipp für zu Hause, 1–2 Sätze (für den Elternbrief). */
+  /** Ein Tipp für zu Hause, 1–2 Sätze (kurz, auf „Aktivitäten & Ideen“). Der ganze Brief: `Blatt.woche.elternbrief`. */
   eltern?: string
+  // --- Beobachten & Begleiten (optional) ---------------------------------------------------------------
+  /** Beobachtungsfenster: genau 3 „Ich kann …“-Punkte, beobachtbar, je mit einem ELDiB-Ziel. Die drei Stufen
+   *  (mit Hilfe · allein · zeigt es anderen) sind fest. Dieselben Punkte stehen im Klassenraster und auf dem
+   *  Portfolio-Blatt des Kindes. */
+  beobachtung?: Beobachtungspunkt[]
+  /** Mitbestimmung: eine echte Entscheidung der Kinder in dieser Woche, dazu die Frage fürs Fragenplakat am Montag. */
+  entscheiden?: { text: string; frage?: string }
+  /** Je eine kurze Zeile für die drei Jahrgänge des Cycle 1. */
+  stufen?: Altersstufen
+  /** „Zugang für alle“: 2–3 kurze Anpassungen (Realgegenstand, Gebärde, Bildplan, Reizreduktion …). */
+  zugang?: string[]
+  /** Eine Zeile „Mehrsprachig“: wie Familiensprachen in dieser Woche vorkommen. */
+  mehrsprachig?: string
+  /** Freitags-Karte: was man vor dem Start wissen und besorgen muss. Die Angaben ohne Text (Vorlauf, Küche,
+   *  Ausflug, Besuch, Material) müssen in DE und FR gleich sein. */
+  freitag?: Freitagskarte
+}
+
+/** Ein Punkt im Beobachtungsfenster, z. B. { text: 'Ich zähle bis 5 und zeige auf jedes Ding.', eldib: 'KOG-22' }. */
+export interface Beobachtungspunkt {
+  /** „Ich kann …“-Satz aus Sicht des Kindes (DE „Ich …“, FR « Je … »), ≤ 70 Zeichen, beobachtbar. */
+  text: string
+  /** Ein ELDiB-Ziel, z. B. 'KOG-22'. */
+  eldib: string
+}
+
+/** Cycle 1: Précoce (3–4 Jahre), Préscolaire 1 (4–5), Préscolaire 2 (5–6) – je eine kurze Zeile. */
+export interface Altersstufen {
+  precoce: string
+  p1: string
+  p2: string
+}
+
+/** Freitags-Karte. `sicherheit`: höchstens 3 Zeilen; Standardsätze als 'standard:<schlüssel>' (siehe
+ *  src/blatt/spielschule.ts: spiesse, pusten, fotos, hitze, kleinteile, allergien, messer, wasser). */
+export interface Freitagskarte {
+  /** Vorlauf in Wochen: 0 = sofort startklar, 1 = eine Woche, 3 = drei Wochen (Termine, Einwilligungen). */
+  vorlauf: 0 | 1 | 3
+  /** Herd, Ofen oder Kochplatte nötig */
+  kueche?: boolean
+  /** Ausflug außerhalb des Schulgeländes */
+  ausflug?: boolean
+  /** Besuch in der Klasse (Familie, Fachperson) */
+  besuch?: boolean
+  /** Material-Ampel: standard = in jeder Spielschule da, besorgen = einkaufen/sammeln, selten = ausleihen/bestellen */
+  material: 'standard' | 'besorgen' | 'selten'
+  /** Plan B in einer Zeile (Regen, kein Schnee, keine Küche …). */
+  planB?: string
+  /** Die (höchstens) 3 wichtigsten Risiken der Woche. */
+  sicherheit?: string[]
+}
+
+/** Lernbereiche des Plan d'études Cycle 1 (feste ids, Bezeichnungen in src/blatt/spielschule.ts). */
+export type DomaeneId = 'logique-math' | 'langage' | 'monde' | 'psychomotricite' | 'expression' | 'vivre-ensemble'
+
+/** Spielschule: was für beide Sprachfassungen gleich ist oder mehrere Sprachen nebeneinander zeigt. */
+export interface Themenwoche {
+  /** Lernbereiche des Plan d'études Cycle 1 (1–3). */
+  domaenen?: DomaeneId[]
+  /** Wörterstreifen DE/FR/LB/PT und Satz der Woche. */
+  sprachen?: Sprachschicht
+  /** Brief an die Familien (eigene Seite, als Zusatz-Download). */
+  elternbrief?: Elternbrief
+}
+
+/** Mehrsprachiger Wörterstreifen und Satz der Woche. Luxemburgisch wird normal gedruckt, bleibt aber mit
+ *  `geprueft: false` markiert, bis eine Muttersprachlerin es gegen LOD geprüft hat (Liste: scripts/lb-liste.ts). */
+export interface Sprachschicht {
+  /** 6–8 Wörter, je mit Artikel: { de: 'der Apfel', fr: 'la pomme', lb: 'den Apel', pt: 'a maçã' }.
+   *  `bild` optional – sonst das Bild der Bildkarte mit demselben deutschen Titel. */
+  woerter: WochenWort[]
+  /** Satzmuster der Woche, z. B. „Ich möchte …, bitte.“ */
+  satz?: { de: string; fr: string; lb?: string; pt?: string }
+  /** Luxemburgisch (Wörter und Satz) von einer Muttersprachlerin geprüft? */
+  geprueft: boolean
+}
+
+export interface WochenWort {
+  de: string
+  fr: string
+  lb: string
+  pt?: string
+  bild?: BildId
+}
+
+/** Elternbrief: DE und FR Pflicht, PT und LB optional (LB mit `geprueft`). */
+export interface Elternbrief {
+  de: Brieftext
+  fr: Brieftext
+  pt?: Brieftext
+  lb?: Brieftext & { geprueft: boolean }
+}
+
+export interface Brieftext {
+  /** Ein Absatz „Das machen wir“ (2–3 Sätze). */
+  woche: string
+  /** Eine Alltagsidee ohne Kosten (1–2 Sätze). */
+  idee: string
+  /** Eine Bitte an die Familien: ein Wort, Lied, Rezept … mitbringen (1–2 Sätze). */
+  bitte: string
 }
 
 export interface BlattInhalt {
@@ -381,6 +484,8 @@ export interface Blatt {
   verwandt?: string[]
   /** Gehört zum Skills-Kurs: Einheit(en), in denen das Blatt vorkommt (z. B. ['j1-e01']). */
   kurs?: string[]
+  /** Nur Spielschule: Domänen, Wörterstreifen DE/FR/LB/PT, Satz der Woche, Elternbrief (für beide Sprachfassungen). */
+  woche?: Themenwoche
   de: BlattInhalt
   fr?: BlattInhalt
 }

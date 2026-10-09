@@ -31,7 +31,9 @@ Musterblätter zum Anschauen: `gefuehle.json` (Mein Wutvulkan, Ballon-Atmen) und
 
 Umfang: Schülerteil **1 Seite** (C1, C2) bzw. **höchstens 2 Seiten** (C3–ES).
 Die Seite „Für die Lehrperson“ muss auf **eine** Seite passen. Ausnahme Bereich `spielschule` (Themenwochen):
-Schülerteil 2 Seiten (Bildkarten + Blatt), für die Lehrperson 2 Seiten (Lehrerseite + „Aktivitäten & Ideen“). Seitenzahlen zählen je Blatt („Seite 1 / 2“), auch in
+Schülerteil 2 Seiten (Bildkarten + Blatt), für die Lehrperson 2 Seiten (Lehrerseite + „Aktivitäten & Ideen“), mit den
+Feldern für „Beobachten & Begleiten“ 3 Seiten; dazu als einzelne Downloads je 1 Seite Klassenraster, Portfolio-Blatt
+und Elternbrief (siehe Spielschule). Seitenzahlen zählen je Blatt („Seite 1 / 2“), auch in
 einer Mappe; ein einseitiger Teil hat keine Seitenzahl. In der Fußzeile jeder Seite steht darunter klein der
 Urheber-Vermerk „© 2026 Joey Guedes, Psychologe · CDSE“ (französische Fassung: „psychologue“); der Text steht nur in
 `src/lib/urheber.ts`. Links neben beiden Zeilen steht das CDSE-Logo (`src/lib/cdse-logo.ts`, aus der Vorlage der
@@ -198,6 +200,98 @@ Spielecken. Pflicht: `stufen: ["C1"]`, `layout: "bild"`, DE **und** FR, `dauer` 
 - Prüfen wie immer, Seiten mit `scripts/blatt-seiten.tsx spielschule --datei=<entwurf>.json` (der Dateiname muss mit
   `spielschule` beginnen, z. B. `spielschule-3.json`).
 
+#### Beobachten & Begleiten (Lehrerseite 3 und Zusatzseiten)
+
+Alles optional – eine Einheit ohne diese Felder bleibt wie bisher (2 Lehrerseiten). Sobald eines da ist, meldet das
+Prüfskript jedes fehlende als Hinweis. Zwei Orte:
+
+- **In jeder Sprachfassung** (`de.lehrer.spielschule`, `fr.lehrer.spielschule`), in deren Sprache: `beobachtung`,
+  `entscheiden`, `stufen`, `zugang`, `mehrsprachig`, `freitag`.
+- **Einmal je Einheit** in `woche` (neben `de`/`fr`): was sprachunabhängig ist oder mehrere Sprachen nebeneinander zeigt –
+  `domaenen`, `sprachen` (Wörterstreifen + Satz der Woche), `elternbrief`.
+
+| Feld | Inhalt | Regeln |
+|---|---|---|
+| `beobachtung` | genau 3 `{text, eldib}` | „Ich kann …“ aus Sicht des Kindes (DE „Ich …“, FR « Je … »), ≤ 70 Zeichen, **beobachtbar** (zählen, zeigen, sagen, wählen – nicht „versteht“, „weiß“, „mag“). Je ein gültiges ELDiB-Ziel, in DE und FR dieselben. Die Stufen *mit Hilfe · allein · zeigt es anderen* (« avec de l’aide · tout seul · le montre aux autres ») sind fest. Dieselben Punkte stehen im Klassenraster und auf dem Portfolio-Blatt des Kindes – im FR deshalb **keine Mittelpunkt-Formen** (« seul·e »). |
+| `entscheiden` | `{text, frage?}` | Eine **echte** Entscheidung der Kinder in dieser Woche (Wahl zwischen 3 Stationen, Abstimmung mit Steinen/Klammern über Lied, Rezept, Ort) – das Ergebnis wird umgesetzt. ≤ 170 Zeichen. `frage`: Frage fürs Fragenplakat am Montag („Was wollen wir über … wissen?“), ≤ 80 Zeichen, endet mit „?“. |
+| `stufen` | `{precoce, p1, p2}` | Je eine Zeile ≤ 110 Zeichen für Précoce (3–4), Préscolaire 1 (4–5), Préscolaire 2 (5–6): dieselbe Aktivität, angepasst (Menge, Material, Sprache). |
+| `zugang` | 2–3 Zeilen | „Zugang für alle“: Realgegenstand statt Bild, Gebärde, Bildplan, weniger Auswahl, Reizreduktion, feste Partnerin. ≤ 95 Zeichen, konkret für diese Woche. |
+| `mehrsprachig` | 1 Zeile | Wie Familiensprachen vorkommen (Wort zuerst in der Familiensprache, Familien schicken ein Wort). ≤ 130 Zeichen. |
+| `freitag` | `{vorlauf, kueche?, ausflug?, besuch?, material, planB?, sicherheit?}` | `vorlauf` 0 / 1 / 3 (Wochen), `material` `standard` (in jeder Spielschule) / `besorgen` / `selten` (ausleihen, bestellen). Die Angaben ohne Text in DE und FR gleich. `planB` ≤ 120 Zeichen (Regen, kein Schnee, keine Küche). `sicherheit`: höchstens 3, wo möglich als Standardsatz (unten). |
+| `woche.domaenen` | 1–3 ids | Lernbereiche des Plan d’études Cycle 1: `logique-math` (Raisonnement logique et mathématique), `langage` (Langage, langue luxembourgeoise et éveil aux langues), `monde` (Découverte du monde par tous les sens), `psychomotricite` (Psychomotricité, expression corporelle et santé), `expression` (Expression créatrice, éveil à l’esthétique et à la culture), `vivre-ensemble` (Vie en commun et valeurs). Gedruckt werden nur diese Bezeichnungen (`src/blatt/spielschule.ts`) – **keine Zitate aus dem Plan d’études erfinden**. |
+| `woche.sprachen` | `{woerter, satz?, geprueft}` | `woerter`: 6–8 `{de, fr, lb, pt?, bild?}`, jedes mit Artikel („der Apfel“, « la pomme », „den Apel“, „a maçã“), ≤ 24 Zeichen. Ohne `bild` nimmt die Seite das Bild der Bildkarte mit demselben Titel. `satz`: Satzmuster der Woche `{de, fr, lb?, pt?}` („Ich möchte …, bitte.“), ≤ 70 Zeichen. `geprueft`: **false**, bis eine Muttersprachlerin das Luxemburgisch gegen LOD geprüft hat. |
+| `woche.elternbrief` | `{de, fr, pt?, lb?}` | Je `{woche, idee, bitte}`: 1 Absatz „Das machen wir“ (≤ 280), 1 Alltagsidee ohne Kosten (≤ 200), 1 Bitte an die Familien – ein Wort, Lied, Rezept, Foto mitbringen (≤ 200); zusammen ≤ 620 Zeichen. `lb` braucht `geprueft`. Das kurze `eltern` auf „Aktivitäten & Ideen“ bleibt. |
+
+```json
+"woche": {
+  "domaenen": ["logique-math", "monde", "vivre-ensemble"],
+  "sprachen": {
+    "woerter": [
+      { "de": "der Apfel", "fr": "la pomme", "lb": "den Apel", "pt": "a maçã" },
+      { "de": "der Baum", "fr": "l’arbre", "lb": "de Bam", "pt": "a árvore" },
+      { "de": "der Korb", "fr": "le panier", "lb": "de Kuerf", "pt": "o cesto" }
+    ],
+    "satz": { "de": "Ich möchte einen Apfel, bitte.", "fr": "Je voudrais une pomme, s’il te plaît.", "lb": "Ech hätt gär en Apel, wann ech gelift.", "pt": "Eu queria uma maçã, por favor." },
+    "geprueft": false
+  },
+  "elternbrief": {
+    "de": { "woche": "Diese Woche dreht sich bei uns alles um den Apfel …", "idee": "Zählen Sie beim Einkaufen die Äpfel gemeinsam in die Tüte …", "bitte": "Wie heißt „Apfel“ in Ihrer Familiensprache? …" },
+    "fr": { "woche": "Cette semaine, tout tourne autour de la pomme …", "idee": "En faisant les courses, comptez ensemble les pommes …", "bitte": "Comment dit-on « pomme » dans la langue de votre famille ? …" },
+    "pt": { "woche": "Esta semana, tudo gira à volta da maçã …", "idee": "Quando forem às compras, contem juntos as maçãs …", "bitte": "Como se diz «maçã» na língua da vossa família? …" }
+  }
+},
+"de": { …, "lehrer": { …, "spielschule": { "wortschatz": […], "aktivitaeten": […], …,
+  "beobachtung": [
+    { "text": "Ich zähle Äpfel und zeige auf jeden genau einmal.", "eldib": "KOG-22" },
+    { "text": "Ich sortiere Äpfel nach Farben: rot, grün, gelb.", "eldib": "KOG-23" },
+    { "text": "Ich teile gerecht: Jedes Kind bekommt gleich viel.", "eldib": "SOZ-16" }
+  ],
+  "entscheiden": { "text": "Mittwoch: Jedes Kind legt einen Stein zu seiner Lieblingssorte. Aus der Sorte mit den meisten Steinen wird am Freitag das Apfelmus.", "frage": "Was wollen wir über Äpfel wissen?" },
+  "stufen": {
+    "precoce": "Äpfel tasten und benennen, bis 3 zählen; beim Teilen ein Stück weitergeben.",
+    "p1": "Bis 6 zählen, nach Farben sortieren, „mehr“ und „weniger“ vergleichen.",
+    "p2": "Nach zwei Merkmalen sortieren (Farbe und Größe), Mengen bis 10, das Rezept nacherzählen."
+  },
+  "zugang": ["Echter Apfel in der Hand statt Bildkarte; die Gebärde „Apfel“ zum Wort.", "Bildplan der Woche an der Tür: tasten, probieren, zählen, drucken, kochen.", "Beim Kochen: kleine Gruppe, ruhiger Platz, laute Geräte vorher ankündigen."],
+  "mehrsprachig": "Familien schicken das Wort „Apfel“ in ihrer Sprache; alle Wörter hängen am Apfelbaum der Klasse.",
+  "freitag": { "vorlauf": 0, "kueche": true, "ausflug": false, "besuch": false, "material": "besorgen",
+    "planB": "Keine Kochplatte: Apfelspalten mit etwas Zimt probieren statt Apfelmus kochen.",
+    "sicherheit": ["standard:allergien", "standard:messer", "standard:hitze"] }
+} } }
+```
+
+**Schreibregeln:** kurz, konkret, ohne Fachjargon – so, dass eine Lehrerin es am Freitag in fünf Minuten liest.
+Beobachtungspunkte beschreiben, was man **sehen oder hören** kann. Mitbestimmung heißt: Das Ergebnis der Kinder gilt.
+Keine Diagnose- oder Defizitsprache in „Zugang für alle“ (nicht „für Autisten“, sondern „weniger Reize: …“).
+
+**Standard-Sicherheitssätze** (in `freitag.sicherheit` als `"standard:<schlüssel>"`; Text DE/FR in `src/blatt/spielschule.ts`
+– so steht jeder Satz in allen Einheiten gleich; das Prüfskript schlägt ihn vor, wenn eine freie Zeile dasselbe Thema hat):
+
+| Schlüssel | Satz (DE) |
+|---|---|
+| `spiesse` | Keine spitzen Spieße oder Zahnstocher: Obst auf dem Teller anrichten; gegessen wird im Sitzen. |
+| `pusten` | Strohhalm: nur pusten, nie saugen – vorher üben; jedes Kind hat seinen eigenen Halm. |
+| `fotos` | Fotos und Aufnahmen nur mit schriftlicher Einwilligung der Familien; nur für Portfolio und Klasse, nie ins Internet. |
+| `hitze` | Herd, Ofen und heißes Wasser bedienen nur Erwachsene; die Kinder bleiben einen großen Schritt entfernt. |
+| `kleinteile` | Kleinteile (Perlen, Samen, Münzen, Magnete) nur unter Aufsicht; danach zählen und wegräumen. |
+| `allergien` | Allergien und Essensregeln der Familien vorher klären; niemand muss probieren. |
+| `messer` | Mit dem Messer schneiden nur Erwachsene; die Kinder zupfen, reißen oder brechen. |
+| `wasser` | Am Wasser hat immer eine erwachsene Person die Kinder im Blick; Wannen danach sofort leeren. |
+| `draussen` | Draußen: die Kinder beim Losgehen und beim Zurückkommen zählen; auf der Straße Warnwesten. |
+
+**Luxemburgisch:** nur Wörter aufnehmen, die gegen LOD (lod.lu) nachgeschlagen sind, immer mit Artikel (den/de/d’);
+`geprueft` bleibt `false`, bis eine Muttersprachlerin gegengelesen hat. Gedruckt wird es trotzdem normal. Das
+Prüfskript listet ungeprüftes LB je Einheit (○, zählt nicht als Fehler); die Prüfliste für die Muttersprachlerin
+(jedes Wort einmal, mit deutscher Bedeutung und Spalte „Korrektur“):
+`npx tsx --tsconfig tsconfig.scripts.json scripts/lb-liste.ts --md=lb-liste.md` (oder `--csv=…`, `--alle`).
+
+**Seiten und Downloads:** Der Lehrerteil („Mit Lehrerseite“, „Nur Lehrerseite“, Mappen) bekommt die Seite
+„Beobachten & Begleiten“ automatisch, sobald eines der Felder da ist. **Klassenraster** (quer: 14 Zeilen × 3 Punkte ×
+3 Stufen, Datum eintragen) und **Portfolio-Blatt** (Kinderseite: Bild/Foto, „Das kann ich jetzt“ mit den drei Stufen,
+Worte des Kindes, Datum) gibt es, wenn `beobachtung` da ist; den **Elternbrief** (DE und FR, darunter PT/LB, Wörter
+und Satz der Woche), wenn `woche.elternbrief` da ist. Sie erscheinen in der Toolbox als eigene Knöpfe im Blatt
+(`BlattOptionen.zusaetze`), `blatt-render` schreibt sie als `…_zusatz.pdf`, `blatt-seiten` prüft je 1 Seite.
+
 ### Bildgeschichten & Karten
 | Art | Felder | Wofür |
 |---|---|---|
@@ -307,7 +401,7 @@ Anführungszeichen « … ». Keine Zeichen außerhalb von Latein-1 (z. B. kein 
 
 - [ ] Prüfskript ohne Fehler, Hinweise bewusst entschieden
 - [ ] Alle Seiten als Bild angesehen: nichts abgeschnitten, keine halbleeren Seiten, Umbrüche sinnvoll
-- [ ] Schülerteil 1 Seite (C1/C2) bzw. höchstens 2 Seiten; Lehrerseite genau 1 Seite
+- [ ] Schülerteil 1 Seite (C1/C2) bzw. höchstens 2 Seiten; Lehrerseite genau 1 Seite (Spielschule: 2, mit „Beobachten & Begleiten“ 3)
 - [ ] Mindestens eine Aufgabe mit Beispiel oder vorgegebenem Anfang
 - [ ] ELDiB-Items passen wirklich zu Inhalt und Alter
 - [ ] Französisch vollständig und natürlich (ES)

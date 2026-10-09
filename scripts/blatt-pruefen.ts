@@ -2,11 +2,14 @@
 // Dateien): Aufbau, gültige Bilder/ELDiB-Codes/Quellen, Stufenregeln und Stil.
 //   npx tsx --tsconfig tsconfig.scripts.json scripts/blatt-pruefen.ts [datei.json …] [--streng]
 // Fehler → Exit-Code 1. Hinweise (Stil) werden nur gezeigt; mit --streng zählen sie als Fehler.
+// Spielschule: Einheiten ganz ohne „Beobachten & Begleiten“ erscheinen nur in der Zusammenfassung (○, zählt nicht);
+// sobald eine Einheit eines der neuen Felder hat, ist jedes fehlende ein Hinweis. Noch nicht gegengelesenes
+// Luxemburgisch wird je Einheit aufgelistet (○, zählt nicht) – Prüfliste: scripts/lb-liste.ts.
 import { readFileSync, readdirSync } from 'node:fs'
 import { createRequire } from 'node:module'
 import { join, dirname, basename } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import type { Baustein, Blatt, BlattInhalt, Spielideen, Sprache } from '../src/blatt/typen'
+import type { Baustein, Blatt, BlattInhalt, Brieftext, Spielideen, Sprache } from '../src/blatt/typen'
 import { BEREICHE, THEMEN, STUFEN_REIHE } from '../src/blatt/katalog'
 import { hatIcon } from '../src/blatt/zeichnung'
 import { GEFUEHLE } from '../src/blatt/gesichter'
@@ -17,6 +20,7 @@ import { eldibGoalById } from '../src/data/taxonomy'
 import { bereichAusDatei } from '../src/blatt/nummern'
 import { flaecheGroesse, geoPunkte, kommaSprung, MM, stuecke, temperaturSkala, wert } from '../src/blatt/pdf/mathe'
 import { SEITE } from '../src/blatt/pdf/stil'
+import { DOMAENEN, SICHERHEIT_STANDARD } from '../src/blatt/spielschule'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const args = process.argv.slice(2)
@@ -78,6 +82,14 @@ ZEICHEN.add(0xad)
 function fremdeZeichen(x: string): string {
   // \n Zeilenumbruch, \t Tabulator im Päckchen (rechter Teil bündig) – beide werden nicht als Zeichen gesetzt
   return [...new Set([...x].filter((ch) => ch !== '\n' && ch !== '\t' && !ZEICHEN.has(ch.codePointAt(0) ?? 0)))].join(' ')
+}
+
+/** Spielschule: Einheiten noch ohne „Beobachten & Begleiten“ und ungeprüftes Luxemburgisch (zählen nicht als Fehler) */
+const ohneBegleiten: string[] = []
+let lbOffen = 0
+let lbEinheiten = 0
+function info(wo: string, text: string) {
+  console.log(`○ ${wo}: ${text}`)
 }
 
 function melde(art: 'F' | 'H', wo: string, text: string) {
@@ -518,6 +530,166 @@ function pruefeSpielschule(wo: string, sp: Spielideen | undefined) {
   }
 }
 
+// --- Spielschule: „Beobachten & Begleiten“ (alle Felder optional, bis die Einheiten überarbeitet sind) -----------
+
+const DOMAENEN_IDS = DOMAENEN.map((d) => d.id as string)
+/** Frei formulierte Sicherheitszeile, für die es einen Standardsatz gibt */
+const STANDARD_THEMEN: [RegExp, string][] = [
+  [/spie(ß|ss)|zahnstocher|\bpic(s)?\b|cure-dent/i, 'spiesse'],
+  [/strohhalm|paille|pusten|souffl/i, 'pusten'],
+  [/\bfoto|\bphoto|aufnahme|enregistr/i, 'fotos'],
+  [/\bherd\b|\bofen\b|heiß|plaque|\bfour\b|\bchaud/i, 'hitze'],
+  [/kleinteil|verschluck|petits objets|avaler/i, 'kleinteile'],
+  [/allergi/i, 'allergien'],
+  [/messer|couteau/i, 'messer'],
+]
+const BEGLEITEN_FELDER = ['beobachtung', 'entscheiden', 'stufen', 'zugang', 'mehrsprachig', 'freitag'] as const
+/** Inklusive Formen mit Mittelpunkt („seul·e“) – auf Kinderseiten im Französischen nicht verwenden */
+const MITTELPUNKT = /\p{L}·\p{L}/u
+
+function textCheck(wo: string, x: string, max: number, was: string) {
+  if (!x?.trim()) return melde('F', wo, `${was} ist leer`)
+  if (x.length > max) melde('H', wo, `${was} zu lang (${x.length} Zeichen, höchstens ${max})`)
+  if (EMOJI.test(x)) melde('F', wo, `${was}: Emoji`)
+  if (fremdeZeichen(x)) melde('F', wo, `${was}: Zeichen fehlt in der Schrift: ${fremdeZeichen(x)}`)
+  for (const [re, name] of FLOSKELN) if (re.test(x)) melde('H', wo, `${was} – ${name}: „${x.slice(0, 60)}“`)
+}
+
+/** Felder der Seite „Beobachten & Begleiten“ in einer Sprachfassung. Gibt zurück, ob die Fassung schon welche hat. */
+function pruefeBegleiten(wo: string, sp: Spielideen | undefined, blatt: Blatt, sprache: Sprache): boolean {
+  if (!sp) return false
+  const da = BEGLEITEN_FELDER.filter((k) => sp[k] !== undefined)
+  if (!da.length && !blatt.woche) return false
+  for (const k of BEGLEITEN_FELDER) if (sp[k] === undefined) melde('H', wo, `Beobachten & Begleiten: „${k}“ fehlt`)
+  const b = sp.beobachtung
+  if (b !== undefined) {
+    if (!Array.isArray(b) || b.length !== 3) melde('F', wo, 'Beobachtung: genau 3 „Ich kann …“-Punkte')
+    for (const x of Array.isArray(b) ? b : []) {
+      textCheck(wo, x.text, 70, 'Beobachtungspunkt')
+      if (!eldibGoalById.has(x.eldib)) melde('F', wo, `Beobachtung: ELDiB-Ziel „${x.eldib}“ gibt es nicht`)
+      if (sprache === 'de' && !/^Ich\b/.test(x.text ?? '')) melde('H', wo, `Beobachtung: aus Sicht des Kindes mit „Ich …“ beginnen („${x.text}“)`)
+      if (sprache === 'fr' && !/^(Je\b|J[’'])/.test(x.text ?? '')) melde('H', wo, `Beobachtung : commencer par « Je … » (« ${x.text} »)`)
+      if (sprache === 'fr' && MITTELPUNKT.test(x.text ?? '')) melde('F', wo, `Beobachtung (steht auf dem Portfolio-Blatt des Kindes): keine Mittelpunkt-Form („${x.text}“)`)
+    }
+    if (Array.isArray(b) && new Set(b.map((x) => x.eldib)).size < b.length) melde('H', wo, 'Beobachtung: dasselbe ELDiB-Ziel zweimal')
+  }
+  if (sp.entscheiden !== undefined) {
+    textCheck(wo, sp.entscheiden?.text, 170, 'Das entscheiden die Kinder')
+    if (sp.entscheiden?.frage !== undefined) {
+      textCheck(wo, sp.entscheiden.frage, 80, 'Fragenplakat')
+      if (!sp.entscheiden.frage.trim().endsWith('?')) melde('H', wo, 'Fragenplakat: als Frage mit „?“ schreiben')
+    }
+  }
+  if (sp.stufen !== undefined) for (const k of ['precoce', 'p1', 'p2'] as const) textCheck(wo, sp.stufen?.[k], 110, `Stufen: ${k}`)
+  if (sp.zugang !== undefined) {
+    if (!Array.isArray(sp.zugang) || sp.zugang.length < 2 || sp.zugang.length > 3) melde('F', wo, 'Zugang für alle: 2–3 Zeilen')
+    for (const x of sp.zugang ?? []) textCheck(wo, x, 95, 'Zugang für alle')
+  }
+  if (sp.mehrsprachig !== undefined) textCheck(wo, sp.mehrsprachig, 130, 'Mehrsprachig')
+  const f = sp.freitag
+  if (f !== undefined) {
+    if (![0, 1, 3].includes(f.vorlauf)) melde('F', wo, 'Freitags-Karte: vorlauf 0, 1 oder 3 (Wochen)')
+    if (!['standard', 'besorgen', 'selten'].includes(f.material)) melde('F', wo, 'Freitags-Karte: material „standard“, „besorgen“ oder „selten“')
+    for (const k of ['kueche', 'ausflug', 'besuch'] as const) if (f[k] !== undefined && typeof f[k] !== 'boolean') melde('F', wo, `Freitags-Karte: ${k} true oder false`)
+    if (f.planB !== undefined) textCheck(wo, f.planB, 120, 'Plan B')
+    else melde('H', wo, 'Freitags-Karte: Plan B fehlt')
+    if (!f.sicherheit?.length) melde('H', wo, 'Freitags-Karte: keine Sicherheitszeile')
+    if ((f.sicherheit ?? []).length > 3) melde('F', wo, 'Freitags-Karte: höchstens 3 Sicherheitszeilen')
+    for (const x of f.sicherheit ?? []) {
+      const m = /^standard:(.*)$/.exec(x)
+      if (m) {
+        if (!SICHERHEIT_STANDARD[m[1]]) melde('F', wo, `Sicherheit: Standardsatz „${m[1]}“ gibt es nicht (${Object.keys(SICHERHEIT_STANDARD).join(', ')})`)
+        continue
+      }
+      textCheck(wo, x, 120, 'Sicherheit')
+      const thema = STANDARD_THEMEN.find(([re]) => re.test(x))
+      if (thema) melde('H', wo, `Sicherheit: dafür gibt es den Standardsatz „standard:${thema[1]}“ („${x.slice(0, 50)}“)`)
+    }
+  }
+  return true
+}
+
+function pruefeBrief(wo: string, b: Brieftext | undefined, sprache: string) {
+  if (!b) return melde('F', wo, `Elternbrief: Fassung ${sprache.toUpperCase()} fehlt`)
+  textCheck(wo, b.woche, 280, `Elternbrief ${sprache.toUpperCase()} „Das machen wir“`)
+  textCheck(wo, b.idee, 200, `Elternbrief ${sprache.toUpperCase()} Idee`)
+  textCheck(wo, b.bitte, 200, `Elternbrief ${sprache.toUpperCase()} Bitte`)
+  const n = (b.woche ?? '').length + (b.idee ?? '').length + (b.bitte ?? '').length
+  if (n > 620) melde('H', wo, `Elternbrief ${sprache.toUpperCase()}: zusammen ${n} Zeichen (höchstens 620, sonst passt die Seite nicht)`)
+}
+
+/** Blatt.woche: Domänen, Wörterstreifen, Satz der Woche, Elternbrief (einmal je Blatt). */
+function pruefeWoche(wo: string, blatt: Blatt, begonnen: boolean) {
+  const w = blatt.woche
+  if (!w) {
+    if (begonnen) melde('H', wo, 'Beobachten & Begleiten: „woche“ (Domänen, Sprachen, Elternbrief) fehlt')
+    return
+  }
+  for (const k of ['domaenen', 'sprachen', 'elternbrief'] as const) if (w[k] === undefined) melde('H', wo, `woche: „${k}“ fehlt`)
+  if (w.domaenen !== undefined) {
+    if (!Array.isArray(w.domaenen) || !w.domaenen.length || w.domaenen.length > 3) melde('F', wo, 'Domänen: 1–3 Lernbereiche des Plan d’études')
+    for (const d of w.domaenen ?? []) if (!DOMAENEN_IDS.includes(d)) melde('F', wo, `Domäne „${d}“ gibt es nicht (${DOMAENEN_IDS.join(', ')})`)
+    if (new Set(w.domaenen ?? []).size < (w.domaenen ?? []).length) melde('H', wo, 'Domänen: doppelt')
+  }
+  const s = w.sprachen
+  const lb: string[] = []
+  if (s !== undefined) {
+    const n = s.woerter?.length ?? 0
+    if (n > 8 || n < 4) melde('F', wo, `Wörterstreifen: 6–8 Wörter (jetzt ${n})`)
+    else if (n < 6) melde('H', wo, `Wörterstreifen: 6–8 Wörter (jetzt ${n})`)
+    for (const x of s.woerter ?? []) {
+      for (const k of ['de', 'fr', 'lb'] as const) if (!x[k]?.trim()) melde('F', wo, `Wörterstreifen: ${k.toUpperCase()} fehlt bei „${x.de ?? x.fr ?? '?'}“`)
+      for (const v of [x.de, x.fr, x.lb, x.pt ?? '']) {
+        if (v.length > 24) melde('H', wo, `Wörterstreifen: „${v}“ ist für die Spalte lang (höchstens 24 Zeichen)`)
+        if (fremdeZeichen(v)) melde('F', wo, `Wörterstreifen: Zeichen fehlt in der Schrift: ${fremdeZeichen(v)}`)
+      }
+      if (x.de && !/^(der|die|das) /.test(x.de)) melde('H', wo, `Wörterstreifen: „${x.de}“ ohne Artikel`)
+      if (x.fr && !/^(l[’']\S|(le|la|les|un|une|des) )/.test(x.fr)) melde('H', wo, `Wörterstreifen : « ${x.fr} » sans article`)
+      if (x.lb && !/^(d[’']\S|(den|de|der|dem|e|en|eng|déi|di) )/i.test(x.lb)) melde('H', wo, `Wörterstreifen: LB „${x.lb}“ ohne Artikel (den/de/d’ …)`)
+      if (x.bild) {
+        const fb = bildOk(x.bild)
+        if (fb) melde('F', wo, 'Wörterstreifen: ' + fb)
+      }
+      lb.push(x.lb)
+    }
+    if (s.satz !== undefined) {
+      textCheck(wo, s.satz?.de, 70, 'Satz der Woche DE')
+      textCheck(wo, s.satz?.fr, 70, 'Satz der Woche FR')
+      for (const k of ['lb', 'pt'] as const) if (s.satz?.[k] !== undefined) textCheck(wo, s.satz[k]!, 70, `Satz der Woche ${k.toUpperCase()}`)
+      if (s.satz?.lb) lb.push(s.satz.lb)
+    }
+    if (typeof s.geprueft !== 'boolean') melde('F', wo, 'Sprachen: „geprueft“ fehlt (false, bis eine Muttersprachlerin das Luxemburgisch geprüft hat)')
+    if (s.geprueft === true) lb.length = 0
+  }
+  const e = w.elternbrief
+  if (e !== undefined) {
+    pruefeBrief(wo, e.de, 'de')
+    pruefeBrief(wo, e.fr, 'fr')
+    if (e.pt) pruefeBrief(wo, e.pt, 'pt')
+    if (e.lb) {
+      pruefeBrief(wo, e.lb, 'lb')
+      if (typeof e.lb.geprueft !== 'boolean') melde('F', wo, 'Elternbrief LB: „geprueft“ fehlt (false bis zur Prüfung)')
+      if (e.lb.geprueft !== true) lb.push('(Elternbrief LB)')
+    }
+  }
+  if (lb.length) {
+    lbOffen += lb.length
+    lbEinheiten++
+    info(wo, `Luxemburgisch ungeprüft: ${lb.join(' · ')}`)
+  }
+}
+
+/** DE und FR: dieselben Angaben ohne Text (Freitags-Karte, ELDiB der Beobachtungspunkte). */
+function pruefeGleich(wo: string, blatt: Blatt) {
+  const de = blatt.de.lehrer?.spielschule
+  const fr = blatt.fr?.lehrer?.spielschule
+  if (!de || !fr) return
+  const k = (x?: { vorlauf?: unknown; kueche?: unknown; ausflug?: unknown; besuch?: unknown; material?: unknown }) => JSON.stringify([x?.vorlauf, !!x?.kueche, !!x?.ausflug, !!x?.besuch, x?.material])
+  if (de.freitag && fr.freitag && k(de.freitag) !== k(fr.freitag)) melde('H', wo, 'Freitags-Karte: Vorlauf, Küche, Ausflug, Besuch oder Material in DE und FR verschieden')
+  if (de.beobachtung && fr.beobachtung && de.beobachtung.map((x) => x.eldib).join() !== fr.beobachtung.map((x) => x.eldib).join()) melde('H', wo, 'Beobachtung: ELDiB-Ziele in DE und FR verschieden')
+  if ((de.freitag?.sicherheit ?? []).filter((x) => x.startsWith('standard:')).join() !== (fr.freitag?.sicherheit ?? []).filter((x) => x.startsWith('standard:')).join()) melde('H', wo, 'Sicherheit: Standardsätze in DE und FR verschieden')
+}
+
 function pruefeInhalt(wo: string, inh: BlattInhalt | undefined, blatt: Blatt, sprache: Sprache) {
   if (!inh) return melde('F', wo, `Sprachfassung ${sprache} fehlt`)
   if (!inh.titel?.trim()) melde('F', wo, 'Titel fehlt')
@@ -544,7 +716,12 @@ function pruefeInhalt(wo: string, inh: BlattInhalt | undefined, blatt: Blatt, sp
   if (!(L.quellen ?? []).length && blatt.bereich !== 'mathe') melde('H', wo, 'Lehrerseite ohne Quelle')
   const alle = [L.ziel, ...(L.ablauf ?? []), L.hintergrund, ...(L.impulse ?? []), ...(L.tipps ?? []), L.achtung ?? '', L.material ?? '', L.differenzierung?.leichter ?? '', L.differenzierung?.schwerer ?? '', ...(L.loesungen ?? [])]
   if (blatt.bereich === 'mathe' && !(L.loesungen ?? []).length) melde('F', wo, 'Mathe-Blatt: Lösungen für die Lehrperson fehlen')
-  if (blatt.bereich === 'spielschule') pruefeSpielschule(wo, L.spielschule)
+  if (blatt.bereich === 'spielschule') {
+    pruefeSpielschule(wo, L.spielschule)
+    if (sprache === 'fr')
+      for (const b of inh.bausteine)
+        for (const x of texteVon(b)) if (MITTELPUNKT.test(x)) melde('F', wo, `Kinderseite: keine Mittelpunkt-Form im Französischen („${x.slice(0, 60)}“)`)
+  }
   else if (L.spielschule) melde('F', wo, '„spielschule“ (Aktivitäten & Ideen) gibt es nur im Bereich Spielschule')
   for (const x of inh.bausteine) if (x.art === 'feld' && (x.hoehe ?? 4) > 20) melde('F', wo, `Feld: hoehe zählt in Zeilen (höchstens 20, jetzt ${x.hoehe})`)
   for (const x of [...alle, inh.titel, inh.untertitel ?? '', inh.anleitung ?? '']) {
@@ -598,8 +775,16 @@ for (const datei of liste) {
     }
     pruefeInhalt(wo + ' DE', b.de, b, 'de')
     if (b.fr) pruefeInhalt(wo + ' FR', b.fr, b, 'fr')
+    if (b.bereich === 'spielschule') {
+      const begonnen = [pruefeBegleiten(wo + ' DE', b.de?.lehrer?.spielschule, b, 'de'), pruefeBegleiten(wo + ' FR', b.fr?.lehrer?.spielschule, b, 'fr')].some(Boolean)
+      pruefeWoche(wo, b, begonnen)
+      if (!begonnen && !b.woche) ohneBegleiten.push(b.id)
+      else pruefeGleich(wo, b)
+    } else if (b.woche) melde('F', wo, '„woche“ gibt es nur im Bereich Spielschule')
   })
   console.log(`${name}: ${blaetter.length} Blätter geprüft`)
 }
+if (ohneBegleiten.length) console.log(`\n○ Spielschule: ${ohneBegleiten.length} Einheiten noch ohne „Beobachten & Begleiten“ (zählt nicht als Fehler)`)
+if (lbOffen) console.log(`○ Luxemburgisch noch nicht gegengelesen: ${lbOffen} Einträge in ${lbEinheiten} Einheiten – Prüfliste: npx tsx --tsconfig tsconfig.scripts.json scripts/lb-liste.ts`)
 console.log(`\n${fehler} Fehler, ${hinweise} Hinweise`)
 process.exit(fehler ? 1 : 0)

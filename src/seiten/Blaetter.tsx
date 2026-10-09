@@ -6,6 +6,7 @@ import { alleBlaetter, blattById } from '../data/blaetter'
 import type { Baustein, Bereich, NummeriertesBlatt, Sprache, Stufe } from '../blatt/typen'
 import { BEREICHE, bereichById, STUFEN_REIHE, stufenText, THEMEN, themaLabel } from '../blatt/katalog'
 import { MODULE, lektionenZahl, type Modul } from '../blatt/module'
+import { ZUSAETZE, zusaetzeVon, type Zusatz } from '../blatt/spielschule'
 import { bildZeichnung, iconZeichnung, palette } from '../blatt/zeichnung'
 import { ZeichnungSvg } from '../blatt/ZeichnungSvg'
 import { eldibGoalById } from '../data/taxonomy'
@@ -19,7 +20,7 @@ import { Urheber } from '../components/Urheber'
 import type { Bewertungen } from '../lib/useBewertungen'
 import { BewertungKurz, BewertungVoll } from '../components/Bewertung'
 import { Dialog } from '../components/Dialog'
-import { Icon } from '../components/Icon'
+import { Icon, type IconName } from '../components/Icon'
 
 export interface BlattFilter {
   suche: string
@@ -34,6 +35,7 @@ export const leererBlattFilter: BlattFilter = { suche: '', bereich: '', thema: '
 type Sortierung = 'nummer' | 'bewertung' | 'titel'
 
 const SOZIAL: Record<string, string> = { einzeln: 'Einzeln', gruppe: 'Kleingruppe', klasse: 'Klasse' }
+const ZUSATZ_ICON: Record<Zusatz, IconName> = { klassenraster: 'layers', portfolio: 'user', elternbrief: 'send' }
 
 /** „1 Blatt“, „3 Blätter“ (auch im Skills-Kurs). */
 export function blaetterText(n: number): string {
@@ -208,11 +210,17 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
     () => alleBlaetter.filter((x) => x.id !== b.id && (x.thema === b.thema && x.bereich === b.bereich || (b.verwandt ?? []).includes(x.id))).slice(0, 6),
     [b],
   )
-  async function laden(art: 'schueler' | 'lehrer' | 'beide') {
+  // Spielschule: Klassenraster, Portfolio-Blatt und Elternbrief einzeln (nur wenn die Einheit die Daten hat)
+  const zusaetze = ZUSAETZE.filter((z) => zusaetzeVon(b, sprache).includes(z.id))
+  async function laden(art: 'schueler' | 'lehrer' | 'beide' | Zusatz) {
     setLaedt(art)
     try {
       const m = await loadPdfModule()
-      const name = await m.downloadBlatt(b, { sprache, nr: b.nr, schueler: art !== 'lehrer', lehrer: art !== 'schueler' })
+      const zusatz = art !== 'schueler' && art !== 'lehrer' && art !== 'beide'
+      const name = await m.downloadBlatt(
+        b,
+        zusatz ? { sprache, nr: b.nr, schueler: false, lehrer: false, zusaetze: [art] } : { sprache, nr: b.nr, schueler: art !== 'lehrer', lehrer: art !== 'schueler' },
+      )
       toast(`PDF erstellt: ${name}`, 'ok')
     } catch (e) {
       toast(e instanceof Error ? e.message : 'PDF konnte nicht erstellt werden.', 'error')
@@ -266,6 +274,19 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
                 Nur Lehrerseite
               </button>
             </div>
+            {zusaetze.length ? (
+              <div>
+                <div className="mb-1.5 text-[12.5px] text-muted">Je 1 Seite zum Beobachten und für die Familien:</div>
+                <div className="flex flex-wrap gap-2">
+                  {zusaetze.map((z) => (
+                    <button key={z.id} type="button" className="btn btn-sm" onClick={() => laden(z.id)} disabled={!!laedt} title={`${z.de} als eigenes PDF${sprache === 'fr' ? ' (französisch)' : ''}`}>
+                      {laedt === z.id ? <span className="spin" /> : <Icon name={ZUSATZ_ICON[z.id]} />}
+                      {z.knopf}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) : null}
             {onWaehlen ? (
               <button type="button" className="btn btn-quiet justify-center" onClick={() => onWaehlen(sprache)}>
                 <Icon name={gewaehlt ? 'check' : 'layers'} />

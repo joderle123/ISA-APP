@@ -1,8 +1,9 @@
 // Seitenprüfung aller Arbeitsblätter (Deutsch und – wo vorhanden – Französisch):
 //   • die Seite „Für die Lehrperson“ ist genau EINE Seite,
 //   • der Schülerteil hat höchstens 2 Seiten (C1 und C2: 1 Seite),
-//   • Bereich Spielschule: Schülerteil höchstens 2 Seiten (Bildkarten + Blatt), für die Lehrperson genau
-//     2 Seiten (Lehrerseite + „Aktivitäten & Ideen“),
+//   • Bereich Spielschule: Schülerteil höchstens 2 Seiten (Bildkarten + Blatt), für die Lehrperson 2 Seiten
+//     (Lehrerseite + „Aktivitäten & Ideen“), mit „Beobachten & Begleiten“ 3 Seiten; jede Zusatzseite
+//     (Klassenraster, Portfolio-Blatt, Elternbrief) genau 1 Seite,
 //   • keine leere Seite (nur Kopf/Fußzeile),
 //   • jede Seite trägt den Urheber-Vermerk in der Sprache des Blatts (src/lib/urheber.ts)
 //     und daneben in der Fußzeile das CDSE-Logo (src/lib/cdse-logo.ts).
@@ -20,6 +21,7 @@ import { registriereSchriften } from '../src/blatt/pdf/stil'
 import type { Blatt, Sprache } from '../src/blatt/typen'
 import { nummerieren } from '../src/blatt/nummern'
 import { URHEBER } from '../src/lib/urheber'
+import { hatBegleiten, zusaetzeVon, type Zusatz } from '../src/blatt/spielschule'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 registriereSchriften((d) => join(ROOT, 'src/assets/fonts/pdf', d))
@@ -33,7 +35,7 @@ const alle = nummerieren(dateien)
 const liste = auswahl.length ? alle.filter((b) => auswahl.some((a) => a === b.id || a === b.bereich || a === b.nr)) : alle
 
 const tmp = mkdtempSync(join(tmpdir(), 'blatt-seiten-'))
-const auftraege: { datei: string; blatt: Blatt & { nr: string }; sprache: Sprache; teil: 'schueler' | 'lehrer' }[] = []
+const auftraege: { datei: string; blatt: Blatt & { nr: string }; sprache: Sprache; teil: 'schueler' | 'lehrer' | Zusatz }[] = []
 for (const blatt of liste) {
   for (const sprache of ['de', 'fr'] as Sprache[]) {
     if (sprache === 'fr' && !blatt.fr) continue
@@ -42,6 +44,12 @@ for (const blatt of liste) {
       const buf = await renderToBuffer(<BlattDokument blatt={blatt} opt={{ sprache, nr: blatt.nr, schueler: teil === 'schueler', lehrer: teil === 'lehrer' }} />)
       writeFileSync(datei, buf)
       auftraege.push({ datei, blatt, sprache, teil })
+    }
+    // Spielschule: jede Zusatzseite einzeln (wie in der App angeboten)
+    for (const z of zusaetzeVon(blatt, sprache)) {
+      const datei = join(tmp, `${blatt.nr}_${sprache}_${z}.pdf`)
+      writeFileSync(datei, await renderToBuffer(<BlattDokument blatt={blatt} opt={{ sprache, nr: blatt.nr, schueler: false, lehrer: false, zusaetze: [z] }} />))
+      auftraege.push({ datei, blatt, sprache, teil: z })
     }
   }
 }
@@ -73,9 +81,11 @@ const ergebnis = JSON.parse(execFileSync('python3', ['-c', py, listeDatei], { ma
 let fehler = 0
 for (const a of auftraege) {
   const seiten = ergebnis[a.datei] ?? []
-  const wo = `${a.blatt.nr} ${a.blatt.id} ${a.sprache.toUpperCase()} ${a.teil === 'lehrer' ? 'Lehrerseite' : 'Schülerteil'}`
+  const wo = `${a.blatt.nr} ${a.blatt.id} ${a.sprache.toUpperCase()} ${a.teil === 'lehrer' ? 'Lehrerseite' : a.teil === 'schueler' ? 'Schülerteil' : a.teil}`
   const spielschule = a.blatt.bereich === 'spielschule'
-  const max = a.teil === 'lehrer' ? (spielschule ? 2 : 1) : spielschule ? 2 : a.blatt.stufen.every((s) => s === 'C1' || s === 'C2') ? 1 : 2
+  const begleiten = hatBegleiten(a.blatt, ((a.sprache === 'fr' && a.blatt.fr) || a.blatt.de).lehrer.spielschule)
+  const max =
+    a.teil === 'lehrer' ? (spielschule ? (begleiten ? 3 : 2) : 1) : a.teil !== 'schueler' ? 1 : spielschule ? 2 : a.blatt.stufen.every((s) => s === 'C1' || s === 'C2') ? 1 : 2
   const probleme: string[] = []
   if (seiten.length > max) probleme.push(`${seiten.length} Seiten (erlaubt: ${max})`)
   seiten.forEach(({ inhalt, vermerk, logo }, i) => {

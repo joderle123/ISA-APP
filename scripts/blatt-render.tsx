@@ -1,6 +1,7 @@
 // Rendert Arbeitsblätter als PDF (und auf Wunsch als PNG über PyMuPDF).
 //   npx tsx --tsconfig tsconfig.scripts.json scripts/blatt-render.tsx <ausgabeordner> [id|bereich|datei.json ...] [--png] [--fr] [--katalog]
 // Ohne Auswahl: alle Blätter aus src/data/blaetter/*.json.
+// Spielschule: Zusatzseiten (Klassenraster, Portfolio, Elternbrief) zusätzlich als <nr>_<id>[_fr]_zusatz.pdf.
 import { renderToFile } from '@react-pdf/renderer'
 import { mkdirSync, readFileSync, readdirSync } from 'node:fs'
 import { join, dirname } from 'node:path'
@@ -11,6 +12,7 @@ import { registriereSchriften } from '../src/blatt/pdf/stil'
 import { katalogBlaetter } from './blatt-katalog'
 import type { Blatt, Sprache } from '../src/blatt/typen'
 import { nummerieren } from '../src/blatt/nummern'
+import { zusaetzeVon } from '../src/blatt/spielschule'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 registriereSchriften((d) => join(ROOT, 'src/assets/fonts/pdf', d))
@@ -46,8 +48,16 @@ for (const { blatt, nr } of liste) {
   for (const sprache of sprachen) {
     if (sprache === 'fr' && !blatt.fr) continue
     const datei = join(ziel, `${nr}_${blatt.id}${sprache === 'fr' ? '_fr' : ''}.pdf`)
+    const zusaetze = zusaetzeVon(blatt, sprache)
+    const dateien = [datei]
     await renderToFile(<BlattDokument blatt={blatt} opt={{ sprache, nr }} />, datei)
-    if (png) execFileSync('python3', ['-c', `import pymupdf,sys\nd=pymupdf.open(sys.argv[1])\nfor i,p in enumerate(d): p.get_pixmap(dpi=int(sys.argv[2])).save(sys.argv[1][:-4]+'-%d.png'%(i+1))`, datei, '80'])
-    console.log('✓', datei)
+    if (zusaetze.length) {
+      dateien.push(datei.replace(/\.pdf$/, '_zusatz.pdf'))
+      await renderToFile(<BlattDokument blatt={blatt} opt={{ sprache, nr, schueler: false, lehrer: false, zusaetze }} />, dateien[1])
+    }
+    for (const d of dateien) {
+      if (png) execFileSync('python3', ['-c', `import pymupdf,sys\nd=pymupdf.open(sys.argv[1])\nfor i,p in enumerate(d): p.get_pixmap(dpi=int(sys.argv[2])).save(sys.argv[1][:-4]+'-%d.png'%(i+1))`, d, '80'])
+      console.log('✓', d)
+    }
   }
 }
