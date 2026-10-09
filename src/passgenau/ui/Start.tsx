@@ -327,10 +327,11 @@ export function WissenKurz() {
 /** Ohne Hub: Profil per Chips (Alter, Sprache, Ziele) – gespeichert wird nur als Datei bzw. eigene Vorlage */
 export function OhneKind() {
   const pg = usePg()
-  const [alter, setAlter] = useState(9)
+  const [alter, setAlter] = useState(pg.startAlter ?? 9)
   const [sprache, setSprache] = useState<Sprache>('de')
-  const [ziele, setZiele] = useState<string[]>([])
-  const alle = ZIELE_OHNE_KIND
+  const [ziele, setZiele] = useState<string[]>(() => (pg.startZiel ? [pg.startZiel] : []))
+  // vom Blatt aus (Brücke, Aufgabe 154): dessen Ziel steht vorn, auch wenn es nicht zu den üblichen gehört
+  const alle = pg.startZiel && !ZIELE_OHNE_KIND.includes(pg.startZiel) ? [pg.startZiel, ...ZIELE_OHNE_KIND] : ZIELE_OHNE_KIND
   const los = () => {
     const p = K.ohneKindProfil({ alterJahre: alter, sprache, ziele })
     pg.setRoh({ ...p, vorname: undefined })
@@ -342,7 +343,7 @@ export function OhneKind() {
       <div className="pg-eyebrow">Passgenau · ohne Hub</div>
       <h1>Ohne Kind planen</h1>
       <p className="pg-lead">
-        {pg.hallo ? 'Die Toolbox wurde ohne Kind geöffnet.' : 'Kein Hub verbunden.'} Wähle Alter, Sprache und bis zu drei Ziele. Gespeichert wird nichts beim Kind – nur als Datei oder als eigene Vorlage.
+        {pg.hallo ? 'Die Toolbox wurde ohne Kind geöffnet.' : 'Kein Hub verbunden.'} Wähle Alter, Sprache und bis zu drei Ziele – für ein Kind, zu zweit oder eine Kleingruppe (im nächsten Schritt). Gespeichert wird nichts beim Kind – nur als Datei oder als eigene Vorlage.
       </p>
       {pg.fehler && (
         <div className="pg-banner warn">

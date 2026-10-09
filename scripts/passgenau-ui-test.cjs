@@ -586,6 +586,24 @@ async function main() {
       pruefe(true, 'dünne Daten: Stunde mit Schwerpunkt')
       await tb.close()
 
+      // 16b. Gruppe (Aufgabe 151): zwei refs, ein Plan, gespeichert bei beiden, Blatt je Kind
+      tb = await oeffne('pg-mia7f3k9q2m,pg-anouk01', 'schnell')
+      await tb.getByRole('heading', { name: /Mia und Anouk heute/ }).waitFor({ timeout: 90000 })
+      pruefe((await ops()).filter((o) => o === 'profil').length >= 2, 'Gruppe: Profil je Kind geholt')
+      if (await tb.getByRole('button', { name: 'Stunde bauen' }).isDisabled()) await tb.locator('.pg-chip', { hasText: 'Gefühle ausdrücken' }).click()
+      await tb.getByRole('button', { name: 'Stunde bauen' }).click()
+      await tb.locator('.pg-schritt').first().waitFor()
+      await foto(tb, '20-gruppe-ergebnis')
+      const vorG = (await hub.evaluate(() => window.__ops.length))
+      const [dlG] = await Promise.all([tb.waitForEvent('download', { timeout: 60000 }), tb.locator('.pg-ekopf').getByRole('button', { name: 'PDF' }).click()])
+      await tb.waitForTimeout(800)
+      const spG = await hub.evaluate((n) => window.__ops.slice(n).filter((o) => o.op === 'speichern').map((o) => ({ ref: o.arg.ref, rev: o.arg.plan.rev, sf: o.arg.plan.auftrag && o.arg.plan.auftrag.sozialform })), vorG)
+      pruefe(spG.length === 2 && new Set(spG.map((x) => x.ref)).size === 2, 'Gruppe: PDF speichert bei beiden Kindern ' + JSON.stringify(spG))
+      pruefe(spG.every((x) => x.rev === undefined && x.sf === 'zu-zweit'), 'Gruppe: ohne Änderungszähler, Sozialform zu zweit')
+      pruefe(!(await hub.evaluate((n) => window.__ops.slice(n).some((o) => o.op === 'vorlieben'), vorG)), 'Gruppe: keine Korrekturen/Vorlieben ans Kind')
+      console.log('  (Gruppe: ' + dlG.suggestedFilename() + ')')
+      await tb.close()
+
       // 17. Rahmen-Modus (window.parent)
       if (breite > 500) {
         await hub.goto(`${BASIS}/__hub.html?ref=pg-mia7f3k9q2m&modus=rahmen`)

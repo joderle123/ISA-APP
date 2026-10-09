@@ -8,7 +8,7 @@ import { Ic } from './zeichen'
 import { Daumen, FettCodes, HeikelBanner, Pill, RolleBadge, VersionsBanner, Warum } from './Teile'
 import { BlattAnsicht } from './Vorschau'
 import { istBlattSchritt, minutenVon, teilText, warumListe } from './anzeige'
-import { PHASE_NAME, TF_NAME, datumKurz } from './texte'
+import { PHASE_NAME, TF_NAME, datumKurz, SOZIALFORM_NAME } from './texte'
 import { ergebnisText } from './Start'
 
 function quelleIcon(e?: KatalogEintrag): string {
@@ -285,7 +285,7 @@ export function Ergebnis() {
           <h2 className="pg-disp">{leicht ? 'Heute leicht – ' + tfs.map((t) => TF_NAME[t]).join(' und ') : plan.n > 1 ? `Sitzung ${s.nr} von ${plan.n} · ${PHASE_NAME[s.phase]}` : `Stunde · ${PHASE_NAME[s.phase]}`}</h2>
           <div className="pg-meta">
             <span>
-              {pg.vorname} · {minutenVon(s)} Min. · Einzel
+              {pg.vorname} · {minutenVon(s)} Min. · {SOZIALFORM_NAME[plan.auftrag?.sozialform ?? 'einzeln']}
             </span>
             {leicht ? <Pill art="ok">ohne Förderziel</Pill> : plan.ziele.slice(0, 2).map((z) => <Pill key={z} art="akz">{z}</Pill>)}
             {h && (

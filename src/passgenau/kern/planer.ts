@@ -4,7 +4,7 @@
 // gleiches Kind, gleiche Vorlieben → gleicher Plan (Seed aus Kind, Plan-Id, Sitzung, Variante – kein Datum, kein ref).
 import type { Auftrag, Bogen, Ereignis, KatalogEintrag, Plan, PlanSchritt, Profil, Rolle, Sitzung, Sprache } from '../typen'
 import { hash01, hash8, stufeAusAlter, layoutAusStufe, istEldib } from './hilfen'
-import { aktuellerKatalog, ichSatz, intern, kurz, merkmaleVon, textVon, type Katalog } from './katalog'
+import { aktuellerKatalog, ichSatz, intern, kurz, merkmaleVon, setzeTextModus, textVon, type Katalog } from './katalog'
 import { bewerte, kontext, krisenlage, pruefe, rang, warum, type Bewertet, type Kontext } from './regeln'
 import { baueBlatt, kernBlatt } from './blatt'
 import { BLATT_SYSTEM } from './system'
@@ -922,6 +922,7 @@ function weiterMitFolge(c: Kontext, folge: Plan): Plan {
 }
 
 export function planen(k: Katalog, p: Profil, a: Auftrag, v: Vorlieben, verlauf: Verlauf): Plan {
+  setzeTextModus((a.sozialform ?? 'einzeln') !== 'einzeln')
   const c = kontext(k, p, a, v, verlauf)
   if (a.weg === 'schnell' && p.folge) {
     const folge = verlauf.plaene.find((pl) => pl.id === p.folge!.id)

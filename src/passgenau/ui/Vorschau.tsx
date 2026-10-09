@@ -11,7 +11,7 @@ import { zerlegen } from './blattTeile'
 import { blattZusatz } from './erweitert'
 import { istBlattSchritt, minutenVon, teilText, warumListe } from './anzeige'
 import { Chip, HeikelBanner, Pill } from './Teile'
-import { PHASE_NAME, ROLLE_NAME, datumKurz, zielKurz } from './texte'
+import { PHASE_NAME, ROLLE_NAME, datumKurz, zielKurz, SOZIALFORM_NAME } from './texte'
 import { ladePdfjs } from '../../lib/pdfjs'
 
 /** pdf.js zeichnet das PDF selbst – nur ohne Canvas (sehr alte Browser) bleibt die Skizze */
@@ -350,7 +350,7 @@ function PlanSeite({ plan, nr, breite, onSchritt }: { plan: Plan; nr: number; br
         <div className="pga-strich" />
         <div className="ptitel">{leicht ? `Heute leicht${pg.vorname ? ' · ' + pg.vorname : ''}` : plan.n > 1 ? `${plan.titel} · Sitzung ${nr} von ${plan.n}` : plan.titel}</div>
         <div className="pmeta">
-          {minutenVon(s)} Min. · Einzel · {leicht ? 'ohne Förderziel' : 'Phase: ' + PHASE_NAME[s.phase]} · Rituale wie immer
+          {minutenVon(s)} Min. · {SOZIALFORM_NAME[plan.auftrag?.sozialform ?? 'einzeln']} · {leicht ? 'ohne Förderziel' : 'Phase: ' + PHASE_NAME[s.phase]} · Rituale wie immer
         </div>
         {!leicht && (
           <div className="zl">

@@ -18,6 +18,7 @@ import { alternativen, ersetzen } from '../src/passgenau/kern/alternativen'
 import { blattTeilKohaerent, kinderblatt } from '../src/passgenau/kern/blatt'
 import { seitenFuellung } from '../src/passgenau/kern/seiten'
 import { druckSitzung, druckPakete } from '../src/passgenau/kern/druck'
+import { gruppenProfil } from '../src/passgenau/kern/gruppe'
 import { ereignis } from '../src/passgenau/kern/ereignis'
 import { notizText } from '../src/passgenau/kern/notiz'
 import { fuerTeam, uebernehmen, vorlageZurueckgezogen } from '../src/passgenau/kern/team'
@@ -840,6 +841,34 @@ await pruefung('Druckmaterial (T-M12): Schritt mit Bildkarten bringt sein Paket 
   const d = druckSitzung(k, p, plan, 1, { sprache: 'de', warum: false })
   soll(!!d.materialSeite && d.material.some((m) => m.includes('Materialseite')), 'Materialseite fehlt')
   info(`${s.id} → ${pakete.map((b) => b.id).join(', ')}`)
+})
+
+await pruefung('Gruppe (151): Profile übereinander, gemeinsamer Kern, Blatt je Kind in seiner Sprache, Rollen', () => {
+  const lea = kind({ ref: 't-lea', vorname: 'Léa', alterJahre: 8, sprache: { blatt: 'fr', woerter: [] }, zugang: { lesen: 0, schreiben: 0, bild: 3, tempo: 'ruhig', struktur: 'normal', quelle: [] }, ziele: [z('K-26', 'Ich sage, wie ich mich fühle.', 1)] })
+  const tom = kind({ ref: 't-tom', vorname: 'Tom', alterJahre: 10, ziele: [z('SOZ-14', 'Ich warte, bis ich an der Reihe bin.', 1)], vorsicht: ['koerper'] })
+  const g = gruppenProfil([KINDER.mia, lea, tom])
+  soll(g.ziele[0]?.code === 'K-26', `geteiltes Ziel nicht zuerst: ${g.ziele.map((x) => x.code).join(',')}`)
+  soll(g.zugang.lesen === 0 && g.zugang.schreiben === 0 && g.zugang.tempo === 'ruhig', 'Zugang nicht der vorsichtigste')
+  soll(g.vorsicht.includes('familie') && g.vorsicht.includes('koerper'), 'Vorsicht nicht vereinigt')
+  soll(g.lernen === false && g.gruppe?.length === 3 && g.alterJahre === 8, 'Gruppe/Lernen/Alter falsch')
+  for (const [weg, sf] of [['schnell', 'kleingruppe'], ['gruendlich', 'kleingruppe']] as const) {
+    const plan = planen(k, g, auftrag(g, weg, { sozialform: sf }), leer(), VERLAUF)
+    for (const sz of plan.sitzungen)
+      for (const x of sz.schritte) {
+        const e = k.eintraege.get(x.ref)
+        if (!e) continue
+        const grund = pruefe(e, kontext(k, g, plan.auftrag!, leer()))
+        soll(!grund || x.ref.startsWith('pg:'), `${weg}: ${x.ref} verletzt Regel „${grund}“`)
+        if (e.typ === 'schritt' && e.gruppe) soll(e.gruppe.min <= 3 && e.gruppe.max >= 3, `${x.ref}: Gruppengröße ${e.gruppe.min}–${e.gruppe.max}`)
+      }
+    const d = druckSitzung(k, g, plan, 1, { sprache: 'de', warum: false })
+    soll(d.hinweise.some((h) => h.startsWith('Rollen heute')), 'keine Rollen auf dem Planblatt')
+    if (d.kinderblatt) {
+      soll(d.weitereBlaetter?.length === 2, `weitere Blätter: ${d.weitereBlaetter?.length}`)
+      soll(d.weitereBlaetter?.[0].sprache === 'fr', 'Blatt von Léa nicht französisch')
+    }
+    info(`${weg}: ${plan.sitzungen[0].schritte.map((x) => x.ref).join(' ')}`)
+  }
 })
 
 if (!SCHNELL) {

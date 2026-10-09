@@ -3,9 +3,10 @@
 // auf dem Planblatt Vorname, Codes und Quelle-Art, aber keine Daten von Vorfällen oder Notizen; Begründungen nur auf Wunsch.
 import type { Baustein, Blatt } from '../../blatt/typen'
 import type { KatalogEintrag, MikroBaustein, Plan, PlanSchritt, Profil, Rolle, Sprache } from '../typen'
-import { bausteinInhalt, eldibKurz, intern, merkmaleVon, quelleText, staemme, textVon, zielSatz, type Katalog } from './katalog'
+import { bausteinInhalt, eldibKurz, intern, istGruppenText, merkmaleVon, quelleText, setzeTextModus, staemme, textVon, zielSatz, type Katalog } from './katalog'
 import { textMerkmale } from './einzel'
 import { kinderblatt } from './blatt'
+import { gruppenRollen, mitgliedProfil } from './gruppe'
 import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME } from './vokabular'
 import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter } from './hilfen'
 
@@ -39,6 +40,8 @@ export interface DruckSitzung {
   hinweise: string[]
   blattTeile: { titel: string; quelle: string; tipp?: string }[]
   kinderblatt: Blatt | null
+  /** Kleingruppe: die Blätter der übrigen Kinder, je in Stufe, Gestaltung und Sprache des Kindes */
+  weitereBlaetter?: { name: string; blatt: Blatt; sprache: Sprache }[]
   karten: Blatt | null
   /** Druckmaterial der Schritte (T-M12): Bildkarten, Memory, Bastelbogen … aus dem verknüpften Blatt */
   materialSeite: Blatt | null
@@ -113,10 +116,12 @@ function achtungFuer(e: KatalogEintrag, schrittText: string, sicherheitImmer = t
   const saetze = achtung.replace(/\s+/g, ' ').trim().split(SATZ_GRENZE_GROSS)
   // Sätze über die Gruppe („Für sehr lebhafte Gruppen …“) gelten in der Einzelstunde nicht; ein Schutzsatz bleibt und
   // spricht von der Stunde statt von der Gruppe („nicht in der Gruppe vertiefen, sondern im Einzelgespräch“)
+  // (in der Gruppenstunde bleiben sie, Aufgabe 151)
+  const gruppe = istGruppenText()
   const bleibt = saetze
     .filter((x: string) => (sicherheitImmer && SICHERHEIT_RE.test(x)) || [...staemme(x)].some((w) => bezug.has(w)))
-    .filter((x: string) => !textMerkmale(x).has('gruppe') || SCHUTZ_RE.test(x))
-    .map((x: string) => x.replace(/\b(in|vor|mit) der (ganzen )?Gruppe\b/g, '$1 der Stunde').replace(/\bdans le groupe\b/g, 'pendant la séance'))
+    .filter((x: string) => gruppe || !textMerkmale(x).has('gruppe') || SCHUTZ_RE.test(x))
+    .map((x: string) => (gruppe ? x : x.replace(/\b(in|vor|mit) der (ganzen )?Gruppe\b/g, '$1 der Stunde').replace(/\bdans le groupe\b/g, 'pendant la séance')))
   return bleibt.length ? bleibt.join(' ') : undefined
 }
 
@@ -224,6 +229,7 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
 export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt: { sprache: Sprache; warum: boolean; karten?: boolean }): DruckSitzung {
   const s = plan.sitzungen.find((x) => x.nr === nr)!
   const sp = opt.sprache
+  setzeTextModus((plan.auftrag?.sozialform ?? 'einzeln') !== 'einzeln')
   const schritte = s.schritte.map((x) => druckSchritt(k, x, sp, opt.warum, s.blatt?.titel))
   // Material: aus allen Schritten und Blatt-Teilen; Ritual-Material nur in Sitzung 1 einer Folge
   const mat = new Set<string>()
@@ -286,6 +292,8 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       : `Passgenau · ${plan.n > 1 ? `Sitzung ${nr} von ${plan.n} · ` : ''}${plan.dauer} Min. · ${phase}`
   // Hinweise, die nur in der Oberfläche etwas bedeuten (Knopf „Leichte Stunde zeigen“, Wahl des Blatts), nicht drucken
   const hinweise = (s.hinweise ?? []).filter((h) => !NUR_OBERFLAECHE.test(h)).map((h) => (sp === 'fr' ? hinweisFr(h) : h))
+  const rollen = gruppenRollen(p, nr, sp)
+  if (rollen) hinweise.unshift(rollen)
   if (p.vorsicht.includes('heikel') || (p.achtung ?? []).length)
     hinweise.unshift(sp === 'fr' ? 'Un thème sensible est ouvert pour cet enfant. Passgenau ne remplace pas une évaluation – voir le dossier.' : 'Zu diesem Kind ist ein heikles Thema offen. Passgenau ersetzt keine Abklärung – Hinweise im Dossier.')
   return {
@@ -299,7 +307,10 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     elternbrief,
     hinweise,
     blattTeile,
-    kinderblatt: s.blatt ? kinderblatt(k, p, plan, nr, sp) : null,
+    kinderblatt: s.blatt ? (p.gruppe?.length ? kinderblatt(k, mitgliedProfil(p, p.gruppe[0]), plan, nr, p.gruppe[0].sprache.blatt) : kinderblatt(k, p, plan, nr, sp)) : null,
+    ...(s.blatt && (p.gruppe?.length ?? 0) > 1
+      ? { weitereBlaetter: p.gruppe!.slice(1).map((m, i) => ({ name: m.vorname || `Kind ${i + 2}`, blatt: kinderblatt(k, mitgliedProfil(p, m), plan, nr, m.sprache.blatt), sprache: m.sprache.blatt })) }
+      : {}),
     // C1/C2: höchstens eine Seite fürs Kind (A11) – gibt es ein Blatt, keine zusätzliche Kartenseite (die Stundenleiste
     // steht oben auf dem Blatt, die Wahl im Planblatt)
     karten: opt.karten && !(s.blatt && ['C1', 'C2'].includes(stufeAusAlter(p.alterJahre))) ? karten(k, p, plan, nr, sp) : null,
@@ -321,6 +332,7 @@ const DRUCK_ARTEN = new Set(['karten', 'memory', 'suchbild', 'schneiden_kleben',
 export function druckPakete(k: Katalog, plan: Plan, nr: number): MikroBaustein[] {
   const s = plan.sitzungen.find((x) => x.nr === nr)
   if (!s) return []
+  setzeTextModus((plan.auftrag?.sozialform ?? 'einzeln') !== 'einzeln')
   const aufDemBlatt = new Set((s.blatt?.bausteine ?? []).map((b) => b.ref))
   const out = new Map<string, MikroBaustein>()
   for (const x of s.schritte)
@@ -333,7 +345,7 @@ export function druckPakete(k: Katalog, plan: Plan, nr: number): MikroBaustein[]
         if (!b || b.typ !== 'baustein' || aufDemBlatt.has(id) || out.has(id) || !b.art.some((a) => DRUCK_ARTEN.has(a))) continue
         // Spielkarten einer Gruppe („Werft einen Ball im Kreis“) nicht als Material der Einzelstunde drucken
         const bm = merkmaleVon(k, b)
-        if (bm.has('gruppe') || bm.has('ihr') || bm.has('fuerleitung') || bm.has('heikel')) continue
+        if ((!istGruppenText() && (bm.has('gruppe') || bm.has('ihr'))) || bm.has('fuerleitung') || bm.has('heikel')) continue
         out.set(id, b)
         if (++n >= 2) break
       }

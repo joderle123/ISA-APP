@@ -214,3 +214,6 @@ export const QUELLE_ZIEL: Record<string, string> = {
   vorgemerkt: 'vorgemerkt aus Beobachtungen',
   andere: 'anderes Ziel',
 }
+
+/** Sozialform (Aufgabe 151) */
+export const SOZIALFORM_NAME: Record<'einzeln' | 'zu-zweit' | 'kleingruppe', string> = { einzeln: 'Einzel', 'zu-zweit': 'zu zweit', kleingruppe: 'Kleingruppe' }

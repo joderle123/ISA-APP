@@ -61,14 +61,22 @@ export function useRueckmeldung() {
     let notizId: string | null = null
     if (pg.darfRueckmelden && pg.ref) {
       const stapel = pg.stapelNehmen()
+      const g0 = (pg.profil?.gruppe?.length ?? 0) > 1 ? pg.profil!.gruppe![0] : null
       pg.setSpeicherStatus({ art: 'laeuft', text: 'wird gespeichert …' })
       try {
         // Notiz, Haken und Protokoll schreibt der Hub (nur aus Geklicktem); der Plan geht mit (P7)
         const erg = await hub.rueckmeldung({
-          ref: pg.ref, planId: neu.id, sitzung: nr, ergebnis: r.ergebnis, ziele: r.ziele ?? [], chips: r.chips ?? [], ...(r.kind ? { kind: r.kind } : {}),
+          ref: pg.ref, planId: neu.id, sitzung: nr, ergebnis: r.ergebnis, ziele: (r.ziele ?? []).filter((z) => !g0?.ziele || g0.ziele.includes(z.code)), chips: r.chips ?? [], ...(r.kind && !g0 ? { kind: r.kind } : {}),
           ereignisse: stapel, plan: neu, ...(pg.lernenKind && pg.darfSpeichern ? { vorlieben: pg.vor.kind } : {}), am: r.am,
         })
         notizId = erg?.notizId ?? null
+        // Gruppe (Aufgabe 151): dieselbe Rückmeldung in jedes andere Dossier, je Kind nur zu seinen Zielen, ohne Stimme des
+        // Kindes (sie gehört zu einem Kind) und ohne Änderungszähler (die Dossiers zählen getrennt)
+        for (const m of (pg.profil?.gruppe ?? []).slice(1))
+          await hub.rueckmeldung({
+            ref: m.ref, planId: neu.id, sitzung: nr, ergebnis: r.ergebnis, ziele: (r.ziele ?? []).filter((z) => !m.ziele || m.ziele.includes(z.code)), chips: r.chips ?? [],
+            ereignisse: [], plan: { ...neu, rev: undefined }, am: r.am,
+          })
         if (typeof erg?.rev === 'number') {
           const rev = erg.rev
           neu = { ...neu, rev }

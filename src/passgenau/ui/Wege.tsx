@@ -4,12 +4,27 @@ import type { Auftrag, FormatWunsch, Profil, Schwerpunkt, Tagesform } from '../t
 import { usePg, useProfil } from './zustand'
 import { Ic } from './zeichen'
 import { Chip, HeikelBanner, VersionsBanner } from './Teile'
-import { BOGEN_ANZEIGE, FORMAT_WUNSCH, LAYOUT_NAME, PHASE_KURZ, PHASE_NAME, SCHWERPUNKTE, TAGESFORM, THEMA_NAME, heuteIso, zielKurz } from './texte'
+import { BOGEN_ANZEIGE, FORMAT_WUNSCH, LAYOUT_NAME, PHASE_KURZ, PHASE_NAME, SCHWERPUNKTE, SOZIALFORM_NAME, TAGESFORM, THEMA_NAME, heuteIso, zielKurz } from './texte'
 
 type Dauer = Auftrag['dauer']
 const DAUERN: Dauer[] = [10, 15, 20, 30, 45, 60]
 
 /** Dauer-Vorbelegung nach Alter (P3): ≤ 5 J. 15, 6–8 J. 20, ab 9 J. die der letzten Folge, sonst 30; Psychologin 45 */
+/** Sozialform (Aufgabe 151): Einzel, zu zweit, Kleingruppe – in einer Gruppe aus dem Hub vorbelegt */
+function SozialformWahl({ mt }: { mt?: boolean }) {
+  const pg = usePg()
+  const n = useProfil().gruppe?.length ?? 0
+  return (
+    <div className={'pg-chips' + (mt ? ' pg-mt' : '')} role="group" aria-label="Sozialform">
+      {(['einzeln', 'zu-zweit', 'kleingruppe'] as const).map((f) => (
+        <Chip key={f} an={pg.sozialform === f} disabled={n > 1 && f === 'einzeln'} titel={n > 1 && f === 'einzeln' ? 'mehrere Kinder gewählt' : undefined} onClick={() => pg.setSozialform(f)}>
+          {SOZIALFORM_NAME[f]}
+        </Chip>
+      ))}
+    </div>
+  )
+}
+
 export function dauerVorgabe(p: Profil, funktion?: string, letzte?: number): Dauer {
   if (p.alterJahre <= 5) return 15
   if (p.alterJahre <= 8) return 20
@@ -197,17 +212,7 @@ export function Gruendlich() {
               </Chip>
               {blattGrund(p) && <span className="pg-leise pg-klein pg-mitte-v">{blattGrund(p)}</span>}
             </div>
-            <div className="pg-chips" role="group" aria-label="Sozialform">
-              <Chip an onClick={() => {}}>
-                Einzel
-              </Chip>
-              <Chip an={false} disabled titel="kommt mit der Gruppenplanung" onClick={() => {}}>
-                zu zweit
-              </Chip>
-              <Chip an={false} disabled titel="kommt mit der Gruppenplanung" onClick={() => {}}>
-                Kleingruppe
-              </Chip>
-            </div>
+            <SozialformWahl />
           </div>
           <div className="pg-fblock">
             <h3>
@@ -261,7 +266,7 @@ export function Gruendlich() {
             <dd>{duenn ? (kennenlernen ? 'Kennenlernen' : thema.map((t) => t.replace('kompetenz:', '')).map((t) => THEMA_NAME[t] ?? t).join(', ') || <span className="pg-leise">bitte eins wählen</span>) : ziele.length ? ziele.join(', ') : <span className="pg-leise">bitte eins wählen</span>}</dd>
             <dt>Umfang</dt>
             <dd>
-              {n} × {dauer} Min. · Einzel
+              {n} × {dauer} Min. · {SOZIALFORM_NAME[pg.sozialform]}
             </dd>
             <dt>Rituale</dt>
             <dd>gleich in jeder Sitzung</dd>
@@ -393,6 +398,7 @@ export function Schnell() {
           </Chip>
           {blattGrund(p) && <span className="pg-leise pg-klein pg-mitte-v">{blattGrund(p)}</span>}
         </div>
+        <SozialformWahl mt />
         {f && (
           <>
             <hr className="pg-fein" />
