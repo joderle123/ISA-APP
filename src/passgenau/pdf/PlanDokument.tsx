@@ -195,20 +195,20 @@ export function PlanSeite({ d }: { d: DruckSitzung }) {
           ))}
         </View>
       ) : null}
-      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text, marginBottom: 2 }}>{tx.ablauf}</Text>
-      {d.schritte.map((x, i) => (
-        <SchrittZeile key={i} x={x} i={i} d={d} />
-      ))}
-      <View wrap={false} style={{ flexDirection: 'row', borderTopWidth: 0.6, borderTopColor: NEUTRAL.haarlinie, paddingTop: 9, marginTop: 2 }}>
-        <View style={{ flex: 1, paddingRight: 14 }}>
+      {/* Vorher und nachher oben in einem Kasten (Testlauf 9.10.: unten brach der Block allein auf eine zweite Seite um):
+          links Material, Vorbereitung, Elternbrief – rechts die Notiz nach der Stunde. Danach nur noch der Ablauf. */}
+      <View wrap={false} style={{ flexDirection: 'row', borderWidth: 0.7, borderColor: NEUTRAL.haarlinie, borderRadius: 7, paddingHorizontal: 9, paddingTop: 7, paddingBottom: 4, marginBottom: 10 }}>
+        <View style={{ flex: 1.45, paddingRight: 12 }}>
           <Absatz titel={tx.material}>
             {d.material.length ? (
-              d.material.map((m, k) => (
-                <View key={k} style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 2.5 }}>
-                  <Kaestchen />
-                  <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.8, color: NEUTRAL.text, marginLeft: 5 }}>{ty(m, sp)}</Text>
-                </View>
-              ))
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+                {d.material.map((m, k) => (
+                  <View key={k} style={{ flexDirection: 'row', alignItems: 'center', marginRight: 9, marginBottom: 2.5 }}>
+                    <Kaestchen g={7.5} />
+                    <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, color: NEUTRAL.text, marginLeft: 4 }}>{ty(m, sp)}</Text>
+                  </View>
+                ))}
+              </View>
             ) : (
               <LText klein farbe={NEUTRAL.leise}>
                 {sp === 'fr' ? 'rien de particulier' : 'nichts Besonderes'}
@@ -225,29 +225,33 @@ export function PlanSeite({ d }: { d: DruckSitzung }) {
             </Absatz>
           ) : null}
           {d.elternbrief ? (
-            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 8 }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 7 }}>
               <Kaestchen />
               <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, color: NEUTRAL.text, marginLeft: 5 }}>{tx.eltern}</Text>
             </View>
           ) : null}
         </View>
-        <View style={{ flex: 1.2 }}>
+        <View style={{ flex: 1, borderLeftWidth: 0.6, borderLeftColor: NEUTRAL.haarlinie, paddingLeft: 10 }}>
           <Absatz titel={tx.notiz}>
-            <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 3 }}>
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 2 }}>
               {/* Krisentag und Weg 3 (P10): nie „hat nicht geklappt“ */}
               {(d.krisentag ? [tx.beruhigt, tx.dabei, tx.nurDa, tx.abgebrochen] : [tx.geklappt, tx.teils, tx.nicht]).map((w) => (
-                <View key={w} style={{ flexDirection: 'row', alignItems: 'center', marginRight: 10, marginBottom: 3 }}>
-                  <Kaestchen />
-                  <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.4, color: NEUTRAL.text, marginLeft: 4 }}>{w}</Text>
+                <View key={w} style={{ flexDirection: 'row', alignItems: 'center', marginRight: 9, marginBottom: 3 }}>
+                  <Kaestchen g={7.5} />
+                  <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 8.2, color: NEUTRAL.text, marginLeft: 4 }}>{w}</Text>
                 </View>
               ))}
             </View>
-            {[0, 1, 2, 3].map((k) => (
-              <View key={k} style={{ height: 17, borderBottomWidth: 0.7, borderBottomColor: NEUTRAL.linie }} />
+            {[0, 1, 2].map((k) => (
+              <View key={k} style={{ height: 15, borderBottomWidth: 0.7, borderBottomColor: NEUTRAL.linie }} />
             ))}
           </Absatz>
         </View>
       </View>
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 9.4, color: NEUTRAL.text, marginBottom: 2 }}>{tx.ablauf}</Text>
+      {d.schritte.map((x, i) => (
+        <SchrittZeile key={i} x={x} i={i} d={d} />
+      ))}
       <Fuss sprache={sp} spielschule={spielschule} />
     </Page>
   )

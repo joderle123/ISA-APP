@@ -15,7 +15,7 @@ import { PlanSeite, SitzungDokument, teilPositionen } from '../src/passgenau/pdf
 import { aufloesen, intern, textVon, zielSatz, type Katalog } from '../src/passgenau/kern/katalog'
 import { erkundbar, planen, sitzungNeu, type Verlauf } from '../src/passgenau/kern/planer'
 import { alternativen, ersetzen } from '../src/passgenau/kern/alternativen'
-import { kinderblatt } from '../src/passgenau/kern/blatt'
+import { blattTeilKohaerent, kinderblatt } from '../src/passgenau/kern/blatt'
 import { seitenFuellung } from '../src/passgenau/kern/seiten'
 import { druckSitzung, druckPakete } from '../src/passgenau/kern/druck'
 import { ereignis } from '../src/passgenau/kern/ereignis'
@@ -137,6 +137,16 @@ function verstoesse(p: Profil, a: Auftrag, plan: Plan): string[] {
       ...s.schritte.flatMap((x) => [{ ref: x.ref, blatt: false, ritual: x.rolle === 'ankommen' || x.rolle === 'abschluss', locker: !!x.hinweis }, ...(x.wahl ?? []).map((w) => ({ ref: w.ref, blatt: false, ritual: false, locker: false }))]),
       ...(s.blatt?.bausteine ?? []).map((b) => ({ ref: b.ref, blatt: true, ritual: false, locker: false })),
     ]
+    const kernE = k.eintraege.get(s.schritte.find((x) => x.rolle === 'kern')?.ref ?? '')
+    if (s.blatt && kernE && plan.weg !== 'leicht' && (kernE.eldib.length || kernE.thema.length))
+      for (const b of s.blatt.bausteine) {
+        const e = k.eintraege.get(b.ref)
+        if (!e || e.typ !== 'baustein') continue
+        const passt = blattTeilKohaerent(e, { codes: new Set(kernE.eldib.map((x) => x.code)), themen: new Set(kernE.thema), felder: new Set(kernE.kompetenz), blatt: new Set(kernE.typ === 'schritt' ? (kernE.blatt ?? []) : []), kindThemen: c.themen })
+        // Geschichten und Infos, die ein Teil braucht, gehören zu ihm
+        const gebraucht = s.blatt.bausteine.some((x) => { const y = k.eintraege.get(x.ref); return y?.typ === 'baustein' && (y.braucht ?? []).includes(e.id) })
+        if (!passt && !gebraucht) out.push(`S${s.nr} ${e.id}: Blatt-Teil ohne gemeinsames Ziel oder Thema mit dem Kern ${kernE.id}`)
+      }
     for (const t of teile) {
       if (t.ref.startsWith('pg:')) continue
       const e = k.eintraege.get(t.ref)
@@ -149,6 +159,8 @@ function verstoesse(p: Profil, a: Auftrag, plan: Plan): string[] {
       if (p.alterJahre < e.alter.von - 1 || p.alterJahre > e.alter.bis + 1) w('Alter')
       if (p.alterJahre >= 12 && e.stufen.every((x) => x === 'C1' || x === 'C2')) w('für Jüngere')
       if (e.einzeltauglich === 'nein' && (a.sozialform ?? 'einzeln') === 'einzeln') w('nur Gruppe')
+      // seit der Beschriftung hart: Gruppenschritt nur mit beschriebener Einzelvariante
+      if (e.einzeltauglich === 'angepasst' && !(e.typ === 'schritt' && e.einzelvariante) && (a.sozialform ?? 'einzeln') === 'einzeln') w('Gruppe ohne Einzelvariante')
       if (e.zielgruppe === 'fachkraft') w('Werkzeug für Fachkräfte')
       if (e.sensibel === 'akut' || (e.sensibel === 'kinderschutz' && !(a.heikel ?? []).length)) w('heikel')
       if (e.sensibel === 'familie' && p.vorsicht.includes('familie')) w('Vorsicht Familie')
@@ -663,7 +675,9 @@ await pruefung('Dünne Daten (T-M5): Kind ohne Ziele und Themen – je Schritt e
     for (const x of verstoesse(p, a, plan)) soll(false, `${name}: ${x}`)
   }
   info(`Blätter mit ≥ 3 Paketen: ${dreier}/${blaetter}`)
-  soll(dreier / blaetter >= 0.75, `nur ${dreier}/${blaetter} Blätter mit ≥ 3 Paketen`)
+  // seit der Blatt-Kohärenz (jeder Teil teilt Ziel oder Thema mit dem Kern) fällt bei dünnen Daten der dritte, fremde Teil
+  // öfter weg – lieber zwei passende Teile als drei gemischte (vorher ≥ 75 %)
+  soll(dreier / blaetter >= 0.6, `nur ${dreier}/${blaetter} Blätter mit ≥ 3 Paketen`)
 })
 
 await pruefung('Französisch (T-M4): FR-Kinder bekommen ≥ 5 Pakete, Banner „nur auf Deutsch“ stimmt', () => {

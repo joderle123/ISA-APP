@@ -150,7 +150,7 @@ function zugangBeschreibung(p: Profil): string {
 const NICHT_STANDARD = new Set(['beamer', 'ipad', 'matten', 'schwungtuch', 'kueche', 'lochzange', 'wolle', 'klangschale'])
 
 export interface Pruefung {
-  /** 0 streng · 1 Nachbarphase · 2 Ziel ±2 · 3 Sperrfrist halbiert · 4 Gruppenschritt mit Hinweis (T-M3) */
+  /** 0 streng · 1 Nachbarphase · 2 Ziel ±2 · 3 Sperrfrist halbiert · 4 wie 3 (Gruppenschritte ohne Einzelvariante sind seit der Beschriftung hart ausgeschlossen) */
   locker?: number
   /** Ids, die in dieser Folge schon vorkommen (Alternativen, Tausch) */
   gesperrt?: Set<string>
@@ -220,7 +220,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   // Sozialform (Einzelstunde)
   if (c.a.sozialform === 'einzeln' || !c.a.sozialform) {
     if (e.einzeltauglich === 'nein') return 'nur Gruppe'
-    if (e.einzeltauglich === 'angepasst' && !(e.typ === 'schritt' && e.einzelvariante) && (locker < 4 || c.weg === 'leicht')) return 'Gruppe (ohne Einzelvariante)'
+    // seit der Beschriftung hart: ein Gruppenschritt kommt nur mit beschriebener Einzelvariante in eine Einzelstunde
+    if (e.einzeltauglich === 'angepasst' && !(e.typ === 'schritt' && e.einzelvariante)) return 'Gruppe (ohne Einzelvariante)'
   }
   // Zugang (P4): Lesemenge ≤ Kind (vorlesbar: + 1), Schreibmenge ≤ Kind
   if (e.typ === 'baustein') {

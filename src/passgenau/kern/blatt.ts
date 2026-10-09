@@ -86,12 +86,21 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   const maxAufgaben = knapp ? 3 : o.min <= 6 ? 2 : o.min <= 10 ? 4 : c.heute.konzentration >= 6 ? 6 : 5
   const budget = 1.25 * o.min
   const hinweise: string[] = []
+  // Blatt-Kohärenz (Testlauf 9.10.: ein Datenschutz-Teil aus der KI-Werkstatt auf einem Blatt zu Gefühlen): jeder Teil
+  // teilt ein Ziel oder ein Thema mit dem Kern der Stunde – ELDiB-Code, Thema, oder dasselbe Kompetenzfeld ohne eigenes
+  // fremdes Thema – oder gehört zu seinem Blatt; ein Rückblick ohne Thema ist neutral. Ohne Kern (Weg 3) gilt sie nicht.
+  const kernCodes = new Set(!leicht && o.kern ? o.kern.eldib.map((x) => x.code) : [])
+  const kernThemen = new Set(!leicht && o.kern ? o.kern.thema : [])
+  const kernFeld = new Set(!leicht && o.kern ? o.kern.kompetenz : [])
+  const kernBlatt = new Set(o.kern?.typ === 'schritt' ? (o.kern.blatt ?? []) : [])
+  const kohaerent = (e: MikroBaustein) => blattTeilKohaerent(e, { codes: kernCodes, themen: kernThemen, felder: kernFeld, blatt: kernBlatt, kindThemen: c.themen })
   // alle erlaubten Bausteine einmal bewerten
   const pool: Bewertet[] = []
   const nurAbhaengig = new Map<string, Bewertet>()
   for (const e of k.eintraege.values()) {
     if (e.typ !== 'baustein') continue
     if (!leicht && e.ohneZiel && !e.art.includes('atmen')) continue
+    if (!kohaerent(e)) continue
     // Text- und Info-Kästen, Geschichten ohne Frage: nur als Teil eines Pakets, das sie braucht
     if (e.art[0] !== 'aufgabe' && ['info', 'text', 'geschichte', 'wortspeicher', 'bild'].includes(e.art[0])) {
       if (pruefe(e, c, { blatt: true, gesperrt: o.gesperrt }) === null) nurAbhaengig.set(e.id, bewerte(e, c, { phase: o.phase, fokus: o.fokus }))
@@ -250,6 +259,14 @@ export function baueBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   const quelle = intern(k).q.blatt.get(haupt)!
   const titel = n === gewaehlt.length && !leicht ? (c.sprache === 'fr' && quelle.fr ? quelle.fr.titel : quelle.de.titel) : blattTitel(c, o.salz, leicht, gewaehlt.map((b) => b.e))[c.sprache]
   return { teile, titel, hinweise, bewertet: new Map(gewaehlt.map((b) => [b.e.id, b])) }
+}
+
+/** Teilt ein Blatt-Teil Ziel oder Thema mit dem Kern? (auch für Tests und Testlauf) */
+export function blattTeilKohaerent(e: MikroBaustein, kern: { codes: Set<string>; themen: Set<string>; felder: Set<string>; blatt: Set<string>; kindThemen: { has(k: string): boolean } }): boolean {
+  if (!kern.codes.size && !kern.themen.size) return true
+  if (kern.blatt.has(e.id) || e.eldib.some((x) => kern.codes.has(x.code)) || e.thema.some((t) => kern.themen.has(t))) return true
+  if (e.kompetenz.some((x) => kern.felder.has(x)) && (!e.thema.length || e.thema.some((t) => kern.kindThemen.has(t)))) return true
+  return e.art.includes('rueckblick') && !e.thema.length
 }
 
 function mitStelle(b: Bewertet, stelle: Bogen | '*', formate: Set<string>, gewaehlt: Bewertet[]): Bewertet {
