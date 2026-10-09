@@ -118,7 +118,7 @@ function texteAusQuelle(m: { id: string; stelle?: number }, q: Quellen, idx: Ind
     return {
       quelle: { art: 'foerderfach', einheit: e.id, titel: e.de.titel },
       titel: s.titel, text: kursText(s), sagen: s.sagen, wennEsKippt: s.wennEsKippt, tipp: s.tipp,
-      fr: f && f.phase === s.phase ? { titel: f.titel, text: kursText(f), sagen: f.sagen, wennEsKippt: f.wennEsKippt } : undefined,
+      fr: f && f.phase === s.phase ? { titel: f.titel, text: kursText(f), sagen: f.sagen, wennEsKippt: f.wennEsKippt, achtung: e.fr?.achtung, vorbereitung: e.fr?.vorbereitung?.join(' · ') } : undefined,
       achtung: e.de.achtung, vorbereitung: e.de.vorbereitung?.join(' · '),
       elternbrief: satzMit([...(e.de.vorbereitung ?? []), e.de.achtung ?? ''].join(' '), /elternbrief/i),
     }
@@ -171,7 +171,8 @@ function texteAusQuelle(m: { id: string; stelle?: number }, q: Quellen, idx: Ind
     if (!s) return null
     return {
       quelle: { art: 'crew', titel: s.name },
-      titel: s.name, text: s.text,
+      // ohne interne Notiz der Spielesammlung („Neu (Lücke Aufschieben): …“, dritte Blind-Bewertung)
+      titel: s.name, text: s.text.replace(/^\s*Neu \([^)]*\):\s*/, ''),
       vorbereitung: 'CREW-App mit Tagescode auf dem iPad bereithalten.',
     }
   }
@@ -351,6 +352,12 @@ export function baueKatalog(q: Quellen, bDatei: BausteineDatei, sDatei: Schritte
     const v = vorbereitungFuer(e)
     if (v) e.vorbereitung = v
     else delete e.vorbereitung
+    // französische Fassung (Förderfach): dieselbe Auswahl, am französischen Text gemessen
+    if (e.fr?.vorbereitung) {
+      const vf = vorbereitungFuer({ ...e, titel: e.fr.titel, text: e.fr.text, sagen: e.fr.sagen, einzelvariante: e.fr.einzelvariante, vorbereitung: e.fr.vorbereitung })
+      if (vf) e.fr.vorbereitung = vf
+      else delete e.fr.vorbereitung
+    }
   }
   // Rollenlisten nach Id sortieren: gleiche Reihenfolge, gleicher Plan
   for (const l of nachRolle.values()) l.sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0))
@@ -545,12 +552,23 @@ export function merkmaleVon(k: Katalog, e: KatalogEintrag): Set<string> {
   return m
 }
 
+const PAAR_TITEL_RE = /\s*\((Paare|Paar|Tandem|Gruppe|Kleingruppen?|in Paaren|en binômes?|par deux|en groupe)\)\s*$/i
+function alsFachkraft(t: string): string {
+  return t
+    .replace(/\bLehrkraft\b/g, 'Fachkraft')
+    .replace(/\bLehrkräfte\b/g, 'Fachkräfte')
+    .replace(/\b([Ll])['’]enseignant(?:·e|\(e\)|e)?(?![a-zé])/g, (_m, l: string) => `${l}’adulte`)
+}
+
 export function textVon(e: KatalogEintrag, sprache: Sprache): { titel: string; text: string; sagen?: string[]; wennEsKippt?: string; quelle: string } {
   if (e.typ === 'schritt') {
     const fr = sprache === 'fr' && e.fr ? e.fr : null
     const t = fr ?? e
     const ev = fr?.einzelvariante ?? (fr ? null : e.einzelvariante)
-    return { titel: t.titel, text: ev?.text ?? t.text, sagen: ev?.sagen ?? t.sagen, wennEsKippt: t.wennEsKippt, quelle: quelleText(e, sprache) }
+    // in der Einzelstunde leitet die Fachkraft (nicht „die Lehrkraft“, nicht „l’enseignante“); mit Einzelvariante ohne
+    // „(Paare)“ im Titel (Blind-Bewertung 9.10.)
+    const titel = e.einzelvariante || fr?.einzelvariante ? t.titel.replace(PAAR_TITEL_RE, '') : t.titel
+    return { titel: alsFachkraft(titel), text: alsFachkraft(ev?.text ?? t.text), sagen: (ev?.sagen ?? t.sagen)?.map(alsFachkraft), wennEsKippt: t.wennEsKippt && alsFachkraft(t.wennEsKippt), quelle: quelleText(e, sprache) }
   }
   const liste = aktuell ? bausteinInhalt(aktuell, e, sprache) : []
   const aufgaben = liste.filter((x): x is Extract<Baustein, { art: 'aufgabe' }> => x.art === 'aufgabe').map((x) => x.text)

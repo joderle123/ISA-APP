@@ -203,8 +203,9 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   // Spielschule (Vorschule) nur für die, für die sie gemacht ist (A10: kein Spielschul-Blatt über 5 Jahren)
   if (e.typ === 'baustein' && c.alter > 5 && intern(c.k).q.blatt.get(e.quelle.blatt)?.bereich === 'spielschule') return 'Spielschule'
   if (e.typ === 'schritt' && c.alter > 6 && e.quelle.art === 'spielschule') return 'Spielschule'
-  // französisches Kind: Schritte ohne französischen Text erst, wenn sonst zu wenig passt (Lockerung ab Stufe 2)
-  if (c.sprache === 'fr' && e.typ === 'schritt' && !e.fr && !e.id.startsWith('pg:') && locker < 2) return 'nur auf Deutsch'
+  // französisches Kind: Schritte ohne französischen Text erst, wenn gar nichts anderes passt (letzte Stufe; Blind-Bewertung
+  // 9.10.: deutsche Kerne auf französischen Planblättern waren der häufigste Mangel bei Jugendlichen)
+  if (c.sprache === 'fr' && e.typ === 'schritt' && !e.fr && !e.id.startsWith('pg:') && locker < 4) return 'nur auf Deutsch'
   // setzt eine frühere Kursstunde voraus („der Umschlag aus der letzten Stunde“, „nach der Wochen-Mission fragen“)
   if (e.typ === 'schritt' && intern(c.k).vorlauf.has(e.id)) return 'braucht eine Stunde davor'
   // Textmerkmale (Blind-Bewertung 9.10., einzel.ts): was gedruckt wird, muss in eine Einzelstunde für dieses Kind passen
@@ -224,6 +225,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     if (tm.has('gaeste')) return 'Gäste'
     if (tm.has('blattverweis') && e.typ === 'schritt') return 'Blatt der Quelle'
     if (tm.has('fuerleitung')) return 'für Erwachsene'
+    if (tm.has('rueckbezug') && /^(k|f|m|c):/.test(e.id)) return 'braucht eine Stunde davor'
+    if (tm.has('geraet') && locker < 3) return 'braucht ein Tablet'
     if (tm.has('kuerzel')) return 'Platzhalter'
     if (tm.has('aktivierend') && c.heute.energie >= 4) return 'Energie'
     if (tm.has('wochentage') && e.typ === 'baustein') return 'mehrtägig'
@@ -499,7 +502,9 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
   }
   // Schritte für ein französisches Kind: mit französischem Text klar bevorzugt (Blind-Bewertung 9.10.: deutsche Sagen-Sätze
   // und Kerne auf französischen Planblättern); ohne FR nur, wenn nichts Französisches passt
-  if (c.sprache === 'fr' && e.typ === 'schritt' && !e.fr && !e.id.startsWith('pg:')) g *= 0.65
+  if (c.sprache === 'fr' && e.typ === 'schritt' && !e.fr && !e.id.startsWith('pg:')) g *= 0.15
+  // braucht ein Tablet (CREW-Spiele, Laptop): nur, wenn nichts ohne Gerät gleich gut passt (dritte Blind-Bewertung)
+  if (merkmaleVon(c.k, e).has('geraet')) g *= 0.5
   // Einzelstunde: Schritte, die nur für Gruppen beschrieben sind (ohne Einzelvariante), zählen weniger – die Beschriftung
   // nennt 1290 solcher Schritte „einzeltauglich“; im Zweifel gewinnt, was für ein Kind geschrieben ist (Testlauf 9.10.)
   if ((c.a.sozialform === 'einzeln' || !c.a.sozialform) && e.typ === 'schritt' && !e.einzelvariante && !e.sozialform.some((x) => x === 'einzeln' || x === 'zu-zweit')) g *= 0.8

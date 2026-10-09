@@ -284,7 +284,7 @@ export const KATHARSIS_RE =
 export const VORLAUF_RE = new RegExp(
   [
     String.raw`\b(aus|von|in|seit|nach|an) (der|dem|den) (letzten|vorigen|vergangenen) (Stunden?|Sitzung|Mal)\b`,
-    String.raw`\b(vom|seit dem|beim) letzten Mal\b|\bzum letzten Mal\b|\bdie letzten Stunden\b|\bder letzten Stunden?\b`,
+    String.raw`\ban die letzte (Stunde|Sitzung)\b|\b(vom|seit dem|beim) letzten Mal\b|\bzum letzten Mal\b|\bdie letzten Stunden\b|\bder letzten Stunden?\b`,
     String.raw`[Ww]ochen-?[Mm]ission|\bMission der (letzten|vorigen) Stunde|\bSkills?-(Koffer|Karten?|Pass|Tester|Ordner|Heft)\b|\bSkill-Karten?\b`,
     String.raw`\bTrimester-Einschätzung|\bim Heft unter dem Kasten`,
     String.raw`\b(lors de|depuis) la (dernière|précédente) séance\b|\bla dernière fois\b|\bmission de la semaine\b|\bmallette (de|des) skills?\b`,
@@ -324,3 +324,6 @@ export const KURSVERWEIS_RE = new RegExp(
     String.raw`\bunités?\s+\d|\bmodules?\s+\d|\bannée de cours\b`,
   ].join('|'),
 )
+
+/** Hinweis am Schritt, wenn ein französisches Kind einen Schritt nur auf Deutsch bekommt (planer.ts lockerGrund, druck.ts). */
+export const NUR_DEUTSCH = 'Nur auf Deutsch: Zu diesem Ziel gibt es noch keine passende Übung auf Französisch. In eigenen Worten sagen.'
