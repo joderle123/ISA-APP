@@ -20,7 +20,7 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
     'i',
   ),
   // Anrede einer Gruppe
-  ihr: /\b(euch|eure[nmrs]?)\b|\b[Ii]hr (seid|habt|könnt|dürft|macht|sucht|geht|bekommt|werdet|sollt|wollt|dürft)\b|\b(Setzt|Stellt|Schaut|Nehmt|Macht|Sucht|Geht|Schreibt|Malt|Überlegt|Erzählt) (euch|ihr)\b|\bvous (allez|êtes|avez|pouvez)\b/,
+  ihr: /\b(euch|eure[nmrs]?)\b|\b(kennt|wisst|habt|seid|könnt|wollt|findet|seht|hört|denkt|meint|glaubt|erinnert|braucht|mögt) ihr\b|\b[Ii]hr (seid|habt|könnt|dürft|macht|sucht|geht|bekommt|werdet|sollt|wollt|dürft)\b|\b(Setzt|Stellt|Schaut|Nehmt|Macht|Sucht|Geht|Schreibt|Malt|Überlegt|Erzählt) (euch|ihr)\b|\bvous (allez|êtes|avez|pouvez)\b/,
   // für Jugendliche geschrieben
   jugend: /\b(der oder die Jugendliche|die Jugendlichen|Jugendliche[nr]?)\b|\b(le ou la jeune|les jeunes|l['’]adolescent(e)?)\b/,
   film: /\b(Film|Filme[ns]?|Filmausschnitt|Kurzfilm|Clip|Video|YouTube|Doku|Dokumentation|Trailer)\b|\b(film|extrait vidéo|vidéo|clip)\b/,

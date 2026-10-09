@@ -355,6 +355,16 @@ function rueckblickSchritt(c: Kontext, min: number, kerne: string[]): PlanSchrit
 export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
   const salz = `${c.seed}|${o.plan}|${o.nr}|${o.variante}`
   const slots = vorlage(c)
+  // letzte Sitzung einer Folge („Rückblick & Feiern“): der Einstieg wird zum Rückblick auf die Kerne der Folge, mit Zeit
+  // aus dem Kern (Blind-Bewertung 9.10.: die Schluss-Sitzungen blickten nicht zurück)
+  if (o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2 && !slots.some((x) => x.rolle === 'reflexion')) {
+    const ei = slots.findIndex((x) => x.rolle === 'einstieg')
+    const ke = slots.find((x) => x.rolle === 'kern')
+    const zeit = ke && ke.min >= 8 ? 4 : 0
+    if (ke) ke.min -= zeit
+    if (ei >= 0) slots[ei] = { ...slots[ei], rolle: 'reflexion', min: slots[ei].min + zeit }
+    else if (zeit) slots.splice(1, 0, { rolle: 'reflexion', min: zeit })
+  }
   const formate = new Set<string>()
   const benutzt = new Set<string>(o.gesperrt)
   const hinweise: string[] = []

@@ -228,6 +228,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     if (tm.has('belastend') && (c.vorsicht.has('heikel') || c.vorsicht.has('trauma') || (c.p.achtung ?? []).length)) return 'belastend'
     if (tm.has('gefuehlfrage') && krisenlage(c)) return 'Gefühle abfragen'
   }
+  // Krisenlage: kein Gespräch über Gefühle oder Belastendes (A12) – auch ohne die Wörter oben
+  if (krisenlage(c) && e.typ === 'schritt' && e.format[0] === 'gespraech' && (e.belastung >= 1 || e.kompetenz.some((x) => x.startsWith('gefuehle')))) return 'Gefühle abfragen'
   // Stimmung ≤ 2: nichts Lautes, keine Vollgas-Aktivität (A5)
   if (c.heute.stimmung <= 2 && (e.energie === 3 || e.merkmale?.laut)) return 'Stimmung'
   // heikel nur freigeschaltet; Selbstverletzung/Suizid nie als Baustein (T-M1)

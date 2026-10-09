@@ -188,7 +188,11 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     if ((x.rolle === 'ankommen' || x.rolle === 'abschluss') && nr > 1 && plan.n > 1) continue
     for (const m of e.material) mat.add(materialName(k, m, sp))
     if (e.typ === 'schritt' && e.vorbereitung && !e.id.startsWith('s:')) vorbereitung.add(kuerzen(e.vorbereitung, 200)!)
-    if (e.elternbrief) elternbrief = kuerzen(e.elternbrief, 200)
+    // Elternbrief der Einheit nur, wenn er diesen Schritt betrifft – und nie bei offenem Kinderschutz-Thema
+    if (e.elternbrief && !(p.achtung ?? []).includes('kinderschutz') && e.typ === 'schritt') {
+      const bezug = staemme(`${e.titel} ${e.text}`)
+      if ([...staemme(e.elternbrief)].some((w) => bezug.has(w))) elternbrief = kuerzen(e.elternbrief, 200)
+    }
   }
   for (const b of s.blatt?.bausteine ?? []) {
     const e = k.eintraege.get(b.ref)
@@ -197,6 +201,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   if (s.blatt) mat.add(sp === 'fr' ? 'la fiche (imprimée)' : 'das Blatt (gedruckt)')
   const matSeite = materialSeite(k, p, plan, nr, sp)
   if (matSeite) mat.add(sp === 'fr' ? 'la page de matériel (imprimée, à découper)' : 'die Materialseite (gedruckt, ausschneiden)')
+  const tippSchon = new Set<string>()
   const blattTeile = (s.blatt?.bausteine ?? [])
     .filter((b) => !b.ref.startsWith('pg:'))
     .map((b) => {
@@ -207,7 +212,10 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
       // der Tipp kommt aus dem Quellblatt – mit Verweis auf die Kursstruktur („pro Modul“) lieber keiner
       // Herkunft in Worten statt Katalog-Nummer („S-57 · …“ las sich wie ein Code)
       const qTitel = quelle ? ((sp === 'fr' && quelle.fr) || quelle.de).titel : quelleText(e, sp)
-      return { titel: textVon(e, sp).titel, quelle: sp === 'fr' ? `de la fiche « ${qTitel} »` : `aus dem Blatt „${qTitel}“`, tipp: leichter && !KURSVERWEIS_RE.test(leichter) ? kuerzen(leichter, 160) : undefined }
+      // der Tipp „leichter“ gilt für das ganze Quellblatt: nur einmal je Blatt
+      const tipp = leichter && !KURSVERWEIS_RE.test(leichter) && !tippSchon.has(e.quelle.blatt) ? kuerzen(leichter, 160) : undefined
+      if (tipp) tippSchon.add(e.quelle.blatt)
+      return { titel: textVon(e, sp).titel, quelle: sp === 'fr' ? `de la fiche « ${qTitel} »` : `aus dem Blatt „${qTitel}“`, tipp }
     })
   const ziele = plan.ziele.map((code) => {
     const satz = zielSatz(k, p, code, sp)
