@@ -72,6 +72,13 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
   gefuehlfrage: /\b(fühle ich mich|Wie bereit fühlst du dich|wo bist du (jetzt|gerade)|Wie fühlst du dich|Wie geht es dir|Was macht dich (traurig|wütend|Angst)|ich bin traurig, weil|Ich fühle mich|Daumen (hoch|runter|hoch oder runter)|wie (traurig|wütend) bist du|Gefühl(e)? (benennen|zeigen|abfragen|erzählen)|Welches Tier bist du|Wie ist das Wetter bei dir|wie es (dir|dem Kind) (heute )?geht|wie (es|er|sie) sich (heute )?fühlt|innen heute anfühlt|eigenen Gefühl\w*|persönlichen Beispiel\w*|was (war|ist) (eigentlich |wirklich )?los in dir|was in dir (vor)?geht)\b|\b(Comment te sens-tu|Comment ça va|pouce en (haut|bas)|Je me sens|Quel animal es-tu|qu['’]est-ce qui se passait (vraiment )?en toi|ce qui se passe en toi)\b/i,
   // sich selbst einschätzen oder bewerten (Skala, Punkte, Fragebogen) – in Krisenlage nicht (Blind-Bewertung 8, A12/A7)
   selbstbewertung: /\b(auf einer Skala|Skalen? von [01]|von [01] bis (5|10)|[01] bis 10|einen Punkt (mehr|gewonnen)|Punkt gewonnen|Fragebogen|was (dir )?(noch )?schwer fällt)\b|\b(sur une échelle|échelles? de [01]|de [01] à (5|10)|gagné un point|questionnaire|ce qui est (encore )?difficile)\b/i,
+  // Prüfungen als Anlass (Blind-Bewertung 9: „Atem-Blatt ‚vor dem Prüfungsraum‘ ohne Prüfungsthema im Profil“)
+  pruefung: /\b(Prüfung\w*|Prüfungsraum|Klassenarbeit|Test schreib\w*|examens?|salle d['’]examen|contrôle écrit)\b/i,
+  // Atem anhalten (Blind-Bewertung 9: „Quadratatmung mit ‚Retenir – 4‘ bei Tagesform ängstlich und Vorsicht trauma“)
+  atemAnhalten: /\b((Luft|Atem) (an)?halten|halten\s*[–-]\s*\d|Atem anhalten|retenir( (le|son) souffle)?\s*[–-]?\s*\d?|bloquer (la|sa) respiration)\b/i,
+  // Leistung messen (Blind-Bewertung 9, A12: „Minuteur, Strichzählung und Rundenvergleich an echter Schularbeit bei
+  // Stimmung 2“) – nicht in Krisenlage
+  leistungsmessung: /\b(Strich(e)? (in|an|am|auf) (den|dem) (Blatt)?[Rr]and|Strichzahlen|Striche zählen|zählt die Striche|Runde \d und \d vergleich\w*|beide Runden vergleich\w*|un trait dans la marge|combien de traits|compter les traits|côte à côte)\b/i,
   // Wettbewerb und Zeitdruck im Text (Blind-Bewertung 8: „findet zuerst“, „Rekord gegen die Uhr“, „Runde verloren“)
   wettlauf: /\b(wer zuerst|findet zuerst|als Erste[rs]? fertig|Rekord\w*|gegen die Uhr|so viele wie möglich|Runde verloren|hat verloren|wer gewinnt|qui trouve en premier|le premier qui|record|contre la montre|le plus possible|a perdu la manche)\b/i,
   // Diagnosen als Beispiel im Text (Blind-Bewertung 8: „im Autismus-Spektrum“ ohne Anlass im Planblatt)

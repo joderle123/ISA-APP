@@ -60,6 +60,8 @@ export interface DruckFolge {
   titel: string
   sitzungen: DruckSitzung[]
   bogen: { nr: number; phase: string; kern: string }[]
+  /** alle Ziele, die eine Sitzung der Folge übt (Blind-Bewertung 9: „das Titelblatt nennt nur ein Ziel“) */
+  ziele: { code: string; text: string }[]
   material: string[]
   datei: string
   sprache: Sprache
@@ -316,6 +318,15 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     // anderer Übungen („Übertragen: Der Würfel schlägt vor“ braucht keinen Würfel; Blind-Bewertung 7)
     const tx = e.typ === 'schritt' && x.ref !== 'pg:uebertragen' && x.ref !== 'pg:folge-transfer' ? (x.ueber?.text ?? e.einzelvariante?.text ?? e.text) : ''
     for (const [re, wer] of MATERIAL_IM_TEXT) if (re.test(tx)) mat.add(typeof wer === 'string' ? materialName(k, wer, sp) : wer[sp])
+    // Übertragen und Rückblick bringen ihr Material selbst mit (Blind-Bewertung 9: „Figur und Bilder stehen nicht im Material“,
+    // „der Rückblick lässt Übungen wiederholen, deren Material fehlt“, „Feier ohne Sticker“)
+    if (x.ref === 'pg:uebertragen' && p.alterJahre < 12) mat.add(sp === 'fr' ? 'une petite figurine ou une peluche' : 'eine kleine Figur oder ein Stofftier')
+    if (x.ref === 'pg:folge-transfer') {
+      if (p.alterJahre < 12) {
+        mat.add(sp === 'fr' ? 'le matériel de l’activité choisie (de la séance où elle a eu lieu)' : 'das Material der gewählten Übung (aus ihrer Sitzung)')
+        mat.add(sp === 'fr' ? 'autocollants ou étoiles, une petite carte' : 'Sticker oder Sterne, eine kleine Karte')
+      } else mat.add(sp === 'fr' ? 'petits papiers pour les titres (ou les fiches de la série)' : 'Zettel für die Titel (oder die Blätter der Folge)')
+    }
     // Optionen einer Wahl bringen ihr Material mit („Einfach da sein“: Getränk, Knetball, Tuch)
     for (const w of x.wahl ?? []) {
       const we = k.eintraege.get(w.ref)
@@ -413,8 +424,10 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   if (p.vorsicht.includes('heikel') || (p.achtung ?? []).length)
     hinweise.unshift(
       p.alterJahre >= 12
-        ? sp === 'fr' ? 'Un thème sensible est ouvert pour cette personne. Passgenau ne remplace pas une évaluation – voir le dossier.' : 'Für diese Person ist ein heikles Thema offen. Passgenau ersetzt keine Abklärung – Hinweise im Dossier.'
-        : sp === 'fr' ? 'Un thème sensible est ouvert pour cet enfant. Passgenau ne remplace pas une évaluation – voir le dossier.' : 'Zu diesem Kind ist ein heikles Thema offen. Passgenau ersetzt keine Abklärung – Hinweise im Dossier.',
+        // ohne Verweis auf eine Unterlage außerhalb der Stunde (Blind-Bewertung 9: „‚voir le dossier‘ verweist auf etwas,
+        // das nicht beiliegt“) – was zu tun ist, steht im Satz
+        ? sp === 'fr' ? 'Un thème sensible est ouvert. Passgenau ne remplace pas une évaluation : en cas de signes de détresse, suivre ce qui a été convenu en équipe.' : 'Ein heikles Thema ist offen. Passgenau ersetzt keine Abklärung: Bei Anzeichen von Belastung gilt, was im Team vereinbart ist.'
+        : sp === 'fr' ? 'Un thème sensible est ouvert pour cet enfant. Passgenau ne remplace pas une évaluation : en cas de signes de détresse, suivre ce qui a été convenu en équipe.' : 'Zu diesem Kind ist ein heikles Thema offen. Passgenau ersetzt keine Abklärung: Bei Anzeichen von Belastung gilt, was im Team vereinbart ist.',
     )
   return {
     titel: plan.titel,
@@ -571,8 +584,11 @@ export function druckFolge(k: Katalog, p: Profil, plan: Plan, opt: { sprache: Sp
     bogen: plan.sitzungen.map((s) => {
       const kern = s.schritte.find((x) => x.rolle === 'kern')
       const e = kern ? k.eintraege.get(kern.ref) : undefined
-      return { nr: s.nr, phase: phasenName(s.phase, opt.sprache, p.alterJahre), kern: e ? textVon(e, opt.sprache).titel : (kern?.t ?? '') }
+      // Übertragen und Rückblick mit ihrem eigenen Titel („Übertragen: Rot klatscht …“), nicht dem Katalog-Titel
+      const eigen = kern?.ueber ? (opt.sprache === 'fr' ? kern.ueber['fr.titel'] : undefined) ?? kern.ueber.titel : undefined
+      return { nr: s.nr, phase: phasenName(s.phase, opt.sprache, p.alterJahre), kern: eigen ?? (e ? textVon(e, opt.sprache).titel : (kern?.t ?? '')) }
     }),
+    ziele: [...new Map(sitzungen.flatMap((s) => s.ziele).map((z) => [z.code, z])).values()],
     material,
     datei: `Passgenau-Folge${opt.sprache === 'fr' ? '_FR' : ''}.pdf`,
     sprache: opt.sprache,

@@ -373,20 +373,25 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
   const werkzeug = quellen.map((q, i) => (q.typ === 'schritt' && q.werkzeug?.[sprache]) || titel[i])
   const zit = (t: string) => (fr ? `« ${t} »` : `„${t}“`)
   if ((o.alter ?? 12) < 12) {
+    // nur der Name des Werkzeugs („Erzähl-Hand“ statt „Erzähl-Hand: Wer? Wo? Was? …“; Blind-Bewertung 9: 12-Wörter-Satz bei
+    // Lesen 1)
+    const kurzW = werkzeug[0].split(/\s*[:(–]\s*/)[0] || werkzeug[0]
     const liste: Baustein[] = [
-      { art: 'aufgabe', text: fr ? `Où est-ce que tu peux essayer ${zit(werkzeug[0])} ? Entoure.` : `Wo kannst du ${zit(werkzeug[0])} ausprobieren? Kreis ein.` },
+      { art: 'aufgabe', text: fr ? `Où est-ce que tu peux essayer ${zit(kurzW)} ? Entoure.` : `Wo kannst du ${zit(kurzW)} ausprobieren? Kreis ein.` },
       { art: 'bilder', bilder: [{ bild: 'motiv:schule', text: fr ? 'en classe' : 'im Unterricht' }, { bild: 'motiv:freunde', text: fr ? 'à la récré' : 'in der Pause' }, { bild: 'motiv:turnmatte', text: fr ? 'au sport' : 'beim Sport' }, { bild: 'icon:question-mark', text: fr ? 'ailleurs' : 'woanders' }], spalten: 4, modus: 'einkreisen' },
-      { art: 'aufgabe', text: fr ? 'Dessine-toi en train de le faire.' : 'Mal dich, wie du es machst.' },
+      { art: 'aufgabe', text: fr ? `Dessine-toi en train de faire ${zit(kurzW)}.` : `Mal dich, wie du ${zit(kurzW)} machst.` },
       { art: 'feld', hoehe: 7, zeichnen: true },
     ]
     if (!o.wenigSchreiben && (o.alter ?? 0) >= 8) liste.push({ art: 'satzanfaenge', items: [fr ? 'Je l’essaie quand …' : 'Ich probiere es, wenn …'], linien: 1 })
     return liste
   }
   const liste: Baustein[] = [
-    { art: 'text', klein: true, text: fr ? `Pour une situation des prochains jours. Rien n’est obligatoire : un exemple inventé, ça marche aussi.` : `Für eine Situation der nächsten Tage. Nichts davon ist Pflicht: Ein erfundenes Beispiel geht auch.` },
+    { art: 'text', klein: true, text: fr ? 'Pour une situation des prochains jours – vraie ou inventée.' : 'Für eine Situation der nächsten Tage – echt oder erfunden.' },
     { art: 'ankreuzen', titel: fr ? 'Où est-ce que ça pourrait servir ? Plusieurs réponses possibles.' : 'Wo könnte es passen? Mehrere gehen.', items: fr ? ['en cours', 'à la récré', 'entre amis', 'au sport ou au club', 'en ligne, dans le chat', 'autre chose'] : ['im Unterricht', 'in der Pause', 'im Freundeskreis', 'im Training oder Verein', 'online, im Chat', 'etwas anderes'], spalten: 3 },
     ...werkzeug.slice(0, 2).map((w): Baustein => ({ art: 'wennDann', zeilen: 1, wenn: fr ? 'Si … (où, quand)' : 'Wenn … (wo, wann)', dann: fr ? `alors : ${w}` : `dann: ${w}` })),
   ]
+  // ein Plan B füllt die Seite sinnvoll (Blind-Bewertung 9: „Wenn-dann-Blatt zu zwei Dritteln leer bei 11 Minuten“)
+  if (werkzeug.length < 2) liste.push({ art: 'wennDann', zeilen: 1, wenn: fr ? 'Si ça ne marche pas tout de suite …' : 'Wenn es nicht gleich klappt …', dann: fr ? 'alors j’essaie :' : 'dann probiere ich:' })
   if (!o.wenigSchreiben) liste.push({ art: 'frage', text: fr ? 'À quoi je remarque ensuite que ça a aidé ?' : 'Woran merke ich danach, dass es geholfen hat?', linien: 1 })
   return liste
 }
@@ -397,12 +402,15 @@ function uebertragenBlatt(quellen: KatalogEintrag[], sprache: Sprache, o: KernBl
 function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlattOpt): Baustein[] {
   const fr = sprache === 'fr'
   const titel = folge.slice(0, 6).map((e) => textVon(e, sprache).titel)
-  if (o.uebertragen) titel.push(fr ? 'le plan pour le quotidien' : 'der Plan für den Alltag')
+  // „der Plan für den Alltag“ nur bei Jugendlichen – Kinder spielen das Übertragen durch, einen Plan gab es nicht
+  // (Blind-Bewertung 9: „verweist auf einen Plan für den Alltag, den es nicht gab“)
+  if (o.uebertragen && (o.alter ?? 12) >= 12) titel.push(fr ? 'le plan pour le quotidien' : 'der Plan für den Alltag')
   if ((o.alter ?? 12) < 12) {
     const liste: Baustein[] = []
     if ((o.alter ?? 0) >= 7) liste.push({ art: 'ankreuzen', titel: fr ? 'Ce que j’ai le plus aimé – coche :' : 'Das mochte ich am meisten – kreuz an:', items: titel, spalten: 1 })
-    else liste.push({ art: 'aufgabe', text: fr ? 'Comment c’était, nos séances ? Entoure.' : 'Wie war unsere Zeit? Kreis ein.' }, { art: 'gefuehle', gefuehle: ['froh', 'stolz', 'ruhig', 'neutral'], modus: 'einkreisen' })
-    liste.push({ art: 'aufgabe', text: fr ? 'Dessine ce que tu emportes.' : 'Mal, was du mitnimmst.' }, { art: 'feld', hoehe: 7, zeichnen: true })
+    else liste.push({ art: 'aufgabe', text: fr ? 'Comment c’était, nos séances ? Entoure.' : 'Wie war unsere Zeit? Kreis ein.' }, { art: 'gefuehle', gefuehle: ['froh', 'stolz', 'ruhig'], modus: 'einkreisen' })
+    // die kleine Feier: ein eigenes Abzeichen (Blind-Bewertung 9: „Rückblick & Feiern ohne Feier“)
+    liste.push({ art: 'aufgabe', text: fr ? 'Dessine ton badge : ce que je sais faire maintenant.' : 'Mal dein Abzeichen: Das kann ich jetzt.' }, { art: 'feld', hoehe: 7, zeichnen: true })
     return liste
   }
   // Blind-Bewertung 9: das Blatt fragte, was der Kern schon gefragt hatte – der Kern ordnet und wiederholt, das Blatt hält
@@ -457,8 +465,26 @@ interface KernBlattOpt {
   alter?: number
   /** Rückblick der Folge: die Übungen der Folge */
   folge?: KatalogEintrag[]
+  /** Minuten für das Blatt (Blind-Bewertung 9: „vier bis fünf Aufgaben in 5 Minuten“) */
+  min?: number
   /** Ziel der Folge in einem Satz (Rückblick) */
   ziel?: string
+}
+
+/** Anweisungszeilen ohne Antwort danach (Blind-Bewertung 9: „‚Commence comme ça :‘ ohne Satzanfang und Feld“, „‚Gib deinem
+ *  Bild einen Titel.‘ ohne Schreibzeile“, „Aufgabe 3 ohne Antwortfeld“): mit wenig Schreiben weg, sonst ein Feld dazu. */
+function ohneLeereAufgaben(liste: Baustein[], wenigSchreiben: boolean): Baustein[] {
+  const raus: Baustein[] = []
+  liste.forEach((b, i) => {
+    raus.push(b)
+    if (b.art !== 'aufgabe') return
+    const naechste = liste[i + 1]
+    // („Lies den Text.“ vor einem Text-Kasten ist keine leere Aufgabe)
+    if (naechste && naechste.art !== 'aufgabe') return
+    if (wenigSchreiben) raus.pop()
+    else raus.push({ art: 'feld', hoehe: /\b(mal|male|zeichne|dessine)/i.test(b.text) ? 6 : 2, zeichnen: /\b(mal|male|zeichne|dessine)/i.test(b.text) })
+  })
+  return raus
 }
 
 /** Inhalt des Blatts zur Übung (kernBlatt): kurz, ohne Pflicht, Persönliches aufzuschreiben. */
@@ -472,7 +498,8 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
   const frage = (t.sagen ?? []).find((x) => /\?\s*[»“"]?$/.test(x.trim()) && x.length <= 140)
   // Kinder unter 9 lesen den Hinweis nicht – er steht dann nur im Planblatt (Blatt-Anleitung)
   const liste: Baustein[] = (o.alter ?? 12) < 9 ? [] : [
-    { art: 'text', klein: true, text: fr ? `Pour l’exercice « ${t.titel} ». Rien n’est obligatoire : tu peux aussi prendre un exemple inventé.` : `Zur Übung „${t.titel}“. Nichts davon ist Pflicht: Ein erfundenes Beispiel geht auch.` },
+    // kurz (Blind-Bewertung 9: „‚Ein erfundenes Beispiel geht auch‘ ist hölzern, das Beispiel ist schon erfunden“)
+    { art: 'text', klein: true, text: fr ? `Pour l’exercice « ${t.titel} ». Ce qui ne va pas peut rester vide.` : `Zur Übung „${t.titel}“. Was nicht passt, bleibt leer.` },
   ]
   // eigenes Blatt der Übung (Blind-Bewertung 6: „das Blatt setzt den Kern nicht fort“); bei wenig Schreiben oder schwerem
   // Tag nur der Text-Kasten und die ersten zwei Aufgaben (die brauchen wenig Schreiben)
@@ -480,11 +507,13 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
   if (eigen) {
     const teile = (fr ? eigen.fr : eigen.de) ?? []
     let aufgaben = 0
+    // höchstens so viele Aufgaben, wie in die Minuten passen (etwa eine je 2½ Minuten), bei wenig Schreiben zwei
+    const hoechstens = o.wenigSchreiben ? 2 : o.min ? Math.max(2, Math.floor(o.min / 2.5)) : 99
     for (const b of teile) {
       if (o.stimmungTief && b.art === 'skala') continue
       // Anweisungszeilen und Bilder sind keine eigene Aufgabe (Kinder-Blätter: „aufgabe“ vor jedem Bild-Baustein)
       if (b.art !== 'text' && b.art !== 'aufgabe' && b.art !== 'bild' && b.art !== 'wortspeicher') aufgaben++
-      if (o.wenigSchreiben && aufgaben > 2) break
+      if (aufgaben > hoechstens) break
       // Zuordnen und Dialog-Lücken tragen keinen eigenen Auftrag – ein kurzer Satz davor
       // … außer die Übung schreibt selbst eine Anweisung davor (Kinder-Blätter: „Was passt zusammen? Verbinde.“)
       const vorher = liste[liste.length - 1]?.art === 'aufgabe'
@@ -494,7 +523,7 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
       if (b.art === 'feld') liste.push({ ...b, hoehe: Math.max(b.zeichnen ? 6 : 3, Math.min(9, Math.round((b.hoehe ?? 36) / 8))) })
       else liste.push(o.wenigSchreiben && b.art === 'frage' ? { ...b, linien: Math.min(b.linien ?? 2, 2) } : b)
     }
-    return liste
+    return ohneLeereAufgaben(liste, o.wenigSchreiben)
   }
   const F = (de: string, f: string, linien = 2): Baustein => ({ art: 'frage', text: fr ? f : de, linien })
   const sicher: Baustein = o.stimmungTief
@@ -690,7 +719,7 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
       const folge = ks?.ref === 'pg:folge-transfer'
         ? [...new Set(plan.sitzungen.flatMap((y) => y.schritte.filter((z) => z.rolle === 'kern' && !z.ref.startsWith('pg:')).map((z) => z.ref)))].map((r) => k.eintraege.get(r)).filter((e): e is KatalogEintrag => !!e)
         : undefined
-      if (kern) bausteine.push(...kernBlattInhalt(kern, s!.phase === 'reflektieren' && plan.n < 2 ? 'ueben' : s!.phase, sprache, { wenigSchreiben: schwer || p.zugang.schreiben <= 1 || p.zugang.lesen <= 1 || p.zugang.tempo === 'ruhig', nr, stimmungTief: !!h && h.stimmung <= 2, quellen, folge, uebertragen, alter }))
+      if (kern) bausteine.push(...kernBlattInhalt(kern, s!.phase === 'reflektieren' && plan.n < 2 ? 'ueben' : s!.phase, sprache, { wenigSchreiben: schwer || p.zugang.schreiben <= 1 || p.zugang.lesen <= 1 || p.zugang.tempo === 'ruhig', nr, stimmungTief: !!h && h.stimmung <= 2, quellen, folge, uebertragen, alter, min: s?.schritte.find((x) => x.ref === 'pg:blatt')?.min }))
       markiere(start, bausteine.length - start, teilId)
       continue
     }
@@ -698,7 +727,9 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
       const schritte = (s?.schritte ?? []).filter((x) => x.min > 0).slice(0, 7)
       // Jugendliche: „Schluss“ statt „Tschüss“ (Blind-Bewertung 5: wirkt bei 17 Jahren kindlich)
       const wort = (r: Rolle) => (alter >= 12 && r === 'abschluss' ? (sprache === 'fr' ? 'Fin' : 'Schluss') : alter >= 12 && r === 'spiel' ? (sprache === 'fr' ? 'Activité' : 'Aktivität') : STUNDE_WORT[r][sprache])
-      if (schritte.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: schritte.map((x) => ({ text: wort(x.rolle), bild: STUNDE_WORT[x.rolle].bild, min: x.min })) })
+      // Übertragen heißt „Mitnehmen“, der Rückblick „Zurückschauen“ (Blind-Bewertung 9: „die Stundenleiste nennt den Rückblick Üben“)
+      const rolleVon = (x: { ref: string; rolle: Rolle }): Rolle => (x.ref === 'pg:folge-transfer' ? 'reflexion' : x.ref === 'pg:uebertragen' ? 'transfer' : x.rolle)
+      if (schritte.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: schritte.map((x) => ({ text: wort(rolleVon(x)), bild: STUNDE_WORT[rolleVon(x)].bild, min: x.min })) })
       markiere(start, bausteine.length - start, teilId)
       continue
     }

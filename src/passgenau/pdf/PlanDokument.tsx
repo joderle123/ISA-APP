@@ -375,9 +375,9 @@ function Deckblatt({ f }: { f: DruckFolge }) {
         <Text style={{ fontFamily: SCHRIFT.jugend, fontSize: 7.4, color: NEUTRAL.leise, letterSpacing: 0.3, marginLeft: 8 }}>{`${tx.deckblatt} · ${f.sitzungen.length} ${sp === 'fr' ? 'séances' : 'Sitzungen'}`}</Text>
       </View>
       <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 24, color: NEUTRAL.text, letterSpacing: -0.3, marginBottom: 6 }}>{ty(f.titel, sp)}</Text>
-      {f.sitzungen[0]?.ziele.length ? (
+      {f.ziele.length ? (
         <View style={{ marginBottom: 14 }}>
-          {f.sitzungen[0].ziele.map((z) => (
+          {f.ziele.map((z) => (
             <LText key={z.code}>{ty(`${z.code}  ${z.text}`, sp)}</LText>
           ))}
         </View>

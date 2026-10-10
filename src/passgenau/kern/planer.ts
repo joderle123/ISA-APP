@@ -9,7 +9,7 @@ import { bewerte, kontext, krisenlage, pruefe, rang, warum, type Bewertet, type 
 import { baueBlatt, kernBlatt } from './blatt'
 import { BLATT_SYSTEM } from './system'
 import { vertrauenKind, vorliebe, type Vorlieben } from './vorlieben'
-import { KOMPETENZ_NAME, NUR_DEUTSCH, themaByKey, type Kompetenz } from './vokabular'
+import { KOMPETENZ_NAME, NUR_DEUTSCH, kompetenzAusCode, themaByKey, type Kompetenz } from './vokabular'
 
 export interface Verlauf {
   plaene: Plan[]
@@ -492,12 +492,20 @@ function uebertragenSchritt(c: Kontext, min: number, quellen: { ref: string; nr:
   const ueber: Record<string, string> = { titel: titel.de, 'fr.titel': titel.fr, quellen: quellen.map((x) => x.ref).join('|') }
   if (c.alter < 12) {
     // Kinder (6–11): kurz erinnern, eine Situation mit Bildern finden, einmal mit einer Figur durchspielen
+    // unter 8 (Blind-Bewertung 9: „abstraktes Überlegen, wo du es in den nächsten Tagen brauchst“ bei 6-Jährigen): die
+    // Fachkraft bringt die Szene mit, das Kind spielt sie mit der Figur – ohne Planen
+    if (c.alter < 8) {
+      ueber.text = `Die Übung ${herkunft('de')} kommt heute in den Alltag. Die Fachkraft macht ${tun('de')[0]} noch einmal kurz mit dem Kind. Dann zeigt sie zwei Bilder vom Blatt (Schule, Freunde) und erzählt zu einem eine kleine Szene${vorsichtig ? ' mit einer erfundenen Figur' : ''}. Die Figur kommt in die Szene, und das Kind spielt mit ihr, was sie jetzt tun kann. Danach noch einmal mit dem anderen Bild. Ein Lob für das Mitspielen – keine Aufgabe für zu Hause.`
+      ueber['fr.text'] = `L’activité ${herkunft('fr')} passe aujourd’hui dans le quotidien. L’adulte refait brièvement ${tun('fr')[0]} avec l’enfant. Puis il montre deux images de la fiche (école, amis) et raconte une petite scène pour l’une d’elles${vorsichtig ? ' avec une figurine inventée' : ''}. La figurine entre dans la scène, et l’enfant joue avec elle ce qu’elle peut faire maintenant. Ensuite, encore une fois avec l’autre image. Un compliment pour le jeu – pas de devoir pour la maison.`
+    } else {
     ueber.text = `${zwei ? 'Die Übungen' : 'Die Übung'} ${herkunft('de')} ${zwei ? 'kommen' : 'kommt'} heute in den Alltag. Die Fachkraft erinnert kurz an ${und(tun('de'), 'de')} und macht es einmal gemeinsam mit dem Kind vor. Dann überlegen beide, wo das Kind es in den nächsten Tagen brauchen könnte – in der Pause, im Unterricht, beim Spielen: Die Fachkraft nennt zwei, drei Beispiele, das Kind wählt eins${vorsichtig ? ' (zuerst ein erfundenes)' : ' (echt oder erfunden)'}. Dann einmal durchspielen: Die Fachkraft spielt die Situation mit einer Figur an, das Kind zeigt, was es dann tut. Zum Schluss ein kleiner Versuch bis zum nächsten Mal – ohne Bewertung.`
     ueber['fr.text'] = `${zwei ? 'Les activités' : 'L’activité'} ${herkunft('fr')} ${zwei ? 'passent' : 'passe'} aujourd’hui dans le quotidien. L’adulte rappelle brièvement ${und(tun('fr'), 'fr')} et le refait une fois avec l’enfant. Ensuite, on cherche ensemble où l’enfant pourrait en avoir besoin les prochains jours – à la récréation, en classe, en jouant : l’adulte donne deux ou trois exemples, l’enfant en choisit un${vorsichtig ? ' (d’abord un exemple inventé)' : ' (vrai ou inventé)'}. Puis on le joue une fois : l’adulte lance la situation avec une figurine, l’enfant montre ce qu’il fait. Pour finir, un petit essai d’ici la prochaine fois – sans évaluation.`
+    }
     ueber.sagen = `Wo könntest du ${tun('de')[0]} in den nächsten Tagen gut brauchen?`
     ueber['fr.sagen'] = `Où est-ce que ${tun('fr')[0]} pourrait t’aider les prochains jours ?`
-    ueber.wennEsKippt = 'Fällt dem Kind nichts ein, zeigt die Fachkraft zwei Bilder (Pause, Unterricht) und das Kind wählt eins. Mag es nicht spielen, spielt die Fachkraft mit der Figur vor und das Kind sagt nur „Stopp“, wenn es passt.'
-    ueber['fr.wennEsKippt'] = 'Si rien ne vient, l’adulte montre deux images (récréation, classe) et l’enfant en choisit une. S’il ne veut pas jouer, l’adulte joue avec la figurine et l’enfant dit seulement « stop » au bon moment.'
+    // Blind-Bewertung 9: „ein Stopp-Signal wurde nie eingeführt“, „Figur und Bilder fehlen“ – die Bilder stehen auf dem Blatt
+    ueber.wennEsKippt = 'Fällt dem Kind nichts ein, zeigt die Fachkraft die Bilder auf dem Blatt (Schule, Freunde, Turnhalle) und das Kind tippt auf eins. Mag es nicht spielen, spielt die Fachkraft mit der Figur vor und das Kind zeigt nur, was es dann tun würde.'
+    ueber['fr.wennEsKippt'] = 'Si rien ne vient, l’adulte montre les images de la fiche (école, amis, salle de sport) et l’enfant en touche une. S’il ne veut pas jouer, l’adulte joue avec la figurine et l’enfant montre seulement ce qu’il ferait.'
     return { ref: e.id, h: e.h, rolle: 'kern', min, t: titel.de.slice(0, 60), art, ueber, warum: ['Übertragen: das Geübte in eine kommende Situation bringen'] }
   }
   const situation = vorsichtig
@@ -512,6 +520,11 @@ function uebertragenSchritt(c: Kontext, min: number, quellen: { ref: string; nr:
         de: `Gemeinsam ${zwei ? 'je' : 'einen'} Plan in drei Schritten festhalten: Woran merke ich, dass der Moment da ist? Was genau mache oder sage ich dann – mit ${und(tun('de'), 'de')}? Woran merke ich danach, ob es etwas gebracht hat? Die Fachkraft fragt nach und gibt Beispiele, spielt aber nichts vor.`,
         fr: `Noter ensemble ${zwei ? 'pour chacune un' : 'un'} plan en trois étapes : à quoi je remarque que le moment est là ? Qu’est-ce que je fais ou dis exactement – avec ${und(tun('fr'), 'fr')} ? À quoi je remarque ensuite si ça a servi ? L’adulte pose des questions et donne des exemples, sans jouer la scène.`,
       }
+  // „Wenn es kippt“ passend zur Art (Blind-Bewertung 9: Text „ohne Szene“, Rückfallzeile „ist Durchspielen zu viel“)
+  if (art === 'plan') {
+    ueber.wennEsKippt = 'Fällt keine Situation ein, schlägt die Fachkraft zwei erfundene vor. Ist ein ganzer Plan zu viel, genügt der erste Schritt: Woran merke ich, dass der Moment da ist?'
+    ueber['fr.wennEsKippt'] = 'Si aucune situation ne vient, l’adulte en propose deux inventées. Si un plan entier est trop, la première étape suffit : à quoi je remarque que le moment est là ?'
+  }
   ueber.text = `${zwei ? 'Die Übungen' : 'Die Übung'} ${herkunft('de')} ${zwei ? 'kommen' : 'kommt'} heute in den Alltag. ${situation.de} ${mitte.de} Zum Schluss wird ein kleiner Versuch vereinbart – ohne Bewertung, auch „hat nicht geklappt“ ist eine Information.`
   ueber['fr.text'] = `${zwei ? 'Les activités' : 'L’activité'} ${herkunft('fr')} ${zwei ? 'passent' : 'passe'} aujourd’hui dans le quotidien. ${situation.fr} ${mitte.fr} Pour finir, on convient d’un petit essai – sans évaluation, « ça n’a pas marché » est aussi une information.`
   return { ref: e.id, h: e.h, rolle: 'kern', min, t: titel.de.slice(0, 60), art, ueber, warum: ['Übertragen: die geübte Übung in eine kommende Situation bringen'] }
@@ -541,12 +554,13 @@ function folgeTransferSchritt(c: Kontext, min: number, kerne: string[], uebertra
       ueber: {
         titel: 'Was ich mitnehme',
         'fr.titel': 'Ce que j’emporte',
-        text: `Gemeinsam auf die Übungen der letzten Male schauen: ${de}. Die Fachkraft macht jede kurz vor oder zeigt die Blätter, falls sie aufgehoben wurden. Das Kind zeigt, was ihm am meisten geholfen oder am meisten Spaß gemacht hat, und macht es noch einmal. Dann sagt die Fachkraft eine Sache, die das Kind dazugelernt hat.${mitBlatt ? ' Was das Kind mitnimmt, kommt nachher aufs Blatt – hier wird nur gezeigt und erzählt.' : ''}`,
-        'fr.text': `Regarder ensemble les activités des dernières fois : ${fr}. L’adulte refait brièvement chacune ou montre les fiches si elles ont été gardées. L’enfant montre ce qui l’a le plus aidé ou ce qu’il a le plus aimé, et le refait une fois. Puis l’adulte nomme une chose que l’enfant a apprise.${mitBlatt ? ' Ce que l’enfant emporte sera noté ensuite sur la fiche – ici, on montre et on raconte seulement.' : ''}`,
-        sagen: 'Was davon möchtest du behalten? Zeig es mir noch einmal.',
-        'fr.sagen': 'Qu’est-ce que tu veux garder ? Montre-le-moi encore une fois.',
-        wennEsKippt: 'Fällt dem Kind nichts ein, macht die Fachkraft zwei Übungen kurz vor und das Kind zeigt nur auf eine. Ein Zeigen genügt.',
-        'fr.wennEsKippt': 'Si rien ne vient, l’adulte refait brièvement deux activités et l’enfant en montre une. Montrer suffit.',
+        // Blind-Bewertung 9: „vier Übungen vormachen in 12 Minuten“, „Rückblick & Feiern ohne Feier“, „Material fehlt“
+        text: `Die Übungen der letzten Male liegen da – die Blätter oder je ein Zettel mit dem Titel: ${de}. Das Kind sucht die aus, die am meisten Spaß gemacht oder geholfen hat, und sie wird noch einmal gespielt (drei, vier Minuten, mit dem Material von damals). Dann wird gefeiert: Die Fachkraft sagt eine Sache, die das Kind dazugelernt hat, und das Kind bekommt einen Sticker oder einen Stern auf eine Karte.${mitBlatt ? ' Auf dem Blatt malt es danach sein Abzeichen.' : ''}`,
+        'fr.text': `Les activités des dernières fois sont là – les fiches ou un papier avec chaque titre : ${fr}. L’enfant choisit celle qu’il a le plus aimée ou qui l’a le plus aidé, et on la refait une fois (trois, quatre minutes, avec le matériel de la première fois). Puis on fête : l’adulte nomme une chose que l’enfant a apprise, et l’enfant reçoit un autocollant ou une étoile sur une carte.${mitBlatt ? ' Sur la fiche, il dessine ensuite son badge.' : ''}`,
+        sagen: 'Welche machen wir noch einmal? Du darfst aussuchen.',
+        'fr.sagen': 'Laquelle on refait ? Tu peux choisir.',
+        wennEsKippt: 'Mag das Kind nicht wählen, schlägt die Fachkraft eine vor. Feiern geht auch leise: ein Daumen hoch und ein Stern auf die Karte.',
+        'fr.wennEsKippt': 'Si l’enfant ne veut pas choisir, l’adulte en propose une. Fêter peut aussi être discret : un pouce levé et une étoile sur la carte.',
       },
       warum: ['Letzte Sitzung: das Wichtigste der Folge festhalten'],
     }
@@ -599,16 +613,14 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     const ke = slots.find((x) => x.rolle === 'kern')
     // Jugendliche: kein eigener Rückblick-Schritt – der Kern ist der Rückblick mit Übertragung (folgeTransferSchritt), er
     // bekommt die Minuten des Einstiegs (Blind-Bewertung 6: „Rückblick vor dem wiederholten Kern“, „wortgleiche Wiederholung“)
-    if (c.alter >= 12 && ke) {
-      if (ei >= 0) {
+    // Blind-Bewertung 9: „16–24 Minuten reines Gespräch“, „kein Bewegungsteil“ – der Einstieg wird zur kurzen Bewegung
+    // (gibt es schon eine, bekommt der Kern die Minuten); der Kern ist für alle Alter der Rückblick (folgeTransferSchritt)
+    if (ke && ei >= 0) {
+      if (!slots.some((x) => x.rolle === 'bewegung' || x.rolle === 'pause')) slots[ei] = { ...slots[ei], rolle: 'bewegung' }
+      else {
         ke.min += slots[ei].min
         slots.splice(ei, 1)
       }
-    } else {
-      const zeit = ke && ke.min >= 8 ? 4 : 0
-      if (ke) ke.min -= zeit
-      if (ei >= 0) slots[ei] = { ...slots[ei], rolle: 'reflexion', min: slots[ei].min + zeit }
-      else if (zeit) slots.splice(1, 0, { rolle: 'reflexion', min: zeit })
     }
   }
   const formate = new Set<string>()
@@ -695,14 +707,15 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
         const { art: _art, ...ohneArt } = sch
         ergebnis[i] = ohneArt
         kern = c.k.eintraege.get(sch.ref)
-        kernTitel = { de: sch.ueber!.titel, fr: sch.ueber!['fr.titel'] }
+        // der Einstieg nennt keinen Rohtitel „Transférer – …“ (Blind-Bewertung 9), sondern was heute passiert
+        kernTitel = { de: `${sch.ueber!.titel.replace(/^Übertragen:\s*/, '')} – im Alltag`, fr: `${sch.ueber!['fr.titel'].replace(/^Transférer\s*–\s*/, '')} – au quotidien` }
         continue
       }
     }
     // letzte Sitzung einer Folge (Jugendliche und Kinder ab 6): kein neues Werkzeug und keine wortgleiche Wiederholung,
     // sondern die Übungen der Folge durchgehen und festhalten, was bleibt (Blind-Bewertungen 5, 6 und 8: „die Rückblick-
     // Sitzung bringt einen neuen Kern“)
-    if (slot.rolle === 'kern' && mitFaden(c) && c.weg !== 'leicht' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2) {
+    if (slot.rolle === 'kern' && c.weg !== 'leicht' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2) {
       const sch = folgeTransferSchritt(c, slot.min, o.fruehereKerne!, o.uebertragen ?? [])
       ergebnis[i] = sch
       kern = c.k.eintraege.get(sch.ref)
@@ -777,7 +790,7 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
       for (const w of auswahl) if (kernQuelle && quelleEinheit(w.b.e.id) === kernQuelle) w.b = { ...w.b, s: w.b.s + 0.25 }
       auswahl.sort((x, y) => rang(x.b, y.b, `${salz}|${i}`))
       // letzte Sitzung einer Folge: ein echter Rückblick auf die Kerne der Folge
-      if (slot.rolle === 'reflexion' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2 && !mitFaden(c)) {
+      if (slot.rolle === 'reflexion' && o.phase === 'reflektieren' && (o.fruehereKerne ?? []).length >= 2 && c.weg === 'leicht') {
         ergebnis[i] = rueckblickSchritt(c, slot.min, o.fruehereKerne!)
         continue
       }
@@ -1143,12 +1156,23 @@ function planFolge(c: Kontext, n: number, variante: number, verlauf?: Verlauf): 
     const fehlt = zieleE.filter((z) => !geuebt.has(z))
     if (fehlt.length) (sitzungen[0].hinweise ??= []).push(`Nicht in dieser Folge: ${fehlt.join(', ')} – dafür eine eigene Folge planen${zieleE.length >= 2 && !zweiBoegen ? ' oder 6 und mehr Sitzungen wählen' : ''}.`)
   }
+  // Einzelstunde: der Titel nennt, was der Kern übt (Blind-Bewertung 9: „Séance individuelle : Image de soi“ über einer
+  // Konzentrationsübung) – das Kompetenzfeld des Hauptziels des Kerns
+  let titel = planTitel(c)
+  if (c.weg === 'schnell' && sitzungen.length === 1) {
+    const ke = sitzungen[0].schritte.find((x) => x.rolle === 'kern')
+    const e = ke ? c.k.eintraege.get(ke.ref) : undefined
+    const code = e?.eldib.find((x) => x.gewicht === 1)?.code ?? e?.eldib[0]?.code
+    const f = code ? kompetenzAusCode(code) : undefined
+    const name = f ? KOMPETENZ_NAME[f]?.[c.sprache === 'fr' ? 'fr' : 'de'] : undefined
+    if (name) titel = titel.replace(/^(Einzelstunde|Gruppenstunde): .*$/, `$1: ${name}`).replace(/^(Séance individuelle|Séance en groupe) : .*$/, `$1 : ${name}`)
+  }
   return {
     id,
     erstellt: c.datum,
     weg: c.weg,
     gewichte: 'V1',
-    titel: planTitel(c),
+    titel,
     ziele: c.ziele.filter((z) => istEldib(z.code)).map((z) => z.code),
     n: sitzungen.length,
     dauer: c.a.dauer,

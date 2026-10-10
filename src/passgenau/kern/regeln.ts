@@ -255,6 +255,9 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     // Wettbewerb und Zeitdruck nicht bei Wut, Angst, schwerem Tag oder Reizempfindlichkeit („Tast-Rallye“, „Rekord“)
     if (tm.has('mobbing') && krisenlage(c)) return 'belastend'
     if (tm.has('selbstbewertung') && krisenlage(c)) return 'Selbsteinschätzung in Krisenlage'
+    if (tm.has('pruefung') && !c.themen.has('pruefungsangst') && !(c.p.themen ?? []).some((t) => /pruef/.test(t.key))) return 'Prüfung ohne Anlass'
+    if (tm.has('atemAnhalten') && (c.vorsicht.has('trauma') || krisenlage(c) || c.tagesformen.some((t) => t === 'aengstlich' || t === 'aufgewuehlt'))) return 'Atem anhalten'
+    if (tm.has('leistungsmessung') && (krisenlage(c) || c.heute.stimmung <= 2 || c.themen.has('pruefungsangst') || c.tagesformen.some((t) => t === 'aengstlich' || t === 'traurig'))) return 'Leistung messen'
     if (tm.has('wettlauf') && (c.vorsicht.has('reiz') || c.heute.stimmung <= 2 || c.themen.has('wut') || c.themen.has('angst') || c.tagesformen.some((t) => t === 'wuetend' || t === 'aufgewuehlt' || t === 'aengstlich'))) return 'Wettbewerb'
   }
   // Krisenlage: keine Einschätz-Gläser (Schlafen, Freunde, „Trost & Kuscheln“; Blind-Bewertung 8)
