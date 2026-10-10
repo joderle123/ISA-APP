@@ -1,0 +1,34 @@
+/* Sorry-Werkstatt: das Sorry als Kette von Bausteinen, die eigene Hand, Aufdecken beim Weitergeben */
+.sw-kette { gap: 8px; }
+.sw-teil { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border: 2px solid var(--line); border-radius: var(--radius-sm); background: var(--bg); min-width: 0; }
+.sw-teil .sw-text { flex: 1; min-width: 0; font-weight: 600; text-wrap: pretty; }
+.sw-teil .btn { flex: none; }
+.sw-teil.leer { border-style: dashed; background: transparent; min-height: 48px; }
+.sw-teil.hand { background: color-mix(in srgb, var(--yellow) 14%, var(--bg)); }
+.sw-teil.echt { border-left: 8px solid var(--good); }
+.sw-teil.fake { border-left: 8px solid var(--hot); }
+.sw-n { font-family: var(--font-display); min-width: 1.8em; text-align: center; border-radius: 99px; background: var(--panel2); padding: 2px 6px; flex: none; }
+.sw-label { display: inline-flex; align-items: center; gap: 4px; font-weight: 700; color: var(--muted); }
+.sw-teil.echt .sw-label .ic { color: var(--good); }
+.sw-teil.fake .sw-label .ic { color: var(--hot); }
+.sw-kopf { display: flex; align-items: center; gap: 14px; padding: 10px 14px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); }
+.sw-kern { gap: 6px; }
+.sw-kern .chip { min-height: 40px; padding: 6px 12px; cursor: default; }
+.sw-said[data-kind="dazu"] { --tc: var(--teamA); }
+.sw-said[data-kind="weg"] { --tc: var(--yellow); }
+.sw-aber { border-left: 8px solid var(--hot); }
+.sw-warum { border-left: 8px solid var(--yellow); }
+.sw-auf { display: flex; align-items: center; gap: 8px; max-width: 640px; padding: 10px 14px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: var(--panel); text-align: left; }
+.sw-auf[data-echt="1"] .ic { color: var(--good); }
+.sw-auf[data-echt="0"] .ic { color: var(--hot); }
+@media (max-width: 560px) {
+  .sw-teil { flex-wrap: wrap; }
+  .sw-teil > .stack { flex-basis: calc(100% - 3em) !important; }
+  .sw-teil .btn { margin-left: auto; }
+}
+/* Breit: Sorry links, eigene Bausteine rechts */
+.sw-arbeit { display: grid; gap: 16px; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 900px) { .sw-arbeit { grid-template-columns: 1.15fr 1fr; } }
+.sw-hand .sw-teil { flex-wrap: wrap; }
+.sw-hand .sw-teil .sw-text { flex-basis: 12em; }
+.sw-hand .sw-teil .btn { margin-left: auto; }

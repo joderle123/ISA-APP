@@ -74,6 +74,9 @@ In der **Solo-Zone** gibt es Spiele für eine Person (z. B. Chill-Zone, Gefühls
 - **X-Karte** (oben rechts): Jede Karte darf ohne Begründung übersprungen werden. Auch während einer Animation.
 - **Pause** mit Atemkreis und **Hilfe** mit Kanner- a Jugendtelefon (116 111), BEE SECURE Helpline (8002 1234), Notruf 112, Polizei 113.
 - **Heikle Karten** (Familie, Geld, Körper, Verlust …) sind aus, bis du sie im Lehrermodus einschaltest.
+- **Mobbing und Ausgrenzung** (Vier Zeugen, Leiter-Lauf, Wer fehlt?): Rollen und Sichten kommen per Los (Tagescode + Platz) und gehören
+  immer den Figuren. Wer eine Sicht nicht lesen mag, wird ohne Grund Beobachter:in. Was tun, wenn echtes Mobbing sichtbar wird
+  (Klassenleitung/Régent, SePAS), steht im Lehrermodus unter „Hinweise“ → „Wenn es kippt“.
 
 ## Lehrermodus
 

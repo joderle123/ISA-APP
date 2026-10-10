@@ -1,0 +1,37 @@
+/* 100 Prozent: Fall-Karte, Erzähl-Kacheln, Regler für 100 %, Aufdecken (Crew vs. Selbstsicht), Wiedergutmach-Züge */
+.hp-fall { display: flex; align-items: center; gap: 16px; padding: 14px 18px; border: var(--bw) solid var(--line); border-radius: var(--radius); background: var(--panel); box-shadow: 0 var(--lift) 0 var(--line); }
+.hp-fall > .ic { color: var(--yellow); flex: none; }
+.hp-fall > .stack { flex: 1; min-width: 0; }
+.hp-tiles { display: grid; gap: 12px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.hp-tile { display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 2px solid var(--line); border-top: 8px solid var(--fc); border-radius: var(--radius-sm); background: var(--panel); }
+.hp-tile .btn { width: 100%; }
+.hp-gedacht { display: flex; align-items: flex-start; gap: 8px; padding: 8px 10px; border-radius: var(--radius-sm); background: var(--bg); border: 2px dashed var(--line); }
+.hp-detail { border-left: 8px solid var(--yellow); }
+.hp-regler { gap: 10px; }
+.hp-reg { display: grid; grid-template-columns: minmax(120px, auto) 1fr 4.6em auto; gap: 12px; align-items: center; padding: 8px 12px; border: 2px solid var(--line); border-left: 8px solid var(--fc); border-radius: var(--radius-sm); background: var(--panel); }
+.hp-bar { height: 24px; border: 2px solid var(--line); border-radius: 99px; overflow: hidden; background: var(--bg); }
+.hp-bar i { display: block; height: 100%; background: var(--fc); transition: width 220ms ease; }
+.hp-wert { font-size: 1.5em; text-align: right; }
+.hp-reg .icon-btn[disabled] { opacity: .4; }
+.hp-aufdeck { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.hp-auf { display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 2px solid var(--line); border-top: 8px solid var(--fc); border-radius: var(--radius-sm); background: var(--panel); }
+.hp-vgl { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.hp-vgl-z { display: flex; flex-direction: column; gap: 2px; padding: 6px 8px; border-radius: 10px; background: var(--bg); border: 2px solid var(--line); }
+.hp-vgl-z b { font-size: 1.5em; }
+.hp-vgl-z.selbst { border-style: dashed; }
+.hp-rest { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; padding: 12px 16px; border-radius: var(--radius-sm); border: 2px solid var(--line); background: color-mix(in srgb, var(--hot) 18%, var(--panel)); }
+.hp-rest b { font-size: 1.3em; color: var(--yellow); }
+.hp-zugrow { display: flex; flex-direction: column; gap: 8px; padding: 10px 12px; border: 2px solid var(--line); border-left: 8px solid var(--fc); border-radius: var(--radius-sm); background: var(--panel); }
+.hp-zuege { display: grid; gap: 8px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.hp-zug { border-radius: var(--radius-sm); text-align: left; line-height: 1.25; align-items: flex-start; }
+.hp-ergebnis { display: flex; align-items: flex-start; gap: 12px; padding: 10px 12px; border: 2px solid var(--line); border-left: 8px solid var(--fc); border-radius: var(--radius-sm); background: var(--panel); }
+.hp-zugtag[data-zug="passt"] { background: var(--good); color: var(--good-ink); }
+.hp-zugtag[data-zug="klein"] { background: var(--yellow); color: var(--yellow-ink); }
+.hp-zugtag[data-zug="gross"] { background: var(--teamB); color: var(--teamB-ink); }
+@media (max-width: 900px) { .hp-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .hp-zuege { grid-template-columns: 1fr; } }
+@media (max-width: 560px) {
+  .hp-reg { grid-template-columns: 1fr auto; }
+  .hp-reg .hp-bar { grid-column: 1; grid-row: 2; }
+  .hp-fall { flex-direction: column; align-items: flex-start; }
+}
