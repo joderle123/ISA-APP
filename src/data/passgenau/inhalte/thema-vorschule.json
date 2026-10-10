@@ -62,8 +62,10 @@
         "Regarde bien : comment est mon visage ?",
         "Maintenant, tu fais un visage et je devine."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas deviner, l’adulte montre seulement les visages et l’enfant regarde. L’enfant peut aussi simplement rire avec l’adulte."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas deviner, l’adulte montre seulement les visages et l’enfant regarde. L’enfant peut aussi simplement rire avec l’adulte.",
+      "kurz": "Montrer un visage · l’enfant nomme l’émotion · puis on échange"
+    },
+    "kurz": "Gesicht zeigen · Kind nennt das Gefühl · dann tauschen"
   },
   {
     "id": "th:gefuehle-erkennen-bewegung-vorschule",
@@ -128,8 +130,10 @@
         "Comment se sent quelqu’un qui marche comme ça ?",
         "Maintenant, tu marches une émotion et je devine."
       ],
-      "wennEsKippt": "Assis, seuls les épaules, les bras et le visage montrent l’émotion. Si l’enfant ne veut pas mimer, il peut seulement deviner."
-    }
+      "wennEsKippt": "Assis, seuls les épaules, les bras et le visage montrent l’émotion. Si l’enfant ne veut pas mimer, il peut seulement deviner.",
+      "kurz": "Marcher une émotion · l’enfant devine · puis on échange"
+    },
+    "kurz": "Gefühl durch den Raum gehen · Kind rät · dann tauschen"
   },
   {
     "id": "th:gefuehle-erkennen-reflexion-vorschule",
@@ -194,8 +198,10 @@
         "À un moment de tout à l’heure, j’avais ce visage. Qu’est-ce que tu vois ?",
         "Tu veux montrer ton visage de tout à l’heure ? Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas montrer de visage, il montre du doigt l’un des trois visages que l’adulte fait l’un après l’autre. Ou bien l’adulte montre seulement son visage et l’enfant regarde."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas montrer de visage, il montre du doigt l’un des trois visages que l’adulte fait l’un après l’autre. Ou bien l’adulte montre seulement son visage et l’enfant regarde.",
+      "kurz": "Visage d’un moment de la séance · l’enfant montre le sien"
+    },
+    "kurz": "Gesicht zu einem Moment der Stunde zeigen · Kind zeigt seins"
   },
   {
     "id": "th:gefuehle-erkennen-abschluss-vorschule",
@@ -260,8 +266,10 @@
         "Au revoir ! Comment est mon visage maintenant ?",
         "Merci d’avoir joué avec moi. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas faire de visage, il fait seulement un signe de la main. L’adulte peut aussi montrer un visage tout seul et dire au revoir."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas faire de visage, il fait seulement un signe de la main. L’adulte peut aussi montrer un visage tout seul et dire au revoir.",
+      "kurz": "Montrer un visage, l’enfant le nomme · il salue avec le sien"
+    },
+    "kurz": "Gesicht zeigen, Kind nennt das Gefühl · winkt mit eigenem Gesicht"
   },
   {
     "id": "th:gefuehle-ausdruecken-ankommen-vorschule",
@@ -326,8 +334,10 @@
         "Bonjour, je le dis content. Bonjour, maintenant fatigué.",
         "Choisis un bonjour et je te le redis."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas dire bonjour, il fait seulement un signe ou montre l’un des trois bonjours. L’adulte peut aussi faire les trois tout seul."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas dire bonjour, il fait seulement un signe ou montre l’un des trois bonjours. L’adulte peut aussi faire les trois tout seul.",
+      "kurz": "Bonjour joyeux, fatigué, timide · l’enfant choisit, on répond pareil"
+    },
+    "kurz": "Hallo froh, müde, schüchtern · Kind wählt, Antwort in gleicher Art"
   },
   {
     "id": "th:gefuehle-ausdruecken-bewegung-vorschule",
@@ -392,8 +402,10 @@
         "Montre-moi content. Et maintenant fatigué.",
         "Choisis une émotion et on la montre ensemble."
       ],
-      "wennEsKippt": "Assis, les bras et le visage montrent l’émotion. Si l’enfant ne veut pas, l’adulte mime les émotions et l’enfant regarde ou fait avec les mains."
-    }
+      "wennEsKippt": "Assis, les bras et le visage montrent l’émotion. Si l’enfant ne veut pas, l’adulte mime les émotions et l’enfant regarde ou fait avec les mains.",
+      "kurz": "Nommer une émotion · la montrer en silence avec tout le corps"
+    },
+    "kurz": "Gefühl nennen · beide zeigen es leise mit dem ganzen Körper"
   },
   {
     "id": "th:gefuehle-ausdruecken-reflexion-vorschule",
@@ -461,8 +473,10 @@
         "Fais un trait de la couleur qui va avec tout à l’heure.",
         "Je fais mon trait. Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas dessiner, il montre une couleur du doigt. L’adulte fait son trait tout seul et l’enfant regarde."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas dessiner, il montre une couleur du doigt. L’adulte fait son trait tout seul et l’enfant regarde.",
+      "kurz": "Choisir une couleur pour l’émotion · un trait · un mot ou passe"
+    },
+    "kurz": "Farbe zum Gefühl wählen · Strich malen · ein Wort dazu oder Pass"
   },
   {
     "id": "th:gefuehle-ausdruecken-abschluss-vorschule",
@@ -527,8 +541,10 @@
         "Ma main est au milieu. Montre la tienne si tu veux, ou dis « Je passe ».",
         "Merci. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas montrer, l’adulte dit simplement au revoir. L’enfant peut aussi faire un signe de la main sans rien montrer."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas montrer, l’adulte dit simplement au revoir. L’enfant peut aussi faire un signe de la main sans rien montrer.",
+      "kurz": "Main en haut, au milieu, en bas : comment je vais · au revoir"
+    },
+    "kurz": "Hand oben, Mitte, unten: so geht es mir · dann Tschüss"
   },
   {
     "id": "th:selbstregulation-ankommen-vorschule",
@@ -593,8 +609,10 @@
         "Monte le long du doigt en inspirant, descends en expirant.",
         "Tout doucement. Je le fais avec toi."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas, l’adulte le fait tout seul et l’enfant regarde. Ou bien tous deux expirent simplement trois fois lentement, comme pour souffler sur une soupe chaude."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas, l’adulte le fait tout seul et l’enfant regarde. Ou bien tous deux expirent simplement trois fois lentement, comme pour souffler sur une soupe chaude.",
+      "kurz": "Suivre chaque doigt : en haut on inspire, en bas on expire"
+    },
+    "kurz": "Finger der anderen Hand nachfahren: hoch einatmen, runter ausatmen"
   },
   {
     "id": "th:selbstregulation-bewegung-vorschule",
@@ -659,8 +677,10 @@
         "D’abord vite comme un lièvre. Maintenant plus lentement, comme un chat.",
         "Tout lentement comme un escargot. Et on s’arrête."
       ],
-      "wennEsKippt": "Assis, les mains tapotent vite sur les genoux, puis plus lentement, jusqu’à rester bien immobiles. Si l’enfant ne veut pas, l’adulte fait les animaux avec ses doigts sur la table."
-    }
+      "wennEsKippt": "Assis, les mains tapotent vite sur les genoux, puis plus lentement, jusqu’à rester bien immobiles. Si l’enfant ne veut pas, l’adulte fait les animaux avec ses doigts sur la table.",
+      "kurz": "Trottiner sur place, de plus en plus lentement · expirer 3 fois"
+    },
+    "kurz": "Auf der Stelle trippeln, schnell bis langsam · stehen, 3× ausatmen"
   },
   {
     "id": "th:selbstregulation-reflexion-vorschule",
@@ -725,8 +745,10 @@
         "Quel truc tu aimes ? Montre avec le doigt.",
         "Je choisis souffler. Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne veut rien montrer, seul l’adulte essaie les trois trucs et l’enfant regarde. Un seul truc suffit aussi."
-    }
+      "wennEsKippt": "Si l’enfant ne veut rien montrer, seul l’adulte essaie les trois trucs et l’enfant regarde. Un seul truc suffit aussi.",
+      "kurz": "Trois trucs calmes : souffler · frotter les mains · yeux fermés"
+    },
+    "kurz": "Drei Ruhe-Tricks probieren: pusten · Hände reiben · Augen zu"
   },
   {
     "id": "th:selbstregulation-abschluss-vorschule",
@@ -791,8 +813,10 @@
         "Inspire profondément, souffle tout doucement.",
         "Merci d’avoir fait avec moi. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas souffler, il expire doucement comme un soupir. Ou bien il dit seulement au revoir."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas souffler, il expire doucement comme un soupir. Ou bien il dit seulement au revoir.",
+      "kurz": "Souffler deux fois lentement sur le doigt-bougie · faire coucou"
+    },
+    "kurz": "Finger-Kerze zweimal langsam auspusten · winken"
   },
   {
     "id": "th:impulskontrolle-ankommen-vorschule",
@@ -858,8 +882,10 @@
         "Je retourne le sablier. On attend ensemble.",
         "Le sable est tombé. Maintenant : bonjour !"
       ],
-      "wennEsKippt": "Si l’attente est trop difficile, le temps est raccourci ou l’enfant regarde seulement le sable. S’il n’y a pas de sablier court, tous deux comptent doucement jusqu’à cinq sur leurs doigts."
-    }
+      "wennEsKippt": "Si l’attente est trop difficile, le temps est raccourci ou l’enfant regarde seulement le sable. S’il n’y a pas de sablier court, tous deux comptent doucement jusqu’à cinq sur leurs doigts.",
+      "kurz": "Retourner le sablier · attendre sans parler · puis bonjour"
+    },
+    "kurz": "Sanduhr drehen · ohne Worte warten, bis der Sand durch ist · Hallo"
   },
   {
     "id": "th:impulskontrolle-bewegung-vorschule",
@@ -924,8 +950,10 @@
         "Main levée : statue !",
         "Maintenant, c’est toi qui décides quand la main se lève."
       ],
-      "wennEsKippt": "Assis, seules les mains se figent : elles restent en l’air jusqu’à ce que la main redescende. Si l’arrêt est difficile, l’adulte lève la main plus lentement et compte doucement avec l’enfant."
-    }
+      "wennEsKippt": "Assis, seules les mains se figent : elles restent en l’air jusqu’à ce que la main redescende. Si l’arrêt est difficile, l’adulte lève la main plus lentement et compte doucement avec l’enfant.",
+      "kurz": "Marcher · main levée = statue, compter jusqu’à trois · l’enfant décide"
+    },
+    "kurz": "Gehen · Hand hoch = Statue, bis drei zählen · Kind bestimmt"
   },
   {
     "id": "th:impulskontrolle-reflexion-vorschule",
@@ -990,8 +1018,10 @@
         "J’ai attendu et je n’ai pas foncé tout de suite. C’était mon frein.",
         "Où était ton frein ? Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve aucun moment, l’adulte montre deux freins et l’enfant en choisit un. Le geste de frein avec la main, sans paroles, suffit aussi."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve aucun moment, l’adulte montre deux freins et l’enfant en choisit un. Le geste de frein avec la main, sans paroles, suffit aussi.",
+      "kurz": "Un moment où l’on a attendu · montrer le frein avec la main"
+    },
+    "kurz": "Stelle nennen, an der man gewartet hat · Bremse mit der Hand zeigen"
   },
   {
     "id": "th:impulskontrolle-abschluss-vorschule",
@@ -1056,8 +1086,10 @@
         "Main stop. Inspire, expire.",
         "Et maintenant : au revoir !"
       ],
-      "wennEsKippt": "Si rester immobile est difficile, il suffit de garder la main posée un court instant. Si l’enfant ne veut pas, l’adulte fait sa main stop tout seul et fait ensuite un signe de la main."
-    }
+      "wennEsKippt": "Si rester immobile est difficile, il suffit de garder la main posée un court instant. Si l’enfant ne veut pas, l’adulte fait sa main stop tout seul et fait ensuite un signe de la main.",
+      "kurz": "Main à plat sur la table · inspirer, expirer · puis faire coucou"
+    },
+    "kurz": "Hand flach auf den Tisch · ein- und ausatmen · dann erst winken"
   },
   {
     "id": "th:aufmerksamkeit-ankommen-vorschule",
@@ -1124,8 +1156,10 @@
         "Regarde bien. Retourne-toi un instant.",
         "Qu’est-ce qui a changé maintenant ?"
       ],
-      "wennEsKippt": "Avec seulement deux objets, c’est plus facile. Si l’enfant ne veut pas se retourner, il met les mains devant les yeux ou regarde vers la porte."
-    }
+      "wennEsKippt": "Avec seulement deux objets, c’est plus facile. Si l’enfant ne veut pas se retourner, il met les mains devant les yeux ou regarde vers la porte.",
+      "kurz": "Mémoriser trois objets · l’enfant se retourne · un objet a changé"
+    },
+    "kurz": "Drei Dinge merken · Kind dreht sich um · eins ist getauscht oder weg"
   },
   {
     "id": "th:aufmerksamkeit-bewegung-vorschule",
@@ -1190,8 +1224,10 @@
         "Regarde bien ma main.",
         "Maintenant, je suis ton miroir."
       ],
-      "wennEsKippt": "Assis, l’enfant ne copie que les mains et les bras. Si c’est difficile, les mouvements sont plus lents, un seul à la fois."
-    }
+      "wennEsKippt": "Assis, l’enfant ne copie que les mains et les bras. Si c’est difficile, les mouvements sont plus lents, un seul à la fois.",
+      "kurz": "Gestes lents, l’enfant les imite en miroir · puis on échange"
+    },
+    "kurz": "Langsame Bewegungen vormachen, Kind spiegelt · dann tauschen"
   },
   {
     "id": "th:aufmerksamkeit-reflexion-vorschule",
@@ -1256,8 +1292,10 @@
         "Qu’est-ce que tu entends ?",
         "Quand as-tu regardé très attentivement aujourd’hui ? Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas fermer les yeux, il regarde un point sur le sol. S’il n’entend rien, l’adulte nomme un bruit et ils en cherchent encore un."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas fermer les yeux, il regarde un point sur le sol. S’il n’entend rien, l’adulte nomme un bruit et ils en cherchent encore un.",
+      "kurz": "Yeux fermés, 30 s d’écoute · dire ce qu’on a entendu · bilan"
+    },
+    "kurz": "Augen zu, 30 Sek. lauschen · Gehörtes nennen · Rückblick aufs Hinsehen"
   },
   {
     "id": "th:aufmerksamkeit-abschluss-vorschule",
@@ -1322,8 +1360,10 @@
         "Regarde autour de toi. Qu’est-ce qui est bleu ?",
         "Bien regardé. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte donne un indice, par exemple « près de la porte ». Si l’enfant ne veut pas chercher, l’adulte montre l’objet et dit au revoir."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte donne un indice, par exemple « près de la porte ». Si l’enfant ne veut pas chercher, l’adulte montre l’objet et dit au revoir.",
+      "kurz": "Nommer une couleur, l’enfant cherche · puis on échange"
+    },
+    "kurz": "Farbe nennen, Kind sucht im Raum · dann tauschen"
   },
   {
     "id": "th:ausdauer-ankommen-vorschule",
@@ -1390,8 +1430,10 @@
         "Tu poses une brique, je pose une brique.",
         "Cinq briques, la tour tient. On a persévéré."
       ],
-      "wennEsKippt": "Si la tour tombe, l’adulte la reconstruit calmement avec l’enfant, seulement avec trois briques. Si l’enfant ne veut pas construire, il aligne simplement les briques."
-    }
+      "wennEsKippt": "Si la tour tombe, l’adulte la reconstruit calmement avec l’enfant, seulement avec trois briques. Si l’enfant ne veut pas construire, il aligne simplement les briques.",
+      "kurz": "Empiler cinq briques à tour de rôle"
+    },
+    "kurz": "Abwechselnd fünf Steine zu einem Turm stapeln"
   },
   {
     "id": "th:ausdauer-bewegung-vorschule",
@@ -1458,8 +1500,12 @@
         "Un pied devant l’autre. Je viens avec toi.",
         "Encore un tour. On continue."
       ],
-      "wennEsKippt": "Assis, un doigt suit la bande d’adhésif sur la table, trois fois aller et retour. Si c’est trop long, un seul tour suffit."
-    }
+      "wennEsKippt": "Assis, un doigt suit la bande d’adhésif sur la table, trois fois aller et retour. Si c’est trop long, un seul tour suffit.",
+      "kurz": "Pied devant pied sur la ligne · 3 allers-retours · compter les tours",
+      "vorbereitung": "Coller une ligne droite de 2 m de ruban adhésif au sol"
+    },
+    "kurz": "Fuß vor Fuß auf der Linie · dreimal hin und zurück · Runden zählen",
+    "vorbereitung": "Zwei Meter Klebeband als gerade Linie auf den Boden kleben"
   },
   {
     "id": "th:ausdauer-reflexion-vorschule",
@@ -1527,8 +1573,12 @@
         "J’étais sur la deuxième marche : j’ai continué.",
         "Sur quelle marche poses-tu ton crayon ? Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Chaque marche est bien, l’adulte le dit clairement. Si l’enfant ne veut pas choisir, l’adulte montre deux marches et l’enfant en touche une."
-    }
+      "wennEsKippt": "Chaque marche est bien, l’adulte le dit clairement. Si l’enfant ne veut pas choisir, l’adulte montre deux marches et l’enfant en touche une.",
+      "kurz": "Choisir une marche : commencé · continué · tenu",
+      "vorbereitung": "Construire un escalier à trois marches avec des briques"
+    },
+    "kurz": "Stufe wählen: angefangen · weitergemacht · durchgehalten",
+    "vorbereitung": "Treppe mit drei Stufen aus Bausteinen bauen"
   },
   {
     "id": "th:ausdauer-abschluss-vorschule",
@@ -1595,8 +1645,10 @@
         "Tu dessines un morceau, je dessine un morceau.",
         "Regarde jusqu’où on est arrivés. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas alterner, il dessine tout le trait seul et l’adulte regarde. Un trait court compte aussi."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas alterner, il dessine tout le trait seul et l’adulte regarde. Un trait court compte aussi.",
+      "kurz": "Tracer à tour de rôle sans lever le crayon · un long trait"
+    },
+    "kurz": "Abwechselnd ein Stück malen, Stift nicht absetzen · langer Strich"
   },
   {
     "id": "th:kooperation-ankommen-vorschule",
@@ -1664,8 +1716,10 @@
         "Je dessine le cercle, toi les rayons.",
         "Nous avons dessiné le soleil ensemble."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas dessiner, il fait un seul trait ou montre où l’adulte doit dessiner. Le dessin n’a pas besoin d’être terminé."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas dessiner, il fait un seul trait ou montre où l’adulte doit dessiner. Le dessin n’a pas besoin d’être terminé.",
+      "kurz": "Dessiner le cercle, l’enfant les rayons · puis le visage"
+    },
+    "kurz": "Kreis malen, Kind malt Strahlen · Gesicht · mehr Strahlen"
   },
   {
     "id": "th:kooperation-bewegung-vorschule",
@@ -1733,8 +1787,10 @@
         "Où veut-on aller ? On se le dit.",
         "Doucement. On porte ensemble."
       ],
-      "wennEsKippt": "Assis, tous deux font glisser lentement le foulard avec la chaussette sur la table, de l’un à l’autre. Si c’est difficile pour l’enfant, ils ne font que trois pas."
-    }
+      "wennEsKippt": "Assis, tous deux font glisser lentement le foulard avec la chaussette sur la table, de l’un à l’autre. Si c’est difficile pour l’enfant, ils ne font que trois pas.",
+      "kurz": "Porter le foulard avec la chaussette à deux · convenir du chemin"
+    },
+    "kurz": "Tuch mit Socke zu zweit tragen · Weg und Halt vorher absprechen"
   },
   {
     "id": "th:kooperation-reflexion-vorschule",
@@ -1798,8 +1854,10 @@
         "Voilà ce que j’ai fait. Et toi ? Tu peux aussi dire « Je passe ».",
         "Et voilà ce que nous avons réussi ensemble."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte nomme deux choses et l’enfant en montre une. Il suffit aussi que seul l’adulte parle."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte nomme deux choses et l’enfant en montre une. Il suffit aussi que seul l’adulte parle.",
+      "kurz": "Mains levées : ce que j’ai fait · ce qu’on a fait à deux"
+    },
+    "kurz": "Hände hoch: was ich getan habe · was wir zusammen geschafft haben"
   },
   {
     "id": "th:kooperation-abschluss-vorschule",
@@ -1863,8 +1921,10 @@
         "Un, deux, trois.",
         "C’était un au revoir tous ensemble !"
       ],
-      "wennEsKippt": "Si dire en même temps est difficile, l’enfant fait signe d’abord et l’adulte juste après. Si l’enfant ne veut pas, l’adulte dit au revoir tout seul."
-    }
+      "wennEsKippt": "Si dire en même temps est difficile, l’enfant fait signe d’abord et l’adulte juste après. Si l’enfant ne veut pas, l’adulte dit au revoir tout seul.",
+      "kurz": "Compter tout bas jusqu’à trois · saluer ensemble en même temps"
+    },
+    "kurz": "Leise bis drei zählen · gleichzeitig winken und Tschüss sagen"
   },
   {
     "id": "th:konflikte-ankommen-vorschule",
@@ -1932,8 +1992,10 @@
         "La marionnette veut aussi le crayon. Que peut-on faire ?",
         "On essaie ton idée."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas d’idée, l’adulte propose deux possibilités et l’enfant en montre une. Si l’enfant ne veut pas réfléchir, la marionnette trouve elle-même une solution et l’enfant regarde."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve pas d’idée, l’adulte propose deux possibilités et l’enfant en montre une. Si l’enfant ne veut pas réfléchir, la marionnette trouve elle-même une solution et l’enfant regarde.",
+      "kurz": "La marionnette veut le seul crayon · l’enfant cherche · on essaie"
+    },
+    "kurz": "Handpuppe will den einzigen Stift · Kind sucht Lösung · ausprobieren"
   },
   {
     "id": "th:konflikte-bewegung-vorschule",
@@ -2000,8 +2062,12 @@
         "On veut passer tous les deux. Que fait-on ?",
         "Tu passes d’abord, ensuite moi. Ça marche."
       ],
-      "wennEsKippt": "Assis, deux doigts avancent chacun d’un côté sur un chemin étroit de la table et doivent se croiser. Si l’enfant n’a pas d’idée, l’adulte propose « à tour de rôle »."
-    }
+      "wennEsKippt": "Assis, deux doigts avancent chacun d’un côté sur un chemin étroit de la table et doivent se croiser. Si l’enfant n’a pas d’idée, l’adulte propose « à tour de rôle ».",
+      "kurz": "Passage étroit · se croiser · trouver une solution · échanger",
+      "vorbereitung": "Placer deux chaises pour qu’une seule personne puisse passer"
+    },
+    "kurz": "Enger Durchgang · in der Mitte treffen · Lösung finden · tauschen",
+    "vorbereitung": "Zwei Stühle so stellen, dass nur eine Person durchpasst"
   },
   {
     "id": "th:konflikte-reflexion-vorschule",
@@ -2066,8 +2132,10 @@
         "Voici stop, voici à tour de rôle, voici chercher de l’aide.",
         "Quel signe tu aimes ? Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Un seul signe suffit, par exemple la main stop. Si l’enfant ne veut rien montrer, l’adulte s’entraîne seul aux trois signes."
-    }
+      "wennEsKippt": "Un seul signe suffit, par exemple la main stop. Si l’enfant ne veut rien montrer, l’adulte s’entraîne seul aux trois signes.",
+      "kurz": "Trois signes : stop · à tour de rôle · aide · l’enfant en choisit un"
+    },
+    "kurz": "Zeichen zeigen: Stopp · Abwechseln · Hilfe holen · Kind wählt eins"
   },
   {
     "id": "th:konflikte-abschluss-vorschule",
@@ -2132,8 +2200,10 @@
         "Je voudrais commencer. Toi aussi ? Comment fait-on ?",
         "D’abord moi, ensuite toi. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas de solution, l’adulte propose « à tour de rôle ». Si l’enfant ne veut pas, l’adulte fait simplement signe de la main et s’en va."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve pas de solution, l’adulte propose « à tour de rôle ». Si l’enfant ne veut pas, l’adulte fait simplement signe de la main et s’en va.",
+      "kurz": "Les deux veulent saluer d’abord · s’accorder · saluer à tour de rôle"
+    },
+    "kurz": "Beide wollen zuerst Tschüss sagen · einigen · nacheinander winken"
   },
   {
     "id": "th:kommunikation-ankommen-vorschule",
@@ -2200,8 +2270,10 @@
         "Qu’est-ce que c’est ? Dis-le d’abord avec un mot, puis avec une phrase entière.",
         "Je le dis aussi : gobelet. C’est un gobelet."
       ],
-      "wennEsKippt": "Si la phrase est difficile, l’adulte la dit et l’enfant répète. Si l’enfant ne veut pas parler, il montre l’objet du doigt."
-    }
+      "wennEsKippt": "Si la phrase est difficile, l’adulte la dit et l’enfant répète. Si l’enfant ne veut pas parler, il montre l’objet du doigt.",
+      "kurz": "Montrer un objet · un mot, puis une phrase entière · on échange"
+    },
+    "kurz": "Ding zeigen · Kind sagt ein Wort, dann einen ganzen Satz · tauschen"
   },
   {
     "id": "th:kommunikation-bewegung-vorschule",
@@ -2266,8 +2338,10 @@
         "Maintenant, tu marches et tu parles, et j’écoute.",
         "J’ai écouté très attentivement."
       ],
-      "wennEsKippt": "Assis, celui qui parle montre de la main ce dont il parle, et celui qui écoute garde les mains immobiles. Si l’enfant n’a pas de phrase, l’adulte en dit deux et l’enfant en répète une."
-    }
+      "wennEsKippt": "Assis, celui qui parle montre de la main ce dont il parle, et celui qui écoute garde les mains immobiles. Si l’enfant n’a pas de phrase, l’adulte en dit deux et l’enfant en répète une.",
+      "kurz": "Dire une phrase en marchant · l’autre écoute immobile · échanger"
+    },
+    "kurz": "Beim Gehen einen Satz sagen · Zuhörer steht und nickt · wechseln"
   },
   {
     "id": "th:kommunikation-reflexion-vorschule",
@@ -2332,8 +2406,10 @@
         "Oreille, œil, bouche. Qu’est-ce qui t’a aidé aujourd’hui ?",
         "L’œil m’a aidé. Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas choisir, l’adulte montre son signe et l’enfant le refait seulement. Un seul signe suffit."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas choisir, l’adulte montre son signe et l’enfant le refait seulement. Un seul signe suffit.",
+      "kurz": "Signes oreille · œil · bouche · l’enfant montre ce qui a aidé"
+    },
+    "kurz": "Zeichen Ohr · Auge · Mund lernen · Kind zeigt, was heute half"
   },
   {
     "id": "th:kommunikation-abschluss-vorschule",
@@ -2397,8 +2473,10 @@
         "J’aimerais bien… Comment ta phrase continue-t-elle ?",
         "Merci d’avoir raconté. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte propose deux fins et l’enfant en montre une. Il peut aussi dire « Je passe »."
-    }
+      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte propose deux fins et l’enfant en montre une. Il peut aussi dire « Je passe ».",
+      "kurz": "Début de phrase donné · chacun le termine · écouter"
+    },
+    "kurz": "Satzanfang vorgeben · beide beenden ihn · zuhören"
   },
   {
     "id": "th:selbstbild-ankommen-vorschule",
@@ -2463,8 +2541,10 @@
         "Ça, je sais bien le faire. Tu vois ?",
         "Qu’est-ce que tu sais faire ? Montre-moi. Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose deux petites choses, par exemple sauter ou compter jusqu’à cinq, et l’enfant en choisit une. S’il ne veut pas, seul l’adulte montre ce qu’il sait faire."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose deux petites choses, par exemple sauter ou compter jusqu’à cinq, et l’enfant en choisit une. S’il ne veut pas, seul l’adulte montre ce qu’il sait faire.",
+      "kurz": "Montrer ce qu’on sait faire · puis l’enfant"
+    },
+    "kurz": "Etwas zeigen, das man gut kann · dann das Kind"
   },
   {
     "id": "th:selbstbild-bewegung-vorschule",
@@ -2529,8 +2609,10 @@
         "Montre-moi ta façon de marcher. Je la fais après toi.",
         "Ma façon de marcher est différente de la tienne. Les deux sont bien."
       ],
-      "wennEsKippt": "Assis, un doigt marche sur la table à sa façon. Si l’enfant n’a pas d’idée, l’adulte en montre deux et l’enfant en choisit une."
-    }
+      "wennEsKippt": "Assis, un doigt marche sur la table à sa façon. Si l’enfant n’a pas d’idée, l’adulte en montre deux et l’enfant en choisit une.",
+      "kurz": "L’enfant invente une démarche · on l’imite · puis l’inverse"
+    },
+    "kurz": "Kind erfindet eine Gangart · wird nachgemacht · dann umgekehrt"
   },
   {
     "id": "th:selbstbild-reflexion-vorschule",
@@ -2594,8 +2676,10 @@
         "Voilà ce que j’ai fait aujourd’hui. Et toi ? Tu peux aussi dire « Je passe ».",
         "J’ai entendu ce que tu as fait. Merci."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte nomme deux choses qu’il a vues et l’enfant en montre une. L’enfant peut aussi dire « Je passe »."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte nomme deux choses qu’il a vues et l’enfant en montre une. L’enfant peut aussi dire « Je passe ».",
+      "kurz": "Chacun dit ou montre ce qu’il a fait · sans évaluer"
+    },
+    "kurz": "Beide sagen oder zeigen, was sie gemacht haben · ohne Bewertung"
   },
   {
     "id": "th:selbstbild-abschluss-vorschule",
@@ -2660,8 +2744,10 @@
         "Comment fais-tu signe ? Montre-moi ton au revoir.",
         "Je fais signe comme ça. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte essaie deux signes et l’enfant en choisit un. S’il ne veut pas, tous deux font simplement signe de la main."
-    }
+      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte essaie deux signes et l’enfant en choisit un. S’il ne veut pas, tous deux font simplement signe de la main.",
+      "kurz": "L’enfant invente un signe d’adieu · on l’imite"
+    },
+    "kurz": "Kind erfindet ein Winke-Zeichen · wird nachgemacht"
   },
   {
     "id": "th:lernstrategien-ankommen-vorschule",
@@ -2727,8 +2813,10 @@
         "D’abord le gobelet, ensuite la cuillère, puis la chaussette.",
         "Tu l’as fait étape par étape."
       ],
-      "wennEsKippt": "Si c’est difficile, l’adulte n’aligne que deux objets. Si l’enfant ne veut pas aligner, il montre l’ordre du doigt."
-    }
+      "wennEsKippt": "Si c’est difficile, l’adulte n’aligne que deux objets. Si l’enfant ne veut pas aligner, il montre l’ordre du doigt.",
+      "kurz": "Ranger trois objets en ligne · l’enfant refait · « d’abord… puis… »"
+    },
+    "kurz": "Drei Dinge in Reihe legen · Kind legt nach · „Erst … dann …“"
   },
   {
     "id": "th:lernstrategien-bewegung-vorschule",
@@ -2797,8 +2885,10 @@
         "Qu’est-ce qui vient en premier ? Et ensuite ?",
         "Enfin, on est arrivés. C’était ton plan."
       ],
-      "wennEsKippt": "Assis, l’enfant montre du doigt l’ordre des trois étapes et l’adulte les parcourt avec deux doigts sur la table. Si le chemin est trop long, deux étapes suffisent."
-    }
+      "wennEsKippt": "Assis, l’enfant montre du doigt l’ordre des trois étapes et l’adulte les parcourt avec deux doigts sur la table. Si le chemin est trop long, deux étapes suffisent.",
+      "kurz": "Chemin de chaise, coussin, plaid · marcher : d’abord · puis · enfin"
+    },
+    "kurz": "Weg aus Stuhl, Kissen, Decke legen · gehen: erst · dann · zuletzt"
   },
   {
     "id": "th:lernstrategien-reflexion-vorschule",
@@ -2865,8 +2955,10 @@
         "La marionnette n’y arrive pas. Qu’est-ce qui peut l’aider ?",
         "Quelque chose t’a aidé aujourd’hui ? Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte montre trois signes : cercle avec le doigt (réessayer), main à plat vers le bas (doucement), main levée (aide). L’enfant en choisit un."
-    }
+      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte montre trois signes : cercle avec le doigt (réessayer), main à plat vers le bas (doucement), main levée (aide). L’enfant en choisit un.",
+      "kurz": "La marionnette est bloquée · l’enfant cherche de l’aide · et toi ?"
+    },
+    "kurz": "Handpuppe kommt nicht weiter · Kind sucht Hilfe · was half heute?"
   },
   {
     "id": "th:lernstrategien-abschluss-vorschule",
@@ -2931,8 +3023,10 @@
         "La prochaine fois, j’essaie quelque chose de nouveau. Et toi ?",
         "Tu peux aussi dire « Je passe ». Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte fait deux propositions et l’enfant en montre une. Le pas en avant suffit aussi, sans paroles."
-    }
+      "wennEsKippt": "Si l’enfant n’a pas d’idée, l’adulte fait deux propositions et l’enfant en montre une. Le pas en avant suffit aussi, sans paroles.",
+      "kurz": "Un pas en avant : qu’est-ce que j’essaie la prochaine fois ?"
+    },
+    "kurz": "Schritt nach vorn: was probiere ich nächstes Mal?"
   },
   {
     "id": "th:alltag-ankommen-vorschule",
@@ -2999,8 +3093,10 @@
         "Qu’est-ce qui a besoin d’une place en ce moment ?",
         "Ça a maintenant sa place. On peut commencer."
       ],
-      "wennEsKippt": "Si l’enfant n’a rien à ranger, il met un crayon dans le panier. S’il ne veut pas, l’adulte met son objet dans le panier et l’enfant regarde."
-    }
+      "wennEsKippt": "Si l’enfant n’a rien à ranger, il met un crayon dans le panier. S’il ne veut pas, l’adulte met son objet dans le panier et l’enfant regarde.",
+      "kurz": "Mettre un objet inutile au panier : « Il a sa place maintenant »"
+    },
+    "kurz": "Etwas Unnötiges in den Korb legen: „Das hat jetzt seinen Platz“"
   },
   {
     "id": "th:alltag-bewegung-vorschule",
@@ -3065,8 +3161,10 @@
         "Qu’est-ce qui vient d’abord : la veste ou le bonnet ?",
         "Maintenant, on est prêts et on va à la porte."
       ],
-      "wennEsKippt": "Assis, seuls les bras jouent : veste, fermeture éclair, bonnet. Si l’enfant ne veut pas jouer, l’adulte le montre et l’enfant dit ce qui vient ensuite."
-    }
+      "wennEsKippt": "Assis, seuls les bras jouent : veste, fermeture éclair, bonnet. Si l’enfant ne veut pas jouer, l’adulte le montre et l’enfant dit ce qui vient ensuite.",
+      "kurz": "Jouer veste · fermeture · bonnet au ralenti · à tour de rôle · porte"
+    },
+    "kurz": "Jacke · Reißverschluss · Mütze langsam spielen · abwechselnd · zur Tür"
   },
   {
     "id": "th:alltag-reflexion-vorschule",
@@ -3131,8 +3229,10 @@
         "Ranger, s’habiller, passer d’une chose à l’autre : qu’est-ce qui marche déjà bien ?",
         "Je montre ranger. Tu peux aussi dire « Je passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas montrer, l’adulte montre deux des choses et l’enfant hoche la tête pour l’une d’elles. Un seul signe suffit."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas montrer, l’adulte montre deux des choses et l’enfant hoche la tête pour l’une d’elles. Un seul signe suffit.",
+      "kurz": "Gestes ranger · s’habiller · changer · l’enfant montre ce qui va"
+    },
+    "kurz": "Gesten Aufräumen · Anziehen · Wechseln · Kind zeigt, was klappt"
   },
   {
     "id": "th:alltag-abschluss-vorschule",
@@ -3198,7 +3298,9 @@
         "Qu’est-ce qu’on range en premier ?",
         "La table est libre. Au revoir !"
       ],
-      "wennEsKippt": "S’il y a peu à ranger, deux objets suffisent. Si l’enfant ne veut pas, l’adulte range seul et l’enfant dit ce qui vient ensuite."
-    }
+      "wennEsKippt": "S’il y a peu à ranger, deux objets suffisent. Si l’enfant ne veut pas, l’adulte range seul et l’enfant dit ce qui vient ensuite.",
+      "kurz": "Petites choses au panier, grandes à leur place · table libre"
+    },
+    "kurz": "Kleines in den Korb, Großes an den Platz · Tisch frei · Tschüss"
   }
 ]

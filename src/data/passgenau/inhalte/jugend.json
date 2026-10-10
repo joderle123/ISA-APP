@@ -76,7 +76,9 @@
     "Quelle serait la réaction maligne ? Pas la parfaite, mais une que tu arriverais vraiment à faire.",
     "Qu’est-ce que tu dirais ou ferais exactement ? Donne-moi la phrase comme tu la dirais."
    ],
-   "wennEsKippt": "Si aucune réaction maligne ne vient, l’adulte en propose deux, et le ou la jeune en choisit une ou la modifie. Si une situation ne convient pas du tout, on relance simplement le dé."
+   "wennEsKippt": "Si aucune réaction maligne ne vient, l’adulte en propose deux, et le ou la jeune en choisit une ou la modifie. Si une situation ne convient pas du tout, on relance simplement le dé.",
+   "kurz": "Lancer le dé · trois réactions · formuler la phrase maligne",
+   "vorbereitung": "6 situations numérotées : annulation · « Encore toi, mdr » · pas de réponse · bousculade"
   },
   "tagesform": [
    "aufgedreht"
@@ -197,7 +199,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Würfeln · drei Wege nennen · klugen Satz genau formulieren",
+  "vorbereitung": "6 Szenen von 1–6 aufs Blatt: Absage · „Du schon wieder, lol“ · keine Antwort · Rempler im Bus"
  },
  {
   "id": "j:sprueche-abprallen-lassen",
@@ -273,7 +277,9 @@
     "Quelle réponse t’a donné le plus de contrôle, et pas juste l’impression de gagner ?",
     "Celui qui provoque attend une réaction. Quelle réponse le laisse les mains vides ?"
    ],
-   "wennEsKippt": "Si ça devient trop réel ou trop tendu : stop tout de suite, se lever un instant, échanger les rôles. Le ou la jeune provoque, l’adulte montre une réponse calme. On peut aussi seulement parler des réponses, sans jouer."
+   "wennEsKippt": "Si ça devient trop réel ou trop tendu : stop tout de suite, se lever un instant, échanger les rôles. Le ou la jeune provoque, l’adulte montre une réponse calme. On peut aussi seulement parler des réponses, sans jouer.",
+   "kurz": "Mot d’arrêt · répondre aux piques · contrôle de 0 à 10",
+   "vorbereitung": "Noter 5 piques inoffensives, p. ex. « Alors, le premier de la classe ? »"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -365,7 +371,9 @@
      "dann": "alors je prends la réponse … et je dis ou je fais :"
     }
    ]
-  }
+  },
+  "kurz": "Stoppwort klären · Sticheleien kontern · Kontrolle 0–10 nennen",
+  "vorbereitung": "5 harmlose Sprüche auf Zettel schreiben, z. B. „Na, Streber, wieder alles gewusst?“"
  },
  {
   "id": "j:mitmachen-oder-raushalten",
@@ -443,7 +451,9 @@
     "Qu’est-ce que tu pourrais dire à ce moment-là sans passer pour le rabat-joie ?",
     "Qu’est-ce qui parle en faveur de ne pas s’en mêler, pour toi et pour la personne concernée ?"
    ],
-   "wennEsKippt": "Si le ou la jeune ne veut pas montrer sa propre position, on trie pour une personne inventée du même âge. Si une situation dérange, on la met simplement de côté."
+   "wennEsKippt": "Si le ou la jeune ne veut pas montrer sa propre position, on trie pour une personne inventée du même âge. Si une situation dérange, on la met simplement de côté.",
+   "kurz": "Classer les cartes en trois piles · phrase de sortie pour deux cartes",
+   "vorbereitung": "8 fiches avec une scène chacune : chat moqueur · photo transmise · vol · bagarre attisée"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -561,7 +571,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Szenenkarten auf drei Stapel legen · Ausstiegssatz für zwei Karten",
+  "vorbereitung": "8 Karteikarten mit je einer Szene: Lästerchat · Foto weiterleiten · Ladendiebstahl · Streit anstacheln"
  },
  {
   "id": "j:erst-entwurf-dann-senden",
@@ -640,7 +652,9 @@
     "Laquelle des deux réponses signerais-tu encore demain matin ?",
     "Ta règle pourrait être quoi ? Par exemple : brouillon oui, envoi seulement après trois minutes ?"
    ],
-   "wennEsKippt": "Si le message énerve trop, on en prend un plus doux (« Tu viens ou pas ?? »). Si le ou la jeune ne veut pas écrire, il ou elle dicte et l’adulte écrit."
+   "wennEsKippt": "Si le message énerve trop, on en prend un plus doux (« Tu viens ou pas ?? »). Si le ou la jeune ne veut pas écrire, il ou elle dicte et l’adulte écrit.",
+   "kurz": "Réponse à chaud · 3 minutes de pause · seconde réponse · règle",
+   "vorbereitung": "Écrire un message agacé : « Encore en retard. On ne peut vraiment pas compter sur toi. »"
   },
   "tagesform": [
    "wuetend",
@@ -738,7 +752,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Wutantwort sofort schreiben · 3 Minuten Pause · zweite Antwort · Regel",
+  "vorbereitung": "Ärgerliche Chatnachricht aufs Blatt: „Schon wieder zu spät. Auf dich ist echt kein Verlass.“"
  },
  {
   "id": "j:die-aufschiebe-stimme",
@@ -819,7 +835,8 @@
     "Réponds de façon à ce que toi-même tu y croies, pas comme une affiche de motivation.",
     "Quelle phrase de la chaise « commencer » a le mieux marché ?"
    ],
-   "wennEsKippt": "Si changer de chaise paraît trop bizarre, on reste assis et on écrit les phrases comme une conversation de chat entre les deux voix. Si aucune réponse ne vient, l’adulte en propose trois au choix."
+   "wennEsKippt": "Si changer de chaise paraît trop bizarre, on reste assis et on écrit les phrases comme une conversation de chat entre les deux voix. Si aucune réponse ne vient, l’adulte en propose trois au choix.",
+   "kurz": "Collecter les excuses · dialogue sur deux chaises · échanger les rôles"
   },
   "tagesform": [
    "will-nicht"
@@ -940,7 +957,8 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Aufschiebe-Sätze sammeln · Zwei-Stühle-Dialog · Rollen tauschen"
  },
  {
   "id": "j:zehn-minuten-am-stueck",
@@ -1020,7 +1038,8 @@
     "Qu’est-ce qui était différent au deuxième tour ? On observe, on ne juge pas."
    ],
    "wennEsKippt": "Si quatre minutes, c’est trop long, on commence par deux ; si le temps est court, le premier tour avec le frein suffit. S’il n’y a pas de travail scolaire, le ou la jeune dessine soigneusement un dessin simple ou recopie proprement une liste de mots.",
-   "vorbereitung": "Un petit travail scolaire à portée de main (vocabulaire, maths ou un texte à lire) – ou recopier proprement dix mots."
+   "vorbereitung": "Un petit travail scolaire à portée de main (vocabulaire, maths ou un texte à lire) – ou recopier proprement dix mots.",
+   "kurz": "4 minutes de tâche · traits à chaque distraction · frein · 2e tour"
   },
   "tagesform": [
    "aufgedreht"
@@ -1111,7 +1130,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "4 Minuten Aufgabe · Striche bei Abschweifen · Bremse wählen · nochmal"
  },
  {
   "id": "j:gewohnheit-andocken",
@@ -1183,7 +1203,8 @@
     "Rends-la si petite que tu ne pourras pas dire non, même un mauvais jour.",
     "Qu’est-ce qui pourrait se mettre en travers – et qu’est-ce que tu fais alors ?"
    ],
-   "wennEsKippt": "Si aucune habitude ne vient, l’adulte en propose trois au choix. Si tout paraît trop gros, on s’en tient à une seule phrase : « Après …, je … »."
+   "wennEsKippt": "Si aucune habitude ne vient, l’adulte en propose trois au choix. Si tout paraît trop gros, on s’en tient à une seule phrase : « Après …, je … ».",
+   "kurz": "Choisir une habitude · « Après …, je fais … » en trois versions"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -1301,7 +1322,8 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Kleine Gewohnheit wählen · „Nach … mache ich …“ in drei Varianten"
  },
  {
   "id": "j:dein-eigener-trainer",
@@ -1377,7 +1399,8 @@
     "Tu tiendrais cette règle aussi un lundi soir, après un long entraînement ?",
     "Qu’est-ce que tu te dis quand tu enfreins une règle, sans te descendre ?"
    ],
-   "wennEsKippt": "Si aucune règle ne vient, le ou la jeune décrit un après-midi de travail parfait, et on en tire les règles. Une seule règle, ça suffit aussi."
+   "wennEsKippt": "Si aucune règle ne vient, le ou la jeune décrit un après-midi de travail parfait, et on en tire les règles. Une seule règle, ça suffit aussi.",
+   "kurz": "Trois règles d’étude · trois questions-test · règle de relance"
   },
   "tagesform": [
    "will-nicht"
@@ -1496,7 +1519,8 @@
      "dann": "alors …"
     }
    ]
-  }
+  },
+  "kurz": "Drei Lernregeln entwerfen · mit drei Fragen prüfen · Neustart-Regel"
  },
  {
   "id": "j:mein-stueck-vom-kuchen",
@@ -1574,7 +1598,8 @@
     "Ta part fait quelle taille ? Et qu’est-ce que tu peux en changer toi-même la prochaine fois ?",
     "Rien ne t’oblige à raconter du vécu. Un exemple inventé marche tout aussi bien."
    ],
-   "wennEsKippt": "Si ça devient trop désagréable, on continue avec une personne inventée. Si le ou la jeune ne voit aucune part à soi, on regarde seulement quelle part serait la plus facile à changer."
+   "wennEsKippt": "Si ça devient trop désagréable, on continue avec une personne inventée. Si le ou la jeune ne voit aucune part à soi, on regarde seulement quelle part serait la plus facile à changer.",
+   "kurz": "Choisir une situation ratée · découper le gâteau · sa part"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -1680,7 +1705,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Schiefgelaufene Situation · Torte teilen · eigenes Stück benennen"
  },
  {
   "id": "j:vom-meckern-zum-vorschlag",
@@ -1757,7 +1783,9 @@
     "Qu’est-ce que l’autre personne y gagnerait si elle disait oui ?",
     "Comment dirais-tu ta proposition pour qu’elle ne sonne pas comme un reproche ?"
    ],
-   "wennEsKippt": "Si seules des plaintes viennent, l’adulte les note mot pour mot et demande : « Et qu’est-ce qui serait bien à la place ? » Si le petit jeu de rôle est de trop, on s’arrête à la phrase écrite."
+   "wennEsKippt": "Si seules des plaintes viennent, l’adulte les note mot pour mot et demande : « Et qu’est-ce qui serait bien à la place ? » Si le petit jeu de rôle est de trop, on s’arrête à la phrase écrite.",
+   "kurz": "Plainte → souhait → proposition · tester la phrase en jeu de rôle",
+   "vorbereitung": "Tracer trois colonnes : plainte · souhait · proposition"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -1853,7 +1881,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Beschwerde → Wunsch → Vorschlag · besten Satz kurz anspielen",
+  "vorbereitung": "Drei Spalten aufs Blatt zeichnen: Beschwerde · Wunsch · Vorschlag"
  },
  {
   "id": "j:vor-einem-jahr-und-heute",
@@ -1924,7 +1954,9 @@
     "Qu’est-ce que tu fais aujourd’hui que tu n’aurais pas fait il y a un an, même si ça ne marche que parfois ?",
     "À quoi verrais-tu que tu as avancé d’un cran ?"
    ],
-   "wennEsKippt": "Si le ou la jeune ne voit aucune différence, on demande ce qui est resté pareil et ce qui, au quotidien, semble quand même un peu différent. Ou bien on refait l’échelle sur une période plus courte : il y a un mois et aujourd’hui."
+   "wennEsKippt": "Si le ou la jeune ne voit aucune différence, on demande ce qui est resté pareil et ce qui, au quotidien, semble quand même un peu différent. Ou bien on refait l’échelle sur une période plus courte : il y a un mois et aujourd’hui.",
+   "kurz": "Deux échelles de 0 à 10 · croix · nommer la différence",
+   "vorbereitung": "Tracer deux échelles de 0 à 10 : « il y a un an » et « aujourd’hui »"
   },
   "tagesform": [
    "traurig",
@@ -2046,7 +2078,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Zwei Skalen 0–10 · Kreuze setzen · Unterschied benennen",
+  "vorbereitung": "Zwei Skalen 0–10 untereinander zeichnen: „vor einem Jahr“ und „heute“"
  },
  {
   "id": "j:die-kette-zurueckverfolgen",
@@ -2123,7 +2157,9 @@
     "Qu’est-ce que tu as pensé exactement à ce moment-là ? Le plus mot pour mot possible.",
     "À quel endroit ce serait le plus facile de faire autrement ?"
    ],
-   "wennEsKippt": "Si aucun problème personnel ne vient ou si c’est trop privé, on analyse la chaîne d’une personne inventée (« Tom est toujours en retard »). Si c’est trop détaillé, trois cases suffisent : avant – ce que j’ai fait – après."
+   "wennEsKippt": "Si aucun problème personnel ne vient ou si c’est trop privé, on analyse la chaîne d’une personne inventée (« Tom est toujours en retard »). Si c’est trop détaillé, trois cases suffisent : avant – ce que j’ai fait – après.",
+   "kurz": "Remplir cinq cases pour un épisode · trouver le maillon faible",
+   "vorbereitung": "Dessiner cinq cases : déclencheur – pensée – émotion – action – suite"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -2241,7 +2277,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Ein Mal in fünf Kästchen eintragen · schwächstes Glied finden",
+  "vorbereitung": "Fünf Kästchen nebeneinander zeichnen: Auslöser – Gedanke – Gefühl – Handlung – Folge"
  },
  {
   "id": "j:kartenhaus-neuer-plan",
@@ -2312,7 +2350,9 @@
     "Qu’est-ce qui t’a aidé à basculer quand ça t’énervait ?",
     "Pense à un moment de ta vraie vie où un plan a changé : quelle phrase aurait aidé à ce moment-là ?"
    ],
-   "wennEsKippt": "Si la frustration devient trop forte, on annule un changement et on respire une fois profondément. Si le château ne tient pas du tout, on pose à la place un motif à plat."
+   "wennEsKippt": "Si la frustration devient trop forte, on annule un changement et on respire une fois profondément. Si le château ne tient pas du tout, on pose à la place un motif à plat.",
+   "kurz": "Construire 8 min · changement toutes les 2 min · phrase · transfert",
+   "vorbereitung": "4 changements sur des papiers : une main · déplacer la tour · 4 cartes en moins · moins de temps"
   },
   "tagesform": [
    "aufgedreht"
@@ -2433,7 +2473,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "8 Min. bauen · alle 2 Min. Planänderung · Umschalt-Satz · Transfer",
+  "vorbereitung": "4 Planänderungen auf Zettel: eine Hand · Turm umsetzen · 4 Karten weg · Zeit kürzen"
  },
  {
   "id": "j:neu-und-noch-wackelig",
@@ -2510,7 +2552,9 @@
     "Qu’est-ce que dit la voix dans ta tête quand une balle tombe ?",
     "Quelle pensée t’a aidé à continuer calmement ?"
    ],
-   "wennEsKippt": "Si jongler paraît trop bête, on essaie autre chose de nouveau, par exemple écrire son prénom avec l’autre main. Si la frustration monte, une seule balle suffit."
+   "wennEsKippt": "Si jongler paraît trop bête, on essaie autre chose de nouveau, par exemple écrire son prénom avec l’autre main. Si la frustration monte, une seule balle suffit.",
+   "kurz": "Jongler 5 min · deux arrêts : pensée, ressenti · trouver une phrase",
+   "vorbereitung": "Rouler 3 paires de chaussettes en boules"
   },
   "tagesform": [
    "muede",
@@ -2632,7 +2676,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Sockenjonglieren · zweimal stoppen: Gedanke, Gefühl · Satz finden",
+  "vorbereitung": "3 Paar Socken zu Bällen zusammenrollen"
  },
  {
   "id": "j:spiel-ohne-schiri",
@@ -2708,7 +2754,8 @@
     "Cette règle, au fond, elle est là pour qui ?",
     "Trouver une règle nulle, c’est OK. Comment pourrait-on la changer sans simplement l’enfreindre ?"
    ],
-   "wennEsKippt": "Si le sport n’intéresse pas, on prend un jeu en ligne sans règles ou un chat sans modérateurs. Si aucune raison ne vient, l’adulte en propose deux, et le ou la jeune choisit la plus convaincante."
+   "wennEsKippt": "Si le sport n’intéresse pas, on prend un jeu en ligne sans règles ou un chat sans modérateurs. Si aucune raison ne vient, l’adulte en propose deux, et le ou la jeune choisit la plus convaincante.",
+   "kurz": "Imaginer un sport sans règles · justifier les règles · une règle perso"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -2800,7 +2847,8 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Sport ohne Regeln durchdenken · Regeln begründen · eigene Regel prüfen"
  },
  {
   "id": "j:ungeschriebene-regeln",
@@ -2872,7 +2920,9 @@
     "Où sais-tu exactement ce qu’on attend de toi – et où dois-tu deviner ?",
     "À quoi remarques-tu que tu viens d’enfreindre une règle non écrite ?"
    ],
-   "wennEsKippt": "Si aucune règle ne vient pour une case, on la remplace par une autre (bus, cantine, salle d’attente). Si tout paraît trop abstrait, l’adulte raconte un court exemple de son propre premier jour de travail."
+   "wennEsKippt": "Si aucune règle ne vient pour une case, on la remplace par une autre (bus, cantine, salle d’attente). Si tout paraît trop abstrait, l’adulte raconte un court exemple de son propre premier jour de travail.",
+   "kurz": "Quatre cases · 3 règles chacune · sûr/incertain · qui demander",
+   "vorbereitung": "Diviser la feuille en quatre : cours · sport/loisir · job/stage · chat"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -2990,7 +3040,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Vier Felder · je 3 Regeln · sicher/unsicher markieren · nachfragen",
+  "vorbereitung": "Blatt in vier Felder teilen: Unterricht · Training/Hobby · Nebenjob/Praktikum · Chat"
  },
  {
   "id": "j:welche-rolle-spielst-du",
@@ -3063,7 +3115,9 @@
     "Quel rôle aimerais-tu avoir plus souvent – et qu’est-ce que tu ferais alors concrètement autrement ?",
     "Quel serait le plus petit pas vers ce rôle que quelqu’un remarquerait ?"
    ],
-   "wennEsKippt": "Si aucun rôle ne convient, on en invente d’autres. Si le sujet est délicat, par exemple parce que le ou la jeune se sent mis à l’écart en ce moment, on parle d’une personne inventée."
+   "wennEsKippt": "Si aucun rôle ne convient, on en invente d’autres. Si le sujet est délicat, par exemple parce que le ou la jeune se sent mis à l’écart en ce moment, on parle d’une personne inventée.",
+   "kurz": "Attribuer les cartes à trois lieux · avantage et coût · rôle souhaité",
+   "vorbereitung": "8 cartes : meneur · clown · pôle calme · organisateur · critique · médiateur · suiveur · invisible"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -3181,7 +3235,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Rollenkarten drei Orten zuordnen · Nutzen/Preis · Wunschrolle wählen",
+  "vorbereitung": "8 Karten schreiben: Antreiber · Clown · Ruhepol · Organisator · Kritiker · Vermittler · Mitläufer · Unsichtbarer"
  },
  {
   "id": "j:nicht-meine-entscheidung",
@@ -3258,7 +3314,9 @@
     "Comment peux-tu dire que tu n’es pas d’accord sans que ça sonne comme une attaque ?",
     "Qu’est-ce qui est encore entre tes mains, maintenant que la décision est prise ?"
    ],
-   "wennEsKippt": "Si une situation agace trop en ce moment, on la remplace par une autre. Si le jeu de rôle est de trop, on lit seulement les phrases à voix haute."
+   "wennEsKippt": "Si une situation agace trop en ce moment, on la remplace par une autre. Si le jeu de rôle est de trop, on lit seulement les phrases à voix haute.",
+   "kurz": "4 décisions · deux phrases chacune · scène du coach",
+   "vorbereitung": "4 situations sur papier : banc · autre programme · partenaire imposé · contrôle lundi"
   },
   "tagesform": [
    "wuetend"
@@ -3379,7 +3437,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "4 Entscheidungen · je zwei Sätze schreiben · Trainerszene spielen",
+  "vorbereitung": "4 Situationen auf Zettel: Bank · anderes Wochenendprogramm · zugeteilter Partner · Test auf Montag"
  },
  {
   "id": "j:einmal-die-bremse-testen",
@@ -3446,7 +3506,8 @@
     "Une seule fois. Pas à chaque fois, pas parfaitement : juste essayer une fois et voir ce qui se passe.",
     "Si ça ne marche pas, c’est aussi une info. On regardera ensemble pourquoi."
    ],
-   "wennEsKippt": "Si le ou la jeune ne veut rien essayer, il suffit de remarquer une fois à quel moment le frein aurait servi. Ça compte aussi."
+   "wennEsKippt": "Si le ou la jeune ne veut rien essayer, il suffit de remarquer une fois à quel moment le frein aurait servi. Ça compte aussi.",
+   "kurz": "Choisir un frein et une situation · phrase sur un papier de poche"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -3456,7 +3517,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Bremse und Situation wählen · Satz auf Hosentaschen-Zettel"
  },
  {
   "id": "j:zwei-minuten-start",
@@ -3524,7 +3586,8 @@
     "Deux minutes. Si tu t’arrêtes après, tu as quand même fait le plus dur : commencer.",
     "Quel est le tout premier geste, si petit qu’il en devient presque ridicule ?"
    ],
-   "wennEsKippt": "Si un moment fixe n’est pas possible, « à un moment avant la prochaine rencontre » suffit. Si c’est encore trop, on fait seulement le premier geste."
+   "wennEsKippt": "Si un moment fixe n’est pas possible, « à un moment avant la prochaine rencontre » suffit. Si c’est encore trop, on fait seulement le premier geste.",
+   "kurz": "Choisir une tâche en retard · moment fixe · premier geste noté"
   },
   "tagesform": [
    "will-nicht"
@@ -3537,7 +3600,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Liegengebliebenes wählen · festen Moment · ersten Handgriff notieren"
  },
  {
   "id": "j:ein-satz-ohne-aber",
@@ -3602,7 +3666,8 @@
     "Une phrase sans « mais » a souvent plus d’effet que n’importe quelle explication. Essaie une fois.",
     "Prends une petite chose, rien où il y a beaucoup en jeu."
    ],
-   "wennEsKippt": "S’il n’y a pas d’occasion, il suffit de remarquer une fois où une excuse t’a échappé et de reformuler la phrase dans sa tête. Rien n’est évalué."
+   "wennEsKippt": "S’il n’y a pas d’occasion, il suffit de remarquer une fois où une excuse t’a échappé et de reformuler la phrase dans sa tête. Rien n’est évalué.",
+   "kurz": "Comparer excuse et réponse claire · construire sa phrase · l’essayer"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -3612,7 +3677,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Ausrede vs. klare Antwort · eigenen Satz bauen · einmal testen"
  },
  {
   "id": "j:mehr-als-gut-oder-schlecht",
@@ -3687,7 +3753,9 @@
     "Quelles deux fiches vont ensemble ici ? Souvent, il n’y a pas qu’un seul sentiment.",
     "Tu n’as rien de personnel à raconter – un exemple inventé, ça va aussi."
    ],
-   "wennEsKippt": "Si aucun mot ne vient, l’adulte en propose trois et le ou la jeune les range seulement dans l’ordre. Si ça coince, rester sur une seule situation et construire la phrase ensemble."
+   "wennEsKippt": "Si aucun mot ne vient, l’adulte en propose trois et le ou la jeune les range seulement dans l’ordre. Si ça coince, rester sur une seule situation et construire la phrase ensemble.",
+   "kurz": "Classer les émotions par intensité · nommer avec deux cartes",
+   "vorbereitung": "4 cartes (joyeux, en colère, triste, nerveux) et 12 cartes vides pour les nuances"
   },
   "tagesform": [
    "rueckzug"
@@ -3808,7 +3876,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Gefühlswörter nach Stärke legen · Szenen mit zwei Karten benennen",
+  "vorbereitung": "4 Karten schreiben (froh, wütend, traurig, nervös) und 12 leere Karten für feinere Wörter bereitlegen"
  },
  {
   "id": "j:pruefungsangst-entwirren",
@@ -3885,7 +3955,9 @@
     "Tu n’as rien de personnel à raconter – on peut aussi le faire pour une personne inventée.",
     "À quel endroit de ce cercle ce serait le plus facile d’intervenir ?"
    ],
-   "wennEsKippt": "Si l’angoisse monte pendant l’échange, retourner la feuille et expirer lentement ensemble pendant une minute ; ensuite, remplir seulement la case « frein ». Si ça devient trop personnel, continuer avec la personne inventée."
+   "wennEsKippt": "Si l’angoisse monte pendant l’échange, retourner la feuille et expirer lentement ensemble pendant une minute ; ensuite, remplir seulement la case « frein ». Si ça devient trop personnel, continuer avec la personne inventée.",
+   "kurz": "Remplir quatre cases · tracer les flèches · trouver où freiner",
+   "vorbereitung": "Dessiner quatre cases : corps · pensée · émotion · action"
   },
   "tagesform": [
    "aengstlich"
@@ -4010,7 +4082,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Vier Felder füllen · Pfeile zeichnen · Stelle für die Bremse suchen",
+  "vorbereitung": "Vier Felder aufs Blatt zeichnen: Körper · Gedanke · Gefühl · Handlung"
  },
  {
   "id": "j:nachricht-entschaerfen",
@@ -4088,7 +4162,9 @@
     "La colère a le droit d’être là, juste sans reproche. Qu’est-ce qui se cache, à ton avis, derrière le « Merci pour rien » ?",
     "Pas besoin de prendre un vrai message – un exemple inventé, c’est très bien."
    ],
-   "wennEsKippt": "Si même cet exemple est trop proche de quelque chose de vrai, prendre un message tout à fait anodin (dans le groupe de chat d’un exposé : « Personne n’a répondu, comme d’habitude, super. »). S’il y a peu d’énergie, on choisit seulement des mots d’émotion pour le message et on laisse la réécriture ; si c’est difficile, l’adulte écrit la première partie et le ou la jeune ajoute seulement ce que ça lui fait."
+   "wennEsKippt": "Si même cet exemple est trop proche de quelque chose de vrai, prendre un message tout à fait anodin (dans le groupe de chat d’un exposé : « Personne n’a répondu, comme d’habitude, super. »). S’il y a peu d’énergie, on choisit seulement des mots d’émotion pour le message et on laisse la réécriture ; si c’est difficile, l’adulte écrit la première partie et le ou la jeune ajoute seulement ce que ça lui fait.",
+   "kurz": "Lire un message agacé · deviner l’émotion · le réécrire en trois temps",
+   "vorbereitung": "Écrire un message agacé : « Merci pour rien. Mon chargeur est encore chez toi, évidemment. »"
   },
   "tagesform": [
    "wuetend"
@@ -4199,7 +4275,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Ärger-Nachricht lesen · Gefühl raten · in drei Teilen umschreiben",
+  "vorbereitung": "Ärgerliche Nachricht aufs Blatt: „Danke für nichts. Mein Ladekabel ist immer noch bei dir, war ja klar.“"
  },
  {
   "id": "j:zwischen-zwei-stuehlen",
@@ -4276,7 +4354,8 @@
     "Quelle phrase a le plus calmé le jeu, et à quoi ça tenait ?",
     "On joue seulement des personnes inventées – tu n’as rien de personnel à raconter."
    ],
-   "wennEsKippt": "Si aucune phrase ne vient, l’adulte propose trois débuts de phrase au choix (« Je comprends que… », « Ce qui compte pour moi, c’est… », « Et si… »). Si le jeu devient trop vif ou trop personnel, se lever et continuer seulement par écrit."
+   "wennEsKippt": "Si aucune phrase ne vient, l’adulte propose trois débuts de phrase au choix (« Je comprends que… », « Ce qui compte pour moi, c’est… », « Et si… »). Si le jeu devient trop vif ou trop personnel, se lever et continuer seulement par écrit.",
+   "kurz": "Signal d’arrêt · deux amis fâchés sur chaises · tester des phrases"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -4416,7 +4495,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Stopp-Zeichen · zwei Streitende auf Stühlen · Schlichter-Sätze testen"
  },
  {
   "id": "j:zehn-chips-fuer-meine-werte",
@@ -4492,7 +4572,8 @@
     "Tu n’as rien de personnel à raconter – un exemple inventé, ça va aussi."
    ],
    "wennEsKippt": "Si la répartition est difficile, poser seulement trois jetons sur les trois valeurs les plus importantes. Si l’échange devient trop personnel, jouer les questions avec une personne inventée (une personne qui arrive dans un nouveau cours).",
-   "vorbereitung": "Écrire huit papiers avec les valeurs (amitié, honnêteté, liberté, réussite, justice, solidarité, plaisir, une carte vide)."
+   "vorbereitung": "Écrire huit papiers avec les valeurs (amitié, honnêteté, liberté, réussite, justice, solidarité, plaisir, une carte vide).",
+   "kurz": "Répartir dix jetons sur les valeurs · quotidien et conflits de valeurs"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -4611,7 +4692,8 @@
     }
    ]
   },
-  "vorbereitung": "Acht Zettel mit den Werten beschriften (Freundschaft, Ehrlichkeit, Freiheit, Erfolg, Gerechtigkeit, Zusammenhalt, Spaß, eine leere Karte)."
+  "vorbereitung": "Acht Zettel mit den Werten beschriften (Freundschaft, Ehrlichkeit, Freiheit, Erfolg, Gerechtigkeit, Zusammenhalt, Spaß, eine leere Karte).",
+  "kurz": "Zehn Chips auf Wertekarten verteilen · Wertekonflikt besprechen"
  },
  {
   "id": "j:was-eine-freundschaft-traegt",
@@ -4686,7 +4768,8 @@
     "Tu n’as pas besoin de donner un nom ni de raconter quelque chose de personnel – une amitié inventée, ça va aussi.",
     "À quoi tu ne renoncerais jamais dans une amitié ?"
    ],
-   "wennEsKippt": "Si aucune personne ne vient ou si le sujet fait mal, prendre une amitié inventée (deux jeunes du même club de foot). Si la feuille reste vide, l’adulte propose trois mots pour les piliers."
+   "wennEsKippt": "Si aucune personne ne vient ou si le sujet fait mal, prendre une amitié inventée (deux jeunes du même club de foot). Si la feuille reste vide, l’adulte propose trois mots pour les piliers.",
+   "kurz": "Dessiner un pont · piliers et charges · phrase pour reprendre contact"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -4790,7 +4873,8 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Brücke zeichnen · Pfeiler und Belastung eintragen · Kontaktsatz"
  },
  {
   "id": "j:in-ein-gespraech-einsteigen",
@@ -4864,7 +4948,8 @@
     "Quelle entrée te ressemble le plus ?",
     "Tu n’as rien de personnel à raconter – une réponse inventée, ça va aussi."
    ],
-   "wennEsKippt": "Si entrer dans le jeu stresse trop, le ou la jeune dit d’abord sa phrase seulement à l’adulte, sans jouer. Si aucun sujet ne vient, le ou la jeune en choisit un qui l’intéresse vraiment."
+   "wennEsKippt": "Si entrer dans le jeu stresse trop, le ou la jeune dit d’abord sa phrase seulement à l’adulte, sans jouer. Si aucun sujet ne vient, le ou la jeune en choisit un qui l’intéresse vraiment.",
+   "kurz": "Rejoindre : rebondir · poser une question · apporter du sien"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -4982,7 +5067,8 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Dazustoßen: anknüpfen · Frage stellen · Eigenes beitragen"
  },
  {
   "id": "j:lob-mit-inhalt",
@@ -5061,7 +5147,9 @@
     "Après un échec, « ça va aller » aide rarement – qu’est-ce que tu aimerais entendre, toi ?",
     "Tu n’as rien de personnel à raconter – un exemple inventé, ça va aussi."
    ],
-   "wennEsKippt": "Si rien de concret ne vient, l’adulte demande : « Qu’est-ce qui t’a plu exactement – le début, l’idée, le courage ? » Si écrire est trop lourd, les phrases sont seulement dites."
+   "wennEsKippt": "Si rien de concret ne vient, l’adulte demande : « Qu’est-ce qui t’a plu exactement – le début, l’idée, le courage ? » Si écrire est trop lourd, les phrases sont seulement dites.",
+   "kurz": "Lire des réactions faibles · phrase précise pour 4 situations",
+   "vorbereitung": "4 cartes : cool · bien joué · ça va aller · ça ira ; noter 4 situations"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -5155,7 +5243,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Schwache Rückmeldungen lesen · vier Situationen, konkreter Satz",
+  "vorbereitung": "4 Karten schreiben: nice · gut gemacht · passt schon · wird schon wieder; 4 Situationen notieren"
  },
  {
   "id": "j:wer-hat-was-beigetragen",
@@ -5235,7 +5325,8 @@
     "C’était quoi, ta part – et qu’est-ce que quelqu’un d’autre a rendu possible ?",
     "Tu n’as rien de personnel à raconter – un exemple inventé, ça va aussi."
    ],
-   "wennEsKippt": "Si aucune expérience commune ne vient ou si elle était plutôt frustrante, en prendre une inventée (trois amis répètent pour leur premier concert). Si le gâteau devient trop détaillé, dessiner seulement trois parts."
+   "wennEsKippt": "Si aucune expérience commune ne vient ou si elle était plutôt frustrante, en prendre une inventée (trois amis répètent pour leur premier concert). Si le gâteau devient trop détaillé, dessiner seulement trois parts.",
+   "kurz": "Choisir un projet commun · découper · phrases de reconnaissance"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -5353,7 +5444,8 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Erlebnis wählen · Torte aufteilen · Anerkennungs- und Wir-Satz"
  },
  {
   "id": "j:sechs-gruende-fuer-keine-antwort",
@@ -5430,7 +5522,9 @@
     "Tu remarques comment l’émotion change selon la raison que tu imagines ?",
     "On reste sur la situation inventée – tu n’as rien de personnel à raconter."
    ],
-   "wennEsKippt": "S’il n’y a pas assez de raisons, l’adulte complète. Si la situation rappelle trop quelque chose de pesant, en prendre une plus légère (l’entraîneuse ne répond pas à ton bonjour aujourd’hui)."
+   "wennEsKippt": "S’il n’y a pas assez de raisons, l’adulte complète. Si la situation rappelle trop quelque chose de pesant, en prendre une plus légère (l’entraîneuse ne répond pas à ton bonjour aujourd’hui).",
+   "kurz": "Six raisons · lancer le dé · ressenti et réaction",
+   "vorbereitung": "Raisons 1–6 : fâché · stress · batterie vide · oublié · ne sait quoi écrire · veut sa paix"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -5542,7 +5636,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Sechs Gründe sammeln · würfeln · Gefühl und Reaktion durchspielen",
+  "vorbereitung": "Gründe 1–6 aufs Blatt: sauer · Lernstress · Akku leer · vergessen · weiß nichts zu schreiben · will Ruhe"
  },
  {
   "id": "j:der-dominoeffekt",
@@ -5620,7 +5716,9 @@
     "Qui, dans cette chaîne, ressent quelque chose sans qu’on le remarque ?",
     "Tu n’as rien de personnel à raconter – on peut très bien rester sur l’exemple inventé."
    ],
-   "wennEsKippt": "Si la chaîne bloque, l’adulte pose une question par fiche (« Et la partenaire de jeu, elle pense quoi maintenant ? »). Si ça sonne comme un reproche, préciser que la mauvaise humeur est permise – il s’agit seulement du premier domino."
+   "wennEsKippt": "Si la chaîne bloque, l’adulte pose une question par fiche (« Et la partenaire de jeu, elle pense quoi maintenant ? »). Si ça sonne comme un reproche, préciser que la mauvaise humeur est permise – il s’agit seulement du premier domino.",
+   "kurz": "Lire la carte de départ · enchaîner les cartes · 2e série · comparer",
+   "vorbereitung": "Cartes de départ : « Énervé à l’entraînement, sac jeté » et « Désolé, mauvaise journée »"
   },
   "tagesform": [
    "wuetend"
@@ -5723,7 +5821,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Folgekarten legen · zweite Reihe mit anderem Start · vergleichen",
+  "vorbereitung": "Startkarten schreiben: „Genervt ins Training, Tasche hingeknallt“ und „Sorry, hatte einen miesen Tag“"
  },
  {
   "id": "j:was-ich-heute-kann",
@@ -5797,7 +5897,8 @@
     "Qu’est-ce qui a fait que ça marche aujourd’hui ?",
     "Tu n’as rien de personnel à raconter – on peut aussi commencer avec une personne inventée de ton âge."
    ],
-   "wennEsKippt": "Si rien ne vient, l’adulte propose des domaines (téléphone, révisions, sport, amis, autonomie) ou on cherche d’abord pour une personne inventée. Si « fier » est un trop grand mot, il suffit de dire : « Ça, je l’ai fait. »"
+   "wennEsKippt": "Si rien ne vient, l’adulte propose des domaines (téléphone, révisions, sport, amis, autonomie) ou on cherche d’abord pour une personne inventée. Si « fier » est un trop grand mot, il suffit de dire : « Ça, je l’ai fait. »",
+   "kurz": "Ligne du temps · 3–5 progrès · phrase de fierté sans « mais »"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -5905,7 +6006,8 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Zeitlinie · 3–5 Fortschritte eintragen · Stolz-Satz ohne „aber“"
  },
  {
   "id": "j:ein-moment-in-drei-bildern",
@@ -5981,7 +6083,8 @@
     "Les bonshommes bâtons, c’est parfait, il ne s’agit pas de bien dessiner.",
     "Tu n’as rien de personnel à raconter – un moment inventé, ça va aussi."
    ],
-   "wennEsKippt": "Si aucun moment ne vient, le ou la jeune dessine un moment tout à fait banal (le réveil sonne, le bus est raté, le petit-déjeuner). Si dessiner met mal à l’aise, les trois cases sont remplies avec des mots-clés."
+   "wennEsKippt": "Si aucun moment ne vient, le ou la jeune dessine un moment tout à fait banal (le réveil sonne, le bus est raté, le petit-déjeuner). Si dessiner met mal à l’aise, les trois cases sont remplies avec des mots-clés.",
+   "kurz": "Plier la feuille · moment en 3 dessins avec bulles · le raconter"
   },
   "tagesform": [
    "will-nicht"
@@ -6104,7 +6207,8 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Blatt falten · Moment in 3 Skizzen mit Denkblase · erzählen"
  },
  {
   "id": "j:ein-song-fuer-schwere-tage",
@@ -6180,7 +6284,8 @@
     "Tu n’as rien de personnel à raconter, même pas ce qui rend triste – un jour imaginé, ça va aussi.",
     "Qu’est-ce qui rendrait un jour comme ça un tout petit peu plus léger ?"
    ],
-   "wennEsKippt": "Si aucune chanson ne vient, une ambiance comme couleur ou météo suffit (bruine, gris). Si ça devient visiblement lourd, passer à la deuxième chanson, celle d’« après », et y rester."
+   "wennEsKippt": "Si aucune chanson ne vient, une ambiance comme couleur ou météo suffit (bruine, gris). Si ça devient visiblement lourd, passer à la deuxième chanson, celle d’« après », et y rester.",
+   "kurz": "Citer une chanson · ligne retenue · sa ligne · chanson pour après"
   },
   "tagesform": [
    "traurig"
@@ -6285,7 +6390,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Song nennen · hängengebliebene Zeile · eigene Zeile · Song für danach"
  },
  {
   "id": "j:fair-beschreiben",
@@ -6361,7 +6467,9 @@
     "Comment tu le dirais si la personne était juste à côté ?",
     "Tu n’as rien de personnel à raconter – tu peux aussi poser les fiches pour une personne inventée."
    ],
-   "wennEsKippt": "Si se décrire est difficile, le ou la jeune pose d’abord les fiches pour une personne connue du sport ou de la musique, puis seulement pour soi. Si les reformulations deviennent trop enjolivées, l’adulte demande : « Est-ce que c’est encore honnête ? »"
+   "wennEsKippt": "Si se décrire est difficile, le ou la jeune pose d’abord les fiches pour une personne connue du sport ou de la musique, puis seulement pour soi. Si les reformulations deviennent trop enjolivées, l’adulte demande : « Est-ce que c’est encore honnête ? »",
+   "kurz": "Poser des cartes de traits · exemple · reformuler une étiquette",
+   "vorbereitung": "12 cartes de traits : fiable, direct, calme, spontané, ambitieux, têtu, créatif, drôle …"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -6475,7 +6583,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Eigenschaftskarten legen · Beispiel nennen · Abwertung umformulieren",
+  "vorbereitung": "12 Eigenschaftskarten schreiben: zuverlässig, direkt, ruhig, spontan, ehrgeizig, stur, kreativ, witzig …"
  },
  {
   "id": "j:zwischen-den-zeilen-hoeren",
@@ -6551,7 +6661,9 @@
     "À quoi exactement tu l’as remarqué ?",
     "Tu n’as rien de personnel à raconter – on joue seulement avec des phrases inventées."
    ],
-   "wennEsKippt": "Si deviner est difficile, l’adulte propose deux émotions au choix. Si jouer met mal à l’aise, le ou la jeune dit la phrase à voix basse ou montre l’émotion seulement avec le visage et les épaules."
+   "wennEsKippt": "Si deviner est difficile, l’adulte propose deux émotions au choix. Si jouer met mal à l’aise, le ou la jeune dit la phrase à voix basse ou montre l’émotion seulement avec le visage et les épaules.",
+   "kurz": "Une phrase en quatre émotions · deviner · repérer l’indice · échanger",
+   "vorbereitung": "4 papiers avec des émotions : soulagé · blessé · agacé · ironique"
   },
   "tagesform": [
    "aufgedreht"
@@ -6684,7 +6796,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Satz in vier Gefühlen sprechen · raten · Signal nennen · tauschen",
+  "vorbereitung": "4 Zettel mit Gefühlswörtern beschriften: erleichtert · verletzt · genervt · ironisch"
  },
  {
   "id": "j:nein-sagen-ohne-einzuknicken",
@@ -6760,7 +6874,9 @@
     "Tu peux rester aimable et garder quand même ton non.",
     "On joue une demande inventée, rien de personnel. Si tu lèves la main à plat, on s’arrête tout de suite."
    ],
-   "wennEsKippt": "Si le jeu de rôle est de trop, on reste sur la ligne et le ou la jeune écrit seulement sa propre phrase pour dire non. Si le signal d’arrêt est donné ou si le ou la jeune semble tendu, on s’arrête tout de suite ; l’adulte relâche la pression et ne redemande qu’une fois au plus."
+   "wennEsKippt": "Si le jeu de rôle est de trop, on reste sur la ligne et le ou la jeune écrit seulement sa propre phrase pour dire non. Si le signal d’arrêt est donné ou si le ou la jeune semble tendu, on s’arrête tout de suite ; l’adulte relâche la pression et ne redemande qu’une fois au plus.",
+   "kurz": "Ligne au sol · classer les réponses · scène du refus + arrêt",
+   "vorbereitung": "Ruban au sol : trop mou · clair · trop dur ; écrire 3 réponses types sur des papiers"
   },
   "tagesform": [
    "aufgedreht"
@@ -6895,7 +7011,9 @@
      "stufen": 5
     }
    ]
-  }
+  },
+  "kurz": "Linie kleben · Antworten einordnen · Nein-Szene mit Stopp-Zeichen",
+  "vorbereitung": "Klebeband-Linie legen: zu weich · klar · zu hart; 3 Beispielantworten auf Zettel schreiben"
  },
  {
   "id": "j:sorgen-sortieren",
@@ -6973,7 +7091,9 @@
     "Sur quel souci tu peux agir toi-même – même un tout petit peu ?",
     "Tu n’as rien de personnel à écrire – les soucis d’une personne inventée, ça marche aussi."
    ],
-   "wennEsKippt": "S’il y a trop de papiers et que l’agitation monte, garder seulement les trois soucis les plus bruyants. Si tout atterrit dans le cercle extérieur, l’adulte aide à chercher : « Sur quoi tu peux agir aujourd’hui, même à cinq pour cent ? »"
+   "wennEsKippt": "S’il y a trop de papiers et que l’agitation monte, garder seulement les trois soucis les plus bruyants. Si tout atterrit dans le cercle extérieur, l’adulte aide à chercher : « Sur quoi tu peux agir aujourd’hui, même à cinq pour cent ? »",
+   "kurz": "Soucis sur papiers · trier en deux cercles · plus petit pas",
+   "vorbereitung": "Dessiner deux cercles imbriqués : « j’influence » au centre, « je n’influence pas » autour"
   },
   "tagesform": [
    "aengstlich"
@@ -7096,7 +7216,9 @@
      ]
     }
    ]
-  }
+  },
+  "kurz": "Sorgen auf Zettel · in zwei Kreise sortieren · kleinster Schritt",
+  "vorbereitung": "Zwei Kreise ineinander zeichnen: innen „kann ich beeinflussen“, außen „kann ich nicht beeinflussen“"
  },
  {
   "id": "j:ein-wort-genauer",
@@ -7161,7 +7283,8 @@
     "Quel mot aurais-tu pu utiliser toi-même aujourd’hui ?",
     "Tu n’as rien de personnel à raconter à qui que ce soit – un mot plus précis suffit, même seulement dans ta tête."
    ],
-   "wennEsKippt": "Si le ou la jeune ne veut rien essayer, il suffit de penser le mot une fois pour soi. Si aucun mot ne vient, on en choisit un parmi trois propositions de l’adulte."
+   "wennEsKippt": "Si le ou la jeune ne veut rien essayer, il suffit de penser le mot une fois pour soi. Si aucun mot ne vient, on en choisit un parmi trois propositions de l’adulte.",
+   "kurz": "Choisir un mot précis · le dire une fois à « Alors, c’était ? »"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -7171,7 +7294,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Genaues Gefühlswort wählen · einmal auf „Wie war’s?“ damit antworten"
  },
  {
   "id": "j:ein-satz-anerkennung",
@@ -7240,7 +7364,8 @@
     "À qui tu ferais le plus volontiers ce cadeau ?",
     "Tu n’as rien de personnel à raconter à qui que ce soit – et s’il n’y a pas d’occasion, c’est tout à fait OK."
    ],
-   "wennEsKippt": "Si le dire est de trop, un court message ou la phrase seulement dans sa tête suffit. Si personne ne vient à l’esprit, on s’arrête à la préparation."
+   "wennEsKippt": "Si le dire est de trop, un court message ou la phrase seulement dans sa tête suffit. Si personne ne vient à l’esprit, on s’arrête à la préparation.",
+   "kurz": "Choisir une personne · préparer une phrase précise · la dire une fois"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -7250,7 +7375,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Person wählen · konkreten Anerkennungssatz vorbereiten · einmal sagen"
  },
  {
   "id": "j:mein-satz-fuer-aufregende-momente",
@@ -7320,7 +7446,8 @@
     "Quelle phrase sonne comme toi et pas comme une carte postale ?",
     "Tu n’as rien de personnel à raconter – tu peux aussi prendre une toute petite situation du quotidien."
    ],
-   "wennEsKippt": "S’il n’y a rien de stressant en vue, prendre une petite situation (demander quelque chose à quelqu’un, échanger un article au magasin). Si penser à la situation rend déjà trop nerveux, emporter seulement la respiration et laisser la phrase de côté."
+   "wennEsKippt": "S’il n’y a rien de stressant en vue, prendre une petite situation (demander quelque chose à quelqu’un, échanger un article au magasin). Si penser à la situation rend déjà trop nerveux, emporter seulement la respiration et laisser la phrase de côté.",
+   "kurz": "Choisir une situation stressante · trouver une phrase · respirer 4-6"
   },
   "tagesform": [
    "aengstlich"
@@ -7333,7 +7460,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Nervöse Situation wählen · tragenden Satz finden · 4-6-Atemzug üben"
  },
  {
   "id": "j:positionslinie-auf-papier",
@@ -7411,7 +7539,9 @@
     "Tu n’as pas besoin de changer d’avis. Résume juste le mien assez bien pour que je dise : c’est exactement ça.",
     "Sur quelle phrase est-on le plus éloignés – et est-ce qu’on arrive quand même à en parler normalement ?"
    ],
-   "wennEsKippt": "Si ça s’échauffe, glisser une phrase légère (« L’ananas a sa place sur la pizza ») puis revenir. Si reformuler est difficile, le ou la jeune peut d’abord poser une question."
+   "wennEsKippt": "Si ça s’échauffe, glisser une phrase légère (« L’ananas a sa place sur la pizza ») puis revenir. Si reformuler est difficile, le ou la jeune peut d’abord poser une question.",
+   "kurz": "Lire une affirmation · croix · reformuler la position adverse",
+   "vorbereitung": "Ligne sur la feuille : « pas d’accord » à « tout à fait » ; noter 3–4 affirmations à lire"
   },
   "tagesform": [
    "will-nicht"
@@ -7524,7 +7654,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Aussage lesen · Kreuz setzen · Gegenposition nachsprechen",
+  "vorbereitung": "Linie quer aufs Blatt: „stimme gar nicht zu“ bis „stimme voll zu“; 3–4 Aussagen zum Vorlesen notieren"
  },
  {
   "id": "j:staerkste-gegenseite",
@@ -7600,7 +7732,9 @@
     "Imagine que tu es l’avocat ou l’avocate de l’autre camp et que tu veux gagner l’affaire.",
     "Le but, ce n’est pas que tu changes d’avis. Quand on comprend vraiment l’autre côté, on argumente mieux."
    ],
-   "wennEsKippt": "Si aucun argument ne vient, l’adulte en propose un faible et le ou la jeune le rend plus solide. Si le sujet touche de trop près, en prendre un sans enjeu (supprimer le changement d’heure)."
+   "wennEsKippt": "Si aucun argument ne vient, l’adulte en propose un faible et le ou la jeune le rend plus solide. Si le sujet touche de trop près, en prendre un sans enjeu (supprimer le changement d’heure).",
+   "kurz": "Opinion en une phrase · trois meilleurs arguments adverses · valeurs",
+   "vorbereitung": "Noter une liste de sujets : vote à 16 ans · portable au lycée · réseaux dès 15 ans · sans notes"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -7720,7 +7854,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Meinung in einem Satz · drei beste Gegen-Gründe · Werte dahinter",
+  "vorbereitung": "Themenliste notieren: Wählen ab 16 · Handyverbot im Lycée · Social Media ab 15 · Noten abschaffen"
  },
  {
   "id": "j:chatstreit-zwei-seiten",
@@ -7798,7 +7934,9 @@
     "Dans un chat, on ne voit ni le visage ni le ton – alors on lit entre les lignes.",
     "Tu n’as pas besoin de choisir un camp. Est-ce que tu arrives à comprendre comment l’un et l’autre se sentent ?"
    ],
-   "wennEsKippt": "Si se mettre à la place de l’autre est difficile, l’adulte propose deux possibilités pour le premier message. Si ça devient trop personnel, rester sur ce chat inventé, sans montrer ni discuter ses propres conversations."
+   "wennEsKippt": "Si se mettre à la place de l’autre est difficile, l’adulte propose deux possibilités pour le premier message. Si ça devient trop personnel, rester sur ce chat inventé, sans montrer ni discuter ses propres conversations.",
+   "kurz": "Lire le chat deux fois · noter l’implicite · message d’apaisement",
+   "vorbereitung": "Écrire un chat de 5 lignes : invitation · « Non, j’ai mieux à faire. » · « Comme toujours. » · « Laisse tomber. »"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -7920,7 +8058,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Chat zweimal lesen · Unausgesprochenes notieren · Entschärfer",
+  "vorbereitung": "Kurzen Chat (5 Zeilen) schreiben: Einladung · „Ne, hab Besseres vor.“ · „Wie immer.“ · „Vergiss es.“"
  },
  {
   "id": "j:was-steckt-hinter-dem-satz",
@@ -7995,7 +8135,9 @@
     "Beaucoup de phrases sont comme une porte à moitié fermée. Qu’est-ce qui pourrait se passer derrière ?",
     "Il n’y a pas de bonne ou de mauvaise réponse – prends ce qui te paraît réaliste."
    ],
-   "wennEsKippt": "Si aucune situation ne vient, l’adulte en propose une (par ex. dans le vestiaire, après que l’entraîneur a mis quelqu’un sur le banc). Si c’est trop difficile, deviner seulement les émotions et laisser tomber la phrase."
+   "wennEsKippt": "Si aucune situation ne vient, l’adulte en propose une (par ex. dans le vestiaire, après que l’entraîneur a mis quelqu’un sur le banc). Si c’est trop difficile, deviner seulement les émotions et laisser tomber la phrase.",
+   "kurz": "Lancer le dé · inventer une scène · deux émotions · phrase qui aide",
+   "vorbereitung": "6 phrases numérotées : « Je m’en fiche » · « Laisse-moi » · « Pour rire » · « Pas envie » · « Fais comme tu veux »"
   },
   "tagesform": [
    "muede",
@@ -8111,7 +8253,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Würfeln · Szene erfinden · zwei Gefühle · hilfreichen Satz testen",
+  "vorbereitung": "6 Sätze 1–6 aufschreiben: „Mir doch egal“ · „Lass mich“ · „War nur Spaß“ · „Kein Bock“ · „Mach doch“ · „Alles gut“"
  },
  {
   "id": "j:zeuge-im-chat",
@@ -8189,7 +8333,9 @@
     "Je ne te demande pas ce que toi, tu as vécu – on reste avec Jana.",
     "Balancer, c’est vouloir faire punir quelqu’un. Chercher de l’aide, c’est sortir quelqu’un d’une situation."
    ],
-   "wennEsKippt": "Si le ou la jeune se ferme ou se crispe, laisser le cas de côté et chercher seulement qui serait une bonne personne à qui parler. Laisser ouverte la possibilité de revenir avec ses propres soucis, sans insister."
+   "wennEsKippt": "Si le ou la jeune se ferme ou se crispe, laisser le cas de côté et chercher seulement qui serait une bonne personne à qui parler. Laisser ouverte la possibilité de revenir avec ses propres soucis, sans insister.",
+   "kurz": "Écouter le cas · trois questions · échelle d’actions · adulte",
+   "vorbereitung": "Noter le cas : photos moqueuses dans le chat de groupe, emojis rieurs, la victime se tait"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -8301,7 +8447,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Fall hören · drei Prüffragen · Schritte-Leiter · Ansprechperson",
+  "vorbereitung": "Fall notieren: Spottfotos im Gruppenchat, Lach-Emojis, Betroffene schreibt nichts mehr"
  },
  {
   "id": "j:samstag-planen-ja-und",
@@ -8377,7 +8525,8 @@
     "Une bonne proposition est tellement concrète qu’il ne reste plus qu’à dire oui : quand, où, combien ça coûte ?",
     "Essaie de ne pas écarter mon idée, mais de l’intégrer – commence par « Oui, et… »."
    ],
-   "wennEsKippt": "Si aucune idée ne vient, le ou la jeune choisit parmi trois propositions de l’adulte. Si le jeu de rôle met mal à l’aise, écrire simplement les messages sur une feuille, comme dans un chat."
+   "wennEsKippt": "Si aucune idée ne vient, le ou la jeune choisit parmi trois propositions de l’adulte. Si le jeu de rôle met mal à l’aise, écrire simplement les messages sur une feuille, comme dans un chat.",
+   "kurz": "Proposer · intégrer l’autre idée avec « Oui, et… » · échanger"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -8491,7 +8640,8 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Konkret vorschlagen · fremde Idee mit „Ja, und …“ einbauen · tauschen"
  },
  {
   "id": "j:coach-fuer-zehn-minuten",
@@ -8569,7 +8719,8 @@
     "Aujourd’hui, c’est toi le coach. Moi, je ne sais pas faire – explique-moi pour que j’y arrive vraiment.",
     "Qu’est-ce que tu as fait quand j’ai mal compris – et qu’est-ce qui a marché ?"
    ],
-   "wennEsKippt": "Si rien ne vient, le ou la jeune explique, avec les cartes, les règles de son jeu de cartes préféré. Si le rôle du débutant paraît ridicule, l’adulte apprend simplement pour de vrai et pose de vraies questions."
+   "wennEsKippt": "Si rien ne vient, le ou la jeune explique, avec les cartes, les règles de son jeu de cartes préféré. Si le rôle du débutant paraît ridicule, l’adulte apprend simplement pour de vrai et pose de vraies questions.",
+   "kurz": "Enseigner un savoir-faire · l’adulte joue le novice · bilan · échelle"
   },
   "tagesform": [
    "will-nicht",
@@ -8661,7 +8812,8 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Etwas beibringen · Anfänger spielt unbeholfen mit · auswerten · Skala"
  },
  {
   "id": "j:spielerkarte-vorbild",
@@ -8737,7 +8889,9 @@
     "Si tu pouvais reprendre une chose de cette personne – pas l’argent, pas la célébrité –, ce serait quoi ?",
     "Même les modèles ont des côtés qu’on n’a pas besoin de copier. Qu’est-ce que tu laisserais de côté ?"
    ],
-   "wennEsKippt": "Si personne de réel ne vient à l’esprit, prendre un personnage inventé ou un mélange de plusieurs personnes. Si ça devient trop personnel, rester sur des personnes connues du sport ou de la musique."
+   "wennEsKippt": "Si personne de réel ne vient à l’esprit, prendre un personnage inventé ou un mélange de plusieurs personnes. Si ça devient trop personnel, rester sur des personnes connues du sport ou de la musique.",
+   "kurz": "Choisir un modèle · carte à quatre valeurs (1–99) · en reprendre une",
+   "vorbereitung": "Dessiner une carte exemple : calme sous pression · assume ses erreurs · aide les nouveaux"
   },
   "tagesform": [
    "rueckzug"
@@ -8838,7 +8992,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Vorbild wählen · Karte mit vier Verhaltenswerten · einen übertragen",
+  "vorbereitung": "Beispielkarte vorzeichnen mit Verhaltenswerten: ruhig unter Druck · steht zu Fehlern · hilft Neuen"
  },
  {
   "id": "j:replay-wie-im-sport",
@@ -8915,7 +9071,8 @@
     "On regarde ça comme un compte rendu de match : pas qui est coupable, mais ce qui s’est passé et quand.",
     "Si tu pouvais rembobiner ce moment, à quel endroit tu appuierais sur pause ?"
    ],
-   "wennEsKippt": "Si l’ordre est difficile à trouver, le ou la jeune écrit les scènes sur des petits papiers et les déplace. Si une situation vécue est trop proche, rester sur le cas inventé."
+   "wennEsKippt": "Si l’ordre est difficile à trouver, le ou la jeune écrit les scènes sur des petits papiers et les déplace. Si une situation vécue est trop proche, rester sur le cas inventé.",
+   "kurz": "Situation en 4–6 scènes · repérer le tournant · règle si-alors"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -8999,7 +9156,8 @@
      "dann": "alors …"
     }
    ]
-  }
+  },
+  "kurz": "Situation in 4–6 Szenen legen · Wendepunkt finden · Wenn-dann-Regel"
  },
  {
   "id": "j:rollen-im-freundeskreis",
@@ -9077,7 +9235,9 @@
     "Aucun rôle n’est meilleur qu’un autre – on a besoin de tous ces rôles.",
     "Quel rôle aimerais-tu essayer, si personne ne te regardait de travers ?"
    ],
-   "wennEsKippt": "Si aucun souvenir ne vient, l’adulte raconte un cas inventé (quatre amis préparent une surprise d’anniversaire et personne ne s’occupe du cadeau). Si le jeu de rôle est de trop, chercher seulement la première phrase qui irait avec ce nouveau rôle."
+   "wennEsKippt": "Si aucun souvenir ne vient, l’adulte raconte un cas inventé (quatre amis préparent une surprise d’anniversaire et personne ne s’occupe du cadeau). Si le jeu de rôle est de trop, chercher seulement la première phrase qui irait avec ce nouveau rôle.",
+   "kurz": "Raconter un épisode · camembert des rôles · tester un rôle rare",
+   "vorbereitung": "6 cartes de rôles : initiateur · organisatrice · médiateur · boute-en-train · à l’écoute · frein"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -9217,7 +9377,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Erlebnis erzählen · Rollen-Torte zeichnen · seltene Rolle ausprobieren",
+  "vorbereitung": "6 Rollenkarten schreiben: Ideengeber · Organisatorin · Vermittler · Spaßmacherin · Zuhörer · Bremse"
  },
  {
   "id": "j:loesungsfabrik",
@@ -9295,7 +9457,9 @@
     "Dans une dispute, ce sont souvent deux positions qui s’affrontent. Derrière, il y a des besoins, et ils s’accordent plus souvent qu’on ne le croit.",
     "D’abord on dit tout, même les idées bizarres – on note un mot-clé. On trie après."
    ],
-   "wennEsKippt": "Si aucune idée ne vient, l’adulte en propose deux et le ou la jeune les améliore. Si même noter des mots-clés est pénible, on ne fait que parler et on note seulement la dernière phrase."
+   "wennEsKippt": "Si aucune idée ne vient, l’adulte en propose deux et le ou la jeune les améliore. Si même noter des mots-clés est pénible, on ne fait que parler et on note seulement la dernière phrase.",
+   "kurz": "Cas commun · clarifier les besoins · tester 3 idées · phrase de chat",
+   "vorbereitung": "Noter le cas : deux élèves, un exposé, l’un tôt, l’autre tard (entraînement), dispute au chat"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -9419,7 +9583,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Fall durchsprechen · Bedürfnisse klären · 3 Ideen prüfen · Chatsatz",
+  "vorbereitung": "Fall auf Karte notieren: zwei Schüler, ein Referat, einer früh, einer spät (Training), Streit im Chat"
  },
  {
   "id": "j:richtig-falsch-kommt-drauf-an",
@@ -9502,7 +9668,9 @@
     "Ici, il n’y a pas de corrigé. Ce qui m’intéresse, c’est comment tu décides et pourquoi.",
     "Quand deux valeurs se disputent – l’honnêteté et l’amitié, par exemple –, laquelle gagne chez toi, et quand est-ce que ce n’est pas le cas ?"
    ],
-   "wennEsKippt": "Si ça devient trop théorique, inventer une petite histoire concrète autour d’un papier. Si décider est difficile, un papier peut aussi rester à cheval entre deux tas."
+   "wennEsKippt": "Si ça devient trop théorique, inventer une petite histoire concrète autour d’un papier. Si décider est difficile, un papier peut aussi rester à cheval entre deux tas.",
+   "kurz": "Papiers en trois piles · nommer la valeur · approfondir un cas",
+   "vorbereitung": "8 papiers : poster une photo sans demander · envoyer les devoirs · garder la monnaie · transférer une capture …"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -9614,7 +9782,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Zettel auf drei Stapel · Wert dahinter nennen · einen Fall vertiefen",
+  "vorbereitung": "8 Zettel schreiben: Foto ohne Fragen posten · Hausaufgaben schicken · Wechselgeld behalten · Screenshot weiterleiten"
  },
  {
   "id": "j:zeitung-fakt-oder-meinung",
@@ -9694,7 +9864,8 @@
     "Lis-moi seulement les passages soulignés d’un trait droit : qu’est-ce qui reste ?"
    ],
    "wennEsKippt": "Si l’article est trop long, prendre seulement les trois premiers paragraphes. Si les sujets ennuient, prendre une publicité ou le courrier des lecteurs – le mélange y est souvent très visible.",
-   "vorbereitung": "Préparer un journal ou un magazine récent (sinon le courrier des lecteurs ou une publicité d’un ancien numéro suffit)."
+   "vorbereitung": "Préparer un journal ou un magazine récent (sinon le courrier des lecteurs ou une publicité d’un ancien numéro suffit).",
+   "kurz": "Choisir un article · souligner faits (droit) et opinions (ondulé)"
   },
   "tagesform": [
    "muede"
@@ -9807,7 +9978,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Artikel wählen · Fakten gerade, Meinungen wellig unterstreichen"
  },
  {
   "id": "j:sagen-und-tun",
@@ -9883,7 +10055,9 @@
     "Être parfois contradictoire, ça arrive à presque n’importe qui. Ce qui est intéressant, ce n’est pas que ça arrive, mais pourquoi.",
     "Si tu étais Tom, qu’est-ce qu’il faudrait pour que tu réagisses autrement à ce moment-là ?"
    ],
-   "wennEsKippt": "Si la colonne « fait » est difficile, l’adulte relit l’histoire phrase par phrase. Parler de ses propres contradictions est une proposition, pas une obligation."
+   "wennEsKippt": "Si la colonne « fait » est difficile, l’adulte relit l’histoire phrase par phrase. Parler de ses propres contradictions est une proposition, pas une obligation.",
+   "kurz": "Écouter l’histoire · colonnes « dit »/« fait » · causes · alternative",
+   "vorbereitung": "Noter l’histoire en 4 phrases : écrit qu’il déteste les moqueries · rit en classe · écrit gentiment au nouveau"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -9995,7 +10169,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Geschichte hören · Spalten „sagt“ und „tut“ · Gründe · Alternative",
+  "vorbereitung": "Geschichte in 4 Sätzen notieren: schreibt, er hasse Lästern · lacht in der Pause mit · schreibt dem Neuen privat"
  },
  {
   "id": "j:staerken-mit-beweis",
@@ -10071,7 +10247,8 @@
     "Un point fort sans preuve, c’est juste une affirmation. Tu l’as montré quand, récemment ?",
     "Un chantier, ce n’est pas un défaut. Ça veut juste dire : il y a encore de la marge."
    ],
-   "wennEsKippt": "Si aucun point fort ne vient, l’adulte en cite trois qui ont retenu son attention, et le ou la jeune cherche la preuve. Si le regard des autres pèse trop, rester sur sa propre image et le retour de l’adulte."
+   "wennEsKippt": "Si aucun point fort ne vient, l’adulte en cite trois qui ont retenu son attention, et le ou la jeune cherche la preuve. Si le regard des autres pèse trop, rester sur sa propre image et le retour de l’adulte.",
+   "kurz": "Prouver trois forces par une situation · chantier · regard des autres"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -10191,7 +10368,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Drei Stärken mit Situation belegen · Baustelle · Fremdbild schätzen"
  },
  {
   "id": "j:redekarten",
@@ -10268,7 +10446,8 @@
     "Je vais te couper la parole plusieurs fois. On va voir comment tu m’arrêtes gentiment.",
     "Alterner, ça paraît simple ; dans une vraie discussion, c’est du travail. Qu’est-ce qui t’aide à laisser les autres finir – et qu’est-ce qui aide à avoir la parole à son tour ?"
    ],
-   "wennEsKippt": "Si le sujet est trop chaud, en prendre un plus léger (le meilleur plat de la cantine). Si rappeler la règle est difficile, chercher d’abord ensemble deux phrases gentilles et claires."
+   "wennEsKippt": "Si le sujet est trop chaud, en prendre un plus léger (le meilleur plat de la cantine). Si rappeler la règle est difficile, chercher d’abord ensemble deux phrases gentilles et claires.",
+   "kurz": "5 cartes chacun · parler avec une carte · stopper gentiment"
   },
   "tagesform": [
    "aufgedreht"
@@ -10389,7 +10568,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "5 Karten je · reden nur mit Karte · freundlich ins Wort-Stoppen üben"
  },
  {
   "id": "j:der-erste-satz",
@@ -10465,7 +10645,9 @@
     "La première phrase n’a pas besoin d’être géniale, juste sincère. La plupart des amitiés commencent par quelque chose de tout à fait banal.",
     "Et si ça ne colle pas du premier coup, ça ne dit rien sur toi."
    ],
-   "wennEsKippt": "Si le jeu de rôle met trop mal à l’aise, écrire seulement la première phrase et la lire une fois à voix haute. S’il n’y a pas de personne réelle, prendre une situation inventée (le premier jour dans un nouveau club)."
+   "wennEsKippt": "Si le jeu de rôle met trop mal à l’aise, écrire seulement la première phrase et la lire une fois à voix haute. S’il n’y a pas de personne réelle, prendre une situation inventée (le premier jour dans un nouveau club).",
+   "kurz": "Phrases d’accroche de trop prudent à trop direct · jouer l’accroche",
+   "vorbereitung": "8 phrases d’accroche sur papiers : « Tu es aussi à … ? » · « Tu écoutes quoi ? » · « Salut, moi c’est … »"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -10577,7 +10759,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Einstiegssätze von vorsichtig bis direkt legen · zwei üben",
+  "vorbereitung": "8 Einstiegssätze auf Zettel schreiben: „Bist du nicht auch bei …?“ · „Was hörst du da?“ · „Hey, ich bin …“"
  },
  {
   "id": "j:eine-regel-aendern",
@@ -10655,7 +10839,8 @@
     "Les règles ne tombent pas du ciel – quelqu’un les a faites, et quelqu’un peut les changer.",
     "Pour être écouté, le mieux est de montrer qu’on a compris l’autre côté. Quelle est la meilleure raison d’être de cette règle ?"
    ],
-   "wennEsKippt": "Si aucune règle ne vient, en prendre une parmi les exemples. Si on ne sait pas qui est responsable, une supposition bien argumentée suffit – on pourra vérifier plus tard."
+   "wennEsKippt": "Si aucune règle ne vient, en prendre une parmi les exemples. Si on ne sait pas qui est responsable, une supposition bien argumentée suffit – on pourra vérifier plus tard.",
+   "kurz": "Choisir une règle · comprendre son but · proposition polie"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -10737,7 +10922,8 @@
      "linien": 4
     }
    ]
-  }
+  },
+  "kurz": "Störende Regel wählen · Zweck klären · höflichen Vorschlag schreiben"
  },
  {
   "id": "j:nachricht-mit-echter-frage",
@@ -10805,7 +10991,8 @@
     "Les amitiés vivent de petits messages, pas de grands gestes.",
     "Si personne ne répond, ça ne dit rien sur toi – la personne est peut-être juste occupée."
    ],
-   "wennEsKippt": "Si personne ne vient à l’esprit ou que ça sonne faux, l’essai peut aussi se faire sans portable : poser une question à quelqu’un à la pause. Ou on s’arrête à la formulation, sans rien envoyer."
+   "wennEsKippt": "Si personne ne vient à l’esprit ou que ça sonne faux, l’essai peut aussi se faire sans portable : poser une question à quelqu’un à la pause. Ou on s’arrête à la formulation, sans rien envoyer.",
+   "kurz": "Choisir une personne · formuler un vrai message-question · l’envoyer"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -10815,7 +11002,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Person wählen · Nachricht mit echter Frage formulieren · senden"
  },
  {
   "id": "j:erst-fragen-dann-antworten",
@@ -10881,7 +11069,8 @@
     "Tu n’as pas besoin d’être d’accord après. Tu cherches juste, une fois, à savoir ce qu’il y a derrière cet avis.",
     "Quelle question dirais-tu vraiment comme ça, sans que ça sonne faux ?"
    ],
-   "wennEsKippt": "Si l’occasion ne se présente pas, ce n’est pas grave : il suffit de repérer une situation où la question aurait pu servir. Si une question paraît trop raide, trouver sa propre formule."
+   "wennEsKippt": "Si l’occasion ne se présente pas, ce n’est pas grave : il suffit de repérer une situation où la question aurait pu servir. Si une question paraît trop raide, trouver sa propre formule.",
+   "kurz": "Choisir la bonne question · la dire à voix haute · l’utiliser une fois"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -10891,7 +11080,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Natürliche Nachfrage wählen · laut sprechen · vor Widerspruch nutzen"
  },
  {
   "id": "j:eine-frage-nach-meiner-staerke",
@@ -10955,7 +11145,8 @@
     "Tu ne demandes pas tes défauts, seulement tes points forts. C’est une question à laquelle la plupart des gens répondent volontiers.",
     "Si la réponse te surprend, c’est encore plus intéressant."
    ],
-   "wennEsKippt": "Si demander est trop gênant, le ou la jeune peut plutôt remarquer pour quoi on félicite le ou la jeune ou on lui demande de l’aide. Si l’occasion ne se présente pas, ce n’est pas grave."
+   "wennEsKippt": "Si demander est trop gênant, le ou la jeune peut plutôt remarquer pour quoi on félicite le ou la jeune ou on lui demande de l’aide. Si l’occasion ne se présente pas, ce n’est pas grave.",
+   "kurz": "Choisir une personne de confiance · formuler la question · la poser"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -10965,7 +11156,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Vertrauensperson wählen · Frage zur Stärke üben · einmal stellen"
  },
  {
   "id": "j:was-zieht-mich-raus",
@@ -11043,7 +11235,9 @@
     "Quel tas est le plus gros, l’environnement ou la tête ?",
     "Quelle parade ferais-tu vraiment, pas seulement celle que tu devrais faire ?"
    ],
-   "wennEsKippt": "Si peu de distractions viennent, l’adulte propose ses propres exemples et le ou la jeune dit juste « ça me parle » ou « pas chez moi ». Si dix minutes, c’est trop long, cinq suffisent."
+   "wennEsKippt": "Si peu de distractions viennent, l’adulte propose ses propres exemples et le ou la jeune dit juste « ça me parle » ou « pas chez moi ». Si dix minutes, c’est trop long, cinq suffisent.",
+   "kurz": "Distractions sur bandes · deux tas · tester une parade 10 min",
+   "vorbereitung": "Découper env. 10 bandes de papier ; préparer de vrais devoirs ou un court article pour le test"
   },
   "tagesform": [
    "aufgedreht",
@@ -11159,7 +11353,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Ablenkungen auf Streifen · zwei Haufen · Gegenmittel 10 Min. testen",
+  "vorbereitung": "Ca. 10 Papierstreifen schneiden; echte Hausaufgabe oder kurzen Zeitungsartikel für den Test bereitlegen"
  },
  {
   "id": "j:parkplatz-fuer-gedanken",
@@ -11235,7 +11431,9 @@
     "Trois mots suffisent, puis tu reviens direct au travail.",
     "Qu’est-ce qui était vraiment urgent, et qu’est-ce qui pouvait attendre la fin du travail ?"
    ],
-   "wennEsKippt": "Si huit minutes, c’est trop, réduire à cinq et décider ensuite. Si le parking se remplit plus que le travail, c’est une info utile, pas un échec : on en parle au lieu de continuer."
+   "wennEsKippt": "Si huit minutes, c’est trop, réduire à cinq et décider ensuite. Si le parking se remplit plus que le travail, c’est une info utile, pas un échec : on en parle au lieu de continuer.",
+   "kurz": "8 min de vrai travail · parquer les pensées en 3 mots · bilan",
+   "vorbereitung": "Titrer une feuille « parking » ; préparer une vraie tâche ou une liste de 10 mots à copier"
   },
   "tagesform": [
    "aufgedreht"
@@ -11340,7 +11538,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "8 Min. arbeiten · Störgedanken in 3 Wörtern parken · auswerten",
+  "vorbereitung": "Zweites Blatt „Parkplatz“ beschriften; echte Aufgabe oder Liste mit 10 Wörtern zum Abschreiben bereithalten"
  },
  {
   "id": "j:lernplan-rueckwaerts",
@@ -11414,7 +11614,9 @@
     "Quel morceau peux-tu vraiment faire en 30 minutes ?",
     "La veille du contrôle, c’est pour souffler, pas pour bachoter."
    ],
-   "wennEsKippt": "Si le planning paraît trop chargé, on supprime ou on regroupe des morceaux jusqu’à ce qu’il semble faisable. S’il n’y a pas de contrôle prévu, on planifie pour un contrôle inventé, par ex. un exposé sur un sujet préféré."
+   "wennEsKippt": "Si le planning paraît trop chargé, on supprime ou on regroupe des morceaux jusqu’à ce qu’il semble faisable. S’il n’y a pas de contrôle prévu, on planifie pour un contrôle inventé, par ex. un exposé sur un sujet préféré.",
+   "kurz": "Jour d’examen à droite · découper la matière · répartir à rebours",
+   "vorbereitung": "Feuille en largeur : examen à droite, 8 jours vers la gauche ; noter des blocs (vocabulaire, test blanc)"
   },
   "tagesform": [
    "aufgewuehlt"
@@ -11545,7 +11747,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Prüfungstag rechts · Stoff in Brocken · rückwärts auf Tage verteilen",
+  "vorbereitung": "Querblatt vorzeichnen: Prüfungstag rechts, 8 Tage nach links; Stoffbrocken (Vokabeln, Probetest) notieren"
  },
  {
   "id": "j:abfragen-statt-lesen",
@@ -11621,7 +11825,9 @@
     "Note tout ce qui reste, même les bouts de phrases.",
     "Ici, les trous ne sont pas des erreurs, c’est justement ce que tu vas apprendre ensuite."
    ],
-   "wennEsKippt": "Si la feuille blanche met mal à l’aise, le ou la jeune raconte à voix haute et l’adulte note. Avec peu d’énergie, trois questions suffisent."
+   "wennEsKippt": "Si la feuille blanche met mal à l’aise, le ou la jeune raconte à voix haute et l’adulte note. Avec peu d’énergie, trois questions suffisent.",
+   "kurz": "Lire 5 min · retourner, noter · 5 cartes-questions · s’interroger",
+   "vorbereitung": "Choisir un cours ou un court article (5 min) ; découper 5 papiers pour les cartes-questions"
   },
   "tagesform": [
    "muede"
@@ -11720,7 +11926,9 @@
      "dann": "alors je lis une fois, et ensuite …"
     }
    ]
-  }
+  },
+  "kurz": "5 Min. lesen · Text umdrehen, notieren · 5 Fragekarten · abfragen",
+  "vorbereitung": "Lernstoff oder kurzen Zeitungsartikel (5 Min. Lesen) heraussuchen; 5 Papierstücke für Fragekarten zuschneiden"
  },
  {
   "id": "j:blackout-plan",
@@ -11797,7 +12005,9 @@
     "Qu’est-ce que tu ferais vraiment pendant un vrai contrôle ?",
     "La carte peut aller dans ta trousse, comme ça tu n’as pas besoin de retenir le plan."
    ],
-   "wennEsKippt": "Si jouer la situation est trop désagréable, le ou la jeune lit juste la carte, sans la jouer. Si une partie ne convient pas, elle est remplacée par une idée à lui ou à elle."
+   "wennEsKippt": "Si jouer la situation est trop désagréable, le ou la jeune lit juste la carte, sans la jouer. Si une partie ne convient pas, elle est remplacée par une idée à lui ou à elle.",
+   "kurz": "Carte en trois étapes · lire une question · jouer le trou noir",
+   "vorbereitung": "Noter une question d’exercice ; découper une carte de papier au format de la trousse"
   },
   "tagesform": [
    "aengstlich"
@@ -11906,7 +12116,9 @@
      "dann": "alors je commence par …"
     }
    ]
-  }
+  },
+  "kurz": "Dreischritt-Karte schreiben · Blackout spielen · Karte durchgehen",
+  "vorbereitung": "Übungsfrage notieren, z. B. „Erkläre, wie ein Gesetz entsteht“; Papierkarte in Mäppchengröße zuschneiden"
  },
  {
   "id": "j:satz-vor-der-pruefung",
@@ -11982,7 +12194,9 @@
     "Il ne s’agit pas d’enjoliver – la nouvelle phrase doit être crédible pour toi.",
     "Qu’est-ce que tu ferais autrement si tu y croyais ?"
    ],
-   "wennEsKippt": "Si aucune phrase utile ne vient, l’adulte en propose trois ; le ou la jeune en choisit une ou la modifie. Si tout semble peu crédible, une phrase juste un point plus crédible suffit."
+   "wennEsKippt": "Si aucune phrase utile ne vient, l’adulte en propose trois ; le ou la jeune en choisit une ou la modifie. Si tout semble peu crédible, une phrase juste un point plus crédible suffit.",
+   "kurz": "Pensée–émotion–action · nouvelles phrases · crédibilité de 1 à 10",
+   "vorbereitung": "Dessiner trois cases (pensée – émotion – action) ; écrire la phrase « Je ne comprends jamais rien. »"
   },
   "tagesform": [
    "aengstlich",
@@ -12096,7 +12310,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Gedanke–Gefühl–Handlung · neue Sätze sammeln · Glaubwürdigkeit 1–10",
+  "vorbereitung": "Drei Kästen zeichnen (Gedanke – Gefühl – Handlung); Startsatz „Ich kapier das eh nie.“ hinschreiben"
  },
  {
   "id": "j:abend-bis-zum-einschlafen",
@@ -12172,7 +12388,8 @@
     "À quel moment le « juste deux minutes » devient-il une heure ?",
     "Sur 10 (1 = presque aucune chance, 10 = tout à fait sûr), quelle chance que ça tienne vraiment ? Sous 7, on fait plus petit."
    ],
-   "wennEsKippt": "Si le ou la jeune ne veut rien changer au portable, on choisit un autre petit détail de la soirée (lumière, musique, heure). Si sa propre ligne du temps est trop privée, on la dessine pour une personne inventée du même âge."
+   "wennEsKippt": "Si le ou la jeune ne veut rien changer au portable, on choisit un autre petit détail de la soirée (lumière, musique, heure). Si sa propre ligne du temps est trop privée, on la dessine pour une personne inventée du même âge.",
+   "kurz": "Ligne du soir · repérer le portable · point de bascule · si-alors"
   },
   "tagesform": [
    "muede"
@@ -12257,7 +12474,8 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Abend-Zeitleiste · Handy markieren · Kipp-Stelle · Wenn-dann-Regel"
  },
  {
   "id": "j:zurueck-in-kleinen-stufen",
@@ -12335,7 +12553,9 @@
     "Quelle marche serait difficile, mais encore faisable ?",
     "Pour « T’étais où ? », une phrase courte suffit, par ex. « Ça n’allait pas, maintenant je suis là. »"
    ],
-   "wennEsKippt": "Si chaque marche est trop haute, on en cherche une encore plus petite (juste passer devant le bâtiment) ou on pose seulement l’escalier aujourd’hui, sans décision. Si ça devient trop lourd, on arrête l’exercice et l’adulte parle avec le ou la jeune de ce qui est difficile en ce moment."
+   "wennEsKippt": "Si chaque marche est trop haute, on en cherche une encore plus petite (juste passer devant le bâtiment) ou on pose seulement l’escalier aujourd’hui, sans décision. Si ça devient trop lourd, on arrête l’exercice et l’adulte parle avec le ou la jeune de ce qui est difficile en ce moment.",
+   "kurz": "Cartes-marches · difficulté 0–10 · choisir une marche · réponse",
+   "vorbereitung": "5 cartes-marches : préparer le cartable · portail · 1 heure en cours · matinée entière"
   },
   "tagesform": [
    "aengstlich",
@@ -12451,7 +12671,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Stufenkarten legen · Schwere 0–10 · Stufe wählen · Antwort üben",
+  "vorbereitung": "5 Stufenkarten schreiben: Tasche packen · Schultor · 1 Stunde Lieblingsfach · ganzer Vormittag"
  },
  {
   "id": "j:drei-versionen-mit-22",
@@ -12525,7 +12747,9 @@
     "Qu’est-ce qui revient dans les trois colonnes, même sous une autre forme ?",
     "Quelle force as-tu déjà pour ça ? Donne-moi une situation où on l’a vue."
    ],
-   "wennEsKippt": "Si peu de choses viennent pour l’avenir, on imagine une seule journée : à quoi ressemblerait un bon mardi à 22 ans ? Si la pression se fait sentir, l’adulte dit clairement que les projets peuvent changer et que rien n’est fixé aujourd’hui. Si rien ne vient du tout ou si le ou la jeune semble n’avoir plus aucun espoir (« De toute façon, rien ne marchera pour moi »), ne pas insister : arrêter l’exercice calmement, rester auprès de la personne et associer la personne de référence (par exemple le service psycho-social de l’école)."
+   "wennEsKippt": "Si peu de choses viennent pour l’avenir, on imagine une seule journée : à quoi ressemblerait un bon mardi à 22 ans ? Si la pression se fait sentir, l’adulte dit clairement que les projets peuvent changer et que rien n’est fixé aujourd’hui. Si rien ne vient du tout ou si le ou la jeune semble n’avoir plus aucun espoir (« De toute façon, rien ne marchera pour moi »), ne pas insister : arrêter l’exercice calmement, rester auprès de la personne et associer la personne de référence (par exemple le service psycho-social de l’école).",
+   "kurz": "Trois colonnes : sûr, audacieux, fou · point commun · prochain pas",
+   "vorbereitung": "Diviser la feuille en trois : version sûre · audacieuse · folle de moi à 22 ans"
   },
   "tagesform": [
    "will-nicht"
@@ -12648,7 +12872,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Drei Spalten: sicher, mutig, verrückt · Gemeinsames · nächster Schritt",
+  "vorbereitung": "Blatt in drei Spalten teilen: sichere · mutige · verrückte Version von mir mit 22"
  },
  {
   "id": "j:wunschberuf-check",
@@ -12724,7 +12950,8 @@
     "Tu le sais d’où ? Vu, lu ou juste entendu ?",
     "Quelle question t’aiderait le plus si tu avais la réponse ?"
    ],
-   "wennEsKippt": "Si le ou la jeune n’a pas encore de métier en tête, on en prend un de l’entourage ou du journal : c’est la méthode qui compte, pas une décision. Si le ou la jeune ne veut demander à personne, on s’arrête à la question écrite."
+   "wennEsKippt": "Si le ou la jeune n’a pas encore de métier en tête, on en prend un de l’entourage ou du journal : c’est la méthode qui compte, pas une décision. Si le ou la jeune ne veut demander à personne, on s’arrête à la question écrite.",
+   "kurz": "Métier choisi · noter ses savoirs · sûr/supposé/entendu · question"
   },
   "tagesform": [
    "will-nicht"
@@ -12849,7 +13076,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Beruf wählen · Gewusstes notieren · W/V/G markieren · Frage stellen"
  },
  {
   "id": "j:was-lief-oder-pass",
@@ -12904,7 +13132,8 @@
     "Après, je te dis aussi le mien.",
     "Tu y es pour quelque chose, ou c’est arrivé tout seul ?"
    ],
-   "wennEsKippt": "Si rien ne vient ou si rien ne s’est bien passé, « je passe » est la réponse et l’adulte continue sans commentaire, sans insister."
+   "wennEsKippt": "Si rien ne vient ou si rien ne s’est bien passé, « je passe » est la réponse et l’adulte continue sans commentaire, sans insister.",
+   "kurz": "Nommer un truc réussi (ou passer) · l’adulte aussi"
   },
   "tagesform": [
    "muede",
@@ -12918,7 +13147,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Eine Sache nennen, die lief (oder pass) · Gegenrunde"
  },
  {
   "id": "j:zwei-wahrheiten-eine-erfindung",
@@ -12974,7 +13204,8 @@
     "Je peux poser une question avant de deviner ?",
     "À toi – j’en ai sûrement une que tu ne trouveras pas."
    ],
-   "wennEsKippt": "Si trois phrases ne viennent pas, une vraie et une inventée suffisent. Si ça devient trop personnel, passer au quotidien tout simple : repas, météo, trajet jusqu’ici."
+   "wennEsKippt": "Si trois phrases ne viennent pas, une vraie et une inventée suffisent. Si ça devient trop personnel, passer au quotidien tout simple : repas, météo, trajet jusqu’ici.",
+   "kurz": "Trois phrases dont une inventée · question · deviner · échanger"
   },
   "tagesform": [
    "muede",
@@ -12988,7 +13219,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Drei Sätze, einer erfunden · Rückfrage stellen · raten · tauschen"
  },
  {
   "id": "j:song-der-woche",
@@ -13044,7 +13276,8 @@
     "Qu’est-ce qui t’accroche, le beat, les paroles ou la voix ?",
     "Je ne le connais peut-être pas – décris-moi comment il sonne."
    ],
-   "wennEsKippt": "Si aucun morceau ne vient, un bruit ou « rien, le calme » marche aussi. Si le morceau est gênant, il peut rester secret : on donne juste le style."
+   "wennEsKippt": "Si aucun morceau ne vient, un bruit ou « rien, le calme » marche aussi. Si le morceau est gênant, il peut rester secret : on donne juste le style.",
+   "kurz": "Citer un morceau · ce qui accroche : beat, texte, voix · le sien"
   },
   "tagesform": [
    "muede",
@@ -13059,7 +13292,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Song nennen · was zieht: Beat, Text, Stimme · eigenen Song nennen"
  },
  {
   "id": "j:tage-als-schlagzeile",
@@ -13116,7 +13350,8 @@
     "Si tes derniers jours étaient un gros titre, ce serait quoi ?",
     "Et que dit la première phrase en dessous ?"
    ],
-   "wennEsKippt": "Si rien ne vient, le titre peut porter sur tout autre chose (sport, météo, une nouvelle du monde). « Rien de neuf » est aussi un titre valable."
+   "wennEsKippt": "Si rien ne vient, le titre peut porter sur tout autre chose (sport, météo, une nouvelle du monde). « Rien de neuf » est aussi un titre valable.",
+   "kurz": "Gros titre en 8 mots · première phrase · son propre gros titre"
   },
   "tagesform": [
    "muede",
@@ -13130,7 +13365,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Schlagzeile in 8 Wörtern · Frage nach erstem Satz · eigene Schlagzeile"
  },
  {
   "id": "j:wuerfelfrage",
@@ -13188,7 +13424,9 @@
     "Tu lances, je lis la question. Si elle ne te plaît pas, tu relances.",
     "À moi – voyons sur quoi je tombe."
    ],
-   "wennEsKippt": "Si la deuxième question ne convient pas non plus, le ou la jeune en choisit une sur la feuille. Avec peu d’envie, une réponse en une phrase suffit."
+   "wennEsKippt": "Si la deuxième question ne convient pas non plus, le ou la jeune en choisit une sur la feuille. Avec peu d’envie, une réponse en une phrase suffit.",
+   "kurz": "Lancer le dé · répondre ou relancer · l’adulte répond aussi",
+   "vorbereitung": "Écrire 6 questions légères 1–6 : plat surcoté · don d’une nuit · lieu sous-estimé …"
   },
   "tagesform": [
    "will-nicht",
@@ -13202,7 +13440,9 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Würfeln · Frage beantworten oder neu würfeln · Gegenrunde",
+  "vorbereitung": "6 leichte Fragen von 1–6 aufschreiben: überbewertetes Essen · Fähigkeit über Nacht · unterschätzter Ort …"
  },
  {
   "id": "j:kopf-kurz-ablegen",
@@ -13261,7 +13501,8 @@
     "La feuille reste là, rien ne se perd. Tu la reprends après.",
     "Il y a un point qui devrait avoir sa place ici aujourd’hui ?"
    ],
-   "wennEsKippt": "Si rien ne vient, une feuille vide, c’est très bien aussi. Si écrire est trop en ce moment, le ou la jeune compte juste les mots-clés dans sa tête, sur ses doigts."
+   "wennEsKippt": "Si rien ne vient, une feuille vide, c’est très bien aussi. Si écrire est trop en ce moment, le ou la jeune compte juste les mots-clés dans sa tête, sur ses doigts.",
+   "kurz": "90 secondes : noter ce qui tourne en tête · mettre la feuille de côté"
   },
   "tagesform": [
    "aufgewuehlt",
@@ -13275,7 +13516,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "90 Sekunden Kopfkreisen in Stichworten notieren · Blatt weglegen"
  },
  {
   "id": "j:box-atmung",
@@ -13334,7 +13576,9 @@
     "Court à l’inspiration, long à l’expiration – je compte avec toi au début.",
     "Où pourrais-tu voir un rectangle comme ça dans ta journée : fenêtre, porte, cadre ?"
    ],
-   "wennEsKippt": "Si compter est désagréable, on expire simplement longuement, sans chiffres. Si ça agite plutôt ou si une panique monte, on arrête, on respire normalement et on sent les pieds au sol."
+   "wennEsKippt": "Si compter est désagréable, on expire simplement longuement, sans chiffres. Si ça agite plutôt ou si une panique monte, on arrête, on respire normalement et on sent les pieds au sol.",
+   "kurz": "Suivre le rectangle du doigt · 4 s inspirer, 6 s expirer · 4 tours",
+   "vorbereitung": "Dessiner un rectangle : petits côtés 4 s (inspirer), grands côtés 6 s (expirer)"
   },
   "tagesform": [
    "aengstlich",
@@ -13348,7 +13592,9 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Rechteck mit dem Finger abfahren · 4 s ein, 6 s aus · 4 Runden",
+  "vorbereitung": "Rechteck aufs Blatt zeichnen: kurze Seiten 4 Sekunden (ein), lange Seiten 6 Sekunden (aus)"
  },
  {
   "id": "j:fuenf-vier-drei-zwei-eins",
@@ -13406,7 +13652,8 @@
     "Cinq choses que tu vois. N’importe lesquelles.",
     "Où est-ce que ça te servirait dans ta journée ?"
    ],
-   "wennEsKippt": "Si aucune odeur ne vient, on la saute. Si c’est trop, le tour avec la vue suffit."
+   "wennEsKippt": "Si aucune odeur ne vient, on la saute. Si c’est trop, le tour avec la vue suffit.",
+   "kurz": "Cinq vues · quatre sons · trois sensations · deux odeurs · un goût"
   },
   "tagesform": [
    "aengstlich",
@@ -13420,7 +13667,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Fünf sehen · vier hören · drei spüren · zwei riechen · eins schmecken"
  },
  {
   "id": "j:wand-druecken-loslassen",
@@ -13476,7 +13724,8 @@
     "Maintenant, relâche. Tu sens une différence dans les bras ?",
     "Ça marche aussi assis : les mains contre le bord de la table, sept secondes, relâcher."
    ],
-   "wennEsKippt": "Si se lever est trop en ce moment, on pousse assis contre le bord de la table. Si le ou la jeune ne sent pas de différence, c’est normal : un tour de plus, ou on s’arrête là."
+   "wennEsKippt": "Si se lever est trop en ce moment, on pousse assis contre le bord de la table. Si le ou la jeune ne sent pas de différence, c’est normal : un tour de plus, ou on s’arrête là.",
+   "kurz": "Mains au mur · pousser 7 s · relâcher et sentir · 3 fois"
   },
   "tagesform": [
    "wuetend",
@@ -13490,7 +13739,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Hände an die Wand · 7 Sekunden drücken · loslassen und nachspüren · 3×"
  },
  {
   "id": "j:schultern-lang-ausatmen",
@@ -13549,7 +13799,8 @@
     "Je le fais avec toi – tu n’as rien à dire, juste à faire avec moi.",
     "Tu peux expirer assez fort pour qu’on l’entende, ça va très bien."
    ],
-   "wennEsKippt": "Si un mouvement fait mal, on le fait plus petit ou on le laisse. Si c’est gênant, l’adulte montre et le ou la jeune ne fait que la moitié."
+   "wennEsKippt": "Si un mouvement fait mal, on le fait plus petit ou on le laisse. Si c’est gênant, l’adulte montre et le ou la jeune ne fait que la moitié.",
+   "kurz": "Épaules en haut à l’inspiration · relâcher à l’expiration · 5 fois"
   },
   "tagesform": [
    "muede",
@@ -13563,7 +13814,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Schultern beim Einatmen hoch · beim Ausatmen fallen lassen · 5×"
  },
  {
   "id": "j:handflaechen-druck",
@@ -13620,7 +13872,8 @@
     "Qu’est-ce que tu sens dans les mains – chaleur, picotements ou rien du tout ? Tout est ok.",
     "La version sous la table, personne ne la voit. Quand pourrait-elle servir ?"
    ],
-   "wennEsKippt": "Si presser est désagréable, on pose simplement les mains l’une sur l’autre pour les réchauffer. Si ça n’apporte rien, on arrête après deux tours, sans jugement."
+   "wennEsKippt": "Si presser est désagréable, on pose simplement les mains l’une sur l’autre pour les réchauffer. Si ça n’apporte rien, on arrête après deux tours, sans jugement.",
+   "kurz": "Presser les paumes 5 s en inspirant · relâcher en expirant · 4 fois"
   },
   "tagesform": [
    "aengstlich"
@@ -13633,7 +13886,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Handflächen 5 Sek. pressen beim Einatmen · beim Ausatmen lösen · 4×"
  },
  {
   "id": "j:ein-punkt-im-raum",
@@ -13693,7 +13947,8 @@
     "Si tu décroches, c’est normal – tu reviens, c’est tout.",
     "Maintenant, ajoute les bords, sans bouger les yeux."
    ],
-   "wennEsKippt": "Si une minute est trop longue, 30 secondes suffisent. Si fixer un point est désagréable, le regard peut se poser doucement sur le sol, ou les yeux se fermer à moitié."
+   "wennEsKippt": "Si une minute est trop longue, 30 secondes suffisent. Si fixer un point est désagréable, le regard peut se poser doucement sur le sol, ou les yeux se fermer à moitié.",
+   "kurz": "Fixer un point · 1 minute d’expirations calmes · vue large 30 secondes"
   },
   "tagesform": [
    "aufgedreht",
@@ -13707,7 +13962,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Punkt im Raum fixieren · 1 Min. ruhig ausatmen · 30 Sek. Weitblick"
  },
  {
   "id": "j:ein-satz-zum-mitnehmen",
@@ -13767,7 +14023,9 @@
     "Je te dis aussi ce que j’ai remarqué aujourd’hui – juste une observation, pas une note.",
     "La feuille est à toi, c’est toi qui décides ce que tu en fais."
    ],
-   "wennEsKippt": "Si aucune phrase ne vient, un seul mot suffit. Si c’est « je passe », l’adulte continue sans poser de question."
+   "wennEsKippt": "Si aucune phrase ne vient, un seul mot suffit. Si c’est « je passe », l’adulte continue sans poser de question.",
+   "kurz": "Choisir un début de phrase et le finir (passer possible) · observation",
+   "vorbereitung": "Écrire 3 débuts de phrase : « Ce qui m’est resté … » · « Je veux essayer … » · « Reste ouvert … »"
   },
   "tagesform": [
    "muede",
@@ -13781,7 +14039,9 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Satzanfang wählen und vollenden (pass erlaubt) · Beobachtung hören",
+  "vorbereitung": "3 Satzanfänge aufs Blatt schreiben: „Hängen geblieben ist …“ · „Ausprobieren will ich …“ · „Noch offen ist …“"
  },
  {
   "id": "j:skala-oder-pass",
@@ -13840,7 +14100,9 @@
     "Qu’est-ce qui l’aurait fait monter d’un point ?",
     "Merci, ça m’aide à mieux préparer."
    ],
-   "wennEsKippt": "Si le ou la jeune ne veut pas donner de chiffre, « je passe » est la réponse, sans autre question. Si rien ne vient pour le point de plus, « je ne sais pas » suffit."
+   "wennEsKippt": "Si le ou la jeune ne veut pas donner de chiffre, « je passe » est la réponse, sans autre question. Si rien ne vient pour le point de plus, « je ne sais pas » suffit.",
+   "kurz": "Croix sur l’échelle 1–10 (ou passer) · ce qui ferait +1 point",
+   "vorbereitung": "Tracer une ligne de 1 à 10 : 1 = rien apporté, 10 = j’emporte tout de suite"
   },
   "tagesform": [
    "will-nicht",
@@ -13854,7 +14116,9 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Kreuz auf Skala 1–10 (oder pass) · was wäre einen Punkt höher gewesen",
+  "vorbereitung": "Linie von 1 bis 10 aufs Blatt zeichnen: 1 = nichts gebracht, 10 = nehme ich direkt mit"
  },
  {
   "id": "j:notiz-an-mich-selbst",
@@ -13912,7 +14176,8 @@
     "Qu’est-ce que tu écrirais à un ami qui serait dans ce cas ?",
     "Où est-ce que tu le retrouveras pile au moment où tu en as besoin ?"
    ],
-   "wennEsKippt": "Si écrire est trop, une phrase ou un seul mot suffit. Si le ou la jeune ne veut pas de mot du tout, on dit juste pour quel moment il aurait été."
+   "wennEsKippt": "Si écrire est trop, une phrase ou un seul mot suffit. Si le ou la jeune ne veut pas de mot du tout, on dit juste pour quel moment il aurait été.",
+   "kurz": "Écrire un mot pour un moment précis · le plier · le ranger"
   },
   "tagesform": [
    "aengstlich",
@@ -13926,7 +14191,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Notiz für einen bestimmten Moment schreiben · falten · verstecken"
  },
  {
   "id": "j:drei-stichworte-eins-bleibt",
@@ -13984,7 +14250,8 @@
     "Maintenant, barres-en deux. Lequel reste ?",
     "Quand exactement est-ce que ça pourrait te servir ?"
    ],
-   "wennEsKippt": "Si trois ne viennent pas, un seul suffit. Si le ou la jeune ne veut rien barrer, les trois restent."
+   "wennEsKippt": "Si trois ne viennent pas, un seul suffit. Si le ou la jeune ne veut rien barrer, les trois restent.",
+   "kurz": "Trois mots-clés · en barrer deux · quand ça servira"
   },
   "tagesform": [
    "muede",
@@ -13998,7 +14265,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Drei Stichworte zur Stunde · zwei streichen · wann nützt das übrige"
  },
  {
   "id": "j:mitnehmen-oder-dalassen",
@@ -14056,7 +14324,8 @@
     "Si quelque chose ne t’a pas plu aujourd’hui, c’est exactement sa place, à droite.",
     "Une moitié part avec toi, l’autre reste ici – c’est toi qui décides."
    ],
-   "wennEsKippt": "Si rien ne vient, « rien de spécial » peut aller d’un côté. Si le ou la jeune ne veut pas écrire, il ou elle dit un mot par côté et l’adulte l’écrit."
+   "wennEsKippt": "Si rien ne vient, « rien de spécial » peut aller d’un côté. Si le ou la jeune ne veut pas écrire, il ou elle dit un mot par côté et l’adulte l’écrit.",
+   "kurz": "Feuille en deux : j’emporte · je laisse · mots-clés · détacher"
   },
   "tagesform": [
    "aufgewuehlt",
@@ -14070,7 +14339,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Blatt teilen: mitnehmen · dalassen · Stichworte · Hälfte abtrennen"
  },
  {
   "id": "j:gefuehlte-minute",
@@ -14151,7 +14421,8 @@
     "Avec quelle astuce le temps est passé le plus vite ?",
     "Où est-ce que tu dois le plus souvent attendre dans ta journée ?"
    ],
-   "wennEsKippt": "Si une minute est trop longue, commencer par 30 secondes et augmenter petit à petit. Si l’agitation monte, le ou la jeune peut faire tourner un stylo entre ses doigts pendant l’attente."
+   "wennEsKippt": "Si une minute est trop longue, commencer par 30 secondes et augmenter petit à petit. Si l’agitation monte, le ou la jeune peut faire tourner un stylo entre ses doigts pendant l’attente.",
+   "kurz": "Estimer une minute · 3 essais avec astuce · choisir la plus utile"
   },
   "tagesform": [
    "aufgedreht"
@@ -14268,7 +14539,8 @@
      ]
     }
    ]
-  }
+  },
+  "kurz": "Minute abschätzen · dreimal mit Warte-Trick · Alltags-Trick wählen"
  },
  {
   "id": "j:kartentrick-mit-pause",
@@ -14347,7 +14619,9 @@
     "Tes mains restent sur la table jusqu’à ce que j’aie fini de distribuer – ensuite, tu me dis seulement la colonne.",
     "Maintenant, c’est toi qui fais le tour – prends ton temps, j’attends."
    ],
-   "wennEsKippt": "Si l’attente est trop longue, le ou la jeune peut compter à voix basse pendant la distribution. Si le tour rate, ce n’est pas grave : on s’entraîne à attendre, pas à faire de la magie."
+   "wennEsKippt": "Si l’attente est trop longue, le ou la jeune peut compter à voix basse pendant la distribution. Si le tour rate, ce n’est pas grave : on s’entraîne à attendre, pas à faire de la magie.",
+   "kurz": "Montrer le tour · mains sur la table · révéler le secret · le refaire",
+   "vorbereitung": "S’entraîner au tour : 9 cartes, 3 colonnes, colonne choisie ramassée au milieu"
   },
   "tagesform": [
    "aufgedreht",
@@ -14433,7 +14707,9 @@
      "dann": "alors ce qui m’aide :"
     }
    ]
-  }
+  },
+  "kurz": "Trick sehen · Hände ruhig lassen · Geheimnis erfahren · vorführen",
+  "vorbereitung": "Trick vorher üben: 9 Karten, 3 Spalten, gewählte Spalte beim Einsammeln in die Mitte legen"
  },
  {
   "id": "j:erst-zu-ende-hoeren",
@@ -14512,7 +14788,9 @@
     "Tu réponds quand le stylo est posé. Plus tard, tu décides sans signal.",
     "Maintenant, c’est toi qui poses les questions, et j’attends que tu aies fini."
    ],
-   "wennEsKippt": "Si la réponse part toujours trop vite, prendre des questions plus courtes avec le piège plus tôt. Si inventer est trop difficile, le ou la jeune modifie juste un peu une question de l’adulte."
+   "wennEsKippt": "Si la réponse part toujours trop vite, prendre des questions plus courtes avec le piège plus tôt. Si inventer est trop difficile, le ou la jeune modifie juste un peu une question de l’adulte.",
+   "kurz": "Écouter des questions-pièges · répondre au signal du stylo · échanger",
+   "vorbereitung": "Écrire 6 questions-pièges, p. ex. « Un pays en L qui n’est pas le Luxembourg »"
   },
   "tagesform": [
    "aufgedreht"
@@ -14625,7 +14903,9 @@
      "dann": "alors j’attends en …"
     }
    ]
-  }
+  },
+  "kurz": "Wendefragen hören · antworten erst nach Stift-Zeichen · tauschen",
+  "vorbereitung": "6 Wendefragen auf Zettel schreiben, z. B. „Nenne ein Land mit L, das nicht Luxemburg heißt“"
  },
  {
   "id": "j:fuenf-minuten-auf-sendung",
@@ -14700,7 +14980,9 @@
     "C’est toi qui donnes le signal quand on passe à l’antenne.",
     "Quel rôle t’a le mieux convenu ?"
    ],
-   "wennEsKippt": "Si parler est trop difficile, le ou la jeune s’occupe de la technique : donner les signaux, chronométrer, annoncer « encore dix secondes ». Si aucun sujet ne vient, l’adulte en propose trois et le ou la jeune en montre un. Si écrire est trop pénible, on reste à trois mots-clés dits à voix haute."
+   "wennEsKippt": "Si parler est trop difficile, le ou la jeune s’occupe de la technique : donner les signaux, chronométrer, annoncer « encore dix secondes ». Si aucun sujet ne vient, l’adulte en propose trois et le ou la jeune en montre un. Si écrire est trop pénible, on reste à trois mots-clés dits à voix haute.",
+   "kurz": "Choisir rôle et thème · 2 min de notes · 3 min d’émission · échanger",
+   "vorbereitung": "4 papiers de rôles : animateur · expert(e) · reportage · météo et circulation"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -14796,7 +15078,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Rolle und Thema wählen · 2 Min. Notizen · 3 Min. Sendung · tauschen",
+  "vorbereitung": "4 Rollenzettel schreiben: Moderation · Experte/Expertin · Reportage · Wetter und Verkehr"
  },
  {
   "id": "j:der-wuerfel-schlaegt-vor",
@@ -14873,7 +15157,9 @@
     "Le dé ne fait que proposer. C’est toi qui décides si tu prends le joker.",
     "Commence quand tu veux."
    ],
-   "wennEsKippt": "Si rien ne vient pour les cases personnelles, elles restent vides et, pour ce chiffre, on choisit librement parmi les autres. Si le départ ne vient pas tout seul, l’adulte commence l’action et laisse un espace pour que le ou la jeune s’y joigne."
+   "wennEsKippt": "Si rien ne vient pour les cases personnelles, elles restent vides et, pour ce chiffre, on choisit librement parmi les autres. Si le départ ne vient pas tout seul, l’adulte commence l’action et laisse un espace pour que le ou la jeune s’y joigne.",
+   "kurz": "Lancer le dé · action d’une minute · joker · l’adulte participe",
+   "vorbereitung": "Noter 4 actions pour 1–6 : 3 chansons · lancer des boules · croquis de sandwich · une question"
   },
   "tagesform": [
    "will-nicht",
@@ -14945,7 +15231,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Würfeln · Minuten-Aktion machen · Joker einmal · beide machen mit",
+  "vorbereitung": "4 Aktionen zu 1–6 notieren: 3 Lieblingssongs · Papierkugeln werfen · Sandwich skizzieren · Frage stellen"
  },
  {
   "id": "j:der-papierturm",
@@ -15025,7 +15313,8 @@
     "On prend ton idée, la mienne, ou on mélange les deux ?",
     "Qu’est-ce qu’on doit changer pour qu’elle tienne debout ?"
    ],
-   "wennEsKippt": "Si la tour tombe sans arrêt, on change d’objectif : pas haute, mais assez solide pour porter une gomme. Si la frustration monte, une minute de pause, puis on recommence avec une nouvelle idée."
+   "wennEsKippt": "Si la tour tombe sans arrêt, on change d’objectif : pas haute, mais assez solide pour porter une gomme. Si la frustration monte, une minute de pause, puis on recommence avec une nouvelle idée.",
+   "kurz": "3 min de plan · construire en alternant · pause bilan · mesurer"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -15145,7 +15434,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "3 Min. planen · Turm bauen, Rollen wechseln · Zwischenhalt · messen"
  },
  {
   "id": "j:quiz-aus-deinem-fachgebiet",
@@ -15223,7 +15513,8 @@
     "Sur quoi est-ce que tu en sais plus que la plupart des adultes ?",
     "Interroge-moi – et si je me trompe, explique-moi."
    ],
-   "wennEsKippt": "Si aucun domaine ne vient, l’adulte propose trois idées (plat préféré, trajet de l’école, musique) et le ou la jeune en choisit une. Si écrire est trop pénible, l’adulte écrit sous la dictée."
+   "wennEsKippt": "Si aucun domaine ne vient, l’adulte propose trois idées (plat préféré, trajet de l’école, musique) et le ou la jeune en choisit une. Si écrire est trop pénible, l’adulte écrit sous la dictée.",
+   "kurz": "Choisir un domaine · 8 cartes-questions · interroger · expliquer"
   },
   "tagesform": [
    "rueckzug"
@@ -15348,7 +15639,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Fachgebiet wählen · 8 Fragekarten schreiben · abfragen · erklären"
  },
  {
   "id": "j:becher-beat",
@@ -15422,7 +15714,8 @@
     "Compte à voix haute si ça t’aide.",
     "Plus lent ou plus rapide – qu’est-ce que tu préfères ?"
    ],
-   "wennEsKippt": "Si c’est trop bruyant ou trop chargé, taper seulement du bout des doigts sur la table. Si reproduire ne marche pas, rester à deux coups jusqu’à ce que ce soit sûr."
+   "wennEsKippt": "Si c’est trop bruyant ou trop chargé, taper seulement du bout des doigts sur la table. Si reproduire ne marche pas, rester à deux coups jusqu’à ce que ce soit sûr.",
+   "kurz": "Imiter un rythme avec le gobelet · en proposer un · beat commun"
   },
   "tagesform": [
    "muede",
@@ -15530,7 +15823,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Rhythmus mit Becher nachspielen · eigenen vorgeben · gemeinsamer Beat"
  },
  {
   "id": "j:die-wurfserie",
@@ -15607,7 +15901,9 @@
     "Qu’est-ce qui change dans ton geste quand la règle change ?",
     "Quelle règle prend-on pour la deuxième série ?"
    ],
-   "wennEsKippt": "Si l’énergie est trop haute, lancer seulement depuis la ligne proche et s’arrêter un instant après chaque lancer. Si le ou la jeune ne veut pas lancer, il ou elle commence par passer les feuilles et se joint au jeu plus tard."
+   "wennEsKippt": "Si l’énergie est trop haute, lancer seulement depuis la ligne proche et s’arrêter un instant après chaque lancer. Si le ou la jeune ne veut pas lancer, il ou elle commence par passer les feuilles et se joint au jeu plus tard.",
+   "kurz": "Lancer de trois lignes · inventer une règle · « changement de règle »",
+   "vorbereitung": "Coller 3 lignes (près, moyen, loin) ; froisser 5 feuilles en boules"
   },
   "tagesform": [
    "muede",
@@ -15725,7 +16021,9 @@
      "dann": "alors je m’adapte en …"
     }
    ]
-  }
+  },
+  "kurz": "Von drei Linien werfen · Regel erfinden · mittendrin „Regelwechsel“",
+  "vorbereitung": "3 Klebeband-Linien kleben (nah, mittel, weit); 5 Blätter zu Papierkugeln knüllen"
  },
  {
   "id": "j:den-pass-annehmen",
@@ -15801,7 +16099,8 @@
     "Pas besoin d’aimer ça : tu reçois juste la passe, un « Merci » et c’est bon.",
     "Maintenant, un vrai compliment d’aujourd’hui – tu reçois simplement la passe."
    ],
-   "wennEsKippt": "Si ça devient gênant ou que ça part en rigolade, on échange les rôles : le ou la jeune fait les compliments et l’adulte montre les trois façons, même les mauvaises. Si un vrai compliment est de trop, on reste sur les situations inventées."
+   "wennEsKippt": "Si ça devient gênant ou que ça part en rigolade, on échange les rôles : le ou la jeune fait les compliments et l’adulte montre les trois façons, même les mauvaises. Si un vrai compliment est de trop, on reste sur les situations inventées.",
+   "kurz": "Compliment = passe : accepter, merci · renvoyer · vrai compliment"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -15947,7 +16246,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Lob als Pass: annehmen, danke sagen · Ball zurück · echtes Lob testen"
  },
  {
   "id": "j:der-chatverlauf",
@@ -16023,7 +16323,9 @@
     "Quand est-ce qu’ils se voient, et pourquoi seulement à ce moment-là ?",
     "Qu’est-ce que tu répondrais à Noah ?"
    ],
-   "wennEsKippt": "Si lire est fatigant, l’adulte lit à voix haute et le ou la jeune peut montrer le passage avant de répondre. Si une réponse ne vient pas, l’adulte propose deux possibilités au choix."
+   "wennEsKippt": "Si lire est fatigant, l’adulte lit à voix haute et le ou la jeune peut montrer le passage avant de répondre. Si une réponse ne vient pas, l’adulte propose deux possibilités au choix.",
+   "kurz": "Lire le chat · questions : faits, raisons, avis · message suivant",
+   "vorbereitung": "Écrire un chat de 4 lignes : rendez-vous demain · après l’entraînement · skatepark · pluie : chez moi"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -16139,7 +16441,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Chat lesen · Fragen zu Fakten, Gründen, Meinung · nächste Nachricht",
+  "vorbereitung": "Kurzen Chat (4 Zeilen) schreiben: Treffen morgen · erst nach Training · Skatepark · bei Regen drinnen"
  },
  {
   "id": "j:logo-diktat",
@@ -16216,7 +16520,8 @@
     "Maintenant, c’est toi qui dessines. Pose une question dès que quelque chose n’est pas clair.",
     "Quelle indication a le plus aidé ?"
    ],
-   "wennEsKippt": "Si décrire est trop difficile, prendre seulement trois formes et travailler avec en haut, en bas, à gauche, à droite. Si la frustration monte, enlever le livre un instant et autoriser un coup d’œil."
+   "wennEsKippt": "Si décrire est trop difficile, prendre seulement trois formes et travailler avec en haut, en bas, à gauche, à droite. Si la frustration monte, enlever le livre un instant et autoriser un coup d’œil.",
+   "kurz": "Écran : décrire un logo · dessiner · comparer · échanger"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -16300,7 +16605,8 @@
      "linien": 3
     }
    ]
-  }
+  },
+  "kurz": "Sichtschutz: Logo beschreiben · nachzeichnen · vergleichen · tauschen"
  },
  {
   "id": "j:drei-spalten-zwoelf-woerter",
@@ -16380,7 +16686,9 @@
     "À quoi est-ce qu’on le remarque chez toi ? Un exemple suffit.",
     "Qu’est-ce que tu coches pour moi ? J’ai hâte de voir."
    ],
-   "wennEsKippt": "Si la colonne « moi » est difficile, commencer par la personne appréciée. Si le ou la jeune ne veut rien cocher pour soi, on peut se demander ce qu’un bon ami cocherait."
+   "wennEsKippt": "Si la colonne « moi » est difficile, commencer par la personne appréciée. Si le ou la jeune ne veut rien cocher pour soi, on peut se demander ce qu’un bon ami cocherait.",
+   "kurz": "Cocher des traits : moi, modèle, l’autre · donner des exemples",
+   "vorbereitung": "Écrire 12 traits en colonne, avec 3 colonnes : moi · modèle · l’adulte"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -16490,7 +16798,9 @@
      ]
     }
    ]
-  }
+  },
+  "kurz": "Eigenschaften ankreuzen: ich, Vorbild, Gegenüber · Beispiele nennen",
+  "vorbereitung": "12 Eigenschaften untereinander schreiben, daneben 3 Spalten: ich · Vorbild · Fachkraft"
  },
  {
   "id": "j:sprechblase-erster-satz",
@@ -16564,7 +16874,9 @@
     "Je joue l’autre personne. Tu commences quand tu veux.",
     "Si quelqu’un répond sèchement, ça dit souvent plus sur sa journée que sur toi."
    ],
-   "wennEsKippt": "Si aucune phrase ne vient, l’adulte propose trois débuts au choix (« Tu sais si… ? », « C’est… ? », « Toi aussi, tu… ? »). Si le jeu de rôle est de trop, on s’arrête aux bulles."
+   "wennEsKippt": "Si aucune phrase ne vient, l’adulte propose trois débuts au choix (« Tu sais si… ? », « C’est… ? », « Toi aussi, tu… ? »). Si le jeu de rôle est de trop, on s’arrête aux bulles.",
+   "kurz": "Remplir trois bulles de première phrase · en jouer deux",
+   "vorbereitung": "Dessiner 3 cases de BD à bulle vide : distributeur · entraînement · bus"
   },
   "merkmale": {
    "wettbewerb": false,
@@ -16692,7 +17004,9 @@
      "linien": 2
     }
    ]
-  }
+  },
+  "kurz": "Drei Sprechblasen mit erstem Satz füllen · zwei im Rollenspiel testen",
+  "vorbereitung": "3 Comic-Kästchen mit leerer Sprechblase zeichnen: Automat im Lycée · Training · Bus"
  },
  {
   "id": "j:melden-im-gespielten-unterricht",
@@ -16767,7 +17081,8 @@
     "On échange : tu expliques, je lève la main. Regarde ce que je fais de travers.",
     "Qu’est-ce qui est le plus difficile pour toi – attendre ton tour ou lever la main tout court ?"
    ],
-   "wennEsKippt": "Si le jeu de rôle devient gênant, jouer seulement avec une feuille : lever la main, c’est lever la feuille. Si l’échange est trop, l’adulte reste devant et ne pose plus que deux courtes questions."
+   "wennEsKippt": "Si le jeu de rôle devient gênant, jouer seulement avec une feuille : lever la main, c’est lever la feuille. Si l’échange est trop, l’adulte reste devant et ne pose plus que deux courtes questions.",
+   "kurz": "Jouer un cours : répondre après avoir levé la main · échanger"
   },
   "tagesform": [
    "aufgedreht"
@@ -16864,7 +17179,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Unterricht spielen: nur nach Handzeichen antworten · Rollen tauschen"
  },
  {
   "id": "j:eine-meldung-vorbereiten",
@@ -16942,7 +17258,9 @@
     "Écris la phrase comme tu la dirais vraiment.",
     "Sur quelle marche de l’escalier du courage ça se place ? On la rend assez petite pour que ça marche."
    ],
-   "wennEsKippt": "Si même une question est de trop, l’essai peut être de lever brièvement la main et de la baisser quand quelqu’un d’autre est appelé. Si le ou la jeune ne veut pas nommer de matière, on s’entraîne avec une matière inventée."
+   "wennEsKippt": "Si même une question est de trop, l’essai peut être de lever brièvement la main et de la baisser quand quelqu’un d’autre est appelé. Si le ou la jeune ne veut pas nommer de matière, on s’entraîne avec une matière inventée.",
+   "kurz": "Choisir un cours · une intervention sur carte · la dire 2 fois",
+   "vorbereitung": "Dessiner une échelle à 4 marches : lever la main · poser une question · répondre · donner son avis"
   },
   "tagesform": [
    "aengstlich",
@@ -17048,7 +17366,9 @@
      "dann": "alors …"
     }
    ]
-  }
+  },
+  "kurz": "Fach wählen · eine Meldung auf Karte · zweimal laut üben · Mut-Treppe",
+  "vorbereitung": "Mut-Treppe mit 4 Stufen zeichnen: Hand heben · Frage stellen · Antwort geben · eigene Meinung sagen"
  },
  {
   "id": "j:bew-drei-gaenge",
@@ -17104,7 +17424,8 @@
     "Vitesse 3, c’est rapide, pas courir. Tu sens comme c’est difficile de passer d’un coup au ralenti ?",
     "Maintenant, vitesse 1 jusqu’à la chaise, et on s’assoit."
    ],
-   "wennEsKippt": "Si la vitesse 3 devient trop agitée, on la laisse tomber et on alterne seulement entre ralenti et normal. Si marcher dans la pièce gêne, on marche côte à côte le long du mur, ou sur place."
+   "wennEsKippt": "Si la vitesse 3 devient trop agitée, on la laisse tomber et on alterne seulement entre ralenti et normal. Si marcher dans la pièce gêne, on marche côte à côte le long du mur, ou sur place.",
+   "kurz": "Marcher lent · normal · rapide dans la pièce · annoncer à tour de rôle"
   },
   "tagesform": [
    "aufgedreht",
@@ -17118,7 +17439,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Zeitlupe · normal · zügig durch den Raum gehen · abwechselnd ansagen"
  },
  {
   "id": "j:bew-linie-am-boden",
@@ -17178,7 +17500,9 @@
     "Ici, lentement, c’est plus dur que vite. Tu regardes où, pour que ça reste calme ?",
     "Ça vacille, c’est normal – continue, tout simplement."
    ],
-   "wennEsKippt": "Si ça devient trop rigolo ou frustrant, marcher seulement en avant. S’il n’y a pas de ruban adhésif, un joint du sol fait office de ligne."
+   "wennEsKippt": "Si ça devient trop rigolo ou frustrant, marcher seulement en avant. S’il n’y a pas de ruban adhésif, un joint du sol fait office de ligne.",
+   "kurz": "Marcher sur la ligne : talon-pointe · à reculons · sur un pied",
+   "vorbereitung": "Coller une ligne de ruban de 3 m au sol et bien la fixer"
   },
   "tagesform": [
    "aufgedreht",
@@ -17192,7 +17516,9 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Auf Klebelinie gehen: Ferse an Zeh · rückwärts · einbeinig",
+  "vorbereitung": "3 m Klebeband-Linie auf den Boden kleben und gut festdrücken"
  },
  {
   "id": "j:bew-ball-achter",
@@ -17250,7 +17576,9 @@
     "Si elles tombent, tu les ramasses et tu continues. Ça m’arrive aussi.",
     "Maintenant dans l’autre sens – tu sens quel sens est plus difficile ?"
    ],
-   "wennEsKippt": "Si le huit entre les jambes est trop difficile ou gênant, on reste à la taille et aux genoux. Si ça devient trop agité, on guide seulement sur place, très lentement. Si l’exercice paraît trop enfantin, le faire sans chaussettes : cercles du bassin, genoux levés en rythme, bras croisés."
+   "wennEsKippt": "Si le huit entre les jambes est trop difficile ou gênant, on reste à la taille et aux genoux. Si ça devient trop agité, on guide seulement sur place, très lentement. Si l’exercice paraît trop enfantin, le faire sans chaussettes : cercles du bassin, genoux levés en rythme, bras croisés.",
+   "kurz": "Chaussettes autour des hanches et genoux · huit entre les jambes",
+   "vorbereitung": "Rouler 2 paires de chaussettes en boules"
   },
   "tagesform": [
    "muede",
@@ -17264,7 +17592,9 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Sockenbälle um Hüfte und Knie führen · Acht durch die Beine",
+  "vorbereitung": "2 Paar Socken zu Bällen zusammenrollen"
  },
  {
   "id": "j:bew-der-wuerfel-entscheidet",
@@ -17321,7 +17651,8 @@
     "Un exercice qui ne te plaît pas du tout, tu peux l’échanger une fois.",
     "Pas plus vite que nécessaire – propre et calme, ça suffit."
    ],
-   "wennEsKippt": "Si un exercice est désagréable, on le remplace par un autre que le ou la jeune propose. Si c’est trop, on s’arrête après deux lancers et on secoue seulement bras et jambes."
+   "wennEsKippt": "Si un exercice est désagréable, on le remplace par un autre que le ou la jeune propose. Si c’est trop, on s’arrête après deux lancers et on secoue seulement bras et jambes.",
+   "kurz": "Lancer le dé · faire ensemble l’exercice tiré · 3 lancers"
   },
   "tagesform": [
    "muede",
@@ -17335,7 +17666,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Würfeln · die gewürfelte Bewegungsübung gemeinsam machen · 3 Würfe"
  },
  {
   "id": "j:bew-lineal-balancieren",
@@ -17396,7 +17728,8 @@
     "Si elle bascule, tu la reposes, c’est tout. Chez moi aussi, elle bascule.",
     "Et maintenant en marchant – doucement."
    ],
-   "wennEsKippt": "Si la règle bascule tout le temps, c’est plus facile avec un journal roulé, parce qu’il est plus long. Si ça devient agité, rester sur place et respirer calmement."
+   "wennEsKippt": "Si la règle bascule tout le temps, c’est plus facile avec un journal roulé, parce qu’il est plus long. Si ça devient agité, rester sur place et respirer calmement.",
+   "kurz": "Équilibrer la règle sur la paume · debout · en marchant · autre main"
   },
   "tagesform": [
    "aufgedreht",
@@ -17410,7 +17743,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "Lineal auf der Handfläche balancieren · stehen · gehen · andere Hand"
  },
  {
   "id": "j:bew-vier-ecken-dehnen",
@@ -17465,7 +17799,8 @@
     "C’est toi qui choisis où on s’arrête.",
     "Quel arrêt t’a fait le plus de bien ?"
    ],
-   "wennEsKippt": "Si un étirement est désagréable, on le saute ou on le fait plus petit. Si tout ça gêne, un seul arrêt près de la fenêtre suffit : s’étirer et expirer calmement."
+   "wennEsKippt": "Si un étirement est désagréable, on le saute ou on le fait plus petit. Si tout ça gêne, un seul arrêt près de la fenêtre suffit : s’étirer et expirer calmement.",
+   "kurz": "Deux arrêts de 30 s : étirer les bras · cercles d’épaules · expirer"
   },
   "tagesform": [
    "muede",
@@ -17479,7 +17814,8 @@
    "katharsis": false
   },
   "qualitaet": "entwurf",
-  "sicher": {}
+  "sicher": {},
+  "kurz": "In zwei Ecken je 30 Sek.: Arme strecken · Schultern kreisen"
  },
  {
   "id": "j:ein-wort-eine-farbe-ein-ton",
@@ -17555,7 +17891,9 @@
     "Tire quatre mots qui te frappent. Quelle couleur a le mot ? Comment sonne-t-il ?",
     "La palette reçoit un titre. Pour quelle chanson, quel temps ou quel lieu irait-elle ?"
    ],
-   "wennEsKippt": "Si aucun mot n’inspire, on le met de côté et on en tire un autre. Si le ou la jeune ne veut pas peindre, il suffit de ranger les cartes par tempo, du doux au fort. Regarder est aussi permis pendant que l’adulte peint sa propre palette."
+   "wennEsKippt": "Si aucun mot n’inspire, on le met de côté et on en tire un autre. Si le ou la jeune ne veut pas peindre, il suffit de ranger les cartes par tempo, du doux au fort. Regarder est aussi permis pendant que l’adulte peint sa propre palette.",
+   "kurz": "Tirer quatre mots · couleur et son · titrer la palette",
+   "vorbereitung": "12 cartes : serein · irrité · mélancolique · buté · épuisé · tendu · exubérant · gêné …"
   },
   "tagesform": [
    "muede",
@@ -17686,7 +18024,9 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Vier Gefühlswörter ziehen · Farbe und Klang dazu · Palette betiteln",
+  "vorbereitung": "12 Wortkarten schreiben: gelassen · gereizt · wehmütig · trotzig · erschöpft · gespannt · übermütig · verlegen …"
  },
  {
   "id": "j:zwei-fassungen-meiner-arbeit",
@@ -17758,7 +18098,8 @@
     "Voici une seule astuce. Essaie-la, tu peux aussi la laisser tomber.",
     "Montre-moi trois endroits où la deuxième version est différente. Qu’est-ce que tu as fait là ?"
    ],
-   "wennEsKippt": "Si le ou la jeune ne voit aucune différence, on demande ce qui était plus facile ou plus clair la deuxième fois. S’il ou elle ne veut pas montrer la première version, l’adulte pose une feuille dessus et on ne regarde que les endroits marqués. Si écrire ne lui dit rien, le croquis suffit."
+   "wennEsKippt": "Si le ou la jeune ne voit aucune différence, on demande ce qui était plus facile ou plus clair la deuxième fois. S’il ou elle ne veut pas montrer la première version, l’adulte pose une feuille dessus et on ne regarde que les endroits marqués. Si écrire ne lui dit rien, le croquis suffit.",
+   "kurz": "Tâche de 5 min · un seul truc · 2e version · 3 différences"
   },
   "tagesform": [
    "traurig",
@@ -17859,7 +18200,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "5-Min.-Aufgabe · ein Kniff · zweite Fassung · 3 Unterschiede finden"
  },
  {
   "id": "j:karte-fuer-meine-taetigkeit",
@@ -17935,7 +18277,9 @@
     "À quoi quelqu’un qui te regarde verrait-il que ça va déjà bien ?",
     "Tu peux aussi faire la carte pour une personne inventée."
    ],
-   "wennEsKippt": "Si rien ne vient pour ce qui va déjà bien, l’adulte propose trois mots et le ou la jeune barre ce qui ne convient pas. Si c’est difficile de penser à soi, la carte est faite pour une personne inventée. S’il ou elle ne veut rien écrire, montrer des mots suffit."
+   "wennEsKippt": "Si rien ne vient pour ce qui va déjà bien, l’adulte propose trois mots et le ou la jeune barre ce qui ne convient pas. Si c’est difficile de penser à soi, la carte est faite pour une personne inventée. S’il ou elle ne veut rien écrire, montrer des mots suffit.",
+   "kurz": "Choisir une activité · carte : nom, 3 forces, 2 chantiers, 1 astuce",
+   "vorbereitung": "Dessiner une carte exemple : nom · 3 points forts · 2 à travailler · 1 astuce"
   },
   "tagesform": [
    "muede",
@@ -18038,6 +18382,8 @@
      "linien": 1
     }
    ]
-  }
+  },
+  "kurz": "Tätigkeit wählen · Karte: Name, 3 Stärken, 2 Baustellen, 1 Trick",
+  "vorbereitung": "Beispielkarte vorzeichnen: Name · 3 Dinge, die gehen · 2 Dinge zum Üben · 1 Trick"
  }
 ]

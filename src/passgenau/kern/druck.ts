@@ -7,7 +7,7 @@ import { bausteinInhalt, eldibKurz, intern, istGruppenText, merkmaleVon, quelleT
 import { textMerkmale } from './einzel'
 import { kinderblatt, quellenDerUebertragung } from './blatt'
 import { gruppenRollen, mitgliedProfil } from './gruppe'
-import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME } from './vokabular'
+import { BOGEN_NAME, KURSVERWEIS_RE, NUR_DEUTSCH, ROLLE_NAME, kompetenzAusCode } from './vokabular'
 import { hash8, SATZ_GRENZE_GROSS, stufeAusAlter, ohneEigenenNamen } from './hilfen'
 import { BLATT_SYSTEM } from './system'
 
@@ -15,6 +15,8 @@ export interface DruckSchritt {
   min: number
   rolle: string
   titel: string
+  /** eine Zeile für „Auf einen Blick“ (Spickzettel) */
+  kurz?: string
   text: string
   sagen: string[]
   wennEsKippt?: string
@@ -32,6 +34,11 @@ export interface DruckSchritt {
 export interface DruckSitzung {
   titel: string
   zeile: string
+  /** „Auf einen Blick“ (Rückmeldung einer Fachkraft 10.10.: „zu viel Text“): Ziel in einem Satz, Werkzeug der Übung und ein
+   *  fertiger erster Satz für den Einstieg */
+  ziel?: string
+  werkzeug?: string
+  einstieg?: string
   vorname?: string
   ziele: { code: string; text: string }[]
   schritte: DruckSchritt[]
@@ -239,6 +246,50 @@ function ohneDiagnose(t: string | undefined): string | undefined {
   return rest || undefined
 }
 
+/** Kurzzeilen der eigenen Schritte (Spickzettel) */
+const PG_KURZ: Record<string, Record<Sprache, string>> = {
+  'pg:einstieg': { de: 'Den Satz oben sagen · ein Beispiel aus dem Alltag', fr: 'Dire la phrase ci-dessus · un exemple du quotidien' },
+  'pg:blatt': { de: 'Blatt zur Übung · allein, mit Hilfe auf Nachfrage', fr: 'Fiche de l’exercice · seul, aide sur demande' },
+  'pg:pause': { de: 'Kurz aufstehen und bewegen', fr: 'Se lever et bouger un peu' },
+  'pg:uebertragen': { de: 'Geübtes auf eine kommende Situation übertragen', fr: 'Transférer à une situation qui arrive' },
+  'pg:folge-transfer': { de: 'Rückblick auf die Folge · mitnehmen, was hilft', fr: 'Retour sur la série · garder ce qui aide' },
+}
+/** erster Satz, höchstens n Zeichen (an einer Wortgrenze gekürzt) */
+function ersterSatz(t: string, n: number): string | undefined {
+  const s = (t || '').replace(/\s+/g, ' ').trim().split(/(?<=[.!?])\s+(?=[A-ZÄÖÜÀ-Ý„«])/)[0] ?? ''
+  if (!s) return undefined
+  if (s.length <= n) return s.replace(/[.]$/, '')
+  return s.slice(0, s.lastIndexOf(' ', n - 1)).replace(/[,;:–-]+$/, '') + ' …'
+}
+/** Ziel der Stunde je Kompetenz: kurz (für die Fachkraft) und als Satzteil „Heute geht es darum, …“ (fürs Kind) */
+const ZIEL_FELD: Record<string, { de: string; fr: string; satz: { de: string; fr: string } }> = {
+  'gefuehle-erkennen': { de: 'Gefühle bei sich und anderen erkennen', fr: 'Reconnaître les émotions chez soi et chez les autres', satz: { de: 'Gefühle zu erkennen – bei dir und bei anderen', fr: 'reconnaître les émotions – chez toi et chez les autres' } },
+  'gefuehle-ausdruecken': { de: 'Gefühle in Worte fassen', fr: 'Mettre des mots sur ses émotions', satz: { de: 'Gefühle in Worte zu fassen', fr: 'mettre des mots sur ce que tu ressens' } },
+  selbstregulation: { de: 'Merken, wenn es zu viel wird, und wieder ruhig werden', fr: 'Remarquer quand c’est trop et retrouver le calme', satz: { de: 'zu merken, wenn es zu viel wird, und wieder ruhig zu werden', fr: 'remarquer quand c’est trop et retrouver le calme' } },
+  impulskontrolle: { de: 'Kurz stoppen, bevor man handelt', fr: 'S’arrêter un instant avant d’agir', satz: { de: 'kurz zu stoppen, bevor du handelst', fr: 't’arrêter un instant avant d’agir' } },
+  aufmerksamkeit: { de: 'Genau hinschauen und bei einer Sache bleiben', fr: 'Bien regarder et rester sur une chose', satz: { de: 'genau hinzuschauen und bei einer Sache zu bleiben', fr: 'bien regarder et rester sur une chose' } },
+  ausdauer: { de: 'Dranbleiben, auch wenn es schwer wird', fr: 'Tenir bon, même quand c’est difficile', satz: { de: 'dranzubleiben, auch wenn es schwer wird', fr: 'tenir bon, même quand c’est difficile' } },
+  kooperation: { de: 'Mit anderen zusammenarbeiten und sich absprechen', fr: 'Coopérer et se mettre d’accord', satz: { de: 'gut mit anderen zusammenzuarbeiten', fr: 'bien faire les choses ensemble' } },
+  konflikte: { de: 'Streit erkennen und fair lösen', fr: 'Reconnaître un conflit et le régler de façon juste', satz: { de: 'Streit fair zu lösen', fr: 'régler un conflit de façon juste' } },
+  kommunikation: { de: 'Ins Gespräch kommen, zuhören und sich verständlich machen', fr: 'Entrer en conversation, écouter et se faire comprendre', satz: { de: 'gut ins Gespräch zu kommen und zuzuhören', fr: 'bien entrer en conversation et écouter' } },
+  selbstbild: { de: 'Eigene Stärken kennen und benennen', fr: 'Connaître et nommer ses forces', satz: { de: 'zu sehen, was du schon gut kannst', fr: 'voir ce que tu sais déjà bien faire' } },
+  lernstrategien: { de: 'Wege finden, wie Lernen besser klappt', fr: 'Trouver comment mieux apprendre', satz: { de: 'Wege zu finden, wie Lernen besser klappt', fr: 'trouver comment mieux apprendre' } },
+  alltag: { de: 'Alltagsabläufe selbstständiger schaffen', fr: 'Réussir seul des gestes du quotidien', satz: { de: 'Dinge im Alltag selbst zu schaffen', fr: 'réussir seul des choses du quotidien' } },
+}
+/** Kompetenz der Stunde: gewählter Schwerpunkt („kompetenz:Kommunikation“), sonst das Feld des ersten Ziels, sonst des Kerns */
+function feldDerStunde(plan: Plan, kern: KatalogEintrag | undefined): string | undefined {
+  for (const c of [...plan.ziele, ...(plan.auftrag?.thema ?? [])]) {
+    if (c.startsWith('kompetenz:')) {
+      const n = c.slice(10).toLowerCase().split('/')[0].trim().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').replace(/\s+/g, '-')
+      if (ZIEL_FELD[n]) return n
+    } else if (/^[A-Z]+-\d+$/.test(c)) {
+      const f = kompetenzAusCode(c)
+      if (ZIEL_FELD[f]) return f
+    }
+  }
+  return kern?.kompetenz.find((x) => ZIEL_FELD[x])
+}
+
 function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boolean, blattTitel?: string, jugend = false): DruckSchritt {
   const e = k.eintraege.get(x.ref)
   const rolle = rolleName(x, e, sprache, jugend)
@@ -260,6 +311,9 @@ function druckSchritt(k: Katalog, x: PlanSchritt, sprache: Sprache, warum: boole
     blatt: x.ref === 'pg:blatt',
     erkundung: x.erkundung,
   }
+  // eigene Schritte haben eine feste Zeile (auch mit eingesetztem Text); ein überschriebener Text verdrängt die Zeile des Bausteins
+  const kz = PG_KURZ[x.ref]?.[sprache] ?? (ueberText || x.wahl?.length ? undefined : e.typ === 'schritt' ? (sprache === 'fr' ? e.fr?.kurz : e.kurz) : undefined)
+  d.kurz = kz ?? ersterSatz(d.text, 80)
   // Blind-Bewertung 9.10.: Optionen ohne Anleitung („Carte au trésor“ – und dann?) – jede Option mit einem Satz
   // Blind-Bewertung 8: die Beschreibung der ersten Option stand unter den anderen – jede Option trägt ihren Satz selbst,
   // der Schritt heißt neutral „Zur Wahl“
@@ -442,9 +496,29 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
         ? sp === 'fr' ? 'Un thème sensible est ouvert. Passgenau ne remplace pas une évaluation : en cas de signes de détresse, suivre ce qui a été convenu en équipe.' : 'Ein heikles Thema ist offen. Passgenau ersetzt keine Abklärung: Bei Anzeichen von Belastung gilt, was im Team vereinbart ist.'
         : sp === 'fr' ? 'Un thème sensible est ouvert pour cet enfant. Passgenau ne remplace pas une évaluation : en cas de signes de détresse, suivre ce qui a été convenu en équipe.' : 'Zu diesem Kind ist ein heikles Thema offen. Passgenau ersetzt keine Abklärung: Bei Anzeichen von Belastung gilt, was im Team vereinbart ist.',
     )
+  // Auf einen Blick: Ziel der Stunde, Werkzeug der Übung, erster Satz
+  const kernX = s.schritte.find((x) => x.rolle === 'kern')
+  const kernE = kernX ? k.eintraege.get(kernX.ref) : undefined
+  const feld = feldDerStunde(plan, kernE)
+  const zf = feld ? ZIEL_FELD[feld] : undefined
+  const werkzeug = kernE?.typ === 'schritt' ? kernE.werkzeug?.[sp] : undefined
+  const jung = p.alterJahre < 8
+  const einstiegSatz = zf
+    ? sp === 'fr'
+      ? `Aujourd’hui, on va ${zf.satz.fr}.${werkzeug && !jung ? ' Pour ça, on essaie une petite astuce.' : ''}`
+      : `Heute geht es darum, ${zf.satz.de}.${werkzeug && !jung ? ' Dafür probieren wir einen kleinen Trick aus.' : ''}`
+    : undefined
+  const einstieg = einstiegSatz ? (sp === 'fr' ? `« ${einstiegSatz} »` : `„${einstiegSatz}“`) : undefined
+  // der Schritt „Worum es heute geht“ sagt denselben fertigen Satz (statt „sagt in einem Satz, worum es geht“)
+  if (einstiegSatz) s.schritte.forEach((x, i) => {
+    if (x.ref === 'pg:einstieg' && schritte[i]) schritte[i].sagen = [einstiegSatz, ...schritte[i].sagen.filter((t) => t !== einstiegSatz)].slice(0, 3)
+  })
   return {
     titel: plan.titel,
     zeile,
+    ...(zf ? { ziel: zf[sp] } : {}),
+    ...(werkzeug ? { werkzeug } : {}),
+    ...(einstieg ? { einstieg } : {}),
     vorname: p.vorname,
     ziele,
     schritte,

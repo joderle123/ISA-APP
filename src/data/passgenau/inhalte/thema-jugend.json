@@ -61,8 +61,10 @@
         "Je commence. Qu’est-ce que je pourrais être en train de montrer ?",
         "À toi maintenant – ou dis « Passe », et j’en montre une autre."
       ],
-      "wennEsKippt": "Si le ou la jeune ne veut pas montrer de visage, il ou elle devine seulement et l’adulte montre toutes les émotions. Si deviner est trop pour le moment, il ou elle peut simplement regarder."
-    }
+      "wennEsKippt": "Si le ou la jeune ne veut pas montrer de visage, il ou elle devine seulement et l’adulte montre toutes les émotions. Si deviner est trop pour le moment, il ou elle peut simplement regarder.",
+      "kurz": "Montrer une émotion sans mots · l’autre devine · puis échange"
+    },
+    "kurz": "Gefühl lautlos im Gesicht zeigen · Gegenüber rät · dann tauschen"
   },
   {
     "id": "th:gefuehle-erkennen-bewegung-jugend",
@@ -127,8 +129,10 @@
         "La posture et la démarche en disent souvent long. À quoi le vois-tu : rythme, épaules, regard ?",
         "Ce n’est qu’une supposition – ensuite, je te dis ce que je voulais montrer."
       ],
-      "wennEsKippt": "Assis : on montre l’humeur seulement avec les épaules, les mains et la tête, et on devine à partir de cela. Si le ou la jeune ne veut pas montrer, il ou elle regarde et devine seulement."
-    }
+      "wennEsKippt": "Assis : on montre l’humeur seulement avec les épaules, les mains et la tête, et on devine à partir de cela. Si le ou la jeune ne veut pas montrer, il ou elle regarde et devine seulement.",
+      "kurz": "Montrer une humeur par la démarche · décrire · deviner"
+    },
+    "kurz": "Stimmung durch Gang und Haltung zeigen · beschreiben · raten"
   },
   {
     "id": "th:gefuehle-erkennen-reflexion-jugend",
@@ -196,8 +200,12 @@
         "Quel papier convient le mieux ? Raconte sans donner de nom.",
         "Pour moi, c’est souvent la voix. Et pour toi ?"
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve pas de situation, il ou elle choisit seulement le papier et dit pourquoi. L’adulte peut décrire une situation inventée (deux personnes dans le bus), et le ou la jeune complète : à quoi le voit-on ?"
-    }
+      "wennEsKippt": "Si le ou la jeune ne trouve pas de situation, il ou elle choisit seulement le papier et dit pourquoi. L’adulte peut décrire une situation inventée (deux personnes dans le bus), et le ou la jeune complète : à quoi le voit-on ?",
+      "kurz": "Quatre papiers : visage · voix · posture · chat · une situation",
+      "vorbereitung": "Écrire 4 papiers : visage · voix · posture · message de chat"
+    },
+    "kurz": "Vier Zettel: Gesicht · Stimme · Haltung · Chat · Situation erzählen",
+    "vorbereitung": "4 Zettel beschriften: Gesicht · Stimme · Haltung · Chat-Nachricht"
   },
   {
     "id": "th:gefuehle-erkennen-abschluss-jugend",
@@ -261,8 +269,10 @@
         "Je commence : aujourd’hui, j’étais plutôt …",
         "Et toi ? Ou dis « Passe »."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve pas de mot, l’adulte en propose trois au choix, ou le ou la jeune montre le pouce vers le haut, sur le côté ou vers le bas. « Passe » est aussi une fin valable."
-    }
+      "wennEsKippt": "Si le ou la jeune ne trouve pas de mot, l’adulte en propose trois au choix, ou le ou la jeune montre le pouce vers le haut, sur le côté ou vers le bas. « Passe » est aussi une fin valable.",
+      "kurz": "Un mot précis au lieu de « bien/mal » · puis au revoir"
+    },
+    "kurz": "Statt „gut/schlecht“ ein präzises Wort suchen · dann Tschüss"
   },
   {
     "id": "th:gefuehle-ausdruecken-ankommen-jugend",
@@ -326,8 +336,10 @@
         "Je commence : en ce moment, je suis plutôt …",
         "Et toi ? Un mot ou une météo suffit – ou « Passe »."
       ],
-      "wennEsKippt": "Si le ou la jeune ne veut rien dire de soi, il ou elle décrit la météo en un mot et l’adulte donne la sienne. « Passe » est aussi très bien ; la séance commence alors simplement."
-    }
+      "wennEsKippt": "Si le ou la jeune ne veut rien dire de soi, il ou elle décrit la météo en un mot et l’adulte donne la sienne. « Passe » est aussi très bien ; la séance commence alors simplement.",
+      "kurz": "« En ce moment je suis plutôt… » · un mot ou la météo, passe possible"
+    },
+    "kurz": "„Gerade bin ich eher …“ · ein Wort oder Wetter, Pass erlaubt"
   },
   {
     "id": "th:gefuehle-ausdruecken-bewegung-jugend",
@@ -394,8 +406,12 @@
         "Place-toi là où cela correspond à peu près – aucun point n’est faux.",
         "Quel mot irait avec ? Ou dis « Passe »."
       ],
-      "wennEsKippt": "Assis : on montre l’intensité avec la main au-dessus de la table, tout en bas pour « à peine », tout en haut pour « très fort ». Si une situation ne convient pas, le ou la jeune en propose une, ou on la saute."
-    }
+      "wennEsKippt": "Assis : on montre l’intensité avec la main au-dessus de la table, tout en bas pour « à peine », tout en haut pour « très fort ». Si une situation ne convient pas, le ou la jeune en propose une, ou on la saute.",
+      "kurz": "Situation du quotidien · se placer sur la ligne · un mot",
+      "vorbereitung": "Coller une ligne (2 m) au sol, papiers « à peine » à gauche, « très fort » à droite"
+    },
+    "kurz": "Alltagssituation nennen · an Punkt auf der Linie stellen · Wort dazu",
+    "vorbereitung": "Linie (2 m Klebeband) kleben, Zettel „kaum“ links, „sehr stark“ rechts legen"
   },
   {
     "id": "th:gefuehle-ausdruecken-reflexion-jugend",
@@ -463,8 +479,10 @@
         "Quelle version a été la plus facile pour toi ?",
         "Laquelle en aurait dit le plus ? Aucune n’est fausse."
       ],
-      "wennEsKippt": "Si aucune situation ne vient, l’adulte en choisit une neutre (un rendez-vous annulé au dernier moment) et le ou la jeune écrit dessus. Si le temps manque, deux versions suffisent."
-    }
+      "wennEsKippt": "Si aucune situation ne vient, l’adulte en choisit une neutre (un rendez-vous annulé au dernier moment) et le ou la jeune écrit dessus. Si le temps manque, deux versions suffisent.",
+      "kurz": "Une émotion en 3 versions : chat · à un ami · à un adulte"
+    },
+    "kurz": "Ein Gefühl in 3 Fassungen: Chat · an Freund:in · an Erwachsene"
   },
   {
     "id": "th:gefuehle-ausdruecken-abschluss-jugend",
@@ -528,8 +546,10 @@
         "Je commence : « Je me sens … »",
         "Et toi ? Ou « Passe » ; alors un signe de tête suffit."
       ],
-      "wennEsKippt": "Si aucune phrase ne vient, le ou la jeune choisit parmi trois débuts : « Ça me fait plaisir que … », « Je manque d’énergie parce que … », « Je me demande si … ». Un signe de tête en partant suffit aussi."
-    }
+      "wennEsKippt": "Si aucune phrase ne vient, le ou la jeune choisit parmi trois débuts : « Ça me fait plaisir que … », « Je manque d’énergie parce que … », « Je me demande si … ». Un signe de tête en partant suffit aussi.",
+      "kurz": "Phrase « Je suis… » avec une émotion pour finir · passe : un signe"
+    },
+    "kurz": "Satz mit „Ich bin …“ und Gefühl zum Abschied · Pass: Nicken"
   },
   {
     "id": "th:selbstregulation-ankommen-jugend",
@@ -594,8 +614,10 @@
         "Ma batterie est à … pour cent en ce moment. Et la tienne ?",
         "Quel petit pas t’aiderait un peu ? On le fait maintenant."
       ],
-      "wennEsKippt": "Si le ou la jeune ne veut pas dire de chiffre, il ou elle le pense seulement et fait quand même le petit pas. Si aucun pas ne vient, l’adulte montre le sien et on le fait ensemble."
-    }
+      "wennEsKippt": "Si le ou la jeune ne veut pas dire de chiffre, il ou elle le pense seulement et fait quand même le petit pas. Si aucun pas ne vient, l’adulte montre le sien et on le fait ensemble.",
+      "kurz": "Niveau de batterie 0–100 · faire tout de suite un petit pas"
+    },
+    "kurz": "Akku-Stand 0–100 nennen · winzigen Schritt dafür gleich machen"
   },
   {
     "id": "th:selbstregulation-bewegung-jugend",
@@ -660,8 +682,10 @@
         "C’est toi qui règles. Dis un chiffre de 1 à 5.",
         "Maintenant, on redescend de 5 à 1 – et à la fin, une longue expiration."
       ],
-      "wennEsKippt": "Assis : les chiffres donnent le rythme auquel on tapote doucement la table du bout des doigts ; à 1, les mains restent immobiles. Si le ou la jeune ne veut pas régler, l’adulte annonce les chiffres."
-    }
+      "wennEsKippt": "Assis : les chiffres donnent le rythme auquel on tapote doucement la table du bout des doigts ; à 1, les mains restent immobiles. Si le ou la jeune ne veut pas régler, l’adulte annonce les chiffres.",
+      "kurz": "Marcher selon 1–5 · le jeune règle le rythme · à 1 expirer"
+    },
+    "kurz": "Gehen nach Zahl 1–5 · Jugendliche:r regelt Tempo · bei 1 ausatmen"
   },
   {
     "id": "th:selbstregulation-reflexion-jugend",
@@ -729,8 +753,12 @@
         "Où mets-tu ce papier ? Il n’y a ni bonne ni mauvaise réponse.",
         "Quand cela t’a-t-il aidé la dernière fois ? Tu peux dire « Passe »."
       ],
-      "wennEsKippt": "Si le ou la jeune n’a pas d’exemple, on trie seulement et l’adulte en raconte un à lui. Si trier est trop, il ou elle choisit un seul papier, celui qui convient le mieux."
-    }
+      "wennEsKippt": "Si le ou la jeune n’a pas d’exemple, on trie seulement et l’adulte en raconte un à lui. Si trier est trop, il ou elle choisit un seul papier, celui qui convient le mieux.",
+      "kurz": "Trier cinq papiers en trois piles · raconter un exemple",
+      "vorbereitung": "Écrire 5 papiers : respirer · bouger · musique · parler · rester seul"
+    },
+    "kurz": "Fünf Zettel in drei Stapel sortieren · Beispiel zu einem erzählen",
+    "vorbereitung": "5 Zettel beschriften: tief atmen · bewegen · Musik hören · reden · allein sein"
   },
   {
     "id": "th:selbstregulation-abschluss-jugend",
@@ -794,8 +822,10 @@
         "Évalue en silence un chiffre de 1 à 10. Tu n’as pas besoin de le dire.",
         "Laisse tomber les épaules, expire lentement une fois – et évalue encore."
       ],
-      "wennEsKippt": "Si le ou la jeune ne veut pas participer, l’adulte expire lentement une fois et dit au revoir. Si quelqu’un est mal à l’aise, il suffit de laisser retomber les épaules."
-    }
+      "wennEsKippt": "Si le ou la jeune ne veut pas participer, l’adulte expire lentement une fois et dit au revoir. Si quelqu’un est mal à l’aise, il suffit de laisser retomber les épaules.",
+      "kurz": "Estimer sa tension en silence · épaules, expirer · réestimer"
+    },
+    "kurz": "Spannung still schätzen · Schultern sinken, ausatmen · neu schätzen"
   },
   {
     "id": "th:impulskontrolle-ankommen-jugend",
@@ -860,8 +890,10 @@
         "Une question – mais on compte en silence jusqu’à trois avant de répondre.",
         "À toi de poser une question. On attend de nouveau jusqu’à trois."
       ],
-      "wennEsKippt": "Si attendre est difficile, deux secondes suffisent, ou on montre la pause avec un doigt qui monte lentement. Si le ou la jeune ne trouve pas de question, l’adulte continue à en poser."
-    }
+      "wennEsKippt": "Si attendre est difficile, deux secondes suffisent, ou on montre la pause avec un doigt qui monte lentement. Si le ou la jeune ne trouve pas de question, l’adulte continue à en poser.",
+      "kurz": "Poser une question · compter jusqu’à trois avant de répondre"
+    },
+    "kurz": "Frage stellen · vor der Antwort still bis drei zählen · tauschen"
   },
   {
     "id": "th:impulskontrolle-bewegung-jugend",
@@ -926,8 +958,10 @@
         "Main à plat : on s’arrête. Pouce : on continue.",
         "Maintenant, c’est toi qui donnes les signaux – et j’essaie de ne pas tomber dans le piège."
       ],
-      "wennEsKippt": "Assis : les deux tapotent doucement la table du bout des doigts ; main à plat, les mains s’arrêtent aussitôt, pouce, on continue. Si c’est trop difficile, on garde seulement le signal d’arrêt, sans faux signal."
-    }
+      "wennEsKippt": "Assis : les deux tapotent doucement la table du bout des doigts ; main à plat, les mains s’arrêtent aussitôt, pouce, on continue. Si c’est trop difficile, on garde seulement le signal d’arrêt, sans faux signal.",
+      "kurz": "Marcher · main plate = stop, pouce = continuer (piège !) · échanger"
+    },
+    "kurz": "Gehen · flache Hand = stehen, Daumen = weiter (Fake!) · tauschen"
   },
   {
     "id": "th:impulskontrolle-reflexion-jugend",
@@ -995,8 +1029,10 @@
         "Où y a-t-il eu, ou y aurait-il, une pause ? Un exemple inventé est permis.",
         "Qu’est-ce qui aurait aidé pendant cette seconde ?"
       ],
-      "wennEsKippt": "Si aucun moment ne vient, l’adulte prend un exemple du bus ou de la récréation (un message qu’on veut envoyer tout de suite), et on remplit la ligne ensemble. Un mot-clé par point suffit."
-    }
+      "wennEsKippt": "Si aucun moment ne vient, l’adulte prend un exemple du bus ou de la récréation (un message qu’on veut envoyer tout de suite), et on remplit la ligne ensemble. Un mot-clé par point suffit.",
+      "kurz": "Ligne impulsion · pause · action · où était la pause ?"
+    },
+    "kurz": "Linie Impuls · Pause · Handlung zeichnen · wo war die Pause?"
   },
   {
     "id": "th:impulskontrolle-abschluss-jugend",
@@ -1062,8 +1098,10 @@
         "Main sur la table – on attend en silence.",
         "C’est fait. Merci à toi – au revoir."
       ],
-      "wennEsKippt": "Si rester immobile est difficile, cinq secondes suffisent, ou on attend debout. Si le ou la jeune ne veut pas, l’adulte dit simplement au revoir."
-    }
+      "wennEsKippt": "Si rester immobile est difficile, cinq secondes suffisent, ou on attend debout. Si le ou la jeune ne veut pas, l’adulte dit simplement au revoir.",
+      "kurz": "10 secondes de silence, main sur la table · puis au revoir"
+    },
+    "kurz": "10 Sekunden still sitzen, Hand auf dem Tisch · erst dann Tschüss"
   },
   {
     "id": "th:aufmerksamkeit-ankommen-jugend",
@@ -1131,8 +1169,10 @@
         "Regarde pendant dix secondes, puis ferme les yeux. Je change un petit détail.",
         "Qu’est-ce qui a changé ? Ensuite, tu peux me tester aussi."
       ],
-      "wennEsKippt": "Si le ou la jeune ne veut pas fermer les yeux, il ou elle se détourne seulement. Si c’est trop facile, on change deux choses ; si c’est trop difficile, une seule grande chose."
-    }
+      "wennEsKippt": "Si le ou la jeune ne veut pas fermer les yeux, il ou elle se détourne seulement. Si c’est trop facile, on change deux choses ; si c’est trop difficile, une seule grande chose.",
+      "kurz": "Regarder la table 10 s · yeux fermés · trouver le changement"
+    },
+    "kurz": "Tisch 10 Sek. ansehen · Augen zu · Veränderung finden · tauschen"
   },
   {
     "id": "th:aufmerksamkeit-bewegung-jugend",
@@ -1201,8 +1241,12 @@
         "Le regard reste sur le livre. Dévier est normal, on recommence simplement.",
         "Maintenant, compte en plus de trois en trois – seulement dans ta tête."
       ],
-      "wennEsKippt": "Assis : on suit lentement le bord de la table du doigt, sans détacher le regard, en comptant de trois en trois dans sa tête. Si le livre est trop lourd, un cahier ou un gobelet vide sur la main suffit."
-    }
+      "wennEsKippt": "Assis : on suit lentement le bord de la table du doigt, sans détacher le regard, en comptant de trois en trois dans sa tête. Si le livre est trop lourd, un cahier ou un gobelet vide sur la main suffit.",
+      "kurz": "Talon-pointe sur la ligne, livre sur la main · puis à reculons",
+      "vorbereitung": "Coller une ligne droite de 3 m de ruban adhésif au sol"
+    },
+    "kurz": "Ferse an Zehe auf der Linie, Buch auf der Hand · dann rückwärts",
+    "vorbereitung": "Drei Meter Klebeband als gerade Linie auf den Boden kleben"
   },
   {
     "id": "th:aufmerksamkeit-reflexion-jugend",
@@ -1270,8 +1314,10 @@
         "Dessine un cours sous forme de courbe : en haut présent, en bas absent.",
         "Que se passait-il au point le plus bas ? Tu peux dire « Passe »."
       ],
-      "wennEsKippt": "Si dessiner est difficile, le ou la jeune montre avec la main en l’air comment le cours se déroule et ne donne que deux mots-clés. Sinon, il ou elle raconte ce qui distrait le plus."
-    }
+      "wennEsKippt": "Si dessiner est difficile, le ou la jeune montre avec la main en l’air comment le cours se déroule et ne donne que deux mots-clés. Sinon, il ou elle raconte ce qui distrait le plus.",
+      "kurz": "Dessiner la courbe d’un cours · deux mots pour les creux"
+    },
+    "kurz": "Kurve einer Schulstunde zeichnen · zwei Stichworte zu Tiefpunkten"
   },
   {
     "id": "th:aufmerksamkeit-abschluss-jugend",
@@ -1336,8 +1382,10 @@
         "Je commence : j’ai remarqué …",
         "Et toi ? Une petite chose compte aussi."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve rien, il ou elle montre du doigt quelque chose qu’il ou elle voit dans la pièce en ce moment. « Passe » est permis."
-    }
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, il ou elle montre du doigt quelque chose qu’il ou elle voit dans la pièce en ce moment. « Passe » est permis.",
+      "kurz": "Chacun nomme un détail remarqué aujourd’hui · puis au revoir"
+    },
+    "kurz": "Je ein Detail nennen, das heute aufgefallen ist · dann Tschüss"
   },
   {
     "id": "th:ausdauer-ankommen-jugend",
@@ -1401,8 +1449,10 @@
         "Je commence : dernièrement, j’ai quand même terminé …",
         "Et toi ? Cela peut être petit – ou « Passe »."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve rien, l’adulte propose deux exemples de la vie des jeunes (entraînement, devoirs, vocabulaire) et il ou elle choisit celui qui convient. Un signe de tête compte aussi."
-    }
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, l’adulte propose deux exemples de la vie des jeunes (entraînement, devoirs, vocabulaire) et il ou elle choisit celui qui convient. Un signe de tête compte aussi.",
+      "kurz": "Nommer ce qu’on a terminé malgré le manque d’envie"
+    },
+    "kurz": "Nennen, was man trotz fehlender Lust zu Ende gebracht hat"
   },
   {
     "id": "th:ausdauer-bewegung-jugend",
@@ -1468,8 +1518,12 @@
         "À chaque point, tu décides : on continue ou dix secondes de pause.",
         "Les pauses font partie du chemin. L’important, c’est d’arriver."
       ],
-      "wennEsKippt": "Assis : les quatre papiers sont sur la table et un doigt passe de papier en papier (trois tours), avec une courte pause à chaque point. Si le trajet est trop long, deux tours suffisent."
-    }
+      "wennEsKippt": "Assis : les quatre papiers sont sur la table et un doigt passe de papier en papier (trois tours), avec une courte pause à chaque point. Si le trajet est trop long, deux tours suffisent.",
+      "kurz": "Parcourir quatre étapes · à chacune : continuer ou 10 s de pause",
+      "vorbereitung": "Poser 4 papiers numérotés 1–4 comme étapes dans la pièce"
+    },
+    "kurz": "Vier Zettel als Etappen abgehen · an jedem: weiter oder 10 Sek. Pause",
+    "vorbereitung": "4 Zettel als Etappen 1–4 im Raum auslegen"
   },
   {
     "id": "th:ausdauer-reflexion-jugend",
@@ -1537,8 +1591,12 @@
         "Quel papier t’aide le plus ?",
         "Quand cela a-t-il marché la dernière fois ? Ou que voudrais-tu essayer un jour ?"
       ],
-      "wennEsKippt": "Si aucun papier ne convient, le ou la jeune en écrit un lui-même. S’il ou elle n’a pas d’exemple, il suffit de choisir le papier et de dire brièvement pourquoi."
-    }
+      "wennEsKippt": "Si aucun papier ne convient, le ou la jeune en écrit un lui-même. S’il ou elle n’a pas d’exemple, il suffit de choisir le papier et de dire brièvement pourquoi.",
+      "kurz": "Quatre papiers : étapes · pauses · récompense · pas seul · choisir",
+      "vorbereitung": "Écrire 4 papiers : petites étapes · pauses fixes · récompense · pas seul"
+    },
+    "kurz": "Vier Zettel: Etappen · Pausen · Belohnung · nicht allein · wählen",
+    "vorbereitung": "4 Zettel beschriften: kleine Etappen · feste Pausen · Belohnung danach · nicht allein"
   },
   {
     "id": "th:ausdauer-abschluss-jugend",
@@ -1605,8 +1663,10 @@
         "Pour moi, c’est …",
         "Tu n’as pas à lire la tienne à voix haute. Tu décides."
       ],
-      "wennEsKippt": "Si le ou la jeune ne veut rien écrire, il ou elle dit sa coche à voix haute ou la pense seulement. L’adulte dit alors la sienne et au revoir."
-    }
+      "wennEsKippt": "Si le ou la jeune ne veut rien écrire, il ou elle dit sa coche à voix haute ou la pense seulement. L’adulte dit alors la sienne et au revoir.",
+      "kurz": "Une coche et un mot : ce qui a été terminé aujourd’hui · au revoir"
+    },
+    "kurz": "Haken plus Stichwort: was heute zu Ende gebracht wurde · Tschüss"
   },
   {
     "id": "th:kooperation-ankommen-jugend",
@@ -1671,8 +1731,10 @@
         "Je commence par « Aujourd’hui ». Ton mot ?",
         "Bien. Comment la phrase pourrait-elle se terminer ? Il faut que les deux soient satisfaits."
       ],
-      "wennEsKippt": "Si la phrase se bloque, chacun peut dire une fois « on recommence ». Si mot par mot est trop difficile, chacun dit une demi-phrase."
-    }
+      "wennEsKippt": "Si la phrase se bloque, chacun peut dire une fois « on recommence ». Si mot par mot est trop difficile, chacun dit une demi-phrase.",
+      "kurz": "Construire une phrase mot à mot à tour de rôle, accord des deux"
+    },
+    "kurz": "Satz Wort für Wort abwechselnd bauen · beide stimmen zu · 2 Sätze"
   },
   {
     "id": "th:kooperation-bewegung-jugend",
@@ -1741,8 +1803,10 @@
         "La balle n’arrive au but que si nous faisons attention tous les deux. Chacun peut dire « plus lentement » ou « stop ».",
         "Qu’est-ce qui nous a aidés ?"
       ],
-      "wennEsKippt": "Assis : tous deux tiennent le tissu au-dessus de la table et font rouler la balle lentement en cercle, sans qu’elle tombe. Si la balle tombe souvent, on prend une balle plus grande ou une boule de papier."
-    }
+      "wennEsKippt": "Assis : tous deux tiennent le tissu au-dessus de la table et font rouler la balle lentement en cercle, sans qu’elle tombe. Si la balle tombe souvent, on prend une balle plus grande ou une boule de papier.",
+      "kurz": "Tenir le tissu à deux · porter la balle autour de deux chaises"
+    },
+    "kurz": "Tuch zu zweit halten · Ball um zwei Stühle tragen · Stopp erlaubt"
   },
   {
     "id": "th:kooperation-reflexion-jugend",
@@ -1810,8 +1874,12 @@
         "Quel papier te correspond le plus souvent ? Aucun rôle n’est meilleur qu’un autre.",
         "Et lequel aimerais-tu essayer un jour ?"
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve pas de situation d’équipe, l’adulte en propose une inventée (créer une affiche pour l’école) et il ou elle choisit un rôle pour celle-ci. Un seul papier suffit aussi."
-    }
+      "wennEsKippt": "Si le ou la jeune ne trouve pas de situation d’équipe, l’adulte en propose une inventée (créer une affiche pour l’école) et il ou elle choisit un rôle pour celle-ci. Un seul papier suffit aussi.",
+      "kurz": "Cinq rôles d’équipe : mon rôle · un à essayer",
+      "vorbereitung": "Écrire 5 papiers : idées · organiser · agir · médiation · motiver"
+    },
+    "kurz": "Fünf Teamrollen-Zettel: meine Rolle · eine zum Ausprobieren",
+    "vorbereitung": "5 Zettel beschriften: Ideen geben · ordnen · anpacken · vermitteln · antreiben"
   },
   {
     "id": "th:kooperation-abschluss-jugend",
@@ -1875,8 +1943,10 @@
         "Ce qui m’a aidé aujourd’hui, c’est que tu …",
         "Et pour toi ? Ou « Passe », alors j’en dis une autre."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve rien, il ou elle dit seulement « Merci d’avoir participé ». L’adulte ajoute alors une deuxième observation concrète."
-    }
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, il ou elle dit seulement « Merci d’avoir participé ». L’adulte ajoute alors une deuxième observation concrète.",
+      "kurz": "Phrase « Aujourd’hui, ça m’a aidé que tu… » · chacun son tour"
+    },
+    "kurz": "Satz „Geholfen hat mir heute, dass du …“ · gegenseitig"
   },
   {
     "id": "th:konflikte-ankommen-jugend",
@@ -1944,8 +2014,10 @@
         "Que vois-tu de ta place ? Je te dis ce que je vois de la mienne.",
         "Les deux descriptions sont justes – même si nous voyons autre chose."
       ],
-      "wennEsKippt": "S’ils sont assis côte à côte, l’objet se place en biais entre eux et les descriptions diffèrent quand même. Si le ou la jeune ne veut pas changer de place, il suffit de tourner l’objet."
-    }
+      "wennEsKippt": "S’ils sont assis côte à côte, l’objet se place en biais entre eux et les descriptions diffèrent quand même. Si le ou la jeune ne veut pas changer de place, il suffit de tourner l’objet.",
+      "kurz": "Objet entre nous · chacun décrit sa vue · échanger les places"
+    },
+    "kurz": "Gegenstand dazwischen · jeder beschreibt seine Sicht · Plätze tauschen"
   },
   {
     "id": "th:konflikte-bewegung-jugend",
@@ -2014,8 +2086,12 @@
         "D’abord, on continue simplement, puis l’un attend, puis on s’entend brièvement.",
         "Quelle façon était la plus agréable ?"
       ],
-      "wennEsKippt": "Assis : chacun déplace un stylo sur une bande de papier étroite, l’un vers l’autre, et on essaie les trois façons. Si le ou la jeune ne veut pas parler, un regard ou un geste de la main suffit."
-    }
+      "wennEsKippt": "Assis : chacun déplace un stylo sur une bande de papier étroite, l’un vers l’autre, et on essaie les trois façons. Si le ou la jeune ne veut pas parler, un regard ou un geste de la main suffit.",
+      "kurz": "Couloir en ruban : trois façons de se croiser · en parler",
+      "vorbereitung": "Marquer au ruban un couloir d’env. 1,5 m de large et 5 m de long"
+    },
+    "kurz": "Klebeband-Gang: drei Arten, aneinander vorbeizukommen · auswerten",
+    "vorbereitung": "Klebeband-Gang markieren: ca. 1,5 m breit, 5 m lang"
   },
   {
     "id": "th:konflikte-reflexion-jugend",
@@ -2083,8 +2159,10 @@
         "Écris une phrase en « tu » comme on pourrait en dire dans une dispute. Elle peut être inventée.",
         "Maintenant, la même chose avec « je ». Qu’est-ce qui sonne différemment ?"
       ],
-      "wennEsKippt": "Si aucune phrase ne vient, l’adulte en donne une (« C’est bien typique de toi ») et le ou la jeune la reformule. On peut aussi reformuler ensemble."
-    }
+      "wennEsKippt": "Si aucune phrase ne vient, l’adulte en donne une (« C’est bien typique de toi ») et le ou la jeune la reformule. On peut aussi reformuler ensemble.",
+      "kurz": "Écrire une phrase en « tu » d’une dispute · la reformuler en « je »"
+    },
+    "kurz": "Du-Satz aus einem Streit schreiben · als Ich-Satz umformulieren"
   },
   {
     "id": "th:konflikte-abschluss-jugend",
@@ -2152,8 +2230,10 @@
         "Ma phrase serait : …",
         "Et la tienne ? Tu peux l’écrire et l’emporter."
       ],
-      "wennEsKippt": "Si aucune phrase ne vient, le ou la jeune choisit l’une des trois propositions de l’adulte et la change comme il ou elle veut. « Passe » est aussi très bien."
-    }
+      "wennEsKippt": "Si aucune phrase ne vient, le ou la jeune choisit l’une des trois propositions de l’adulte et la change comme il ou elle veut. « Passe » est aussi très bien.",
+      "kurz": "Dire ou noter une phrase qui apaise une dispute · l’emporter"
+    },
+    "kurz": "Satz, der einen Streit beruhigt, sagen oder notieren · mitnehmen"
   },
   {
     "id": "th:kommunikation-ankommen-jugend",
@@ -2218,8 +2298,10 @@
         "D’abord en trois mots, puis en une phrase complète : comment s’est passé le trajet ?",
         "Quelle réponse t’en a dit le plus ?"
       ],
-      "wennEsKippt": "Si le ou la jeune ne veut pas parler du trajet, l’adulte choisit une autre question (la météo d’aujourd’hui ou la saison préférée). Un signe de tête à la place d’une réponse est aussi accepté."
-    }
+      "wennEsKippt": "Si le ou la jeune ne veut pas parler du trajet, l’adulte choisit une autre question (la météo d’aujourd’hui ou la saison préférée). Un signe de tête à la place d’une réponse est aussi accepté.",
+      "kurz": "Même question deux fois : en 3 mots, puis en phrase · comparer"
+    },
+    "kurz": "Frage zweimal: Antwort in 3 Wörtern, dann ganzer Satz · vergleichen"
   },
   {
     "id": "th:kommunikation-bewegung-jugend",
@@ -2286,8 +2368,10 @@
         "Une phrase, puis on change. Sujet : un loisir, un jeu ou un sport.",
         "À quoi as-tu remarqué que j’écoutais ?"
       ],
-      "wennEsKippt": "Assis : celui ou celle qui tient le stylo parle et le passe après chaque phrase ; qui écoute pose les mains tranquillement sur la table. Si un sujet est difficile, l’adulte en choisit un."
-    }
+      "wennEsKippt": "Assis : celui ou celle qui tient le stylo parle et le passe après chaque phrase ; qui écoute pose les mains tranquillement sur la table. Si un sujet est difficile, l’adulte en choisit un.",
+      "kurz": "Parler en marchant · l’autre écoute immobile · échanger par phrase"
+    },
+    "kurz": "Gehen und sprechen · Zuhörer steht, nickt · nach jedem Satz wechseln"
   },
   {
     "id": "th:kommunikation-reflexion-jugend",
@@ -2355,8 +2439,12 @@
         "Quel papier a aidé aujourd’hui ?",
         "À quoi l’as-tu remarqué ? Un petit exemple suffit."
       ],
-      "wennEsKippt": "Si aucun papier ne convient, le ou la jeune en écrit un lui-même. S’il ou elle ne trouve rien, il ou elle choisit simplement le papier qu’il ou elle apprécie le plus dans les conversations."
-    }
+      "wennEsKippt": "Si aucun papier ne convient, le ou la jeune en écrit un lui-même. S’il ou elle ne trouve rien, il ou elle choisit simplement le papier qu’il ou elle apprécie le plus dans les conversations.",
+      "kurz": "Trois papiers : regard · questions · laisser finir · lequel a aidé ?",
+      "vorbereitung": "Écrire 3 papiers : regard · poser des questions · laisser finir"
+    },
+    "kurz": "Drei Zettel: Blickkontakt · Fragen · ausreden lassen · was half?",
+    "vorbereitung": "3 Zettel beschriften: Blickkontakt · Fragen stellen · ausreden lassen"
   },
   {
     "id": "th:kommunikation-abschluss-jugend",
@@ -2423,8 +2511,10 @@
         "Mon début de phrase est : …",
         "Tu décides si tu lis le tien à voix haute."
       ],
-      "wennEsKippt": "Si aucune phrase ne vient, le ou la jeune choisit entre deux débuts proposés par l’adulte et le change pour qu’il lui convienne. « Passe » est aussi très bien."
-    }
+      "wennEsKippt": "Si aucune phrase ne vient, le ou la jeune choisit entre deux débuts proposés par l’adulte et le change pour qu’il lui convienne. « Passe » est aussi très bien.",
+      "kurz": "Écrire un début de phrase pour demain · le lire si on veut"
+    },
+    "kurz": "Satzanfang für ein Gespräch morgen aufschreiben · optional vorlesen"
   },
   {
     "id": "th:selbstbild-ankommen-jugend",
@@ -2488,8 +2578,10 @@
         "Je commence : je sais assez bien …",
         "Et toi ? Cela peut être petit."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve rien, l’adulte propose deux exemples de petites forces (écouter, trouver son chemin) et il ou elle en choisit un ou dit non. « Passe » est aussi très bien."
-    }
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, l’adulte propose deux exemples de petites forces (écouter, trouver son chemin) et il ou elle en choisit un ou dit non. « Passe » est aussi très bien.",
+      "kurz": "Nommer ce qu’on fait bien, même petit · passe possible"
+    },
+    "kurz": "Etwas Gekonntes nennen, auch Winziges · Pass erlaubt"
   },
   {
     "id": "th:selbstbild-bewegung-jugend",
@@ -2553,8 +2645,10 @@
         "D’abord les épaules tombantes, puis neutre, puis le dos droit. Qu’est-ce qui change ?",
         "Quelle démarche te ressemble ?"
       ],
-      "wennEsKippt": "Assis : tous deux essaient trois postures (affaissé, neutre, droit) et répondent aux mêmes questions. Si le ou la jeune ne veut pas montrer, il ou elle regarde, et l’adulte montre toutes les variantes."
-    }
+      "wennEsKippt": "Assis : tous deux essaient trois postures (affaissé, neutre, droit) et répondent aux mêmes questions. Si le ou la jeune ne veut pas montrer, il ou elle regarde, et l’adulte montre toutes les variantes.",
+      "kurz": "Trois démarches : voûté · neutre · droit · dire ce qui change"
+    },
+    "kurz": "Drei Gangarten: hängend · neutral · aufrecht · Veränderung benennen"
   },
   {
     "id": "th:selbstbild-reflexion-jugend",
@@ -2622,8 +2716,10 @@
         "Complète trois fois : « Je suis quelqu’un qui … » – école, amis, loisirs.",
         "Lis seulement ce que tu veux lire. « Passe » est permis."
       ],
-      "wennEsKippt": "Si compléter est difficile, l’adulte donne des exemples comme « … qui aime essayer des choses nouvelles » ou « … qui écoute d’abord », et le ou la jeune choisit ou modifie. Une seule phrase suffit."
-    }
+      "wennEsKippt": "Si compléter est difficile, l’adulte donne des exemples comme « … qui aime essayer des choses nouvelles » ou « … qui écoute d’abord », et le ou la jeune choisit ou modifie. Une seule phrase suffit.",
+      "kurz": "Compléter trois fois (école, amis, loisirs) · en lire une"
+    },
+    "kurz": "Satzanfang dreimal ergänzen (Schule, Freunde, Freizeit) · einen lesen"
   },
   {
     "id": "th:selbstbild-abschluss-jugend",
@@ -2687,8 +2783,10 @@
         "Aujourd’hui, j’ai remarqué que je …",
         "Et toi ? Cela peut être petit – ou « Passe »."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve rien, il ou elle choisit parmi trois propositions de l’adulte (« … que je sais tenir bon », « … que je pose des questions », « … que j’ai de l’humour »). Un signe de tête en partant est aussi très bien."
-    }
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, il ou elle choisit parmi trois propositions de l’adulte (« … que je sais tenir bon », « … que je pose des questions », « … que j’ai de l’humour »). Un signe de tête en partant est aussi très bien.",
+      "kurz": "Finir la phrase « Aujourd’hui j’ai remarqué que je… »"
+    },
+    "kurz": "„Heute habe ich an mir bemerkt, dass ich …“ beenden"
   },
   {
     "id": "th:lernstrategien-ankommen-jugend",
@@ -2753,8 +2851,10 @@
         "Cinq mots, 20 secondes – trouve ta propre astuce.",
         "Quelle astuce as-tu utilisée ? Le nombre de bons mots n’a pas d’importance."
       ],
-      "wennEsKippt": "Si retenir est difficile, trois mots suffisent, ou l’adulte lit les mots une deuxième fois. Si le ou la jeune ne veut pas réciter, il ou elle raconte seulement l’astuce."
-    }
+      "wennEsKippt": "Si retenir est difficile, trois mots suffisent, ou l’adulte lit les mots une deuxième fois. Si le ou la jeune ne veut pas réciter, il ou elle raconte seulement l’astuce.",
+      "kurz": "Retenir en 20 s avec sa propre astuce · redire · nommer l’astuce"
+    },
+    "kurz": "Wörter in 20 Sek. mit eigenem Trick merken · aufsagen · Trick nennen"
   },
   {
     "id": "th:lernstrategien-bewegung-jugend",
@@ -2819,8 +2919,10 @@
         "Cette notion va à la porte. Quelle image peut la relier à cet endroit ?",
         "Maintenant, on parcourt le chemin et on dit les cinq notions."
       ],
-      "wennEsKippt": "Assis : cinq objets sur la table (stylo, gobelet, cahier …) servent de stations, et un doigt passe d’un objet à l’autre. Si cinq notions, c’est trop, trois suffisent."
-    }
+      "wennEsKippt": "Assis : cinq objets sur la table (stylo, gobelet, cahier …) servent de stations, et un doigt passe d’un objet à l’autre. Si cinq notions, c’est trop, trois suffisent.",
+      "kurz": "Cinq notions posées dans la pièce · parcours dans les deux sens"
+    },
+    "kurz": "Fünf Begriffe an Orten im Raum ablegen · Route vor- und rückwärts"
   },
   {
     "id": "th:lernstrategien-reflexion-jugend",
@@ -2888,8 +2990,12 @@
         "Dans quelle pile va ce papier ?",
         "Quand cette méthode t’a-t-elle aidé la dernière fois ?"
       ],
-      "wennEsKippt": "Si trier est trop, le ou la jeune choisit seulement un papier, celui qui convient le mieux. S’il ou elle n’a pas d’exemple, l’adulte en raconte un à lui."
-    }
+      "wennEsKippt": "Si trier est trop, le ou la jeune choisit seulement un papier, celui qui convient le mieux. S’il ou elle n’a pas d’exemple, l’adulte en raconte un à lui.",
+      "kurz": "Cinq méthodes en deux piles · raconter un exemple",
+      "vorbereitung": "Écrire 5 papiers : noter · expliquer · schéma/mindmap · se faire interroger · couleurs"
+    },
+    "kurz": "Fünf Lernmethoden-Zettel in zwei Stapel · Beispiel erzählen",
+    "vorbereitung": "5 Zettel beschriften: aufschreiben · erklären · Skizze/Mindmap · abfragen lassen · Farben"
   },
   {
     "id": "th:lernstrategien-abschluss-jugend",
@@ -2957,8 +3063,10 @@
         "Cette semaine, je vais essayer …",
         "Et toi ? Un mot-clé sur le papier suffit."
       ],
-      "wennEsKippt": "Si aucune méthode ne vient, le ou la jeune en choisit une parmi deux propositions de l’adulte. S’il ou elle ne veut rien écrire, on nomme seulement la méthode."
-    }
+      "wennEsKippt": "Si aucune méthode ne vient, le ou la jeune en choisit une parmi deux propositions de l’adulte. S’il ou elle ne veut rien écrire, on nomme seulement la méthode.",
+      "kurz": "Choisir une méthode pour cette semaine · un mot sur un papier"
+    },
+    "kurz": "Lernmethode für diese Woche wählen · Stichwort auf Zettel"
   },
   {
     "id": "th:alltag-ankommen-jugend",
@@ -3022,8 +3130,10 @@
         "Pour moi, il y a … Je dois penser à …",
         "Et pour toi ? Un mot-clé suffit."
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve rien, l’adulte donne deux exemples (contrôle, entraînement) et il ou elle choisit celui qui convient à peu près. Un non est aussi très bien."
-    }
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, l’adulte donne deux exemples (contrôle, entraînement) et il ou elle choisit celui qui convient à peu près. Un non est aussi très bien.",
+      "kurz": "Un rendez-vous ou une tâche de la semaine · à quoi penser ?"
+    },
+    "kurz": "Termin oder Aufgabe der Woche nennen · woran muss ich denken?"
   },
   {
     "id": "th:alltag-bewegung-jugend",
@@ -3095,8 +3205,12 @@
         "Ton emploi du temps de demain : maths, arts plastiques, français. Qu’est-ce qui va dans le sac ?",
         "Maintenant moi, avec un autre emploi du temps – vérifie si j’ai oublié quelque chose."
       ],
-      "wennEsKippt": "Assis : les objets sont à portée de main sur la table et on les range dans le panier. Si l’emploi du temps est trop long, deux matières suffisent."
-    }
+      "wennEsKippt": "Assis : les objets sont à portée de main sur la table et on les range dans le panier. Si l’emploi du temps est trop long, deux matières suffisent.",
+      "kurz": "Lire l’emploi du temps · prendre les bonnes affaires, au panier",
+      "vorbereitung": "Disposer cahier, livre, règle, stylos, montre · panier = cartable · noter 2 emplois du temps"
+    },
+    "kurz": "Stundenplan lesen · passende Dinge im Raum holen, in den Korb legen",
+    "vorbereitung": "Heft, Buch, Lineal, Stifte, Uhr im Raum verteilen · Korb als Rucksack · 2 Stundenpläne notieren"
   },
   {
     "id": "th:alltag-reflexion-jugend",
@@ -3164,8 +3278,12 @@
         "Où va ce papier ? Toutes les réponses sont bonnes.",
         "Raconte comment cela se passe pour l’un d’eux. Tu peux dire « Passe »."
       ],
-      "wennEsKippt": "Si trier est trop, le ou la jeune choisit seulement le papier pour lequel cela se passe déjà bien et dit une phrase. Si une tâche ne convient pas, on la laisse de côté."
-    }
+      "wennEsKippt": "Si trier est trop, le ou la jeune choisit seulement le papier pour lequel cela se passe déjà bien et dit une phrase. Si une tâche ne convient pas, on la laisse de côté.",
+      "kurz": "Trier cinq papiers : seul · avec aide · à apprendre",
+      "vorbereitung": "5 papiers de tâches + 3 zones : seul · avec aide · à apprendre"
+    },
+    "kurz": "Fünf Alltagszettel in „allein · mit Hilfe · lernen“ sortieren",
+    "vorbereitung": "5 Aufgaben-Zettel + 3 Felder: klappt allein · mit Hilfe · möchte ich lernen"
   },
   {
     "id": "th:alltag-abschluss-jugend",
@@ -3230,7 +3348,9 @@
         "Tout de suite, je … et je commence par là.",
         "Et toi ? Le premier geste, tu le fais maintenant."
       ],
-      "wennEsKippt": "Si le ou la jeune ne veut rien dire sur la suite, il ou elle nomme seulement le geste (veste, sac) et le fait. L’adulte montre le sien, sans poser de questions."
-    }
+      "wennEsKippt": "Si le ou la jeune ne veut rien dire sur la suite, il ou elle nomme seulement le geste (veste, sac) et le fait. L’adulte montre le sien, sans poser de questions.",
+      "kurz": "Nommer la prochaine étape · faire tout de suite le premier geste"
+    },
+    "kurz": "Nächsten Schritt nach der Stunde nennen · ersten Handgriff gleich tun"
   }
 ]

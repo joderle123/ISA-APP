@@ -62,8 +62,10 @@
         "Je fais un visage sans parler. Qu’est-ce que ça pourrait être ?",
         "Merci, j’ai reconnu l’émotion."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas montrer son visage, il devine seulement et l’adulte fait tous les visages. Si l’enfant se trompe, l’adulte dit simplement ce que le visage voulait montrer, sans juger."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas montrer son visage, il devine seulement et l’adulte fait tous les visages. Si l’enfant se trompe, l’adulte dit simplement ce que le visage voulait montrer, sans juger.",
+      "kurz": "Montrer une émotion sans mots · l’enfant devine · puis échange"
+    },
+    "kurz": "Gefühl lautlos im Gesicht zeigen · Kind rät · dann tauschen"
   },
   {
     "id": "th:gefuehle-erkennen-bewegung-kinder",
@@ -128,8 +130,10 @@
         "Quelle émotion traverse la pièce en ce moment ?",
         "À quoi l’as-tu reconnue ?"
       ],
-      "wennEsKippt": "Assis : montrer l’émotion seulement avec les bras, les épaules et le visage sur la chaise. Si l’enfant ne veut pas marcher, il devine seulement et l’adulte joue toutes les émotions."
-    }
+      "wennEsKippt": "Assis : montrer l’émotion seulement avec les bras, les épaules et le visage sur la chaise. Si l’enfant ne veut pas marcher, il devine seulement et l’adulte joue toutes les émotions.",
+      "kurz": "Marcher une émotion · l’enfant devine et dit à quoi il l’a vu"
+    },
+    "kurz": "Gefühl durch Tempo und Haltung zeigen · Kind rät, woran"
   },
   {
     "id": "th:gefuehle-erkennen-reflexion-kinder",
@@ -197,8 +201,12 @@
         "Montre le papier qui te convient le mieux. Tu peux aussi dire « passe ».",
         "Moi, c’est souvent la voix qui m’aide."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas d’exemple, l’adulte en montre deux et l’enfant dit seulement lequel était le plus facile à reconnaître. L’enfant peut aussi dire « passe »."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve pas d’exemple, l’adulte en montre deux et l’enfant dit seulement lequel était le plus facile à reconnaître. L’enfant peut aussi dire « passe ».",
+      "kurz": "Trois papiers : œil · oreille · posture · l’enfant choisit, exemple",
+      "vorbereitung": "Dessiner 3 papiers : œil (visage) · oreille (voix) · bonhomme (posture)"
+    },
+    "kurz": "Drei Zettel: Auge · Ohr · Haltung · Kind wählt, macht Beispiel",
+    "vorbereitung": "3 Zettel zeichnen: Auge (Gesicht) · Ohr (Stimme) · Strichmännchen (Haltung)"
   },
   {
     "id": "th:gefuehle-erkennen-abschluss-kinder",
@@ -263,8 +271,10 @@
         "Moi, je cherche encore la surprise. Et toi ?",
         "Tu peux aussi dire « passe ». Au revoir, détective !"
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas nommer d’émotion, il lève seulement ses lunettes et hoche la tête. La mission compte quand même."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas nommer d’émotion, il lève seulement ses lunettes et hoche la tête. La mission compte quand même.",
+      "kurz": "Lunettes de détective · chacun nomme une émotion à chercher"
+    },
+    "kurz": "Detektiv-Brille aus Fingern · jeder nennt ein Gefühl, das er sucht"
   },
   {
     "id": "th:gefuehle-ausdruecken-ankommen-kinder",
@@ -332,8 +342,10 @@
         "Quelle couleur te correspond en ce moment ? Trace un trait.",
         "Un mot en plus, c’est possible, mais pas obligatoire."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas tracer, il montre seulement une couleur ou dit « passe ». Sa couleur préférée convient aussi ; il n’a rien à expliquer."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas tracer, il montre seulement une couleur ou dit « passe ». Sa couleur préférée convient aussi ; il n’a rien à expliquer.",
+      "kurz": "Choisir une couleur · tracer un trait · un mot si on veut"
+    },
+    "kurz": "Farbe wählen · Strich aufs Blatt · optional ein Wort dazu"
   },
   {
     "id": "th:gefuehle-ausdruecken-bewegung-kinder",
@@ -398,8 +410,10 @@
         "Un, deux, trois : la fierté ! Stop.",
         "Je vois des épaules bien droites et un sourire."
       ],
-      "wennEsKippt": "Assis : la statue se fait avec le visage et les bras sur la chaise. Si l’enfant ne veut pas montrer d’émotion, il la choisit seulement et l’adulte la joue."
-    }
+      "wennEsKippt": "Assis : la statue se fait avec le visage et les bras sur la chaise. Si l’enfant ne veut pas montrer d’émotion, il la choisit seulement et l’adulte la joue.",
+      "kurz": "Une émotion · statue en 3 secondes · l’enfant choisit la suivante"
+    },
+    "kurz": "Gefühl rufen · in 3 Sekunden Standbild · Kind wählt das nächste"
   },
   {
     "id": "th:gefuehle-ausdruecken-reflexion-kinder",
@@ -463,8 +477,10 @@
         "Choisis un début et termine la phrase. Tu peux aussi dire « passe ».",
         "Merci d’avoir dit ça."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose deux fins possibles et l’enfant en montre une. Si l’enfant dit « passe », c’est très bien."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose deux fins possibles et l’enfant en montre une. Si l’enfant dit « passe », c’est très bien.",
+      "kurz": "Choisir un début de phrase (« Je me réjouis quand… ») · le finir"
+    },
+    "kurz": "Satzanfang wählen („Ich freue mich, wenn …“) · Satz beenden"
   },
   {
     "id": "th:gefuehle-ausdruecken-abschluss-kinder",
@@ -528,8 +544,10 @@
         "Mon pouce va de côté : comme ci, comme ça. Et le tien ?",
         "Merci. Au revoir et à la prochaine."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas montrer son pouce, il dit « passe » ou fait simplement un signe de la main, et l’adulte montre seulement le sien. On ne demande pas pourquoi."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas montrer son pouce, il dit « passe » ou fait simplement un signe de la main, et l’adulte montre seulement le sien. On ne demande pas pourquoi.",
+      "kurz": "Pouce en haut, de côté, en bas · un mot si on veut"
+    },
+    "kurz": "Daumen hoch, seitlich oder runter · optional ein Wort dazu"
   },
   {
     "id": "th:selbstregulation-ankommen-kinder",
@@ -594,8 +612,10 @@
         "Escargot, voiture ou fusée : à quelle vitesse tourne ton moteur ?",
         "Chez moi, c’est la fusée aujourd’hui. On respire et on passe une vitesse vers la voiture."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas montrer de vitesse, l’adulte montre seulement la sienne et expire une fois, seul. Si l’enfant dit « passe », il respire simplement avec l’adulte."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas montrer de vitesse, l’adulte montre seulement la sienne et expire une fois, seul. Si l’enfant dit « passe », il respire simplement avec l’adulte.",
+      "kurz": "Montrer la vitesse : escargot · voiture · fusée · longue expiration"
+    },
+    "kurz": "Motor-Gang zeigen: Schnecke · Auto · Rakete · lang ausatmen"
   },
   {
     "id": "th:selbstregulation-bewegung-kinder",
@@ -660,8 +680,10 @@
         "C’est toi qui décides de la vitesse. Je marche avec toi.",
         "Vite, un peu moins vite, encore moins vite… et stop avec une longue expiration."
       ],
-      "wennEsKippt": "Assis : deux doigts « marchent » sur la table ou sur le genou à la vitesse que montre la main. Si l’enfant ne veut pas régler la vitesse, c’est l’adulte qui le fait."
-    }
+      "wennEsKippt": "Assis : deux doigts « marchent » sur la table ou sur le genou à la vitesse que montre la main. Si l’enfant ne veut pas régler la vitesse, c’est l’adulte qui le fait.",
+      "kurz": "L’enfant règle le tempo de la main · on le suit · ralenti final"
+    },
+    "kurz": "Kind zeigt per Hand das Tempo, beide gehen mit · zuletzt Zeitlupe"
   },
   {
     "id": "th:selbstregulation-reflexion-kinder",
@@ -729,8 +751,12 @@
         "Escargot veut dire très calme, fusée veut dire très excité.",
         "Qu’est-ce qui a aidé entre les deux ? Tu peux aussi dire « passe »."
       ],
-      "wennEsKippt": "Si l’enfant ne se souvient plus de sa première croix, il fait seulement une croix pour maintenant. On peut aussi laisser tomber la discussion sur ce qui a aidé."
-    }
+      "wennEsKippt": "Si l’enfant ne se souvient plus de sa première croix, il fait seulement une croix pour maintenant. On peut aussi laisser tomber la discussion sur ce qui a aidé.",
+      "kurz": "Deux croix sur la ligne : début et maintenant · qu’est-ce qui a aidé ?",
+      "vorbereitung": "Tracer sur une feuille une ligne : « escargot » à gauche, « fusée » à droite"
+    },
+    "kurz": "Zwei Kreuze auf der Linie: Anfang und jetzt · was half dazwischen?",
+    "vorbereitung": "Linie auf ein Blatt zeichnen: links „Schnecke“, rechts „Rakete“"
   },
   {
     "id": "th:selbstregulation-abschluss-kinder",
@@ -794,8 +820,10 @@
         "La main descend pendant que tu expires. C’est toi qui décides de la vitesse.",
         "Au revoir, à la prochaine."
       ],
-      "wennEsKippt": "On peut baisser la lumière assis, avec la main sur la table. Si l’enfant ne veut pas, seul l’adulte baisse la lumière et l’enfant fait un signe de la main."
-    }
+      "wennEsKippt": "On peut baisser la lumière assis, avec la main sur la table. Si l’enfant ne veut pas, seul l’adulte baisse la lumière et l’enfant fait un signe de la main.",
+      "kurz": "La main-interrupteur descend en expirant · l’enfant fixe le rythme"
+    },
+    "kurz": "Hand als Lichtschalter sinkt beim Ausatmen · Kind bestimmt Tempo"
   },
   {
     "id": "th:impulskontrolle-ankommen-kinder",
@@ -861,8 +889,10 @@
         "On attend que le sable soit tombé. Ensuite, on se dit bonjour.",
         "C’est fini : tu peux maintenant dire bonjour."
       ],
-      "wennEsKippt": "Si attendre est difficile, l’adulte prend un sablier plus court ou compte tout bas jusqu’à cinq, et l’enfant compte avec lui. L’important, c’est d’essayer, pas d’être parfait."
-    }
+      "wennEsKippt": "Si attendre est difficile, l’adulte prend un sablier plus court ou compte tout bas jusqu’à cinq, et l’enfant compte avec lui. L’important, c’est d’essayer, pas d’être parfait.",
+      "kurz": "Retourner le sablier · regarder en silence · puis bonjour"
+    },
+    "kurz": "Sanduhr umdrehen · schweigend zuschauen · dann Hallo (Kind wählt)"
   },
   {
     "id": "th:impulskontrolle-bewegung-kinder",
@@ -927,8 +957,10 @@
         "Rouge, on s’arrête. Orange, on ralentit. Vert, on marche.",
         "Maintenant, c’est toi le feu, et je suis tes signaux exactement."
       ],
-      "wennEsKippt": "Assis : marcher avec les pieds au sol (vert), marcher lentement (orange) et garder les pieds immobiles (rouge). Si ça devient trop agité, l’adulte annonce calmement « orange » pour tout le tour."
-    }
+      "wennEsKippt": "Assis : marcher avec les pieds au sol (vert), marcher lentement (orange) et garder les pieds immobiles (rouge). Si ça devient trop agité, l’adulte annonce calmement « orange » pour tout le tour.",
+      "kurz": "Marcher · rouge = stop, orange = ralenti, vert = marcher · échanger"
+    },
+    "kurz": "Gehen · Rot = stehen, Gelb = Zeitlupe, Grün = gehen · dann tauschen"
   },
   {
     "id": "th:impulskontrolle-reflexion-kinder",
@@ -992,8 +1024,10 @@
         "Un frein, c’est un tout petit moment d’attente.",
         "J’ai senti mon frein quand je t’ai laissé finir de parler."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve aucun moment, l’adulte en propose deux et l’enfant en choisit un ou dit « passe ». Il ne s’agit jamais de chercher où le frein a manqué."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve aucun moment, l’adulte en propose deux et l’enfant en choisit un ou dit « passe ». Il ne s’agit jamais de chercher où le frein a manqué.",
+      "kurz": "Expliquer le frein, donner un exemple · l’enfant cherche son moment"
+    },
+    "kurz": "Bremse erklären, Beispiel geben · Kind sucht seinen Bremsmoment"
   },
   {
     "id": "th:impulskontrolle-abschluss-kinder",
@@ -1057,8 +1091,10 @@
         "Main sur la table, une respiration, puis au revoir.",
         "C’était un arrêt tranquille."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas poser la main, il la tient en l’air comme un panneau stop. S’il s’agite, l’adulte montre la respiration lentement."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas poser la main, il la tient en l’air comme un panneau stop. S’il s’agite, l’adulte montre la respiration lentement.",
+      "kurz": "Main à plat sur la table · une respiration · puis au revoir"
+    },
+    "kurz": "Hand flach auf den Tisch · ein Atemzug · erst dann Tschüss"
   },
   {
     "id": "th:aufmerksamkeit-ankommen-kinder",
@@ -1125,8 +1161,10 @@
         "Regarde bien : qu’est-ce qu’il y a là ? Dix secondes.",
         "Yeux fermés… yeux ouverts : qu’est-ce qui a changé ?"
       ],
-      "wennEsKippt": "Si c’est trop difficile, l’adulte ne prend que deux objets. Si l’enfant n’a pas envie, l’adulte présente simplement les objets et l’enfant montre ce qu’il voit."
-    }
+      "wennEsKippt": "Si c’est trop difficile, l’adulte ne prend que deux objets. Si l’enfant n’a pas envie, l’adulte présente simplement les objets et l’enfant montre ce qu’il voit.",
+      "kurz": "Retenir 3 objets 10 s · yeux fermés · un objet est changé"
+    },
+    "kurz": "Drei Dinge 10 Sek. merken · Augen zu · ein Ding wird verändert"
   },
   {
     "id": "th:aufmerksamkeit-bewegung-kinder",
@@ -1191,8 +1229,10 @@
         "Montre-moi quelque chose de rond. Seulement montrer, pas toucher.",
         "Intéressant, je n’avais pas vu ça."
       ],
-      "wennEsKippt": "Assis : chercher la caractéristique depuis la chaise et montrer du doigt. Si l’enfant ne trouve rien, l’adulte montre d’abord son objet."
-    }
+      "wennEsKippt": "Assis : chercher la caractéristique depuis la chaise et montrer du doigt. Si l’enfant ne trouve rien, l’adulte montre d’abord son objet.",
+      "kurz": "Nommer une propriété · montrer du doigt sans toucher · échanger"
+    },
+    "kurz": "Eigenschaft nennen · beide zeigen darauf, ohne Anfassen · tauschen"
   },
   {
     "id": "th:aufmerksamkeit-reflexion-kinder",
@@ -1256,8 +1296,10 @@
         "Nomme ou montre-moi trois choses que tu as remarquées.",
         "Mon projecteur a éclairé la fenêtre."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve qu’une ou deux choses, c’est suffisant ; « passe » est aussi permis. L’adulte peut aider avec « J’ai entendu un bruit »."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve qu’une ou deux choses, c’est suffisant ; « passe » est aussi permis. L’adulte peut aider avec « J’ai entendu un bruit ».",
+      "kurz": "Expliquer le projecteur · l’enfant nomme trois choses remarquées"
+    },
+    "kurz": "Scheinwerfer erklären · Kind nennt drei bemerkte Dinge"
   },
   {
     "id": "th:aufmerksamkeit-abschluss-kinder",
@@ -1323,8 +1365,10 @@
         "Tu lèves un doigt pour chaque bruit.",
         "Qu’est-ce que tu as entendu ?"
       ],
-      "wennEsKippt": "S’il fait très calme, le bruit de la respiration ou des vêtements compte aussi. Si l’enfant ne veut pas rester assis tranquillement, il écoute debout ou les yeux ouverts."
-    }
+      "wennEsKippt": "S’il fait très calme, le bruit de la respiration ou des vêtements compte aussi. Si l’enfant ne veut pas rester assis tranquillement, il écoute debout ou les yeux ouverts.",
+      "kurz": "30 s d’écoute · un doigt par bruit · puis dire ce qu’on a entendu"
+    },
+    "kurz": "Halbe Minute lauschen · pro Geräusch ein Finger · dann erzählen"
   },
   {
     "id": "th:ausdauer-ankommen-kinder",
@@ -1392,8 +1436,10 @@
         "Si la tour tombe, on dit « Encore une fois ! » et on continue.",
         "J’ai vu que tu as continué à construire."
       ],
-      "wennEsKippt": "Si l’enfant s’impatiente, les deux construisent ensemble une seule tour. Si les tours tombent trop souvent, on peut construire à plat plutôt qu’en hauteur."
-    }
+      "wennEsKippt": "Si l’enfant s’impatiente, les deux construisent ensemble une seule tour. Si les tours tombent trop souvent, on peut construire à plat plutôt qu’en hauteur.",
+      "kurz": "Retourner le sablier · chacun sa tour · si elle tombe : « Encore ! »"
+    },
+    "kurz": "Sanduhr drehen · jeder baut seinen Turm · fällt er: „Nochmal!“"
   },
   {
     "id": "th:ausdauer-bewegung-kinder",
@@ -1458,8 +1504,12 @@
         "Encore un petit bout jusqu’à la colline. Pas à pas.",
         "C’est toi qui décides : pause ou on continue ?"
       ],
-      "wennEsKippt": "Assis : « marcher » avec les pieds au sol et balancer les bras, en comptant les étapes. Si c’est trop pour l’enfant, on raccourcit une étape ou on la saute."
-    }
+      "wennEsKippt": "Assis : « marcher » avec les pieds au sol et balancer les bras, en comptant les étapes. Si c’est trop pour l’enfant, on raccourcit une étape ou on la saute.",
+      "kurz": "Randonnée imaginaire en 3 étapes · l’enfant dit pause ou on continue",
+      "vorbereitung": "Préparer une courte histoire de randonnée : ruisseau · colline · montagne"
+    },
+    "kurz": "Fantasie-Wanderung in 3 Etappen gehen · Kind sagt Pause oder weiter",
+    "vorbereitung": "Kurze Wandergeschichte überlegen: Bach · Hügel · Berg, je ein Satz"
   },
   {
     "id": "th:ausdauer-reflexion-kinder",
@@ -1527,8 +1577,12 @@
         "Fais une croix à cet endroit. Tu peux aussi dire « passe ».",
         "Pour moi, une petite pause a aidé."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas de montagne, il fait sa croix au sommet et dit ce qui était bien là-haut. Il peut aussi seulement montrer au lieu de dessiner."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve pas de montagne, il fait sa croix au sommet et dit ce qui était bien là-haut. Il peut aussi seulement montrer au lieu de dessiner.",
+      "kurz": "Croix à l’endroit difficile du chemin · qu’est-ce qui a aidé ?",
+      "vorbereitung": "Dessiner sur une feuille un chemin avec une montagne"
+    },
+    "kurz": "Kreuz an die mühsame Stelle des Wegs · was half weiterzumachen?",
+    "vorbereitung": "Weg mit einem Berg auf ein Blatt zeichnen"
   },
   {
     "id": "th:ausdauer-abschluss-kinder",
@@ -1595,8 +1649,10 @@
         "Un trait reste un trait, même si le moment était tout petit.",
         "Merci d’avoir continué. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve aucun moment, il dit « passe », ou l’adulte fait un trait pour un moment qu’il a remarqué. Un seul trait suffit."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve aucun moment, il dit « passe », ou l’adulte fait un trait pour un moment qu’il a remarqué. Un seul trait suffit.",
+      "kurz": "Un trait par moment où l’on a tenu bon · en nommer un"
+    },
+    "kurz": "Strich pro Moment, in dem man drangeblieben ist · einen nennen"
   },
   {
     "id": "th:kooperation-ankommen-kinder",
@@ -1664,8 +1720,10 @@
         "Je fais un trait, puis c’est ton tour.",
         "Comment pourrait-on appeler notre dessin ?"
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas dessiner, les deux posent à tour de rôle des crayons sur la table pour former un motif commun. Si on ne trouve pas de titre, le dessin reste sans titre."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas dessiner, les deux posent à tour de rôle des crayons sur la table pour former un motif commun. Si on ne trouve pas de titre, le dessin reste sans titre.",
+      "kurz": "À tour de rôle un trait ou une forme, en silence · trouver un titre"
+    },
+    "kurz": "Abwechselnd je ein Strich oder eine Form, stumm · dann Titel finden"
   },
   {
     "id": "th:kooperation-bewegung-kinder",
@@ -1734,8 +1792,10 @@
         "Doucement, on avance ensemble. Dis-moi si je vais trop vite.",
         "La balle est arrivée au but."
       ],
-      "wennEsKippt": "Assis : les deux tiennent le tissu au-dessus de la table et font rouler la balle d’un côté à l’autre sans qu’elle tombe. Si la balle tombe trop souvent, on prend une balle plus légère ou on la pose dans un creux du tissu."
-    }
+      "wennEsKippt": "Assis : les deux tiennent le tissu au-dessus de la table et font rouler la balle d’un côté à l’autre sans qu’elle tombe. Si la balle tombe trop souvent, on prend une balle plus légère ou on la pose dans un creux du tissu.",
+      "kurz": "Tenir le tissu à deux · balle jusqu’à la chaise · l’enfant mène"
+    },
+    "kurz": "Tuch zu zweit halten · Ball bis zum Stuhl tragen · Kind führt"
   },
   {
     "id": "th:kooperation-reflexion-kinder",
@@ -1803,8 +1863,12 @@
         "Dessine ou dis un moment dans la partie du milieu.",
         "Je choisis le moment où on s’est écoutés."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose deux moments au choix, ou l’enfant dit « passe ». Au lieu de dessiner, l’enfant peut aussi seulement montrer."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose deux moments au choix, ou l’enfant dit « passe ». Au lieu de dessiner, l’enfant peut aussi seulement montrer.",
+      "kurz": "Dessiner un moment de la séance au centre « nous » · compléter",
+      "vorbereitung": "Dessiner deux cercles qui se chevauchent : toi · moi · nous (milieu)"
+    },
+    "kurz": "Moment der Stunde in die Kreismitte „wir“ malen · ergänzen",
+    "vorbereitung": "Zwei überlappende Kreise zeichnen und beschriften: du · ich · wir (Mitte)"
   },
   {
     "id": "th:kooperation-abschluss-kinder",
@@ -1868,8 +1932,10 @@
         "Quel mot disons-nous ensemble ? C’est toi qui le choisis.",
         "Un, deux, trois…"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas de mot, l’adulte en propose deux. Si les deux ne parlent pas exactement en même temps, ce n’est pas grave : on peut simplement essayer deux fois."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve pas de mot, l’adulte en propose deux. Si les deux ne parlent pas exactement en même temps, ce n’est pas grave : on peut simplement essayer deux fois.",
+      "kurz": "Choisir un mot d’adieu · compter jusqu’à trois · le dire ensemble"
+    },
+    "kurz": "Abschiedswort aushandeln · bis drei zählen · gleichzeitig sagen"
   },
   {
     "id": "th:konflikte-ankommen-kinder",
@@ -1937,8 +2003,10 @@
         "On fait semblant : on veut tous les deux le crayon. Qu’est-ce qu’on pourrait faire ?",
         "C’est une solution pour nous deux."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas jouer, l’adulte joue les deux côtés avec deux mouvements de la main (« celle-ci veut, celle-là veut ») et l’enfant choisit la solution. Cela reste un jeu, jamais une vraie dispute."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas jouer, l’adulte joue les deux côtés avec deux mouvements de la main (« celle-ci veut, celle-là veut ») et l’enfant choisit la solution. Cela reste un jeu, jamais une vraie dispute.",
+      "kurz": "Un crayon, deux feuilles : jouer la dispute · chercher des solutions"
+    },
+    "kurz": "Ein Stift, zwei Blätter: Streit nachspielen · Lösungen suchen"
   },
   {
     "id": "th:konflikte-bewegung-kinder",
@@ -2006,8 +2074,12 @@
         "On se rencontre au milieu. Qu’est-ce qu’on fait maintenant ?",
         "C’est une nouvelle solution."
       ],
-      "wennEsKippt": "Assis : deux doigts avancent l’un vers l’autre sur la table, entre deux crayons qui forment le passage, et trouvent une solution. Si c’est trop étroit pour l’enfant, on élargit le passage."
-    }
+      "wennEsKippt": "Assis : deux doigts avancent l’un vers l’autre sur la table, entre deux crayons qui forment le passage, et trouvent une solution. Si c’est trop étroit pour l’enfant, on élargit le passage.",
+      "kurz": "Passage étroit entre chaises · trouver quatre solutions différentes",
+      "vorbereitung": "Placer deux chaises avec un passage étroit entre elles"
+    },
+    "kurz": "Enger Gang zwischen Stühlen · vier verschiedene Lösungen finden",
+    "vorbereitung": "Zwei Stühle so stellen, dass dazwischen nur ein schmaler Gang bleibt"
   },
   {
     "id": "th:konflikte-reflexion-kinder",
@@ -2075,8 +2147,12 @@
         "Montre le papier qui te plaît. Il n’y a pas de mauvaise réponse.",
         "J’aime bien l’horloge, parce que comme ça chacun a son tour."
       ],
-      "wennEsKippt": "Si l’enfant ne veut rien dire, il montre seulement le papier. S’il a sa propre solution qui n’est sur aucun papier, l’adulte la dessine ou l’écrit en plus."
-    }
+      "wennEsKippt": "Si l’enfant ne veut rien dire, il montre seulement le papier. S’il a sa propre solution qui n’est sur aucun papier, l’adulte la dessine ou l’écrit en plus.",
+      "kurz": "Raconter une dispute de ballon · choisir une carte et justifier",
+      "vorbereitung": "Dessiner 3 papiers : horloge (à tour de rôle) · deux mains (partager) · main levée (aide)"
+    },
+    "kurz": "Ballstreit schildern · Kind wählt einen Lösungszettel und begründet",
+    "vorbereitung": "3 Zettel malen: Uhr (abwechseln) · zwei Hände (teilen) · erhobene Hand (Hilfe holen)"
   },
   {
     "id": "th:konflikte-abschluss-kinder",
@@ -2140,8 +2216,10 @@
         "Je voudrais une petite pause maintenant, parce qu’on a travaillé longtemps.",
         "Merci, j’ai compris. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas de phrase, il dit seulement la partie « Je voudrais… ». Si l’enfant dit « passe », il écoute simplement la phrase de l’adulte."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve pas de phrase, il dit seulement la partie « Je voudrais… ». Si l’enfant dit « passe », il écoute simplement la phrase de l’adulte.",
+      "kurz": "Expliquer la phrase en « je » · l’enfant : « J’aimerais…, parce que… »"
+    },
+    "kurz": "Ich-Satz erklären · Kind sagt „Ich möchte …, weil …“ · Danke"
   },
   {
     "id": "th:kommunikation-ankommen-kinder",
@@ -2206,8 +2284,10 @@
         "L’été ou l’hiver ? D’abord un mot, puis une phrase entière.",
         "La phrase entière m’en dit plus."
       ],
-      "wennEsKippt": "Si la deuxième partie est difficile pour l’enfant, l’adulte l’aide avec le début de phrase « J’aime…, parce que… ». Si l’enfant dit « passe », il peut prendre une autre question de choix."
-    }
+      "wennEsKippt": "Si la deuxième partie est difficile pour l’enfant, l’adulte l’aide avec le début de phrase « J’aime…, parce que… ». Si l’enfant dit « passe », il peut prendre une autre question de choix.",
+      "kurz": "Question à choix : un mot, puis une phrase avec « parce que »"
+    },
+    "kurz": "Wahlfrage: erst ein Wort, dann Satz mit „weil“ · dann Kind"
   },
   {
     "id": "th:kommunikation-bewegung-kinder",
@@ -2274,8 +2354,10 @@
         "Je dis une phrase et je te fais rouler la balle.",
         "Raconte-moi en plus. Je t’écoute."
       ],
-      "wennEsKippt": "Assis : la balle roule sur la table ou passe de main en main. Si l’enfant dit « passe », il fait seulement rouler la balle en retour et l’adulte continue à raconter."
-    }
+      "wennEsKippt": "Assis : la balle roule sur la table ou passe de main en main. Si l’enfant dit « passe », il fait seulement rouler la balle en retour et l’adulte continue à raconter.",
+      "kurz": "Qui a la balle parle et la fait rouler · puis une question"
+    },
+    "kurz": "Wer den Ball hat, spricht und rollt ihn weiter · dann Nachfrage"
   },
   {
     "id": "th:kommunikation-reflexion-kinder",
@@ -2339,8 +2421,10 @@
         "C’est bien ça, ou j’ai oublié quelque chose ?",
         "Maintenant, c’est mon tour, et tu me dis ce que tu as compris."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte commence et raconte en premier pour que l’enfant puisse répéter. « Passe » est aussi permis."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte commence et raconte en premier pour que l’enfant puisse répéter. « Passe » est aussi permis.",
+      "kurz": "L’enfant raconte · reformuler · c’est bien ça ? · échanger"
+    },
+    "kurz": "Kind erzählt in 2 Sätzen · mit eigenen Worten wiederholen · tauschen"
   },
   {
     "id": "th:kommunikation-abschluss-kinder",
@@ -2404,8 +2488,10 @@
         "Pose-moi une question avec « qu’est-ce que » ou « comment ». Je réponds par une phrase.",
         "Merci pour ta question. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas de question, l’adulte en propose trois et l’enfant en choisit une. « Passe » est aussi une réponse valable."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve pas de question, l’adulte en propose trois et l’enfant en choisit une. « Passe » est aussi une réponse valable.",
+      "kurz": "Chacun pose une question Quoi/Comment · réponse en phrase entière"
+    },
+    "kurz": "Beide stellen eine Was-/Wie-Frage · Antwort im ganzen Satz"
   },
   {
     "id": "th:selbstbild-ankommen-kinder",
@@ -2469,8 +2555,10 @@
         "Je te montre quelque chose que je sais faire. Devine !",
         "Ah, maintenant je vois."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose trois petites choses à montrer (sauter, siffler, tourner au ralenti). Si l’enfant ne veut pas montrer, il devine seulement ou dit « passe »."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte propose trois petites choses à montrer (sauter, siffler, tourner au ralenti). Si l’enfant ne veut pas montrer, il devine seulement ou dit « passe ».",
+      "kurz": "Mimer quelque chose qu’on sait faire · l’autre devine"
+    },
+    "kurz": "Etwas Gekonntes pantomimisch zeigen · der andere rät"
   },
   {
     "id": "th:selbstbild-bewegung-kinder",
@@ -2535,8 +2623,10 @@
         "Montre-moi exactement comment ça marche. À quoi dois-je faire attention ?",
         "Merci, j’ai appris quelque chose avec toi."
       ],
-      "wennEsKippt": "Assis : l’enfant apprend un jeu de doigts ou un mouvement de bras. Si l’enfant ne sait pas quoi montrer, il choisit parmi deux propositions ou dit « passe »."
-    }
+      "wennEsKippt": "Assis : l’enfant apprend un jeu de doigts ou un mouvement de bras. Si l’enfant ne sait pas quoi montrer, il choisit parmi deux propositions ou dit « passe ».",
+      "kurz": "L’enfant enseigne un mouvement · corriger les erreurs voulues"
+    },
+    "kurz": "Kind lehrt eine Bewegung · absichtliche Fehler verbessern"
   },
   {
     "id": "th:selbstbild-reflexion-kinder",
@@ -2603,8 +2693,12 @@
         "Dessine-le dans l’étoile ou dis-le.",
         "Mon étoile, c’est que j’ai bien écouté."
       ],
-      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte nomme deux choses qu’il a observées et l’enfant en choisit une. Si l’enfant dit « passe », il colorie simplement l’étoile de sa couleur préférée."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve rien, l’adulte nomme deux choses qu’il a observées et l’enfant en choisit une. Si l’enfant dit « passe », il colorie simplement l’étoile de sa couleur préférée.",
+      "kurz": "Remplir l’étoile avec ce qui a réussi · regarder les deux étoiles",
+      "vorbereitung": "Dessiner une grande étoile sur une feuille"
+    },
+    "kurz": "Stern füllen mit dem, was gelang · beide betrachten die Sterne",
+    "vorbereitung": "Großen Stern auf ein Blatt zeichnen"
   },
   {
     "id": "th:selbstbild-abschluss-kinder",
@@ -2668,8 +2762,10 @@
         "Je suis quelqu’un de curieux. Et toi ?",
         "Tu peux aussi dire « passe ». Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne trouve pas d’exemple, le mot seul suffit. Si l’enfant ne veut rien dire, l’adulte dit simplement au revoir."
-    }
+      "wennEsKippt": "Si l’enfant ne trouve pas d’exemple, le mot seul suffit. Si l’enfant ne veut rien dire, l’adulte dit simplement au revoir.",
+      "kurz": "Choisir un adjectif (curieux, courageux…) · phrase avec exemple"
+    },
+    "kurz": "Eigenschaftswort wählen (neugierig, mutig …) · Satz mit Beispiel"
   },
   {
     "id": "th:lernstrategien-ankommen-kinder",
@@ -2734,8 +2830,10 @@
         "Je dis quatre mots. Choisis une astuce pour les retenir.",
         "Moi, je me suis inventé une petite histoire."
       ],
-      "wennEsKippt": "Si l’enfant oublie des mots, ce n’est pas grave : on essaie une autre astuce, ou l’adulte ne dit que trois mots. Ce qui compte, ce n’est pas le nombre de mots, mais l’astuce qui aide."
-    }
+      "wennEsKippt": "Si l’enfant oublie des mots, ce n’est pas grave : on essaie une autre astuce, ou l’adulte ne dit que trois mots. Ce qui compte, ce n’est pas le nombre de mots, mais l’astuce qui aide.",
+      "kurz": "Quatre mots · l’enfant choisit une astuce de mémoire · les redire"
+    },
+    "kurz": "Vier Wörter nennen · Kind wählt Merk-Trick · aufsagen"
   },
   {
     "id": "th:lernstrategien-bewegung-kinder",
@@ -2800,8 +2898,10 @@
         "À la porte, je dépose la pomme. Et toi ?",
         "Maintenant, on récupère tout dans l’ordre."
       ],
-      "wennEsKippt": "Assis : le regard passe d’un endroit à l’autre et l’enfant montre du doigt. S’il y a trop de choses oubliées, on n’en prend que trois."
-    }
+      "wennEsKippt": "Assis : le regard passe d’un endroit à l’autre et l’enfant montre du doigt. S’il y a trop de choses oubliées, on n’en prend que trois.",
+      "kurz": "Quatre postes · y poser les objets en pensée, les reprendre"
+    },
+    "kurz": "Vier Stationen im Raum · Dinge in Gedanken ablegen, dann abholen"
   },
   {
     "id": "th:lernstrategien-reflexion-kinder",
@@ -2869,8 +2969,12 @@
         "Fais une croix sur la marche qui t’a aidé. « Passe » est aussi permis.",
         "Aujourd’hui, j’ai souvent essayé autrement."
       ],
-      "wennEsKippt": "Si le choix est difficile, l’enfant fait deux croix ou montre seulement la marche. L’adulte peut donner deux exemples de la séance."
-    }
+      "wennEsKippt": "Si le choix est difficile, l’enfant fait deux croix ou montre seulement la marche. L’adulte peut donner deux exemples de la séance.",
+      "kurz": "Croix sur la marche la plus utile · raconter un moment",
+      "vorbereitung": "Dessiner un escalier de 4 marches : observer · demander · essayer · refaire autrement"
+    },
+    "kurz": "Kreuz auf die hilfreichste Stufe · Moment dazu erzählen",
+    "vorbereitung": "Treppe mit 4 Stufen zeichnen: Zuschauen · Fragen · Ausprobieren · Nochmal anders"
   },
   {
     "id": "th:lernstrategien-abschluss-kinder",
@@ -2934,8 +3038,10 @@
         "Un : petits pas. Deux : demander de l’aide. Trois : essayer autrement. Quatre : retenir avec une image.",
         "Amuse-toi bien à l’essayer. Au revoir !"
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas choisir d’astuce, il prend celle que l’adulte montre. « Passe » est aussi permis."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas choisir d’astuce, il prend celle que l’adulte montre. « Passe » est aussi permis.",
+      "kurz": "Quatre astuces sur les doigts · l’enfant en choisit une pour plus tard"
+    },
+    "kurz": "Vier Tricks an den Fingern · Kind wählt einen für später"
   },
   {
     "id": "th:alltag-ankommen-kinder",
@@ -3003,8 +3109,10 @@
         "Début, milieu, fin. Ça fait trois doigts.",
         "À la fin, on range ensemble. C’est notre plan."
       ],
-      "wennEsKippt": "Si l’enfant ne veut pas utiliser ses doigts, il montre les trois parties avec trois crayons posés sur la table. Si l’enfant demande quand ça finit, l’adulte montre simplement l’horloge."
-    }
+      "wennEsKippt": "Si l’enfant ne veut pas utiliser ses doigts, il montre les trois parties avec trois crayons posés sur la table. Si l’enfant demande quand ça finit, l’adulte montre simplement l’horloge.",
+      "kurz": "Déroulement sur trois doigts : début · milieu · fin · ranger"
+    },
+    "kurz": "Ablauf an drei Fingern: Anfang · Mitte · Schluss · Aufräumen planen"
   },
   {
     "id": "th:alltag-bewegung-kinder",
@@ -3069,8 +3177,10 @@
         "Qu’est-ce que je fais là ? D’abord ça, puis ça.",
         "Maintenant, tu me montres un geste, et je le fais avec toi."
       ],
-      "wennEsKippt": "Assis : montrer le geste seulement avec les mains. Si l’enfant ne trouve rien, l’adulte propose deux gestes et l’enfant en choisit un."
-    }
+      "wennEsKippt": "Assis : montrer le geste seulement avec les mains. Si l’enfant ne trouve rien, l’adulte propose deux gestes et l’enfant en choisit un.",
+      "kurz": "Mimer une action au ralenti · deviner · imiter · échanger"
+    },
+    "kurz": "Handlung in Zeitlupe stumm vorspielen · raten · mitmachen · tauschen"
   },
   {
     "id": "th:alltag-reflexion-kinder",
@@ -3138,8 +3248,12 @@
         "Place les papiers dans l’ordre qui t’aide.",
         "Pour moi, c’est différent, et c’est très bien aussi."
       ],
-      "wennEsKippt": "Si c’est difficile de les ranger, l’adulte pose un premier papier et l’enfant complète les autres ; « passe » est aussi permis. Au lieu des papiers, l’enfant peut aussi montrer les étapes avec ses doigts."
-    }
+      "wennEsKippt": "Si c’est difficile de les ranger, l’adulte pose un premier papier et l’enfant complète les autres ; « passe » est aussi permis. Au lieu des papiers, l’enfant peut aussi montrer les étapes avec ses doigts.",
+      "kurz": "Mettre trois papiers dans son ordre · justifier · comparer",
+      "vorbereitung": "Écrire 3 papiers : accrocher la veste · sortir le matériel · s’asseoir"
+    },
+    "kurz": "Drei Zettel in eigene Reihenfolge legen · begründen · vergleichen",
+    "vorbereitung": "3 Zettel schreiben: Jacke aufhängen · Material rausholen · hinsetzen"
   },
   {
     "id": "th:alltag-abschluss-kinder",
@@ -3207,7 +3321,9 @@
         "D’abord les crayons, ensuite le papier, enfin la chaise.",
         "Tout est à sa place. Au revoir !"
       ],
-      "wennEsKippt": "Si ranger paraît trop, deux gestes suffisent. Si l’enfant ne veut pas, l’adulte range une chose et l’enfant range la suivante."
-    }
+      "wennEsKippt": "Si ranger paraît trop, deux gestes suffisent. Si l’enfant ne veut pas, l’adulte range une chose et l’enfant range la suivante.",
+      "kurz": "Annoncer trois gestes, ranger dans l’ordre · au revoir"
+    },
+    "kurz": "Drei Handgriffe ansagen, der Reihe nach wegräumen · Tschüss"
   }
 ]
