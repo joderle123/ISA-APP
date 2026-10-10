@@ -341,6 +341,9 @@ function waehleRitual(c: Kontext, rolle: 'ankommen' | 'abschluss', min: number, 
   const liste: Bewertet[] = []
   for (const e of c.k.nachRolle.get(rolle) ?? []) {
     if (ausser.has(e.id) || e.id.startsWith('pg:')) continue
+    // Anfang und Schluss einer Material-, Kurs- oder Förderfach-Einheit sprechen von deren Übung (Testlauf 10: Abschluss
+    // „Unsere fairste Lösung“ – „seinen Konfliktfall und die gewählte Lösung vorstellen“ nach einem anderen Kern)
+    if (/^(m|k|f|c):/.test(e.id)) continue
     if (!ritualErlaubt(c, e, rolle)) continue
     if (pruefe(e, c, { ritual: true, rolle }) !== null) continue
     if (!(e.dauer.min <= min + 2)) continue
@@ -704,7 +707,17 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     const auftragK: SlotAuftrag = { rolle: slot.rolle, min: slot.min, phase: o.phase, nr: o.nr, salz: `${salz}|${i}`, gesperrt: benutzt, vorher: o.vorher, formate, vorigerKern: o.kernFormate[o.kernFormate.length - 1], kernFormate: o.kernFormate.slice(-2), fokus: slot.rolle === 'kern' ? undefined : o.fokus, bevorzugt }
     // Jugend-Folge: zuerst nur Übungen mit dem Ziel der Sitzung (Blind-Bewertung 7: das erste Ziel kam in einer Folge nie vor,
     // weil andere Übungen in der Phase besser passten); gibt es keine, wie bisher
-    const mitZielCode = slot.rolle === 'kern' && o.kernZiel ? kandidaten(c, { ...auftragK, zielCode: o.kernZiel }).filter((w) => kuratiert(c, w.b.e.id) || w.locker < 3) : []
+    let mitZielCode = slot.rolle === 'kern' && o.kernZiel ? kandidaten(c, { ...auftragK, zielCode: o.kernZiel }).filter((w) => kuratiert(c, w.b.e.id) || w.locker < 3) : []
+    // keine eigene Übung mehr für das Ziel der Sitzung (Testlauf 10: Sitzung 3 einer Kinder-Folge bekam „Teamwork“ aus einem
+    // Gruppen-Material ohne Aufgabe): lieber eine eigene Übung zu einem anderen Ziel des Kindes als ein Bruchstück
+    if (slot.rolle === 'kern' && o.kernZiel && !mitZielCode.some((w) => kuratiert(c, w.b.e.id)))
+      for (const z of c.ziele.map((x) => x.code).filter((x) => x !== o.kernZiel && istEldib(x))) {
+        const alt = kandidaten(c, { ...auftragK, zielCode: z }).filter((w) => kuratiert(c, w.b.e.id))
+        if (alt.length) {
+          mitZielCode = alt
+          break
+        }
+      }
     const liste = mitZielCode.length ? mitZielCode : kandidaten(c, auftragK)
     let auswahl = liste
     // roter Faden der Folge: ein Kern, der Ziel-Code oder Thema mit den Kernen davor teilt, zählt mehr

@@ -96,7 +96,7 @@ function stelle(m: { id: string; stelle?: number }): number {
 }
 
 /** Luxemburgisch geschriebene Material-Titel (der Text ist deutsch). */
-export const LB_TITEL_RE = /ë|\b(De|Den|D['’]|mat|een|vun|sech|mäi|Mäi|meng|Meng|net|Net|fir|zesumme|wat|Wat|ech|wéi|gëtt|Kanner|ons|ass)\b/
+export const LB_TITEL_RE = /ë|\b(De|Den|D['’]|mat|een|vun|sech|mäi|Mäi|meng|Meng|net|Net|fir|zesumme|wat|Wat|ech|wéi|gëtt|Kanner|ons|ass|loossen|ofginn|eppes|keng|dat|elo|och|nees|maachen|kucken|hunn|ginn|Gefill|Gefiller)\b/
 
 /** Texte eines Stundenschritts aus seiner Quelle (null: Quelle fehlt – Eintrag fällt weg). */
 function texteAusQuelle(m: { id: string; stelle?: number }, q: Quellen, idx: Indizes): Texte | null {
@@ -137,11 +137,12 @@ function texteAusQuelle(m: { id: string; stelle?: number }, q: Quellen, idx: Ind
     const nachStrich = roh.includes(' – ') ? roh.split(' – ').slice(1).join(' – ') : roh.includes(' - ') ? roh.split(' - ').slice(1).join(' - ') : roh
     // „Spielen“, „Durchführung 2“, „Hauptteil“: allein sagt das nichts – dann der Titel des Materials
     // Blind-Bewertung 8: „Ritual“, „Reise“, „Bauen“ als Titel des Kerns und als Echo im Einstieg sagen nichts
-    const allgemein = /^(einstieg|spielen|durchführung|üben( und vertiefen)?|übung(sphase)?|hauptteil|hauptphase|arbeitsphase|erarbeitung|aktivität|vertiefung|vertiefen|anwendung|praxis|phase|einheit|stunde|input|gestalten|auswertung|abschluss|reflexion|transfer|teil|ritual|reise|bauen|basteln|malen|spiel|lied|geschichte)(\s*\d+)?\s*(\(.*\))?$/i.test(nachStrich.trim())
+    const allgemein = /^(einstieg|spielen|durchführung|üben( und vertiefen)?|übung(sphase)?|hauptteil|hauptphase|arbeitsphase|erarbeitung|aktivität|vertiefung|vertiefen|anwendung|praxis|phase|einheit|stunde|input|gestalten|auswertung|abschluss|reflexion|transfer|teil|ritual|reise|bauen|basteln|malen|spiel|lied|geschichte|lösen|planen|probieren|ausprobieren|besprechen|nachdenken|sammeln|teilen|vorstellen|präsentieren|üben|runde|aufgabe|auftrag|start|warm-?up|aufwärmen)(\s*\d+)?\s*(\(.*\))?$/i.test(nachStrich.trim())
     // luxemburgischer Titel über deutschem Text (102 von 600 Materialien): nicht als Titel oder Quelle drucken
     // (Blind-Bewertung 8: „Suergesteng: ofginn a lass loossen“ im deutschen Plan)
     const lb = LB_TITEL_RE.test(mat.title)
-    const titel = !nachStrich || allgemein ? (lb ? kurz(a.text.split(SATZ_GRENZE)[0] ?? nachStrich, 50) : mat.title) : nachStrich
+    // … dann das erste (deutsche) Schlagwort des Materials („Fantasiereise“ statt „Führen Sie ruhig und langsam: …“)
+    const titel = !nachStrich || allgemein ? (lb ? (mat.tags?.[0]?.trim() || kurz(a.text.split(SATZ_GRENZE)[0] ?? nachStrich, 50)) : mat.title) : nachStrich
     return {
       quelle: { art: 'material', titel: lb ? '' : mat.title },
       titel, text: a.text,

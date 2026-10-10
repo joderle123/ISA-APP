@@ -208,23 +208,34 @@ function rolleName(x: PlanSchritt, e: KatalogEintrag | undefined, sprache: Sprac
   return ROLLE_NAME[x.rolle]?.[sprache] ?? x.rolle
 }
 
-/** „Der oder die Jugendliche“ → Name (Planblatt für eine Person). */
+/** „Der oder die Jugendliche“, „die Person“ → Name (Planblatt für eine Person). „Die Person“ nur, wenn der Satz danach
+ *  nicht mit „sie/ihr“ bzw. „elle/prête …“ auf sie zurückgreift – das Geschlecht kennt Passgenau nicht. */
 function mitName(t: string, name: string, sp: Sprache): string {
+  const person = (re: RegExp, bezug: RegExp) => (s: string) =>
+    s
+      .split(/((?<=[.!?:;])\s+)/)
+      .map((satz, i) => (i % 2 ? satz : satz.replace(re, (m, ...a) => (bezug.test(satz.slice((a[a.length - 2] as number) + m.length)) ? m : name))))
+      .join('')
   if (sp === 'fr') {
     const de = /^[aeiouyéèêàâîôûh]/i.test(name) ? `d’${name}` : `de ${name}`
-    return t
-      .replace(/\bdu ou de la jeune\b/g, de)
-      .replace(/\bau ou à la jeune\b/g, `à ${name}`)
-      .replace(/\b[Ll]e ou la jeune\b/g, name)
-      .replace(/\b[Ii]l ou elle\b/g, name)
-      .replace(/\b[Ll]a personne\b(?! (inventée|imaginaire|qui|d['’]en face))/g, name)
+    return person(
+      /\b[Ll]a personne\b(?! (inventée|imaginaire|qui|dont|suivante|concernée|visée|d['’]en face))/g,
+      /\b(elle|elle-même|prête|assise|seule|contente|gênée|fatiguée|énervée|perdue|bloquée|sûre)\b/,
+    )(
+      t
+        .replace(/\bdu ou de la jeune\b/g, de)
+        .replace(/\bau ou à la jeune\b/g, `à ${name}`)
+        .replace(/\b[Ll]e ou la jeune\b/g, name)
+        .replace(/\b[Ii]l ou elle\b/g, name),
+    )
   }
-  return t
-    .replace(/\b[Dd](er oder die|en oder die) Jugendliche\b/g, name)
-    .replace(/\b[Dd]em oder der Jugendlichen\b/g, name)
-    .replace(/\b[Ee]r oder sie\b/g, name)
-    .replace(/\b[Ii]hm oder ihr\b/g, name)
-    .replace(/\b[Dd]ie Person\b(?!,? (die|der|aus|gegenüber))/g, name)
+  return person(/\b[Dd]ie Person\b(?!,? (die|der|aus|gegenüber|links|rechts|neben))/g, /\b(sie|ihr|ihre[nmrs]?)\b/)(
+    t
+      .replace(/\b[Dd](er oder die|en oder die) Jugendliche\b/g, name)
+      .replace(/\b[Dd]em oder der Jugendlichen\b/g, name)
+      .replace(/\b[Ee]r oder sie\b/g, name)
+      .replace(/\b[Ii]hm oder ihr\b/g, name),
+  )
 }
 
 /** Sätze mit einer Diagnose als Beispiel weglassen (Blind-Bewertung 8: „im Autismus-Spektrum“ ohne Anlass im Planblatt). */
@@ -292,9 +303,9 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
   const sp = opt.sprache
   setzeTextModus((plan.auftrag?.sozialform ?? 'einzeln') !== 'einzeln')
   const schritte = s.schritte.map((x) => druckSchritt(k, x, sp, opt.warum, s.blatt?.titel, p.alterJahre >= 12))
-  // Jugendliche mit Namen (Blind-Bewertung 8: „‚der oder die Jugendliche‘ statt Elif“, „‚le ou la jeune / il ou elle‘ für
-  // einen namentlich bekannten Jungen“) – nur für eine Person, nicht in der Gruppe
-  const name = !p.gruppe?.length && p.alterJahre >= 12 ? (p.anrede ?? p.vorname ?? '').trim() : ''
+  // mit Namen (Blind-Bewertung 8: „‚der oder die Jugendliche‘ statt Elif“, „‚le ou la jeune / il ou elle‘ für einen
+  // namentlich bekannten Jungen“, „la personne“ bei einem Elfjährigen) – nur für eine Person, nicht in der Gruppe
+  const name = !p.gruppe?.length ? (p.anrede ?? p.vorname ?? '').trim() : ''
   if (name) for (const d of schritte) {
     d.text = mitName(d.text, name, sp)
     if (d.wennEsKippt) d.wennEsKippt = mitName(d.wennEsKippt, name, sp)

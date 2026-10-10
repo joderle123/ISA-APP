@@ -220,6 +220,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     const eigen = e.id.startsWith('pg:')
     const kinderschutz = (c.p.achtung ?? []).includes('kinderschutz')
     if (einzeln && !eigen && (tm.has('gruppe') || tm.has('ihr'))) return 'Gruppe'
+    // Spielschule-Schritte sprechen fast alle von „den Kindern“ – dort nur nachrangig (gewicht), sonst ausgeschlossen
+    if (einzeln && !eigen && tm.has('kinderPlural') && !(e.typ === 'schritt' && e.quelle.art === 'spielschule')) return 'Gruppe'
     if (tm.has('jugend') && c.alter < 12) return 'für Jugendliche'
     if (tm.has('aelter') && c.alter < 13) return 'für Ältere'
     // belastende Sätze („Ich bin dumm“, „Keiner mag mich“) nicht in Krisenlage
@@ -554,6 +556,8 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
   }
   // Material mit luxemburgischem Titel (Text deutsch): Titel und Quelle fehlen im Plan – nur, wenn wenig anderes passt
   if (e.typ === 'schritt' && e.id.startsWith('m:') && !e.quelle.titel) g *= 0.5
+  // Spielschule „Die Kinder klatschen …“ in der Einzelstunde: nur, wenn wenig anderes passt
+  if (e.typ === 'schritt' && (c.a.sozialform ?? 'einzeln') === 'einzeln' && merkmaleVon(c.k, e).has('kinderPlural')) g *= 0.5
   // Einzelstunde: Schritte, die nur für Gruppen beschrieben sind (ohne Einzelvariante), zählen weniger – die Beschriftung
   // nennt 1290 solcher Schritte „einzeltauglich“; im Zweifel gewinnt, was für ein Kind geschrieben ist (Testlauf 9.10.)
   if ((c.a.sozialform === 'einzeln' || !c.a.sozialform) && e.typ === 'schritt' && !e.einzelvariante && !e.sozialform.some((x) => x === 'einzeln' || x === 'zu-zweit')) g *= 0.8

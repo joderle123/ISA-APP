@@ -21,6 +21,8 @@ export const TEXT_MERKMALE: Record<string, RegExp> = {
     ].join('|'),
     'i',
   ),
+  // Blind-Bewertung 8: „Die Kinder halten den Stein …“, „für C3 dürfen die Kinder begründen“ in einer Einzelstunde
+  kinderPlural: /\b[Dd]ie Kinder [a-zäöü]{3,}|\b(dürfen|sollen|können|müssen|werden|bekommen|malen|machen|zeigen) die Kinder\b|\b[Ll]es enfants [a-zéèêà]{3,}|\b(peuvent|doivent) les enfants\b/,
   // Anrede einer Gruppe
   ihr: /\b(euch|eure[nmrs]?)\b|\b(kennt|wisst|habt|seid|könnt|wollt|findet|seht|hört|denkt|meint|glaubt|erinnert|braucht|mögt) ihr\b|\b[Ii]hr (seid|habt|könnt|dürft|macht|sucht|geht|bekommt|werdet|sollt|wollt|dürft)\b|\b(Setzt|Stellt|Schaut|Nehmt|Macht|Sucht|Geht|Schreibt|Malt|Überlegt|Erzählt) (euch|ihr)\b|\bvous (allez|êtes|avez|pouvez)\b/,
   // für Jugendliche geschrieben
