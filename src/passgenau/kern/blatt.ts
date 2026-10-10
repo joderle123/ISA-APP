@@ -364,15 +364,92 @@ export function kernBlatt(c: Kontext, o: BlattAuftrag): BlattErgebnis | null {
   }
 }
 
+/** Übertragen-Blatt: nennt die Übung, nimmt ihre Anwendungsaufgaben mit und plant den Versuch. */
+function uebertragenBlatt(q: KatalogEintrag, sprache: Sprache, o: KernBlattOpt): Baustein[] {
+  const fr = sprache === 'fr'
+  const titel = textVon(q, sprache).titel
+  const liste: Baustein[] = [
+    { art: 'text', klein: true, text: fr ? `L’exercice « ${titel} » – aujourd’hui pour une situation des prochains jours. Rien n’est obligatoire : un exemple inventé, ça marche aussi.` : `Die Übung „${titel}“ – heute für eine Situation der nächsten Tage. Nichts davon ist Pflicht: Ein erfundenes Beispiel geht auch.` },
+  ]
+  if (!o.wenigSchreiben) liste.push(...anwendungsAufgaben(q, sprache))
+  liste.push(
+    { art: 'wennDann', zeilen: 1, wenn: fr ? 'Si … (où, quand, avec qui)' : 'Wenn … (wo, wann, mit wem)', dann: fr ? `alors j’utilise « ${titel} » :` : `dann nutze ich „${titel}“:` },
+    { art: 'frage', text: fr ? 'Mon petit essai d’ici la prochaine fois :' : 'Mein kleiner Versuch bis zum nächsten Mal:', linien: o.wenigSchreiben ? 1 : 2 },
+  )
+  if (!o.wenigSchreiben) liste.push({ art: 'frage', text: fr ? 'Et si ça ne marche pas ?' : 'Und wenn es nicht klappt?', linien: 1 })
+  return liste
+}
+
+/** Rückblick-Blatt der Folge: die Übungen zum Ankreuzen, das Ziel beim Namen, ein nächster Schritt. */
+function rueckblickBlatt(folge: KatalogEintrag[], sprache: Sprache, o: KernBlattOpt): Baustein[] {
+  const fr = sprache === 'fr'
+  const titel = folge.slice(0, 6).map((e) => textVon(e, sprache).titel)
+  const liste: Baustein[] = [
+    { art: 'text', klein: true, text: fr ? 'Retour sur la série. Rien n’est obligatoire.' : 'Rückblick auf die Folge. Nichts davon ist Pflicht.' },
+    { art: 'ankreuzen', titel: fr ? 'Ce qui m’a le plus apporté – plusieurs réponses possibles :' : 'Das hat mir am meisten gebracht – mehrere gehen:', items: [...titel, fr ? 'autre chose : …' : 'etwas anderes: …'], spalten: 1 },
+  ]
+  if (!o.wenigSchreiben)
+    liste.push({ art: 'frage', text: o.ziel ? (fr ? `Ce qui a changé depuis la première séance (« ${o.ziel} ») :` : `Das hat sich seit der ersten Sitzung verändert („${o.ziel}“):`) : fr ? 'Ce qui a changé depuis la première séance :' : 'Das hat sich seit der ersten Sitzung verändert:', linien: 2 })
+  if (!o.stimmungTief && !o.wenigSchreiben && o.ziel) liste.push({ art: 'skala', frage: fr ? `« ${o.ziel} » – ça marche maintenant …` : `„${o.ziel}“ – das klappt jetzt …`, von: fr ? 'pas encore' : 'noch nicht', bis: fr ? 'bien' : 'gut', stufen: 5 })
+  liste.push({ art: 'satzanfaenge', items: [fr ? 'Mon prochain petit pas :' : 'Mein nächster kleiner Schritt:'], linien: 1 })
+  return liste
+}
+
 const KERNBLATT_BEREICH: Record<string, Bereich> = {
   'gefuehle-erkennen': 'gefuehle', 'gefuehle-ausdruecken': 'gefuehle', impulskontrolle: 'verhalten', selbstregulation: 'verhalten',
   kooperation: 'miteinander', konflikte: 'miteinander', kommunikation: 'miteinander', aufmerksamkeit: 'lernen', ausdauer: 'lernen',
   lernstrategien: 'lernen', selbstbild: 'selbstreflexion', alltag: 'alltag',
 }
 
+/** Die Übung, die eine Übertragen-Sitzung in den Alltag bringt: aus dem Titel „Übertragen: …“ unter den Kernen der Folge. */
+export function quelleDerUebertragung(k: Katalog, plan: Plan, x: { ueber?: Record<string, string> }): KatalogEintrag | undefined {
+  const t = x.ueber?.titel?.replace(/^Übertragen:\s*/, '')
+  if (!t) return undefined
+  for (const s of plan.sitzungen)
+    for (const y of s.schritte) {
+      if (y.rolle !== 'kern' || y.ref.startsWith('pg:')) continue
+      const e = k.eintraege.get(y.ref)
+      if (e && textVon(e, 'de').titel === t) return e
+    }
+  return undefined
+}
+
+interface KernBlattOpt {
+  wenigSchreiben: boolean
+  nr: number
+  /** Stimmung ≤ 2: keine Selbsteinschätzung auf Skalen (Blind-Bewertung 7: „Selbsteinstufung bei Stimmung 2“) */
+  stimmungTief?: boolean
+  /** Übertragen: die übertragene Übung */
+  quelle?: KatalogEintrag
+  /** Rückblick der Folge: die Übungen der Folge */
+  folge?: KatalogEintrag[]
+  /** Ziel der Folge in einem Satz (Rückblick) */
+  ziel?: string
+}
+
+/** Aufgaben 3–4 eines Übungsblatts (die Anwendung auf eine neue Situation) – für das Übertragen-Blatt. */
+function anwendungsAufgaben(e: KatalogEintrag, sprache: Sprache): Baustein[] {
+  const teile = e.typ === 'schritt' && e.uebungsblatt ? ((sprache === 'fr' ? e.uebungsblatt.fr : e.uebungsblatt.de) ?? []) : []
+  const out: Baustein[] = []
+  let n = 0
+  for (const b of teile) {
+    if (b.art === 'text') continue
+    n++
+    if (n <= 2) continue
+    if (b.art === 'feld') out.push({ ...b, hoehe: Math.max(b.zeichnen ? 6 : 3, Math.min(7, Math.round((b.hoehe ?? 36) / 8))) })
+    else out.push(b.art === 'frage' ? { ...b, linien: Math.min(b.linien ?? 2, 2) } : b)
+    if (out.length >= 2) break
+  }
+  return out
+}
+
 /** Inhalt des Blatts zur Übung (kernBlatt): kurz, ohne Pflicht, Persönliches aufzuschreiben. */
-function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache: Sprache, o: { wenigSchreiben: boolean; nr: number }): Baustein[] {
+function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache: Sprache, o: KernBlattOpt): Baustein[] {
   const fr = sprache === 'fr'
+  // Übertragen und Rückblick mit Bezug (Blind-Bewertung 7: „‚Wo probiere ich es aus?‘ – das Blatt sagt nicht, was ‚es‘ ist“,
+  // „das Wenn-dann-Blatt könnte zu jeder Stunde gehören“, „Blatt 5 = Blatt 6“)
+  if (phase === 'uebertragen' && o.quelle) return uebertragenBlatt(o.quelle, sprache, o)
+  if (phase === 'reflektieren' && (o.folge?.length ?? 0) >= 2) return rueckblickBlatt(o.folge!, sprache, o)
   const t = textVon(kern, sprache)
   const frage = (t.sagen ?? []).find((x) => /\?\s*[»“"]?$/.test(x.trim()) && x.length <= 140)
   const liste: Baustein[] = [
@@ -385,6 +462,7 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
     const teile = (fr ? eigen.fr : eigen.de) ?? []
     let aufgaben = 0
     for (const b of teile) {
+      if (o.stimmungTief && b.art === 'skala') continue
       if (b.art !== 'text') aufgaben++
       if (o.wenigSchreiben && aufgaben > 2) break
       // Zuordnen und Dialog-Lücken tragen keinen eigenen Auftrag – ein kurzer Satz davor
@@ -397,7 +475,9 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
     return liste
   }
   const F = (de: string, f: string, linien = 2): Baustein => ({ art: 'frage', text: fr ? f : de, linien })
-  const sicher: Baustein = { art: 'skala', frage: fr ? 'Je me sens …' : 'Damit fühle ich mich …', von: fr ? 'pas encore sûr·e' : 'noch unsicher', bis: fr ? 'tout à fait sûr·e' : 'ganz sicher', stufen: 5 }
+  const sicher: Baustein = o.stimmungTief
+    ? { art: 'satzanfaenge', items: [fr ? 'Ce qui m’a aidé aujourd’hui :' : 'Geholfen hat mir heute:'], linien: 1 }
+    : { art: 'skala', frage: fr ? 'Je me sens …' : 'Damit fühle ich mich …', von: fr ? 'pas encore sûr·e' : 'noch unsicher', bis: fr ? 'tout à fait sûr·e' : 'ganz sicher', stufen: 5 }
   // wenig Lesen und Schreiben oder ruhiges Tempo (Blind-Bewertung 6: „drei bis vier offene Schreibfragen bei Schreiben 1“):
   // zwei kurze Teile, je eine Zeile, eine Skala zum Ankreuzen
   if (o.wenigSchreiben) {
@@ -577,19 +657,25 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
       continue
     }
     if (t.ref === BLATT_SYSTEM.kernblatt) {
-      const kr = (s?.schritte ?? []).find((x) => x.rolle === 'kern')?.ref
-      const kern = kr ? k.eintraege.get(kr) : undefined
+      const ks = (s?.schritte ?? []).find((x) => x.rolle === 'kern')
+      const kern = ks ? k.eintraege.get(ks.ref) : undefined
       const h = plan.auftrag?.heute
       // schwerer Tag (Stimmung oder Konzentration ≤ 2): kurzes Blatt wie bei wenig Schreiben (Blind-Bewertung 6)
       const schwer = !!h && (h.stimmung <= 2 || h.konzentration <= 2)
-      if (kern) bausteine.push(...kernBlattInhalt(kern, s!.phase === 'reflektieren' && plan.n < 2 ? 'ueben' : s!.phase, sprache, { wenigSchreiben: schwer || p.zugang.schreiben <= 1 || p.zugang.lesen <= 1 || p.zugang.tempo === 'ruhig', nr }))
+      const quelle = ks?.ref === 'pg:uebertragen' ? quelleDerUebertragung(k, plan, ks) : undefined
+      const folge = ks?.ref === 'pg:folge-transfer'
+        ? [...new Set(plan.sitzungen.flatMap((y) => y.schritte.filter((z) => z.rolle === 'kern' && !z.ref.startsWith('pg:')).map((z) => z.ref)))].map((r) => k.eintraege.get(r)).filter((e): e is KatalogEintrag => !!e)
+        : undefined
+      const zc = plan.ziele.find(istEldib)
+      const ziel = zc ? zielSatzVon(k, p, zc, sprache) : undefined
+      if (kern) bausteine.push(...kernBlattInhalt(kern, s!.phase === 'reflektieren' && plan.n < 2 ? 'ueben' : s!.phase, sprache, { wenigSchreiben: schwer || p.zugang.schreiben <= 1 || p.zugang.lesen <= 1 || p.zugang.tempo === 'ruhig', nr, stimmungTief: !!h && h.stimmung <= 2, quelle, folge, ziel }))
       markiere(start, bausteine.length - start, teilId)
       continue
     }
     if (t.ref === BLATT_SYSTEM.stundenleiste) {
       const schritte = (s?.schritte ?? []).filter((x) => x.min > 0).slice(0, 7)
       // Jugendliche: „Schluss“ statt „Tschüss“ (Blind-Bewertung 5: wirkt bei 17 Jahren kindlich)
-      const wort = (r: Rolle) => (alter >= 12 && r === 'abschluss' ? (sprache === 'fr' ? 'Fin' : 'Schluss') : STUNDE_WORT[r][sprache])
+      const wort = (r: Rolle) => (alter >= 12 && r === 'abschluss' ? (sprache === 'fr' ? 'Fin' : 'Schluss') : alter >= 12 && r === 'spiel' ? (sprache === 'fr' ? 'Activité' : 'Aktivität') : STUNDE_WORT[r][sprache])
       if (schritte.length >= 2) bausteine.push({ art: 'stundenleiste', schritte: schritte.map((x) => ({ text: wort(x.rolle), bild: STUNDE_WORT[x.rolle].bild, min: x.min })) })
       markiere(start, bausteine.length - start, teilId)
       continue
@@ -621,7 +707,10 @@ export function kinderblatt(k: Katalog, p: Profil, plan: Plan, nr: number, sprac
   const haupt = blaetter.length ? intern(k).q.blatt.get([...zaehl.entries()].sort((a, b) => b[1] - a[1])[0][0])! : null
   const alleSpielschule = blaetter.length > 0 && blaetter.every((b) => b.bereich === 'spielschule')
   // Blatt zur Übung (Jugendliche): Farbe und Zeichen nach dem Kompetenzfeld des Kerns (nicht immer das Herz)
-  const kernFeld = !haupt && (s?.blatt?.bausteine ?? []).some((t) => t.ref === BLATT_SYSTEM.kernblatt) ? k.eintraege.get((s?.schritte ?? []).find((x) => x.rolle === 'kern')?.ref ?? '')?.kompetenz[0] : undefined
+  const kernSchritt = (s?.schritte ?? []).find((x) => x.rolle === 'kern')
+  const kernFuerFarbe = kernSchritt?.ref === 'pg:uebertragen' ? quelleDerUebertragung(k, plan, kernSchritt) : kernSchritt?.ref === 'pg:folge-transfer' ? k.eintraege.get(plan.sitzungen[0]?.schritte.find((x) => x.rolle === 'kern')?.ref ?? '') : k.eintraege.get(kernSchritt?.ref ?? '')
+  // (Blind-Bewertung 7: „Farbschema und Symbol wechseln in Sitzung 5 ohne Grund“ – Übertragen und Rückblick nach ihrer Übung)
+  const kernFeld = !haupt && (s?.blatt?.bausteine ?? []).some((t) => t.ref === BLATT_SYSTEM.kernblatt) ? kernFuerFarbe?.kompetenz[0] : undefined
   const { bereich, thema } = kernFeld ? { bereich: KERNBLATT_BEREICH[kernFeld] ?? ('selbstreflexion' as Bereich), thema: 'erkennen' } : haupt ? (alleSpielschule ? { bereich: 'spielschule' as Bereich, thema: haupt.thema } : bereichFuer(haupt.bereich === 'spielschule' ? { bereich: 'gefuehle', thema: 'erkennen' } : haupt)) : { bereich: 'gefuehle' as Bereich, thema: 'erkennen' }
   const titel = s?.blatt?.titel ?? 'Mein Blatt'
   const zielCode = plan.ziele.find(istEldib)

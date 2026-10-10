@@ -194,6 +194,8 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   // Alter und Gestaltung – nie gelockert
   if (stufenAbstand(c.stufe, e.stufen) >= 2) return 'Stufe'
   if (c.alter < e.alter.von - 1 || c.alter > e.alter.bis + 1) return 'Alter'
+  // was nur bis 11 Jahre gedacht ist, nie für Jugendliche (Blind-Bewertung 7: Rätsel, Wetterbericht, Schatzkarte mit 12)
+  if (c.alter >= 12 && e.alter.bis <= 11) return 'Alter'
   if (c.alter >= 10 && e.stufen.every((s) => s === 'C1' || s === 'C2')) return 'für Jüngere'
   // Nachfahren, Punkte verbinden, Fädeln, Anziehpuppe: Vorschul-Formate, nicht ab 10 (A10: „Linien nachfahren“ mit 12)
   if (c.alter >= 10 && e.typ === 'baustein' && e.art.some((a) => a === 'laufweg' || a === 'punkte_verbinden' || a === 'faedelkarte' || a === 'anziehpuppe' || a === 'klappbild')) return 'für Jüngere'
@@ -293,6 +295,9 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
   // Blatt des Kindes in einer Sprache (Testlauf 9.10., A6): auf einem französischen Blatt kein Teil mit deutschem Text –
   // Schritte für die Fachkraft dürfen deutsch sein (Hinweis „nur auf Deutsch“)
   if (o.blatt && e.typ === 'baustein' && c.sprache === 'fr' && !e.sprache.fr && e.textfelder.length) return 'nur auf Deutsch'
+  // Weg 3 für Jugendliche (Blind-Bewertung 7: „Verbinde mit dem Lineal A–B …“ – Übungscharakter und unterfordernd): keine
+  // Präzisions- und Geometrieaufgaben auf der Mitmach-Seite
+  if (e.typ === 'baustein' && c.alter >= 12 && c.weg === 'leicht' && (e.art.includes('geo') || /\bLineal\b|\brègle\b/.test(e.textfelder.join(' ')))) return 'Übungscharakter'
   // Zugang (P4): Lesemenge ≤ Kind (vorlesbar: + 1), Schreibmenge ≤ Kind
   if (e.typ === 'baustein') {
     const lesen = c.p.zugang.lesen + (intern(c.k).vorlesbar.has(e.id) ? 1 : 0)

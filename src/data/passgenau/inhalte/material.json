@@ -106,5 +106,9 @@
  "zeitung": {
   "de": "Zeitung",
   "fr": "journal"
+ },
+ "karopapier": {
+  "de": "Karopapier",
+  "fr": "papier quadrillé"
  }
 }
