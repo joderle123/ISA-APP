@@ -852,6 +852,19 @@ export function fuelleSitzung(c: Kontext, o: SitzungsAuftrag): Sitzung {
     }
   }
   const schritte = ergebnis.filter((x): x is PlanSchritt => !!x)
+  // Rituale nicht länger als gedacht (Blind-Bewertung 8: „6 Minuten Ankommen für ein Klopfzeichen“): der Rest geht an den Kern
+  {
+    const ks = schritte.find((x) => x.rolle === 'kern')
+    for (const x of schritte) {
+      if (x.rolle !== 'ankommen' && x.rolle !== 'abschluss') continue
+      const e = c.k.eintraege.get(x.ref)
+      const max = e?.typ === 'schritt' ? Math.max(2, e.dauer.max) : x.min
+      if (ks && x.min > max) {
+        ks.min += x.min - max
+        x.min = max
+      }
+    }
+  }
   // Kern aus einer Material-Einheit ohne deren Einstieg (kurze Stunde): den Einstieg als Hinweis davor (roter Faden)
   const kernSchritt = schritte.find((x) => x.rolle === 'kern')
   if (kernSchritt?.ref.startsWith('m:') && !kernSchritt.hinweis && !schritte.some((x) => x !== kernSchritt && quelleEinheit(x.ref) === quelleEinheit(kernSchritt.ref))) {
@@ -990,8 +1003,8 @@ const FOLGE_TITEL: Record<Kompetenz, string> = {
 
 const FOLGE_TITEL_FR: Record<Kompetenz, string> = {
   impulskontrolle: 'Stop – réfléchir – agir', selbstregulation: 'Se calmer', 'gefuehle-erkennen': 'Reconnaître les émotions',
-  'gefuehle-ausdruecken': 'Montrer et nommer ses émotions', aufmerksamkeit: 'Rester concentré·e', ausdauer: 'Persévérer',
-  kooperation: 'Ensemble plutôt que seul·e', konflikte: 'Résoudre les conflits', kommunikation: 'Parler et écouter', selbstbild: 'Mes forces',
+  'gefuehle-ausdruecken': 'Montrer et nommer ses émotions', aufmerksamkeit: 'Garder sa concentration', ausdauer: 'Persévérer',
+  kooperation: 'Faire ensemble', konflikte: 'Résoudre les conflits', kommunikation: 'Parler et écouter', selbstbild: 'Mes forces',
   lernstrategien: 'Bien apprendre', alltag: 'Gérer le quotidien',
 }
 

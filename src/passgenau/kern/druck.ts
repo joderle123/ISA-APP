@@ -217,12 +217,14 @@ function mitName(t: string, name: string, sp: Sprache): string {
       .replace(/\bau ou à la jeune\b/g, `à ${name}`)
       .replace(/\b[Ll]e ou la jeune\b/g, name)
       .replace(/\b[Ii]l ou elle\b/g, name)
+      .replace(/\b[Ll]a personne\b(?! (inventée|imaginaire|qui|d['’]en face))/g, name)
   }
   return t
     .replace(/\b[Dd](er oder die|en oder die) Jugendliche\b/g, name)
     .replace(/\b[Dd]em oder der Jugendlichen\b/g, name)
     .replace(/\b[Ee]r oder sie\b/g, name)
     .replace(/\b[Ii]hm oder ihr\b/g, name)
+    .replace(/\b[Dd]ie Person\b(?!,? (die|der|aus|gegenüber))/g, name)
 }
 
 /** Sätze mit einer Diagnose als Beispiel weglassen (Blind-Bewertung 8: „im Autismus-Spektrum“ ohne Anlass im Planblatt). */
@@ -390,7 +392,7 @@ export function druckSitzung(k: Katalog, p: Profil, plan: Plan, nr: number, opt:
     })
   // Jugend-Folge (Blind-Bewertung 7: „K-34 steht im Kopf, wird in der Sitzung aber nicht bearbeitet“): nur die Ziele, die der
   // Kern dieser Sitzung übt
-  const geuebt = p.alterJahre >= 12 && plan.n > 1 ? geuebteZiele(k, plan, s) : null
+  const geuebt = p.alterJahre >= 6 && plan.n > 1 ? geuebteZiele(k, plan, s) : null
   const codes = geuebt ? plan.ziele.filter((c) => geuebt.has(c)) : plan.ziele
   const ziele = (codes.length ? codes : plan.ziele.slice(0, 1)).map((code) => {
     const satz = zielSatz(k, p, code, sp)

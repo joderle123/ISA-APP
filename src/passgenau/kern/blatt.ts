@@ -487,8 +487,10 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
       if (b.art !== 'text' && b.art !== 'aufgabe' && b.art !== 'bild' && b.art !== 'wortspeicher') aufgaben++
       if (o.wenigSchreiben && aufgaben > 2) break
       // Zuordnen und Dialog-Lücken tragen keinen eigenen Auftrag – ein kurzer Satz davor
-      if (b.art === 'zuordnen' && !b.titel) liste.push({ art: 'aufgabe', text: fr ? 'Relie ce qui va ensemble.' : 'Verbinde, was zusammengehört.' })
-      if (b.art === 'dialog' && b.zeilen.some((z) => !z.text)) liste.push({ art: 'aufgabe', text: fr ? 'Écris dans les lignes vides ce que tu dirais.' : 'Schreib in die leeren Zeilen, was du sagen würdest.' })
+      // … außer die Übung schreibt selbst eine Anweisung davor (Kinder-Blätter: „Was passt zusammen? Verbinde.“)
+      const vorher = liste[liste.length - 1]?.art === 'aufgabe'
+      if (b.art === 'zuordnen' && !b.titel && !vorher) liste.push({ art: 'aufgabe', text: fr ? 'Relie ce qui va ensemble.' : 'Verbinde, was zusammengehört.' })
+      if (b.art === 'dialog' && !vorher && b.zeilen.some((z) => !z.text)) liste.push({ art: 'aufgabe', text: fr ? 'Écris dans les lignes vides ce que tu dirais.' : 'Schreib in die leeren Zeilen, was du sagen würdest.' })
       // Feldhöhe kommt in Millimetern (Übungsblätter), der Renderer rechnet in Zeilen
       if (b.art === 'feld') liste.push({ ...b, hoehe: Math.max(b.zeichnen ? 6 : 3, Math.min(9, Math.round((b.hoehe ?? 36) / 8))) })
       else liste.push(o.wenigSchreiben && b.art === 'frage' ? { ...b, linien: Math.min(b.linien ?? 2, 2) } : b)
@@ -498,7 +500,7 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
   const F = (de: string, f: string, linien = 2): Baustein => ({ art: 'frage', text: fr ? f : de, linien })
   const sicher: Baustein = o.stimmungTief
     ? { art: 'satzanfaenge', items: [fr ? 'Ce qui m’a aidé aujourd’hui :' : 'Geholfen hat mir heute:'], linien: 1 }
-    : { art: 'skala', frage: fr ? 'Je me sens …' : 'Damit fühle ich mich …', von: fr ? 'pas encore sûr·e' : 'noch unsicher', bis: fr ? 'tout à fait sûr·e' : 'ganz sicher', stufen: 5 }
+    : { art: 'skala', frage: fr ? 'Je me sens …' : 'Damit fühle ich mich …', von: fr ? 'pas encore à l’aise' : 'noch unsicher', bis: fr ? 'tout à fait à l’aise' : 'ganz sicher', stufen: 5 }
   // wenig Lesen und Schreiben oder ruhiges Tempo (Blind-Bewertung 6: „drei bis vier offene Schreibfragen bei Schreiben 1“):
   // zwei kurze Teile, je eine Zeile, eine Skala zum Ankreuzen
   if (o.wenigSchreiben) {

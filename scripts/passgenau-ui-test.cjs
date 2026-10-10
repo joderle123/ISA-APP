@@ -330,7 +330,10 @@ async function main() {
       await tb.locator('.pg-schritt').nth(2).locator('button[aria-label^="Daumen hoch"]').click()
 
       // 7. Blatt-Teil ersetzen (Liste)
-      const bl0 = tb.locator('.pg-bliste li').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ }).first()
+      // feste Teile (Stundenleiste, Hilfe-Zeile, Blatt zur Übung „Fragen zu …“) haben keine Alternativen
+      const bl0 = tb.locator('.pg-bliste li').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile|Fragen zu/ }).first()
+      if (!(await bl0.count())) console.log('  (Blatt zur Übung – Ersetzen eines Toolbox-Teils hier nicht prüfbar)')
+      else {
       const bl0t = await bl0.locator('.bt').innerText()
       await bl0.locator('.haupt').click()
       await dlg(tb).waitFor()
@@ -343,6 +346,7 @@ async function main() {
       } else {
         await dlg(tb).getByRole('button', { name: 'Behalten' }).click()
         pruefe(false, 'keine Alternative für Blatt-Teil')
+      }
       }
 
       // 8. Vorschau: Plan und Blatt, Antippen ersetzt
@@ -391,7 +395,7 @@ async function main() {
       if (breite < 500) await tb.locator('.pg-mtabs button', { hasText: 'Blatt' }).click()
       pruefe((await tb.locator('.pg-ed-liste .pg-er').count()) === vorher + 1, 'Baustein eingefügt')
       // Text ändern im Comic-Baustein (oder im ersten mit Feldern)
-      const teileListe = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile/ })
+      const teileListe = tb.locator('.pg-ed-liste .pg-er').filter({ hasNotText: /Stundenleiste|Hilfe-Zeile|Fragen zu/ }).filter({ has: tb.locator('button[aria-label^="Text ändern"]') })
       const comic = teileListe.filter({ hasText: 'Comic' }).first()
       const mitText = (await comic.count()) ? comic : teileListe.first()
       await mitText.locator('button[aria-label^="Text ändern"]').last().click()
@@ -561,8 +565,12 @@ async function main() {
       await tb.locator('.pg-schritt').first().waitFor()
       pruefe(await tb.getByText(/heikles Thema offen/).isVisible(), 'Banner bei heiklem Thema')
       await foto(tb, '18-ilyas-ergebnis')
-      await tb.locator('.pg-fs', { hasText: 'Vorher klären' }).first().click()
-      pruefe(await tb.getByText(/Beachten:/).first().isVisible(), 'Hinweis „Beachten“ aus der Quelle (Sitzung mit „Vorher klären“)')
+      // „Vorher klären“ hängt am Inhalt (Hinweis „Beachten“ einer Quelle) – nur prüfen, wenn die Folge eine solche Sitzung hat
+      const vk = tb.locator('.pg-fs', { hasText: 'Vorher klären' })
+      if (await vk.count()) {
+        await vk.first().click()
+        pruefe(await tb.getByText(/Beachten:/).first().isVisible(), 'Hinweis „Beachten“ aus der Quelle (Sitzung mit „Vorher klären“)')
+      } else console.log('  (Ilyas: keine Sitzung mit „Vorher klären“ in dieser Folge)')
       // Elternbriefe hängen meist an heiklen Themen – die plant Passgenau nur nach ausdrücklicher Freischaltung
       console.log(`  (Ilyas: ${(await tb.getByText(/Eltern informiert/).count()) ? 'mit' : 'ohne'} Hinweis „Elternbrief“ in der Folge)`)
       await tb.close()

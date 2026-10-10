@@ -112,7 +112,7 @@ const T: Record<Sprache, Record<string, string>> = {
     beachten: 'Attention', eltern: 'Avant : parents informés (règle de la maison) ?', blatt: 'La fiche', leichter: 'plus simple', wahl: 'Au choix', dp: '\u202f:',
     hinweise: 'Remarques', neu: 'nouvel essai', deckblatt: 'Série', sitzung: 'Séance', phase: 'Phase', kern: 'Cœur', alleMaterial: 'Matériel pour toute la série',
     ergebnis: 'Résultat', geklappt: 'réussi', teils: 'en partie', nicht: 'pas réussi', quelle: 'Source', ankreuzen: 'à cocher après la séance',
-    beruhigt: 's’est calmé·e', dabei: 'était présent·e', nurDa: 'voulait juste être là', abgebrochen: 'interrompu',
+    beruhigt: 'retour au calme', dabei: 'a participé', nurDa: 'voulait juste être là', abgebrochen: 'interrompu',
   },
 }
 
