@@ -226,7 +226,7 @@ export function Baukasten() {
       </div>
       <div className="pg-edgrid">
         <div className={'pg-ed-spalte' + (mtab === 'suche' ? ' mzeigen' : '')}>
-          <div className="pg-card">
+          <div className="pg-card pg-suchkarte">
             <h2>Bausteine suchen</h2>
             {einfuegenBei !== null && (
               <div className="pg-hinweisbox klein">
@@ -350,7 +350,7 @@ export function Baukasten() {
                 return (
                   <div key={e.id} className="pg-sk">
                     <div className="skt">
-                      {e.typ === 'baustein' ? <Pill>{tx.text}</Pill> : <RolleBadge rolle={(e.rolle.find((r) => r === rolle) ?? e.rolle[0]) as Rolle} />}
+                      {e.typ === 'baustein' ? <Pill><span className="pg-clamp3">{tx.text}</span></Pill> : <RolleBadge rolle={(e.rolle.find((r) => r === rolle) ?? e.rolle[0]) as Rolle} />}
                       <b className="pg-clamp2">{tx.titel}</b>
                       <small>
                         {e.typ === 'baustein' ? `aus „${tx.quelle}“ · ${PHASE_NAME[e.bogen]} · ~${e.hoehe[p.layout] ?? '?'} mm` : `${tx.quelle} · ${e.dauer.typ} Min.`}

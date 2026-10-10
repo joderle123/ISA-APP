@@ -396,7 +396,6 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
     (a: Auftrag, opt: { profilOhneFolge?: boolean } = {}) => {
       const r = refs.current
       if (!r.katalog || !r.profil) return
-      const t0 = performance.now()
       const p = opt.profilOhneFolge ? { ...r.profil, folge: null } : r.profil
       const auftrag: Auftrag = { ...a, heikel: heikel.length ? heikel : a.heikel, sozialform: a.weg === 'leicht' && !p.gruppe?.length ? 'einzeln' : sozialform }
       const neu = K.planen(r.katalog, p, auftrag, r.vor, verlauf)
@@ -407,12 +406,11 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       setAnsichtZustand('ergebnis')
       setDlg(null)
       window.scrollTo({ top: 0 })
-      const ms = Math.max(1, Math.round(performance.now() - t0))
-      hinweisZeigen(
-        neu.n > 1 && a.weg === 'gruendlich'
-          ? `Folge mit ${neu.n} Sitzungen gebaut in ${ms} ms – noch nicht gespeichert.`
-          : `Stunde gebaut in ${ms} ms – ${refs.current.darfSpeichern ? 'gespeichert wird beim Drucken oder per Knopf.' : 'ohne Hub nur als Datei.'}`,
-      )
+      // Gespeichert wird nicht beim Bauen, sondern beim Drucken (planSichern 'druck'), mit „Beim Kind speichern“ oder nach „Stunde gehalten“;
+      // ohne Schreibrecht legt der Druck den Plan in den persönlichen Tresor, ohne Hub bleibt nur die Datei.
+      const was = neu.n > 1 && a.weg === 'gruendlich' ? `Folge mit ${neu.n} Sitzungen gebaut.` : 'Stunde gebaut.'
+      const wie = refs.current.darfSpeichern ? 'Gespeichert wird beim Drucken.' : refs.current.darfTresor ? 'Beim Drucken landet sie in deinem Tresor.' : 'Zum Aufheben: „Als Datei speichern“.'
+      hinweisZeigen(`${was} ${wie}`)
       // Vorlieben merken: Dauer
       setVor((v) => ({ ...v, ich: { ...v.ich, dauer: a.dauer } as FachkraftVorlieben }))
     },

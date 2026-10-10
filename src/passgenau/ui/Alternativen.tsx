@@ -4,7 +4,7 @@ import type { Alternative, KatalogEintrag } from '../typen'
 import * as K from './kern'
 import { usePg, useProfil, type Ort } from './zustand'
 import { Ic } from './zeichen'
-import { Daumen, PgDialog, Pill, RolleBadge, Warum } from './Teile'
+import { Daumen, KurzText, PgDialog, Pill, RolleBadge, Warum } from './Teile'
 import { Miniatur } from './A4'
 import { inhaltVon } from './blattTeile'
 import { warumListe } from './anzeige'
@@ -58,7 +58,7 @@ export function Alternativen({ ort }: { ort: Ort }) {
           ) : (
             <>
               <h3>{tx.titel}</h3>
-              <p>{tx.text}</p>
+              <KurzText text={tx.text} />
             </>
           )}
           <div className="pg-meta">

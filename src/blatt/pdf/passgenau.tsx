@@ -125,10 +125,13 @@ export function Wahlkarte({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'wahlk
 export function Stundenleiste({ c, b }: { c: Ctx; b: Extract<Baustein, { art: 'stundenleiste' }> }) {
   const tx = T[c.sprache]
   const teile = b.schritte.slice(0, 7)
-  const d = c.m.layout === 'bild' ? 34 : c.m.layout === 'jugend' ? 22 : 28
+  // Kleine Kinder (Layout bild/gross): ruhiger – kein Rahmen, zarter Grund, kleinere Piktogramme; sie konkurrieren sonst mit
+  // den Aufgabenkarten darunter (die Reihenfolge bestimmt der Kern, nicht diese Darstellung)
+  const klein = c.m.layout === 'bild' || c.m.layout === 'gross'
+  const d = klein ? (c.m.layout === 'bild' ? 26 : 24) : c.m.layout === 'jugend' ? 22 : 28
   return (
-    <View wrap={false} style={{ borderWidth: 0.8, borderColor: c.p.mittel, borderRadius: 10, paddingVertical: 7, paddingHorizontal: 8 }}>
-      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: 7.4, letterSpacing: 0.8, color: c.p.tief, marginBottom: 5 }}>{(b.titel ?? tx.heute).toUpperCase()}</Text>
+    <View wrap={false} style={klein ? { backgroundColor: c.p.zart, borderRadius: 10, paddingVertical: 5, paddingHorizontal: 8 } : { borderWidth: 0.8, borderColor: c.p.mittel, borderRadius: 10, paddingVertical: 7, paddingHorizontal: 8 }}>
+      <Text style={{ fontFamily: SCHRIFT.titel, fontWeight: 800, fontSize: klein ? 8.4 : 7.4, letterSpacing: 0.8, color: c.p.tief, marginBottom: 5 }}>{(b.titel ?? tx.heute).toUpperCase()}</Text>
       <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
         {teile.map((s, i) => (
           <View key={i} style={{ flex: 1, alignItems: 'center', flexDirection: 'row' }}>

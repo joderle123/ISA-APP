@@ -1,5 +1,5 @@
 // Passgenau – kleine Bausteine der Oberfläche: Chips, Segmente, Rollen-Etikett, Warum, Daumen mit Gründen, Hinweise.
-import { useEffect, useId, useRef, useState, type ReactNode } from 'react'
+import { useEffect, useId, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { Dialog } from '../../components/Dialog'
 import type { DaumenGrund, KatalogEintrag, Rolle } from '../typen'
@@ -26,6 +26,45 @@ export function Seg<T extends string | number>({ wert, optionen, onWahl, label }
         </button>
       ))}
     </div>
+  )
+}
+
+/** Ist der Text im Element abgeschnitten (CSS-Zeilenbegrenzung)? Misst beim Aufbau und bei jeder Größenänderung – auch dann, wenn das
+ *  Element erst später sichtbar wird (Dialog öffnet sich nach dem Einhängen). */
+export function useGekuerzt<T extends HTMLElement>(ref: React.RefObject<T | null>, offen: boolean, text: string): boolean {
+  const [gekuerzt, setGekuerzt] = useState(false)
+  useLayoutEffect(() => {
+    const el = ref.current
+    if (!el || offen) return
+    const messen = () => setGekuerzt(el.scrollHeight > el.clientHeight + 1)
+    messen()
+    const ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(messen) : null
+    ro?.observe(el)
+    window.addEventListener('resize', messen)
+    return () => {
+      ro?.disconnect()
+      window.removeEventListener('resize', messen)
+    }
+  }, [ref, offen, text])
+  return gekuerzt
+}
+
+/** Absatz, der höchstens vier Zeilen zeigt (CSS `.pg-kurz`); „Ganzer Text“ erscheint nur, wenn wirklich etwas fehlt. */
+export function KurzText({ text }: { text: string }) {
+  const ref = useRef<HTMLParagraphElement>(null)
+  const [offen, setOffen] = useState(false)
+  const gekuerzt = useGekuerzt(ref, offen, text)
+  return (
+    <>
+      <p ref={ref} className={'pg-kurz' + (offen ? ' offen' : '')}>
+        {text}
+      </p>
+      {(gekuerzt || offen) && (
+        <button type="button" className="pg-link pg-textmehr" onClick={() => setOffen(!offen)} aria-expanded={offen}>
+          {offen ? 'Weniger Text' : 'Ganzer Text'}
+        </button>
+      )}
+    </>
   )
 }
 
@@ -227,7 +266,7 @@ export function Hinweisleiste() {
     <div className="pg-hinweise" role="status" aria-live="polite">
       {h && (
         <div className={'pg-toast ' + (h.art ?? '')} key={h.id}>
-          <Ic n={h.art === 'warn' ? 'info' : 'check'} />
+          <Ic n={h.art === 'warn' || h.art === 'info' ? 'info' : 'check'} />
           <span>{h.text}</span>
           {h.knopf && (
             <button
