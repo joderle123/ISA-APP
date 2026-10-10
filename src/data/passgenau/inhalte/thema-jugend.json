@@ -1052,14 +1052,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Rot oder Schwarz",
-    "text": "Die Fachkraft deckt die sieben Karten des Stapels nacheinander auf. Bei einer roten Karte tippt der oder die Jugendliche mit dem Finger auf den Tisch, bei einer schwarzen bleibt die Hand liegen. Danach tauschen beide die Rollen; ein Vertipper gehört dazu. Dann Tschüss.",
+    "titel": "Tabu-Zahl",
+    "text": "Der oder die Jugendliche wählt eine Tabu-Zahl, die Drei oder die Fünf, und die Fachkraft beginnt: Beide zählen abwechselnd von 1 bis 15, nur bei den Zahlen der Tabu-Reihe (bei der Drei: 3, 6, 9, 12, 15) sagt man nichts und tippt einmal auf den Tisch. Wer sich verhaspelt, macht einfach weiter, und in der zweiten Runde bestimmt der oder die Jugendliche, ob das Tempo schneller wird. Dann Tschüss.",
     "sagen": [
-      "Zum Schluss ein kurzes Reaktionsspiel zur Impulskontrolle: erst hinschauen, dann die Hand bewegen.",
-      "Rot: tippen. Schwarz: Hand liegen lassen. Ich decke zuerst auf.",
-      "Jetzt tauschen wir. Ein Vertipper gehört dazu. Tschüss!"
+      "Zum Schluss ein kurzes Spiel, bei dem man bremsen muss: Wir zählen, aber nicht alle Zahlen werden gesagt.",
+      "Such dir eine Tabu-Zahl aus, die Drei oder die Fünf. Alle Zahlen aus dieser Reihe tippen wir nur auf den Tisch.",
+      "Verhaspeln gehört dazu. Zweite Runde schneller oder gleich? Du bestimmst. Tschüss!"
     ],
-    "wennEsKippt": "Tippt der oder die Jugendliche oft zu früh, deckt die Fachkraft die Karten langsamer auf. Mag er oder sie nicht, sagt die Fachkraft einfach Tschüss.",
+    "wennEsKippt": "Wird es zu schwer, wählt man die Fünf, die seltener vorkommt. Wird es zu leicht, zählt man bis 30 oder schneller. Mag der oder die Jugendliche nicht, sagt die Fachkraft einfach Tschüss.",
     "rolle": [
       "abschluss"
     ],
@@ -1088,12 +1088,9 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "spiel",
-      "karten"
+      "spiel"
     ],
-    "material": [
-      "spielkarten"
-    ],
+    "material": [],
     "ort": "raum",
     "anspruch": 0,
     "merkmale": {
@@ -1104,19 +1101,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Rouge ou noir",
-      "text": "L’adulte retourne une à une les sept cartes du paquet. Pour une carte rouge, le ou la jeune tape du doigt sur la table ; pour une carte noire, la main reste posée. Ensuite, on échange les rôles ; une erreur de doigt fait partie du jeu. Puis au revoir.",
+      "titel": "Le chiffre tabou",
+      "text": "Le ou la jeune choisit un chiffre tabou, le trois ou le cinq, et l’adulte commence : les deux comptent en alternance de 1 à 15, mais pour les nombres de cette table (avec le trois : 3, 6, 9, 12, 15), on ne dit rien et on tape une fois sur la table. Celui ou celle qui se trompe continue simplement, et à la deuxième manche, le ou la jeune décide si le rythme s’accélère. Puis au revoir.",
       "sagen": [
-        "Pour finir, un petit jeu de réaction pour le contrôle des impulsions : d’abord regarder, puis bouger la main.",
-        "Rouge : tu tapes. Noir : la main reste posée. Je retourne les cartes en premier.",
-        "Maintenant, on échange. Une erreur fait partie du jeu. Au revoir !"
+        "Pour finir, un petit jeu où il faut freiner : on compte, mais on ne dit pas tous les nombres.",
+        "Choisis un chiffre tabou : le trois ou le cinq. Les nombres de cette table, on ne les dit pas, on tape sur la table.",
+        "Se tromper fait partie du jeu. Deuxième manche plus vite ou pareil ? C’est toi qui décides. Au revoir !"
       ],
-      "wennEsKippt": "Si le ou la jeune tape trop tôt, l’adulte retourne les cartes plus lentement. S’il ou elle ne veut pas, l’adulte dit simplement au revoir.",
-      "kurz": "Cartes retournées · rouge : taper · noir : la main reste posée",
-      "vorbereitung": "Préparer un paquet de 5 cartes rouges et 2 noires, mélangées"
+      "wennEsKippt": "Si c’est trop difficile, on choisit le cinq, qui revient moins souvent. Si c’est trop facile, on compte jusqu’à 30 ou plus vite. Si le ou la jeune ne veut pas, l’adulte dit simplement au revoir.",
+      "kurz": "Compter en alternance jusqu’à 15 · nombres tabous tapés · plus vite"
     },
-    "kurz": "Karten aufdecken · Rot: Finger tippt · Schwarz: Hand bleibt liegen",
-    "vorbereitung": "Stapel aus 5 roten und 2 schwarzen Spielkarten mischen"
+    "kurz": "Abwechselnd bis 15 zählen · Tabu-Zahlen nur tippen · schneller"
   },
   {
     "id": "th:aufmerksamkeit-ankommen-jugend",
@@ -1340,14 +1335,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Was ist anders?",
-    "text": "Die Fachkraft legt vier Gegenstände vom Tisch in eine Reihe. Der oder die Jugendliche schaut sie kurz an und blickt dann zur Seite, während die Fachkraft zwei davon vertauscht oder einen entfernt. Beim Zurückschauen zeigt er oder sie, was anders ist. Dann tauschen sie die Rollen, und danach kommt das Tschüss.",
+    "titel": "Das Fangwort",
+    "text": "Die Fachkraft erzählt in etwa einer halben Minute eine kurze Quatschgeschichte, in der ein bestimmtes Wort mehrmals vorkommt, zum Beispiel „Bus“. Der oder die Jugendliche tippt leise mit dem Finger auf den Tisch, sobald er oder sie das Wort hört, und sagt am Ende, wie oft es kam. Dann sucht sich der oder die Jugendliche ein Fangwort aus und erzählt selbst, und die Fachkraft tippt. Dann Tschüss.",
     "sagen": [
-      "Zum Schluss ein kurzer Check für die Aufmerksamkeit: genau hinschauen und eine Veränderung bemerken.",
-      "Schau dir die Reihe kurz an. Dann Blick zur Seite – ich ändere etwas.",
-      "Was ist anders? Jetzt bist du dran, und ich schaue genau hin."
+      "Zum Schluss ein Spiel für die Aufmerksamkeit: Ich erzähle, und du tippst beim Fangwort.",
+      "Mein Fangwort ist „Bus“. Gestern wartete ich auf den Bus, doch dann kam ein Bus, der gar kein Bus war.",
+      "Wie oft kam „Bus“? Jetzt suchst du ein Fangwort aus, und ich tippe. Tschüss!"
     ],
-    "wennEsKippt": "Findet der oder die Jugendliche die Änderung nicht, zeigt die Fachkraft sie, und die Rollen wechseln trotzdem. Ist es zu leicht oder zu schwer, nimmt man sechs oder drei Gegenstände.",
+    "wennEsKippt": "Ist die Geschichte zu schnell, erzählt die Fachkraft langsamer oder nimmt ein Wort, das nur zweimal vorkommt. Mag der oder die Jugendliche nicht erzählen, nennt er oder sie nur das Fangwort, und die Fachkraft erzählt noch eine Geschichte.",
     "rolle": [
       "abschluss"
     ],
@@ -1377,11 +1372,9 @@
     "reiz": 0,
     "format": [
       "spiel",
-      "sinne"
+      "gespraech"
     ],
-    "material": [
-      "alltagsdinge"
-    ],
+    "material": [],
     "ort": "raum",
     "anspruch": 0,
     "merkmale": {
@@ -1392,17 +1385,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Qu’est-ce qui a changé ?",
-      "text": "L’adulte aligne quatre objets pris sur la table. Le ou la jeune les regarde un instant, puis détourne le regard pendant que l’adulte échange deux objets ou en retire un. En regardant de nouveau, il ou elle montre ce qui a changé. Ensuite, on échange les rôles, puis vient l’au revoir.",
+      "titel": "Le mot à attraper",
+      "text": "L’adulte raconte en une demi-minute environ une courte histoire absurde dans laquelle un certain mot revient plusieurs fois, par exemple « bus ». Le ou la jeune tape doucement du doigt sur la table dès qu’il ou elle entend le mot et dit à la fin combien de fois il est venu. Ensuite, le ou la jeune choisit un mot à attraper et raconte à son tour, et l’adulte tape. Puis au revoir.",
       "sagen": [
-        "Pour finir, un petit contrôle d’attention : bien regarder et remarquer un changement.",
-        "Regarde la rangée un instant. Puis détourne le regard – je change quelque chose.",
-        "Qu’est-ce qui a changé ? Maintenant, c’est toi qui changes, et je regarde bien."
+        "Pour finir, un jeu d’attention : je raconte, et tu tapes au mot à attraper.",
+        "Mon mot est « bus ». Hier, j’attendais le bus, mais le bus qui est arrivé n’était pas du tout un bus.",
+        "Combien de fois « bus » est-il venu ? Maintenant, tu choisis un mot, et moi, je tape. Au revoir !"
       ],
-      "wennEsKippt": "Si le ou la jeune ne trouve pas le changement, l’adulte le montre et on échange quand même les rôles. Si c’est trop facile ou trop difficile, on prend six ou trois objets.",
-      "kurz": "Quatre objets alignés · regard détourné, deux échangés · trouver"
+      "wennEsKippt": "Si l’histoire va trop vite, l’adulte raconte plus lentement ou prend un mot qui ne revient que deux fois. Si le ou la jeune ne veut pas raconter, il ou elle donne seulement le mot, et l’adulte raconte encore une histoire.",
+      "kurz": "Écouter une histoire absurde · taper au mot à attraper · échanger"
     },
-    "kurz": "Vier Dinge in Reihe · Blick weg, zwei tauschen · Änderung finden"
+    "kurz": "Quatschgeschichte hören · beim Fangwort tippen · tauschen"
   },
   {
     "id": "th:ausdauer-ankommen-jugend",
@@ -1620,14 +1613,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Zettel zum Dranbleiben",
-    "text": "Drei Zettel liegen auf dem Tisch: „zäh, aber weitergemacht“, „nach einem Fehler neu angesetzt“ und „zu Ende gebracht“. Die Fachkraft legt zuerst einen Stift auf den Zettel, der heute für sie passt, ohne viel zu erklären. Der oder die Jugendliche legt den Stift auf einen Zettel, der passt, oder auf keinen. Dann Tschüss.",
+    "titel": "Karten, die stehen",
+    "text": "Die Fachkraft und der oder die Jugendliche bauen beide ein kleines Kartenhaus aus fünf Spielkarten: Zwei Karten lehnen sich als Zelt gegeneinander, daneben steht ein zweites Zelt, und eine fünfte Karte liegt quer als Dach darüber. Fällt es um, wird ohne Kommentar neu angesetzt. Stehen beide Dächer, sagen sie „Tschüss“; nach spätestens drei Minuten ist auch ohne Dach Schluss.",
     "sagen": [
-      "Zum Schluss ein Blick aufs Dranbleiben: Welcher dieser Zettel passt heute am besten?",
-      "Ich lege zuerst: Bei mir passt dieser.",
-      "Und bei dir? Du kannst auch auf keinen legen – Pass ist in Ordnung."
+      "Zum Schluss etwas zum Dranbleiben: Wir bauen beide ein kleines Kartenhaus. Es darf umfallen.",
+      "Zwei Karten als Zelt, ein zweites Zelt daneben, die fünfte quer darüber. Fällt es, setzen wir neu an.",
+      "Steht das Dach? Dann Tschüss."
     ],
-    "wennEsKippt": "Passt kein Zettel, zeigt der oder die Jugendliche auf keinen oder schreibt eine eigene Zeile auf einen leeren Zettel. Zeigen ohne Worte genügt.",
+    "wennEsKippt": "Fällt das Dach ständig, reicht ein einzelnes Zelt aus zwei Karten. Rutschen die Karten, ein Blatt Papier oder ein Tuch unterlegen; klappt es sofort, kommt ein zweites Dach obendrauf.",
     "rolle": [
       "abschluss"
     ],
@@ -1644,7 +1637,7 @@
     },
     "dauer": {
       "min": 1,
-      "typ": 2,
+      "typ": 3,
       "max": 4
     },
     "sozialform": [
@@ -1656,14 +1649,13 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "karten"
+      "spiel"
     ],
     "material": [
-      "papier",
-      "stifte"
+      "spielkarten"
     ],
     "ort": "raum",
-    "anspruch": 1,
+    "anspruch": 0,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -1672,19 +1664,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Trois feuilles pour tenir bon",
-      "text": "Trois feuilles sont posées sur la table : « difficile, mais j’ai continué », « recommencé après une erreur » et « terminé ». L’adulte pose d’abord un crayon sur la feuille qui lui correspond aujourd’hui, sans trop expliquer. Le ou la jeune pose le crayon sur une feuille qui lui correspond, ou sur aucune. Puis au revoir.",
+      "titel": "Des cartes qui tiennent",
+      "text": "L’adulte et le ou la jeune construisent tous deux un petit château de cartes avec cinq cartes : deux cartes s’appuient l’une contre l’autre comme une tente, une deuxième tente se dresse à côté, et une cinquième carte est posée à plat en travers comme toit. S’il s’écroule, on recommence sans commentaire. Quand les deux toits tiennent, on dit « au revoir » ; au bout de trois minutes au plus, on s’arrête de toute façon.",
       "sagen": [
-        "Pour finir, un regard sur la persévérance : quelle feuille te correspond le mieux aujourd’hui ?",
-        "Je pose le crayon en premier : celle-ci me correspond.",
-        "Et toi ? Tu peux aussi n’en choisir aucune – tu peux dire « Je passe »."
+        "Pour finir, quelque chose sur la persévérance : on construit tous deux un petit château de cartes. Il a le droit de s’écrouler.",
+        "Deux cartes en tente, une deuxième tente à côté, la cinquième en travers. S’il tombe, on recommence.",
+        "Le toit tient ? Alors au revoir."
       ],
-      "wennEsKippt": "Si aucune feuille ne correspond, le ou la jeune n’en montre aucune ou écrit sa propre ligne sur une feuille vierge. Montrer sans mot suffit.",
-      "kurz": "Poser le crayon sur l’une des trois feuilles · ou sur aucune",
-      "vorbereitung": "Préparer 3 feuilles : difficile mais continué · recommencé · terminé"
+      "wennEsKippt": "Si le toit tombe sans arrêt, une seule tente de deux cartes suffit. Si les cartes glissent, glisser une feuille de papier ou un foulard dessous ; si cela réussit tout de suite, on ajoute un deuxième toit par-dessus.",
+      "kurz": "Petit château de cartes · il tombe : recommencer · toit, au revoir"
     },
-    "kurz": "Stift auf den passenden von drei Zetteln legen · oder auf keinen",
-    "vorbereitung": "3 Zettel beschriften: zäh, aber weitergemacht · neu angesetzt · zu Ende gebracht"
+    "kurz": "Kleines Kartenhaus bauen · fällt es, neu ansetzen · Dach, dann Tschüss"
   },
   {
     "id": "th:kooperation-ankommen-jugend",
@@ -2119,14 +2109,14 @@
       "art": "praxis",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Größer oder kleiner",
-    "text": "Sechs Zettel mit Sätzen aus Streitsituationen liegen auf dem Tisch („Immer musst du …“, „Erzähl mal, wie du es siehst“, „Mach doch, was du willst“). Der oder die Jugendliche sortiert sie in zwei Stapel: macht den Streit größer, macht ihn kleiner. Die Fachkraft sortiert einen Satz mit und begründet kurz. Bei einem Satz, der sich schwer einordnen lässt, überlegen beide, wann er den einen oder den anderen Effekt hätte.",
+    "titel": "Was ich im Streit brauche",
+    "text": "Vier Karten liegen auf dem Tisch: erst mal Abstand, dass mir jemand zuhört, ein Vorschlag, wie es weitergeht, ein bisschen Humor. Die Fachkraft wählt zuerst die Karte, die für sie in einem Streit am wichtigsten ist, und sagt in einem Satz, woran andere das merken können. Der oder die Jugendliche wählt eine oder zwei Karten oder keine und überlegt, woran andere merken könnten, dass man das gerade braucht: ein Satz, ein Zeichen, ein Blick.",
     "sagen": [
-      "Heute geht es um Konflikte. Oft entscheidet ein einziger Satz, ob ein Streit größer oder kleiner wird.",
-      "Hier liegen sechs Sätze, wie sie im Streit fallen können. Sortier sie: größer oder kleiner?",
-      "Bei welchem Satz kommt es drauf an? Und was würde ihn kleiner machen?"
+      "Heute geht es um Konflikte. Im Streit brauchen Menschen ganz Verschiedenes – das schauen wir uns mit vier Karten an.",
+      "Ich wähle zuerst „erst mal Abstand“. Man merkt es an einem Satz wie: Ich brauche kurz Luft.",
+      "Welche Karte passt bei dir? Und woran könnten andere es merken? Pass ist erlaubt."
     ],
-    "wennEsKippt": "Fällt das Sortieren schwer, nehmen beide nur drei Zettel. Ist ein Satz zu nah an etwas Echtem, legt der oder die Jugendliche ihn weg; Pass ist erlaubt.",
+    "wennEsKippt": "Passt keine Karte, sagt der oder die Jugendliche es mit eigenen Worten oder „Pass“. Fällt kein Zeichen ein, nennt die Fachkraft zwei zur Auswahl.",
     "rolle": [
       "reflexion"
     ],
@@ -2163,7 +2153,7 @@
       "stifte"
     ],
     "ort": "raum",
-    "anspruch": 0,
+    "anspruch": 1,
     "merkmale": {
       "wettbewerb": false,
       "koerperkontakt": false,
@@ -2172,19 +2162,19 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Plus grand ou plus petit",
-      "text": "Six feuilles avec des phrases de situations de dispute sont posées sur la table (« Toujours à te plaindre… », « Raconte comment tu vois les choses », « Fais ce que tu veux »). Le ou la jeune les classe en deux piles : la dispute grossit, la dispute diminue. L’adulte classe aussi une phrase et explique brièvement pourquoi. Pour une phrase difficile à classer, tous deux cherchent quand elle ferait l’un ou l’autre effet.",
+      "titel": "Ce dont j’ai besoin dans une dispute",
+      "text": "Quatre fiches sont posées sur la table : d’abord de la distance, que quelqu’un m’écoute, une proposition pour la suite, un peu d’humour. L’adulte choisit d’abord la fiche qui compte le plus pour lui dans une dispute et dit en une phrase à quoi les autres peuvent le remarquer. Le ou la jeune choisit une ou deux fiches, ou aucune, et cherche à quoi les autres pourraient remarquer qu’on en a besoin : une phrase, un signe, un regard.",
       "sagen": [
-        "Aujourd’hui, on s’intéresse aux conflits. Souvent, une seule phrase décide si une dispute grossit ou diminue.",
-        "Voici six phrases comme on en dit dans une dispute. Classe-les : plus grand ou plus petit ?",
-        "Pour quelle phrase, ça dépend ? Et qu’est-ce qui la rendrait plus petite ?"
+        "Aujourd’hui, on parle des conflits. Dans une dispute, on n’a pas besoin de la même chose – on le regarde avec quatre fiches.",
+        "Je choisis d’abord « de la distance ». On le remarque à une phrase comme : j’ai besoin de prendre l’air.",
+        "Quelle fiche te convient ? Et à quoi les autres pourraient-ils le remarquer ? Tu peux dire « Je passe »."
       ],
-      "wennEsKippt": "Si le classement est difficile, on ne prend que trois feuilles. Si une phrase ressemble trop à quelque chose de vrai, le ou la jeune la met de côté ; « Je passe » est permis.",
-      "kurz": "Classer six phrases de dispute : plus grand ou plus petit · discuter",
-      "vorbereitung": "Écrire 6 feuilles de phrases de dispute, p. ex. « Toujours toi ! » · « Raconte » · « Fais comme tu veux »"
+      "wennEsKippt": "Si aucune fiche ne convient, le ou la jeune le dit avec ses propres mots ou dit « Je passe ». Si aucun signe ne vient, l’adulte en propose deux.",
+      "kurz": "Choisir une fiche : distance, écoute, proposition, humour · un signe",
+      "vorbereitung": "4 fiches : de la distance · que quelqu’un m’écoute · une proposition pour la suite · un peu d’humour"
     },
-    "kurz": "Sechs Streitsätze sortieren: größer oder kleiner · Zweifelsfall klären",
-    "vorbereitung": "6 Zettel mit Streitsätzen beschriften, z. B. „Immer du!“ · „Erzähl mal“ · „Mach doch, was du willst“"
+    "kurz": "Karte wählen: Abstand, Zuhören, Vorschlag, Humor · Zeichen finden",
+    "vorbereitung": "4 Karten schreiben: erst mal Abstand · dass mir jemand zuhört · ein Vorschlag, wie es weitergeht · ein bisschen Humor"
   },
   {
     "id": "th:konflikte-abschluss-jugend",
@@ -2192,14 +2182,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Streitsatz entschärfen",
-    "text": "Die Fachkraft schreibt einen Satz aus einem Chatstreit auf einen Zettel, zum Beispiel „Du bist immer so unfair!“. Der oder die Jugendliche streicht das Wort, das den Streit am meisten anheizt, und setzt ein ruhigeres ein oder lässt es weg. Die Fachkraft liest den neuen Satz vor; danach schreibt der oder die Jugendliche einen erfundenen Streitsatz, und die Fachkraft entschärft ihn. Dann Tschüss.",
+    "titel": "Gegenvorschlag",
+    "text": "Die Fachkraft sagt einen Wunsch, der nicht zu dem eines anderen passt, zum Beispiel „Ich will am Fenster sitzen!“ oder „Ich will den Song gleich hören!“. Der oder die Jugendliche antwortet nicht mit „Nein“, sondern mit einem Gegenvorschlag, der beide Wünsche berücksichtigt („Wir wechseln nach der Hälfte“). Das geht zwei, drei Mal, dann nennt der oder die Jugendliche Wünsche, und die Fachkraft macht die Gegenvorschläge. Dann Tschüss.",
     "sagen": [
-      "Zum Schluss ein Blick auf Konflikte: Oft entscheidet ein einziges Wort, ob ein Streit größer oder kleiner wird.",
-      "Hier ein Satz aus einem Streit. Streich das Wort, das ihn heißer macht, und tausch es aus.",
-      "Jetzt schreibst du einen Satz, und ich entschärfe ihn."
+      "Zum Schluss etwas zu Konflikten: Statt „Nein“ zu sagen, hilft oft ein Gegenvorschlag.",
+      "Ich will am Fenster sitzen! – Was ist dein Gegenvorschlag?",
+      "Jetzt nennst du einen Wunsch, und ich mache den Gegenvorschlag. Tschüss!"
     ],
-    "wennEsKippt": "Fällt kein Wort ein, wählt der oder die Jugendliche aus zwei Vorschlägen der Fachkraft (zum Beispiel „manchmal“ statt „immer“). Pass ist erlaubt, dann entschärft die Fachkraft den Satz allein.",
+    "wennEsKippt": "Fällt kein Gegenvorschlag ein, nennt die Fachkraft zwei zur Auswahl („Wir wechseln uns ab“, „Du bestimmst zuerst, ich danach“). Mag der oder die Jugendliche keinen eigenen Wunsch nennen, macht die Fachkraft zwei Wünsche vor; Pass ist erlaubt.",
     "rolle": [
       "abschluss"
     ],
@@ -2228,12 +2218,10 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "schreiben"
+      "rollenspiel",
+      "gespraech"
     ],
-    "material": [
-      "papier",
-      "stifte"
-    ],
+    "material": [],
     "ort": "raum",
     "anspruch": 0,
     "merkmale": {
@@ -2244,17 +2232,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Désamorcer une phrase",
-      "text": "L’adulte écrit sur une feuille une phrase tirée d’une dispute de chat, par exemple « Tu es toujours aussi injuste ! ». Le ou la jeune barre le mot qui envenime le plus la dispute et le remplace par un mot plus calme, ou le supprime. L’adulte lit la nouvelle phrase ; ensuite, le ou la jeune écrit une phrase de dispute inventée, et l’adulte la désamorce. Puis au revoir.",
+      "titel": "La contre-proposition",
+      "text": "L’adulte exprime un souhait qui ne va pas avec celui de quelqu’un d’autre, par exemple « Je veux m’asseoir près de la fenêtre ! » ou « Je veux écouter ce morceau tout de suite ! ». Le ou la jeune ne répond pas « non », mais par une contre-proposition qui tient compte des deux souhaits (« On change à la moitié »). On le fait deux ou trois fois, puis le ou la jeune exprime des souhaits, et l’adulte fait les contre-propositions. Puis au revoir.",
       "sagen": [
-        "Pour finir, un regard sur les conflits : souvent, un seul mot décide si une dispute grossit ou se calme.",
-        "Voici une phrase tirée d’une dispute. Barre le mot qui la rend plus brûlante et remplace-le.",
-        "Maintenant, tu écris une phrase et je la désamorce."
+        "Pour finir, quelque chose sur les conflits : au lieu de dire « non », une contre-proposition aide souvent.",
+        "Je veux m’asseoir près de la fenêtre ! – Quelle est ta contre-proposition ?",
+        "Maintenant, tu exprimes un souhait, et je fais la contre-proposition. Au revoir !"
       ],
-      "wennEsKippt": "Si aucun mot ne vient, le ou la jeune choisit parmi deux propositions de l’adulte (par exemple « parfois » à la place de « toujours »). « Je passe » est permis, et l’adulte désamorce alors la phrase seul.",
-      "kurz": "Phrase de dispute · barrer le mot qui envenime, remplacer · échanger"
+      "wennEsKippt": "Si aucune contre-proposition ne vient, l’adulte en propose deux (« On alterne », « Tu décides d’abord, moi ensuite »). Si le ou la jeune ne veut pas exprimer de souhait, l’adulte en montre deux ; « Je passe » est permis.",
+      "kurz": "Un souhait · contre-proposition au lieu de « non » · échanger"
     },
-    "kurz": "Streitsatz lesen · anheizendes Wort streichen, ersetzen · tauschen"
+    "kurz": "Wunsch hören · Gegenvorschlag statt Nein · Rollen tauschen"
   },
   {
     "id": "th:kommunikation-ankommen-jugend",
@@ -2543,14 +2531,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Das passt zu mir",
-    "text": "Sechs Karten mit kleinen Fähigkeiten liegen auf dem Tisch (zum Beispiel gut zuhören, Ruhe bewahren, Ideen haben, Neues schnell lernen). Die Fachkraft nimmt zuerst eine Karte für sich und sagt kurz, wo sie das zeigt. Der oder die Jugendliche nimmt eine Karte, die passt, oder keine. Mehr braucht es nicht.",
+    "titel": "Dafür fragt man mich",
+    "text": "Sechs Karten liegen auf dem Tisch: Musik empfehlen, Wege finden, Handy-Probleme, Ruhe bewahren, Witze erzählen, Essen aussuchen. Die Fachkraft nimmt zuerst eine Karte, für die sie selbst oft gefragt wird, und sagt in einem Halbsatz, wann das so ist. Der oder die Jugendliche nimmt eine oder zwei Karten, für die er oder sie gefragt wird, oder keine.",
     "sagen": [
-      "Heute geht es um das Bild von sich selbst. Als Start suchen wir uns eine kleine Fähigkeit aus, die zu uns passt.",
-      "Ich nehme zuerst: Diese Fähigkeit passt zu mir.",
-      "Und bei dir? Es darf klein sein – oder keine, Pass ist in Ordnung."
+      "Heute geht es um das Bild von sich selbst. Als Start: sechs Dinge, für die man gefragt werden kann – ein paar ernst, ein paar nicht.",
+      "Ich nehme zuerst „Wege finden“. Dafür werde ich gefragt, auch wenn ich mich ab und zu verlaufe.",
+      "Und bei dir? Eine, zwei oder keine – Pass ist in Ordnung."
     ],
-    "wennEsKippt": "Passt keine Karte, schreibt der oder die Jugendliche eine eigene Fähigkeit auf eine leere Karte oder sagt Pass. Dann nennt die Fachkraft eine zweite für sich.",
+    "wennEsKippt": "Passt keine Karte, schreibt der oder die Jugendliche etwas Eigenes auf eine leere Karte oder sagt Pass. Dann nennt die Fachkraft noch eine zweite Karte für sich.",
     "rolle": [
       "ankommen"
     ],
@@ -2596,19 +2584,19 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Ça me ressemble",
-      "text": "Six fiches avec de petites capacités sont posées sur la table (par exemple bien écouter, garder son calme, avoir des idées, apprendre vite des choses nouvelles). L’adulte prend d’abord une fiche pour lui-même et dit brièvement où cela se voit chez lui. Le ou la jeune prend une fiche qui lui ressemble, ou aucune. C’est tout.",
+      "titel": "Pour ça, on vient me voir",
+      "text": "Six fiches sont posées sur la table : musique, trouver son chemin, portable, garder son calme, blagues, choisir le repas. L’adulte prend d’abord une fiche pour laquelle on lui demande souvent conseil et dit en une demi-phrase quand c’est le cas. Le ou la jeune prend une ou deux fiches pour lesquelles on lui demande conseil, ou aucune.",
       "sagen": [
-        "Aujourd’hui, on s’intéresse à l’image de soi. Pour commencer, on choisit une petite capacité qui nous ressemble, toi et moi.",
-        "Je prends en premier : cette capacité me ressemble.",
-        "Et toi ? Ça peut être petit – ou aucune, tu peux dire « Je passe »."
+        "Aujourd’hui, on s’intéresse à l’image de soi. Pour commencer : six choses pour lesquelles on peut nous demander conseil – certaines sérieuses, d’autres pas.",
+        "Je prends d’abord la fiche « trouver son chemin ». On me le demande, même si je me perds de temps en temps.",
+        "Et toi ? Une, deux ou aucune – tu peux dire « Je passe »."
       ],
-      "wennEsKippt": "Si aucune fiche ne convient, le ou la jeune écrit sa propre capacité sur une fiche vierge ou dit « Je passe ». L’adulte en nomme alors une deuxième pour lui-même.",
-      "kurz": "Choisir parmi six fiches une capacité qui convient · passer permis",
-      "vorbereitung": "Écrire 6 fiches : bien écouter · garder son calme · avoir des idées · persévérer · apprendre · aider les autres"
+      "wennEsKippt": "Si aucune fiche ne convient, le ou la jeune écrit autre chose sur une fiche vierge ou dit « Je passe ». L’adulte en nomme alors une deuxième pour lui-même.",
+      "kurz": "Six fiches : pour quoi me demande-t-on ? · une ou deux · passer",
+      "vorbereitung": "6 fiches : musique · trouver son chemin · portable · garder son calme · blagues · choisir le repas"
     },
-    "kurz": "Aus sechs Karten eine passende Fähigkeit wählen · Pass erlaubt",
-    "vorbereitung": "6 Karten beschriften: gut zuhören · Ruhe bewahren · Ideen haben · dranbleiben · Neues lernen · anderen helfen"
+    "kurz": "Sechs Karten: wofür fragen andere mich? · eine bis zwei · Pass",
+    "vorbereitung": "6 Karten schreiben: Musik empfehlen · Wege finden · Handy-Probleme · Ruhe bewahren · Witze erzählen · Essen aussuchen"
   },
   {
     "id": "th:selbstbild-bewegung-jugend",
@@ -2807,7 +2795,7 @@
     },
     "fr": {
       "titel": "Ligne de profil du jour",
-      "text": "Tous deux écrivent sur une feuille une ligne de profil de trois mots, comme dans la bio d’un profil, par exemple « basket, musique, calme » ou « curiosité, calme, guitare ». L’adulte montre d’abord sa propre ligne. Le ou la jeune montre la sienne ou garde la feuille. Puis au revoir.",
+      "text": "Tous deux écrivent sur une feuille une ligne de profil de trois mots, comme dans la bio d’un profil, par exemple « basket, musique, calme » ou « curieux, calme, guitare ». L’adulte montre d’abord sa propre ligne. Le ou la jeune montre la sienne ou garde la feuille. Puis au revoir.",
       "sagen": [
         "Pour finir, quelque chose sur l’image de soi : trois mots qui me correspondent aujourd’hui, comme dans un profil.",
         "Je montre d’abord : ce sont mes trois mots d’aujourd’hui.",
@@ -3033,14 +3021,14 @@
       "art": "ritual",
       "titel": "Themen-Rahmen"
     },
-    "titel": "Das Wichtigste notieren",
-    "text": "Der oder die Jugendliche notiert das Wichtigste von heute auf einem Zettel und wählt dafür eine von drei Arten: drei Stichwörter, eine kleine Skizze oder einen Satz in eigenen Worten. Die Fachkraft macht es zugleich auf einem eigenen Zettel. Beide zeigen kurz, was entstanden ist; der Zettel darf mitgenommen werden. Dann Tschüss.",
+    "titel": "Ein Bild für heute",
+    "text": "Der oder die Jugendliche zeichnet in zwanzig Sekunden ein kleines Zeichen für das Wichtigste, das heute hängen geblieben ist, ohne Wörter. Die Fachkraft rät, was gemeint ist, und fragt höchstens einmal nach. Dann zeichnet die Fachkraft ein Zeichen, und der oder die Jugendliche rät. Dann Tschüss.",
     "sagen": [
-      "Zum Schluss etwas zu Lernstrategien: Es gibt mehrere Wege, sich etwas zu merken. Wir probieren jetzt einen aus.",
-      "Notiere das Wichtigste von heute: drei Stichwörter, eine Skizze oder einen Satz in eigenen Worten.",
-      "Ich mache auch einen Zettel. Dann zeigen wir sie uns kurz."
+      "Zum Schluss etwas zum Lernen: ein Merkbild. Mal in zwanzig Sekunden ein Zeichen für das Wichtigste von heute, ohne Wörter.",
+      "Ich rate, was du gemeint hast. Stimmt es, oder fehlt etwas?",
+      "Jetzt zeichne ich eins, und du rätst. Tschüss!"
     ],
-    "wennEsKippt": "Fällt dem oder der Jugendlichen nichts ein, nennt die Fachkraft zwei Dinge von heute, und er oder sie wählt eines zum Notieren. Mag er oder sie nichts aufschreiben, wird es nur kurz gesagt.",
+    "wennEsKippt": "Fällt dem oder der Jugendlichen nichts ein, nennt die Fachkraft zwei Dinge von heute, und er oder sie zeichnet eines davon. Mag er oder sie nicht zeichnen, genügt ein einfaches Strichzeichen oder ein Wort.",
     "rolle": [
       "abschluss"
     ],
@@ -3069,8 +3057,8 @@
     "belastung": 0,
     "reiz": 0,
     "format": [
-      "schreiben",
-      "gespraech"
+      "malen",
+      "spiel"
     ],
     "material": [
       "papier",
@@ -3086,17 +3074,17 @@
       "katharsis": false
     },
     "fr": {
-      "titel": "Garder l’essentiel",
-      "text": "Le ou la jeune note l’essentiel d’aujourd’hui sur une feuille, de l’une de trois façons : trois mots-clés, un petit croquis ou une phrase avec ses propres mots. L’adulte le fait en même temps sur sa propre feuille. Tous deux montrent brièvement le résultat ; la feuille peut être emportée. Puis au revoir.",
+      "titel": "Une image pour aujourd’hui",
+      "text": "Le ou la jeune dessine en vingt secondes un petit signe pour l’essentiel de ce qui est resté aujourd’hui, sans mots. L’adulte dit ce qu’il croit y voir et ne pose qu’une question au plus. Puis l’adulte dessine un signe, et le ou la jeune dit ce qu’il ou elle y voit. Puis au revoir.",
       "sagen": [
-        "Pour finir, un mot sur les stratégies d’apprentissage : il y a plusieurs façons de mémoriser quelque chose. On en essaie une maintenant.",
-        "Note l’essentiel d’aujourd’hui : trois mots-clés, un croquis ou une phrase avec tes mots.",
-        "Je fais aussi ma feuille. Ensuite, on se les montre."
+        "Pour finir, quelque chose sur l’apprentissage : une image pour s’en souvenir. Dessine en vingt secondes un signe pour l’essentiel d’aujourd’hui, sans mots.",
+        "Je dis ce que je vois dans ton signe. C’est juste, ou tu veux ajouter quelque chose ?",
+        "Maintenant, je dessine un signe, et toi, tu dis ce que tu y vois. Au revoir !"
       ],
-      "wennEsKippt": "Si le ou la jeune n’a pas d’idée, l’adulte cite deux choses d’aujourd’hui et il ou elle en choisit une à noter. S’il ou elle ne veut rien écrire, on le dit seulement.",
-      "kurz": "Noter l’essentiel d’aujourd’hui · mots-clés, croquis ou phrase"
+      "wennEsKippt": "Si le ou la jeune ne trouve rien, l’adulte cite deux choses d’aujourd’hui, et il ou elle en dessine une. S’il ou elle ne veut pas dessiner, un simple trait ou un mot suffit.",
+      "kurz": "Signe pour l’essentiel d’aujourd’hui · l’autre dit ce qu’il voit"
     },
-    "kurz": "Wichtigstes von heute notieren · Stichwörter, Skizze oder Satz"
+    "kurz": "Wichtigstes von heute als Zeichen skizzieren · raten · tauschen"
   },
   {
     "id": "th:alltag-ankommen-jugend",
@@ -3174,7 +3162,7 @@
     "titel": "Rückwärts zum Termin",
     "text": "Am einen Ende des Raums liegt ein Zettel „Termin“, am anderen „jetzt“. Der oder die Jugendliche wählt einen Termin, echt oder erfunden (Training um 16 Uhr, Bus um 7:40), und geht vom Termin aus zurück Richtung „jetzt“. Schritt für Schritt legt er oder sie Zettel mit Stichwörtern ab: Was muss davor erledigt sein? Danach macht die Fachkraft dasselbe mit einem eigenen Termin.",
     "sagen": [
-      "Heute geht es um Alltag und Selbstständigkeit: vorausdenken, damit es später leichter läuft. Das üben wir gleich mit einer kleinen Bewegung.",
+      "Heute geht es um den Alltag: Wie kommt man pünktlich und ohne Stress zu einem Termin? Das gehen wir gleich in Bewegung durch.",
       "Such dir einen Termin aus, echt oder erfunden: Training, Bus, Treffen. Von dort gehen wir Schritt für Schritt zurück Richtung „jetzt“.",
       "Was muss vorher erledigt sein? Leg dort einen Zettel mit einem Stichwort ab."
     ],
@@ -3227,7 +3215,7 @@
       "titel": "Du rendez-vous à maintenant",
       "text": "À un bout de la pièce se trouve une feuille « rendez-vous », à l’autre une feuille « maintenant ». Le ou la jeune choisit un rendez-vous, vrai ou inventé (entraînement à 16 h, bus à 7 h 40), et part de là pour revenir vers « maintenant ». À chaque pas, il ou elle pose une feuille avec un mot : qu’est-ce qui doit être fait avant ? Ensuite, l’adulte fait de même avec son propre rendez-vous.",
       "sagen": [
-        "Aujourd’hui, on s’intéresse au quotidien et à l’autonomie : prévoir pour que ce soit plus facile ensuite. On l’exerce tout de suite avec un petit mouvement.",
+        "Aujourd’hui, on parle du quotidien : comment arriver à l’heure et sans stress à un rendez-vous ? On le parcourt tout de suite en bougeant.",
         "Choisis un rendez-vous, vrai ou inventé : entraînement, bus, cours de musique. De là, on revient pas à pas vers « maintenant ».",
         "À chaque pas : qu’est-ce qui doit être fait avant ? Pose une feuille à cet endroit."
       ],
