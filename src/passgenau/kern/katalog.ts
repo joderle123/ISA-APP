@@ -570,6 +570,16 @@ export function istGruppenText(): boolean {
   return gruppenText
 }
 
+/** In der Gruppenstunde spricht der Text von jedem Kind (bleibt Einzahl: „Jedes Kind malt …“, „Chaque enfant dessine …“) */
+function fuerJedesKind(t: string): string {
+  if (!gruppenText) return t
+  return t
+    .replace(/\b([Dd])as Kind\b/g, (_m, d: string) => (d === 'D' ? 'Jedes Kind' : 'jedes Kind'))
+    .replace(/\b([Dd])em Kind\b/g, (_m, d: string) => (d === 'D' ? 'Jedem Kind' : 'jedem Kind'))
+    .replace(/\b([Dd])es Kindes\b/g, (_m, d: string) => (d === 'D' ? 'Jedes Kindes' : 'jedes Kindes'))
+    .replace(/\b([Ll])['’]enfant\b/g, (_m, l: string) => (l === 'L' ? 'Chaque enfant' : 'chaque enfant'))
+}
+
 export function textVon(e: KatalogEintrag, sprache: Sprache): { titel: string; text: string; sagen?: string[]; wennEsKippt?: string; quelle: string } {
   if (e.typ === 'schritt') {
     const fr = sprache === 'fr' && e.fr ? e.fr : null
@@ -578,7 +588,7 @@ export function textVon(e: KatalogEintrag, sprache: Sprache): { titel: string; t
     // in der Einzelstunde leitet die Fachkraft (nicht „die Lehrkraft“, nicht „l’enseignante“); mit Einzelvariante ohne
     // „(Paare)“ im Titel (Blind-Bewertung 9.10.)
     const titel = !gruppenText && (e.einzelvariante || fr?.einzelvariante) ? t.titel.replace(PAAR_TITEL_RE, '') : t.titel
-    return { titel: alsFachkraft(titel), text: alsFachkraft(ev?.text ?? t.text), sagen: (ev?.sagen ?? t.sagen)?.map(alsFachkraft), wennEsKippt: t.wennEsKippt && alsFachkraft(t.wennEsKippt), quelle: quelleText(e, sprache) }
+    return { titel: alsFachkraft(titel), text: fuerJedesKind(alsFachkraft(ev?.text ?? t.text)), sagen: (ev?.sagen ?? t.sagen)?.map(alsFachkraft), wennEsKippt: t.wennEsKippt && fuerJedesKind(alsFachkraft(t.wennEsKippt)), quelle: quelleText(e, sprache) }
   }
   const liste = aktuell ? bausteinInhalt(aktuell, e, sprache) : []
   const aufgaben = liste.filter((x): x is Extract<Baustein, { art: 'aufgabe' }> => x.art === 'aufgabe').map((x) => x.text)

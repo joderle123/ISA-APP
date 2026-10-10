@@ -5,7 +5,7 @@ import * as K from './kern'
 import { usePg, useProfil } from './zustand'
 import { Ic, type Zeichen } from './zeichen'
 import { Chip, HeikelBanner, Pill, Seg, VersionsBanner } from './Teile'
-import { LAYOUT_NAME, PHASE_NAME, SPRACHE_NAME, ZIELE_OHNE_KIND, datumKurz, heuteIso, interesseName, themaName, zielKurz, zugangText } from './texte'
+import { LAYOUT_NAME, PHASE_NAME, SOZIALFORM_NAME, SPRACHE_NAME, ZIELE_OHNE_KIND, datumKurz, heuteIso, interesseName, themaName, zielKurz, zugangText } from './texte'
 import { useRueckmeldung } from './Nachher'
 import { dauerVorgabe } from './Wege'
 import { quoteText } from './Praxis'
@@ -324,6 +324,18 @@ export function WissenKurz() {
   )
 }
 
+/** Schnellstart ohne Kind: häufige Anliegen als ein Klick (Ziele aus ZIELE_OHNE_KIND) */
+const REZEPTE: { titel: string; alter: number; ziele: string[]; sozialform: 'einzeln' | 'zu-zweit' | 'kleingruppe'; weg: 'schnell' | 'gruendlich' }[] = [
+  { titel: 'Wut im Griff', alter: 8, ziele: ['V-21', 'V-18'], sozialform: 'kleingruppe', weg: 'schnell' },
+  { titel: 'Gefühle benennen', alter: 6, ziele: ['K-26'], sozialform: 'kleingruppe', weg: 'schnell' },
+  { titel: 'Warten und abwechseln', alter: 5, ziele: ['SOZ-14', 'SOZ-19'], sozialform: 'kleingruppe', weg: 'schnell' },
+  { titel: 'Streit lösen', alter: 9, ziele: ['SOZ-34', 'SOZ-32'], sozialform: 'zu-zweit', weg: 'schnell' },
+  { titel: 'Sich in andere einfühlen', alter: 10, ziele: ['SOZ-37', 'K-26'], sozialform: 'kleingruppe', weg: 'gruendlich' },
+  { titel: 'Erwachsene ansprechen', alter: 7, ziele: ['K-12', 'K-17'], sozialform: 'einzeln', weg: 'schnell' },
+  { titel: 'Fortschritt sehen', alter: 13, ziele: ['V-22'], sozialform: 'einzeln', weg: 'gruendlich' },
+  { titel: 'Aufhören, wenn es Zeit ist', alter: 7, ziele: ['V-15', 'V-10'], sozialform: 'einzeln', weg: 'schnell' },
+]
+
 /** Ohne Hub: Profil per Chips (Alter, Sprache, Ziele) – gespeichert wird nur als Datei bzw. eigene Vorlage */
 export function OhneKind() {
   const pg = usePg()
@@ -338,6 +350,14 @@ export function OhneKind() {
     pg.setOhneKind(true)
     pg.setAnsicht('start')
   }
+  // Schnellstart (Aufgabe 154): ein Klick – Profil, Sozialform und Weg stehen, Dauer und Blatt wählt man danach
+  const schnellstart = (r: (typeof REZEPTE)[number]) => {
+    const p = K.ohneKindProfil({ alterJahre: r.alter, sprache, ziele: r.ziele })
+    pg.setRoh({ ...p, vorname: undefined })
+    pg.setOhneKind(true)
+    pg.setSozialform(r.sozialform)
+    pg.setAnsicht(r.weg)
+  }
   return (
     <div className="pg-mitte">
       <div className="pg-eyebrow">Passgenau · ohne Hub</div>
@@ -345,6 +365,20 @@ export function OhneKind() {
       <p className="pg-lead">
         {pg.hallo ? 'Die Toolbox wurde ohne Kind geöffnet.' : 'Kein Hub verbunden.'} Wähle Alter, Sprache und bis zu drei Ziele – für ein Kind, zu zweit oder eine Kleingruppe (im nächsten Schritt). Gespeichert wird nichts beim Kind – nur als Datei oder als eigene Vorlage.
       </p>
+      <div className="pg-fblock">
+        <h3>Schnellstart</h3>
+        <div className="pg-chips" role="group" aria-label="Schnellstart">
+          {REZEPTE.map((r) => (
+            <Chip key={r.titel} an={false} onClick={() => schnellstart(r)} titel={`${r.alter} J. · ${SOZIALFORM_NAME[r.sozialform]} · Ziele ${r.ziele.join(', ')}`}>
+              <b>{r.titel}</b>&nbsp;
+              <span className="pg-leise">
+                {r.alter} J. · {SOZIALFORM_NAME[r.sozialform]}
+              </span>
+            </Chip>
+          ))}
+        </div>
+        <p className="pg-leise pg-klein">Oder selbst wählen:</p>
+      </div>
       {pg.fehler && (
         <div className="pg-banner warn">
           <Ic n="info" />

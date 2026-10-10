@@ -221,7 +221,7 @@ async function main() {
         await p0.getByRole('heading', { name: 'Ohne Kind planen' }).waitFor({ timeout: 90000 })
         pruefe(true, 'ohne Hub')
         await foto(p0, '00-ohne-kind')
-        await p0.locator('.pg-chip', { hasText: '10 J.' }).click()
+        await p0.locator('.pg-chip', { hasText: /^10 J\.$/ }).click()
         await p0.locator('.pg-chip', { hasText: 'V-21' }).click()
         await p0.getByRole('button', { name: 'Weiter' }).click()
         await p0.getByRole('heading', { name: /Was machst du heute mit das Kind/ }).waitFor()

@@ -1,12 +1,11 @@
 // Passgenau – Ersetzen per Antippen (5.8, T-M7): gleichwertige Alternativen mit Vielfalt (MMR, λ = 0,7 auf das Format),
 // nie aus einer anderen Sitzung derselben Folge; Suche im Baukasten (7.2).
-import type { Alternative, Auftrag, BlattTeil, KatalogEintrag, Layout, MikroBaustein, Plan, PlanSchritt, Profil, Rolle } from '../typen'
-import { norm } from './hilfen'
-import { aktuellerKatalog, bausteinInhalt, intern, textVon, type Katalog } from './katalog'
+import type { Alternative, Auftrag, BlattTeil, KatalogEintrag, Layout, Plan, PlanSchritt, Profil, Rolle } from '../typen'
+import { aktuellerKatalog, intern, textVon, type Katalog } from './katalog'
 import { bewerte, kontext, NACHBAR, pruefe, rang, warum, type Bewertet, type Kontext } from './regeln'
 import { kandidaten } from './planer'
 import { teilHoehe, verteile } from './seiten'
-import { texte } from './inhalt'
+import { suchPunkte, suchWoerter } from './suche'
 import { BLATT_SYSTEM } from './system'
 import type { Vorlieben } from './vorlieben'
 
@@ -154,21 +153,33 @@ export interface SuchFilter {
   rolle?: Rolle
   bogen?: string
   ziel?: string
+  /** Themen-Schlüssel wie in vokabular.ts (THEMEN) */
   thema?: string
   format?: string
   art?: string
   quelle?: string
+  /** Suchwörter: jedes Wort muss vorkommen (Titel, Text, Sagen-Sätze, Thema, Format, Ziel, Quelle; DE und FR) */
   text?: string
   passtHoehe?: number
+  /** höchstens so viele Minuten (typische Dauer des Eintrags) */
+  dauerMax?: number
+  /** Bausteine ohne Schreiben (schreibmenge 0), Schritte ohne Schreibformat */
+  ohneSchreiben?: boolean
+  /** nichts vorzubereiten: der Eintrag nennt kein Material */
+  ohneMaterial?: boolean
+  /** nur Einträge mit französischem Text */
+  franzoesisch?: boolean
 }
 
-/** Suche im Baukasten (7.2): Filter als Chips, Suchwort möglich, nie nötig. Harte Regeln (Alter, Vorsicht …) gelten. */
+/** Suche im Baukasten (7.2): Filter als Chips, Suchwörter möglich, nie nötig. Harte Regeln (Alter, Vorsicht …) gelten zuerst –
+ *  durchsucht und angezeigt wird nur, was erlaubt ist. Mit Suchwörtern (suche.ts, wie auf der Blätterseite): alle Wörter müssen
+ *  vorkommen, Treffer nach Punkten, bei Gleichstand nach Bewertung. Ohne Suchwörter: nach Bewertung wie bisher. */
 export function suchen(k: Katalog, p: Profil, filter: SuchFilter, anzahl = 30): Alternative[] {
   const a: Auftrag = { weg: 'gruendlich', ziele: filter.ziel ? [filter.ziel] : [], n: 1, dauer: 30, sozialform: 'einzeln', sprache: p.sprache.blatt, datum: new Date().toISOString().slice(0, 10) }
   const c = kontext(k, p, a, { kind: null, ich: { v: 1, erkundung: 0, z: {} }, team: null })
-  const wort = filter.text ? norm(filter.text) : null
+  const woerter = suchWoerter(filter.text ?? '')
   const layout: Layout = c.layout
-  const out: Bewertet[] = []
+  const out: { b: Bewertet; punkte: number }[] = []
   for (const e of k.eintraege.values()) {
     if (e.id.startsWith('pg:')) continue
     if (filter.typ && e.typ !== filter.typ) continue
@@ -180,13 +191,15 @@ export function suchen(k: Katalog, p: Profil, filter: SuchFilter, anzahl = 30): 
     if (filter.art && !(e.typ === 'baustein' ? e.art.includes(filter.art) : e.phase === filter.art)) continue
     if (filter.quelle && (e.typ === 'baustein' ? 'blatt' : e.quelle.art) !== filter.quelle) continue
     if (filter.passtHoehe !== undefined && (e.typ !== 'baustein' || teilHoehe(k, e.id, layout) > filter.passtHoehe)) continue
+    if (filter.dauerMax !== undefined && e.dauer.typ > filter.dauerMax) continue
+    if (filter.ohneSchreiben && (e.typ === 'baustein' ? e.schreibmenge > 0 : e.format.includes('schreiben'))) continue
+    if (filter.ohneMaterial && e.material.length) continue
+    if (filter.franzoesisch && !e.sprache.fr) continue
     if (pruefe(e, c, { blatt: e.typ === 'baustein' }) !== null) continue
-    if (wort) {
-      const t = e.typ === 'schritt' ? `${e.titel} ${e.text}` : texte(bausteinInhalt(k, e as MikroBaustein, 'de')).map((x) => x.text).join(' ')
-      if (!norm(t).includes(wort)) continue
-    }
-    out.push(bewerte(e, c, {}))
+    const punkte = suchPunkte(k, e, woerter)
+    if (!punkte) continue
+    out.push({ b: bewerte(e, c, {}), punkte })
   }
-  out.sort((x, y) => rang(x, y, 'suche'))
-  return out.slice(0, anzahl).map((b) => ({ eintrag: b.e, wert: Math.round(b.s * 1000) / 1000, warum: warum(b, c, {}) }))
+  out.sort((x, y) => y.punkte - x.punkte || rang(x.b, y.b, 'suche'))
+  return out.slice(0, anzahl).map(({ b }) => ({ eintrag: b.e, wert: Math.round(b.s * 1000) / 1000, warum: warum(b, c, {}) }))
 }
