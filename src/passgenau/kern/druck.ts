@@ -190,7 +190,8 @@ const MATERIAL_IM_TEXT: [RegExp, string | { de: string; fr: string }][] = [
   [/Stofftier|peluche/i, { de: 'Stofftier', fr: 'peluche' }],
   [/(?<!\p{L})(Glas|Gläser|bocal)(?!\p{L})/iu, { de: 'Glas', fr: 'bocal' }],
   // nicht „Bausteine“, „Meilensteine“, „Fußball“ (Blind-Bewertung 9: „kleine Steine“ bei 3-Jährigen, nie gebraucht)
-  [/(?<!\p{L})(Steine?|pierres?)(?!\p{L})/iu, { de: 'kleine Steine', fr: 'petites pierres' }],
+  // … und nicht „Dran-Stein“, „Stärken-Stein“ (Wortteil nach Bindestrich), nicht „Pierre“ als Name
+  [/(?<![\p{L}-])(Steine?|pierres)(?![\p{L}-])|(?<![\p{L}-])(une|la|des|les|petites?) pierres?(?![\p{L}-])/u, { de: 'kleine Steine', fr: 'petites pierres' }],
   [/Seifenblasen|bulles de savon/i, { de: 'Seifenblasen', fr: 'bulles de savon' }],
   [/Luftballon|ballon de baudruche/i, { de: 'Luftballon', fr: 'ballon de baudruche' }],
   [/Strohhalm|paille/i, { de: 'Strohhalme', fr: 'pailles' }],
