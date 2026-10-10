@@ -513,11 +513,21 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
     // höchstens so viele Aufgaben, wie in die Minuten passen (etwa eine je 2½ Minuten), bei wenig Schreiben zwei
     // … und in vier Minuten eine (Blind-Bewertung 10: „zwei Aufgaben in 4 Minuten“)
     const hoechstens = o.min && o.min <= 4 ? 1 : o.wenigSchreiben ? 2 : o.min ? Math.max(2, Math.floor(o.min / 2.5)) : 99
+    // Ende der letzten echten Aufgabe: fällt die nächste weg, auch ihre Anweisung davor (Blind-Bewertung 11: „Kreis die Stufe
+    // der Mut-Treppe ein“ ohne Treppe, „Relie chaque pensée …“ ohne Zuordnung)
+    let ende = liste.length
     for (const b of teile) {
-      if (o.stimmungTief && b.art === 'skala') continue
+      const anweisung = b.art === 'text' || b.art === 'aufgabe' || b.art === 'bild' || b.art === 'wortspeicher'
+      if (o.stimmungTief && b.art === 'skala') {
+        liste.length = ende
+        continue
+      }
       // Anweisungszeilen und Bilder sind keine eigene Aufgabe (Kinder-Blätter: „aufgabe“ vor jedem Bild-Baustein)
-      if (b.art !== 'text' && b.art !== 'aufgabe' && b.art !== 'bild' && b.art !== 'wortspeicher') aufgaben++
-      if (aufgaben > hoechstens) break
+      if (!anweisung) aufgaben++
+      if (aufgaben > hoechstens) {
+        liste.length = ende
+        break
+      }
       // Zuordnen und Dialog-Lücken tragen keinen eigenen Auftrag – ein kurzer Satz davor
       // … außer die Übung schreibt selbst eine Anweisung davor (Kinder-Blätter: „Was passt zusammen? Verbinde.“)
       const vorher = liste[liste.length - 1]?.art === 'aufgabe'
@@ -526,12 +536,13 @@ function kernBlattInhalt(kern: KatalogEintrag, phase: Bogen | 'leicht', sprache:
       // Feldhöhe kommt in Millimetern (Übungsblätter), der Renderer rechnet in Zeilen
       if (b.art === 'feld') liste.push({ ...b, hoehe: Math.max(b.zeichnen ? 6 : 3, Math.min(9, Math.round((b.hoehe ?? 36) / 8))) })
       else liste.push(o.wenigSchreiben && b.art === 'frage' ? { ...b, linien: Math.min(b.linien ?? 2, 2) } : b)
+      if (!anweisung) ende = liste.length
     }
     const fertig = ohneLeereAufgaben(liste, o.wenigSchreiben)
     // dünnes Kinderblatt (Blind-Bewertung 10: „untere Blatthälfte leer“): ein freiwilliges Malfeld zur Übung am Schluss
     const zahl = fertig.filter((b) => b.art !== 'text' && b.art !== 'aufgabe' && b.art !== 'bild' && b.art !== 'wortspeicher').length
     if ((o.alter ?? 12) < 12 && zahl <= 2 && !fertig.some((b) => b.art === 'feld'))
-      fertig.push({ art: 'aufgabe', text: fr ? 'Quand tu as fini : dessine ici quelque chose sur l’exercice.' : 'Wenn du fertig bist: Mal hier etwas zur Übung.' }, { art: 'feld', hoehe: 6, zeichnen: true })
+      fertig.push({ art: 'aufgabe', text: fr ? 'Quand tu as fini : dessine ici ce que tu as fait pendant l’exercice.' : 'Wenn du fertig bist: Mal hier, was du bei der Übung gemacht hast.' }, { art: 'feld', hoehe: 6, zeichnen: true })
     return fertig
   }
   const F = (de: string, f: string, linien = 2): Baustein => ({ art: 'frage', text: fr ? f : de, linien })

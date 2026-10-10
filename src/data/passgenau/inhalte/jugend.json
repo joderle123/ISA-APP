@@ -16310,10 +16310,6 @@
    },
    "de": [
     {
-     "art": "text",
-     "text": "Die Mut-Treppe: Wie groß ist der Schritt? Kreis die Stufe ein, die du dir zutraust."
-    },
-    {
      "art": "ankreuzen",
      "titel": "Worum soll meine Meldung gehen? Kreuz an.",
      "items": [
@@ -16324,6 +16320,10 @@
       "etwas anderes"
      ],
      "spalten": 2
+    },
+    {
+     "art": "text",
+     "text": "Die Mut-Treppe: Wie groß ist der Schritt? Kreis die Stufe ein, die du dir zutraust."
     },
     {
      "art": "leiter",
@@ -16353,10 +16353,6 @@
    ],
    "fr": [
     {
-     "art": "text",
-     "text": "L’escalier du courage : quelle est la taille du pas ? Entoure la marche que tu te sens capable de faire."
-    },
-    {
      "art": "ankreuzen",
      "titel": "De quoi doit parler ma prise de parole ? Coche.",
      "items": [
@@ -16367,6 +16363,10 @@
       "autre chose"
      ],
      "spalten": 2
+    },
+    {
+     "art": "text",
+     "text": "L’escalier du courage : quelle est la taille du pas ? Entoure la marche que tu te sens capable de faire."
     },
     {
      "art": "leiter",

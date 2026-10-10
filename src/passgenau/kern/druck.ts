@@ -221,6 +221,7 @@ function mitName(t: string, name: string, sp: Sprache): string {
     return t
       .replace(/\bdu ou de la jeune\b/g, de)
       .replace(/\bau ou à la jeune\b/g, `à ${name}`)
+      .replace(/\b([Ss])['’]il ou elle\b/g, (_m, s: string) => `${s}i ${name}`)
       .replace(/\b[Ll]e ou la jeune\b/g, name)
       .replace(/\b[Ii]l ou elle\b/g, name)
   }
