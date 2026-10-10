@@ -1362,6 +1362,107 @@
     }
   }
 
+  /* Fassung eines Blatts (Standard · Größer · Wenig schreiben) und Hinweis zur Differenzierung */
+  .bl-fassung-diff {
+    display: grid;
+    gap: 4px;
+    margin: 8px 0 0;
+    padding: 8px 10px;
+    border-radius: 9px;
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    font-size: 12.5px;
+    line-height: 1.45;
+    color: var(--ink-2);
+  }
+  .bl-fassung-diff b {
+    font-weight: 650;
+    color: var(--ink);
+  }
+
+  /* Mappe als Heft (Dialog): Blätter in der Reihenfolge des Hefts */
+  .mp-liste {
+    display: grid;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .mp-zeile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 10px;
+    padding: 7px 6px 7px 10px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+  }
+  .mp-pos {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    font-size: 12px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .mp-text {
+    flex: 1 1 180px;
+    min-width: 0;
+  }
+  .mp-titel {
+    font-size: 14px;
+    font-weight: 620;
+    line-height: 1.3;
+    color: var(--ink);
+    overflow-wrap: anywhere;
+  }
+  .mp-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+    margin-top: 2px;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .mp-knoepfe {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-left: auto;
+  }
+  .mp-knoepfe .field {
+    width: auto;
+    min-height: 32px;
+    padding: 3px 26px 3px 9px;
+    font-size: 13px;
+    margin-right: 4px;
+  }
+  .mp-knoepfe .icon-btn {
+    width: 34px;
+    height: 34px;
+  }
+  .mp-knoepfe .icon-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+    background: none;
+    color: var(--muted);
+  }
+  .mp-hoch {
+    transform: rotate(180deg);
+  }
+  .mp-leer {
+    padding: 28px 12px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
   /* Bewertung */
   .bew-kurz {
     display: inline-flex;

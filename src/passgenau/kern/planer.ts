@@ -805,6 +805,13 @@ const FOLGE_TITEL_FR: Record<Kompetenz, string> = {
 
 /** Titel des Plans in der Sprache des Blatts (Planblatt, Mappe): sonst stünde „Einzelstunde: …“ auf einem französischen Blatt */
 function planTitel(c: Kontext): string {
+  // Gruppe (Aufgabe 151): „Gruppenstunde“ statt „Einzelstunde“
+  const gr = (c.a.sozialform ?? 'einzeln') !== 'einzeln'
+  const t0 = planTitelEinzeln(c)
+  if (!gr) return t0
+  return t0.replace(/^Einzelstunde/, 'Gruppenstunde').replace(/^Séance individuelle/, 'Séance en groupe').replace(/^Beziehungszeit$/, 'Zeit zusammen').replace(/^Temps relationnel$/, 'Temps ensemble')
+}
+function planTitelEinzeln(c: Kontext): string {
   if (c.sprache === 'fr') {
     if (c.weg === 'leicht') return 'Temps relationnel'
     if (c.ziele[0]?.quelle === 'kennenlernen') return c.weg === 'schnell' ? 'Séance individuelle : faire connaissance' : 'Faire connaissance'

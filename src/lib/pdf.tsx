@@ -4,12 +4,14 @@ import type { Material } from '../types/material'
 import { slug } from './slug'
 import { BlattDokument, MappeDokument, type BlattOptionen } from '../blatt/pdf/BlattDokument'
 import { ModulheftDokument } from '../blatt/pdf/Modulheft'
+import { MappeHeftDokument, type MappeAngaben, type MappeQuelle } from '../blatt/pdf/Mappe'
 import { ForscherkarteiDokument, forscherkarteiDateiname, type KarteiQuelle } from '../blatt/pdf/Forscherkartei'
 import { JahresplanDokument, jahresplanDateiname } from '../blatt/pdf/Jahresplan'
 import { modulheftDateiname, type Modul } from '../blatt/module'
 import { registriereSchriften } from '../blatt/pdf/stil'
 import type { Blatt, Sprache } from '../blatt/typen'
 import { ZUSAETZE } from '../blatt/spielschule'
+import { fassungDruck, type Fassung } from '../blatt/variante'
 import kinderRegular from '../assets/fonts/pdf/Kinderschrift-Regular.ttf?url'
 import kinderBold from '../assets/fonts/pdf/Kinderschrift-Bold.ttf?url'
 import interRegular from '../assets/fonts/pdf/Inter-Regular.ttf?url'
@@ -66,22 +68,24 @@ function schriften() {
   registriereSchriften((d) => SCHRIFT_DATEIEN[d])
 }
 
-export function blattDateiname(blatt: Blatt, opt: BlattOptionen = {}): string {
+export function blattDateiname(blatt: Blatt, opt: BlattOptionen = {}, fassung: Fassung = 'standard'): string {
   // nur Zusatzseiten (Spielschule): „…_Klassenraster.pdf“, „…_Elternbrief.pdf“
   const zusatz = opt.schueler === false && opt.lehrer === false && opt.zusaetze?.length ? '_' + opt.zusaetze.map((z) => ZUSAETZE.find((x) => x.id === z)?.datei ?? z).join('-') : null
   const teil = zusatz ?? (opt.schueler === false ? '_Lehrerseite' : opt.lehrer === false ? '' : '_mit-Lehrerseite')
-  return `${opt.nr ? opt.nr + '_' : ''}${slug(blatt.de.titel)}${opt.sprache === 'fr' ? '_FR' : ''}${teil}.pdf`
+  const art = fassung === 'groesser' ? '_groesser' : fassung === 'wenigSchreiben' ? '_wenig-schreiben' : ''
+  return `${opt.nr ? opt.nr + '_' : ''}${slug(blatt.de.titel)}${opt.sprache === 'fr' ? '_FR' : ''}${teil}${art}.pdf`
 }
 
-/** Ein Arbeitsblatt als PDF-Blob (für Vorschau und Download). */
-export async function blattBlob(blatt: Blatt, opt: BlattOptionen = {}): Promise<Blob> {
+/** Ein Arbeitsblatt als PDF-Blob (für Vorschau und Download), auf Wunsch in einer anderen Fassung (variante.ts). */
+export async function blattBlob(blatt: Blatt, opt: BlattOptionen = {}, fassung: Fassung = 'standard'): Promise<Blob> {
   schriften()
-  return pdf(<BlattDokument blatt={blatt} opt={opt} />).toBlob()
+  const { blatt: fassungBlatt, layout } = fassungDruck(blatt, fassung)
+  return pdf(<BlattDokument blatt={fassungBlatt} opt={layout ? { ...opt, layout } : opt} />).toBlob()
 }
 
-export async function downloadBlatt(blatt: Blatt, opt: BlattOptionen = {}): Promise<string> {
-  const name = blattDateiname(blatt, opt)
-  saveBlob(await blattBlob(blatt, opt), name)
+export async function downloadBlatt(blatt: Blatt, opt: BlattOptionen = {}, fassung: Fassung = 'standard'): Promise<string> {
+  const name = blattDateiname(blatt, opt, fassung)
+  saveBlob(await blattBlob(blatt, opt, fassung), name)
   return name
 }
 
@@ -94,6 +98,18 @@ export async function downloadMappe(blaetter: { blatt: Blatt; nr?: string; sprac
   const teil = opt.schueler === false ? '_Lehrerseiten' : opt.lehrer === false ? '' : '_mit-Lehrerseiten'
   const name = `Mappe_${slug(titel) || 'Arbeitsblaetter'}${sp}${teil}.pdf`
   saveBlob(await pdf(<MappeDokument blaetter={blaetter} titel={titel} opt={opt} />).toBlob(), name)
+  return name
+}
+
+/** Die Mappe als Heft: Deckblatt und Inhalt (auf Wunsch), die Blätter in der gewählten Reihenfolge und Fassung, die Seiten für
+ *  die Lehrperson hinten oder nach jedem Blatt. Dateiname wie bei einer Mappe: _FR (_DE-FR, wenn gemischt) und Lehrerseiten. */
+export async function downloadMappeHeft(quellen: MappeQuelle[], angaben: MappeAngaben): Promise<string> {
+  schriften()
+  const sprachen = new Set(quellen.map((q) => (q.sprache === 'fr' && q.blatt.fr ? 'fr' : 'de')))
+  const sp = sprachen.has('fr') ? (sprachen.size > 1 ? '_DE-FR' : '_FR') : ''
+  const teil = angaben.lehrer === 'keine' ? '' : angaben.lehrer === 'hinten' ? '_mit-Lehrerseiten-hinten' : '_mit-Lehrerseiten'
+  const name = `Mappe_${slug(angaben.titel) || 'Arbeitsblaetter'}${sp}${teil}.pdf`
+  saveBlob(await pdf(<MappeHeftDokument quellen={quellen} angaben={angaben} />).toBlob(), name)
   return name
 }
 

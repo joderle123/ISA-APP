@@ -5,8 +5,8 @@
 // ---------------------------------------------------------------------------
 
 import { Document, Page, View, Text, Image } from '@react-pdf/renderer'
-import type { AktivitaetArt, Baustein, Blatt, BlattInhalt, Sprache } from '../typen'
-import { bereichById, layoutFuer, stufenText, themaLabel, type Farben } from '../katalog'
+import type { AktivitaetArt, Baustein, Blatt, BlattInhalt, Layout, Sprache } from '../typen'
+import { bereichById, blattLayout, stufenText, themaLabel, type Farben } from '../katalog'
 import { NEUTRAL, palette, type Palette } from '../zeichnung'
 import { eldibDomainById, eldibGoalById } from '../../data/taxonomy'
 import { Bausteine, nummerieren, NiveauZeichen, Plakette, Fliess, type Ctx } from './bausteine'
@@ -40,6 +40,8 @@ export interface BlattOptionen {
   /** Spielschule: Zusatzseiten (Klassenraster, Portfolio-Blatt, Elternbrief) – kommen nach Schüler- und Lehrerteil,
    *  nur wenn das Blatt die Daten dafür hat (siehe zusaetzeVon). Standard: keine. */
   zusaetze?: Zusatz[]
+  /** Anderes Layout als das der Stufe (Fassung „Größer“: das Layout der nächstjüngeren Stufe, siehe variante.ts) */
+  layout?: Layout
 }
 
 export interface HeftAngaben {
@@ -549,7 +551,7 @@ export function BlattSeiten({ blatt, opt }: { blatt: Blatt; opt?: BlattOptionen 
   const inhalt = blattInhalt(blatt, sprache)
   const bereich = bereichById.get(blatt.bereich) ?? bereichById.get('werkzeuge')!
   const p = palette(opt?.farben ?? bereich.farben)
-  const m = MASSE[blatt.layout ?? (blatt.bereich === 'werkzeuge' ? 'jugend' : layoutFuer(blatt.stufen))]
+  const m = MASSE[opt?.layout ?? blattLayout(blatt)]
   const teile = blatt.passgenau?.teile
   const ids = teile ? new Map(inhalt.bausteine.flatMap((b, i) => (teile[i] ? [[b, teile[i]!] as const] : []))) : undefined
   const c: Ctx = { m, p, sprache, nummern: nummerieren(inhalt.bausteine), breite: BREITE, ids }

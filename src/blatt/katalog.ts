@@ -4,7 +4,7 @@
 // Kognition = Ocker) und bleiben auch in Schwarz-Weiß-Kopien ruhig.
 // ---------------------------------------------------------------------------
 
-import type { Bereich, Layout, Sprache, Stufe } from './typen'
+import type { Bereich, Blatt, Layout, Sprache, Stufe } from './typen'
 
 export interface Farben {
   /** Kräftige Farbe: Nummern, Akzente, Linien in Grafiken. */
@@ -257,4 +257,9 @@ export function layoutFuer(stufen: Stufe[], layout?: Layout): Layout {
   if (s === 'C2') return 'gross'
   if (s === 'ES') return 'jugend'
   return 'mittel'
+}
+
+/** Layout, in dem ein Blatt gedruckt wird: das eigene `layout`, bei den Werkzeugen sachlich, sonst nach der Stufe. */
+export function blattLayout(b: Pick<Blatt, 'layout' | 'bereich' | 'stufen'>): Layout {
+  return b.layout ?? (b.bereich === 'werkzeuge' ? 'jugend' : layoutFuer(b.stufen))
 }

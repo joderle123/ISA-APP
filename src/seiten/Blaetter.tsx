@@ -17,12 +17,15 @@ import { prepareInIdle, searchText, searchTokens, tokenMatch, type SearchToken }
 import { loadPdfModule } from '../lib/loadPdf'
 import { repositionToasts, toast } from '../lib/toast'
 import { setBlattSprache, useBlattSprache } from '../lib/sprache'
+import { MAPPE_MAX, mappeBereinigen, mappeFassung, mappeHinzufuegen, mappeLeeren, mappeUmschalten, useMappe } from '../lib/mappen'
+import { FASSUNGEN, groesseresLayout, kuerzbar, type Fassung } from '../blatt/variante'
 import { urheberschaft } from '../lib/urheber'
 import { Urheber } from '../components/Urheber'
 import type { Bewertungen } from '../lib/useBewertungen'
 import { BewertungKurz, BewertungVoll } from '../components/Bewertung'
 import { Dialog } from '../components/Dialog'
 import { Icon, type IconName } from '../components/Icon'
+import { MappeDialog } from './MappeDialog'
 
 export interface BlattFilter {
   suche: string
@@ -158,7 +161,7 @@ function BlattKarte({ b, bew, gewaehlt, sprache, onOeffnen, onWaehlen, onLaden, 
   )
 }
 
-function Vorschau({ b, sprache, lehrer }: { b: NummeriertesBlatt; sprache: Sprache; lehrer: boolean }) {
+function Vorschau({ b, sprache, lehrer, fassung }: { b: NummeriertesBlatt; sprache: Sprache; lehrer: boolean; fassung: Fassung }) {
   const [url, setUrl] = useState<string | null>(null)
   const [fehler, setFehler] = useState<string | null>(null)
   useEffect(() => {
@@ -167,7 +170,7 @@ function Vorschau({ b, sprache, lehrer }: { b: NummeriertesBlatt; sprache: Sprac
     setUrl(null)
     setFehler(null)
     loadPdfModule()
-      .then((m) => m.blattBlob(b, { sprache, nr: b.nr, lehrer }))
+      .then((m) => m.blattBlob(b, { sprache, nr: b.nr, lehrer }, fassung))
       .then((blob) => {
         if (aus) return
         u = URL.createObjectURL(blob)
@@ -178,7 +181,7 @@ function Vorschau({ b, sprache, lehrer }: { b: NummeriertesBlatt; sprache: Sprac
       aus = true
       if (u) URL.revokeObjectURL(u)
     }
-  }, [b, sprache, lehrer])
+  }, [b, sprache, lehrer, fassung])
   if (fehler) return <div className="bl-vorschau leer">{fehler}</div>
   if (url && (navigator as Navigator & { pdfViewerEnabled?: boolean }).pdfViewerEnabled === false)
     return (
@@ -211,13 +214,47 @@ function zusatzZweck(ids: Zusatz[]): string {
 }
 
 /** Detail eines Blatts (Vorschau, Download, Bewertung). Auch vom Skills-Kurs benutzt – dort ohne Mappe. */
-export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehlen }: { b: NummeriertesBlatt; bew: Bewertungen; onSchliessen: () => void; onOeffnen: (id: string) => void; gewaehlt?: boolean; onWaehlen?: (sprache: Sprache) => void }) {
+/** Brücke Blatt → Stunde (Aufgabe 154): Passgenau ohne Kind, mit Ziel und Alter des Blatts vorbelegt */
+const ALTER_FUER_STUFE: Record<Stufe, number> = { C1: 5, C2: 7, C3: 9, C4: 11, ES: 13 }
+function alterFuer(b: NummeriertesBlatt): number {
+  return Math.min(...b.stufen.map((x) => ALTER_FUER_STUFE[x] ?? 9))
+}
+function stundeDazu(b: NummeriertesBlatt): string {
+  return `#passgenau&ziel=${encodeURIComponent(b.eldib[0])}&alter=${alterFuer(b)}`
+}
+
+export function BlattDetail({
+  b,
+  bew,
+  onSchliessen,
+  onOeffnen,
+  gewaehlt,
+  mappeFassung: fassungInMappe,
+  onWaehlen,
+  onFassung,
+}: {
+  b: NummeriertesBlatt
+  bew: Bewertungen
+  onSchliessen: () => void
+  onOeffnen: (id: string) => void
+  gewaehlt?: boolean
+  /** Fassung, mit der das Blatt in der Mappe liegt – das Blatt öffnet in derselben Fassung */
+  mappeFassung?: Fassung
+  onWaehlen?: (sprache: Sprache, fassung: Fassung) => void
+  /** Fassung gewechselt, während das Blatt in der Mappe liegt */
+  onFassung?: (fassung: Fassung) => void
+}) {
   // gemerkte Sprache (gilt für alle Blätter); ohne französische Fassung Deutsch
   const gewaehlteSprache = useBlattSprache()
   const sprache: Sprache = b.fr ? gewaehlteSprache : 'de'
   const [laedt, setLaedt] = useState<string | null>(null)
+  // Fassung zum Drucken (Standard · Größer · Wenig schreiben); gilt für Vorschau, Download und Mappe
+  const [fassung, setFassung] = useState<Fassung>(fassungInMappe ?? 'standard')
+  const kannGroesser = groesseresLayout(b) !== null
+  const kannKuerzen = useMemo(() => kuerzbar(b), [b])
   const bereich = bereichById.get(b.bereich)!
   const inhalt = sprache === 'fr' && b.fr ? b.fr : b.de
+  const diff = inhalt.lehrer.differenzierung
   const verwandt = useMemo(
     () => alleBlaetter.filter((x) => x.id !== b.id && (x.thema === b.thema && x.bereich === b.bereich || (b.verwandt ?? []).includes(x.id))).slice(0, 6),
     [b],
@@ -229,9 +266,11 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
     try {
       const m = await loadPdfModule()
       const zusatz = art !== 'schueler' && art !== 'lehrer' && art !== 'beide'
+      // Zusatzseiten und die Lehrerseite allein sehen in jeder Fassung gleich aus
       const name = await m.downloadBlatt(
         b,
         zusatz ? { sprache, nr: b.nr, schueler: false, lehrer: false, zusaetze: [art] } : { sprache, nr: b.nr, schueler: art !== 'lehrer', lehrer: art !== 'schueler' },
+        zusatz || art === 'lehrer' ? 'standard' : fassung,
       )
       toast(`PDF erstellt: ${name}`, 'ok')
     } catch (e) {
@@ -268,9 +307,54 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
       </header>
       <div className="dlg-body scroll-slim bl-detail-body" data-autofocus tabIndex={-1} style={{ outline: 'none' }}>
         <div className="bl-detail-vorschau">
-          <Vorschau b={b} sprache={sprache} lehrer />
+          <Vorschau b={b} sprache={sprache} lehrer fassung={fassung} />
         </div>
         <div className="bl-detail-info">
+          <section aria-labelledby="bl-fassung-titel">
+            <h3 id="bl-fassung-titel" className="bew-label mb-1.5">
+              Fassung zum Drucken
+            </h3>
+            <div className="flex flex-wrap gap-1.5" role="group" aria-labelledby="bl-fassung-titel">
+              {FASSUNGEN.map((f) => {
+                const gesperrt = (f.id === 'groesser' && !kannGroesser) || (f.id === 'wenigSchreiben' && !kannKuerzen)
+                return (
+                  <button
+                    key={f.id}
+                    type="button"
+                    className="fchip"
+                    aria-pressed={fassung === f.id}
+                    disabled={gesperrt}
+                    title={gesperrt ? (f.id === 'groesser' ? 'Dieses Blatt ist schon in der größten Fassung.' : 'Auf diesem Blatt gibt es nichts zu kürzen.') : f.hinweis}
+                    onClick={() => {
+                      setFassung(f.id)
+                      if (gewaehlt) onFassung?.(f.id)
+                    }}
+                  >
+                    {f.label}
+                  </button>
+                )
+              })}
+            </div>
+            <p className="mt-1.5 text-[12.5px] leading-[1.45] text-muted" aria-live="polite">
+              {FASSUNGEN.find((f) => f.id === fassung)?.hinweis}
+            </p>
+            {diff && (diff.leichter || diff.schwerer) ? (
+              // Hinweis für die Fachkraft: die Differenzierung von der Lehrerseite (steht dort auch gedruckt)
+              <div className="bl-fassung-diff">
+                {diff.leichter ? (
+                  <p>
+                    <b>Leichter:</b> {diff.leichter}
+                  </p>
+                ) : null}
+                {diff.schwerer ? (
+                  <p>
+                    <b>Anspruchsvoller:</b> {diff.schwerer}
+                  </p>
+                ) : null}
+              </div>
+            ) : null}
+          </section>
+
           <div className="flex flex-col gap-2">
             <button type="button" className="btn btn-primary justify-center" onClick={() => laden('schueler')} disabled={!!laedt}>
               {laedt === 'schueler' ? <span className="spin" /> : <Icon name="download" />}
@@ -300,10 +384,16 @@ export function BlattDetail({ b, bew, onSchliessen, onOeffnen, gewaehlt, onWaehl
               </div>
             ) : null}
             {onWaehlen ? (
-              <button type="button" className="btn btn-quiet justify-center" onClick={() => onWaehlen(sprache)}>
+              <button type="button" className="btn btn-quiet justify-center" onClick={() => onWaehlen(sprache, fassung)}>
                 <Icon name={gewaehlt ? 'check' : 'layers'} />
                 {gewaehlt ? 'In der Mappe' : 'In die Mappe legen'}
               </button>
+            ) : null}
+            {b.eldib.length ? (
+              <a className="btn btn-quiet justify-center" href={stundeDazu(b)} title={`Passgenau: eine Stunde zu ${b.eldib[0]} planen (ohne Kind, Alter ${alterFuer(b)} J.)`}>
+                <Icon name="compass" />
+                Stunde dazu planen
+              </a>
             ) : null}
           </div>
 
@@ -505,8 +595,9 @@ export function Blaetter({
   const [filter, setFilter] = useState<BlattFilter>(startFilter)
   const [sort, setSort] = useState<Sortierung>('nummer')
   const [offen, setOffen] = useState<NummeriertesBlatt | null>(() => (startBlatt ? (blattById.get(startBlatt.id) ?? null) : null))
-  // Blätter in der Mappe, je mit der Sprache, in der sie gewählt wurden (ohne Angabe: Deutsch)
-  const [mappe, setMappe] = useState<{ id: string; sprache?: Sprache }[]>([])
+  // Die Mappe (lib/mappen.ts): bleibt nach dem Neuladen; je Blatt mit Sprache und Fassung, in denen es gewählt wurde
+  const mappe = useMappe()
+  const [mappeOffen, setMappeOffen] = useState(false)
   // gemerkte Sprache (DE/FR) – für Karten und Mappe wie im Dialog; Blätter ohne Französisch bleiben deutsch
   const gewaehlteSprache = useBlattSprache()
   const spracheVon = (b: NummeriertesBlatt): Sprache => (b.fr ? gewaehlteSprache : 'de')
@@ -517,6 +608,8 @@ export function Blaetter({
   useEffect(() => setFilter(startFilter), [startFilter])
   // Suchtexte der Blätter vorbereiten, solange der Browser nichts zu tun hat
   useEffect(() => prepareInIdle(alleBlaetter, suchtext), [])
+  // Blätter, die es nicht mehr gibt, fliegen aus der gespeicherten Mappe
+  useEffect(() => mappeBereinigen((id) => blattById.has(id)), [])
   useEffect(() => {
     if (!startBlatt) return
     const b = blattById.get(startBlatt.id)
@@ -542,12 +635,20 @@ export function Blaetter({
   const set = (p: Partial<BlattFilter>) => setFilter((f) => ({ ...f, ...p }))
   const aktivZahl = (filter.bereich ? 1 : 0) + (filter.thema ? 1 : 0) + filter.stufen.length + (filter.nurFr ? 1 : 0) + filter.eldib.length + (filter.suche ? 1 : 0)
 
-  const inMappe = (id: string) => mappe.some((x) => x.id === id)
+  const inMappe = (id: string) => mappe.eintraege.some((x) => x.id === id)
   // Offene Hinweise über die Mappe-Leiste heben (bzw. wieder senken), wenn sie erscheint oder verschwindet
-  const mitLeiste = aktiv && mappe.length > 0
+  const mitLeiste = aktiv && mappe.eintraege.length > 0
   useEffect(() => repositionToasts(), [mitLeiste])
-  function umschalten(id: string, sprache?: Sprache) {
-    setMappe((m) => (m.some((x) => x.id === id) ? m.filter((x) => x.id !== id) : [...m, { id, sprache }]))
+  function umschalten(id: string, sprache: Sprache, fassung: Fassung = 'standard') {
+    const drin = inMappe(id)
+    if (!mappeUmschalten(id, sprache, fassung) && !drin) toast(`Die Mappe ist voll (höchstens ${MAPPE_MAX} Blätter).`, 'error')
+  }
+  // Alle Treffer auf einmal in die Mappe (z. B. „Wut“ + C3 → ein Heft)
+  const trefferNeu = treffer.filter((b) => !inMappe(b.id)).length
+  function trefferInMappe() {
+    const neu = mappeHinzufuegen(treffer.map((b) => ({ id: b.id, sprache: spracheVon(b) })))
+    if (neu === trefferNeu) toast(`${blaetterText(neu)} in die Mappe gelegt.`, 'ok')
+    else toast(`${blaetterText(neu)} in die Mappe gelegt – dann war sie voll (höchstens ${MAPPE_MAX} Blätter).`, 'error')
   }
   async function laden(b: NummeriertesBlatt) {
     setLaedt(b.id)
@@ -556,22 +657,6 @@ export function Blaetter({
       toast(`PDF erstellt: ${await m.downloadBlatt(b, { nr: b.nr, lehrer: false, sprache: spracheVon(b) })}`, 'ok')
     } catch (e) {
       toast(e instanceof Error ? e.message : 'PDF konnte nicht erstellt werden.', 'error')
-    } finally {
-      setLaedt(null)
-    }
-  }
-  async function mappeLaden(lehrer: boolean) {
-    const liste = mappe.flatMap(({ id, sprache }) => {
-      const b = blattById.get(id)
-      return b ? [{ blatt: b, nr: b.nr, sprache }] : []
-    })
-    if (!liste.length) return
-    setLaedt(lehrer ? 'mappe:lehrer' : 'mappe')
-    try {
-      const m = await loadPdfModule()
-      toast(`Mappe erstellt: ${await m.downloadMappe(liste, 'Arbeitsblätter', { lehrer })}`, 'ok')
-    } catch (e) {
-      toast(e instanceof Error ? e.message : 'Mappe konnte nicht erstellt werden.', 'error')
     } finally {
       setLaedt(null)
     }
@@ -777,37 +862,57 @@ export function Blaetter({
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,280px),1fr))] gap-4">
-                {treffer.map((b) => (
-                  <BlattKarte key={b.id} b={b} bew={bew} gewaehlt={inMappe(b.id)} sprache={spracheVon(b)} onOeffnen={() => setOffen(b)} onWaehlen={() => umschalten(b.id, spracheVon(b))} onLaden={() => laden(b)} laedt={laedt === b.id} />
-                ))}
-              </div>
+              <>
+                {treffer.length >= 2 && treffer.length <= 40 ? (
+                  <div className="mb-3 flex justify-end">
+                    <button type="button" className="btn btn-sm" onClick={trefferInMappe} disabled={trefferNeu === 0}>
+                      <Icon name={trefferNeu === 0 ? 'check' : 'layers'} />
+                      {trefferNeu === 0 ? `Alle ${treffer.length} Treffer sind in der Mappe` : `Alle ${treffer.length} Treffer in die Mappe`}
+                    </button>
+                  </div>
+                ) : null}
+                <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,280px),1fr))] gap-4">
+                  {treffer.map((b) => (
+                    <BlattKarte key={b.id} b={b} bew={bew} gewaehlt={inMappe(b.id)} sprache={spracheVon(b)} onOeffnen={() => setOffen(b)} onWaehlen={() => umschalten(b.id, spracheVon(b))} onLaden={() => laden(b)} laedt={laedt === b.id} />
+                  ))}
+                </div>
+              </>
             )}
           </main>
         </div>
       </div>
 
-      {mappe.length > 0 && (
+      {mappe.eintraege.length > 0 && (
         <div className="bl-mappe" role="region" aria-label="Mappe">
           <Icon name="layers" />
           <span>
-            <b>{mappe.length}</b> {mappe.length === 1 ? 'Blatt' : 'Blätter'} in der Mappe
+            <b>{mappe.eintraege.length}</b> {mappe.eintraege.length === 1 ? 'Blatt' : 'Blätter'} in der Mappe
           </span>
-          <button type="button" className="btn btn-sm btn-primary" disabled={laedt === 'mappe' || laedt === 'mappe:lehrer'} onClick={() => mappeLaden(false)}>
-            {laedt === 'mappe' ? <span className="spin" /> : <Icon name="download" />}
-            Als ein PDF
+          <button type="button" className="btn btn-sm btn-primary" onClick={() => setMappeOffen(true)}>
+            <Icon name="book" />
+            Mappe als Heft
           </button>
-          <button type="button" className="btn btn-sm" disabled={laedt === 'mappe' || laedt === 'mappe:lehrer'} onClick={() => mappeLaden(true)}>
-            {laedt === 'mappe:lehrer' ? <span className="spin" /> : null}
-            Mit Lehrerseiten
-          </button>
-          <button type="button" className="icon-btn" onClick={() => setMappe([])} aria-label="Mappe leeren" title="Mappe leeren">
+          <button type="button" className="icon-btn" onClick={mappeLeeren} aria-label="Mappe leeren" title="Mappe leeren">
             <Icon name="x" />
           </button>
         </div>
       )}
 
-      {offen && <BlattDetail key={offen.id} b={offen} bew={bew} onSchliessen={() => setOffen(null)} onOeffnen={(id) => setOffen(blattById.get(id) ?? null)} gewaehlt={inMappe(offen.id)} onWaehlen={(sprache) => umschalten(offen.id, sprache)} />}
+      {offen && (
+        <BlattDetail
+          key={offen.id}
+          b={offen}
+          bew={bew}
+          onSchliessen={() => setOffen(null)}
+          onOeffnen={(id) => setOffen(blattById.get(id) ?? null)}
+          gewaehlt={inMappe(offen.id)}
+          mappeFassung={mappe.eintraege.find((x) => x.id === offen.id)?.fassung}
+          onWaehlen={(sprache, fassung) => umschalten(offen.id, sprache, fassung)}
+          onFassung={(fassung) => mappeFassung(offen.id, fassung)}
+        />
+      )}
+
+      {mappeOffen && <MappeDialog onSchliessen={() => setMappeOffen(false)} />}
 
       {filterOffen && (
         <Dialog onClose={() => setFilterOffen(false)} labelledBy="bl-filter-titel" className="dlg-mid">
