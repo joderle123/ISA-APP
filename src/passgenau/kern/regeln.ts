@@ -287,6 +287,9 @@ function pruefeBasis(e: KatalogEintrag, c: Kontext, o: Pruefung): string | null 
     // seit der Beschriftung hart: ein Gruppenschritt kommt nur mit beschriebener Einzelvariante in eine Einzelstunde
     if (e.einzeltauglich === 'angepasst' && !(e.typ === 'schritt' && e.einzelvariante)) return 'Gruppe (ohne Einzelvariante)'
   }
+  // Gruppe (Aufgabe 151): eine Übung, die für mehr oder weniger Kinder beschrieben ist, passt nicht
+  const n = c.p.gruppe?.length ?? (c.a.sozialform === 'zu-zweit' ? 2 : c.a.sozialform === 'kleingruppe' ? 4 : 1)
+  if (n > 1 && e.typ === 'schritt' && e.gruppe && (n < e.gruppe.min || n > e.gruppe.max)) return 'Gruppengröße'
   // Blatt des Kindes in einer Sprache (Testlauf 9.10., A6): auf einem französischen Blatt kein Teil mit deutschem Text –
   // Schritte für die Fachkraft dürfen deutsch sein (Hinweis „nur auf Deutsch“)
   if (o.blatt && e.typ === 'baustein' && c.sprache === 'fr' && !e.sprache.fr && e.textfelder.length) return 'nur auf Deutsch'
@@ -530,6 +533,8 @@ export function bewerte(e: KatalogEintrag, c: Kontext, o: BewertungsOpt = {}): B
   // noch nicht beschriftete Schritte (Material, Phase 0), die von einer Gruppe erzählen („Jedes Kind …“, „im Sitzkreis“):
   // im Zweifel gewinnt, was für die Einzelstunde geprüft ist (Testlauf 9.10.: „Meine Sorge in die Box“ mit vier Jahren)
   if ((c.a.sozialform === 'einzeln' || !c.a.sozialform) && e.typ === 'schritt' && !e.einzelvariante && (e.sicher.einzeltauglich ?? 1) < 0.7 && gruppenSprache(e)) g *= 0.7
+  // Gruppe: Übungen mit Niveaus und Rollen zuerst (jedes Kind auf seiner Stufe)
+  if (c.a.sozialform && c.a.sozialform !== 'einzeln' && e.typ === 'schritt' && e.gruppe) g *= e.gruppe.differenzierbar ? 1.25 : 1.1
   const deckel = leicht ? 0.4 : 0.3
   let vRoh = c.cache.v.get(e)
   if (vRoh === undefined) {

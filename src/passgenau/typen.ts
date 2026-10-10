@@ -204,6 +204,8 @@ export interface Profil {
   seed?: string
   /** Datenlage (T-M5): dünn = keine ELDiB-Ziele und keine Themen der letzten 60 Tage */
   dichte?: 'duenn' | 'mittel' | 'reich'
+  /** Kleingruppe (kern/gruppe.ts): je Kind, was sein Blatt braucht – das Profil selbst ist das der ganzen Gruppe */
+  gruppe?: { ref: string; vorname?: string; anrede: string | null; alterJahre: number; stufen: Stufe[]; layout: Layout; sprache: { blatt: Sprache; woerter: ('lb' | 'pt')[] }; zugang: Profil['zugang']; ziele?: string[] }[]
 }
 
 // ---------------------------------------------------------------------------------------------------------------

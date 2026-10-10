@@ -286,19 +286,29 @@ export function korrekturenFuerHub(alt: Korrekturen, neu: Korrekturen, roh: Pick
   return erg
 }
 
-/** Start der Toolbox aus dem Hub: #passgenau=<ref>&weg=schnell|leicht|gruendlich&ziel=V-21 */
+/** Start der Toolbox aus dem Hub: #passgenau=<ref>&weg=schnell|leicht|gruendlich&ziel=V-21; Kleingruppe:
+ *  #passgenau=<ref1>,<ref2>,… (2–6 Kinder) */
 export interface PassgenauStart {
   ref: string | null
+  /** Kleingruppe: alle refs (das erste steht auch in `ref`) */
+  gruppe?: string[] | null
   weg: 'gruendlich' | 'schnell' | 'leicht' | null
   ziel: string | null
+  /** ohne Kind (Brücke vom Blatt, Aufgabe 154): Alter vorbelegen */
+  alter?: number | null
 }
 export function startAusHash(hash: string): PassgenauStart {
   const p = new URLSearchParams(hash.replace(/^#\/?/, ''))
-  const ref = p.get('passgenau')
+  const roh = p.get('passgenau')
+  const liste = (roh ?? '').split(',').filter((r) => /^[\w-]{3,64}$/.test(r))
+  const ref = liste.length === 1 ? liste[0] : null
+  const gruppe = liste.length >= 2 && liste.length <= 6 && new Set(liste).size === liste.length ? liste : null
   const weg = p.get('weg')
   return {
-    ref: ref && /^[\w-]{3,64}$/.test(ref) ? ref : null,
+    ref: gruppe ? gruppe[0] : ref,
+    gruppe,
     weg: weg === 'gruendlich' || weg === 'schnell' || weg === 'leicht' ? weg : null,
     ziel: p.get('ziel')?.toUpperCase().replace(/[^A-Z0-9-]/g, '') || null,
+    alter: /^\d{1,2}$/.test(p.get('alter') ?? '') ? Math.max(3, Math.min(16, Number(p.get('alter')))) : null,
   }
 }

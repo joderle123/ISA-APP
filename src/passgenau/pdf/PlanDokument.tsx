@@ -345,6 +345,9 @@ export function SitzungSeiten({ d }: { d: DruckSitzung }) {
     <>
       <PlanSeite d={d} />
       {d.kinderblatt ? <BlattSeiten blatt={d.kinderblatt} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
+      {(d.weitereBlaetter ?? []).map((x, i) => (
+        <BlattSeiten key={'gb' + i} blatt={x.blatt} opt={{ sprache: x.sprache, lehrer: false }} />
+      ))}
       {d.karten ? <BlattSeiten blatt={d.karten} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
       {d.materialSeite ? <BlattSeiten blatt={d.materialSeite} opt={{ sprache: d.sprache, lehrer: false }} /> : null}
     </>

@@ -91,6 +91,88 @@
         "achtung": "Bleibt das Verhalten nach drei bis vier Wochen sorgfältiger Umsetzung unverändert, im Team beraten und die zuständige Leitung (Responsable) einbeziehen.",
         "material": "Buntstifte oder Aufkleber"
       }
+    },
+    "fr": {
+      "titel": "Plan de points (plan de renforcement)",
+      "untertitel": "Pour un seul comportement, clairement décrit. L’enfant collecte des étoiles et les échange contre des récompenses convenues d’avance.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Décrire le comportement cible comme le contraire positif",
+          "hinweis": "Que doit faire l’enfant à la place ? Si concret que tout le monde jugerait de la même façon."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Ce que fait l’enfant jusqu’ici", "Ce que l’enfant doit faire à la place (comportement cible)", "Quand et où ?"],
+          "breiten": [1.2, 1.6, 1],
+          "zeilen": 1,
+          "beispiel": [
+            "coupe la parole dans le cercle du matin",
+            "lève la main et attend qu’on l’appelle",
+            "Cercle du matin, phases de travail du matin"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Collecter des étoiles",
+          "hinweis": "Noter les situations à gauche. Donner l’étoile tout de suite et féliciter de façon concrète."
+        },
+        { "art": "plan", "ziel": "", "zeilen": ["", "", ""], "symbol": "stern" },
+        {
+          "art": "aufgabe",
+          "text": "Convenir de l’échange",
+          "hinweis": "Une petite récompense doit être atteignable dès le premier jour. La choisir avec l’enfant."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Étoiles", "Récompense", "Quand et avec qui ?"],
+          "breiten": [0.6, 2, 1.4],
+          "zeilen": 2,
+          "beispiel": ["3", "choisir la musique pour ranger", "chaque jour avant de rentrer, avec la titulaire de classe"]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Pour que le plan fonctionne",
+          "punkte": [
+            "Au début, planifier pour que l’enfant réussisse à coup sûr.",
+            "Associer chaque étoile à un compliment concret : « Tu as attendu ton tour. »",
+            "Ne jamais retirer les étoiles gagnées.",
+            "Faire le bilan ensemble après deux à trois semaines et adapter l’objectif."
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Un comportement souhaité est construit de façon ciblée avec un retour immédiat, des points et des récompenses convenues. L’enfant vit la réussite et reçoit de l’attention pour ce qui lui réussit.",
+        "ablauf": [
+          "Préparation (15 min) : formuler un comportement cible comme contraire positif. Question de contrôle : « Pourrait-on le filmer ? » – « ne pas déranger », non ; « lève la main et attend », oui.",
+          "Situation de départ : compter pendant une semaine la fréquence actuelle (fiche « Compter un comportement »). Premier objectif juste au-dessus.",
+          "Introduction (10 min) : expliquer le plan, montrer et essayer le comportement cible, choisir les récompenses avec l’enfant.",
+          "Chaque jour : donner l’étoile tout de suite et féliciter concrètement ; compter et échanger à heure fixe.",
+          "Bilan après 2 à 3 semaines : si ça marche, relever prudemment l’exigence, espacer les étoiles, garder le compliment. Sinon, réduire l’objectif."
+        ],
+        "hintergrund": "Les plans de renforcement reposent sur un principe simple : un comportement suivi aussitôt d’une conséquence agréable apparaît plus souvent. Kazdin (2008) cite les éléments efficaces : un comportement cible positif (le « contraire positif » du comportement problème), de petits premiers pas qui réussissent tout de suite, un compliment immédiat et concret avec le point, des récompenses vraiment désirées. Les plans de points font partie des programmes comportementaux pour comportements oppositionnels et impulsifs (Döpfner et al., 2019). Le plan oriente l’attention des adultes vers ce qui réussit – c’est pourquoi les points gagnés ne sont jamais retirés.",
+        "quellen": [
+          "Kazdin, A. E. (2008). The Kazdin Method for Parenting the Defiant Child. Boston: Houghton Mifflin.",
+          "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Préscolaire, C2 : une situation par jour, échange le jour même, autocollants.",
+          "schwerer": "C4 : l’enfant inscrit lui-même les étoiles et évalue la journée ; l’adulte confirme."
+        },
+        "impulse": [
+          "À quoi vois-tu aujourd’hui que tu as atteint ton objectif ?",
+          "Qu’est-ce qui t’a aidé à lever la main et à attendre ?",
+          "Pour quelle récompense veux-tu d’abord collecter ?"
+        ],
+        "tipps": [
+          "Le compliment compte plus que l’étoile : immédiat, concret et aimable.",
+          "Pour le comportement problème, les accords habituels s’appliquent – séparément du plan.",
+          "N’afficher le plan en classe qu’avec l’accord de l’enfant."
+        ],
+        "achtung": "Si le comportement reste inchangé après trois à quatre semaines de mise en œuvre soignée, en discuter en équipe et associer la direction compétente (responsable).",
+        "material": "Crayons de couleur ou autocollants"
+      }
     }
   },
   {
@@ -172,6 +254,76 @@
         ],
         "achtung": "Bleibt eine Besserung nach einigen Wochen aus oder gefährdet das Verhalten andere, im Team genauer analysieren (ABC-Beobachtung) und die zuständige Leitung (Responsable) einbeziehen.",
         "material": "Karte täglich kopieren"
+      }
+    },
+    "fr": {
+      "titel": "Carte Check-in/Check-out",
+      "untertitel": "Une carte journalière avec trois objectifs : accueil le matin, bref retour après chaque heure, bilan ensemble l’après-midi.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Trois objectifs pour chaque heure",
+          "hinweis": "Positifs et observables, par exemple : « Je commence la tâche dans les deux minutes. »"
+        },
+        { "art": "satzanfaenge", "items": ["Objectif 1 :", "Objectif 2 :", "Objectif 3 :"] },
+        { "art": "aufgabe", "text": "Check-in le matin" },
+        { "art": "ankreuzen", "items": ["Accueilli, carte récupérée", "Matériel complet", "Objectif du jour discuté"], "spalten": 3 },
+        {
+          "art": "aufgabe",
+          "text": "Retour après chaque heure",
+          "hinweis": "2 = a bien marché · 1 = en partie · 0 = pas encore aujourd’hui. Plus une courte phrase concrète."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Heure / matière", "Objectif 1", "Objectif 2", "Objectif 3", "Initiales"],
+          "breiten": [1.6, 1, 1, 1, 0.9],
+          "zeilen": 7,
+          "beispiel": ["Exemple : mathématiques", "2", "1", "2", "MW"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Check-out l’après-midi",
+          "hinweis": "Compter les points, nommer ce qui a réussi. La carte rentre à la maison pour signature."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Points aujourd’hui", "Objectif du jour", "Atteint ?", "Initiales check-out", "Signature des parents"],
+          "breiten": [1, 1, 0.9, 1.1, 1.4],
+          "zeilen": 1
+        },
+        { "art": "satzanfaenge", "items": ["Ce qui s’est particulièrement bien passé aujourd’hui :"] }
+      ],
+      "lehrer": {
+        "ziel": "La carte donne aux enfants ayant des difficultés de comportement récurrentes un cadre fiable : deux brefs contacts par jour avec une personne de référence et un retour après chaque heure.",
+        "ablauf": [
+          "En équipe (20 min) : fixer la personne de référence, trois objectifs et l’objectif du jour (usuel : 80 % des points possibles).",
+          "Discuter avec l’enfant et les parents de la carte, de l’évaluation 0-1-2 et de la récompense : la carte est une aide, pas une punition.",
+          "Check-in (2–3 min) : accueillir, vérifier le matériel, remettre la carte, mettre un objectif en avant.",
+          "Après chaque heure (1 min) : inscrire les points et dire une phrase concrète (« Tu as commencé tout de suite. »).",
+          "Check-out (3–5 min) : compter les points, reconnaître les réussites, petite récompense si l’objectif du jour est atteint ; la carte rentre à la maison.",
+          "Après 4 à 6 semaines, évaluer l’évolution : continuer, adapter ou réduire progressivement."
+        ],
+        "hintergrund": "Check-in/Check-out est le cœur du Behavior Education Program (Crone, Hawken & Horner, 2010) pour les élèves chez qui les règles générales de la classe ne suffisent pas. Ce qui agit : la structure fixe, l’attention positive fréquente des adultes et le retour immédiat. Le retour agit le plus quand il se rapporte à un objectif clair et montre le pas suivant (Hattie & Timperley, 2007). La carte convient surtout aux enfants pour qui l’attention des adultes compte. Si un enfant évite surtout des tâches difficiles par son comportement, il faut en plus des adaptations de l’enseignement.",
+        "quellen": [
+          "Crone, D. A., Hawken, L. S. & Horner, R. H. (2010). Responding to Problem Behavior in Schools: The Behavior Education Program (2nd ed.). New York: Guilford.",
+          "Hattie, J. & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81–112."
+        ],
+        "differenzierung": {
+          "leichter": "C2 : deux objectifs et des visages à la place des chiffres.",
+          "schwerer": "Au lycée : s’évaluer d’abord soi-même, puis l’adulte compare."
+        },
+        "impulse": [
+          "Quel objectif veux-tu garder particulièrement en vue aujourd’hui ?",
+          "Dans quelle heure est-ce que ça a le mieux marché ? Qu’est-ce qui était différent ?",
+          "Qu’est-ce qui t’aide demain dans l’heure difficile ?"
+        ],
+        "tipps": [
+          "Ne jamais sauter le check-in et le check-out : la fiabilité agit aussi.",
+          "Garder les retours courts et aimables, ne jamais en discuter devant la classe.",
+          "Ne pas punir pour une carte perdue, mais la remplacer."
+        ],
+        "achtung": "Si aucune amélioration n’apparaît après quelques semaines ou si le comportement met d’autres en danger : analyser plus précisément en équipe (observation ABC) et associer la direction compétente (responsable).",
+        "material": "Copier la carte chaque jour"
       }
     }
   },
@@ -276,6 +428,89 @@
         "achtung": "Grundbedürfnisse und Rechte des Kindes – Essen, Pause, Kontakt zur Familie, Teilnahme an Klassenaktivitäten – sind nie Teil des Menüs und werden nie entzogen.",
         "material": "Buntstifte; Kopie für Kind und Eltern"
       }
+    },
+    "fr": {
+      "titel": "Menu de récompenses",
+      "untertitel": "Des récompenses qui te font vraiment plaisir – des petites aux grandes. Tu les choisis avec un adulte.",
+      "anleitung": "À remplir avec l’enfant. N’inclure que ce qui est possible de façon fiable – ni sucreries, ni argent, ni rien à quoi l’enfant a de toute façon droit.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Qu’est-ce qui te fait plaisir ? Coche et complète.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "ankreuzen",
+              "titel": "Du temps avec quelqu’un",
+              "items": ["un jeu avec un adulte", "m’asseoir à côté d’un ami ou d’une amie", "présenter quelque chose à la classe"]
+            },
+            {
+              "art": "ankreuzen",
+              "titel": "Choisir quelque chose",
+              "items": ["la musique pour ranger", "le jeu de mouvement pour la classe", "ma place pendant le temps de lecture"]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "titel": "Une tâche importante",
+              "items": ["distribuer le matériel", "arroser les plantes", "porter un message dans la classe voisine"]
+            },
+            {
+              "art": "ankreuzen",
+              "titel": "Jouer et bouger",
+              "items": ["10 minutes dans le coin construction", "choisir le ballon pour la récré", "sortir en premier à la récré"]
+            }
+          ]
+        },
+        { "art": "satzanfaenge", "items": ["Mes propres idées :"] },
+        { "art": "seitenumbruch" },
+        {
+          "art": "aufgabe",
+          "text": "Compose ton menu.",
+          "hinweis": "Les petites récompenses, c’est chaque jour. Pour les grandes, tu collectes plus longtemps.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 2,
+          "items": [
+            { "titel": "Petite", "text": "chaque jour, pour ___ points" },
+            { "titel": "Moyenne", "text": "chaque semaine, pour ___ points" },
+            { "titel": "Grande", "text": "quelque chose de spécial, pour ___ points" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Notre accord", "symbole": ["schreiben"] },
+        { "art": "vertrag", "text": "Échange : ___ auprès de ___ . Nous revoyons le menu le ___ .", "unterschriften": ["Enfant", "Adulte"] }
+      ],
+      "lehrer": {
+        "ziel": "L’enfant choisit avec un adulte des récompenses qui comptent vraiment pour lui et les classe selon l’effort. Le menu complète le plan de points ou la carte Check-in/Check-out.",
+        "ablauf": [
+          "Préparation (5 min) : clarifier quelles récompenses sont possibles de façon fiable à l’école, à la Maison Relais ou à la maison.",
+          "Collecter des idées (10 min) : parcourir la liste avec l’enfant : « Que fais-tu le plus volontiers quand tu peux choisir librement ? » Compléter par ses propres idées.",
+          "Remplir le menu (10 min) : inscrire deux à trois récompenses par niveau. Fixer les prix pour qu’une petite récompense soit atteignable dès le premier jour.",
+          "Remplir et signer l’accord ; l’enfant en reçoit une copie.",
+          "Toutes les deux à trois semaines, demander ce qui attire encore et rafraîchir le menu."
+        ],
+        "hintergrund": "Les récompenses n’agissent que si elles sont attrayantes pour l’enfant – et il le sait souvent mieux que les adultes. Selon le principe de Premack, les activités qu’un enfant fait volontiers et souvent conviennent particulièrement (Premack, 1959) : choisir quelque chose, du temps avec une personne de référence, une tâche à responsabilité. Ces récompenses sont disponibles à tout moment et ne coûtent rien. Kazdin (2008) recommande un menu gradué : les petites récompenses sont atteignables tout de suite, les grandes demandent d’épargner. Si l’enfant participe au choix, il vit la codécision plutôt que le contrôle ; cela l’aide à faire sien l’objectif (Deci & Ryan, 2000).",
+        "quellen": [
+          "Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. Psychological Review, 66(4), 219–233.",
+          "Kazdin, A. E. (2008). The Kazdin Method for Parenting the Defiant Child. Boston: Houghton Mifflin.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "C2 : montrer les récompenses en cartes images ; seulement deux niveaux (aujourd’hui – cette semaine).",
+          "schwerer": "C4 : l’enfant calcule lui-même quand il pourra atteindre une grande récompense."
+        },
+        "impulse": [
+          "Que fais-tu le plus volontiers quand tu peux décider toi-même ?",
+          "Avec qui aimes-tu passer du temps à l’école ?",
+          "Quelle tâche aimerais-tu un jour assumer pour la classe ?"
+        ],
+        "tipps": ["Ni sucreries ni argent : les deux s’usent vite et détournent du comportement.", "Accorder à temps les récompenses promises."],
+        "achtung": "Les besoins fondamentaux et les droits de l’enfant – repas, pause, contact avec la famille, participation aux activités de classe – ne font jamais partie du menu et ne sont jamais retirés.",
+        "material": "Crayons de couleur ; copie pour l’enfant et les parents"
+      }
     }
   },
   {
@@ -367,6 +602,85 @@
         "achtung": "Beobachtungen vertraulich behandeln. Bei Hinweisen auf Gefährdung sofort nach dem internen Ablauf handeln und die zuständige Leitung (Responsable) informieren.",
         "material": "Bogen mehrfach kopieren"
       }
+    },
+    "fr": {
+      "titel": "Grille d’observation ABC",
+      "untertitel": "Qu’est-ce qui précède un comportement, qu’est-ce qui le suit ? Noté pendant une à deux semaines, cela révèle des schémas plutôt que des cas isolés.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Définir le comportement",
+          "hinweis": "Le décrire pour que tous entendent la même chose : « jette des objets » plutôt que « est agressif »."
+        },
+        { "art": "satzanfaenge", "items": ["Comportement observé :"] },
+        {
+          "art": "aufgabe",
+          "text": "Noter chaque apparition si possible tout de suite",
+          "hinweis": "Décrire seulement ce qu’on a vu et entendu – sans interprétation."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Jour, heure", "Lieu, activité", "A – juste avant", "B – le comportement", "C – juste après"],
+          "breiten": [0.8, 1.05, 1.4, 1.4, 1.4],
+          "zeilen": 9,
+          "beispiel": [
+            "Ma, 10 h 20",
+            "Classe, travail individuel en maths",
+            "On distribue la feuille de problèmes",
+            "froisse la feuille, crie : « Je ne le fais pas. »",
+            "L’enseignante s’assoit près de lui ; la tâche reste de côté"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Évaluer après 10 à 15 entrées",
+          "hinweis": "Qu’est-ce qui se répète en A et en C ? Qu’obtient ou évite l’enfant par son comportement ?"
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Fonction supposée :",
+          "items": ["obtenir de l’attention", "échapper à une exigence", "obtenir quelque chose de désiré", "réguler des stimuli ou une tension"],
+          "spalten": 2
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Le comportement apparaît surtout quand …",
+            "Il apparaît rarement ou jamais quand …",
+            "À la place, l’enfant pourrait apprendre à …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "La grille aide à observer systématiquement un comportement récurrent et à former des hypothèses fondées sur ses déclencheurs et sa fonction.",
+        "ablauf": [
+          "Définir le comportement (5 min) : le décrire de façon observable – « jette des objets » plutôt que « est agressif ».",
+          "Observer (1–2 semaines) : noter chaque apparition rapidement, aussi à la récré et à la Maison Relais.",
+          "Évaluer en équipe (20 min) : repérer les déclencheurs et les conséquences qui reviennent.",
+          "Formuler une hypothèse : « Quand …, l’enfant montre …, parce qu’il obtient ainsi … ».",
+          "En déduire des mesures : modifier les déclencheurs, exercer un comportement de remplacement, adapter les conséquences ; observer de nouveau après 3 à 4 semaines."
+        ],
+        "hintergrund": "Le schéma ABC (Antécédent – Comportement – Conséquence) est une analyse fonctionnelle simplifiée, telle que la décrit par exemple le modèle SORKC (Kanfer, Reinecker & Schmelzer, 2012) : un comportement est influencé par ce qui le précède et par ce qui le suit. Un comportement problème remplit souvent pour l’enfant une fonction compréhensible – obtenir de l’attention, échapper à une exigence, obtenir quelque chose de désiré ou réguler une tension. Celui qui connaît la fonction peut construire et renforcer de façon ciblée un comportement adapté qui a le même but (Kazdin, 2008). L’observation ne remplace pas un diagnostic, mais transforme une impression en hypothèses vérifiables.",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Kazdin, A. E. (2008). The Kazdin Method for Parenting the Defiant Child. Boston: Houghton Mifflin."
+        ],
+        "differenzierung": {
+          "leichter": "N’observer que deux plages fixes par jour, par exemple le cercle du matin et la première phase de travail.",
+          "schwerer": "Noter en plus la durée, l’intensité (1–5) et les particularités de la journée."
+        },
+        "impulse": [
+          "Quand le comportement n’apparaît-il jamais – qu’est-ce qui est alors différent ?",
+          "Qu’obtient ou évite l’enfant juste après ?",
+          "Quelle compétence manque pour obtenir la même chose autrement ?"
+        ],
+        "tipps": [
+          "Noter juste après l’incident – plus tard, les interprétations s’infiltrent.",
+          "Noter aussi les jours calmes : ils montrent ce qui aide."
+        ],
+        "achtung": "Traiter les observations de façon confidentielle. En cas d’indices de danger, agir immédiatement selon la procédure interne et informer la direction compétente (responsable).",
+        "material": "Copier la grille plusieurs fois"
+      }
     }
   },
   {
@@ -454,6 +768,81 @@
         "achtung": "Die Zahlen beschreiben Verhalten in bestimmten Situationen, nicht das Kind. Sie werden vertraulich behandelt und nur im Team und mit den Eltern besprochen.",
         "material": "Klemmbrett oder Klebezettel"
       }
+    },
+    "fr": {
+      "titel": "Compter un comportement : relevé de la semaine",
+      "untertitel": "À quelle fréquence se montre un comportement décrit avec précision ? Une semaine de comptage remplace l’impression par une situation de départ fiable.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Décrire précisément le comportement",
+          "hinweis": "Qu’est-ce qui compte pour une fois, qu’est-ce qui ne compte pas ? Seulement ainsi, toutes les personnes qui observent comptent de la même façon."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Comportement", "Compte pour une fois quand …", "Ne compte pas quand …"],
+          "breiten": [1, 1.4, 1.4],
+          "zeilen": 1,
+          "beispiel": [
+            "parle en classe sans lever la main",
+            "l’enfant parle fort pendant que c’est le tour d’un autre",
+            "l’enfant a été interrogé ou parle doucement en travail de groupe"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Faire des traits pendant une semaine",
+          "hinweis": "À gauche, les plages horaires ; chaque apparition tout de suite en trait. Dernière ligne : total du jour."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Période", "Lu", "Ma", "Me", "Je", "Ve"],
+          "breiten": [1.5, 1, 1, 1, 1, 1],
+          "zeilen": 7,
+          "beispiel": ["8 h–10 h", "|||| ||", "|||", "||||", "non observé", "||"]
+        },
+        { "art": "aufgabe", "text": "Évaluer" },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Particularités de cette semaine :",
+            "Total de la semaine :",
+            "Le plus fréquent (jour, heure, situation) :",
+            "Le plus rare – qu’est-ce qui était différent ?",
+            "Prochaine étape :"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Le relevé note à quelle fréquence un comportement décrit avec précision apparaît pendant une semaine. Il fournit une situation de départ qui montrera plus tard si une mesure agit.",
+        "ablauf": [
+          "Définir le comportement (5 min) : choisir un seul comportement bien délimité et fixer ce qui compte pour une fois.",
+          "Choisir les plages : seulement des moments où l’on peut observer de façon fiable – mieux vaut deux plages sûres qu’une journée pleine de lacunes.",
+          "Compter une semaine : chaque apparition tout de suite en trait ; noter les particularités comme un remplacement ou une sortie.",
+          "Évaluer (10 min) : faire les totaux et chercher des schémas par jours, heures et situations.",
+          "Après une mesure, compter de nouveau avec la même définition – seulement ainsi les chiffres sont comparables."
+        ],
+        "hintergrund": "L’impression « Il dérange tout le temps » est peu fiable : les moments marquants restent en mémoire, les phases calmes passent inaperçues. Un simple comptage de fréquence crée une situation de départ vérifiable. En analyse du comportement, c’est la première étape avant de planifier un changement, et elle montre plus tard si une mesure agit (Kanfer, Reinecker & Schmelzer, 2012). Quand enfants ou adolescents comptent eux-mêmes leur comportement, cette auto-observation le modifie souvent déjà dans le sens voulu ; elle fait partie des éléments de base de l’apprentissage autorégulé (Zimmerman, 2002).",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70."
+        ],
+        "differenzierung": {
+          "leichter": "Ne compter qu’une plage fixe par jour, par exemple la première phase de travail.",
+          "schwerer": "À partir de C4 : l’enfant compte aussi lui-même ; en fin de journée, comparer les deux comptages."
+        },
+        "impulse": [
+          "Les chiffres correspondent-ils à notre impression ?",
+          "Quand le comportement apparaît-il à peine – qu’est-ce qui est différent là ?",
+          "Quel chiffre serait un succès réaliste dans quatre semaines ?"
+        ],
+        "tipps": [
+          "Compter discrètement, par exemple sur un papillon adhésif au bureau.",
+          "Compter aussi le contraire souhaité – cela attire le regard sur les progrès."
+        ],
+        "achtung": "Les chiffres décrivent un comportement dans certaines situations, pas l’enfant. Ils sont traités de façon confidentielle et discutés seulement en équipe et avec les parents.",
+        "material": "Planchette à pince ou papillon adhésif"
+      }
     }
   },
   {
@@ -534,6 +923,79 @@
         ],
         "achtung": "Kein Ersatz für Krisenintervention: Bei Hinweisen auf Gewalt, Selbstverletzung oder Suizidgedanken nach dem internen Ablauf handeln und die zuständige Leitung (Responsable) informieren.",
         "material": "Optional Zahlenkarten 0–10"
+      }
+    },
+    "fr": {
+      "titel": "Entretien orienté solutions – guide",
+      "untertitel": "Un cadre d’entretien de 20 à 30 minutes : de la demande aux exceptions, puis à l’échelle et au prochain petit pas. Les questions sont des suggestions.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Clarifier la demande" },
+        {
+          "art": "frage",
+          "text": "« Que faudrait-il qu’il se passe aujourd’hui pour que cet entretien en vaille la peine pour toi ? »",
+          "linien": 2
+        },
+        { "art": "aufgabe", "text": "Décrire l’objectif" },
+        { "art": "frage", "text": "« À quoi remarquerais-tu que ça va mieux ? Que ferais-tu alors différemment ? »", "linien": 2 },
+        { "art": "aufgabe", "text": "Trouver les exceptions" },
+        { "art": "frage", "text": "« Quand est-ce que ça allait déjà un peu mieux ? Qu’as-tu fait différemment alors ? »", "linien": 2 },
+        {
+          "art": "aufgabe",
+          "text": "Question d’échelle",
+          "hinweis": "D’abord reconnaître ce qui est déjà là – puis demander un point de plus, pas le 10."
+        },
+        {
+          "art": "skala",
+          "frage": "« Sur une échelle de 0 à 10 : où en es-tu aujourd’hui ? »",
+          "von": "0 = le problème décide de tout",
+          "bis": "10 = mon objectif est atteint",
+          "stufen": 11
+        },
+        { "art": "satzanfaenge", "items": ["Pourquoi déjà ici et pas à 0 ?", "À quoi remarquerais-tu un point de plus ?"] },
+        {
+          "art": "aufgabe",
+          "text": "Conclusion",
+          "hinweis": "Reconnaître concrètement ce qui a impressionné. Convenir d’un petit pas choisi par la personne."
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Ce qui m’a impressionné :",
+            "Plus petit prochain pas (pour quand ?) :",
+            "À surveiller jusqu’à la prochaine fois :",
+            "Prochain entretien le :"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Le guide structure un court entretien où les enfants et les jeunes ne regardent pas le problème, mais leur objectif, leurs compétences et un prochain pas réalisable.",
+        "ablauf": [
+          "Cadre (2 min) : endroit calme, annoncer la durée (« Nous avons 20 minutes. »), expliquer à quoi servent les notes.",
+          "Demande et objectif (5–8 min) : questionner jusqu’à ce qu’une image concrète et observable apparaisse.",
+          "Exceptions (5 min) : demander des moments où le problème était plus petit : « Comment as-tu réussi ? »",
+          "Échelle (5 min) : d’abord reconnaître ce qui est déjà là, puis demander un point de plus.",
+          "Conclusion (5 min) : reconnaître concrètement, convenir d’un petit pas et d’une date. Le prochain entretien commence par : « Qu’est-ce qui s’est amélioré ? »"
+        ],
+        "hintergrund": "Le conseil bref centré sur les solutions remonte à de Shazer (1985). Il renonce à une longue analyse du problème et oriente le regard vers les objectifs, les exceptions – situations où le problème apparaît moins ou pas – et les ressources existantes. Ce qui fonctionne est renforcé ; un petit changement peut en entraîner d’autres. Les questions d’échelle rendent les progrès visibles. La question de savoir pourquoi quelqu’un n’est pas plus bas amène la personne à formuler elle-même des raisons de ses compétences et du changement – une démarche que l’entretien motivationnel utilise aussi (Miller & Rollnick, 2013). L’attitude est curieuse et sans jugement.",
+        "quellen": [
+          "de Shazer, S. (1985). Keys to Solution in Brief Therapy. New York: Norton.",
+          "Miller, W. R. & Rollnick, S. (2013). Motivational Interviewing (3rd ed.). New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "C3 : montrer l’échelle comme un escalier ; ne discuter que l’objectif, une exception et un pas.",
+          "schwerer": "Au lycée : commencer par la question miracle : « Supposons que le problème soit résolu pendant la nuit – à quoi le remarquerais-tu demain en premier ? »"
+        },
+        "impulse": [
+          "Qu’as-tu déjà essayé qui a un peu aidé ?",
+          "Qui remarquerait en premier que tu vas mieux ?",
+          "Comment as-tu réussi à ce que ça n’empire pas ?"
+        ],
+        "tipps": [
+          "Supporter « je ne sais pas » et relancer : « Si tu le savais – que dirais-tu ? »",
+          "Ne pas proposer de solutions soi-même ; questionner jusqu’à ce que l’idée vienne de l’enfant."
+        ],
+        "achtung": "Ne remplace pas une intervention de crise : en cas d’indices de violence, d’automutilation ou d’idées suicidaires, agir selon la procédure interne et informer la direction compétente (responsable).",
+        "material": "En option : cartes chiffrées 0–10"
       }
     }
   },
@@ -631,6 +1093,83 @@
         "achtung": "Hinweise auf Gewalt oder Vernachlässigung ernst nehmen, nach dem internen Ablauf handeln und die zuständige Leitung (Responsable) informieren.",
         "material": "Beobachtungsbögen"
       }
+    },
+    "fr": {
+      "titel": "Préparer un entretien avec les parents",
+      "untertitel": "Bien préparé, un entretien sur un problème devient un entretien sur un objectif commun : que l’enfant se sente bien à l’école.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Ma demande en une phrase", "hinweis": "Qu’est-ce qui doit être clarifié ou convenu après l’entretien ?" },
+        { "art": "feld", "hoehe": 2, "beispiel": "Nous convenons de la façon dont nous soutenons ensemble Noah à son arrivée le matin." },
+        {
+          "art": "aufgabe",
+          "text": "Observations plutôt qu’évaluations",
+          "hinweis": "Pas « Il est irrespectueux », mais : qu’a-t-on vu ou entendu exactement, et quand ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Date, situation", "Que s’est-il passé exactement ?"],
+          "breiten": [1, 3],
+          "zeilen": 2,
+          "beispiel": ["Ma, 12.3., récré", "Noah dit deux fois « Ferme-la » à la surveillante et s’en va quand elle lui parle."]
+        },
+        { "art": "aufgabe", "text": "Forces et réussites", "hinweis": "Avec des exemples concrets – c’est par là que l’entretien commence." },
+        { "art": "satzanfaenge", "items": ["Ce que l’enfant fait bien :", "Ce qui l’a réjoui récemment :", "Ce qui va mieux depuis peu :"] },
+        { "art": "aufgabe", "text": "Questions aux parents" },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Comment vivez-vous votre enfant à la maison ?",
+            "Qu’est-ce qui aide votre enfant quand ça devient difficile ?",
+            "Que raconte votre enfant de l’école ?",
+            "Qu’attendez-vous de nous ?"
+          ],
+          "spalten": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Accords",
+          "hinweis": "Petits, concrets, avec un nom et une date – l’école et la famille y contribuent chacune."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Quoi ?", "Qui ?", "Jusqu’à quand ?"],
+          "breiten": [3, 1.2, 1],
+          "zeilen": 2,
+          "beispiel": ["Court message dans le cahier quand la matinée s’est bien passée", "Titulaire de classe", "dès lundi, chaque jour"]
+        },
+        { "art": "satzanfaenge", "items": ["Prochain entretien le :"] }
+      ],
+      "lehrer": {
+        "ziel": "Le modèle aide à préparer un entretien avec les parents de façon factuelle et bienveillante : avec une demande claire, des observations concrètes, les forces de l’enfant et des accords vérifiables.",
+        "ablauf": [
+          "Préparer (15–20 min) : remplir le modèle, reprendre les observations des notes ou de la grille ABC ; clarifier qui mène l’entretien.",
+          "Inviter : nommer le motif de façon ouverte et aimable, indiquer la durée, organiser une traduction au besoin.",
+          "Commencer (5 min) : remercier, nommer l’objectif et la durée, commencer par les forces de l’enfant.",
+          "Demande (10 min) : décrire les observations, puis demander le point de vue des parents et écouter.",
+          "Convenir (10–15 min) : recueillir des idées, noter deux à trois accords, fixer le prochain rendez-vous ; copie pour les parents."
+        ],
+        "hintergrund": "Parents et école poursuivent au fond le même intérêt : que l’enfant aille bien et puisse apprendre. Les entretiens réussissent plus facilement quand cet intérêt commun passe avant les positions, comme le décrit le concept de Harvard (Fisher & Ury, 1981). Des observations sans évaluation sont centrales : un comportement concret peut être vérifié et discuté, un jugement sur l’enfant déclenche facilement justification et défense (Rosenberg, 2001). Commencer par de vraies forces montre que l’école voit l’enfant comme une personne entière ; des relations fiables avec des adultes comptent parmi les facteurs de protection les plus importants (Masten, 2014).",
+        "quellen": [
+          "Fisher, R. & Ury, W. (1981). Getting to Yes. Boston: Houghton Mifflin.",
+          "Rosenberg, M. B. (2001). Gewaltfreie Kommunikation. Paderborn: Junfermann.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Pour de courts entretiens : seulement demande, une observation, une force et un accord.",
+          "schwerer": "Table ronde avec la Maison Relais ou une thérapie : clarifier d’avance qui apporte quoi et désigner une personne qui anime."
+        },
+        "impulse": [
+          "Que vivez-vous à la maison qui nous aide à mieux comprendre votre enfant ?",
+          "Qu’est-ce qui a déjà bien aidé autrefois ?",
+          "Qu’est-ce qui serait pour vous un bon résultat de cet entretien ?"
+        ],
+        "tipps": [
+          "En cas de barrière linguistique, solliciter à temps un service de médiation interculturelle – ne jamais faire traduire l’enfant.",
+          "Éviter le jargon ; poser des diagnostics n’est pas la tâche de l’école."
+        ],
+        "achtung": "Prendre au sérieux les indices de violence ou de négligence, agir selon la procédure interne et informer la direction compétente (responsable).",
+        "material": "Fiches d’observation"
+      }
     }
   },
   {
@@ -702,6 +1241,68 @@
         ],
         "material": "Schere, Laminierfolie, Klettpunkte, Kartonstreifen, Umschlag für „Fertig“"
       }
+    },
+    "fr": {
+      "titel": "Cartes-images du programme du jour",
+      "anleitung": "Découper les cartes, les plastifier et les coller avec du velcro sur une bande – dans l’ordre de la journée. Après chaque activité, l’enfant retire la carte et la glisse dans la pochette « Fini ».",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Que faisons-nous maintenant ? Qu’est-ce qui vient après ?", "symbole": ["zeigen", "sprechen"] },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "karten": [
+            { "titel": "Arrivée", "bild": "icon:door-enter" },
+            { "titel": "Cercle du matin", "bild": "icon:users-group" },
+            { "titel": "Jouer", "bild": "icon:puzzle" },
+            { "titel": "Ranger", "bild": "icon:basket" },
+            { "titel": "Se laver les mains", "bild": "icon:droplet" },
+            { "titel": "Manger", "bild": "icon:tools-kitchen-2" },
+            { "titel": "Toilettes", "bild": "icon:toilet-paper" },
+            { "titel": "S’habiller", "bild": "icon:hanger" },
+            { "titel": "Récré", "bild": "icon:ball-football" },
+            { "titel": "Gym", "bild": "icon:run" },
+            { "titel": "Peindre", "bild": "icon:palette" },
+            { "titel": "Chanter", "bild": "icon:music" },
+            { "titel": "Lecture", "bild": "icon:book" },
+            { "titel": "Se reposer", "bild": "icon:pillow" },
+            { "titel": "Surprise", "bild": "icon:question-mark" },
+            { "titel": "Bus", "bild": "icon:bus" },
+            { "titel": "Maison Relais", "bild": "icon:building-community" },
+            { "titel": "Rentrer", "bild": "icon:home" },
+            { "titel": "Fini", "bild": "icon:circle-check" },
+            {}
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les cartes-images rendent la journée visible pour les enfants qui s’orientent difficilement avec la seule langue parlée. Elles donnent de la sécurité, facilitent les transitions et annoncent les changements.",
+        "ablauf": [
+          "Préparer (20 min) : découper les cartes, plastifier, coller le velcro. Dessiner les activités manquantes sur la carte vide ou coller une photo.",
+          "Accrocher la bande : à hauteur des yeux de l’enfant, toujours au même endroit ; la carte « Fini » va sur une pochette ou une enveloppe.",
+          "Regarder ensemble le matin (2–3 min) : montrer et nommer les cartes : « D’abord le cercle du matin, ensuite jouer. »",
+          "Accompagner les transitions : avant chaque changement, aller au plan ; l’enfant glisse la carte terminée dans la pochette « Fini ».",
+          "Annoncer les changements : poser la carte « Surprise » à l’endroit où quelque chose change et expliquer le changement."
+        ],
+        "hintergrund": "Beaucoup de jeunes enfants – surtout ceux avec un retard de développement du langage, de l’autisme ou qui apprennent tout juste la langue de l’école – comprennent les images plus vite et plus durablement que des consignes orales. La parole est fugace, une image reste et peut être regardée encore et encore. Les aides visuelles comme les plannings de journée améliorent la compréhension des déroulements et peuvent réduire l’agitation lors des transitions (Hodgdon, 1995). Dans l’approche TEACCH, le planning visuel est un élément central de structuration : il montre ce qui se passe, dans quel ordre et quand quelque chose se termine (Mesibov, Shea & Schopler, 2004).",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer avec deux cartes : « D’abord – ensuite » (d’abord ranger, ensuite la récré). Passer plus tard à trois ou quatre cartes.",
+          "schwerer": "C2 : poser le plan à l’horizontale pour toute la journée et ajouter les heures ; l’enfant déplace lui-même les cartes."
+        },
+        "impulse": [
+          "Que faisons-nous maintenant ? Et qu’est-ce qui vient après ?",
+          "Quelle carte est déjà finie ?",
+          "Où est la surprise aujourd’hui ?"
+        ],
+        "tipps": [
+          "Utiliser toujours la même image pour la même activité – aussi à la Maison Relais et à la maison.",
+          "Ne jamais retirer les cartes comme punition : le plan montre ce qui vient, pas ce qu’on mérite."
+        ],
+        "material": "Ciseaux, film de plastification, points de velcro, bandes de carton, enveloppe pour « Fini »"
+      }
     }
   },
   {
@@ -771,6 +1372,63 @@
         ],
         "achtung": "Sucht ein Kind die Ecke sehr häufig oder sehr lange auf, zieht es sich stark zurück oder verletzt es sich selbst, das Gespräch suchen und die zuständige Leitung (Responsable) informieren.",
         "material": "Schere, Laminierfolie, Ring oder Klett; optional Sanduhr"
+      }
+    },
+    "fr": {
+      "titel": "Cartes pour le coin calme",
+      "untertitel": "Qu’est-ce qui m’aide à me calmer ?",
+      "anleitung": "Découper les cartes, les plastifier et les accrocher dans le coin calme ou les enfiler sur un anneau. Montrer et exercer chaque carte dans des moments calmes – alors seulement elle aide aussi en cas d’agitation.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Quelles cartes t’aident ? Choisis-en trois.", "symbole": ["zeigen"] },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "karten": [
+            { "titel": "Pause", "text": "J’ai besoin d’une pause.", "bild": "icon:player-pause" },
+            { "titel": "Respirer profondément", "text": "Très lentement : inspire, expire.", "bild": "motiv:ballon" },
+            { "titel": "Tortue", "text": "Je me recroqueville et je respire.", "bild": "motiv:schildkroete-panzer" },
+            { "titel": "Serrer un coussin", "text": "Serrer fort, puis relâcher.", "bild": "icon:pillow" },
+            { "titel": "Boire de l’eau", "text": "Lentement, gorgée après gorgée.", "bild": "motiv:wasserglas" },
+            { "titel": "Écouter de la musique", "text": "Doucement, avec un casque.", "bild": "icon:headphones" },
+            { "titel": "Dessiner", "text": "Je dessine comment je vais.", "bild": "icon:palette" },
+            { "titel": "Regarder un livre", "text": "Je feuillette tranquillement.", "bild": "icon:book" },
+            { "titel": "S’étirer", "text": "Très grand, puis très petit.", "bild": "icon:stretching" },
+            { "titel": "Compter", "text": "Lentement jusqu’à dix.", "bild": "icon:abacus" },
+            { "titel": "Parler", "text": "Je dis ce qui se passe.", "bild": "figur:lehrerin:ruhig" },
+            { "titel": "C’est reparti", "text": "Je peux reprendre.", "bild": "icon:thumb-up" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent des stratégies d’apaisement, les exercent au calme et les utilisent seuls dans le coin calme. Les cartes « Pause » et « C’est reparti » règlent l’aller et le retour.",
+        "ablauf": [
+          "Aménager le coin calme : endroit visible et tranquille avec coussins, casque, livres, eau – un refuge, pas une punition.",
+          "Cartes (3 × 15 min) : trois à quatre stratégies par séance, essayées ensemble : « Comment ton corps se sent-il ? »",
+          "Exercer le déroulement : « Pause », aller dans le coin, choisir une carte, « C’est reparti », revenir. Jouer la scène une fois.",
+          "Chaque enfant choisit ses trois cartes les plus utiles ; une copie va à sa place.",
+          "Accompagner : rappeler les cartes (« Veux-tu une pause ? »), au retour reconnaître : « Tu t’es aidé toi-même. »"
+        ],
+        "hintergrund": "Les enfants apprennent l’autorégulation pas à pas – d’abord avec le soutien des adultes, puis peu à peu seuls. Respirer lentement, tendre et relâcher les muscles ou détourner l’attention interviennent tôt dans la naissance d’une émotion et réduisent l’excitation (Gross, 1998). La technique de la tortue – se retirer, se calmer, puis chercher une solution – a été testée tôt en classe (Robin, Schneider & Dolnick, 1976) et fait partie de programmes pour jeunes enfants (Webster-Stratton & Reid, 2003). Les cartes-images soulagent dans les moments agités : l’enfant n’a rien à expliquer, il peut montrer.",
+        "quellen": [
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Robin, A., Schneider, M. & Dolnick, M. (1976). The turtle technique: An extended case study of self-control in the classroom. Psychology in the Schools, 13(4), 449–453.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143."
+        ],
+        "differenzierung": {
+          "leichter": "Préscolaire : commencer avec trois cartes (respirer, coussin, parler) et réaliser chacune ensemble.",
+          "schwerer": "C3 : trier les cartes – « un peu agité » ou « très agité » ?"
+        },
+        "impulse": [
+          "Quelle carte t’aide quand tu es en colère ? Et quand tu es triste ?",
+          "À quoi remarques-tu que tu peux reprendre ?",
+          "Qu’est-ce qui pourrait encore aider dans notre coin calme ?"
+        ],
+        "tipps": [
+          "Ne jamais utiliser le coin calme comme punition – sinon les enfants l’évitent quand ils en ont besoin.",
+          "Un sablier (3 à 5 minutes) limite la pause sans presser."
+        ],
+        "achtung": "Si un enfant va très souvent ou très longtemps dans le coin, se retire fortement ou se blesse lui-même : chercher le dialogue et informer la direction compétente (responsable).",
+        "material": "Ciseaux, plastification, anneau ou velcro ; sablier (option)"
       }
     }
   },
@@ -1036,6 +1694,71 @@
         "achtung": "Bei Verletzungen oder Hinweisen auf Gefährdung gilt der interne Krisenablauf: sofort handeln, das Kind nicht allein lassen, Leitung (Responsable) und Eltern informieren.",
         "material": "Papier, Stifte oder Spielfiguren"
       }
+    },
+    "fr": {
+      "titel": "Après une crise : entretien de suivi",
+      "untertitel": "Ne parler que quand tout le monde est de nouveau calme – souvent seulement le lendemain. L’objectif est de comprendre et de réparer, pas d’humilier.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Que s’est-il passé ?",
+          "hinweis": "Relancer : « Qu’as-tu pensé et ressenti à ce moment-là ? » – « Qui d’autre a été concerné ? »"
+        },
+        { "art": "frage", "text": "« Raconte-moi ce qui s’est passé. »", "linien": 2 },
+        { "art": "aufgabe", "text": "Qu’est-ce qui a aidé ?", "hinweis": "Relancer : « Quand aurais-tu encore pu agir autrement ? »" },
+        { "art": "frage", "text": "« Qu’est-ce qui t’a aidé à te calmer ? »", "linien": 2 },
+        {
+          "art": "aufgabe",
+          "text": "De quoi avons-nous besoin ?",
+          "hinweis": "Relancer : « Comment peux-tu réparer ? » – « Que pouvons-nous faire, nous les adultes ? »"
+        },
+        { "art": "frage", "text": "« De quoi as-tu besoin pour que ça se passe autrement la prochaine fois ? »", "linien": 2 },
+        {
+          "art": "aufgabe",
+          "text": "Documentation",
+          "hinweis": "Le jour même, de façon factuelle et sans jugement. Uniquement pour le dossier et l’équipe compétente."
+        },
+        { "art": "satzanfaenge", "items": ["Date, heure, lieu :", "Personnes impliquées :"] },
+        { "art": "frage", "text": "Déroulement du point de vue des adultes (décrire de façon observable) :", "linien": 2 },
+        { "art": "satzanfaenge", "items": ["Mesures immédiates :", "Accords et réparation :"] },
+        {
+          "art": "ankreuzen",
+          "titel": "Informés :",
+          "items": ["Parents", "Direction (responsable)", "Titulaire de classe", "SePAS ou équipe ISA"],
+          "spalten": 2
+        }
+      ],
+      "lehrer": {
+        "ziel": "Après un incident, l’enfant comprend ce qui s’est passé, prend ses responsabilités et trouve avec les adultes un plan pour la prochaine fois. La documentation garantit les accords.",
+        "ablauf": [
+          "Moment : ne parler que quand tout le monde est calme – les adultes aussi ; annoncer : « Demain, nous en parlerons au calme. »",
+          "Entrée en matière (2 min) : endroit calme, s’asseoir côte à côte : « Je voudrais comprendre ce qui s’est passé. »",
+          "Que s’est-il passé ? (5–10 min) : laisser raconter, résumer, nommer les émotions ; pas de questions d’interrogatoire.",
+          "Qu’est-ce qui a aidé ? De quoi avons-nous besoin ? (10 min) : reconnaître la part de l’enfant, convenir d’une réparation et d’un ou deux accords – aussi pour les adultes.",
+          "Documenter le jour même et informer selon la procédure interne."
+        ],
+        "hintergrund": "Lors d’une crise, la pensée est limitée par une forte excitation ; on ne peut parler des causes et des conséquences que lorsque tous se sont calmés. Omer et von Schlippe (2004) parlent de battre le fer quand il est froid : la distance évite une nouvelle escalade et montre que les adultes ne lâchent pas. Raconter et nommer les émotions aide l’enfant à ordonner ce qu’il a vécu (Siegel & Bryson, 2011). Les questions sur les personnes concernées et la réparation viennent de la pratique restaurative, qui place au centre le dommage causé et sa réparation plutôt que la punition (Wachtel, 2016).",
+        "quellen": [
+          "Omer, H. & von Schlippe, A. (2004). Autorität durch Beziehung. Göttingen: Vandenhoeck & Ruprecht.",
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte.",
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices."
+        ],
+        "differenzierung": {
+          "leichter": "Préscolaire, C2 : seulement « Que s’est-il passé ? » et « Qu’est-ce qui aide la prochaine fois ? » ; faire dessiner ou rejouer avec des figurines.",
+          "schwerer": "Au lycée : écrire soi-même le déroulement et proposer une réparation."
+        },
+        "impulse": [
+          "Quand est-ce que ça a basculé ?",
+          "À quoi aurais-tu pu remarquer plus tôt que ça devenait difficile ?",
+          "De quoi as-tu besoin de nous si ça arrive de nouveau ?"
+        ],
+        "tipps": [
+          "Ne pas négocier les conséquences pendant l’entretien, mais les communiquer séparément et factuellement.",
+          "Nommer sa propre part (« J’étais trop fort. ») – cela aide l’enfant à prendre ses responsabilités."
+        ],
+        "achtung": "En cas de blessures ou d’indices de danger, la procédure interne de crise s’applique : agir immédiatement, ne pas laisser l’enfant seul, informer la direction (responsable) et les parents.",
+        "material": "Papier, crayons ou figurines"
+      }
     }
   },
   {
@@ -1170,6 +1893,123 @@
         "achtung": "Mobbing, Gewalt und sehr persönliche Konflikte gehören nicht in den Klassenrat: Betroffene einzeln begleiten und die zuständige Leitung (Responsable) informieren.",
         "material": "Rollenkarten, Anliegen-Liste, Ordner für Protokolle"
       }
+    },
+    "fr": {
+      "titel": "Conseil de classe : compte rendu",
+      "untertitel": "Le conseil de classe se réunit chaque semaine à la même heure. Le compte rendu note ce qui a été décidé – et si c’est appliqué.",
+      "bausteine": [
+        {
+          "art": "spalten",
+          "links": [{ "art": "satzanfaenge", "items": ["Animation :", "Compte rendu :"] }],
+          "rechts": [{ "art": "satzanfaenge", "items": ["Temps :", "Règles :"] }]
+        },
+        { "art": "aufgabe", "text": "Tour positif : qu’est-ce qui s’est bien passé cette semaine ?" },
+        { "art": "linien", "anzahl": 2 },
+        {
+          "art": "aufgabe",
+          "text": "Retour sur les dernières décisions",
+          "hinweis": "A-t-on appliqué ce que nous avons décidé ? Sinon : de quoi avons-nous besoin pour cela ?"
+        },
+        { "art": "tabelle", "spalten": ["Décision", "Appliquée ? oui – en partie – non", "Et maintenant ?"], "breiten": [2, 1.2, 1.6], "zeilen": 2 },
+        {
+          "art": "aufgabe",
+          "text": "Discuter les demandes et décider",
+          "hinweis": "La personne qui a apporté la demande raconte ; les personnes concernées répondent ; tous recueillent des propositions. On vote sur des solutions, jamais sur des personnes."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Demande (de qui ?)", "Propositions", "Décision", "Qui ? Jusqu’à quand ?"],
+          "breiten": [1.3, 1.3, 1.5, 1],
+          "zeilen": 3,
+          "beispiel": [
+            "Au foot, à la récré, il y a une dispute tous les jours. (Diogo)",
+            "équipes fixes ; arbitre ; plan de qui joue",
+            "Chaque jour, deux autres enfants composent les équipes.",
+            "Zoé et Mathis font la liste, dès lundi"
+          ]
+        },
+        { "art": "aufgabe", "text": "Conclusion", "hinweis": "Lire les décisions, répartir les rôles pour le prochain conseil." },
+        { "art": "satzanfaenge", "items": ["Prochaine séance le :", "Prochaine animation et prochain compte rendu :"] },
+        { "art": "seitenumbruch" },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Déroulement d’une séance",
+          "punkte": [
+            "Ouverture : l’animation accueille, nomme les rôles et les demandes du jour.",
+            "Tour positif : qui veut dit ce qui s’est bien passé ou qui il ou elle souhaite remercier.",
+            "Retour : qu’est devenu ce qui avait été décidé ?",
+            "Demandes : raconter, poser des questions, recueillir des solutions, voter, noter.",
+            "Conclusion : lire les décisions, répartir les rôles de la semaine suivante."
+          ]
+        },
+        { "art": "aufgabe", "text": "Cartes de rôles", "hinweis": "Découper et plastifier. Les rôles changent chaque semaine." },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 120,
+          "karten": [
+            { "titel": "Animation", "text": "ouvre, donne la parole, résume, fait voter", "bild": "icon:microphone" },
+            { "titel": "Compte rendu", "text": "note les demandes et les décisions et les lit", "bild": "icon:pencil" },
+            { "titel": "Temps", "text": "surveille le temps et dit quand il reste cinq minutes", "bild": "icon:hourglass" },
+            { "titel": "Règles", "text": "veille aux règles de discussion et les rappelle aimablement", "bild": "icon:hand-stop" }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Nos règles de discussion",
+          "punkte": [
+            "Nous levons la main et attendons notre tour.",
+            "Nous parlons du problème, pas de la personne.",
+            "Nous écoutons et ne nous moquons de personne.",
+            "Ce qui est personnel dans le conseil de classe reste dans la classe."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Liste des demandes de la semaine",
+          "hinweis": "À afficher bien visible dans la classe. Celui ou celle qui a une demande l’inscrit avec son nom."
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Date", "Ma demande", "Nom"],
+          "breiten": [0.8, 3.2, 1],
+          "zeilen": 6,
+          "beispiel": ["Lu, 14.10.", "Au vestiaire, on se bouscule toujours après la récré.", "Leonor"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Le conseil de classe offre un cadre fixe et démocratique pour traiter les demandes, résoudre les conflits et décider. Les enfants assument des rôles et animent eux-mêmes les discussions.",
+        "ablauf": [
+          "Introduction (45 min) : expliquer le sens, convenir des règles de discussion, présenter rôles et liste des demandes.",
+          "Pendant la semaine : inscrire les demandes avec le nom dans la liste ; l’animation les trie avant la séance avec l’adulte.",
+          "Séance (30–45 min) : ouverture, tour positif, retour, demandes, conclusion – toujours dans le même ordre.",
+          "Demandes : laisser raconter, laisser répondre les personnes concernées, recueillir des solutions ; vote sur des solutions, jamais sur des personnes.",
+          "Changer les rôles chaque semaine. L’adulte se retire peu à peu, mais intervient en cas d’humiliation."
+        ],
+        "hintergrund": "Au conseil de classe, les enfants vivent que leurs demandes sont entendues et qu’ils façonnent la vie commune. Cela renforce autodétermination et appartenance – des besoins fondamentaux qui soutiennent motivation et adoption des règles (Deci & Ryan, 2000). Les discussions régulières de classe font aussi partie des programmes scolaires contre le harcèlement (Olweus, 1993). La démarche – nommer le problème, recueillir des solutions, peser les conséquences, décider – exerce la résolution sociale de problèmes (Shure, 1992). Fiabilité et vraies marges de décision sont déterminantes.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
+          "Shure, M. B. (1992). I Can Problem Solve (ICPS). Champaign, IL: Research Press."
+        ],
+        "differenzierung": {
+          "leichter": "C3 : deux rôles (animation, compte rendu), une demande par séance ; l’adulte écrit d’abord avec eux.",
+          "schwerer": "Au lycée : la classe mène seule, l’adulte est invité ; suivi visible des décisions."
+        },
+        "impulse": [
+          "Qu’est-ce qui a changé depuis la dernière décision ?",
+          "Quelle solution est juste pour tous ?",
+          "Que faut-il pour appliquer la décision ?"
+        ],
+        "tipps": [
+          "Clarifier d’avance ce que la classe peut décider et ce qu’elle ne peut pas.",
+          "Régler d’abord en entretien individuel les demandes qui exposeraient une personne."
+        ],
+        "achtung": "Harcèlement, violence, conflits très personnels : pas au conseil de classe. Accompagner chacun individuellement, informer la direction (responsable).",
+        "material": "Cartes de rôles, liste des demandes, classeur pour les comptes rendus"
+      }
     }
   },
   {
@@ -1251,6 +2091,76 @@
           "Die Regeln gelten auch für die Erwachsenen – das macht sie glaubwürdig."
         ],
         "material": "Tafel oder Flipchart, Plakat, Klebepunkte, Kamera oder Tablet für Fotos"
+      }
+    },
+    "fr": {
+      "titel": "Élaborer des règles de groupe",
+      "untertitel": "Des règles élaborées par le groupe sont mieux comprises et respectées : peu nombreuses, positives, visibles et régulièrement revues.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "De l’interdiction à la règle",
+          "hinweis": "Reformuler positivement les idées recueillies : que faisons-nous à la place – et pourquoi ?"
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Idée ou interdiction", "Notre règle (positive)", "Pourquoi est-elle importante ?"],
+          "breiten": [1, 1.4, 1.4],
+          "zeilen": 4,
+          "beispiel": ["« Ne pas crier. »", "Nous parlons doucement quand d’autres travaillent.", "Pour que tout le monde puisse se concentrer."]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Choisir les règles et les rendre visibles",
+          "hinweis": "Choisir ensemble trois à cinq règles, par exemple avec des gommettes."
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Pour une bonne affiche des règles",
+          "punkte": [
+            "Chaque règle en une phrase courte qui dit ce que nous faisons.",
+            "Pour chaque règle, une photo où des enfants la montrent.",
+            "L’accrocher à hauteur des enfants, là où la règle s’applique.",
+            "Exercer chaque règle une fois en jeu de rôle."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Revoir les règles",
+          "hinweis": "Une fois par semaine, évaluer ensemble comment chaque règle a marché et dessiner un visage."
+        },
+        { "art": "plan", "zeilen": ["", "", "", ""], "tage": ["Semaine 1", "Semaine 2", "Semaine 3", "Semaine 4"], "symbol": "gesicht" }
+      ],
+      "lehrer": {
+        "ziel": "Le groupe élabore peu de règles formulées positivement, comprend leur sens, les rend visibles et les revoit régulièrement. Les règles deviennent ainsi un accord commun plutôt qu’une consigne venue de l’extérieur.",
+        "ablauf": [
+          "Recueillir (10 min) : « De quoi avons-nous besoin pour que tout le monde se sente bien ici et puisse bien apprendre ? » Noter les réponses au tableau sans jugement.",
+          "Reformuler (15 min) : formuler chaque idée positivement (« Que faisons-nous à la place ? ») et la justifier ensemble.",
+          "Choisir (10 min) : regrouper ce qui est semblable ; chaque enfant donne deux gommettes aux règles les plus importantes.",
+          "Rendre visible (2e séance) : créer l’affiche des règles avec photos ; exercer chaque règle une fois en jeu de rôle.",
+          "Revoir : bref bilan chaque semaine ; après quatre semaines, décider ensemble si une règle est adaptée."
+        ],
+        "hintergrund": "Peu de règles clairement formulées, introduites tôt, justifiées et régulièrement discutées, comptent parmi les mesures préventives les plus efficaces de la gestion de classe (Nolting, 2002). Les règles formulées positivement décrivent le comportement souhaité ; on peut le montrer, l’exercer et le reconnaître, alors qu’une interdiction laisse ouvert ce qui vaut à la place. Quand les enfants participent à leur élaboration et comprennent le sens d’une règle, ils l’adoptent plus volontiers par conviction que par peur des conséquences (Deci & Ryan, 2000). Des règles de classe convenues ensemble contre l’exclusion sont en outre un élément central de la prévention du harcèlement (Olweus, 1993).",
+        "quellen": [
+          "Nolting, H.-P. (2002). Störungen in der Schulklasse. Weinheim: Beltz.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell."
+        ],
+        "differenzierung": {
+          "leichter": "C2 : seulement trois règles, chacune avec une photo et un geste (par exemple la main à l’oreille pour « écouter »).",
+          "schwerer": "C4 : convenir en plus de la façon dont on peut réparer quand une règle a été enfreinte."
+        },
+        "impulse": [
+          "À quoi voit-on que quelqu’un respecte cette règle ?",
+          "À qui cette règle aide-t-elle – et comment ?",
+          "Quelle règle a le mieux marché cette semaine ? À quoi cela tenait-il ?"
+        ],
+        "tipps": [
+          "Parler des règles surtout quand elles sont respectées : « Vous vous êtes écoutés. »",
+          "Les règles valent aussi pour les adultes – cela les rend crédibles."
+        ],
+        "material": "Tableau ou paperboard, affiche, gommettes, appareil photo ou tablette pour les photos"
       }
     }
   }

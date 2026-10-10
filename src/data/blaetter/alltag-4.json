@@ -1,0 +1,803 @@
+[
+  {
+    "id": "t3-stress-fass",
+    "bereich": "alltag",
+    "thema": "wohlbefinden",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "K-29",
+      "V-25",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Stress",
+      "Stress-Fass",
+      "Belastung und Entlastung",
+      "Warnzeichen",
+      "Psychoedukation"
+    ],
+    "bild": "icon:bucket",
+    "verwandt": [
+      "balance-finden",
+      "stress-werkzeugkoffer",
+      "t3-schlaf-bildschirm"
+    ],
+    "de": {
+      "titel": "Das Stress-Fass",
+      "untertitel": "Stress ist wie Wasser in einem Fass: Was zufließt, füllt es. Was abfließt, entlastet.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Was Stress ist",
+          "punkte": [
+            "Stress ist eine Alarmreaktion: Herz, Atem und Muskeln machen dich bereit.",
+            "Kurz hilft das, zum Beispiel vor einem Vortrag. Hält der Alarm lange an, wird es zu viel.",
+            "Jede Person hat ein anderes Fass. Wie schnell es voll ist, sagt nichts über Stärke oder Schwäche."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was füllt dein Fass? Mal in jedem Glas aus, wie viel Wasser gerade zufließt.",
+          "hinweis": "Zieh zuerst den Strich: Ab hier wird es dir zu viel.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "spalten": 6,
+          "items": [
+            "Schule",
+            "Zuhause",
+            "Freunde",
+            "Handy & Chats",
+            "Termine",
+            "Erwartungen"
+          ],
+          "legende": [
+            "Strich: ab hier wird es zu viel",
+            "Ausmalen: so viel fließt gerade zu"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was lässt Wasser ab? Mal aus, wie viel Entlastung du gerade hast.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "spalten": 6,
+          "items": [
+            "Schlaf",
+            "Bewegung",
+            "Freunde",
+            "Ruhe",
+            "Hobby",
+            "Reden"
+          ],
+          "legende": [
+            "Strich: so viel brauche ich",
+            "Ausmalen: so viel habe ich gerade"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie voll ist dein Fass insgesamt?",
+          "von": "fast leer",
+          "bis": "läuft über",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo hast du Spielraum? Schau auf deine Gläser.",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Diesen Zufluss könnte ich verkleinern: …",
+            "Dieser Abfluss fehlt mir am meisten: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du, dass dein Fass voll wird? Mal die Stellen im Körper an und kreuze an.",
+          "hinweis": "Das bleibt bei dir.",
+          "symbole": [
+            "malen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            {
+              "farbe": "rot",
+              "text": "Hier spüre ich Stress stark"
+            },
+            {
+              "farbe": "gelb",
+              "text": "Hier ein bisschen"
+            },
+            {
+              "farbe": "blau",
+              "text": "Hier bin ich meistens ruhig"
+            }
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Ich bin schnell gereizt",
+            "Ich schlafe schlecht",
+            "Ich ziehe mich zurück",
+            "Ich kann mich schlecht konzentrieren",
+            "Ich esse viel mehr oder weniger",
+            "Ich denke: Ich schaffe das nicht"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welchen Hahn drehst du diese Woche auf? Plane einen kleinen Abfluss.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich von der Schule komme,",
+              "dann": "gehe ich 15 Minuten raus, bevor ich die Hausaufgaben anfange."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Ein volles Fass ist kein Versagen.",
+          "text": "Bleibt es lange voll und nichts hilft, sprich mit einer erwachsenen Person, der du vertraust."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen Stress als Verhältnis von Belastung und Entlastung, erkennen eigene Zuflüsse, Abflüsse und Warnzeichen und planen einen kleinen Abfluss.",
+        "ablauf": [
+          "Einstieg (5 Min.): Fass an die Tafel zeichnen. „Was passiert, wenn mehr zufließt als abfließt?“ Info-Kasten lesen.",
+          "Aufgabe 1 und 2 (10 Min.): ausmalen, ruhige Musik. Den Strich (persönliche Grenze) zuerst ziehen.",
+          "Skala, Aufgabe 3 und 4 (12 Min.): Fass insgesamt einschätzen, Spielraum finden, Körper anmalen, Warnzeichen ankreuzen.",
+          "Aufgabe 5 (8 Min.): ein kleiner Abfluss als Wenn-dann-Plan, zu zweit gegenlesen.",
+          "Auswertung freiwillig (5 Min.): „Welches Glas hat dich überrascht?“ Eine Woche später nachfragen."
+        ],
+        "hintergrund": "Das Stress-Fass veranschaulicht das transaktionale Stressmodell: Stress entsteht, wenn Anforderungen die eigenen Möglichkeiten zu übersteigen scheinen (Lazarus & Folkman, 1984). Das Bild trennt Belastungen (Zuflüsse) von Entlastungen (Abflüsse) und macht Warnzeichen sichtbar; es ist Psychoedukation, keine Behandlung. Zu den Abflüssen zählen Schlaf, Bewegung, Unterstützung und Ruhe; in der dialektisch-behavioralen Therapie für Jugendliche gelten Schlaf und Bewegung als Schutz vor emotionaler Verletzlichkeit (Rathus & Miller, 2015).",
+        "quellen": [
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 3; Gläser und Körper mündlich besprechen.",
+          "schwerer": "Für jedes volle Glas einen Abfluss planen."
+        },
+        "impulse": [
+          "Welcher Zufluss lässt sich verkleinern, welcher nicht?",
+          "Welcher Abfluss hilft dir am schnellsten?"
+        ],
+        "tipps": [
+          "Gruppe: Gläser nicht vergleichen; gemeinsam Abflüsse sammeln.",
+          "Einzelstunde: Gläser gemeinsam ausmalen, nach dem größten Zufluss fragen."
+        ],
+        "achtung": "Bleibt das Fass lange voll (Schlafprobleme, Bauchschmerzen, Rückzug, Schulvermeidung): Einzelgespräch, Responsable bzw. SePAS informieren. Familiäre Belastungen nicht im Plenum vertiefen.",
+        "material": "Buntstifte"
+      }
+    },
+    "fr": {
+      "titel": "Le tonneau du stress",
+      "untertitel": "Le stress, c’est comme l’eau dans un tonneau : ce qui entre le remplit, ce qui s’écoule le soulage.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Ce qu’est le stress",
+          "punkte": [
+            "Le stress est une réaction d’alarme : cœur, respiration et muscles te préparent.",
+            "À court terme, c’est utile, par exemple avant un exposé. Si l’alarme dure, c’est trop.",
+            "Chaque personne a un tonneau différent. La vitesse à laquelle il se remplit ne dit rien de ta force ou de ta faiblesse."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui remplit ton tonneau ? Colorie dans chaque verre combien d’eau arrive.",
+          "hinweis": "Trace d’abord le trait : à partir de là, c’est trop.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "spalten": 6,
+          "items": [
+            "École",
+            "Maison",
+            "Amis",
+            "Smartphone",
+            "Agenda",
+            "Attentes"
+          ],
+          "legende": [
+            "Trait : à partir de là, c’est trop",
+            "Colorier : ce qui arrive en ce moment"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui vide ton tonneau ? Colorie combien de soulagement tu as en ce moment.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "glaeser",
+          "spalten": 6,
+          "items": [
+            "Sommeil",
+            "Mouvement",
+            "Amis",
+            "Calme",
+            "Loisirs",
+            "En parler"
+          ],
+          "legende": [
+            "Trait : ce dont j’ai besoin",
+            "Colorier : ce que j’ai en ce moment"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "À quel point ton tonneau est-il plein ?",
+          "von": "presque vide",
+          "bis": "déborde",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où as-tu de la marge ? Regarde tes verres.",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Cet apport, je pourrais le réduire : …",
+            "Cette évacuation me manque le plus : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi remarques-tu que ton tonneau se remplit ? Colorie les endroits du corps et coche.",
+          "hinweis": "Cela reste pour toi.",
+          "symbole": [
+            "malen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            {
+              "farbe": "rot",
+              "text": "Ici, je sens fortement le stress"
+            },
+            {
+              "farbe": "gelb",
+              "text": "Ici, un peu"
+            },
+            {
+              "farbe": "blau",
+              "text": "Ici, je suis plutôt calme"
+            }
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Je m’énerve vite",
+            "Je dors mal",
+            "Je me replie sur moi",
+            "J’ai du mal à me concentrer",
+            "Je mange beaucoup plus ou moins",
+            "Je pense : je n’y arriverai pas"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel robinet ouvres-tu cette semaine ? Prépare une petite évacuation.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Quand je rentre de l’école,",
+              "dann": "je sors 15 minutes avant de commencer les devoirs."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Un tonneau plein n’est pas un échec.",
+          "text": "S’il reste plein longtemps et que rien n’aide, parle à un adulte de confiance."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent le stress comme un rapport entre charge et soulagement, repèrent leurs apports, leurs évacuations et leurs signaux d’alerte et préparent une petite évacuation.",
+        "ablauf": [
+          "Entrée en matière (5 min) : dessiner un tonneau au tableau. « Que se passe-t-il s’il entre plus d’eau qu’il n’en sort ? » Lire l’encadré.",
+          "Exercices 1 et 2 (10 min) : colorier, musique calme. Tracer d’abord le trait (limite personnelle).",
+          "Échelle, exercices 3 et 4 (12 min) : évaluer le tonneau, trouver de la marge, colorier la silhouette, cocher les signaux d’alerte.",
+          "Exercice 5 (8 min) : une petite évacuation sous forme de plan si-alors, relire à deux.",
+          "Bilan facultatif (5 min) : « Quel verre t’a surpris ? » Reprendre une semaine plus tard."
+        ],
+        "hintergrund": "Le tonneau du stress illustre le modèle transactionnel du stress : le stress naît quand les exigences semblent dépasser les ressources (Lazarus & Folkman, 1984). L’image sépare les charges (apports) des soulagements (évacuations) et rend les signaux d’alerte visibles ; c’est de la psychoéducation, pas un traitement. Sommeil, mouvement, soutien et calme comptent parmi les évacuations ; en thérapie comportementale dialectique pour adolescents, sommeil et mouvement protègent de la vulnérabilité émotionnelle (Rathus & Miller, 2015).",
+        "quellen": [
+          "Lazarus, R. S. & Folkman, S. (1984). Stress, Appraisal, and Coping. New York: Springer.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Exercices 1 et 3 seulement ; parler des verres à l’oral.",
+          "schwerer": "Prévoir une évacuation pour chaque verre plein."
+        },
+        "impulse": [
+          "Quel apport peut diminuer, lequel non ?",
+          "Quelle évacuation t’aide le plus vite ?"
+        ],
+        "tipps": [
+          "Groupe : ne pas comparer les verres ; rassembler ensemble des évacuations.",
+          "Séance individuelle : colorier les verres ensemble, demander quel apport est le plus gros."
+        ],
+        "achtung": "Si le tonneau reste plein longtemps (troubles du sommeil, maux de ventre, repli, évitement scolaire) : entretien individuel, informer le responsable ou le SePAS. Ne pas approfondir les charges familiales devant le groupe.",
+        "material": "Crayons de couleur"
+      }
+    }
+  },
+  {
+    "id": "t3-schlaf-bildschirm",
+    "bereich": "alltag",
+    "thema": "tagesablauf",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–40 Min. + 1 Woche",
+    "eldib": [
+      "V-29",
+      "V-32",
+      "V-22"
+    ],
+    "schlagworte": [
+      "Schlaf",
+      "Bildschirm",
+      "Handy am Abend",
+      "Selbstbeobachtung",
+      "Psychoedukation"
+    ],
+    "bild": "icon:moon-stars",
+    "verwandt": [
+      "schlaf-check",
+      "gut-schlafen",
+      "mein-handy-und-ich",
+      "t3-stress-fass"
+    ],
+    "de": {
+      "titel": "Schlaf und Bildschirm: mein Check",
+      "untertitel": "Ohne richtig oder falsch: Du schaust hin und probierst, wenn du magst, eine kleine Sache aus.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Gut zu wissen",
+          "punkte": [
+            "Die meisten Jugendlichen brauchen 8 bis 10 Stunden Schlaf.",
+            "In der Pubertät verschiebt sich die innere Uhr: Abends wirst du später müde, morgens ist es früh.",
+            "Chats, Videos und Spiele am Abend können das Einschlafen verzögern."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "So ist es gerade bei mir. Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stimmt",
+            "teils",
+            "stimmt nicht"
+          ],
+          "items": [
+            "Ich schlafe schnell ein.",
+            "Morgens komme ich gut aus dem Bett.",
+            "Mein Handy liegt nachts neben mir.",
+            "Kurz vor dem Einschlafen schaue ich noch auf einen Bildschirm.",
+            "Am Wochenende schlafe ich viel länger.",
+            "Nachts weckt mich mein Handy."
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie ausgeschlafen fühlst du dich meistens?",
+          "von": "gar nicht",
+          "bis": "sehr",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Meine letzte Stunde vor dem Einschlafen: Was machst du meistens?",
+          "hinweis": "Kreuze alles an, was passt.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Serie oder Videos schauen",
+            "Chatten oder scrollen",
+            "Spielen",
+            "Musik oder Podcast hören",
+            "Lesen",
+            "Mit jemandem reden",
+            "Duschen, Zähne putzen",
+            "Hausaufgaben oder Lernen"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schlaf-Balken: Male jeden Morgen, wie viele Stunden du geschlafen hast.",
+          "hinweis": "Schätze ungefähr. Es geht nur ums Hinschauen.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "diagramm",
+          "kategorien": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "max": 12,
+          "schritt": 2,
+          "fein": 1,
+          "achsen": [
+            "Tag",
+            "Stunden Schlaf"
+          ],
+          "linie": {
+            "wert": 9,
+            "text": "Viele Jugendliche brauchen 8 bis 10 Stunden"
+          },
+          "hoehe": 160
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ein kleiner Versuch, nur wenn du magst: Kreuze einen an und schreib ihn als Ziel auf.",
+          "hinweis": "Auch „Ich beobachte nur“ ist eine gute Wahl.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "frei": 1,
+          "items": [
+            "Das Handy nachts außerhalb des Betts laden",
+            "Die letzte halbe Stunde ohne Bildschirm",
+            "Benachrichtigungen ab 21 Uhr ausschalten",
+            "Jeden Abend ungefähr zur gleichen Zeit ins Bett",
+            "Vor dem Licht-aus aufschreiben, was noch offen ist",
+            "Ich ändere nichts und beobachte nur"
+          ]
+        },
+        {
+          "art": "plan",
+          "ziel": "",
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "zeilen": [
+            "Versuch gemacht",
+            "Morgens ausgeschlafen"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Nach einer Woche: Was ist dir aufgefallen?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Aufgefallen ist mir: …",
+            "Ich mache weiter mit: …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen beobachten Schlaf und Abend am Bildschirm ohne Bewertung und wählen, wenn sie möchten, einen kleinen Versuch für eine Woche.",
+        "ablauf": [
+          "Einstieg (4 Min.): „Wie viele Stunden habt ihr ungefähr geschlafen?“ Zahlen anonym sammeln, an der Tafel zeigen.",
+          "Info-Kasten (3 Min.), Aufgabe 1 und 2 einzeln (8 Min.). Keine Auswertung im Plenum.",
+          "Aufgabe 3: Balken in der folgenden Woche jeden Morgen ausmalen; Vorlage an der Tafel zeigen.",
+          "Aufgabe 4 (8 Min.): einen Versuch wählen oder „nur beobachten“. Beides ist richtig.",
+          "Nach einer Woche (10 Min.): Aufgabe 5, „Was ist dir aufgefallen?“"
+        ],
+        "hintergrund": "Jugendliche brauchen regelmäßig 8 bis 10 Stunden Schlaf (Paruthi et al., 2016). In der Pubertät verschiebt sich der Schlaf-wach-Rhythmus nach hinten, während der Unterricht früh beginnt (Carskadon, 2011); Bildschirmnutzung am Abend hängt mit späterem Einschlafen und kürzerem Schlaf zusammen (Hale & Guan, 2015). Das Blatt ist Psychoedukation und bewertet nicht: Es setzt auf Selbstbeobachtung und selbst gewählte kleine Schritte statt auf Verbote. Offene Aufgaben vor dem Schlafen aufzuschreiben, kann das Einschlafen erleichtern (Scullin et al., 2018).",
+        "quellen": [
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
+          "Hale, L. & Guan, S. (2015). Screen time and sleep among school-aged children and adolescents: A systematic literature review. Sleep Medicine Reviews, 21, 50–58.",
+          "Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgaben 1 und 4 mündlich; Balken nur an drei Tagen.",
+          "schwerer": "Zwei Wochen Balken; Schultage und Wochenende vergleichen."
+        },
+        "impulse": [
+          "Was ist das Letzte, was du abends am Handy machst?",
+          "Was hilft dir, zur Ruhe zu kommen?"
+        ],
+        "tipps": [
+          "Gruppe: nicht moralisieren; Zahlen anonym sammeln, jede Person wählt selbst.",
+          "Einzelstunde: den Abend als Ablauf aufzeichnen, fragen, was schon gut klappt."
+        ],
+        "achtung": "Anhaltende Einschlafprobleme, nächtliches Grübeln oder Rückzug: Einzelgespräch, Responsable bzw. SePAS informieren, ärztliche Abklärung empfehlen.",
+        "material": "Buntstifte"
+      }
+    },
+    "fr": {
+      "titel": "Sommeil et écrans : mon bilan",
+      "untertitel": "Sans bien ni mal : tu regardes et, si tu veux, tu essaies une petite chose.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Bon à savoir",
+          "punkte": [
+            "La plupart des jeunes ont besoin de 8 à 10 heures de sommeil.",
+            "À la puberté, l’horloge interne se décale : le soir, la fatigue vient plus tard, le matin arrive tôt.",
+            "Chats, vidéos et jeux le soir peuvent retarder l’endormissement."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Voilà où j’en suis. Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vrai",
+            "en partie",
+            "faux"
+          ],
+          "items": [
+            "Je m’endors vite.",
+            "Le matin, je me lève facilement.",
+            "La nuit, mon téléphone est à côté de moi.",
+            "Juste avant de dormir, je regarde encore un écran.",
+            "Le week-end, je dors beaucoup plus longtemps.",
+            "La nuit, mon téléphone me réveille."
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "À quel point te sens-tu reposé·e en général ?",
+          "von": "pas du tout",
+          "bis": "tout à fait",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ma dernière heure avant de dormir : que fais-tu le plus souvent ?",
+          "hinweis": "Coche tout ce qui convient.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "Regarder une série ou des vidéos",
+            "Chatter ou scroller",
+            "Jouer",
+            "Écouter de la musique ou un podcast",
+            "Lire",
+            "Parler avec quelqu’un",
+            "Me doucher, me brosser les dents",
+            "Faire mes devoirs ou réviser"
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Barres de sommeil : colorie chaque matin combien d’heures tu as dormi.",
+          "hinweis": "Estime à peu près. Il s’agit seulement de regarder.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "diagramm",
+          "kategorien": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "max": 12,
+          "schritt": 2,
+          "fein": 1,
+          "achsen": [
+            "Jour",
+            "Heures de sommeil"
+          ],
+          "linie": {
+            "wert": 9,
+            "text": "Beaucoup de jeunes ont besoin de 8 à 10 heures"
+          },
+          "hoehe": 160
+        },
+        {
+          "art": "aufgabe",
+          "text": "Un petit essai, seulement si tu veux : coches-en un et écris-le comme objectif.",
+          "hinweis": "« Je ne fais qu’observer » est aussi un bon choix.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "frei": 1,
+          "items": [
+            "Charger le téléphone hors du lit la nuit",
+            "La dernière demi-heure sans écran",
+            "Couper les notifications à partir de 21 h",
+            "Me coucher chaque soir à peu près à la même heure",
+            "Noter ce qui reste à faire avant d’éteindre la lumière",
+            "Je ne change rien et j’observe seulement"
+          ]
+        },
+        {
+          "art": "plan",
+          "ziel": "",
+          "tage": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "zeilen": [
+            "Essai fait",
+            "Reposé le matin"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Après une semaine : qu’as-tu remarqué ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "J’ai remarqué : …",
+            "Je continue avec : …"
+          ],
+          "linien": 1
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes observent leur sommeil et leur soirée devant les écrans sans jugement et choisissent, s’ils le souhaitent, un petit essai pour une semaine.",
+        "ablauf": [
+          "Entrée en matière (4 min) : « Combien d’heures as-tu dormi cette nuit, à peu près ? » Anonymement sur des papiers, répartition au tableau.",
+          "Encadré (3 min), exercices 1 et 2 individuellement (8 min). Pas de bilan en plénière.",
+          "Exercice 3 : colorier la barre chaque matin la semaine suivante ; montrer le modèle au tableau.",
+          "Exercice 4 (8 min) : choisir un essai ou « observer seulement ». Les deux sont justes.",
+          "Après une semaine (10 min) : exercice 5, « Qu’as-tu remarqué ? »"
+        ],
+        "hintergrund": "Les adolescents ont régulièrement besoin de 8 à 10 heures de sommeil (Paruthi et al., 2016). À la puberté, le rythme veille-sommeil se décale vers le soir alors que les cours commencent tôt (Carskadon, 2011) ; l’usage des écrans le soir va de pair avec un endormissement plus tardif et un sommeil plus court (Hale & Guan, 2015). La fiche relève de la psychoéducation et ne juge pas : elle mise sur l’auto-observation et sur de petits pas choisis plutôt que sur des interdits. Noter les tâches en suspens avant de dormir peut faciliter l’endormissement (Scullin et al., 2018).",
+        "quellen": [
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Carskadon, M. A. (2011). Sleep in adolescents: The perfect storm. Pediatric Clinics of North America, 58(3), 637–647.",
+          "Hale, L. & Guan, S. (2015). Screen time and sleep among school-aged children and adolescents: A systematic literature review. Sleep Medicine Reviews, 21, 50–58.",
+          "Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146."
+        ],
+        "differenzierung": {
+          "leichter": "Exercices 1 et 4 à l’oral ; barres sur trois jours seulement.",
+          "schwerer": "Deux semaines de barres ; comparer jours d’école et week-end."
+        },
+        "impulse": [
+          "Quelle est la dernière chose que tu fais le soir sur ton téléphone ?",
+          "Qu’est-ce qui t’aide à te calmer ?"
+        ],
+        "tipps": [
+          "Groupe : ne pas faire la morale ; recueillir les chiffres anonymement, chacun choisit.",
+          "Séance individuelle : dessiner la soirée comme un déroulement, demander ce qui marche déjà."
+        ],
+        "achtung": "Difficultés d’endormissement persistantes, ruminations nocturnes ou repli : entretien individuel, informer le responsable ou le SePAS, conseiller un avis médical.",
+        "material": "Crayons de couleur"
+      }
+    }
+  }
+]

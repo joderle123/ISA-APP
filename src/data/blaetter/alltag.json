@@ -148,6 +148,82 @@
         "achtung": "Sorgen nicht im Plenum vertiefen. Wirkt ein Kind nach einigen Wochen noch sehr zurückgezogen oder ängstlich: Gespräch mit den Eltern suchen, zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte"
       }
+    },
+    "fr": {
+      "titel": "Nouvelle classe, nouveaux copains",
+      "untertitel": "Au début, tout est nouveau. C’est excitant pour presque tous.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Qu’est-ce qui te fait plaisir ? Qu’est-ce qui t’inquiète ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "ankreuzen",
+              "titel": "J’ai hâte …",
+              "items": ["de rencontrer d’autres enfants.", "de jouer à de nouveaux jeux.", "de voir ma nouvelle classe."],
+              "frei": 1
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "titel": "Je m’inquiète …",
+              "items": ["de ne connaître personne.", "que personne ne joue avec moi.", "de me perdre."],
+              "frei": 1
+            }
+          ]
+        },
+        { "art": "aufgabe", "text": "Voici comment tu te présentes. Dessine et écris.", "symbole": ["malen", "schreiben"] },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [{ "art": "feld", "label": "C’est moi.", "hoehe": 3.5, "zeichnen": true }],
+          "rechts": [{ "art": "satzanfaenge", "items": ["Je m’appelle …", "J’aime jouer …", "Je sais bien …"] }]
+        },
+        { "art": "aufgabe", "text": "Que répond la fille ? Écris dans la bulle.", "symbole": ["lesen", "schreiben"] },
+        {
+          "art": "comic",
+          "spalten": 2,
+          "felder": [
+            {
+              "figuren": ["figur:sami:ruhig:winken", "figur:lea:neutral"],
+              "requisit": "icon:ball-football",
+              "text": "Salut, je m’appelle Yusuf. Je peux jouer avec vous ?",
+              "sprecher": 0
+            },
+            { "figuren": ["figur:sami:ruhig", "figur:lea:ruhig"], "requisit": "icon:ball-football", "sprecher": 1 }
+          ]
+        },
+        { "art": "aufgabe", "text": "À qui parles-tu demain ? Que demandes-tu ?", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Demain, je demande à …"] }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants disent ce qui leur fait plaisir dans la nouvelle classe et ce qui les inquiète. Ils s’exercent à se présenter et à adresser la parole à un autre enfant.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Qui a déjà été nouveau quelque part ? » Recueillir sans juger.",
+          "Exercice 1 en individuel, puis échange volontaire sur ce qui fait plaisir. Inquiétudes : seulement si un enfant en parle.",
+          "Exercice 2 : se présenter à deux, puis en cercle : « Voici Mila. Elle aime jouer à … »",
+          "Exercice 3 : lire la bande dessinée, recueillir les réponses, jouer « Je peux jouer avec vous ? » – y compris un non poli.",
+          "L’exercice 4 est la résolution pour demain. Le lendemain : « Ça a marché ? Avec qui as-tu joué ? »"
+        ],
+        "hintergrund": "Une nouvelle classe soulève surtout des questions sociales : vais-je trouver ma place ? Qui jouera avec moi ? Des relations solides avec des pairs et des adultes comptent parmi les principaux facteurs de protection dans le développement (Masten, 2014). Entrer en contact s’apprend : les programmes de soutien socio-émotionnel exercent des habiletés d’amitié, comme se présenter ou demander à jouer, avec des marionnettes et en jeu de rôle (Webster-Stratton & Reid, 2003). Les programmes scolaires de ce type améliorent de façon démontrée les compétences sociales, les attitudes et le comportement (Durlak et al., 2011). Les inquiétudes du début sont normales et diminuent avec des moyens d’agir concrets.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Webster-Stratton, C. & Reid, M. J. (2003). Treating conduct problems and strengthening social and emotional competence in young children: The Dina Dinosaur treatment program. Journal of Emotional and Behavioral Disorders, 11(3), 130–143.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Exercice 2 : seulement dessiner et se présenter à l’oral. Lire les débuts de phrases à voix haute.",
+          "schwerer": "Chercher d’autres phrases pour aborder quelqu’un et les écrire."
+        },
+        "impulse": ["Qu’est-ce qui te fait le plus plaisir ?", "Que peux-tu dire quand tu veux jouer avec les autres ?", "Que fais-tu si quelqu’un dit non ?"],
+        "tipps": [
+          "Confier chaque nouvel arrivant à un parrain ou une marraine de la classe pour les premiers jours.",
+          "Répéter chaque jour des jeux de prénoms la première semaine : quand on connaît les prénoms, on adresse plus facilement la parole."
+        ],
+        "achtung": "Ne pas approfondir les inquiétudes en grand groupe. Si un enfant reste très replié ou anxieux après quelques semaines : chercher le dialogue avec les parents, informer la direction compétente (responsable).",
+        "material": "Crayons de couleur"
+      }
     }
   },
   {
@@ -240,6 +316,108 @@
         ],
         "achtung": "Umzüge haben manchmal belastende Gründe (Trennung, Verlust, Flucht). Nicht im Plenum nachfragen; Einzelgespräch anbieten, bei Bedarf die Leitung (Responsable) informieren.",
         "material": "Optional: Fotos der neuen Schule"
+      }
+    },
+    "fr": {
+      "titel": "Changer d’école",
+      "untertitel": "Déménagement ou passage au lycée : dans une nouvelle école, beaucoup de choses sont nouvelles. Mais pas tout.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Après les vacances d’été",
+          "text": "Diogo déménage avec sa famille d’Esch-sur-Alzette à Ettelbruck. Après les vacances, il entre dans une nouvelle école. Il a hâte de découvrir la grande cour de récréation. Mais le soir, dans son lit, il se dit : et si je me perdais ? Et si personne ne jouait avec moi ? Sa grand-mère lui répond : « Ton humour, tu l’emportes avec toi. Et ton ballon de foot aussi. »",
+          "bild": "figur:noah:besorgt"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Avant de changer d’école, presque tous les enfants sont nerveux. C’est normal. Ça va souvent mieux quand tu en sais plus sur la nouvelle école et que tu as un plan."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui reste ? Qu’est-ce qui change ? Qu’est-ce qui te réjouit ?",
+          "hinweis": "Pense aux personnes, aux trajets, aux objets, aux loisirs – et à toi-même.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Ça reste", "Ça devient nouveau", "Ce qui me fait plaisir"],
+          "zeilen": 4,
+          "beispiel": ["ma famille, mon club de foot", "le trajet en bus, mon enseignante", "la grande cour de récréation"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que voudrais-tu savoir sur la nouvelle école ? Coche et complète.",
+          "hinweis": "Pose tes questions lors de la journée d’accueil, à ton enseignant ou ton enseignante ou à tes parents.",
+          "symbole": ["ankreuzen", "schreiben"]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Comment je vais à l’école ?",
+            "Qui sera mon enseignant·e ?",
+            "Quels sont les horaires ?",
+            "Où est-ce que je mange à midi ?",
+            "Quelles règles y a-t-il là-bas ?",
+            "Qu’est-ce que je dois apporter ?"
+          ],
+          "frei": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que fais-tu quand c’est difficile pendant les premiers jours ? Écris des plans « si … alors ».",
+          "hinweis": "Un plan pour un moment difficile aide à agir au bon moment.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            { "wenn": "Si je ne trouve pas ma salle de classe,", "dann": "je demande à un enfant de ma classe ou à un adulte de l’école." },
+            { "wenn": "Si je n’ai personne avec qui jouer à la récréation,", "dann": "je vais vers un groupe et je demande : « Vous jouez à quoi ? »" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Qui t’aide pour ce changement ? Écris des noms.", "symbole": ["schreiben"] },
+        { "art": "hand", "finger": ["À la maison", "De mon ancienne école", "Dans la nouvelle classe", "Un adulte à l’école", "Quelqu’un d’autre"] },
+        {
+          "art": "skala",
+          "frage": "À quel point te sens-tu en confiance pour ce changement ?",
+          "von": "pas encore du tout",
+          "bis": "très en confiance",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants préparent un changement d’école : ce qui reste, ce qui change, leurs questions, un plan pour les moments difficiles et les personnes qui les aident.",
+        "ablauf": [
+          "Lire l’histoire (5 min). Questions : « Qu’est-ce qui fait plaisir à Diogo ? Qu’est-ce qui l’inquiète ? Qu’est-ce qui l’aide ? »",
+          "Exercice 1 en individuel, puis à deux. Souligner : amitiés, loisirs et points forts déménagent aussi.",
+          "Exercice 2 : recueillir les questions et clarifier qui peut y répondre (p. ex. la journée d’accueil).",
+          "Exercice 3 : écrire des plans « si … alors », en jouer un en jeu de rôle.",
+          "Exercice 4 et échelle en individuel. Donner la feuille à emporter pour les premiers jours."
+        ],
+        "hintergrund": "Un changement d’école est une transition normale, mais il demande beaucoup d’adaptation d’un coup : nouveaux trajets, règles, personnes. C’est surtout l’incertitude qui pèse. On gère mieux les changements quand ils paraissent compréhensibles, gérables et porteurs de sens (Antonovsky, 1987). Les exercices partent de là : se renseigner, faire des plans concrets, nommer ce qui fait plaisir. Les plans « si … alors » relient une situation difficile attendue à une action (Gollwitzer, 1999). Des relations de soutien comptent parmi les principaux facteurs de protection (Masten, 2014).",
+        "quellen": [
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Remplir le tableau à l’oral, cocher seulement les questions, formuler un plan ensemble.",
+          "schwerer": "Écrire une lettre à soi-même, à ouvrir le premier jour d’école."
+        },
+        "impulse": [
+          "Qu’emportes-tu de ton ancienne école ?",
+          "Qui pourrait te montrer le chemin le premier jour ?",
+          "Qu’est-ce qui t’aidait avant, quand quelque chose était nouveau ?"
+        ],
+        "tipps": [
+          "Si possible, regarder ensemble le trajet et le bâtiment à l’avance.",
+          "Arrivée en cours d’année : désigner un parrain ou une marraine et une place fixe."
+        ],
+        "achtung": "Un déménagement peut avoir des raisons pénibles (séparation, deuil, fuite). Pas de questions en grand groupe ; proposer un entretien individuel et, si besoin, informer la direction compétente (responsable).",
+        "material": "En option : photos de la nouvelle école"
       }
     }
   },
@@ -545,6 +723,59 @@
         "achtung": "Morgen sehen in Familien sehr verschieden aus (zwei Haushalte, früher Dienst der Eltern). Nicht vergleichen; bei Hinweisen auf Vernachlässigung die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte; optional Schere und Kleber"
       }
+    },
+    "fr": {
+      "titel": "Ma routine du matin",
+      "untertitel": "Avec un déroulement fixe, le matin se passe mieux.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Que fais-tu le matin ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "bilder",
+          "modus": "ankreuzen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:alarm", "text": "se lever" },
+            { "bild": "icon:toilet-paper", "text": "toilettes" },
+            { "bild": "icon:droplet", "text": "se laver" },
+            { "bild": "icon:mood-happy", "text": "se brosser les dents" },
+            { "bild": "icon:shirt", "text": "s’habiller" },
+            { "bild": "icon:bread", "text": "petit-déjeuner" },
+            { "bild": "icon:shoe", "text": "chaussures, veste" },
+            { "bild": "icon:backpack", "text": "cartable" }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ton plan. Coche chaque matin.",
+          "hinweis": "Écris les étapes dans l’ordre. Les mots du haut t’aident.",
+          "symbole": ["schreiben", "ankreuzen"]
+        },
+        { "art": "plan", "symbol": "kasten", "zeilen": ["se lever", "", "", "", ""] }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants nomment les étapes de leur matin, les mettent dans un ordre fixe et cochent pendant une semaine ce qu’ils ont réussi sans aide.",
+        "ablauf": [
+          "Entrée en matière en cercle (5 min) : « Qu’as-tu fait ce matin avant de venir à l’école ? »",
+          "Exercice 1 : cocher ce qui fait partie de son propre matin. Les différences sont normales (douche le soir, petit-déjeuner à la Maison Relais).",
+          "Exercice 2 : écrire son propre plan dans l’ordre ; les mots de l’exercice 1 peuvent être recopiés.",
+          "Donner le plan avec un petit mot aux parents ; le rapporter après une semaine.",
+          "Bilan en cercle : « Quelle étape réussis-tu déjà sans aide ? Laquelle est encore difficile ? »"
+        ],
+        "hintergrund": "Des déroulements fixes soulagent la mémoire de travail : ce qui est devenu une habitude n’a pas besoin d’être planifié ou négocié chaque matin. Les fonctions exécutives, comme planifier, se souvenir et ne pas se laisser distraire, sont encore en développement à l’école primaire (Diamond, 2013). Une liste de contrôle visible assume de l’extérieur une partie de ce pilotage. Cocher soi-même est une forme simple d’auto-observation, élément central de l’autogestion (Kanfer et al., 2012). Les images associées aux étapes aident surtout les enfants à qui les consignes orales ne suffisent pas (Hodgdon, 1995).",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": { "leichter": "Découper les images de l’exercice 1 et les coller dans le bon ordre.", "schwerer": "Noter pour chaque étape sa durée approximative." },
+        "impulse": ["Que fais-tu en premier quand tu te réveilles ?", "Quelle étape dure le plus longtemps pour toi ?", "Que peux-tu déjà préparer le soir ?"],
+        "tipps": [
+          "Informer brièvement les parents : le plan doit aider, pas ajouter de la pression.",
+          "À la maison, accrocher le plan là où il sert, par exemple à la porte de la salle de bains."
+        ],
+        "achtung": "Les matins sont très différents d’une famille à l’autre (deux foyers, service tôt des parents). Ne pas comparer ; en cas d’indices de négligence, informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ; en option ciseaux et colle"
+      }
     }
   },
   {
@@ -629,6 +860,94 @@
         ],
         "achtung": "Schlafprobleme können auf Sorgen, Belastungen zu Hause oder gesundheitliche Ursachen hinweisen. Wirkt ein Kind dauerhaft übermüdet: Gespräch mit den Eltern, zuständige Leitung (Responsable) informieren, ggf. ärztliche Abklärung empfehlen.",
         "material": "Optional: Lernuhr"
+      }
+    },
+    "fr": {
+      "titel": "Bien dormir",
+      "untertitel": "Pendant le sommeil, ton corps récupère. Ton cerveau range ce que tu as vécu et appris dans la journée.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "De combien de sommeil as-tu besoin ?",
+          "punkte": [
+            "Les enfants de 6 à 12 ans ont besoin de 9 à 12 heures de sommeil chaque nuit.",
+            "Quand tu dors assez, tu te concentres mieux et tu retiens plus de choses.",
+            "Bien reposé, tu es le plus souvent de meilleure humeur et moins vite irrité."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Calcule : combien de temps dors-tu un jour d’école ?",
+          "hinweis": "Exemple : de 20 h 30 à 6 h 30, cela fait 10 heures.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        { "art": "satzanfaenge", "items": ["Je vais au lit à …", "Je dois me lever à …", "Voici combien d’heures je dors : …"] },
+        { "art": "aufgabe", "text": "Qu’est-ce qui aide à s’endormir ? Qu’est-ce qui garde éveillé ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["aide", "garde éveillé"],
+          "items": [
+            "lire un livre ou se faire lire une histoire",
+            "jouer encore sur la tablette ou le téléphone au lit",
+            "aller au lit tous les soirs à peu près à la même heure",
+            "boire du cola ou du thé glacé le soir",
+            "écouter une histoire audio ou de la musique calme",
+            "regarder un film qui fait peur juste avant de dormir",
+            "se défouler dehors pendant la journée",
+            "raconter ses soucis à quelqu’un avant de dormir"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifie ta routine du soir pour un jour d’école.",
+          "hinweis": "La dernière heure avant de dormir devrait être calme – de préférence sans écran.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "tagesplan", "zeilen": [{ "zeit": "19 h 30", "text": "Écran éteint, préparer le cartable", "bild": "icon:backpack" }], "leer": 4 },
+        {
+          "art": "aufgabe",
+          "text": "Tiens ton journal du sommeil pendant une semaine.",
+          "hinweis": "Chaque matin, note l’heure du coucher et l’heure du lever.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Jour", "Coucher à", "Lever à", "Heures", "Le matin, je me sens …"],
+          "breiten": [0.7, 1.1, 1.3, 0.9, 2.2],
+          "zeilen": 7,
+          "beispiel": ["Lu", "20 h 45", "6 h 45", "10", "en pleine forme"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants connaissent leur besoin de sommeil, calculent leur durée de sommeil, distinguent les habitudes qui aident à s’endormir de celles qui gênent et planifient une routine du soir calme.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « À quoi remarques-tu le matin que tu as bien dormi ? » Recueillir les réponses.",
+          "Lire l’encadré. Exercice 1 : calculer la durée du sommeil, un exemple au tableau.",
+          "Exercice 2 à deux, puis comparer. Accepter les différences : la musique aide certains, en dérange d’autres.",
+          "Exercice 3 : planifier une routine du soir pour un jour d’école, la dernière heure si possible sans écran.",
+          "Exercice 4 sur une semaine à la maison. Bilan : « Quand étais-tu le plus en forme le matin ? »"
+        ],
+        "hintergrund": "L’American Academy of Sleep Medicine recommande aux enfants de 6 à 12 ans 9 à 12 heures de sommeil par période de 24 heures (Paruthi et al., 2016). Un sommeil suffisant est associé à une meilleure attention, à un meilleur comportement, à l’apprentissage, à la régulation des émotions et à la santé ; un sommeil insuffisant, à l’inverse. Beaucoup de facteurs relèvent d’habitudes que les enfants peuvent contribuer à façonner : horaires fixes, routine du soir calme, peu d’excitation avant de s’endormir. Le journal du sommeil rend visibles ses propres schémas ; l’auto-observation est un premier pas vers le changement (Kanfer et al., 2012).",
+        "quellen": [
+          "Paruthi, S. et al. (2016). Recommended amount of sleep for pediatric populations: A consensus statement of the American Academy of Sleep Medicine. Journal of Clinical Sleep Medicine, 12(6), 785–786.",
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Compter la durée du sommeil sur une horloge d’apprentissage ; dans le journal, noter seulement les heures et un mot.",
+          "schwerer": "Faire le bilan de la semaine : calculer la moyenne, comparer jours d’école et week-end."
+        },
+        "impulse": [
+          "Que fais-tu pendant la dernière demi-heure avant de dormir ?",
+          "Qu’est-ce qui t’aide quand tu n’arrives pas à t’endormir ?",
+          "À quoi remarques-tu le lendemain que tu as trop peu dormi ?"
+        ],
+        "tipps": [
+          "Informer les parents du journal : il s’agit d’observer, pas de contrôler.",
+          "Tous les enfants n’ont pas leur chambre ni des horaires fixes : adapter les plans à la situation de vie."
+        ],
+        "achtung": "Les difficultés de sommeil peuvent indiquer des soucis, des tensions à la maison ou des causes médicales. Enfant durablement épuisé : parler avec les parents, informer la direction compétente (responsable), conseiller si besoin un avis médical.",
+        "material": "En option : horloge d’apprentissage"
       }
     }
   },
@@ -916,6 +1235,77 @@
         "achtung": "Erzählt ein Kind von erschreckenden Inhalten oder Kontakten mit Fremden im Netz: ruhig nachfragen, nicht im Plenum vertiefen, Leitung (Responsable) informieren. Beratung: BEE SECURE Helpline 8002 1234.",
         "material": "Buntstifte, Elternbrief"
       }
+    },
+    "fr": {
+      "titel": "Les écrans : combien, c’est assez ?",
+      "untertitel": "Les écrans, c’est amusant. Mais il y a bien d’autres choses.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Que fais-tu sur un écran ? Entoure.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:device-tv", "text": "regarder des vidéos" },
+            { "bild": "icon:device-gamepad-2", "text": "jouer" },
+            { "bild": "icon:device-laptop", "text": "apprendre" },
+            { "bild": "icon:device-mobile-message", "text": "téléphoner" }
+          ]
+        },
+        { "art": "aufgabe", "text": "À quoi remarques-tu que c’est assez ? Que fais-tu alors ?", "symbole": ["ankreuzen"] },
+        {
+          "art": "spalten",
+          "links": [
+            {
+              "art": "ankreuzen",
+              "titel": "C’est assez quand …",
+              "items": ["mes yeux sont fatigués.", "ma tête est toute pleine.", "je m’énerve vite.", "je ne veux pas arrêter."]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "titel": "Alors je préfère …",
+              "items": ["jouer dehors.", "dessiner ou construire.", "faire quelque chose avec d’autres."],
+              "frei": 1
+            }
+          ]
+        },
+        { "art": "aufgabe", "text": "Faites un accord à la maison. Signez-le ensemble.", "symbole": ["schreiben"] },
+        {
+          "art": "vertrag",
+          "titel": "Notre accord sur les écrans",
+          "text": "Les jours d’école, je reste au maximum ___ sur un écran. Après, je fais ___. Pendant le repas et au lit, l’écran reste éteint.",
+          "unterschriften": ["Moi", "Un adulte"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants décrivent ce qu’ils font sur les écrans, reconnaissent leurs propres signes de « c’est assez » et concluent avec leur famille un accord simple.",
+        "ablauf": [
+          "Entrée en matière en cercle (5 min) : « Qu’aimes-tu faire sur les écrans ? » Recueillir sans juger.",
+          "Exercice 1 en individuel, puis raconter : « Que fais-tu exactement ? Avec qui ? »",
+          "Exercice 2 : « Comment se sentent tes yeux et ta tête après avoir longtemps joué ? » Idées sans écran.",
+          "Exercice 3 : donner l’accord avec une courte lettre aux parents. La durée est fixée par la famille, pas par l’école.",
+          "Une semaine plus tard : « Qu’est-ce qui a marché dans votre accord ? »"
+        ],
+        "hintergrund": "Pour les enfants de deux à quatre ans, l’OMS recommande au maximum une heure d’écran par jour (WHO, 2019) ; pour l’école primaire, il n’existe pas de durée en minutes qui fasse l’unanimité. La recherche sur les familles et les médias numériques met donc en avant, à côté de la durée, les contenus, le contexte et la négociation commune des règles (Livingstone & Blum-Ross, 2020). Les enfants se régulent plus facilement avec des règles claires, prévisibles et convenues ensemble, et quand ils perçoivent leurs signes de surstimulation. Des moments sans écran pendant le repas et avant le coucher sont des règles simples. BEE SECURE propose du matériel pour les parents.",
+        "quellen": [
+          "World Health Organization (2019). Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age. Genf: WHO.",
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Exercices 1 et 2 à l’oral ; remplir l’accord avec un adulte.",
+          "schwerer": "Noter pendant une semaine ce qui a été fait sur les écrans et pendant combien de temps."
+        },
+        "impulse": ["Qu’aimes-tu le plus faire sur un écran ?", "Comment te sens-tu quand tu as joué longtemps ?", "Qu’aimes-tu faire quand l’écran est éteint ?"],
+        "tipps": [
+          "Ne pas juger ce que chaque famille autorise – les accords peuvent être différents.",
+          "Faciliter les transitions : prévenir à l’avance (« encore une vidéo ») ou utiliser un sablier."
+        ],
+        "achtung": "Contenus effrayants ou contacts avec des inconnus en ligne : demander calmement, ne pas approfondir en grand groupe, informer la direction compétente (responsable). BEE SECURE Helpline : 8002 1234.",
+        "material": "Crayons de couleur, lettre aux parents"
+      }
     }
   },
   {
@@ -985,6 +1375,82 @@
         ],
         "achtung": "Berichtet ein Kind von beängstigenden Inhalten, Kontakten mit Fremden oder Streit im Klassenchat: Einzelgespräch führen, zuständige Leitung (Responsable) informieren. Beratung: BEE SECURE Helpline 8002 1234.",
         "material": "Optional: Elternbrief"
+      }
+    },
+    "fr": {
+      "titel": "Mon journal des médias",
+      "untertitel": "Téléphone, tablette, télévision, console : combien de temps y passes-tu – et comment te sens-tu ?",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Estime d’abord : combien de temps passes-tu devant un écran ?",
+          "hinweis": "Compte tout : téléphone, tablette, télévision, console et ordinateur.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        { "art": "satzanfaenge", "items": ["Un jour d’école, environ …", "Un jour de week-end, environ …"] },
+        {
+          "art": "aufgabe",
+          "text": "Tiens ton journal des médias pendant une semaine.",
+          "hinweis": "Écris chaque soir : qu’as-tu fait ? Combien de temps ? Comment te sentais-tu après ?",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Jour", "Qu’ai-je fait ?", "Combien de temps ?", "Après, je me sentais …"],
+          "breiten": [0.6, 2.4, 1, 2],
+          "zeilen": 7,
+          "beispiel": ["Lu", "Minecraft avec Ben, puis des vidéos", "1 h 20 min", "d’abord de bonne humeur, puis la tête lourde et à cran"]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Mots pour « après »",
+          "items": ["détendu·e", "de bonne humeur", "satisfait·e", "fier·ère", "qui s’ennuie", "fatigué·e", "agacé·e", "surexcité·e", "triste", "stressé·e"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Regarde ta semaine. Qu’est-ce qui a rechargé ta batterie ? Qu’est-ce qui l’a vidée ?",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        { "art": "batterie", "laden": "Après, je me sentais bien", "leeren": "Après, je me sentais moins bien", "linien": 3 },
+        { "art": "frage", "text": "Compare avec ton estimation de l’exercice 1. Qu’est-ce que tu remarques ?", "linien": 2 },
+        { "art": "aufgabe", "text": "Fais un accord pour la semaine prochaine.", "symbole": ["schreiben"] },
+        {
+          "art": "vertrag",
+          "titel": "Mon accord sur les médias",
+          "text": "Moi, ___, je décide pour la semaine prochaine : ___. Au lieu de l’écran, je fais alors ___. Quand c’est difficile, ___ m’aide.",
+          "unterschriften": ["Moi", "Un adulte"]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants observent pendant une semaine leur utilisation des médias, la relient à leur état et en déduisent un accord personnel pour la semaine suivante.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Quels écrans y a-t-il chez vous ? » Recueillir sans juger.",
+          "Exercice 1 : noter l’estimation. Expliquer le journal et lire ensemble la ligne d’exemple.",
+          "Pendant la semaine : tenir le journal à la maison ; à l’école, demander brièvement des nouvelles, sans contrôler.",
+          "Après une semaine : exercice 3 en individuel, puis à deux : « Qu’est-ce qui recharge ta batterie, qu’est-ce qui la vide ? »",
+          "Exercice 4 : formuler l’accord et le signer à la maison avec un adulte."
+        ],
+        "hintergrund": "On estime mal son propre temps d’écran ; un court relevé rend visible l’utilisation réelle. L’auto-observation est un élément de base de l’autogestion et modifie souvent déjà le comportement à elle seule (Kanfer et al., 2012). Il ne s’agit pas seulement de minutes : ce que font les enfants, avec qui et comment ils se sentent compte aussi (Livingstone & Blum-Ross, 2020). Quand on remarque que certaines utilisations donnent de la bonne humeur et d’autres plutôt de la fatigue ou de l’irritation, on peut choisir plus consciemment. Un accord écrit, formulé par soi-même, renforce l’engagement. BEE SECURE propose des informations pour les familles.",
+        "quellen": [
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Livingstone, S. & Blum-Ross, A. (2020). Parenting for a Digital Future. New York: Oxford University Press.",
+          "BEE SECURE – Initiative der luxemburgischen Regierung für ein sichereres Internet: www.bee-secure.lu"
+        ],
+        "differenzierung": {
+          "leichter": "Tenir le journal seulement trois jours ; noter les émotions avec un visage plutôt qu’avec des mots.",
+          "schwerer": "Additionner les minutes et comparer jours d’école et week-end."
+        },
+        "impulse": [
+          "Après quelle utilisation des médias te sentais-tu particulièrement bien ?",
+          "Quand as-tu joué plus longtemps que prévu – et pourquoi ?",
+          "Qu’aimes-tu faire quand il n’y a pas d’écran ?"
+        ],
+        "tipps": [
+          "Pas de classement dans la classe : les chiffres appartiennent aux enfants.",
+          "Informer les parents à l’avance qu’il s’agit d’observer, pas d’interdire."
+        ],
+        "achtung": "Si un enfant parle de contenus effrayants, de contacts avec des inconnus ou de disputes dans le chat de la classe : entretien individuel, informer la direction compétente (responsable). Conseil : BEE SECURE Helpline 8002 1234.",
+        "material": "En option : lettre aux parents"
       }
     }
   },

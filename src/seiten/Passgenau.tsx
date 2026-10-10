@@ -104,7 +104,7 @@ function Inhalt() {
   const d = pg.dlg
   return (
     <>
-      {a === 'ohnekind' && <OhneKind />}
+      {a === 'ohnekind' && <OhneKind key={pg.startKey} />}
       {pg.profil && a === 'start' && <Start />}
       {pg.profil && a === 'wissen' && (pg.ohneKind ? <OhneKind /> : <Wissen />)}
       {pg.profil && a === 'gruendlich' && <Gruendlich />}

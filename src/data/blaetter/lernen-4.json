@@ -1,0 +1,364 @@
+[
+  {
+    "id": "t2-der-hilfreiche-gedanke",
+    "bereich": "lernen",
+    "thema": "fehler",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "45 Min.",
+    "eldib": [
+      "SOZ-36",
+      "V-18",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Gedanken prüfen",
+      "Beweise sammeln",
+      "hilfreicher Gedanke",
+      "Umdenken",
+      "KVT",
+      "Selbstwert"
+    ],
+    "bild": "icon:bulb",
+    "de": {
+      "titel": "Der hilfreiche Gedanke",
+      "untertitel": "Ein schwerer Gedanke ist nicht immer richtig. Du kannst ihn prüfen und einen finden, der wahr ist und dir weiterhilft.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Auf der Ersatzbank",
+          "text": "Jil spielt in einem Fußballverein. Im Training verliert sie dreimal den Ball. Der Trainer wechselt sie aus. Jil setzt sich auf die Bank und denkt: „Ich bin die Schlechteste im Team. Ich höre auf.“ Ihr Hals wird eng. Sie schaut niemanden an.",
+          "bild": "figur:mia:traurig"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Gedanken aufschreiben",
+              "text": "Welcher Satz geht mir durch den Kopf?"
+            },
+            {
+              "titel": "Beweise sammeln",
+              "text": "Was spricht dafür, was dagegen?"
+            },
+            {
+              "titel": "Neu formulieren",
+              "text": "Ein Satz, der wahr ist und hilft."
+            },
+            {
+              "titel": "Gefühl noch einmal prüfen",
+              "text": "Wie stark ist es jetzt?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prüfe Jils Gedanken: Was spricht dafür? Was spricht dagegen?",
+          "hinweis": "Einen Beweis kann man sehen oder zählen. Gefühle und Vermutungen sind keine Beweise. Beispiel dafür: Jil hat heute dreimal den Ball verloren.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "waage",
+          "links": "Das spricht dafür",
+          "rechts": "Das spricht dagegen",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreibe Jils neuen Gedanken auf. Er soll wahr sein und ihr weiterhelfen.",
+          "hinweis": "Ein hilfreicher Gedanke ist nicht einfach das Gegenteil. „Ich bin die Beste“ wäre gelogen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Das stimmt: …",
+            "Aber das stimmt auch: …",
+            "Deshalb denke ich jetzt: …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jetzt du: Welcher Gedanke macht dir manchmal das Leben schwer?",
+          "hinweis": "Kreuze an oder erfinde einen. Ein erfundener Gedanke ist genauso gut. Du musst nichts vorlesen.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "„Das schaffe ich nie.“",
+            "„Alle sind besser als ich.“",
+            "„Keiner will mit mir spielen.“",
+            "„Ich mache immer alles falsch.“",
+            "„Das wird bestimmt peinlich.“",
+            "„Ich kann das nicht.“"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Wie stark ist das Gefühl, wenn du diesen Gedanken denkst?",
+          "von": "gar nicht",
+          "bis": "sehr stark",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prüfe deinen Gedanken: Was spricht dafür? Was spricht dagegen?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Das spricht dafür",
+            "Das spricht dagegen"
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreibe deinen hilfreichen Gedanken auf.",
+          "hinweis": "Es fällt dir schwer? Was würdest du einem Freund oder einer Freundin sagen, der oder die so denkt?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Das stimmt: …",
+            "Aber das stimmt auch: …",
+            "Deshalb denke ich jetzt: …"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Und wie stark ist das Gefühl jetzt?",
+          "von": "gar nicht",
+          "bis": "sehr stark",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder prüfen einen schweren Gedanken mit Beweisen dafür und dagegen und formulieren einen Gedanken, der wahr ist und weiterhilft. Sie beobachten, ob sich das Gefühl dadurch verändert.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen. „Was denkt Jil? Wie fühlt sie sich? Stimmt ihr Gedanke wirklich?“ Die vier Schritte an der Tafel zeigen.",
+          "Aufgabe 1 (10 Min.): Beweise sammeln, erst allein, dann an der Tafel. Beweise kann man sehen oder zählen. Dagegen: letzte Woche ein Tor, Lob vom Trainer, erst ein Jahr im Verein, auch andere verlieren Bälle.",
+          "Aufgabe 2 (8 Min.): Jils neuen Gedanken schreiben. Betonen: wahr und hilfreich, nicht einfach das Gegenteil. Zwei Vorschläge vorlesen.",
+          "Aufgabe 3 bis 5 (15 Min.): Eigener oder erfundener Gedanke in Einzelarbeit, Gefühlsstärke vorher und nachher einkreisen. Niemand muss vorlesen.",
+          "Abschluss (5 Min.): Freiwillig zwei hilfreiche Gedanken vorlesen. Wirkt es bei allen? Wenn nicht: Das ist eine ehrliche Antwort."
+        ],
+        "hintergrund": "Gedanken zu prüfen und umzuformulieren ist ein Kernelement der kognitiven Verhaltenstherapie (kognitive Umstrukturierung): Der Gedanke wird wie eine Vermutung behandelt, für die man Belege sammelt, und durch eine ausgewogenere Sicht ersetzt (Beck, 2011). Ziel ist nicht „positives Denken“, sondern ein Gedanke, der den Tatsachen standhält und weiterhilft. Kinderprogramme nutzen dafür Beweis-Tabellen und Fragen wie „Was würde ich einer Freundin sagen?“ (Stallard, 2019). Dieser Perspektivwechsel schafft Abstand zum eigenen Gedanken (Kross & Ayduk, 2017).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgaben 3 bis 5 mündlich mit der Lehrperson; die Beweise nur sammeln.",
+          "schwerer": "Die Denkfalle im Gedanken benennen (Blatt „Denkfallen erkennen“)."
+        },
+        "impulse": [
+          "Woran merkst du, dass ein Gedanke dir hilft?",
+          "Was würdest du einem Freund sagen, der so denkt?"
+        ],
+        "tipps": [
+          "Gruppe: Einen erfundenen Gedanken gemeinsam an der Tafel prüfen, Beweise dafür und dagegen sammeln. Eigene Gedanken bleiben auf dem Blatt.",
+          "Einzelstunde: Die Lehrperson schreibt die Beweise mit und fragt nach Ausnahmen: „Gab es Zeiten, in denen es anders war?“"
+        ],
+        "achtung": "Sehr abwertende Gedanken über sich („Ich bin wertlos“) oder Hoffnungslosigkeit nicht im Plenum vertiefen: Einzelgespräch, Eltern und Leitung (Responsable) einbeziehen. Bei Hinweisen auf Gefährdung sofort nach dem internen Ablauf handeln.",
+        "material": "Stifte"
+      }
+    },
+    "fr": {
+      "titel": "La pensée qui aide",
+      "untertitel": "Une pensée qui pèse n’est pas toujours exacte. Tu peux la vérifier, puis en trouver une qui est vraie et qui t’aide.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Sur le banc de touche",
+          "text": "Jil joue au football dans un club. À l’entraînement, elle perd trois fois le ballon. L’entraîneur la remplace. Jil s’assoit sur le banc et pense : « Je suis la plus nulle de l’équipe. J’arrête. » Sa gorge se serre. Elle ne regarde personne.",
+          "bild": "figur:mia:traurig"
+        },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Écrire la pensée",
+              "text": "Quelle phrase me traverse la tête ?"
+            },
+            {
+              "titel": "Chercher des preuves",
+              "text": "Qu’est-ce qui parle pour, contre ?"
+            },
+            {
+              "titel": "Reformuler",
+              "text": "Une phrase vraie qui aide."
+            },
+            {
+              "titel": "Revérifier le sentiment",
+              "text": "Quelle intensité maintenant ?"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vérifie la pensée de Jil : qu’est-ce qui parle pour ? Qu’est-ce qui parle contre ?",
+          "hinweis": "Une preuve, on peut la voir ou la compter. Les sentiments et les suppositions ne sont pas des preuves. Exemple pour : aujourd’hui, Jil a perdu trois fois le ballon.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "waage",
+          "links": "Ce qui parle pour",
+          "rechts": "Ce qui parle contre",
+          "zeilen": 4
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris la nouvelle pensée de Jil. Elle doit être vraie et l’aider à avancer.",
+          "hinweis": "Une pensée qui aide n’est pas simplement le contraire. « Je suis la meilleure » serait faux.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "C’est vrai : …",
+            "Mais c’est vrai aussi : …",
+            "Alors je pense maintenant : …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À toi : quelle pensée te complique parfois la vie ?",
+          "hinweis": "Coche ou invente-en une. Une pensée inventée est tout aussi bien. Tu n’as rien à lire à voix haute.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "« Je n’y arriverai jamais. »",
+            "« Tous les autres sont meilleurs que moi. »",
+            "« Personne ne veut jouer avec moi. »",
+            "« Je fais toujours tout faux. »",
+            "« Ce sera sûrement la honte. »",
+            "« Je ne sais pas faire ça. »"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Quelle est l’intensité du sentiment quand tu penses cela ?",
+          "von": "pas du tout",
+          "bis": "très fort",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vérifie ta pensée : qu’est-ce qui parle pour ? Qu’est-ce qui parle contre ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ce qui parle pour",
+            "Ce qui parle contre"
+          ],
+          "zeilen": 3
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ta pensée qui aide.",
+          "hinweis": "C’est difficile ? Que dirais-tu à un copain ou à une copine qui pense cela ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "C’est vrai : …",
+            "Mais c’est vrai aussi : …",
+            "Alors je pense maintenant : …"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Et quelle est l’intensité du sentiment maintenant ?",
+          "von": "pas du tout",
+          "bis": "très fort",
+          "stufen": 11
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants vérifient une pensée qui pèse avec des preuves pour et contre et formulent une pensée vraie qui les aide. Ils observent si le sentiment change.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. « Que pense Jil ? Que ressent-elle ? Sa pensée est-elle vraiment exacte ? » Montrer les quatre étapes au tableau.",
+          "Tâche 1 (10 min) : chercher des preuves, seul puis au tableau. Une preuve se voit ou se compte. Contre : un but la semaine passée, un compliment, un an de club, d’autres perdent aussi des ballons.",
+          "Tâche 2 (8 min) : écrire la nouvelle pensée de Jil : vraie et utile, pas le simple contraire. Lire deux propositions.",
+          "Tâches 3 à 5 (15 min) : pensée vécue ou inventée, travail individuel, entourer l’intensité du sentiment avant et après. Personne ne lit à voix haute.",
+          "Clôture (5 min) : lire deux pensées utiles sur base volontaire. Cela marche pour tous ? Sinon : c’est une réponse honnête."
+        ],
+        "hintergrund": "Vérifier et reformuler ses pensées est un élément central de la thérapie cognitivo-comportementale (restructuration cognitive) : la pensée est traitée comme une hypothèse dont on cherche les preuves, puis remplacée par une vision plus nuancée (Beck, 2011). Le but n’est pas la « pensée positive », mais une pensée qui résiste aux faits et qui aide. Les programmes pour enfants utilisent des tableaux de preuves et des questions comme « Que dirais-je à une amie ? » (Stallard, 2019). Ce changement de point de vue crée de la distance avec sa propre pensée (Kross & Ayduk, 2017).",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Kross, E. & Ayduk, O. (2017). Self-distancing: Theory, research, and current directions. Advances in Experimental Social Psychology, 55, 81–136."
+        ],
+        "differenzierung": {
+          "leichter": "Tâches 3 à 5 à l’oral avec l’adulte ; seulement chercher les preuves.",
+          "schwerer": "Nommer le piège caché dans la pensée (fiche « Les pièges de la pensée »)."
+        },
+        "impulse": [
+          "À quoi vois-tu qu’une pensée t’aide ?",
+          "Que dirais-tu à un copain qui pense cela ?"
+        ],
+        "tipps": [
+          "Groupe : vérifier ensemble au tableau une pensée inventée, preuves pour et contre. Les pensées personnelles restent sur la feuille.",
+          "Séance individuelle : l’adulte note les preuves et cherche les exceptions : « Y a-t-il eu des moments où c’était différent ? »"
+        ],
+        "achtung": "Pensées très dévalorisantes sur soi (« Je ne vaux rien ») ou désespoir : ne pas approfondir en plénière, entretien individuel, parents et direction (responsable) impliqués. En cas de danger, agir immédiatement selon la procédure interne.",
+        "material": "Crayons"
+      }
+    },
+    "verwandt": [
+      "t2-denkfallen-erkennen",
+      "noch-nicht"
+    ]
+  }
+]

@@ -8,7 +8,7 @@ import { Ic } from './zeichen'
 import { Daumen, FettCodes, HeikelBanner, Pill, RolleBadge, VersionsBanner, Warum } from './Teile'
 import { BlattAnsicht } from './Vorschau'
 import { istBlattSchritt, minutenVon, teilText, warumListe } from './anzeige'
-import { PHASE_NAME, TF_NAME, datumKurz } from './texte'
+import { PHASE_NAME, TF_NAME, datumKurz, SOZIALFORM_NAME } from './texte'
 import { ergebnisText } from './Start'
 
 function quelleIcon(e?: KatalogEintrag): string {
@@ -285,7 +285,7 @@ export function Ergebnis() {
           <h2 className="pg-disp">{leicht ? 'Heute leicht – ' + tfs.map((t) => TF_NAME[t]).join(' und ') : plan.n > 1 ? `Sitzung ${s.nr} von ${plan.n} · ${PHASE_NAME[s.phase]}` : `Stunde · ${PHASE_NAME[s.phase]}`}</h2>
           <div className="pg-meta">
             <span>
-              {pg.vorname} · {minutenVon(s)} Min. · Einzel
+              {pg.vorname} · {minutenVon(s)} Min. · {SOZIALFORM_NAME[plan.auftrag?.sozialform ?? 'einzeln']}
             </span>
             {leicht ? <Pill art="ok">ohne Förderziel</Pill> : plan.ziele.slice(0, 2).map((z) => <Pill key={z} art="akz">{z}</Pill>)}
             {h && (
@@ -361,7 +361,7 @@ export function Ergebnis() {
             })
           ) : (
             <div className="pg-card pg-klein-karte">
-              <b>{leicht ? 'Beziehungszeit' : 'Einzelstunde'}</b>
+              <b>{leicht ? 'Beziehungszeit' : (plan.auftrag?.sozialform ?? 'einzeln') !== 'einzeln' ? 'Gruppenstunde' : 'Einzelstunde'}</b>
               <p className="pg-leise pg-klein">{leicht ? 'Ohne Förderziel. Die laufende Folge geht nächstes Mal weiter – nichts wird verschoben.' : 'Daraus eine Folge machen?'}</p>
               {!leicht && (
                 <button type="button" className="pg-btn klein" onClick={() => pg.setAnsicht('gruendlich')}>
@@ -383,7 +383,7 @@ export function Ergebnis() {
             <div className="pg-btnrow">
               <button type="button" className="pg-btn klein" onClick={() => pg.planSichern(plan, 'knopf')}>
                 <Ic n={pg.ohneKind ? 'datei' : 'speichern'} />
-                {pg.ohneKind ? 'Als Datei speichern' : 'Beim Kind speichern'}
+                {pg.ohneKind ? 'Als Datei speichern' : (pg.profil?.gruppe?.length ?? 0) > 1 ? 'Bei allen Kindern speichern' : 'Beim Kind speichern'}
               </button>
               <button type="button" className="pg-btn klein" onClick={pg.alsEigeneVorlage}>
                 <Ic n="kopie" />
@@ -408,7 +408,7 @@ export function Ergebnis() {
                 </button>
               )}
             </div>
-            {pg.schalter.teilen && pg.hubDa && !tauschbar && <p className="pg-leise pg-klein">Teilen geht {plan.n > 1 ? 'nach mindestens drei gehaltenen Sitzungen' : 'bei Einzelstunden, in denen du selbst etwas getauscht hast'}.</p>}
+            {pg.schalter.teilen && pg.hubDa && !tauschbar && <p className="pg-leise pg-klein">Teilen geht {plan.n > 1 ? 'nach mindestens drei gehaltenen Sitzungen' : 'bei Stunden, in denen du selbst etwas getauscht hast'}.</p>}
           </div>
         </section>
         <aside className="pg-seitenleiste">

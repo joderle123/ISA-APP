@@ -139,6 +139,79 @@
         "achtung": "Erzählt ein Kind, dass es selbst immer wieder geärgert oder verletzt wird: nicht im Plenum vertiefen, im Einzelgespräch nachfragen und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gewalt sofort nach dem internen Ablauf handeln.",
         "material": "Stifte; optional eine Mütze zum Nachspielen der Geschichte"
       }
+    },
+    "fr": {
+      "titel": "Injuste ? Demande de l’aide",
+      "untertitel": "Si on embête un enfant encore et encore, tu peux demander de l’aide.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Le bonnet",
+          "text": "Chaque matin dans le bus scolaire, Tiago prend le bonnet d’Inês. Il le lance vers l’arrière, et tout le monde rit. Inês dit : « Arrête ! » Mais Tiago continue. Inês pense : « Si je le dis, je suis une cafteuse. »",
+          "bild": "figur:mia:traurig"
+        },
+        { "art": "aufgabe", "text": "Inês le raconte à la maîtresse. Qu’en penses-tu ? Coche.", "symbole": ["lesen", "ankreuzen"] },
+        { "art": "ankreuzen", "items": ["C’est cafter.", "C’est demander de l’aide."], "spalten": 2 },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Cafter ou demander de l’aide ?",
+          "text": "Cafter : tu veux que quelqu’un ait des ennuis. Demander de l’aide : tu veux que ça s’arrête. Va toujours chercher un adulte quand …",
+          "punkte": ["ça arrive encore et encore.", "quelqu’un est blessé ou a peur.", "tu ne t’en sors pas sans aide."]
+        },
+        { "art": "aufgabe", "text": "Demander de l’aide ou régler soi-même ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["demander de l’aide", "régler soi-même"],
+          "items": [
+            "Un enfant passe une fois devant les autres.",
+            "On se moque d’un enfant tous les jours.",
+            "Ton ami ne veut pas échanger.",
+            "Des grands prennent le ballon d’un petit."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À qui peux-tu le dire ? Écris des noms.",
+          "hinweis": "Tu peux dire : « Ça arrive tous les jours. Aide-moi, s’il te plaît. »",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "spalten",
+          "links": [{ "art": "satzanfaenge", "items": ["À l’école :"] }],
+          "rechts": [{ "art": "satzanfaenge", "items": ["À la maison :"] }]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants distinguent cafter et demander de l’aide, reconnaissent quand un adulte est nécessaire et nomment des personnes à qui ils peuvent se confier.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. Questions : « Comment va Inês ? Pourquoi ne dit-elle rien à personne ? »",
+          "Exercice 1 par signe de la main, sans juger. Puis lire ensemble l’encadré « À retenir ».",
+          "Exercice 2 à deux. En classe, faire justifier : « À quoi remarques-tu qu’un adulte doit aider ? »",
+          "Exercice 3 : écrire des noms. S’exercer ensemble à dire la phrase de l’indication à voix haute – doucement, mais d’une voix ferme.",
+          "Clôture : promettre que chaque signalement sera pris au sérieux – et tenir cette promesse au quotidien."
+        ],
+        "hintergrund": "Beaucoup d’enfants se taisent quand ils sont embêtés ou que d’autres le sont – par peur de passer pour un « cafteur » ou parce que rien n’a changé après. Olweus (1993) décrit le harcèlement comme des attaques répétées et intentionnelles contre un enfant qui peut difficilement se défendre. La règle « Cafter veut causer des ennuis, demander de l’aide veut que ça s’arrête » les libère de leur gêne. La réaction des adultes est décisive : si un signalement est balayé comme du cafardage, les enfants apprennent à se taire. Le harcèlement se déroule en groupe (Salmivalli et al., 1996) : il faut encourager surtout les témoins à demander de l’aide.",
+        "quellen": [
+          "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell.",
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15."
+        ],
+        "differenzierung": {
+          "leichter": "Résoudre l’exercice 2 à l’oral avec le pouce en haut ou en bas ; dessiner au lieu d’écrire dans l’exercice 3.",
+          "schwerer": "Inventer ses propres exemples pour les deux colonnes et les poser à la classe comme énigmes."
+        },
+        "impulse": [
+          "Que peux-tu dire avant de demander de l’aide ?",
+          "Que fais-tu si le premier adulte n’a pas le temps ?",
+          "Comment se sent un enfant embêté chaque jour ?"
+        ],
+        "tipps": [
+          "Convenir d’un signe par lequel les enfants montrent : « C’est sérieux, j’ai besoin d’aide. »",
+          "Pour les petites choses : « Qu’as-tu essayé ? » En cas de répétition ou de danger, toujours intervenir."
+        ],
+        "achtung": "Si un enfant dit qu’on l’embête ou le blesse sans cesse : en parler en privé, pas en classe ; informer la direction compétente (responsable). En cas de violence, agir tout de suite selon la procédure interne.",
+        "material": "Crayons ; en option, un bonnet pour rejouer l’histoire"
+      }
     }
   },
   {
@@ -307,6 +380,105 @@
         ],
         "achtung": "Erzählen Kinder von Mobbing in der eigenen Klasse: nicht im Plenum vertiefen und keine Namen sammeln. Im Einzelgespräch nachfragen und die zuständige Leitung (Responsable) informieren. Bei Gewalt sofort nach dem internen Ablauf handeln.",
         "material": "Optional Namensschilder zum Nachstellen der Geschichte"
+      }
+    },
+    "fr": {
+      "titel": "Regarder, ne pas détourner les yeux",
+      "untertitel": "Quand un enfant est harcelé, presque toujours d’autres enfants regardent. Ils peuvent beaucoup changer les choses.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "À la récré",
+          "text": "Depuis des semaines, Mathis et Diogo n’appellent Kim que « Escargot » pendant la récré. Aujourd’hui, Mathis lui prend le ballon et le lance à Diogo. Kim court de l’un à l’autre. Robin rit fort et applaudit. Aylin et Finn détournent le regard et continuent à parler. Chiara va vers Kim et dit : « Viens, tu joues avec nous. » Samuel court chercher l’adulte de la récré.",
+          "bild": "figur:lea:traurig"
+        },
+        { "art": "aufgabe", "text": "Qui fait quoi ? Relie.", "symbole": ["lesen", "verbinden"] },
+        {
+          "art": "zuordnen",
+          "titel": ["Les enfants", "Ce qu’ils font"],
+          "links": ["Mathis et Diogo", "Robin", "Aylin et Finn", "Chiara", "Samuel"],
+          "rechts": ["détourner les yeux", "chercher de l’aide", "embêter Kim", "soutenir Kim", "rire et encourager"]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Le harcèlement a besoin de spectateurs",
+          "text": "Dans le harcèlement, il y a beaucoup de rôles : commencer, suivre, rire, détourner les yeux, aider. Celui qui rit ou détourne les yeux renforce souvent les moqueries – sans le vouloir. Celui qui aide peut les arrêter."
+        },
+        { "art": "aufgabe", "text": "Imagine que tu es Kim. Que penses-tu d’Aylin et de Finn ?", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "linien", "anzahl": 3 },
+        {
+          "art": "aufgabe",
+          "text": "Que peux-tu faire quand tu regardes ? Coche ce que tu te sens capable de faire.",
+          "hinweis": "Tu n’as pas à te mettre seul entre eux. Demander de l’aide, c’est aussi du courage.",
+          "symbole": ["ankreuzen"]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Je ne ris pas avec eux.",
+            "Je dis : « Arrêtez ça. »",
+            "Je vais chercher l’adulte de la récré.",
+            "Je demande : « Tu veux jouer avec nous ? »",
+            "Je demande plus tard : « Comment ça va ? »",
+            "Je cherche des amis pour aider."
+          ],
+          "spalten": 2,
+          "frei": 2
+        },
+        { "art": "aufgabe", "text": "Écris ton plan pour ne pas détourner les yeux.", "symbole": ["schreiben"] },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si, à la récré, on se moque d’un enfant encore et encore,",
+              "dann": "je ne ris pas avec les autres et je vais voir l’adulte de la récré."
+            }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Quatre règles pour notre classe",
+          "punkte": [
+            "Nous n’embêtons personne encore et encore.",
+            "Nous aidons les enfants qu’on embête.",
+            "Nous ne laissons personne tout seul.",
+            "Nous le disons à un adulte quand quelqu’un est harcelé."
+          ]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent les rôles dans le harcèlement, comprennent que les témoins peuvent renforcer ou arrêter les moqueries, et décident comment ils veulent aider eux-mêmes.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. « Qui est concerné – et qui ne fait rien ? »",
+          "Exercice 1 seul, puis l’encadré. Insister : les rôles décrivent un comportement, pas une personne ; on peut en changer.",
+          "Exercice 2 : laisser lire quelques réponses volontaires. Faire ressortir : pour Kim, le silence ressemble à un accord.",
+          "Exercice 3 en petits groupes : qu’est-ce qui est sûr, qu’est-ce qui demande du courage ? Demander de l’aide est toujours juste.",
+          "Exercice 4 : chaque enfant écrit son plan. Discuter les quatre règles, les afficher, les revoir au conseil de classe après deux semaines."
+        ],
+        "hintergrund": "Le harcèlement est un processus de groupe. Dans l’étude de Salmivalli et al. (1996), la plupart des enfants d’une classe pouvaient se voir attribuer un rôle : agresseur, assistant, renforçateur, extérieur, défenseur ou victime. Celui qui rit, encourage ou se tait donne attention et prestige à l’agresseur ; celui qui défend protège l’enfant visé. Les programmes contre le harcèlement visent donc toute la classe et responsabilisent les témoins (Olweus, 1993). On s’exerce à des actions sûres : ne pas rire avec les autres, demander de l’aide, inclure ou consoler. Aucun enfant ne doit s’interposer seul.",
+        "quellen": [
+          "Salmivalli, C., Lagerspetz, K., Björkqvist, K., Österman, K. & Kaukiainen, A. (1996). Bullying as a group process: Participant roles and their relations to social status within the group. Aggressive Behavior, 22(1), 1–15.",
+          "Olweus, D. (1993). Bullying at School: What We Know and What We Can Do. Oxford: Blackwell."
+        ],
+        "differenzierung": {
+          "leichter": "Rejouer l’histoire avec des étiquettes de prénoms. Discuter l’exercice 3 à l’oral.",
+          "schwerer": "Réécrire l’histoire : que se passe-t-il si Aylin et Finn ne détournent pas les yeux ?"
+        },
+        "impulse": [
+          "Pourquoi certains rient-ils alors qu’ils trouvent ça mal ?",
+          "Qu’est-ce qui est plus difficile : demander de l’aide ou dire « Arrêtez » ?",
+          "À quoi Kim voit-elle que quelqu’un est de son côté ?"
+        ],
+        "tipps": [
+          "Ne jamais attribuer les rôles à de vrais enfants de la classe – utiliser des personnages inventés.",
+          "Montrer les chemins vers l’aide : qui surveille la récré aujourd’hui, et où ?"
+        ],
+        "achtung": "Si un enfant parle de harcèlement dans sa classe : ne pas approfondir devant tous, pas de noms. Questions en privé, informer la direction compétente (responsable). En cas de violence, agir tout de suite selon la procédure interne.",
+        "material": "En option, des étiquettes de prénoms pour rejouer l’histoire"
       }
     }
   },
@@ -716,6 +888,73 @@
         "achtung": "Reagiert ein Kind beim Thema Traurigkeit sehr betroffen oder erzählt es von großem Kummer zu Hause: nicht im Plenum vertiefen, später allein nachfragen und bei Bedarf die zuständige Leitung (Responsable) informieren.",
         "material": "Buntstifte; optional ein kleiner Spiegel"
       }
+    },
+    "fr": {
+      "titel": "Comment ça fait ?",
+      "untertitel": "Le visage et le corps montrent comment va quelqu’un.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Regarde les images. Comment se sent Amira ? Entoure.", "symbole": ["zeigen", "einkreisen"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:amira:froh:zeigen"], "requisit": "icon:palette", "blase": "keine", "untertitel": "Amira a longtemps dessiné." },
+            { "figuren": ["figur:amira:ueberrascht"], "requisit": "icon:droplet", "blase": "keine", "untertitel": "Le gobelet d’eau se renverse." },
+            { "figuren": ["figur:amira:traurig:haende-gesicht"], "blase": "keine", "untertitel": "Le dessin est tout mouillé." }
+          ]
+        },
+        {
+          "art": "gefuehle",
+          "gefuehle": ["froh", "traurig", "wuetend", "enttaeuscht"],
+          "modus": "einkreisen",
+          "woerter": ["contente", "triste", "en colère", "déçue"]
+        },
+        { "art": "aufgabe", "text": "Noah voit Amira. Qu’est-ce qui l’aide ? Coche.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "demander : « Que s’est-il passé ? »",
+            "rire très fort",
+            "donner un mouchoir",
+            "dire : « C’est pas grave. »",
+            "s’asseoir à côté d’Amira",
+            "l’aider à refaire un dessin"
+          ],
+          "spalten": 2
+        },
+        { "art": "aufgabe", "text": "Que dit Noah à Amira ? Écris dans la bulle.", "symbole": ["schreiben"] },
+        { "art": "dialog", "zeilen": [{ "wer": "Amira", "text": "Mon dessin est abîmé." }, { "wer": "Noah" }] }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent au visage, à la posture et à la situation comment un autre enfant se sent, et essaient des mots et des gestes pour consoler.",
+        "ablauf": [
+          "Entrée en matière (5 min) : regarder ensemble la bande dessinée. Questions : « Que se passe-t-il ? À quoi vois-tu comment va Amira ? »",
+          "Exercice 1 : plusieurs sentiments sont justes. Faire justifier : les larmes, les mains devant le visage, le dessin mouillé.",
+          "Exercice 2 : lire les propositions, les enfants montrent le pouce en haut ou en bas. Discuter pourquoi « C’est pas grave » ne console pas.",
+          "Exercice 3 : rejouer à deux – un enfant est Amira, l’autre Noah. Ensuite, écrire la phrase de réconfort.",
+          "Clôture : « Qu’est-ce qui t’aide quand tu es triste ? » Rassembler les réponses comme idées de réconfort et les afficher."
+        ],
+        "hintergrund": "Reconnaître les sentiments des autres fait partie des bases de la compétence émotionnelle. Pour cela, les enfants utilisent l’expression du visage, la posture et la situation ; avec l’âge scolaire, ils apprennent à relier ces indices (Denham, 1998). Les enfants qui comprennent bien les sentiments s’entendent mieux avec les autres et réagissent plus justement à leur chagrin (Petermann & Wiedebusch, 2016). Consoler ne demande pas la phrase parfaite : regarder, demander et être là agissent souvent plus que les conseils. La bande dessinée offre un cadre protégé, car on parle des sentiments d’un personnage inventé.",
+        "quellen": [
+          "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford.",
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Ne proposer que deux sentiments au choix. Dire la phrase de réconfort à l’oral, l’adulte écrit avec l’enfant.",
+          "schwerer": "Dessiner une quatrième image : comment l’histoire continue-t-elle après que Noah l’a consolée ?"
+        },
+        "impulse": [
+          "À quoi reconnais-tu la tristesse, même sans larmes ?",
+          "Que fais-tu quand quelqu’un veut être seul pour le moment ?",
+          "Quand quelqu’un t’a-t-il déjà consolé ?"
+        ],
+        "tipps": [
+          "Imiter les sentiments devant un miroir : « Montre-moi triste – et maintenant déçu. »",
+          "Ne pas forcer à consoler : certains enfants ont d’abord besoin d’un moment pour eux."
+        ],
+        "achtung": "Si un enfant réagit très fortement au thème de la tristesse ou parle d’un gros chagrin à la maison : ne pas approfondir en classe entière, poser des questions plus tard en privé et, si besoin, informer la direction compétente (responsable).",
+        "material": "Crayons de couleur ; en option, un petit miroir"
+      }
     }
   },
   {
@@ -878,6 +1117,87 @@
         ],
         "achtung": "Erzählt ein Kind in Aufgabe 3 von einem belastenden Konflikt, etwa zu Hause: nicht im Plenum vertiefen, sondern später allein nachfragen und bei Bedarf die zuständige Leitung (Responsable) informieren.",
         "material": "Optional zwei Stühle für das Rollenspiel"
+      }
+    },
+    "fr": {
+      "titel": "À la place de l’autre",
+      "untertitel": "La même situation peut sembler très différente à deux personnes. Celui qui connaît les deux versions comprend mieux.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Emma raconte",
+          "text": "À la cantine, je veux m’asseoir à côté de Zoé, comme chaque jour. Mais le nouveau, Elias, est assis à ma place. Je dis fort : « C’est ma place. » Elias ne lève même pas les yeux. Quel crâneur, je me dis. Je vais m’asseoir ailleurs et je suis fâchée tout l’après-midi.",
+          "bild": "figur:mia:wuetend"
+        },
+        {
+          "art": "geschichte",
+          "titel": "Elias raconte",
+          "text": "Je suis à l’école depuis une semaine seulement et je ne connais presque personne. À la cantine, Zoé m’a dit : « Assieds-toi avec nous. » Tout à coup, une fille se tient devant moi et dit fort : « C’est ma place. » Tout le monde regarde. Mon visage devient brûlant, je fixe mon assiette. Je ne savais pas que c’était sa place.",
+          "bild": "figur:noah:verlegen"
+        },
+        { "art": "aufgabe", "text": "Compare les deux versions. Complète les phrases.", "symbole": ["lesen", "schreiben"] },
+        {
+          "art": "spalten",
+          "links": [{ "art": "satzanfaenge", "items": ["Emma pense :", "Emma se sent …", "Emma souhaite …"], "linien": 2 }],
+          "rechts": [{ "art": "satzanfaenge", "items": ["Elias pense :", "Elias se sent …", "Elias souhaite …"], "linien": 2 }]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Comment te mettre à la place de l’autre",
+          "punkte": [
+            "Qu’est-ce que je ne sais pas sur l’autre ?",
+            "Que pense peut-être l’autre en ce moment ?",
+            "Comment me sentirais-je à sa place ?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Emma veut éclaircir les choses. Comment la conversation continue-t-elle ? Écris.",
+          "symbole": ["schreiben", "partner"]
+        },
+        {
+          "art": "dialog",
+          "zeilen": [{ "wer": "Emma", "text": "Dis, Elias, à propos de tout à l’heure à la cantine …" }, { "wer": "Elias" }, { "wer": "Emma" }]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pense à une dispute que tu as vécue. Comment l’autre personne l’a-t-elle peut-être vécue ?",
+          "hinweis": "Tu n’as pas besoin d’écrire de noms.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        { "art": "satzanfaenge", "items": ["J’ai pensé :", "L’autre personne a peut-être pensé :", "Elle s’est peut-être sentie …"], "linien": 2 },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants comparent deux points de vue sur la même situation, voient que les malentendus viennent souvent d’un manque d’information, et s’exercent à se mettre à la place de l’autre.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire seulement la version d’Emma. Question : « Que penses-tu d’Elias ? » Recueillir les avis sans juger.",
+          "Puis lire la version d’Elias. Questions : « Qu’est-ce qui a changé pour toi ? Que ne savait pas Emma ? »",
+          "Exercice 1 seul ; ensuite, comparer les deux colonnes en classe.",
+          "Lire l’encadré « À retenir ». Écrire l’exercice 2 à deux et le jouer en se répartissant les rôles.",
+          "Exercice 3 seul. Seul celui qui le souhaite en parle."
+        ],
+        "hintergrund": "Prendre la perspective de l’autre, c’est voir une situation avec ses yeux : que sait-il, que pense-t-il, que ressent-il ? Cette capacité se développe nettement à l’école primaire ; mais l’utiliser dans une dispute dépend beaucoup de l’entraînement. Des programmes de prévention de la violence comme Faustlos commencent donc par l’empathie : reconnaître les sentiments, comprendre les raisons, ajuster sa propre réaction (Cierpka, 2005). Dans le programme PATHS aussi, des exercices réguliers sur les sentiments et les points de vue ont amélioré la compréhension des émotions chez les enfants du primaire (Greenberg et al., 1995). Une histoire racontée de deux côtés le montre bien : beaucoup de conflits naissent d’un manque d’information, pas d’une mauvaise intention.",
+        "quellen": [
+          "Cierpka, M. (Hrsg.) (2005). Faustlos – Wie Kinder Konflikte gewaltfrei lösen lernen. Freiburg: Herder.",
+          "Greenberg, M. T., Kusché, C. A., Cook, E. T. & Quamma, J. P. (1995). Promoting emotional competence in school-aged children: The effects of the PATHS curriculum. Development and Psychopathology, 7(1), 117–136."
+        ],
+        "differenzierung": {
+          "leichter": "Rejouer l’histoire avec deux chaises : celui qui s’assoit sur la chaise d’Emma parle en tant qu’Emma.",
+          "schwerer": "Raconter la scène du point de vue de Zoé : qu’a-t-elle vu et pensé ?"
+        },
+        "impulse": [
+          "Quand as-tu mal jugé quelqu’un ?",
+          "À quoi remarques-tu qu’il te manque des informations ?",
+          "Qu’est-ce qui aide le plus : demander ou supposer ?"
+        ],
+        "tipps": [
+          "Utiliser aussi la méthode des deux chaises dans de vrais conflits : chacun raconte, l’autre écoute seulement.",
+          "Afficher bien visibles en classe les trois questions de l’encadré « À retenir »."
+        ],
+        "achtung": "Si un enfant parle dans l’exercice 3 d’un conflit pesant, par exemple à la maison : ne pas approfondir en classe entière, mais poser des questions plus tard en privé et, si besoin, informer la direction compétente (responsable).",
+        "material": "En option, deux chaises pour le jeu de rôle"
       }
     }
   },
@@ -1551,6 +1871,92 @@
         ],
         "material": "Schere; Material für die Gruppenaufgabe"
       }
+    },
+    "fr": {
+      "titel": "Bien travailler ensemble",
+      "untertitel": "Dans un bon groupe, chaque enfant a une tâche. Ainsi, personne n’est oublié et le travail est terminé.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "L’affiche",
+          "text": "Sofia, Yusuf, Léa et Finn doivent faire une affiche sur la forêt. Sofia et Yusuf écrivent dessus en même temps. Finn cherche la colle pendant dix minutes. Léa a une bonne idée, mais personne ne l’écoute. Quand l’heure est finie, l’affiche est à moitié vide.",
+          "bild": "figur:lea:enttaeuscht"
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce qui aurait aidé le groupe ? Écris deux idées.", "symbole": ["lesen", "schreiben"] },
+        { "art": "linien", "anzahl": 2 },
+        {
+          "art": "aufgabe",
+          "text": "Lisez les cartes de rôles. Découpez-les et répartissez les rôles dans votre groupe.",
+          "hinweis": "Chaque rôle a une tâche particulière. Tout le monde peut réfléchir et donner des idées.",
+          "symbole": ["gruppe", "schneiden"]
+        },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 150,
+          "karten": [
+            { "bild": "icon:clock", "titel": "Gardien du temps", "text": "surveille l’horloge : « Encore cinq minutes. »" },
+            { "bild": "icon:pencil", "titel": "Secrétaire", "text": "note les idées : « Je note comme ça ? »" },
+            { "bild": "icon:microphone", "titel": "Porte-parole", "text": "présente le résultat : « Notre groupe a … »" },
+            { "bild": "icon:scissors", "titel": "Cheffe du matériel", "text": "va chercher le matériel et range : « Je vais chercher les ciseaux. »" }
+          ]
+        },
+        { "art": "satzanfaenge", "items": ["Mon rôle aujourd’hui :"] },
+        {
+          "art": "aufgabe",
+          "text": "Faites votre accord et signez.",
+          "hinweis": "Par exemple : … nous l’écoutons jusqu’à la fin. … nous votons. … nous demandons ce qui se passe.",
+          "symbole": ["gruppe", "schreiben"]
+        },
+        {
+          "art": "vertrag",
+          "titel": "Notre accord de groupe",
+          "text": "Quand quelqu’un parle, ___. Quand nous avons des idées différentes, ___. Quand quelqu’un ne participe pas, ___.",
+          "unterschriften": ["Nom", "Nom", "Nom", "Nom"]
+        },
+        { "art": "aufgabe", "text": "Après le travail : comment ça s’est passé ? Cochez ensemble.", "symbole": ["gruppe", "ankreuzen"] },
+        {
+          "art": "einschaetzung",
+          "optionen": ["bien", "en partie", "pas encore"],
+          "items": [
+            "Chacun a rempli son rôle.",
+            "Nous nous sommes écoutés.",
+            "Tout le monde a pu dire ses idées.",
+            "Nous avons fini à temps.",
+            "Nous avons respecté notre accord."
+          ]
+        },
+        { "art": "linien", "anzahl": 2, "label": "Ce que nous ferons autrement la prochaine fois :" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent quatre rôles de groupe, les répartissent, conviennent de règles pour collaborer et font ensuite le point ensemble.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. Recueillir l’exercice 1 en classe : qu’est-ce qui a manqué au groupe ?",
+          "Présenter les cartes de rôles, dire une fois à voix haute les phrases d’exemple. Préciser : chaque rôle réfléchit aussi sur le contenu.",
+          "En groupes de quatre, répartir les rôles (tirer au sort en cas de désaccord), remplir l’accord et le signer.",
+          "Travailler sur une vraie tâche de groupe, par exemple une affiche ou une énigme (15 à 20 min).",
+          "Exercice 4 juste après, en groupe. Chaque groupe nomme un point pour la prochaine fois."
+        ],
+        "hintergrund": "Collaborer ne va pas de soi pour les enfants : quand les tâches et les règles sont floues, les groupes se divisent souvent en grands parleurs et silencieux. Des rôles fixes donnent à chaque enfant une responsabilité visible et rendent la contribution de tous nécessaire. Cela renforce deux besoins fondamentaux qui, selon la théorie de l’autodétermination, soutiennent la motivation : se sentir compétent et appartenir au groupe (Deci & Ryan, 2000). Les programmes efficaces d’apprentissage social exercent ces compétences de façon explicite, active et par étapes, au lieu de simplement les attendre (Durlak et al., 2011). Le bilan commun rend les progrès visibles et fournit le prochain accord.",
+        "quellen": [
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268.",
+          "Durlak, J. A., Weissberg, R. P., Dymnicki, A. B., Taylor, R. D. & Schellinger, K. B. (2011). The impact of enhancing students’ social and emotional learning: A meta-analysis of school-based universal interventions. Child Development, 82(1), 405–432."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer avec deux rôles (gardien du temps, cheffe du matériel). Conclure l’accord à l’oral.",
+          "schwerer": "Inventer un cinquième rôle, par exemple « médiatrice », et créer une carte pour lui."
+        },
+        "impulse": [
+          "Quel rôle te convient, lequel veux-tu t’exercer à tenir ?",
+          "Que faites-vous quand quelqu’un oublie son rôle ?",
+          "De quoi votre groupe est-il fier aujourd’hui ?"
+        ],
+        "tipps": [
+          "Former soi-même les groupes pour qu’aucun enfant ne reste de côté.",
+          "Changer les rôles à chaque travail de groupe et garder les cartes plastifiées dans la classe."
+        ],
+        "material": "Ciseaux ; matériel pour la tâche de groupe"
+      }
     }
   },
   {
@@ -2174,6 +2580,63 @@
         "achtung": "Findet ein Kind kaum Vertrauenspersonen, das behutsam im Blick behalten. Erzählt es von einem schlechten Geheimnis oder davon, dass ihm jemand wehtut: nicht im Plenum vertiefen, allein zuhören und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gewalt sofort nach dem internen Ablauf handeln.",
         "material": "Buntstifte"
       }
+    },
+    "fr": {
+      "titel": "Ma main d’aide",
+      "untertitel": "Cinq doigts – cinq personnes qui t’aident.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Qui t’aide ? Écris ou dessine une personne pour chaque doigt.",
+          "hinweis": "Pense à des personnes à la maison, à l’école et pendant tes loisirs.",
+          "symbole": ["schreiben", "malen"]
+        },
+        {
+          "art": "hand",
+          "finger": ["à la maison", "à l’école", "à la Maison Relais", "pendant les loisirs", "quelqu’un d’autre"],
+          "mitte": "Mes aides"
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Si l’un ne t’aide pas, demande au doigt suivant.",
+          "text": "Tu peux toujours demander de l’aide. Par exemple, quand …",
+          "punkte": ["tu as mal.", "tu as peur ou tu es triste.", "quelqu’un t’embête encore et encore.", "un secret te donne mal au ventre."]
+        },
+        { "art": "aufgabe", "text": "Exerce la phrase. Termine-la.", "symbole": ["sprechen", "schreiben"] },
+        { "art": "satzanfaenge", "items": ["J’ai besoin d’aide parce que …", "D’abord, je demande à …"] },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants nomment cinq personnes de confiance dans des domaines de vie différents, connaissent des occasions de demander de l’aide et s’exercent à le faire.",
+        "ablauf": [
+          "Entrée en matière (5 min) : poser sa main sur la table. Question : « Qui vous aide quand quelque chose tourne mal ? »",
+          "Exercice 1 : trouver une personne pour chaque doigt. Celui qui n’aime pas écrire dessine – ou l’adulte écrit avec lui.",
+          "Lire l’encadré. Distinguer bons secrets (surprises) et mauvais secrets : les mauvais donnent mal au ventre et peuvent toujours être racontés.",
+          "Exercice 2 : s’exercer à deux à dire la phrase, une fois doucement, une fois à voix haute.",
+          "Clôture : emporter la main à la maison ou, si l’enfant le souhaite, l’afficher en classe."
+        ],
+        "hintergrund": "La main d’aide est une méthode répandue de prévention : les enfants nomment cinq personnes de confiance dans différents domaines de vie. Il y a une bonne raison à cela. La recherche sur la résilience montre que, dans les situations difficiles, les enfants profitent particulièrement d’adultes fiables et disponibles – y compris en dehors de la famille (Werner & Smith, 1992). Chercher un soutien social est en outre une stratégie importante pour gérer des sentiments pesants (Petermann & Wiedebusch, 2016). Plusieurs personnes comptent : si la première n’écoute pas, l’enfant sait qui demander ensuite.",
+        "quellen": [
+          "Werner, E. E. & Smith, R. S. (1992). Overcoming the Odds. Ithaca: Cornell University Press.",
+          "Petermann, F. & Wiedebusch, S. (2016). Emotionale Kompetenz bei Kindern (3. Aufl.). Göttingen: Hogrefe."
+        ],
+        "differenzierung": {
+          "leichter": "Faire dire les noms à l’oral et les noter. Les dessins à la place de l’écriture conviennent.",
+          "schwerer": "Noter pour chaque personne en quoi elle peut aider particulièrement bien."
+        },
+        "impulse": [
+          "Qui demanderais-tu en premier – et pourquoi ?",
+          "Qu’est-ce qu’un bon secret, qu’est-ce qu’un mauvais secret ?",
+          "Que peux-tu faire quand personne n’écoute pour le moment ?"
+        ],
+        "tipps": [
+          "Veiller à ce que chaque main compte au moins un adulte de l’école.",
+          "Regarder la main ensemble après quelques semaines et la compléter."
+        ],
+        "achtung": "Si un enfant trouve à peine de personnes de confiance, rester attentif. S’il parle d’un mauvais secret ou de quelqu’un qui lui fait mal : ne pas approfondir en classe, écouter en privé, informer la direction compétente (responsable). En cas de violence, agir tout de suite selon la procédure interne.",
+        "material": "Crayons de couleur"
+      }
     }
   },
   {
@@ -2312,6 +2775,81 @@
         ],
         "achtung": "Bleibt der innere Kreis leer oder nennt ein Kind keinen Erwachsenen: behutsam allein nachfragen und die zuständige Leitung (Responsable) informieren. Bei Hinweisen auf Gewalt oder Vernachlässigung sofort nach dem internen Ablauf handeln.",
         "material": "Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Mon réseau de soutien",
+      "untertitel": "Personne n’a à tout faire seul. Celui qui sait à qui demander trouve de l’aide plus vite.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Nora ne sait plus quoi faire",
+          "text": "Depuis une semaine, deux enfants de la classe rient des lunettes de Nora. Nora ne l’a encore dit à personne. Sa maman travaille tard le soir, et sa meilleure amie est dans une autre classe. Nora pense : « Il n’y a personne à qui je peux demander. »",
+          "bild": "figur:amira:besorgt"
+        },
+        { "art": "aufgabe", "text": "C’est vrai ? Qui Nora pourrait-elle demander ? Écris trois idées.", "symbole": ["lesen", "schreiben"] },
+        { "art": "linien", "anzahl": 2 },
+        {
+          "art": "aufgabe",
+          "text": "Qui demandes-tu pour quoi ? Complète les phrases.",
+          "hinweis": "Ce peuvent être des personnes différentes – la bonne pour chaque souci.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Quand je suis triste, je vais voir",
+            "Quand quelqu’un m’embête, je le dis à",
+            "Pour les devoirs, la personne qui m’aide, c’est",
+            "Quand je me dispute avec un ami, je parle avec",
+            "Quand je m’inquiète pour quelqu’un, je le raconte à"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Ici aussi, tu trouves de l’aide",
+          "text": "Tu n’as envie de parler à personne que tu connais ? Au Kanner- a Jugendtelefon, quelqu’un t’écoute. C’est gratuit, et tu n’as pas besoin de dire ton nom. Téléphone : 116 111"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui fait partie de ton réseau ? Écris des noms dans les cercles.",
+          "hinweis": "Au centre, il y a les personnes très proches. Plus loin, il y a les personnes qui peuvent aussi t’aider.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "zielscheibe", "ringe": ["Peuvent aussi aider", "Bien connues", "Très proches"], "mitte": "Moi" },
+        { "art": "aufgabe", "text": "Tu fais aussi partie d’autres réseaux. Pour qui es-tu là ?", "symbole": ["nachdenken", "schreiben"] },
+        { "art": "satzanfaenge", "items": ["Je suis là pour", "Voilà comment j’aide :"], "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants rendent leur réseau de soutien visible, réfléchissent à qui parler pour quels soucis et connaissent le Kanner- a Jugendtelefon.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. Question : « Est-ce vrai que Nora n’a personne ? » Noter au tableau les idées de l’exercice 1.",
+          "Exercice 2 seul. Insister : pour des soucis différents, des personnes différentes conviennent.",
+          "Lire l’encadré d’aide et expliquer brièvement comment se passe un appel au Kanner- a Jugendtelefon.",
+          "Exercice 3 : écrire des noms dans les cercles. Entraîneurs, voisins ou adulte de la récré comptent aussi.",
+          "Exercice 4 et court échange à deux : « Pour qui es-tu là ? »"
+        ],
+        "hintergrund": "Un réseau de relations solide est l’un des facteurs de protection les plus importants : des personnes fiables dans la famille, à l’école et pendant les loisirs aident les enfants à surmonter les difficultés (Masten, 2014). Antonovsky (1987) décrit le soutien social comme une ressource centrale de résistance : celui qui sait que l’aide est disponible vit plus facilement les situations difficiles comme gérables. Pourtant, dans les moments pesants, les enfants ne pensent souvent à personne. Rendre le réseau visible sur le papier y remédie et clarifie qui demander pour quoi. L’autre sens compte aussi : celui qui aide lui-même se vit comme une partie précieuse d’un réseau.",
+        "quellen": [
+          "Masten, A. S. (2014). Ordinary Magic: Resilience in Development. New York: Guilford.",
+          "Antonovsky, A. (1987). Unraveling the Mystery of Health. San Francisco: Jossey-Bass."
+        ],
+        "differenzierung": {
+          "leichter": "Ne traiter que les exercices 2 et 3. Compléter les noms par de petits dessins.",
+          "schwerer": "Noter pour chaque personne quand et comment on peut la joindre."
+        },
+        "impulse": [
+          "Qui demanderais-tu en premier pour un gros problème ?",
+          "Que fais-tu si la première personne n’a pas le temps ?",
+          "À quoi remarques-tu que quelqu’un a besoin de ton aide ?"
+        ],
+        "tipps": [
+          "Ne pas faire comparer les réseaux – chaque réseau a une taille différente.",
+          "Afficher bien visible le numéro 116 111 dans la classe."
+        ],
+        "achtung": "Si le cercle intérieur reste vide ou si un enfant ne nomme aucun adulte : poser des questions avec précaution en privé et informer la direction compétente (responsable). En cas d’indices de violence ou de négligence, agir immédiatement selon la procédure interne.",
+        "material": "Crayons"
       }
     }
   },

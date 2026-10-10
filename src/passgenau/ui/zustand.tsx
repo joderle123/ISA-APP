@@ -127,6 +127,8 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
   const [speicherStatus, setSpeicherStatus] = useState<{ art: 'ok' | 'laeuft' | 'fehler'; text: string } | null>(null)
   const [getauscht, setGetauscht] = useState<Record<string, number>>({})
   const [heikel, setHeikel] = useState<NonNullable<Auftrag['heikel']>>([])
+  /** Sozialform der nächsten Planung (Aufgabe 151); in einer Gruppe aus dem Hub vorbelegt */
+  const [sozialform, setSozialform] = useState<Auftrag['sozialform']>('einzeln')
   const [startZiel, setStartZiel] = useState<string | null>(null)
   const [dlg, setDlg] = useState<Dialog | null>(null)
   const [hinweis, setHinweisZustand] = useState<Hinweis | null>(null)
@@ -196,6 +198,7 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       setSchalter(schalterLesen(null))
       setOhneKind(true)
       setRoh(null)
+      setStartZiel(startHash?.ziel ?? null)
       setStatus('bereit')
       setAnsichtZustand('ohnekind')
     }
@@ -231,14 +234,21 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
           return
         }
         try {
-          const p = (await hub.profil(r)) as ProfilRoh
+          // Gruppe (Aufgabe 151): jedes Kind mit seinen gespeicherten Korrekturen, dann übereinandergelegt; Korrekturen
+          // dieser Planung gelten nur hier, Lernen und Verlauf je Kind ruhen
+          const g = startHash?.gruppe && startHash.gruppe.length > 1 ? startHash.gruppe : null
+          const liste = g ? ((await Promise.all(g.map((x) => hub.profil(x)))) as ProfilRoh[]) : null
+          const p = liste
+            ? (K.gruppenProfil(liste.map((x) => mitKorrekturen(x, hub.korrekturenAusHub(x.kind), !!x.kind?.vorname))) as ProfilRoh)
+            : ((await hub.profil(r)) as ProfilRoh)
           if (aus) return
           setRef(r)
           setOhneKind(false)
           setRoh(p)
+          setSozialform(liste ? (liste.length === 2 ? 'zu-zweit' : 'kleingruppe') : 'einzeln')
           // gespeicherte Korrekturen (PROTOKOLL.md, profil.kind): der Hub hat sie schon angewandt – außer der Abwahl von
           // Zielen und Themen, die gilt erst hier
-          const k = hub.korrekturenAusHub(p.kind)
+          const k = liste ? {} : hub.korrekturenAusHub(p.kind)
           korrGesendet.current = k
           setKorr(k)
           setDruck((d) => ({ ...d, vorname: !!p.kind?.vorname }))
@@ -273,7 +283,7 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
         if (korrTimer.current) window.clearTimeout(korrTimer.current)
         korrTimer.current = window.setTimeout(() => {
           const r = refs.current
-          if (!r.ref || !r.darfSpeichern || !r.roh) return
+          if (!r.ref || !r.darfSpeichern || !r.roh || r.roh.gruppe?.length) return
           const aenderungen = hub.korrekturenFuerHub(korrGesendet.current, neu, r.roh)
           if (!Object.keys(aenderungen).length) return
           korrGesendet.current = neu
@@ -379,6 +389,8 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
   }, [])
 
   const sitzung = plan?.sitzungen[si] ?? null
+  // Texte der Oberfläche: Gruppe oder Einzel wie der angezeigte Plan (Aufgabe 151)
+  K.setzeTextModus((plan?.auftrag?.sozialform ?? 'einzeln') !== 'einzeln')
 
   const planBauen = useCallback(
     (a: Auftrag, opt: { profilOhneFolge?: boolean } = {}) => {
@@ -386,7 +398,7 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       if (!r.katalog || !r.profil) return
       const t0 = performance.now()
       const p = opt.profilOhneFolge ? { ...r.profil, folge: null } : r.profil
-      const auftrag: Auftrag = { ...a, heikel: heikel.length ? heikel : a.heikel }
+      const auftrag: Auftrag = { ...a, heikel: heikel.length ? heikel : a.heikel, sozialform: a.weg === 'leicht' && !p.gruppe?.length ? 'einzeln' : sozialform }
       const neu = K.planen(r.katalog, p, auftrag, r.vor, verlauf)
       setPlan(neu)
       setRueckgaengig([])
@@ -404,7 +416,7 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       // Vorlieben merken: Dauer
       setVor((v) => ({ ...v, ich: { ...v.ich, dauer: a.dauer } as FachkraftVorlieben }))
     },
-    [heikel, hinweisZeigen, refs, setPlan, verlauf],
+    [heikel, hinweisZeigen, refs, setPlan, sozialform, verlauf],
   )
 
   const planSichern = useCallback(
@@ -422,7 +434,11 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
       const stapel = r.lernenKind && r.darfSpeichern ? offen.current.splice(0) : []
       setSpeicherStatus({ art: 'laeuft', text: 'wird gespeichert …' })
       try {
-        const erg = await hub.speichern(r.ref, p, { gedruckt: grund === 'druck', ...(stapel.length ? { ereignisse: stapel } : {}), ...(r.lernenKind && r.darfSpeichern ? { vorlieben: r.vor.kind } : {}) })
+        // Gruppe: derselbe Plan in jedes Dossier (ohne Änderungszähler – die Dossiers zählen getrennt)
+        const gruppe = r.profil?.gruppe ?? []
+        const senden: Plan = gruppe.length > 1 ? { ...p, rev: undefined } : p
+        for (const m of gruppe.slice(1)) await hub.speichern(m.ref, senden, { gedruckt: grund === 'druck' })
+        const erg = await hub.speichern(r.ref, senden, { gedruckt: grund === 'druck', ...(stapel.length ? { ereignisse: stapel } : {}), ...(r.lernenKind && r.darfSpeichern ? { vorlieben: r.vor.kind } : {}) })
         letzterFlush.current = Date.now()
         setGespeichert((g) => ({ ...g, [p.id]: uhrzeit() }))
         // Änderungszähler des Hubs übernehmen (sonst hält der Hub den nächsten Stand für veraltet: „konflikt“)
@@ -435,8 +451,8 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
             erg.ort === 'tresor'
               ? 'Gedruckt – ohne Schreibrecht liegt der Plan in deinem persönlichen Tresor im Hub.'
               : grund === 'druck'
-                ? 'Gedruckt und beim Kind gespeichert.'
-                : 'Beim Kind gespeichert (verschlüsselt im Dossier).',
+                ? `Gedruckt und ${gruppe.length > 1 ? 'bei jedem Kind der Gruppe' : 'beim Kind'} gespeichert.`
+                : `${gruppe.length > 1 ? 'Bei jedem Kind der Gruppe' : 'Beim Kind'} gespeichert (verschlüsselt im Dossier).`,
             erg.ort === 'tresor' ? 'info' : 'ok',
           )
         return true
@@ -519,7 +535,7 @@ function usePassgenauZustand(startHash: hub.PassgenauStart | null, aktiv: boolea
     katalog, roh, setRoh, profil, korr, korrektur, vorname, darfSpeichern, darfRueckmelden, darfTresor, lernenKind, druck, setDruck,
     heikel, setHeikel, startZiel,
     // Vorlieben, Ereignisse
-    vor, setVor, melde, verlauf, setVerlauf,
+    vor, setVor, melde, verlauf, setVerlauf, sozialform, setSozialform, startAlter: startHash?.alter ?? null, startKey: JSON.stringify(startHash ?? {}),
     // Plan
     plan, setPlan, planAendern, zurueck, rueckgaengig, si, setSi, sitzung, planBauen, planSichern, pdfErzeugen, alsEigeneVorlage,
     gespeichert, getauscht, setGetauscht, daumenStand, setDaumenStand,

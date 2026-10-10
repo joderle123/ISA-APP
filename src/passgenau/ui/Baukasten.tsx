@@ -1,8 +1,11 @@
 // Passgenau – Baukasten-Editor (7): Bausteine suchen · Sitzung/Blatt bearbeiten · Vorschau (am Handy drei Reiter).
 // Text ändern nur in den Feldern aus `textfelder` (mit Längengrenze), sortieren, löschen mit Rückgängig, Platzhalter.
-import { useDeferredValue, useMemo, useRef, useState } from 'react'
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import type { BlattTeil, KatalogEintrag, Plan, Rolle } from '../typen'
 import * as K from './kern'
+import type { SuchFilter } from '../kern/alternativen'
+import { suchtexteVorbereiten } from '../kern/suche'
+import { THEMEN } from '../kern/vokabular'
 import { usePg, useProfil } from './zustand'
 import { Ic } from './zeichen'
 import { Chip, Pill, RolleBadge } from './Teile'
@@ -18,6 +21,11 @@ const BOGEN_F: [string, string][] = [['', 'alle Phasen'], ['wahrnehmen', 'Wahrne
 const FORMAT_F: [string, string][] = [['', 'alle Arten'], ['comic', 'Comic'], ['skala', 'Skala'], ['schreiben', 'Schreiben'], ['malen', 'Malen'], ['karten', 'Karten'], ['denkmodell', 'Modell'], ['ankreuzen', 'Ankreuzen']]
 const ROLLE_F: [Rolle, string][] = [['einstieg', 'Einstieg'], ['kern', 'Kern'], ['bewegung', 'Bewegung'], ['spiel', 'Spiel'], ['regulation', 'Regulation'], ['reflexion', 'Reflexion']]
 const QUELLE_F: [string, string][] = [['', 'alle Quellen'], ['kurs', 'Skills'], ['foerderfach', 'Förderfach'], ['material', 'Material'], ['spielschule', 'Spielschule'], ['crew', 'CREW'], ['freude', 'Freude & Beziehung'], ['praxis', 'Aus der Praxis']]
+/** Themen als Chips – heikle (Kinderschutz, Suizid, Sexualität) nie: die schaltet nur der Auftrag ausdrücklich frei */
+const THEMA_F = THEMEN.filter((t) => !t.heikel)
+/** „bis … Min.“ nach typischer Dauer; Blatt-Bausteine dauern fast alle unter 5 Minuten, darum dort engere Stufen */
+const DAUER_F: Record<Tab, number[]> = { ablauf: [5, 10, 20], blatt: [3, 5] }
+const TREFFER_MAX = 40
 
 function teilAendern(plan: Plan, nr: number, f: (l: BlattTeil[]) => BlattTeil[]): Plan {
   return { ...plan, sitzungen: plan.sitzungen.map((s) => (s.nr === nr ? { ...s, blatt: { titel: s.blatt?.titel ?? 'Mein Blatt', bausteine: f(s.blatt?.bausteine ?? []) } } : s)) }
@@ -38,6 +46,12 @@ export function Baukasten() {
   const [rolle, setRolle] = useState<Rolle>('kern')
   const [quelle, setQuelle] = useState('')
   const [text, setText] = useState('')
+  const [thema, setThema] = useState('')
+  const [dauer, setDauer] = useState(0)
+  const [ohneSchreiben, setOhneSchreiben] = useState(false)
+  const [ohneMaterial, setOhneMaterial] = useState(false)
+  const [nurFr, setNurFr] = useState(false)
+  const [mehrOffen, setMehrOffen] = useState(false)
   const [nurPasst, setNurPasst] = useState(true)
   const [offen, setOffen] = useState(-1)
   const [einfuegenBei, setEinfuegenBei] = useState<number | null>(null)
@@ -54,14 +68,31 @@ export function Baukasten() {
   const maxSeiten = kleineStufe ? 1 : 2
   const frei = Math.max(0, Array.from({ length: maxSeiten }, (_, i) => 1 - Math.min(1, fuell[i] ?? 0)).reduce((a, b) => a + b, 0) * 200)
 
-  const treffer = useMemo(() => {
-    const filter =
-      tab === 'blatt'
-        ? { typ: 'baustein' as const, bogen, format: format || undefined, ziel: ziel || undefined, text: text || undefined, passtHoehe: nurPasst ? frei : undefined }
-        : { typ: 'schritt' as const, rolle, ziel: ziel || undefined, quelle: quelle || undefined, text: text || undefined }
-    const imPlan = new Set([...s.schritte.map((x) => x.ref), ...teile.map((t) => t.ref)])
-    return K.suchen(k, p, filter, 40).filter((a) => !imPlan.has(a.eintrag.id))
-  }, [tab, bogen, format, ziel, text, nurPasst, frei, rolle, quelle, k, p, s.schritte, teile])
+  // Suchtexte der ganzen Liste in Ruhezeiten vorbereiten – schon der erste Buchstabe soll flüssig bleiben
+  useEffect(() => suchtexteVorbereiten(k), [k])
+
+  // Dauer-Stufen gelten je Reiter (Blatt: 3/5, Ablauf: 5/10/20) – eine gewählte Stufe des anderen Reiters wirkt dort nicht
+  const dauerMax = DAUER_F[tab].includes(dauer) ? dauer : 0
+  const zusatzFilter = (thema ? 1 : 0) + (dauerMax ? 1 : 0) + (ohneSchreiben ? 1 : 0) + (ohneMaterial ? 1 : 0) + (nurFr ? 1 : 0)
+  const zusatzZurueck = () => {
+    setThema('')
+    setDauer(0)
+    setOhneSchreiben(false)
+    setOhneMaterial(false)
+    setNurFr(false)
+  }
+  const suchFilter = useMemo<SuchFilter>(() => {
+    const mehr = { thema: thema || undefined, dauerMax: dauerMax || undefined, ohneSchreiben: ohneSchreiben || undefined, ohneMaterial: ohneMaterial || undefined, franzoesisch: nurFr || undefined }
+    return tab === 'blatt'
+      ? { typ: 'baustein', bogen, format: format || undefined, ziel: ziel || undefined, text: text || undefined, passtHoehe: nurPasst ? frei : undefined, ...mehr }
+      : { typ: 'schritt', rolle, ziel: ziel || undefined, quelle: quelle || undefined, text: text || undefined, ...mehr }
+  }, [tab, bogen, format, ziel, text, nurPasst, frei, rolle, quelle, thema, dauerMax, ohneSchreiben, ohneMaterial, nurFr])
+  // Tippen und Anklicken bleiben flüssig: die Liste folgt, sobald der Browser Zeit hat
+  const gesucht = useDeferredValue(suchFilter)
+  const sucht = gesucht !== suchFilter
+  const imPlan = useMemo(() => new Set([...s.schritte.map((x) => x.ref), ...(s.blatt?.bausteine ?? []).map((t) => t.ref)]), [s.schritte, s.blatt])
+  const gefunden = useMemo(() => K.suchen(k, p, gesucht, TREFFER_MAX + 20).filter((a) => !imPlan.has(a.eintrag.id)), [k, p, gesucht, imPlan])
+  const treffer = gefunden.slice(0, TREFFER_MAX)
 
   const wc = { profil: p, vorname: pg.vorname, plan }
 
@@ -210,8 +241,8 @@ export function Baukasten() {
             )}
             <label className="pg-suche">
               <Ic n="lupe" />
-              <span className="sr-only">Suchwort (optional)</span>
-              <input type="search" value={text} placeholder="Suchwort (optional)" onChange={(e) => setText(e.target.value)} maxLength={40} />
+              <span className="sr-only">Suchwörter (optional) – jedes Wort muss vorkommen</span>
+              <input type="search" value={text} placeholder="Suchen, z. B. Wut Atmen kurz" onChange={(e) => setText(e.target.value)} maxLength={60} />
             </label>
             {tab === 'blatt' ? (
               <>
@@ -260,14 +291,59 @@ export function Baukasten() {
                 ))}
               </div>
             )}
-            {tab === 'blatt' && (
-              <div className="pg-chips pg-mb">
+            <div className="pg-chips pg-mb">
+              {tab === 'blatt' && (
                 <Chip an={nurPasst} onClick={() => setNurPasst(!nurPasst)}>
                   passt aufs Blatt (~{Math.round(frei)} mm frei)
                 </Chip>
+              )}
+              <button type="button" className={'pg-chip' + (zusatzFilter ? ' an' : '')} aria-expanded={mehrOffen} aria-controls="pg-mehrfilter" onClick={() => setMehrOffen(!mehrOffen)}>
+                <Ic n={mehrOffen ? 'auf' : 'ab'} />
+                Thema, Dauer …
+                {zusatzFilter > 0 && <small>{zusatzFilter} gewählt</small>}
+              </button>
+            </div>
+            {mehrOffen && (
+              <div id="pg-mehrfilter">
+                <div className="pg-chips pg-mb" role="group" aria-label="Thema">
+                  <Chip an={!thema} onClick={() => setThema('')}>
+                    alle Themen
+                  </Chip>
+                  {THEMA_F.map((t) => (
+                    <Chip key={t.key} an={thema === t.key} onClick={() => setThema(t.key)}>
+                      {p.sprache.blatt === 'fr' ? t.fr : t.name}
+                    </Chip>
+                  ))}
+                </div>
+                <div className="pg-chips pg-mb" role="group" aria-label="Dauer">
+                  <Chip an={!dauerMax} onClick={() => setDauer(0)}>
+                    jede Dauer
+                  </Chip>
+                  {DAUER_F[tab].map((m) => (
+                    <Chip key={m} an={dauerMax === m} onClick={() => setDauer(m)}>
+                      bis {m} Min.
+                    </Chip>
+                  ))}
+                </div>
+                <div className="pg-chips pg-mb" role="group" aria-label="Nur">
+                  <Chip an={ohneSchreiben} onClick={() => setOhneSchreiben(!ohneSchreiben)}>
+                    ohne Schreiben
+                  </Chip>
+                  <Chip an={ohneMaterial} onClick={() => setOhneMaterial(!ohneMaterial)}>
+                    ohne Material
+                  </Chip>
+                  <Chip an={nurFr} onClick={() => setNurFr(!nurFr)}>
+                    auf Französisch
+                  </Chip>
+                </div>
               </div>
             )}
-            <div className="pg-suchliste" aria-live="polite">
+            {treffer.length > 0 && (gesucht.text || zusatzFilter > 0) && (
+              <p className="pg-leise pg-klein pg-m0 pg-mb" role="status">
+                {gefunden.length > TREFFER_MAX ? `Über ${TREFFER_MAX} Treffer – mit mehr Wörtern eingrenzen` : `${treffer.length} Treffer`}
+              </p>
+            )}
+            <div className="pg-suchliste" aria-live="polite" aria-busy={sucht}>
               {treffer.map((a) => {
                 const e = a.eintrag
                 const tx = K.textVon(e, p.sprache.blatt)
@@ -288,7 +364,16 @@ export function Baukasten() {
                   </div>
                 )
               })}
-              {!treffer.length && <p className="pg-leise">Keine passenden Bausteine – Filter lockern.</p>}
+              {!treffer.length && (
+                <p className="pg-leise">
+                  {gesucht.text?.trim() ? `Nichts gefunden für „${gesucht.text.trim()}“ – weniger Wörter versuchen oder Filter lockern.` : 'Keine passenden Bausteine – Filter lockern.'}{' '}
+                  {zusatzFilter > 0 && (
+                    <button type="button" className="pg-link" onClick={zusatzZurueck}>
+                      Thema, Dauer … zurücksetzen
+                    </button>
+                  )}
+                </p>
+              )}
             </div>
           </div>
         </div>

@@ -88,6 +88,85 @@
         "achtung": "Wenn ein Kind anderen häufig absichtlich schadet oder selbst oft verletzt wird, genauer hinschauen und die zuständige Leitung (Responsable) einbeziehen.",
         "material": "Stifte; für das Rollenspiel optional Becher und Tuch"
       }
+    },
+    "fr": {
+      "titel": "Oups – ce n’était pas bien",
+      "untertitel": "Ça arrive à chacun de faire une bêtise. Tu peux la réparer.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Lis l’histoire. Comment se sent Finn ? Écris-le sur la ligne.", "symbole": ["lesen", "schreiben"] },
+        {
+          "art": "comic",
+          "spalten": 3,
+          "felder": [
+            { "figuren": ["figur:noah:froh"], "requisit": "icon:palette", "blase": "keine", "untertitel": "Finn fait un dessin pour sa mamie." },
+            {
+              "figuren": ["figur:mia:ueberrascht", "figur:noah:ueberrascht"],
+              "requisit": "icon:droplet",
+              "blase": "keine",
+              "untertitel": "Mila court. Le gobelet tombe."
+            },
+            { "figuren": ["figur:mia:verlegen", "figur:noah:traurig"], "blase": "keine", "untertitel": "" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Que peut faire Mila maintenant ? Coche ce qui aide.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "dire « Je suis désolée »",
+            "s’enfuir",
+            "éponger l’eau",
+            "dire : « C’est pas grave. »",
+            "donner une feuille à Finn",
+            "demander : « Que puis-je faire ? »"
+          ]
+        },
+        { "art": "aufgabe", "text": "Jouez l’histoire à deux. Mila répare son erreur.", "symbole": ["sprechen", "partner"] },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Regarder", "text": "Que s’est-il passé ?" },
+            { "titel": "S’excuser", "text": "« Je suis désolée. »" },
+            { "titel": "Aider", "text": "« Que puis-je faire ? »" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Et toi ? Que peux-tu dire quand il t’arrive quelque chose comme ça ?", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Je regrette que …", "Je vais réparer. Je …"], "linien": 2 }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent comment va un autre enfant après une maladresse et s’exercent aux trois étapes de la réparation : regarder, s’excuser, aider.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire la bande dessinée. Questions : « Que s’est-il passé ? Qui ne va pas bien maintenant ? »",
+          "Exercice 1 : nommer le sentiment de Finn. Plusieurs réponses sont justes (triste, déçu, en colère).",
+          "Exercice 2 : pour « s’enfuir » et « C’est pas grave », demander : « Comment va Finn alors ? »",
+          "Exercice 3 (10 min) : montrer les trois étapes. Puis les enfants jouent à deux, en échangeant les rôles.",
+          "Exercice 4 : compléter les débuts de phrases, à l’oral si besoin.",
+          "Au quotidien, après un incident, rappeler les trois étapes – seulement quand tout le monde est de nouveau calme."
+        ],
+        "hintergrund": "La réparation ne cherche pas d’abord la punition adaptée, mais quel dommage est survenu et comment le réparer (Zehr, 2002). Pour les enfants, cela signifie : regarder, prendre ses responsabilités et faire quelque chose de concret – éponger, remplacer, aider. Les adultes aident le mieux en associant des attentes claires et beaucoup de soutien, et en agissant « avec » l’enfant plutôt que « contre » lui ou « à sa place » (Wachtel, 2016). Des excuses forcées restent souvent vides. Au cycle 2, les enfants apprennent justement à lire les sentiments des autres ; celui qui voit comment va l’autre peut mieux aider (Denham, 1998).",
+        "quellen": [
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books.",
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices.",
+          "Denham, S. A. (1998). Emotional Development in Young Children. New York: Guilford."
+        ],
+        "differenzierung": {
+          "leichter": "Lire les possibilités à voix haute ; l’enfant montre son choix.",
+          "schwerer": "Dessiner sa propre bande dessinée sur la réparation."
+        },
+        "impulse": [
+          "À quoi vois-tu comment va quelqu’un ?",
+          "Qu’est-ce qui est plus difficile : s’excuser ou aider ?",
+          "Qu’est-ce qui t’aide quand quelqu’un casse quelque chose de toi ?"
+        ],
+        "tipps": [
+          "Ne pas forcer à s’excuser, mais demander : « Comment peux-tu réparer ? »",
+          "Montrer l’exemple : si l’adulte fait une erreur, il montre lui-même les trois étapes."
+        ],
+        "achtung": "Si un enfant fait souvent du mal aux autres exprès ou est souvent blessé lui-même, regarder de plus près et associer la direction compétente (responsable).",
+        "material": "Crayons ; pour le jeu de rôle, en option, un gobelet et un chiffon"
+      }
     }
   },
   {
@@ -206,6 +285,122 @@
         ],
         "achtung": "Wenn deutlich wird, dass das Kind selbst bedroht, gemobbt oder verletzt wird: nicht weiter nachfragen, nach dem internen Ablauf handeln und die Leitung (Responsable) informieren.",
         "material": "Ruhiger Ort für das Gespräch"
+      }
+    },
+    "fr": {
+      "titel": "Que s’est-il passé ?",
+      "untertitel": "Parfois, quelque chose tourne mal. Avec ces questions, tu y réfléchis au calme – et tu trouves un moyen de réparer.",
+      "bausteine": [
+        {
+          "art": "skala",
+          "frage": "Avant de commencer : à quel point es-tu calme maintenant ? À 1 ou 2, fais d’abord une courte pause.",
+          "von": "pas du tout calme",
+          "bis": "tout à fait calme",
+          "stufen": 5
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que s’est-il passé ? Raconte comme une caméra.",
+          "hinweis": "Écris dans l’ordre ce qu’on pouvait voir et entendre.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "linien", "anzahl": 5 },
+        {
+          "art": "aufgabe",
+          "text": "Qu’as-tu pensé et ressenti à ce moment-là ? Et qu’en penses-tu aujourd’hui ?",
+          "hinweis": "Les mots de l’encadré peuvent t’aider.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        {
+          "art": "wortspeicher",
+          "titel": "Mots des émotions",
+          "items": ["la colère", "la vexation", "la déception", "la jalousie", "l’agacement", "la frayeur", "la peur", "le stress", "la tristesse"]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": ["À ce moment-là, j’ai pensé : …", "Ce que j’ai ressenti : …", "Aujourd’hui, j’en pense : …"],
+          "linien": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qui est concerné ? Comment va peut-être cette personne maintenant ?",
+          "hinweis": "Pense aussi à toi, aux enfants qui ont regardé et à la classe.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Qui ?", "Ce qui lui est arrivé", "Comment elle se sent"],
+          "breiten": [1, 2.2, 1.6],
+          "zeilen": 4,
+          "beispiel": ["Kim", "Son cahier est déchiré.", "triste, fâchée contre moi"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que faut-il maintenant pour que ça s’arrange ? Coche ou écris tes propres idées.",
+          "symbole": ["ankreuzen", "schreiben"]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "demander à la personne ce dont elle a besoin",
+            "m’excuser – à l’oral ou avec une carte",
+            "réparer ou remplacer quelque chose",
+            "aider à ranger",
+            "faire quelque chose de gentil pour la personne",
+            "en parler ensemble, un adulte aide"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que fais-tu autrement la prochaine fois ?",
+          "hinweis": "Un plan « si … alors » relie une situation difficile à une nouvelle idée.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je sens que je vais bientôt me mettre en colère,",
+              "dann": "je vais voir la maîtresse et je dis : « J’ai besoin d’une pause. »"
+            }
+          ]
+        },
+        { "art": "frage", "text": "Avec qui aimerais-tu parler de tes réponses ?", "linien": 1 },
+        { "art": "rueckblick", "frage": "Mon ressenti sur ces questions :" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants décrivent un incident de façon factuelle, nomment leurs pensées et leurs sentiments, voient qui est concerné et planifient une réparation.",
+        "ablauf": [
+          "Ne l’utiliser que lorsque tout le monde est calme – souvent le lendemain. Jamais comme punition ni devant la classe.",
+          "Poser le cadre : « Je voudrais comprendre ce qui s’est passé et réfléchir avec toi à la manière d’arranger les choses. »",
+          "Exercices 1 à 3 (15 min) : l’enfant écrit ou raconte, l’adulte écrit avec lui au besoin. Questionner plutôt que juger.",
+          "Exercices 4 et 5 (10 min) : choisir une réparation qui convient à la personne concernée ; formuler le plan.",
+          "N’offrir un entretien accompagné que si les deux sont prêts. Reprendre contact après une semaine."
+        ],
+        "hintergrund": "Le travail restauratif ne place pas la faute et la punition au centre, mais les questions : qui a été blessé, de quoi les personnes concernées ont-elles besoin et comment réparer le dommage (Zehr, 2002). Wachtel (2016) décrit pour cela quelques questions toujours identiques : Que s’est-il passé ? Qu’as-tu pensé à ce moment-là ? Qui est concerné ? Que doit-il se passer pour que ça s’arrange ? Des questions fixes donnent de la sécurité, séparent la personne du comportement et favorisent le changement de perspective – à condition d’être posées sans humilier. Le plan « si … alors » relie une situation déclenchante typique à une alternative (Gollwitzer, 1999).",
+        "quellen": [
+          "Wachtel, T. (2016). Defining Restorative. Bethlehem, PA: International Institute for Restorative Practices.",
+          "Zehr, H. (2002). The Little Book of Restorative Justice. Intercourse, PA: Good Books.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+        ],
+        "differenzierung": {
+          "leichter": "Poser les questions à l’oral et noter des mots-clés ; l’enfant peut dessiner.",
+          "schwerer": "Écrire le point de vue de la personne concernée : « Qu’est-ce qu’elle raconterait ? »"
+        },
+        "impulse": [
+          "Quand aurais-tu pu encore agir autrement ?",
+          "De quoi l’autre personne a-t-elle besoin maintenant ?",
+          "Qui peut t’aider à réparer ?"
+        ],
+        "tipps": [
+          "Interroger aussi les enfants concernés : « Qu’est-ce qui a été le pire ? De quoi as-tu besoin maintenant ? »",
+          "Ne pas imposer la réparation : l’enfant la choisit, la personne concernée est d’accord."
+        ],
+        "achtung": "S’il apparaît que l’enfant est lui-même menacé, harcelé ou blessé : ne plus poser de questions, agir selon la procédure interne et informer la direction (responsable).",
+        "material": "Un endroit calme pour l’entretien"
       }
     }
   },
@@ -511,6 +706,73 @@
         ],
         "material": "Buntstifte; optional eine Bildkarte mit dem Ziel für den Tisch"
       }
+    },
+    "fr": {
+      "titel": "Mon petit objectif",
+      "untertitel": "Un bon objectif est petit et clair. On peut voir si ça marche.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Choisis un objectif. Coche ou écris toi-même.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Je lève la main et j’attends.",
+            "Je range ma place.",
+            "Je demande de l’aide.",
+            "Je laisse les autres finir de parler.",
+            "Je reste à ma place.",
+            "Je fais la queue calmement."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ton objectif. Ça a marché ? Colorie l’étoile.",
+          "hinweis": "Un adulte regarde le plan avec toi chaque jour.",
+          "symbole": ["schreiben", "malen"]
+        },
+        { "art": "plan", "ziel": "", "zeilen": ["avant la récré", "après la récré"], "symbol": "stern" },
+        { "art": "aufgabe", "text": "Qui t’aide ? Coche ou écris.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": ["ma maîtresse ou mon maître", "un enfant de ma classe", "ma famille", "quelqu’un à la Maison Relais"]
+        },
+        { "art": "aufgabe", "text": "Vendredi : comment ça a marché ?", "symbole": ["einkreisen"] },
+        { "art": "skala", "von": "pas du tout", "bis": "très bien", "stufen": 5, "gesichter": true }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants choisissent un petit objectif de comportement observable, le suivent pendant une semaine avec un plan d’étoiles et vivent qu’avec du soutien, ils progressent.",
+        "ablauf": [
+          "Entrée en matière (5 min) : comparer deux objectifs : « Je suis sage » et « Je lève la main et j’attends ». Question : « Avec quel objectif peut-on voir si ça marche ? »",
+          "Exercice 1 : l’enfant choisit un objectif qu’il sait presque déjà faire. Un seul objectif par semaine.",
+          "Exercice 2 : écrire l’objectif sur la ligne, le pré-écrire si besoin. Fixer quand on regarde le plan.",
+          "Exercice 3 : désigner une personne qui aide et convenir d’un petit signe de rappel.",
+          "Chaque jour (2 min) : faire le point ensemble avant et après la récré. Féliciter chaque étoile de façon concrète.",
+          "Vendredi : remplir l’exercice 4 et décider : garder l’objectif, le rendre un peu plus grand ou en choisir un nouveau."
+        ],
+        "hintergrund": "Au cycle 2, les enfants régulent le mieux leur comportement quand l’objectif est petit, formulé positivement et observable : « Je lève la main et j’attends » plutôt que « Je ne suis plus aussi bruyant ». De courtes périodes et un retour plusieurs fois par jour rendent les progrès visibles ; la procédure check-in/check-out fonctionne ainsi, un enfant regardant chaque jour quelques objectifs avec un adulte de confiance (Crone, Hawken & Horner, 2010). Les réussites comptent plus que les erreurs : celui qui atteint un petit objectif se sent plus capable du suivant (Bandura, 1977). Le compliment agit le mieux quand il est immédiat et nomme précisément le comportement (Kazdin, 2008).",
+        "quellen": [
+          "Crone, D. A., Hawken, L. S. & Horner, R. H. (2010). Responding to Problem Behavior in Schools: The Behavior Education Program (2nd ed.). New York: Guilford.",
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Kazdin, A. E. (2008). The Kazdin Method for Parenting the Defiant Child. Boston: Houghton Mifflin."
+        ],
+        "differenzierung": {
+          "leichter": "N’observer qu’une période par jour. Coller l’objectif en carte image sur la table.",
+          "schwerer": "L’enfant s’évalue d’abord lui-même, puis l’adulte. Les étoiles concordent-elles ?"
+        },
+        "impulse": [
+          "À quoi remarques-tu que tu as atteint ton objectif ?",
+          "Qu’est-ce qui t’a aidé aujourd’hui ?",
+          "Quel objectif veux-tu essayer ensuite ?"
+        ],
+        "tipps": [
+          "Choisir l’objectif pour que l’enfant récolte beaucoup d’étoiles dès la première semaine. La réussite motive plus que la sévérité.",
+          "Laisser simplement vides les périodes non réussies – ne rien barrer, ne pas retirer d’étoiles."
+        ],
+        "material": "Crayons de couleur ; en option, une carte image avec l’objectif pour la table"
+      }
     }
   },
   {
@@ -629,6 +891,105 @@
           "Die Treppe sichtbar aufbewahren, z. B. im Heft oder an der Pinnwand – wenn das Kind einverstanden ist."
         ],
         "material": "Optional: Klebepunkte oder Sterne für geschaffte Stufen"
+      }
+    },
+    "fr": {
+      "titel": "Mon escalier d’objectifs",
+      "untertitel": "On atteint les grands objectifs marche par marche. Planifie ton escalier – avec les obstacles, les aides et les petites récompenses.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Mathis veut jouer fair-play",
+          "text": "Mathis aime jouer au foot à la récré. Quand son équipe perd, il rouspète et donne un coup de pied dans le ballon. Alors les autres ne veulent plus jouer avec lui. Mathis se fixe un objectif : « Je joue fair-play, même quand nous perdons. » Sa première marche : pendant une récré, il reste calme quand on marque contre lui. Son ami Robin le lui rappelle avec un pouce levé.",
+          "bild": "figur:tom:ruhig"
+        },
+        { "art": "aufgabe", "text": "Quel est ton grand objectif ? Écris-le de façon à pouvoir voir si tu y arrives.", "symbole": ["schreiben"] },
+        { "art": "satzanfaenge", "items": ["Mon objectif : Je …"], "linien": 2 },
+        {
+          "art": "ankreuzen",
+          "titel": "Vérifie ton objectif :",
+          "items": [
+            "Il dit ce que je veux faire – pas ce que je veux arrêter.",
+            "On peut voir ou entendre si j’y arrive.",
+            "Je peux y arriver en quelques semaines."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Construis ton escalier d’objectifs. Commence en bas par un petit premier pas.",
+          "hinweis": "Chaque marche est un peu plus difficile que la précédente. La marche du haut est ton objectif.",
+          "symbole": ["schreiben"]
+        },
+        { "art": "leiter", "stufen": 5, "oben": "mon objectif", "unten": "mon premier pas" },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui peut devenir difficile ? Prévois ce que tu fais alors et qui t’aide.",
+          "symbole": ["nachdenken", "schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Ce qui peut devenir difficile", "Ce que je fais alors", "Qui m’aide ?"],
+          "breiten": [1.6, 1.8, 1.1],
+          "zeilen": 3,
+          "beispiel": ["Nous perdons, et je m’énerve.", "J’expire et je dis : « La prochaine fois. »", "Robin me montre le pouce."]
+        },
+        { "art": "aufgabe", "text": "Comment fêtes-tu une marche réussie ? Coche ou écris.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Je le raconte à ma famille.",
+            "Je dessine une étoile sur la marche.",
+            "Je me dis : « J’ai réussi. »",
+            "Je choisis le prochain jeu de récré."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Quand une marche ne marche pas",
+          "text": "C’est normal. Exerce la marche encore une semaine ou fais-la plus petite. Même sur un vrai escalier, on redescend parfois d’une marche."
+        },
+        { "art": "aufgabe", "text": "Signe ton accord – avec la personne qui t’aide.", "symbole": ["schreiben"] },
+        {
+          "art": "vertrag",
+          "titel": "Mon accord",
+          "text": "Moi, ___, à partir du ___, je monte marche par marche vers mon objectif. Chaque ___, je regarde avec ___ où j’en suis.",
+          "unterschriften": ["Moi", "La personne qui m’aide"]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants décomposent un objectif de comportement personnel en petites marches, planifient ce qu’ils font en cas d’obstacle et qui les aide, et décident comment fêter leurs réussites.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. Question : « Pourquoi Mathis commence-t-il par une si petite marche ? »",
+          "Exercice 1 (5 min) : formuler l’objectif et l’améliorer avec les trois questions de contrôle, par exemple « rester calme quand nous perdons » plutôt que « ne plus rouspéter ».",
+          "Exercice 2 (10 min) : remplir l’escalier à partir du bas. La première marche doit sûrement réussir en une semaine.",
+          "Exercices 3 et 4 (10 min) : planifier obstacles, aides et petites fêtes. Demander tout de suite à la personne qui aide.",
+          "Exercice 5 : signer l’accord. Regarder chaque semaine et adapter l’escalier si besoin."
+        ],
+        "hintergrund": "Les grands objectifs paraissent souvent hors de portée pour les enfants. Découpés en petites marches, ils deviennent maîtrisables – et chaque marche réussie est une expérience de réussite qui renforce la confiance en sa propre efficacité (Bandura, 1977). Celui qui anticipe les obstacles et les relie à une action concrète applique plus souvent ses résolutions (Gollwitzer, 1999). Les approches d’autogestion reposent sur trois éléments : s’observer, évaluer le résultat et se renforcer soi-même (Kanfer, Reinecker & Schmelzer, 2012). Les récompenses doivent être petites, rapides et choisies par l’enfant ; elles soutiennent tant que le sentiment d’avoir réussi par soi-même reste au premier plan (Deci & Ryan, 2000).",
+        "quellen": [
+          "Bandura, A. (1977). Self-efficacy: Toward a unifying theory of behavioral change. Psychological Review, 84(2), 191–215.",
+          "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503.",
+          "Kanfer, F. H., Reinecker, H. & Schmelzer, D. (2012). Selbstmanagement-Therapie (5. Aufl.). Berlin: Springer.",
+          "Deci, E. L. & Ryan, R. M. (2000). The “what” and “why” of goal pursuits. Psychological Inquiry, 11(4), 227–268."
+        ],
+        "differenzierung": {
+          "leichter": "Ne planifier que trois marches ; l’adulte écrit avec l’enfant. Proposer les récompenses en cartes images.",
+          "schwerer": "Noter une date pour chaque marche et écrire une phrase après chaque semaine : qu’est-ce qui a aidé ?"
+        },
+        "impulse": [
+          "À quoi remarques-tu que tu as réussi une marche ?",
+          "Que fais-tu quand une marche ne marche pas ?",
+          "Qui t’a déjà aidé à apprendre quelque chose de difficile ?"
+        ],
+        "tipps": [
+          "Parler des reculs d’avance : sur un escalier, on a le droit de redescendre d’une marche.",
+          "Garder l’escalier visible, par exemple dans le cahier ou au panneau – si l’enfant est d’accord."
+        ],
+        "material": "En option : gommettes ou étoiles pour les marches réussies"
       }
     }
   },
@@ -1013,6 +1374,119 @@
         ],
         "achtung": "Zeigt ein Kind sehr häufig „zu viel“ oder wirkt es dauerhaft überfordert, die Ursachen klären und die zuständige Leitung (Responsable) einbeziehen.",
         "material": "Schere; optional Laminierfolie und Klettband"
+      }
+    },
+    "fr": {
+      "titel": "Mes cartes-signaux",
+      "untertitel": "Parfois, parler est difficile. Avec une carte, tu montres calmement ce dont tu as besoin – sans déranger toute la classe.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "La carte de Kim",
+          "text": "Après la récré, c’est souvent bruyant dans la classe de Kim. Alors tout devient trop pour elle. Avant, elle sortait simplement de la classe en courant. Aujourd’hui, elle pose sa carte « C’est trop pour moi » sur la table. Son enseignante lui fait un signe de tête. Kim met son casque antibruit et continue à travailler dans le coin lecture.",
+          "bild": "figur:amira:ruhig"
+        },
+        { "art": "aufgabe", "text": "À quoi remarques-tu que tu as besoin d’un signal ? Coche.", "symbole": ["ankreuzen", "schreiben"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Ma tête est pleine.",
+            "Je n’arrive plus à rester assis.",
+            "Tout est trop bruyant pour moi.",
+            "Je me mets en colère.",
+            "Je ne comprends pas la consigne.",
+            "J’ai fini et j’attends."
+          ]
+        },
+        { "art": "aufgabe", "text": "Quelle carte convient ? Relie.", "symbole": ["lesen", "verbinden"] },
+        {
+          "art": "zuordnen",
+          "titel": ["Situation", "Carte"],
+          "links": [
+            "Je sens que je vais exploser.",
+            "Je ne comprends pas l’exercice 3.",
+            "Ma feuille est terminée.",
+            "C’est si bruyant que ma tête résonne."
+          ],
+          "rechts": ["J’ai fini.", "C’est trop pour moi.", "J’ai besoin d’une pause.", "J’ai besoin d’aide."]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Comment utiliser une carte",
+          "punkte": [
+            "Pose la carte doucement sur ta table.",
+            "Attends que ton enseignante ou ton enseignant te fasse un signe de tête.",
+            "Fais ensuite exactement ce que vous avez convenu."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que se passe-t-il quand tu montres une carte ? Convenez-en ensemble.",
+          "hinweis": "Discute de ces accords avec ton enseignante ou ton enseignant.",
+          "symbole": ["sprechen", "schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Carte", "Ce que je fais", "Ce que fait l’adulte"],
+          "breiten": [0.8, 2.2, 1.6],
+          "zeilen": 3,
+          "beispiel": [
+            "Pause",
+            "Je pose la carte et je vais doucement au coin lecture. Après 5 minutes, je reviens.",
+            "L’adulte fait un signe de tête et me laisse partir."
+          ]
+        },
+        {
+          "art": "vertrag",
+          "text": "Nous essayons les cartes jusqu’au ___. Ensuite, nous parlons de ce qui marche bien.",
+          "unterschriften": ["Moi", "Enseignante / enseignant"]
+        },
+        { "art": "aufgabe", "text": "Découpe tes cartes. Garde-les à ta place.", "symbole": ["schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 4,
+          "hoehe": 190,
+          "karten": [
+            { "titel": "Pause", "text": "J’ai besoin d’une pause.", "bild": "icon:player-pause" },
+            { "titel": "Aide", "text": "J’ai besoin d’aide.", "bild": "icon:lifebuoy" },
+            { "titel": "Fini", "text": "J’ai fini.", "bild": "icon:circle-check" },
+            { "titel": "Trop", "text": "C’est trop pour moi.", "bild": "icon:cloud-storm" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent quand ils ont besoin d’un signal, associent quatre cartes-signaux à des situations adaptées et conviennent avec l’adulte de ce qui se passe après avoir montré une carte.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. Question : « Qu’est-ce qui a changé pour Kim depuis qu’elle a la carte ? »",
+          "Exercices 1 et 2 (10 min) : cocher les signes et associer les cartes. Pour les signes, il n’y a ni juste ni faux.",
+          "Exercice 3 (10 min) : convenir concrètement avec chaque enfant : où peut-il aller, combien de temps, comment revient-il ?",
+          "Exercice 4 : découper les cartes, les plastifier éventuellement et les garder à la place, par exemple dans la trousse.",
+          "Essayer deux semaines, puis faire le point et adapter les accords."
+        ],
+        "hintergrund": "Beaucoup de conflits en classe naissent parce qu’un enfant est dépassé, mais n’a pas de moyen accepté de le montrer. Les cartes-signaux créent ce moyen : elles sont silencieuses, claires et se passent des mots, qui manquent souvent sous tension. Les aides visuelles facilitent la communication justement quand la parole est difficile (Hodgdon, 1995). Elles soutiennent aussi l’autorégulation : celui qui remarque tôt que la tension monte et change brièvement de situation peut éviter une escalade (Gross, 1998). Les cartes ne sont efficaces qu’avec des accords clairs et une réaction fiable ; des déroulements prévisibles préviennent les perturbations (Nolting, 2002).",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Nolting, H.-P. (2002). Störungen in der Schulklasse. Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Commencer avec deux cartes (pause et aide). Conclure les accords à l’oral, l’adulte écrit.",
+          "schwerer": "Concevoir une cinquième carte, par exemple « J’ai besoin de bouger », et formuler l’accord correspondant."
+        },
+        "impulse": [
+          "À quoi remarques-tu dans ton corps que tu as besoin d’un signal ?",
+          "Qu’est-ce qui est plus facile : montrer une carte ou dire quelque chose ?",
+          "Que doit-il se passer quand tu poses la carte ?"
+        ],
+        "tipps": [
+          "Expliquer les cartes à toute la classe : tout le monde peut utiliser des signaux, personne n’est moqué pour cela.",
+          "Réagir vite à chaque carte – un simple signe de tête montre : j’ai vu."
+        ],
+        "achtung": "Si un enfant montre très souvent « trop » ou semble durablement dépassé, clarifier les causes et associer la direction compétente (responsable).",
+        "material": "Ciseaux ; en option, film de plastification et bande velcro"
       }
     }
   },

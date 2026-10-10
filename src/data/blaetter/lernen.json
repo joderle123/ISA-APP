@@ -243,6 +243,79 @@
         "achtung": "Wenn ein Kind trotz Hilfen kaum bei einer Aufgabe bleiben kann: Beobachtungen festhalten und mit den Eltern und der zuständigen Leitung (Responsable) besprechen. Keine Diagnosen vermuten.",
         "material": "Schere; optional Laminierfolie, Lärmschutz-Kopfhörer"
       }
+    },
+    "fr": {
+      "titel": "Mes astuces pour me concentrer",
+      "untertitel": "Parfois, les pensées s’envolent. Ça arrive à tout le monde. Avec des astuces, tu les ramènes.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Qu’est-ce qui te distrait ? Entoure.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:ear", "text": "bruit" },
+            { "bild": "icon:messages", "text": "quelqu’un parle" },
+            { "bild": "icon:device-mobile", "text": "écrans" },
+            { "bild": "icon:puzzle", "text": "jouets" },
+            { "bild": "icon:apple", "text": "faim" },
+            { "bild": "icon:zzz", "text": "fatigue" },
+            { "bild": "icon:bubble", "text": "pensées" },
+            { "bild": "icon:search", "text": "chercher" }
+          ]
+        },
+        { "art": "aufgabe", "text": "Qu’est-ce qui t’aide ? Coche.", "hinweis": "Ensuite, entoure tes deux meilleures astuces.", "symbole": ["ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 2,
+          "items": [
+            "Je m’installe à une place calme.",
+            "Ma table est rangée.",
+            "Je mets un casque contre le bruit.",
+            "Je fais une pause pour bouger.",
+            "Je bois une gorgée d’eau.",
+            "Je me dis tout bas : stop."
+          ]
+        },
+        { "art": "aufgabe", "text": "Découpe les cartes. Pose-les sur ta table.", "symbole": ["schneiden"] },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 112,
+          "karten": [
+            { "titel": "Stop", "text": "Où suis-je ? Retour à la tâche.", "bild": "motiv:stopp" },
+            { "titel": "Pause", "text": "J’ai besoin d’une petite pause.", "bild": "icon:player-pause" },
+            { "titel": "Aide", "text": "Je n’arrive pas à avancer.", "bild": "icon:help-circle" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent ce qui les distrait pendant le travail, choisissent des aides pour la place et les pauses, et apprennent un signal « stop » avec lequel ils ramènent eux-mêmes leur attention à la tâche.",
+        "ablauf": [
+          "Entrée en matière (5 min) : mimer des pensées qui s’égarent, puis poser la main sur la table et dire doucement : « Stop, retour à la tâche. »",
+          "Exercice 1 : nommer les images, chaque enfant entoure. Souligner : chaque tête s’envole parfois.",
+          "Exercice 2 : essayer tout de suite deux aides (marcher sur place, boire de l’eau). Chaque enfant choisit deux astuces.",
+          "Exercice 3 : découper les cartes. Convenir avec chaque enfant de ce que veulent dire exactement la carte pause et la carte aide.",
+          "Exercer souvent le signal stop les jours suivants, d’abord avec un rappel silencieux de l’adulte."
+        ],
+        "hintergrund": "L’attention fait partie des fonctions exécutives, qui se développent pendant toute l’enfance – en particulier la capacité d’ignorer les stimuli perturbateurs et de rester sur une tâche (Diamond, 2013). Les enfants de six à huit ans n’y parviennent que pour peu de temps. Ils ont besoin d’aides extérieures : une place pauvre en stimuli, des pauses pour bouger et des signaux clairs convenus à l’avance. Les programmes pour enfants ayant des difficultés d’attention combinent de telles aides avec de simples auto-instructions (Döpfner et al., 2019). Le signal stop est une telle auto-instruction ; il n’agit que s’il a été souvent exercé auparavant dans des moments calmes.",
+        "quellen": [
+          "Diamond, A. (2013). Executive functions. Annual Review of Psychology, 64, 135–168.",
+          "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Ne discuter que quatre images ; essayer directement deux astuces au lieu de cocher.",
+          "schwerer": "Noter pendant une semaine quand la carte stop a aidé."
+        },
+        "impulse": ["À quoi remarques-tu que tes pensées sont ailleurs ?", "Où peux-tu bien travailler dans la classe ?", "Quelle astuce t’a aidé aujourd’hui ?"],
+        "tipps": [
+          "Au début, rappeler la carte stop par un signe silencieux, pas devant la classe.",
+          "Prévoir des pauses pour bouger avant que l’agitation devienne grande."
+        ],
+        "achtung": "Si un enfant reste difficilement sur une tâche malgré les aides : noter les observations et en parler avec les parents et la direction compétente (responsable). Ne pas supposer de diagnostic.",
+        "material": "Ciseaux ; en option, film de plastification, casque anti-bruit"
+      }
     }
   },
   {
@@ -341,6 +414,101 @@
         ],
         "achtung": "Bleibt ein Kind trotz Übung sehr impulsiv und gerät dadurch oft in Konflikte: Beobachtungen festhalten und mit der zuständigen Leitung (Responsable) besprechen.",
         "material": "Schere; optional Laminierfolie und Schlüsselring; kurze Übungsaufgaben (Muster, Labyrinth)"
+      }
+    },
+    "fr": {
+      "titel": "Je me dis ce que je fais",
+      "untertitel": "Qui se guide à voix basse en travaillant travaille plus calmement et plus précisément. Ça s’apprend.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Parti trop vite",
+          "text": "Mathis reçoit une feuille de travail. Il veut être le premier à finir et commence tout de suite. Après cinq minutes, il remarque : il ne devait pas recopier les mots, mais les classer. Mathis s’énerve et gomme si fort que la feuille se déchire. Sa maîtresse dit calmement : « Essaie avec des phrases-guides. »",
+          "bild": "figur:noah:enttaeuscht"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lis les cinq phrases-guides. Écris chacune avec tes propres mots.",
+          "hinweis": "Exemple pour la phrase 1 : « Qu’est-ce que je dois faire exactement ici ? »",
+          "symbole": ["lesen", "schreiben"]
+        },
+        {
+          "art": "schritte",
+          "linien": 1,
+          "items": [
+            { "titel": "Quelle est ma tâche ?", "text": "Je lis attentivement et je dis la tâche avec mes mots." },
+            { "titel": "Comment je m’y prends ?", "text": "Je réfléchis : que fais-je d’abord, puis ensuite ?" },
+            { "titel": "Je travaille pas à pas.", "text": "Lentement et avec soin. Je me dis tout bas chaque étape." },
+            { "titel": "Je vérifie.", "text": "Ai-je tout ? Est-ce juste ? Je corrige une erreur tranquillement." },
+            { "titel": "Je me félicite.", "text": "« Je l’ai bien fait. » Ou : « La prochaine fois, je fais attention à … »" }
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "À voix haute – tout bas – dans la tête",
+          "text": "Dis d’abord les phrases-guides à mi-voix. Puis chuchote-les. À la fin, tu les penses seulement. Elles deviennent ainsi ta voix intérieure."
+        },
+        { "art": "aufgabe", "text": "Que pense Mathis pendant son deuxième essai ? Relie avec la phrase-guide qui correspond.", "symbole": ["verbinden"] },
+        {
+          "art": "zuordnen",
+          "titel": ["Mathis pense", "Phrase-guide"],
+          "links": [
+            "Qu’est-ce que je dois faire exactement ici ?",
+            "D’abord lire, ensuite numéroter.",
+            "Une chose après l’autre.",
+            "Est-ce vraiment juste ?",
+            "J’y suis arrivé."
+          ],
+          "rechts": ["Je vérifie.", "Quelle est ma tâche ?", "Je me félicite.", "Comment je m’y prends ?", "Je travaille pas à pas."]
+        },
+        { "art": "aufgabe", "text": "Entraîne-toi pendant une semaine. Colorie une étoile quand ça a marché.", "symbole": ["malen"] },
+        { "art": "plan", "symbol": "stern", "zeilen": ["J’ai utilisé les phrases-guides.", "J’ai vérifié à la fin."] },
+        {
+          "art": "aufgabe",
+          "text": "Découpe ta carte-guide. Pose-la sur ta table quand tu travailles.",
+          "hinweis": "Tu peux aussi découper les cartes une par une et les accrocher à un anneau.",
+          "symbole": ["schneiden"]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 104,
+          "karten": [
+            { "titel": "Mes phrases-guides", "text": "D’abord penser, ensuite faire.", "bild": "icon:message-circle" },
+            { "titel": "1. Quelle est ma tâche ?", "bild": "icon:search" },
+            { "titel": "2. Comment je m’y prends ?", "bild": "icon:route" },
+            { "titel": "3. Je travaille pas à pas.", "bild": "icon:stairs-up" },
+            { "titel": "4. Je vérifie.", "bild": "icon:clipboard-check" },
+            { "titel": "5. Je me félicite.", "bild": "icon:thumb-up" }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants apprennent cinq phrases-guides avec lesquelles ils se guident eux-mêmes en travaillant, et s’exercent à les dire d’abord à voix haute, puis tout bas et enfin seulement dans la tête.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. Questions : « Qu’est-ce qui a mal tourné ? Qu’aurait pu se dire Mathis ? »",
+          "Démonstration (5 min) : résoudre une tâche au tableau en disant à voix haute les cinq phrases-guides – et corriger tranquillement une erreur.",
+          "Exercices 1 et 2 (10 min) : reformuler les phrases avec ses mots, contrôler ensemble l’association.",
+          "S’exercer à deux : un enfant reproduit un motif et dit les phrases à voix haute, puis en chuchotant, puis dans la tête ; ensuite échanger les rôles.",
+          "Découper la carte. La semaine suivante, rappeler la carte avant les travaux individuels et faire remplir le plan."
+        ],
+        "hintergrund": "L’entraînement à l’auto-instruction selon Meichenbaum et Goodman (1971) a été développé pour des enfants qui travaillent de façon impulsive et précipitée. Ils apprennent à se diriger avec de courtes phrases : clarifier la tâche, planifier la démarche, travailler pas à pas, vérifier et s’encourager – même après une erreur. On s’exerce par étapes : un adulte montre à voix haute, puis l’enfant se guide lui-même à voix haute, en chuchotant et enfin intérieurement. L’auto-instruction fait partie des programmes pour enfants ayant des difficultés d’attention (Döpfner et al., 2019). Le transfert au quotidien est décisif : il faut susciter les phrases en classe encore et encore.",
+        "quellen": [
+          "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126.",
+          "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "N’utiliser que trois phrases : Quelle est ma tâche ? – Je travaille pas à pas. – Je vérifie.",
+          "schwerer": "Développer ses propres phrases-guides pour des moments difficiles, p. ex. en cas de colère ou avant un contrôle."
+        },
+        "impulse": ["Quelle phrase-guide est la plus difficile pour toi ?", "Que te dis-tu quand tu fais une erreur ?", "Où veux-tu essayer les phrases demain ?"],
+        "tipps": [
+          "Servir soi-même de modèle : penser tout haut de temps en temps lors des travaux au tableau.",
+          "Autoriser expressément le dialogue intérieur à voix basse pendant le travail – il fait partie de l’exercice."
+        ],
+        "achtung": "Si un enfant reste très impulsif malgré l’exercice et se retrouve ainsi souvent en conflit : noter les observations et en parler avec la direction compétente (responsable).",
+        "material": "Ciseaux ; en option, film de plastification et anneau porte-clés ; courtes tâches d’exercice (motifs, labyrinthe)"
       }
     }
   },
@@ -725,6 +893,72 @@
         "achtung": "Vergisst ein Kind sehr häufig Material, nicht mit Strafen reagieren. Ursachen im Gespräch klären; bei Hinweisen auf Belastungen zu Hause die zuständige Leitung (Responsable) einbeziehen.",
         "material": "Gepackte Schultasche zum Zeigen; Stundenplan der Klasse"
       }
+    },
+    "fr": {
+      "titel": "Mon cartable",
+      "untertitel": "Quand on prépare son cartable le soir, on a tout le matin.",
+      "bausteine": [
+        { "art": "aufgabe", "text": "Qu’est-ce qui va dans ton cartable ? Entoure.", "hinweis": "Une chose reste à la maison.", "symbole": ["einkreisen"] },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            { "bild": "icon:notebook", "text": "agenda" },
+            { "bild": "icon:pencil", "text": "trousse" },
+            { "bild": "icon:book", "text": "livres" },
+            { "bild": "icon:bottle", "text": "gourde" },
+            { "bild": "icon:bread", "text": "collation" },
+            { "bild": "icon:device-gamepad-2", "text": "console de jeux" },
+            { "bild": "icon:mail", "text": "mot aux parents" },
+            { "bild": "icon:shoe", "text": "baskets" }
+          ]
+        },
+        { "art": "aufgabe", "text": "De quoi as-tu besoin seulement certains jours ? Coche.", "symbole": ["ankreuzen"] },
+        { "art": "plan", "symbol": "kasten", "zeilen": ["Affaires de sport", "Affaires de piscine", ""] },
+        { "art": "aufgabe", "text": "Lis les quatre étapes. Prépare ton cartable ce soir de la même façon.", "symbole": ["lesen"] },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Regarder l’horaire", "text": "De quoi ai-je besoin demain ?" },
+            { "titel": "Ranger", "text": "Cahiers, livres, trousse" },
+            { "titel": "Vérifier", "text": "Y a-t-il tout ?" },
+            { "titel": "Cartable près de la porte", "text": "Comme ça, tu ne l’oublies pas." }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants savent ce dont ils ont besoin chaque jour et certains jours pour l’école, et apprennent une routine fixe du soir pour préparer leur cartable.",
+        "ablauf": [
+          "Entrée en matière (5 min) : sortir un cartable préparé objet par objet. Pour chaque objet : « En a-t-on besoin tous les jours ? »",
+          "Exercice 1 : nommer les images et entourer. Clarifier : qu’est-ce qui reste à la maison ?",
+          "Exercice 2 : noter, avec l’horaire de la classe, les jours où il faut les affaires de sport et de piscine.",
+          "Exercice 3 : lire les quatre étapes et les rejouer avec un vrai cartable.",
+          "Donner la feuille à emporter à la maison. Demander aux parents d’accompagner la préparation, mais de ne pas la prendre en charge."
+        ],
+        "hintergrund": "Penser à des choses qui ne seront nécessaires que le lendemain demande de la planification et de la mémoire de travail – des capacités qui sont encore en construction à l’école fondamentale. Barkley (2012) recommande donc de rendre visibles les informations importantes là où l’on agit : sous forme de liste, d’image ou de carte. Les listes de contrôle illustrées permettent aussi aux enfants qui ne lisent pas encore avec assurance de travailler de façon autonome (Hodgdon, 1995). Une routine fixe du soir, avec toujours les mêmes étapes, soulage le matin. L’objectif est que l’enfant assume peu à peu la responsabilité lui-même.",
+        "quellen": [
+          "Barkley, R. A. (2012). Executive Functions: What They Are, How They Work, and Why They Evolved. New York: Guilford.",
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts."
+        ],
+        "differenzierung": {
+          "leichter": "Ne discuter que quatre objets ; utiliser des photos de ses propres affaires comme liste de préparation.",
+          "schwerer": "Écrire sa propre liste pour un jour spécial, p. ex. pour une sortie."
+        },
+        "impulse": [
+          "Où ton cartable est-il le mieux placé pour que tu le voies le matin ?",
+          "Qui peut te rappeler de le préparer le soir ?",
+          "Qu’est-ce qui t’aide quand il manque quand même quelque chose ?"
+        ],
+        "tipps": [
+          "Accrocher la liste à la maison à un endroit fixe, p. ex. sur la porte de la chambre.",
+          "Reconnaître concrètement une préparation réussie (« Tu as pensé aux chaussures de sport. ») plutôt que de réprimander les oublis."
+        ],
+        "achtung": "Si un enfant oublie très souvent son matériel, ne pas réagir par des punitions. Clarifier les causes dans un échange ; en cas d’indices de difficultés à la maison, impliquer la direction compétente (responsable).",
+        "material": "Cartable préparé à montrer ; horaire de la classe"
+      }
     }
   },
   {
@@ -806,6 +1040,86 @@
         ],
         "achtung": "Fehlt regelmäßig Material, weil es zu Hause nicht ersetzt werden kann: das diskret klären und Unterstützung über die zuständige Leitung (Responsable) organisieren.",
         "material": "Mäppchen der Kinder; Müllbeutel, Locher und Ordner für den ersten Check"
+      }
+    },
+    "fr": {
+      "titel": "Le check-up de ma place de travail",
+      "untertitel": "Sur une table bien rangée, tu trouves plus vite ce dont tu as besoin. Et tu te mets plus facilement au travail.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Où est le stylo plume ?",
+          "text": "Diogo doit écrire un court texte dans son cahier. Sur sa table, il y a trois cahiers, la boîte à tartines, deux cartes à collectionner et une feuille froissée. Son stylo plume a disparu. Diogo cherche dans son sac, sous la table et dans son casier. Quand il le trouve enfin, les autres ont presque fini.",
+          "bild": "figur:tom:verwirrt"
+        },
+        { "art": "aufgabe", "text": "De quoi Diogo a-t-il besoin pour sa tâche ? Coche seulement cela.", "symbole": ["lesen", "ankreuzen"] },
+        {
+          "art": "ankreuzen",
+          "spalten": 3,
+          "items": ["son cahier", "la boîte à tartines", "le stylo plume", "les cartes à collectionner", "l’effaceur", "la feuille froissée", "les autres cahiers"]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "La règle de la table",
+          "text": "Quand tu travailles, il n’y a sur la table que ce dont tu as besoin pour cette tâche. Tout le reste a une place fixe : dans le sac, dans le casier ou dans la trousse."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vérifie ta trousse. Coche.",
+          "hinweis": "Ce qui manque, tu le notes sur un papier pour la maison.",
+          "symbole": ["ankreuzen"]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": ["là", "manque", "cassé ou vide"],
+          "items": ["Crayon, taillé", "Gomme", "Stylo plume et cartouches", "Effaceur", "Crayons de couleur", "Règle", "Bâton de colle"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine ta table comme elle doit être quand tu travailles.",
+          "hinweis": "Qu’y a-t-il dessus ? Où est le reste ?",
+          "symbole": ["malen"]
+        },
+        { "art": "feld", "zeichnen": true, "hoehe": 10 },
+        { "art": "aufgabe", "text": "Fais ton check de la semaine chaque vendredi. Coche ce que tu as réussi.", "symbole": ["ankreuzen"] },
+        {
+          "art": "plan",
+          "symbol": "kasten",
+          "tage": ["Semaine 1", "Semaine 2", "Semaine 3", "Semaine 4"],
+          "zeilen": ["Ma trousse est complète.", "Les feuilles volantes sont classées.", "Mon casier est rangé.", "Les déchets et les miettes sont partis."]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants reconnaissent comment le désordre à leur place freine le travail, contrôlent leur matériel et introduisent un check hebdomadaire de la place de travail.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. Questions : « Combien de temps Diogo a-t-il perdu ? Comment se sent-il ? »",
+          "Discuter l’exercice 1 et fixer la règle de la table au tableau.",
+          "Exercice 2 : chaque enfant vide sa trousse et la contrôle. Noter ce qui manque sur un papier pour la maison.",
+          "Exercice 3 : dessiner la table comme elle doit être quand on travaille ; comparer à deux.",
+          "Faire le premier check de la semaine ensemble (10 min) et l’introduire comme rituel fixe du vendredi."
+        ],
+        "hintergrund": "Une place de travail en ordre n’est pas une question de caractère, mais une habitude qui s’apprend. L’apprentissage autorégulé comprend expressément l’aménagement de son environnement d’apprentissage : qui range ce qui distrait et prépare son matériel se concentre mieux sur la tâche (Zimmerman, 2002). Les enfants ayant des difficultés d’attention profitent particulièrement de places fixes pour leurs affaires, de règles claires pour la table et de contrôles réguliers avec retour (Döpfner et al., 2019). Un court check par semaine empêche le désordre de s’accumuler et rend les progrès visibles.",
+        "quellen": [
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz."
+        ],
+        "differenzierung": {
+          "leichter": "Contrôler la trousse avec de vrais objets plutôt qu’avec une liste ; deux points seulement dans le check de la semaine.",
+          "schwerer": "Développer des règles pour la place de travail à la maison et les évaluer après quatre semaines."
+        },
+        "impulse": [
+          "Qu’y a-t-il souvent sur ta table sans que tu en aies besoin ?",
+          "Où est une bonne place pour les feuilles volantes ?",
+          "Comment est-ce de commencer à une table vide ?"
+        ],
+        "tipps": [
+          "Faire du check de la semaine un rituel commun, p. ex. avec de la musique et un minuteur – jamais comme punition.",
+          "Aux enfants à qui le rangement est difficile, donner une petite carte de table avec la règle plutôt que de les réprimander."
+        ],
+        "achtung": "Si du matériel manque régulièrement parce qu’il ne peut pas être remplacé à la maison : clarifier cela discrètement et organiser un soutien via la direction compétente (responsable).",
+        "material": "Trousses des enfants ; sac poubelle, perforatrice et classeur pour le premier check"
       }
     }
   },
@@ -1094,6 +1408,64 @@
         "achtung": "Reagiert ein Kind auf Änderungen im Ablauf regelmäßig mit starker Angst oder Wut: die Beobachtungen mit den Eltern und der zuständigen Leitung (Responsable) besprechen.",
         "material": "Lernuhr; Bildkarten oder Fotos vom Schultag"
       }
+    },
+    "fr": {
+      "titel": "Ma journée d’école en images",
+      "untertitel": "Un plan montre ce qui vient aujourd’hui. Comme ça, tu sais la suite.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Comment se passe ta journée d’école ? Écris les heures.",
+          "hinweis": "Ta maîtresse ou ton maître t’aide. Dans la ligne vide, tu dessines une idée à toi.",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tagesplan",
+          "leer": 1,
+          "zeilen": [
+            { "zeit": "7 h 55", "bild": "icon:school", "text": "J’arrive à l’école." },
+            { "bild": "icon:pencil", "text": "On apprend en classe." },
+            { "bild": "icon:ball-football", "text": "Récréation dans la cour" },
+            { "bild": "icon:book", "text": "On apprend encore." },
+            { "bild": "icon:tools-kitchen-2", "text": "Repas de midi : à la cantine ou à la maison" },
+            { "bild": "icon:building-community", "text": "Après-midi : école ou Maison Relais" },
+            { "bild": "icon:home", "text": "Je rentre à la maison." }
+          ]
+        },
+        { "art": "aufgabe", "text": "Parfois, un jour est différent. Qu’est-ce qui t’aide alors ? Coche.", "symbole": ["ankreuzen"] },
+        { "art": "ankreuzen", "spalten": 2, "items": ["Je regarde mon plan.", "Je demande.", "Je respire calmement.", "Je dis : c’est nouveau pour moi."] },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants mettent les moments de leur journée d’école dans un ordre fixe, y associent des heures et savent ce qui les aide quand une journée se déroule autrement.",
+        "ablauf": [
+          "Entrée en matière (5 min) : accrocher au tableau en désordre des cartes illustrées de la journée d’école et les ordonner ensemble : « Qu’est-ce qui vient d’abord ? »",
+          "Exercice 1 : discuter les images. Déterminer et noter les heures avec une grande horloge d’apprentissage.",
+          "Utiliser la ligne vide pour quelque chose de personnel, p. ex. sport, piscine ou musique.",
+          "Exercice 2 : raconter un changement (« Aujourd’hui, une autre maîtresse vient. »). Demander : « Qu’est-ce qui vous aide alors ? »",
+          "Afficher dans la classe un plan de la journée avec les mêmes images et le discuter brièvement chaque matin."
+        ],
+        "hintergrund": "Un plan de la journée visible rend concret un déroulement abstrait du temps : les enfants voient ce qui se passe maintenant, ce qui vient ensuite et quand la journée se termine. Cela facilite les transitions et réduit l’insécurité, surtout chez les enfants qui supportent mal les changements ou qui apprennent encore la langue d’enseignement (Hodgdon, 1995). Dans l’approche TEACCH, les plans illustrés comptent parmi les moyens les plus importants pour favoriser l’autonomie (Mesibov et al., 2004). Les changements devraient être annoncés et rendus visibles dans le plan plutôt qu’être passés sous silence. Les heures relient le plan à la lecture de l’horloge, qui s’exerce à cet âge.",
+        "quellen": [
+          "Hodgdon, L. A. (1995). Visual Strategies for Improving Communication. Troy, MI: QuirkRoberts.",
+          "Mesibov, G. B., Shea, V. & Schopler, E. (2004). The TEACCH Approach to Autism Spectrum Disorders. New York: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement discuter les images et noter des heures pleines.",
+          "schwerer": "Créer son propre plan pour un jour spécial, p. ex. sortie ou fête de l’école."
+        },
+        "impulse": [
+          "Quelle partie de la journée te plaît le plus ?",
+          "Qu’est-ce qui est difficile quand quelque chose est différent d’habitude ?",
+          "À quoi vois-tu quelle heure il est ?"
+        ],
+        "tipps": [
+          "Retourner ou enlever les moments terminés sur le plan de la classe – ainsi, les enfants voient la journée avancer.",
+          "Annoncer les changements le plus tôt possible le matin."
+        ],
+        "achtung": "Si un enfant réagit régulièrement aux changements de déroulement par une forte peur ou colère : discuter des observations avec les parents et la direction compétente (responsable).",
+        "material": "Horloge d’apprentissage ; cartes illustrées ou photos de la journée d’école"
+      }
     }
   },
   {
@@ -1190,6 +1562,97 @@
         ],
         "achtung": "Nicht jedes Kind hat zu Hause Ruhe oder Hilfe: Hausaufgabenhilfe und Maison Relais als Möglichkeiten nennen. Bei regelmäßigem Streit oder Tränen das Gespräch mit den Eltern suchen und die zuständige Leitung (Responsable) informieren.",
         "material": "Stundenplan, Hausaufgabenheft; optional ein Küchentimer"
+      }
+    },
+    "fr": {
+      "titel": "Mon plan pour les devoirs",
+      "untertitel": "Les devoirs vont mieux quand l’heure, le lieu et l’ordre sont fixés. Et quand tu sais qui peut t’aider.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Le mardi de Chiara",
+          "text": "Chiara rentre de la Maison Relais à 16 h. Elle regarde un épisode de sa série, puis un autre. À 18 h, elle pense à ses devoirs. Elle commence par la tâche la plus difficile et n’avance pas. Au repas du soir, elle est fatiguée et de mauvaise humeur.",
+          "bild": "figur:lea:muede"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Planifie ta semaine de devoirs.",
+          "hinweis": "Pense au sport, à la musique et à la Maison Relais : quand as-tu du temps ?",
+          "symbole": ["schreiben"]
+        },
+        {
+          "art": "tabelle",
+          "spalten": ["Jour", "Quand ?", "Où ?", "Qui peut aider ?"],
+          "breiten": [1, 1, 1.6, 2],
+          "zeilen": 5,
+          "beispiel": ["Lundi", "16 h 30", "à la table de la cuisine", "Papa, aide aux devoirs"]
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "Un bon ordre",
+          "text": "Commence par quelque chose de facile pour te mettre en route. Ensuite vient la tâche la plus difficile, tant que tu es encore en forme. À la fin, de nouveau quelque chose de facile. Essaie ce qui marche le mieux pour toi."
+        },
+        { "art": "aufgabe", "text": "Planifie les devoirs d’aujourd’hui. Que fais-tu en premier ?", "symbole": ["schreiben"] },
+        {
+          "art": "tabelle",
+          "spalten": ["N°", "Tâche", "facile ou difficile ?", "Minutes", "fait"],
+          "breiten": [0.6, 3, 1.6, 1, 0.8],
+          "zeilen": 4,
+          "beispiel": ["1", "Lecture : page 12", "facile", "10", "x"]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que fais-tu pendant tes pauses ? Coche.",
+          "hinweis": "Après environ 20 minutes de travail : 5 minutes de pause – de préférence sans écran.",
+          "symbole": ["ankreuzen"]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": ["boire un verre d’eau", "m’étirer", "faire dix sauts en étoile", "regarder par la fenêtre", "manger un fruit"]
+        },
+        { "art": "aufgabe", "text": "Tu n’avances pas ? Suis ces étapes.", "symbole": ["lesen"] },
+        {
+          "art": "schritte",
+          "stil": "kette",
+          "linien": 0,
+          "items": [
+            { "titel": "Relire encore une fois", "text": "Que demande-t-on exactement ?" },
+            { "titel": "Regarder dans le cahier", "text": "Y a-t-il un exemple ?" },
+            { "titel": "Marquer, continuer", "text": "Revenir plus tard." },
+            { "titel": "Demander à quelqu’un", "text": "À qui ? Regarde l’exercice 1." }
+          ]
+        },
+        { "art": "rueckblick" }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants planifient des heures et des lieux fixes pour leurs devoirs, fixent un ordre judicieux avec des pauses et savent quoi faire et qui demander quand ils n’avancent pas.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. « Que pourrait faire Chiara autrement ? » Recueillir des idées sans juger Chiara.",
+          "Exercice 1 (10 min) : remplir le plan de la semaine ; penser aussi aux rendez-vous fixes (sport, musique).",
+          "Lire l’encadré conseil. Exercice 2 avec les devoirs d’aujourd’hui : fixer l’ordre, estimer les minutes.",
+          "Discuter les exercices 3 et 4 ; rejouer les étapes avec une vraie tâche.",
+          "Donner la feuille à emporter. Une semaine plus tard : qu’est-ce qui a marché, qu’est-ce qui a changé ?"
+        ],
+        "hintergrund": "Les devoirs demandent aux enfants de gérer eux-mêmes leur travail : commencer, tenir bon, résoudre des difficultés. Une bonne autorégulation commence par la planification : objectifs, horaires et idée de la démarche (Zimmerman, 2002). Les enfants ayant des difficultés d’attention profitent d’horaires fixes, d’une place calme, de courtes séquences et de pauses (Döpfner et al., 2019). La règle « d’abord les devoirs, ensuite la série » utilise un principe simple : une activité appréciée agit comme récompense quand elle suit une activité moins appréciée (Premack, 1959). Mieux vaut clarifier à l’avance qui aide.",
+        "quellen": [
+          "Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. Theory Into Practice, 41(2), 64–70.",
+          "Döpfner, M., Schürmann, S. & Frölich, J. (2019). Therapieprogramm für Kinder mit hyperkinetischem und oppositionellem Problemverhalten THOP (6. Aufl.). Weinheim: Beltz.",
+          "Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. Psychological Review, 66(4), 219–233."
+        ],
+        "differenzierung": {
+          "leichter": "N’inscrire que les jours avec devoirs ; discuter l’ordre à l’oral.",
+          "schwerer": "Noter pendant une semaine combien de temps les tâches ont vraiment duré et comparer avec l’estimation."
+        },
+        "impulse": ["Où peux-tu le mieux travailler à la maison ?", "Que fais-tu quand quelqu’un te dérange ?", "À quoi remarques-tu que tu as besoin d’une pause ?"],
+        "tipps": [
+          "Convenir avec les parents de l’aide qui a du sens : encourager et être présent oui, résoudre les tâches non.",
+          "Si les devoirs durent régulièrement bien plus longtemps que prévu, l’enfant doit pouvoir le signaler."
+        ],
+        "achtung": "Tous les enfants n’ont pas le calme ou l’aide à la maison : citer l’aide aux devoirs et la Maison Relais. En cas de disputes ou de larmes régulières, parler avec les parents et informer la direction compétente (responsable).",
+        "material": "Horaire, cahier de devoirs ; en option, un minuteur de cuisine"
       }
     }
   },

@@ -1,0 +1,4813 @@
+[
+  {
+    "id": "t1-gefuehle-im-koerper",
+    "bereich": "gefuehle",
+    "thema": "erkennen",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25–30 Min.",
+    "eldib": [
+      "K-16",
+      "K-26",
+      "K-15"
+    ],
+    "schlagworte": [
+      "Gefühle im Körper",
+      "Körperzeichen",
+      "Körper-Landkarte",
+      "Gefühle benennen",
+      "Selbstwahrnehmung"
+    ],
+    "bild": "icon:heart",
+    "verwandt": [
+      "gefuehle-detektiv",
+      "was-hilft-bei-angst"
+    ],
+    "de": {
+      "titel": "Gefühle im Körper finden",
+      "untertitel": "Gefühle spürt man im Körper. Finde heraus, wo.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Was sagt dein Körper? Verbinde mit dem Gefühl.",
+          "symbole": [
+            "lesen",
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Mein Körper sagt:",
+            "Das Gefühl"
+          ],
+          "links": [
+            "Ich balle die Fäuste.",
+            "Meine Knie zittern.",
+            "Mein Hals ist eng.",
+            "Ich möchte hüpfen."
+          ],
+          "rechts": [
+            "traurig",
+            "wütend",
+            "froh",
+            "ängstlich"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo spürst du Gefühle? Male die Stellen an.",
+          "hinweis": "Jeder spürt es anders. Du darfst dir auch etwas ausdenken.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            {
+              "farbe": "rot",
+              "text": "Wut"
+            },
+            {
+              "farbe": "lila",
+              "text": "Angst"
+            },
+            {
+              "farbe": "blau",
+              "text": "Traurigkeit"
+            },
+            {
+              "farbe": "gelb",
+              "text": "Freude"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib auf, wo du ein Gefühl spürst.",
+          "hinweis": "Beispiel: Wenn ich wütend bin, spüre ich es in den Fäusten.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Wenn ich froh bin, spüre ich es …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder ordnen Körperzeichen einem Gefühl zu, finden Stellen im Körper, an denen sie Gefühle spüren, und beschreiben eines in einem Satz.",
+        "ablauf": [
+          "Einstieg (5 Min.): Hand aufs Herz, drei Atemzüge spüren; zehn Hampelmänner, noch einmal spüren. „Was hat sich verändert?“",
+          "Aufgabe 1 (5 Min.): Sätze vorlesen, verbinden lassen, jedes Körperzeichen vormachen. „Bei dir kann es anders sein.“",
+          "Aufgabe 2 (10 Min.): Zu jedem Gefühl eine Situation vorlesen („Dein Turm fällt um.“). Die Kinder malen, wo sie es spüren. Ausgedacht ist genauso gut.",
+          "Aufgabe 3 (5 Min.): Satz schreiben oder diktieren; das Beispiel gemeinsam lesen.",
+          "Abschluss (5 Min.): Karten nebeneinanderhalten: „Wo sind sie ähnlich, wo verschieden?“"
+        ],
+        "hintergrund": "Gefühle gehen mit Körperreaktionen einher: Herzschlag, Muskelspannung und Atem verändern sich. Viele Kinder spüren das, ohne es als Gefühl zu erkennen; wer Körperzeichen früh bemerkt, hat mehr Zeit zu reagieren. Körperkarten für Wut, Angst, Traurigkeit und Freude ähneln sich über Kulturen hinweg deutlich (Nummenmaa et al., 2014), und die Wahrnehmung innerer Körperzustände gilt als Grundlage des Gefühlserlebens (Craig, 2002). Die Karte ist ein Gesprächsanlass, kein Test: Kinder spüren verschieden.",
+        "quellen": [
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Wut und Freude ausmalen; Aufgabe 1 mit Gesichtern am Rand.",
+          "schwerer": "Neben jede Farbe die Stärke malen (klein, mittel, groß); weitere Gefühle ergänzen."
+        },
+        "impulse": [
+          "Wo merkst du zuerst, dass du aufgeregt bist?",
+          "Spüren alle dasselbe? Was ist gleich, was anders?",
+          "Was sagt dir dein Körper, bevor du Worte hast?"
+        ],
+        "tipps": [
+          "Gruppe: Karten ohne Namen aufhängen und gemeinsam anschauen. Niemand muss die eigene zeigen.",
+          "Einzelstunde: Ein Gefühl aus dem Alltag des Kindes wählen und sein Körperzeichen als Frühwarnzeichen benennen."
+        ],
+        "achtung": "Erzählt ein Kind von Schmerz oder Angst bei Berührung oder zu Hause: ruhig zuhören, nicht deuten, nicht im Plenum vertiefen, die zuständige Leitung (Responsable) informieren. Bei Gefährdung sofort nach dem internen Ablauf handeln.",
+        "material": "Buntstifte (Rot, Lila, Blau, Gelb)"
+      }
+    },
+    "fr": {
+      "titel": "Où je sens mes émotions",
+      "untertitel": "Les émotions se sentent dans le corps. Cherche où.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Que dit ton corps ? Relie à l’émotion.",
+          "symbole": [
+            "lesen",
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Mon corps dit :",
+            "L’émotion"
+          ],
+          "links": [
+            "Je serre les poings.",
+            "Mes genoux tremblent.",
+            "J’ai la gorge serrée.",
+            "J’ai envie de sauter."
+          ],
+          "rechts": [
+            "triste",
+            "en colère",
+            "de bonne humeur",
+            "j’ai peur"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où sens-tu les émotions ? Colorie les endroits.",
+          "hinweis": "Chacun sent à sa façon. Tu peux aussi inventer.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "koerper",
+          "legende": [
+            {
+              "farbe": "rot",
+              "text": "colère"
+            },
+            {
+              "farbe": "lila",
+              "text": "peur"
+            },
+            {
+              "farbe": "blau",
+              "text": "tristesse"
+            },
+            {
+              "farbe": "gelb",
+              "text": "joie"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris où tu sens une émotion.",
+          "hinweis": "Exemple : en colère, je serre les poings.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Quand je suis de bonne humeur, je le sens …"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants associent des signes du corps à une émotion, trouvent où ils sentent les émotions dans leur corps et en décrivent une en une phrase.",
+        "ablauf": [
+          "Entrée (5 min) : main sur le cœur, sentir trois respirations ; dix sauts d’étoile, sentir à nouveau. « Qu’est-ce qui a changé ? »",
+          "Tâche 1 (5 min) : lire les phrases, faire relier, mimer chaque signe. « Chez toi, ça peut être différent. »",
+          "Tâche 2 (10 min) : lire une situation par émotion (« Ta tour s’écroule. »). Les enfants colorient où ils le sentent. Inventé vaut autant que vécu.",
+          "Tâche 3 (5 min) : écrire ou dicter la phrase ; lire l’exemple ensemble.",
+          "Conclusion (5 min) : comparer les cartes : « Où se ressemblent-elles, où diffèrent-elles ? »"
+        ],
+        "hintergrund": "Les émotions s’accompagnent de réactions du corps : rythme cardiaque, tension musculaire et respiration changent. Beaucoup d’enfants le sentent sans y voir une émotion ; celui qui repère tôt ces signes a plus de temps pour réagir. Les cartes du corps pour la colère, la peur, la tristesse et la joie se ressemblent nettement d’une culture à l’autre (Nummenmaa et al., 2014), et la perception des états internes du corps est considérée comme la base du vécu émotionnel (Craig, 2002). La carte est une occasion de parler, pas un test : les enfants sentent différemment.",
+        "quellen": [
+          "Nummenmaa, L., Glerean, E., Hari, R. & Hietanen, J. K. (2014). Bodily maps of emotions. Proceedings of the National Academy of Sciences, 111(2), 646–651.",
+          "Craig, A. D. (2002). How do you feel? Interoception: The sense of the physiological condition of the body. Nature Reviews Neuroscience, 3(8), 655–666."
+        ],
+        "differenzierung": {
+          "leichter": "Colorier seulement colère et joie ; tâche 1 avec des visages en marge.",
+          "schwerer": "Dessiner l’intensité à côté de chaque couleur (petite, moyenne, grande) ; ajouter d’autres émotions."
+        },
+        "impulse": [
+          "Où sens-tu d’abord que ça s’agite en toi ?",
+          "Tout le monde sent-il pareil ?",
+          "Que te dit ton corps avant les mots ?"
+        ],
+        "tipps": [
+          "Groupe : accrocher les cartes sans nom, les regarder ensemble. Personne n’est obligé de montrer la sienne.",
+          "Individuel : choisir une émotion du quotidien de l’enfant, nommer son signe du corps comme signal d’alerte."
+        ],
+        "achtung": "Si un enfant parle de douleur ou de peur liée au toucher ou à la maison : écouter, ne pas interpréter ni approfondir devant le groupe, informer la direction compétente (responsable). En cas de danger, agir selon la procédure interne.",
+        "material": "Crayons de couleur"
+      }
+    }
+  },
+  {
+    "id": "t1-gefuehle-thermometer",
+    "bereich": "gefuehle",
+    "thema": "stimmung",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25–30 Min.",
+    "eldib": [
+      "V-21",
+      "V-18",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Gefühle-Thermometer",
+      "Aufregung",
+      "Selbstregulation",
+      "Hilfen",
+      "Wenn-dann-Plan"
+    ],
+    "bild": "icon:temperature",
+    "verwandt": [
+      "wut-thermometer",
+      "wie-geht-es-mir"
+    ],
+    "de": {
+      "titel": "Mein Gefühle-Thermometer",
+      "untertitel": "Gefühle können klein oder groß sein. Das Thermometer zeigt es.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Lies die Stufen. Zeig: Wo bist du jetzt?",
+          "hinweis": "Aufgeregt kann Freude sein, Angst oder Wut.",
+          "symbole": [
+            "lesen",
+            "zeigen"
+          ]
+        },
+        {
+          "art": "thermometer",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "Ruhig",
+              "text": "Mein Körper ist locker."
+            },
+            {
+              "titel": "Kribbelig",
+              "text": "Ich bin ein bisschen unruhig."
+            },
+            {
+              "titel": "Aufgeregt",
+              "text": "Mein Herz klopft schnell."
+            },
+            {
+              "titel": "Sehr aufgeregt",
+              "text": "Ich kann kaum noch denken."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was hilft dir? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Wenn ich kribbelig oder aufgeregt bin:",
+          "spalten": 2,
+          "items": [
+            "dreimal tief atmen",
+            "etwas Kaltes trinken",
+            "mir etwas Mutiges sagen",
+            "mit jemandem reden"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Wenn ich sehr aufgeregt bin:",
+          "spalten": 2,
+          "items": [
+            "in die Ruhe-Ecke gehen",
+            "eine erwachsene Person holen",
+            "die Hände fest drücken",
+            "die Füße in den Boden drücken"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreibe deinen Plan.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mein Herz ganz schnell klopft,",
+              "dann": "atme ich dreimal tief in den Bauch."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder unterscheiden vier Stufen von Aufregung, zeigen, wo sie gerade stehen, und wählen Hilfen: bei hoher Stufe zuerst den Körper beruhigen.",
+        "ablauf": [
+          "Einstieg (5 Min.): Thermometer an die Tafel. „Kann man auch vor Freude sehr aufgeregt sein?“ Die Stufen mit dem Körper zeigen: locker, zappelig, angespannt.",
+          "Aufgabe 1 (5 Min.): Jedes Kind zeigt seine Stufe, z. B. mit einer Wäscheklammer. Jede Stufe ist in Ordnung.",
+          "Aufgabe 2 (10 Min.): Hilfen vorlesen, zwei gleich ausprobieren (Atmen, Hände drücken), dann ankreuzen. Auf Stufe 4 helfen Worte kaum: erst Körper und Abstand.",
+          "Aufgabe 3 (5 Min.): Beispiel gemeinsam lesen; Plan schreiben oder diktieren.",
+          "Im Alltag: Thermometer-Check am Morgen und nach der Pause."
+        ],
+        "hintergrund": "Erregung steigt in Stufen, bei Wut ebenso wie bei Angst und Vorfreude. Je höher sie ist, desto schwerer fallen Denken und Sprechen; Siegel und Bryson (2011) sprechen vom „oberen Stockwerk“ des Gehirns, das dann kurz nicht mitarbeitet. Früh im Ablauf lässt sich am leichtesten eingreifen (Gross, 1998). Einschätzskalen wie das Thermometer sind ein verbreitetes Werkzeug der kognitiven Verhaltenstherapie mit Kindern (Kendall & Hedtke, 2006). Der Wenn-dann-Plan koppelt ein Körperzeichen an eine feste Handlung.",
+        "quellen": [
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Stufen (grün, gelb, rot); Hilfen als Bildkarten vorgeben.",
+          "schwerer": "Zu jeder Stufe ein Beispiel aus dem eigenen Tag notieren: „Kribbelig werde ich, wenn …“"
+        },
+        "impulse": [
+          "Woran merkst du, dass du von ruhig zu kribbelig wirst?",
+          "Welche Hilfe nutzt du schon ganz allein?",
+          "Wer darf dich an deinen Plan erinnern?"
+        ],
+        "tipps": [
+          "Gruppe: Klassenthermometer mit Wäscheklammern (Namen). Die Kinder zeigen ihre Stufe ohne Worte; niemand muss erklären.",
+          "Einzelstunde: Thermometer am Anfang und am Ende der Stunde einschätzen und die Hilfe festhalten, die gewirkt hat."
+        ],
+        "achtung": "Steht ein Kind sehr oft auf Stufe 4, verletzt sich oder andere oder erzählt von Gewalt: nicht im Plenum vertiefen, die zuständige Leitung (Responsable) informieren. Bei Gefährdung sofort nach dem internen Ablauf handeln.",
+        "material": "Stifte; Wäscheklammern"
+      }
+    },
+    "fr": {
+      "titel": "Mon thermomètre des émotions",
+      "untertitel": "Une émotion peut être petite ou grande. Le thermomètre le montre.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Lis les niveaux. Montre : où es-tu maintenant ?",
+          "hinweis": "Agité peut vouloir dire joie, peur ou colère.",
+          "symbole": [
+            "lesen",
+            "zeigen"
+          ]
+        },
+        {
+          "art": "thermometer",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "Calme",
+              "text": "Mon corps est détendu."
+            },
+            {
+              "titel": "Un peu agité",
+              "text": "Ça fourmille en moi."
+            },
+            {
+              "titel": "Agité",
+              "text": "Mon cœur bat vite."
+            },
+            {
+              "titel": "Très agité",
+              "text": "Je n’arrive presque plus à penser."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui t’aide ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Quand ça bouge un peu en moi :",
+          "spalten": 2,
+          "items": [
+            "respirer trois fois profondément",
+            "boire quelque chose de frais",
+            "m’encourager avec une phrase",
+            "parler à quelqu’un"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "titel": "Quand ça bouge très fort en moi :",
+          "spalten": 2,
+          "items": [
+            "aller dans le coin calme",
+            "chercher un adulte",
+            "serrer fort mes mains",
+            "appuyer mes pieds dans le sol"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ton plan.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si mon cœur bat très vite,",
+              "dann": "je respire trois fois profondément dans le ventre."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants distinguent quatre niveaux d’agitation, montrent où ils en sont et choisissent des aides : à un niveau élevé, d’abord calmer le corps.",
+        "ablauf": [
+          "Entrée (5 min) : thermomètre au tableau. « Peut-on être très agité de joie ? » Mimer les niveaux : détendu, remuant, tendu.",
+          "Tâche 1 (5 min) : chaque enfant montre son niveau, p. ex. avec une pince à linge. Chaque niveau est légitime.",
+          "Tâche 2 (10 min) : lire les aides, en essayer deux (respirer, serrer les mains), puis cocher. Au niveau 4, les mots aident peu : d’abord le corps et la distance.",
+          "Tâche 3 (5 min) : lire l’exemple ensemble ; écrire ou dicter le plan.",
+          "Au quotidien : contrôle du thermomètre le matin et après la récré."
+        ],
+        "hintergrund": "L’excitation monte par paliers, pour la colère comme pour la peur ou l’impatience joyeuse. Plus elle est forte, plus penser et parler deviennent difficiles ; Siegel et Bryson (2011) parlent d’« étage supérieur » du cerveau qui cesse un instant de fonctionner. C’est tôt qu’il est le plus facile d’intervenir (Gross, 1998). Les échelles d’auto-évaluation comme le thermomètre sont un outil courant de la thérapie cognitivo-comportementale avec les enfants (Kendall & Hedtke, 2006). Le plan « si … alors » relie un signe du corps à une action précise.",
+        "quellen": [
+          "Gross, J. J. (1998). The emerging field of emotion regulation: An integrative review. Review of General Psychology, 2(3), 271–299.",
+          "Siegel, D. J. & Bryson, T. P. (2011). The Whole-Brain Child. New York: Delacorte.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement trois niveaux (vert, jaune, rouge) ; aides en cartes images.",
+          "schwerer": "Noter pour chaque niveau un exemple de sa journée : « Ça bouge en moi quand … »"
+        },
+        "impulse": [
+          "À quoi vois-tu que ça commence à bouger en toi ?",
+          "Quelle aide utilises-tu déjà sans qu’on te le rappelle ?",
+          "Qui peut te rappeler ton plan ?"
+        ],
+        "tipps": [
+          "Groupe : thermomètre de classe avec des pinces à linge (prénoms). Les enfants montrent leur niveau sans mots.",
+          "Individuel : évaluer le thermomètre au début et à la fin de la séance, noter l’aide qui a marché."
+        ],
+        "achtung": "Si un enfant est très souvent au niveau 4, se blesse ou blesse les autres, ou parle de violence : ne pas approfondir devant le groupe, informer la direction compétente (responsable). En cas de danger, agir selon la procédure interne.",
+        "material": "Crayons ; pinces à linge"
+      }
+    }
+  },
+  {
+    "id": "t1-mit-allen-sinnen-ankommen",
+    "bereich": "gefuehle",
+    "thema": "beruhigen",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "15–20 Min.",
+    "eldib": [
+      "V-21",
+      "K-15",
+      "K-16"
+    ],
+    "schlagworte": [
+      "Achtsamkeit",
+      "5-4-3-2-1",
+      "Sinne",
+      "Hier und Jetzt",
+      "Ruhe finden"
+    ],
+    "bild": "icon:eye",
+    "verwandt": [
+      "ballon-atmen",
+      "ruhig-werden-drei-uebungen",
+      "meine-ruhe-insel"
+    ],
+    "de": {
+      "titel": "Mit allen Sinnen ankommen",
+      "untertitel": "Mit deinen Sinnen kommst du im Hier und Jetzt an.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Wie ist das Wetter in dir? Kreise ein.",
+          "hinweis": "Gewitter heißt: sehr unruhig. Sonne heißt: ruhig.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:cloud-storm",
+              "text": "Gewitter"
+            },
+            {
+              "bild": "icon:wind",
+              "text": "Wind"
+            },
+            {
+              "bild": "icon:cloud",
+              "text": "Wolken"
+            },
+            {
+              "bild": "icon:sun",
+              "text": "Sonne"
+            }
+          ],
+          "klein": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Suche mit allen Sinnen. Kreuze an, was du geschafft hast.",
+          "hinweis": "Zum Beispiel sehen: das Fenster, die Tür, mein Stift.",
+          "symbole": [
+            "zeigen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "ankreuzen",
+          "spalten": 5,
+          "bilder": [
+            {
+              "bild": "icon:eye",
+              "text": "5 sehen"
+            },
+            {
+              "bild": "icon:ear",
+              "text": "4 hören"
+            },
+            {
+              "bild": "icon:hand-finger",
+              "text": "3 fühlen"
+            },
+            {
+              "bild": "icon:flower",
+              "text": "2 riechen"
+            },
+            {
+              "bild": "icon:apple",
+              "text": "1 schmecken"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was war dein schönster Fund? Male ihn.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mein schönster Fund:",
+          "hoehe": 5.5,
+          "zeichnen": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie ist das Wetter in dir jetzt? Kreise wieder ein.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:cloud-storm",
+              "text": "Gewitter"
+            },
+            {
+              "bild": "icon:wind",
+              "text": "Wind"
+            },
+            {
+              "bild": "icon:cloud",
+              "text": "Wolken"
+            },
+            {
+              "bild": "icon:sun",
+              "text": "Sonne"
+            }
+          ],
+          "klein": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen eine kurze Übung kennen, mit der sie bei Unruhe im Hier und Jetzt ankommen (5-4-3-2-1 mit allen Sinnen), und prüfen selbst, ob sie danach ruhiger sind.",
+        "ablauf": [
+          "Einstieg (3 Min.): Bequem hinsetzen. „Wie ist das Wetter in euch?“ Die Kinder kreisen ein Bild ein.",
+          "Anleiten (8 Min.), leise und langsam: „Finde 5 Dinge, die du siehst.“ – Pause – „4 Dinge, die du hörst.“ – „3 Dinge, die du fühlst: Füße, Stuhl, Kleidung.“ – 2 riechen – 1 schmecken. Nach jedem Sinn ein Kästchen ankreuzen.",
+          "Aufgabe 3 (5 Min.): Schönsten Fund malen; wer mag, erzählt ihn einem Partner.",
+          "Aufgabe 4 (2 Min.): Noch einmal einkreisen und vergleichen. Auch „gleich“ ist eine gute Antwort.",
+          "Üben: Zu Stundenbeginn und nach der Pause zwei Minuten."
+        ],
+        "hintergrund": "Achtsamkeit heißt, die Aufmerksamkeit absichtlich und ohne Bewertung auf das zu richten, was gerade da ist (Kabat-Zinn, 1990); in der Akzeptanz- und Commitment-Therapie gilt der Kontakt mit dem gegenwärtigen Moment als Kernprozess (Hayes et al., 2012). Die 5-4-3-2-1-Übung lenkt von Sorgen und innerer Unruhe auf die Sinne und holt Kinder ins Hier und Jetzt zurück. Eine Übersicht zu Achtsamkeit in Schulen fand positive Effekte auf Stressbewältigung, Wohlbefinden und kognitive Leistung (Zenner et al., 2014). Für Jüngere eignen sich kurze, freiwillige Übungen mit konkreten Sinneseindrücken.",
+        "quellen": [
+          "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+          "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603."
+        ],
+        "differenzierung": {
+          "leichter": "Nur drei Sinne (sehen, hören, fühlen); jede Frage einzeln anleiten, die Kinder zeigen auf die Bilder.",
+          "schwerer": "Zu zweit: Eine nennt, die andere findet. Hören und Fühlen mit geschlossenen Augen."
+        },
+        "impulse": [
+          "Was hast du gehört, das du vorher nicht bemerkt hast?",
+          "Wo im Körper merkst du, dass du ruhiger wirst?",
+          "Wann könntest du die Übung machen?"
+        ],
+        "tipps": [
+          "Gruppe: Mit Glocke oder Klangschale beginnen und enden. Augen offen lassen ist erlaubt.",
+          "Einzelstunde: Einen kleinen „Anker“ wählen (Stein, Armband), der unterwegs an die Übung erinnert."
+        ],
+        "achtung": "Wird ein Kind in der Stille unruhig, ängstlich oder erzählt es von belastenden Bildern: Übung beenden, ruhig bleiben, Gespräch anbieten, die zuständige Leitung (Responsable) informieren.",
+        "material": "Stifte; Glocke oder Klangschale"
+      }
+    },
+    "fr": {
+      "titel": "Me poser avec mes cinq sens",
+      "untertitel": "Tes sens te ramènent ici et maintenant.",
+      "bausteine": [
+        {
+          "art": "aufgabe",
+          "text": "Quel temps fait-il en toi ? Entoure.",
+          "hinweis": "Orage : très agité. Soleil : calme.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:cloud-storm",
+              "text": "orage"
+            },
+            {
+              "bild": "icon:wind",
+              "text": "vent"
+            },
+            {
+              "bild": "icon:cloud",
+              "text": "nuages"
+            },
+            {
+              "bild": "icon:sun",
+              "text": "soleil"
+            }
+          ],
+          "klein": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Cherche avec tous tes sens. Coche ce que tu as trouvé.",
+          "hinweis": "Pour voir, par exemple : la fenêtre, la porte, mon crayon.",
+          "symbole": [
+            "zeigen",
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "ankreuzen",
+          "spalten": 5,
+          "bilder": [
+            {
+              "bild": "icon:eye",
+              "text": "5 voir"
+            },
+            {
+              "bild": "icon:ear",
+              "text": "4 entendre"
+            },
+            {
+              "bild": "icon:hand-finger",
+              "text": "3 toucher"
+            },
+            {
+              "bild": "icon:flower",
+              "text": "2 sentir"
+            },
+            {
+              "bild": "icon:apple",
+              "text": "1 goûter"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quelle trouvaille t’a le plus plu ? Dessine-la.",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Ma plus belle trouvaille :",
+          "hoehe": 5.5,
+          "zeichnen": true
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel temps fait-il en toi maintenant ? Entoure à nouveau.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "spalten": 4,
+          "bilder": [
+            {
+              "bild": "icon:cloud-storm",
+              "text": "orage"
+            },
+            {
+              "bild": "icon:wind",
+              "text": "vent"
+            },
+            {
+              "bild": "icon:cloud",
+              "text": "nuages"
+            },
+            {
+              "bild": "icon:sun",
+              "text": "soleil"
+            }
+          ],
+          "klein": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent un court exercice pour revenir ici et maintenant quand ils sont agités (5-4-3-2-1 avec tous les sens) et vérifient eux-mêmes s’ils sont plus calmes ensuite.",
+        "ablauf": [
+          "Entrée (3 min) : s’asseoir confortablement. « Quel temps fait-il en vous ? » Les enfants entourent une image.",
+          "Guider (8 min), doucement et lentement : « Trouve 5 choses que tu vois. » – pause – « 4 choses que tu entends. » – « 3 choses que tu touches : pieds, chaise, vêtements. » – 2 odeurs – 1 goût. Cocher une case après chaque sens.",
+          "Tâche 3 (5 min) : dessiner la plus belle trouvaille ; qui veut la raconte à un camarade.",
+          "Tâche 4 (2 min) : entourer à nouveau et comparer. « Pareil » est aussi une bonne réponse.",
+          "S’exercer : deux minutes en début de leçon et après la récré."
+        ],
+        "hintergrund": "La pleine conscience consiste à porter son attention, volontairement et sans jugement, sur ce qui est là maintenant (Kabat-Zinn, 1990) ; dans la thérapie d’acceptation et d’engagement, le contact avec le moment présent est un processus central (Hayes et al., 2012). L’exercice 5-4-3-2-1 détourne des soucis et de l’agitation intérieure vers les sens et ramène les enfants ici et maintenant. Une synthèse sur la pleine conscience à l’école a trouvé des effets positifs sur la gestion du stress, le bien-être et les performances cognitives (Zenner et al., 2014). Pour les plus jeunes, de courts exercices volontaires avec des sensations concrètes conviennent.",
+        "quellen": [
+          "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
+          "Hayes, S. C., Strosahl, K. D. & Wilson, K. G. (2012). Acceptance and Commitment Therapy: The Process and Practice of Mindful Change (2nd ed.). New York: Guilford.",
+          "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement trois sens (voir, entendre, toucher) ; guider chaque consigne seule, les enfants montrent les images.",
+          "schwerer": "À deux : l’un nomme, l’autre trouve. Entendre et toucher les yeux fermés."
+        },
+        "impulse": [
+          "Qu’as-tu entendu que tu n’avais pas remarqué avant ?",
+          "Où dans ton corps sens-tu que tu te calmes ?",
+          "Quand pourrais-tu faire l’exercice ?"
+        ],
+        "tipps": [
+          "Groupe : commencer et finir avec une cloche ou un bol chantant. Garder les yeux ouverts est permis.",
+          "Individuel : choisir un petit « ancrage » (pierre, bracelet) qui rappelle l’exercice en route."
+        ],
+        "achtung": "Si un enfant devient agité ou anxieux dans le silence ou parle d’images pénibles : arrêter l’exercice, rester calme, proposer un entretien, informer la direction compétente (responsable).",
+        "material": "Crayons ; cloche ou bol chantant"
+      }
+    }
+  },
+  {
+    "id": "t1-angst-wachhund",
+    "bereich": "gefuehle",
+    "thema": "angst",
+    "stufen": [
+      "C2"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30 Min.",
+    "eldib": [
+      "K-16",
+      "K-26",
+      "V-25"
+    ],
+    "schlagworte": [
+      "Angst verstehen",
+      "Wachhund",
+      "echte Gefahr",
+      "falscher Alarm",
+      "Beruhigen"
+    ],
+    "bild": "motiv:hund",
+    "verwandt": [
+      "was-hilft-bei-angst",
+      "ich-kann-mutig-sein",
+      "t1-gedankenblase"
+    ],
+    "de": {
+      "titel": "Angst ist wie ein kleiner Wachhund",
+      "untertitel": "Er passt auf dich auf. Manchmal bellt er zu laut.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Der Wachhund in dir",
+          "text": "In dir wohnt ein kleiner Wachhund. Er passt auf dich auf. Wenn ein Auto rast, bellt er laut. Das ist gut. Manchmal bellt er auch, wenn nur ein Blatt raschelt.",
+          "bild": "motiv:hund"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Echte Gefahr oder falscher Alarm? Kreuze an.",
+          "symbole": [
+            "lesen",
+            "ankreuzen"
+          ],
+          "hinweis": "Beispiel: Das rasende Auto ist echte Gefahr."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "echte Gefahr",
+            "falscher Alarm"
+          ],
+          "items": [
+            "Ein Auto rast auf mich zu.",
+            "Ein Blatt raschelt im Wind.",
+            "Ich soll vor der Klasse lesen.",
+            "Ein fremder Hund knurrt laut."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was beruhigt deinen Wachhund? Kreise ein.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:wind",
+              "text": "tief atmen"
+            },
+            {
+              "bild": "icon:message-circle",
+              "text": "Mut-Satz sagen"
+            },
+            {
+              "bild": "icon:users",
+              "text": "Hilfe holen"
+            },
+            {
+              "bild": "icon:bottle",
+              "text": "etwas trinken"
+            },
+            {
+              "bild": "icon:heart",
+              "text": "Hand aufs Herz"
+            },
+            {
+              "bild": "icon:run",
+              "text": "mich bewegen"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Male deinen Wachhund. Gib ihm einen Namen.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mein Wachhund heißt …",
+          "hoehe": 3.5,
+          "zeichnen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder verstehen Angst als Alarmanlage, die manchmal zu laut anschlägt, unterscheiden echte Gefahr von falschem Alarm und kennen Hilfen, die den „Wachhund“ beruhigen.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wann bellt ein Hund?“ Geschichte vorlesen, Wachhund an die Tafel zeichnen.",
+          "Aufgabe 1 (10 Min.): Sätze vorlesen, ankreuzen, begründen lassen. „Falscher Alarm heißt nicht: Das Gefühl ist falsch. Der Wachhund meint es gut.“",
+          "Aufgabe 2 (5 Min.): Hilfen vorlesen, zwei gleich ausprobieren (tief atmen, Mut-Satz leise und laut).",
+          "Aufgabe 3 (10 Min.): Hund malen, Namen geben. Wer mag, schreibt ihm einen Satz („Danke, Wachhund. Es ist nur ein Blatt.“) und stellt ihn vor.",
+          "Abschluss: „Der Wachhund bellt, damit ich aufpasse. Ich prüfe, ob es wirklich gefährlich ist.“"
+        ],
+        "hintergrund": "Angst ist ein Schutzsystem: Der Körper bereitet sich auf Gefahr vor. Bei ängstlichen Kindern schlägt dieser Alarm auch ohne echte Gefahr an. Programme der kognitiven Verhaltenstherapie erklären deshalb zuerst, was Angst ist und wozu sie dient (Kendall & Hedtke, 2006; Rapee et al., 2008): normal, nützlich, nur manchmal zu laut. Bilder wie der Wachhund trennen das Kind von seiner Angst (Externalisieren) und schaffen Abstand, um den Alarm zu prüfen statt ihn zu vermeiden. Beruhigende Selbstgespräche gehen auf die Selbstinstruktion zurück (Meichenbaum & Goodman, 1971).",
+        "quellen": [
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Rapee, R. M., Wignall, A., Spence, S. H., Cobham, V. & Lyneham, H. (2008). Helping Your Anxious Child (2nd ed.). Oakland: New Harbinger.",
+          "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 1 mündlich: Das Kind zeigt Daumen hoch (Gefahr) oder runter (falscher Alarm).",
+          "schwerer": "Eine Situation erfinden, in der der Wachhund bellt, und aufschreiben, wie man prüft, ob Gefahr da ist."
+        },
+        "impulse": [
+          "Wann hat dein Wachhund zu Recht gebellt?",
+          "Wann bellt er, obwohl nichts da ist?",
+          "Was sagst du einem Freund, dessen Wachhund zu laut bellt?"
+        ],
+        "tipps": [
+          "Gruppe: Die Hunde nebeneinander aufhängen; die Kinder sehen, dass andere ähnliche Wachhunde haben. Niemand muss eine Angst nennen.",
+          "Einzelstunde: Das Kind erzählt, wann sein Hund oft bellt; einen Beruhigungs-Satz dafür üben."
+        ],
+        "achtung": "Sind Ängste sehr stark, dauern lange an oder erschweren Schlaf oder Schulbesuch: Eltern ansprechen, die zuständige Leitung (Responsable) informieren. Angst vor einer Person: nicht im Plenum vertiefen, einzeln zuhören.",
+        "material": "Stifte"
+      }
+    },
+    "fr": {
+      "titel": "La peur, un petit chien de garde",
+      "untertitel": "Il veille sur toi. Parfois, il aboie trop fort.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Le chien de garde en toi",
+          "text": "Un petit chien de garde vit en toi. Il veille sur toi. Quand une voiture fonce, il aboie fort. C’est bien. Parfois, il aboie aussi pour une feuille qui bouge.",
+          "bild": "motiv:hund"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vrai danger ou fausse alerte ? Coche.",
+          "symbole": [
+            "lesen",
+            "ankreuzen"
+          ],
+          "hinweis": "Exemple : la voiture qui fonce est un vrai danger."
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vrai danger",
+            "fausse alerte"
+          ],
+          "items": [
+            "Une voiture fonce sur moi.",
+            "Une feuille bruisse dans le vent.",
+            "Je dois lire devant la classe.",
+            "Un chien inconnu grogne fort."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui calme ton chien de garde ? Entoure.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "bilder",
+          "modus": "einkreisen",
+          "klein": true,
+          "spalten": 3,
+          "bilder": [
+            {
+              "bild": "icon:wind",
+              "text": "bien respirer"
+            },
+            {
+              "bild": "icon:message-circle",
+              "text": "m’encourager"
+            },
+            {
+              "bild": "icon:users",
+              "text": "demander de l’aide"
+            },
+            {
+              "bild": "icon:bottle",
+              "text": "boire de l’eau"
+            },
+            {
+              "bild": "icon:heart",
+              "text": "main sur le cœur"
+            },
+            {
+              "bild": "icon:run",
+              "text": "bouger"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine ton chien de garde. Donne-lui un nom.",
+          "symbole": [
+            "malen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "feld",
+          "label": "Mon chien de garde s’appelle …",
+          "hoehe": 3.5,
+          "zeichnen": true
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants comprennent la peur comme un système d’alarme parfois trop fort, distinguent le vrai danger de la fausse alerte et connaissent des aides qui calment le « chien de garde ».",
+        "ablauf": [
+          "Entrée (5 min) : « Quand un chien aboie-t-il ? » Lire l’histoire, dessiner le chien de garde au tableau.",
+          "Tâche 1 (10 min) : lire les phrases, cocher, faire justifier. « Fausse alerte ne veut pas dire : l’émotion est fausse. Le chien de garde veut bien faire. »",
+          "Tâche 2 (5 min) : lire les aides, en essayer deux (bien respirer, phrase de courage à voix basse puis haute).",
+          "Tâche 3 (10 min) : dessiner le chien, lui donner un nom. Qui veut lui écrit une phrase (« Merci, chien de garde. Ce n’est qu’une feuille. ») et le présente.",
+          "Conclusion : « Le chien de garde aboie pour que je fasse attention. Je vérifie si c’est vraiment dangereux. »"
+        ],
+        "hintergrund": "La peur est un système de protection : le corps se prépare au danger. Chez les enfants anxieux, cette alarme se déclenche aussi sans danger réel. Les programmes de thérapie cognitivo-comportementale expliquent donc d’abord ce qu’est la peur et à quoi elle sert (Kendall & Hedtke, 2006 ; Rapee et al., 2008) : normale, utile, parfois trop forte. Des images comme le chien de garde séparent l’enfant de sa peur (externalisation) et donnent du recul pour vérifier l’alarme au lieu de l’éviter. Les paroles apaisantes à soi-même remontent à l’auto-instruction (Meichenbaum & Goodman, 1971).",
+        "quellen": [
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Rapee, R. M., Wignall, A., Spence, S. H., Cobham, V. & Lyneham, H. (2008). Helping Your Anxious Child (2nd ed.). Oakland: New Harbinger.",
+          "Meichenbaum, D. & Goodman, J. (1971). Training impulsive children to talk to themselves. Journal of Abnormal Psychology, 77(2), 115–126."
+        ],
+        "differenzierung": {
+          "leichter": "Tâche 1 à l’oral : l’enfant montre pouce en haut (danger) ou en bas (fausse alerte).",
+          "schwerer": "Inventer une situation où le chien aboie et écrire comment vérifier s’il y a un vrai danger."
+        },
+        "impulse": [
+          "Quand ton chien de garde a-t-il aboyé à raison ?",
+          "Quand aboie-t-il alors qu’il n’y a rien ?",
+          "Que dis-tu à un ami dont le chien aboie trop fort ?"
+        ],
+        "tipps": [
+          "Groupe : accrocher les chiens côte à côte ; les enfants voient que d’autres ont des chiens semblables. Personne n’a à nommer une peur.",
+          "Individuel : l’enfant raconte quand son chien aboie souvent ; s’exercer à une phrase apaisante pour cela."
+        ],
+        "achtung": "Si les peurs sont très fortes, durent longtemps ou gênent le sommeil ou l’école : parler aux parents, informer la direction compétente (responsable). Peur d’une personne : ne pas approfondir devant le groupe, écouter en tête à tête.",
+        "material": "Crayons"
+      }
+    }
+  },
+  {
+    "id": "t2-gedanken-detektiv",
+    "bereich": "gefuehle",
+    "thema": "erkennen",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "40–45 Min.",
+    "eldib": [
+      "K-29",
+      "K-26",
+      "V-18"
+    ],
+    "schlagworte": [
+      "Gedanken",
+      "Gefühle",
+      "Situation",
+      "Handlung",
+      "Gedanken prüfen",
+      "KVT"
+    ],
+    "bild": "icon:search",
+    "de": {
+      "titel": "Gedanken-Detektiv",
+      "untertitel": "Zwischen dem, was passiert, und dem, was du fühlst, steckt ein Gedanke. Ein guter Detektiv findet ihn.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Der freie Platz",
+          "text": "Ana fährt mit der Klasse im Bus zum Ausflug. Neben ihr ist ein Platz frei. Pol kommt durch den Gang. Er geht an Ana vorbei und setzt sich weiter hinten zu Jil. Ana denkt: „Niemand will neben mir sitzen.“ Ihr Bauch wird eng. Sie schaut aus dem Fenster und sagt die ganze Fahrt kein Wort.",
+          "bild": "figur:lea:traurig"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ana sucht Spuren. Trage ein, was zu jeder Spur passt.",
+          "hinweis": "Spur 1 zeigt nur, was eine Kamera filmen würde. „Pol mag mich nicht“ kann keine Kamera filmen – das ist schon ein Gedanke.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Spur",
+            "Was Ana entdeckt"
+          ],
+          "breiten": [
+            1.35,
+            2
+          ],
+          "beispiel": [
+            "1 Was ist passiert?",
+            "Pol geht vorbei und setzt sich zu Jil."
+          ],
+          "werte": [
+            [
+              "2 Was denkt Ana? Der Satz in ihrem Kopf.",
+              ""
+            ],
+            [
+              "3 Was fühlt Ana? Wo im Körper?",
+              ""
+            ],
+            [
+              "4 Was tut Ana? Was kann man sehen?",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jetzt denkt Ana etwas anderes. Was ändert sich?",
+          "hinweis": "Anas neuer Gedanke: „Pol wollte bestimmt zu Jil. Ich frage ihn später, ob wir tauschen.“",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Mit dem neuen Gedanken fühlt sich Ana …",
+            "Dann tut Ana …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was ist gleich geblieben? Was hat sich geändert? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "gleich geblieben",
+            "geändert"
+          ],
+          "items": [
+            "Die Situation im Bus",
+            "Anas Gedanke",
+            "Anas Gefühl",
+            "Was Ana tut"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Gleiche Situation, anderer Gedanke, anderes Gefühl. Viele Gedanken sind nur Vermutungen. Du darfst sie prüfen, bevor du ihnen glaubst."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Jetzt du: ein Fall, den du erlebt hast – oder ein erfundener.",
+          "hinweis": "Wähle etwas Kleines, das dich nur ein bisschen geärgert, genervt oder traurig gemacht hat. Du musst nichts vorlesen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Spur",
+            "Mein Fall"
+          ],
+          "breiten": [
+            1.35,
+            2
+          ],
+          "werte": [
+            [
+              "1 Was ist passiert? Nur das, was die Kamera filmt.",
+              ""
+            ],
+            [
+              "2 Was habe ich gedacht? Der Satz im Kopf.",
+              ""
+            ],
+            [
+              "3 Was habe ich gefühlt? Wie stark (0–10)?",
+              ""
+            ],
+            [
+              "4 Was habe ich getan?",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prüfe deinen Gedanken: Welcher andere Gedanke wäre auch möglich?",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Fragen des Detektivs",
+          "punkte": [
+            "Woher weiß ich das genau?",
+            "Was könnte noch der Grund sein?",
+            "Was würde ich einem Freund oder einer Freundin sagen?"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Ein anderer Gedanke wäre: …",
+            "Dann würde ich mich … fühlen.",
+            "Dann würde ich …"
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder erkennen, dass Gefühl und Handeln auch vom Gedanken dazwischen abhängen. Sie trennen Situation und Gedanke und suchen für einen eigenen oder erfundenen Fall einen anderen Gedanken.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen. „Was hat Ana gesehen? Was gedacht? Was getan?“ Wir suchen Spuren im Kopf.",
+          "Aufgabe 1 (10 Min.): Spuren an der Tafel als Kette sammeln: Situation – Gedanke – Gefühl – Handlung. Kamera-Test: „Würde die Kamera das filmen?“",
+          "Aufgabe 2 und 3 (10 Min.): Den neuen Gedanken einsetzen, ausfüllen, vergleichen: „Was ist gleich geblieben, was hat sich geändert?“",
+          "Aufgabe 4 (10 Min.): Eigener oder erfundener Fall, Einzelarbeit. Niemand muss vorlesen. Die Lehrperson hilft beim Trennen von Situation und Gedanke.",
+          "Aufgabe 5 und Abschluss (7 Min.): Fragen des Detektivs besprechen, freiwillig zu zweit austauschen, als Plakat aufhängen."
+        ],
+        "hintergrund": "Das Blatt übersetzt das kognitive Modell der Verhaltenstherapie (ABC-Modell): Nicht die Situation (A) allein löst Gefühl und Handeln (C) aus, sondern ihre Bewertung (B), der „automatische Gedanke“ (Ellis, 1962; Beck, 2011). Kinderprogramme arbeiten im Schulalter mit dieser Unterscheidung, meist an kurzen, konkreten Szenen (Stallard, 2019). Zentral ist die Trennung von Beobachtung und Deutung: Was würde eine Kamera filmen, was ist schon Interpretation? Wer Gedanken als Vermutungen erlebt, kann sie später prüfen.",
+        "quellen": [
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgabe 4 mündlich zu zweit; Gefühlswörter an die Tafel schreiben.",
+          "schwerer": "Einen dritten Gedanken erfinden: Welcher passt am besten zu den Tatsachen?"
+        },
+        "impulse": [
+          "Woran erkennst du, dass etwas ein Gedanke und keine Tatsache ist?",
+          "Welcher Gedanke macht es dir leichter, welcher schwerer?"
+        ],
+        "tipps": [
+          "Gruppe: Aus erfundenen Beispielen eine Tafelsammlung „Gedanke A – Gedanke B“ bauen. Eigene Fälle bleiben auf dem Blatt.",
+          "Einzelstunde: Die Lehrperson schreibt die Spuren mit und stellt die Kamera-Frage. Einen Fall aus der letzten Woche nur wählen, wenn das Kind möchte."
+        ],
+        "achtung": "Hinter „Niemand mag mich“ kann Ausgrenzung stehen. Bei anhaltendem Ausschluss, Gewalt oder starker Traurigkeit: nicht im Plenum vertiefen, Einzelgespräch anbieten, die zuständige Leitung (Responsable) informieren.",
+        "material": "Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Détective des pensées",
+      "untertitel": "Entre ce qui se passe et ce que tu ressens, il y a une pensée. Un bon détective la retrouve.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "La place libre",
+          "text": "Ana part en excursion avec sa classe, en bus. À côté d’elle, une place est libre. Pol avance dans l’allée. Il passe devant Ana et s’assoit plus loin, à côté de Jil. Ana pense : « Personne ne veut s’asseoir à côté de moi. » Son ventre se serre. Elle regarde par la fenêtre et ne dit pas un mot de tout le trajet.",
+          "bild": "figur:lea:traurig"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ana cherche des indices. Note ce qui correspond à chaque indice.",
+          "hinweis": "L’indice 1 montre seulement ce qu’une caméra filmerait. « Pol ne m’aime pas », une caméra ne peut pas le filmer : c’est déjà une pensée.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Indice",
+            "Ce qu’Ana découvre"
+          ],
+          "breiten": [
+            1.35,
+            2
+          ],
+          "beispiel": [
+            "1 Que s’est-il passé ?",
+            "Pol passe devant Ana et s’assoit à côté de Jil."
+          ],
+          "werte": [
+            [
+              "2 Que pense Ana ? La phrase dans sa tête.",
+              ""
+            ],
+            [
+              "3 Que ressent Ana ? Où dans le corps ?",
+              ""
+            ],
+            [
+              "4 Que fait Ana ? Que voit-on ?",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Maintenant, Ana pense autre chose. Qu’est-ce qui change ?",
+          "hinweis": "La nouvelle pensée d’Ana : « Pol voulait sûrement aller près de Jil. Je lui demanderai tout à l’heure si on peut échanger. »",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Avec cette nouvelle pensée, Ana se sent …",
+            "Alors Ana …"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui est resté pareil ? Qu’est-ce qui a changé ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "pareil",
+            "changé"
+          ],
+          "items": [
+            "La situation dans le bus",
+            "La pensée d’Ana",
+            "Ce que ressent Ana",
+            "Ce que fait Ana"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "text": "Même situation, autre pensée, autre sentiment. Beaucoup de pensées ne sont que des suppositions. Tu peux les vérifier avant d’y croire."
+        },
+        {
+          "art": "aufgabe",
+          "text": "À toi : un cas que tu as vécu – ou un cas inventé.",
+          "hinweis": "Choisis une petite situation qui t’a donné un peu de colère ou de tristesse. Tu n’as rien à lire à voix haute.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Indice",
+            "Mon cas"
+          ],
+          "breiten": [
+            1.35,
+            2
+          ],
+          "werte": [
+            [
+              "1 Que s’est-il passé ? Seulement ce que la caméra filme.",
+              ""
+            ],
+            [
+              "2 Qu’ai-je pensé ? La phrase dans ma tête.",
+              ""
+            ],
+            [
+              "3 Qu’ai-je ressenti ? À quel point (0 à 10) ?",
+              ""
+            ],
+            [
+              "4 Qu’ai-je fait ?",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Vérifie ta pensée : quelle autre pensée serait aussi possible ?",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Les questions du détective",
+          "punkte": [
+            "Comment est-ce que je le sais exactement ?",
+            "Quelle autre raison est possible ?",
+            "Que dirais-je à un copain ou à une copine ?"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "linien": 1,
+          "items": [
+            "Une autre pensée serait : …",
+            "Alors je me sentirais …",
+            "Alors je …"
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants comprennent que le sentiment et l’action dépendent aussi de la pensée qui s’y glisse. Ils séparent situation et pensée et cherchent une autre pensée pour un cas vécu ou inventé.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. « Qu’a vu Ana ? Qu’a-t-elle pensé ? Qu’a-t-elle fait ? » On cherche des indices dans la tête.",
+          "Tâche 1 (10 min) : noter les indices au tableau, en chaîne : situation – pensée – sentiment – action. Test de la caméra : « La caméra filmerait-elle cela ? »",
+          "Tâches 2 et 3 (10 min) : intégrer la nouvelle pensée, remplir, comparer : « Qu’est-ce qui est resté pareil, qu’est-ce qui a changé ? »",
+          "Tâche 4 (10 min) : cas vécu ou inventé, travail individuel. Personne ne lit à voix haute. L’adulte aide à séparer situation et pensée.",
+          "Tâche 5 et clôture (7 min) : discuter des questions du détective, échanger à deux sur base volontaire, les afficher."
+        ],
+        "hintergrund": "La feuille traduit le modèle cognitif de la thérapie comportementale (modèle ABC) : ce n’est pas la situation (A) seule qui déclenche sentiment et action (C), mais son interprétation (B), la « pensée automatique » (Ellis, 1962 ; Beck, 2011). Les programmes pour enfants utilisent cette distinction dès l’âge scolaire, à partir de scènes courtes et concrètes (Stallard, 2019). L’essentiel : séparer l’observation de l’interprétation. Que filmerait une caméra, qu’est-ce qui est déjà une interprétation ? Qui vit ses pensées comme des suppositions pourra ensuite les vérifier.",
+        "quellen": [
+          "Ellis, A. (1962). Reason and Emotion in Psychotherapy. New York: Lyle Stuart.",
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley."
+        ],
+        "differenzierung": {
+          "leichter": "Tâche 4 à l’oral, à deux ; mots de sentiments au tableau.",
+          "schwerer": "Inventer une troisième pensée : laquelle colle le mieux aux faits ?"
+        },
+        "impulse": [
+          "À quoi vois-tu qu’une chose est une pensée et non un fait ?",
+          "Quelle pensée te rend les choses plus faciles, laquelle plus difficiles ?"
+        ],
+        "tipps": [
+          "Groupe : construire au tableau, avec des exemples inventés, une collection « pensée A – pensée B ». Les cas personnels restent sur la feuille.",
+          "Séance individuelle : l’adulte note les indices et pose la question de la caméra. Un cas de la semaine passée seulement si l’enfant le souhaite."
+        ],
+        "achtung": "Derrière « Personne ne m’aime » peut se cacher de l’exclusion. En cas de mise à l’écart durable, de violence ou de forte tristesse : ne pas approfondir en plénière, proposer un entretien individuel, informer la direction compétente (responsable).",
+        "material": "Crayons"
+      }
+    },
+    "verwandt": [
+      "t2-denkfallen-erkennen",
+      "t2-der-hilfreiche-gedanke"
+    ]
+  },
+  {
+    "id": "t2-denkfallen-erkennen",
+    "bereich": "gefuehle",
+    "thema": "angst",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "40 Min.",
+    "eldib": [
+      "KOG-41",
+      "SOZ-21",
+      "K-29"
+    ],
+    "schlagworte": [
+      "Denkfallen",
+      "Schwarz-Weiß-Denken",
+      "Gedankenlesen",
+      "Katastrophendenken",
+      "Gedanken prüfen",
+      "KVT"
+    ],
+    "bild": "icon:brain",
+    "de": {
+      "titel": "Denkfallen erkennen",
+      "untertitel": "Manche Gedanken legen uns herein. Sie klingen wahr, stimmen aber nicht ganz. Wer die Falle kennt, tappt seltener hinein.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Denkfallen sind Gedanken, die uns hereinlegen. Fast alle Menschen tappen manchmal hinein, vor allem wenn sie aufgeregt oder müde sind. Drei Fallen kommen besonders oft vor."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Lerne die drei Fallen kennen. Schneide die Karten aus und leg sie vor dich.",
+          "symbole": [
+            "lesen",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 170,
+          "karten": [
+            {
+              "titel": "1 Schwarz-Weiß-Brille",
+              "text": "Alles ist ganz gut oder ganz schlecht. Dazwischen gibt es nichts.\nMerkwörter: immer, nie, alles, nichts",
+              "bild": "icon:eyeglass"
+            },
+            {
+              "titel": "2 Gedankenleser",
+              "text": "Ich weiß genau, was die anderen denken. Ich frage nicht.\nMerkwörter: bestimmt, sicher, die denken …",
+              "bild": "icon:bubble"
+            },
+            {
+              "titel": "3 Katastrophen-Welle",
+              "text": "Ein kleines Problem wird riesig. Gleich passiert das Schlimmste.\nMerkwörter: und dann …",
+              "bild": "icon:cloud-storm"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Falle steckt drin? Schreibe 1, 2, 3 – oder x für „keine Falle“.",
+          "hinweis": "Lies jeden Gedanken genau. Manche sind ganz in Ordnung.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Gedanke",
+            "Falle"
+          ],
+          "breiten": [
+            3.6,
+            0.7
+          ],
+          "beispiel": [
+            "„Ich habe die Probe vermasselt. Ich kann einfach gar nichts.“",
+            "1"
+          ],
+          "werte": [
+            [
+              "„Mila hat mich nicht gegrüßt. Sie ist bestimmt sauer auf mich.“",
+              ""
+            ],
+            [
+              "„Wenn ich mich verspreche, lachen alle. Dann will keiner mehr mit mir reden.“",
+              ""
+            ],
+            [
+              "„Ich habe nur sieben von zehn Punkten. Dann bin ich eben schlecht in Mathe.“",
+              ""
+            ],
+            [
+              "„Der Blick der Lehrerin war streng. Sie denkt sicher, dass ich mich nicht anstrenge.“",
+              ""
+            ],
+            [
+              "„Im Schwimmkurs habe ich Wasser in der Nase. Gleich gehe ich unter.“",
+              ""
+            ],
+            [
+              "„Das Diktat war schwer. Ich übe die Wörter noch einmal.“",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Fallen-Werkstatt: Erfinde zu jeder Falle einen Gedanken.",
+          "hinweis": "Die Szene: Morgen musst du der Klasse etwas vorlesen. Es sind Übungsgedanken, sie müssen nicht deine eigenen sein.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Falle",
+            "Der Gedanke dazu"
+          ],
+          "breiten": [
+            1.2,
+            3
+          ],
+          "beispiel": [
+            "1 Schwarz-Weiß-Brille",
+            "„Wenn ich mich einmal verspreche, ist alles verdorben.“"
+          ],
+          "werte": [
+            [
+              "2 Gedankenleser",
+              ""
+            ],
+            [
+              "3 Katastrophen-Welle",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie kommst du aus der Falle heraus? Verbinde jede Falle mit ihrer Ausweg-Frage.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Die Falle",
+            "Die Ausweg-Frage"
+          ],
+          "links": [
+            "Schwarz-Weiß-Brille",
+            "Gedankenleser",
+            "Katastrophen-Welle"
+          ],
+          "rechts": [
+            "Woher weiß ich das? Kann ich fragen?",
+            "Was ist am wahrscheinlichsten?",
+            "Gibt es etwas dazwischen?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Welche Falle kennst du von dir? Kreuze an.",
+          "hinweis": "Das ist nur für dich. Du musst es niemandem zeigen.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Schwarz-Weiß-Brille",
+            "Gedankenleser",
+            "Katastrophen-Welle",
+            "Ich weiß es noch nicht."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreibe deinen Plan für das nächste Mal, wenn du in eine Falle tappst.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich „immer“ oder „nie“ denke,",
+              "dann": "frage ich mich: Gibt es etwas dazwischen?"
+            }
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen drei häufige Denkfallen kennen (Schwarz-Weiß-Denken, Gedankenlesen, Katastrophendenken), erkennen sie in Beispielsätzen und kennen für jede Falle eine Ausweg-Frage.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wer ist schon einmal auf einen Trick hereingefallen?“ Auch Gedanken können hereinlegen. Info lesen, Karten ausschneiden.",
+          "Karten besprechen (5 Min.): Zu jeder Falle ein Beispiel aus dem Schulalltag sammeln, Merkwörter an die Tafel schreiben.",
+          "Aufgabe 1 (10 Min.): Einzeln oder zu zweit zuordnen, dann vergleichen. Lösung (Beispiel zuerst): 1, 2, 3, 1, 2, 3, x. Grenzfälle sind erlaubt, wenn das Kind begründet.",
+          "Aufgabe 2 und 3 (12 Min.): Fallen-Gedanken erfinden und vorlesen lassen. Ausweg-Fragen verbinden (Lösung in Reihenfolge der Fallen: dazwischen – woher weiß ich das – am wahrscheinlichsten) und laut sprechen.",
+          "Aufgabe 4 und 5 (8 Min.): Eigene Lieblingsfalle freiwillig ankreuzen, Wenn-dann-Satz schreiben."
+        ],
+        "hintergrund": "Kognitive Verzerrungen („Denkfehler“) sind typische, meist automatische Muster, in denen Gedanken die Wirklichkeit verzerren (Beck, 2011). Kinderprogramme der kognitiven Verhaltenstherapie nennen sie bildhaft „Denkfallen“. Die Kinder erkennen sie zuerst an erfundenen Beispielen, bevor sie eigene Gedanken prüfen (Stallard, 2019; Kendall & Hedtke, 2006). Das Benennen schafft Abstand: Statt „Ich bin so dumm“ heißt es „Aha, die Schwarz-Weiß-Brille“. Drei Muster genügen für den Einstieg. Denkfallen sind normal und kein Zeichen von Schwäche.",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die ersten drei Beispiele zuordnen; die Karten bleiben als Spickzettel liegen.",
+          "schwerer": "Zu jedem Fallen-Gedanken eine Ausweg-Frage und einen besseren Gedanken schreiben."
+        },
+        "impulse": [
+          "Welche Wörter verraten eine Falle?",
+          "Wie klingt derselbe Gedanke ohne Falle?"
+        ],
+        "tipps": [
+          "Gruppe: Fallen-Gedanken aus Aufgabe 2 anonym an die Tafel schreiben, die Gruppe rät die Falle. Eigene Gedanken bleiben privat.",
+          "Einzelstunde: Karten zusammen lesen, eine Falle für eine erfundene Figur suchen, die Karten mitgeben."
+        ],
+        "achtung": "Wiederkehrende Katastrophengedanken, die das Kind stark belasten, oder sehr abwertende Gedanken über sich selbst ernst nehmen: Einzelgespräch, Eltern und Leitung (Responsable) einbeziehen.",
+        "material": "Schere, Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Les pièges de la pensée",
+      "untertitel": "Certaines pensées nous piègent. Elles sonnent vrai, mais ne sont pas tout à fait justes. Qui connaît le piège y tombe moins souvent.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Les pièges de la pensée sont des pensées qui nous font marcher. Presque tout le monde y tombe parfois, surtout quand on est stressé ou fatigué. Trois pièges reviennent très souvent."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Découvre les trois pièges. Découpe les cartes et garde-les devant toi.",
+          "symbole": [
+            "lesen",
+            "schneiden"
+          ]
+        },
+        {
+          "art": "karten",
+          "spalten": 3,
+          "hoehe": 170,
+          "karten": [
+            {
+              "titel": "1 Le tout ou rien",
+              "text": "Tout est très bien ou très mauvais, rien entre les deux.\nMots-indices : toujours, jamais, tout, rien",
+              "bild": "icon:eyeglass"
+            },
+            {
+              "titel": "2 Le lecteur de pensées",
+              "text": "Je sais exactement ce que les autres pensent. Je ne demande pas.\nMots-indices : sûrement, forcément",
+              "bild": "icon:bubble"
+            },
+            {
+              "titel": "3 La vague catastrophe",
+              "text": "Un petit problème devient énorme. Le pire va arriver.\nMots-indices : et puis …",
+              "bild": "icon:cloud-storm"
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel piège se cache ici ? Écris 1, 2, 3 – ou x pour « pas de piège ».",
+          "hinweis": "Lis chaque pensée attentivement. Certaines sont tout à fait correctes.",
+          "symbole": [
+            "lesen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Pensée",
+            "Piège"
+          ],
+          "breiten": [
+            3.6,
+            0.7
+          ],
+          "beispiel": [
+            "« J’ai raté le contrôle. Je ne sais vraiment rien faire. »",
+            "1"
+          ],
+          "werte": [
+            [
+              "« Mila ne m’a pas dit bonjour. Elle est sûrement fâchée contre moi. »",
+              ""
+            ],
+            [
+              "« Si je me trompe en parlant, tout le monde rit. Plus personne ne voudra me parler. »",
+              ""
+            ],
+            [
+              "« J’ai seulement sept points sur dix. Alors je ne vaux rien en maths. »",
+              ""
+            ],
+            [
+              "« Le regard de l’enseignante était sévère. Elle pense sûrement que je ne fais aucun effort. »",
+              ""
+            ],
+            [
+              "« Au cours de natation, j’ai de l’eau dans le nez. Je vais couler. »",
+              ""
+            ],
+            [
+              "« La dictée était difficile. Je revois les mots encore une fois. »",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Atelier des pièges : invente une pensée par piège.",
+          "hinweis": "La scène : demain, tu dois lire un texte devant la classe. Ce sont des pensées pour s’entraîner, pas forcément les tiennes.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Piège",
+            "La pensée qui va avec"
+          ],
+          "breiten": [
+            1.2,
+            3
+          ],
+          "beispiel": [
+            "1 Le tout ou rien",
+            "« Si je me trompe une fois, tout est gâché. »"
+          ],
+          "werte": [
+            [
+              "2 Le lecteur de pensées",
+              ""
+            ],
+            [
+              "3 La vague catastrophe",
+              ""
+            ]
+          ],
+          "zeilen": 0
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment sortir du piège ? Relie chaque piège à sa question de secours.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Le piège",
+            "La question de secours"
+          ],
+          "links": [
+            "Le tout ou rien",
+            "Le lecteur de pensées",
+            "La vague catastrophe"
+          ],
+          "rechts": [
+            "Comment je le sais ? Je peux demander ?",
+            "Qu’est-ce qui est le plus probable ?",
+            "Y a-t-il quelque chose entre les deux ?"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel piège reconnais-tu chez toi ? Coche.",
+          "hinweis": "C’est seulement pour toi. Tu n’as à le montrer à personne.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "Le tout ou rien",
+            "Le lecteur de pensées",
+            "La vague catastrophe",
+            "Je ne sais pas encore."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ton plan pour la prochaine fois que tu tombes dans un piège.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si je pense « toujours » ou « jamais »,",
+              "dann": "je me demande : y a-t-il quelque chose entre les deux ?"
+            }
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent trois pièges de pensée fréquents (tout ou rien, lecture de pensées, catastrophisme), les reconnaissent dans des phrases et ont une question de secours pour chacun.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Qui est déjà tombé dans un piège ? » Les pensées aussi peuvent piéger. Lire l’encadré, découper les cartes.",
+          "Cartes (5 min) : un exemple scolaire par piège, mots-indices au tableau.",
+          "Tâche 1 (10 min) : classer seul ou à deux, comparer. Solution (exemple en premier) : 1, 2, 3, 1, 2, 3, x. Cas limites permis si l’enfant argumente.",
+          "Tâches 2 et 3 (12 min) : inventer et lire des pensées-pièges. Solution des questions : entre les deux – comment je le sais – le plus probable.",
+          "Tâches 4 et 5 (8 min) : cocher son piège préféré sur base volontaire, écrire la phrase « si … alors »."
+        ],
+        "hintergrund": "Les distorsions cognitives (« erreurs de pensée ») sont des schémas typiques, souvent automatiques, où la pensée déforme la réalité (Beck, 2011). Les programmes de thérapie cognitivo-comportementale pour enfants les appellent « pièges de la pensée » et les font d’abord reconnaître dans des exemples inventés, avant de vérifier ses propres pensées (Stallard, 2019 ; Kendall & Hedtke, 2006). Nommer le piège crée de la distance : « Tiens, le tout ou rien » au lieu de « Je suis nul ». Ces pièges sont normaux, pas un signe de faiblesse.",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Stallard, P. (2019). Think Good, Feel Good: A Cognitive Behavioural Therapy Workbook for Children and Young People (2nd ed.). Chichester: Wiley.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "Classer seulement les trois premiers exemples ; cartes comme aide-mémoire.",
+          "schwerer": "Écrire une question de secours et une meilleure pensée pour chaque piège."
+        },
+        "impulse": [
+          "Quels mots trahissent un piège ?",
+          "Comment sonne la même pensée sans piège ?"
+        ],
+        "tipps": [
+          "Groupe : écrire au tableau, sans noms, les pensées de la tâche 2 ; le groupe devine le piège. Les pensées personnelles restent privées.",
+          "Séance individuelle : lire les cartes ensemble, chercher un piège pour un personnage inventé."
+        ],
+        "achtung": "Prendre au sérieux les pensées catastrophistes récurrentes ou très dévalorisantes : entretien individuel, parents et direction (responsable) impliqués.",
+        "material": "Ciseaux, crayons"
+      }
+    },
+    "verwandt": [
+      "t2-gedanken-detektiv",
+      "t2-der-hilfreiche-gedanke"
+    ]
+  },
+  {
+    "id": "t2-das-gegenteil-tun",
+    "bereich": "gefuehle",
+    "thema": "angst",
+    "stufen": [
+      "C3",
+      "C4"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "40 Min.",
+    "eldib": [
+      "V-25",
+      "V-24",
+      "V-18"
+    ],
+    "schlagworte": [
+      "Gegenteil tun",
+      "Handlungsimpuls",
+      "Angst",
+      "Vermeiden",
+      "Mut",
+      "DBT"
+    ],
+    "bild": "icon:arrows-shuffle",
+    "de": {
+      "titel": "Das Gegenteil tun",
+      "untertitel": "Jedes Gefühl hat eine Stimme, die dir sagt, was du tun sollst. Manchmal hilft es, das Gegenteil zu tun – in einem kleinen Schritt.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Diogo und die Bank",
+          "text": "In der Pause spielen vier Kinder mit einem Ball. Diogo möchte mitspielen. Seine Angst ruft: „Geh weg. Die lachen dich nur aus.“ Diogo setzt sich auf die Bank und schaut zu. Am nächsten Tag tut er das Gegenteil. Er atmet tief durch und geht einen Schritt auf die Gruppe zu. Er fragt: „Darf ich mitspielen?“ Zwei Kinder nicken. Sein Herz klopft noch eine Weile, dann wird es ruhiger.",
+          "bild": "figur:noah:aengstlich"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Wenn ein Gefühl da ist, ruft es meistens etwas. Die Angst ruft „Lauf weg“, die Traurigkeit „Zieh dich zurück“, die Wut „Schrei ihn an“. Hörst du immer darauf, bleibt das Gefühl oft groß. Tust du das Gegenteil, wird es oft kleiner."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was ruft das Gefühl? Was wäre das Gegenteil? Verbinde.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "Das Gefühl ruft …",
+            "Das Gegenteil wäre …"
+          ],
+          "links": [
+            "Angst: „Lauf weg.“",
+            "Traurigkeit: „Zieh dich zurück.“",
+            "Wut: „Schrei ihn an.“"
+          ],
+          "rechts": [
+            "Ich tue etwas Kleines mit anderen.",
+            "Ich bleibe ruhig und sage leise, was mich stört.",
+            "Ich gehe einen kleinen Schritt darauf zu."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Nur wenn du sicher bist",
+          "text": "Das Gegenteil tun gilt nur, wenn nichts Gefährliches passiert. Wenn jemand dir wehtut oder dir Angst macht, bleibst du nicht stehen. Du gehst weg und holst Hilfe."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was passiert mit Diogos Angst, wenn er bei der Gruppe bleibt? Kreuze an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Sie bleibt gleich groß.",
+            "Sie wird zuerst stärker, dann kleiner.",
+            "Sie ist sofort weg."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wann hat ein Gefühl dich zu etwas gerufen? Schreibe ein Beispiel.",
+          "hinweis": "Ein erfundenes Beispiel ist auch gut. Wähle eine kleine Situation: Das Gegenteil ist nur ein kleiner Schritt.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Gefühl",
+            "Das ruft es",
+            "Das Gegenteil, ein kleiner Schritt"
+          ],
+          "breiten": [
+            1,
+            1.3,
+            1.9
+          ],
+          "beispiel": [
+            "Angst vor dem Referat",
+            "„Sag, dass du krank bist.“",
+            "Ich übe den ersten Satz laut zu Hause."
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreibe deinen Plan für das nächste Mal.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn die Angst ruft: „Lauf weg“,",
+              "dann": "atme ich tief und gehe einen kleinen Schritt darauf zu."
+            }
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Kinder lernen, dass Gefühle zu bestimmten Handlungen drängen. Sie üben, bei Angst, Traurigkeit oder Wut eine kleine Gegenhandlung zu wählen – wenn die Situation sicher ist.",
+        "ablauf": [
+          "Einstieg (5 Min.): Geschichte vorlesen. „Was ruft Diogos Angst? Was passiert, wenn er darauf hört? Und wenn er das Gegenteil tut?“",
+          "Info und Aufgabe 1 (8 Min.): Gefühl und Ruf besprechen, verbinden. Lösung: Angst – kleiner Schritt darauf zu; Traurigkeit – etwas Kleines mit anderen; Wut – ruhig, leise sagen.",
+          "Aufgabe 2 (5 Min.): Die Welle mit der Hand zeigen: steigt, Gipfel, sinkt. Antwort: zuerst stärker, dann kleiner. Sicherheits-Kasten lesen.",
+          "Aufgabe 3 und 4 (15 Min.): Beispiel und Plan in Einzelarbeit. Die Schrittgröße prüfen: klein und sicher?",
+          "Abschluss (5 Min.): Freiwillig ein Beispiel vorstellen, einen Schritt in der Woche ausprobieren."
+        ],
+        "hintergrund": "Gefühle gehen mit Handlungsimpulsen einher: Angst mit Vermeiden, Niedergeschlagenheit mit Rückzug, Wut mit Angriff. Folgt man dem Impuls, hält das Gefühl oft an. Die DBT-Fertigkeit „Gegenteilhandlung“ (Linehan, 2015; Rathus & Miller, 2015) setzt dort an: Passt das Gefühl nicht zur Lage oder hilft der Impuls nicht, und ist die Situation sicher, wird die entgegengesetzte Handlung gewählt, hier als kleiner Schritt. Auch in der kognitiven Verhaltenstherapie gilt: Vermeiden hält Angst aufrecht, schrittweises Hingehen senkt sie (Kendall & Hedtke, 2006).",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die Angst besprechen; Aufgabe 3 gemeinsam ausfüllen.",
+          "schwerer": "Ein weiteres Gefühl wählen und dazu Ruf und Gegenteil finden."
+        },
+        "impulse": [
+          "Was passiert, wenn man dem Ruf des Gefühls immer folgt?",
+          "Wann ist Abstand klüger als Hingehen?"
+        ],
+        "tipps": [
+          "Gruppe: Die Rufe als Rollenspiel vorführen: Ein Kind ist die Stimme des Gefühls, eines die Person. Nur erfundene Beispiele.",
+          "Einzelstunde: Die Schrittgröße gemeinsam festlegen, in der nächsten Stunde besprechen, wie es war."
+        ],
+        "achtung": "Nur bei sicherer Lage: Bei Mobbing, Gewalt oder Bedrohung ist Weggehen und Hilfe holen richtig. Starke Ängste, lang anhaltende Traurigkeit oder Rückzug: Eltern und Leitung (Responsable) einbeziehen.",
+        "material": "Stifte"
+      }
+    },
+    "fr": {
+      "titel": "Faire le contraire",
+      "untertitel": "Chaque émotion a une voix qui te dit quoi faire. Parfois, il est utile de faire le contraire – par un tout petit pas.",
+      "bausteine": [
+        {
+          "art": "geschichte",
+          "titel": "Diogo et le banc",
+          "text": "À la récréation, quatre enfants jouent au ballon. Diogo voudrait jouer avec eux. Sa peur lui dit : « Va-t’en. Ils vont se moquer de toi. » Diogo s’assoit sur le banc et regarde. Le lendemain, il fait le contraire. Il respire à fond, s’approche d’un pas et demande : « Je peux jouer avec vous ? » Deux enfants hochent la tête. Son cœur bat encore un moment, puis se calme.",
+          "bild": "figur:noah:aengstlich"
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "text": "Quand une émotion est là, elle dit souvent quelque chose. La peur dit « sauve-toi », la tristesse « isole-toi », la colère « crie sur lui ». Si tu obéis toujours, l’émotion reste souvent grande. Si tu fais le contraire, elle devient souvent plus petite."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que dit l’émotion ? Quel serait le contraire ? Relie.",
+          "symbole": [
+            "verbinden"
+          ]
+        },
+        {
+          "art": "zuordnen",
+          "titel": [
+            "L’émotion dit …",
+            "Le contraire serait …"
+          ],
+          "links": [
+            "Peur : « Sauve-toi. »",
+            "Tristesse : « Isole-toi. »",
+            "Colère : « Crie sur lui. »"
+          ],
+          "rechts": [
+            "Je fais une petite chose avec d’autres.",
+            "Je reste calme et je dis doucement ce qui me gêne.",
+            "Je fais un petit pas vers ce qui me fait peur."
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "achtung",
+          "titel": "Seulement si tu es en sécurité",
+          "text": "Faire le contraire ne vaut que s’il n’y a pas de danger. Si quelqu’un te fait mal ou te fait peur, tu ne restes pas. Tu t’éloignes et tu cherches de l’aide."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que devient la peur de Diogo quand il reste avec le groupe ? Coche.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "items": [
+            "Elle reste aussi grande.",
+            "Elle grandit d’abord, puis elle diminue.",
+            "Elle disparaît tout de suite."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quand une émotion t’a-t-elle dit quoi faire ? Écris un exemple.",
+          "hinweis": "Un exemple inventé est aussi bien. Choisis une petite situation : le contraire n’est qu’un petit pas.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Émotion",
+            "Ce qu’elle dit",
+            "Le contraire, un petit pas"
+          ],
+          "breiten": [
+            1,
+            1.3,
+            1.9
+          ],
+          "beispiel": [
+            "Peur de l’exposé",
+            "« Dis que tu es malade. »",
+            "Je m’entraîne à dire la première phrase à voix haute à la maison."
+          ],
+          "zeilen": 2
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ton plan pour la prochaine fois.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si la peur dit « sauve-toi »,",
+              "dann": "je respire à fond et je fais un petit pas vers ce qui me fait peur."
+            }
+          ]
+        },
+        {
+          "art": "rueckblick"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les enfants découvrent que les émotions poussent à certaines actions. Ils s’exercent à choisir un petit geste contraire face à la peur, la tristesse ou la colère – si la situation est sûre.",
+        "ablauf": [
+          "Entrée en matière (5 min) : lire l’histoire. « Que dit la peur de Diogo ? Que se passe-t-il s’il l’écoute ? Et s’il fait le contraire ? »",
+          "Info et tâche 1 (8 min) : parler des émotions, relier. Solution : peur – petit pas vers ce qui fait peur ; tristesse – petite chose avec d’autres ; colère – calme, dire doucement.",
+          "Tâche 2 (5 min) : montrer la vague avec la main : monte, sommet, redescend. Réponse : d’abord plus forte, puis plus petite. Lire l’encadré sécurité.",
+          "Tâches 3 et 4 (15 min) : exemple et plan en travail individuel. Vérifier la taille du pas : petit et sûr ?",
+          "Clôture (5 min) : présenter un exemple sur base volontaire, essayer un pas dans la semaine."
+        ],
+        "hintergrund": "Les émotions s’accompagnent d’impulsions : la peur d’évitement, la tristesse de repli, la colère d’attaque. Quand on suit l’impulsion, l’émotion dure souvent. La compétence DBT « action opposée » (Linehan, 2015 ; Rathus & Miller, 2015) intervient là : si l’émotion ne correspond pas à la situation ou si l’impulsion n’aide pas, et si la situation est sûre, on choisit l’action contraire, ici sous forme de petit pas. En thérapie cognitivo-comportementale aussi : l’évitement entretient l’anxiété, s’approcher peu à peu la fait baisser (Kendall & Hedtke, 2006).",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing."
+        ],
+        "differenzierung": {
+          "leichter": "Parler seulement de la peur ; remplir la tâche 3 ensemble.",
+          "schwerer": "Choisir une autre émotion et trouver ce qu’elle dit et le contraire."
+        },
+        "impulse": [
+          "Que se passe-t-il si on suit toujours ce que dit l’émotion ?",
+          "Quand vaut-il mieux garder ses distances ?"
+        ],
+        "tipps": [
+          "Groupe : jouer les voix des émotions : un enfant est la voix, un autre la personne. Seulement des exemples inventés.",
+          "Séance individuelle : fixer ensemble la taille du pas, en reparler à la séance suivante."
+        ],
+        "achtung": "Seulement en situation sûre : en cas de harcèlement, de violence ou de menace, s’éloigner et chercher de l’aide est juste. Fortes peurs, tristesse durable ou repli : impliquer parents et direction (responsable).",
+        "material": "Crayons"
+      }
+    },
+    "verwandt": [
+      "mut-leiter",
+      "t2-stopp-erst-atmen"
+    ]
+  },
+  {
+    "id": "t3-sorgenzeit",
+    "bereich": "gefuehle",
+    "thema": "angst",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min. + 1 Woche",
+    "eldib": [
+      "V-25",
+      "V-29",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Sorgen",
+      "Grübeln",
+      "Sorgenzeit",
+      "Sorgen-Aufschub",
+      "kognitive Verhaltenstherapie"
+    ],
+    "bild": "icon:hourglass",
+    "verwandt": [
+      "angst-verstehen",
+      "t3-angstkurve",
+      "t3-gedanken-vor-gericht"
+    ],
+    "de": {
+      "titel": "Sorgenzeit",
+      "untertitel": "Sorgen dürfen kommen, aber nicht den ganzen Tag. Jeden Tag gehören ihnen 15 Minuten.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "So geht die Sorgenzeit",
+          "punkte": [
+            "Jeden Tag dieselbe Zeit am selben Ort: 15 Minuten nur für Sorgen.",
+            "Kommt eine Sorge zu einer anderen Zeit, schreibst du ein Stichwort auf und tust etwas anderes.",
+            "In der Sorgenzeit liest du die Zettel. Kannst du etwas tun? Dann plane den ersten Schritt. Wenn nicht, lass die Sorge los.",
+            "Nicht direkt vor dem Schlafen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Plane deine Sorgenzeit.",
+          "hinweis": "Beispiel: 17 Uhr, am Schreibtisch. Danach ein Glas Wasser und Musik.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Uhrzeit: …",
+            "Ort: …",
+            "Danach tue ich: …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Sorgenzettel: Wenn eine Sorge kommt, schreibst du nur ein Stichwort auf.",
+          "hinweis": "Grübeln kannst du später, in der Sorgenzeit. Statt zu schreiben, kannst du auch ein Symbol zeichnen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wann",
+            "Stichwort",
+            "Wie stark (0–10)"
+          ],
+          "breiten": [
+            1,
+            2.2,
+            1
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Mo, 14:10",
+            "Test in Mathe",
+            "6"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wenn eine Sorge zur falschen Zeit kommt: Was tust du?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn mir beim Zähneputzen eine Sorge einfällt,",
+              "dann": "schreibe ich ein Stichwort auf und sage mir: Das hat Zeit bis 17 Uhr."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "In der Sorgenzeit: Kann ich heute etwas tun?",
+          "hinweis": "Bei „ja“ planst du einen kleinen Schritt. Bei „nein“ schreibst du: „Das lasse ich los.“",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Sorge",
+            "Etwas tun?",
+            "Mein erster Schritt – oder: loslassen"
+          ],
+          "breiten": [
+            1.2,
+            0.8,
+            2.2
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Test in Mathe",
+            "ja",
+            "Heute 20 Minuten üben und Pol fragen."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Probiere es eine Woche aus. Kreuze jeden Tag an.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "plan",
+          "ziel": "Eine Woche lang meine Sorgenzeit halten.",
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "zeilen": [
+            "Sorgenzeit gehalten",
+            "Sorgen notiert statt gegrübelt"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verschieben Sorgen auf eine feste tägliche Sorgenzeit, notieren sie sonst nur kurz und prüfen dort, ob sie einen Schritt tun können.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wann kommen deine Sorgen: nachts, in der Pause, beim Lernen?“ Beispiele sammeln, nicht bewerten.",
+          "Info-Kasten lesen (3 Min.). Sorgen werden nicht verboten, sondern verschoben.",
+          "Aufgabe 1 und 2 einzeln (10 Min.): Zeit und Ort wählen (nicht kurz vor dem Schlafen), Zettel einführen.",
+          "Aufgabe 3 und 4 (10 Min.): Wenn-dann-Satz schreiben, dann am Beispiel „Test in Mathe“ die Sorgenzeit üben.",
+          "Aufgabe 5: eine Woche führen, in der nächsten Stunde auswerten (5 Min.)."
+        ],
+        "hintergrund": "Der Sorgen-Aufschub ist ein Baustein der kognitiven Verhaltenstherapie (KVT) bei Sorgen und Grübeln: Sorgen werden auf eine feste Zeit verlegt und sonst nur kurz notiert. Das unterbricht das Grübeln, ohne es zu verbieten – Gedanken nicht denken zu wollen, verstärkt sie häufig (Wegner et al., 1987). In der Sorgenzeit wird geprüft, ob ein Schritt möglich ist; Problemlösen gehört zu KVT-Programmen für ängstliche Kinder (Kendall & Hedtke, 2006). Offene Aufgaben aufzuschreiben, kann das Einschlafen erleichtern (Scullin et al., 2018).",
+        "quellen": [
+          "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgaben vorlesen; Stichworte sprechen (Sprachmemo) oder zeichnen.",
+          "schwerer": "In der Sorgenzeit je Sorge das schlimmste, beste und wahrscheinlichste Ende notieren."
+        },
+        "impulse": [
+          "Welche Sorge kehrt bei dir immer wieder?",
+          "Wann am Tag passt eine Sorgenzeit in deinen Plan?"
+        ],
+        "tipps": [
+          "Gruppe: Beispielsorgen gemeinsam sortieren: „Kann ich etwas tun?“ Eigene bleiben privat.",
+          "Einzelstunde: erste Sorgenzeit in der Stunde üben, 5 Minuten, Zettel gemeinsam durchgehen."
+        ],
+        "achtung": "Sorgen sind normal. Bei sehr belastenden Sorgen (Gewalt, Angst um jemanden), ständigem Grübeln oder Schlafstörungen: Einzelgespräch, Responsable bzw. SePAS informieren. Bei Gefährdung sofort handeln.",
+        "material": "Stifte, Uhr oder Handy-Timer"
+      }
+    },
+    "fr": {
+      "titel": "Le temps des soucis",
+      "untertitel": "Les soucis ont le droit de venir, mais pas toute la journée. Chaque jour, ils ont droit à 15 minutes.",
+      "bausteine": [
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Comment ça marche",
+          "punkte": [
+            "Chaque jour, même heure, même endroit : 15 minutes rien que pour les soucis.",
+            "Si un souci arrive à un autre moment, tu notes un mot-clé et tu fais autre chose.",
+            "Pendant ce temps, tu relis tes papiers. Peux-tu agir ? Alors prépare un premier pas. Sinon, laisse ce souci partir.",
+            "Pas juste avant de dormir."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Prépare ton temps des soucis.",
+          "hinweis": "Exemple : 17 h, au bureau. Ensuite un verre d’eau et de la musique.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Heure : …",
+            "Lieu : …",
+            "Ensuite, je fais : …"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Papier à soucis : quand un souci arrive, tu notes juste un mot-clé.",
+          "hinweis": "Tu pourras ruminer plus tard, pendant ton temps des soucis. Tu peux aussi dessiner un symbole.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quand",
+            "Mot-clé",
+            "Intensité (0–10)"
+          ],
+          "breiten": [
+            1,
+            2.2,
+            1
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "lun., 14 h 10",
+            "Contrôle de maths",
+            "6"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quand un souci arrive au mauvais moment : que fais-tu ?",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si un souci me vient en me brossant les dents,",
+              "dann": "je note un mot-clé et je me dis : ça attendra 17 h."
+            }
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Pendant le temps des soucis : puis-je agir aujourd’hui ?",
+          "hinweis": "Si « oui », prépare un petit pas. Si « non », écris : « Je laisse ça partir. »",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Souci",
+            "Agir ?",
+            "Mon premier pas – ou : laisser partir"
+          ],
+          "breiten": [
+            1.2,
+            0.8,
+            2.2
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Contrôle de maths",
+            "oui",
+            "Réviser 20 minutes aujourd’hui et demander à Pol."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Essaie pendant une semaine. Coche chaque jour.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "plan",
+          "ziel": "Tenir mon temps des soucis toute une semaine.",
+          "tage": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "zeilen": [
+            "Temps des soucis tenu",
+            "Soucis notés au lieu de ruminés"
+          ],
+          "symbol": "kasten"
+        },
+        {
+          "art": "notfall"
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes reportent leurs soucis à un temps fixe quotidien, les notent brièvement le reste du temps et vérifient alors s’ils peuvent agir.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Quand viennent tes soucis : la nuit, à la récré, en révisant ? » Recueillir des exemples, sans juger.",
+          "Lire l’encadré (3 min). Les soucis ne sont pas interdits, mais reportés.",
+          "Exercices 1 et 2 individuellement (10 min) : choisir heure et lieu (pas juste avant de dormir), introduire le papier à soucis.",
+          "Exercices 3 et 4 (10 min) : écrire la phrase si-alors, puis s’exercer sur « Contrôle de maths ».",
+          "Exercice 5 : une semaine, bilan à la séance suivante (5 min)."
+        ],
+        "hintergrund": "Le report des soucis est un élément de la thérapie cognitivo-comportementale (TCC) contre les soucis et la rumination : les soucis sont repoussés à un moment fixe et sinon seulement notés. Cela interrompt la rumination sans l’interdire – vouloir ne pas penser à quelque chose le renforce souvent (Wegner et al., 1987). Pendant ce temps, on vérifie si un pas est possible ; la résolution de problèmes fait partie des programmes TCC pour enfants anxieux (Kendall & Hedtke, 2006). Noter ce qui reste à faire peut faciliter l’endormissement (Scullin et al., 2018).",
+        "quellen": [
+          "Wegner, D. M., Schneider, D. J., Carter, S. R. & White, T. L. (1987). Paradoxical effects of thought suppression. Journal of Personality and Social Psychology, 53(1), 5–13.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Scullin, M. K., Krueger, M. L., Ballard, H. K., Pruett, N. & Bliwise, D. L. (2018). The effects of bedtime writing on difficulty falling asleep: A polysomnographic study comparing to-do lists and completed activity lists. Journal of Experimental Psychology: General, 147(1), 139–146."
+        ],
+        "differenzierung": {
+          "leichter": "Lire les consignes ; dire les mots-clés (mémo vocal) ou dessiner.",
+          "schwerer": "Pour chaque souci, noter la pire, la meilleure et la plus probable des issues."
+        },
+        "impulse": [
+          "Quel souci revient chez toi sans cesse ?",
+          "Quand, dans la journée, un temps des soucis te conviendrait-il ?"
+        ],
+        "tipps": [
+          "Groupe : trier ensemble des soucis exemples : « Puis-je agir ? » Les siens restent privés.",
+          "Séance individuelle : s’exercer 5 minutes en séance, relire le papier ensemble."
+        ],
+        "achtung": "Les soucis sont normaux. S’ils sont très pesants (violence, peur pour quelqu’un), si la rumination est constante ou le sommeil perturbé : entretien individuel, informer le responsable ou le SePAS. En cas de danger, agir tout de suite.",
+        "material": "Stylos, montre ou minuteur"
+      }
+    }
+  },
+  {
+    "id": "t3-angstkurve",
+    "bereich": "gefuehle",
+    "thema": "angst",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "35–45 Min.",
+    "eldib": [
+      "V-24",
+      "K-29",
+      "V-33"
+    ],
+    "schlagworte": [
+      "Angst",
+      "Angstkurve",
+      "Vermeidung",
+      "Exposition",
+      "Psychoedukation"
+    ],
+    "bild": "icon:chart-bar",
+    "verwandt": [
+      "angst-verstehen",
+      "mut-leiter",
+      "t3-sorgenzeit",
+      "t3-verhaltensexperiment"
+    ],
+    "de": {
+      "titel": "Die Angstkurve",
+      "untertitel": "Angst ist wie eine Welle: Sie steigt, erreicht einen Gipfel und sinkt wieder. Warum Ausweichen sie größer macht.",
+      "bausteine": [
+        {
+          "art": "diagramm",
+          "titel": "Inês hält einen Kurzvortrag. So verläuft ihre Angst.",
+          "kategorien": [
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "werte": [
+            3,
+            6,
+            8,
+            8,
+            6,
+            4,
+            3,
+            2
+          ],
+          "max": 10,
+          "schritt": 2,
+          "fein": 1,
+          "zahlen": true,
+          "achsen": [
+            "Minuten",
+            "Angst (0–10)"
+          ],
+          "hoehe": 150
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schau auf die Kurve von Inês. Was stimmt?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "stimmt",
+            "stimmt nicht"
+          ],
+          "items": [
+            "„Die Angst steigt, erreicht einen Gipfel und sinkt von selbst wieder.“",
+            "„Geht Inês vorher weg, sinkt die Angst sofort.“",
+            "„Geht Inês weg, lernt ihr Kopf: Weggehen hat mich gerettet.“",
+            "„Läuft Inês weg, ist die Angst beim nächsten Mal kleiner.“",
+            "„Sehr hohe Angst ist gefährlich.“"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Warum Ausweichen die Angst größer macht",
+          "punkte": [
+            "Gehst du weg, sinkt die Angst sofort. Das fühlt sich wie Rettung an.",
+            "Dein Kopf merkt sich: Die Situation war gefährlich, Weggehen hat geholfen.",
+            "Beim nächsten Mal ist die Angst größer, und du erlebst nie, dass sie von allein sinkt."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Zeichne zwei Kurven für dieselbe Situation: Inês bleibt, oder Inês geht.",
+          "hinweis": "Tipp: Geht Inês, fällt die Kurve sofort. Wo startet die Angst beim nächsten Mal?",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "kurve",
+          "x": [
+            "Start",
+            "5 Min.",
+            "10 Min.",
+            "15 Min.",
+            "nächstes Mal"
+          ],
+          "oben": "sehr stark",
+          "unten": "keine Angst",
+          "linien": [
+            "Ich bleibe",
+            "Ich gehe"
+          ],
+          "hoehe": 170
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo weichst du manchmal aus, vielleicht ganz klein? Kreuze an.",
+          "hinweis": "Das bleibt bei dir.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "frei": 1,
+          "items": [
+            "Ich sage in der Klasse nichts, obwohl ich die Antwort weiß.",
+            "Ich gehe zu etwas nicht hin: Training, Party, Ausflug.",
+            "Ich schaue aufs Handy, statt jemanden anzusprechen.",
+            "Ich frage immer wieder nach, ob alles in Ordnung ist.",
+            "Ich mache nur mit, wenn jemand dabei ist."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Deine eigene Kurve: nur mit Begleitung und bei kleiner Angst (2 bis 4).",
+          "hinweis": "Wähle mit einer Fachperson eine Situation. Miss alle fünf Minuten. Du kannst jederzeit Pause machen.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Minute",
+            "Angst (0–10)",
+            "Was ich im Körper merke"
+          ],
+          "breiten": [
+            0.8,
+            1,
+            2.4
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "0",
+            "4",
+            "Herz klopft, Hände feucht"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen verstehen, dass Angst von selbst steigt und wieder sinkt und dass Ausweichen sie auf Dauer größer macht.",
+        "ablauf": [
+          "Einstieg (4 Min.): eine Welle an die Tafel zeichnen. „Was macht eine Welle am Strand?“ Dann die Kurve von Inês erklären.",
+          "Aufgabe 1 (5 Min.). Lösung: stimmt, stimmt, stimmt, stimmt nicht, stimmt nicht. Irrtümer besprechen („Angst steigt ewig“).",
+          "Aufgabe 2 (10 Min.): beide Kurven zeichnen. Bleiben: nächstes Mal tiefer. Gehen: gleich hoch oder höher.",
+          "Aufgabe 3 (5 Min.), nicht auswerten.",
+          "Aufgabe 4 nur mit Begleitung und bei Angst 2 bis 4: Situation gemeinsam wählen, vorher klären, dass jederzeit Pause möglich ist."
+        ],
+        "hintergrund": "Psychoedukation vor der Exposition: Angst ist ein Alarmsystem; bleibt man in der Situation, erreicht sie einen Gipfel und lässt nach. Ausweichen bringt sofort Erleichterung, lehrt aber „Weggehen hat gerettet“, sodass die Angst bleibt oder wächst; auch Ablenken und ständiges Rückfragen halten sie aufrecht (Beck, 2011; Kendall & Hedtke, 2006). Das Verstehen dieses Kreislaufs begründet die schrittweise Konfrontation (Rapee et al., 2008). Das Blatt bereitet Angstleitern vor und ersetzt keine Behandlung.",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Rapee, R. M., Wignall, A., Spence, S. H., Cobham, V. & Lyneham, H. (2008). Helping Your Anxious Child (2nd ed.). Oakland: New Harbinger."
+        ],
+        "differenzierung": {
+          "leichter": "Aufgaben 1 und 2; Kurven gemeinsam an der Tafel.",
+          "schwerer": "Nach einer Woche eine zweite Messung von Aufgabe 4 vergleichen."
+        },
+        "impulse": [
+          "Was passiert mit der Angst, wenn man bleibt?",
+          "Woran merkst du, dass die Welle sinkt?"
+        ],
+        "tipps": [
+          "Gruppe: Aufgabe 2 zu zweit, Kurven vergleichen; keine eigenen Ängste nennen lassen.",
+          "Einzelstunde: Aufgabe 4 als Messblatt für eine kleine Übung in der Stunde nutzen."
+        ],
+        "achtung": "Bei Panikattacken, Schulvermeidung, Zwängen oder starker Beeinträchtigung: Abklärung durch eine Fachstelle, Responsable bzw. SePAS informieren. Exposition nie erzwingen: Tempo und Schritt bestimmt die Person.",
+        "material": "Stifte, Uhr"
+      }
+    },
+    "fr": {
+      "titel": "La courbe de la peur",
+      "untertitel": "La peur est comme une vague : elle monte, atteint un sommet et redescend. Pourquoi éviter la rend plus grande.",
+      "bausteine": [
+        {
+          "art": "diagramm",
+          "titel": "Inês fait un court exposé. Voici l’évolution de sa peur.",
+          "kategorien": [
+            "0",
+            "2",
+            "4",
+            "6",
+            "8",
+            "10",
+            "12",
+            "14"
+          ],
+          "werte": [
+            3,
+            6,
+            8,
+            8,
+            6,
+            4,
+            3,
+            2
+          ],
+          "max": 10,
+          "schritt": 2,
+          "fein": 1,
+          "zahlen": true,
+          "achsen": [
+            "Minutes",
+            "Peur (0–10)"
+          ],
+          "hoehe": 150
+        },
+        {
+          "art": "aufgabe",
+          "text": "Regarde la courbe d’Inês. Qu’est-ce qui est vrai ?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "vrai",
+            "faux"
+          ],
+          "items": [
+            "« La peur monte, atteint un sommet et redescend toute seule. »",
+            "« Si Inês part avant, la peur baisse tout de suite. »",
+            "« Si Inês part, son cerveau retient : partir m’a sauvée. »",
+            "« Si Inês s’enfuit, la peur sera plus petite la fois suivante. »",
+            "« Une peur très forte est dangereuse. »"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Pourquoi éviter agrandit la peur",
+          "punkte": [
+            "Si tu pars, la peur baisse tout de suite. On a l’impression d’être sauvé.",
+            "Ton cerveau retient : la situation était dangereuse, partir a aidé.",
+            "La fois suivante, la peur est plus grande, et tu ne découvres jamais qu’elle baisse toute seule."
+          ]
+        },
+        {
+          "art": "seitenumbruch"
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dessine deux courbes pour la même situation : Inês reste, ou Inês part.",
+          "hinweis": "Astuce : quand on part, la courbe chute tout de suite. Où commence la peur la fois suivante ?",
+          "symbole": [
+            "malen"
+          ]
+        },
+        {
+          "art": "kurve",
+          "x": [
+            "Début",
+            "5 min",
+            "10 min",
+            "15 min",
+            "fois suivante"
+          ],
+          "oben": "très forte",
+          "unten": "aucune peur",
+          "linien": [
+            "Je reste",
+            "Je pars"
+          ],
+          "hoehe": 170
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où évites-tu parfois, peut-être tout petit ? Coche.",
+          "hinweis": "Cela reste pour toi.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 1,
+          "frei": 1,
+          "items": [
+            "Je ne dis rien en classe, même si je connais la réponse.",
+            "Je ne vais pas à certaines choses : entraînement, fête, sortie.",
+            "Je regarde mon téléphone au lieu d’aborder quelqu’un.",
+            "Je demande sans cesse si tout va bien.",
+            "Je ne participe que si quelqu’un est avec moi."
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Ta propre courbe : seulement accompagné·e et pour une petite peur (2 à 4).",
+          "hinweis": "Choisis une situation avec un professionnel. Mesure toutes les cinq minutes. Tu peux faire une pause à tout moment.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Minute",
+            "Peur (0–10)",
+            "Ce que je remarque dans mon corps"
+          ],
+          "breiten": [
+            0.8,
+            1,
+            2.4
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "0",
+            "4",
+            "Le cœur bat, mains moites"
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes comprennent que la peur monte et redescend d’elle-même et qu’éviter l’agrandit à la longue.",
+        "ablauf": [
+          "Entrée en matière (4 min) : dessiner une vague au tableau. « Que fait une vague sur la plage ? » Puis expliquer la courbe d’Inês.",
+          "Exercice 1 (5 min). Solution : vrai, vrai, vrai, faux, faux. Discuter les idées fausses (« la peur monte sans fin »).",
+          "Exercice 2 (10 min) : dessiner les deux courbes. Rester : plus bas la fois suivante. Partir : aussi haut ou plus haut.",
+          "Exercice 3 (5 min), sans bilan.",
+          "Exercice 4 seulement accompagné et pour une peur de 2 à 4 : choisir la situation ensemble, préciser qu’une pause est toujours possible."
+        ],
+        "hintergrund": "Psychoéducation avant l’exposition : la peur est un système d’alarme ; si l’on reste dans la situation, elle atteint un sommet puis diminue. Éviter apaise tout de suite, mais enseigne « partir m’a sauvé » : la peur reste ou grandit ; distractions et demandes de réassurance l’entretiennent aussi (Beck, 2011 ; Kendall & Hedtke, 2006). Comprendre ce cercle justifie l’exposition progressive (Rapee et al., 2008). La fiche prépare des échelles de la peur et ne remplace pas un traitement.",
+        "quellen": [
+          "Beck, J. S. (2011). Cognitive Behavior Therapy: Basics and Beyond (2nd ed.). New York: Guilford.",
+          "Kendall, P. C. & Hedtke, K. A. (2006). Cognitive-Behavioral Therapy for Anxious Children: Therapist Manual (3rd ed.). Ardmore, PA: Workbook Publishing.",
+          "Rapee, R. M., Wignall, A., Spence, S. H., Cobham, V. & Lyneham, H. (2008). Helping Your Anxious Child (2nd ed.). Oakland: New Harbinger."
+        ],
+        "differenzierung": {
+          "leichter": "Exercices 1 et 2 ; courbes ensemble au tableau.",
+          "schwerer": "Comparer, une semaine plus tard, une deuxième mesure de l’exercice 4."
+        },
+        "impulse": [
+          "Que devient la peur quand on reste ?",
+          "À quoi remarques-tu que la vague redescend ?"
+        ],
+        "tipps": [
+          "Groupe : exercice 2 à deux, comparer les courbes ; ne pas demander de citer ses peurs.",
+          "Séance individuelle : l’exercice 4 sert de feuille de mesure pour un petit exercice en séance."
+        ],
+        "achtung": "En cas d’attaques de panique, d’évitement scolaire, de TOC ou de gêne importante : évaluation par un service spécialisé, informer le responsable ou le SePAS. Ne jamais forcer l’exposition : rythme et pas sont choisis par la personne.",
+        "material": "Stylos, montre"
+      }
+    }
+  },
+  {
+    "id": "t4-spannungsbarometer",
+    "bereich": "gefuehle",
+    "thema": "beruhigen",
+    "stufen": [
+      "ES"
+    ],
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–40 Min.",
+    "eldib": [
+      "K-26",
+      "V-25",
+      "V-32"
+    ],
+    "schlagworte": [
+      "Spannung",
+      "Selbstwahrnehmung",
+      "Stresstoleranz",
+      "Skills",
+      "Warnzeichen"
+    ],
+    "bild": "icon:temperature",
+    "verwandt": [
+      "t4-fuenf-sinne-stress",
+      "t4-atem-anker",
+      "wut-verstehen"
+    ],
+    "de": {
+      "titel": "Mein Spannungsbarometer",
+      "untertitel": "Wie hoch ist meine Spannung – und was hilft bei welcher Zahl?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Spannung ist der Druck, den du im Körper und im Kopf spürst. 0 heißt: ganz ruhig. 100 heißt: Es geht nichts mehr. Wer seine Zahl kennt, kann früh gegensteuern."
+        },
+        {
+          "art": "thermometer",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "0–30 · ruhig bis leicht gespannt",
+              "text": "Ich kann denken, reden und zuhören."
+            },
+            {
+              "titel": "ab 30 · gespannt",
+              "text": "Mein Körper meldet sich. Ich habe es noch im Griff."
+            },
+            {
+              "titel": "ab 60 · stark",
+              "text": "Ich reagiere schnell. Zuhören und Nachdenken fallen schwer."
+            },
+            {
+              "titel": "ab 90 · am Limit",
+              "text": "Mein Körper übernimmt. Ich handle, ohne zu denken."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo ist deine Spannung gerade?",
+          "hinweis": "Jede Zahl ist okay. Du musst sie niemandem zeigen.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Meine Zahl gerade (0–100):"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "Woran merkst du, dass deine Spannung steigt? Kreuze an, ab wann.",
+          "hinweis": "Bei jedem Menschen ist es anders.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "ab 30",
+            "ab 60",
+            "ab 90"
+          ],
+          "items": [
+            "Herz schlägt schneller",
+            "Hände schwitzen oder zittern",
+            "Kiefer oder Fäuste werden fest",
+            "Magen zieht sich zusammen",
+            "Gedanken rasen",
+            "Ich werde laut oder gereizt",
+            "Ich ziehe mich zurück",
+            "Ich kann nicht mehr klar denken",
+            "Ich will nur noch weg"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Hohe Zahl: erst der Körper",
+          "text": "Bei 90 funktioniert Nachdenken kaum noch. Dann helfen Dinge, die den Körper beruhigen: Wasser, Bewegung, langsames Ausatmen. Reden und Überlegen klappen wieder, wenn die Zahl sinkt."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was könntest du tun? Kreuze an, ab wann du es nutzen würdest.",
+          "hinweis": "Kreuze auch an, was du schon kennst. Es müssen nicht alle sein.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "ab 30",
+            "ab 60",
+            "ab 90"
+          ],
+          "items": [
+            "Mit jemandem reden",
+            "Aufschreiben, was los ist",
+            "Mich fragen: Was brauche ich jetzt?",
+            "Kurz rausgehen, Pause machen",
+            "Musik mit Kopfhörern hören",
+            "Fünf Dinge im Raum benennen",
+            "Langsam ausatmen (4 ein, 6 aus)",
+            "Kaltes Wasser an Hände oder Gesicht",
+            "Bewegen: Treppe, Laufen, Liegestütze"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib deinen Plan: Wenn die Spannung steigt, dann …",
+          "hinweis": "Je ein Plan für ab 60 und für ab 90. Nimm Ideen aus der Liste oder eigene.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich ab 60 merke, dass mein Herz klopft und die Fäuste fest sind,",
+              "dann": "gehe ich kurz raus und atme 6-mal lang aus."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Miss deine Spannung diese Woche: vorher, was du tust, danach.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Wann",
+            "Zahl",
+            "Was ich getan habe",
+            "Danach"
+          ],
+          "breiten": [
+            1.1,
+            0.6,
+            2.4,
+            0.7
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Mo, große Pause",
+            "70",
+            "Wasser über die Hände, 6-mal ausatmen",
+            "40"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Du bist damit nicht allein",
+          "text": "Liegt deine Spannung oft bei 90 und du weißt nicht weiter? Sprich mit einer erwachsenen Person, der du vertraust."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen schätzen ihre Spannung auf einer Skala von 0 bis 100 ein, erkennen ihre Warnzeichen und ordnen jeder Stufe passende Fertigkeiten zu. Sie formulieren je einen Plan für „ab 60“ und „ab 90“.",
+        "ablauf": [
+          "Einstieg (5 Min.): Barometer an die Tafel zeichnen. Frage: „Bei welcher Zahl kannst du nicht mehr gut zuhören?“",
+          "Warnzeichen (7 Min.): Aufgabe 2 allein ankreuzen, danach freiwillig: „Was merkst du zuerst?“",
+          "Skills (10 Min.): Info lesen, Aufgabe 3 ankreuzen (mehrere Kreuze je Zeile sind erwünscht). Zwei Skills kurz testen.",
+          "Plan (8 Min.): Wenn-dann-Pläne für ab 60 und ab 90; zu zweit prüfen: konkret und in der Schule machbar?",
+          "Wochenaufgabe: Aufgabe 5. Nach einer Woche nachfragen: Welcher Skill hat bei welcher Zahl geholfen?"
+        ],
+        "hintergrund": "Das Barometer verbindet zwei Bausteine der DBT: die Einschätzung der Anspannung auf einer Skala (hier 0 bis 100) und die Wahl der Fertigkeit nach der Stärke der Erregung. Bei niedriger Spannung genügen Denk- und Gesprächsfertigkeiten, bei sehr hoher helfen körperorientierte Stresstoleranz-Skills wie Kälte, Bewegung und langsames Atmen, weil Nachdenken dann kaum noch gelingt (Linehan, 2015; Rathus & Miller, 2015). Passend dazu wählen Menschen bei starker Erregung eher Ablenkung als Umdeuten (Sheppes et al., 2011).",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Sheppes, G., Scheibe, S., Suri, G. & Gross, J. J. (2011). Emotion-regulation choice. Psychological Science, 22(11), 1391–1396."
+        ],
+        "differenzierung": {
+          "leichter": "Nur die ersten fünf Zeilen jeder Liste; Plan mündlich besprechen.",
+          "schwerer": "Drei Situationen (Schule, Zuhause, Freunde) mit eigener Skala vergleichen."
+        },
+        "impulse": [
+          "Wo merkst du es zuerst: im Körper, in den Gedanken oder im Verhalten?",
+          "Was hilft bei 60, was bei 90 – und warum nicht dasselbe?"
+        ],
+        "tipps": [
+          "Gruppe: Zahlen nicht vergleichen; anonyme Skill-Wand mit Karten sammeln.",
+          "Einzelstunde: Zahl am Anfang und Ende erfragen; einen Skill gemeinsam testen.",
+          "Kaltes Wasser nur kurz; bei Herz- oder Kreislaufproblemen ärztlich klären."
+        ],
+        "achtung": "Bei dauerhaft hoher Spannung, Schlafproblemen oder Hinweisen auf Gefährdung nicht im Plenum nachfragen: Einzelgespräch, Responsable informieren, bei Gefährdung sofort nach internem Ablauf handeln.",
+        "material": "Stift; optional Timer für die Atemübung"
+      }
+    },
+    "fr": {
+      "titel": "Mon baromètre de tension",
+      "untertitel": "À combien est ma tension – et qu’est-ce qui m’aide à quel niveau ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "La tension, c’est la pression que tu ressens dans le corps et dans la tête. 0 veut dire : tout à fait calme. 100 veut dire : je n’en peux plus. Quand tu connais ton chiffre, tu peux réagir tôt."
+        },
+        {
+          "art": "thermometer",
+          "linien": 0,
+          "stufen": [
+            {
+              "titel": "0–30 · calme à légèrement tendu",
+              "text": "Je peux réfléchir, parler et écouter."
+            },
+            {
+              "titel": "dès 30 · tendu",
+              "text": "Mon corps se manifeste. Je garde le contrôle."
+            },
+            {
+              "titel": "dès 60 · fort",
+              "text": "Je réagis vite. Écouter et réfléchir devient difficile."
+            },
+            {
+              "titel": "dès 90 · à la limite",
+              "text": "Mon corps prend le dessus. J’agis sans réfléchir."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "À combien est ta tension en ce moment ?",
+          "hinweis": "Tous les chiffres sont permis. Tu n’as pas à le montrer.",
+          "symbole": [
+            "nachdenken",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "satzanfaenge",
+          "items": [
+            "Mon chiffre en ce moment (0–100) :"
+          ],
+          "linien": 1
+        },
+        {
+          "art": "aufgabe",
+          "text": "À quoi remarques-tu que ta tension monte ? Coche à partir de quand.",
+          "hinweis": "C’est différent pour chaque personne.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "dès 30",
+            "dès 60",
+            "dès 90"
+          ],
+          "items": [
+            "Le cœur bat plus vite",
+            "Les mains tremblent ou sont moites",
+            "La mâchoire ou les poings se serrent",
+            "Le ventre se noue",
+            "Les pensées s’emballent",
+            "Je hausse le ton ou je m’énerve",
+            "Je me renferme",
+            "Je n’arrive plus à penser clairement",
+            "J’ai juste envie de partir"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "merke",
+          "titel": "Chiffre élevé : le corps d’abord",
+          "text": "À 90, réfléchir ne marche presque plus. Ce qui aide alors, c’est ce qui calme le corps : l’eau, le mouvement, une expiration lente. Parler et réfléchir redeviennent possibles quand le chiffre baisse."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que pourrais-tu faire ? Coche à partir de quand tu le ferais.",
+          "hinweis": "Coche aussi ce que tu connais déjà. Pas besoin de tout cocher.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "dès 30",
+            "dès 60",
+            "dès 90"
+          ],
+          "items": [
+            "Parler avec quelqu’un",
+            "Écrire ce qui se passe",
+            "Me demander : de quoi ai-je besoin maintenant ?",
+            "Sortir un moment, faire une pause",
+            "Écouter de la musique au casque",
+            "Nommer cinq choses dans la pièce",
+            "Expirer lentement (inspirer 4, expirer 6)",
+            "Eau froide sur les mains ou le visage",
+            "Bouger : escaliers, courir, pompes"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ton plan : si la tension monte, alors …",
+          "hinweis": "Un plan pour dès 60 et un pour dès 90. Prends des idées de la liste ou les tiennes.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 2,
+          "beispiele": [
+            {
+              "wenn": "Si, dès 60, je sens mon cœur battre et mes poings se serrer,",
+              "dann": "je sors un instant et j’expire lentement 6 fois."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Mesure ta tension cette semaine : avant, ce que tu fais, après.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Quand",
+            "Chiffre",
+            "Ce que j’ai fait",
+            "Après"
+          ],
+          "breiten": [
+            1.1,
+            0.6,
+            2.4,
+            0.7
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Lundi, récréation",
+            "70",
+            "Eau sur les mains, 6 expirations",
+            "40"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Tu n’as pas à gérer ça sans soutien",
+          "text": "Ta tension monte souvent jusqu’à 90 et tu ne sais plus quoi faire ? Parles-en à un adulte en qui tu as confiance."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes évaluent leur tension de 0 à 100, repèrent leurs signaux d’alerte et associent à chaque niveau des skills adaptés. Ils formulent un plan pour « dès 60 » et un pour « dès 90 ».",
+        "ablauf": [
+          "Entrée en matière (5 min) : dessiner le baromètre au tableau. Question : « À quel chiffre n’écoutes-tu plus bien ? »",
+          "Signaux (7 min) : tâche 2 seul·e, puis sur base volontaire : « Que remarques-tu en premier ? »",
+          "Skills (10 min) : lire l’encadré, tâche 3 (plusieurs croix par ligne sont voulues). Tester deux skills.",
+          "Plan (8 min) : plans « si … alors » pour dès 60 et dès 90 ; à deux : concret et faisable à l’école ?",
+          "Tâche de la semaine : tâche 5. Une semaine plus tard : quel skill a aidé à quel chiffre ?"
+        ],
+        "hintergrund": "Le baromètre associe deux éléments de la DBT : l’évaluation de la tension sur une échelle (ici de 0 à 100) et le choix du skill selon l’intensité de l’activation. À faible tension, les skills de réflexion et de dialogue suffisent ; à très forte tension, ce sont les skills corporels de tolérance à la détresse (froid, mouvement, respiration lente) qui aident, car réfléchir devient presque impossible (Linehan, 2015 ; Rathus & Miller, 2015). Quand l’émotion est intense, on choisit d’ailleurs plutôt la distraction que la réinterprétation (Sheppes et al., 2011).",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Sheppes, G., Scheibe, S., Suri, G. & Gross, J. J. (2011). Emotion-regulation choice. Psychological Science, 22(11), 1391–1396."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les cinq premières lignes de chaque liste ; plan à l’oral.",
+          "schwerer": "Comparer trois situations (école, maison, amis) avec sa propre échelle."
+        },
+        "impulse": [
+          "Où le remarques-tu en premier : corps, pensées ou comportement ?",
+          "Qu’est-ce qui aide à 60, qu’est-ce qui aide à 90 – et pourquoi pas la même chose ?"
+        ],
+        "tipps": [
+          "Groupe : ne pas comparer les chiffres ; mur de skills avec cartes anonymes.",
+          "Séance individuelle : chiffre au début et à la fin ; tester un skill ensemble.",
+          "Eau froide brièvement ; si problèmes cardiaques ou circulatoires, voir un médecin."
+        ],
+        "achtung": "En cas de tension durablement élevée, de troubles du sommeil ou d’indices de mise en danger, ne pas questionner en plénière : entretien individuel, informer le responsable, en cas de danger agir selon la procédure interne.",
+        "material": "Crayon ; en option minuteur pour l’exercice de respiration"
+      }
+    }
+  },
+  {
+    "id": "t4-fuenf-sinne-stress",
+    "bereich": "gefuehle",
+    "thema": "beruhigen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "25–35 Min.",
+    "eldib": [
+      "V-25",
+      "V-22",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Selbstberuhigung",
+      "Sinne",
+      "Stress",
+      "Skills",
+      "Beruhigungs-Set"
+    ],
+    "bild": "icon:eye",
+    "verwandt": [
+      "t4-spannungsbarometer",
+      "t4-atem-anker",
+      "ballon-atmen"
+    ],
+    "de": {
+      "titel": "Fünf Sinne gegen Stress",
+      "untertitel": "Was beruhigt mich: sehen, hören, riechen, schmecken, fühlen?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Stress sitzt im Körper. Deine Sinne sind ein schneller Weg dorthin: Etwas Angenehmes zu sehen, hören, riechen, schmecken oder fühlen kann die Spannung senken."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was beruhigt dich? Kreuze an. Mehr als ein Kreuz ist okay.",
+          "hinweis": "Was dir unangenehm ist oder dich an etwas Schlimmes erinnert, lässt du aus.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bilder",
+              "klein": true,
+              "spalten": 2,
+              "bilder": [
+                {
+                  "bild": "icon:eye",
+                  "text": "Sehen"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "spalten": 2,
+              "items": [
+                "Himmel, Wolken, Bäume",
+                "Fotos von lieben Menschen",
+                "Lieblingsbild oder Poster",
+                "Tiere beobachten"
+              ],
+              "frei": 1
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bilder",
+              "klein": true,
+              "spalten": 2,
+              "bilder": [
+                {
+                  "bild": "icon:ear",
+                  "text": "Hören"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "spalten": 2,
+              "items": [
+                "Lieblingsmusik",
+                "Regen, Meeresrauschen",
+                "Podcast, ruhige Stimme",
+                "Stille, Ohrstöpsel"
+              ],
+              "frei": 1
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bilder",
+              "klein": true,
+              "spalten": 2,
+              "bilder": [
+                {
+                  "bild": "icon:flower",
+                  "text": "Riechen"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "spalten": 2,
+              "items": [
+                "Duschgel oder Parfum",
+                "Zitrone, Minze, Orange",
+                "Mein Lieblingspulli",
+                "Frische Luft, Regen, Wald"
+              ],
+              "frei": 1
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bilder",
+              "klein": true,
+              "spalten": 2,
+              "bilder": [
+                {
+                  "bild": "icon:apple",
+                  "text": "Schmecken"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "spalten": 2,
+              "items": [
+                "Warmer Tee",
+                "Minzbonbon, Kaugummi",
+                "Etwas Saures",
+                "Schokolade, ganz langsam"
+              ],
+              "frei": 1
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bilder",
+              "klein": true,
+              "spalten": 2,
+              "bilder": [
+                {
+                  "bild": "icon:hand-grab",
+                  "text": "Fühlen"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "spalten": 2,
+              "items": [
+                "Warme Dusche",
+                "Kapuzenpulli, weiche Decke",
+                "Stein oder Stressball",
+                "Haustier streicheln"
+              ],
+              "frei": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Probier zwei Dinge aus. Wie stark ist dein Stress davor und danach?",
+          "hinweis": "0 = ganz ruhig, 10 = sehr stark.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Was ich probiere",
+            "Stress vorher (0–10)",
+            "Stress danach (0–10)"
+          ],
+          "breiten": [
+            2.4,
+            1,
+            1
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Kopfhörer, ruhige Musik, 3 Min.",
+            "7",
+            "4"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Stell dein Beruhigungs-Set zusammen: ein Ding für jeden Sinn.",
+          "hinweis": "Nimm, was dir geholfen hat. Es darf klein sein.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "hand",
+          "finger": [
+            "Sehen",
+            "Hören",
+            "Riechen",
+            "Schmecken",
+            "Fühlen"
+          ],
+          "mitte": "Mein Set"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "In der Klasse fällt es niemandem auf",
+          "text": "Ein Stein in der Hosentasche, Wasser in kleinen Schlucken, ein Duft am Handgelenk, ein Minzbonbon, der Blick auf einen Punkt im Raum."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Schreib deinen Plan für einen stressigen Moment.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich vor einer Arbeit nervös werde,",
+              "dann": "halte ich meinen Stein in der Hand und atme 5-mal lang aus."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen finden für jeden der fünf Sinne etwas, das sie beruhigt, stellen sich ein Beruhigungs-Set zusammen und prüfen die Wirkung auf einer Stress-Skala von 0 bis 10.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Was tut euch gut, wenn ihr gestresst seid?“ Antworten sammeln, nicht bewerten.",
+          "Aufgabe 1 (8 Min.): ankreuzen. Hinweis betonen: Unangenehmes weglassen, nichts muss sein.",
+          "Testen (8 Min.): Aufgabe 2; zwei Dinge ausprobieren, Stress vorher und nachher eintragen. Echte Gegenstände zeigen (Stein, Minze, Tuch).",
+          "Set (7 Min.): Aufgabe 3; aus dem, was geholfen hat, je ein Ding pro Sinn wählen.",
+          "Plan (5 Min.): Wenn-dann-Plan. Frage: „Was fällt in der Klasse nicht auf?“ Nach einer Woche nachfragen."
+        ],
+        "hintergrund": "Die Selbstberuhigung mit den fünf Sinnen gehört zu den Stresstoleranz-Fertigkeiten der DBT (Linehan, 2015; Rathus & Miller, 2015). Angenehme Sinnesreize lenken die Aufmerksamkeit vom Grübeln ins Hier und Jetzt und können die körperliche Erregung dämpfen. Die Jugendlichen wählen selbst, denn was eine Person beruhigt, kann für eine andere unangenehm sein, etwa ein Geruch mit schlechter Erinnerung. Die Skala vor und nach dem Test macht die Wirkung sichtbar, ohne sie zu versprechen.",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Nur Aufgabe 1 und 2; ein Sinn reicht für den Test.",
+          "schwerer": "Je ein Set für den Schulweg und für den Abend planen."
+        },
+        "impulse": [
+          "Welcher Sinn beruhigt dich am schnellsten, welcher gar nicht?",
+          "Was würde in der Klasse niemand bemerken?"
+        ],
+        "tipps": [
+          "Gruppe: Ideen sammeln, aber nichts tauschen oder probieren lassen (Allergien, Hygiene).",
+          "Einzelstunde: Ein Ding gemeinsam testen, Skala vorher und nachher vergleichen."
+        ],
+        "achtung": "Gerüche, Geräusche oder Berührungen können Erinnerungen wecken. Wer unruhiger wird, darf sofort aufhören. Bei Hinweisen auf Belastung Einzelgespräch, Responsable informieren; bei Gefährdung sofort nach internem Ablauf handeln.",
+        "material": "Stift; optional Stein, Minze, Tuch zum Fühlen und Riechen"
+      }
+    },
+    "fr": {
+      "titel": "Cinq sens contre le stress",
+      "untertitel": "Qu’est-ce qui me calme : voir, entendre, sentir, goûter, toucher ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Le stress se loge dans le corps. Tes sens sont un chemin rapide pour l’atteindre : voir, entendre, sentir, goûter ou toucher quelque chose d’agréable peut faire baisser la tension."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Qu’est-ce qui te calme ? Coche. Plusieurs croix sont permises.",
+          "hinweis": "Ce qui te déplaît ou te rappelle quelque chose de pénible, tu le laisses de côté.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bilder",
+              "klein": true,
+              "spalten": 2,
+              "bilder": [
+                {
+                  "bild": "icon:eye",
+                  "text": "Voir"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "spalten": 2,
+              "items": [
+                "Ciel, nuages, arbres",
+                "Photos de gens que j’aime",
+                "Une image que j’aime",
+                "Regarder des animaux"
+              ],
+              "frei": 1
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bilder",
+              "klein": true,
+              "spalten": 2,
+              "bilder": [
+                {
+                  "bild": "icon:ear",
+                  "text": "Entendre"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "spalten": 2,
+              "items": [
+                "Ma musique préférée",
+                "Bruit de pluie ou de mer",
+                "Un podcast, une voix calme",
+                "Des bouchons d’oreilles"
+              ],
+              "frei": 1
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bilder",
+              "klein": true,
+              "spalten": 2,
+              "bilder": [
+                {
+                  "bild": "icon:flower",
+                  "text": "Sentir"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "spalten": 2,
+              "items": [
+                "Gel douche ou parfum",
+                "Citron, menthe, orange",
+                "Mon pull préféré",
+                "Air frais, pluie, forêt"
+              ],
+              "frei": 1
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bilder",
+              "klein": true,
+              "spalten": 2,
+              "bilder": [
+                {
+                  "bild": "icon:apple",
+                  "text": "Goûter"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "spalten": 2,
+              "items": [
+                "Un thé chaud",
+                "Menthe ou chewing-gum",
+                "Quelque chose d’acide",
+                "Du chocolat, très lentement"
+              ],
+              "frei": 1
+            }
+          ]
+        },
+        {
+          "art": "spalten",
+          "verhaeltnis": "1:2",
+          "links": [
+            {
+              "art": "bilder",
+              "klein": true,
+              "spalten": 2,
+              "bilder": [
+                {
+                  "bild": "icon:hand-grab",
+                  "text": "Toucher"
+                }
+              ]
+            }
+          ],
+          "rechts": [
+            {
+              "art": "ankreuzen",
+              "spalten": 2,
+              "items": [
+                "Une douche chaude",
+                "Sweat à capuche, plaid doux",
+                "Pierre ou balle anti-stress",
+                "Caresser un animal"
+              ],
+              "frei": 1
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Essaie deux choses. Quel est ton stress avant et après ?",
+          "hinweis": "0 = tout à fait calme, 10 = très fort.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Ce que j’essaie",
+            "Stress avant (0–10)",
+            "Stress après (0–10)"
+          ],
+          "breiten": [
+            2.4,
+            1,
+            1
+          ],
+          "zeilen": 3,
+          "beispiel": [
+            "Casque, musique calme, 3 min",
+            "7",
+            "4"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Compose ton kit de calme : un objet pour chaque sens.",
+          "hinweis": "Prends ce qui t’a aidé. Il peut être tout petit.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "hand",
+          "finger": [
+            "Voir",
+            "Entendre",
+            "Sentir",
+            "Goûter",
+            "Toucher"
+          ],
+          "mitte": "Mon kit"
+        },
+        {
+          "art": "info",
+          "symbol": "tipp",
+          "titel": "En classe, personne ne le remarque",
+          "text": "Une pierre dans la poche, de l’eau par petites gorgées, un parfum au poignet, un bonbon à la menthe, le regard posé sur un point de la pièce."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Écris ton plan pour un moment stressant.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si le stress monte avant un contrôle,",
+              "dann": "je tiens ma pierre dans la main et j’expire lentement 5 fois."
+            }
+          ]
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes trouvent pour chacun des cinq sens quelque chose qui les apaise, composent un kit de calme et vérifient son effet sur une échelle de stress de 0 à 10.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Qu’est-ce qui te fait du bien quand le stress monte ? » Recueillir sans juger.",
+          "Tâche 1 (8 min) : cocher. Insister : laisser de côté ce qui déplaît, rien n’est obligatoire.",
+          "Test (8 min) : tâche 2 ; essayer deux choses, noter le stress avant et après. Montrer de vrais objets (pierre, menthe, tissu).",
+          "Kit (7 min) : tâche 3 ; choisir, parmi ce qui a aidé, un objet par sens.",
+          "Plan (5 min) : « si … alors ». « Que remarque-t-on le moins en classe ? » Revenir dessus une semaine plus tard."
+        ],
+        "hintergrund": "S’apaiser avec les cinq sens fait partie des skills de tolérance à la détresse de la DBT (Linehan, 2015 ; Rathus & Miller, 2015). Des stimuli sensoriels agréables ramènent l’attention des ruminations vers l’instant présent et peuvent atténuer l’activation du corps. Les jeunes choisissent eux-mêmes : ce qui calme l’un peut déranger l’autre, par exemple une odeur liée à un mauvais souvenir. L’échelle avant et après le test rend l’effet visible, sans le promettre.",
+        "quellen": [
+          "Linehan, M. M. (2015). DBT Skills Training Manual (2nd ed.). New York: Guilford.",
+          "Rathus, J. H. & Miller, A. L. (2015). DBT Skills Manual for Adolescents. New York: Guilford.",
+          "Fleischhaker, C., Sixt, B. & Schulz, E. (2011). DBT-A: Dialektisch-behaviorale Therapie für Jugendliche. Berlin: Springer."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement les tâches 1 et 2 ; un seul sens suffit pour le test.",
+          "schwerer": "Prévoir un kit pour le trajet scolaire et un pour le soir."
+        },
+        "impulse": [
+          "Quel sens te calme le plus vite, lequel pas du tout ?",
+          "Qu’est-ce que personne ne remarquerait en classe ?"
+        ],
+        "tipps": [
+          "Groupe : collecter des idées, mais rien échanger ni goûter (allergies, hygiène).",
+          "Séance individuelle : tester un objet ensemble, comparer l’échelle avant et après."
+        ],
+        "achtung": "Des odeurs, des bruits ou des contacts peuvent réveiller des souvenirs. Qui devient plus agité peut arrêter tout de suite. En cas de signes de détresse : entretien individuel, informer le responsable ; en cas de danger, agir selon la procédure interne.",
+        "material": "Crayon ; en option pierre, menthe, tissu à toucher et à sentir"
+      }
+    }
+  },
+  {
+    "id": "t4-atem-anker",
+    "bereich": "gefuehle",
+    "thema": "beruhigen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "20–30 Min.",
+    "eldib": [
+      "V-25",
+      "V-29",
+      "K-26"
+    ],
+    "schlagworte": [
+      "Atem",
+      "Achtsamkeit",
+      "Aufmerksamkeit",
+      "Entspannung",
+      "Skills"
+    ],
+    "bild": "icon:wind",
+    "verwandt": [
+      "t4-spannungsbarometer",
+      "t4-fuenf-sinne-stress",
+      "ballon-atmen"
+    ],
+    "de": {
+      "titel": "Mein Atem-Anker",
+      "untertitel": "Drei kurze Übungen – welche hilft mir?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Dein Atem ist immer da. Wenn Stress oder Gedanken dich wegtreiben, kannst du dich an ihm festhalten wie ein Schiff am Anker. Jede Übung dauert etwa eine Minute."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie angespannt bist du gerade?",
+          "hinweis": "0 = ganz entspannt, 10 = sehr angespannt.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "von": "entspannt",
+          "bis": "sehr angespannt",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wo spürst du deinen Atem am deutlichsten?",
+          "hinweis": "Dort ist dein Anker.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "an der Nase",
+            "an der Brust",
+            "am Bauch",
+            "nirgends richtig – das ist okay"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Probier die drei Übungen nacheinander aus.",
+          "hinweis": "Zeit: etwa eine Minute pro Übung. Du darfst die Augen offen lassen.",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Bauch-Atem",
+              "text": "Hand auf den Bauch. Beim Einatmen hebt sie sich, beim Ausatmen sinkt sie. 6 Atemzüge."
+            },
+            {
+              "titel": "Lang ausatmen",
+              "text": "Einatmen und bis 4 zählen. Ausatmen und bis 6 zählen. 6-mal."
+            },
+            {
+              "titel": "Atem zählen",
+              "text": "Bei jedem Ausatmen zählen: 1 bis 10, dann von vorn. Abgedriftet? Ohne Ärger neu bei 1."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie sehr hat jede Übung geholfen? Und wie angespannt bist du jetzt?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "sehr",
+            "etwas",
+            "kaum"
+          ],
+          "items": [
+            "Bauch-Atem",
+            "Lang ausatmen",
+            "Atem zählen"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Meine Anspannung jetzt:",
+          "von": "entspannt",
+          "bis": "sehr angespannt",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wann nutzt du deinen Anker? Kreuze an und schreib einen Plan.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "vor einer Arbeit oder einem Test",
+            "nach einem Streit",
+            "abends im Bett",
+            "im Bus oder in der Pause",
+            "bevor ich etwas Unüberlegtes sage",
+            "wenn mein Kopf nicht aufhört"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Wenn ich vor der Mathe-Arbeit Herzklopfen habe,",
+              "dann": "lege ich die Hand auf den Bauch und atme 6-mal lang aus."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Übe diese Woche. Hake ab, wenn du geübt hast.",
+          "hinweis": "Eine Übung pro Tag reicht. Such dir die aus, die dir am meisten geholfen hat.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "plan",
+          "symbol": "kasten",
+          "tage": [
+            "Mo",
+            "Di",
+            "Mi",
+            "Do",
+            "Fr",
+            "Sa",
+            "So"
+          ],
+          "zeilen": [
+            "Bauch-Atem",
+            "Lang ausatmen",
+            "Atem zählen"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Wenn Atmen unangenehm ist",
+          "text": "Wird dir schwindlig oder macht das Atmen Angst, atme einfach normal weiter, öffne die Augen und drück die Füße auf den Boden. Du darfst jederzeit aufhören."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen lernen drei kurze Atemübungen kennen, finden ihren Atem-Anker und prüfen, welche Übung ihnen hilft. Sie planen, wann sie sie nutzen.",
+        "ablauf": [
+          "Einstieg (3 Min.): Alle atmen einmal bewusst aus. Frage: „Woran merkt ihr beim Atem, dass ihr gestresst seid?“",
+          "Anker (5 Min.): Aufgabe 1 und 2; Hand auf Nase, Brust oder Bauch legen lassen.",
+          "Üben (10 Min.): Übungen nacheinander anleiten, je etwa 1 Minute, mit Pause zum Ankreuzen.",
+          "Auswerten (5 Min.): Skala nachher; freiwillig: „Welche Übung war leicht, welche nicht?“",
+          "Plan (5 Min.): Wenn-dann-Plan und Wochenplan; nach einer Woche nachfragen, was geholfen hat."
+        ],
+        "hintergrund": "In der Achtsamkeit ist der Atem der klassische Anker der Aufmerksamkeit: Man bemerkt, wenn der Geist abschweift, und kehrt freundlich zurück (Kabat-Zinn, 1990). Langsames Atmen mit verlängertem Ausatmen kann Herzrate und Erregung senken (Zaccaro et al., 2018). Achtsamkeitsprogramme in Schulen zeigen kleine bis mittlere Effekte auf Stress und kognitive Leistungen (Zenner et al., 2014). Das Blatt lässt die Jugendlichen prüfen, was bei ihnen wirkt, ohne Wirkung zu versprechen.",
+        "quellen": [
+          "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.",
+          "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603."
+        ],
+        "differenzierung": {
+          "leichter": "Nur eine Übung ausprobieren; die Skala mündlich abfragen.",
+          "schwerer": "Eine Übung eine Woche lang täglich üben, Skala vorher und nachher notieren."
+        },
+        "impulse": [
+          "Wo ist dein Anker: Nase, Brust oder Bauch?",
+          "Was passiert, wenn dein Kopf abschweift – und was machst du dann?"
+        ],
+        "tipps": [
+          "Gruppe: Übungen gemeinsam anleiten; niemand muss die Augen schließen.",
+          "Einzelstunde: gemeinsam üben, dann fragen, was aufgefallen ist, nicht, ob es „geklappt“ hat."
+        ],
+        "achtung": "Atmen kann bei Angst, Asthma oder Belastung unangenehm sein: dann normal weiteratmen. Bei Hinweisen auf Belastung Einzelgespräch, Responsable informieren; bei Gefährdung sofort nach internem Ablauf handeln.",
+        "material": "Stift; Timer oder Uhr"
+      }
+    },
+    "fr": {
+      "titel": "Mon ancre respiratoire",
+      "untertitel": "Trois exercices courts – lequel m’aide ?",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "Ta respiration est toujours là. Quand le stress ou les pensées t’emportent, tu peux t’y accrocher comme un bateau à son ancre. Chaque exercice dure environ une minute."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quel est ton niveau de tension en ce moment ?",
+          "hinweis": "0 = tout à fait détendu, 10 = très tendu.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "skala",
+          "von": "détendu",
+          "bis": "très tendu",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Où sens-tu ta respiration le plus nettement ?",
+          "hinweis": "C’est là, ton ancre.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "items": [
+            "au nez",
+            "à la poitrine",
+            "au ventre",
+            "nulle part vraiment – ce n’est pas grave"
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Essaie les trois exercices l’un après l’autre.",
+          "hinweis": "Environ une minute par exercice. Tu peux garder les yeux ouverts.",
+          "symbole": [
+            "nachdenken"
+          ]
+        },
+        {
+          "art": "schritte",
+          "linien": 0,
+          "items": [
+            {
+              "titel": "Respiration du ventre",
+              "text": "Main sur le ventre. Quand tu inspires, elle se soulève ; quand tu expires, elle redescend. 6 respirations."
+            },
+            {
+              "titel": "Expirer longtemps",
+              "text": "Inspire en comptant jusqu’à 4. Expire en comptant jusqu’à 6. 6 fois."
+            },
+            {
+              "titel": "Compter ses respirations",
+              "text": "À chaque expiration, compte de 1 à 10, puis recommence. Distrait ? Reprends à 1, sans te fâcher."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Dans quelle mesure chaque exercice a-t-il aidé ? Et quelle tension ressens-tu maintenant ?",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "einschaetzung",
+          "optionen": [
+            "beaucoup",
+            "un peu",
+            "à peine"
+          ],
+          "items": [
+            "Respiration du ventre",
+            "Expirer longtemps",
+            "Compter ses respirations"
+          ]
+        },
+        {
+          "art": "skala",
+          "frage": "Ma tension maintenant :",
+          "von": "détendu",
+          "bis": "très tendu",
+          "stufen": 11
+        },
+        {
+          "art": "aufgabe",
+          "text": "Quand utiliseras-tu ton ancre ? Coche et écris un plan.",
+          "symbole": [
+            "ankreuzen",
+            "schreiben"
+          ]
+        },
+        {
+          "art": "ankreuzen",
+          "spalten": 2,
+          "frei": 1,
+          "items": [
+            "avant un contrôle",
+            "après une dispute",
+            "le soir, au lit",
+            "dans le bus ou en récréation",
+            "avant de dire quelque chose d’irréfléchi",
+            "quand ma tête n’arrête pas"
+          ]
+        },
+        {
+          "art": "wennDann",
+          "wenn": "Si …",
+          "dann": "… alors",
+          "zeilen": 1,
+          "beispiele": [
+            {
+              "wenn": "Si mon cœur bat fort avant le contrôle de maths,",
+              "dann": "je pose la main sur le ventre et j’expire lentement 6 fois."
+            }
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Entraîne-toi cette semaine. Coche quand tu l’as fait.",
+          "hinweis": "Un exercice par jour suffit. Choisis celui qui t’a le plus aidé.",
+          "symbole": [
+            "ankreuzen"
+          ]
+        },
+        {
+          "art": "plan",
+          "symbol": "kasten",
+          "tage": [
+            "Lu",
+            "Ma",
+            "Me",
+            "Je",
+            "Ve",
+            "Sa",
+            "Di"
+          ],
+          "zeilen": [
+            "Respiration du ventre",
+            "Expirer longtemps",
+            "Compter ses respirations"
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "hilfe",
+          "titel": "Quand respirer est désagréable",
+          "text": "Si tu as un vertige ou si respirer te fait peur, respire normalement, ouvre les yeux et appuie les pieds au sol. Tu peux arrêter à tout moment."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes découvrent trois courts exercices de respiration, trouvent leur ancre et vérifient lequel les aide. Ils prévoient quand l’utiliser.",
+        "ablauf": [
+          "Entrée en matière (3 min) : tous expirent une fois consciemment. « À quoi remarques-tu dans ta respiration que tu es stressé ? »",
+          "Ancre (5 min) : tâches 1 et 2 ; poser la main sur le nez, la poitrine ou le ventre.",
+          "Exercices (10 min) : guider les exercices l’un après l’autre, environ 1 minute, avec une pause pour cocher.",
+          "Bilan (5 min) : échelle après ; sur base volontaire : « Quel exercice était facile, lequel non ? »",
+          "Plan (5 min) : plan « si … alors » et plan de la semaine ; une semaine plus tard : qu’est-ce qui a aidé ?"
+        ],
+        "hintergrund": "Dans la pleine conscience, la respiration est l’ancre classique de l’attention : on remarque que l’esprit s’égare et on y revient avec bienveillance (Kabat-Zinn, 1990). Une respiration lente avec expiration allongée peut faire baisser le rythme cardiaque et l’activation (Zaccaro et al., 2018). Les programmes de pleine conscience à l’école montrent des effets faibles à moyens sur le stress et les performances cognitives (Zenner et al., 2014). La fiche laisse les jeunes vérifier ce qui marche pour eux, sans promettre d’effet.",
+        "quellen": [
+          "Kabat-Zinn, J. (1990). Full Catastrophe Living. New York: Delacorte.",
+          "Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B. & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. Frontiers in Human Neuroscience, 12, 353.",
+          "Zenner, C., Herrnleben-Kurz, S. & Walach, H. (2014). Mindfulness-based interventions in schools – a systematic review and meta-analysis. Frontiers in Psychology, 5, 603."
+        ],
+        "differenzierung": {
+          "leichter": "Un seul exercice ; échelle à l’oral.",
+          "schwerer": "Pratiquer un exercice chaque jour pendant une semaine, noter l’échelle avant et après."
+        },
+        "impulse": [
+          "Où est ton ancre : nez, poitrine ou ventre ?",
+          "Que se passe-t-il quand ta tête s’égare – et que fais-tu alors ?"
+        ],
+        "tipps": [
+          "Groupe : guider ensemble ; personne n’a à fermer les yeux.",
+          "Séance individuelle : pratiquer ensemble, demander ce qui a été remarqué, pas si « ça a marché »."
+        ],
+        "achtung": "Respirer peut être désagréable en cas d’anxiété, d’asthme ou de vécu pénible : respirer alors normalement. En cas de détresse : entretien individuel, informer le responsable ; en cas de danger, procédure interne.",
+        "material": "Crayon ; minuteur ou montre"
+      }
+    }
+  },
+  {
+    "id": "t4-gefuehle-wortschatz",
+    "bereich": "gefuehle",
+    "thema": "erkennen",
+    "stufen": [
+      "C4",
+      "ES"
+    ],
+    "layout": "jugend",
+    "sozialform": [
+      "einzeln",
+      "gruppe"
+    ],
+    "dauer": "30–40 Min.",
+    "eldib": [
+      "K-26",
+      "K-29",
+      "SOZ-31"
+    ],
+    "schlagworte": [
+      "Gefühlswörter",
+      "Gefühlsrad",
+      "Intensität",
+      "Emotionsregulation",
+      "Wortschatz"
+    ],
+    "bild": "icon:mood-smile",
+    "verwandt": [
+      "gefuehle-genau-benennen",
+      "skills-gefuehlsrad",
+      "t4-spannungsbarometer"
+    ],
+    "de": {
+      "titel": "Mein Gefühlswortschatz",
+      "untertitel": "Mit dem Gefühlsrad das passende Wort finden und die Stärke einschätzen",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "„Schlecht“ oder „gut“ sagt wenig. Je genauer das Wort, desto besser verstehst du dich selbst, und desto leichter kannst du anderen sagen, was los ist."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Wie fühlst du dich gerade? Such im Rad ein Wort und kreis es ein.",
+          "hinweis": "Von innen nach außen: erst das Grundgefühl, dann das genauere Wort. Zwei Wörter sind okay.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "gefuehlsrad"
+        },
+        {
+          "art": "skala",
+          "frage": "Wie stark ist das Gefühl gerade?",
+          "von": "kaum zu spüren",
+          "bis": "sehr stark",
+          "stufen": 10
+        },
+        {
+          "art": "aufgabe",
+          "text": "Gefühle haben Stufen. Finde für jedes Gefühl vier Wörter, von leise bis laut.",
+          "hinweis": "Nimm Wörter aus dem Rad oder eigene. Das Beispiel zeigt, wie es geht.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Gefühl",
+            "leise",
+            "mittel",
+            "laut",
+            "sehr laut"
+          ],
+          "breiten": [
+            1.1,
+            1,
+            1,
+            1,
+            1.1
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "Wut",
+            "genervt",
+            "gereizt",
+            "wütend",
+            "außer mir"
+          ],
+          "werte": [
+            [
+              "Angst",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Traurigkeit",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Freude",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Was fühlst du in diesen Situationen? Schreib ein Wort aus dem Rad und die Stärke von 1 bis 10.",
+          "hinweis": "Es gibt keine richtige Antwort. Mit Situationen, die du dir vorstellst, geht es auch.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "Gefühl (Wort)",
+            "Stärke (1–10)"
+          ],
+          "breiten": [
+            2.5,
+            1.3,
+            0.9
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "Dein Handy fällt runter, das Display ist kaputt.",
+            "genervt",
+            "7"
+          ],
+          "werte": [
+            [
+              "Du bekommst eine bessere Note als erwartet.",
+              "",
+              ""
+            ],
+            [
+              "Eine Freundin sagt kurzfristig ab.",
+              "",
+              ""
+            ],
+            [
+              "Du sollst morgen vor der Klasse sprechen.",
+              "",
+              ""
+            ],
+            [
+              "Jemand lacht, als du etwas sagst.",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Gleiche Situation, anderes Gefühl",
+          "text": "Zwei Menschen erleben dasselbe und fühlen etwas anderes. Das ist normal: Gefühle hängen von Erfahrungen, Zielen und der Tagesform ab. Vergleicht zu zweit, wenn ihr mögt."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Die Jugendlichen erweitern ihren Gefühlswortschatz mit dem Gefühlsrad, ordnen Wörtern eine Stärke zu und merken, dass dieselbe Situation verschiedene Gefühle auslösen kann.",
+        "ablauf": [
+          "Einstieg (5 Min.): „Wie viele Gefühlswörter fallen euch in einer Minute ein?“ Sammeln, dann mit dem Rad vergleichen.",
+          "Rad (8 Min.): Aufgabe 1 mit Skala; freiwillig ein Wort nennen. „Weiß nicht“ ist erlaubt.",
+          "Stufen (10 Min.): Beispiel Wut gemeinsam lesen, die anderen Gefühle zu zweit füllen.",
+          "Situationen (10 Min.): einzeln eintragen, dann Wörter und Stärken vergleichen: „Wo seid ihr verschieden?“",
+          "Abschluss (5 Min.): Welches neue Wort nehme ich mit?"
+        ],
+        "hintergrund": "Das Gefühlsrad (Willcox, 1982) führt von groben zu genauen Gefühlswörtern. Wer Gefühle genau benennt, kann sie besser regulieren: Das Benennen (affect labeling) dämpft die Aktivität der Amygdala (Lieberman et al., 2007), und ein differenzierter Gefühlswortschatz gehört zur emotionalen Kompetenz (Brackett, 2019). Die Skala von 1 bis 10 übt, Gefühle zu dosieren statt nur „an oder aus“ zu erleben.",
+        "quellen": [
+          "Willcox, G. (1982). The Feeling Wheel: A tool for expanding awareness of emotions and increasing spontaneity and intimacy. Transactional Analysis Journal, 12(4), 274–276.",
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "Nur das Rad und eine Situation; Stufen gemeinsam füllen.",
+          "schwerer": "Zu jeder Situation zwei Gefühle nennen (Mischgefühle) und erklären."
+        },
+        "impulse": [
+          "Welches Wort im Rad war neu für dich?",
+          "Welches Wort sagst du, wenn „gut“ nicht reicht?"
+        ],
+        "tipps": [
+          "Gruppe: Wörter und Stärken nur freiwillig nennen; nichts ist „falsch“.",
+          "Einzelstunde: Rad als Check-in nutzen: ein Wort und eine Zahl pro Stunde."
+        ],
+        "achtung": "Wer kaum Gefühle benennen kann, nicht drängen: Körperempfindungen anbieten. Bei Hinweisen auf Belastung Einzelgespräch, Responsable informieren; bei Gefährdung sofort nach internem Ablauf handeln.",
+        "material": "Stift, Buntstifte"
+      }
+    },
+    "fr": {
+      "titel": "Mon vocabulaire des émotions",
+      "untertitel": "Avec la roue des émotions : trouver le mot juste et estimer l’intensité",
+      "bausteine": [
+        {
+          "art": "text",
+          "text": "« Mal » ou « bien » en dit peu. Plus le mot est précis, mieux tu te comprends – et plus il est facile de dire aux autres ce qui se passe."
+        },
+        {
+          "art": "aufgabe",
+          "text": "Comment te sens-tu en ce moment ? Cherche un mot dans la roue et entoure-le.",
+          "hinweis": "De l’intérieur vers l’extérieur : d’abord l’émotion de base, puis le mot plus précis. Deux mots sont permis.",
+          "symbole": [
+            "einkreisen"
+          ]
+        },
+        {
+          "art": "gefuehlsrad"
+        },
+        {
+          "art": "skala",
+          "frage": "Quelle est l’intensité de l’émotion en ce moment ?",
+          "von": "à peine perceptible",
+          "bis": "très forte",
+          "stufen": 10
+        },
+        {
+          "art": "aufgabe",
+          "text": "Les émotions ont des niveaux. Trouve pour chaque émotion quatre mots, du plus doux au plus fort.",
+          "hinweis": "Prends des mots de la roue ou les tiens. L’exemple montre comment faire.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Émotion",
+            "doux",
+            "moyen",
+            "fort",
+            "très fort"
+          ],
+          "breiten": [
+            1.1,
+            1,
+            1,
+            1,
+            1.1
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "Colère",
+            "ça m’agace",
+            "je m’énerve",
+            "je suis en colère",
+            "hors de moi"
+          ],
+          "werte": [
+            [
+              "Peur",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Tristesse",
+              "",
+              "",
+              "",
+              ""
+            ],
+            [
+              "Joie",
+              "",
+              "",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "aufgabe",
+          "text": "Que ressens-tu dans ces situations ? Écris un mot de la roue et l’intensité de 1 à 10.",
+          "hinweis": "Il n’y a pas de bonne réponse. Tu peux aussi t’imaginer les situations.",
+          "symbole": [
+            "schreiben"
+          ]
+        },
+        {
+          "art": "tabelle",
+          "spalten": [
+            "Situation",
+            "Émotion (mot)",
+            "Intensité (1–10)"
+          ],
+          "breiten": [
+            2.5,
+            1.3,
+            0.9
+          ],
+          "zeilen": 1,
+          "beispiel": [
+            "Ton téléphone tombe, l’écran est cassé.",
+            "ça m’agace",
+            "7"
+          ],
+          "werte": [
+            [
+              "Tu as une meilleure note que prévu.",
+              "",
+              ""
+            ],
+            [
+              "Une amie annule à la dernière minute.",
+              "",
+              ""
+            ],
+            [
+              "Tu dois parler devant la classe demain.",
+              "",
+              ""
+            ],
+            [
+              "Quelqu’un rit quand tu dis quelque chose.",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "art": "info",
+          "symbol": "wissen",
+          "titel": "Même situation, autre émotion",
+          "text": "Deux personnes vivent la même chose et ressentent autre chose. C’est normal : les émotions dépendent de l’expérience, des objectifs et de la forme du jour. Comparez à deux, si vous voulez."
+        }
+      ],
+      "lehrer": {
+        "ziel": "Les jeunes enrichissent leur vocabulaire émotionnel avec la roue des émotions, associent une intensité aux mots et constatent qu’une même situation peut déclencher des émotions différentes.",
+        "ablauf": [
+          "Entrée en matière (5 min) : « Combien de mots d’émotions trouvez-vous en une minute ? » Collecter, puis comparer à la roue.",
+          "Roue (8 min) : tâche 1 avec échelle ; nommer un mot sur base volontaire. « Je ne sais pas » est permis.",
+          "Niveaux (10 min) : lire l’exemple « colère » ensemble, remplir les autres émotions à deux.",
+          "Situations (10 min) : remplir seul, puis comparer mots et intensités : « Où êtes-vous différents ? »",
+          "Clôture (5 min) : quel nouveau mot est-ce que j’emporte ?"
+        ],
+        "hintergrund": "La roue des émotions (Willcox, 1982) mène de mots généraux à des mots précis. Nommer précisément ses émotions aide à les réguler : mettre des mots sur ce qu’on ressent (affect labeling) atténue l’activité de l’amygdale (Lieberman et al., 2007), et un vocabulaire émotionnel nuancé fait partie de la compétence émotionnelle (Brackett, 2019). L’échelle de 1 à 10 apprend à doser les émotions au lieu de les vivre en « tout ou rien ».",
+        "quellen": [
+          "Willcox, G. (1982). The Feeling Wheel: A tool for expanding awareness of emotions and increasing spontaneity and intimacy. Transactional Analysis Journal, 12(4), 274–276.",
+          "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H. & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428.",
+          "Brackett, M. A. (2019). Permission to Feel. New York: Celadon."
+        ],
+        "differenzierung": {
+          "leichter": "Seulement la roue et une situation ; remplir les niveaux ensemble.",
+          "schwerer": "Nommer deux émotions par situation (émotions mixtes) et expliquer."
+        },
+        "impulse": [
+          "Quel mot de la roue était nouveau pour toi ?",
+          "Quel mot dis-tu quand « bien » ne suffit pas ?"
+        ],
+        "tipps": [
+          "Groupe : mots et intensités seulement sur base volontaire ; rien n’est « faux ».",
+          "Séance individuelle : roue comme rituel d’arrivée : un mot et un chiffre."
+        ],
+        "achtung": "Si quelqu’un nomme à peine ses émotions, ne pas insister : proposer des sensations du corps. En cas de détresse : entretien individuel, informer le responsable ; en cas de danger, procédure interne.",
+        "material": "Crayon, crayons de couleur"
+      }
+    }
+  }
+]
